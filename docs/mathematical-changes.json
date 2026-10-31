@@ -142,6 +142,66 @@
         "status": "not_integrated"
       },
       "validation_commit": "deaa74d96763db33f7d8932053eb4bc308d3db4c"
+    },
+    {
+      "id": "P1-MATH-0005",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:rig:local-square",
+        "number": "T9.1",
+        "page": 39,
+        "source": "companion_sections/pair_rigidity.tex",
+        "line": 17,
+        "statement_sha256": "f9698333e474d8e0890a0f425b5f207336f6b1e16948952d0e9c3d81707b6e3e"
+      },
+      "original_assumption": "For B≥2, a nonempty even set I⊆[-B,B] with cardinality m, and x>(B+1)^(12m), the translated product is not an integer square.",
+      "finding": "The stronger threshold x>(64B)^m suffices, hence the simpler uniform threshold x>(B+1)^(5m) for B≥2. It follows directly from the proved degree-uniform algebraic split-product theorem.",
+      "evidence": [
+        "PaperP1.LocalSquareThreshold.local_square_threshold_sharp",
+        "PaperP1.LocalSquareThreshold.local_square_threshold_power_five",
+        "PaperP1.LocalSquareThreshold.sixtyfour_mul_le_fifth_power",
+        "PaperP1.LocalSquareThreshold.companion_T9_1"
+      ],
+      "proposed_revision": "Replace the exponent 12m by 5m, or state the sharper condition x>(64B)^m. Prove the result by the internal T1.1 bound with U=x and R=B; the threshold itself gives x≥2B.",
+      "impact": "Strengthens the finite local square exclusion. Distinct integer offsets, positive even m and the original domain B≥2 are retained. The original statement and all later exponents remain valid; no optimality of the new threshold is asserted.",
+      "validation": "Lean v4.36.0-rc2 full build and actual kernel audit of all 1301 declarations; only propext, Classical.choice and Quot.sound. Exact implementation commit is recorded after publication.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
+    },
+    {
+      "id": "P1-MATH-0006",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:rig:defective",
+        "number": "T9.2",
+        "page": 39,
+        "source": "companion_sections/pair_rigidity.tex",
+        "line": 62,
+        "statement_sha256": "8b2ed4253a1ab2c85cfe8f957d205dff13ea7e6b5dd7ea1f04e82f28f3b49409"
+      },
+      "original_assumption": "The number of 10B-defective positions in every critical window is O_C(B/log B).",
+      "finding": "One positive absolute multiplicative constant works for every fixed critical-band width C. Only the eventual threshold N0 depends on C. The count is the actual kernel-one set in the full vertex interval.",
+      "evidence": [
+        "PaperP1.CriticalDefectPositions.uniform_critical_defect_constant",
+        "PaperP1.CriticalDefectPositions.companion_T9_2",
+        "PaperP1.CriticalDefectPositions.criticalDefectivePositions_eq_interval",
+        "PaperP1.CriticalBandScale.critical_band_scale"
+      ],
+      "proposed_revision": "There exists an absolute K>0 such that for every fixed C there is N0(C), and all N≥N0(C), all critical-band lengths L and all dyadic starts x, the number of n∈V_x with K_(10B)(n)=1 is at most K B/log B, where B=L+1.",
+      "impact": "Clarifies and strengthens the constant uniformity in T9.2. The threshold may still depend on the fixed band width. No admissibility, positive start probability or full-rank assumption is added. The cutoff 10B and the B/log B rate are unchanged.",
+      "validation": "Lean v4.36.0-rc2 full build and actual kernel audit of all 1301 declarations; only propext, Classical.choice and Quot.sound. Exact implementation commit is recorded after publication.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

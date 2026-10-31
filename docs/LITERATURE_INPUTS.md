@@ -192,3 +192,12 @@ explicit mathematical hypothesis only for the conditional moment-transfer
 clauses; no literature theorem or target transfer estimate is assumed.
 It may hold just along one prescribed length sequence. See
 [regular-set alignment](REGULAR_SET_ALIGNMENT.md).
+
+## Local square threshold and critical defects
+
+Companion T9.1 is proved directly from the internal T1.1 split-product bound,
+with the stronger threshold recorded in `P1-MATH-0005`. Companion T9.2 is a
+specialization of the proved T1.3 local count with cutoff 10B; the absolute
+constant quantifier is recorded in `P1-MATH-0006`. No new external theorem,
+analytic truncation estimate or admissibility premise is assumed. See
+[alignment](LOCAL_SQUARE_THRESHOLD_ALIGNMENT.md).

@@ -283,6 +283,10 @@ import PaperP1
 #print axioms PaperP1.ChebyshevPrimeCount.log_mul_card_highPrimes_le
 #print axioms PaperP1.ChebyshevPrimeCount.log_mul_count_le_seven_mul
 #print axioms PaperP1.ChebyshevPrimeCount.count_le_seven_mul_div_log
+#print axioms PaperP1.CriticalDefectPositions.mem_criticalDefectivePositions
+#print axioms PaperP1.CriticalDefectPositions.criticalDefectivePositions_eq_interval
+#print axioms PaperP1.CriticalDefectPositions.uniform_critical_defect_constant
+#print axioms PaperP1.CriticalDefectPositions.companion_T9_2
 #print axioms PaperP1.DefectAffineBounds.affine_local_defect_bound_eventually
 #print axioms PaperP1.DefectAffineBounds.affineIntervalDefects_subset_positiveBelow
 #print axioms PaperP1.DefectAffineBounds.affine_global_defect_cover_bound_eventually
@@ -361,6 +365,11 @@ import PaperP1
 #print axioms PaperP1.LargeOddKernel.mem_oddPrimeSupport_iff_parityVec_ne_zero
 #print axioms PaperP1.LargeOddKernel.prime_of_mem_oddPrimeSupport
 #print axioms PaperP1.LargeOddKernel.largeOddKernel_eq_one_iff
+#print axioms PaperP1.LocalSquareThreshold.split_product_finset_bound
+#print axioms PaperP1.LocalSquareThreshold.local_square_threshold_sharp
+#print axioms PaperP1.LocalSquareThreshold.sixtyfour_mul_le_fifth_power
+#print axioms PaperP1.LocalSquareThreshold.local_square_threshold_power_five
+#print axioms PaperP1.LocalSquareThreshold.companion_T9_1
 #print axioms PaperP1.LogarithmicPrimeCount.primeCount_mono
 #print axioms PaperP1.LogarithmicPrimeCount.log_mul_primeCount_le
 #print axioms PaperP1.LogarithmicPrimeCount.primeCount_le_log_div_loglog
@@ -443,6 +452,9 @@ import PaperP1
 #print axioms PaperP1.WeightedDefectCounting.cast_sqrt_div_prod_le
 #print axioms PaperP1.WeightedDefectCounting.card_positiveDefectValues_cast_le_eulerProduct
 #print axioms PaperP1.WeightedDefectCounting.card_positiveHDefectValues_cast_le_eulerProduct
+#print axioms PaperP1.CriticalBandScale.lowerScale_pos
+#print axioms PaperP1.CriticalBandScale.upperScale_pos
+#print axioms PaperP1.CriticalBandScale.critical_band_scale
 #print axioms PaperP1.ExpSqrtLog.pow_le_nat_eventually
 #print axioms PaperP1.ExpSqrtLog.uniformSubpolynomialOn
 #print axioms PaperP1.ExpSqrtLog.exp_sqrt_of_le_log_pow_le_nat_eventually

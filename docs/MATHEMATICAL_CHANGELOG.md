@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Four mathematical improvements are confirmed; no error in a manuscript conclusion
+**Six mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -111,6 +111,46 @@ Absence of an entry does not mean the argument has been verified.
   Exact proof commit:
   [deaa74d96763db33f7d8932053eb4bc308d3db4c](https://github.com/Vulkin-prog/paper-p1-lean/commit/deaa74d96763db33f7d8932053eb4bc308d3db4c).
 
+## P1-MATH-0005 — A stronger finite local-square threshold
+
+- Location: companion T9.1, page 39, `p13:rig:local-square`,
+  `companion_sections/pair_rigidity.tex:17`.
+- Original condition: x>(B+1)^(12m), B≥2, where m is the positive even
+  cardinality of the actual offset set I⊆[-B,B].
+- Improvement: x>(64B)^m suffices. Since 64B≤(B+1)^5 for every B≥2,
+  the simpler condition x>(B+1)^(5m) suffices as well.
+- Evidence: `LocalSquareThreshold.local_square_threshold_sharp`,
+  `local_square_threshold_power_five` and `companion_T9_1`. These are proved
+  from the internal degree-uniform T1.1 theorem after an exact reindexing of
+  the finite integer set. The threshold supplies the required base condition.
+- Suggested revision: use the sharper (64B)^m threshold or replace 12m by
+  5m, and replace the analytic truncation argument with this short consequence
+  of T1.1. No optimality of the new threshold is claimed.
+- Impact: strengthens finite local square exclusion without changing the
+  original conclusion, offset domain, evenness or later asymptotic exponents.
+- Status: confirmed by Lean compilation and actual kernel audit; not integrated
+  into a new manuscript. See [alignment](LOCAL_SQUARE_THRESHOLD_ALIGNMENT.md).
+
+## P1-MATH-0006 — An absolute constant for critical defective positions
+
+- Location: companion T9.2, page 39, `p13:rig:defective`,
+  `companion_sections/pair_rigidity.tex:62`.
+- Original bound: O_C(B/log B) for the actual 10B-defective positions.
+- Improvement: there is one absolute K>0 before the band width C. For each
+  fixed C, only N0(C) changes. The same K bounds every start and every length
+  in that critical band by K B/log B, with B=L+1.
+- Evidence: `CriticalDefectPositions.uniform_critical_defect_constant`,
+  `companion_T9_2` and the exact kernel/interval dictionary. The already proved
+  T1.3 local count uses fixed dyadic-base and logarithmic-scale comparisons;
+  their constants are independent of C once N exceeds a C-dependent threshold.
+- Suggested revision: state the quantifier order ∃K>0, ∀C, ∃N0(C), followed
+  by all N, L and x. Preserve the eventual character of the result.
+- Impact: strengthens constant uniformity. The cutoff 10B, rate B/log B and
+  original conclusions are unchanged. No regularity or admissibility premise
+  is introduced, and no uniform threshold over unbounded C is asserted.
+- Status: confirmed by Lean compilation and actual kernel audit; not integrated
+  into a new manuscript. See [alignment](LOCAL_SQUARE_THRESHOLD_ALIGNMENT.md).
+
 Every finding receives a stable identifier `P1-MATH-0001`, etc., and an entry in
 [mathematical-changes.json](mathematical-changes.json). Keep the following fields:
 
@@ -151,6 +191,7 @@ count laws, both means, and the conditional fixed-moment and second factorial-
 cumulant transfers. The latter retain the bounded-fixed-moments premise and
 the diagonal term -E Z. A prescribed length sequence requires moment bounds
 only along that sequence. The proof gives the explicit combined constant
-4·2^C without changing the manuscript's exponent. This checkpoint adds no
-correction or improvement entry; the four confirmed findings above remain
-unchanged. See [statement alignment](REGULAR_SET_ALIGNMENT.md).
+4·2^C without changing the manuscript's exponent. This regular-set checkpoint added no correction or improvement entry.
+The later local-square and defect-constant improvements are recorded above
+as P1-MATH-0005 and P1-MATH-0006. See
+[statement alignment](REGULAR_SET_ALIGNMENT.md).

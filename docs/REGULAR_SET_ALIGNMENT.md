@@ -1,7 +1,7 @@
 # Article Proposition 3.1: the regular set
 
-**Status: proved**, all clauses of main Proposition 3.1. Coverage is 11 / 167:
-8 / 73 main and 3 / 94 companion. Original locator: V1.6 main article,
+**Status: proved**, all clauses of main Proposition 3.1. Coverage is 13 / 167:
+8 / 73 main and 5 / 94 companion. Original locator: V1.6 main article,
 page 14, `p1:arith:core`, `main_sections/arithmetic.tex:49`. Its proof is in
 the companion's Section `p14:comp:regular-transfer`. Original bytes and the
 statement hash in the coverage ledger are unchanged.
@@ -116,7 +116,6 @@ that remains the separate result main 6.4.
 Lean v4.36.0-rc2 and the pinned matching Mathlib are used. All new proofs are
 included in the generated audit. Full build, source identities and the actual
 kernel axiom audit are checked before publication. The project contains
-1,289 audited theorem/lemma declarations, distinct from numbered coverage.
+1,289 audited theorem/lemma declarations at the original regular-set checkpoint, distinct from numbered coverage.
 No additional Paper C port or unproved literature input is introduced.
-No new mathematical correction is identified in this proposition. The four
-confirmed improvements remain tracked separately. No Palomar entry is made.
+No new mathematical correction is identified in this proposition. The confirmed improvements remain tracked separately. No Palomar entry is made.

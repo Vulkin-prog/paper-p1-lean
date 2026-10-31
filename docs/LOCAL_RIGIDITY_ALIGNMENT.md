@@ -3,7 +3,7 @@
 **Status: proved**, full article Lemma 2.1, including the finite Griesmer
 inequality, general and critical logarithmic regimes, and exact subcritical
 independence under the infinite prime-sign measure. Completed coverage is
-11 / 167. The critical-band rank and marginal consequences are also proved.
+13 / 167. The critical-band rank and marginal consequences are also proved.
 
 Original locator: article V1.6, page 11, `p1:limits:local-rigidity`,
 `main_sections/exact_setup.tex:27`. The original statement is unchanged.

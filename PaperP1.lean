@@ -66,3 +66,5 @@ public import PaperP1.Model.LocalRunRank
 public import PaperP1.Arithmetic.SharpPrimeCount
 public import PaperP1.Model.LocalRigidityConsequences
 public import PaperP1.Model.RegularCumulantTransfer
+public import PaperP1.Arithmetic.LocalSquareThreshold
+public import PaperP1.Arithmetic.CriticalDefectPositions

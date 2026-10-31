@@ -90,7 +90,7 @@ recorded in the project status without counting as complete numbered results.
 | 19.2 (p. 58) | [p1:discussion:charlier-norm](../manuscripts/paper-p1/v1.6/sources/main_sections/discussion.tex#L116) | Norms of Poisson differences | not_started | — |
 | 20.1 (p. 60) | [p1:limits:vector-reference](../manuscripts/paper-p1/v1.6/sources/main_sections/limits_appendix.tex#L45) | Unsigned positional compound-Poisson comparison | not_started | — |
 
-## Technical companion: 3 / 94 proved
+## Technical companion: 5 / 94 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -132,8 +132,8 @@ recorded in the project status without counting as complete numbered results.
 | T8.1 (p. 37) | [p13:conf:groups](../manuscripts/paper-p1/v1.6/sources/companion_sections/confinement.tex#L9) | Polynomial confinement of common divisors | not_started | — |
 | T8.2 (p. 37) | [p13:conf:dense-primitive](../manuscripts/paper-p1/v1.6/sources/companion_sections/confinement.tex#L75) | Dense primitive triples | not_started | — |
 | T8.3 (p. 38) | [p13:conf:dense-pairs](../manuscripts/paper-p1/v1.6/sources/companion_sections/confinement.tex#L149) | Dense nonaligned pairs | not_started | — |
-| T9.1 (p. 39) | [p13:rig:local-square](../manuscripts/paper-p1/v1.6/sources/companion_sections/pair_rigidity.tex#L17) | A local square threshold | not_started | — |
-| T9.2 (p. 39) | [p13:rig:defective](../manuscripts/paper-p1/v1.6/sources/companion_sections/pair_rigidity.tex#L62) | Few defective positions in every critical window | not_started | — |
+| T9.1 (p. 39) | [p13:rig:local-square](../manuscripts/paper-p1/v1.6/sources/companion_sections/pair_rigidity.tex#L17) | A local square threshold | proved | `PaperP1.LocalSquareThreshold.companion_T9_1`, `PaperP1.LocalSquareThreshold.local_square_threshold_sharp`, `PaperP1.LocalSquareThreshold.local_square_threshold_power_five`, `PaperP1.LocalSquareThreshold.split_product_finset_bound` |
+| T9.2 (p. 39) | [p13:rig:defective](../manuscripts/paper-p1/v1.6/sources/companion_sections/pair_rigidity.tex#L62) | Few defective positions in every critical window | proved | `PaperP1.CriticalDefectPositions.companion_T9_2`, `PaperP1.CriticalDefectPositions.uniform_critical_defect_constant`, `PaperP1.CriticalDefectPositions.criticalDefectivePositions_eq_interval`, `PaperP1.CriticalBandScale.critical_band_scale` |
 | T9.3 (p. 40) | [p13:rig:components](../manuscripts/paper-p1/v1.6/sources/companion_sections/pair_rigidity.tex#L129) | Free components | not_started | — |
 | T9.4 (p. 41) | [p13:rig:factor-height](../manuscripts/paper-p1/v1.6/sources/companion_sections/pair_rigidity.tex#L251) | Height of a bivariate factor | not_started | — |
 | T9.5 (p. 42) | [p13:rig:two-witnesses](../manuscripts/paper-p1/v1.6/sources/companion_sections/pair_rigidity.tex#L277) | Two complete witnesses | not_started | — |

@@ -204,6 +204,10 @@ obstruction, exact arbitrary-target affine deviations, finite coupling and
 moment truncation. It reuses the already checked foundations, not additional
 Paper C source. Both count laws are identified with the actual infinite model.
 
+Companion T9.1 and T9.2 add no Paper C port. Their finite-set reindexing,
+critical-band scale comparison and exact kernel-one count specialization are
+new P1 proofs built on the checked T1.1 and T1.3 developments.
+
 ## Further candidates
 
 | Candidate area | Paper C paths | Required comparison |

@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 31 O
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **11 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3.
+- Numbered results completed: **13 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1289 audited theorem/lemma declarations**. This
+- The project currently has **1301 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -173,11 +173,21 @@ Neither document is fully formalized.
   [regular-set alignment](REGULAR_SET_ALIGNMENT.md). This verifies the
   conditional transfer; uniform boundedness of the model's fixed moments
   remains a separate open manuscript result.
+- Companion T9.1 and T9.2 are complete. T9.1 concerns actual nonempty even
+  finite subsets of integer offsets in [-B,B]; the original threshold is
+  proved as a consequence of the stronger (64B)^m bound. For B≥2 this gives
+  the simpler exponent 5m in place of 12m. T9.2 counts the actual kernel-one
+  positions above 10B in the full vertex interval. One absolute constant K
+  works for every fixed critical band width C; only N0 depends on C.
+  No admissibility or regularity hypothesis is used. See
+  [statement alignment](LOCAL_SQUARE_THRESHOLD_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
   hypotheses for all three parts of T1.3; `P1-MATH-0004`, a lower base bound
-  alone and uniform shorter windows for local rigidity. No error in an original
+  alone and uniform shorter windows for local rigidity; `P1-MATH-0005`, a stronger
+  local-square threshold; `P1-MATH-0006`, an absolute critical-defect constant.
+  No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.
 

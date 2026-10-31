@@ -1875,11 +1875,18 @@
       "source": "companion_sections/pair_rigidity.tex",
       "line": 17,
       "sha256": "f9698333e474d8e0890a0f425b5f207336f6b1e16948952d0e9c3d81707b6e3e",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.LocalSquareThreshold.companion_T9_1",
+        "PaperP1.LocalSquareThreshold.local_square_threshold_sharp",
+        "PaperP1.LocalSquareThreshold.local_square_threshold_power_five",
+        "PaperP1.LocalSquareThreshold.split_product_finset_bound"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0005"
+      ],
+      "notes": "Full companion T9.1 for an actual finite subset I of integer offsets in [-B,B], positive even cardinality m, B≥2 and x>(B+1)^(12m). The internal degree-uniform T1.1 proof yields the stronger threshold (64B)^m, hence (B+1)^(5m). No analytic tail or root-height hypothesis is assumed. See LOCAL_SQUARE_THRESHOLD_ALIGNMENT.md."
     },
     {
       "label": "p13:rig:defective",
@@ -1891,11 +1898,18 @@
       "source": "companion_sections/pair_rigidity.tex",
       "line": 62,
       "sha256": "8b2ed4253a1ab2c85cfe8f957d205dff13ea7e6b5dd7ea1f04e82f28f3b49409",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.CriticalDefectPositions.companion_T9_2",
+        "PaperP1.CriticalDefectPositions.uniform_critical_defect_constant",
+        "PaperP1.CriticalDefectPositions.criticalDefectivePositions_eq_interval",
+        "PaperP1.CriticalBandScale.critical_band_scale"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0006"
+      ],
+      "notes": "Full companion T9.2 for the exact vertex interval [x-1,x+L-1], B=L+1 and the literal odd-prime kernel above 10B. The O(B/log B) estimate is uniform over every dyadic start and every length in a fixed critical band, without admissibility or regularity assumptions. A single absolute constant works for all fixed band widths C; only N0 depends on C. The proof specializes the internally proved T1.3 local bound. See LOCAL_SQUARE_THRESHOLD_ALIGNMENT.md."
     },
     {
       "label": "p13:rig:components",
