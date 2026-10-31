@@ -528,6 +528,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "77ac64fd3085c4f58ebb6a071f5c3fa30779a85b"
+    },
+    {
+      "id": "P1-MATH-0016",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:uniform:prime-budget",
+        "number": "T22.3",
+        "page": 90,
+        "source": "companion_sections/uniform_appendix.tex",
+        "line": 116,
+        "statement_sha256": "4f96d8d3c0c83c42415d59c5ef2dff3eed16602b8bebff06bf3ca461a75ca108"
+      },
+      "original_assumption": "Companion T22.3 has a factor zeta(2*sigma) for 1/2<sigma<1. Its logarithmic prime-budget estimate is uniform on [3/5,3/4] for Y>=3, with an O(1+Y^(1-sigma)/logY) remainder.",
+      "finding": "The finite count is at most X^sigma times the finite Euler product alone for every sigma>=1/2 and X>=0. The logarithmic estimate holds uniformly for 1/2<=sigma<=3/4, X>=1 and Y>1, with remainder at most (65+4*log(4))*Y^(1-sigma)/logY. The original zeta inequality and compact interval are direct corollaries.",
+      "evidence": [
+        "PaperP1.SmoothSquarefreeCount.card_values_le_euler",
+        "PaperP1.PrimeBudgetRankin.log_values_le",
+        "PaperP1.WeightedPrimeSum.primeSum_mul_log_le_uniform",
+        "PaperP1.LogarithmicPrimeBudget.primeBudgetSum_le",
+        "PaperP1.PrimeBudgetRankin.companion_T22_3"
+      ],
+      "proposed_revision": "Remove zeta(2*sigma) using the finite square-root fibre count. Extend the uniform interval to [1/2,3/4] and give the explicit logarithmic constant 65+4*log(4). The more general cutoff Y>1 is available; later applications may retain Y>=3.",
+      "impact": "Strengthens both inequalities and their parameter ranges, with a single constant chosen before the finite prime set, exponent and cutoffs. The proof is elementary: the primorial bound controls all initial logarithmic prime sums; Abel comparison controls their power-weighted versions; a fixed 1/8 logarithmic loss gives the uniform unweighted prime sum. No PNT, zeta upper bound or unproved prime estimate is needed. No original conclusion is corrected, and no optimality claim is made.",
+      "validation": "Full Lean v4.36.0-rc2 build (8817 jobs) and actual axiom audit of all 1941 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. Every evidence theorem is directly included in the audit. All 263 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

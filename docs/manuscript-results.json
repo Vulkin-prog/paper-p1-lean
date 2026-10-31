@@ -2883,11 +2883,28 @@
       "source": "companion_sections/uniform_appendix.tex",
       "line": 116,
       "sha256": "4f96d8d3c0c83c42415d59c5ef2dff3eed16602b8bebff06bf3ca461a75ca108",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.PrimeBudgetRankin.companion_T22_3",
+        "PaperP1.PrimeBudgetRankin.source_uniform_log_bound",
+        "PaperP1.PrimeBudgetRankin.log_values_le",
+        "PaperP1.PrimeBudgetRankin.card_values_le_exp",
+        "PaperP1.SmoothSquarefreeCount.card_values_le_source_rankin",
+        "PaperP1.SmoothSquarefreeCount.card_values_le_euler",
+        "PaperP1.SmoothSquarefreeCount.mem_values",
+        "PaperP1.SmoothSquarefreeCount.one_le_zeta_series",
+        "PaperP1.WeightedPrimeSum.logPrimeSum_le_partialPower",
+        "PaperP1.WeightedPrimeSum.primeSum_mul_log_le_uniform",
+        "PaperP1.LogarithmicPrimeBudget.primeBudgetSum_le",
+        "PaperP1.LogarithmicPrimeBudget.primeBudgetEuler_le"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-LOGARITHMIC-PRIME-BUDGET"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0016"
+      ],
+      "notes": "Both conclusions of companion T22.3, for the actual positive integers whose odd-prime support lies in an arbitrary finite prime set. Real cutoffs are retained. The literal zeta factor is the convergent positive-integer series sum a^(-2*sigma), and its lower bound one is proved. A stronger finite square-root fibre bound removes that factor and includes sigma=1/2. The logarithmic bound has one explicit constant 65+4*log(4), uniform for 1/2<=sigma<=3/4 and Y>1, with no additive 1 needed. An elementary primorial bound, Abel comparison and a fixed 1/8 power bound on the logarithmic loss prove the weighted prime estimate; no prime asymptotic or unproved partial-summation estimate is assumed. The original interval [3/5,3/4], Y>=3 and O(1+Y^(1-sigma)/logY) follow directly. See LOGARITHMIC_PRIME_BUDGET_ALIGNMENT.md."
     },
     {
       "label": "p1:uniform:branching",

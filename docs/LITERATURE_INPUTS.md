@@ -20,6 +20,29 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## An arbitrary prime set under a logarithmic budget
+
+Stable ID: `P1-ARITH-LOGARITHMIC-PRIME-BUDGET`. Status: **proved**.
+
+- Target: both conclusions of companion T22.3, page 90,
+  `p1:uniform:prime-budget`.
+- Lean: `PrimeBudgetRankin.companion_T22_3`, `source_uniform_log_bound`,
+  and stronger `log_values_le`; the actual integer population is
+  `SmoothSquarefreeCount.values`.
+- A finite square-root fibre argument proves the Euler-product count.
+  The convergent positive-integer series defining zeta(2*sigma) is retained
+  in the source corollary; its lower bound one is proved.
+- The primorial bound gives every initial logarithmic prime sum.
+  Mathlib's finite Abel comparison gives the power-weighted sum, and a
+  fixed 1/8 logarithmic loss proves a common bound for all exponents in
+  [0,3/4]. Splitting the given prime set at Y then uses its actual budget.
+- Mathlib at the pinned revision supplies finite Abel comparison, real-power
+  and logarithm identities, p-series summability and finite product algebra.
+  No PNT, prime partial-summation estimate or zeta upper bound is assumed.
+- `P1-MATH-0016` records the stronger finite constant and uniform range.
+  No additional Paper C file is ported. See
+  [alignment](LOGARITHMIC_PRIME_BUDGET_ALIGNMENT.md).
+
 ## Small truncated odd-prime kernels
 
 Stable ID: `P1-ARITH-RANKIN-SMALL-KERNEL`. Status: **proved**.

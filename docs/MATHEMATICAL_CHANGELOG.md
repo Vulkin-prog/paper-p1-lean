@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Fifteen mathematical improvements are confirmed; no error in a manuscript conclusion
+**Sixteen mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -555,3 +555,35 @@ All 251 distinct coverage/finding declaration names were checked directly by Lea
 
 Validated implementation of article Lemma 7.1 and P1-MATH-0015:
 [77ac64fd3085c4f58ebb6a071f5c3fa30779a85b](https://github.com/Vulkin-prog/paper-p1-lean/commit/77ac64fd3085c4f58ebb6a071f5c3fa30779a85b).
+
+## P1-MATH-0016 — Stronger Rankin bounds under a logarithmic prime budget
+
+- Location: companion T22.3, page 90, `p1:uniform:prime-budget`,
+  `companion_sections/uniform_appendix.tex:116`.
+- Original conclusions: the finite count has a factor zeta(2*sigma) for
+  1/2<sigma<1; the logarithmic bound is uniform on [3/5,3/4], Y>=3,
+  with an O(1+Y^(1-sigma)/logY) remainder.
+- Improvement: remove the zeta factor. The Euler-product count holds for
+  every sigma>=1/2. The logarithmic estimate extends uniformly to
+  [1/2,3/4] and Y>1, with the explicit remainder
+  `(65+4*log(4))*Y^(1-sigma)/logY`, without the additive one.
+- Proof: finite square-root fibres give the stronger count. The elementary
+  primorial bound controls initial logarithmic prime sums. Finite Abel
+  comparison transfers this to real-power weights. A fixed 1/8 power bound
+  controls log(Y/p), and the prime set above Y is charged to its actual
+  logarithmic budget. Every constant is independent of the finite set,
+  exponent and cutoffs in the stated range.
+- Evidence: `SmoothSquarefreeCount.card_values_le_euler`,
+  `PrimeBudgetRankin.log_values_le`,
+  `WeightedPrimeSum.primeSum_mul_log_le_uniform`,
+  `LogarithmicPrimeBudget.primeBudgetSum_le` and
+  `PrimeBudgetRankin.companion_T22_3`.
+- Suggested revision: use the finite fibre proof, wider interval and explicit
+  constant. No PNT or zeta upper bound is needed. No error in an original
+  conclusion or optimality claim is made.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,817 jobs) and actual
+  audit of all 1,941 theorem/lemma declarations, with only `propext`,
+  `Classical.choice` and `Quot.sound`. Not integrated into a manuscript. See
+  [alignment](LOGARITHMIC_PRIME_BUDGET_ALIGNMENT.md).
+
+All 263 distinct coverage/finding declaration names were checked directly by Lean.

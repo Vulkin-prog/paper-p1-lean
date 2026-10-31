@@ -90,7 +90,7 @@ recorded in the project status without counting as complete numbered results.
 | 19.2 (p. 58) | [p1:discussion:charlier-norm](../manuscripts/paper-p1/v1.6/sources/main_sections/discussion.tex#L116) | Norms of Poisson differences | not_started | — |
 | 20.1 (p. 60) | [p1:limits:vector-reference](../manuscripts/paper-p1/v1.6/sources/main_sections/limits_appendix.tex#L45) | Unsigned positional compound-Poisson comparison | not_started | — |
 
-## Technical companion: 16 / 94 proved
+## Technical companion: 17 / 94 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -182,7 +182,7 @@ recorded in the project status without counting as complete numbered results.
 | T21.4 (p. 88) | [p1:consequences:confinement](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_consequences.tex#L244) | Polylogarithmic confinement | not_started | — |
 | T22.1 (p. 89) | [p1:uniform:full-support](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L21) | A weighted count of every full support | not_started | — |
 | T22.2 (p. 90) | [p1:uniform:missing-block](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L69) | When no relation uses every block | proved | `PaperP1.MissingBlockProbabilities.regular_joint_missing_block_bound`, `PaperP1.MissingBlockTupleSum.companion_T22_2_sum`, `PaperP1.MissingBlockProbabilities.infinite_joint_missing_block_bound`, `PaperP1.MissingBlockTupleSum.sum_missing_block_tuples_heterogeneous`, `PaperP1.Affine.missing_full_support_nullity_bound`, `PaperP1.FactorialCountMoments.sum_tuple_joint_moments`, `PaperP1.FactorialCountMoments.factorialCountMoment_eq_falling_product`, `PaperP1.Probability.eraseTuple_encoding_injective`, `PaperP1.Probability.sum_erased_tuple_bound` |
-| T22.3 (p. 90) | [p1:uniform:prime-budget](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L116) | Rankin under a logarithmic prime budget | not_started | — |
+| T22.3 (p. 90) | [p1:uniform:prime-budget](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L116) | Rankin under a logarithmic prime budget | proved | `PaperP1.PrimeBudgetRankin.companion_T22_3`, `PaperP1.PrimeBudgetRankin.source_uniform_log_bound`, `PaperP1.PrimeBudgetRankin.log_values_le`, `PaperP1.PrimeBudgetRankin.card_values_le_exp`, `PaperP1.SmoothSquarefreeCount.card_values_le_source_rankin`, `PaperP1.SmoothSquarefreeCount.card_values_le_euler`, `PaperP1.SmoothSquarefreeCount.mem_values`, `PaperP1.SmoothSquarefreeCount.one_le_zeta_series`, `PaperP1.WeightedPrimeSum.logPrimeSum_le_partialPower`, `PaperP1.WeightedPrimeSum.primeSum_mul_log_le_uniform`, `PaperP1.LogarithmicPrimeBudget.primeBudgetSum_le`, `PaperP1.LogarithmicPrimeBudget.primeBudgetEuler_le` |
 | T22.4 (p. 90) | [p1:uniform:branching](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L147) | Independent extensions at the critical order | not_started | — |
 | T22.5 (p. 91) | [p1:uniform:one-pair](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L198) | A single pair at all critical orders | not_started | — |
 | T22.6 (p. 92) | [p1:uniform:modified-moments](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L266) | Moment decomposition and pair leakage | not_started | — |
