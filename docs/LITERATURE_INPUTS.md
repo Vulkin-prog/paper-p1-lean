@@ -39,8 +39,14 @@ Stable ID: `P1-PROB-MOMENT-OBSTRUCTION`. Status: **proved**.
 - No fixed-moment equality, positivity, coefficient pattern, norm constant
   or moment bound is a theorem premise. The parameter extension is
   `P1-MATH-0009`. See [alignment](MOMENT_OBSTRUCTION_ALIGNMENT.md).
-- The following unnumbered Stirling/asymptotic continuation is a separate
-  open obligation; no external asymptotic estimate is assumed here.
+- The following unnumbered continuation is now proved separately by closed
+  Poisson factorial sums, `Stirling.le_log_factorial_stirling` from
+  `Analysis/SpecialFunctions/Stirling.lean`, the exact floor estimate, and
+  `isLittleO_log_rpow_atTop` from `Analysis/SpecialFunctions/Pow/Asymptotics.lean`.
+  Its actual probability family, literal parameters, fixed-order equalities,
+  logarithmic error and strict comparison with every polynomial rate are
+  all checked. No external asymptotic estimate is assumed. See
+  [complete alignment](MOMENT_OBSTRUCTION_ASYMPTOTICS.md).
 
 ## Complete signed Palm identity
 

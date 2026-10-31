@@ -1,6 +1,7 @@
 module
 
 public import PaperP1.Probability.MomentObstructionMass
+public import PaperP1.Probability.PoissonFactorialMoments
 
 /-! # Actual factorial moments of the positive perturbation
 
@@ -16,7 +17,8 @@ set_option autoImplicit false
 namespace PaperP1.MomentObstructionMoments
 
 open MeasureTheory PaperP1.Probability PaperP1.PoissonSequence PaperP1.PoissonExponential
-  PaperP1.DifferenceCoefficients PaperP1.MomentObstructionMass PaperP1.AtomicProbability Finset
+  PaperP1.DifferenceCoefficients PaperP1.MomentObstructionMass PaperP1.AtomicProbability
+  PaperP1.PoissonFactorialMoments Finset
 
 theorem hasSum_qMass_exp (a t : ℝ) :
     HasSum (fun k : ℕ ↦ qMass a k * Real.exp (t * k))
@@ -98,5 +100,18 @@ theorem factorial_moment_eq_iff (m : ℕ) (hm : 1 ≤ m) (a : ℝ) (ha0 : 0 ≤ 
     have hpos := sourceConstant_pos a ha
     linarith
   · exact factorial_moment_eq_of_ne m hm a ha0 ha2 j
+
+theorem qLaw_factorial_moment (a : ℝ) (ha0 : 0 ≤ a) (ha2 : a ≤ 2) (j : ℕ) :
+    (∫ k, (k.descFactorial j : ℝ) ∂(qLaw a ha0 ha2 : Measure ℕ)) = 1 + a * (j.choose 2 : ℝ) := by
+  change (∫ k, (k.descFactorial j : ℝ) ∂(ofMass _ _ _ : Measure ℕ)) = _
+  rw [ofMass_integral]
+  exact (hasSum_quadratic_one_factorial a j).tsum_eq
+
+theorem pLaw_factorial_moment_of_ne (m : ℕ) (hm : 1 ≤ m) (a : ℝ) (ha0 : 0 ≤ a)
+    (ha2 : a ≤ 2) (j : ℕ) (hjm : j ≠ m) :
+    (∫ k, (k.descFactorial j : ℝ) ∂(pLaw m hm a ha0 ha2 : Measure ℕ)) =
+      1 + (j.choose 2 : ℝ) * a := by
+  rw [factorial_moment_eq_of_ne m hm a ha0 ha2 j hjm, qLaw_factorial_moment]
+  ring
 
 end PaperP1.MomentObstructionMoments

@@ -2863,7 +2863,15 @@
         "PaperP1.MomentObstructionMoments.pLaw_factorial_integrable",
         "PaperP1.MomentObstructionMoments.qLaw_factorial_integrable",
         "PaperP1.DifferenceCoefficients.l1Norm_forwardDifference_pow",
-        "PaperP1.DifferenceCoefficients.difference_factorial_moment"
+        "PaperP1.DifferenceCoefficients.difference_factorial_moment",
+        "PaperP1.PoissonFactorialMoments.hasSum_mass_factorial",
+        "PaperP1.MomentObstructionMoments.qLaw_factorial_moment",
+        "PaperP1.MomentObstructionSequence.valid_eventually",
+        "PaperP1.MomentObstructionSequence.fixed_factorial_moments_eventually",
+        "PaperP1.MomentObstructionSequence.log_distance_error_isBigO",
+        "PaperP1.MomentObstructionSequence.distance_exceeds_every_power",
+        "PaperP1.MomentObstructionSequence.uniform_distance_exceeds_power",
+        "PaperP1.MomentObstructionLog.log_distance_sqrt_log_bound"
       ],
       "literature_inputs": [
         "P1-PROB-MOMENT-OBSTRUCTION"
@@ -2871,7 +2879,7 @@
       "mathematical_changes": [
         "P1-MATH-0009"
       ],
-      "notes": "Full numbered T23.1, with actual normalized positive measures, the literal epsilon, signed perturbation identity, pointwise factors 1/2 and 3/2, all actual factorial moments with proved integrability, equality exactly away from order m in the original range, the exact total variation constant, and the original explicit uniform exponential-moment bound. The same construction extends to 0≤a≤2, nontrivially for a<2, with epsilon=0 at a=2; the extended exponential bound uses 1+(exp(t)-1)², while the original range retains 1+(exp(t)-1)²/2. Every real exponential parameter is included. No fixed-order equality, norm constant or probability fact is assumed. The following unnumbered m_N=floor(sqrt(log N)) Stirling expansion and comparison with all polynomial rates remain separate open obligations. No multiplicative-model realization is claimed. See MOMENT_OBSTRUCTION_ALIGNMENT.md."
+      "notes": "Full numbered T23.1, with actual normalized positive measures, the literal epsilon, signed perturbation identity, pointwise factors 1/2 and 3/2, all actual factorial moments with proved integrability, equality exactly away from order m in the original range, the exact total variation constant, and the original explicit uniform exponential-moment bound. The same construction extends to 0≤a≤2, nontrivially for a<2, with epsilon=0 at a=2; the extended exponential bound uses 1+(exp(t)-1)², while the original range retains 1+(exp(t)-1)²/2. Every real exponential parameter is included. No fixed-order equality, norm constant or probability fact is assumed. The following unnumbered continuation is also proved separately: actual probability families with the literal m_N=floor(sqrt(log N)) and a_N=(log N)N^(-2/3), eventual exact fixed-order factorial moments, the full logarithmic O(sqrt(log N)) error, and strict comparison with every N^(-gamma). The latter holds uniformly over all a in [0,1], with one threshold for each fixed gamma. See MOMENT_OBSTRUCTION_ASYMPTOTICS.md; this adds no numbered result. No multiplicative-model realization is claimed. See MOMENT_OBSTRUCTION_ALIGNMENT.md."
     }
   ]
 }

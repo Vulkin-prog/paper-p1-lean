@@ -89,8 +89,11 @@ axiom audit of all 1,647 project theorem/lemma declarations. Only `propext`,
 `Classical.choice` and `Quot.sound` occur. Original manuscript identities
 remain checked separately. There is no unproved external probability input.
 
-The unnumbered continuation selecting m_N=floor(sqrt(log N)), its Stirling
-expansion and the resulting comparison with every polynomial rate are not
-claimed proved at this checkpoint. The exact finite-order example above is
-the entire numbered T23.1. This family has no claimed multiplicative-model
-realization, just as in the original text. No Palomar registration is made.
+At the original 1,647-declaration checkpoint, the unnumbered continuation
+selecting m_N=floor(sqrt(log N)), its Stirling expansion and the polynomial-rate
+comparison were still open. They are now proved separately, for actual
+probability families, with a full 1,680-declaration audit. See the
+[complete asymptotic continuation](MOMENT_OBSTRUCTION_ASYMPTOTICS.md).
+The numbered count remains unchanged. This family has no claimed
+multiplicative-model realization, just as in the original text.
+No Palomar registration is made.

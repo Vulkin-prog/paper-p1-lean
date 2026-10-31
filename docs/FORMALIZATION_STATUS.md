@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1647 audited theorem/lemma declarations**. This
+- The project currently has **1680 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -249,7 +249,14 @@ Neither document is fully formalized.
   exponential bound. The construction also works on [0,2], with a zero
   perturbation at a=2; the larger uniform exponential bound is recorded
   separately. See [moment-obstruction alignment](MOMENT_OBSTRUCTION_ALIGNMENT.md).
-  The unnumbered m_N/Stirling/polynomial-rate continuation remains open.
+  The unnumbered m_N/Stirling/polynomial-rate continuation is now proved
+  separately: the literal floor and parameter define actual eventual
+  probability laws, every fixed factorial moment eventually agrees exactly,
+  the logarithmic error has the stated O(sqrt(log N)) size, and the distance
+  strictly exceeds every fixed N^(-gamma) eventually. The proof gives a
+  uniform version over all a in [0,1], with one threshold per gamma. This
+  unnumbered work adds no completed numbered result. See
+  [asymptotic alignment](MOMENT_OBSTRUCTION_ASYMPTOTICS.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff

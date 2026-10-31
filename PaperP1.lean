@@ -76,3 +76,4 @@ public import PaperP1.Algebra.BivariateFactorHeight
 public import PaperP1.Probability.QuadraticPoisson
 public import PaperP1.Probability.MeasureSignedPalm
 public import PaperP1.Probability.MomentObstruction
+public import PaperP1.Asymptotics.MomentObstructionSequence

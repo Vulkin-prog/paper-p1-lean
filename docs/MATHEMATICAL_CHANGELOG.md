@@ -347,3 +347,16 @@ independence is not assumed. The sums retain their signs before the norm.
 The full build and actual 1,592-declaration axiom audit passed. No new
 mathematical change is identified; the eight confirmed improvement entries
 remain separate. See [complete alignment](SIGNED_PALM_ALIGNMENT.md).
+
+## Complete moment-obstruction continuation — no new finding
+
+The unnumbered continuation after T23.1 is now proved for the exact
+m_N=floor(sqrt(log N)) and a_N=(log N)N^(-2/3). Parameter validity, actual
+probability families, eventual fixed factorial moments, the full displayed
+logarithmic error, and strict failure of every polynomial approximation
+rate are checked. The distance comparison is uniform over all a in [0,1].
+This completes that continuation separately from the original validated
+parameter extension P1-MATH-0009, whose original commit is retained.
+The full build and actual 1,680-declaration audit passed. No additional
+finding identifier is introduced. See
+[complete alignment](MOMENT_OBSTRUCTION_ASYMPTOTICS.md).

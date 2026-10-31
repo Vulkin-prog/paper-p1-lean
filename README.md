@@ -91,6 +91,9 @@ factorial-moment perturbation and total variation constant, and uniform
 exponential-moment control. Its parameter interval also extends to [0,2],
 with the zero perturbation at the final endpoint made explicit. See
 [moment-obstruction alignment](docs/MOMENT_OBSTRUCTION_ALIGNMENT.md).
+The following unnumbered asymptotic example is also proved, including the
+literal floor, fixed-order moment identities and failure of every polynomial
+rate. See [its alignment](docs/MOMENT_OBSTRUCTION_ASYMPTOTICS.md).
 The sharp PNT input is proved by a selected, recompiled and audited analytic
 development, with [separate provenance](docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 
