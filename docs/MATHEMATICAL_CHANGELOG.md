@@ -552,3 +552,6 @@ Validated implementation of complete Lemma 6.1 and P1-MATH-0013/0014:
   [alignment](RANKIN_SMALL_KERNEL_ALIGNMENT.md).
 
 All 251 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of article Lemma 7.1 and P1-MATH-0015:
+[77ac64fd3085c4f58ebb6a071f5c3fa30779a85b](https://github.com/Vulkin-prog/paper-p1-lean/commit/77ac64fd3085c4f58ebb6a071f5c3fa30779a85b).
