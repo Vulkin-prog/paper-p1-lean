@@ -109,3 +109,6 @@ It is historical evidence for that partial scope, rather than validation of
 the later representation proof.
 
 All 239 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of complete Lemma 6.1 and P1-MATH-0013/0014:
+[9dcb13772d8b7dbef31571adca039223a50ec120](https://github.com/Vulkin-prog/paper-p1-lean/commit/9dcb13772d8b7dbef31571adca039223a50ec120).

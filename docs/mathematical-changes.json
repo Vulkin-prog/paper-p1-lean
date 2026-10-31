@@ -460,7 +460,8 @@
           "audited_declarations": 1874,
           "scope": "Initial subspace, recovery exclusion and multiplicity clauses over arbitrary fields; the representation clause remained open at this earlier checkpoint."
         }
-      ]
+      ],
+      "validation_commit": "9dcb13772d8b7dbef31571adca039223a50ec120"
     },
     {
       "id": "P1-MATH-0014",
@@ -492,7 +493,8 @@
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "9dcb13772d8b7dbef31571adca039223a50ec120"
     }
   ]
 }

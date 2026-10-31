@@ -517,3 +517,6 @@ Its limited scope is preserved in the machine-readable validation history.
   or optimality claim is made. Not integrated into a manuscript.
 
 All 239 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of complete Lemma 6.1 and P1-MATH-0013/0014:
+[9dcb13772d8b7dbef31571adca039223a50ec120](https://github.com/Vulkin-prog/paper-p1-lean/commit/9dcb13772d8b7dbef31571adca039223a50ec120).
