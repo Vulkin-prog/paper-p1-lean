@@ -187,6 +187,9 @@ and effective-rank bridges are new P1 proofs.
 `a18c4679f329ef81e3311f1c249128330811c054`, was inspected at the same commit.
 It defines an explicit unproved PNT proposition. It is not a proof of PNT and
 has not been imported or counted as a discharged arithmetic input in P1.
+The PNT input has instead been proved by adapting a selected proof from
+`AlexKontorovich/PrimeNumberTheoremAnd`, with separate
+[provenance and validation](PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 `PaperCV282/MicroscopicPrivatePrimes.lean` was also inspected but not ported;
 its quadratic-window exponent-one argument is not needed here.
 

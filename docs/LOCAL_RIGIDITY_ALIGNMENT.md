@@ -76,14 +76,17 @@ condition.
 
 ## Remaining obligations
 
-The sharp asymptotic comparison of π(B) with B/log B is not supplied by the
-existing elementary Chebyshev bound. Its leading constant is essential for
+The sharp asymptotic comparison of π(B) with B/log B is now proved by
+`SharpPrimeCount.prime_counting_ratio_tendsto` and
+`SharpPrimeCount.primeCount_upper_eventually`. Its leading constant is essential for
 the stated thresholds `c < 2 - 2^(1-t)`, including the critical c=1/log 2.
-The exact one-sided input needed is recorded as `P1-ARITH-PNT` in the
-[literature inventory](LITERATURE_INPUTS.md). It is not assumed by any theorem
-in this finite development.
+The exact one-sided input is recorded as proved `P1-ARITH-PNT` in the
+[literature inventory](LITERATURE_INPUTS.md), with a selected and recompiled
+analytic proof, full provenance and the actual axiom audit. It is not an
+unproved assumption of any P1 theorem. See
+[PNT statement alignment](PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 
-Still to formalize: the sharp prime-count input; the simultaneous logarithmic
+Still to formalize: the simultaneous logarithmic
 limits with uniform macroscopic bases; the critical-band rank conclusion;
 the embedding/projection argument for every smaller subcritical window; and
 the uniform O(N⁻¹) marginal consequence in the critical band.

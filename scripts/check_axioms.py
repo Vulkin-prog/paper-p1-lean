@@ -13,7 +13,10 @@ if not EXPECTED:
 
 text = Path(sys.argv[1]).read_text()
 found = set()
-pattern = re.compile(r"'([^']+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)")
+pattern = re.compile(
+    r"^'(.+)' (?:depends on axioms: \[([^\]]*)\]|does not depend on any axioms)$",
+    re.M,
+)
 for match in pattern.finditer(text):
     name, axioms = match.groups()
     found.add(name)

@@ -7,7 +7,7 @@ by **Brice Pouly**, working version **1.6, 31 October 2026**.
 **Status: active formalization, 9 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
-transform at orders zero, one and two. The asymptotic theorems remain open.
+transform at orders zero, one and two. The principal Poisson asymptotic theorems remain open.
 Article Proposition 4.1 is proved on an arbitrary probability space with a
 finite measurable indicator family. The actual count law is identified as a
 measure; coefficients are Bochner expectations; zero-marginal sites are removed
@@ -48,8 +48,11 @@ one common threshold and include the literal `B=L+1` convention. See
 For article Lemma 2.1, the binary Griesmer bound and its exact finite application
 to all even square relations in a window are now proved. The effective rank
 deficit and the two actual positive marginals follow from a finite prime-count
-criterion. The sharp asymptotic prime comparison and the remaining asymptotic
-conclusions are still open. See [local rigidity alignment](docs/LOCAL_RIGIDITY_ALIGNMENT.md).
+criterion. The sharp PNT prime-count comparison is also proved, using a
+selected and recompiled analytic proof with a complete kernel audit. Its
+[provenance and public statements](docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md)
+are recorded separately. The uniform asymptotic conclusions of Lemma 2.1
+remain open. See [local rigidity alignment](docs/LOCAL_RIGIDITY_ALIGNMENT.md).
 
 | Material | Location |
 |---|---|

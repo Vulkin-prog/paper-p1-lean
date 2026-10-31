@@ -70,7 +70,7 @@ Stable ID: `P1-ARITH-PELL`. Status: **proved**.
 - No theorem from either cited paper is an unproved premise. No
   Nicolas–Robin estimate, fixed-discriminant constant, squarefree coefficient
   assumption or class-number bound remains in the final statement. The
-  determinant estimate and asymptotic local-rigidity input remain open. T1.3 is proved
+  determinant estimate and asymptotic local-rigidity specialization remain open. T1.3 is proved
   in full below.
 
 ## Proved defect-count ingredients
@@ -99,7 +99,7 @@ starts prove the fixed real affine versions. The complete
 constant before the error exponent and a common threshold before every
 cutoff, interval and length. No arithmetic estimate is an unproved premise.
 
-## Local rigidity: proved code bound and unresolved prime asymptotic
+## Local rigidity: proved code bound and sharp prime asymptotic
 
 Stable ID: `P1-CODE-GRIESMER`. Status: **proved**.
 Reference: J. H. Griesmer, *A Bound for Error-Correcting Codes*, IBM Journal of
@@ -111,35 +111,36 @@ are proved internally in `PaperP1.GriesmerBound`. The residual construction
 is proved in `PaperP1.BinaryResidual`. No external proposition is assumed.
 The arithmetic application uses the proved T1.1, with the exact `64B` scale.
 
-Stable ID: `P1-ARITH-PNT`. Status: **unresolved**.
-Required scope: for every real η>0 there is one B₀ such that, for every
-integer B≥max(B₀,2),
-`primeCount B ≤ (1+η) * B / log B`. This is a one-sided consequence of
-`π(B) log B / B → 1`, with no coefficient or degree parameter.
-It is needed for the sharp asymptotic consequences of article Lemma 2.1.
-The bound is not an assumption of the presently proved finite code/rank
-theorems, and no Lean axiom or ordinary hypothesis for PNT is introduced yet.
+Stable ID: `P1-ARITH-PNT`. Status: **proved**.
+For every real η>0 there is B₀≥2 such that every integer B≥B₀ satisfies
+`primeCount B ≤ (1+η) * B / log B`. The sequential limit
+`π(B) log B / B → 1` is also proved, with the exact inclusive prime count.
+There is no coefficient or degree parameter. The public declarations are
+`PaperP1.SharpPrimeCount.primeCount_upper_eventually` and
+`PaperP1.SharpPrimeCount.prime_counting_ratio_tendsto`.
 
 Primary statement reference: Avigad, Donnelly, Gray and Raff,
 *A formally verified proof of the prime number theorem*, ACM TOCL 9(1),
 Article 2 (2007), DOI
 [10.1145/1297658.1297660](https://doi.org/10.1145/1297658.1297660),
 [preprint](https://arxiv.org/abs/cs/0509025), introduction, page 1.
-Its explicit inclusive-prime-count limit agrees with the required convention;
-its Isabelle proof is not a checked Lean proof in this repository.
-Mathlib at the pinned revision supplies prime counting and nonvanishing
-prerequisites, but no sharp PNT theorem was located in that source tree.
+Its explicit inclusive-prime-count limit agrees with the required convention.
+The checked Lean proof below is independent of that Isabelle proof.
 
-A possible Lean proof source is being inspected:
+The selected Lean proof source is
 `AlexKontorovich/PrimeNumberTheoremAnd`, commit
 `127b50e33f6033e2147921167a117af96d9ba4ea`, Apache-2.0, Lean 4.35.0.
-Candidate declarations are `WeakPNT` in `Wiener.lean` and `pi_alt'` in
-`Consequences.lean`. Some unrelated declarations in `Wiener.lean` contain
-proof gaps. The needed transitive closure has not been rebuilt or audited;
-no code from that project is currently imported. Reuse requires a selected,
-gap-free dependency closure, attribution, recompilation and the actual kernel
-audit under Lean 4.36.0-rc2. The historical Paper C PNT interface is also an
-explicit unproved input, so it does not discharge this obligation.
+`WeakPNT` in `Wiener.lean` and `pi_alt'` in `Consequences.lean`, together with
+their selected function-space, Fourier, cutoff and asymptotic dependencies,
+are recompiled and audited under Lean 4.36.0-rc2 and the pinned Mathlib.
+The unused unfinished bounded-variation decay block is excluded; the actual
+proof uses the proved W21 Fourier estimates. Source blobs, scopes, licences,
+statement comparison and version adaptations are recorded in
+[PRIME_NUMBER_THEOREM_ALIGNMENT.md](PRIME_NUMBER_THEOREM_ALIGNMENT.md).
+Mathlib's analytic continuation and nonvanishing facts are compiled inputs
+at `9d581dfff2e41de989072ea63abf3daf69311520`. The historical Paper C PNT
+interface is an unproved proposition and is not used as evidence or a premise.
+No literature theorem is left as an unproved assumption in this PNT chain.
 
 See [local rigidity alignment](LOCAL_RIGIDITY_ALIGNMENT.md) for the exact finite
 statements and the remaining uniform asymptotic obligations.

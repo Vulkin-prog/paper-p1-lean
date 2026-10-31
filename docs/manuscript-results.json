@@ -72,7 +72,7 @@
         "P1-ARITH-PNT"
       ],
       "mathematical_changes": [],
-      "notes": "Finite Griesmer inequality proved for the actual full even square-relation code, with the exact ceiling distance from proved T1.1 and private-prime support restriction. Exact effective-rank deficit and actual infinite-model marginals proved under the finite prime-count obstruction. The sharp PNT input and all uniform asymptotic consequences remain open; this is not complete Lemma 2.1 coverage. See docs/LOCAL_RIGIDITY_ALIGNMENT.md."
+      "notes": "Finite Griesmer inequality proved for the actual full even square-relation code, with the exact ceiling distance from proved T1.1 and private-prime support restriction. Exact effective-rank deficit and actual infinite-model marginals proved under the finite prime-count obstruction. The sharp PNT input is now proved by a selected, recompiled and audited analytic development; uniform asymptotic specializations, critical-band conclusions and subcritical embeddings remain open. This is not complete Lemma 2.1 coverage. See docs/LOCAL_RIGIDITY_ALIGNMENT.md and docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:core",

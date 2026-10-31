@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **915 audited theorem/lemma declarations**. This
+- The project currently has **1162 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -79,7 +79,7 @@ Neither document is fully formalized.
   `dyadicCountLaw_realizes_infinite_count` identifies the full count law with
   its actual infinite-measure pushforward. The no-constant-tail result is
   also checked; its inherited lemma number refers to Paper C.
-  External literature propositions encoded: none.
+  Unproved literature propositions encoded as assumptions: none.
 - Generic affine fibers, their kernel equivalences, power-of-two cardinalities
   and rational uniform probabilities have been ported and checked. The actual
   real uniform mass is now proved to be zero for incompatible systems and
@@ -90,8 +90,13 @@ Neither document is fully formalized.
   with its exact ceiling distance from T1.1, actual defective coordinates and
   redundancy at most π(B)+1. A finite prime-count obstruction gives the two
   effective ranks and the two exact positive marginals under the infinite
-  model. The asymptotic conclusions of article Lemma 2.1 remain open, including
-  the sharp prime-count input; the result is recorded as in progress, without
+  model. The sharp prime-count input is now proved by a selected, recompiled
+  Wiener–Ikehara/PNT development, with its sequential ratio and uniform
+  one-sided consequence. All its selected proofs are included in the kernel
+  audit; unfinished upstream Fourier declarations are excluded from the
+  dependency chain. See [PNT proof and provenance](PRIME_NUMBER_THEOREM_ALIGNMENT.md).
+  The uniform asymptotic specializations and remaining conclusions of article
+  Lemma 2.1 remain open; the result is recorded as in progress, without
   increasing completed coverage. See [local rigidity alignment](LOCAL_RIGIDITY_ALIGNMENT.md).
 - On any effective subspace of actual binary linear forms, the affine event
   has its character expansion and actual marginal equal to the inverse size
