@@ -1614,11 +1614,28 @@
       "source": "companion_sections/supplemental_arithmetic.tex",
       "line": 107,
       "sha256": "f8e7ced365fdb9782d8b9ebfb18345eb41508ac34014ccb646872dfc355e995c",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.TernaryConstraints.companion_T2_3",
+        "PaperP1.TernaryConstraints.companion_T2_3_exists",
+        "PaperP1.TernaryConstraints.after_regularisation_sharp",
+        "PaperP1.TernaryConstraints.final_rows_checked",
+        "PaperP1.TernaryConstraints.restricted_row_sum",
+        "PaperP1.ReducedBinaryRows.row_card_zero_two_three",
+        "PaperP1.ReducedBinaryRows.binary_labels_equal",
+        "PaperP1.ReducedBinaryRows.ternary_labels_injective",
+        "PaperP1.ReducedBinaryRows.binary_component_card_le",
+        "PaperP1.ReducedBinaryRows.ternary_degree_bound",
+        "PaperP1.ReducedBinaryRows.ternary_row_covered",
+        "PaperP1.ReducedBinaryRows.assignedSupports_card_le"
+      ],
+      "literature_inputs": [
+        "P1-LINALG-TERNARY-CONSTRAINTS"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0012"
+      ],
+      "notes": "Full T2.3 for actual rows annihilating the binary coordinate subspace. Injective coloring of each support by Fin 3 proves its size bound. The rows are restricted to the actual T2.2 space, then zero-label coordinates are deleted and repeated supports identified by a finite image. The only remaining weights are zero, two and three; binary labels are equal and ternary labels are all distinct and sum to zero. Actual graph walks prove that every remaining binary connected component has at most K vertices. Unordered label decompositions and full label classes give a proved ternary incidence bound d*K^2, improving the original sufficient 2*d*K^2 and requiring only support size at most three in the general lemma. The original bound is retained. An existence wrapper constructs D from the internal T2.2 proof, with exact codimension and its active budget. No assumed regularizer output, graph degree, enumeration history or arithmetic input is used. See TERNARY_CONSTRAINTS_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:fixed-channel-mass",

@@ -391,6 +391,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "273ececdfd9ea82cd8271e9dac031f44c4e9c44a"
+    },
+    {
+      "id": "P1-MATH-0012",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:ternary-degree",
+        "number": "T2.3",
+        "page": 21,
+        "source": "companion_sections/supplemental_arithmetic.tex",
+        "line": 107,
+        "statement_sha256": "f8e7ced365fdb9782d8b9ebfb18345eb41508ac34014ccb646872dfc355e995c"
+      },
+      "original_assumption": "Companion T2.3 has a three-block partition, at most one coordinate occurrence per block in a row, and gives ternary incidence at most 2*d*K^2 after identifying repeated supports.",
+      "finding": "The ternary incidence is at most d*K^2. An unordered decomposition of the vertex label chooses two full coordinate-label classes, each of size at most K, so their product already covers both block assignments. More generally no three-block coloring is needed if each row support has size at most three; nonzero labels, zero row sums and the two regularity bounds suffice.",
+      "evidence": [
+        "PaperP1.ReducedBinaryRows.ternary_degree_bound",
+        "PaperP1.ReducedBinaryRows.ternary_row_covered",
+        "PaperP1.ReducedBinaryRows.assignedSupports_card_le",
+        "PaperP1.TernaryConstraints.after_regularisation_sharp",
+        "PaperP1.TernaryConstraints.companion_T2_3_exists"
+      ],
+      "proposed_revision": "Replace the sufficient incidence bound 2*d*K^2 by d*K^2. State the row-type and component conclusions for any family of supports of size at most three with zero label sum, after deleting zero labels and identifying repeated supports. The three-block situation is an immediate specialization.",
+      "impact": "Improves one finite constant and weakens the combinatorial structural hypothesis. Binary component size K, the actual coordinate restriction and the unordered-label convention remain unchanged. The original statement follows and no original conclusion is corrected. No optimality of the new bound or preservation under later restrictions is asserted.",
+      "validation": "Full Lean v4.36.0-rc2 build (8771 jobs) and actual kernel axiom audit for all 1834 declarations; only propext, Classical.choice and Quot.sound. Every evidence theorem is directly included in the actual audit.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

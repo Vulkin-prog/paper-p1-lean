@@ -81,3 +81,4 @@ public import PaperP1.Probability.WeightedPoissonNorm
 public import PaperP1.Arithmetic.SmallPrimeBudget
 public import PaperP1.Analysis.IntegerProductTail
 public import PaperP1.Coding.CoordinateRegularisation
+public import PaperP1.Coding.TernaryConstraints

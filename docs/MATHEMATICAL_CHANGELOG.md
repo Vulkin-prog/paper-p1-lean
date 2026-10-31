@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Eleven mathematical improvements are confirmed; no error in a manuscript conclusion
+**Twelve mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -434,3 +434,27 @@ passed. No additional mathematical finding is introduced; see
 Validated implementation for P1-MATH-0011:
 [273ececdfd9ea82cd8271e9dac031f44c4e9c44a](https://github.com/Vulkin-prog/paper-p1-lean/commit/273ececdfd9ea82cd8271e9dac031f44c4e9c44a).
 All 209 distinct coverage/finding declaration names were checked by Lean.
+
+## P1-MATH-0012 — Ternary incidence dK^2 and arbitrary supports of size three
+
+- Location: companion T2.3, page 21, `p1:arith:ternary-degree`,
+  `companion_sections/supplemental_arithmetic.tex:107`.
+- Original conclusion: incidence at most 2dK^2, for rows with at most one
+  occurrence in each part of a three-block partition.
+- Improvement: the incidence is at most dK^2. For each unordered pair of
+  labels, the two full coordinate classes have at most K^2 choices in total.
+  These choices already include both possible assignments to the other
+  blocks. Supports, rather than repeated ordered row descriptions, are counted.
+- The general statement needs only support size at most three, zero row sums,
+  nonzero remaining labels and the two regularity bounds. A three-block
+  coloring is sufficient to prove the support bound but is not otherwise used.
+- Evidence: `ReducedBinaryRows.ternary_degree_bound`, its exact unordered
+  support cover and `TernaryConstraints.after_regularisation_sharp`. The
+  actual T2.2 subspace and all row transformations are retained.
+- Suggested revision: use dK^2 and give the three-block case as a specialization
+  of the support-size statement. Binary component size K is unchanged.
+- Impact: a better finite constant and weaker structural assumptions. No
+  original conclusion is corrected and no optimality of dK^2 is asserted.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,771 jobs) and actual
+  audit of all 1,834 theorem/lemma declarations; not integrated into a new
+  manuscript. See [complete alignment](TERNARY_CONSTRAINTS_ALIGNMENT.md).

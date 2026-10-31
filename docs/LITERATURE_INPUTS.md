@@ -20,6 +20,22 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Constraints on at most three coordinates
+
+Stable ID: `P1-LINALG-TERNARY-CONSTRAINTS`. Status: **proved**.
+
+- Target: companion T2.3, page 21, `p1:arith:ternary-degree`.
+- Lean: `TernaryConstraints.companion_T2_3`, its sharper bound and the
+  existence wrapper constructing the actual regularized subspace via T2.2.
+- All row restrictions, zero-coordinate deletions, repeated-support images,
+  row classifications, graph-walk identities and unordered incidence covers
+  are proved internally. The stronger constant is `P1-MATH-0012`.
+- Mathlib at commit `9d581dfff2e41de989072ea63abf3daf69311520` supplies finite
+  set product/image cardinalities and actual simple-graph walks. No degree,
+  connected-component or regularization output is an unproved input.
+- No further Paper C proof is ported. See
+  [complete alignment](TERNARY_CONSTRAINTS_ALIGNMENT.md).
+
 ## Coordinate regularisation
 
 Stable ID: `P1-LINALG-COORDINATE-REGULARISATION`. Status: **proved**.

@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 24 / 167 numbered results proved.**
+**Status: active formalization, 25 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The principal Poisson asymptotic theorems remain open.
@@ -100,6 +100,10 @@ Companion T2.2 is proved with the exact selected-coordinate codimension,
 simultaneous multiplicity and unordered-decomposition bounds, and no further
 dimension loss on removing zero coordinates. See
 [coordinate regularisation alignment](docs/COORDINATE_REGULARISATION_ALIGNMENT.md).
+Companion T2.3 is proved for the restricted constraint rows, including
+binary connected components and a sharper ternary incidence bound dK^2.
+Repeated supports are identified before counting. See
+[ternary constraint alignment](docs/TERNARY_CONSTRAINTS_ALIGNMENT.md).
 Companion T23.1 is proved with actual positive probability laws, the exact
 factorial-moment perturbation and total variation constant, and uniform
 exponential-moment control. Its parameter interval also extends to [0,2],
