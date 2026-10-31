@@ -54,3 +54,5 @@ public import PaperP1.Affine.SpectralPartitions
 public import PaperP1.Affine.PartitionMoments
 public import PaperP1.Model.StartPartitionTransfer
 public import PaperP1.Model.CanonicalRunComponents
+public import PaperP1.Algebra.RungeQPolynomial
+public import PaperP1.Arithmetic.SplitProductBound

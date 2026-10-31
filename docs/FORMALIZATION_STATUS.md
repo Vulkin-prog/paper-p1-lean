@@ -1,10 +1,10 @@
 # Formalization status
 
-Stage: **exact affine and probability-law identities**, 31 October 2026.
+Stage: **exact probability identities and first uniform arithmetic bound**, 31 October 2026.
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **6 / 167**: article Propositions 4.1, 5.2 and Lemmas 4.2, 4.3, 4.4, 5.1.
+- Numbered results completed: **7 / 167**: article Propositions 4.1, 5.2 and Lemmas 4.2, 4.3, 4.4, 5.1; companion Lemma T1.1.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **454 audited theorem/lemma declarations**. This
+- The project currently has **545 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -95,8 +95,20 @@ Neither document is fully formalized.
   parity image detects precisely rational square relations among positive
   vertices, and its injection into actual cylinder characters is proved.
   Local and relative dimensions therefore retain every local relation once.
+- Companion Lemma T1.1 is complete. `uniform_split_product_real_radius`
+  proves the exact bound `U ≤ (64R)^d` uniformly in every even degree `d ≥ 2`,
+  for a real radius and integer base, with distinct bounded integer shifts.
+  New weighted coefficient bounds keep the necessary powers of the radius.
+  Integer-square separation supplies the large-base estimate using a
+  polynomial of degree at most `d/2 - 1`; the zero-value branch uses the
+  integral-root height bound. Every input is proved, with no analytic tail
+  or arithmetic literature bound supplied as an assumption. The Paper C
+  algebraic ports are pinned and audited. See
+  [statement alignment](SPLIT_PRODUCT_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
-  assumptions for Lemma 5.1. No error in the original conclusion is asserted.
+  assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
+  companion T1.1 with its original constant. No error in an original
+  conclusion is asserted.
 - Palomar registrations: none; preparation only.
 
 The machine-readable [coverage ledger](manuscript-results.json) records the

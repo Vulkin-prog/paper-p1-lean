@@ -1228,11 +1228,16 @@
       "source": "companion_sections/arithmetic_appendix.tex",
       "line": 19,
       "sha256": "a0c73b9ef86ef866209beaae756128ace1e545df0a483d40f62f3e4cf038ab34",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.SplitProductBound.uniform_split_product_real_radius",
+        "PaperP1.SplitProductBound.uniform_split_product"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0002"
+      ],
+      "notes": "Exact degree-uniform constant 64 for real radius and integer base; algebraic formal-series, weighted-height and integer-square-gap proof. All prerequisites proved, no unproved literature estimate. See docs/SPLIT_PRODUCT_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:pell",

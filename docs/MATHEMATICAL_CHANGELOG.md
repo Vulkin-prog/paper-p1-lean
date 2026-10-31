@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**One mathematical improvement is confirmed; no error in a manuscript conclusion
+**Two mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -22,6 +22,28 @@ Absence of an entry does not mean the argument has been verified.
 - Suggested revision: state the identity for elements `t, u_x` of any
   commutative semiring. The signed-measure application, all estimates and all
   asymptotic exponents are unchanged.
+- Status: confirmed by compilation and the kernel-axiom audit; not yet
+  integrated into a new manuscript version.
+
+## P1-MATH-0002 — Entirely algebraic proof of companion T1.1
+
+- Location: technical companion, Lemma T1.1, page 5, label `p1:arith:runge`,
+  `companion_sections/arithmetic_appendix.tex:19` in V1.6.
+- Original proof: analytic square-root branches, a Cauchy coefficient bound,
+  a tail estimate and a separate auxiliary-polynomial equality case.
+- Improvement: finite formal-series coefficients and integer-square separation
+  prove the same degree-uniform conclusion `U ≤ (64R)^d`. The proof needs no
+  analytic branch choice, convergence argument or tail estimate.
+- Evidence: `PaperP1.SplitProductBound.uniform_split_product_real_radius`,
+  `PaperP1.RungeUniform.rungeQ_height_le`, and the intermediate nonzero-value
+  height bound. Real radii, integer bases and every even degree are retained.
+- Suggested revision: replace the proof by the algebraic argument detailed in
+  [SPLIT_PRODUCT_ALIGNMENT.md](SPLIT_PRODUCT_ALIGNMENT.md). Its auxiliary
+  height bound is `H(Q) ≤ (k+1)2^(5d)R^d ≤ (64R)^d`; both branches give
+  `U ≤ H(Q)` directly.
+- Impact: no change to T1.1's hypotheses, conclusion, constant or downstream
+  exponents. This is a proof simplification; no error in the original proof
+  is claimed, and its analytic inequalities have not been separately checked.
 - Status: confirmed by compilation and the kernel-axiom audit; not yet
   integrated into a new manuscript version.
 

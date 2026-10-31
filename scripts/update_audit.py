@@ -15,7 +15,7 @@ def render():
         namespaces = re.findall(r"^namespace ([A-Za-z0-9_.]+)$", text, re.M)
         if len(namespaces) != 1:
             raise ValueError(f"Audit discovery requires one namespace per module: {source}")
-        declarations = re.findall(r"^(?:theorem|lemma) ([A-Za-z0-9_']+)(?=\s|\[|\{)", text, re.M)
+        declarations = re.findall(r"^(?:theorem|lemma) ([A-Za-z0-9_.']+)(?=\s|\[|\{)", text, re.M)
         names.extend(f"{namespaces[0]}.{name}" for name in declarations)
     if not names or len(names) != len(set(names)):
         raise ValueError("Empty or duplicate theorem inventory")

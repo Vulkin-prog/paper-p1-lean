@@ -33,9 +33,25 @@ compiled artifacts were copied.
 | `PaperC/Affine/StartBoundaryRange.lean`, `6ea852e5f1071357beae725b34510dc8ec69e357` | `PaperP1/Affine/StartBoundaryRange.lean`, full even-boundary range and equivalence | One-start dependency; module declarations, namespaces and redundant simp arguments updated |
 | `PaperC/Affine/RelationBoundaryIff.lean`, `28382a2759144a100cd851af5a8f576cd91de5d8` | Two one-start incidence/sum helpers in `PaperP1/Affine/StartCharacterSpace.lean` | Helpers public and renamed, module declarations and namespaces updated; remaining square-class/character equivalence is new |
 
+The following additional algebraic ports support companion T1.1:
+
+| Upstream path and Git blob | Target and scope | Adaptation |
+|---|---|---|
+| `PaperC/Algebra/IntegerPolynomialRootBound.lean`, `6f30ccf82dcc27834babee1cb2a1a0cdbf73a5f7` | `PaperP1/Algebra/IntegerPolynomialRootBound.lean`, full module | Module/public declarations, namespace and public helpers for complete axiom auditing |
+| `PaperC/Algebra/RungeSplitProduct.lean`, `85ecd7bca6da10b0d0b319e08f1d20ba271a0886` | `PaperP1/Algebra/RungeSplitProduct.lean`, full module | Module/public declarations, namespace and public helpers for complete axiom auditing |
+| `PaperC/Arithmetic/DyadicGap.lean`, `541350ece22215b85008168918832bfa1498d2aa` | `PaperP1/Arithmetic/DyadicGap.lean`, full module | Module/public declarations, namespace and public helpers for complete axiom auditing |
+| `PaperC/Combinatorics/RungeCoefficients.lean`, `ca9d6adab19fb09971b7f1048fe9ee59602ea64c` | `PaperP1/Combinatorics/RungeCoefficients.lean`, full module | Module/public declarations, namespace and public helpers for complete axiom auditing |
+| `PaperC/Algebra/RungeTruncation.lean`, `8c8e27f660ac6a9b017059265cde6267d6eb0537` | `PaperP1/Algebra/RungeTruncation.lean`, full module | Module/public declarations, namespace, public audit helpers; dependent-ite lemma renamed |
+| `PaperC/Analysis/RungePowerSeries.lean`, `7a6ba6e18ad89ab4d7e343876b5b1c11d3111994` | `PaperP1/Analysis/RungePowerSeries.lean`, full module | Module/public declarations, namespace and public helpers for complete axiom auditing |
+| `PaperC/Algebra/RungeQPolynomial.lean`, `4763c81ac2a5dce00982c5a06f6c5326b6b2cab0` | `PaperP1/Algebra/RungeQPolynomial.lean`, through the exact coefficient formula, including high-degree cancellation and nonvanishing; later coarse height/equality estimates excluded | Selected dependency closure; module/public declarations, public helpers, renamed absolute-value import, proposition-local instance style; unused-argument linter suppression removed |
+
 All ported statements recompile with warnings as errors and are included in the
-generated kernel-axiom audit. This port does not import the old arithmetic
-estimates or any literature assumptions. The unrestricted infinite prime-sign
+generated kernel-axiom audit. The old final Runge bound
+`U ≤ (128 d R)^(2d)` and its analytic tail proof are not imported. New P1
+weighted-height and integer-square-gap proofs yield the exact stronger
+companion T1.1 bound `U ≤ (64R)^d`; see
+[alignment](SPLIT_PRODUCT_ALIGNMENT.md). None of these algebraic ports imports
+an unproved literature assumption. The unrestricted infinite prime-sign
 measure is constructed, and the finite-cylinder consistency is now proved.
 
 The generic affine Fourier identity is a checked precursor to P1's full-support

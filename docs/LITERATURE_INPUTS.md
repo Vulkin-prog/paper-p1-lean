@@ -20,6 +20,30 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Proved split-product bound
+
+Stable ID: `P1-ARITH-SPLIT`. Status: **proved**.
+
+- Target: companion T1.1, `p1:arith:runge`, page 5,
+  `companion_sections/arithmetic_appendix.tex:19`.
+- Scope: every `d = 2k ≥ 2`, real `R ≥ 1`, distinct integer shifts bounded
+  in absolute value by R, integer `U ≥ 2R`, and an integer-square product.
+  Conclusion `U ≤ (64R)^d`, with an absolute constant independent of degree.
+- Lean theorem: `PaperP1.SplitProductBound.uniform_split_product_real_radius`.
+- Inputs: proved finite binomial/formal-series identities, integral
+  coefficient scaling, cancellation, integer-square separation, and the
+  integral-polynomial root height bound. Exact Paper C source identities
+  are recorded in the reuse ledger. Mathlib's compiled Cauchy root bound
+  (`Polynomial.IsRoot.norm_lt_cauchyBound`,
+  `Analysis/Polynomial/CauchyBound.lean`) is used at Mathlib commit
+  `9d581dfff2e41de989072ea63abf3daf69311520`.
+- The manuscript cites Munsch et al., Lemma 3.3, for the antecedent fixed-degree
+  argument. No proposition from that reference is assumed by the Lean proof;
+  the cited paper's statement has not been used to discharge a proof obligation.
+- Degree dependence is fully explicit in the intermediate height estimate.
+  This resolves T1.1 itself; the uniform quadratic-equation, defect, determinant
+  and local-rigidity inputs remain separate open obligations.
+
 ## Checked measure-theory infrastructure
 
 The general probability-space version of Proposition 4.1 uses already-proved

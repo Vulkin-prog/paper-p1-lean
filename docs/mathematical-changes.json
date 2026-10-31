@@ -30,6 +30,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "769210a5b8dbd82d8bb6f8fee867a835e0fdd34a"
+    },
+    {
+      "id": "P1-MATH-0002",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:runge",
+        "number": "T1.1",
+        "page": 5,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 19,
+        "statement_sha256": "a0c73b9ef86ef866209beaae756128ace1e545df0a483d40f62f3e4cf038ab34"
+      },
+      "original_assumption": "The original proof uses analytic square-root branches, a Cauchy estimate, a tail bound and a polynomial equality case.",
+      "finding": "Finite formal-series coefficients and separation of integer squares prove the same uniform bound U <= (64R)^d by an entirely algebraic argument.",
+      "evidence": [
+        "PaperP1.SplitProductBound.uniform_split_product_real_radius",
+        "PaperP1.SplitProductBound.base_le_height_of_nonzero",
+        "PaperP1.RungeUniform.rungeQ_height_le"
+      ],
+      "proposed_revision": "Use D=2^d, A=DP and Q=D^2G-A^2. Formal coefficient cancellation gives degree Q <= k-1 and H(Q) <= (k+1)2^(5d)R^d <= (64R)^d. If Q(U) is nonzero, integer-square separation gives 2^k U^k <= |Q(U)| <= k H(Q) U^(k-1), hence U <= H(Q); the zero case follows from the integral-root height bound.",
+      "impact": "Proof simplification only. Retains real R >= 1, integer U >= 2R, distinct bounded integer shifts, all even degrees d >= 2, and the exact constant 64. No downstream exponent changes. No error in the original analytic inequalities is asserted.",
+      "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 545 declarations. Exact implementation commit recorded after committing the proof.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
