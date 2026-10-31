@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Ten mathematical improvements are confirmed; no error in a manuscript conclusion
+**Eleven mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -408,3 +408,25 @@ The explicit constant supplies the source's stated dependence and is not
 claimed optimal. The full build and actual 1,775-declaration kernel audit
 passed. No additional mathematical finding is introduced; see
 [complete alignment](INTEGER_PRODUCT_TAIL_ALIGNMENT.md).
+
+## P1-MATH-0011 — An active coordinate budget and zero boundary parameters
+
+- Location: companion T2.2, page 20, `p1:arith:coordinate-regularisation`,
+  `companion_sections/supplemental_arithmetic.tex:51`.
+- Original setting: K,d>=1 and codimension at most n/(K+1)+(s-r)/(d+1).
+- Improvement: n can be replaced by n_plus, the number of initially nonzero
+  coordinate forms counted with multiplicity. Both properties and the same
+  budget hold for K,d>=0. At K=0 the final space is zero; at d=0 no present
+  nonzero form has a decomposition into two distinct present nonzero forms.
+- Evidence: `CoordinateForms.companion_T2_2_active_budget`, the proved
+  potential inequality and exact nonzero-kernel dimension drop. Initial zero
+  forms never contribute to the potential's active-coordinate term.
+- Suggested revision: use n_plus and allow zero parameters, then give the
+  original n and positive-parameter domain as a corollary. Keep the exact
+  codimension card(D), unordered-label convention and simultaneous properties.
+- Impact: a smaller finite bound when initial zero forms occur; no changed
+  denominator or original conclusion. Arbitrary later restrictions are still
+  allowed to destroy these properties. No manuscript error is asserted.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,765 jobs) and actual
+  audit of all 1,814 theorem/lemma declarations; not integrated into a new
+  manuscript. See [complete alignment](COORDINATE_REGULARISATION_ALIGNMENT.md).

@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 31 O
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **23 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1, together with Lemmas T19.13, T2.1 and T20.2.
+- Numbered results completed: **24 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1, together with Lemmas T19.13, T2.1, T2.2 and T20.2.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1775 audited theorem/lemma declarations**. This
+- The project currently has **1814 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -278,6 +278,14 @@ Neither document is fully formalized.
   gives the logarithmic factor. One explicit positive constant depends only
   on s and precedes all thresholds. See
   [integer product-tail alignment](INTEGER_PRODUCT_TAIL_ALIGNMENT.md).
+- Companion T2.2 is complete on the actual binary coordinate subspace. Its
+  selected coordinates define R prime exactly, with codimension equal to their
+  cardinality. The final multiplicity and unordered-decomposition bounds hold
+  simultaneously. Exact kernel dimensions, disjoint pair collisions and a
+  finite potential prove existence and termination. Removing zero coordinates
+  is an injective projection and costs no further dimension. A stronger version
+  charges only initially nonzero coordinates and includes K=0 or d=0. See
+  [coordinate regularisation alignment](COORDINATE_REGULARISATION_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
@@ -288,7 +296,9 @@ Neither document is fully formalized.
   without a primitive-factor hypothesis; `P1-MATH-0009`, the extended
   parameter interval for the exact moment perturbation, with its endpoint
   and enlarged uniform exponential constant stated explicitly; `P1-MATH-0010`,
-  weaker parameter hypotheses for the weighted recurrence comparison and stability.
+  weaker parameter hypotheses for the weighted recurrence comparison and stability;
+  `P1-MATH-0011`, an initially active coordinate budget and zero boundary
+  parameters for coordinate regularisation.
   No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.

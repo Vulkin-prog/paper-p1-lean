@@ -1580,11 +1580,29 @@
       "source": "companion_sections/supplemental_arithmetic.tex",
       "line": 51,
       "sha256": "a3941b762829af79b101153ae7f08368d8363545b175a014dae74742adb8f16b",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.CoordinateForms.companion_T2_2",
+        "PaperP1.CoordinateForms.companion_T2_2_active_budget",
+        "PaperP1.CoordinateForms.coordinate_regularisation",
+        "PaperP1.CoordinateForms.mem_ambientRestriction",
+        "PaperP1.CoordinateForms.ambientRestriction_dimension",
+        "PaperP1.CoordinateForms.removing_zero_coordinates_preserves_dimension",
+        "PaperP1.CoordinateForms.step_dimension",
+        "PaperP1.CoordinateForms.distinctForms_card_step",
+        "PaperP1.CoordinateForms.activeCoordinates_card_step",
+        "PaperP1.CoordinateForms.potential_step",
+        "PaperP1.CoordinateForms.dimension_le_distinct_card",
+        "PaperP1.PairDecompositions.pairs_pairwise_disjoint",
+        "PaperP1.MatchingCollapse.image_erase_zero_card_bound"
+      ],
+      "literature_inputs": [
+        "P1-LINALG-COORDINATE-REGULARISATION"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0011"
+      ],
+      "notes": "Full T2.2 on an actual binary subspace R of functions on a finite coordinate set. The selected coordinate equations define the literal ambient R prime, with exact codimension equal to the number of selected coordinates. Both regularity properties hold simultaneously: multiplicity of each present nonzero coordinate form is at most K, and its unordered decompositions into two distinct present nonzero forms are at most d. A two-element subset with the exact sum defines the unordered count. Projection onto the nonzero remaining coordinates is injective and preserves the dimension of its image. The proof supplies actual kernel equivalences, collision counts, two finite resource budgets and a maximal-candidate stopping argument; no existence or rank-loss estimate is assumed. The stronger budget uses the initially active coordinate count n_plus in place of n and permits K=0 or d=0, recorded as P1-MATH-0011. The original bound and K,d>=1 domain follow. No claim of preservation under arbitrary later restrictions or enumeration of restriction histories is made. See COORDINATE_REGULARISATION_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:ternary-degree",

@@ -20,6 +20,23 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Coordinate regularisation
+
+Stable ID: `P1-LINALG-COORDINATE-REGULARISATION`. Status: **proved**.
+
+- Target: companion T2.2, page 20, `p1:arith:coordinate-regularisation`.
+- Lean: `CoordinateForms.companion_T2_2` and its stronger active-budget form.
+- The selected coordinate kernels, exact codimension, two-element unordered
+  decompositions, disjoint collisions, finite potential and stopping argument
+  are proved internally, as is dimension preservation after deleting zero forms.
+- Mathlib at commit `9d581dfff2e41de989072ea63abf3daf69311520` supplies
+  `Module.Dual.finrank_ker_add_one_of_ne_zero`, injective finite-dimensional
+  rank comparison, dual restriction and finite maxima. No coordinate
+  regularisation theorem, loss bound or algorithmic output is assumed.
+- The stronger initial active count and zero boundary parameters form
+  `P1-MATH-0011`. No further Paper C proof is ported. See
+  [complete alignment](COORDINATE_REGULARISATION_ALIGNMENT.md).
+
 ## Integer product tail
 
 Stable ID: `P1-ANALYSIS-INTEGER-PRODUCT-TAIL`. Status: **proved**.
