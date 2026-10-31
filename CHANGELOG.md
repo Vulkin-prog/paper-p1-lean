@@ -5,7 +5,11 @@
 - Prove article Lemma 5.1 over arbitrary finite ordered carriers, including
   the boundary/suffix identifications and the scalar polynomial parameter.
 - Record `P1-MATH-0001`: commutative semirings suffice for that identity.
-- Extend the kernel-axiom audit to all 16 proved declarations.
+- Construct finite count laws, prove the centered Bernoulli expansion with
+  exact heterogeneous marginals, identify centered moments with the centering
+  transform, and establish positivity and mass of the convolution references.
+- Keep Proposition 4.1 in progress until the multiplicative model is connected.
+- Generate and check kernel-axiom audit coverage of all 59 theorem/lemma declarations.
 - Numbered manuscript coverage: 1 / 167.
 
 ## 0.1.0 — 31 October 2026

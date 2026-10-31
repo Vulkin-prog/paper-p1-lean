@@ -156,11 +156,14 @@
       "source": "main_sections/affine_algebra.tex",
       "line": 26,
       "sha256": "83cae9b79ede35a5fd2cf646a141266c4e697ab953c370cce0922d954f58e2a9",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.Probability.finite_centered_bernoulli_expansion",
+        "PaperP1.Algebra.centeredMoment_eq_centeredCoefficient"
+      ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Complete finite-probability identity, exact means, empty/singleton coefficients and probability status of complementary Bernoulli convolution products are proved. The multiplicative prime-cylinder model and its identification with the manuscript law remain to be connected."
     },
     {
       "label": "p1:alg:fourier",

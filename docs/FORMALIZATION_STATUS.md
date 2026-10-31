@@ -8,11 +8,18 @@ Stage: **finite algebraic identities**, 31 October 2026. Neither document is ful
   The boundary is proved to be deletion of the maximum, and the suffix is proved
   to lie strictly after that maximum. The scalar parameter and empty products
   are included. The theorem holds over any commutative semiring.
-- Initial scope: the algebraic inclusion-exclusion centering transform and its
-  empty, singleton and two-site identities, with normalization and marginal
-  premises explicit. Probability-space interpretation remains to be constructed.
-- These five auxiliary lemmas are not the full centered Bernoulli expansion,
-  Fourier formula, compatible-nullity bound, or an asymptotic estimate.
+- Article Proposition 4.1: **in progress**. Its complete finite-probability
+  identity is proved for the actual count pushforward, with arbitrary dependence,
+  exact heterogeneous marginals, unit empty coefficient, vanishing singleton
+  coefficients and probability status of every complementary Bernoulli product.
+  Connecting the multiplicative prime-cylinder model to the manuscript law
+  remains an explicit obligation, so the numbered result is not marked proved.
+- The inclusion-exclusion transform is proved to equal actual finite centered
+  moments. Total mass is proved to be the coefficient sum and a convolution
+  homomorphism; coefficientwise positivity is preserved by convolution.
+- The project currently has **59 audited theorem/lemma declarations**. This
+  count includes auxiliary facts and is distinct from numbered-result coverage.
+  No Fourier, compatible-nullity or asymptotic estimate is claimed proved.
 - Paper C code ported: none. External literature propositions encoded: none.
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1. No error in the original conclusion is asserted.

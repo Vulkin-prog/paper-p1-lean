@@ -8,6 +8,10 @@ by **Brice Pouly**, working version **1.6, 31 October 2026**.
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The asymptotic theorems remain open.
+The full centered Bernoulli identity is also proved for arbitrary finite
+probability spaces, including exact marginal centering and probability status
+of the deterministic references. Its connection to the multiplicative model
+is still in progress and is not counted as completed manuscript coverage.
 
 | Material | Location |
 |---|---|
@@ -30,9 +34,10 @@ whose toolchain matches. The dependency lock file records all transitive revisio
 ```sh
 python3 scripts/check_disk.py
 MATHLIB_NO_CACHE_ON_UPDATE=1 lake update
-lake exe cache get Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Algebra.BigOperators.Group.Finset.Powerset Mathlib.Tactic.Ring.Basic
+lake exe cache get Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Algebra.BigOperators.Group.Finset.Powerset Mathlib.Algebra.BigOperators.Group.Finset.Sigma Mathlib.Tactic.Ring.Basic Mathlib.Algebra.MonoidAlgebra.Lift Mathlib.Basic.Real.Basic Mathlib.Algebra.Order.BigOperators.Group.Finset
 python3 scripts/check_disk.py
 python3 scripts/check_sources.py
+python3 scripts/update_audit.py --check
 lake build
 lake env lean Audit.lean
 ```
@@ -44,7 +49,8 @@ restricted to the listed imports and their transitive dependencies. Set
 their defaults point elsewhere. Available-space warnings start at 10 GiB; large
 downloads must stop below 5 GiB. See [environment policy](docs/ENVIRONMENT.md).
 
-`lake build` treats Lean warnings as errors. `Audit.lean` exposes the kernel
+`lake build` treats Lean warnings as errors. The audit generator checks coverage
+of every project theorem and lemma. `Audit.lean` exposes the kernel
 axioms of each selected proved declaration. A successful build verifies only
 the checked declarations, not the unformalized manuscript claims. The source
 integrity check verifies file identities and the coverage inventory; it does

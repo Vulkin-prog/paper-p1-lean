@@ -19,6 +19,7 @@ jobs:
         run: |
           python3 scripts/check_disk.py
           python3 scripts/check_sources.py
+          python3 scripts/update_audit.py --check
       - name: Install elan from its official repository
         run: |
           curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
@@ -26,7 +27,7 @@ jobs:
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
       - name: Download only the required Mathlib cache
         run: |
-          lake exe cache get Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Algebra.BigOperators.Group.Finset.Powerset Mathlib.Tactic.Ring.Basic
+          lake exe cache get Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Algebra.BigOperators.Group.Finset.Powerset Mathlib.Algebra.BigOperators.Group.Finset.Sigma Mathlib.Tactic.Ring.Basic Mathlib.Algebra.MonoidAlgebra.Lift Mathlib.Basic.Real.Basic Mathlib.Algebra.Order.BigOperators.Group.Finset
           python3 scripts/check_disk.py
       - name: Build with warnings as errors
         run: lake build
