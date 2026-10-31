@@ -20,6 +20,27 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Complete signed Palm identity
+
+Stable ID: `P1-PROB-SIGNED-PALM`. Status: **proved**.
+
+- Target: companion T19.12, page 76, `p1:limits:signed-palm`.
+- Lean: `MeasureSignedPalm.companion_T19_12`, with exact conditional-law
+  coefficients, raw recurrence norm, actual means and joint Bochner moments.
+- The proof is internal finite probability and polynomial algebra, then
+  exact transport through the finite indicator observation. The elementary
+  source deletion, size-bias identity, translation isometry, diagonal
+  coupling error and all signed coefficients are proved, not assumed.
+- Mathlib at commit `9d581dfff2e41de989072ea63abf3daf69311520` supplies the
+  additive monoid algebra lift (`Algebra/MonoidAlgebra/Lift.lean`), polynomial
+  product differentiation and coefficient identities
+  (`Algebra/Polynomial/Derivative.lean` and `Coeff.lean`), finite-support
+  countable sums, and standard Bochner integration of indicators and finite
+  observations. No literature estimate, Stein solution bound or model Palm
+  cost is an input.
+- Both the original heterogeneous statement and the equal-marginal formula
+  are proved. See [complete alignment](SIGNED_PALM_ALIGNMENT.md).
+
 ## Exact quadratic Poisson positivity
 
 Stable ID: `P1-ANALYSIS-POISSON-POSITIVITY`. Status: **proved**.

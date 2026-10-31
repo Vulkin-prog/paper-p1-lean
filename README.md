@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 18 / 167 numbered results proved.**
+**Status: active formalization, 19 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The principal Poisson asymptotic theorems remain open.
@@ -82,6 +82,10 @@ See [factor-height alignment](docs/BIVARIATE_FACTOR_HEIGHT_ALIGNMENT.md).
 Article Lemma 8.1 is proved for the actual quadratic Poisson signed measure:
 all singleton masses and the exact closed positivity interval, in both
 directions, are included. See [positivity alignment](docs/QUADRATIC_POISSON_ALIGNMENT.md).
+Companion T19.12 is proved for arbitrary finite measurable indicator families:
+the signed Palm residual bound, exact heterogeneous coefficients, and the
+equal-marginal specialization retain all cancellations and zero-marginal
+conventions. See [signed Palm alignment](docs/SIGNED_PALM_ALIGNMENT.md).
 The sharp PNT input is proved by a selected, recompiled and audited analytic
 development, with [separate provenance](docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 

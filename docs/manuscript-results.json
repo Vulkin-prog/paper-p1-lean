@@ -2419,11 +2419,29 @@
       "source": "companion_sections/limits_appendix.tex",
       "line": 910,
       "sha256": "8a29db2bba7dee3608300b620b1d9bb3a6731446e43f2c1407d4fda9b86df720",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.MeasureSignedPalm.companion_T19_12",
+        "PaperP1.MeasureSignedPalm.observed_signed_palm_bound",
+        "PaperP1.MeasureSignedPalm.observed_palm_coefficient",
+        "PaperP1.MeasureSignedPalm.observed_uniform_palm_coefficient",
+        "PaperP1.MeasureSignedPalm.observedConditionalLaw_coeff",
+        "PaperP1.MeasureSignedPalm.observedConditionalLaw_isProbability",
+        "PaperP1.MeasureSignedPalm.observedPalm_eq_conditional_sum",
+        "PaperP1.MeasureSignedPalm.observedRecurrenceNorm_eq_tsum",
+        "PaperP1.FiniteSignedPalm.residualLaw_eq_shift",
+        "PaperP1.FiniteSignedPalm.diagonalError_l1_bound",
+        "PaperP1.FiniteLawShift.l1Norm_shift",
+        "PaperP1.ConditionalPalm.activeLaw_eq_zero_of_marginal_zero",
+        "PaperP1.FactorialGeneratingPolynomial.transform_eq_comp",
+        "PaperP1.PalmPolynomial.uniform_palm_polynomial",
+        "PaperP1.FiniteLawEmbedding.l1Norm_eq_signed_singleton_tsum"
+      ],
+      "literature_inputs": [
+        "P1-PROB-SIGNED-PALM"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Full T19.12 on an arbitrary probability space and arbitrary finite measurable Boolean family. The source-removed count is exactly Z-J_x, each conditional law has actual probability-ratio coefficients and its own normalized positive marginal, and zero-marginal active laws vanish. The exact size-bias identity and translation isometry yield the original residual norm comparison with diagonal error 2 sum p_x² for every real theta. The residual norm equals the ordinary countable sum of the raw coefficients with actual Bochner mean and zero negative-index convention. The exact generating-polynomial substitution z=1+t yields the signed heterogeneous coefficient formula; differentiation gives (j+1)B_(j+1)-p(n-j)B_j when the actual marginals are equal. All orders, zero order, and orders above the ground-set size are included. Finite laws embed injectively as actual signed measures with exactly the same ordinary countable norm. No independence, common marginal, Stein estimate or model arithmetic input is assumed. See SIGNED_PALM_ALIGNMENT.md."
     },
     {
       "label": "p1:limits:weighted-residual",

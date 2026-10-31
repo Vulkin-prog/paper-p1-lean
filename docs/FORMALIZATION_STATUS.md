@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 31 O
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **18 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2.
+- Numbered results completed: **19 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Proposition T19.12.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1519 audited theorem/lemma declarations**. This
+- The project currently has **1592 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -229,6 +229,18 @@ Neither document is fully formalized.
   excluded by a proved large-index witness. Positivity constructs an actual
   probability measure. No parameter asymptotics or approximation estimate
   is assumed or concluded. See [positivity alignment](QUADRATIC_POISSON_ALIGNMENT.md).
+- Companion T19.12 is complete on an arbitrary probability space. Every
+  conditional deleted count law is normalized by its own positive marginal;
+  zero-marginal sources are proved to vanish and are omitted. The exact
+  size-bias and deletion identities isolate the diagonal error with norm
+  at most 2 sum p_x^2. Translation is an exact ℓ¹ isometry, yielding the
+  original residual comparison for every real theta. The residual is
+  identified with the ordinary sum of its actual raw coefficients and
+  actual mean. The generating polynomial after z=1+t gives the exact
+  heterogeneous signed coefficients; differentiation proves the full
+  equal-marginal formula (j+1)B_(j+1)-p(n-j)B_j at every natural order.
+  Finite laws also embed injectively as actual atomic signed measures with
+  the same countable ordinary ℓ¹ norm. See [signed Palm alignment](SIGNED_PALM_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff

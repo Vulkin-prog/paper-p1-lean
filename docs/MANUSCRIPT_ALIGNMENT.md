@@ -90,7 +90,7 @@ recorded in the project status without counting as complete numbered results.
 | 19.2 (p. 58) | [p1:discussion:charlier-norm](../manuscripts/paper-p1/v1.6/sources/main_sections/discussion.tex#L116) | Norms of Poisson differences | not_started | — |
 | 20.1 (p. 60) | [p1:limits:vector-reference](../manuscripts/paper-p1/v1.6/sources/main_sections/limits_appendix.tex#L45) | Unsigned positional compound-Poisson comparison | not_started | — |
 
-## Technical companion: 9 / 94 proved
+## Technical companion: 10 / 94 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -162,7 +162,7 @@ recorded in the project status without counting as complete numbered results.
 | T19.9 (p. 72) | [p1:limits:large-component](../manuscripts/paper-p1/v1.6/sources/companion_sections/limits_appendix.tex#L474) | A real component of quadratic nullity | not_started | — |
 | T19.10 (p. 74) | [p1:limits:erasure](../manuscripts/paper-p1/v1.6/sources/companion_sections/limits_appendix.tex#L659) | Deletion, isolation, and remaining covariances | not_started | — |
 | T19.11 (p. 76) | [p1:limits:stein](../manuscripts/paper-p1/v1.6/sources/companion_sections/limits_appendix.tex#L847) | A scalar recurrence criterion | not_started | — |
-| T19.12 (p. 76) | [p1:limits:signed-palm](../manuscripts/paper-p1/v1.6/sources/companion_sections/limits_appendix.tex#L910) | The signed Palm measure | not_started | — |
+| T19.12 (p. 76) | [p1:limits:signed-palm](../manuscripts/paper-p1/v1.6/sources/companion_sections/limits_appendix.tex#L910) | The signed Palm measure | proved | `PaperP1.MeasureSignedPalm.companion_T19_12`, `PaperP1.MeasureSignedPalm.observed_signed_palm_bound`, `PaperP1.MeasureSignedPalm.observed_palm_coefficient`, `PaperP1.MeasureSignedPalm.observed_uniform_palm_coefficient`, `PaperP1.MeasureSignedPalm.observedConditionalLaw_coeff`, `PaperP1.MeasureSignedPalm.observedConditionalLaw_isProbability`, `PaperP1.MeasureSignedPalm.observedPalm_eq_conditional_sum`, `PaperP1.MeasureSignedPalm.observedRecurrenceNorm_eq_tsum`, `PaperP1.FiniteSignedPalm.residualLaw_eq_shift`, `PaperP1.FiniteSignedPalm.diagonalError_l1_bound`, `PaperP1.FiniteLawShift.l1Norm_shift`, `PaperP1.ConditionalPalm.activeLaw_eq_zero_of_marginal_zero`, `PaperP1.FactorialGeneratingPolynomial.transform_eq_comp`, `PaperP1.PalmPolynomial.uniform_palm_polynomial`, `PaperP1.FiniteLawEmbedding.l1Norm_eq_signed_singleton_tsum` |
 | T19.13 (p. 77) | [p1:limits:weighted-residual](../manuscripts/paper-p1/v1.6/sources/companion_sections/limits_appendix.tex#L1013) | A recurrence norm equivalent to total variation | not_started | — |
 | T19.14 (p. 78) | [p1:limits:all-pairs](../manuscripts/paper-p1/v1.6/sources/companion_sections/limits_appendix.tex#L1059) | All active pair dependencies can be removed | not_started | — |
 | T19.15 (p. 79) | [p1:limits:reciprocal](../manuscripts/paper-p1/v1.6/sources/companion_sections/limits_appendix.tex#L1138) | Reciprocal odd-prime pivots | not_started | — |

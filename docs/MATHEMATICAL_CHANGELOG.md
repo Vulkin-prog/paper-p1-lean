@@ -307,3 +307,14 @@ improvement entries remain separate; no error or improvement is identified
 in this lemma. The full build, actual 1,519-declaration axiom audit and all
 130 distinct coverage/finding declaration checks passed. See
 [complete alignment](QUADRATIC_POISSON_ALIGNMENT.md).
+
+## Complete signed Palm verification — no new finding
+
+Companion T19.12 is proved with the exact heterogeneous conditional laws,
+omission of zero-marginal sources, diagonal error 2 sum p_x^2, raw recurrence
+coefficients, and both generating-polynomial coefficient formulas. All
+indicator families are transported from their original probability space;
+independence is not assumed. The sums retain their signs before the norm.
+The full build and actual 1,592-declaration axiom audit passed. No new
+mathematical change is identified; the eight confirmed improvement entries
+remain separate. See [complete alignment](SIGNED_PALM_ALIGNMENT.md).
