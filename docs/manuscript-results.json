@@ -1552,11 +1552,23 @@
       "source": "companion_sections/supplemental_arithmetic.tex",
       "line": 19,
       "sha256": "22145d7cf62fc668f06d7706f77e8d12bc0c98008d24235ca536504f8f46ff2c",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.SmallPrimeBudget.companion_T2_1",
+        "PaperP1.SmallPrimeBudget.interval_log_budget_exact",
+        "PaperP1.SmallPrimeBudget.interval_log_budget",
+        "PaperP1.SmallPrimeBudget.card_largeSmallPartValues_le",
+        "PaperP1.SmallPrimeBudget.smallOddPart_eq_div",
+        "PaperP1.SmallPrimeBudget.squarefreeKernel_mul_squarePart",
+        "PaperP1.SmallPrimeBudget.sum_div_mul_log_le_log_factorial",
+        "PaperP1.SmallPrimeBudget.prime_log_sum_le",
+        "PaperP1.IntervalMultiples.card_multiples_interval_le"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-SMALL-PRIME-BUDGET"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Full T2.1 for every translated interval [U,U+B) of B consecutive positive integers, with B>=2. The small odd-prime product is proved equal to sf(n)/K_B(n) using the canonical parity factorization. The exact finite source bound log(B!)+sum_(p<=B)log p is proved by a translated multiple count and factorial valuations. The elementary primorial bound supplies the explicit absolute constant log 4 in the B remainder. The number of actual values with u_B(n)>B^A is at most (1/A+((log 4)/A)/log B)B for every real A>0. Both conclusions have no dependence on interval position, no critical-band condition and no external unproved arithmetic input. This makes the source O constants explicit without changing the result. See SMALL_PRIME_BUDGET_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:coordinate-regularisation",

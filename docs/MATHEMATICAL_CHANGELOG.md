@@ -387,3 +387,14 @@ finding identifier is introduced. See
 Exact validated implementation commit for P1-MATH-0010:
 [281431eefffbf25daa2564d62280b3bd188a6496](https://github.com/Vulkin-prog/paper-p1-lean/commit/281431eefffbf25daa2564d62280b3bd188a6496).
 All 178 distinct coverage/finding declaration names were also checked by Lean.
+
+## Small-prime budget verification — no new finding
+
+Both parts of companion T2.1 are proved for every translated positive
+interval, with the exact sf/K small odd-prime product. The elementary
+primorial inequality makes its original absolute O(B) remainder explicit
+as (log 4)B, and gives the exact corresponding exceptional-value constant.
+This checks the source's stated dependence, without changing its conclusion
+or adding a critical-band premise. The full build and actual 1,746-declaration
+kernel audit passed. The ten confirmed improvements remain separate; see
+[complete alignment](SMALL_PRIME_BUDGET_ALIGNMENT.md).

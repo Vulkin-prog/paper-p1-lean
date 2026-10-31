@@ -20,6 +20,24 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Small-prime coefficient budget
+
+Stable ID: `P1-ARITH-SMALL-PRIME-BUDGET`. Status: **proved**.
+
+- Target: companion T2.1, page 20, `p1:arith:smallpart-budget`.
+- Lean: `SmallPrimeBudget.companion_T2_1`, including both the logarithmic
+  sum and the exact exceptional-value count for every real A>0.
+- The exact small odd-prime product, its sf/K identity, translated multiple
+  count and factorial-valuation comparison are proved internally.
+- Mathlib at commit `9d581dfff2e41de989072ea63abf3daf69311520` supplies
+  `Nat.card_multiples`, `Nat.factorization_prod_apply`,
+  `Nat.Prime.dvd_factorial`, `Real.log_nat_eq_sum_factorization`, and
+  `primorial_le_four_pow`. These proved elementary facts give the explicit
+  absolute remainder (log 4)B. No PNT or unformalized Chebyshev estimate
+  is assumed. No additional Paper C proof is ported.
+- See [complete alignment](SMALL_PRIME_BUDGET_ALIGNMENT.md). No new
+  mathematical change entry is introduced for this verification.
+
 ## Weighted recurrence comparison and stability
 
 Stable ID: `P1-PROB-WEIGHTED-RECURRENCE`. Status: **proved**.

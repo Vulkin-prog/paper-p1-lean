@@ -90,7 +90,7 @@ recorded in the project status without counting as complete numbered results.
 | 19.2 (p. 58) | [p1:discussion:charlier-norm](../manuscripts/paper-p1/v1.6/sources/main_sections/discussion.tex#L116) | Norms of Poisson differences | not_started | — |
 | 20.1 (p. 60) | [p1:limits:vector-reference](../manuscripts/paper-p1/v1.6/sources/main_sections/limits_appendix.tex#L45) | Unsigned positional compound-Poisson comparison | not_started | — |
 
-## Technical companion: 12 / 94 proved
+## Technical companion: 13 / 94 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -111,7 +111,7 @@ recorded in the project status without counting as complete numbered results.
 | T1.15 (p. 17) | [p1:arith:fixed-branching](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L1075) | A fixed number of exposed source windows | not_started | — |
 | T1.16 (p. 18) | [p1:arith:ternary-budget](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L1114) | A ternary group budget | not_started | — |
 | T1.17 (p. 19) | [p1:arith:twogoodpositive](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L1199) | A positive second moment for good edges | not_started | — |
-| T2.1 (p. 20) | [p1:arith:smallpart-budget](../manuscripts/paper-p1/v1.6/sources/companion_sections/supplemental_arithmetic.tex#L19) | A small-prime coefficient budget | not_started | — |
+| T2.1 (p. 20) | [p1:arith:smallpart-budget](../manuscripts/paper-p1/v1.6/sources/companion_sections/supplemental_arithmetic.tex#L19) | A small-prime coefficient budget | proved | `PaperP1.SmallPrimeBudget.companion_T2_1`, `PaperP1.SmallPrimeBudget.interval_log_budget_exact`, `PaperP1.SmallPrimeBudget.interval_log_budget`, `PaperP1.SmallPrimeBudget.card_largeSmallPartValues_le`, `PaperP1.SmallPrimeBudget.smallOddPart_eq_div`, `PaperP1.SmallPrimeBudget.squarefreeKernel_mul_squarePart`, `PaperP1.SmallPrimeBudget.sum_div_mul_log_le_log_factorial`, `PaperP1.SmallPrimeBudget.prime_log_sum_le`, `PaperP1.IntervalMultiples.card_multiples_interval_le` |
 | T2.2 (p. 20) | [p1:arith:coordinate-regularisation](../manuscripts/paper-p1/v1.6/sources/companion_sections/supplemental_arithmetic.tex#L51) | Coordinate regularisation | not_started | — |
 | T2.3 (p. 21) | [p1:arith:ternary-degree](../manuscripts/paper-p1/v1.6/sources/companion_sections/supplemental_arithmetic.tex#L107) | Constraints meeting three blocks | not_started | — |
 | T2.5 (p. 22) | [p1:arith:fixed-channel-mass](../manuscripts/paper-p1/v1.6/sources/companion_sections/supplemental_arithmetic.tex#L164) | Mass of a fixed channel | not_started | — |
