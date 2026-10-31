@@ -64,3 +64,4 @@ public import PaperP1.Arithmetic.TwoDefectWindows
 public import PaperP1.Arithmetic.UniformDefectCounts
 public import PaperP1.Model.LocalRunRank
 public import PaperP1.Arithmetic.SharpPrimeCount
+public import PaperP1.Model.LocalRigidityConsequences

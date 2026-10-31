@@ -12,14 +12,14 @@ a blank declaration field nor a preparatory algebraic lemma establishes coverage
 Coverage includes the exact declarations listed below. Preparatory lemmas are
 recorded in the project status without counting as complete numbered results.
 
-## Main article: 6 / 73 proved
+## Main article: 7 / 73 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
 | 1.1 (p. 3) | [p1:thm:main](../manuscripts/paper-p1/v1.6/sources/main_sections/introduction.tex#L77) | Optimal quadratic Poisson--Charlier approximation | not_started | — |
 | 1.2 (p. 4) | [p1:cor:tv](../manuscripts/paper-p1/v1.6/sources/main_sections/introduction.tex#L116) | Exact total variation scale | not_started | — |
 | 1.4 (p. 4) | [p1:cor:explicit](../manuscripts/paper-p1/v1.6/sources/main_sections/introduction.tex#L181) | An explicit probability reference | not_started | — |
-| 2.1 (p. 11) | [p1:limits:local-rigidity](../manuscripts/paper-p1/v1.6/sources/main_sections/exact_setup.tex#L27) | Local rigidity | in_progress | `PaperP1.WindowRelationCode.window_relation_griesmer`, `PaperP1.WindowRelationCode.window_relation_griesmer_real`, `PaperP1.LocalRunRank.squareClass_rank_add_relation_rank`, `PaperP1.LocalRunRank.infiniteMarginal_eq_nominal_or_double` |
+| 2.1 (p. 11) | [p1:limits:local-rigidity](../manuscripts/paper-p1/v1.6/sources/main_sections/exact_setup.tex#L27) | Local rigidity | proved | `PaperP1.UniformLocalRigidity.finite_griesmer_eventually`, `PaperP1.WindowRelationCode.window_relation_griesmer_real`, `PaperP1.LocalRigidityRegimes.relation_rank_lt_of_length_asymptotic`, `PaperP1.LocalRigidityRegimes.critical_relation_rank_le_one_of_error`, `PaperP1.RelativeSignIndependence.subcritical_window_relative_signs_independent`, `PaperP1.LocalRigidityConsequences.critical_band_marginals` |
 | 3.1 (p. 14) | [p1:arith:core](../manuscripts/paper-p1/v1.6/sources/main_sections/arithmetic.tex#L49) | Regular set | not_started | — |
 | 3.2 (p. 15) | [p1:arith:hosts](../manuscripts/paper-p1/v1.6/sources/main_sections/arithmetic.tex#L98) | Support and residual mass | not_started | — |
 | 3.3 (p. 16) | [p1:arith:pairs](../manuscripts/paper-p1/v1.6/sources/main_sections/arithmetic.tex#L162) | Complete pair profile | not_started | — |

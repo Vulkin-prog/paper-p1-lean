@@ -109,6 +109,38 @@
         }
       ],
       "validation_commit": "c039c95c9390b61bae7afe0d2848e33c90ccbbb0"
+    },
+    {
+      "id": "P1-MATH-0004",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:limits:local-rigidity",
+        "number": "2.1",
+        "page": 11,
+        "source": "main_sections/exact_setup.tex",
+        "line": 27,
+        "statement_sha256": "cf6161ae9632dcc534edb3d4c2eaa9e3c05adc4d5f0edada9a6273dfa6a9e7f1"
+      },
+      "original_assumption": "U is comparable to N on both sides and B=O(log N); the general rank conclusion is stated for B asymptotic to c log N.",
+      "finding": "Only a fixed lower bound U>=aN is needed in every local-rigidity conclusion. For each fixed t and 0<c<2-2^(1-t), one threshold controls all bases U>=aN and all positive lengths B<=c log N. The upper base bound and the asymptotic lower comparison on B are unnecessary.",
+      "evidence": [
+        "PaperP1.UniformLocalRigidity.finite_griesmer_eventually",
+        "PaperP1.UniformLocalRigidity.uniform_relation_rank_lt",
+        "PaperP1.LocalRigidityRegimes.relation_rank_lt_of_length_asymptotic",
+        "PaperP1.LocalRigidityRegimes.critical_relation_rank_le_one_of_error",
+        "PaperP1.RelativeSignIndependence.subcritical_window_relative_signs_independent",
+        "PaperP1.LocalRigidityConsequences.critical_band_marginals"
+      ],
+      "proposed_revision": "Fix a>0 and state local rigidity uniformly for U>=aN. For each fixed t and 0<c<2-2^(1-t), the relation rank is less than t uniformly for all positive B<=c log N. The finite Griesmer bound is uniform in every t after N, whereas t remains fixed before the asymptotic rank threshold.",
+      "impact": "Strengthens the local-rigidity domain to arbitrarily large bases and every shorter logarithmic window. The constant 64, critical coefficient 1/log 2, sharp rank thresholds and error exponents are unchanged. Actual infinite-model critical-band marginals remain p or 2p and satisfy the proved pointwise (2*2^C)/N bound.",
+      "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 1223 declarations; only propext, Classical.choice and Quot.sound. The exact implementation commit is recorded after the proof commit is created.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

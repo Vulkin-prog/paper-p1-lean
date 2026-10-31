@@ -1,8 +1,9 @@
 # Article Lemma 2.1: local rigidity
 
-**Status: in progress.** The finite Griesmer inequality is proved for the
-actual even square-relation code. The asymptotic conclusions are not yet
-claimed, so the completed coverage remains 9 / 167.
+**Status: proved**, full article Lemma 2.1, including the finite Griesmer
+inequality, general and critical logarithmic regimes, and exact subcritical
+independence under the infinite prime-sign measure. Completed coverage is
+10 / 167. The critical-band rank and marginal consequences are also proved.
 
 Original locator: article V1.6, page 11, `p1:limits:local-rigidity`,
 `main_sections/exact_setup.tex:27`. The original statement is unchanged.
@@ -74,7 +75,7 @@ The proof uses the actual infinite prime-sign measure, constructs an adequate
 finite cylinder, and retains affine incompatibility through the positivity
 condition.
 
-## Remaining obligations
+## Uniform asymptotic thresholds
 
 The sharp asymptotic comparison of π(B) with B/log B is now proved by
 `SharpPrimeCount.prime_counting_ratio_tendsto` and
@@ -86,10 +87,70 @@ analytic proof, full provenance and the actual axiom audit. It is not an
 unproved assumption of any P1 theorem. See
 [PNT statement alignment](PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 
-Still to formalize: the simultaneous logarithmic
-limits with uniform macroscopic bases; the critical-band rank conclusion;
-the embedding/projection argument for every smaller subcritical window; and
-the uniform O(N⁻¹) marginal consequence in the critical band.
+`PrimeLogBudget.prime_log_budget_ratio_tendsto` proves
+`(pi(B)+1+t) log(64B) / B → 1` for each fixed t. The integer cap
+`ceil(c log N)` has ratio to log N tending to c and ratio to N tending to
+zero. `LogarithmicWindowCap.cap_prime_budget_tendsto` then proves the
+normalized prime budget tends to c. The normalized lower base log(aN)
+tends to one. A single strict-gap threshold therefore works before every
+window base and length.
 
-No new mathematical correction is asserted by this stage. The three confirmed
-improvements in the change log are unchanged.
+`WindowRelationMonotone.window_relation_finrank_mono` extends actual even
+square relations by zero. It includes the empty code and needs no arithmetic
+assumption. Thus every shorter window is controlled by the common cap.
+`LocalRigidityThreshold.griesmerFactor_eq_paper` identifies the factor with
+`2 - 2^(1-t)`, using integer exponent subtraction.
+
+The source-exact asymptotic declarations are
+
+- `UniformLocalRigidity.finite_griesmer_eventually`: for fixed a>0, D≥0,
+  one threshold precedes N,U,B and **every** t in the exact finite inequality;
+- `LocalRigidityRegimes.relation_rank_lt_of_length_asymptotic`: literal
+  B~c log N and c<2-2^(1-t), with t fixed before the threshold;
+- `LocalRigidityRegimes.critical_relation_rank_le_one_of_error`: literal
+  B=log N/log 2+o(log N), giving relation rank at most one;
+- `LocalRigidityRegimes.critical_band_relation_rank_le_one`: one threshold
+  for every L in a fixed real critical band, with B=L+1.
+
+The comparison `1/log 2 < 3/2` is proved using the compiled Mathlib
+`Real.log_two_gt_d9` bound at the pinned revision. No prime-count or
+logarithmic-comparison estimate is left as a theorem premise.
+
+## Exact independence and critical-band marginals
+
+`Affine/IndependentRows.lean` proves that every output of a full-rank binary
+row system has the fair-cube mass, without assuming compatibility of that
+output. `RelativeSignIndependence.map_infiniteStartBits_eq_pi` identifies
+the **entire** joint law of the relative bits with the product of fair bit
+measures under the actual infinite model. `iIndepFun_infiniteStartBits` and
+`iIndepFun_relativeSigns` give Mathlib's independence predicate for those
+bits and actual multiplicative relative signs.
+
+`RelativeSignIndependence.subcritical_window_relative_signs_independent`
+proves the last assertion of Lemma 2.1 for every ε>0, positive vertex count B,
+and B≤(1-ε)log N. The common threshold precedes every U and B. The anchor is
+the second vertex U+1, and the B−1 indexed vertices are all the other window
+vertices. The B=1 family is empty; ε≥1 is handled as well. This is exact
+independence, not a dimension-only or marginal-probability surrogate.
+
+`LocalRigidityConsequences.critical_band_marginals` gives one positive
+constant and one threshold for every actual admissible start and every
+critical-band length. It proves the two effective ranks, exact p or 2p
+marginals, and the pointwise bound
+`p_x ≤ (2 * 2^C) / N`. The probabilities are actual infinite-model Bochner
+marginals; zero-probability incompatible starts are handled by the existing
+admissibility convention. The pointwise bound supplies the upper bound for
+any finite maximum of admissible marginals.
+
+## Stronger base hypothesis
+
+All these results need only U≥aN for a fixed a>0. The upper comparison in
+U≍N is unnecessary. The general rank theorem is also uniform for **all**
+B≤c log N with c below the same sharp threshold, rather than only a chosen
+sequence B~c log N. Constants and exponents are unchanged.
+This confirmed improvement is recorded as `P1-MATH-0004` in the
+[change log](MATHEMATICAL_CHANGELOG.md).
+
+The full build and actual kernel audit passed for 1,223 declarations at this
+stage. Only `propext`, `Classical.choice` and `Quot.sound` occur. The original
+manuscript statement and all source identities are preserved.

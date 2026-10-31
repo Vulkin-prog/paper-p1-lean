@@ -70,8 +70,8 @@ Stable ID: `P1-ARITH-PELL`. Status: **proved**.
 - No theorem from either cited paper is an unproved premise. No
   Nicolas–Robin estimate, fixed-discriminant constant, squarefree coefficient
   assumption or class-number bound remains in the final statement. The
-  determinant estimate and asymptotic local-rigidity specialization remain open. T1.3 is proved
-  in full below.
+  determinant estimate remains open. T1.3 and the complete local-rigidity
+  specialization are proved below.
 
 ## Proved defect-count ingredients
 
@@ -142,8 +142,10 @@ at `9d581dfff2e41de989072ea63abf3daf69311520`. The historical Paper C PNT
 interface is an unproved proposition and is not used as evidence or a premise.
 No literature theorem is left as an unproved assumption in this PNT chain.
 
-See [local rigidity alignment](LOCAL_RIGIDITY_ALIGNMENT.md) for the exact finite
-statements and the remaining uniform asymptotic obligations.
+The exact finite inequality, all uniform asymptotic specializations and actual
+relative-sign independence of article Lemma 2.1 are now proved. See
+[local rigidity alignment](LOCAL_RIGIDITY_ALIGNMENT.md), including the weaker
+base hypothesis and the exact critical-band marginal consequences.
 
 ## Checked measure-theory infrastructure
 

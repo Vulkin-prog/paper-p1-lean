@@ -193,6 +193,12 @@ The PNT input has instead been proved by adapting a selected proof from
 `PaperCV282/MicroscopicPrivatePrimes.lean` was also inspected but not ported;
 its quadratic-window exponent-one argument is not needed here.
 
+The full P1 Lemma 2.1 is now completed by new proofs of the uniform PNT
+specialization, extension of actual window relations, critical regimes,
+actual infinite relative-sign independence and critical-band marginals.
+These use the checked P1 foundations above and introduce no further Paper C
+port. The weaker base hypothesis is recorded as `P1-MATH-0004`.
+
 ## Further candidates
 
 | Candidate area | Paper C paths | Required comparison |

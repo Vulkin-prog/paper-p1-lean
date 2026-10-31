@@ -1,8 +1,8 @@
 # The sharp prime-count input
 
 **Status: proved.** Stable literature-input identifier: `P1-ARITH-PNT`.
-This is a proved arithmetic input to article Lemma 2.1. The complete
-asymptotic local-rigidity statement is still in progress.
+This is a proved arithmetic input to article Lemma 2.1. The uniform
+specialization and complete local-rigidity statement are now proved as well.
 
 ## Public P1 statements
 
@@ -73,8 +73,8 @@ are `propext`, `Classical.choice` and `Quot.sound`; no unproved analytic
 proposition is an assumption of PNT. The audit reader now handles apostrophes
 inside Lean names; controls confirm acceptance of the complete actual output
 and rejection of an unexpected axiom or a missing declaration.
-The paper's local-rigidity thresholds still require a separate uniform
-asymptotic specialization, recorded in
+The paper's local-rigidity thresholds and their uniform asymptotic
+specialization are now proved, as recorded in
 [LOCAL_RIGIDITY_ALIGNMENT.md](LOCAL_RIGIDITY_ALIGNMENT.md).
 
 No change to an original manuscript statement or new mathematical correction

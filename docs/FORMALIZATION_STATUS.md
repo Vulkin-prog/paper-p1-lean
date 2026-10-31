@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 31 O
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **9 / 167**: article Propositions 4.1, 5.2 and Lemmas 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3.
+- Numbered results completed: **10 / 167**: article Propositions 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1162 audited theorem/lemma declarations**. This
+- The project currently has **1223 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -95,9 +95,14 @@ Neither document is fully formalized.
   one-sided consequence. All its selected proofs are included in the kernel
   audit; unfinished upstream Fourier declarations are excluded from the
   dependency chain. See [PNT proof and provenance](PRIME_NUMBER_THEOREM_ALIGNMENT.md).
-  The uniform asymptotic specializations and remaining conclusions of article
-  Lemma 2.1 remain open; the result is recorded as in progress, without
-  increasing completed coverage. See [local rigidity alignment](LOCAL_RIGIDITY_ALIGNMENT.md).
+  Article Lemma 2.1 is now complete: the exact finite inequality, general and
+  critical asymptotic rank bounds, and exact subcritical relative-sign
+  independence under the actual infinite measure. The full relative-bit law
+  is identified with the fair product law and `iIndepFun` is proved for the
+  actual signs. The critical-band ranks, exact p or 2p marginals and a uniform
+  pointwise O(1/N) bound are also proved. One threshold precedes all bases and
+  lengths; only U≥aN is needed, with no upper base bound. See
+  [local rigidity alignment](LOCAL_RIGIDITY_ALIGNMENT.md).
 - On any effective subspace of actual binary linear forms, the affine event
   has its character expansion and actual marginal equal to the inverse size
   of that space. Local signs are evaluations at a solution and proved
@@ -154,7 +159,8 @@ Neither document is fully formalized.
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
-  hypotheses for all three parts of T1.3. No error in an original
+  hypotheses for all three parts of T1.3; `P1-MATH-0004`, a lower base bound
+  alone and uniform shorter windows for local rigidity. No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.
 

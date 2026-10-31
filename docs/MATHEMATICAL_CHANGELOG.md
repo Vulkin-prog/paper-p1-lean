@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Three mathematical improvements are confirmed; no error in a manuscript conclusion
+**Four mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -76,6 +76,38 @@ Absence of an entry does not mean the argument has been verified.
 - Status: confirmed by full compilation and the 862-declaration kernel-axiom
   audit; not yet integrated into a new manuscript version. The JSON record
   preserves the earlier 830-declaration validation of the first two components.
+
+## P1-MATH-0004 — A lower base bound suffices for local rigidity
+
+- Location: article Lemma 2.1, page 11, label `p1:limits:local-rigidity`,
+  `main_sections/exact_setup.tex:27` in V1.6. The source block is unchanged.
+- Original setting: U ≍ N and B=O(log N), followed by the sharp fixed-order
+  logarithmic rank thresholds and subcritical relative-sign independence.
+- Improvement: fix a>0 and require only U≥aN. The upper bound U=O(N) is
+  unnecessary for every local-rigidity conclusion. The rank bound is also
+  uniform for all positive B≤c log N whenever c<2-2^(1-t), rather than only
+  a chosen sequence B~c log N. A single threshold precedes all U and B.
+- Evidence: `UniformLocalRigidity.finite_griesmer_eventually`,
+  `uniform_relation_rank_lt`,
+  `LocalRigidityRegimes.relation_rank_lt_of_length_asymptotic`,
+  `critical_relation_rank_le_one_of_error`,
+  `RelativeSignIndependence.subcritical_window_relative_signs_independent`,
+  and `LocalRigidityConsequences.critical_band_marginals`.
+  The rounded common cap, sharp PNT budget and actual relation-code extension
+  are proved; independence uses the full product law under the infinite model.
+- Suggested revision: state local rigidity uniformly for U≥aN, with a fixed
+  positive a. State the general rank consequence uniformly for every
+  B≤c log N below the same threshold. Keep t fixed before the asymptotic
+  threshold. In the finite Griesmer inequality alone, t can vary after N;
+  that finite threshold is independent of t.
+- Impact: enlarges the arithmetic domain, including bases that grow faster
+  than N. The constant 64, critical coefficient 1/log 2, sharp rank
+  thresholds and all error exponents are unchanged. In the original dyadic
+  application, the exact heterogeneous marginals remain p or 2p, with the
+  proved pointwise bound `(2 * 2^C)/N` in a fixed critical band.
+- Status: confirmed by full Lean 4.36.0-rc2 compilation and the actual
+  1,223-declaration kernel-axiom audit; not yet integrated into a new paper
+  version. See [local rigidity alignment](LOCAL_RIGIDITY_ALIGNMENT.md).
 
 Every finding receives a stable identifier `P1-MATH-0001`, etc., and an entry in
 [mathematical-changes.json](mathematical-changes.json). Keep the following fields:

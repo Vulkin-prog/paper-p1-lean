@@ -60,19 +60,23 @@
       "source": "main_sections/exact_setup.tex",
       "line": 27,
       "sha256": "cf6161ae9632dcc534edb3d4c2eaa9e3c05adc4d5f0edada9a6273dfa6a9e7f1",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
-        "PaperP1.WindowRelationCode.window_relation_griesmer",
+        "PaperP1.UniformLocalRigidity.finite_griesmer_eventually",
         "PaperP1.WindowRelationCode.window_relation_griesmer_real",
-        "PaperP1.LocalRunRank.squareClass_rank_add_relation_rank",
-        "PaperP1.LocalRunRank.infiniteMarginal_eq_nominal_or_double"
+        "PaperP1.LocalRigidityRegimes.relation_rank_lt_of_length_asymptotic",
+        "PaperP1.LocalRigidityRegimes.critical_relation_rank_le_one_of_error",
+        "PaperP1.RelativeSignIndependence.subcritical_window_relative_signs_independent",
+        "PaperP1.LocalRigidityConsequences.critical_band_marginals"
       ],
       "literature_inputs": [
         "P1-CODE-GRIESMER",
         "P1-ARITH-PNT"
       ],
-      "mathematical_changes": [],
-      "notes": "Finite Griesmer inequality proved for the actual full even square-relation code, with the exact ceiling distance from proved T1.1 and private-prime support restriction. Exact effective-rank deficit and actual infinite-model marginals proved under the finite prime-count obstruction. The sharp PNT input is now proved by a selected, recompiled and audited analytic development; uniform asymptotic specializations, critical-band conclusions and subcritical embeddings remain open. This is not complete Lemma 2.1 coverage. See docs/LOCAL_RIGIDITY_ALIGNMENT.md and docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md."
+      "mathematical_changes": [
+        "P1-MATH-0004"
+      ],
+      "notes": "Complete Lemma 2.1: exact finite Griesmer inequality on actual even square relations, literal B~c log N rank threshold, literal critical log N/log 2+o(log N) rank bound, and exact subcritical iIndepFun for actual relative signs under the infinite prime-sign measure. All PNT inputs are proved. One threshold precedes all bases and lengths; only U>=aN is needed. Critical-band ranks, exact p or 2p marginals and a uniform pointwise (2*2^C)/N bound are also proved. Stronger uniform shorter-window scope and weaker base hypothesis are P1-MATH-0004. See docs/LOCAL_RIGIDITY_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:core",
