@@ -45,6 +45,38 @@ The following additional algebraic ports support companion T1.1:
 | `PaperC/Analysis/RungePowerSeries.lean`, `7a6ba6e18ad89ab4d7e343876b5b1c11d3111994` | `PaperP1/Analysis/RungePowerSeries.lean`, full module | Module/public declarations, namespace and public helpers for complete axiom auditing |
 | `PaperC/Algebra/RungeQPolynomial.lean`, `4763c81ac2a5dce00982c5a06f6c5326b6b2cab0` | `PaperP1/Algebra/RungeQPolynomial.lean`, through the exact coefficient formula, including high-degree cancellation and nonvanishing; later coarse height/equality estimates excluded | Selected dependency closure; module/public declarations, public helpers, renamed absolute-value import, proposition-local instance style; unused-argument linter suppression removed |
 
+The following ports supply the unconditional polynomial-height route used in
+companion T1.2:
+
+| Upstream path and Git blob | Target | Selected scope |
+|---|---|---|
+| `PaperC/Diophantine/PellInput.lean`, `99025d6105dc01e60fb722a94a81e6e8d96c65aa` | `PaperP1/Diophantine/PellInput.lean` | Only finite counting predicates and exact equation/height definitions |
+| `PaperC/Diophantine/QuadraticIdealDivisors.lean`, `91b0b26c5257b95eff99ad2dae57a57e92bd9927` | `PaperP1/Diophantine/QuadraticIdealDivisors.lean` | Full module |
+| `PaperC/Diophantine/GeneralizedPell.lean`, `19a257299fe1f2d0223a16fa3cdc938fbf0e142b` | `PaperP1/Diophantine/GeneralizedPell.lean` | Finite ideal, unit-orbit, height and squarefree-reduction proofs; old final conditional estimate excluded |
+| `PaperC/Asymptotics/Uniform.lean`, `b81bb994526978962be94312f51e7692ee708b13` | `PaperP1/Asymptotics/Uniform.lean` | Full module |
+| `PaperC/Asymptotics/ExpSqrtLog.lean`, `070005b53f66870383fe5ba849c915efe9a8301c` | `PaperP1/Asymptotics/ExpSqrtLog.lean` | Full module |
+| `PaperCV282/LogarithmicWordPowers.lean`, `560b73bebb36aeff4d910f0590578d17bafc01a0` | `PaperP1/Asymptotics/LogarithmicWordPowers.lean` | Full module |
+| `PaperCV282/DivisorSubpolynomial.lean`, `62d6247c8858194df4fc1fbae80ef75a91fbb7b1` | `PaperP1/Arithmetic/DivisorSubpolynomial.lean` | Full module |
+| `PaperCV282/PolynomialPellCount.lean`, `7db829dab1d9e9b89dd22c84b3dca761973b65b7` | `PaperP1/Diophantine/PolynomialPellCount.lean` | Full module |
+| `PaperCV282/HostRealPowers.lean`, `d00caddc1443822afe08f449437da5cf1bc67545` | `PaperP1/Asymptotics/RealPowerRoot.lean` | Only the positive integer-root inequality |
+| `PaperC/Diophantine/HalterKochConductorDescent.lean`, `6b970b5d96de14a796c4f0ec8fcd30cf3ebe2d11` | `PaperP1/Diophantine/QuadraticOrderConductor.lean` and `PaperP1/Diophantine/HalterKochConductorDescent.lean` | Concrete residue/conductor construction and its public discharge; historical stronger interface excluded |
+
+These counting ports use module/public declarations and P1 namespaces. Historical
+submission metadata and unrelated literature interfaces are omitted. Helpers
+are public for the generated audit. Deprecated imports and ite/prime lemmas
+are updated; a redundant cancellation instance is removed. The concrete
+conductor construction is separated from its public discharge into two files,
+with distinct named local number-field instances. The logarithmic and
+integer-root helpers are extracted without importing the old host-counting
+development. No old compiled files are used.
+
+The new P1 square-coefficient divisor injection, combination of branches,
+actual positive-solution finite set and real-exponent transport complete the
+statement comparison in [QUADRATIC_COUNT_ALIGNMENT.md](QUADRATIC_COUNT_ALIGNMENT.md).
+The old stronger exp(log N/log log N) endpoint and its Nicolas--Robin premise
+are not imported. The elementary divisor proof is sufficient for P1's stated
+subpolynomial rate.
+
 All ported statements recompile with warnings as errors and are included in the
 generated kernel-axiom audit. The old final Runge bound
 `U ≤ (128 d R)^(2d)` and its analytic tail proof are not imported. New P1

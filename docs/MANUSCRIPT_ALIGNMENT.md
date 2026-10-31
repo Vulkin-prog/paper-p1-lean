@@ -90,12 +90,12 @@ recorded in the project status without counting as complete numbered results.
 | 19.2 (p. 58) | [p1:discussion:charlier-norm](../manuscripts/paper-p1/v1.6/sources/main_sections/discussion.tex#L116) | Norms of Poisson differences | not_started | — |
 | 20.1 (p. 60) | [p1:limits:vector-reference](../manuscripts/paper-p1/v1.6/sources/main_sections/limits_appendix.tex#L45) | Unsigned positional compound-Poisson comparison | not_started | — |
 
-## Technical companion: 1 / 94 proved
+## Technical companion: 2 / 94 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
 | T1.1 (p. 5) | [p1:arith:runge](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L19) | A split-product bound uniform in the degree | proved | `PaperP1.SplitProductBound.uniform_split_product_real_radius`, `PaperP1.SplitProductBound.uniform_split_product` |
-| T1.2 (p. 5) | [p1:arith:pell](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L62) | Uniform quadratic equation count | not_started | — |
+| T1.2 (p. 5) | [p1:arith:pell](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L62) | Uniform quadratic equation count | proved | `PaperP1.UniformQuadraticCount.uniform_quadratic_equation_count`, `PaperP1.UniformQuadraticCount.mem_positiveQuadraticSolutions_real_height` |
 | T1.3 (p. 6) | [p1:arith:defects](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L90) | Local and global defect counts | not_started | — |
 | T1.4 (p. 6) | [p1:arith:reuss](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L139) | Uniform determinant estimate | not_started | — |
 | T1.5 (p. 9) | [p1:arith:twokernel](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L360) | Two small odd kernels | not_started | — |

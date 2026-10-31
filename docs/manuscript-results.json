@@ -1249,11 +1249,14 @@
       "source": "companion_sections/arithmetic_appendix.tex",
       "line": 62,
       "sha256": "2729cdcb6c3b8114947cb93863439e29c59951a45e977ae6c34cb40cc6d3a7df",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.UniformQuadraticCount.uniform_quadratic_equation_count",
+        "PaperP1.UniformQuadraticCount.mem_positiveQuadraticSolutions_real_height"
+      ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Exact positive-solution cardinality in the real N^A0 box; every positive real error exponent with the threshold before all coefficients. Both square and nonsquare branches, internally proved divisor/ideal/unit estimates. No unproved literature assumption. See docs/QUADRATIC_COUNT_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:defects",

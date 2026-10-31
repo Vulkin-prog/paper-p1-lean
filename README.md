@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 7 / 167 numbered results proved.**
+**Status: active formalization, 8 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The asymptotic theorems remain open.
@@ -35,6 +35,11 @@ Companion Lemma T1.1 is proved with the exact degree-uniform bound
 `U ≤ (64R)^d`, including real radii and integer bases. The proof uses formal
 series, coefficient cancellation and integer-square separation. See its
 [alignment note](docs/SPLIT_PRODUCT_ALIGNMENT.md).
+Companion Lemma T1.2 is proved as an actual positive-solution count, uniformly
+over every coefficient in a fixed real polynomial box. Both square and
+nonsquare coefficient products are included, and all divisor, ideal and
+unit estimates used in the proof are proved. See its
+[alignment note](docs/QUADRATIC_COUNT_ALIGNMENT.md).
 
 | Material | Location |
 |---|---|
@@ -88,9 +93,10 @@ mathematical inputs will be individually tracked rather than hidden as axioms.
 
 The project follows the traceability approach of
 [paper-c-lean](https://github.com/Vulkin-prog/paper-c-lean). No Paper C Lean code
-was imported at initialization. Parity vectors and the finite prime-sign model
-have since been adapted and rebuilt; the reuse record identifies every source
-and adaptation. Its old compiled files are not reusable under this compiler.
+was imported at initialization. Parity vectors, the prime-sign model and
+selected arithmetic counting proofs have since been adapted and rebuilt.
+The reuse record identifies every source and adaptation. Its old compiled
+files are not reusable under this compiler.
 Palomar registrations are planned after completion and
 qualification; no registration exists for this project yet.
 

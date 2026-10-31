@@ -44,6 +44,33 @@ Stable ID: `P1-ARITH-SPLIT`. Status: **proved**.
   This resolves T1.1 itself; the uniform quadratic-equation, defect, determinant
   and local-rigidity inputs remain separate open obligations.
 
+## Proved coefficient-uniform quadratic count
+
+Stable ID: `P1-ARITH-PELL`. Status: **proved**.
+
+- Target: companion T1.2, `p1:arith:pell`, page 5,
+  `companion_sections/arithmetic_appendix.tex:62`.
+- Quantifiers: for each fixed real A₀ > 0 and ε > 0, there exists N₀; for
+  every N ≥ N₀ and every positive A,C and nonzero e with
+  A,C,|e| ≤ N^A₀, the exact positive-solution count in the N^A₀ box is ≤ N^ε.
+- Lean theorem: `PaperP1.UniformQuadraticCount.uniform_quadratic_equation_count`.
+  Its exact floor-height membership equivalence is separately proved.
+- Source comparison: [Tao, arXiv:2603.27990v3](https://arxiv.org/html/2603.27990v3),
+  §2.5, Lemma 2.10 and proof; [Cilleruelo–Garaev,
+  arXiv:1007.1526v2](https://arxiv.org/pdf/1007.1526v2), §3, Lemma 4 and
+  Proposition 1. The primary statements and the polynomial-height substitution
+  were inspected. See [exact alignment](QUADRATIC_COUNT_ALIGNMENT.md).
+- Proof inputs: internally proved finite ideal-divisor and unit-orbit bounds,
+  squarefree reduction, conductor descent, and elementary divisor
+  subpolynomiality. Exact Paper C blobs are recorded in the reuse ledger.
+  Standard quadratic-field, ideal-factorization, trace/norm and Pell-unit
+  facts come from compiled Mathlib at
+  `9d581dfff2e41de989072ea63abf3daf69311520`.
+- No theorem from either cited paper is an unproved premise. No
+  Nicolas–Robin estimate, fixed-discriminant constant, squarefree coefficient
+  assumption or class-number bound remains in the final statement. The
+  determinant and local/global defect counts remain open.
+
 ## Checked measure-theory infrastructure
 
 The general probability-space version of Proposition 4.1 uses already-proved

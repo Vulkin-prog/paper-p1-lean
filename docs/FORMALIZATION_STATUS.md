@@ -1,10 +1,10 @@
 # Formalization status
 
-Stage: **exact probability identities and first uniform arithmetic bound**, 31 October 2026.
+Stage: **exact probability identities and uniform arithmetic foundations**, 31 October 2026.
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **7 / 167**: article Propositions 4.1, 5.2 and Lemmas 4.2, 4.3, 4.4, 5.1; companion Lemma T1.1.
+- Numbered results completed: **8 / 167**: article Propositions 4.1, 5.2 and Lemmas 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **545 audited theorem/lemma declarations**. This
+- The project currently has **655 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -105,6 +105,15 @@ Neither document is fully formalized.
   or arithmetic literature bound supplied as an assumption. The Paper C
   algebraic ports are pinned and audited. See
   [statement alignment](SPLIT_PRODUCT_ALIGNMENT.md).
+- Companion Lemma T1.2 is complete. `uniform_quadratic_equation_count`
+  counts the exact finite set of positive solutions in the literal real
+  polynomial-height box, with a threshold before all coefficients. The square
+  branch injects into divisors of the nonzero right-hand side after scaling.
+  The nonsquare branch uses the proved ideal-divisor, conductor-descent,
+  unit-orbit and elementary divisor estimates ported from Paper C. No
+  literature inequality is left as an unproved premise. Both branches, every
+  coefficient range and every positive real error exponent are included. See
+  [statement alignment](QUADRATIC_COUNT_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant. No error in an original

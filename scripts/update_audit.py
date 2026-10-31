@@ -8,10 +8,66 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def lean_code(source):
+    """Mask comments and strings while preserving line and token boundaries."""
+    result = []
+    depth = 0
+    quoted = False
+    line_comment = False
+    i = 0
+    while i < len(source):
+        pair = source[i:i + 2]
+        char = source[i]
+        if char == "\n":
+            result.append(char)
+            line_comment = False
+            i += 1
+            continue
+        if line_comment:
+            result.append(" ")
+        elif depth:
+            if pair == "/-":
+                depth += 1
+                result.append("  ")
+                i += 2
+                continue
+            if pair == "-/":
+                depth -= 1
+                result.append("  ")
+                i += 2
+                continue
+            result.append(" ")
+        elif quoted:
+            result.append(" ")
+            if char == "\\":
+                result.append(" ")
+                i += 2
+                continue
+            if char == '"':
+                quoted = False
+        elif pair == "--":
+            line_comment = True
+            result.append("  ")
+            i += 2
+            continue
+        elif pair == "/-":
+            depth = 1
+            result.append("  ")
+            i += 2
+            continue
+        elif char == '"':
+            quoted = True
+            result.append(" ")
+        else:
+            result.append(char)
+        i += 1
+    return "".join(result)
+
+
 def render():
     names = []
     for source in sorted((ROOT / "PaperP1").rglob("*.lean")):
-        text = source.read_text()
+        text = lean_code(source.read_text())
         namespaces = re.findall(r"^namespace ([A-Za-z0-9_.]+)$", text, re.M)
         if len(namespaces) != 1:
             raise ValueError(f"Audit discovery requires one namespace per module: {source}")
