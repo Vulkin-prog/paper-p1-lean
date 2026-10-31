@@ -383,3 +383,7 @@ finding identifier is introduced. See
 - Status: confirmed by the full Lean v4.36.0-rc2 build (8,745 jobs) and actual
   kernel audit of all 1,728 theorem/lemma declarations; not integrated into
   a new manuscript. See [complete alignment](WEIGHTED_POISSON_NORM_ALIGNMENT.md).
+
+Exact validated implementation commit for P1-MATH-0010:
+[281431eefffbf25daa2564d62280b3bd188a6496](https://github.com/Vulkin-prog/paper-p1-lean/commit/281431eefffbf25daa2564d62280b3bd188a6496).
+All 178 distinct coverage/finding declaration names were also checked by Lean.

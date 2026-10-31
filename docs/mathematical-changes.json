@@ -353,11 +353,12 @@
       ],
       "proposed_revision": "Include mu=0 in the recurrence-norm/Poisson comparison. State the all-real stability estimate with 2(1+abs(mu)), then specialize to 0<=mu<=M for the original 2(1+M) bound, allowing arbitrary real nu. Retain the original no-first-moment scope.",
       "impact": "Weakens only parameter hypotheses. All original constants and conclusions are retained. The reference Poisson law still requires mu>=0; only the recurrence norm and its stability admit negative parameters. Absolute convergence and the factorial resolvent are proved without a first-moment assumption, as already claimed in the source. No error in the original result is asserted.",
-      "validation": "Full Lean v4.36.0-rc2 build (8745 jobs) and actual kernel axiom audit for all 1728 declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are directly included in the actual audit.",
+      "validation": "Full Lean v4.36.0-rc2 build (8745 jobs) and actual kernel axiom audit for all 1728 declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are directly included in the actual audit. All 178 distinct coverage/finding declaration names were also checked by Lean.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "281431eefffbf25daa2564d62280b3bd188a6496"
     }
   ]
 }
