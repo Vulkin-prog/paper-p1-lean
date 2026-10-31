@@ -1271,11 +1271,13 @@
       "status": "in_progress",
       "lean_declarations": [
         "PaperP1.LocalDefectBound.card_defectsInInterval_lt_of_log",
-        "PaperP1.LargeOddKernel.largeOddKernel_eq_one_iff"
+        "PaperP1.LargeOddKernel.largeOddKernel_eq_one_iff",
+        "PaperP1.LocalDefectRate.card_cast_lt_log_div",
+        "PaperP1.GlobalDefectCount.global_defect_count_le_rpow_eventually"
       ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": "Finite local Hamming bound for the actual intrinsic defective set, separate cutoff and width, canonical representations and exact large-odd-kernel dictionary proved. Uniform asymptotic local/global counts, two-defect window count and fixed dilation/translation conclusions remain open. Not counted as a completed numbered result. See docs/DEFECT_COUNTS_ALIGNMENT.md."
+      "notes": "Actual intrinsic defect sets, exact large-odd-kernel dictionary, canonical representations and finite local Hamming/rate bounds proved. Global N^(1/2+o(1)) count is proved uniformly for H <= D log N and X <= CN with fixed real C,D. The uniform asymptotic local prime budget, two-defect window count and fixed dilation/translation conclusions remain open. Not counted as a completed numbered result. See docs/DEFECT_COUNTS_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:reuss",

@@ -44,19 +44,48 @@ Finite counts of represented values and interval overlaps have also been
 ported as preparation for global estimates. They do not alone establish the
 manuscript's asymptotic bounds.
 
+## Proved explicit rate and global asymptotic count
+
+`LocalDefectRate.codingRadius U R` is the direct floor
+`floor(log U / (4 log(64R)))`. Its weak and strict logarithmic conditions
+and positivity criterion are proved. The elementary finite Chebyshev bound
+`floor(log₂ H) · π(H) ≤ 7H` is proved from Mathlib's primorial estimate.
+Consequently, the explicit budget
+
+`7H / floor(log₂ H) + 1 ≤ A · codingRadius U R`
+
+gives the real local rate in `LocalDefectRate.card_cast_lt_log_div`.
+The budget and the eventual comparisons with B still need to be derived
+uniformly from the manuscript's comparison constants.
+
+`GlobalDefectCount.positiveDefectsBelow H X` is the actual positive set
+with K_H(n)=1 and n ≤ X. It is proved equal to the represented-value set,
+using canonical reconstruction in both directions. The finite bound is
+
+`#defects ≤ sqrt(X) exp(2 sqrt(H))`.
+
+`global_defect_count_le_rpow_eventually` proves that, for fixed real
+C,D ≥ 0 and ε > 0, one threshold works for every cutoff and counting height
+with H ≤ D log N and X ≤ CN:
+
+`#defects ≤ N^(1/2+ε)`.
+
+This completes the global N^(1/2+o(1)) conclusion of T1.3. It only needs an
+upper logarithmic bound on H. The proof includes absorption of the fixed
+sqrt(C) factor and the exact positive set, with no additive zero-value loss.
+
 ## Remaining conclusions
 
 To complete T1.3, prove and combine:
 
-- The uniform choice t ≍ log N/log B and prime-count estimate converting the
-  finite local bound to O(B/log B), with fixed comparison constants.
-- The global N^(1/2+o(1)) count for the actual defective set.
+- The uniform prime budget and parameter comparisons converting the explicit
+  local rate to O(B/log B), with fixed comparison constants.
 - The N^o(1) count of windows containing two distinct defects, using T1.2 with
   the smooth-support and offset counts.
 - The stated versions after fixed dilations and translations.
 
-No asymptotic part above is counted as proved in the coverage ledger.
-This work is preparatory to T1.3, and numbered-result coverage remains 8/167.
+The global asymptotic part is recorded as proved progress inside T1.3.
+The full numbered result remains incomplete, so coverage stays 8/167.
 
 ## Provenance
 
@@ -65,5 +94,5 @@ bridges are adapted from the exact Paper C blobs in the reuse ledger.
 The quantitative application uses P1's stronger degree-uniform constant,
 and the actual local set separates the cutoff from the interval width.
 The intrinsic kernel product dictionary is a new P1 proof.
-All 758 current proved declarations are included in the kernel-axiom audit.
+All 806 current proved declarations are included in the kernel-axiom audit.
 

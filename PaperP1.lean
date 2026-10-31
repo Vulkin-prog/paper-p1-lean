@@ -58,3 +58,5 @@ public import PaperP1.Algebra.RungeQPolynomial
 public import PaperP1.Arithmetic.SplitProductBound
 public import PaperP1.Diophantine.UniformQuadraticCount
 public import PaperP1.Coding.LocalDefectBound
+public import PaperP1.Coding.LocalDefectRate
+public import PaperP1.Arithmetic.GlobalDefectCount

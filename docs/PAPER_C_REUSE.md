@@ -104,6 +104,27 @@ P1's new large-odd-kernel dictionary and actual local set complete the finite
 statement comparison in [DEFECT_COUNTS_ALIGNMENT.md](DEFECT_COUNTS_ALIGNMENT.md).
 No old asymptotic defect bound is imported, and T1.3 remains in progress.
 
+Additional elementary estimates for the T1.3 local/global rates:
+
+| Upstream path and Git blob | Target | Scope |
+|---|---|---|
+| `PaperC/Arithmetic/ChebyshevPrimeCount.lean`, `740b2ca02f9ccb3dbdd16ead42294890c653017b` | `PaperP1/Arithmetic/ChebyshevPrimeCount.lean` | Full module; P1 module/public declarations and updated library names |
+| `PaperC/Arithmetic/WeightedDefectCounting.lean`, `41f987ccd292fdd51778e53e33ad1cf28951e829` | `PaperP1/Arithmetic/WeightedDefectCounting.lean` | Full module; P1 module/public declarations and updated library names |
+| `PaperC/Analysis/ReciprocalSqrtSum.lean`, `a83ea59a265b61fe86f8d27cd8564aeb351b423d` | `PaperP1/Analysis/ReciprocalSqrtSum.lean` | Full module; P1 module/public declarations and updated library names |
+| `PaperC/Analysis/SmoothEulerProduct.lean`, `485be317256a3a95021422cd0a28746414264192` | `PaperP1/Analysis/SmoothEulerProduct.lean` | Full module; P1 module/public declarations and updated library names |
+
+Chebyshev counts are expressed directly as the cardinality of the small-prime
+finset, avoiding an extra enumeration dependency. The deprecated product
+monotonicity name and redundant simp arguments are updated. The new
+`Asymptotics/UniformReal.lean` generalizes the reciprocal-power conversion
+pattern in `PaperCV282/LogarithmicWordPowers.lean`, blob
+`560b73bebb36aeff4d910f0590578d17bafc01a0` at the same snapshot.
+`Coding/LocalDefectRate.lean` adapts the finite ratio-budget argument from
+the already recorded `IntervalDefectBound.lean` and introduces P1's direct
+radius. `Arithmetic/GlobalDefectCount.lean` proves equality with the actual
+intrinsic defective set and the uniform real-exponent global bound. The full
+T1.3 statement is still in progress.
+
 All ported statements recompile with warnings as errors and are included in the
 generated kernel-axiom audit. The old final Runge bound
 `U ≤ (128 d R)^(2d)` and its analytic tail proof are not imported. New P1

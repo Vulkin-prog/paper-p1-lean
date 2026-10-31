@@ -69,7 +69,20 @@ Stable ID: `P1-ARITH-PELL`. Status: **proved**.
 - No theorem from either cited paper is an unproved premise. No
   Nicolas–Robin estimate, fixed-discriminant constant, squarefree coefficient
   assumption or class-number bound remains in the final statement. The
-  determinant and local/global defect counts remain open.
+  determinant estimate and the remaining local/window parts of T1.3 remain
+  open. Its global defect-count conclusion is now proved.
+
+## Proved defect-count ingredients
+
+Companion T1.3 remains **in progress**. The finite Chebyshev estimate and
+weighted defect/Euler-product estimates are ported from exact Paper C sources,
+with no literature assumption. Mathlib's `primorial_le_four_pow`
+(`NumberTheory/Primorial.lean`) is a proved library input at the pinned
+commit. The new global theorem
+`PaperP1.GlobalDefectCount.global_defect_count_le_rpow_eventually` proves the
+actual positive-set count ≤ N^(1/2+ε), with a threshold before all H,X in the
+stated logarithmic/linear ranges. See
+[partial statement alignment](DEFECT_COUNTS_ALIGNMENT.md) for what remains.
 
 ## Checked measure-theory infrastructure
 

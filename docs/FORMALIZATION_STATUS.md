@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **758 audited theorem/lemma declarations**. This
+- The project currently has **806 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -120,8 +120,13 @@ Neither document is fully formalized.
   augmented parity rank and square-product bridges are ported and checked.
   T1.1 discharges the short-word exclusion, giving a finite bound for the
   actual defective set in [U,U+R] with independent cutoff H and width R.
-  Small-cardinality cases are included. The asymptotic local/global bounds,
-  two-defect window count and dilation/translation versions remain open.
+  Small-cardinality cases are included. An elementary Chebyshev bound and a
+  direct floored coding radius give an explicit real local rate with a finite
+  prime budget. The global `N^(1/2+o(1))` count is now proved for the actual
+  positive defective set, uniformly for `H ≤ D log N` and `X ≤ CN`, with
+  fixed real C,D and a threshold before all cutoffs and counting heights.
+  The asymptotic local prime budget, two-defect window count and
+  dilation/translation versions remain open.
   See [partial alignment](DEFECT_COUNTS_ALIGNMENT.md). This work does not
   increase numbered-result coverage.
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
