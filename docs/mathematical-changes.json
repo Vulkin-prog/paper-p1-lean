@@ -231,11 +231,12 @@
       ],
       "proposed_revision": "State the pointwise missing-block inequality with exact p_x on an arbitrary finite family. State its ordered-tuple consequence with |G| and any nonnegative upper bound pmax for the actual marginals. Then specialize to regular windows, pmax=p=2^(-L), and |G|≤N to recover the original assertion.",
       "impact": "Extends the probability and tuple estimates to heterogeneous or irregular windows. It retains affine incompatibility and the exact structural missing-full-support premise. No independence, separation, positive-marginal filter, moment bound or cardinality cutoff is added. The original exponent and constant RNp are unchanged as a corollary.",
-      "validation": "Lean v4.36.0-rc2 full build and actual kernel audit for all 1334 declarations; only propext, Classical.choice and Quot.sound. Exact implementation commit is recorded after publication.",
+      "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 1334 declarations at the recorded implementation commit; only propext, Classical.choice and Quot.sound. All recorded evidence declarations are directly included in the actual audit.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "ec54490500649dfe3fb3ff73c1abfbd29ad555e4"
     }
   ]
 }

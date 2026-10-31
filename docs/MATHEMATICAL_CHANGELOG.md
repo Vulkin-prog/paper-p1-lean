@@ -180,6 +180,10 @@ The full build and actual 1,301-declaration kernel audit passed.
 - Status: confirmed by Lean compilation and actual kernel audit; not integrated
   into a new manuscript. See [alignment](MISSING_BLOCK_ALIGNMENT.md).
 
+The exact validated implementation commit for P1-MATH-0007 is
+[ec54490500649dfe3fb3ff73c1abfbd29ad555e4](https://github.com/Vulkin-prog/paper-p1-lean/commit/ec54490500649dfe3fb3ff73c1abfbd29ad555e4).
+The full build and actual 1,334-declaration kernel audit passed.
+
 Every finding receives a stable identifier `P1-MATH-0001`, etc., and an entry in
 [mathematical-changes.json](mathematical-changes.json). Keep the following fields:
 
