@@ -18,9 +18,10 @@ assumption between the prefix and suffix.
 Actual finite-cylinder run marginals are proved to be zero in incompatible
 cases and inverse powers of two at the effective rank otherwise. The
 full-support centered Fourier formula and its sharper nullity bound are proved
-on effective dual spaces and instantiated for actual finite-cylinder run
-moments. Square-class-image identification and infinite-cylinder consistency
-remain open, so Lemma 4.2 is still in progress.
+on effective dual spaces and instantiated for actual run moments. Exact
+finite-cylinder consistency is proved for the infinite prime-sign measure,
+including its full count law and centered moments. Square-class-image
+identification remains open, so Lemma 4.2 is still in progress.
 
 | Material | Location |
 |---|---|

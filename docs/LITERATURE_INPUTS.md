@@ -37,3 +37,20 @@ Mathlib facts at the pinned commit
 These are compiled library theorems, not literature assumptions passed as
 unproved premises. Probability normalization, measurability and finite-measure
 integrability are supplied or proved explicitly in the P1 modules.
+
+## Checked infinite-cylinder infrastructure
+
+The infinite prime-sign model and its finite restrictions use compiled Mathlib
+results at the same pinned commit, with probability and measurability supplied
+explicitly:
+
+| Fact | Mathlib source | Role |
+|---|---|---|
+| `MeasureTheory.Measure.uniformOfFinset_apply` | `Probability/Distributions/Uniform.lean` | Normalize the two-point coordinate measure |
+| `MeasureTheory.Measure.infinitePi_map_restrict` | `Probability/ProductMeasure.lean` | Identify every finite coordinate marginal of the infinite product |
+| `MeasureTheory.Measure.pi_map_piCongrLeft` | `MeasureTheory/Constructions/Pi.lean` | Reindex observed prime coordinates |
+| `MeasureTheory.integral_map` | `MeasureTheory/Integral/Bochner/Basic.lean` | Transport every actual finite-cylinder expectation |
+
+These are proved library inputs. They supply no arithmetic counting bound or
+asymptotic estimate. The no-constant-tail result uses only finite cylinders,
+their masses tending to zero, and prime/square evaluations.

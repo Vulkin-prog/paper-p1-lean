@@ -26,11 +26,14 @@ compiled artifacts were copied.
 | `PaperC/Affine/Probability.lean`, `40d959c053dc27bfb197db83bff1e673fed55644` | `PaperP1/Affine/Probability.lean`, rational uniform affine probability formulas | Module/public declarations, namespace and ite lemma renames |
 | `PaperC/Affine/StartSystem.lean`, `097a8645a5622d6b7541cc52beac2e3129392b11` | `PaperP1/Affine/StartSystem.lean`, full run-start affine encoding | Module/public declarations, opened namespaces and ite lemma renames; the finite-model `startAt` alias retains the original event |
 | `PaperCPrel8/CenteredAffineBlocks.lean`, `8f021697109464c4ed6adf8c4e59d7aa83b13854` | Proof patterns for finite sum splitting and character-product induction in `PaperP1/Affine/CenteredFourier.lean` | New effective subspace indices, heterogeneous actual marginal rates, one uniform sign space and direct full-support relation kernel; the old nominal-row reference rate is not reused |
+| `PaperC/Model/InfiniteRademacher.lean`, `24341f93a3b6b509bf542919b3a1cd38c6db54f6` | `PaperP1/Model/InfiniteRademacher.lean`, full infinite prime-sign construction and no-constant-tail proof | Module/public declarations and namespaces; obsolete PMF uniform law replaced with `Measure.uniformOfFinset univ`, its normalization and singleton law checked directly; renamed set lemmas; probability instance exported |
+| `PaperC/Probability/InfiniteCylinderTransfer.lean`, `8347a9daff87f8ae8964764fb41aa6c7d3080247` | `PaperP1/Probability/InfiniteCylinderTransfer.lean`, full restriction/value/product-measure bridge | Module/public declarations and namespaces; exact prime enumeration and cutoff conventions retained |
+| `PaperC/Probability/InfiniteStartProbabilityTransfer.lean`, `54691ea29aa646390423c179c18695ceb03c45da` | Start/count restriction proof patterns in `PaperP1/Model/InfiniteStarts.lean` | P1 Boolean indicators, actual real finite weights and full measure-valued count law; no old asymptotic imports; Bochner centered-moment transport added |
 
 All ported statements recompile with warnings as errors and are included in the
 generated kernel-axiom audit. This port does not import the old arithmetic
-estimates or any literature assumptions. Identification with the unrestricted
-infinite prime-sign measure remains an explicit obligation.
+estimates or any literature assumptions. The unrestricted infinite prime-sign
+measure is constructed, and the finite-cylinder consistency is now proved.
 
 The generic affine Fourier identity is a checked precursor to P1's full-support
 centered formula. The latter still requires effective local spaces and their
@@ -49,7 +52,12 @@ full-support identity, dimension deficit, sharper bound and relation existence
 on those effective spaces. `Model/StartFourier.lean` identifies the actual run
 events with effective affine row spaces and applies these results to their
 actual centered moments, including finite-set reindexing. Identification with
-the manuscript's square-class images and infinite model is still open.
+the manuscript's square-class images is still open. The new
+`Probability/CylinderExpectations.lean` identifies finite product-measure
+weights with P1's actual real weights and transports all finite-cylinder
+expectations. `Model/InfiniteStarts.lean` and `InfiniteStartFourier.lean`
+transport actual marginals, centered moments, the full count law and the
+full-support formula to the infinite prime-sign probability measure.
 
 ## Further candidates
 

@@ -187,11 +187,15 @@
         "PaperP1.Model.start_full_support_formula",
         "PaperP1.Model.start_centered_moment_bound",
         "PaperP1.Model.start_full_support_relation_of_ne_zero",
-        "PaperP1.Model.dyadicCenteredMoment_eq_startFamily"
+        "PaperP1.Model.dyadicCenteredMoment_eq_startFamily",
+        "PaperP1.Model.InfiniteStarts.infinite_start_full_support_formula",
+        "PaperP1.Model.InfiniteStarts.infinite_start_centered_moment_bound",
+        "PaperP1.Model.InfiniteStarts.infinite_start_centered_moment_coarse_bound",
+        "PaperP1.Model.InfiniteStarts.infinite_start_full_support_relation_of_ne_zero"
       ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": "The full-support centered identity, sharper 2^rho - 1 bound, coarse bound and relation-existence implication are proved on effective dual subspaces. Rank-nullity identifies rho with the dimension deficit. Actual finite-cylinder run events are identified with effective affine row spaces; the formula and bound are instantiated with actual heterogeneous marginals and finite-set reindexing. Identification of these row spaces with the manuscript square-class images and consistency with the infinite prime-sign measure remain open, so the numbered result is not marked complete."
+      "notes": "The full-support centered identity, sharper 2^rho - 1 bound, coarse bound and relation-existence implication are proved on effective dual subspaces. Rank-nullity identifies rho with the dimension deficit. Actual finite-cylinder run events are identified with effective affine row spaces; actual heterogeneous marginals and finite-set reindexing are retained. Exact finite-cylinder consistency and expectation transport now give the same formula, bounds and existence implication under the infinite prime-sign measure. Identification of these effective row spaces with the manuscript square-class images remains open, so the numbered result is not marked complete."
     },
     {
       "label": "p1:alg:compatible",

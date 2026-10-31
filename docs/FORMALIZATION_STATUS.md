@@ -32,21 +32,29 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **250 audited theorem/lemma declarations**. This
+- The project currently has **296 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
   `2^ρ - 1` bound and nonzero-moment implication are now proved on effective
   dual subspaces and instantiated for actual finite-cylinder run moments.
   The relative nullity is identified with the dimension deficit in the paper.
-  Square-class-image identification and infinite-cylinder consistency remain
-  open, so article Lemma 4.2 remains in progress. No P1 compatible-nullity or
+  These formulas and bounds are also transported to the actual infinite
+  prime-sign measure. Square-class-image identification remains open, so
+  article Lemma 4.2 remains in progress. No P1 compatible-nullity or
   asymptotic estimate is claimed proved.
 - Paper C code ported: parity vectors and selected finite prime-cylinder
   definitions/proofs, with exact source identities recorded in the reuse ledger.
   Complete multiplicativity, the signed run-start interpretation, cutoff
   adequacy, actual cylinder probabilities and the exact-marginal centered
-  count-law identity are proved. Infinite-cylinder consistency is still open.
+  count-law identity are proved. The infinite prime-sign measure, restriction
+  to finite cylinders and exact consistency of values and start events have
+  now been ported. Finite product-measure singleton weights equal the actual
+  real weights used in P1. Every finite-cylinder expectation is transported;
+  infinite start marginals and centered moments equal their finite versions.
+  `dyadicCountLaw_realizes_infinite_count` identifies the full count law with
+  its actual infinite-measure pushforward. The no-constant-tail result is
+  also checked; its inherited lemma number refers to Paper C.
   External literature propositions encoded: none.
 - Generic affine fibers, their kernel equivalences, power-of-two cardinalities
   and rational uniform probabilities have been ported and checked. The actual
