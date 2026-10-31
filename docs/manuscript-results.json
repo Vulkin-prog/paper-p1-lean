@@ -1921,11 +1921,18 @@
       "source": "companion_sections/pair_rigidity.tex",
       "line": 129,
       "sha256": "3180e3bd07251b593f9c834c334297f64d5d97fcad49629093e529b7d39d45ca",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.PinnedGraphResolution.finrank_pinnedGraphSpace",
+        "PaperP1.LargePrimeGraphResolution.finrank_largePrimeSolution_eq_defective_add_components",
+        "PaperP1.LargePrimeComponentArithmetic.defectiveVertexCount_eq_actual_counts",
+        "PaperP1.LargePrimeComponentArithmetic.defectiveVertexCount_critical_bound",
+        "PaperP1.LargePrimeComponentArithmetic.component_selected_or_omitted",
+        "PaperP1.LargePrimeComponentArithmetic.free_nontrivial_component_meets_both_blocks"
+      ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Preparatory graph and arithmetic conclusions proved at the exact P1 cutoff 10(L+1): the actual large-prime solution space has dimension D+c; isolated free components are identified with actual defective positions, D has the proved critical O(B/log B) bound; every nontrivial free component meets both formal blocks and every solution selects it entirely or omits it. Selected Paper C graph modules are recompiled with exact provenance. The comparison c=d_xy+O(B/log B), requiring the complete even-relation space and the remaining small-prime/parity rank cost, is still open. The numbered lemma is not counted complete. See FREE_COMPONENT_ALIGNMENT.md."
     },
     {
       "label": "p13:rig:factor-height",

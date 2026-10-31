@@ -238,3 +238,12 @@ It uses exact affine rank, deterministic separation and the full
 unordered-subset factorial identity. No correction to this proposition is
 identified; the seven confirmed improvement entries remain separate.
 See [statement alignment](SUPPORT_LATTICE_ALIGNMENT.md).
+
+## Free-component graph checkpoint — no new finding
+
+The checked Paper C graph resolution is adapted to the literal P1 cutoff
+10(L+1) and linked to actual defective positions. The D+c dimension and
+component selection statements are proved, with exact source provenance.
+The d_xy comparison is still open, so this is partial T9.3 progress and
+adds no completed numbered result or mathematical correction. See
+[partial alignment](FREE_COMPONENT_ALIGNMENT.md).

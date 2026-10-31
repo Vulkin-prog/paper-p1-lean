@@ -171,6 +171,19 @@ reindexes the full-support formula and proves every conclusion of P1 Lemma 4.2
 on these spaces under the actual infinite measure. See
 [statement alignment](FOURIER_ALIGNMENT.md).
 
+## Large-prime graph ports for partial T9.3
+
+All rows use the same exact Paper C commit and Apache-2.0 attribution above.
+The complete T9.3 rank comparison remains open; these are checked graph foundations.
+
+| Upstream path and Git blob | Target and scope | Adaptation |
+|---|---|---|
+| `PaperC/Affine/TwoStartSystem.lean`, `94e01496f72b742b4f85e6c2630de078e3cddb41` | `PaperP1/Affine/TwoWindowLabels.lean`, only the two-copy complete vertex label definition | Uses the existing checked one-window labels; a new P1 private-prime proof replaces the old relational-assignment dependency; no normalization or probability interface is imported |
+| `PaperC/Combinatorics/PinnedGraphResolution.lean`, `d7a9b2eac6a49d7969ae9b07cd2f45e72b28e998` | `PaperP1/Combinatorics/PinnedGraphResolution.lean`, full module | One public namespace, named characteristic-two instance, dependent-ite API updates and removal of unused section assumptions on generic lemmas; equivalence, exact dimension and vertex budgets retained |
+| `PaperC/Combinatorics/LargePrimeOccurrences.lean`, `087f6299d0c811996e2dfad8c7417f2fa052b446` | `PaperP1/Combinatorics/LargePrimeOccurrences.lean`, full module | Imports only P1 two-window labels and the new private-prime uniqueness bridge; no old relational-assignment module is imported; formal copies retained even for overlapping windows |
+| `PaperC/Combinatorics/LargePrimeGraph.lean`, `df0af992c1966fe70befdad84bb0c39f10607e7f` | `PaperP1/Combinatorics/LargePrimeGraph.lean`, full module | Cutoff raised from L+1 to the exact P1 10(L+1); explicit helper and fixed-L arguments preserve the correct occurrence set in all three cardinality calls; ite API updates |
+| `PaperC/Combinatorics/LargePrimeGraphResolution.lean`, `93e1f00df97b64c98f664d6e1866eae9cd312c2e` | `PaperP1/Combinatorics/LargePrimeGraphResolution.lean`, full module | Uses the new cutoff graph and generic pinned resolution; removes the unused LargePrimeComponents import; retains D+c, defective-vertex identification and D+2c≤2(L+1); unused base arguments renamed |
+
 ## Local rigidity provenance
 
 For the finite local-rigidity proof, the single elementary lemma
@@ -179,8 +192,8 @@ For the finite local-rigidity proof, the single elementary lemma
 `899c4303e63e4f631b7aa9a1d8acb96b01792249`, at the reference commit above.
 The target is `PaperP1/Arithmetic/PrivateWindowPrimes.lean`. Its hypotheses and
 conclusion are unchanged; only P1 module/public declarations and the namespace
-are adapted. No graph imports or large-prime exponent-one hypothesis are
-ported. The remaining private-coordinate, residual-code, Griesmer, window-code
+are adapted. That PrivatePivots selection imports no graph or large-prime
+exponent-one hypothesis. The remaining private-coordinate, residual-code, Griesmer, window-code
 and effective-rank bridges are new P1 proofs.
 
 `PaperC/Arithmetic/PrimeNumberTheoremInput.lean`, blob
@@ -216,6 +229,14 @@ imported for these steps.
 Companion T19.1 adds no Paper C port. Its deterministic run separation,
 exact finite-interval packing, affine mass lattice and unordered factorial
 expansion are new P1 proofs using the checked model and affine foundations.
+
+New `LargePrimeComponentArithmetic` proofs identify these graph defects with
+P1's literal odd-prime kernel above 10B, prove the actual critical defect
+bound, prove that nontrivial free components meet both blocks and prove the
+all-or-nothing selection property. Those new P1 proofs are not copied from
+Paper C. All graph ports and bridges passed the full Lean 4.36.0-rc2 build
+and the actual 1,416-declaration kernel audit. T9.3's remaining comparison
+with d_xy is not claimed proved by the ports alone.
 
 ## Further candidates
 

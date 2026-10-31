@@ -219,3 +219,14 @@ mass lattice and unordered-subset factorial expansion are proved internally.
 The existing exact cylinder transfer connects them to the actual infinite
 count and moments, including incompatible systems. No probability, moment
 or arithmetic estimate is assumed. See [alignment](SUPPORT_LATTICE_ALIGNMENT.md).
+
+## Free-component graph foundations — partial T9.3
+
+The pinned-graph resolution and exact large-prime occurrence equations are
+selected, attributed and recompiled Paper C proofs; see the exact commit and
+blob records in [PAPER_C_REUSE.md](PAPER_C_REUSE.md). Their P1 cutoff is 10B.
+The actual defective-count and component-selection bridges are new checked
+P1 proofs. No external graph theorem or arithmetic estimate is assumed.
+The complete-relation/small-prime rank comparison needed for c=d_xy+O(B/log B)
+remains an open formalization obligation, and T9.3 is not counted complete.
+See [partial alignment](FREE_COMPONENT_ALIGNMENT.md).

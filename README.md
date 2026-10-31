@@ -71,6 +71,11 @@ Companion T19.1 is proved for every N≥2 and L≥1: the exact support is
 bounded by `ceil(N/L)`, and every factorial moment belongs to the literal
 `j! * p^j` nonnegative integer lattice, including all irregular windows.
 See [support and lattice alignment](docs/SUPPORT_LATTICE_ALIGNMENT.md).
+Preparatory graph and arithmetic statements for T9.3 are proved with the
+exact cutoff 10(L+1), including component selection and dimension D+c.
+The comparison with the pair intersection dimension remains open, so T9.3
+is not counted complete. See
+[partial free-component alignment](docs/FREE_COMPONENT_ALIGNMENT.md).
 The sharp PNT input is proved by a selected, recompiled and audited analytic
 development, with [separate provenance](docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 

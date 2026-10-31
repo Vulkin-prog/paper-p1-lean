@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1350 audited theorem/lemma declarations**. This
+- The project currently has **1416 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -202,6 +202,15 @@ Neither document is fully formalized.
   supplies j!, proving E(Z_N)_j=j! p^j m with an actual natural m.
   No critical-band, regularity, independence or asymptotic premise is used.
   See [support and lattice alignment](SUPPORT_LATTICE_ALIGNMENT.md).
+- Companion T9.3 is in progress and is not counted complete. Selected Paper C
+  pinned-graph and occurrence modules are recompiled at the exact P1 cutoff
+  10(L+1). The actual large-prime solution space has dimension D+c, with D
+  exactly the sum of the two actual kernel-one vertex counts. Its critical
+  O(B/log B) bound is proved. Every nontrivial free component meets both
+  formal blocks, and every solution is constant there, selecting it entirely
+  or omitting it. The comparison with d_xy still requires the complete even
+  relation space and the finite small-prime/parity rank cost. See
+  [partial statement alignment](FREE_COMPONENT_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
