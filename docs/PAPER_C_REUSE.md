@@ -257,3 +257,14 @@ notices, compare all hypotheses and conclusions to P1, rebuild its transitive
 dependency closure and audit the resulting axioms. Never copy `.olean` files
 across Lean versions. An organizational example or an old registered entry is
 not a certification of this project or of the new arithmetic estimates.
+
+## Bivariate factor height: inspected, not reused
+
+At the T9.4 checkpoint, `PaperC/Algebra/PolynomialHeightOperations.lean`
+was inspected at the same pinned Paper C commit
+`b9fa9ba490f201b408a302a86f1594ee620b228b`, blob
+`cf1b2f63d52164c109bf7be8f7c149475ffab13a`. Its univariate height operations
+do not provide the required bivariate factor estimate. No declarations from
+that module were copied. P1's new proof uses exact partial degrees,
+univariate Mathlib Mahler inequalities, specialization and Parseval.
+See [factor-height alignment](BIVARIATE_FACTOR_HEIGHT_ALIGNMENT.md).

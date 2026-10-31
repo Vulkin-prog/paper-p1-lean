@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Seven mathematical improvements are confirmed; no error in a manuscript conclusion
+**Eight mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -196,6 +196,28 @@ The complete T9.3 consequence of P1-MATH-0006 is validated at
 with a full build and actual 1,435-declaration kernel audit. All 112 distinct
 coverage/finding reference names were also checked by Lean. The original
 T9.2 validation remains in the machine-readable history.
+
+## P1-MATH-0008 — Integer bivariate factors need not be primitive
+
+- Location: companion T9.4, page 41, `p13:rig:factor-height`,
+  `companion_sections/pair_rigidity.tex:251`.
+- Original hypothesis: Q is a primitive integer factor of nonzero P;
+  the integer quotient is also bounded.
+- Improvement: every integer factorization P=Q R suffices. Both factors
+  obey the exact bound by 2^(dX+dY) ||P||₂, followed by the original
+  sqrt((dX+1)(dY+1)) H(P) norm bound. No content correction is needed.
+- Evidence: `BivariateFactorHeight.companion_T9_4_factor_and_quotient`,
+  `companion_T9_4`, and `quotient_height_le_l2`. The proof gives a coefficient
+  bound using the selected factor's own partial degrees before enlarging
+  them to those of the product. It uses proved univariate Mahler bounds,
+  specialization and Parseval, including degree-lowering specializations.
+- Suggested revision: remove the primitive-factor hypothesis and state the
+  conclusion for an arbitrary integer factorization of nonzero P.
+- Impact: no change to the original constants, exponents or downstream
+  conclusions. No error in the original conclusion or proof is claimed.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,651 jobs) and actual
+  1,484-declaration kernel audit; not integrated into a new manuscript.
+  See [complete alignment](BIVARIATE_FACTOR_HEIGHT_ALIGNMENT.md).
 
 Every finding receives a stable identifier `P1-MATH-0001`, etc., and an entry in
 [mathematical-changes.json](mathematical-changes.json). Keep the following fields:

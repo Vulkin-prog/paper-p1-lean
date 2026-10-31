@@ -72,3 +72,4 @@ public import PaperP1.Model.MissingBlockTupleSum
 public import PaperP1.Model.RunCountLattice
 public import PaperP1.Combinatorics.LargePrimeComponentArithmetic
 public import PaperP1.Model.FreeComponentRank
+public import PaperP1.Algebra.BivariateFactorHeight

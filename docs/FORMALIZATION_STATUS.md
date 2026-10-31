@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 31 O
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **16 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T19.1, T22.2.
+- Numbered results completed: **17 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1435 audited theorem/lemma declarations**. This
+- The project currently has **1484 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -214,13 +214,21 @@ Neither document is fully formalized.
   and is selected entirely or omitted. No admissibility or separation is
   required, and overlapping physical windows remain separate formal copies.
   See [complete statement alignment](FREE_COMPONENT_ALIGNMENT.md).
+- Companion T9.4 is complete. The exact bound for both factors in a nonzero
+  integer bivariate product is 2^(dX+dY) times its actual coefficient ℓ²
+  norm, bounded further by the source's exact rectangle constant times H(P).
+  Univariate Mahler bounds, specialization and Parseval prove the estimate
+  without assuming a multivariate measure theorem. Degree-lowering
+  specializations are included. Primitivity of the factor is unnecessary.
+  See [factor-height alignment](BIVARIATE_FACTOR_HEIGHT_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
   hypotheses for all three parts of T1.3; `P1-MATH-0004`, a lower base bound
   alone and uniform shorter windows for local rigidity; `P1-MATH-0005`, a stronger
   local-square threshold; `P1-MATH-0006`, absolute critical-defect and free-component constants; `P1-MATH-0007`, the heterogeneous
-  missing-block and tuple estimates.
+  missing-block and tuple estimates; `P1-MATH-0008`, integer factor height
+  without a primitive-factor hypothesis.
   No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.

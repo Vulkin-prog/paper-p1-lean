@@ -1951,11 +1951,24 @@
       "source": "companion_sections/pair_rigidity.tex",
       "line": 251,
       "sha256": "4454c486e367672e512f8bdb1d051c4d473a179b07f22204fc4047cf7517576c",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.BivariateFactorHeight.companion_T9_4_factor_and_quotient",
+        "PaperP1.BivariateFactorHeight.companion_T9_4",
+        "PaperP1.BivariateFactorHeight.quotient_height_le_l2",
+        "PaperP1.BivariateFactorHeight.factor_height_le_l2",
+        "PaperP1.BivariateFactorHeight.factor_coefficient_le_own_degrees",
+        "PaperP1.BivariateSpecialization.factor_outer_coefficient_l2_bound",
+        "PaperP1.BivariateHeight.bivariate_l2_le_height",
+        "PaperP1.BivariateDegrees.factor_partial_degrees_le"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-BIVARIATE-HEIGHT"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0008"
+      ],
+      "notes": "Full T9.4 for the literal nonzero P and integer factorization P=Q*R. Both factor and quotient obey H≤2^(dX+dY)||P||₂ and the exact sqrt((dX+1)(dY+1)) rectangle-height bound. The height, coefficient norm and partial degrees are explicit finite-support definitions, with swap proved on coefficients. Specialization, the proved univariate Mahler bounds and Parseval give the exact constant even at degree-lowering specializations. No primitive-factor hypothesis is required (P1-MATH-0008), and no multivariate Mahler result or final bound is assumed. See BIVARIATE_FACTOR_HEIGHT_ALIGNMENT.md."
     },
     {
       "label": "p13:rig:two-witnesses",

@@ -260,6 +260,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "ec54490500649dfe3fb3ff73c1abfbd29ad555e4"
+    },
+    {
+      "id": "P1-MATH-0008",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:rig:factor-height",
+        "number": "T9.4",
+        "page": 41,
+        "source": "companion_sections/pair_rigidity.tex",
+        "line": 251,
+        "statement_sha256": "4454c486e367672e512f8bdb1d051c4d473a179b07f22204fc4047cf7517576c"
+      },
+      "original_assumption": "Companion T9.4 selects a primitive integer factor Q of a nonzero bivariate integer polynomial P, and also bounds its integer quotient.",
+      "finding": "Primitivity of Q is unnecessary. Every integer factorization P=Q*R with P nonzero gives the same exact bounds for both factors, with constant 2^(dX+dY) and the same sqrt((dX+1)(dY+1)) coefficient rectangle factor.",
+      "evidence": [
+        "PaperP1.BivariateFactorHeight.companion_T9_4_factor_and_quotient",
+        "PaperP1.BivariateFactorHeight.companion_T9_4",
+        "PaperP1.BivariateFactorHeight.quotient_height_le_l2",
+        "PaperP1.BivariateFactorHeight.factor_coefficient_le_own_degrees",
+        "PaperP1.BivariateSpecialization.factor_outer_coefficient_l2_bound",
+        "PaperP1.BivariateHeight.bivariate_l2_le_height"
+      ],
+      "proposed_revision": "For every nonzero P in Z[X,Y] and every integer factorization P=Q R, both H(Q) and H(R) are at most 2^(dX+dY)||P||₂, which is at most 2^(dX+dY)sqrt((dX+1)(dY+1))H(P). Remove the primitive adjective; no separate content adjustment is needed.",
+      "impact": "Weakens a hypothesis without changing the original constants or partial-degree dependence. The proof uses univariate Mahler bounds and Parseval and includes degree-lowering specializations. The original primitive-factor conclusion is retained. No error in the manuscript conclusion or its multivariate proof is asserted.",
+      "validation": "Full Lean v4.36.0-rc2 build (8651 jobs) and actual kernel axiom audit for all 1484 declarations; only propext, Classical.choice and Quot.sound. Exact implementation commit to be recorded immediately after this validated change is committed.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

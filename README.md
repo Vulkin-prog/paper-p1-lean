@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 16 / 167 numbered results proved.**
+**Status: active formalization, 17 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The principal Poisson asymptotic theorems remain open.
@@ -76,6 +76,9 @@ O(B/log B) of the pair intersection dimension, with exact cutoff 10B and
 B=L+1. Complete relations and the small-prime/parity rank cost are proved;
 overlapping windows, component selection and both-block membership are included.
 See [free-component alignment](docs/FREE_COMPONENT_ALIGNMENT.md).
+Companion T9.4 is proved with the exact bivariate factor-height constant,
+including the integer quotient. The primitive-factor hypothesis is unnecessary.
+See [factor-height alignment](docs/BIVARIATE_FACTOR_HEIGHT_ALIGNMENT.md).
 The sharp PNT input is proved by a selected, recompiled and audited analytic
 development, with [separate provenance](docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 

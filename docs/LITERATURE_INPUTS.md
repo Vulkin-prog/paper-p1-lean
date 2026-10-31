@@ -20,6 +20,30 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Proved exact bivariate factor height
+
+Stable ID: `P1-ARITH-BIVARIATE-HEIGHT`. Status: **proved**.
+
+- Target: companion T9.4, page 41, `p13:rig:factor-height`.
+- Every nonzero integer product P=Q R satisfies the exact source bounds for
+  both H(Q) and H(R); primitivity is unnecessary (`P1-MATH-0008`).
+- Lean: `BivariateFactorHeight.companion_T9_4_factor_and_quotient`.
+- Mathlib inputs at commit `9d581dfff2e41de989072ea63abf3daf69311520`:
+  `Polynomial.norm_coeff_le_choose_mul_mahlerMeasure`,
+  `Polynomial.leadingCoeff_le_mahlerMeasure`, `Polynomial.mahlerMeasure_mul`,
+  and `Polynomial.mahlerMeasure_le_sqrt_sum_sq_norm_coeff`, in
+  `Analysis/Polynomial/MahlerMeasure.lean`; the exact Parseval identity
+  `Polynomial.sum_sq_norm_coeff_eq_circleAverage` in
+  `Analysis/Polynomial/Fourier.lean`; the circle-average integration rules.
+  All are actual proved library results, not ordinary theorem premises.
+- The elementary integer-leading-coefficient proof of Mahler measure at
+  least one is given locally. It is the same standard argument behind
+  Mathlib's `Polynomial.one_le_mahlerMeasure_of_ne_zero`, without importing
+  the latter file's additional cyclotomic and number-field dependencies.
+- Partial degrees, coefficient height, finite support and both integer
+  factors are handled explicitly. No multivariate Mahler or Jensen theorem
+  is assumed. See [complete alignment](BIVARIATE_FACTOR_HEIGHT_ALIGNMENT.md).
+
 ## Proved split-product bound
 
 Stable ID: `P1-ARITH-SPLIT`. Status: **proved**.
