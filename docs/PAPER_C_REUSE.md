@@ -29,6 +29,9 @@ compiled artifacts were copied.
 | `PaperC/Model/InfiniteRademacher.lean`, `24341f93a3b6b509bf542919b3a1cd38c6db54f6` | `PaperP1/Model/InfiniteRademacher.lean`, full infinite prime-sign construction and no-constant-tail proof | Module/public declarations and namespaces; obsolete PMF uniform law replaced with `Measure.uniformOfFinset univ`, its normalization and singleton law checked directly; renamed set lemmas; probability instance exported |
 | `PaperC/Probability/InfiniteCylinderTransfer.lean`, `8347a9daff87f8ae8964764fb41aa6c7d3080247` | `PaperP1/Probability/InfiniteCylinderTransfer.lean`, full restriction/value/product-measure bridge | Module/public declarations and namespaces; exact prime enumeration and cutoff conventions retained |
 | `PaperC/Probability/InfiniteStartProbabilityTransfer.lean`, `54691ea29aa646390423c179c18695ceb03c45da` | Start/count restriction proof patterns in `PaperP1/Model/InfiniteStarts.lean` | P1 Boolean indicators, actual real finite weights and full measure-valued count law; no old asymptotic imports; Bochner centered-moment transport added |
+| `PaperC/Affine/TwoStartSystem.lean`, `94e01496f72b742b4f85e6c2630de078e3cddb41` | One-start complete-boundary section in `PaperP1/Affine/StartBoundary.lean` | Extracted from two-start material; public helper for auditing; unused simp arguments removed; module declarations, namespaces and ring tactic updated |
+| `PaperC/Affine/StartBoundaryRange.lean`, `6ea852e5f1071357beae725b34510dc8ec69e357` | `PaperP1/Affine/StartBoundaryRange.lean`, full even-boundary range and equivalence | One-start dependency; module declarations, namespaces and redundant simp arguments updated |
+| `PaperC/Affine/RelationBoundaryIff.lean`, `28382a2759144a100cd851af5a8f576cd91de5d8` | Two one-start incidence/sum helpers in `PaperP1/Affine/StartCharacterSpace.lean` | Helpers public and renamed, module declarations and namespaces updated; remaining square-class/character equivalence is new |
 
 All ported statements recompile with warnings as errors and are included in the
 generated kernel-axiom audit. This port does not import the old arithmetic
@@ -36,8 +39,9 @@ estimates or any literature assumptions. The unrestricted infinite prime-sign
 measure is constructed, and the finite-cylinder consistency is now proved.
 
 The generic affine Fourier identity is a checked precursor to P1's full-support
-centered formula. The latter still requires effective local spaces and their
-affine prescriptions; it is not marked complete by this port. Upstream lemma
+centered formula. The latter is now complete using additional proofs of the
+effective-space identification and actual infinite-measure transport. The
+ported generic identity alone does not establish P1 coverage. Upstream lemma
 numbers in the ported docstrings refer to Paper C.
 
 `Affine/RealProbability.lean` now connects cardinality ratios to the actual
@@ -51,13 +55,21 @@ arbitrary effective dual subspaces, using evaluations at a local solution.
 full-support identity, dimension deficit, sharper bound and relation existence
 on those effective spaces. `Model/StartFourier.lean` identifies the actual run
 events with effective affine row spaces and applies these results to their
-actual centered moments, including finite-set reindexing. Identification with
-the manuscript's square-class images is still open. The new
+actual centered moments, including finite-set reindexing. The new
 `Probability/CylinderExpectations.lean` identifies finite product-measure
 weights with P1's actual real weights and transports all finite-cylinder
 expectations. `Model/InfiniteStarts.lean` and `InfiniteStartFourier.lean`
 transport actual marginals, centered moments, the full count law and the
 full-support formula to the infinite prime-sign probability measure.
+
+`Arithmetic/EvenSquareClasses.lean`, `Model/ParityCharacters.lean` and the new
+parts of `Affine/StartCharacterSpace.lean` construct the image of even window
+selections, prove its exact rational-square criterion, and identify it with
+actual row characters. `SquareClassRelations.lean` transports the entire
+relative-relation kernel, preserving its dimension. `SquareClassFourier.lean`
+reindexes the full-support formula and proves every conclusion of P1 Lemma 4.2
+on these spaces under the actual infinite measure. See
+[statement alignment](FOURIER_ALIGNMENT.md).
 
 ## Further candidates
 

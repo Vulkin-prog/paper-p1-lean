@@ -31,3 +31,11 @@ public import PaperP1.Probability.InfiniteCylinderTransfer
 public import PaperP1.Probability.CylinderExpectations
 public import PaperP1.Model.InfiniteStarts
 public import PaperP1.Model.InfiniteStartFourier
+public import PaperP1.Affine.Relations
+public import PaperP1.Affine.StartBoundary
+public import PaperP1.Affine.StartBoundaryRange
+public import PaperP1.Arithmetic.EvenSquareClasses
+public import PaperP1.Model.ParityCharacters
+public import PaperP1.Affine.StartCharacterSpace
+public import PaperP1.Model.SquareClassRelations
+public import PaperP1.Model.SquareClassFourier

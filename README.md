@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 3 / 167 numbered results proved.**
+**Status: active formalization, 4 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The asymptotic theorems remain open.
@@ -20,8 +20,10 @@ cases and inverse powers of two at the effective rank otherwise. The
 full-support centered Fourier formula and its sharper nullity bound are proved
 on effective dual spaces and instantiated for actual run moments. Exact
 finite-cylinder consistency is proved for the infinite prime-sign measure,
-including its full count law and centered moments. Square-class-image
-identification remains open, so Lemma 4.2 is still in progress.
+including its full count law and centered moments. Effective square-class
+images and their relative relation kernels are identified with the actual
+character spaces, completing Lemma 4.2. Its
+[alignment note](docs/FOURIER_ALIGNMENT.md) records the representation and scope.
 
 | Material | Location |
 |---|---|

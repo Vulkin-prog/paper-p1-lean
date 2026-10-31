@@ -2,6 +2,7 @@ module
 
 public import PaperP1.Affine.Characters
 public import PaperP1.Affine.RealProbability
+public import PaperP1.Affine.Relations
 public import Mathlib.LinearAlgebra.Dimension.Constructions
 
 /-!
@@ -77,24 +78,8 @@ theorem realCharacter_sum (f : ι → V →ₗ[𝔽₂] 𝔽₂) (v : V) :
 
 variable (S : ι → Submodule 𝔽₂ (V →ₗ[𝔽₂] 𝔽₂)) [∀ i, Fintype (S i)]
 
-/-- Addition of the actual effective characters, one from each block. -/
-def relationAddition : ((i : ι) → S i) →ₗ[𝔽₂] (V →ₗ[𝔽₂] 𝔽₂) where
-  toFun := fun s => ∑ i, (s i).val
-  map_add' := by intros; simp [Finset.sum_add_distrib]
-  map_smul' := by intros; simp [Finset.smul_sum]
-
-omit [DecidableEq ι] [∀ i, Fintype (S i)] in
-@[simp]
-theorem relationAddition_apply (s : (i : ι) → S i) :
-    relationAddition S s = ∑ i, (s i).val := rfl
-
 def affineTupleSign (a : ι → V) (s : (i : ι) → S i) : ℝ :=
   ∏ i, realCharacter (s i).val (a i)
-
-def HasFullSupport (s : (i : ι) → S i) : Prop := ∀ i, s i ≠ 0
-
-def IsFullSupportRelation (s : (i : ι) → S i) : Prop :=
-  HasFullSupport S s ∧ relationAddition S s = 0
 
 omit [∀ i, Fintype (S i)] in
 theorem effective_block_product (a : ι → V) (s : (i : ι) → S i) (v : V) :

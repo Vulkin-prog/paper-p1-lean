@@ -177,25 +177,22 @@
       "source": "main_sections/affine_algebra.tex",
       "line": 60,
       "sha256": "1357e7556eb0994ea9a2b3a23a308dc627fac610d0f5718317f46bf85cebfde1",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
-        "PaperP1.Affine.effective_full_support_formula",
+        "PaperP1.Model.InfiniteStarts.dyadic_squareClass_fourier",
+        "PaperP1.Model.InfiniteStarts.squareClass_full_support_formula",
+        "PaperP1.Model.InfiniteStarts.squareClass_centered_moment_bound",
+        "PaperP1.Model.InfiniteStarts.squareClass_centered_moment_coarse_bound",
+        "PaperP1.Model.InfiniteStarts.squareClass_full_relation_of_ne_zero",
+        "PaperP1.Model.InfiniteStarts.infiniteCenteredCoefficient_subtype",
         "PaperP1.Affine.relativeNullity_eq_dimension_deficit",
-        "PaperP1.Affine.effectiveCenteredMoment_bound",
-        "PaperP1.Affine.effectiveCenteredMoment_coarse_bound",
-        "PaperP1.Affine.fullSupportRelation_of_centeredMoment_ne_zero",
-        "PaperP1.Model.start_full_support_formula",
-        "PaperP1.Model.start_centered_moment_bound",
-        "PaperP1.Model.start_full_support_relation_of_ne_zero",
-        "PaperP1.Model.dyadicCenteredMoment_eq_startFamily",
-        "PaperP1.Model.InfiniteStarts.infinite_start_full_support_formula",
-        "PaperP1.Model.InfiniteStarts.infinite_start_centered_moment_bound",
-        "PaperP1.Model.InfiniteStarts.infinite_start_centered_moment_coarse_bound",
-        "PaperP1.Model.InfiniteStarts.infinite_start_full_support_relation_of_ne_zero"
+        "PaperP1.Arithmetic.vertexParityMap_zero_iff_rational_square",
+        "PaperP1.Affine.squareClassEquivRow",
+        "PaperP1.Model.squareClassRelationEquivRow"
       ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": "The full-support centered identity, sharper 2^rho - 1 bound, coarse bound and relation-existence implication are proved on effective dual subspaces. Rank-nullity identifies rho with the dimension deficit. Actual finite-cylinder run events are identified with effective affine row spaces; actual heterogeneous marginals and finite-set reindexing are retained. Exact finite-cylinder consistency and expectation transport now give the same formula, bounds and existence implication under the infinite prime-sign measure. Identification of these effective row spaces with the manuscript square-class images remains open, so the numbered result is not marked complete."
+      "notes": "Complete identity, sharper 2^rho - 1 bound, coarse bound and relation-existence implication under the actual infinite prime-sign measure. Effective spaces are images of even window selections in prime-exponent parity space; their kernel is proved to detect exactly rational square products on positive vertices. Explicit linear equivalences identify local character spaces and preserve the entire relative-relation kernel and dimension deficit. Admissibility is positivity of actual heterogeneous marginals, supplying consistent affine witnesses. The dyadic theorem proves cutoff adequacy, and finite-subtype reindexing identifies the exact source coefficient. See docs/FOURIER_ALIGNMENT.md. No local rigidity, arithmetic bound, independence between blocks or unproved literature premise is used."
     },
     {
       "label": "p1:alg:compatible",

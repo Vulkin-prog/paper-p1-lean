@@ -1,10 +1,10 @@
 # Formalization status
 
-Stage: **finite identities on general probability spaces**, 31 October 2026.
+Stage: **exact affine and probability-law identities**, 31 October 2026.
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **3 / 167**: article Propositions 4.1, 5.2 and Lemma 5.1.
+- Numbered results completed: **4 / 167**: article Propositions 4.1, 5.2 and Lemmas 4.2, 5.1.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **296 audited theorem/lemma declarations**. This
+- The project currently has **361 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -40,9 +40,14 @@ Neither document is fully formalized.
   dual subspaces and instantiated for actual finite-cylinder run moments.
   The relative nullity is identified with the dimension deficit in the paper.
   These formulas and bounds are also transported to the actual infinite
-  prime-sign measure. Square-class-image identification remains open, so
-  article Lemma 4.2 remains in progress. No P1 compatible-nullity or
-  asymptotic estimate is claimed proved.
+  prime-sign measure. Effective square-class images are now identified with
+  the row character spaces by explicit linear equivalences. Relative relation
+  kernels and their nullities are preserved. Article Lemma 4.2 is complete;
+  `dyadic_squareClass_fourier` supplies the aligned conclusion for every
+  nonempty admissible subfamily of the dyadic block. The
+  [alignment note](FOURIER_ALIGNMENT.md) explains the rational-square
+  representation and hypotheses. No P1 compatible-nullity or asymptotic
+  estimate is claimed proved.
 - Paper C code ported: parity vectors and selected finite prime-cylinder
   definitions/proofs, with exact source identities recorded in the reuse ledger.
   Complete multiplicativity, the signed run-start interpretation, cutoff
@@ -67,7 +72,11 @@ Neither document is fully formalized.
   of that space. Local signs are evaluations at a solution and proved
   independent of the chosen solution. Run events are identified with the
   image of their actual row transpose, so local row relations are quotiented
-  before taking centered products. Square-class identification remains open.
+  before taking centered products. The complete boundary map is proved to
+  parametrize exactly the even selections of the window. Their prime-exponent
+  parity image detects precisely rational square relations among positive
+  vertices, and its injection into actual cylinder characters is proved.
+  Local and relative dimensions therefore retain every local relation once.
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1. No error in the original conclusion is asserted.
 - Palomar registrations: none; preparation only.

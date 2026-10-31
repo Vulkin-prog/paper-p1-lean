@@ -25,7 +25,7 @@ local instance : Fact (Nat.Prime 2) := Fact.mk Nat.prime_two
 
 variable {ι : Type*} [Fintype ι] [DecidableEq ι]
 
-def startFamilySpace (M L : ℕ) (g : ι → ℕ) (i : ι) :
+abbrev startFamilySpace (M L : ℕ) (g : ι → ℕ) (i : ι) :
     Submodule 𝔽₂ (SampleSpace M →ₗ[𝔽₂] 𝔽₂) :=
   effectiveRowSpace (startSystem M (g i) L)
 

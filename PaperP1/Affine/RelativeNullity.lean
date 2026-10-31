@@ -19,9 +19,9 @@ namespace PaperP1.Affine
 local instance (P : Prop) : Decidable P := Classical.propDecidable P
 local instance : Fact (Nat.Prime 2) := Fact.mk Nat.prime_two
 
-variable {V ι : Type*} [AddCommGroup V] [Module 𝔽₂ V]
+variable {U ι : Type*} [AddCommGroup U] [Module 𝔽₂ U]
 variable [Fintype ι] [DecidableEq ι]
-variable (S : ι → Submodule 𝔽₂ (V →ₗ[𝔽₂] 𝔽₂)) [∀ i, Fintype (S i)]
+variable (S : ι → Submodule 𝔽₂ U) [∀ i, Fintype (S i)]
 
 def relativeNullity : ℕ := Module.finrank 𝔽₂ (LinearMap.ker (relationAddition S))
 
@@ -44,10 +44,10 @@ theorem range_relationAddition : LinearMap.range (relationAddition S) = ⨆ i, S
 omit [DecidableEq ι] in
 theorem relativeNullity_eq_dimension_deficit :
     relativeNullity S = (∑ i, Module.finrank 𝔽₂ (S i)) -
-      Module.finrank 𝔽₂ (⨆ i, S i : Submodule 𝔽₂ (V →ₗ[𝔽₂] 𝔽₂)) := by
+      Module.finrank 𝔽₂ (⨆ i, S i : Submodule 𝔽₂ U) := by
   let : ∀ i, Module.Free 𝔽₂ (S i) := fun i => Module.Free.of_divisionRing 𝔽₂ (S i)
   have h := LinearMap.finrank_range_add_finrank_ker
-    (K := 𝔽₂) (V := (i : ι) → S i) (V₂ := V →ₗ[𝔽₂] 𝔽₂) (relationAddition S)
+    (K := 𝔽₂) (V := (i : ι) → S i) (V₂ := U) (relationAddition S)
   rw [range_relationAddition, Module.finrank_pi_fintype] at h
   exact Nat.eq_sub_of_add_eq (by simpa [relativeNullity, add_comm] using h)
 
