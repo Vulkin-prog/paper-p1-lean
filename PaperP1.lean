@@ -7,3 +7,6 @@ public import PaperP1.Probability.FiniteLaw
 public import PaperP1.Probability.Convolution
 public import PaperP1.Arithmetic.ParityVector
 public import PaperP1.Model.FiniteRademacher
+public import PaperP1.Probability.MeasureFiniteLaw
+public import PaperP1.Probability.CenteredMeasureExpansion
+public import PaperP1.Probability.AdmissibleIndices

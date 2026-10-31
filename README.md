@@ -4,14 +4,14 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 1 / 167 numbered results proved.**
+**Status: active formalization, 2 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The asymptotic theorems remain open.
-The full centered Bernoulli identity is also proved for arbitrary finite
-probability spaces, including exact marginal centering and probability status
-of the deterministic references. Its connection to the multiplicative model
-is still in progress and is not counted as completed manuscript coverage.
+Article Proposition 4.1 is proved on an arbitrary probability space with a
+finite measurable indicator family. The actual count law is identified as a
+measure; coefficients are Bochner expectations; zero-marginal sites are removed
+without changing the law; complementary Bernoulli products are probabilities.
 
 | Material | Location |
 |---|---|
@@ -34,7 +34,7 @@ whose toolchain matches. The dependency lock file records all transitive revisio
 ```sh
 python3 scripts/check_disk.py
 MATHLIB_NO_CACHE_ON_UPDATE=1 lake update
-lake exe cache get Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Algebra.BigOperators.Group.Finset.Powerset Mathlib.Algebra.BigOperators.Group.Finset.Sigma Mathlib.Tactic.Ring.Basic Mathlib.Algebra.MonoidAlgebra.Lift Mathlib.Basic.Real.Basic Mathlib.Algebra.Order.BigOperators.Group.Finset Mathlib.Data.Nat.Factorization.Defs Mathlib.Data.ZMod.Basic Mathlib.LinearAlgebra.Pi Mathlib.Data.Finset.Interval
+python3 scripts/cache_dependencies.py
 python3 scripts/check_disk.py
 python3 scripts/check_sources.py
 python3 scripts/update_audit.py --check
@@ -44,7 +44,7 @@ lake env lean Audit.lean
 
 Use the committed lock file for ordinary builds; `lake update` is needed when
 initially resolving or intentionally updating dependencies. Cache downloads are
-restricted to the listed imports and their transitive dependencies. Set
+restricted to the project's actual imports and their transitive dependencies. Set
 `XDG_CACHE_HOME`, `MATHLIB_CACHE_DIR` and `TMPDIR` to local Ubuntu directories if
 their defaults point elsewhere. Available-space warnings start at 10 GiB; large
 downloads must stop below 5 GiB. See [environment policy](docs/ENVIRONMENT.md).

@@ -1,23 +1,27 @@
 # Formalization status
 
-Stage: **finite algebraic identities**, 31 October 2026. Neither document is fully formalized.
+Stage: **finite identities on general probability spaces**, 31 October 2026.
+Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **1 / 167**: article Lemma 5.1, the full
+- Numbered results completed: **2 / 167**: article Proposition 4.1 and Lemma 5.1.
+  Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
   to lie strictly after that maximum. The scalar parameter and empty products
   are included. The theorem holds over any commutative semiring.
-- Article Proposition 4.1: **in progress**. Its complete finite-probability
-  identity is proved for the actual count pushforward, with arbitrary dependence,
-  exact heterogeneous marginals, unit empty coefficient, vanishing singleton
-  coefficients and probability status of every complementary Bernoulli product.
-  Connecting the multiplicative prime-cylinder model to the manuscript law
-  remains an explicit obligation, so the numbered result is not marked proved.
+- Article Proposition 4.1 is proved on an arbitrary probability space for a
+  finite measurable Boolean family. `observedCountLaw_realizes` identifies the
+  full measure-theoretic count law; `centered_bernoulli_expansion` proves the
+  identity over the admissible set of positive exact Bochner marginals, the
+  unit empty coefficient, vanishing singleton terms and probability status of
+  the complementary references. The carrier may be the finite subtype of the
+  paper's index set; `indicatorCount_subtype` proves the count reindexing.
+  No independence or model-specific arithmetic premise is used.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **89 audited theorem/lemma declarations**. This
+- The project currently has **113 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   No Fourier, compatible-nullity or asymptotic estimate is claimed proved.
 - Paper C code ported: parity vectors and selected finite prime-cylinder

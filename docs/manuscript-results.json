@@ -156,14 +156,16 @@
       "source": "main_sections/affine_algebra.tex",
       "line": 26,
       "sha256": "83cae9b79ede35a5fd2cf646a141266c4e697ab953c370cce0922d954f58e2a9",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
-        "PaperP1.Probability.finite_centered_bernoulli_expansion",
-        "PaperP1.Algebra.centeredMoment_eq_centeredCoefficient"
+        "PaperP1.Probability.centered_bernoulli_expansion",
+        "PaperP1.Probability.observedCountLaw_realizes",
+        "PaperP1.Probability.observedCountLaw_restrict_admissible",
+        "PaperP1.Probability.indicatorCount_subtype"
       ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": "Complete finite-probability identity, exact means, empty/singleton coefficients and probability status of complementary Bernoulli convolution products are proved. The multiplicative prime-cylinder model and its identification with the manuscript law remain to be connected."
+      "notes": "Complete identity on an arbitrary probability space for any finite measurable Boolean family. The finite convolution representation is proved equal to the actual measure-theoretic count law; coefficients and marginals are Bochner expectations. The expansion is over all sites of positive exact marginal, with zero-marginal deletion justified. Empty/singleton coefficients and probability status of every complementary Bernoulli product are proved. A finite carrier represents the paper's finite index set, with count reindexing checked. No independence or arithmetic premise."
     },
     {
       "label": "p1:alg:fourier",

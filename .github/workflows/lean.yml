@@ -27,7 +27,7 @@ jobs:
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
       - name: Download only the required Mathlib cache
         run: |
-          lake exe cache get Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Algebra.BigOperators.Group.Finset.Powerset Mathlib.Algebra.BigOperators.Group.Finset.Sigma Mathlib.Tactic.Ring.Basic Mathlib.Algebra.MonoidAlgebra.Lift Mathlib.Basic.Real.Basic Mathlib.Algebra.Order.BigOperators.Group.Finset Mathlib.Data.Nat.Factorization.Defs Mathlib.Data.ZMod.Basic Mathlib.LinearAlgebra.Pi Mathlib.Data.Finset.Interval
+          python3 scripts/cache_dependencies.py
           python3 scripts/check_disk.py
       - name: Build with warnings as errors
         run: lake build

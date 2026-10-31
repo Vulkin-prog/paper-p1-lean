@@ -4,6 +4,7 @@ public import PaperP1.Algebra.FiniteExpectation
 public import Mathlib.Algebra.MonoidAlgebra.Defs
 public import Mathlib.Basic.Real.Basic
 public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Mathlib.Data.Fintype.Sets
 
 /-!
 # Exact finite count laws
@@ -81,6 +82,15 @@ theorem indicatorCount_le_card (G : Finset ι) (J : ι → Ω → Bool) (ω : Ω
       intro x _
       cases J x ω <;> decide
     _ = G.card := by simp
+
+omit [Fintype Ω] in
+/-- Reindex a finite set by its finite subtype, preserving the actual count. -/
+theorem indicatorCount_subtype (G : Finset ι) (J : ι → Ω → Bool) (ω : Ω) :
+    indicatorCount (Finset.univ : Finset G) (fun x : G => J x.1) ω = indicatorCount G J ω := by
+  classical
+  unfold indicatorCount
+  rw [Finset.univ_eq_attach]
+  exact Finset.sum_attach G (fun x => (J x ω).toNat)
 
 /-- Coefficients are the actual weighted probabilities of each count event. -/
 theorem countLaw_coeff (G : Finset ι) (w : Ω → R) (J : ι → Ω → Bool) (k : ℕ) :

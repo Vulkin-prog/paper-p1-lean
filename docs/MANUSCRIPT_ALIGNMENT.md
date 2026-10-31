@@ -12,7 +12,7 @@ a blank declaration field nor a preparatory algebraic lemma establishes coverage
 Coverage includes the exact declarations listed below. Preparatory lemmas are
 recorded in the project status without counting as complete numbered results.
 
-## Main article: 1 / 73 proved
+## Main article: 2 / 73 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -25,7 +25,7 @@ recorded in the project status without counting as complete numbered results.
 | 3.3 (p. 16) | [p1:arith:pairs](../manuscripts/paper-p1/v1.6/sources/main_sections/arithmetic.tex#L162) | Complete pair profile | not_started | — |
 | 3.4 (p. 16) | [p1:arith:edgefamily](../manuscripts/paper-p1/v1.6/sources/main_sections/arithmetic.tex#L211) | The pair input for the expansion | not_started | — |
 | 3.5 (p. 16) | [p1:arith:compression](../manuscripts/paper-p1/v1.6/sources/main_sections/arithmetic.tex#L230) | Exact compression of a good edge | not_started | — |
-| 4.1 (p. 17) | [p1:alg:centred](../manuscripts/paper-p1/v1.6/sources/main_sections/affine_algebra.tex#L26) | Centered Bernoulli expansion | in_progress | `PaperP1.Probability.finite_centered_bernoulli_expansion`, `PaperP1.Algebra.centeredMoment_eq_centeredCoefficient` |
+| 4.1 (p. 17) | [p1:alg:centred](../manuscripts/paper-p1/v1.6/sources/main_sections/affine_algebra.tex#L26) | Centered Bernoulli expansion | proved | `PaperP1.Probability.centered_bernoulli_expansion`, `PaperP1.Probability.observedCountLaw_realizes`, `PaperP1.Probability.observedCountLaw_restrict_admissible`, `PaperP1.Probability.indicatorCount_subtype` |
 | 4.2 (p. 18) | [p1:alg:fourier](../manuscripts/paper-p1/v1.6/sources/main_sections/affine_algebra.tex#L60) | Full-support Fourier formula | not_started | — |
 | 4.3 (p. 18) | [p1:alg:compatible](../manuscripts/paper-p1/v1.6/sources/main_sections/affine_algebra.tex#L101) | Compatible-nullity majorant | not_started | — |
 | 4.4 (p. 18) | [p1:alg:components](../manuscripts/paper-p1/v1.6/sources/main_sections/affine_algebra.tex#L134) | Existence, uniqueness, and factorization | not_started | — |
