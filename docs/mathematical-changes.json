@@ -136,11 +136,12 @@
       ],
       "proposed_revision": "Fix a>0 and state local rigidity uniformly for U>=aN. For each fixed t and 0<c<2-2^(1-t), the relation rank is less than t uniformly for all positive B<=c log N. The finite Griesmer bound is uniform in every t after N, whereas t remains fixed before the asymptotic rank threshold.",
       "impact": "Strengthens the local-rigidity domain to arbitrarily large bases and every shorter logarithmic window. The constant 64, critical coefficient 1/log 2, sharp rank thresholds and error exponents are unchanged. Actual infinite-model critical-band marginals remain p or 2p and satisfy the proved pointwise (2*2^C)/N bound.",
-      "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 1223 declarations; only propext, Classical.choice and Quot.sound. The exact implementation commit is recorded after the proof commit is created.",
+      "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 1223 declarations at the recorded implementation commit; only propext, Classical.choice and Quot.sound. Every new recorded theorem and evidence declaration is directly included in the actual audit.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "deaa74d96763db33f7d8932053eb4bc308d3db4c"
     }
   ]
 }

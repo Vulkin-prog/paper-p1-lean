@@ -108,6 +108,8 @@ Absence of an entry does not mean the argument has been verified.
 - Status: confirmed by full Lean 4.36.0-rc2 compilation and the actual
   1,223-declaration kernel-axiom audit; not yet integrated into a new paper
   version. See [local rigidity alignment](LOCAL_RIGIDITY_ALIGNMENT.md).
+  Exact proof commit:
+  [deaa74d96763db33f7d8932053eb4bc308d3db4c](https://github.com/Vulkin-prog/paper-p1-lean/commit/deaa74d96763db33f7d8932053eb4bc308d3db4c).
 
 Every finding receives a stable identifier `P1-MATH-0001`, etc., and an entry in
 [mathematical-changes.json](mathematical-changes.json). Keep the following fields:
