@@ -102,7 +102,8 @@ unused simp arguments are updated; a variable-headed simp attribute on the
 representation identity is removed. Public helpers participate in the audit.
 P1's new large-odd-kernel dictionary and actual local set complete the finite
 statement comparison in [DEFECT_COUNTS_ALIGNMENT.md](DEFECT_COUNTS_ALIGNMENT.md).
-No old asymptotic defect bound is imported, and T1.3 remains in progress.
+No old asymptotic defect bound is imported. Additional new P1 proofs now
+complete T1.3, including uniform parameter budgets and affine interval changes.
 
 Additional elementary estimates for the T1.3 local/global rates:
 
@@ -123,7 +124,10 @@ pattern in `PaperCV282/LogarithmicWordPowers.lean`, blob
 the already recorded `IntervalDefectBound.lean` and introduces P1's direct
 radius. `Arithmetic/GlobalDefectCount.lean` proves equality with the actual
 intrinsic defective set and the uniform real-exponent global bound. The full
-T1.3 statement is still in progress.
+T1.3 statement is now complete. The new P1 modules prove the uniform prime
+budget, convert to the literal B/log B scale, handle positive integer points
+in real affine intervals and preserve the affine vertex boundary. No further
+Paper C source file is copied for that completion.
 
 All ported statements recompile with warnings as errors and are included in the
 generated kernel-axiom audit. The old final Runge bound

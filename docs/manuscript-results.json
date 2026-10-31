@@ -1268,20 +1268,18 @@
       "source": "companion_sections/arithmetic_appendix.tex",
       "line": 90,
       "sha256": "c641ad80bb970cb82ad3b2c2b72718859d865ab7c7dc9f907e2843b9f3a49220",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
-        "PaperP1.LocalDefectBound.card_defectsInInterval_lt_of_log",
-        "PaperP1.LargeOddKernel.largeOddKernel_eq_one_iff",
-        "PaperP1.LocalDefectRate.card_cast_lt_log_div",
-        "PaperP1.GlobalDefectCount.global_defect_count_le_rpow_eventually",
-        "PaperP1.TwoDefectCount.two_defect_count_le_rpow_eventually",
-        "PaperP1.TwoDefectWindows.dyadic_two_defect_windows_le_rpow_eventually"
+        "PaperP1.UniformDefectCounts.companion_T1_3_run_length",
+        "PaperP1.UniformDefectCounts.companion_T1_3_run_length_fixed_affine",
+        "PaperP1.UniformDefectCounts.companion_T1_3",
+        "PaperP1.UniformDefectCounts.companion_T1_3_fixed_affine"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
         "P1-MATH-0003"
       ],
-      "notes": "Actual intrinsic defect sets, exact large-odd-kernel dictionary, canonical representations and finite local Hamming/rate bounds proved. Global N^(1/2+o(1)) and exact dyadic two-defect-window N^o(1) counts are proved under upper logarithmic cutoff/length bounds, uniformly after one common threshold. The asymptotic local prime budget and full fixed dilation/translation conclusions remain open. Not counted as a completed numbered result. See docs/DEFECT_COUNTS_ALIGNMENT.md and docs/TWO_DEFECT_ALIGNMENT.md."
+      "notes": "Complete local O(B/log B), global N^(1/2+o(1)), exact dyadic two-defect-window N^o(1) and fixed positive real affine interval versions. Literal B=L+1 corollaries; local constant before epsilon, one common threshold before all variable cutoffs, intervals and lengths. Global/window quantifiers are independent of the local interval. Proved uniform prime budget; no unproved literature premise. Stronger upper-cutoff-only hypotheses recorded as P1-MATH-0003. See docs/DEFECT_COUNTS_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:reuss",

@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 8 / 167 numbered results proved.**
+**Status: active formalization, 9 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The asymptotic theorems remain open.
@@ -40,11 +40,11 @@ over every coefficient in a fixed real polynomial box. Both square and
 nonsquare coefficient products are included, and all divisor, ideal and
 unit estimates used in the proof are proved. See its
 [alignment note](docs/QUADRATIC_COUNT_ALIGNMENT.md).
-T1.3 is in progress: actual local defect codes, an explicit finite local rate,
-the uniform global `N^(1/2+o(1))` count, and the exact dyadic two-defect-window
-count `N^o(1)` are proved. Its remaining local and affine-transformation
-conclusions are tracked in the
-[partial alignment](docs/DEFECT_COUNTS_ALIGNMENT.md).
+Companion Lemma T1.3 is proved in full: the uniform local `O(B/log B)`
+bound, global `N^(1/2+o(1))` count, exact dyadic two-defect-window `N^o(1)`
+count, and fixed real affine interval versions. The complete statements use
+one common threshold and include the literal `B=L+1` convention. See
+[statement alignment](docs/DEFECT_COUNTS_ALIGNMENT.md).
 
 | Material | Location |
 |---|---|

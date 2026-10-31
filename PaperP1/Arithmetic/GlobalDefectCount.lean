@@ -29,6 +29,18 @@ theorem mem_positiveDefectsBelow_iff_largeOddKernel {H X n : ℕ} :
       n ≠ 0 ∧ n ≤ X ∧ LargeOddKernel.largeOddKernel H n = 1 := by
   rw [mem_positiveDefectsBelow, LargeOddKernel.largeOddKernel_eq_one_iff]
 
+/-- Exact positive-integer interpretation of a real counting endpoint,
+including negative endpoints, for which the set is empty. -/
+theorem mem_positiveDefectsBelow_real_height {H n : ℕ} {Y : ℝ} :
+    n ∈ positiveDefectsBelow H ⌊Y⌋₊ ↔
+      n ≠ 0 ∧ (n : ℝ) ≤ Y ∧ HDefective H n := by
+  rw [mem_positiveDefectsBelow]
+  constructor
+  · rintro ⟨hn0, hnY, hdef⟩
+    exact ⟨hn0, (Nat.le_floor_iff' hn0).mp hnY, hdef⟩
+  · rintro ⟨hn0, hnY, hdef⟩
+    exact ⟨hn0, Nat.le_floor hnY, hdef⟩
+
 theorem positiveDefectsBelow_eq_represented (H X : ℕ) :
     positiveDefectsBelow H X =
       WeightedDefectCounting.positiveDefectValues (smallPrimesUpTo H) X := by

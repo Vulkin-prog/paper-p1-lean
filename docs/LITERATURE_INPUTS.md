@@ -42,7 +42,7 @@ Stable ID: `P1-ARITH-SPLIT`. Status: **proved**.
   the cited paper's statement has not been used to discharge a proof obligation.
 - Degree dependence is fully explicit in the intermediate height estimate.
   This resolves T1.1 itself. The quadratic-equation count is resolved below;
-  the determinant, remaining defect and local-rigidity inputs are separate
+  the determinant and local-rigidity inputs are separate
   obligations.
 
 ## Proved coefficient-uniform quadratic count
@@ -70,12 +70,15 @@ Stable ID: `P1-ARITH-PELL`. Status: **proved**.
 - No theorem from either cited paper is an unproved premise. No
   Nicolas–Robin estimate, fixed-discriminant constant, squarefree coefficient
   assumption or class-number bound remains in the final statement. The
-  determinant estimate and the remaining local/transformation parts of T1.3 remain
-  open. Its global defect-count conclusion is now proved.
+  determinant estimate and local-rigidity input remain open. T1.3 is proved
+  in full below.
 
 ## Proved defect-count ingredients
 
-Companion T1.3 remains **in progress**. The finite Chebyshev estimate and
+Stable ID: `P1-ARITH-DEFECT`. Status: **proved**, full companion T1.3,
+`p1:arith:defects`, page 6, `companion_sections/arithmetic_appendix.tex:90`.
+
+The finite Chebyshev estimate and
 weighted defect/Euler-product estimates are ported from exact Paper C sources,
 with no literature assumption. Mathlib's `primorial_le_four_pow`
 (`NumberTheory/Primorial.lean`) is a proved library input at the pinned
@@ -87,7 +90,14 @@ explicit finite configurations and the proved T1.2 theorem. The new uniform
 prime-support estimate, polynomial support heights and exact dyadic-window
 reindexing are proved in P1, with no new literature assumption. See
 [two-defect alignment](TWO_DEFECT_ALIGNMENT.md) and
-[partial statement alignment](DEFECT_COUNTS_ALIGNMENT.md) for what remains.
+[complete statement alignment](DEFECT_COUNTS_ALIGNMENT.md). The new uniform
+prime budget and B/log B conversion prove the full local rate. Exact positive
+integer-point definitions, rounded endpoint bounds and injective shifted
+starts prove the fixed real affine versions. The complete
+`UniformDefectCounts.companion_T1_3_run_length` and
+`companion_T1_3_run_length_fixed_affine` declarations choose the local
+constant before the error exponent and a common threshold before every
+cutoff, interval and length. No arithmetic estimate is an unproved premise.
 
 ## Checked measure-theory infrastructure
 

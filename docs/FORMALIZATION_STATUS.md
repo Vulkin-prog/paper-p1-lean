@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 31 O
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **8 / 167**: article Propositions 4.1, 5.2 and Lemmas 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2.
+- Numbered results completed: **9 / 167**: article Propositions 4.1, 5.2 and Lemmas 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **830 audited theorem/lemma declarations**. This
+- The project currently has **862 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -115,7 +115,7 @@ Neither document is fully formalized.
   literature inequality is left as an unproved premise. Both branches, every
   coefficient range and every positive real error exponent are included. See
   [statement alignment](QUADRATIC_COUNT_ALIGNMENT.md).
-- Companion T1.3 is in progress. The intrinsic defect predicate is proved
+- Companion T1.3 is complete. The intrinsic defect predicate is proved
   equivalent to the large odd-prime kernel being 1, with canonical
   square-times-small-prime representations. The binary Hamming bound,
   augmented parity rank and square-product bridges are ported and checked.
@@ -131,14 +131,18 @@ Neither document is fully formalized.
   cover uses the proved T1.2 bound with explicit polynomial coefficient
   heights. The prime-support count is proved uniformly subpolynomial with
   only H ≤ D log N; there is no unproved counting premise. See
-  [two-defect alignment](TWO_DEFECT_ALIGNMENT.md). The asymptotic local prime
-  budget and full dilation/translation versions remain open.
-  See [partial alignment](DEFECT_COUNTS_ALIGNMENT.md). This work does not
-  increase numbered-result coverage.
+  [two-defect alignment](TWO_DEFECT_ALIGNMENT.md). The local prime budget is
+  now proved uniformly, giving the full O(B/log B) rate. Fixed positive real
+  dilations and real translations are included with exact integer-point
+  interval definitions and affine vertex endpoints. The complete statements
+  use one common threshold for every local interval, cutoff, global counting
+  height and run length. Global and window conclusions are quantified
+  independently of local-interval parameters. Literal B=L+1 corollaries are
+  included. See [complete alignment](DEFECT_COUNTS_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
-  companion T1.1 with its original constant; `P1-MATH-0003`, upper-cutoff-only
-  hypotheses for the global and two-defect parts of T1.3. No error in an original
+  companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
+  hypotheses for all three parts of T1.3. No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.
 

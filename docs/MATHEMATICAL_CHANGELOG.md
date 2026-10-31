@@ -47,29 +47,35 @@ Absence of an entry does not mean the argument has been verified.
 - Status: confirmed by compilation and the kernel-axiom audit; not yet
   integrated into a new manuscript version.
 
-## P1-MATH-0003 — Weaker cutoff hypotheses for two conclusions of T1.3
+## P1-MATH-0003 — Weaker cutoff hypotheses for T1.3
 
 - Location: companion Lemma T1.3, page 6, label `p1:arith:defects`,
-  `companion_sections/arithmetic_appendix.tex:90`, specifically the global
-  and two-defect-window conclusions.
+  `companion_sections/arithmetic_appendix.tex:90`, all three conclusions.
 - Original setting: B is comparable to log N and H is comparable to B, with
   fixed comparison constants shared by the combined lemma.
-- Improvement: the global count needs only H ≤ D log N and a linear counting
+- Improvement: the local estimate needs only H=O(B), with B comparable to log N.
+  The global count needs only H ≤ D log N and a linear counting
   height. The two-defect-window count needs only H ≤ D log N and L ≤ E log N.
   Fixed D,E ≥ 0 suffice; a lower bound on H and the intermediate B are
-  unnecessary for these two conclusions.
+  unnecessary for the last two conclusions. The lower comparison H ≳ B is
+  unnecessary for the local estimate as well. The paper's domain H ≥ 2
+  remains covered, including fixed bounded cutoffs.
 - Evidence: `GlobalDefectCount.global_defect_count_le_rpow_eventually`,
   `TwoDefectCount.two_defect_count_le_rpow_eventually`, and
-  `TwoDefectWindows.dyadic_two_defect_windows_le_rpow_eventually`.
+  `TwoDefectWindows.dyadic_two_defect_windows_le_rpow_eventually`, and the
+  complete `UniformDefectCounts.companion_T1_3_run_length` and
+  `companion_T1_3_run_length_fixed_affine` statements.
   Actual finite sets and a threshold before all cutoffs and lengths are used.
-- Suggested revision: separate these two conclusions from the local estimate
-  and state them under the displayed upper bounds. See
+- Suggested revision: replace H ≍ B by H=O(B) in the local estimate, and state
+  the global and two-defect estimates separately under their upper logarithmic
+  bounds. The B ≍ log N comparison remains in the local estimate. See
   [exact alignment](TWO_DEFECT_ALIGNMENT.md).
 - Impact: strengthens parameter scope, including bounded or smaller cutoffs;
-  the exponents 1/2 and 0 are unchanged. This entry does not claim the entire
-  T1.3 lemma or its remaining local/transformation conclusions are complete.
-- Status: confirmed by full compilation and the 830-declaration kernel-axiom
-  audit; not yet integrated into a new manuscript version.
+  the exponents 1/2 and 0 are unchanged. T1.3 is now complete, including the
+  local estimate and fixed real affine interval versions.
+- Status: confirmed by full compilation and the 862-declaration kernel-axiom
+  audit; not yet integrated into a new manuscript version. The JSON record
+  preserves the earlier 830-declaration validation of the first two components.
 
 Every finding receives a stable identifier `P1-MATH-0001`, etc., and an entry in
 [mathematical-changes.json](mathematical-changes.json). Keep the following fields:

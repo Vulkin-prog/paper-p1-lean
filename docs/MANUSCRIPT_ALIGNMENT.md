@@ -90,13 +90,13 @@ recorded in the project status without counting as complete numbered results.
 | 19.2 (p. 58) | [p1:discussion:charlier-norm](../manuscripts/paper-p1/v1.6/sources/main_sections/discussion.tex#L116) | Norms of Poisson differences | not_started | — |
 | 20.1 (p. 60) | [p1:limits:vector-reference](../manuscripts/paper-p1/v1.6/sources/main_sections/limits_appendix.tex#L45) | Unsigned positional compound-Poisson comparison | not_started | — |
 
-## Technical companion: 2 / 94 proved
+## Technical companion: 3 / 94 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
 | T1.1 (p. 5) | [p1:arith:runge](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L19) | A split-product bound uniform in the degree | proved | `PaperP1.SplitProductBound.uniform_split_product_real_radius`, `PaperP1.SplitProductBound.uniform_split_product` |
 | T1.2 (p. 5) | [p1:arith:pell](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L62) | Uniform quadratic equation count | proved | `PaperP1.UniformQuadraticCount.uniform_quadratic_equation_count`, `PaperP1.UniformQuadraticCount.mem_positiveQuadraticSolutions_real_height` |
-| T1.3 (p. 6) | [p1:arith:defects](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L90) | Local and global defect counts | in_progress | `PaperP1.LocalDefectBound.card_defectsInInterval_lt_of_log`, `PaperP1.LargeOddKernel.largeOddKernel_eq_one_iff`, `PaperP1.LocalDefectRate.card_cast_lt_log_div`, `PaperP1.GlobalDefectCount.global_defect_count_le_rpow_eventually`, `PaperP1.TwoDefectCount.two_defect_count_le_rpow_eventually`, `PaperP1.TwoDefectWindows.dyadic_two_defect_windows_le_rpow_eventually` |
+| T1.3 (p. 6) | [p1:arith:defects](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L90) | Local and global defect counts | proved | `PaperP1.UniformDefectCounts.companion_T1_3_run_length`, `PaperP1.UniformDefectCounts.companion_T1_3_run_length_fixed_affine`, `PaperP1.UniformDefectCounts.companion_T1_3`, `PaperP1.UniformDefectCounts.companion_T1_3_fixed_affine` |
 | T1.4 (p. 6) | [p1:arith:reuss](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L139) | Uniform determinant estimate | not_started | — |
 | T1.5 (p. 9) | [p1:arith:twokernel](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L360) | Two small odd kernels | not_started | — |
 | T1.6 (p. 9) | [p1:arith:anchor](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_appendix.tex#L416) | A large selected kernel | not_started | — |

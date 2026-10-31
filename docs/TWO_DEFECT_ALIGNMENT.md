@@ -2,7 +2,8 @@
 
 This completes the two-defect-window conclusion inside companion T1.3
 (V1.6 page 6, `p1:arith:defects`, source line 90), equation
-`p1:arith:twodefect`. T1.3 as a whole remains in progress.
+`p1:arith:twodefect`. T1.3 as a whole is now complete; see
+[the complete alignment](DEFECT_COUNTS_ALIGNMENT.md).
 
 ## Actual sets and uniformity
 
@@ -72,9 +73,9 @@ the original combined hypotheses is recorded as P1-MATH-0003. It does not
 change any exponent or claim the local O(B/log B) conclusion under unproved
 parameter comparisons.
 
-The local asymptotic prime budget and the full fixed dilation/translation
-statements remain open. Accordingly, numbered-result coverage stays 8/167.
+The local asymptotic prime budget and full fixed dilation/translation
+statements are now also proved, completing T1.3. Numbered-result coverage is 9/167.
 The new P1 proofs use already recorded and audited inputs; no additional
 Paper C source file is copied for this step. Full compilation and the
-actual axiom audit pass for all 830 current proved declarations.
+actual axiom audit pass for all 862 current proved declarations.
 
