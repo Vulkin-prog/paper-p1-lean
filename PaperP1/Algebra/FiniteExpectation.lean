@@ -38,6 +38,17 @@ theorem finiteExpectation_mul_const (w : Ω → R) (X : Ω → R) (c : R) :
     finiteExpectation w (fun ω => X ω * c) = finiteExpectation w X * c := by
   simp [finiteExpectation, Finset.sum_mul, mul_assoc]
 
+theorem finiteExpectation_const_mul (w : Ω → R) (c : R) (X : Ω → R) :
+    finiteExpectation w (fun ω => c * X ω) = c * finiteExpectation w X := by
+  simp only [mul_comm c, finiteExpectation_mul_const]
+
+theorem finiteExpectation_sum {κ : Type*} (w : Ω → R) (s : Finset κ)
+    (X : κ → Ω → R) :
+    finiteExpectation w (fun ω => ∑ i ∈ s, X i ω) =
+      ∑ i ∈ s, finiteExpectation w (X i) := by
+  simp only [finiteExpectation, Finset.mul_sum]
+  exact Finset.sum_comm
+
 end Semiring
 
 section Ring

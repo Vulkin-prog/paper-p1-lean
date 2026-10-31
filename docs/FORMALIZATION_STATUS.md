@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **186 audited theorem/lemma declarations**. This
+- The project currently has **219 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. P1's full-support centered Fourier formula is in progress; its
@@ -45,8 +45,15 @@ Neither document is fully formalized.
   count-law identity are proved. Infinite-cylinder consistency is still open.
   External literature propositions encoded: none.
 - Generic affine fibers, their kernel equivalences, power-of-two cardinalities
-  and rational uniform probabilities have been ported and checked. Connecting
-  these counts to the actual real-valued run marginals is the next step.
+  and rational uniform probabilities have been ported and checked. The actual
+  real uniform mass is now proved to be zero for incompatible systems and
+  `2⁻ʳ` otherwise. The full run-start affine system has been ported, and this
+  formula is linked to actual finite-cylinder run marginals for positive length.
+  Local rigidity and the comparison of effective rank with `L` remain open.
+- On any effective subspace of actual binary linear forms, the affine event
+  has its character expansion and actual marginal equal to the inverse size
+  of that space. Local signs are evaluations at a solution. The full-support
+  product formula, its bound, and square-class identification remain open.
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1. No error in the original conclusion is asserted.
 - Palomar registrations: none; preparation only.

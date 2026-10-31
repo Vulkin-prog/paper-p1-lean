@@ -89,6 +89,10 @@ theorem randomMultiplicativeValue_mul {M a b : ℕ} (ω : SampleSpace M)
 def StartEvent (g : ℕ → F₂) (x L : ℕ) : Prop :=
   g (x - 1) + g x = 1 ∧ ∀ j : ℕ, j < L → g (x + j) = g x
 
+/-- The deterministic start predicate in a finite prime-sign cylinder. -/
+def startAt {M : ℕ} (ω : SampleSpace M) (x L : ℕ) : Prop :=
+  StartEvent (valueBit ω) x L
+
 theorem startEvent_iff_signed (g : ℕ → F₂) (x L : ℕ) :
     StartEvent g x L ↔
       phase (g (x - 1)) = -phase (g x) ∧

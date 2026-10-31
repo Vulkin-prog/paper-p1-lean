@@ -16,3 +16,8 @@ public import PaperP1.Probability.StoppedMeasureLaw
 public import PaperP1.Affine.System
 public import PaperP1.Affine.Fourier
 public import PaperP1.Affine.Probability
+public import PaperP1.Affine.StartSystem
+public import PaperP1.Probability.UniformFinite
+public import PaperP1.Affine.RealProbability
+public import PaperP1.Model.StartProbability
+public import PaperP1.Affine.Characters

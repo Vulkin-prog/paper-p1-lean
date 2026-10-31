@@ -24,6 +24,7 @@ compiled artifacts were copied.
 | `PaperC/Affine/System.lean`, `2744f75ed26de5014d35c48fad5aab8471724294` | `PaperP1/Affine/System.lean`, affine compatibility, fiber/kernel equivalence and exact counts | Module/public declarations and namespace; `if_pos`/`if_neg` replaced by `ite_eq_left`/`ite_eq_right` |
 | `PaperC/Affine/Fourier.lean`, `d11d2472de69e4740591abd96a6161502cf55669` | `PaperP1/Affine/Fourier.lean`, character orthogonality and division-free affine Fourier identity | Module/public declarations, namespace, ite rename and unused simp argument removal; helper theorem made public for direct axiom auditing |
 | `PaperC/Affine/Probability.lean`, `40d959c053dc27bfb197db83bff1e673fed55644` | `PaperP1/Affine/Probability.lean`, rational uniform affine probability formulas | Module/public declarations, namespace and ite lemma renames |
+| `PaperC/Affine/StartSystem.lean`, `097a8645a5622d6b7541cc52beac2e3129392b11` | `PaperP1/Affine/StartSystem.lean`, full run-start affine encoding | Module/public declarations, opened namespaces and ite lemma renames; the finite-model `startAt` alias retains the original event |
 
 All ported statements recompile with warnings as errors and are included in the
 generated kernel-axiom audit. This port does not import the old arithmetic
@@ -34,6 +35,15 @@ The generic affine Fourier identity is a checked precursor to P1's full-support
 centered formula. The latter still requires effective local spaces and their
 affine prescriptions; it is not marked complete by this port. Upstream lemma
 numbers in the ported docstrings refer to Paper C.
+
+`Affine/RealProbability.lean` now connects cardinality ratios to the actual
+normalized real uniform weights and proves that a compatible system has mass
+`2⁻ʳ` for its effective rank. `Model/StartProbability.lean` applies this formula
+to every positive-length start, preserving incompatible windows. These are new
+bridges, rather than an identification of nominal row count with effective rank.
+`Affine/Characters.lean` proves character expansions and actual marginals on
+arbitrary effective dual subspaces, using evaluations at a local solution.
+It does not yet identify those spaces with the manuscript's square-class images.
 
 ## Further candidates
 
