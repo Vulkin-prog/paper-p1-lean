@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 31 O
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **22 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1, together with Lemmas T19.13 and T2.1.
+- Numbered results completed: **23 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1, together with Lemmas T19.13, T2.1 and T20.2.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1746 audited theorem/lemma declarations**. This
+- The project currently has **1775 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -272,6 +272,12 @@ Neither document is fully formalized.
   exceptional set above B^A has cardinality at most
   (1/A+((log 4)/A)/log B)B. No PNT, critical-band or height premise is used.
   See [small-prime budget alignment](SMALL_PRIME_BUDGET_ALIGNMENT.md).
+- Companion T20.2 is complete for each fixed real s>1 and every real T>=1.
+  Absolute convergence and the exact positive-index product summand are proved.
+  The evaluated power integral treats the exact floor, and the harmonic sum
+  gives the logarithmic factor. One explicit positive constant depends only
+  on s and precedes all thresholds. See
+  [integer product-tail alignment](INTEGER_PRODUCT_TAIL_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff

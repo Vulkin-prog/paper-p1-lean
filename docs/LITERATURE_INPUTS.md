@@ -20,6 +20,22 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Integer product tail
+
+Stable ID: `P1-ANALYSIS-INTEGER-PRODUCT-TAIL`. Status: **proved**.
+
+- Target: companion T20.2, page 82, `p1:offset:integer-tail`.
+- Lean: `IntegerProductTail.companion_T20_2` with exact strict product cutoff,
+  absolute convergence, and one explicit positive constant before all T>=1.
+- Mathlib at commit `9d581dfff2e41de989072ea63abf3daf69311520` supplies
+  `Real.summable_nat_rpow`, `AntitoneOn.tsum_comp_add_le_integral`,
+  `integrableOn_Ioi_rpow_of_lt`, `integral_Ioi_rpow_of_lt`, and
+  `harmonic_floor_le_one_add_log`. The one-dimensional tail, floor control,
+  product decomposition and final logarithmic estimate are proved internally.
+- No p-series tail estimate, target bound or unformalized literature input is
+  passed as a premise. No additional Paper C proof is ported. See
+  [complete alignment](INTEGER_PRODUCT_TAIL_ALIGNMENT.md).
+
 ## Small-prime coefficient budget
 
 Stable ID: `P1-ARITH-SMALL-PRIME-BUDGET`. Status: **proved**.

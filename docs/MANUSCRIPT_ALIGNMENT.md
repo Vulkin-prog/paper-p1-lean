@@ -90,7 +90,7 @@ recorded in the project status without counting as complete numbered results.
 | 19.2 (p. 58) | [p1:discussion:charlier-norm](../manuscripts/paper-p1/v1.6/sources/main_sections/discussion.tex#L116) | Norms of Poisson differences | not_started | — |
 | 20.1 (p. 60) | [p1:limits:vector-reference](../manuscripts/paper-p1/v1.6/sources/main_sections/limits_appendix.tex#L45) | Unsigned positional compound-Poisson comparison | not_started | — |
 
-## Technical companion: 13 / 94 proved
+## Technical companion: 14 / 94 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -169,7 +169,7 @@ recorded in the project status without counting as complete numbered results.
 | T19.16 (p. 80) | [p1:limits:private-exact](../manuscripts/paper-p1/v1.6/sources/companion_sections/limits_appendix.tex#L1214) | Exact logarithmic cost of this forcing | not_started | — |
 | T19.17 (p. 81) | [p1:limits:all-anchors](../manuscripts/paper-p1/v1.6/sources/companion_sections/limits_appendix.tex#L1313) | An obstruction for every such anchor | not_started | — |
 | T20.1 (p. 82) | [p1:offset:line-product](../manuscripts/paper-p1/v1.6/sources/companion_sections/offset_geometry.tex#L25) | The prime product on an offset line | not_started | — |
-| T20.2 (p. 82) | [p1:offset:integer-tail](../manuscripts/paper-p1/v1.6/sources/companion_sections/offset_geometry.tex#L70) | An integer product tail | not_started | — |
+| T20.2 (p. 82) | [p1:offset:integer-tail](../manuscripts/paper-p1/v1.6/sources/companion_sections/offset_geometry.tex#L70) | An integer product tail | proved | `PaperP1.IntegerProductTail.companion_T20_2`, `PaperP1.IntegerProductTail.productTail_bound`, `PaperP1.IntegerProductTail.productTail_harmonic_bound`, `PaperP1.IntegerProductTail.pairTerm_eq_power`, `PaperP1.IntegerProductTail.summable_pairTerm`, `PaperP1.IntegerProductTail.productTail_eq_rows`, `PaperP1.PowerSeriesTail.tail_eq_shifted`, `PaperP1.PowerSeriesTail.tail_le_power` |
 | T20.3 (p. 82) | [p1:offset:forced-plane](../manuscripts/paper-p1/v1.6/sources/companion_sections/offset_geometry.tex#L96) | A forced plane uses all three coordinates | not_started | — |
 | T20.4 (p. 83) | [p1:offset:normal-budget](../manuscripts/paper-p1/v1.6/sources/companion_sections/offset_geometry.tex#L145) | Many planar supports force a small normal | not_started | — |
 | T20.5 (p. 83) | [p1:offset:root-separation](../manuscripts/paper-p1/v1.6/sources/companion_sections/offset_geometry.tex#L192) | At most one common root | not_started | — |

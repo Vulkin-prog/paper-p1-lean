@@ -79,3 +79,4 @@ public import PaperP1.Probability.MomentObstruction
 public import PaperP1.Asymptotics.MomentObstructionSequence
 public import PaperP1.Probability.WeightedPoissonNorm
 public import PaperP1.Arithmetic.SmallPrimeBudget
+public import PaperP1.Analysis.IntegerProductTail

@@ -2577,11 +2577,22 @@
       "source": "companion_sections/offset_geometry.tex",
       "line": 70,
       "sha256": "d152e541850e3b572b1faf9f52c652ec80cb933639af0d559be599a9c0cec5cc",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.IntegerProductTail.companion_T20_2",
+        "PaperP1.IntegerProductTail.productTail_bound",
+        "PaperP1.IntegerProductTail.productTail_harmonic_bound",
+        "PaperP1.IntegerProductTail.pairTerm_eq_power",
+        "PaperP1.IntegerProductTail.summable_pairTerm",
+        "PaperP1.IntegerProductTail.productTail_eq_rows",
+        "PaperP1.PowerSeriesTail.tail_eq_shifted",
+        "PaperP1.PowerSeriesTail.tail_le_power"
+      ],
+      "literature_inputs": [
+        "P1-ANALYSIS-INTEGER-PRODUCT-TAIL"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Full T20.2 with one positive constant chosen for each fixed real s>1 before every real T>=1. The literal positive integers are encoded as a+1,b+1 and pairTerm_eq_power gives their product power on the strict product>T domain. Absolute convergence of the pair series and the equality with iterated rows are proved. The exact floor and the evaluated improper power integral give the one-dimensional tail, and the harmonic bound treats a<=T while the full p-series treats a>T. The explicit coefficient depends only on s and no target tail estimate, model regularity or unproved external input is assumed. See INTEGER_PRODUCT_TAIL_ALIGNMENT.md."
     },
     {
       "label": "p1:offset:forced-plane",

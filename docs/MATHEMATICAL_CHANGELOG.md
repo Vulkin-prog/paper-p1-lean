@@ -398,3 +398,13 @@ This checks the source's stated dependence, without changing its conclusion
 or adding a critical-band premise. The full build and actual 1,746-declaration
 kernel audit passed. The ten confirmed improvements remain separate; see
 [complete alignment](SMALL_PRIME_BUDGET_ALIGNMENT.md).
+
+## Integer product-tail verification — no new finding
+
+Companion T20.2 is proved with the source exponent and logarithmic factor,
+for each fixed s>1 and all real T>=1. Absolute convergence, exact floors,
+strict product cutoffs and the order of constant quantifiers are checked.
+The explicit constant supplies the source's stated dependence and is not
+claimed optimal. The full build and actual 1,775-declaration kernel audit
+passed. No additional mathematical finding is introduced; see
+[complete alignment](INTEGER_PRODUCT_TAIL_ALIGNMENT.md).
