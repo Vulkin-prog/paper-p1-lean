@@ -385,11 +385,12 @@
       ],
       "proposed_revision": "Let n_plus count the initially nonzero coordinate forms with multiplicity and use n_plus/(K+1)+(s-r)/(d+1). Allow K,d>=0. The original statement follows from n_plus<=n; K=0 forces the final space to be zero, while d=0 forbids decompositions of a present nonzero form into two distinct present nonzero forms.",
       "impact": "Improves the finite codimension budget when initial coordinate forms vanish and includes the zero boundary parameters. The exact selected-coordinate description, codimension equality, unordered-label convention and simultaneous stopping properties are preserved. There is no claim that arbitrary later restrictions preserve regularity, and no error in the original result is asserted.",
-      "validation": "Full Lean v4.36.0-rc2 build (8765 jobs) and actual kernel axiom audit for all 1814 declarations; only propext, Classical.choice and Quot.sound. Every evidence theorem is directly included in the actual audit.",
+      "validation": "Full Lean v4.36.0-rc2 build (8765 jobs) and actual kernel axiom audit for all 1814 declarations; only propext, Classical.choice and Quot.sound. Every evidence theorem is directly included in the actual audit. All 209 distinct coverage/finding declaration names were also checked by Lean.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "273ececdfd9ea82cd8271e9dac031f44c4e9c44a"
     }
   ]
 }

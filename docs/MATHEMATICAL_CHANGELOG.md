@@ -430,3 +430,7 @@ passed. No additional mathematical finding is introduced; see
 - Status: confirmed by the full Lean v4.36.0-rc2 build (8,765 jobs) and actual
   audit of all 1,814 theorem/lemma declarations; not integrated into a new
   manuscript. See [complete alignment](COORDINATE_REGULARISATION_ALIGNMENT.md).
+
+Validated implementation for P1-MATH-0011:
+[273ececdfd9ea82cd8271e9dac031f44c4e9c44a](https://github.com/Vulkin-prog/paper-p1-lean/commit/273ececdfd9ea82cd8271e9dac031f44c4e9c44a).
+All 209 distinct coverage/finding declaration names were checked by Lean.

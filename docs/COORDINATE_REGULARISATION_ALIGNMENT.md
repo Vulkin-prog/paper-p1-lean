@@ -84,3 +84,7 @@ The full Lean v4.36.0-rc2 build passed (8,765 jobs), followed by the actual
 axiom audit of all 1,814 project theorem/lemma declarations. Only `propext`,
 `Classical.choice` and `Quot.sound` occur. Coverage is 24 / 167 numbered
 results: 9 main and 15 companion. No Palomar registration is made.
+
+Validated implementation for P1-MATH-0011:
+[273ececdfd9ea82cd8271e9dac031f44c4e9c44a](https://github.com/Vulkin-prog/paper-p1-lean/commit/273ececdfd9ea82cd8271e9dac031f44c4e9c44a).
+All 209 distinct coverage/finding declaration names were checked by Lean.
