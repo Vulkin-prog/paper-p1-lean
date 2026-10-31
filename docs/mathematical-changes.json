@@ -593,6 +593,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "6848867fb06d1790bc0ff5a0a298671889c1b638"
+    },
+    {
+      "id": "P1-MATH-0018",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:fixed:CRT",
+        "number": "T4.2",
+        "page": 27,
+        "source": "companion_sections/fixed_moments.tex",
+        "line": 68,
+        "statement_sha256": "ec46fac6ac93bd36c65662a7da8b884193199f09a5edb6898bfd7559a7b43722"
+      },
+      "original_assumption": "Companion T4.2 requires the product of the pairwise coprime modules to exceed N, for sources and targets in I_N and lengths in the critical band.",
+      "finding": "The same uniform N^epsilon count holds when the product is merely at least N. Equality suffices because distinct integers in the half-open interval I_N differ by less than N. The full count also only needs an upper logarithmic width bound B<=D*logN, without a critical-band lower bound. The threshold is uniform over every source tuple and every allowed length.",
+      "evidence": [
+        "PaperP1.ShortIntervalCongruences.eq_of_common_divisors",
+        "PaperP1.ShortIntervalCongruences.card_fibre_le_one",
+        "PaperP1.ProductCertificate.card_targets_le",
+        "PaperP1.FixedSourceCertificate.mem_certificateTargets",
+        "PaperP1.UniformFixedSourceCertificates.certificateTargets_le_power_eventually",
+        "PaperP1.UniformFixedSourceCertificates.critical_band_certificateTargets"
+      ],
+      "proposed_revision": "Replace product>N by product>=N in the certificate criterion. State the more general result under B<=D*logN if useful, keeping the original critical-band corollary. The finite code bound (B*sum of source-value divisor counts)^k can be recorded as an explicit intermediate estimate.",
+      "impact": "Relaxes the certificate threshold and length assumptions with unchanged asymptotic order. For a finite family of positive source values, each group selects a divisor and a target offset; coprimality and the product threshold give at most one target per code. Counting these independent divisor choices avoids an ordered-factorization estimate. All congruence and divisor estimates are proved internally. No original conclusion is corrected or optimality claim is made.",
+      "validation": "Full Lean v4.36.0-rc2 build (8835 jobs) and actual axiom audit of all 2008 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. Every evidence theorem is directly included in the audit. All 297 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

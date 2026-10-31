@@ -90,7 +90,7 @@ recorded in the project status without counting as complete numbered results.
 | 19.2 (p. 58) | [p1:discussion:charlier-norm](../manuscripts/paper-p1/v1.6/sources/main_sections/discussion.tex#L116) | Norms of Poisson differences | not_started | — |
 | 20.1 (p. 60) | [p1:limits:vector-reference](../manuscripts/paper-p1/v1.6/sources/main_sections/limits_appendix.tex#L45) | Unsigned positional compound-Poisson comparison | not_started | — |
 
-## Technical companion: 18 / 94 proved
+## Technical companion: 19 / 94 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -120,7 +120,7 @@ recorded in the project status without counting as complete numbered results.
 | T2.8 (p. 24) | [p1:arith:finite-family-triples](../manuscripts/paper-p1/v1.6/sources/companion_sections/supplemental_arithmetic.tex#L336) | Triples containing a good pair | not_started | — |
 | T3.1 (p. 26) | [p1:arith:palm](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic.tex#L128) | Positive Palm cost of a good edge | not_started | — |
 | T4.1 (p. 26) | [p1:fixed:curve](../manuscripts/paper-p1/v1.6/sources/companion_sections/fixed_moments.tex#L16) | Several disjoint square equations | not_started | — |
-| T4.2 (p. 27) | [p1:fixed:CRT](../manuscripts/paper-p1/v1.6/sources/companion_sections/fixed_moments.tex#L68) | A product certificate with fixed sources | not_started | — |
+| T4.2 (p. 27) | [p1:fixed:CRT](../manuscripts/paper-p1/v1.6/sources/companion_sections/fixed_moments.tex#L68) | A product certificate with fixed sources | proved | `PaperP1.UniformFixedSourceCertificates.companion_T4_2`, `PaperP1.UniformFixedSourceCertificates.critical_band_certificateTargets`, `PaperP1.UniformFixedSourceCertificates.certificateTargets_le_power_eventually`, `PaperP1.FixedSourceCertificate.mem_sourceTargets_integer`, `PaperP1.FixedSourceCertificate.hasIntegerCertificate_iff`, `PaperP1.FixedSourceCertificate.mem_certificateTargets`, `PaperP1.FixedSourceCertificate.finite_real_bound`, `PaperP1.FixedSourceCertificate.exists_offset_index`, `PaperP1.FixedSourceCertificate.offset_dvd_iff`, `PaperP1.ProductCertificate.mem_targets`, `PaperP1.ProductCertificate.card_targets_le`, `PaperP1.ShortIntervalCongruences.eq_of_common_divisors`, `PaperP1.ShortIntervalCongruences.card_fibre_le_one`, `PaperP1.DivisorSubpolynomial.card_divisors_le_rpow_eventually` |
 | T4.3 (p. 28) | [p1:fixed:primitive](../manuscripts/paper-p1/v1.6/sources/companion_sections/fixed_moments.tex#L184) | Fixed primitive mass | not_started | — |
 | T4.4 (p. 30) | [p1:fixed:compressed](../manuscripts/paper-p1/v1.6/sources/companion_sections/fixed_moments.tex#L349) | Fixed primitive mass after pair compression | not_started | — |
 | T5.1 (p. 31) | [p13:short:quadratic](../manuscripts/paper-p1/v1.6/sources/companion_sections/short_supports.tex#L9) | A quadratic kernel with a prescribed divisor | not_started | — |

@@ -20,6 +20,28 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Product certificates with fixed source windows
+
+Stable ID: `P1-ARITH-FIXED-SOURCE-PRODUCT-CERTIFICATE`. Status: **proved**.
+
+- Target: companion T4.2, page 27, `p1:fixed:CRT`.
+- Lean: `UniformFixedSourceCertificates.companion_T4_2`, with a stronger
+  upper-width and non-strict product version in
+  `certificateTargets_le_power_eventually`.
+- The actual source and target values, signed-offset dictionary, finite
+  certificate alphabet, code count, coprime congruence combination and
+  uniqueness in a half-open interval are all proved. No CRT conclusion
+  or candidate population is assumed as an external input.
+- The existing proved `DivisorSubpolynomial.card_divisors_le_rpow_eventually`
+  applies uniformly to every source value. Existing logarithmic-width
+  subpolynomiality supplies the remaining position factor. No divisor
+  asymptotic is left as a hypothesis.
+- Mathlib at the pinned revision supplies natural divisors, the finite lcm
+  and its equality with the coprime product, finite function counts and
+  real-power algebra. No additional Paper C source is ported.
+- `P1-MATH-0018` records the relaxed product threshold and width condition.
+  See [alignment](FIXED_SOURCE_PRODUCT_CERTIFICATE_ALIGNMENT.md).
+
 ## Weighted offset-pattern counts
 
 Stable ID: `P1-ARITH-OFFSET-PATTERN-RANKIN`. Status: **proved**.

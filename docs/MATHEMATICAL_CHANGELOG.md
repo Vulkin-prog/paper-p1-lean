@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Seventeen mathematical improvements are confirmed; no error in a manuscript conclusion
+**Eighteen mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -620,3 +620,34 @@ All 283 distinct coverage/finding declaration names were checked directly by Lea
 
 Validated implementation of companion T21.3 and P1-MATH-0017:
 [6848867fb06d1790bc0ff5a0a298671889c1b638](https://github.com/Vulkin-prog/paper-p1-lean/commit/6848867fb06d1790bc0ff5a0a298671889c1b638).
+
+## P1-MATH-0018 — A non-strict product threshold for fixed-source certificates
+
+- Location: companion T4.2, page 27, `p1:fixed:CRT`,
+  `companion_sections/fixed_moments.tex:68`.
+- Original assumptions: product(G_i)>N and lengths in the critical band.
+- Improvement: product(G_i)>=N suffices for the same uniform N^epsilon
+  bound. Equality still permits at most one centre, because two distinct
+  integers in the half-open interval [N,2N) differ by less than N.
+- The complete count also only needs the upper logarithmic ceiling
+  B<=D*logN. No lower critical-band length assumption is needed. The
+  threshold precedes every source tuple and every allowed length.
+- Finite proof: the source divisors and target offsets give at most
+  `(B*sum_a tau(v_a))^k` codes. A valid code determines at most one centre.
+  This counts each module directly as a divisor of an actual source value;
+  an ordered-factorization estimate for their product is unnecessary.
+- Evidence: `ShortIntervalCongruences.eq_of_common_divisors`,
+  `card_fibre_le_one`, `ProductCertificate.card_targets_le`,
+  `FixedSourceCertificate.mem_certificateTargets`,
+  `UniformFixedSourceCertificates.certificateTargets_le_power_eventually`
+  and `critical_band_certificateTargets`.
+- Suggested revision: use the non-strict threshold and, if useful, state
+  the upper-width version before its original critical-band corollary.
+  The original signed-offset population and strict-product conclusion
+  remain proved. No error or optimality claim is made.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,835 jobs) and actual
+  audit of all 2,008 theorem/lemma declarations, with only `propext`,
+  `Classical.choice` and `Quot.sound`. Not integrated into a manuscript. See
+  [alignment](FIXED_SOURCE_PRODUCT_CERTIFICATE_ALIGNMENT.md).
+
+All 297 distinct coverage/finding declaration names were checked directly by Lean.

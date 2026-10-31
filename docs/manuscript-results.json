@@ -1783,11 +1783,30 @@
       "source": "companion_sections/fixed_moments.tex",
       "line": 68,
       "sha256": "ec46fac6ac93bd36c65662a7da8b884193199f09a5edb6898bfd7559a7b43722",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.UniformFixedSourceCertificates.companion_T4_2",
+        "PaperP1.UniformFixedSourceCertificates.critical_band_certificateTargets",
+        "PaperP1.UniformFixedSourceCertificates.certificateTargets_le_power_eventually",
+        "PaperP1.FixedSourceCertificate.mem_sourceTargets_integer",
+        "PaperP1.FixedSourceCertificate.hasIntegerCertificate_iff",
+        "PaperP1.FixedSourceCertificate.mem_certificateTargets",
+        "PaperP1.FixedSourceCertificate.finite_real_bound",
+        "PaperP1.FixedSourceCertificate.exists_offset_index",
+        "PaperP1.FixedSourceCertificate.offset_dvd_iff",
+        "PaperP1.ProductCertificate.mem_targets",
+        "PaperP1.ProductCertificate.card_targets_le",
+        "PaperP1.ShortIntervalCongruences.eq_of_common_divisors",
+        "PaperP1.ShortIntervalCongruences.card_fibre_le_one",
+        "PaperP1.DivisorSubpolynomial.card_divisors_le_rpow_eventually"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-FIXED-SOURCE-PRODUCT-CERTIFICATE"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0018"
+      ],
+      "notes": "Full companion T4.2 for every actual source tuple in I_N and every length in the critical band, with the threshold before both. The exact source population with signed offsets in [-1,L-1], pairwise coprime G_i>1 and product>N is identified with the finite natural-index population. The finite proof counts a divisor of one actual source value and a target offset for each group. Each valid code has at most one centre; coprimality, combined divisibility and short-interval uniqueness are proved. No assumed CRT output or divisor-count estimate is used. Existing proved uniform divisor subpolynomiality gives the N^epsilon bound. A stronger theorem only assumes B<=D*logN and admits product>=N, including equality. See FIXED_SOURCE_PRODUCT_CERTIFICATE_ALIGNMENT.md."
     },
     {
       "label": "p1:fixed:primitive",
