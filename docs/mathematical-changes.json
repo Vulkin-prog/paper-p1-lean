@@ -54,11 +54,12 @@
       ],
       "proposed_revision": "Use D=2^d, A=DP and Q=D^2G-A^2. Formal coefficient cancellation gives degree Q <= k-1 and H(Q) <= (k+1)2^(5d)R^d <= (64R)^d. If Q(U) is nonzero, integer-square separation gives 2^k U^k <= |Q(U)| <= k H(Q) U^(k-1), hence U <= H(Q); the zero case follows from the integral-root height bound.",
       "impact": "Proof simplification only. Retains real R >= 1, integer U >= 2R, distinct bounded integer shifts, all even degrees d >= 2, and the exact constant 64. No downstream exponent changes. No error in the original analytic inequalities is asserted.",
-      "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 545 declarations. Exact implementation commit recorded after committing the proof.",
+      "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 545 declarations at the recorded implementation commit.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "839adcbfbf4659025307ff8733738d296023db89"
     }
   ]
 }
