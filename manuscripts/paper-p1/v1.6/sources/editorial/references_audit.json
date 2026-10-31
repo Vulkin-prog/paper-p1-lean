@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "scope": "Source conservation, reference resolution and link targets only; not mathematical certification.",
+  "baseline_version": "P1 V1.5, 31 October 2026, main 62 pages and companion 96 pages",
+  "original_labels": 545,
+  "new_labels": 546,
+  "missing_labels": [],
+  "duplicate_labels": {},
+  "unknown_references": [],
+  "statement_counts": {
+    "main": {
+      "theorem": 14,
+      "proposition": 21,
+      "lemma": 24,
+      "corollary": 14,
+      "proof": 48
+    },
+    "companion": {
+      "theorem": 6,
+      "proposition": 34,
+      "lemma": 50,
+      "corollary": 4,
+      "proof": 118
+    }
+  },
+  "statement_counts_preserved": true,
+  "statement_number_changes": [],
+  "statement_text_preservation": {
+    "baseline": "P1 V1.5",
+    "edition": "P1 V1.6",
+    "compared_statements": 167,
+    "modified_or_missing_statements": [],
+    "additional_statements": [],
+    "status": "passed",
+    "scope": "Exact LaTeX text of theorem, proposition, lemma and corollary environments; not a proof checker."
+  },
+  "pages": {
+    "main": 63,
+    "companion": 96
+  },
+  "links": {
+    "main": {
+      "internal": 322,
+      "external": 59
+    },
+    "companion": {
+      "internal": 338,
+      "external": 169
+    }
+  },
+  "bad_link_targets": [],
+  "logs": {
+    "main": {
+      "Overfull": 0,
+      "Underfull": 1,
+      "undefined": 0,
+      "multiply defined": 0
+    },
+    "companion": {
+      "Overfull": 0,
+      "Underfull": 0,
+      "undefined": 0,
+      "multiply defined": 0
+    }
+  }
+}

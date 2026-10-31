@@ -1,0 +1,16 @@
+name = "paper_p1_lean"
+version = "0.1.0"
+defaultTargets = ["PaperP1", "Audit"]
+moreLeanArgs = ["-DwarningAsError=true"]
+
+[[lean_lib]]
+name = "PaperP1"
+
+[[lean_lib]]
+name = "Audit"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+# The immutable commit tagged v4.36.0-rc2; its lean-toolchain matches ours.
+rev = "9d581dfff2e41de989072ea63abf3daf69311520"

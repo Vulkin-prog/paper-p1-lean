@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "scope": "Finite exact algebra only; these checks do not verify the arithmetic asymptotics or the main theorem.",
+  "channel_identity_cases": 8640,
+  "signed_placement_cases": 5150,
+  "charlier_cases": [
+    {
+      "mean": 1,
+      "negative_indices": [
+        1,
+        2
+      ],
+      "norm_over_exp_minus_mean": "3"
+    },
+    {
+      "mean": 2,
+      "negative_indices": [
+        2,
+        3
+      ],
+      "norm_over_exp_minus_mean": "10/3"
+    }
+  ],
+  "unit_mean_tv_coefficient_over_exp_minus_one": "1/12"
+}

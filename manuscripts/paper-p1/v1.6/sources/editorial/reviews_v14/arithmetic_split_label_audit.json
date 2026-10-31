@@ -1,0 +1,89 @@
+[
+  {
+    "file": "short_supports",
+    "baseline_labels": 8,
+    "main_labels": 4,
+    "companion_labels": 6,
+    "missing": [],
+    "repeated": [],
+    "new_navigation_labels": [
+      "p14:comp:short",
+      "p14:comp:short:moments"
+    ],
+    "main_chars": 3596,
+    "companion_chars": 6640
+  },
+  {
+    "file": "half_counts",
+    "baseline_labels": 8,
+    "main_labels": 5,
+    "companion_labels": 5,
+    "missing": [],
+    "repeated": [],
+    "new_navigation_labels": [
+      "p14:comp:half",
+      "p14:comp:half:iteration"
+    ],
+    "main_chars": 5003,
+    "companion_chars": 8386
+  },
+  {
+    "file": "triple_activities",
+    "baseline_labels": 6,
+    "main_labels": 5,
+    "companion_labels": 3,
+    "missing": [],
+    "repeated": [],
+    "new_navigation_labels": [
+      "p14:comp:activity",
+      "p14:comp:activity:deficit"
+    ],
+    "main_chars": 3598,
+    "companion_chars": 3920
+  },
+  {
+    "file": "confinement",
+    "baseline_labels": 6,
+    "main_labels": 3,
+    "companion_labels": 6,
+    "missing": [],
+    "repeated": [],
+    "new_navigation_labels": [
+      "p14:comp:confinement",
+      "p14:comp:confinement:near",
+      "p14:comp:confinement:strong"
+    ],
+    "main_chars": 2855,
+    "companion_chars": 9265
+  },
+  {
+    "file": "pair_rigidity",
+    "baseline_labels": 33,
+    "main_labels": 23,
+    "companion_labels": 14,
+    "missing": [],
+    "repeated": [],
+    "new_navigation_labels": [
+      "p14:comp:rigidity",
+      "p14:comp:rigidity:aligned",
+      "p14:comp:rigidity:common-curve",
+      "p14:comp:rigidity:short-basis"
+    ],
+    "main_chars": 16523,
+    "companion_chars": 20415
+  },
+  {
+    "file": "third_cumulant",
+    "baseline_labels": 21,
+    "main_labels": 18,
+    "companion_labels": 5,
+    "missing": [],
+    "repeated": [],
+    "new_navigation_labels": [
+      "p14:comp:third",
+      "p14:comp:third:aligned-family"
+    ],
+    "main_chars": 14826,
+    "companion_chars": 6392
+  }
+]

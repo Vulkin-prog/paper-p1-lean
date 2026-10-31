@@ -1,0 +1,284 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[provide=*,french]{babel}
+\usepackage{lmodern,microtype}
+\usepackage[a4paper,margin=23mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx,array,enumitem,fancyhdr,xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!40!black,urlcolor=blue!40!black]{hyperref}
+\usepackage{xurl}
+\definecolor{accent}{HTML}{173B5B}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\color{accent} P1 -- Note de réorganisation V1.4}
+\fancyhead[R]{\small 31 octobre 2026}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlength{\emergencystretch}{2em}
+\setlist{itemsep=4pt,topsep=4pt,leftmargin=18pt}
+\renewcommand{\arraystretch}{1.15}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Law}{\mathcal L}
+\newcommand{\eps}{\varepsilon}
+\hypersetup{pdftitle={P1 V1.4 -- Article principal et compagnon technique},pdfauthor={Brice Pouly},pdfsubject={Répartition, conservation des résultats, dépendances et contrôles de la version 1.4}}
+\widowpenalty=10000\clubpenalty=10000
+\begin{document}
+{\Large\bfseries\color{accent} P1 V1.4 : article et compagnon technique}\\[4pt]
+{\large Note de réorganisation -- 31 octobre 2026}
+
+\section*{1. La décision éditoriale mise en œuvre}
+La V1.4 présente P1 sous la forme de \textbf{deux documents associés} :
+un article principal de \textbf{60 pages} et un compagnon technique de
+\textbf{93 pages}. La V1.3 réunissait le tout en un manuscrit de 142 pages.
+La réduction porte donc sur la longueur du parcours principal ; le volume
+total augmente légèrement, à cause des présentations, guides, rappels et
+bibliographies nécessaires à la lecture des deux textes.
+
+Les deux documents constituent \textbf{un même travail scientifique}.
+Le compagnon contient des preuves nécessaires aux théorèmes de l'article,
+ainsi que les prolongements conservés de la V1.3. Il doit accompagner
+l'article lors d'une évaluation du travail complet. Cette organisation
+ne présente pas le compagnon comme un second article de recherche autonome.
+
+La V1.4 est une réorganisation de la démonstration et de sa présentation.
+Elle ne revendique pas de nouvel exposant par rapport à la V1.3.
+Les résultats optimaux, les hypothèses d'uniformité et les restrictions
+de portée restent ceux de cette version.
+
+\subsection*{Le fil directeur de l'article}
+L'article part directement des probabilités marginales exactes
+\(p_x=\E J_x\), plutôt que de refaire intégralement l'approximation sur
+l'ensemble régulier avant de la raffiner. La rigidité locale est placée
+près de cette définition : pour les fenêtres admissibles,
+\(p_x\in\{2^{-L},2^{1-L}\}\), à partir d'un seuil suffisamment grand.
+Les événements de probabilité nulle sont simplement omis.
+
+Le lecteur suit ensuite les identités affines, l'arrêt héréditaire,
+les entrées arithmétiques, le contrôle des triplets, puis la reconstruction
+et la borne inférieure. Les calculs longs sont appelés par des énoncés
+quantifiés et des renvois précis vers leurs preuves dans le compagnon.
+
+\subsection*{La place du taux optimal}
+Avec \(\mu_N=\E Z_N\), \(\alpha_N=\operatorname{Var}(Z_N)-\mu_N\),
+\(\Pi_\mu=\operatorname{Pois}(\mu)\) et
+\(\Delta=\delta_1-\delta_0\), le théorème 1.1 conserve
+\[
+ c_{C,\eps}N^{-4/3-\eps}
+ \le \left\|\Law(Z_N)-\Pi_{\mu_N}
+ -\frac{\alpha_N}{2}\Pi_{\mu_N}*\Delta^{*2}\right\|_1
+ \le C_{C,\eps}N^{-4/3+\eps}.
+\]
+L'optimalité porte sur la puissance de \(N\), avec une marge fixe
+arbitraire ; elle ne détermine ni le facteur logarithmique ni la constante
+du reste. La preuve reste annoncée sans hypothèse conjecturale.
+
+\clearpage
+\section*{2. Une preuve principale suivie sans détour}
+Le partage est organisé par dépendances. Le tableau indique ce que le
+lecteur trouve dans l'article et ce qu'il consulte dans le compagnon.
+Les numéros commençant par T désignent toujours ce dernier.
+
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{.23\textwidth}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+Étape & Article principal & Compagnon technique\\
+\midrule
+Modèle et marges
+& Modèle, résultats, marges exactes, preuve courte de rigidité locale ; sections 1--2.
+& Description des blocs locaux et conséquences supplémentaires ; T19.\\[4pt]
+Première interaction
+& Mécanisme des canaux rationnels et profil complet des paires ; section 3.
+& Estimations arithmétiques, budgets et preuves du profil ; T1--T3.\\[4pt]
+Algèbre et arrêt
+& Identités centrées, composantes directes, arrêt exact et exemple de suffixe dépendant ; sections 4--5.
+& Classe retenue de la construction sur l'ensemble régulier ; T12.\\[4pt]
+Sources et uniformité
+& Entrées quantitatives, moments fixés indépendants, certificats uniformes ; sections 6--10.
+& Géométrie des sources, moments de sélections courtes, itérations et certificats ; T4--T6 et T13.\\[4pt]
+Triplets et rigidité
+& Identités signées, rang des paires, courbe commune, grille, exposant \(41/30\) ; sections 11--14.
+& Partitions, confinement, construction biquadratique, résultants, noyaux résiduels ; T7--T10.\\[4pt]
+Reconstruction
+& Réduction des ordres fixés, queue uniforme, arrêt et borne inférieure quartique ; sections 15--16.
+& Deux preuves longues de dénombrement conditionnel ; T11.\\[4pt]
+Conséquences
+& Poids polynomiaux, canaux explicites, Hermite et énoncé positionnel ; sections 17--20.
+& Normes, preuve positionnelle, suppression, queues et limites de méthode ; T18--T23.\\
+\bottomrule
+\end{tabularx}
+\normalsize
+
+\subsection*{Ce qui reste visible dans l'article}
+La partie arithmétique conserve les idées qui expliquent les exposants :
+extraction de relations courtes, existence d'une courbe commune dont les
+bornes ne dépendent pas du nombre de vecteurs de base, passage à la grille
+des décalages et estimation de points entiers uniforme en degré.
+Le théorème 13.6 conserve le seuil suffisant
+\((2/3)\log 2<1/2\), sans le déclarer optimal.
+
+La géométrie du triplet \(10:12:15\), l'inégalité de recouvrement
+\(19/30\), sa compatibilité affine et la preuve du cumulant d'ordre trois
+restent également dans l'article. Le gain
+\(41/30-4/3=1/30\) suffit au majorant de la reconstruction.
+La borne inférieure du troisième cumulant est une conclusion distincte ;
+elle n'est pas utilisée pour prouver ce majorant.
+
+\clearpage
+\section*{3. Correspondance avec la V1.3}
+La table complète de l'archive permet de retrouver chaque ancien repère.
+Le tableau ci-dessous fournit le déplacement des grands blocs.
+
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{.20\textwidth}>{\raggedright\arraybackslash}p{.28\textwidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+V1.3 & Article V1.4 & Compagnon V1.4\\
+\midrule
+Sections 1--2 & Sections 1 et 3 & Preuves de profil en T3, entrées en T1--T2.\\[4pt]
+Sections 3--9 & Outils réutilisés en 4--8 & Preuves à sources fixées en T4 ; construction complète sur l'ensemble régulier en T12--T17.\\[4pt]
+Section 10 & Section 2 & La rigidité locale provient aussi de l'ancien lemme F.2.\\[4pt]
+Sections 11--14 & Sections 9--12 & Preuves techniques en T5--T8.\\[4pt]
+Section 15 & Section 13 & Extraction, construction et résultants en T9.\\[4pt]
+Section 16 & Section 14 & Triplets au-dessus des canaux alignés en T10.\\[4pt]
+Section 17 & Section 15 & Dénombrements denses et petits noyaux en T11.\\[4pt]
+Sections 18--20 & Sections 16--18 & Les preuves et conclusions centrales restent dans l'article.\\[4pt]
+Section 21 & Section 19 & Preuve des normes de différences en T18.\\[4pt]
+Annexes A--B & Énoncés utiles rappelés aux interfaces & T1--T2.\\[4pt]
+Annexes C--E & Renvois de portée & T20--T22.\\[4pt]
+Annexe F & Rigidité locale en 2 ; énoncé positionnel en 20 & Blocs, queues, preuve positionnelle, Palm, suppression et obstructions en T19.\\[4pt]
+Annexe G & Limite de la méthode rappelée dans le texte & Contre-exemple complet en T23.\\
+\bottomrule
+\end{tabularx}
+\normalsize
+
+\subsection*{Conservation vérifiée}
+Les \textbf{505 repères} de la V1.3 sont conservés chacun une fois.
+Les deux textes comportent toujours \textbf{167 énoncés} de type théorème,
+proposition, lemme ou corollaire : 73 dans l'article et 94 dans le compagnon.
+Les 166 environnements de démonstration sont également conservés dans
+l'ensemble. Quarante nouveaux repères servent à la navigation et aux
+interfaces de preuve.
+
+Ce contrôle inclut les identifiants et les déplacements ; il ne constitue
+pas à lui seul une validation mathématique. Les adaptations des identités
+affines aux marges exactes, les modifications de notation et les ajustements
+de preuves correspondants sont documentés dans les comptes rendus de sources.
+
+\subsection*{Pourquoi l'ancienne construction est conservée}
+Le taux \(N^{-4/5+\eps}\) de la reconstruction sur l'ensemble régulier
+reste utile pour le champ qui garde les positions et pour la suppression
+des doublets. Le déplacer dans le compagnon évite de faire parcourir
+deux reconstructions complètes au lecteur du résultat scalaire optimal,
+tout en préservant les outils nécessaires aux prolongements.
+
+\clearpage
+\section*{4. Résultats conservés et limites explicites}
+Les précisions ci-dessous concernent des références différentes. Leur
+distinction est maintenue dans les énoncés et dans l'introduction.
+
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{.28\textwidth}>{\raggedright\arraybackslash}p{.23\textwidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Objet & Conclusion & Emplacement dans l'article\\
+\midrule
+Poisson de moyenne nominale ou exacte
+& Équivalent d'ordre \(LN^{-2/3}\), coefficient explicite
+& Corollaire 1.2. Dépendance en \(N2^{-L}\) et \(L\bmod 3\).\\[4pt]
+Correction quadratique avec \(\mu_N,\alpha_N\) exacts
+& Puissance optimale \(4/3\)
+& Théorème 1.1 ; reconstruction 15.14 ; borne inférieure 16.2 ; assemblage en 17.\\[4pt]
+Troisième cumulant factoriel
+& Puissance optimale \(41/30\)
+& Théorème 14.1. Famille compatible \(10:12:15\), sans constante asymptotique générale annoncée.\\[4pt]
+Canaux jusqu'à une hauteur \(h\) fixée
+& Puissance optimale \(h/(h+1)\) et équivalent du premier niveau omis
+& Théorème 18.1. En particulier \(3/4,4/5,5/6\) pour \(h=3,4,5\).\\[4pt]
+Poids polynomiaux et moments fixés
+& Reste \(O(N^{-4/3+\eps})\)
+& Corollaire 17.1 ; ordre de moment fixé avant \(N\).\\[4pt]
+Absence de début retenu
+& \(e^{-\mu_N}(1+\alpha_N/2)+O(N^{-4/3+\eps})\)
+& Corollaire 17.2. Les fenêtres peuvent dépasser l'extrémité droite de l'intervalle.\\[4pt]
+Référence de Hermite exacte
+& Majorant \(O(N^{-4/3+\eps})\)
+& Corollaire 19.1. La borne inférieure de la référence quadratique ne lui est pas attribuée.\\[4pt]
+Champ positionnel non signé
+& Comparaison pondérée à puissance \(4/5\)
+& Lemme 20.1 ; preuve en T19. Positions conservées, signes et longueurs excédentaires non conservés.\\
+\bottomrule
+\end{tabularx}
+\normalsize
+
+\subsection*{Précautions qui structurent la preuve}
+La moyenne nominale \(\lambda_N=N2^{-L}\) ne remplace pas gratuitement
+\(\mu_N\) à la précision \(4/3\) : la proposition 17.3 explicite le
+biais quantifié. L'estimation de conversion de puissance \(5/3\)
+concerne la référence de Bernoulli \emph{avec tous les termes de covariance}.
+
+Les ordres fixés jusqu'à 256 sont séparés d'une queue uniforme sur les
+ordres plus grands. Le nombre 256 est un seuil suffisant, sans prétention
+d'optimalité. Les théorèmes de hauteur finie ne sont pas appliqués à
+\(h=h(N)\). Enfin, les queues d'un compte modifié ne deviennent pas
+automatiquement celles du compte original : les obstructions de T19 et
+T23 restent disponibles avec leurs démonstrations.
+
+\clearpage
+\section*{5. Contrôles et contenu de la livraison}
+La vérification de cette édition porte sur la fidélité de la scission,
+la cohérence des interfaces et la qualité des documents. Elle ne remplace
+pas une expertise humaine indépendante de l'ensemble des preuves.
+
+\subsection*{Contrôles réalisés}
+\begin{itemize}
+\item Conservation des 505 repères d'origine, absence de doublon et de
+renvoi non résolu ; conservation des 167 énoncés et des 166 environnements
+de preuve.
+\item Vérification des cibles des \textbf{209 liens entre documents}
+et des 608 liens internes aux deux PDF. Les numéros T restent utilisables
+lorsque le lecteur de PDF ne suit pas les liens entre fichiers.
+\item Relecture des dépendances : moments fixés disponibles avant
+l'interpolation, activité des triplets estimée avant reconstruction,
+preuve scalaire optimale indépendante de l'ancienne reconstruction globale.
+\item Contrôle visuel de toutes les pages, complété par l'examen en
+pleine page des tableaux, équations denses et interfaces. Aucune boîte
+débordante ni référence manquante dans les compilations finales.
+\item Réexécution des vérifications finies pertinentes pour les marges
+hétérogènes et l'arrêt : huit systèmes affines, 112 vérifications exactes,
+et les identités rationnelles du développement arrêté. Les trois autres
+diagnostics arithmétiques de la V1.3 et leurs résultats sont conservés
+sans présenter leur exécution antérieure comme une nouvelle certification.
+\end{itemize}
+
+La relecture a notamment clarifié la distinction entre le rang brut
+\(\rho\), qui compte les défauts locaux, et le rang relatif effectif
+\(\rho_{\mathrm{rel}}\). L'intensité incidente du champ positionnel
+est notée \(\iota_x\), pour ne pas réutiliser \(d_x=\dim S_x\).
+Quelques commandes typographiques héritées ont également été réparées.
+
+\subsection*{Les fichiers livrés}
+\begin{itemize}
+\item \textbf{Article principal en anglais :} 60 pages, sections 1--20,
+résultats, mécanisme arithmétique, reconstruction et optimalité.
+\item \textbf{Compagnon technique en anglais :} 93 pages, sections T1--T23,
+preuves détaillées et prolongements.
+\item \textbf{La présente note en français :} décision éditoriale,
+correspondance et portée.
+\item \textbf{Archive des sources :} sources des trois PDF, commandes
+de compilation, diagnostics, comptes rendus de contrôle et deux tableaux
+CSV de correspondance, l'un pour les 505 repères, l'autre pour les
+167 énoncés.
+\end{itemize}
+
+\subsection*{Reproduction et circulation}
+Le fichier \texttt{README.txt} indique les dépendances et les commandes.
+Depuis la racine des sources, \texttt{python3 build.py} compile les deux
+documents jusqu'à stabilisation des renvois. Le script de la note est
+\texttt{editorial/build\_note.sh}. Le contrôle des renvois est relançable
+avec \texttt{python3 editorial/check\_references.py}.
+
+Les deux PDF scientifiques portent la même version et la même date.
+Ils doivent être diffusés ensemble, en conservant leurs noms de fichiers
+si l'on veut utiliser les liens croisés. La V1.3 reste un état cumulatif
+de référence ; la V1.4 fournit la présentation organisée pour la lecture
+et l'évaluation.
+\end{document}

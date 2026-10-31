@@ -1,0 +1,37 @@
+name: Lean and source integrity
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      MATHLIB_NO_CACHE_ON_UPDATE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check disk and manuscript identities
+        run: |
+          python3 scripts/check_disk.py
+          python3 scripts/check_sources.py
+      - name: Install elan from its official repository
+        run: |
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Download only the required Mathlib cache
+        run: |
+          lake exe cache get Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Algebra.BigOperators.Group.Finset.Powerset Mathlib.Tactic.Ring.Basic
+          python3 scripts/check_disk.py
+      - name: Build with warnings as errors
+        run: lake build
+      - name: Check all initial declaration axioms
+        run: |
+          lake env lean Audit.lean > axiom-audit.txt
+          cat axiom-audit.txt
+          python3 scripts/check_axioms.py axiom-audit.txt

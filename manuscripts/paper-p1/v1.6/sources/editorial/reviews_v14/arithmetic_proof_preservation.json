@@ -1,0 +1,32 @@
+[
+  {
+    "section": "short_supports",
+    "proofs": 4,
+    "missing_verbatim_proofs": []
+  },
+  {
+    "section": "half_counts",
+    "proofs": 6,
+    "missing_verbatim_proofs": []
+  },
+  {
+    "section": "triple_activities",
+    "proofs": 4,
+    "missing_verbatim_proofs": []
+  },
+  {
+    "section": "confinement",
+    "proofs": 5,
+    "missing_verbatim_proofs": []
+  },
+  {
+    "section": "pair_rigidity",
+    "proofs": 12,
+    "missing_verbatim_proofs": []
+  },
+  {
+    "section": "third_cumulant",
+    "proofs": 6,
+    "missing_verbatim_proofs": []
+  }
+]

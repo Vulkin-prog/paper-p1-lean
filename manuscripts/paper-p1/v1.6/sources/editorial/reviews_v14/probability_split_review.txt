@@ -1,0 +1,102 @@
+P1 V1.4 — Probability split and dependency review
+31 October 2026
+Scope: structural reorganization of eight V1.3 source files; no new asymptotic claim.
+
+Files owned
+main_sections and companion_sections versions of:
+affine_algebra, stopped, fixed_moments, cores, closure, exact_setup,
+exact_transfer, quartic_lower.
+The local-rigidity lemma and proof from limits_appendix were moved into
+main_sections/exact_setup; the consequences editor removed their old copy.
+
+Conservation
+All 190 original labels from the eight files were found exactly once across
+our main/companion versions. The two local-rigidity labels were also found
+once. Root's complete 505-label audit checks the full assembly.
+Of 50 original proof environments, 45 remain verbatim. The five edited proofs
+are the first three affine-identity proofs (heterogeneous formulation),
+conditional propagation (factor 2 from p_x <= 2p), and the first-approximation
+proof (its independent reference-continuity calculation was extracted into
+main closure and replaced by an explicit cross-reference). Every other
+proof was retained intact, possibly relocated. A machine-readable list is in
+probability_proof_preservation.json. This checks preservation, not validity.
+
+Main article contents
+- exact_setup: exact effective spaces, marginals p_x in {p,2p} for admissible
+  windows, relative nullity, exact cumulant identities, and complete local
+  rigidity proof near its use. Fixed-source extension via linear sections
+  remains explicit, with fixed source/target number.
+- affine_algebra: complete centered Bernoulli, full-support Fourier,
+  compatible-nullity and canonical-component identities. They now use exact
+  heterogeneous marginals from the start; the original p-specialization
+  follows on the regular set. The algebraic proofs were correspondingly
+  updated, rather than merely changing notation in their statements.
+- stopped: the general finite hereditary identity, positive remainder kernel,
+  and fully dependent suffix example. The application-specific regular
+  two-channel class is in the companion.
+- fixed_moments: disjoint-recovery lemma and proof, fixed-source target
+  statement, conditional propagation and proof, independent fixed-moment
+  theorem statement. Detailed fixed-source curve/CRT arguments, primitive
+  classification, compressed primitive estimate, and moment proof are in
+  companion fixed_moments.
+- cores: exact kernel/count/degree/generator interfaces and their geometric
+  definitions. Complete elementary proofs plus the old all-cardinality
+  4/5 results are in companion cores.
+- closure: independent Lipschitz, positivity, and Charlier-norm facts. The
+  old first approximation and the downstream TV deduction are in companion
+  closure; no dependence on the final law is hidden in upstream reference
+  lemmas.
+- exact_transfer: the exact Bernoulli reference INCLUDING every covariance,
+  conversion, primitive mass, independent extension/pair deficits,
+  fixed-connected reduction, explicit uniform tails after 256, stopped
+  assembly, and final transfer proof remain. Detailed dense-target and
+  small-kernel proofs are relocated to companion exact_transfer, with
+  precise statements and a dense-count proof outline retained in main.
+- quartic_lower: retained in full, including positive compatible contribution,
+  cancellation of disconnected terms, the unbounded Charlier test and its
+  independent fixed-moment interpolation, and the limitation for Hermite.
+
+Dependency order
+The main article may read exact_setup, affine_algebra, stopped, fixed_moments,
+cores, closure, then the arithmetic half-count/rigidity/triple modules,
+exact_transfer, quartic_lower. Root inserts the pair arithmetic section and
+consequences at the appropriate places.
+Companion fixed_moments depends only on the arithmetic inputs and the main
+fixed-source statements; it proves bounded fixed moments without any
+reconstruction theorem. Companion cores uses those moments, main algebra,
+and certificate tools. Companion stopped defines the regular retained class;
+companion closure uses it and the old core bounds. Its TV-corollary proof is
+explicitly downstream of the final main theorem. Companion exact_transfer
+uses the earlier arithmetic geometric lemmas, not the transfer conclusion.
+
+Critical scope checks
+- No fixed-order constant is substituted at an order growing with N.
+- The 256 cutoff is a sufficient fixed cutoff, not an optimal constant.
+- The all-cardinality pair deficit remains N^{-3/2+epsilon}.
+- The conversion N^{-5/3+epsilon} applies to B_2 with all covariances,
+  not to the bare independent Bernoulli sum.
+- Effective relative rank excludes counting local defects twice.
+- The independent fixed-moment proof remains upstream of the quartic test.
+- The quartic lower bound is specific to the quadratic reference; it does
+  not establish the same optimal lower exponent for Hermite.
+- The regular 4/5 construction remains complete for positional/deletion uses;
+  it is not used as a prerequisite for the exact scalar reconstruction.
+
+Typographical corrections
+Two malformed inherited occurrences of a roman-font command in exact_transfer
+had become a literal newline followed by 'm odd' or 'm uniform in'. They were
+changed to \mathrm{odd} and \mathrm{uniform\ in}, respectively. No mathematical
+quantity was changed.
+
+Cross-review messages to root
+1. The introductory notation table must describe rho as the effective relative
+   nullity and q=eta*w with w=2^rho product(p_x). Homogeneous p powers are
+   restricted to the regular-set companion. Root was notified.
+2. Define S_x geometrically for every x in I_N (including impossible events),
+   while using p_x=2^{-d_x} only on the admissible set. This avoids leaving S_x
+   undefined in the broad fixed-source geometric count. Root was notified.
+
+Review limit
+This is a conservation and dependency audit of the split. It does not amount
+to a new independent proof of every inherited arithmetic estimate, a formal
+verification, or proof-assistant certification.

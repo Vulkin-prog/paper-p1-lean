@@ -1,0 +1,50 @@
+P1 V1.5 — independent probability revision review
+Date: 2026-10-31
+Agent: /root/p15_probability
+Scope: counterreview R1 and R2, with read-only check of the introduction dependency map.
+
+FILES EDITED
+1. main_sections/exact_transfer.tex
+2. companion_sections/exact_transfer.tex
+Internal artifacts: editorial/reviews/margin_budget.json; editorial/reviews/margin_table_proposal.tex; this file.
+No other manuscript file was edited by this agent. No PDF was compiled.
+
+R1: ACTUAL HYPOTHESES AND COMPONENT COUNT
+- R=ker(W⊕S_y⊕S_z → W+S_y+S_z). If its y-projection is zero then the other entries lie in W∩S_z=0; the analogous argument gives the z-injection. Thus d≤min(dim S_y,dim S_z)≤L. The proof uses both separate disjointness hypotheses exactly as stated.
+- Effective linear sections lift source/target values into physical coordinates and preserve the target injections. They do not assert that an irregular whole-window formal map is injective.
+- After codimension loss ξL, each target coordinate family spans (R')*. Every binary graph component has one nonzero label and bounded size. Including isolated active coordinates, each target separately therefore meets at least d' components. Repeated labels in different components only increase this count.
+- A prime greater than the fixed multiple H of B occurs at most once in each physical block. A distinct-label circuit has at least three vertices/blocks, so with only two free targets it meets a fixed source. Products assigned to a support divide a fixed source value. A fixed number of selected components has finitely many incident circuit supports; divisor choices and fixed position choices cost N^{o(1)}. Coefficient height per component is fixed before the number of geometric equations is selected. No arbitrary subspace or full deletion pattern is enumerated.
+- In the weak aligned case, u unit matches supply an even-selection space of dimension u−1. At most one local rank defect reduces its common image, giving u−2≤dim(S_y∩S_z)≤θL. Removing components incident to the endpoints of all but one unit removes at most 2(u−1)≤2θL+2 components. This is deletion from the selection, not a new restriction of R'.
+- Taking ξ≤min(η,δ)/4 and θ≤min(η,δ)/8 gives m_t≥d−(ξ+2θ)L−2 in each target. It is ≥ηL/3 for d≥ηL and >(1/2+δ/3)L for d>(1/2+δ)L, for large N.
+- The key inequality is separate in t=y,z: B≥n_{1,t}+2(m_t−n_{1,t}), hence n_{1,t}≥2m_t−B>(2δ/3)L−1. It concerns one-coordinate occurrences in a target, not necessarily globally singleton components. This distinction is explicit.
+- If a mixed singleton type is frequent, use the degree-one geometric count. Otherwise the finite type list leaves only O(1) mixed singleton components; the inequality supplies two components avoiding the other target for each center. Their roots are distinct because components have disjoint vertices. The uniform two-value Pell count then applies.
+- In the first stratum with only boundedly many mixed components, the revision selects a frequent univariate type separately in each target and a fixed number (at least two) of its disjoint component equations. This makes the distinct-root condition of the one-variable system explicit and avoids implying a generic bound for a single arbitrary curve.
+- The low/high strata give N^(1/2+ε')N^(−2+1/2+δ) and N^(ε')N^(−2+1). Choose δ+ε'<ε.
+- Important scope clarification: in a weakly aligned pair the entire spaces need not be in direct sum. The revision invokes the proof of the geometric lemma after excluding its low-degree curves, rather than silently claiming this stronger direct-sum hypothesis. The fixed selected target sets are locally injective by the Runge input, as in the existing proof.
+
+R2: EXACT FRACTION CHECKS
+- 11/8−41/30=1/120; the branch exponent itself is 5/3+1−31/24=11/8.
+- 3/2−41/30=2/15.
+- 41/30−4/3=1/30; reconstruction and arithmetic losses add, giving remaining gap 1/30−2τ.
+- 27/20−4/3=1/60.
+- Uniform-tail exponents after rank multiplication: 3/2, 1106/375, 27/20, 2279/1500. Their respective gaps to 4/3 are 1/6, 202/125, 1/60, 93/500. These fractions and their certificate formulas were checked exactly with fractions.Fraction.
+- Large-core parameters have θ+δ=109/125<1. Low-nullity parameters have θ+δ=67/375<1. Both satisfy A0(1−σ)=24/25<1.
+- Conversion exponent 5/3 leaves 1/3; the large boundary exponent 3 leaves 5/3.
+- Quartic signed error leaves 1/6 relative to α²≈L²N^(−4/3).
+- A2² and primitive four-block mass have ZERO strict margin at 4/3. They are retained contributions, not negligible errors. A2 with loss τ/2 gives A2² with loss τ.
+- Other κ3 sectors and their exact gaps appear in margin_budget.json, including small-nullity triples (gap 1/10), endpoint/repeated-index terms (gap 3/10), and the symbolic near-primitive gap 19/30−θ.
+
+PARAMETER CONVENTION
+The manuscript revision uses final accuracy ε_out and a separate fixed τ<min(ε_out/4,1/960). A completed estimate is invoked with total output loss at most τ. Its own raw internal parameters are chosen separately and can be smaller; factors share the allotted budget. This is not an assertion that one common raw epsilon works through every hidden O(eta). Only the 254 fixed orders 3..256 are combined using fixed-order constants. Higher orders retain their uniform certificate proof. Fixed weights and certificate parameters precede N, while the explicitly controlled cardinality cutoff K_N grows. The Charlier interpolation order is independently fixed after ε_out.
+
+CHANGES IN MAIN §15
+The main dense-pair proof pointer now displays the per-target inequality and identifies its role at half rank. In the uniform-tail proof the four exact power differences are displayed. In reconstruction the completed-estimate tolerance convention is made explicit and the two losses in N^τ A3 are added before comparison with 4/3. The conversion and factorial-boundary margins are stated.
+
+INTRODUCTION DEPENDENCY MAP (READ ONLY)
+The six-row map in main_sections/introduction.tex is coherent. The quartic identity uses pair arithmetic, positive fixed-source propagation, the compressed exceptional-target count, A3, and the two independent-extension deficit lemmas. It does not use the reconstruction conclusion. The lower bound then uses the quartic sign identity and independent moments. Suggested wording sent to root: add “and fixed-source counts” after “Pair profile” to cover the shared-vertex propagation and two-good-pair compressed target count. Distinguishing short-selection moments from moments of Z_N is correct.
+
+LIMITATIONS AND REVIEWER SUGGESTIONS
+No incorrect numerical suggestion was found in the counterreview. The per-target count and low/high rank argument are coherent under the existing hypotheses. This revision makes those deductions explicit without claiming a new geometric estimate. The exact finite arithmetic checks verify the displayed fractions and structural preservation; they do not certify the asymptotic arithmetic lemmas.
+
+STRUCTURAL CHECKS
+Against the V1.4 baseline, the complete ordered label lists and all theorem/lemma/proposition/corollary statement texts in both edited files are unchanged. No numbered equation or theorem environment was added; the proof additions use unnumbered displays and paragraphs.

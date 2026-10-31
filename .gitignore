@@ -1,0 +1,6 @@
+/.lake/
+/build/
+/.cache/
+/work/
+__pycache__/
+*.pyc

@@ -1,0 +1,122 @@
+P1 V1.6 — NON-RÉGRESSION ÉDITORIALE CIBLÉE
+31 octobre 2026
+
+Périmètre
+---------
+Relecture de la table p16:tab:references, du paragraphe « The ternary
+witness and the residual quadratic error », de la dernière sous-section
+de la discussion et de la table Entry / Proof / Return du guide.
+Comparaison avec les énoncés et preuves concernés dans les sections
+1, 9, 10, 13, 14, 16, 17, 18, 19, 20, T5, T6, T9, T10, T11 et T23.
+Cette vérification porte sur la fidélité des résumés et des quantificateurs,
+non sur une nouvelle validation exhaustive de toutes ces preuves.
+
+Conclusion
+----------
+Les résumés respectent les résultats. Aucun changement de portée ou erreur
+bloquante démontrée n'a été identifié. Trois précisions de formulation ont
+été transmises à root pour fermer des lectures ambiguës ; elles ne changent
+ni les énoncés ni les preuves.
+
+Table des cibles
+----------------
+— Poisson non corrigée : le corollaire 1.2 donne bien un équivalent de taille
+  L N^(-2/3) pour chacune des deux moyennes indiquées, sans optimisation
+  sur toutes les moyennes possibles.
+— Quadratique exacte : le théorème 1.1 fournit les deux puissances 4/3 avec
+  marges epsilon, sans équivalent intégral du reste.
+— Quadratique à moyenne nominale : la comparaison au biais est explicitement
+  conditionnée à un biais NON NUL. La table n'affirme pas qu'il est non nul
+  à une infinité d'échelles, ni un minorant universel de puissance 1.
+— Canaux tronqués : le tableau écrit chaque h >= 3 FIXÉ ; la hauteur omise
+  est h+1 et la puissance h/(h+1), conformément au théorème 18.1.
+— Hermite exacte : uniquement un majorant de puissance 4/3 est annoncé ;
+  le minorant de la référence quadratique ne lui est pas transféré.
+— Champ positionnel : la puissance 4/5 demeure distincte de celle du compte
+  scalaire ; positions entières conservées, signes et excès non conservés.
+  Les intensités de sites et d'arêtes, et non le seul cumulant, définissent
+  la cible. Précision recommandée : écrire « polynomial weight in the total
+  count », conformément au poids (1+|z|)^j du lemme 20.1.
+
+Témoin et obstruction quartique
+-------------------------------
+La normalisation 10t,12t,15t ->60t avec pas 6,5,4 est exacte. La formule
+avec les quatre parties entières donne bien 19L/30+O(1). Le poids d'un
+triplet sans relation supplémentaire est d'ordre N^(-71/30) ; la population
+est d'ordre N. Le paragraphe distingue ce témoin, sa compatibilité et son
+coefficient centré positif du contrôle supérieur de tous les triplets.
+
+Les conditions N=2^L et 30|L accompagnent bien le nombre 1/120. Précision
+recommandée : ce nombre est le coefficient de la contribution de la
+sous-famille à K3+, donc de sa somme de coefficients centrés ; la formule
+kappa3=6K3+ +erreur porte un facteur 6. Dire seulement « coefficient obtenu
+pour une sous-famille » est compatible avec la preuve mais peut laisser
+croire qu'il s'agit déjà du coefficient de sa contribution à kappa3.
+
+L'expansion de Hermite contient alpha^2 Pi_mu*Delta^4/8 et un reste
+O_l1(alpha^3). La non-annulation dans la vraie loi est séparément attribuée
+à la section 16. K4+ est expressément défini comme la somme des coefficients
+CENTRÉS sur les quadruples CONNECTÉS COMPATIBLES, ce qui correspond à la
+définition du début de cette section. Le terme 3alpha^2, le facteur 24 et
+l'erreur N^(-3/2+epsilon) concordent avec le lemme 16.1. L'interpolation à
+moments fixés ne produit qu'une puissance 4/3 avec marge ; le paragraphe
+n'annonce ni constante ni équivalent c L^2N^(-4/3) pour la norme.
+
+Dernière sous-section de la discussion
+-------------------------------------
+Les questions non résolues dans ce texte restent correctement distinguées :
+équivalent du reste quadratique, équivalent du troisième cumulant, minorant
+Hermite, corrections d'ordres supérieurs, optimisation de la moyenne.
+L'estimation pondérée scalaire ne remplace pas le contrôle vectoriel.
+L'obstruction aux taux issue des moments est correctement rattachée à T23.
+
+Précision recommandée : écrire « even eventual exact agreement at each
+fixed moment order » au lieu de « even exact agreement at every fixed
+moment order ». Dans T23, pour chaque r FIXÉ, l'égalité est vraie pour N
+assez grand dépendant de r. Elle n'est pas simultanée à tous les ordres
+pour une même paire de lois à N donné. Le mot « eventual » rend ce point
+immédiatement lisible, notamment en présence de moments exponentiels.
+
+Les remarques sur les poids d'arêtes, les signes et les distributions de
+Palm demandent une cible adaptée à chaque observation ; elles ne déduisent
+aucun résultat marqué de la seule approximation scalaire.
+
+Navigation locale
+-----------------
+Les cinq parcours ont été rapprochés des titres de preuve correspondants :
+1. Proposition 9.1 -> sous-section p14:comp:short:moments -> corollaire 9.2.
+   Le tableau mentionne correctement les estimations à diviseur prescrit
+   comme des entrées de la preuve, non comme l'intégralité de cette preuve.
+2. Théorème 10.1 -> sous-section p14:comp:half:iteration, avec son lemme de
+   certificat -> corollaire 10.2 (hôtes connexes à ordre fixé).
+3. Théorème 13.2 -> sous-section p14:comp:rigidity:common-curve ->
+   proposition 13.3, puis comptage uniforme en degré.
+4. Proposition 14.3 -> sous-section p14:comp:third:aligned-family ->
+   corollaire 14.4. Les paires exceptionnelles sont explicitement incluses.
+5. Lemme 15.2 -> sous-section p14:comp:transfer-dense-targets -> lemme 15.3,
+   puis estimations de masse primitive.
+
+La table écrit bien « Subsection » et avertit qu'un numéro peut désigner
+une sous-section ou un énoncé. Cela évite en particulier la collision entre
+la proposition T9.5 (deux témoins, dans T9.4) et la sous-section T9.5 (preuve
+de la courbe commune). Les labels pointent aux bonnes catégories d'objets.
+La résolution effective des liens et leur rendu PDF relèvent des contrôles
+de construction de root, et ne sont pas revendiqués par ce rapport.
+
+Clôture des trois précisions
+----------------------------
+Une nouvelle lecture des passages modifiés confirme que root a intégré
+les trois précisions : le coefficient 1/120 est attaché à la somme des
+coefficients centrés de la sous-famille ; la table des positions indique
+le poids dans le compte total ; le mot « eventual » précise la portée
+asymptotique de l'égalité des moments. Ces trois demandes sont closes.
+Aucune réserve éditoriale supplémentaire dans le périmètre relu.
+
+Sources de la réécriture — empreintes après ces trois précisions
+--------------------------------------------------------------
+main_sections/introduction.tex
+SHA-256 ea459063bbf81721a5c03965940f11a2a37bbd4e42089331108113e6b9f2b352
+main_sections/discussion.tex
+SHA-256 4525701ce6bf0b2cb83abdc4bbbfa560efa0cb02879d7371a0b1317af77e5a24
+companion_sections/guide.tex
+SHA-256 299593202a0d223990007bd97dc760cf60860b967c41679b475ba94ce7c86517

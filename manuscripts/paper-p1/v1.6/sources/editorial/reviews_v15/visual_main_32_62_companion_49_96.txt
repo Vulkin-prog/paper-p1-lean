@@ -1,0 +1,23 @@
+P1 V1.5 — visual review of assigned page ranges
+Date: 2026-10-31
+Reviewer: /root/p15_probability
+Source PNG directory: /workspace/scratch/e1eb5ae871e5/tmp/p15_visual/
+No compilation and no manuscript modification.
+
+SCOPE COMPLETED
+Contact-sheet review of every main-article page 32–62 (31 pages) and every companion page 49–96 (48 pages). Contact sheets viewed: main_contact_025_036, main_contact_037_048, main_contact_049_060, main_contact_061_062; companion_contact_049_060, companion_contact_061_072, companion_contact_073_084, companion_contact_085_096.
+
+Full-page review at original PNG resolution of main pages 36, 37, 38, 47, 48, 49, 50, 51, 52, 56, 57, 58, 61, 62 and companion pages 95, 96.
+
+RESULT
+No visible overflow, clipping, collision, unreadable formula, intrusive page break or missing text detected in the assigned scope. No corrective action requested.
+
+TARGETED OBSERVATIONS
+- Main 36–38: the rational witness formulas, the new final margin paragraph in §14, and the opening exact-marginal reconstruction/conversion display correctly. Long displays remain inside the text width.
+- Main 47–49: the four exact tail margins are readable; equation numbers do not collide with equations. The stopped expansion, finite-transfer formulas and explicit tau budget fit the page. Section 16 begins with its intentionally wrapped heading and sufficient following content.
+- Main 50–52: the quartic identity, the normalized error ratio, the Charlier/Hölder displays, the explicit two-loss calculation and weighted norm formulas remain readable. Section 17 begins near the bottom of page 51 with two lines of introductory text and continues normally on page 52; this is not an isolated heading or a disruptive cut.
+- Main 56–58: the finite-channel table is clean, with distinct columns and no overfull entries. The revised comparison/reference discussion and proof-structure paragraphs have consistent spacing and readable mathematical notation.
+- Main 61–62 and companion 95–96: bibliography entries 1–31 are fully present, with working visual line wrapping of DOI/arXiv/provider labels. No reference text crosses the margins or footer, and the last reference is complete.
+- Companion 49–94 on contact sheets: page text blocks, formulas, section/subsection starts, headers and footers are visually consistent; no blank/missing page or formula extending beyond the text block was observed. The shortened final content page before the bibliography is natural.
+
+The contact-sheet pass is a layout screen; full formula legibility was checked on the explicitly requested full-page subset. This report does not repeat mathematical validation.

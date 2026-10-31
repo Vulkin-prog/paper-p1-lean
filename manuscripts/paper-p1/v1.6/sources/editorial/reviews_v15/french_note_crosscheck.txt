@@ -1,0 +1,125 @@
+P1 V1.5 — Relecture de la note française et des descriptions de diagnostics
+31 octobre 2026
+
+PÉRIMÈTRE ET MÉTHODE
+
+Lecture seule de editorial/note_revision_fr.tex, README.txt, des cinq
+scripts de diagnostics, de check_all.py et des contrôles de production.
+Comparaison avec les demandes R1–R6 de la contre-review, l'audit de
+priorité intégralement lu et les passages révisés des deux manuscrits.
+Aucun diagnostic ni compilation n'a été relancé par cette relecture.
+Le statut d'exécution final appartient au compte rendu de check_all.py.
+
+1. ANNONCES SCIENTIFIQUES — CONFORMES
+
+La note décrit une révision d'attribution et d'exposition, sans annoncer
+de nouvel exposant. La double inégalité à puissance 4/3 porte bien sur
+Q_{mu_N,alpha_N}, avec paramètres exacts et marge epsilon fixe. L'absence
+de constante principale et de facteur logarithmique déterminés pour ce
+reste est répétée. Le cumulant d'ordre trois est distingué d'un équivalent
+complet ; h reste fixé ; la comparaison positionnelle reste non signée.
+Le non-transfert du minorant quadratique à l'Hermite exacte est explicite.
+
+La note conserve la priorité de Paper C v3 pour la loi de Poisson du
+champ marqué et l'interaction 2:3. Les six nouvelles attributions ont
+la bonne portée ; la vérification ciblée est distinguée d'une recherche
+exhaustive de priorité. La limitation d'accès au DOI de Griesmer est
+rapportée fidèlement, sans masquer la lecture de l'article original.
+
+2. COUVERTURE DES DEMANDES — CONFORME
+
+R1 : projections injectives vers chaque cible, génération du dual,
+composantes isolées, coefficients fournis par les sources, suppression
+des composantes alignées et n_{1,t} >= 2m_t-B sont tous présents dans
+la preuve T11 ; la note ne confond pas la suppression de composantes
+sélectionnables avec une restriction supplémentaire du noyau.
+
+R2 : les quatre écarts annoncés, les quatre contributions de queue,
+la séparation entre précision finale et paramètres internes et l'ordre
+de Hölder correspondent au registre ajouté. Les termes déjà au seuil
+4/3 ne sont pas présentés comme disposant d'une marge positive.
+
+R3 : les tableaux de T1 distinguent bien dimensions, degrés, hauteurs
+des points et coefficients, normalisation et ordre des choix. La note
+n'attribue pas à l'énoncé de Reuss l'uniformisation propre au compagnon.
+
+R4 : la carte distingue moments, triplets, reconstruction, identité
+quartique, minorant et conséquences pondérées. La note décrit cette
+séparation sans prétendre que le contrôle documentaire prouve la
+non-circularité de toute la démonstration.
+
+R5 : les restrictions sont explicitement rappelées, conformément au
+contrôle détaillé dans root_editorial_crosscheck.txt.
+
+R6 : la place de la preuve positionnelle de T19, des autres parties
+de T19 et de T20–T23 correspond au guide. La commande unique et la liste
+des domaines finis répondent à la demande. L'audit ne demandait pas
+d'adopter nécessairement ses plages numériques plus larges ; la note
+déclare correctement les plages réellement utilisées par les scripts.
+
+3. CINQ DIAGNOSTICS — VÉRIFICATION DES DESCRIPTIONS
+
+heterogeneous_formal_checks.py : huit lois jointes finies de Bernoulli,
+14 assertions principales par loi, soit 112. Une seule famille du jeu
+de données est le modèle explicite d'événements affines sur bits uniformes.
+Les autres sont indépendantes hétérogènes, identiques, exclusives ou
+arbitrairement dépendantes. Le script calcule des moments et cumulants
+factoriels jusqu'à l'ordre quatre et la référence B2 avec covariances.
+Il ne contrôle pas l'inégalité asymptotique de conversion en norme.
+
+stopped_exact_checks.py : toutes les classes héréditaires contenant le
+vide sur 1 à 4 sites et tous leurs états binaires ; exemple de suffixe
+dépendant, identité de paire retenue, quatre valeurs finies de mu pour
+le seuil de positivité. Description concordante.
+
+coefficient_exact_checks.py : couples premiers entre eux 1<=a<b<=12,
+L=1..96, deux signes ; placements L=1..100 ; deuxième différence de
+Poisson aux moyennes 1 et 2 ; coefficient 1/(12e). Description concordante.
+
+channel_and_triple_checks.py : L=5..150 et hauteurs intérieures 3..10,
+avec les identités fermées testées lorsque L>=b ; formule combinée de
+hauteur cinq ; préfacteurs rationnels de c_b(r) pour b=4,5,6 ; triplets
+primitifs 2<=u<150 et u<v<w<2u ; nullités du témoin pour L=31..300.
+Les trois préfacteurs sont 1/24, 17/300 et 1/45 : ils ne constituent
+pas une énumération séparée de toutes les constantes c_b(r).
+
+certify_biquadratic.py : une instance symbolique rationnelle, choix
+q=2 et k=6, annulations de coefficients, identité de norme par les
+quatre conjugués et bornes de degrés de cette instance. La note décrit
+correctement un certificat fini, sans uniformité asymptotique revendiquée.
+
+4. CORRECTIONS SIGNALÉES
+
+Déjà intégrées et relues :
+— « huit systèmes affines » remplacé par « huit lois jointes finies de
+  Bernoulli » dans la note et le README ;
+— « cumulant/Charlier calculations » remplacé par les identités de
+  cumulants factoriels dans le README ;
+— description des contrôles de phase limitée à leurs préfacteurs
+  rationnels aux hauteurs 4, 5 et 6.
+
+Précisions de libellé également intégrées et relues dans la note :
+— « Marges hétérogènes » -> « Marginales hétérogènes » ;
+— « identités de conversion » -> « identités de cumulants factoriels
+  jusqu'à l'ordre quatre » ;
+— « normes de Charlier » -> « normes de la deuxième différence de
+  Poisson », pour nommer exactement le calcul réalisé.
+
+5. ABSENCE DE SURVENTE DE VALIDATION
+
+Les nombres de pages et de liens sont alimentés par les macros de
+production, non figés arbitrairement dans la note. La commande unique
+enchaîne effectivement compilation, cinq diagnostics, contrôle de
+références et compilation de la note. La note distingue correctement
+ces opérations d'une vérification des preuves asymptotiques, d'une
+expertise humaine indépendante et d'une certification formelle.
+La circulation conserve les deux PDF associés et leurs références
+imprimées. Aucun envoi ni publication n'est annoncé.
+
+AVIS
+
+La note répond aux deux retours avec une portée fidèle. Les corrections
+relevées concernent la description exacte des calculs finis, sans effet
+sur les résultats mathématiques. Sous réserve de l'achèvement réussi
+des contrôles de production en cours, elle est prête pour la vérification
+de mise en page. Aucun fichier du manuscrit n'a été modifié ici.

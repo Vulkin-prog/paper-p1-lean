@@ -1,0 +1,47 @@
+P1 V1.4: French reorganization note cross-check
+Date: 31 October 2026
+Scope: read-only accuracy and visual review; no source edits.
+
+INPUTS CHECKED
+editorial/note_reorganisation_fr.tex; all five rendered note pages;
+current main/companion auxiliary numbering through the correspondence CSV
+and companion contents; editorial/references_audit.json;
+editorial/v14_diagnostic_runs.json.
+
+NUMBERING AND MAPPING
+The note correctly identifies the 60-page main article and 93-page
+companion, with sections 1--20 and T1--T23. All theorem numbers cited in
+the scope table agree with the current correspondence: main 1.1, 1.2,
+13.6, 14.1, 15.14, 16.2, 17.1--17.3, 18.1, 19.1 and 20.1.
+The block map from V1.3 sections 1--21 and Appendices A--G agrees with
+the final include structure. The old local-rigidity Lemma F.2 is now
+in main Section 2; the positional statement F.11 is now Lemma 20.1,
+with its proof and extensions in T19.
+
+COUNTS AND CHECK CLAIMS
+The source audit supports 505 original labels, 545 final labels (40 new),
+167 formal statements split 73/94, and 166 proof environments split
+48/118. It also supports 209 cross-document links (53+156) and 608
+internal links (285+323), no bad targets, no unresolved references,
+and no overfull boxes. The finite diagnostic record supports eight
+heterogeneous affine cases, 112 exact checks, and re-executed stopped
+identities. It distinguishes the three retained arithmetic diagnostics
+from newly executed checks, as does the note.
+
+MATHEMATICAL SCOPE
+The note makes no claim of a new exponent in V1.4. It correctly separates
+the exact quadratic 4/3 power, the factorial-cumulant 41/30 power, the
+fixed-height h/(h+1) hierarchy, the exact Hermite upper bound, and the
+positional 4/5 comparison. It does not transfer the quadratic lower bound
+to Hermite. It keeps the mean-bias caveat, fixed-order/growing-tail
+distinction, fixed height h, and the scope of the Bernoulli conversion.
+The checks are expressly described as conservation/interface/production
+checks, not a complete independent mathematical certification.
+
+VISUAL RESULT
+All five note pages were inspected at full resolution. Tables, formulas,
+headings, page numbering, and the reproduction commands fit cleanly.
+No clipping, overlap, unresolved glyph/reference, or faulty page break
+was found. The note is consistent with the final paired deliverables.
+
+No blocking issue or required correction was found.

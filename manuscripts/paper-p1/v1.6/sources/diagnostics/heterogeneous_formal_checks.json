@@ -1,0 +1,383 @@
+{
+  "document": "P1 V1.3",
+  "diagnostic": "Exact finite heterogeneous Bernoulli identities",
+  "arithmetic": "fractions.Fraction; no floating point arithmetic",
+  "python_version": "3.12.14",
+  "scope": "Eight finite joint Bernoulli laws with four to six variables, including dependent and incompatible events.",
+  "limitations": [
+    "A finite diagnostic of algebraic identities, not a proof of them for every joint law.",
+    "Does not test any arithmetic window-counting estimate or a growing-order asymptotic bound.",
+    "Does not numerically certify the Bernoulli-to-Poisson convolution-norm inequality.",
+    "Does not certify the optimal Poisson approximation exponent."
+  ],
+  "number_of_cases": 8,
+  "checks_per_case": 14,
+  "total_checks": 112,
+  "all_passed": true,
+  "cases": [
+    {
+      "name": "independent_heterogeneous",
+      "number_of_variables": 5,
+      "positive_joint_atoms": 32,
+      "marginals": [
+        "1/2",
+        "1/3",
+        "1/5",
+        "2/7",
+        "3/8"
+      ],
+      "mu": "1423/840",
+      "alpha": "-439849/705600",
+      "kappa3": "145861507/296352000",
+      "kappa4": "-51223474801/82978560000",
+      "signed_pair_activity": "0",
+      "absolute_pair_activity": "0",
+      "negative_B2_mass_positions": [],
+      "incompatible_triples_with_positive_centered_coefficient": [],
+      "checks": {
+        "mean_from_marginals": true,
+        "singletons_center_to_zero": true,
+        "full_centered_measure_identity": true,
+        "alpha_equals_2C2_minus_s2": true,
+        "heterogeneous_kappa3_identity": true,
+        "heterogeneous_kappa4_identity": true,
+        "B2_mass_one": true,
+        "B2_mean_exact": true,
+        "B2_second_factorial_moment_exact": true,
+        "B2_alpha_exact": true,
+        "B2_cubic_without_distinct_triples": true,
+        "B2_quartic_without_distinct_triples_or_quadruples": true,
+        "formal_factorial_quotient_to_degree_four": true,
+        "quadratic_reference_first_two_factorial_moments": true
+      },
+      "all_passed": true
+    },
+    {
+      "name": "five_identical_events",
+      "number_of_variables": 5,
+      "positive_joint_atoms": 2,
+      "marginals": [
+        "2/7",
+        "2/7",
+        "2/7",
+        "2/7",
+        "2/7"
+      ],
+      "mu": "10/7",
+      "alpha": "180/49",
+      "kappa3": "-520/343",
+      "kappa4": "-112080/2401",
+      "signed_pair_activity": "100/49",
+      "absolute_pair_activity": "100/49",
+      "negative_B2_mass_positions": [
+        1,
+        2
+      ],
+      "incompatible_triples_with_positive_centered_coefficient": [],
+      "checks": {
+        "mean_from_marginals": true,
+        "singletons_center_to_zero": true,
+        "full_centered_measure_identity": true,
+        "alpha_equals_2C2_minus_s2": true,
+        "heterogeneous_kappa3_identity": true,
+        "heterogeneous_kappa4_identity": true,
+        "B2_mass_one": true,
+        "B2_mean_exact": true,
+        "B2_second_factorial_moment_exact": true,
+        "B2_alpha_exact": true,
+        "B2_cubic_without_distinct_triples": true,
+        "B2_quartic_without_distinct_triples_or_quadruples": true,
+        "formal_factorial_quotient_to_degree_four": true,
+        "quadratic_reference_first_two_factorial_moments": true
+      },
+      "all_passed": true
+    },
+    {
+      "name": "five_mutually_exclusive_events",
+      "number_of_variables": 5,
+      "positive_joint_atoms": 6,
+      "marginals": [
+        "1/17",
+        "2/17",
+        "3/17",
+        "4/17",
+        "5/17"
+      ],
+      "mu": "15/17",
+      "alpha": "-225/289",
+      "kappa3": "6750/4913",
+      "kappa4": "-303750/83521",
+      "signed_pair_activity": "-5/17",
+      "absolute_pair_activity": "5/17",
+      "negative_B2_mass_positions": [
+        3,
+        4,
+        5
+      ],
+      "incompatible_triples_with_positive_centered_coefficient": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          1,
+          4
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "checks": {
+        "mean_from_marginals": true,
+        "singletons_center_to_zero": true,
+        "full_centered_measure_identity": true,
+        "alpha_equals_2C2_minus_s2": true,
+        "heterogeneous_kappa3_identity": true,
+        "heterogeneous_kappa4_identity": true,
+        "B2_mass_one": true,
+        "B2_mean_exact": true,
+        "B2_second_factorial_moment_exact": true,
+        "B2_alpha_exact": true,
+        "B2_cubic_without_distinct_triples": true,
+        "B2_quartic_without_distinct_triples_or_quadruples": true,
+        "formal_factorial_quotient_to_degree_four": true,
+        "quadratic_reference_first_two_factorial_moments": true
+      },
+      "all_passed": true
+    },
+    {
+      "name": "six_overlapping_affine_events_on_five_bits",
+      "number_of_variables": 6,
+      "positive_joint_atoms": 12,
+      "marginals": [
+        "1/2",
+        "1/4",
+        "1/4",
+        "1/2",
+        "1/4",
+        "1/8"
+      ],
+      "mu": "15/8",
+      "alpha": "-77/64",
+      "kappa3": "477/256",
+      "kappa4": "-10851/2048",
+      "signed_pair_activity": "-1/4",
+      "absolute_pair_activity": "5/8",
+      "negative_B2_mass_positions": [
+        6
+      ],
+      "incompatible_triples_with_positive_centered_coefficient": [
+        [
+          1,
+          4,
+          5
+        ]
+      ],
+      "checks": {
+        "mean_from_marginals": true,
+        "singletons_center_to_zero": true,
+        "full_centered_measure_identity": true,
+        "alpha_equals_2C2_minus_s2": true,
+        "heterogeneous_kappa3_identity": true,
+        "heterogeneous_kappa4_identity": true,
+        "B2_mass_one": true,
+        "B2_mean_exact": true,
+        "B2_second_factorial_moment_exact": true,
+        "B2_alpha_exact": true,
+        "B2_cubic_without_distinct_triples": true,
+        "B2_quartic_without_distinct_triples_or_quadruples": true,
+        "formal_factorial_quotient_to_degree_four": true,
+        "quadratic_reference_first_two_factorial_moments": true
+      },
+      "all_passed": true
+    },
+    {
+      "name": "arbitrary_dependent_n4_seed1304",
+      "number_of_variables": 4,
+      "positive_joint_atoms": 15,
+      "marginals": [
+        "111/203",
+        "110/203",
+        "16/29",
+        "89/203"
+      ],
+      "mu": "422/203",
+      "alpha": "-47352/41209",
+      "kappa3": "9521584/8365427",
+      "kappa4": "-2110246920/1698181681",
+      "signed_pair_activity": "-1233/41209",
+      "absolute_pair_activity": "8893/41209",
+      "negative_B2_mass_positions": [],
+      "incompatible_triples_with_positive_centered_coefficient": [],
+      "checks": {
+        "mean_from_marginals": true,
+        "singletons_center_to_zero": true,
+        "full_centered_measure_identity": true,
+        "alpha_equals_2C2_minus_s2": true,
+        "heterogeneous_kappa3_identity": true,
+        "heterogeneous_kappa4_identity": true,
+        "B2_mass_one": true,
+        "B2_mean_exact": true,
+        "B2_second_factorial_moment_exact": true,
+        "B2_alpha_exact": true,
+        "B2_cubic_without_distinct_triples": true,
+        "B2_quartic_without_distinct_triples_or_quadruples": true,
+        "formal_factorial_quotient_to_degree_four": true,
+        "quadratic_reference_first_two_factorial_moments": true
+      },
+      "all_passed": true
+    },
+    {
+      "name": "arbitrary_dependent_n5_seed1305",
+      "number_of_variables": 5,
+      "positive_joint_atoms": 31,
+      "marginals": [
+        "232/389",
+        "163/389",
+        "187/389",
+        "193/389",
+        "214/389"
+      ],
+      "mu": "989/389",
+      "alpha": "-198565/151321",
+      "kappa3": "86638798/58863869",
+      "kappa4": "-78658233726/22898045041",
+      "signed_pair_activity": "-79/151321",
+      "absolute_pair_activity": "23571/151321",
+      "negative_B2_mass_positions": [],
+      "incompatible_triples_with_positive_centered_coefficient": [],
+      "checks": {
+        "mean_from_marginals": true,
+        "singletons_center_to_zero": true,
+        "full_centered_measure_identity": true,
+        "alpha_equals_2C2_minus_s2": true,
+        "heterogeneous_kappa3_identity": true,
+        "heterogeneous_kappa4_identity": true,
+        "B2_mass_one": true,
+        "B2_mean_exact": true,
+        "B2_second_factorial_moment_exact": true,
+        "B2_alpha_exact": true,
+        "B2_cubic_without_distinct_triples": true,
+        "B2_quartic_without_distinct_triples_or_quadruples": true,
+        "formal_factorial_quotient_to_degree_four": true,
+        "quadratic_reference_first_two_factorial_moments": true
+      },
+      "all_passed": true
+    },
+    {
+      "name": "arbitrary_dependent_n6_seed1306",
+      "number_of_variables": 6,
+      "positive_joint_atoms": 63,
+      "marginals": [
+        "10/19",
+        "167/361",
+        "197/361",
+        "184/361",
+        "168/361",
+        "183/361"
+      ],
+      "mu": "1089/361",
+      "alpha": "-194615/130321",
+      "kappa3": "55109970/47045881",
+      "kappa4": "-11169430806/16983563041",
+      "signed_pair_activity": "1876/130321",
+      "absolute_pair_activity": "22867/130321",
+      "negative_B2_mass_positions": [],
+      "incompatible_triples_with_positive_centered_coefficient": [],
+      "checks": {
+        "mean_from_marginals": true,
+        "singletons_center_to_zero": true,
+        "full_centered_measure_identity": true,
+        "alpha_equals_2C2_minus_s2": true,
+        "heterogeneous_kappa3_identity": true,
+        "heterogeneous_kappa4_identity": true,
+        "B2_mass_one": true,
+        "B2_mean_exact": true,
+        "B2_second_factorial_moment_exact": true,
+        "B2_alpha_exact": true,
+        "B2_cubic_without_distinct_triples": true,
+        "B2_quartic_without_distinct_triples_or_quadruples": true,
+        "formal_factorial_quotient_to_degree_four": true,
+        "quadratic_reference_first_two_factorial_moments": true
+      },
+      "all_passed": true
+    },
+    {
+      "name": "arbitrary_dependent_n6_seed1313",
+      "number_of_variables": 6,
+      "positive_joint_atoms": 62,
+      "marginals": [
+        "14/27",
+        "122/243",
+        "349/729",
+        "38/81",
+        "118/243",
+        "380/729"
+      ],
+      "mu": "241/81",
+      "alpha": "-8815/6561",
+      "kappa3": "537608/531441",
+      "kappa4": "-7526102/14348907",
+      "signed_pair_activity": "35653/531441",
+      "absolute_pair_activity": "126025/531441",
+      "negative_B2_mass_positions": [],
+      "incompatible_triples_with_positive_centered_coefficient": [],
+      "checks": {
+        "mean_from_marginals": true,
+        "singletons_center_to_zero": true,
+        "full_centered_measure_identity": true,
+        "alpha_equals_2C2_minus_s2": true,
+        "heterogeneous_kappa3_identity": true,
+        "heterogeneous_kappa4_identity": true,
+        "B2_mass_one": true,
+        "B2_mean_exact": true,
+        "B2_second_factorial_moment_exact": true,
+        "B2_alpha_exact": true,
+        "B2_cubic_without_distinct_triples": true,
+        "B2_quartic_without_distinct_triples_or_quadruples": true,
+        "formal_factorial_quotient_to_degree_four": true,
+        "quadratic_reference_first_two_factorial_moments": true
+      },
+      "all_passed": true
+    }
+  ]
+}

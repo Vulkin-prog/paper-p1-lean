@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "checks": {
+    "finite_channel_identities": 2301,
+    "phase_constants": 3,
+    "rational_density_triples": 454126,
+    "positive_witness_nullities": 270
+  },
+  "maximum_finite_rational_density": "19/30",
+  "attaining_example": [
+    10,
+    12,
+    15
+  ],
+  "scope": "Finite identities and representative finite arithmetic checks; not proof of the asymptotic estimates."
+}

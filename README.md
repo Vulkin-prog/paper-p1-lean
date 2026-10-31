@@ -1,0 +1,70 @@
+# P1 — Lean formalization
+
+Formalization project for **Sharp Poisson approximation and second-order
+correction for long multiplicative runs**, main article and technical companion,
+by **Brice Pouly**, working version **1.6, 31 October 2026**.
+
+**Status: repository initialization. The paper is not yet formalized.**
+The initial Lean module develops the finite centering transform at orders zero,
+one and two. None of the 167 numbered manuscript results is marked complete.
+
+| Material | Location |
+|---|---|
+| Main article | [PDF](manuscripts/paper-p1/v1.6/P1_V1_6_Main_Article_2026-10-31_EN.pdf) |
+| Technical companion | [PDF](manuscripts/paper-p1/v1.6/P1_V1_6_Technical_Companion_2026-10-31_EN.pdf) |
+| French revision note | [PDF](manuscripts/paper-p1/v1.6/P1_V1_6_Revision_Note_2026-10-31_FR.pdf) |
+| Original archives, editable sources and identities | [Manuscript package](manuscripts/paper-p1/README.md) |
+| Coverage of all 167 numbered results | [Source-to-Lean correspondence](docs/MANUSCRIPT_ALIGNMENT.md) |
+| Corrections and mathematical improvements | [Mathematical change log](docs/MATHEMATICAL_CHANGELOG.md) |
+| Formalization state and next steps | [Status](docs/FORMALIZATION_STATUS.md) |
+| Paper C reuse candidates | [Reuse record](docs/PAPER_C_REUSE.md) |
+| Future Palomar registrations | [Preparation](docs/PALOMAR_PLAN.md) |
+
+## Reproducible environment
+
+Lean is pinned to **v4.36.0-rc2**. Mathlib is pinned to commit
+`9d581dfff2e41de989072ea63abf3daf69311520`, tagged `v4.36.0-rc2`,
+whose toolchain matches. The dependency lock file records all transitive revisions.
+
+```sh
+python3 scripts/check_disk.py
+MATHLIB_NO_CACHE_ON_UPDATE=1 lake update
+lake exe cache get Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Algebra.BigOperators.Group.Finset.Powerset Mathlib.Tactic.Ring.Basic
+python3 scripts/check_disk.py
+python3 scripts/check_sources.py
+lake build
+lake env lean Audit.lean
+```
+
+Use the committed lock file for ordinary builds; `lake update` is needed when
+initially resolving or intentionally updating dependencies. Cache downloads are
+restricted to the listed imports and their transitive dependencies. Set
+`XDG_CACHE_HOME`, `MATHLIB_CACHE_DIR` and `TMPDIR` to local Ubuntu directories if
+their defaults point elsewhere. Available-space warnings start at 10 GiB; large
+downloads must stop below 5 GiB. See [environment policy](docs/ENVIRONMENT.md).
+
+`lake build` treats Lean warnings as errors. `Audit.lean` exposes the kernel
+axioms of each initial proved declaration. A successful build verifies only
+the checked declarations, not the unformalized manuscript claims. The source
+integrity check verifies file identities and the coverage inventory; it does
+not certify mathematical proofs.
+
+## Scope and attribution
+
+The target includes exact marginals and square-class spaces, affine and stopped
+expansions, arithmetic estimates, scalar reconstruction and optimality,
+rational-channel refinements and the companion's additional results. External
+mathematical inputs will be individually tracked rather than hidden as axioms.
+
+The project follows the traceability approach of
+[paper-c-lean](https://github.com/Vulkin-prog/paper-c-lean). No Paper C Lean code
+has been imported at initialization. Its old compiled files are not reusable
+under this compiler. Palomar registrations are planned after completion and
+qualification; no registration exists for this project yet.
+
+New Lean code, project scripts and project documentation are licensed under
+[Apache-2.0](LICENSE), following Paper C. The unchanged manuscript package is
+excluded from that grant and retains its original authorship and terms; no new
+manuscript licence is inferred. The source package records its original AI
+assistance. Repository setup and initial development are agent-assisted;
+compilation and source checks are distinct from independent human review.

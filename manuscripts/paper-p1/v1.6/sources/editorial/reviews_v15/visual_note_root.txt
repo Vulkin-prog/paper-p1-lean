@@ -1,0 +1,2 @@
+P1 V1.5, root visual review, 31 October 2026.
+All six French note pages inspected at 90 dpi. Page 3 rerendered after clarifying that the 256 cutoff concerns connected activities in reconstruction. No overlap, clipping, split table, unreadable formula or abnormal page gap found. Companion pages 6 and 10 also inspected by root; detailed full coverage of both scientific PDFs is recorded in the three parallel visual reviews.

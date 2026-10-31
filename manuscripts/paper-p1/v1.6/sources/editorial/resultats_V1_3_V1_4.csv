@@ -1,0 +1,168 @@
+﻿repere,type,numero_v1_3,page_v1_3,document_v1_4,numero_v1_4,page_v1_4,titre_v1_3,fichier_v1_3,fichier_v1_4
+p1:thm:main,theorem,1.1,3,main,1.1,3,Optimal quadratic Poisson--Charlier approximation,sections/introduction.tex,main_sections/introduction.tex
+p1:cor:explicit,corollary,1.4,4,main,1.4,4,An explicit probability reference,sections/introduction.tex,main_sections/introduction.tex
+p1:cor:tv,corollary,1.2,4,main,1.2,4,Exact total variation scale,sections/introduction.tex,main_sections/introduction.tex
+p1:arith:core,proposition,2.1,11,main,3.1,12,Regular set,sections/arithmetic.tex,main_sections/arithmetic.tex
+p1:arith:hosts,proposition,2.2,12,main,3.2,13,Support and residual mass,sections/arithmetic.tex,main_sections/arithmetic.tex
+p1:arith:pairs,theorem,2.3,13,main,3.3,14,Complete pair profile,sections/arithmetic.tex,main_sections/arithmetic.tex
+p1:arith:edgefamily,corollary,2.4,14,main,3.4,14,The pair input for the expansion,sections/arithmetic.tex,main_sections/arithmetic.tex
+p1:arith:compression,lemma,2.5,15,main,3.5,15,Exact compression of a good edge,sections/arithmetic.tex,main_sections/arithmetic.tex
+p1:arith:palm,proposition,2.6,15,companion,T3.1,24,Positive Palm cost of a good edge,sections/arithmetic.tex,companion_sections/arithmetic.tex
+p1:alg:centred,proposition,3.1,16,main,4.1,15,Centered Bernoulli expansion,sections/affine_algebra.tex,main_sections/affine_algebra.tex
+p1:alg:fourier,lemma,3.2,16,main,4.2,16,Full-support Fourier formula,sections/affine_algebra.tex,main_sections/affine_algebra.tex
+p1:alg:compatible,lemma,3.3,17,main,4.3,16,Compatible-nullity majorant,sections/affine_algebra.tex,main_sections/affine_algebra.tex
+p1:alg:components,lemma,3.4,17,main,4.4,17,"Existence, uniqueness, and factorization",sections/affine_algebra.tex,main_sections/affine_algebra.tex
+p1:stop:measure,proposition,4.2,18,main,5.2,18,A positive remainder kernel,sections/stopped.tex,main_sections/stopped.tex
+p1:stop:polynomial,lemma,4.1,18,main,5.1,18,Expansion at the first excluded prefix,sections/stopped.tex,main_sections/stopped.tex
+p1:stop:class,lemma,4.4,20,companion,T12.1,47,Heredity and boundary nullity,sections/stopped.tex,companion_sections/stopped.tex
+p1:stop:tail,lemma,4.5,20,companion,T12.2,48,Large boundary families,sections/stopped.tex,companion_sections/stopped.tex
+p1:fixed:recovery,lemma,5.1,21,main,6.1,19,Disjoint recovery,sections/fixed_moments.tex,main_sections/fixed_moments.tex
+p1:fixed:CRT,lemma,5.3,22,companion,T4.2,25,A product certificate with fixed sources,sections/fixed_moments.tex,companion_sections/fixed_moments.tex
+p1:fixed:curve,lemma,5.2,22,companion,T4.1,25,Several disjoint square equations,sections/fixed_moments.tex,companion_sections/fixed_moments.tex
+p1:fixed:targets,proposition,5.4,22,main,6.2,20,Large rank loss after fixed sources,sections/fixed_moments.tex,main_sections/fixed_moments.tex
+p1:fixed:propagation,proposition,5.5,23,main,6.3,20,Conditional sums and propagation,sections/fixed_moments.tex,main_sections/fixed_moments.tex
+p1:fixed:primitive,proposition,5.6,24,companion,T4.3,26,Fixed primitive mass,sections/fixed_moments.tex,companion_sections/fixed_moments.tex
+p1:fixed:compressed,proposition,5.7,25,companion,T4.4,28,Fixed primitive mass after pair compression,sections/fixed_moments.tex,companion_sections/fixed_moments.tex
+p1:fixed:moments,theorem,5.8,26,main,6.4,21,Fixed factorial moments,sections/fixed_moments.tex,main_sections/fixed_moments.tex
+p1:core:fixed-centred,lemma,6.1,28,companion,T14.1,50,Absolute centred mass at a fixed order,sections/cores.tex,companion_sections/cores.tex
+p1:core:primitive,theorem,6.2,29,companion,T14.2,51,Primitive families at all cardinalities,sections/cores.tex,companion_sections/cores.tex
+p1:core:moderate,lemma,6.4,30,main,7.2,22,Counting moderate certificates,sections/cores.tex,main_sections/cores.tex
+p1:core:rankin,lemma,6.3,30,main,7.1,21,Counting a small truncated squarefree kernel,sections/cores.tex,main_sections/cores.tex
+p1:core:degrees,lemma,6.5,31,main,7.3,22,Incoming and outgoing saturation degrees,sections/cores.tex,main_sections/cores.tex
+p1:core:generator,lemma,6.6,31,main,7.4,22,A generating function with marked isolated vertices,sections/cores.tex,main_sections/cores.tex
+p1:core:compressed,theorem,7.1,33,companion,T15.1,53,A distinguished compressed pair at all cardinalities,sections/cores.tex,companion_sections/cores.tex
+p1:core:exceptional,lemma,7.2,34,companion,T15.2,54,A single pair is the only remaining active component,sections/cores.tex,companion_sections/cores.tex
+p1:core:low-nullity,theorem,8.1,35,companion,T16.1,55,All cardinalities below two ranks,sections/cores.tex,companion_sections/cores.tex
+p1:core:positive-core,proposition,8.2,35,companion,T16.2,56,Positive mass of high-nullity cores,sections/cores.tex,companion_sections/cores.tex
+p1:core:bounded-nullity,theorem,8.3,36,companion,T16.3,57,Bounded compatible nullity on the growing range,sections/cores.tex,companion_sections/cores.tex
+p1:close:deficit-bounds,lemma,9.1,38,companion,T17.1,58,Bounds for the independent deficits,sections/closure.tex,companion_sections/closure.tex
+p1:close:retained-reference,proposition,9.2,39,companion,T17.2,59,Evaluation of the retained polynomial,sections/closure.tex,companion_sections/closure.tex
+p1:close:boundary-mass,proposition,9.3,40,companion,T17.3,60,Positive mass outside the retained class,sections/closure.tex,companion_sections/closure.tex
+p13:base-approximation,proposition,9.5,41,companion,T17.5,62,The first quadratic approximation,sections/closure.tex,companion_sections/closure.tex
+p1:close:conversion,lemma,9.4,41,companion,T17.4,61,Poisson--Charlier conversion,sections/closure.tex,companion_sections/closure.tex
+p1:close:positivity,lemma,9.6,42,main,8.1,23,Positivity of the quadratic Poisson correction,sections/closure.tex,main_sections/closure.tex
+p13:short:quadratic,lemma,11.1,45,companion,T5.1,30,A quadratic kernel with a prescribed divisor,sections/short_supports.tex,companion_sections/short_supports.tex
+p13:short:split,lemma,11.2,45,companion,T5.2,30,Kernels of a split product,sections/short_supports.tex,companion_sections/short_supports.tex
+p13:short:moments,proposition,11.3,46,main,9.1,24,Uniform moments for short split products,sections/short_supports.tex,main_sections/short_supports.tex
+p13:short:old-space,corollary,11.4,47,main,9.2,24,Short projections in an old space,sections/short_supports.tex,main_sections/short_supports.tex
+p13:half:conditional,theorem,12.1,48,main,10.1,25,Conditional full-support count,sections/half_counts.tex,main_sections/half_counts.tex
+p13:half:small-kernels,lemma,12.2,48,companion,T6.1,32,Two small kernels,sections/half_counts.tex,companion_sections/half_counts.tex
+p13:half:smooth,lemma,12.3,48,companion,T6.2,32,A large smooth modulus,sections/half_counts.tex,companion_sections/half_counts.tex
+p13:half:saturation,lemma,12.4,49,companion,T6.3,33,Incoming and outgoing certificate counts,sections/half_counts.tex,companion_sections/half_counts.tex
+p13:half:connected,corollary,12.5,50,main,10.2,25,Connected and primitive families at fixed order,sections/half_counts.tex,main_sections/half_counts.tex
+p13:activity:pair-partition,lemma,13.1,51,companion,T7.1,34,A finite partition of the pair activity,sections/triple_activities.tex,companion_sections/triple_activities.tex
+p13:half:pairs,corollary,12.6,51,main,10.3,26,Dependent pairs,sections/half_counts.tex,main_sections/half_counts.tex
+p13:activity:deficit,proposition,13.2,52,main,11.1,26,The independent cost of one target after a pair,sections/triple_activities.tex,main_sections/triple_activities.tex
+p13:activity:incompatible,theorem,13.3,52,main,11.2,26,Absolute activity of incompatible triples,sections/triple_activities.tex,main_sections/triple_activities.tex
+p13:activity:kappa3,proposition,13.4,52,main,11.3,27,The third cumulant and the positive activity,sections/triple_activities.tex,main_sections/triple_activities.tex
+p13:conf:dense-primitive,theorem,14.2,53,companion,T8.2,36,Dense primitive triples,sections/confinement.tex,companion_sections/confinement.tex
+p13:conf:groups,lemma,14.1,53,companion,T8.1,35,Polynomial confinement of common divisors,sections/confinement.tex,companion_sections/confinement.tex
+p13:conf:dense-pairs,corollary,14.3,54,companion,T8.3,36,Dense nonaligned pairs,sections/confinement.tex,companion_sections/confinement.tex
+p13:conf:near-primitive,proposition,14.4,54,main,12.1,27,Dense triples with weak proper intersections,sections/confinement.tex,main_sections/confinement.tex
+p13:conf:strong-profile,proposition,14.5,55,main,12.2,28,A strong nonaligned pair in a triple,sections/confinement.tex,main_sections/confinement.tex
+p13:rig:local-square,lemma,15.1,56,companion,T9.1,37,A local square threshold,sections/pair_rigidity.tex,companion_sections/pair_rigidity.tex
+p13:rig:components,lemma,15.3,57,companion,T9.3,39,Free components,sections/pair_rigidity.tex,companion_sections/pair_rigidity.tex
+p13:rig:defective,lemma,15.2,57,companion,T9.2,38,Few defective positions in every critical window,sections/pair_rigidity.tex,companion_sections/pair_rigidity.tex
+p13:rig:short-basis,theorem,15.4,58,main,13.1,29,A short basis with a controlled loss of dimension,sections/pair_rigidity.tex,main_sections/pair_rigidity.tex
+p13:rig:factor-height,lemma,15.5,59,companion,T9.4,40,Height of a bivariate factor,sections/pair_rigidity.tex,companion_sections/pair_rigidity.tex
+p13:rig:two-witnesses,proposition,15.6,59,companion,T9.5,40,Two complete witnesses,sections/pair_rigidity.tex,companion_sections/pair_rigidity.tex
+p13:rig:common-curve,theorem,15.7,61,main,13.2,29,A common curve,sections/pair_rigidity.tex,main_sections/pair_rigidity.tex
+p13:rig:bcn,theorem,15.9,62,main,13.4,30,Binyamini--Cluckers--Novikov,sections/pair_rigidity.tex,main_sections/pair_rigidity.tex
+p13:rig:grid-fibres,proposition,15.8,62,main,13.3,30,Integer fibres in the offset grid,sections/pair_rigidity.tex,main_sections/pair_rigidity.tex
+p13:rig:sublinear-grid,corollary,15.10,62,main,13.5,30,Sublinear counts in the offset box,sections/pair_rigidity.tex,main_sections/pair_rigidity.tex
+p13:rig:aligned,proposition,15.12,63,main,13.7,31,Rank on a known alignment,sections/pair_rigidity.tex,main_sections/pair_rigidity.tex
+p13:rig:nonaligned,theorem,15.11,63,main,13.6,31,A uniform nonaligned rank bound,sections/pair_rigidity.tex,main_sections/pair_rigidity.tex
+p13:rig:triple,corollary,15.13,64,main,13.8,32,Triple rank and maximum joint probability,sections/pair_rigidity.tex,main_sections/pair_rigidity.tex
+p13:third:main,theorem,16.1,65,main,14.1,33,Optimal power of the third factorial cumulant,sections/third_cumulant.tex,main_sections/third_cumulant.tex
+p13:third:rational-rank,lemma,16.2,66,main,14.2,33,A sharp rational overlap inequality,sections/third_cumulant.tex,main_sections/third_cumulant.tex
+p13:third:aligned-family,proposition,16.3,67,main,14.3,34,Triples meeting finitely many aligned channels,sections/third_cumulant.tex,main_sections/third_cumulant.tex
+p13:third:aligned,corollary,16.4,69,main,14.4,34,Strong aligned pairs,sections/third_cumulant.tex,main_sections/third_cumulant.tex
+p13:third:lower,proposition,16.5,69,main,14.5,35,The rational lower bound,sections/third_cumulant.tex,main_sections/third_cumulant.tex
+p13:third:activity,corollary,16.6,71,main,14.6,36,Absolute third-order activity,sections/third_cumulant.tex,main_sections/third_cumulant.tex
+p13:transfer:conversion,lemma,17.1,71,main,15.1,37,Conversion with heterogeneous marginals,sections/exact_transfer.tex,main_sections/exact_transfer.tex
+p13:transfer:dense-targets,lemma,17.2,72,main,15.2,38,Conditional dense pair estimate,sections/exact_transfer.tex,main_sections/exact_transfer.tex
+p13:transfer:compressed-target,lemma,17.3,73,main,15.3,38,A dense compressed target,sections/exact_transfer.tex,main_sections/exact_transfer.tex
+p13:transfer:primitive,proposition,17.5,74,main,15.5,39,Primitive mass from four blocks onwards,sections/exact_transfer.tex,main_sections/exact_transfer.tex
+p13:transfer:small-kernels,lemma,17.4,74,main,15.4,38,Several small kernels in one window,sections/exact_transfer.tex,main_sections/exact_transfer.tex
+p13:transfer:independent-deficit,lemma,17.6,76,main,15.6,40,Uniform independent deficit,sections/exact_transfer.tex,main_sections/exact_transfer.tex
+p13:transfer:fixed-deficit,lemma,17.7,77,main,15.7,41,A fixed number of extensions of a pair,sections/exact_transfer.tex,main_sections/exact_transfer.tex
+p13:transfer:independent-tail,lemma,17.8,77,main,15.8,41,Independent full-support tails,sections/exact_transfer.tex,main_sections/exact_transfer.tex
+p13:transfer:fixed-activities,proposition,17.10,78,main,15.10,43,Reduction of connected activities,sections/exact_transfer.tex,main_sections/exact_transfer.tex
+p13:transfer:pair-deficit,proposition,17.9,78,main,15.9,42,The pair deficit over all cardinalities,sections/exact_transfer.tex,main_sections/exact_transfer.tex
+p13:transfer:anchor-budgets,lemma,17.11,80,main,15.11,44,Certificate budgets with several anchors,sections/exact_transfer.tex,main_sections/exact_transfer.tex
+p13:transfer:uniform-tail,proposition,17.12,81,main,15.12,45,Uniform connected and primitive tails,sections/exact_transfer.tex,main_sections/exact_transfer.tex
+p13:transfer:finite,theorem,17.13,82,main,15.13,46,Finite transfer to the complete law,sections/exact_transfer.tex,main_sections/exact_transfer.tex
+p13:transfer:reconstruction,theorem,17.14,83,main,15.14,47,Reconstruction from triple activity,sections/exact_transfer.tex,main_sections/exact_transfer.tex
+p13:lower:quartic,lemma,18.1,84,main,16.1,48,The fourth factorial cumulant,sections/quartic_lower.tex,main_sections/quartic_lower.tex
+p13:lower:optimal,theorem,18.2,85,main,16.2,49,Optimal power for the exact quadratic reference,sections/quartic_lower.tex,main_sections/quartic_lower.tex
+p13:optimal:weighted,corollary,19.1,86,main,17.1,50,Every fixed polynomial weight,sections/optimal_closure.tex,main_sections/optimal_closure.tex
+p13:optimal:zero,corollary,19.2,86,main,17.2,51,No retained start,sections/optimal_closure.tex,main_sections/optimal_closure.tex
+p13:channels:hierarchy,theorem,20.1,87,main,18.1,52,The optimal error of every fixed height truncation,sections/channel_hierarchy.tex,main_sections/channel_hierarchy.tex
+p13:optimal:nominal,proposition,19.3,87,main,17.3,51,The quantized mean bias,sections/optimal_closure.tex,main_sections/optimal_closure.tex
+p13:channels:weighted-nonaligned,lemma,20.2,88,main,18.2,52,Weighted nonaligned pairs,sections/channel_hierarchy.tex,main_sections/channel_hierarchy.tex
+p13:channels:height-five,corollary,20.3,89,main,18.3,54,The error of the two-channel reference,sections/channel_hierarchy.tex,main_sections/channel_hierarchy.tex
+p1:cor:compound,corollary,21.1,90,main,19.1,55,Hermite approximation with single and double jumps,sections/discussion.tex,main_sections/discussion.tex
+p1:discussion:charlier-norm,proposition,21.2,91,main,19.2,56,Norms of Poisson differences,sections/discussion.tex,main_sections/discussion.tex
+p1:arith:pell,lemma,A.2,94,companion,T1.2,4,Uniform quadratic equation count,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:runge,lemma,A.1,94,companion,T1.1,4,A split-product bound uniform in the degree,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:defects,lemma,A.3,95,companion,T1.3,5,Local and global defect counts,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:reuss,lemma,A.4,95,companion,T1.4,5,Uniform determinant estimate,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:twokernel,lemma,A.5,97,companion,T1.5,7,Two small odd kernels,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:anchor,lemma,A.6,98,companion,T1.6,8,A large selected kernel,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:geometric,lemma,A.7,99,companion,T1.7,9,The uniform geometric counts,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:alignedrank,lemma,A.9,102,companion,T1.9,12,Uniform residual rank on an aligned pair,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:asymmetric,lemma,A.10,102,companion,T1.10,12,An asymmetric pair profile,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:dense,lemma,A.8,102,companion,T1.8,12,The dense weighted sector,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:palmrank,lemma,A.11,103,companion,T1.11,13,Aligned loss above a rational pair,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:fixed-homogeneous-seeds,proposition,A.12,104,companion,T1.12,14,Homogeneous seeds for fixed extensions,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:fixed-branching,proposition,A.15,105,companion,T1.15,15,A fixed number of exposed source windows,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:fixed-support,proposition,A.14,105,companion,T1.14,15,A relative relation meeting several blocks,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:small-kernels,lemma,A.13,105,companion,T1.13,15,Small-kernel counts for fixed-width blocks,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:ternary-budget,proposition,A.16,106,companion,T1.16,16,A ternary group budget,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:twogoodpositive,lemma,A.17,107,companion,T1.17,17,A positive second moment for good edges,sections/arithmetic_appendix.tex,companion_sections/arithmetic_appendix.tex
+p1:arith:coordinate-regularisation,lemma,B.2,108,companion,T2.2,19,Coordinate regularisation,sections/supplemental_arithmetic.tex,companion_sections/supplemental_arithmetic.tex
+p1:arith:smallpart-budget,lemma,B.1,108,companion,T2.1,18,A small-prime coefficient budget,sections/supplemental_arithmetic.tex,companion_sections/supplemental_arithmetic.tex
+p1:arith:ternary-degree,corollary,B.3,109,companion,T2.3,19,Constraints meeting three blocks,sections/supplemental_arithmetic.tex,companion_sections/supplemental_arithmetic.tex
+p1:arith:fixed-channel-mass,lemma,B.5,110,companion,T2.5,20,Mass of a fixed channel,sections/supplemental_arithmetic.tex,companion_sections/supplemental_arithmetic.tex
+p1:arith:fixed-channel-rank,lemma,B.6,110,companion,T2.6,20,Additional rank in a fixed channel,sections/supplemental_arithmetic.tex,companion_sections/supplemental_arithmetic.tex
+p1:arith:finite-family-triples,corollary,B.8,111,companion,T2.8,22,Triples containing a good pair,sections/supplemental_arithmetic.tex,companion_sections/supplemental_arithmetic.tex
+p1:arith:fixed-channel-palm,proposition,B.7,111,companion,T2.7,21,Palm mean for a fixed channel,sections/supplemental_arithmetic.tex,companion_sections/supplemental_arithmetic.tex
+p1:offset:line-product,lemma,C.1,112,companion,T20.1,79,The prime product on an offset line,sections/offset_geometry.tex,companion_sections/offset_geometry.tex
+p1:offset:forced-plane,proposition,C.3,113,companion,T20.3,80,A forced plane uses all three coordinates,sections/offset_geometry.tex,companion_sections/offset_geometry.tex
+p1:offset:integer-tail,lemma,C.2,113,companion,T20.2,79,An integer product tail,sections/offset_geometry.tex,companion_sections/offset_geometry.tex
+p1:offset:normal-budget,lemma,C.4,114,companion,T20.4,80,Many planar supports force a small normal,sections/offset_geometry.tex,companion_sections/offset_geometry.tex
+p1:offset:planar-components,proposition,C.6,114,companion,T20.6,81,Many transverse square products on prescribed planes,sections/offset_geometry.tex,companion_sections/offset_geometry.tex
+p1:offset:root-separation,lemma,C.5,114,companion,T20.5,81,At most one common root,sections/offset_geometry.tex,companion_sections/offset_geometry.tex
+p1:offset:cover-rank,lemma,C.7,115,companion,T20.7,82,Covering cost and free components,sections/offset_geometry.tex,companion_sections/offset_geometry.tex
+p1:offset:six-vertex,proposition,C.8,116,companion,T20.8,82,A six-vertex budget for the residual space,sections/offset_geometry.tex,companion_sections/offset_geometry.tex
+p1:consequences:macro,proposition,D.1,117,companion,T21.1,83,Profiles depend on the interval,sections/arithmetic_consequences.tex,companion_sections/arithmetic_consequences.tex
+p1:consequences:conditional-rank,lemma,D.2,118,companion,T21.2,84,Conditional rank loss,sections/arithmetic_consequences.tex,companion_sections/arithmetic_consequences.tex
+p1:consequences:rankin-patterns,lemma,D.3,118,companion,T21.3,85,A Rankin bound for offset patterns,sections/arithmetic_consequences.tex,companion_sections/arithmetic_consequences.tex
+p1:consequences:confinement,proposition,D.4,119,companion,T21.4,85,Polylogarithmic confinement,sections/arithmetic_consequences.tex,companion_sections/arithmetic_consequences.tex
+p1:uniform:full-support,proposition,E.1,120,companion,T22.1,86,A weighted count of every full support,sections/uniform_appendix.tex,companion_sections/uniform_appendix.tex
+p1:uniform:missing-block,lemma,E.2,120,companion,T22.2,87,When no relation uses every block,sections/uniform_appendix.tex,companion_sections/uniform_appendix.tex
+p1:uniform:branching,proposition,E.4,121,companion,T22.4,88,Independent extensions at the critical order,sections/uniform_appendix.tex,companion_sections/uniform_appendix.tex
+p1:uniform:one-pair,corollary,E.5,121,companion,T22.5,88,A single pair at all critical orders,sections/uniform_appendix.tex,companion_sections/uniform_appendix.tex
+p1:uniform:prime-budget,lemma,E.3,121,companion,T22.3,87,Rankin under a logarithmic prime budget,sections/uniform_appendix.tex,companion_sections/uniform_appendix.tex
+p1:uniform:modified-moments,proposition,E.6,122,companion,T22.6,89,Moment decomposition and pair leakage,sections/uniform_appendix.tex,companion_sections/uniform_appendix.tex
+p1:uniform:replicas,proposition,E.7,123,companion,T22.7,90,The replica formula and positive propagation,sections/uniform_appendix.tex,companion_sections/uniform_appendix.tex
+p1:limits:lattice,proposition,F.1,124,companion,T19.1,64,Support and factorial lattice,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:local-rigidity,lemma,F.2,124,main,2.1,10,Local rigidity,sections/limits_appendix.tex,main_sections/exact_setup.tex
+p1:limits:local-blocks,proposition,F.3,125,companion,T19.2,64,Exact local blocks,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:modified,theorem,F.4,126,companion,T19.3,65,A modified count with all factorial tails,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:branching,lemma,F.5,127,companion,T19.4,66,Branching with an explicit order dependence,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:effective-tail,proposition,F.6,127,companion,T19.5,67,A quantified effective support,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:colored-tail,proposition,F.7,128,companion,T19.6,67,A very small tail beyond a near-linear threshold,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:cylinder,proposition,F.8,129,companion,T19.7,68,Divergence of the real exponential moment,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:peeling,lemma,F.9,129,companion,T19.8,69,Deleting large private ranks,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:large-component,proposition,F.10,130,companion,T19.9,69,A real component of quadratic nullity,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:vector-reference,lemma,F.11,131,main,20.1,58,Unsigned positional compound-Poisson comparison,sections/limits_appendix.tex,main_sections/limits_appendix.tex
+p1:limits:erasure,proposition,F.12,132,companion,T19.10,71,"Deletion, isolation, and remaining covariances",sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:signed-palm,proposition,F.14,134,companion,T19.12,74,The signed Palm measure,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:stein,lemma,F.13,134,companion,T19.11,73,A scalar recurrence criterion,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:all-pairs,proposition,F.16,136,companion,T19.14,75,All active pair dependencies can be removed,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:weighted-residual,lemma,F.15,136,companion,T19.13,75,A recurrence norm equivalent to total variation,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:reciprocal,lemma,F.17,137,companion,T19.15,76,Reciprocal odd-prime pivots,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:private-exact,proposition,F.18,138,companion,T19.16,77,Exact logarithmic cost of this forcing,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:limits:all-anchors,proposition,F.19,139,companion,T19.17,78,An obstruction for every such anchor,sections/limits_appendix.tex,companion_sections/limits_appendix.tex
+p1:obstruction:fixed,proposition,G.1,139,companion,T23.1,91,A perturbation invisible at each fixed order,sections/moment_obstruction.tex,companion_sections/moment_obstruction.tex

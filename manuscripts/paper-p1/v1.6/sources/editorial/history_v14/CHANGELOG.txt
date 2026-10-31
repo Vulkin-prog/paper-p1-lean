@@ -1,0 +1,46 @@
+P1 V1.4 -- 31 October 2026
+
+Starting point: P1 V1.3, the 142-page cumulative manuscript delivered on
+31 October 2026.
+
+Editorial change
+---------------
+The work is now presented as a 60-page main article and a 93-page technical
+companion, with a common version/date and cross-document references.
+The article follows the exact-marginal proof directly. The companion
+retains the complete regular-set 4/5 reconstruction and all extensions.
+
+Conservation
+------------
+All 505 old labels, 167 numbered results and 166 proof environments are
+retained across the two texts. Full correspondence tables are supplied.
+Proofs moved to the companion are identified by the statement number in
+the article; the article states quantitative hypotheses at the interface.
+
+Notation and presentation
+-------------------------
+- Local rigidity moved beside the exact marginals.
+- S_x is defined for all x in I_N; p_x=2^(-dim S_x) is restricted to
+  admissible events.
+- Affine identities use heterogeneous marginals explicitly; on the regular
+  set their homogeneous specializations recover the old argument.
+- Raw nullity and effective relative nullity are explicitly distinguished.
+- Positional incident-edge intensity is iota_x, avoiding collision with d_x.
+- The positional field definition now has an actual equation number.
+- Four inherited malformed roman-type expressions were repaired.
+- The channel table heading now says 'First omitted channels'.
+- Chronological references, the uniformity guide and reading routes were
+  rewritten for the two-document architecture.
+- AI assistance and source information identify the V1.4 archive.
+
+Verification
+------------
+Cross-reviews checked conservation and dependencies. Every PDF page was
+visually inspected; key dense pages were also inspected at full resolution.
+All internal and cross-document link targets were checked. The heterogeneous
+and stopped finite diagnostics were rerun; other V1.3 finite outputs remain
+available with their original scope. Clean source-archive compilation and
+final artifact hashes are recorded in production_checks.json.
+
+No new asymptotic exponent, formal proof certification, independent human
+verification, journal submission or publication is claimed by this revision.

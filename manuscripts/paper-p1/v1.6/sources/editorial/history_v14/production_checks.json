@@ -1,0 +1,79 @@
+{
+  "edition": "P1 V1.4",
+  "date": "2026-10-31",
+  "artifact_pages": {
+    "P1_V1_4_Main_Article_2026-10-31_EN.pdf": 60,
+    "P1_V1_4_Technical_Companion_2026-10-31_EN.pdf": 93,
+    "P1_V1_4_Note_de_reorganisation_2026-10-31_FR.pdf": 5
+  },
+  "artifacts": [
+    {
+      "filename": "P1_V1_4_Main_Article_2026-10-31_EN.pdf",
+      "pages": 60,
+      "bytes": 759086,
+      "sha256": "274ac0688c1a1c566cc1408a92a815e35ed57cefb48bb5ab6676c490bb4d7ecb"
+    },
+    {
+      "filename": "P1_V1_4_Technical_Companion_2026-10-31_EN.pdf",
+      "pages": 93,
+      "bytes": 908784,
+      "sha256": "59710bc8e3c8862aa10128d145573af3a560f3dfc1021f9df28ba568a29345dd"
+    },
+    {
+      "filename": "P1_V1_4_Note_de_reorganisation_2026-10-31_FR.pdf",
+      "pages": 5,
+      "bytes": 259803,
+      "sha256": "4a93c7d7ad3a5bce2c35238d0827949a661570a0b47ee629e31bc3c40d17d662"
+    }
+  ],
+  "reference_audit": "editorial/references_audit.json",
+  "visual_reviews": [
+    "visual_main_01_30.txt",
+    "visual_main_31_60.txt",
+    "visual_companion_01_47.txt",
+    "visual_companion_48_93_and_final.txt",
+    "note_reorganisation_crosscheck.txt"
+  ],
+  "note_log": {
+    "Overfull": 0,
+    "Underfull": 0,
+    "undefined": 0,
+    "multiply defined": 0
+  },
+  "diagnostics": "editorial/v14_diagnostic_runs.json",
+  "clean_archive_rebuild": {
+    "status": "passed",
+    "scope": "Clean source archive builds all three PDFs with identical page counts and extracted text; cross-document reference audit also passes.",
+    "steps": [
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "build.py"
+        ],
+        "exit_code": 0,
+        "seconds": 6.673
+      },
+      {
+        "command": [
+          "sh",
+          "editorial/build_note.sh"
+        ],
+        "exit_code": 0,
+        "seconds": 1.248
+      },
+      {
+        "command": [
+          "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+          "editorial/check_references.py"
+        ],
+        "exit_code": 0,
+        "seconds": 5.125
+      }
+    ],
+    "pages": {
+      "main": 60,
+      "companion": 93,
+      "note": 5
+    }
+  }
+}

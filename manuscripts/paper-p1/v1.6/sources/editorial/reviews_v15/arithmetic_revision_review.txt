@@ -1,0 +1,55 @@
+P1 V1.5 — Révision arithmétique et périmètre des suppléments
+Date : 31 octobre 2026
+Agent : p15_arithmetic
+
+PÉRIMÈTRE ET MODIFICATIONS
+
+Les deux retours complets ont été lus : Audit_priorite_P1_V1_4_2026-10-31_FR et Contre_review_P1_V1_4_2026-10-31_FR. La présente intervention répond à l'attribution de T1.2, à R3, et fournit la carte demandée pour R6. Le seul fichier de manuscrit modifié est companion_sections/arithmetic_appendix.tex. Les anciennes lignes sont toutes conservées : trois insertions, 92 lignes ajoutées, aucun énoncé, aucune preuve préexistante, aucune étiquette supprimés ou changés. Aucune compilation PDF n'a été lancée par cet agent.
+
+T1.2 — ATTRIBUTION VÉRIFIÉE
+
+Un paragraphe précédant p1:arith:pell attribue le comptage uniforme à Cilleruelo–Garaev, Section 3, Lemma 4 et Proposition 1, avec la formulation directement comparable de Tao, Lemma 2.10. Les clés convenues avec l'agent bibliographique sont cilleruelogaraev2011 et tao2026anatomy.
+
+La vérification primaire confirme la réduction pertinente : si ab n'est pas carré, (au)^2 - ab v^2 = ah possède des coefficients et variables de taille N^{O(A0)}, ce qui est précisément la plage du Lemma 4 de Cilleruelo–Garaev. Le cas ab carré est distinct et reste couvert par la factorisation d'une différence de carrés, h étant non nul. L'argument par idéaux et unités est conservé comme preuve autonome de l'uniformité, sans revendication d'originalité de cette brique.
+
+Sources effectivement ouvertes et passages lus :
+— https://arxiv.org/pdf/1007.1526v2 : §3, Proposition 1 et Lemma 4, p.5 imprimée ; preuve pp.5–7.
+— https://arxiv.org/html/2603.27990v3#S2.SS5 : Lemma 2.10 ; version 3, 26 septembre 2026.
+
+R3 — T1.4, PARAMÈTRES DE LA MÉTHODE DU DÉTERMINANT
+
+Le tableau distingue la variété d'entrée (dimension 3 dans A4, degré total 3), la courbe auxiliaire dans P1 x P1 (bidegrés fixés) et les éliminants des petits bidegrés. Il conserve les tailles des boîtes et des coefficients. Les hauteurs des changements de réseau, des facteurs auxiliaires et des résultants sont polynomialement bornées ; leurs exposants sont fixés après les degrés auxiliaires.
+
+L'ordre des choix est écrit explicitement : marge finale epsilon ; petite marge zeta ; degrés A,B0 et exposant de hauteur kappa ; puis epsilon' tel que (C+kappa)epsilon' <= zeta ; enfin N. Cette dernière contrainte charge effectivement le facteur ||G||^{epsilon'} et le facteur de hauteur des couples dans la marge choisie. Elle n'exige pas une borne uniforme en degrés variables : ces degrés restent fixés avant N.
+
+Le paragraphe rappelle que la normalisation est relative : alpha=O(M^{-1}), beta=O(|h|/N), M=N^zeta calM. Le rapport c1/c2 est absorbé dans t0, et ne crée pas une perte supplémentaire sur beta. Le tableau n'attribue pas cette uniformisation au théorème énoncé par Reuss, dont la constante dépend du décalage fixé h.
+
+Sources vérifiées :
+— https://arxiv.org/pdf/1212.3150v2 : Theorem 1, Lemma 7, §§2.1–2.3. Le coefficient 9/8, les monômes de bidegré fixé et la hauteur polynomiale de l'auxiliaire sont bien ceux du mécanisme de départ ; la portée variable en c1,c2 et h est établie dans les quatre étapes du compagnon.
+— https://arxiv.org/pdf/1010.6217v3 : Lemma 2 (p.9 imprimée), avec couples primitifs, facteur ||G||^{epsilon'}, et aucune contrainte de hauteur sur le second couple. Les cas a=0, b=0 et min(a,b)=1 sont séparés dans la preuve locale ; le tableau ne prétend pas les déduire du seul lemme externe.
+
+R3 — T1.7, PLONGEMENTS ET HAUTEURS
+
+Le deuxième tableau suit les quatre appels externes réellement effectués : surface projetée dans A3 à hauteur N^D ; courbes relevées dans le plongement de Veronese à hauteur N^D ; surface de type (a,1) à hauteur N^q ; courbes relevées dans l'espace ordinaire A^{k+2}, q=(a+1+A0)/2. Le paramètre m=binom(D+2,2)+k-1 désigne la dimension ambiante du chart affine de Veronese, dont une coordonnée Z^D vaut 1.
+
+Les degrés de surfaces sont au moins 2^k et sont bornés en termes des seuls paramètres fixes. Les courbes pouvant porter les hôtes comptés ont degré au moins 2D dans le premier plongement, et E+1 dans le second, après les exclusions déjà démontrées aux étapes 3 et 5–6. La hauteur des équations projetées est polynomiale par élimination en degrés fixés ; les bornes externes n'exigent cependant aucune borne de hauteur des coefficients des courbes de recouvrement. Le tableau n'invente donc pas une borne sur ces coefficients que Salberger ne fournirait pas.
+
+Ordres de choix affichés : A0,K,epsilon puis D puis k puis marge interne ; pour le type (a,1), q puis E avec q/(E+1)<epsilon/8, puis k satisfaisant les contraintes de l'étape 6, puis marge interne. La dépendance des constantes en dimensions et degrés est admise puisqu'ils sont fixés avant N. La taille N^{A0} des d_nu varie avec N ; la constante externe ne dépend pas de leurs valeurs. L'énumération N^{o(1)} des coefficients lisses dans l'application aux graphes est explicitement séparée du comptage d'un système arbitraire.
+
+Sources vérifiées :
+— https://arxiv.org/pdf/2311.05561v1 : Salberger, Lemma 2, PDF p.2 ; nombre de courbes H^{1/sqrt(d)+epsilon}, ensemble exceptionnel H^{2/sqrt(d)+epsilon}, degrés bornés en fonction de d seulement.
+— https://www.numdam.org/item/AST_1995__228__183_0.pdf : Pila, Theorem A, p.183 ; uniformité à dimension, degré et espace ambiant fixés ; indépendance de la hauteur de la variété rappelée p.184. Le cas des courbes donne H^{1/e+epsilon} après choix d'une marge interne fixe.
+
+R6 — CARTE DES SUPPLÉMENTS T19–T23
+
+Le fichier supplementary_scope_map.json recense les 37 résultats numérotés, leurs étiquettes, leurs références explicites et leur rôle. Il inclut aussi la preuve non numérotée des positions, que l'on ne doit pas perdre en classant globalement T19 comme supplément.
+
+Aucun des résultats T19–T23 n'est un input du noyau scalaire optimal, de la preuve initiale des moments, du cumulant d'ordre trois ou du minorant quartique. Les Corollaires 17.1–17.2, la Proposition 17.3 et la comparaison d'Hermite ne requièrent pas ces suppléments. En particulier, T19.1–T19.2 donnent des informations plus fines sur le support et les blocs locaux ; la Proposition 17.3 dérive directement la quantification de la moyenne des marginales exactes et ne dépend pas de ces propositions.
+
+Exception nécessaire : la sous-section p14:comp:positional-proof, également étiquetée p1:limits:positions, prouve le lemme principal p1:limits:vector-reference (20.1). Ses entrées explicites sont p1:stop:polynomial, p1:close:total-deficits, p1:stop:norm, p1:fixed:moments, ainsi que les définitions p14:positions:section et p1:limits:compound-target. Le rétablissement des fenêtres supprimées et les bornes des bonnes arêtes relèvent des résultats arithmétiques précédents. Les propositions de suppression et de Palm qui suivent sont des conséquences de cette branche ; elles ne la fondent pas.
+
+Trois liens restants soutiennent l'explication et les limites : T19.7 (p1:limits:cylinder) pour la divergence des moments exponentiels réels, T21.1 (p1:consequences:macro) pour la dépendance au domaine, T23.1 / p1:moment-obstruction pour l'insuffisance des moments fixés. T20 et T22 sont des prolongements autonomes. Les appellations «uniforme» et «ordre critique» de T22 ne doivent pas faire croire qu'ils remplacent le contrôle uniforme séparé de la grande frontière au §15.
+
+LIMITES DE CETTE VÉRIFICATION
+
+Cette intervention vérifie l'adéquation des nouveaux tableaux aux étapes déjà présentes, l'attribution et les hypothèses des sources ciblées, ainsi que les dépendances explicites des suppléments. Elle ne constitue pas une certification indépendante exhaustive des preuves de géométrie arithmétique ni de l'ensemble de T19–T23. Le contrôle visuel des deux tableaux est laissé à la compilation et à la relecture PDF de l'agent principal.

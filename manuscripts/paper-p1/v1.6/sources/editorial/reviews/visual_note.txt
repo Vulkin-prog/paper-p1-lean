@@ -1,0 +1,97 @@
+P1 V1.6 — RELECTURE INTÉGRALE DE LA NOTE FRANÇAISE
+31 octobre 2026
+
+Périmètre
+---------
+Lecture complète de editorial/note_revision_fr.tex et inspection visuelle
+des cinq pages PNG page_001.png à page_005.png dans
+/workspace/scratch/e1eb5ae871e5/tmp/p16_visual/final/note/.
+Après les deux précisions de vocabulaire et de localisation signalées à
+root, nouvelle inspection de page_002_updated.png, correspondant à la
+page 2 du PDF final. Le PDF reste de cinq pages.
+
+Résultat de l'inspection visuelle
+---------------------------------
+Les cinq pages sont lisibles et cohérentes. Les titres, paragraphes,
+numéros de page et trois tableaux complets gardent des marges suffisantes.
+Aucune ligne de tableau coupée entre deux pages, formule tronquée,
+superposition ou débordement de texte n'a été observé. Les fractions,
+parties entières, indices et exposants sensibles sont lisibles.
+La page 2 corrigée conserve une mise en page propre ; son développement
+Hermite et l'identité quartique tiennent intégralement dans la largeur.
+
+Contenu et quantificateurs
+-------------------------
+E1 : les SIX cibles du tableau sont fidèles aux résultats : deux moyennes
+Poisson spécifiées, quadratique exacte à puissance optimale 4/3, référence
+nominale conditionnée au biais non nul, hauteur h fixée, majorant Hermite
+sans minorant optimal établi, champ positionnel à puissance 4/5 avec poids
+dans le compte total. Aucun transfert du résultat scalaire vers un champ
+marqué n'est annoncé.
+
+E2 : les pas 6,5,4, la nullité 19L/30+O(1), les puissances 71/30 et 41/30,
+les conditions N=2^L et 30|L sont corrects. Le nombre 1/120 est attaché à
+la contribution de la sous-famille à K3+, avec mention explicite du facteur
+six vers le cumulant. K4+ est une somme de coefficients centrés sur les
+quadruples connexes compatibles. Le développement de Hermite est séparé
+de la non-annulation arithmétique ; aucune équivalence cL^2N^(-4/3) n'est
+revendiquée pour le reste de loi.
+
+E3 : les trois normes sont affichées avec les bons objets. La somme directe
+après compression porte bien sur toute la collection ; la covariance d'une
+paire incompatible reste présente. B2 contient toutes les covariances,
+et le coût de conversion annoncé est 5/3. Les ordres fixes 3 à 256 restent
+séparés de la queue uniforme.
+
+E4 : la table des CINQ parcours distingue expressément les sous-sections
+des énoncés homonymes. Les destinations et retours concordent avec les
+labels déjà relus dans le guide, notamment la sous-section T9.5.
+
+E5 : le renvoi au tableau et les questions restantes sont décrits sans
+annonce de suppression de preuve ou de résultat.
+
+E6 : le lot complet annoncé comprend la paire de manuscrits, la note et
+les sources. Les noms relatifs des PDF croisés sont conservés. La présence
+finale dans l'archive relève du contrôle de livraison de root, pas de cette
+inspection visuelle.
+
+S1 et N1 : les contrôles ciblés sont décrits comme contre-lectures assistées,
+avec périmètre et limites. Le texte n'annonce ni nouvelle expertise humaine,
+ni formalisation, ni certification exhaustive. Les sept distinctions de
+l'audit sont conservées. Les diagnostics finis sont séparés des estimations
+asymptotiques, et les programmes privés de l'audit ne sont pas présentés
+comme exécutés. L'égalité des moments est éventuelle à chaque ordre fixé,
+avec un seuil qui peut dépendre de cet ordre.
+
+Deux précisions signalées et closes
+----------------------------------
+1. « Le second cumulant » est devenu « Le second cumulant factoriel ».
+2. L'ouverture E2 renvoie à l'introduction pour le marqueur de début de run
+   (défini en 1.1), puis à la section 1.2 pour l'anticipation du témoin.
+Ces deux changements sont présents dans le PDF final et dans son rendu
+corrigé. Aucune autre correction de français ou de portée n'est demandée.
+
+Métriques confrontées aux journaux actuels
+------------------------------------------
+— Article : 63 pages ; compagnon : 96 pages ; note : 5 pages.
+— 167 énoncés théorème/proposition/lemme/corollaire conservés textuellement.
+— 545 anciens labels préservés ; 546 labels au total avec celui de la table.
+— Liens croisés : 59 + 169 = 228.
+— Liens internes nommés : 322 + 338 = 660.
+Ces nombres correspondent à production_metrics.tex et references_audit.json
+(status passed). Le périmètre de ces journaux reste un contrôle documentaire,
+non une preuve mathématique.
+
+Clôture du constat transitoire de compilation
+-------------------------------------------
+Un ancien verification_run.json portait status failed, avec returncode 12
+à build_note. Ce constat a été signalé à root. La passe finale relue porte
+maintenant status passed ; ses huit étapes ont toutes returncode 0 :
+compilation des articles, cinq diagnostics, références et compilation de
+la note. Le PDF final de cinq pages inclut les deux corrections ci-dessus.
+Ce constat transitoire est clos ; aucune réserve de production ne reste
+ouverte dans le périmètre de cette relecture.
+
+Empreinte du PDF final inspecté
+------------------------------
+SHA-256 eb7a1ada79697eca218d7c32adcaa556cb1627fb0e869ab95c1504eedb27bac4

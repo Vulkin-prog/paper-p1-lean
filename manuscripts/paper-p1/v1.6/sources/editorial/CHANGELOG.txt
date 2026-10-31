@@ -1,0 +1,18 @@
+P1 V1.6 -- 31 October 2026
+Response to AUDIT_P1_V1_5_2026-10-31_FR.pdf.
+
+E1: Add Table1 comparing six references/observations and their proved precision.
+E2: Preview the 10:12:15 witness, its 19L/30 nullity and the distinct two-pair
+    obstruction for the quadratic reference. Preserve all scope qualifiers.
+E3: Display the three reconstruction norms at the start of Section15.
+E4: Add five entry/proof/return routes to the companion guide.
+E5: Shorten repeated final qualifications and fix the quantifier in the
+    discussion of eventual equality at each fixed moment order.
+E6: Provide a complete diffusion bundle, as well as separate PDFs/source ZIP.
+S1: Three documented targeted readings of T5--T6, T9, T11 and Section15.
+N1: Exact statement-text hashes added to document checks; seven scope
+    distinctions reviewed separately.
+
+No numbered mathematical statement is modified or renumbered.
+No new result, exponent, bibliography entry or publication is claimed.
+The previous edition's records are in history_v15/ and reviews_v15/.

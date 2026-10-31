@@ -1,0 +1,4042 @@
+{
+  "p1:fixed:section": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "section",
+    "number": "5",
+    "page": "21",
+    "title": "Fixed sources, primitive families, and fixed moments",
+    "destination": "section.5"
+  },
+  "p1:fixed:delta": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "equation",
+    "number": "5.1",
+    "page": "21",
+    "title": "Fixed sources, primitive families, and fixed moments",
+    "destination": "equation.5.1"
+  },
+  "p1:fixed:recovery": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "lemma",
+    "number": "5.1",
+    "page": "21",
+    "title": "Disjoint recovery",
+    "destination": "theorem.5.1"
+  },
+  "p1:fixed:recovery-cost": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "equation",
+    "number": "5.2",
+    "page": "21",
+    "title": "Disjoint recovery",
+    "destination": "equation.5.2"
+  },
+  "p1:fixed:curve": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "lemma",
+    "number": "5.2",
+    "page": "22",
+    "title": "Several disjoint square equations",
+    "destination": "theorem.5.2"
+  },
+  "p1:fixed:CRT": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "lemma",
+    "number": "5.3",
+    "page": "22",
+    "title": "A product certificate with fixed sources",
+    "destination": "theorem.5.3"
+  },
+  "p1:fixed:targets": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "proposition",
+    "number": "5.4",
+    "page": "22",
+    "title": "Large rank loss after fixed sources",
+    "destination": "theorem.5.4"
+  },
+  "p1:fixed:targets-bound": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "equation",
+    "number": "5.3",
+    "page": "22",
+    "title": "Large rank loss after fixed sources",
+    "destination": "equation.5.3"
+  },
+  "p1:fixed:propagation": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "proposition",
+    "number": "5.5",
+    "page": "23",
+    "title": "Conditional sums and propagation",
+    "destination": "theorem.5.5"
+  },
+  "p1:fixed:conditional": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "equation",
+    "number": "5.4",
+    "page": "23",
+    "title": "Conditional sums and propagation",
+    "destination": "equation.5.4"
+  },
+  "p1:fixed:propagate": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "equation",
+    "number": "5.5",
+    "page": "23",
+    "title": "Conditional sums and propagation",
+    "destination": "equation.5.5"
+  },
+  "p1:fixed:primitive": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "proposition",
+    "number": "5.6",
+    "page": "24",
+    "title": "Fixed primitive mass",
+    "destination": "theorem.5.6"
+  },
+  "p1:fixed:primitive-bound": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "equation",
+    "number": "5.6",
+    "page": "24",
+    "title": "Fixed primitive mass",
+    "destination": "equation.5.6"
+  },
+  "p1:fixed:group-tail": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "equation",
+    "number": "5.7",
+    "page": "24",
+    "title": "Primitive families at a fixed order",
+    "destination": "equation.5.7"
+  },
+  "p1:fixed:component-kernel": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "equation",
+    "number": "5.8",
+    "page": "25",
+    "title": "Primitive families at a fixed order",
+    "destination": "equation.5.8"
+  },
+  "p1:fixed:high-hosts": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "equation",
+    "number": "5.9",
+    "page": "25",
+    "title": "Primitive families at a fixed order",
+    "destination": "equation.5.9"
+  },
+  "p1:fixed:very-high-hosts": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "equation",
+    "number": "5.10",
+    "page": "25",
+    "title": "Primitive families at a fixed order",
+    "destination": "equation.5.10"
+  },
+  "p1:fixed:compressed": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "proposition",
+    "number": "5.7",
+    "page": "25",
+    "title": "Fixed primitive mass after pair compression",
+    "destination": "theorem.5.7"
+  },
+  "p1:fixed:compressed-bound": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "equation",
+    "number": "5.11",
+    "page": "25",
+    "title": "Fixed primitive mass after pair compression",
+    "destination": "equation.5.11"
+  },
+  "p1:fixed:moments": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "theorem",
+    "number": "5.8",
+    "page": "26",
+    "title": "Fixed factorial moments",
+    "destination": "theorem.5.8"
+  },
+  "p1:fixed:moment-expansion": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "equation",
+    "number": "5.12",
+    "page": "26",
+    "title": "Fixed factorial moments",
+    "destination": "equation.5.12"
+  },
+  "p1:fixed:ordinary": {
+    "old_source": "sections/fixed_moments.tex",
+    "kind": "equation",
+    "number": "5.13",
+    "page": "26",
+    "title": "Fixed factorial moments",
+    "destination": "equation.5.13"
+  },
+  "p1:core:section": {
+    "old_source": "sections/cores.tex",
+    "kind": "section",
+    "number": "6",
+    "page": "27",
+    "title": "From fixed orders to all primitive families",
+    "destination": "section.6"
+  },
+  "p1:core:homogeneous-weight": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "6.1",
+    "page": "28",
+    "title": "The centred estimate at each fixed order",
+    "destination": "equation.6.1"
+  },
+  "p1:core:homogeneous-majorant": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "6.2",
+    "page": "28",
+    "title": "The centred estimate at each fixed order",
+    "destination": "equation.6.2"
+  },
+  "p1:core:fixed-centred": {
+    "old_source": "sections/cores.tex",
+    "kind": "lemma",
+    "number": "6.1",
+    "page": "28",
+    "title": "Absolute centred mass at a fixed order",
+    "destination": "theorem.6.1"
+  },
+  "p1:core:fixed-centred-bound": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "6.3",
+    "page": "28",
+    "title": "Absolute centred mass at a fixed order",
+    "destination": "equation.6.3"
+  },
+  "p1:core:contact-expansion": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "6.4",
+    "page": "29",
+    "title": "The centred estimate at each fixed order",
+    "destination": "equation.6.4"
+  },
+  "p1:core:primitive": {
+    "old_source": "sections/cores.tex",
+    "kind": "theorem",
+    "number": "6.2",
+    "page": "29",
+    "title": "Primitive families at all cardinalities",
+    "destination": "theorem.6.2"
+  },
+  "p1:core:primitive-bound": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "6.5",
+    "page": "29",
+    "title": "Primitive families at all cardinalities",
+    "destination": "equation.6.5"
+  },
+  "p1:core:primitive-rank": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "6.6",
+    "page": "29",
+    "title": "One rank loss for a primitive family",
+    "destination": "equation.6.6"
+  },
+  "p1:core:rankin": {
+    "old_source": "sections/cores.tex",
+    "kind": "lemma",
+    "number": "6.3",
+    "page": "30",
+    "title": "Counting a small truncated squarefree kernel",
+    "destination": "theorem.6.3"
+  },
+  "p1:core:rankin-bound": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "6.7",
+    "page": "30",
+    "title": "Counting a small truncated squarefree kernel",
+    "destination": "equation.6.7"
+  },
+  "p1:core:parameter-conditions": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "6.8",
+    "page": "30",
+    "title": "Small kernels and moderate congruence certificates",
+    "destination": "equation.6.8"
+  },
+  "p1:core:marks": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "6.9",
+    "page": "30",
+    "title": "Small kernels and moderate congruence certificates",
+    "destination": "equation.6.9"
+  },
+  "p1:core:moderate": {
+    "old_source": "sections/cores.tex",
+    "kind": "lemma",
+    "number": "6.4",
+    "page": "30",
+    "title": "Counting moderate certificates",
+    "destination": "theorem.6.4"
+  },
+  "p1:core:moderate-count": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "6.10",
+    "page": "30",
+    "title": "Counting moderate certificates",
+    "destination": "equation.6.10"
+  },
+  "p1:core:moderate-baseline": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "6.11",
+    "page": "30",
+    "title": "Counting moderate certificates",
+    "destination": "equation.6.11"
+  },
+  "p1:core:degrees": {
+    "old_source": "sections/cores.tex",
+    "kind": "lemma",
+    "number": "6.5",
+    "page": "31",
+    "title": "Incoming and outgoing saturation degrees",
+    "destination": "theorem.6.5"
+  },
+  "p1:core:degree-bound": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "6.12",
+    "page": "31",
+    "title": "Incoming and outgoing saturation degrees",
+    "destination": "equation.6.12"
+  },
+  "p1:core:generator": {
+    "old_source": "sections/cores.tex",
+    "kind": "lemma",
+    "number": "6.6",
+    "page": "31",
+    "title": "A generating function with marked isolated vertices",
+    "destination": "theorem.6.6"
+  },
+  "p1:core:generator-bound": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "6.13",
+    "page": "31",
+    "title": "A generating function with marked isolated vertices",
+    "destination": "equation.6.13"
+  },
+  "p1:core:primitive-parameters": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "6.14",
+    "page": "32",
+    "title": "The finite-small-order, uniform-large-order split",
+    "destination": "equation.6.14"
+  },
+  "p1:core:primitive-tail": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "6.15",
+    "page": "32",
+    "title": "The finite-small-order, uniform-large-order split",
+    "destination": "equation.6.15"
+  },
+  "p1:core:compression-section": {
+    "old_source": "sections/cores.tex",
+    "kind": "section",
+    "number": "7",
+    "page": "32",
+    "title": "One distinguished pair after compression",
+    "destination": "section.7"
+  },
+  "p1:core:compressed-rank": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "7.1",
+    "page": "32",
+    "title": "One distinguished pair after compression",
+    "destination": "equation.7.1"
+  },
+  "p1:core:compressed": {
+    "old_source": "sections/cores.tex",
+    "kind": "theorem",
+    "number": "7.1",
+    "page": "33",
+    "title": "A distinguished compressed pair at all cardinalities",
+    "destination": "theorem.7.1"
+  },
+  "p1:core:compressed-separated": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "7.2",
+    "page": "33",
+    "title": "A distinguished compressed pair at all cardinalities",
+    "destination": "equation.7.2"
+  },
+  "p1:core:compressed-all": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "7.3",
+    "page": "33",
+    "title": "A distinguished compressed pair at all cardinalities",
+    "destination": "equation.7.3"
+  },
+  "p1:core:compressed-cost": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "7.4",
+    "page": "33",
+    "title": "One distinguished pair after compression",
+    "destination": "equation.7.4"
+  },
+  "p1:core:compressed-moderate": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "7.5",
+    "page": "33",
+    "title": "One distinguished pair after compression",
+    "destination": "equation.7.5"
+  },
+  "p1:core:centering-change": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "7.6",
+    "page": "34",
+    "title": "One distinguished pair after compression",
+    "destination": "equation.7.6"
+  },
+  "p1:core:exceptional": {
+    "old_source": "sections/cores.tex",
+    "kind": "lemma",
+    "number": "7.2",
+    "page": "34",
+    "title": "A single pair is the only remaining active component",
+    "destination": "theorem.7.2"
+  },
+  "p1:core:nullity-section": {
+    "old_source": "sections/cores.tex",
+    "kind": "section",
+    "number": "8",
+    "page": "34",
+    "title": "Connected coefficients with bounded compatible nullity",
+    "destination": "section.8"
+  },
+  "p1:core:low-nullity": {
+    "old_source": "sections/cores.tex",
+    "kind": "theorem",
+    "number": "8.1",
+    "page": "35",
+    "title": "All cardinalities below two ranks",
+    "destination": "theorem.8.1"
+  },
+  "p1:core:low-nullity-bound": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "8.1",
+    "page": "35",
+    "title": "All cardinalities below two ranks",
+    "destination": "equation.8.1"
+  },
+  "p1:core:compatible-majorant": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "8.2",
+    "page": "35",
+    "title": "A two-anchor estimate at every cardinality",
+    "destination": "equation.8.2"
+  },
+  "p1:core:projection-dimension": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "8.3",
+    "page": "35",
+    "title": "Projection dimensions and positive cores",
+    "destination": "equation.8.3"
+  },
+  "p1:core:positive-core": {
+    "old_source": "sections/cores.tex",
+    "kind": "proposition",
+    "number": "8.2",
+    "page": "35",
+    "title": "Positive mass of high-nullity cores",
+    "destination": "theorem.8.2"
+  },
+  "p1:core:positive-core-bound": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "8.4",
+    "page": "35",
+    "title": "Positive mass of high-nullity cores",
+    "destination": "equation.8.4"
+  },
+  "p1:core:multi-anchor-gain": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "8.5",
+    "page": "36",
+    "title": "Projection dimensions and positive cores",
+    "destination": "equation.8.5"
+  },
+  "p1:core:bounded-nullity": {
+    "old_source": "sections/cores.tex",
+    "kind": "theorem",
+    "number": "8.3",
+    "page": "36",
+    "title": "Bounded compatible nullity on the growing range",
+    "destination": "theorem.8.3"
+  },
+  "p1:core:bounded-nullity-bound": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "8.6",
+    "page": "36",
+    "title": "Bounded compatible nullity on the growing range",
+    "destination": "equation.8.6"
+  },
+  "p1:core:peeling-weight": {
+    "old_source": "sections/cores.tex",
+    "kind": "equation",
+    "number": "8.7",
+    "page": "37",
+    "title": "Removing blocks with small relation projections",
+    "destination": "equation.8.7"
+  },
+  "p13:activity:section": {
+    "old_source": "sections/triple_activities.tex",
+    "kind": "section",
+    "number": "13",
+    "page": "51",
+    "title": "Separating compatible triples from cancellations",
+    "destination": "section.13"
+  },
+  "p13:activity:pair-partition": {
+    "old_source": "sections/triple_activities.tex",
+    "kind": "lemma",
+    "number": "13.1",
+    "page": "51",
+    "title": "A finite partition of the pair activity",
+    "destination": "theorem.13.1"
+  },
+  "p13:activity:deficit": {
+    "old_source": "sections/triple_activities.tex",
+    "kind": "proposition",
+    "number": "13.2",
+    "page": "52",
+    "title": "The independent cost of one target after a pair",
+    "destination": "theorem.13.2"
+  },
+  "p13:activity:incompatible": {
+    "old_source": "sections/triple_activities.tex",
+    "kind": "theorem",
+    "number": "13.3",
+    "page": "52",
+    "title": "Absolute activity of incompatible triples",
+    "destination": "theorem.13.3"
+  },
+  "p13:activity:kappa3": {
+    "old_source": "sections/triple_activities.tex",
+    "kind": "proposition",
+    "number": "13.4",
+    "page": "52",
+    "title": "The third cumulant and the positive activity",
+    "destination": "theorem.13.4"
+  },
+  "p13:activity:kappa-comparison": {
+    "old_source": "sections/triple_activities.tex",
+    "kind": "equation",
+    "number": "13.1",
+    "page": "52",
+    "title": "The third cumulant and the positive activity",
+    "destination": "equation.13.1"
+  },
+  "p13:rig:section": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "section",
+    "number": "15",
+    "page": "55",
+    "title": "Short square relations and the rank of a pair",
+    "destination": "section.15"
+  },
+  "p13:rig:notation": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "section",
+    "number": "15.1",
+    "page": "55",
+    "title": "Square classes on all windows",
+    "destination": "subsection.15.1"
+  },
+  "p13:rig:relative-nullity": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.1",
+    "page": "55",
+    "title": "Square classes on all windows",
+    "destination": "equation.15.1"
+  },
+  "p13:rig:word-polynomial": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.2",
+    "page": "56",
+    "title": "Square classes on all windows",
+    "destination": "equation.15.2"
+  },
+  "p13:rig:alignment": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.3",
+    "page": "56",
+    "title": "Square classes on all windows",
+    "destination": "equation.15.3"
+  },
+  "p13:rig:local-square": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "lemma",
+    "number": "15.1",
+    "page": "56",
+    "title": "A local square threshold",
+    "destination": "theorem.15.1"
+  },
+  "p13:rig:defective": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "lemma",
+    "number": "15.2",
+    "page": "57",
+    "title": "Few defective positions in every critical window",
+    "destination": "theorem.15.2"
+  },
+  "p13:rig:mertens": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.4",
+    "page": "57",
+    "title": "Local square relations and defective positions",
+    "destination": "equation.15.4"
+  },
+  "p13:rig:components": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "lemma",
+    "number": "15.3",
+    "page": "57",
+    "title": "Free components",
+    "destination": "theorem.15.3"
+  },
+  "p13:rig:short-basis": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "theorem",
+    "number": "15.4",
+    "page": "58",
+    "title": "A short basis with a controlled loss of dimension",
+    "destination": "theorem.15.4"
+  },
+  "p13:rig:short-dimension": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.5",
+    "page": "58",
+    "title": "A short basis with a controlled loss of dimension",
+    "destination": "equation.15.5"
+  },
+  "p13:rig:short-support": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.6",
+    "page": "58",
+    "title": "A short basis with a controlled loss of dimension",
+    "destination": "equation.15.6"
+  },
+  "p13:rig:factor-height": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "lemma",
+    "number": "15.5",
+    "page": "59",
+    "title": "Height of a bivariate factor",
+    "destination": "theorem.15.5"
+  },
+  "p13:rig:two-witnesses": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "proposition",
+    "number": "15.6",
+    "page": "59",
+    "title": "Two complete witnesses",
+    "destination": "theorem.15.6"
+  },
+  "p13:rig:two-polynomial": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.7",
+    "page": "59",
+    "title": "Two complete witnesses",
+    "destination": "equation.15.7"
+  },
+  "p13:rig:primitive-order": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.8",
+    "page": "60",
+    "title": "Two relations produce a polynomial of controlled height",
+    "destination": "equation.15.8"
+  },
+  "p13:rig:integer-gap": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.9",
+    "page": "60",
+    "title": "Two relations produce a polynomial of controlled height",
+    "destination": "equation.15.9"
+  },
+  "p13:rig:common-curve": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "theorem",
+    "number": "15.7",
+    "page": "61",
+    "title": "A common curve",
+    "destination": "theorem.15.7"
+  },
+  "p13:rig:common-degree-height": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.10",
+    "page": "61",
+    "title": "A common curve",
+    "destination": "equation.15.10"
+  },
+  "p13:rig:grid-fibres": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "proposition",
+    "number": "15.8",
+    "page": "62",
+    "title": "Integer fibres in the offset grid",
+    "destination": "theorem.15.8"
+  },
+  "p13:rig:grid-count": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.11",
+    "page": "62",
+    "title": "Integer fibres in the offset grid",
+    "destination": "equation.15.11"
+  },
+  "p13:rig:bcn": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "theorem",
+    "number": "15.9",
+    "page": "62",
+    "title": "Binyamini--Cluckers--Novikov",
+    "destination": "theorem.15.9"
+  },
+  "p13:rig:sublinear-grid": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "corollary",
+    "number": "15.10",
+    "page": "62",
+    "title": "Sublinear counts in the offset box",
+    "destination": "theorem.15.10"
+  },
+  "p13:rig:nonaligned": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "theorem",
+    "number": "15.11",
+    "page": "63",
+    "title": "A uniform nonaligned rank bound",
+    "destination": "theorem.15.11"
+  },
+  "p13:rig:nonaligned-bound": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.12",
+    "page": "63",
+    "title": "A uniform nonaligned rank bound",
+    "destination": "equation.15.12"
+  },
+  "p13:rig:threshold-bridge": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.13",
+    "page": "63",
+    "title": "Nonaligned pairs have rank less than half a window",
+    "destination": "equation.15.13"
+  },
+  "p13:rig:aligned": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "proposition",
+    "number": "15.12",
+    "page": "63",
+    "title": "Rank on a known alignment",
+    "destination": "theorem.15.12"
+  },
+  "p13:rig:aligned-quantitative": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.14",
+    "page": "63",
+    "title": "Rank on a known alignment",
+    "destination": "equation.15.14"
+  },
+  "p13:rig:line-matching": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.15",
+    "page": "64",
+    "title": "Aligned pairs and the exact contact distance",
+    "destination": "equation.15.15"
+  },
+  "p13:rig:triple": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "corollary",
+    "number": "15.13",
+    "page": "64",
+    "title": "Triple rank and maximum joint probability",
+    "destination": "theorem.15.13"
+  },
+  "p13:rig:triple-nullity": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.16",
+    "page": "64",
+    "title": "Triple rank and maximum joint probability",
+    "destination": "equation.15.16"
+  },
+  "p13:rig:max-triple": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.17",
+    "page": "64",
+    "title": "Triple rank and maximum joint probability",
+    "destination": "equation.15.17"
+  },
+  "p13:rig:exact-probability": {
+    "old_source": "sections/pair_rigidity.tex",
+    "kind": "equation",
+    "number": "15.18",
+    "page": "65",
+    "title": "Uniform triple nullity and its probabilistic cost",
+    "destination": "equation.15.18"
+  },
+  "p1:alg:section": {
+    "old_source": "sections/affine_algebra.tex",
+    "kind": "section",
+    "number": "3",
+    "page": "15",
+    "title": "Affine structure and centered coefficients",
+    "destination": "section.3"
+  },
+  "p1:alg:centred": {
+    "old_source": "sections/affine_algebra.tex",
+    "kind": "proposition",
+    "number": "3.1",
+    "page": "16",
+    "title": "Centered Bernoulli expansion",
+    "destination": "theorem.3.1"
+  },
+  "p1:alg:centred-identity": {
+    "old_source": "sections/affine_algebra.tex",
+    "kind": "equation",
+    "number": "3.1",
+    "page": "16",
+    "title": "Centered Bernoulli expansion",
+    "destination": "equation.3.1"
+  },
+  "p1:alg:fourier": {
+    "old_source": "sections/affine_algebra.tex",
+    "kind": "lemma",
+    "number": "3.2",
+    "page": "16",
+    "title": "Full-support Fourier formula",
+    "destination": "theorem.3.2"
+  },
+  "p1:alg:fourier-identity": {
+    "old_source": "sections/affine_algebra.tex",
+    "kind": "equation",
+    "number": "3.2",
+    "page": "16",
+    "title": "Full-support Fourier formula",
+    "destination": "equation.3.2"
+  },
+  "p1:alg:compatible-nullity": {
+    "old_source": "sections/affine_algebra.tex",
+    "kind": "equation",
+    "number": "3.3",
+    "page": "17",
+    "title": "The nullity that survives affine compatibility",
+    "destination": "equation.3.3"
+  },
+  "p1:alg:compatible": {
+    "old_source": "sections/affine_algebra.tex",
+    "kind": "lemma",
+    "number": "3.3",
+    "page": "17",
+    "title": "Compatible-nullity majorant",
+    "destination": "theorem.3.3"
+  },
+  "p1:alg:compatible-bound": {
+    "old_source": "sections/affine_algebra.tex",
+    "kind": "equation",
+    "number": "3.4",
+    "page": "17",
+    "title": "Compatible-nullity majorant",
+    "destination": "equation.3.4"
+  },
+  "p1:alg:components": {
+    "old_source": "sections/affine_algebra.tex",
+    "kind": "lemma",
+    "number": "3.4",
+    "page": "17",
+    "title": "Existence, uniqueness, and factorization",
+    "destination": "theorem.3.4"
+  },
+  "p1:alg:factorization": {
+    "old_source": "sections/affine_algebra.tex",
+    "kind": "equation",
+    "number": "3.5",
+    "page": "17",
+    "title": "Existence, uniqueness, and factorization",
+    "destination": "equation.3.5"
+  },
+  "p1:discussion": {
+    "old_source": "sections/discussion.tex",
+    "kind": "section",
+    "number": "21",
+    "page": "90",
+    "title": "Probability references and the reach of the method",
+    "destination": "section.21"
+  },
+  "p1:cor:compound": {
+    "old_source": "sections/discussion.tex",
+    "kind": "corollary",
+    "number": "21.1",
+    "page": "90",
+    "title": "Hermite approximation with single and double jumps",
+    "destination": "theorem.21.1"
+  },
+  "p1:discussion:charlier": {
+    "old_source": "sections/discussion.tex",
+    "kind": "section",
+    "number": "21.1",
+    "page": "91",
+    "title": "Computing the correction coefficient",
+    "destination": "subsection.21.1"
+  },
+  "p1:discussion:charlier-norm": {
+    "old_source": "sections/discussion.tex",
+    "kind": "proposition",
+    "number": "21.2",
+    "page": "91",
+    "title": "Norms of Poisson differences",
+    "destination": "theorem.21.2"
+  },
+  "p1:discussion:finite-norm": {
+    "old_source": "sections/discussion.tex",
+    "kind": "equation",
+    "number": "21.1",
+    "page": "91",
+    "title": "Norms of Poisson differences",
+    "destination": "equation.21.1"
+  },
+  "p1:discussion:general-norm": {
+    "old_source": "sections/discussion.tex",
+    "kind": "equation",
+    "number": "21.2",
+    "page": "91",
+    "title": "Norms of Poisson differences",
+    "destination": "equation.21.2"
+  },
+  "p1:discussion:lambda-two": {
+    "old_source": "sections/discussion.tex",
+    "kind": "equation",
+    "number": "21.3",
+    "page": "91",
+    "title": "Norms of Poisson differences",
+    "destination": "equation.21.3"
+  },
+  "p1:discussion:compound-coefficient": {
+    "old_source": "sections/discussion.tex",
+    "kind": "equation",
+    "number": "21.4",
+    "page": "92",
+    "title": "Computing the correction coefficient",
+    "destination": "equation.21.4"
+  },
+  "p1:uniform:appendix": {
+    "old_source": "sections/uniform_appendix.tex",
+    "kind": "other",
+    "number": "E",
+    "page": "120",
+    "title": "Further uniform consequences of the arithmetic estimates",
+    "destination": "appendix.E"
+  },
+  "p1:uniform:full-support": {
+    "old_source": "sections/uniform_appendix.tex",
+    "kind": "proposition",
+    "number": "E.1",
+    "page": "120",
+    "title": "A weighted count of every full support",
+    "destination": "theorem.E.1"
+  },
+  "p1:uniform:missing-block": {
+    "old_source": "sections/uniform_appendix.tex",
+    "kind": "lemma",
+    "number": "E.2",
+    "page": "120",
+    "title": "When no relation uses every block",
+    "destination": "theorem.E.2"
+  },
+  "p1:uniform:prime-budget": {
+    "old_source": "sections/uniform_appendix.tex",
+    "kind": "lemma",
+    "number": "E.3",
+    "page": "121",
+    "title": "Rankin under a logarithmic prime budget",
+    "destination": "theorem.E.3"
+  },
+  "p1:uniform:branching": {
+    "old_source": "sections/uniform_appendix.tex",
+    "kind": "proposition",
+    "number": "E.4",
+    "page": "121",
+    "title": "Independent extensions at the critical order",
+    "destination": "theorem.E.4"
+  },
+  "p1:uniform:branching-rate": {
+    "old_source": "sections/uniform_appendix.tex",
+    "kind": "equation",
+    "number": "E.1",
+    "page": "121",
+    "title": "Independent extensions at the critical order",
+    "destination": "equation.E.1"
+  },
+  "p1:uniform:one-pair": {
+    "old_source": "sections/uniform_appendix.tex",
+    "kind": "corollary",
+    "number": "E.5",
+    "page": "121",
+    "title": "A single pair at all critical orders",
+    "destination": "theorem.E.5"
+  },
+  "p1:uniform:modified-moments": {
+    "old_source": "sections/uniform_appendix.tex",
+    "kind": "proposition",
+    "number": "E.6",
+    "page": "122",
+    "title": "Moment decomposition and pair leakage",
+    "destination": "theorem.E.6"
+  },
+  "p1:uniform:modified-identity": {
+    "old_source": "sections/uniform_appendix.tex",
+    "kind": "equation",
+    "number": "E.2",
+    "page": "122",
+    "title": "Moment decomposition and pair leakage",
+    "destination": "equation.E.2"
+  },
+  "p1:uniform:replicas": {
+    "old_source": "sections/uniform_appendix.tex",
+    "kind": "proposition",
+    "number": "E.7",
+    "page": "123",
+    "title": "The replica formula and positive propagation",
+    "destination": "theorem.E.7"
+  },
+  "p1:uniform:replica-formula": {
+    "old_source": "sections/uniform_appendix.tex",
+    "kind": "equation",
+    "number": "E.3",
+    "page": "123",
+    "title": "The replica formula and positive propagation",
+    "destination": "equation.E.3"
+  },
+  "p1:uniform:replica-moment": {
+    "old_source": "sections/uniform_appendix.tex",
+    "kind": "equation",
+    "number": "E.4",
+    "page": "123",
+    "title": "The replica formula and positive propagation",
+    "destination": "equation.E.4"
+  },
+  "p13:transfer:section": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "section",
+    "number": "17",
+    "page": "71",
+    "title": "Reconstructing the law with every marginal retained",
+    "destination": "section.17"
+  },
+  "p13:transfer:announced-bound": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.1",
+    "page": "71",
+    "title": "Reconstructing the law with every marginal retained",
+    "destination": "equation.17.1"
+  },
+  "p13:transfer:B2": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.2",
+    "page": "71",
+    "title": "The exact Bernoulli reference and its conversion",
+    "destination": "equation.17.2"
+  },
+  "p13:transfer:conversion": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "lemma",
+    "number": "17.1",
+    "page": "71",
+    "title": "Conversion with heterogeneous marginals",
+    "destination": "theorem.17.1"
+  },
+  "p13:transfer:conversion-bound": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.3",
+    "page": "71",
+    "title": "Conversion with heterogeneous marginals",
+    "destination": "equation.17.3"
+  },
+  "p13:transfer:dense-targets": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "lemma",
+    "number": "17.2",
+    "page": "72",
+    "title": "Conditional dense pair estimate",
+    "destination": "theorem.17.2"
+  },
+  "p13:transfer:dense-target-bound": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.4",
+    "page": "72",
+    "title": "Conditional dense pair estimate",
+    "destination": "equation.17.4"
+  },
+  "p13:transfer:restricted-dense": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.5",
+    "page": "72",
+    "title": "Conditional dense pair estimate",
+    "destination": "equation.17.5"
+  },
+  "p13:transfer:compressed-target": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "lemma",
+    "number": "17.3",
+    "page": "73",
+    "title": "A dense compressed target",
+    "destination": "theorem.17.3"
+  },
+  "p13:transfer:small-kernels": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "lemma",
+    "number": "17.4",
+    "page": "74",
+    "title": "Several small kernels in one window",
+    "destination": "theorem.17.4"
+  },
+  "p13:transfer:small-kernels-bound": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.6",
+    "page": "74",
+    "title": "Several small kernels in one window",
+    "destination": "equation.17.6"
+  },
+  "p13:transfer:primitive": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "proposition",
+    "number": "17.5",
+    "page": "74",
+    "title": "Primitive mass from four blocks onwards",
+    "destination": "theorem.17.5"
+  },
+  "p13:transfer:primitive-bound": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.7",
+    "page": "74",
+    "title": "Primitive mass from four blocks onwards",
+    "destination": "equation.17.7"
+  },
+  "p13:transfer:exact-expansion": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.8",
+    "page": "75",
+    "title": "The homogeneous mass of primitive families",
+    "destination": "equation.17.8"
+  },
+  "p13:transfer:independent-deficit": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "lemma",
+    "number": "17.6",
+    "page": "76",
+    "title": "Uniform independent deficit",
+    "destination": "theorem.17.6"
+  },
+  "p13:transfer:independent-bound": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.9",
+    "page": "76",
+    "title": "Uniform independent deficit",
+    "destination": "equation.17.9"
+  },
+  "p13:transfer:explicit-exception": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.10",
+    "page": "76",
+    "title": "An independent extension estimate at all cardinalities",
+    "destination": "equation.17.10"
+  },
+  "p13:transfer:fixed-deficit": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "lemma",
+    "number": "17.7",
+    "page": "77",
+    "title": "A fixed number of extensions of a pair",
+    "destination": "theorem.17.7"
+  },
+  "p13:transfer:fixed-pair-bound": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.11",
+    "page": "77",
+    "title": "A fixed number of extensions of a pair",
+    "destination": "equation.17.11"
+  },
+  "p13:transfer:independent-tail": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "lemma",
+    "number": "17.8",
+    "page": "77",
+    "title": "Independent full-support tails",
+    "destination": "theorem.17.8"
+  },
+  "p13:transfer:tail-independent": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.12",
+    "page": "77",
+    "title": "Independent full-support tails",
+    "destination": "equation.17.12"
+  },
+  "p13:transfer:pair-deficit": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "proposition",
+    "number": "17.9",
+    "page": "78",
+    "title": "The pair deficit over all cardinalities",
+    "destination": "theorem.17.9"
+  },
+  "p13:transfer:pair-deficit-bound": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.13",
+    "page": "78",
+    "title": "The pair deficit over all cardinalities",
+    "destination": "equation.17.13"
+  },
+  "p13:transfer:fixed-activities": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "proposition",
+    "number": "17.10",
+    "page": "78",
+    "title": "Reduction of connected activities",
+    "destination": "theorem.17.10"
+  },
+  "p13:transfer:fixed-activity-bound": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.14",
+    "page": "78",
+    "title": "Reduction of connected activities",
+    "destination": "equation.17.14"
+  },
+  "p13:transfer:positive-triples": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.15",
+    "page": "79",
+    "title": "Every fixed connected order reduces to triples",
+    "destination": "equation.17.15"
+  },
+  "p13:transfer:two-pair-rank": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.16",
+    "page": "79",
+    "title": "Every fixed connected order reduces to triples",
+    "destination": "equation.17.16"
+  },
+  "p13:transfer:incompatible-expansion": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.17",
+    "page": "80",
+    "title": "Every fixed connected order reduces to triples",
+    "destination": "equation.17.17"
+  },
+  "p13:transfer:anchor-budgets": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "lemma",
+    "number": "17.11",
+    "page": "80",
+    "title": "Certificate budgets with several anchors",
+    "destination": "theorem.17.11"
+  },
+  "p13:transfer:moderate-budget": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.18",
+    "page": "80",
+    "title": "Certificate budgets with several anchors",
+    "destination": "equation.17.18"
+  },
+  "p13:transfer:saturated-budget": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.19",
+    "page": "80",
+    "title": "Certificate budgets with several anchors",
+    "destination": "equation.17.19"
+  },
+  "p13:transfer:core-ratio": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.20",
+    "page": "81",
+    "title": "A uniform tail after 256 blocks",
+    "destination": "equation.17.20"
+  },
+  "p13:transfer:uniform-tail": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "proposition",
+    "number": "17.12",
+    "page": "81",
+    "title": "Uniform connected and primitive tails",
+    "destination": "theorem.17.12"
+  },
+  "p13:transfer:connected-tail": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.21",
+    "page": "81",
+    "title": "Uniform connected and primitive tails",
+    "destination": "equation.17.21"
+  },
+  "p13:transfer:primitive-tail": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.22",
+    "page": "81",
+    "title": "Uniform connected and primitive tails",
+    "destination": "equation.17.22"
+  },
+  "p13:transfer:large-core": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.23",
+    "page": "81",
+    "title": "A uniform tail after 256 blocks",
+    "destination": "equation.17.23"
+  },
+  "p13:transfer:low-rank-tail": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.24",
+    "page": "81",
+    "title": "A uniform tail after 256 blocks",
+    "destination": "equation.17.24"
+  },
+  "p13:transfer:peeling": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.25",
+    "page": "81",
+    "title": "A uniform tail after 256 blocks",
+    "destination": "equation.17.25"
+  },
+  "p13:transfer:finite": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "theorem",
+    "number": "17.13",
+    "page": "82",
+    "title": "Finite transfer to the complete law",
+    "destination": "theorem.17.13"
+  },
+  "p13:transfer:finite-hypothesis": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.26",
+    "page": "82",
+    "title": "Finite transfer to the complete law",
+    "destination": "equation.17.26"
+  },
+  "p13:transfer:finite-conclusion": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.27",
+    "page": "82",
+    "title": "Finite transfer to the complete law",
+    "destination": "equation.17.27"
+  },
+  "p13:transfer:connected-range": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.28",
+    "page": "82",
+    "title": "The stopped expansion and its finite input",
+    "destination": "equation.17.28"
+  },
+  "p13:transfer:all-primitives": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.29",
+    "page": "82",
+    "title": "The stopped expansion and its finite input",
+    "destination": "equation.17.29"
+  },
+  "p13:transfer:retained-difference": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.30",
+    "page": "82",
+    "title": "The stopped expansion and its finite input",
+    "destination": "equation.17.30"
+  },
+  "p13:transfer:retained-error": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.31",
+    "page": "83",
+    "title": "The stopped expansion and its finite input",
+    "destination": "equation.17.31"
+  },
+  "p13:transfer:reconstruction": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "theorem",
+    "number": "17.14",
+    "page": "83",
+    "title": "Reconstruction from triple activity",
+    "destination": "theorem.17.14"
+  },
+  "p13:transfer:reconstruction-bound": {
+    "old_source": "sections/exact_transfer.tex",
+    "kind": "equation",
+    "number": "17.32",
+    "page": "83",
+    "title": "Reconstruction from triple activity",
+    "destination": "equation.17.32"
+  },
+  "p13:channels:section": {
+    "old_source": "sections/channel_hierarchy.tex",
+    "kind": "section",
+    "number": "20",
+    "page": "87",
+    "title": "Explicit references and the first omitted channel",
+    "destination": "section.20"
+  },
+  "p13:channels:definitions": {
+    "old_source": "sections/channel_hierarchy.tex",
+    "kind": "equation",
+    "number": "20.1",
+    "page": "87",
+    "title": "Explicit references and the first omitted channel",
+    "destination": "equation.20.1"
+  },
+  "p13:channels:hierarchy": {
+    "old_source": "sections/channel_hierarchy.tex",
+    "kind": "theorem",
+    "number": "20.1",
+    "page": "87",
+    "title": "The optimal error of every fixed height truncation",
+    "destination": "theorem.20.1"
+  },
+  "p13:channels:cumulant-remainder": {
+    "old_source": "sections/channel_hierarchy.tex",
+    "kind": "equation",
+    "number": "20.2",
+    "page": "87",
+    "title": "The optimal error of every fixed height truncation",
+    "destination": "equation.20.2"
+  },
+  "p13:channels:law-remainder": {
+    "old_source": "sections/channel_hierarchy.tex",
+    "kind": "equation",
+    "number": "20.3",
+    "page": "87",
+    "title": "The optimal error of every fixed height truncation",
+    "destination": "equation.20.3"
+  },
+  "p13:channels:phase-constant": {
+    "old_source": "sections/channel_hierarchy.tex",
+    "kind": "equation",
+    "number": "20.4",
+    "page": "88",
+    "title": "The optimal error of every fixed height truncation",
+    "destination": "equation.20.4"
+  },
+  "p13:channels:tv-equivalent": {
+    "old_source": "sections/channel_hierarchy.tex",
+    "kind": "equation",
+    "number": "20.5",
+    "page": "88",
+    "title": "The optimal error of every fixed height truncation",
+    "destination": "equation.20.5"
+  },
+  "p13:channels:weighted-nonaligned": {
+    "old_source": "sections/channel_hierarchy.tex",
+    "kind": "lemma",
+    "number": "20.2",
+    "page": "88",
+    "title": "Weighted nonaligned pairs",
+    "destination": "theorem.20.2"
+  },
+  "p13:channels:nonaligned-weight": {
+    "old_source": "sections/channel_hierarchy.tex",
+    "kind": "equation",
+    "number": "20.6",
+    "page": "88",
+    "title": "Weighted nonaligned pairs",
+    "destination": "equation.20.6"
+  },
+  "p13:channels:coarse-truncation": {
+    "old_source": "sections/channel_hierarchy.tex",
+    "kind": "equation",
+    "number": "20.7",
+    "page": "88",
+    "title": "Explicit references and the first omitted channel",
+    "destination": "equation.20.7"
+  },
+  "p13:channels:omitted-equivalent": {
+    "old_source": "sections/channel_hierarchy.tex",
+    "kind": "equation",
+    "number": "20.8",
+    "page": "89",
+    "title": "Explicit references and the first omitted channel",
+    "destination": "equation.20.8"
+  },
+  "p13:channels:height-five": {
+    "old_source": "sections/channel_hierarchy.tex",
+    "kind": "corollary",
+    "number": "20.3",
+    "page": "89",
+    "title": "The error of the two-channel reference",
+    "destination": "theorem.20.3"
+  },
+  "p13:channels:M5": {
+    "old_source": "sections/channel_hierarchy.tex",
+    "kind": "equation",
+    "number": "20.9",
+    "page": "89",
+    "title": "The error of the two-channel reference",
+    "destination": "equation.20.9"
+  },
+  "p13:channels:two-channel-law": {
+    "old_source": "sections/channel_hierarchy.tex",
+    "kind": "equation",
+    "number": "20.10",
+    "page": "89",
+    "title": "The error of the two-channel reference",
+    "destination": "equation.20.10"
+  },
+  "p13:channels:two-channel-tv": {
+    "old_source": "sections/channel_hierarchy.tex",
+    "kind": "equation",
+    "number": "20.11",
+    "page": "89",
+    "title": "The error of the two-channel reference",
+    "destination": "equation.20.11"
+  },
+  "p13:third:section": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "section",
+    "number": "16",
+    "page": "65",
+    "title": "The third factorial cumulant and rational triples",
+    "destination": "section.16"
+  },
+  "p13:third:definition": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "equation",
+    "number": "16.1",
+    "page": "65",
+    "title": "The third factorial cumulant and rational triples",
+    "destination": "equation.16.1"
+  },
+  "p13:third:main": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "theorem",
+    "number": "16.1",
+    "page": "65",
+    "title": "Optimal power of the third factorial cumulant",
+    "destination": "theorem.16.1"
+  },
+  "p13:third:two-sided": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "equation",
+    "number": "16.2",
+    "page": "65",
+    "title": "Optimal power of the third factorial cumulant",
+    "destination": "equation.16.2"
+  },
+  "p13:third:density": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "equation",
+    "number": "16.3",
+    "page": "66",
+    "title": "The largest canonical overlap of three rational windows",
+    "destination": "equation.16.3"
+  },
+  "p13:third:rational-rank": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "lemma",
+    "number": "16.2",
+    "page": "66",
+    "title": "A sharp rational overlap inequality",
+    "destination": "theorem.16.2"
+  },
+  "p13:third:1930": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "equation",
+    "number": "16.4",
+    "page": "66",
+    "title": "A sharp rational overlap inequality",
+    "destination": "equation.16.4"
+  },
+  "p13:third:aligned-family": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "proposition",
+    "number": "16.3",
+    "page": "67",
+    "title": "Triples meeting finitely many aligned channels",
+    "destination": "theorem.16.3"
+  },
+  "p13:third:aligned-family-bound": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "equation",
+    "number": "16.5",
+    "page": "67",
+    "title": "Triples meeting finitely many aligned channels",
+    "destination": "equation.16.5"
+  },
+  "p13:third:true-compression": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "equation",
+    "number": "16.6",
+    "page": "67",
+    "title": "All triples above a strong aligned pair",
+    "destination": "equation.16.6"
+  },
+  "p13:third:source-weight": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "equation",
+    "number": "16.7",
+    "page": "67",
+    "title": "All triples above a strong aligned pair",
+    "destination": "equation.16.7"
+  },
+  "p13:third:unaligned-target-cost": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "equation",
+    "number": "16.8",
+    "page": "67",
+    "title": "Targets not aligned with the compressed source",
+    "destination": "equation.16.8"
+  },
+  "p13:third:aligned": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "corollary",
+    "number": "16.4",
+    "page": "69",
+    "title": "Strong aligned pairs",
+    "destination": "theorem.16.4"
+  },
+  "p13:third:strong-aligned-bound": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "equation",
+    "number": "16.9",
+    "page": "69",
+    "title": "Strong aligned pairs",
+    "destination": "equation.16.9"
+  },
+  "p13:third:lower": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "proposition",
+    "number": "16.5",
+    "page": "69",
+    "title": "The rational lower bound",
+    "destination": "theorem.16.5"
+  },
+  "p13:third:K3-lower": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "equation",
+    "number": "16.10",
+    "page": "69",
+    "title": "The rational lower bound",
+    "destination": "equation.16.10"
+  },
+  "p13:third:witness-nullity": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "equation",
+    "number": "16.11",
+    "page": "69",
+    "title": "A positive family that survives in the total cumulant",
+    "destination": "equation.16.11"
+  },
+  "p13:third:witness-probability": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "equation",
+    "number": "16.12",
+    "page": "70",
+    "title": "A positive family that survives in the total cumulant",
+    "destination": "equation.16.12"
+  },
+  "p13:third:witness-centered": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "equation",
+    "number": "16.13",
+    "page": "70",
+    "title": "A positive family that survives in the total cumulant",
+    "destination": "equation.16.13"
+  },
+  "p13:third:activity": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "corollary",
+    "number": "16.6",
+    "page": "71",
+    "title": "Absolute third-order activity",
+    "destination": "theorem.16.6"
+  },
+  "p13:third:absolute": {
+    "old_source": "sections/third_cumulant.tex",
+    "kind": "equation",
+    "number": "16.14",
+    "page": "71",
+    "title": "Absolute third-order activity",
+    "destination": "equation.16.14"
+  },
+  "p1:arith:supplement": {
+    "old_source": "sections/supplemental_arithmetic.tex",
+    "kind": "other",
+    "number": "B",
+    "page": "108",
+    "title": "Coefficient budgets, coordinate restrictions, and fixed channels",
+    "destination": "appendix.B"
+  },
+  "p1:arith:smallpart-budget": {
+    "old_source": "sections/supplemental_arithmetic.tex",
+    "kind": "lemma",
+    "number": "B.1",
+    "page": "108",
+    "title": "A small-prime coefficient budget",
+    "destination": "theorem.B.1"
+  },
+  "p1:arith:coordinate-regularisation": {
+    "old_source": "sections/supplemental_arithmetic.tex",
+    "kind": "lemma",
+    "number": "B.2",
+    "page": "108",
+    "title": "Coordinate regularisation",
+    "destination": "theorem.B.2"
+  },
+  "p1:arith:ternary-degree": {
+    "old_source": "sections/supplemental_arithmetic.tex",
+    "kind": "corollary",
+    "number": "B.3",
+    "page": "109",
+    "title": "Constraints meeting three blocks",
+    "destination": "theorem.B.3"
+  },
+  "p1:arith:fixed-channel-mass": {
+    "old_source": "sections/supplemental_arithmetic.tex",
+    "kind": "lemma",
+    "number": "B.5",
+    "page": "110",
+    "title": "Mass of a fixed channel",
+    "destination": "theorem.B.5"
+  },
+  "p1:arith:gamma-fixed-channel": {
+    "old_source": "sections/supplemental_arithmetic.tex",
+    "kind": "equation",
+    "number": "B.1",
+    "page": "110",
+    "title": "A finite rank bound for every fixed channel",
+    "destination": "equation.B.1"
+  },
+  "p1:arith:fixed-channel-rank": {
+    "old_source": "sections/supplemental_arithmetic.tex",
+    "kind": "lemma",
+    "number": "B.6",
+    "page": "110",
+    "title": "Additional rank in a fixed channel",
+    "destination": "theorem.B.6"
+  },
+  "p1:arith:fixed-channel-palm": {
+    "old_source": "sections/supplemental_arithmetic.tex",
+    "kind": "proposition",
+    "number": "B.7",
+    "page": "111",
+    "title": "Palm mean for a fixed channel",
+    "destination": "theorem.B.7"
+  },
+  "p1:arith:finite-family-triples": {
+    "old_source": "sections/supplemental_arithmetic.tex",
+    "kind": "corollary",
+    "number": "B.8",
+    "page": "111",
+    "title": "Triples containing a good pair",
+    "destination": "theorem.B.8"
+  },
+  "p1:close:section": {
+    "old_source": "sections/closure.tex",
+    "kind": "section",
+    "number": "9",
+    "page": "37",
+    "title": "Recovering the law from the retained pair data",
+    "destination": "section.9"
+  },
+  "p1:close:deficit-F": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.1",
+    "page": "38",
+    "title": "Two deficits under independent counting weights",
+    "destination": "equation.9.1"
+  },
+  "p1:close:deficit-G": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.2",
+    "page": "38",
+    "title": "Two deficits under independent counting weights",
+    "destination": "equation.9.2"
+  },
+  "p1:close:total-deficits": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.3",
+    "page": "38",
+    "title": "Two deficits under independent counting weights",
+    "destination": "equation.9.3"
+  },
+  "p1:close:deficit-bounds": {
+    "old_source": "sections/closure.tex",
+    "kind": "lemma",
+    "number": "9.1",
+    "page": "38",
+    "title": "Bounds for the independent deficits",
+    "destination": "theorem.9.1"
+  },
+  "p1:close:deficit-rates": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.4",
+    "page": "38",
+    "title": "Bounds for the independent deficits",
+    "destination": "equation.9.4"
+  },
+  "p1:close:ordinary-union": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.5",
+    "page": "38",
+    "title": "Two deficits under independent counting weights",
+    "destination": "equation.9.5"
+  },
+  "p1:close:compressed-union": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.6",
+    "page": "38",
+    "title": "Two deficits under independent counting weights",
+    "destination": "equation.9.6"
+  },
+  "p1:close:bernoulli-reference": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.7",
+    "page": "39",
+    "title": "The exact measure retained by the hereditary class",
+    "destination": "equation.9.7"
+  },
+  "p1:close:retained-reference": {
+    "old_source": "sections/closure.tex",
+    "kind": "proposition",
+    "number": "9.2",
+    "page": "39",
+    "title": "Evaluation of the retained polynomial",
+    "destination": "theorem.9.2"
+  },
+  "p1:close:retained-identity": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.8",
+    "page": "39",
+    "title": "Evaluation of the retained polynomial",
+    "destination": "equation.9.8"
+  },
+  "p1:close:activities": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.9",
+    "page": "39",
+    "title": "From centered components to positive boundary mass",
+    "destination": "equation.9.9"
+  },
+  "p1:close:boundary-mass": {
+    "old_source": "sections/closure.tex",
+    "kind": "proposition",
+    "number": "9.3",
+    "page": "40",
+    "title": "Positive mass outside the retained class",
+    "destination": "theorem.9.3"
+  },
+  "p1:close:boundary-inequality": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.10",
+    "page": "40",
+    "title": "Positive mass outside the retained class",
+    "destination": "equation.9.10"
+  },
+  "p1:close:boundary-rate": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.11",
+    "page": "40",
+    "title": "Positive mass outside the retained class",
+    "destination": "equation.9.11"
+  },
+  "p1:close:centered-expansion": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.12",
+    "page": "40",
+    "title": "From centered components to positive boundary mass",
+    "destination": "equation.9.12"
+  },
+  "p1:close:component-exponential": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.13",
+    "page": "40",
+    "title": "From centered components to positive boundary mass",
+    "destination": "equation.9.13"
+  },
+  "p1:close:variance": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.14",
+    "page": "41",
+    "title": "Converting the binomial reference to Poisson",
+    "destination": "equation.9.14"
+  },
+  "p1:close:beta-covariance": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.15",
+    "page": "41",
+    "title": "Converting the binomial reference to Poisson",
+    "destination": "equation.9.15"
+  },
+  "p1:close:conversion": {
+    "old_source": "sections/closure.tex",
+    "kind": "lemma",
+    "number": "9.4",
+    "page": "41",
+    "title": "Poisson--Charlier conversion",
+    "destination": "theorem.9.4"
+  },
+  "p1:close:conversion-bound": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.16",
+    "page": "41",
+    "title": "Poisson--Charlier conversion",
+    "destination": "equation.9.16"
+  },
+  "p1:close:binomial-expansion": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.17",
+    "page": "41",
+    "title": "Converting the binomial reference to Poisson",
+    "destination": "equation.9.17"
+  },
+  "p13:base-approximation": {
+    "old_source": "sections/closure.tex",
+    "kind": "proposition",
+    "number": "9.5",
+    "page": "41",
+    "title": "The first quadratic approximation",
+    "destination": "theorem.9.5"
+  },
+  "p1:close:regular-law": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.18",
+    "page": "42",
+    "title": "The first approximation and its uniform boundary",
+    "destination": "equation.9.18"
+  },
+  "p1:close:poisson-lipschitz": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.19",
+    "page": "42",
+    "title": "The first approximation and its uniform boundary",
+    "destination": "equation.9.19"
+  },
+  "p1:close:reference-lipschitz": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.20",
+    "page": "42",
+    "title": "The first approximation and its uniform boundary",
+    "destination": "equation.9.20"
+  },
+  "p1:close:positivity-section": {
+    "old_source": "sections/closure.tex",
+    "kind": "section",
+    "number": "9.6",
+    "page": "42",
+    "title": "Positivity and the coefficient of total variation",
+    "destination": "subsection.9.6"
+  },
+  "p1:close:positivity": {
+    "old_source": "sections/closure.tex",
+    "kind": "lemma",
+    "number": "9.6",
+    "page": "42",
+    "title": "Positivity of the quadratic Poisson correction",
+    "destination": "theorem.9.6"
+  },
+  "p1:close:positivity-range": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.21",
+    "page": "42",
+    "title": "Positivity of the quadratic Poisson correction",
+    "destination": "equation.9.21"
+  },
+  "p1:close:charlier-masses": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.22",
+    "page": "42",
+    "title": "Positivity of the quadratic Poisson correction",
+    "destination": "equation.9.22"
+  },
+  "p1:close:charlier-constant": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.23",
+    "page": "43",
+    "title": "Positivity and the coefficient of total variation",
+    "destination": "equation.9.23"
+  },
+  "p1:close:constant-bounds": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.24",
+    "page": "43",
+    "title": "Positivity and the coefficient of total variation",
+    "destination": "equation.9.24"
+  },
+  "p1:close:tv-exact-parameter": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.25",
+    "page": "43",
+    "title": "Positivity and the coefficient of total variation",
+    "destination": "equation.9.25"
+  },
+  "p1:close:tv-asymptotic": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.26",
+    "page": "43",
+    "title": "Positivity and the coefficient of total variation",
+    "destination": "equation.9.26"
+  },
+  "p1:close:dyadic-example": {
+    "old_source": "sections/closure.tex",
+    "kind": "equation",
+    "number": "9.27",
+    "page": "43",
+    "title": "Positivity and the coefficient of total variation",
+    "destination": "equation.9.27"
+  },
+  "p1:limits:section": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "other",
+    "number": "F",
+    "page": "124",
+    "title": "Tails, deletion, and limits of positive comparison methods",
+    "destination": "appendix.F"
+  },
+  "p1:limits:lattice": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "proposition",
+    "number": "F.1",
+    "page": "124",
+    "title": "Support and factorial lattice",
+    "destination": "theorem.F.1"
+  },
+  "p1:limits:lattice-eq": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.1",
+    "page": "124",
+    "title": "Support and factorial lattice",
+    "destination": "equation.F.1"
+  },
+  "p1:limits:local-rigidity": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "lemma",
+    "number": "F.2",
+    "page": "124",
+    "title": "Local rigidity",
+    "destination": "theorem.F.2"
+  },
+  "p1:limits:griesmer": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.2",
+    "page": "124",
+    "title": "Local rigidity",
+    "destination": "equation.F.2"
+  },
+  "p1:limits:local-blocks": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "proposition",
+    "number": "F.3",
+    "page": "125",
+    "title": "Exact local blocks",
+    "destination": "theorem.F.3"
+  },
+  "p1:limits:block-law": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.3",
+    "page": "125",
+    "title": "Exact local blocks",
+    "destination": "equation.F.3"
+  },
+  "p1:limits:block-mean": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.4",
+    "page": "125",
+    "title": "Exact local blocks",
+    "destination": "equation.F.4"
+  },
+  "p1:limits:block-absolute": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.5",
+    "page": "125",
+    "title": "Exact local blocks",
+    "destination": "equation.F.5"
+  },
+  "p1:limits:modified": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "theorem",
+    "number": "F.4",
+    "page": "126",
+    "title": "A modified count with all factorial tails",
+    "destination": "theorem.F.4"
+  },
+  "p1:limits:modified-tv": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.6",
+    "page": "126",
+    "title": "A modified count with all factorial tails",
+    "destination": "equation.F.6"
+  },
+  "p1:limits:real-tail": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.7",
+    "page": "126",
+    "title": "A modified count with all factorial tails",
+    "destination": "equation.F.7"
+  },
+  "p1:limits:modified-tail": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.8",
+    "page": "126",
+    "title": "A modified count with all factorial tails",
+    "destination": "equation.F.8"
+  },
+  "p1:limits:modified-exponential": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.9",
+    "page": "126",
+    "title": "A modified count with all factorial tails",
+    "destination": "equation.F.9"
+  },
+  "p1:limits:modified-moments": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.10",
+    "page": "126",
+    "title": "A modified count with all factorial tails",
+    "destination": "equation.F.10"
+  },
+  "p1:limits:branching": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "lemma",
+    "number": "F.5",
+    "page": "127",
+    "title": "Branching with an explicit order dependence",
+    "destination": "theorem.F.5"
+  },
+  "p1:limits:branching-uniform": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.11",
+    "page": "127",
+    "title": "Branching with an explicit order dependence",
+    "destination": "equation.F.11"
+  },
+  "p1:limits:growing-moments": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.12",
+    "page": "127",
+    "title": "Branching with an explicit order dependence",
+    "destination": "equation.F.12"
+  },
+  "p1:limits:effective-tail": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "proposition",
+    "number": "F.6",
+    "page": "127",
+    "title": "A quantified effective support",
+    "destination": "theorem.F.6"
+  },
+  "p1:limits:effective-threshold": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.13",
+    "page": "127",
+    "title": "A quantified effective support",
+    "destination": "equation.F.13"
+  },
+  "p1:limits:colored-tail": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "proposition",
+    "number": "F.7",
+    "page": "128",
+    "title": "A very small tail beyond a near-linear threshold",
+    "destination": "theorem.F.7"
+  },
+  "p1:limits:colored-tail-bound": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.14",
+    "page": "128",
+    "title": "A very small tail beyond a near-linear threshold",
+    "destination": "equation.F.14"
+  },
+  "p1:limits:two-small-pivots": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.15",
+    "page": "128",
+    "title": "Effective tails of the original count",
+    "destination": "equation.F.15"
+  },
+  "p1:limits:cylinder": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "proposition",
+    "number": "F.8",
+    "page": "129",
+    "title": "Divergence of the real exponential moment",
+    "destination": "theorem.F.8"
+  },
+  "p1:limits:exponential-divergence": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.16",
+    "page": "129",
+    "title": "Divergence of the real exponential moment",
+    "destination": "equation.F.16"
+  },
+  "p1:limits:peeling": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "lemma",
+    "number": "F.9",
+    "page": "129",
+    "title": "Deleting large private ranks",
+    "destination": "theorem.F.9"
+  },
+  "p1:limits:positive-core": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.17",
+    "page": "129",
+    "title": "Deleting large private ranks",
+    "destination": "equation.F.17"
+  },
+  "p1:limits:rank-density": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.18",
+    "page": "129",
+    "title": "Deleting large private ranks",
+    "destination": "equation.F.18"
+  },
+  "p1:limits:large-component": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "proposition",
+    "number": "F.10",
+    "page": "130",
+    "title": "A real component of quadratic nullity",
+    "destination": "theorem.F.10"
+  },
+  "p1:limits:quadratic-nullity": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.19",
+    "page": "130",
+    "title": "A real component of quadratic nullity",
+    "destination": "equation.F.19"
+  },
+  "p1:limits:positions": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "section",
+    "number": "F.5",
+    "page": "130",
+    "title": "Keeping positions while justifying pair deletion",
+    "destination": "subsection.F.5"
+  },
+  "p1:limits:vector-stop": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.20",
+    "page": "131",
+    "title": "Keeping positions while justifying pair deletion",
+    "destination": "equation.F.20"
+  },
+  "p1:limits:field-definition": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.5",
+    "page": "131",
+    "title": "Keeping positions while justifying pair deletion",
+    "destination": "equation.F.20"
+  },
+  "p1:limits:compound-target": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.21",
+    "page": "131",
+    "title": "Keeping positions while justifying pair deletion",
+    "destination": "equation.F.21"
+  },
+  "p1:limits:vector-reference": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "lemma",
+    "number": "F.11",
+    "page": "131",
+    "title": "Unsigned positional compound-Poisson comparison",
+    "destination": "theorem.F.11"
+  },
+  "p1:limits:vector-weighted": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.22",
+    "page": "131",
+    "title": "Unsigned positional compound-Poisson comparison",
+    "destination": "equation.F.22"
+  },
+  "p1:limits:erasure": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "proposition",
+    "number": "F.12",
+    "page": "132",
+    "title": "Deletion, isolation, and remaining covariances",
+    "destination": "theorem.F.12"
+  },
+  "p1:limits:erasure-tv": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.23",
+    "page": "132",
+    "title": "Deletion, isolation, and remaining covariances",
+    "destination": "equation.F.23"
+  },
+  "p1:limits:erasure-intensity": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.24",
+    "page": "132",
+    "title": "Deletion, isolation, and remaining covariances",
+    "destination": "equation.F.24"
+  },
+  "p1:limits:erasure-covariance": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.25",
+    "page": "132",
+    "title": "Deletion, isolation, and remaining covariances",
+    "destination": "equation.F.25"
+  },
+  "p1:limits:edge-occurrence": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.26",
+    "page": "132",
+    "title": "Deletion, isolation, and remaining covariances",
+    "destination": "equation.F.26"
+  },
+  "p1:limits:one-all-tv": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.27",
+    "page": "132",
+    "title": "Deletion, isolation, and remaining covariances",
+    "destination": "equation.F.27"
+  },
+  "p1:limits:one-all-wasserstein": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.28",
+    "page": "132",
+    "title": "Deletion, isolation, and remaining covariances",
+    "destination": "equation.F.28"
+  },
+  "p1:limits:cubic-cumulant": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.29",
+    "page": "133",
+    "title": "Keeping positions while justifying pair deletion",
+    "destination": "equation.F.29"
+  },
+  "p1:limits:background-means": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.30",
+    "page": "133",
+    "title": "Keeping positions while justifying pair deletion",
+    "destination": "equation.F.30"
+  },
+  "p1:limits:background-localization": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.31",
+    "page": "134",
+    "title": "Keeping positions while justifying pair deletion",
+    "destination": "equation.F.31"
+  },
+  "p1:limits:erased-localization": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.32",
+    "page": "134",
+    "title": "Keeping positions while justifying pair deletion",
+    "destination": "equation.F.32"
+  },
+  "p1:limits:spatial-localization": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.33",
+    "page": "134",
+    "title": "Keeping positions while justifying pair deletion",
+    "destination": "equation.F.33"
+  },
+  "p1:limits:raw-residual": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.34",
+    "page": "134",
+    "title": "Signed Palm identities and weighted recurrence errors",
+    "destination": "equation.F.34"
+  },
+  "p1:limits:stein": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "lemma",
+    "number": "F.13",
+    "page": "134",
+    "title": "A scalar recurrence criterion",
+    "destination": "theorem.F.13"
+  },
+  "p1:limits:stein-bound": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.35",
+    "page": "134",
+    "title": "A scalar recurrence criterion",
+    "destination": "equation.F.35"
+  },
+  "p1:limits:size-bias": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.36",
+    "page": "134",
+    "title": "A scalar recurrence criterion",
+    "destination": "equation.F.36"
+  },
+  "p1:limits:residual-parameters": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.37",
+    "page": "134",
+    "title": "Signed Palm identities and weighted recurrence errors",
+    "destination": "equation.F.37"
+  },
+  "p1:limits:signed-palm": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "proposition",
+    "number": "F.14",
+    "page": "134",
+    "title": "The signed Palm measure",
+    "destination": "theorem.F.14"
+  },
+  "p1:limits:signed-palm-bound": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.38",
+    "page": "135",
+    "title": "The signed Palm measure",
+    "destination": "equation.F.38"
+  },
+  "p1:limits:signed-palm-coefficients": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.39",
+    "page": "135",
+    "title": "The signed Palm measure",
+    "destination": "equation.F.39"
+  },
+  "p1:limits:palm-sufficient": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.40",
+    "page": "135",
+    "title": "Signed Palm identities and weighted recurrence errors",
+    "destination": "equation.F.40"
+  },
+  "p1:limits:background-residual": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.41",
+    "page": "135",
+    "title": "Signed Palm identities and weighted recurrence errors",
+    "destination": "equation.F.41"
+  },
+  "p1:limits:erased-residual": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.42",
+    "page": "135",
+    "title": "Signed Palm identities and weighted recurrence errors",
+    "destination": "equation.F.42"
+  },
+  "p1:limits:weighted-residual": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "lemma",
+    "number": "F.15",
+    "page": "136",
+    "title": "A recurrence norm equivalent to total variation",
+    "destination": "theorem.F.15"
+  },
+  "p1:limits:weighted-equivalence": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.43",
+    "page": "136",
+    "title": "A recurrence norm equivalent to total variation",
+    "destination": "equation.F.43"
+  },
+  "p1:limits:weighted-stability": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.44",
+    "page": "136",
+    "title": "A recurrence norm equivalent to total variation",
+    "destination": "equation.F.44"
+  },
+  "p1:limits:all-pairs": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "proposition",
+    "number": "F.16",
+    "page": "136",
+    "title": "All active pair dependencies can be removed",
+    "destination": "theorem.F.16"
+  },
+  "p1:limits:bad-mass": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.45",
+    "page": "136",
+    "title": "All active pair dependencies can be removed",
+    "destination": "equation.F.45"
+  },
+  "p1:limits:all-pairs-cost": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.46",
+    "page": "136",
+    "title": "All active pair dependencies can be removed",
+    "destination": "equation.F.46"
+  },
+  "p1:limits:pivot-scale": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.47",
+    "page": "137",
+    "title": "The cost of forcing private prime signs",
+    "destination": "equation.F.47"
+  },
+  "p1:limits:reciprocal": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "lemma",
+    "number": "F.17",
+    "page": "137",
+    "title": "Reciprocal odd-prime pivots",
+    "destination": "theorem.F.17"
+  },
+  "p1:limits:reciprocal-sum": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.48",
+    "page": "137",
+    "title": "Reciprocal odd-prime pivots",
+    "destination": "equation.F.48"
+  },
+  "p1:limits:private-exact": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "proposition",
+    "number": "F.18",
+    "page": "138",
+    "title": "Exact logarithmic cost of this forcing",
+    "destination": "theorem.F.18"
+  },
+  "p1:limits:private-exact-eq": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.49",
+    "page": "138",
+    "title": "Exact logarithmic cost of this forcing",
+    "destination": "equation.F.49"
+  },
+  "p1:limits:all-anchors": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "proposition",
+    "number": "F.19",
+    "page": "139",
+    "title": "An obstruction for every such anchor",
+    "destination": "theorem.F.19"
+  },
+  "p1:limits:anchor-lower": {
+    "old_source": "sections/limits_appendix.tex",
+    "kind": "equation",
+    "number": "F.50",
+    "page": "139",
+    "title": "An obstruction for every such anchor",
+    "destination": "equation.F.50"
+  },
+  "p1:arith:appendix": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "other",
+    "number": "A",
+    "page": "94",
+    "title": "Uniform arithmetic estimates",
+    "destination": "appendix.A"
+  },
+  "p1:arith:runge": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "lemma",
+    "number": "A.1",
+    "page": "94",
+    "title": "A split-product bound uniform in the degree",
+    "destination": "theorem.A.1"
+  },
+  "p1:arith:pell": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "lemma",
+    "number": "A.2",
+    "page": "94",
+    "title": "Uniform quadratic equation count",
+    "destination": "theorem.A.2"
+  },
+  "p1:arith:defects": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "lemma",
+    "number": "A.3",
+    "page": "95",
+    "title": "Local and global defect counts",
+    "destination": "theorem.A.3"
+  },
+  "p1:arith:onedfect": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "equation",
+    "number": "A.1",
+    "page": "95",
+    "title": "Local and global defect counts",
+    "destination": "equation.A.1"
+  },
+  "p1:arith:twodefect": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "equation",
+    "number": "A.2",
+    "page": "95",
+    "title": "Local and global defect counts",
+    "destination": "equation.A.2"
+  },
+  "p1:arith:reuss": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "lemma",
+    "number": "A.4",
+    "page": "95",
+    "title": "Uniform determinant estimate",
+    "destination": "theorem.A.4"
+  },
+  "p1:arith:reussbound": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "equation",
+    "number": "A.3",
+    "page": "95",
+    "title": "Uniform determinant estimate",
+    "destination": "equation.A.3"
+  },
+  "p1:arith:twokernel": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "lemma",
+    "number": "A.5",
+    "page": "97",
+    "title": "Two small odd kernels",
+    "destination": "theorem.A.5"
+  },
+  "p1:arith:elementarybox": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "equation",
+    "number": "A.4",
+    "page": "98",
+    "title": "Two small kernels with their smooth coefficients retained",
+    "destination": "equation.A.4"
+  },
+  "p1:arith:anchor": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "lemma",
+    "number": "A.6",
+    "page": "98",
+    "title": "A large selected kernel",
+    "destination": "theorem.A.6"
+  },
+  "p1:arith:surfaceequations": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "equation",
+    "number": "A.5",
+    "page": "99",
+    "title": "Multiquadratic surfaces and the curves that can survive",
+    "destination": "equation.A.5"
+  },
+  "p1:arith:geometric": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "lemma",
+    "number": "A.7",
+    "page": "99",
+    "title": "The uniform geometric counts",
+    "destination": "theorem.A.7"
+  },
+  "p1:arith:curvedegree": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "equation",
+    "number": "A.6",
+    "page": "100",
+    "title": "Multiquadratic surfaces and the curves that can survive",
+    "destination": "equation.A.6"
+  },
+  "p1:arith:dense": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "lemma",
+    "number": "A.8",
+    "page": "102",
+    "title": "The dense weighted sector",
+    "destination": "theorem.A.8"
+  },
+  "p1:arith:alignedrank": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "lemma",
+    "number": "A.9",
+    "page": "102",
+    "title": "Uniform residual rank on an aligned pair",
+    "destination": "theorem.A.9"
+  },
+  "p1:arith:asymmetric": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "lemma",
+    "number": "A.10",
+    "page": "102",
+    "title": "An asymmetric pair profile",
+    "destination": "theorem.A.10"
+  },
+  "p1:arith:palmrank": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "lemma",
+    "number": "A.11",
+    "page": "103",
+    "title": "Aligned loss above a rational pair",
+    "destination": "theorem.A.11"
+  },
+  "p1:arith:matchdensity": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "equation",
+    "number": "A.7",
+    "page": "103",
+    "title": "Asymmetric extensions and homogeneous seeds",
+    "destination": "equation.A.7"
+  },
+  "p1:arith:fixed-homogeneous-seeds": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "proposition",
+    "number": "A.12",
+    "page": "104",
+    "title": "Homogeneous seeds for fixed extensions",
+    "destination": "theorem.A.12"
+  },
+  "p1:arith:small-kernels": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "lemma",
+    "number": "A.13",
+    "page": "105",
+    "title": "Small-kernel counts for fixed-width blocks",
+    "destination": "theorem.A.13"
+  },
+  "p1:arith:fixed-support": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "proposition",
+    "number": "A.14",
+    "page": "105",
+    "title": "A relative relation meeting several blocks",
+    "destination": "theorem.A.14"
+  },
+  "p1:arith:fixed-branching": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "proposition",
+    "number": "A.15",
+    "page": "105",
+    "title": "A fixed number of exposed source windows",
+    "destination": "theorem.A.15"
+  },
+  "p1:arith:ternary-budget": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "proposition",
+    "number": "A.16",
+    "page": "106",
+    "title": "A ternary group budget",
+    "destination": "theorem.A.16"
+  },
+  "p1:arith:ternarycount": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "equation",
+    "number": "A.8",
+    "page": "106",
+    "title": "A ternary group budget",
+    "destination": "equation.A.8"
+  },
+  "p1:arith:groupcrt": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "equation",
+    "number": "A.9",
+    "page": "106",
+    "title": "Products grouped by their ternary support",
+    "destination": "equation.A.9"
+  },
+  "p1:arith:planecrt": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "equation",
+    "number": "A.10",
+    "page": "106",
+    "title": "Products grouped by their ternary support",
+    "destination": "equation.A.10"
+  },
+  "p1:arith:twogoodpositive": {
+    "old_source": "sections/arithmetic_appendix.tex",
+    "kind": "lemma",
+    "number": "A.17",
+    "page": "107",
+    "title": "A positive second moment for good edges",
+    "destination": "theorem.A.17"
+  },
+  "p1:offset:section": {
+    "old_source": "sections/offset_geometry.tex",
+    "kind": "other",
+    "number": "C",
+    "page": "112",
+    "title": "Offset geometry and residual relation spaces",
+    "destination": "appendix.C"
+  },
+  "p1:offset:line-product": {
+    "old_source": "sections/offset_geometry.tex",
+    "kind": "lemma",
+    "number": "C.1",
+    "page": "112",
+    "title": "The prime product on an offset line",
+    "destination": "theorem.C.1"
+  },
+  "p1:offset:line-product-bound": {
+    "old_source": "sections/offset_geometry.tex",
+    "kind": "equation",
+    "number": "C.1",
+    "page": "112",
+    "title": "The prime product on an offset line",
+    "destination": "equation.C.1"
+  },
+  "p1:offset:integer-tail": {
+    "old_source": "sections/offset_geometry.tex",
+    "kind": "lemma",
+    "number": "C.2",
+    "page": "113",
+    "title": "An integer product tail",
+    "destination": "theorem.C.2"
+  },
+  "p1:offset:forced-plane": {
+    "old_source": "sections/offset_geometry.tex",
+    "kind": "proposition",
+    "number": "C.3",
+    "page": "113",
+    "title": "A forced plane uses all three coordinates",
+    "destination": "theorem.C.3"
+  },
+  "p1:offset:subsequent-offset": {
+    "old_source": "sections/offset_geometry.tex",
+    "kind": "equation",
+    "number": "C.2",
+    "page": "113",
+    "title": "A forced plane uses all three coordinates",
+    "destination": "equation.C.2"
+  },
+  "p1:offset:normal-budget": {
+    "old_source": "sections/offset_geometry.tex",
+    "kind": "lemma",
+    "number": "C.4",
+    "page": "114",
+    "title": "Many planar supports force a small normal",
+    "destination": "theorem.C.4"
+  },
+  "p1:offset:normal-count": {
+    "old_source": "sections/offset_geometry.tex",
+    "kind": "equation",
+    "number": "C.3",
+    "page": "114",
+    "title": "Many planar supports force a small normal",
+    "destination": "equation.C.3"
+  },
+  "p1:offset:root-separation": {
+    "old_source": "sections/offset_geometry.tex",
+    "kind": "lemma",
+    "number": "C.5",
+    "page": "114",
+    "title": "At most one common root",
+    "destination": "theorem.C.5"
+  },
+  "p1:offset:planar-components": {
+    "old_source": "sections/offset_geometry.tex",
+    "kind": "proposition",
+    "number": "C.6",
+    "page": "114",
+    "title": "Many transverse square products on prescribed planes",
+    "destination": "theorem.C.6"
+  },
+  "p1:offset:cover-rank": {
+    "old_source": "sections/offset_geometry.tex",
+    "kind": "lemma",
+    "number": "C.7",
+    "page": "115",
+    "title": "Covering cost and free components",
+    "destination": "theorem.C.7"
+  },
+  "p1:offset:six-vertex": {
+    "old_source": "sections/offset_geometry.tex",
+    "kind": "proposition",
+    "number": "C.8",
+    "page": "116",
+    "title": "A six-vertex budget for the residual space",
+    "destination": "theorem.C.8"
+  },
+  "p1:offset:six-vertex-bound": {
+    "old_source": "sections/offset_geometry.tex",
+    "kind": "equation",
+    "number": "C.4",
+    "page": "116",
+    "title": "A six-vertex budget for the residual space",
+    "destination": "equation.C.4"
+  },
+  "p13:optimal:section": {
+    "old_source": "sections/optimal_closure.tex",
+    "kind": "section",
+    "number": "19",
+    "page": "86",
+    "title": "The optimal approximation and its scalar consequences",
+    "destination": "section.19"
+  },
+  "p13:optimal:weighted": {
+    "old_source": "sections/optimal_closure.tex",
+    "kind": "corollary",
+    "number": "19.1",
+    "page": "86",
+    "title": "Every fixed polynomial weight",
+    "destination": "theorem.19.1"
+  },
+  "p13:optimal:weighted-bound": {
+    "old_source": "sections/optimal_closure.tex",
+    "kind": "equation",
+    "number": "19.1",
+    "page": "86",
+    "title": "Every fixed polynomial weight",
+    "destination": "equation.19.1"
+  },
+  "p13:optimal:moments": {
+    "old_source": "sections/optimal_closure.tex",
+    "kind": "equation",
+    "number": "19.2",
+    "page": "86",
+    "title": "Every fixed polynomial weight",
+    "destination": "equation.19.2"
+  },
+  "p13:optimal:zero": {
+    "old_source": "sections/optimal_closure.tex",
+    "kind": "corollary",
+    "number": "19.2",
+    "page": "86",
+    "title": "No retained start",
+    "destination": "theorem.19.2"
+  },
+  "p13:optimal:nominal": {
+    "old_source": "sections/optimal_closure.tex",
+    "kind": "proposition",
+    "number": "19.3",
+    "page": "87",
+    "title": "The quantized mean bias",
+    "destination": "theorem.19.3"
+  },
+  "p13:optimal:integer-mean": {
+    "old_source": "sections/optimal_closure.tex",
+    "kind": "equation",
+    "number": "19.3",
+    "page": "87",
+    "title": "The quantized mean bias",
+    "destination": "equation.19.3"
+  },
+  "p13:optimal:nominal-distance": {
+    "old_source": "sections/optimal_closure.tex",
+    "kind": "equation",
+    "number": "19.4",
+    "page": "87",
+    "title": "The quantized mean bias",
+    "destination": "equation.19.4"
+  },
+  "p1:moment-obstruction": {
+    "old_source": "sections/moment_obstruction.tex",
+    "kind": "other",
+    "number": "G",
+    "page": "139",
+    "title": "Fixed moments do not give a polynomial rate",
+    "destination": "appendix.G"
+  },
+  "p1:obstruction:fixed": {
+    "old_source": "sections/moment_obstruction.tex",
+    "kind": "proposition",
+    "number": "G.1",
+    "page": "139",
+    "title": "A perturbation invisible at each fixed order",
+    "destination": "theorem.G.1"
+  },
+  "p13:conf:section": {
+    "old_source": "sections/confinement.tex",
+    "kind": "section",
+    "number": "14",
+    "page": "53",
+    "title": "Confining large common divisors",
+    "destination": "section.14"
+  },
+  "p13:conf:groups": {
+    "old_source": "sections/confinement.tex",
+    "kind": "lemma",
+    "number": "14.1",
+    "page": "53",
+    "title": "Polynomial confinement of common divisors",
+    "destination": "theorem.14.1"
+  },
+  "p13:conf:dense-primitive": {
+    "old_source": "sections/confinement.tex",
+    "kind": "theorem",
+    "number": "14.2",
+    "page": "53",
+    "title": "Dense primitive triples",
+    "destination": "theorem.14.2"
+  },
+  "p13:conf:dense-pairs": {
+    "old_source": "sections/confinement.tex",
+    "kind": "corollary",
+    "number": "14.3",
+    "page": "54",
+    "title": "Dense nonaligned pairs",
+    "destination": "theorem.14.3"
+  },
+  "p13:conf:near-primitive": {
+    "old_source": "sections/confinement.tex",
+    "kind": "proposition",
+    "number": "14.4",
+    "page": "54",
+    "title": "Dense triples with weak proper intersections",
+    "destination": "theorem.14.4"
+  },
+  "p13:conf:strong-profile": {
+    "old_source": "sections/confinement.tex",
+    "kind": "proposition",
+    "number": "14.5",
+    "page": "55",
+    "title": "A strong nonaligned pair in a triple",
+    "destination": "theorem.14.5"
+  },
+  "p13:lower:section": {
+    "old_source": "sections/quartic_lower.tex",
+    "kind": "section",
+    "number": "18",
+    "page": "83",
+    "title": "Why the quadratic approximation stops at the fourth-order scale",
+    "destination": "section.18"
+  },
+  "p13:lower:quartic": {
+    "old_source": "sections/quartic_lower.tex",
+    "kind": "lemma",
+    "number": "18.1",
+    "page": "84",
+    "title": "The fourth factorial cumulant",
+    "destination": "theorem.18.1"
+  },
+  "p13:lower:quartic-identities": {
+    "old_source": "sections/quartic_lower.tex",
+    "kind": "equation",
+    "number": "18.1",
+    "page": "84",
+    "title": "The fourth factorial cumulant",
+    "destination": "equation.18.1"
+  },
+  "p13:lower:positive-quartic": {
+    "old_source": "sections/quartic_lower.tex",
+    "kind": "equation",
+    "number": "18.2",
+    "page": "84",
+    "title": "The fourth factorial cumulant",
+    "destination": "equation.18.2"
+  },
+  "p13:lower:exact-cumulant": {
+    "old_source": "sections/quartic_lower.tex",
+    "kind": "equation",
+    "number": "18.3",
+    "page": "84",
+    "title": "Cancellation of the disconnected pair terms",
+    "destination": "equation.18.3"
+  },
+  "p13:lower:optimal": {
+    "old_source": "sections/quartic_lower.tex",
+    "kind": "theorem",
+    "number": "18.2",
+    "page": "85",
+    "title": "Optimal power for the exact quadratic reference",
+    "destination": "theorem.18.2"
+  },
+  "p13:lower:norm": {
+    "old_source": "sections/quartic_lower.tex",
+    "kind": "equation",
+    "number": "18.4",
+    "page": "85",
+    "title": "Optimal power for the exact quadratic reference",
+    "destination": "equation.18.4"
+  },
+  "p1:arith:section": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "section",
+    "number": "2",
+    "page": "10",
+    "title": "Arithmetic of the first interaction",
+    "destination": "section.2"
+  },
+  "p1:arith:affine": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.1",
+    "page": "11",
+    "title": "Arithmetic of the first interaction",
+    "destination": "equation.2.1"
+  },
+  "p1:arith:core": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "proposition",
+    "number": "2.1",
+    "page": "11",
+    "title": "Regular set",
+    "destination": "theorem.2.1"
+  },
+  "p1:arith:coretransfer": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.2",
+    "page": "11",
+    "title": "Regular set",
+    "destination": "equation.2.2"
+  },
+  "p1:arith:marginalsum": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.3",
+    "page": "11",
+    "title": "Regular set",
+    "destination": "equation.2.3"
+  },
+  "p1:arith:momenttransfer": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.4",
+    "page": "11",
+    "title": "Regular set",
+    "destination": "equation.2.4"
+  },
+  "p1:arith:graphbound": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.5",
+    "page": "12",
+    "title": "Sparse hosts and weighted nonaligned pairs",
+    "destination": "equation.2.5"
+  },
+  "p1:arith:hosts": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "proposition",
+    "number": "2.2",
+    "page": "12",
+    "title": "Support and residual mass",
+    "destination": "theorem.2.2"
+  },
+  "p1:arith:hostbound": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.6",
+    "page": "12",
+    "title": "Support and residual mass",
+    "destination": "equation.2.6"
+  },
+  "p1:arith:nonaligned": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.7",
+    "page": "12",
+    "title": "Support and residual mass",
+    "destination": "equation.2.7"
+  },
+  "p1:arith:twokernelused": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.8",
+    "page": "12",
+    "title": "Sparse hosts and weighted nonaligned pairs",
+    "destination": "equation.2.8"
+  },
+  "p1:arith:diametersign": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.9",
+    "page": "13",
+    "title": "The two leading rational channels",
+    "destination": "equation.2.9"
+  },
+  "p1:arith:channelidentity": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.10",
+    "page": "13",
+    "title": "The two leading rational channels",
+    "destination": "equation.2.10"
+  },
+  "p1:arith:S23": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.11",
+    "page": "13",
+    "title": "The two leading rational channels",
+    "destination": "equation.2.11"
+  },
+  "p1:arith:S34": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.12",
+    "page": "13",
+    "title": "The two leading rational channels",
+    "destination": "equation.2.12"
+  },
+  "p1:arith:pairs": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "theorem",
+    "number": "2.3",
+    "page": "13",
+    "title": "Complete pair profile",
+    "destination": "theorem.2.3"
+  },
+  "p1:arith:positiveprofile": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.13",
+    "page": "13",
+    "title": "Complete pair profile",
+    "destination": "equation.2.13"
+  },
+  "p1:arith:signedprofile": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.14",
+    "page": "13",
+    "title": "Complete pair profile",
+    "destination": "equation.2.14"
+  },
+  "p1:arith:cumulantexpansion": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.15",
+    "page": "13",
+    "title": "Complete pair profile",
+    "destination": "equation.2.15"
+  },
+  "p1:arith:leadingphase": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.16",
+    "page": "13",
+    "title": "Complete pair profile",
+    "destination": "equation.2.16"
+  },
+  "p1:arith:secondphase": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.17",
+    "page": "13",
+    "title": "Complete pair profile",
+    "destination": "equation.2.17"
+  },
+  "p1:arith:edgefamily": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "corollary",
+    "number": "2.4",
+    "page": "14",
+    "title": "The pair input for the expansion",
+    "destination": "theorem.2.4"
+  },
+  "p1:arith:edgemass": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.18",
+    "page": "14",
+    "title": "The pair input for the expansion",
+    "destination": "equation.2.18"
+  },
+  "p1:arith:badpairs": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.19",
+    "page": "14",
+    "title": "The pair input for the expansion",
+    "destination": "equation.2.19"
+  },
+  "p1:arith:compression": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "lemma",
+    "number": "2.5",
+    "page": "15",
+    "title": "Exact compression of a good edge",
+    "destination": "theorem.2.5"
+  },
+  "p1:arith:compressedrank": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.20",
+    "page": "15",
+    "title": "Exact compression of a good edge",
+    "destination": "equation.2.20"
+  },
+  "p1:arith:palm": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "proposition",
+    "number": "2.6",
+    "page": "15",
+    "title": "Positive Palm cost of a good edge",
+    "destination": "theorem.2.6"
+  },
+  "p1:arith:palm23": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.21",
+    "page": "15",
+    "title": "Positive Palm cost of a good edge",
+    "destination": "equation.2.21"
+  },
+  "p1:arith:palm34": {
+    "old_source": "sections/arithmetic.tex",
+    "kind": "equation",
+    "number": "2.22",
+    "page": "15",
+    "title": "Positive Palm cost of a good edge",
+    "destination": "equation.2.22"
+  },
+  "p13:half:section": {
+    "old_source": "sections/half_counts.tex",
+    "kind": "section",
+    "number": "12",
+    "page": "47",
+    "title": "A half power for each new window",
+    "destination": "section.12"
+  },
+  "p13:half:conditional": {
+    "old_source": "sections/half_counts.tex",
+    "kind": "theorem",
+    "number": "12.1",
+    "page": "48",
+    "title": "Conditional full-support count",
+    "destination": "theorem.12.1"
+  },
+  "p13:half:condition": {
+    "old_source": "sections/half_counts.tex",
+    "kind": "equation",
+    "number": "12.1",
+    "page": "48",
+    "title": "Conditional full-support count",
+    "destination": "equation.12.1"
+  },
+  "p13:half:small-kernels": {
+    "old_source": "sections/half_counts.tex",
+    "kind": "lemma",
+    "number": "12.2",
+    "page": "48",
+    "title": "Two small kernels",
+    "destination": "theorem.12.2"
+  },
+  "p13:half:smooth": {
+    "old_source": "sections/half_counts.tex",
+    "kind": "lemma",
+    "number": "12.3",
+    "page": "48",
+    "title": "A large smooth modulus",
+    "destination": "theorem.12.3"
+  },
+  "p13:half:saturation": {
+    "old_source": "sections/half_counts.tex",
+    "kind": "lemma",
+    "number": "12.4",
+    "page": "49",
+    "title": "Incoming and outgoing certificate counts",
+    "destination": "theorem.12.4"
+  },
+  "p13:half:connected": {
+    "old_source": "sections/half_counts.tex",
+    "kind": "corollary",
+    "number": "12.5",
+    "page": "50",
+    "title": "Connected and primitive families at fixed order",
+    "destination": "theorem.12.5"
+  },
+  "p13:half:pairs": {
+    "old_source": "sections/half_counts.tex",
+    "kind": "corollary",
+    "number": "12.6",
+    "page": "51",
+    "title": "Dependent pairs",
+    "destination": "theorem.12.6"
+  },
+  "p13:short:section": {
+    "old_source": "sections/short_supports.tex",
+    "kind": "section",
+    "number": "11",
+    "page": "45",
+    "title": "Square products with short selections",
+    "destination": "section.11"
+  },
+  "p13:short:quadratic": {
+    "old_source": "sections/short_supports.tex",
+    "kind": "lemma",
+    "number": "11.1",
+    "page": "45",
+    "title": "A quadratic kernel with a prescribed divisor",
+    "destination": "theorem.11.1"
+  },
+  "p13:short:split": {
+    "old_source": "sections/short_supports.tex",
+    "kind": "lemma",
+    "number": "11.2",
+    "page": "45",
+    "title": "Kernels of a split product",
+    "destination": "theorem.11.2"
+  },
+  "p13:short:split-count": {
+    "old_source": "sections/short_supports.tex",
+    "kind": "equation",
+    "number": "11.1",
+    "page": "46",
+    "title": "Kernels of a split product",
+    "destination": "equation.11.1"
+  },
+  "p13:short:resultant": {
+    "old_source": "sections/short_supports.tex",
+    "kind": "equation",
+    "number": "11.2",
+    "page": "46",
+    "title": "Square products with short selections",
+    "destination": "equation.11.2"
+  },
+  "p13:short:moments": {
+    "old_source": "sections/short_supports.tex",
+    "kind": "proposition",
+    "number": "11.3",
+    "page": "46",
+    "title": "Uniform moments for short split products",
+    "destination": "theorem.11.3"
+  },
+  "p13:short:moment-bound": {
+    "old_source": "sections/short_supports.tex",
+    "kind": "equation",
+    "number": "11.3",
+    "page": "46",
+    "title": "Uniform moments for short split products",
+    "destination": "equation.11.3"
+  },
+  "p13:short:old-space": {
+    "old_source": "sections/short_supports.tex",
+    "kind": "corollary",
+    "number": "11.4",
+    "page": "47",
+    "title": "Short projections in an old space",
+    "destination": "theorem.11.4"
+  },
+  "p1:intro": {
+    "old_source": "sections/introduction.tex",
+    "kind": "section",
+    "number": "1",
+    "page": "3",
+    "title": "Introduction",
+    "destination": "section.1"
+  },
+  "p1:intro:model": {
+    "old_source": "sections/introduction.tex",
+    "kind": "section",
+    "number": "1.1",
+    "page": "3",
+    "title": "Model and main results",
+    "destination": "subsection.1.1"
+  },
+  "p1:eq:critical": {
+    "old_source": "sections/introduction.tex",
+    "kind": "equation",
+    "number": "1.1",
+    "page": "3",
+    "title": "Model and main results",
+    "destination": "equation.1.1"
+  },
+  "p1:eq:model": {
+    "old_source": "sections/introduction.tex",
+    "kind": "equation",
+    "number": "1.2",
+    "page": "3",
+    "title": "Model and main results",
+    "destination": "equation.1.2"
+  },
+  "p1:eq:Q": {
+    "old_source": "sections/introduction.tex",
+    "kind": "equation",
+    "number": "1.3",
+    "page": "3",
+    "title": "Model and main results",
+    "destination": "equation.1.3"
+  },
+  "p1:thm:main": {
+    "old_source": "sections/introduction.tex",
+    "kind": "theorem",
+    "number": "1.1",
+    "page": "3",
+    "title": "Optimal quadratic Poisson--Charlier approximation",
+    "destination": "theorem.1.1"
+  },
+  "p1:eq:main": {
+    "old_source": "sections/introduction.tex",
+    "kind": "equation",
+    "number": "1.4",
+    "page": "3",
+    "title": "Optimal quadratic Poisson--Charlier approximation",
+    "destination": "equation.1.4"
+  },
+  "p1:eq:alpha-leading": {
+    "old_source": "sections/introduction.tex",
+    "kind": "equation",
+    "number": "1.5",
+    "page": "4",
+    "title": "Model and main results",
+    "destination": "equation.1.5"
+  },
+  "p1:cor:tv": {
+    "old_source": "sections/introduction.tex",
+    "kind": "corollary",
+    "number": "1.2",
+    "page": "4",
+    "title": "Exact total variation scale",
+    "destination": "theorem.1.2"
+  },
+  "p1:eq:tv-main": {
+    "old_source": "sections/introduction.tex",
+    "kind": "equation",
+    "number": "1.6",
+    "page": "4",
+    "title": "Exact total variation scale",
+    "destination": "equation.1.6"
+  },
+  "p1:eq:tv-equiv": {
+    "old_source": "sections/introduction.tex",
+    "kind": "equation",
+    "number": "1.7",
+    "page": "4",
+    "title": "Exact total variation scale",
+    "destination": "equation.1.7"
+  },
+  "p1:ex:unit": {
+    "old_source": "sections/introduction.tex",
+    "kind": "example",
+    "number": "1.3",
+    "page": "4",
+    "title": "A numerical coefficient without a moving phase",
+    "destination": "theorem.1.3"
+  },
+  "p1:eq:unit-example": {
+    "old_source": "sections/introduction.tex",
+    "kind": "equation",
+    "number": "1.8",
+    "page": "4",
+    "title": "A numerical coefficient without a moving phase",
+    "destination": "equation.1.8"
+  },
+  "p1:eq:alpha-explicit": {
+    "old_source": "sections/introduction.tex",
+    "kind": "equation",
+    "number": "1.9",
+    "page": "4",
+    "title": "Model and main results",
+    "destination": "equation.1.9"
+  },
+  "p1:cor:explicit": {
+    "old_source": "sections/introduction.tex",
+    "kind": "corollary",
+    "number": "1.4",
+    "page": "4",
+    "title": "An explicit probability reference",
+    "destination": "theorem.1.4"
+  },
+  "p1:eq:explicit-law": {
+    "old_source": "sections/introduction.tex",
+    "kind": "equation",
+    "number": "1.10",
+    "page": "4",
+    "title": "An explicit probability reference",
+    "destination": "equation.1.10"
+  },
+  "p1:eq:explicit-masses": {
+    "old_source": "sections/introduction.tex",
+    "kind": "equation",
+    "number": "1.11",
+    "page": "4",
+    "title": "An explicit probability reference",
+    "destination": "equation.1.11"
+  },
+  "p1:eq:no-start": {
+    "old_source": "sections/introduction.tex",
+    "kind": "equation",
+    "number": "1.12",
+    "page": "5",
+    "title": "The probability of no retained start",
+    "destination": "equation.1.12"
+  },
+  "p1:intro:mechanism": {
+    "old_source": "sections/introduction.tex",
+    "kind": "section",
+    "number": "1.2",
+    "page": "5",
+    "title": "Why a pair has the leading size",
+    "destination": "subsection.1.2"
+  },
+  "p1:intro:strategy": {
+    "old_source": "sections/introduction.tex",
+    "kind": "section",
+    "number": "1.3",
+    "page": "6",
+    "title": "From arithmetic counts to a distance between laws",
+    "destination": "subsection.1.3"
+  },
+  "p1:intro:dependencies": {
+    "old_source": "sections/introduction.tex",
+    "kind": "section",
+    "number": "1.5",
+    "page": "8",
+    "title": "Proof dependencies and ranges of uniformity",
+    "destination": "subsection.1.5"
+  },
+  "p1:intro:notation": {
+    "old_source": "sections/introduction.tex",
+    "kind": "section",
+    "number": "1.6",
+    "page": "10",
+    "title": "Notation guide",
+    "destination": "subsection.1.6"
+  },
+  "p13:exact:section": {
+    "old_source": "sections/exact_setup.tex",
+    "kind": "section",
+    "number": "10",
+    "page": "44",
+    "title": "Keeping the exact marginal probabilities",
+    "destination": "section.10"
+  },
+  "p13:exact:marginals": {
+    "old_source": "sections/exact_setup.tex",
+    "kind": "equation",
+    "number": "10.1",
+    "page": "44",
+    "title": "Keeping the exact marginal probabilities",
+    "destination": "equation.10.1"
+  },
+  "p13:exact:rank": {
+    "old_source": "sections/exact_setup.tex",
+    "kind": "equation",
+    "number": "10.2",
+    "page": "44",
+    "title": "Keeping the exact marginal probabilities",
+    "destination": "equation.10.2"
+  },
+  "p13:exact:weights": {
+    "old_source": "sections/exact_setup.tex",
+    "kind": "equation",
+    "number": "10.3",
+    "page": "44",
+    "title": "Keeping the exact marginal probabilities",
+    "destination": "equation.10.3"
+  },
+  "p13:exact:center": {
+    "old_source": "sections/exact_setup.tex",
+    "kind": "equation",
+    "number": "10.4",
+    "page": "44",
+    "title": "Keeping the exact marginal probabilities",
+    "destination": "equation.10.4"
+  },
+  "p13:exact:activities": {
+    "old_source": "sections/exact_setup.tex",
+    "kind": "equation",
+    "number": "10.5",
+    "page": "44",
+    "title": "Keeping the exact marginal probabilities",
+    "destination": "equation.10.5"
+  },
+  "p13:exact:alpha": {
+    "old_source": "sections/exact_setup.tex",
+    "kind": "equation",
+    "number": "10.6",
+    "page": "44",
+    "title": "Keeping the exact marginal probabilities",
+    "destination": "equation.10.6"
+  },
+  "p13:exact:kappa3": {
+    "old_source": "sections/exact_setup.tex",
+    "kind": "equation",
+    "number": "10.7",
+    "page": "44",
+    "title": "Keeping the exact marginal probabilities",
+    "destination": "equation.10.7"
+  },
+  "p13:exact:propagation": {
+    "old_source": "sections/exact_setup.tex",
+    "kind": "equation",
+    "number": "10.8",
+    "page": "45",
+    "title": "Fixed sources on effective spaces",
+    "destination": "equation.10.8"
+  },
+  "p1:stop:section": {
+    "old_source": "sections/stopped.tex",
+    "kind": "section",
+    "number": "4",
+    "page": "17",
+    "title": "Stopping the expansion at its first excluded prefix",
+    "destination": "section.4"
+  },
+  "p1:stop:boundary": {
+    "old_source": "sections/stopped.tex",
+    "kind": "equation",
+    "number": "4.1",
+    "page": "18",
+    "title": "An identity for an arbitrary hereditary class",
+    "destination": "equation.4.1"
+  },
+  "p1:stop:polynomial": {
+    "old_source": "sections/stopped.tex",
+    "kind": "lemma",
+    "number": "4.1",
+    "page": "18",
+    "title": "Expansion at the first excluded prefix",
+    "destination": "theorem.4.1"
+  },
+  "p1:stop:polynomial-identity": {
+    "old_source": "sections/stopped.tex",
+    "kind": "equation",
+    "number": "4.2",
+    "page": "18",
+    "title": "Expansion at the first excluded prefix",
+    "destination": "equation.4.2"
+  },
+  "p1:stop:retained": {
+    "old_source": "sections/stopped.tex",
+    "kind": "equation",
+    "number": "4.3",
+    "page": "18",
+    "title": "An identity for an arbitrary hereditary class",
+    "destination": "equation.4.3"
+  },
+  "p1:stop:measure": {
+    "old_source": "sections/stopped.tex",
+    "kind": "proposition",
+    "number": "4.2",
+    "page": "18",
+    "title": "A positive remainder kernel",
+    "destination": "theorem.4.2"
+  },
+  "p1:stop:measure-identity": {
+    "old_source": "sections/stopped.tex",
+    "kind": "equation",
+    "number": "4.4",
+    "page": "18",
+    "title": "A positive remainder kernel",
+    "destination": "equation.4.4"
+  },
+  "p1:stop:norm": {
+    "old_source": "sections/stopped.tex",
+    "kind": "equation",
+    "number": "4.5",
+    "page": "18",
+    "title": "A positive remainder kernel",
+    "destination": "equation.4.5"
+  },
+  "p1:stop:example": {
+    "old_source": "sections/stopped.tex",
+    "kind": "example",
+    "number": "4.3",
+    "page": "19",
+    "title": "A suffix that remains fully dependent",
+    "destination": "theorem.4.3"
+  },
+  "p1:stop:pair-nullity": {
+    "old_source": "sections/stopped.tex",
+    "kind": "equation",
+    "number": "4.6",
+    "page": "19",
+    "title": "Retaining a direct family and one compressed pair",
+    "destination": "equation.4.6"
+  },
+  "p1:stop:gamma": {
+    "old_source": "sections/stopped.tex",
+    "kind": "equation",
+    "number": "4.7",
+    "page": "19",
+    "title": "Retaining a direct family and one compressed pair",
+    "destination": "equation.4.7"
+  },
+  "p1:stop:direct-pair-probability": {
+    "old_source": "sections/stopped.tex",
+    "kind": "equation",
+    "number": "4.8",
+    "page": "19",
+    "title": "Retaining a direct family and one compressed pair",
+    "destination": "equation.4.8"
+  },
+  "p1:stop:class": {
+    "old_source": "sections/stopped.tex",
+    "kind": "lemma",
+    "number": "4.4",
+    "page": "20",
+    "title": "Heredity and boundary nullity",
+    "destination": "theorem.4.4"
+  },
+  "p1:stop:boundary-nullity": {
+    "old_source": "sections/stopped.tex",
+    "kind": "equation",
+    "number": "4.9",
+    "page": "20",
+    "title": "Heredity and boundary nullity",
+    "destination": "equation.4.9"
+  },
+  "p1:stop:cutoff": {
+    "old_source": "sections/stopped.tex",
+    "kind": "equation",
+    "number": "4.10",
+    "page": "20",
+    "title": "The factorial tail of the boundary",
+    "destination": "equation.4.10"
+  },
+  "p1:stop:cutoff-range": {
+    "old_source": "sections/stopped.tex",
+    "kind": "equation",
+    "number": "4.11",
+    "page": "20",
+    "title": "The factorial tail of the boundary",
+    "destination": "equation.4.11"
+  },
+  "p1:stop:tail": {
+    "old_source": "sections/stopped.tex",
+    "kind": "lemma",
+    "number": "4.5",
+    "page": "20",
+    "title": "Large boundary families",
+    "destination": "theorem.4.5"
+  },
+  "p1:stop:tail-bound": {
+    "old_source": "sections/stopped.tex",
+    "kind": "equation",
+    "number": "4.12",
+    "page": "20",
+    "title": "Large boundary families",
+    "destination": "equation.4.12"
+  },
+  "p1:consequences:section": {
+    "old_source": "sections/arithmetic_consequences.tex",
+    "kind": "other",
+    "number": "D",
+    "page": "116",
+    "title": "Domain dependence and polylogarithmic arithmetic cutoffs",
+    "destination": "appendix.D"
+  },
+  "p1:consequences:macro": {
+    "old_source": "sections/arithmetic_consequences.tex",
+    "kind": "proposition",
+    "number": "D.1",
+    "page": "117",
+    "title": "Profiles depend on the interval",
+    "destination": "theorem.D.1"
+  },
+  "p1:consequences:dyadic-positive": {
+    "old_source": "sections/arithmetic_consequences.tex",
+    "kind": "equation",
+    "number": "D.1",
+    "page": "117",
+    "title": "Profiles depend on the interval",
+    "destination": "equation.D.1"
+  },
+  "p1:consequences:macro-positive": {
+    "old_source": "sections/arithmetic_consequences.tex",
+    "kind": "equation",
+    "number": "D.2",
+    "page": "117",
+    "title": "Profiles depend on the interval",
+    "destination": "equation.D.2"
+  },
+  "p1:consequences:macro-signed": {
+    "old_source": "sections/arithmetic_consequences.tex",
+    "kind": "equation",
+    "number": "D.3",
+    "page": "117",
+    "title": "Profiles depend on the interval",
+    "destination": "equation.D.3"
+  },
+  "p1:consequences:S12": {
+    "old_source": "sections/arithmetic_consequences.tex",
+    "kind": "equation",
+    "number": "D.4",
+    "page": "117",
+    "title": "Profiles depend on the interval",
+    "destination": "equation.D.4"
+  },
+  "p1:consequences:macro-equivalent": {
+    "old_source": "sections/arithmetic_consequences.tex",
+    "kind": "equation",
+    "number": "D.5",
+    "page": "117",
+    "title": "Profiles depend on the interval",
+    "destination": "equation.D.5"
+  },
+  "p1:consequences:conditional-rank": {
+    "old_source": "sections/arithmetic_consequences.tex",
+    "kind": "lemma",
+    "number": "D.2",
+    "page": "118",
+    "title": "Conditional rank loss",
+    "destination": "theorem.D.2"
+  },
+  "p1:consequences:conditional-budget": {
+    "old_source": "sections/arithmetic_consequences.tex",
+    "kind": "equation",
+    "number": "D.6",
+    "page": "118",
+    "title": "Conditional rank loss",
+    "destination": "equation.D.6"
+  },
+  "p1:consequences:rankin-patterns": {
+    "old_source": "sections/arithmetic_consequences.tex",
+    "kind": "lemma",
+    "number": "D.3",
+    "page": "118",
+    "title": "A Rankin bound for offset patterns",
+    "destination": "theorem.D.3"
+  },
+  "p1:consequences:rankin-primes": {
+    "old_source": "sections/arithmetic_consequences.tex",
+    "kind": "equation",
+    "number": "D.7",
+    "page": "118",
+    "title": "A Rankin bound for offset patterns",
+    "destination": "equation.D.7"
+  },
+  "p1:consequences:rankin-groups": {
+    "old_source": "sections/arithmetic_consequences.tex",
+    "kind": "equation",
+    "number": "D.8",
+    "page": "119",
+    "title": "A Rankin bound for offset patterns",
+    "destination": "equation.D.8"
+  },
+  "p1:consequences:confinement": {
+    "old_source": "sections/arithmetic_consequences.tex",
+    "kind": "proposition",
+    "number": "D.4",
+    "page": "119",
+    "title": "Polylogarithmic confinement",
+    "destination": "theorem.D.4"
+  },
+  "p1:consequences:confinement-error": {
+    "old_source": "sections/arithmetic_consequences.tex",
+    "kind": "equation",
+    "number": "D.9",
+    "page": "119",
+    "title": "Polylogarithmic confinement",
+    "destination": "equation.D.9"
+  },
+  "p1:consequences:confinement-count": {
+    "old_source": "sections/arithmetic_consequences.tex",
+    "kind": "equation",
+    "number": "D.10",
+    "page": "119",
+    "title": "Polylogarithmic confinement",
+    "destination": "equation.D.10"
+  }
+}

@@ -1,0 +1,85 @@
+% Proposed insertion after the dependency map in main_sections/introduction.tex.
+% Root editor decides placement/width. This file is not included automatically.
+The strict power savings used in the last stages are recorded below.
+Each margin compares complete contributions, after coefficient choices,
+propagation and rank factors have been included.
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{@{}Xcl@{}}
+\toprule
+Comparison & Exact margin & Location\\
+\midrule
+Nonaligned target above a rational pair versus dominant triples
+& $11/8-41/30=1/120$
+& \eqref{p13:third:unaligned-target-cost}\\[4pt]
+Incompatible triples versus the third factorial cumulant
+& $3/2-41/30=2/15$
+& \eqref{p13:activity:kappa-comparison}\\[4pt]
+Third activity versus the quadratic remainder
+& $41/30-4/3=1/30$
+& \eqref{p13:transfer:reconstruction-bound}\\[4pt]
+Low-nullity uniform tail versus the quadratic remainder
+& $27/20-4/3=1/60$
+& \eqref{p13:transfer:low-rank-tail}\\[4pt]
+Quartic signed error versus $\alpha_N^2$
+& $3/2-4/3=1/6$
+& \eqref{p13:lower:positive-quartic}\\
+\bottomrule
+\end{tabularx}
+\end{center}
+The smallest displayed margin is $1/120$. In contrast, two pair
+activities have size $A_2^2\ll N^{-4/3+\eta}$ and are retained at
+the target scale. They have no strict power saving to spend.
+For a prescribed final accuracy $\varepsilon_0>0$, one may choose
+$0<\tau<\min(\varepsilon_0/4,1/960)$ and invoke completed auxiliary
+estimates with total loss at most $\tau$ each. Their own input margins
+are chosen smaller as needed; in a product, divide the allotted loss
+between the factors. Thus the same symbol $\varepsilon$ in successive
+statements never requires the same numerical value at every stage.
+Rank thresholds and fixed geometric degrees have separate roles.
+The fixed-order bounds are used only through order $256$; larger
+cardinalities have the uniform certificate estimate and a factorial
+boundary bound.
+
+% Proposed paragraph at the end of main_sections/third_cumulant.tex.
+For clarity, the rank threshold $\eta=1/30$ and the weak-pair threshold
+$\theta<\eta/200$ in this partition are distinct from an error margin.
+With final accuracy $\varepsilon_{\mathrm{out}}>0$, choose a fixed
+$0<\tau<\min(\varepsilon_{\mathrm{out}}/4,1/960)$, and allocate
+smaller input losses so that every completed sector loses at most
+$\tau$. The nonaligned target above a rational pair then retains the
+margin $1/120-\tau>0$, and the incompatible-triple error retains
+$2/15-\tau>0$. The other nondominant sectors have larger margins.
+All offset and residual-rank losses are included in these completed
+sector budgets before $N$ is taken large. In particular the latter
+error is negligible in the positive rational lower bound as well as
+small enough for the upper bound.
+
+% Proposed paragraph in main_sections/quartic_lower.tex, at the explicit
+% negligibility comparison (may replace, rather than duplicate, existing prose).
+The margin needed for this sign argument is
+$3/2-4/3=1/6$. With a fixed total error loss $\tau<1/6$,
+\[
+ \frac{N^{-3/2+\tau}}{\alpha_N^2}
+ \ll_C L^{-2}N^{-1/6+\tau}\longrightarrow0.
+\]
+For the norm lower bound, the subsequent choice of an integer $k$ with
+$4/[3(k-1)]\leq\varepsilon_{\mathrm{out}}$ is made after the final
+accuracy is specified and before $N$. No uniformity in a growing
+moment order is required.
+
+% Proposed replacement for the first upper-bound calculation in
+% main_sections/optimal_closure.tex. The current eta<min(eps/3,1/120)
+% already suffices; this version merely agrees with the global ledger.
+Write $\varepsilon_{\mathrm{out}}$ for the requested final margin and
+choose $0<\tau<\min(\varepsilon_{\mathrm{out}}/4,1/960)$.
+Invoke reconstruction with accuracy $\tau$ and the arithmetic activity
+estimate with accuracy $\tau$. Their product is
+\[
+ N^\tau A_3\ll N^{-41/30+2\tau}
+     =N^{-4/3-(1/30-2\tau)}.
+\]
+Since $1/30-2\tau>0$ and the other term is
+$N^{-4/3+\tau}$, the required upper bound follows.
+The lower bound uses its own fixed Charlier interpolation order,
+as specified in Theorem~\ref{p13:lower:optimal}.

@@ -1,0 +1,233 @@
+P1 V1.6 — Contre-lecture ciblée : deux cibles denses et reconstruction
+Date : 31 octobre 2026
+Relecteur : agent p16_dense_transfer_review (assistance GPT-6 Astra)
+
+PÉRIMÈTRE ET STATUT
+
+Lecture de la copie V1.5 dans le dossier de préparation V1.6, avant les
+insertions éditoriales E3. Textes principaux : main_sections/exact_transfer.tex
+et companion_sections/exact_transfer.tex. Raccords consultés : main_sections/
+stopped.tex, main_sections/fixed_moments.tex, companion_sections/fixed_moments.tex
+et les étapes géométriques de companion_sections/arithmetic_appendix.tex.
+
+Aucune erreur bloquante concrète identifiée dans les raccords contrôlés.
+Il s'agit d'une contre-lecture ciblée, pas d'une certification du manuscrit,
+d'une nouvelle expertise humaine, ni d'une formalisation. Les estimations
+externes de géométrie arithmétique ne sont pas redémontrées dans ce rapport.
+Aucun nouveau diagnostic numérique n'a été exécuté par cet agent : les
+égalités d'exposants ci-dessous ont été recalculées algébriquement.
+
+1. LEMME 15.2 / SOUS-SECTION T11.1 : DEUX CIBLES DENSES
+
+1.1 Deux projections réellement injectives.
+Pour R=ker(W ⊕ S_y ⊕ S_z -> W+S_y+S_z), un élément dont la composante
+y est nulle a ses autres composantes dans W ∩ S_z=0. La même preuve
+s'applique en échangeant y,z. Ainsi dim R=d≤min(dim S_y,dim S_z)≤L.
+Les sections linéaires dans les coordonnées physiques conservent cette
+injection et les équations de valuation. Le raisonnement ne suppose pas
+la régularité de chaque fenêtre, et n'ajoute pas deux fois ses défauts locaux.
+
+1.2 Le nombre de composantes doit être compté dans chaque cible.
+Après récupération, dim R'≥d−ξL et chaque étiquette non nulle apparaît
+au plus K fois. Le graphe binaire relie uniquement des étiquettes égales,
+donc toute composante est contenue dans une classe de taille≤K. Les
+étiquettes coordonnées de y, séparément de celles de z, engendrent (R')*.
+Une composante apporte au plus une étiquette à ce rang. Chaque cible
+rencontre donc au moins dim R' composantes, même si une composante
+rencontre une cible à plusieurs positions. Les coordonnées actives isolées
+sont bien incluses : les omettre rendrait cette implication incorrecte.
+
+1.3 Énumération des coefficients avant le choix du nombre d'équations.
+Un premier ℓ>H a au plus une occurrence par bloc physique. Après appariement
+des étiquettes égales, chaque circuit résiduel a au moins trois étiquettes
+distinctes, donc au moins trois blocs. Puisque seuls y,z sont libres, chaque
+circuit contient une occurrence source. Le produit de ses premiers divise
+une valeur source fixée. Le lemme de récupération borne, par une constante
+fixe, le nombre de supports de circuits incidents à une coordonnée choisie.
+Pour un nombre fixé de composantes choisies, positions et diviseurs ont
+N^{o(1)} choix. La hauteur par composante est N^{A0}, avec A0 fixé par le
+nombre de sources, K et les paramètres de récupération ; A0 n'augmente pas
+avec le nombre ultérieurement choisi d'équations. Le choix de k dans le
+lemme géométrique vient donc après A0. Aucune énumération de tous les
+sous-espaces ni de tous les profils de suppression n'est utilisée.
+
+1.4 Suppression des petites courbes alignées.
+Deux unités exactes fixent l'alignement rationnel de hauteur O(B). Dans la
+zone critique, deux alignements distincts de cette hauteur sont impossibles.
+Avec u unités sur cet alignement, la perte locale d'au plus une dimension
+donne u−2≤dim(S_y∩S_z)≤θL. Garder une unité et supprimer de la collection
+sélectionnable les composantes rencontrant les autres extrémités retire
+au plus 2(u−1)≤2θL+2 composantes. On ne restreint pas à nouveau R' ; ce
+point évite une perte injustifiée de rang. Les positions survivantes n'ont
+plus deux unités sur le même alignement, ce qui exclut les petites courbes
+utilisées dans la preuve géométrique, y compris pour une paire faiblement
+alignée. L'argument invoque donc la preuve du lemme géométrique après
+suppression ; il n'applique pas simplement son énoncé « espaces directs »
+à une paire qui pourrait ne pas être directe.
+
+1.5 Les deux strates et le bilan des poids.
+Pour chaque cible t, m_t≥d−(ξ+2θ)L−2. Les choix ξ≤min(η,δ)/4 et
+θ≤min(η,δ)/8 donnent m_t≥ηL/3, puis m_t>(1/2+δ/3)L lorsque
+d>(1/2+δ)L, pour N assez grand. Dans la première strate, un type mixte
+fréquent permet le compte géométrique N^{1/2+ε'} ; si aucun ne l'est,
+chaque cible possède assez de composantes univariées pour le compte
+N^{ε'}. Le nombre de types est fixe, car K et le nombre de sources le sont.
+Dans la seconde strate, B≥n_{1,t}+2(m_t−n_{1,t}) entraîne séparément
+n_{1,t}≥2m_t−B>2δL/3−1. Soit un type mixte avec un degré un est fréquent,
+soit deux composantes univariées à degré un sont disponibles dans chaque
+cible. Les deux offsets distincts fournissent alors le compte de Pell.
+Les coûts pondérés sont bien
+  N^{1/2+ε'} N^{−2+1/2+δ}=N^{−1+δ+ε'},
+  N^{ε'} N^{−2+1}=N^{−1+ε'}.
+On choisit δ, puis ε', dans la marge finale, avant N. Le corollaire aux
+primitives ajoute les r−2 marginales sources et leurs N^{a+ε'} choix,
+soit N^{−(r−1)+a+ε} après répartition des pertes.
+
+2. PROPOSITION 15.12 : QUEUES UNIFORMES
+
+2.1 Budgets et quatre puissances.
+Pour les 10-cœurs : t=10, A0=12, b=31/60, σ=23/25,
+δ=(1−b)(1−σ)=29/750 et θ=t/A0=5/6 ; θ+δ<1.
+Le facteur de nullité maximale vaut 2^{2L}=O(N²), d'où
+  2−10(31/60)+20/12=−3/2,
+  2−256(29/1500)=−1106/375.
+Pour le secteur de faible nullité : t=2, A0=12, b=17/20,
+δ=3/250, θ=1/6 ; le facteur de rang est N^{1/60}, d'où
+  1/60−2(17/20)+4/12=−27/20,
+  1/60−256(3/500)=−2279/1500.
+Les quatre marges au-delà de 4/3 sont exactement 1/6, 202/125,
+1/60 et 93/500. La plus petite vaut 1/60. Les paramètres de certificat
+sont fixes, donc chaque o(1) est finalement inférieur à 1/120. Aucun
+paramètre caché d'ordre fixe n'est substitué par K_N.
+
+2.2 Rapport c(D)/q(D) et épluchage.
+Pour une famille compatible, tous les signes des relations de Fourier
+sont positifs après compatibilité. Le rapport c(D)/q(D) est donc la
+proportion de relations non nulles sur chaque bloc. Si chaque projection
+a dimension≥9, l'union bound donne 1−|D|2^{−9}, et q(D)≤2c(D)
+pour |D|<256. Une projection de dimension≥9 possède une section formelle
+paire contenant un mot de poids≥9 ; sa parité impose le poids≥10 exigé
+par les budgets. La relation peut varier avec le bloc, ce que le budget
+autorise explicitement.
+Pour une famille connectée |I|≤K_N, chaque retrait de projection≤8
+coûte au plus huit unités de nullité. La perte totale≤8K_N=o(L) laisse
+ρ(D)>L/120 lorsque ρ*(I)>L/60. L'inégalité d'épluchage suit de
+|c(I)|≤2^{|I|}(∏p_i)2^{ρ*(I)} et ρ*(I)−ρ(D)≤8(|I|−|D|).
+Le choix déterministe évite toute multiplication par le nombre d'ordres
+de suppression. Les compléments sont sommés avec des poids indépendants.
+
+2.3 Cœurs petits, grands et primitives sans borne de cardinalité.
+Pour |D|≥256 : budget uniforme. Pour 3≤|D|<256 : nombre d'ordres fixé,
+factorisation canonique et activités fixes, puis déficit d'extension
+N^{−1/2+η}, puisque D est propre dans une famille connectée. Pour |D|=2 :
+déficit de paire sur tous les cardinaux, N^{−3/2+ε}.
+La première conclusion garde bien |I|≤K_N et ρ*(I)≤2L. La seconde peut
+aller jusqu'à tous les cardinaux : une primitive compatible de grande
+nullité est elle-même un 10-cœur, et ρ(P)≤L ; une primitive incompatible
+a |c(P)|=∏p_i et relève des budgets indépendants à deux ancres.
+La distinction de domaines est explicite et correctement consommée.
+
+3. ARRÊT, DÉFICITS ET CONVERSION
+
+3.1 Classe retenue et covariance des paires incompatibles.
+Dans D2, une famille est directe, ou contient une paire dépendante e
+dont la somme S_e est directe de tous les autres blocs. Cette dernière
+famille ne peut contenir d'autre paire dépendante. Son coefficient est
+q(e)∏_{I\e}p_i=(∏_{i∈e}p_i+c(e))∏_{I\e}p_i. Si e est incompatible,
+q(e)=0 et c(e)=−∏_{i∈e}p_i : la covariance ne doit donc pas être effacée.
+Cela vérifie le signe et les poids hétérogènes dans l'identité
+p13:transfer:retained-difference.
+
+3.2 Déficit retenu T_D2−B2.
+Le produit indépendant et les termes de paires de B2 coïncident avec
+T_D2 sur chaque famille retenue ; les coefficients restants viennent donc
+avec le signe moins. Dans une famille exclue, choisir une primitive P
+de taille≥3 permet ∏_P p_i≤|c(P)| ; si P est une paire e, le complément
+est nécessairement une extension non directe de S_e. Pour chaque terme
+de paire déjà présent dans B2, cette dernière observation s'applique
+aussi. Les sommes requises sont bien sur tous les cardinaux : le déficit
+de paire et la somme de primitives ont précisément ce domaine. Les
+compléments libres sont bornés par une exponentielle de μ=O(1).
+
+3.3 Frontière arrêtée et grande frontière.
+Le suffixe conditionnel a masse q(I) et reste positif ; il ne doit pas
+être remplacé par une loi indépendante. Une famille de frontière a une
+nullité relative≤2L. Pour |I|≤K_N, ses coefficients centrés se factorisent
+par composantes directes ; les termes restant après les déficits ont
+une composante≥3 ou deux paires. Ils coûtent O(T+A2²), après soustraction
+du terme linéaire d'une seule paire. T utilise les ordres fixes 3,…,256
+et, séparément, la proposition 15.12 aux ordres supérieurs.
+Pour K_N=(5+o(1)) log N/log log N, on a K_N=o(L) et
+  sum_{r>K_N}(2μ)^r/r! = exp(−K_N log K_N+O(K_N))=N^{−5+o(1)}.
+Le facteur N² de la nullité de frontière donne donc N^{−3+o(1)}.
+Cette étape n'a aucune constante de moment dépendant de K_N.
+
+3.4 Conversion finale.
+Le B2 employé est le produit des Bernoulli hétérogènes plus toutes les
+covariances, pas seulement le produit indépendant. Avec s2=O(N^{−1}),
+s3=O(N^{−2}), p*=O(N^{−1}), A2=O(N^{−2/3+ε}), le lemme 15.1 donne
+s3+s2²+A2(s2+p*)=O(N^{−5/3+ε}). C'est un coût distinct de celui de
+la frontière et des déficits. Les paramètres exacts μ,α sont essentiels.
+
+4. PROPOSITION ÉDITORIALE E3 (TEXTE ANGLAIS À ADAPTER)
+
+The reconstruction separates three errors. Let $\mathscr D_2$ be the
+retained class defined below: direct families, and families with a unique
+dependent pair whose sum is direct from all remaining blocks. Write
+$T_{\mathscr D_2}$ for its retained measure as in
+\eqref{p1:stop:retained}, and let $B_2$ be the exact-marginal,
+covariance-corrected measure in \eqref{p13:transfer:B2}. Then
+\[
+\begin{split}
+\|\Law(Z_N)-Q_{\mu_N,\alpha_N}\|_1
+&\leq\|\Law(Z_N)-T_{\mathscr D_2}\|_1
+ +\|T_{\mathscr D_2}-B_2\|_1\\
+&\qquad+\|B_2-Q_{\mu_N,\alpha_N}\|_1.
+\end{split}
+\]
+The first term is a boundary sum with a positive conditional suffix;
+the second is the independent and pair deficit outside the retained
+class, with covariance signs preserved; the third is the conversion
+cost $O(N^{-5/3+\varepsilon})$ of Lemma~\ref{p13:transfer:conversion}.
+An incompatible dependent pair is still retained: its joint mass is
+zero, but its covariance remains in $B_2$. The proof of
+Theorem~\ref{p13:transfer:finite} bounds these three terms separately.
+
+Cette insertion est une annonce de la classe définie plus bas, pas une
+redéfinition mathématique. Garder un affichage non numéroté préserve les
+numéros existants. Une formulation plus courte est possible si l'annonce
+de la classe rend le début trop chargé.
+
+5. NAVIGATION E4
+
+Entrée : main Lemma 15.2, label p13:transfer:dense-targets.
+Preuve : companion subsection T11.1, label p14:comp:transfer-dense-targets.
+Retour : main Lemma 15.3, label p13:transfer:compressed-target, puis la
+masse des primitives de la sous-section 15.3. T11.1 est un numéro de
+sous-section (« Proof of Lemma 15.2 »), pas un nouvel énoncé numéroté.
+
+6. NON-RÉGRESSION À CONSERVER
+
+Conserver la distinction des trois mesures ; les covariances signées,
+notamment incompatibles ; les marginales hétérogènes ; les sections
+effectives sur les fenêtres irrégulières ; les ordres fixes 3,…,256 ;
+la borne K_N=o(L) pour la première queue ; l'absence de borne de
+cardinalité dans la seconde ; le suffixe positif et sa seule masse ;
+et le caractère suffisant, non optimal, du seuil 256.
+
+7. RELECTURE DU PARAGRAPHE E3 EFFECTIVEMENT INSÉRÉ
+
+Le paragraphe « Three errors in the reconstruction » a été relu dans les
+sources V1.6 après insertion. Les trois normes, les signes conservés avant
+majoration, le traitement d'une paire incompatible et l'attribution du
+coût N^{−5/3+ε} à B2 avec toutes ses covariances sont corrects. Le renvoi
+aux ordres fixes puis à la queue uniforme ne transforme pas une estimation
+d'ordre fixé en une estimation à l'ordre K_N.
+
+Une précision rédactionnelle a été recommandée à root : expliciter que
+« S_e and the spaces (S_z)_{z∈U} form a direct sum », à la place de
+« whose compressed space is direct from all remaining blocks ». La formule
+évite une lecture pairwise insuffisante et évite de confondre S_e avec la
+compression géométrique réservée aux bons canaux. L'unicité de la paire
+dépendante découle alors de la condition de somme directe. Aucune autre
+correction mathématique n'est requise dans cette insertion.

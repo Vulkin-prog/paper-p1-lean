@@ -1,0 +1,252 @@
+[
+  {
+    "source": "affine_algebra",
+    "proof_index": 1,
+    "verbatim_preserved": false
+  },
+  {
+    "source": "affine_algebra",
+    "proof_index": 2,
+    "verbatim_preserved": false
+  },
+  {
+    "source": "affine_algebra",
+    "proof_index": 3,
+    "verbatim_preserved": false
+  },
+  {
+    "source": "affine_algebra",
+    "proof_index": 4,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "stopped",
+    "proof_index": 1,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "stopped",
+    "proof_index": 2,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "stopped",
+    "proof_index": 3,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "stopped",
+    "proof_index": 4,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "fixed_moments",
+    "proof_index": 1,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "fixed_moments",
+    "proof_index": 2,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "fixed_moments",
+    "proof_index": 3,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "fixed_moments",
+    "proof_index": 4,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "fixed_moments",
+    "proof_index": 5,
+    "verbatim_preserved": false
+  },
+  {
+    "source": "fixed_moments",
+    "proof_index": 6,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "fixed_moments",
+    "proof_index": 7,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "fixed_moments",
+    "proof_index": 8,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "cores",
+    "proof_index": 1,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "cores",
+    "proof_index": 2,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "cores",
+    "proof_index": 3,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "cores",
+    "proof_index": 4,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "cores",
+    "proof_index": 5,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "cores",
+    "proof_index": 6,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "cores",
+    "proof_index": 7,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "cores",
+    "proof_index": 8,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "cores",
+    "proof_index": 9,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "cores",
+    "proof_index": 10,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "cores",
+    "proof_index": 11,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "closure",
+    "proof_index": 1,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "closure",
+    "proof_index": 2,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "closure",
+    "proof_index": 3,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "closure",
+    "proof_index": 4,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "closure",
+    "proof_index": 5,
+    "verbatim_preserved": false
+  },
+  {
+    "source": "closure",
+    "proof_index": 6,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "closure",
+    "proof_index": 7,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "exact_transfer",
+    "proof_index": 1,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "exact_transfer",
+    "proof_index": 2,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "exact_transfer",
+    "proof_index": 3,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "exact_transfer",
+    "proof_index": 4,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "exact_transfer",
+    "proof_index": 5,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "exact_transfer",
+    "proof_index": 6,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "exact_transfer",
+    "proof_index": 7,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "exact_transfer",
+    "proof_index": 8,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "exact_transfer",
+    "proof_index": 9,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "exact_transfer",
+    "proof_index": 10,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "exact_transfer",
+    "proof_index": 11,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "exact_transfer",
+    "proof_index": 12,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "exact_transfer",
+    "proof_index": 13,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "exact_transfer",
+    "proof_index": 14,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "quartic_lower",
+    "proof_index": 1,
+    "verbatim_preserved": true
+  },
+  {
+    "source": "quartic_lower",
+    "proof_index": 2,
+    "verbatim_preserved": true
+  }
+]

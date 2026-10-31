@@ -1,0 +1,33 @@
+{
+  "original_labels": 132,
+  "current_labels": 139,
+  "missing_labels": [
+    "p1:limits:griesmer",
+    "p1:limits:local-rigidity"
+  ],
+  "duplicate_labels": [],
+  "original_statement_counts": {
+    "proposition": 16,
+    "theorem": 3,
+    "corollary": 5,
+    "lemma": 9
+  },
+  "current_statement_counts": {
+    "proposition": 16,
+    "theorem": 3,
+    "corollary": 5,
+    "lemma": 8
+  },
+  "delegated_statement": "Lemma p1:limits:local-rigidity, with equation p1:limits:griesmer, in main exact_setup",
+  "new_labels": [
+    "p14:comp:complete-profile",
+    "p14:comp:good-edge-mass",
+    "p14:comp:pair-palm",
+    "p14:comp:pair-profiles",
+    "p14:comp:poisson-differences",
+    "p14:comp:positional-proof",
+    "p14:comp:regular-transfer",
+    "p14:comp:sparse-hosts",
+    "p14:positions:section"
+  ]
+}

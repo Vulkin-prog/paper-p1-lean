@@ -1,0 +1,26 @@
+P1 V1.5 — final margins and parameter cross-check
+2026-10-31 — /root/p15_probability
+Read-only manuscript review; no manuscript file changed.
+
+Scope: new §1.5 dependency/margin tables; final paragraph of §14; quartic error comparison in §16; assembly at the beginning of §17; both new parameter ledgers in companion T1.4 and T1.7.
+
+Conclusion: no circular parameter choice or incorrect exponent comparison found in these additions.
+
+1. MAIN ERROR MARGINS
+The displayed exact margins 1/120, 2/15, 1/30, 1/60, 1/6 agree with the estimates they compare. The text correctly distinguishes a final requested accuracy from the total loss allotted to a completed contribution. It explicitly budgets products, so A2^2 need not inherit an unaccounted second loss. Choosing 0<tau<min(epsilon_out/4,1/960) makes both relevant assembled gaps strictly positive: 1/120-tau and 1/30-2*tau. The geometric thresholds eta=1/30 and theta<eta/200 remain distinct from these accuracy parameters.
+
+2. QUARTIC ARGUMENT AND DEPENDENCIES
+The ratio L^{-2} N^{-1/6+tau} tends to zero for fixed tau<1/6, exactly as required to preserve the positive alpha^2 term. The Charlier order is fixed after final accuracy, rather than allowed to grow with N. The revised map now includes fixed-source counts in the quartic inputs and does not make reconstruction an input to its own lower bound.
+
+3. DETERMINANT LEDGER T1.4
+The order is acyclic: final error -> zeta -> auxiliary bidegrees -> polynomial-height exponents (including the enlarged kappa after lattice changes) -> curve-count epsilon'. The condition (C+kappa)epsilon'<=zeta pays for point-height and coefficient-height losses. The input coefficient sizes can vary with N but their height exponents and all degrees are fixed first. C and the final enlarged kappa must be read as the bounds for the completed lattice transformation; the adjacent Steps 2–3 provide this interpretation. No uniformity in a growing degree is asserted.
+
+4. GEOMETRIC LEDGER T1.7
+The first branch fixes A0,K and accuracy, then D, then k, then the external error margins. The degree-one branch fixes q, then E, then k satisfying both displayed inequalities, then the internal error margin. Increasing k changes only fixed dimensions/degrees/constants and does not increase the per-equation input exponent A0. This agrees with the coefficient paragraph in T11.1. The arbitrary-coefficient per-system estimate is kept separate from the N^{o(1)} pattern enumeration. The table does not charge a coefficient-dependent external constant where uniformity is required.
+
+5. TWO SMALL WORDING RECOMMENDATIONS SENT TO ROOT
+(a) In §1.5, replace “The fixed-order bounds are used only through order 256” by wording specifically referring to the fixed connected-activity estimates in reconstruction. Independent moments used for Charlier interpolation may have fixed orders larger than 256.
+(b) At the end of the main theorem proof in §17, replace “Every cutoff ... was fixed ... before N” by wording referring to auxiliary accuracy parameters and fixed orders. K_N is explicitly a growing cardinality cutoff; its defining rule, rather than its value, is fixed.
+These are clarifications of scope, not gaps in the estimates.
+
+Limit: this check verifies consistency of the new parameter and margin exposition with the displayed proofs. It is not a new independent proof of the external arithmetic inputs.

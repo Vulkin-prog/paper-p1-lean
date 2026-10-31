@@ -1,0 +1,328 @@
+{
+  "document": "P1 V1.5 targeted bibliography verification",
+  "date": "2026-10-31",
+  "scope": "Six additions from the complete priority audit checked against primary texts. Existing 25 entries retained, not exhaustively reverified in this pass. No mathematical theorem modified.",
+  "provenance_note": "A scan of an original article is primary textual evidence even when served by an archival mirror. Failed DOI resolution is recorded separately from successful access to an original text.",
+  "references": [
+    {
+      "key": "griesmer1960",
+      "number": 26,
+      "metadata": {
+        "authors": [
+          "J. H. Griesmer"
+        ],
+        "title": "A bound for error-correcting codes",
+        "journal": "IBM Journal of Research and Development",
+        "volume": 4,
+        "issue": 5,
+        "year": 1960,
+        "pages": "532–542",
+        "doi": "10.1147/rd.45.0532"
+      },
+      "primary_sources": [
+        {
+          "url": "https://bitsavers.trailing-edge.com/pdf/ibm/IBM_Journal_of_Research_and_Development/045/ibmrd0405M.pdf",
+          "type": "original published article scan, archival mirror",
+          "tool_ref": "turn165view4",
+          "locators": [
+            "Section 2",
+            "Theorem 2",
+            "equation (2.10)",
+            "printed page 535"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Classical binary linear-code length bound and residual-code argument underlie the truncated redundancy inequality in P1 Lemma 2.1.",
+          "status": "verified_primary_text"
+        }
+      ],
+      "mapping_to_p1": "For r>=t, the remaining r-t terms in the full Griesmer sum are at least one. Subtracting r yields the truncated redundancy bound.",
+      "limitations": [
+        "The arithmetic lower bound on minimum relation weight and its use at logarithmic length are separate P1 arguments.",
+        "DOI landing page was not accessible in this session; the identifier from the audit is retained without claiming its resolver was validated."
+      ],
+      "planned_use": [
+        "main_sections/exact_setup.tex before local rigidity"
+      ]
+    },
+    {
+      "key": "zeilberger1997",
+      "number": 27,
+      "metadata": {
+        "authors": [
+          "Doron Zeilberger"
+        ],
+        "title": "The abstract lace expansion",
+        "journal": "Advances in Applied Mathematics",
+        "volume": 19,
+        "issue": 3,
+        "year": 1997,
+        "pages": "355–359",
+        "doi": "10.1006/aama.1997.0552"
+      },
+      "primary_sources": [
+        {
+          "url": "https://sites.math.rutgers.edu/~zeilberg/mamarim/mamarimPDF/lace.pdf",
+          "type": "author version",
+          "tool_ref": "turn164view2",
+          "locators": [
+            "page 1",
+            "lace-map axioms (i)–(iii)",
+            "formula (*)"
+          ]
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0196885897905522",
+          "type": "publisher metadata",
+          "tool_ref": "turn163search1",
+          "locators": [
+            "volume 19 issue 3",
+            "October 1997",
+            "pages 355–359"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The first-excluded-prefix identity is an exact specialization of formula (*).",
+          "status": "verified_primary_text_and_explicit_mapping"
+        }
+      ],
+      "mapping_to_p1": "Set l(S)=S on the hereditary retained class; otherwise choose the first excluded prefix. Fixed sets are the class and its ordered boundary. Compatible sets are empty on the class and the strict suffix beyond max I on the boundary.",
+      "limitations": [
+        "The published year is 1997, despite later arXiv deposition.",
+        "Attribution concerns the finite identity; P1 estimates of the arithmetic boundary remain separate."
+      ],
+      "planned_use": [
+        "main_sections/stopped.tex introductory attribution and specialization"
+      ]
+    },
+    {
+      "key": "cilleruelogaraev2011",
+      "number": 28,
+      "metadata": {
+        "authors": [
+          "Javier Cilleruelo",
+          "Moubariz Z. Garaev"
+        ],
+        "title": "Concentration of points on two and three dimensional modular hyperbolas and applications",
+        "journal": "Geometric and Functional Analysis",
+        "volume": 21,
+        "issue": 4,
+        "year": 2011,
+        "pages": "892–904",
+        "doi": "10.1007/s00039-011-0127-6",
+        "version_used": "arXiv:1007.1526v2",
+        "version_date": "2010-10-12"
+      },
+      "primary_sources": [
+        {
+          "url": "https://arxiv.org/pdf/1007.1526v2",
+          "type": "versioned author preprint",
+          "tool_ref": "turn164view0",
+          "locators": [
+            "Section 3",
+            "Proposition 1, printed page 5",
+            "Lemma 4, printed page 5",
+            "proof through printed page 7"
+          ]
+        },
+        {
+          "url": "https://link.springer.com/article/10.1007/s00039-011-0127-6",
+          "type": "publisher metadata",
+          "tool_ref": "turn165view3",
+          "locators": [
+            "title",
+            "volume 21 pages 892–904 (2011)"
+          ]
+        },
+        {
+          "url": "https://arxiv.org/abs/1007.1526v2",
+          "type": "version metadata",
+          "tool_ref": "turn163view0",
+          "locators": [
+            "submission history v2 12 October 2010"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Lemma 4 supplies a subpower count for x^2-Ay^2=E with nonsquare A and coefficients/variables polynomially bounded in M; Proposition 1 allows a general quadratic equation with nonsquare discriminant.",
+          "status": "verified_primary_text"
+        }
+      ],
+      "mapping_to_p1": "Multiply au^2-bv^2=h by a, setting x=au, A=ab and E=ah. For square ab use the factorization/divisor argument with h nonzero.",
+      "limitations": [
+        "Nonsquare discriminant is an explicit hypothesis of Proposition 1.",
+        "The published title includes 'of'; arXiv v2's title omits it.",
+        "The exponent O(1) defining the coefficient/variable range is fixed."
+      ],
+      "planned_use": [
+        "companion T1.2 attribution"
+      ]
+    },
+    {
+      "key": "tao2026anatomy",
+      "number": 29,
+      "metadata": {
+        "authors": [
+          "Terence Tao"
+        ],
+        "title": "Products of consecutive integers with unusual anatomy",
+        "version_used": "arXiv:2603.27990v3",
+        "version_date": "2026-09-26"
+      },
+      "primary_sources": [
+        {
+          "url": "https://arxiv.org/html/2603.27990v3#S2.SS5",
+          "type": "versioned author text",
+          "tool_ref": "turn164view1",
+          "locators": [
+            "Section 2.5",
+            "Lemma 2.10",
+            "proof following Lemma 2.10"
+          ]
+        },
+        {
+          "url": "https://arxiv.org/abs/2603.27990v3",
+          "type": "version metadata",
+          "tool_ref": "turn163view1",
+          "locators": [
+            "submission history v3 26 September 2026"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Lemma 2.10 bounds the number of positive integer solutions to an^2+h=bm^2 with n<=x, positive a,b and nonzero h of polynomial size, by x^{o(1)}.",
+          "status": "verified_primary_text"
+        }
+      ],
+      "mapping_to_p1": "Directly comparable recent formulation; the sign of h can be reversed to match the P1 convention.",
+      "limitations": [
+        "The proof expressly credits Cilleruelo–Garaev Lemma 4 and Proposition 1.",
+        "This is a supplementary formulation, not a replacement for the earlier attribution."
+      ],
+      "planned_use": [
+        "companion T1.2 supplementary attribution"
+      ]
+    },
+    {
+      "key": "cekanaviciusvellaisamy2015",
+      "number": 30,
+      "metadata": {
+        "authors": [
+          "Vydas Čekanavičius",
+          "P. Vellaisamy"
+        ],
+        "title": "Discrete approximations for sums of m-dependent random variables",
+        "journal": "ALEA, Latin American Journal of Probability and Mathematical Statistics",
+        "volume": 12,
+        "year": 2015,
+        "pages": "765–792",
+        "version_used": "published journal text; arXiv:1301.7196v3 listed as supplementary access"
+      },
+      "primary_sources": [
+        {
+          "url": "https://alea.impa.br/articles/v12/12-29.pdf",
+          "type": "published journal text",
+          "tool_ref": "turn165view2",
+          "locators": [
+            "Section 1 definitions",
+            "conditions (3.1)–(3.2), page 768",
+            "Theorem 3.1, equation (3.5), page 770",
+            "Theorem 3.2, equation (3.6), page 770"
+          ]
+        },
+        {
+          "url": "https://arxiv.org/abs/1301.7196v3",
+          "type": "version metadata",
+          "tool_ref": "turn166view3",
+          "locators": [
+            "v3 revised 4 November 2015"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim": "The quadratic Poisson correction and its convolution exponential are compared; the former bound contains R_0^2 and the latter does not.",
+          "status": "verified_primary_text"
+        }
+      ],
+      "mapping_to_p1": "Their Gamma_1 is the mean and Gamma_2 is half variance minus half mean, corresponding to mu and alpha/2.",
+      "limitations": [
+        "Nonnegative integer summands are 1-dependent (or m-dependent before grouping), with explicit factorial-moment and positivity conditions.",
+        "Long-range arithmetic dependence in P1 is not covered by direct application.",
+        "No numerical constant or rate is imported from this theorem."
+      ],
+      "planned_use": [
+        "main_sections/introduction.tex context",
+        "main_sections/discussion.tex quadratic versus exponential",
+        "optional quartic_lower.tex attribution"
+      ]
+    },
+    {
+      "key": "chhaibietal2020",
+      "number": 31,
+      "metadata": {
+        "authors": [
+          "Reda Chhaibi",
+          "Freddy Delbaen",
+          "Pierre-Loïc Méliot",
+          "Ashkan Nikeghbali"
+        ],
+        "title": "Mod-phi convergence: Approximation of discrete measures and harmonic analysis on the torus",
+        "journal": "Annales de l'Institut Fourier",
+        "volume": 70,
+        "issue": 3,
+        "year": 2020,
+        "pages": "1115–1197",
+        "doi": "10.5802/aif.3332"
+      },
+      "primary_sources": [
+        {
+          "url": "https://numdam.org/item/10.5802/aif.3332.pdf",
+          "type": "published journal text in official archive",
+          "tool_ref": "turn173view0",
+          "locators": [
+            "Section 1 large-parameter setup",
+            "condition (H2), page 1144",
+            "Theorem 3.11, page 1146",
+            "total-variation convention, page 1116"
+          ]
+        },
+        {
+          "url": "https://numdam.org/articles/10.5802/aif.3332/",
+          "type": "official archive metadata",
+          "tool_ref": "turn166view1",
+          "locators": [
+            "volume, issue, pages and DOI"
+          ]
+        }
+      ],
+      "claims": [
+        {
+          "claim": "Theorem 3.11 gives asymptotic total-variation expressions for mod-phi approximation schemes with parameter tending to infinity, under residue regularity H2 and a third-moment condition on the reference law.",
+          "status": "verified_primary_text"
+        }
+      ],
+      "mapping_to_p1": "Context for extracting a distance equivalent from the leading residual term, not an applied theorem.",
+      "limitations": [
+        "P1 keeps its Poisson means bounded away from zero and infinity.",
+        "The source defines d_TV as the full l1 norm, twice P1's usual probability total-variation distance.",
+        "No constant is transferred."
+      ],
+      "planned_use": [
+        "main_sections/introduction.tex contextual comparison"
+      ]
+    }
+  ],
+  "public_scope": [
+    "Credit classical code, lace and quadratic-count tools.",
+    "Preserve earlier Paper C v3 Poisson theorem and 2:3 channel attribution.",
+    "Keep optimality attached to the exact quadratic reference and fixed channel heights.",
+    "No blanket first-ever claim."
+  ]
+}

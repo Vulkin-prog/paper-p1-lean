@@ -1,0 +1,49 @@
+CONTROLE VISUEL — ARTICLE PRINCIPAL, PAGES 1 A 31
+P1 V1.5 — 31 octobre 2026
+
+Portee et methode
+-----------------
+Inspection des 31 pages sur les trois planches deja rendues :
+main_contact_001_012.png, main_contact_013_024.png et, pour les pages 25 a 31,
+main_contact_025_036.png. Inspection complementaire en pleine page des PNG
+main-07.png, main-08.png, main-09.png, main-10.png, main-11.png, main-18.png
+et main-19.png. Aucune compilation, modification de manuscrit ou execution
+de diagnostic n'a ete effectuee dans ce controle.
+
+Resultat
+--------
+Aucune anomalie de mise en page necessitant une correction n'a ete reperee
+sur le perimetre examine : pas de debordement visible dans les marges,
+pas de chevauchement entre texte et formules, pas de tableau scinde, pas
+de formule illisible ou tronquee. La pagination, les titres courants et
+les renvois colores paraissent coherents.
+
+Pages modifiees controlees en pleine page
+----------------------------------------
+- Pages 7-8 : les paragraphes de contexte et d'attribution sont lisibles ;
+  les citations et les symboles mathematiques s'inscrivent dans les lignes.
+- Page 9 : le tableau des dependances et celui des marges de puissance
+  sont complets, lisibles et contenus dans la largeur utile. Les lignes
+  longues se repartissent correctement sur plusieurs lignes.
+- Page 10 : le guide des notations est entier et lisible ; les parcours
+  de lecture et le debut de la section 2 suivent sans collision.
+- Page 11 : l'attribution de la borne de Griesmer, le lemme 2.1 et les
+  formules (2.1)-(2.5) sont lisibles ; aucun numero d'equation ne deborde.
+- Pages 18-19 : l'attribution a Zeilberger, la definition de la frontiere,
+  l'identite (5.2), le paragraphe explicitant la lace-map et les formules
+  (5.3)-(5.5) sont lisibles et correctement separes.
+
+Espaces blancs examines
+-----------------------
+Les blancs des pages de titre et de sommaire sont conformes a leur fonction.
+Le blanc au bas de la page 8 precede le tableau de dependances entier qui
+ouvre la page 9 ; il ne revele pas une perte de texte ni un tableau scinde.
+Ce choix de pagination est acceptable et ne justifie pas une intervention.
+
+Limite du controle
+------------------
+L'inspection detaillee en pleine page porte sur les sept pages demandees ;
+les autres pages 1-31 ont ete examinees sur les planches de contact. Les
+pages 32-36 presentes sur la troisieme planche ne font pas partie du
+perimetre atteste par ce rapport. Ce controle visuel ne certifie pas les
+preuves mathematiques.

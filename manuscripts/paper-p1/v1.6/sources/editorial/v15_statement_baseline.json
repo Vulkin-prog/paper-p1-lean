@@ -1,0 +1,1004 @@
+{
+  "p1:alg:centred": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/affine_algebra.tex",
+    "sha256": "83cae9b79ede35a5fd2cf646a141266c4e697ab953c370cce0922d954f58e2a9"
+  },
+  "p1:alg:fourier": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/affine_algebra.tex",
+    "sha256": "1357e7556eb0994ea9a2b3a23a308dc627fac610d0f5718317f46bf85cebfde1"
+  },
+  "p1:alg:compatible": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/affine_algebra.tex",
+    "sha256": "26e1395319bc7ffeeecd57be800274c6d52dc8ae94fabdbdadbdc172d9dab61f"
+  },
+  "p1:alg:components": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/affine_algebra.tex",
+    "sha256": "6eaa05eaffd59b96e763bff396ec1b1b18f1f4a6b5004c5a15093d11d49dba84"
+  },
+  "p1:arith:core": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/arithmetic.tex",
+    "sha256": "72cfe42b0e0b6be9f580b90199109c791e1164e0b5c5f6cacafa6a9da3dab33c"
+  },
+  "p1:arith:hosts": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/arithmetic.tex",
+    "sha256": "65da7e8acfacc0a5bc2c351934c0e44e09d3fc6068a8862c300b6eeaeee8c5fe"
+  },
+  "p1:arith:pairs": {
+    "kind": "theorem",
+    "document": "main",
+    "source": "main_sections/arithmetic.tex",
+    "sha256": "2129f1e0418039211e95fa065f6ae434fe46849de797ea291acb0e08da94b412"
+  },
+  "p1:arith:edgefamily": {
+    "kind": "corollary",
+    "document": "main",
+    "source": "main_sections/arithmetic.tex",
+    "sha256": "b92301565bd67152ca126cb764bfc894eead7632e6970a3c44669a4cbcc85646"
+  },
+  "p1:arith:compression": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/arithmetic.tex",
+    "sha256": "4b5ad33b5095a54af69a7b243e7e6c652772ff666d9271ec067e63cfe9fb126d"
+  },
+  "p13:channels:hierarchy": {
+    "kind": "theorem",
+    "document": "main",
+    "source": "main_sections/channel_hierarchy.tex",
+    "sha256": "26e02ddbfa3972d68cba362c8fb4c97b5f4bc6d5518cab955d5a30333971fa7a"
+  },
+  "p13:channels:weighted-nonaligned": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/channel_hierarchy.tex",
+    "sha256": "89fcd3dd7290f5d2e9c88246584d46c192af2ee1acc31acd98ba0b867a0901be"
+  },
+  "p13:channels:height-five": {
+    "kind": "corollary",
+    "document": "main",
+    "source": "main_sections/channel_hierarchy.tex",
+    "sha256": "bbba7bc983a8da39894a364dea9b15993d5db9f0863cbf2f81add309dbad5d1a"
+  },
+  "p1:close:positivity": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/closure.tex",
+    "sha256": "1bda3d739142898ef6191306fe15dfe040c58696c9aeab658210a3674d15e5a0"
+  },
+  "p13:conf:near-primitive": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/confinement.tex",
+    "sha256": "a285c1d53f734e7d5c1493228422c41d6e2aad88d759fe6cf2d42cb4619d1a3d"
+  },
+  "p13:conf:strong-profile": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/confinement.tex",
+    "sha256": "d99d41e212139976236941d0884a622485e5ec59ac7d616977e28d7bf8c08540"
+  },
+  "p1:core:rankin": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/cores.tex",
+    "sha256": "62a5de96e9fb6301b919b824ad4160de336e6eb3dd71840afec97e3408f10973"
+  },
+  "p1:core:moderate": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/cores.tex",
+    "sha256": "9594d0ca09a407ca09f83dbf5e3e3a35c779690b9000a1041eb967ba1042956a"
+  },
+  "p1:core:degrees": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/cores.tex",
+    "sha256": "c75c4927a6ff796073b8aa42a2e034b84529436494cc2b060e89b93c4e02bed4"
+  },
+  "p1:core:generator": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/cores.tex",
+    "sha256": "156f5d4177e2fa6660c40fe7ba33639bf2880208535ce72dc4cfe7494cd9eb61"
+  },
+  "p1:cor:compound": {
+    "kind": "corollary",
+    "document": "main",
+    "source": "main_sections/discussion.tex",
+    "sha256": "a9ffdb62e06b1e04f3aa844d6d8be7662542059790ac01f64f52f4ad8401f732"
+  },
+  "p1:discussion:charlier-norm": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/discussion.tex",
+    "sha256": "feae7bf2ac1698222782be84cbdad942cf3bd5eb201709656c01c7a701527e14"
+  },
+  "p1:limits:local-rigidity": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/exact_setup.tex",
+    "sha256": "cf6161ae9632dcc534edb3d4c2eaa9e3c05adc4d5f0edada9a6273dfa6a9e7f1"
+  },
+  "p13:transfer:conversion": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/exact_transfer.tex",
+    "sha256": "ecaa37b976094a2d309768a81a671f3d7517916194a54dd66f5d48df215e523b"
+  },
+  "p13:transfer:dense-targets": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/exact_transfer.tex",
+    "sha256": "67d2424adbe9ce58d341f300471c14a7e1cf21728b62ee4a3f73ad0425362605"
+  },
+  "p13:transfer:compressed-target": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/exact_transfer.tex",
+    "sha256": "d8441e534031b48e0792ad2d7c2c35e8da01b87d706e88a3f678a14f1288c9d8"
+  },
+  "p13:transfer:small-kernels": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/exact_transfer.tex",
+    "sha256": "ba793c625366bd2be81e9d283284fc46283d9dbf2560f0218802f99f8c392bf2"
+  },
+  "p13:transfer:primitive": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/exact_transfer.tex",
+    "sha256": "f34d841b32f24438f362f3a452f5ab40a3261869bf738d6d5eea3c1ff5c53817"
+  },
+  "p13:transfer:independent-deficit": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/exact_transfer.tex",
+    "sha256": "2e51aac1ce519c8575213a7bf68f7cfa29dec771eb20fd6206c923407df86563"
+  },
+  "p13:transfer:fixed-deficit": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/exact_transfer.tex",
+    "sha256": "a39682d4bc3841d42875ba888c8ddbed6e30193ed7ee5ef924e2d2d527e9b6f2"
+  },
+  "p13:transfer:independent-tail": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/exact_transfer.tex",
+    "sha256": "26d84d57f8cb53436e7b79775ab6c877710277ee810b9a8dbf849a805d4c6e27"
+  },
+  "p13:transfer:pair-deficit": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/exact_transfer.tex",
+    "sha256": "562b4f96b7b2fd49cc9b5ac6c1ce1baa48b9743787258156f714afc5b4fcd259"
+  },
+  "p13:transfer:fixed-activities": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/exact_transfer.tex",
+    "sha256": "12de4a1b34610fa9a45c667c976fa4a12804e7cf9884a5192c8c21adc7fd5cff"
+  },
+  "p13:transfer:anchor-budgets": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/exact_transfer.tex",
+    "sha256": "45d758dca70c6065bfc235459eb97ddc4339e5da91ee5111970d77d0989b3dee"
+  },
+  "p13:transfer:uniform-tail": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/exact_transfer.tex",
+    "sha256": "6bb3d1cfe69419dcebe52240716af3886d4eb7f3b4a0f8dd9b3eed81c7e552bd"
+  },
+  "p13:transfer:finite": {
+    "kind": "theorem",
+    "document": "main",
+    "source": "main_sections/exact_transfer.tex",
+    "sha256": "2f274bbbfc66202f4cc1342de9598ae0eee07aa63129e7904eb3b81de1966ab1"
+  },
+  "p13:transfer:reconstruction": {
+    "kind": "theorem",
+    "document": "main",
+    "source": "main_sections/exact_transfer.tex",
+    "sha256": "0fc03cc57bf67aa74163153f1400bbd8525da696dc7c232068f949ad76f086fd"
+  },
+  "p1:fixed:recovery": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/fixed_moments.tex",
+    "sha256": "18db139a0bd9ab77f064acb65b950ad41adfc0ba3ee9dba623584d8600e83131"
+  },
+  "p1:fixed:targets": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/fixed_moments.tex",
+    "sha256": "4b7903db8bfa5e1ce630499b700b2defbc2505400342a6d0a769238bd2dc771f"
+  },
+  "p1:fixed:propagation": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/fixed_moments.tex",
+    "sha256": "a053ebcb00eb0a8b133d02a11c330ec2119e4122cb9304305b1a7b8e4858a659"
+  },
+  "p1:fixed:moments": {
+    "kind": "theorem",
+    "document": "main",
+    "source": "main_sections/fixed_moments.tex",
+    "sha256": "c6e85c5c60a33b6e4f4e614d923f638d1855ecd1fd2d6dab7f29cb5aa08e6190"
+  },
+  "p13:half:conditional": {
+    "kind": "theorem",
+    "document": "main",
+    "source": "main_sections/half_counts.tex",
+    "sha256": "25a435d2425f2c0cd459d50bd8eeff0c2427feacbe79bb43cd0acfa441a8c3a6"
+  },
+  "p13:half:connected": {
+    "kind": "corollary",
+    "document": "main",
+    "source": "main_sections/half_counts.tex",
+    "sha256": "4b468f5e971a3ae46d6f9687cf9af2ec9ce4836990499b225742e45672b9b47e"
+  },
+  "p13:half:pairs": {
+    "kind": "corollary",
+    "document": "main",
+    "source": "main_sections/half_counts.tex",
+    "sha256": "d0401cc3a0b5abf2efddbf7513ffad78f341898538ee7ba3f1d177373698a5ce"
+  },
+  "p1:thm:main": {
+    "kind": "theorem",
+    "document": "main",
+    "source": "main_sections/introduction.tex",
+    "sha256": "4ccdedb6f9f89c0e2caaea4a94e66bb60c61ceb7efce3472de8120316a0d4e5a"
+  },
+  "p1:cor:tv": {
+    "kind": "corollary",
+    "document": "main",
+    "source": "main_sections/introduction.tex",
+    "sha256": "a0f42f421329445730495eb8212e5f118185dc3ca6c440acd96dc5279dbda027"
+  },
+  "p1:cor:explicit": {
+    "kind": "corollary",
+    "document": "main",
+    "source": "main_sections/introduction.tex",
+    "sha256": "5d3e571464dff97890f4f04e4f1bce1cb7c0ab9450f1bdf8ee282137769d6ea7"
+  },
+  "p1:limits:vector-reference": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/limits_appendix.tex",
+    "sha256": "fd15ebe1159f165a714eb5337648229bacb982d63e0d76c87f983cdeaf06f6a4"
+  },
+  "p13:optimal:weighted": {
+    "kind": "corollary",
+    "document": "main",
+    "source": "main_sections/optimal_closure.tex",
+    "sha256": "d682f7116bf95ea02bb1f655e4fa453fee0fc14f16ed1b905e9399d02cc13825"
+  },
+  "p13:optimal:zero": {
+    "kind": "corollary",
+    "document": "main",
+    "source": "main_sections/optimal_closure.tex",
+    "sha256": "34ffabbac99c443938607caff8e82231d0739ebc5bffe8bdf06b25464da46d45"
+  },
+  "p13:optimal:nominal": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/optimal_closure.tex",
+    "sha256": "9930a66023f6178a86ad23dead68d2e585acd6ce00afe5911a2c5d3d9b0013e7"
+  },
+  "p13:rig:short-basis": {
+    "kind": "theorem",
+    "document": "main",
+    "source": "main_sections/pair_rigidity.tex",
+    "sha256": "15f2fe4ac0c1ddbc4e232f710469e0a1cf2eecaff16778177bd0ac1cadde3838"
+  },
+  "p13:rig:common-curve": {
+    "kind": "theorem",
+    "document": "main",
+    "source": "main_sections/pair_rigidity.tex",
+    "sha256": "7a3ea2661c356ac2f6e7672d51a9d8b4ff4c2abe5c418407e085412d9bbf6df1"
+  },
+  "p13:rig:grid-fibres": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/pair_rigidity.tex",
+    "sha256": "1ee0a2e2750461d837dea949cb2b861f208c7d5139454b1837376c0e47bd288e"
+  },
+  "p13:rig:bcn": {
+    "kind": "theorem",
+    "document": "main",
+    "source": "main_sections/pair_rigidity.tex",
+    "sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+  },
+  "p13:rig:sublinear-grid": {
+    "kind": "corollary",
+    "document": "main",
+    "source": "main_sections/pair_rigidity.tex",
+    "sha256": "ef4c221ed67d6eba27c4ceeeb16591c98447e85f2c53b4e4c6e0a2e6441f46fa"
+  },
+  "p13:rig:nonaligned": {
+    "kind": "theorem",
+    "document": "main",
+    "source": "main_sections/pair_rigidity.tex",
+    "sha256": "bfe3ffef35f01b69168fe958413ef9b1f7970253c5be921e9b3ee5a73445d770"
+  },
+  "p13:rig:aligned": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/pair_rigidity.tex",
+    "sha256": "f35f1d523724f58d47358f9401d9a7d7ac65506632395e176199769a7b446a1e"
+  },
+  "p13:rig:triple": {
+    "kind": "corollary",
+    "document": "main",
+    "source": "main_sections/pair_rigidity.tex",
+    "sha256": "e988260f0b55298f58f309bc4b778d5509ca6e955c2617b8ad8cf6d2d059c07a"
+  },
+  "p13:lower:quartic": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/quartic_lower.tex",
+    "sha256": "2bd4adbc6f85cc75b2c8c0910ab4f30c43f939e40c365eee2d5fb2aae71a4fda"
+  },
+  "p13:lower:optimal": {
+    "kind": "theorem",
+    "document": "main",
+    "source": "main_sections/quartic_lower.tex",
+    "sha256": "08e26085b89cd9dc4feb096aef0f0e046a9968f3ba3335f3e558f5e9d1fa432d"
+  },
+  "p13:short:moments": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/short_supports.tex",
+    "sha256": "9fbacdc0e4d75bff65a5ad840bf8069bdb3073420d8be56174a8d842c6cf022e"
+  },
+  "p13:short:old-space": {
+    "kind": "corollary",
+    "document": "main",
+    "source": "main_sections/short_supports.tex",
+    "sha256": "d47155250e6be87410c8cee68d1924b87ca3b926a79c1b62fbf7da0e4a4884e3"
+  },
+  "p1:stop:polynomial": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/stopped.tex",
+    "sha256": "4621b52018c16024632ffb2017abdf5e3c5e3c54b99649ff94956dc7f56846cd"
+  },
+  "p1:stop:measure": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/stopped.tex",
+    "sha256": "e50b8b2c7ba9a9e50147f2f9f43e0e6cf92d3bf3e53a4107bb85e07ac865e06f"
+  },
+  "p13:third:main": {
+    "kind": "theorem",
+    "document": "main",
+    "source": "main_sections/third_cumulant.tex",
+    "sha256": "b3c908053821806fbdaaae7e9cc2d22a4c3fd53a144da0b135f5997df780d34c"
+  },
+  "p13:third:rational-rank": {
+    "kind": "lemma",
+    "document": "main",
+    "source": "main_sections/third_cumulant.tex",
+    "sha256": "1444566fc49d3124a28816f757f4d3b2f6dd5360c6017e8b9b97f606942c573c"
+  },
+  "p13:third:aligned-family": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/third_cumulant.tex",
+    "sha256": "17f64eddc83c62d1c73f4095af2f0c1a2158823c40fa04df77fe90c5d34792f9"
+  },
+  "p13:third:aligned": {
+    "kind": "corollary",
+    "document": "main",
+    "source": "main_sections/third_cumulant.tex",
+    "sha256": "629f1d6b8356a54c20dde4d373fccf0db00e86ad5371902369adc522cfadbe50"
+  },
+  "p13:third:lower": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/third_cumulant.tex",
+    "sha256": "a7e11e39ad2329e7d1ea49686a06acea6f21b59fbdc5121f85ef2acb700b0b9d"
+  },
+  "p13:third:activity": {
+    "kind": "corollary",
+    "document": "main",
+    "source": "main_sections/third_cumulant.tex",
+    "sha256": "273ee279f7583dfcb727646ea40244633b0507cc89b09bbf2e181858f459c59d"
+  },
+  "p13:activity:deficit": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/triple_activities.tex",
+    "sha256": "8337a1e3afa7d9d8e2bbef56acbb98cd087625773ba8e97f865a607dd4eae0cb"
+  },
+  "p13:activity:incompatible": {
+    "kind": "theorem",
+    "document": "main",
+    "source": "main_sections/triple_activities.tex",
+    "sha256": "476a44444d74bac001c4065d93fbb6386a1b8ae6f29a1fbf1ea59fd75aab99d3"
+  },
+  "p13:activity:kappa3": {
+    "kind": "proposition",
+    "document": "main",
+    "source": "main_sections/triple_activities.tex",
+    "sha256": "958ca6688c9554cd8b0f998dbbf3f3133dad606a0fc97dc79d01e50009151afb"
+  },
+  "p1:arith:palm": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/arithmetic.tex",
+    "sha256": "09d2d449c9f0862b99f9c8f87030f29ba7bcfc87a3ce16ec9125b9391e002ed1"
+  },
+  "p1:arith:runge": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "a0c73b9ef86ef866209beaae756128ace1e545df0a483d40f62f3e4cf038ab34"
+  },
+  "p1:arith:pell": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "2729cdcb6c3b8114947cb93863439e29c59951a45e977ae6c34cb40cc6d3a7df"
+  },
+  "p1:arith:defects": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "c641ad80bb970cb82ad3b2c2b72718859d865ab7c7dc9f907e2843b9f3a49220"
+  },
+  "p1:arith:reuss": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+  },
+  "p1:arith:twokernel": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "bb1695001b6698be23b183ea4794053283d9baed656240adcaf51b682b72ff50"
+  },
+  "p1:arith:anchor": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "82f3cf8921022846060a505c8fe8b23bb46ba877387589ffe277a885aacc0ff6"
+  },
+  "p1:arith:geometric": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+  },
+  "p1:arith:dense": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "7614514fd992641b83baeb2b37b92f6bd4d7a162a047f7d8221af58e63368513"
+  },
+  "p1:arith:alignedrank": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "7de9608ecc780ef5a448579b04b2ebeabe5e1157579ce3025b0303a047157acc"
+  },
+  "p1:arith:asymmetric": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "e176fe0574fc119242f3c523853be4fdc4ff53b0366327c5f6387f1af29c802a"
+  },
+  "p1:arith:palmrank": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "f5c10336a982eb463bd69da026b36971a8d8bbede48fd0ad27463a97cfe6a307"
+  },
+  "p1:arith:fixed-homogeneous-seeds": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "5fce2ec24ccfa788f85b2c9a7b7918d032bb754e146f81d4f5c0a10402534d82"
+  },
+  "p1:arith:small-kernels": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "abfe0badc4580784052dd0b667c0f6e3fcb66cb7df81671a5a21b1c20132fb97"
+  },
+  "p1:arith:fixed-support": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "a6cc454365ad3be4f4e5fd085e0de49e402d933a1af003488cdc040d20ed7d4b"
+  },
+  "p1:arith:fixed-branching": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "a92935eea4e5bf50e484074d857575c10136d376340ccbfe4cc24180ff9d3f97"
+  },
+  "p1:arith:ternary-budget": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "d42d4e3cc2633493ca9ba962d80af9cd070b75dfad3b4f6b7b3713e368a20f2f"
+  },
+  "p1:arith:twogoodpositive": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_appendix.tex",
+    "sha256": "be55642021944d9eabbc4a130b9b44d199f05d751d860a5b47b42c715c03a25b"
+  },
+  "p1:consequences:macro": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_consequences.tex",
+    "sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+  },
+  "p1:consequences:conditional-rank": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_consequences.tex",
+    "sha256": "818e94ea77616ce313f8e69cbcebc377f10bdc8f890c65705c43961bdb26a2e8"
+  },
+  "p1:consequences:rankin-patterns": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_consequences.tex",
+    "sha256": "a7a69c333387e3b9aa59a977e6082a4fe46373b4c46d2b3d89d5d47dac8b8cea"
+  },
+  "p1:consequences:confinement": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/arithmetic_consequences.tex",
+    "sha256": "28f4e76c0d364fdb8dc008ccfe137def18f511be6085955b7fdff6478d91ceb3"
+  },
+  "p1:close:deficit-bounds": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/closure.tex",
+    "sha256": "afe72183e9a7781f135a12e5bdf9f79b44d646048201e3f4b0e8ee7ac6f7b022"
+  },
+  "p1:close:retained-reference": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/closure.tex",
+    "sha256": "7843fc3967027b5c1da59491af81d0a000d06b845e4254c9d781c0fca496cf94"
+  },
+  "p1:close:boundary-mass": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/closure.tex",
+    "sha256": "4a59678d5339fa107dcd55356a4517b1a5150890985e9d71db7b5cb5cf327047"
+  },
+  "p1:close:conversion": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/closure.tex",
+    "sha256": "89280dbf15ea1944fa20cccc30b40b192ec4817908c3e23ce8433a5a2df71636"
+  },
+  "p13:base-approximation": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/closure.tex",
+    "sha256": "3f9a073e1d0926a504ce14a82f8e6da9fa67dae624de32d26f2521aa90245a03"
+  },
+  "p13:conf:groups": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/confinement.tex",
+    "sha256": "7ebcf350ba28ab0f1bfcc4cc2f6c7f0be0372bf91091a2143a120c1313c7dacf"
+  },
+  "p13:conf:dense-primitive": {
+    "kind": "theorem",
+    "document": "companion",
+    "source": "companion_sections/confinement.tex",
+    "sha256": "ff492c29ca556e863681d36f4ccffc4abb8f6fa8ebac9dd03e98e106d52f4202"
+  },
+  "p13:conf:dense-pairs": {
+    "kind": "corollary",
+    "document": "companion",
+    "source": "companion_sections/confinement.tex",
+    "sha256": "ebb198621a8305171356afb0b7c293475d3d2be577e227606cbaf0698aa16f30"
+  },
+  "p1:core:fixed-centred": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/cores.tex",
+    "sha256": "80f300c82f31d2deecc2baf2eccdcb59d7235d91f77f2446ddb6660280209ca1"
+  },
+  "p1:core:primitive": {
+    "kind": "theorem",
+    "document": "companion",
+    "source": "companion_sections/cores.tex",
+    "sha256": "cbaa12a43b7e2bb83c203f455496560232a5084008d229fe84295aa0e06a2f44"
+  },
+  "p1:core:compressed": {
+    "kind": "theorem",
+    "document": "companion",
+    "source": "companion_sections/cores.tex",
+    "sha256": "2bcd82ae6d6899767e745cd4041313158ba88e8767b2633422a1267c47a74a31"
+  },
+  "p1:core:exceptional": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/cores.tex",
+    "sha256": "1a1f10bd011bfda802c8ffb800620eddbefe2a72fde7cd8c9053f9e8573a3660"
+  },
+  "p1:core:low-nullity": {
+    "kind": "theorem",
+    "document": "companion",
+    "source": "companion_sections/cores.tex",
+    "sha256": "3639c6e9ab75e816a5d899c0eaa98156ac7780ae1c841bdbd61bc4ca8e9276e9"
+  },
+  "p1:core:positive-core": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/cores.tex",
+    "sha256": "e5c6ebd716c5f8a8c0e132b36197a29e569891cdb0cc61b3d3d5bef5877ceec6"
+  },
+  "p1:core:bounded-nullity": {
+    "kind": "theorem",
+    "document": "companion",
+    "source": "companion_sections/cores.tex",
+    "sha256": "c672fc069a515cba354f69e71bde1bff93b069e2ad4e095b3048543df69780f3"
+  },
+  "p1:fixed:curve": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/fixed_moments.tex",
+    "sha256": "541205f707e088c00ac965f0b54abb3d30a14b550bc2e9575a3940e438666784"
+  },
+  "p1:fixed:CRT": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/fixed_moments.tex",
+    "sha256": "ec46fac6ac93bd36c65662a7da8b884193199f09a5edb6898bfd7559a7b43722"
+  },
+  "p1:fixed:primitive": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/fixed_moments.tex",
+    "sha256": "693bbfde36bfeb61edbaf5454a23ee9a9a87f8e1bda9eb0b2bb2939af0873a96"
+  },
+  "p1:fixed:compressed": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/fixed_moments.tex",
+    "sha256": "9aa1c72a749a9cf66ade3174d0688e386315f652564b92e93ed4139a89444aa4"
+  },
+  "p13:half:small-kernels": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/half_counts.tex",
+    "sha256": "8ea560b886a7b2a0904892a85d4c6971d05302a4bbad238cef5ffb8d7025189e"
+  },
+  "p13:half:smooth": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/half_counts.tex",
+    "sha256": "fe43a176e0940f309f157b97d31dd0b5a96188785c8ec5d3a12e8c04715c8884"
+  },
+  "p13:half:saturation": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/half_counts.tex",
+    "sha256": "a4875c486fea7f0c6d2f3358e85ef64e1908a8985360cfa05e28c6913a899264"
+  },
+  "p1:limits:lattice": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "577505173f283d328c9ea800df12cce8b58fdda29ce5a14dff74e0692398899f"
+  },
+  "p1:limits:local-blocks": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "705bac9d7b5aee059315ab720c16e5ef0539a99b2c1f2bce57b32cab6b2bb79e"
+  },
+  "p1:limits:modified": {
+    "kind": "theorem",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "6dd4d383f64a5ff25688b3f5aa56ba446e7702e3a8eb1111ff36440cfd388495"
+  },
+  "p1:limits:branching": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "6057533a131360cb3c57f28e780d053e295b563e1426341d720c8ffb0d700afb"
+  },
+  "p1:limits:effective-tail": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "8e2ed24d53e5de8afa77692efe805e5747c327d27dbb7f515bda212839f37676"
+  },
+  "p1:limits:colored-tail": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "377d9659754253d1c87b71aea548e2b6f20b12f7ff691912355db547ce493e9b"
+  },
+  "p1:limits:cylinder": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "c4dfa742ae68556d196927fdaaae789b2734586e0e9820cdff17c2218e8639be"
+  },
+  "p1:limits:peeling": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "724e0fa15a6355ba86b04ad63a21b98824bea0113f27d9255431e39fdf51fc0e"
+  },
+  "p1:limits:large-component": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "ef2ba2a70f7f7142acd1a2c4f2d8bb352f5e23ff835664fbad49b9d07150ab3f"
+  },
+  "p1:limits:erasure": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "73b7de371366b51ea17e7e91afc81e0ef27fb86753f42d04ec4cf9a2ab1f474d"
+  },
+  "p1:limits:stein": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "7e070bb71a29687765ca75f1869a42e82d2ab9acc98731d44928fbff56191eab"
+  },
+  "p1:limits:signed-palm": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "8a29db2bba7dee3608300b620b1d9bb3a6731446e43f2c1407d4fda9b86df720"
+  },
+  "p1:limits:weighted-residual": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "60b1d2ef56e93da3701c1b41a40c08898e2bb5fe5bb83536aa27b0d26a9a8add"
+  },
+  "p1:limits:all-pairs": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "9ba1b303d71719a03d4c4ac77972609619003359996ad1ac5f2833d0720016fc"
+  },
+  "p1:limits:reciprocal": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+  },
+  "p1:limits:private-exact": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "6baf345eb5567df4010efd0ecbca65dd33af3c09e924d3b13643b928c59b8315"
+  },
+  "p1:limits:all-anchors": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/limits_appendix.tex",
+    "sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+  },
+  "p1:obstruction:fixed": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/moment_obstruction.tex",
+    "sha256": "c652d9e1cd007089e2c95a960fa33e1d963832a5f3da703257669a40da70cc64"
+  },
+  "p1:offset:line-product": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/offset_geometry.tex",
+    "sha256": "3d4614d57da7feeb6e0285ad305978a6ebb6e00ab2cb871ee9fd0ae624c6af41"
+  },
+  "p1:offset:integer-tail": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/offset_geometry.tex",
+    "sha256": "d152e541850e3b572b1faf9f52c652ec80cb933639af0d559be599a9c0cec5cc"
+  },
+  "p1:offset:forced-plane": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/offset_geometry.tex",
+    "sha256": "57df7e0bd6cb7653361590ee129d82e799e54eeb64de7c26e3923dd9078bc775"
+  },
+  "p1:offset:normal-budget": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/offset_geometry.tex",
+    "sha256": "e86f009e40077995680f159cf21dde3df78717faedc6a4fa2982d32bed4b9a28"
+  },
+  "p1:offset:root-separation": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/offset_geometry.tex",
+    "sha256": "465917147676dcae0ce62fd66ee88a0eb70874be3aacb04120c5ab5a6b4f772b"
+  },
+  "p1:offset:planar-components": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/offset_geometry.tex",
+    "sha256": "521b1c0fcc0f0550cab1e1f1acd43d5dda7a513d48442ad936de4c46fb711071"
+  },
+  "p1:offset:cover-rank": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/offset_geometry.tex",
+    "sha256": "3ee81e33259f97340c3f952b3d45dabdc65d472d4c67f1c0bedd44538fa460f1"
+  },
+  "p1:offset:six-vertex": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/offset_geometry.tex",
+    "sha256": "2306bb432c6b369d3fc460c2bff772ea8c7ab113a90cef1e499b0a96666bf574"
+  },
+  "p13:rig:local-square": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/pair_rigidity.tex",
+    "sha256": "f9698333e474d8e0890a0f425b5f207336f6b1e16948952d0e9c3d81707b6e3e"
+  },
+  "p13:rig:defective": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/pair_rigidity.tex",
+    "sha256": "8b2ed4253a1ab2c85cfe8f957d205dff13ea7e6b5dd7ea1f04e82f28f3b49409"
+  },
+  "p13:rig:components": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/pair_rigidity.tex",
+    "sha256": "3180e3bd07251b593f9c834c334297f64d5d97fcad49629093e529b7d39d45ca"
+  },
+  "p13:rig:factor-height": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/pair_rigidity.tex",
+    "sha256": "4454c486e367672e512f8bdb1d051c4d473a179b07f22204fc4047cf7517576c"
+  },
+  "p13:rig:two-witnesses": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/pair_rigidity.tex",
+    "sha256": "8184bdbf23396e914181cfc3607def429f6cfb7f28d802887703a3d2004ed4c9"
+  },
+  "p13:short:quadratic": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/short_supports.tex",
+    "sha256": "98eb59430167ea84a4dd75c36b107f990646c6c2f47783b8292f95e2659899bb"
+  },
+  "p13:short:split": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/short_supports.tex",
+    "sha256": "32f53c032c8c2c0458723e096e068b662179498b5e4a5a9eb4c5ddb3170f2c04"
+  },
+  "p1:stop:class": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/stopped.tex",
+    "sha256": "ed9f0c28da35e7bb5006b72ac613951a9561404177bd32039821cfffa1c8ec46"
+  },
+  "p1:stop:tail": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/stopped.tex",
+    "sha256": "58419af8ab6f89d036eca8383642d845b56d29aec345513766e926272b6359ce"
+  },
+  "p1:arith:smallpart-budget": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/supplemental_arithmetic.tex",
+    "sha256": "22145d7cf62fc668f06d7706f77e8d12bc0c98008d24235ca536504f8f46ff2c"
+  },
+  "p1:arith:coordinate-regularisation": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/supplemental_arithmetic.tex",
+    "sha256": "a3941b762829af79b101153ae7f08368d8363545b175a014dae74742adb8f16b"
+  },
+  "p1:arith:ternary-degree": {
+    "kind": "corollary",
+    "document": "companion",
+    "source": "companion_sections/supplemental_arithmetic.tex",
+    "sha256": "f8e7ced365fdb9782d8b9ebfb18345eb41508ac34014ccb646872dfc355e995c"
+  },
+  "p1:arith:fixed-channel-mass": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/supplemental_arithmetic.tex",
+    "sha256": "3f277bcb49753b0c57c75eaa012cdfc127c5f3253a66fb6fe0c40707b4e533e4"
+  },
+  "p1:arith:fixed-channel-rank": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/supplemental_arithmetic.tex",
+    "sha256": "8dd614c19e50df20ed1eb9f3ab37c07386f1ce3665c3499e26d83211ceab60b9"
+  },
+  "p1:arith:fixed-channel-palm": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/supplemental_arithmetic.tex",
+    "sha256": "e1363efe24511cb2801268b9975d6b2c226855615c5f85f8a8a7132fc19ada0d"
+  },
+  "p1:arith:finite-family-triples": {
+    "kind": "corollary",
+    "document": "companion",
+    "source": "companion_sections/supplemental_arithmetic.tex",
+    "sha256": "c03981d61a1444b1ec6bd40d72e177c62ebf04feedb1d750276b6abe01d56445"
+  },
+  "p13:activity:pair-partition": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/triple_activities.tex",
+    "sha256": "314417432b0ff44f833afcf1e8517782ba516f0c6587804ec485c9c1af2ac268"
+  },
+  "p1:uniform:full-support": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/uniform_appendix.tex",
+    "sha256": "c3b68f1c23695e421ff747f0e2abb1756be8b2bf1b82764750ace5cba5bbf8f1"
+  },
+  "p1:uniform:missing-block": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/uniform_appendix.tex",
+    "sha256": "5e6a31d29cb66509b6a8ef1400895cd9ab6a009e7685f52cb8958d19101b7132"
+  },
+  "p1:uniform:prime-budget": {
+    "kind": "lemma",
+    "document": "companion",
+    "source": "companion_sections/uniform_appendix.tex",
+    "sha256": "4f96d8d3c0c83c42415d59c5ef2dff3eed16602b8bebff06bf3ca461a75ca108"
+  },
+  "p1:uniform:branching": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/uniform_appendix.tex",
+    "sha256": "b66fbd94f42d758ee34a11221126ad2e532d7a82d09218eef646acd5be6e0468"
+  },
+  "p1:uniform:one-pair": {
+    "kind": "corollary",
+    "document": "companion",
+    "source": "companion_sections/uniform_appendix.tex",
+    "sha256": "646f90b04cbce156b2dd69f62580d7c8424af3ff380da04a2b70a432368afe3d"
+  },
+  "p1:uniform:modified-moments": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/uniform_appendix.tex",
+    "sha256": "cf2511fff8a020bfd5a599e7579bdc4fb62b023e306a1d569fb781fbdc2d1869"
+  },
+  "p1:uniform:replicas": {
+    "kind": "proposition",
+    "document": "companion",
+    "source": "companion_sections/uniform_appendix.tex",
+    "sha256": "cee349c607e43eada20a10105ca13a96aba5dbd24c8c491a6857a75064ff04d9"
+  }
+}

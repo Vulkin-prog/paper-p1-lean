@@ -1,0 +1,514 @@
+\section{Recovering the law from the retained pair data}
+\label{p1:close:section}
+
+The stopped expansion requires a positive sum of joint
+probabilities.  The component theorem controls centered
+coefficients instead.  The two quantities cannot be interchanged
+by taking absolute values of the entire expansion: a single good
+pair has mass of the same order as the correction we wish to
+retain.  We separate that pair explicitly, estimate its failed
+extensions after compression, and use the component bound only
+for the remaining terms.
+
+Throughout this section, $\mathscr D$ is the class from
+Section~\ref{p14:comp:stopped}, $n=|G|$, $\mu=np$, and
+\[
+ \beta_N=\sum_{e\in E_N}q_e.
+\]
+All asymptotic constants may depend on the fixed critical band.
+
+\subsection{Two deficits under independent counting weights}
+
+For $r\ge0$ define
+\begin{align}
+ F_r&=p^r\#\{I\subseteq G:|I|=r,\ I\text{ is not direct}\},
+       \label{p1:close:deficit-F}\\
+ G_r&=\sum_{e\in E_N}q_ep^{r-2}
+      \left\{\binom{n-2}{r-2}-\#\Gamma_e(r-2)\right\}
+                   \qquad(r\ge2),
+       \label{p1:close:deficit-G}
+\end{align}
+and put $G_0=G_1=0$.  We use zero for binomial coefficients
+whose lower index lies outside the usual range.  In particular,
+both sequences vanish for $r>n$, and $F_0=F_1=0$.
+The weighted deficits are
+\begin{equation}
+ F=\sum_{r\ge0}2^rF_r,\qquad
+ \mathfrak G=\sum_{r\ge0}2^rG_r.
+ \label{p1:close:total-deficits}
+\end{equation}
+These are deterministic counting deficits.  The added centers
+carry independent weights $p$, even when the corresponding
+arithmetic events are dependent.
+
+\begin{lemma}[Bounds for the independent deficits]
+\label{p1:close:deficit-bounds}
+For every fixed $\varepsilon>0$,
+\begin{equation}
+ F\ll_\varepsilon N^{-4/5+\varepsilon}+B/N,
+ \qquad
+ \mathfrak G\ll_\varepsilon N^{-1+\varepsilon}.
+ \label{p1:close:deficit-rates}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Let $\mathcal P$ denote the minimal non-direct families,
+including pairs, and set
+\[
+ S_0=\sum_{C\in\mathcal P}(2p)^{|C|}.
+\]
+Every non-direct family contains some $C\in\mathcal P$.
+After choosing it, sum all added centers with weight $2p$.
+The resulting union bound gives
+\begin{equation}
+ F\le(1+2p)^n S_0\le e^{2\mu}S_0.
+ \label{p1:close:ordinary-union}
+\end{equation}
+For a minimal non-direct family of size at least three,
+every proper subfamily is direct.  Expanding the centered
+product therefore gives
+$c(C)=q(C)-p^{|C|}$, and hence
+\[
+ p^{|C|}\le q(C)+|c(C)|.
+\]
+Theorem~\ref{p1:core:primitive}, with fixed weight $2$, bounds
+the contribution of these families by
+$O_\varepsilon(N^{-4/5+\varepsilon})$.
+For pairs, the deterministic host bounds of
+Theorem~\ref{p1:arith:pairs}, including the $O(NB)$ contacts
+and good-pair hosts, give
+\[
+ \sum_{\substack{C\in\mathcal P\\|C|=2}}(2p)^2
+    \ll_\varepsilon N^{-4/5+\varepsilon}+B/N.
+\]
+These host counts include incompatible pairs; their independent
+weights are still $p^2$.  This proves the bound for $S_0$ and $F$.
+
+Fix now $e\in E_N$ and a family of singleton blocks which is not
+direct after adjoining $V_e$.  A minimal non-direct subfamily
+either lies entirely among the singletons or contains $V_e$.
+The first possibility contains an original member of $\mathcal P$.
+Write $(e,C)$ for a minimal non-direct family of the second
+kind, where $\varnothing\ne C\subseteq G\setminus e$.
+Summing additional centers with their independent weights gives
+\begin{equation}
+ \mathfrak G
+ \le4e^{2\mu}\left\{
+       \beta_N S_0+
+       \sum_{(e,C)\ {\rm minimal}}
+                 2^{|C|}q_ep^{|C|}
+             \right\}.
+ \label{p1:close:compressed-union}
+\end{equation}
+The factor $4$ accounts for the two original endpoints of $e$.
+
+To use the compressed estimate, regard
+$J_e=J_xJ_y$ as one indicator of mean $q_e$ and set
+\[
+ \widehat c(e,C)
+   =\E\left[(J_e-q_e)\prod_{z\in C}(J_z-p)\right].
+\]
+For a minimal non-direct family of these blocks, every proper
+block subfamily is direct.  The same centered expansion yields
+\[
+ \widehat c(e,C)=q(e\cup C)-q_ep^{|C|},
+ \qquad
+ q_ep^{|C|}\le q(e\cup C)+|\widehat c(e,C)|.
+\]
+Theorem~\ref{p1:core:compressed}, with the pair distinguished,
+bounds the second sum in \eqref{p1:close:compressed-union}
+by $O_\varepsilon(N^{-1+\varepsilon})$.
+The factor $4\,2^{|C|}=2^{|C|+2}$ is exactly the weight of
+the original windows; it introduces no loss depending on
+the size.
+
+Finally, $\beta_N=O(a_N)$ and
+$a_N\asymp LN^{-2/3}$.  The already obtained bound for $S_0$
+therefore gives $\beta_NS_0=O_\varepsilon(N^{-1+\varepsilon})$,
+after choosing a smaller fixed error margin in the input bounds
+if necessary.  Equation \eqref{p1:close:compressed-union}
+proves the second assertion.
+\end{proof}
+
+The extensions in this proof are summed under the independent
+weights.  In particular, no identity
+$q(C\cup U)=q(C)p^{|U|}$ has been used for a family which is
+not in direct sum.
+
+\subsection{The exact measure retained by the hereditary class}
+
+Let $b=\delta_0+p\Delta$, the Bernoulli law of mean $p$, and
+define
+\begin{equation}
+ \mathsf B_\beta=b^{*n}
+          +\beta_N\Delta^{*2}*b^{*(n-2)}.
+ \label{p1:close:bernoulli-reference}
+\end{equation}
+At this stage it is convenient to work with a signed correction
+to the binomial law.
+
+\begin{proposition}[Evaluation of the retained polynomial]
+\label{p1:close:retained-reference}
+For the class $\mathscr D$,
+\begin{equation}
+ T_{\mathscr D}
+ =\mathsf B_\beta-\sum_{r\ge0}(F_r+G_r)\Delta^{*r},
+ \qquad
+ \|T_{\mathscr D}-\mathsf B_\beta\|_1\le F+\mathfrak G.
+ \label{p1:close:retained-identity}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+The total joint probability of direct families of size $r$ is
+$\binom nrp^r-F_r$.
+By Lemma~\ref{p1:stop:class}, every non-direct member of
+$\mathscr D$ contains a unique good pair.  Equations
+\eqref{p1:stop:gamma} and \eqref{p1:stop:direct-pair-probability}
+show that their total contribution is
+\[
+ \sum_{e\in E_N}q_ep^{r-2}\#\Gamma_e(r-2)
+   =\beta_N\binom{n-2}{r-2}p^{r-2}-G_r.
+\]
+This term is zero for $r<2$.  Summing against
+$\Delta^{*r}$ and applying the binomial formula gives the
+identity.  The norm bound follows from
+$F_r,G_r\ge0$ and $\|\Delta^{*r}\|_1=2^r$.
+\end{proof}
+
+The coefficient $\beta_N$ is the sum of the joint probabilities
+of good pairs.  It will become the covariance correction after
+the independent contribution of those pairs and the binomial
+diagonal have been accounted for.
+
+\subsection{From centered components to positive boundary mass}
+
+For $K\le L/4$ put
+\[
+ \mathscr Q=\{I\subseteq G:\rho(I)\le3L/2\},
+ \qquad
+ R_K=\sum_{\substack{I\in\mathscr Q\setminus\mathscr D\\|I|\le K}}
+          2^{|I|}q(I).
+\]
+The boundary of size at most $K$ is contained in this sum.
+Define the component activities
+\begin{align}
+ A_{\rm good}&=4\sum_{e\in E_N}c(e),\notag\\
+ A_{\rm bad}&=4\sum_{\substack{I\subseteq G,\ |I|=2\\I\notin E_N}}
+                                      |c(I)|,\notag\\
+ B_K&=\sum_{\substack{C\ {\rm connected},\ 3\le|C|\le K\\
+                                  \rho_*(C)\le3L/2}}
+                              2^{|C|}|c(C)|.
+ \label{p1:close:activities}
+\end{align}
+For a good pair, compatibility and positive nullity give
+$c(e)=q_e-p^2>0$.  In particular,
+$0\le A_{\rm good}\le4\beta_N=O(a_N)$.
+
+\begin{proposition}[Positive mass outside the retained class]
+\label{p1:close:boundary-mass}
+For every $K\le L/4$,
+\begin{equation}
+ R_K\le F+\mathfrak G+
+ e^{2\mu}\bigl\{
+          \exp(A_{\rm good}+A_{\rm bad}+B_K)-1-A_{\rm good}
+          \bigr\}.
+ \label{p1:close:boundary-inequality}
+\end{equation}
+Consequently, uniformly in that range,
+\begin{equation}
+ R_K\ll_\varepsilon
+        N^{-4/5+\varepsilon}+B/N+a_N^2.
+ \label{p1:close:boundary-rate}
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Expand each indicator about its mean:
+\begin{equation}
+ q(I)=\sum_{J\subseteq I}p^{|I|-|J|}c(J),
+ \qquad c(\varnothing)=1.
+ \label{p1:close:centered-expansion}
+\end{equation}
+If $I\in\mathscr Q$, then every $J\subseteq I$ and every
+canonical component $C$ of $J$ satisfy
+$\rho_*(C)\le\rho(C)\le\rho(I)\le3L/2$.
+The first inequality follows from the definition of compatible
+nullity, and the second from monotonicity of nullity.
+
+The term $J=\varnothing$, summed over
+$I\in\mathscr Q\setminus\mathscr D$, contributes at most $F$:
+all such $I$ are non-direct.
+
+For a term $J=e\in E_N$, write $I=e\cup U$.
+Since $I\notin\mathscr D$, the family $U$ does not belong to
+$\Gamma_e(|U|)$.  Using $0<c(e)\le q_e$ and then dropping
+the restrictions on $I$ gives the upper bound
+\[
+ 4\sum_{e\in E_N}q_e
+      \sum_{\substack{U\subseteq G\setminus e\\
+                          U\notin\Gamma_e(|U|)}}(2p)^{|U|}
+       =\mathfrak G.
+\]
+This is the only part of the argument where a term of order
+$a_N$ has to be removed before taking an absolute majorant.
+
+It remains to sum nonempty $J$ which are not a single good pair.
+The coefficient $c(J)$ factors over its canonical direct-sum
+components.  A singleton component has zero coefficient.
+Every remaining nonzero family is therefore a collection of
+components of size at least two, containing either a bad pair,
+a component of size at least three, or at least two good pairs.
+Its component activities are included in
+\eqref{p1:close:activities}.
+
+The sum over these collections is bounded by
+\begin{equation}
+ \sum_{\text{remaining }J}2^{|J|}|c(J)|
+ \le \exp(A_{\rm good}+A_{\rm bad}+B_K)-1-A_{\rm good}.
+ \label{p1:close:component-exponential}
+\end{equation}
+Indeed, a collection of $m$ distinct components has $m!$
+orders, cancelling the factorial in the exponential series.
+Allowing repeated, intersecting or non-independent components
+only adds nonnegative terms to the majorant.  The empty
+collection and a single good-pair component are precisely
+the two terms subtracted on the right.
+
+For each fixed $J$, summing the additional members of
+$I\setminus J$ in \eqref{p1:close:centered-expansion}
+costs at most
+$(1+2p)^{n-|J|}\le e^{2\mu}$.  This proves
+\eqref{p1:close:boundary-inequality}.
+
+Theorem~\ref{p1:arith:pairs} and
+Theorem~\ref{p1:core:bounded-nullity}, with fixed
+$\eta=3/2$ and $w=2$, give
+\[
+ A_{\rm bad}+B_K
+      \ll_\varepsilon N^{-4/5+\varepsilon}+B/N.
+\]
+Use a small fixed error margin so that this quantity tends to
+zero.  For $u,v\ge0$ tending to zero,
+$e^{u+v}-1-u=O(u^2+v)$.
+The bounds for $A_{\rm good}$, $F$ and $\mathfrak G$
+now give \eqref{p1:close:boundary-rate}.
+An estimate for a smaller error margin implies the displayed
+estimate for every prescribed $\varepsilon>0$.
+\end{proof}
+
+\subsection{Converting the binomial reference to Poisson}
+
+Set
+\begin{equation}
+ C_2=\sum_{\substack{I\subseteq G\\|I|=2}}c(I),
+ \qquad
+ \alpha_G=\operatorname{Var}(Z_G)-\mu=2C_2-np^2.
+ \label{p1:close:variance}
+\end{equation}
+The second identity is the variance formula for a sum of
+indicators of common mean $p$.  Moreover,
+\begin{equation}
+ \beta_N-C_2
+       =|E_N|p^2-\sum_{\substack{|I|=2\\I\notin E_N}}c(I),
+ \qquad
+ |\beta_N-C_2|
+       \le |E_N|p^2+\frac14A_{\rm bad}.
+ \label{p1:close:beta-covariance}
+\end{equation}
+Thus this difference is
+$O_\varepsilon(N^{-4/5+\varepsilon}+B/N)$.
+
+\begin{lemma}[Poisson--Charlier conversion]
+\label{p1:close:conversion}
+With the parameters of the critical band,
+\begin{equation}
+ \|\mathsf B_\beta-Q_{\mu,\alpha_G}\|_1
+ \le 4|\beta_N-C_2|+
+           O_C\bigl(N^{-2}+a_N/N\bigr).
+ \label{p1:close:conversion-bound}
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Work in the Banach algebra of absolutely summable signed
+measures.  Since $2p<1$ for large $N$, the convolution
+logarithm converges absolutely and gives
+\[
+ \log_*(\delta_0+p\Delta)
+     =p\Delta-\frac{p^2}{2}\Delta^{*2}
+                     +O_{\ell^1}(p^3).
+\]
+The convolution exponential of $\mu\Delta$ is the Poisson
+probability $\Pi_\mu$, of norm one.  Multiplying the preceding
+identity by $n$ and exponentiating therefore yields
+\begin{equation}
+ b^{*n}
+ =\Pi_\mu-\frac{np^2}{2}\Pi_\mu*\Delta^{*2}
+           +O_{\ell^1}\bigl(np^3+(np^2)^2\bigr).
+ \label{p1:close:binomial-expansion}
+\end{equation}
+The same calculation, retaining only the leading term, gives
+\[
+ b^{*(n-2)}
+       =\Pi_\mu+O_{\ell^1}(p+np^2).
+\]
+First replace $\beta_N$ by $C_2$ in
+\eqref{p1:close:bernoulli-reference}.
+This costs at most $4|\beta_N-C_2|$, because
+$b^{*(n-2)}$ is a probability and $\|\Delta^{*2}\|_1=4$.
+The two expansions then give coefficient
+$C_2-np^2/2=\alpha_G/2$ in front of
+$\Pi_\mu*\Delta^{*2}$.  Their remaining error is bounded by
+\[
+ O_C\bigl(np^3+(np^2)^2+|C_2|(p+np^2)\bigr).
+\]
+Now $n=O(N)$, $p=O_C(N^{-1})$ and $C_2=O(a_N)$.
+This is the error stated in \eqref{p1:close:conversion-bound}.
+\end{proof}
+
+\subsection{The first approximation and its uniform boundary}
+
+\begin{proposition}[The first quadratic approximation]
+\label{p13:base-approximation}
+Uniformly in the critical band, for every \(\varepsilon>0\),
+\[
+ \|\Law Z_N-Q_{\mu_N,\alpha_N}\|_1
+       \ll_{C,\varepsilon}N^{-4/5+\varepsilon}.
+\]
+The same bound holds with \(\mu_N\) replaced by \(\lambda_N\).
+\end{proposition}
+
+This estimate identifies the leading correction and proves the
+boundary estimates used below. The optimal scalar reconstruction in
+Section~\ref{p13:transfer:section} keeps exact marginals
+on the whole set of admissible windows.
+
+\begin{proof}
+Choose $\mathscr D$ and $K_N$ as in
+Section~\ref{p14:comp:stopped}.  For all sufficiently large $N$,
+$K_N\le L/4$.  The stopped identity, the boundary-nullity bound,
+Lemma~\ref{p1:stop:tail} and
+Proposition~\ref{p1:close:boundary-mass} give
+\[
+ \|\Law Z_G-T_{\mathscr D}\|_1
+ \le R_{K_N}+O_C(N^{-3/2})
+ \ll_\varepsilon N^{-4/5+\varepsilon}
+                      +B/N+a_N^2+N^{-3/2}.
+\]
+Proposition~\ref{p1:close:retained-reference} adds the two
+deficits $F+\mathfrak G$.
+Lemma~\ref{p1:close:conversion}, together with
+\eqref{p1:close:beta-covariance}, then gives
+\begin{align}
+ \|\Law Z_G-Q_{\mu,\alpha_G}\|_1
+ &\ll_\varepsilon N^{-4/5+\varepsilon}
+             +B/N+a_N^2+N^{-3/2}+N^{-2}+a_N/N \notag\\
+ &\ll_\varepsilon N^{-4/5+\varepsilon},
+ \label{p1:close:regular-law}
+\end{align}
+since $B\asymp\log N$ and
+$a_N\asymp LN^{-2/3}$.
+
+It remains to restore the excluded windows and the desired
+parameters.  The independent reference bounds
+\eqref{p1:close:poisson-lipschitz} and
+\eqref{p1:close:reference-lipschitz} will transfer the parameters.
+
+Proposition~\ref{p1:arith:core} gives
+\[
+ \|\Law Z_N-\Law Z_G\|_1
+   +|\mu_N-\mu|+|\alpha_N-\alpha_G|
+   +|\mu_N-\lambda_N|
+      \ll_\varepsilon N^{-1+\varepsilon}.
+\]
+Apply \eqref{p1:close:reference-lipschitz} first to transfer
+$(\mu,\alpha_G)$ to $(\mu_N,\alpha_N)$, and then to replace
+$\mu_N$ by $\lambda_N$ while retaining $\alpha_N$.
+Both costs are absorbed in \eqref{p1:close:regular-law}.
+This proves the two asserted forms of the approximation,
+uniformly in the fixed critical band.
+
+Finally, if $0<\varepsilon<2/15$, then
+\[
+ \frac{N^{-4/5+\varepsilon}}{a_N}
+       =O_C\left(\frac{N^{-2/15+\varepsilon}}{\log N}\right)
+       \longrightarrow0.
+\]
+Thus the corrected error is smaller than the retained pair term.
+\end{proof}
+
+
+\subsection{The total-variation coefficient}
+\label{p14:comp:tv}
+
+\begin{proof}[Proof of Corollary~\ref{p1:cor:tv}]
+Theorem~\ref{p1:thm:main} and the reverse triangle
+inequality first give
+\[
+ \TV(\Law Z_N,\Pi_{\mu_N})
+ =\alpha_N\mathcal C(\mu_N)
+            +O_{C,\varepsilon}(N^{-4/3+\varepsilon}).
+\]
+Use \(|\mu_N-\lambda_N|\ll N^{-1+\varepsilon}\) and
+\eqref{p1:close:reference-lipschitz} to obtain
+\[
+ \Law Z_N-\Pi_{\lambda_N}
+   =\frac{\alpha_N}{2}\Pi_{\lambda_N}*\Delta^{*2}
+          +O_{\ell^1,C,\varepsilon}(N^{-1+\varepsilon}).
+\]
+The reverse triangle inequality, followed by the factor
+$1/2$ converting the $\ell^1$ norm to total variation,
+yields
+\begin{equation}
+ \TV(\Law Z_N,\Pi_{\lambda_N})
+      =\alpha_N\mathcal C(\lambda_N)
+          +O_{C,\varepsilon}(N^{-1+\varepsilon}).
+ \label{p1:close:tv-exact-parameter}
+\end{equation}
+The pair asymptotic from
+Theorem~\ref{p1:arith:pairs} now gives
+\begin{equation}
+ \TV(\Law Z_N,\Pi_{\lambda_N})
+ \sim \mathcal C(\lambda_N)
+       \frac{r_N+2}{18\,2^{r_N/3}}\,
+       \lambda_N^{5/3}L N^{-2/3},
+ \qquad r_N=L\bmod3.
+ \label{p1:close:tv-asymptotic}
+\end{equation}
+The lower bound in \eqref{p1:close:constant-bounds} is uniform
+on the fixed critical band, and the remainder is
+$o(LN^{-2/3})$.  This proves the sharp order asserted in the
+corollary.  The equivalence is relative to the displayed
+oscillating expression; no convergence of its phase or
+intensity factors is required.
+\end{proof}
+
+Replacing $\alpha_N$ by its leading equivalent proves
+\eqref{p1:close:tv-asymptotic}.  It does not by itself preserve
+the error $O(N^{-1+\varepsilon})$ in
+\eqref{p1:close:tv-exact-parameter}, which uses the exact
+second factorial cumulant.
+
+For the representative case $\lambda=1$, the only negative
+masses of $\Pi_1*\Delta^{*2}$ occur at $k=1$ and $k=2$.
+They are $-e^{-1}$ and $-e^{-1}/2$, respectively.
+The total mass is zero, so
+\[
+ \|\Pi_1*\Delta^{*2}\|_1=\frac3e,
+ \qquad
+ \mathcal C(1)=\frac3{4e}.
+\]
+Along $N=2^L$ with $L$ divisible by three,
+\begin{equation}
+ \TV(\Law Z_N,\Pi_1)
+       \sim \frac1{12e}\,L N^{-2/3}.
+ \label{p1:close:dyadic-example}
+\end{equation}
+This computes the coefficient in the example announced in
+the introduction.
+
+The total-variation asymptotic uses the exact-marginal reconstruction
+and the explicit pair coefficient. The independent positivity and
+reference-continuity estimates do not use the reconstruction.

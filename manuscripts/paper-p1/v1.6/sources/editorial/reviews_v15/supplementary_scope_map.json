@@ -1,0 +1,1099 @@
+{
+  "version": "P1 V1.5",
+  "date": "2026-10-31",
+  "purpose": "R6 read-only dependency inventory; exact labels are stable; printed numbers retain the V1.4 ordering.",
+  "method": "Read source statements and the positional proof; scan all explicit ref/eqref links across main and companion. The per-result lists cover the statement and its immediate proof; they are cross-reference inventories, not formal certification of every mathematical dependency.",
+  "conclusions": {
+    "optimal_scalar_core": "No result of T19--T23 is used as an input to the optimal scalar reconstruction, the third-cumulant theorem, or the quartic lower bound.",
+    "scalar_consequences": "Corollaries 17.1--17.2, Proposition 17.3 and the Hermite comparison do not require T19--T23. In particular, exact local blocks in T19.2 are not needed for Proposition 17.3.",
+    "positional": "The unnumbered proof in T19 under p14:comp:positional-proof is required for main Lemma p1:limits:vector-reference. Its later deletion/Palm consequences are supplements.",
+    "scope_and_method": "T19.7, T21.1 and T23.1 support explanations in the article (exponential moments, domain dependence, insufficiency of fixed moments); they are not inputs to its central theorem."
+  },
+  "necessary_positional_branch": {
+    "source": "companion_sections/limits_appendix.tex",
+    "subsection_labels": [
+      "p1:limits:positions",
+      "p14:comp:positional-proof"
+    ],
+    "proved_main_result": {
+      "label": "p1:limits:vector-reference",
+      "printed_number": "20.1",
+      "source": "main_sections/limits_appendix.tex"
+    },
+    "identity": "p1:limits:vector-stop",
+    "output": "p1:limits:vector-weighted",
+    "explicit_dependencies": [
+      {
+        "label": "p1:stop:polynomial",
+        "source": "main_sections/stopped.tex"
+      },
+      {
+        "label": "p1:close:total-deficits",
+        "source": "companion_sections/closure.tex"
+      },
+      {
+        "label": "p1:stop:norm",
+        "source": "main_sections/stopped.tex"
+      },
+      {
+        "label": "p1:fixed:moments",
+        "source": "main_sections/fixed_moments.tex"
+      },
+      {
+        "label": "p14:positions:section",
+        "source": "main_sections/limits_appendix.tex"
+      },
+      {
+        "label": "p1:limits:compound-target",
+        "source": "main_sections/limits_appendix.tex"
+      }
+    ],
+    "additional_arithmetic_inputs_explained_in_prose": [
+      {
+        "label": "p1:arith:core",
+        "role": "Restoring the excluded starts costs N^{-1+o(1)}."
+      },
+      {
+        "label": "p1:arith:pairs",
+        "role": "Good-edge activities and degree bounds give bounded target parameters and the small Bernoulli/exponential conversion costs."
+      }
+    ],
+    "not_inputs": [
+      "p1:limits:cylinder",
+      "p1:limits:erasure",
+      "p1:limits:signed-palm",
+      "p1:limits:all-pairs"
+    ],
+    "scope": "Unsigned positions on the original integer grid; every fixed polynomial degree in total count; N^{-4/5+epsilon}; no run signs, excess-length marks or exponential weights."
+  },
+  "results": [
+    {
+      "printed_number": "T19.1",
+      "label": "p1:limits:lattice",
+      "title": "Support and factorial lattice",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "Structural supplement. Main Proposition 17.3 (p13:optimal:nominal) derives mean quantization directly from exact marginal probabilities and does not invoke this result.",
+      "statement_and_immediate_proof_references": []
+    },
+    {
+      "printed_number": "T19.2",
+      "label": "p1:limits:local-blocks",
+      "title": "Exact local blocks",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "Structural supplement. Main Proposition 17.3 (p13:optimal:nominal) derives mean quantization directly from exact marginal probabilities and does not invoke this result.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:limits:local-rigidity",
+          "source": "main_sections/exact_setup.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T19.3",
+      "label": "p1:limits:modified",
+      "title": "A modified count with all factorial tails",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:arith:core",
+          "source": "main_sections/arithmetic.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T19.4",
+      "label": "p1:limits:branching",
+      "title": "Branching with an explicit order dependence",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "A separate uniform extension or tail tool. The optimal scalar proof has its own explicitly uniform high-order bound in Section 15 and does not invoke this result.",
+      "statement_and_immediate_proof_references": []
+    },
+    {
+      "printed_number": "T19.5",
+      "label": "p1:limits:effective-tail",
+      "title": "A quantified effective support",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:limits:growing-moments",
+          "source": "companion_sections/limits_appendix.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T19.6",
+      "label": "p1:limits:colored-tail",
+      "title": "A very small tail beyond a near-linear threshold",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": []
+    },
+    {
+      "printed_number": "T19.7",
+      "label": "p1:limits:cylinder",
+      "title": "Divergence of the real exponential moment",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "support_for_discussion_of_limits",
+      "note": "Cited in main discussion for failure of a real exponential-moment bound; not an input to scalar reconstruction or the positional comparison.",
+      "statement_and_immediate_proof_references": []
+    },
+    {
+      "printed_number": "T19.8",
+      "label": "p1:limits:peeling",
+      "title": "Deleting large private ranks",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": []
+    },
+    {
+      "printed_number": "T19.9",
+      "label": "p1:limits:large-component",
+      "title": "A real component of quadratic nullity",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:limits:cylinder",
+          "source": "companion_sections/limits_appendix.tex"
+        },
+        {
+          "label": "p1:limits:peeling",
+          "source": "companion_sections/limits_appendix.tex"
+        },
+        {
+          "label": "p1:limits:positive-core",
+          "source": "companion_sections/limits_appendix.tex"
+        },
+        {
+          "label": "p1:limits:rank-density",
+          "source": "companion_sections/limits_appendix.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T19.10",
+      "label": "p1:limits:erasure",
+      "title": "Deletion, isolation, and remaining covariances",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "Downstream of the positional branch; does not feed back into the scalar proof or the proof of the positional comparison.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:limits:vector-reference",
+          "source": "main_sections/limits_appendix.tex"
+        },
+        {
+          "label": "p1:arith:twogoodpositive",
+          "source": "companion_sections/arithmetic_appendix.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T19.11",
+      "label": "p1:limits:stein",
+      "title": "A scalar recurrence criterion",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": []
+    },
+    {
+      "printed_number": "T19.12",
+      "label": "p1:limits:signed-palm",
+      "title": "The signed Palm measure",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "Downstream of the positional branch; does not feed back into the scalar proof or the proof of the positional comparison.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:limits:raw-residual",
+          "source": "companion_sections/limits_appendix.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T19.13",
+      "label": "p1:limits:weighted-residual",
+      "title": "A recurrence norm equivalent to total variation",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": []
+    },
+    {
+      "printed_number": "T19.14",
+      "label": "p1:limits:all-pairs",
+      "title": "All active pair dependencies can be removed",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "Downstream of the positional branch; does not feed back into the scalar proof or the proof of the positional comparison.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:limits:weighted-residual",
+          "source": "companion_sections/limits_appendix.tex"
+        },
+        {
+          "label": "p1:limits:one-all-tv",
+          "source": "companion_sections/limits_appendix.tex"
+        },
+        {
+          "label": "p1:limits:erased-localization",
+          "source": "companion_sections/limits_appendix.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T19.15",
+      "label": "p1:limits:reciprocal",
+      "title": "Reciprocal odd-prime pivots",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:limits:pivot-scale",
+          "source": "companion_sections/limits_appendix.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T19.16",
+      "label": "p1:limits:private-exact",
+      "title": "Exact logarithmic cost of this forcing",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:limits:reciprocal",
+          "source": "companion_sections/limits_appendix.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T19.17",
+      "label": "p1:limits:all-anchors",
+      "title": "An obstruction for every such anchor",
+      "source": "companion_sections/limits_appendix.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": []
+    },
+    {
+      "printed_number": "T20.1",
+      "label": "p1:offset:line-product",
+      "title": "The prime product on an offset line",
+      "source": "companion_sections/offset_geometry.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": []
+    },
+    {
+      "printed_number": "T20.2",
+      "label": "p1:offset:integer-tail",
+      "title": "An integer product tail",
+      "source": "companion_sections/offset_geometry.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": []
+    },
+    {
+      "printed_number": "T20.3",
+      "label": "p1:offset:forced-plane",
+      "title": "A forced plane uses all three coordinates",
+      "source": "companion_sections/offset_geometry.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:offset:line-product",
+          "source": "companion_sections/offset_geometry.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T20.4",
+      "label": "p1:offset:normal-budget",
+      "title": "Many planar supports force a small normal",
+      "source": "companion_sections/offset_geometry.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:offset:line-product",
+          "source": "companion_sections/offset_geometry.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T20.5",
+      "label": "p1:offset:root-separation",
+      "title": "At most one common root",
+      "source": "companion_sections/offset_geometry.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": []
+    },
+    {
+      "printed_number": "T20.6",
+      "label": "p1:offset:planar-components",
+      "title": "Many transverse square products on prescribed planes",
+      "source": "companion_sections/offset_geometry.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:offset:root-separation",
+          "source": "companion_sections/offset_geometry.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T20.7",
+      "label": "p1:offset:cover-rank",
+      "title": "Covering cost and free components",
+      "source": "companion_sections/offset_geometry.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:arith:defects",
+          "source": "companion_sections/arithmetic_appendix.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T20.8",
+      "label": "p1:offset:six-vertex",
+      "title": "A six-vertex budget for the residual space",
+      "source": "companion_sections/offset_geometry.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:offset:planar-components",
+          "source": "companion_sections/offset_geometry.tex"
+        },
+        {
+          "label": "p1:arith:geometric",
+          "source": "companion_sections/arithmetic_appendix.tex"
+        },
+        {
+          "label": "p1:offset:cover-rank",
+          "source": "companion_sections/offset_geometry.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T21.1",
+      "label": "p1:consequences:macro",
+      "title": "Profiles depend on the interval",
+      "source": "companion_sections/arithmetic_consequences.tex",
+      "role": "support_for_intro_scope",
+      "note": "Cited in the introduction to illustrate dependence on the interval; not an input to the dyadic theorem. Its proof refers to the main theorem for comparison.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:arith:defects",
+          "source": "companion_sections/arithmetic_appendix.tex"
+        },
+        {
+          "label": "p1:arith:alignedrank",
+          "source": "companion_sections/arithmetic_appendix.tex"
+        },
+        {
+          "label": "p1:arith:channelidentity",
+          "source": "main_sections/arithmetic.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T21.2",
+      "label": "p1:consequences:conditional-rank",
+      "title": "Conditional rank loss",
+      "source": "companion_sections/arithmetic_consequences.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:limits:branching",
+          "source": "companion_sections/limits_appendix.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T21.3",
+      "label": "p1:consequences:rankin-patterns",
+      "title": "A Rankin bound for offset patterns",
+      "source": "companion_sections/arithmetic_consequences.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": []
+    },
+    {
+      "printed_number": "T21.4",
+      "label": "p1:consequences:confinement",
+      "title": "Polylogarithmic confinement",
+      "source": "companion_sections/arithmetic_consequences.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:arith:ternary-budget",
+          "source": "companion_sections/arithmetic_appendix.tex"
+        },
+        {
+          "label": "p1:arith:groupcrt",
+          "source": "companion_sections/arithmetic_appendix.tex"
+        },
+        {
+          "label": "p1:consequences:rankin-primes",
+          "source": "companion_sections/arithmetic_consequences.tex"
+        },
+        {
+          "label": "p1:consequences:rankin-groups",
+          "source": "companion_sections/arithmetic_consequences.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T22.1",
+      "label": "p1:uniform:full-support",
+      "title": "A weighted count of every full support",
+      "source": "companion_sections/uniform_appendix.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p14:cert:section",
+          "source": "main_sections/cores.tex"
+        },
+        {
+          "label": "p1:core:primitive-parameters",
+          "source": "companion_sections/cores.tex"
+        },
+        {
+          "label": "p1:core:moderate",
+          "source": "main_sections/cores.tex"
+        },
+        {
+          "label": "p1:core:generator",
+          "source": "main_sections/cores.tex"
+        },
+        {
+          "label": "p1:arith:fixed-support",
+          "source": "companion_sections/arithmetic_appendix.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T22.2",
+      "label": "p1:uniform:missing-block",
+      "title": "When no relation uses every block",
+      "source": "companion_sections/uniform_appendix.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": []
+    },
+    {
+      "printed_number": "T22.3",
+      "label": "p1:uniform:prime-budget",
+      "title": "Rankin under a logarithmic prime budget",
+      "source": "companion_sections/uniform_appendix.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": []
+    },
+    {
+      "printed_number": "T22.4",
+      "label": "p1:uniform:branching",
+      "title": "Independent extensions at the critical order",
+      "source": "companion_sections/uniform_appendix.tex",
+      "role": "independent_supplement",
+      "note": "A separate uniform extension or tail tool. The optimal scalar proof has its own explicitly uniform high-order bound in Section 15 and does not invoke this result.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:uniform:prime-budget",
+          "source": "companion_sections/uniform_appendix.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T22.5",
+      "label": "p1:uniform:one-pair",
+      "title": "A single pair at all critical orders",
+      "source": "companion_sections/uniform_appendix.tex",
+      "role": "independent_supplement",
+      "note": "A separate uniform extension or tail tool. The optimal scalar proof has its own explicitly uniform high-order bound in Section 15 and does not invoke this result.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:uniform:branching",
+          "source": "companion_sections/uniform_appendix.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T22.6",
+      "label": "p1:uniform:modified-moments",
+      "title": "Moment decomposition and pair leakage",
+      "source": "companion_sections/uniform_appendix.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:close:deficit-bounds",
+          "source": "companion_sections/closure.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T22.7",
+      "label": "p1:uniform:replicas",
+      "title": "The replica formula and positive propagation",
+      "source": "companion_sections/uniform_appendix.tex",
+      "role": "independent_supplement",
+      "note": "No use as an input to the optimal scalar proof, its scalar corollaries, or the positional-comparison proof was found.",
+      "statement_and_immediate_proof_references": [
+        {
+          "label": "p1:fixed:targets",
+          "source": "main_sections/fixed_moments.tex"
+        },
+        {
+          "label": "p1:fixed:conditional",
+          "source": "main_sections/fixed_moments.tex"
+        }
+      ]
+    },
+    {
+      "printed_number": "T23.1",
+      "label": "p1:obstruction:fixed",
+      "title": "A perturbation invisible at each fixed order",
+      "source": "companion_sections/moment_obstruction.tex",
+      "role": "support_for_discussion_of_method",
+      "note": "The containing section is cited in main discussion to show that fixed moments alone do not yield a polynomial total-variation rate. Abstract probability laws; no asserted multiplicative realization.",
+      "statement_and_immediate_proof_references": []
+    }
+  ],
+  "incoming_from_article": [
+    {
+      "from_file": "main_sections/discussion.tex",
+      "line_at_scan": 17,
+      "to_label": "p1:limits:positions",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "Section~\\ref{p1:limits:positions} develops that comparison and"
+    },
+    {
+      "from_file": "main_sections/discussion.tex",
+      "line_at_scan": 255,
+      "to_label": "p1:moment-obstruction",
+      "to_file": "companion_sections/moment_obstruction.tex",
+      "context": "a polynomial total variation rate. Section~\\ref{p1:moment-obstruction} of the companion"
+    },
+    {
+      "from_file": "main_sections/discussion.tex",
+      "line_at_scan": 262,
+      "to_label": "p1:limits:cylinder",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "Proposition~\\ref{p1:limits:cylinder} explains why such a bound cannot be"
+    },
+    {
+      "from_file": "main_sections/limits_appendix.tex",
+      "line_at_scan": 58,
+      "to_label": "p14:comp:positional-proof",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "The proof is in Section~\\ref{p14:comp:positional-proof}. It retains the"
+    },
+    {
+      "from_file": "main_sections/introduction.tex",
+      "line_at_scan": 294,
+      "to_label": "p1:consequences:macro",
+      "to_file": "companion_sections/arithmetic_consequences.tex",
+      "context": "calculation in Proposition~\\ref{p1:consequences:macro} confirms."
+    },
+    {
+      "from_file": "main_sections/introduction.tex",
+      "line_at_scan": 593,
+      "to_label": "p1:limits:positions",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "comparison in Section~\\ref{p1:limits:positions} and"
+    }
+  ],
+  "incoming_from_earlier_companion_excluding_guide": [],
+  "cross_references_within_supplementary_files": [
+    {
+      "from_file": "companion_sections/uniform_appendix.tex",
+      "line_at_scan": 174,
+      "to_label": "p1:uniform:prime-budget",
+      "to_file": "companion_sections/uniform_appendix.tex",
+      "context": "Lemma~\\ref{p1:uniform:prime-budget} gives"
+    },
+    {
+      "from_file": "companion_sections/uniform_appendix.tex",
+      "line_at_scan": 182,
+      "to_label": "p1:uniform:branching-rate",
+      "to_file": "companion_sections/uniform_appendix.tex",
+      "context": "\\eqref{p1:uniform:branching-rate}."
+    },
+    {
+      "from_file": "companion_sections/uniform_appendix.tex",
+      "line_at_scan": 205,
+      "to_label": "p1:uniform:branching",
+      "to_file": "companion_sections/uniform_appendix.tex",
+      "context": "Proposition~\\ref{p1:uniform:branching}."
+    },
+    {
+      "from_file": "companion_sections/uniform_appendix.tex",
+      "line_at_scan": 302,
+      "to_label": "p1:uniform:modified-identity",
+      "to_file": "companion_sections/uniform_appendix.tex",
+      "context": "obtain \\eqref{p1:uniform:modified-identity}."
+    },
+    {
+      "from_file": "companion_sections/uniform_appendix.tex",
+      "line_at_scan": 388,
+      "to_label": "p1:uniform:replica-formula",
+      "to_file": "companion_sections/uniform_appendix.tex",
+      "context": "of \\eqref{p1:uniform:replica-formula}."
+    },
+    {
+      "from_file": "companion_sections/uniform_appendix.tex",
+      "line_at_scan": 413,
+      "to_label": "p1:uniform:replica-moment",
+      "to_file": "companion_sections/uniform_appendix.tex",
+      "context": "\\(\\log N\\) proves \\eqref{p1:uniform:replica-moment}."
+    },
+    {
+      "from_file": "companion_sections/uniform_appendix.tex",
+      "line_at_scan": 436,
+      "to_label": "p1:uniform:replica-moment",
+      "to_file": "companion_sections/uniform_appendix.tex",
+      "context": "Here \\eqref{p1:uniform:replica-moment} supplies the"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 100,
+      "to_label": "p1:limits:block-mean",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "marginals.  Summation proves \\eqref{p1:limits:block-mean} and"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 101,
+      "to_label": "p1:limits:block-absolute",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:block-absolute}.  A full interval has"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 181,
+      "to_label": "p1:limits:modified-tv",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "In particular, \\eqref{p1:limits:modified-tv} does not bound"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 246,
+      "to_label": "p1:limits:branching-uniform",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:branching-uniform}.  Summing the conditional"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 252,
+      "to_label": "p1:limits:growing-moments",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:growing-moments}."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 274,
+      "to_label": "p1:limits:growing-moments",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:growing-moments} is at most"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 288,
+      "to_label": "p1:limits:effective-threshold",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "The value of \\eqref{p1:limits:effective-threshold} is its explicit"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 349,
+      "to_label": "p1:limits:two-small-pivots",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:two-small-pivots}.  Theorem~4.1 of"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 356,
+      "to_label": "p1:limits:two-small-pivots",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "By \\eqref{p1:limits:two-small-pivots}, their number is"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 413,
+      "to_label": "p1:limits:exponential-divergence",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:exponential-divergence}."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 466,
+      "to_label": "p1:limits:positive-core",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:positive-core}.  The size-weighted average of"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 476,
+      "to_label": "p1:limits:cylinder",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "Along the subsequence of Proposition~\\ref{p1:limits:cylinder},"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 514,
+      "to_label": "p1:limits:peeling",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "Apply Lemma~\\ref{p1:limits:peeling} with"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 517,
+      "to_label": "p1:limits:positive-core",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "Equations \\eqref{p1:limits:positive-core}--\\eqref{p1:limits:rank-density}"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 517,
+      "to_label": "p1:limits:rank-density",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "Equations \\eqref{p1:limits:positive-core}--\\eqref{p1:limits:rank-density}"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 644,
+      "to_label": "p1:limits:cylinder",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "Proposition~\\ref{p1:limits:cylinder}."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 712,
+      "to_label": "p1:limits:erasure-tv",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "$T=1$.  This proves \\eqref{p1:limits:erasure-tv}."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 723,
+      "to_label": "p1:limits:erasure-covariance",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:erasure-covariance}."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 750,
+      "to_label": "p1:limits:edge-occurrence",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:edge-occurrence}--\\eqref{p1:limits:one-all-wasserstein}."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 750,
+      "to_label": "p1:limits:one-all-wasserstein",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:edge-occurrence}--\\eqref{p1:limits:one-all-wasserstein}."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 888,
+      "to_label": "p1:limits:stein-bound",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:stein-bound}.  The two measures in"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 889,
+      "to_label": "p1:limits:size-bias",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:size-bias} differ at $k$ by"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 894,
+      "to_label": "p1:limits:stein-bound",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "The constant in \\eqref{p1:limits:stein-bound} is not claimed"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 940,
+      "to_label": "p1:limits:raw-residual",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "Consequently the residual in \\eqref{p1:limits:raw-residual}"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 949,
+      "to_label": "p1:limits:signed-palm-bound",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "inequality proves \\eqref{p1:limits:signed-palm-bound}."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 951,
+      "to_label": "p1:limits:signed-palm-coefficients",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "$x$ gives \\eqref{p1:limits:signed-palm-coefficients}."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 994,
+      "to_label": "p1:limits:raw-residual",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "Indeed the operator in \\eqref{p1:limits:raw-residual} is bounded"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 999,
+      "to_label": "p1:limits:residual-parameters",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "comparison, and \\eqref{p1:limits:residual-parameters} prove"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 1088,
+      "to_label": "p1:limits:bad-mass",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "mass $N^{-1+o(1)}$.  This proves \\eqref{p1:limits:bad-mass}."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 1096,
+      "to_label": "p1:limits:all-pairs-cost",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "Markov's inequality gives \\eqref{p1:limits:all-pairs-cost}."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 1101,
+      "to_label": "p1:limits:weighted-residual",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "Lemma~\\ref{p1:limits:weighted-residual} transfers the criterion."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 1102,
+      "to_label": "p1:limits:one-all-tv",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "Use \\eqref{p1:limits:one-all-tv} and"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 1103,
+      "to_label": "p1:limits:erased-localization",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:erased-localization} for the final equivalence."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 1155,
+      "to_label": "p1:limits:pivot-scale",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:pivot-scale}; the later terms are"
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 1243,
+      "to_label": "p1:limits:reciprocal",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "Lemma~\\ref{p1:limits:reciprocal} proves the upper bound."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 1283,
+      "to_label": "p1:limits:private-exact-eq",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:private-exact-eq}."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 1363,
+      "to_label": "p1:limits:anchor-lower",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:anchor-lower}."
+    },
+    {
+      "from_file": "companion_sections/limits_appendix.tex",
+      "line_at_scan": 1386,
+      "to_label": "p1:limits:anchor-lower",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "\\eqref{p1:limits:anchor-lower}; then"
+    },
+    {
+      "from_file": "companion_sections/offset_geometry.tex",
+      "line_at_scan": 65,
+      "to_label": "p1:offset:line-product-bound",
+      "to_file": "companion_sections/offset_geometry.tex",
+      "context": "This proves \\eqref{p1:offset:line-product-bound}. Choose one prime per"
+    },
+    {
+      "from_file": "companion_sections/offset_geometry.tex",
+      "line_at_scan": 125,
+      "to_label": "p1:offset:line-product",
+      "to_file": "companion_sections/offset_geometry.tex",
+      "context": "Lemma~\\ref{p1:offset:line-product}, including the case of repeated"
+    },
+    {
+      "from_file": "companion_sections/offset_geometry.tex",
+      "line_at_scan": 174,
+      "to_label": "p1:offset:line-product",
+      "to_file": "companion_sections/offset_geometry.tex",
+      "context": "Lemma~\\ref{p1:offset:line-product}, each carries at most $M_Y$ supports."
+    },
+    {
+      "from_file": "companion_sections/offset_geometry.tex",
+      "line_at_scan": 241,
+      "to_label": "p1:offset:root-separation",
+      "to_file": "companion_sections/offset_geometry.tex",
+      "context": "Lemma~\\ref{p1:offset:root-separation} leaves $k$ equations whose"
+    },
+    {
+      "from_file": "companion_sections/offset_geometry.tex",
+      "line_at_scan": 322,
+      "to_label": "p1:offset:planar-components",
+      "to_file": "companion_sections/offset_geometry.tex",
+      "context": "Proposition~\\ref{p1:offset:planar-components}, their number is"
+    },
+    {
+      "from_file": "companion_sections/offset_geometry.tex",
+      "line_at_scan": 345,
+      "to_label": "p1:offset:cover-rank",
+      "to_file": "companion_sections/offset_geometry.tex",
+      "context": "Lemma~\\ref{p1:offset:cover-rank} proves"
+    },
+    {
+      "from_file": "companion_sections/offset_geometry.tex",
+      "line_at_scan": 346,
+      "to_label": "p1:offset:six-vertex-bound",
+      "to_file": "companion_sections/offset_geometry.tex",
+      "context": "\\eqref{p1:offset:six-vertex-bound}."
+    },
+    {
+      "from_file": "companion_sections/offset_geometry.tex",
+      "line_at_scan": 354,
+      "to_label": "p1:offset:planar-components",
+      "to_file": "companion_sections/offset_geometry.tex",
+      "context": "Proposition~\\ref{p1:offset:planar-components}."
+    },
+    {
+      "from_file": "companion_sections/arithmetic_consequences.tex",
+      "line_at_scan": 76,
+      "to_label": "p1:consequences:macro-positive",
+      "to_file": "companion_sections/arithmetic_consequences.tex",
+      "context": "\\eqref{p1:consequences:macro-positive}. The height-one"
+    },
+    {
+      "from_file": "companion_sections/arithmetic_consequences.tex",
+      "line_at_scan": 99,
+      "to_label": "p1:consequences:S12",
+      "to_file": "companion_sections/arithmetic_consequences.tex",
+      "context": "\\eqref{p1:consequences:S12}. The endpoints cost"
+    },
+    {
+      "from_file": "companion_sections/arithmetic_consequences.tex",
+      "line_at_scan": 102,
+      "to_label": "p1:consequences:macro-signed",
+      "to_file": "companion_sections/arithmetic_consequences.tex",
+      "context": "\\eqref{p1:consequences:macro-signed} and its equivalent."
+    },
+    {
+      "from_file": "companion_sections/arithmetic_consequences.tex",
+      "line_at_scan": 112,
+      "to_label": "p1:consequences:dyadic-positive",
+      "to_file": "companion_sections/arithmetic_consequences.tex",
+      "context": "\\eqref{p1:consequences:dyadic-positive}."
+    },
+    {
+      "from_file": "companion_sections/arithmetic_consequences.tex",
+      "line_at_scan": 179,
+      "to_label": "p1:consequences:conditional-budget",
+      "to_file": "companion_sections/arithmetic_consequences.tex",
+      "context": "This proves \\eqref{p1:consequences:conditional-budget}."
+    },
+    {
+      "from_file": "companion_sections/arithmetic_consequences.tex",
+      "line_at_scan": 180,
+      "to_label": "p1:limits:branching",
+      "to_file": "companion_sections/limits_appendix.tex",
+      "context": "The Euler-product bound in Lemma~\\ref{p1:limits:branching}"
+    },
+    {
+      "from_file": "companion_sections/arithmetic_consequences.tex",
+      "line_at_scan": 237,
+      "to_label": "p1:consequences:rankin-primes",
+      "to_file": "companion_sections/arithmetic_consequences.tex",
+      "context": "\\eqref{p1:consequences:rankin-primes}. For integer factors"
+    },
+    {
+      "from_file": "companion_sections/arithmetic_consequences.tex",
+      "line_at_scan": 291,
+      "to_label": "p1:consequences:rankin-primes",
+      "to_file": "companion_sections/arithmetic_consequences.tex",
+      "context": "Equation~\\eqref{p1:consequences:rankin-primes} bounds the"
+    },
+    {
+      "from_file": "companion_sections/arithmetic_consequences.tex",
+      "line_at_scan": 299,
+      "to_label": "p1:consequences:rankin-groups",
+      "to_file": "companion_sections/arithmetic_consequences.tex",
+      "context": "Equation~\\eqref{p1:consequences:rankin-groups} gives instead"
+    }
+  ],
+  "arithmetic_primary_sources_checked": [
+    {
+      "key": "cilleruelogaraev2011",
+      "url": "https://arxiv.org/pdf/1007.1526v2",
+      "locator": "Section 3, Lemma 4 and Proposition 1, printed p.5; proof through p.7"
+    },
+    {
+      "key": "tao2026anatomy",
+      "url": "https://arxiv.org/html/2603.27990v3#S2.SS5",
+      "locator": "Lemma 2.10; version 3 dated 26 September 2026"
+    },
+    {
+      "key": "reuss2014",
+      "url": "https://arxiv.org/pdf/1212.3150v2",
+      "locator": "Theorem 1; Lemma 7; Sections 2.1--2.3 (version 2)."
+    },
+    {
+      "key": "heathbrown2012",
+      "url": "https://arxiv.org/pdf/1010.6217v3",
+      "locator": "Lemma 2, printed p.9; Section 6 proof, pp.12--15"
+    },
+    {
+      "key": "salberger2023",
+      "url": "https://arxiv.org/pdf/2311.05561v1",
+      "locator": "Lemma 2, PDF p.2"
+    },
+    {
+      "key": "pila1995",
+      "url": "https://www.numdam.org/item/AST_1995__228__183_0.pdf",
+      "locator": "Theorem A, published p.183; uniform coefficient statement p.184"
+    }
+  ]
+}

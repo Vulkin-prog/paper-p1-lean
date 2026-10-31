@@ -1,0 +1,83 @@
+P1 V1.5 — Relecture croisée de T11.1 et de son interface avec T1.7
+Date : 31 octobre 2026
+Agent : p15_arithmetic
+Mode : lecture seule des manuscrits ; seul le présent rapport est créé.
+
+VERDICT
+
+Aucun défaut bloquant identifié dans la nouvelle articulation du comptage dense. Les ajouts rendent vérifiable le passage du rang aux composantes de CHAQUE cible, puis le seuil L/2. Le choix d'une borne de hauteur par composante avant le nombre d'équations géométriques est cohérent. Il ne crée pas de dépendance circulaire entre hauteur et nombre de composantes.
+
+Fichiers et interfaces relus :
+— companion_sections/exact_transfer.tex, preuve p14:comp:transfer-dense-targets ;
+— main_sections/exact_transfer.tex, énoncé p13:transfer:dense-targets ;
+— main_sections/fixed_moments.tex, p1:fixed:recovery et sa preuve ;
+— companion_sections/fixed_moments.tex, p14:comp:fixed-targets, pour comparaison du mécanisme de supports et coefficients ;
+— companion_sections/arithmetic_appendix.tex, p1:arith:geometric, particulièrement étapes 3–7, et p1:arith:pell / p1:arith:runge.
+
+1. PROJECTIONS, LABELS ET COMPOSANTES
+
+L'hypothèse S_y cap W = S_z cap W = 0 rend injectives les deux projections du noyau R vers les cibles. Elle donne d <= min(dim S_y,dim S_z) <= L. Après restriction à R', les labels des coordonnées de chaque cible engendrent bien (R')*. Les sections linéaires dans les sélections formelles préservent cette assertion, y compris lorsque la fenêtre possède un défaut local.
+
+Après appariement des labels égaux, une composante binaire porte un seul label non nul. Elle peut rencontrer plusieurs coordonnées d'une cible sans augmenter la dimension engendrée. Chaque cible doit donc rencontrer au moins d' composantes. La mention des coordonnées actives isolées est nécessaire et présente : sans elle, cette conclusion ne suivrait pas.
+
+2. CIRCUITS ET HAUTEUR PAR COMPOSANTE
+
+Pour ell > H, une ligne première a au plus une occurrence dans chaque bloc physique. Après retrait des paires égales, un circuit minimal de labels distincts a au moins trois sommets ; il utilise donc au moins trois blocs. Deux cibles seulement étant libres, ce circuit contient une occurrence source. Le produit des premiers classés par support physique divise la valeur source désignée.
+
+La dernière assertion de p1:fixed:recovery borne le nombre de supports incidents à une coordonnée : les autres labels d'un circuit minimal constituent une représentation linéairement indépendante de son label. Avec au plus s+2 blocs, la taille de cette représentation est fixée. La multiplicité K borne ensuite les choix de coordonnées réalisant les labels. Ainsi le nombre D_rec de supports incidents est une constante fixée par s et les paramètres de récupération.
+
+Une composante comporte au plus K coordonnées. Sa partie coefficient peut donc être majorée par le produit :
+— d'un nombre au plus K de valeurs sources déjà présentes dans la composante ;
+— des produits premiers d'au plus K D_rec supports incidents ;
+— d'une partie provenant des premiers <= H.
+Chaque produit premier incident est un diviseur d'une valeur source O(N). La dernière partie a hauteur au plus exp(O(H)) = N^{O(1)}, avec largeur H/B fixée. On peut donc choisir un exposant A0 fixe dépendant de K,D_rec,H/B, sans dépendance au nombre k d'équations ensuite retenues.
+
+Pour k fixé, les positions et supports coûtent B^{O(k)} ; les diviseurs de valeurs sources et les parités des petits premiers coûtent N^{o(1)}. Un produit de k tels coûts reste N^{o(1)}. L'exposant fixe des hauteurs de chaque équation ne doit pas être confondu avec le nombre de choix de k équations. Cette distinction est explicitement faite dans le nouveau texte.
+
+L'absence d'énumération de R' ou du motif global de suppression est légitime : tout couple compté produit un certificat de taille fixée, et l'union sur ces certificats est majorée par l'énumération des positions, supports et coefficients. On peut surcompter les certificats sans énumérer les sous-espaces qui les ont produits.
+
+3. ALIGNEMENTS FAIBLES
+
+Deux unités exactes donnent une pente rationnelle réduite de hauteur O(B). Deux alignements distincts de cette hauteur dans une même paire forceraient les centres à être O(B^3), hors du régime critique. Le nombre u d'unités du seul alignement possible fournit u-1 sélections paires formelles. Le noyau local de dimension au plus un autorise la perte supplémentaire d'une dimension ; ainsi u-2 <= dim(S_y cap S_z). La preuve utilise donc correctement le défaut local maximal, sans supposer les fenêtres régulières.
+
+Supprimer de la COLLECTION SÉLECTIONNABLE les composantes qui rencontrent les deux extrémités de toutes les unités sauf une coûte au plus 2(u-1) <= 2 theta L + 2 composantes. Cette opération ne restreint pas R' : il n'y a pas de seconde perte de rang cachée. Le minorant m_t >= d - (xi+2 theta)L - 2 est valable séparément pour chaque cible.
+
+Avec xi <= min(eta,delta)/4 et theta <= min(eta,delta)/8, on obtient xi+2 theta <= min(eta,delta)/2. Pour L grand, cela donne m_t >= eta L/3 dans la première strate, et m_t > (1/2+delta/3)L dans la seconde. Les marges annoncées sont donc suffisantes.
+
+4. INTERFACE EXACTE AVEC T1.7
+
+Point de lecture important : l'emploi de T1.7 est ici un emploi de SA PREUVE pour des systèmes dont les petites courbes ont été éliminées. On n'affirme pas que S_y et S_z sont nécessairement en somme directe dans tout le cas faiblement aligné. Le nouveau texte dit bien «the proof of Lemma ...» dans la première strate.
+
+Les systèmes sélectionnés ont les propriétés requises par cette preuve :
+— un nombre fixé d'équations ;
+— des produits de facteurs linéaires distincts dans chaque cible ;
+— des listes de racines disjointes entre équations, puisque les composantes ont des sommets disjoints ;
+— des degrés bornés par K et des coefficients fixes pendant le comptage, de hauteur <= N^{A0} ;
+— pour un type mixte, des listes non vides dans les deux cibles.
+Les valeurs sources et les produits premiers incidents sont absorbés dans les coefficients après leur énumération. Leur absence de friabilité ne gêne pas le résultat par système : T1.7 autorise explicitement des coefficients arbitraires de hauteur polynomiale. L'énumération des coefficients est assurée ici par les diviseurs des sources, au lieu d'être déduite de la seule friabilité.
+
+Dans la première borne géométrique, une courbe de degré D dans le plongement de Veronese impose au moins deux correspondances exactes entre les offsets sélectionnés. Ces deux unités ont été exclues. Cela remplace exactement l'autre mécanisme de l'étape 3 de T1.7, qui écarte ces courbes à partir d'une hypothèse de somme directe. Après cette exclusion, le relèvement et le comptage des courbes de degré au moins 2D donnent N^{1/2+epsilon'}.
+
+Pour un type (a,1), les étapes 5–6 de T1.7 écartent toute courbe de petit degré : les graphes rationnels non linéaires ne portent pas de points dyadiques à grande échelle, et le cas linéaire a=1 imposerait à nouveau plusieurs unités sélectionnées. La suppression précédente l'exclut aussi. Si la cible singleton est la première plutôt que la seconde, on échange X et Y. Les types a sont en nombre fini, borné par K.
+
+L'injectivité des sélections paires sur les ensembles ACTUELLEMENT SÉLECTIONNÉS découle de Runge, car leur cardinalité kK est fixe avant N. L'existence possible d'une relation locale dans toute la fenêtre ne contredit pas cette injection sur un ensemble fixé de taille bornée. Cette propriété n'est pas utilisée pour prétendre que les deux images sont en somme directe dans le cas faible : l'exclusion géométrique des unités joue ce rôle.
+
+5. DEUX STRATES ET SYSTÈMES UNIVARIÉS
+
+Dans la première strate, soit un type mixte fournit assez d'équations, soit tous les types mixtes sont en nombre borné. Comme chaque cible rencontre une proportion positive de L composantes, elle possède alors assez de composantes évitant l'autre cible. Les coefficients de leurs équations sont déjà fixés et les offsets sont distincts. La partie univariée de T1.7 s'applique, puis les deux comptes sont multipliés après partage de la marge.
+
+Dans la seconde strate, le budget B=L+1 donne exactement
+B >= n_{1,t}+2(m_t-n_{1,t}), donc n_{1,t} >= 2m_t-B > 2delta L/3 - 1.
+S'il y a assez de composantes mixtes singleton dans une cible, la géométrie (a,1) fournit N^{epsilon'} couples. Sinon, deux composantes singleton évitant l'autre cible sont disponibles pour chacune des cibles. Elles donnent deux facteurs linéaires distincts. Leur différence d'offset est non nulle ; p1:arith:pell compte les deux variables quadratiques uniformément avec les coefficients polynomiaux déjà fixés.
+
+L'ordre des choix est sans boucle : s,C,eta et la marge finale ; delta ; xi,theta et récupération ; K et A0 par composante ; paramètres géométriques D ou E ; nombre k d'équations ; marges internes ; enfin N. Choisir davantage d'équations après A0 augmente le nombre fixé de coordonnées et de diviseurs énumérés, mais n'augmente pas A0 pour chacune des équations.
+
+6. POIDS ET CONSÉQUENCE PRIMITIVE
+
+La première strate coûte N^{1/2+epsilon'} N^{-2+1/2+delta} = N^{-1+delta+epsilon'}. La seconde coûte N^{epsilon'} N^{-2+1} = N^{-1+epsilon'}, puisque d <= L. On peut choisir delta+epsilon' < epsilon. Ce calcul emploie bien les marginales exactes p_y,p_z = O(N^{-1}).
+
+Pour une famille primitive, chaque cible est séparément directe de la somme des r-2 sources, et les deux cibles sont directes entre elles. Le cas faible autorisé est donc satisfait. Le produit des marginales sources et le nombre prescrit de configurations donnent la puissance N^{-(r-1)+a+epsilon}, après répartition des marges. Aucune reconstruction de loi n'est utilisée dans cet argument.
+
+CONCLUSION DE PÉRIMÈTRE
+
+Aucune modification supplémentaire n'est recommandée comme nécessaire à cette interface. L'amélioration éditoriale essentielle — hauteur par composante fixée avant k, usage explicite de la preuve de T1.7 après suppression des petites courbes, composantes comptées séparément dans les deux cibles — est effectivement présente. Le présent contrôle est ciblé ; il ne prétend pas certifier de nouveau tous les théorèmes externes ni toute la construction de T1.7.

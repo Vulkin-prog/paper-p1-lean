@@ -1,0 +1,37 @@
+P1 V1.5 — Contrôle visuel du compagnon, pages 1–48
+Date : 31 octobre 2026
+Agent : p15_arithmetic
+Mode : inspection PNG en lecture seule ; aucune compilation ni édition du manuscrit.
+
+MATÉRIEL INSPECTÉ
+
+Quatre planches ont été ouvertes et examinées dans leur intégralité :
+— tmp/p15_visual/companion_contact_001_012.png ;
+— tmp/p15_visual/companion_contact_013_024.png ;
+— tmp/p15_visual/companion_contact_025_036.png ;
+— tmp/p15_visual/companion_contact_037_048.png.
+
+Les pages suivantes ont ensuite été ouvertes individuellement, à la taille originale des PNG :
+3, 4, 6, 10, 11, 46, 47, 48.
+
+RÉSULTAT
+
+Aucun défaut bloquant repéré : aucun texte ou symbole visiblement rogné, aucun débordement dans les marges, aucune superposition, aucune ligne de tableau coupée, aucune formule illisible, aucune page anormalement blanche.
+
+INSPECTION CIBLÉE
+
+Pages 3–4, guide : paragraphes, renvois, définitions et tableau de périmètre sont lisibles. Le tableau des sections finales est entier et ses colonnes restent nettement distinctes. Le démarrage de T1 sur la même page est clairement séparé du guide. La continuation du paragraphe entre les pages 3 et 4 est ordinaire.
+
+Page 6, tableau T1.4 : les trois lignes de données et les quatre colonnes tiennent entièrement sur la page. Les termes mathématiques des cellules restent dans leur colonne ; les règles horizontales ne rencontrent aucun texte. L'énoncé, la borne déterminantielle et son numéro restent lisibles. La petite taille du texte du tableau reste adaptée à une lecture à l'échelle de la page.
+
+Pages 10–11, tableau T1.7 : l'introduction et les définitions de m et q terminent la page 10 ; le tableau complet commence la page 11. Il n'est pas coupé entre deux pages et aucune ligne de données n'est séparée de ses cellules. Le blanc au bas de la page 10 correspond à ce maintien du tableau entier sur la page suivante ; ce n'est pas une page anormalement vide. Les degrés, hauteurs et expressions de dimension ambiante sont lisibles. Le paragraphe d'ordre des choix puis les étapes de preuve suivent sans collision.
+
+Pages 46–48, T11 : titres de section et de paragraphes, bornes de récupération, pertes de composantes, comptages et formules pondérées restent dans les marges. L'inégalité n_{1,t} >= 2m_t-B et son terme 2delta L/3-1 sont lisibles p.48. Le premier paragraphe de la première strate continue normalement de la page 47 à la page 48 ; le titre est accompagné de texte sur sa page. La fin de la preuve dense et le début du lemme suivant sont clairement séparés.
+
+ENSEMBLE DES PLANCHES
+
+Les pages 1–48 présentent une densité régulière pour un compagnon mathématique. Les espaces plus larges de la page de titre et de la table des matières sont intentionnels. Les zones de texte et de formules des pages examinées uniquement sur planches ne présentent pas d'anomalie visuelle apparente ; cette vue ne remplace toutefois pas une lecture typographique au niveau de chaque caractère sur ces pages.
+
+ACTION REQUISE
+
+Aucune correction demandée sur le périmètre inspecté.

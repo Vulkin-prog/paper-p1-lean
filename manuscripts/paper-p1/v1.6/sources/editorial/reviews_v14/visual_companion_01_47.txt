@@ -1,0 +1,47 @@
+P1 V1.4 — Visual and interface review of technical companion, pages 1–47
+31 October 2026
+
+Reviewed rendered contact sheets:
+sheet_001_009.jpg, sheet_010_018.jpg, sheet_019_027.jpg,
+sheet_028_036.jpg, sheet_037_045.jpg, and the pages46–47 portion of
+sheet_046_054.jpg, under tmp/p14_pdf_qa/companion/.
+
+Full-page renders inspected:
+1,2,3,4,10,14,16,24,25,29,37,38,39,40,41,42,45,46,47.
+
+Result
+No visual defect requiring correction was found in the reviewed range.
+Text, displayed equations, theorem labels, proof headings, citations and
+cross-document reference numbers are readable. No clipped T-number labels,
+overlapping text, cropped equations, black glyph boxes or unresolved
+reference placeholders were observed. Header and footer positions remain
+consistent. Title, authorship, assistance, version1.4 and date are visible.
+The one-page contents list is legible with clear T1–T23 section numbering.
+
+Specific interfaces
+- Pages3–4 explain the single-work/two-document arrangement and distinguish
+  effective nullity from raw arithmetic nullity and the section-local alias.
+- Page24 introduces the independent fixed-moment technical branch and its
+  main-article interfaces; the long T4 heading fits the text width.
+- Page25's 'Proof of Proposition6.2' matches p1:fixed:targets in main.aux.
+- Page29's 'Proof of Theorem6.4' matches p1:fixed:moments and explicitly
+  proves the fixed-moment estimate by arithmetic classification, without
+  invoking a law approximation.
+- Pages37–42 provide the short-basis/common-curve technical construction.
+  'Proof of Theorem13.1' and 'Proof of Theorem13.2' match the main short-basis
+  and common-curve labels; the subsequent aligned-rank proof is labeled as
+  a proof of the main proposition, not as a duplicate statement.
+- Pages45–46's 'Proof of Lemma15.2' and 'Proof of Lemma15.4' match the main
+  dense-target and small-kernel statements. Their equations and rank factors
+  are clearly set; the entry paragraph states that no finite-transfer or law
+  approximation is used.
+- Page47 clearly declares the regular-set convention and the older retained
+  class, including its separate 4L/3 boundary-nullity range. It is not confused
+  with the exact-marginal 2L boundary in the main reconstruction.
+- Theorem3.3 and Corollary3.4 references in the arithmetic proofs match the
+  complete pair profile and the good-edge input in the main article.
+
+Limits
+This is a visual and cross-reference review of the first47 companion pages.
+It does not certify the inherited asymptotic mathematics or replace the
+source conservation and dependency checks. No TeX changes were made.

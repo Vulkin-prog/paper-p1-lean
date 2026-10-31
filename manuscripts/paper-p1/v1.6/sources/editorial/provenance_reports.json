@@ -1,0 +1,171 @@
+{
+  "date": "2026-10-31",
+  "report_count": 18,
+  "report_pages": 376,
+  "baseline": "P1_V1_2_Sharp_Poisson_2026-10-30_EN.pdf",
+  "baseline_pdf_sha256": "2b4f9929e76db3a6b174d735a20a8854928591d4f219f0a176e09a9d0609cdb2",
+  "reports": [
+    {
+      "code": "R01",
+      "filename": "Poisson_reste_corrige_6_sur_7_2026-10-30_FR.pdf",
+      "pages": 19,
+      "sha256": "c38b0bb97596146ac8dc37c281639497dd8e1569465d0f01a6de4c791346fabd",
+      "library_file_id": "libfile_57dfcc896ef081918ed9ad8e73fe7d06",
+      "source_archive": "Poisson_reste_corrige_6_sur_7_2026-10-30_sources.zip",
+      "use_in_v13": "§17 synthesis; intermediate exponent superseded"
+    },
+    {
+      "code": "R02",
+      "filename": "Poisson_cumulant_3_reste_8_sur_9_2026-10-30_FR.pdf",
+      "pages": 23,
+      "sha256": "cce3a60da341206ff5f82eba9a895f98856d52eb4303d642342e47eae6e5c57c",
+      "library_file_id": "libfile_fd599f064df48191b6e7121b0fac2282",
+      "source_archive": "Poisson_cumulant_3_reste_8_sur_9_2026-10-30_sources.zip",
+      "use_in_v13": "§§16–17 synthesis; intermediate exponent superseded"
+    },
+    {
+      "code": "R03",
+      "filename": "Poisson_reste_quadratique_exposant_un_2026-10-30_FR.pdf",
+      "pages": 16,
+      "sha256": "279ff0303b31f6ce3b0da5de72115fc7dc2d468f2141c061576843b29d840e90",
+      "library_file_id": "libfile_9ea844fb82b48191b781f2cd3ca43f86",
+      "source_archive": "Poisson_reste_quadratique_exposant_un_2026-10-30_sources.zip",
+      "use_in_v13": "§17 exact quadratic reconstruction"
+    },
+    {
+      "code": "R04",
+      "filename": "Poisson_minoration_relations_primitives_longues_2026-10-30_FR.pdf",
+      "pages": 23,
+      "sha256": "8aaf3ccb39ad52e793bf9497f9ef96bbab6e9fbec80e83d6c019b397226a1965",
+      "library_file_id": "libfile_8a76282707448191b2c6195d91229b46",
+      "source_archive": "Poisson_minoration_relations_primitives_longues_2026-10-30_sources.zip",
+      "use_in_v13": "§11 short selections; §19 exact-mean distinction"
+    },
+    {
+      "code": "R05",
+      "filename": "Poisson_obstruction_arithmetique_reste_2026-10-30_FR.pdf",
+      "pages": 13,
+      "sha256": "a09321281ee410312fedca9c6bb280a897abf056d2fc083e88f3721c02f97db4",
+      "library_file_id": "libfile_6e35771c33d481918b320fe80dc5dabb",
+      "source_archive": "Poisson_obstruction_arithmetique_reste_2026-10-30_sources.zip",
+      "use_in_v13": "§§13,17 pair deficits and arithmetic obstruction"
+    },
+    {
+      "code": "R06",
+      "filename": "Poisson_extensions_paires_compensations_2026-10-30_FR.pdf",
+      "pages": 19,
+      "sha256": "6cafe500a04c3f67ac3b5102f372775a5fb44fb3114ebfc88ea8e95a4e2ed6a9",
+      "library_file_id": "libfile_59a3aac61c90819199a621ac4d7cd8d8",
+      "source_archive": "Poisson_extensions_paires_compensations_2026-10-30_sources.zip",
+      "use_in_v13": "§§13,17 pair extension and compensation"
+    },
+    {
+      "code": "R07",
+      "filename": "Poisson_reduction_incompatibles_noyaux_produits_2026-10-30_FR.pdf",
+      "pages": 16,
+      "sha256": "9698e5d4edf329c896de9516e4fc2d715345675169e410af970cade14ffb3512",
+      "library_file_id": "libfile_fae379eb841c81918332c94826270ce0",
+      "source_archive": "Poisson_reduction_incompatibles_noyaux_produits_2026-10-30_sources.zip",
+      "use_in_v13": "§§13,17–18 incompatible centered coefficients"
+    },
+    {
+      "code": "R08",
+      "filename": "Poisson_cibles_conditionnelles_transfert_fini_2026-10-30_FR.pdf",
+      "pages": 26,
+      "sha256": "dd3ace2282d811868c9a49307f45e6e052b7859b68353895ffff67da985403e2",
+      "library_file_id": "libfile_67a918aac0048191bf3dc73e60008a20",
+      "source_archive": "Poisson_cibles_conditionnelles_transfert_fini_2026-10-30_sources.zip",
+      "use_in_v13": "§17 conditional dense targets, finite transfer, uniform tail"
+    },
+    {
+      "code": "R09",
+      "filename": "Poisson_minoration_quatre_tiers_reduction_positive_2026-10-30_FR.pdf",
+      "pages": 24,
+      "sha256": "241d3dfea25263c87f3202951ad7250f9e8aaac93ffa9c772b4964ae48bdaefb",
+      "library_file_id": "libfile_7e6a9217df188191bb7b1fde3e033c70",
+      "source_archive": "Poisson_minoration_quatre_tiers_reduction_positive_2026-10-30_sources.zip",
+      "use_in_v13": "§§13,18 positive reduction and quartic lower bound"
+    },
+    {
+      "code": "R10",
+      "filename": "Poisson_triples_rangs_supports_2026-10-30_FR.pdf",
+      "pages": 27,
+      "sha256": "95339883c1212bbf371a4dc1d94838c9d2617154a707ffdfd957b6328b66f500",
+      "library_file_id": "libfile_c62aff44d71081919a45afc950273ad2",
+      "source_archive": "Poisson_triples_rangs_supports_2026-10-30_sources.zip",
+      "use_in_v13": "§16 rational triples,19/30 overlap,10:12:15 witness"
+    },
+    {
+      "code": "R11",
+      "filename": "Poisson_triples_13_10_noyaux_equilibres_2026-10-30_FR.pdf",
+      "pages": 22,
+      "sha256": "131797e40a29dd61f183b192946ec300f2b4356648c4c48b5ae3d953a11d1ee8",
+      "library_file_id": "libfile_c23db740881c8191902307bcfaeb80c5",
+      "source_archive": "Poisson_triples_13_10_noyaux_equilibres_2026-10-30_sources.zip",
+      "use_in_v13": "§§11–12 precursor conditional counts; final R12 bound used"
+    },
+    {
+      "code": "R12",
+      "filename": "Poisson_cibles_demi_exposant_2026-10-30_FR.pdf",
+      "pages": 20,
+      "sha256": "75a9178ce591e82d5934fd66ddff192d5cd883762ffa70bc9e3f2d6f91995d3a",
+      "library_file_id": "libfile_6046ed7b0548819187a1fc5f80ec6603",
+      "source_archive": "Poisson_cibles_demi_exposant_2026-10-30_sources.zip",
+      "use_in_v13": "§12 conditional half exponent; §§13,17–18 simplifications"
+    },
+    {
+      "code": "R13",
+      "filename": "Poisson_confinement_seuil_cinq_tiers_2026-10-30_FR.pdf",
+      "pages": 17,
+      "sha256": "047d4b4847dd642aaa3c3c581d1b3ea1633033524a0e90e40a45f1a2f2a2ca50",
+      "library_file_id": "libfile_9930a6162d048191be0eecf19ed47b5b",
+      "source_archive": "Poisson_confinement_seuil_cinq_tiers_2026-10-30_sources.zip",
+      "use_in_v13": "§14 confinement and strong profiles; §16 triple partition"
+    },
+    {
+      "code": "R14",
+      "filename": "Poisson_six_consecutifs_cumulant_2026-10-30_FR.pdf",
+      "pages": 18,
+      "sha256": "7830eecb0f4d9561b65a9f4d99a7872eff5eb67c53307dfa527cfca99b33572f",
+      "library_file_id": "libfile_c276166682848191822fc5cbd38405d8",
+      "source_archive": "Poisson_six_consecutifs_cumulant_2026-10-30_sources.zip",
+      "use_in_v13": "§15 precursor rigidity; absorbed into final R18 route"
+    },
+    {
+      "code": "R15",
+      "filename": "Poisson_motifs_ternaires_obstruction_abc_2026-10-30_FR.pdf",
+      "pages": 23,
+      "sha256": "71e78cdfc95230cb212301fdce09aa2200af409704afb905e7bf2397d0ac0f58",
+      "library_file_id": "libfile_78c82a2a95048191a2a61c8fba7b792b",
+      "source_archive": "Poisson_motifs_ternaires_obstruction_abc_2026-10-30_sources.zip",
+      "use_in_v13": "§15 obstruction analysis; no abc hypothesis in final theorem"
+    },
+    {
+      "code": "R16",
+      "filename": "Poisson_rigidite_Runge_familles_Pell_2026-10-30_FR.pdf",
+      "pages": 26,
+      "sha256": "ac41fa80b135ba5030abff46452aee4402519616432119eb746a8a33eb2dd99f",
+      "library_file_id": "libfile_6b12ef66cb0c8191a19edcefa99bda1d",
+      "source_archive": "Poisson_rigidite_Runge_familles_Pell_2026-10-30_sources.zip",
+      "use_in_v13": "§15 short relations and rigidity groundwork"
+    },
+    {
+      "code": "R17",
+      "filename": "Poisson_courbes_algebriques_hauteur_obstructions_2026-10-30_FR.pdf",
+      "pages": 22,
+      "sha256": "d2a472d55f377c786a23f45f43da28f679b868b023138a2ad4b9a7170a6e5d9c",
+      "library_file_id": "libfile_28e1d5ae5210819197d8043f240a306f",
+      "source_archive": "Poisson_courbes_algebriques_hauteur_obstructions_2026-10-30_sources.zip",
+      "use_in_v13": "§15 curve/height groundwork; growing-degree proof from R18 used"
+    },
+    {
+      "code": "R18",
+      "filename": "Poisson_exposant_optimal_quatre_tiers_2026-10-31_FR.pdf",
+      "pages": 22,
+      "sha256": "0e7fc8e22eeff251d88758c3a215d9d8ee993ad12ea04fadb7dd7cc9e6df07be",
+      "library_file_id": "libfile_a5a6bcc162088191a32d10901125f9dc",
+      "source_archive": "Poisson_exposant_optimal_quatre_tiers_2026-10-31_sources.zip",
+      "use_in_v13": "§§15–19 unconditional rigidity, optimal κ3 and quadratic exponent; finite certificate"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+P1 V1.5 -- 31 October 2026
+Baseline: P1 V1.4 main article and technical companion, same date.
+
+This edition responds to the two supplied V1.4 reviews. It preserves all
+numbered statements and their scope; it does not claim a new exponent.
+
+R1: Expanded the conditional dense-pair argument in main section 15 and
+companion T11, with separate injective projections and component counts,
+source-based coefficient enumeration, weak-alignment removal, singleton
+counts in each target, and the two weighted rank strata.
+R2: Added the exact power-margin ledger and separated output accuracy
+from internal choices in sections 1.5 and 14--17. The four uniform-tail
+powers and the contributions with zero strict margin are explicit.
+R3: Added determinant/geometric parameter tables in T1, distinguishing
+fixed dimensions/degrees and variable polynomial coefficient heights.
+R4: Replaced the general uniformity table by an explicit dependency map.
+The independent fixed-moment and quartic paths are identified.
+R5: Preserved the reference-specific and fixed-height qualifications.
+R6: Classified T19--T23 in the companion guide and added check_all.py,
+with exact finite diagnostic ranges and traceable execution records.
+
+Bibliography: Six targeted primary references added as items 26--31;
+original items 1--25 unchanged. Griesmer, Zeilberger and the uniform
+quadratic counts receive direct attribution. Classical probability
+comparisons are contextualized without importing inapplicable bounds.
+
+Conservation: The V1.4 baseline contains 545 labels and 167 numbered
+results. The audit checks labels, document/number stability, statement
+counts and PDF link destinations. V1.3--V1.4 historical maps remain.
+
+The internal review records and French response note explain the changes
+and their limits. Finite computation is not an asymptotic proof verifier.

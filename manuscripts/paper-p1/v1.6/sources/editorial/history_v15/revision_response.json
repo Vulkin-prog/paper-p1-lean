@@ -1,0 +1,110 @@
+{
+  "edition": "P1 V1.5",
+  "date": "2026-10-31",
+  "reviews": {
+    "R1": {
+      "status": "integrated",
+      "files": [
+        "main_sections/exact_transfer.tex",
+        "companion_sections/exact_transfer.tex"
+      ],
+      "points": [
+        "separate injective projections",
+        "per-target component counts",
+        "source coefficient enumeration",
+        "weak alignment removal",
+        "half-rank strata"
+      ]
+    },
+    "R2": {
+      "status": "integrated",
+      "files": [
+        "main_sections/introduction.tex",
+        "main_sections/third_cumulant.tex",
+        "main_sections/exact_transfer.tex",
+        "main_sections/quartic_lower.tex",
+        "main_sections/optimal_closure.tex"
+      ],
+      "points": [
+        "exact gaps",
+        "completed-estimate losses",
+        "fixed connected orders versus uniform tails",
+        "Charlier order independent of 256"
+      ]
+    },
+    "R3": {
+      "status": "integrated",
+      "files": [
+        "companion_sections/arithmetic_appendix.tex"
+      ],
+      "points": [
+        "dimensions and degrees",
+        "point and coefficient heights",
+        "relative normalization",
+        "order of fixed choices",
+        "scope of Reuss statement"
+      ]
+    },
+    "R4": {
+      "status": "integrated",
+      "files": [
+        "main_sections/introduction.tex",
+        "companion_sections/guide.tex"
+      ],
+      "points": [
+        "independent moments",
+        "A3 before reconstruction",
+        "quartic inputs distinct from reconstruction conclusion"
+      ]
+    },
+    "R5": {
+      "status": "preserved and checked",
+      "files": [
+        "main_sections/abstract.tex",
+        "main_sections/introduction.tex",
+        "main_sections/discussion.tex"
+      ],
+      "points": [
+        "quadratic reference",
+        "epsilon power",
+        "no general kappa3 constant",
+        "fixed h",
+        "unsigned positions",
+        "no exact-Hermite lower bound"
+      ]
+    },
+    "R6": {
+      "status": "integrated",
+      "files": [
+        "companion_sections/guide.tex",
+        "README.txt",
+        "check_all.py"
+      ],
+      "points": [
+        "T19 positional proof required for 20.1",
+        "other final supplements distinguished",
+        "one verification command",
+        "finite ranges explicit"
+      ]
+    }
+  },
+  "bibliography_additions": [
+    "griesmer1960",
+    "zeilberger1997",
+    "cilleruelogaraev2011",
+    "tao2026anatomy",
+    "cekanaviciusvellaisamy2015",
+    "chhaibietal2020"
+  ],
+  "inputs": [
+    {
+      "filename": "Audit_priorite_P1_V1_4_2026-10-31_FR.pdf",
+      "sha256": "7b9f3fd935c9640cd8d3ee9dac9ce59ef202c2a713f36cd6f22b0accd7857491"
+    },
+    {
+      "filename": "Contre_review_P1_V1_4_2026-10-31_FR.pdf",
+      "sha256": "6f32ce0e488e069b167106e9c8cf5566854ecef19c78ca242719947f61b1ffb4"
+    }
+  ],
+  "scope": "Targeted revision and checks; no claim of exhaustive independent mathematical certification."
+}

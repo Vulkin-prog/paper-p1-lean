@@ -1,0 +1,98 @@
+P1 V1.4: arithmetic split review
+Date: 31 October 2026
+Scope: editorial reorganization of six V1.3 sections; no new mathematical claim.
+
+OWNED FILES
+main_sections/ and companion_sections/:
+short_supports.tex, half_counts.tex, triple_activities.tex,
+confinement.tex, pair_rigidity.tex, third_cumulant.tex.
+
+MAIN INCLUDE ORDER
+1. short_supports
+2. half_counts
+3. triple_activities
+4. confinement
+5. pair_rigidity
+6. third_cumulant
+The exact setup, effective event spaces, relative nullity, and fixed-source
+tools must be available before these sections. The reconstruction then uses
+the absolute third-order activity, not the third-cumulant lower bound.
+
+COMPANION INCLUDE ORDER
+The same order is valid once the companion's foundational arithmetic and
+fixed-source tools have been introduced. Cross-references to the main
+interfaces are explicit and resolve via the common reference mechanism.
+
+ALLOCATION
+Short supports: main has the growing-degree moment statement and the full
+conditional character/Hölder argument; companion has the quadratic and split
+kernel lemmas and complete moment enumeration.
+Half-counts: main has the precise uniform theorem, an explanation of the
+inductive mechanism, and full connected/primitive and pair consequences;
+companion has all small-kernel, smooth-modulus, certificate, and iteration
+proofs. The definition of K_H is explicitly retained in main because the
+confinement section uses it.
+Triple activities: main keeps the independent-target deficit statement and
+the full signed identities for incompatible triples and positive activity;
+companion has the finite pair partition and proof of the deficit.
+Confinement: main states the near-primitive and strong nonaligned triple
+interfaces, together with the determinant/group mechanism. Companion has
+the confinement lemma, dense primitive and pair results, and full proofs
+of the two interfaces.
+Pair rigidity: main retains the exact square-class definitions, short-basis
+theorem, common-curve theorem, full integer-grid argument, degree-uniform
+BCN statement, full growing-degree contradiction, aligned bound with the
+exact-contact explanation, and full triple-nullity/probability consequence.
+Companion has the local estimates, short-basis extraction, factor heights,
+biquadratic auxiliary construction, common-curve resultants, and full
+aligned-rank proof.
+Third cumulant: main retains the 19/30 geometry and proof, the aligned-family
+statement and strong-pair consequence, the complete compatible 10:12:15
+construction, and the full four-case proof of the 41/30 theorem. The long
+normalization and residual-kernel proof for all triples above finitely many
+aligned channels is in the companion.
+
+CONSERVATION CHECKS
+All 82 original labels in these six sections occur exactly once across the
+two documents. There are 15 fresh navigation labels.
+All 37 original proof environments are preserved verbatim in one of the two
+documents, after correcting the two raw carriage-return typos described
+below. See arithmetic_split_label_audit.json and
+arithmetic_proof_preservation.json. No theorem, lemma, corollary, or proof
+has been discarded. Added paragraphs are explanatory proof maps only.
+
+MATHEMATICAL SCOPE RETAINED
+- r, s and logarithmic block widths fixed before N for the half-count.
+- Source blocks may overlap or be dependent, and new projections need not
+  remain nonzero modulo the old space.
+- The short-selection bound is uniform to c log log N, not only at fixed
+  external degree.
+- The common-curve constant is independent of the number of basis vectors.
+- q_0^2 log B = o(log N), a < 1/2, and the degree-uniform BCN estimate are
+  explicit in main; the sufficient rank constant is not claimed sharp.
+- Exact compatible separation is L, including the contact distance L.
+- The rational coincidence inequality is separate from the residual-kernel
+  estimate. The true-window 10:12:15 population includes an explicit affine
+  compatibility check and a positive centered coefficient.
+- 41/30 is an optimal power for the factorial cumulant, with no claim of an
+  asymptotic constant or logarithmic factor for the full cumulant.
+- The 1/30 gap below the 4/3 remainder scale does not assert a higher-order
+  approximation theorem.
+
+TYPOGRAPHICAL REPAIR
+The inherited pair_rigidity.tex contained two literal carriage returns in
+place of the intended LaTeX command \rm: in 'odd' and 'nonaligned' predicates.
+The V1.4 files restore \rm. This changes no mathematical assertion.
+
+ROOT INTEGRATION NOTES
+All statements/proofs use original labels, never hardcoded section numbers.
+Main references labelled companion proof subsections; companion proofs
+refer to the corresponding main statements. The shared notation guide
+should define B=L+1, critical band, J_x, admissibility, p_x, S_x, c(T), q(T),
+A_2 and A_3. Foundational arithmetic proof labels referenced include
+p1:arith:pell, p1:arith:runge, p1:arith:alignedrank, p1:arith:dense,
+p1:arith:asymmetric, fixed-channel estimates, p1:fixed:recovery,
+p1:fixed:targets, p1:fixed:propagation, and local rigidity.
+
+This review verifies conservation and dependency interfaces for the split.
+It is not an independent formal verification of the inherited mathematics.

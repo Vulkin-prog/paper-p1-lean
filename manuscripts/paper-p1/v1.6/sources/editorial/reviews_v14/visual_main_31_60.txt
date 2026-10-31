@@ -1,0 +1,55 @@
+P1 V1.4 visual and scope review: main article pages 31--60
+31 October 2026
+
+Materials
+---------
+Rendered main/page-01.png ... page-60.png and contact sheets in
+/workspace/scratch/e1eb5ae871e5/tmp/p14_pdf_qa/main.
+Reviewed all pages31--60 at contact-sheet scale: sheet_028_036 (31--36),
+sheet_037_045, sheet_046_054, sheet_055_060.
+Reviewed full-resolution pages33,35,37,45,47,49,52,54,55,57,58,59,60.
+
+Visual result
+-------------
+No clipping, equation overlap, footer/header collision, or unresolved reference
+was found. Long equations and the channel table fit the text block. Section and
+subsection transitions are orderly. Cross-document references show the T prefix
+and are readable. The final bibliography is legible with complete link wrapping.
+The field definition is correctly numbered20.1 and its gathered layout fits.
+
+Scope checks
+------------
+- The third-cumulant theorem on p33 has the positive lower bound and upper
+  N^{-41/30+epsilon}, with no unsupported full equivalent or logarithmic factor.
+  The10:12:15 compatible witness remains explicit on p35.
+- The5/3 Bernoulli-to-Poisson conversion on p37 applies to the covariance-corrected
+  B2, and the text immediately explains that it retains every covariance.
+- The uniform tail on p45 distinguishes the growing connected range from the
+  all-cardinality primitive sum; the finite threshold256 is visible.
+- The reconstruction on p47 and the Charlier lower bound on p49 identify the
+  exact quadratic4/3 power. The lower proof cites independent fixed moments.
+- The explicit-channel theorem on p52 fixes h before N. The p54 conclusion
+  excludes an unproved growing-height extension or generic power-one barrier.
+- The Hermite statement on p55 retains only the exact-reference upper bound;
+  its explicit fixed-height comparison retains the proved equivalent. Its
+  quartic contribution is stated, preventing transfer of the quadratic lower.
+- The positional field on pp57--58 retains4/5, all fixed polynomial weights,
+  individual edge intensities, unsigned integer positions, and the distinction
+  from run signs/excess lengths. Exponential tails are not asserted.
+- The AI/source statement on p58 names GPT-6 Astra, the V1.4 source archive,
+  both associated documents, and distinguishes finite checks from a formal
+  or independent human verification. No internal report appears in the
+  displayed bibliography.
+
+Nonblocking inherited editorial issue
+-------------------------------------
+The p54 table column is headed "First omitted height" while its first three
+rows contain channels rather than heights. Suggested final wording:
+"First omitted channels" with "height h+1" in the last row. Reported to root;
+no source edits made during this review.
+
+Limit of review
+---------------
+This checks rendering, cross-document interface readability and preservation
+of stated scopes. It is not an independent verification of every arithmetic
+estimate or a proof-assistant certification.

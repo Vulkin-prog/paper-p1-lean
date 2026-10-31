@@ -1,0 +1,75 @@
+P1 V1.4: consequence/interface split review
+31 October 2026
+
+Ownership and output
+--------------------
+main_sections/arithmetic.tex
+companion_sections/arithmetic.tex
+main_sections/optimal_closure.tex
+main_sections/channel_hierarchy.tex
+main_sections/discussion.tex
+companion_sections/discussion.tex
+main_sections/limits_appendix.tex
+companion_sections/limits_appendix.tex
+
+Arithmetic main retains all definitions, the exact unit calculation, regular-set and
+host bounds as precisely stated interfaces, complete signed/positive pair profile,
+good-edge statement, and exact compression lemma with its short proof. Four long
+proofs are copied verbatim into companion arithmetic (only proof titles changed).
+The positive Palm proposition and its proof are wholly in the companion, since
+this is a channel-specific input for the first reconstruction/positional branch.
+Main profile prose explains the orientation factor and residual mass before
+pointing to its complete proof. No estimate was strengthened.
+
+The optimal scalar consequences and fixed-height hierarchy are unchanged from V1.3.
+In particular, nominal vs exact mean, the nonzero-bias qualification, fixed h before
+N, and the absence of a general power-one obstruction are preserved.
+
+Discussion retains the Hermite corollary and full proof, including the explicit
+fixed-height equivalent and the absence of an exact-Hermite lower bound. The
+Poisson-difference proposition remains in main; its entire proof is in companion
+Section p14:comp:poisson-differences. The method narrative now begins with the
+exact reference and distinguishes fixed-order counting from a separate uniform
+tail, without narrating the former full 4/5 proof before its refinement. All
+precision and scope qualifications remain. Original-count exponential moments
+are explicitly separated from modified-count tails.
+
+Main positional section defines the complete grid target, states the original
+weighted comparison with rate 4/5, and points to its full proof. It specifies
+unsigned positions and neither signs nor exact excess lengths. Companion limits
+retains the vector stopping identity, entire proof, deletion, signed Palm,
+forcing cost, cylinder, support, and other limit results. The local rigidity
+lemma + proof alone was removed there and delegated to probability_agent for
+main exact_setup; both its original labels must occur in that file.
+
+Two notation/layout changes
+---------------------------
+1. The incident edge intensity d_x in the positional section is renamed iota_x
+throughout main+companion limits files, avoiding the earlier d_x=dim S_x.
+2. The original field-definition label, formerly in an unnumbered display, now
+belongs to its own numbered gathered equation. This changes no target.
+
+Conservation check
+------------------
+132 original labels in the five owned baseline files. All conserved exactly once
+within the new owned files except the two delegated local-rigidity labels. No
+label duplicated. Statement count loses exactly that one delegated lemma. The
+machine-readable comparison is in consequences_split_checks.json.
+
+Recommended assembly
+--------------------
+Main arithmetic after exact_setup; optimal_closure after quartic_lower; then
+channel_hierarchy, discussion, positional limits excerpt. Companion arithmetic
+can precede its detailed arithmetic appendix (forward references are precise).
+Companion discussion is an independent normalization calculation and may sit
+near the end. Companion limits should follow the complete old reconstruction
+branch; it imports its vector deficits and boundary estimates. The moment
+counterexample can follow it. No public bibliography item added.
+
+Integrated compile repair
+-------------------------
+The first compile exposed one mechanical renaming collision: the suffix d_x
+in the TeX product command was replaced along with the variable d_x. Restored
+the exact product command. Inspected every remaining iota_x occurrence in both
+limits files; all are the intended incident-edge intensity. No formula or scope
+was changed by the repair.

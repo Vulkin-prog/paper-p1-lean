@@ -1,0 +1,9 @@
+{
+  "scope": "Exact statement-text comparison against V1.4; no asymptotic certification.",
+  "changed": [],
+  "counts": {
+    "main": 73,
+    "companion": 94
+  },
+  "passed": true
+}

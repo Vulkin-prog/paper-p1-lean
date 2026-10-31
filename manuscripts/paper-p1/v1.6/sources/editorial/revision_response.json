@@ -1,0 +1,116 @@
+{
+  "edition": "P1 V1.6",
+  "date": "2026-10-31",
+  "input": {
+    "filename": "AUDIT_P1_V1_5_2026-10-31_FR.pdf",
+    "sha256": "78b7b235ab4e8753c25a704e37b2bf32e723db15b99b8d811795699720427836"
+  },
+  "scope": "Targeted exposition revision and independent AI-assisted readings of specified proof chains; no new exponent, exhaustive certification, human review or formalization claimed.",
+  "items": {
+    "E1": {
+      "status": "integrated",
+      "files": [
+        "main_sections/introduction.tex"
+      ],
+      "location": "Table 1, after introductory results",
+      "points": [
+        "six references or observations",
+        "exact versus nominal mean",
+        "nonzero-bias qualifier",
+        "fixed h",
+        "Hermite upper bound only",
+        "fixed polynomial weights in total count for unsigned positions"
+      ]
+    },
+    "E2": {
+      "status": "integrated",
+      "files": [
+        "main_sections/introduction.tex"
+      ],
+      "location": "Section 1.2",
+      "points": [
+        "normalized steps 6,5,4",
+        "19L/30 rational nullity",
+        "N translations and power41/30",
+        "private coordinates and sign checks remain in14.5",
+        "1/120 only centered subfamily with N=2^L and30|L",
+        "two-pair quartic scale and noncancellation",
+        "no full quadratic remainder equivalent"
+      ]
+    },
+    "E3": {
+      "status": "integrated",
+      "files": [
+        "main_sections/exact_transfer.tex"
+      ],
+      "location": "Opening of Section15",
+      "points": [
+        "Law to retained measure",
+        "retained measure to B2",
+        "B2 to exactQ",
+        "direct sum of whole retained collection",
+        "incompatible pair covariance remains",
+        "conversion N^-5/3 applies to all-covariance B2"
+      ]
+    },
+    "E4": {
+      "status": "integrated",
+      "files": [
+        "companion_sections/guide.tex"
+      ],
+      "points": [
+        "five local entry/proof/return routes",
+        "explicit subsection targets distinct from identically numbered lemmas"
+      ]
+    },
+    "E5": {
+      "status": "integrated",
+      "files": [
+        "main_sections/discussion.tex"
+      ],
+      "points": [
+        "scope summary replaced with Table1 reference",
+        "all numbered statements and proof environments retained",
+        "eventual exact agreement at each fixed moment order"
+      ]
+    },
+    "E6": {
+      "status": "integrated",
+      "files": [
+        "README.txt",
+        "assistance.tex",
+        "build.py",
+        "check_all.py"
+      ],
+      "points": [
+        "distinct edition filenames",
+        "source archive with rebuild and diagnostics",
+        "complete circulation bundle including both PDFs,note,sources"
+      ]
+    },
+    "S1": {
+      "status": "targeted counter-read completed",
+      "files": [
+        "editorial/reviews/short_conditional_review.txt",
+        "editorial/reviews/common_curve_review.txt",
+        "editorial/reviews/dense_transfer_review.txt"
+      ],
+      "conclusion": "No concrete blocking gap identified in the checked passages; not exhaustive certification."
+    },
+    "N1": {
+      "status": "reviewed and reproducibly protected for statement text",
+      "files": [
+        "editorial/reviews/editorial_nonregression.txt",
+        "editorial/v15_statement_baseline.json",
+        "editorial/check_references.py"
+      ],
+      "points": [
+        "seven editorial distinctions retained",
+        "exact text hashes of167theorem/proposition/lemma/corollary environments",
+        "existing labels,numbers and link targets checked"
+      ]
+    }
+  },
+  "bibliography_changes": [],
+  "bibliography_entries": 31
+}

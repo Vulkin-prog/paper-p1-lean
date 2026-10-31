@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "scope": "Finite exact rational identities, not asymptotic estimates or proof certification.",
+  "ordered_boundary": {
+    "1": {
+      "hereditary_classes": 2,
+      "indicator_states": 4
+    },
+    "2": {
+      "hereditary_classes": 5,
+      "indicator_states": 20
+    },
+    "3": {
+      "hereditary_classes": 19,
+      "indicator_states": 152
+    },
+    "4": {
+      "hereditary_classes": 167,
+      "indicator_states": 2672
+    }
+  },
+  "fully_dependent_suffix": "norm = 6 theta; stopped upper bound = 12 theta",
+  "retained_pair_reference": {
+    "vectors": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "F_r": [
+      "0",
+      "0",
+      "1/4",
+      "1/2",
+      "1/16"
+    ],
+    "G_r": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "1/8"
+    ],
+    "identity": "T_D = B_beta - sum (F_r+G_r) Delta^r"
+  },
+  "positivity_minimizers": [
+    {
+      "mu": "1/3",
+      "threshold": "2/5"
+    },
+    {
+      "mu": "1",
+      "threshold": "2"
+    },
+    {
+      "mu": "5/2",
+      "threshold": "50/11"
+    },
+    {
+      "mu": "7",
+      "threshold": "14"
+    }
+  ]
+}

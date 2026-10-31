@@ -1,0 +1,171 @@
+P1 V1.6 — CONTRE-LECTURE CIBLÉE S1 : COURBE COMMUNE ET HAUTEURS
+31 octobre 2026
+
+Périmètre et conclusion
+----------------------
+Lecture complète de main_sections/pair_rigidity.tex (section 13) et de
+companion_sections/pair_rigidity.tex (T9), dans la copie issue de V1.5.
+Les obligations algébriques et les raccords de paramètres ci-dessous ont été
+reconstruits à partir des preuves écrites. Aucun défaut bloquant démontré
+n'a été identifié dans ce périmètre. Cette conclusion n'est ni une
+certification exhaustive de P1, ni une expertise humaine indépendante,
+ni une preuve formalisée. Aucun énoncé ni source de manuscrit n'a été modifié.
+
+1. Extraction d'une base courte : T9.1–T9.3 / théorème 13.1
+----------------------------------------------------------------
+Le lemme de seuil local interdit une relation locale paire de taille m
+quand x > (B+1)^(12m). La comparaison des k-sous-ensembles de positions
+défectueuses, avec k=floor(log N/(48 log(B+1))), donne D=O(B/log B).
+L'application n'exige pas l'admissibilité des fenêtres.
+
+Les grandes primes joignent au plus une position de chaque bloc ; leurs
+composantes libres non triviales rencontrent donc les deux blocs. Les
+positions isolées libres sont exactement les positions défectueuses. La
+suite exacte des relations complètes vers la classe commune justifie
+c=d_xy+O(B/log B), en tenant compte des noyaux locaux.
+
+Après suppression des composantes de taille > floor(log B), le nombre de
+colonnes de poids au moins trois est majoré par un tiers du poids total
+<=2B log(1/a)+O(B/log B). Il n'y a pas de multiplication de cette perte de
+dimension par la taille physique d'une composante. Les colonnes de poids
+0,1,2 forment un graphe (sommet auxiliaire à l'infini, boucles comprises).
+La suppression successive d'une seule arête par cycle fournit des cycles
+indépendants, courts tant que >=B/sqrt(log B) arêtes subsistent.
+
+Les <=pi(B^a)+2 équations restantes ne perdent qu'o(B/sqrt(log B))
+dimensions ; une base fondamentale du noyau utilise <=s+1 cycles par
+vecteur. Le produit des deux budgets est
+O(B^a log B/log log B), comme annoncé. Enfin une grande prime portée par
+une composante non triviale ne se retrouve dans aucune autre composante :
+la classe commune et les deux projections physiques sont injectives.
+
+2. Deux témoins : T9.4 / proposition T9.5
+---------------------------------------------------------
+L'indépendance des mots formels implique l'indépendance des deux classes
+F_1,F_2 dans Q(X,Y)^*/Q(X,Y)^{*2}, puisque les facteurs linéaires X+u et
+Y+v sont distincts. L'extension biquadratique a donc quatre caractères.
+F_3=F_1 F_2/G^2, où G est le pgcd monique, a une racine entière au point
+considéré ; aucune division par zéro n'y intervient car x,y>B.
+
+Pour k=3q, les coefficients auxiliaires ont au moins
+(3q+1)^2 + 3(2q+1)^2 = 21q^2+18q+4 inconnues. L'annulation des termes de
+degré total <=2k impose au plus 18q^2+9q+1 contraintes. La différence
+vaut au moins 3q^2+9q+3, et le rapport contraintes/différence est <6 pour
+tout q>=1. L'argument des tiroirs avec M=ceil((3nA)^7) fournit donc une
+solution entière de hauteur (B+1)^{O(q)} ; le coût polynomial en n est
+absorbé puisque q<=B.
+
+La division par le pgcd D des QUATRE POLYNÔMES A_chi est formelle et
+antérieure à la spécialisation. Avec a=deg_X D, b=deg_Y D, e=deg D,
+ord(D~)=a+b-e. Ainsi
+ord(f') >= 2k+1-a-b+e = (k-a)+(k-b)+e+1.
+Le degré restant des coefficients rend f' une série entière ; les deux
+poids de pôles diminuent et l'ordre reste strictement supérieur à leur
+somme. Le lemme de hauteur des facteurs garde les nouveaux coefficients
+à hauteur (B+1)^{O(q)}. Il n'est jamais nécessaire d'évaluer 1/D(x,y).
+
+L'estimation de Cauchy dans un bidisque de rayon comparable à 1/B donne
+|A(x,y)| <= (B+1)^{O(q)}/N ; elle reste valable après la division formelle.
+L'intégralité impose A(x,y)=0. L'indépendance des caractères impose que
+la norme soit un polynôme NON NUL. La formule explicite U^2-4F_1 V^2 a
+les degrés partiels <=12q, le degré total <=24q et la hauteur annoncée.
+L'identité algébrique et les estimations de degrés ont été relues ; aucun
+nouveau test fini n'est présenté comme preuve de cette construction.
+
+3. Un facteur commun à toute la base : T9.5 / théorème 13.2
+----------------------------------------------------------------
+Pour toute paire de vecteurs de base, q=min(2q_0,B) convient, donnant des
+R_ij de degré <=48q_0 et de hauteur (B+1)^{O(q_0)}. Un facteur irréductible
+primitif C_0 de R_12 passant par (x,y) conserve ce budget de hauteur.
+Une dépendance en une seule variable contredirait la borne des racines
+entières, puisque cette racine est >=N. C_0 dépend donc des deux variables.
+
+Si C_0 ne divisait pas R_ij, l'irréductibilité et le lemme de Gauss rendent
+Res_Y(C_0,R_ij) non nul. Son annulation en x est une identité polynomiale
+de spécialisation (elle ne suppose pas que les degrés restent inchangés
+après spécialisation). La matrice de Sylvester a taille O(q_0) ; les
+normes de ses entrées sont (B+1)^{O(q_0)}, et son expansion a O(q_0)!
+termes. La hauteur est donc (B+1)^{O(q_0^2)}. C'est le coût QUADRATIQUE
+qui justifie le seuil N>(B+1)^{c q_0^2} ; le coût linéaire des deux témoins
+ne peut pas lui être substitué.
+
+Sur K_0=Q(C_0=0), tous les facteurs X+u,Y+v et G sont non nuls : un tel
+facteur ne peut définir C_0, qui contient un point de coordonnées >B.
+Si deux classes F_wi,F_wj restaient indépendantes, la spécialisation de
+la formule de norme donnerait une norme nulle dans une extension qui est
+un corps. L'auxiliaire y serait nul. L'indépendance des quatre caractères
+imposerait que C_0 divise ses quatre coefficients, contrairement au pgcd
+polynomial égal à un. Chaque paire d'images est donc dépendante ; sur F_2,
+toutes les images non nulles sont alors égales. La dimension de l'image
+est au plus un, sans perte dépendant du nombre t de vecteurs de base.
+
+4. Passage aux fibres entières puis contradiction : section 13.4–13.6
+------------------------------------------------------------------------
+Le noyau de la carte aux classes fonctionnelles a dimension >=t-1. Les
+zéros des coefficients dominants et des discriminants éliminent O(D^2)
+offsets ; la perte de dimension est donc également O(D^2). L'injectivité
+de la projection physique assure au moins dim(V_1) offsets utilisés.
+
+À un offset non critique X=-u, la fibre possède d_Y racines simples.
+Le mot carré contenant X+u a valuation impaire provenant de ce seul
+facteur du premier bloc ; il faut donc un facteur Y+v à chaque racine.
+Toutes ces racines sont des entiers du petit intervalle. Les fibres
+séparées donnent d_Y dim(V_1) points, puis l'échange X/Y donne le maximum
+des deux degrés. En caractéristique zéro, le polynôme irréductible est
+séparable en chaque variable. Une extension à C et la normalisation de
+ses composantes suffisent ; l'intégralité géométrique n'est pas requise.
+
+La source primaire a été consultée directement :
+Binyamini–Cluckers–Novikov, arXiv:2302.04209v2 (20 septembre 2023),
+Theorem 2, equation (27), https://arxiv.org/html/2302.04209v2
+(théorème 2 dans la section 5),
+PDF : https://arxiv.org/pdf/2302.04209v2.
+L'énoncé porte bien sur une courbe algébrique intégrale de degré D sur
+un sous-corps K de C ; sa borne entière est c(n) D^2 H^{1/D}(log H)^kappa,
+avec c dépendant seulement de n et kappa absolu. Il n'impose donc ni
+intégralité géométrique ni constante implicite dépendant de D. La preuve
+complète de ce théorème externe n'a pas été reproduite dans cette relecture.
+
+Pour 2<=D<=D_max=B^{a+o(1)}, le maximum de D^2 H^{1/D} est à une extrémité,
+car sa dérivée logarithmique change de signe une seule fois, du négatif
+au positif. Il est O(B^{1/2}+D_max^2) ; a<1/2 absorbe aussi la puissance
+fixe de log B. Ainsi le nombre de points dans la grille est o(B).
+Simultanément, q_0^2 log(B+1)=B^{2a+o(1)}=o(log N), de sorte que le seuil
+résultant est satisfait. Ces deux usages de a<1/2 sont compatibles.
+
+Si D=1, la petite hauteur des coefficients de la droite et x,y>=N forcent
+une pente positive. Un mot carré non nul fournit au moins deux appariements
+d'offsets ; leur différence donne une pente p/q avec p,q<=2B, puis
+|qx-py|<=(p+q)B. Il s'agit de l'alignement exclu. La contradiction pour
+D>=2 et D=1 prouve le seuil suffisant (2/3)log 2<1/2. Aucune optimalité
+arithmétique de cette constante n'est établie ni annoncée.
+
+5. Navigation conseillée pour E4
+---------------------------------
+Entrée : théorème 13.2 de l'article, label p13:rig:common-curve.
+Preuve ici : sous-section T9.5, label p14:comp:rigidity:common-curve,
+avec préparation dans T9.4 (norme primitive à deux témoins).
+Retour : section 13.4 de l'article, proposition 13.3,
+label p13:rig:grid-fibres, puis section 13.5 pour le comptage uniforme
+(théorème 13.4 et corollaire 13.5), avant le théorème 13.6.
+Attention : le numéro de sous-section T9.5 et le numéro de proposition
+T9.5 (les deux témoins, dans T9.4) ne désignent pas le même objet ; écrire
+explicitement « section T9.5 » dans la navigation de la courbe commune.
+
+6. Limites et décision de révision
+----------------------------------
+Aucune correction d'énoncé n'est recommandée par cette relecture. Les
+preuves existantes contiennent déjà les détails sensibles demandés par
+S1. Conserver explicitement la division formelle, la distinction des deux
+hauteurs et le seuil quadratique, le caractère entier du comptage BCN,
+et le statut de borne suffisante du coefficient de rang.
+Le travail porte sur des arguments écrits précis ; il ne transforme pas
+les contrôles finis de norme en validation de toute la géométrie, et ne
+valide pas les autres branches arithmétiques ou probabilistes de P1.
+
+Empreintes des deux sources relues au moment de la lecture
+--------------------------------------------------------
+main_sections/pair_rigidity.tex
+SHA-256 09e669ea4c155b82d2345e5cd5c88560f7cd918d37be9f54d636851a278b75e7
+companion_sections/pair_rigidity.tex
+SHA-256 5d694892973d4e55dc66d78f72864ffafd28305ad924dbedb3270fbedc23461d

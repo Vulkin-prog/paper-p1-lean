@@ -1,0 +1,31 @@
+P1 V1.6 — Dossier complet — 31 octobre 2026
+Auteur : Brice Pouly
+Assistance mathématique et éditoriale : ChatGPT (GPT-6 Astra)
+
+LECTURE
+L'article principal (63 pages) et le compagnon technique (96 pages)
+forment un même travail. Gardez leurs noms de fichiers inchangés et
+placez-les dans le même dossier pour les liens croisés. Les références
+imprimées restent utilisables si votre lecteur neutralise ces liens.
+La note française (5 pages) répond à E1–E6, S1 et N1 de l'audit de V1.5.
+
+CONTENU
+P1_V1_6_Main_Article_2026-10-31_EN.pdf
+P1_V1_6_Technical_Companion_2026-10-31_EN.pdf
+P1_V1_6_Revision_Note_2026-10-31_FR.pdf
+P1_V1_6_Sources_2026-10-31.zip
+
+RECONSTRUCTION
+Extraire l'archive de sources, ouvrir son dossier racine et consulter
+README.txt pour les dépendances. La commande unique est :
+    python3 check_all.py
+Elle compile les documents et exécute les cinq diagnostics finis et
+les contrôles de conservation, de numérotation et de liens.
+La reconstruction depuis une extraction propre a été vérifiée pour
+cette édition. Les journaux et leur périmètre figurent dans editorial/.
+
+PORTÉE
+La révision conserve les 167 énoncés numérotés et ne revendique aucun
+nouvel exposant. Les contre-lectures ciblées et les diagnostics finis
+ne constituent ni une expertise humaine indépendante ni une preuve
+formalisée des estimations asymptotiques.

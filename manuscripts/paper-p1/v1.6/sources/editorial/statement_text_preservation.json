@@ -1,0 +1,9 @@
+{
+  "baseline": "P1 V1.5",
+  "edition": "P1 V1.6",
+  "compared_statements": 167,
+  "modified_or_missing_statements": [],
+  "additional_statements": [],
+  "status": "passed",
+  "scope": "Exact LaTeX text of theorem, proposition, lemma and corollary environments; not a proof checker."
+}

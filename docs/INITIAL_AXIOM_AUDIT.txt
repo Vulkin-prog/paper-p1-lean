@@ -1,0 +1,5 @@
+'PaperP1.Algebra.centeredCoefficient_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Algebra.centeredCoefficient_singleton' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Algebra.centeredCoefficient_singleton_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Algebra.centeredCoefficient_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'PaperP1.Algebra.centeredCoefficient_pair_eq_covariance' depends on axioms: [propext, Classical.choice, Quot.sound]

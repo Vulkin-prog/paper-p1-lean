@@ -1,0 +1,43 @@
+P1 V1.4: visual and interface review, main article pages 1--30
+Date: 31 October 2026
+Reviewed render: 60-page main article, tmp/p14_pdf_qa/main/page-*.png.
+
+VISUAL SCOPE
+Inspected every page 1--30 on the four contact sheets beginning at
+pages 1, 10, 19 and 28. Inspected full-resolution renders of pages
+1, 2, 8, 9, 10, 11, 12, 13, 14, 28, 29 and 30.
+The uniformity table is on page 8; the notation table is on page 9.
+
+RESULT
+No visual defect requiring an edit was found. The title, authorship,
+assistance statement, version/date, and 'Main article' designation are
+clear. The single-page contents is readable with correctly aligned
+page numbers. The uniformity and notation tables fit their columns
+without clipping; formulas and continuation text remain legible.
+Headers, page numbers, section starts, theorem typography, equation
+numbering, and proof endings are consistent across the reviewed range.
+No overlapping text, missing mathematical glyph, black square, cropped
+formula, broken reference, or conspicuously stranded heading was seen.
+The longer pair-profile formulas and the degree/rank statements on
+pages 28--30 fit cleanly.
+
+INTERFACES AND DEPENDENCIES
+The main article supplies enough information to use the companion's
+technical proofs: effective spaces and exact marginals are introduced
+before the arithmetic tools; every moved proof has a printed T-prefixed
+reference; local rigidity, the full pair profile, conditional half-count,
+triple activity, short-basis theorem, and common-curve theorem state
+their relevant hypotheses and uniformity.
+
+The notation distinction requested in the earlier read-only review is
+now explicit. The pair-arithmetic rho includes local kernels, while the
+exact argument uses rho_rel. The notation table also explains the local
+abbreviation in the transfer section and the regular-set companion's
+homogeneous W. No new dependency on the old 4/5 reconstruction was found.
+
+The main article explicitly says that both documents are required to
+check the full proof. Its interfaces are self-contained as statements;
+the review does not assert that the main article alone contains every
+technical proof or constitute an independent formal verification.
+
+No TeX edits were made in this review.

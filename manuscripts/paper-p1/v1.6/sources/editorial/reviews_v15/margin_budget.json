@@ -1,0 +1,268 @@
+{
+  "version": "P1 V1.5",
+  "date": "2026-10-31",
+  "purpose": "R2 exact exponent margins; finite arithmetic checking only, not certification of asymptotic estimates",
+  "convention": "Each decay exponent beta denotes a completed contribution bounded by N^(-beta+loss). An exact_margin is beta minus the comparison exponent. A loss is the total after all products, pattern enumerations and propagations in that row.",
+  "main_review_margins": [
+    "1/120",
+    "1/60",
+    "1/30",
+    "2/15"
+  ],
+  "uniform_certificate_parameters": {
+    "large_core": {
+      "t": 10,
+      "A0": 12,
+      "b": "31/60",
+      "sigma": "23/25",
+      "delta": "29/750",
+      "theta": "5/6",
+      "minimum_size": 256,
+      "rank_multiplier_exponent": "2",
+      "theta_plus_delta": "109/125",
+      "one_minus_theta_minus_delta": "16/125"
+    },
+    "low_nullity": {
+      "t": 2,
+      "A0": 12,
+      "b": "17/20",
+      "sigma": "23/25",
+      "delta": "3/250",
+      "theta": "1/6",
+      "minimum_size": 256,
+      "rank_multiplier_exponent": "1/60",
+      "theta_plus_delta": "67/375",
+      "one_minus_theta_minus_delta": "308/375"
+    },
+    "A0_times_one_minus_sigma": "24/25"
+  },
+  "rows": [
+    {
+      "key": "rational_pair_unaligned_target",
+      "term": "Nonaligned target above a fixed rational pair",
+      "decay_exponent": "11/8",
+      "comparison_exponent": "41/30",
+      "exact_margin": "1/120",
+      "source": "companion_sections/third_cumulant.tex :: p13:third:unaligned-target-cost",
+      "derivation": "5/3 + 1 - 31/24 = 11/8",
+      "note": "The total loss of this completed branch must be smaller than 1/120 for a strict separation from the dominant triple scale."
+    },
+    {
+      "key": "incompatible_triples",
+      "term": "Absolute incompatible activity and transfer from K3+ to kappa3",
+      "decay_exponent": "3/2",
+      "comparison_exponent": "41/30",
+      "exact_margin": "2/15",
+      "source": "main_sections/triple_activities.tex :: p13:activity:kappa-comparison",
+      "derivation": "3/2 - 41/30 = 2/15",
+      "note": "For the positive lower bound choose the total error loss strictly below 2/15."
+    },
+    {
+      "key": "third_activity_in_reconstruction",
+      "term": "Third activity multiplied by the reconstruction prefactor",
+      "decay_exponent": "41/30",
+      "comparison_exponent": "4/3",
+      "exact_margin": "1/30",
+      "source": "main_sections/exact_transfer.tex :: p13:transfer:reconstruction-bound",
+      "derivation": "41/30 - 4/3 = 1/30",
+      "note": "If the reconstruction and arithmetic estimates each lose tau, the remaining margin is 1/30 - 2*tau."
+    },
+    {
+      "key": "uniform_low_rank_moderate",
+      "term": "Low-nullity moderate certificate budget",
+      "decay_exponent": "27/20",
+      "comparison_exponent": "4/3",
+      "exact_margin": "1/60",
+      "source": "main_sections/exact_transfer.tex :: p13:transfer:low-rank-tail",
+      "derivation": "2*(17/20) - 4/12 - 1/60 = 27/20",
+      "note": "Smallest margin of the four uniform certificate budgets."
+    },
+    {
+      "key": "uniform_large_core_moderate",
+      "term": "Large-core moderate certificate budget",
+      "decay_exponent": "3/2",
+      "comparison_exponent": "4/3",
+      "exact_margin": "1/6",
+      "source": "main_sections/exact_transfer.tex :: p13:transfer:large-core",
+      "derivation": "10*(31/60) - 20/12 - 2 = 3/2",
+      "note": ""
+    },
+    {
+      "key": "uniform_large_core_saturated",
+      "term": "Large-core saturated certificate budget",
+      "decay_exponent": "1106/375",
+      "comparison_exponent": "4/3",
+      "exact_margin": "202/125",
+      "source": "main_sections/exact_transfer.tex :: p13:transfer:large-core",
+      "derivation": "256*(29/750)/2 - 2 = 1106/375",
+      "note": ""
+    },
+    {
+      "key": "uniform_low_rank_saturated",
+      "term": "Low-nullity saturated certificate budget",
+      "decay_exponent": "2279/1500",
+      "comparison_exponent": "4/3",
+      "exact_margin": "93/500",
+      "source": "main_sections/exact_transfer.tex :: p13:transfer:low-rank-tail",
+      "derivation": "256*(3/250)/2 - 1/60 = 2279/1500",
+      "note": ""
+    },
+    {
+      "key": "bernoulli_conversion",
+      "term": "Conversion of Bernoulli plus all covariances to Q",
+      "decay_exponent": "5/3",
+      "comparison_exponent": "4/3",
+      "exact_margin": "1/3",
+      "source": "main_sections/exact_transfer.tex :: p13:transfer:conversion-bound",
+      "derivation": "A2(s2+p_*) has exponent 2/3+1; s3+s2^2 have exponent 2",
+      "note": "This is not the conversion rate of the bare independent Bernoulli product."
+    },
+    {
+      "key": "large_stopping_boundary",
+      "term": "Boundary above K_N=(5+o(1))*logN/loglogN",
+      "decay_exponent": "3",
+      "comparison_exponent": "4/3",
+      "exact_margin": "5/3",
+      "source": "main_sections/exact_transfer.tex :: proof p13:transfer:finite",
+      "derivation": "Factorial tail has exponent 5-o(1); the nullity multiplier costs N^2",
+      "note": ""
+    },
+    {
+      "key": "pair_deficit",
+      "term": "All-cardinality independent extension deficit after a pair",
+      "decay_exponent": "3/2",
+      "comparison_exponent": "4/3",
+      "exact_margin": "1/6",
+      "source": "main_sections/exact_transfer.tex :: p13:transfer:pair-deficit-bound",
+      "derivation": "3/2 - 4/3 = 1/6",
+      "note": ""
+    },
+    {
+      "key": "quartic_signed_error",
+      "term": "Incompatible and repeated-index error in the quartic identity",
+      "decay_exponent": "3/2",
+      "comparison_exponent": "4/3",
+      "exact_margin": "1/6",
+      "source": "main_sections/quartic_lower.tex :: p13:lower:positive-quartic",
+      "derivation": "alpha_N^2 is comparable to L^2 N^(-4/3)",
+      "note": "Choose the total quartic error loss below 1/6; this makes it o(alpha_N^2)."
+    },
+    {
+      "key": "two_pair_activity",
+      "term": "Two independent pair activities",
+      "decay_exponent": "4/3",
+      "comparison_exponent": "4/3",
+      "exact_margin": "0",
+      "source": "main_sections/exact_transfer.tex :: proof p13:transfer:finite",
+      "derivation": "(N^(-2/3+tau/2))^2 = N^(-4/3+tau)",
+      "note": "Zero strict margin: this contribution is retained at the target scale, not declared negligible."
+    },
+    {
+      "key": "primitive_four",
+      "term": "Primitive families of size four",
+      "decay_exponent": "4/3",
+      "comparison_exponent": "4/3",
+      "exact_margin": "0",
+      "source": "main_sections/exact_transfer.tex :: p13:transfer:primitive-bound",
+      "derivation": "2*r/(r+2) at r=4 equals 4/3",
+      "note": "Zero strict margin: output tolerances must fit the requested final loss."
+    },
+    {
+      "key": "small_nullity_triples",
+      "term": "Compatible triples below eta B with eta=1/30",
+      "decay_exponent": "22/15",
+      "comparison_exponent": "41/30",
+      "exact_margin": "1/10",
+      "source": "main_sections/third_cumulant.tex :: proof p13:third:main",
+      "derivation": "3/2 - 1/30 = 22/15",
+      "note": ""
+    },
+    {
+      "key": "strong_nonaligned_triples",
+      "term": "Strong nonaligned pair sector",
+      "decay_exponent": "3/2",
+      "comparison_exponent": "41/30",
+      "exact_margin": "2/15",
+      "source": "main_sections/third_cumulant.tex :: proof p13:third:main",
+      "derivation": "3/2 - 41/30 = 2/15",
+      "note": ""
+    },
+    {
+      "key": "aligned_repeated_slope",
+      "term": "Aligned triples with repeated physical slopes",
+      "decay_exponent": "3/2",
+      "comparison_exponent": "41/30",
+      "exact_margin": "2/15",
+      "source": "companion_sections/third_cumulant.tex :: proof p13:third:aligned-family",
+      "derivation": "3/2 - 41/30 = 2/15",
+      "note": ""
+    },
+    {
+      "key": "aligned_endpoint_population",
+      "term": "Dyadic endpoints in the aligned-family argument",
+      "decay_exponent": "5/3",
+      "comparison_exponent": "41/30",
+      "exact_margin": "3/10",
+      "source": "companion_sections/third_cumulant.tex :: p13:third:source-weight",
+      "derivation": "5/3 - 41/30 = 3/10",
+      "note": ""
+    },
+    {
+      "key": "third_repeated_indices",
+      "term": "Repeated-index terms in the third factorial cumulant",
+      "decay_exponent": "5/3",
+      "comparison_exponent": "41/30",
+      "exact_margin": "3/10",
+      "source": "main_sections/triple_activities.tex :: proof p13:activity:kappa3",
+      "derivation": "p_* A2 + p_*^2 mu; minimum exponent 1+2/3 = 5/3",
+      "note": ""
+    },
+    {
+      "key": "rational_witness_pair_subtraction",
+      "term": "Largest subtracted pair term in the 10:12:15 witness",
+      "decay_exponent": "5/3",
+      "comparison_exponent": "41/30",
+      "exact_margin": "3/10",
+      "source": "main_sections/third_cumulant.tex :: p13:third:witness-centered",
+      "derivation": "Host exponent 1, three marginals, largest pair nullity L/3: 3 - 1 - 1/3 = 5/3",
+      "note": ""
+    }
+  ],
+  "near_primitive_triple_branch": {
+    "decay_exponent": "2-theta",
+    "comparison_exponent": "41/30",
+    "margin": "19/30-theta",
+    "rank_threshold_eta": "1/30",
+    "theta_constraint": "0<theta<eta/200=1/6000; further restriction required by near-primitive theorem"
+  },
+  "parameter_convention": {
+    "final_accuracy": "epsilon_out>0",
+    "outer_accuracy": "0<tau<min(epsilon_out/4,1/960)",
+    "meaning": "Use each completed auxiliary estimate with total output loss at most tau, choosing its own smaller fixed internal tolerances. Do not equate raw threshold parameters to tau. Divide tau between multiplicative factors; A2 before squaring uses tau/2.",
+    "triple_term_loss": "2*tau",
+    "lower_holder_order": "fixed integer k>1 with 4/[3(k-1)]<=epsilon_out",
+    "weighted_interpolation": "choose fixed v with 4/(3v)<epsilon_out/2 and invoke upper norm estimate with loss smaller than epsilon_out/2",
+    "uniformity": "All constants and fixed orders are chosen before N. Only fixed orders 3..256 use fixed-order bounds. K_N is handled by the uniform certificate estimate and factorial boundary."
+  },
+  "structural_checks": {
+    "main_sections/exact_transfer.tex": {
+      "labels_unchanged": true,
+      "statement_environments_unchanged": true,
+      "all_numbered_statements_unchanged": true
+    },
+    "companion_sections/exact_transfer.tex": {
+      "labels_unchanged": true,
+      "statement_environments_unchanged": true,
+      "all_numbered_statements_unchanged": true
+    }
+  },
+  "review_corrections": [
+    "No incorrect numerical margin was found in counterreview R2.",
+    "The threshold assertion must count components in each target separately and must include isolated active vertices.",
+    "Use n_{1,t} for each target; do not infer two univariate equations from a lower bound for the union of targets.",
+    "Deleting selected components is not a further restriction of the relation space.",
+    "The weak-alignment deletion bound is at most 2(u-1)<=2*theta*L+2.",
+    "The geometric count is applied via its proof after explicitly excluding the small curves; one must not assert that the whole weakly aligned target spaces are in direct sum.",
+    "The margins 0 for A2^2 and four-block primitive mass are genuine and must not be silently described as positive gaps."
+  ]
+}

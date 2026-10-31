@@ -1,0 +1,7 @@
+P1 V1.4 final visual review, 31 October 2026
+
+Root inspected companion pages48–90 in contact sheets and its final pages91–93 at full resolution. Dense equations, headings, continuations and page furniture are legible; no clipping, overlaps or unresolved references observed. The AI-assistance paragraph now ends on page91; the source/checks paragraph appears once in the main article, avoiding an almost-empty companion page. Bibliography text is preserved.
+
+Main final pages54 (channel table wording) and58 (positional statement and assistance) were rerendered and inspected at full resolution after final polish. The five French-note pages were inspected at full resolution. They have no visible layout defects. The other main/companion pages were inspected in the three independent assigned visual reviews.
+
+One inherited harmless underfull paragraph remains in the main third-cumulant discussion (no visual defect). There are no overfull boxes or unresolved/multiply-defined references in either scientific PDF. This is a visual/document-integrity review, not a mathematical proof certification.

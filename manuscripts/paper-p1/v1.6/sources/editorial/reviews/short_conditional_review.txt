@@ -1,0 +1,222 @@
+RELECTURE CIBLEE V1.6 -- T5/T6 ET RACCORDS M9/M10
+Date : 31 octobre 2026
+Statut : relecture mathematique de sources; aucune modification des manuscrits.
+Perimetre : companion_sections/short_supports.tex et half_counts.tex;
+main_sections/short_supports.tex et half_counts.tex; lemme de Pell
+p1:arith:pell dans companion_sections/arithmetic_appendix.tex.
+Demande : S1 de AUDIT_P1_V1_5_2026-10-31_FR, section 5.1.
+Cette passe ne constitue ni une expertise humaine, ni une formalisation,
+ni une certification du dossier entier. Aucun programme fini supplementaire
+n'a ete execute pour se substituer aux estimations asymptotiques.
+
+CONCLUSION
+Aucune lacune concrete n'a ete relevee dans les pertes uniformes de T5,
+les deux sens du comptage de certificats de T6, ou l'induction conditionnelle
+qui relie ces sections a M9/M10. Les trois quantificateurs importants sont
+effectivement separes : v fixe pour le moment de la somme de caracteres,
+d <= c log log N pour le degre du motif, r et s fixes pour les blocs.
+Ce resultat de relecture ne dispense pas de lire les autres entrees
+arithmetiques du dossier et n'affirme pas une certification des enonces.
+
+1. NOYAU QUADRATIQUE A DIVISEUR PRESCRIT (p13:short:quadratic)
+Pour q ~ N^beta et e | q, delta = log(e)/log(N), le domaine utile est
+0 <= delta <= beta + o(1), 0 <= beta <= 2 + o(1).
+- A q fixe, (2n+h)^2 - 4qv^2 = h^2 a N^{o(1)} solutions.
+  Les coefficients et les variables restent de hauteur polynomiale.
+  Le cas q=1 est bien traite par factorisation.
+- Le nombre de q multiples de e est O(1+N^beta/e); le +1 se fond
+  dans N^{beta-delta+o(1)} dans ce domaine utile.
+- De e v^2 | n(n+h), avec v ~ N^{1-beta/2}, et
+  rho_h(M) <= h 2^{omega(M)}, on obtient les deux termes
+  N^{beta/2-delta+o(1)} et N^{1-beta/2+o(1)}.
+  Le facteur h est polylogarithmique, puisque B ~ log N.
+- La comparaison a l'exposant affine est correcte. Si beta-delta >= 1,
+  le maximum est beta/2-delta et
+  1/2+beta/4-delta/2 - (beta/2-delta)
+  = 1/2-beta/4+delta/2 >= -o(1).
+  Sinon le minimum de beta-delta et 1-beta/2 est au plus leur moyenne,
+  exactement 1/2+beta/4-delta/2.
+Le lemme de Pell utilise ici est lui-meme expose dans T1 : ideal de norme
+|ah|, au plus tau(|ah|) ideaux, puis O(log N) generateurs dans la fenetre
+de hauteur polynomiale par separation des unites reelles. Cette utilisation
+ne demande pas une borne pour le regulateur ou le nombre de classes.
+
+2. PERTE EN DEGRE DU PRODUIT SCINDE (p13:short:split)
+Le produit D_A des differences a log D_A = O(d^2 log B) = o(log N).
+Si un premier apparait dans s noyaux quadratiques, il divise au moins s
+facteurs lineaires distincts. Son exposant dans (prod q_j)/q est
+2 floor(s/2), et son exposant dans D_A^2 est au moins 2 binom(s,2).
+La divisibilite affichee est donc justifiee premier par premier.
+
+Apres retrait des premiers de D_A, e' se repartit en e_j | q_j.
+Les sommes beta_j = beta+o(1) et delta_j = delta+o(1) donnent un j
+avec beta_j-2delta_j <= (beta-2delta)/m+o(1), m=d/2.
+Le majorant quadratique correspondant est bien
+N^{1/2+beta/(2d)-delta/d+o(1)}.
+
+Le cout est une union sur UN indice j, UN diviseur e_j de e', et une
+classe dyadique. Il n'est pas necessaire d'enumerer toutes les
+factorisations de e'. Comme e' <= (C_D N)^d et d <= c log log N,
+omega(e')! <= e' donne omega(e') <= (c+o(1)) log N.
+Par consequent tau(e') <= N^{c log 2+o(1)}, uniformement dans A.
+Ce raisonnement reste valable pour c petit et fixe, choisi ensuite
+en fonction de la precision et du moment fixe v.
+
+Pour la fibre a q fixe, les deux classes sf(n+a), sf(n+b) divisent
+rad(q D_A). Le nombre d'allocations est au plus 4^{omega(qD_A)}
+<= N^{2c log 2+o(1)}. Les coefficients effectivement retenus dans
+u s^2 - v t^2 = a-b satisfont u,v = O_D(N). Les allocations impossibles
+peuvent etre rejetees; Pell n'est pas applique avec un coefficient de
+taille N^{O(d)}. C'est le point qui preserve son uniformite.
+
+3. EXPOSITION DES INCIDENCES PAIRES (p14:comp:short:moments)
+Pour v fixe, chaque premier des q_i possede un support S de cardinal
+paire >=2. Les d_S sont donc une decomposition unique. Le nombre
+de profils dyadiques est N^{o(1)}, puisque le nombre 2^{v-1}-1 de
+supports possibles est fixe.
+- A l'exposition de i, les premiers deja rencontres qui appartiennent
+  a q_i forment bien un diviseur prescrit e_i.
+- Les nouveaux premiers sont affectes a leurs supports futurs avec
+  au plus 2^{v-1} choix chacun. Le cout
+  N^{c(v-1) log2+o(1)} est uniforme.
+- Aucun support singleton n'existe; le dernier noyau est donc fixe.
+  La fibre coute N^{2c log2+o(1)}.
+Avec v-1 expositions, le cout total retenu
+c[v(v-1)+2] log2 est correct (eventuellement large).
+
+Pour un support S de taille a, le coefficient residuel de alpha_S
+dans un ordre d'exposition est
+[1-a/2+(1/2)1_{dernier dans S}]/d.
+Sa moyenne est [1-a/2+a/(2v)]/d : 1/(dv) lorsque a=2,
+et non positive pour a>=4. Comme
+2 sum_{|S|=2} alpha_S <= sum_i beta_i <= vd+o(1),
+la correction moyenne est <=1/2+o(1). Ajoutee a (v-1)/2,
+elle donne v/2+o(1). Choisir un ordre favorable pour chaque profil
+ne coute que v!, fixe. Aucune sommation en v croissant n'est invoquee.
+
+4. ESPACE ANCIEN (p13:short:old-space)
+La somme de caracteres Phi_V est positive, vaut 2^{dim V} sur
+l'annihilateur de V et zero ailleurs; ses normes affichees sont correctes.
+L'expectation compte exactement les listes parce qu'un unique caractere
+ancien annule chaque somme appartenant a V. La dimension O(B) est
+absorbee en choisissant a>1 assez proche de 1; v est ensuite choisi
+fixe, puis c assez petit. Les choix de motifs coutent
+exp(O(c (log log N)^2)) = N^{o(1)}. Il n'y a pas de paiement de
+2^{dim V} par enumeration. Aucune independance des anciens blocs
+n'est requise.
+
+5. SELECTIONS LONGUES ET MODULUS LISSE (p13:half:small-kernels,
+p13:half:smooth)
+La decomposition n_i=c_i k_i a_i^2 avec c_i H-lisse carrelibre
+a N^{o(1)} choix de c_i. Le nombre de paires k_1 k_2 <= N^q est
+N^{q+o(1)}. Une difference d'offsets non nulle ramene encore a Pell
+avec coefficients effectifs O(N). Ceci justifie X_q.
+
+Hors de X_{1/2}, il y a au plus une valeur avec a_Y(n)^2 > N^{0.76},
+car deux donneraient un produit de noyaux H au plus N^{0.48+o(1)}.
+Apres retrait de cette valeur et des t-1 gros noyaux, toute selection
+de taille > c log log N contient, pour N assez grand, 26 valeurs
+avec partie lisse >= N^{1/25+o(1)}.
+Leur ppcm est >= N^{26/25-o(1)} puisque chaque pgcd est O(B).
+Le premier passage au-dessus de C_1 N fournit un diviseur Y-lisse
+D_0 dans (C_1N,C_1NY]. Rankin avec
+1-1/A < sigma < 1 donne N^{sigma+o(1)} tels moduli :
+A(1-sigma)<1 rend le logarithme du produit eulerien o(log N).
+Les affectations de puissances premieres a 26 positions coutent
+26^{omega(D_0)}=N^{o(1)}. Le CRT reconstruit au plus un centre.
+Le caractere deterministe de M_Y est important : on a pris l'union
+sur les 26 offsets et les codes, donc l'ensemble ne depend pas
+du temoin choisi pour une liste.
+
+6. CERTIFICATS DANS LES DEUX SENS (p13:half:saturation)
+Les premiers >Y ne divisent pas deux valeurs distinctes du meme bloc.
+Les t noyaux ancres sont ainsi deux a deux premiers entre eux.
+Un produit carre oblige chaque premier de leur produit Q a avoir
+une autre occurrence impaire dans un autre bloc. Il n'est pas
+necessaire que cette autre occurrence soit unique; on en choisit une.
+Il y a r+s-1 receveurs, donc tb>r+s-1 force un modulus receveur
+>C_2NB pour N assez grand. Le cas r=1,s=0 est vide et exclu
+avant cette etape.
+
+Le sous-certificat retenu au premier passage comporte au plus
+k=floor(log(C_2NB)/log Y)+1 premiers, tous >Y. Son modulus
+reste superieur a l'intervalle des centres, dans les deux directions.
+
+Sens sortant, source fixee :
+- t positions d'ancrage : B^t=N^{o(1)};
+- sous-ensemble des O_t(log N/log Y) premiers disponibles : N^{o(1)};
+- destinations dans O_D(B) positions du receveur :
+  B^k=N^{1/A+o(1)};
+- CRT : au plus un receveur par code.
+
+Sens entrant, receveur fixe :
+- tous ses premiers >Y sont au plus
+  R=O_D(B log N/log Y);
+- choisir <=k premiers et les affecter aux t ancres coute
+  B^t sum_{j<=k} binom(R,j)t^j.
+Si R>=2k, ceci est au plus B^t(k+1)(etR/k)^k;
+comme R/k=O_D(B), son logarithme est (1/A+o(1))log N.
+Si R<2k, (1+t)^R=N^{o(1)} suffit.
+Le CRT reconstruit la source pour chaque code.
+
+Oublier les autres premiers ne pretend pas construire une nouvelle
+relation. Chaque liste originale garde sa relation pleine; les centres
+exposes sont seulement transferes dans l'ancien espace pour la suite.
+Le comptage agrandi par des codes possiblement inconsistants est
+une majoration legitime.
+
+7. ITERATION ET QUANTIFICATEURS (p14:comp:half:iteration)
+L'induction forte porte sur r et est simultanee pour tout s fixe.
+Elle n'exige pas une constante uniforme lorsque s tendrait a l'infini.
+Le pas delta est choisi apres la marge finale et avant N;
+J=ceil(1/(2delta)) et les A_j=1/x_j sont donc fixes.
+Les pertes internes sont choisies ensuite. Y_j>H pour N assez grand.
+
+La partition initiale retire les listes admettant un temoin ou toutes
+les nouvelles selections sont courtes. Pour chaque autre liste, un
+temoin est choisi sans enumeration. Il contient une selection longue.
+L'invariant de rarete porte sur les sources longues de ce temoin;
+l'ensemble M_Y est deterministe et assure une borne uniforme.
+
+- Receveur nouveau : la source hors X a
+  N^{1-x_{j-1}+epsilon'} choix et le degre sortant vaut
+  N^{x_j+o(1)}. Les deux blocs exposes deviennent anciens.
+  Il reste r-2 cibles, chacune encore non nulle dans SON espace,
+  et s+2 sources fixes. Le cout est
+  N^{r/2+x_j-x_{j-1}+O(epsilon')}.
+- Receveur ancien : le degre entrant compte la nouvelle source
+  par N^{x_j+o(1)}. Il reste r-1 cibles et s+1 sources fixes.
+  Le cout est <=N^{r/2+O(epsilon')}, car x_j<=1/2.
+- Les cas non satures et hors X entrent dans M_{Y_j}, de taille
+  N^{1-x_j+epsilon'}, donnant l'invariant suivant.
+- Au dernier stade, une source longue est dans X_{1/2} ou M_{Y_J},
+  ensemble de taille N^{1/2+epsilon'}. On l'expose puis on applique
+  l'induction a r-1 cibles.
+
+A chaque appel, r diminue strictement; les nouvelles projections
+restent non nulles dans leurs espaces individuels. Il n'est pas exige
+qu'elles soient non nulles modulo l'espace ancien, exactement comme
+le precise l'enonce principal. Les sources peuvent donc se chevaucher
+ou etre dependantes. T_0=1 couvre le terme final sans cible.
+
+8. NAVIGATION LOCALE VERIFIEE DANS LES AUX V1.5
+Entree main Proposition 9.1 : p13:short:moments.
+Preuve complete : sous-section T5.1, p14:comp:short:moments.
+Retour : Corollaire 9.2, p13:short:old-space, puis Theoreme 10.1.
+Attention : le LEMME T5.1 p13:short:quadratic porte le meme numero
+imprime que la sous-section T5.1, mais n'est que l'entree quadratique.
+
+Entree main Theoreme 10.1 : p13:half:conditional.
+Preuve complete : sous-section T6.3, p14:comp:half:iteration.
+Retour : Corollaire 10.2 p13:half:connected, puis 10.3 p13:half:pairs.
+Attention : le LEMME T6.3 p13:half:saturation porte le meme numero
+imprime que la sous-section T6.3, mais n'est que le comptage
+bidirectionnel. Le tableau devrait donc utiliser explicitement le
+signe de section ou le mot subsection et ces labels de preuve.
+
+MODIFICATION RECOMMANDEE
+Aucune correction mathematique des enonces n'est proposee par cette passe.
+Pour E4, rendre explicite la nature des destinations (sous-sections),
+avec les labels ci-dessus. Il n'est pas necessaire de repeter dans
+les manuscrits tous les details de verification de ce rapport.
+

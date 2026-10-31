@@ -1,0 +1,182 @@
+\section{Short split products: kernels and moment enumeration}
+\label{p14:comp:short}
+
+This section proves the short-support moment input from
+Section~\ref{p13:short:section}.  The degree is allowed to grow as a
+sufficiently small multiple of $\log\log N$; all estimates below
+retain that dependence.
+
+\begin{lemma}[A quadratic kernel with a prescribed divisor]
+\label{p13:short:quadratic}
+Let \(1\le h\le2DB\), where \(D\) is fixed, and \(n\asymp N\).
+Suppose \(q=\sf(n(n+h))\asymp N^\beta\) and a fixed squarefree
+integer \(e\) divides \(q\). Put \(\delta=\log e/\log N\).
+Uniformly in these data, the number of \(n\) is at most
+\[
+ N^{c_2(\beta,\delta)+o(1)},\qquad
+ c_2(\beta,\delta)=
+ \min\{\beta-\delta,\max(\beta/2-\delta,1-\beta/2)\}
+ \le \tfrac12+\tfrac\beta4-\tfrac\delta2.
+\]
+Every \(o(1)\) in this lemma is uniform and may be replaced
+by an arbitrary fixed positive exponent.
+\end{lemma}
+
+\begin{proof}
+For a fixed \(q\), the equation \(n(n+h)=qv^2\) becomes
+\((2n+h)^2-4qv^2=h^2\). Lemma~\ref{p1:arith:pell}
+gives \(N^{o(1)}\) solutions, uniformly for the polynomial
+heights in question. When \(q=1\), factor the difference of
+squares instead. Summing over the \(O(1+N^\beta/e)\)
+possible kernels gives the first exponent.
+
+For the other estimate, \(v\asymp N^{1-\beta/2}\) and
+\(ev^2\mid n(n+h)\). If
+\(\rho_h(M)=\#\{a\bmod M:a(a+h)\equiv0\pmod M\}\), then
+\[
+ \rho_h(\ell^a)
+ \le2\ell^{\min(v_\ell(h),\lfloor a/2\rfloor)},\qquad
+ \rho_h(M)\le h\,2^{\omega(M)}.
+\]
+For \(a\le2v_\ell(h)\), a root is divisible by
+\(\ell^{\lceil a/2\rceil}\); for larger \(a\), the two
+separated roots give the displayed bound. The Chinese
+remainder theorem proves the second inequality. Here
+\(M=ev^2\le N^{2+o(1)}\), so summing residue classes gives
+\[
+ N^{o(1)}
+ \sum_{v\asymp N^{1-\beta/2}}\left(\frac{N}{ev^2}+1\right)
+ \le N^{o(1)}
+       \{N^{\beta/2-\delta}+N^{1-\beta/2}\}.
+\]
+If \(\beta-\delta\ge1\), the maximum is
+\(\beta/2-\delta\), which is bounded by the affine expression
+since \(\beta\le2+o(1)\). Otherwise the maximum is
+\(1-\beta/2\), and the minimum of this number and
+\(\beta-\delta\) is at most their average.
+\end{proof}
+
+\begin{lemma}[Kernels of a split product]
+\label{p13:short:split}
+Let
+\[
+ P_A(X)=\prod_{a\in A}(X+a),\qquad
+ A\subset[-DB,DB]\cap\Z,\qquad
+ 2\le d=|A|\le c\log\log N,
+\]
+where \(d\) is even and \(D,c>0\) are fixed.
+For a fixed squarefree \(e\), the number of \(n\asymp N\)
+with \(q=\sf(P_A(n))\asymp N^\beta\) and \(e\mid q\) is at most
+\begin{equation}
+ N^{1/2+\beta/(2d)-\delta/d+c\log2+o(1)},
+ \qquad \delta=\frac{\log e}{\log N}.
+ \label{p13:short:split-count}
+\end{equation}
+For a fixed kernel \(q\), the fibre has at most
+\(N^{2c\log2+o(1)}\) elements. All estimates are uniform in \(A\).
+\end{lemma}
+
+\begin{proof}
+Pair the \(d\) linear factors into \(m=d/2\) quadratics
+\(Q_j\), put \(q_j=\sf(Q_j(n))\), and write
+\[
+ D_A=\prod_{\substack{a,b\in A\\a<b}}|a-b|.
+\]
+Its logarithm is \(O_D(d^2\log B)=o(\log N)\).
+Outside \(D_A\), the \(q_j\) are pairwise coprime, and
+\begin{equation}
+ \frac{\prod_jq_j}{q}\mid D_A^2.
+ \label{p13:short:resultant}
+\end{equation}
+Indeed, a prime occurring in \(s\) of the \(q_j\) divides at
+least \(s\) distinct linear factors. Its exponent in the
+quotient is \(2\lfloor s/2\rfloor\), whereas its exponent
+in \(D_A^2\) is at least \(2\binom{s}{2}\).
+
+Remove the primes of \(D_A\) from \(e\), obtaining
+\(e'=e/\gcd(e,\operatorname{rad}D_A)\).
+There is a factorization \(e'=\prod_j e_j\), with
+\(e_j\mid q_j\), such that the factors are pairwise coprime.
+Set \(\beta_j=\log q_j/\log N\) and
+\(\delta_j=\log e_j/\log N\). Then
+\[
+ \sum_j\beta_j=\beta+o(1),\qquad
+ \sum_j\delta_j=\delta+o(1).
+\]
+For at least one \(j\),
+\(\beta_j-2\delta_j\le(\beta-2\delta)/m+o(1)\).
+Lemma~\ref{p13:short:quadratic} bounds its quadratic count
+by \(N^{1/2+\beta/(2d)-\delta/d+o(1)}\).
+We enumerate only that \(j\), the divisor \(e_j\mid e'\),
+and its dyadic size. This costs at most
+\(m\tau(e')O(\log N)\), not the number of all factorizations
+of \(e'\). Since \(e'\le(C_DN)^d\), the product of its distinct
+prime factors is at least \(\omega(e')!\). Stirling's estimate
+therefore gives
+\[
+ \omega(e')\le(c+o(1))\log N,\qquad
+ \tau(e')\le N^{c\log2+o(1)}.
+\]
+This proves \eqref{p13:short:split-count}.
+
+For a fixed \(q\), choose two distinct offsets \(a,b\).
+Both \(\sf(n+a)\) and \(\sf(n+b)\) divide
+\(\operatorname{rad}(qD_A)\), so there are at most
+\(4^{\omega(qD_A)}\le N^{2c\log2+o(1)}\) choices.
+The effective coefficients \(u,v\) satisfy \(u,v\ll_D N\).
+For each such choice,
+\(us^2-vt^2=a-b\ne0\) has \(N^{o(1)}\) solutions by
+Lemma~\ref{p1:arith:pell}, including its factorizable case.
+Thus Pell is applied to coefficients of height \(O(N)\),
+even though \(q\) itself may be as large as \(N^{O(d)}\).
+\end{proof}
+
+\subsection{Proof of Proposition~\ref{p13:short:moments}}
+\label{p14:comp:short:moments}
+
+\begin{proof}
+The moment counts the tuples for which
+\(\prod_iP_A(n_i)\) is a square. Write \(q_i=\sf(P_A(n_i))\).
+There is a unique representation
+\[
+ q_i=\prod_{\substack{S\subseteq\{1,\ldots,v\}\\
+                  |S|\ge2\text{ even},\ i\in S}}d_S
+\]
+with pairwise coprime squarefree \(d_S\). Fix dyadic size
+classes for these numbers, and put
+\(\alpha_S=\log d_S/\log N\) and
+\(\beta_i=\sum_{S\ni i}\alpha_S\).
+There are \(N^{o(1)}\) size profiles, since \(v\) is fixed.
+
+Expose \(v-1\) of the integers in a chosen order. Before
+exposing \(i\), the product of the \(d_S\) whose sets meet
+an earlier index is a prescribed divisor \(e_i\mid q_i\).
+If its exponent is \(\delta_i\), Lemma~\ref{p13:short:split}
+gives the cost
+\[
+ N^{1/2+\beta_i/(2d)-\delta_i/d+c\log2+o(1)}.
+\]
+After choosing \(n_i\), assign the new prime factors of
+\(q_i/e_i\) to the at most \(2^{v-1}\) possible sets \(S\).
+Their number is at most
+\(N^{c(v-1)\log2+o(1)}\); inconsistent assignments are
+discarded. Every \(S\) has at least two members, so the last
+kernel is now fixed and its fibre costs
+\(N^{2c\log2+o(1)}\). The enumeration costs in total at most
+\(N^{c[v(v-1)+2]\log2+o(1)}\).
+
+For the remaining exponent, average over orders. A set \(S\)
+of size \(a\) has coefficient
+\[
+ \frac1d\left(1-\frac a2+
+               \frac12\ind_{\{\text{last index}\in S\}}\right)
+\]
+in \(\sum_{i\ne\mathrm{last}}(\beta_i/(2d)-\delta_i/d)\).
+Its average is \(d^{-1}(1-a/2+a/(2v))\), which is
+\(1/(dv)\) for \(a=2\) and nonpositive for \(a\ge4\).
+As \(2\sum_{|S|=2}\alpha_S\le\sum_i\beta_i\le vd+o(1)\),
+some order has total exponent at most \(v/2+o(1)\).
+The order can depend on the size profile; its \(v!\) choices
+do not affect the estimate. This proves
+\eqref{p13:short:moment-bound}.
+\end{proof}

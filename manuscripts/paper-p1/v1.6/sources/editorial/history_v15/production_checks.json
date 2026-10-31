@@ -1,0 +1,169 @@
+{
+  "edition": "P1 V1.5",
+  "date": "2026-10-31",
+  "status": "passed",
+  "files": {
+    "main": {
+      "file": "P1_V1_5_Main_Article_2026-10-31_EN.pdf",
+      "pages": 62,
+      "bytes": 773284,
+      "sha256": "765b9cd4ee1031a2bf29a8efa4b63daecc0af8fc8121e308b9784b7c49455bd2",
+      "clean_build_same_page_text": true
+    },
+    "companion": {
+      "file": "P1_V1_5_Technical_Companion_2026-10-31_EN.pdf",
+      "pages": 96,
+      "bytes": 994122,
+      "sha256": "cab051663f7bb3c5c9c2aac6a13cd3146fbf64f987e39bd75f5dbb62218e2717",
+      "clean_build_same_page_text": true
+    },
+    "note": {
+      "file": "P1_V1_5_Note_de_revision_2026-10-31_FR.pdf",
+      "pages": 6,
+      "bytes": 243818,
+      "sha256": "42acbd85a874391f3c2fefc1962524e51ab34e7937313cb5eac2104d9d8d6805",
+      "clean_build_same_page_text": true
+    }
+  },
+  "clean_archive_build": {
+    "command": "python3 check_all.py",
+    "all_steps_passed": true,
+    "all_five_diagnostic_results_identical": true,
+    "all_pdf_page_texts_identical": true,
+    "source_inputs_sha256": {
+      "assistance.tex": "02f881757670b758d0e3ec3297065e54f7762e4140ab2879ba98eb5ef0787370",
+      "bibliography.tex": "e9048892929fcb7d3570c1facc64c5981f49e483aaf390b74d0120ca9b50c6a2",
+      "build.py": "c46fa314a5f5a24ef6da30c1cf4274c4814551b81cbf478208e350cfeb993eeb",
+      "build.sh": "a85ed82757be430ff46e1ed1892f2800710fa6a269e9bf014da3a7348e63c414",
+      "check_all.py": "1f18059cbaafc9b3793ef503e8aa6337302ea3e7ee42f164543c1adb6ac2204e",
+      "companion.tex": "e346a577daf23f0b41e14df63ddaf031e4bf6535b2956045534533c903533fb9",
+      "companion_sections/arithmetic.tex": "b7d66a14d3c78cc0a57e04d47e1f1759a43faf46c337964b69aae2b06547c100",
+      "companion_sections/arithmetic_appendix.tex": "5998ad9f04e6a0ac05d18a644ee9514cd5c9f33cb3301e22e239c36d0119f85a",
+      "companion_sections/arithmetic_consequences.tex": "6b65c0b35a1077bef327644732aacc239f9a6ad50af40a1136b22d00d4f08a46",
+      "companion_sections/closure.tex": "0da38b581952f72ce6e7ef518345b69e6118dc8a85048cd9cd85d24ea8e9b9f9",
+      "companion_sections/confinement.tex": "06fd93e7a8b3bf71d94a18df77e5ede551219f89f7fae33bd6d6d7655ad31d34",
+      "companion_sections/cores.tex": "c4138c7f54983c8e97bca5d6736165c6a66d17870976076e2e388af4bc1c73f5",
+      "companion_sections/discussion.tex": "049daf41799e840d6e3a71a33463f91f345120b1bd0902f7cb668374e7949135",
+      "companion_sections/exact_transfer.tex": "430433247a93dd9317cdb435c5ecfd5475b29d639ce446c3d00d99dd769d3ad9",
+      "companion_sections/fixed_moments.tex": "28033cc5b4dcbb227534bbfc7218e5227a92f09308fcc52af86a92d1497abd4e",
+      "companion_sections/guide.tex": "3921ac39e9a80d8fff692c0ae98b54653bf28ef0adf5b8ec9caec0c4da3237db",
+      "companion_sections/half_counts.tex": "f27be44ea2689b57455cfa6cd59f7f0104e9a78b376d690a397dc4fbdcac57de",
+      "companion_sections/limits_appendix.tex": "34cab156244186038b869c9b6c8fe8c60b52184dba8a0320b3882d4d6b336e4f",
+      "companion_sections/moment_obstruction.tex": "68d14a0fefd9caabc9960b5fe26088a3cbe139374f31a6fb5a1152ecac39f7ed",
+      "companion_sections/offset_geometry.tex": "b4b12b1fe8471ace075b882cadfe84e207f9b7d5303d22f64dfbc93391cfc2ef",
+      "companion_sections/pair_rigidity.tex": "5d694892973d4e55dc66d78f72864ffafd28305ad924dbedb3270fbedc23461d",
+      "companion_sections/short_supports.tex": "fdbf1481f7458448b1f57fd1f5684613717be9937c4534fc30a2a84083dc3bbf",
+      "companion_sections/stopped.tex": "f2d257e4a39239c707e12154984e1aada147518814a7ab5bc1838e2f5ce17a0c",
+      "companion_sections/supplemental_arithmetic.tex": "e2390ce3162d371125e10e59e3a7a5d26efc4d4564b7752505a9cc2b6fb28823",
+      "companion_sections/third_cumulant.tex": "9691329f17c4819cdbf65262a15ff8d4e09e672bfe781a32375dd0b2fee367b0",
+      "companion_sections/triple_activities.tex": "5de2149a4a93690f08b9696a278fad7d23a04ff7f30b01dd83d7447686ad2979",
+      "companion_sections/uniform_appendix.tex": "bcc1726be86026b091d6da87e75a442c7d8651128818cba36b9bc33b355a8acb",
+      "diagnostics/certify_biquadratic.py": "0c1a7686d062fd817c09b3158372c3790b6370fcd5df3d189f459cc45210ef7b",
+      "diagnostics/channel_and_triple_checks.py": "329c5b77c3a6529cdec13e96adece84f593f65ab926cc8c863b7dbf2ba5c3c5a",
+      "diagnostics/coefficient_exact_checks.py": "44840f2ef3a2acb97b2bab12f4c3a7ef298954fa21a067491e97d1fd4103e2eb",
+      "diagnostics/heterogeneous_formal_checks.py": "101cabff51ee7debac1d69cbe6a761553dc404956f4e6e243e9094a4c749c74a",
+      "diagnostics/stopped_exact_checks.py": "103f3b4cd6a1297a730e395a915be7df915ad744f5da5c19846c6b565bebd919",
+      "editorial/build_note.sh": "2e1f17a82249b1fc0f9583c1dbc83464fe6910c63a06357e50896e23ecf8d645",
+      "editorial/check_references.py": "b5bdf34dffa1c7c76aec08eeb4f738ffc5d92355e6a6c2a465ffb7dd577d9383",
+      "editorial/note_revision_fr.tex": "3ade5739d9e0833b42450ae5b19395da68e7621ed90648568898c0828e375856",
+      "editorial/production_metrics.tex": "305a9e7ad1e489537403cbc0a2c136f676c3b6b18466d5e664141292054f1700",
+      "editorial/reviews/margin_table_proposal.tex": "28141ebf2fcd941d3537fa7211b5515ad610818fc41fe10d2abf6a46dcede4ff",
+      "main.tex": "105e183102f8cc2da9a935ce532138193abb7f870599c696941404d81c792835",
+      "main_sections/abstract.tex": "866ef4bc3e4dbb2fedea1a4bc067aaa349789f61d290db86fc582cc56c340494",
+      "main_sections/affine_algebra.tex": "34fea577c41c259edbef9b04b52bd501324c30c284cb979a06cbc53fb30e4bcb",
+      "main_sections/arithmetic.tex": "0bd64aff078a960b3c009815a942803c8c330bf3fc816a7cd03aff914cf8c082",
+      "main_sections/channel_hierarchy.tex": "bdca79979d65457ea356da0f75f9233a993e7a2e08e54abdbfd892b4a431cbb4",
+      "main_sections/closure.tex": "02692377d3fc3f21d7f340daa031a521790818cda5982d642b2c15703ee7b32c",
+      "main_sections/confinement.tex": "53ffc06ea57ab11fdccddfc7b1bd8a07a1e5affc634420fd64987068d7bb0562",
+      "main_sections/cores.tex": "7a53361c07d29ec4b2078ab447e00f1814993046b2a7b9cb84fabb438a2f38b3",
+      "main_sections/discussion.tex": "f77dbecc9e0297a7bd9477a30cd65ba2e999b7adf29c204898bc76371ec36a1c",
+      "main_sections/exact_setup.tex": "74fe4e07938ff4f091629028299779e6bb2cf38f7325ed613180e6d2fbd58602",
+      "main_sections/exact_transfer.tex": "3e000a46bcbdd8f8f2c3a9df4dd4b6a67f7e5aa2464e0795603b34ba35b1efaa",
+      "main_sections/fixed_moments.tex": "aeb2bbd50f3034310f7944271aeb5221f86d99726a4edcdbe5bf4b3f2cbcbe49",
+      "main_sections/half_counts.tex": "c0617cd80434a68255f0668a41a31fa13c0f7b7759bd1219912dd7ce43808d33",
+      "main_sections/introduction.tex": "71e2868745e5b2d98e7e4a62095e64f21fb514a32f64763d3df156674e2bf695",
+      "main_sections/limits_appendix.tex": "89587172ef6b3367788931316ffcc774e01d784fefb90ff25d27692ec2db44fb",
+      "main_sections/optimal_closure.tex": "3dd21ec1294dd1d0a1baa7b9325c6afa8623517986e419a06e7aa9ef8531a3db",
+      "main_sections/pair_rigidity.tex": "09e669ea4c155b82d2345e5cd5c88560f7cd918d37be9f54d636851a278b75e7",
+      "main_sections/quartic_lower.tex": "521f6836acb8f7af3d9d77b71ee61946a031055f3889d6f6be02f13608222d5d",
+      "main_sections/short_supports.tex": "377fceab74eb1d6473f2635f8f9f9290e12fcac97ca1dfa99149bf0fdaf22d0f",
+      "main_sections/stopped.tex": "86d9baeed211a18303210d80b98481c15b6a0e16a9c6d2c569f2977de62879e6",
+      "main_sections/third_cumulant.tex": "95154600c27253c8adb8c658ee6277d4f74119220fe9b5a31acdb1cb365bd7cd",
+      "main_sections/triple_activities.tex": "c693ef06624425be0be3928a4e11261ded3f53d96f62fa1cc273d9eb61a15d82",
+      "preamble.tex": "f4e2744b1de05b2e2b88694ea36ee10956a23b9672243452bb4e47dab50d4cdf"
+    }
+  },
+  "document_audit": {
+    "status": "passed",
+    "scope": "Source conservation, reference resolution and link targets only; not mathematical certification.",
+    "baseline_version": "P1 V1.4, 31 October 2026, main 60 pages and companion 93 pages",
+    "original_labels": 545,
+    "new_labels": 545,
+    "missing_labels": [],
+    "duplicate_labels": {},
+    "unknown_references": [],
+    "statement_counts": {
+      "main": {
+        "theorem": 14,
+        "proposition": 21,
+        "lemma": 24,
+        "corollary": 14,
+        "proof": 48
+      },
+      "companion": {
+        "theorem": 6,
+        "proposition": 34,
+        "lemma": 50,
+        "corollary": 4,
+        "proof": 118
+      }
+    },
+    "statement_counts_preserved": true,
+    "statement_number_changes": [],
+    "pages": {
+      "main": 62,
+      "companion": 96
+    },
+    "links": {
+      "main": {
+        "internal": 307,
+        "external": 59
+      },
+      "companion": {
+        "internal": 332,
+        "external": 159
+      }
+    },
+    "bad_link_targets": [],
+    "logs": {
+      "main": {
+        "Overfull": 0,
+        "Underfull": 1,
+        "undefined": 0,
+        "multiply defined": 0
+      },
+      "companion": {
+        "Overfull": 0,
+        "Underfull": 0,
+        "undefined": 0,
+        "multiply defined": 0
+      }
+    }
+  },
+  "statement_texts": {
+    "scope": "Exact statement-text comparison against V1.4; no asymptotic certification.",
+    "changed": [],
+    "counts": {
+      "main": 73,
+      "companion": 94
+    },
+    "passed": true
+  },
+  "visual_review": {
+    "main": "all62 pages in contact sheets; changed and dense pages at full-page scale",
+    "companion": "all96 pages in contact sheets; changed and dense pages at full-page scale",
+    "note": "all6 pages inspected individually; final page3 rerendered",
+    "issues_remaining": []
+  },
+  "scope": "Reproducibility, conservation, references, selected finite computations and layout. No proof-assistant or independent human certification."
+}

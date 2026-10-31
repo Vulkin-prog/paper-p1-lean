@@ -1,0 +1,329 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[provide=*,french]{babel}
+\usepackage{lmodern,microtype}
+\usepackage[a4paper,margin=23mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,mathrsfs,booktabs,tabularx,array,enumitem,fancyhdr,xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!40!black,urlcolor=blue!40!black]{hyperref}
+\usepackage{xurl}
+\input{production_metrics}
+\definecolor{accent}{HTML}{173B5B}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\color{accent} P1 -- Note de révision V1.6}
+\fancyhead[R]{\small 31 octobre 2026}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlength{\emergencystretch}{2em}
+\setlist{itemsep=4pt,topsep=4pt,leftmargin=18pt}
+\renewcommand{\arraystretch}{1.13}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Law}{\mathcal L}
+\newcommand{\eps}{\varepsilon}
+\hypersetup{pdftitle={P1 V1.6 -- Reponse a l'audit de suivi},
+pdfauthor={Brice Pouly},pdfsubject={References, mecanismes, reconstruction et relectures ciblees}}
+\widowpenalty=10000\clubpenalty=10000
+\begin{document}
+{\Large\bfseries\color{accent} P1 V1.6 : réponse à l'audit de suivi}\\[4pt]
+{\large Note de révision -- 31 octobre 2026}
+
+\section*{1. Une consolidation ciblée de l'exposition}
+La V1.6 répond au document
+\nolinkurl{AUDIT_P1_V1_5_2026-10-31_FR.pdf}.
+Elle conserve la scission en \textbf{deux documents associés} :
+\textbf{\MainPageCount{} pages} pour l'article et
+\textbf{\CompanionPageCount{} pages} pour le compagnon.
+Les changements portent sur la comparaison des références, l'explication
+des deux mécanismes d'erreur, les étapes de reconstruction et la navigation.
+Cette édition ne revendique aucun nouvel exposant.
+
+L'audit ne fournit pas de défaut bloquant démontré dans son périmètre.
+Les trois contre-lectures supplémentaires décrites plus loin n'en ont pas
+identifié non plus dans les arguments ciblés. Ces constats ne valent pas
+certification exhaustive du travail. Les recommandations antérieures
+déjà satisfaites ne sont pas rouvertes sans motif.
+
+\subsection*{E1. Réunir les références et leur précision}
+Une table à la fin des résultats introductifs rassemble les six
+comparaisons. Elle renvoie à leurs énoncés respectifs et conserve les
+conditions qui en déterminent la portée.
+
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{.33\textwidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Référence ou observation & Résultat établi\\
+\midrule
+Poisson de moyenne \(\lambda_N\) ou \(\mu_N\)
+& Équivalent explicite d'ordre \(LN^{-2/3}\).\\[5pt]
+Quadratique exacte \(Q_{\mu_N,\alpha_N}\)
+& Puissance optimale \(4/3\), avec marges arbitraires fixées ;
+pas d'équivalent complet du reste.\\[5pt]
+Quadratique nominale \(Q_{\lambda_N,\alpha_N}\)
+& Majorant \(N^{-1+\eps}\) ; distance comparable au biais
+\(|\mu_N-\lambda_N|\) lorsque celui-ci est non nul.\\[5pt]
+Quadratique à canaux jusqu'à \(h\)
+& Équivalent d'ordre \(LN^{-h/(h+1)}\) venant du premier
+étage omis ; \(h\ge3\) reste fixé.\\[5pt]
+Hermite à paramètres exacts
+& Majorant \(N^{-4/3+\eps}\), sans minorant optimal
+correspondant établi ici.\\[5pt]
+Champ positionnel non signé
+& Majorant \(N^{-4/5+\eps}\), avec tout poids polynomial
+de degré fixé dans le compte total.\\
+\bottomrule
+\end{tabularx}
+\normalsize
+
+Les \textbf{\NumberedResultCount{} énoncés numérotés} de type théorème,
+proposition, lemme ou corollaire conservent leur texte LaTeX exact,
+leur document et leur numéro. Les \textbf{\PreservedLabelCount{} repères
+de la V1.5} sont préservés. Un nouveau repère désigne la table.
+
+\subsection*{E5. Alléger la discussion finale}
+Le début de la section 19.3 renvoie désormais à cette table, puis expose
+les questions restantes. Les arguments sur le test de Charlier, les
+moments fixés, l'absence d'un contrôle exponentiel importable et la
+géométrie des poids positionnels sont conservés. Aucun résultat ni
+environnement de preuve n'est supprimé.
+
+\clearpage
+\section*{2. Deux mécanismes, deux échelles}
+\subsection*{E2. Expliquer le témoin ternaire dès l'introduction}
+L'introduction garde l'explication du canal \(2:3\), du marqueur de
+début de run et de l'absence de famille intérieure macroscopique
+\(1:2\) dans le bloc dyadique. La section 1.2 anticipe ensuite le témoin
+\(10:12:15\), dont la preuve demeure en section 14.
+
+Multiplier les fenêtres de centres \(10t,12t,15t\) par \(6,5,4\)
+donne le centre commun \(60t\) et les trois pas \(6,5,4\).
+Les recouvrements rationnels donnent
+\[
+ \rho_L=\left\lfloor\frac{L-1}{6}\right\rfloor
+       +\left\lfloor\frac{L-1}{3}\right\rfloor
+       +\left\lfloor\frac{L-1}{5}\right\rfloor
+       -\left\lfloor\frac{L-1}{15}\right\rfloor
+       =\frac{19}{30}L+O(1).
+\]
+En l'absence de relations supplémentaires, le poids d'un triple
+compatible a l'ordre \(N^{-3+19/30}=N^{-71/30}\).
+Une population d'ordre \(N\) explique donc la puissance \(41/30\).
+
+Cette lecture géométrique ne suffit pas au minorant du cumulant.
+La proposition 14.5 vérifie aussi les coordonnées privées, les signes
+des prédécesseurs, la positivité du coefficient centré et les hôtes
+exceptionnels. Le majorant portant sur \emph{tous} les triples utilise
+les autres secteurs de la section 14 et le compagnon T10.
+Le coefficient \(1/120\), sous \(N=2^L\) et \(30\mid L\), concerne
+la somme des coefficients centrés d'une sous-famille de translations,
+donc sa contribution à \(K_3^+\). Il n'est pas une constante du
+cumulant entier, dont le raccord à \(K_3^+\) comporte le facteur six.
+
+\subsection*{Pourquoi deux paires imposent une échelle plus grande}
+Le second cumulant factoriel a l'ordre \(\alpha_N\asymp LN^{-2/3}\).
+Deux interactions de paires produisent ainsi
+\(\alpha_N^2\asymp L^2N^{-4/3}\), plus grand que l'échelle ternaire.
+La référence exponentielle de Hermite explicite la forme du terme :
+\[
+ H_{\mu,\alpha}
+ =\Pi_\mu*\exp_*(\alpha\Delta^{*2}/2)
+ =Q_{\mu,\alpha}
+  +\frac{\alpha^2}{8}\Pi_\mu*\Delta^{*4}
+  +O_{\ell^1}(\alpha^3).
+\]
+Ce développement ne prouve pas, à lui seul, que la vraie loi possède
+un reste de cette taille. La section 16 établit la non-annulation
+arithmétique pertinente :
+\[
+ \kappa_{4,N}+3\alpha_N^2
+ =24K_4^++3\alpha_N^2+O(N^{-3/2+\eps}),\qquad K_4^+\ge0.
+\]
+Ici \(K_4^+\) somme les coefficients centrés des quadruples connexes
+compatibles. Le test de Charlier est non borné ; sa conversion en
+minorant de norme utilise les moments d'ordre fixé, prouvés séparément.
+Elle fournit la puissance optimale \(4/3\) avec une marge arbitraire,
+sans démontrer un équivalent \(cL^2N^{-4/3}\) du reste.
+
+La marge \(41/30-4/3=1/30\) permet le majorant quadratique.
+Le minorant quartique porte sur cette référence précise. L'Hermite
+contient déjà le terme de deux paires et ne reçoit pas le même minorant.
+
+\clearpage
+\section*{3. Rendre les passages de preuve explicites}
+\subsection*{E3. Le bilan local de reconstruction}
+L'ouverture de la section 15 affiche désormais
+\[
+ \begin{aligned}
+ \|\Law(Z_N)-Q_{\mu_N,\alpha_N}\|_1
+ &\le \|\Law(Z_N)-T_{\mathscr D_2}\|_1
+      +\|T_{\mathscr D_2}-B_2\|_1\\
+ &\qquad+\|B_2-Q_{\mu_N,\alpha_N}\|_1.
+ \end{aligned}
+\]
+La classe \(\mathscr D_2\) retient les familles directes et les
+familles \(e\cup U\) dont la paire dépendante \(e\) et les blocs
+restants forment une somme directe après remplacement de la paire
+par son espace \(S_e\). La condition porte sur la somme directe
+de toute la collection, pas seulement sur des intersections deux à deux.
+
+Le premier terme mesure la frontière de l'arrêt ; le suffixe non
+développé reste une mesure conditionnelle positive. Le deuxième
+contient les déficits indépendants et les déficits de paires, avec
+leurs covariances signées. Une paire incompatible est autorisée dans
+la classe : sa masse jointe est nulle, mais sa covariance reste dans
+\(B_2\). Le troisième est la conversion du \(B_2\) complet, produit
+des Bernoulli hétérogènes augmenté de \emph{toutes} les covariances.
+Son coût est \(N^{-5/3+\eps}\), conformément au lemme 15.1.
+
+Le théorème 15.13 assemble ces trois estimations. Les ordres fixes
+de 3 à 256 et la queue uniforme de la proposition 15.12 restent
+des entrées distinctes. Le bilan ajoute un affichage non numéroté :
+les quatorze énoncés de la section et ses équations gardent leurs numéros.
+
+\subsection*{E4. Entrer dans le compagnon, puis revenir}
+Le guide du compagnon contient une table locale de cinq parcours.
+Elle vise les \emph{sous-sections de preuve complète}, car certains
+lemmes ou propositions portent le même numéro imprimé qu'une sous-section.
+
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{.24\textwidth}>{\raggedright\arraybackslash}p{.25\textwidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Entrée de l'article & Preuve du compagnon & Retour dans l'article\\
+\midrule
+Proposition 9.1 & Sous-section T5.1 & Corollaire 9.2, projections courtes.\\[5pt]
+Théorème 10.1 & Sous-section T6.3 & Corollaire 10.2, hôtes connexes.\\[5pt]
+Théorème 13.2 & Sous-section T9.5 & Proposition 13.3, fibres entières,
+puis comptage uniforme de la section 13.5.\\[5pt]
+Proposition 14.3 & Sous-section T10.1 & Corollaire 14.4, paires fortement alignées.\\[5pt]
+Lemme 15.2 & Sous-section T11.1 & Lemme 15.3, puis masse des primitives.\\
+\bottomrule
+\end{tabularx}
+\normalsize
+
+Cette navigation complète la carte de dépendances de la section 1.5.
+Elle ne la remplace pas et ne modifie pas la répartition entre article
+et compagnon. La branche régulière reste nécessaire à la comparaison
+positionnelle ; elle n'est pas supprimée au motif que la branche
+scalaire utilise maintenant toutes les marginales exactes.
+
+\clearpage
+\section*{4. Contre-lectures et non-régression}
+\subsection*{S1. Trois contrôles techniques séparés}
+Les contre-lectures assistées ont reconstruit les points désignés
+par l'audit à partir des preuves écrites. Leurs comptes rendus
+complets sont inclus dans \texttt{editorial/reviews/}.
+
+\textbf{T5--T6 : degré et induction conditionnelle.}
+Le contrôle porte sur le choix d'une paire de facteurs et d'un
+diviseur prescrit, sans énumération de toutes les allocations ;
+la perte explicite en degré ; l'exposition des incidences paires à
+ordre de moment fixé ; les deux sens du comptage des certificats.
+L'induction diminue le nombre de cibles de deux ou d'une selon le
+receveur, tout en étant simultanée pour chaque nombre fixé de sources.
+Le nombre de seuils est choisi après la précision et avant \(N\).
+
+\textbf{T9 : de la base courte à la courbe commune.}
+Les quatre obligations ont été suivies : extraction, auxiliaire
+à deux témoins, facteur commun à toute la base, puis fibres entières
+dans la grille d'offsets. La division par le pgcd polynomial précède
+la spécialisation. La hauteur linéaire en \(q_0\) de l'auxiliaire est
+distinguée du coût quadratique en \(q_0\) du résultant. La version
+primaire de Binyamini--Cluckers--Novikov citée dans les manuscrits
+confirme le caractère entier et uniforme en degré de l'entrée utilisée.
+
+\textbf{T11 et section 15 : deux cibles et queue uniforme.}
+Le contrôle distingue les deux projections injectives et les comptes
+de composantes par cible. Il suit le choix de la hauteur des coefficients
+avant le nombre d'équations, le retrait des petites courbes et les deux
+strates de rang. Pour la queue, les quatre puissances, la marge minimale
+\(1/60\), la perte \(8K_N=o(L)\), les domaines de cardinalité et la
+grande frontière \(N^{-3+o(1)}\) sont reconstitués séparément.
+
+\textbf{Conclusion de cette passe :} aucune lacune bloquante concrète
+identifiée dans ces raccords ; aucune modification d'énoncé proposée.
+Cela ne constitue ni une expertise humaine indépendante, ni une
+formalisation, ni une certification de toutes les preuves du dossier.
+Les résultats arithmétiques externes ne sont pas redémontrés ici.
+
+\subsection*{N1. Les distinctions à conserver}
+La relecture éditoriale vérifie les sept distinctions de l'audit :
+moyenne exacte ou nominale ; puissance ou équivalent ; hauteur fixée
+ou mobile ; paramètres fixés ou ordre croissant ; quadratique ou
+Hermite ; compte scalaire, champ non signé ou marqué ; identité finie
+ou estimation asymptotique. Les hashes des 167 énoncés V1.5 servent
+en outre de contrôle reproductible de leur conservation textuelle.
+
+Deux formulations sont resserrées : les poids positionnels portent
+sur le \emph{compte total} ; dans l'exemple de T23, l'accord des
+moments est \emph{éventuel pour chaque ordre fixé}, avec un seuil
+qui peut dépendre de cet ordre. Il n'est pas simultané à tous les
+ordres pour deux lois différentes à une échelle donnée.
+
+La bibliographie scientifique reste celle de V1.5, avec 31 entrées.
+Les comptes rendus privés sont des pièces éditoriales, pas des
+références supplémentaires de recherche.
+
+\clearpage
+\section*{5. Vérifications et diffusion complète}
+\subsection*{Contrôles reproductibles}
+La commande suivante compile les deux articles, exécute les cinq
+diagnostics, contrôle les références et produit cette note :
+\begin{center}\texttt{python3 check\_all.py}\end{center}
+Le journal structuré est \texttt{editorial/verification\_run.json}.
+Le contrôle des sources vérifie la conservation des
+\PreservedLabelCount{} anciens repères et des
+\NumberedResultCount{} énoncés, ainsi que leur numérotation et leur texte.
+Le contrôle PDF vérifie \CrossDocumentLinkCount{} renvois entre les
+deux documents et \InternalLinkCount{} liens internes nommés.
+Les rendus des pages modifiées sont inspectés séparément.
+
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{.30\textwidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Diagnostic exécuté & Domaine et identité contrôlés\\
+\midrule
+Bernoulli hétérogènes
+& Huit lois jointes finies, 112 contrôles : marginales, coefficients
+centrés, \(B_2\), cumulants factoriels jusqu'à quatre.\\[5pt]
+Arrêt héréditaire
+& Toutes les classes héréditaires sur un à quatre sites contenant
+l'ensemble vide, tous les états ; suffixe dépendant, déficits et
+seuils finis de positivité.\\[5pt]
+Coefficients de canaux
+& Hauteurs jusqu'à 12, longueurs jusqu'à 96, deux extrémités ;
+placements signés, normes de différences et coefficient \(1/(12e)\).\\[5pt]
+Canaux et triplets
+& Hauteurs 3 à 10, longueurs 5 à 150 avec \(L\ge b\) ; préfacteurs
+de phase 4, 5, 6 ; triplets \(2\le u<150\), \(u<v<w<2u\) ;
+nullité du témoin pour \(31\le L\le300\).\\[5pt]
+Norme biquadratique
+& Une instance symbolique rationnelle exacte de l'auxiliaire et de
+ses annulations.\\
+\bottomrule
+\end{tabularx}
+\normalsize
+
+Ces diagnostics sont ceux des sources de P1, relancés pour cette
+édition. Ils ne sont pas les programmes privés du nouvel audit,
+qui ne sont pas joints à son PDF. Ils ne vérifient ni l'uniformité
+asymptotique, ni un seuil numérique de validité des théorèmes.
+
+\subsection*{E6. Garder la paire de manuscrits avec ses sources}
+L'archive \nolinkurl{P1_V1_6_Complete_2026-10-31.zip} réunit
+l'article anglais, le compagnon anglais, cette note française et
+\nolinkurl{P1_V1_6_Sources_2026-10-31.zip}.
+Les deux PDF scientifiques conservent les noms relatifs utilisés
+par leurs liens croisés. Leurs références imprimées restent utilisables
+si le lecteur PDF ne suit pas ces liens.
+
+L'archive de sources contient les trois documents LaTeX, les commandes
+de construction, la bibliographie commune, les cinq diagnostics et leurs
+résultats, les tables de correspondance, les rapports ciblés et le
+manifeste SHA-256. Les comptes rendus V1.4 et V1.5 sont identifiés
+comme historiques. La reconstruction depuis une extraction propre
+est contrôlée avant diffusion.
+
+L'assistance de ChatGPT (GPT-6 Astra) demeure déclarée dans les deux
+manuscrits. L'auteur reste responsable des résultats et de toute soumission.
+\end{document}

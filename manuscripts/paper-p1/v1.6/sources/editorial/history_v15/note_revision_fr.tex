@@ -1,0 +1,358 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[provide=*,french]{babel}
+\usepackage{lmodern,microtype}
+\usepackage[a4paper,margin=23mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx,array,enumitem,fancyhdr,xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!40!black,urlcolor=blue!40!black]{hyperref}
+\usepackage{xurl}
+\input{production_metrics}
+\definecolor{accent}{HTML}{173B5B}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\color{accent} P1 -- Note de révision V1.5}
+\fancyhead[R]{\small 31 octobre 2026}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlength{\emergencystretch}{2em}
+\setlist{itemsep=4pt,topsep=4pt,leftmargin=18pt}
+\renewcommand{\arraystretch}{1.13}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Law}{\mathcal L}
+\newcommand{\eps}{\varepsilon}
+\hypersetup{pdftitle={P1 V1.5 -- Note de revision et reponse aux retours},
+pdfauthor={Brice Pouly},pdfsubject={Attributions, preuves developpees, marges et controle de la revision}}
+\widowpenalty=10000\clubpenalty=10000
+\begin{document}
+{\Large\bfseries\color{accent} P1 V1.5 : réponse aux deux retours}\\[4pt]
+{\large Note de révision -- 31 octobre 2026}
+
+\section*{1. Ce que cette version change}
+La V1.5 conserve l'organisation en \textbf{deux documents associés} :
+l'article principal compte \textbf{\MainPageCount{} pages}, le compagnon
+\textbf{\CompanionPageCount{} pages}. Elle précise les attributions,
+développe un dénombrement conditionnel dense et rend explicites les
+dépendances et les marges de la démonstration. Elle ne revendique pas
+de nouvel exposant par rapport à la V1.4.
+
+La révision répond à l'\emph{Audit bibliographique et de priorité de P1 V1.4}
+et à la \emph{Contre-review de P1 V1.4}, tous deux datés du
+31 octobre 2026. Ces retours ne fournissent pas de contre-exemple établi
+ni de lacune bloquante. Leurs demandes ont été vérifiées dans les passages
+concernés et, pour les nouvelles attributions, dans les textes primaires.
+Ils restent des documents de travail éditorial et ne sont pas ajoutés à
+la bibliographie scientifique.
+
+\subsection*{Les résultats centraux conservés}
+Avec \(\mu_N=\E Z_N\), \(\alpha_N=\operatorname{Var}(Z_N)-\mu_N\),
+\(\Pi_\mu=\operatorname{Pois}(\mu)\), \(\Delta=\delta_1-\delta_0\) et
+\[
+ Q_{\mu,\alpha}=\Pi_\mu+\frac{\alpha}{2}\Pi_\mu*\Delta^{*2},
+\]
+le théorème 1.1 conserve, pour toute marge fixe \(\eps>0\),
+\[
+ c_{C,\eps}N^{-4/3-\eps}
+ \le \|\Law(Z_N)-Q_{\mu_N,\alpha_N}\|_1
+ \le C_{C,\eps}N^{-4/3+\eps}.
+\]
+Le troisième cumulant factoriel conserve la puissance optimale
+\(41/30\). Pour les références explicites retenant les canaux jusqu'à
+une hauteur \(h\) fixée, la puissance reste \(h/(h+1)\), avec
+l'équivalent donné par le premier niveau omis.
+
+Les \textbf{\NumberedResultCount{} énoncés numérotés} de type théorème,
+proposition, lemme ou corollaire gardent leur document et leur numéro.
+Les \textbf{\PreservedLabelCount{} repères de la V1.4} sont conservés.
+La correspondance complète V1.4--V1.5 figure dans les sources.
+
+\subsection*{Le sens des corrections}
+Trois outils sont désormais attribués directement à leurs sources :
+la borne binaire de Griesmer, l'expansion abstraite de Zeilberger et le
+comptage quadratique uniforme de Cilleruelo--Garaev, également formulé
+par Tao. Les comparaisons avec les approximations discrètes classiques
+sont précisées. La contribution de P1 est ainsi décrite au niveau des
+coefficients et configurations arithmétiques, des restes en norme et
+des échelles optimales pour les références spécifiées.
+
+\clearpage
+\section*{2. Réponses aux demandes techniques}
+
+\subsection*{R1. Développer le comptage à deux fenêtres}
+\textbf{Traitement : intégré dans le lemme 15.2 et sa preuve en T11.}
+Le résumé dans l'article est complété par une preuve structurée dans le
+compagnon. Elle explicite les étapes suivantes.
+
+Le noyau de l'application somme
+\(W\oplus S_y\oplus S_z\to W+S_y+S_z\) se projette injectivement
+sur chacune des deux cibles, puisque \(S_y\cap W=S_z\cap W=0\).
+Après régularisation, les étiquettes de chaque cible engendrent le dual
+du noyau restreint. Chaque composante binaire ne porte qu'une étiquette ;
+le nombre de composantes rencontrant \emph{chaque} cible est donc minoré
+séparément par la dimension restante. Les sommets actifs isolés sont inclus.
+
+Les circuits de premiers rencontrant au moins trois blocs doivent toucher
+une source fixée, car seules deux cibles sont libres. Les produits de
+premiers correspondants divisent alors des valeurs de source fixées.
+La preuve distingue le choix des paramètres qui bornent la hauteur des
+coefficients du choix ultérieur du nombre d'équations géométriques.
+
+Pour un alignement faible comportant \(u\) unités, l'inégalité
+\(u-2\le\dim(S_y\cap S_z)\) contrôle le nombre de composantes à exclure :
+au plus \(2(u-1)\). Il s'agit de retirer des composantes de la collection
+sélectionnable, sans imposer une nouvelle restriction au noyau.
+Si \(m_t\) composantes subsistent dans la cible \(t\), celles qui
+n'utilisent qu'une coordonnée sont au nombre de
+\[
+ n_{1,t}\ge 2m_t-B,\qquad t=y,z,\quad B=L+1.
+\]
+Au-dessus du seuil \((1/2+\delta)L\), cette borne force des occurrences
+à une seule coordonnée dans les deux cibles. Elle permet le dénombrement
+renforcé, puis le passage aux poids \(p_yp_z2^d\).
+
+\subsection*{R2. Rendre les petites pertes vérifiables}
+\textbf{Traitement : registre des marges en section 1.5 et renvois dans
+les sections 14--17.} La marge finale demandée est distinguée des
+tolérances internes. Les écarts \(1/120\), \(1/60\), \(1/30\) et
+\(2/15\) sont calculés explicitement ; la page suivante les rassemble.
+Le registre de sources détaille également les quatre contributions de
+la queue uniforme et les termes situés exactement à l'échelle \(4/3\).
+
+\subsection*{R3. Montrer où l'uniformité en coefficients intervient}
+\textbf{Traitement : tableaux de paramètres et ordre des choix dans T1.}
+Les preuves proches de T1.4 et T1.7 distinguent dimension ambiante,
+degré, hauteur des points, hauteur des coefficients et normalisation
+des boîtes. La dépendance de l'énoncé de Reuss en son paramètre fixé
+est signalée ; l'uniformisation utilisée ici est rattachée au calcul
+du compagnon. Elle n'est pas présentée comme une conséquence gratuite
+d'un théorème cité avec coefficients fixés.
+
+\clearpage
+\section*{3. Le registre des marges}
+Dans ce tableau, un exposant \(\beta\) signifie une contribution
+majorée par \(N^{-\beta+\text{perte}}\). La perte à comparer à la marge
+est celle de la \emph{branche complète}, après produits, propagations
+et choix de configurations.
+
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\centering\arraybackslash}p{.19\textwidth}>{\centering\arraybackslash}p{.19\textwidth}@{}}
+\toprule
+Comparaison & Écart exact & Usage\\
+\midrule
+Cible non alignée au-dessus d'une paire rationnelle :
+\(11/8\) contre \(41/30\)
+& \(1/120\) & Triplets\\[5pt]
+Queue uniforme à faible nullité :
+\(27/20\) contre \(4/3\)
+& \(1/60\) & Reconstruction\\[5pt]
+Activité des triplets :
+\(41/30\) contre \(4/3\)
+& \(1/30\) & Majorant scalaire\\[5pt]
+Triplets incompatibles :
+\(3/2\) contre \(41/30\)
+& \(2/15\) & Signe du cumulant\\
+\bottomrule
+\end{tabularx}
+\normalsize
+
+Les quatre exposants de décroissance issus des certificats uniformes
+après paiement du facteur de rang sont
+\[
+ \frac32,\qquad \frac{1106}{375},\qquad
+ \frac{27}{20},\qquad \frac{2279}{1500}.
+\]
+Leurs gains sur \(4/3\) sont respectivement
+\[
+ \frac16,\qquad \frac{202}{125},\qquad
+ \frac1{60},\qquad \frac{93}{500}.
+\]
+Les produits de deux activités de paires et les primitives à quatre
+blocs sont en revanche déjà à l'échelle \(N^{-4/3+o(1)}\).
+Ils sont conservés dans le reste cible ; aucune marge strictement
+positive ne leur est attribuée.
+
+\subsection*{Ordre des choix}
+On prescrit d'abord \(C\) et la précision finale \(\eps_0>0\).
+On choisit ensuite une précision auxiliaire
+\[
+ 0<\tau<\min(\eps_0/4,\,1/960).
+\]
+Chaque estimation auxiliaire est demandée avec une perte totale au
+plus \(\tau\), en répartissant cette précision entre ses propres
+paramètres internes. Une multiplication de deux estimations peut
+donc consommer \(2\tau\). Les seuils géométriques et de rang ne sont
+pas tous identifiés à ce même nombre.
+
+Pour la borne inférieure, l'ordre de Hölder \(k\) est fixé après
+\(\eps_0\), avec \(4/[3(k-1)]\le\eps_0\), puis \(N\) tend vers
+l'infini. Pour les activités connexes de la reconstruction, les ordres
+jusqu'à 256 restent séparés d'une queue uniforme ; 256 est un seuil
+suffisant, sans revendication d'optimalité.
+Le fichier \texttt{editorial/reviews/margin\_budget.json} contient
+les calculs rationnels et leur emplacement dans les preuves.
+
+\clearpage
+\section*{4. Dépendances, portée et reproductibilité}
+
+\subsection*{R4. Identifier les chemins de preuve}
+\textbf{Traitement : carte à flèches en section 1.5 et guide du compagnon.}
+Les moments fixés de \(Z_N\) sont prouvés avant l'approximation en loi.
+Les moments des sélections courtes, qui portent sur des valeurs
+polynomiales de la fonction multiplicative, sont un autre outil,
+avec leur propre plage de degrés.
+
+Le contrôle des triplets alimente la reconstruction. Le lemme quartique
+utilise les estimations de paires, de triplets et de déficits d'extension,
+puis le minorant utilise les moments fixés indépendants. Il n'emprunte
+pas la conclusion de reconstruction pour établir ces moments.
+Les erreurs scalaires pondérées sont, elles, des conséquences du
+théorème principal et de ces mêmes moments.
+
+\subsection*{R5. Maintenir les limites de chaque optimalité}
+\textbf{Traitement : conservé et vérifié dans l'introduction et la discussion.}
+Le taux \(4/3\) est une optimalité de puissance pour la référence
+quadratique exacte. Il ne fournit ni constante principale ni facteur
+logarithmique du reste. La puissance \(41/30\) du troisième cumulant
+ne constitue pas davantage un équivalent complet.
+
+La référence de Hermite exacte contient déjà
+\(\alpha_N^2\Pi_{\mu_N}*\Delta^{*4}/8\). Le test quartique utilisé
+pour \(Q_{\mu_N,\alpha_N}\) ne donne donc pas le même minorant
+pour Hermite. Les théorèmes de canaux conservent \(h\) fixé.
+Le résultat positionnel garde les positions entières non signées
+avec erreur de puissance \(4/5\), sans signes ni longueurs excédentaires.
+
+\subsection*{R6. Classer les prolongements et donner une commande unique}
+\textbf{Traitement : tableau dans le guide du compagnon et vérification regroupée.}
+La preuve positionnelle de T19 est nécessaire au lemme 20.1 de l'article.
+Les autres résultats de T19 et les sections T20--T23 apportent des
+prolongements ou explicitent des limites ; ils ne sont pas des entrées
+du théorème scalaire optimal. Cette classification décrit leur rôle
+logique au sein du même travail.
+
+Depuis la racine des sources, une seule commande lance les compilations,
+les cinq diagnostics finis et le contrôle des références :
+\begin{center}
+\texttt{python3 check\_all.py}
+\end{center}
+Le résultat structuré est écrit dans
+\texttt{editorial/verification\_run.json}. Les journaux de compilation
+restent dans le répertoire de travail \texttt{build/}.
+Le README détaille les dépendances et les identités examinées.
+Ce dispositif contrôle les documents et certains calculs finis ; il
+n'est pas un vérificateur des démonstrations asymptotiques.
+
+\clearpage
+\section*{5. Réponse à l'audit bibliographique}
+Les six ajouts sont numérotés 26--31 après les 25 références déjà
+présentes, dont le contenu et l'ordre sont conservés. Les numéros
+ci-dessous désignent la bibliographie commune aux deux manuscrits.
+
+\small
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{.28\textwidth}>{\raggedright\arraybackslash}X@{}}
+\toprule
+Source ajoutée & Attribution et emplacement\\
+\midrule
+{[26]} Griesmer (1960)
+& Borne binaire et preuve par code résiduel, avant le lemme 2.1.
+Le support arithmétique minimal et l'application aux fenêtres restent
+explicitement distingués de l'inégalité classique.\\[6pt]
+{[27]} Zeilberger (1997)
+& Identité d'arrêt en section 5. La correspondance avec la lace-map,
+ses points fixes et ses ensembles compatibles est donnée après le
+lemme 5.1 ; l'identité générale n'est pas revendiquée comme nouvelle.\\[6pt]
+{[28]} Cilleruelo--Garaev (2011)
+& Comptage quadratique uniforme de T1.2, avec référence au lemme 4
+et à la proposition 1 de la version précisée. Le cas non carré et
+le cas traité par factorisation sont séparés.\\[6pt]
+{[29]} Tao (2026, v3)
+& Formulation complémentaire au lemme 2.10, citée dans T1.2.
+Cette référence ne remplace pas l'antécédent de Cilleruelo--Garaev,
+que le texte de Tao cite lui-même.\\[6pt]
+{[30]} Čekanavičius--Vellaisamy (2015)
+& Comparaison des corrections quadratique et exponentielle :
+introduction, ouverture du quartique et discussion. Leurs hypothèses
+de dépendance locale ne sont pas transposées au modèle de P1.\\[6pt]
+{[31]} Chhaibi et coauteurs (2020)
+& Contexte des équivalents de distance en convergence mod-\(\phi\).
+Le paramètre divergent et la régularité des résidus de Fourier du
+théorème 3.11 sont distingués du régime de moyennes bornées de P1.\\
+\bottomrule
+\end{tabularx}
+\normalsize
+
+\subsection*{Ce qui a été vérifié dans les sources}
+Les localisateurs ont été confrontés aux versions primaires indiquées :
+§2 et (2.10) de Griesmer ; formule (*) de Zeilberger ;
+§3 de Cilleruelo--Garaev ; lemme 2.10 de Tao v3 ;
+théorèmes 3.1--3.2, (3.5)--(3.6), du journal ALEA ;
+théorème 3.11 et hypothèse H2 du texte publié des Annales de l'Institut Fourier.
+
+L'article original de Griesmer a été lu sur son scan, bien que son
+résolveur DOI n'ait pas été accessible pendant ce contrôle.
+Les versions, URL, localisateurs et limites sont consignés dans
+\texttt{editorial/reviews/bibliography\_verification.json}.
+Il s'agit d'une vérification ciblée des ajouts, sans prétention à une
+recherche exhaustive de priorité.
+
+Le crédit donné à \emph{Paper C v3} est conservé : la loi de Poisson
+du champ marqué et l'apparition de l'interaction \(2:3\) ne sont pas
+présentées comme des nouveautés de P1.
+
+\clearpage
+\section*{6. Contrôles, sources et circulation}
+
+\subsection*{Intégrité des deux manuscrits}
+La table de correspondance V1.4--V1.5 suit les
+\PreservedLabelCount{} anciens repères et les
+\NumberedResultCount{} énoncés numérotés. Le contrôle vérifie leur
+conservation, l'absence de doublons, la stabilité des numéros des
+énoncés, la résolution des renvois et les cibles des liens PDF.
+Les compilations finales contrôlent \CrossDocumentLinkCount{} liens
+entre documents et \InternalLinkCount{} liens internes.
+
+Les deux documents scientifiques doivent être conservés ensemble
+avec leurs noms fournis pour utiliser les liens croisés. Les références
+imprimées, notamment les numéros commençant par T, restent utilisables
+sans cette fonction du lecteur PDF.
+
+\subsection*{Les cinq diagnostics finis}
+\begin{enumerate}
+\item \textbf{Marginales hétérogènes :} huit lois jointes finies de Bernoulli,
+112 contrôles exacts des probabilités, coefficients centrés, référence
+de Bernoulli avec covariances et identités de cumulants factoriels jusqu’à l’ordre quatre.
+\item \textbf{Arrêt héréditaire :} toutes les classes héréditaires
+contenant l'ensemble vide sur au plus quatre sites et tous leurs
+états d'indicateurs ; exemple à suffixe dépendant, identité de
+paire retenue et seuils finis de positivité.
+\item \textbf{Coefficients :} identités de canaux de hauteurs
+2 à 12, longueurs jusqu'à 96, deux conventions d'extrémité ;
+placements signés, normes de la deuxième différence de Poisson aux moyennes 1 et 2, facteur
+\(1/(12e)\) à moyenne unitaire.
+\item \textbf{Canaux et triplets :} identités de hauteur au plus 10,
+préfacteurs rationnels des constantes de phase aux hauteurs 4, 5 et 6,
+triplets primitifs dyadiques
+\(2\le u<150\), \(u<v<w<2u\), et nullités du témoin
+\(10:12:15\) pour les longueurs 31 à 300.
+\item \textbf{Construction biquadratique :} une instance symbolique
+exacte de l'auxiliaire, avec calculs rationnels et vérifications
+de ses annulations.
+\end{enumerate}
+Les cinq scripts sont relancés par la commande unique. Leur domaine
+fini est explicite. En particulier, l'énumération des triplets ne
+remplace pas la preuve générale de la borne \(19/30\), et un
+certificat symbolique isolé ne prouve pas l'uniformité en degré.
+
+\subsection*{Contenu de l'archive}
+L'archive contient les sources des trois PDF, la bibliographie commune,
+les commandes de compilation et de contrôle, les diagnostics et leurs
+résultats, les correspondances V1.3--V1.4 et V1.4--V1.5, les comptes
+rendus ciblés et un manifeste SHA-256. Les anciens comptes rendus
+de V1.4 sont identifiés comme historiques.
+
+Les relectures assistées et les calculs exacts renforcent la traçabilité
+de cette révision. Ils ne constituent ni une expertise humaine
+indépendante ni une certification par assistant de preuve.
+L'auteur reste responsable des résultats et de toute soumission.
+\end{document}

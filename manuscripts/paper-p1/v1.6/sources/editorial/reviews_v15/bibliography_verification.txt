@@ -1,0 +1,113 @@
+P1 V1.5 — Vérification bibliographique ciblée
+Date : 31 octobre 2026
+
+PORTÉE
+
+L'audit bibliographique et de priorité transmis a été lu intégralement.
+Les six ajouts proposés ont été confrontés à leurs textes primaires :
+article original numérisé, versions d'auteur ou textes des revues.
+Cette fiche vérifie l'attribution d'outils et la portée des comparaisons.
+Elle ne constitue ni une nouvelle recherche exhaustive de priorité,
+ni une certification des preuves de P1 ou des articles cités.
+
+Les 25 entrées de V1.4 sont conservées à l'identique et dans le même
+ordre. Six entrées sont ajoutées à la fin. Les deux rapports de lecture
+restent des documents éditoriaux internes, hors de la bibliographie
+scientifique. Aucun changement de théorème n'est motivé par ces ajouts.
+
+26. griesmer1960 — ATTRIBUTION DIRECTE
+
+Texte lu : scan de l'article original, IBM Journal, novembre 1960,
+pp. 532–542 ; §2, théorème 2, équation (2.10), p. 535.
+Le minorant classique de la longueur d'un code binaire linéaire donne
+la version tronquée en redondance utilisée dans le lemme 2.1 de P1.
+Le raisonnement par code résiduel doit être crédité à Griesmer ; la
+minoration arithmétique du poids et son application aux fenêtres sont
+les étapes propres à P1. La preuve courte reste utile.
+Le texte primaire est accessible par le scan Bitsavers. Le résolveur
+DOI n'a pas été accessible dans cette session ; le DOI fourni par
+l'audit est conservé, sans prétendre avoir validé son fonctionnement.
+
+27. zeilberger1997 — ATTRIBUTION DIRECTE
+
+Texte lu : version d'auteur, p. 1, axiomes de lace-map et formule (*).
+Métadonnées contrôlées sur la notice de l'éditeur : Advances in Applied
+Mathematics 19 (1997), no 3, 355–359 ; DOI 10.1006/aama.1997.0552.
+La correspondance est exacte : l(S)=S pour S dans la classe retenue,
+sinon l(S) est son premier préfixe exclu. Les fibres sont les intervalles
+booléens [I,I∪C(I)], avec C(I) vide sur la classe et égal au suffixe
+strict après max I sur sa frontière. La formule (*) donne l'identité
+polynomiale de P1 avec Y_x=t u_x. Le noyau positif et son emploi sont
+expliqués dans P1 ; l'identité générale n'est pas revendiquée comme
+nouvelle. La date de dépôt arXiv 1998 ne remplace pas l'année 1997.
+
+28. cilleruelogaraev2011 — ATTRIBUTION DIRECTE
+
+Texte lu : arXiv:1007.1526v2, §3, proposition 1 et lemme 4 (p. 5),
+preuve pp. 5–7. Le titre publié comporte « of points », contrairement
+au titre de cette prépublication. Les métadonnées publiées sont celles
+de Springer : GAFA 21 (2011), no 4, 892–904.
+Le lemme 4 traite x²−Ay²=E lorsque A n'est pas carré, avec coefficients
+et variables de tailles polynomiales, et donne M^{o(1)} solutions.
+Pour au²−bv²=h, multiplier par a donne A=ab et E=ah. Si ab est carré,
+le traitement se fait par factorisation et diviseurs ; h≠0 est essentiel.
+La proposition 1 impose elle aussi un discriminant non carré.
+Ne pas remplacer ces hypothèses par une assertion sur toute conique.
+
+29. tao2026anatomy — FORMULATION COMPLÉMENTAIRE
+
+Texte lu : arXiv:2603.27990v3, §2.5, lemme 2.10 et preuve.
+La notice arXiv et le texte confirment le 26 septembre 2026.
+Le lemme compte directement an²+h=bm², avec a,b positifs, h non nul,
+tailles polynomiales et n≤x, par x^{o(1)}. Le texte cite expressément
+Cilleruelo–Garaev, lemme 4 et proposition 1 : Tao ne doit donc pas
+être présenté comme la première source de cette uniformité.
+Cette formulation récente est pertinente en complément de l'antécédent
+de 2011, sans changement de la portée du lemme T1.2 de P1.
+
+30. cekanaviciusvellaisamy2015 — COMPARAISON PROBABILISTE
+
+Texte lu : article de la revue ALEA 12 (2015), 765–792 ; définitions
+du §1, conditions (3.1)–(3.2) p. 768, théorèmes 3.1 et 3.2 p. 770.
+Les formules (3.5) et (3.6) comparent effectivement la correction
+quadratique de Poisson et son exponentielle de convolution. Le premier
+reste comporte un terme R_0² absent du second. Les hypothèses portent
+sur des variables entières positives 1-dépendantes, avec conditions
+de petits moments et un paramètre de lissage positif ; les sommes
+m-dépendantes peuvent être regroupées. Ce résultat ne s'applique pas
+directement à la dépendance arithmétique à longue distance de P1.
+La comparaison attribue les références et la structure des restes,
+sans importer leurs bornes. Les localisateurs sont ceux du journal.
+La notice arXiv:1301.7196v3 confirme une révision du 4 novembre 2015.
+
+31. chhaibietal2020 — CONTEXTE DES ÉQUIVALENTS
+
+Texte lu : édition publiée AIF 70 (2020), no 3, 1115–1197,
+théorème 3.11 p. 1146 ; hypothèse (H2) p. 1144 et cadre du §1.
+Le résultat fournit des équivalents de distance pour des schémas
+mod-phi avec paramètre tendant vers l'infini, sous régularité des
+résidus et hypothèse de troisième moment sur la loi de référence.
+Dans P1, les moyennes restent dans un compact de (0,+∞) : cette
+source fournit un contexte, pas un théorème directement applicable.
+Convention à garder dans la fiche : leur d_TV est la norme l1,
+sans le facteur 1/2 de la convention de P1. Aucune constante n'est
+transférée entre les deux textes.
+
+CONCLUSIONS ÉDITORIALES
+
+— Créditer Griesmer avant le lemme de rigidité locale.
+— Nommer Zeilberger et préciser la spécialisation au premier préfixe.
+— Présenter T1.2 comme un outil classique avec ses uniformités explicites.
+— Ajouter les deux comparaisons probabilistes au contexte, et la
+  comparaison quadratique/exponentielle dans la discussion.
+— Conserver la reconnaissance de Paper C v3 : la première loi de Poisson
+  de ce modèle et le canal 2:3 ne sont pas présentés comme nouveaux ici.
+— Maintenir les limites : puissance optimale 4/3 pour la référence
+  quadratique exacte ; absence de minoration correspondante pour
+  l'Hermite exacte ; hauteur de troncature fixée ; pas de constante
+  asymptotique déduite d'une simple borne N^{epsilon}.
+
+Les URL primaires, références de récupération et statuts détaillés
+figurent dans bibliography_verification.json. Les textes d'insertion
+anglais sont proposés dans bibliography_insertions.txt ; ils n'ont
+pas été insérés automatiquement dans les autres sections.

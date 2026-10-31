@@ -1,0 +1,50 @@
+P1 V1.6 — Contrôle visuel du compagnon technique
+Date : 31 octobre 2026
+Relecteur : agent p16_dense_transfer_review (assistance GPT-6 Astra)
+
+Fichier contrôlé : P1_V1_6_Technical_Companion_2026-10-31_EN.pdf,
+copie figée dans tmp/p16_visual/final, 96 pages.
+
+Périmètre des images effectivement inspectées :
+- pages détaillées 1, 3, 4, 5 et 6 ;
+- huit planches de contact couvrant les pages 1–12, 13–24, 25–36,
+  37–48, 49–60, 61–72, 73–84 et 85–96.
+
+Résultat : aucun défaut visuel concret identifié dans ce périmètre.
+
+Table entrée / preuve / retour, page 4 :
+Les trois colonnes sont lisibles, les cinq itinéraires restent distincts,
+les retours à la ligne sont naturels et le contenu reste dans les marges.
+Les libellés identifient explicitement les sous-sections du compagnon ;
+la mention « Lemma T6.3 » est distinguée de « Subsection T6.3 ». Les
+références bleues et les filets du tableau ne se superposent pas au texte.
+La table entière tient sur une page. Aucune ligne ni cellule n'est coupée.
+
+Continuité du guide, pages 3–4 :
+La page 3 contient le titre, les conventions, les entrées techniques et
+l'annonce développée des itinéraires. Le tableau commence nettement en
+haut de la page 4 ; il n'y a pas de titre isolé sans texte d'accompagnement.
+Les paragraphes qui suivent la table gardent un espacement cohérent.
+Le second tableau de portée en page 4 reste lisible, complet et séparé
+du précédent. Les dernières lignes n'empiètent pas sur le pied de page.
+
+Pages détaillées 1, 5 et 6 :
+Le titre, l'auteur, la mention d'assistance, la version 1.6 et la date sont
+clairs. Les formules et les numéros examinés restent dans le bloc de texte.
+Les transitions de preuve entre les pages 5 et 6 sont propres. Aucun
+caractère de remplacement, carré noir inattendu ou formule tronquée n'a
+été observé dans ces images détaillées.
+
+Vue structurelle de l'ensemble des 96 pages :
+Les marges, en-têtes, pieds de page et niveaux de titres sont réguliers.
+Aucune page accidentellement blanche, grande zone de texte manquante,
+superposition de blocs ni débordement évident n'a été observé sur les
+huit planches. Les formules, tableaux et références restent dans les
+zones prévues à cette échelle. Les pages bibliographiques finales sont
+complètes visuellement ; aucun changement brutal de gabarit n'apparaît.
+
+Limite du contrôle : les planches servent à détecter des défauts de
+structure et de mise en page. Elles ne constituent pas une lecture de
+chaque glyphe des 96 pages, une validation des destinations des liens,
+ni une vérification mathématique supplémentaire. Aucun manuscrit n'a
+été modifié pendant cette passe.

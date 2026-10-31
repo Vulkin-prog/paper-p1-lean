@@ -1,0 +1,96 @@
+P1 V1.5 — Relecture croisée des modifications éditoriales de l'article
+31 octobre 2026 — Lecture seule des fichiers .tex
+
+PÉRIMÈTRE
+
+Comparaison avec V1.4 de main_sections/exact_setup.tex, stopped.tex,
+introduction.tex, quartic_lower.tex et discussion.tex. Vérification
+complémentaire des restrictions de portée dans abstract.tex,
+third_cumulant.tex, channel_hierarchy.tex et limits_appendix.tex.
+Cette relecture porte sur les ajouts et leur positionnement ; elle
+n'est pas une certification intégrale des démonstrations.
+
+1. ATTRIBUTION À GRIESMER — CONFORME
+
+L'ajout identifie correctement la borne classique appliquée au code
+des relations carrées paires, tout en isolant la minoration arithmétique
+du poids non nul. L'argument par code résiduel et l'énoncé sont conservés.
+
+2. LACE-MAP — TROIS AXIOMES VÉRIFIÉS
+
+Pour S retenu, l(S)=S ; pour S exclu, l(S)=I est son premier préfixe
+exclu. On vérifie explicitement :
+
+(i) Inclusion. Dans les deux cas l(S) est un sous-ensemble de S.
+
+(ii) Stabilité entre l(S) et S. Si l(S)=S, l'ensemble intermédiaire
+T vaut S. Sinon S=I union U, où chaque élément de U est après max I.
+Tout T compris entre I et S a encore I pour premier préfixe exclu :
+les préfixes propres de I sont retenus, et I est exclu.
+
+(iii) Stabilité sous union à image égale. Une image retenue I possède
+la seule préimage I. Une image de frontière I a pour préimages les
+ensembles I union U avec U dans le suffixe strict ; leur union conserve
+donc le même premier préfixe exclu.
+
+Les points fixes sont exactement D union frontière(D). L'ensemble
+compatible est vide sur D et égal au suffixe strict sur la frontière.
+La substitution Y_x=t u_x dans la formule (*) de Zeilberger donne bien
+l'identité du manuscrit. La formulation ajoutée ne surestime pas
+l'originalité de cette identité.
+
+3. COMPARAISONS PROBABILISTES — PORTÉE CORRECTE
+
+Les paragraphes Čekanavičius–Vellaisamy distinguent les références
+quadratique et exponentielle, et mentionnent la dépendance locale,
+les conditions de moments et l'emploi contextuel de la comparaison.
+Ils n'importent pas leur estimation dans le modèle de P1.
+
+Le rapprochement Chhaibi et al. distingue explicitement le paramètre
+tendant vers l'infini des moyennes bornées de P1. Une précision de
+vocabulaire a été signalée au rédacteur : préférer « a regularity
+condition on the Fourier residues » à « an analytic residue condition ».
+L'hypothèse H2 est une hypothèse de régularité C1 et de développement
+local uniforme ; elle n'impose pas l'analyticité au sens usuel.
+Cette précision a ensuite été intégrée et relue dans l'introduction.
+
+L'ajout quartique attribue correctement le terme formel classique et
+laisse à P1 son contrôle arithmétique, la question du signe et la
+justification du test non borné. Aucun théorème général de la littérature
+n'est présenté comme fournissant à lui seul la conclusion de P1.
+
+4. RESTRICTIONS R5 — TOUJOURS VISIBLES
+
+— Référence quadratique exacte : définition Q et théorème principal ;
+  discussion de la référence Hermite avec absence explicite de
+  minoration correspondante et non-transfert de l'obstruction quartique.
+— Puissance avec epsilon : double inégalité dans le résumé et le
+  théorème principal ; paragraphe suivant excluant facteur logarithmique
+  et constante principale déterminés pour ce reste.
+— Troisième cumulant : bornes de puissance et absence de constante
+  asymptotique dans l'introduction ; absence d'équivalent et de facteur
+  logarithmique identifiés dans le théorème du troisième cumulant.
+— Hauteur fixée : introduction, résumé, section des canaux et nouveau
+  guide de dépendances ; aucune extension à h croissant avec N.
+— Positions non signées : introduction, discussion et section dédiée
+  distinguent les positions, les signes de runs et les excès exacts.
+
+La reconnaissance de Paper C v3, de sa loi de Poisson et du canal 2:3
+reste présente. Les nouveaux paragraphes ne revendiquent pas une
+priorité générale sur l'approximation de Poisson.
+
+5. EFFET DE BORD DÉTECTÉ ET CORRIGÉ
+
+La première comparaison a révélé la disparition du guide des notations
+et des parcours de lecture après le remplacement du tableau de
+dépendances. Le rédacteur a restauré ces blocs. La comparaison finale
+confirme qu'ils sont identiques à ceux de V1.4, depuis la sous-section
+« Notation guide » jusqu'à la fin de l'introduction. Le label
+p1:intro:notation est de nouveau présent.
+
+AVIS
+
+Les ajouts d'attribution et les restrictions de portée sont cohérents.
+La précision rédactionnelle recommandée sur H2 est intégrée ; elle
+ne modifie aucun résultat.
+Aucun fichier .tex n'a été modifié par cette relecture.

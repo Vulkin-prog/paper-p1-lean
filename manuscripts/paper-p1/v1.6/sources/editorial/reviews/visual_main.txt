@@ -1,0 +1,81 @@
+QA VISUELLE -- ARTICLE PRINCIPAL P1 V1.6
+Date : 31 octobre 2026
+Document inspecte :
+tmp/p16_visual/final/P1_V1_6_Main_Article_2026-10-31_EN.pdf
+SHA256 : e0c23793566bb13aabeec22c131bb44421550f003f1b8438b14f415222fc7a53
+
+Perimetre
+- Six planches-contact couvrant les 63 pages :
+  contact_001_012, 013_024, 025_036, 037_048, 049_060, 061_063.
+- Inspection detaillee des PNG pages 5-10, 38-40 et 57-63
+  (16 pages distinctes), rendus fournis dans tmp/p16_visual/final/main.
+- Les contacts servent au controle global des coupures, de la densite et
+  de la succession des pages. Ils ne constituent pas une verification
+  de chaque glyphe ni une relecture mathematique des 63 pages.
+- Aucune modification du manuscrit ou du PDF.
+
+Constats
+1. Table 1 (page 6)
+   Le tableau est entierement place avant le debut de la section 1.2.
+   Le titre, les trois colonnes et les six lignes sont lisibles.
+   Les lignes longues reviennent a la ligne dans leur propre cellule,
+   sans collision entre colonnes ni depassement de la largeur utile.
+   Les reservations sur le biais de moyenne, h fixe, la borne Hermite
+   et le champ non signe sont effectivement visibles.
+   La separation avec le titre de la section 1.2 est nette.
+
+2. Temoin ternaire et terme de deux paires (pages 6-7)
+   Les planchers de la formule de nullite et le coefficient 19/30
+   sont correctement rendus. La coupure entre les deux pages poursuit
+   un paragraphe ordinaire et ne coupe aucune formule affichee.
+   L'expansion Hermite, son terme alpha^2/8 et l'identite quartique
+   sont lisibles, avec des indices et puissances distincts.
+   La section 1.3 commence apres un espacement de titre normal.
+
+3. Introduction et cartes existantes (pages 5, 8-10)
+   Les principales formules sont contenues dans les marges.
+   La table des dependances page 9 et celle des marges page 10 ne
+   montrent ni collisions ni cellules tronquees.
+   La section 1.6 commence page 10 avec son paragraphe d'introduction;
+   sa table continue sur la page suivante. Le blanc en pied de page 10
+   correspond a cette mise en page et n'est pas une page vide accidentelle.
+
+4. Bilan des trois erreurs (pages 38-40)
+   Le debut de la section 15 et le bilan page 39 s'enchainent correctement.
+   La definition de T_D2 est dans le paragraphe precedant l'inegalite.
+   L'inegalite sur deux lignes distingue les trois termes sans collision.
+   La legende textuelle identifie la frontiere, les deficits et la
+   conversion avant l'ouverture de la sous-section 15.1.
+   L'equation B2 et le lemme 15.1 sont lisibles; les numeros 15.1,
+   15.2 et 15.3 restent distincts de la formule non numerotee du bilan.
+   La page 40 consacree aux deux cibles denses ne montre aucun probleme
+   de composition dans les sommes ou hypotheses.
+
+5. Discussion et fin de l'article (pages 57-63)
+   La petite table de canaux page 57 est intacte; le corollaire Hermite
+   et sa preuve se suivent sur deux pages de facon reguliere.
+   Les sections 19.2 et 19.3 sont identifiables et leurs nouveaux renvois
+   sont lisibles. Les formules de la section 20 restent contenues.
+   La declaration d'assistance et le paragraphe Sources and finite checks
+   page 61 affichent correctement les noms V1_6 des deux archives.
+   Les references commencent sur une nouvelle page 62 et se terminent
+   page 63. La page 61 moins remplie est une separation de fin de corps,
+   non une page manquante. Aucun nom de fichier ne depasse la marge.
+   Les 31 notices sont visuellement presentes sur les pages 62-63;
+   cette observation ne valide pas leurs contenus bibliographiques.
+
+6. Vue d'ensemble
+   Les contacts montrent une succession de pages 1 a 63 coherente,
+   des tetes et pieds de pages homogenes et aucun blanc integral
+   accidentel. Aucun debordement manifeste, bloc superpose, formule
+   tronquee ou grand rectangle de substitution n'a ete repere.
+   Les folios des pages inspectees en detail correspondent aux pages
+   attendues.
+
+Conclusion
+Aucune anomalie concrete de mise en page a corriger n'a ete trouvee
+dans le perimetre visuel examine. Aucune correction des sources proposee.
+Cette passe visuelle ne remplace pas les controles structurels des
+liens, la compilation, la comparaison des enonces ou les contre-lectures
+mathematiques ciblees.
+
