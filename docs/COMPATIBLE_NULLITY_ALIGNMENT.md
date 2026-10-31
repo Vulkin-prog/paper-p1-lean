@@ -67,6 +67,7 @@ subfamily. All empty-family conclusions are included.
 ## Remaining scope
 
 This establishes Lemma 4.3 without an unproved literature premise. It provides
-no arithmetic upper estimate for nullity, canonical direct decomposition,
-connected-family estimate, or asymptotic reconstruction theorem. These remain
-separate obligations.
+no arithmetic upper estimate for nullity, connected-family estimate, or
+asymptotic reconstruction theorem. These remain separate obligations. The
+canonical direct decomposition and factorization are now proved separately;
+see the [Lemma 4.4 alignment](DIRECT_COMPONENT_ALIGNMENT.md).

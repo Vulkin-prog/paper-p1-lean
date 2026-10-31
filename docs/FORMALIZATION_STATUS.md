@@ -4,7 +4,7 @@ Stage: **exact affine and probability-law identities**, 31 October 2026.
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **5 / 167**: article Propositions 4.1, 5.2 and Lemmas 4.2, 4.3, 5.1.
+- Numbered results completed: **6 / 167**: article Propositions 4.1, 5.2 and Lemmas 4.2, 4.3, 4.4, 5.1.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **412 audited theorem/lemma declarations**. This
+- The project currently has **454 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -56,12 +56,16 @@ Neither document is fully formalized.
   The exact joint-mass formula is proved from the actual joint affine system
   and rank-nullity; it is not an assumed bound. The empty family is included.
   See [statement alignment](COMPATIBLE_NULLITY_ALIGNMENT.md).
-- Article Lemma 4.4 is in progress. Partitions which preserve every effective
+- Article Lemma 4.4 is complete. Partitions which preserve every effective
   relation under restriction are proved closed under common refinement, and
-  there is a unique finest such partition. Equivalence with directness of
-  the block-sum spaces and the probability, centered-moment and nullity
-  factorization statements remain open. These preparatory facts do not
-  increase numbered-result coverage.
+  there is a unique finest such partition. The criterion is proved equivalent
+  to injectivity of addition from the actual block-sum spaces. The relation
+  kernel splits as the product of the kernels inside the parts, proving
+  nullity additivity. A finite spectral identity proves both joint and
+  centered moment factorization, and these identities are transported to the
+  actual infinite prime-sign measure. `canonical_run_components_finset`
+  supplies all conclusions, including the empty family, with a finite cutoff
+  constructed inside the proof. See [alignment](DIRECT_COMPONENT_ALIGNMENT.md).
 - Paper C code ported: parity vectors and selected finite prime-cylinder
   definitions/proofs, with exact source identities recorded in the reuse ledger.
   Complete multiplicativity, the signed run-start interpretation, cutoff

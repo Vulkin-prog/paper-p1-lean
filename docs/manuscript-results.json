@@ -230,16 +230,22 @@
       "source": "main_sections/affine_algebra.tex",
       "line": 134,
       "sha256": "6eaa05eaffd59b96e763bff396ec1b1b18f1f4a6b5004c5a15093d11d49dba84",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
-        "PaperP1.Affine.relationDirectPartition_inf",
-        "PaperP1.Affine.canonicalRelationPartition_respects",
-        "PaperP1.Affine.canonicalRelationPartition_le",
-        "PaperP1.Affine.existsUnique_finest_relationPartition"
+        "PaperP1.Model.InfiniteStarts.canonical_run_components_finset",
+        "PaperP1.Model.InfiniteStarts.canonical_run_components",
+        "PaperP1.Affine.existsUnique_finest_directPartition",
+        "PaperP1.Affine.relationDirect_iff_blockDirect",
+        "PaperP1.Affine.blockDirect_iff_addition_injective",
+        "PaperP1.Affine.relativeNullity_canonical_additive",
+        "PaperP1.Model.InfiniteStarts.infiniteFamilyJointMoment_partition",
+        "PaperP1.Model.InfiniteStarts.infiniteFamilyCenteredMoment_partition",
+        "PaperP1.Model.InfiniteStarts.infiniteJointMoment_eq_family_subtype",
+        "PaperP1.Model.InfiniteStarts.infiniteCenteredCoefficient_eq_family_subtype"
       ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": "Preparatory relation-restriction criterion: every global zero-sum effective tuple restricts to a zero-sum tuple on each part. Such partitions are proved closed under common refinement and have a unique finest member. Equivalence with directness of the block-sum subspaces and all three q/c/nullity factorization identities remain open; the numbered result is not marked complete."
+      "notes": "Complete existence, uniqueness and all three factorization identities on the effective square-class spaces under the actual infinite prime-sign law. Relation-preserving partitions are closed under common refinement and have a unique finest member; their criterion is proved equivalent to injectivity of addition from the actual block-sum spaces. Regrouping gives an explicit linear equivalence of relation kernels, proving nullity additivity. A general finite spectral partition identity yields exact joint and centered moment factorization, transported through actual finite/infinite cylinders with heterogeneous marginals. The final finite-set theorem reindexes the original family by its subtype, constructs its adequate cutoff internally, and includes the empty family. All effective relations are used, rather than only primitive block supports. See docs/DIRECT_COMPONENT_ALIGNMENT.md. No unproved literature, arithmetic or independent-block premise is used."
     },
     {
       "label": "p1:stop:polynomial",

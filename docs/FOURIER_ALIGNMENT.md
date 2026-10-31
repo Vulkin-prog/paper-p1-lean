@@ -75,7 +75,8 @@ has absolute value at most `2^ρ - 1`, and hence at most `2^ρ`. A nonzero
 centered coefficient forces at least one such tuple. These statements are
 all checked, including the sharper subtraction of one.
 
-This result supplies no arithmetic estimate for `ρ`, local rigidity, canonical
-components, or an asymptotic approximation theorem. Those remain separate
-coverage obligations. The compatible-nullity maximum and bound of Lemma 4.3
-are now proved separately; see [its alignment note](COMPATIBLE_NULLITY_ALIGNMENT.md).
+This result supplies no arithmetic estimate for `ρ`, local rigidity, or an
+asymptotic approximation theorem. Those remain separate coverage obligations.
+The compatible-nullity bound and canonical components of Lemmas 4.3 and 4.4
+are proved separately; see their [nullity](COMPATIBLE_NULLITY_ALIGNMENT.md) and
+[component](DIRECT_COMPONENT_ALIGNMENT.md) alignment notes.

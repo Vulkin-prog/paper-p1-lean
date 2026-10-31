@@ -47,3 +47,10 @@ public import PaperP1.Model.JointStartProbability
 public import PaperP1.Model.InfiniteJointMoments
 public import PaperP1.Model.CompatibleNullityBound
 public import PaperP1.Affine.RelationPartitions
+public import PaperP1.Affine.PartitionGrouping
+public import PaperP1.Affine.DirectPartitions
+public import PaperP1.Affine.PartitionNullity
+public import PaperP1.Affine.SpectralPartitions
+public import PaperP1.Affine.PartitionMoments
+public import PaperP1.Model.StartPartitionTransfer
+public import PaperP1.Model.CanonicalRunComponents
