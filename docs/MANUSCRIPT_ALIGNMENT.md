@@ -90,7 +90,7 @@ recorded in the project status without counting as complete numbered results.
 | 19.2 (p. 58) | [p1:discussion:charlier-norm](../manuscripts/paper-p1/v1.6/sources/main_sections/discussion.tex#L116) | Norms of Poisson differences | not_started | — |
 | 20.1 (p. 60) | [p1:limits:vector-reference](../manuscripts/paper-p1/v1.6/sources/main_sections/limits_appendix.tex#L45) | Unsigned positional compound-Poisson comparison | not_started | — |
 
-## Technical companion: 10 / 94 proved
+## Technical companion: 11 / 94 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -187,4 +187,4 @@ recorded in the project status without counting as complete numbered results.
 | T22.5 (p. 91) | [p1:uniform:one-pair](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L198) | A single pair at all critical orders | not_started | — |
 | T22.6 (p. 92) | [p1:uniform:modified-moments](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L266) | Moment decomposition and pair leakage | not_started | — |
 | T22.7 (p. 92) | [p1:uniform:replicas](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L351) | The replica formula and positive propagation | not_started | — |
-| T23.1 (p. 93) | [p1:obstruction:fixed](../manuscripts/paper-p1/v1.6/sources/companion_sections/moment_obstruction.tex#L8) | A perturbation invisible at each fixed order | not_started | — |
+| T23.1 (p. 93) | [p1:obstruction:fixed](../manuscripts/paper-p1/v1.6/sources/companion_sections/moment_obstruction.tex#L8) | A perturbation invisible at each fixed order | proved | `PaperP1.MomentObstruction.companion_T23_1`, `PaperP1.MomentObstruction.companion_T23_1_extended`, `PaperP1.MomentObstruction.totalVariation_exact`, `PaperP1.MomentObstruction.exponential_moment_le`, `PaperP1.MomentObstructionMass.pLaw_signed_identity`, `PaperP1.MomentObstructionMass.qLaw_signed_identity`, `PaperP1.MomentObstructionMass.pMass_pointwise_bounds`, `PaperP1.MomentObstructionMoments.factorial_moment_difference`, `PaperP1.MomentObstructionMoments.factorial_moment_eq_iff`, `PaperP1.MomentObstructionMoments.pLaw_factorial_integrable`, `PaperP1.MomentObstructionMoments.qLaw_factorial_integrable`, `PaperP1.DifferenceCoefficients.l1Norm_forwardDifference_pow`, `PaperP1.DifferenceCoefficients.difference_factorial_moment` |

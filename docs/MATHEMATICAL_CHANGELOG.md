@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Eight mathematical improvements are confirmed; no error in a manuscript conclusion
+**Nine mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -223,6 +223,30 @@ The exact validated implementation commit for P1-MATH-0008 is
 [7b6f23e04ffe90d29d093d7009c00e5f52426209](https://github.com/Vulkin-prog/paper-p1-lean/commit/7b6f23e04ffe90d29d093d7009c00e5f52426209).
 The full build, actual 1,484-declaration axiom audit and all 120 distinct
 coverage/finding declaration checks passed.
+
+## P1-MATH-0009 — Larger parameter interval for the moment perturbation
+
+- Location: companion T23.1, page 93, `p1:obstruction:fixed`,
+  `companion_sections/moment_obstruction.tex:8`.
+- Original setting: 0≤a≤1 in the exact positive perturbation of Q_a.
+- Improvement: the same construction works on 0≤a≤2, with the same
+  pointwise factors 1/2 and 3/2, the same exact distance constant and the
+  same factorial-moment difference. The perturbation is nonzero for a<2;
+  at a=2 epsilon is zero, so P=Q and every moment agrees.
+- Evidence: `MomentObstruction.companion_T23_1_extended`,
+  `totalVariation_exact`, `exponential_moment_le`, and
+  `MomentObstructionMoments.factorial_moment_eq_iff`.
+- Suggested revision: use 0≤a<2 for the nontrivial example, optionally add
+  the zero endpoint. For a uniform bound on [0,A], A≤2, replace the final
+  exponential factor by 1+(A/2)(exp(t)-1)^2. A=1 retains the original bound.
+- Impact: no change to epsilon or the original total variation constant.
+  The uniform exponential constant on the larger interval is enlarged
+  explicitly; it is not claimed to retain the original 1/2 coefficient.
+  No error in the original statement is asserted. The following unnumbered
+  m_N/Stirling asymptotics are not discharged by this proposition alone.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,727 jobs) and
+  actual 1,647-declaration kernel audit; not integrated into a new manuscript.
+  See [complete alignment](MOMENT_OBSTRUCTION_ALIGNMENT.md).
 
 Every finding receives a stable identifier `P1-MATH-0001`, etc., and an entry in
 [mathematical-changes.json](mathematical-changes.json). Keep the following fields:

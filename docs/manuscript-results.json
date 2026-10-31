@@ -2849,11 +2849,29 @@
       "source": "companion_sections/moment_obstruction.tex",
       "line": 8,
       "sha256": "c652d9e1cd007089e2c95a960fa33e1d963832a5f3da703257669a40da70cc64",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.MomentObstruction.companion_T23_1",
+        "PaperP1.MomentObstruction.companion_T23_1_extended",
+        "PaperP1.MomentObstruction.totalVariation_exact",
+        "PaperP1.MomentObstruction.exponential_moment_le",
+        "PaperP1.MomentObstructionMass.pLaw_signed_identity",
+        "PaperP1.MomentObstructionMass.qLaw_signed_identity",
+        "PaperP1.MomentObstructionMass.pMass_pointwise_bounds",
+        "PaperP1.MomentObstructionMoments.factorial_moment_difference",
+        "PaperP1.MomentObstructionMoments.factorial_moment_eq_iff",
+        "PaperP1.MomentObstructionMoments.pLaw_factorial_integrable",
+        "PaperP1.MomentObstructionMoments.qLaw_factorial_integrable",
+        "PaperP1.DifferenceCoefficients.l1Norm_forwardDifference_pow",
+        "PaperP1.DifferenceCoefficients.difference_factorial_moment"
+      ],
+      "literature_inputs": [
+        "P1-PROB-MOMENT-OBSTRUCTION"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0009"
+      ],
+      "notes": "Full numbered T23.1, with actual normalized positive measures, the literal epsilon, signed perturbation identity, pointwise factors 1/2 and 3/2, all actual factorial moments with proved integrability, equality exactly away from order m in the original range, the exact total variation constant, and the original explicit uniform exponential-moment bound. The same construction extends to 0≤a≤2, nontrivially for a<2, with epsilon=0 at a=2; the extended exponential bound uses 1+(exp(t)-1)², while the original range retains 1+(exp(t)-1)²/2. Every real exponential parameter is included. No fixed-order equality, norm constant or probability fact is assumed. The following unnumbered m_N=floor(sqrt(log N)) Stirling expansion and comparison with all polynomial rates remain separate open obligations. No multiplicative-model realization is claimed. See MOMENT_OBSTRUCTION_ALIGNMENT.md."
     }
   ]
 }

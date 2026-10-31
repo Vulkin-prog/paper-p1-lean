@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 31 O
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **19 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Proposition T19.12.
+- Numbered results completed: **20 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1592 audited theorem/lemma declarations**. This
+- The project currently has **1647 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -241,6 +241,15 @@ Neither document is fully formalized.
   equal-marginal formula (j+1)B_(j+1)-p(n-j)B_j at every natural order.
   Finite laws also embed injectively as actual atomic signed measures with
   the same countable ordinary ℓ¹ norm. See [signed Palm alignment](SIGNED_PALM_ALIGNMENT.md).
+- Companion T23.1 is complete for actual probability laws with the literal
+  epsilon=(1-a/2)exp(-1)/(2m!). The exact Δ^m coefficients give both
+  pointwise comparison factors, all factorial-moment differences and the
+  exact total variation constant. Exponential sums and domination prove
+  integrability of every factorial moment and the source's uniform
+  exponential bound. The construction also works on [0,2], with a zero
+  perturbation at a=2; the larger uniform exponential bound is recorded
+  separately. See [moment-obstruction alignment](MOMENT_OBSTRUCTION_ALIGNMENT.md).
+  The unnumbered m_N/Stirling/polynomial-rate continuation remains open.
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
@@ -248,7 +257,9 @@ Neither document is fully formalized.
   alone and uniform shorter windows for local rigidity; `P1-MATH-0005`, a stronger
   local-square threshold; `P1-MATH-0006`, absolute critical-defect and free-component constants; `P1-MATH-0007`, the heterogeneous
   missing-block and tuple estimates; `P1-MATH-0008`, integer factor height
-  without a primitive-factor hypothesis.
+  without a primitive-factor hypothesis; `P1-MATH-0009`, the extended
+  parameter interval for the exact moment perturbation, with its endpoint
+  and enlarged uniform exponential constant stated explicitly.
   No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.

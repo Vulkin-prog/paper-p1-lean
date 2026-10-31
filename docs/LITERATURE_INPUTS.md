@@ -20,6 +20,28 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Exact positive moment perturbation
+
+Stable ID: `P1-PROB-MOMENT-OBSTRUCTION`. Status: **proved**.
+
+- Target: companion T23.1, page 93, `p1:obstruction:fixed`.
+- Lean: `MomentObstruction.companion_T23_1` and its extended-interval form.
+  These construct actual probability measures and identify the full signed
+  perturbation, all factorial moments and the exact total variation scale.
+- The proof uses internal exact finite-difference and coefficient identities,
+  the already proved quadratic Poisson positivity and integer minimum, and
+  the elementary exponential series at Mathlib commit
+  `9d581dfff2e41de989072ea63abf3daf69311520`.
+  `NormedSpace.expSeries_div_hasSum_exp`, `Real.pow_div_factorial_le_exp`
+  (`Analysis/Complex/Exponential.lean`), binomial-factorial identities and
+  `Nat.sum_range_choose` supply the proved library facts. Actual integrations
+  use countable Dirac sums; integrability is proved by exponential domination.
+- No fixed-moment equality, positivity, coefficient pattern, norm constant
+  or moment bound is a theorem premise. The parameter extension is
+  `P1-MATH-0009`. See [alignment](MOMENT_OBSTRUCTION_ALIGNMENT.md).
+- The following unnumbered Stirling/asymptotic continuation is a separate
+  open obligation; no external asymptotic estimate is assumed here.
+
 ## Complete signed Palm identity
 
 Stable ID: `P1-PROB-SIGNED-PALM`. Status: **proved**.

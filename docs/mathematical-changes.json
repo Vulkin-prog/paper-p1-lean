@@ -293,6 +293,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "7b6f23e04ffe90d29d093d7009c00e5f52426209"
+    },
+    {
+      "id": "P1-MATH-0009",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:obstruction:fixed",
+        "number": "T23.1",
+        "page": 93,
+        "source": "companion_sections/moment_obstruction.tex",
+        "line": 8,
+        "statement_sha256": "c652d9e1cd007089e2c95a960fa33e1d963832a5f3da703257669a40da70cc64"
+      },
+      "original_assumption": "Companion T23.1 restricts the quadratic-reference parameter to 0≤a≤1 in the exact positive factorial-moment perturbation.",
+      "finding": "The same epsilon and the same pointwise factors and exact total variation formula hold on 0≤a≤2. The perturbation is nonzero for a<2; at a=2 it vanishes, and all moments agree. The uniform exponential-moment bound on the enlarged interval uses 1+(exp(t)-1)² instead of 1+(exp(t)-1)²/2. The original sharper bound is retained on [0,1].",
+      "evidence": [
+        "PaperP1.MomentObstruction.companion_T23_1_extended",
+        "PaperP1.MomentObstruction.exponential_moment_le",
+        "PaperP1.MomentObstruction.totalVariation_exact",
+        "PaperP1.MomentObstructionMass.pLaw_signed_identity",
+        "PaperP1.MomentObstructionMass.pMass_pointwise_bounds",
+        "PaperP1.MomentObstructionMoments.factorial_moment_eq_iff",
+        "PaperP1.MomentObstructionMoments.factorial_moment_changed_order"
+      ],
+      "proposed_revision": "State the nontrivial construction for 0≤a<2, and optionally include a=2 as the zero-perturbation endpoint. Keep epsilon, the pointwise 1/2 and 3/2 factors, the factorial-moment difference and the exact TV formula. For a uniform exponential bound on 0≤a≤A≤2, use (3/2)exp(exp(t)-1)(1+(A/2)(exp(t)-1)²); A=1 recovers the original proof bound.",
+      "impact": "Weakens the parameter restriction without changing the original construction or distance constant. Equality of factorial moments occurs exactly off order m when a<2; the endpoint degeneracy is explicit. The enlarged uniform exponential constant is stated separately. The original range and all its conclusions remain proved. No error in the original statement and no optimality of an obstruction rate are claimed. The subsequent unnumbered m_N/Stirling argument remains a separate obligation.",
+      "validation": "Full Lean v4.36.0-rc2 build (8727 jobs) and actual kernel axiom audit for all 1647 declarations; only propext, Classical.choice and Quot.sound. Exact implementation commit to be recorded immediately after this validated change is committed.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
