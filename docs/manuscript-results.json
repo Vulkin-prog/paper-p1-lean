@@ -324,11 +324,25 @@
       "source": "main_sections/fixed_moments.tex",
       "line": 30,
       "sha256": "18db139a0bd9ab77f064acb65b950ad41adfc0ba3ee9dba623584d8600e83131",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.DisjointRecoverySubspace.exists_small_recovery_subspace",
+        "PaperP1.DisjointRecoverySubspace.coordinate_multiplicity_le",
+        "PaperP1.DisjointRecoveryHistory.exists_maximal_history",
+        "PaperP1.RecoveryRankCertificate.pointwise_rank_certificate",
+        "PaperP1.RecoveryRankCertificate.recorded_history_cost_bound",
+        "PaperP1.SequentialRankBudget.rank_budget",
+        "PaperP1.FiniteBernoulliSubset.expectation_failure_exact",
+        "PaperP1.FiniteBernoulliSubset.expectation_selected_card",
+        "PaperP1.DisjointRecoveryParameters.failure_factor_le_half"
+      ],
+      "literature_inputs": [
+        "P1-LINALG-DISJOINT-RECOVERY"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0013"
+      ],
+      "notes": "In progress: the actual small-codimension subspace, complete t-disjoint-recovery exclusion and nonzero coordinate multiplicity t-1 are proved. These clauses hold for any field and any finite family of linear forms on a finite-dimensional space, with no separation or binary assumption, recorded as P1-MATH-0013. A maximal independent recovery history is constructed internally; its pointwise rank certificate is proved, and exact finite Bernoulli selection plus the literal t^(-1/d) parameter gives the original constant 2. The dual annihilator and restriction establish the actual output subspace and every nonzero dual form. No history, target bound, independence or rank-budget output is assumed. The final independent-label j-term representation bound remains open, so this is not counted as a completed numbered result. The sharper j!*(t-1)^(j-1) suggested by the source proof is a candidate under examination only. See DISJOINT_RECOVERY_ALIGNMENT.md."
     },
     {
       "label": "p1:fixed:targets",

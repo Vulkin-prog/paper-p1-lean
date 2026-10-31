@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1834 audited theorem/lemma declarations**. This
+- The project currently has **1874 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -294,6 +294,15 @@ Neither document is fully formalized.
   stronger ternary incidence dK^2. An existence wrapper constructs D by T2.2;
   no regularizer output is assumed. See
   [ternary constraint alignment](TERNARY_CONSTRAINTS_ALIGNMENT.md).
+- Article Lemma 6.1 is in progress. Its actual small-codimension stopping
+  subspace, exclusion of every t-disjoint recovery system, and coordinate
+  multiplicity t-1 are proved. A maximal independent history and its pointwise
+  rank certificate are constructed; exact finite Bernoulli weights and the
+  literal sampling parameter give the source constant two. These clauses hold
+  over any field for any finite family of linear forms, without separation.
+  The final independent-label representation count is still open, so completed
+  coverage remains 25/167. See
+  [disjoint recovery alignment](DISJOINT_RECOVERY_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
@@ -307,7 +316,9 @@ Neither document is fully formalized.
   weaker parameter hypotheses for the weighted recurrence comparison and stability;
   `P1-MATH-0011`, an initially active coordinate budget and zero boundary
   parameters for coordinate regularisation; `P1-MATH-0012`, the sharper ternary
-  incidence constant and a version without the three-block coloring.
+  incidence constant and a version without the three-block coloring;
+  `P1-MATH-0013`, arbitrary fields and linear-form families for the proved
+  subspace and multiplicity clauses of Lemma 6.1. Its final clause remains open.
   No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.

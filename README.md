@@ -112,6 +112,10 @@ with the zero perturbation at the final endpoint made explicit. See
 The following unnumbered asymptotic example is also proved, including the
 literal floor, fixed-order moment identities and failure of every polynomial
 rate. See [its alignment](docs/MOMENT_OBSTRUCTION_ASYMPTOTICS.md).
+Article Lemma 6.1 remains in progress: its stopping subspace, exact
+codimension bound and coordinate multiplicity are proved over any field.
+The final independent-representation count remains open and adds no completed
+result. See [disjoint recovery progress](docs/DISJOINT_RECOVERY_ALIGNMENT.md).
 The sharp PNT input is proved by a selected, recompiled and audited analytic
 development, with [separate provenance](docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 

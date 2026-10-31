@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Twelve mathematical improvements are confirmed; no error in a manuscript conclusion
+**Thirteen mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -462,3 +462,29 @@ All 209 distinct coverage/finding declaration names were checked by Lean.
 Validated implementation for P1-MATH-0012:
 [0f8350f2eecede15560958e20acac059f016bc05](https://github.com/Vulkin-prog/paper-p1-lean/commit/0f8350f2eecede15560958e20acac059f016bc05).
 All 221 distinct coverage/finding declaration names were checked by Lean.
+
+## P1-MATH-0013 — Arbitrary fields for the proved disjoint-recovery clauses
+
+- Location: article Lemma 6.1, page 21, `p1:fixed:recovery`,
+  `main_sections/fixed_moments.tex:30`.
+- Original setting: a binary coordinate subspace R in F_2^V.
+- Improvement, current proved scope: the small-codimension stopping subspace,
+  exclusion of all t disjoint recovery sets, and multiplicity t-1 hold over
+  any field and for any finite family of linear forms on a finite-dimensional
+  U. The family need not separate points. The cost remains 2*card(V)*t^(-1/d).
+- Evidence: `DisjointRecoverySubspace.exists_small_recovery_subspace`,
+  `coordinate_multiplicity_le`, the constructed maximal history and the
+  discharged pointwise rank certificate before averaging.
+- Suggested revision: generalize these clauses and retain their original
+  binary coordinate specialization for the arithmetic applications.
+- Scope limit: the final independent-label representation count is still open.
+  The entire lemma remains in progress and adds no completed numbered result.
+  No claim about that last clause over arbitrary fields is yet recorded as
+  proved, and no original conclusion is corrected.
+- Status: confirmed for the displayed scope by the full Lean v4.36.0-rc2 build
+  (8,787 jobs) and actual audit of all 1,874 theorem/lemma declarations; not
+  integrated into a manuscript. See [alignment](DISJOINT_RECOVERY_ALIGNMENT.md).
+
+The last source proof suggests j!(t-1)^(j-1) instead of j!t^(j-1) by retaining
+its exact maximal-disjoint-family bound. This is a candidate under examination,
+not a confirmed improvement or proved representation theorem at this checkpoint.

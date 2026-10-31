@@ -20,6 +20,26 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Disjoint recovery — partial internal proof
+
+Stable ID: `P1-LINALG-DISJOINT-RECOVERY`. Overall source status: **unresolved**;
+subspace, recovery exclusion and multiplicity clauses: **proved**.
+
+- Target: article Lemma 6.1, page 21, `p1:fixed:recovery`.
+- Lean: `DisjointRecoverySubspace.exists_small_recovery_subspace` and
+  `coordinate_multiplicity_le`. The construction works over every field.
+- Finite Bernoulli weights, exact joint recovery and failure probabilities,
+  pointwise sequential rank budget, maximal stopping history and the literal
+  sampling parameter are proved internally. The determinant or any arithmetic
+  literature estimate is not an input to these clauses.
+- Mathlib at commit `9d581dfff2e41de989072ea63abf3daf69311520` supplies finite
+  product expansion, Bernoulli's inequality, finite-dimensional rank and dual
+  annihilator/restriction identities. No target bound or history output is
+  assumed in the constructed subspace theorem.
+- The final independent-label representation count is still open. These
+  clauses do not establish complete Lemma 6.1 coverage. The field/family
+  extension is `P1-MATH-0013`; see [alignment](DISJOINT_RECOVERY_ALIGNMENT.md).
+
 ## Constraints on at most three coordinates
 
 Stable ID: `P1-LINALG-TERNARY-CONSTRAINTS`. Status: **proved**.
