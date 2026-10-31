@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 31 O
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **20 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1.
+- Numbered results completed: **21 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1, together with Lemma T19.13.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1680 audited theorem/lemma declarations**. This
+- The project currently has **1728 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -257,6 +257,14 @@ Neither document is fully formalized.
   uniform version over all a in [0,1], with one threshold per gamma. This
   unnumbered work adds no completed numbered result. See
   [asymptotic alignment](MOMENT_OBSTRUCTION_ASYMPTOTICS.md).
+- Companion T19.13 is complete for arbitrary actual probability laws on the
+  natural numbers, without a first moment. The weighted residual is absolutely
+  summable. The exact factorial resolvent proves the lower exp(-mu) bound;
+  the forward operator proves the upper 2(1+mu) bound. Both original comparison
+  and stability conclusions are checked. The comparison includes mu=0 and
+  stability has an all-real-parameter version; the source M bound needs only
+  0<=mu<=M, with no restriction on nu. See
+  [weighted recurrence alignment](WEIGHTED_POISSON_NORM_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
@@ -266,7 +274,8 @@ Neither document is fully formalized.
   missing-block and tuple estimates; `P1-MATH-0008`, integer factor height
   without a primitive-factor hypothesis; `P1-MATH-0009`, the extended
   parameter interval for the exact moment perturbation, with its endpoint
-  and enlarged uniform exponential constant stated explicitly.
+  and enlarged uniform exponential constant stated explicitly; `P1-MATH-0010`,
+  weaker parameter hypotheses for the weighted recurrence comparison and stability.
   No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.

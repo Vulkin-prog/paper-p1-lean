@@ -2453,11 +2453,27 @@
       "source": "companion_sections/limits_appendix.tex",
       "line": 1013,
       "sha256": "60b1d2ef56e93da3701c1b41a40c08898e2bb5fe5bb83536aa27b0d26a9a8add",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.WeightedPoissonNorm.companion_T19_13",
+        "PaperP1.WeightedPoissonNorm.weightedNorm_stability_bounded",
+        "PaperP1.WeightedPoissonNorm.weightedNorm_stability",
+        "PaperP1.WeightedPoissonNorm.poisson_comparison_nonnegative",
+        "PaperP1.WeightedPoissonNorm.weightedNorm_summable",
+        "PaperP1.WeightedPoissonNorm.weightedNorm_eq_raw_sum",
+        "PaperP1.WeightedPoissonNorm.poisson_eq_mathlib",
+        "PaperP1.WeightedRecurrence.solution",
+        "PaperP1.WeightedRecurrence.zero_mass_l1_bound",
+        "PaperP1.FactorialResolvent.correction_l1_bound",
+        "PaperP1.AtomicProbability.hasSum_realMass"
+      ],
+      "literature_inputs": [
+        "P1-PROB-WEIGHTED-RECURRENCE"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0010"
+      ],
+      "notes": "Full T19.13 for arbitrary actual probability measures on the natural numbers, with no first-moment or finite-support assumption. Absolute summability of actual masses and residuals is proved. The exact factorial recurrence solution has a proved absolutely convergent double-series resolvent, giving the original lower constant exp(-mu); the forward operator gives the original upper constant 2(1+mu). The bundled Poisson reference is identified with Mathlib. The full original stability estimate follows from a stronger all-real-parameter bound, with 2(1+abs(mu)) multiplying TV and abs(mu-nu) as the parameter cost. The comparison also includes mu=0; the bounded stability only requires 0<=mu<=M and no restriction on nu. These weaker parameter hypotheses are P1-MATH-0010. See WEIGHTED_POISSON_NORM_ALIGNMENT.md."
     },
     {
       "label": "p1:limits:all-pairs",

@@ -327,6 +327,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "a8d53556b218c66ac655e855ac9096594217072b"
+    },
+    {
+      "id": "P1-MATH-0010",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:weighted-residual",
+        "number": "T19.13",
+        "page": 77,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1013,
+        "statement_sha256": "60b1d2ef56e93da3701c1b41a40c08898e2bb5fe5bb83536aa27b0d26a9a8add"
+      },
+      "original_assumption": "Companion T19.13 assumes mu>0 for the Poisson comparison and 0<mu,nu<=M for stability.",
+      "finding": "The Poisson comparison holds unchanged for mu>=0, including the actual point-mass reference at mu=0. Stability holds for every real mu and nu with upper bound 2(1+abs(mu))TV(P,Q)+abs(mu-nu). The source bound with M therefore needs only 0<=mu<=M; no positivity or upper bound on nu is needed.",
+      "evidence": [
+        "PaperP1.WeightedPoissonNorm.poisson_comparison_nonnegative",
+        "PaperP1.WeightedPoissonNorm.weightedNorm_stability",
+        "PaperP1.WeightedPoissonNorm.weightedNorm_stability_bounded",
+        "PaperP1.WeightedRecurrence.zero_mass_l1_bound",
+        "PaperP1.FactorialResolvent.correction_l1_bound"
+      ],
+      "proposed_revision": "Include mu=0 in the recurrence-norm/Poisson comparison. State the all-real stability estimate with 2(1+abs(mu)), then specialize to 0<=mu<=M for the original 2(1+M) bound, allowing arbitrary real nu. Retain the original no-first-moment scope.",
+      "impact": "Weakens only parameter hypotheses. All original constants and conclusions are retained. The reference Poisson law still requires mu>=0; only the recurrence norm and its stability admit negative parameters. Absolute convergence and the factorial resolvent are proved without a first-moment assumption, as already claimed in the source. No error in the original result is asserted.",
+      "validation": "Full Lean v4.36.0-rc2 build (8745 jobs) and actual kernel axiom audit for all 1728 declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are directly included in the actual audit.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

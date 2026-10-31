@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Nine mathematical improvements are confirmed; no error in a manuscript conclusion
+**Ten mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -360,3 +360,26 @@ parameter extension P1-MATH-0009, whose original commit is retained.
 The full build and actual 1,680-declaration audit passed. No additional
 finding identifier is introduced. See
 [complete alignment](MOMENT_OBSTRUCTION_ASYMPTOTICS.md).
+
+## P1-MATH-0010 — Weaker parameters for the weighted recurrence criterion
+
+- Location: companion T19.13, page 77, `p1:limits:weighted-residual`,
+  `companion_sections/limits_appendix.tex:1013`.
+- Original hypotheses: mu>0 for the comparison and 0<mu,nu<=M for stability.
+- Improvement: the same two-sided comparison includes mu=0. For all real
+  mu and nu, stability holds with coefficient 2(1+abs(mu)) and parameter
+  cost abs(mu-nu). Thus the source coefficient 2(1+M) requires only
+  0<=mu<=M, with no restriction on nu.
+- Evidence: `WeightedPoissonNorm.poisson_comparison_nonnegative`,
+  `weightedNorm_stability` and `weightedNorm_stability_bounded`.
+  The exact factorial solution and absolutely convergent resolvent give
+  the lower comparison constant; no moment or comparison estimate is assumed.
+- Suggested revision: include the zero-parameter Poisson law and state the
+  all-real stability estimate before its bounded-parameter specialization.
+  Negative parameters apply to the recurrence norm, not to a Poisson law.
+- Impact: unchanged constants on the original domain. Arbitrary probability
+  laws without a first moment were already allowed by the source and remain
+  included. No original conclusion is corrected.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,745 jobs) and actual
+  kernel audit of all 1,728 theorem/lemma declarations; not integrated into
+  a new manuscript. See [complete alignment](WEIGHTED_POISSON_NORM_ALIGNMENT.md).

@@ -20,6 +20,25 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Weighted recurrence comparison and stability
+
+Stable ID: `P1-PROB-WEIGHTED-RECURRENCE`. Status: **proved**.
+
+- Target: companion T19.13, page 77, `p1:limits:weighted-residual`.
+- Lean: `WeightedPoissonNorm.companion_T19_13` and
+  `weightedNorm_stability_bounded`, with a stronger all-real stability form.
+- The recurrence solution, factorial kernel bound, absolute convergence of
+  its double series, antidiagonal regrouping and mass-zero norm estimate are
+  proved internally. There is no first-moment premise or external Stein or
+  recurrence comparison theorem.
+- Mathlib at commit `9d581dfff2e41de989072ea63abf3daf69311520` supplies
+  `NormedSpace.expSeries_div_hasSum_exp`,
+  `Nat.factorial_mul_factorial_dvd_factorial_add`, the finite-antidiagonal
+  equivalence, summable-series operations and actual countable probability
+  masses. The Poisson reference is the actual Mathlib Poisson measure.
+- The weaker parameter hypotheses form `P1-MATH-0010`. See
+  [complete alignment](WEIGHTED_POISSON_NORM_ALIGNMENT.md).
+
 ## Exact positive moment perturbation
 
 Stable ID: `P1-PROB-MOMENT-OBSTRUCTION`. Status: **proved**.

@@ -77,3 +77,4 @@ public import PaperP1.Probability.QuadraticPoisson
 public import PaperP1.Probability.MeasureSignedPalm
 public import PaperP1.Probability.MomentObstruction
 public import PaperP1.Asymptotics.MomentObstructionSequence
+public import PaperP1.Probability.WeightedPoissonNorm
