@@ -201,3 +201,12 @@ specialization of the proved T1.3 local count with cutoff 10B; the absolute
 constant quantifier is recorded in `P1-MATH-0006`. No new external theorem,
 analytic truncation estimate or admissibility premise is assumed. See
 [alignment](LOCAL_SQUARE_THRESHOLD_ALIGNMENT.md).
+
+## Missing-block and factorial-tuple estimates
+
+Companion T22.2 is proved internally from finite relation-kernel cardinalities,
+exact actual joint probabilities and active-tuple counting. Its factorial
+moment is an actual infinite-measure expectation and is proved equal to the
+sum over all ordered distinct tuples. No literature theorem, factorial-moment
+bound or target tuple estimate is assumed. The general heterogeneous version
+is recorded in `P1-MATH-0007`; see [alignment](MISSING_BLOCK_ALIGNMENT.md).

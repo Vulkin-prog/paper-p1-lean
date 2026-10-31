@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 13 / 167 numbered results proved.**
+**Status: active formalization, 14 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The principal Poisson asymptotic theorems remain open.
@@ -62,6 +62,11 @@ and critical vertex windows. Their proofs give a stronger local square
 threshold and an absolute constant in the defect bound, with separate entries
 in the mathematical change log. See
 [local-square and critical-defect alignment](docs/LOCAL_SQUARE_THRESHOLD_ALIGNMENT.md).
+Companion T22.2 is proved with both its missing-block inequality and its
+sum over arbitrary ordered distinct tuple families. Falling-factorial moments
+are actual infinite-model expectations. The proof also gives an exact
+heterogeneous-marginal version. See
+[missing-block alignment](docs/MISSING_BLOCK_ALIGNMENT.md).
 The sharp PNT input is proved by a selected, recompiled and audited analytic
 development, with [separate provenance](docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 

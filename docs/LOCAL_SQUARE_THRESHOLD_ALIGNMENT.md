@@ -1,6 +1,6 @@
 # Companion T9.1 and T9.2: local square exclusion and critical defects
 
-**Status: both proved.** Coverage is 13 / 167: 8 / 73 main and 5 / 94
+**Status: both proved.** Coverage is 14 / 167: 8 / 73 main and 6 / 94
 companion. Original locators: companion V1.6, page 39,
 `companion_sections/pair_rigidity.tex:17` and `:62`, labels
 `p13:rig:local-square` and `p13:rig:defective`. Their original statement
@@ -63,7 +63,6 @@ C is not claimed.
 ## Validation
 
 The project is compiled with Lean v4.36.0-rc2 and its pinned matching Mathlib.
-The full source-identity checks, full build and actual 1,301-declaration
-kernel audit are run before publication. Only `propext`, `Classical.choice`
+The full source-identity checks, full build and actual 1,301-declaration kernel audit at the local-arithmetic checkpoint are run before publication. Only `propext`, `Classical.choice`
 and `Quot.sound` are allowed. No new Paper C source, unproved literature
 estimate or manuscript edit is introduced. Palomar remains a later milestone.

@@ -208,6 +208,11 @@ Companion T9.1 and T9.2 add no Paper C port. Their finite-set reindexing,
 critical-band scale comparison and exact kernel-one count specialization are
 new P1 proofs built on the checked T1.1 and T1.3 developments.
 
+Companion T22.2 uses new P1 proofs of missing-block kernel coverage,
+heterogeneous probability comparison, ordered tuple deletion and exact
+falling-factorial moments. No additional Paper C source or old artifact is
+imported for these steps.
+
 ## Further candidates
 
 | Candidate area | Paper C paths | Required comparison |

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Six mathematical improvements are confirmed; no error in a manuscript conclusion
+**Seven mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -154,6 +154,31 @@ Absence of an entry does not mean the argument has been verified.
 The exact validated implementation commit for P1-MATH-0005 and P1-MATH-0006 is
 [548a0d2d02f1871aa3e4b26d7526082183f7bf03](https://github.com/Vulkin-prog/paper-p1-lean/commit/548a0d2d02f1871aa3e4b26d7526082183f7bf03).
 The full build and actual 1,301-declaration kernel audit passed.
+
+## P1-MATH-0007 — Missing-block estimates with heterogeneous marginals
+
+- Location: companion T22.2, page 90, `p1:uniform:missing-block`,
+  `companion_sections/uniform_appendix.tex:69`.
+- Original setting: regular windows with their common marginal p and the
+  tuple bound RNp·E(Z_G)_(R-1).
+- Improvement: for arbitrary windows, the exact inequality is
+  q(I)≤sum_x p_x q(I\{x}), with each actual marginal p_x. If pmax≥0 bounds
+  them on G, the ordered-tuple sum is at most R|G|pmax·E(Z_G)_(R-1).
+  The regular-set assertion follows by pmax=p and |G|≤N.
+- Evidence: `MissingBlockProbabilities.infinite_joint_missing_block_bound`,
+  `joint_missing_block_bound_of_marginal_le`, and
+  `MissingBlockTupleSum.sum_missing_block_tuples_heterogeneous`. The source's
+  full pointwise and summed conclusions are proved separately. The exact
+  factorial-moment identity and injective tuple deletion are proved.
+- Suggested revision: state the heterogeneous version first and give the
+  regular specialization as a corollary. Keep the absence of a full-support
+  relation as an explicit structural premise.
+- Impact: removes regularity as a requirement of the general estimate and
+  retains affine incompatibility, zero marginals and actual probabilities.
+  It introduces no separation, independence, moment bound or order cutoff.
+  The source's RNp constant and all asymptotic exponents remain valid.
+- Status: confirmed by Lean compilation and actual kernel audit; not integrated
+  into a new manuscript. See [alignment](MISSING_BLOCK_ALIGNMENT.md).
 
 Every finding receives a stable identifier `P1-MATH-0001`, etc., and an entry in
 [mathematical-changes.json](mathematical-changes.json). Keep the following fields:

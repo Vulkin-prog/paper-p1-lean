@@ -90,7 +90,7 @@ recorded in the project status without counting as complete numbered results.
 | 19.2 (p. 58) | [p1:discussion:charlier-norm](../manuscripts/paper-p1/v1.6/sources/main_sections/discussion.tex#L116) | Norms of Poisson differences | not_started | — |
 | 20.1 (p. 60) | [p1:limits:vector-reference](../manuscripts/paper-p1/v1.6/sources/main_sections/limits_appendix.tex#L45) | Unsigned positional compound-Poisson comparison | not_started | — |
 
-## Technical companion: 5 / 94 proved
+## Technical companion: 6 / 94 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -181,7 +181,7 @@ recorded in the project status without counting as complete numbered results.
 | T21.3 (p. 88) | [p1:consequences:rankin-patterns](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_consequences.tex#L208) | A Rankin bound for offset patterns | not_started | — |
 | T21.4 (p. 88) | [p1:consequences:confinement](../manuscripts/paper-p1/v1.6/sources/companion_sections/arithmetic_consequences.tex#L244) | Polylogarithmic confinement | not_started | — |
 | T22.1 (p. 89) | [p1:uniform:full-support](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L21) | A weighted count of every full support | not_started | — |
-| T22.2 (p. 90) | [p1:uniform:missing-block](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L69) | When no relation uses every block | not_started | — |
+| T22.2 (p. 90) | [p1:uniform:missing-block](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L69) | When no relation uses every block | proved | `PaperP1.MissingBlockProbabilities.regular_joint_missing_block_bound`, `PaperP1.MissingBlockTupleSum.companion_T22_2_sum`, `PaperP1.MissingBlockProbabilities.infinite_joint_missing_block_bound`, `PaperP1.MissingBlockTupleSum.sum_missing_block_tuples_heterogeneous`, `PaperP1.Affine.missing_full_support_nullity_bound`, `PaperP1.FactorialCountMoments.sum_tuple_joint_moments`, `PaperP1.FactorialCountMoments.factorialCountMoment_eq_falling_product`, `PaperP1.Probability.eraseTuple_encoding_injective`, `PaperP1.Probability.sum_erased_tuple_bound` |
 | T22.3 (p. 90) | [p1:uniform:prime-budget](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L116) | Rankin under a logarithmic prime budget | not_started | — |
 | T22.4 (p. 90) | [p1:uniform:branching](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L147) | Independent extensions at the critical order | not_started | — |
 | T22.5 (p. 91) | [p1:uniform:one-pair](../manuscripts/paper-p1/v1.6/sources/companion_sections/uniform_appendix.tex#L198) | A single pair at all critical orders | not_started | — |

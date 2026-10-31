@@ -68,3 +68,4 @@ public import PaperP1.Model.LocalRigidityConsequences
 public import PaperP1.Model.RegularCumulantTransfer
 public import PaperP1.Arithmetic.LocalSquareThreshold
 public import PaperP1.Arithmetic.CriticalDefectPositions
+public import PaperP1.Model.MissingBlockTupleSum

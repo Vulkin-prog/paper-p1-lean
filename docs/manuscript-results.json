@@ -2673,11 +2673,23 @@
       "source": "companion_sections/uniform_appendix.tex",
       "line": 69,
       "sha256": "5e6a31d29cb66509b6a8ef1400895cd9ab6a009e7685f52cb8958d19101b7132",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.MissingBlockProbabilities.regular_joint_missing_block_bound",
+        "PaperP1.MissingBlockTupleSum.companion_T22_2_sum",
+        "PaperP1.MissingBlockProbabilities.infinite_joint_missing_block_bound",
+        "PaperP1.MissingBlockTupleSum.sum_missing_block_tuples_heterogeneous",
+        "PaperP1.Affine.missing_full_support_nullity_bound",
+        "PaperP1.FactorialCountMoments.sum_tuple_joint_moments",
+        "PaperP1.FactorialCountMoments.factorialCountMoment_eq_falling_product",
+        "PaperP1.Probability.eraseTuple_encoding_injective",
+        "PaperP1.Probability.sum_erased_tuple_bound"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0007"
+      ],
+      "notes": "Full companion T22.2: both the one-family missing-block probability inequality and its sum over any deterministic subfamily of ordered distinct tuples. Actual infinite joint probabilities and actual falling-factorial moments are used. Tuple order R is represented as r+1, so the factorial order is r=R-1. The original RNp E(Z_G)_(R-1) bound is proved; a stronger bound retains |G| instead of N. The pointwise inequality also holds for arbitrary windows with exact heterogeneous p_x, and the tuple estimate holds for any common bound pmax on the actual marginals, without regularity, separation or compatibility assumptions. No moment or counting estimate is assumed. See MISSING_BLOCK_ALIGNMENT.md."
     },
     {
       "label": "p1:uniform:prime-budget",

@@ -204,6 +204,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "548a0d2d02f1871aa3e4b26d7526082183f7bf03"
+    },
+    {
+      "id": "P1-MATH-0007",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:uniform:missing-block",
+        "number": "T22.2",
+        "page": 90,
+        "source": "companion_sections/uniform_appendix.tex",
+        "line": 69,
+        "statement_sha256": "5e6a31d29cb66509b6a8ef1400895cd9ab6a009e7685f52cb8958d19101b7132"
+      },
+      "original_assumption": "Companion T22.2 assumes regular windows, hence a common marginal p, and gives q(I)≤p·sum_x q(I\\{x}) and the ordered-tuple bound RNp·E(Z_G)_(R-1).",
+      "finding": "The same missing-full-support condition gives q(I)≤sum_x p_x q(I\\{x}) for arbitrary windows with their exact heterogeneous marginals, including incompatible events and zero marginals. If pmax≥0 bounds every actual marginal on G, the tuple sum is at most R|G|pmax·E(Z_G)_(R-1). Regularity is needed only to substitute the nominal p, and |G|≤N yields the original bound.",
+      "evidence": [
+        "PaperP1.MissingBlockProbabilities.infinite_joint_missing_block_bound",
+        "PaperP1.MissingBlockProbabilities.joint_missing_block_bound_of_marginal_le",
+        "PaperP1.MissingBlockTupleSum.sum_missing_block_tuples_heterogeneous",
+        "PaperP1.MissingBlockTupleSum.sum_missing_block_tuples_card",
+        "PaperP1.MissingBlockTupleSum.companion_T22_2_sum",
+        "PaperP1.FactorialCountMoments.sum_tuple_joint_moments"
+      ],
+      "proposed_revision": "State the pointwise missing-block inequality with exact p_x on an arbitrary finite family. State its ordered-tuple consequence with |G| and any nonnegative upper bound pmax for the actual marginals. Then specialize to regular windows, pmax=p=2^(-L), and |G|≤N to recover the original assertion.",
+      "impact": "Extends the probability and tuple estimates to heterogeneous or irregular windows. It retains affine incompatibility and the exact structural missing-full-support premise. No independence, separation, positive-marginal filter, moment bound or cardinality cutoff is added. The original exponent and constant RNp are unchanged as a corollary.",
+      "validation": "Lean v4.36.0-rc2 full build and actual kernel audit for all 1334 declarations; only propext, Classical.choice and Quot.sound. Exact implementation commit is recorded after publication.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

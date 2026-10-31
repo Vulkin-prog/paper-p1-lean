@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 31 O
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **13 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2.
+- Numbered results completed: **14 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T22.2.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1301 audited theorem/lemma declarations**. This
+- The project currently has **1334 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -181,12 +181,24 @@ Neither document is fully formalized.
   works for every fixed critical band width C; only N0 depends on C.
   No admissibility or regularity hypothesis is used. See
   [statement alignment](LOCAL_SQUARE_THRESHOLD_ALIGNMENT.md).
+- Companion T22.2 is complete. The actual relation kernel is covered by
+  extension-by-zero images of its one-block-deleted kernels. Their exact
+  cardinal inequality gives the pointwise probability bound, including
+  incompatible events. A stronger version retains all heterogeneous actual
+  marginals. Ordered tuples are embeddings, and deleting a marked coordinate
+  encodes the tuple injectively by that value and the remaining ordered tuple.
+  The exact count of active embeddings gives the full actual falling-factorial
+  moment. Summation yields R|G|pmax·E(Z_G)_(R-1), hence the source's RNp bound
+  on the regular set. All finite orders are included without a growing-order
+  constant or an assumed moment estimate. See
+  [statement alignment](MISSING_BLOCK_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
   hypotheses for all three parts of T1.3; `P1-MATH-0004`, a lower base bound
   alone and uniform shorter windows for local rigidity; `P1-MATH-0005`, a stronger
-  local-square threshold; `P1-MATH-0006`, an absolute critical-defect constant.
+  local-square threshold; `P1-MATH-0006`, an absolute critical-defect constant; `P1-MATH-0007`, the heterogeneous
+  missing-block and tuple estimates.
   No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.
