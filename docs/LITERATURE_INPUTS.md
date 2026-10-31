@@ -210,3 +210,12 @@ moment is an actual infinite-measure expectation and is proved equal to the
 sum over all ordered distinct tuples. No literature theorem, factorial-moment
 bound or target tuple estimate is assumed. The general heterogeneous version
 is recorded in `P1-MATH-0007`; see [alignment](MISSING_BLOCK_ALIGNMENT.md).
+
+## Exact support and factorial lattice
+
+Companion T19.1 uses no external mathematical input. The deterministic start
+separation, finite interval packing with its exact ceiling, binary affine
+mass lattice and unordered-subset factorial expansion are proved internally.
+The existing exact cylinder transfer connects them to the actual infinite
+count and moments, including incompatible systems. No probability, moment
+or arithmetic estimate is assumed. See [alignment](SUPPORT_LATTICE_ALIGNMENT.md).

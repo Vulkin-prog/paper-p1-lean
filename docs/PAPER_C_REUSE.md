@@ -213,6 +213,10 @@ heterogeneous probability comparison, ordered tuple deletion and exact
 falling-factorial moments. No additional Paper C source or old artifact is
 imported for these steps.
 
+Companion T19.1 adds no Paper C port. Its deterministic run separation,
+exact finite-interval packing, affine mass lattice and unordered factorial
+expansion are new P1 proofs using the checked model and affine foundations.
+
 ## Further candidates
 
 | Candidate area | Paper C paths | Required comparison |

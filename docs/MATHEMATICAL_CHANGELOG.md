@@ -228,3 +228,13 @@ only along that sequence. The proof gives the explicit combined constant
 The later local-square and defect-constant improvements are recorded above
 as P1-MATH-0005 and P1-MATH-0006. See
 [statement alignment](REGULAR_SET_ALIGNMENT.md).
+
+## Exact support and factorial lattice verification — no new finding
+
+Companion T19.1 is proved with its original ceil(N/L) support bound and
+j! p^j nonnegative integer lattice. The proof includes all irregular and
+incompatible windows and has no asymptotic or regular-set hypothesis.
+It uses exact affine rank, deterministic separation and the full
+unordered-subset factorial identity. No correction to this proposition is
+identified; the seven confirmed improvement entries remain separate.
+See [statement alignment](SUPPORT_LATTICE_ALIGNMENT.md).

@@ -1,7 +1,7 @@
 # Companion T22.2: when no relation meets every block
 
 **Status: proved**, both the one-family inequality and its ordered-tuple
-summation. Coverage is 14 / 167: 8 / 73 main and 6 / 94 companion.
+summation. Coverage is 15 / 167: 8 / 73 main and 7 / 94 companion.
 Original locator: companion V1.6, page 90, `p1:uniform:missing-block`,
 `companion_sections/uniform_appendix.tex:69`. The original statement hash
 and manuscript bytes are unchanged.
@@ -103,7 +103,7 @@ the original RNp statement remains a proved corollary.
 ## Validation
 
 Lean v4.36.0-rc2 and its pinned matching Mathlib are used. The full build,
-preserved-source checks and actual 1,334-declaration kernel audit are run
-before publication. Only `propext`, `Classical.choice` and `Quot.sound` are
+preserved-source checks and actual 1,334-declaration kernel audit were run
+before the missing-block checkpoint was published. Only `propext`, `Classical.choice` and `Quot.sound` are
 allowed. No Paper C source, external mathematical input or manuscript edit
 is added. Palomar remains a later milestone.

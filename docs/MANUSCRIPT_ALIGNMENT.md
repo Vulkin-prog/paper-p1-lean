@@ -90,7 +90,7 @@ recorded in the project status without counting as complete numbered results.
 | 19.2 (p. 58) | [p1:discussion:charlier-norm](../manuscripts/paper-p1/v1.6/sources/main_sections/discussion.tex#L116) | Norms of Poisson differences | not_started | — |
 | 20.1 (p. 60) | [p1:limits:vector-reference](../manuscripts/paper-p1/v1.6/sources/main_sections/limits_appendix.tex#L45) | Unsigned positional compound-Poisson comparison | not_started | — |
 
-## Technical companion: 6 / 94 proved
+## Technical companion: 7 / 94 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -151,7 +151,7 @@ recorded in the project status without counting as complete numbered results.
 | T17.3 (p. 63) | [p1:close:boundary-mass](../manuscripts/paper-p1/v1.6/sources/companion_sections/closure.tex#L209) | Positive mass outside the retained class | not_started | — |
 | T17.4 (p. 64) | [p1:close:conversion](../manuscripts/paper-p1/v1.6/sources/companion_sections/closure.tex#L323) | Poisson--Charlier conversion | not_started | — |
 | T17.5 (p. 64) | [p13:base-approximation](../manuscripts/paper-p1/v1.6/sources/companion_sections/closure.tex#L373) | The first quadratic approximation | not_started | — |
-| T19.1 (p. 67) | [p1:limits:lattice](../manuscripts/paper-p1/v1.6/sources/companion_sections/limits_appendix.tex#L17) | Support and factorial lattice | not_started | — |
+| T19.1 (p. 67) | [p1:limits:lattice](../manuscripts/paper-p1/v1.6/sources/companion_sections/limits_appendix.tex#L17) | Support and factorial lattice | proved | `PaperP1.RunCountLattice.companion_T19_1`, `PaperP1.RunSeparation.dyadic_count_support`, `PaperP1.RunCountLattice.factorial_count_lattice`, `PaperP1.RunCountLattice.joint_moment_nominal_lattice`, `PaperP1.RunCountLattice.factorialCountMoment_eq_subset_sum`, `PaperP1.RunCountLattice.dyadicCountLaw_support_subset`, `PaperP1.SeparatedPacking.ceil_ratio_eq`, `PaperP1.Probability.factorial_subset_expansion`, `PaperP1.Affine.uniformSolutionMass_integer_multiple` |
 | T19.2 (p. 67) | [p1:limits:local-blocks](../manuscripts/paper-p1/v1.6/sources/companion_sections/limits_appendix.tex#L63) | Exact local blocks | not_started | — |
 | T19.3 (p. 68) | [p1:limits:modified](../manuscripts/paper-p1/v1.6/sources/companion_sections/limits_appendix.tex#L132) | A modified count with all factorial tails | not_started | — |
 | T19.4 (p. 69) | [p1:limits:branching](../manuscripts/paper-p1/v1.6/sources/companion_sections/limits_appendix.tex#L190) | Branching with an explicit order dependence | not_started | — |

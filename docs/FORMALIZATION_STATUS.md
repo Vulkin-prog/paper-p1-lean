@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 31 O
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **14 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T22.2.
+- Numbered results completed: **15 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T19.1, T22.2.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1334 audited theorem/lemma declarations**. This
+- The project currently has **1350 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -192,6 +192,16 @@ Neither document is fully formalized.
   on the regular set. All finite orders are included without a growing-order
   constant or an assumed moment estimate. See
   [statement alignment](MISSING_BLOCK_ALIGNMENT.md).
+- Companion T19.1 is complete for every N≥2 and L≥1. Two active starts
+  are deterministically separated by at least L. An injective quotient-bin
+  encoding bounds their number by the exact real ceiling ceil(N/L).
+  The full actual count law is supported in that range. Every actual joint
+  event has at most |I|L binary equations and its probability is a
+  nonnegative integer multiple of p^|I|, including incompatibility with
+  coefficient zero. The unordered-subset expansion of the falling factorial
+  supplies j!, proving E(Z_N)_j=j! p^j m with an actual natural m.
+  No critical-band, regularity, independence or asymptotic premise is used.
+  See [support and lattice alignment](SUPPORT_LATTICE_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff

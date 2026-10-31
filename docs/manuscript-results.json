@@ -2193,11 +2193,21 @@
       "source": "companion_sections/limits_appendix.tex",
       "line": 17,
       "sha256": "577505173f283d328c9ea800df12cce8b58fdda29ce5a14dff74e0692398899f",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.RunCountLattice.companion_T19_1",
+        "PaperP1.RunSeparation.dyadic_count_support",
+        "PaperP1.RunCountLattice.factorial_count_lattice",
+        "PaperP1.RunCountLattice.joint_moment_nominal_lattice",
+        "PaperP1.RunCountLattice.factorialCountMoment_eq_subset_sum",
+        "PaperP1.RunCountLattice.dyadicCountLaw_support_subset",
+        "PaperP1.SeparatedPacking.ceil_ratio_eq",
+        "PaperP1.Probability.factorial_subset_expansion",
+        "PaperP1.Affine.uniformSolutionMass_integer_multiple"
+      ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Full companion T19.1 for every finite N≥2 and L≥1: deterministic support 0≤Z_N≤Nat.ceil(N/L), with the literal real quotient and exact rounding, and E(Z_N)_j=j!·p^j·m for an actual natural coefficient m and every j≥1. The proof retains every actual window including irregular, zero-probability and incompatible cases. Separation is proved directly from the two start events; the affine binary system has at most |I|L rows. The full unordered-subset factorial identity is proved and linked to actual infinite-measure moments. Sharp zero coefficients above the support and a support inclusion are also proved. See SUPPORT_LATTICE_ALIGNMENT.md."
     },
     {
       "label": "p1:limits:local-blocks",
