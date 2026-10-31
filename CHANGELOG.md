@@ -15,9 +15,13 @@
   pinned compiler; record source blobs, attribution and the factorization API rename.
 - Prove complete multiplicativity, the signed run-start interpretation, cutoff
   adequacy and the exact-marginal cylinder count-law expansion.
-- Generate and check kernel-axiom audit coverage of all 113 theorem/lemma declarations.
+- Prove Proposition 5.2: actual positive stopped kernels, their joint-event masses,
+  the exact law difference, mass-one retained reference and ordinary ℓ¹ bound.
+- Prove the ℓ¹ triangle, convolution and power bounds, and norm-equals-mass for
+  positive kernels. The suffix carries no exponential-size penalty.
+- Generate and check kernel-axiom audit coverage of all 157 theorem/lemma declarations.
 - Discover direct Mathlib imports for selective cache fetching, with disk checks.
-- Numbered manuscript coverage: 2 / 167.
+- Numbered manuscript coverage: 3 / 167.
 
 ## 0.1.0 — 31 October 2026
 

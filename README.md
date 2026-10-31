@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 2 / 167 numbered results proved.**
+**Status: active formalization, 3 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The asymptotic theorems remain open.
@@ -12,6 +12,9 @@ Article Proposition 4.1 is proved on an arbitrary probability space with a
 finite measurable indicator family. The actual count law is identified as a
 measure; coefficients are Bochner expectations; zero-marginal sites are removed
 without changing the law; complementary Bernoulli products are probabilities.
+Article Proposition 5.2 is proved with its exact positive remainder kernel,
+joint activation mass and ordinary ℓ¹ norm bound, without an independence
+assumption between the prefix and suffix.
 
 | Material | Location |
 |---|---|

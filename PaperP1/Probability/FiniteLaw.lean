@@ -72,6 +72,21 @@ theorem atom_indicator (b : Bool) (p : R) :
   cases b <;> simp only [indicatorValue, Bool.false_eq_true, ↓reduceIte, Bool.toNat_false,
     Bool.toNat_true, bernoulli, forwardDifference, map_sub, map_one, map_zero] <;> ring1
 
+theorem atom_indicator_uncentered (b : Bool) :
+    atom b.toNat = 1 + scalar (indicatorValue b) * (forwardDifference : SignedLaw R) := by
+  simpa only [bernoulli, map_zero, zero_mul, add_zero, atom_zero, sub_zero] using
+    atom_indicator b (0 : R)
+
+omit [Fintype Ω] in
+theorem count_atom_product (G : Finset ι) (J : ι → Ω → Bool) (ω : Ω) :
+    (∏ x ∈ G, (1 + (forwardDifference : SignedLaw R) * scalar (indicatorValue (J x ω)))) =
+      atom (indicatorCount G J ω) := by
+  rw [indicatorCount, ← atom_sum]
+  apply Finset.prod_congr rfl
+  intro x _
+  rw [atom_indicator_uncentered]
+  ring1
+
 omit [Fintype Ω] in
 theorem indicatorCount_le_card (G : Finset ι) (J : ι → Ω → Bool) (ω : Ω) :
     indicatorCount G J ω ≤ G.card := by

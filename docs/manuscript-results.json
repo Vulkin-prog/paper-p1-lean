@@ -247,11 +247,16 @@
       "source": "main_sections/stopped.tex",
       "line": 97,
       "sha256": "e50b8b2c7ba9a9e50147f2f9f43e0e6cf92d3bf3e53a4107bb85e07ac865e06f",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.Probability.positive_stopped_remainder",
+        "PaperP1.Probability.measureBoundaryKernel_coeff",
+        "PaperP1.Probability.measureJointMoment_eq_probability",
+        "PaperP1.Probability.measureRetainedReference_mass"
+      ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Complete result for arbitrary dependence on any probability space with a finite measurable Boolean family. The ordered suffix is retained in an actual positive kernel. Its coefficients are Bochner expectations of prefix activity times the suffix count event; total mass is the actual joint activation probability. Exact stopped law difference and ordinary unweighted l1 error bound are proved. Proof uses the sufficient bound norm(delta^m) <= 2^m, without an exponential suffix-size factor. Retained reference has mass one and is not assumed positive."
     },
     {
       "label": "p1:fixed:recovery",

@@ -4,7 +4,7 @@ Stage: **finite identities on general probability spaces**, 31 October 2026.
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **2 / 167**: article Proposition 4.1 and Lemma 5.1.
+- Numbered results completed: **3 / 167**: article Propositions 4.1, 5.2 and Lemma 5.1.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -18,10 +18,21 @@ Neither document is fully formalized.
   the complementary references. The carrier may be the finite subtype of the
   paper's index set; `indicatorCount_subtype` proves the count reindexing.
   No independence or model-specific arithmetic premise is used.
+- Article Proposition 5.2 is proved on an arbitrary probability space.
+  `positive_stopped_remainder` gives the exact stopped law difference, positive
+  kernel and its mass, and the full ordinary ℓ¹ error bound. Each kernel
+  coefficient is proved to be the expected prefix activity times the actual
+  suffix count event; its mass is the actual joint activation probability.
+  The suffix can remain completely dependent. The retained reference has total
+  mass one, without an assertion that its individual coefficients are positive.
+- The ordinary ℓ¹ norm is the sum of absolute singleton masses. Its triangle
+  inequality, convolution submultiplicativity and difference-power bound are
+  proved. Positive kernels have norm equal to their mass, so the bound incurs
+  no exponential factor in the suffix size.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **113 audited theorem/lemma declarations**. This
+- The project currently has **157 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   No Fourier, compatible-nullity or asymptotic estimate is claimed proved.
 - Paper C code ported: parity vectors and selected finite prime-cylinder

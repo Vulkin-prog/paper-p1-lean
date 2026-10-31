@@ -60,6 +60,20 @@ theorem finiteExpectation_of_measure (ν : Measure τ) [IsProbabilityMeasure ν]
   rw [integral_fintype (integrable_finite_function ν f)]
   rfl
 
+/-- Finite indicator expectation is the actual probability of its event. -/
+theorem finiteMeasure_indicator_expectation (ν : Measure τ) [IsProbabilityMeasure ν]
+    (E : τ → Prop) [DecidablePred E] :
+    finiteExpectation (finiteProbabilityOfMeasure ν).weight (fun x => if E x then 1 else 0) =
+      ν.real {x | E x} := by
+  classical
+  unfold finiteExpectation
+  change (∑ x, ν.real {x} * (if E x then 1 else 0)) = _
+  simp only [mul_ite, mul_one, mul_zero]
+  rw [← Finset.sum_filter, sum_measureReal_singleton]
+  congr 1
+  ext x
+  simp
+
 /-- Pushforward weights constructed from a measurable finite-valued observation. -/
 def finiteObservationProbability (μ : Measure Ω) [IsProbabilityMeasure μ]
     (F : Ω → τ) (_hF : Measurable F) : FiniteProbability τ :=

@@ -12,7 +12,7 @@ a blank declaration field nor a preparatory algebraic lemma establishes coverage
 Coverage includes the exact declarations listed below. Preparatory lemmas are
 recorded in the project status without counting as complete numbered results.
 
-## Main article: 2 / 73 proved
+## Main article: 3 / 73 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -30,7 +30,7 @@ recorded in the project status without counting as complete numbered results.
 | 4.3 (p. 18) | [p1:alg:compatible](../manuscripts/paper-p1/v1.6/sources/main_sections/affine_algebra.tex#L101) | Compatible-nullity majorant | not_started | — |
 | 4.4 (p. 18) | [p1:alg:components](../manuscripts/paper-p1/v1.6/sources/main_sections/affine_algebra.tex#L134) | Existence, uniqueness, and factorization | not_started | — |
 | 5.1 (p. 19) | [p1:stop:polynomial](../manuscripts/paper-p1/v1.6/sources/main_sections/stopped.tex#L40) | Expansion at the first excluded prefix | proved | `PaperP1.Algebra.stopped_expansion`, `PaperP1.Algebra.orderedBoundary_iff_erase_max`, `PaperP1.Algebra.orderedSuffix_eq_filter_max` |
-| 5.2 (p. 20) | [p1:stop:measure](../manuscripts/paper-p1/v1.6/sources/main_sections/stopped.tex#L97) | A positive remainder kernel | not_started | — |
+| 5.2 (p. 20) | [p1:stop:measure](../manuscripts/paper-p1/v1.6/sources/main_sections/stopped.tex#L97) | A positive remainder kernel | proved | `PaperP1.Probability.positive_stopped_remainder`, `PaperP1.Probability.measureBoundaryKernel_coeff`, `PaperP1.Probability.measureJointMoment_eq_probability`, `PaperP1.Probability.measureRetainedReference_mass` |
 | 6.1 (p. 21) | [p1:fixed:recovery](../manuscripts/paper-p1/v1.6/sources/main_sections/fixed_moments.tex#L30) | Disjoint recovery | not_started | — |
 | 6.2 (p. 22) | [p1:fixed:targets](../manuscripts/paper-p1/v1.6/sources/main_sections/fixed_moments.tex#L89) | Large rank loss after fixed sources | not_started | — |
 | 6.3 (p. 22) | [p1:fixed:propagation](../manuscripts/paper-p1/v1.6/sources/main_sections/fixed_moments.tex#L105) | Conditional sums and propagation | not_started | — |
