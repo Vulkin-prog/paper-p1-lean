@@ -22,23 +22,28 @@ Paper C; importing an old interface alone cannot discharge this comparison.
 
 ## Disjoint recovery — partial internal proof
 
-Stable ID: `P1-LINALG-DISJOINT-RECOVERY`. Overall source status: **unresolved**;
-subspace, recovery exclusion and multiplicity clauses: **proved**.
+Stable ID: `P1-LINALG-DISJOINT-RECOVERY`. Status: **proved**.
 
-- Target: article Lemma 6.1, page 21, `p1:fixed:recovery`.
-- Lean: `DisjointRecoverySubspace.exists_small_recovery_subspace` and
-  `coordinate_multiplicity_le`. The construction works over every field.
+- Target: full article Lemma 6.1, page 21, `p1:fixed:recovery`.
+- Lean: `DisjointRecoveryTheorem.main_6_1` is the literal binary coordinate
+  specialization. `disjoint_recovery` proves the whole lemma over every field
+  for any finite family of linear forms on a finite-dimensional space.
 - Finite Bernoulli weights, exact joint recovery and failure probabilities,
   pointwise sequential rank budget, maximal stopping history and the literal
-  sampling parameter are proved internally. The determinant or any arithmetic
-  literature estimate is not an input to these clauses.
+  sampling parameter are proved internally. No determinant or arithmetic
+  literature estimate is an input.
+- The last representation count is proved by a finite maximal disjoint family,
+  its explicit transversal and an erase recursion. Disjoint label supports
+  lift injectively to physical coordinate supports before recovery exclusion
+  is applied. Linear independence implies the zero-sum-free property used in
+  the more general counting lemma; no representation bound is assumed.
 - Mathlib at commit `9d581dfff2e41de989072ea63abf3daf69311520` supplies finite
   product expansion, Bernoulli's inequality, finite-dimensional rank and dual
-  annihilator/restriction identities. No target bound or history output is
-  assumed in the constructed subspace theorem.
-- The final independent-label representation count is still open. These
-  clauses do not establish complete Lemma 6.1 coverage. The field/family
-  extension is `P1-MATH-0013`; see [alignment](DISJOINT_RECOVERY_ALIGNMENT.md).
+  annihilator/restriction identities. All remaining combinatorial arguments
+  are proved in this project.
+- The field/family extension is `P1-MATH-0013`; the sharper representation
+  bound and zero-sum-free extension are `P1-MATH-0014`. See
+  [alignment](DISJOINT_RECOVERY_ALIGNMENT.md).
 
 ## Constraints on at most three coordinates
 

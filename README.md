@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 25 / 167 numbered results proved.**
+**Status: active formalization, 26 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The principal Poisson asymptotic theorems remain open.
@@ -112,10 +112,11 @@ with the zero perturbation at the final endpoint made explicit. See
 The following unnumbered asymptotic example is also proved, including the
 literal floor, fixed-order moment identities and failure of every polynomial
 rate. See [its alignment](docs/MOMENT_OBSTRUCTION_ASYMPTOTICS.md).
-Article Lemma 6.1 remains in progress: its stopping subspace, exact
-codimension bound and coordinate multiplicity are proved over any field.
-The final independent-representation count remains open and adds no completed
-result. See [disjoint recovery progress](docs/DISJOINT_RECOVERY_ALIGNMENT.md).
+Article Lemma 6.1 is proved in full over any field, including its stopping
+subspace, exact codimension bound, coordinate multiplicity and independent-label
+representation count. A stronger count replaces t by t-1 and covers all
+zero-sum-free label supports. See
+[disjoint recovery alignment](docs/DISJOINT_RECOVERY_ALIGNMENT.md).
 The sharp PNT input is proved by a selected, recompiled and audited analytic
 development, with [separate provenance](docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 

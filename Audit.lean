@@ -738,6 +738,9 @@ import PaperP1
 #print axioms PaperP1.DisjointRecoverySubspace.exists_small_stopping_span
 #print axioms PaperP1.DisjointRecoverySubspace.exists_small_recovery_subspace
 #print axioms PaperP1.DisjointRecoverySubspace.coordinate_multiplicity_le
+#print axioms PaperP1.DisjointRecoveryTheorem.disjoint_recovery_sharp
+#print axioms PaperP1.DisjointRecoveryTheorem.disjoint_recovery
+#print axioms PaperP1.DisjointRecoveryTheorem.main_6_1
 #print axioms PaperP1.GriesmerBound.griesmerSum_zero
 #print axioms PaperP1.GriesmerBound.length_le_griesmerSum
 #print axioms PaperP1.GriesmerBound.griesmerSum_succ
@@ -774,6 +777,10 @@ import PaperP1
 #print axioms PaperP1.HammingDefectBound.half_ratio_pow_le_two_pow
 #print axioms PaperP1.HammingDefectBound.base_lt_two_pow_div_add_one
 #print axioms PaperP1.HammingDefectBound.length_lt_of_sum_choose_le_two_pow
+#print axioms PaperP1.IndependentRepresentations.mem_independentRepresentations
+#print axioms PaperP1.IndependentRepresentations.independent_zeroSumFree
+#print axioms PaperP1.IndependentRepresentations.independentRepresentations_card_le
+#print axioms PaperP1.IndependentRepresentations.independentRepresentations_source_bound
 #print axioms PaperP1.LocalDefectAsymptotic.card_mono_width
 #print axioms PaperP1.LocalDefectAsymptotic.local_defect_count_le_log_div_loglog_eventually
 #print axioms PaperP1.LocalDefectBound.smallPrime_covers
@@ -818,6 +825,8 @@ import PaperP1
 #print axioms PaperP1.LocalRigidityThreshold.griesmer_ceiling_sum_ge
 #print axioms PaperP1.LocalRigidityThreshold.window_relation_finrank_lt_of_geometric
 #print axioms PaperP1.LocalRigidityThreshold.window_relation_finrank_lt_of_log_budget
+#print axioms PaperP1.RecoveryLabelSupports.mem_labels
+#print axioms PaperP1.RecoveryLabelSupports.noDisjointSums_of_recovery_exclusion
 #print axioms PaperP1.RecoveryRankCertificate.selectionSpan_dimension_le
 #print axioms PaperP1.RecoveryRankCertificate.pointwise_rank_certificate
 #print axioms PaperP1.RecoveryRankCertificate.recorded_history_cost_bound
@@ -987,6 +996,14 @@ import PaperP1
 #print axioms PaperP1.RungeCoefficients.abs_rungeCoefficient_le_card_mul
 #print axioms PaperP1.RungeCoefficients.abs_rungeCoefficient_le
 #print axioms PaperP1.RungeCoefficients.abs_rungeCoefficient_le_eight_mul_pow
+#print axioms PaperP1.UniformTransversal.exists_transversal
+#print axioms PaperP1.ZeroSumFreeRepresentations.mem_representations
+#print axioms PaperP1.ZeroSumFreeRepresentations.zeroSumFree_mono
+#print axioms PaperP1.ZeroSumFreeRepresentations.erase_representation
+#print axioms PaperP1.ZeroSumFreeRepresentations.residual_ne_zero
+#print axioms PaperP1.ZeroSumFreeRepresentations.representations_one_card_le
+#print axioms PaperP1.ZeroSumFreeRepresentations.representation_cover
+#print axioms PaperP1.ZeroSumFreeRepresentations.representations_card_le
 #print axioms PaperP1.PellInput.toZsqrtd_re
 #print axioms PaperP1.PellInput.toZsqrtd_im
 #print axioms PaperP1.PellInput.norm_toZsqrtd

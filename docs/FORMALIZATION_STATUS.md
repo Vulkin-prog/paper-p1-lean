@@ -1,10 +1,10 @@
 # Formalization status
 
-Stage: **exact probability identities and uniform arithmetic foundations**, 31 October 2026.
+Stage: **exact probability identities and uniform arithmetic foundations**, 1 November 2026.
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **25 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1, together with Lemmas T19.13, T2.1, T2.2, T20.2 and Corollary T2.3.
+- Numbered results completed: **26 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1, together with Lemmas T19.13, T2.1, T2.2, T20.2 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1874 audited theorem/lemma declarations**. This
+- The project currently has **1891 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -294,15 +294,17 @@ Neither document is fully formalized.
   stronger ternary incidence dK^2. An existence wrapper constructs D by T2.2;
   no regularizer output is assumed. See
   [ternary constraint alignment](TERNARY_CONSTRAINTS_ALIGNMENT.md).
-- Article Lemma 6.1 is in progress. Its actual small-codimension stopping
-  subspace, exclusion of every t-disjoint recovery system, and coordinate
-  multiplicity t-1 are proved. A maximal independent history and its pointwise
-  rank certificate are constructed; exact finite Bernoulli weights and the
-  literal sampling parameter give the source constant two. These clauses hold
+- Article Lemma 6.1 is complete. Its actual small-codimension stopping
+  subspace, exclusion of every t-disjoint recovery system, coordinate
+  multiplicity t-1 and independent-label representation count are proved.
+  A maximal independent history and its pointwise rank certificate are
+  constructed; exact finite Bernoulli weights and the literal sampling
+  parameter give the source constant two. Maximal disjoint families give
+  explicit transversals, and an erase recursion proves the sharper
+  j!*(t-1)^(j-1) bound, even for zero-sum-free supports. The full lemma holds
   over any field for any finite family of linear forms, without separation.
-  The final independent-label representation count is still open, so completed
-  coverage remains 25/167. See
-  [disjoint recovery alignment](DISJOINT_RECOVERY_ALIGNMENT.md).
+  The literal binary coordinate specialization retains the original bound.
+  See [disjoint recovery alignment](DISJOINT_RECOVERY_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
@@ -317,8 +319,9 @@ Neither document is fully formalized.
   `P1-MATH-0011`, an initially active coordinate budget and zero boundary
   parameters for coordinate regularisation; `P1-MATH-0012`, the sharper ternary
   incidence constant and a version without the three-block coloring;
-  `P1-MATH-0013`, arbitrary fields and linear-form families for the proved
-  subspace and multiplicity clauses of Lemma 6.1. Its final clause remains open.
+  `P1-MATH-0013`, arbitrary fields and linear-form families for all of
+  Lemma 6.1; `P1-MATH-0014`, its sharper independent-representation bound
+  and extension to all zero-sum-free label supports.
   No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.

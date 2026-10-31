@@ -324,8 +324,11 @@
       "source": "main_sections/fixed_moments.tex",
       "line": 30,
       "sha256": "18db139a0bd9ab77f064acb65b950ad41adfc0ba3ee9dba623584d8600e83131",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
+        "PaperP1.DisjointRecoveryTheorem.main_6_1",
+        "PaperP1.DisjointRecoveryTheorem.disjoint_recovery",
+        "PaperP1.DisjointRecoveryTheorem.disjoint_recovery_sharp",
         "PaperP1.DisjointRecoverySubspace.exists_small_recovery_subspace",
         "PaperP1.DisjointRecoverySubspace.coordinate_multiplicity_le",
         "PaperP1.DisjointRecoveryHistory.exists_maximal_history",
@@ -334,15 +337,21 @@
         "PaperP1.SequentialRankBudget.rank_budget",
         "PaperP1.FiniteBernoulliSubset.expectation_failure_exact",
         "PaperP1.FiniteBernoulliSubset.expectation_selected_card",
-        "PaperP1.DisjointRecoveryParameters.failure_factor_le_half"
+        "PaperP1.DisjointRecoveryParameters.failure_factor_le_half",
+        "PaperP1.RecoveryLabelSupports.noDisjointSums_of_recovery_exclusion",
+        "PaperP1.IndependentRepresentations.independentRepresentations_card_le",
+        "PaperP1.IndependentRepresentations.independentRepresentations_source_bound",
+        "PaperP1.ZeroSumFreeRepresentations.representations_card_le",
+        "PaperP1.UniformTransversal.exists_transversal"
       ],
       "literature_inputs": [
         "P1-LINALG-DISJOINT-RECOVERY"
       ],
       "mathematical_changes": [
-        "P1-MATH-0013"
+        "P1-MATH-0013",
+        "P1-MATH-0014"
       ],
-      "notes": "In progress: the actual small-codimension subspace, complete t-disjoint-recovery exclusion and nonzero coordinate multiplicity t-1 are proved. These clauses hold for any field and any finite family of linear forms on a finite-dimensional space, with no separation or binary assumption, recorded as P1-MATH-0013. A maximal independent recovery history is constructed internally; its pointwise rank certificate is proved, and exact finite Bernoulli selection plus the literal t^(-1/d) parameter gives the original constant 2. The dual annihilator and restriction establish the actual output subspace and every nonzero dual form. No history, target bound, independence or rank-budget output is assumed. The final independent-label j-term representation bound remains open, so this is not counted as a completed numbered result. The sharper j!*(t-1)^(j-1) suggested by the source proof is a candidate under examination only. See DISJOINT_RECOVERY_ALIGNMENT.md."
+      "notes": "Full article Lemma 6.1, including the final independent-label representation count. The actual subspace has the original codimension cost 2*card(V)*t^(-1/d), no nonzero dual form has t disjoint nonempty recoveries of sizes at most d, and coordinate multiplicity is at most t-1. Representations are unordered label supports, matching the source proof. Their cardinality is at most j!*(t-1)^(j-1), hence the original j!*t^(j-1). The stronger bound even counts all zero-sum-free supports; finite maximal matchings, their transversals and the erase recursion are proved. Disjoint label supports are lifted injectively to actual physical coordinate supports before applying recovery exclusion. The complete theorem holds over any field for any finite family of linear forms on a finite-dimensional space, with no separating or binary assumption. Exact Bernoulli weights, recovery probabilities, pointwise rank certificate, maximal history, annihilator and restriction are all proved internally. P1-MATH-0013 is now complete for the whole lemma with its earlier partial validation retained; P1-MATH-0014 records the stronger representation bound and class. See DISJOINT_RECOVERY_ALIGNMENT.md."
     },
     {
       "label": "p1:fixed:targets",
