@@ -12,7 +12,7 @@ a blank declaration field nor a preparatory algebraic lemma establishes coverage
 Coverage includes the exact declarations listed below. Preparatory lemmas are
 recorded in the project status without counting as complete numbered results.
 
-## Main article: 8 / 73 proved
+## Main article: 9 / 73 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -39,7 +39,7 @@ recorded in the project status without counting as complete numbered results.
 | 7.2 (p. 23) | [p1:core:moderate](../manuscripts/paper-p1/v1.6/sources/main_sections/cores.tex#L65) | Counting moderate certificates | not_started | — |
 | 7.3 (p. 24) | [p1:core:degrees](../manuscripts/paper-p1/v1.6/sources/main_sections/cores.tex#L92) | Incoming and outgoing saturation degrees | not_started | — |
 | 7.4 (p. 24) | [p1:core:generator](../manuscripts/paper-p1/v1.6/sources/main_sections/cores.tex#L111) | A generating function with marked isolated vertices | not_started | — |
-| 8.1 (p. 25) | [p1:close:positivity](../manuscripts/paper-p1/v1.6/sources/main_sections/closure.tex#L39) | Positivity of the quadratic Poisson correction | not_started | — |
+| 8.1 (p. 25) | [p1:close:positivity](../manuscripts/paper-p1/v1.6/sources/main_sections/closure.tex#L39) | Positivity of the quadratic Poisson correction | proved | `PaperP1.QuadraticPoisson.main_8_1_fract`, `PaperP1.QuadraticPoisson.main_8_1`, `PaperP1.QuadraticPoisson.reference_singleton`, `PaperP1.QuadraticPoisson.reference_total_mass`, `PaperP1.QuadraticPoisson.reference_eq_poisson_plus_secondDifference`, `PaperP1.QuadraticPoisson.poissonSigned_eq_poissonMeasure`, `PaperP1.AtomicSignedLaw.isProbability_ofSequence_iff`, `PaperP1.CharlierQuadratic.quadratic_at_floor_succ`, `PaperP1.CharlierQuadratic.quadratic_ge_minimum`, `PaperP1.CharlierQuadratic.nonnegative_scaled_iff` |
 | 9.1 (p. 25) | [p13:short:moments](../manuscripts/paper-p1/v1.6/sources/main_sections/short_supports.tex#L27) | Uniform moments for short split products | not_started | — |
 | 9.2 (p. 26) | [p13:short:old-space](../manuscripts/paper-p1/v1.6/sources/main_sections/short_supports.tex#L49) | Short projections in an old space | not_started | — |
 | 10.1 (p. 26) | [p13:half:conditional](../manuscripts/paper-p1/v1.6/sources/main_sections/half_counts.tex#L21) | Conditional full-support count | not_started | — |

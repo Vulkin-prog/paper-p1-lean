@@ -296,3 +296,14 @@ closed prime budget. This proves all of companion T9.3. The stronger constant
 quantifier is recorded as a consequence of P1-MATH-0006, whose original T9.2
 validation remains preserved. No further finding identifier or paper error is
 introduced. See [complete alignment](FREE_COMPONENT_ALIGNMENT.md).
+
+## Exact quadratic Poisson positivity — no new finding
+
+Article Lemma 8.1 is proved for an actual signed measure, including its
+exact masses, total mass one, both directions of the parameter criterion,
+the integer minimum and a large-index obstruction for every negative α.
+The endpoints and integral means are included. All eight existing
+improvement entries remain separate; no error or improvement is identified
+in this lemma. The full build, actual 1,519-declaration axiom audit and all
+130 distinct coverage/finding declaration checks passed. See
+[complete alignment](QUADRATIC_POISSON_ALIGNMENT.md).

@@ -452,11 +452,24 @@
       "source": "main_sections/closure.tex",
       "line": 39,
       "sha256": "1bda3d739142898ef6191306fe15dfe040c58696c9aeab658210a3674d15e5a0",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.QuadraticPoisson.main_8_1_fract",
+        "PaperP1.QuadraticPoisson.main_8_1",
+        "PaperP1.QuadraticPoisson.reference_singleton",
+        "PaperP1.QuadraticPoisson.reference_total_mass",
+        "PaperP1.QuadraticPoisson.reference_eq_poisson_plus_secondDifference",
+        "PaperP1.QuadraticPoisson.poissonSigned_eq_poissonMeasure",
+        "PaperP1.AtomicSignedLaw.isProbability_ofSequence_iff",
+        "PaperP1.CharlierQuadratic.quadratic_at_floor_succ",
+        "PaperP1.CharlierQuadratic.quadratic_ge_minimum",
+        "PaperP1.CharlierQuadratic.nonnegative_scaled_iff"
+      ],
+      "literature_inputs": [
+        "P1-ANALYSIS-POISSON-POSITIVITY"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Full article Lemma 8.1 for the actual quadratic Poisson signed measure. The source singleton formula holds at every nonnegative integer, with negative-index shifts zero; summability and total mass one are proved for all real alpha and nonnegative mu. The base signed law equals the actual Mathlib Poisson law; the reference is its second pushforward difference correction. For mu>0, positivity is equivalent to the exact closed interval 0≤alpha≤2mu²/(mu+fract(mu)(1-fract(mu))). The exact integer minimum is attained at floor(mu)+1, including integral mu; negative alpha has a proved large-index negative mass. Probability means existence of an actual bundled probability measure equal to the reference as a signed measure. No approximation or model parameter asymptotics are used. See QUADRATIC_POISSON_ALIGNMENT.md."
     },
     {
       "label": "p13:short:moments",

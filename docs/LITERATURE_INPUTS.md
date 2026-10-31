@@ -20,6 +20,27 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Exact quadratic Poisson positivity
+
+Stable ID: `P1-ANALYSIS-POISSON-POSITIVITY`. Status: **proved**.
+
+- Target: article Lemma 8.1, page 25, `p1:close:positivity`.
+- Lean: `QuadraticPoisson.main_8_1_fract`, `reference_singleton`,
+  `reference_total_mass`, `reference_eq_poisson_plus_secondDifference`.
+- Mathlib at commit `9d581dfff2e41de989072ea63abf3daf69311520` supplies
+  `ProbabilityTheory.hasSum_one_poissonMeasure`, its actual `poissonMeasure`
+  and singleton formula in `Probability/Distributions/Poisson/Basic.lean`.
+  The countable density construction is
+  `Measure.withDensityᵥ` in `MeasureTheory/VectorMeasure/WithDensity.lean`;
+  `integrable_count_iff` and `Summable.norm` prove its actual integrability.
+  Countable integration and disjoint-union additivity identify the signed
+  measure on every set from its singleton masses.
+- The exact integer quadratic minimum, the negative-α obstruction, and both
+  directions of the parameter criterion are proved internally. No source
+  positivity claim or asymptotic parameter estimate is an input.
+- See [complete alignment](QUADRATIC_POISSON_ALIGNMENT.md). No mathematical
+  change entry is added for this verification of the original statement.
+
 ## Proved exact bivariate factor height
 
 Stable ID: `P1-ARITH-BIVARIATE-HEIGHT`. Status: **proved**.

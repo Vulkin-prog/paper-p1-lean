@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 31 O
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **17 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2.
+- Numbered results completed: **18 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1484 audited theorem/lemma declarations**. This
+- The project currently has **1519 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -221,6 +221,14 @@ Neither document is fully formalized.
   without assuming a multivariate measure theorem. Degree-lowering
   specializations are included. Primitivity of the factor is unnecessary.
   See [factor-height alignment](BIVARIATE_FACTOR_HEIGHT_ALIGNMENT.md).
+- Article Lemma 8.1 is complete for every μ>0 and real α. The reference is
+  an actual signed measure with proved summable singleton masses and total
+  mass one. Its exact second-difference formula and its identification with
+  the shifted actual Poisson measure are proved. The integer minimum of
+  (k-μ)^2-k gives the exact closed interval for positivity; negative α is
+  excluded by a proved large-index witness. Positivity constructs an actual
+  probability measure. No parameter asymptotics or approximation estimate
+  is assumed or concluded. See [positivity alignment](QUADRATIC_POISSON_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
