@@ -448,12 +448,13 @@
       ],
       "proposed_revision": "Generalize the subspace-existence, disjoint-recovery exclusion and multiplicity clauses to any field and any finite family L of linear forms on U. Keep d>=1, t>=2 and the same bound 2*card(V)*t^(-1/d). Retain the binary coordinate specialization used in the arithmetic applications.",
       "impact": "A field and ambient-family generalization for the proved subspace and multiplicity clauses only. The final independent-label representation count is not yet formalized, and the whole Lemma 6.1 is not counted complete. No manuscript conclusion is corrected. A sharper representation constant remains a separate candidate under examination.",
-      "validation": "Full Lean v4.36.0-rc2 build (8787 jobs) and actual kernel axiom audit for all 1874 declarations; only propext, Classical.choice and Quot.sound. Every evidence theorem is directly included in the actual audit.",
+      "validation": "Full Lean v4.36.0-rc2 build (8787 jobs) and actual kernel axiom audit for all 1874 declarations; only propext, Classical.choice and Quot.sound. Every evidence theorem is directly included in the actual audit. All 230 distinct coverage/finding declaration names were also checked by Lean.",
       "scope_limit": "Only the small-codimension stopping subspace, complete disjoint-recovery exclusion and coordinate multiplicity clauses. The last independent-representation clause remains open.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "749cc57a47466ee65501e37ed5f5dfcfca6a24ea"
     }
   ]
 }

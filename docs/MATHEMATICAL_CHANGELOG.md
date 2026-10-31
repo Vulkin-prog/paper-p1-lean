@@ -488,3 +488,7 @@ All 221 distinct coverage/finding declaration names were checked by Lean.
 The last source proof suggests j!(t-1)^(j-1) instead of j!t^(j-1) by retaining
 its exact maximal-disjoint-family bound. This is a candidate under examination,
 not a confirmed improvement or proved representation theorem at this checkpoint.
+
+Validated implementation for the displayed partial scope of P1-MATH-0013:
+[749cc57a47466ee65501e37ed5f5dfcfca6a24ea](https://github.com/Vulkin-prog/paper-p1-lean/commit/749cc57a47466ee65501e37ed5f5dfcfca6a24ea).
+All 230 distinct coverage/finding declaration names were checked by Lean.
