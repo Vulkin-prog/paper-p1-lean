@@ -32,15 +32,21 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **157 audited theorem/lemma declarations**. This
+- The project currently has **186 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
-  No Fourier, compatible-nullity or asymptotic estimate is claimed proved.
+  Generic binary character orthogonality and the affine fiber Fourier identity
+  are proved. P1's full-support centered Fourier formula is in progress; its
+  effective-space and affine-prescription linkage remains open. No P1
+  compatible-nullity or asymptotic estimate is claimed proved.
 - Paper C code ported: parity vectors and selected finite prime-cylinder
   definitions/proofs, with exact source identities recorded in the reuse ledger.
   Complete multiplicativity, the signed run-start interpretation, cutoff
   adequacy, actual cylinder probabilities and the exact-marginal centered
   count-law identity are proved. Infinite-cylinder consistency is still open.
   External literature propositions encoded: none.
+- Generic affine fibers, their kernel equivalences, power-of-two cardinalities
+  and rational uniform probabilities have been ported and checked. Connecting
+  these counts to the actual real-valued run marginals is the next step.
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1. No error in the original conclusion is asserted.
 - Palomar registrations: none; preparation only.

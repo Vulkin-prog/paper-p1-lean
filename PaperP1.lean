@@ -13,3 +13,6 @@ public import PaperP1.Probability.AdmissibleIndices
 public import PaperP1.Probability.L1Norm
 public import PaperP1.Probability.StoppedFiniteLaw
 public import PaperP1.Probability.StoppedMeasureLaw
+public import PaperP1.Affine.System
+public import PaperP1.Affine.Fourier
+public import PaperP1.Affine.Probability

@@ -19,7 +19,10 @@
   the exact law difference, mass-one retained reference and ordinary ℓ¹ bound.
 - Prove the ℓ¹ triangle, convolution and power bounds, and norm-equals-mass for
   positive kernels. The suffix carries no exponential-size penalty.
-- Generate and check kernel-axiom audit coverage of all 157 theorem/lemma declarations.
+- Port and check generic affine solution counts, rational uniform probabilities,
+  binary character orthogonality and the affine Fourier identity from Paper C.
+  P1's effective full-support formula remains in progress.
+- Generate and check kernel-axiom audit coverage of all 186 theorem/lemma declarations.
 - Discover direct Mathlib imports for selective cache fetching, with disk checks.
 - Numbered manuscript coverage: 3 / 167.
 

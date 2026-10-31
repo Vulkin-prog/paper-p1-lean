@@ -15,6 +15,9 @@ without changing the law; complementary Bernoulli products are probabilities.
 Article Proposition 5.2 is proved with its exact positive remainder kernel,
 joint activation mass and ordinary ℓ¹ norm bound, without an independence
 assumption between the prefix and suffix.
+Generic affine fiber counts, rational probabilities and binary Fourier
+orthogonality have also been ported from Paper C. Their effective-space
+application to P1's full-support formula is in progress.
 
 | Material | Location |
 |---|---|

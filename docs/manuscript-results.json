@@ -177,11 +177,14 @@
       "source": "main_sections/affine_algebra.tex",
       "line": 60,
       "sha256": "1357e7556eb0994ea9a2b3a23a308dc627fac610d0f5718317f46bf85cebfde1",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.Affine.sum_binarySign_linear",
+        "PaperP1.Affine.affineFiber_fourier_identity"
+      ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Generic finite binary character orthogonality and affine fiber Fourier identity are proved after a checked Paper C port. These are precursors only. P1's effective local spaces, affine prescriptions, centered full-support restriction, kernel-cardinality bound and implication c(I) nonzero -> full-support relation remain to be formalized."
     },
     {
       "label": "p1:alg:compatible",
