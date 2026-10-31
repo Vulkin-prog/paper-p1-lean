@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 28 / 167 numbered results proved.**
+**Status: active formalization, 29 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The principal Poisson asymptotic theorems remain open.
@@ -125,6 +125,10 @@ Companion T22.3 is proved for arbitrary finite prime sets, including its
 uniform logarithmic-budget estimate. The stronger bound removes the zeta
 factor and extends the exponent interval to [1/2,3/4]. See
 [logarithmic prime-budget alignment](docs/LOGARITHMIC_PRIME_BUDGET_ALIGNMENT.md).
+Companion T21.3 is proved for both actual squarefree prime products and
+arbitrary distinct integer-factor supports, with literal weights and explicit
+constants. The parameter range extends to every fixed d>=2. See
+[offset-pattern Rankin alignment](docs/OFFSET_PATTERN_RANKIN_ALIGNMENT.md).
 The sharp PNT input is proved by a selected, recompiled and audited analytic
 development, with [separate provenance](docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 

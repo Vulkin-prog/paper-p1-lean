@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **28 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1, together with Lemmas T19.13, T2.1, T2.2, T20.2, T22.3 and Corollary T2.3.
+- Numbered results completed: **29 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1, together with Lemmas T19.13, T2.1, T2.2, T20.2, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1941 audited theorem/lemma declarations**. This
+- The project currently has **1978 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -322,6 +322,14 @@ Neither document is fully formalized.
   The argument uses the primorial bound and finite Abel comparison, without
   an unproved prime estimate. See
   [logarithmic prime-budget alignment](LOGARITHMIC_PRIME_BUDGET_ALIGNMENT.md).
+- Companion T21.3 is complete for both literal weighted populations:
+  squarefree prime products and finite supports of distinct integer factors.
+  Prime-factor injectivity, finite support exhaustiveness and both source
+  weight identities are proved. Finite Rankin and clipped Abel comparisons
+  give all needed power tails. One prime constant is chosen before d=2 or
+  d=3. Explicit versions also hold for every fixed d>=2, with dependence on
+  d, and every zeta>=0 in the integer case. See
+  [offset-pattern Rankin alignment](OFFSET_PATTERN_RANKIN_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
@@ -341,7 +349,8 @@ Neither document is fully formalized.
   and extension to all zero-sum-free label supports; `P1-MATH-0015`, the
   square-root endpoint and explicit constants for the small-kernel count;
   `P1-MATH-0016`, removal of the zeta factor and the wider uniform interval
-  with explicit constants under a logarithmic prime budget.
+  with explicit constants under a logarithmic prime budget; `P1-MATH-0017`,
+  the wider d and integer-tilt ranges for offset-pattern counts.
   No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.

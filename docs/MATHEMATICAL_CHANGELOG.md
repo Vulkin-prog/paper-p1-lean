@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Sixteen mathematical improvements are confirmed; no error in a manuscript conclusion
+**Seventeen mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -590,3 +590,30 @@ All 263 distinct coverage/finding declaration names were checked directly by Lea
 
 Validated implementation of companion T22.3 and P1-MATH-0016:
 [88a8ae4c5fe51e5b8ed6fdfdf86ee641531af02a](https://github.com/Vulkin-prog/paper-p1-lean/commit/88a8ae4c5fe51e5b8ed6fdfdf86ee641531af02a).
+
+## P1-MATH-0017 — Wider offset-pattern parameters
+
+- Location: companion T21.3, page 88, `p1:consequences:rankin-patterns`,
+  `companion_sections/arithmetic_consequences.tex:208`.
+- Original restrictions: d is 2 or 3; the integer-factor tilt has 0<zeta<1.
+- Improvement: both estimates hold for every fixed integer d>=2, with
+  constants allowed to depend on d. The integer-factor estimate holds for
+  every zeta>=0, including zero and zeta>=1. The displayed exponents
+  `s=1+(d-1)/c` and `s_zeta=1+(d-1+zeta)/c` are unchanged.
+- Explicit constants use the proved prime and integer power-tail constants.
+  For the original finite set d=2 or d=3, taking the maximum of the two
+  prime constants gives one constant depending only on c and D0, as in
+  the source. No constant uniform over unbounded d is claimed.
+- Evidence: `OffsetPatternRankin.prime_patterns_explicit`,
+  `integer_patterns_explicit`, `prime_patterns_uniform`,
+  `coefficient_power`, `primeConstant_pos` and `integerConstant_pos`.
+- Suggested revision: state the broader fixed-d forms when needed, and
+  retain the d=2 or d=3 uniform corollary. The proof only needs a Rankin
+  exponent above one; the entire stated larger range satisfies it.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,827 jobs) and actual
+  audit of all 1,978 theorem/lemma declarations, with only `propext`,
+  `Classical.choice` and `Quot.sound`. No error in a source conclusion or
+  optimality claim is made. Not integrated into a manuscript. See
+  [alignment](OFFSET_PATTERN_RANKIN_ALIGNMENT.md).
+
+All 283 distinct coverage/finding declaration names were checked directly by Lean.

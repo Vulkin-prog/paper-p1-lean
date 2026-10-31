@@ -20,6 +20,29 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Weighted offset-pattern counts
+
+Stable ID: `P1-ARITH-OFFSET-PATTERN-RANKIN`. Status: **proved**.
+
+- Target: both conclusions of companion T21.3, page 88,
+  `p1:consequences:rankin-patterns`.
+- Lean: `OffsetPatternRankin.companion_T21_3`; explicit broader versions
+  are `prime_patterns_explicit` and `integer_patterns_explicit`.
+- Actual squarefree values map injectively to their prime-factor supports.
+  The integer support population is proved exhaustive for every finite
+  support above the threshold and below the product cutoff. Both source
+  weights are identified exactly, including the empty support/product one.
+- Finite Rankin is proved from actual product inequalities. Clipping the
+  decreasing power weight lets finite Abel comparison and the proved
+  primorial bound control prime tails, with the logarithmic saving. Arbitrary
+  integer tails use the previously proved p-series integral comparison.
+- Mathlib at the pinned revision supplies prime-factor reconstruction for
+  squarefree integers, finite products and real-power identities. No prime
+  tail, product count or external asymptotic estimate is an assumption.
+- No additional Paper C source is ported. `P1-MATH-0017` records the wider
+  parameter ranges with their precise constant dependence. See
+  [alignment](OFFSET_PATTERN_RANKIN_ALIGNMENT.md).
+
 ## An arbitrary prime set under a logarithmic budget
 
 Stable ID: `P1-ARITH-LOGARITHMIC-PRIME-BUDGET`. Status: **proved**.

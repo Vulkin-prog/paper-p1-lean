@@ -37,6 +37,26 @@ theorem sum_prime_sequence (F : ℕ → ℝ) (Y : ℕ) :
   · intro i _
     rfl
 
+theorem sum_log_prime_mul_le (Y : ℕ) (F : ℕ → ℝ)
+    (hF : ∀ i : ℕ, 0 ≤ F (i + 1)) (hanti : Antitone (fun i : ℕ ↦ F (i + 1))) :
+    (∑ p ∈ smallPrimesUpTo Y, Real.log p * F p) ≤
+      Real.log 4 * ∑ i ∈ range Y, F (i + 1) := by
+  let f : ℕ → ℝ := fun i ↦ if Nat.Prime (i + 1) then Real.log (i + 1 : ℕ) else 0
+  have hfc (k : ℕ) (_hk : k ≤ Y) :
+      ∑ i ∈ range k, f i ≤ ∑ _i ∈ range k, Real.log 4 := by
+    calc
+      _ = ∑ p ∈ smallPrimesUpTo k, Real.log p := sum_prime_sequence (fun p ↦ Real.log p) k
+      _ ≤ (k : ℝ) * Real.log 4 := prime_log_sum_le k
+      _ = _ := by simp
+  have h := sum_mul_le_sum_mul_of_sum_range_le hfc hF
+    (fun _ _ _ _ hij ↦ hanti hij)
+  have hleft : (∑ i ∈ range Y, f i * F (i + 1)) =
+      ∑ p ∈ smallPrimesUpTo Y, Real.log p * F p := by
+    simpa only [f, ite_mul, zero_mul] using
+      sum_prime_sequence (fun p ↦ Real.log p * F p) Y
+  rw [hleft, ← mul_sum] at h
+  exact h
+
 theorem logPrimeSum_le_partialPower (Y : ℕ) (σ : ℝ) (hσ : 0 ≤ σ) :
     logPrimeSum Y σ ≤ Real.log 4 * powerSum σ Y := by
   let f : ℕ → ℝ := fun i ↦ if Nat.Prime (i + 1) then Real.log (i + 1 : ℕ) else 0

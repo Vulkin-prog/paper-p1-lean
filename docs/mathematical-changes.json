@@ -560,6 +560,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "88a8ae4c5fe51e5b8ed6fdfdf86ee641531af02a"
+    },
+    {
+      "id": "P1-MATH-0017",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:rankin-patterns",
+        "number": "T21.3",
+        "page": 88,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 208,
+        "statement_sha256": "a7a69c333387e3b9aa59a977e6082a4fe46373b4c46d2b3d89d5d47dac8b8cea"
+      },
+      "original_assumption": "Companion T21.3 restricts d to 2 or 3 and the integer-factor tilt to 0<zeta<1.",
+      "finding": "Both Rankin estimates hold for every fixed integer d>=2, with the displayed exponent formulas unchanged and constants allowed to depend on d. The arbitrary-integer-factor bound is valid for every zeta>=0, including zeta=0 and zeta>=1. Explicit constants are given by the proved prime/integer power-tail constants. For the original d=2 or d=3 range, the maximum of the two prime constants preserves the original constant independent of the choice of d.",
+      "evidence": [
+        "PaperP1.OffsetPatternRankin.prime_patterns_explicit",
+        "PaperP1.OffsetPatternRankin.integer_patterns_explicit",
+        "PaperP1.OffsetPatternRankin.prime_patterns_uniform",
+        "PaperP1.OffsetPatternRankin.coefficient_power",
+        "PaperP1.OffsetPatternRankin.primeConstant_pos",
+        "PaperP1.OffsetPatternRankin.integerConstant_pos"
+      ],
+      "proposed_revision": "Allow every fixed integer d>=2, making the dependence of the first constant on d explicit. In the integer-factor statement allow zeta>=0. Retain the original uniform d=2 or d=3 corollary when the first constant must depend only on c and D0.",
+      "impact": "Extends the parameter ranges without changing the weighted populations or exponents. The proof only requires the Rankin exponent to exceed one; this holds in the stated larger ranges. The algebraic cancellation of B powers and all tail estimates are proved, with no assumed asymptotic prime estimate. No uniformity over unbounded d, error in the source, or optimality claim is asserted.",
+      "validation": "Full Lean v4.36.0-rc2 build (8827 jobs) and actual axiom audit of all 1978 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. Every evidence theorem is directly included in the audit. All 283 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -2807,11 +2807,34 @@
       "source": "companion_sections/arithmetic_consequences.tex",
       "line": 208,
       "sha256": "a7a69c333387e3b9aa59a977e6082a4fe46373b4c46d2b3d89d5d47dac8b8cea",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.OffsetPatternRankin.companion_T21_3",
+        "PaperP1.OffsetPatternRankin.prime_patterns_uniform",
+        "PaperP1.OffsetPatternRankin.prime_patterns_explicit",
+        "PaperP1.OffsetPatternRankin.integer_patterns_explicit",
+        "PaperP1.OffsetPatternRankin.integer_patterns",
+        "PaperP1.OffsetFactorSupports.roughWeightedCount_eq_source",
+        "PaperP1.OffsetFactorSupports.integerWeightedCount_eq_source",
+        "PaperP1.OffsetFactorSupports.mem_roughValues",
+        "PaperP1.OffsetFactorSupports.mem_integerSupports",
+        "PaperP1.OffsetFactorSupports.primeFactors_injective_on_rough",
+        "PaperP1.OffsetFactorSupports.roughWeightedCount_le_supports",
+        "PaperP1.FiniteEulerRankin.weightedCount_le_exp",
+        "PaperP1.FiniteEulerRankin.weightedCount_le_euler",
+        "PaperP1.PrimePowerTail.finite_prime_tail_le",
+        "PaperP1.WeightedPrimeSum.sum_log_prime_mul_le",
+        "PaperP1.ClippedPowerSum.clipped_sum_le",
+        "PaperP1.ClippedPowerSum.finite_tail_le_power",
+        "PaperP1.OffsetPatternRankin.coefficient_power"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-OFFSET-PATTERN-RANKIN"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0017"
+      ],
+      "notes": "Both source sums are proved with literal real cutoffs and weights. The prime population is the actual positive squarefree Q<=X with all prime factors>B^c; prime-factor supports inject into the finite Euler product. For arbitrary distinct integer factors, membership in the finite support population is proved equivalent to every factor>B^c and product<=X, so all finite source supports are counted. Source weights (D0*B)^(d*omega(Q)) and (D0*B)^(d*card(A)) are identified exactly. Finite Rankin, clipped power sums and finite Abel comparison prove all required tails; no prime-tail estimate is assumed. A single prime constant is chosen before d=2 or d=3. Explicit generic versions hold for every fixed integer d>=2, with constants depending on d, and every zeta>=0 in the integer case. See OFFSET_PATTERN_RANKIN_ALIGNMENT.md."
     },
     {
       "label": "p1:consequences:confinement",
