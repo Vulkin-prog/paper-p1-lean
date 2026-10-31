@@ -39,3 +39,10 @@ public import PaperP1.Model.ParityCharacters
 public import PaperP1.Affine.StartCharacterSpace
 public import PaperP1.Model.SquareClassRelations
 public import PaperP1.Model.SquareClassFourier
+public import PaperP1.Affine.Subfamilies
+public import PaperP1.Affine.CompatibleNullity
+public import PaperP1.Affine.RelativeWeights
+public import PaperP1.Model.JointStartSystem
+public import PaperP1.Model.JointStartProbability
+public import PaperP1.Model.InfiniteJointMoments
+public import PaperP1.Model.CompatibleNullityBound

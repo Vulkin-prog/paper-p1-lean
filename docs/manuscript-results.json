@@ -204,11 +204,21 @@
       "source": "main_sections/affine_algebra.tex",
       "line": 101,
       "sha256": "26e1395319bc7ffeeecd57be800274c6d52dc8ae94fabdbdadbdc172d9dab61f",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.Model.InfiniteStarts.compatible_nullity_majorant",
+        "PaperP1.Model.InfiniteStarts.infinite_centered_compatible_nullity_bound",
+        "PaperP1.Model.InfiniteStarts.runCompatibleNullity_eq_maximum",
+        "PaperP1.Model.InfiniteStarts.runCompatibleNullity_attained",
+        "PaperP1.Model.InfiniteStarts.runCompatibleNullity_le_relative",
+        "PaperP1.Model.InfiniteStarts.runCompatibleNullity_eq_of_positive_joint",
+        "PaperP1.Model.InfiniteStarts.infiniteJointMoment_exact_of_pos",
+        "PaperP1.Model.InfiniteStarts.infiniteCenteredCoefficient_eq_transform",
+        "PaperP1.Affine.relativeNullityOn_mono"
+      ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Complete centered majorant, nullity comparison and equality case for every finite family with positive actual marginals, including the empty family, under the actual infinite prime-sign measure. The maximum is proved equal to the filtered supremum over positive actual joint masses and attained by such a subfamily. Relative nullity is the effective square-class dimension deficit. An injective extension-by-zero map proves subfamily monotonicity. Exact joint masses are proved using the actual joint affine system, its total effective row space, normalized uniform counting, rank-nullity and infinite-cylinder transport; the algebraic majorant has no undischarged model premise. Heterogeneous inclusion-exclusion is proved for actual Bochner moments. See docs/COMPATIBLE_NULLITY_ALIGNMENT.md. No arithmetic, asymptotic, nominal-marginal or independent-block premise is used."
     },
     {
       "label": "p1:alg:components",

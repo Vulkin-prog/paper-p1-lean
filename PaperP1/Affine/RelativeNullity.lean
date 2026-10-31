@@ -51,6 +51,16 @@ theorem relativeNullity_eq_dimension_deficit :
   rw [range_relationAddition, Module.finrank_pi_fintype] at h
   exact Nat.eq_sub_of_add_eq (by simpa [relativeNullity, add_comm] using h)
 
+omit [DecidableEq ι] in
+theorem relativeNullity_dimension_identity :
+    (∑ i, Module.finrank 𝔽₂ (S i)) =
+      Module.finrank 𝔽₂ (⨆ i, S i : Submodule 𝔽₂ U) + relativeNullity S := by
+  let : ∀ i, Module.Free 𝔽₂ (S i) := fun i => Module.Free.of_divisionRing 𝔽₂ (S i)
+  have h := LinearMap.finrank_range_add_finrank_ker
+    (K := 𝔽₂) (V := (i : ι) → S i) (V₂ := U) (relationAddition S)
+  rw [range_relationAddition, Module.finrank_pi_fintype] at h
+  exact h.symm
+
 def fullSupportRelations : Finset ((i : ι) → S i) :=
   Finset.univ.filter (IsFullSupportRelation S)
 

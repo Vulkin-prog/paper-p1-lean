@@ -4,7 +4,7 @@ Stage: **exact affine and probability-law identities**, 31 October 2026.
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **4 / 167**: article Propositions 4.1, 5.2 and Lemmas 4.2, 5.1.
+- Numbered results completed: **5 / 167**: article Propositions 4.1, 5.2 and Lemmas 4.2, 4.3, 5.1.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **361 audited theorem/lemma declarations**. This
+- The project currently has **404 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -46,8 +46,16 @@ Neither document is fully formalized.
   `dyadic_squareClass_fourier` supplies the aligned conclusion for every
   nonempty admissible subfamily of the dyadic block. The
   [alignment note](FOURIER_ALIGNMENT.md) explains the rational-square
-  representation and hypotheses. No P1 compatible-nullity or asymptotic
-  estimate is claimed proved.
+  representation and hypotheses. No asymptotic estimate is claimed proved.
+- Article Lemma 4.3 is complete. `compatible_nullity_majorant` proves the full
+  bound with actual infinite-model centered and joint Bochner moments,
+  compares the compatible maximum with the effective relative nullity, and
+  proves equality when the complete joint mass is positive. The maximum is
+  identified with the filtered finite supremum and proved attained by a
+  positive-mass subfamily. Extension by zero proves nullity monotonicity.
+  The exact joint-mass formula is proved from the actual joint affine system
+  and rank-nullity; it is not an assumed bound. The empty family is included.
+  See [statement alignment](COMPATIBLE_NULLITY_ALIGNMENT.md).
 - Paper C code ported: parity vectors and selected finite prime-cylinder
   definitions/proofs, with exact source identities recorded in the reuse ledger.
   Complete multiplicativity, the signed run-start interpretation, cutoff

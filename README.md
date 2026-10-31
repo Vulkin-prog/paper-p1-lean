@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 4 / 167 numbered results proved.**
+**Status: active formalization, 5 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The asymptotic theorems remain open.
@@ -24,6 +24,9 @@ including its full count law and centered moments. Effective square-class
 images and their relative relation kernels are identified with the actual
 character spaces, completing Lemma 4.2. Its
 [alignment note](docs/FOURIER_ALIGNMENT.md) records the representation and scope.
+Lemma 4.3 is proved with its compatible-nullity bound, comparison and equality
+case, using exact actual joint masses and retaining the empty family. See its
+[alignment note](docs/COMPATIBLE_NULLITY_ALIGNMENT.md).
 
 | Material | Location |
 |---|---|
