@@ -248,6 +248,11 @@ coverage/finding declaration checks passed.
   actual 1,647-declaration kernel audit; not integrated into a new manuscript.
   See [complete alignment](MOMENT_OBSTRUCTION_ALIGNMENT.md).
 
+The exact validated implementation commit for P1-MATH-0009 is
+[a8d53556b218c66ac655e855ac9096594217072b](https://github.com/Vulkin-prog/paper-p1-lean/commit/a8d53556b218c66ac655e855ac9096594217072b).
+The full build, actual 1,647-declaration axiom audit and all 159 distinct
+coverage/finding declaration checks passed.
+
 Every finding receives a stable identifier `P1-MATH-0001`, etc., and an entry in
 [mathematical-changes.json](mathematical-changes.json). Keep the following fields:
 

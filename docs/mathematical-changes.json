@@ -321,11 +321,12 @@
       ],
       "proposed_revision": "State the nontrivial construction for 0≤a<2, and optionally include a=2 as the zero-perturbation endpoint. Keep epsilon, the pointwise 1/2 and 3/2 factors, the factorial-moment difference and the exact TV formula. For a uniform exponential bound on 0≤a≤A≤2, use (3/2)exp(exp(t)-1)(1+(A/2)(exp(t)-1)²); A=1 recovers the original proof bound.",
       "impact": "Weakens the parameter restriction without changing the original construction or distance constant. Equality of factorial moments occurs exactly off order m when a<2; the endpoint degeneracy is explicit. The enlarged uniform exponential constant is stated separately. The original range and all its conclusions remain proved. No error in the original statement and no optimality of an obstruction rate are claimed. The subsequent unnumbered m_N/Stirling argument remains a separate obligation.",
-      "validation": "Full Lean v4.36.0-rc2 build (8727 jobs) and actual kernel axiom audit for all 1647 declarations; only propext, Classical.choice and Quot.sound. Exact implementation commit to be recorded immediately after this validated change is committed.",
+      "validation": "Full Lean v4.36.0-rc2 build (8727 jobs) and actual kernel axiom audit for all 1647 declarations at the recorded implementation commit; only propext, Classical.choice and Quot.sound. All 159 distinct coverage/finding reference names were also checked by Lean.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "a8d53556b218c66ac655e855ac9096594217072b"
     }
   ]
 }
