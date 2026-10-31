@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **806 audited theorem/lemma declarations**. This
+- The project currently has **830 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -46,7 +46,8 @@ Neither document is fully formalized.
   `dyadic_squareClass_fourier` supplies the aligned conclusion for every
   nonempty admissible subfamily of the dyadic block. The
   [alignment note](FOURIER_ALIGNMENT.md) explains the rational-square
-  representation and hypotheses. No asymptotic estimate is claimed proved.
+  representation and hypotheses. These identities alone supply no asymptotic
+  estimate for run counts.
 - Article Lemma 4.3 is complete. `compatible_nullity_majorant` proves the full
   bound with actual infinite-model centered and joint Bochner moments,
   compares the compatible maximum with the effective relative nullity, and
@@ -125,13 +126,19 @@ Neither document is fully formalized.
   prime budget. The global `N^(1/2+o(1))` count is now proved for the actual
   positive defective set, uniformly for `H ≤ D log N` and `X ≤ CN`, with
   fixed real C,D and a threshold before all cutoffs and counting heights.
-  The asymptotic local prime budget, two-defect window count and
-  dilation/translation versions remain open.
+  The two-defect window count is also complete, including actual positive
+  start sets and the exact dyadic windows [x-1,x+L-1]. A finite configuration
+  cover uses the proved T1.2 bound with explicit polynomial coefficient
+  heights. The prime-support count is proved uniformly subpolynomial with
+  only H ≤ D log N; there is no unproved counting premise. See
+  [two-defect alignment](TWO_DEFECT_ALIGNMENT.md). The asymptotic local prime
+  budget and full dilation/translation versions remain open.
   See [partial alignment](DEFECT_COUNTS_ALIGNMENT.md). This work does not
   increase numbered-result coverage.
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
-  companion T1.1 with its original constant. No error in an original
+  companion T1.1 with its original constant; `P1-MATH-0003`, upper-cutoff-only
+  hypotheses for the global and two-defect parts of T1.3. No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.
 

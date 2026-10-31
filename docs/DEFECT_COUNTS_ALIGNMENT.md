@@ -76,15 +76,19 @@ sqrt(C) factor and the exact positive set, with no additive zero-value loss.
 
 ## Remaining conclusions
 
+The two-defect-window bound is now also proved, including the exact left
+boundary of V_x and uniformity over all logarithmic cutoffs and lengths. See
+[TWO_DEFECT_ALIGNMENT.md](TWO_DEFECT_ALIGNMENT.md). Its actual finite
+configuration count uses T1.2 in both square and nonsquare cases; support
+counts and polynomial coefficient heights are proved internally.
+
 To complete T1.3, prove and combine:
 
 - The uniform prime budget and parameter comparisons converting the explicit
   local rate to O(B/log B), with fixed comparison constants.
-- The N^o(1) count of windows containing two distinct defects, using T1.2 with
-  the smooth-support and offset counts.
 - The stated versions after fixed dilations and translations.
 
-The global asymptotic part is recorded as proved progress inside T1.3.
+The global and two-defect asymptotic parts are recorded as proved progress inside T1.3.
 The full numbered result remains incomplete, so coverage stays 8/167.
 
 ## Provenance
@@ -94,5 +98,5 @@ bridges are adapted from the exact Paper C blobs in the reuse ledger.
 The quantitative application uses P1's stronger degree-uniform constant,
 and the actual local set separates the cutoff from the interval width.
 The intrinsic kernel product dictionary is a new P1 proof.
-All 806 current proved declarations are included in the kernel-axiom audit.
+All 830 current proved declarations are included in the kernel-axiom audit.
 

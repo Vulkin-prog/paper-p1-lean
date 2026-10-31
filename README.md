@@ -41,8 +41,9 @@ nonsquare coefficient products are included, and all divisor, ideal and
 unit estimates used in the proof are proved. See its
 [alignment note](docs/QUADRATIC_COUNT_ALIGNMENT.md).
 T1.3 is in progress: actual local defect codes, an explicit finite local rate,
-and the uniform global `N^(1/2+o(1))` count are proved. Its remaining local
-and two-defect window conclusions are tracked in the
+the uniform global `N^(1/2+o(1))` count, and the exact dyadic two-defect-window
+count `N^o(1)` are proved. Its remaining local and affine-transformation
+conclusions are tracked in the
 [partial alignment](docs/DEFECT_COUNTS_ALIGNMENT.md).
 
 | Material | Location |

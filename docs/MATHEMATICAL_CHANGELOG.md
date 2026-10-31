@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Two mathematical improvements are confirmed; no error in a manuscript conclusion
+**Three mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -46,6 +46,30 @@ Absence of an entry does not mean the argument has been verified.
   is claimed, and its analytic inequalities have not been separately checked.
 - Status: confirmed by compilation and the kernel-axiom audit; not yet
   integrated into a new manuscript version.
+
+## P1-MATH-0003 — Weaker cutoff hypotheses for two conclusions of T1.3
+
+- Location: companion Lemma T1.3, page 6, label `p1:arith:defects`,
+  `companion_sections/arithmetic_appendix.tex:90`, specifically the global
+  and two-defect-window conclusions.
+- Original setting: B is comparable to log N and H is comparable to B, with
+  fixed comparison constants shared by the combined lemma.
+- Improvement: the global count needs only H ≤ D log N and a linear counting
+  height. The two-defect-window count needs only H ≤ D log N and L ≤ E log N.
+  Fixed D,E ≥ 0 suffice; a lower bound on H and the intermediate B are
+  unnecessary for these two conclusions.
+- Evidence: `GlobalDefectCount.global_defect_count_le_rpow_eventually`,
+  `TwoDefectCount.two_defect_count_le_rpow_eventually`, and
+  `TwoDefectWindows.dyadic_two_defect_windows_le_rpow_eventually`.
+  Actual finite sets and a threshold before all cutoffs and lengths are used.
+- Suggested revision: separate these two conclusions from the local estimate
+  and state them under the displayed upper bounds. See
+  [exact alignment](TWO_DEFECT_ALIGNMENT.md).
+- Impact: strengthens parameter scope, including bounded or smaller cutoffs;
+  the exponents 1/2 and 0 are unchanged. This entry does not claim the entire
+  T1.3 lemma or its remaining local/transformation conclusions are complete.
+- Status: confirmed by full compilation and the 830-declaration kernel-axiom
+  audit; not yet integrated into a new manuscript version.
 
 Every finding receives a stable identifier `P1-MATH-0001`, etc., and an entry in
 [mathematical-changes.json](mathematical-changes.json). Keep the following fields:

@@ -41,8 +41,9 @@ Stable ID: `P1-ARITH-SPLIT`. Status: **proved**.
   argument. No proposition from that reference is assumed by the Lean proof;
   the cited paper's statement has not been used to discharge a proof obligation.
 - Degree dependence is fully explicit in the intermediate height estimate.
-  This resolves T1.1 itself; the uniform quadratic-equation, defect, determinant
-  and local-rigidity inputs remain separate open obligations.
+  This resolves T1.1 itself. The quadratic-equation count is resolved below;
+  the determinant, remaining defect and local-rigidity inputs are separate
+  obligations.
 
 ## Proved coefficient-uniform quadratic count
 
@@ -69,7 +70,7 @@ Stable ID: `P1-ARITH-PELL`. Status: **proved**.
 - No theorem from either cited paper is an unproved premise. No
   Nicolas–Robin estimate, fixed-discriminant constant, squarefree coefficient
   assumption or class-number bound remains in the final statement. The
-  determinant estimate and the remaining local/window parts of T1.3 remain
+  determinant estimate and the remaining local/transformation parts of T1.3 remain
   open. Its global defect-count conclusion is now proved.
 
 ## Proved defect-count ingredients
@@ -81,7 +82,11 @@ with no literature assumption. Mathlib's `primorial_le_four_pow`
 commit. The new global theorem
 `PaperP1.GlobalDefectCount.global_defect_count_le_rpow_eventually` proves the
 actual positive-set count ≤ N^(1/2+ε), with a threshold before all H,X in the
-stated logarithmic/linear ranges. See
+stated logarithmic/linear ranges. The two-defect count is now also proved by
+explicit finite configurations and the proved T1.2 theorem. The new uniform
+prime-support estimate, polynomial support heights and exact dyadic-window
+reindexing are proved in P1, with no new literature assumption. See
+[two-defect alignment](TWO_DEFECT_ALIGNMENT.md) and
 [partial statement alignment](DEFECT_COUNTS_ALIGNMENT.md) for what remains.
 
 ## Checked measure-theory infrastructure

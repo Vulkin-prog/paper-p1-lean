@@ -60,6 +60,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "839adcbfbf4659025307ff8733738d296023db89"
+    },
+    {
+      "id": "P1-MATH-0003",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:defects",
+        "number": "T1.3",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 90,
+        "statement_sha256": "c641ad80bb970cb82ad3b2c2b72718859d865ab7c7dc9f907e2843b9f3a49220",
+        "components": [
+          "p1:arith:onedfect",
+          "p1:arith:twodefect"
+        ]
+      },
+      "original_assumption": "The combined lemma assumes B comparable to log N and H comparable to B, with fixed comparison constants.",
+      "finding": "The global and two-defect-window conclusions require only upper logarithmic bounds on H and on the window length; a lower bound on H and the intermediate B are unnecessary for these two conclusions.",
+      "evidence": [
+        "PaperP1.GlobalDefectCount.global_defect_count_le_rpow_eventually",
+        "PaperP1.TwoDefectCount.two_defect_count_le_rpow_eventually",
+        "PaperP1.TwoDefectWindows.dyadic_two_defect_windows_le_rpow_eventually"
+      ],
+      "proposed_revision": "State the global count uniformly for H <= D log N and integer counting height X <= CN. State the dyadic two-defect-window count uniformly for H <= D log N and L <= E log N, for fixed C,D,E >= 0. Retain the separately needed hypotheses for the local estimate.",
+      "impact": "Strengthens parameter scope for two parts of T1.3, including small cutoffs. No change to exponents 1/2 or 0 and no error in the original conclusion is asserted. The full T1.3 local/transformation statements remain open.",
+      "validation": "Full Lean v4.36.0-rc2 compilation and actual kernel axiom audit for all 830 declarations; implementation commit to be recorded after committing this proof.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
