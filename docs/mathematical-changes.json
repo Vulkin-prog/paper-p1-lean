@@ -91,7 +91,7 @@
       ],
       "proposed_revision": "Use H=O(B) for the local estimate, retaining B comparable to log N. State the global count uniformly for H <= D log N and integer counting height X <= CN, and the dyadic two-defect-window count uniformly for H <= D log N and L <= E log N, with fixed constants. All fixed real affine interval changes retain the conclusions.",
       "impact": "Strengthens parameter scope in all three parts of T1.3, including fixed bounded cutoffs in the paper domain. No change to exponents 1/2 or 0 and no error in the original conclusion is asserted. The entire T1.3 lemma, including exact affine window geometry, is now proved.",
-      "validation": "Full Lean v4.36.0-rc2 compilation and actual kernel axiom audit for all 862 declarations. The earlier partial validation is preserved; the full implementation commit is recorded after committing this proof.",
+      "validation": "Full Lean v4.36.0-rc2 compilation and actual kernel axiom audit for all 862 declarations at the recorded full implementation commit. Earlier partial validation is retained in validation_history.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
@@ -101,8 +101,14 @@
           "commit": "1f8ea0b57c4b8f13f98f581e5688bade3a27fdff",
           "scope": "Global and two-defect conclusions; no lower logarithmic cutoff required.",
           "audited_declarations": 830
+        },
+        {
+          "commit": "c039c95c9390b61bae7afe0d2848e33c90ccbbb0",
+          "scope": "All three T1.3 conclusions with weaker cutoff hypotheses, literal B=L+1, independent component quantifiers and exact fixed real affine interval versions.",
+          "audited_declarations": 862
         }
-      ]
+      ],
+      "validation_commit": "c039c95c9390b61bae7afe0d2848e33c90ccbbb0"
     }
   ]
 }
