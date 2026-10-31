@@ -2730,11 +2730,32 @@
       "source": "companion_sections/offset_geometry.tex",
       "line": 192,
       "sha256": "465917147676dcae0ce62fd66ee88a0eb70874be3aacb04120c5ab5a6b4f772b",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.OffsetRootPolynomials.companion_T20_5",
+        "PaperP1.OffsetRootPolynomials.root_separation",
+        "PaperP1.OffsetRootPolynomials.polynomial_eq_split",
+        "PaperP1.OffsetRootPolynomials.polynomial_squarefree",
+        "PaperP1.OffsetRootPolynomials.isRoot_iff",
+        "PaperP1.OffsetRootSeparation.commonRoots_card_le_one",
+        "PaperP1.OffsetRootSeparation.match_left_unique",
+        "PaperP1.OffsetRootSeparation.value_proportional_of_root_match",
+        "PaperP1.OffsetRootExceptionalSet.exists_exceptional_coordinates",
+        "PaperP1.TwoPointSquareClasses.injective_evenMap_of_rank",
+        "PaperP1.TwoPointSquareClasses.pair_class_ne_zero",
+        "PaperP1.TwoPointSquareClasses.no_proportional_pairs",
+        "PaperP1.TwoPointSquareClasses.parity_pair_eq_of_cross_product",
+        "PaperP1.DiscardTouchedSupports.exists_discard",
+        "PaperP1.DiscardTouchedSupports.card_touched_le",
+        "PaperP1.SplitRootPolynomial.polynomial_squarefree"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-OFFSET-ROOT-SEPARATION"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0019"
+      ],
+      "notes": "Both conclusions of companion T20.5, on the actual even square-class spaces of positive windows and the exact rational line y=alpha*x+beta. The complete offset root lists have at most one common root. Two matches give a proportional pair of actual positive values and hence a shared even square class, which regularity makes nonzero and directness excludes. A finite exceptional coordinate set has size at most two; pairwise disjoint equation supports imply that at most two equations touch it. The remaining actual polynomials prod(Z+i)*prod(alpha*Z+beta+j) are proved squarefree and have pairwise disjoint root sets. The source theorem retains both regular-window assumptions; the stronger theorem only needs the first window regular. All root identities, support counting and polynomial squarefreeness are proved. See OFFSET_ROOT_SEPARATION_ALIGNMENT.md."
     },
     {
       "label": "p1:offset:planar-components",

@@ -626,6 +626,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "ed4ed43ecc05c2f7823ba9b0acca98bc1f62fc5d"
+    },
+    {
+      "id": "P1-MATH-0019",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:offset:root-separation",
+        "number": "T20.5",
+        "page": 83,
+        "source": "companion_sections/offset_geometry.tex",
+        "line": 192,
+        "statement_sha256": "465917147676dcae0ce62fd66ee88a0eb70874be3aacb04120c5ab5a6b4f772b"
+      },
+      "original_assumption": "Companion T20.5 assumes a positive pair of regular windows whose actual relative square-class spaces are in direct sum.",
+      "finding": "For the stated rational line and direct square-class spaces, regularity of the first window alone suffices for both conclusions. The second window may have local even square relations. The full at-most-one-common-root bound and removal of at most two equations, with squarefree remaining polynomials and disjoint roots, are proved in this broader setting.",
+      "evidence": [
+        "PaperP1.OffsetRootPolynomials.root_separation",
+        "PaperP1.OffsetRootSeparation.match_left_unique",
+        "PaperP1.OffsetRootSeparation.commonRoots_card_le_one",
+        "PaperP1.TwoPointSquareClasses.no_proportional_pairs",
+        "PaperP1.TwoPointSquareClasses.injective_evenMap_of_rank",
+        "PaperP1.OffsetRootExceptionalSet.exists_exceptional_coordinates"
+      ],
+      "proposed_revision": "In T20.5 retain positivity, nonzero rational slope and directness of the two actual even square-class spaces, but require only the first window to be regular. Keep the original two-regular-window specialization where used later.",
+      "impact": "Weakens the local arithmetic assumptions in the entire lemma. Two root matches create the same even square class in both windows; only the first map needs injectivity to make this class nonzero. All subsequent root and polynomial arguments use the proved common-root exclusion and disjoint physical supports, without second-window regularity. No original conclusion is corrected or optimality claim is made.",
+      "validation": "Full Lean v4.36.0-rc2 build (8847 jobs) and actual axiom audit of all 2038 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. Every evidence theorem is directly included in the audit. All 313 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

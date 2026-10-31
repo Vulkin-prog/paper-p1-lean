@@ -20,6 +20,28 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Root separation on a rational offset line
+
+Stable ID: `P1-ARITH-OFFSET-ROOT-SEPARATION`. Status: **proved**.
+
+- Target: both conclusions of companion T20.5, page 83,
+  `p1:offset:root-separation`.
+- Lean: `OffsetRootPolynomials.companion_T20_5`, and stronger
+  `root_separation` requiring only first-window regularity.
+- The arithmetic argument uses actual parity vectors and even-selection
+  maps. Regular rank is proved to imply the needed injectivity.
+  Proportional positive pairs give a common nonzero even square class,
+  contradicting the assumed directness of the actual source spaces.
+- The rational root identities and exceptional-coordinate construction are
+  proved. A finite injection bounds the number of disjoint equation
+  supports touched by that set. The exact substituted products are shown
+  squarefree with pairwise disjoint roots.
+- Mathlib at the pinned revision supplies linear-map rank-nullity,
+  finite sums and the separability of products of distinct linear factors.
+  No root-count or polynomial-squarefreeness conclusion is assumed.
+- No additional Paper C source is ported. `P1-MATH-0019` records the weaker
+  regularity assumption. See [alignment](OFFSET_ROOT_SEPARATION_ALIGNMENT.md).
+
 ## Product certificates with fixed source windows
 
 Stable ID: `P1-ARITH-FIXED-SOURCE-PRODUCT-CERTIFICATE`. Status: **proved**.

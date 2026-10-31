@@ -90,7 +90,7 @@ recorded in the project status without counting as complete numbered results.
 | 19.2 (p. 58) | [p1:discussion:charlier-norm](../manuscripts/paper-p1/v1.6/sources/main_sections/discussion.tex#L116) | Norms of Poisson differences | not_started | — |
 | 20.1 (p. 60) | [p1:limits:vector-reference](../manuscripts/paper-p1/v1.6/sources/main_sections/limits_appendix.tex#L45) | Unsigned positional compound-Poisson comparison | not_started | — |
 
-## Technical companion: 19 / 94 proved
+## Technical companion: 20 / 94 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -172,7 +172,7 @@ recorded in the project status without counting as complete numbered results.
 | T20.2 (p. 82) | [p1:offset:integer-tail](../manuscripts/paper-p1/v1.6/sources/companion_sections/offset_geometry.tex#L70) | An integer product tail | proved | `PaperP1.IntegerProductTail.companion_T20_2`, `PaperP1.IntegerProductTail.productTail_bound`, `PaperP1.IntegerProductTail.productTail_harmonic_bound`, `PaperP1.IntegerProductTail.pairTerm_eq_power`, `PaperP1.IntegerProductTail.summable_pairTerm`, `PaperP1.IntegerProductTail.productTail_eq_rows`, `PaperP1.PowerSeriesTail.tail_eq_shifted`, `PaperP1.PowerSeriesTail.tail_le_power` |
 | T20.3 (p. 82) | [p1:offset:forced-plane](../manuscripts/paper-p1/v1.6/sources/companion_sections/offset_geometry.tex#L96) | A forced plane uses all three coordinates | not_started | — |
 | T20.4 (p. 83) | [p1:offset:normal-budget](../manuscripts/paper-p1/v1.6/sources/companion_sections/offset_geometry.tex#L145) | Many planar supports force a small normal | not_started | — |
-| T20.5 (p. 83) | [p1:offset:root-separation](../manuscripts/paper-p1/v1.6/sources/companion_sections/offset_geometry.tex#L192) | At most one common root | not_started | — |
+| T20.5 (p. 83) | [p1:offset:root-separation](../manuscripts/paper-p1/v1.6/sources/companion_sections/offset_geometry.tex#L192) | At most one common root | proved | `PaperP1.OffsetRootPolynomials.companion_T20_5`, `PaperP1.OffsetRootPolynomials.root_separation`, `PaperP1.OffsetRootPolynomials.polynomial_eq_split`, `PaperP1.OffsetRootPolynomials.polynomial_squarefree`, `PaperP1.OffsetRootPolynomials.isRoot_iff`, `PaperP1.OffsetRootSeparation.commonRoots_card_le_one`, `PaperP1.OffsetRootSeparation.match_left_unique`, `PaperP1.OffsetRootSeparation.value_proportional_of_root_match`, `PaperP1.OffsetRootExceptionalSet.exists_exceptional_coordinates`, `PaperP1.TwoPointSquareClasses.injective_evenMap_of_rank`, `PaperP1.TwoPointSquareClasses.pair_class_ne_zero`, `PaperP1.TwoPointSquareClasses.no_proportional_pairs`, `PaperP1.TwoPointSquareClasses.parity_pair_eq_of_cross_product`, `PaperP1.DiscardTouchedSupports.exists_discard`, `PaperP1.DiscardTouchedSupports.card_touched_le`, `PaperP1.SplitRootPolynomial.polynomial_squarefree` |
 | T20.6 (p. 84) | [p1:offset:planar-components](../manuscripts/paper-p1/v1.6/sources/companion_sections/offset_geometry.tex#L212) | Many transverse square products on prescribed planes | not_started | — |
 | T20.7 (p. 84) | [p1:offset:cover-rank](../manuscripts/paper-p1/v1.6/sources/companion_sections/offset_geometry.tex#L271) | Covering cost and free components | not_started | — |
 | T20.8 (p. 85) | [p1:offset:six-vertex](../manuscripts/paper-p1/v1.6/sources/companion_sections/offset_geometry.tex#L309) | A six-vertex budget for the residual space | not_started | — |

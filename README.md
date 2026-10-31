@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 30 / 167 numbered results proved.**
+**Status: active formalization, 31 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The principal Poisson asymptotic theorems remain open.
@@ -133,6 +133,10 @@ Companion T4.2 is proved uniformly over every tuple of fixed source windows,
 with the exact signed offsets and an internally proved certificate count.
 The product threshold also allows equality. See
 [fixed-source certificate alignment](docs/FIXED_SOURCE_PRODUCT_CERTIFICATE_ALIGNMENT.md).
+Companion T20.5 is proved for actual window square classes and the exact
+line-substituted polynomials: at most one common root, and at most two
+equations to discard. Only the first window needs to be regular. See
+[offset-root separation alignment](docs/OFFSET_ROOT_SEPARATION_ALIGNMENT.md).
 The sharp PNT input is proved by a selected, recompiled and audited analytic
 development, with [separate provenance](docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 

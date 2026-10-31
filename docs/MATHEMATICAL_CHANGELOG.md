@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Eighteen mathematical improvements are confirmed; no error in a manuscript conclusion
+**Nineteen mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -654,3 +654,33 @@ All 297 distinct coverage/finding declaration names were checked directly by Lea
 
 Validated implementation of companion T4.2 and P1-MATH-0018:
 [ed4ed43ecc05c2f7823ba9b0acca98bc1f62fc5d](https://github.com/Vulkin-prog/paper-p1-lean/commit/ed4ed43ecc05c2f7823ba9b0acca98bc1f62fc5d).
+
+## P1-MATH-0019 — Only the first window needs to be regular for root separation
+
+- Location: companion T20.5, page 83, `p1:offset:root-separation`,
+  `companion_sections/offset_geometry.tex:192`.
+- Original setting: a positive pair of regular windows with direct relative
+  square-class spaces, on the nonzero-slope rational line y=alpha*x+beta.
+- Improvement: only the first window needs to be regular. The second may
+  have local even square relations. Both conclusions are retained: at most
+  one common root, and deletion of at most two equations to obtain
+  squarefree polynomials with pairwise disjoint root sets.
+- Proof: two common roots give two proportional pairs of actual positive
+  values. Their even square classes coincide. Injectivity of the first
+  even-selection map makes that class nonzero; membership in both actual
+  spaces contradicts directness. Second-window injectivity is unnecessary.
+  The remaining support and polynomial steps are proved in full.
+- Evidence: `OffsetRootPolynomials.root_separation`,
+  `OffsetRootSeparation.match_left_unique`, `commonRoots_card_le_one`,
+  `TwoPointSquareClasses.no_proportional_pairs`, `injective_evenMap_of_rank`
+  and `OffsetRootExceptionalSet.exists_exceptional_coordinates`.
+- Suggested revision: require first-window regularity only, retaining the
+  original two-regular-window specialization for later applications.
+  Positivity, the nonzero slope and directness remain explicit.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,847 jobs) and actual
+  audit of all 2,038 theorem/lemma declarations, with only `propext`,
+  `Classical.choice` and `Quot.sound`. No error or optimality claim is made.
+  Not integrated into a manuscript. See
+  [alignment](OFFSET_ROOT_SEPARATION_ALIGNMENT.md).
+
+All 313 distinct coverage/finding declaration names were checked directly by Lean.
