@@ -220,11 +220,17 @@
       "source": "main_sections/stopped.tex",
       "line": 40,
       "sha256": "4621b52018c16024632ffb2017abdf5e3c5e3c54b99649ff94956dc7f56846cd",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.Algebra.stopped_expansion",
+        "PaperP1.Algebra.orderedBoundary_iff_erase_max",
+        "PaperP1.Algebra.orderedSuffix_eq_filter_max"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0001"
+      ],
+      "notes": "Full polynomial identity for arbitrary finite linearly ordered carriers. Proper prefix equals deletion of the maximum; suffix characterization and scalar parameter are proved. Generalized ambient structure: commutative semiring."
     },
     {
       "label": "p1:stop:measure",

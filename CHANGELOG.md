@@ -1,5 +1,13 @@
 # Change log
 
+## In progress — 31 October 2026
+
+- Prove article Lemma 5.1 over arbitrary finite ordered carriers, including
+  the boundary/suffix identifications and the scalar polynomial parameter.
+- Record `P1-MATH-0001`: commutative semirings suffice for that identity.
+- Extend the kernel-axiom audit to all 16 proved declarations.
+- Numbered manuscript coverage: 1 / 167.
+
 ## 0.1.0 — 31 October 2026
 
 - Initialize P1's article-and-companion formalization repository.

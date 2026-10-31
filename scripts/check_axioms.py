@@ -6,13 +6,10 @@ import re
 import sys
 
 ALLOWED = {"propext", "Classical.choice", "Quot.sound"}
-EXPECTED = {
-    "PaperP1.Algebra.centeredCoefficient_empty",
-    "PaperP1.Algebra.centeredCoefficient_singleton",
-    "PaperP1.Algebra.centeredCoefficient_singleton_eq_zero",
-    "PaperP1.Algebra.centeredCoefficient_pair",
-    "PaperP1.Algebra.centeredCoefficient_pair_eq_covariance",
-}
+ROOT = Path(__file__).resolve().parents[1]
+EXPECTED = set(re.findall(r"^#print axioms (\S+)$", (ROOT / "Audit.lean").read_text(), re.M))
+if not EXPECTED:
+    raise SystemExit("The axiom-audit selection is empty")
 
 text = Path(sys.argv[1]).read_text()
 found = set()
@@ -25,4 +22,4 @@ for match in pattern.finditer(text):
         raise SystemExit(f"Unexpected axioms for {name}: {actual - ALLOWED}")
 if found != EXPECTED:
     raise SystemExit(f"Audit selection mismatch: missing={EXPECTED - found}, extra={found - EXPECTED}")
-print(f"Axiom check passed for {len(found)} auxiliary declarations.")
+print(f"Axiom check passed for {len(found)} declarations.")

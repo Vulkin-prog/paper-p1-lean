@@ -4,9 +4,10 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: repository initialization. The paper is not yet formalized.**
-The initial Lean module develops the finite centering transform at orders zero,
-one and two. None of the 167 numbered manuscript results is marked complete.
+**Status: active formalization, 1 / 167 numbered results proved.**
+Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
+over any commutative semiring. Auxiliary lemmas develop the finite centering
+transform at orders zero, one and two. The asymptotic theorems remain open.
 
 | Material | Location |
 |---|---|
@@ -44,7 +45,7 @@ their defaults point elsewhere. Available-space warnings start at 10 GiB; large
 downloads must stop below 5 GiB. See [environment policy](docs/ENVIRONMENT.md).
 
 `lake build` treats Lean warnings as errors. `Audit.lean` exposes the kernel
-axioms of each initial proved declaration. A successful build verifies only
+axioms of each selected proved declaration. A successful build verifies only
 the checked declarations, not the unformalized manuscript claims. The source
 integrity check verifies file identities and the coverage inventory; it does
 not certify mathematical proofs.

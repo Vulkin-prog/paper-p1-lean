@@ -15,8 +15,8 @@ lines = [
     "`proved` means the exact aligned statement has a checked Lean proof;",
     "`conditional` means its explicit unformalized inputs remain listed. Neither",
     "a blank declaration field nor a preparatory algebraic lemma establishes coverage.", "",
-    "The initial centering module supplies only auxiliary low-order identities used",
-    "in the vicinity of article Section 4; no complete numbered result is discharged.", "",
+    "Coverage includes the exact declarations listed below. Preparatory lemmas are",
+    "recorded in the project status without counting as complete numbered results.", "",
 ]
 for document, title in (("main", "Main article"), ("companion", "Technical companion")):
     rows = [r for r in data["results"] if r["document"] == document]

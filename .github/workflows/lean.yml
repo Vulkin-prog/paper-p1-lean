@@ -30,7 +30,7 @@ jobs:
           python3 scripts/check_disk.py
       - name: Build with warnings as errors
         run: lake build
-      - name: Check all initial declaration axioms
+      - name: Check declaration axioms
         run: |
           lake env lean Audit.lean > axiom-audit.txt
           cat axiom-audit.txt

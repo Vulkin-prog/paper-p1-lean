@@ -1,20 +1,25 @@
 # Formalization status
 
-Stage: **initialization**, 31 October 2026. Neither document is fully formalized.
+Stage: **finite algebraic identities**, 31 October 2026. Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **0 / 167**.
+- Numbered results completed: **1 / 167**: article Lemma 5.1, the full
+  first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
+  The boundary is proved to be deletion of the maximum, and the suffix is proved
+  to lie strictly after that maximum. The scalar parameter and empty products
+  are included. The theorem holds over any commutative semiring.
 - Initial scope: the algebraic inclusion-exclusion centering transform and its
   empty, singleton and two-site identities, with normalization and marginal
   premises explicit. Probability-space interpretation remains to be constructed.
 - These five auxiliary lemmas are not the full centered Bernoulli expansion,
   Fourier formula, compatible-nullity bound, or an asymptotic estimate.
 - Paper C code ported: none. External literature propositions encoded: none.
-- Mathematical corrections confirmed: none at initialization.
+- Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
+  assumptions for Lemma 5.1. No error in the original conclusion is asserted.
 - Palomar registrations: none; preparation only.
 
-The machine-readable [coverage ledger](manuscript-results.json) starts every
-numbered result at `not_started`. It records the exact original source block
+The machine-readable [coverage ledger](manuscript-results.json) records the
+individual status of every result. It records the exact original source block
 hash and the original label, number, page and file. Preparatory lemmas do not
 change these result statuses.
 
