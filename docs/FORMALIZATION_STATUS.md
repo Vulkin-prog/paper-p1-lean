@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **862 audited theorem/lemma declarations**. This
+- The project currently has **915 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -85,7 +85,14 @@ Neither document is fully formalized.
   real uniform mass is now proved to be zero for incompatible systems and
   `2⁻ʳ` otherwise. The full run-start affine system has been ported, and this
   formula is linked to actual finite-cylinder run marginals for positive length.
-  Local rigidity and the comparison of effective rank with `L` remain open.
+  The exact rank deficit from local even square relations is now proved.
+  The finite Griesmer inequality is proved on the actual window relation code,
+  with its exact ceiling distance from T1.1, actual defective coordinates and
+  redundancy at most π(B)+1. A finite prime-count obstruction gives the two
+  effective ranks and the two exact positive marginals under the infinite
+  model. The asymptotic conclusions of article Lemma 2.1 remain open, including
+  the sharp prime-count input; the result is recorded as in progress, without
+  increasing completed coverage. See [local rigidity alignment](LOCAL_RIGIDITY_ALIGNMENT.md).
 - On any effective subspace of actual binary linear forms, the affine event
   has its character expansion and actual marginal equal to the inverse size
   of that space. Local signs are evaluations at a solution and proved

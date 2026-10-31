@@ -62,3 +62,4 @@ public import PaperP1.Coding.LocalDefectRate
 public import PaperP1.Arithmetic.GlobalDefectCount
 public import PaperP1.Arithmetic.TwoDefectWindows
 public import PaperP1.Arithmetic.UniformDefectCounts
+public import PaperP1.Model.LocalRunRank

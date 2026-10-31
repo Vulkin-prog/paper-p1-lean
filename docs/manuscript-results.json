@@ -60,11 +60,19 @@
       "source": "main_sections/exact_setup.tex",
       "line": 27,
       "sha256": "cf6161ae9632dcc534edb3d4c2eaa9e3c05adc4d5f0edada9a6273dfa6a9e7f1",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.WindowRelationCode.window_relation_griesmer",
+        "PaperP1.WindowRelationCode.window_relation_griesmer_real",
+        "PaperP1.LocalRunRank.squareClass_rank_add_relation_rank",
+        "PaperP1.LocalRunRank.infiniteMarginal_eq_nominal_or_double"
+      ],
+      "literature_inputs": [
+        "P1-CODE-GRIESMER",
+        "P1-ARITH-PNT"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Finite Griesmer inequality proved for the actual full even square-relation code, with the exact ceiling distance from proved T1.1 and private-prime support restriction. Exact effective-rank deficit and actual infinite-model marginals proved under the finite prime-count obstruction. The sharp PNT input and all uniform asymptotic consequences remain open; this is not complete Lemma 2.1 coverage. See docs/LOCAL_RIGIDITY_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:core",

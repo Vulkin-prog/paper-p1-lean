@@ -171,6 +171,25 @@ reindexes the full-support formula and proves every conclusion of P1 Lemma 4.2
 on these spaces under the actual infinite measure. See
 [statement alignment](FOURIER_ALIGNMENT.md).
 
+## Local rigidity provenance
+
+For the finite local-rigidity proof, the single elementary lemma
+`not_dvd_of_dvd_and_dist_lt` is adapted from
+`PaperC/LinearAlgebra/PrivatePivots.lean`, Git blob
+`899c4303e63e4f631b7aa9a1d8acb96b01792249`, at the reference commit above.
+The target is `PaperP1/Arithmetic/PrivateWindowPrimes.lean`. Its hypotheses and
+conclusion are unchanged; only P1 module/public declarations and the namespace
+are adapted. No graph imports or large-prime exponent-one hypothesis are
+ported. The remaining private-coordinate, residual-code, Griesmer, window-code
+and effective-rank bridges are new P1 proofs.
+
+`PaperC/Arithmetic/PrimeNumberTheoremInput.lean`, blob
+`a18c4679f329ef81e3311f1c249128330811c054`, was inspected at the same commit.
+It defines an explicit unproved PNT proposition. It is not a proof of PNT and
+has not been imported or counted as a discharged arithmetic input in P1.
+`PaperCV282/MicroscopicPrivatePrimes.lean` was also inspected but not ported;
+its quadratic-window exponent-one argument is not needed here.
+
 ## Further candidates
 
 | Candidate area | Paper C paths | Required comparison |

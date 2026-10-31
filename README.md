@@ -45,6 +45,11 @@ bound, global `N^(1/2+o(1))` count, exact dyadic two-defect-window `N^o(1)`
 count, and fixed real affine interval versions. The complete statements use
 one common threshold and include the literal `B=L+1` convention. See
 [statement alignment](docs/DEFECT_COUNTS_ALIGNMENT.md).
+For article Lemma 2.1, the binary Griesmer bound and its exact finite application
+to all even square relations in a window are now proved. The effective rank
+deficit and the two actual positive marginals follow from a finite prime-count
+criterion. The sharp asymptotic prime comparison and the remaining asymptotic
+conclusions are still open. See [local rigidity alignment](docs/LOCAL_RIGIDITY_ALIGNMENT.md).
 
 | Material | Location |
 |---|---|
