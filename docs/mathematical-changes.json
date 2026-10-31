@@ -287,11 +287,12 @@
       ],
       "proposed_revision": "For every nonzero P in Z[X,Y] and every integer factorization P=Q R, both H(Q) and H(R) are at most 2^(dX+dY)||P||₂, which is at most 2^(dX+dY)sqrt((dX+1)(dY+1))H(P). Remove the primitive adjective; no separate content adjustment is needed.",
       "impact": "Weakens a hypothesis without changing the original constants or partial-degree dependence. The proof uses univariate Mahler bounds and Parseval and includes degree-lowering specializations. The original primitive-factor conclusion is retained. No error in the manuscript conclusion or its multivariate proof is asserted.",
-      "validation": "Full Lean v4.36.0-rc2 build (8651 jobs) and actual kernel axiom audit for all 1484 declarations; only propext, Classical.choice and Quot.sound. Exact implementation commit to be recorded immediately after this validated change is committed.",
+      "validation": "Full Lean v4.36.0-rc2 build (8651 jobs) and actual kernel axiom audit for all 1484 declarations at the recorded implementation commit; only propext, Classical.choice and Quot.sound. All 120 distinct coverage/finding reference names were also checked by Lean.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "7b6f23e04ffe90d29d093d7009c00e5f52426209"
     }
   ]
 }

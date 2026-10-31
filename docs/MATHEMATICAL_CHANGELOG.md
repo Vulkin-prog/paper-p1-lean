@@ -219,6 +219,11 @@ T9.2 validation remains in the machine-readable history.
   1,484-declaration kernel audit; not integrated into a new manuscript.
   See [complete alignment](BIVARIATE_FACTOR_HEIGHT_ALIGNMENT.md).
 
+The exact validated implementation commit for P1-MATH-0008 is
+[7b6f23e04ffe90d29d093d7009c00e5f52426209](https://github.com/Vulkin-prog/paper-p1-lean/commit/7b6f23e04ffe90d29d093d7009c00e5f52426209).
+The full build, actual 1,484-declaration axiom audit and all 120 distinct
+coverage/finding declaration checks passed.
+
 Every finding receives a stable identifier `P1-MATH-0001`, etc., and an entry in
 [mathematical-changes.json](mathematical-changes.json). Keep the following fields:
 
