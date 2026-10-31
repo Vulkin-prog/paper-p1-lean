@@ -458,3 +458,7 @@ All 209 distinct coverage/finding declaration names were checked by Lean.
 - Status: confirmed by the full Lean v4.36.0-rc2 build (8,771 jobs) and actual
   audit of all 1,834 theorem/lemma declarations; not integrated into a new
   manuscript. See [complete alignment](TERNARY_CONSTRAINTS_ALIGNMENT.md).
+
+Validated implementation for P1-MATH-0012:
+[0f8350f2eecede15560958e20acac059f016bc05](https://github.com/Vulkin-prog/paper-p1-lean/commit/0f8350f2eecede15560958e20acac059f016bc05).
+All 221 distinct coverage/finding declaration names were checked by Lean.

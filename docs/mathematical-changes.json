@@ -417,11 +417,12 @@
       ],
       "proposed_revision": "Replace the sufficient incidence bound 2*d*K^2 by d*K^2. State the row-type and component conclusions for any family of supports of size at most three with zero label sum, after deleting zero labels and identifying repeated supports. The three-block situation is an immediate specialization.",
       "impact": "Improves one finite constant and weakens the combinatorial structural hypothesis. Binary component size K, the actual coordinate restriction and the unordered-label convention remain unchanged. The original statement follows and no original conclusion is corrected. No optimality of the new bound or preservation under later restrictions is asserted.",
-      "validation": "Full Lean v4.36.0-rc2 build (8771 jobs) and actual kernel axiom audit for all 1834 declarations; only propext, Classical.choice and Quot.sound. Every evidence theorem is directly included in the actual audit.",
+      "validation": "Full Lean v4.36.0-rc2 build (8771 jobs) and actual kernel axiom audit for all 1834 declarations; only propext, Classical.choice and Quot.sound. Every evidence theorem is directly included in the actual audit. All 221 distinct coverage/finding declaration names were also checked by Lean.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "0f8350f2eecede15560958e20acac059f016bc05"
     }
   ]
 }
