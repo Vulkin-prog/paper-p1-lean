@@ -65,3 +65,4 @@ public import PaperP1.Arithmetic.UniformDefectCounts
 public import PaperP1.Model.LocalRunRank
 public import PaperP1.Arithmetic.SharpPrimeCount
 public import PaperP1.Model.LocalRigidityConsequences
+public import PaperP1.Model.RegularCumulantTransfer

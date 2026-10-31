@@ -181,3 +181,14 @@ explicitly:
 These are proved library inputs. They supply no arithmetic counting bound or
 asymptotic estimate. The no-constant-tail result uses only finite cylinders,
 their masses tending to zero, and prime/square evaluations.
+
+## Regular-set transfer: no additional external input
+
+Main Proposition 3.1 is now proved using the internal T1.3 two-defect count,
+full local rigidity and exact affine probabilities. Finite coupling, moment
+truncation and the complete second factorial-cumulant identity are proved
+internally. The source's bounded-fixed-moments premise remains an ordinary,
+explicit mathematical hypothesis only for the conditional moment-transfer
+clauses; no literature theorem or target transfer estimate is assumed.
+It may hold just along one prescribed length sequence. See
+[regular-set alignment](REGULAR_SET_ALIGNMENT.md).

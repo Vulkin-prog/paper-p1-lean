@@ -88,11 +88,23 @@
       "source": "main_sections/arithmetic.tex",
       "line": 49,
       "sha256": "72cfe42b0e0b6be9f580b90199109c791e1164e0b5c5f6cacafa6a9da3dab33c",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.RegularSetAsymptotic.irregular_count_critical",
+        "PaperP1.RegularSetAsymptotic.regular_set_transfer",
+        "PaperP1.RegularSetAsymptotic.affine_marginal_sum_critical",
+        "PaperP1.RegularMomentTransfer.regular_moment_transfer_on",
+        "PaperP1.RegularMomentTransfer.regular_moment_transfer_along",
+        "PaperP1.RegularCumulantTransfer.regular_second_factorial_cumulant_transfer_on",
+        "PaperP1.RegularCumulantTransfer.regular_second_factorial_cumulant_transfer_along",
+        "PaperP1.CountObservables.count_law_total_variation_eq",
+        "PaperP1.CountObservables.restrictedCountLaw_realizes",
+        "PaperP1.RegularStarts.marginal_on_regular",
+        "PaperP1.RegularSetFinite.regular_set_finite_transfer"
+      ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Full regular-set proposition: actual G_N defined by square-class rank L; |I_N\\G_N|≤N^ε eventually for every ε>0, uniformly in critical-band lengths. Actual infinite count laws and means obey the stated transfer bound, with explicit constant 4·2^C. All deterministic subsets and arbitrary affine targets are quantified after one threshold, with error ≤pN^ε including incompatible systems. The moment and second factorial-cumulant transfers retain the source's explicit bounded-fixed-moments hypothesis; variants for arbitrary allowed length families and one prescribed sequence avoid assuming bounds at unrelated lengths. Total variation is exactly half the finite sum of actual infinite-model singleton mass differences. See REGULAR_SET_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:hosts",

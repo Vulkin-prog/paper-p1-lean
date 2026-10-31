@@ -142,3 +142,15 @@ These are priorities, **not established errors**:
 - Exact heterogeneous marginals and repeated-index factorial-cumulant terms.
 - The three reconstruction errors, positivity, and the fourth-order lower bound.
 - The distinction between primitive supports and canonical direct components.
+
+## Regular-set transfer verification — no new mathematical finding
+
+The complete conclusion of article Proposition 3.1 has been checked, including
+arbitrary affine targets, incompatible exceptional windows, actual infinite
+count laws, both means, and the conditional fixed-moment and second factorial-
+cumulant transfers. The latter retain the bounded-fixed-moments premise and
+the diagonal term -E Z. A prescribed length sequence requires moment bounds
+only along that sequence. The proof gives the explicit combined constant
+4·2^C without changing the manuscript's exponent. This checkpoint adds no
+correction or improvement entry; the four confirmed findings above remain
+unchanged. See [statement alignment](REGULAR_SET_ALIGNMENT.md).

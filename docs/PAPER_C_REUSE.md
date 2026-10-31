@@ -199,6 +199,11 @@ actual infinite relative-sign independence and critical-band marginals.
 These use the checked P1 foundations above and introduce no further Paper C
 port. The weaker base hypothesis is recorded as `P1-MATH-0004`.
 
+The completion of main Proposition 3.1 uses new P1 proofs of the two-defect
+obstruction, exact arbitrary-target affine deviations, finite coupling and
+moment truncation. It reuses the already checked foundations, not additional
+Paper C source. Both count laws are identified with the actual infinite model.
+
 ## Further candidates
 
 | Candidate area | Paper C paths | Required comparison |

@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 31 O
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **10 / 167**: article Propositions 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3.
+- Numbered results completed: **11 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1223 audited theorem/lemma declarations**. This
+- The project currently has **1289 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -156,6 +156,23 @@ Neither document is fully formalized.
   height and run length. Global and window conclusions are quantified
   independently of local-interval parameters. Literal B=L+1 corollaries are
   included. See [complete alignment](DEFECT_COUNTS_ALIGNMENT.md).
+- Article Proposition 3.1 is complete. The regular set is defined by the
+  actual square-class rank L. A nonzero even relation needs two defective
+  vertices, and the actual exceptional set has cardinality at most N^ε
+  eventually for every ε>0, uniformly over all critical-band lengths. Every
+  affine target on a regular window has mass exactly p=2^(-L). On all other
+  windows, incompatibility and the proved critical rank bound give deviation
+  at most p and mass at most 2p. The law-and-two-means error is at most
+  4p times the number of exceptional starts, hence at most
+  4·2^C·N^(-1+ε). The law is the actual infinite-measure pushforward and
+  total variation is half the ordinary sum of absolute singleton differences.
+  Fixed-moment transfer uses a proved finite truncation inequality and the
+  source's explicit bounded-higher-moments premise. Allowed length families
+  and a single prescribed sequence are included. The full second factorial
+  cumulant retains its -E Z diagonal correction. See
+  [regular-set alignment](REGULAR_SET_ALIGNMENT.md). This verifies the
+  conditional transfer; uniform boundedness of the model's fixed moments
+  remains a separate open manuscript result.
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff

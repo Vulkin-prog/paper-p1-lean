@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 10 / 167 numbered results proved.**
+**Status: active formalization, 11 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The principal Poisson asymptotic theorems remain open.
@@ -51,6 +51,12 @@ relative signs under the infinite model. The critical-band effective ranks,
 p or 2p marginals and a uniform pointwise O(1/N) bound are also proved.
 The lower base bound U≥aN suffices, and one threshold controls every shorter
 window. See [local rigidity alignment](docs/LOCAL_RIGIDITY_ALIGNMENT.md).
+Article Proposition 3.1 is proved: the full-rank regular set has only
+`N^o(1)` exceptional windows; the actual count laws, both means and arbitrary
+affine marginal sums have the stated transfer estimates. Fixed-moment and
+second factorial-cumulant transfers retain the source's bounded-moments
+hypothesis, including the case of one prescribed length sequence. See
+[regular-set alignment](docs/REGULAR_SET_ALIGNMENT.md).
 The sharp PNT input is proved by a selected, recompiled and audited analytic
 development, with [separate provenance](docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 

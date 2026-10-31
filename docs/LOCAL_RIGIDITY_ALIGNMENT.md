@@ -3,7 +3,7 @@
 **Status: proved**, full article Lemma 2.1, including the finite Griesmer
 inequality, general and critical logarithmic regimes, and exact subcritical
 independence under the infinite prime-sign measure. Completed coverage is
-10 / 167. The critical-band rank and marginal consequences are also proved.
+11 / 167. The critical-band rank and marginal consequences are also proved.
 
 Original locator: article V1.6, page 11, `p1:limits:local-rigidity`,
 `main_sections/exact_setup.tex:27`. The original statement is unchanged.
@@ -31,9 +31,9 @@ nonzero weight at least
 `rungeDistance U B = ceil(log U / log(64B))`.
 
 The finite hypotheses are B≥1 and U≥2B. They ensure a positive distance and
-supply T1.1's base/radius condition. They hold eventually in the manuscript's
-macroscopic logarithmic regime; that uniform eventual specialization remains
-to be proved.
+supply T1.1's base/radius condition. The uniform eventual specialization in the manuscript's macroscopic
+logarithmic regime is proved by `UniformLocalRigidity.finite_griesmer_eventually`,
+with one threshold before all finite Griesmer orders.
 
 ## Griesmer bound proved internally
 
