@@ -131,7 +131,7 @@ Absence of an entry does not mean the argument has been verified.
 - Status: confirmed by Lean compilation and actual kernel audit; not integrated
   into a new manuscript. See [alignment](LOCAL_SQUARE_THRESHOLD_ALIGNMENT.md).
 
-## P1-MATH-0006 — An absolute constant for critical defective positions
+## P1-MATH-0006 — Absolute constants for critical defects and free components
 
 - Location: companion T9.2, page 39, `p13:rig:defective`,
   `companion_sections/pair_rigidity.tex:62`.
@@ -143,6 +143,12 @@ Absence of an entry does not mean the argument has been verified.
   `companion_T9_2` and the exact kernel/interval dictionary. The already proved
   T1.3 local count uses fixed dyadic-base and logarithmic-scale comparisons;
   their constants are independent of C once N exceeds a C-dependent threshold.
+- Propagation to companion T9.3, page 40, `p13:rig:components`: the complete
+  free-component comparison also has an absolute constant before C, with only
+  N0(C) depending on C. Evidence: `FreeComponentRank.companion_T9_3`, the
+  proved complete-relation dimension and the exact π(10B)+2 constraint cost.
+  Its constant can differ from the defect-count constant. Both overlapping
+  windows and all actual local kernels are retained.
 - Suggested revision: state the quantifier order ∃K>0, ∀C, ∃N0(C), followed
   by all N, L and x. Preserve the eventual character of the result.
 - Impact: strengthens constant uniformity. The cutoff 10B, rate B/log B and
@@ -244,6 +250,15 @@ See [statement alignment](SUPPORT_LATTICE_ALIGNMENT.md).
 The checked Paper C graph resolution is adapted to the literal P1 cutoff
 10(L+1) and linked to actual defective positions. The D+c dimension and
 component selection statements are proved, with exact source provenance.
-The d_xy comparison is still open, so this is partial T9.3 progress and
-adds no completed numbered result or mathematical correction. See
-[partial alignment](FREE_COMPONENT_ALIGNMENT.md).
+At that initial graph checkpoint, the d_xy comparison remained open and no
+completed numbered result or correction was added. The completed comparison
+is recorded below; see [complete alignment](FREE_COMPONENT_ALIGNMENT.md).
+
+## Complete free-component verification
+
+The earlier partial graph checkpoint is now completed by an explicit
+complete-relation equivalence, exact small-prime/parity constraint kernel and
+closed prime budget. This proves all of companion T9.3. The stronger constant
+quantifier is recorded as a consequence of P1-MATH-0006, whose original T9.2
+validation remains preserved. No further finding identifier or paper error is
+introduced. See [complete alignment](FREE_COMPONENT_ALIGNMENT.md).

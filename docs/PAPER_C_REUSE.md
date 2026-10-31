@@ -171,10 +171,10 @@ reindexes the full-support formula and proves every conclusion of P1 Lemma 4.2
 on these spaces under the actual infinite measure. See
 [statement alignment](FOURIER_ALIGNMENT.md).
 
-## Large-prime graph ports for partial T9.3
+## Large-prime graph ports for T9.3
 
 All rows use the same exact Paper C commit and Apache-2.0 attribution above.
-The complete T9.3 rank comparison remains open; these are checked graph foundations.
+The graph foundations below are completed by new P1 relation and rank-cost proofs.
 
 | Upstream path and Git blob | Target and scope | Adaptation |
 |---|---|---|
@@ -235,8 +235,11 @@ P1's literal odd-prime kernel above 10B, prove the actual critical defect
 bound, prove that nontrivial free components meet both blocks and prove the
 all-or-nothing selection property. Those new P1 proofs are not copied from
 Paper C. All graph ports and bridges passed the full Lean 4.36.0-rc2 build
-and the actual 1,416-declaration kernel audit. T9.3's remaining comparison
-with d_xy is not claimed proved by the ports alone.
+and the actual 1,416-declaration kernel audit at the graph checkpoint. The
+complete comparison with d_xy is now proved by new P1 `PairRelationDimension`,
+`TwoWindowRelations`, `SmallPrimePairConstraints`, `ComponentPrimeBudget` and
+`FreeComponentRank` proofs, with no additional Paper C port. The full project
+passes its 1,435-declaration audit at the complete T9.3 checkpoint.
 
 ## Further candidates
 

@@ -1,7 +1,7 @@
 # Companion T22.2: when no relation meets every block
 
 **Status: proved**, both the one-family inequality and its ordered-tuple
-summation. Coverage is 15 / 167: 8 / 73 main and 7 / 94 companion.
+summation. Coverage is 16 / 167: 8 / 73 main and 8 / 94 companion.
 Original locator: companion V1.6, page 90, `p1:uniform:missing-block`,
 `companion_sections/uniform_appendix.tex:69`. The original statement hash
 and manuscript bytes are unchanged.

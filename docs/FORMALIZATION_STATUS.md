@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 31 O
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **15 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T19.1, T22.2.
+- Numbered results completed: **16 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T19.1, T22.2.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1416 audited theorem/lemma declarations**. This
+- The project currently has **1435 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -202,21 +202,24 @@ Neither document is fully formalized.
   supplies j!, proving E(Z_N)_j=j! p^j m with an actual natural m.
   No critical-band, regularity, independence or asymptotic premise is used.
   See [support and lattice alignment](SUPPORT_LATTICE_ALIGNMENT.md).
-- Companion T9.3 is in progress and is not counted complete. Selected Paper C
-  pinned-graph and occurrence modules are recompiled at the exact P1 cutoff
-  10(L+1). The actual large-prime solution space has dimension D+c, with D
-  exactly the sum of the two actual kernel-one vertex counts. Its critical
-  O(B/log B) bound is proved. Every nontrivial free component meets both
-  formal blocks, and every solution is constant there, selecting it entirely
-  or omitting it. The comparison with d_xy still requires the complete even
-  relation space and the finite small-prime/parity rank cost. See
-  [partial statement alignment](FREE_COMPONENT_ALIGNMENT.md).
+- Companion T9.3 is complete. The complete relation space retains both block
+  parities and every prime coordinate, and its dimension is the sum of both
+  local kernel dimensions and finrank(S_x∩S_y). Inside the actual large-prime
+  solution space, the remaining finite constraint kernel is explicitly
+  equivalent to that complete relation space. Its rank cost is at most
+  π(10B)+2. The proved critical local-kernel bound yields c≤d_xy+π(10B)+4,
+  while d_xy≤c+D and the actual D count is O(B/log B). Together they give
+  the literal source estimate. One absolute constant precedes C; the threshold
+  may depend on C. Every nontrivial free component meets both formal blocks
+  and is selected entirely or omitted. No admissibility or separation is
+  required, and overlapping physical windows remain separate formal copies.
+  See [complete statement alignment](FREE_COMPONENT_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
   hypotheses for all three parts of T1.3; `P1-MATH-0004`, a lower base bound
   alone and uniform shorter windows for local rigidity; `P1-MATH-0005`, a stronger
-  local-square threshold; `P1-MATH-0006`, an absolute critical-defect constant; `P1-MATH-0007`, the heterogeneous
+  local-square threshold; `P1-MATH-0006`, absolute critical-defect and free-component constants; `P1-MATH-0007`, the heterogeneous
   missing-block and tuple estimates.
   No error in an original
   conclusion is asserted.

@@ -1,7 +1,7 @@
 # Companion T19.1: support and factorial lattice
 
-**Status: proved**, the complete proposition. Coverage is 15 / 167:
-8 / 73 main and 7 / 94 companion. Original locator: companion V1.6,
+**Status: proved**, the complete proposition. Coverage is 16 / 167:
+8 / 73 main and 8 / 94 companion. Original locator: companion V1.6,
 page 67, `p1:limits:lattice`, `companion_sections/limits_appendix.tex:17`.
 The source statement hash and all manuscript bytes are unchanged.
 

@@ -1,6 +1,6 @@
 # Companion T9.1 and T9.2: local square exclusion and critical defects
 
-**Status: both proved.** Coverage is 15 / 167: 8 / 73 main and 7 / 94
+**Status: both proved.** Coverage is 16 / 167: 8 / 73 main and 8 / 94
 companion. Original locators: companion V1.6, page 39,
 `companion_sections/pair_rigidity.tex:17` and `:62`, labels
 `p13:rig:local-square` and `p13:rig:defective`. Their original statement

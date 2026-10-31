@@ -220,13 +220,24 @@ The existing exact cylinder transfer connects them to the actual infinite
 count and moments, including incompatible systems. No probability, moment
 or arithmetic estimate is assumed. See [alignment](SUPPORT_LATTICE_ALIGNMENT.md).
 
-## Free-component graph foundations — partial T9.3
+## Free-component graph foundations — initial partial checkpoint
 
 The pinned-graph resolution and exact large-prime occurrence equations are
 selected, attributed and recompiled Paper C proofs; see the exact commit and
 blob records in [PAPER_C_REUSE.md](PAPER_C_REUSE.md). Their P1 cutoff is 10B.
 The actual defective-count and component-selection bridges are new checked
 P1 proofs. No external graph theorem or arithmetic estimate is assumed.
-The complete-relation/small-prime rank comparison needed for c=d_xy+O(B/log B)
-remains an open formalization obligation, and T9.3 is not counted complete.
-See [partial alignment](FREE_COMPONENT_ALIGNMENT.md).
+At that initial checkpoint, the complete-relation/small-prime rank comparison
+remained open and T9.3 was not counted complete. The comparison is now proved
+as recorded below; see [complete alignment](FREE_COMPONENT_ALIGNMENT.md).
+
+## Complete free-component comparison
+
+The remaining T9.3 comparison is now proved. Rank-nullity supplies the
+complete-relation dimension, and an explicit finite constraint map imposes
+all π(10B) small-prime coordinates and the two block parities. The internal
+proved PNT is specialized with error parameter one to obtain the convenient
+closed budget π(10B)+4≤24B/log B eventually. The actual defect count and
+critical local-kernel bound are already proved. No external rank estimate,
+prime-count proposition or target c-d_xy bound is assumed. See
+[complete alignment](FREE_COMPONENT_ALIGNMENT.md).

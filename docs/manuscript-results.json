@@ -1921,18 +1921,25 @@
       "source": "companion_sections/pair_rigidity.tex",
       "line": 129,
       "sha256": "3180e3bd07251b593f9c834c334297f64d5d97fcad49629093e529b7d39d45ca",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
-        "PaperP1.PinnedGraphResolution.finrank_pinnedGraphSpace",
+        "PaperP1.FreeComponentRank.companion_T9_3",
+        "PaperP1.FreeComponentRank.component_intersection_abs_bound",
+        "PaperP1.Affine.finrank_completeRelationCode",
+        "PaperP1.Affine.large_relation_rank_le_complete_add_cost",
+        "PaperP1.Affine.complete_relation_rank_le_large",
         "PaperP1.LargePrimeGraphResolution.finrank_largePrimeSolution_eq_defective_add_components",
         "PaperP1.LargePrimeComponentArithmetic.defectiveVertexCount_eq_actual_counts",
         "PaperP1.LargePrimeComponentArithmetic.defectiveVertexCount_critical_bound",
         "PaperP1.LargePrimeComponentArithmetic.component_selected_or_omitted",
-        "PaperP1.LargePrimeComponentArithmetic.free_nontrivial_component_meets_both_blocks"
+        "PaperP1.LargePrimeComponentArithmetic.free_nontrivial_component_meets_both_blocks",
+        "PaperP1.LargePrimeComponentArithmetic.nontrivial_free_iff_unpinned_edge"
       ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": "Preparatory graph and arithmetic conclusions proved at the exact P1 cutoff 10(L+1): the actual large-prime solution space has dimension D+c; isolated free components are identified with actual defective positions, D has the proved critical O(B/log B) bound; every nontrivial free component meets both formal blocks and every solution selects it entirely or omits it. Selected Paper C graph modules are recompiled with exact provenance. The comparison c=d_xy+O(B/log B), requiring the complete even-relation space and the remaining small-prime/parity rank cost, is still open. The numbered lemma is not counted complete. See FREE_COMPONENT_ALIGNMENT.md."
+      "mathematical_changes": [
+        "P1-MATH-0006"
+      ],
+      "notes": "Full T9.3 at the literal cutoff 10B, B=L+1: the number c of actual free components containing an edge differs from d_xy=finrank(S_x∩S_y) by at most K B/log B eventually, uniformly over all dyadic pairs and critical-band lengths. A single absolute K precedes C; only N0 depends on C, propagating P1-MATH-0006. The complete even-relation code is explicitly equivalent to the kernel after π(10B) small-prime coordinates and two parity rows, giving its exact finite rank cost. Its dimension equals the two local kernel dimensions plus d_xy. The proved critical local-kernel bound is used without any admissibility assumption. Every free nontrivial component meets both formal blocks, and every large-prime solution selects it entirely or omits it. Overlapping physical windows are retained. See FREE_COMPONENT_ALIGNMENT.md."
     },
     {
       "label": "p13:rig:factor-height",

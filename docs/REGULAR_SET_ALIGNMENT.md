@@ -1,7 +1,7 @@
 # Article Proposition 3.1: the regular set
 
-**Status: proved**, all clauses of main Proposition 3.1. Coverage is 15 / 167:
-8 / 73 main and 7 / 94 companion. Original locator: V1.6 main article,
+**Status: proved**, all clauses of main Proposition 3.1. Coverage is 16 / 167:
+8 / 73 main and 8 / 94 companion. Original locator: V1.6 main article,
 page 14, `p1:arith:core`, `main_sections/arithmetic.tex:49`. Its proof is in
 the companion's Section `p14:comp:regular-transfer`. Original bytes and the
 statement hash in the coverage ledger are unchanged.

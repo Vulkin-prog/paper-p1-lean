@@ -137,10 +137,10 @@ theorem component_selected_or_omitted {x y L : ℕ} (hx : 1 ≤ x) (hy : 1 ≤ y
     intro v hv
     exact (solution_constant_on_component hx hy w (hv.trans hrep.symm)).trans hone
 
-theorem nontrivial_component_meets_both_blocks {x y L : ℕ} (hx : 1 ≤ x) (hy : 1 ≤ y)
+theorem component_has_edge {x y L : ℕ}
     (C : (largePrimeGraph x y L).ConnectedComponent) (hsize : 2 ≤ Fintype.card C.supp) :
-    ∃ i j : Fin (L + 1), (largePrimeGraph x y L).connectedComponentMk (Sum.inl i) = C ∧
-      (largePrimeGraph x y L).connectedComponentMk (Sum.inr j) = C := by
+    ∃ v z : Occurrence L, (largePrimeGraph x y L).connectedComponentMk v = C ∧
+      (largePrimeGraph x y L).Adj v z := by
   classical
   let v := C.out
   have hv : (largePrimeGraph x y L).connectedComponentMk v = C := C.out_eq
@@ -159,6 +159,40 @@ theorem nontrivial_component_meets_both_blocks {x y L : ℕ} (hx : 1 ≤ x) (hy 
           (hv.trans hz.symm))
     omega
   obtain ⟨z, hvz⟩ := hedge
+  exact ⟨v, z, hv, hvz⟩
+
+theorem component_card_two_le_of_edge {x y L : ℕ}
+    (C : (largePrimeGraph x y L).ConnectedComponent) {v z : Occurrence L}
+    (hv : (largePrimeGraph x y L).connectedComponentMk v = C)
+    (hadj : (largePrimeGraph x y L).Adj v z) : 2 ≤ Fintype.card C.supp := by
+  have hz : (largePrimeGraph x y L).connectedComponentMk z = C :=
+    (SimpleGraph.ConnectedComponent.connectedComponentMk_eq_of_adj hadj).symm.trans hv
+  have hvSupp : v ∈ C.supp := by
+    simpa only [SimpleGraph.ConnectedComponent.mem_supp_iff] using hv
+  have hzSupp : z ∈ C.supp := by
+    simpa only [SimpleGraph.ConnectedComponent.mem_supp_iff] using hz
+  have hne : (⟨v, hvSupp⟩ : C.supp) ≠ ⟨z, hzSupp⟩ := by
+    intro heq
+    exact (largePrimeGraph_adj.mp hadj).1 (congrArg Subtype.val heq)
+  exact Nat.succ_le_of_lt (Fintype.one_lt_card_iff.mpr ⟨⟨v, hvSupp⟩, ⟨z, hzSupp⟩, hne⟩)
+
+theorem nontrivial_free_iff_unpinned_edge {x y L : ℕ}
+    (C : (largePrimeGraph x y L).ConnectedComponent) :
+    IsNontrivialUnpinnedComponent (largePrimeGraph x y L) (pinnedVertices x y L) C ↔
+      ¬ComponentPinned (largePrimeGraph x y L) (pinnedVertices x y L) C ∧
+        ∃ v z : Occurrence L, (largePrimeGraph x y L).connectedComponentMk v = C ∧
+          (largePrimeGraph x y L).Adj v z := by
+  constructor
+  · rintro ⟨hpin, hsize⟩
+    exact ⟨hpin, component_has_edge C hsize⟩
+  · rintro ⟨hpin, v, z, hv, hadj⟩
+    exact ⟨hpin, component_card_two_le_of_edge C hv hadj⟩
+
+theorem nontrivial_component_meets_both_blocks {x y L : ℕ} (hx : 1 ≤ x) (hy : 1 ≤ y)
+    (C : (largePrimeGraph x y L).ConnectedComponent) (hsize : 2 ≤ Fintype.card C.supp) :
+    ∃ i j : Fin (L + 1), (largePrimeGraph x y L).connectedComponentMk (Sum.inl i) = C ∧
+      (largePrimeGraph x y L).connectedComponentMk (Sum.inr j) = C := by
+  obtain ⟨v, z, hv, hvz⟩ := component_has_edge C hsize
   have hz : (largePrimeGraph x y L).connectedComponentMk z = C :=
     (SimpleGraph.ConnectedComponent.connectedComponentMk_eq_of_adj hvz).symm.trans hv
   obtain ⟨hne, p, hp, hvp, hzp⟩ := largePrimeGraph_adj.mp hvz

@@ -72,6 +72,7 @@ import PaperP1
 #print axioms PaperP1.Affine.card_relationOn
 #print axioms PaperP1.Affine.missing_full_support_nullity_bound
 #print axioms PaperP1.Affine.missing_full_support_nullity_bound_real
+#print axioms PaperP1.Affine.finrank_coprod_kernel_eq
 #print axioms PaperP1.Affine.ungroup_groupCoefficients
 #print axioms PaperP1.Affine.group_ungroupCoefficients
 #print axioms PaperP1.Affine.partition_sum
@@ -114,6 +115,13 @@ import PaperP1
 #print axioms PaperP1.Affine.card_fullSupportRelations_le
 #print axioms PaperP1.Affine.effectiveRate_eq_inv_two_pow
 #print axioms PaperP1.Affine.relative_weight_eq_total_rank
+#print axioms PaperP1.Affine.pairVertexParityMap_coord
+#print axioms PaperP1.Affine.completeRelation_mem_largePrime
+#print axioms PaperP1.Affine.parity_zero_of_large_and_small
+#print axioms PaperP1.Affine.mem_ker_largeSpaceSmallConstraints
+#print axioms PaperP1.Affine.finrank_smallPairConstraintTarget
+#print axioms PaperP1.Affine.complete_relation_rank_le_large
+#print axioms PaperP1.Affine.large_relation_rank_le_complete_add_cost
 #print axioms PaperP1.Affine.group_frequency_conditions_iff
 #print axioms PaperP1.Affine.group_relation_zero_iff
 #print axioms PaperP1.Affine.frequencyRelation_group_iff
@@ -177,6 +185,9 @@ import PaperP1
 #print axioms PaperP1.Affine.card_solution_eq_ite
 #print axioms PaperP1.Affine.card_solution_is_power_of_two
 #print axioms PaperP1.Affine.parityVec_ne_zero_unique_in_start
+#print axioms PaperP1.Affine.mem_completeRelationCode
+#print axioms PaperP1.Affine.pairVertexParityMap_elim
+#print axioms PaperP1.Affine.finrank_completeRelationCode
 #print axioms PaperP1.Algebra.centeredCoefficient_empty
 #print axioms PaperP1.Algebra.centeredCoefficient_singleton
 #print axioms PaperP1.Algebra.centeredCoefficient_singleton_eq_zero
@@ -291,6 +302,7 @@ import PaperP1
 #print axioms PaperP1.ChebyshevPrimeCount.log_mul_card_highPrimes_le
 #print axioms PaperP1.ChebyshevPrimeCount.log_mul_count_le_seven_mul
 #print axioms PaperP1.ChebyshevPrimeCount.count_le_seven_mul_div_log
+#print axioms PaperP1.ComponentPrimeBudget.prime_constraint_cost_eventually
 #print axioms PaperP1.CriticalDefectPositions.mem_criticalDefectivePositions
 #print axioms PaperP1.CriticalDefectPositions.criticalDefectivePositions_eq_interval
 #print axioms PaperP1.CriticalDefectPositions.uniform_critical_defect_constant
@@ -651,6 +663,9 @@ import PaperP1
 #print axioms PaperP1.LargePrimeComponentArithmetic.defectiveVertexCount_critical_bound
 #print axioms PaperP1.LargePrimeComponentArithmetic.solution_constant_on_component
 #print axioms PaperP1.LargePrimeComponentArithmetic.component_selected_or_omitted
+#print axioms PaperP1.LargePrimeComponentArithmetic.component_has_edge
+#print axioms PaperP1.LargePrimeComponentArithmetic.component_card_two_le_of_edge
+#print axioms PaperP1.LargePrimeComponentArithmetic.nontrivial_free_iff_unpinned_edge
 #print axioms PaperP1.LargePrimeComponentArithmetic.nontrivial_component_meets_both_blocks
 #print axioms PaperP1.LargePrimeComponentArithmetic.free_nontrivial_component_meets_both_blocks
 #print axioms PaperP1.LargePrimeGraph.largePrime_gt_length
@@ -857,6 +872,10 @@ import PaperP1
 #print axioms PaperP1.Model.dyadicCenteredMoment_singleton
 #print axioms PaperP1.Model.dyadic_centered_expansion
 #print axioms PaperP1.Model.dyadic_marginal_reference_isProbability
+#print axioms PaperP1.FreeComponentRank.intersection_le_components_add_defects
+#print axioms PaperP1.FreeComponentRank.components_le_intersection_add_cost
+#print axioms PaperP1.FreeComponentRank.component_intersection_abs_bound
+#print axioms PaperP1.FreeComponentRank.companion_T9_3
 #print axioms PaperP1.Model.InfiniteStarts.infiniteJointMoment_nonneg
 #print axioms PaperP1.Model.InfiniteStarts.infiniteJointMoment_empty
 #print axioms PaperP1.Model.InfiniteStarts.finiteJointMoment_eq_startFamily

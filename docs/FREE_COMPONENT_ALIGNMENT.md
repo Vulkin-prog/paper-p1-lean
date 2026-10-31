@@ -1,99 +1,133 @@
 # Companion T9.3: free components
 
-**Status: in progress.** This is not a completed numbered result; coverage
-remains 15 / 167. Original locator: companion V1.6, page 40,
+**Status: proved**, every assertion of the lemma. Coverage is 16 / 167:
+8 / 73 main and 8 / 94 companion. Original locator: companion V1.6, page 40,
 `p13:rig:components`, `companion_sections/pair_rigidity.tex:129`.
 The original statement and source hash are unchanged.
 
-## Exact graph and cutoff, proved
+## Exact graph and cutoff
 
 `LargePrimeOccurrences.Occurrence L` is the disjoint union of two copies of
-`Fin (L+1)`. The labels are the true complete vertex labels of V_x and V_y,
-including each left boundary. Overlapping physical values remain distinct
-formal vertices, as in the source.
+`Fin (L+1)`, labelled by the true complete vertex windows. Overlapping
+physical values remain distinct formal vertices. Put B=L+1.
 
-A prime greater than L+1 has at most one odd occurrence in each copy. This
-is proved from the checked P1 private-prime lemma, without assuming valuation
-one. `primeOccurrences` is the actual finite set where the parity coordinate
-is one. Its cardinality is at most two, and distinct occurrences lie in
-opposite blocks.
+A prime greater than B has at most one odd occurrence in either block,
+proved from the private-prime lemma without a valuation-one assumption.
+In the P1 graph, `IsLargePrime L p` means p is prime and 10B<p. Edges join
+its two occurrences, which lie in opposite blocks; a unique occurrence is
+a pin. The occurrence bound explicitly keeps L fixed when deriving B<p
+from 10B<p.
 
-In the P1 graph, `IsLargePrime L p` means p is prime and
-`10*(L+1)<p`. Edges join its two occurrences; a unique occurrence is a pin.
-`largePrime_gt_length` explicitly supplies the weaker length condition when
-using the occurrence lemmas, with L fixed in all cardinality calls.
+`largePrimeSolution` is the actual kernel of these prime-coordinate equations.
+Its membership is equivalent to agreement across edges and vanishing at pins.
+The checked pinned-graph equivalence gives one free binary value per
+unpinned component before the remaining prime and parity constraints.
 
-`largePrimeSolution` is the actual kernel of all these large-prime equations.
-Its membership is proved equivalent both to the full parity-coordinate
-equations and to agreement across every edge plus vanishing at every pin.
+`LargePrimeGraphResolution` proves exactly
 
-## Component resolution and exact arithmetic dictionary, proved
+`dim(largePrimeSolution) = D + c`,
+`D + 2c ≤ 2B`.
 
-`PinnedGraphResolution.pinnedGraphLinearEquiv` resolves the generic pinned
-solution space by one free binary value per unpinned connected component.
-The dimension is the number of those components. Isolated and nontrivial
-unpinned components partition them, and their vertex budget is proved.
+Here D counts defective formal vertices and c counts unpinned components
+with at least two vertices. `nontrivial_free_iff_unpinned_edge` proves that
+this is exactly the source's free components containing an edge. It is not
+a different count of physical labels.
 
-The concrete `LargePrimeGraphResolution` gives exactly
-
-`finrank(largePrimeSolution x y L) = D + c`,
-`D + 2c ≤ 2(L+1)`.
-
-Here c is the number of unpinned components with at least two vertices, and
-D is the number of actual defective formal vertices. The equivalence of
-isolated unpinned components and defective vertices is proved, not assumed.
+## Actual defective positions and component selection
 
 `LargePrimeComponentArithmetic.isDefective_iff_kernel_one` identifies graph
-defectiveness with the literal large odd-prime kernel above 10(L+1) being
-one. An injective label map and an exact image equality give
+defectiveness with the literal large odd-prime kernel above 10B being one.
+An injective label map and exact image equality give
 
 `D = #criticalDefectivePositions x L + #criticalDefectivePositions y L`.
 
-This counts formal copies, even for overlapping physical windows.
-`defectiveVertexCount_critical_bound` proves its O(B/log B) estimate in the
-critical band, with B=L+1, by the already proved T9.2. The multiplicative
-constant is chosen before the fixed band width; only the threshold depends
-on that width.
+The proved T9.2 yields `defectiveVertexCount_critical_bound`. One constant
+precedes the fixed band width C; only the threshold depends on C.
 
-## Selection and the two blocks, proved
+`solution_constant_on_component` and `component_selected_or_omitted` prove
+that every solution assigns zero to every vertex of a component or one to
+every vertex. Pinned components take zero. No independence is asserted after
+the other constraints are imposed.
 
-`solution_constant_on_component` proves constancy on a connected component
-for every actual solution of the large-prime equations.
-`component_selected_or_omitted` states the exact binary consequence: every
-vertex of a component is assigned zero, or every vertex is assigned one.
-Pinned components necessarily take zero by the checked resolution.
+`component_has_edge` and `component_card_two_le_of_edge` identify nontrivial
+components with those containing an edge. The actual opposite-block
+occurrence lemma then proves `free_nontrivial_component_meets_both_blocks`.
+Thus both structural assertions in T9.3 are included.
 
-`nontrivial_component_meets_both_blocks` proves that every connected
-component with at least two vertices contains vertices from both formal
-blocks. Its proof finds an edge in the component and uses the actual
-opposite-block occurrence lemma. The free-component specialization is
-`free_nontrivial_component_meets_both_blocks`.
+## Complete even relations and their dimension
 
-## Remaining obligation
+`Affine.completeRelationCode x y L` imposes the full prime-parity equation
+on both formal copies and a separate zero coordinate sum in each block.
+These are precisely complete even square relations, before any local
+relations have been factored out.
 
-The source also asserts `c=d_xy+O_C(B/log B)`, where
-`d_xy=finrank(S_x ∩ S_y)`. This comparison is not yet formalized.
-It needs the complete even-relation space, its dimension in terms of the two
-local kernels and d_xy, and the finite rank cost of imposing the remaining
-small-prime equations and the two block parities. The critical local-kernel
-bound and the required actual defect count are already proved elsewhere,
-but their complete rank comparison is still an obligation.
+`completeRelationEquivPair` identifies this code with the kernel of addition
+from the two actual even-selection maps. The proved generic identity
+`finrank_coprod_kernel_eq` uses rank-nullity and the dimension formula for
+the sum and intersection of two images. Its specialization gives
 
-The graph equivalence, dimension D+c and small D alone are not counted as
-having proved that missing comparison. No bound on c-d_xy is introduced as
-an assumption or hidden interface.
+`dim(completeRelationCode) = k_x + k_y + d_xy`,
+
+where k_x and k_y are the two actual local kernel dimensions and
+`d_xy=finrank(squareClassSpace x L ∩ squareClassSpace y L)`.
+This accounts for local defects explicitly and imposes no regularity premise.
+
+## Exact small-prime and block-parity cost
+
+`pairSmallConstraintMap` records the actual parity coordinates at all
+π(10B) small primes and the two block sums. Restricting it to
+`largePrimeSolution` gives `largeSpaceSmallConstraints`.
+
+`completeRelationEquivConstraintKer` explicitly identifies its kernel with
+the complete relation code. For the converse, each prime is either above
+10B and already cancelled, or is one of the enumerated small primes. Every
+nonprime coordinate is proved zero. No missing-coordinate assumption is used.
+
+The codomain dimension is exactly π(10B)+2. Rank-nullity proves
+
+`dim(completeRelationCode) ≤ dim(largePrimeSolution)`,
+`dim(largePrimeSolution) ≤ dim(completeRelationCode)+π(10B)+2`.
+
+These finite inequalities are proved for all x,y,L; they are not passed as
+assumptions to the asymptotic theorem.
+
+## Full critical-band comparison
+
+`FreeComponentRank` combines the identities to give d_xy≤c+D. The already
+proved critical local-rigidity theorem applies to every dyadic window,
+including inadmissible windows, and bounds k_x,k_y by one. Hence
+
+`c ≤ d_xy + π(10B) + 4`,
+`|c-d_xy| ≤ D + π(10B) + 4`.
+
+The closed `ComponentPrimeBudget` proof specializes the internally proved
+PNT with error parameter one and proves, beyond an absolute B₀,
+
+`π(10B)+4 ≤ 24B/log B`.
+
+The number 24 is a convenient bound, not an asserted optimal constant.
+The literal critical band implies B≥B₀ beyond one C-dependent threshold.
+Together with the actual D bound, `FreeComponentRank.companion_T9_3` proves
+
+`∃ K>0, ∀ C, ∃ N₀(C), ∀ N≥N₀(C), ∀ L in the band, ∀ x,y∈[N,2N),`
+`|c-d_xy| ≤ K B/log B`.
+
+This includes overlapping windows and even equal centres. It adds no
+separation, compatibility, admissibility or positive-probability hypothesis.
+The source's O_C bound follows; the stronger absolute-constant quantifier
+is recorded as a consequence of `P1-MATH-0006`, preserving its original
+T9.2 validation history. The constants for the two lemmas may differ.
 
 ## Provenance and validation
 
-Four selected full graph modules are adapted from the pinned Paper C snapshot
-`b9fa9ba490f201b408a302a86f1594ee620b228b`, with exact Git blobs, Apache-2.0
-attribution and adaptation records in [PAPER_C_REUSE.md](PAPER_C_REUSE.md).
-Only the two-copy label definition is selected from its older two-start
-module. The old relational-assignment and geometric component imports are
-not imported. No compiled artifact from the old Lean version is reused.
+The four full graph ports and selected two-copy label definition come from
+Paper C commit `b9fa9ba490f201b408a302a86f1594ee620b228b`, with exact blobs,
+Apache-2.0 attribution and adaptations in [PAPER_C_REUSE.md](PAPER_C_REUSE.md).
+The rank decomposition, actual small-prime constraint equivalence and full
+P1 asymptotic comparison are new proofs, not additional Paper C imports.
 
-The full Lean v4.36.0-rc2 build and actual kernel audit pass for all 1,416
-project theorem/lemma declarations. Only `propext`, `Classical.choice` and
-`Quot.sound` are permitted. Source identities are checked separately.
-No new mathematical finding or Palomar registration is made at this partial
-checkpoint.
+The complete project uses Lean v4.36.0-rc2 and matching pinned Mathlib.
+Full build, source identities and the actual 1,435-declaration kernel audit
+are checked before publication. Only `propext`, `Classical.choice` and
+`Quot.sound` are allowed. No external mathematical input remains assumed
+in this proof. No manuscript bytes or Palomar records are changed.

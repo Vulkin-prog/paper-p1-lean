@@ -71,3 +71,4 @@ public import PaperP1.Arithmetic.CriticalDefectPositions
 public import PaperP1.Model.MissingBlockTupleSum
 public import PaperP1.Model.RunCountLattice
 public import PaperP1.Combinatorics.LargePrimeComponentArithmetic
+public import PaperP1.Model.FreeComponentRank

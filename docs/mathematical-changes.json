@@ -188,22 +188,44 @@
         "line": 62,
         "statement_sha256": "8b2ed4253a1ab2c85cfe8f957d205dff13ea7e6b5dd7ea1f04e82f28f3b49409"
       },
-      "original_assumption": "The number of 10B-defective positions in every critical window is O_C(B/log B).",
-      "finding": "One positive absolute multiplicative constant works for every fixed critical-band width C. Only the eventual threshold N0 depends on C. The count is the actual kernel-one set in the full vertex interval.",
+      "original_assumption": "The number of 10B-defective positions in every critical window is O_C(B/log B). Companion T9.3 likewise states its free-component error as O_C(B/log B).",
+      "finding": "One positive absolute multiplicative constant works for every fixed critical-band width C. Only the eventual threshold N0 depends on C. The count is the actual kernel-one set in the full vertex interval. The free-component comparison in T9.3 also has an absolute multiplicative constant before C, with a C-dependent threshold, by the complete rank-cost proof and the critical local-kernel bound.",
       "evidence": [
         "PaperP1.CriticalDefectPositions.uniform_critical_defect_constant",
         "PaperP1.CriticalDefectPositions.companion_T9_2",
         "PaperP1.CriticalDefectPositions.criticalDefectivePositions_eq_interval",
-        "PaperP1.CriticalBandScale.critical_band_scale"
+        "PaperP1.CriticalBandScale.critical_band_scale",
+        "PaperP1.FreeComponentRank.companion_T9_3",
+        "PaperP1.FreeComponentRank.component_intersection_abs_bound",
+        "PaperP1.Affine.finrank_completeRelationCode",
+        "PaperP1.Affine.large_relation_rank_le_complete_add_cost"
       ],
-      "proposed_revision": "There exists an absolute K>0 such that for every fixed C there is N0(C), and all N≥N0(C), all critical-band lengths L and all dyadic starts x, the number of n∈V_x with K_(10B)(n)=1 is at most K B/log B, where B=L+1.",
-      "impact": "Clarifies and strengthens the constant uniformity in T9.2. The threshold may still depend on the fixed band width. No admissibility, positive start probability or full-rank assumption is added. The cutoff 10B and the B/log B rate are unchanged.",
-      "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 1301 declarations at the recorded implementation commit; only propext, Classical.choice and Quot.sound. All recorded evidence declarations are directly included in the actual audit.",
+      "proposed_revision": "There exists an absolute K>0 such that for every fixed C there is N0(C), and all N≥N0(C), all critical-band lengths L and all dyadic starts x, the number of n∈V_x with K_(10B)(n)=1 is at most K B/log B, where B=L+1. In T9.3, the same quantifier order also gives an absolute constant for |c-d_xy|≤K B/log B, with only the threshold depending on C; the multiplicative constant need not equal the one in T9.2.",
+      "impact": "Clarifies and strengthens the constant uniformity in T9.2. The threshold may still depend on the fixed band width. No admissibility, positive start probability or full-rank assumption is added. The cutoff 10B and the B/log B rate are unchanged. This constant uniformity propagates to the full free-component estimate in T9.3, including overlapping physical windows. The two local kernels are bounded using the proved critical rigidity theorem; no regularity or admissibility premise is introduced.",
+      "validation": "Full Lean v4.36.0-rc2 build and actual kernel audit of all 1435 declarations at the complete T9.3 checkpoint; only propext, Classical.choice and Quot.sound. The original T9.2 validation is preserved in validation_history. The exact new implementation commit is recorded after publication.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "548a0d2d02f1871aa3e4b26d7526082183f7bf03"
+      "validation_history": [
+        {
+          "validation_commit": "548a0d2d02f1871aa3e4b26d7526082183f7bf03",
+          "audited_declarations": 1301,
+          "scope": "Original T9.2 absolute defect constant; the T9.3 consequence is added at the later complete free-component checkpoint."
+        }
+      ],
+      "affected_locations": [
+        {
+          "version": "P1 V1.6",
+          "document": "companion",
+          "label": "p13:rig:components",
+          "number": "T9.3",
+          "page": 40,
+          "source": "companion_sections/pair_rigidity.tex",
+          "line": 129,
+          "statement_sha256": "3180e3bd07251b593f9c834c334297f64d5d97fcad49629093e529b7d39d45ca"
+        }
+      ]
     },
     {
       "id": "P1-MATH-0007",

@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 15 / 167 numbered results proved.**
+**Status: active formalization, 16 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The principal Poisson asymptotic theorems remain open.
@@ -71,11 +71,11 @@ Companion T19.1 is proved for every N≥2 and L≥1: the exact support is
 bounded by `ceil(N/L)`, and every factorial moment belongs to the literal
 `j! * p^j` nonnegative integer lattice, including all irregular windows.
 See [support and lattice alignment](docs/SUPPORT_LATTICE_ALIGNMENT.md).
-Preparatory graph and arithmetic statements for T9.3 are proved with the
-exact cutoff 10(L+1), including component selection and dimension D+c.
-The comparison with the pair intersection dimension remains open, so T9.3
-is not counted complete. See
-[partial free-component alignment](docs/FREE_COMPONENT_ALIGNMENT.md).
+Companion T9.3 is proved: the actual number of free components is within
+O(B/log B) of the pair intersection dimension, with exact cutoff 10B and
+B=L+1. Complete relations and the small-prime/parity rank cost are proved;
+overlapping windows, component selection and both-block membership are included.
+See [free-component alignment](docs/FREE_COMPONENT_ALIGNMENT.md).
 The sharp PNT input is proved by a selected, recompiled and audited analytic
 development, with [separate provenance](docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 
