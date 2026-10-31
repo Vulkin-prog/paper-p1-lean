@@ -12,7 +12,7 @@ a blank declaration field nor a preparatory algebraic lemma establishes coverage
 Coverage includes the exact declarations listed below. Preparatory lemmas are
 recorded in the project status without counting as complete numbered results.
 
-## Main article: 10 / 73 proved
+## Main article: 11 / 73 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -35,7 +35,7 @@ recorded in the project status without counting as complete numbered results.
 | 6.2 (p. 22) | [p1:fixed:targets](../manuscripts/paper-p1/v1.6/sources/main_sections/fixed_moments.tex#L89) | Large rank loss after fixed sources | not_started | — |
 | 6.3 (p. 22) | [p1:fixed:propagation](../manuscripts/paper-p1/v1.6/sources/main_sections/fixed_moments.tex#L105) | Conditional sums and propagation | not_started | — |
 | 6.4 (p. 22) | [p1:fixed:moments](../manuscripts/paper-p1/v1.6/sources/main_sections/fixed_moments.tex#L152) | Fixed factorial moments | not_started | — |
-| 7.1 (p. 23) | [p1:core:rankin](../manuscripts/paper-p1/v1.6/sources/main_sections/cores.tex#L24) | Counting a small truncated squarefree kernel | not_started | — |
+| 7.1 (p. 23) | [p1:core:rankin](../manuscripts/paper-p1/v1.6/sources/main_sections/cores.tex#L24) | Counting a small truncated squarefree kernel | proved | `PaperP1.RankinSmallKernel.main_7_1`, `PaperP1.RankinSmallKernel.main_7_1_explicit`, `PaperP1.RankinSmallKernel.rankin_bound`, `PaperP1.RankinSmallKernel.rankin_half`, `PaperP1.RankinSmallKernel.mem_values`, `PaperP1.RankinSmallKernel.truncatedKernel_eq_floor`, `PaperP1.SmallKernelCount.smallKernelValues_subset_cover`, `PaperP1.SmallKernelCount.card_smallKernelValues_le_power`, `PaperP1.SmallKernelCount.card_smallKernelValues_le_euler`, `PaperP1.SmallKernelCount.eulerProduct_le_exp`, `PaperP1.RankinComparison.cast_sqrt_div_le_rankin`, `PaperP1.PartialPowerSum.powerSum_le` |
 | 7.2 (p. 23) | [p1:core:moderate](../manuscripts/paper-p1/v1.6/sources/main_sections/cores.tex#L65) | Counting moderate certificates | not_started | — |
 | 7.3 (p. 24) | [p1:core:degrees](../manuscripts/paper-p1/v1.6/sources/main_sections/cores.tex#L92) | Incoming and outgoing saturation degrees | not_started | — |
 | 7.4 (p. 24) | [p1:core:generator](../manuscripts/paper-p1/v1.6/sources/main_sections/cores.tex#L111) | A generating function with marked isolated vertices | not_started | — |

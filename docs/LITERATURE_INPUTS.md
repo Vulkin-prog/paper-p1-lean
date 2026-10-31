@@ -20,7 +20,30 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
-## Disjoint recovery — partial internal proof
+## Small truncated odd-prime kernels
+
+Stable ID: `P1-ARITH-RANKIN-SMALL-KERNEL`. Status: **proved**.
+
+- Target: article Lemma 7.1, page 23, `p1:core:rankin`; full elementary proof
+  in companion `p14:comp:certificate-rankin`.
+- Lean: `RankinSmallKernel.main_7_1`, with explicit constants and the stronger
+  endpoint in `main_7_1_explicit` and `rankin_half`.
+- The actual odd-prime kernel, small-prime support and square part are
+  constructed from valuations. Their decomposition gives a finite cover.
+  Finite square-root fibre bounds, finite reciprocal-power sums and the exact
+  Euler product are proved. No zeta estimate or prime asymptotic is required.
+- Mathlib supplies real powers, the interval integral of a real power,
+  sum-integral comparison and finite product identities, at the pinned
+  revision. No target count or analytic estimate is an assumed proposition.
+- Three elementary comparison proofs are adapted from Paper C's exact
+  `PaperCV11/RankinTilt.lean` blob
+  `0e160cd09e337d5b6142c75524a2da9da7ec5584`, snapshot
+  `b9fa9ba490f201b408a302a86f1594ee620b228b`, Apache-2.0. They were rebuilt
+  and included in the actual Lean 4.36.0-rc2 axiom audit.
+- `P1-MATH-0015` records sigma=1/2 and the explicit constants. See
+  [alignment](RANKIN_SMALL_KERNEL_ALIGNMENT.md).
+
+## Disjoint recovery — complete internal proof
 
 Stable ID: `P1-LINALG-DISJOINT-RECOVERY`. Status: **proved**.
 

@@ -495,6 +495,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "9dcb13772d8b7dbef31571adca039223a50ec120"
+    },
+    {
+      "id": "P1-MATH-0015",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:core:rankin",
+        "number": "7.1",
+        "page": 23,
+        "source": "main_sections/cores.tex",
+        "line": 24,
+        "statement_sha256": "62a5de96e9fb6301b919b824ad4160de336e6eb3dd71840afec97e3408f10973"
+      },
+      "original_assumption": "Article Lemma 7.1 assumes 1/2<sigma<1 and T>=1, in the surrounding regime Y>=B. Its companion proof bounds an infinite square-part series by zeta(2*sigma).",
+      "finding": "The bound holds at sigma=1/2 as well. For every real X,Y,T>=0 the actual positive-integer count is at most 2*sqrt(X)*sqrt(T)*exp(2*sqrt(Y)). More generally 1/2<=sigma<1 gives X^sigma*T^(1-sigma)/(1-sigma)*exp(Y^(1-sigma)/(1-sigma)), including the same real cutoffs. Thus the exponential constant may be fixed as 1/(1-sigma), independently of C1, and the prefactor at X=C1*N as C1^sigma/(1-sigma).",
+      "evidence": [
+        "PaperP1.RankinSmallKernel.rankin_half",
+        "PaperP1.RankinSmallKernel.rankin_bound",
+        "PaperP1.RankinSmallKernel.main_7_1_explicit",
+        "PaperP1.SmallKernelCount.card_smallKernelValues_le_power",
+        "PaperP1.RankinComparison.cast_sqrt_div_le_rankin",
+        "PaperP1.PartialPowerSum.powerSum_le"
+      ],
+      "proposed_revision": "Allow 1/2<=sigma<1 and give the explicit constants. Count the finite square-part fibre directly by floor(sqrt(X/(k*s))) before the Rankin comparison; this avoids the divergent zeta(1) at the endpoint. State the more general Y,T>=0 version if useful, while retaining T>=1 and Y>=B in later applications.",
+      "impact": "Adds the square-root endpoint and explicit uniform constants. The original proof route via an enlarged infinite square-part sum does not reach that endpoint, but the finite fibre bound does. The original interior statement is a direct corollary. No error or optimality claim is made.",
+      "validation": "Full Lean v4.36.0-rc2 build (8805 jobs) and actual kernel axiom audit for all 1914 declarations; only propext, Classical.choice and Quot.sound. Every evidence theorem is directly included in the actual audit. All 251 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

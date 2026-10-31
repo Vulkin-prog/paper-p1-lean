@@ -268,3 +268,26 @@ do not provide the required bivariate factor estimate. No declarations from
 that module were copied. P1's new proof uses exact partial degrees,
 univariate Mathlib Mahler inequalities, specialization and Parseval.
 See [factor-height alignment](BIVARIATE_FACTOR_HEIGHT_ALIGNMENT.md).
+
+## Finite Rankin comparison for P1 article Lemma 7.1
+
+Source: `PaperCV11/RankinTilt.lean`, exact Git blob
+`0e160cd09e337d5b6142c75524a2da9da7ec5584`, snapshot
+`b9fa9ba490f201b408a302a86f1594ee620b228b`, Apache-2.0, Lean 4.34.0.
+Target: `PaperP1/Analysis/RankinComparison.lean`, Lean v4.36.0-rc2.
+
+The source real square-root comparison, natural square-root comparison and
+finite-product real-power rewrite are adapted. The new exponent sigma is
+1 minus the old zeta; sigma>=1/2 corresponds exactly to zeta<=1/2. The
+natural comparison is extended to every positive support product: products
+above X give an empty natural fibre and need no admissibility hypothesis.
+The finite-product rewrite uses exponent -sigma. Namespaces, imports and
+public module declarations are updated. Attribution is in the target header.
+
+The old kernel-one theorem, its truncated-support modules and its harmonic
+prime estimate are not ported here. P1's small-kernel cover, variable-k sum,
+real cutoff transport, explicit power-sum envelope and complete source
+specialization are new proofs in this project. The full build passed
+(8,805 jobs), and all 1,914 project theorem/lemma declarations passed the
+actual axiom audit. No old compiled artifacts were copied. See
+[statement alignment](RANKIN_SMALL_KERNEL_ALIGNMENT.md).

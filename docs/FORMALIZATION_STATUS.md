@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **26 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1, together with Lemmas T19.13, T2.1, T2.2, T20.2 and Corollary T2.3.
+- Numbered results completed: **27 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1, together with Lemmas T19.13, T2.1, T2.2, T20.2 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **1891 audited theorem/lemma declarations**. This
+- The project currently has **1914 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -305,6 +305,15 @@ Neither document is fully formalized.
   over any field for any finite family of linear forms, without separation.
   The literal binary coordinate specialization retains the original bound.
   See [disjoint recovery alignment](DISJOINT_RECOVERY_ALIGNMENT.md).
+- Article Lemma 7.1 is complete for the actual truncated odd-prime kernel,
+  with real cutoffs, positive integer values and explicit constants. A finite
+  cover comes from the canonical small/large/square decomposition. Direct
+  square-root fibre counts and integral bounds for finite reciprocal-power
+  sums give the source bound, uniformly in every cutoff. The stronger theorem
+  includes sigma=1/2 and Y,T>=0. The exponential constant depends only on
+  sigma. Three comparison proofs are adapted from the documented Paper C
+  RankinTilt blob and rebuilt under the new compiler. See
+  [small-kernel Rankin alignment](RANKIN_SMALL_KERNEL_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
@@ -321,7 +330,8 @@ Neither document is fully formalized.
   incidence constant and a version without the three-block coloring;
   `P1-MATH-0013`, arbitrary fields and linear-form families for all of
   Lemma 6.1; `P1-MATH-0014`, its sharper independent-representation bound
-  and extension to all zero-sum-free label supports.
+  and extension to all zero-sum-free label supports; `P1-MATH-0015`, the
+  square-root endpoint and explicit constants for the small-kernel count.
   No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.

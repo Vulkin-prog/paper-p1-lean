@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Fourteen mathematical improvements are confirmed; no error in a manuscript conclusion
+**Fifteen mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -520,3 +520,35 @@ All 239 distinct coverage/finding declaration names were checked directly by Lea
 
 Validated implementation of complete Lemma 6.1 and P1-MATH-0013/0014:
 [9dcb13772d8b7dbef31571adca039223a50ec120](https://github.com/Vulkin-prog/paper-p1-lean/commit/9dcb13772d8b7dbef31571adca039223a50ec120).
+
+## P1-MATH-0015 — The square-root endpoint in the small-kernel count
+
+- Location: article Lemma 7.1, page 23, `p1:core:rankin`,
+  `main_sections/cores.tex:24`; its proof is in companion
+  `p14:comp:certificate-rankin`.
+- Original assumptions: 1/2<sigma<1, T>=1, in the surrounding regime Y>=B.
+- Improvement: the bound also holds at sigma=1/2. In fact every real
+  X,Y,T>=0 satisfies the actual positive-integer count bound
+  `2*sqrt(X)*sqrt(T)*exp(2*sqrt(Y))`.
+- For 1/2<=sigma<1 the explicit bound is
+  `X^sigma*T^(1-sigma)/(1-sigma)*exp(Y^(1-sigma)/(1-sigma))`.
+  The exponential constant is 1/(1-sigma), depending only on sigma.
+  At X=C1*N the prefactor is C1^sigma/(1-sigma).
+- Proof improvement: retain the finite square-part fibre and bound its
+  cardinality by floor(sqrt(X/(k*s))). Its Rankin comparison is valid at the
+  endpoint. The source's enlarged infinite square-part series zeta(2*sigma)
+  is unnecessary and would diverge there. The remaining finite k sum and
+  finite Euler product have explicit integral bounds.
+- Evidence: `RankinSmallKernel.rankin_half`, `rankin_bound`,
+  `main_7_1_explicit`, `SmallKernelCount.card_smallKernelValues_le_power`,
+  `RankinComparison.cast_sqrt_div_le_rankin` and
+  `PartialPowerSum.powerSum_le`.
+- Suggested revision: include the endpoint and explicit constants, replacing
+  the infinite square-part sum by the finite fibre bound. Later applications
+  may retain Y>=B and T>=1. No error or optimality claim is made.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,805 jobs) and actual
+  audit of all 1,914 theorem/lemma declarations, with only `propext`,
+  `Classical.choice` and `Quot.sound`. Not integrated into a manuscript. See
+  [alignment](RANKIN_SMALL_KERNEL_ALIGNMENT.md).
+
+All 251 distinct coverage/finding declaration names were checked directly by Lean.
