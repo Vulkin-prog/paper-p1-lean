@@ -151,6 +151,10 @@ Absence of an entry does not mean the argument has been verified.
 - Status: confirmed by Lean compilation and actual kernel audit; not integrated
   into a new manuscript. See [alignment](LOCAL_SQUARE_THRESHOLD_ALIGNMENT.md).
 
+The exact validated implementation commit for P1-MATH-0005 and P1-MATH-0006 is
+[548a0d2d02f1871aa3e4b26d7526082183f7bf03](https://github.com/Vulkin-prog/paper-p1-lean/commit/548a0d2d02f1871aa3e4b26d7526082183f7bf03).
+The full build and actual 1,301-declaration kernel audit passed.
+
 Every finding receives a stable identifier `P1-MATH-0001`, etc., and an entry in
 [mathematical-changes.json](mathematical-changes.json). Keep the following fields:
 

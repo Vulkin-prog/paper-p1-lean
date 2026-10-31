@@ -167,11 +167,12 @@
       ],
       "proposed_revision": "Replace the exponent 12m by 5m, or state the sharper condition x>(64B)^m. Prove the result by the internal T1.1 bound with U=x and R=B; the threshold itself gives x≥2B.",
       "impact": "Strengthens the finite local square exclusion. Distinct integer offsets, positive even m and the original domain B≥2 are retained. The original statement and all later exponents remain valid; no optimality of the new threshold is asserted.",
-      "validation": "Lean v4.36.0-rc2 full build and actual kernel audit of all 1301 declarations; only propext, Classical.choice and Quot.sound. Exact implementation commit is recorded after publication.",
+      "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 1301 declarations at the recorded implementation commit; only propext, Classical.choice and Quot.sound. All recorded evidence declarations are directly included in the actual audit.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "548a0d2d02f1871aa3e4b26d7526082183f7bf03"
     },
     {
       "id": "P1-MATH-0006",
@@ -197,11 +198,12 @@
       ],
       "proposed_revision": "There exists an absolute K>0 such that for every fixed C there is N0(C), and all N≥N0(C), all critical-band lengths L and all dyadic starts x, the number of n∈V_x with K_(10B)(n)=1 is at most K B/log B, where B=L+1.",
       "impact": "Clarifies and strengthens the constant uniformity in T9.2. The threshold may still depend on the fixed band width. No admissibility, positive start probability or full-rank assumption is added. The cutoff 10B and the B/log B rate are unchanged.",
-      "validation": "Lean v4.36.0-rc2 full build and actual kernel audit of all 1301 declarations; only propext, Classical.choice and Quot.sound. Exact implementation commit is recorded after publication.",
+      "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 1301 declarations at the recorded implementation commit; only propext, Classical.choice and Quot.sound. All recorded evidence declarations are directly included in the actual audit.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "548a0d2d02f1871aa3e4b26d7526082183f7bf03"
     }
   ]
 }
