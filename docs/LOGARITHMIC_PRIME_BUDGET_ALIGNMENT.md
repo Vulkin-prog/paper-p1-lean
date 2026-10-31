@@ -91,3 +91,6 @@ only `propext`, `Classical.choice` and `Quot.sound`. Coverage is 28 / 167:
 11 main results and 17 companion results. No Palomar registration is made.
 
 All 263 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of companion T22.3 and P1-MATH-0016:
+[88a8ae4c5fe51e5b8ed6fdfdf86ee641531af02a](https://github.com/Vulkin-prog/paper-p1-lean/commit/88a8ae4c5fe51e5b8ed6fdfdf86ee641531af02a).

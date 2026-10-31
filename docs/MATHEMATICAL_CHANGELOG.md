@@ -587,3 +587,6 @@ Validated implementation of article Lemma 7.1 and P1-MATH-0015:
   [alignment](LOGARITHMIC_PRIME_BUDGET_ALIGNMENT.md).
 
 All 263 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of companion T22.3 and P1-MATH-0016:
+[88a8ae4c5fe51e5b8ed6fdfdf86ee641531af02a](https://github.com/Vulkin-prog/paper-p1-lean/commit/88a8ae4c5fe51e5b8ed6fdfdf86ee641531af02a).
