@@ -87,3 +87,6 @@ passed for all 2,008 project theorem/lemma declarations, with only
 11 main results and 19 companion results. No Palomar registration is made.
 
 All 297 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of companion T4.2 and P1-MATH-0018:
+[ed4ed43ecc05c2f7823ba9b0acca98bc1f62fc5d](https://github.com/Vulkin-prog/paper-p1-lean/commit/ed4ed43ecc05c2f7823ba9b0acca98bc1f62fc5d).

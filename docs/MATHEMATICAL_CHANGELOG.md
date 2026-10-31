@@ -651,3 +651,6 @@ Validated implementation of companion T21.3 and P1-MATH-0017:
   [alignment](FIXED_SOURCE_PRODUCT_CERTIFICATE_ALIGNMENT.md).
 
 All 297 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of companion T4.2 and P1-MATH-0018:
+[ed4ed43ecc05c2f7823ba9b0acca98bc1f62fc5d](https://github.com/Vulkin-prog/paper-p1-lean/commit/ed4ed43ecc05c2f7823ba9b0acca98bc1f62fc5d).
