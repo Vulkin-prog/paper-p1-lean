@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **404 audited theorem/lemma declarations**. This
+- The project currently has **412 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -56,6 +56,12 @@ Neither document is fully formalized.
   The exact joint-mass formula is proved from the actual joint affine system
   and rank-nullity; it is not an assumed bound. The empty family is included.
   See [statement alignment](COMPATIBLE_NULLITY_ALIGNMENT.md).
+- Article Lemma 4.4 is in progress. Partitions which preserve every effective
+  relation under restriction are proved closed under common refinement, and
+  there is a unique finest such partition. Equivalence with directness of
+  the block-sum spaces and the probability, centered-moment and nullity
+  factorization statements remain open. These preparatory facts do not
+  increase numbered-result coverage.
 - Paper C code ported: parity vectors and selected finite prime-cylinder
   definitions/proofs, with exact source identities recorded in the reuse ledger.
   Complete multiplicativity, the signed run-start interpretation, cutoff

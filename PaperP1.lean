@@ -46,3 +46,4 @@ public import PaperP1.Model.JointStartSystem
 public import PaperP1.Model.JointStartProbability
 public import PaperP1.Model.InfiniteJointMoments
 public import PaperP1.Model.CompatibleNullityBound
+public import PaperP1.Affine.RelationPartitions

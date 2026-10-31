@@ -230,11 +230,16 @@
       "source": "main_sections/affine_algebra.tex",
       "line": 134,
       "sha256": "6eaa05eaffd59b96e763bff396ec1b1b18f1f4a6b5004c5a15093d11d49dba84",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.Affine.relationDirectPartition_inf",
+        "PaperP1.Affine.canonicalRelationPartition_respects",
+        "PaperP1.Affine.canonicalRelationPartition_le",
+        "PaperP1.Affine.existsUnique_finest_relationPartition"
+      ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Preparatory relation-restriction criterion: every global zero-sum effective tuple restricts to a zero-sum tuple on each part. Such partitions are proved closed under common refinement and have a unique finest member. Equivalence with directness of the block-sum subspaces and all three q/c/nullity factorization identities remain open; the numbered result is not marked complete."
     },
     {
       "label": "p1:stop:polynomial",

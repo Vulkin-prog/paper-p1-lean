@@ -61,6 +61,14 @@ import PaperP1
 #print axioms PaperP1.Affine.uniformSolutionMass_of_compatible
 #print axioms PaperP1.Affine.uniformSolutionMass_of_not_compatible
 #print axioms PaperP1.Affine.uniformSolutionMass_pos_iff
+#print axioms PaperP1.Affine.relationAddition_restrictCoefficients
+#print axioms PaperP1.Affine.sum_restrictCoefficients
+#print axioms PaperP1.Affine.relationDirectPartition_top
+#print axioms PaperP1.Affine.relationDirectPartition_inf
+#print axioms PaperP1.Affine.relationDirectPartition_finsetInf
+#print axioms PaperP1.Affine.canonicalRelationPartition_respects
+#print axioms PaperP1.Affine.canonicalRelationPartition_le
+#print axioms PaperP1.Affine.existsUnique_finest_relationPartition
 #print axioms PaperP1.Affine.relationAddition_apply
 #print axioms PaperP1.Affine.range_relationAddition
 #print axioms PaperP1.Affine.relativeNullity_eq_dimension_deficit
