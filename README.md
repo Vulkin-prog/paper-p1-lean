@@ -15,9 +15,12 @@ without changing the law; complementary Bernoulli products are probabilities.
 Article Proposition 5.2 is proved with its exact positive remainder kernel,
 joint activation mass and ordinary ℓ¹ norm bound, without an independence
 assumption between the prefix and suffix.
-Generic affine fiber counts, rational probabilities and binary Fourier
-orthogonality have also been ported from Paper C. Their effective-space
-application to P1's full-support formula is in progress.
+Actual finite-cylinder run marginals are proved to be zero in incompatible
+cases and inverse powers of two at the effective rank otherwise. The
+full-support centered Fourier formula and its sharper nullity bound are proved
+on effective dual spaces and instantiated for actual finite-cylinder run
+moments. Square-class-image identification and infinite-cylinder consistency
+remain open, so Lemma 4.2 is still in progress.
 
 | Material | Location |
 |---|---|

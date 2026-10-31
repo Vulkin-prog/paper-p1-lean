@@ -32,12 +32,16 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **219 audited theorem/lemma declarations**. This
+- The project currently has **250 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
-  are proved. P1's full-support centered Fourier formula is in progress; its
-  effective-space and affine-prescription linkage remains open. No P1
-  compatible-nullity or asymptotic estimate is claimed proved.
+  are proved. The full-support centered Fourier formula, its sharper
+  `2^ρ - 1` bound and nonzero-moment implication are now proved on effective
+  dual subspaces and instantiated for actual finite-cylinder run moments.
+  The relative nullity is identified with the dimension deficit in the paper.
+  Square-class-image identification and infinite-cylinder consistency remain
+  open, so article Lemma 4.2 remains in progress. No P1 compatible-nullity or
+  asymptotic estimate is claimed proved.
 - Paper C code ported: parity vectors and selected finite prime-cylinder
   definitions/proofs, with exact source identities recorded in the reuse ledger.
   Complete multiplicativity, the signed run-start interpretation, cutoff
@@ -52,8 +56,10 @@ Neither document is fully formalized.
   Local rigidity and the comparison of effective rank with `L` remain open.
 - On any effective subspace of actual binary linear forms, the affine event
   has its character expansion and actual marginal equal to the inverse size
-  of that space. Local signs are evaluations at a solution. The full-support
-  product formula, its bound, and square-class identification remain open.
+  of that space. Local signs are evaluations at a solution and proved
+  independent of the chosen solution. Run events are identified with the
+  image of their actual row transpose, so local row relations are quotiented
+  before taking centered products. Square-class identification remains open.
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1. No error in the original conclusion is asserted.
 - Palomar registrations: none; preparation only.

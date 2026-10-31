@@ -179,12 +179,19 @@
       "sha256": "1357e7556eb0994ea9a2b3a23a308dc627fac610d0f5718317f46bf85cebfde1",
       "status": "in_progress",
       "lean_declarations": [
-        "PaperP1.Affine.sum_binarySign_linear",
-        "PaperP1.Affine.affineFiber_fourier_identity"
+        "PaperP1.Affine.effective_full_support_formula",
+        "PaperP1.Affine.relativeNullity_eq_dimension_deficit",
+        "PaperP1.Affine.effectiveCenteredMoment_bound",
+        "PaperP1.Affine.effectiveCenteredMoment_coarse_bound",
+        "PaperP1.Affine.fullSupportRelation_of_centeredMoment_ne_zero",
+        "PaperP1.Model.start_full_support_formula",
+        "PaperP1.Model.start_centered_moment_bound",
+        "PaperP1.Model.start_full_support_relation_of_ne_zero",
+        "PaperP1.Model.dyadicCenteredMoment_eq_startFamily"
       ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": "Generic finite binary character orthogonality and affine fiber Fourier identity are proved after a checked Paper C port. These are precursors only. P1's effective local spaces, affine prescriptions, centered full-support restriction, kernel-cardinality bound and implication c(I) nonzero -> full-support relation remain to be formalized."
+      "notes": "The full-support centered identity, sharper 2^rho - 1 bound, coarse bound and relation-existence implication are proved on effective dual subspaces. Rank-nullity identifies rho with the dimension deficit. Actual finite-cylinder run events are identified with effective affine row spaces; the formula and bound are instantiated with actual heterogeneous marginals and finite-set reindexing. Identification of these row spaces with the manuscript square-class images and consistency with the infinite prime-sign measure remain open, so the numbered result is not marked complete."
     },
     {
       "label": "p1:alg:compatible",

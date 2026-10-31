@@ -25,6 +25,7 @@ compiled artifacts were copied.
 | `PaperC/Affine/Fourier.lean`, `d11d2472de69e4740591abd96a6161502cf55669` | `PaperP1/Affine/Fourier.lean`, character orthogonality and division-free affine Fourier identity | Module/public declarations, namespace, ite rename and unused simp argument removal; helper theorem made public for direct axiom auditing |
 | `PaperC/Affine/Probability.lean`, `40d959c053dc27bfb197db83bff1e673fed55644` | `PaperP1/Affine/Probability.lean`, rational uniform affine probability formulas | Module/public declarations, namespace and ite lemma renames |
 | `PaperC/Affine/StartSystem.lean`, `097a8645a5622d6b7541cc52beac2e3129392b11` | `PaperP1/Affine/StartSystem.lean`, full run-start affine encoding | Module/public declarations, opened namespaces and ite lemma renames; the finite-model `startAt` alias retains the original event |
+| `PaperCPrel8/CenteredAffineBlocks.lean`, `8f021697109464c4ed6adf8c4e59d7aa83b13854` | Proof patterns for finite sum splitting and character-product induction in `PaperP1/Affine/CenteredFourier.lean` | New effective subspace indices, heterogeneous actual marginal rates, one uniform sign space and direct full-support relation kernel; the old nominal-row reference rate is not reused |
 
 All ported statements recompile with warnings as errors and are included in the
 generated kernel-axiom audit. This port does not import the old arithmetic
@@ -43,7 +44,12 @@ to every positive-length start, preserving incompatible windows. These are new
 bridges, rather than an identification of nominal row count with effective rank.
 `Affine/Characters.lean` proves character expansions and actual marginals on
 arbitrary effective dual subspaces, using evaluations at a local solution.
-It does not yet identify those spaces with the manuscript's square-class images.
+`CenteredFourier.lean`, `RelativeNullity.lean` and `FourierBound.lean` give the
+full-support identity, dimension deficit, sharper bound and relation existence
+on those effective spaces. `Model/StartFourier.lean` identifies the actual run
+events with effective affine row spaces and applies these results to their
+actual centered moments, including finite-set reindexing. Identification with
+the manuscript's square-class images and infinite model is still open.
 
 ## Further candidates
 

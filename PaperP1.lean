@@ -21,3 +21,8 @@ public import PaperP1.Probability.UniformFinite
 public import PaperP1.Affine.RealProbability
 public import PaperP1.Model.StartProbability
 public import PaperP1.Affine.Characters
+public import PaperP1.Affine.CenteredFourier
+public import PaperP1.Affine.RelativeNullity
+public import PaperP1.Affine.FourierBound
+public import PaperP1.Affine.EffectiveRows
+public import PaperP1.Model.StartFourier
