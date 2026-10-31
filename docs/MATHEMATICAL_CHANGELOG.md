@@ -157,7 +157,8 @@ Absence of an entry does not mean the argument has been verified.
 - Status: confirmed by Lean compilation and actual kernel audit; not integrated
   into a new manuscript. See [alignment](LOCAL_SQUARE_THRESHOLD_ALIGNMENT.md).
 
-The exact validated implementation commit for P1-MATH-0005 and P1-MATH-0006 is
+The initial validated implementation commit for P1-MATH-0005 and the original
+T9.2 scope of P1-MATH-0006 is
 [548a0d2d02f1871aa3e4b26d7526082183f7bf03](https://github.com/Vulkin-prog/paper-p1-lean/commit/548a0d2d02f1871aa3e4b26d7526082183f7bf03).
 The full build and actual 1,301-declaration kernel audit passed.
 
@@ -189,6 +190,12 @@ The full build and actual 1,301-declaration kernel audit passed.
 The exact validated implementation commit for P1-MATH-0007 is
 [ec54490500649dfe3fb3ff73c1abfbd29ad555e4](https://github.com/Vulkin-prog/paper-p1-lean/commit/ec54490500649dfe3fb3ff73c1abfbd29ad555e4).
 The full build and actual 1,334-declaration kernel audit passed.
+
+The complete T9.3 consequence of P1-MATH-0006 is validated at
+[a96edd26685699c9dfc651d9de2e7f7945773342](https://github.com/Vulkin-prog/paper-p1-lean/commit/a96edd26685699c9dfc651d9de2e7f7945773342),
+with a full build and actual 1,435-declaration kernel audit. All 112 distinct
+coverage/finding reference names were also checked by Lean. The original
+T9.2 validation remains in the machine-readable history.
 
 Every finding receives a stable identifier `P1-MATH-0001`, etc., and an entry in
 [mathematical-changes.json](mathematical-changes.json). Keep the following fields:

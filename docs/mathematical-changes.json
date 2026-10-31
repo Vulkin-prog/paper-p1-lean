@@ -202,7 +202,7 @@
       ],
       "proposed_revision": "There exists an absolute K>0 such that for every fixed C there is N0(C), and all N≥N0(C), all critical-band lengths L and all dyadic starts x, the number of n∈V_x with K_(10B)(n)=1 is at most K B/log B, where B=L+1. In T9.3, the same quantifier order also gives an absolute constant for |c-d_xy|≤K B/log B, with only the threshold depending on C; the multiplicative constant need not equal the one in T9.2.",
       "impact": "Clarifies and strengthens the constant uniformity in T9.2. The threshold may still depend on the fixed band width. No admissibility, positive start probability or full-rank assumption is added. The cutoff 10B and the B/log B rate are unchanged. This constant uniformity propagates to the full free-component estimate in T9.3, including overlapping physical windows. The two local kernels are bounded using the proved critical rigidity theorem; no regularity or admissibility premise is introduced.",
-      "validation": "Full Lean v4.36.0-rc2 build and actual kernel audit of all 1435 declarations at the complete T9.3 checkpoint; only propext, Classical.choice and Quot.sound. The original T9.2 validation is preserved in validation_history. The exact new implementation commit is recorded after publication.",
+      "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 1435 declarations at the recorded complete T9.3 implementation commit; only propext, Classical.choice and Quot.sound. The original T9.2 validation is preserved in validation_history. All recorded evidence declarations are directly audited, and all 112 distinct coverage/finding reference names were also checked by Lean.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
@@ -225,7 +225,8 @@
           "line": 129,
           "statement_sha256": "3180e3bd07251b593f9c834c334297f64d5d97fcad49629093e529b7d39d45ca"
         }
-      ]
+      ],
+      "validation_commit": "a96edd26685699c9dfc651d9de2e7f7945773342"
     },
     {
       "id": "P1-MATH-0007",
