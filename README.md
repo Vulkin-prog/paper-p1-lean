@@ -34,7 +34,7 @@ whose toolchain matches. The dependency lock file records all transitive revisio
 ```sh
 python3 scripts/check_disk.py
 MATHLIB_NO_CACHE_ON_UPDATE=1 lake update
-lake exe cache get Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Algebra.BigOperators.Group.Finset.Powerset Mathlib.Algebra.BigOperators.Group.Finset.Sigma Mathlib.Tactic.Ring.Basic Mathlib.Algebra.MonoidAlgebra.Lift Mathlib.Basic.Real.Basic Mathlib.Algebra.Order.BigOperators.Group.Finset
+lake exe cache get Mathlib.Algebra.BigOperators.Ring.Finset Mathlib.Algebra.BigOperators.Group.Finset.Powerset Mathlib.Algebra.BigOperators.Group.Finset.Sigma Mathlib.Tactic.Ring.Basic Mathlib.Algebra.MonoidAlgebra.Lift Mathlib.Basic.Real.Basic Mathlib.Algebra.Order.BigOperators.Group.Finset Mathlib.Data.Nat.Factorization.Defs Mathlib.Data.ZMod.Basic Mathlib.LinearAlgebra.Pi Mathlib.Data.Finset.Interval
 python3 scripts/check_disk.py
 python3 scripts/check_sources.py
 python3 scripts/update_audit.py --check
@@ -65,8 +65,10 @@ mathematical inputs will be individually tracked rather than hidden as axioms.
 
 The project follows the traceability approach of
 [paper-c-lean](https://github.com/Vulkin-prog/paper-c-lean). No Paper C Lean code
-has been imported at initialization. Its old compiled files are not reusable
-under this compiler. Palomar registrations are planned after completion and
+was imported at initialization. Parity vectors and the finite prime-sign model
+have since been adapted and rebuilt; the reuse record identifies every source
+and adaptation. Its old compiled files are not reusable under this compiler.
+Palomar registrations are planned after completion and
 qualification; no registration exists for this project yet.
 
 New Lean code, project scripts and project documentation are licensed under

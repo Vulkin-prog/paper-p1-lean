@@ -20,6 +20,14 @@ namespace PaperP1.Probability
 
 variable {Ω ι R : Type*} [Fintype Ω] [CommRing R]
 
+/-- Uniform probability on a nonempty finite sample space. -/
+def uniformFiniteProbability (Ω : Type*) [Fintype Ω] [Nonempty Ω] : FiniteProbability Ω where
+  weight := fun _ => (Fintype.card Ω : ℝ)⁻¹
+  weight_nonneg := fun _ => inv_nonneg.mpr (Nat.cast_nonneg _)
+  total_weight := by
+    have hc : (Fintype.card Ω : ℝ) ≠ 0 := Nat.cast_ne_zero.mpr Fintype.card_ne_zero
+    simp [nsmul_eq_mul, hc]
+
 /-- The augmentation homomorphism: total mass is multiplicative under convolution. -/
 def totalMass : SignedLaw R →+* R :=
   AddMonoidAlgebra.liftNCRingHom (RingHom.id R)

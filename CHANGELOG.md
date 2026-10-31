@@ -9,7 +9,11 @@
   exact heterogeneous marginals, identify centered moments with the centering
   transform, and establish positivity and mass of the convolution references.
 - Keep Proposition 4.1 in progress until the multiplicative model is connected.
-- Generate and check kernel-axiom audit coverage of all 59 theorem/lemma declarations.
+- Port Paper C's parity-vector development and finite prime-sign model to the
+  pinned compiler; record source blobs, attribution and the factorization API rename.
+- Prove complete multiplicativity, the signed run-start interpretation, cutoff
+  adequacy and the exact-marginal cylinder count-law expansion.
+- Generate and check kernel-axiom audit coverage of all 89 theorem/lemma declarations.
 - Numbered manuscript coverage: 1 / 167.
 
 ## 0.1.0 — 31 October 2026
