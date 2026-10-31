@@ -88,11 +88,12 @@
       ],
       "proposed_revision": "State the global count uniformly for H <= D log N and integer counting height X <= CN. State the dyadic two-defect-window count uniformly for H <= D log N and L <= E log N, for fixed C,D,E >= 0. Retain the separately needed hypotheses for the local estimate.",
       "impact": "Strengthens parameter scope for two parts of T1.3, including small cutoffs. No change to exponents 1/2 or 0 and no error in the original conclusion is asserted. The full T1.3 local/transformation statements remain open.",
-      "validation": "Full Lean v4.36.0-rc2 compilation and actual kernel axiom audit for all 830 declarations; implementation commit to be recorded after committing this proof.",
+      "validation": "Full Lean v4.36.0-rc2 compilation and actual kernel axiom audit for all 830 declarations at the recorded implementation commit.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "1f8ea0b57c4b8f13f98f581e5688bade3a27fdff"
     }
   ]
 }
