@@ -617,3 +617,6 @@ Validated implementation of companion T22.3 and P1-MATH-0016:
   [alignment](OFFSET_PATTERN_RANKIN_ALIGNMENT.md).
 
 All 283 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of companion T21.3 and P1-MATH-0017:
+[6848867fb06d1790bc0ff5a0a298671889c1b638](https://github.com/Vulkin-prog/paper-p1-lean/commit/6848867fb06d1790bc0ff5a0a298671889c1b638).
