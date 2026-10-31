@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **655 audited theorem/lemma declarations**. This
+- The project currently has **758 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -114,6 +114,16 @@ Neither document is fully formalized.
   literature inequality is left as an unproved premise. Both branches, every
   coefficient range and every positive real error exponent are included. See
   [statement alignment](QUADRATIC_COUNT_ALIGNMENT.md).
+- Companion T1.3 is in progress. The intrinsic defect predicate is proved
+  equivalent to the large odd-prime kernel being 1, with canonical
+  square-times-small-prime representations. The binary Hamming bound,
+  augmented parity rank and square-product bridges are ported and checked.
+  T1.1 discharges the short-word exclusion, giving a finite bound for the
+  actual defective set in [U,U+R] with independent cutoff H and width R.
+  Small-cardinality cases are included. The asymptotic local/global bounds,
+  two-defect window count and dilation/translation versions remain open.
+  See [partial alignment](DEFECT_COUNTS_ALIGNMENT.md). This work does not
+  increase numbered-result coverage.
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant. No error in an original

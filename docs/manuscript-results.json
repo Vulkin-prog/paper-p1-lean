@@ -1268,11 +1268,14 @@
       "source": "companion_sections/arithmetic_appendix.tex",
       "line": 90,
       "sha256": "c641ad80bb970cb82ad3b2c2b72718859d865ab7c7dc9f907e2843b9f3a49220",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.LocalDefectBound.card_defectsInInterval_lt_of_log",
+        "PaperP1.LargeOddKernel.largeOddKernel_eq_one_iff"
+      ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Finite local Hamming bound for the actual intrinsic defective set, separate cutoff and width, canonical representations and exact large-odd-kernel dictionary proved. Uniform asymptotic local/global counts, two-defect window count and fixed dilation/translation conclusions remain open. Not counted as a completed numbered result. See docs/DEFECT_COUNTS_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:reuss",

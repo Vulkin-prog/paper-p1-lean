@@ -77,6 +77,33 @@ The old stronger exp(log N/log log N) endpoint and its Nicolas--Robin premise
 are not imported. The elementary divisor proof is sufficient for P1's stated
 subpolynomial rate.
 
+The following generic arithmetic/coding ports prepare companion T1.3:
+
+| Upstream path and Git blob | Target | Scope |
+|---|---|---|
+| `PaperC/Coding/DefectCodeProposition.lean`, `5380940cae4af4d7ceefcbbc56328e63e26f3f2e` | `PaperP1/Coding/DefectCodeProposition.lean` | Full generic module |
+| `PaperC/Arithmetic/DefectivePredicate.lean`, `8ef2a76317383e4830fa9ae3866f171494bccf75` | `PaperP1/Arithmetic/DefectivePredicate.lean` | Full generic module |
+| `PaperC/Coding/DefectCodeDistance.lean`, `8ce524b12c64fbd8ed8c9bb1791d4549d110fbc4` | `PaperP1/Coding/DefectCodeDistance.lean` | Full generic module |
+| `PaperC/Coding/DefectCodeHamming.lean`, `f8cf3188595a220c196881fa109411f40be3e3a0` | `PaperP1/Coding/DefectCodeHamming.lean` | Full generic module |
+| `PaperC/Arithmetic/DefectCounting.lean`, `6cfe401b3062c7bee7285b5a317354f2f5aa1c59` | `PaperP1/Arithmetic/DefectCounting.lean` | Full generic module |
+| `PaperC/Arithmetic/DefectParitySupport.lean`, `a3d879a87a1ca539a5bb2d4363465621ce865cc2` | `PaperP1/Arithmetic/DefectParitySupport.lean` | Full generic module |
+| `PaperC/Coding/DefectCodeRepresentation.lean`, `c8d938d45b4206d422744e39b9fa01ebadc90074` | `PaperP1/Coding/DefectCodeRepresentation.lean` | Full generic module |
+| `PaperC/Coding/DefectCodeRank.lean`, `c177d86eacf5f09650c3e06131d63381b75826b4` | `PaperP1/Coding/DefectCodeRank.lean` | Full generic module |
+| `PaperC/Coding/HammingDefectBound.lean`, `c5f03addde8291f6f28cd300981e644fb58be8e5` | `PaperP1/Coding/HammingDefectBound.lean` | Full generic module |
+| `PaperC/Coding/DefectCodeRunge.lean`, `7466a01e8d5ab684b7db8f52ce47be4fec5f6d80` | `PaperP1/Coding/DefectCodeRunge.lean` | Full generic module |
+| `PaperC/Coding/HammingBound.lean`, `fa57902f4ecda8b61d4b90d6aa50399462a0041b` | `PaperP1/Coding/HammingBound.lean` | Full generic module |
+| `PaperC/Arithmetic/RungeTranslation.lean`, `d2db508c4669ba92e9fe0243a53ba5bdafcfa46b` | `PaperP1/Arithmetic/RungeTranslation.lean` | Full generic module |
+| `PaperC/Coding/RungeDefectApplication.lean`, `dc51734b5e3f44d17979f5c6e0f2aa15a0ec1a8b` | `PaperP1/Coding/RungeDefectApplication.lean` | Application adapted to the stronger P1 (64R)^d bound, including endpoint monotonicity |
+| `PaperC/Coding/IntervalDefectBound.lean`, `dbb7fa8dd13e986eb396d88a883ba011d338752b` | `PaperP1/Coding/LocalDefectBound.lean` | Finite-enumeration and small-cardinality proof patterns only; new intrinsic defective set with separate cutoff and width |
+
+These ports use P1 namespaces and the already ported parity-vector module.
+Local prime-two instances are named explicitly. Deprecated ite lemmas and
+unused simp arguments are updated; a variable-headed simp attribute on the
+representation identity is removed. Public helpers participate in the audit.
+P1's new large-odd-kernel dictionary and actual local set complete the finite
+statement comparison in [DEFECT_COUNTS_ALIGNMENT.md](DEFECT_COUNTS_ALIGNMENT.md).
+No old asymptotic defect bound is imported, and T1.3 remains in progress.
+
 All ported statements recompile with warnings as errors and are included in the
 generated kernel-axiom audit. The old final Runge bound
 `U ≤ (128 d R)^(2d)` and its analytic tail proof are not imported. New P1
