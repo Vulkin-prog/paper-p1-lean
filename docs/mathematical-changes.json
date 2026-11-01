@@ -2693,7 +2693,8 @@
       "validation_history": [
         "a126778fb25fd0c7744a86dc30bf10009e44b077",
         "6fe2d0e8304c28c2729dc9a9a1f5fb8b45ac9782"
-      ]
+      ],
+      "validation_commit": "25a5b29c8ea2465c9b8c55bf5c7819ecbccbb3d3"
     }
   ]
 }
