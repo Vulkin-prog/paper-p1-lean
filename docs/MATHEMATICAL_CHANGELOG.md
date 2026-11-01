@@ -981,3 +981,21 @@ All 557 distinct coverage/finding declaration names were checked directly by Lea
 
 Validated implementation of companion T19.8 and P1-MATH-0028:
 [6a2be0375db8f8051a562cf179b571d344aac9dc](https://github.com/Vulkin-prog/paper-p1-lean/commit/6a2be0375db8f8051a562cf179b571d344aac9dc).
+
+## Companion T19.7 — Complete arithmetic-cylinder validation
+
+The original positive and total exponential-moment liminf is now proved
+along the nontrivial odd-prime filter, with N_q=2^(q-1), L_q=q-1 and
+every fixed t>2. The exact cylinder mass, finite start-count lower bound,
+actual infinite-measure expectations and PNT limit are all proved.
+Both moments eventually exceed every real level. The one-unit smaller
+sufficient cutoff has the same proved asymptotic cost. This is a closure
+of the original result, with no new mathematical correction or threshold
+optimality claim. See [alignment](PRIME_CYLINDER_ALIGNMENT.md).
+
+The full build passed (9,029 jobs); all 2,602 theorem/lemma declarations
+passed the actual axiom audit with only `propext`, `Classical.choice`
+and `Quot.sound`. All 572 coverage/finding declaration names were
+checked directly by Lean. Source bytes and all original statement hashes
+are preserved. Coverage is 40 / 167, with 28 confirmed mathematical
+improvements. No Palomar registration is made.

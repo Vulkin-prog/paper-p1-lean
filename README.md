@@ -4,7 +4,10 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 39 / 167 numbered results proved.**
+**Status: active formalization, 40 / 167 numbered results proved.**
+Companion T19.7 now proves divergence of the original positive and total
+run exponential moments along the prime subsequence, with the exact source
+liminf constant and threshold. See [statement alignment](docs/PRIME_CYLINDER_ALIGNMENT.md).
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The principal Poisson asymptotic theorems remain open.

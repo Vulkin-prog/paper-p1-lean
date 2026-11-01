@@ -20,6 +20,29 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Rare arithmetic cylinder and exponential-moment divergence
+
+Stable ID: `P1-ARITH-PRIME-CYLINDER-DIVERGENCE`. Status: **proved**.
+
+- Target: companion Proposition T19.7, page 71, `p1:limits:cylinder`.
+- Lean: `PrimeCylinderLiminf.companion_T19_7_liminf` and the explicit
+  threshold formulation `PrimeCylinderDivergence.companion_T19_7`.
+- Elementary prime-valuation arithmetic constructs actual positive runs;
+  residue-class counts give a finite lower bound for their number.
+  Exact finite-cylinder probability and expectation transfer give lower
+  bounds for the original infinite-model exponential moments.
+- The already formalized sharp PNT proves the scaled cylinder cost limit.
+  Elementary real limits prove the start contribution. Mathlib's
+  infinitude-of-primes theorem proves that the odd-prime filter is
+  nontrivial. The literal extended-real liminf and divergence above
+  every real level follow. No probability or asymptotic estimate is
+  assumed; the sufficient source threshold t>2 is retained.
+- No new Paper C code or unproved literature statement is introduced.
+  The three additional Paper C Stein-related modules inspected at this
+  checkpoint are recorded as **not ported** in `PAPER_C_REUSE.md`.
+  Their explicit positive-rate input is not treated as a closed proof.
+  See [alignment](PRIME_CYLINDER_ALIGNMENT.md).
+
 ## Private-rank deletion and positive core components
 
 Stable ID: `P1-AFFINE-PRIVATE-RANK-PEELING`. Status: **proved**.

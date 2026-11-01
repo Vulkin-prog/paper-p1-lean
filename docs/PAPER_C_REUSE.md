@@ -243,6 +243,26 @@ passes its 1,435-declaration audit at the complete T9.3 checkpoint.
 
 ## Further candidates
 
+Additional read-only inspections at the T19.7 checkpoint used the same
+snapshot `b9fa9ba490f201b408a302a86f1594ee620b228b` (Apache-2.0,
+Lean 4.34.0):
+
+- `PaperCV282/ScalarSteinInput.lean`, blob
+  `13df39419770ba57ec9255e5eab3d003b7f97ffe`, leaves the positive-rate
+  scalar Stein-factor statement as an explicit input. Its zero-rate
+  proof does not discharge P1's positive-rate Stein estimates.
+- `PaperCV282/PoissonReverseImmigration.lean`, blob
+  `7269c6d5622aa8c349b22dc275ac4a507a4652dd`, constructs a reverse
+  increment process; it does not by itself prove that scalar estimate.
+- `PaperCV282/DirectionalSteinIntegration.lean`, blob
+  `f77178c0bd58b6e4627f0ac4d3f370f80bc6144e`, proves a comparison from
+  supplied derivative bounds, rather than closing those bounds.
+
+None of these files is ported, and no unproved Stein-factor input is
+introduced. P1's weighted recurrence theorem and its unweighted scalar
+Stein estimates retain their distinct statement scopes. The arithmetic
+cylinder proof is new P1 code using the previously validated model and PNT.
+
 | Candidate area | Paper C paths | Required comparison |
 |---|---|---|
 | Prime-sign model | `PaperC/Model/` | Finite/infinite model, complete multiplicativity, cylinders |

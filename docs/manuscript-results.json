@@ -2614,11 +2614,30 @@
       "source": "companion_sections/limits_appendix.tex",
       "line": 385,
       "sha256": "c4dfa742ae68556d196927fdaaae789b2734586e0e9820cdff17c2218e8639be",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.PrimeCylinderLiminf.companion_T19_7_liminf",
+        "PaperP1.PrimeCylinderLiminf.oddPrimeIndices_neBot",
+        "PaperP1.PrimeCylinderDivergence.companion_T19_7",
+        "PaperP1.PrimeCylinderDivergence.logarithms_diverge",
+        "PaperP1.PrimeCylinderDivergence.moments_diverge",
+        "PaperP1.OneNegativePrime.positive_exact_run",
+        "PaperP1.PrimeRunStarts.starts_card_lower",
+        "PaperP1.PrimeCylinderSize.atom_weight",
+        "PaperP1.PositiveStarts.exponentialMoment_eq_finite",
+        "PaperP1.PrimeRunCylinder.positive_exponential_lower",
+        "PaperP1.PrimeRunCylinder.positive_log_lower",
+        "PaperP1.PrimeRunCylinder.total_log_lower",
+        "PaperP1.PrimeCylinderScale.primeCharge_tendsto",
+        "PaperP1.PrimeCylinderDivergence.startLower_tendsto",
+        "PaperP1.PrimeCylinderDivergence.lowerRate_tendsto"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-PNT",
+        "P1-ARITH-PRIME-CYLINDER-DIVERGENCE"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Complete positive and total exponential-moment lower bound under the original infinite prime-sign measure, with N_q=2^(q-1), L_q=q-1, and every fixed t>2. A concrete finite cylinder has exact probability 2^-pi(M); elementary divisibility forces positive exact runs and gives at least N/q-2N/q^2-4 starts. Finite-cylinder expectation transfer proves the original moment and logarithmic lower bounds. The already formalized sharp PNT gives the cost limit 2 log 2; the start contribution tends to log 2. The odd-prime filter is proved nontrivial. The literal extended-real liminf, explicit epsilon thresholds, positive constant and actual moment divergence above every level are proved. The cutoff is the sufficient existing dyadic cutoff 2N+q-1 rather than the source 2N+q; this one-unit change has the same proved limit. No target probability, start count, PNT or asymptotic bound is assumed. No threshold optimality or later large-component theorem is claimed. See PRIME_CYLINDER_ALIGNMENT.md."
     },
     {
       "label": "p1:limits:peeling",
