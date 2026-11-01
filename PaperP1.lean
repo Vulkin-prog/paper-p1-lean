@@ -806,3 +806,13 @@ public import PaperP1.Arithmetic.BadSeedFamilies
 public import PaperP1.Asymptotics.PositionedSeedBounds
 public import PaperP1.Asymptotics.FixedExceptionalMass
 public import PaperP1.Asymptotics.FixedSourcePropagationTheorem
+
+public import PaperP1.Affine.CompatibleSourcePrescriptions
+public import PaperP1.Affine.FactorConditionalKernel
+public import PaperP1.Affine.NominalAffineMass
+public import PaperP1.Affine.SourceFamilyEvent
+public import PaperP1.Asymptotics.ColoredConditionalSum
+public import PaperP1.Model.ColoredPrimeSamples
+public import PaperP1.Model.ColoredReplicaMass
+public import PaperP1.Model.ColoredWindowConditional
+public import PaperP1.Probability.UniformFubini

@@ -6087,11 +6087,46 @@
       "source": "companion_sections/uniform_appendix.tex",
       "line": 351,
       "sha256": "cee349c607e43eada20a10105ca13a96aba5dbd24c8c491a6857a75064ff04d9",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.CompatibleSourcePrescriptions.source_mass_of_witness",
+        "PaperP1.CompatibleSourcePrescriptions.source_mass_pos_iff",
+        "PaperP1.CompatibleSourcePrescriptions.conditional_of_witness",
+        "PaperP1.FactorConditionalKernel.oldSpace_map_le",
+        "PaperP1.FactorConditionalKernel.conditional_kernel_le",
+        "PaperP1.FactorConditionalKernel.mass_le_merged_homogeneous",
+        "PaperP1.NominalAffineMass.compatible",
+        "PaperP1.NominalAffineMass.exact_formula",
+        "PaperP1.SourceFamilyEvent.effectiveEvent_iSup",
+        "PaperP1.SourceFamilyEvent.oldSpace_event",
+        "PaperP1.SourceFamilyEvent.observation_mass",
+        "PaperP1.SourceFamilyEvent.conditional_mass_ratio",
+        "PaperP1.ColoredConditionalSum.uniform_sum",
+        "PaperP1.ColoredConditionalSum.prescribed_sum",
+        "PaperP1.ColoredPrimeSamples.select_diagonal",
+        "PaperP1.ColoredPrimeSamples.start_diagonal",
+        "PaperP1.ColoredPrimeSamples.relationMap_comp",
+        "PaperP1.ColoredPrimeSamples.start_relation_factor",
+        "PaperP1.ColoredReplicaMass.replica_identity",
+        "PaperP1.ColoredReplicaMass.joint_system_event",
+        "PaperP1.ColoredReplicaMass.joint_eq_affine_mass",
+        "PaperP1.ColoredReplicaMass.exact_nominal_formula",
+        "PaperP1.ColoredWindowConditional.merged_domination",
+        "PaperP1.ColoredWindowConditional.infinite_homogeneous_domination",
+        "PaperP1.ColoredWindowConditional.conditional_of_witness",
+        "PaperP1.UniformFubini.product",
+        "PaperP1.UniformFubini.independent_product",
+        "PaperP1.UniformFubini.congr",
+        "PaperP1.UniformFubini.nonneg"
+      ],
+      "literature_inputs": [
+        "P1-PROB-COLORED-CONDITIONAL-SUM"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0070"
+      ],
+      "notes": "Actual finite common-small/independent-colored-large samples, exact replica-product identity, nominal-row kernel formula with compatibility, and the uniform colored conditional target sum are proved. Stronger pointwise domination by the merged homogeneous conditional atom is proved. Repeated sources and target prescriptions are included. The conditional-expectation/filtration interpretation, exact effective relative-kernel alignment and full positive weighted moment assertion remain open; this numbered result is not counted complete. See COLORED_REPLICAS_ALIGNMENT.md.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10061 jobs); actual axiom audit passed for all 5007 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2722 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.48 GiB. Actual finite replica products, the nominal-row compatibility/kernel formula and the full finite colored conditional target sum are proved. The stronger pointwise homogeneous comparison is P1-MATH-0070. T22.7 stays in progress for conditional-expectation interpretation, effective relative-kernel alignment and the positive weighted moment bound. Coverage remains 71/167 (main 25/73, companion 46/94); confirmed independent findings are 70. No conditional-sum, independence or merging premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration."
     },
     {
       "label": "p1:obstruction:fixed",

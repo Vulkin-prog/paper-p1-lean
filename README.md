@@ -5,6 +5,11 @@ correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
 **Status: active formalization, 71 / 167 numbered results proved.**
+Colored replica conditional sums and the exact finite replica identity
+are proved. A stronger pointwise homogeneous domination simplifies the
+conditional argument; T22.7 remains in progress for its full moment
+statement and conditional-expectation alignment. See
+[the current replica scope](docs/COLORED_REPLICAS_ALIGNMENT.md).
 Main Proposition 6.3 is complete: actual conditional affine sums,
 ordered-distinct extension-family propagation, and the full fixed-order
 local-defect/contact mass bound are proved on the original infinite model.

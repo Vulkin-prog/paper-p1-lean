@@ -3646,6 +3646,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "a870737a5c2bac6f352bf92984c80f7e30fa1dba"
+    },
+    {
+      "id": "P1-MATH-0070",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:uniform:replicas",
+        "number": "T22.7",
+        "page": 92,
+        "source": "companion_sections/uniform_appendix.tex",
+        "line": 351,
+        "statement_sha256": "cee349c607e43eada20a10105ca13a96aba5dbd24c8c491a6857a75064ff04d9"
+      },
+      "original_assumption": "The T22.7 proof compares colored and merged target rank losses and invokes dense-target counting and conditional propagation.",
+      "finding": "Every colored conditional affine atom is pointwise bounded by the merged homogeneous conditional atom. More generally this holds whenever the merged relation maps factor through one fixed linear map applied to the colored relation maps. The proof is the literal inclusion of the old-span inverse-image kernels; it retains every local row relation and permits incompatible target prescriptions. No critical width, separation, regularity, arithmetic or fixed-order premise is needed for this finite comparison. The full uniform colored conditional target sum follows directly from the already proved homogeneous uncolored sum.",
+      "evidence": [
+        "PaperP1.FactorConditionalKernel.oldSpace_map_le",
+        "PaperP1.FactorConditionalKernel.conditional_kernel_le",
+        "PaperP1.FactorConditionalKernel.mass_le_merged_homogeneous",
+        "PaperP1.ColoredPrimeSamples.start_relation_factor",
+        "PaperP1.ColoredWindowConditional.merged_domination",
+        "PaperP1.ColoredWindowConditional.infinite_homogeneous_domination",
+        "PaperP1.ColoredConditionalSum.uniform_sum",
+        "PaperP1.ColoredConditionalSum.prescribed_sum"
+      ],
+      "proposed_revision": "State the pointwise homogeneous domination before the conditional-sum assertion. Explain that the merged homogeneous atom is always compatible and therefore realizes the full inverse-image-kernel mass. Sum the pointwise comparison and apply the homogeneous case of main 6.3. The merged affine prescription with the original right-hand sides need not be compatible, so no domination by that possibly zero atom is asserted.",
+      "impact": "Strengthens and simplifies the conditional-propagation component of T22.7 and gives a reusable finite linear comparison. No error in its asymptotic conclusion is asserted. The replica formula and positive random-sum moment statement remain separate obligations; numbered coverage stays 71/167.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10061 jobs); actual axiom audit passed for all 5007 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2722 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.48 GiB. Actual finite replica products, the nominal-row compatibility/kernel formula and the full finite colored conditional target sum are proved. The stronger pointwise homogeneous comparison is P1-MATH-0070. T22.7 stays in progress for conditional-expectation interpretation, effective relative-kernel alignment and the positive weighted moment bound. Coverage remains 71/167 (main 25/73, companion 46/94); confirmed independent findings are 70. No conditional-sum, independence or merging premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

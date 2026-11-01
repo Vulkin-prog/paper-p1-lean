@@ -3057,3 +3057,15 @@ retain their arbitrary affine and homogeneous scope. These proof and
 scope details are traced without counting a new independent finding.
 Coverage is 71/167 and confirmed findings remain 69. See the
 [complete propagation alignment](FIXED_SOURCE_PROPAGATION_ALIGNMENT.md).
+
+
+P1-MATH-0070: every colored conditional affine atom is pointwise bounded
+by its merged homogeneous conditional atom. The exact inverse-image
+kernel inclusion proves this for arbitrary finite binary systems under
+a common linear merging of relation maps. This simplifies the uniform
+colored conditional sum to a direct application of main 6.3. Merged
+affine incompatibility is retained, so no comparison with a potentially
+zero merged affine atom is claimed. Finite replica identities are also
+proved, but the remaining T22.7 assertions keep the numbered result in
+progress. Coverage remains 71/167 and confirmed findings are now 70.
+See [precise scope](COLORED_REPLICAS_ALIGNMENT.md).

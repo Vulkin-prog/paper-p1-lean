@@ -1817,3 +1817,21 @@ families at every fixed order. The actual original infinite joint
 moments are identified exactly. No contact-rank, seed-mass, family-
 count or propagation estimate is assumed. No new external result or
 Paper C port is introduced.
+
+
+## Actual colored conditional target sums
+
+Stable ID: `P1-PROB-COLORED-CONDITIONAL-SUM`. Status: **proved**, the
+finite colored conditional-sum component of T22.7.
+
+The common-small/independent-large finite sample is constructed. Its
+linear diagonal proves the merging factorization of actual relation
+maps. Inclusion of the actual inverse-image kernels and the exact
+conditional affine mass formula give pointwise homogeneous domination.
+Positive source probability is proved equivalent to a finite compatible
+witness. The complete homogeneous main 6.3 sum yields the uniform result
+with threshold before the coloring and Y. Finite Fubini also proves the
+actual replica-product identity and its nominal-row compatibility/kernel
+formula. The small-prime conditional-expectation interpretation,
+effective relative-kernel alignment and full weighted moment assertion
+remain open. No new external theorem or Paper C source is introduced.

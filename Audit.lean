@@ -44,6 +44,9 @@ import PaperP1
 #print axioms PaperP1.Affine.compatibleNullityOn_empty
 #print axioms PaperP1.Affine.compatibleNullityOn_eq_filtered_sup
 #print axioms PaperP1.Affine.centeredCoefficient_compatibleNullity_bound
+#print axioms PaperP1.CompatibleSourcePrescriptions.source_mass_of_witness
+#print axioms PaperP1.CompatibleSourcePrescriptions.source_mass_pos_iff
+#print axioms PaperP1.CompatibleSourcePrescriptions.conditional_of_witness
 #print axioms PaperP1.ComponentRankDensity.nullity_density_bound
 #print axioms PaperP1.ComponentRankDensity.exists_part_density
 #print axioms PaperP1.ComponentRankDensity.dense_part_bounds
@@ -79,6 +82,9 @@ import PaperP1
 #print axioms PaperP1.Affine.effectiveRowSpace_card_pow
 #print axioms PaperP1.ExtensionRankBudget.total_rank_identity
 #print axioms PaperP1.ExtensionRankBudget.increment_le_new_rank
+#print axioms PaperP1.FactorConditionalKernel.oldSpace_map_le
+#print axioms PaperP1.FactorConditionalKernel.conditional_kernel_le
+#print axioms PaperP1.FactorConditionalKernel.mass_le_merged_homogeneous
 #print axioms PaperP1.FamilyConditionalMass.kernel_rank_identity
 #print axioms PaperP1.FamilyConditionalMass.mass_nonneg
 #print axioms PaperP1.FamilyConditionalMass.mass_le_one
@@ -126,6 +132,8 @@ import PaperP1
 #print axioms PaperP1.Affine.card_relationOn
 #print axioms PaperP1.Affine.missing_full_support_nullity_bound
 #print axioms PaperP1.Affine.missing_full_support_nullity_bound_real
+#print axioms PaperP1.NominalAffineMass.compatible
+#print axioms PaperP1.NominalAffineMass.exact_formula
 #print axioms PaperP1.Affine.relationSignedSum_eq_one_add_sign
 #print axioms PaperP1.Affine.uniformSolutionMass_eq_one_add_sign
 #print axioms PaperP1.PairFourierIntersection.self_add
@@ -230,6 +238,10 @@ import PaperP1
 #print axioms PaperP1.Affine.finrank_smallPairConstraintTarget
 #print axioms PaperP1.Affine.complete_relation_rank_le_large
 #print axioms PaperP1.Affine.large_relation_rank_le_complete_add_cost
+#print axioms PaperP1.SourceFamilyEvent.effectiveEvent_iSup
+#print axioms PaperP1.SourceFamilyEvent.oldSpace_event
+#print axioms PaperP1.SourceFamilyEvent.observation_mass
+#print axioms PaperP1.SourceFamilyEvent.conditional_mass_ratio
 #print axioms PaperP1.Affine.group_frequency_conditions_iff
 #print axioms PaperP1.Affine.group_relation_zero_iff
 #print axioms PaperP1.Affine.frequencyRelation_group_iff
@@ -2323,6 +2335,8 @@ import PaperP1
 #print axioms PaperP1.ClassCodeBudget.position_count
 #print axioms PaperP1.ClassCodeFibres.pair_count
 #print axioms PaperP1.CodedClassCount.uniform_count
+#print axioms PaperP1.ColoredConditionalSum.uniform_sum
+#print axioms PaperP1.ColoredConditionalSum.prescribed_sum
 #print axioms PaperP1.ComparableCoverPower.power_bound
 #print axioms PaperP1.ComparableLogBounds.exists_nat_comparison
 #print axioms PaperP1.ComparableLogBounds.widthConstant_ge_one
@@ -3758,6 +3772,17 @@ import PaperP1
 #print axioms PaperP1.Model.InfiniteStarts.canonical_run_components_finset
 #print axioms PaperP1.CanonicalSquareClasses.canonical_eq_rows
 #print axioms PaperP1.CanonicalSquareClasses.connected_iff_rows
+#print axioms PaperP1.ColoredPrimeSamples.select_diagonal
+#print axioms PaperP1.ColoredPrimeSamples.start_diagonal
+#print axioms PaperP1.ColoredPrimeSamples.relationMap_comp
+#print axioms PaperP1.ColoredPrimeSamples.start_relation_factor
+#print axioms PaperP1.ColoredReplicaMass.replica_identity
+#print axioms PaperP1.ColoredReplicaMass.joint_system_event
+#print axioms PaperP1.ColoredReplicaMass.joint_eq_affine_mass
+#print axioms PaperP1.ColoredReplicaMass.exact_nominal_formula
+#print axioms PaperP1.ColoredWindowConditional.merged_domination
+#print axioms PaperP1.ColoredWindowConditional.infinite_homogeneous_domination
+#print axioms PaperP1.ColoredWindowConditional.conditional_of_witness
 #print axioms PaperP1.CommonRunMoments.witness_event
 #print axioms PaperP1.CommonRunMoments.joint_common
 #print axioms PaperP1.CommonRunMoments.centered_common
@@ -4970,6 +4995,10 @@ import PaperP1
 #print axioms PaperP1.Probability.factorial_subset_expansion
 #print axioms PaperP1.Probability.uniformFiniteExpectation_eq
 #print axioms PaperP1.Probability.uniformFiniteExpectation_indicator
+#print axioms PaperP1.UniformFubini.product
+#print axioms PaperP1.UniformFubini.independent_product
+#print axioms PaperP1.UniformFubini.congr
+#print axioms PaperP1.UniformFubini.nonneg
 #print axioms PaperP1.WeightedPoissonNorm.mass_nonneg
 #print axioms PaperP1.WeightedPoissonNorm.poisson_eq_mathlib
 #print axioms PaperP1.WeightedPoissonNorm.realMass_poisson

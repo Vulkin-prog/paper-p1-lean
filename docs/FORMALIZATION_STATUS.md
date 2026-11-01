@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4978 audited theorem/lemma declarations**. This
+- The project currently has **5007 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2368,3 +2368,22 @@ confirmed independent findings remain 69. Main 6.4 remains open.
 See [complete alignment](FIXED_SOURCE_PROPAGATION_ALIGNMENT.md).
 
 Complete main 6.3 verification: Lean v4.36.0-rc2 full build passed (10043 jobs); actual axiom audit passed for all 4978 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2693 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.50 GiB. The full conditional-sum, actual ordered-distinct propagation and all-position local-defect/contact mass conclusions are proved, with original infinite joint moments and one common threshold. Coverage is 71/167 (main 25/73, companion 46/94); confirmed independent findings stay 69. No conditional-sum, propagation, contact-rank or seed-mass premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.
+
+
+## Colored replica conditional propagation checkpoint
+
+The actual finite colored prime-sign model, its exact replica-product
+identity and its compatible/incompatible nominal-row mass formula are
+proved. The complete uniform colored conditional target sum follows
+from a stronger pointwise domination by the merged homogeneous atom.
+Its threshold is independent of the coloring and small-prime threshold;
+source and target repetitions are retained. The exact conditional ratio
+is defined from actual source and intersection probabilities.
+
+T22.7 stays in progress for the conditional-expectation interpretation,
+effective relative-kernel alignment and full positive weighted moment
+bound. Coverage remains 71/167 (main 25/73, companion 46/94). Confirmed
+independent findings are now 70, including P1-MATH-0070. See
+[colored replica alignment](COLORED_REPLICAS_ALIGNMENT.md).
+
+Colored replica checkpoint verification: Lean v4.36.0-rc2 full build passed (10061 jobs); actual axiom audit passed for all 5007 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2722 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.48 GiB. Actual finite replica products, the nominal-row compatibility/kernel formula and the full finite colored conditional target sum are proved. The stronger pointwise homogeneous comparison is P1-MATH-0070. T22.7 stays in progress for conditional-expectation interpretation, effective relative-kernel alignment and the positive weighted moment bound. Coverage remains 71/167 (main 25/73, companion 46/94); confirmed independent findings are 70. No conditional-sum, independence or merging premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.
