@@ -1759,7 +1759,10 @@
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df"
+      "validation_commit": "88ce8a72b7b579b3b7442de98efd91af4b445764",
+      "validation_history": [
+        "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df"
+      ]
     }
   ]
 }

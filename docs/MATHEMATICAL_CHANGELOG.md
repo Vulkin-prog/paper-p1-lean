@@ -1856,3 +1856,7 @@ The full build passed (9,329 jobs), all 3,409 theorem/lemma declarations
 passed the actual axiom audit, and all 1,124 coverage/finding names were
 checked directly. Only propext, Classical.choice and Quot.sound occur.
 No manuscript revision or Palomar registration is made.
+
+Validated weighted canonical-pattern checkpoint (9,329 build jobs;
+3,409 audited declarations; 1,124 directly checked coverage/finding names):
+[88ce8a72b7b579b3b7442de98efd91af4b445764](https://github.com/Vulkin-prog/paper-p1-lean/commit/88ce8a72b7b579b3b7442de98efd91af4b445764).
