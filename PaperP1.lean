@@ -721,3 +721,14 @@ public import PaperP1.Asymptotics.LateWindowRank
 public import PaperP1.Asymptotics.LatePrimePopulation
 public import PaperP1.Asymptotics.LatePrimeRankDensity
 public import PaperP1.Asymptotics.LatePeelingOrder
+public import PaperP1.Affine.CanonicalCoefficientTransport
+public import PaperP1.Affine.CanonicalIndexTransport
+public import PaperP1.Affine.CanonicalPartConnected
+public import PaperP1.Affine.FinitePartImage
+public import PaperP1.Asymptotics.LateFiniteCore
+public import PaperP1.Asymptotics.LateOriginalCore
+public import PaperP1.Asymptotics.LatePeelingDensity
+public import PaperP1.Asymptotics.QuadraticComponent
+public import PaperP1.Model.CanonicalSquareClasses
+public import PaperP1.Model.CommonRunMoments
+public import PaperP1.Model.FinitePartMoments

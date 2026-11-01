@@ -1661,8 +1661,7 @@ literature assumption is introduced. See
 
 ## Actual late prime-cylinder population and the 17/12 rank budget
 
-Stable ID: `P1-ARITH-LATE-QUADRATIC-COMPONENT`. Status: **proved population,
-rank and order inputs; selected-component conclusion in progress**.
+Stable ID: `P1-ARITH-LATE-QUADRATIC-COMPONENT`. Status: **proved**, full T19.9.
 
 The raw prime support is covered by three literal finite prime intervals.
 The already proved PNT is transported through the exact divided and
@@ -1670,6 +1669,13 @@ shifted natural cutoffs, giving the source leading coefficient 17/12.
 All actual finite-character ranks are bounded internally by the actual
 raw prime support. The actual regular prime-cylinder population, common
 compatible sample, exclusion of good edges, size asymptotic and integer
-peeling order/mass error are proved. The source's final selected-component
-conclusions are not assumed or counted complete. No new external input
-or Paper C port. See [scope](QUADRATIC_COMPONENT_ALIGNMENT.md).
+peeling order/mass error are proved. Positivity and the precise limit of
+the actual peeling density are now proved. The constructed canonical
+part is proved connected, and explicit square-class and index
+equivalences preserve its nullity, connectedness and original infinite
+moments. One selected family precedes all asymptotic tolerances. Its
+size and quadratic-nullity coefficients tend to 6 log(2)/17; its centered
+mass is at least (1-2/sqrt(L)) times its positive joint mass. All source
+conclusions are proved without a target component or asymptotic premise.
+No new external input or Paper C port. See
+[exact alignment](QUADRATIC_COMPONENT_ALIGNMENT.md).

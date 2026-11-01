@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **67 / 167**: article Propositions 3.1, 4.1, 5.2, 9.1, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorem 10.1 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Proposition T1.14.
+- Numbered results completed: **68 / 167**: article Propositions 3.1, 4.1, 5.2, 9.1, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorem 10.1 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Proposition T1.14.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4671 audited theorem/lemma declarations**. This
+- The project currently has **4713 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2172,3 +2172,25 @@ and confirmed findings stay 67. See
 [actual quadratic-component inputs](QUADRATIC_COMPONENT_ALIGNMENT.md).
 
 Quadratic-component input verification: Lean v4.36.0-rc2 full build passed (9,883 jobs); actual axiom audit passed for all 4,671 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,386 distinct ledger/finding names were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.75 GiB. T19.9 remains in progress for the selected-component conclusion; coverage stays 67/167 and confirmed findings stay 67. No new external input, Paper C port, manuscript-byte change or Palomar registration.
+
+
+## Complete quadratic-nullity component under the original infinite law
+
+Full companion T19.9 is now proved. The actual peeling denominator is
+positive and has a dynamic density envelope tending to 17/(6 log 2).
+The private-rank theorem constructs an actual canonical part; minimality
+of the canonical partition proves connectedness. Explicit coefficient
+and index equivalences preserve this property, nullity and products.
+The common solving sample and exact cylinder transport identify both
+original infinite-model moments of the actual finite set of starts.
+
+One selected family precedes every epsilon tolerance. Both source
+lower-bound coefficients tend to kappa=6 log(2)/17, giving the linear
+size and quadratic-nullity bounds for that same family. Its centered
+mass is at least (1-2/sqrt(L)) times its positive joint mass. The family
+is regular, nonempty, compatible and connected, full and compatible
+nullities coincide, and no good pair is present for any threshold.
+Coverage is 68/167 (main 23/73, companion 45/94), with 67 confirmed
+improvements. See [complete alignment](QUADRATIC_COMPONENT_ALIGNMENT.md).
+
+Quadratic-component completion verification: Lean v4.36.0-rc2 full build passed (9905 jobs); actual axiom audit passed for all 4713 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2428 distinct ledger/finding declarations were checked directly by Lean. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.72 GiB. Full T19.9 is complete, with a fixed family before every epsilon and the actual infinite-model moments. Coverage is 68/167 (main 23/73, companion 45/94); confirmed improvements remain 67. No target component assumption, external input, Paper C port, manuscript-byte change or Palomar registration.

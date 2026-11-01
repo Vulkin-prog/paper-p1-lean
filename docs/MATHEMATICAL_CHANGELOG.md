@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**66 mathematical improvements are confirmed; no error in a manuscript conclusion
+**67 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -2939,3 +2939,13 @@ proved. These source inputs do not supply the final selected component
 by assumption. No new independent mathematical finding is counted;
 coverage and confirmed improvements stay 67/167 and 67. See
 [remaining component scope](QUADRATIC_COMPONENT_ALIGNMENT.md).
+
+T19.9 closure: the actual peeled canonical component is proved connected
+and transported to a finite set of original regular starts, with its
+exact infinite-model joint and centered moments and square-class nullity.
+One family is selected before every asymptotic tolerance. Both lower-bound
+coefficients tend to 6 log(2)/17, and the source centered-mass error has
+the explicit bound 2/sqrt(L). Full and compatible nullity coincide and
+there is no good pair for any threshold. Coverage is 68/167; confirmed
+improvements remain 67. No new independent finding is counted. See
+[complete component alignment](QUADRATIC_COMPONENT_ALIGNMENT.md).

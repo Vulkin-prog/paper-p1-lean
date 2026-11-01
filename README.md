@@ -4,7 +4,13 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 67 / 167 numbered results proved.**
+**Status: active formalization, 68 / 167 numbered results proved.**
+Companion T19.9 constructs one actual family of compatible connected
+regular components with quadratic nullity and no good pair. Both size
+and nullity coefficients tend to 6 log(2)/17, and the centered mass
+has the explicit relative error 2/sqrt(L). The original infinite-model
+moments and the order of all asymptotic quantifiers are retained. See
+[the complete component alignment](docs/QUADRATIC_COMPONENT_ALIGNMENT.md).
 Main Lemma 14.2 proves the sharp rational overlap bound for every integer
 triple in the source range. The unique extremal triple is (10,12,15),
 and all other primitive triples have the sharp smaller bound 11/18.
