@@ -95,3 +95,5 @@ correction. No new external assumption, Paper C port, manuscript edit
 or Palomar registration is introduced.
 
 Dense-target input verification: Lean v4.36.0-rc2 full build passed (9943 jobs); actual axiom audit passed for all 4775 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2490 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.66 GiB. Actual physical/effective relation projections, their fixed-order recovery regularization and finite support pools are proved. Main 6.2 remains in progress for the prime-group classification and actual target count. Coverage and confirmed improvements stay 69/167 and 69. No target-count premise, external assumption, Paper C port, manuscript-byte change or Palomar registration.
+
+Validated preparatory proof checkpoint: [b83bdedd5e12fc31c3f964c454392afcf9121988](https://github.com/Vulkin-prog/paper-p1-lean/commit/b83bdedd5e12fc31c3f964c454392afcf9121988).
