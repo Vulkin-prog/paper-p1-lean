@@ -685,3 +685,6 @@ Coverage remains 48 / 167, with 36 confirmed improvements. No new
 Paper C code or external mathematical assumption is introduced. Original
 sources are preserved and no Palomar registration is made. Ubuntu root
 free space is 18.16 GiB.
+
+Validated coefficient checkpoint for T2.6 and P1-MATH-0036:
+[b9ff1b2874b76ba8fe97e314db236980b2fe6e13](https://github.com/Vulkin-prog/paper-p1-lean/commit/b9ff1b2874b76ba8fe97e314db236980b2fe6e13).

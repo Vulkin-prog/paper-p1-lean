@@ -56,3 +56,6 @@ separate from the finite maximum.
 
 No external mathematical input, new Paper C port, manuscript revision
 or Palomar registration is used at this checkpoint.
+
+Validated coefficient checkpoint for T2.6 and P1-MATH-0036:
+[b9ff1b2874b76ba8fe97e314db236980b2fe6e13](https://github.com/Vulkin-prog/paper-p1-lean/commit/b9ff1b2874b76ba8fe97e314db236980b2fe6e13).
