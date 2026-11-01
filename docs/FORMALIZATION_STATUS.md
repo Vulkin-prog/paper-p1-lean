@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3677 audited theorem/lemma declarations**. This
+- The project currently has **3683 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1436,3 +1436,19 @@ selected dependency downloads. Original manuscript bytes are unchanged.
 Validated bivariate grid checkpoint (9,477 build jobs; 3,677 audited
 declarations; 1,392 directly checked coverage/finding names):
 [227b402575302cfdd178e7820c980874611a57c5](https://github.com/Vulkin-prog/paper-p1-lean/commit/227b402575302cfdd178e7820c980874611a57c5).
+
+### Primitive denominator budget in T1.4 Step 3
+
+`PrimitiveDenominators` proves that q divides R*Rprime from the two
+concrete coprime-coordinate divisibilities, using a direct gcd argument
+for arbitrary exponents. The actual signed choices cost at most
+2*tau(|R*Rprime|). The existing elementary divisor bound gives a common
+N^epsilon threshold at every fixed polynomial resultant height, before
+all coordinates, exponents and finite denominator families. This extends
+P1-MATH-0048. Actual resultant/eliminant construction and full T1.4
+remain open; coverage stays 54/167, with 48 confirmed improvements.
+
+The full build passed (9,479 jobs); all 3,683 declarations passed the
+actual axiom audit, permitting only propext, Classical.choice and
+Quot.sound. All 1,398 distinct coverage/finding names were checked
+directly by Lean. Original manuscript bytes are unchanged.

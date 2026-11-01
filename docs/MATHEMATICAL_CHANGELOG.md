@@ -2357,3 +2357,22 @@ selected dependency downloads. Original manuscript bytes are unchanged.
 Validated bivariate grid checkpoint (9,477 build jobs; 3,677 audited
 declarations; 1,392 directly checked coverage/finding names):
 [227b402575302cfdd178e7820c980874611a57c5](https://github.com/Vulkin-prog/paper-p1-lean/commit/227b402575302cfdd178e7820c980874611a57c5).
+
+### P1-MATH-0048 extension — Primitive denominator gcd and both signs
+
+The source's primitive-coordinate denominator conclusion now has a
+direct gcd proof for arbitrary exponents: q|R*a^m, q|Rprime*b^n and
+gcd(|a|,|b|)=1 imply q|R*Rprime. Its actual signed denominator count
+is <=2*tau(|R*Rprime|), uniformly subpolynomial at fixed polynomial
+product height. A single threshold precedes all primitive coordinates,
+exponents and finite denominator families. No coordinate-height bound
+is needed for this arithmetic ingredient. Evidence: all six declarations
+in `PrimitiveDenominators`, including `dvd_product_int`,
+`finite_denominator_count` and `polynomial_height_count`.
+Actual resultant/eliminant construction and the full determinant
+argument remain open. No additional numbered result is claimed.
+
+The full build passed (9,479 jobs); all 3,683 declarations passed the
+actual axiom audit, permitting only propext, Classical.choice and
+Quot.sound. All 1,398 distinct coverage/finding names were checked
+directly by Lean. Original manuscript bytes are unchanged.

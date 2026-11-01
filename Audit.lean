@@ -2504,6 +2504,12 @@ import PaperP1
 #print axioms PaperP1.PolynomialPellCount.four_mul_pellUnitOrbitEnvelope_le_rpow_eventually
 #print axioms PaperP1.PolynomialPellCount.generalizedPellBox_atMost_rpow_eventually
 #print axioms PaperP1.PolynomialPellCount.pellBox_atMost_rpow_eventually
+#print axioms PaperP1.PrimitiveDenominators.dvd_product_nat
+#print axioms PaperP1.PrimitiveDenominators.dvd_product_int
+#print axioms PaperP1.PrimitiveDenominators.mem_signedDivisors
+#print axioms PaperP1.PrimitiveDenominators.signedDivisors_card
+#print axioms PaperP1.PrimitiveDenominators.finite_denominator_count
+#print axioms PaperP1.PrimitiveDenominators.polynomial_height_count
 #print axioms PaperP1.QuadraticIdealDivisors.map_span_int_eq_span_intCast
 #print axioms PaperP1.QuadraticIdealDivisors.span_intCast_eq_span_natAbs
 #print axioms PaperP1.QuadraticIdealDivisors.span_natPrime_isMaximal

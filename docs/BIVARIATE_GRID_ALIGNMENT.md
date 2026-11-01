@@ -47,8 +47,8 @@ height at most the first is contained in this square box.
 This gives a direct coefficient-independent alternative to Step 3's
 manual exceptional-full-fibre argument once the eliminant and its
 positive degree have been constructed. The source's integer RHS is
-nonzero when h and q are nonzero. Those construction and denominator
-facts are not assumed to establish completed T1.4 coverage: this
+nonzero when h and q are nonzero. The actual resultant and eliminant construction
+is not assumed to establish completed T1.4 coverage: this
 checkpoint only proves the independent algebraic ingredient.
 
 P1-MATH-0048 records the proof simplification and explicit finite bound.
@@ -73,3 +73,29 @@ selected dependency downloads. Original manuscript bytes are unchanged.
 Validated bivariate grid checkpoint (9,477 build jobs; 3,677 audited
 declarations; 1,392 directly checked coverage/finding names):
 [227b402575302cfdd178e7820c980874611a57c5](https://github.com/Vulkin-prog/paper-p1-lean/commit/227b402575302cfdd178e7820c980874611a57c5).
+
+## Proved primitive denominator arithmetic
+
+`PrimitiveDenominators.dvd_product_int` proves the exact arithmetic
+implication from gcd(|a|,|b|)=1, q dividing R*a^m and q dividing
+Rprime*b^n to q dividing R*Rprime. Multiplying each divisibility by the
+other resultant and taking a gcd proves it directly; arbitrary natural
+exponents are allowed. This replaces the source's prime-by-prime step.
+
+The explicit signed divisor set contains every actual denominator; its
+cardinality is at most 2*tau(|R*Rprime|). Nonzero R,Rprime are explicit.
+`polynomial_height_count` uses the already proved elementary divisor
+bound to obtain a common N^epsilon threshold whenever the product has
+fixed polynomial height. It precedes every primitive coordinate pair,
+every exponent and every finite family satisfying the divisibilities.
+No coordinate height bound is required for this arithmetic ingredient.
+
+The nonzero resultants, their two concrete divisibility identities and
+the eliminant polynomial are still to be constructed. These remain
+separate open steps of T1.4. This extension belongs to P1-MATH-0048;
+numbered coverage remains 54/167.
+
+The full build passed (9,479 jobs); all 3,683 declarations passed the
+actual axiom audit, permitting only propext, Classical.choice and
+Quot.sound. All 1,398 distinct coverage/finding names were checked
+directly by Lean. Original manuscript bytes are unchanged.

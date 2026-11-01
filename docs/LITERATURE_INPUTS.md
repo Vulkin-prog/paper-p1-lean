@@ -1180,3 +1180,17 @@ Stable ID: `P1-ALG-BIVARIATE-GRID-COUNT`. Status: **Mathlib and proved P1 wrappe
   literature hypothesis or Paper C port is introduced. The proof
   simplification is P1-MATH-0048. See
   [alignment](BIVARIATE_GRID_ALIGNMENT.md).
+
+## Primitive eliminant denominator arithmetic
+
+Stable ID: `P1-ALG-PRIMITIVE-DENOMINATORS`. Status: **proved arithmetic ingredient**.
+
+- Exact gcd and natural-absolute-value identities prove q divides R*Rprime
+  from the two primitive-coordinate divisibilities, uniformly in exponents.
+  An explicit signed divisor set gives the finite 2*tau bound.
+- The already audited elementary divisor-subpolynomial proof gives the
+  polynomial-height count with one threshold before all coordinates,
+  exponents and finite denominator families.
+- Actual resultants and their identities still have to be constructed;
+  full T1.4 remains in progress. No new Paper C port or unproved
+  literature input is introduced. This extends P1-MATH-0048.
