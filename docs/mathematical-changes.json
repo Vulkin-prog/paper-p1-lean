@@ -1409,6 +1409,64 @@
         "status": "not_integrated"
       },
       "validation_commit": "df34686b343f5297c181e6150e21834acc335ad8"
+    },
+    {
+      "id": "P1-MATH-0040",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "companion",
+        "label": "p1:arith:fixed-channel-rank",
+        "number": "T2.6",
+        "page": 22,
+        "source": "companion_sections/supplemental_arithmetic.tex",
+        "line": 209,
+        "version": "P1 V1.6",
+        "statement_sha256": "8dd614c19e50df20ed1eb9f3ab37c07386f1ce3665c3499e26d83211ceab60b9"
+      },
+      "original_assumption": "The proofs of T2.6 and T1.11 use rational separation and B^{O(1)} endpoint-source and target counts after writing an aligned target as z=(c*t+h)/d with polynomially bounded parameters.",
+      "finding": "For actual dyadic source labels a*t,b*t, d<=H and |h|<=H, the finite condition N>a*2H*(B+1)+B implies weak dyadic fraction bounds. Equalities force |a*t-N|<=B+H or |b*t-2N|<=B+2H. A literal source exception family containing these endpoints has cardinality <=B^2*(2(a+b)*(B+2H)+2). For H<=B^J with J>=1 this is <=(6(a+b)+2)*B^(J+2). Every bounded affine target belongs to an explicitly decoded pool of size <=2*a*H^2*(2H+1), hence <=6*a*B^(3J) when H>=1. Outside the source exception family, actual separated target matches are <=B*gamma+3. A single critical-band threshold is chosen before all source/target data.",
+      "evidence": [
+        "PaperP1.ActualDyadicInterior.source_parameter_bounds",
+        "PaperP1.ActualDyadicInterior.parameter_large",
+        "PaperP1.ActualDyadicInterior.ratio_interior",
+        "PaperP1.DyadicEndpointPairs.integer_interval_card",
+        "PaperP1.DyadicEndpointPairs.endpoint_filter_card",
+        "PaperP1.DyadicEndpointPairs.mem_sourcePairs",
+        "PaperP1.DyadicEndpointPairs.first_anchor_injective",
+        "PaperP1.DyadicEndpointPairs.second_anchor_injective",
+        "PaperP1.DyadicEndpointPairs.first_card",
+        "PaperP1.DyadicEndpointPairs.second_card",
+        "PaperP1.DyadicEndpointPairs.exceptional_card",
+        "PaperP1.DyadicEndpointPairs.mem_exceptional_of_parameter",
+        "PaperP1.DyadicMatchBound.ratio_outside_exceptional",
+        "PaperP1.DyadicMatchBound.separated_bound",
+        "PaperP1.DyadicMatchBound.compatible_bound",
+        "PaperP1.DyadicTargetCount.codes_card",
+        "PaperP1.DyadicTargetCount.pool_card",
+        "PaperP1.DyadicTargetCount.mem_pool",
+        "PaperP1.DyadicTargetCount.actual_target_mem_pool",
+        "PaperP1.DyadicTargetCount.pool_card_cubic",
+        "PaperP1.DyadicTargetCount.pool_card_polynomial",
+        "PaperP1.DyadicTargetInterior.scaled_abs_bound",
+        "PaperP1.DyadicTargetInterior.weak_ratio_bounds",
+        "PaperP1.DyadicTargetInterior.lower_endpoint",
+        "PaperP1.DyadicTargetInterior.upper_endpoint",
+        "PaperP1.DyadicTargetInterior.strict_interior_of_no_endpoints",
+        "PaperP1.PolynomialEndpointBudget.source_size_bound",
+        "PaperP1.PolynomialEndpointBudget.exceptional_polynomial",
+        "PaperP1.SeparatedTargetMatches.match_bound",
+        "PaperP1.CriticalPolynomialScale.polynomial_lt_scale",
+        "PaperP1.CriticalPolynomialScale.source_size_eventually",
+        "PaperP1.DyadicMatchingArithmetic.uniform_core"
+      ],
+      "proposed_revision": "Replace the implicit rational-separation and polynomial counts by the finite integer gap lemma, the explicit endpoint strips and the literal source and target pools. State their polynomial exponents in terms of a common denominator/displacement height exponent. Keep the construction of bounded affine data from geometric alignment and the actual quotient-rank bridge as separate steps.",
+      "impact": "Makes the dyadic counting and fraction-interior part quantitative and uniform on actual labels and actual matching sets. Deterministic separation suffices; positive joint mass is only one way to obtain it. The theorem assumes explicit bounded affine target data and does not yet prove their construction from the paper's geometric alignment predicate. T1.11 and T2.6 remain in_progress; no numbered rank result is counted complete and no optimality of the finite constants is claimed.",
+      "validation": "Full Lean v4.36.0-rc2 build (9271 jobs) and actual axiom audit of all 3250 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 965 distinct coverage/finding declaration names were checked directly by Lean. T1.11 and T2.6 remain in_progress; coverage is 49/167.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

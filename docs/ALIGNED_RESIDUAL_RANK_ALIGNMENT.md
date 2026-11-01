@@ -114,9 +114,11 @@ Separation, compatibility and local regularity are unnecessary throughout.
 ## Remaining work beyond T1.9
 
 For T1.11 and T2.6, the generic residual arithmetic on true subsets of
-two progressions is proved, but the target/old quotient-rank bridge,
-endpoint exceptions and old-information extension remain open. Those
-two statements remain in progress. No new Paper C port, external
+two progressions is proved. The [later dyadic checkpoint](DYADIC_MATCHING_ALIGNMENT.md)
+closes explicit endpoint and target counts for bounded affine data. The
+construction of those data from geometric alignment, the target/old
+quotient-rank bridge and the old-information extension remain open.
+Those two statements remain in progress. No new Paper C port, external
 mathematical assumption, manuscript revision or Palomar registration
 is introduced.
 

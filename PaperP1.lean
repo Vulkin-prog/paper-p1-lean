@@ -282,3 +282,12 @@ public import PaperP1.Arithmetic.IntervalResidualKernel
 public import PaperP1.Asymptotics.AlignedPairTheorem
 public import PaperP1.Asymptotics.CriticalWindowGeometry
 public import PaperP1.Asymptotics.FixedHeightResidual
+public import PaperP1.Arithmetic.ActualDyadicInterior
+public import PaperP1.Arithmetic.DyadicEndpointPairs
+public import PaperP1.Arithmetic.DyadicMatchBound
+public import PaperP1.Arithmetic.DyadicTargetCount
+public import PaperP1.Arithmetic.DyadicTargetInterior
+public import PaperP1.Arithmetic.PolynomialEndpointBudget
+public import PaperP1.Arithmetic.SeparatedTargetMatches
+public import PaperP1.Asymptotics.CriticalPolynomialScale
+public import PaperP1.Asymptotics.DyadicMatchingArithmetic

@@ -933,3 +933,17 @@ with its constant before the critical-band width. The full-kernel and
 full-pair-deficiency rates follow. Target quotient-rank bridges for
 T1.11/T2.6 remain unresolved. See
 [alignment](ALIGNED_RESIDUAL_RANK_ALIGNMENT.md).
+
+
+## Bounded-affine dyadic matching arithmetic
+
+Stable ID: `P1-ARITH-DYADIC-MATCHING`. Status: **proved finite/uniform core**.
+Actual source labels and explicit bounded affine target data give finite
+integer fraction separation, literal endpoint-source and decoded target
+pools, explicit polynomial counts and one common critical-band threshold.
+The actual B*gamma+3 matching bound needs deterministic separation only.
+The construction of those data from geometric alignment and the actual
+target quotient-rank bridge remain unresolved. No rational-separation,
+curve-counting or rank estimate is assumed. No new Paper C port or external
+mathematical hypothesis is introduced. See
+[alignment](DYADIC_MATCHING_ALIGNMENT.md).

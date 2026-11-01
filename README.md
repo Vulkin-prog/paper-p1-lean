@@ -19,6 +19,9 @@ See [finite matching checkpoint](docs/FIXED_CHANNEL_MATCHES_ALIGNMENT.md).
 Actual compatible target matches now satisfy B*gamma+3, including the
 physical fractions with the sharper B/b+2 bound. See
 [actual matching checkpoint](docs/ACTUAL_TARGET_MATCHES_ALIGNMENT.md).
+The bounded-affine dyadic core now has explicit endpoint-source and target
+pool counts with a common threshold. See
+[partial alignment](docs/DYADIC_MATCHING_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,
 with deduplicated normalized values, an explicit finite rank bound and at
 most (L+1)^2 one-parameter motifs. See

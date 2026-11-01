@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3218 audited theorem/lemma declarations**. This
+- The project currently has **3250 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -792,3 +792,27 @@ free space is 18.08 GiB.
 
 Validated complete companion T1.9:
 [6165382c14d6f8e653ddec27accb9c042628ae10](https://github.com/Vulkin-prog/paper-p1-lean/commit/6165382c14d6f8e653ddec27accb9c042628ae10).
+
+
+## Explicit dyadic source exceptions and target pools — partial T2.6/T1.11
+
+The bounded-affine matching core now has finite integer separation,
+actual endpoint-source sets, decoded target pools and explicit polynomial
+counts. With H<=B^J and fixed J>=1, the source exception count is at
+most (6(a+b)+2)*B^(J+2), and the pool for one fixed source parameter
+has at most 6aB^(3J) targets. A common critical-band threshold is chosen
+before all source and target data. Deterministic separation suffices for
+the actual B*gamma+3 matching count; the compatible theorem derives it
+from positive actual joint mass. This is P1-MATH-0040. See
+[alignment](DYADIC_MATCHING_ALIGNMENT.md).
+
+The bounded affine representation is explicit input data. Its construction
+from the geometric alignment predicate, the actual quotient-rank bridge
+and the old-information extension remain open. T1.11 and T2.6 are not
+counted complete. Coverage remains 49 / 167, with 40 confirmed
+improvements. The full build passed (9,271 jobs); all 3,250 theorem/lemma
+declarations passed the actual axiom audit with only propext,
+Classical.choice and Quot.sound, and all 965 coverage/finding names were
+checked directly by Lean. No new Paper C source or external mathematical
+hypothesis is introduced. Original manuscript bytes are preserved and no
+Palomar registration is made. Ubuntu root free space is 18.05 GiB.

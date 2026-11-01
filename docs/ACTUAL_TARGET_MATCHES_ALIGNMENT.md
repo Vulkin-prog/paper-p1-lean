@@ -65,3 +65,10 @@ unchanged and no Palomar registration is made.
 
 Validated actual matching checkpoint for T2.6/T1.11 and P1-MATH-0038:
 [4212bf9ec45186af0f1ce85ed9a6fea00542775e](https://github.com/Vulkin-prog/paper-p1-lean/commit/4212bf9ec45186af0f1ce85ed9a6fea00542775e).
+
+
+Later extension: deterministic separation now suffices for this actual
+matching bound. Explicit dyadic endpoint-source families and target pools,
+with one common critical-band threshold for bounded affine data, are proved
+in the [dyadic checkpoint](DYADIC_MATCHING_ALIGNMENT.md). The actual target
+quotient-rank bridge remains open.

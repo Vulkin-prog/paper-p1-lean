@@ -1442,7 +1442,8 @@ Validated finite matching checkpoint for T2.6/T1.11 and P1-MATH-0037:
   true windows. State the explicit finite constants; no optimality of
   these additive constants is asserted.
 
-Residual normalized rank and endpoint estimates remain open. Neither
+At this initial checkpoint residual normalized rank and endpoint estimates
+remained open. Later aligned and dyadic checkpoints below extend it. Neither
 T2.6 nor T1.11 is counted complete. The result counts actual positions
 and does not assert that the count equals a rank loss. See
 [alignment](ACTUAL_TARGET_MATCHES_ALIGNMENT.md).
@@ -1528,3 +1529,46 @@ is made. The original P1-MATH-0039 validation remains historical.
 
 Validated complete companion T1.9:
 [6165382c14d6f8e653ddec27accb9c042628ae10](https://github.com/Vulkin-prog/paper-p1-lean/commit/6165382c14d6f8e653ddec27accb9c042628ae10).
+
+
+## P1-MATH-0040 — Explicit finite dyadic exceptions and target counts
+
+- Location: proofs of companion T2.6, page 22, and T1.11, page 15.
+  Primary original statement hash:
+  `8dd614c19e50df20ed1eb9f3ab37c07386f1ce3665c3499e26d83211ceab60b9`.
+- Original form: rational separation at polynomial height, with
+  B^{O(1)} endpoint-source and target counts.
+- Improvement: t>2H(B+1) gives the weak dyadic fraction bounds for
+  actual source labels and target equation d*z=c*t+h, d<=H, |h|<=H.
+  Endpoint equalities force strips of radius B+2H. A literal containing
+  source family has at most B^2*(2(a+b)*(B+2H)+2) pairs. If H<=B^J,
+  J>=1, this is at most (6(a+b)+2)*B^(J+2). The decoded target pool
+  for one fixed source parameter has at most 6aB^(3J) targets.
+- Evidence: `DyadicTargetInterior.weak_ratio_bounds`, `lower_endpoint`,
+  `upper_endpoint`, `ActualDyadicInterior.parameter_large`,
+  `DyadicEndpointPairs.exceptional_card`,
+  `PolynomialEndpointBudget.exceptional_polynomial`,
+  `DyadicTargetCount.actual_target_mem_pool`, `pool_card_polynomial`,
+  `CriticalPolynomialScale.source_size_eventually` and
+  `DyadicMatchingArithmetic.uniform_core`.
+- Actual matching bridge: `SeparatedTargetMatches.match_bound` and
+  `DyadicMatchBound.separated_bound` prove B*gamma+3 outside the
+  literal exception family using deterministic separation. Positive
+  actual joint mass provides one sufficient separation condition.
+- Suggested revision: state these finite integer inequalities, actual
+  exception sets and polynomial exponents before the asymptotic rank
+  argument. A separate numerator-height assumption is unnecessary for
+  the target pool: c<=2a*d follows from the weak dyadic bound.
+
+The theorem assumes explicit bounded affine target data. Their construction
+from geometric alignment, the actual quotient-rank bridge and old prime
+information remain open. T1.11 and T2.6 are not counted complete. No
+optimality of the finite constants is asserted. See
+[alignment](DYADIC_MATCHING_ALIGNMENT.md).
+
+The full Lean v4.36.0-rc2 build passed (9,271 jobs); all 3,250 theorem/lemma
+declarations passed the actual axiom audit with only `propext`,
+`Classical.choice` and `Quot.sound`, and all 965 distinct coverage/finding
+names were checked directly by Lean. Coverage remains 49 / 167, with
+40 confirmed improvements. Original source bytes are preserved; no
+manuscript revision or Palomar registration is made.

@@ -65,7 +65,10 @@ bridge from actual target/old-value coincidences into these classes,
 the true-window treatment of physical fractions, the residual
 normalized rank and the endpoint-source count were separate work at this checkpoint. The actual-value and physical-window
 bridges are now proved in the [later checkpoint](ACTUAL_TARGET_MATCHES_ALIGNMENT.md).
-Residual normalized rank and endpoint estimates remain open.
+The actual target quotient-rank bridge remains open. The later
+[aligned-rank](ALIGNED_RESIDUAL_RANK_ALIGNMENT.md) and
+[dyadic](DYADIC_MATCHING_ALIGNMENT.md) checkpoints prove the residual
+arithmetic and explicit endpoint counts for bounded affine target data.
 Consequently it supplies no complete target rank-loss bound, no Palm
 mean estimate and no extra completed numbered result. In particular,
 the class count is not assumed to equal an actual rank loss.
