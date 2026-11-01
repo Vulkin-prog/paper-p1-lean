@@ -73,3 +73,9 @@ No revised manuscript or Palomar registration is made.
 
 Validated implementation of article Lemma 3.5 and P1-MATH-0035:
 [37c99c7ea71d70271902fd12d1b52494646ec919](https://github.com/Vulkin-prog/paper-p1-lean/commit/37c99c7ea71d70271902fd12d1b52494646ec919).
+
+A later [exact unit-intersection extension](EXACT_UNIT_INTERSECTION_ALIGNMENT.md)
+parameterizes the actual common class by even unit coefficients and gives
+exact intersection/pair-loss ranks for every unit count under private
+coordinates. It does not remove the shared-value premise from the full
+union-image compression identity in this document.

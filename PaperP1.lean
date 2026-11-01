@@ -320,3 +320,7 @@ public import PaperP1.Asymptotics.SourceTranslationCount
 public import PaperP1.Arithmetic.WeightedTranslationError
 public import PaperP1.Arithmetic.ChannelWordHosts
 public import PaperP1.Asymptotics.ChannelWordHostCount
+public import PaperP1.Algebra.FiniteIntersectionSums
+public import PaperP1.Algebra.EvenReindex
+public import PaperP1.Arithmetic.PrivateEvenIntersection
+public import PaperP1.Arithmetic.UnitIntersectionEquiv

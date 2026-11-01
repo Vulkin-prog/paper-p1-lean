@@ -1031,3 +1031,13 @@ The result is uniform through reduced height B^3. No external summation
 or mass estimate is assumed. Identification with actual complete unit
 relations/Fourier contributions and probabilities, and defective sources,
 remain open. See the [weighted alignment](CHANNEL_WORD_HOSTS_ALIGNMENT.md).
+
+## Exact unit coefficients on private normalized values
+
+The actual private value-intersection equality, zero-sum coefficient
+transport, normalized unit/value bijection and explicit even-unit/common-class
+linear equivalence are proved by finite linear algebra and literal sums.
+No external dimension or relation-space identification is assumed.
+The zero/singleton cases are included. Affine character signs and the
+probability/mass bridge remain separate. No new Paper C source is used.
+See the [coefficient alignment](EXACT_UNIT_INTERSECTION_ALIGNMENT.md).

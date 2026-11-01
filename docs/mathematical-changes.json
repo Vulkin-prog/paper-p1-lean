@@ -1177,7 +1177,7 @@
         "statement_sha256": "4b5ad33b5095a54af69a7b243e7e6c652772ff666d9271ec067e63cfe9fb126d"
       },
       "original_assumption": "Lemma 3.5 is stated for good edges in the leading channels: compatible dependent regular pairs, with private prime coordinates on their distinct normalized values. It gives a rank lower bound with O(1), a width O(B) and B^{O(1)} endpoint patterns.",
-      "finding": "Finite compression holds for arbitrary positive coprime coefficients a<=b as soon as one normalized value is shared and the distinct normalized values have private parity coordinates. Affine compatibility, dependence, physical separation and a prior local-regularity assumption are unnecessary. Private coordinates already imply both local ranks equal L. The actual compressed rank is |U|-1 and at least (2-1/b)*L-1. There are at most (L+1)^2 fixed integer motifs, all in [-bL,bL]; one fixed-pattern integer anchor determines both centres.",
+      "finding": "Finite compression holds for arbitrary positive coprime coefficients a<=b as soon as one normalized value is shared and the distinct normalized values have private parity coordinates. Affine compatibility, dependence, physical separation and a prior local-regularity assumption are unnecessary. Private coordinates already imply both local ranks equal L. The actual compressed rank is |U|-1 and at least (2-1/b)*L-1. There are at most (L+1)^2 fixed integer motifs, all in [-bL,bL]; one fixed-pattern integer anchor determines both centres. The private-value intersection now has an explicit coefficient classification: space(S) intersect space(T)=space(S intersect T), and even coefficients on the true intersection are linearly equivalent to the actual common class space. Actual normalized units are bijective with the deduplicated intersection values. For positive a,b and centres at least two, even selections of the actual units are therefore linearly equivalent to S_x intersect S_y; its rank and the full pair deficiency both equal (u-1)_+, including zero and one unit. Coprimality, alignment height, separation and affine compatibility are unnecessary for this private-intersection classification.",
       "evidence": [
         "PaperP1.EvenImage.image_eq_span_differences",
         "PaperP1.FiniteEvenSquareClasses.space_union",
@@ -1189,11 +1189,27 @@
         "PaperP1.NormalizedMotifs.family_card",
         "PaperP1.NormalizedMotifs.anchor_injective",
         "PaperP1.GoodEdgeCompression.finite_compression",
-        "PaperP1.GoodEdgeCompression.main_3_5"
+        "PaperP1.GoodEdgeCompression.main_3_5",
+        "PaperP1.FiniteIntersectionSums.restrict_sum",
+        "PaperP1.EvenReindex.sum_comp_symm",
+        "PaperP1.EvenReindex.reindex_apply",
+        "PaperP1.EvenReindex.combination_reindex",
+        "PaperP1.PrivateEvenIntersection.space_mono",
+        "PaperP1.PrivateEvenIntersection.space_inter",
+        "PaperP1.PrivateEvenIntersection.intersectionMap_injective",
+        "PaperP1.PrivateEvenIntersection.intersectionMap_surjective",
+        "PaperP1.PrivateEvenIntersection.intersection_rank",
+        "PaperP1.PrivateEvenIntersection.actual_intersection_rank",
+        "PaperP1.PrivateEvenIntersection.actual_pair_loss",
+        "PaperP1.UnitIntersectionEquiv.unitValue_injective",
+        "PaperP1.UnitIntersectionEquiv.unitValue_surjective",
+        "PaperP1.UnitIntersectionEquiv.valueEquiv_apply_val",
+        "PaperP1.UnitIntersectionEquiv.unitIntersectionEquiv_apply",
+        "PaperP1.UnitIntersectionEquiv.unitClassMap_injective"
       ],
-      "proposed_revision": "State the finite compression for positive coprime coefficients a<=b, a shared normalized value and private coordinates, and then specialize to good edges. Replace the unspecified finite losses and offset count by rank >=(2-1/b)*L-1 and at most (L+1)^2 motifs in [-bL,bL]. State explicitly that the anchor determines both centres and that local regularity follows from the private-coordinate condition.",
-      "impact": "Gives explicit finite constants and patterns, extends the compression beyond compatible dependent separated pairs and makes the deduplication and single-parameter assertion precise. For fixed a,b the width remains logarithmic. No good-edge count, mass asymptotic or optimality claim is added.",
-      "validation": "Full Lean v4.36.0-rc2 build (9191 jobs) and actual axiom audit of all 3078 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 793 distinct coverage/finding declaration names were checked directly by Lean.",
+      "proposed_revision": "State the finite compression for positive coprime coefficients a<=b, a shared normalized value and private coordinates, and then specialize to good edges. Replace the unspecified finite losses and offset count by rank >=(2-1/b)*L-1 and at most (L+1)^2 motifs in [-bL,bL]. State explicitly that the anchor determines both centres and that local regularity follows from the private-coordinate condition. State the exact private-intersection coefficient equivalence and rank identities separately, including zero and one exact unit. Keep the shared-value premise for the full union-compression image identity; the zero-unit intersection result does not remove that premise.",
+      "impact": "Gives explicit finite constants and patterns, extends the compression beyond compatible dependent separated pairs and makes the deduplication and single-parameter assertion precise. For fixed a,b the width remains logarithmic. No good-edge count, mass asymptotic or optimality claim is added. The new classification gives actual coefficients and a linear equivalence, not merely equal dimensions. It extends the private intersection statement to all unit counts without coprimality. The full union-image compression still uses a shared value. Affine character signs, relation-word enumeration and the probability/mass bridge remain open.",
+      "validation": "Full Lean v4.36.0-rc2 build (9337 jobs), actual axiom audit of all 3425 theorem/lemma declarations, and direct Lean checks of all 1140 distinct coverage/finding names. Only propext, Classical.choice and Quot.sound occur. The original finite compression and new exact private-intersection/unit coefficient equivalences are covered, including all unit counts and exact pair loss. Full union-image compression retains its shared-value premise. Affine character signs and the probability/mass bridge remain open.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"

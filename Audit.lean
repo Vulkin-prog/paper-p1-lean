@@ -299,6 +299,9 @@ import PaperP1
 #print axioms PaperP1.EvenImageDefect.dimension_le_image_add_kernel
 #print axioms PaperP1.EvenImageMap.evenMap_map
 #print axioms PaperP1.EvenImageMap.image_map
+#print axioms PaperP1.EvenReindex.sum_comp_symm
+#print axioms PaperP1.EvenReindex.reindex_apply
+#print axioms PaperP1.EvenReindex.combination_reindex
 #print axioms PaperP1.EvenSupportRank.sumMap_apply
 #print axioms PaperP1.EvenSupportRank.kernel_sum_finrank
 #print axioms PaperP1.EvenSupportRank.finrank_le_of_supported_even
@@ -318,6 +321,7 @@ import PaperP1
 #print axioms PaperP1.Algebra.centered_product_inclusion_exclusion
 #print axioms PaperP1.Algebra.centeredMoment_eq_centeredCoefficient
 #print axioms PaperP1.Algebra.finite_weighted_product_expansion
+#print axioms PaperP1.FiniteIntersectionSums.restrict_sum
 #print axioms PaperP1.FiniteSetRelativeRank.relative_rank_le_even_dimension
 #print axioms PaperP1.FiniteSetRelativeRank.matches_add_residual
 #print axioms PaperP1.FiniteSetRelativeRank.matches_add_residual_of_old_le
@@ -1258,6 +1262,13 @@ import PaperP1
 #print axioms PaperP1.PrivateEvenImages.coefficient_zero_of_absent
 #print axioms PaperP1.PrivateEvenImages.disjoint_of_inter_card_le_one
 #print axioms PaperP1.PrivateEvenImages.two_le_inter_card
+#print axioms PaperP1.PrivateEvenIntersection.space_mono
+#print axioms PaperP1.PrivateEvenIntersection.space_inter
+#print axioms PaperP1.PrivateEvenIntersection.intersectionMap_injective
+#print axioms PaperP1.PrivateEvenIntersection.intersectionMap_surjective
+#print axioms PaperP1.PrivateEvenIntersection.intersection_rank
+#print axioms PaperP1.PrivateEvenIntersection.actual_intersection_rank
+#print axioms PaperP1.PrivateEvenIntersection.actual_pair_loss
 #print axioms PaperP1.PrivateWindowPrimes.not_dvd_of_dvd_and_dist_lt
 #print axioms PaperP1.PrivateWindowPrimes.not_dvd_other_vertex
 #print axioms PaperP1.PrivateWindowPrimes.parity_other_vertex_zero
@@ -1526,6 +1537,11 @@ import PaperP1
 #print axioms PaperP1.UnionMatchDensity.reciprocal_density_identity
 #print axioms PaperP1.UnionMatchDensity.abs_match_error
 #print axioms PaperP1.UnionMatchDensity.window_match_upper
+#print axioms PaperP1.UnitIntersectionEquiv.unitValue_injective
+#print axioms PaperP1.UnitIntersectionEquiv.unitValue_surjective
+#print axioms PaperP1.UnitIntersectionEquiv.valueEquiv_apply_val
+#print axioms PaperP1.UnitIntersectionEquiv.unitIntersectionEquiv_apply
+#print axioms PaperP1.UnitIntersectionEquiv.unitClassMap_injective
 #print axioms PaperP1.WeightedDefectCounting.mem_positiveValuesForSupport_iff
 #print axioms PaperP1.WeightedDefectCounting.mem_positiveDefectValues_iff
 #print axioms PaperP1.WeightedDefectCounting.positiveValuesForSupport_subset_image_Icc

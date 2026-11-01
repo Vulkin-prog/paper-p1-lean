@@ -1860,3 +1860,32 @@ No manuscript revision or Palomar registration is made.
 Validated weighted canonical-pattern checkpoint (9,329 build jobs;
 3,409 audited declarations; 1,124 directly checked coverage/finding names):
 [88ce8a72b7b579b3b7442de98efd91af4b445764](https://github.com/Vulkin-prog/paper-p1-lean/commit/88ce8a72b7b579b3b7442de98efd91af4b445764).
+
+## P1-MATH-0035 extended — exact common classes and even-unit coefficients
+
+For actual finite private values S union T, the equality
+space(S) cap space(T)=space(S cap T) is now proved. Its actual even
+coefficient map is bijective, yielding a linear equivalence. A finite
+intersection-restriction sum lemma and an explicit zero-sum reindexing
+transport the coefficients, rather than infer equality from dimensions.
+
+Actual normalized units are proved bijective with the true deduplicated
+intersection values. Hence, for positive coefficients and centres at least
+two, the actual private pair intersection is linearly equivalent to even
+selections of those units. Its rank and the full pair deficiency both
+equal (u-1)_+, including zero and one unit. This classification needs
+neither coprimality nor alignment height, separation or event compatibility.
+The full union-image compression identity retains its shared-value premise.
+
+Evidence: `FiniteIntersectionSums.restrict_sum`, `PrivateEvenIntersection.space_inter`,
+`intersectionMap_injective`, `intersectionMap_surjective`,
+`actual_intersection_rank`, `actual_pair_loss`, `EvenReindex.combination_reindex`,
+`UnitIntersectionEquiv.unitValue_injective`, `unitValue_surjective`,
+`unitIntersectionEquiv_apply` and `unitClassMap_injective`.
+This extends the existing compression improvement, keeping 44 confirmed
+findings. Affine characters, word enumeration, actual probability and
+normalization errors remain open. Coverage stays 52/167. The full build
+passed (9,337 jobs), all 3,425 theorem/lemma declarations passed the actual
+axiom audit, and all 1,140 coverage/finding names were checked directly.
+Only propext, Classical.choice and Quot.sound occur. No manuscript revision
+or Palomar registration is made.

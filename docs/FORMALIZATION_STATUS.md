@@ -1056,3 +1056,31 @@ is 17.96 GiB.
 Validated weighted canonical-pattern checkpoint (9,329 build jobs;
 3,409 audited declarations; 1,124 directly checked coverage/finding names):
 [88ce8a72b7b579b3b7442de98efd91af4b445764](https://github.com/Vulkin-prog/paper-p1-lean/commit/88ce8a72b7b579b3b7442de98efd91af4b445764).
+
+## Exact private intersection and actual even-unit coefficient equivalence
+
+`PrivateEvenIntersection.space_inter` identifies the actual private common
+class space with the even image of the true value intersection. The proof
+restricts actual coefficients and preserves their total sum and combination.
+An explicit linear equivalence is constructed, with injectivity and
+surjectivity proved separately. `UnitIntersectionEquiv` gives the actual
+unit/value bijection and transports zero-sum coefficients to the actual
+intersection S_x cap S_y. Its forward prime-parity combination is identified
+exactly, not merely by rank.
+
+Under private normalized coordinates, the actual intersection rank and
+full pair deficiency both equal (u-1)_+, including u=0 or 1. Coprimality,
+height, separation and affine compatibility are unnecessary for this
+classification. The full union-image compression still needs a shared
+value. This extends P1-MATH-0035; there are still 44 confirmed improvements.
+See the [exact coefficient alignment](EXACT_UNIT_INTERSECTION_ALIGNMENT.md).
+
+Coverage remains **52 / 167**. Affine character signs, selected-unit word
+enumeration into canonical patterns, actual Fourier/probability identification
+and defective-normalization removal remain open for article 3.3/T2.5.
+The full build passed (9,337 jobs), all 3,425 theorem/lemma declarations
+passed the actual axiom audit, and all 1,140 coverage/finding names were
+checked directly by Lean. Only propext, Classical.choice and Quot.sound
+occur. Original sources are preserved. No new external mathematical input,
+Paper C port, manuscript revision or Palomar registration is introduced.
+Ubuntu root free space is 17.95 GiB.

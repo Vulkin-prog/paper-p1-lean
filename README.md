@@ -29,6 +29,9 @@ See the [translation checkpoint](docs/SOURCE_TRANSLATIONS_ALIGNMENT.md).
 The weighted canonical-pattern translation aggregate now retains the
 signed main term N*w*S with explicit error <=6B*U. See the
 [weighted checkpoint](docs/CHANNEL_WORD_HOSTS_ALIGNMENT.md).
+The private pair intersection now has an explicit linear parameterization
+by actual even unit selections, including zero and one unit. See the
+[coefficient equivalence](docs/EXACT_UNIT_INTERSECTION_ALIGNMENT.md).
 The full pair profile and fixed-channel mass remain in progress. See the
 [finite calculation](docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,
