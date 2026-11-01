@@ -92,3 +92,7 @@ The full build passed (9,441 jobs); the actual audit passed for all
 3,655 theorem/lemma declarations, permitting only propext, Classical.choice
 and Quot.sound. All 1,370 distinct coverage/finding declaration names
 were checked directly by Lean. Original manuscript bytes are unchanged.
+
+Validated large-kernel tuple-branch checkpoint (9,441 build jobs;
+3,655 audited declarations; 1,370 directly checked coverage/finding names):
+[8fa5f5d3988280093242c5b3fce68a506d9d1c80](https://github.com/Vulkin-prog/paper-p1-lean/commit/8fa5f5d3988280093242c5b3fce68a506d9d1c80).
