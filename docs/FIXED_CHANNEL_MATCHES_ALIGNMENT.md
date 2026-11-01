@@ -58,12 +58,14 @@ the two leading channels have bounds B/3+3 and B/2+3.
 dyadic interior with c dividing a or b has d=1 and c=a or c=b.
 It does not treat these fractions as nonphysical classes.
 
-## Outstanding bridges
+## Scope of this initial checkpoint
 
 This checkpoint proves the exact **divisibility-class count**. The
 bridge from actual target/old-value coincidences into these classes,
 the true-window treatment of physical fractions, the residual
-normalized rank and the endpoint-source count are separate work.
+normalized rank and the endpoint-source count were separate work at this checkpoint. The actual-value and physical-window
+bridges are now proved in the [later checkpoint](ACTUAL_TARGET_MATCHES_ALIGNMENT.md).
+Residual normalized rank and endpoint estimates remain open.
 Consequently it supplies no complete target rank-loss bound, no Palm
 mean estimate and no extra completed numbered result. In particular,
 the class count is not assumed to equal an actual rank loss.

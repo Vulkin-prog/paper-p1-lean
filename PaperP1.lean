@@ -257,3 +257,8 @@ public import PaperP1.Arithmetic.IntervalResidueError
 public import PaperP1.Arithmetic.AffineResidueClasses
 public import PaperP1.Arithmetic.UnionMatchDensity
 public import PaperP1.Arithmetic.FixedChannelMatches
+public import PaperP1.Arithmetic.ExactMatchCongruences
+public import PaperP1.Arithmetic.ActualNormalizedMatches
+public import PaperP1.Model.CompatibleWindowOverlap
+public import PaperP1.Arithmetic.PhysicalNormalizedMatches
+public import PaperP1.Model.CompatibleTargetMatches

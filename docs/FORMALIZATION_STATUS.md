@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3123 audited theorem/lemma declarations**. This
+- The project currently has **3144 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -703,9 +703,9 @@ Physical divisor fractions are classified separately as c=a or c=b,
 d=1. This explicit finite remainder is P1-MATH-0037. See
 [partial alignment](FIXED_CHANNEL_MATCHES_ALIGNMENT.md).
 
-These are divisibility-class counts. Their bridge from actual old/new
-value coincidences, physical true-window counting, residual rank and
-endpoint-source estimates remain open. T2.6 and T1.11 are in progress
+These initial results are divisibility-class counts. The actual-value and
+physical-window bridges are proved in the later checkpoint below.
+Residual rank and endpoint-source estimates remain open. T2.6 and T1.11 are in progress
 and neither is counted complete. The full build passed (9,203 jobs),
 as did the actual axiom audit of all 3,123 theorem/lemma declarations
 and all 838 coverage/finding names. Coverage remains 48 / 167, with
@@ -714,3 +714,24 @@ registration is made. Ubuntu root free space is 18.15 GiB.
 
 Validated finite matching checkpoint for T2.6/T1.11 and P1-MATH-0037:
 [84c4c9a4016ce9f1c4ab9f7828675f3495eced85](https://github.com/Vulkin-prog/paper-p1-lean/commit/84c4c9a4016ce9f1c4ab9f7828675f3495eced85).
+
+## Actual compatible matching positions — partial T2.6 and T1.11
+
+The actual target-position set now uses only the deduplicated normalized
+source values. Its injective integer-offset map lands in the two counted
+congruence classes. Positive actual pair mass gives deterministic start
+separation and at most one true-window overlap. In both physical
+fractions the resulting finite bound is B/b+2; all compatible strict
+interior fractions satisfy B*gamma+3. The actual good-edge definition
+supplies a positive integer source parameter. Positive actual triple
+mass supplies both pair premises. This is P1-MATH-0038. See
+[actual matching alignment](ACTUAL_TARGET_MATCHES_ALIGNMENT.md).
+
+Residual normalized rank, endpoint exceptions and old-prime information
+remain open, so T2.6 and T1.11 are not counted complete. The full build
+passed (9,213 jobs), as did the actual axiom audit of all 3,144
+theorem/lemma declarations and all 859 coverage/finding names. Coverage
+remains 48 / 167, with 38 confirmed improvements. No external
+mathematical assumption or new Paper C port is introduced. Original
+sources remain unchanged and no Palomar registration is made. Ubuntu
+root free space is 18.14 GiB.

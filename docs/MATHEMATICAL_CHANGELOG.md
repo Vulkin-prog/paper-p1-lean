@@ -1403,9 +1403,9 @@ Validated coefficient checkpoint for T2.6 and P1-MATH-0036:
   numerator reduction, and retain a separate argument for physical
   fractions and for actual rank. No optimality claim for 3 is made.
 
-The counted object is exactly the union of divisibility classes. Its
-bridge from actual old/new value matches and the residual-rank estimate
-remain open. Neither T2.6 nor T1.11 is counted complete. See
+The counted object at this initial checkpoint is exactly the union of
+divisibility classes. The actual-value bridge is now proved in
+P1-MATH-0038 below; the residual-rank estimate remains open. Neither T2.6 nor T1.11 is counted complete. See
 [alignment](FIXED_CHANNEL_MATCHES_ALIGNMENT.md).
 
 The full Lean v4.36.0-rc2 build passed (9,203 jobs), and all 3,123
@@ -1417,3 +1417,39 @@ preserved; no manuscript revision or Palomar registration is made.
 
 Validated finite matching checkpoint for T2.6/T1.11 and P1-MATH-0037:
 [84c4c9a4016ce9f1c4ab9f7828675f3495eced85](https://github.com/Vulkin-prog/paper-p1-lean/commit/84c4c9a4016ce9f1c4ab9f7828675f3495eced85).
+
+
+## P1-MATH-0038 — Explicit bounds for actual matches and physical fractions
+
+- Location: companion T2.6, page 22, `p1:arith:fixed-channel-rank`,
+  and T1.11, page 15, `p1:arith:palmrank`. Primary source hash:
+  `8dd614c19e50df20ed1eb9f3ab37c07386f1ce3665c3499e26d83211ceab60b9`.
+- Original form: actual matches are bounded by B*gamma+O(1), with
+  B/b+O(1) in the physical cases and an implicit true-window bridge.
+- Improvement: the literal actual target-position set has cardinality
+  at most B*gamma+3 under the source/target affine identities and
+  positive joint mass for the distinct target/source pairs. Each
+  physical fraction has the sharper bound B/b+2. The good-edge
+  definition supplies a positive integer source parameter.
+- Evidence: `ExactMatchCongruences.one_family_congruence`,
+  `ActualNormalizedMatches.integerOffsets_subset`, `cardinal_le_classes`,
+  `CompatibleWindowOverlap.compatible_pair_overlap_le_one`,
+  `PhysicalNormalizedMatches.physical_card`, `physical_a_bound`,
+  `physical_b_bound`, `CompatibleTargetMatches.goodEdge_parameter`,
+  `compatible_match_bound` and `compatible_triple_match_bound`.
+- Suggested revision: define the actual matching set, inject it into
+  the two affine classes, and handle the two physical cases using the
+  true windows. State the explicit finite constants; no optimality of
+  these additive constants is asserted.
+
+Residual normalized rank and endpoint estimates remain open. Neither
+T2.6 nor T1.11 is counted complete. The result counts actual positions
+and does not assert that the count equals a rank loss. See
+[alignment](ACTUAL_TARGET_MATCHES_ALIGNMENT.md).
+
+The full Lean v4.36.0-rc2 build passed (9,213 jobs), and all 3,144
+theorem/lemma declarations passed the actual axiom audit with only
+`propext`, `Classical.choice` and `Quot.sound`. All 859 distinct
+coverage/finding names were checked directly by Lean. Coverage remains
+48 / 167, with 38 confirmed improvements. Original manuscript bytes
+are preserved; no manuscript revision or Palomar registration is made.

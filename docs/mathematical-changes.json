@@ -1272,6 +1272,53 @@
         "status": "not_integrated"
       },
       "validation_commit": "84c4c9a4016ce9f1c4ab9f7828675f3495eced85"
+    },
+    {
+      "id": "P1-MATH-0038",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "companion",
+        "label": "p1:arith:fixed-channel-rank",
+        "number": "T2.6",
+        "page": 22,
+        "source": "companion_sections/supplemental_arithmetic.tex",
+        "line": 209,
+        "version": "P1 V1.6",
+        "statement_sha256": "8dd614c19e50df20ed1eb9f3ab37c07386f1ce3665c3499e26d83211ceab60b9"
+      },
+      "original_assumption": "The proofs of T2.6 and T1.11 use B*gamma+O(1) for actual normalized target matches and B/b+O(1) in the two physical fractions, with the true-window and compatibility bridges left implicit.",
+      "finding": "For positive coprime a<b with b>=3, every reduced strict-interior target fraction c/d has at most B*gamma_{a:b}+3 actual matching positions, provided the two actual source labels are a*t,b*t and the target is distinct from each source with positive actual joint mass. The physical cases c=a,d=1 and c=b,d=1 have the sharper bound B/b+2. Only the deduplicated normalized source union is used. The result is finite and has no height cutoff; a good edge supplies a positive integer source parameter.",
+      "evidence": [
+        "PaperP1.ExactMatchCongruences.gcd_quotient_divides",
+        "PaperP1.ExactMatchCongruences.source_parameter",
+        "PaperP1.ExactMatchCongruences.one_family_congruence",
+        "PaperP1.ActualNormalizedMatches.mem_exactOffsets",
+        "PaperP1.ActualNormalizedMatches.integerOffsets_card",
+        "PaperP1.ActualNormalizedMatches.integerOffsets_subset",
+        "PaperP1.ActualNormalizedMatches.cardinal_le_classes",
+        "PaperP1.ActualNormalizedMatches.nonphysical_match_bound",
+        "PaperP1.CompatibleWindowOverlap.interval_overlap_le_one",
+        "PaperP1.CompatibleWindowOverlap.joint_event_nonempty",
+        "PaperP1.CompatibleWindowOverlap.compatible_pair_separated",
+        "PaperP1.CompatibleWindowOverlap.compatible_pair_overlap_le_one",
+        "PaperP1.CompatibleWindowOverlap.triple_joint_pairs",
+        "PaperP1.PhysicalNormalizedMatches.same_dilation_intersection",
+        "PaperP1.PhysicalNormalizedMatches.physical_card",
+        "PaperP1.PhysicalNormalizedMatches.intersection_union",
+        "PaperP1.PhysicalNormalizedMatches.physical_a_bound",
+        "PaperP1.PhysicalNormalizedMatches.physical_b_bound",
+        "PaperP1.CompatibleTargetMatches.goodEdge_parameter",
+        "PaperP1.CompatibleTargetMatches.compatible_match_bound",
+        "PaperP1.CompatibleTargetMatches.compatible_triple_match_bound"
+      ],
+      "proposed_revision": "Insert the exact actual-match set and its injection into the two affine classes. Derive at-most-one raw overlap from positive joint start mass, and state B/b+2 for physical fractions and B*gamma+3 for the combined finite bound. Retain the residual normalized rank and endpoint arguments as separate steps.",
+      "impact": "Closes the actual-value and physical-window bridges in T2.6/T1.11 without substituting a containing interval for the true source set. These are position counts, not a completed rank-loss or Palm estimate. Both numbered statements remain in_progress; no optimality claim for the finite additive constants is made.",
+      "validation": "Full Lean v4.36.0-rc2 build (9213 jobs) and actual axiom audit of all 3144 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 859 distinct coverage/finding declaration names were checked directly by Lean. T2.6 and T1.11 remain in_progress and neither is counted complete.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

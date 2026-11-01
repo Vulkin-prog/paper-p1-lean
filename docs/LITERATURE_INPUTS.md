@@ -902,3 +902,16 @@ Finite inclusion-exclusion yields the uniform two-sided error at most
 3. No CRT counting estimate, asymptotic O(1) premise or actual-rank
 identity is assumed. The remaining arithmetic/rank bridges are open.
 See [partial alignment](FIXED_CHANNEL_MATCHES_ALIGNMENT.md).
+
+
+## Actual normalized matching positions
+
+Stable ID: `P1-ARITH-ACTUAL-TARGET-MATCHES`. Status: **proved finite core**.
+Actual target positions matching the deduplicated normalized source union
+inject into the two affine congruence classes. Positive actual joint mass
+gives the start separation needed for physical fractions; their true-set
+bound is B/b+2, and the combined strict-interior bound is B*gamma+3.
+There is no height restriction, external counting premise or new Paper C
+port. This closes an actual-value bridge, while residual normalized rank
+and endpoint exceptions remain unresolved. See
+[alignment](ACTUAL_TARGET_MATCHES_ALIGNMENT.md).
