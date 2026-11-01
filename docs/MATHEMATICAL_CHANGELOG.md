@@ -875,3 +875,6 @@ Validated implementation of article Proposition 19.2 and P1-MATH-0023:
   declaration audit. Not integrated into a new manuscript version.
 
 All 438 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of companion T20.1, P1-MATH-0024 and P1-MATH-0025:
+[cbf22970cceae54d3971a64f5a7def265088dc85](https://github.com/Vulkin-prog/paper-p1-lean/commit/cbf22970cceae54d3971a64f5a7def265088dc85).

@@ -84,3 +84,6 @@ axiom audit of all 2,305 project theorem/lemma declarations. Only `propext`,
 main 15 / 73, companion 21 / 94. No Palomar registration is made.
 
 All 438 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of companion T20.1, P1-MATH-0024 and P1-MATH-0025:
+[cbf22970cceae54d3971a64f5a7def265088dc85](https://github.com/Vulkin-prog/paper-p1-lean/commit/cbf22970cceae54d3971a64f5a7def265088dc85).
