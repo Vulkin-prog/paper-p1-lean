@@ -1133,3 +1133,20 @@ Stable ID: `P1-ARITH-LARGE-SELECTED-KERNEL`. Status: **proved**, complete T1.6.
   case and stronger selection scope are P1-MATH-0046. No new unproved
   literature input is introduced. See
   [alignment](LARGE_SELECTED_KERNEL_ALIGNMENT.md).
+
+## Large-kernel branch for several actual windows
+
+Stable ID: `P1-ARITH-SEVERAL-LARGE-KERNEL-RECEIVERS`. Status: **proved branch**,
+companion T1.14 remains in progress.
+
+- Actual mixed binary parity forces each selected anchor prime to a receiving
+  window. Prime assignments are finite; their group moduli divide the actual
+  kernel K<=3N. The exact CRT cost is at most 4^m*N^m/K, including moduli>N.
+- The scaled canonical-support tail and actual marked-anchor tuple injection
+  give the uniform N^(m+1/2+epsilon)*T^(-1/2+tau) count. The beta_s exponent
+  identity and choice of tau after epsilon are proved, without assuming a
+  target tuple bound.
+- The remaining two-small-kernel estimate and full fixed-width/dilation
+  assembly are not hidden hypotheses of these theorems and do not count as
+  completed coverage. No new Paper C port or unproved literature input is
+  introduced. See [alignment](LARGE_KERNEL_TUPLES_ALIGNMENT.md).

@@ -369,3 +369,10 @@ public import PaperP1.Asymptotics.LogPowerExponential
 public import PaperP1.Asymptotics.SelectedKernelCounts
 public import PaperP1.Arithmetic.SelectedKernelSourceFamilies
 public import PaperP1.Asymptotics.LargeSelectedKernelTheorem
+public import PaperP1.Arithmetic.SeveralKernelReceivers
+public import PaperP1.Arithmetic.WeightedReceiverKernelTail
+public import PaperP1.Arithmetic.SeveralSelectedKernelWitness
+public import PaperP1.Arithmetic.SeveralAnchorConfigurations
+public import PaperP1.Asymptotics.SeveralAnchorCounts
+public import PaperP1.Arithmetic.LargeKernelTuples
+public import PaperP1.Asymptotics.LargeKernelTupleCounts

@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3626 audited theorem/lemma declarations**. This
+- The project currently has **3655 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1365,3 +1365,24 @@ by Lean against the compiled root import.
 Validated complete companion T1.6 checkpoint (9,427 build jobs;
 3,626 audited declarations; 1,341 directly checked coverage/finding names):
 [3be7415366bd3d27aa016bf9690b0f93d7304fd9](https://github.com/Vulkin-prog/paper-p1-lean/commit/3be7415366bd3d27aa016bf9690b0f93d7304fd9).
+
+## Verified large-kernel branch for fixed-support tuples
+
+`LargeKernelTupleCounts.large_branch` proves the actual large-selected-kernel
+branch with the source exponent, after a proved choice of tau following
+epsilon. Exact receiver prime partitions give the finite cost
+4^m*N^m/K, retaining all additive terms even for group moduli>N. Scaled
+canonical support weights and actual marked-anchor encodings prove the
+full uniform tuple count before the beta_s specialization. The broader
+intermediate families allow non-even selections, repeated centres and
+overlapping windows. This improvement is P1-MATH-0047.
+
+Companion T1.14 remains in progress, with its all-small-kernel regime and
+compressed fixed-width/dilation assembly open. Coverage remains 54/167;
+47 mathematical improvements are confirmed. See
+[large-kernel branch alignment](LARGE_KERNEL_TUPLES_ALIGNMENT.md).
+
+The full build passed (9,441 jobs); the actual audit passed for all
+3,655 theorem/lemma declarations, permitting only propext, Classical.choice
+and Quot.sound. All 1,370 distinct coverage/finding declaration names
+were checked directly by Lean. Original manuscript bytes are unchanged.

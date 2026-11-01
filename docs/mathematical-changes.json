@@ -2066,6 +2066,61 @@
         "status": "not_integrated"
       },
       "validation_commit": "3be7415366bd3d27aa016bf9690b0f93d7304fd9"
+    },
+    {
+      "id": "P1-MATH-0047",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "companion",
+        "label": "p1:arith:fixed-support",
+        "number": "T1.14",
+        "page": 17,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 1035,
+        "version": "P1 V1.6",
+        "statement_sha256": "a6cc454365ad3be4f4e5fd085e0de49e402d933a1af003488cdc040d20ed7d4b"
+      },
+      "original_assumption": "The large-kernel branch of T1.14 states an O_r(N^(r-1)/K) receiving CRT cost for separated windows and then selects tau after epsilon to obtain the final support exponent. The final proposition also requires the separate all-small-kernel branch.",
+      "finding": "For a selected anchor with actual kernel K<=3N and m receiving windows, partitioning each distinct support prime once gives group moduli K_j with product K. Each K_j divides K<=3N, so retaining the additive terms yields the explicit finite cost product(1+N/K_j)<=4^m*N^m/K, also for K_j>N. All assignments cost at most (m*B)^omega(K) times this expression. The scaled weighted tail, actual marked-anchor encoding and union over all m+1 anchors give an actual tuple count N^(m+1/2+epsilon)*T^(-1/2+tau), uniformly in T>0. For beta_s=(2s-1)/(2s+1), the proved choice tau=min(1/4,epsilon/(4*beta_s)) gives the source exponent N^((m+1)-2s/(2s+1)+epsilon) on the large-kernel branch. These stronger intermediate families permit non-even selections, repeated centres and overlapping windows.",
+      "evidence": [
+        "PaperP1.SeveralKernelReceivers.hits_cover",
+        "PaperP1.SeveralKernelReceivers.one_add_div_bound",
+        "PaperP1.SeveralKernelReceivers.receiving_card",
+        "PaperP1.SeveralKernelReceivers.hits_card",
+        "PaperP1.WeightedReceiverKernelTail.supportTail_nonneg",
+        "PaperP1.WeightedReceiverKernelTail.fibre_bound",
+        "PaperP1.WeightedReceiverKernelTail.weighted_tail_euler",
+        "PaperP1.WeightedReceiverKernelTail.rough_euler_bound",
+        "PaperP1.WeightedReceiverKernelTail.weighted_tail_exp",
+        "PaperP1.SeveralSelectedKernelWitness.other_prime_divisor",
+        "PaperP1.SeveralSelectedKernelWitness.other_starts_mem_hits",
+        "PaperP1.SeveralAnchorConfigurations.configurations_cover",
+        "PaperP1.SeveralAnchorConfigurations.configurations_card_sum",
+        "PaperP1.SeveralAnchorConfigurations.configurations_weighted",
+        "PaperP1.SeveralAnchorConfigurations.finite_exp_bound",
+        "PaperP1.SeveralAnchorCounts.factor_subpolynomial",
+        "PaperP1.SeveralAnchorCounts.ambient_sqrt",
+        "PaperP1.SeveralAnchorCounts.finite_factor_bound",
+        "PaperP1.SeveralAnchorCounts.uniform_count",
+        "PaperP1.SeveralAnchorCounts.critical_count",
+        "PaperP1.LargeKernelTuples.encode_injective",
+        "PaperP1.LargeKernelTuples.encode_mem",
+        "PaperP1.LargeKernelTuples.anchor_card_le",
+        "PaperP1.LargeKernelTuples.tuples_card",
+        "PaperP1.LargeKernelTuples.mem_tuples",
+        "PaperP1.LargeKernelTupleCounts.tuple_count",
+        "PaperP1.LargeKernelTupleCounts.beta_bounds",
+        "PaperP1.LargeKernelTupleCounts.exponent_identity",
+        "PaperP1.LargeKernelTupleCounts.large_branch"
+      ],
+      "proposed_revision": "State the explicit 4^(r-1) receiver constant and justify every additive CRT term using divisibility by K<=3N. The large-kernel branch may be stated without evenness or separation, and with real T>0. Keep the independent all-small-kernel estimate explicit; it is still required for the full proposition. Record the actual choice of tau after the final error margin.",
+      "impact": "Closes the genuine large-selected-kernel arithmetic branch used by companion T1.14, with a stronger selection scope and explicit finite constants. This is a verified partial input, not completed T1.14 coverage. The all-small-kernel, compressed fixed-width/dilation and complete relative-image assembly remain unproved. Numbered coverage stays 54/167.",
+      "validation": "Full Lean v4.36.0-rc2 build (9441 jobs), actual axiom audit of all 3655 theorem/lemma declarations, and direct Lean checks of all 1370 distinct coverage/finding names. Only propext, Classical.choice and Quot.sound occur. The actual large-kernel tuple branch is proved with the source exponent; full T1.14 remains in progress. Coverage remains 54/167. No unproved counting estimate, new Paper C port or unproved literature input is introduced. Original manuscript bytes are unchanged.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

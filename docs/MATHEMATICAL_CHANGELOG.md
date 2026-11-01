@@ -2250,3 +2250,38 @@ by Lean against the compiled root import.
 Validated complete companion T1.6 checkpoint (9,427 build jobs;
 3,626 audited declarations; 1,341 directly checked coverage/finding names):
 [3be7415366bd3d27aa016bf9690b0f93d7304fd9](https://github.com/Vulkin-prog/paper-p1-lean/commit/3be7415366bd3d27aa016bf9690b0f93d7304fd9).
+
+## P1-MATH-0047 — Explicit receiver costs and the actual large-kernel tuple branch
+
+Location: companion Proposition T1.14, page 17, `p1:arith:fixed-support`,
+`companion_sections/arithmetic_appendix.tex:1035`. This checkpoint closes
+its large-kernel branch, with full T1.14 still in progress.
+
+The finite receiver cost is <=4^m*N^m/K for m receiving windows and
+actual selected kernel K<=3N. Each group modulus divides K; this retains
+and justifies every additive CRT term, also for moduli>N. The scaled
+weighted tail allows (m*B)^omega(K) prime assignments. An injective actual
+marked-anchor encoding and the union over all anchors give the stronger
+tuple family bound N^(m+1/2+epsilon)*T^(-1/2+tau), uniformly in T>0.
+The family permits non-even selections, repeated centres and overlaps.
+
+The exact beta_s identity and the proved choice
+tau=min(1/4,epsilon/(4*beta_s)) after epsilon give the source exponent
+N^((m+1)-2s/(2s+1)+epsilon) for this branch. Evidence includes
+`SeveralKernelReceivers.receiving_card`, `hits_card`,
+`WeightedReceiverKernelTail.weighted_tail_exp`,
+`SeveralAnchorConfigurations.configurations_weighted`,
+`LargeKernelTuples.encode_injective`, `tuples_card`,
+`LargeKernelTupleCounts.tuple_count`, `exponent_identity` and `large_branch`.
+
+The all-small-kernel regime still needs T1.13/T1.5. Full compressed
+fixed-width/dilation and relative-image assembly are also open. No
+completed T1.14 coverage is claimed: coverage remains 54/167 with 47
+confirmed improvements. No target count, new unproved literature input,
+Paper C port or manuscript revision is introduced. See
+[statement alignment](LARGE_KERNEL_TUPLES_ALIGNMENT.md).
+
+The full build passed (9,441 jobs); the actual audit passed for all
+3,655 theorem/lemma declarations, permitting only propext, Classical.choice
+and Quot.sound. All 1,370 distinct coverage/finding declaration names
+were checked directly by Lean. Original manuscript bytes are unchanged.
