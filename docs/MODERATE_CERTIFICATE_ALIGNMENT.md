@@ -144,3 +144,6 @@ actual axiom audit of all 2,123 project theorem/lemma declarations. Only
 32 / 167 (main 12 / 73, companion 20 / 94). No Palomar registration is made.
 
 All 349 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of both conclusions of article Lemma 7.2 and P1-MATH-0020:
+[62861d120c500f4fcb910532aaa8eea5a6d6930b](https://github.com/Vulkin-prog/paper-p1-lean/commit/62861d120c500f4fcb910532aaa8eea5a6d6930b).

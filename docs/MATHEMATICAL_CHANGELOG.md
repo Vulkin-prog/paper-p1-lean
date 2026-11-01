@@ -717,3 +717,6 @@ Validated implementation of companion T20.5 and P1-MATH-0019:
   corrected. Not integrated into a new manuscript version.
 
 All 349 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of both conclusions of article Lemma 7.2 and P1-MATH-0020:
+[62861d120c500f4fcb910532aaa8eea5a6d6930b](https://github.com/Vulkin-prog/paper-p1-lean/commit/62861d120c500f4fcb910532aaa8eea5a6d6930b).
