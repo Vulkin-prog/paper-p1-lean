@@ -1524,3 +1524,18 @@ Rankin bound, code count or target centre count is an unproved input. The
 stronger constant-selection/squarefree scope is P1-MATH-0062; no new Paper C
 port or external literature assumption is introduced. See
 [complete alignment](LARGE_SMOOTH_MODULUS_ALIGNMENT.md).
+
+## Complete incoming/outgoing anchor certificates
+
+The actual graph is counted using proved finite colored-subset estimates,
+actual logarithmic prime-product bounds and actual coprime congruence
+uniqueness. A proved minimal first-passage subset supplies the sharp order,
+and verified logarithmic limits give the 1/A degree exponent. Actual parity
+relations and private primes prove receiver occurrence. Canonical squarefree
+kernel products and actual prime allocations force a sufficiently large
+receiver modulus. The full old span is represented by actual unrestricted
+selections using Mathlib's proved finite linear-combination theorem over F2.
+No prime-reception, modulus, local code or target-count estimate is supplied
+as an unproved argument. P1-MATH-0063 records the broader range and explicit
+finite bound. No new Paper C port or external literature assumption is
+introduced. See [complete alignment](ANCHOR_CERTIFICATE_ALIGNMENT.md).

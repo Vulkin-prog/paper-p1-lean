@@ -2825,3 +2825,16 @@ and constant-selection threshold are independent of t,H and the selection.
 Neither H>diameter nor H<=Y is needed. The full original long-selection,
 real-cutoff and critical-block theorem follows, with source positivity.
 Coverage is 61/167. See [complete alignment](LARGE_SMOOTH_MODULUS_ALIGNMENT.md).
+
+## P1-MATH-0063 — A>1 and one common finite certificate degree bound
+
+The full T6.3 certificate extraction and both actual directed degree bounds
+hold for every fixed A>1. Only prime privacy needs that range; graph degree
+counts alone need A>0. Actual logarithmic prime-pool budgets and the same
+colored-subset tilt give B^t*(e*t*B)^k in both directions, with the minimal
+first-passage order k=floor(log(Z)/logY)+1. The incoming pool-size case split
+is unnecessary. Full old-span selections, overlaps and dependent sources
+are included. A common critical radius proves the literal N*B threshold,
+and positivity identifies every actual signed value. Coverage is 62/167;
+see [complete alignment](ANCHOR_CERTIFICATE_ALIGNMENT.md). The separate
+smooth-modulus lemma retains its A>=2 range.
