@@ -87,3 +87,7 @@ The stronger O(B^2/N) remainder is recorded as part of the existing
 proof simplification P1-MATH-0045. No new literature premise, Paper C
 port, manuscript revision or Palomar registration is introduced.
 Original manuscript bytes are unchanged.
+
+Validated actual fixed-channel remainder checkpoint (9,393 build jobs;
+3,549 audited declarations; 1,264 directly checked coverage/finding names):
+[b19ae93509861774fd90f72c07a8d452603e5fc5](https://github.com/Vulkin-prog/paper-p1-lean/commit/b19ae93509861774fd90f72c07a8d452603e5fc5).

@@ -1942,7 +1942,10 @@
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "37e67975065e2b4df18be484c2e7ba9123a6c8b9"
+      "validation_commit": "b19ae93509861774fd90f72c07a8d452603e5fc5",
+      "validation_history": [
+        "37e67975065e2b4df18be484c2e7ba9123a6c8b9"
+      ]
     }
   ]
 }

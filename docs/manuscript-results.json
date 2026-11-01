@@ -343,7 +343,7 @@
         "P1-MATH-0045"
       ],
       "notes": "The actual retained fixed-channel mass error is now proved on the critical scale. For fixed positive reduced a<b<2a and fixed natural D, one threshold precedes all critical lengths and integer cutoffs 2bB<=H<=DB. The actual mass satisfies |M-p^2*N*w*S|<=K(C,b)*B^2/N with explicit positive K=2^(2C)*(8*2^((C+1)/b)+2), hence <=N^(-1+epsilon) eventually for every epsilon>0. This uses actual defect counts, direct rational-unit weights, actual finite mass deletion and the positive channel bound U<=B^2*2^floor(L/b), without complete defective-pair residual nullity. The source probability-zero cases remain in the family. Remaining: prove the positive fixed-channel phase equivalent and, if needed for the literal threshold convention, transport integer cutoffs to an arbitrary fixed real coefficient; the complete main pair profile also has other regimes unfinished. Article 3.3 and T2.5 remain in progress. See docs/PRIVATE_CHANNEL_MASS_RATE_ALIGNMENT.md.",
-      "validation_commit": "37e67975065e2b4df18be484c2e7ba9123a6c8b9",
+      "validation_commit": "b19ae93509861774fd90f72c07a8d452603e5fc5",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
         "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df",
@@ -352,7 +352,8 @@
         "c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd",
         "75b7018923d2fc85473e609a5788b6bb97805498",
         "74727a964e38c4b8b556fac2f93194485c695c11",
-        "bd95627543139b4690c1311ce84f622d8ce7a221"
+        "bd95627543139b4690c1311ce84f622d8ce7a221",
+        "37e67975065e2b4df18be484c2e7ba9123a6c8b9"
       ]
     },
     {
@@ -2580,7 +2581,7 @@
         "P1-MATH-0045"
       ],
       "notes": "The actual retained fixed-channel mass error is now proved on the critical scale. For fixed positive reduced a<b<2a and fixed natural D, one threshold precedes all critical lengths and integer cutoffs 2bB<=H<=DB. The actual mass satisfies |M-p^2*N*w*S|<=K(C,b)*B^2/N with explicit positive K=2^(2C)*(8*2^((C+1)/b)+2), hence <=N^(-1+epsilon) eventually for every epsilon>0. This uses actual defect counts, direct rational-unit weights, actual finite mass deletion and the positive channel bound U<=B^2*2^floor(L/b), without complete defective-pair residual nullity. The source probability-zero cases remain in the family. Remaining: prove the positive fixed-channel phase equivalent and, if needed for the literal threshold convention, transport integer cutoffs to an arbitrary fixed real coefficient; the complete main pair profile also has other regimes unfinished. Article 3.3 and T2.5 remain in progress. See docs/PRIVATE_CHANNEL_MASS_RATE_ALIGNMENT.md.",
-      "validation_commit": "37e67975065e2b4df18be484c2e7ba9123a6c8b9",
+      "validation_commit": "b19ae93509861774fd90f72c07a8d452603e5fc5",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
         "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df",
@@ -2589,7 +2590,8 @@
         "c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd",
         "75b7018923d2fc85473e609a5788b6bb97805498",
         "74727a964e38c4b8b556fac2f93194485c695c11",
-        "bd95627543139b4690c1311ce84f622d8ce7a221"
+        "bd95627543139b4690c1311ce84f622d8ce7a221",
+        "37e67975065e2b4df18be484c2e7ba9123a6c8b9"
       ]
     },
     {

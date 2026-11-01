@@ -1301,3 +1301,7 @@ checked directly by Lean. Only propext, Classical.choice and Quot.sound
 occur. No new literature input, Paper C port, manuscript revision or
 Palomar registration is introduced. Manuscript bytes are unchanged.
 Ubuntu root free space is 17.85 GiB.
+
+Validated actual fixed-channel remainder checkpoint (9,393 build jobs;
+3,549 audited declarations; 1,264 directly checked coverage/finding names):
+[b19ae93509861774fd90f72c07a8d452603e5fc5](https://github.com/Vulkin-prog/paper-p1-lean/commit/b19ae93509861774fd90f72c07a8d452603e5fc5).
