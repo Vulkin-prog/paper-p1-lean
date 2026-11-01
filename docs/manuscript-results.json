@@ -299,13 +299,14 @@
         "P1-MATH-0035"
       ],
       "notes": "Preparatory finite channel sums, actual dyadic translations, the private pair covariance formula and complete local selected-unit word bijection are proved. The global bridge is now also complete: actual pair-specific shapes are bijective with global patterns carrying the corresponding source unit, and finite sum interchange identifies the actual dyadic signed unit sum with the literal source-pair host aggregate. Both orientations give the exact signedHosts aggregate. Its signed main term is N*w*S with error <=6B*U, under one critical-band threshold before all reduced heights b<=B^3. Probability-zero pairs retain their cancellations. Remaining: remove defective normalizations from this actual rational-unit aggregate, add the baseline p^2 correction on the retained private dependent family, and prove the full mass/profile asymptotics and phase equivalents. Neither article 3.3 nor T2.5 is newly complete. See docs/DYADIC_UNIT_FOURIER_ALIGNMENT.md and the earlier local and probability alignments.",
-      "validation_commit": "75b7018923d2fc85473e609a5788b6bb97805498",
+      "validation_commit": "74727a964e38c4b8b556fac2f93194485c695c11",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
         "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df",
         "88ce8a72b7b579b3b7442de98efd91af4b445764",
         "4461d6bdcc7e19648377fe47703c3bd0d14d21ee",
-        "c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd"
+        "c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd",
+        "75b7018923d2fc85473e609a5788b6bb97805498"
       ]
     },
     {
@@ -2489,13 +2490,14 @@
         "P1-MATH-0035"
       ],
       "notes": "Preparatory finite channel sums, actual dyadic translations, the private pair covariance formula and complete local selected-unit word bijection are proved. The global bridge is now also complete: actual pair-specific shapes are bijective with global patterns carrying the corresponding source unit, and finite sum interchange identifies the actual dyadic signed unit sum with the literal source-pair host aggregate. Both orientations give the exact signedHosts aggregate. Its signed main term is N*w*S with error <=6B*U, under one critical-band threshold before all reduced heights b<=B^3. Probability-zero pairs retain their cancellations. Remaining: remove defective normalizations from this actual rational-unit aggregate, add the baseline p^2 correction on the retained private dependent family, and prove the full mass/profile asymptotics and phase equivalents. Neither article 3.3 nor T2.5 is newly complete. See docs/DYADIC_UNIT_FOURIER_ALIGNMENT.md and the earlier local and probability alignments.",
-      "validation_commit": "75b7018923d2fc85473e609a5788b6bb97805498",
+      "validation_commit": "74727a964e38c4b8b556fac2f93194485c695c11",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
         "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df",
         "88ce8a72b7b579b3b7442de98efd91af4b445764",
         "4461d6bdcc7e19648377fe47703c3bd0d14d21ee",
-        "c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd"
+        "c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd",
+        "75b7018923d2fc85473e609a5788b6bb97805498"
       ]
     },
     {

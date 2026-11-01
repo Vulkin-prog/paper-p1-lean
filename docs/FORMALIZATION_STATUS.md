@@ -1193,3 +1193,7 @@ already validated covariance and local-word extensions; their earlier
 validation commits and histories are retained. No new literature input,
 Paper C port, manuscript revision or Palomar registration is introduced.
 Original sources are unchanged. Ubuntu root free space is 17.90 GiB.
+
+Validated actual dyadic unit-Fourier checkpoint (9,369 build jobs;
+3,506 audited declarations; 1,221 directly checked coverage/finding names):
+[74727a964e38c4b8b556fac2f93194485c695c11](https://github.com/Vulkin-prog/paper-p1-lean/commit/74727a964e38c4b8b556fac2f93194485c695c11).

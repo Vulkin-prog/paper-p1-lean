@@ -80,3 +80,7 @@ nor companion T2.5 is declared proved.
 
 No new literature premise, Paper C port, manuscript revision or Palomar
 registration is introduced. Original manuscript bytes are unchanged.
+
+Validated actual dyadic unit-Fourier checkpoint (9,369 build jobs;
+3,506 audited declarations; 1,221 directly checked coverage/finding names):
+[74727a964e38c4b8b556fac2f93194485c695c11](https://github.com/Vulkin-prog/paper-p1-lean/commit/74727a964e38c4b8b556fac2f93194485c695c11).
