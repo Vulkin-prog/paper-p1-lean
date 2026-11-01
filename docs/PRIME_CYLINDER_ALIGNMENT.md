@@ -79,3 +79,6 @@ all 167 original numbered statement hashes. Numbered coverage is
 40 / 167: article 15 / 73, companion 25 / 94. No new mathematical
 correction is asserted at this checkpoint, and no Palomar registration
 is made. Available Ubuntu-root space is 17.95 GiB.
+
+Validated implementation of companion T19.7:
+[af00f6613fc890bee31ac2b83d609dc9a9030635](https://github.com/Vulkin-prog/paper-p1-lean/commit/af00f6613fc890bee31ac2b83d609dc9a9030635).
