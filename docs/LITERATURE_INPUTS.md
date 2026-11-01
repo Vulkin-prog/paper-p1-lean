@@ -1166,3 +1166,17 @@ companion T1.13 remains in progress.
   unproved literature input or Paper C port is introduced. The stronger
   one-kernel scope extends P1-MATH-0046. See
   [alignment](FIXED_WIDTH_SMALL_KERNEL_ALIGNMENT.md).
+
+## Finite bivariate polynomial level sets
+
+Stable ID: `P1-ALG-BIVARIATE-GRID-COUNT`. Status: **Mathlib and proved P1 wrapper**.
+
+- Mathlib pin 9d581dfff2e41de989072ea63abf3daf69311520 provides the proved
+  Schwartz-Zippel and homogeneous coefficient/degree lemmas. Explicit
+  denominator clearing, nonzero constant-level transport and actual integer
+  grids give the coefficient-independent d*(2H+1) bound.
+- This is an independent ingredient of T1.4 Step 3; the eliminant and full
+  determinant argument are not established by it. No new unproved
+  literature hypothesis or Paper C port is introduced. The proof
+  simplification is P1-MATH-0048. See
+  [alignment](BIVARIATE_GRID_ALIGNMENT.md).

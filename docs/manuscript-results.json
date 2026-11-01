@@ -1790,11 +1790,24 @@
       "source": "companion_sections/arithmetic_appendix.tex",
       "line": 139,
       "sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.BivariateGridCount.zero_grid_bound",
+        "PaperP1.BivariateGridCount.sub_constant_ne_zero",
+        "PaperP1.BivariateGridCount.level_eq_zeros",
+        "PaperP1.BivariateGridCount.shifted_degree_le",
+        "PaperP1.BivariateGridCount.nonzero_level_grid_bound",
+        "PaperP1.BivariateGridCount.integer_box_bound",
+        "PaperP1.BivariateGridCount.homogeneous_constant_zero",
+        "PaperP1.BivariateGridCount.homogeneous_level_grid_bound",
+        "PaperP1.BivariateGridCount.homogeneous_grid_degree_bound",
+        "PaperP1.BivariateGridCount.homogeneous_integer_box_bound"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0048"
+      ],
+      "notes": "The independent bivariate level-set ingredient in Step 3 is proved with explicit coefficient-independent bound d*(2H+1), using actual finite grids and positive-degree homogeneity. No coefficient-height, irreducibility or primitive-point hypothesis is needed for this ingredient. Full T1.4 remains open: the determinant, lattice changes, eliminant construction, other curve cases and short-vector summations are not proved. See BIVARIATE_GRID_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:twokernel",

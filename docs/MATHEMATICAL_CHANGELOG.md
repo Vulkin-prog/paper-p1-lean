@@ -2323,3 +2323,33 @@ directly by Lean. Original manuscript bytes are unchanged.
 Validated selected fixed-width one-kernel checkpoint (9,447 build jobs;
 3,667 audited declarations; 1,382 directly checked coverage/finding names):
 [77be471d8c127edb6104caae2922aaef3a95ec54](https://github.com/Vulkin-prog/paper-p1-lean/commit/77be471d8c127edb6104caae2922aaef3a95ec54).
+
+## P1-MATH-0048 — Direct coefficient-independent bivariate level-set count
+
+Location: companion T1.4 Step 3, page 6, `p1:arith:reuss`, source
+`companion_sections/arithmetic_appendix.tex:139`. The manual bounded-root
+and exceptional-full-fibre argument can be replaced, once the eliminant
+is constructed, by the proved Schwartz-Zippel finite-grid count.
+
+If p is homogeneous of degree d>0 and c!=0, the actual level set p=c
+in [-H,H]^2 has at most d*(2H+1) integer points. Zero constant coefficient
+proves p-C(c) nonzero and subtracting the constant does not increase
+degree. The result permits the zero polynomial and powers of linear
+forms, without coefficient-height, primitivity or irreducibility
+hypotheses. It enlarges a rectangular box to its maximum-coordinate
+square box and preserves the source O(T1) or O(L1) contribution.
+
+Evidence: all declarations in `BivariateGridCount`, in particular
+`zero_grid_bound`, `sub_constant_ne_zero`, `shifted_degree_le`,
+`homogeneous_grid_degree_bound` and `homogeneous_integer_box_bound`.
+The proved Mathlib theorem is used at the pinned exact revision.
+This is a preparatory ingredient: no completed T1.4 coverage is claimed,
+and the determinant, eliminant construction and lattice stages remain
+open. Coverage stays 54/167, with 48 confirmed improvements. See
+[alignment](BIVARIATE_GRID_ALIGNMENT.md).
+
+The full build passed (9,477 jobs); all 3,677 declarations passed the
+actual axiom audit, permitting only propext, Classical.choice and
+Quot.sound. All 1,392 distinct coverage/finding names were checked
+directly by Lean. Available Ubuntu-root space is 17.75 GiB after the
+selected dependency downloads. Original manuscript bytes are unchanged.

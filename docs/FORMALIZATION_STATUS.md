@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3667 audited theorem/lemma declarations**. This
+- The project currently has **3677 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1414,3 +1414,21 @@ directly by Lean. Original manuscript bytes are unchanged.
 Validated selected fixed-width one-kernel checkpoint (9,447 build jobs;
 3,667 audited declarations; 1,382 directly checked coverage/finding names):
 [77be471d8c127edb6104caae2922aaef3a95ec54](https://github.com/Vulkin-prog/paper-p1-lean/commit/77be471d8c127edb6104caae2922aaef3a95ec54).
+
+## Coefficient-independent bivariate grid ingredient of T1.4
+
+`BivariateGridCount.homogeneous_integer_box_bound` proves the explicit
+d*(2H+1) count for a positive-degree homogeneous polynomial at a nonzero
+level in an actual integer box. A proved Schwartz-Zippel argument handles
+all coefficients, the zero polynomial and powers of linear forms without
+manual exceptional-full-fibre cases. This simplification is P1-MATH-0048.
+Companion T1.4 remains in progress: the eliminant construction, determinant
+method, other curve cases and lattice summations are still open. Coverage
+remains 54/167, with 48 confirmed improvements. See
+[alignment](BIVARIATE_GRID_ALIGNMENT.md).
+
+The full build passed (9,477 jobs); all 3,677 declarations passed the
+actual axiom audit, permitting only propext, Classical.choice and
+Quot.sound. All 1,392 distinct coverage/finding names were checked
+directly by Lean. Available Ubuntu-root space is 17.75 GiB after the
+selected dependency downloads. Original manuscript bytes are unchanged.

@@ -2462,6 +2462,16 @@ import PaperP1
 #print axioms PaperP1.ZeroSumFreeRepresentations.representations_one_card_le
 #print axioms PaperP1.ZeroSumFreeRepresentations.representation_cover
 #print axioms PaperP1.ZeroSumFreeRepresentations.representations_card_le
+#print axioms PaperP1.BivariateGridCount.zero_grid_bound
+#print axioms PaperP1.BivariateGridCount.sub_constant_ne_zero
+#print axioms PaperP1.BivariateGridCount.level_eq_zeros
+#print axioms PaperP1.BivariateGridCount.shifted_degree_le
+#print axioms PaperP1.BivariateGridCount.nonzero_level_grid_bound
+#print axioms PaperP1.BivariateGridCount.integer_box_bound
+#print axioms PaperP1.BivariateGridCount.homogeneous_constant_zero
+#print axioms PaperP1.BivariateGridCount.homogeneous_level_grid_bound
+#print axioms PaperP1.BivariateGridCount.homogeneous_grid_degree_bound
+#print axioms PaperP1.BivariateGridCount.homogeneous_integer_box_bound
 #print axioms PaperP1.PellInput.toZsqrtd_re
 #print axioms PaperP1.PellInput.toZsqrtd_im
 #print axioms PaperP1.PellInput.norm_toZsqrtd

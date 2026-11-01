@@ -2137,6 +2137,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "8fa5f5d3988280093242c5b3fce68a506d9d1c80"
+    },
+    {
+      "id": "P1-MATH-0048",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "version": "P1 V1.6",
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "In T1.4 Step 3, a positive-degree homogeneous eliminant F_3 with nonzero RHS is counted by fixing a coordinate, bounding polynomial roots and treating boundedly many exceptional full fibres. This passage must be uniform in the variable coefficients.",
+      "finding": "The actual bivariate level set p=c, for p homogeneous of positive degree d and c nonzero, has at most d times the finite coordinate-grid size by the proved Schwartz-Zippel theorem. In the integer box [-H,H]^2 this is the explicit bound d*(2H+1). Zero constant coefficient proves p-C(c) nonzero; its degree does not increase. This includes the zero polynomial and powers of linear forms, with no irreducibility, primitivity or coefficient-height condition. It provides a direct coefficient-independent alternative to manual exceptional-fibre enumeration for the relevant Step 3 ingredient.",
+      "evidence": [
+        "PaperP1.BivariateGridCount.zero_grid_bound",
+        "PaperP1.BivariateGridCount.sub_constant_ne_zero",
+        "PaperP1.BivariateGridCount.level_eq_zeros",
+        "PaperP1.BivariateGridCount.shifted_degree_le",
+        "PaperP1.BivariateGridCount.nonzero_level_grid_bound",
+        "PaperP1.BivariateGridCount.integer_box_bound",
+        "PaperP1.BivariateGridCount.homogeneous_constant_zero",
+        "PaperP1.BivariateGridCount.homogeneous_level_grid_bound",
+        "PaperP1.BivariateGridCount.homogeneous_grid_degree_bound",
+        "PaperP1.BivariateGridCount.homogeneous_integer_box_bound"
+      ],
+      "proposed_revision": "Once the positive-degree homogeneous eliminant and nonzero RHS have been constructed in Step 3, invoke the elementary finite-grid bound d*(2H+1). The corresponding rectangular box is enlarged to its maximum-coordinate square box. This removes the manual exceptional-full-fibre case split while preserving the source O(T1) or O(L1) contribution.",
+      "impact": "Closes an independent algebraic ingredient of the bidegree-one fibre argument, with an explicit constant and stronger scope. It does not establish the eliminant construction, resultant denominator budget, determinant method or full T1.4; that result remains in progress. Numbered coverage remains 54/167.",
+      "validation": "Full Lean v4.36.0-rc2 build (9477 jobs), actual axiom audit of all 3677 theorem/lemma declarations, and direct Lean checks of all 1392 distinct coverage/finding names. Only propext, Classical.choice and Quot.sound occur. The coefficient-independent grid ingredient is complete; full T1.4 remains in progress. Coverage stays 54/167. Uses proved Mathlib inputs at 9d581dfff2e41de989072ea63abf3daf69311520, without a new unproved literature input or Paper C port. Original manuscript bytes are unchanged.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

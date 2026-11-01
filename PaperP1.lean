@@ -379,3 +379,4 @@ public import PaperP1.Asymptotics.LargeKernelTupleCounts
 public import PaperP1.Arithmetic.SmallKernelBlocks
 public import PaperP1.Asymptotics.SmallKernelBlockCount
 public import PaperP1.Asymptotics.FixedWidthSmallKernel
+public import PaperP1.Diophantine.BivariateGridCount
