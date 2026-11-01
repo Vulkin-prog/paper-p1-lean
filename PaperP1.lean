@@ -99,6 +99,12 @@ public import PaperP1.Asymptotics.SaturationDegreeBudget
 public import PaperP1.Asymptotics.SaturationDegrees
 public import PaperP1.Arithmetic.RelaxedSaturation
 public import PaperP1.Asymptotics.RelaxedSaturationDegrees
+public import PaperP1.Combinatorics.MinimalFiniteCover
+public import PaperP1.Combinatorics.PrivateStarCover
+public import PaperP1.Combinatorics.GraphStarPartition
+public import PaperP1.Combinatorics.FinitePolymerBound
+public import PaperP1.Combinatorics.GraphStarWeights
+public import PaperP1.Combinatorics.MarkedGraphGenerator
 public import PaperP1.Analysis.IntegerProductTail
 public import PaperP1.Coding.CoordinateRegularisation
 public import PaperP1.Coding.TernaryConstraints

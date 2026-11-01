@@ -546,11 +546,35 @@
       "source": "main_sections/cores.tex",
       "line": 111,
       "sha256": "156f5d4177e2fa6660c40fe7ba33639bf2880208535ce72dc4cfe7494cd9eb61",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.MarkedGraphGenerator.main_7_4",
+        "PaperP1.MarkedGraphGenerator.degree_profile_bound",
+        "PaperP1.MarkedGraphGenerator.polynomial_star_bound",
+        "PaperP1.MarkedGraphGenerator.exponential_star_bound",
+        "PaperP1.MarkedGraphGenerator.rational_star_bound",
+        "PaperP1.GraphStarWeights.mem_families",
+        "PaperP1.GraphStarWeights.heterogeneous_generating_bound",
+        "PaperP1.GraphStarWeights.all_blocks_weight_le",
+        "PaperP1.GraphStarWeights.star_leaves_weight",
+        "PaperP1.GraphStarPartition.admissible_iff_isolated_marked",
+        "PaperP1.GraphStarPartition.exists_partition",
+        "PaperP1.GraphStarPartition.exists_private_family",
+        "PaperP1.PrivateStarCover.blocks_pairwise_disjoint",
+        "PaperP1.PrivateStarCover.blocks_cover",
+        "PaperP1.PrivateStarCover.blocks_isBlock",
+        "PaperP1.MinimalFiniteCover.exists_private_cover",
+        "PaperP1.FinitePolymerBound.generating_le_product",
+        "PaperP1.FinitePolymerBound.generating_le_exp",
+        "PaperP1.FinitePolymerBound.weight_eq_partition"
+      ],
+      "literature_inputs": [
+        "P1-COMB-MARKED-GENERATOR"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0022"
+      ],
+      "notes": "The exact finite family of vertex sets whose induced isolated vertices are marked is identified by an iff theorem. Every such set has an internally constructed partition into marked singletons and graph stars, using a minimal edge/singleton cover with private vertices. The finite polymer comparison and exact star weights prove the source bound with the actual maximum degree and 4*Delta*z<1. Stronger versions give the actual degree profile, heterogeneous nonnegative vertex weights, exp(M*z+n*z*((1+z)^Delta-1)) and exp(M*z+n*z*(exp(Delta*z)-1)) for all z>=0, and exp(M*z+2*n*Delta*z^2/(2-Delta*z)) for Delta*z<2. No connected-set count, spanning-tree encoding or cluster estimate is assumed. Full build: 8905 jobs; actual audit: 2207 theorem/lemma declarations. See MARKED_GENERATOR_ALIGNMENT.md."
     },
     {
       "label": "p1:close:positivity",

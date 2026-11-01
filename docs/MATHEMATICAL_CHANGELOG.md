@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Twenty-one mathematical improvements are confirmed; no error in a manuscript conclusion
+**Twenty-two mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -753,3 +753,37 @@ All 374 distinct coverage/finding declaration names were checked directly by Lea
 
 Validated implementation of article Lemma 7.3 and P1-MATH-0021:
 [41cefe7cf8bb7d036a201ea5ae764b66795f2023](https://github.com/Vulkin-prog/paper-p1-lean/commit/41cefe7cf8bb7d036a201ea5ae764b66795f2023).
+
+## P1-MATH-0022 — Stronger graph generating bounds from disjoint stars
+
+- Location: article Lemma 7.4, page 24, `p1:core:generator`,
+  `main_sections/cores.tex:111` in V1.6.
+- Original conclusion: exp(M*z+4*n*Delta*z^2/(1-4*Delta*z)), for z>=0
+  and 4*Delta*z<1.
+- Improvement: the same actual admissible family has the stronger bounds
+  exp(M*z+n*z*((1+z)^Delta-1)) and
+  exp(M*z+n*z*(exp(Delta*z)-1)) for every z>=0. The rational corollary
+  exp(M*z+2*n*Delta*z^2/(2-Delta*z)) holds under the wider Delta*z<2
+  condition. The actual degree profile can replace the maximum degree.
+- The heterogeneous form permits any nonnegative vertex weights and gives
+  exp(sum_marked w_v + sum_v w_v*(prod_{u adjacent v}(1+w_u)-1)).
+  The left side is the actual sum of products over admissible vertex sets.
+- Evidence: `MarkedGraphGenerator.polynomial_star_bound`,
+  `exponential_star_bound`, `rational_star_bound`, `degree_profile_bound`,
+  `GraphStarWeights.heterogeneous_generating_bound`,
+  `GraphStarPartition.exists_partition`, `MinimalFiniteCover.exists_private_cover`
+  and `FinitePolymerBound.generating_le_exp`.
+- Proof: a minimal finite cover by graph edges and marked singletons has
+  a private vertex in every member. Orienting these as leaves and grouping
+  the other endpoints gives disjoint stars. Counting all star collections
+  by a finite product bounds the original sum. All coverings, partitions
+  and weight identities are constructed and proved internally.
+- Suggested revision: add the star bound and its heterogeneous version;
+  retain the original rational formula as a corollary where convenient.
+  No optimality or manuscript-error claim is made.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,905 jobs),
+  followed by the actual audit of all 2,207 theorem/lemma declarations.
+  Only `propext`, `Classical.choice` and `Quot.sound` occur. Not integrated
+  into a new manuscript version.
+
+All 393 distinct coverage/finding declaration names were checked directly by Lean.

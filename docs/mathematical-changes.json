@@ -726,6 +726,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "41cefe7cf8bb7d036a201ea5ae764b66795f2023"
+    },
+    {
+      "id": "P1-MATH-0022",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:core:generator",
+        "number": "7.4",
+        "page": 24,
+        "source": "main_sections/cores.tex",
+        "line": 111,
+        "statement_sha256": "156f5d4177e2fa6660c40fe7ba33639bf2880208535ce72dc4cfe7494cd9eb61"
+      },
+      "original_assumption": "Article Lemma 7.4 bounds the admissible-set generating function by exp(M*z+4*n*Delta*z^2/(1-4*Delta*z)) for z>=0 and 4*Delta*z<1.",
+      "finding": "A disjoint-star partition proves the stronger bounds exp(M*z+n*z*((1+z)^Delta-1)) and exp(M*z+n*z*(exp(Delta*z)-1)) for every z>=0. A rational corollary is exp(M*z+2*n*Delta*z^2/(2-Delta*z)) under the wider Delta*z<2 condition. The fully heterogeneous version bounds the actual sum of products of nonnegative vertex weights by exp(sum_marked w_v + sum_v w_v*(prod_{u adjacent v}(1+w_u)-1)).",
+      "evidence": [
+        "PaperP1.MarkedGraphGenerator.polynomial_star_bound",
+        "PaperP1.MarkedGraphGenerator.exponential_star_bound",
+        "PaperP1.MarkedGraphGenerator.rational_star_bound",
+        "PaperP1.MarkedGraphGenerator.degree_profile_bound",
+        "PaperP1.GraphStarWeights.heterogeneous_generating_bound",
+        "PaperP1.GraphStarPartition.exists_partition",
+        "PaperP1.MinimalFiniteCover.exists_private_cover",
+        "PaperP1.FinitePolymerBound.generating_le_exp"
+      ],
+      "proposed_revision": "Replace or supplement the generating-function lemma by the all-activity star bound and its heterogeneous form. The original rational bound follows as an explicit corollary. The proof uses minimal finite covers with private vertices, disjoint star partitions and a finite product comparison.",
+      "impact": "Improves the exponent and removes the small-activity restriction for the exponential star bounds; retains the full degree profile and permits nonidentical nonnegative vertex weights. All partitions and sums concern the actual graph. No asymptotic approximation, tree-enumeration input or independence assumption is used. No optimality or manuscript-error claim is made.",
+      "validation": "Full Lean v4.36.0-rc2 build (8905 jobs) and actual axiom audit of all 2207 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 393 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

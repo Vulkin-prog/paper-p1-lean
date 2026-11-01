@@ -20,6 +20,26 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Marked-isolate graph generating function
+
+Stable ID: `P1-COMB-MARKED-GENERATOR`. Status: **proved**.
+
+- Target: article Lemma 7.4, page 24, `p1:core:generator`.
+- Lean: `MarkedGraphGenerator.main_7_4`, with the exact admissible family,
+  nonnegative activity and actual finite-graph maximum degree.
+- A minimal finite singleton/edge cover has a private vertex in each
+  member. Choosing these as leaves partitions the covered set into
+  disjoint graph stars and marked singletons. Existence, disjointness,
+  exact covering and graph incidences are proved internally.
+- A finite polymer sum/product comparison and the powerset generating
+  identity give the stronger star bounds. An elementary proved Mathlib
+  exponential inequality implies the original rational conclusion.
+- No connected-set enumeration, spanning-tree count or cluster estimate
+  is an unproved input. No additional Paper C source is ported. Mathlib
+  at the pinned revision supplies finite sets, products and exponentials.
+- See [alignment](MARKED_GENERATOR_ALIGNMENT.md) and P1-MATH-0022 for
+  all-activity, degree-profile and heterogeneous-weight improvements.
+
 ## Incoming and outgoing saturation degrees
 
 Stable ID: `P1-ARITH-SATURATION-DEGREES`. Status: **proved**.
