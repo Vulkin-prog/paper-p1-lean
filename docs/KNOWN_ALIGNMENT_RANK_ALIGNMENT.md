@@ -65,3 +65,7 @@ The nonaligned rank bound, triple theorem and algebraic curve-counting
 inputs remain separate unfinished work. No new external mathematical
 hypothesis, Paper C port, manuscript revision or Palomar registration
 is introduced.
+
+Validated complete article 13.7 and P1-MATH-0042 (9,311 build jobs;
+3,349 audited declarations; 1,064 directly checked coverage/finding names):
+[0b7945eff438d61604f6a3aea0bc33f7263372e9](https://github.com/Vulkin-prog/paper-p1-lean/commit/0b7945eff438d61604f6a3aea0bc33f7263372e9).

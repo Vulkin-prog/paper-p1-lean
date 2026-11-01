@@ -1750,3 +1750,7 @@ Coverage is 52/167, with 42 confirmed improvements. The full build passed
 audit, and all 1,064 coverage/finding names were checked directly. Only
 propext, Classical.choice and Quot.sound occur. No manuscript revision
 or Palomar registration is made.
+
+Validated complete article 13.7 and P1-MATH-0042 (9,311 build jobs;
+3,349 audited declarations; 1,064 directly checked coverage/finding names):
+[0b7945eff438d61604f6a3aea0bc33f7263372e9](https://github.com/Vulkin-prog/paper-p1-lean/commit/0b7945eff438d61604f6a3aea0bc33f7263372e9).
