@@ -3370,14 +3370,40 @@
         "PaperP1.GroupedKernelResultants.kernel_grouped",
         "PaperP1.GroupedKernelResultants.grouped_divides_linear_product",
         "PaperP1.GroupedKernelResultants.grouped_overlap_decomposition",
-        "PaperP1.GroupedKernelResultants.grouped_quotient_divides_resultant_square"
+        "PaperP1.GroupedKernelResultants.grouped_quotient_divides_resultant_square",
+        "PaperP1.SquarefreeOutsideDivisor.outside_pos",
+        "PaperP1.SquarefreeOutsideDivisor.inside_pos",
+        "PaperP1.SquarefreeOutsideDivisor.outside_dvd",
+        "PaperP1.SquarefreeOutsideDivisor.inside_dvd",
+        "PaperP1.SquarefreeOutsideDivisor.inside_divides_divisor",
+        "PaperP1.SquarefreeOutsideDivisor.prime_dvd_outside_iff",
+        "PaperP1.SquarefreeOutsideDivisor.outside_coprime",
+        "PaperP1.SquarefreeOutsideDivisor.outside_squarefree",
+        "PaperP1.SquarefreeOutsideDivisor.split",
+        "PaperP1.SquarefreeOutsideDivisor.inside_eq_gcd",
+        "PaperP1.SquarefreeOutsideDivisor.outside_eq_div_gcd",
+        "PaperP1.SquarefreeOutsideDivisor.prime_dvd_radical_iff",
+        "PaperP1.SquarefreeOutsideDivisor.outside_eq_source",
+        "PaperP1.SquarefreeOutsideDivisor.log_loss",
+        "PaperP1.GroupedPrescribedDivisors.assigned_pos",
+        "PaperP1.GroupedPrescribedDivisors.assigned_divides_block",
+        "PaperP1.GroupedPrescribedDivisors.assigned_divides_divisor",
+        "PaperP1.GroupedPrescribedDivisors.prime_dvd_assigned_iff",
+        "PaperP1.GroupedPrescribedDivisors.shared_block_prime_divides_resultant",
+        "PaperP1.GroupedPrescribedDivisors.supports_disjoint",
+        "PaperP1.GroupedPrescribedDivisors.support_union",
+        "PaperP1.GroupedPrescribedDivisors.assigned_product",
+        "PaperP1.GroupedPrescribedDivisors.assigned_coprime",
+        "PaperP1.GroupedPrescribedDivisors.outside_source_allocation",
+        "PaperP1.ActualPrescribedDivisorBudget.actual_outside_height",
+        "PaperP1.ActualPrescribedDivisorBudget.actual_outside_divisor_count"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
         "P1-MATH-0055",
         "P1-MATH-0056"
       ],
-      "notes": "The full actual fixed-kernel bound N^(2*c*log(2)+epsilon) is proved for all degrees >=2 and fixed polylogarithmic widths (P1-MATH-0055). The quantitative grouped-kernel resultant relation is now also closed: for every disjoint grouping of the nonzero actual linear factors, M=product of block kernels equals q*R^2 with R|D_A, hence M/q|D_A^2. This strengthens the paired-quadratic source relation and uses no assumed prime-power valuation count (P1-MATH-0056). Actual q*D_A heights, prime budgets and linear support restrictions are proved. The prescribed-divisor allocation, source selected quadratic enumeration and its complete growing-degree count remain open; full T5.2 is not claimed."
+      "notes": "The full fixed-kernel bound is proved for arbitrary degrees >=2 and fixed polylogarithmic widths (P1-MATH-0055). The quantitative grouped-kernel resultant identity M=q*R^2, R|D_A, is proved for arbitrary disjoint blocks (P1-MATH-0056). The actual prescribed divisor e prime-removal operation now has exact e prime = e/gcd(e,rad(D_A)), positivity, squarefreeness, coprimality and logarithmic loss <=log(D_A). Explicit assigned prime products divide each block kernel and e prime, have product e prime, and are pairwise coprime. Their actual divisor enumeration cost is <=N^(c*log(2)+epsilon), from a derived height rather than an assumed count. The remaining prescribed-divisor conclusion still needs the actual pairing/selected-quadratic averaging, uniform shifted quadratic counts and the final enumeration. Full T5.2 is not claimed."
     },
     {
       "label": "p13:half:small-kernels",

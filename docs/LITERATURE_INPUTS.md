@@ -1400,3 +1400,13 @@ identity works for arbitrary disjoint block sizes, P1-MATH-0056.
 It uses actual offset differences, elementary prime divisibility and
 checked finite products. No additional literature input or Paper C
 port is introduced. See [alignment](GROUPED_KERNEL_RESULTANT_ALIGNMENT.md).
+
+## Actual prescribed-divisor removal, allocation and budget
+
+The exact source gcd/radical formula, logarithmic loss, disjoint prime
+allocation, product identity and coprimality are proved on the actual
+block kernels. The actual remaining-divisor count is deduced from its
+height <=(3N)^d and the proved squarefree divisor budget. No allocation,
+prime-occurrence uniqueness or enumeration estimate is assumed. The
+selected quadratic counting application is still open; see
+[alignment](GROUPED_DIVISOR_ALLOCATION_ALIGNMENT.md).

@@ -446,3 +446,9 @@ public import PaperP1.Arithmetic.SquarefreeKernelProducts
 public import PaperP1.Arithmetic.SplitOffsetResultantDecomposition
 
 public import PaperP1.Arithmetic.GroupedKernelResultants
+
+public import PaperP1.Arithmetic.SquarefreeOutsideDivisor
+
+public import PaperP1.Arithmetic.GroupedPrescribedDivisors
+
+public import PaperP1.Asymptotics.ActualPrescribedDivisorBudget

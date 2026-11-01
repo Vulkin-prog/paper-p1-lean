@@ -2620,7 +2620,7 @@
         "statement_sha256": "32f53c032c8c2c0458723e096e068b662179498b5e4a5a9eb4c5ddb3170f2c04"
       },
       "original_assumption": "Inside T5.2 the even set of linear factors is paired into quadratics and the product of quadratic kernels divided by the total kernel is asserted to divide D_A^2, using prime-occurrence exponent bookkeeping.",
-      "finding": "For every finite partition into pairwise disjoint blocks, of arbitrary block sizes, the actual product M of block kernels has the exact form M=q*R^2 with R|D_A. Thus the source quotient divisibility follows, and its quotient is explicitly a square whose root divides the actual difference resultant. No even-degree or quadratic-block restriction is needed for this finite identity; linear factors only need be nonzero. The proof uses the exact symmetric-difference multiplication identity for squarefree kernels, an overlap divisor, induction over ordered offsets and finite product identities. No prime-occurrence valuation or binomial-pair count is assumed.",
+      "finding": "For every finite partition into pairwise disjoint blocks, of arbitrary block sizes, the actual product M of block kernels has the exact form M=q*R^2 with R|D_A. Thus the source quotient divisibility follows, and its quotient is explicitly a square whose root divides the actual difference resultant. No even-degree or quadratic-block restriction is needed for this finite identity; linear factors only need be nonzero. The proof uses the exact symmetric-difference multiplication identity for squarefree kernels, an overlap divisor, induction over ordered offsets and finite product identities. No prime-occurrence valuation or binomial-pair count is assumed. The source prescribed-divisor removal is now identified exactly with e/gcd(e,rad(D_A)). For arbitrary disjoint blocks, explicit prime-filter products give an actual allocation of this divisor into pairwise coprime factors, each dividing its block kernel and the prescribed divisor. The removed factor divides D_A, its logarithmic loss is bounded by log(D_A), and the actual remaining-divisor enumeration cost is proved from its derived growing-degree height.",
       "evidence": [
         "PaperP1.SquarefreeKernelProducts.mem_support_iff",
         "PaperP1.SquarefreeKernelProducts.support_mul",
@@ -2646,16 +2646,44 @@
         "PaperP1.GroupedKernelResultants.kernel_grouped",
         "PaperP1.GroupedKernelResultants.grouped_divides_linear_product",
         "PaperP1.GroupedKernelResultants.grouped_overlap_decomposition",
-        "PaperP1.GroupedKernelResultants.grouped_quotient_divides_resultant_square"
+        "PaperP1.GroupedKernelResultants.grouped_quotient_divides_resultant_square",
+        "PaperP1.SquarefreeOutsideDivisor.outside_pos",
+        "PaperP1.SquarefreeOutsideDivisor.inside_pos",
+        "PaperP1.SquarefreeOutsideDivisor.outside_dvd",
+        "PaperP1.SquarefreeOutsideDivisor.inside_dvd",
+        "PaperP1.SquarefreeOutsideDivisor.inside_divides_divisor",
+        "PaperP1.SquarefreeOutsideDivisor.prime_dvd_outside_iff",
+        "PaperP1.SquarefreeOutsideDivisor.outside_coprime",
+        "PaperP1.SquarefreeOutsideDivisor.outside_squarefree",
+        "PaperP1.SquarefreeOutsideDivisor.split",
+        "PaperP1.SquarefreeOutsideDivisor.inside_eq_gcd",
+        "PaperP1.SquarefreeOutsideDivisor.outside_eq_div_gcd",
+        "PaperP1.SquarefreeOutsideDivisor.prime_dvd_radical_iff",
+        "PaperP1.SquarefreeOutsideDivisor.outside_eq_source",
+        "PaperP1.SquarefreeOutsideDivisor.log_loss",
+        "PaperP1.GroupedPrescribedDivisors.assigned_pos",
+        "PaperP1.GroupedPrescribedDivisors.assigned_divides_block",
+        "PaperP1.GroupedPrescribedDivisors.assigned_divides_divisor",
+        "PaperP1.GroupedPrescribedDivisors.prime_dvd_assigned_iff",
+        "PaperP1.GroupedPrescribedDivisors.shared_block_prime_divides_resultant",
+        "PaperP1.GroupedPrescribedDivisors.supports_disjoint",
+        "PaperP1.GroupedPrescribedDivisors.support_union",
+        "PaperP1.GroupedPrescribedDivisors.assigned_product",
+        "PaperP1.GroupedPrescribedDivisors.assigned_coprime",
+        "PaperP1.GroupedPrescribedDivisors.outside_source_allocation",
+        "PaperP1.ActualPrescribedDivisorBudget.actual_outside_height",
+        "PaperP1.ActualPrescribedDivisorBudget.actual_outside_divisor_count"
       ],
-      "proposed_revision": "State the stronger exact square-overlap decomposition for arbitrary disjoint block groupings as the finite resultant lemma. Recover the paired-quadratic quotient used in T5.2 as a special case. The selected-quadratic counting exponent continues to use two-element blocks; this algebraic generalization alone does not extend that exponent to arbitrary blocks.",
-      "impact": "Closes the quantitative resultant relation required by the remaining prescribed-divisor proof, with a stronger exact identity and broader finite scope. The source divisor allocation and selected quadratic enumeration remain open, so full T5.2 remains in progress and numbered coverage stays 56/167.",
-      "validation": "Lean v4.36.0-rc2 full build passed (9,589 jobs); actual axiom audit passed for all 3,991 theorem/lemma declarations using only propext, Classical.choice and Quot.sound. All 1,706 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered-result records remain intact. Ubuntu available space: 17.59 GiB. No new unproved literature input or Paper C port.",
+      "proposed_revision": "State the stronger exact square-overlap decomposition for arbitrary disjoint block groupings as the finite resultant lemma. Recover the paired-quadratic quotient used in T5.2 as a special case. The selected-quadratic counting exponent continues to use two-element blocks; this algebraic generalization alone does not extend that exponent to arbitrary blocks. The same finite general-block lemma may include the explicit allocation away from D_A; keep the subsequent quadratic counting argument separate.",
+      "impact": "Closes the quantitative resultant identity and actual prescribed-divisor allocation for arbitrary disjoint blocks, and the actual divisor enumeration budget. The selected quadratic averaging, shifted counting and final source enumeration remain open; full T5.2 remains in progress and numbered coverage stays 56/167.",
+      "validation": "Lean v4.36.0-rc2 full build passed (9,595 jobs); actual axiom audit passed for all 4,017 theorem/lemma declarations using only propext, Classical.choice and Quot.sound. All 1,732 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 result records remain intact. Ubuntu available space: 17.57 GiB. The earlier validation commit is retained in validation_history. No new unproved literature input or Paper C port.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "a126778fb25fd0c7744a86dc30bf10009e44b077"
+      "validation_history": [
+        "a126778fb25fd0c7744a86dc30bf10009e44b077"
+      ]
     }
   ]
 }

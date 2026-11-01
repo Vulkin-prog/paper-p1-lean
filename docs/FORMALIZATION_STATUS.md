@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3991 audited theorem/lemma declarations**. This
+- The project currently has **4017 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1785,3 +1785,22 @@ Grouped-resultant verification: full build passed (9,589 jobs); the
 actual audit passed for all 3,991 declarations; all 1,706 distinct
 ledger/finding names were checked directly. All 138 manifest entries
 and 167 result records remain intact; Ubuntu has 17.59 GiB free.
+
+## Actual grouped prescribed-divisor allocation and enumeration cost
+
+The prime-removal divisor is proved equal to e/gcd(e,rad(D_A)), is
+positive and squarefree, divides e and is coprime to D_A. Its removed
+factor divides D_A and costs at most log(D_A) in the logarithmic budget.
+Explicit block prime products divide both their block kernels and this
+divisor, multiply exactly to it and are pairwise coprime. This extends
+the arbitrary-block finite scope in P1-MATH-0056. The actual divisor
+enumeration cost is proved <=N^(c log2+epsilon) from a derived height.
+Pairing/selected-quadratic averaging, shifted quadratic counting and
+final source enumeration still remain open. T5.2 stays in progress;
+coverage stays 56/167 with 56 confirmed improvements. See
+[alignment](GROUPED_DIVISOR_ALLOCATION_ALIGNMENT.md).
+
+Allocation verification: full build passed (9,595 jobs); actual axiom
+audit passed for all 4,017 declarations; all 1,732 distinct ledger/finding
+names were checked directly. All 138 original manifest entries and 167
+result records remain intact. Ubuntu available space: 17.57 GiB.

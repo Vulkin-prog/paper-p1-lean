@@ -2698,3 +2698,13 @@ The prescribed-divisor count still uses quadratic blocks and is not
 completed by this algebraic extension alone. See
 [alignment](GROUPED_KERNEL_RESULTANT_ALIGNMENT.md) and the machine-readable
 finding for every checked declaration.
+
+## P1-MATH-0056 extension — Explicit general-block divisor allocation
+
+The exact source prime-removal formula, removed-factor logarithmic loss
+and actual pairwise coprime block allocation are now proved in the same
+general-block scope. The actual divisor enumeration budget is also
+closed from its derived height. This extends the existing finding and
+adds no new improvement identifier. Full T5.2 remains open at the
+selected quadratic counting step. See
+[alignment](GROUPED_DIVISOR_ALLOCATION_ALIGNMENT.md).

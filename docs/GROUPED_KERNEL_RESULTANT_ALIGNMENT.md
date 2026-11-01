@@ -60,5 +60,9 @@ of the prescribed divisor away from D_A, and selected quadratic
 enumeration. The algebraic grouping extension alone does not establish
 that count for arbitrary blocks.
 
+The later [allocation checkpoint](GROUPED_DIVISOR_ALLOCATION_ALIGNMENT.md)
+closes the actual prescribed-divisor allocation and its divisor budget.
+Selected quadratic averaging/counting and final enumeration remain open.
+
 No new unproved literature input, Paper C port, source-byte change or
 Palomar registration is introduced.
