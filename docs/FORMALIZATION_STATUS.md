@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3655 audited theorem/lemma declarations**. This
+- The project currently has **3667 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1390,3 +1390,23 @@ were checked directly by Lean. Original manuscript bytes are unchanged.
 Validated large-kernel tuple-branch checkpoint (9,441 build jobs;
 3,655 audited declarations; 1,370 directly checked coverage/finding names):
 [8fa5f5d3988280093242c5b3fce68a506d9d1c80](https://github.com/Vulkin-prog/paper-p1-lean/commit/8fa5f5d3988280093242c5b3fce68a506d9d1c80).
+
+## One-small-kernel count for arbitrary fixed-width selected blocks
+
+The first assertion of T1.13 is proved by
+`FixedWidthSmallKernel.one_kernel_real_cutoff`. The actual selected subsets
+may vary with the integer centre. Real width and upper height constants
+are covered by proved natural-ceiling inequalities; real prime thresholds
+are transported exactly by their floor. A finite positive-value injection
+gives the explicit offset count, and one threshold precedes every centre,
+selected subset, critical length, cutoff and nonnegative real T. The
+one-kernel assertion needs no lower centre or prime/diameter comparison.
+This extends P1-MATH-0046. Full T1.13 remains in progress, with its
+two-small-kernel assertion open. Coverage remains 54/167 and there are
+47 confirmed improvements. See
+[statement alignment](FIXED_WIDTH_SMALL_KERNEL_ALIGNMENT.md).
+
+The full build passed (9,447 jobs); all 3,667 declarations passed the
+actual axiom audit, permitting only propext, Classical.choice and
+Quot.sound. All 1,382 distinct coverage/finding names were checked
+directly by Lean. Original manuscript bytes are unchanged.

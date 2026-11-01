@@ -2238,11 +2238,26 @@
       "source": "companion_sections/arithmetic_appendix.tex",
       "line": 1016,
       "sha256": "abfe0badc4580784052dd0b667c0f6e3fcb66cb7df81671a5a21b1c20132fb97",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.SmallKernelBlocks.mem_starts",
+        "PaperP1.SmallKernelBlocks.selected_subset",
+        "PaperP1.SmallKernelBlocks.fixed_offset_card",
+        "PaperP1.SmallKernelBlocks.starts_card",
+        "PaperP1.SmallKernelBlocks.finite_exp_bound",
+        "PaperP1.SmallKernelBlockCount.logarithmic_blocks",
+        "PaperP1.SmallKernelBlockCount.arbitrary_selected_blocks",
+        "PaperP1.FixedWidthSmallKernel.realSelectedStarts_eq",
+        "PaperP1.FixedWidthSmallKernel.offsets_card",
+        "PaperP1.FixedWidthSmallKernel.one_kernel",
+        "PaperP1.FixedWidthSmallKernel.one_kernel_real",
+        "PaperP1.FixedWidthSmallKernel.one_kernel_real_cutoff"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0046"
+      ],
+      "notes": "The one-small-kernel assertion is proved for arbitrary positive selected subsets depending on an integer centre, real fixed width and height constants, real prime cutoffs and all real T>=0, with one threshold before all source choices. Finite offset injection and exact real-cutoff floor transport are proved; no lower centre bound or diameter lower bound on the prime cutoff is needed. Full T1.13 remains in progress: the two-small-kernel assertion needs T1.5. See FIXED_WIDTH_SMALL_KERNEL_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:fixed-support",

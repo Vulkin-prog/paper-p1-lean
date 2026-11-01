@@ -1484,6 +1484,11 @@ import PaperP1
 #print axioms PaperP1.SignedChannelLeadingBounds.quotient_bounds
 #print axioms PaperP1.SignedChannelLeadingBounds.length_bounds
 #print axioms PaperP1.SignedChannelLeadingBounds.signed_positive
+#print axioms PaperP1.SmallKernelBlocks.mem_starts
+#print axioms PaperP1.SmallKernelBlocks.selected_subset
+#print axioms PaperP1.SmallKernelBlocks.fixed_offset_card
+#print axioms PaperP1.SmallKernelBlocks.starts_card
+#print axioms PaperP1.SmallKernelBlocks.finite_exp_bound
 #print axioms PaperP1.SmallKernelCount.mem_smallKernelValues
 #print axioms PaperP1.SmallKernelCount.smallKernelValues_subset_cover
 #print axioms PaperP1.SmallKernelCount.card_fibreValues_le
@@ -1833,6 +1838,11 @@ import PaperP1
 #print axioms PaperP1.FixedChannelMassTheorem.companion_T2_5
 #print axioms PaperP1.FixedHeightResidual.large_kernel_rate
 #print axioms PaperP1.FixedHeightResidual.full_kernel_rate
+#print axioms PaperP1.FixedWidthSmallKernel.realSelectedStarts_eq
+#print axioms PaperP1.FixedWidthSmallKernel.offsets_card
+#print axioms PaperP1.FixedWidthSmallKernel.one_kernel
+#print axioms PaperP1.FixedWidthSmallKernel.one_kernel_real
+#print axioms PaperP1.FixedWidthSmallKernel.one_kernel_real_cutoff
 #print axioms PaperP1.FixedWindowBranching.retained_independent
 #print axioms PaperP1.FixedWindowBranching.finite_stronger
 #print axioms PaperP1.FixedWindowBranching.finite_source_bound
@@ -2005,6 +2015,8 @@ import PaperP1
 #print axioms PaperP1.SeveralAnchorCounts.finite_factor_bound
 #print axioms PaperP1.SeveralAnchorCounts.uniform_count
 #print axioms PaperP1.SeveralAnchorCounts.critical_count
+#print axioms PaperP1.SmallKernelBlockCount.logarithmic_blocks
+#print axioms PaperP1.SmallKernelBlockCount.arbitrary_selected_blocks
 #print axioms PaperP1.SourceTranslationCount.uniform_counts
 #print axioms PaperP1.SourceTranslationCount.all_heights
 #print axioms PaperP1.SourceTranslationCount.leading_counts

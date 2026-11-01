@@ -1150,3 +1150,19 @@ companion T1.14 remains in progress.
   assembly are not hidden hypotheses of these theorems and do not count as
   completed coverage. No new Paper C port or unproved literature input is
   introduced. See [alignment](LARGE_KERNEL_TUPLES_ALIGNMENT.md).
+
+## Arbitrary selected fixed-width one-kernel blocks
+
+Stable ID: `P1-ARITH-ONE-KERNEL-FIXED-WIDTH`. Status: **proved first assertion**,
+companion T1.13 remains in progress.
+
+- Actual positive selected values, arbitrary subsets varying with the centre,
+  a finite offset cover and an injective value map give the finite count.
+  The already proved square-root Rankin endpoint supplies the analytic bound.
+- One threshold precedes all sets, critical lengths, prime thresholds and
+  real T>=0. Real width/height ceilings and the exact real-cutoff floor
+  dictionary are proved. No rank, independence or target count is assumed.
+- The separate two-small-kernel assertion still requires T1.5. No new
+  unproved literature input or Paper C port is introduced. The stronger
+  one-kernel scope extends P1-MATH-0046. See
+  [alignment](FIXED_WIDTH_SMALL_KERNEL_ALIGNMENT.md).

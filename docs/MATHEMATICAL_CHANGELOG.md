@@ -2289,3 +2289,33 @@ were checked directly by Lean. Original manuscript bytes are unchanged.
 Validated large-kernel tuple-branch checkpoint (9,441 build jobs;
 3,655 audited declarations; 1,370 directly checked coverage/finding names):
 [8fa5f5d3988280093242c5b3fce68a506d9d1c80](https://github.com/Vulkin-prog/paper-p1-lean/commit/8fa5f5d3988280093242c5b3fce68a506d9d1c80).
+
+### P1-MATH-0046 extension — Arbitrary selected fixed-width one-kernel blocks
+
+The one-kernel argument now proves the first assertion of T1.13 for actual
+positive subsets V(x) varying with the integer centre. Fixed-offset
+positive-value injection gives
+
+    #starts <= 2*#offsets*sqrt(X)*sqrt(T)*exp(2*sqrt(H)).
+
+Logarithmic offset and cutoff budgets give one threshold before all
+source sets, lengths and nonnegative real T. Real fixed width/height
+coefficients are enlarged by proved ceiling inequalities; real prime
+thresholds use exact floor equality of the actual selected family. No
+lower centre bound, prime/diameter comparison or fixed subset pattern
+is needed for this first assertion. Evidence is
+`SmallKernelBlocks.fixed_offset_card`, `finite_exp_bound`,
+`SmallKernelBlockCount.arbitrary_selected_blocks`,
+`FixedWidthSmallKernel.one_kernel_real`, `realSelectedStarts_eq` and
+`one_kernel_real_cutoff`.
+
+Full T1.13 remains in progress because the distinct two-small-kernel
+assertion is not proved. Numbered coverage stays 54/167, with 47
+confirmed improvements. No new unproved literature input, Paper C port
+or manuscript revision is introduced. See
+[alignment](FIXED_WIDTH_SMALL_KERNEL_ALIGNMENT.md).
+
+The full build passed (9,447 jobs); all 3,667 declarations passed the
+actual axiom audit, permitting only propext, Classical.choice and
+Quot.sound. All 1,382 distinct coverage/finding names were checked
+directly by Lean. Original manuscript bytes are unchanged.

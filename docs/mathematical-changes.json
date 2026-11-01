@@ -2006,7 +2006,7 @@
         "statement_sha256": "82f3cf8921022846060a505c8fe8b23bb46ba877387589ffe277a885aacc0ff6"
       },
       "original_assumption": "T1.6 states asymptotic bounds for separated pairs with a selected kernel larger than real 1<=T<=3N and for windows with one kernel at most T, using fixed 0<tau<1/2. Its proof uses O(N/r) CRT fibres even when r>N and an infinite rough Euler product.",
-      "finding": "The actual parity relation forces every large odd prime of a selected anchor into the other window without requiring even selections. Canonical support fibres, finite prime assignments and a finite Rankin inequality give explicit bounds. For 2<=N and 1<=B<=N, both orientations of all anchored square-parity pairs, including overlapping windows, have count <=8*sqrt(3)*B*N^(3/2)*T^(-1/2+tau)*exp(2*sqrt(B)+(2^tau/tau)*B^(1-tau)); actual small-kernel windows have count <=2*sqrt(3)*B*N^(1/2)*sqrt(T)*exp(2*sqrt(B)). The CRT fibre inequality floor(N/r)+1<=4N/r is proved from r<=3N, including r>N. The finite statements hold for every real T>0 and 0<tau<=1/2; uniform logarithmic-width absorption proves the full source asymptotics under one threshold independent of T.",
+      "finding": "The actual parity relation forces every large odd prime of a selected anchor into the other window without requiring even selections. Canonical support fibres, finite prime assignments and a finite Rankin inequality give explicit bounds. For 2<=N and 1<=B<=N, both orientations of all anchored square-parity pairs, including overlapping windows, have count <=8*sqrt(3)*B*N^(3/2)*T^(-1/2+tau)*exp(2*sqrt(B)+(2^tau/tau)*B^(1-tau)); actual small-kernel windows have count <=2*sqrt(3)*B*N^(1/2)*sqrt(T)*exp(2*sqrt(B)). The CRT fibre inequality floor(N/r)+1<=4N/r is proved from r<=3N, including r>N. The finite statements hold for every real T>0 and 0<tau<=1/2; uniform logarithmic-width absorption proves the full source asymptotics under one threshold independent of T. The one-kernel count is also proved for arbitrary selected positive subsets V(x) of real fixed-width translated intervals, with the subsets varying with the integer centre. Actual positive-value injection gives #starts<=2*#offsets*sqrt(X)*sqrt(T)*exp(2*sqrt(H)). One logarithmic threshold precedes all finite centre/offset/selected sets and every real T>=0. Natural ceilings transport real width/height constants, and exact floor equality transports real prime thresholds. No lower centre bound or diameter lower bound on the prime cutoff is required for this one-kernel assertion.",
       "evidence": [
         "PaperP1.KernelSupportFibres.mem_roughPrimes",
         "PaperP1.KernelSupportFibres.support_product",
@@ -2056,11 +2056,23 @@
         "PaperP1.SelectedKernelSourceFamilies.source_pairs_subset",
         "PaperP1.SelectedKernelSourceFamilies.small_windows_eq",
         "PaperP1.LargeSelectedKernelTheorem.uniform_source_counts",
-        "PaperP1.LargeSelectedKernelTheorem.companion_T1_6"
+        "PaperP1.LargeSelectedKernelTheorem.companion_T1_6",
+        "PaperP1.SmallKernelBlocks.mem_starts",
+        "PaperP1.SmallKernelBlocks.selected_subset",
+        "PaperP1.SmallKernelBlocks.fixed_offset_card",
+        "PaperP1.SmallKernelBlocks.starts_card",
+        "PaperP1.SmallKernelBlocks.finite_exp_bound",
+        "PaperP1.SmallKernelBlockCount.logarithmic_blocks",
+        "PaperP1.SmallKernelBlockCount.arbitrary_selected_blocks",
+        "PaperP1.FixedWidthSmallKernel.realSelectedStarts_eq",
+        "PaperP1.FixedWidthSmallKernel.offsets_card",
+        "PaperP1.FixedWidthSmallKernel.one_kernel",
+        "PaperP1.FixedWidthSmallKernel.one_kernel_real",
+        "PaperP1.FixedWidthSmallKernel.one_kernel_real_cutoff"
       ],
-      "proposed_revision": "Record the explicit finite bounds above and the valid broader selection scope. Make the two window orientations, predecessor offsets, real threshold and common asymptotic threshold explicit. Justify the CRT additive term by r<=3N. Use the finite rough prime pool and the proved integer p-series tail in place of an infinite Euler-product identity. The source asymptotic exponents remain unchanged.",
-      "impact": "Completes both conclusions of companion T1.6 on the actual literal source families. Strengthens the finite theorem, permits odd selections and overlapping windows in the intermediate pair estimate, extends to every real T>0 and the endpoint tau=1/2, and only requires B=O(log N) for the general uniform asymptotics. Main 3.2 and full pair profile 3.3 still require other small-kernel and nonaligned geometric regimes.",
-      "validation": "Full Lean v4.36.0-rc2 build (9427 jobs), actual axiom audit of all 3626 theorem/lemma declarations, and direct Lean checks of all 1341 distinct coverage/finding names. Only propext, Classical.choice and Quot.sound occur. Both actual source bounds of T1.6 are complete with one threshold before every critical length and real cutoff; coverage is 54/167. Original manuscript bytes are unchanged.",
+      "proposed_revision": "Record the explicit finite bounds above and the valid broader selection scope. Make the two window orientations, predecessor offsets, real threshold and common asymptotic threshold explicit. Justify the CRT additive term by r<=3N. Use the finite rough prime pool and the proved integer p-series tail in place of an infinite Euler-product identity. The source asymptotic exponents remain unchanged. For T1.13, state the first assertion for arbitrary actual selected subsets and use the finite offset-injection bound; keep the distinct two-small-kernel assertion separate. Real prime cutoffs are transported exactly by the floor dictionary.",
+      "impact": "Completes both conclusions of companion T1.6 on the actual literal source families. Strengthens the finite theorem, permits odd selections and overlapping windows in the intermediate pair estimate, extends to every real T>0 and the endpoint tau=1/2, and only requires B=O(log N) for the general uniform asymptotics. Main 3.2 and full pair profile 3.3 still require other small-kernel and nonaligned geometric regimes. Completes the first assertion of companion T1.13, with arbitrary selected subsets, real width and prime thresholds and uniformity in all T>=0. Full T1.13 remains in progress because its two-small-kernel assertion is open.",
+      "validation": "Full Lean v4.36.0-rc2 build (9447 jobs), actual audit of all 3667 theorem/lemma declarations and direct checks of all 1382 distinct coverage/finding names. Only propext, Classical.choice and Quot.sound occur. T1.6 is complete; T1.13 has its one-kernel assertion proved and remains in progress in the distinct two-kernel assertion. Coverage remains 54/167. Original manuscript bytes are unchanged.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"

@@ -62,6 +62,8 @@ Companion T1.6 now proves both actual selected-kernel counts, with explicit fini
 [selected-kernel alignment](docs/LARGE_SELECTED_KERNEL_ALIGNMENT.md).
 The large-kernel branch for several windows now has an explicit finite CRT cost and the proved fixed-support exponent; T1.14 remains in progress. See the
 [tuple branch alignment](docs/LARGE_KERNEL_TUPLES_ALIGNMENT.md).
+The first assertion of T1.13 now covers arbitrary actual selected fixed-width blocks, including real prime thresholds; its two-small-kernel assertion remains open. See the
+[one-kernel block alignment](docs/FIXED_WIDTH_SMALL_KERNEL_ALIGNMENT.md).
 The complete main pair profile remains in progress. See the
 [finite calculation](docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,
