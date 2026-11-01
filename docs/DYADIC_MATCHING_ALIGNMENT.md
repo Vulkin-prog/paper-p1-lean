@@ -95,11 +95,12 @@ fixed before that threshold. These explicit bounds are P1-MATH-0040.
 
 These results assume the displayed bounded affine representation of
 the target. The construction of such data from the paper's geometric
-alignment predicate remains separate unfinished work. The actual
-target/old quotient-rank bridge and the extension by old prime
-information are also unfinished. The generic residual arithmetic and
-complete T1.9 are available, but the actual position count is not
-asserted to equal a rank loss. Neither T1.11 nor T2.6 is counted complete.
+alignment predicate remains separate unfinished work. The finite actual
+[target quotient-rank bridge](TARGET_QUOTIENT_RANK_ALIGNMENT.md), including
+old prime information, is now proved. Its asymptotic application to the
+geometry of the actual combined target union remains open. Complete T1.9
+and generic residual arithmetic are available. The actual position count
+is never asserted equal to rank loss. Neither T1.11 nor T2.6 is counted complete.
 
 No optimality of the finite constants is claimed. No new Paper C port,
 external mathematical hypothesis, manuscript revision or Palomar

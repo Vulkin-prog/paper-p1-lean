@@ -291,3 +291,10 @@ public import PaperP1.Arithmetic.PolynomialEndpointBudget
 public import PaperP1.Arithmetic.SeparatedTargetMatches
 public import PaperP1.Asymptotics.CriticalPolynomialScale
 public import PaperP1.Asymptotics.DyadicMatchingArithmetic
+public import PaperP1.Algebra.EvenImageMap
+public import PaperP1.Algebra.FiniteSetRelativeRank
+public import PaperP1.Algebra.FiniteSetValueSpan
+public import PaperP1.Arithmetic.MaskedParityRank
+public import PaperP1.Arithmetic.ProjectedOldInformation
+public import PaperP1.Arithmetic.ScaledTargetValues
+public import PaperP1.Arithmetic.TargetWindowRank

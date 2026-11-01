@@ -116,8 +116,10 @@ Separation, compatibility and local regularity are unnecessary throughout.
 For T1.11 and T2.6, the generic residual arithmetic on true subsets of
 two progressions is proved. The [later dyadic checkpoint](DYADIC_MATCHING_ALIGNMENT.md)
 closes explicit endpoint and target counts for bounded affine data. The
-construction of those data from geometric alignment, the target/old
-quotient-rank bridge and the old-information extension remain open.
+construction of those data from geometric alignment remains open. The
+finite [target quotient-rank bridge](TARGET_QUOTIENT_RANK_ALIGNMENT.md),
+including old prime information, is now proved; its combined target-union
+asymptotic application remains open.
 Those two statements remain in progress. No new Paper C port, external
 mathematical assumption, manuscript revision or Palomar registration
 is introduced.

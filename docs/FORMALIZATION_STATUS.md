@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3250 audited theorem/lemma declarations**. This
+- The project currently has **3294 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -819,3 +819,29 @@ Palomar registration is made. Ubuntu root free space is 18.05 GiB.
 
 Validated bounded-affine dyadic checkpoint and P1-MATH-0040:
 [1b87f9df9ba2c7a710a86f73443d39c7925abe63](https://github.com/Vulkin-prog/paper-p1-lean/commit/1b87f9df9ba2c7a710a86f73443d39c7925abe63).
+
+
+## Actual finite target quotient rank and old prime information
+
+The actual target deficiency is now bounded by true matching positions
+plus the literal remaining-row kernel rank on the true scaled old/new
+union. Its kernel characterization includes internal target defects.
+Added old prime-coordinate bits are included whenever the finite discarded
+row set contains them. One source unit suffices for this finite bridge;
+source privacy, local regularity, compatibility and separation are
+unnecessary for the rank step. Under the proved separated matching
+hypotheses the resulting finite bound is B*gamma+3 plus the residual
+row rank. This is P1-MATH-0041. See
+[alignment](TARGET_QUOTIENT_RANK_ALIGNMENT.md).
+
+The component estimates now control the whole discarded-row solution
+space. Their application to the geometry of the actual combined target
+union, and the construction of bounded affine data from geometric
+alignment, remain open. T1.11 and T2.6 are in progress. Coverage remains
+49 / 167, with 41 confirmed improvements. The full build passed
+(9,285 jobs), all 3,294 theorem/lemma declarations passed the actual
+axiom audit with only propext, Classical.choice and Quot.sound, and all
+1,009 coverage/finding names were checked directly by Lean. No external
+mathematical hypothesis or new Paper C source is introduced. Original
+sources remain unchanged; no Palomar registration is made. Ubuntu root
+free space is 18.04 GiB.

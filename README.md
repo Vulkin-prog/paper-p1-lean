@@ -22,6 +22,9 @@ physical fractions with the sharper B/b+2 bound. See
 The bounded-affine dyadic core now has explicit endpoint-source and target
 pool counts with a common threshold. See
 [partial alignment](docs/DYADIC_MATCHING_ALIGNMENT.md).
+The finite actual target quotient-rank bridge now includes internal target
+defects and old prime bits, with one source unit sufficient for that step.
+See [finite rank alignment](docs/TARGET_QUOTIENT_RANK_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,
 with deduplicated normalized values, an explicit finite rank bound and at
 most (L+1)^2 one-parameter motifs. See

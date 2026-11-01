@@ -83,14 +83,14 @@ theorem small_component_rate (c D M : ℝ) (hc : 0 < c) (hD : 0 < D)
       nlinarith
     _ = (2 * κ * (2 : ℝ) ^ (A + 1)) * B / Real.log B := by dsimp [q]; ring
 
-theorem residual_rank_sublinear (c D M V ε : ℝ) (hc : 0 < c) (hD : 0 < D) (hε : 0 < ε) :
+theorem row_rank_sublinear (c D M V ε : ℝ) (hc : 0 < c) (hD : 0 < D) (hε : 0 < ε) :
     ∃ B₀ : ℕ, ∀ B ≥ B₀, ∀ S P : Finset ℕ, ∀ U R : ℕ,
       (∀ p, (rows S P p).card ≤ 2) →
       (∀ n ∈ S, U ≤ n) → (∀ n ∈ S, n ≤ U + R) →
       1 ≤ R → 2 * R ≤ U → c * B ≤ Real.log U →
       Real.log (64 * (R : ℝ)) ≤ D * Real.log B →
       (P.card : ℝ) + 1 ≤ M * B / Real.log B → (S.card : ℝ) ≤ V * B →
-      (Module.finrank F₂ (valueKernel S) : ℝ) ≤ ε * B := by
+      (Module.finrank F₂ (CoverGraphResolution.rowSolutions (rows S P)) : ℝ) ≤ ε * B := by
   obtain ⟨K, hKbig⟩ := exists_nat_gt (max (1 : ℝ) (2 * V / ε))
   have hK : 1 ≤ K := by exact_mod_cast ((le_max_left _ _).trans hKbig.le)
   have hKcut : 2 * V ≤ ε * ((K + 1 : ℕ) : ℝ) := by
@@ -129,9 +129,26 @@ theorem residual_rank_sublinear (c D M V ε : ℝ) (hc : 0 < c) (hD : 0 < D) (h�
       _ ≤ (V * B) / ((K + 1 : ℕ) : ℝ) := div_le_div_of_nonneg_right hS hden.le
       _ = (V / ((K + 1 : ℕ) : ℝ)) * B := by ring
       _ ≤ (ε / 2) * B := mul_le_mul_of_nonneg_right hVdiv hBpos.le
-  have hrank : (Module.finrank F₂ (valueKernel S) : ℝ) ≤
+  have hrank : (Module.finrank F₂ (CoverGraphResolution.rowSolutions (rows S P)) : ℝ) ≤
       ((small S P K).card : ℝ) + ((S.card / (K + 1) : ℕ) : ℝ) := by
-    exact_mod_cast rank_le_small_add_large_budget S P K
+    exact_mod_cast row_rank_le_small_add_large_budget hrows K
   linarith
+
+
+theorem residual_rank_sublinear (c D M V ε : ℝ) (hc : 0 < c) (hD : 0 < D) (hε : 0 < ε) :
+    ∃ B₀ : ℕ, ∀ B ≥ B₀, ∀ S P : Finset ℕ, ∀ U R : ℕ,
+      (∀ p, (rows S P p).card ≤ 2) →
+      (∀ n ∈ S, U ≤ n) → (∀ n ∈ S, n ≤ U + R) →
+      1 ≤ R → 2 * R ≤ U → c * B ≤ Real.log U →
+      Real.log (64 * (R : ℝ)) ≤ D * Real.log B →
+      (P.card : ℝ) + 1 ≤ M * B / Real.log B → (S.card : ℝ) ≤ V * B →
+      (Module.finrank F₂ (valueKernel S) : ℝ) ≤ ε * B := by
+  obtain ⟨Bcore, hcore⟩ := row_rank_sublinear c D M V ε hc hD hε
+  refine ⟨Bcore, ?_⟩
+  intro B hB S P U R hrows hlower hupper hR hU hlogU hlogR hP hS
+  have hle : (Module.finrank F₂ (valueKernel S) : ℝ) ≤
+      Module.finrank F₂ (CoverGraphResolution.rowSolutions (rows S P)) := by
+    exact_mod_cast Submodule.finrank_mono (kernel_le_rows S P)
+  exact hle.trans (hcore B hB S P U R hrows hlower hupper hR hU hlogU hlogR hP hS)
 
 end PaperP1.ResidualComponentRank

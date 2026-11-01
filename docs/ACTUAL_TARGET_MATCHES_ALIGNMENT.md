@@ -70,5 +70,7 @@ Validated actual matching checkpoint for T2.6/T1.11 and P1-MATH-0038:
 Later extension: deterministic separation now suffices for this actual
 matching bound. Explicit dyadic endpoint-source families and target pools,
 with one common critical-band threshold for bounded affine data, are proved
-in the [dyadic checkpoint](DYADIC_MATCHING_ALIGNMENT.md). The actual target
-quotient-rank bridge remains open.
+in the [dyadic checkpoint](DYADIC_MATCHING_ALIGNMENT.md). The finite
+[target quotient-rank bridge](TARGET_QUOTIENT_RANK_ALIGNMENT.md) is now
+proved, including old prime information; its full asymptotic application
+remains open.

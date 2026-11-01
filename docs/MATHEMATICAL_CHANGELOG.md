@@ -1560,9 +1560,10 @@ Validated complete companion T1.9:
   argument. A separate numerator-height assumption is unnecessary for
   the target pool: c<=2a*d follows from the weak dyadic bound.
 
-The theorem assumes explicit bounded affine target data. Their construction
-from geometric alignment, the actual quotient-rank bridge and old prime
-information remain open. T1.11 and T2.6 are not counted complete. No
+The theorem assumes explicit bounded affine target data. At this initial
+checkpoint their construction and the actual quotient-rank bridge were
+separate unfinished work. P1-MATH-0041 below closes the finite rank and
+old-prime-information bridge. T1.11 and T2.6 are not counted complete. No
 optimality of the finite constants is asserted. See
 [alignment](DYADIC_MATCHING_ALIGNMENT.md).
 
@@ -1575,3 +1576,49 @@ manuscript revision or Palomar registration is made.
 
 Validated bounded-affine dyadic checkpoint and P1-MATH-0040:
 [1b87f9df9ba2c7a710a86f73443d39c7925abe63](https://github.com/Vulkin-prog/paper-p1-lean/commit/1b87f9df9ba2c7a710a86f73443d39c7925abe63).
+
+
+## P1-MATH-0041 — Actual target rank from true matches and remaining rows
+
+- Location: proofs of companion T2.6, page 22, and T1.11, page 15.
+  Primary original statement hash:
+  `8dd614c19e50df20ed1eb9f3ab37c07386f1ce3665c3499e26d83211ceab60b9`.
+- Original form: a geometrically good source pair, an enclosing interval
+  and an implicit passage from actual matches to relative rank; the
+  extension by old prime information is stated separately.
+- Improvement: the actual target deficiency is <=actual matching
+  positions+rank of the literal remaining-row kernel on the true scaled
+  old/new union. One source unit suffices for this finite rank step,
+  without private-source coordinates, local regularity, compatibility
+  or separation. Internal target defects and any old prime-coordinate
+  span contained in the discarded row set are included.
+- Generic evidence: `FiniteSetRelativeRank.matches_add_residual` holds
+  over any division ring on actual finite sets. `EvenImageMap.image_map`
+  and `MaskedParityRank.kernel_eq_rows`, `matches_add_residual`,
+  `finite_loss_bound` prove the projected versions.
+- Actual-window evidence: `ProjectedOldInformation.relative_kernel_le_masked`,
+  `ScaledTargetValues.old_space`, `new_space`, `intersection_card`,
+  `TargetWindowRank.deficiency_empty`, `kernel_rank_eq`, `finite_bound`
+  and `interior_bound`.
+- Residual evidence: `FiniteResidualRank.finite_row_rank_bound`,
+  `ResidualComponentRank.row_rank_sublinear` and
+  `TwoProgressionSublinear.row_rank_sublinear` strengthen the component
+  bound to the whole solution space after discarded prime rows.
+- Suggested revision: give the finite true-set quotient-rank inequality
+  before invoking the residual estimate. Distinguish old even selections,
+  the larger full old-value span used for the upper bound, and the
+  discarded prime rows. The matching count is never asserted equal to
+  rank loss.
+
+The weakening concerns this finite rank step, not the entire source-mass
+or Palm argument. Connecting the actual target-union geometry to the
+uniform residual bound and constructing bounded affine data from geometric
+alignment remain open. T1.11 and T2.6 are not counted complete. See
+[alignment](TARGET_QUOTIENT_RANK_ALIGNMENT.md).
+
+The full Lean v4.36.0-rc2 build passed (9,285 jobs); all 3,294 theorem/lemma
+declarations passed the actual axiom audit with only `propext`,
+`Classical.choice` and `Quot.sound`, and all 1,009 distinct coverage/finding
+names were checked directly by Lean. Coverage remains 49 / 167, with
+41 confirmed improvements. No manuscript revision or Palomar registration
+is made; original source bytes are preserved.

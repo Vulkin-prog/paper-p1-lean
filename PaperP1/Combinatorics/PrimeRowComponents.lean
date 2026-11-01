@@ -68,6 +68,12 @@ theorem empty_cover {S P : Finset ℕ} (hrows : ∀ p, (rows S P p).card ≤ 2) 
   have := hrows p
   omega
 
+theorem rowSolutions_eq_graph {S P : Finset ℕ} (hrows : ∀ p, (rows S P p).card ≤ 2) :
+    CoverGraphResolution.rowSolutions (rows S P) = PinnedGraphSpace (graph S P) (pins S P) := by
+  have h := CoverGraphResolution.zeroed_eq_graph_space (fun p ↦ (hrows p).trans (by omega)) (empty_cover hrows)
+  rw [CoordinateRestrictionRank.zeroed_empty] at h
+  exact h
+
 theorem sum_row {S P : Finset ℕ} (p : ℕ) (hp : p ∉ P) (u : S → F₂) :
     (∑ v ∈ rows S P p, u v) = ∑ v : S, u v * parityVec v.val p := by
   rw [rows, ite_eq_right hp, sum_filter]

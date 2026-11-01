@@ -931,7 +931,8 @@ introduced. The actual enlarged-cutoff value kernel at fixed height is
 now bounded by the actual defective-value count, proving O(B/log B)
 with its constant before the critical-band width. The full-kernel and
 full-pair-deficiency rates follow. Target quotient-rank bridges for
-T1.11/T2.6 remain unresolved. See
+T1.11/T2.6 have a proved finite bridge; the combined target-union
+asymptotic application remains unresolved. See
 [alignment](ALIGNED_RESIDUAL_RANK_ALIGNMENT.md).
 
 
@@ -942,8 +943,27 @@ Actual source labels and explicit bounded affine target data give finite
 integer fraction separation, literal endpoint-source and decoded target
 pools, explicit polynomial counts and one common critical-band threshold.
 The actual B*gamma+3 matching bound needs deterministic separation only.
-The construction of those data from geometric alignment and the actual
-target quotient-rank bridge remain unresolved. No rational-separation,
+The construction of those data from geometric alignment remains unresolved.
+The finite target quotient-rank bridge is now proved in the later
+checkpoint below; its actual combined-union asymptotic application remains
+open. No rational-separation,
 curve-counting or rank estimate is assumed. No new Paper C port or external
 mathematical hypothesis is introduced. See
 [alignment](DYADIC_MATCHING_ALIGNMENT.md).
+
+
+## Actual finite target quotient rank
+
+Stable ID: `P1-ARITH-TARGET-QUOTIENT`. Status: **proved finite core**.
+A generic division-ring theorem bounds zero-sum target selections modulo
+old true values by actual intersection count plus the true union kernel.
+The masked parity kernel is exactly the literal solution space after
+finite prime rows are discarded. Old prime-coordinate bits contained in
+that set are handled by a proved kernel inclusion. Actual normalized
+window spaces and exact matching positions are identified, giving the
+paper's target deficiency including internal defects. Source privacy,
+local regularity, separation and compatibility are unnecessary for this
+finite rank bridge. The combined target-union geometry and canonical
+bounded affine target construction remain unresolved. No rank estimate
+or external mathematical proposition is assumed. See
+[alignment](TARGET_QUOTIENT_RANK_ALIGNMENT.md).

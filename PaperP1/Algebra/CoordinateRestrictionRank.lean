@@ -43,6 +43,12 @@ def kernelEquiv (R : Submodule K (V → K)) (D : Finset V) :
 omit [Fintype V] in
 theorem zeroed_le (R : Submodule K (V → K)) (D : Finset V) : zeroed R D ≤ R := fun _ hf ↦ hf.1
 
+omit [Fintype V] in
+theorem zeroed_empty (R : Submodule K (V → K)) : zeroed R ∅ = R := by
+  ext f
+  change (f ∈ R ∧ ∀ v ∈ (∅ : Finset V), f v = 0) ↔ f ∈ R
+  simp
+
 theorem zeroed_rank_le (R : Submodule K (V → K)) (D : Finset V) :
     Module.finrank K (zeroed R D) ≤ Module.finrank K R := Submodule.finrank_mono (zeroed_le R D)
 
