@@ -818,3 +818,6 @@ Validated implementation of article Lemma 7.4 and P1-MATH-0022:
   extra numbered coverage item.
 
 All 415 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of article Proposition 19.2 and P1-MATH-0023:
+[c3ae67f0b8622f142f16dce9eb4bb22fd541a2c5](https://github.com/Vulkin-prog/paper-p1-lean/commit/c3ae67f0b8622f142f16dce9eb4bb22fd541a2c5).
