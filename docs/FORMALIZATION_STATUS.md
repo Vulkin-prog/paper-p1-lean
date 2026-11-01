@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4362 audited theorem/lemma declarations**. This
+- The project currently has **4381 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1998,3 +1998,20 @@ The main conditional half-count still needs its simultaneous induction
 and stage iteration; it is not counted as complete here.
 
 Verification checkpoint: Lean v4.36.0-rc2 full build passed (9,757 jobs); actual axiom audit passed for all 4,362 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,077 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.31 GiB. No unproved receiver/degree count, new literature input, new Paper C port, manuscript-byte change or Palomar registration.
+
+## Conditional half-count foundations — main 10.1 remains in progress
+
+An actual injective-list witness model now keeps even selections, nonzero
+vectors in each own absolute space and total projection into the full old
+span explicit. Actual tuple erasure preserves these data after one or two
+centres are fixed and their full blocks are adjoined to the old sources.
+The corresponding actual fibres inject into fewer-target list sets. The
+all-short fixed-cap case is completely counted using 9.2, with the actual
+product/parity and old-generator cardinality bridges proved.
+
+The simultaneous induction, stage invariant and full stage enumeration,
+and final geometric/effective-space alignment, remain open. Main 10.1 is
+not included in completed coverage. Coverage stays 62/167, with 63 confirmed
+improvements. See [preparatory alignment](CONDITIONAL_HALF_COUNT_ALIGNMENT.md).
+
+Preparatory verification checkpoint: Lean v4.36.0-rc2 full build passed (9,763 jobs); actual axiom audit passed for all 4,381 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,096 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.29 GiB. Numbered coverage remains 62/167 and confirmed findings remain 63; main 10.1 is still in progress.

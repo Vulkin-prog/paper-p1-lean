@@ -1119,11 +1119,36 @@
       "source": "main_sections/half_counts.tex",
       "line": 21,
       "sha256": "25a435d2425f2c0cd459d50bd8eeff0c2427feacbe79bb43cd0acfa441a8c3a6",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.FinTupleErasure.determined",
+        "PaperP1.FinTupleErasure.fixed_coordinate_count",
+        "PaperP1.FinTupleErasure.pair_determined",
+        "PaperP1.FinTupleErasure.fixed_pair_count",
+        "PaperP1.ProjectedWindowLists.mem_lists",
+        "PaperP1.ProjectedWindowLists.admissible_nonempty",
+        "PaperP1.ProjectedWindowLists.vector_eq_product",
+        "PaperP1.ProjectedWindowLists.oldValues_card",
+        "PaperP1.ProjectedWindowLists.mem_oldValues",
+        "PaperP1.ProjectedWindowLists.oldValues_cons",
+        "PaperP1.ProjectedWindowLists.vector_mem_oldSpace",
+        "PaperP1.ProjectedWindowLists.oldSpace_mono",
+        "PaperP1.ProjectedWindowLists.witness_remove",
+        "PaperP1.ProjectedWindowLists.lists_remove",
+        "PaperP1.ProjectedWindowLists.lists_remove_pair",
+        "PaperP1.ProjectedWindowLists.one_fibre_count",
+        "PaperP1.ProjectedWindowLists.pair_fibre_count",
+        "PaperP1.ProjectedWindowLists.zero_card",
+        "PaperP1.ShortWitnessListsCount.uniform_short_count"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0060",
+        "P1-MATH-0061",
+        "P1-MATH-0062",
+        "P1-MATH-0063"
+      ],
+      "notes": "Preparatory only: actual injective centre lists with even bounded motifs, nonzero vectors in each own absolute square-class space and a total in the full old span are defined. Actual one- and two-coordinate erasure fibres inject into fewer-target lists with enlarged old sources; evenness and absolute nonzero projections are retained. The actual constant-size all-short witness case is proved from complete 9.2, with product/parity and old-generator cardinality bridges. The full simultaneous induction, stage invariant/counts and final geometric/effective-space alignment remain open. This is not counted as a completed result."
     },
     {
       "label": "p13:half:connected",

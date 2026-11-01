@@ -1539,3 +1539,13 @@ No prime-reception, modulus, local code or target-count estimate is supplied
 as an unproved argument. P1-MATH-0063 records the broader range and explicit
 finite bound. No new Paper C port or external literature assumption is
 introduced. See [complete alignment](ANCHOR_CERTIFICATE_ALIGNMENT.md).
+
+## Conditional half-count list and deletion foundations
+
+The actual witness model, tuple reconstruction, one-/two-coordinate fibre
+injections and enlarged-old-span sum identities are proved directly.
+The all-short constant-size case uses the fully proved 9.2 estimate; its
+product/parity bridge, old-generator count and eventual degree inclusion
+are verified. No unproved literature input is introduced. The full stage
+iteration and simultaneous induction are still open, and main 10.1 is
+not counted complete. See [preparatory alignment](CONDITIONAL_HALF_COUNT_ALIGNMENT.md).

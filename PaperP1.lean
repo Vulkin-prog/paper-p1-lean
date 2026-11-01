@@ -614,3 +614,9 @@ public import PaperP1.Asymptotics.AnchorThresholdBudget
 public import PaperP1.Asymptotics.ShortCertificateDegreeBudget
 
 public import PaperP1.Asymptotics.ShortCertificateOrder
+
+public import PaperP1.Combinatorics.FinTupleErasure
+
+public import PaperP1.Arithmetic.ProjectedWindowLists
+
+public import PaperP1.Asymptotics.ShortWitnessListsCount

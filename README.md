@@ -35,6 +35,9 @@ and moduli suffice. See the [complete smooth-modulus alignment](docs/LARGE_SMOOT
 Companion T6.3 now constructs the actual received certificates and proves both
 incoming and outgoing degrees. Its complete scope extends to A>1 and both
 directions share one finite subset bound. See the [complete certificate alignment](docs/ANCHOR_CERTIFICATE_ALIGNMENT.md).
+Main Theorem 10.1 is in progress: the actual list model, deletion fibres and
+all-short case are proved; its simultaneous induction and stage iteration
+remain open. See the [current half-count scope](docs/CONDITIONAL_HALF_COUNT_ALIGNMENT.md).
 Companion T1.9 now covers the full enlarged geometric alignment, including
 zero exact units and both orientations, with its fixed-height enlarged-prime
 rate. The earlier one-unit coverage error and its subsequent closure are
