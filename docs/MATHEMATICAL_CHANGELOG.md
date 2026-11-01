@@ -1487,8 +1487,8 @@ Validated actual matching checkpoint for T2.6/T1.11 and P1-MATH-0038:
   The parity row of the component code is its actual value-set size
   modulo two. The large-component denominator is K+1.
 
-The fixed-height enlarged-cutoff O(B/log B) assertion is still open,
-so T1.9 is not counted complete. The target quotient-rank and endpoint
+At this initial checkpoint the fixed-height enlarged-cutoff assertion
+remained open. Its later completion is recorded below. The target quotient-rank and endpoint
 bridges needed by T1.11/T2.6 are also separate work. See
 [alignment](ALIGNED_RESIDUAL_RANK_ALIGNMENT.md).
 
@@ -1501,3 +1501,27 @@ are preserved; no manuscript revision or Palomar registration is made.
 
 Validated uniform residual checkpoint for T1.9 and P1-MATH-0039:
 [df34686b343f5297c181e6150e21834acc335ad8](https://github.com/Vulkin-prog/paper-p1-lean/commit/df34686b343f5297c181e6150e21834acc335ad8).
+
+
+## Completion of companion T1.9
+
+The fixed-height assertion is now closed, in addition to the uniform
+part validated with P1-MATH-0039. The exact large-prime value kernel is
+supported on actual defective interval values. Its rank is bounded by
+their count, giving O(B/log B) for all enlarged cutoffs 2bL<=H<=D B.
+The constant is chosen before the critical-band width. Separation,
+compatibility and local regularity remain unnecessary. The full-kernel
+and (u-1)+K*B/log B pair-deficiency bounds are also proved.
+
+Evidence: `IntervalResidualKernel.mem_largeKernel_iff`,
+`coefficient_zero`, `restriction_injective`, `rank_le_interval_defects`,
+`FixedHeightResidual.large_kernel_rate`, `full_kernel_rate`,
+`AlignedPairTheorem.fixed_height_loss` and `companion_T1_9`.
+See [complete alignment](ALIGNED_RESIDUAL_RANK_ALIGNMENT.md).
+
+T1.9 is counted complete. Coverage is 49 / 167 (main 16 / 73,
+companion 33 / 94), with 39 confirmed improvements. The full Lean
+v4.36.0-rc2 build passed (9,253 jobs), as did the actual axiom audit
+of all 3,218 theorem/lemma declarations and all 933 distinct
+coverage/finding names. No manuscript revision or Palomar registration
+is made. The original P1-MATH-0039 validation remains historical.

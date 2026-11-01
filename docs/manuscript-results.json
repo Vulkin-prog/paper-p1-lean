@@ -1609,7 +1609,7 @@
       "source": "companion_sections/arithmetic_appendix.tex",
       "line": 770,
       "sha256": "7de9608ecc780ef5a448579b04b2ebeabe5e1157579ce3025b0303a047157acc",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.EvenImageDefect.kernelEmbedding_injective",
         "PaperP1.EvenImageDefect.dimension_le_image_add_kernel",
@@ -1672,14 +1672,28 @@
         "PaperP1.PrimeRowComponents.values_card",
         "PaperP1.PrimeRowComponents.empty_cover",
         "PaperP1.PrimeRowComponents.sum_row",
-        "PaperP1.PrimeRowComponents.free_component_parity"
+        "PaperP1.PrimeRowComponents.free_component_parity",
+        "PaperP1.IntervalResidualKernel.mem_largeKernel_iff",
+        "PaperP1.IntervalResidualKernel.coefficient_zero",
+        "PaperP1.IntervalResidualKernel.restriction_injective",
+        "PaperP1.IntervalResidualKernel.rank_le_selected_defects",
+        "PaperP1.IntervalResidualKernel.rank_le_interval_defects",
+        "PaperP1.IntervalResidualKernel.fullKernel_le_large",
+        "PaperP1.AlignedPairTheorem.uniform_bounds",
+        "PaperP1.AlignedPairTheorem.fixed_height_loss",
+        "PaperP1.AlignedPairTheorem.companion_T1_9",
+        "PaperP1.CriticalWindowGeometry.uniform_geometry",
+        "PaperP1.FixedHeightResidual.large_kernel_rate",
+        "PaperP1.FixedHeightResidual.full_kernel_rate"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
         "P1-MATH-0039"
       ],
-      "notes": "The actual normalized full value kernel is uniformly o(B) for all heights b<=B^3. The full pair deficiency, including internal local defects, is <=(u-1)+epsilon*B and <=L/b+epsilon*B for every fixed epsilon>0 with a common critical-band threshold. One exact unit suffices; separation and affine compatibility are not required for these assertions. The actual intersection rank is also bounded. The final fixed-height O(B/log B) assertion with an enlarged prime cutoff remains open, so T1.9 is not counted complete. See docs/ALIGNED_RESIDUAL_RANK_ALIGNMENT.md.",
-      "validation_commit": "df34686b343f5297c181e6150e21834acc335ad8"
+      "notes": "Complete T1.9. The actual normalized full value kernel is uniformly o(B) for all heights b<=B^3. The full pair deficiency, including internal local defects, is <=(u-1)+epsilon*B and <=L/b+epsilon*B, with a common critical-band threshold; it dominates the actual intersection rank. One exact unit suffices, without separation or affine compatibility. At fixed height Q, the actual large-prime kernel after deletion of all rows <=H is O_{Q,D}(B/log B), uniformly for 2bL<=H<=D B. The constant is chosen before the critical-band width. The full-kernel and full-pair-deficiency fixed-height bounds follow. See docs/ALIGNED_RESIDUAL_RANK_ALIGNMENT.md.",
+      "validation_history": [
+        "df34686b343f5297c181e6150e21834acc335ad8"
+      ]
     },
     {
       "label": "p1:arith:asymmetric",

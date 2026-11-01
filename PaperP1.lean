@@ -278,3 +278,7 @@ public import PaperP1.Coding.ComponentParityCode
 public import PaperP1.Coding.PrimeComponentCount
 public import PaperP1.Coding.SmallComponentBound
 public import PaperP1.Combinatorics.PrimeRowComponents
+public import PaperP1.Arithmetic.IntervalResidualKernel
+public import PaperP1.Asymptotics.AlignedPairTheorem
+public import PaperP1.Asymptotics.CriticalWindowGeometry
+public import PaperP1.Asymptotics.FixedHeightResidual

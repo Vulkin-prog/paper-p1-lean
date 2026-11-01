@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **48 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **49 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.9, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3206 audited theorem/lemma declarations**. This
+- The project currently has **3218 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -754,8 +754,8 @@ One exact unit suffices; separation, compatibility and local regularity
 are unnecessary. This is P1-MATH-0039. See
 [alignment](ALIGNED_RESIDUAL_RANK_ALIGNMENT.md).
 
-T1.9 remains in progress pending its fixed-height enlarged-cutoff
-O(B/log B) assertion. The target quotient-rank and endpoint bridges for
+At this initial checkpoint T1.9 remained in progress pending its
+fixed-height enlarged-cutoff assertion, completed below. The target quotient-rank and endpoint bridges for
 T1.11/T2.6 remain open. The full build passed (9,245 jobs), and all
 3,206 theorem/lemma declarations passed the actual axiom audit with
 only propext, Classical.choice and Quot.sound. All 921 coverage/finding
@@ -766,3 +766,26 @@ is made. Ubuntu root free space is 18.09 GiB.
 
 Validated uniform residual checkpoint for T1.9 and P1-MATH-0039:
 [df34686b343f5297c181e6150e21834acc335ad8](https://github.com/Vulkin-prog/paper-p1-lean/commit/df34686b343f5297c181e6150e21834acc335ad8).
+
+
+## Companion T1.9 completed — fixed-height enlarged-prime residual
+
+The last assertion is now proved on the actual large-prime value kernel.
+Every nondefective normalized value has a private prime above the
+interval width; all kernel coefficients there vanish. Restriction to the
+actual defective values is injective. The proved local defect estimate
+therefore gives O(B/log B) uniformly for every fixed height bound Q and
+all enlarged cutoffs 2bL<=H<=D B. Its constant is chosen before the fixed
+critical-band width. The full-kernel and full-pair-deficiency rates follow.
+`AlignedPairTheorem.companion_T1_9` packages both uniform and fixed-height
+assertions. See [statement alignment](ALIGNED_RESIDUAL_RANK_ALIGNMENT.md).
+
+Coverage is now **49 / 167**: main 16 / 73, companion 33 / 94. The
+39 confirmed improvements are retained; the historical P1-MATH-0039
+validation continues to identify its initial uniform checkpoint. The
+full build passed (9,253 jobs), and all 3,218 theorem/lemma declarations
+passed the actual axiom audit with only propext, Classical.choice and
+Quot.sound. All 933 coverage/finding names were checked directly by Lean.
+Original source bytes are preserved, and no new Paper C port, external
+mathematical premise or Palomar registration is introduced. Ubuntu root
+free space is 18.08 GiB.

@@ -4,11 +4,11 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 48 / 167 numbered results proved.**
-The uniform aligned-pair rank bound of T1.9 is checked on actual values,
-with one exact unit and no separation or compatibility premise. Its
-fixed-height enlarged-cutoff rate remains open. See
-[partial alignment](docs/ALIGNED_RESIDUAL_RANK_ALIGNMENT.md).
+**Status: active formalization, 49 / 167 numbered results proved.**
+Companion T1.9 proves the uniform aligned-pair rank bound and the
+fixed-height O(B/log B) residual with an enlarged prime cutoff. One
+actual unit suffices, without separation or compatibility. See
+[statement alignment](docs/ALIGNED_RESIDUAL_RANK_ALIGNMENT.md).
 The coefficient part of T2.6 is checked, including exact leading-channel
 values and attainment of the universal 2/3 bound in channel 8:9. Its
 aligned-target rank estimate remains open. See

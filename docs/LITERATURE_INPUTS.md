@@ -919,7 +919,7 @@ and endpoint exceptions remain unresolved. See
 
 ## Uniform aligned residual arithmetic
 
-Stable ID: `P1-ARITH-ALIGNED-RESIDUAL`. Status: **proved uniform core**.
+Stable ID: `P1-ARITH-ALIGNED-RESIDUAL`. Status: **proved, complete T1.9**.
 The actual normalized full value kernel is uniformly o(B) for all
 heights up to B^3, without separation, compatibility or local regularity.
 The full pair deficiency is <=(u-1)+epsilon*B and, in reduced channels,
@@ -927,6 +927,9 @@ The full pair deficiency is <=(u-1)+epsilon*B and, in reduced channels,
 value sets, the proved degree-uniform Runge lemma, the existing audited
 Hamming theorem, elementary prime counts and a proved polynomial-height
 prime-factor budget. No new literature hypothesis or Paper C source is
-introduced. The final fixed-height enlarged-cutoff rate and the target
-quotient-rank bridges remain unresolved. See
+introduced. The actual enlarged-cutoff value kernel at fixed height is
+now bounded by the actual defective-value count, proving O(B/log B)
+with its constant before the critical-band width. The full-kernel and
+full-pair-deficiency rates follow. Target quotient-rank bridges for
+T1.11/T2.6 remain unresolved. See
 [alignment](ALIGNED_RESIDUAL_RANK_ALIGNMENT.md).

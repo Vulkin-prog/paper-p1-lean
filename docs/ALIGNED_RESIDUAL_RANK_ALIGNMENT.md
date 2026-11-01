@@ -1,11 +1,10 @@
-# Uniform aligned residual rank — partial companion T1.9
+# Companion T1.9 — actual aligned residual rank
 
 Source: companion T1.9, page 14, `p1:arith:alignedrank`,
 `companion_sections/arithmetic_appendix.tex:770`, statement hash
 `7de9608ecc780ef5a448579b04b2ebeabe5e1157579ce3025b0303a047157acc`.
-The final fixed-height assertion with an enlarged prime cutoff remains
-open; T1.9 is **in progress**, not counted complete. Original manuscript
-bytes are unchanged.
+All assertions are **proved**. The uniform and fixed-height bounds use
+actual normalized values. Original manuscript bytes are unchanged.
 
 ## Actual finite value kernel
 
@@ -82,16 +81,44 @@ critical-band width and positive epsilon. Separation, affine compatibility
 and local regularity are unnecessary. One exact unit suffices. These
 weakened hypotheses and explicit finite bounds are P1-MATH-0039.
 
-## Remaining scope
+## Fixed height and enlarged prime cutoff
 
-The final O(B/log B) assertion of T1.9 for fixed channel height and a
-fixed enlarged prime cutoff is separate unfinished work. For T1.11
-and T2.6, the generic residual arithmetic on true subsets of two
-progressions is now available, but the actual target/old quotient-rank
-bridge, endpoint exceptions and old-information extension are not yet
-closed. All three numbered statements remain in progress. No new Paper C
-port, external mathematical assumption, manuscript revision or Palomar
-registration is introduced.
+`IntervalResidualKernel.largeKernel S H` imposes exactly the prime-parity
+constraints above H; its membership equivalence is proved. If the true
+value set S lies in [U,U+R] with R<=H, a nondefective value has a prime
+above H which is private in that interval. Thus every kernel coefficient
+at such a value is zero. Restriction to the actual defective values is
+injective, giving the finite bound
 
-Validated uniform residual checkpoint for T1.9 and P1-MATH-0039:
+    rank(largeKernel S H) <= card(defectsInInterval H U R).
+
+For fixed height bound Q, the normalized pair has R=2bL<=2QB and
+N/2<=U<=3QN. `FixedHeightResidual.large_kernel_rate` applies the already
+proved local defect count. For every fixed D>=0 it yields a constant
+K>0 **before** the critical-band width C, with one common threshold for
+all source pairs and all integer cutoffs satisfying
+
+    2bL <= H <= D*B.
+
+The actual large-prime value kernel is <=K*B/log B. In particular H=2QB
+is an admissible fixed enlarged cutoff. The full value kernel embeds in
+it. `full_kernel_rate` and `AlignedPairTheorem.fixed_height_loss` give
+the corresponding full-kernel and (u-1)+K*B/log B pair-deficiency bounds.
+
+`AlignedPairTheorem.companion_T1_9` packages the uniform assertions and
+this enlarged-cutoff fixed-height assertion. `UniformConclusion` and
+`FixedConclusion` are the literal quantified statements on the actual
+maps, not hypotheses for missing estimates. T1.9 is counted complete.
+Separation, compatibility and local regularity are unnecessary throughout.
+
+## Remaining work beyond T1.9
+
+For T1.11 and T2.6, the generic residual arithmetic on true subsets of
+two progressions is proved, but the target/old quotient-rank bridge,
+endpoint exceptions and old-information extension remain open. Those
+two statements remain in progress. No new Paper C port, external
+mathematical assumption, manuscript revision or Palomar registration
+is introduced.
+
+Initial uniform residual checkpoint and P1-MATH-0039:
 [df34686b343f5297c181e6150e21834acc335ad8](https://github.com/Vulkin-prog/paper-p1-lean/commit/df34686b343f5297c181e6150e21834acc335ad8).

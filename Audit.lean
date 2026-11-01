@@ -838,6 +838,12 @@ import PaperP1
 #print axioms PaperP1.Channels.card_Ico_modEq_cast_le_div_add_one
 #print axioms PaperP1.Channels.card_nat_Ico_modEq_cast_le_div_add_one
 #print axioms PaperP1.Channels.card_product_Ico_modEq_cast_le
+#print axioms PaperP1.IntervalResidualKernel.mem_largeKernel_iff
+#print axioms PaperP1.IntervalResidualKernel.coefficient_zero
+#print axioms PaperP1.IntervalResidualKernel.restriction_injective
+#print axioms PaperP1.IntervalResidualKernel.rank_le_selected_defects
+#print axioms PaperP1.IntervalResidualKernel.rank_le_interval_defects
+#print axioms PaperP1.IntervalResidualKernel.fullKernel_le_large
 #print axioms PaperP1.IntervalResidueError.lower_bound
 #print axioms PaperP1.IntervalResidueError.abs_error
 #print axioms PaperP1.LargeOddKernel.mem_oddPrimeSupport_iff_parityVec_ne_zero
@@ -1392,6 +1398,9 @@ import PaperP1
 #print axioms PaperP1.AlignedPairRank.units_residual_bound
 #print axioms PaperP1.AlignedPairRank.channel_bound
 #print axioms PaperP1.AlignedPairRank.actual_intersection_bound
+#print axioms PaperP1.AlignedPairTheorem.uniform_bounds
+#print axioms PaperP1.AlignedPairTheorem.fixed_height_loss
+#print axioms PaperP1.AlignedPairTheorem.companion_T1_9
 #print axioms PaperP1.BoundedObservationPool.widthEnvelope_ge_one
 #print axioms PaperP1.BoundedObservationPool.pool_budget_le_envelope
 #print axioms PaperP1.BoundedObservationPool.pool_count_logarithmic
@@ -1421,6 +1430,7 @@ import PaperP1
 #print axioms PaperP1.CriticalOrderBranching.finite_exception_bound
 #print axioms PaperP1.CriticalOrderBranching.uniform_exception_bound
 #print axioms PaperP1.CriticalOrderBranching.companion_T22_4
+#print axioms PaperP1.CriticalWindowGeometry.uniform_geometry
 #print axioms PaperP1.EffectiveOrderMoments.errorConstant_pos
 #print axioms PaperP1.EffectiveOrderMoments.finite_exception_bound
 #print axioms PaperP1.EffectiveOrderMoments.factorial_bound
@@ -1465,6 +1475,8 @@ import PaperP1
 #print axioms PaperP1.ExpSqrtLog.uniformSubpolynomialOn_weighted_defect_factor
 #print axioms PaperP1.FactorialLogBounds.log_factorial_bounds
 #print axioms PaperP1.FactorialLogBounds.log_factorial_error
+#print axioms PaperP1.FixedHeightResidual.large_kernel_rate
+#print axioms PaperP1.FixedHeightResidual.full_kernel_rate
 #print axioms PaperP1.FixedWindowBranching.retained_independent
 #print axioms PaperP1.FixedWindowBranching.finite_stronger
 #print axioms PaperP1.FixedWindowBranching.finite_source_bound
