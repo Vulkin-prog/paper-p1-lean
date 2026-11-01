@@ -928,3 +928,7 @@ remain unchanged. No external mathematical input, new Paper C port,
 manuscript revision or Palomar registration is introduced. Source mass,
 Palm mean and the principal Poisson approximation remain open. Ubuntu
 root free space is 17.99 GiB.
+
+Validated complete T1.11/T2.6 (9,309 build jobs; 3,344 audited declarations;
+1,059 directly checked coverage/finding names):
+[3cc9dc9f816193e9488d32fab93f7aae9f9b6f90](https://github.com/Vulkin-prog/paper-p1-lean/commit/3cc9dc9f816193e9488d32fab93f7aae9f9b6f90).

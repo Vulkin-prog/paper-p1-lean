@@ -1507,7 +1507,10 @@
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "1b87f9df9ba2c7a710a86f73443d39c7925abe63"
+      "validation_commit": "3cc9dc9f816193e9488d32fab93f7aae9f9b6f90",
+      "validation_history": [
+        "1b87f9df9ba2c7a710a86f73443d39c7925abe63"
+      ]
     },
     {
       "id": "P1-MATH-0041",
@@ -1603,7 +1606,10 @@
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "469f5ac7ab234cdd18962337291971682554d913"
+      "validation_commit": "3cc9dc9f816193e9488d32fab93f7aae9f9b6f90",
+      "validation_history": [
+        "469f5ac7ab234cdd18962337291971682554d913"
+      ]
     }
   ]
 }

@@ -141,3 +141,7 @@ checkpoints remain in their original alignment documents, explicitly
 labelled as historical. Their validation commits remain in the JSON
 ledger. This complete proof extends improvements P1-MATH-0040 and
 P1-MATH-0041 rather than adding artificial finding counts.
+
+Validated complete T1.11/T2.6 (9,309 build jobs; 3,344 audited declarations;
+1,059 directly checked coverage/finding names):
+[3cc9dc9f816193e9488d32fab93f7aae9f9b6f90](https://github.com/Vulkin-prog/paper-p1-lean/commit/3cc9dc9f816193e9488d32fab93f7aae9f9b6f90).

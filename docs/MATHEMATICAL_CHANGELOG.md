@@ -1715,3 +1715,7 @@ directly. Only propext, Classical.choice and Quot.sound occur. No
 optimality of the explicit polynomial counts, rank bound or Palm bound is
 claimed. Original sources are preserved. No manuscript revision or
 Palomar registration is made.
+
+Validated complete T1.11/T2.6 (9,309 build jobs; 3,344 audited declarations;
+1,059 directly checked coverage/finding names):
+[3cc9dc9f816193e9488d32fab93f7aae9f9b6f90](https://github.com/Vulkin-prog/paper-p1-lean/commit/3cc9dc9f816193e9488d32fab93f7aae9f9b6f90).
