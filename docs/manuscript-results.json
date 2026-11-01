@@ -1844,14 +1844,28 @@
         "PaperP1.BidegreeOneCurveCount.coefficient_uniform_scale_count",
         "PaperP1.BidegreeOneCurveCount.polynomial_coefficient_count",
         "PaperP1.BidegreeOneCurveCount.actual_solutions_count",
-        "PaperP1.BidegreeOneCurveCount.actual_real_solutions_count"
+        "PaperP1.BidegreeOneCurveCount.actual_real_solutions_count",
+        "PaperP1.ReflectedResultants.columnReverse_left",
+        "PaperP1.ReflectedResultants.columnReverse_right",
+        "PaperP1.ReflectedResultants.reflected_entry",
+        "PaperP1.ReflectedResultants.sylvester_reflect",
+        "PaperP1.ReflectedResultants.resultant_abs_reflect",
+        "PaperP1.ReflectedResultants.resultant_natAbs_reflect",
+        "PaperP1.ReflectedResultants.resultant_eq_or_neg",
+        "PaperP1.ReflectedResultants.reflected_resultant_ne_zero",
+        "PaperP1.ReflectedResultants.primitive_resultant_divisor",
+        "PaperP1.SingleResultantFibreCount.scale_count",
+        "PaperP1.SingleResultantFibreCount.finite_count",
+        "PaperP1.SingleResultantFibreCount.actual_real_solutions_count",
+        "PaperP1.SingleResultantFibreCount.coprime_actual_real_solutions_count"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
         "P1-MATH-0048",
-        "P1-MATH-0049"
+        "P1-MATH-0049",
+        "P1-MATH-0050"
       ],
-      "notes": "The independent Step 3 grid ingredient, actual chart-resultant identities and primitive denominator budget are proved. Explicit Sylvester bounds now derive resultant polynomial height from auxiliary coefficient height. Canonical primitive elimination constructs the actual eliminant and proves finite and uniform N^epsilon*H bounds for actual bidegree-one auxiliary solutions, including real box heights and real coefficient exponents. Both original bidegrees (2,1) and (1,2) are covered by the general construction. Original coefficient forms and the nonzero shift need no height bound in this case. Full T1.4 remains in progress: source extraction of auxiliary forms, their relevant nondegeneracy and coefficient height from determinant/lattice construction, the other curve cases and short-vector sums are open. No target count is a premise. See BIDEGREE_ONE_CURVE_ALIGNMENT.md and earlier grid/resultant notes. The elementary elimination bound is in the remaining pair height; the complementary Heath-Brown bound in the eliminated pair height remains open even for the relevant bidegree-one auxiliary factors."
+      "notes": "The actual elementary bidegree-one elimination count is proved, including literal real boxes, real coefficient exponents, canonical primitive scales, constructed homogeneous eliminants and coefficient-to-resultant height bounds. Exact Sylvester row/column reversal proves equal absolute values of the padded chart resultants; primitive cancellation gives q dividing a single homogeneous resultant. The finite bound is sharpened to 2*tau(|R|)*(k+d*ell)*(2H+1). The actual N^epsilon*H count now needs one nonzero resultant, or univariate coprimality over Q and one polynomial attaining the padded degree. This is the elementary bound in the remaining pair height. Full T1.4 remains in progress: source auxiliary extraction/nondegeneracy and coefficient height from determinant/lattice steps, the complementary Heath-Brown bound in the eliminated pair height, other curve cases and short-vector sums are open. See SINGLE_RESULTANT_ALIGNMENT.md and BIDEGREE_ONE_CURVE_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:twokernel",

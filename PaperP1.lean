@@ -386,3 +386,5 @@ public import PaperP1.Diophantine.ResultantHeight
 public import PaperP1.Diophantine.BidegreeOneElimination
 public import PaperP1.Diophantine.BidegreeOneFibreCount
 public import PaperP1.Diophantine.BidegreeOneCurveCount
+public import PaperP1.Diophantine.ReflectedResultants
+public import PaperP1.Diophantine.SingleResultantFibreCount

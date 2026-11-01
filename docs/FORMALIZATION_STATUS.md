@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3720 audited theorem/lemma declarations**. This
+- The project currently has **3733 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1512,3 +1512,20 @@ directly by Lean. Original manuscript bytes are unchanged.
 Validated elementary bidegree-one elimination checkpoint (9,499 build
 jobs; 3,720 audited declarations; 1,435 directly checked coverage/finding names):
 [bc9f8dc072a9efe82022b91f1a5261debfd49529](https://github.com/Vulkin-prog/paper-p1-lean/commit/bc9f8dc072a9efe82022b91f1a5261debfd49529).
+
+## One homogeneous resultant for primitive scales
+
+`ReflectedResultants` proves exact Sylvester row/column reversal and equal
+absolute values of the two padded chart resultants. The two coordinate
+powers therefore cancel by a primitive gcd, giving q dividing one
+homogeneous resultant R. `SingleResultantFibreCount` sharpens the finite
+point bound to 2*tau(|R|)*(k+d*ell)*(2H+1). The actual real-box N^epsilon*H
+count only needs R!=0; univariate coprimality over Q and one full padded
+degree provide it. This improvement is P1-MATH-0050. Coverage stays
+54/167, with 50 confirmed improvements. Full T1.4 and the complementary
+curve bound remain open. See [alignment](SINGLE_RESULTANT_ALIGNMENT.md).
+
+The full build passed (9,503 jobs); all 3,733 declarations passed the
+actual axiom audit, permitting only propext, Classical.choice and
+Quot.sound. All 1,448 distinct coverage/finding names were checked
+directly by Lean. Original manuscript bytes are unchanged.

@@ -1238,3 +1238,19 @@ estimate is in the remaining pair height. The complementary Heath-Brown
 bound in the eliminated pair height remains open, including for the
 relevant bidegree-one auxiliary factors. The estimate involving the minimum of
 the two heights remains unproved.
+
+## Reflected homogeneous resultants and primitive cancellation
+
+Stable ID: `P1-ALG-SINGLE-HOMOGENEOUS-RESULTANT`. Status: **proved refinement**.
+
+- Exact coefficient-index reversal identifies the two actual Sylvester
+  matrices up to row and column permutations. The proved determinant
+  absolute-value identity yields equal resultant absolute values.
+- Primitive coordinate powers now cancel against a common coefficient,
+  proving q divides a single homogeneous resultant. The actual signed
+  scale and solution counts improve accordingly, with only one nonzero
+  resultant condition in the real-box asymptotic theorem. Univariate
+  coprimality over Q and a full padded degree suffice.
+- The complementary Heath-Brown bound and source determinant/lattice
+  construction remain open. No new unproved literature input or Paper C
+  port is introduced. See [alignment](SINGLE_RESULTANT_ALIGNMENT.md).

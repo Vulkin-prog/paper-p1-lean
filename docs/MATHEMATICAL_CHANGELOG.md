@@ -2455,3 +2455,38 @@ directly by Lean. Original manuscript bytes are unchanged.
 Validated elementary bidegree-one elimination checkpoint (9,499 build
 jobs; 3,720 audited declarations; 1,435 directly checked coverage/finding names):
 [bc9f8dc072a9efe82022b91f1a5261debfd49529](https://github.com/Vulkin-prog/paper-p1-lean/commit/bc9f8dc072a9efe82022b91f1a5261debfd49529).
+
+## P1-MATH-0050 — A single homogeneous resultant controls the denominator
+
+Location: companion T1.4 Step 3, page 6, `p1:arith:reuss`, source
+`companion_sections/arithmetic_appendix.tex:139`.
+
+The actual padded chart resultants R,Rprime have the same absolute
+value, by exact reversal of the Sylvester rows and of columns inside
+each degree-d block. Primitive cancellation in the two coordinate
+power divisibilities gives q|R. The previous padded product had absolute
+value |R|^2; no comparison with differently normalized native chart
+resultants is assumed. The signed scale count is <=2*tau(|R|) and the
+finite actual primitive point bound becomes
+
+    #solutions <= 2*tau(|R|)*(k+d*ell)*(2H+1).
+
+Nonzero R also implies nonzero Rprime. The actual real-box N^epsilon*H
+count now needs only the first condition, which is derived from
+univariate coprimality over Q and one polynomial attaining the padded
+degree. The other chart needs no separate nondegeneracy premise.
+Evidence: all declarations in `ReflectedResultants` and
+`SingleResultantFibreCount`. The original coefficient/shift and real
+height scope from P1-MATH-0049 is retained.
+
+This remains the elementary remaining-pair-height bound. Its
+complementary Heath-Brown estimate and the source determinant/lattice
+construction are open. Full T1.4 coverage is not claimed; coverage
+stays 54/167, with 50 confirmed improvements. No new unproved literature
+input, Paper C port or manuscript revision is introduced. See
+[alignment](SINGLE_RESULTANT_ALIGNMENT.md).
+
+The full build passed (9,503 jobs); all 3,733 declarations passed the
+actual axiom audit, permitting only propext, Classical.choice and
+Quot.sound. All 1,448 distinct coverage/finding names were checked
+directly by Lean. Original manuscript bytes are unchanged.

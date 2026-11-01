@@ -2572,6 +2572,15 @@ import PaperP1
 #print axioms PaperP1.PellInput.QuadraticOrderConductor.relativeUnit_spec
 #print axioms PaperP1.PellInput.QuadraticOrderConductor.same_principalIdeal_of_same_extension
 #print axioms PaperP1.PellInput.QuadraticOrderConductor.quadraticOrderConductorFiberBoundInternal
+#print axioms PaperP1.ReflectedResultants.columnReverse_left
+#print axioms PaperP1.ReflectedResultants.columnReverse_right
+#print axioms PaperP1.ReflectedResultants.reflected_entry
+#print axioms PaperP1.ReflectedResultants.sylvester_reflect
+#print axioms PaperP1.ReflectedResultants.resultant_abs_reflect
+#print axioms PaperP1.ReflectedResultants.resultant_natAbs_reflect
+#print axioms PaperP1.ReflectedResultants.resultant_eq_or_neg
+#print axioms PaperP1.ReflectedResultants.reflected_resultant_ne_zero
+#print axioms PaperP1.ReflectedResultants.primitive_resultant_divisor
 #print axioms PaperP1.ResultantDivisibility.dvd_resultant_of_dvd_evaluations
 #print axioms PaperP1.ResultantDivisibility.eval_reflected_homogenize
 #print axioms PaperP1.ResultantDivisibility.homogenized_bezout
@@ -2588,6 +2597,10 @@ import PaperP1
 #print axioms PaperP1.ResultantHeight.chart_product_bound
 #print axioms PaperP1.ResultantHeight.polynomial_product_height
 #print axioms PaperP1.ResultantHeight.coefficient_uniform_denominator_count
+#print axioms PaperP1.SingleResultantFibreCount.scale_count
+#print axioms PaperP1.SingleResultantFibreCount.finite_count
+#print axioms PaperP1.SingleResultantFibreCount.actual_real_solutions_count
+#print axioms PaperP1.SingleResultantFibreCount.coprime_actual_real_solutions_count
 #print axioms PaperP1.QuadraticCount.square_factor_identity
 #print axioms PaperP1.QuadraticCount.square_positive_count_le_divisors
 #print axioms PaperP1.UniformQuadraticCount.product_square_of_ratio_square

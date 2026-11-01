@@ -1,5 +1,9 @@
 # Elementary elimination bound on a bidegree-one auxiliary curve
 
+The later [single-resultant refinement](SINGLE_RESULTANT_ALIGNMENT.md)
+sharpens the finite divisor bound and removes the redundant second
+chart nonvanishing condition.
+
 The elementary elimination estimate for an auxiliary curve linear in one primitive pair is proved for
 explicit integer forms and actual bounded solution sets. It includes
 the two orientations used in T1.4 Step 3. Full T1.4 remains **in
