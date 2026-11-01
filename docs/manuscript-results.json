@@ -1609,11 +1609,76 @@
       "source": "companion_sections/arithmetic_appendix.tex",
       "line": 770,
       "sha256": "7de9608ecc780ef5a448579b04b2ebeabe5e1157579ce3025b0303a047157acc",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.EvenImageDefect.kernelEmbedding_injective",
+        "PaperP1.EvenImageDefect.dimension_le_image_add_kernel",
+        "PaperP1.EvenSquareSelection.cardinal_gt",
+        "PaperP1.FiniteResidualRank.kernel_le_graph",
+        "PaperP1.FiniteResidualRank.rank_le_free_components",
+        "PaperP1.FiniteResidualRank.rank_le_small_add_large_budget",
+        "PaperP1.FiniteResidualRank.finite_rank_bound",
+        "PaperP1.NormalizedPairGeometry.values_closed",
+        "PaperP1.NormalizedPairGeometry.normalized_progression",
+        "PaperP1.NormalizedPairGeometry.union_card_le",
+        "PaperP1.NormalizedPairGeometry.union_bounds",
+        "PaperP1.NormalizedPairGeometry.anchor_geometry",
+        "PaperP1.NormalizedPairGeometry.logarithmic_width",
+        "PaperP1.NormalizedPairRankLoss.intersection_rank_le_loss",
+        "PaperP1.NormalizedPairRankLoss.dimension_le_space_add_kernel",
+        "PaperP1.NormalizedPairRankLoss.loss_le_units_add_residual",
+        "PaperP1.PrimeFactorBudget.two_pow_card_le",
+        "PaperP1.PrimeFactorBudget.card_log_le",
+        "PaperP1.PrimeFactorBudget.polynomial_card_log_le",
+        "PaperP1.PrimeFactorBudget.polynomial_card_budget",
+        "PaperP1.PrimeFactorBudget.exceptional_budget",
+        "PaperP1.TwoProgressionPrimeRows.dvd_of_nonzero_parity",
+        "PaperP1.TwoProgressionPrimeRows.unique_interval_multiples",
+        "PaperP1.TwoProgressionPrimeRows.oddValues_card_le_one",
+        "PaperP1.TwoProgressionPrimeRows.rows_le_two",
+        "PaperP1.TwoProgressionPrimeRows.exceptional_covers",
+        "PaperP1.TwoProgressionPrimeRows.rows_le_two_actual_cutoff",
+        "PaperP1.TwoProgressionPrimeRows.exceptional_card",
+        "PaperP1.TwoProgressionResidualRank.finite_rank_bound",
+        "PaperP1.TwoProgressionResidualRank.cardinal_budget",
+        "PaperP1.AlignedPairRank.units_residual_bound",
+        "PaperP1.AlignedPairRank.channel_bound",
+        "PaperP1.AlignedPairRank.actual_intersection_bound",
+        "PaperP1.NormalizedPairResidual.rank_sublinear",
+        "PaperP1.ResidualComponentRank.small_component_rate",
+        "PaperP1.ResidualComponentRank.residual_rank_sublinear",
+        "PaperP1.TwoProgressionSublinear.rank_sublinear",
+        "PaperP1.ComponentParityCode.parityMap_coordinate",
+        "PaperP1.ComponentParityCode.parityMap_last",
+        "PaperP1.ComponentParityCode.sum_selected",
+        "PaperP1.ComponentParityCode.selected_nonempty",
+        "PaperP1.ComponentParityCode.selected_card_le",
+        "PaperP1.ComponentParityCode.kernel_even",
+        "PaperP1.ComponentParityCode.kernel_square",
+        "PaperP1.PrimeComponentCount.listedPrime_covers",
+        "PaperP1.PrimeComponentCount.small_count",
+        "PaperP1.PrimeComponentCount.small_add_large",
+        "PaperP1.PrimeComponentCount.small_count_of_budget",
+        "PaperP1.PrimeComponentCount.large_vertex_budget",
+        "PaperP1.PrimeComponentCount.large_count",
+        "PaperP1.SmallComponentBound.minimum_weight",
+        "PaperP1.SmallComponentBound.codimension_bound",
+        "PaperP1.SmallComponentBound.volume_bound",
+        "PaperP1.SmallComponentBound.finite_count",
+        "PaperP1.PrimeRowComponents.mem_values",
+        "PaperP1.PrimeRowComponents.values_subset",
+        "PaperP1.PrimeRowComponents.values_nonempty",
+        "PaperP1.PrimeRowComponents.values_disjoint",
+        "PaperP1.PrimeRowComponents.values_card",
+        "PaperP1.PrimeRowComponents.empty_cover",
+        "PaperP1.PrimeRowComponents.sum_row",
+        "PaperP1.PrimeRowComponents.free_component_parity"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0039"
+      ],
+      "notes": "The actual normalized full value kernel is uniformly o(B) for all heights b<=B^3. The full pair deficiency, including internal local defects, is <=(u-1)+epsilon*B and <=L/b+epsilon*B for every fixed epsilon>0 with a common critical-band threshold. One exact unit suffices; separation and affine compatibility are not required for these assertions. The actual intersection rank is also bounded. The final fixed-height O(B/log B) assertion with an enlarged prime cutoff remains open, so T1.9 is not counted complete. See docs/ALIGNED_RESIDUAL_RANK_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:asymmetric",
@@ -1667,18 +1732,22 @@
         "PaperP1.PhysicalNormalizedMatches.physical_b_bound",
         "PaperP1.CompatibleTargetMatches.goodEdge_parameter",
         "PaperP1.CompatibleTargetMatches.compatible_match_bound",
-        "PaperP1.CompatibleTargetMatches.compatible_triple_match_bound"
+        "PaperP1.CompatibleTargetMatches.compatible_triple_match_bound",
+        "PaperP1.FiniteResidualRank.finite_rank_bound",
+        "PaperP1.TwoProgressionResidualRank.finite_rank_bound",
+        "PaperP1.TwoProgressionSublinear.rank_sublinear",
+        "PaperP1.NormalizedPairResidual.rank_sublinear"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
         "P1-MATH-0037",
         "P1-MATH-0038"
       ],
-      "notes": "The finite matching core is proved on actual normalized source values: nonphysical divisibility classes have uniform two-sided error <=3, actual compatible strict-interior target matches satisfy B*gamma+3, and each physical fraction satisfies B/b+2 using true-window separation. The leading coefficients are 1/3 and 1/2. A good edge supplies an actual positive integer source parameter. Residual normalized rank, endpoint exception counts, endpoint separation and the old-information extension remain open. T1.11 is not counted complete. See docs/FIXED_CHANNEL_MATCHES_ALIGNMENT.md and docs/ACTUAL_TARGET_MATCHES_ALIGNMENT.md.",
+      "notes": "The finite matching core is proved on actual normalized source values: nonphysical divisibility classes have uniform two-sided error <=3, actual compatible strict-interior target matches satisfy B*gamma+3, and each physical fraction satisfies B/b+2 using true-window separation. The leading coefficients are 1/3 and 1/2. A good edge supplies an actual positive integer source parameter. Residual normalized rank, endpoint exception counts, endpoint separation and the old-information extension remain open. T1.11 is not counted complete. See docs/FIXED_CHANNEL_MATCHES_ALIGNMENT.md and docs/ACTUAL_TARGET_MATCHES_ALIGNMENT.md. The finite and uniform sublinear residual-rank arithmetic is now proved on true subsets of two progressions, and on actual normalized pairs. The target/old quotient-rank bridge and endpoint work are still open. See docs/ALIGNED_RESIDUAL_RANK_ALIGNMENT.md.",
       "validation_history": [
-        "84c4c9a4016ce9f1c4ab9f7828675f3495eced85"
-      ],
-      "validation_commit": "4212bf9ec45186af0f1ce85ed9a6fea00542775e"
+        "84c4c9a4016ce9f1c4ab9f7828675f3495eced85",
+        "4212bf9ec45186af0f1ce85ed9a6fea00542775e"
+      ]
     },
     {
       "label": "p1:arith:fixed-homogeneous-seeds",
@@ -2002,7 +2071,11 @@
         "PaperP1.PhysicalNormalizedMatches.physical_b_bound",
         "PaperP1.CompatibleTargetMatches.goodEdge_parameter",
         "PaperP1.CompatibleTargetMatches.compatible_match_bound",
-        "PaperP1.CompatibleTargetMatches.compatible_triple_match_bound"
+        "PaperP1.CompatibleTargetMatches.compatible_triple_match_bound",
+        "PaperP1.FiniteResidualRank.finite_rank_bound",
+        "PaperP1.TwoProgressionResidualRank.finite_rank_bound",
+        "PaperP1.TwoProgressionSublinear.rank_sublinear",
+        "PaperP1.NormalizedPairResidual.rank_sublinear"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
@@ -2010,12 +2083,12 @@
         "P1-MATH-0037",
         "P1-MATH-0038"
       ],
-      "notes": "The literal finite coefficient and its real maximum are proved, with gamma<=2/3 and exact values 1/3,1/2,2/3 in channels 2:3,3:4,8:9. Sharpness concerns this finite coefficient only. The two affine classes have uniform two-sided error <=3 on every integer interval, including a global numerator reduction. Actual compatible strict-interior target matches satisfy B*gamma+3 on the deduplicated true old set, with B/b+2 in each physical fraction. A good edge supplies an actual positive integer source parameter. The residual normalized rank, endpoint exceptions, endpoint separation and old-prime extension remain open; T2.6 is not counted complete. See docs/FIXED_CHANNEL_GAMMA_ALIGNMENT.md, docs/FIXED_CHANNEL_MATCHES_ALIGNMENT.md and docs/ACTUAL_TARGET_MATCHES_ALIGNMENT.md.",
+      "notes": "The literal finite coefficient and its real maximum are proved, with gamma<=2/3 and exact values 1/3,1/2,2/3 in channels 2:3,3:4,8:9. Sharpness concerns this finite coefficient only. The two affine classes have uniform two-sided error <=3 on every integer interval, including a global numerator reduction. Actual compatible strict-interior target matches satisfy B*gamma+3 on the deduplicated true old set, with B/b+2 in each physical fraction. A good edge supplies an actual positive integer source parameter. The residual normalized rank, endpoint exceptions, endpoint separation and old-prime extension remain open; T2.6 is not counted complete. See docs/FIXED_CHANNEL_GAMMA_ALIGNMENT.md, docs/FIXED_CHANNEL_MATCHES_ALIGNMENT.md and docs/ACTUAL_TARGET_MATCHES_ALIGNMENT.md. The finite and uniform sublinear residual-rank arithmetic is now proved on true subsets of two progressions, and on actual normalized pairs. The target/old quotient-rank bridge and endpoint work are still open. See docs/ALIGNED_RESIDUAL_RANK_ALIGNMENT.md.",
       "validation_history": [
         "b9ff1b2874b76ba8fe97e314db236980b2fe6e13",
-        "84c4c9a4016ce9f1c4ab9f7828675f3495eced85"
-      ],
-      "validation_commit": "4212bf9ec45186af0f1ce85ed9a6fea00542775e"
+        "84c4c9a4016ce9f1c4ab9f7828675f3495eced85",
+        "4212bf9ec45186af0f1ce85ed9a6fea00542775e"
+      ]
     },
     {
       "label": "p1:arith:fixed-channel-palm",

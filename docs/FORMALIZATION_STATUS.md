@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3144 audited theorem/lemma declarations**. This
+- The project currently has **3206 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -738,3 +738,28 @@ root free space is 18.14 GiB.
 
 Validated actual matching checkpoint for T2.6/T1.11 and P1-MATH-0038:
 [4212bf9ec45186af0f1ce85ed9a6fea00542775e](https://github.com/Vulkin-prog/paper-p1-lean/commit/4212bf9ec45186af0f1ce85ed9a6fea00542775e).
+
+
+## Uniform aligned residual rank — partial T1.9
+
+The actual normalized full value kernel is uniformly o(B) for every
+height b<=B^3. An explicit finite Runge--Hamming bound controls small
+free components; the exact large-component budget is |S|/(K+1).
+The omitted prime rows include the prime divisors of the dilation
+coefficients, with their polynomial-height cost proved. The full pair
+deficiency is bounded by (u-1)+epsilon*B, and by L/b+epsilon*B for
+coprime channels, with one common critical-band threshold. This also
+bounds the actual intersection rank and includes internal local defects.
+One exact unit suffices; separation, compatibility and local regularity
+are unnecessary. This is P1-MATH-0039. See
+[alignment](ALIGNED_RESIDUAL_RANK_ALIGNMENT.md).
+
+T1.9 remains in progress pending its fixed-height enlarged-cutoff
+O(B/log B) assertion. The target quotient-rank and endpoint bridges for
+T1.11/T2.6 remain open. The full build passed (9,245 jobs), and all
+3,206 theorem/lemma declarations passed the actual axiom audit with
+only propext, Classical.choice and Quot.sound. All 921 coverage/finding
+names were checked directly by Lean. Coverage remains 48 / 167, with
+39 confirmed improvements. No new Paper C port or external premise is
+added. Original source bytes remain unchanged; no Palomar registration
+is made. Ubuntu root free space is 18.09 GiB.

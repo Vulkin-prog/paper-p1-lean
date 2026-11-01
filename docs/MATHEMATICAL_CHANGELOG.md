@@ -1456,3 +1456,45 @@ are preserved; no manuscript revision or Palomar registration is made.
 
 Validated actual matching checkpoint for T2.6/T1.11 and P1-MATH-0038:
 [4212bf9ec45186af0f1ce85ed9a6fea00542775e](https://github.com/Vulkin-prog/paper-p1-lean/commit/4212bf9ec45186af0f1ce85ed9a6fea00542775e).
+
+
+## P1-MATH-0039 — Uniform aligned rank from one unit without separation
+
+- Location: companion T1.9, page 14, `p1:arith:alignedrank`,
+  `companion_sections/arithmetic_appendix.tex:770`; original hash
+  `7de9608ecc780ef5a448579b04b2ebeabe5e1157579ce3025b0303a047157acc`.
+- Original assumptions: separated aligned windows of reduced height
+  b<=B^3; the residual component argument is asymptotic.
+- Improvement: one actual normalized unit suffices for a uniform
+  full pair deficiency <=(u-1)+epsilon*B. With positive coprime a<=b,
+  the bound is also L/b+epsilon*B. Separation, affine compatibility
+  and local regularity are unnecessary. This full deficiency includes
+  internal local defects and bounds the actual intersection rank.
+- Finite evidence: `EvenSquareSelection.cardinal_gt`,
+  `ComponentParityCode.kernel_even`, `kernel_square`,
+  `SmallComponentBound.finite_count`, `PrimeRowComponents.free_component_parity`,
+  `PrimeComponentCount.large_vertex_budget` and
+  `TwoProgressionResidualRank.finite_rank_bound`.
+- Uniform evidence: `PrimeFactorBudget.exceptional_budget`,
+  `ResidualComponentRank.residual_rank_sublinear`,
+  `TwoProgressionSublinear.rank_sublinear`,
+  `NormalizedPairResidual.rank_sublinear`,
+  `NormalizedPairRankLoss.loss_le_units_add_residual` and
+  `AlignedPairRank.units_residual_bound`, `channel_bound`,
+  `actual_intersection_bound`.
+- Suggested revision: separate this one-unit result from separation
+  and compatibility, and give the explicit finite component bound.
+  The parity row of the component code is its actual value-set size
+  modulo two. The large-component denominator is K+1.
+
+The fixed-height enlarged-cutoff O(B/log B) assertion is still open,
+so T1.9 is not counted complete. The target quotient-rank and endpoint
+bridges needed by T1.11/T2.6 are also separate work. See
+[alignment](ALIGNED_RESIDUAL_RANK_ALIGNMENT.md).
+
+The full Lean v4.36.0-rc2 build passed (9,245 jobs), and all 3,206
+theorem/lemma declarations passed the actual axiom audit with only
+`propext`, `Classical.choice` and `Quot.sound`. All 921 distinct
+coverage/finding names were checked directly by Lean. Coverage remains
+48 / 167, with 39 confirmed improvements. Original manuscript bytes
+are preserved; no manuscript revision or Palomar registration is made.

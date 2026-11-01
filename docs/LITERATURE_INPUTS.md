@@ -915,3 +915,18 @@ There is no height restriction, external counting premise or new Paper C
 port. This closes an actual-value bridge, while residual normalized rank
 and endpoint exceptions remain unresolved. See
 [alignment](ACTUAL_TARGET_MATCHES_ALIGNMENT.md).
+
+
+## Uniform aligned residual arithmetic
+
+Stable ID: `P1-ARITH-ALIGNED-RESIDUAL`. Status: **proved uniform core**.
+The actual normalized full value kernel is uniformly o(B) for all
+heights up to B^3, without separation, compatibility or local regularity.
+The full pair deficiency is <=(u-1)+epsilon*B and, in reduced channels,
+<=L/b+epsilon*B. The finite component-code proof uses actual disjoint
+value sets, the proved degree-uniform Runge lemma, the existing audited
+Hamming theorem, elementary prime counts and a proved polynomial-height
+prime-factor budget. No new literature hypothesis or Paper C source is
+introduced. The final fixed-height enlarged-cutoff rate and the target
+quotient-rank bridges remain unresolved. See
+[alignment](ALIGNED_RESIDUAL_RANK_ALIGNMENT.md).
