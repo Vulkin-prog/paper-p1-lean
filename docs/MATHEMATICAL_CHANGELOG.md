@@ -750,3 +750,6 @@ Validated implementation of both conclusions of article Lemma 7.2 and P1-MATH-00
   into a new manuscript version.
 
 All 374 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of article Lemma 7.3 and P1-MATH-0021:
+[41cefe7cf8bb7d036a201ea5ae764b66795f2023](https://github.com/Vulkin-prog/paper-p1-lean/commit/41cefe7cf8bb7d036a201ea5ae764b66795f2023).
