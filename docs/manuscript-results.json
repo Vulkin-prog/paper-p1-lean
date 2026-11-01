@@ -446,6 +446,23 @@
       "sha256": "9594d0ca09a407ca09f83dbf5e3e3a35c779690b9000a1041eb967ba1042956a",
       "status": "in_progress",
       "lean_declarations": [
+        "PaperP1.ModerateCertificateCount.main_7_2_finite",
+        "PaperP1.ModerateCertificateCount.main_7_2_finite_criticalBand",
+        "PaperP1.ModerateCertificateCount.mem_sourceTuples",
+        "PaperP1.ModerateCertificateCount.sourceTuples_subset_cover",
+        "PaperP1.ModerateTupleCover.card_tupleCover_le",
+        "PaperP1.ModerateTupleCover.mem_tupleCover",
+        "PaperP1.ModerateTupleCover.card_anchorTuples_le",
+        "PaperP1.ModerateAnchors.anchor_data",
+        "PaperP1.ModerateAnchors.card_anchor",
+        "PaperP1.PrimeProductBudget.card_le_assignmentExponent",
+        "PaperP1.PrimeAssignments.product_groupModulus",
+        "PaperP1.PrimeAssignments.groupPrime_pairwise_coprime",
+        "PaperP1.PrimeAssignments.groupModulus_pairwise_coprime",
+        "PaperP1.ModeratePrimeAssignments.card_covered_le",
+        "PaperP1.ModeratePrimeAssignments.mem_receiving",
+        "PaperP1.TruncatedKernelProducts.window_kernels_coprime",
+        "PaperP1.TruncatedKernelProducts.kernel_pair_card_le_assignmentExponent",
         "PaperP1.ModerateReceiverCost.mem_assignments",
         "PaperP1.ModerateReceiverCost.card_assignments_le_moderate",
         "PaperP1.ModerateReceiverCost.card_assignments_le_cost",
@@ -458,7 +475,7 @@
         "P1-ARITH-MODERATE-CERTIFICATES"
       ],
       "mathematical_changes": [],
-      "notes": "Preparatory finite receiver cost only. Actual receiving-centre assignments satisfy the exact congruence membership predicate. Coprime groups give at most floor(N/D_j)+1 centres per receiver. For N>=10, positive modules with product<=9*N^2 have at most two modules above N. If every D_j<=6*N*B, the actual receiving-tuple count is at most 36*B^2*2^h*N^h/product(D_j), with h the number of receivers. The numerical and congruence counts are proved; none is an assumed CRT bound. The cover and count of actual anchor-kernel certificates, the (r*B)^m prime-assignment factor, and the source weighted sum over growing orders remain open. This partial scope does not complete article Lemma 7.2 or increase numbered coverage. See MODERATE_CERTIFICATE_ALIGNMENT.md."
+      "notes": "The full first finite counting conclusion is proved for actual ordered distinct window tuples admitting an unmarked anchor, two distinct anchor values, and an assignment of every prime in their actual kernel product to an odd-valuation occurrence in another window. The tuple population is identified explicitly; a larger divisibility-only cover is counted internally. Canonical kernel supports, squarefreeness, coprimality, product bounds and the literal prime-count ceiling are proved. Group products partition the actual prime product; all assignments and receiving centres are counted. The exact source bound is 36*r*B^4*2^(r-1)*N^r*T^(-2)*(r*B)^m with m=ceil(2*log(3*N)/logY). The finite theorem has N>=10, 2<=B<=N+1, Y>=B and T>=1. A critical-band specialization chooses one threshold before every order r, Y,T and tuple. The weighted second conclusion over all growing orders remains open; the entire numbered result therefore remains in progress and adds no completed result. See MODERATE_CERTIFICATE_ALIGNMENT.md."
     },
     {
       "label": "p1:core:degrees",

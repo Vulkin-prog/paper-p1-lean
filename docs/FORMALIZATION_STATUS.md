@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **2047 audited theorem/lemma declarations**. This
+- The project currently has **2092 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -347,12 +347,15 @@ Neither document is fully formalized.
   their root sets are pairwise disjoint. Only first-window regularity is
   needed in the stronger theorem. See
   [offset-root separation alignment](OFFSET_ROOT_SEPARATION_ALIGNMENT.md).
-- Article Lemma 7.2 is in progress. Its actual finite receiving-centre
-  population and congruence count are proved. Positive modules with product
-  at most 9*N^2 have at most two entries above N for N>=10. The moderate
-  cap 6*N*B yields the exact receiving-cost factor 36*B^2. The arithmetic
-  anchor-kernel cover, number of prime assignments and weighted sum over
-  growing orders remain open. This adds no completed numbered result. See
+- Article Lemma 7.2 is in progress, with its full first finite counting
+  conclusion proved. The actual unmarked anchor values give coprime
+  squarefree kernels, a bounded product and the literal ceiling exponent.
+  All prime assignments, actual receiver congruences and anchor tuples are
+  counted, giving the exact constant 36. The original ordered distinct
+  tuples form a proved subset of a larger congruence cover. A single
+  critical-band threshold precedes every order r and all cutoffs. The
+  weighted second conclusion over growing orders remains open. This adds
+  no completed numbered result. See
   [moderate-certificate progress](MODERATE_CERTIFICATE_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
