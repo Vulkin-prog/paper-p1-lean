@@ -816,9 +816,10 @@
       ],
       "mathematical_changes": [],
       "notes": "Complete actual Proposition 6.2. DenseTargetCount.main_6_2 counts the literal source-excluding target set with effective nullity increment >=eta*L, uniformly before every critical-band length and source tuple. DenseTargetCount.uniform_count proves the stronger population including source centres and allowing repeated sources. No independence, local regularity, separation or compatibility is assumed. Actual physical relation codes lift all effective relations. Fixed-order recovery regularization retains enough nonzero target labels; actual large-prime rows construct bounded physical supports and assigned squarefree coprime groups. Maximal-product selection yields an actual strict source certificate or small residual groups. Two actual disjoint target classes survive. Their positions, small-prime divisors, actual source divisors and residual coefficients form a literal finite code. Uniform divisor bounds and the completed two-square-equation theorem count all coded targets by N^(2*theta+epsilon). Choosing k after t makes theta arbitrarily small; the completed T4.2 counts the certificate branch. The threshold precedes every length and source tuple. No target count, classification, curve input or coefficient enumeration is assumed. The proof needs only two selected classes and no coefficient-height restriction at its final square-equation step. Dstar includes one-source supports explicitly and is fixed before N. Main 6.3 and 6.4 remain separate obligations. See DENSE_TARGET_ALIGNMENT.md.",
-      "validation_commit": "23a3ac440d22d350cd37676144185ebb20bfd14e",
+      "validation_commit": "0c3ce93793ad137d1673e8261985b1b6b548f86a",
       "validation_history": [
-        "b83bdedd5e12fc31c3f964c454392afcf9121988"
+        "b83bdedd5e12fc31c3f964c454392afcf9121988",
+        "23a3ac440d22d350cd37676144185ebb20bfd14e"
       ]
     },
     {
