@@ -224,3 +224,14 @@ public import PaperP1.Arithmetic.ThreeBlockRigidity
 public import PaperP1.Arithmetic.CoverRankPrimeBudget
 public import PaperP1.Arithmetic.SharedPrimeCover
 public import PaperP1.Arithmetic.TripleCoverRank
+public import PaperP1.Asymptotics.QuarticLogPrimePool
+public import PaperP1.Asymptotics.QuadraticOrderBranching
+public import PaperP1.Model.JointBranchingEvents
+public import PaperP1.Model.JointBranchingBudget
+public import PaperP1.Probability.BranchingTuples
+public import PaperP1.Model.FactorialBranching
+public import PaperP1.Asymptotics.QuadraticOrderMoments
+public import PaperP1.Model.CountTailBounds
+public import PaperP1.Asymptotics.QuadraticTailScale
+public import PaperP1.Asymptotics.NearLinearThreshold
+public import PaperP1.Asymptotics.VerySmallTail

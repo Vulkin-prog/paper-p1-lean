@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **45 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **46 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **2927 audited theorem/lemma declarations**. This
+- The project currently has **2969 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -590,3 +590,24 @@ count, six-vertex mass estimate or Palomar registration is asserted.
 
 Validated implementation of companion T20.7 and P1-MATH-0032:
 [2ecbeb2a1c57c75e700e1efc63225a9107335400](https://github.com/Vulkin-prog/paper-p1-lean/commit/2ecbeb2a1c57c75e700e1efc63225a9107335400).
+
+
+## Very small tails through a growing moment order
+
+Companion T19.6 is complete. The actual prime pool after j<=K*(log N)^2
+windows has a uniform quartic logarithmic budget. Rankin at sigma=3/4
+and exact full-vector branching give actual factorial moments
+F_k<=(2*N^(3/4+epsilon))^k through that entire growing range. A literal
+ceiling order k=ceil(128*(log N)^2) proves
+P(Z_N>b)<=exp(-2*(log N)^3) for every real b>=N^(9/10). The truncated
+moments have the original exp(-(log N)^3/2) bound uniformly for
+integer 0<=r<=log N. Both source ceilings are retained in passing to
+the near-linear threshold. Every fixed c>0 is allowed, without the
+smooth-pair input; this is P1-MATH-0033. See
+[alignment](VERY_SMALL_TAIL_ALIGNMENT.md).
+
+The full build passed (9,157 jobs), as did the actual axiom audit of all
+2,969 theorem/lemma declarations and all 730 coverage/finding names.
+Coverage is 46 / 167, with 33 confirmed improvements. The low-order
+moment asymptotics and principal Poisson theorems remain open; no
+Palomar registration is made. Ubuntu root free space is 17.76 GiB.

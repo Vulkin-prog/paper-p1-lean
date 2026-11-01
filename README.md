@@ -4,7 +4,11 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 45 / 167 numbered results proved.**
+**Status: active formalization, 46 / 167 numbered results proved.**
+Companion T19.6 proves the actual very small tail and its logarithmic-order
+truncated moments. A smaller power threshold suffices, and every fixed c>0
+is permitted without smooth-pair input. See
+[statement alignment](docs/VERY_SMALL_TAIL_ALIGNMENT.md).
 Companion T20.7 proves the actual covered three-window rank comparison,
 its explicit finite component bound and the square-product assertion. See
 [statement alignment](docs/COVER_RANK_ALIGNMENT.md).

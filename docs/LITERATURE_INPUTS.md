@@ -843,3 +843,16 @@ bound; no external prime theorem or rank estimate is an input. The
 existing attributed pinned-graph equivalence is reused through its
 checked P1 interface, with no new Paper C port. See
 [alignment](COVER_RANK_ALIGNMENT.md).
+
+
+## Companion T19.6 — An internal growing-order tail proof
+
+The proof uses the internally proved finite prime-budget Rankin bound,
+actual full-vector independence after old observations, an exact
+joint-event bridge and a proved distinct-tuple factorial recurrence.
+The order k=ceil(128*(log N)^2) is controlled uniformly before Markov
+is applied. The tail and truncated moments therefore require no
+smooth-pair estimate, conditional dependency-graph bound or extrapolation
+of fixed-order constants. Elementary logarithmic-power limits compare
+the literal source thresholds. No new Paper C code is ported. See
+[alignment](VERY_SMALL_TAIL_ALIGNMENT.md).

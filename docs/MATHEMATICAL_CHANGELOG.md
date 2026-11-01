@@ -1219,3 +1219,43 @@ preserved; no revised manuscript or Palomar registration is made.
 
 Validated implementation of companion T20.7 and P1-MATH-0032:
 [2ecbeb2a1c57c75e700e1efc63225a9107335400](https://github.com/Vulkin-prog/paper-p1-lean/commit/2ecbeb2a1c57c75e700e1efc63225a9107335400).
+
+
+## P1-MATH-0033 — A power threshold for the very small tail
+
+- Location: companion Proposition T19.6, page 70, `p1:limits:colored-tail`,
+  `companion_sections/limits_appendix.tex:296`; original statement hash
+  `377d9659754253d1c87b71aea548e2b6f20b12f7ff691912355db547ce493e9b`.
+- Original restriction: c<sqrt(13)/4 with Pascadi's smooth-pair input,
+  or c<2/sqrt(5) with the de la Breteche--Drappeau estimate, at the
+  rounded near-linear threshold.
+- Improvement: every real threshold b>=N^(9/10) has probability
+  <=exp(-2*(log N)^3). Its truncated r-th moments are
+  <=exp(-(log N)^3/2), uniformly for integer 0<=r<=log N.
+  Consequently both original near-linear conclusions hold for every
+  fixed c>0, without the smooth-pair literature input.
+- Evidence: `QuarticLogPrimePool.actual_pool_count_critical`,
+  `QuadraticOrderBranching.quadratic_order_branching`,
+  `JointBranchingEvents.retained_joint_factor`,
+  `FactorialBranching.factorial_le_power`,
+  `QuadraticOrderMoments.factorial_bound`,
+  `QuadraticTailScale.probability_bound`,
+  `NearLinearThreshold.threshold_ge_power` and
+  `VerySmallTail.companion_T19_6`.
+- Suggested revision: first prove the uniform factorial recurrence up to
+  K*(log N)^2 using the quartic logarithmic prime pool. Apply the actual
+  falling-factorial Markov inequality at the explicit ceiling order,
+  then deduce the rounded source thresholds by comparison. This also
+  removes the source upper restriction on c.
+
+Both original probability and truncated-moment conclusions are proved
+under the actual infinite prime-sign law, uniformly over every fixed
+critical band. This proof does not establish bounded low-order moments
+or the main Poisson theorem. See [alignment](VERY_SMALL_TAIL_ALIGNMENT.md).
+
+The full Lean v4.36.0-rc2 build passed (9,157 jobs), and all 2,969
+theorem/lemma declarations passed the actual axiom audit with only
+`propext`, `Classical.choice` and `Quot.sound`. All 730 distinct
+coverage/finding names were checked directly by Lean. Coverage is
+46 / 167, with 33 confirmed improvements. Original source bytes are
+preserved; no manuscript revision or Palomar registration is made.

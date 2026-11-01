@@ -1088,6 +1088,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "2ecbeb2a1c57c75e700e1efc63225a9107335400"
+    },
+    {
+      "id": "P1-MATH-0033",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "companion",
+        "label": "p1:limits:colored-tail",
+        "number": "T19.6",
+        "page": 70,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 296,
+        "version": "P1 V1.6",
+        "statement_sha256": "377d9659754253d1c87b71aea548e2b6f20b12f7ff691912355db547ce493e9b"
+      },
+      "original_assumption": "T19.6 assumes fixed 0<c<sqrt(13)/4 and uses a smooth-pair estimate attributed to Pascadi; with the de la Breteche--Drappeau input the stated range is c<2/sqrt(5). The threshold is ceil(ceil(N/L)*exp(-c*sqrt(log N*log log N))).",
+      "finding": "Uniform actual branching through K*(log N)^2 old windows gives F_k<=(2*N^(3/4+epsilon))^k. Choosing epsilon=1/20 and k=ceil(128*(log N)^2) proves P(Z_N>b)<=exp(-2*(log N)^3) for every b>=N^(9/10), and the source truncated-moment bound uniformly for integer 0<=r<=log N. The literal source threshold exceeds N^(9/10) for every fixed c>0, so its upper restriction on c and its smooth-pair analytic input can both be removed.",
+      "evidence": [
+        "PaperP1.QuarticLogPrimePool.actual_pool_count_critical",
+        "PaperP1.QuadraticOrderBranching.quadratic_order_branching",
+        "PaperP1.JointBranchingEvents.retained_joint_factor",
+        "PaperP1.FactorialBranching.factorial_le_power",
+        "PaperP1.QuadraticOrderMoments.factorial_bound",
+        "PaperP1.CountTailBounds.falling_markov_product",
+        "PaperP1.QuadraticTailScale.probability_bound",
+        "PaperP1.NearLinearThreshold.threshold_ge_power",
+        "PaperP1.VerySmallTail.power_threshold",
+        "PaperP1.VerySmallTail.companion_T19_6"
+      ],
+      "proposed_revision": "Replace the analytic smooth-pair and dependency-graph proof of T19.6 with the uniform quartic logarithmic prime-budget argument, actual distinct-tuple recurrence, and growing-order falling-factorial Markov bound. State the stronger power threshold N^(9/10), then deduce the original rounded near-linear thresholds for every fixed c>0.",
+      "impact": "A strictly smaller threshold, a stronger probability exponent and no smooth-pair literature input. One N threshold controls all critical lengths and all moment orders through log N. This does not supply bounded low-order moments or the main Poisson approximation.",
+      "validation": "Full Lean v4.36.0-rc2 build (9157 jobs) and actual axiom audit of all 2969 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 730 distinct coverage/finding declaration names were checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
