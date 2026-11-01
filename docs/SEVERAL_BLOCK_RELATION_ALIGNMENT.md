@@ -100,3 +100,5 @@ with 66 confirmed improvements. Palomar remains a later milestone for the
 completed development as a whole.
 
 Full several-block support verification: Lean v4.36.0-rc2 full build passed (9,845 jobs); actual axiom audit passed for all 4,536 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,251 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.16 GiB. Full T1.14 is complete with the stronger support bound and actual fixed-parameter record counts; coverage is 66/167 (main 22/73, companion 44/94), with 66 confirmed improvements. No unfinished determinant or kernel count, target-count hypothesis, new external input, Paper C port, manuscript-byte change or Palomar registration.
+
+Proof checkpoint: [64ab0cfdf7c9f6ff8d7acdf4a12db0b0ff05ba19](https://github.com/Vulkin-prog/paper-p1-lean/commit/64ab0cfdf7c9f6ff8d7acdf4a12db0b0ff05ba19).
