@@ -66,15 +66,18 @@ S union T with S_x+S_y. That full union-image identity still needs a
 shared value, as in the earlier compression theorem. The new result
 concerns the intersection and full pair deficiency.
 
-## Remaining character and probability bridge
+## Character and probability bridge completed at the next checkpoint
 
-The affine character of these common classes must still be identified
-with the literal predecessor-coordinate signs. Selected-unit words must
-then be enumerated by the [canonical patterns](CHANNEL_WORD_HOSTS_ALIGNMENT.md),
-and their contribution identified with the actual Fourier/joint-probability
-expression. Defective-normalization removal and mass/profile asymptotics
-also remain open. There is no new external mathematical hypothesis,
-Paper C port, manuscript revision or Palomar registration.
+The actual affine characters are now identified with the literal
+predecessor-coordinate signs, and the actual private pair covariance is
+proved to equal p^2 times the signed nonzero even-unit sum, including
+jointly incompatible pairs. See the
+[actual probability bridge](PRIVATE_UNIT_COVARIANCE_ALIGNMENT.md).
+Selected-unit words must still be enumerated by the
+[canonical patterns](CHANNEL_WORD_HOSTS_ALIGNMENT.md).
+Defective-normalization removal and mass/profile asymptotics also remain
+open. There is no new external mathematical hypothesis, Paper C port,
+manuscript revision or Palomar registration.
 
 Validated exact unit-coefficient checkpoint (9,337 build jobs;
 3,425 audited declarations; 1,140 directly checked coverage/finding names):

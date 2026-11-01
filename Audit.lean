@@ -99,6 +99,10 @@ import PaperP1
 #print axioms PaperP1.Affine.missing_full_support_nullity_bound_real
 #print axioms PaperP1.Affine.relationSignedSum_eq_one_add_sign
 #print axioms PaperP1.Affine.uniformSolutionMass_eq_one_add_sign
+#print axioms PaperP1.PairFourierIntersection.self_add
+#print axioms PaperP1.PairFourierIntersection.add_zero_iff
+#print axioms PaperP1.PairFourierIntersection.full_relation_iff
+#print axioms PaperP1.PairFourierIntersection.full_support_family_sum
 #print axioms PaperP1.Affine.relativeNullityOn_pair_eq_zero
 #print axioms PaperP1.Affine.finrank_coprod_kernel_eq
 #print axioms PaperP1.Affine.ungroup_groupCoefficients
@@ -210,6 +214,10 @@ import PaperP1
 #print axioms PaperP1.Affine.mem_startSolutionSet_iff
 #print axioms PaperP1.Affine.startSystem_eq_startRhs_iff_startAt
 #print axioms PaperP1.Affine.mem_startSolutionSet_iff_startAt
+#print axioms PaperP1.StartVertexSign.vertex_bit
+#print axioms PaperP1.StartVertexSign.zero_sum_shift
+#print axioms PaperP1.StartVertexSign.even_parity_evaluation
+#print axioms PaperP1.StartVertexSign.even_real_character
 #print axioms PaperP1.Affine.subfamilyExtend_injective
 #print axioms PaperP1.Affine.sum_finset_subtype
 #print axioms PaperP1.Affine.relationAddition_subfamilyExtend
@@ -1537,6 +1545,10 @@ import PaperP1
 #print axioms PaperP1.UnionMatchDensity.reciprocal_density_identity
 #print axioms PaperP1.UnionMatchDensity.abs_match_error
 #print axioms PaperP1.UnionMatchDensity.window_match_upper
+#print axioms PaperP1.UnitAffineSigns.unitClassMap_evaluation
+#print axioms PaperP1.UnitAffineSigns.left_evaluation
+#print axioms PaperP1.UnitAffineSigns.right_evaluation
+#print axioms PaperP1.UnitAffineSigns.paired_real_character
 #print axioms PaperP1.UnitIntersectionEquiv.unitValue_injective
 #print axioms PaperP1.UnitIntersectionEquiv.unitValue_surjective
 #print axioms PaperP1.UnitIntersectionEquiv.valueEquiv_apply_val
@@ -2566,6 +2578,10 @@ import PaperP1
 #print axioms PaperP1.OneNegativePrime.parity_simple_multiple
 #print axioms PaperP1.OneNegativePrime.not_dvd_inside
 #print axioms PaperP1.OneNegativePrime.positive_exact_run
+#print axioms PaperP1.PairSquareClassFourier.full_support_at
+#print axioms PaperP1.PairSquareClassFourier.pair_common_formula
+#print axioms PaperP1.PairSquareClassFourier.pair_moment_covariance
+#print axioms PaperP1.PairSquareClassFourier.covariance_common_formula
 #print axioms PaperP1.Model.parityPairing_apply
 #print axioms PaperP1.Model.parityPairing_parityVec
 #print axioms PaperP1.Model.parityVec_mem_boundedPrimeParity
@@ -2588,6 +2604,11 @@ import PaperP1
 #print axioms PaperP1.PrimeRunCylinder.positive_exponential_lower
 #print axioms PaperP1.PrimeRunCylinder.positive_log_lower
 #print axioms PaperP1.PrimeRunCylinder.total_log_lower
+#print axioms PaperP1.PrivateUnitCovariance.private_marginals
+#print axioms PaperP1.PrivateUnitCovariance.common_sum_eq_unit_sum
+#print axioms PaperP1.PrivateUnitCovariance.private_pair_centered_moment
+#print axioms PaperP1.PrivateUnitCovariance.private_pair_covariance
+#print axioms PaperP1.PrivateUnitCovariance.private_pair_mass
 #print axioms PaperP1.RegularAffineBounds.affineWindowMass_zero_or_rank
 #print axioms PaperP1.RegularAffineBounds.affineWindowMass_nonneg
 #print axioms PaperP1.RegularAffineBounds.affineWindowMass_abs_sub_nominal

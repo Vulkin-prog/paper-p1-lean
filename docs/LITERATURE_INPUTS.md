@@ -1041,3 +1041,14 @@ No external dimension or relation-space identification is assumed.
 The zero/singleton cases are included. Affine character signs and the
 probability/mass bridge remain separate. No new Paper C source is used.
 See the [coefficient alignment](EXACT_UNIT_INTERSECTION_ALIGNMENT.md).
+
+## Actual private pair Fourier contribution
+
+`StartVertexSign`, `UnitAffineSigns`, `PairFourierIntersection`,
+`PairSquareClassFourier` and `PrivateUnitCovariance` prove the actual
+predecessor signs, common-class reindexing and private pair covariance.
+Separate local affine solutions suffice; no joint compatibility is assumed.
+These finite algebra and probability identities use already proved project
+results and the pinned Mathlib only. There is no new literature premise
+or Paper C port. Full selected-word enumeration and normalization estimates
+for article 3.3 and companion T2.5 remain unfinished.

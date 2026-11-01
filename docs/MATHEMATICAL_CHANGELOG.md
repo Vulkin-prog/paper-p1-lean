@@ -1893,3 +1893,43 @@ or Palomar registration is made.
 Validated exact unit-coefficient checkpoint (9,337 build jobs;
 3,425 audited declarations; 1,140 directly checked coverage/finding names):
 [4461d6bdcc7e19648377fe47703c3bd0d14d21ee](https://github.com/Vulkin-prog/paper-p1-lean/commit/4461d6bdcc7e19648377fe47703c3bd0d14d21ee).
+
+## P1-MATH-0035 extended — actual predecessor signs and pair covariance
+
+The actual affine character of an even true-window selection is now
+proved to be its predecessor coefficient. For even exact-unit coefficients,
+complete multiplicativity and zero-sum cancellation remove the dilation
+constants. The paired character is precisely the sign of the sum of
+both actual predecessor parities, evaluated at separate local witnesses.
+
+An explicit finite bijection reindexes full-support two-block relations
+by nonzero common vectors. Arbitrary actual local witnesses are permitted
+in the square-class Fourier formula, with heterogeneous marginals retained.
+The actual pair Bochner moment is identified with the actual covariance.
+Composing this with the unit-intersection equivalence gives
+
+    q_{x,y}-p^2 = p^2 * signedUnitSum,
+    q_{x,y}     = p^2 * (1+signedUnitSum).
+
+Privacy derives the full local ranks and p=2^-L. No joint compatibility,
+separation, coprimality, dyadic membership or alignment height is needed.
+Jointly incompatible pairs are included, with their sign cancellations.
+Distinct centres are required only for the two-element finite-set
+covariance and mass statements; the centered moment also permits repeats.
+
+Evidence: `StartVertexSign.even_parity_evaluation`,
+`UnitAffineSigns.paired_real_character`,
+`PairFourierIntersection.full_support_family_sum`,
+`PairSquareClassFourier.full_support_at`, `pair_moment_covariance`,
+`PrivateUnitCovariance.private_marginals`, `common_sum_eq_unit_sum`,
+`private_pair_centered_moment`, `private_pair_covariance` and `private_pair_mass`.
+
+This extends the existing compression improvement; there remain 44 confirmed
+findings. Actual selected-unit word enumeration, defective normalization
+removal, baseline correction and the full mass/profile asymptotics remain
+open. Neither article 3.3 nor companion T2.5 is newly counted proved.
+Coverage stays 52/167. The full build passed (9,347 jobs), all 3,446
+theorem/lemma declarations passed the actual axiom audit, and all 1,161
+coverage/finding names were checked directly. Only propext,
+Classical.choice and Quot.sound occur. No external input, Paper C port,
+manuscript revision or Palomar registration is introduced.

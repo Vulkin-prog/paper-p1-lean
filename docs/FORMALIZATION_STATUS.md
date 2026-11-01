@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **48 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **52 / 167**: article Propositions 3.1, 4.1, 5.2, 13.7, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.9, T1.11, T2.6, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3294 audited theorem/lemma declarations**. This
+- The project currently has **3446 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1088,3 +1088,37 @@ Ubuntu root free space is 17.95 GiB.
 Validated exact unit-coefficient checkpoint (9,337 build jobs;
 3,425 audited declarations; 1,140 directly checked coverage/finding names):
 [4461d6bdcc7e19648377fe47703c3bd0d14d21ee](https://github.com/Vulkin-prog/paper-p1-lean/commit/4461d6bdcc7e19648377fe47703c3bd0d14d21ee).
+
+## Actual affine signs and private pair covariance
+
+`StartVertexSign` derives the predecessor coefficient as the character
+of an actual even true-window selection. `UnitAffineSigns` evaluates
+the actual common unit class at separate local solutions; complete
+multiplicativity and zero-sum coefficients cancel both dilation constants.
+The paired sign is exactly the sum of the two predecessor parities.
+
+`PairFourierIntersection.full_support_family_sum` explicitly reindexes
+full-support pair relations by their nonzero common vectors.
+`PairSquareClassFourier` retains heterogeneous actual marginals and
+permits arbitrary actual local witnesses. Its actual infinite-measure
+pair moment equals q-p_x*p_y for distinct centres.
+
+`PrivateUnitCovariance` composes the exact unit equivalence and character
+calculation. Privacy supplies both full local ranks and hence p_x=p_y=p.
+The actual covariance is p^2 times the signed nonzero even-unit sum,
+and the actual joint mass is p^2*(1+signedUnitSum). Joint compatibility,
+separation, coprimality and height restrictions are unnecessary. In
+particular, probability-zero pairs retain their signed cancellations.
+See the [complete bridge alignment](PRIVATE_UNIT_COVARIANCE_ALIGNMENT.md).
+
+This extends P1-MATH-0035. There are still 44 confirmed improvements,
+and numbered coverage stays **52 / 167**. Actual selected-unit words
+still require enumeration by canonical patterns, and defective
+normalization removal, baseline correction and full mass/profile
+asymptotics remain unfinished for article 3.3 and companion T2.5.
+The full build passed (9,347 jobs), all 3,446 theorem/lemma declarations
+passed the actual axiom audit, and all 1,161 coverage/finding names were
+checked directly by Lean. Only propext, Classical.choice and Quot.sound
+occur. Original sources are preserved. No new external mathematical
+input, Paper C port, manuscript revision or Palomar registration is
+introduced. Ubuntu root free space is 17.93 GiB.

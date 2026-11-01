@@ -324,3 +324,8 @@ public import PaperP1.Algebra.FiniteIntersectionSums
 public import PaperP1.Algebra.EvenReindex
 public import PaperP1.Arithmetic.PrivateEvenIntersection
 public import PaperP1.Arithmetic.UnitIntersectionEquiv
+public import PaperP1.Affine.StartVertexSign
+public import PaperP1.Arithmetic.UnitAffineSigns
+public import PaperP1.Affine.PairFourierIntersection
+public import PaperP1.Model.PairSquareClassFourier
+public import PaperP1.Model.PrivateUnitCovariance
