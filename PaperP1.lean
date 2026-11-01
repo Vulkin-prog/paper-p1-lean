@@ -251,3 +251,5 @@ public import PaperP1.Arithmetic.PrivateEvenImages
 public import PaperP1.Arithmetic.NormalizedMotifs
 public import PaperP1.Arithmetic.CompressionRank
 public import PaperP1.Arithmetic.GoodEdgeCompression
+public import PaperP1.Arithmetic.ChannelMatchDensity
+public import PaperP1.Arithmetic.FixedChannelGamma

@@ -1342,3 +1342,35 @@ preserved; no manuscript revision or Palomar registration is made.
 
 Validated implementation of article Lemma 3.5 and P1-MATH-0035:
 [37c99c7ea71d70271902fd12d1b52494646ec919](https://github.com/Vulkin-prog/paper-p1-lean/commit/37c99c7ea71d70271902fd12d1b52494646ec919).
+
+
+## P1-MATH-0036 — The universal finite coefficient is attained
+
+- Location: companion Lemma T2.6, page 22, `p1:arith:fixed-channel-rank`,
+  `companion_sections/supplemental_arithmetic.tex:209`; original hash
+  `8dd614c19e50df20ed1eb9f3ab37c07386f1ce3665c3499e26d83211ceab60b9`.
+- Original statement: gamma_{a:b}<=2/3, with a finite numerator range
+  and a denominator restricted implicitly by b/2<c/d<2a.
+- Improvement: d<=2*b*(a+b-1) is an explicit finite cutoff removing
+  no eligible fraction. The exact coefficients are 1/3 in channel 2:3,
+  1/2 in channel 3:4 and 2/3 in channel 8:9. For 8:9 the eligible
+  fraction 6/1 has gcds 2 and 3, attaining density 2/3.
+- Evidence: `FixedChannelGamma.mem_candidates`,
+  `mem_values_iff_source`, `isGreatest_real_values`,
+  `gamma_le_two_thirds`, `gamma_two_three`, `gamma_three_four`,
+  `gamma_eight_nine` and `universal_bound_attained`.
+- Suggested revision: give the explicit denominator cutoff, the exact
+  leading-channel values and the attaining 8:9 example. The universal
+  coefficient ceiling is sharp across admissible fixed channels.
+
+This sharpness concerns the **finite density coefficient**. It makes
+no optimality assertion for an actual rank loss or Palm exponent.
+T2.6 is only partially formalized: its rank estimate and exceptional
+sources remain open. See [alignment](FIXED_CHANNEL_GAMMA_ALIGNMENT.md).
+
+The full Lean v4.36.0-rc2 build passed (9,195 jobs), and all 3,101
+theorem/lemma declarations passed the actual axiom audit with only
+`propext`, `Classical.choice` and `Quot.sound`. All 816 distinct
+coverage/finding names were checked directly by Lean. Coverage remains
+48 / 167, with 36 confirmed improvements. Original source bytes are
+preserved; no manuscript revision or Palomar registration is made.

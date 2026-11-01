@@ -1199,6 +1199,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "37c99c7ea71d70271902fd12d1b52494646ec919"
+    },
+    {
+      "id": "P1-MATH-0036",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "companion",
+        "label": "p1:arith:fixed-channel-rank",
+        "number": "T2.6",
+        "page": 22,
+        "source": "companion_sections/supplemental_arithmetic.tex",
+        "line": 209,
+        "version": "P1 V1.6",
+        "statement_sha256": "8dd614c19e50df20ed1eb9f3ab37c07386f1ce3665c3499e26d83211ceab60b9"
+      },
+      "original_assumption": "T2.6 gives the universal coefficient bound gamma_{a:b}<=2/3, with a finite numerator range and an implicit denominator restriction through b/2<c/d<2a. It does not supply an admissible channel attaining 2/3.",
+      "finding": "The denominator range is explicitly bounded by d<=2*b*(a+b-1), with exact equivalence to the displayed source conditions. The literal finite coefficient has gamma_2:3=1/3, gamma_3:4=1/2 and gamma_8:9=2/3. In channel 8:9 the admissible fraction c/d=6/1 has gcds 2 and 3, so its density is 2/3. Thus the universal ceiling is sharp for the defined finite density coefficient across admissible fixed channels.",
+      "evidence": [
+        "PaperP1.FixedChannelGamma.mem_candidates",
+        "PaperP1.FixedChannelGamma.mem_values_iff_source",
+        "PaperP1.FixedChannelGamma.isGreatest_real_values",
+        "PaperP1.FixedChannelGamma.gamma_le_two_thirds",
+        "PaperP1.FixedChannelGamma.gamma_two_three",
+        "PaperP1.FixedChannelGamma.gamma_three_four",
+        "PaperP1.FixedChannelGamma.gamma_eight_nine",
+        "PaperP1.FixedChannelGamma.gammaReal_eight_nine",
+        "PaperP1.FixedChannelGamma.universal_bound_attained"
+      ],
+      "proposed_revision": "Add the explicit denominator cutoff to the computable definition, record the exact leading-channel values and the example gamma_8:9=2/3, and state that sharpness here concerns the displayed finite density coefficient. Keep actual rank-loss and Palm-exponent optimality as separate questions.",
+      "impact": "Makes the finite enumeration literal and proves that its universal constant cannot be reduced without altering the coefficient or the channel class. This establishes only the coefficient part of T2.6, not its aligned-target rank estimate or the sharpness of an actual arithmetic rank loss.",
+      "validation": "Full Lean v4.36.0-rc2 build (9195 jobs) and actual axiom audit of all 3101 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 816 distinct coverage/finding declaration names were checked directly by Lean. T2.6 is in_progress and is not counted as a completed numbered result.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

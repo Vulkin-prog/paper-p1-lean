@@ -5,6 +5,10 @@ correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
 **Status: active formalization, 48 / 167 numbered results proved.**
+The coefficient part of T2.6 is checked, including exact leading-channel
+values and attainment of the universal 2/3 bound in channel 8:9. Its
+aligned-target rank estimate remains open. See
+[partial alignment](docs/FIXED_CHANNEL_GAMMA_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,
 with deduplicated normalized values, an explicit finite rank bound and at
 most (L+1)^2 one-parameter motifs. See

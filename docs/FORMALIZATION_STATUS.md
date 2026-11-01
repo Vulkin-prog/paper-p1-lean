@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3078 audited theorem/lemma declarations**. This
+- The project currently has **3101 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -665,3 +665,23 @@ Ubuntu root free space is 17.72 GiB.
 
 Validated implementation of article Lemma 3.5 and P1-MATH-0035:
 [37c99c7ea71d70271902fd12d1b52494646ec919](https://github.com/Vulkin-prog/paper-p1-lean/commit/37c99c7ea71d70271902fd12d1b52494646ec919).
+
+
+## Fixed-channel coefficient — partial T2.6 checkpoint
+
+The literal coefficient gamma is a proved finite real maximum. Its
+implicit denominator range has an exact finite cutoff, and its universal
+bound gamma<=2/3 is closed by a coprime-divisor inequality. The checked
+values are gamma_2:3=1/3, gamma_3:4=1/2 and gamma_8:9=2/3. The latter
+proves sharpness of this finite coefficient across admissible fixed
+channels; it does not prove sharpness of an actual rank loss or Palm
+exponent. This is P1-MATH-0036. T2.6 remains in progress because its
+aligned-target rank estimate, endpoint exceptions and old-prime
+extension are open. See [partial alignment](FIXED_CHANNEL_GAMMA_ALIGNMENT.md).
+
+The full build passed (9,195 jobs), as did the actual axiom audit of all
+3,101 theorem/lemma declarations and all 816 coverage/finding names.
+Coverage remains 48 / 167, with 36 confirmed improvements. No new
+Paper C code or external mathematical assumption is introduced. Original
+sources are preserved and no Palomar registration is made. Ubuntu root
+free space is 18.16 GiB.

@@ -880,3 +880,14 @@ compiler; no rank, private-coordinate implication or asymptotic target
 is supplied as a literature hypothesis. The motif count and uniqueness
 of the translation parameter are explicit finite proofs. See
 [alignment](GOOD_EDGE_COMPRESSION_ALIGNMENT.md).
+
+
+## Companion T2.6 — Finite coefficient only
+
+The gcd/proper-divisor inequality and the exact finite candidate-set
+identification are closed internal proofs. The leading-channel values
+use exhaustive bounded arithmetic proofs with strict ratio endpoints,
+and the 8:9 value follows from a literal eligible fraction plus the
+universal upper bound. No numerical search or actual-rank estimate is
+an input. The remainder of T2.6 remains open; no external premise is
+introduced for it. See [partial alignment](FIXED_CHANNEL_GAMMA_ALIGNMENT.md).
