@@ -1280,3 +1280,16 @@ bijection allows both elementary counts and gives the actual
 N^epsilon*min(A,H) bound. No new unproved literature input or Paper C
 port is introduced; the complementary curve estimate is still needed
 for other bidegrees. See [alignment](BILINEAR_AUXILIARY_ALIGNMENT.md).
+
+## Primitive zero directions and degree-zero auxiliary fibres
+
+Stable ID: `P1-ALG-ZERO-DEGREE-AUXILIARY`. Status: **proved local counts**.
+
+Actual homogeneous chart roots, primitive signed representatives and
+the axis give a coefficient/height-independent 2*(k+1) bound. Existing
+P1 quadratic and interval-residue proofs close both original-coordinate
+degree-zero counts, with an explicit finite gcd-step formula and a
+proved polylogarithmic-shift budget. No new unproved literature input
+or Paper C port is introduced. Source auxiliary construction and
+unimodular transport remain open. See
+[alignment](ZERO_DEGREE_AUXILIARY_ALIGNMENT.md).

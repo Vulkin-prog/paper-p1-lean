@@ -2538,3 +2538,23 @@ occur; original manuscript bytes are unchanged.
 Validated bilinear minimum-height checkpoint (9,515 build jobs;
 3,772 audited declarations; 1,487 directly checked names):
 [b6cfffa06c97f77d6cdf3ec017a3c9af3e5902bd](https://github.com/Vulkin-prog/paper-p1-lean/commit/b6cfffa06c97f77d6cdf3ec017a3c9af3e5902bd).
+
+## Both degree-zero auxiliary counts in original coordinates
+
+Primitive rational directions have at most two signed representatives,
+and a nonzero degree-k homogeneous form has at most 2*(k+1) primitive
+zeros in any finite family, including infinity. The actual quadratic
+fibres give a uniform N^epsilon count at polynomial input heights. The
+actual linear fibres have exact step B/gcd(A,B); solvability and the
+source scale comparisons give the finite 2*(k+1)*(C0*C1*|h|+1) bound
+and the uniform N^epsilon count for polylogarithmic shifts. No auxiliary
+coefficient-height bound is needed in these local counts. Source
+construction/factorization and unimodular transport, the remaining
+curve counts and determinant/lattice sums are open. This is proof
+progress without a new correction; coverage stays 54/167, with 50
+confirmed improvements. See [alignment](ZERO_DEGREE_AUXILIARY_ALIGNMENT.md).
+
+The full build passed (9,527 jobs), the actual axiom audit passed for
+all 3,795 declarations, and Lean checked all 1,510 distinct
+coverage/finding names. Only propext, Classical.choice and Quot.sound
+occur; original manuscript bytes are unchanged.

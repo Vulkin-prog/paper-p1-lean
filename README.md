@@ -72,6 +72,8 @@ The actual homogeneous auxiliary factor now supplies its chart nondegeneracy by 
 [projective bridge](docs/PROJECTIVE_NONDEGENERACY_ALIGNMENT.md).
 The irreducible (1,1) auxiliary case now has both elementary orientations and a bound in the minimum of the two real box heights. See the
 [bilinear local case](docs/BILINEAR_AUXILIARY_ALIGNMENT.md).
+Both degree-zero auxiliary counts are now proved on the original positive equation, using primitive zero directions, quadratic fibres and the exact linear progression step. See the
+[degree-zero local counts](docs/ZERO_DEGREE_AUXILIARY_ALIGNMENT.md).
 The complete main pair profile remains in progress. See the
 [finite calculation](docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,

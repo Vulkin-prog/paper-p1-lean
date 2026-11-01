@@ -394,3 +394,9 @@ public import PaperP1.Diophantine.ProjectiveCurveCount
 public import PaperP1.Diophantine.BihomogeneousSwap
 public import PaperP1.Diophantine.BilinearAuxiliary
 public import PaperP1.Diophantine.BilinearCurveCount
+public import PaperP1.Diophantine.PrimitiveDirections
+public import PaperP1.Diophantine.PrimitiveHomogeneousZeros
+public import PaperP1.Diophantine.ZeroDegreeQuadraticFibres
+public import PaperP1.Diophantine.IntegerLinearFibres
+public import PaperP1.Diophantine.ZeroDegreeLinearFibres
+public import PaperP1.Asymptotics.ZeroDegreeAuxiliaryCounts

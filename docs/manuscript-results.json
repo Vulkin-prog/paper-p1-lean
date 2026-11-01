@@ -1896,7 +1896,30 @@
         "PaperP1.BilinearCurveCount.solutions_swap",
         "PaperP1.BilinearCurveCount.solutions_swap_card",
         "PaperP1.BilinearCurveCount.actual_minimum_height_count",
-        "PaperP1.BilinearCurveCount.actual_homogeneous_minimum_height_count"
+        "PaperP1.BilinearCurveCount.actual_homogeneous_minimum_height_count",
+        "PaperP1.PrimitiveDirections.primitive_same_direction",
+        "PaperP1.PrimitiveDirections.equal_ratio_cross",
+        "PaperP1.PrimitiveDirections.ratio_fibre_card",
+        "PaperP1.PrimitiveDirections.axis_card",
+        "PaperP1.PrimitiveHomogeneousZeros.chart_ne_zero",
+        "PaperP1.PrimitiveHomogeneousZeros.ratio_is_root",
+        "PaperP1.PrimitiveHomogeneousZeros.nonaxis_card",
+        "PaperP1.PrimitiveHomogeneousZeros.primitive_card",
+        "PaperP1.ZeroDegreeQuadraticFibres.encode_injective_on_fibre",
+        "PaperP1.ZeroDegreeQuadraticFibres.quadratic_fibre_count",
+        "PaperP1.ZeroDegreeQuadraticFibres.auxiliary_zero_count",
+        "PaperP1.IntegerLinearFibres.gcd_dvd_shift",
+        "PaperP1.IntegerLinearFibres.common_residue",
+        "PaperP1.IntegerLinearFibres.first_injective_on_solutions",
+        "PaperP1.IntegerLinearFibres.interval_count",
+        "PaperP1.IntegerLinearFibres.positive_box_count",
+        "PaperP1.IntegerLinearFibres.scaled_positive_count",
+        "PaperP1.IntegerLinearFibres.weighted_height_count",
+        "PaperP1.ZeroDegreeLinearFibres.encode_injective_on_fibre",
+        "PaperP1.ZeroDegreeLinearFibres.linear_fibre_count",
+        "PaperP1.ZeroDegreeLinearFibres.auxiliary_zero_count",
+        "PaperP1.ZeroDegreeAuxiliaryCounts.polylog_shift_budget",
+        "PaperP1.ZeroDegreeAuxiliaryCounts.linear_auxiliary_zero_count"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
@@ -1904,7 +1927,7 @@
         "P1-MATH-0049",
         "P1-MATH-0050"
       ],
-      "notes": "Preparatory components only. The actual bidegree-one elementary elimination bound in the remaining pair height now uses literal homogeneous auxiliary forms: irreducibility over Q implies common-factor coprimality, which proves univariate coprimality and full padded degree including the point at infinity. A single homogeneous resultant controls the signed primitive scale. Exact dehomogenization preserves degree and coefficient height. The complementary Heath-Brown bound in the eliminated pair height, source determinant/lattice auxiliary extraction and height control, other curve cases and short-vector sums remain open; full T1.4 is not claimed. The irreducible auxiliary bidegree (1,1) case now has both elementary orientations and the actual N^epsilon*min(A,H) real-box count, by exact bihomogeneous transposition; no complementary curve theorem is needed for this particular local case."
+      "notes": "Preparatory components only. The actual bidegree-one elementary elimination bound in the remaining pair height now uses literal homogeneous auxiliary forms: irreducibility over Q implies common-factor coprimality, which proves univariate coprimality and full padded degree including the point at infinity. A single homogeneous resultant controls the signed primitive scale. Exact dehomogenization preserves degree and coefficient height. The complementary Heath-Brown bound in the eliminated pair height, source determinant/lattice auxiliary extraction and height control, other curve cases and short-vector sums remain open; full T1.4 is not claimed. The irreducible auxiliary bidegree (1,1) case now has both elementary orientations and the actual N^epsilon*min(A,H) real-box count, by exact bihomogeneous transposition; no complementary curve theorem is needed for this particular local case. Both degree-zero auxiliary counts are now proved in the original positive coordinates: a height-independent primitive zero-direction bound followed by either the audited quadratic count at polynomial input heights, or the exact gcd progression step and polylogarithmic-shift bound under actual pointwise scale comparisons. Source construction/factorization and transport through the unimodular lattice changes remain open."
     },
     {
       "label": "p1:arith:twokernel",
