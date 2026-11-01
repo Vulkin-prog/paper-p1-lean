@@ -81,3 +81,5 @@ remains 64/167 (main 21/73, companion 43/94); confirmed improvements are 65.
 No external unproved input, new Paper C port or manuscript-byte change occurs.
 
 Verification checkpoint: Lean v4.36.0-rc2 full build passed (9,821 jobs); actual axiom audit passed for all 4,501 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,216 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.20 GiB. No unproved group, extension or target count, new external input, Paper C port, manuscript-byte change or Palomar registration. Coverage remains 64/167; confirmed improvements are 65; main 10.2 is still in progress.
+
+Proof checkpoint: [2e1bbd65872d4f73927ba606ef20cb592c8b81bb](https://github.com/Vulkin-prog/paper-p1-lean/commit/2e1bbd65872d4f73927ba606ef20cb592c8b81bb).
