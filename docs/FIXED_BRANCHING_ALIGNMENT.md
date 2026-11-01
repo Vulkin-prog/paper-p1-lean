@@ -86,3 +86,6 @@ and all 167 numbered statement hashes are preserved. Coverage remains
 41 / 167 while the final generalized-window clause of T1.15 is open.
 There are 30 confirmed improvements. No Palomar registration is made.
 Available Ubuntu-root space is 17.89 GiB.
+
+Validated original-window branching implementation and P1-MATH-0030:
+[8b5542412a96f221e87921abc9892ddabdac0505](https://github.com/Vulkin-prog/paper-p1-lean/commit/8b5542412a96f221e87921abc9892ddabdac0505).

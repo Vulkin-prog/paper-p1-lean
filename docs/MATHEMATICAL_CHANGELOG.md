@@ -1087,3 +1087,6 @@ Validated complete implementation of companion T21.2:
   `Classical.choice` and `Quot.sound`. All 618 distinct coverage/finding
   names were checked directly by Lean. Not integrated into a new
   manuscript version. See [alignment](FIXED_BRANCHING_ALIGNMENT.md).
+
+Validated original-window branching implementation and P1-MATH-0030:
+[8b5542412a96f221e87921abc9892ddabdac0505](https://github.com/Vulkin-prog/paper-p1-lean/commit/8b5542412a96f221e87921abc9892ddabdac0505).
