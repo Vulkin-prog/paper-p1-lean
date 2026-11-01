@@ -4,7 +4,11 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 68 / 167 numbered results proved.**
+**Status: active formalization, 69 / 167 numbered results proved.**
+Companion T4.1 now uses only two disjoint square equations, with arbitrary
+nonzero integer coefficients. The arithmetic proof removes the need for
+the source Pila input at this step. See
+[the complete square-equation alignment](docs/DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md).
 Companion T19.9 constructs one actual family of compatible connected
 regular components with quadratic nullity and no good pair. Both size
 and nullity coefficients tend to 6 log(2)/17, and the centered mass

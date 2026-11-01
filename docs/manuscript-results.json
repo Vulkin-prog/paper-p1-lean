@@ -2448,11 +2448,27 @@
       "source": "companion_sections/arithmetic_appendix.tex",
       "line": 480,
       "sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.SquareEquationKernel.kernels_eq_of_square_mul",
+        "PaperP1.SquareEquationKernel.integer_square_to_kernel",
+        "PaperP1.DisjointSquareEquations.combine",
+        "PaperP1.DisjointSquareEquations.single_equation",
+        "PaperP1.DisjointSquareEquations.two_equations",
+        "PaperP1.DisjointSquareEquations.integer_two_equations",
+        "PaperP1.DisjointSquareTheorem.mem_solutions",
+        "PaperP1.DisjointSquareTheorem.two_equation_count",
+        "PaperP1.DisjointSquareTheorem.companion_T4_1",
+        "PaperP1.FixedDegreeKernelCount.uniform_count",
+        "PaperP1.FixedDegreeKernelCount.real_interval_count"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-DISJOINT-SQUARE-EQUATIONS"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0069"
+      ],
+      "notes": "The complete one-variable assertion is proved with uniform arbitrary nonzero integer coefficients: one split equation of degree at least two, or two equations with nonempty disjoint root lists, has at most N^epsilon solutions on every fixed comparable positive interval, for each fixed degree cap and polylogarithmic offset width. Coefficient heights are unnecessary, and odd degrees are included. The two-variable surface counts and all remaining graph consequences are still open; T1.7 is not counted complete. See DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:dense",
@@ -3592,11 +3608,27 @@
       "source": "companion_sections/fixed_moments.tex",
       "line": 16,
       "sha256": "541205f707e088c00ac965f0b54abb3d30a14b550bc2e9575a3940e438666784",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.SquareEquationKernel.kernels_eq_of_square_mul",
+        "PaperP1.SquareEquationKernel.integer_square_to_kernel",
+        "PaperP1.DisjointSquareEquations.combine",
+        "PaperP1.DisjointSquareEquations.single_equation",
+        "PaperP1.DisjointSquareEquations.two_equations",
+        "PaperP1.DisjointSquareEquations.integer_two_equations",
+        "PaperP1.DisjointSquareTheorem.mem_solutions",
+        "PaperP1.DisjointSquareTheorem.two_equation_count",
+        "PaperP1.DisjointSquareTheorem.companion_T4_1",
+        "PaperP1.FixedDegreeKernelCount.uniform_count",
+        "PaperP1.FixedDegreeKernelCount.real_interval_count"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-DISJOINT-SQUARE-EQUATIONS"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0069"
+      ],
+      "notes": "Full companion T4.1, with a stronger acyclic arithmetic proof: j=2 always suffices, independent of the degree cap and error margin, and all coefficients may be arbitrary nonzero integers without any height bound. One equation with at least two distinct roots fixes the actual squarefree kernel; the proved fixed-degree split-product fibre count is uniformly N^epsilon for every kernel. Multiplying two nonconstant equations with disjoint roots gives such an equation, of degree at most 2K. The literal finite set of integer solutions in every fixed comparable positive interval is counted. One threshold precedes all critical-band lengths, root lists, coefficients and solution sets; polynomial-height and even-degree restrictions are unnecessary. The proof uses the complete uniform quadratic/Pell and fixed-kernel count chains, without a Pila curve-count premise. See DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md."
     },
     {
       "label": "p1:fixed:CRT",

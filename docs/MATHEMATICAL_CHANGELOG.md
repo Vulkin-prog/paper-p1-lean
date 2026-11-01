@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**68 mathematical improvements are confirmed; no error in a manuscript conclusion
+**69 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -2967,3 +2967,23 @@ proves a bounded second moment or the separate weighted nonaligned
 residual in main 3.2. Main 3.2 and T19.4 remain in progress; coverage
 stays 68/167 and confirmed improvements are 68. See
 [exact host and moment scope](PAIR_HOST_COUNT_ALIGNMENT.md).
+
+## P1-MATH-0069 — Two disjoint square equations and no coefficient-height bound
+
+Full T4.1 is proved with j=2, independent of the fixed degree cap and
+error margin, and arbitrary nonzero integer coefficients. One equation
+with at least two distinct linear roots fixes the actual squarefree
+kernel; the complete fixed-kernel fibre count gives N^epsilon solutions
+uniformly for each fixed degree. Multiplying two nonconstant equations
+with disjoint root lists supplies that case. Odd degrees and every fixed
+polylogarithmic offset width are allowed. The actual integer solution
+set on every fixed comparable positive interval is counted.
+
+This arithmetic proof replaces the source many-equation Veronese/Pila
+argument at this input. A nonempty fibre supplies the effective kernel
+height, so no bound on the input coefficients is needed. The same proof
+closes the one-variable assertion of T1.7; its two-variable surface and
+graph conclusions remain open. Main 6.2 and 6.3 are still separate
+classification and propagation obligations. Coverage is 69/167 and
+confirmed improvements are 69. See
+[complete square-equation alignment](DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md).

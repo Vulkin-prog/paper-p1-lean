@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **68 / 167**: article Propositions 3.1, 4.1, 5.2, 9.1, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorem 10.1 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Proposition T1.14.
+- Numbered results completed: **69 / 167**: article Propositions 3.1, 4.1, 5.2, 9.1, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorem 10.1 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Proposition T1.14.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4729 audited theorem/lemma declarations**. This
+- The project currently has **4740 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2215,3 +2215,26 @@ progress. Coverage stays 68/167; confirmed improvements are 68. See
 [exact alignment](PAIR_HOST_COUNT_ALIGNMENT.md).
 
 Pair-host verification: Lean v4.36.0-rc2 full build passed (9915 jobs); actual axiom audit passed for all 4729 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2444 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.69 GiB. The stronger full-loss host count and exact heterogeneous independent mass are proved; main 3.2 remains in progress for its weighted nonaligned residual. The actual F_2<=N^epsilon bound does not close T19.4. Coverage stays 68/167; confirmed improvements are 68. No target host count, external assumption, Paper C port, manuscript-byte change or Palomar registration.
+
+
+## Complete disjoint square-equation input with two arbitrary coefficients
+
+Full T4.1 is proved in a stronger form: j=2 is independent of the degree
+cap and error margin, and arbitrary nonzero integer coefficients need
+no height bound. A square equation fixes the actual squarefree kernel.
+The complete fixed-kernel count has a uniform N^epsilon fixed-degree
+specialization; multiplying two disjoint nonconstant equations supplies
+at least two distinct roots. The full actual integer population in any
+fixed comparable positive interval is counted. The critical-band radius
+ceiling, every offset list and the quantifier order are included.
+
+This acyclic arithmetic proof uses the internally proved uniform Pell
+and fixed-kernel estimates, removing the source Pila input at this
+one-variable step. It is P1-MATH-0069 and also proves the one-variable
+part of T1.7. The two-variable surface and graph estimates, main 6.2
+dense-target classification and main 6.3 propagation remain separate
+open obligations. Coverage is 69/167 (main 23/73, companion 46/94), with
+69 confirmed improvements. See
+[complete alignment](DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md).
+
+Disjoint-square verification: Lean v4.36.0-rc2 full build passed (9923 jobs); actual axiom audit passed for all 4740 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2455 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.68 GiB. Full T4.1 is complete with j=2, arbitrary nonzero integer coefficients and actual integer solution sets. The one-variable part of T1.7 is complete; its two-variable and graph conclusions remain open. Coverage is 69/167 (main 23/73, companion 46/94); confirmed improvements are 69. No Pila or target-count hypothesis, new external assumption, Paper C port, manuscript-byte change or Palomar registration.

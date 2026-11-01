@@ -737,3 +737,7 @@ public import PaperP1.Asymptotics.OriginalPairHosts
 public import PaperP1.Asymptotics.PairHostIndependentMass
 public import PaperP1.Asymptotics.SecondMomentSubpower
 public import PaperP1.Model.PairHostMoment
+public import PaperP1.Arithmetic.SquareEquationKernel
+public import PaperP1.Asymptotics.DisjointSquareEquations
+public import PaperP1.Asymptotics.DisjointSquareTheorem
+public import PaperP1.Asymptotics.FixedDegreeKernelCount

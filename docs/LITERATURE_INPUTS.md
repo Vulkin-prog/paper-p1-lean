@@ -1695,3 +1695,22 @@ inclusion on the hosts and the proved uniform marginal cap. No bounded
 second moment, covariance or weighted residual is assumed or claimed.
 No additional literature input or Paper C port is used. See
 [alignment](PAIR_HOST_COUNT_ALIGNMENT.md).
+
+## Disjoint one-variable split square equations
+
+Stable ID: `P1-ARITH-DISJOINT-SQUARE-EQUATIONS`. Status: **proved**, full
+T4.1 and the one-variable part of T1.7.
+
+`DisjointSquareTheorem.companion_T4_1` proves the literal integer-solution
+count, with j=2 independent of the degree cap and epsilon, and arbitrary
+nonzero coefficients without a height restriction. The internally
+proved uniform quadratic/Pell and fixed-kernel fibre estimates supply
+an acyclic arithmetic replacement for the source Pila application.
+The actual square equation fixes the squarefree kernel, and a product
+of two disjoint equations has at least two distinct roots. Uniform
+fixed-degree and polylogarithmic-width specialization precedes every
+offset set, coefficient and position. No curve estimate, fibre count
+or target classification is an unproved input. P1-MATH-0069 records the
+stronger scope. The two-variable and graph parts of T1.7 and the later
+dense-target classification remain open. See
+[exact alignment](DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md).

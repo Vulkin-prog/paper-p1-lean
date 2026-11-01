@@ -3608,6 +3608,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "e36d5982ab5f4949e0a5620b194b1ba69f7ce883"
+    },
+    {
+      "id": "P1-MATH-0069",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:fixed:curve",
+        "number": "T4.1",
+        "page": 26,
+        "source": "companion_sections/fixed_moments.tex",
+        "line": 16,
+        "statement_sha256": "541205f707e088c00ac965f0b54abb3d30a14b550bc2e9575a3940e438666784"
+      },
+      "original_assumption": "Companion T4.1 chooses a sufficiently large number j of disjoint nonconstant split-product square equations after the degree cap, coefficient-height exponent and error margin. Its printed proof uses a high-degree Veronese embedding and a uniform Pila curve estimate.",
+      "finding": "Two equations always suffice, independently of the degree cap and epsilon, and all coefficients can be arbitrary nonzero integers without any height bound. A single split square equation with at least two distinct roots fixes the actual squarefree kernel. The already proved uniform fixed-kernel fibre count, specialized to fixed degree, bounds its actual solution set by N^epsilon for every prescribed kernel. The product of two nonconstant equations with disjoint root lists has degree at least two, so it reduces to that case. The proof applies to odd degrees and any fixed polylogarithmic offset width. It counts the literal integer solution set on any fixed comparable positive interval.",
+      "evidence": [
+        "PaperP1.SquareEquationKernel.kernels_eq_of_square_mul",
+        "PaperP1.SquareEquationKernel.integer_square_to_kernel",
+        "PaperP1.DisjointSquareEquations.combine",
+        "PaperP1.DisjointSquareEquations.single_equation",
+        "PaperP1.DisjointSquareEquations.two_equations",
+        "PaperP1.DisjointSquareEquations.integer_two_equations",
+        "PaperP1.DisjointSquareTheorem.mem_solutions",
+        "PaperP1.DisjointSquareTheorem.two_equation_count",
+        "PaperP1.DisjointSquareTheorem.companion_T4_1",
+        "PaperP1.FixedDegreeKernelCount.uniform_count",
+        "PaperP1.FixedDegreeKernelCount.real_interval_count"
+      ],
+      "proposed_revision": "Replace the many-equation geometric proof of T4.1 by the fixed-kernel argument and choose j=2. Remove the coefficient-height restriction. State the stronger single-equation conclusion for degree at least two, and explain that multiplying two disjoint equations covers the remaining linear case. The same proof supplies the one-variable part of T1.7 without the coefficient-height restriction. Retain separate proofs and status for its two-variable surface and graph conclusions.",
+      "impact": "Full T4.1 is complete, bringing coverage to 69/167 (main 23/73, companion 46/94). The proof removes the need for an unformalized Pila theorem at this one-variable input. It does not yet establish the subsequent dense-target classification, fixed-source propagation or the two-variable geometric counts. The dependence is acyclic through the internally proved uniform quadratic/Pell and fixed-kernel fibre estimates.",
+      "validation": "Lean v4.36.0-rc2 full build passed (9923 jobs); actual axiom audit passed for all 4740 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2455 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.68 GiB. Full T4.1 is complete with j=2, arbitrary nonzero integer coefficients and actual integer solution sets. The one-variable part of T1.7 is complete; its two-variable and graph conclusions remain open. Coverage is 69/167 (main 23/73, companion 46/94); confirmed improvements are 69. No Pila or target-count hypothesis, new external assumption, Paper C port, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

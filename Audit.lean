@@ -1925,6 +1925,8 @@ import PaperP1
 #print axioms PaperP1.SplitProductBound.base_le_height_of_nonzero
 #print axioms PaperP1.SplitProductBound.uniform_split_product
 #print axioms PaperP1.SplitProductBound.uniform_split_product_real_radius
+#print axioms PaperP1.SquareEquationKernel.kernels_eq_of_square_mul
+#print axioms PaperP1.SquareEquationKernel.integer_square_to_kernel
 #print axioms PaperP1.SquarePoolLower.oddPrimeSupport_square
 #print axioms PaperP1.SquarePoolLower.naturalValues_card_ge_sqrt
 #print axioms PaperP1.SquarePoolLower.sqrt_le_twice_nat_sqrt
@@ -2254,6 +2256,13 @@ import PaperP1
 #print axioms PaperP1.CriticalWindowGeometry.log_base_lower
 #print axioms PaperP1.DependentBlockPairsCount.article_10_3
 #print axioms PaperP1.DependentBlockPairsCount.uniform_logarithmic_count
+#print axioms PaperP1.DisjointSquareEquations.combine
+#print axioms PaperP1.DisjointSquareEquations.single_equation
+#print axioms PaperP1.DisjointSquareEquations.two_equations
+#print axioms PaperP1.DisjointSquareEquations.integer_two_equations
+#print axioms PaperP1.DisjointSquareTheorem.mem_solutions
+#print axioms PaperP1.DisjointSquareTheorem.two_equation_count
+#print axioms PaperP1.DisjointSquareTheorem.companion_T4_1
 #print axioms PaperP1.DyadicMatchingArithmetic.uniform_core
 #print axioms PaperP1.DyadicQuadraticBudgets.dyadic_bounds
 #print axioms PaperP1.DyadicQuadraticBudgets.mem_indices
@@ -2334,6 +2343,8 @@ import PaperP1
 #print axioms PaperP1.FixedChannelMassTheorem.source_error
 #print axioms PaperP1.FixedChannelMassTheorem.source_positive_phase
 #print axioms PaperP1.FixedChannelMassTheorem.companion_T2_5
+#print axioms PaperP1.FixedDegreeKernelCount.uniform_count
+#print axioms PaperP1.FixedDegreeKernelCount.real_interval_count
 #print axioms PaperP1.FixedHeightResidual.large_kernel_rate
 #print axioms PaperP1.FixedHeightResidual.full_kernel_rate
 #print axioms PaperP1.FixedProjectedMotifs.exists_even_order
