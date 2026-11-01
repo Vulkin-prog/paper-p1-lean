@@ -192,3 +192,12 @@ public import PaperP1.Arithmetic.OldPrimeCardinality
 public import PaperP1.Arithmetic.BranchingExceptional
 public import PaperP1.Model.ConditionalRelativeBits
 public import PaperP1.Asymptotics.FixedWindowBranching
+public import PaperP1.Algebra.DotTranspose
+public import PaperP1.Algebra.SelectedBoundary
+public import PaperP1.Arithmetic.BranchingPatterns
+public import PaperP1.Arithmetic.GeneralBranchingExceptions
+public import PaperP1.Asymptotics.BoundedObservationPool
+public import PaperP1.Asymptotics.GeneralBranchingTheorem
+public import PaperP1.Asymptotics.GeneralWindowBranching
+public import PaperP1.Model.SelectedRelativeBits
+public import PaperP1.Probability.FairBinaryCube

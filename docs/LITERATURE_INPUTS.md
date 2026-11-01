@@ -22,8 +22,7 @@ Paper C; importing an old interface alone cannot discharge this comparison.
 
 ## Fixed-window exposure and full-vector independence
 
-Stable ID: `P1-ARITH-FIXED-WINDOW-BRANCHING`. Status: **original windows
-proved**; T1.15 is **in progress** pending its generalized-window clause.
+Stable ID: `P1-ARITH-FIXED-WINDOW-BRANCHING`. Status: **proved**, complete T1.15.
 
 - The entire actual new relative vector has its fair product law and
   Mathlib `IndepFun` from all old raw values whenever its supported-value
@@ -35,9 +34,13 @@ proved**; T1.15 is **in progress** pending its generalized-window clause.
   pool coefficient, as recorded in P1-MATH-0030. The actual critical
   prime-pool count proves the uniform fixed-j exponent.
 - No independence, conditional word law, prime-cardinality, Euler or
-  exceptional-count estimate is assumed. No additional Paper C source or
-  unproved literature statement is introduced. Fixed dilations, subsets
-  and enlarged-window variants remain open at this checkpoint. See
+  exceptional-count estimate is assumed. Injective complete-boundary
+  embeddings and transposes prove the exact laws of all selected subsets
+  and fitted positive fixed dilations. Arbitrary bounded old observations,
+  fixed enlarged logarithmic widths, positive height multiples and
+  injective center reindexings are included, with thresholds before all
+  such choices. No additional Paper C source or unproved literature
+  statement is introduced. See
   [alignment](FIXED_BRANCHING_ALIGNMENT.md).
 
 ## Conditional rank after old raw observations

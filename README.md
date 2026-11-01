@@ -4,7 +4,10 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 41 / 167 numbered results proved.**
+**Status: active formalization, 42 / 167 numbered results proved.**
+Companion T1.15 is proved with full-vector independence after old observations,
+its literal exceptional bound, and all subset, fixed-dilation and enlarged
+logarithmic-window extensions. See [statement alignment](docs/FIXED_BRANCHING_ALIGNMENT.md).
 Companion T21.2 is proved with actual conditional ranks, probabilities and
 means, a sharper finite pool coefficient, and the matching fixed-j
 critical asymptotic. See [statement alignment](docs/CONDITIONAL_RANK_ALIGNMENT.md).

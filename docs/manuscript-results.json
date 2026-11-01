@@ -1665,8 +1665,9 @@
       "source": "companion_sections/arithmetic_appendix.tex",
       "line": 1075,
       "sha256": "a92935eea4e5bf50e484074d857575c10136d376340ccbfe4cc24180ff9d3f97",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
+        "PaperP1.GeneralBranchingTheorem.companion_T1_15",
         "PaperP1.FixedWindowBranching.original_windows_critical",
         "PaperP1.FixedWindowBranching.finite_source_bound",
         "PaperP1.FixedWindowBranching.finite_stronger",
@@ -1682,7 +1683,23 @@
         "PaperP1.OldPrimeCardinality.raw_pool_card_le",
         "PaperP1.PrimeSetEuler.sum_neg_half_le",
         "PaperP1.PrimeSetEuler.euler_half_le",
-        "PaperP1.PrimeSetEuler.naturalValues_card_le_sqrt_exp"
+        "PaperP1.PrimeSetEuler.naturalValues_card_le_sqrt_exp",
+        "PaperP1.DotTranspose.relationMap_injective",
+        "PaperP1.FairBinaryCube.map_transpose_eq",
+        "PaperP1.SelectedBoundary.rowEmbed_injective",
+        "PaperP1.SelectedBoundary.selected_relative_identity",
+        "PaperP1.SelectedRelativeBits.selectedBits_apply",
+        "PaperP1.SelectedRelativeBits.map_selected_eq_fair",
+        "PaperP1.SelectedRelativeBits.selected_independent_of_old",
+        "PaperP1.SelectedRelativeBits.selected_independent_of_old_subset",
+        "PaperP1.BoundedObservationPool.pool_count_logarithmic",
+        "PaperP1.GeneralBranchingExceptions.twice_card_le",
+        "PaperP1.GeneralWindowBranching.bounded_height_windows",
+        "PaperP1.GeneralBranchingTheorem.reindexed_windows",
+        "PaperP1.GeneralBranchingTheorem.dilation_conclusion",
+        "PaperP1.BranchingPatterns.dilation_label",
+        "PaperP1.BranchingPatterns.dilationIndices_injective",
+        "PaperP1.BranchingPatterns.observationValues_card"
       ],
       "literature_inputs": [
         "P1-ARITH-FIXED-WINDOW-BRANCHING"
@@ -1690,7 +1707,7 @@
       "mathematical_changes": [
         "P1-MATH-0030"
       ],
-      "notes": "Original consecutive windows are proved with the actual full relative-vector law, Mathlib IndepFun from the entire old raw vector, all conditional word probabilities, the literal source rounded-prime exceptional bound, and the uniform fixed-j N^(1/2+epsilon) count. The actual deterministic exception set contains only windows with at least two old-pool-supported values; no separate contact deletion is needed. Incidence counting improves its finite bound to (B/2)*sqrt(3N)*exp(2sqrt(m_jN)), removing the source contact term and halving the pool coefficient. Finite prime-cardinality and Euler estimates are proved. The final extension to fixed dilations, subsets and fixed enlarged logarithmic windows remains OPEN, so T1.15 is not counted as proved. No independence, conditional-law, Euler, prime-cardinality or exception estimate is assumed. See FIXED_BRANCHING_ALIGNMENT.md."
+      "notes": "Complete original and generalized T1.15. Original consecutive windows have the actual fair full relative-vector law, Mathlib IndepFun from all old raw values, every conditional word probability, the literal rounded-prime exceptional bound and uniform fixed-j N^(1/2+epsilon) exponent. The constructed exception set contains only windows with at least two old-pool-supported values, removing the separate contact term and halving the finite pool coefficient. The generalized theorem allows any fixed logarithmic enclosing width, arbitrary old observations of at most j times that width, and any fixed positive height multiple. It is uniform over all injective selected-coordinate patterns, whose actual relative bits are explicitly identified; injective even-boundary maps and their transposes preserve the fair cube. Fixed positive dilations have explicit injective index maps and literal integer-label formulas. Injective changes of center indexing preserve the exception bound, and old subsets are covered by restriction. Source old blocks are encoded as actual observed-value images with a proved j*B cardinality bound. Fixed rescalings and logarithmic constants are absorbed before old-window and pattern choices. No independence, conditional law, prime-cardinality, Euler, pool-count or exception estimate is assumed. See FIXED_BRANCHING_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:ternary-budget",

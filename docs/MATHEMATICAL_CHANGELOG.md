@@ -1090,3 +1090,27 @@ Validated complete implementation of companion T21.2:
 
 Validated original-window branching implementation and P1-MATH-0030:
 [8b5542412a96f221e87921abc9892ddabdac0505](https://github.com/Vulkin-prog/paper-p1-lean/commit/8b5542412a96f221e87921abc9892ddabdac0505).
+
+## Companion T1.15 — Complete generalized-window branching
+
+The remaining extension is now proved. Injective complete even-boundary
+embeddings and transposes give the exact fair laws for actual selected
+relative bits. They preserve independence from every old raw observation.
+Fixed positive dilations have explicit coordinate embeddings and literal
+integer-label formulas. Arbitrary bounded old observations, fixed enlarged
+logarithmic widths, positive height multiples and injective center changes
+share the uniform N^(1/2+epsilon) exception bound. The actual old-value
+image has its j*B cardinality bound proved from its index set. One
+threshold precedes all source and pattern choices.
+
+`GeneralBranchingTheorem.companion_T1_15` combines this clause with the
+literal original-window rounded bound, full vector law and every conditional
+word probability. The earlier P1-MATH-0030 finite improvement is retained.
+See [complete alignment](FIXED_BRANCHING_ALIGNMENT.md).
+
+The full build passed (9,089 jobs), and all 2,759 theorem/lemma declarations
+passed the actual axiom audit with only `propext`, `Classical.choice`
+and `Quot.sound`. All 635 distinct coverage/finding declaration names
+were checked directly by Lean. Coverage is 42 / 167, with 30 confirmed
+improvements. Original sources are preserved; no Palomar registration
+is made. The earlier original-window validation remains recorded above.

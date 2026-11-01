@@ -1015,7 +1015,7 @@
         "PaperP1.FixedWindowBranching.original_windows_critical"
       ],
       "proposed_revision": "For the original-window branching statement, use the deterministic set of starts containing at least two pool-supported values, omit a separate contact deletion and replace the pool coefficient B by B/2. Include the full-vector conditional argument and the incidence count.",
-      "impact": "Removes an unnecessary finite contact term and halves the finite pool coefficient in the proved original-window scope. It asserts exact independence of the relative vector, not independence of the raw new values. No optimality or estimate for all arithmetic dependencies is claimed. Fixed dilations, subsets and enlarged-window variants remain open at this checkpoint, so T1.15 is not counted as complete.",
+      "impact": "Removes an unnecessary finite contact term and halves the finite pool coefficient in the proved original-window scope. The full actual relative vector is fair and independent of all old raw values. No optimality or estimate for all arithmetic dependencies is claimed. Fixed dilations, subsets and enlarged-window variants were subsequently closed in the complete T1.15 implementation; the recorded validation commit preserves the earlier original-window improvement checkpoint.",
       "validation": "Full Lean v4.36.0-rc2 build (9071 jobs) and actual axiom audit of all 2713 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 618 distinct coverage/finding names were also checked directly by Lean.",
       "manuscript_integration": {
         "target_version": "next version after formalization",

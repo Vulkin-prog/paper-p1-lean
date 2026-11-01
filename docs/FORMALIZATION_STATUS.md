@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **41 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.2, T19.7, T19.12, T20.3, T23.1, together with Lemmas T19.8, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T21.2, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **42 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.7, T19.12, T20.3, T23.1, together with Lemmas T19.8, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T21.2, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **2713 audited theorem/lemma declarations**. This
+- The project currently has **2759 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -436,13 +436,16 @@ Neither document is fully formalized.
   both sides of the final N^(1/2-delta+o(1)) scale. One threshold precedes
   all critical lengths, old-window choices and realizable old vectors. See
   [alignment](CONDITIONAL_RANK_ALIGNMENT.md).
-- Companion T1.15 is in progress. Original consecutive windows have the
+- Companion T1.15 is proved in full. Original consecutive windows have the
   complete fair relative-vector law and Mathlib independence from all
   old raw values, every conditional word probability, the literal rounded
   exceptional bound and its uniform fixed-j exponent. A constructed
   smaller exception set removes the separate contact term and halves
-  the pool coefficient. Its fixed-dilation, subset and enlarged-window
-  variants remain open, so no numbered coverage is added. See
+  the pool coefficient. Injective even-boundary embeddings and their
+  transposes prove the actual selected-vector laws. Fixed dilations,
+  arbitrary subsets, enlarged logarithmic widths, bounded positive height
+  multiples and injective center changes are included uniformly before
+  all old observation and pattern choices. See
   [alignment](FIXED_BRANCHING_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
