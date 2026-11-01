@@ -218,10 +218,11 @@
         "P1-MATH-0035"
       ],
       "notes": "Preparatory channel sums, actual dyadic translations and signed canonical-pattern aggregates are proved, with errors <=6B*U uniformly through reduced height B^3. The private-value algebraic unit classification is now also explicit: even selections of the actual exact units are linearly equivalent to the actual intersection S_x cap S_y, and both its rank and full pair deficiency equal (u-1)_+, including u=0 or 1. The equivalence uses the actual normalized unit value map, not just dimension equality. Remaining: identify affine character signs on these coefficients, enumerate actual selected-unit words by the canonical patterns, identify the probability/Fourier contribution, remove defective normalizations, and complete the full mass/profile and phase equivalents. No numbered completion follows from these preparations. See docs/EXACT_UNIT_INTERSECTION_ALIGNMENT.md and earlier linked checkpoints.",
-      "validation_commit": "88ce8a72b7b579b3b7442de98efd91af4b445764",
+      "validation_commit": "4461d6bdcc7e19648377fe47703c3bd0d14d21ee",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
-        "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df"
+        "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df",
+        "88ce8a72b7b579b3b7442de98efd91af4b445764"
       ]
     },
     {
@@ -2324,10 +2325,11 @@
         "P1-MATH-0035"
       ],
       "notes": "Preparatory channel sums, actual dyadic translations and signed canonical-pattern aggregates are proved, with errors <=6B*U uniformly through reduced height B^3. The private-value algebraic unit classification is now also explicit: even selections of the actual exact units are linearly equivalent to the actual intersection S_x cap S_y, and both its rank and full pair deficiency equal (u-1)_+, including u=0 or 1. The equivalence uses the actual normalized unit value map, not just dimension equality. Remaining: identify affine character signs on these coefficients, enumerate actual selected-unit words by the canonical patterns, identify the probability/Fourier contribution, remove defective normalizations, and complete the full mass/profile and phase equivalents. No numbered completion follows from these preparations. See docs/EXACT_UNIT_INTERSECTION_ALIGNMENT.md and earlier linked checkpoints.",
-      "validation_commit": "88ce8a72b7b579b3b7442de98efd91af4b445764",
+      "validation_commit": "4461d6bdcc7e19648377fe47703c3bd0d14d21ee",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
-        "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df"
+        "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df",
+        "88ce8a72b7b579b3b7442de98efd91af4b445764"
       ]
     },
     {

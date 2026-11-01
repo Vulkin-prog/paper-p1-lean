@@ -1889,3 +1889,7 @@ passed (9,337 jobs), all 3,425 theorem/lemma declarations passed the actual
 axiom audit, and all 1,140 coverage/finding names were checked directly.
 Only propext, Classical.choice and Quot.sound occur. No manuscript revision
 or Palomar registration is made.
+
+Validated exact unit-coefficient checkpoint (9,337 build jobs;
+3,425 audited declarations; 1,140 directly checked coverage/finding names):
+[4461d6bdcc7e19648377fe47703c3bd0d14d21ee](https://github.com/Vulkin-prog/paper-p1-lean/commit/4461d6bdcc7e19648377fe47703c3bd0d14d21ee).

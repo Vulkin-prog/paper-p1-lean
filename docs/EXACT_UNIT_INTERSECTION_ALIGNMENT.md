@@ -75,3 +75,7 @@ and their contribution identified with the actual Fourier/joint-probability
 expression. Defective-normalization removal and mass/profile asymptotics
 also remain open. There is no new external mathematical hypothesis,
 Paper C port, manuscript revision or Palomar registration.
+
+Validated exact unit-coefficient checkpoint (9,337 build jobs;
+3,425 audited declarations; 1,140 directly checked coverage/finding names):
+[4461d6bdcc7e19648377fe47703c3bd0d14d21ee](https://github.com/Vulkin-prog/paper-p1-lean/commit/4461d6bdcc7e19648377fe47703c3bd0d14d21ee).
