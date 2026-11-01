@@ -845,3 +845,6 @@ axiom audit with only propext, Classical.choice and Quot.sound, and all
 mathematical hypothesis or new Paper C source is introduced. Original
 sources remain unchanged; no Palomar registration is made. Ubuntu root
 free space is 18.04 GiB.
+
+Validated finite target quotient-rank checkpoint and P1-MATH-0041:
+[469f5ac7ab234cdd18962337291971682554d913](https://github.com/Vulkin-prog/paper-p1-lean/commit/469f5ac7ab234cdd18962337291971682554d913).

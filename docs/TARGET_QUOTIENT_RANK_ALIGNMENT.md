@@ -109,3 +109,6 @@ T2.6 are not counted complete.
 No new Paper C source, external mathematical hypothesis, manuscript
 revision or Palomar registration is introduced. Original source bytes
 are preserved.
+
+Validated finite target quotient-rank checkpoint and P1-MATH-0041:
+[469f5ac7ab234cdd18962337291971682554d913](https://github.com/Vulkin-prog/paper-p1-lean/commit/469f5ac7ab234cdd18962337291971682554d913).

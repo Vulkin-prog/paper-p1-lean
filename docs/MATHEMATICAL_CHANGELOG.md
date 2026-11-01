@@ -1622,3 +1622,6 @@ declarations passed the actual axiom audit with only `propext`,
 names were checked directly by Lean. Coverage remains 49 / 167, with
 41 confirmed improvements. No manuscript revision or Palomar registration
 is made; original source bytes are preserved.
+
+Validated finite target quotient-rank checkpoint and P1-MATH-0041:
+[469f5ac7ab234cdd18962337291971682554d913](https://github.com/Vulkin-prog/paper-p1-lean/commit/469f5ac7ab234cdd18962337291971682554d913).

@@ -1843,7 +1843,8 @@
         "4212bf9ec45186af0f1ce85ed9a6fea00542775e",
         "df34686b343f5297c181e6150e21834acc335ad8",
         "1b87f9df9ba2c7a710a86f73443d39c7925abe63"
-      ]
+      ],
+      "validation_commit": "469f5ac7ab234cdd18962337291971682554d913"
     },
     {
       "label": "p1:arith:fixed-homogeneous-seeds",
@@ -2264,7 +2265,8 @@
         "4212bf9ec45186af0f1ce85ed9a6fea00542775e",
         "df34686b343f5297c181e6150e21834acc335ad8",
         "1b87f9df9ba2c7a710a86f73443d39c7925abe63"
-      ]
+      ],
+      "validation_commit": "469f5ac7ab234cdd18962337291971682554d913"
     },
     {
       "label": "p1:arith:fixed-channel-palm",
