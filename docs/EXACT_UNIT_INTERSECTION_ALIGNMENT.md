@@ -1,5 +1,11 @@
 # Exact unit coefficients for a private pair intersection
 
+This preparatory checkpoint now feeds the complete
+[companion T2.5 proof](FIXED_CHANNEL_MASS_ALIGNMENT.md), including both
+actual mass assertions and the literal real-cutoff separated family.
+Statements of remaining fixed-channel work below describe this earlier
+checkpoint. The complete main article 3.3 pair profile remains in progress.
+
 This is an algebraic extension of P1-MATH-0035 and preparation for article
 3.3 and companion T2.5. It does not complete their probability/mass claims.
 The already proved article Lemma 3.5 retains its original shared-value

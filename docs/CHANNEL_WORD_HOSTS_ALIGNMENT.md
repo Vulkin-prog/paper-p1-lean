@@ -1,5 +1,11 @@
 # Weighted canonical-pattern translation aggregates
 
+This preparatory checkpoint now feeds the complete
+[companion T2.5 proof](FIXED_CHANNEL_MASS_ALIGNMENT.md), including both
+actual mass assertions and the literal real-cutoff separated family.
+Statements of remaining fixed-channel work below describe this earlier
+checkpoint. The complete main article 3.3 pair profile remains in progress.
+
 This extends the [actual translation checkpoint](SOURCE_TRANSLATIONS_ALIGNMENT.md)
 and [finite channel calculation](FINITE_CHANNEL_SUMS_ALIGNMENT.md).
 It is preparatory to article 3.3 and companion T2.5; neither numbered

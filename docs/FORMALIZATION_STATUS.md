@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **52 / 167**: article Propositions 3.1, 4.1, 5.2, 13.7, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.9, T1.11, T2.6, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **53 / 167**: article Propositions 3.1, 4.1, 5.2, 13.7, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3549 audited theorem/lemma declarations**. This
+- The project currently has **3577 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1305,3 +1305,35 @@ Ubuntu root free space is 17.85 GiB.
 Validated actual fixed-channel remainder checkpoint (9,393 build jobs;
 3,549 audited declarations; 1,264 directly checked coverage/finding names):
 [b19ae93509861774fd90f72c07a8d452603e5fc5](https://github.com/Vulkin-prog/paper-p1-lean/commit/b19ae93509861774fd90f72c07a8d452603e5fc5).
+
+## Complete actual fixed-channel mass — companion T2.5
+
+Companion T2.5 is complete. `FixedChannelMassTheorem.companion_T2_5`
+proves both the actual mass asymptotic and positive phase for the literal
+symmetric ordered separated source family, including actual zero-probability
+pairs and any fixed real private-prime coefficient D>=2b.
+`RealPrivateChannelSources` proves exact floor transport and cutoff bounds;
+the literal separation filter is proved eventually redundant, rather than
+omitted as an assumption. Both orientations are transported from the
+canonical forward normalization.
+
+`SignedChannelLeadingBounds` gives explicit positive coefficients and,
+for L>=10b^3, L*2^floor(L/b)<=8b*S and S<=4b*L*2^floor(L/b).
+`ChannelMainTermBounds` and `PrivateChannelMassPhase` combine actual
+critical powers and the already proved remainder to establish positive
+two-sided constants times L*N^(-1+1/b) for the actual mass.
+The source N^(-1+epsilon) error and the stronger explicit K(C,b)*B^2/N
+remainder are both retained. Every threshold precedes all critical
+lengths, with the channel and real cutoff fixed before it. See the
+[complete source alignment](FIXED_CHANNEL_MASS_ALIGNMENT.md).
+
+Coverage is now **53 / 167** (main 17 / 73; companion 36 / 94), with
+45 confirmed improvements. Main Theorem 3.3 remains in progress: T2.5
+closes its fixed-channel mass input, not the other arithmetic regimes
+or complete pair profile. This extends MATH-0043, MATH-0044 and MATH-0045.
+The full build passed (9,405 jobs), all 3,577 theorem/lemma declarations
+passed the actual axiom audit, and all 1,292 coverage/finding names were
+checked directly by Lean. Only propext, Classical.choice and Quot.sound
+occur. No new literature input, Paper C port, manuscript revision or
+Palomar registration is introduced. Original sources are unchanged.
+Ubuntu root free space is 17.83 GiB.

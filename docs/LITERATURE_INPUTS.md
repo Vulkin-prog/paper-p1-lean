@@ -1103,3 +1103,14 @@ mass error, hence the source N^(-1+epsilon) estimate. No complete defective
 pair residual-nullity estimate or external premise is used in this route.
 The positive phase equivalent and cutoff-convention transport remain open.
 No Paper C port is added.
+
+## Complete actual fixed-channel mass T2.5
+
+`SignedChannelLeadingBounds`, `ChannelMainTermAlgebra`,
+`ChannelMainTermBounds`, `PrivateChannelMassPhase`,
+`RealPrivateChannelSources`, `FixedChannelMassTheorem` and the extended
+`CriticalChannelPowers` complete the positive phase and exact real-cutoff,
+literal separated-family transport. Both source T2.5 assertions and
+its stronger explicit remainder are proved with existing project results
+and the pinned Mathlib only. There is no new literature premise, global
+axiom or Paper C port. The complete main pair profile remains unfinished.

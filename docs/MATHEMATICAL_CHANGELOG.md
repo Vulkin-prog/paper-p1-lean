@@ -2147,3 +2147,61 @@ manuscript revision or Palomar registration is introduced.
 Validated actual fixed-channel remainder checkpoint (9,393 build jobs;
 3,549 audited declarations; 1,264 directly checked coverage/finding names):
 [b19ae93509861774fd90f72c07a8d452603e5fc5](https://github.com/Vulkin-prog/paper-p1-lean/commit/b19ae93509861774fd90f72c07a8d452603e5fc5).
+
+## P1-MATH-0043 extended — positive finite signed-channel bounds
+
+For the exact Euclidean remainder r and quotient m>=1, the signed
+formula is S=2^(m-1)*(A*m+T)-P with
+
+    1<=A<=2b^2,    0<=T<=6b^2,    0<=P<=5b^2*m.
+
+Consequently, for every positive a<b and L>=10b^3,
+
+    L*2^floor(L/b) <= 8b*S,
+    S <= 4b*L*2^floor(L/b),
+    S>0.
+
+Evidence: `SignedChannelLeadingBounds.coefficient_bounds`, `loss_bounds`,
+`signed_formula`, `quotient_bounds`, `length_bounds` and `signed_positive`.
+These give actual positive leading bounds, retaining r, without inferring
+its sign from an unsigned estimate. The threshold is explicit and the
+claim does not put growing b after a fixed-channel phase threshold.
+
+## P1-MATH-0045 completed — full T2.5 with real cutoff and literal separation
+
+The actual retained mass now has both source T2.5 assertions:
+M=p^2*N*w*S+O(N^(-1+epsilon)) and M comparable to L*N^(-1+1/b).
+The stronger explicit remainder <=K(C,b)*B^2/N is preserved.
+Positive constants follow from the finite signed-sum bounds and exact
+critical powers; the error is eventually at most half the positive
+leading lower bound.
+
+The literal source family uses a fixed real threshold D*B, D>=2b,
+with a private prime coordinate on every distinct normalized value.
+`privateAbove_floor` proves exact equality with its floor cutoff and
+`cutoff_bounds` gives 2bB<=floor(DB)<=ceil(D)B. The separated source
+family is defined literally, and its equality with the previously
+summed family is proved eventually from actual source geometry.
+Both orientations are the forward normalization and its swapped copy;
+this makes the source's symmetric-channel convention explicit.
+Actual infinite-measure probabilities are summed, with zero-probability
+pairs retained.
+
+Evidence: `ChannelMainTermBounds.main_term_bounds`,
+`PrivateChannelMassPhase.phase_bounds`, `positive_phase`,
+`RealPrivateChannelSources.privateAbove_floor`, `real_good_sources_eq`,
+`cutoff_bounds`, `real_sources_separated`, `separated_mass_eq`,
+`FixedChannelMassTheorem.eventual_mass_eq`, `strong_error`, `source_error`,
+`source_positive_phase` and `companion_T2_5`.
+The [alignment note](FIXED_CHANNEL_MASS_ALIGNMENT.md) compares the full
+literal family and both source assertions. No residual-nullity bound
+on defective pairs is used in this fixed-channel mass route.
+
+Companion T2.5 is now complete. Coverage rises to 53/167, with 45
+confirmed improvements. Article 3.3 remains in progress beyond this
+fixed-channel input. The full build passed (9,405 jobs), all 3,577
+theorem/lemma declarations passed the actual axiom audit, and all 1,292
+coverage/finding names were checked directly. Only propext,
+Classical.choice and Quot.sound occur. No new literature input, Paper C
+port, manuscript revision or Palomar registration is introduced.
+Original manuscript bytes are unchanged.

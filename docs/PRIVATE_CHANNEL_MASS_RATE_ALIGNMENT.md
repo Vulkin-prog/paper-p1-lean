@@ -1,9 +1,9 @@
 # Actual fixed-channel mass with an explicit square-logarithmic remainder
 
-This extends P1-MATH-0045. The actual critical-scale remainder in the
-first displayed assertion of companion T2.5 is proved for the literal
-integer-cutoff family. Its positive phase equivalent remains open, so
-neither T2.5 nor article 3.3 is newly counted complete.
+This records the critical-remainder extension of P1-MATH-0045. The later
+[complete T2.5 alignment](FIXED_CHANNEL_MASS_ALIGNMENT.md) closes its
+positive phase and exact real-cutoff convention. Article 3.3 remains
+in progress beyond this completed fixed-channel input.
 
 ## Direct unsigned sum and critical powers
 
@@ -73,15 +73,13 @@ epsilon>0, a larger threshold gives
 The eventual coefficient one follows by enlarging the threshold; it is
 not a uniform finite-size assertion independent of the channel parameters.
 
-## Remaining source alignment
+## Subsequent complete source alignment
 
-The positive fixed-channel phase equivalent M comparable to
-L*N^(-1+1/b) still requires the positive leading behavior of S and its
-critical-scale comparison. If the literal source threshold is a fixed
-real coefficient times B, its integer cutoff convention must also be
-transported exactly. These remaining assertions prevent declaring the
-whole numbered T2.5 proved. Article 3.3 retains other arithmetic regimes
-beyond this fixed-channel statement.
+The subsequent [complete T2.5 proof](FIXED_CHANNEL_MASS_ALIGNMENT.md)
+gives positive finite bounds on S, the actual critical phase
+M comparable to L*N^(-1+1/b), exact real-cutoff transport and equality
+with the literal separated source-family mass. The whole numbered
+T2.5 is now proved. Article 3.3 retains its other arithmetic regimes.
 
 The stronger O(B^2/N) remainder is recorded as part of the existing
 proof simplification P1-MATH-0045. No new literature premise, Paper C

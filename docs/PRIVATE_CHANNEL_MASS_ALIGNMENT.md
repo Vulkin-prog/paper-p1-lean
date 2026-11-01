@@ -1,9 +1,9 @@
 # Actual finite private-channel mass and direct deletion of bad unit terms
 
-This is P1-MATH-0045 and preparation for article 3.3 and companion T2.5.
-The actual retained channel family, exact mass decomposition and explicit
-finite error bound are proved. The critical-scale comparison and positive
-phase equivalent remain unfinished; neither numbered result is complete.
+This records the finite-reduction stage of P1-MATH-0045. The subsequent
+[complete T2.5 proof](FIXED_CHANNEL_MASS_ALIGNMENT.md) also closes the
+critical remainder, positive phase and literal real-cutoff family.
+Article 3.3 remains in progress beyond this fixed-channel input.
 
 ## Actual source family
 
@@ -83,9 +83,10 @@ other arithmetic regimes and rank conclusions.
 The subsequent [critical mass rate](PRIVATE_CHANNEL_MASS_RATE_ALIGNMENT.md)
 bounds U and compares these three actual errors on the critical scale,
 giving the stronger explicit O(B^2/N) remainder and the source's
-N^(-1+epsilon) estimate. The positive fixed-channel phase equivalent
-and any real-cutoff convention transport remain unfinished. The
-complete main pair profile also has its other regimes unfinished.
+N^(-1+epsilon) estimate. The later
+[complete T2.5 alignment](FIXED_CHANNEL_MASS_ALIGNMENT.md) proves the
+positive phase and exact real-cutoff convention as well. The complete
+main pair profile retains its other unfinished regimes.
 
 No new literature premise, Paper C port, manuscript revision or Palomar
 registration is introduced. Original manuscript bytes are unchanged.

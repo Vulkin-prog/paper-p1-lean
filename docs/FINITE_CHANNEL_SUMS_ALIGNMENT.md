@@ -1,5 +1,11 @@
 # Finite channel sums — preparatory to article 3.3 and companion T2.5
 
+This preparatory checkpoint now feeds the complete
+[companion T2.5 proof](FIXED_CHANNEL_MASS_ALIGNMENT.md), including both
+actual mass assertions and the literal real-cutoff separated family.
+Statements of remaining fixed-channel work below describe this earlier
+checkpoint. The complete main article 3.3 pair profile remains in progress.
+
 The finite computation is proved. Neither numbered asymptotic result is
 counted complete. Original V1.6 source bytes are unchanged.
 

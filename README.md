@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 52 / 167 numbered results proved.**
+**Status: active formalization, 53 / 167 numbered results proved.**
 Companion T1.9 now covers the full enlarged geometric alignment, including
 zero exact units and both orientations, with its fixed-height enlarged-prime
 rate. The earlier one-unit coverage error and its subsequent closure are
@@ -52,11 +52,13 @@ The actual retained channel mass now has an exact finite decomposition
 and explicit endpoint, bad-host and baseline errors. Bad rational-unit
 terms are removed without a complete residual-nullity estimate. See
 the [actual mass reduction](docs/PRIVATE_CHANNEL_MASS_ALIGNMENT.md).
-The actual fixed-channel remainder is now bounded by an explicit
-K(C,b)*B^2/N, implying the paper's N^(-1+epsilon) estimate. The positive
-phase equivalent remains unfinished. See the
+The actual fixed-channel remainder is bounded by an explicit
+K(C,b)*B^2/N, implying the paper's N^(-1+epsilon) estimate. See the
 [critical mass rate](docs/PRIVATE_CHANNEL_MASS_RATE_ALIGNMENT.md).
-The full pair profile and fixed-channel mass remain in progress. See the
+Companion T2.5 is now complete, including the positive channel phase,
+literal separated symmetric family and fixed real prime cutoff. See the
+[complete fixed-channel alignment](docs/FIXED_CHANNEL_MASS_ALIGNMENT.md).
+The complete main pair profile remains in progress. See the
 [finite calculation](docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,
 with deduplicated normalized values, an explicit finite rank bound and at

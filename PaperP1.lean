@@ -352,3 +352,9 @@ public import PaperP1.Arithmetic.ChannelUnsignedBound
 public import PaperP1.Asymptotics.CriticalChannelPowers
 public import PaperP1.Asymptotics.FixedChannelErrorAlgebra
 public import PaperP1.Asymptotics.PrivateChannelMassRate
+public import PaperP1.Arithmetic.SignedChannelLeadingBounds
+public import PaperP1.Asymptotics.ChannelMainTermAlgebra
+public import PaperP1.Asymptotics.ChannelMainTermBounds
+public import PaperP1.Asymptotics.PrivateChannelMassPhase
+public import PaperP1.Model.RealPrivateChannelSources
+public import PaperP1.Asymptotics.FixedChannelMassTheorem

@@ -1,5 +1,11 @@
 # Actual private pair covariance and predecessor signs
 
+This preparatory checkpoint now feeds the complete
+[companion T2.5 proof](FIXED_CHANNEL_MASS_ALIGNMENT.md), including both
+actual mass assertions and the literal real-cutoff separated family.
+Statements of remaining fixed-channel work below describe this earlier
+checkpoint. The complete main article 3.3 pair profile remains in progress.
+
 This extends P1-MATH-0035 and prepares article 3.3 and companion T2.5.
 It identifies an actual probability contribution, while the complete
 selected-word enumeration and normalization error estimates remain open.
