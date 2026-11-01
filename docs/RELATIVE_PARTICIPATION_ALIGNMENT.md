@@ -74,12 +74,14 @@ actual connected tuple host count by the proved relative-participation
 estimate with no old sources. It does not identify connectedness with one
 full-support relation.
 
-Main Corollary 10.2 is still in progress for original-window/set-family
-alignment, primitive families and the actual independent-mass statement.
-See [its precise scope](CONNECTED_FAMILY_ALIGNMENT.md). Numbered coverage
-remains 64/167 (main 21/73, companion 43/94); confirmed improvements are 65.
+Main Corollary 10.2 is now complete for actual unordered original-window
+families, primitive families and their exact heterogeneous independent mass.
+See [its complete alignment](CONNECTED_FAMILY_ALIGNMENT.md). Coverage is
+65/167 (main 22/73, companion 43/94); confirmed improvements remain 65.
 No external unproved input, new Paper C port or manuscript-byte change occurs.
 
-Verification checkpoint: Lean v4.36.0-rc2 full build passed (9,821 jobs); actual axiom audit passed for all 4,501 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,216 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.20 GiB. No unproved group, extension or target count, new external input, Paper C port, manuscript-byte change or Palomar registration. Coverage remains 64/167; confirmed improvements are 65; main 10.2 is still in progress.
+Earlier generic-count checkpoint, before the original-window and mass alignment: Lean v4.36.0-rc2 full build passed (9,821 jobs); actual axiom audit passed for all 4,501 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,216 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.20 GiB. No unproved group, extension or target count, new external input, Paper C port, manuscript-byte change or Palomar registration. Coverage remains 64/167; confirmed improvements are 65; main 10.2 is still in progress.
 
 Proof checkpoint: [2e1bbd65872d4f73927ba606ef20cb592c8b81bb](https://github.com/Vulkin-prog/paper-p1-lean/commit/2e1bbd65872d4f73927ba606ef20cb592c8b81bb).
+
+Full original-window family verification: Lean v4.36.0-rc2 full build passed (9,835 jobs); actual axiom audit passed for all 4,515 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,230 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.18 GiB. Full main 10.2 is complete; coverage is 65/167 (main 22/73, companion 43/94), with 65 confirmed improvements. No unproved host or independent-mass count, new external input, Paper C port, manuscript-byte change or Palomar registration.

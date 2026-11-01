@@ -3423,16 +3423,32 @@
         "PaperP1.ConnectedRelations.coordinate_relation",
         "PaperP1.ConnectedBlockLists.covered_of_connected",
         "PaperP1.ConnectedBlockLists.population_subset_covered",
-        "PaperP1.ConnectedBlockCount.uniform_count"
+        "PaperP1.ConnectedBlockCount.uniform_count",
+        "PaperP1.PrimitiveRelations.full_relation_of_minimal_nullity",
+        "PaperP1.OriginalWindowValueBounds.values_geometry",
+        "PaperP1.OriginalWindowFamilyCounts.uniform_hosts",
+        "PaperP1.OriginalWindowFamilyMass.uniform_marginals",
+        "PaperP1.OriginalWindowFamilyMass.article_10_2",
+        "PaperP1.FiniteFamilyEnumeration.centres_injective",
+        "PaperP1.FiniteFamilyEnumeration.centres_mem",
+        "PaperP1.FiniteFamilyEnumeration.centres_tupleSet",
+        "PaperP1.FiniteFamilyEnumeration.family_count",
+        "PaperP1.ConnectedWindowFamilies.connected_enumeration",
+        "PaperP1.ConnectedWindowFamilies.primitive_enumeration",
+        "PaperP1.ConnectedWindowFamilies.connected_family_count",
+        "PaperP1.ConnectedWindowFamilies.primitive_family_count",
+        "PaperP1.FamilyIndependentMass.finite_mass_cap"
       ],
       "proposed_revision": "State a relative-participation extension of 10.1, allowing a separate relation at each coordinate. Prove it by exposing a whole nonzero support and inducting with its full value blocks adjoined to the old span. Derive the connected host count from the canonical-partition coordinate-relation lemma. Keep all own-space nonzero and quantifier-order requirements explicit; do not identify connectedness with a single full-support relation.",
-      "impact": "This strictly broader relative half-count and the actual generic connected-block tuple host count are proved. Main 10.2 is still in progress for original-window/set-family alignment, primitive families and independent mass. Coverage remains 64/167 (main 21/73, companion 43/94), with 65 confirmed improvements.",
-      "validation": "Lean v4.36.0-rc2 full build passed (9,821 jobs); actual axiom audit passed for all 4,501 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,216 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.20 GiB. No unproved group, extension or target count, new external input, Paper C port, manuscript-byte change or Palomar registration. Coverage remains 64/167; confirmed improvements are 65; main 10.2 is still in progress.",
+      "impact": "The broader relative half-count is complete, and its actual canonical connected-host consequence is now aligned with unordered original-window families, primitive families and independent mass using the exact heterogeneous marginals. Full main Corollary 10.2 is complete. Coverage is 65/167 (main 22/73, companion 43/94), with 65 confirmed improvements. The earlier generic-count-only checkpoint is preserved in validation_history.",
+      "validation": "Lean v4.36.0-rc2 full build passed (9,835 jobs); actual axiom audit passed for all 4,515 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,230 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.18 GiB. Full main 10.2 is complete; coverage is 65/167 (main 22/73, companion 43/94), with 65 confirmed improvements. No unproved host or independent-mass count, new external input, Paper C port, manuscript-byte change or Palomar registration.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "2e1bbd65872d4f73927ba606ef20cb592c8b81bb"
+      "validation_history": [
+        "2e1bbd65872d4f73927ba606ef20cb592c8b81bb"
+      ]
     }
   ]
 }

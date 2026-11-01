@@ -1254,7 +1254,7 @@
       "source": "main_sections/half_counts.tex",
       "line": 68,
       "sha256": "4b468f5e971a3ae46d6f9687cf9af2ec9ce4836990499b225742e45672b9b47e",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.EffectiveExposure.mem_population",
         "PaperP1.EffectiveExposure.mem_cell",
@@ -1291,14 +1291,28 @@
         "PaperP1.ConnectedBlockLists.mem_population",
         "PaperP1.ConnectedBlockLists.covered_of_connected",
         "PaperP1.ConnectedBlockLists.population_subset_covered",
-        "PaperP1.ConnectedBlockCount.uniform_count"
+        "PaperP1.ConnectedBlockCount.uniform_count",
+        "PaperP1.PrimitiveRelations.full_relation_of_minimal_nullity",
+        "PaperP1.OriginalWindowValueBounds.values_geometry",
+        "PaperP1.OriginalWindowFamilyCounts.uniform_hosts",
+        "PaperP1.OriginalWindowFamilyMass.uniform_marginals",
+        "PaperP1.OriginalWindowFamilyMass.article_10_2",
+        "PaperP1.FiniteFamilyEnumeration.centres_injective",
+        "PaperP1.FiniteFamilyEnumeration.centres_mem",
+        "PaperP1.FiniteFamilyEnumeration.centres_tupleSet",
+        "PaperP1.FiniteFamilyEnumeration.family_count",
+        "PaperP1.ConnectedWindowFamilies.connected_enumeration",
+        "PaperP1.ConnectedWindowFamilies.primitive_enumeration",
+        "PaperP1.ConnectedWindowFamilies.connected_family_count",
+        "PaperP1.ConnectedWindowFamilies.primitive_family_count",
+        "PaperP1.FamilyIndependentMass.finite_mass_cap"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
         "P1-MATH-0064",
         "P1-MATH-0065"
       ],
-      "notes": "Actual generic canonically connected effective-block tuples have the full N^(r/2+epsilon) host count for r>=2. Canonical connectedness supplies an actual nonzero relation at every coordinate. A stronger relative per-coordinate participation population is counted by genuine simultaneous induction, uniformly in old source counts; an actual nonempty relation support is exposed first and all remaining blocks retain participation in the enlarged full old span. Actual exposure populations and their fibres/induction are also proved. The source original-window/set-family alignment, primitive-family bridge and actual independent-mass estimate remain open. These generic host counts are preparatory and this corollary is not counted complete."
+      "notes": "Full main Corollary 10.2. Actual unordered connected and primitive original-window families are counted by N^(r/2+epsilon), uniformly for every critical-band length and every candidate subset of the dyadic block. Connectedness is the actual canonical direct partition. Positive relative nullity and zero nullity on every proper subfamily give an actual full-support primitive relation by exact erasure/extension. Injective actual enumerations preserve relations and full effective spaces; source window values and signed distances are verified literally. Their independent masses are sums of products of the exact heterogeneous infinite-model marginals. The proved critical-band marginal theorem supplies a uniform K/N cap, including zero-marginal windows. Actual finite products, sums and host counts yield N^(-r/2+epsilon), with all fixed constants absorbed. No connected/primitive host or mass estimate is assumed."
     },
     {
       "label": "p13:half:pairs",

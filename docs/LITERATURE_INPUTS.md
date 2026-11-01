@@ -1599,3 +1599,18 @@ original-window family, primitive and actual independent-mass alignment.
 No new external theorem or Paper C port is introduced. See
 [relative proof](RELATIVE_PARTICIPATION_ALIGNMENT.md) and
 [remaining obligations](CONNECTED_FAMILY_ALIGNMENT.md).
+
+## Complete original-window connected and primitive family count/mass
+
+The actual original-window finite even image equals the previously proved
+square-class space. Literal value heights and signed distances transfer the
+generic relative-participation count. Actual unordered family enumerations
+preserve relations and inject into the counted tuple image. The primitive
+bridge uses positive actual kernel nullity and injectivity on every proper
+subfamily, with exact erasure/extension. Actual independent masses retain
+all exact infinite-model marginals. Their cap uses the complete existing
+critical-band local-rigidity theorem; finite products, family sums and fixed
+constants are proved and absorbed. No host, primitive or mass estimate is
+an unproved external argument. Full main 10.2 is complete; no new Paper C
+port or literature assumption is introduced. See
+[complete alignment](CONNECTED_FAMILY_ALIGNMENT.md).

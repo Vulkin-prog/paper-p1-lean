@@ -2879,3 +2879,12 @@ block tuples are therefore counted. The original-window/set-family and
 independent-mass/primitive alignment in main 10.2 is still open, so coverage
 remains 64/167. See [relative participation](RELATIVE_PARTICIPATION_ALIGNMENT.md)
 and [connected-family progress](CONNECTED_FAMILY_ALIGNMENT.md).
+
+P1-MATH-0065 closure: the generic connected host count is now aligned with
+actual unordered original-window families. The source primitive/nullity
+condition supplies an actual full-support relation. Both actual independent
+masses are proved using the exact heterogeneous infinite-model marginals
+and their proved common critical-band cap. Main 10.2 is complete; coverage
+is 65/167 and confirmed improvements remain 65. The earlier generic-only
+proof checkpoint is preserved in the finding's validation history. See
+[complete connected-family alignment](CONNECTED_FAMILY_ALIGNMENT.md).

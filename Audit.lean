@@ -132,6 +132,7 @@ import PaperP1
 #print axioms PaperP1.Affine.rank_partition_inter
 #print axioms PaperP1.Affine.rank_partition_sum
 #print axioms PaperP1.Affine.privateRank_in_part
+#print axioms PaperP1.PrimitiveRelations.full_relation_of_minimal_nullity
 #print axioms PaperP1.PrivateCoreMoments.component_mass_bounds
 #print axioms PaperP1.Affine.rank_add_nullity_on
 #print axioms PaperP1.Affine.private_nullity_identity
@@ -1430,6 +1431,7 @@ import PaperP1
 #print axioms PaperP1.OldValuePrimeBudget.oldPrimes_log_sum_le
 #print axioms PaperP1.OldValuePrimeBudget.primePool_log_sum_le
 #print axioms PaperP1.OldValuePrimeBudget.raw_primePool_log_sum_le
+#print axioms PaperP1.OriginalWindowValueBounds.values_geometry
 #print axioms PaperP1.Arithmetic.parityVec_apply
 #print axioms PaperP1.Arithmetic.parityVec_one
 #print axioms PaperP1.Arithmetic.parityVec_mul
@@ -2411,6 +2413,9 @@ import PaperP1
 #print axioms PaperP1.OffsetPlaneTheorem.uniform_stronger
 #print axioms PaperP1.OffsetPlaneTheorem.companion_T20_3
 #print axioms PaperP1.OffsetPlaneTheorem.companion_T20_3_shared
+#print axioms PaperP1.OriginalWindowFamilyCounts.uniform_hosts
+#print axioms PaperP1.OriginalWindowFamilyMass.uniform_marginals
+#print axioms PaperP1.OriginalWindowFamilyMass.article_10_2
 #print axioms PaperP1.PolylogSmoothModuli.log_power_exponential
 #print axioms PaperP1.PolylogSmoothModuli.odd_smooth_count
 #print axioms PaperP1.PrescribedQuadraticKernelCount.mem_values
@@ -2906,6 +2911,10 @@ import PaperP1
 #print axioms PaperP1.FinTupleErasure.pair_determined
 #print axioms PaperP1.FinTupleErasure.fixed_pair_count
 #print axioms PaperP1.FiniteCoverCount.cardinal_le
+#print axioms PaperP1.FiniteFamilyEnumeration.centres_injective
+#print axioms PaperP1.FiniteFamilyEnumeration.centres_mem
+#print axioms PaperP1.FiniteFamilyEnumeration.centres_tupleSet
+#print axioms PaperP1.FiniteFamilyEnumeration.family_count
 #print axioms PaperP1.FinitePairPartition.exists_pair_partition
 #print axioms PaperP1.FinitePairPartition.partition_cardinality
 #print axioms PaperP1.FinitePolymerBound.weight_nonneg
@@ -3395,6 +3404,10 @@ import PaperP1
 #print axioms PaperP1.ConditionalRunRank.evenMap_boundary
 #print axioms PaperP1.ConditionalRunRank.row_kernel_mem_iff
 #print axioms PaperP1.ConditionalRunRank.row_kernel_finrank
+#print axioms PaperP1.ConnectedWindowFamilies.connected_enumeration
+#print axioms PaperP1.ConnectedWindowFamilies.primitive_enumeration
+#print axioms PaperP1.ConnectedWindowFamilies.connected_family_count
+#print axioms PaperP1.ConnectedWindowFamilies.primitive_family_count
 #print axioms PaperP1.CountObservables.dyadic_subset_cutoff
 #print axioms PaperP1.CountObservables.countMoment_eq_finite
 #print axioms PaperP1.CountObservables.count_observable_integral_eq_finite
@@ -3426,6 +3439,7 @@ import PaperP1
 #print axioms PaperP1.FactorialCountMoments.factorialCountMoment_nonneg
 #print axioms PaperP1.FactorialCountMoments.factorialCountMoment_two
 #print axioms PaperP1.FactorialCountMoments.sum_tuple_joint_moments
+#print axioms PaperP1.FamilyIndependentMass.finite_mass_cap
 #print axioms PaperP1.Model.valueLinear_apply
 #print axioms PaperP1.Model.valueBit_mul
 #print axioms PaperP1.Model.phase_zero

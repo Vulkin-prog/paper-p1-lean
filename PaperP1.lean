@@ -678,3 +678,17 @@ public import PaperP1.Arithmetic.FiniteBlockAppend
 public import PaperP1.Arithmetic.ConnectedBlockLists
 
 public import PaperP1.Asymptotics.ConnectedBlockCount
+
+public import PaperP1.Affine.PrimitiveRelations
+
+public import PaperP1.Arithmetic.OriginalWindowValueBounds
+
+public import PaperP1.Asymptotics.OriginalWindowFamilyCounts
+
+public import PaperP1.Asymptotics.OriginalWindowFamilyMass
+
+public import PaperP1.Combinatorics.FiniteFamilyEnumeration
+
+public import PaperP1.Model.ConnectedWindowFamilies
+
+public import PaperP1.Model.FamilyIndependentMass
