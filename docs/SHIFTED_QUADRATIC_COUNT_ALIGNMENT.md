@@ -57,5 +57,12 @@ This supplies the uniform actual quadratic bound needed for a selected
 block in T5.2. The final finite enumeration over a fixed pair partition,
 divisors of e' and dyadic block kernels is not yet claimed.
 
+The subsequent [complete T5.2 checkpoint](PRESCRIBED_SPLIT_PRODUCT_ALIGNMENT.md)
+closes that final enumeration and both numbered conclusions, including a
+stronger cumulative prescribed-kernel count.
+
 No new unproved literature input, Paper C port, source-byte change or
 Palomar registration is introduced.
+
+The [complete T5.2 alignment](PRESCRIBED_SPLIT_PRODUCT_ALIGNMENT.md) now
+closes the final selected count and all fixed comparable positive intervals.

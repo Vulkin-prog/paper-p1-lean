@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **56 / 167**: article Propositions 3.1, 4.1, 5.2, 13.7, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **57 / 167**: article Propositions 3.1, 4.1, 5.2, 13.7, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemma T5.2.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4042 audited theorem/lemma declarations**. This
+- The project currently has **4092 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1842,3 +1842,31 @@ Shifted-count verification: full build passed (9,611 jobs); actual axiom
 audit passed for all 4,042 declarations; all 1,757 distinct ledger/finding
 names were checked directly. All 138 source manifest entries and 167
 result records remain intact. Ubuntu available space: 17.55 GiB.
+
+## Complete actual companion T5.2 and a cumulative strengthening
+
+Both advertised actual counts are proved on every fixed comparable
+positive interval a*N<=n<=b*N, a>0. The real-bounds theorem additionally
+proves positivity and equality with the literal integer split product.
+The final selected-block/divisor/dyadic finite cover is closed: its actual
+cell counts and every enumeration/height cost are proved. The interval
+transfer uses an exact scale-independent power profile, a constructed
+finite cover and uniform degree/width transfer. It preserves the stated
+coefficient c with only arbitrarily small exponent losses; no dependence
+on the varying size exponent beta is hidden in constants.
+
+One common threshold precedes all varying widths, offset sets, degrees,
+divisors, kernel-size exponents, kernels and finite solution families.
+The prescribed estimate also holds cumulatively below F*N^beta for any
+fixed comparison factor F: P1-MATH-0057. Both assertions allow arbitrary
+fixed polylogarithmic widths. The independent fixed-kernel assertion also
+allows odd degree >=2: P1-MATH-0055. The prescribed assertion retains
+even degree and the paired-quadratic proof.
+
+Coverage is 57/167 (main 17/73; companion 40/94), with 57 confirmed
+improvements. Earlier open-stage entries above are historical checkpoints
+closed by this section. T5.1's printed unqualified comparison remains
+unclaimed; its proved actual affine count suffices here. See
+[complete alignment](PRESCRIBED_SPLIT_PRODUCT_ALIGNMENT.md).
+
+Verification checkpoint: Lean v4.36.0-rc2 full build passed (9,629 jobs); actual axiom audit passed for all 4,092 theorem/lemma declarations using only propext, Classical.choice and Quot.sound. All 1,807 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 result records remain intact. Ubuntu available space: 17.52 GiB. No unproved count, new literature input, new Paper C port or Palomar registration.

@@ -1433,3 +1433,21 @@ coefficient height or range transport is assumed. The affine count
 uses the universally valid capped comparison, with all varying offsets
 after a common threshold. See
 [alignment](SHIFTED_QUADRATIC_COUNT_ALIGNMENT.md).
+
+## Complete actual prescribed split-product count
+
+The final finite cover, actual dyadic kernel windows and their index
+budget, actual block/divisor counts and every cell estimate are now
+proved. Both T5.2 conclusions are unconditional Lean theorems relative
+only to their ordinary source-data hypotheses; no unproved arithmetic
+count or enumeration input is present. The source dyadic count follows
+from a stronger cumulative bound, P1-MATH-0057. The T5.1 proof ingredient
+is its proved actual affine count, not its unqualified printed abstract
+comparison. No new Paper C port or literature input is introduced. See
+[complete alignment](PRESCRIBED_SPLIT_PRODUCT_ALIGNMENT.md).
+
+The complete scope includes arbitrary fixed comparable positive intervals.
+A finite dyadic cover, exact scale-independent power identity, width and
+degree transfer and absorbed constant prefactors are all proved directly.
+No comparable-interval count is assumed. Earlier open selected-count
+entries above are historical stages now closed by this complete proof.

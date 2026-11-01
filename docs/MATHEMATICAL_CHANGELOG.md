@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**56 mathematical improvements are confirmed; no error in a manuscript conclusion
+**57 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -2726,3 +2726,22 @@ new square-part/modulus heights and finite constants are derived. The
 unqualified uncapped comparison remains unclaimed; no new improvement
 identifier or numbered-result completion is added. See
 [alignment](SHIFTED_QUADRATIC_COUNT_ALIGNMENT.md).
+
+## P1-MATH-0057 — Cumulative prescribed split-product kernel count
+
+Full T5.2 is proved with both advertised actual counts. The prescribed
+divisor estimate also holds for the cumulative family sf(P_A(n))<=N^beta,
+and any fixed comparison factor, without the source lower size condition.
+All cell counts and finite enumeration costs are proved; no target-count
+premise is used. Both conclusions extend to fixed polylogarithmic widths
+(P1-MATH-0055); odd degrees remain specific to the fixed-kernel assertion.
+See [complete alignment](PRESCRIBED_SPLIT_PRODUCT_ALIGNMENT.md) and the
+machine-readable finding for all declarations. Coverage is 57/167.
+
+The complete T5.2 count includes every fixed comparable positive interval,
+with a common threshold before varying source data. The interval transfer
+uses an exact scale-independent power profile, so no nonuniform factor in
+beta is introduced and the c coefficient is preserved. The real-bounds
+formulation also verifies positivity and the literal signed-product
+identity. Earlier open-stage entries for T5.2 above are closed by this
+checkpoint; they remain as development history.

@@ -468,3 +468,21 @@ public import PaperP1.Asymptotics.WideQuadraticKernelCount
 public import PaperP1.Diophantine.ShiftedQuadraticValues
 
 public import PaperP1.Asymptotics.ShiftedQuadraticKernelCount
+
+public import PaperP1.Combinatorics.FiniteCoverCount
+
+public import PaperP1.Asymptotics.DyadicQuadraticBudgets
+
+public import PaperP1.Asymptotics.SelectedQuadraticCells
+
+public import PaperP1.Asymptotics.PrescribedSplitProductCount
+
+public import PaperP1.Asymptotics.ComparableLogBounds
+
+public import PaperP1.Combinatorics.ComparableDyadicCover
+
+public import PaperP1.Asymptotics.SplitProductPowerForm
+
+public import PaperP1.Asymptotics.ComparableCoverPower
+
+public import PaperP1.Asymptotics.ComparableSplitProductCount

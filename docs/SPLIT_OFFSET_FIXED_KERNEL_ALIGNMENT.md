@@ -63,5 +63,12 @@ The subsequent [grouped-resultant checkpoint](GROUPED_KERNEL_RESULTANT_ALIGNMENT
 closes the quotient argument in exact square form. The remaining allocation
 and selected quadratic count are still not claimed.
 
+The later [complete T5.2 checkpoint](PRESCRIBED_SPLIT_PRODUCT_ALIGNMENT.md)
+closes the prescribed-divisor count as well. The odd-degree extension remains
+specific to the fixed-kernel assertion; both assertions have broader widths.
+
 No new unproved literature input, Paper C port, original manuscript-byte
 change or Palomar registration is introduced.
+
+The [complete T5.2 alignment](PRESCRIBED_SPLIT_PRODUCT_ALIGNMENT.md) now
+closes the final selected count and all fixed comparable positive intervals.
