@@ -1422,3 +1422,14 @@ limit, with one threshold before all fixed partitions and source data.
 No averaged exponent estimate or selected-block witness is assumed.
 The shifted quadratic counting application remains open; see
 [alignment](SELECTED_QUADRATIC_BUDGET_ALIGNMENT.md).
+
+## Uniform shifted two-factor kernel count
+
+The wider actual interval has derived square-part bounds
+N/(4sqrt(Q))<=v<=4N/sqrt(Q), actual modulus <=N^6, and the proved
+congruence sum. The exact injective integer shift identifies every
+actual two-element block with the quadratic kernel. No shifted count,
+coefficient height or range transport is assumed. The affine count
+uses the universally valid capped comparison, with all varying offsets
+after a common threshold. See
+[alignment](SHIFTED_QUADRATIC_COUNT_ALIGNMENT.md).

@@ -458,3 +458,13 @@ public import PaperP1.Combinatorics.FinitePairPartition
 public import PaperP1.Arithmetic.SelectedQuadraticBudget
 
 public import PaperP1.Asymptotics.SelectedQuadraticError
+
+public import PaperP1.Diophantine.WideQuadraticKernelRanges
+
+public import PaperP1.Asymptotics.WideQuadraticSquarePartCount
+
+public import PaperP1.Asymptotics.WideQuadraticKernelCount
+
+public import PaperP1.Diophantine.ShiftedQuadraticValues
+
+public import PaperP1.Asymptotics.ShiftedQuadraticKernelCount

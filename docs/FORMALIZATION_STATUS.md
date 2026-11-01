@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4026 audited theorem/lemma declarations**. This
+- The project currently has **4042 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1823,3 +1823,22 @@ Selected-quadratic verification: full build passed (9,601 jobs); actual
 axiom audit passed for all 4,026 declarations; all 1,741 distinct
 ledger/finding names were checked directly. All 138 manifest entries
 and 167 result records remain intact; Ubuntu has 17.56 GiB free.
+
+## Uniform actual shifted quadratic-block count
+
+The prescribed quadratic-kernel affine count now holds on the wider
+N/2<=x<=3N range. All square-part and modulus heights are derived,
+including the fixed factors absorbed in the same uniform threshold.
+For two ordered offsets a<b, the exact positive natural values satisfy
+x=n+a and x+(b-a)=n+b; an injective shift identifies the actual block
+kernel with sf(x(x+h)). This proves the uniform affine bound for every
+actual two-element offset block. The capped-exponent proof remains
+valid for all real beta without an exact beta<=2 assumption.
+This extends P1-MATH-0054. The final T5.2 selected-block/divisor/dyadic
+enumeration is still open; coverage stays 56/167 with 56 improvements.
+See [alignment](SHIFTED_QUADRATIC_COUNT_ALIGNMENT.md).
+
+Shifted-count verification: full build passed (9,611 jobs); actual axiom
+audit passed for all 4,042 declarations; all 1,757 distinct ledger/finding
+names were checked directly. All 138 source manifest entries and 167
+result records remain intact. Ubuntu available space: 17.55 GiB.

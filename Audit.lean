@@ -2179,6 +2179,8 @@ import PaperP1
 #print axioms PaperP1.SeveralAnchorCounts.finite_factor_bound
 #print axioms PaperP1.SeveralAnchorCounts.uniform_count
 #print axioms PaperP1.SeveralAnchorCounts.critical_count
+#print axioms PaperP1.ShiftedQuadraticKernelCount.ordered_pair_count
+#print axioms PaperP1.ShiftedQuadraticKernelCount.two_factor_count
 #print axioms PaperP1.SmallKernelBlockCount.logarithmic_blocks
 #print axioms PaperP1.SmallKernelBlockCount.arbitrary_selected_blocks
 #print axioms PaperP1.SourceTranslationCount.uniform_counts
@@ -2206,6 +2208,10 @@ import PaperP1
 #print axioms PaperP1.VerySmallTail.moment_bound
 #print axioms PaperP1.VerySmallTail.power_threshold
 #print axioms PaperP1.VerySmallTail.companion_T19_6
+#print axioms PaperP1.WideQuadraticKernelCount.three_exponent_bounds
+#print axioms PaperP1.WideQuadraticKernelCount.uniform_affine_count
+#print axioms PaperP1.WideQuadraticSquarePartCount.reciprocal_budget
+#print axioms PaperP1.WideQuadraticSquarePartCount.second_branch_count
 #print axioms PaperP1.ZeroDegreeAuxiliaryCounts.polylog_shift_budget
 #print axioms PaperP1.ZeroDegreeAuxiliaryCounts.linear_auxiliary_zero_count
 #print axioms PaperP1.BinaryResidual.card_support
@@ -2863,6 +2869,13 @@ import PaperP1
 #print axioms PaperP1.ResultantHeight.chart_product_bound
 #print axioms PaperP1.ResultantHeight.polynomial_product_height
 #print axioms PaperP1.ResultantHeight.coefficient_uniform_denominator_count
+#print axioms PaperP1.ShiftedQuadraticValues.shift_pos
+#print axioms PaperP1.ShiftedQuadraticValues.value_cast
+#print axioms PaperP1.ShiftedQuadraticValues.shifted_value_add
+#print axioms PaperP1.ShiftedQuadraticValues.shifted_bounds
+#print axioms PaperP1.ShiftedQuadraticValues.quadratic_block_eq
+#print axioms PaperP1.ShiftedQuadraticValues.value_injective_on
+#print axioms PaperP1.ShiftedQuadraticValues.ordered_pair_representation
 #print axioms PaperP1.SingleResultantFibreCount.scale_count
 #print axioms PaperP1.SingleResultantFibreCount.finite_count
 #print axioms PaperP1.SingleResultantFibreCount.actual_real_solutions_count
@@ -2880,6 +2893,9 @@ import PaperP1
 #print axioms PaperP1.UniformQuadraticCount.cardinality_le_rpow_eventually
 #print axioms PaperP1.UniformQuadraticCount.mem_positiveQuadraticSolutions_real_height
 #print axioms PaperP1.UniformQuadraticCount.uniform_quadratic_equation_count
+#print axioms PaperP1.WideQuadraticKernelRanges.product_bounds
+#print axioms PaperP1.WideQuadraticKernelRanges.square_part_range
+#print axioms PaperP1.WideQuadraticKernelRanges.modulus_height
 #print axioms PaperP1.ZeroDegreeLinearFibres.encode_injective_on_fibre
 #print axioms PaperP1.ZeroDegreeLinearFibres.linear_fibre_count
 #print axioms PaperP1.ZeroDegreeLinearFibres.auxiliary_zero_count

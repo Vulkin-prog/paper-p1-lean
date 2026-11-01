@@ -2717,3 +2717,12 @@ regime. The partition can be fixed before counting solutions under a
 common threshold. This extends the existing finding and adds no new
 improvement identifier. The final shifted counting/enumeration remains
 open. See [alignment](SELECTED_QUADRATIC_BUDGET_ALIGNMENT.md).
+
+## P1-MATH-0054 extension — Uniform wider-range and shifted quadratic counts
+
+The actual affine bound is now proved on N/2<=x<=3N and for actual
+two-factor integer-offset blocks, via an exact injective shift. All
+new square-part/modulus heights and finite constants are derived. The
+unqualified uncapped comparison remains unclaimed; no new improvement
+identifier or numbered-result completion is added. See
+[alignment](SHIFTED_QUADRATIC_COUNT_ALIGNMENT.md).

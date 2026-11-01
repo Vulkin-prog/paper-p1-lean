@@ -2529,7 +2529,7 @@
         "statement_sha256": "98eb59430167ea84a4dd75c36b107f990646c6c2f47783b8292f95e2659899bb"
       },
       "original_assumption": "T5.1 has polylogarithmic positive shifts and actual quadratic kernels q asymptotic to N^beta with prescribed squarefree e. Its display compares the uncapped c2 to the affine exponent without a printed range qualification; its proof uses beta<=2+o(1).",
-      "finding": "All actual counting conclusions are now proved uniformly, including real kernel endpoints, the square-part sum, the minimum c2 and the affine estimate. The trivial integer-count branch yields the stronger capped exponent min(1,c2). This capped exponent is at most 1/2+beta/4-delta/2 for ALL real beta,delta, eliminating a boundary-range argument. For the uncapped c2, the exact comparison holds under beta-2delta<=2 (in particular beta<=2, delta>=0). The unrestricted real comparison has the checked counterexample beta=5/2, delta=0. This is an algebraic range clarification, not a counterexample to the actual manuscript count: actual nonempty families give beta<=2+o(1), and a uniform arbitrary-positive-margin comparison is proved from their actual height bound.",
+      "finding": "All actual counting conclusions are now proved uniformly, including real kernel endpoints, the square-part sum, the minimum c2 and the affine estimate. The trivial integer-count branch yields the stronger capped exponent min(1,c2). This capped exponent is at most 1/2+beta/4-delta/2 for ALL real beta,delta, eliminating a boundary-range argument. For the uncapped c2, the exact comparison holds under beta-2delta<=2 (in particular beta<=2, delta>=0). The unrestricted real comparison has the checked counterexample beta=5/2, delta=0. This is an algebraic range clarification, not a counterexample to the actual manuscript count: actual nonempty families give beta<=2+o(1), and a uniform arbitrary-positive-margin comparison is proved from their actual height bound. The actual affine count now holds on N/2<=n<=3N, and an explicit injective integer shift proves it for every actual two-factor block with fixed polylogarithmic offsets. New square-part, modulus, coordinate and shift heights are derived rather than assumed.",
       "evidence": [
         "PaperP1.QuadraticKernelRanges.positive_card",
         "PaperP1.QuadraticKernelRanges.divisible_card",
@@ -2551,16 +2551,34 @@
         "PaperP1.PrescribedQuadraticKernelTheorem.admissible_height",
         "PaperP1.PrescribedQuadraticKernelTheorem.eventual_source_comparison",
         "PaperP1.PrescribedQuadraticKernelTheorem.companion_T5_1_counts",
-        "PaperP1.PrescribedQuadraticKernelCount.real_first_branch_count"
+        "PaperP1.PrescribedQuadraticKernelCount.real_first_branch_count",
+        "PaperP1.WideQuadraticKernelRanges.product_bounds",
+        "PaperP1.WideQuadraticKernelRanges.square_part_range",
+        "PaperP1.WideQuadraticKernelRanges.modulus_height",
+        "PaperP1.WideQuadraticSquarePartCount.reciprocal_budget",
+        "PaperP1.WideQuadraticSquarePartCount.second_branch_count",
+        "PaperP1.WideQuadraticKernelCount.three_exponent_bounds",
+        "PaperP1.WideQuadraticKernelCount.uniform_affine_count",
+        "PaperP1.ShiftedQuadraticValues.shift_pos",
+        "PaperP1.ShiftedQuadraticValues.value_cast",
+        "PaperP1.ShiftedQuadraticValues.shifted_value_add",
+        "PaperP1.ShiftedQuadraticValues.shifted_bounds",
+        "PaperP1.ShiftedQuadraticValues.quadratic_block_eq",
+        "PaperP1.ShiftedQuadraticValues.value_injective_on",
+        "PaperP1.ShiftedQuadraticValues.ordered_pair_representation",
+        "PaperP1.ShiftedQuadraticKernelCount.ordered_pair_count",
+        "PaperP1.ShiftedQuadraticKernelCount.two_factor_count"
       ],
       "proposed_revision": "State the universally valid exponent min(1,c2), or qualify the uncapped displayed comparison by beta-2delta<=2. If retaining the actual admissible beta<=2+o(1) convention, put the corresponding o(1) on the exponent comparison. Use the capped proof to obtain the affine actual count directly. Keep the original count exponents and the polylogarithmic assumption in the square-part branch.",
-      "impact": "Closes both actual counting branches and their min/affine consequences, with a stronger capped estimate and weaker divisor assumptions. No failure of an advertised asymptotic counting exponent is established. The ledger conservatively leaves T5.1 in progress solely for the literal unqualified display pending manuscript alignment; numbered coverage remains 56/167.",
-      "validation": "Lean v4.36.0-rc2 full build passed (9,567 jobs); actual axiom audit passed for all 3,912 theorem/lemma declarations, with only propext, Classical.choice and Quot.sound. All 1,627 distinct ledger/finding declarations were directly checked. All 138 source manifest entries and 167 result records remain intact. Ubuntu available space: 17.63 GiB. No new unproved literature input or Paper C port.",
+      "impact": "Both original actual counting branches, their min/capped/affine consequences, the wider interval and the actual shifted quadratic-block application are proved. The literal unqualified exact exponent comparison still needs range wording alignment; T5.1 stays in progress for that reason alone, and coverage remains 56/167.",
+      "validation": "Lean v4.36.0-rc2 full build passed (9,611 jobs); actual axiom audit passed for all 4,042 theorem/lemma declarations using only propext, Classical.choice and Quot.sound. All 1,757 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 result records remain intact. Ubuntu available space: 17.55 GiB. Earlier validated revision retained in validation_history; no new unproved literature input or Paper C port.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "de20445461d4c2ddde4823d870e99b36cfeb414c"
+      "validation_history": [
+        "de20445461d4c2ddde4823d870e99b36cfeb414c"
+      ]
     },
     {
       "id": "P1-MATH-0055",
@@ -2684,7 +2702,7 @@
         "PaperP1.SelectedQuadraticError.source_selected_pair"
       ],
       "proposed_revision": "State the stronger exact square-overlap decomposition for arbitrary disjoint block groupings as the finite resultant lemma. Recover the paired-quadratic quotient used in T5.2 as a special case. The selected-quadratic counting exponent continues to use two-element blocks; this algebraic generalization alone does not extend that exponent to arbitrary blocks. The same finite general-block lemma may include the explicit allocation away from D_A; keep the subsequent quadratic counting argument separate. The selected-block argument can display the explicit 4*log(D_A)/(d/2) error, then absorb it uniformly using d<=c*loglog N and the actual difference height. Fix the pair partition once before enumerating solutions.",
-      "impact": "Closes the exact grouped resultant identity, actual prescribed-divisor allocation/budget and selected-quadratic averaging with explicit uniform resultant error. Uniform shifted quadratic counts and the final selected-block/divisor/dyadic enumeration remain open, so full T5.2 stays in progress and coverage remains 56/167.",
+      "impact": "The exact grouped resultant identity, actual prescribed-divisor allocation/budget and selected-quadratic averaging with explicit uniform error are proved. The subsequent shifted-count checkpoint also closes the uniform quadratic-block count. The final selected-block/divisor/dyadic enumeration remains open, so full T5.2 stays in progress and coverage remains 56/167.",
       "validation": "Lean v4.36.0-rc2 full build passed (9,601 jobs); actual axiom audit passed for all 4,026 theorem/lemma declarations using only propext, Classical.choice and Quot.sound. All 1,741 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 result records remain intact. Ubuntu available space: 17.56 GiB. Earlier validated stages are retained in validation_history. No new unproved literature input or Paper C port.",
       "manuscript_integration": {
         "target_version": "next version after formalization",

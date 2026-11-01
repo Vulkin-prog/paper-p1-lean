@@ -70,5 +70,8 @@ of the actual e' and dyadic kernel ranges. The fixed-kernel conclusion
 was already completed separately. This exponent-selection checkpoint
 does not claim the remaining prescribed-divisor count.
 
+The subsequent [shifted-count checkpoint](SHIFTED_QUADRATIC_COUNT_ALIGNMENT.md)
+closes the actual shifted quadratic count. The final enumeration remains open.
+
 No new unproved literature input, Paper C port, original manuscript-byte
 change or Palomar registration is introduced.

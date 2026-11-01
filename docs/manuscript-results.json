@@ -3271,14 +3271,21 @@
         "PaperP1.PrescribedQuadraticKernelTheorem.admissible_height",
         "PaperP1.PrescribedQuadraticKernelTheorem.eventual_source_comparison",
         "PaperP1.PrescribedQuadraticKernelTheorem.companion_T5_1_counts",
-        "PaperP1.PrescribedQuadraticKernelCount.real_first_branch_count"
+        "PaperP1.PrescribedQuadraticKernelCount.real_first_branch_count",
+        "PaperP1.WideQuadraticKernelRanges.product_bounds",
+        "PaperP1.WideQuadraticKernelRanges.square_part_range",
+        "PaperP1.WideQuadraticKernelRanges.modulus_height",
+        "PaperP1.WideQuadraticSquarePartCount.reciprocal_budget",
+        "PaperP1.WideQuadraticSquarePartCount.second_branch_count",
+        "PaperP1.WideQuadraticKernelCount.three_exponent_bounds",
+        "PaperP1.WideQuadraticKernelCount.uniform_affine_count"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
         "P1-MATH-0053",
         "P1-MATH-0054"
       ],
-      "notes": "All actual count conclusions are proved with one common threshold before h,e,beta and the finite set: the two source branches, their minimum c2, the stronger min(1,c2), and the affine bound. Real kernel endpoints, the q=1 fibre and all derived polynomial heights are included; no squarefreeness assumption on e is needed. The literal unqualified displayed comparison c2<=affine is NOT claimed: the exact algebraic comparison is proved for beta-2delta<=2, and a uniform epsilon-margin comparison for every actual nonempty dyadic family. The source already uses beta<=2+o(1); P1-MATH-0054 specifies this distinction and gives a universally valid capped replacement. Keep the numbered row in progress pending exact manuscript wording alignment, rather than count the unqualified display as proved."
+      "notes": "All actual count conclusions are proved with one common threshold before h,e,beta and the finite set: the two source branches, their minimum c2, the stronger min(1,c2), and the affine bound. Real kernel endpoints, the q=1 fibre and all derived polynomial heights are included; no squarefreeness assumption on e is needed. The literal unqualified displayed comparison c2<=affine is NOT claimed: the exact algebraic comparison is proved for beta-2delta<=2, and a uniform epsilon-margin comparison for every actual nonempty dyadic family. The source already uses beta<=2+o(1); P1-MATH-0054 specifies this distinction and gives a universally valid capped replacement. Keep the numbered row in progress pending exact manuscript wording alignment, rather than count the unqualified display as proved. The actual affine count also holds uniformly on the wider N/2<=n<=3N range, with all new square-part and modulus heights derived. An exact injective shift bridge proves the same affine bound for actual two-factor integer-offset blocks, at fixed polylogarithmic widths."
     },
     {
       "label": "p13:short:split",
@@ -3405,14 +3412,30 @@
         "PaperP1.SelectedQuadraticBudget.exists_selected_pair",
         "PaperP1.SelectedQuadraticError.resultant_error_budget",
         "PaperP1.SelectedQuadraticError.source_fixed_pair_selection",
-        "PaperP1.SelectedQuadraticError.source_selected_pair"
+        "PaperP1.SelectedQuadraticError.source_selected_pair",
+        "PaperP1.WideQuadraticKernelRanges.product_bounds",
+        "PaperP1.WideQuadraticKernelRanges.square_part_range",
+        "PaperP1.WideQuadraticKernelRanges.modulus_height",
+        "PaperP1.WideQuadraticSquarePartCount.reciprocal_budget",
+        "PaperP1.WideQuadraticSquarePartCount.second_branch_count",
+        "PaperP1.WideQuadraticKernelCount.three_exponent_bounds",
+        "PaperP1.WideQuadraticKernelCount.uniform_affine_count",
+        "PaperP1.ShiftedQuadraticValues.shift_pos",
+        "PaperP1.ShiftedQuadraticValues.value_cast",
+        "PaperP1.ShiftedQuadraticValues.shifted_value_add",
+        "PaperP1.ShiftedQuadraticValues.shifted_bounds",
+        "PaperP1.ShiftedQuadraticValues.quadratic_block_eq",
+        "PaperP1.ShiftedQuadraticValues.value_injective_on",
+        "PaperP1.ShiftedQuadraticValues.ordered_pair_representation",
+        "PaperP1.ShiftedQuadraticKernelCount.ordered_pair_count",
+        "PaperP1.ShiftedQuadraticKernelCount.two_factor_count"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
         "P1-MATH-0055",
         "P1-MATH-0056"
       ],
-      "notes": "The full fixed-kernel bound is proved for arbitrary degrees >=2 and fixed polylogarithmic widths (P1-MATH-0055). All finite grouped-kernel/resultant, prescribed-divisor removal/allocation and actual divisor-budget ingredients are proved (P1-MATH-0056). Actual pair partitions of even finite sets are now constructed, with card(P)=d/2. A selected block is proved to have log(kernel_B)-2log(e_B) <=(log(q)-2log(e)+4log(D_A))/(d/2). The actual resultant error is absorbed uniformly at growing degree. A separate theorem has one threshold before every prescribed fixed pair partition and varying n,e,A,W; no new partition choice is charged per solution. The remaining prescribed-divisor conclusion still needs uniform shifted quadratic counts and the final selected-block/divisor/dyadic enumeration. Full T5.2 is not claimed."
+      "notes": "The full fixed-kernel bound is proved for arbitrary degrees >=2 and fixed polylogarithmic widths (P1-MATH-0055). All finite grouped-kernel/resultant, prescribed-divisor removal/allocation and actual divisor-budget ingredients are proved (P1-MATH-0056). Actual pair partitions of even finite sets are now constructed, with card(P)=d/2. A selected block is proved to have log(kernel_B)-2log(e_B) <=(log(q)-2log(e)+4log(D_A))/(d/2). The actual resultant error is absorbed uniformly at growing degree. A separate theorem has one threshold before every prescribed fixed pair partition and varying n,e,A,W; no new partition choice is charged per solution. The uniform shifted quadratic count is now proved for every actual two-element integer-offset block, using an injective map into the wider interval. Only the final selected-block/divisor/dyadic enumeration remains for the prescribed-divisor conclusion. Full T5.2 is not claimed."
     },
     {
       "label": "p13:half:small-kernels",
