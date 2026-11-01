@@ -961,3 +961,31 @@ is introduced. Ubuntu root free space is 17.98 GiB.
 Validated complete article 13.7 and P1-MATH-0042 (9,311 build jobs;
 3,349 audited declarations; 1,064 directly checked coverage/finding names):
 [0b7945eff438d61604f6a3aea0bc33f7263372e9](https://github.com/Vulkin-prog/paper-p1-lean/commit/0b7945eff438d61604f6a3aea0bc33f7263372e9).
+
+## Finite channel computation — selection counts, placements and closed sums
+
+The unnumbered finite calculation preceding article 3.3 is complete.
+`ChannelSelectionCount` constructs an explicit equivalence between actual
+binary even selections with prescribed extremes and the interior zero-sum
+space, proving the exact A_d weights. `ChannelPlacements` proves the
+literal within-window placement count and predecessor-signed sum, retaining
+signed contact -1 at diameter L. Their pair products are exactly U and S.
+
+`ChannelSumIdentity` proves all three weighted moments, their positive
+interval indexing, the closed algebraic identity for arbitrary integer
+shift s, Euclidean specialization, empty sums and both exact leading
+signed formulas. Positivity, coprimality and the remainder range are
+unnecessary for the generic algebraic identity. P1-MATH-0043 records this
+generality and explicit counting interpretation; there are 43 confirmed
+improvements. See the [finite alignment](FINITE_CHANNEL_SUMS_ALIGNMENT.md).
+
+Coverage remains **52 / 167**. Article 3.3 and companion T2.5 are in
+progress: actual source translation counts, exceptional normalization
+costs, full pair mass and asymptotic equivalents are not supplied by these
+finite identities. The full build passed (9,317 jobs); all 3,375
+theorem/lemma declarations passed the actual axiom audit, and all 1,090
+coverage/finding names were checked directly by Lean. Only propext,
+Classical.choice and Quot.sound occur. All original source bytes are
+preserved. No external mathematical input, Paper C port, manuscript
+revision or Palomar registration is introduced. Ubuntu root free space
+is 17.98 GiB.

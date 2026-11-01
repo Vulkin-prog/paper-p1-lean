@@ -999,3 +999,14 @@ half bound and exact height-one contact case require no new external
 input. Short-basis, norm-polynomial and curve-counting results are not
 premises of this known-alignment conclusion. Their nonaligned uses remain
 separate unfinished work. See the [alignment](KNOWN_ALIGNMENT_RANK_ALIGNMENT.md).
+
+## Finite channel selection and placement identities
+
+The A_d cardinalities, actual within-window signed placements, weighted
+moments, arbitrary-integer-shift identity and exact leading-channel sums
+are proved by finite binary linear algebra, finite sums and polynomial
+identities. No literature proposition or external arithmetic estimate is
+assumed. These finite calculations do not supply the source-host, mass
+or asymptotic error estimates of article 3.3 and companion T2.5. Both
+numbered statements remain in progress. See the
+[finite alignment](FINITE_CHANNEL_SUMS_ALIGNMENT.md).

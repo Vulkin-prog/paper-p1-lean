@@ -1754,3 +1754,35 @@ or Palomar registration is made.
 Validated complete article 13.7 and P1-MATH-0042 (9,311 build jobs;
 3,349 audited declarations; 1,064 directly checked coverage/finding names):
 [0b7945eff438d61604f6a3aea0bc33f7263372e9](https://github.com/Vulkin-prog/paper-p1-lean/commit/0b7945eff438d61604f6a3aea0bc33f7263372e9).
+
+## P1-MATH-0043 — Exact channel selections and arbitrary integer shifts
+
+- Context: unnumbered calculation before article Theorem 3.3, page 16,
+  equation `p1:arith:channelidentity`, `main_sections/arithmetic.tex:139`.
+  The numbered source statement hash is
+  `2129f1e0418039211e95fa065f6ae434fe46849de797ea291acb0e08da94b412`.
+- Generality: the closed finite formula holds for every integer shift s
+  and arbitrary integer coefficients L,a,b,r with L=b*m+r and m>=1.
+  The original s=-1 and s=1 cases are specializations. No coprimality,
+  positivity or Euclidean remainder restriction is needed for this algebra.
+- Counting interpretation: an explicit equivalence with the interior
+  zero-sum space proves the actual endpoint-selected even-selection count.
+  Literal placements have count L+1-D and signed sum L-1-D for D<=L.
+  Contact at D=L contributes -1, and larger diameters have no placements.
+  The resulting pair products equal the actual finite U/S definitions.
+- Evidence: `ChannelSelectionCount.endpoint_card`, `weight_eq_endpoint_card`,
+  `ChannelPlacements.exact_contact`, `unsigned_pair_sum_eq`,
+  `signed_pair_sum_eq`, `ChannelSumIdentity.moments`, `channel_identity`,
+  `euclidean_identity`, `signed_two_three` and `signed_three_four`.
+- Suggested revision: state the arbitrary-shift algebraic identity once,
+  give the precise selection/placement interpretation, and keep m=0 as
+  an explicit empty-sum boundary. Every finite lower-order term remains.
+
+This is preparatory to article 3.3 and companion T2.5. Neither numbered
+arithmetic profile/mass statement is counted complete. Their translation
+counts, exceptional hosts, asymptotic estimates and phase equivalents
+remain open. Coverage stays 52/167, with 43 confirmed improvements.
+The full build passed (9,317 jobs), all 3,375 theorem/lemma declarations
+passed the actual axiom audit, and all 1,090 coverage/finding names were
+checked directly. Only propext, Classical.choice and Quot.sound occur.
+No manuscript revision or Palomar registration is made.

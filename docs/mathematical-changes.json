@@ -1646,6 +1646,58 @@
         "status": "not_integrated"
       },
       "validation_commit": "0b7945eff438d61604f6a3aea0bc33f7263372e9"
+    },
+    {
+      "id": "P1-MATH-0043",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "main",
+        "label": "p1:arith:pairs",
+        "number": "3.3",
+        "page": 16,
+        "source": "main_sections/arithmetic.tex",
+        "line": 162,
+        "version": "P1 V1.6",
+        "statement_sha256": "2129f1e0418039211e95fa065f6ae434fe46849de797ea291acb0e08da94b412"
+      },
+      "original_assumption": "The finite channel computation preceding Theorem 3.3, equation p1:arith:channelidentity at main_sections/arithmetic.tex:139, is stated only for shifts s=-1 or 1 and channel coefficients. The counting interpretation and predecessor sign are given in prose.",
+      "finding": "The closed finite channel identity holds for every integer shift s and arbitrary integer L,a,b,r with L=b*m+r and m>=1; no positivity, coprimality or remainder bounds are needed for the algebra. The three weighted moments are proved by induction. The weight A_d is exactly the cardinality of binary even selections with prescribed selected extremes, proved through an explicit equivalence with the interior zero-sum space. Literal placement sets have cardinality L+1-D and signed sum L-1-D when D<=L, and are empty beyond the window. The contact signed value is -1. Their pair products give the original U/S sums. The empty m=0 case and both leading-channel signed formulas are proved separately.",
+      "evidence": [
+        "PaperP1.ChannelSumIdentity.weight_one",
+        "PaperP1.ChannelSumIdentity.weight_succ",
+        "PaperP1.ChannelSumIdentity.moment_succ",
+        "PaperP1.ChannelSumIdentity.moments",
+        "PaperP1.ChannelSumIdentity.sum_moments",
+        "PaperP1.ChannelSumIdentity.channel_identity",
+        "PaperP1.ChannelSumIdentity.empty_sum",
+        "PaperP1.ChannelSumIdentity.positive_interval_sum",
+        "PaperP1.ChannelSumIdentity.channel_sum_interval",
+        "PaperP1.ChannelSumIdentity.euclidean_identity",
+        "PaperP1.ChannelSumIdentity.unsigned_empty",
+        "PaperP1.ChannelSumIdentity.signed_empty",
+        "PaperP1.ChannelSumIdentity.signed_two_three",
+        "PaperP1.ChannelSumIdentity.signed_three_four",
+        "PaperP1.ChannelSelectionCount.extend_sum",
+        "PaperP1.ChannelSelectionCount.extend_restrict",
+        "PaperP1.ChannelSelectionCount.endpoint_card",
+        "PaperP1.ChannelSelectionCount.weight_eq_endpoint_card",
+        "PaperP1.ChannelPlacements.placement_card",
+        "PaperP1.ChannelPlacements.placements_empty",
+        "PaperP1.ChannelPlacements.signed_placements",
+        "PaperP1.ChannelPlacements.signed_placements_empty",
+        "PaperP1.ChannelPlacements.exact_contact",
+        "PaperP1.ChannelPlacements.diameters_fit",
+        "PaperP1.ChannelPlacements.unsigned_pair_sum_eq",
+        "PaperP1.ChannelPlacements.signed_pair_sum_eq"
+      ],
+      "proposed_revision": "State the algebraic identity for arbitrary integer shift s, with the signed and unsigned sums as s=-1 and s=1 specializations. Include the exact endpoint-selection count, the literal predecessor-sign placement sum and its negative contact value. Retain m=0 as an explicit empty-sum case.",
+      "impact": "Makes the finite channel calculation independent of the later arithmetic host/mass estimates and clarifies its generality and boundary terms. This is preparatory work for article 3.3 and companion T2.5, which remain in_progress. It does not establish their source-host counts, error estimates, asymptotic phases or total pair profile.",
+      "validation": "Full Lean v4.36.0-rc2 build (9317 jobs), actual axiom audit of all 3375 theorem/lemma declarations, and direct Lean checks of all 1090 distinct coverage/finding names. Only propext, Classical.choice and Quot.sound occur. Actual endpoint-selection cardinalities, literal placement/sign sums, all weighted moments, arbitrary integer shifts, empty sums and exact leading-channel formulas are included. Article 3.3 and companion T2.5 remain in_progress; coverage stays 52/167.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

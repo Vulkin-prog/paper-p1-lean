@@ -21,6 +21,10 @@ This coefficient computation does not assert optimality of rank or Palm bounds.
 Article Proposition 13.7 is proved from the uniform residual, including
 the exact height-one contact case. The same bounds hold for full pair
 deficiency, retaining local defects. See the [alignment note](docs/KNOWN_ALIGNMENT_RANK_ALIGNMENT.md).
+The finite channel sums now have checked even-selection counts,
+predecessor-signed placements and both exact leading-channel formulas.
+The full pair profile and fixed-channel mass remain in progress. See the
+[finite calculation](docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,
 with deduplicated normalized values, an explicit finite rank bound and at
 most (L+1)^2 one-parameter motifs. See

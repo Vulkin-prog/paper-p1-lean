@@ -311,3 +311,6 @@ public import PaperP1.Asymptotics.TargetQuotientRank
 public import PaperP1.Asymptotics.AlignedTargetRank
 public import PaperP1.Asymptotics.AlignedTargetSourceTheorem
 public import PaperP1.Asymptotics.KnownAlignmentRank
+public import PaperP1.Arithmetic.ChannelSumIdentity
+public import PaperP1.Arithmetic.ChannelSelectionCount
+public import PaperP1.Arithmetic.ChannelPlacements
