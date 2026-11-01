@@ -128,3 +128,8 @@ directly by Lean. Original manuscript bytes are unchanged.
 Validated elementary bidegree-one elimination checkpoint (9,499 build
 jobs; 3,720 audited declarations; 1,435 directly checked coverage/finding names):
 [bc9f8dc072a9efe82022b91f1a5261debfd49529](https://github.com/Vulkin-prog/paper-p1-lean/commit/bc9f8dc072a9efe82022b91f1a5261debfd49529).
+
+The later [bilinear checkpoint](BILINEAR_AUXILIARY_ALIGNMENT.md)
+closes both elementary orientations and the actual minimum-height
+bound for the irreducible (1,1) auxiliary case. The earlier
+complementary-bound limitation remains for other auxiliary bidegrees.

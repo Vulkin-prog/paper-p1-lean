@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3753 audited theorem/lemma declarations**. This
+- The project currently has **3772 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1554,3 +1554,22 @@ occur; original manuscript bytes are unchanged.
 Validated projective nondegeneracy checkpoint (9,509 build jobs;
 3,753 audited declarations; 1,468 directly checked names):
 [f8cc5d409f099f7440d9346f576605130073bc21](https://github.com/Vulkin-prog/paper-p1-lean/commit/f8cc5d409f099f7440d9346f576605130073bc21).
+
+## Both elementary orientations for a (1,1) auxiliary factor
+
+Exact binary expansions construct the transposed original coefficient
+array. The variable-group polynomial-ring equivalence preserves the
+actual bilinear auxiliary factor and its irreducibility. The actual
+primitive real-box solution sets are bijective after exchanging pairs.
+Two elementary counts therefore prove N^epsilon*min(A,H), with one
+threshold before all forms, original coefficients, nonzero shifts and
+real A,H>=1. This closes the irreducible (1,1) local case and extends
+P1-MATH-0049; coverage remains 54/167, with 50 confirmed improvements.
+The complementary curve bound is still open for other auxiliary
+bidegrees, as is the full determinant/lattice argument. See
+[alignment](BILINEAR_AUXILIARY_ALIGNMENT.md).
+
+The full build passed (9,515 jobs), the actual axiom audit passed for
+all 3,772 declarations, and Lean checked all 1,487 distinct
+coverage/finding names. Only propext, Classical.choice and Quot.sound
+occur; original manuscript bytes are unchanged.

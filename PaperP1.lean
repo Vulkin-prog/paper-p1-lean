@@ -391,3 +391,6 @@ public import PaperP1.Diophantine.SingleResultantFibreCount
 public import PaperP1.Diophantine.ProjectiveResultants
 public import PaperP1.Diophantine.HomogeneousCharts
 public import PaperP1.Diophantine.ProjectiveCurveCount
+public import PaperP1.Diophantine.BihomogeneousSwap
+public import PaperP1.Diophantine.BilinearAuxiliary
+public import PaperP1.Diophantine.BilinearCurveCount

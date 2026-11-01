@@ -1877,7 +1877,26 @@
         "PaperP1.ProjectiveCurveCount.realSolutions_eq_charts",
         "PaperP1.ProjectiveCurveCount.mem_realSolutions",
         "PaperP1.ProjectiveCurveCount.homogeneous_relprime_count",
-        "PaperP1.ProjectiveCurveCount.irreducible_auxiliary_count"
+        "PaperP1.ProjectiveCurveCount.irreducible_auxiliary_count",
+        "PaperP1.BihomogeneousSwap.binary_expansion",
+        "PaperP1.BihomogeneousSwap.eval_binary_expansion",
+        "PaperP1.BihomogeneousSwap.coefficients_homogeneous",
+        "PaperP1.BihomogeneousSwap.eval_coefficients",
+        "PaperP1.BihomogeneousSwap.original_swap",
+        "PaperP1.BilinearAuxiliary.form_homogeneous",
+        "PaperP1.BilinearAuxiliary.eval_form",
+        "PaperP1.BilinearAuxiliary.form_map",
+        "PaperP1.BilinearAuxiliary.homogeneous_linear_form",
+        "PaperP1.BilinearAuxiliary.auxiliary_transpose",
+        "PaperP1.BilinearAuxiliary.irreducible_transpose",
+        "PaperP1.BilinearAuxiliary.form_coeff_left",
+        "PaperP1.BilinearAuxiliary.form_coeff_right",
+        "PaperP1.BilinearAuxiliary.form_coefficient_bound",
+        "PaperP1.BilinearAuxiliary.good_swap",
+        "PaperP1.BilinearCurveCount.solutions_swap",
+        "PaperP1.BilinearCurveCount.solutions_swap_card",
+        "PaperP1.BilinearCurveCount.actual_minimum_height_count",
+        "PaperP1.BilinearCurveCount.actual_homogeneous_minimum_height_count"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
@@ -1885,7 +1904,7 @@
         "P1-MATH-0049",
         "P1-MATH-0050"
       ],
-      "notes": "Preparatory components only. The actual bidegree-one elementary elimination bound in the remaining pair height now uses literal homogeneous auxiliary forms: irreducibility over Q implies common-factor coprimality, which proves univariate coprimality and full padded degree including the point at infinity. A single homogeneous resultant controls the signed primitive scale. Exact dehomogenization preserves degree and coefficient height. The complementary Heath-Brown bound in the eliminated pair height, source determinant/lattice auxiliary extraction and height control, other curve cases and short-vector sums remain open; full T1.4 is not claimed."
+      "notes": "Preparatory components only. The actual bidegree-one elementary elimination bound in the remaining pair height now uses literal homogeneous auxiliary forms: irreducibility over Q implies common-factor coprimality, which proves univariate coprimality and full padded degree including the point at infinity. A single homogeneous resultant controls the signed primitive scale. Exact dehomogenization preserves degree and coefficient height. The complementary Heath-Brown bound in the eliminated pair height, source determinant/lattice auxiliary extraction and height control, other curve cases and short-vector sums remain open; full T1.4 is not claimed. The irreducible auxiliary bidegree (1,1) case now has both elementary orientations and the actual N^epsilon*min(A,H) real-box count, by exact bihomogeneous transposition; no complementary curve theorem is needed for this particular local case."
     },
     {
       "label": "p1:arith:twokernel",

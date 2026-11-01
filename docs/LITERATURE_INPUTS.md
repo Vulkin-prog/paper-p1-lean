@@ -1268,3 +1268,15 @@ requires no separately assumed resultant condition. No new unproved
 literature input or Paper C port is introduced; the determinant/lattice
 construction and complementary curve bound remain open. See
 [alignment](PROJECTIVE_NONDEGENERACY_ALIGNMENT.md).
+
+## Exact bihomogeneous transposition and the bilinear auxiliary case
+
+Stable ID: `P1-ALG-BILINEAR-MINIMUM-HEIGHT`. Status: **proved local case**.
+
+Exact homogeneous coefficient expansions transpose the original
+equation. The polynomial-ring variable exchange preserves the actual
+(1,1) auxiliary factor and irreducibility. A proved primitive-point
+bijection allows both elementary counts and gives the actual
+N^epsilon*min(A,H) bound. No new unproved literature input or Paper C
+port is introduced; the complementary curve estimate is still needed
+for other bidegrees. See [alignment](BILINEAR_AUXILIARY_ALIGNMENT.md).
