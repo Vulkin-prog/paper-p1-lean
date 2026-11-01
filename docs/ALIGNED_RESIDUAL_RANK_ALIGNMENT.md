@@ -1,133 +1,112 @@
-# Partial companion T1.9 — the actual one-unit subcase
+# Companion T1.9 — full enlarged geometric alignment
 
 Source: companion T1.9, page 14, `p1:arith:alignedrank`,
 `companion_sections/arithmetic_appendix.tex:770`, statement hash
 `7de9608ecc780ef5a448579b04b2ebeabe5e1157579ce3025b0303a047157acc`.
-The one-unit subcase is **proved**. The manuscript uses an enlarged
-geometric alignment which also permits zero exact units; that case is
-unfinished. T1.9 is **in progress**, not counted complete. See the
-[scope audit](FORMALIZATION_SCOPE_AUDIT.md). Original source bytes are unchanged.
+The full statement is proved, including zero exact units and both
+coefficient orientations. Original source bytes are unchanged. The
+[scope audit](FORMALIZATION_SCOPE_AUDIT.md) retains the initial one-unit
+coverage mistake and its subsequent closure.
 
-## Actual finite value kernel
+## Literal geometric hypothesis
 
-`FiniteResidualRank.valueKernel S` is the kernel of the full prime-parity
-map on the deduplicated finite set S. This is an actual linear map on
-actual integers, with every prime coordinate retained.
+`EnlargedPairGeometry.Geometric a b x y L` means exactly
 
-For a true subset S of the union of a*[Ux,Ux+Rx] and b*[Uy,Uy+Ry],
-omit P={primes <=H} union primeFactors(a*b), where H>=Rx,Ry. Every
-remaining prime row meets at most two distinct values. The graph and
-pins are built from those literal row supports. Each free component
-has a nonempty value set, and distinct component value sets are disjoint.
-The prime-parity sum of one free component vanishes outside P.
+    |b*x-a*y| <= (a+b)*B,   B=L+1.
 
-For a positive integer component cutoff K and coding radius t>=1,
-write r=|P|. If S lies in [U,U+R], R>=1, 2R<=U and
+For positive a<=b, the actual deduplicated union U=bV_x union aV_y
+lies in [b*x-3*b*B,b*x+3*b*B]. Its cardinality is at most 2B. With
+b<=B^3, the radius is at most 3B^4. At a uniform critical-band threshold,
+the interval base is at least N/2 and is at least twice its width.
+Its logarithm is bounded below by a positive multiple of B, and the
+logarithm of 64 times the width is at most 13 log B. These bounds use
+only the literal geometric inequality, including when u=0.
 
-    (64R)^(2Kt) < U,
+## Actual residual, Runge, coding and prime rows
 
-then `TwoProgressionResidualRank.finite_rank_bound` proves
+`FiniteResidualRank.valueKernel U` is the full prime-parity kernel on
+the actual distinct normalized integers. Omit exactly primes <=B and
+prime factors of ab. Every remaining prime row meets at most two
+vertices. Its graph and pins come from the actual row supports.
+
+For a true subset S of two dilated intervals, r omitted primes,
+component cutoff K and coding radius t>=1, the finite estimate is
 
     rank(valueKernel S)
-      < max(r+1, 2t*2^((r+1)/t+1)) + |S|/(K+1).
+      < max(r+1, 2t*2^((r+1)/t+1)) + |S|/(K+1),
 
-Both quotients on this finite right side are natural-number quotients.
-The inequality holds for the true subset; an enclosing interval is used
-only to bound the size of the actual distinct integers.
+provided S lies in [U,U+R], R>=1, 2R<=U and (64R)^(2Kt)<U.
+The displayed quotients are natural-number quotients. Component value
+sets are nonempty and disjoint. The appended parity row is component
+size modulo two. A nonzero kernel word selects an actual nonempty even
+square product. The proved degree-uniform Runge bound excludes short
+words; the finite Hamming estimate bounds small components, while a
+large component uses at least K+1 vertices. The literal prime budget is
+O(B/log B), proved from the elementary prime-count and factor bounds.
+Choosing K before the threshold gives the uniform residual o(B).
 
-## Checked Runge--code--graph chain
+`EnlargedAlignedResidual.row_rank_sublinear` controls the whole actual
+remaining-row solution space. `full_rank_sublinear` bounds its full
+value-kernel subspace. Neither result assumes an exact unit.
 
-1. A binary coefficient word selects the union of its actual component
-   value sets. Disjointness gives the exact prime-parity and total-parity
-   equations. The appended row is the **component size modulo two**,
-   rather than an unjustified constant one.
-2. A nonzero kernel word selects a nonempty even set with square product.
-   The proved degree-uniform Runge lemma excludes at most 2Kt selected
-   values. Since each component has at most K values, its coefficient
-   weight exceeds 2t.
-3. The exact finite Hamming bound controls the number of small free
-   components. A component larger than K uses at least K+1 values,
-   giving the literal |S|/(K+1) budget for all large components.
-4. The full actual value kernel embeds in the graph solution space.
-   No residual-rank estimate is a premise of the proof.
+## Zero units and actual pair deficiency
 
-`PrimeFactorBudget` proves 2^omega(n)<=n and the logarithmic prime-factor
-bound. Polynomial-height coefficients therefore add a negligible number
-of omitted rows. The small-prime budget is discharged by the already
-proved elementary prime-count bound; no literature estimate is assumed.
+`NormalizedPairRankLoss.pairLoss x y L` is 2L-rank(S_x+S_y), including
+internal local deficiencies. It dominates the actual intersection rank.
+When u>0, an actual common value gives the usual common-anchor argument.
+When u=0, the full span of the normalized union has dimension at most
+two plus the sum of its two even spaces. The rank-nullity identity on
+the literal union then proves pairLoss<=rank(valueKernel U).
 
-## Uniform normalized-pair result
+The all-case finite lemma `loss_le_units_add_residual_all` therefore gives
 
-The critical-band threshold is chosen before all source positions and
-all positive a<=b<=(L+1)^3. One actual equality
+    pairLoss <= (u-1)_+ + rank(valueKernel U).
 
-    b*label_x(i) = a*label_y(j)
+The exact channel count also covers u=0. Applying it in the orientation
+with the larger coefficient second, then swapping back, yields
 
-puts the deduplicated normalized union in an interval of width 2bL,
-with base at least N/2 for all sufficiently large N. Its cardinality is
-at most 2B, where B=L+1. Thus `NormalizedPairResidual.rank_sublinear`
-proves its actual full value kernel is uniformly o(B).
+    pairLoss <= (u-1)_+ + epsilon*B,
+    pairLoss <= L/max(a,b) + epsilon*B,
+    actualIntersectionRank <= L/max(a,b) + epsilon*B.
 
-`NormalizedPairRankLoss.loss_le_units_add_residual` bounds the full
-pair deficiency 2L-rank(S_x+S_y) by (u-1)+rank(valueKernel U), where
-u is the actual number of exact units. This deficiency includes internal
-local rank defects and dominates the actual intersection rank. For
-coprime a,b, the exact unit count then gives, uniformly,
-
-    pairLoss <= (u-1)+epsilon*B,
-    pairLoss <= L/b+epsilon*B.
-
-These are `AlignedPairRank.units_residual_bound`, `channel_bound` and
-`actual_intersection_bound`. The common threshold depends on the fixed
-critical-band width and positive epsilon. Separation, affine compatibility
-and local regularity are unnecessary. One exact unit suffices. These
-weakened hypotheses and explicit finite bounds are P1-MATH-0039.
+`EnlargedAlignedPairTheorem.uniform_bounds` chooses a common threshold
+before every positive coprime pair a,b with max(a,b)<=B^3 and every
+actual source pair. Separation, compatibility and local regularity are
+unnecessary. This stronger conclusion extends P1-MATH-0039.
 
 ## Fixed height and enlarged prime cutoff
 
-`IntervalResidualKernel.largeKernel S H` imposes exactly the prime-parity
-constraints above H; its membership equivalence is proved. If the true
-value set S lies in [U,U+R] with R<=H, a nondefective value has a prime
-above H which is private in that interval. Thus every kernel coefficient
-at such a value is zero. Restriction to the actual defective values is
-injective, giving the finite bound
+`IntervalResidualKernel.largeKernel S H` imposes exactly all prime-parity
+constraints above H. If S lies in [U,U+R] with R<=H, every nondefective
+value has a private prime above H, so its kernel coefficient is zero.
+Restriction to the actual defective values is injective and the rank is
+at most card(defectsInInterval H U R).
 
-    rank(largeKernel S H) <= card(defectsInInterval H U R).
+At fixed height bound Q, the enlarged-alignment interval has width
+6*max(a,b)*B<=6QB, with N/2<=U<=2QN eventually. For every fixed D>=0,
+`EnlargedAlignedPairTheorem.fixed_height_residual` chooses K>0 before
+the critical-band width C, then one threshold before all source pairs
+and all cutoffs satisfying
 
-For fixed height bound Q, the normalized pair has R=2bL<=2QB and
-N/2<=U<=3QN. `FixedHeightResidual.large_kernel_rate` applies the already
-proved local defect count. For every fixed D>=0 it yields a constant
-K>0 **before** the critical-band width C, with one common threshold for
-all source pairs and all integer cutoffs satisfying
+    6*max(a,b)*B <= H <= D*B.
 
-    2bL <= H <= D*B.
+The actual large-prime kernel is <=K*B/log B. In particular H=6QB is
+admissible. The full kernel embeds in it, giving the full-kernel rate
+and `fixed_height_loss` with (u-1)_++K*B/log B. Both orientations and
+zero units are included. `companion_T1_9` packages the full uniform and
+fixed-height assertions as literal quantified statements on actual maps.
 
-The actual large-prime value kernel is <=K*B/log B. In particular H=2QB
-is an admissible fixed enlarged cutoff. The full value kernel embeds in
-it. `full_kernel_rate` and `AlignedPairTheorem.fixed_height_loss` give
-the corresponding full-kernel and (u-1)+K*B/log B pair-deficiency bounds.
+## Preserved narrower proofs and remaining work
 
-`AlignedPairTheorem.one_unit_T1_9` packages the one-unit assertions and
-this enlarged-cutoff fixed-height assertion. `UniformConclusion` and
-`FixedConclusion` are the literal quantified statements on the actual
-maps, not hypotheses for missing estimates. This does not yet complete the enlarged-alignment source statement.
-Separation, compatibility and local regularity are unnecessary throughout.
+The earlier `AlignedPairTheorem.one_unit_T1_9` remains valid with its
+explicit one-unit premise and its smaller cutoff 2bL. Its uniform
+checkpoint is df34686b343f5297c181e6150e21834acc335ad8; its fixed-height
+checkpoint is 6165382c14d6f8e653ddec27accb9c042628ae10. These checkpoints
+alone did not cover the full enlarged-alignment source statement.
 
-## Remaining work beyond T1.9
-
-For T1.11 and T2.6, the generic residual arithmetic on true subsets of
-two progressions is proved. The [later dyadic checkpoint](DYADIC_MATCHING_ALIGNMENT.md)
-closes explicit endpoint and target counts for bounded affine data. The
-construction of those data from geometric alignment remains open. The
-finite [target quotient-rank bridge](TARGET_QUOTIENT_RANK_ALIGNMENT.md),
-including old prime information, is now proved; its combined target-union
-asymptotic application remains open.
-Those two statements remain in progress. No new Paper C port, external
-mathematical assumption, manuscript revision or Palomar registration
-is introduced.
-
-Initial uniform residual checkpoint and P1-MATH-0039:
-[df34686b343f5297c181e6150e21834acc335ad8](https://github.com/Vulkin-prog/paper-p1-lean/commit/df34686b343f5297c181e6150e21834acc335ad8).
-
-Validated complete companion T1.9:
-[6165382c14d6f8e653ddec27accb9c042628ae10](https://github.com/Vulkin-prog/paper-p1-lean/commit/6165382c14d6f8e653ddec27accb9c042628ae10).
+T1.11 and T2.6 remain in progress. Their [bounded-affine dyadic core](DYADIC_MATCHING_ALIGNMENT.md)
+and [finite target quotient-rank bridge](TARGET_QUOTIENT_RANK_ALIGNMENT.md)
+are proved. The actual combined target-union asymptotic and construction
+of bounded affine data from literal geometric alignment remain open.
+No new Paper C port, external mathematical assumption, manuscript revision
+or Palomar registration is introduced.

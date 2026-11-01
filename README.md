@@ -4,11 +4,12 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 48 / 167 numbered results proved.**
-The one-unit subcase of companion T1.9 is proved, including the
-fixed-height enlarged-prime rate. The enlarged geometric alignment also
-permits zero units; that case remains open. The coverage mapping has
-been corrected. See [scope audit](docs/FORMALIZATION_SCOPE_AUDIT.md).
+**Status: active formalization, 49 / 167 numbered results proved.**
+Companion T1.9 now covers the full enlarged geometric alignment, including
+zero exact units and both orientations, with its fixed-height enlarged-prime
+rate. The earlier one-unit coverage error and its subsequent closure are
+retained in the [scope audit](docs/FORMALIZATION_SCOPE_AUDIT.md).
+See the [complete alignment](docs/ALIGNED_RESIDUAL_RANK_ALIGNMENT.md).
 The coefficient part of T2.6 is checked, including exact leading-channel
 values and attainment of the universal 2/3 bound in channel 8:9. Its
 aligned-target rank estimate remains open. See

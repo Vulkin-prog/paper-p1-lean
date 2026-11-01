@@ -1504,7 +1504,10 @@ Validated uniform residual checkpoint for T1.9 and P1-MATH-0039:
 [df34686b343f5297c181e6150e21834acc335ad8](https://github.com/Vulkin-prog/paper-p1-lean/commit/df34686b343f5297c181e6150e21834acc335ad8).
 
 
-## Completion of companion T1.9
+## Historical one-unit checkpoint for T1.9
+
+The complete-source mapping recorded at this historical checkpoint was
+later corrected; see the scope audit and full enlarged-alignment closure below.
 
 The fixed-height assertion is now closed, in addition to the uniform
 part validated with P1-MATH-0039. The exact large-prime value kernel is
@@ -1638,3 +1641,34 @@ geometry are closed. This is a correction to the formalization ledger,
 not a new mathematical finding about the manuscript. P1-MATH-0039
 continues to record the valid one-unit subcase with its literal scope.
 See [scope audit](FORMALIZATION_SCOPE_AUDIT.md).
+
+## P1-MATH-0039 extended — full enlarged alignment, including zero units
+
+The original source uses |b*x-a*y|<=(a+b)B and permits u=0. That literal
+condition now replaces the earlier extra one-unit premise. In the
+orientation a<=b, the true normalized union lies within radius 3bB
+of b*x. The resulting Runge--Hamming--graph estimate bounds the full
+residual uniformly over all heights max(a,b)<=B^3.
+
+For u=0, the full span has dimension at most the sum of its two even
+spaces plus two. Rank-nullity on the actual disjoint union gives
+pairLoss<=rank(valueKernel). Together with the one-unit argument this
+proves pairLoss<=(u-1)_++residual for every unit count. Both orientations
+are handled explicitly, giving the L/max(a,b)+o(B) bound and the actual
+intersection-rank bound. Separation and compatibility are unnecessary.
+
+At fixed height Q, every enlarged cutoff
+6*max(a,b)*B<=H<=D*B has actual large-prime kernel rank <=K*B/log B,
+with K chosen before the critical-band width. The full-kernel and pair
+loss versions follow. Evidence includes `EnlargedPairGeometry`,
+`NormalizedPairRankLoss.loss_le_units_add_residual_all`,
+`EnlargedAlignedResidual`, `EnlargedFixedHeightResidual` and
+`EnlargedAlignedPairTheorem.companion_T1_9`.
+
+This extends the existing improvement P1-MATH-0039, without counting the
+coverage correction as a new manuscript finding. Coverage is now 49/167,
+with 41 confirmed improvements. The full build passed (9,295 jobs), all
+3,319 theorem/lemma declarations passed the actual axiom audit, and all
+1,034 coverage/finding declaration names were checked directly. Only
+propext, Classical.choice and Quot.sound occur. Original sources remain
+unchanged; no manuscript revision or Palomar registration is made.

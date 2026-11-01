@@ -51,6 +51,11 @@ theorem rank_le_card (f : V → E) (S : Finset V) : Module.finrank K (span (K :=
   have h := rank_add_kernel (K := K) f S
   omega
 
+theorem span_mono (f : V → E) {S T : Finset V} (hST : S ⊆ T) : span (K := K) f S ≤ span (K := K) f T := by
+  apply Submodule.span_le.mpr
+  rintro _ ⟨v, hv, rfl⟩
+  exact Submodule.subset_span ⟨v, hST hv, rfl⟩
+
 variable [DecidableEq V]
 
 theorem span_union (f : V → E) (S T : Finset V) :
@@ -105,5 +110,28 @@ theorem full_union_rank_le_old_even_add_one (f : V → E) (S T : Finset V) :
     subst T
     rw [union_empty, evenSpace_empty, sup_bot_eq]
     omega
+
+theorem full_union_rank_le_two_even_add_two (f : V → E) (S T : Finset V) (hS : S.Nonempty) (hT : T.Nonempty) :
+    Module.finrank K (span (K := K) f (S ∪ T)) ≤
+      Module.finrank K ↥(evenSpace (K := K) f S ⊔ evenSpace (K := K) f T) + 2 := by
+  obtain ⟨s, hs⟩ := hS
+  obtain ⟨t, ht⟩ := hT
+  let J := evenSpace (K := K) f S ⊔ evenSpace (K := K) f T
+  let A := span (K := K) f {s, t}
+  have hSanc : span (K := K) f {s} ≤ A := span_mono (K := K) f (by simp)
+  have hTanc : span (K := K) f {t} ≤ A := span_mono (K := K) f (by simp)
+  have hcover : span (K := K) f (S ∪ T) ≤ J ⊔ A := by
+    rw [span_union]
+    apply sup_le
+    · exact (span_le_even_sup_anchor (K := K) f S s hs).trans (sup_le_sup le_sup_left hSanc)
+    · exact (span_le_even_sup_anchor (K := K) f T t ht).trans (sup_le_sup le_sup_right hTanc)
+  have hmono := Submodule.finrank_mono hcover
+  have hdim := Submodule.finrank_sup_add_finrank_inf_eq J A
+  have hanc := rank_le_card (K := K) f ({s, t} : Finset V)
+  have hcard := card_insert_le s ({t} : Finset V)
+  rw [card_singleton] at hcard
+  change Module.finrank K A ≤ ({s, t} : Finset V).card at hanc
+  change Module.finrank K (span (K := K) f (S ∪ T)) ≤ Module.finrank K J + 2
+  omega
 
 end PaperP1.FiniteSetValueSpan

@@ -45,4 +45,24 @@ theorem uniform_geometry (C : ℝ) (Bmin : ℕ) :
     exact_mod_cast hR
   exact ⟨hNtwo, (le_max_left _ _).trans hlarge, (le_max_right _ _).trans hlarge, hwidth, hBlo, hBhi⟩
 
+theorem log_base_lower {N B U : ℕ} (hN : 4 ≤ N) (hNU : N ≤ 2 * U)
+    (hB : (B : ℝ) ≤ upperScale * Real.log N) :
+    (1 / (2 * upperScale)) * (B : ℝ) ≤ Real.log U := by
+  have hNpos : (0 : ℝ) < N := by exact_mod_cast (show 0 < N by omega)
+  have hhalf : (N : ℝ) / 2 ≤ U := by
+    have h : (N : ℝ) ≤ 2 * U := by exact_mod_cast hNU
+    linarith only [h]
+  have hmono := Real.log_le_log (by positivity : 0 < (N : ℝ) / 2) hhalf
+  rw [Real.log_div hNpos.ne' (by norm_num : (2 : ℝ) ≠ 0)] at hmono
+  have hNfour : (4 : ℝ) ≤ N := by exact_mod_cast hN
+  have hlogfour := Real.log_le_log (by norm_num : 0 < (2 : ℝ) ^ 2)
+    (show (2 : ℝ) ^ 2 ≤ N by convert hNfour using 1; norm_num)
+  rw [Real.log_pow] at hlogfour
+  norm_num only [Nat.cast_ofNat] at hlogfour
+  have hcoef : (1 / (2 * upperScale)) * (B : ℝ) ≤ Real.log N / 2 := by
+    calc
+      _ = (B : ℝ) / (2 * upperScale) := by ring
+      _ ≤ Real.log N / 2 := (div_le_iff₀ (mul_pos (by norm_num) upperScale_pos)).mpr (by nlinarith only [hB])
+  linarith only [hcoef, hmono, hlogfour]
+
 end PaperP1.CriticalWindowGeometry

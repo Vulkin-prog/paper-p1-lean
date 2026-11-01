@@ -298,3 +298,8 @@ public import PaperP1.Arithmetic.MaskedParityRank
 public import PaperP1.Arithmetic.ProjectedOldInformation
 public import PaperP1.Arithmetic.ScaledTargetValues
 public import PaperP1.Arithmetic.TargetWindowRank
+public import PaperP1.Arithmetic.EnlargedPairGeometry
+public import PaperP1.Asymptotics.EnlargedAlignedResidual
+public import PaperP1.Asymptotics.EnlargedAlignedRank
+public import PaperP1.Asymptotics.EnlargedFixedHeightResidual
+public import PaperP1.Asymptotics.EnlargedAlignedPairTheorem

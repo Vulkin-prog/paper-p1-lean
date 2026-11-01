@@ -103,4 +103,10 @@ theorem intersection_card_bound {a b x y L : ℕ} (ha : 0 < a) (hb : 0 < b) (hab
   norm_num only [Rat.cast_natCast, Rat.cast_add, Rat.cast_div, Rat.cast_one] at hR
   exact hR
 
+theorem units_card_swap {a b x y L : ℕ} (ha : 0 < a) (hb : 0 < b)
+    (hx : 0 < x) (hy : 0 < y) :
+    (units a b x y L).card = (units b a y x L).card := by
+  rw [← normalized_intersection_card ha hb hx hy, ← normalized_intersection_card hb ha hy hx,
+    Finset.inter_comm]
+
 end PaperP1.NormalizedUnitCount

@@ -768,7 +768,7 @@ Validated uniform residual checkpoint for T1.9 and P1-MATH-0039:
 [df34686b343f5297c181e6150e21834acc335ad8](https://github.com/Vulkin-prog/paper-p1-lean/commit/df34686b343f5297c181e6150e21834acc335ad8).
 
 
-## Companion T1.9 completed — fixed-height enlarged-prime residual
+## Historical one-unit T1.9 checkpoint — scope corrected below
 
 The last assertion is now proved on the actual large-prime value kernel.
 Every nondefective normalized value has a private prime above the
@@ -864,3 +864,29 @@ to original manuscript bytes or to the Lean proof validity is involved.
 Validated scope correction (full build 9,285 jobs; 3,294 audited declarations;
 1,009 directly checked coverage/finding names):
 [50889df7921f8374971c70d4d33878cc2a9326d4](https://github.com/Vulkin-prog/paper-p1-lean/commit/50889df7921f8374971c70d4d33878cc2a9326d4).
+
+## Full enlarged-alignment T1.9 completed after the scope correction
+
+Current coverage is **49 / 167** (main 16 / 73; companion 33 / 94).
+The literal geometric inequality |b*x-a*y|<=(a+b)B now suffices,
+including zero exact units. The true normalized union lies in an
+explicit interval of radius 3*max(a,b)*B. The uniform residual argument
+applies to it, and a separate finite two-even-space argument handles
+the zero-unit pair deficiency. Both coefficient orientations are covered.
+
+`EnlargedAlignedPairTheorem.companion_T1_9` gives the uniform unit-count
+and channel bounds and the fixed-height enlarged-prime residual.
+`fixed_height_loss` also gives the full pair deficiency at rate B/log B.
+The fixed-height constant is chosen before the critical-band width.
+Separation, compatibility and local regularity are unnecessary; internal
+local defects are retained. This extends P1-MATH-0039; the number of
+confirmed improvements remains 41. The prior one-unit coverage error and
+its validation history remain explicit in the [scope audit](FORMALIZATION_SCOPE_AUDIT.md).
+
+The full Lean v4.36.0-rc2 build passed (9,295 jobs); all 3,319 theorem/lemma
+declarations passed the actual axiom audit with only propext,
+Classical.choice and Quot.sound. All 1,034 coverage/finding names were
+checked directly by Lean. All 138 manifest entries and all 167 source
+statement hashes remain unchanged. No external mathematical input or
+new Paper C port is introduced. T1.11/T2.6 remain in progress. No Palomar
+registration is made. Ubuntu root free space is 18.01 GiB.

@@ -967,3 +967,13 @@ finite rank bridge. The combined target-union geometry and canonical
 bounded affine target construction remain unresolved. No rank estimate
 or external mathematical proposition is assumed. See
 [alignment](TARGET_QUOTIENT_RANK_ALIGNMENT.md).
+
+## Full enlarged-alignment closure of T1.9
+
+The literal enlarged geometric alignment, including zero units and both
+orientations, is now discharged by the existing proved Runge, Hamming,
+prime-count and local-defect estimates. The extra work is explicit
+interval geometry and finite span/rank-nullity algebra. The fixed-height
+constant precedes the critical-band width. No new external mathematical
+hypothesis or Paper C source is used. See the [full alignment](ALIGNED_RESIDUAL_RANK_ALIGNMENT.md)
+and preserved [scope correction](FORMALIZATION_SCOPE_AUDIT.md).
