@@ -239,11 +239,12 @@
         "P1-MATH-0035"
       ],
       "notes": "Preparatory finite channel sums, actual dyadic translations and signed canonical-pattern aggregates are proved, with errors <=6B*U uniformly through reduced height B^3. The private-value unit classification now reaches the actual probability: nonzero even selections of exact units parameterize the actual common classes, and their paired affine characters are precisely (-1) to the sum of the two predecessor parities. The actual private pair covariance is p^2 times this signed unit sum, with each local marginal p=2^-L derived from privacy. Separate local witnesses suffice: joint incompatibility and probability-zero pairs are retained. Remaining: enumerate actual selected-unit words by the canonical patterns, remove defective normalizations, and complete the full mass/profile and phase equivalents. These preparations do not complete either numbered result. See docs/PRIVATE_UNIT_COVARIANCE_ALIGNMENT.md and earlier checkpoints.",
-      "validation_commit": "4461d6bdcc7e19648377fe47703c3bd0d14d21ee",
+      "validation_commit": "c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
         "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df",
-        "88ce8a72b7b579b3b7442de98efd91af4b445764"
+        "88ce8a72b7b579b3b7442de98efd91af4b445764",
+        "4461d6bdcc7e19648377fe47703c3bd0d14d21ee"
       ]
     },
     {
@@ -2367,11 +2368,12 @@
         "P1-MATH-0035"
       ],
       "notes": "Preparatory finite channel sums, actual dyadic translations and signed canonical-pattern aggregates are proved, with errors <=6B*U uniformly through reduced height B^3. The private-value unit classification now reaches the actual probability: nonzero even selections of exact units parameterize the actual common classes, and their paired affine characters are precisely (-1) to the sum of the two predecessor parities. The actual private pair covariance is p^2 times this signed unit sum, with each local marginal p=2^-L derived from privacy. Separate local witnesses suffice: joint incompatibility and probability-zero pairs are retained. Remaining: enumerate actual selected-unit words by the canonical patterns, remove defective normalizations, and complete the full mass/profile and phase equivalents. These preparations do not complete either numbered result. See docs/PRIVATE_UNIT_COVARIANCE_ALIGNMENT.md and earlier checkpoints.",
-      "validation_commit": "4461d6bdcc7e19648377fe47703c3bd0d14d21ee",
+      "validation_commit": "c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
         "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df",
-        "88ce8a72b7b579b3b7442de98efd91af4b445764"
+        "88ce8a72b7b579b3b7442de98efd91af4b445764",
+        "4461d6bdcc7e19648377fe47703c3bd0d14d21ee"
       ]
     },
     {

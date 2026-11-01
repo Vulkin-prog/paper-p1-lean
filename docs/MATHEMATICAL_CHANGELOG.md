@@ -1933,3 +1933,7 @@ theorem/lemma declarations passed the actual axiom audit, and all 1,161
 coverage/finding names were checked directly. Only propext,
 Classical.choice and Quot.sound occur. No external input, Paper C port,
 manuscript revision or Palomar registration is introduced.
+
+Validated actual private pair covariance checkpoint (9,347 build jobs;
+3,446 audited declarations; 1,161 directly checked coverage/finding names):
+[c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd](https://github.com/Vulkin-prog/paper-p1-lean/commit/c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd).

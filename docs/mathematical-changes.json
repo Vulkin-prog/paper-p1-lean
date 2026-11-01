@@ -1235,9 +1235,10 @@
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "4461d6bdcc7e19648377fe47703c3bd0d14d21ee",
+      "validation_commit": "c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd",
       "validation_history": [
-        "37c99c7ea71d70271902fd12d1b52494646ec919"
+        "37c99c7ea71d70271902fd12d1b52494646ec919",
+        "4461d6bdcc7e19648377fe47703c3bd0d14d21ee"
       ]
     },
     {
