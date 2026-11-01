@@ -856,3 +856,14 @@ smooth-pair estimate, conditional dependency-graph bound or extrapolation
 of fixed-order constants. Elementary logarithmic-power limits compare
 the literal source thresholds. No new Paper C code is ported. See
 [alignment](VERY_SMALL_TAIL_ALIGNMENT.md).
+
+
+## Companion T19.5 — Effective support without an initial pair estimate
+
+The proof uses the closed prime-budget Rankin theorem at sigma=1/2,
+an explicit budget at a controlled growing order, and the actual factorial
+recurrence initialized at zero. No bounded F_2 estimate or fixed-order
+moment theorem is an input. Elementary real-power limits, the exact
+finite-cylinder Markov inequality and Z<=N finish both source bounds.
+No new Paper C code is ported. See
+[alignment](EFFECTIVE_SUPPORT_ALIGNMENT.md).

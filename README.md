@@ -4,7 +4,11 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 46 / 167 numbered results proved.**
+**Status: active formalization, 47 / 167 numbered results proved.**
+Companion T19.5 proves the quantified square-root effective threshold and
+its fixed power comparisons for the original count, with a coefficient
+chosen before the critical-band width. See
+[statement alignment](docs/EFFECTIVE_SUPPORT_ALIGNMENT.md).
 Companion T19.6 proves the actual very small tail and its logarithmic-order
 truncated moments. A smaller power threshold suffices, and every fixed c>0
 is permitted without smooth-pair input. See

@@ -1262,3 +1262,36 @@ preserved; no manuscript revision or Palomar registration is made.
 
 Validated implementation of companion T19.6 and P1-MATH-0033:
 [79e4e6d814ac0dc941544b2beb92437e45657a39](https://github.com/Vulkin-prog/paper-p1-lean/commit/79e4e6d814ac0dc941544b2beb92437e45657a39).
+
+
+## P1-MATH-0034 — An effective-support coefficient chosen before C
+
+- Location: companion Proposition T19.5, page 69, `p1:limits:effective-tail`,
+  `companion_sections/limits_appendix.tex:255`; original statement hash
+  `8e2ed24d53e5de8afa77692efe805e5747c327d27dbb7f515bda212839f37676`.
+- Original dependence: K=K(C,D,r); the proof initializes the growing
+  factorial estimate by the bounded pair moment F_2=O_C(1).
+- Improvement: the actual recurrence can start at F_0=1. A finite
+  logarithmic prime budget at order ceil((log log N)^(2/3)) proves
+  both source conclusions without a pair-moment input. The explicit
+  coefficient K=E+D+r+log 4 is independent of C. The eventual N
+  threshold retains its dependence on C, D and r.
+- Evidence: `EffectivePrimePool.raw_budget_le_envelope`,
+  `euler_cost_bound`, `EffectiveOrderMoments.factorial_bound`,
+  `EffectiveSupport.uniform_tail`, `band_uniform_constant` and
+  `companion_T19_5`.
+- Suggested revision: prove the actual finite recurrence from zero,
+  state the displayed explicit coefficient before choosing C, and
+  retain the literal source ceiling. The fixed power-threshold
+  conclusion has an eventual N^(-D) bound with constant one.
+
+Both numbered conclusions of T19.5 are proved for the original infinite
+count. This does not establish bounded low-order moments or T19.4's
+stronger initial-pair bound. See [alignment](EFFECTIVE_SUPPORT_ALIGNMENT.md).
+
+The full Lean v4.36.0-rc2 build passed (9,165 jobs), and all 2,996
+theorem/lemma declarations passed the actual axiom audit with only
+`propext`, `Classical.choice` and `Quot.sound`. All 757 distinct
+coverage/finding names were checked directly by Lean. Coverage is
+47 / 167, with 34 confirmed improvements. Original source bytes are
+preserved; no manuscript revision or Palomar registration is made.

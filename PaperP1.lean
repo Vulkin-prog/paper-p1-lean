@@ -235,3 +235,7 @@ public import PaperP1.Model.CountTailBounds
 public import PaperP1.Asymptotics.QuadraticTailScale
 public import PaperP1.Asymptotics.NearLinearThreshold
 public import PaperP1.Asymptotics.VerySmallTail
+public import PaperP1.Asymptotics.EffectiveTailScale
+public import PaperP1.Asymptotics.EffectivePrimePool
+public import PaperP1.Asymptotics.EffectiveOrderMoments
+public import PaperP1.Asymptotics.EffectiveSupport

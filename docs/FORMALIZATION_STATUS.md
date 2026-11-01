@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **46 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **47 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **2969 audited theorem/lemma declarations**. This
+- The project currently has **2996 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -614,3 +614,22 @@ Palomar registration is made. Ubuntu root free space is 17.76 GiB.
 
 Validated implementation of companion T19.6 and P1-MATH-0033:
 [79e4e6d814ac0dc941544b2beb92437e45657a39](https://github.com/Vulkin-prog/paper-p1-lean/commit/79e4e6d814ac0dc941544b2beb92437e45657a39).
+
+
+## Quantified square-root effective support
+
+Companion T19.5 is complete for the actual original count. The literal
+rounded threshold sqrt(N)*exp(K*log(N)/(log(log(N)))^(2/3)) and both
+source tail-moment conclusions are proved. The actual prime budget at
+order ceil((log log N)^(2/3)) gives a finite factorial recurrence
+initialized at F_0=1, with no bounded pair moment or fixed-order moment
+input. The explicit coefficient K=E+D+r+log 4 is chosen before C;
+only the N threshold depends on the critical-band width. This is
+P1-MATH-0034. Every power threshold N^(1/2+eta) has the eventual bound
+N^(-D), with constant one. See [alignment](EFFECTIVE_SUPPORT_ALIGNMENT.md).
+
+The full build passed (9,165 jobs), as did the actual axiom audit of all
+2,996 theorem/lemma declarations and all 757 coverage/finding names.
+Coverage is 47 / 167, with 34 confirmed improvements. T19.4's stronger
+initial-pair factorial estimate and the main Poisson asymptotics remain
+open. No Palomar registration is made. Ubuntu root free space is 17.74 GiB.
