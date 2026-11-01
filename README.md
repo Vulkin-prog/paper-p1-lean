@@ -4,7 +4,11 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 42 / 167 numbered results proved.**
+**Status: active formalization, 43 / 167 numbered results proved.**
+Companion T22.4 proves exact full-vector branching up to the growing
+critical order K*log(N)/log(log(N)), including the stated logarithmic
+correction and one uniform deterministic envelope. See
+[statement alignment](docs/CRITICAL_ORDER_BRANCHING_ALIGNMENT.md).
 Companion T1.15 is proved with full-vector independence after old observations,
 its literal exceptional bound, and all subset, fixed-dilation and enlarged
 logarithmic-window extensions. See [statement alignment](docs/FIXED_BRANCHING_ALIGNMENT.md).

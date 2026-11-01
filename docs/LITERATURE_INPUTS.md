@@ -807,3 +807,15 @@ closed budget π(10B)+4≤24B/log B eventually. The actual defect count and
 critical local-kernel bound are already proved. No external rank estimate,
 prime-count proposition or target c-d_xy bound is assumed. See
 [complete alignment](FREE_COMPONENT_ALIGNMENT.md).
+
+## Companion T22.4 — Critical-order exact branching
+
+The growing-order prime pool budget, variable tilt, logarithmic
+correction and full-vector independence are proved internally. T22.3
+supplies the already proved finite Rankin estimate. A finite square
+remainder proves the negative 1/9 coefficient without an assumed
+asymptotic expansion. The deterministic exception criterion is the
+previously validated P1-MATH-0030 construction. No target exception
+count, conditional independence or external mathematical estimate
+is an input. No new Paper C code is ported. See
+[alignment](CRITICAL_ORDER_BRANCHING_ALIGNMENT.md).

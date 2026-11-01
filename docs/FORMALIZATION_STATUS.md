@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **42 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.7, T19.12, T20.3, T23.1, together with Lemmas T19.8, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T21.2, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **43 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T21.2, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **2759 audited theorem/lemma declarations**. This
+- The project currently has **2777 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -519,3 +519,19 @@ change these result statuses.
 Each stage requires precise statement alignment and updated coverage, correction
 and literature-input ledgers. This order is provisional and may be refined by
 the dependency graph discovered during formalization.
+
+## Growing critical-order exact branching
+
+Companion T22.4 is complete. The actual old-value prime pool has a
+proved uniform O_K(H^3/h) logarithmic budget. An explicit variable
+Rankin tilt and a finite rational remainder prove the literal
+(2/3)H-H*log(h)/(9h)+O_K(H/h) exponent. One positive envelope and
+one threshold precede every j<=K*H/h, critical-band length and old
+source choice. The retained full new relative vector is exactly fair
+and independent of the entire old raw vector under the original
+infinite measure. The smaller two-supported-value exception set of
+P1-MATH-0030 suffices. See [alignment](CRITICAL_ORDER_BRANCHING_ALIGNMENT.md).
+The full build passed (9,095 jobs), as did the actual audit of all
+2,777 theorem/lemma declarations and all 647 coverage/finding names.
+Coverage is 43 / 167, with 30 confirmed improvements. This proves no
+growing-order factorial-moment estimate or principal Poisson theorem.

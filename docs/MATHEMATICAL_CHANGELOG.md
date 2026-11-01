@@ -1117,3 +1117,23 @@ is made. The earlier original-window validation remains recorded above.
 
 Validated complete implementation of companion T1.15:
 [aa40b4a69208172c6fca0cdd9def2e336e92f278](https://github.com/Vulkin-prog/paper-p1-lean/commit/aa40b4a69208172c6fca0cdd9def2e336e92f278).
+
+## Companion T22.4 — Uniform branching at growing critical orders
+
+The original logarithmic bound is proved for every j<=K*log(N)/log(log(N)),
+with one explicit positive constant and envelope preceding all source
+and critical-band choices. The finite variable-tilt identity and a
+negative square remainder prove the literal coefficient -1/9. The
+same smaller two-supported-value exception criterion of P1-MATH-0030
+provides the exact full-vector law and independence of all old raw
+values. Its earlier improvement validation is retained; no separate
+finding is counted for this application. See
+[alignment](CRITICAL_ORDER_BRANCHING_ALIGNMENT.md).
+
+The full Lean v4.36.0-rc2 build passed (9,095 jobs). All 2,777
+theorem/lemma declarations passed the actual axiom audit with only
+`propext`, `Classical.choice` and `Quot.sound`; all 647 distinct
+coverage/finding names were checked directly by Lean. Coverage is
+43 / 167, with 30 confirmed improvements. No new manuscript version
+or Palomar registration is made. Growing-order moment estimates
+and principal Poisson theorems remain open.

@@ -201,3 +201,6 @@ public import PaperP1.Asymptotics.GeneralBranchingTheorem
 public import PaperP1.Asymptotics.GeneralWindowBranching
 public import PaperP1.Model.SelectedRelativeBits
 public import PaperP1.Probability.FairBinaryCube
+public import PaperP1.Analysis.CubicLogTilt
+public import PaperP1.Asymptotics.CriticalBranchingBudget
+public import PaperP1.Asymptotics.CriticalOrderBranching

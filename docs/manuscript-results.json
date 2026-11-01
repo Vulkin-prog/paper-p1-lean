@@ -3352,11 +3352,28 @@
       "source": "companion_sections/uniform_appendix.tex",
       "line": 147,
       "sha256": "b66fbd94f42d758ee34a11221126ad2e532d7a82d09218eef646acd5be6e0468",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.CriticalOrderBranching.companion_T22_4",
+        "PaperP1.CriticalOrderBranching.uniform_exception_bound",
+        "PaperP1.CriticalOrderBranching.finite_exception_bound",
+        "PaperP1.CriticalBranchingBudget.raw_budget_le_cubic",
+        "PaperP1.CriticalBranchingBudget.log_product_bound",
+        "PaperP1.CriticalBranchingBudget.card_product_bound",
+        "PaperP1.CubicLogTilt.log_budget_bounds",
+        "PaperP1.CubicLogTilt.tilt_bounds",
+        "PaperP1.CubicLogTilt.budget_tilt_power",
+        "PaperP1.CubicLogTilt.ratio_lower",
+        "PaperP1.CubicLogTilt.tilted_main_bound",
+        "PaperP1.FixedWindowBranching.retained_independent",
+        "PaperP1.BranchingExceptional.twice_badStarts_card_le",
+        "PaperP1.ConditionalRelativeBits.map_joint_eq_fair_prod_old"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0030"
+      ],
+      "notes": "The actual raw-window prime pool has its cubic logarithmic budget proved uniformly for every j<=K*log(N)/log(log(N)). A variable Rankin tilt has exact identity Y^(1-sigma)=log(N), bounds 3/5<=sigma<=3/4, and a finite rational inequality giving the literal negative coefficient -1/9. An explicit positive error constant and deterministic envelope Dstar=exp(rate) precede every growing order, critical-band length and old source set. The exception set is the smaller two-supported-value set from P1-MATH-0030, with its actual incidence count proved internally. Every retained full relative vector is exactly fair and independent of the entire old raw vector under the original infinite measure; all realized old observations have the nominal conditional word probability. No prime-pool estimate, independence statement or target exceptional bound is an assumption. This result does not assert growing-order moment estimates or the principal Poisson asymptotic. See CRITICAL_ORDER_BRANCHING_ALIGNMENT.md."
     },
     {
       "label": "p1:uniform:one-pair",
