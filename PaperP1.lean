@@ -382,3 +382,7 @@ public import PaperP1.Asymptotics.FixedWidthSmallKernel
 public import PaperP1.Diophantine.BivariateGridCount
 public import PaperP1.Diophantine.PrimitiveDenominators
 public import PaperP1.Diophantine.ResultantDivisibility
+public import PaperP1.Diophantine.ResultantHeight
+public import PaperP1.Diophantine.BidegreeOneElimination
+public import PaperP1.Diophantine.BidegreeOneFibreCount
+public import PaperP1.Diophantine.BidegreeOneCurveCount

@@ -64,6 +64,8 @@ The large-kernel branch for several windows now has an explicit finite CRT cost 
 [tuple branch alignment](docs/LARGE_KERNEL_TUPLES_ALIGNMENT.md).
 The first assertion of T1.13 now covers arbitrary actual selected fixed-width blocks, including real prime thresholds; its two-small-kernel assertion remains open. See the
 [one-kernel block alignment](docs/FIXED_WIDTH_SMALL_KERNEL_ALIGNMENT.md).
+The elementary bidegree-one elimination estimate now counts actual primitive points uniformly in the remaining pair height; its complementary curve bound and full T1.4 remain in progress. See the
+[local algebraic count](docs/BIDEGREE_ONE_CURVE_ALIGNMENT.md).
 The complete main pair profile remains in progress. See the
 [finite calculation](docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,

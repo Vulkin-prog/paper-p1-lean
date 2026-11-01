@@ -1,5 +1,10 @@
 # Actual two-chart resultant denominator identities in T1.4
 
+Historical checkpoint: the later [bidegree-one curve count](BIDEGREE_ONE_CURVE_ALIGNMENT.md)
+closes coefficient-to-resultant height, actual elimination and the local
+primitive-point count. Source auxiliary-form extraction/nondegeneracy
+and coefficient height from determinant/lattice steps remain open.
+
 The actual resultant divisibilities underlying the primitive denominator
 budget are proved. Companion T1.4 remains **in progress**: its source
 polynomials, their required nondegeneracy and height bounds, eliminant

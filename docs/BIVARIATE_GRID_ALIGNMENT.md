@@ -1,5 +1,10 @@
 # Coefficient-independent bivariate grid counts for T1.4
 
+Historical checkpoint: the later [bidegree-one curve count](BIDEGREE_ONE_CURVE_ALIGNMENT.md)
+closes coefficient-to-resultant height, actual elimination and the local
+primitive-point count. Source auxiliary-form extraction/nondegeneracy
+and coefficient height from determinant/lattice steps remain open.
+
 The elementary bivariate level-set count needed in Step 3 of companion
 T1.4 is proved. T1.4 remains **in progress**: its auxiliary determinant,
 lattice changes, eliminant construction, other curve cases and lattice

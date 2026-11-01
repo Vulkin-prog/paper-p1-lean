@@ -2406,3 +2406,48 @@ directly by Lean. Original manuscript bytes are unchanged.
 Validated actual chart-resultant checkpoint (9,489 build jobs;
 3,693 audited declarations; 1,408 directly checked coverage/finding names):
 [582ea278507fd72b88e47d7dbae9d30ff064f179](https://github.com/Vulkin-prog/paper-p1-lean/commit/582ea278507fd72b88e47d7dbae9d30ff064f179).
+
+## P1-MATH-0049 — Actual bidegree-one primitive fibre count with broader height scope
+
+Location: companion T1.4 Step 3, page 6, `p1:arith:reuss`, source
+`companion_sections/arithmetic_appendix.tex:139`.
+
+A canonical integer Bezout scale, its actual chart-resultant divisor
+budget, a constructed homogeneous eliminant and an injective fixed-scale
+fibre map prove the actual finite count
+
+    #solutions <= 2*tau(|R*Rprime|)*(k+d*ell)*(2H+1).
+
+The original equation may have any fixed bidegree (ell,k); the source
+cases (2,1) and (1,2) are included. The actual scale is nonzero and both
+signs are retained. A fixed scale and the remaining primitive pair
+determine the eliminated pair uniquely. Zero or reducible eliminants
+are handled by the nonzero-level grid theorem.
+
+Explicit Sylvester bounds give |R*Rprime|<=((2d)!*B^(2d))^2. Auxiliary
+coefficient height N^a therefore supplies the polynomial-height divisor
+budget, rather than assuming a resultant estimate. Exact real-box floor
+transport and real-exponent ceiling transport prove the actual
+N^epsilon*H bound under one threshold before all source choices.
+No height bound is needed on the original coefficient forms, the
+nonzero shift or either box height in this local case.
+
+Evidence: all declarations in `ResultantHeight`,
+`BidegreeOneElimination`, `BidegreeOneFibreCount` and
+`BidegreeOneCurveCount`. Full T1.4 retains its source auxiliary-form
+extraction and nondegeneracy/coefficient height from determinant/lattice
+construction, other curve cases and short-vector sums. Coverage stays
+54/167, with 49 confirmed improvements. No new unproved literature input,
+Paper C port or manuscript revision is introduced. See
+[local case alignment](BIDEGREE_ONE_CURVE_ALIGNMENT.md).
+
+Scope precision for P1-MATH-0049: the proved elementary elimination
+estimate is in the remaining pair height. The complementary Heath-Brown
+bound in the eliminated pair height remains open, including for the
+relevant bidegree-one auxiliary factors. No min-of-both-heights estimate
+is claimed by this checkpoint.
+
+The full build passed (9,499 jobs); all 3,720 declarations passed the
+actual axiom audit, permitting only propext, Classical.choice and
+Quot.sound. All 1,435 distinct coverage/finding names were checked
+directly by Lean. Original manuscript bytes are unchanged.

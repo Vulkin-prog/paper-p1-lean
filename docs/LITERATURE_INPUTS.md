@@ -1211,3 +1211,30 @@ Stable ID: `P1-ALG-ACTUAL-RESULTANT-DIVISIBILITIES`. Status: **proved ingredient
 - Source chart extraction, nondegeneracy/height and the full determinant
   argument remain open. No unproved literature input or new Paper C port
   is introduced. See [alignment](RESULTANT_DENOMINATORS_ALIGNMENT.md).
+
+## Actual bidegree-one auxiliary primitive-point count
+
+Stable ID: `P1-ALG-BIDEGREE-ONE-CURVE-COUNT`. Status: **proved local case**,
+full T1.4 remains in progress.
+
+- Actual Sylvester entries and the proved determinant absolute-value bound
+  give explicit resultant heights from auxiliary coefficient bounds.
+  Canonical integer primitive Bezout coefficients construct the scale.
+  Its nonzero signed divisor budget, actual homogeneous eliminant and
+  fixed-scale injection prove the finite count on actual integer solutions.
+- Real coefficient exponents and exact real box membership are proved.
+  A common N^epsilon*H threshold precedes all auxiliary coefficients of
+  the prescribed height, all original homogeneous coefficient forms, every
+  nonzero integer shift and all real boxes. Original coefficients, shifts
+  and boxes need no height bound in this local case.
+- Nonzero chart resultants and the literal equations are explicit algebraic
+  conditions. Source auxiliary extraction/nondegeneracy and coefficient
+  height from determinant/lattice steps remain to be established. No
+  target counting estimate or unproved literature input is assumed; no
+  Paper C port is added. See [alignment](BIDEGREE_ONE_CURVE_ALIGNMENT.md).
+
+Scope precision for P1-MATH-0049: the proved elementary elimination
+estimate is in the remaining pair height. The complementary Heath-Brown
+bound in the eliminated pair height remains open, including for the
+relevant bidegree-one auxiliary factors. No min-of-both-heights estimate
+is claimed by this checkpoint.

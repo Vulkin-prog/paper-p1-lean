@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3693 audited theorem/lemma declarations**. This
+- The project currently has **3720 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1480,3 +1480,31 @@ directly by Lean. Original manuscript bytes are unchanged.
 Validated actual chart-resultant checkpoint (9,489 build jobs;
 3,693 audited declarations; 1,408 directly checked coverage/finding names):
 [582ea278507fd72b88e47d7dbae9d30ff064f179](https://github.com/Vulkin-prog/paper-p1-lean/commit/582ea278507fd72b88e47d7dbae9d30ff064f179).
+
+## Actual bidegree-one auxiliary curve count
+
+`BidegreeOneCurveCount.actual_real_solutions_count` proves the local
+N^epsilon*H bound for actual primitive integer solutions in real boxes.
+A canonical primitive scale, actual chart resultants and their explicit
+coefficient-height bounds, a constructed homogeneous eliminant and an
+injective fixed-scale fibre map supply the complete arithmetic count.
+The generic original bidegree includes both (2,1) and (1,2). No height
+bound on the original coefficient forms, nonzero shift or box heights
+is needed in this case. This strengthens the local scope as P1-MATH-0049.
+
+Full T1.4 remains in progress: its source auxiliary-form extraction and
+nondegeneracy/coefficient height from determinant/lattice construction,
+other curve cases and short-vector summations are open. Coverage stays
+54/167, with 49 confirmed improvements. See
+[complete local algebraic count](BIDEGREE_ONE_CURVE_ALIGNMENT.md).
+
+Scope precision for P1-MATH-0049: the proved elementary elimination
+estimate is in the remaining pair height. The complementary Heath-Brown
+bound in the eliminated pair height remains open, including for the
+relevant bidegree-one auxiliary factors. No min-of-both-heights estimate
+is claimed by this checkpoint.
+
+The full build passed (9,499 jobs); all 3,720 declarations passed the
+actual axiom audit, permitting only propext, Classical.choice and
+Quot.sound. All 1,435 distinct coverage/finding names were checked
+directly by Lean. Original manuscript bytes are unchanged.

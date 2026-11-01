@@ -1817,13 +1817,41 @@
         "PaperP1.ResultantDivisibility.padded_resultant_ne_zero",
         "PaperP1.ResultantDivisibility.integer_padded_resultant_ne_zero",
         "PaperP1.ResultantDivisibility.finite_denominator_count",
-        "PaperP1.ResultantDivisibility.polynomial_height_denominator_count"
+        "PaperP1.ResultantDivisibility.polynomial_height_denominator_count",
+        "PaperP1.ResultantHeight.sylvester_entry_bound",
+        "PaperP1.ResultantHeight.resultant_bound",
+        "PaperP1.ResultantHeight.reflected_coeff_bound",
+        "PaperP1.ResultantHeight.chart_product_bound",
+        "PaperP1.ResultantHeight.polynomial_product_height",
+        "PaperP1.ResultantHeight.coefficient_uniform_denominator_count",
+        "PaperP1.BidegreeOneElimination.scale_equations",
+        "PaperP1.BidegreeOneElimination.monomial_scale",
+        "PaperP1.BidegreeOneElimination.eliminant_evaluation",
+        "PaperP1.BidegreeOneElimination.eliminant_homogeneous",
+        "PaperP1.BidegreeOneElimination.eliminant_equation",
+        "PaperP1.BidegreeOneElimination.level_box_bound",
+        "PaperP1.BidegreeOneFibreCount.two_coordinates",
+        "PaperP1.BidegreeOneFibreCount.scale_relations",
+        "PaperP1.BidegreeOneFibreCount.form_divisibilities",
+        "PaperP1.BidegreeOneFibreCount.chosenScale_ne_zero",
+        "PaperP1.BidegreeOneFibreCount.scale_count",
+        "PaperP1.BidegreeOneFibreCount.fixed_scale_card",
+        "PaperP1.BidegreeOneFibreCount.count_by_scales",
+        "PaperP1.BidegreeOneFibreCount.finite_count",
+        "PaperP1.BidegreeOneCurveCount.integer_box_floor",
+        "PaperP1.BidegreeOneCurveCount.mem_realSolutions",
+        "PaperP1.BidegreeOneCurveCount.integer_coefficient_bound",
+        "PaperP1.BidegreeOneCurveCount.coefficient_uniform_scale_count",
+        "PaperP1.BidegreeOneCurveCount.polynomial_coefficient_count",
+        "PaperP1.BidegreeOneCurveCount.actual_solutions_count",
+        "PaperP1.BidegreeOneCurveCount.actual_real_solutions_count"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
-        "P1-MATH-0048"
+        "P1-MATH-0048",
+        "P1-MATH-0049"
       ],
-      "notes": "The independent Step 3 grid ingredient has explicit coefficient-independent bound d*(2H+1). Primitive signed denominator counts are proved, and actual homogenized Bezout identities plus padded coefficient reflection derive both chart-resultant divisibilities from the actual form evaluations. Nonzero padded resultants are proved under explicit univariate coprimality and full-degree conditions, including transport from integer polynomials to Q. Finite denominator families may use different primitive coordinates for each denominator. Uniform N^epsilon counts follow from actual resultant product height. Full T1.4 remains open: source chart extraction/nondegeneracy and uniform height, eliminant construction, determinant/lattice stages and other curve cases are not closed. See BIVARIATE_GRID_ALIGNMENT.md and RESULTANT_DENOMINATORS_ALIGNMENT.md."
+      "notes": "The independent Step 3 grid ingredient, actual chart-resultant identities and primitive denominator budget are proved. Explicit Sylvester bounds now derive resultant polynomial height from auxiliary coefficient height. Canonical primitive elimination constructs the actual eliminant and proves finite and uniform N^epsilon*H bounds for actual bidegree-one auxiliary solutions, including real box heights and real coefficient exponents. Both original bidegrees (2,1) and (1,2) are covered by the general construction. Original coefficient forms and the nonzero shift need no height bound in this case. Full T1.4 remains in progress: source extraction of auxiliary forms, their relevant nondegeneracy and coefficient height from determinant/lattice construction, the other curve cases and short-vector sums are open. No target count is a premise. See BIDEGREE_ONE_CURVE_ALIGNMENT.md and earlier grid/resultant notes. The elementary elimination bound is in the remaining pair height; the complementary Heath-Brown bound in the eliminated pair height remains open even for the relevant bidegree-one auxiliary factors."
     },
     {
       "label": "p1:arith:twokernel",
