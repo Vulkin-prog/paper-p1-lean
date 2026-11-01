@@ -102,3 +102,6 @@ source bytes and 167 numbered statement hashes are preserved.
 Coverage remains 40 / 167, since the final T21.2 asymptotic is open.
 There are 29 confirmed improvements; no Palomar registration is made.
 Available Ubuntu-root space is 17.92 GiB.
+
+Validated finite conditional-rank implementation and P1-MATH-0029:
+[dd3755df492b2fab0b50515d6b3b1dfc75014e3d](https://github.com/Vulkin-prog/paper-p1-lean/commit/dd3755df492b2fab0b50515d6b3b1dfc75014e3d).

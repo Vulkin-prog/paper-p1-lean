@@ -1031,3 +1031,6 @@ Validated implementation of companion T19.7:
   `Classical.choice` and `Quot.sound`. All 589 distinct coverage/finding
   declaration names were checked directly by Lean. Not integrated into
   a new manuscript version. See [alignment](CONDITIONAL_RANK_ALIGNMENT.md).
+
+Validated finite conditional-rank implementation and P1-MATH-0029:
+[dd3755df492b2fab0b50515d6b3b1dfc75014e3d](https://github.com/Vulkin-prog/paper-p1-lean/commit/dd3755df492b2fab0b50515d6b3b1dfc75014e3d).
