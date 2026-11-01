@@ -332,7 +332,7 @@
         "P1-MATH-0045"
       ],
       "notes": "The actual retained private channel family is now explicit, with zero-probability pairs retained, deterministic source separation and disjoint symmetric orientations. Its exact actual joint-mass formula is proved. Exact deletion of bad rational-unit terms and the baseline give the finite error |M-p^2*N*w*S|<=p^2*(6B*U+2B^2*N+2*#badSources*2^(B/b)). The exceptional host count is <=N^(1/2+epsilon) for each fixed channel and H in [2bB,DB]; rational-unit weights need no privacy or complete residual-rank estimate. All previous actual coefficient, word and dyadic bridges are proved. Remaining: bound U, compare the finite errors on the critical scale, and prove the positive fixed-channel phase equivalent; the full main pair profile also has other regimes unfinished. Article 3.3 and companion T2.5 remain in progress. See docs/PRIVATE_CHANNEL_MASS_ALIGNMENT.md.",
-      "validation_commit": "bd95627543139b4690c1311ce84f622d8ce7a221",
+      "validation_commit": "37e67975065e2b4df18be484c2e7ba9123a6c8b9",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
         "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df",
@@ -340,7 +340,8 @@
         "4461d6bdcc7e19648377fe47703c3bd0d14d21ee",
         "c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd",
         "75b7018923d2fc85473e609a5788b6bb97805498",
-        "74727a964e38c4b8b556fac2f93194485c695c11"
+        "74727a964e38c4b8b556fac2f93194485c695c11",
+        "bd95627543139b4690c1311ce84f622d8ce7a221"
       ]
     },
     {
@@ -2557,7 +2558,7 @@
         "P1-MATH-0045"
       ],
       "notes": "The actual retained private channel family is now explicit, with zero-probability pairs retained, deterministic source separation and disjoint symmetric orientations. Its exact actual joint-mass formula is proved. Exact deletion of bad rational-unit terms and the baseline give the finite error |M-p^2*N*w*S|<=p^2*(6B*U+2B^2*N+2*#badSources*2^(B/b)). The exceptional host count is <=N^(1/2+epsilon) for each fixed channel and H in [2bB,DB]; rational-unit weights need no privacy or complete residual-rank estimate. All previous actual coefficient, word and dyadic bridges are proved. Remaining: bound U, compare the finite errors on the critical scale, and prove the positive fixed-channel phase equivalent; the full main pair profile also has other regimes unfinished. Article 3.3 and companion T2.5 remain in progress. See docs/PRIVATE_CHANNEL_MASS_ALIGNMENT.md.",
-      "validation_commit": "bd95627543139b4690c1311ce84f622d8ce7a221",
+      "validation_commit": "37e67975065e2b4df18be484c2e7ba9123a6c8b9",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
         "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df",
@@ -2565,7 +2566,8 @@
         "4461d6bdcc7e19648377fe47703c3bd0d14d21ee",
         "c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd",
         "75b7018923d2fc85473e609a5788b6bb97805498",
-        "74727a964e38c4b8b556fac2f93194485c695c11"
+        "74727a964e38c4b8b556fac2f93194485c695c11",
+        "bd95627543139b4690c1311ce84f622d8ce7a221"
       ]
     },
     {

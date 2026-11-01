@@ -88,3 +88,7 @@ also has its other regimes unfinished.
 
 No new literature premise, Paper C port, manuscript revision or Palomar
 registration is introduced. Original manuscript bytes are unchanged.
+
+Validated actual finite channel-mass checkpoint (9,385 build jobs;
+3,538 audited declarations; 1,253 directly checked coverage/finding names):
+[37e67975065e2b4df18be484c2e7ba9123a6c8b9](https://github.com/Vulkin-prog/paper-p1-lean/commit/37e67975065e2b4df18be484c2e7ba9123a6c8b9).
