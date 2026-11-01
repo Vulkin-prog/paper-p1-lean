@@ -2992,7 +2992,8 @@
       },
       "validation_history": [
         "0cd8e511f9779f945ae81f4cbbbe8c8f5c4129bd"
-      ]
+      ],
+      "validation_commit": "ceb81b8a6b9e8fb08f48211c83f758e10bcbfeef"
     },
     {
       "id": "P1-MATH-0059",
@@ -3082,7 +3083,8 @@
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "ceb81b8a6b9e8fb08f48211c83f758e10bcbfeef"
     }
   ]
 }
