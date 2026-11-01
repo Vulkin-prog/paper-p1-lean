@@ -3005,3 +3005,18 @@ source-divisor factors and actual square equations are constructed.
 Two-class selection and coefficient enumeration remain open. This
 records proof progression without counting a new independent finding
 or a completed numbered result. See [alignment](DENSE_TARGET_ALIGNMENT.md).
+
+
+Main 6.2 is now fully proved. The complete count uses exactly two
+selected disjoint nonempty target classes and arbitrary nonzero final
+equation coefficients, instantiating P1-MATH-0069. The actual canonical
+small-prime/source-divisor/residual decomposition is enumerated in finite
+sets; no relation spaces or regularizations are enumerated. The explicit
+fixed support bound Dstar includes representations with one source label
+(the j=1 term); it can replace the displayed support constant in the
+source proof without changing its asymptotic conclusion. The complete
+theorem also permits repeated sources and counts source centres among
+candidates, with no regularity, separation or compatibility premise.
+These scope details are traced in the [complete alignment](DENSE_TARGET_ALIGNMENT.md).
+Coverage is 70/167. No additional independent finding is counted beyond
+the 69 already registered; main 6.3 and the moment expansion stay open.

@@ -4,7 +4,12 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 69 / 167 numbered results proved.**
+**Status: active formalization, 70 / 167 numbered results proved.**
+Main Proposition 6.2 is now complete: the actual large-rank-loss targets
+are uniformly bounded by N^epsilon after any fixed source tuple, even
+with repeated or overlapping sources. The proof constructs and counts
+actual prime groups, two disjoint physical classes and their coefficients.
+See [the complete dense-target alignment](docs/DENSE_TARGET_ALIGNMENT.md).
 Companion T4.1 now uses only two disjoint square equations, with arbitrary
 nonzero integer coefficients. The arithmetic proof removes the need for
 the source Pila input at this step. See

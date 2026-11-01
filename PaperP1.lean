@@ -761,3 +761,16 @@ public import PaperP1.Arithmetic.PrimeGroupIncidence
 public import PaperP1.Arithmetic.PrimeGroupDichotomy
 public import PaperP1.Arithmetic.RelativeSquarefreeParts
 public import PaperP1.Arithmetic.ClassPrimeResidual
+
+public import PaperP1.Arithmetic.PhysicalClassData
+public import PaperP1.Combinatorics.BoundedSubsets
+public import PaperP1.Arithmetic.SelectedTargetClasses
+public import PaperP1.Arithmetic.ClassCoefficientValues
+public import PaperP1.Combinatorics.RealFiniteCover
+public import PaperP1.Arithmetic.CodedClassTargets
+public import PaperP1.Arithmetic.DenseTargetClassification
+public import PaperP1.Asymptotics.ClassCodeBudget
+public import PaperP1.Asymptotics.ClassCodeFibres
+public import PaperP1.Asymptotics.CodedClassCount
+public import PaperP1.Arithmetic.DenseTargetCover
+public import PaperP1.Asymptotics.DenseTargetCount

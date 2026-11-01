@@ -1,10 +1,10 @@
-# Main 6.2 — Actual projection and regularized support inputs
+# Main 6.2 — Complete actual dense-target count
 
 Target: Proposition 6.2, page 22, `p1:fixed:targets`,
 `main_sections/fixed_moments.tex:89`, statement SHA-256
 `4b7903db8bfa5e1ce630499b700b2defbc2505400342a6d0a769238bd2dc771f`.
-This numbered result is **in progress**. No dense-target population count
-is counted complete or supplied as an assumption.
+This numbered result is **proved**. The actual source-excluding target
+population is counted. No count or classification is an assumption.
 
 ## The effective increment and the actual physical code
 
@@ -110,22 +110,69 @@ of the actual source product, and this residual product. It proves
 the actual square equation. No relation-space enumeration or second
 restriction of the regularized code is used.
 
-## Remaining arithmetic count
+## Two actual disjoint classes and a literal finite code
 
-The completed T4.1 now supplies the final two-disjoint-square-equation
-input without a curve-count assumption. The completed T4.2 supplies
-the product-certificate count. Still required for full main 6.2:
+`SelectedTargetClasses.exists_two` chooses two different surviving
+target labels once the target has at least k+2 labels. Their physical
+classes are disjoint. Both meet the target, have at most K coordinates
+and yield nonempty simple disjoint offset lists.
+`PhysicalClassData` extracts their actual source and target positions,
+identifies the original class products, proves positivity and transfers
+the target products to the literal integer split polynomials.
 
-- retain two actual disjoint target label classes after discarding
-  selected-group classes;
-- enumerate their physical positions and actual small-prime, source-divisor
-  and residual coefficients, then apply the two-equation count to the
-  literal target population.
+`ClassCoefficientValues.values` is a finite set of actual coefficients
 
-Coverage stays 69/167 and confirmed improvements stay 69. This checkpoint
-formalizes source inputs rather than introducing a new independent
-correction. No new external assumption, Paper C port, manuscript edit
+    D=d0*d1*e*M, d0|primorial H, d1|M, 1<=e<=floor(N^theta).
+
+It has at most tau(primorial H)*tau(M)*floor(N^theta) elements. Every
+class yields a member and an actual integer square equation.
+`CodedClassTargets` forms the literal finite cover by two bounded
+physical classes and two such coefficients. No spaces or regularization
+choices enter this enumeration.
+
+`BoundedSubsets` bounds the number of classes by
+(K+1)*(((s+1)*(L+1)+1)^K). `ClassCodeBudget` absorbs this position
+budget, proves primorial(2*(L+1))<=N^A0, and applies the complete
+uniform divisor bound to both primorial H and M<=N^(2K). Coefficients
+cost at most N^(theta+epsilon) per class. `ClassCodeFibres` applies
+the complete two-equation theorem with arbitrary nonzero coefficients.
+`CodedClassCount.uniform_count` counts the actual cover by
+N^(2theta+epsilon), including every code and coefficient choice.
+
+## The full rank-loss population and quantifier order
+
+`DenseTargetCover.uniform_cover` constructs one recovery order t before
+every k, then one minimum length before all N and source tuples. It
+regularizes the actual code and uses delta>=eta*L to ensure at least
+k+2 target labels. The actual population is covered by strict T4.2
+certificate targets and the finite two-class cover.
+
+`DenseTargetCount.uniform_count` first fixes t, then chooses k so
+theta=K*Dstar/k<=epsilon/8. The complete T4.2 and two-class count,
+with explicit error margins and constant absorption, prove
+
+    # {z in I_N : delta_z >= eta*L} <= N^epsilon
+
+for every N after one threshold, every critical-band L and every
+source tuple in I_N. Sources may repeat, overlap or be dependent;
+there is no separation, compatibility or local regularity premise.
+`mem_freshTargets` identifies the literal source-excluding population.
+`DenseTargetCount.main_6_2` gives its count by subset monotonicity.
+It supplies the full printed bound, with eventual constant one.
+
+For a future manuscript revision, use the explicit proved Dstar for
+physical supports; its j=1 term includes one-source representations.
+Use two final classes and remove the final coefficient-height obligation,
+as already justified by P1-MATH-0069. The repeated-source and source-
+inclusive scope can be mentioned as a strengthening. No failure of
+the printed dense-target conclusion is asserted.
+
+Coverage is 70/167 (main 24/73, companion 46/94); confirmed independent
+findings stay 69. Main 6.3 propagation and main 6.4 moment expansion
+remain open. No external assumption, new Paper C port, manuscript edit
 or Palomar registration is introduced.
+
+## Earlier preparatory verification history
 
 Dense-target input verification: Lean v4.36.0-rc2 full build passed (9943 jobs); actual axiom audit passed for all 4775 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2490 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.66 GiB. Actual physical/effective relation projections, their fixed-order recovery regularization and finite support pools are proved. Main 6.2 remains in progress for the prime-group classification and actual target count. Coverage and confirmed improvements stay 69/167 and 69. No target-count premise, external assumption, Paper C port, manuscript-byte change or Palomar registration.
 
@@ -134,3 +181,5 @@ Validated preparatory proof checkpoint: [b83bdedd5e12fc31c3f964c454392afcf912198
 Prime-group checkpoint verification: Lean v4.36.0-rc2 full build passed (9961 jobs); actual axiom audit passed for all 4833 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2548 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 16.63 GiB. Actual circuit groups, the strict-certificate dichotomy and the residual-kernel exponent are proved. Main 6.2 remains in progress for the final two-class selection and population count. Coverage and confirmed improvements remain 69/167 and 69. No output-count premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.
 
 Validated prime-group proof checkpoint: [23a3ac440d22d350cd37676144185ebb20bfd14e](https://github.com/Vulkin-prog/paper-p1-lean/commit/23a3ac440d22d350cd37676144185ebb20bfd14e).
+
+Complete dense-target verification: Lean v4.36.0-rc2 full build passed (9985 jobs); actual axiom audit passed for all 4880 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2595 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.59 GiB. Main 6.2 is complete for its literal source-excluding effective-rank-loss population, with a stronger repeated-source and source-inclusive count. Coverage is 70/167 (main 24/73, companion 46/94); confirmed independent findings stay 69. Main 6.3 and 6.4 remain open. No target-count premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.

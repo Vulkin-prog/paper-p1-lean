@@ -1747,3 +1747,21 @@ The actual residual kernel has exponent (t-1)*Dstar/k. Its canonical
 small/source/residual factorization and square equation require no
 external arithmetic input. Only final class selection and enumeration
 remain. No new literature assumption or Paper C code is introduced.
+
+
+## Full actual dense-target population count
+
+Stable ID: `P1-ARITH-DENSE-TARGET-COUNT`. Status: **proved**, full main 6.2.
+
+`DenseTargetCount.main_6_2` is uniform before every source tuple and
+critical-band length. The literal population uses the actual effective
+nullity increment and excludes source centres. A stronger theorem allows
+repeated sources and includes those centres. The complete proof combines
+constructed physical relation regularization, actual coprime prime groups,
+finite maximal-product selection, two actual disjoint target classes,
+explicit finite coefficient sets and unconditional divisor bounds. The
+proved T4.1 and T4.2 supply the final fibre and certificate counts. Their
+full uniformity is instantiated, not assumed. There is no curve-count,
+classification, coefficient-enumeration or target-count hypothesis.
+No new external result or Paper C port is introduced. Main 6.3 remains
+open for conditional propagation. See [alignment](DENSE_TARGET_ALIGNMENT.md).
