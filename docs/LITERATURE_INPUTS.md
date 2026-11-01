@@ -20,6 +20,28 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Norms of actual Poisson differences
+
+Stable ID: `P1-PROB-POISSON-DIFFERENCE-NORMS`. Status: **proved**.
+
+- Target: all three conclusions of article Proposition 19.2, page 58,
+  `p1:discussion:charlier-norm`.
+- Lean: `PoissonSecondDifferenceNorm.main_19_2`, with actual signed
+  measures, exact floor/ceiling endpoints, negative-index zero convention,
+  and every natural difference order including zero.
+- The original cited Charlier orthogonality bound is not left as an
+  external input. Exact factorial moments of the signed difference and a
+  finite coefficient sum prove the required diagonal square identity.
+  An elementary summed quadratic inequality proves the square-root bound.
+- The second-difference sign interval and its nonemptiness are proved
+  algebraically; a finite telescoping identity gives the exact norm.
+  The source constants at mean two are evaluated symbolically.
+- Mathlib at the pinned revision supplies Poisson masses, finite sums,
+  HasSum operations, real square roots, floor/ceiling and signed measures.
+  No additional Paper C source is ported.
+- See [alignment](POISSON_DIFFERENCE_NORMS_ALIGNMENT.md) and P1-MATH-0023
+  for the separately strengthened unnumbered lower coefficient bound.
+
 ## Marked-isolate graph generating function
 
 Stable ID: `P1-COMB-MARKED-GENERATOR`. Status: **proved**.

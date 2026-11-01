@@ -105,6 +105,13 @@ public import PaperP1.Combinatorics.GraphStarPartition
 public import PaperP1.Combinatorics.FinitePolymerBound
 public import PaperP1.Combinatorics.GraphStarWeights
 public import PaperP1.Combinatorics.MarkedGraphGenerator
+public import PaperP1.Probability.FiniteShiftAction
+public import PaperP1.Probability.IteratedPoissonDifferences
+public import PaperP1.Probability.CharlierDifferenceNorm
+public import PaperP1.Algebra.CharlierRoots
+public import PaperP1.Analysis.FiniteNegativeMass
+public import PaperP1.Probability.PoissonDifferenceSigned
+public import PaperP1.Probability.PoissonSecondDifferenceNorm
 public import PaperP1.Analysis.IntegerProductTail
 public import PaperP1.Coding.CoordinateRegularisation
 public import PaperP1.Coding.TernaryConstraints

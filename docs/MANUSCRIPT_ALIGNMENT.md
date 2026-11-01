@@ -12,7 +12,7 @@ a blank declaration field nor a preparatory algebraic lemma establishes coverage
 Coverage includes the exact declarations listed below. Preparatory lemmas are
 recorded in the project status without counting as complete numbered results.
 
-## Main article: 14 / 73 proved
+## Main article: 15 / 73 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -87,7 +87,7 @@ recorded in the project status without counting as complete numbered results.
 | 18.2 (p. 55) | [p13:channels:weighted-nonaligned](../manuscripts/paper-p1/v1.6/sources/main_sections/channel_hierarchy.tex#L66) | Weighted nonaligned pairs | not_started | — |
 | 18.3 (p. 56) | [p13:channels:height-five](../manuscripts/paper-p1/v1.6/sources/main_sections/channel_hierarchy.tex#L199) | The error of the two-channel reference | not_started | — |
 | 19.1 (p. 57) | [p1:cor:compound](../manuscripts/paper-p1/v1.6/sources/main_sections/discussion.tex#L22) | Hermite approximation with single and double jumps | not_started | — |
-| 19.2 (p. 58) | [p1:discussion:charlier-norm](../manuscripts/paper-p1/v1.6/sources/main_sections/discussion.tex#L116) | Norms of Poisson differences | not_started | — |
+| 19.2 (p. 58) | [p1:discussion:charlier-norm](../manuscripts/paper-p1/v1.6/sources/main_sections/discussion.tex#L116) | Norms of Poisson differences | proved | `PaperP1.PoissonSecondDifferenceNorm.main_19_2`, `PaperP1.PoissonSecondDifferenceNorm.four_mass_formula`, `PaperP1.PoissonSecondDifferenceNorm.negative_support`, `PaperP1.PoissonSecondDifferenceNorm.norm_at_two_exp_one`, `PaperP1.PoissonSecondDifferenceNorm.coefficient_at_two_exp_one`, `PaperP1.PoissonSecondDifferenceNorm.norm_second_lower_bound`, `PaperP1.PoissonSecondDifferenceNorm.coefficient_lower_bound`, `PaperP1.PoissonDifferenceSigned.norm_all_orders`, `PaperP1.PoissonDifferenceSigned.signedDifference_eq_sequence`, `PaperP1.PoissonDifferenceSigned.signedDifference_singleton`, `PaperP1.PoissonDifferenceSigned.norm_eq_l1`, `PaperP1.CharlierDifferenceNorm.hasSum_charlier_square`, `PaperP1.CharlierDifferenceNorm.all_order_norm_bound`, `PaperP1.CharlierDifferenceNorm.difference_eq_mass_mul_charlier`, `PaperP1.IteratedPoissonDifferences.hasSum_difference_factorial`, `PaperP1.IteratedPoissonDifferences.l1_poisson_difference_le`, `PaperP1.FiniteShiftAction.difference_apply_range`, `PaperP1.CharlierRoots.quadratic_neg_iff_indices`, `PaperP1.CharlierRoots.indices_bounds`, `PaperP1.FiniteNegativeMass.secondDifference_interval_sum`, `PaperP1.FiniteNegativeMass.l1_eq_negative_sum`, `PaperP1.FiniteNegativeMass.l1_ge_twice_point` |
 | 20.1 (p. 60) | [p1:limits:vector-reference](../manuscripts/paper-p1/v1.6/sources/main_sections/limits_appendix.tex#L45) | Unsigned positional compound-Poisson comparison | not_started | — |
 
 ## Technical companion: 20 / 94 proved

@@ -761,6 +761,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "91f0b85e7a22f8527792bfbaf209f8d6f11a4bc4"
+    },
+    {
+      "id": "P1-MATH-0023",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:close:constant-bounds",
+        "number": null,
+        "page": null,
+        "source": "main_sections/closure.tex",
+        "line": 99,
+        "statement_sha256": "435c831c0736a5fc93d567a3cb65690f3bcf284acfc689764058da7e118cdc17",
+        "related_numbered_result": "19.2",
+        "hash_scope": "Exact original equation environment, source lines 99 through 102, including line endings."
+      },
+      "original_assumption": "The unnumbered correction-coefficient estimate states exp(-lambda)/4 <= C(lambda) <= 1, with C(lambda)=norm(Poisson(lambda)*Delta^2)/4 and lambda>0.",
+      "finding": "The lower bound can be doubled to exp(-lambda)/2 <= C(lambda). More generally, every summable real sequence of total mass zero has l1 norm at least twice any one of its coefficients. Applying this to the second Poisson difference and its positive mass exp(-lambda) at zero proves the stronger lower bound. The Lean result also includes lambda=0 for the signed-difference definition.",
+      "evidence": [
+        "PaperP1.PoissonSecondDifferenceNorm.coefficient_lower_bound",
+        "PaperP1.PoissonSecondDifferenceNorm.norm_second_lower_bound",
+        "PaperP1.FiniteNegativeMass.l1_ge_twice_point"
+      ],
+      "proposed_revision": "Replace the lower coefficient bound exp(-lambda)/4 by exp(-lambda)/2, keeping the original upper bound and all normalizations. Mention the zero-total-mass factor of two in the proof.",
+      "impact": "Improves only the explicit lower constant by a factor of two; the asymptotic exponents and normalization of total variation are unchanged. The original weaker estimate is true, so no manuscript error is asserted. The unnumbered inequality does not add a numbered coverage item.",
+      "validation": "Full Lean v4.36.0-rc2 build (8919 jobs) and actual axiom audit of all 2257 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 415 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

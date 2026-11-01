@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Twenty-two mathematical improvements are confirmed; no error in a manuscript conclusion
+**Twenty-three mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -790,3 +790,31 @@ All 393 distinct coverage/finding declaration names were checked directly by Lea
 
 Validated implementation of article Lemma 7.4 and P1-MATH-0022:
 [91f0b85e7a22f8527792bfbaf209f8d6f11a4bc4](https://github.com/Vulkin-prog/paper-p1-lean/commit/91f0b85e7a22f8527792bfbaf209f8d6f11a4bc4).
+
+## P1-MATH-0023 — Double the lower Poisson--Charlier coefficient bound
+
+- Location: article V1.6, unnumbered equation `p1:close:constant-bounds`,
+  `main_sections/closure.tex:99`; related to Proposition 19.2.
+- Original bound: exp(-lambda)/4 <= C(lambda) <= 1, where
+  C(lambda)=norm(Poisson(lambda)*Delta^2)/4 and lambda>0.
+- Improvement: exp(-lambda)/2 <= C(lambda). The original normalization,
+  upper bound and asymptotic exponents are unchanged.
+- Proof: a summable real sequence of total mass zero has l1 norm at
+  least twice any coefficient. The second Poisson difference has total
+  mass zero and coefficient exp(-lambda) at zero. Thus its norm is at
+  least 2*exp(-lambda), rather than the single-coefficient bound used
+  in the original displayed estimate.
+- Evidence: `FiniteNegativeMass.l1_ge_twice_point`,
+  `PoissonSecondDifferenceNorm.norm_second_lower_bound` and
+  `PoissonSecondDifferenceNorm.coefficient_lower_bound`.
+  The last theorem also includes lambda=0 for the signed definition.
+- Suggested revision: double the lower constant in the displayed
+  unnumbered inequality and mention the zero-mass argument. The original
+  weaker estimate remains true; no manuscript error is asserted.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,919 jobs),
+  followed by the actual audit of all 2,257 theorem/lemma declarations.
+  Only `propext`, `Classical.choice` and `Quot.sound` occur. Not integrated
+  into a new manuscript version. This unnumbered improvement adds no
+  extra numbered coverage item.
+
+All 415 distinct coverage/finding declaration names were checked directly by Lean.
