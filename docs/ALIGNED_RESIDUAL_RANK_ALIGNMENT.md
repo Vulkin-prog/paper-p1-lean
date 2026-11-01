@@ -122,3 +122,6 @@ is introduced.
 
 Initial uniform residual checkpoint and P1-MATH-0039:
 [df34686b343f5297c181e6150e21834acc335ad8](https://github.com/Vulkin-prog/paper-p1-lean/commit/df34686b343f5297c181e6150e21834acc335ad8).
+
+Validated complete companion T1.9:
+[6165382c14d6f8e653ddec27accb9c042628ae10](https://github.com/Vulkin-prog/paper-p1-lean/commit/6165382c14d6f8e653ddec27accb9c042628ae10).

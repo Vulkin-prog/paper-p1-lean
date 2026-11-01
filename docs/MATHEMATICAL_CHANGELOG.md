@@ -1525,3 +1525,6 @@ v4.36.0-rc2 build passed (9,253 jobs), as did the actual axiom audit
 of all 3,218 theorem/lemma declarations and all 933 distinct
 coverage/finding names. No manuscript revision or Palomar registration
 is made. The original P1-MATH-0039 validation remains historical.
+
+Validated complete companion T1.9:
+[6165382c14d6f8e653ddec27accb9c042628ae10](https://github.com/Vulkin-prog/paper-p1-lean/commit/6165382c14d6f8e653ddec27accb9c042628ae10).

@@ -789,3 +789,6 @@ Quot.sound. All 933 coverage/finding names were checked directly by Lean.
 Original source bytes are preserved, and no new Paper C port, external
 mathematical premise or Palomar registration is introduced. Ubuntu root
 free space is 18.08 GiB.
+
+Validated complete companion T1.9:
+[6165382c14d6f8e653ddec27accb9c042628ae10](https://github.com/Vulkin-prog/paper-p1-lean/commit/6165382c14d6f8e653ddec27accb9c042628ae10).
