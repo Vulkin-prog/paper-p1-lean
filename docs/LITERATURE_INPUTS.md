@@ -1293,3 +1293,14 @@ proved polylogarithmic-shift budget. No new unproved literature input
 or Paper C port is introduced. Source auxiliary construction and
 unimodular transport remain open. See
 [alignment](ZERO_DEGREE_AUXILIARY_ALIGNMENT.md).
+
+## The actual retained class and compressed blocks
+
+Stable ID: `P1-ALG-RETAINED-CLASS`. Status: **proved, full T12.1**.
+
+Actual span-rank and relation-kernel identities prove compressed
+directness, heredity, the unique pair and the heterogeneous boundary
+increment. Existing arithmetic good-edge compression gives explicit
++1 constants and L>=7. The actual source class and critical-band
+threshold are proved without new unproved literature inputs or a
+Paper C port. See [alignment](RETAINED_CLASS_ALIGNMENT.md).

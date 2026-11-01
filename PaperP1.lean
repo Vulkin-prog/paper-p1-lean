@@ -400,3 +400,8 @@ public import PaperP1.Diophantine.ZeroDegreeQuadraticFibres
 public import PaperP1.Diophantine.IntegerLinearFibres
 public import PaperP1.Diophantine.ZeroDegreeLinearFibres
 public import PaperP1.Asymptotics.ZeroDegreeAuxiliaryCounts
+public import PaperP1.Affine.RetainedNullity
+public import PaperP1.Affine.RetainedDependence
+public import PaperP1.Affine.CompressedBlocks
+public import PaperP1.Model.RetainedGoodEdges
+public import PaperP1.Asymptotics.RetainedClassTheorem

@@ -2333,6 +2333,63 @@
       "validation_history": [
         "a1ed70f2f336473fa51b6e345409308f78b78873"
       ]
+    },
+    {
+      "id": "P1-MATH-0051",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:stop:class",
+        "number": "T12.1",
+        "page": 50,
+        "source": "companion_sections/stopped.tex",
+        "line": 58,
+        "statement_sha256": "ed9f0c28da35e7bb5006b72ac613951a9561404177bd32039821cfffa1c8ec46"
+      },
+      "original_assumption": "T12.1 is stated on the regular family, where every effective space has dimension L, and records rho(e)<=L/3+O(1) and rho(boundary)<=4L/3+O(1)<3L/2 for large N.",
+      "finding": "Heredity and uniqueness of the compressed dependent pair do not require equal local dimensions. Supermodularity of actual relation-kernel nullity proves rho(J)=rho(J intersect e) for every J subset I whenever e subset I and rho(I)=rho(e). The literal compressed-block direct-sum condition is proved equivalent to this nullity equality. A general finite boundary bound is R+L from edge loss R and maximal local rank L. On the actual regular windows and leading good edges, finite compression gives the explicit constants rho(e)<=L/3+1 and 0<rho(boundary)<=4L/3+1<3L/2 for N>=2,L>=7.",
+      "evidence": [
+        "PaperP1.RetainedNullity.span_finite",
+        "PaperP1.RetainedNullity.span_union",
+        "PaperP1.RetainedNullity.span_inter_le",
+        "PaperP1.RetainedNullity.rank_submodular",
+        "PaperP1.RetainedNullity.nullity_supermodular",
+        "PaperP1.RetainedNullity.nullity_singleton",
+        "PaperP1.RetainedNullity.nullity_card_le_one",
+        "PaperP1.RetainedNullity.compressed_restriction",
+        "PaperP1.RetainedNullity.nullity_insert_le",
+        "PaperP1.RetainedNullity.span_pair",
+        "PaperP1.RetainedNullity.nullity_pair_eq_intersection",
+        "PaperP1.RetainedDependence.pair_inter_card_le_one",
+        "PaperP1.RetainedDependence.compressed_subfamily",
+        "PaperP1.RetainedDependence.hereditary",
+        "PaperP1.RetainedDependence.dependent_pair_unique",
+        "PaperP1.RetainedDependence.retained_nullity_le",
+        "PaperP1.RetainedDependence.boundary_nullity_bound",
+        "PaperP1.CompressedBlocks.range_addition",
+        "PaperP1.CompressedBlocks.nullity_identity",
+        "PaperP1.CompressedBlocks.direct_iff_compressed",
+        "PaperP1.CompressedBlocks.direct_family_iff_zero_nullity",
+        "PaperP1.CompressedBlocks.sourceRetained_iff",
+        "PaperP1.RetainedGoodEdges.good_pair_card",
+        "PaperP1.RetainedGoodEdges.good_pair_regular",
+        "PaperP1.RetainedGoodEdges.good_pair_positive",
+        "PaperP1.RetainedGoodEdges.good_pair_nullity_le",
+        "PaperP1.RetainedGoodEdges.nullity_eq_rank_deficit",
+        "PaperP1.RetainedGoodEdges.hereditary",
+        "PaperP1.RetainedGoodEdges.unique_dependent_pair",
+        "PaperP1.RetainedGoodEdges.finite_boundary_bound",
+        "PaperP1.RetainedClassTheorem.companion_T12_1"
+      ],
+      "proposed_revision": "State the finite heterogeneous heredity/unique-pair lemma and its exact restriction identity. Give the compressed-family nullity identity as the bridge to the direct-sum definition. Then specialize to the regular equal-rank family, replacing the unspecified bounded constants by +1 and recording L>=7 as a sufficient finite boundary threshold.",
+      "impact": "Completes companion T12.1 on the actual square-class spaces, regular ground set and literal good-edge family. The critical-band threshold precedes all lengths, real prime cutoffs and finite families. Heredity and uniqueness have wider heterogeneous scope; boundary constants are explicit. Numbered coverage becomes 55/167.",
+      "validation": "Full Lean v4.36.0-rc2 build (9537 jobs), actual axiom audit of all 3826 theorem/lemma declarations, and direct Lean checks of all 1541 distinct coverage/finding names. Only propext, Classical.choice and Quot.sound occur. The full actual T12.1 statement, exact compressed-block equivalence and strengthened heterogeneous/finite scope are proved. No new unproved literature input or Paper C port is introduced. Original manuscript bytes are unchanged.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

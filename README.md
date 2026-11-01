@@ -4,7 +4,9 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 54 / 167 numbered results proved.**
+**Status: active formalization, 55 / 167 numbered results proved.**
+Companion T12.1 now proves the actual retained class is hereditary, has a unique dependent pair, and has boundary nullity at most 4L/3+1. See the
+[complete retained-class alignment](docs/RETAINED_CLASS_ALIGNMENT.md).
 Companion T1.9 now covers the full enlarged geometric alignment, including
 zero exact units and both orientations, with its fixed-height enlarged-prime
 rate. The earlier one-unit coverage error and its subsequent closure are

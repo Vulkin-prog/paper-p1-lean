@@ -2562,3 +2562,22 @@ occur; original manuscript bytes are unchanged.
 Validated degree-zero auxiliary checkpoint (9,527 build jobs;
 3,795 audited declarations; 1,510 directly checked names):
 [dd119c7505ddbf17cd3c21f324e5ae8f4f2625de](https://github.com/Vulkin-prog/paper-p1-lean/commit/dd119c7505ddbf17cd3c21f324e5ae8f4f2625de).
+
+## Companion T12.1 — the actual first retained class
+
+Exact span-rank submodularity and relation-kernel supermodularity give
+rho(J)=rho(J intersect e) for a compressed pair. The actual compressed
+block addition map is proved injective exactly when rho(I)=rho(e).
+The source class is hereditary and has a unique dependent pair, even
+with heterogeneous local dimensions. On actual regular windows and
+literal good edges, rho(e)<=L/3+1 and the actual ordered boundary
+satisfies 0<rho(I)<=4L/3+1<3L/2 for N>=2,L>=7. One critical-band
+threshold precedes all lengths, real prime cutoffs and families.
+Companion T12.1 is complete; coverage is 55/167, with 51 confirmed
+improvements. This is P1-MATH-0051. See
+[alignment](RETAINED_CLASS_ALIGNMENT.md).
+
+The full build passed (9,537 jobs), the actual axiom audit passed for
+all 3,826 declarations, and Lean checked all 1,541 distinct
+coverage/finding names. Only propext, Classical.choice and Quot.sound
+occur; original manuscript bytes are unchanged.

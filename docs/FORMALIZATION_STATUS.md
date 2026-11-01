@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **54 / 167**: article Propositions 3.1, 4.1, 5.2, 13.7, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **55 / 167**: article Propositions 3.1, 4.1, 5.2, 13.7, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3795 audited theorem/lemma declarations**. This
+- The project currently has **3826 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1601,3 +1601,22 @@ occur; original manuscript bytes are unchanged.
 Validated degree-zero auxiliary checkpoint (9,527 build jobs;
 3,795 audited declarations; 1,510 directly checked names):
 [dd119c7505ddbf17cd3c21f324e5ae8f4f2625de](https://github.com/Vulkin-prog/paper-p1-lean/commit/dd119c7505ddbf17cd3c21f324e5ae8f4f2625de).
+
+## Companion T12.1 — the actual first retained class
+
+Exact span-rank submodularity and relation-kernel supermodularity give
+rho(J)=rho(J intersect e) for a compressed pair. The actual compressed
+block addition map is proved injective exactly when rho(I)=rho(e).
+The source class is hereditary and has a unique dependent pair, even
+with heterogeneous local dimensions. On actual regular windows and
+literal good edges, rho(e)<=L/3+1 and the actual ordered boundary
+satisfies 0<rho(I)<=4L/3+1<3L/2 for N>=2,L>=7. One critical-band
+threshold precedes all lengths, real prime cutoffs and families.
+Companion T12.1 is complete; coverage is 55/167, with 51 confirmed
+improvements. This is P1-MATH-0051. See
+[alignment](RETAINED_CLASS_ALIGNMENT.md).
+
+The full build passed (9,537 jobs), the actual axiom audit passed for
+all 3,826 declarations, and Lean checked all 1,541 distinct
+coverage/finding names. Only propext, Classical.choice and Quot.sound
+occur; original manuscript bytes are unchanged.
