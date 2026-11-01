@@ -1715,7 +1715,7 @@
         "statement_sha256": "3f277bcb49753b0c57c75eaa012cdfc127c5f3253a66fb6fe0c40707b4e533e4"
       },
       "original_assumption": "The proof of fixed-channel mass T2.5 uses N*w(a,b) translations, up to endpoint errors, for each choice of within-window placements, with w(a,b)=2*(2a-b)/(a*b). The article leading pair calculation uses N/3 for each leading channel.",
-      "finding": "For positive coprime a<b<2a, offsets u,v of absolute value at most B and N>=(a+b)B, the exact integer translation interval has endpoints ceil((N+u)/a) and ceil((2N+v)/b). Its cardinality differs from N*(2/b-1/a) by at most B/a+B/b+1. For actual source indices, a proved bijection identifies this interval with the literal dyadic source-pair set. For strict N>(a+b)B, the forward and reversed families are disjoint; their union differs from N*w(a,b) by at most 2*(B/a+B/b+1), hence 6B. One critical-band threshold precedes all reduced channels b<=B^3 and all index choices. Both leading coefficients are exactly 1/3.",
+      "finding": "For positive coprime a<b<2a, offsets u,v of absolute value at most B and N>=(a+b)B, the exact integer translation interval has endpoints ceil((N+u)/a) and ceil((2N+v)/b). Its cardinality differs from N*(2/b-1/a) by at most B/a+B/b+1. For actual source indices, a proved bijection identifies this interval with the literal dyadic source-pair set. For strict N>(a+b)B, the forward and reversed families are disjoint; their union differs from N*w(a,b) by at most 2*(B/a+B/b+1), hence 6B. One critical-band threshold precedes all reduced channels b<=B^3 and all index choices. Both leading coefficients are exactly 1/3. Finite canonical patterns, consisting of a positive unit gap and the two actual within-window placements, now have total positive weight U and total signed weight S. Their actual two-orientation translation aggregates differ from N*w*U and N*w*S by at most 6B*U. The signed main term retains all predecessor cancellations; absolute values are used only to control the error. U>=0 and |S|<=U are proved, including empty sums.",
       "evidence": [
         "PaperP1.SourceTranslationInterval.rational_interval_error",
         "PaperP1.SourceTranslationInterval.ordered_bounds",
@@ -1735,11 +1735,26 @@
         "PaperP1.ActualSourceTranslations.simple_errors",
         "PaperP1.SourceTranslationCount.uniform_counts",
         "PaperP1.SourceTranslationCount.all_heights",
-        "PaperP1.SourceTranslationCount.leading_counts"
+        "PaperP1.SourceTranslationCount.leading_counts",
+        "PaperP1.WeightedTranslationError.weighted_error",
+        "PaperP1.ChannelWordHosts.placement_index_val",
+        "PaperP1.ChannelWordHosts.weight_nonneg",
+        "PaperP1.ChannelWordHosts.sign_abs",
+        "PaperP1.ChannelWordHosts.pattern_sign_abs",
+        "PaperP1.ChannelWordHosts.pattern_sum",
+        "PaperP1.ChannelWordHosts.unsigned_weight_sum",
+        "PaperP1.ChannelWordHosts.signed_weight_sum",
+        "PaperP1.ChannelWordHosts.unsigned_weight_total",
+        "PaperP1.ChannelWordHosts.signed_weight_total",
+        "PaperP1.ChannelWordHosts.unsigned_nonneg",
+        "PaperP1.ChannelWordHosts.signed_abs_le_unsigned",
+        "PaperP1.ChannelWordHosts.unsigned_error",
+        "PaperP1.ChannelWordHosts.signed_error",
+        "PaperP1.ChannelWordHostCount.all_heights"
       ],
-      "proposed_revision": "Replace the unspecified endpoint translation error by the exact ceiling interval, its actual source-pair bijection and the explicit ordered/two-orientation error bounds. State the common threshold uniformly over all channel heights up to B^3. Keep the fixed-placement count distinct from a union over source indices.",
-      "impact": "Closes the actual dyadic translation-count step for fixed-channel and leading-channel calculations, with finite constants and stronger height-uniform quantifiers. The predecessor offset -1 and both orientations are included. It does not yet sum relation-word hosts, identify probability/mass contributions or bound defective normalizations. Article 3.3 and companion T2.5 remain in_progress; coverage is unchanged.",
-      "validation": "Full Lean v4.36.0-rc2 build (9323 jobs), actual axiom audit of all 3394 theorem/lemma declarations, and direct Lean checks of all 1109 distinct coverage/finding names. Only propext, Classical.choice and Quot.sound occur. The literal integer interval, actual source-pair bijection, both orientations, finite error bounds and common threshold before all heights <=B^3 are included. Article 3.3 and companion T2.5 remain in_progress; coverage stays 52/167. Original source bytes are unchanged.",
+      "proposed_revision": "Use the exact finite interval, source-pair bijection and explicit orientation error bounds, uniformly up to height B^3. Sum them over the finite canonical-pattern family with its literal predecessor signs. State the signed main term N*w*S with error <=6B*U, and distinguish fixed-index/pattern multiplicity from an unweighted union over sources. Keep actual unit-relation/Fourier identification and defective-normalization removal separate.",
+      "impact": "Closes the actual dyadic translation count and its weighted canonical-pattern summation with explicit finite errors and a threshold uniform up to height B^3. Negative predecessor offsets, both orientations, empty sums and signed cancellation in the main term are retained. The aggregate is not yet identified with the actual complete unit-relation/Fourier or probability contribution. That bridge, defective-normalization removal, full fixed-channel mass and complete pair profile remain open. Article 3.3 and T2.5 remain in_progress; coverage is unchanged.",
+      "validation": "Full Lean v4.36.0-rc2 build (9329 jobs), actual axiom audit of all 3409 theorem/lemma declarations, and direct Lean checks of all 1124 distinct coverage/finding names. Only propext, Classical.choice and Quot.sound occur. The exact translation/source-pair bijection, height-uniform count, finite canonical-pattern sums and positive/signed errors <=6B*U are proved. The actual complete unit-relation/Fourier and probability bridge remains open. Article 3.3 and T2.5 remain in_progress; coverage stays 52/167.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"

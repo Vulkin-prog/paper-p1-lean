@@ -1026,3 +1026,29 @@ is 17.97 GiB.
 Validated actual translation checkpoint and P1-MATH-0044 (9,323 build jobs;
 3,394 audited declarations; 1,109 directly checked coverage/finding names):
 [fc4c31d1a01ccb880d28fa6cdbd1d30040e054df](https://github.com/Vulkin-prog/paper-p1-lean/commit/fc4c31d1a01ccb880d28fa6cdbd1d30040e054df).
+
+## Weighted canonical-pattern translations — preserve the signed main term
+
+The actual translation counts are now summed over the finite family of
+positive unit gaps and both true within-window placements. Pattern weights
+are A_d, with the actual predecessor sign in each block. The dependent
+finite sum is proved equal to the literal nested sums. Its positive and
+signed total weights are exactly U and S; U>=0 and |S|<=U are also proved.
+
+`ChannelWordHosts.unsigned_error` and `signed_error` retain main terms
+N*w*U and N*w*S with explicit error <=6B*U. The signed term preserves
+predecessor cancellations. `ChannelWordHostCount.all_heights` gives one
+common threshold before all reduced channel heights b<=B^3 and patterns.
+This extends P1-MATH-0044; the number of confirmed improvements stays 44.
+See the [weighted pattern alignment](CHANNEL_WORD_HOSTS_ALIGNMENT.md).
+
+Coverage remains **52 / 167**. The aggregate is not yet identified with
+the actual complete unit-relation/Fourier or joint-probability contribution.
+That bridge, defective-normalization removal, full fixed-channel mass and
+complete pair profile remain open. The full build passed (9,329 jobs),
+all 3,409 theorem/lemma declarations passed the actual axiom audit, and
+all 1,124 coverage/finding names were checked directly by Lean. Only
+propext, Classical.choice and Quot.sound occur. Original sources are
+preserved. No external mathematical input, Paper C port, manuscript
+revision or Palomar registration is introduced. Ubuntu root free space
+is 17.96 GiB.

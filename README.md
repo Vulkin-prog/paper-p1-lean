@@ -26,6 +26,9 @@ predecessor-signed placements and both exact leading-channel formulas.
 Actual dyadic translations now have an exact interval bijection and
 error at most 6B for both orientations, uniformly up to height B^3.
 See the [translation checkpoint](docs/SOURCE_TRANSLATIONS_ALIGNMENT.md).
+The weighted canonical-pattern translation aggregate now retains the
+signed main term N*w*S with explicit error <=6B*U. See the
+[weighted checkpoint](docs/CHANNEL_WORD_HOSTS_ALIGNMENT.md).
 The full pair profile and fixed-channel mass remain in progress. See the
 [finite calculation](docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,

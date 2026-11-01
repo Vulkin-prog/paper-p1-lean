@@ -1825,3 +1825,34 @@ registration is made.
 Validated actual translation checkpoint and P1-MATH-0044 (9,323 build jobs;
 3,394 audited declarations; 1,109 directly checked coverage/finding names):
 [fc4c31d1a01ccb880d28fa6cdbd1d30040e054df](https://github.com/Vulkin-prog/paper-p1-lean/commit/fc4c31d1a01ccb880d28fa6cdbd1d30040e054df).
+
+## P1-MATH-0044 extended — weighted canonical-pattern translation error
+
+The fixed-placement dyadic count is now summed over the exact finite
+pattern family: a positive unit gap, both actual within-window placements,
+weight A_d and the product of the actual predecessor signs. The dependent
+sum and literal nested sums are identified. Their positive and signed
+weights are exactly U and S, with U>=0 and |S|<=U.
+
+The finite translation aggregate therefore satisfies
+
+    |unsignedHosts-N*w*U| <= 6B*U,
+    |signedHosts-N*w*S|   <= 6B*U.
+
+The signed main term is retained; only its error is controlled by the
+positive sum. Empty sums and all finite boundary terms are included.
+One critical-band threshold precedes all reduced a<b<2a, b<=B^3 and
+all patterns. Evidence: `WeightedTranslationError.weighted_error`,
+`ChannelWordHosts.pattern_sum`, `unsigned_weight_total`,
+`signed_weight_total`, `signed_abs_le_unsigned`, `unsigned_error`,
+`signed_error` and `ChannelWordHostCount.all_heights`.
+
+This extends the existing quantitative translation finding, so there
+are still 44 confirmed improvements. The aggregate has not yet been
+identified with the actual complete unit-relation/Fourier or probability
+contribution. Those bridges and defective-normalization removal remain
+open; article 3.3 and T2.5 remain in progress. Coverage stays 52/167.
+The full build passed (9,329 jobs), all 3,409 theorem/lemma declarations
+passed the actual axiom audit, and all 1,124 coverage/finding names were
+checked directly. Only propext, Classical.choice and Quot.sound occur.
+No manuscript revision or Palomar registration is made.

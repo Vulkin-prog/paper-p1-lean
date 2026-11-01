@@ -84,9 +84,11 @@ was proved at the preceding checkpoint.
 
 ## Remaining mass argument
 
-The translation count must still be summed over relation-word patterns
-with their predecessor signs. Identification with actual joint probability
-on private normalizations, exclusion of defective normalizations, the
+The later [weighted canonical-pattern checkpoint](CHANNEL_WORD_HOSTS_ALIGNMENT.md)
+sums the actual translations with their predecessor signs, retaining main
+term N*w*S and error <=6B*U. Identification with the actual complete
+unit-relation/Fourier contribution and joint probability on private
+normalizations, exclusion of defective normalizations, the
 full fixed-channel mass and complete pair profile remain open. These
 translation counts alone do not establish any of those assertions.
 No new external mathematical hypothesis, Paper C port, manuscript revision

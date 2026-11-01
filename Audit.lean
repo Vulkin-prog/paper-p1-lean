@@ -706,6 +706,19 @@ import PaperP1
 #print axioms PaperP1.ChannelSumIdentity.signed_empty
 #print axioms PaperP1.ChannelSumIdentity.signed_two_three
 #print axioms PaperP1.ChannelSumIdentity.signed_three_four
+#print axioms PaperP1.ChannelWordHosts.placement_index_val
+#print axioms PaperP1.ChannelWordHosts.weight_nonneg
+#print axioms PaperP1.ChannelWordHosts.sign_abs
+#print axioms PaperP1.ChannelWordHosts.pattern_sign_abs
+#print axioms PaperP1.ChannelWordHosts.pattern_sum
+#print axioms PaperP1.ChannelWordHosts.unsigned_weight_sum
+#print axioms PaperP1.ChannelWordHosts.signed_weight_sum
+#print axioms PaperP1.ChannelWordHosts.unsigned_weight_total
+#print axioms PaperP1.ChannelWordHosts.signed_weight_total
+#print axioms PaperP1.ChannelWordHosts.unsigned_nonneg
+#print axioms PaperP1.ChannelWordHosts.signed_abs_le_unsigned
+#print axioms PaperP1.ChannelWordHosts.unsigned_error
+#print axioms PaperP1.ChannelWordHosts.signed_error
 #print axioms PaperP1.ChebyshevPrimeCount.card_primes
 #print axioms PaperP1.ChebyshevPrimeCount.card_lowPrimes_le
 #print axioms PaperP1.ChebyshevPrimeCount.highPrimes_subset_primes
@@ -1531,6 +1544,7 @@ import PaperP1
 #print axioms PaperP1.WeightedPrimeSum.logPrimeSum_le_uniform
 #print axioms PaperP1.WeightedPrimeSum.shifted_primeSum_le_uniform
 #print axioms PaperP1.WeightedPrimeSum.primeSum_mul_log_le_uniform
+#print axioms PaperP1.WeightedTranslationError.weighted_error
 #print axioms PaperP1.WindowPoolCount.card_fixed_offset_le
 #print axioms PaperP1.WindowPoolCount.sum_supportedIndices_le
 #print axioms PaperP1.WindowPoolCount.sum_supportedIndices_dyadic
@@ -1552,6 +1566,7 @@ import PaperP1
 #print axioms PaperP1.BoundedObservationPool.widthEnvelope_ge_one
 #print axioms PaperP1.BoundedObservationPool.pool_budget_le_envelope
 #print axioms PaperP1.BoundedObservationPool.pool_count_logarithmic
+#print axioms PaperP1.ChannelWordHostCount.all_heights
 #print axioms PaperP1.ConditionalPoolLower.lowerConstant_pos
 #print axioms PaperP1.ConditionalPoolLower.cast_sub_one_lower
 #print axioms PaperP1.ConditionalPoolLower.binary_factor_lower

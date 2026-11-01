@@ -1021,3 +1021,13 @@ scale lemma. No external lattice-counting input is assumed and no new
 Paper C source is used. Probability/mass identification and defective
 normalizations remain separate. See the
 [translation alignment](SOURCE_TRANSLATIONS_ALIGNMENT.md).
+
+## Weighted canonical-pattern translation aggregation
+
+Finite dependent sums and a proved weighted triangle inequality combine
+the actual source translation counts into main terms N*w*U and N*w*S
+with error <=6B*U. The signed main term retains predecessor cancellation.
+The result is uniform through reduced height B^3. No external summation
+or mass estimate is assumed. Identification with actual complete unit
+relations/Fourier contributions and probabilities, and defective sources,
+remain open. See the [weighted alignment](CHANNEL_WORD_HOSTS_ALIGNMENT.md).

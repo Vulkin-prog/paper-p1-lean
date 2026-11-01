@@ -317,3 +317,6 @@ public import PaperP1.Arithmetic.ChannelPlacements
 public import PaperP1.Arithmetic.SourceTranslationInterval
 public import PaperP1.Arithmetic.ActualSourceTranslations
 public import PaperP1.Asymptotics.SourceTranslationCount
+public import PaperP1.Arithmetic.WeightedTranslationError
+public import PaperP1.Arithmetic.ChannelWordHosts
+public import PaperP1.Asymptotics.ChannelWordHostCount
