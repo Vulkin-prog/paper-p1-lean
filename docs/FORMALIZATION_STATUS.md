@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **32 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1, together with Lemmas T19.13, T2.1, T2.2, T4.2, T20.2, T20.5, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **33 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1, together with Lemmas T19.13, T2.1, T2.2, T4.2, T20.2, T20.5, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **2123 audited theorem/lemma declarations**. This
+- The project currently has **2170 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -355,6 +355,14 @@ Neither document is fully formalized.
   epsilon>0. One threshold precedes all critical-band lengths and all
   finite counting orders. The stronger weighted statement allows beta>=0
   and u>=0. See [alignment](MODERATE_CERTIFICATE_ALIGNMENT.md).
+- Article Lemma 7.3 is proved for actual saturation divisor witnesses,
+  prime occurrences and receiving congruences. The explicit outgoing and
+  incoming finite bounds are B^2*(B+1)^m and B^2*(2*exp(1)*B)^m. The
+  actual simple graph's degree is the cardinality of the union of these
+  neighborhoods. Its maximum degree is uniformly N^(2/A+epsilon), with
+  one threshold before every critical-band length and every vertex. A
+  separately defined larger relation only requires D>=N and satisfies
+  the same neighborhood bounds. See [alignment](SATURATION_DEGREES_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
@@ -380,7 +388,8 @@ Neither document is fully formalized.
   logarithmic width condition for fixed sources; `P1-MATH-0019`,
   first-window regularity alone in the complete root-separation lemma;
   `P1-MATH-0020`, the wider beta and weight ranges for the weighted
-  moderate-certificate estimate.
+  moderate-certificate estimate; `P1-MATH-0021`, the lower non-strict
+  divisor threshold for saturation neighborhood bounds.
   No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.

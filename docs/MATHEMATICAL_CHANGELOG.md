@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Twenty mathematical improvements are confirmed; no error in a manuscript conclusion
+**Twenty-one mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -720,3 +720,33 @@ All 349 distinct coverage/finding declaration names were checked directly by Lea
 
 Validated implementation of both conclusions of article Lemma 7.2 and P1-MATH-0020:
 [62861d120c500f4fcb910532aaa8eea5a6d6930b](https://github.com/Vulkin-prog/paper-p1-lean/commit/62861d120c500f4fcb910532aaa8eea5a6d6930b).
+
+## P1-MATH-0021 — Lower divisor threshold for saturation degree bounds
+
+- Location: article Lemma 7.3, page 24, `p1:core:degrees`,
+  `main_sections/cores.tex:92` in V1.6.
+- Original setting: a saturation witness has D>6*N*B.
+- Improvement: for the degree estimates, the same exponent 2/A holds for
+  the larger relation whose witness only needs D>=N. The non-strict
+  endpoint is included. The actual enlarged incoming and outgoing
+  neighborhoods, and their union, are all uniformly at most
+  N^(2/A+epsilon) for every epsilon>0.
+- The explicit finite bounds are B^2*(B+1)^m and
+  B^2*(2*exp(1)*B)^m, with their sum bounding the union. They hold for
+  N>=10, 2<=B<=N+1 and Y>=B, with the literal source ceiling m.
+  The incoming powerset estimate is valid at every finite m and does
+  not require the source intermediate condition m<=R/2.
+- Evidence: `RelaxedSaturationDegrees.relaxed_neighborhood_bounds`,
+  `RelaxedSaturation.outgoing_bound`, `incoming_bound`, `neighbors_bound`,
+  `source_edge_subset`, `SaturationPrimes.divisor_data_of_le` and
+  `BoundedSubsetWeights.weightSum_le_of_card_le`.
+- Suggested revision: note the broader degree estimate separately. Keep
+  the original 6*N*B threshold in any moderate/nonmoderate decomposition
+  whose cost uses it. No replacement in the entire core argument is
+  claimed, and no manuscript conclusion is corrected.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,893 jobs),
+  followed by the actual audit of all 2,170 theorem/lemma declarations.
+  Only `propext`, `Classical.choice` and `Quot.sound` occur. Not integrated
+  into a new manuscript version.
+
+All 374 distinct coverage/finding declaration names were checked directly by Lean.

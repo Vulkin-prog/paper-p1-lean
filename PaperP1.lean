@@ -90,6 +90,15 @@ public import PaperP1.Arithmetic.ModerateWeightedSeries
 public import PaperP1.Asymptotics.ModerateOrder
 public import PaperP1.Asymptotics.ModerateFactorialBudget
 public import PaperP1.Asymptotics.ModerateCertificateAsymptotic
+public import PaperP1.Combinatorics.BoundedSubsetWeights
+public import PaperP1.Arithmetic.PrimeSubsetCertificates
+public import PaperP1.Arithmetic.SaturationPrimes
+public import PaperP1.Arithmetic.SaturationCounts
+public import PaperP1.Combinatorics.SaturationGraph
+public import PaperP1.Asymptotics.SaturationDegreeBudget
+public import PaperP1.Asymptotics.SaturationDegrees
+public import PaperP1.Arithmetic.RelaxedSaturation
+public import PaperP1.Asymptotics.RelaxedSaturationDegrees
 public import PaperP1.Analysis.IntegerProductTail
 public import PaperP1.Coding.CoordinateRegularisation
 public import PaperP1.Coding.TernaryConstraints

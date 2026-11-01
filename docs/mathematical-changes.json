@@ -691,6 +691,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "62861d120c500f4fcb910532aaa8eea5a6d6930b"
+    },
+    {
+      "id": "P1-MATH-0021",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:core:degrees",
+        "number": "7.3",
+        "page": 24,
+        "source": "main_sections/cores.tex",
+        "line": 92,
+        "statement_sha256": "c75c4927a6ff796073b8aa42a2e034b84529436494cc2b060e89b93c4e02bed4"
+      },
+      "original_assumption": "The source saturation relation uses a divisor D>6*N*B of the kernel product of two distinct anchor values.",
+      "finding": "For the saturation degree estimates alone, the divisor threshold can be lowered to the non-strict D>=N. The separately defined larger relation has outgoing degree at most B^2*(B+1)^m, incoming degree at most B^2*(2*exp(1)*B)^m, and the union of both neighborhoods at most twice the latter. All are uniformly at most N^(2/A+epsilon) in the critical band for every epsilon>0.",
+      "evidence": [
+        "PaperP1.RelaxedSaturationDegrees.relaxed_neighborhood_bounds",
+        "PaperP1.RelaxedSaturation.outgoing_bound",
+        "PaperP1.RelaxedSaturation.incoming_bound",
+        "PaperP1.RelaxedSaturation.neighbors_bound",
+        "PaperP1.RelaxedSaturation.source_edge_subset",
+        "PaperP1.SaturationPrimes.divisor_data_of_le",
+        "PaperP1.PrimeSubsetCertificates.card_targets_le",
+        "PaperP1.BoundedSubsetWeights.weightSum_le_of_card_le"
+      ],
+      "proposed_revision": "Record that the degree-counting argument works already at D>=N. Keep the original threshold 6*N*B in the moderate/nonmoderate certificate decomposition wherever its quantitative cost requires that choice. The explicit incoming finite bound also avoids a separate m<=R/2 condition.",
+      "impact": "Strengthens the degree estimate to a larger relation, including D=N. A residue class modulo a squarefree product at least N contains at most one of the N possible centers. The broadened threshold is asserted only for these degree estimates, not for the entire core argument.",
+      "validation": "Full Lean v4.36.0-rc2 build (8893 jobs) and actual axiom audit of all 2170 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 374 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

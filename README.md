@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 32 / 167 numbered results proved.**
+**Status: active formalization, 33 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The principal Poisson asymptotic theorems remain open.
@@ -142,6 +142,10 @@ and weighted sum over all growing orders. The literal ceiling and factorial
 budget give the exponent -2*beta+4/A+o(1), uniformly over critical-band
 lengths. The weighted bound also permits beta>=0 and u>=0. See
 [moderate-certificate alignment](docs/MODERATE_CERTIFICATE_ALIGNMENT.md).
+Article Lemma 7.3 is proved for the actual incoming/outgoing saturation
+neighbors and actual finite graph. Their uniform degree exponent is 2/A.
+The same neighborhood bounds already hold at the lower threshold D>=N.
+See [saturation degree alignment](docs/SATURATION_DEGREES_ALIGNMENT.md).
 The sharp PNT input is proved by a selected, recompiled and audited analytic
 development, with [separate provenance](docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 

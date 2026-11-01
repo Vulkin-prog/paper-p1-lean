@@ -501,11 +501,40 @@
       "source": "main_sections/cores.tex",
       "line": 92,
       "sha256": "c75c4927a6ff796073b8aa42a2e034b84529436494cc2b060e89b93c4e02bed4",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.SaturationDegrees.main_7_3",
+        "PaperP1.SaturationDegrees.finite_conditions",
+        "PaperP1.SaturationPrimes.mem_outgoing",
+        "PaperP1.SaturationPrimes.mem_incoming",
+        "PaperP1.SaturationPrimes.pair_data",
+        "PaperP1.SaturationPrimes.divisor_data",
+        "PaperP1.SaturationPrimes.card_receiverPrimes_le",
+        "PaperP1.SaturationCounts.outgoing_subset_cover",
+        "PaperP1.SaturationCounts.incoming_subset_cover",
+        "PaperP1.SaturationCounts.outgoing_bound",
+        "PaperP1.SaturationCounts.incoming_bound",
+        "PaperP1.PrimeSubsetCertificates.mem_targets",
+        "PaperP1.PrimeSubsetCertificates.card_targets_le",
+        "PaperP1.BoundedSubsetWeights.weightSum_le_of_card_le",
+        "PaperP1.SaturationGraph.neighbors_image",
+        "PaperP1.SaturationGraph.degree_eq_union",
+        "PaperP1.SaturationGraph.directed_degrees_le_degree",
+        "PaperP1.SaturationGraph.maxDegree_bound",
+        "PaperP1.SaturationDegreeBudget.product_le_power_eventually",
+        "PaperP1.RelaxedSaturation.outgoing_bound",
+        "PaperP1.RelaxedSaturation.incoming_bound",
+        "PaperP1.RelaxedSaturation.neighbors_bound",
+        "PaperP1.RelaxedSaturation.source_edge_subset",
+        "PaperP1.RelaxedSaturationDegrees.relaxed_neighborhood_bounds"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-SATURATION-DEGREES"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0021"
+      ],
+      "notes": "All original conclusions are proved for the actual source saturation relation: distinct centers, two distinct anchor offsets, a divisor D>6*N*B of their actual truncated-kernel product, and actual receiving divisibilities. The outgoing count is at most B^2*(B+1)^m; the incoming count is at most B^2*(2*exp(1)*B)^m. The actual finite simple graph has exactly the union of the incoming/outgoing neighborhoods and maximum degree bounded by 2*B^2*(2*exp(1)*B)^m. The literal ceiling order gives exponent 2/A+epsilon uniformly, with one threshold before every critical-band length and every vertex. A stronger separately defined relation only requires D>=N and has the same finite and uniform bounds for both directed neighborhoods and their union. No certificate count, CRT estimate, prime count or degree estimate is assumed. Full build: 8893 jobs; actual audit: 2170 theorem/lemma declarations. See SATURATION_DEGREES_ALIGNMENT.md."
     },
     {
       "label": "p1:core:generator",

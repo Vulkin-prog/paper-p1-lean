@@ -20,6 +20,27 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Incoming and outgoing saturation degrees
+
+Stable ID: `P1-ARITH-SATURATION-DEGREES`. Status: **proved**.
+
+- Target: article Lemma 7.3, page 24, `p1:core:degrees`.
+- Lean: `SaturationDegrees.main_7_3`, including both directed degrees and
+  the maximum degree of the actual finite symmetrized graph.
+- Actual anchor kernels and receiver prime pools have internally proved
+  product and cardinality budgets. Bounded prime subsets and offset
+  assignments enumerate all qualifying congruence certificates. Each
+  product at least N fixes at most one center in the interval of N points.
+- A finite powerset generating identity gives the explicit incoming bound
+  without an assumed binomial estimate or an extra large-N size condition.
+  The exact growing ceiling and logarithmic limits give the uniform power.
+- No prime estimate beyond the internally proved product budget is used.
+  Mathlib at the pinned revision supplies finite powersets, products,
+  elementary exponential inequalities and finite simple graph definitions.
+  No additional Paper C source is ported.
+- See [alignment](SATURATION_DEGREES_ALIGNMENT.md) and P1-MATH-0021 for the
+  separately verified lower threshold. It concerns the degree bounds only.
+
 ## Moderate congruence certificates — both conclusions proved
 
 Stable ID: `P1-ARITH-MODERATE-CERTIFICATES`. Status: **proved**.
