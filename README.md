@@ -9,6 +9,8 @@ Companion T12.1 now proves the actual retained class is hereditary, has a unique
 [complete retained-class alignment](docs/RETAINED_CLASS_ALIGNMENT.md).
 Companion T12.2 now proves the actual large-boundary mass estimate with the source least cutoff, and strengthens its decay to N^(-5/3). See the
 [complete large-boundary alignment](docs/LARGE_BOUNDARY_TAIL_ALIGNMENT.md).
+The exact least cutoff also has the source asymptotic 3*log(N)/loglog(N) and its eventual K<=L/4 range. See the
+[cutoff asymptotic alignment](docs/BOUNDARY_CUTOFF_ASYMPTOTICS_ALIGNMENT.md).
 Companion T1.9 now covers the full enlarged geometric alignment, including
 zero exact units and both orientations, with its fixed-height enlarged-prime
 rate. The earlier one-unit coverage error and its subsequent closure are

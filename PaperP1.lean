@@ -409,3 +409,6 @@ public import PaperP1.Combinatorics.LargeSubsetWeights
 public import PaperP1.Asymptotics.BoundaryCutoff
 public import PaperP1.Model.LargeBoundaryMass
 public import PaperP1.Asymptotics.LargeBoundaryTail
+public import PaperP1.Asymptotics.ModerateOrderLogarithm
+public import PaperP1.Asymptotics.BoundaryCutoffTrial
+public import PaperP1.Asymptotics.BoundaryCutoffScale

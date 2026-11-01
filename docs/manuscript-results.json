@@ -3573,13 +3573,28 @@
         "PaperP1.LargeBoundaryTail.companion_T12_2_with_mean_bound",
         "PaperP1.LargeBoundaryTail.companion_T12_2",
         "PaperP1.LargeBoundaryTail.improved_critical_mass_bound",
-        "PaperP1.LargeBoundaryTail.improved_source_tail"
+        "PaperP1.LargeBoundaryTail.improved_source_tail",
+        "PaperP1.ModerateOrderLogarithm.order_pos_eventually",
+        "PaperP1.ModerateOrderLogarithm.log_order_ratio_tendsto",
+        "PaperP1.ModerateOrderLogarithm.order_real_tendsto_atTop",
+        "PaperP1.ModerateOrderLogarithm.logarithmic_cost_tendsto",
+        "PaperP1.BoundaryCutoffTrial.trial_condition_eventually",
+        "PaperP1.BoundaryCutoffTrial.cutoff_le_trial_eventually",
+        "PaperP1.BoundaryCutoffTrial.cutoff_div_log_tendsto",
+        "PaperP1.BoundaryCutoffTrial.critical_quarter_range",
+        "PaperP1.BoundaryCutoffScale.lowerBound_tendsto",
+        "PaperP1.BoundaryCutoffScale.lowerBound_le_eventually",
+        "PaperP1.BoundaryCutoffScale.scaled_le_trial_eventually",
+        "PaperP1.BoundaryCutoffScale.scaled_tendsto_three",
+        "PaperP1.BoundaryCutoffScale.cutoff_asymptotic_ratio",
+        "PaperP1.BoundaryCutoffScale.cutoff_real_tendsto_atTop",
+        "PaperP1.BoundaryCutoffScale.cutoff_tendsto_atTop"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
         "P1-MATH-0052"
       ],
-      "notes": "Full actual T12.2 with the source least cutoff, proved existence/minimality, actual regular mean and incompatible families retained. A finite powerset exponential tilt gives tail <=N^(-3); exact source boundary nullity gives the stated mass <=2^(3C/2)*N^(-3/2). The more precise T12.1 bound further proves mass <=2*2^(4C/3)*N^(-5/3), with the same cutoff and hypotheses. One critical-band threshold precedes all lengths, real prime cutoffs and families. The separate unnumbered cutoff asymptotic and eventual K<=L/4 range remain open; they are not needed for this numbered estimate."
+      "notes": "Full actual T12.2 with the source least cutoff, proved existence/minimality, actual regular mean and incompatible families retained. A finite powerset exponential tilt gives tail <=N^(-3); exact source boundary nullity gives the stated mass <=2^(3C/2)*N^(-3/2). The more precise T12.1 bound further proves mass <=2*2^(4C/3)*N^(-5/3), with the same cutoff and hypotheses. One critical-band threshold precedes all lengths, real prime cutoffs and families. The separately displayed unnumbered cutoff asymptotic is now proved for the exact least integer: K_N/(log N/loglog N) tends to 3, K_N/log N tends to zero, K_N tends to infinity, and one threshold gives K_N<=floor(L/4) uniformly in critical lengths."
     },
     {
       "label": "p1:core:fixed-centred",

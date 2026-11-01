@@ -1317,3 +1317,15 @@ retained boundary nullity yield both the source N^(-3/2) mass estimate
 and the stronger N^(-5/3) estimate, with a proved upper mean. No new
 unproved literature input or Paper C port is introduced. See
 [alignment](LARGE_BOUNDARY_TAIL_ALIGNMENT.md).
+
+## Exact least-cutoff asymptotic and critical range
+
+Stable ID: `P1-ASYM-EXACT-BOUNDARY-CUTOFF`. Status: **proved source claims**.
+
+The existing rounded moderate-order asymptotic is extended to its
+logarithm and logarithmic cost. Admissible trials and leastness give
+the actual cutoff upper bounds; its defining cost gives the matching
+normalized lower bound. The exact coefficient three, divergence,
+o(log N) and eventual K<=floor(L/4) are proved, with no new unproved
+literature input or Paper C port. See
+[alignment](BOUNDARY_CUTOFF_ASYMPTOTICS_ALIGNMENT.md).

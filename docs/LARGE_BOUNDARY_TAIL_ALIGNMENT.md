@@ -81,12 +81,12 @@ cutoff and no additional hypotheses,
 positive probability sums; no centered-to-positive conversion or
 arithmetic counting assertion is assumed.
 
-The separately displayed unnumbered cutoff asymptotic
-K~3*log(N)/loglog(N), and its eventual K<=L/4 range, are not yet
-proved by this checkpoint and remain for their later uses. They are
-not required in this numbered large-boundary estimate. Neither
-original manuscript is edited, and no new unproved literature input,
-Paper C port or Palomar registration is introduced.
+The later [cutoff asymptotic checkpoint](BOUNDARY_CUTOFF_ASYMPTOTICS_ALIGNMENT.md)
+now proves K~3*log(N)/loglog(N), K=o(log N), divergence, and the eventual
+literal K<=floor(L/4) critical range for this exact least cutoff. These
+separate claims are available for their later uses. Neither original
+manuscript is edited, and no new unproved literature input, Paper C
+port or Palomar registration is introduced.
 
 The full build passed (9,545 jobs), the actual axiom audit passed for
 all 3,855 declarations, and Lean checked all 1,570 distinct

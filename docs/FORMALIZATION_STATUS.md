@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3855 audited theorem/lemma declarations**. This
+- The project currently has **3870 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1649,3 +1649,19 @@ occur; original manuscript bytes are unchanged.
 Validated full T12.2 and improved-tail checkpoint (9,545 build jobs;
 3,855 audited declarations; 1,570 directly checked names):
 [e2a0e935344ae4c6ae3fc666de9e050d61fecaa5](https://github.com/Vulkin-prog/paper-p1-lean/commit/e2a0e935344ae4c6ae3fc666de9e050d61fecaa5).
+
+## The exact least cutoff has the source asymptotic and range
+
+Admissible rounded moderate trials and minimality bound the actual
+least cutoff. Its normalized lower cost supplies the matching limit:
+K_N/(log N/loglog N) tends to three. Also K_N/log N tends to zero,
+K_N tends to infinity, and K_N<=floor(L/4) holds eventually under one
+threshold before all critical lengths. This closes the accompanying
+unnumbered claims for every fixed positive upper mean and extends
+P1-MATH-0052. Coverage stays 56/167, with 52 confirmed improvements.
+See [alignment](BOUNDARY_CUTOFF_ASYMPTOTICS_ALIGNMENT.md).
+
+The full build passed (9,551 jobs), the actual axiom audit passed for
+all 3,870 declarations, and Lean checked all 1,585 distinct
+coverage/finding names. Only propext, Classical.choice and Quot.sound
+occur; original manuscript bytes are unchanged.
