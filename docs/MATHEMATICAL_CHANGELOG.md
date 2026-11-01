@@ -1034,3 +1034,22 @@ Validated implementation of companion T19.7:
 
 Validated finite conditional-rank implementation and P1-MATH-0029:
 [dd3755df492b2fab0b50515d6b3b1dfc75014e3d](https://github.com/Vulkin-prog/paper-p1-lean/commit/dd3755df492b2fab0b50515d6b3b1dfc75014e3d).
+
+## Companion T21.2 — Closure of its actual prime-pool asymptotic
+
+The remaining fixed-j estimate is now proved. Actual old windows give
+the uniform logarithmic prime-pool budget, and the proved Euler bound
+gives its N^(1/2+epsilon) value count. Positive squares give the lower
+scale. Exact binary factors and integer-floor errors place the source
+pool term between N^(1/2-delta-epsilon) and
+N^(1/2-delta+epsilon). One threshold precedes every critical length,
+old-window choice and realizable old raw vector. The exact finite laws
+and the P1-MATH-0029 improvement are retained. See
+[complete alignment](CONDITIONAL_RANK_ALIGNMENT.md).
+
+The full build passed (9,061 jobs), and all 2,687 theorem/lemma declarations
+passed the actual axiom audit with only `propext`, `Classical.choice`
+and `Quot.sound`. All 602 distinct coverage/finding declaration names
+were checked directly by Lean. Coverage is 41 / 167, with 29 confirmed
+improvements. Original sources are preserved; no Palomar registration
+is made. The earlier finite validation remains recorded above.

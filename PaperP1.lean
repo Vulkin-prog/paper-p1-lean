@@ -181,3 +181,9 @@ public import PaperP1.Model.ConditionalCountMean
 public import PaperP1.Model.ConditionalRunBudget
 public import PaperP1.Model.ConditionalRunProbability
 public import PaperP1.Model.ConditionalRunRank
+public import PaperP1.Arithmetic.OldValuePrimeBudget
+public import PaperP1.Arithmetic.SquarePoolLower
+public import PaperP1.Asymptotics.LogSquaredPrimePool
+public import PaperP1.Asymptotics.ConditionalPoolTerm
+public import PaperP1.Asymptotics.ConditionalPoolLower
+public import PaperP1.Asymptotics.ConditionalRankTheorem

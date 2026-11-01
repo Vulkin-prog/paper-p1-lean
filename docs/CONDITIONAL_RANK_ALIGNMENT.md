@@ -6,10 +6,9 @@ Target: companion Lemma T21.2, page 87,
 Original statement SHA-256:
 `818e94ea77616ce313f8e69cbcebc377f10bdc8f890c65705c43961bdb26a2e8`.
 
-Status at this checkpoint: **in progress**. The finite rank, exact
-conditional probability and conditional-mean statements are proved. The
-last fixed-j asymptotic estimate for the prime-pool count remains open,
-so this checkpoint adds no completed numbered result.
+Status: **proved**, including the finite rank, exact conditional laws,
+conditional mean and matching fixed-j logarithmic asymptotic. The
+earlier finite checkpoint is preserved below.
 
 ## Actual old space and the supported even kernel
 
@@ -92,16 +91,69 @@ literature statement is introduced. Mathlib at the pinned revision
 supplies finite-dimensional quotient and annihilator duality, finite
 sums, finite product probabilities and the infinite-cylinder bridge.
 
-## Finite checkpoint validation
+## Earlier finite checkpoint validation
 
 The full Lean v4.36.0-rc2 build passed (9,049 jobs). The actual axiom
 audit passed for all 2,655 theorem/lemma declarations, allowing only
 `propext`, `Classical.choice` and `Quot.sound`. All 589 distinct
 coverage/finding names were checked directly by Lean. All original
 source bytes and 167 numbered statement hashes are preserved.
-Coverage remains 40 / 167, since the final T21.2 asymptotic is open.
+Coverage at that earlier checkpoint was 40 / 167; its T21.2 asymptotic
+was then still open.
 There are 29 confirmed improvements; no Palomar registration is made.
 Available Ubuntu-root space is 17.92 GiB.
 
 Validated finite conditional-rank implementation and P1-MATH-0029:
 [dd3755df492b2fab0b50515d6b3b1dfc75014e3d](https://github.com/Vulkin-prog/paper-p1-lean/commit/dd3755df492b2fab0b50515d6b3b1dfc75014e3d).
+
+## Closure of the actual fixed-j asymptotic
+
+`OldValuePrimeBudget.rawValues` constructs the union of all raw values
+used by the actual old starts. It has at most j*B values, all in [1,3N].
+The sum of logarithms of its prime divisors is at most the sum of the
+logarithms of these values. Together with the finite primorial bound,
+this gives
+
+    sum_{p in pool} log p <= B*log 4 + j*B*log(3N).
+
+The upper critical-band width makes this at most (a_j*log N)^2 for an
+explicit constant a_j. `LogSquaredPrimePool.count_le_power_eventually`
+uses the already proved prime-budget Euler inequality at sigma=1/2.
+Its logarithmic cost divided by log N tends to zero, with an explicit
+threshold uniform over every admissible finite prime set. Consequently
+`actual_pool_count_critical` proves card(poolValues)<=N^(1/2+epsilon)
+uniformly over all old starts and lengths in the fixed critical band.
+Positive squares give the lower bound sqrt(N)/2 for every pool.
+
+`ConditionalPoolTerm.binary_factor_bound` keeps the critical offset
+and the integer exponent T-1 exactly. It proves the required upper
+scale for every integer T<=(1-delta)L. `ConditionalPoolLower` uses the
+integer-floor error and squares to prove a matching positive-constant
+lower bound at T=floor((1-delta)L). Absorbing only fixed constants and
+logarithmic factors yields, for every epsilon>0,
+
+    N^(1/2-delta-epsilon) <= p*2^(T-1)*B*card(poolValues)
+                         <= N^(1/2-delta+epsilon).
+
+`ConditionalRankTheorem.floor_conditions` proves 1<=T<=L eventually.
+`companion_T21_2` bundles this asymptotic with every finite source
+conclusion and the sharper coefficient. One threshold precedes all
+critical lengths, all old sets of cardinality at most fixed j, and
+every realizable old raw vector. Sets of cardinality at most j also
+cover repeated entries in an indexed list of j old starts.
+
+No prime-pool estimate, Euler factor, conditional law or asymptotic is
+a theorem premise. No new Paper C source or unproved external input is
+added. The positive conditional observation probability is retained.
+
+## Complete-result validation
+
+The full Lean v4.36.0-rc2 build passed (9,061 jobs). The actual axiom
+audit passed for all 2,687 theorem/lemma declarations, allowing only
+`propext`, `Classical.choice` and `Quot.sound`. All 602 distinct
+coverage/finding names were checked directly by Lean. Source checks
+passed for 138 manifest entries and all 167 original statement hashes.
+Numbered coverage is now 41 / 167: main 15 / 73, companion 26 / 94.
+The 29 confirmed mathematical improvements retain their validation
+history. No original source bytes are changed and no Palomar registration
+is made. Available Ubuntu-root space is 17.90 GiB.

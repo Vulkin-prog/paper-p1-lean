@@ -22,8 +22,7 @@ Paper C; importing an old interface alone cannot discharge this comparison.
 
 ## Conditional rank after old raw observations
 
-Stable ID: `P1-ARITH-CONDITIONAL-RANK`. Status: **finite statements proved**;
-the complete numbered T21.2 remains **in progress**.
+Stable ID: `P1-ARITH-CONDITIONAL-RANK`. Status: **proved**, complete T21.2.
 
 - The actual old square-class span and prime pool are constructed.
   Private new prime coordinates restrict the relative kernel to the
@@ -36,10 +35,15 @@ the complete numbered T21.2 remains **in progress**.
 - The original conditional Bochner expectation is the sum of the exact
   conditional probabilities. A finite incidence budget proves the source
   conditional mean bound and the sharper coefficient P1-MATH-0029.
-- No rank, compatibility, conditional probability or incidence estimate
-  is supplied as a target premise. No new Paper C code or unproved
-  literature input is introduced. The last fixed-j asymptotic pool count
-  is still to be proved. See [alignment](CONDITIONAL_RANK_ALIGNMENT.md).
+- Actual old windows supply a finite logarithmic prime-pool budget
+  O_j((log N)^2). The proved prime-budget Euler bound and squares give
+  matching N^(1/2+o(1)) pool size. Exact critical binary factors and
+  integer floors give both sides of the source final term's logarithmic
+  scale, uniformly over every old-window choice and all critical lengths.
+- No rank, compatibility, conditional probability, incidence, Euler or
+  asymptotic estimate is supplied as a target premise. No new Paper C
+  code or unproved literature input is introduced. See
+  [alignment](CONDITIONAL_RANK_ALIGNMENT.md).
 
 ## Rare arithmetic cylinder and exponential-moment divergence
 

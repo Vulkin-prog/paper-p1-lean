@@ -982,7 +982,7 @@
         "PaperP1.ConditionalRunBudget.conditional_count_bound_sharp"
       ],
       "proposed_revision": "Replace p*2^(T-1) in the finite conditional-mean pool term by p*(2^(T-1)-1)/T and include the incidence-slope argument; keep the actual overlap and large-t terms.",
-      "impact": "Reduces the source pool coefficient by the factor (1-2^(1-T))/T for T>=1; it vanishes at T=1. This does not bound the large-t population or close the remaining fixed-j asymptotic statement. No original error, threshold optimality or complete T21.2 coverage is claimed.",
+      "impact": "Reduces the source pool coefficient by the factor (1-2^(1-T))/T for T>=1; it vanishes at T=1. This finite improvement by itself does not bound the large-t population. The separate fixed-j prime-pool asymptotic was subsequently closed, completing T21.2; the recorded validation commit below preserves the earlier finite improvement checkpoint. No original error or optimality claim is made.",
       "validation": "Full Lean v4.36.0-rc2 build (9049 jobs) and actual axiom audit of all 2655 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 589 distinct coverage/finding declaration names were also checked directly by Lean.",
       "manuscript_integration": {
         "target_version": "next version after formalization",

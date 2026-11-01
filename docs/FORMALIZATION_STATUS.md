@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **40 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.2, T19.7, T19.12, T20.3, T23.1, together with Lemmas T19.8, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **41 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.2, T19.7, T19.12, T20.3, T23.1, together with Lemmas T19.8, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T21.2, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **2655 audited theorem/lemma declarations**. This
+- The project currently has **2687 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -425,13 +425,16 @@ Neither document is fully formalized.
   are explicit, and both original exponential moments eventually exceed
   every real level. No target moment or asymptotic estimate is a premise.
   See [alignment](PRIME_CYLINDER_ALIGNMENT.md).
-- Companion T21.2 is in progress. Its finite conditional rank bound,
+- Companion T21.2 is proved in full. Its finite conditional rank bound,
   exact conditional start probabilities and conditional-mean budget are
   proved for actual infinite-model observations. A positive denominator
   is proved, and the complete row/square-class kernel equivalence retains
   local relations. The pool coefficient improves from p*2^(T-1) to
-  p*(2^(T-1)-1)/T. The final fixed-j asymptotic pool estimate remains open,
-  so no numbered coverage is added. See
+  p*(2^(T-1)-1)/T. The actual old windows give a logarithmic prime-pool
+  budget, and the proved Euler bound and positive squares give matching
+  pool exponents. Exact critical binary factors and integer floors prove
+  both sides of the final N^(1/2-delta+o(1)) scale. One threshold precedes
+  all critical lengths, old-window choices and realizable old vectors. See
   [alignment](CONDITIONAL_RANK_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of

@@ -3134,8 +3134,10 @@
       "source": "companion_sections/arithmetic_consequences.tex",
       "line": 139,
       "sha256": "818e94ea77616ce313f8e69cbcebc377f10bdc8f890c65705c43961bdb26a2e8",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
+        "PaperP1.ConditionalRankTheorem.companion_T21_2",
+        "PaperP1.ConditionalRankTheorem.finite_conclusion",
         "PaperP1.ConditionalWindowRank.conditionalNullity_le",
         "PaperP1.ConditionalWindowRank.coefficient_zero_outside_pool",
         "PaperP1.ConditionalRunRank.rowKernelEquiv",
@@ -3149,7 +3151,18 @@
         "PaperP1.ConditionalCountMean.conditionalCountExpectation_eq_sum",
         "PaperP1.WindowPoolCount.sum_supportedIndices_dyadic",
         "PaperP1.ConditionalRunBudget.conditional_count_bound",
-        "PaperP1.ConditionalRunBudget.conditional_count_bound_sharp"
+        "PaperP1.ConditionalRunBudget.conditional_count_bound_sharp",
+        "PaperP1.OldValuePrimeBudget.rawValues_bounds",
+        "PaperP1.OldValuePrimeBudget.raw_primePool_log_sum_le",
+        "PaperP1.LogSquaredPrimePool.raw_budget_le_envelope",
+        "PaperP1.LogSquaredPrimePool.actual_pool_count_critical",
+        "PaperP1.SquarePoolLower.poolValues_card_lower",
+        "PaperP1.ConditionalPoolTerm.binary_factor_bound",
+        "PaperP1.ConditionalPoolTerm.term_le_power_critical",
+        "PaperP1.ConditionalPoolTerm.fractional_term_le_power_critical",
+        "PaperP1.ConditionalPoolLower.binary_factor_lower",
+        "PaperP1.ConditionalPoolLower.term_lower_eventually",
+        "PaperP1.ConditionalRankTheorem.floor_conditions"
       ],
       "literature_inputs": [
         "P1-ARITH-CONDITIONAL-RANK"
@@ -3157,7 +3170,7 @@
       "mathematical_changes": [
         "P1-MATH-0029"
       ],
-      "notes": "Finite rank, exact conditional-probability and conditional-mean statements are proved under the original infinite prime-sign measure. The actual relative kernel includes local relations and is supported on old-pool values; restriction to the supported even space proves rho<=(t-1)_+. The complete boundary and bounded-prime character pairing identify this with the actual run-row kernel modulo the old raw-value span. Original conditional probabilities are defined by actual joint/old event probability ratios, with a proved positive denominator; they are zero or p*2^rho and equal p when t<=1. The actual conditional Bochner count expectation is their sum. An incidence count proves the source finite conditional-mean bound for any deterministic O, including the actual contact set. Its pool coefficient improves to p*(2^(T-1)-1)/T by charging only excess mass against support incidences. The last fixed-j asymptotic pool estimate remains OPEN, so T21.2 is not counted as proved. No conditional mass or rank estimate is assumed. See CONDITIONAL_RANK_ALIGNMENT.md."
+      "notes": "Complete finite and asymptotic T21.2 under the original infinite prime-sign measure. The actual even relative kernel, including local relations, has dimension at most (t-1)_+ and is identified with the new run-row kernel modulo the old raw-value row span. Conditional probabilities are actual joint/old event probability ratios with proved positive denominator, zero or p*2^rho and exactly p when t<=1. The actual conditional Bochner mean is their sum. The source finite budget holds for the actual contact set and large-t population; its pool coefficient improves to p*(2^(T-1)-1)/T, including a finite refined T=0 version. Raw old windows yield an actual logarithmic prime-pool budget O_j((log N)^2). The proved finite prime-budget Euler bound gives card(poolValues)<=N^(1/2+epsilon), uniformly over all old choices; positive squares give a matching lower scale. For every fixed j, delta in (0,1), epsilon>0, one threshold precedes all critical lengths and all old sets of cardinality at most j. The source term at T=floor((1-delta)L) is between N^(1/2-delta-epsilon) and N^(1/2-delta+epsilon), and 1<=T<=L holds eventually. No conditional rank, mass, Euler, pool-count or asymptotic estimate is assumed. See CONDITIONAL_RANK_ALIGNMENT.md."
     },
     {
       "label": "p1:consequences:rankin-patterns",

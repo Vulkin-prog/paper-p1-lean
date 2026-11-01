@@ -4,7 +4,10 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 40 / 167 numbered results proved.**
+**Status: active formalization, 41 / 167 numbered results proved.**
+Companion T21.2 is proved with actual conditional ranks, probabilities and
+means, a sharper finite pool coefficient, and the matching fixed-j
+critical asymptotic. See [statement alignment](docs/CONDITIONAL_RANK_ALIGNMENT.md).
 Companion T19.7 now proves divergence of the original positive and total
 run exponential moments along the prime subsequence, with the exact source
 liminf constant and threshold. See [statement alignment](docs/PRIME_CYLINDER_ALIGNMENT.md).
