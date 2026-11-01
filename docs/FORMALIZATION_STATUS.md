@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3538 audited theorem/lemma declarations**. This
+- The project currently has **3549 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1272,3 +1272,32 @@ Ubuntu root free space is 17.86 GiB.
 Validated actual finite channel-mass checkpoint (9,385 build jobs;
 3,538 audited declarations; 1,253 directly checked coverage/finding names):
 [37e67975065e2b4df18be484c2e7ba9123a6c8b9](https://github.com/Vulkin-prog/paper-p1-lean/commit/37e67975065e2b4df18be484c2e7ba9123a6c8b9).
+
+## Actual fixed-channel remainder improved to an explicit O(B^2/N)
+
+`ChannelUnsignedBound` proves U<=B^2*2^floor(L/b), including the empty
+sum, by the exact weight moment and literal placement counts.
+`CriticalChannelPowers` gives explicit bounds on 2^L, 2^(B/b) and p^2
+in the actual critical band. `FixedChannelErrorAlgebra` compares the
+three finite error terms: with b>=3, the actual exceptional host count
+at exponent 7/12 and its root weight give a contribution below N^-1.
+The endpoint term uses the eventual B<=N^(2/3) bound.
+
+`PrivateChannelMassRate.mass_error_square_log` proves the actual mass
+remainder <=K(C,b)*B^2/N, with
+K(C,b)=(2^C)^2*(8*2^((C+1)/b)+2)>0. For each fixed reduced channel and
+natural D, one threshold precedes all critical lengths and integer H
+in [2bB,DB]. `mass_error_rpow` gives the source N^(-1+epsilon) error
+for every epsilon>0. See the
+[critical mass-rate alignment](PRIVATE_CHANNEL_MASS_RATE_ALIGNMENT.md).
+
+This strengthens P1-MATH-0045; there remain 45 confirmed improvements.
+The positive fixed-channel phase equivalent and any literal real-cutoff
+convention transport remain unfinished. T2.5 therefore stays in progress,
+as does the complete main 3.3 pair profile. Coverage stays **52 / 167**.
+The full build passed (9,393 jobs), all 3,549 theorem/lemma declarations
+passed the actual axiom audit, and all 1,264 coverage/finding names were
+checked directly by Lean. Only propext, Classical.choice and Quot.sound
+occur. No new literature input, Paper C port, manuscript revision or
+Palomar registration is introduced. Manuscript bytes are unchanged.
+Ubuntu root free space is 17.85 GiB.

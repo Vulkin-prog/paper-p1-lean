@@ -80,11 +80,12 @@ bound directly. The residual-rank theorem is therefore unnecessary for
 this finite fixed-channel mass calculation. It remains relevant to
 other arithmetic regimes and rank conclusions.
 
-The remaining work is to bound U, compare these three explicit errors
-on the critical scale, and prove the positive fixed-channel phase
-equivalent. The coarser B^2*N baseline is recorded exactly and still
-requires its final scale comparison. The complete main pair profile
-also has its other regimes unfinished.
+The subsequent [critical mass rate](PRIVATE_CHANNEL_MASS_RATE_ALIGNMENT.md)
+bounds U and compares these three actual errors on the critical scale,
+giving the stronger explicit O(B^2/N) remainder and the source's
+N^(-1+epsilon) estimate. The positive fixed-channel phase equivalent
+and any real-cutoff convention transport remain unfinished. The
+complete main pair profile also has its other regimes unfinished.
 
 No new literature premise, Paper C port, manuscript revision or Palomar
 registration is introduced. Original manuscript bytes are unchanged.

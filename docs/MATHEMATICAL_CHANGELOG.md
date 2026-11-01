@@ -2105,3 +2105,41 @@ Palomar registration is introduced.
 Validated actual finite channel-mass checkpoint (9,385 build jobs;
 3,538 audited declarations; 1,253 directly checked coverage/finding names):
 [37e67975065e2b4df18be484c2e7ba9123a6c8b9](https://github.com/Vulkin-prog/paper-p1-lean/commit/37e67975065e2b4df18be484c2e7ba9123a6c8b9).
+
+## P1-MATH-0045 extended — explicit square-logarithmic actual mass remainder
+
+The actual finite channel mass reduction now gives the stronger critical
+remainder
+
+    |M-p^2*N*w*S| <= K(C,b)*B^2/N,
+    K(C,b)=(2^C)^2*(8*2^((C+1)/b)+2)>0.
+
+The direct finite bound U<=B^2*2^floor(L/b) follows from the exact A_d
+weight sum and literal placements. Explicit critical-band word/root
+powers and nominal square probabilities combine with the actual bad
+host count at exponent 7/12. Since positive a<b<2a implies b>=3, the
+deleted contribution has exponent at most -13/12. The endpoint term
+uses B<=N^(2/3), and the polynomial baseline is already B^2/N.
+
+One threshold precedes all critical lengths and integer H in [2bB,DB]
+for each fixed channel and fixed natural D. The coefficient K depends
+only on C,b; a,D can affect the threshold. For every epsilon>0 a larger
+threshold yields the paper's N^(-1+epsilon) remainder, even with eventual
+coefficient one. Signed main terms and zero-probability retained pairs
+are preserved throughout.
+
+Evidence: `ChannelUnsignedBound.weight_sum_le`, `placement_card_le`,
+`unsigned_upper`, `unsigned_upper_rpow`, `CriticalChannelPowers.word_upper`,
+`window_root_upper`, `nominal_square_upper`,
+`FixedChannelErrorAlgebra.error_scale`,
+`PrivateChannelMassRate.massConstant_pos`, `mass_error_square_log`
+and `mass_error_rpow`.
+
+The positive phase equivalent and any real-cutoff convention transport
+remain unfinished, so T2.5 is not newly counted complete. Main 3.3 keeps
+its other regimes unfinished as well. Coverage stays 52/167 with 45
+confirmed improvements. The full build passed (9,393 jobs), all 3,549
+theorem/lemma declarations passed the actual axiom audit, and all 1,264
+coverage/finding names were checked directly. Only propext,
+Classical.choice and Quot.sound occur. No external input, Paper C port,
+manuscript revision or Palomar registration is introduced.

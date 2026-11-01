@@ -348,3 +348,7 @@ public import PaperP1.Arithmetic.FixedChannelSourceGeometry
 public import PaperP1.Model.PrivateChannelSources
 public import PaperP1.Model.PrivateChannelRemoval
 public import PaperP1.Model.PrivateChannelMassBound
+public import PaperP1.Arithmetic.ChannelUnsignedBound
+public import PaperP1.Asymptotics.CriticalChannelPowers
+public import PaperP1.Asymptotics.FixedChannelErrorAlgebra
+public import PaperP1.Asymptotics.PrivateChannelMassRate

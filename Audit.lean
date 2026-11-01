@@ -731,6 +731,10 @@ import PaperP1
 #print axioms PaperP1.ChannelSumIdentity.signed_empty
 #print axioms PaperP1.ChannelSumIdentity.signed_two_three
 #print axioms PaperP1.ChannelSumIdentity.signed_three_four
+#print axioms PaperP1.ChannelUnsignedBound.weight_sum_le
+#print axioms PaperP1.ChannelUnsignedBound.placement_card_le
+#print axioms PaperP1.ChannelUnsignedBound.unsigned_upper
+#print axioms PaperP1.ChannelUnsignedBound.unsigned_upper_rpow
 #print axioms PaperP1.ChannelWordHosts.placement_index_val
 #print axioms PaperP1.ChannelWordHosts.weight_nonneg
 #print axioms PaperP1.ChannelWordHosts.sign_abs
@@ -1683,6 +1687,9 @@ import PaperP1
 #print axioms PaperP1.CriticalBranchingBudget.log_width_le
 #print axioms PaperP1.CriticalBranchingBudget.log_product_bound
 #print axioms PaperP1.CriticalBranchingBudget.card_product_bound
+#print axioms PaperP1.CriticalChannelPowers.word_upper
+#print axioms PaperP1.CriticalChannelPowers.window_root_upper
+#print axioms PaperP1.CriticalChannelPowers.nominal_square_upper
 #print axioms PaperP1.CriticalOrderBranching.finite_exception_bound
 #print axioms PaperP1.CriticalOrderBranching.uniform_exception_bound
 #print axioms PaperP1.CriticalOrderBranching.companion_T22_4
@@ -1747,6 +1754,7 @@ import PaperP1
 #print axioms PaperP1.ExpSqrtLog.uniformSubpolynomialOn_weighted_defect_factor
 #print axioms PaperP1.FactorialLogBounds.log_factorial_bounds
 #print axioms PaperP1.FactorialLogBounds.log_factorial_error
+#print axioms PaperP1.FixedChannelErrorAlgebra.error_scale
 #print axioms PaperP1.FixedHeightResidual.large_kernel_rate
 #print axioms PaperP1.FixedHeightResidual.full_kernel_rate
 #print axioms PaperP1.FixedWindowBranching.retained_independent
@@ -1870,6 +1878,9 @@ import PaperP1
 #print axioms PaperP1.PrimeCylinderScale.log_cutoff_over_log_size_tendsto
 #print axioms PaperP1.PrimeCylinderScale.log_size_over_log_cutoff_tendsto
 #print axioms PaperP1.PrimeCylinderScale.primeCharge_tendsto
+#print axioms PaperP1.PrivateChannelMassRate.massConstant_pos
+#print axioms PaperP1.PrivateChannelMassRate.mass_error_square_log
+#print axioms PaperP1.PrivateChannelMassRate.mass_error_rpow
 #print axioms PaperP1.QuadraticOrderBranching.badStarts_card_critical
 #print axioms PaperP1.QuadraticOrderBranching.quadratic_order_branching
 #print axioms PaperP1.QuadraticOrderMoments.nominal_mean_bound

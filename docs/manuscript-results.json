@@ -322,7 +322,18 @@
         "PaperP1.PrivateChannelRemoval.bad_signed_sum_bound",
         "PaperP1.PrivateChannelMassBound.mass_exact_decomposition",
         "PaperP1.PrivateChannelMassBound.three_term_bound",
-        "PaperP1.PrivateChannelMassBound.finite_mass_error"
+        "PaperP1.PrivateChannelMassBound.finite_mass_error",
+        "PaperP1.ChannelUnsignedBound.weight_sum_le",
+        "PaperP1.ChannelUnsignedBound.placement_card_le",
+        "PaperP1.ChannelUnsignedBound.unsigned_upper",
+        "PaperP1.ChannelUnsignedBound.unsigned_upper_rpow",
+        "PaperP1.CriticalChannelPowers.word_upper",
+        "PaperP1.CriticalChannelPowers.window_root_upper",
+        "PaperP1.CriticalChannelPowers.nominal_square_upper",
+        "PaperP1.FixedChannelErrorAlgebra.error_scale",
+        "PaperP1.PrivateChannelMassRate.massConstant_pos",
+        "PaperP1.PrivateChannelMassRate.mass_error_square_log",
+        "PaperP1.PrivateChannelMassRate.mass_error_rpow"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
@@ -331,7 +342,7 @@
         "P1-MATH-0035",
         "P1-MATH-0045"
       ],
-      "notes": "The actual retained private channel family is now explicit, with zero-probability pairs retained, deterministic source separation and disjoint symmetric orientations. Its exact actual joint-mass formula is proved. Exact deletion of bad rational-unit terms and the baseline give the finite error |M-p^2*N*w*S|<=p^2*(6B*U+2B^2*N+2*#badSources*2^(B/b)). The exceptional host count is <=N^(1/2+epsilon) for each fixed channel and H in [2bB,DB]; rational-unit weights need no privacy or complete residual-rank estimate. All previous actual coefficient, word and dyadic bridges are proved. Remaining: bound U, compare the finite errors on the critical scale, and prove the positive fixed-channel phase equivalent; the full main pair profile also has other regimes unfinished. Article 3.3 and companion T2.5 remain in progress. See docs/PRIVATE_CHANNEL_MASS_ALIGNMENT.md.",
+      "notes": "The actual retained fixed-channel mass error is now proved on the critical scale. For fixed positive reduced a<b<2a and fixed natural D, one threshold precedes all critical lengths and integer cutoffs 2bB<=H<=DB. The actual mass satisfies |M-p^2*N*w*S|<=K(C,b)*B^2/N with explicit positive K=2^(2C)*(8*2^((C+1)/b)+2), hence <=N^(-1+epsilon) eventually for every epsilon>0. This uses actual defect counts, direct rational-unit weights, actual finite mass deletion and the positive channel bound U<=B^2*2^floor(L/b), without complete defective-pair residual nullity. The source probability-zero cases remain in the family. Remaining: prove the positive fixed-channel phase equivalent and, if needed for the literal threshold convention, transport integer cutoffs to an arbitrary fixed real coefficient; the complete main pair profile also has other regimes unfinished. Article 3.3 and T2.5 remain in progress. See docs/PRIVATE_CHANNEL_MASS_RATE_ALIGNMENT.md.",
       "validation_commit": "37e67975065e2b4df18be484c2e7ba9123a6c8b9",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
@@ -2548,7 +2559,18 @@
         "PaperP1.PrivateChannelRemoval.bad_signed_sum_bound",
         "PaperP1.PrivateChannelMassBound.mass_exact_decomposition",
         "PaperP1.PrivateChannelMassBound.three_term_bound",
-        "PaperP1.PrivateChannelMassBound.finite_mass_error"
+        "PaperP1.PrivateChannelMassBound.finite_mass_error",
+        "PaperP1.ChannelUnsignedBound.weight_sum_le",
+        "PaperP1.ChannelUnsignedBound.placement_card_le",
+        "PaperP1.ChannelUnsignedBound.unsigned_upper",
+        "PaperP1.ChannelUnsignedBound.unsigned_upper_rpow",
+        "PaperP1.CriticalChannelPowers.word_upper",
+        "PaperP1.CriticalChannelPowers.window_root_upper",
+        "PaperP1.CriticalChannelPowers.nominal_square_upper",
+        "PaperP1.FixedChannelErrorAlgebra.error_scale",
+        "PaperP1.PrivateChannelMassRate.massConstant_pos",
+        "PaperP1.PrivateChannelMassRate.mass_error_square_log",
+        "PaperP1.PrivateChannelMassRate.mass_error_rpow"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
@@ -2557,7 +2579,7 @@
         "P1-MATH-0035",
         "P1-MATH-0045"
       ],
-      "notes": "The actual retained private channel family is now explicit, with zero-probability pairs retained, deterministic source separation and disjoint symmetric orientations. Its exact actual joint-mass formula is proved. Exact deletion of bad rational-unit terms and the baseline give the finite error |M-p^2*N*w*S|<=p^2*(6B*U+2B^2*N+2*#badSources*2^(B/b)). The exceptional host count is <=N^(1/2+epsilon) for each fixed channel and H in [2bB,DB]; rational-unit weights need no privacy or complete residual-rank estimate. All previous actual coefficient, word and dyadic bridges are proved. Remaining: bound U, compare the finite errors on the critical scale, and prove the positive fixed-channel phase equivalent; the full main pair profile also has other regimes unfinished. Article 3.3 and companion T2.5 remain in progress. See docs/PRIVATE_CHANNEL_MASS_ALIGNMENT.md.",
+      "notes": "The actual retained fixed-channel mass error is now proved on the critical scale. For fixed positive reduced a<b<2a and fixed natural D, one threshold precedes all critical lengths and integer cutoffs 2bB<=H<=DB. The actual mass satisfies |M-p^2*N*w*S|<=K(C,b)*B^2/N with explicit positive K=2^(2C)*(8*2^((C+1)/b)+2), hence <=N^(-1+epsilon) eventually for every epsilon>0. This uses actual defect counts, direct rational-unit weights, actual finite mass deletion and the positive channel bound U<=B^2*2^floor(L/b), without complete defective-pair residual nullity. The source probability-zero cases remain in the family. Remaining: prove the positive fixed-channel phase equivalent and, if needed for the literal threshold convention, transport integer cutoffs to an arbitrary fixed real coefficient; the complete main pair profile also has other regimes unfinished. Article 3.3 and T2.5 remain in progress. See docs/PRIVATE_CHANNEL_MASS_RATE_ALIGNMENT.md.",
       "validation_commit": "37e67975065e2b4df18be484c2e7ba9123a6c8b9",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",

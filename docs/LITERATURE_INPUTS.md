@@ -1093,3 +1093,13 @@ dyadic aggregate, source count and rational-unit weight identities. Their
 finite mass error uses no complete residual-nullity estimate for defective
 pairs and no external input. The critical-scale and phase comparisons
 remain unfinished. No Paper C port is added.
+
+## Actual fixed-channel critical remainder
+
+`ChannelUnsignedBound`, `CriticalChannelPowers`, `FixedChannelErrorAlgebra`
+and `PrivateChannelMassRate` combine proved finite counts, actual probability
+identities and elementary real powers to give the explicit O(B^2/N) actual
+mass error, hence the source N^(-1+epsilon) estimate. No complete defective
+pair residual-nullity estimate or external premise is used in this route.
+The positive phase equivalent and cutoff-convention transport remain open.
+No Paper C port is added.

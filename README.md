@@ -52,6 +52,10 @@ The actual retained channel mass now has an exact finite decomposition
 and explicit endpoint, bad-host and baseline errors. Bad rational-unit
 terms are removed without a complete residual-nullity estimate. See
 the [actual mass reduction](docs/PRIVATE_CHANNEL_MASS_ALIGNMENT.md).
+The actual fixed-channel remainder is now bounded by an explicit
+K(C,b)*B^2/N, implying the paper's N^(-1+epsilon) estimate. The positive
+phase equivalent remains unfinished. See the
+[critical mass rate](docs/PRIVATE_CHANNEL_MASS_RATE_ALIGNMENT.md).
 The full pair profile and fixed-channel mass remain in progress. See the
 [finite calculation](docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,
