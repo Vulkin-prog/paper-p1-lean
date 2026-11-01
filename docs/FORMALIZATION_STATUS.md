@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **2602 audited theorem/lemma declarations**. This
+- The project currently has **2655 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -425,6 +425,14 @@ Neither document is fully formalized.
   are explicit, and both original exponential moments eventually exceed
   every real level. No target moment or asymptotic estimate is a premise.
   See [alignment](PRIME_CYLINDER_ALIGNMENT.md).
+- Companion T21.2 is in progress. Its finite conditional rank bound,
+  exact conditional start probabilities and conditional-mean budget are
+  proved for actual infinite-model observations. A positive denominator
+  is proved, and the complete row/square-class kernel equivalence retains
+  local relations. The pool coefficient improves from p*2^(T-1) to
+  p*(2^(T-1)-1)/T. The final fixed-j asymptotic pool estimate remains open,
+  so no numbered coverage is added. See
+  [alignment](CONDITIONAL_RANK_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
@@ -461,7 +469,9 @@ Neither document is fully formalized.
   and a larger population for the two-plane affine mass estimate;
   `P1-MATH-0027`, the sharper local-block endpoint correction;
   `P1-MATH-0028`, the factor-two positive-core improvement and its
-  heterogeneous private-rank profile.
+  heterogeneous private-rank profile;
+  `P1-MATH-0029`, the sharper incidence-slope coefficient in the finite
+  conditional-mean pool budget.
   No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.

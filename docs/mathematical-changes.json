@@ -956,6 +956,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "6a2be0375db8f8051a562cf179b571d344aac9dc"
+    },
+    {
+      "id": "P1-MATH-0029",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "companion",
+        "label": "p1:consequences:conditional-rank",
+        "number": "T21.2",
+        "page": 87,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 139,
+        "version": "P1 V1.6",
+        "statement_sha256": "818e94ea77616ce313f8e69cbcebc377f10bdc8f890c65705c43961bdb26a2e8"
+      },
+      "original_assumption": "Companion T21.2 bounds the finite old-pool contribution to the conditional mean by p*2^(T-1)*B*card(poolValues), for 1<=T<=L.",
+      "finding": "The exact original conditional-mean bound holds with coefficient p*(2^(T-1)-1)/T. The conditional probability is exactly p when the supported value count t is at most one. For 2<=t<=T its excess over p is at most p*(2^(t-1)-1), whose ratio to t is bounded by (2^(T-1)-1)/T. Charging excess mass to the actual incidence budget sum_x t_x<=B*card(poolValues) proves the sharper coefficient. The finite refined theorem also admits T=0, with zero slope and the large-t population retained explicitly.",
+      "evidence": [
+        "PaperP1.ExponentialSupportSlope.cross_bound",
+        "PaperP1.ExponentialSupportSlope.loss_le_slope",
+        "PaperP1.ConditionalRunProbability.conditionalStartProbability_nominal",
+        "PaperP1.ConditionalRunBudget.conditionalStartProbability_le_incidence",
+        "PaperP1.WindowPoolCount.sum_supportedIndices_dyadic",
+        "PaperP1.ConditionalRunBudget.conditional_count_bound_sharp"
+      ],
+      "proposed_revision": "Replace p*2^(T-1) in the finite conditional-mean pool term by p*(2^(T-1)-1)/T and include the incidence-slope argument; keep the actual overlap and large-t terms.",
+      "impact": "Reduces the source pool coefficient by the factor (1-2^(1-T))/T for T>=1; it vanishes at T=1. This does not bound the large-t population or close the remaining fixed-j asymptotic statement. No original error, threshold optimality or complete T21.2 coverage is claimed.",
+      "validation": "Full Lean v4.36.0-rc2 build (9049 jobs) and actual axiom audit of all 2655 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 589 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

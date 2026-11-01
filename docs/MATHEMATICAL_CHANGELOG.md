@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Twenty-five mathematical improvements are confirmed; no error in a manuscript conclusion
+**29 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -1002,3 +1002,32 @@ improvements. No Palomar registration is made.
 
 Validated implementation of companion T19.7:
 [af00f6613fc890bee31ac2b83d609dc9a9030635](https://github.com/Vulkin-prog/paper-p1-lean/commit/af00f6613fc890bee31ac2b83d609dc9a9030635).
+
+## P1-MATH-0029 — The exact incidence slope in a conditional mean budget
+
+- Location: the conditional-mean pool term of companion Lemma T21.2,
+  page 87, `p1:consequences:conditional-rank`,
+  `companion_sections/arithmetic_consequences.tex:139`.
+- Original coefficient: p*2^(T-1), for 1<=T<=L.
+- Improvement: use p*(2^(T-1)-1)/T. This reduces the original coefficient
+  by the factor (1-2^(1-T))/T and makes it zero at T=1. The finite refined
+  theorem also admits T=0, with zero slope and the large-t population
+  still explicitly retained.
+- Evidence: `ExponentialSupportSlope.cross_bound`, `loss_le_slope`,
+  `ConditionalRunProbability.conditionalStartProbability_nominal`,
+  `ConditionalRunBudget.conditionalStartProbability_le_incidence`,
+  `WindowPoolCount.sum_supportedIndices_dyadic` and
+  `ConditionalRunBudget.conditional_count_bound_sharp`.
+- Reason: t<=1 gives exact conditional probability p. For 2<=t<=T only
+  the excess p*(2^(t-1)-1) needs charging. Its ratio to t is nondecreasing,
+  and the actual incidence sum is at most B*card(poolValues).
+- Suggested revision: replace the finite coefficient and include this
+  excess-mass charging argument. Preserve the actual contact and large-t
+  terms. No bound for the large-t population, original error or optimality
+  is asserted. The last fixed-j asymptotic pool estimate in T21.2 remains
+  open at this finite checkpoint, so no numbered coverage is added.
+- Status: confirmed by the full build (9,049 jobs) and actual axiom audit
+  of all 2,655 theorem/lemma declarations, with only `propext`,
+  `Classical.choice` and `Quot.sound`. All 589 distinct coverage/finding
+  declaration names were checked directly by Lean. Not integrated into
+  a new manuscript version. See [alignment](CONDITIONAL_RANK_ALIGNMENT.md).

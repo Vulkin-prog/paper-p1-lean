@@ -3134,11 +3134,30 @@
       "source": "companion_sections/arithmetic_consequences.tex",
       "line": 139,
       "sha256": "818e94ea77616ce313f8e69cbcebc377f10bdc8f890c65705c43961bdb26a2e8",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.ConditionalWindowRank.conditionalNullity_le",
+        "PaperP1.ConditionalWindowRank.coefficient_zero_outside_pool",
+        "PaperP1.ConditionalRunRank.rowKernelEquiv",
+        "PaperP1.ConditionalRunRank.row_kernel_finrank",
+        "PaperP1.Affine.conditionalAffineMass_zero_or_pow",
+        "PaperP1.Affine.conditionalAffineMass_nominal_of_kernel_zero",
+        "PaperP1.ConditionalRunProbability.observation_probability_pos",
+        "PaperP1.ConditionalRunProbability.conditionalStartProbability_eq_affine",
+        "PaperP1.ConditionalRunProbability.conditionalStartProbability_zero_or_pow",
+        "PaperP1.ConditionalRunProbability.conditionalStartProbability_nominal",
+        "PaperP1.ConditionalCountMean.conditionalCountExpectation_eq_sum",
+        "PaperP1.WindowPoolCount.sum_supportedIndices_dyadic",
+        "PaperP1.ConditionalRunBudget.conditional_count_bound",
+        "PaperP1.ConditionalRunBudget.conditional_count_bound_sharp"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-CONDITIONAL-RANK"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0029"
+      ],
+      "notes": "Finite rank, exact conditional-probability and conditional-mean statements are proved under the original infinite prime-sign measure. The actual relative kernel includes local relations and is supported on old-pool values; restriction to the supported even space proves rho<=(t-1)_+. The complete boundary and bounded-prime character pairing identify this with the actual run-row kernel modulo the old raw-value span. Original conditional probabilities are defined by actual joint/old event probability ratios, with a proved positive denominator; they are zero or p*2^rho and equal p when t<=1. The actual conditional Bochner count expectation is their sum. An incidence count proves the source finite conditional-mean bound for any deterministic O, including the actual contact set. Its pool coefficient improves to p*(2^(T-1)-1)/T by charging only excess mass against support incidences. The last fixed-j asymptotic pool estimate remains OPEN, so T21.2 is not counted as proved. No conditional mass or rank estimate is assumed. See CONDITIONAL_RANK_ALIGNMENT.md."
     },
     {
       "label": "p1:consequences:rankin-patterns",

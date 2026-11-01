@@ -171,3 +171,13 @@ public import PaperP1.Model.PrimeRunCylinder
 public import PaperP1.Asymptotics.PrimeCylinderScale
 public import PaperP1.Asymptotics.PrimeCylinderDivergence
 public import PaperP1.Asymptotics.PrimeCylinderLiminf
+public import PaperP1.Affine.ConditionalMass
+public import PaperP1.Algebra.EvenSupportRank
+public import PaperP1.Algebra.ExponentialSupportSlope
+public import PaperP1.Algebra.QuotientRank
+public import PaperP1.Arithmetic.ConditionalWindowRank
+public import PaperP1.Arithmetic.WindowPoolCount
+public import PaperP1.Model.ConditionalCountMean
+public import PaperP1.Model.ConditionalRunBudget
+public import PaperP1.Model.ConditionalRunProbability
+public import PaperP1.Model.ConditionalRunRank

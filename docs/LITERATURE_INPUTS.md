@@ -20,6 +20,27 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Conditional rank after old raw observations
+
+Stable ID: `P1-ARITH-CONDITIONAL-RANK`. Status: **finite statements proved**;
+the complete numbered T21.2 remains **in progress**.
+
+- The actual old square-class span and prime pool are constructed.
+  Private new prime coordinates restrict the relative kernel to the
+  supported even space, giving rho<=(t-1)_+.
+- The complete boundary equivalence and injective character pairing
+  preserve that kernel. Finite affine counting and annihilator duality
+  prove the exact conditional laws, including all incompatible targets
+  and realizability when rho=0. Original infinite-model old and joint
+  probabilities are transported, with a proved positive denominator.
+- The original conditional Bochner expectation is the sum of the exact
+  conditional probabilities. A finite incidence budget proves the source
+  conditional mean bound and the sharper coefficient P1-MATH-0029.
+- No rank, compatibility, conditional probability or incidence estimate
+  is supplied as a target premise. No new Paper C code or unproved
+  literature input is introduced. The last fixed-j asymptotic pool count
+  is still to be proved. See [alignment](CONDITIONAL_RANK_ALIGNMENT.md).
+
 ## Rare arithmetic cylinder and exponential-moment divergence
 
 Stable ID: `P1-ARITH-PRIME-CYLINDER-DIVERGENCE`. Status: **proved**.
