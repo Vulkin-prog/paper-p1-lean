@@ -90,3 +90,6 @@ Coverage is 44 / 167: main 15 / 73, companion 29 / 94. There are
 31 confirmed improvements; none is integrated into a revised manuscript.
 Original bytes are preserved, no Palomar registration is made, and
 Ubuntu-root space is 17.82 GiB.
+
+Validated implementation of companion T19.11 and P1-MATH-0031:
+[9ca5f8aecbbc79ecd99b0658bf2cb37fa414f842](https://github.com/Vulkin-prog/paper-p1-lean/commit/9ca5f8aecbbc79ecd99b0658bf2cb37fa414f842).

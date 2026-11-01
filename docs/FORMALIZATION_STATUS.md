@@ -560,3 +560,6 @@ The full build passed (9,113 jobs), as did the actual axiom audit of all
 2,875 theorem/lemma declarations and all 672 coverage/finding names.
 Coverage is 44 / 167, with 31 confirmed improvements. Original sources
 are preserved; no Palomar submission or principal asymptotic is claimed.
+
+Validated implementation of companion T19.11 and P1-MATH-0031:
+[9ca5f8aecbbc79ecd99b0658bf2cb37fa414f842](https://github.com/Vulkin-prog/paper-p1-lean/commit/9ca5f8aecbbc79ecd99b0658bf2cb37fa414f842).
