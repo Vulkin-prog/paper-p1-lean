@@ -81,3 +81,5 @@ existing improvement P1-MATH-0030, not a new independent correction.
 
 No source edit, Paper C port, external assumption or Palomar registration
 is introduced by this checkpoint.
+
+Validated proof checkpoint: [d67cfc727b27a99fa0ebc4565f181d5353d3a0f1](https://github.com/Vulkin-prog/paper-p1-lean/commit/d67cfc727b27a99fa0ebc4565f181d5353d3a0f1).

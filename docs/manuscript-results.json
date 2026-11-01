@@ -4678,7 +4678,8 @@
       "mathematical_changes": [
         "P1-MATH-0030"
       ],
-      "notes": "The literal rounded prime-cardinality exception, its full-vector infinite-model independence, and the uniform logarithmic rate for every 1<=j<=log(N) are proved. The elementary weighted prime sum proves the logarithmic Euler gain without a separate nth-prime or PNT premise. The smaller two-supported-value set removes the contact term and halves the coefficient, extending P1-MATH-0030 to this order-dependent estimate. The actual factorial recurrence gives the printed growing-order exponential factor multiplied by the actual second factorial moment F_2, with one threshold before every 2<=k<=log(N). A uniform O_C(1) bound for F_2 remains open and is not assumed or replaced by a nominal marginal. Consequently the last conclusion of T19.4 is not complete and numbered coverage is unchanged. See ORDER_DEPENDENT_BRANCHING_ALIGNMENT.md."
+      "notes": "The literal rounded prime-cardinality exception, its full-vector infinite-model independence, and the uniform logarithmic rate for every 1<=j<=log(N) are proved. The elementary weighted prime sum proves the logarithmic Euler gain without a separate nth-prime or PNT premise. The smaller two-supported-value set removes the contact term and halves the coefficient, extending P1-MATH-0030 to this order-dependent estimate. The actual factorial recurrence gives the printed growing-order exponential factor multiplied by the actual second factorial moment F_2, with one threshold before every 2<=k<=log(N). A uniform O_C(1) bound for F_2 remains open and is not assumed or replaced by a nominal marginal. Consequently the last conclusion of T19.4 is not complete and numbered coverage is unchanged. See ORDER_DEPENDENT_BRANCHING_ALIGNMENT.md.",
+      "validation_commit": "d67cfc727b27a99fa0ebc4565f181d5353d3a0f1"
     },
     {
       "label": "p1:limits:effective-tail",
