@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3870 audited theorem/lemma declarations**. This
+- The project currently has **3891 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1669,3 +1669,21 @@ occur; original manuscript bytes are unchanged.
 Validated exact cutoff-asymptotic checkpoint (9,551 build jobs;
 3,870 audited declarations; 1,585 directly checked names):
 [e220886c65aecc4b2f1f7ca78165ab6b2b6a60a1](https://github.com/Vulkin-prog/paper-p1-lean/commit/e220886c65aecc4b2f1f7ca78165ab6b2b6a60a1).
+
+## T5.1 first branch and actual quadratic congruences
+
+Canonical kernels and square parts construct an injective positive
+quadratic embedding, including the square case. Derived polynomial
+heights give uniform fixed-kernel counts even for polynomial shifts.
+The actual prescribed kernel budget is <=floor(2Q/e), giving the first
+N^epsilon*Q/e count. Gcd-grouped actual congruence roots inject into
+linear fibres and satisfy tau(M)*(X*h/M+1), hence the required
+subpolynomial residue cost at polynomial modulus/polylogarithmic shift
+heights. This is P1-MATH-0053. The second square-part sum and combined
+T5.1 exponent remain open. Coverage stays 56/167, with 53 confirmed
+improvements. See [alignment](QUADRATIC_KERNEL_FIRST_BRANCH_ALIGNMENT.md).
+
+First-branch verification: the full build passed (9,559 jobs), the actual
+axiom audit passed for all 3,891 declarations, and all 1,606 distinct
+coverage/finding names were checked directly. All 138 source manifest
+entries and 167 result records remain intact; Ubuntu has 17.64 GiB free.

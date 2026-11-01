@@ -3228,11 +3228,35 @@
       "source": "companion_sections/short_supports.tex",
       "line": 9,
       "sha256": "98eb59430167ea84a4dd75c36b107f990646c6c2f47783b8292f95e2659899bb",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.SplitQuadraticCongruences.gcd_quotient_divides",
+        "PaperP1.SplitQuadraticCongruences.quotient_equation",
+        "PaperP1.SplitQuadraticCongruences.quotientPair_injective",
+        "PaperP1.SplitQuadraticCongruences.gcd_fibre_count",
+        "PaperP1.SplitQuadraticCongruences.root_count",
+        "PaperP1.SplitQuadraticCongruenceCount.polylog_le_rpow",
+        "PaperP1.SplitQuadraticCongruenceCount.uniform_root_count",
+        "PaperP1.QuadraticKernelFibres.kernel_pos",
+        "PaperP1.QuadraticKernelFibres.representation",
+        "PaperP1.QuadraticKernelFibres.part_pos",
+        "PaperP1.QuadraticKernelFibres.kernel_le_product",
+        "PaperP1.QuadraticKernelFibres.part_le_product",
+        "PaperP1.QuadraticKernelFibres.embed_injective",
+        "PaperP1.QuadraticKernelFibres.embed_equation",
+        "PaperP1.QuadraticKernelFibres.product_polynomial_height",
+        "PaperP1.QuadraticKernelFibres.height_budget",
+        "PaperP1.QuadraticKernelFibres.fixed_kernel_count",
+        "PaperP1.PrescribedQuadraticKernelCount.mem_values",
+        "PaperP1.PrescribedQuadraticKernelCount.divisible_positive_card",
+        "PaperP1.PrescribedQuadraticKernelCount.first_branch_count",
+        "PaperP1.PrescribedQuadraticKernelCount.actual_values_first_branch"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0053"
+      ],
+      "notes": "First branch only, on actual canonical squarefree kernels: a proved injective quadratic embedding and derived polynomial heights give uniform fixed-kernel fibres, including q=1. Actual prescribed-divisor kernels have at most floor(2Q/e) values, giving #n<=N^epsilon*Q/e uniformly even for polynomial-height shifts in this first branch. A separate proved finite gcd-group congruence estimate gives tau(M)*(X*h/M+1), and N^epsilon*(X/M+1) for polynomial moduli and polylogarithmic shifts. The second square-part count and its combination into the full min/affine exponent remain open; full T5.1 is not claimed."
     },
     {
       "label": "p13:short:split",

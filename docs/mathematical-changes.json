@@ -2465,6 +2465,53 @@
       "validation_history": [
         "e2a0e935344ae4c6ae3fc666de9e050d61fecaa5"
       ]
+    },
+    {
+      "id": "P1-MATH-0053",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:short:quadratic",
+        "number": "T5.1",
+        "page": 31,
+        "source": "companion_sections/short_supports.tex",
+        "line": 9,
+        "statement_sha256": "98eb59430167ea84a4dd75c36b107f990646c6c2f47783b8292f95e2659899bb"
+      },
+      "original_assumption": "T5.1 is stated for polylogarithmic positive shifts. Its first estimate enumerates O(1+Q/e) kernels and counts their quadratic fibres. Its second estimate uses a separate prime-power root classification and CRT bound.",
+      "finding": "The first actual prescribed-kernel branch remains uniform for positive polynomial-height shifts h, with polynomial-height n, and needs no separately assumed height for the actual kernel q. The canonical square-part embedding is injective, derives every quadratic input height and includes q=1 through the proved factorizable case. Actual positive kernels q<2Q divisible by e inject into 1..floor(2Q/e), giving #n<=N^epsilon*Q/e after uniform constant absorption. Independently, grouping actual roots M|n(n+h) by gcd(M,n) yields tau(M)*(X*h/M+1) via constructed linear quotient fibres. This supplies the required uniform N^epsilon*(X/M+1) bound for polynomial M and polylogarithmic h without prime-power root classification or a separate CRT count.",
+      "evidence": [
+        "PaperP1.SplitQuadraticCongruences.gcd_quotient_divides",
+        "PaperP1.SplitQuadraticCongruences.quotient_equation",
+        "PaperP1.SplitQuadraticCongruences.quotientPair_injective",
+        "PaperP1.SplitQuadraticCongruences.gcd_fibre_count",
+        "PaperP1.SplitQuadraticCongruences.root_count",
+        "PaperP1.SplitQuadraticCongruenceCount.polylog_le_rpow",
+        "PaperP1.SplitQuadraticCongruenceCount.uniform_root_count",
+        "PaperP1.QuadraticKernelFibres.kernel_pos",
+        "PaperP1.QuadraticKernelFibres.representation",
+        "PaperP1.QuadraticKernelFibres.part_pos",
+        "PaperP1.QuadraticKernelFibres.kernel_le_product",
+        "PaperP1.QuadraticKernelFibres.part_le_product",
+        "PaperP1.QuadraticKernelFibres.embed_injective",
+        "PaperP1.QuadraticKernelFibres.embed_equation",
+        "PaperP1.QuadraticKernelFibres.product_polynomial_height",
+        "PaperP1.QuadraticKernelFibres.height_budget",
+        "PaperP1.QuadraticKernelFibres.fixed_kernel_count",
+        "PaperP1.PrescribedQuadraticKernelCount.mem_values",
+        "PaperP1.PrescribedQuadraticKernelCount.divisible_positive_card",
+        "PaperP1.PrescribedQuadraticKernelCount.first_branch_count",
+        "PaperP1.PrescribedQuadraticKernelCount.actual_values_first_branch"
+      ],
+      "proposed_revision": "State the first prescribed-kernel estimate with its broader polynomial-shift scope and the exact floor(2Q/e) kernel budget. Keep the polylogarithmic shift assumption in the second branch. As a proof alternative, use gcd groups and the exact linear progression estimate, whose divisor cost is subpolynomial at the required modulus heights. Do not claim a sharper finite comparison to the different source prime-power bound.",
+      "impact": "Closes the first actual T5.1 branch with broader shift scope and supplies a simpler proved congruence ingredient for the second. The second square-part sum, the min exponent and affine consequence remain open, so T5.1 stays in progress and numbered coverage stays 56/167.",
+      "validation": "Lean v4.36.0-rc2 full build passed (9,559 jobs); the actual audit passed for all 3,891 theorem/lemma declarations, using only propext, Classical.choice and Quot.sound. All 1,606 distinct ledger and finding declarations were directly checked; 138 original manifest entries and 167 numbered-result records passed integrity checks. Available Ubuntu space: 17.64 GiB. No new unproved literature input or Paper C port; original manuscript bytes unchanged.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

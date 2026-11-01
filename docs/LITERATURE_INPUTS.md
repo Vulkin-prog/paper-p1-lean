@@ -1329,3 +1329,17 @@ normalized lower bound. The exact coefficient three, divergence,
 o(log N) and eventual K<=floor(L/4) are proved, with no new unproved
 literature input or Paper C port. See
 [alignment](BOUNDARY_CUTOFF_ASYMPTOTICS_ALIGNMENT.md).
+
+## Actual quadratic kernels and divisor-grouped congruences
+
+Stable ID: `P1-ARITH-PRESCRIBED-QUADRATIC-KERNEL`. Status: **first branch proved**.
+
+Actual canonical squarefree kernels and square parts give an injective
+quadratic embedding with every polynomial-height budget derived. The
+audited uniform quadratic count includes the factorizable case. A
+positive prescribed-divisor kernel injection gives the first count.
+Actual gcd groups give a finite linear-fibre congruence estimate and
+a proved uniform subpolynomial modulus/shift factor. The second
+square-part sum remains open. No new unproved literature input or
+Paper C port is introduced. See
+[alignment](QUADRATIC_KERNEL_FIRST_BRANCH_ALIGNMENT.md).

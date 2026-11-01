@@ -412,3 +412,7 @@ public import PaperP1.Asymptotics.LargeBoundaryTail
 public import PaperP1.Asymptotics.ModerateOrderLogarithm
 public import PaperP1.Asymptotics.BoundaryCutoffTrial
 public import PaperP1.Asymptotics.BoundaryCutoffScale
+public import PaperP1.Diophantine.SplitQuadraticCongruences
+public import PaperP1.Asymptotics.SplitQuadraticCongruenceCount
+public import PaperP1.Diophantine.QuadraticKernelFibres
+public import PaperP1.Asymptotics.PrescribedQuadraticKernelCount

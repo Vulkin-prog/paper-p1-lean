@@ -11,6 +11,8 @@ Companion T12.2 now proves the actual large-boundary mass estimate with the sour
 [complete large-boundary alignment](docs/LARGE_BOUNDARY_TAIL_ALIGNMENT.md).
 The exact least cutoff also has the source asymptotic 3*log(N)/loglog(N) and its eventual K<=L/4 range. See the
 [cutoff asymptotic alignment](docs/BOUNDARY_CUTOFF_ASYMPTOTICS_ALIGNMENT.md).
+The first prescribed quadratic-kernel count now holds for polynomial shifts, with actual canonical fibres and a proved gcd-group congruence bound; full T5.1 remains in progress. See the
+[first-branch alignment](docs/QUADRATIC_KERNEL_FIRST_BRANCH_ALIGNMENT.md).
 Companion T1.9 now covers the full enlarged geometric alignment, including
 zero exact units and both orientations, with its fixed-height enlarged-prime
 rate. The earlier one-unit coverage error and its subsequent closure are
