@@ -1191,6 +1191,23 @@ Stable ID: `P1-ALG-PRIMITIVE-DENOMINATORS`. Status: **proved arithmetic ingredie
 - The already audited elementary divisor-subpolynomial proof gives the
   polynomial-height count with one threshold before all coordinates,
   exponents and finite denominator families.
-- Actual resultants and their identities still have to be constructed;
-  full T1.4 remains in progress. No new Paper C port or unproved
+- Actual chart-resultant identities are now constructed in the later
+  resultant checkpoint; source nondegeneracy/height and full T1.4 remain
+  in progress. No new Paper C port or unproved
   literature input is introduced. This extends P1-MATH-0048.
+
+## Actual homogeneous chart-resultant identities
+
+Stable ID: `P1-ALG-ACTUAL-RESULTANT-DIVISIBILITIES`. Status: **proved ingredient**.
+
+- Mathlib pin 9d581dfff2e41de989072ea63abf3daf69311520 provides actual
+  Sylvester Bezout, homogenization and coefficient-reflection proofs.
+  The P1 proof derives both chart divisibilities and primitive cancellation
+  from actual form evaluations.
+- Nonzero padded resultants use explicit univariate coprimality and
+  full-degree conditions; integer polynomials are transported injectively
+  to Q. Actual finite signed denominator sets may vary their primitive
+  coordinate witnesses. The common polynomial-height count is proved.
+- Source chart extraction, nondegeneracy/height and the full determinant
+  argument remain open. No unproved literature input or new Paper C port
+  is introduced. See [alignment](RESULTANT_DENOMINATORS_ALIGNMENT.md).

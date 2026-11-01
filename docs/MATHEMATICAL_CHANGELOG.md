@@ -2380,3 +2380,25 @@ directly by Lean. Original manuscript bytes are unchanged.
 Validated primitive denominator checkpoint (9,479 build jobs;
 3,683 audited declarations; 1,398 directly checked coverage/finding names):
 [a2aa7351c69460372795ffbe55fc41123821d382](https://github.com/Vulkin-prog/paper-p1-lean/commit/a2aa7351c69460372795ffbe55fc41123821d382).
+
+### P1-MATH-0048 extension — Actual two-chart resultant construction
+
+Homogeneous Bezout and exact padded coefficient reflection now derive
+the two coordinate-power divisibilities from actual integer form
+evaluations. Primitive cancellation gives q dividing the actual product
+of chart resultants. Univariate coprimality over Q and an explicit
+full-degree condition prove nonvanishing of padded resultants. The
+finite signed denominator family may have different primitive coordinate
+witnesses for each q. Its count remains <=2*tau(|R*Rprime|), uniformly
+N^epsilon at fixed product height. Evidence: all ten declarations in
+`ResultantDivisibility`.
+
+This closes the independent resultant identities; source chart extraction,
+nondegeneracy and uniform height, eliminant construction and full T1.4
+remain open. Coverage stays 54/167, with 48 confirmed improvements. See
+[actual resultant alignment](RESULTANT_DENOMINATORS_ALIGNMENT.md).
+
+The full build passed (9,489 jobs); all 3,693 declarations passed the
+actual axiom audit, permitting only propext, Classical.choice and
+Quot.sound. All 1,408 distinct coverage/finding names were checked
+directly by Lean. Original manuscript bytes are unchanged.

@@ -381,3 +381,4 @@ public import PaperP1.Asymptotics.SmallKernelBlockCount
 public import PaperP1.Asymptotics.FixedWidthSmallKernel
 public import PaperP1.Diophantine.BivariateGridCount
 public import PaperP1.Diophantine.PrimitiveDenominators
+public import PaperP1.Diophantine.ResultantDivisibility

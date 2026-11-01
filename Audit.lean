@@ -2551,6 +2551,16 @@ import PaperP1
 #print axioms PaperP1.PellInput.QuadraticOrderConductor.relativeUnit_spec
 #print axioms PaperP1.PellInput.QuadraticOrderConductor.same_principalIdeal_of_same_extension
 #print axioms PaperP1.PellInput.QuadraticOrderConductor.quadraticOrderConductorFiberBoundInternal
+#print axioms PaperP1.ResultantDivisibility.dvd_resultant_of_dvd_evaluations
+#print axioms PaperP1.ResultantDivisibility.eval_reflected_homogenize
+#print axioms PaperP1.ResultantDivisibility.homogenized_bezout
+#print axioms PaperP1.ResultantDivisibility.dvd_resultant_coordinate_power
+#print axioms PaperP1.ResultantDivisibility.primitive_resultant_product
+#print axioms PaperP1.ResultantDivisibility.padded_resultant_ne_zero_of_left_degree
+#print axioms PaperP1.ResultantDivisibility.padded_resultant_ne_zero
+#print axioms PaperP1.ResultantDivisibility.integer_padded_resultant_ne_zero
+#print axioms PaperP1.ResultantDivisibility.finite_denominator_count
+#print axioms PaperP1.ResultantDivisibility.polynomial_height_denominator_count
 #print axioms PaperP1.QuadraticCount.square_factor_identity
 #print axioms PaperP1.QuadraticCount.square_positive_count_le_divisors
 #print axioms PaperP1.UniformQuadraticCount.product_square_of_ratio_square

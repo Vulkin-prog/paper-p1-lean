@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3683 audited theorem/lemma declarations**. This
+- The project currently has **3693 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1456,3 +1456,23 @@ directly by Lean. Original manuscript bytes are unchanged.
 Validated primitive denominator checkpoint (9,479 build jobs;
 3,683 audited declarations; 1,398 directly checked coverage/finding names):
 [a2aa7351c69460372795ffbe55fc41123821d382](https://github.com/Vulkin-prog/paper-p1-lean/commit/a2aa7351c69460372795ffbe55fc41123821d382).
+
+### Actual two-chart resultant divisibilities
+
+`ResultantDivisibility` constructs homogenized Bezout identities and
+proves that padded coefficient reflection exchanges homogeneous
+coordinates. The actual form evaluations give both chart divisibilities
+and primitive cancellation gives q dividing the actual product R*Rprime.
+Nonzero padded resultants are proved under explicit univariate
+coprimality and full-degree conditions, including the integer-to-Q map.
+The signed denominator family may vary its primitive coordinate witness
+with q; its count is <=2*tau(|R*Rprime|) and uniformly N^epsilon at
+fixed product height. This extends P1-MATH-0048. Source chart extraction,
+nondegeneracy and height, eliminant construction and full T1.4 remain
+open. Coverage stays 54/167, with 48 confirmed improvements. See
+[actual resultant alignment](RESULTANT_DENOMINATORS_ALIGNMENT.md).
+
+The full build passed (9,489 jobs); all 3,693 declarations passed the
+actual axiom audit, permitting only propext, Classical.choice and
+Quot.sound. All 1,408 distinct coverage/finding names were checked
+directly by Lean. Original manuscript bytes are unchanged.

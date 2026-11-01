@@ -90,9 +90,11 @@ fixed polynomial height. It precedes every primitive coordinate pair,
 every exponent and every finite family satisfying the divisibilities.
 No coordinate height bound is required for this arithmetic ingredient.
 
-The nonzero resultants, their two concrete divisibility identities and
-the eliminant polynomial are still to be constructed. These remain
-separate open steps of T1.4. This extension belongs to P1-MATH-0048;
+The actual two padded chart resultants and their concrete divisibility
+identities are now constructed in the later
+[actual resultant checkpoint](RESULTANT_DENOMINATORS_ALIGNMENT.md).
+Source chart extraction, nondegeneracy and uniform height, and the
+eliminant polynomial remain separate open steps of T1.4. This extension belongs to P1-MATH-0048;
 numbered coverage remains 54/167.
 
 The full build passed (9,479 jobs); all 3,683 declarations passed the
@@ -103,3 +105,8 @@ directly by Lean. Original manuscript bytes are unchanged.
 Validated primitive denominator checkpoint (9,479 build jobs;
 3,683 audited declarations; 1,398 directly checked coverage/finding names):
 [a2aa7351c69460372795ffbe55fc41123821d382](https://github.com/Vulkin-prog/paper-p1-lean/commit/a2aa7351c69460372795ffbe55fc41123821d382).
+
+The later [actual resultant checkpoint](RESULTANT_DENOMINATORS_ALIGNMENT.md)
+now derives both primitive-coordinate divisibilities from actual form
+evaluations. It also permits different primitive witnesses for different
+denominators, preserving the same finite and polynomial-height budgets.

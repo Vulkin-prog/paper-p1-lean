@@ -1807,13 +1807,23 @@
         "PaperP1.PrimitiveDenominators.mem_signedDivisors",
         "PaperP1.PrimitiveDenominators.signedDivisors_card",
         "PaperP1.PrimitiveDenominators.finite_denominator_count",
-        "PaperP1.PrimitiveDenominators.polynomial_height_count"
+        "PaperP1.PrimitiveDenominators.polynomial_height_count",
+        "PaperP1.ResultantDivisibility.dvd_resultant_of_dvd_evaluations",
+        "PaperP1.ResultantDivisibility.eval_reflected_homogenize",
+        "PaperP1.ResultantDivisibility.homogenized_bezout",
+        "PaperP1.ResultantDivisibility.dvd_resultant_coordinate_power",
+        "PaperP1.ResultantDivisibility.primitive_resultant_product",
+        "PaperP1.ResultantDivisibility.padded_resultant_ne_zero_of_left_degree",
+        "PaperP1.ResultantDivisibility.padded_resultant_ne_zero",
+        "PaperP1.ResultantDivisibility.integer_padded_resultant_ne_zero",
+        "PaperP1.ResultantDivisibility.finite_denominator_count",
+        "PaperP1.ResultantDivisibility.polynomial_height_denominator_count"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
         "P1-MATH-0048"
       ],
-      "notes": "The independent bivariate level-set ingredient in Step 3 is proved with explicit coefficient-independent bound d*(2H+1), using actual finite grids and positive-degree homogeneity. No coefficient-height, irreducibility or primitive-point hypothesis is needed for this ingredient. Full T1.4 remains open: the determinant, lattice changes, eliminant construction, other curve cases and short-vector summations are not proved. See BIVARIATE_GRID_ALIGNMENT.md. The primitive denominator budget is also proved from its two concrete divisibilities: q divides R*Rprime, signed choices cost at most twice its divisor count, and one polynomial-height threshold precedes all primitive coordinates, exponents and finite denominator families. The actual resultant/eliminant construction remains open."
+      "notes": "The independent Step 3 grid ingredient has explicit coefficient-independent bound d*(2H+1). Primitive signed denominator counts are proved, and actual homogenized Bezout identities plus padded coefficient reflection derive both chart-resultant divisibilities from the actual form evaluations. Nonzero padded resultants are proved under explicit univariate coprimality and full-degree conditions, including transport from integer polynomials to Q. Finite denominator families may use different primitive coordinates for each denominator. Uniform N^epsilon counts follow from actual resultant product height. Full T1.4 remains open: source chart extraction/nondegeneracy and uniform height, eliminant construction, determinant/lattice stages and other curve cases are not closed. See BIVARIATE_GRID_ALIGNMENT.md and RESULTANT_DENOMINATORS_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:twokernel",
