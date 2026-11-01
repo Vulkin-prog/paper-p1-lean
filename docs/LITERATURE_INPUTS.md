@@ -20,6 +20,28 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Exact local blocks and the original Bernoulli laws
+
+Stable ID: `P1-ARITH-EXACT-LOCAL-BLOCKS`. Status: **proved**.
+
+- Target: every conclusion of companion Proposition T19.2, page 67,
+  `p1:limits:local-blocks`.
+- Lean: `LocalBlocksTheorem.companion_T19_2`; the finite formulation is
+  `finite_conclusion`. The actual square-product population is identified
+  by `LocalRelationBlocks.mem_relations_iff_square_product`.
+- The already proved critical rank-one theorem supplies local uniqueness.
+  Physical set encodings, interval geometry, the predecessor Fourier phase,
+  actual Bernoulli pushforward laws and all finite sum identities are
+  proved internally. Deterministic separation supplies the count support;
+  no independence between blocks is assumed.
+- At most two endpoint truncations give the original correction. The
+  nonempty clipped-block improvement is recorded in P1-MATH-0027.
+  There is no assumed Fourier phase, probability or endpoint estimate.
+- No new Paper C source is ported and no unproved literature proposition
+  is added. Mathlib at the pinned revision supplies finite sums, linear
+  algebra, integer intervals and elementary real arithmetic. See
+  [alignment](LOCAL_BLOCKS_ALIGNMENT.md).
+
 ## Forced offset planes and their original affine mass
 
 Stable ID: `P1-ARITH-OFFSET-FORCED-PLANE`. Status: **proved**.

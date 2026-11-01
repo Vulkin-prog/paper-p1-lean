@@ -891,6 +891,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "1bbce661a7f9c0bdaaccc69e5ab171848a9e5db1"
+    },
+    {
+      "id": "P1-MATH-0027",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:local-blocks",
+        "number": "T19.2",
+        "page": 67,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 63,
+        "statement_sha256": "705bac9d7b5aee059315ab720c16e5ef0539a99b2c1f2bce57b32cab6b2bb79e"
+      },
+      "original_assumption": "The last sentence of companion Proposition T19.2 bounds the total endpoint correction by 2*L*p, after counting at most two truncated local blocks.",
+      "finding": "The absolute correction of each nonempty clipped block is at most p*(card(fullBlock)-1). Consequently the total correction is at most p times the sum of these full lengths minus one over the actually truncated blocks, and in particular at most 2*(L-1)*p. The sharper bound holds in the full finite rank-one formulation and uniformly throughout every fixed critical band.",
+      "evidence": [
+        "PaperP1.LocalBlockBoundarySharp.clipped_weight_error",
+        "PaperP1.LocalBlockBoundarySharp.boundaryError_bound_by_length",
+        "PaperP1.LocalBlockBoundarySharp.sum_boundaryError_bound_by_lengths",
+        "PaperP1.LocalBlockBoundarySharp.mean_full_block_error_sharp",
+        "PaperP1.LocalBlocksTheorem.boundary_improvement_uniform"
+      ],
+      "proposed_revision": "Replace 2Lp by 2(L-1)p in the endpoint correction, or give the finer bound p times the sum of card(fullBlock)-1 over the actual truncated blocks. Explain that every clipped block is nonempty and retains at least one full-block start.",
+      "impact": "Sharpens the finite boundary constant while keeping the same asymptotic order. It changes neither the exact Bernoulli parameter nor the mean and absolute discrepancy identities. It asserts no sign of the total mean bias and no optimality. The original weaker bound is true; no manuscript error is claimed.",
+      "validation": "Full Lean v4.36.0-rc2 build (8989 jobs) and actual axiom audit of all 2487 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 523 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -139,3 +139,15 @@ public import PaperP1.Model.TripleProbabilityBound
 public import PaperP1.Arithmetic.OffsetPlaneMass
 public import PaperP1.Asymptotics.OffsetPlaneMass
 public import PaperP1.Asymptotics.OffsetPlaneTheorem
+public import PaperP1.Affine.OneRelationMass
+public import PaperP1.Algebra.BinaryRankOne
+public import PaperP1.Arithmetic.LocalBlockBoundary
+public import PaperP1.Arithmetic.LocalRelationBlocks
+public import PaperP1.Arithmetic.LocalRelationSets
+public import PaperP1.Asymptotics.LocalBlocksTheorem
+public import PaperP1.Model.LocalBlockBoundaryMass
+public import PaperP1.Model.LocalBlockBoundarySharp
+public import PaperP1.Model.LocalBlockGeometry
+public import PaperP1.Model.LocalBlockMass
+public import PaperP1.Model.LocalRelationRows
+public import PaperP1.Probability.BernoulliCount

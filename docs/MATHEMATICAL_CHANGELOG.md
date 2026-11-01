@@ -916,3 +916,32 @@ All 480 distinct coverage/finding declaration names were checked directly by Lea
 
 Validated implementation of companion T20.3 and P1-MATH-0026:
 [1bbce661a7f9c0bdaaccc69e5ab171848a9e5db1](https://github.com/Vulkin-prog/paper-p1-lean/commit/1bbce661a7f9c0bdaaccc69e5ab171848a9e5db1).
+
+## P1-MATH-0027 — A sharper local-block endpoint correction
+
+- Location: the last sentence of companion Proposition T19.2, page 67,
+  `p1:limits:local-blocks`, `companion_sections/limits_appendix.tex:63`.
+- Original bound: the total endpoint correction has absolute value at
+  most 2*L*p, with at most two truncated blocks.
+- Improvement: each nonempty clipped block contributes a correction of
+  absolute value at most p*(card(fullBlock)-1). Sum this quantity only
+  over the actually truncated blocks to obtain a length-dependent bound;
+  the simpler uniform bound is 2*(L-1)*p. Both hold in the finite rank-one
+  formulation and uniformly in every fixed critical band.
+- Evidence: `LocalBlockBoundarySharp.clipped_weight_error`,
+  `boundaryError_bound_by_length`, `sum_boundaryError_bound_by_lengths`,
+  `mean_full_block_error_sharp` and
+  `LocalBlocksTheorem.boundary_improvement_uniform`.
+- Reason: clipping retains at least one full-block start. If the endpoint
+  causing the incompatible marginal is removed, at least one start is
+  removed as well. Both cases give card(fullBlock)-1 rather than L.
+- Suggested revision: sharpen the displayed finite boundary constant or
+  state the finer bound using the actual full lengths. The asymptotic
+  order, exact block laws and mean identities are unchanged. No sign of
+  the whole mean bias, error in the original bound or optimality is claimed.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,989 jobs) and
+  actual axiom audit of all 2,487 theorem/lemma declarations, with only
+  `propext`, `Classical.choice` and `Quot.sound`. Not integrated into a
+  new manuscript version.
+
+All 523 distinct coverage/finding declaration names were checked directly by Lean.
