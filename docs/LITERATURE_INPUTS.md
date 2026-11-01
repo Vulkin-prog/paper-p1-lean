@@ -1343,3 +1343,14 @@ a proved uniform subpolynomial modulus/shift factor. The second
 square-part sum remains open. No new unproved literature input or
 Paper C port is introduced. See
 [alignment](QUADRATIC_KERNEL_FIRST_BRANCH_ALIGNMENT.md).
+
+## Quadratic-kernel square-part sum
+
+The actual square-part range, polynomial modulus height, grouped
+congruence count and finite sum now prove both T5.1 counting branches
+and their min/affine consequences. The exact exponent comparison is
+qualified as detailed in P1-MATH-0054; no additional literature estimate,
+CRT root classification or Paper C port is assumed. All uses of divisor
+subpolynomiality, logarithmic growth, positive quadratic fibres and real
+powers reduce to previously proved project declarations and the pinned
+Mathlib. See [alignment](QUADRATIC_KERNEL_COMPLETE_COUNTS_ALIGNMENT.md).

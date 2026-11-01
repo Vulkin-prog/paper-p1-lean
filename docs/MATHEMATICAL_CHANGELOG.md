@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**53 mathematical improvements are confirmed; no error in a manuscript conclusion
+**54 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -2643,3 +2643,18 @@ subpolynomial residue cost at polynomial modulus/polylogarithmic shift
 heights. This is P1-MATH-0053. The second square-part sum and combined
 T5.1 exponent remain open. Coverage stays 56/167, with 53 confirmed
 improvements. See [alignment](QUADRATIC_KERNEL_FIRST_BRANCH_ALIGNMENT.md).
+
+## P1-MATH-0054 — Full quadratic-kernel counts and a precise exponent comparison
+
+Both actual T5.1 counting branches, their minimum and the affine count are now
+proved uniformly, including real endpoints and derived square-part/modulus
+heights. The stronger capped exponent min(1,c2) is universally bounded by
+the affine expression, avoiding the endpoint range issue. The uncapped
+comparison is exact for beta-2delta<=2; an arbitrary positive margin is
+proved for every actual admissible nonempty family. The unrestricted
+abstract comparison fails at beta=5/2, delta=0. This is a range clarification,
+not a counterexample to the manuscript counting estimate, whose proof
+already uses beta<=2+o(1). The literal display remains unclaimed, so the
+numbered row stays in progress. See
+[full count and range alignment](QUADRATIC_KERNEL_COMPLETE_COUNTS_ALIGNMENT.md)
+and the machine-readable finding for every checked declaration.

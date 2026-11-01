@@ -1,6 +1,7 @@
 module
 
 public import PaperP1.Diophantine.QuadraticKernelFibres
+public import PaperP1.Diophantine.QuadraticKernelRanges
 public import PaperP1.Asymptotics.UniformReal
 public import Mathlib.Algebra.BigOperators.Ring.Finset
 
@@ -92,5 +93,41 @@ theorem actual_values_first_branch (K : ℕ) (ε : ℝ) (hε : 0 < ε) :
   intro n hn
   obtain ⟨hnpos, hnX, _, hnQ, hne⟩ := (mem_values X h Q e n).mp hn
   exact ⟨hnpos, hnX, hnQ, hne⟩
+
+theorem real_first_branch_count (K : ℕ) (ε : ℝ) (hε : 0 < ε) :
+    ∃ N₀ : ℕ, ∀ N ≥ N₀, ∀ X h e : ℕ, ∀ Q : ℝ, 0 ≤ Q → 0 < h → 0 < e →
+      X ≤ N ^ K → h ≤ N ^ K → ∀ S : Finset ℕ,
+        (∀ n ∈ S, 0 < n ∧ n ≤ X ∧ (kernel h n : ℝ) < 2 * Q ∧ e ∣ kernel h n) →
+          (S.card : ℝ) ≤ (N : ℝ) ^ ε * (Q / e) := by
+  obtain ⟨Nf, hNf⟩ := fixed_kernel_count K (ε / 2) (by positivity)
+  obtain ⟨Nc, hNc⟩ := PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
+    (PaperP1.ExpSqrtLog.uniformSubpolynomialOn_const (fun _ _ : ℕ ↦ True) 2) (ε / 2) (by positivity)
+  refine ⟨max 1 (max Nf Nc), ?_⟩
+  intro N hN X h e Q hQ hh he hX hhN S hS
+  have hn : (0 : ℝ) < N := by exact_mod_cast (show 0 < N by omega)
+  have hc : (2 : ℝ) ≤ (N : ℝ) ^ (ε / 2) := (le_abs_self _).trans (hNc N (by omega) 0 trivial)
+  have himage : ((S.image (kernel h)).card : ℝ) ≤ 2 * Q / e := by
+    apply PaperP1.QuadraticKernelRanges.divisible_card (2 * Q) (by positivity) e he
+    intro q hq
+    obtain ⟨n, hnS, rfl⟩ := mem_image.mp hq
+    exact ⟨kernel_pos h n, (hS n hnS).2.2.1.le, (hS n hnS).2.2.2⟩
+  calc
+    (S.card : ℝ) = ∑ q ∈ S.image (kernel h), ((S.filter fun n ↦ kernel h n = q).card : ℝ) := by
+      have hi := congrArg (fun m : ℕ ↦ (m : ℝ)) (card_eq_sum_card_image (kernel h) S)
+      simpa only [Nat.cast_sum] using hi
+    _ ≤ ∑ _q ∈ S.image (kernel h), (N : ℝ) ^ (ε / 2) := by
+      apply sum_le_sum
+      intro q _
+      apply hNf N (by omega) X h q hh hX hhN
+      intro n hnS
+      obtain ⟨hnS, hnq⟩ := mem_filter.mp hnS
+      exact ⟨(hS n hnS).1, (hS n hnS).2.1, hnq⟩
+    _ = ((S.image (kernel h)).card : ℝ) * (N : ℝ) ^ (ε / 2) := by simp
+    _ ≤ (2 * Q / e) * (N : ℝ) ^ (ε / 2) :=
+      mul_le_mul_of_nonneg_right himage (Real.rpow_nonneg hn.le _)
+    _ = (2 * (N : ℝ) ^ (ε / 2)) * (Q / e) := by ring
+    _ ≤ ((N : ℝ) ^ (ε / 2) * (N : ℝ) ^ (ε / 2)) * (Q / e) :=
+      mul_le_mul_of_nonneg_right (mul_le_mul_of_nonneg_right hc (Real.rpow_nonneg hn.le _)) (by positivity)
+    _ = _ := by rw [← Real.rpow_add hn]; congr 2; ring
 
 end PaperP1.PrescribedQuadraticKernelCount

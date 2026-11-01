@@ -2506,13 +2506,60 @@
         "PaperP1.PrescribedQuadraticKernelCount.actual_values_first_branch"
       ],
       "proposed_revision": "State the first prescribed-kernel estimate with its broader polynomial-shift scope and the exact floor(2Q/e) kernel budget. Keep the polylogarithmic shift assumption in the second branch. As a proof alternative, use gcd groups and the exact linear progression estimate, whose divisor cost is subpolynomial at the required modulus heights. Do not claim a sharper finite comparison to the different source prime-power bound.",
-      "impact": "Closes the first actual T5.1 branch with broader shift scope and supplies a simpler proved congruence ingredient for the second. The second square-part sum, the min exponent and affine consequence remain open, so T5.1 stays in progress and numbered coverage stays 56/167.",
+      "impact": "Closes the first actual T5.1 branch with broader shift scope and supplies a simpler proved congruence ingredient for the second. The subsequent P1-MATH-0054 closes both actual counting branches and their min/affine estimates. The literal unqualified algebraic display still needs range wording alignment, so T5.1 remains in progress and numbered coverage stays 56/167.",
       "validation": "Lean v4.36.0-rc2 full build passed (9,559 jobs); the actual audit passed for all 3,891 theorem/lemma declarations, using only propext, Classical.choice and Quot.sound. All 1,606 distinct ledger and finding declarations were directly checked; 138 original manifest entries and 167 numbered-result records passed integrity checks. Available Ubuntu space: 17.64 GiB. No new unproved literature input or Paper C port; original manuscript bytes unchanged.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
       "validation_commit": "634ba375ac75bb394b2fa7c3c2621f75d74289e5"
+    },
+    {
+      "id": "P1-MATH-0054",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:short:quadratic",
+        "number": "T5.1",
+        "page": 31,
+        "source": "companion_sections/short_supports.tex",
+        "line": 9,
+        "statement_sha256": "98eb59430167ea84a4dd75c36b107f990646c6c2f47783b8292f95e2659899bb"
+      },
+      "original_assumption": "T5.1 has polylogarithmic positive shifts and actual quadratic kernels q asymptotic to N^beta with prescribed squarefree e. Its display compares the uncapped c2 to the affine exponent without a printed range qualification; its proof uses beta<=2+o(1).",
+      "finding": "All actual counting conclusions are now proved uniformly, including real kernel endpoints, the square-part sum, the minimum c2 and the affine estimate. The trivial integer-count branch yields the stronger capped exponent min(1,c2). This capped exponent is at most 1/2+beta/4-delta/2 for ALL real beta,delta, eliminating a boundary-range argument. For the uncapped c2, the exact comparison holds under beta-2delta<=2 (in particular beta<=2, delta>=0). The unrestricted real comparison has the checked counterexample beta=5/2, delta=0. This is an algebraic range clarification, not a counterexample to the actual manuscript count: actual nonempty families give beta<=2+o(1), and a uniform arbitrary-positive-margin comparison is proved from their actual height bound.",
+      "evidence": [
+        "PaperP1.QuadraticKernelRanges.positive_card",
+        "PaperP1.QuadraticKernelRanges.divisible_card",
+        "PaperP1.QuadraticKernelRanges.product_bounds",
+        "PaperP1.QuadraticKernelRanges.square_part_range",
+        "PaperP1.QuadraticKernelRanges.modulus_divides",
+        "PaperP1.QuadraticKernelRanges.modulus_height",
+        "PaperP1.QuadraticSquarePartCount.reciprocal_budget",
+        "PaperP1.QuadraticSquarePartCount.second_branch_count",
+        "PaperP1.QuadraticKernelExponents.capped_le_affine",
+        "PaperP1.QuadraticKernelExponents.exponent_le_affine_of_range",
+        "PaperP1.QuadraticKernelExponents.exponent_le_affine",
+        "PaperP1.QuadraticKernelExponents.exponent_le_affine_with_margin",
+        "PaperP1.QuadraticKernelExponents.unrestricted_comparison_counterexample",
+        "PaperP1.PrescribedQuadraticKernelTheorem.mem_values",
+        "PaperP1.PrescribedQuadraticKernelTheorem.size_identities",
+        "PaperP1.PrescribedQuadraticKernelTheorem.three_exponent_bounds",
+        "PaperP1.PrescribedQuadraticKernelTheorem.actual_exponent_counts",
+        "PaperP1.PrescribedQuadraticKernelTheorem.admissible_height",
+        "PaperP1.PrescribedQuadraticKernelTheorem.eventual_source_comparison",
+        "PaperP1.PrescribedQuadraticKernelTheorem.companion_T5_1_counts",
+        "PaperP1.PrescribedQuadraticKernelCount.real_first_branch_count"
+      ],
+      "proposed_revision": "State the universally valid exponent min(1,c2), or qualify the uncapped displayed comparison by beta-2delta<=2. If retaining the actual admissible beta<=2+o(1) convention, put the corresponding o(1) on the exponent comparison. Use the capped proof to obtain the affine actual count directly. Keep the original count exponents and the polylogarithmic assumption in the square-part branch.",
+      "impact": "Closes both actual counting branches and their min/affine consequences, with a stronger capped estimate and weaker divisor assumptions. No failure of an advertised asymptotic counting exponent is established. The ledger conservatively leaves T5.1 in progress solely for the literal unqualified display pending manuscript alignment; numbered coverage remains 56/167.",
+      "validation": "Lean v4.36.0-rc2 full build passed (9,567 jobs); actual axiom audit passed for all 3,912 theorem/lemma declarations, with only propext, Classical.choice and Quot.sound. All 1,627 distinct ledger/finding declarations were directly checked. All 138 source manifest entries and 167 result records remain intact. Ubuntu available space: 17.63 GiB. No new unproved literature input or Paper C port.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

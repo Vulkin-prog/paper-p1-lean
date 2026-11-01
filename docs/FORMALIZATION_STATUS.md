@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3891 audited theorem/lemma declarations**. This
+- The project currently has **3912 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1687,3 +1687,25 @@ First-branch verification: the full build passed (9,559 jobs), the actual
 axiom audit passed for all 3,891 declarations, and all 1,606 distinct
 coverage/finding names were checked directly. All 138 source manifest
 entries and 167 result records remain intact; Ubuntu has 17.64 GiB free.
+
+## Actual T5.1 counts and exponent-range clarification
+
+The second square-part branch is closed: actual parts lie between
+N/(2 sqrt(Q)) and 3N/sqrt(Q), their moduli e*v^2 have derived height N^5,
+and the finite sum gives N^epsilon*(sqrt(Q)/e+N/sqrt(Q)). The first branch
+now accepts real Q. The two branches, their min exponent, a stronger
+min(1,c2) exponent and the affine count have one common threshold before
+h,e,beta and the actual set. No squarefreeness premise on e is needed.
+
+P1-MATH-0054 proves the capped exponent is universally at most the affine
+expression. The uncapped exact comparison needs beta-2delta<=2, while
+the actual admissible families give the arbitrary-positive-margin
+comparison. Because the literal source display omits this qualification,
+T5.1 remains in progress for wording alignment; no unqualified comparison
+is claimed. Coverage remains 56/167, with 54 confirmed improvements.
+See [alignment](QUADRATIC_KERNEL_COMPLETE_COUNTS_ALIGNMENT.md).
+
+Verification: full build passed (9,567 jobs); actual axiom audit passed for
+3,912 declarations; all 1,627 distinct ledger/finding names were checked
+directly. All 138 manifest entries and 167 result records remain intact.
+Ubuntu available space: 17.63 GiB.

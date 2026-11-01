@@ -416,3 +416,11 @@ public import PaperP1.Diophantine.SplitQuadraticCongruences
 public import PaperP1.Asymptotics.SplitQuadraticCongruenceCount
 public import PaperP1.Diophantine.QuadraticKernelFibres
 public import PaperP1.Asymptotics.PrescribedQuadraticKernelCount
+
+public import PaperP1.Diophantine.QuadraticKernelRanges
+
+public import PaperP1.Asymptotics.QuadraticSquarePartCount
+
+public import PaperP1.Asymptotics.QuadraticKernelExponents
+
+public import PaperP1.Asymptotics.PrescribedQuadraticKernelTheorem

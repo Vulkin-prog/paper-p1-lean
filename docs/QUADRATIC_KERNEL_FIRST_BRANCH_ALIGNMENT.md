@@ -76,10 +76,14 @@ a CRT counting assertion. Its divisor cost tau(M) suffices for the
 required subpolynomial factor; no comparison with the source's
 different finite h*2^omega(M) bound is asserted.
 
-## Remaining source scope
+## Remaining scope at this historical checkpoint
 
 The second T5.1 branch still needs the actual square-part size range,
 the sum over its values and the resulting second exponent. Their
 combination with the first branch and the final affine exponent are
 not yet claimed. This checkpoint adds no new unproved literature
 input, Paper C port, manuscript revision or Palomar registration.
+
+The subsequent [complete counting checkpoint](QUADRATIC_KERNEL_COMPLETE_COUNTS_ALIGNMENT.md)
+closes both counts and their min/affine consequences. Its range qualification
+explains why the literal numbered statement is still not counted as complete.

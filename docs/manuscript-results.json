@@ -3250,13 +3250,35 @@
         "PaperP1.PrescribedQuadraticKernelCount.mem_values",
         "PaperP1.PrescribedQuadraticKernelCount.divisible_positive_card",
         "PaperP1.PrescribedQuadraticKernelCount.first_branch_count",
-        "PaperP1.PrescribedQuadraticKernelCount.actual_values_first_branch"
+        "PaperP1.PrescribedQuadraticKernelCount.actual_values_first_branch",
+        "PaperP1.QuadraticKernelRanges.positive_card",
+        "PaperP1.QuadraticKernelRanges.divisible_card",
+        "PaperP1.QuadraticKernelRanges.product_bounds",
+        "PaperP1.QuadraticKernelRanges.square_part_range",
+        "PaperP1.QuadraticKernelRanges.modulus_divides",
+        "PaperP1.QuadraticKernelRanges.modulus_height",
+        "PaperP1.QuadraticSquarePartCount.reciprocal_budget",
+        "PaperP1.QuadraticSquarePartCount.second_branch_count",
+        "PaperP1.QuadraticKernelExponents.capped_le_affine",
+        "PaperP1.QuadraticKernelExponents.exponent_le_affine_of_range",
+        "PaperP1.QuadraticKernelExponents.exponent_le_affine",
+        "PaperP1.QuadraticKernelExponents.exponent_le_affine_with_margin",
+        "PaperP1.QuadraticKernelExponents.unrestricted_comparison_counterexample",
+        "PaperP1.PrescribedQuadraticKernelTheorem.mem_values",
+        "PaperP1.PrescribedQuadraticKernelTheorem.size_identities",
+        "PaperP1.PrescribedQuadraticKernelTheorem.three_exponent_bounds",
+        "PaperP1.PrescribedQuadraticKernelTheorem.actual_exponent_counts",
+        "PaperP1.PrescribedQuadraticKernelTheorem.admissible_height",
+        "PaperP1.PrescribedQuadraticKernelTheorem.eventual_source_comparison",
+        "PaperP1.PrescribedQuadraticKernelTheorem.companion_T5_1_counts",
+        "PaperP1.PrescribedQuadraticKernelCount.real_first_branch_count"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
-        "P1-MATH-0053"
+        "P1-MATH-0053",
+        "P1-MATH-0054"
       ],
-      "notes": "First branch only, on actual canonical squarefree kernels: a proved injective quadratic embedding and derived polynomial heights give uniform fixed-kernel fibres, including q=1. Actual prescribed-divisor kernels have at most floor(2Q/e) values, giving #n<=N^epsilon*Q/e uniformly even for polynomial-height shifts in this first branch. A separate proved finite gcd-group congruence estimate gives tau(M)*(X*h/M+1), and N^epsilon*(X/M+1) for polynomial moduli and polylogarithmic shifts. The second square-part count and its combination into the full min/affine exponent remain open; full T5.1 is not claimed."
+      "notes": "All actual count conclusions are proved with one common threshold before h,e,beta and the finite set: the two source branches, their minimum c2, the stronger min(1,c2), and the affine bound. Real kernel endpoints, the q=1 fibre and all derived polynomial heights are included; no squarefreeness assumption on e is needed. The literal unqualified displayed comparison c2<=affine is NOT claimed: the exact algebraic comparison is proved for beta-2delta<=2, and a uniform epsilon-margin comparison for every actual nonempty dyadic family. The source already uses beta<=2+o(1); P1-MATH-0054 specifies this distinction and gives a universally valid capped replacement. Keep the numbered row in progress pending exact manuscript wording alignment, rather than count the unqualified display as proved."
     },
     {
       "label": "p13:short:split",
