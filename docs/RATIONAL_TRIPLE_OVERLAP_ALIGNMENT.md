@@ -59,3 +59,5 @@ Nonprimitive triples are not silently inserted into the source formula.
 No Paper C port, new literature proposition or manuscript edit is used.
 Coverage is 67/167: main 23/73, companion 44/94. Confirmed mathematical
 improvements are 67. Palomar remains a later whole-project milestone.
+
+Validated proof checkpoint: [b213976b9a0e0aac822f374b3838524fdf05c0d2](https://github.com/Vulkin-prog/paper-p1-lean/commit/b213976b9a0e0aac822f374b3838524fdf05c0d2).

@@ -1632,7 +1632,8 @@
       "mathematical_changes": [
         "P1-MATH-0067"
       ],
-      "notes": "Full source statement proved for every integer triple u<v<w<2u with gcd(u,v,w)=1. The ordered source density is exact; positivity is deduced from the integer order range. All three possible low-height pairs are classified, their primitive small-ratio cases are checked by kernel proofs, and no arithmetic private-rank estimate is an input. A stronger rigidity statement proves equality at 19/30 if and only if (u,v,w)=(10,12,15); every other primitive ordered triple has density at most 11/18, attained at (8,9,12). This is a sharp gap of 1/45 in canonical coincidence geometry only. It does not bound additional arithmetic relations among distinct normalized values or prove the cumulant exponent. See RATIONAL_TRIPLE_OVERLAP_ALIGNMENT.md."
+      "notes": "Full source statement proved for every integer triple u<v<w<2u with gcd(u,v,w)=1. The ordered source density is exact; positivity is deduced from the integer order range. All three possible low-height pairs are classified, their primitive small-ratio cases are checked by kernel proofs, and no arithmetic private-rank estimate is an input. A stronger rigidity statement proves equality at 19/30 if and only if (u,v,w)=(10,12,15); every other primitive ordered triple has density at most 11/18, attained at (8,9,12). This is a sharp gap of 1/45 in canonical coincidence geometry only. It does not bound additional arithmetic relations among distinct normalized values or prove the cumulant exponent. See RATIONAL_TRIPLE_OVERLAP_ALIGNMENT.md.",
+      "validation_commit": "b213976b9a0e0aac822f374b3838524fdf05c0d2"
     },
     {
       "label": "p13:third:aligned-family",
