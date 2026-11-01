@@ -861,13 +861,35 @@
         "PaperP1.FixedSourceConditionalSum.witness_sum",
         "PaperP1.FixedSourceConditionalSum.conditional_sum",
         "PaperP1.FixedSourceConditionalSum.homogeneous_sum",
-        "PaperP1.FixedSourceConditionalSum.fresh_conditional_sum"
+        "PaperP1.FixedSourceConditionalSum.fresh_conditional_sum",
+        "PaperP1.PrescribedTupleMass.joint_nonneg",
+        "PaperP1.PrescribedTupleMass.append_event",
+        "PaperP1.PrescribedTupleMass.append_le",
+        "PaperP1.PrescribedTupleMass.append_eq_zero",
+        "PaperP1.PrescribedTupleMass.conditional_factor",
+        "PaperP1.TupleExtensions.mem_step",
+        "PaperP1.TupleExtensions.appended_disjoint",
+        "PaperP1.TupleExtensions.step_sum",
+        "PaperP1.TupleExtensions.step_coordinates",
+        "PaperP1.TupleExtensions.more_coordinates",
+        "PaperP1.TupleExtensions.mem_more",
+        "PaperP1.TupleExtensions.mem_distinctMore",
+        "PaperP1.FixedSourceMassStep.point_step",
+        "PaperP1.FixedSourceMassStep.family_step",
+        "PaperP1.FixedSourceMassStep.bounded_orders",
+        "PaperP1.TupleMassIteration.iterate",
+        "PaperP1.PrescribedRunMass.joint_eq_infinite",
+        "PaperP1.FixedOrderMassPropagation.all_extensions",
+        "PaperP1.FixedOrderMassPropagation.extension_subfamilies",
+        "PaperP1.FixedOrderMassPropagation.main_6_3_propagation",
+        "PaperP1.FixedOrderMassPropagation.original_run_extensions"
       ],
       "literature_inputs": [
-        "P1-PROB-FIXED-SOURCE-CONDITIONAL-SUM"
+        "P1-PROB-FIXED-SOURCE-CONDITIONAL-SUM",
+        "P1-PROB-FIXED-ORDER-MASS-PROPAGATION"
       ],
       "mathematical_changes": [],
-      "notes": "The full first conditional-sum assertion is proved on the actual infinite prime-sign measure. FixedSourceConditionalSum.fresh_conditional_sum counts the literal source-excluding conditional sum, uniformly before every length, source tuple and compatible affine source prescription. The stronger conditional_sum includes source centres, allows repeated sources and arbitrary target prescriptions depending on the centre. The homogeneous case is proved. Every compatible prescription has an actual finite-cylinder witness. Actual conditional masses are transported to finite affine observation probabilities; their effective-family nullity increment is identified with the arithmetic delta_z. Local rank loss <=1 bounds every affine target atom, including incompatible atoms with mass zero. The low/high split uses the complete actual main 6.2 count, with explicit exponent margins. Remaining for the full numbered result: actual extension-family mass propagation at every fixed higher order and the final local-defect/contact seed mass conclusion. Main 6.3 is not counted complete. See FIXED_SOURCE_PROPAGATION_ALIGNMENT.md.",
+      "notes": "The complete actual conditional-sum and extension-family propagation assertions of main 6.3 are proved. FixedSourceConditionalSum.fresh_conditional_sum gives the literal source-excluding conditional sum, with arbitrary compatible affine source prescriptions and centre-dependent target prescriptions. Homogeneous prescriptions are included. Actual infinite-measure events are transported to finite cylinder laws, with exact effective nullity increment and local rank retained. PrescribedTupleMass constructs actual joint masses and proves the conditional factorization, including zero-mass seeds. TupleExtensions constructs literal finite ordered extension families, identifies their initial source tuple and all coordinates, and filters the actual ordered-distinct family. FixedSourceMassStep bounds one-step actual mass uniformly before every source order in a fixed range. TupleMassIteration proves finite iteration, and FixedOrderMassPropagation.main_6_3_propagation bounds the literal distinct-extension mass by N^epsilon times the actual seed mass. The stronger all_extensions theorem permits repeats and bounds every extension subfamily. PrescribedRunMass identifies the prescribed start masses with the original infiniteFamilyJointMoment; original_run_extensions gives that source specialization. The threshold precedes every seed family and prescription. Remaining for the full numbered result: actual local-defect and compatible-contact seed bounds, and their propagation to arbitrary seed positions in fixed-order tuples. Main 6.3 remains in progress. See FIXED_SOURCE_PROPAGATION_ALIGNMENT.md.",
       "validation_commit": "d61129a4481b626b35958ee0329ac668362aec1e"
     },
     {

@@ -3032,3 +3032,14 @@ These scope extensions are recorded without counting a separate
 independent finding. Extension-family propagation and the final seed
 conclusion remain open. Coverage stays 70/167 and registered findings
 stay 69. See [alignment](FIXED_SOURCE_PROPAGATION_ALIGNMENT.md).
+
+
+Main 6.3 propagation checkpoint: its second assertion now has a full
+proof for actual finite extension families and actual original-model
+joint masses. Zero-mass seeds, arbitrary seed families, every fixed
+intermediate order and the exact distinct-extension condition are
+retained. The stronger estimate counts all extensions including repeats,
+then bounds every subfamily. These quantifier and scope details are
+traced without counting a new independent finding. The final local-
+defect/contact seed consequence remains open; coverage stays 70/167
+and confirmed findings stay 69. See [alignment](FIXED_SOURCE_PROPAGATION_ALIGNMENT.md).

@@ -2466,6 +2466,10 @@ import PaperP1
 #print axioms PaperP1.FixedDegreeKernelCount.real_interval_count
 #print axioms PaperP1.FixedHeightResidual.large_kernel_rate
 #print axioms PaperP1.FixedHeightResidual.full_kernel_rate
+#print axioms PaperP1.FixedOrderMassPropagation.all_extensions
+#print axioms PaperP1.FixedOrderMassPropagation.extension_subfamilies
+#print axioms PaperP1.FixedOrderMassPropagation.main_6_3_propagation
+#print axioms PaperP1.FixedOrderMassPropagation.original_run_extensions
 #print axioms PaperP1.FixedProjectedMotifs.exists_even_order
 #print axioms PaperP1.FixedProjectedMotifs.old_factor_bound
 #print axioms PaperP1.FixedProjectedMotifs.fixed_motif_count
@@ -2473,6 +2477,9 @@ import PaperP1
 #print axioms PaperP1.FixedSourceConditionalSum.conditional_sum
 #print axioms PaperP1.FixedSourceConditionalSum.homogeneous_sum
 #print axioms PaperP1.FixedSourceConditionalSum.fresh_conditional_sum
+#print axioms PaperP1.FixedSourceMassStep.point_step
+#print axioms PaperP1.FixedSourceMassStep.family_step
+#print axioms PaperP1.FixedSourceMassStep.bounded_orders
 #print axioms PaperP1.FixedWidthSmallKernel.realSelectedStarts_eq
 #print axioms PaperP1.FixedWidthSmallKernel.offsets_card
 #print axioms PaperP1.FixedWidthSmallKernel.one_kernel
@@ -3443,6 +3450,13 @@ import PaperP1
 #print axioms PaperP1.TopProductSelection.outside_power_le
 #print axioms PaperP1.TopProductSelection.certificate_or_small_groups
 #print axioms PaperP1.TopProductSelection.real_root_bound
+#print axioms PaperP1.TupleExtensions.mem_step
+#print axioms PaperP1.TupleExtensions.appended_disjoint
+#print axioms PaperP1.TupleExtensions.step_sum
+#print axioms PaperP1.TupleExtensions.step_coordinates
+#print axioms PaperP1.TupleExtensions.more_coordinates
+#print axioms PaperP1.TupleExtensions.mem_more
+#print axioms PaperP1.TupleExtensions.mem_distinctMore
 #print axioms PaperP1.UniformTransversal.exists_transversal
 #print axioms PaperP1.ZeroSumFreeRepresentations.mem_representations
 #print axioms PaperP1.ZeroSumFreeRepresentations.zeroSumFree_mono
@@ -3994,6 +4008,12 @@ import PaperP1
 #print axioms PaperP1.PositiveStarts.finiteCount_le_total
 #print axioms PaperP1.PositiveStarts.infiniteCount_le_total
 #print axioms PaperP1.PositiveStarts.exponentialMoment_eq_finite
+#print axioms PaperP1.PrescribedRunMass.joint_eq_infinite
+#print axioms PaperP1.PrescribedTupleMass.joint_nonneg
+#print axioms PaperP1.PrescribedTupleMass.append_event
+#print axioms PaperP1.PrescribedTupleMass.append_le
+#print axioms PaperP1.PrescribedTupleMass.append_eq_zero
+#print axioms PaperP1.PrescribedTupleMass.conditional_factor
 #print axioms PaperP1.PrimeCylinderSize.prime_card
 #print axioms PaperP1.PrimeCylinderSize.sample_card
 #print axioms PaperP1.PrimeCylinderSize.atom_weight
@@ -4162,6 +4182,7 @@ import PaperP1
 #print axioms PaperP1.TripleProbabilityBound.pair_joint_le
 #print axioms PaperP1.TripleProbabilityBound.pair_subset_tupleSet
 #print axioms PaperP1.TripleProbabilityBound.triple_joint_le
+#print axioms PaperP1.TupleMassIteration.iterate
 #print axioms PaperP1.UnitFourierWeight.abs_signed_unit_sum
 #print axioms PaperP1.UnitFourierWeight.unit_kernel_rank_bound
 #print axioms PaperP1.UnitFourierWeight.signed_unit_sum_zero_of_card_le_one

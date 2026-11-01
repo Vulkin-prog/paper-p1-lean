@@ -1781,3 +1781,19 @@ conditional rate. The proved critical local rigidity and complete main
 exponent margins. No probability, rank or target-count input is assumed.
 The higher-order family propagation and seed consequence remain open.
 No new external input or Paper C port is introduced.
+
+
+## Actual fixed-order extension-family mass propagation
+
+Stable ID: `P1-PROB-FIXED-ORDER-MASS-PROPAGATION`. Status: **proved**,
+second assertion of main 6.3; its final seed consequence remains open.
+
+Actual prescribed tuple masses have an exact conditional factorization,
+including zero-probability source tuples. Literal finite extension
+families have proved membership and sum identities. The conditional-sum
+theorem gives one-step mass control uniformly over each bounded source
+order; a finite induction and explicit exponent split prove the full
+N^epsilon propagation factor. The exact ordered-distinct family is
+filtered and counted, and the prescribed start masses are identified
+with the original infinite joint moments. No extension-population or
+mass bound is an assumed interface. No new external result is used.

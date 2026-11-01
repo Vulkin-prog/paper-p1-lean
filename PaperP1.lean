@@ -782,3 +782,10 @@ public import PaperP1.Model.WindowConditionalSum
 public import PaperP1.Model.CompatibleWindowPrescriptions
 public import PaperP1.Asymptotics.SmallRankLossPower
 public import PaperP1.Asymptotics.FixedSourceConditionalSum
+
+public import PaperP1.Model.PrescribedTupleMass
+public import PaperP1.Combinatorics.TupleExtensions
+public import PaperP1.Asymptotics.FixedSourceMassStep
+public import PaperP1.Model.TupleMassIteration
+public import PaperP1.Model.PrescribedRunMass
+public import PaperP1.Asymptotics.FixedOrderMassPropagation

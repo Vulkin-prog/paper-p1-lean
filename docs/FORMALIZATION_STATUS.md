@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4908 audited theorem/lemma declarations**. This
+- The project currently has **4929 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2325,3 +2325,23 @@ stays 70/167 and confirmed independent findings stay 69. See
 [precise scope](FIXED_SOURCE_PROPAGATION_ALIGNMENT.md).
 
 Conditional-sum checkpoint verification: Lean v4.36.0-rc2 full build passed (9999 jobs); actual axiom audit passed for all 4908 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2623 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.57 GiB. The first conditional-sum assertion of main 6.3 is complete on the actual infinite prime-sign measure, including arbitrary compatible affine prescriptions, homogeneous prescriptions and literal source exclusion. Extension-family propagation and the final seed consequence remain open, so main 6.3 stays in progress. Coverage and confirmed independent findings remain 70/167 and 69. No conditional-sum premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.
+
+
+## Actual fixed-order mass propagation in main 6.3
+
+The second main 6.3 assertion is now proved on literal finite ordered
+extension families. Their actual infinite-measure joint masses factor
+through the proved conditional probabilities, including zero-mass
+seeds. One threshold controls every intermediate source order in a
+fixed range, before every seed family and prescription. Finite iteration
+gives the mass bound N^epsilon times the actual seed mass. The explicit
+distinct-extension filter has the source initial-tuple and coordinate
+conditions, and the original run joint moments are identified exactly.
+The stronger full extension family permits repeated centres.
+
+The numbered result stays in progress for the final local-defect and
+compatible-contact seed mass conclusion at arbitrary tuple positions.
+Coverage and confirmed independent findings remain 70/167 and 69.
+See [exact current scope](FIXED_SOURCE_PROPAGATION_ALIGNMENT.md).
+
+Fixed-order propagation verification: Lean v4.36.0-rc2 full build passed (10011 jobs); actual axiom audit passed for all 4929 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2644 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.55 GiB. The conditional-sum and actual ordered-distinct extension-family propagation assertions of main 6.3 are complete, including an exact bridge to original infinite joint moments. The final local-defect/contact seed conclusion remains open; main 6.3 stays in progress. Coverage and confirmed independent findings remain 70/167 and 69. No propagation-mass premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.
