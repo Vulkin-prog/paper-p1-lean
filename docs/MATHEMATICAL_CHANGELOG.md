@@ -878,3 +878,38 @@ All 438 distinct coverage/finding declaration names were checked directly by Lea
 
 Validated implementation of companion T20.1, P1-MATH-0024 and P1-MATH-0025:
 [cbf22970cceae54d3971a64f5a7def265088dc85](https://github.com/Vulkin-prog/paper-p1-lean/commit/cbf22970cceae54d3971a64f5a7def265088dc85).
+
+## P1-MATH-0026 — Weaker regularity for forced planes and a larger mass population
+
+- Location: companion Proposition T20.3, page 82,
+  `p1:offset:forced-plane`, `companion_sections/offset_geometry.tex:96`.
+- Original setting: three distinct regular windows, pairwise direct
+  square-class spaces, H=C0*B with C0>1, and primitive triples for the
+  two-plane mass conclusion.
+- Improvement: the first two windows alone need full effective rank
+  for the entire geometric conclusion. All pairwise directness remains
+  in that proof. The two-plane mass estimate holds for the larger
+  population with only the first two starts distinct, regular and direct;
+  the third may be irregular, dependent or repeated. The actual joint
+  probability is still at most p^2. Canonical odd offsets require H>=B.
+  The subsequent-offset equation holds for any common integer divisor
+  above 12*B^3, including composite divisors; the initial product proof
+  still requires three distinct primes.
+- Evidence: `OffsetPlaneTheorem.uniform_stronger`, `finite_stronger`,
+  `OffsetPlaneMassAsymptotic.pairMass_le_power_eventually`,
+  `TripleProbabilityBound.triple_joint_le`,
+  `SharedPrimeOffsets.shared_unique_offset` and
+  `OffsetPlaneGeometry.further_divisor_offset`.
+- Reason: excluding proportional pair projections needs regularity of
+  one of those two coordinates, and either coordinate zero leaves such
+  a regular coordinate among the other two. The mass uses monotonicity
+  of actual joint activation and the exact first-pair probability.
+- Suggested revision: state these separately delimited hypotheses and
+  the larger mass population. No later normal-budget or residual-space
+  estimate is extended by this finding. No error or optimality claim.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,965 jobs) and
+  actual axiom audit of all 2,402 theorem/lemma declarations, with only
+  `propext`, `Classical.choice` and `Quot.sound`. Not integrated into a
+  new manuscript version.
+
+All 480 distinct coverage/finding declaration names were checked directly by Lean.

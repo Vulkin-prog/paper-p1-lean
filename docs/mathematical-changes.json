@@ -157,16 +157,16 @@
         "line": 17,
         "statement_sha256": "f9698333e474d8e0890a0f425b5f207336f6b1e16948952d0e9c3d81707b6e3e"
       },
-      "original_assumption": "For B\u22652, a nonempty even set I\u2286[-B,B] with cardinality m, and x>(B+1)^(12m), the translated product is not an integer square.",
-      "finding": "The stronger threshold x>(64B)^m suffices, hence the simpler uniform threshold x>(B+1)^(5m) for B\u22652. It follows directly from the proved degree-uniform algebraic split-product theorem.",
+      "original_assumption": "For B≥2, a nonempty even set I⊆[-B,B] with cardinality m, and x>(B+1)^(12m), the translated product is not an integer square.",
+      "finding": "The stronger threshold x>(64B)^m suffices, hence the simpler uniform threshold x>(B+1)^(5m) for B≥2. It follows directly from the proved degree-uniform algebraic split-product theorem.",
       "evidence": [
         "PaperP1.LocalSquareThreshold.local_square_threshold_sharp",
         "PaperP1.LocalSquareThreshold.local_square_threshold_power_five",
         "PaperP1.LocalSquareThreshold.sixtyfour_mul_le_fifth_power",
         "PaperP1.LocalSquareThreshold.companion_T9_1"
       ],
-      "proposed_revision": "Replace the exponent 12m by 5m, or state the sharper condition x>(64B)^m. Prove the result by the internal T1.1 bound with U=x and R=B; the threshold itself gives x\u22652B.",
-      "impact": "Strengthens the finite local square exclusion. Distinct integer offsets, positive even m and the original domain B\u22652 are retained. The original statement and all later exponents remain valid; no optimality of the new threshold is asserted.",
+      "proposed_revision": "Replace the exponent 12m by 5m, or state the sharper condition x>(64B)^m. Prove the result by the internal T1.1 bound with U=x and R=B; the threshold itself gives x≥2B.",
+      "impact": "Strengthens the finite local square exclusion. Distinct integer offsets, positive even m and the original domain B≥2 are retained. The original statement and all later exponents remain valid; no optimality of the new threshold is asserted.",
       "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 1301 declarations at the recorded implementation commit; only propext, Classical.choice and Quot.sound. All recorded evidence declarations are directly included in the actual audit.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
@@ -200,7 +200,7 @@
         "PaperP1.Affine.finrank_completeRelationCode",
         "PaperP1.Affine.large_relation_rank_le_complete_add_cost"
       ],
-      "proposed_revision": "There exists an absolute K>0 such that for every fixed C there is N0(C), and all N\u2265N0(C), all critical-band lengths L and all dyadic starts x, the number of n\u2208V_x with K_(10B)(n)=1 is at most K B/log B, where B=L+1. In T9.3, the same quantifier order also gives an absolute constant for |c-d_xy|\u2264K B/log B, with only the threshold depending on C; the multiplicative constant need not equal the one in T9.2.",
+      "proposed_revision": "There exists an absolute K>0 such that for every fixed C there is N0(C), and all N≥N0(C), all critical-band lengths L and all dyadic starts x, the number of n∈V_x with K_(10B)(n)=1 is at most K B/log B, where B=L+1. In T9.3, the same quantifier order also gives an absolute constant for |c-d_xy|≤K B/log B, with only the threshold depending on C; the multiplicative constant need not equal the one in T9.2.",
       "impact": "Clarifies and strengthens the constant uniformity in T9.2. The threshold may still depend on the fixed band width. No admissibility, positive start probability or full-rank assumption is added. The cutoff 10B and the B/log B rate are unchanged. This constant uniformity propagates to the full free-component estimate in T9.3, including overlapping physical windows. The two local kernels are bounded using the proved critical rigidity theorem; no regularity or admissibility premise is introduced.",
       "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 1435 declarations at the recorded complete T9.3 implementation commit; only propext, Classical.choice and Quot.sound. The original T9.2 validation is preserved in validation_history. All recorded evidence declarations are directly audited, and all 112 distinct coverage/finding reference names were also checked by Lean.",
       "manuscript_integration": {
@@ -242,8 +242,8 @@
         "line": 69,
         "statement_sha256": "5e6a31d29cb66509b6a8ef1400895cd9ab6a009e7685f52cb8958d19101b7132"
       },
-      "original_assumption": "Companion T22.2 assumes regular windows, hence a common marginal p, and gives q(I)\u2264p\u00b7sum_x q(I\\{x}) and the ordered-tuple bound RNp\u00b7E(Z_G)_(R-1).",
-      "finding": "The same missing-full-support condition gives q(I)\u2264sum_x p_x q(I\\{x}) for arbitrary windows with their exact heterogeneous marginals, including incompatible events and zero marginals. If pmax\u22650 bounds every actual marginal on G, the tuple sum is at most R|G|pmax\u00b7E(Z_G)_(R-1). Regularity is needed only to substitute the nominal p, and |G|\u2264N yields the original bound.",
+      "original_assumption": "Companion T22.2 assumes regular windows, hence a common marginal p, and gives q(I)≤p·sum_x q(I\\{x}) and the ordered-tuple bound RNp·E(Z_G)_(R-1).",
+      "finding": "The same missing-full-support condition gives q(I)≤sum_x p_x q(I\\{x}) for arbitrary windows with their exact heterogeneous marginals, including incompatible events and zero marginals. If pmax≥0 bounds every actual marginal on G, the tuple sum is at most R|G|pmax·E(Z_G)_(R-1). Regularity is needed only to substitute the nominal p, and |G|≤N yields the original bound.",
       "evidence": [
         "PaperP1.MissingBlockProbabilities.infinite_joint_missing_block_bound",
         "PaperP1.MissingBlockProbabilities.joint_missing_block_bound_of_marginal_le",
@@ -252,7 +252,7 @@
         "PaperP1.MissingBlockTupleSum.companion_T22_2_sum",
         "PaperP1.FactorialCountMoments.sum_tuple_joint_moments"
       ],
-      "proposed_revision": "State the pointwise missing-block inequality with exact p_x on an arbitrary finite family. State its ordered-tuple consequence with |G| and any nonnegative upper bound pmax for the actual marginals. Then specialize to regular windows, pmax=p=2^(-L), and |G|\u2264N to recover the original assertion.",
+      "proposed_revision": "State the pointwise missing-block inequality with exact p_x on an arbitrary finite family. State its ordered-tuple consequence with |G| and any nonnegative upper bound pmax for the actual marginals. Then specialize to regular windows, pmax=p=2^(-L), and |G|≤N to recover the original assertion.",
       "impact": "Extends the probability and tuple estimates to heterogeneous or irregular windows. It retains affine incompatibility and the exact structural missing-full-support premise. No independence, separation, positive-marginal filter, moment bound or cardinality cutoff is added. The original exponent and constant RNp are unchanged as a corollary.",
       "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 1334 declarations at the recorded implementation commit; only propext, Classical.choice and Quot.sound. All recorded evidence declarations are directly included in the actual audit.",
       "manuscript_integration": {
@@ -285,7 +285,7 @@
         "PaperP1.BivariateSpecialization.factor_outer_coefficient_l2_bound",
         "PaperP1.BivariateHeight.bivariate_l2_le_height"
       ],
-      "proposed_revision": "For every nonzero P in Z[X,Y] and every integer factorization P=Q R, both H(Q) and H(R) are at most 2^(dX+dY)||P||\u2082, which is at most 2^(dX+dY)sqrt((dX+1)(dY+1))H(P). Remove the primitive adjective; no separate content adjustment is needed.",
+      "proposed_revision": "For every nonzero P in Z[X,Y] and every integer factorization P=Q R, both H(Q) and H(R) are at most 2^(dX+dY)||P||₂, which is at most 2^(dX+dY)sqrt((dX+1)(dY+1))H(P). Remove the primitive adjective; no separate content adjustment is needed.",
       "impact": "Weakens a hypothesis without changing the original constants or partial-degree dependence. The proof uses univariate Mahler bounds and Parseval and includes degree-lowering specializations. The original primitive-factor conclusion is retained. No error in the manuscript conclusion or its multivariate proof is asserted.",
       "validation": "Full Lean v4.36.0-rc2 build (8651 jobs) and actual kernel axiom audit for all 1484 declarations at the recorded implementation commit; only propext, Classical.choice and Quot.sound. All 120 distinct coverage/finding reference names were also checked by Lean.",
       "manuscript_integration": {
@@ -308,8 +308,8 @@
         "line": 8,
         "statement_sha256": "c652d9e1cd007089e2c95a960fa33e1d963832a5f3da703257669a40da70cc64"
       },
-      "original_assumption": "Companion T23.1 restricts the quadratic-reference parameter to 0\u2264a\u22641 in the exact positive factorial-moment perturbation.",
-      "finding": "The same epsilon and the same pointwise factors and exact total variation formula hold on 0\u2264a\u22642. The perturbation is nonzero for a<2; at a=2 it vanishes, and all moments agree. The uniform exponential-moment bound on the enlarged interval uses 1+(exp(t)-1)\u00b2 instead of 1+(exp(t)-1)\u00b2/2. The original sharper bound is retained on [0,1].",
+      "original_assumption": "Companion T23.1 restricts the quadratic-reference parameter to 0≤a≤1 in the exact positive factorial-moment perturbation.",
+      "finding": "The same epsilon and the same pointwise factors and exact total variation formula hold on 0≤a≤2. The perturbation is nonzero for a<2; at a=2 it vanishes, and all moments agree. The uniform exponential-moment bound on the enlarged interval uses 1+(exp(t)-1)² instead of 1+(exp(t)-1)²/2. The original sharper bound is retained on [0,1].",
       "evidence": [
         "PaperP1.MomentObstruction.companion_T23_1_extended",
         "PaperP1.MomentObstruction.exponential_moment_le",
@@ -319,7 +319,7 @@
         "PaperP1.MomentObstructionMoments.factorial_moment_eq_iff",
         "PaperP1.MomentObstructionMoments.factorial_moment_changed_order"
       ],
-      "proposed_revision": "State the nontrivial construction for 0\u2264a<2, and optionally include a=2 as the zero-perturbation endpoint. Keep epsilon, the pointwise 1/2 and 3/2 factors, the factorial-moment difference and the exact TV formula. For a uniform exponential bound on 0\u2264a\u2264A\u22642, use (3/2)exp(exp(t)-1)(1+(A/2)(exp(t)-1)\u00b2); A=1 recovers the original proof bound.",
+      "proposed_revision": "State the nontrivial construction for 0≤a<2, and optionally include a=2 as the zero-perturbation endpoint. Keep epsilon, the pointwise 1/2 and 3/2 factors, the factorial-moment difference and the exact TV formula. For a uniform exponential bound on 0≤a≤A≤2, use (3/2)exp(exp(t)-1)(1+(A/2)(exp(t)-1)²); A=1 recovers the original proof bound.",
       "impact": "Weakens the parameter restriction without changing the original construction or distance constant. Equality of factorial moments occurs exactly off order m when a<2; the endpoint degeneracy is explicit. The enlarged uniform exponential constant is stated separately. The original range and all its conclusions remain proved. No error in the original statement and no optimality of an obstruction rate are claimed. The subsequent unnumbered m_N/Stirling argument is proved at a later separate checkpoint; the parameter extension alone is not used as a substitute for that proof.",
       "validation": "Full Lean v4.36.0-rc2 build (8727 jobs) and actual kernel axiom audit for all 1647 declarations at the recorded implementation commit; only propext, Classical.choice and Quot.sound. All 159 distinct coverage/finding reference names were also checked by Lean.",
       "manuscript_integration": {
@@ -858,6 +858,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "cbf22970cceae54d3971a64f5a7def265088dc85"
+    },
+    {
+      "id": "P1-MATH-0026",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:offset:forced-plane",
+        "number": "T20.3",
+        "page": 82,
+        "source": "companion_sections/offset_geometry.tex",
+        "line": 96,
+        "statement_sha256": "57df7e0bd6cb7653361590ee129d82e799e54eeb64de7c26e3923dd9078bc775"
+      },
+      "original_assumption": "T20.3 is stated for three distinct regular windows with pairwise direct square-class spaces, with shared-prime cutoff H=C0*B and C0>1. Its mass conclusion is restricted to primitive triples.",
+      "finding": "The complete finite geometric conclusion needs only the first two windows to have full effective rank; pairwise directness of all three spaces is retained. The two-plane mass bound holds for the larger population in which only the first two starts are distinct, regular and direct: the third may be irregular, dependent or repeated. Its actual joint probability is at most p^2, and the uniform bound N^(-1+epsilon) follows. Canonical shared odd-valuation offsets need only H>=B. The subsequent-offset equation holds for every common integer divisor q>12*B^3, including composite q; the initial three-divisor product argument still uses distinct primes.",
+      "evidence": [
+        "PaperP1.OffsetPlaneTheorem.uniform_stronger",
+        "PaperP1.OffsetPlaneTheorem.finite_stronger",
+        "PaperP1.OffsetPlaneMassAsymptotic.pairMass_le_power_eventually",
+        "PaperP1.TripleProbabilityBound.triple_joint_le",
+        "PaperP1.SharedPrimeOffsets.shared_unique_offset",
+        "PaperP1.OffsetPlaneGeometry.further_divisor_offset"
+      ],
+      "proposed_revision": "Weaken regularity in the forced-plane statement to two windows while retaining all pairwise directness hypotheses used to prove nonzero normal coordinates. State the two-plane mass estimate for any population with a first regular direct pair and a third start in the ambient interval. Allow H>=B for the canonical offsets, and mention the common-divisor extension of the subsequent-offset equation.",
+      "impact": "Extends precisely this forced-plane proposition and its two-plane mass estimate. No normal-budget, later covering or residual-space result is claimed under these weaker hypotheses. The original bounds remain true; no manuscript error or optimality claim is made.",
+      "validation": "Full Lean v4.36.0-rc2 build (8965 jobs) and actual axiom audit of all 2402 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 480 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

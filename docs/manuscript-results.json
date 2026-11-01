@@ -104,7 +104,7 @@
       ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": "Full regular-set proposition: actual G_N defined by square-class rank L; |I_N\\G_N|\u2264N^\u03b5 eventually for every \u03b5>0, uniformly in critical-band lengths. Actual infinite count laws and means obey the stated transfer bound, with explicit constant 4\u00b72^C. All deterministic subsets and arbitrary affine targets are quantified after one threshold, with error \u2264pN^\u03b5 including incompatible systems. The moment and second factorial-cumulant transfers retain the source's explicit bounded-fixed-moments hypothesis; variants for arbitrary allowed length families and one prescribed sequence avoid assuming bounds at unrelated lengths. Total variation is exactly half the finite sum of actual infinite-model singleton mass differences. See REGULAR_SET_ALIGNMENT.md."
+      "notes": "Full regular-set proposition: actual G_N defined by square-class rank L; |I_N\\G_N|≤N^ε eventually for every ε>0, uniformly in critical-band lengths. Actual infinite count laws and means obey the stated transfer bound, with explicit constant 4·2^C. All deterministic subsets and arbitrary affine targets are quantified after one threshold, with error ≤pN^ε including incompatible systems. The moment and second factorial-cumulant transfers retain the source's explicit bounded-fixed-moments hypothesis; variants for arbitrary allowed length families and one prescribed sequence avoid assuming bounds at unrelated lengths. Total variation is exactly half the finite sum of actual infinite-model singleton mass differences. See REGULAR_SET_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:hosts",
@@ -603,7 +603,7 @@
         "P1-ANALYSIS-POISSON-POSITIVITY"
       ],
       "mathematical_changes": [],
-      "notes": "Full article Lemma 8.1 for the actual quadratic Poisson signed measure. The source singleton formula holds at every nonnegative integer, with negative-index shifts zero; summability and total mass one are proved for all real alpha and nonnegative mu. The base signed law equals the actual Mathlib Poisson law; the reference is its second pushforward difference correction. For mu>0, positivity is equivalent to the exact closed interval 0\u2264alpha\u22642mu\u00b2/(mu+fract(mu)(1-fract(mu))). The exact integer minimum is attained at floor(mu)+1, including integral mu; negative alpha has a proved large-index negative mass. Probability means existence of an actual bundled probability measure equal to the reference as a signed measure. No approximation or model parameter asymptotics are used. See QUADRATIC_POISSON_ALIGNMENT.md."
+      "notes": "Full article Lemma 8.1 for the actual quadratic Poisson signed measure. The source singleton formula holds at every nonnegative integer, with negative-index shifts zero; summability and total mass one are proved for all real alpha and nonnegative mu. The base signed law equals the actual Mathlib Poisson law; the reference is its second pushforward difference correction. For mu>0, positivity is equivalent to the exact closed interval 0≤alpha≤2mu²/(mu+fract(mu)(1-fract(mu))). The exact integer minimum is attained at floor(mu)+1, including integral mu; negative alpha has a proved large-index negative mass. Probability means existence of an actual bundled probability measure equal to the reference as a signed measure. No approximation or model parameter asymptotics are used. See QUADRATIC_POISSON_ALIGNMENT.md."
     },
     {
       "label": "p13:short:moments",
@@ -2126,7 +2126,7 @@
       "mathematical_changes": [
         "P1-MATH-0005"
       ],
-      "notes": "Full companion T9.1 for an actual finite subset I of integer offsets in [-B,B], positive even cardinality m, B\u22652 and x>(B+1)^(12m). The internal degree-uniform T1.1 proof yields the stronger threshold (64B)^m, hence (B+1)^(5m). No analytic tail or root-height hypothesis is assumed. See LOCAL_SQUARE_THRESHOLD_ALIGNMENT.md."
+      "notes": "Full companion T9.1 for an actual finite subset I of integer offsets in [-B,B], positive even cardinality m, B≥2 and x>(B+1)^(12m). The internal degree-uniform T1.1 proof yields the stronger threshold (64B)^m, hence (B+1)^(5m). No analytic tail or root-height hypothesis is assumed. See LOCAL_SQUARE_THRESHOLD_ALIGNMENT.md."
     },
     {
       "label": "p13:rig:defective",
@@ -2179,7 +2179,7 @@
       "mathematical_changes": [
         "P1-MATH-0006"
       ],
-      "notes": "Full T9.3 at the literal cutoff 10B, B=L+1: the number c of actual free components containing an edge differs from d_xy=finrank(S_x\u2229S_y) by at most K B/log B eventually, uniformly over all dyadic pairs and critical-band lengths. A single absolute K precedes C; only N0 depends on C, propagating P1-MATH-0006. The complete even-relation code is explicitly equivalent to the kernel after \u03c0(10B) small-prime coordinates and two parity rows, giving its exact finite rank cost. Its dimension equals the two local kernel dimensions plus d_xy. The proved critical local-kernel bound is used without any admissibility assumption. Every free nontrivial component meets both formal blocks, and every large-prime solution selects it entirely or omits it. Overlapping physical windows are retained. See FREE_COMPONENT_ALIGNMENT.md."
+      "notes": "Full T9.3 at the literal cutoff 10B, B=L+1: the number c of actual free components containing an edge differs from d_xy=finrank(S_x∩S_y) by at most K B/log B eventually, uniformly over all dyadic pairs and critical-band lengths. A single absolute K precedes C; only N0 depends on C, propagating P1-MATH-0006. The complete even-relation code is explicitly equivalent to the kernel after π(10B) small-prime coordinates and two parity rows, giving its exact finite rank cost. Its dimension equals the two local kernel dimensions plus d_xy. The proved critical local-kernel bound is used without any admissibility assumption. Every free nontrivial component meets both formal blocks, and every large-prime solution selects it entirely or omits it. Overlapping physical windows are retained. See FREE_COMPONENT_ALIGNMENT.md."
     },
     {
       "label": "p13:rig:factor-height",
@@ -2208,7 +2208,7 @@
       "mathematical_changes": [
         "P1-MATH-0008"
       ],
-      "notes": "Full T9.4 for the literal nonzero P and integer factorization P=Q*R. Both factor and quotient obey H\u22642^(dX+dY)||P||\u2082 and the exact sqrt((dX+1)(dY+1)) rectangle-height bound. The height, coefficient norm and partial degrees are explicit finite-support definitions, with swap proved on coefficients. Specialization, the proved univariate Mahler bounds and Parseval give the exact constant even at degree-lowering specializations. No primitive-factor hypothesis is required (P1-MATH-0008), and no multivariate Mahler result or final bound is assumed. See BIVARIATE_FACTOR_HEIGHT_ALIGNMENT.md."
+      "notes": "Full T9.4 for the literal nonzero P and integer factorization P=Q*R. Both factor and quotient obey H≤2^(dX+dY)||P||₂ and the exact sqrt((dX+1)(dY+1)) rectangle-height bound. The height, coefficient norm and partial degrees are explicit finite-support definitions, with swap proved on coefficients. Specialization, the proved univariate Mahler bounds and Parseval give the exact constant even at degree-lowering specializations. No primitive-factor hypothesis is required (P1-MATH-0008), and no multivariate Mahler result or final bound is assumed. See BIVARIATE_FACTOR_HEIGHT_ALIGNMENT.md."
     },
     {
       "label": "p13:rig:two-witnesses",
@@ -2474,7 +2474,7 @@
       ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": "Full companion T19.1 for every finite N\u22652 and L\u22651: deterministic support 0\u2264Z_N\u2264Nat.ceil(N/L), with the literal real quotient and exact rounding, and E(Z_N)_j=j!\u00b7p^j\u00b7m for an actual natural coefficient m and every j\u22651. The proof retains every actual window including irregular, zero-probability and incompatible cases. Separation is proved directly from the two start events; the affine binary system has at most |I|L rows. The full unordered-subset factorial identity is proved and linked to actual infinite-measure moments. Sharp zero coefficients above the support and a support inclusion are also proved. See SUPPORT_LATTICE_ALIGNMENT.md."
+      "notes": "Full companion T19.1 for every finite N≥2 and L≥1: deterministic support 0≤Z_N≤Nat.ceil(N/L), with the literal real quotient and exact rounding, and E(Z_N)_j=j!·p^j·m for an actual natural coefficient m and every j≥1. The proof retains every actual window including irregular, zero-probability and incompatible cases. Separation is proved directly from the two start events; the affine binary system has at most |I|L rows. The full unordered-subset factorial identity is proved and linked to actual infinite-measure moments. Sharp zero coefficients above the support and a support inclusion are also proved. See SUPPORT_LATTICE_ALIGNMENT.md."
     },
     {
       "label": "p1:limits:local-blocks",
@@ -2668,7 +2668,7 @@
         "P1-PROB-SIGNED-PALM"
       ],
       "mathematical_changes": [],
-      "notes": "Full T19.12 on an arbitrary probability space and arbitrary finite measurable Boolean family. The source-removed count is exactly Z-J_x, each conditional law has actual probability-ratio coefficients and its own normalized positive marginal, and zero-marginal active laws vanish. The exact size-bias identity and translation isometry yield the original residual norm comparison with diagonal error 2 sum p_x\u00b2 for every real theta. The residual norm equals the ordinary countable sum of the raw coefficients with actual Bochner mean and zero negative-index convention. The exact generating-polynomial substitution z=1+t yields the signed heterogeneous coefficient formula; differentiation gives (j+1)B_(j+1)-p(n-j)B_j when the actual marginals are equal. All orders, zero order, and orders above the ground-set size are included. Finite laws embed injectively as actual signed measures with exactly the same ordinary countable norm. No independence, common marginal, Stein estimate or model arithmetic input is assumed. See SIGNED_PALM_ALIGNMENT.md."
+      "notes": "Full T19.12 on an arbitrary probability space and arbitrary finite measurable Boolean family. The source-removed count is exactly Z-J_x, each conditional law has actual probability-ratio coefficients and its own normalized positive marginal, and zero-marginal active laws vanish. The exact size-bias identity and translation isometry yield the original residual norm comparison with diagonal error 2 sum p_x² for every real theta. The residual norm equals the ordinary countable sum of the raw coefficients with actual Bochner mean and zero negative-index convention. The exact generating-polynomial substitution z=1+t yields the signed heterogeneous coefficient formula; differentiation gives (j+1)B_(j+1)-p(n-j)B_j when the actual marginals are equal. All orders, zero order, and orders above the ground-set size are included. Finite laws embed injectively as actual signed measures with exactly the same ordinary countable norm. No independence, common marginal, Stein estimate or model arithmetic input is assumed. See SIGNED_PALM_ALIGNMENT.md."
     },
     {
       "label": "p1:limits:weighted-residual",
@@ -2848,11 +2848,58 @@
       "source": "companion_sections/offset_geometry.tex",
       "line": 96,
       "sha256": "57df7e0bd6cb7653361590ee129d82e799e54eeb64de7c26e3923dd9078bc775",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.OffsetPlaneTheorem.companion_T20_3_shared",
+        "PaperP1.OffsetPlaneTheorem.companion_T20_3",
+        "PaperP1.OffsetPlaneTheorem.uniform_stronger",
+        "PaperP1.OffsetPlaneTheorem.finite_stronger",
+        "PaperP1.OffsetPlaneTheorem.shared_geometry_of_geometry",
+        "PaperP1.SharedPrimeOffsets.shared_iff_occurs_in_each_window",
+        "PaperP1.SharedPrimeOffsets.shared_unique_offset",
+        "PaperP1.SharedPrimeOffsets.offset_unique",
+        "PaperP1.SharedPrimeOffsets.offset_dvd",
+        "PaperP1.ThreePrimePlane.two_prime_bound",
+        "PaperP1.ThreePrimePlane.forced_plane",
+        "PaperP1.ThreePrimePlane.product_dvd_determinant",
+        "PaperP1.ThreePrimePlane.determinant_zero_of_large_product",
+        "PaperP1.ThreePrimePlane.normal_ne_zero_of_large_product",
+        "PaperP1.OffsetPlaneGeometry.determinant_bound",
+        "PaperP1.OffsetPlaneGeometry.normal_coordinate_bound",
+        "PaperP1.OffsetPlaneGeometry.constant_bound",
+        "PaperP1.OffsetPlaneGeometry.normal_coordinates_ne_zero",
+        "PaperP1.OffsetPlaneGeometry.further_divisor_offset",
+        "PaperP1.PlaneNormalRigidity.normal_coordinates_ne_zero",
+        "PaperP1.PlaneNormalRigidity.two_coordinate_plane_constant",
+        "PaperP1.ThreeWindowRigidity.projection_rigid",
+        "PaperP1.OffsetPlaneIntersections.family_card_le",
+        "PaperP1.OffsetPlaneIntersections.geometry_contains_iff",
+        "PaperP1.OffsetPlaneIntersections.mem_doubleCenters",
+        "PaperP1.OffsetPlaneIntersections.intersection_card_le",
+        "PaperP1.OffsetPlaneIntersections.doubleCenters_card_le",
+        "PaperP1.PlaneIntersection.planes_equal_of_cross_zero_meet",
+        "PaperP1.PlaneIntersection.cross_ne_zero_of_distinct_meeting",
+        "PaperP1.PlaneIntersection.points_eq_of_coordinate",
+        "PaperP1.TripleProbabilityBound.marginal_of_full_rank",
+        "PaperP1.TripleProbabilityBound.pair_joint_le",
+        "PaperP1.TripleProbabilityBound.triple_joint_le",
+        "PaperP1.Affine.relativeNullityOn_pair_eq_zero",
+        "PaperP1.Model.InfiniteStarts.infiniteJointMoment_antitone",
+        "PaperP1.OffsetPlaneMass.mem_primitiveCenters",
+        "PaperP1.OffsetPlaneMass.primitiveCenters_subset",
+        "PaperP1.OffsetPlaneMass.pairMass_bound",
+        "PaperP1.OffsetPlaneMass.primitiveMass_bound",
+        "PaperP1.OffsetPlaneMassAsymptotic.critical_finite_bound",
+        "PaperP1.OffsetPlaneMassAsymptotic.pairMass_le_power_eventually",
+        "PaperP1.OffsetPlaneMassAsymptotic.primitiveMass_le_power_eventually"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-OFFSET-FORCED-PLANE"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0026"
+      ],
+      "notes": "The complete proposition is proved, including the actual shared odd-valuation prime population, unique physical offsets for H>=B, the two-prime bound, the forced actual geometric plane with all three normal coordinates nonzero, its coefficient bounds, every subsequent shared-prime equation, and the original affine mass of ordered primitive triples on two geometrically distinct planes. The latter is bounded through the larger population with only the first regular direct pair, by B^18*N*p^2 and then uniformly by N^(-1+epsilon), with one threshold before every critical length and arithmetic configuration. Geometric distinction is equality of actual real plane sets, not coefficient codes. The stronger geometry needs only the first two windows regular, with pairwise directness retained. The further offset equation even holds for any common integer divisor above 12*B^3. Full build: 8965 jobs; actual audit: 2402 theorem/lemma declarations. See OFFSET_PLANE_ALIGNMENT.md."
     },
     {
       "label": "p1:offset:normal-budget",
@@ -3223,7 +3270,7 @@
       "mathematical_changes": [
         "P1-MATH-0009"
       ],
-      "notes": "Full numbered T23.1, with actual normalized positive measures, the literal epsilon, signed perturbation identity, pointwise factors 1/2 and 3/2, all actual factorial moments with proved integrability, equality exactly away from order m in the original range, the exact total variation constant, and the original explicit uniform exponential-moment bound. The same construction extends to 0\u2264a\u22642, nontrivially for a<2, with epsilon=0 at a=2; the extended exponential bound uses 1+(exp(t)-1)\u00b2, while the original range retains 1+(exp(t)-1)\u00b2/2. Every real exponential parameter is included. No fixed-order equality, norm constant or probability fact is assumed. The following unnumbered continuation is also proved separately: actual probability families with the literal m_N=floor(sqrt(log N)) and a_N=(log N)N^(-2/3), eventual exact fixed-order factorial moments, the full logarithmic O(sqrt(log N)) error, and strict comparison with every N^(-gamma). The latter holds uniformly over all a in [0,1], with one threshold for each fixed gamma. See MOMENT_OBSTRUCTION_ASYMPTOTICS.md; this adds no numbered result. No multiplicative-model realization is claimed. See MOMENT_OBSTRUCTION_ALIGNMENT.md."
+      "notes": "Full numbered T23.1, with actual normalized positive measures, the literal epsilon, signed perturbation identity, pointwise factors 1/2 and 3/2, all actual factorial moments with proved integrability, equality exactly away from order m in the original range, the exact total variation constant, and the original explicit uniform exponential-moment bound. The same construction extends to 0≤a≤2, nontrivially for a<2, with epsilon=0 at a=2; the extended exponential bound uses 1+(exp(t)-1)², while the original range retains 1+(exp(t)-1)²/2. Every real exponential parameter is included. No fixed-order equality, norm constant or probability fact is assumed. The following unnumbered continuation is also proved separately: actual probability families with the literal m_N=floor(sqrt(log N)) and a_N=(log N)N^(-2/3), eventual exact fixed-order factorial moments, the full logarithmic O(sqrt(log N)) error, and strict comparison with every N^(-gamma). The latter holds uniformly over all a in [0,1], with one threshold for each fixed gamma. See MOMENT_OBSTRUCTION_ASYMPTOTICS.md; this adds no numbered result. No multiplicative-model realization is claimed. See MOMENT_OBSTRUCTION_ALIGNMENT.md."
     }
   ]
 }

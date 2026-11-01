@@ -20,6 +20,31 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Forced offset planes and their original affine mass
+
+Stable ID: `P1-ARITH-OFFSET-FORCED-PLANE`. Status: **proved**.
+
+- Target: the complete companion Proposition T20.3, page 82,
+  `p1:offset:forced-plane`.
+- Lean: `OffsetPlaneTheorem.companion_T20_3_shared` and its stronger
+  generic divisibility version `uniform_stronger`.
+- The actual shared odd-valuation population and canonical offsets are
+  constructed. Integer determinant and cross-product identities give
+  the source thresholds and coefficient heights. Actual square-class
+  projection rigidity gives all three nonzero normal coordinates.
+- Distinct actual real plane sets have at most N common integer centers
+  in the dyadic cube, proved by an injective coordinate projection.
+  The finite plane family is constructed from physical offsets.
+- Exact affine probabilities and joint-activation antitonicity prove
+  the p^2 bound, including incompatible systems. The ordered primitive
+  triple mass is a nonnegative subsum of a larger actual population.
+  Fixed logarithmic-polynomial bounds give the uniform critical-band
+  estimate. No target mass, determinant or point-count bound is assumed.
+- No new Paper C source is ported and no unproved literature statement
+  is added. Mathlib at the pinned revision supplies finite counting,
+  linear algebra, integer arithmetic, real powers and logarithms. See
+  [alignment](OFFSET_PLANE_ALIGNMENT.md) and P1-MATH-0026.
+
 ## Whole prime products and offset counts on a line
 
 Stable ID: `P1-ARITH-OFFSET-LINE-PRODUCT`. Status: **proved**.
