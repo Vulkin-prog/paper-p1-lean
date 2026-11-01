@@ -105,3 +105,7 @@ has its other arithmetic regimes unfinished.
 
 No new literature premise, Paper C port, manuscript revision or Palomar
 registration is introduced. Original manuscript bytes are unchanged.
+
+Validated actual normalized exceptional-host checkpoint (9,379 build jobs;
+3,525 audited declarations; 1,240 directly checked coverage/finding names):
+[bd95627543139b4690c1311ce84f622d8ce7a221](https://github.com/Vulkin-prog/paper-p1-lean/commit/bd95627543139b4690c1311ce84f622d8ce7a221).

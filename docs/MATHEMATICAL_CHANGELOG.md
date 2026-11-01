@@ -2056,3 +2056,7 @@ and critical-scale phase estimates remain open. The full build passed
 axiom audit, and all 1,240 coverage/finding names were checked directly.
 Only propext, Classical.choice and Quot.sound occur. No new literature
 input, Paper C port, manuscript revision or Palomar registration is introduced.
+
+Validated actual normalized exceptional-host checkpoint (9,379 build jobs;
+3,525 audited declarations; 1,240 directly checked coverage/finding names):
+[bd95627543139b4690c1311ce84f622d8ce7a221](https://github.com/Vulkin-prog/paper-p1-lean/commit/bd95627543139b4690c1311ce84f622d8ce7a221).
