@@ -20,6 +20,27 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Private-rank deletion and positive core components
+
+Stable ID: `P1-AFFINE-PRIVATE-RANK-PEELING`. Status: **proved**.
+
+- Target: every conclusion of companion Lemma T19.8, page 71,
+  `p1:limits:peeling`.
+- Lean: `PrivateRankPeelingTheorem.companion_T19_8`.
+- A terminal deletion trace is constructed. The actual rank decrease
+  proves the deletion budget for every trace. Exact erased-kernel counts
+  give the full-support lower bound; a common solution proves the
+  compatible Fourier phases and preserves the original affine moments.
+- The already constructed canonical direct partition is used. Rank
+  additivity on every restriction preserves private ranks within parts,
+  and a finite weighted average supplies the dense component and all
+  source size and nullity bounds. No target rank, probability or component
+  estimate is a hypothesis. The finite improvement is P1-MATH-0028.
+- No new Paper C source or unproved literature statement is introduced.
+  Mathlib at the pinned revision supplies finite-dimensional linear
+  algebra and finite sums. See
+  [alignment](PRIVATE_RANK_PEELING_ALIGNMENT.md).
+
 ## Exact local blocks and the original Bernoulli laws
 
 Stable ID: `P1-ARITH-EXACT-LOCAL-BLOCKS`. Status: **proved**.

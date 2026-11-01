@@ -151,3 +151,15 @@ public import PaperP1.Model.LocalBlockGeometry
 public import PaperP1.Model.LocalBlockMass
 public import PaperP1.Model.LocalRelationRows
 public import PaperP1.Probability.BernoulliCount
+public import PaperP1.Affine.CommonAffineWitness
+public import PaperP1.Affine.CompatibleFullSupport
+public import PaperP1.Affine.ComponentRankDensity
+public import PaperP1.Affine.FullSupportCounting
+public import PaperP1.Affine.PartitionRank
+public import PaperP1.Affine.PrivateCoreMoments
+public import PaperP1.Affine.PrivateNullity
+public import PaperP1.Affine.PrivateRankCore
+public import PaperP1.Affine.PrivateRankPositiveMass
+public import PaperP1.Algebra.PrivateRankPeeling
+public import PaperP1.Algebra.SubspaceFamilyRank
+public import PaperP1.Probability.PrivateRankPeelingTheorem

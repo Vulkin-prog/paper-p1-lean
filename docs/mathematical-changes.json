@@ -923,6 +923,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "14bbf2d16f3c69615a182b774c6952d4fc323373"
+    },
+    {
+      "id": "P1-MATH-0028",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:peeling",
+        "number": "T19.8",
+        "page": 71,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 427,
+        "statement_sha256": "724e0fa15a6355ba86b04ad63a21b98824bea0113f27d9255431e39fdf51fc0e"
+      },
+      "original_assumption": "Companion T19.8 bounds the zero-coordinate fraction in the relation kernel by p*2^t and gives c(C)>=(1-card(C)*p*2^t)*q(C) after all integer private ranks are less than t.",
+      "finding": "The exact missing-coordinate fraction is 2^r_i/2^dim(S_i), where r_i is the actual private rank. Hence the general compatible lower bound retains the heterogeneous profile 1-sum_i 2^r_i/2^dim(S_i). In the source equal-rank setting, r_i<t implies r_i<=t-1, so the factor improves to 1-card(C)*p*2^(t-1). Every canonical direct component of the constructed terminal family inherits this stronger estimate. The exact remaining-rank deletion charge is also retained as t*(m-card(B))+rank(B)<=R.",
+      "evidence": [
+        "PaperP1.Affine.missed_card_ratio",
+        "PaperP1.Affine.private_profile_centered_lower",
+        "PaperP1.Affine.privateRank_centered_lower_sharp",
+        "PaperP1.PrivateCoreMoments.component_mass_bounds",
+        "PaperP1.PrivateRankPeeling.trace_rank_budget",
+        "PaperP1.PrivateRankPeelingTheorem.companion_T19_8"
+      ],
+      "proposed_revision": "Replace p*2^t by p*2^(t-1) in the positive-core comparison, and optionally state the sharper profile using all individual local dimensions and private ranks. Retain the actual remaining-rank term in the deletion budget when useful.",
+      "impact": "Halves the homogeneous loss factor and supplies a finite heterogeneous refinement. It does not assert that the displayed lower factor is always positive, nor does it supply a later arithmetic large-component construction. All original bounds remain true; no manuscript error or optimality claim is made.",
+      "validation": "Full Lean v4.36.0-rc2 build (9013 jobs) and actual axiom audit of all 2542 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 557 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

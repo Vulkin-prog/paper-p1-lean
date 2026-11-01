@@ -948,3 +948,33 @@ All 523 distinct coverage/finding declaration names were checked directly by Lea
 
 Validated implementation of companion T19.2 and P1-MATH-0027:
 [14bbf2d16f3c69615a182b774c6952d4fc323373](https://github.com/Vulkin-prog/paper-p1-lean/commit/14bbf2d16f3c69615a182b774c6952d4fc323373).
+
+## P1-MATH-0028 — A factor-two improvement of the positive-core loss
+
+- Location: companion Lemma T19.8, page 71, `p1:limits:peeling`,
+  `companion_sections/limits_appendix.tex:427`.
+- Original bound: a zero coordinate in the uniform relation kernel
+  costs at most p*2^t, yielding c(C)>=(1-card(C)*p*2^t)*q(C).
+- Improvement: the exact cost is 2^r_i/2^dim(S_i), with actual private
+  rank r_i. The compatible lower bound keeps one minus the sum of these
+  heterogeneous costs. Since integer r_i<t gives r_i<=t-1, the source
+  homogeneous loss improves to p*2^(t-1). Every canonical component of
+  the constructed terminal family inherits it. The implementation also
+  retains the exact deletion charge t*(m-card(B))+rank(B)<=R.
+- Evidence: `Affine.missed_card_ratio`, `private_profile_centered_lower`,
+  `privateRank_centered_lower_sharp`, `PrivateCoreMoments.component_mass_bounds`,
+  `PrivateRankPeeling.trace_rank_budget` and
+  `PrivateRankPeelingTheorem.companion_T19_8`.
+- Reason: deleting one coordinate identifies its zero fiber with the
+  erased relation kernel. Exact cardinalities give its fraction; the
+  strict integer private-rank bound supplies the missing factor two.
+- Suggested revision: use 2^(t-1) in the positive-core inequality and
+  optionally state the heterogeneous profile and exact rank charge.
+  The displayed lower factor need not always be positive. No later
+  arithmetic construction, original error or optimality is asserted.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (9,013 jobs) and
+  actual axiom audit of all 2,542 theorem/lemma declarations, with only
+  `propext`, `Classical.choice` and `Quot.sound`. Not integrated into a
+  new manuscript version.
+
+All 557 distinct coverage/finding declaration names were checked directly by Lean.

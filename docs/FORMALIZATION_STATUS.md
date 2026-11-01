@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **38 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.2, T19.12, T20.3, T23.1, together with Lemmas T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **39 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.2, T19.12, T20.3, T23.1, together with Lemmas T19.8, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **2487 audited theorem/lemma declarations**. This
+- The project currently has **2542 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -408,6 +408,14 @@ Neither document is fully formalized.
   fixed critical band. The boundary correction improves from 2Lp to
   2(L-1)p, with a finer actual-length bound. No block independence is
   asserted. See [alignment](LOCAL_BLOCKS_ALIGNMENT.md).
+- Companion T19.8 is proved for arbitrary compatible affine prescriptions
+  on actual finite binary probability spaces. Every deletion trace obeys
+  the exact rank charge, and a terminal trace is constructed. Each actual
+  canonical direct component has the source centered/joint mass comparison.
+  Rank additivity on restrictions and a size-weighted average construct a
+  component with all source density, size and nullity bounds. The loss
+  improves from p*2^t to p*2^(t-1), and the exact heterogeneous private-rank
+  profile is retained. See [alignment](PRIVATE_RANK_PEELING_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
@@ -442,7 +450,9 @@ Neither document is fully formalized.
   lemma; `P1-MATH-0025`, its sharper offset count and absolute logarithmic
   constant; `P1-MATH-0026`, weaker regularity hypotheses for forced planes
   and a larger population for the two-plane affine mass estimate;
-  `P1-MATH-0027`, the sharper local-block endpoint correction.
+  `P1-MATH-0027`, the sharper local-block endpoint correction;
+  `P1-MATH-0028`, the factor-two positive-core improvement and its
+  heterogeneous private-rank profile.
   No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.

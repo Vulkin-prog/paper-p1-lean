@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 38 / 167 numbered results proved.**
+**Status: active formalization, 39 / 167 numbered results proved.**
 Article Lemma 5.1, the full first-excluded-prefix polynomial identity, is proved
 over any commutative semiring. Auxiliary lemmas develop the finite centering
 transform at orders zero, one and two. The principal Poisson asymptotic theorems remain open.
@@ -165,6 +165,9 @@ See [forced plane alignment](docs/OFFSET_PLANE_ALIGNMENT.md).
 Companion T19.2 is proved with the exact disjoint deficient blocks, their
 original Bernoulli laws, exact mean identities and a sharper endpoint correction.
 See [local block alignment](docs/LOCAL_BLOCKS_ALIGNMENT.md).
+Companion T19.8 is proved with actual deletion traces, the original affine
+moments and a constructed dense canonical component. Its positive-mass loss
+improves by a factor of two. See [private-rank peeling](docs/PRIVATE_RANK_PEELING_ALIGNMENT.md).
 The sharp PNT input is proved by a selected, recompiled and audited analytic
 development, with [separate provenance](docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 
