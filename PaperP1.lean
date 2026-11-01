@@ -732,3 +732,8 @@ public import PaperP1.Asymptotics.QuadraticComponent
 public import PaperP1.Model.CanonicalSquareClasses
 public import PaperP1.Model.CommonRunMoments
 public import PaperP1.Model.FinitePartMoments
+public import PaperP1.Arithmetic.PairHostCover
+public import PaperP1.Asymptotics.OriginalPairHosts
+public import PaperP1.Asymptotics.PairHostIndependentMass
+public import PaperP1.Asymptotics.SecondMomentSubpower
+public import PaperP1.Model.PairHostMoment

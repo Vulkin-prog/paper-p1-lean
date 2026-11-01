@@ -83,3 +83,12 @@ No source edit, Paper C port, external assumption or Palomar registration
 is introduced by this checkpoint.
 
 Validated proof checkpoint: [d67cfc727b27a99fa0ebc4565f181d5353d3a0f1](https://github.com/Vulkin-prog/paper-p1-lean/commit/d67cfc727b27a99fa0ebc4565f181d5353d3a0f1).
+
+Additional pair-seed progress: `SecondMomentSubpower.uniform_subpower`
+now proves F_2<=N^epsilon for every fixed epsilon>0, with one threshold
+before all critical-band lengths. It uses the stronger actual full-loss
+host count, including local deficiencies, and the actual heterogeneous
+marginal cap. The finite ordered-tuple proof is recorded in
+[the pair-host alignment](PAIR_HOST_COUNT_ALIGNMENT.md). The uniform
+bounded seed and the precise growing-order source conclusion remain
+open; no fixed-epsilon limit is used as a growing-order estimate.

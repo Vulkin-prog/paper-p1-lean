@@ -3571,6 +3571,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "b213976b9a0e0aac822f374b3838524fdf05c0d2"
+    },
+    {
+      "id": "P1-MATH-0068",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:arith:hosts",
+        "number": "3.2",
+        "page": 15,
+        "source": "main_sections/arithmetic.tex",
+        "line": 98,
+        "statement_sha256": "65da7e8acfacc0a5bc2c351934c0e44e09d3fc6068a8862c300b6eeaeee8c5fe"
+      },
+      "original_assumption": "Main Proposition 3.2 bounds ordered separated hosts with positive full pair loss by O(N^(6/5+epsilon)). Its rho includes the local kernels; the second display is a separate weighted nonaligned sum.",
+      "finding": "The first host count has the stronger exponent 1+epsilon and holds for all ordered dyadic pairs, including contacts and equal centres. A full-loss pair whose two coordinates are regular has a nonzero intersection of their actual effective even-image spaces, so complete main 10.3 counts it. Every other pair has a locally irregular coordinate; the complete regular-set bound gives at most 2N*N^epsilon such pairs. Both margins and the factor three are absorbed before the varying length. Exact heterogeneous independent pair weights over this full host set sum to at most N^(-1+epsilon).",
+      "evidence": [
+        "PaperP1.PairHostCover.regular_loss_iff",
+        "PaperP1.PairHostCover.cover",
+        "PaperP1.PairHostCover.card_bound",
+        "PaperP1.OriginalPairHosts.separated_subset",
+        "PaperP1.OriginalPairHosts.effective_hosts",
+        "PaperP1.OriginalPairHosts.uniform_count",
+        "PaperP1.OriginalPairHosts.improved_support",
+        "PaperP1.OriginalPairHosts.article_3_2_support",
+        "PaperP1.PairHostIndependentMass.finite_mass_cap",
+        "PaperP1.PairHostIndependentMass.uniform_mass"
+      ],
+      "proposed_revision": "Replace the exponent 6/5 by 1 in the first display of main Proposition 3.2. State that this unweighted support bound also covers contacts and equal centres, with local kernels retained. Give the acyclic proof from the completed half-count and regular-set estimate, and leave the separate weighted nonaligned assertion with its own proof. The exact independent-weight consequence can be added where useful.",
+      "impact": "The unweighted support count and its independent mass improve. No improvement of the weighted 2^rho-1 residual, positive joint mass, covariance sum, bounded second moment or complete pair profile is asserted. The actual second factorial moment is separately proved <=N^epsilon for every fixed epsilon, which does not yet close T19.4. Main 3.2 stays in progress; numbered coverage remains 68/167.",
+      "validation": "Lean v4.36.0-rc2 full build passed (9915 jobs); actual axiom audit passed for all 4729 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2444 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.69 GiB. The stronger full-loss host count and exact heterogeneous independent mass are proved; main 3.2 remains in progress for its weighted nonaligned residual. The actual F_2<=N^epsilon bound does not close T19.4. Coverage stays 68/167; confirmed improvements are 68. No target host count, external assumption, Paper C port, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

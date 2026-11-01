@@ -1475,6 +1475,9 @@ import PaperP1
 #print axioms PaperP1.OldValuePrimeBudget.primePool_log_sum_le
 #print axioms PaperP1.OldValuePrimeBudget.raw_primePool_log_sum_le
 #print axioms PaperP1.OriginalWindowValueBounds.values_geometry
+#print axioms PaperP1.PairHostCover.regular_loss_iff
+#print axioms PaperP1.PairHostCover.cover
+#print axioms PaperP1.PairHostCover.card_bound
 #print axioms PaperP1.Arithmetic.parityVec_apply
 #print axioms PaperP1.Arithmetic.parityVec_one
 #print axioms PaperP1.Arithmetic.parityVec_mul
@@ -2573,9 +2576,16 @@ import PaperP1
 #print axioms PaperP1.OrderPrimeBudget.finite_root_bound
 #print axioms PaperP1.OrderPrimeBudget.critical_conditions
 #print axioms PaperP1.OrderPrimeBudget.critical_root_bound
+#print axioms PaperP1.OriginalPairHosts.separated_subset
+#print axioms PaperP1.OriginalPairHosts.effective_hosts
+#print axioms PaperP1.OriginalPairHosts.uniform_count
+#print axioms PaperP1.OriginalPairHosts.improved_support
+#print axioms PaperP1.OriginalPairHosts.article_3_2_support
 #print axioms PaperP1.OriginalWindowFamilyCounts.uniform_hosts
 #print axioms PaperP1.OriginalWindowFamilyMass.uniform_marginals
 #print axioms PaperP1.OriginalWindowFamilyMass.article_10_2
+#print axioms PaperP1.PairHostIndependentMass.finite_mass_cap
+#print axioms PaperP1.PairHostIndependentMass.uniform_mass
 #print axioms PaperP1.PolylogSmoothModuli.log_power_exponential
 #print axioms PaperP1.PolylogSmoothModuli.odd_smooth_count
 #print axioms PaperP1.PrescribedQuadraticKernelCount.mem_values
@@ -2691,6 +2701,7 @@ import PaperP1
 #print axioms PaperP1.ScaledPrimeCounts.divided_cutoff_ratio
 #print axioms PaperP1.ScaledPrimeCounts.shifted_cutoff_ratio
 #print axioms PaperP1.ScaledPrimeCounts.prime_count_divided_shifted
+#print axioms PaperP1.SecondMomentSubpower.uniform_subpower
 #print axioms PaperP1.SelectedKernelCounts.small_factor_subpolynomial
 #print axioms PaperP1.SelectedKernelCounts.large_factor_subpolynomial
 #print axioms PaperP1.SelectedKernelCounts.ambient_sqrt
@@ -3794,6 +3805,11 @@ import PaperP1
 #print axioms PaperP1.OneNegativePrime.parity_simple_multiple
 #print axioms PaperP1.OneNegativePrime.not_dvd_inside
 #print axioms PaperP1.OneNegativePrime.positive_exact_run
+#print axioms PaperP1.PairHostMoment.zero_loss
+#print axioms PaperP1.PairHostMoment.tuplePair_injective
+#print axioms PaperP1.PairHostMoment.tupleValues_pair
+#print axioms PaperP1.PairHostMoment.badTuples_card
+#print axioms PaperP1.PairHostMoment.finite_second_bound
 #print axioms PaperP1.PairSquareClassFourier.full_support_at
 #print axioms PaperP1.PairSquareClassFourier.pair_common_formula
 #print axioms PaperP1.PairSquareClassFourier.pair_moment_covariance

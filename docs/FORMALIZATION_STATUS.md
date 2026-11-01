@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4713 audited theorem/lemma declarations**. This
+- The project currently has **4729 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2194,3 +2194,24 @@ Coverage is 68/167 (main 23/73, companion 45/94), with 67 confirmed
 improvements. See [complete alignment](QUADRATIC_COMPONENT_ALIGNMENT.md).
 
 Quadratic-component completion verification: Lean v4.36.0-rc2 full build passed (9905 jobs); actual axiom audit passed for all 4713 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2428 distinct ledger/finding declarations were checked directly by Lean. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.72 GiB. Full T19.9 is complete, with a fixed family before every epsilon and the actual infinite-model moments. Coverage is 68/167 (main 23/73, companion 45/94); confirmed improvements remain 67. No target component assumption, external input, Paper C port, manuscript-byte change or Palomar registration.
+
+
+## Stronger actual full-loss pair support and second-moment progress
+
+The first display of main 3.2 now holds with N^(1+epsilon), in place
+of N^(6/5+epsilon), even before separation. Full rho includes every
+local kernel. An actual cover splits regular effective intersections
+from either locally deficient coordinate. Complete main 10.3 and the
+regular-set count supply all three bounds, without an unfinished pair
+estimate as input. Exact heterogeneous independent mass over the full
+host set is at most N^(-1+epsilon). This is P1-MATH-0068.
+
+An exact ordered-distinct-tuple split proves
+F_2<=N^2 p^2+card(hosts)*M for an actual marginal cap M. It yields
+F_2<=N^epsilon uniformly in every fixed critical band, for each fixed
+positive epsilon. This does not imply the bounded seed in T19.4 or the
+separate weighted nonaligned residual in main 3.2; both remain in
+progress. Coverage stays 68/167; confirmed improvements are 68. See
+[exact alignment](PAIR_HOST_COUNT_ALIGNMENT.md).
+
+Pair-host verification: Lean v4.36.0-rc2 full build passed (9915 jobs); actual axiom audit passed for all 4729 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2444 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.69 GiB. The stronger full-loss host count and exact heterogeneous independent mass are proved; main 3.2 remains in progress for its weighted nonaligned residual. The actual F_2<=N^epsilon bound does not close T19.4. Coverage stays 68/167; confirmed improvements are 68. No target host count, external assumption, Paper C port, manuscript-byte change or Palomar registration.

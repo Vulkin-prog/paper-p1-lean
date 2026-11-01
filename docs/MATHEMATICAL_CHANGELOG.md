@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**67 mathematical improvements are confirmed; no error in a manuscript conclusion
+**68 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -2949,3 +2949,21 @@ the explicit bound 2/sqrt(L). Full and compatible nullity coincide and
 there is no good pair for any threshold. Coverage is 68/167; confirmed
 improvements remain 67. No new independent finding is counted. See
 [complete component alignment](QUADRATIC_COMPONENT_ALIGNMENT.md).
+
+## P1-MATH-0068 — Near-linear support count with all local kernels retained
+
+The first display of main 3.2 holds with N^(1+epsilon), improving its
+printed N^(6/5+epsilon) bound. It also holds without separation, including
+contacts and equal centres. A full-loss pair with both coordinates
+regular has a nonzero effective intersection and is counted by complete
+main 10.3. The remaining pairs have a locally irregular coordinate and
+are counted by twice N times the already proved N^epsilon exception
+bound. Both internal margins and the fixed factor are absorbed uniformly.
+
+The exact heterogeneous independent pair mass over this larger host set
+is at most N^(-1+epsilon). The actual second factorial moment is also
+proved at most N^epsilon for every fixed epsilon>0. Neither assertion
+proves a bounded second moment or the separate weighted nonaligned
+residual in main 3.2. Main 3.2 and T19.4 remain in progress; coverage
+stays 68/167 and confirmed improvements are 68. See
+[exact host and moment scope](PAIR_HOST_COUNT_ALIGNMENT.md).

@@ -11,6 +11,11 @@ and nullity coefficients tend to 6 log(2)/17, and the centered mass
 has the explicit relative error 2/sqrt(L). The original infinite-model
 moments and the order of all asymptotic quantifiers are retained. See
 [the complete component alignment](docs/QUADRATIC_COMPONENT_ALIGNMENT.md).
+The support count in main 3.2 now has the stronger exponent 1+epsilon,
+including local kernels, contacts and equal centres. Its weighted
+nonaligned residual remains open. The actual second factorial moment
+is bounded by N^epsilon for each fixed epsilon, with a bounded seed
+still open. See [the exact pair-host scope](docs/PAIR_HOST_COUNT_ALIGNMENT.md).
 Main Lemma 14.2 proves the sharp rational overlap bound for every integer
 triple in the source range. The unique extremal triple is (10,12,15),
 and all other primitive triples have the sharp smaller bound 11/18.

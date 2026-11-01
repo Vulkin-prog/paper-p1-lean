@@ -1679,3 +1679,19 @@ mass is at least (1-2/sqrt(L)) times its positive joint mass. All source
 conclusions are proved without a target component or asymptotic premise.
 No new external input or Paper C port. See
 [exact alignment](QUADRATIC_COMPONENT_ALIGNMENT.md).
+
+## Full-loss original pair hosts and the subpolynomial second moment
+
+Stable ID: `P1-ARITH-ORIGINAL-PAIR-HOSTS`. Status: **proved support count**;
+the weighted residual in main 3.2 is still open.
+
+The completed main 10.3 and regular-set proofs give the stronger
+N^(1+epsilon) count for all actual full-loss ordered dyadic pairs. The
+source local kernels are retained through an explicit finite cover.
+The exact heterogeneous independent mass is at most N^(-1+epsilon).
+The original second factorial moment is proved at most N^epsilon,
+using an exact finite split, actual zero-loss direct pairs, joint event
+inclusion on the hosts and the proved uniform marginal cap. No bounded
+second moment, covariance or weighted residual is assumed or claimed.
+No additional literature input or Paper C port is used. See
+[alignment](PAIR_HOST_COUNT_ALIGNMENT.md).
