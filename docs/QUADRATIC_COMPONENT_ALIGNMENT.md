@@ -92,3 +92,5 @@ Coverage stays 67/167 and confirmed findings stay 67. These are proofs of
 inputs already used in the source, not a new independent mathematical
 correction. No new Paper C port, external assumption, manuscript edit or
 Palomar registration is introduced.
+
+Validated input checkpoint: [f4f13e7e119cced9399a101cabb825472f2c417d](https://github.com/Vulkin-prog/paper-p1-lean/commit/f4f13e7e119cced9399a101cabb825472f2c417d).
