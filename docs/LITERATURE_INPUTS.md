@@ -20,6 +20,26 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Moderate congruence certificates — partial internal proof
+
+Stable ID: `P1-ARITH-MODERATE-CERTIFICATES`. Overall status: **unresolved**;
+finite receiving-centre cost: **proved**.
+
+- Target: article Lemma 7.2, page 23, `p1:core:moderate`.
+- Lean: `ModerateReceiverCost.card_assignments_le_moderate`, with exact
+  population membership, the generic coprime short-interval count and the
+  finite modulus-product inequality.
+- The hypotheses here are explicit finite certificate data: positive
+  modules, coprimality in each receiving group, their total product at most
+  9*N^2 and individual modules at most 6*N*B. Every resulting congruence
+  and product-cost inequality is proved, with N>=10 explicit.
+- Mathlib at the pinned revision supplies finite products, natural division,
+  finite function counts and real inequalities. No CRT count is assumed.
+- The arithmetic cover by actual anchor kernels and the weighted sum over
+  growing orders are not proved by these preparatory results. The entire
+  source lemma remains in progress. No additional Paper C source is ported.
+  See [alignment](MODERATE_CERTIFICATE_ALIGNMENT.md).
+
 ## Root separation on a rational offset line
 
 Stable ID: `P1-ARITH-OFFSET-ROOT-SEPARATION`. Status: **proved**.

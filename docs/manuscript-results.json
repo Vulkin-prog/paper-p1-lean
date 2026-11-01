@@ -444,11 +444,21 @@
       "source": "main_sections/cores.tex",
       "line": 65,
       "sha256": "9594d0ca09a407ca09f83dbf5e3e3a35c779690b9000a1041eb967ba1042956a",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.ModerateReceiverCost.mem_assignments",
+        "PaperP1.ModerateReceiverCost.card_assignments_le_moderate",
+        "PaperP1.ModerateReceiverCost.card_assignments_le_cost",
+        "PaperP1.ModerateModuli.large_card_le_two",
+        "PaperP1.ModerateModuli.product_cost_le",
+        "PaperP1.ShortIntervalCongruences.card_fibre_le",
+        "PaperP1.ShortIntervalCongruences.card_common_residue_le"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-MODERATE-CERTIFICATES"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Preparatory finite receiver cost only. Actual receiving-centre assignments satisfy the exact congruence membership predicate. Coprime groups give at most floor(N/D_j)+1 centres per receiver. For N>=10, positive modules with product<=9*N^2 have at most two modules above N. If every D_j<=6*N*B, the actual receiving-tuple count is at most 36*B^2*2^h*N^h/product(D_j), with h the number of receivers. The numerical and congruence counts are proved; none is an assumed CRT bound. The cover and count of actual anchor-kernel certificates, the (r*B)^m prime-assignment factor, and the source weighted sum over growing orders remain open. This partial scope does not complete article Lemma 7.2 or increase numbered coverage. See MODERATE_CERTIFICATE_ALIGNMENT.md."
     },
     {
       "label": "p1:core:degrees",

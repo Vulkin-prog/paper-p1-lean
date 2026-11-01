@@ -555,6 +555,13 @@ import PaperP1
 #print axioms PaperP1.LogarithmicPrimeCount.primeCount_le_log_div_loglog
 #print axioms PaperP1.LogarithmicPrimeCount.prime_supports_uniformSubpolynomial
 #print axioms PaperP1.LogarithmicPrimeCount.smooth_support_count_le_rpow_eventually
+#print axioms PaperP1.ModerateModuli.large_card_le_two
+#print axioms PaperP1.ModerateModuli.one_add_div_le
+#print axioms PaperP1.ModerateModuli.product_cost_le
+#print axioms PaperP1.ModerateReceiverCost.mem_assignments
+#print axioms PaperP1.ModerateReceiverCost.modulus_pos
+#print axioms PaperP1.ModerateReceiverCost.card_assignments_le_cost
+#print axioms PaperP1.ModerateReceiverCost.card_assignments_le_moderate
 #print axioms PaperP1.OffsetFactorSupports.roughWeightedCount_eq_source
 #print axioms PaperP1.OffsetFactorSupports.integerWeightedCount_eq_source
 #print axioms PaperP1.OffsetFactorSupports.mem_primePool
@@ -663,6 +670,8 @@ import PaperP1
 #print axioms PaperP1.ShortIntervalCongruences.product_dvd_difference
 #print axioms PaperP1.ShortIntervalCongruences.eq_of_common_divisors
 #print axioms PaperP1.ShortIntervalCongruences.card_fibre_le_one
+#print axioms PaperP1.ShortIntervalCongruences.card_common_residue_le
+#print axioms PaperP1.ShortIntervalCongruences.card_fibre_le
 #print axioms PaperP1.SmallKernelCount.mem_smallKernelValues
 #print axioms PaperP1.SmallKernelCount.smallKernelValues_subset_cover
 #print axioms PaperP1.SmallKernelCount.card_fibreValues_le

@@ -69,4 +69,45 @@ theorem card_fibre_le_one (U N : ℕ) (G w : ι → ℕ) (hU : 1 ≤ U)
   obtain ⟨hz', hdiv'⟩ := mem_filter.mp hz'
   exact eq_of_common_divisors U N G w hU hcop hprod z z' hz hz' hdiv hdiv'
 
+theorem card_common_residue_le (S : Finset ℕ) (U N q : ℕ)
+    (hinterval : S ⊆ Finset.Ico U (U + N))
+    (hresidue : ∀ a ∈ S, ∀ b ∈ S, q ∣ b - a) : S.card ≤ N / q + 1 := by
+  by_cases hS : S.Nonempty
+  · let m := S.min' hS
+    have hm : m ∈ S := S.min'_mem hS
+    have hmU : U ≤ m := (mem_Ico.mp (hinterval hm)).1
+    have hlow (n : ℕ) (hn : n ∈ S) : m ≤ n := S.min'_le n hn
+    have hdiv (n : ℕ) (hn : n ∈ S) : q ∣ n - m := hresidue m hm n hn
+    have hcard : S.card ≤ (range (N / q + 1)).card := by
+      apply card_le_card_of_injOn (fun n ↦ (n - m) / q)
+      · intro n hn
+        have hnN := (mem_Ico.mp (hinterval hn)).2
+        have hnm : n - m ≤ N := by omega
+        exact mem_range.mpr (Nat.lt_succ_of_le (Nat.div_le_div_right hnm))
+      · intro n hn k hk heq
+        change (n - m) / q = (k - m) / q at heq
+        have hnrec := Nat.div_mul_cancel (hdiv n hn)
+        have hkrec := Nat.div_mul_cancel (hdiv k hk)
+        rw [heq] at hnrec
+        have hnlow := hlow n hn
+        have hklow := hlow k hk
+        omega
+    simpa only [card_range] using hcard
+  · have he : S = ∅ := not_nonempty_iff_eq_empty.mp hS
+    rw [he, card_empty]
+    exact Nat.zero_le _
+
+theorem card_fibre_le (U N : ℕ) (G w : ι → ℕ) (hU : 1 ≤ U)
+    (hcop : Pairwise (fun i j ↦ Nat.Coprime (G i) (G j))) :
+    (fibre U N G w).card ≤ N / (∏ i, G i) + 1 := by
+  apply card_common_residue_le _ U N _
+  · exact filter_subset _ _
+  · intro z hz z' hz'
+    obtain ⟨hz, hdiv⟩ := (mem_fibre U N G w z).mp hz
+    obtain ⟨hz', hdiv'⟩ := (mem_fibre U N G w z').mp hz'
+    have hzpos : 1 ≤ z := hU.trans (mem_Ico.mp hz).1
+    have hz'pos : 1 ≤ z' := hU.trans (mem_Ico.mp hz').1
+    exact product_dvd_difference G hcop z z'
+      (common_divisors_modEq G w z z' hzpos hz'pos hdiv hdiv')
+
 end PaperP1.ShortIntervalCongruences

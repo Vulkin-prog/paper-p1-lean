@@ -137,6 +137,10 @@ Companion T20.5 is proved for actual window square classes and the exact
 line-substituted polynomials: at most one common root, and at most two
 equations to discard. Only the first window needs to be regular. See
 [offset-root separation alignment](docs/OFFSET_ROOT_SEPARATION_ALIGNMENT.md).
+Article Lemma 7.2 is in progress: the exact finite receiving-centre cost
+is proved from the actual congruences, including the factor 36*B^2.
+The arithmetic certificate cover and growing-order sum remain open. See
+[moderate-certificate progress](docs/MODERATE_CERTIFICATE_ALIGNMENT.md).
 The sharp PNT input is proved by a selected, recompiled and audited analytic
 development, with [separate provenance](docs/PRIME_NUMBER_THEOREM_ALIGNMENT.md).
 
