@@ -4,28 +4,20 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 49 / 167 numbered results proved.**
+**Status: active formalization, 51 / 167 numbered results proved.**
 Companion T1.9 now covers the full enlarged geometric alignment, including
 zero exact units and both orientations, with its fixed-height enlarged-prime
 rate. The earlier one-unit coverage error and its subsequent closure are
 retained in the [scope audit](docs/FORMALIZATION_SCOPE_AUDIT.md).
 See the [complete alignment](docs/ALIGNED_RESIDUAL_RANK_ALIGNMENT.md).
-The coefficient part of T2.6 is checked, including exact leading-channel
-values and attainment of the universal 2/3 bound in channel 8:9. Its
-aligned-target rank estimate remains open. See
-[partial alignment](docs/FIXED_CHANNEL_GAMMA_ALIGNMENT.md).
-The matching divisibility classes also have an explicit two-sided error
-of at most three offsets, with separate physical-fraction classification.
-See [finite matching checkpoint](docs/FIXED_CHANNEL_MATCHES_ALIGNMENT.md).
-Actual compatible target matches now satisfy B*gamma+3, including the
-physical fractions with the sharper B/b+2 bound. See
-[actual matching checkpoint](docs/ACTUAL_TARGET_MATCHES_ALIGNMENT.md).
-The bounded-affine dyadic core now has explicit endpoint-source and target
-pool counts with a common threshold. See
-[partial alignment](docs/DYADIC_MATCHING_ALIGNMENT.md).
-The finite actual target quotient-rank bridge now includes internal target
-defects and old prime bits, with one source unit sufficient for that step.
-See [finite rank alignment](docs/TARGET_QUOTIENT_RANK_ALIGNMENT.md).
+Companion T1.11 and T2.6 prove the actual additional target rank from
+literal alignment with the compressed source, including internal target
+defects, old prime bits, both source orientations and explicit polynomial
+source exceptions and target counts. One source unit suffices for this
+rank conclusion. See the [complete target-rank alignment](docs/ALIGNED_TARGET_RANK_ALIGNMENT.md).
+The exact leading coefficients are 1/3 for channel 2:3 and 1/2 for 3:4;
+the universal finite coefficient bound 2/3 is attained in channel 8:9.
+This coefficient computation does not assert optimality of rank or Palm bounds.
 Article Lemma 3.5 proves exact compression of the actual good-edge family,
 with deduplicated normalized values, an explicit finite rank bound and at
 most (L+1)^2 one-parameter motifs. See

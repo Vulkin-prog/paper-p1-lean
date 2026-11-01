@@ -1676,3 +1676,42 @@ unchanged; no manuscript revision or Palomar registration is made.
 Validated full enlarged-alignment T1.9 (9,295 build jobs; 3,319 audited
 declarations; 1,034 directly checked coverage/finding names):
 [e4d183ed6e300f0352f6164c1c049cadfe0c0db4](https://github.com/Vulkin-prog/paper-p1-lean/commit/e4d183ed6e300f0352f6164c1c049cadfe0c0db4).
+
+## P1-MATH-0040 and P1-MATH-0041 extended — complete geometric target rank
+
+The canonical target data are now constructed from literal enlarged
+alignment with the compressed source, rather than assumed. Reduction by
+the actual gcd preserves the affine equation and reduces displacement.
+For B>=2D, the reduced denominator and displacement are <=B^5.
+This gives an explicit 6*a*B^15 target count and symmetric endpoint
+source exceptions of cardinality <=(12(a+b)+4)*B^7.
+
+The true combined source/target union has radius <=4*a*b*H*B and at
+most 3B distinct values. Its two-progression cover is used for residual
+rank, while the true old set alone is used for actual matches. The
+literal discarded prime rows and all polynomial-height coefficients have
+proved budgets. The uniform Runge--Hamming residual now applies to this
+actual union, closing the asymptotic quotient-rank argument.
+
+One source unit suffices without private coordinates, local regularity
+or source affine compatibility. Both orientations and all old prime bits
+of a,b are included. The resulting deficiency is the literal new-window
+quotient expression, including internal defects. Actual compatibility
+of a distinct target supplies deterministic separation. The source-family
+bridge covers raw geometric good pairs independently of event compatibility.
+
+Evidence: `TargetUnionGeometry`, `TargetUnionResidual.row_rank_sublinear`,
+`TargetQuotientRank.bounded_affine_rank`, `ReducedAffineData.reduce`,
+`CompressedTargetAlignment.bounded_data`, `AlignedTargetRank.uniform_core`,
+`AlignedTargetSourceTheorem.uniform_source_bounds`, `uniform_both`,
+`geometric_good_source_units`, `companion_T1_11` and `companion_T2_6`.
+The exact coefficient bounds and leading values are included in the wrappers.
+
+T1.11 and T2.6 are complete. Coverage is 51/167, with 41 confirmed
+improvements; this is an extension of two existing findings. The full
+build passed (9,309 jobs), all 3,344 theorem/lemma declarations passed
+the actual axiom audit, and all 1,059 coverage/finding names were checked
+directly. Only propext, Classical.choice and Quot.sound occur. No
+optimality of the explicit polynomial counts, rank bound or Palm bound is
+claimed. Original sources are preserved. No manuscript revision or
+Palomar registration is made.

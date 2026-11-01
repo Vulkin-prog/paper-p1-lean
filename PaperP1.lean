@@ -303,3 +303,10 @@ public import PaperP1.Asymptotics.EnlargedAlignedResidual
 public import PaperP1.Asymptotics.EnlargedAlignedRank
 public import PaperP1.Asymptotics.EnlargedFixedHeightResidual
 public import PaperP1.Asymptotics.EnlargedAlignedPairTheorem
+public import PaperP1.Arithmetic.TargetUnionGeometry
+public import PaperP1.Arithmetic.ReducedAffineData
+public import PaperP1.Arithmetic.CompressedTargetAlignment
+public import PaperP1.Asymptotics.TargetUnionResidual
+public import PaperP1.Asymptotics.TargetQuotientRank
+public import PaperP1.Asymptotics.AlignedTargetRank
+public import PaperP1.Asymptotics.AlignedTargetSourceTheorem

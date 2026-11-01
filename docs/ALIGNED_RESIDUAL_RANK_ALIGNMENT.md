@@ -104,10 +104,11 @@ checkpoint is df34686b343f5297c181e6150e21834acc335ad8; its fixed-height
 checkpoint is 6165382c14d6f8e653ddec27accb9c042628ae10. These checkpoints
 alone did not cover the full enlarged-alignment source statement.
 
-T1.11 and T2.6 remain in progress. Their [bounded-affine dyadic core](DYADIC_MATCHING_ALIGNMENT.md)
-and [finite target quotient-rank bridge](TARGET_QUOTIENT_RANK_ALIGNMENT.md)
-are proved. The actual combined target-union asymptotic and construction
-of bounded affine data from literal geometric alignment remain open.
+T1.11 and T2.6 were subsequently completed. Their [full alignment](ALIGNED_TARGET_RANK_ALIGNMENT.md)
+records the true combined target-union residual, construction of bounded
+affine data from literal geometric alignment, actual source-family bridge
+and both orientations. Earlier dyadic and finite quotient-rank checkpoints
+remain available as historical documents.
 No new Paper C port, external mathematical assumption, manuscript revision
 or Palomar registration is introduced.
 

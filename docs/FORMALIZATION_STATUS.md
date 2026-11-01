@@ -894,3 +894,37 @@ registration is made. Ubuntu root free space is 18.01 GiB.
 Validated full enlarged-alignment T1.9 (9,295 build jobs; 3,319 audited
 declarations; 1,034 directly checked coverage/finding names):
 [e4d183ed6e300f0352f6164c1c049cadfe0c0db4](https://github.com/Vulkin-prog/paper-p1-lean/commit/e4d183ed6e300f0352f6164c1c049cadfe0c0db4).
+
+## Complete aligned-target rank — companion T1.11 and T2.6
+
+Current coverage is **51 / 167** (main 16 / 73; companion 35 / 94).
+The actual combined target union now has explicit interval geometry,
+proved polynomial coefficient/prime budgets and uniform o(L) remaining-row
+rank. The finite actual quotient-rank inequality therefore gives
+(delta_Q)<=(gamma(a,b)+epsilon)*L, including internal target defects
+and any old prime signs of a,b.
+
+Literal alignment with the compressed centre constructs reduced affine
+data with denominator and displacement <=B^5. The actual aligned-target
+pool has size <=6*a*B^15. The symmetric source exception family has size
+<=(12(a+b)+4)*B^7 and covers both source orientations. Actual source
+parameters are extracted from one unit; private coordinates and dependence
+supply it for raw geometric good pairs without source affine compatibility.
+Compatible distinct actual targets supply deterministic separation.
+
+`AlignedTargetSourceTheorem.companion_T2_6` includes gamma<=2/3 and
+both separated and actual compatible conclusions.
+`companion_T1_11` includes the exact leading coefficients 1/3 and 1/2,
+with no source event premise. The common threshold precedes every source
+and target choice. This extends existing improvements P1-MATH-0040 and
+P1-MATH-0041; there are still 41 confirmed improvements. See the
+[complete statement alignment](ALIGNED_TARGET_RANK_ALIGNMENT.md).
+
+The full build passed (9,309 jobs), all 3,344 theorem/lemma declarations
+passed the actual axiom audit, and all 1,059 coverage/finding names were
+checked directly by Lean. Only propext, Classical.choice and Quot.sound
+occur. All 138 manifest entries and all 167 original statement hashes
+remain unchanged. No external mathematical input, new Paper C port,
+manuscript revision or Palomar registration is introduced. Source mass,
+Palm mean and the principal Poisson approximation remain open. Ubuntu
+root free space is 17.99 GiB.

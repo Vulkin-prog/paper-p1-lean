@@ -27,6 +27,14 @@ instance oldSpace_finite (Q : Finset ℕ) (x y L : ℕ) : FiniteDimensional F₂
 def deficiency (Q : Finset ℕ) (x y z L : ℕ) : ℕ :=
   L - (Module.finrank F₂ ↥(oldSpace Q x y L ⊔ squareClassSpace z L) - Module.finrank F₂ (oldSpace Q x y L))
 
+theorem deficiency_comm (Q : Finset ℕ) (x y z L : ℕ) :
+    deficiency Q x y z L = deficiency Q y x z L := by
+  have hW : oldSpace Q x y L = oldSpace Q y x L := by
+    unfold oldSpace
+    rw [sup_comm (squareClassSpace x L) (squareClassSpace y L)]
+  unfold deficiency
+  rw [hW]
+
 theorem deficiency_empty (x y z L : ℕ) :
     deficiency ∅ x y z L = L -
       (Module.finrank F₂ ↥((squareClassSpace x L ⊔ squareClassSpace y L) ⊔ squareClassSpace z L) -

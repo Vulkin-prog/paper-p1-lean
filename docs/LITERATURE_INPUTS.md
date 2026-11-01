@@ -977,3 +977,16 @@ interval geometry and finite span/rank-nullity algebra. The fixed-height
 constant precedes the critical-band width. No new external mathematical
 hypothesis or Paper C source is used. See the [full alignment](ALIGNED_RESIDUAL_RANK_ALIGNMENT.md)
 and preserved [scope correction](FORMALIZATION_SCOPE_AUDIT.md).
+
+## Complete aligned-target quotient rank and canonical data
+
+The actual combined-union geometry, polynomial coefficient prime budget,
+remaining-row o(L) bound and quotient-rank conclusion are now proved.
+Literal compressed-source alignment constructs bounded reduced affine
+data. Both source orientations, actual compatibility, old prime signs,
+explicit source exceptions and target counts are included. No rational
+separation estimate, curve count, rank bound or encoding existence is an
+external premise. All arithmetic uses the already proved Runge, Hamming,
+prime-count and finite linear-algebra results. No new Paper C source is
+used. T1.11 and T2.6 are complete; source mass and Palm mean remain
+separate. See the [full alignment](ALIGNED_TARGET_RANK_ALIGNMENT.md).

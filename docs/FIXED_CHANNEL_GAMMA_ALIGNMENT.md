@@ -1,5 +1,9 @@
 # Companion T2.6 — The exact finite coefficient, partial checkpoint
 
+**Historical checkpoint.** T1.11 and T2.6 are now complete; see the
+[current full alignment](ALIGNED_TARGET_RANK_ALIGNMENT.md). The text below
+records the scope and open work at this earlier validation checkpoint.
+
 Source: Lemma T2.6, page 22, `p1:arith:fixed-channel-rank`,
 `companion_sections/supplemental_arithmetic.tex:209`. Original statement
 SHA-256:
