@@ -86,3 +86,5 @@ are 69. No new external assumption, Paper C port, manuscript edit or
 Palomar registration is introduced.
 
 Disjoint-square verification: Lean v4.36.0-rc2 full build passed (9923 jobs); actual axiom audit passed for all 4740 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2455 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.68 GiB. Full T4.1 is complete with j=2, arbitrary nonzero integer coefficients and actual integer solution sets. The one-variable part of T1.7 is complete; its two-variable and graph conclusions remain open. Coverage is 69/167 (main 23/73, companion 46/94); confirmed improvements are 69. No Pila or target-count hypothesis, new external assumption, Paper C port, manuscript-byte change or Palomar registration.
+
+Validated complete proof checkpoint: [a870737a5c2bac6f352bf92984c80f7e30fa1dba](https://github.com/Vulkin-prog/paper-p1-lean/commit/a870737a5c2bac6f352bf92984c80f7e30fa1dba).

@@ -2468,7 +2468,8 @@
       "mathematical_changes": [
         "P1-MATH-0069"
       ],
-      "notes": "The complete one-variable assertion is proved with uniform arbitrary nonzero integer coefficients: one split equation of degree at least two, or two equations with nonempty disjoint root lists, has at most N^epsilon solutions on every fixed comparable positive interval, for each fixed degree cap and polylogarithmic offset width. Coefficient heights are unnecessary, and odd degrees are included. The two-variable surface counts and all remaining graph consequences are still open; T1.7 is not counted complete. See DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md."
+      "notes": "The complete one-variable assertion is proved with uniform arbitrary nonzero integer coefficients: one split equation of degree at least two, or two equations with nonempty disjoint root lists, has at most N^epsilon solutions on every fixed comparable positive interval, for each fixed degree cap and polylogarithmic offset width. Coefficient heights are unnecessary, and odd degrees are included. The two-variable surface counts and all remaining graph consequences are still open; T1.7 is not counted complete. See DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md.",
+      "validation_commit": "a870737a5c2bac6f352bf92984c80f7e30fa1dba"
     },
     {
       "label": "p1:arith:dense",
@@ -3628,7 +3629,8 @@
       "mathematical_changes": [
         "P1-MATH-0069"
       ],
-      "notes": "Full companion T4.1, with a stronger acyclic arithmetic proof: j=2 always suffices, independent of the degree cap and error margin, and all coefficients may be arbitrary nonzero integers without any height bound. One equation with at least two distinct roots fixes the actual squarefree kernel; the proved fixed-degree split-product fibre count is uniformly N^epsilon for every kernel. Multiplying two nonconstant equations with disjoint roots gives such an equation, of degree at most 2K. The literal finite set of integer solutions in every fixed comparable positive interval is counted. One threshold precedes all critical-band lengths, root lists, coefficients and solution sets; polynomial-height and even-degree restrictions are unnecessary. The proof uses the complete uniform quadratic/Pell and fixed-kernel count chains, without a Pila curve-count premise. See DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md."
+      "notes": "Full companion T4.1, with a stronger acyclic arithmetic proof: j=2 always suffices, independent of the degree cap and error margin, and all coefficients may be arbitrary nonzero integers without any height bound. One equation with at least two distinct roots fixes the actual squarefree kernel; the proved fixed-degree split-product fibre count is uniformly N^epsilon for every kernel. Multiplying two nonconstant equations with disjoint roots gives such an equation, of degree at most 2K. The literal finite set of integer solutions in every fixed comparable positive interval is counted. One threshold precedes all critical-band lengths, root lists, coefficients and solution sets; polynomial-height and even-degree restrictions are unnecessary. The proof uses the complete uniform quadratic/Pell and fixed-kernel count chains, without a Pila curve-count premise. See DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md.",
+      "validation_commit": "a870737a5c2bac6f352bf92984c80f7e30fa1dba"
     },
     {
       "label": "p1:fixed:CRT",
