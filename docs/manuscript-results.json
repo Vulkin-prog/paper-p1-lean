@@ -2654,7 +2654,8 @@
       "mathematical_changes": [
         "P1-MATH-0034"
       ],
-      "notes": "Both source tail conclusions hold for the original infinite count, with literal rounded threshold and actual truncated Bochner moments. The growing order ceil((log log N)^(2/3)) is controlled explicitly. The coefficient K=E+D+r+log 4 can be chosen before the critical-band width C; only the N threshold depends on C. No bounded pair moment or fixed-order moment theorem is used. See docs/EFFECTIVE_SUPPORT_ALIGNMENT.md."
+      "notes": "Both source tail conclusions hold for the original infinite count, with literal rounded threshold and actual truncated Bochner moments. The growing order ceil((log log N)^(2/3)) is controlled explicitly. The coefficient K=E+D+r+log 4 can be chosen before the critical-band width C; only the N threshold depends on C. No bounded pair moment or fixed-order moment theorem is used. See docs/EFFECTIVE_SUPPORT_ALIGNMENT.md.",
+      "validation_commit": "fa7ba5f5dd20098526dba859bb770a8ba73318f0"
     },
     {
       "label": "p1:limits:colored-tail",

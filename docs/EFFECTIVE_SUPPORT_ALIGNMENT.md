@@ -61,3 +61,6 @@ It supplies no bounded second moment or low-order asymptotic. T19.4's
 stronger factorial bound retaining its bounded initial pair moment is
 a separate result and is not counted complete here. No main Poisson
 theorem, revised manuscript or Palomar registration is claimed.
+
+Validated implementation of companion T19.5 and P1-MATH-0034:
+[fa7ba5f5dd20098526dba859bb770a8ba73318f0](https://github.com/Vulkin-prog/paper-p1-lean/commit/fa7ba5f5dd20098526dba859bb770a8ba73318f0).

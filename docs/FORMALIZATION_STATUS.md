@@ -633,3 +633,6 @@ The full build passed (9,165 jobs), as did the actual axiom audit of all
 Coverage is 47 / 167, with 34 confirmed improvements. T19.4's stronger
 initial-pair factorial estimate and the main Poisson asymptotics remain
 open. No Palomar registration is made. Ubuntu root free space is 17.74 GiB.
+
+Validated implementation of companion T19.5 and P1-MATH-0034:
+[fa7ba5f5dd20098526dba859bb770a8ba73318f0](https://github.com/Vulkin-prog/paper-p1-lean/commit/fa7ba5f5dd20098526dba859bb770a8ba73318f0).
