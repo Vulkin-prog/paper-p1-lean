@@ -1366,3 +1366,15 @@ divisor estimate is assumed; the error version has an explicit ordinary
 logarithmic-height premise, not an assumed enumeration estimate.
 The actual split-product application remains open. See
 [alignment](GROWING_DEGREE_PRIME_BUDGET_ALIGNMENT.md).
+
+## Actual split-offset height and support restriction
+
+The source q*D_A logarithmic height is now derived from the literal
+integer-offset product and unordered difference resultant; its prime
+budget is no longer merely an abstract height interface. Shared-prime
+divisibility and actual factorization parity prove that every linear
+kernel divides rad(q*D_A). This uses the existing checked parity product
+identity and elementary integer divisibility. No resultant/support
+estimate or extra literature input is assumed. The quadratic-kernel
+quotient and counting applications remain open; see
+[alignment](SPLIT_OFFSET_KERNEL_BUDGET_ALIGNMENT.md).

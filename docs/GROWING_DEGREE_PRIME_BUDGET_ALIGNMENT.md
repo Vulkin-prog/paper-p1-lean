@@ -56,11 +56,12 @@ The cubic error is proved negligible relative to log(N)loglog(N),
 uniformly in the actual n. This gives the same prime-support and
 exponential budgets. E may be negative; the bound remains valid.
 
-This height premise is not yet derived for the paper's actual q*D_A.
-The actual split-product resultant/parity bookkeeping, the restriction
-of two selected linear kernels to rad(q*D_A), their derived height,
-the selected quadratic enumeration and the full fixed-kernel count all
-remain to be proved. T5.2 stays in progress.
+At this historical checkpoint the height premise was not yet derived
+for the actual q*D_A. The subsequent
+[actual-offset checkpoint](SPLIT_OFFSET_KERNEL_BUDGET_ALIGNMENT.md)
+derives that height and the linear-kernel support restriction.
+The selected quadratic enumeration and full fixed-kernel count
+remain open. T5.2 stays in progress.
 
 No new unproved literature input, Paper C port, source-byte change or
 Palomar registration is introduced.

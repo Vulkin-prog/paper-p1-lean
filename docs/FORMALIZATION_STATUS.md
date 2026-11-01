@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3927 audited theorem/lemma declarations**. This
+- The project currently has **3950 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1728,3 +1728,23 @@ Budget verification: full build passed (9,573 jobs); actual axiom audit
 passed for 3,927 declarations; all 1,642 distinct ledger/finding names
 were checked directly. The 138 manifest entries and 167 result records
 remain intact; Ubuntu available space is 17.62 GiB.
+
+## Actual split-product/resultant heights and linear-kernel supports
+
+The literal product on finite integer offsets is positive and equals the
+signed source product in the actual range, including negative offsets.
+The unordered difference resultant is positive and bounded by
+(2W)^(d^2). The actual q*D_A has logarithmic height
+c loglogN log(3N)+c^2(log(2D)+A0)(loglogN)^3, so the previous prime
+and exponential budgets now apply to that actual integer. Private-prime
+parity proves each actual linear kernel divides rad(q*D_A).
+The quantitative product-of-quadratic-kernels quotient, prescribed
+divisor allocation, selected quadratic enumeration and full fixed-kernel
+count remain open. T5.2 remains in progress; coverage stays 56/167 and
+confirmed improvements stay 54. See
+[alignment](SPLIT_OFFSET_KERNEL_BUDGET_ALIGNMENT.md).
+
+Actual-offset verification: full build passed (9,579 jobs), the actual
+axiom audit passed for all 3,950 declarations, and all 1,665 distinct
+ledger/finding names were checked. The 138 source manifest entries and
+167 result records remain intact. Ubuntu available space: 17.60 GiB.

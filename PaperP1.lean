@@ -430,3 +430,9 @@ public import PaperP1.Arithmetic.PrimeFactorialBudget
 public import PaperP1.Asymptotics.GrowingDegreePrimeBudget
 
 public import PaperP1.Asymptotics.GrowingDegreePrimeError
+
+public import PaperP1.Arithmetic.SplitOffsetProducts
+
+public import PaperP1.Asymptotics.SplitOffsetHeightBudget
+
+public import PaperP1.Arithmetic.SplitOffsetSupports

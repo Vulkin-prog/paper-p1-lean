@@ -2667,3 +2667,12 @@ a fixed cubic-loglog height error. These close source proof ingredients;
 they are not claimed as a new mathematical improvement or a complete
 numbered result. The number of confirmed improvements remains 54.
 See [alignment](GROWING_DEGREE_PRIME_BUDGET_ALIGNMENT.md).
+
+## Actual split-product height and support checkpoint
+
+The previous growing-degree budget now applies to the literal q*D_A,
+including signed offsets. The private-prime argument also proves the
+actual linear-kernel support restriction. These verify source ingredients
+and add no new improvement entry or numbered-result completion. The
+confirmed-improvement count remains 54. See
+[alignment](SPLIT_OFFSET_KERNEL_BUDGET_ALIGNMENT.md).
