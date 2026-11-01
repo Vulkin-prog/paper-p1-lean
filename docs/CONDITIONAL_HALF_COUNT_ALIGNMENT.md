@@ -142,3 +142,9 @@ removes the critical-length input for every fixed logarithmic width using
 the proved canonical floor/log length. Main 10.3 is also complete, raising
 coverage to 64/167 while confirmed improvements remain 64. See
 [pair alignment](DEPENDENT_BLOCK_PAIRS_ALIGNMENT.md).
+
+P1-MATH-0065 further proves the same bound when each coordinate participates
+nontrivially in its own possibly different relative relation. Actual support
+extraction and simultaneous induction count this weaker predicate. See
+[the complete relative-participation extension](RELATIVE_PARTICIPATION_ALIGNMENT.md).
+Numbered coverage stays 64/167; confirmed improvements are now 65.

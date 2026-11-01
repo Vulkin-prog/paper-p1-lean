@@ -1584,3 +1584,18 @@ and their fixed factor is absorbed. A proved floor/log critical-length
 bridge supplies every fixed logarithmic width. No unproved pair count,
 new external theorem or Paper C port is introduced. Main 10.3 is complete;
 see [alignment](DEPENDENT_BLOCK_PAIRS_ALIGNMENT.md).
+
+## Relative participation and actual exposure populations
+
+Both actual support-splitting and successive-exposure populations are
+counted by genuine strong induction using the complete main 10.1 theorem.
+Actual finite fibres, full value unions under appended old sources, all
+split/bijection codes and fixed-factor absorption are proved. Actual
+canonical connectedness supplies a nonzero relation at each coordinate
+through the previously proved finest direct partition. No connected host,
+extension or relative target count is an unproved input. P1-MATH-0065
+records the broader relative predicate. Main 10.2 remains in progress for
+original-window family, primitive and actual independent-mass alignment.
+No new external theorem or Paper C port is introduced. See
+[relative proof](RELATIVE_PARTICIPATION_ALIGNMENT.md) and
+[remaining obligations](CONNECTED_FAMILY_ALIGNMENT.md).

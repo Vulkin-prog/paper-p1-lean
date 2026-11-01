@@ -43,6 +43,11 @@ and full squarefree kernels suffice in its iteration. See the
 Corollary 10.3 now counts actual dependent block pairs, including equal
 centres, for all fixed logarithmic widths. See the
 [complete pair-count alignment](docs/DEPENDENT_BLOCK_PAIRS_ALIGNMENT.md).
+The half-count also holds under separate coordinate-wise relative relations.
+Generic connected block tuples are counted from their canonical partition;
+main 10.2 remains in progress for original-window families and independent
+mass. See [the relative extension](docs/RELATIVE_PARTICIPATION_ALIGNMENT.md)
+and [connected-family scope](docs/CONNECTED_FAMILY_ALIGNMENT.md).
 Companion T1.9 now covers the full enlarged geometric alignment, including
 zero exact units and both orientations, with its fixed-height enlarged-prime
 rate. The earlier one-unit coverage error and its subsequent closure are

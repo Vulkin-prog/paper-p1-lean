@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**64 mathematical improvements are confirmed; no error in a manuscript conclusion
+**65 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -2862,3 +2862,20 @@ active centres. Explicit fixed-logarithmic-width versions of both results
 are proved. This adds no independent mathematical finding; the confirmed
 count remains 64 and numbered coverage is now 64/167. See
 [pair alignment](DEPENDENT_BLOCK_PAIRS_ALIGNMENT.md).
+
+## P1-MATH-0065 — Separate coordinate relations suffice for the relative half-count
+
+The full half-count holds when each new coordinate participates nontrivially
+in some relation modulo the full old span. Different coordinates may use
+different relations, with zero projections at other new coordinates. The
+actual nonzero support of one relation is counted by complete 10.1; its full
+value blocks are adjoined to the old sources. Exact sums preserve relative
+participation for all remaining coordinates. Strong induction supplies every
+actual remaining population uniformly in all old-source counts.
+
+Canonical connectedness supplies a nonzero relation at every coordinate,
+without asserting one global full-support relation. Actual generic connected
+block tuples are therefore counted. The original-window/set-family and
+independent-mass/primitive alignment in main 10.2 is still open, so coverage
+remains 64/167. See [relative participation](RELATIVE_PARTICIPATION_ALIGNMENT.md)
+and [connected-family progress](CONNECTED_FAMILY_ALIGNMENT.md).

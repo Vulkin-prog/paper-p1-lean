@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4465 audited theorem/lemma declarations**. This
+- The project currently has **4501 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2063,3 +2063,22 @@ Coverage is 64/167 (main 21/73, companion 43/94), with 64 confirmed
 improvements. See [complete alignment](DEPENDENT_BLOCK_PAIRS_ALIGNMENT.md).
 
 Dependent-pair verification checkpoint: Lean v4.36.0-rc2 full build passed (9,805 jobs); actual axiom audit passed for all 4,465 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,180 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.23 GiB. Coverage is 64/167 and confirmed findings remain 64; no new external input, Paper C port, manuscript-byte change or Palomar registration.
+
+## Relative participation and generic connected tuples
+
+P1-MATH-0065 strengthens the relative half-count to allow a separate
+participating relation at each new coordinate. Actual support extraction,
+enlarged-old-span preservation, exact fibres and all finite split classes
+are counted by simultaneous strong induction with fewer targets and all
+old-source counts. The actual canonical direct partition supplies these
+relations for every coordinate of a connected family of at least two
+blocks. Thus actual generic connected block tuples have the full half-count.
+
+Actual successive-exposure populations and their full counts are also
+proved. Main 10.2 remains in progress for original-window/set-family,
+primitive and independent-mass alignment. Coverage stays 64/167 (main
+21/73, companion 43/94), with 65 confirmed improvements. See
+[relative participation](RELATIVE_PARTICIPATION_ALIGNMENT.md) and
+[connected-family scope](CONNECTED_FAMILY_ALIGNMENT.md).
+
+Verification checkpoint: Lean v4.36.0-rc2 full build passed (9,821 jobs); actual axiom audit passed for all 4,501 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,216 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.20 GiB. No unproved group, extension or target count, new external input, Paper C port, manuscript-byte change or Palomar registration. Coverage remains 64/167; confirmed improvements are 65; main 10.2 is still in progress.

@@ -662,3 +662,19 @@ public import PaperP1.Asymptotics.ActiveBlockCentresCount
 public import PaperP1.Asymptotics.DependentBlockPairsCount
 
 public import PaperP1.Asymptotics.LogarithmicBlockGeometry
+
+public import PaperP1.Arithmetic.EffectiveExposure
+
+public import PaperP1.Asymptotics.EffectiveExposureCount
+
+public import PaperP1.Arithmetic.RelativeBlockRelations
+
+public import PaperP1.Asymptotics.RelativeBlockRelationsCount
+
+public import PaperP1.Affine.ConnectedRelations
+
+public import PaperP1.Arithmetic.FiniteBlockAppend
+
+public import PaperP1.Arithmetic.ConnectedBlockLists
+
+public import PaperP1.Asymptotics.ConnectedBlockCount
