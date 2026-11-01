@@ -831,3 +831,15 @@ actual single/double reference. The total variation test and size-bias
 identities are proved internally for actual probability measures.
 The previously inspected Paper C modules are still not ported.
 See [alignment](SCALAR_RECURRENCE_ALIGNMENT.md).
+
+## Companion T20.7 — Exact covered-rank comparison
+
+The coordinate restriction, graph reduction, component encoding and
+proper-pair rigidity are closed internal proofs. The finite small-prime
+target has dimension pi(H)+2 for every omitted block, including singleton
+components, so no separate defective-count estimate is needed. The
+critical-band constant uses the already proved elementary Chebyshev
+bound; no external prime theorem or rank estimate is an input. The
+existing attributed pinned-graph equivalence is reused through its
+checked P1 interface, with no new Paper C port. See
+[alignment](COVER_RANK_ALIGNMENT.md).

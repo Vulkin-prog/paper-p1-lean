@@ -4,7 +4,10 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 44 / 167 numbered results proved.**
+**Status: active formalization, 45 / 167 numbered results proved.**
+Companion T20.7 proves the actual covered three-window rank comparison,
+its explicit finite component bound and the square-product assertion. See
+[statement alignment](docs/COVER_RANK_ALIGNMENT.md).
 Companion T19.11 is proved with a constructed Stein solution, both unit
 factor bounds, the actual single/double Poisson reference and the exact
 size-bias identity. See [statement alignment](docs/SCALAR_RECURRENCE_ALIGNMENT.md).

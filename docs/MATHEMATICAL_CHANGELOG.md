@@ -1178,3 +1178,41 @@ are preserved; no manuscript revision or Palomar registration is made.
 
 Validated implementation of companion T19.11 and P1-MATH-0031:
 [9ca5f8aecbbc79ecd99b0658bf2cb37fa414f842](https://github.com/Vulkin-prog/paper-p1-lean/commit/9ca5f8aecbbc79ecd99b0658bf2cb37fa414f842).
+
+## P1-MATH-0032 — A finite cover bound including singleton components
+
+- Location: companion Lemma T20.7, page 84, `p1:offset:cover-rank`,
+  `companion_sections/offset_geometry.tex:271`; original statement hash
+  `3ee81e33259f97340c3f952b3d45dabdc65d472d4c67f1c0bedd44538fa460f1`.
+- Original proof: isolated free components require a defective-vertex
+  estimate; exactly two-block components are bounded separately. The
+  section assumes separated windows and C0>1.
+- Improvement: all free components missing one specified block number
+  at most pi(H)+2, including singletons. Their independent coefficients
+  inject into the actual small-prime coordinates and two block parities.
+  Thus dim(R_D)<=c3(D)+3*pi(H)+6 holds finitely, with no separate
+  defective-count term. H>=B suffices; C0=1 and overlapping windows
+  are allowed under local injectivity and pairwise directness.
+- Evidence: `ColoredPrimeConstraints.selection_kernel_trivial`,
+  `missing_components_card_bound`, `ThreeBlockRigidity.pairwise_rigid`,
+  `TripleCoverRank.finite_rank_bound`, `companion_T20_7` and
+  `CoverRankPrimeBudget.finite_budget`.
+- Suggested revision: group every component avoiding one block under
+  the same small-prime/two-parity argument; state the finite bound and
+  retain injectivity and pairwise directness when weakening separation
+  and the strict cutoff condition. No optimality or primitive-host
+  estimate is asserted.
+
+All source conclusions of T20.7 are proved. The cover is the actual
+shared-prime hyperedge cover, the graph space equality and coordinate
+cost are explicit, and every free component's positive product is a
+small-prime product times a square. One explicit constant and one
+critical-band threshold precede all triple and cover choices. See
+[alignment](COVER_RANK_ALIGNMENT.md).
+
+The full Lean v4.36.0-rc2 build passed (9,135 jobs), and all 2,927
+theorem/lemma declarations passed the actual axiom audit with only
+`propext`, `Classical.choice` and `Quot.sound`. All 700 distinct
+coverage/finding names were checked directly by Lean. Coverage is
+45 / 167, with 32 confirmed improvements. Original source bytes are
+preserved; no revised manuscript or Palomar registration is made.

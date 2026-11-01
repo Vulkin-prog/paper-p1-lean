@@ -1055,6 +1055,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "9ca5f8aecbbc79ecd99b0658bf2cb37fa414f842"
+    },
+    {
+      "id": "P1-MATH-0032",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "companion",
+        "label": "p1:offset:cover-rank",
+        "number": "T20.7",
+        "page": 84,
+        "source": "companion_sections/offset_geometry.tex",
+        "line": 271,
+        "version": "P1 V1.6",
+        "statement_sha256": "3ee81e33259f97340c3f952b3d45dabdc65d472d4c67f1c0bedd44538fa460f1"
+      },
+      "original_assumption": "T20.7 is stated for separated primitive regular triples with H=C0*B, C0>1. Its proof bounds singleton free components by an additional defective-vertex estimate, and then bounds components meeting exactly two blocks by pi(H)+2 for each pair.",
+      "finding": "Under local even-map injectivity and pairwise directness, all free components missing one specified block, including singletons, number at most pi(H)+2. Their component coefficients inject into the actual small-prime coordinates and the two remaining block parities. Consequently dim(R_D)<=c3(D)+3*(pi(H)+2) holds as a finite bound, with no defective-vertex estimate. This needs only H>=B and positive windows starting at least two; no physical separation is needed. The critical-band conclusion therefore includes C0=1 and overlapping triples under the retained injectivity/directness hypotheses.",
+      "evidence": [
+        "PaperP1.ColoredPrimeConstraints.selection_kernel_trivial",
+        "PaperP1.ColoredPrimeConstraints.missing_components_card_bound",
+        "PaperP1.ThreeBlockRigidity.pairwise_rigid",
+        "PaperP1.TripleCoverRank.finite_rank_bound",
+        "PaperP1.TripleCoverRank.companion_T20_7",
+        "PaperP1.CoverRankPrimeBudget.finite_budget"
+      ],
+      "proposed_revision": "Group every unpinned component missing one of the three blocks, including isolated components, under the same small-prime and two-parity rank argument. State the finite bound dim(R_D)<=c3(D)+3*pi(H)+6. Permit H>=B, and omit separation when the stated local injectivity and pairwise directness are retained; the original fixed-ratio conclusion then includes C0=1.",
+      "impact": "Removes the separate defect-count term and its asymptotic input from this rank comparison, gives an explicit finite bound and weakens the separation/cutoff hypotheses. The full three-block relation space need not be direct. No primitive-host count, mass estimate or optimality claim is added.",
+      "validation": "Full Lean v4.36.0-rc2 build (9135 jobs) and actual axiom audit of all 2927 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 700 distinct coverage/finding names were checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
