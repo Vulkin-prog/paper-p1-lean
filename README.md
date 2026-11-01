@@ -9,6 +9,9 @@ The coefficient part of T2.6 is checked, including exact leading-channel
 values and attainment of the universal 2/3 bound in channel 8:9. Its
 aligned-target rank estimate remains open. See
 [partial alignment](docs/FIXED_CHANNEL_GAMMA_ALIGNMENT.md).
+The matching divisibility classes also have an explicit two-sided error
+of at most three offsets, with separate physical-fraction classification.
+See [finite matching checkpoint](docs/FIXED_CHANNEL_MATCHES_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,
 with deduplicated normalized values, an explicit finite rank bound and at
 most (L+1)^2 one-parameter motifs. See

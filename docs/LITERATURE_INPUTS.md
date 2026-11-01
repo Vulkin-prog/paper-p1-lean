@@ -891,3 +891,14 @@ and the 8:9 value follows from a literal eligible fraction plus the
 universal upper bound. No numerical search or actual-rank estimate is
 an input. The remainder of T2.6 remains open; no external premise is
 introduced for it. See [partial alignment](FIXED_CHANNEL_GAMMA_ALIGNMENT.md).
+
+
+## T2.6 and T1.11 — Finite affine matching classes
+
+One-class lower and upper counts follow from the exact integer-ceiling
+formula in Mathlib. Integer Bezout coefficients supply the affine
+residue, and proved gcd/lcm identities identify the intersection class.
+Finite inclusion-exclusion yields the uniform two-sided error at most
+3. No CRT counting estimate, asymptotic O(1) premise or actual-rank
+identity is assumed. The remaining arithmetic/rank bridges are open.
+See [partial alignment](FIXED_CHANNEL_MATCHES_ALIGNMENT.md).

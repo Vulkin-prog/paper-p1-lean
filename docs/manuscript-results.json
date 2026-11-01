@@ -1641,11 +1641,18 @@
       "source": "companion_sections/arithmetic_appendix.tex",
       "line": 861,
       "sha256": "f5c10336a982eb463bd69da026b36971a8d8bbede48fd0ad27463a97cfe6a307",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.FixedChannelMatches.window_match_two_three",
+        "PaperP1.FixedChannelMatches.window_match_three_four",
+        "PaperP1.FixedChannelMatches.physical_fraction_of_divisor",
+        "PaperP1.UnionMatchDensity.abs_match_error"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0037"
+      ],
+      "notes": "Only the finite divisibility-class counting core is proved: B/3+3 and B/2+3 in the nonphysical strict interior, plus the physical-fraction classification. The actual matching bridge, residual rank, endpoint exception count and old-information extension remain open. T1.11 is not counted complete. See docs/FIXED_CHANNEL_MATCHES_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:fixed-homogeneous-seeds",
@@ -1926,13 +1933,36 @@
         "PaperP1.FixedChannelGamma.gammaReal_le_two_thirds",
         "PaperP1.FixedChannelGamma.gammaReal_two_three",
         "PaperP1.FixedChannelGamma.gammaReal_three_four",
-        "PaperP1.FixedChannelGamma.gammaReal_eight_nine"
+        "PaperP1.FixedChannelGamma.gammaReal_eight_nine",
+        "PaperP1.IntervalResidueError.lower_bound",
+        "PaperP1.IntervalResidueError.abs_error",
+        "PaperP1.AffineResidueClasses.exists_solution",
+        "PaperP1.AffineResidueClasses.affine_iff_modEq",
+        "PaperP1.AffineResidueClasses.solutions_eq_residue",
+        "PaperP1.AffineResidueClasses.abs_error",
+        "PaperP1.UnionMatchDensity.divisible_lcm_iff",
+        "PaperP1.UnionMatchDensity.solutions_intersection",
+        "PaperP1.UnionMatchDensity.union_abs_error",
+        "PaperP1.UnionMatchDensity.gcd_quotient_moduli",
+        "PaperP1.UnionMatchDensity.reciprocal_of_product",
+        "PaperP1.UnionMatchDensity.reciprocal_density_identity",
+        "PaperP1.UnionMatchDensity.abs_match_error",
+        "PaperP1.UnionMatchDensity.window_match_upper",
+        "PaperP1.FixedChannelMatches.large_numerator_density_lt_base",
+        "PaperP1.FixedChannelMatches.density_le_gamma_all",
+        "PaperP1.FixedChannelMatches.window_match_gamma",
+        "PaperP1.FixedChannelMatches.real_abs_match_error",
+        "PaperP1.FixedChannelMatches.window_match_gamma_real",
+        "PaperP1.FixedChannelMatches.window_match_two_three",
+        "PaperP1.FixedChannelMatches.window_match_three_four",
+        "PaperP1.FixedChannelMatches.physical_fraction_of_divisor"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
-        "P1-MATH-0036"
+        "P1-MATH-0036",
+        "P1-MATH-0037"
       ],
-      "notes": "The finite coefficient is defined exactly, with the implicit denominator range made finite and a literal real maximum proved. Its universal bound gamma<=2/3 is proved, with gamma_2:3=1/3, gamma_3:4=1/2 and gamma_8:9=2/3. The latter shows sharpness of this coefficient bound, not of an actual rank-loss or Palm exponent. The aligned-target rank estimate, endpoint exceptions and old-prime extension remain open, so T2.6 is not counted complete. See docs/FIXED_CHANNEL_GAMMA_ALIGNMENT.md.",
+      "notes": "The finite coefficient is defined exactly, with the implicit denominator range made finite and a literal real maximum proved. Its universal bound gamma<=2/3 is proved, with gamma_2:3=1/3, gamma_3:4=1/2 and gamma_8:9=2/3. The latter shows sharpness of this coefficient bound, not of an actual rank-loss or Palm exponent. The aligned-target rank estimate, endpoint exceptions and old-prime extension remain open, so T2.6 is not counted complete. See docs/FIXED_CHANNEL_GAMMA_ALIGNMENT.md. The two affine divisibility classes now have a uniform two-sided error at most 3 in every integer interval; the global gamma bound covers all nonphysical interior fractions and physical divisor fractions are classified. Actual target-value matches, residual rank and endpoint counts remain open. See docs/FIXED_CHANNEL_MATCHES_ALIGNMENT.md.",
       "validation_commit": "b9ff1b2874b76ba8fe97e314db236980b2fe6e13"
     },
     {

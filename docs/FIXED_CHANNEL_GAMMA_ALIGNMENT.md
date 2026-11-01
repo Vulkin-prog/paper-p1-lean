@@ -59,3 +59,13 @@ or Palomar registration is used at this checkpoint.
 
 Validated coefficient checkpoint for T2.6 and P1-MATH-0036:
 [b9ff1b2874b76ba8fe97e314db236980b2fe6e13](https://github.com/Vulkin-prog/paper-p1-lean/commit/b9ff1b2874b76ba8fe97e314db236980b2fe6e13).
+
+
+## Finite matching-count continuation
+
+The coefficient is now connected to the literal union of the two affine
+divisibility classes, with a uniform two-sided error at most 3 and a
+global numerator reduction. The physical divisor fractions are handled
+separately at the fraction-classification stage. The actual target-match
+and residual-rank bridges remain open. See the
+[finite matching checkpoint](FIXED_CHANNEL_MATCHES_ALIGNMENT.md).

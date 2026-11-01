@@ -1235,6 +1235,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "b9ff1b2874b76ba8fe97e314db236980b2fe6e13"
+    },
+    {
+      "id": "P1-MATH-0037",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "companion",
+        "label": "p1:arith:fixed-channel-rank",
+        "number": "T2.6",
+        "page": 22,
+        "source": "companion_sections/supplemental_arithmetic.tex",
+        "line": 209,
+        "version": "P1 V1.6",
+        "statement_sha256": "8dd614c19e50df20ed1eb9f3ab37c07386f1ce3665c3499e26d83211ceab60b9"
+      },
+      "original_assumption": "The proofs of T2.6 and T1.11 bound the union of the two affine matching residue classes by B*(gcd(c,a)+gcd(c,b)-1)/c+O(1). The finite error and the intersection class are left implicit.",
+      "finding": "For every integer interval [lo,hi), every integer shift h and natural coprime a,b and c,d with c>0, the actual union of c/gcd(c,a) | h+d*k and c/gcd(c,b) | h+d*k has absolute error at most 3 from (hi-lo)*(gcd(c,a)+gcd(c,b)-1)/c. The intersection is exactly the class modulo c. The bound is uniform with no height restriction. Consequently the nonphysical interior window counts are <=B*gamma+3, including all numerators beyond the finite gamma cutoff, and specialize to B/3+3 and B/2+3 in the leading channels.",
+      "evidence": [
+        "PaperP1.IntervalResidueError.abs_error",
+        "PaperP1.AffineResidueClasses.solutions_eq_residue",
+        "PaperP1.UnionMatchDensity.solutions_intersection",
+        "PaperP1.UnionMatchDensity.abs_match_error",
+        "PaperP1.FixedChannelMatches.real_abs_match_error",
+        "PaperP1.FixedChannelMatches.large_numerator_density_lt_base",
+        "PaperP1.FixedChannelMatches.window_match_gamma",
+        "PaperP1.FixedChannelMatches.window_match_two_three",
+        "PaperP1.FixedChannelMatches.window_match_three_four",
+        "PaperP1.FixedChannelMatches.physical_fraction_of_divisor"
+      ],
+      "proposed_revision": "Insert the finite affine residue-class lemma before the asymptotic rank argument, with the exact intersection modulus and absolute error at most 3. Keep the bridge from actual old/new value matches and the residual-rank estimate as distinct steps, and retain the separate physical fractions.",
+      "impact": "Gives an explicit two-sided finite remainder uniform in every integer parameter, with literal window length B=L+1 and no height extrapolation. It proves a divisibility-class count, not equality with an actual rank loss; T2.6 and T1.11 remain in_progress. No optimality claim for the error constant is made.",
+      "validation": "Full Lean v4.36.0-rc2 build (9203 jobs) and actual axiom audit of all 3123 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 838 distinct coverage/finding declaration names were checked directly by Lean. T2.6 and T1.11 remain in_progress and neither is counted complete.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

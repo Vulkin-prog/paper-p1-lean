@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3101 audited theorem/lemma declarations**. This
+- The project currently has **3123 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -688,3 +688,26 @@ free space is 18.16 GiB.
 
 Validated coefficient checkpoint for T2.6 and P1-MATH-0036:
 [b9ff1b2874b76ba8fe97e314db236980b2fe6e13](https://github.com/Vulkin-prog/paper-p1-lean/commit/b9ff1b2874b76ba8fe97e314db236980b2fe6e13).
+
+
+## Uniform finite matching classes — partial T2.6 and T1.11
+
+The two actual affine divisibility classes now have a two-sided error
+at most 3 from interval length times their exact gcd density. Integer
+Bezout coefficients identify each class, the intersection is exactly
+the class modulo c, and finite inclusion-exclusion controls the error.
+The bound is uniform in every integer parameter with no height cutoff.
+The global density bound includes numerators beyond the finite gamma
+range, giving B*gamma+3 and the two leading B/3+3, B/2+3 bounds.
+Physical divisor fractions are classified separately as c=a or c=b,
+d=1. This explicit finite remainder is P1-MATH-0037. See
+[partial alignment](FIXED_CHANNEL_MATCHES_ALIGNMENT.md).
+
+These are divisibility-class counts. Their bridge from actual old/new
+value coincidences, physical true-window counting, residual rank and
+endpoint-source estimates remain open. T2.6 and T1.11 are in progress
+and neither is counted complete. The full build passed (9,203 jobs),
+as did the actual axiom audit of all 3,123 theorem/lemma declarations
+and all 838 coverage/finding names. Coverage remains 48 / 167, with
+37 confirmed improvements. Original sources are preserved; no Palomar
+registration is made. Ubuntu root free space is 18.15 GiB.

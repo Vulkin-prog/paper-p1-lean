@@ -253,3 +253,7 @@ public import PaperP1.Arithmetic.CompressionRank
 public import PaperP1.Arithmetic.GoodEdgeCompression
 public import PaperP1.Arithmetic.ChannelMatchDensity
 public import PaperP1.Arithmetic.FixedChannelGamma
+public import PaperP1.Arithmetic.IntervalResidueError
+public import PaperP1.Arithmetic.AffineResidueClasses
+public import PaperP1.Arithmetic.UnionMatchDensity
+public import PaperP1.Arithmetic.FixedChannelMatches

@@ -1377,3 +1377,40 @@ preserved; no manuscript revision or Palomar registration is made.
 
 Validated coefficient checkpoint for T2.6 and P1-MATH-0036:
 [b9ff1b2874b76ba8fe97e314db236980b2fe6e13](https://github.com/Vulkin-prog/paper-p1-lean/commit/b9ff1b2874b76ba8fe97e314db236980b2fe6e13).
+
+
+## P1-MATH-0037 — A uniform finite error of three matching offsets
+
+- Location: proofs of companion T2.6, page 22,
+  `p1:arith:fixed-channel-rank`, and T1.11's matching-density formula.
+  Primary statement hash:
+  `8dd614c19e50df20ed1eb9f3ab37c07386f1ce3665c3499e26d83211ceab60b9`.
+- Original form: the union of the two matching residue classes has
+  count at most B*(gcd(c,a)+gcd(c,b)-1)/c+O(1).
+- Improvement: on every integer interval the absolute error from
+  its length times that density is at most 3, uniformly in the
+  shift and all natural parameters with the stated coprimalities.
+  No upper height condition is required. The intersection is the
+  exact affine class modulo c.
+- Evidence: `IntervalResidueError.abs_error`,
+  `AffineResidueClasses.solutions_eq_residue`,
+  `UnionMatchDensity.solutions_intersection`, `abs_match_error`,
+  `FixedChannelMatches.real_abs_match_error`, `window_match_gamma`,
+  `window_match_two_three`, `window_match_three_four` and
+  `physical_fraction_of_divisor`.
+- Suggested revision: give this finite class-count lemma before the
+  asymptotic rank argument. State B*gamma+3, including the global
+  numerator reduction, and retain a separate argument for physical
+  fractions and for actual rank. No optimality claim for 3 is made.
+
+The counted object is exactly the union of divisibility classes. Its
+bridge from actual old/new value matches and the residual-rank estimate
+remain open. Neither T2.6 nor T1.11 is counted complete. See
+[alignment](FIXED_CHANNEL_MATCHES_ALIGNMENT.md).
+
+The full Lean v4.36.0-rc2 build passed (9,203 jobs), and all 3,123
+theorem/lemma declarations passed the actual axiom audit with only
+`propext`, `Classical.choice` and `Quot.sound`. All 838 distinct
+coverage/finding names were checked directly by Lean. Coverage remains
+48 / 167, with 37 confirmed improvements. Original source bytes are
+preserved; no manuscript revision or Palomar registration is made.
