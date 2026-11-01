@@ -540,3 +540,27 @@ public import PaperP1.Asymptotics.SquareTupleCount
 public import PaperP1.Combinatorics.FiniteRefinementCount
 
 public import PaperP1.Model.SplitSumLp
+
+public import PaperP1.Affine.ProjectedCharacterTuples
+
+public import PaperP1.Affine.ProjectionDensity
+
+public import PaperP1.Affine.ProjectionHolder
+
+public import PaperP1.Arithmetic.ShortProjectedLists
+
+public import PaperP1.Asymptotics.FixedProjectedMotifs
+
+public import PaperP1.Asymptotics.ShortMotifBudget
+
+public import PaperP1.Asymptotics.ShortOldSpaceProjection
+
+public import PaperP1.Combinatorics.BoundedIntegerMotifs
+
+public import PaperP1.Model.FiniteSplitLp
+
+public import PaperP1.Model.OldSpaceProjection
+
+public import PaperP1.Model.ProjectedSplitTuples
+
+public import PaperP1.Probability.FiniteHolder

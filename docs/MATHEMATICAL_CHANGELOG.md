@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**59 mathematical improvements are confirmed; no error in a manuscript conclusion
+**60 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -2784,3 +2784,18 @@ All profiles, prescribed centre counts, factor assignments, state
 transitions and the last fixed-kernel fibre are proved and summed. No
 count estimate is assumed. Proposition 9.1 is complete; 9.2 remains open.
 Coverage is 58/167. See [alignment](SHORT_MOMENT_ENUMERATION_ALIGNMENT.md).
+
+## P1-MATH-0060 — Only the number of old generators is needed in 9.2
+
+The complete projected-list estimate is proved for any old generator set
+of cardinality <=E*logN, independently of its geometry or value heights.
+The old space is the full square-class span. Its density is positive with
+exact mean and moments; the Holder cost is <=(2^|O|)^(r/v), absorbed by a
+sufficiently large fixed even v. The actual 9.1 Lp bound then chooses c>0.
+All short motifs and actual projected lists are counted, including repeated
+centres and arbitrary fixed polylogarithmic widths. The source critical
+block version follows from the union cardinality, with signed-product
+positivity verified uniformly. No count or analytic inequality is assumed.
+
+Corollary 9.2 is complete; coverage is 59/167. See
+[alignment](SHORT_OLD_SPACE_PROJECTION_ALIGNMENT.md).

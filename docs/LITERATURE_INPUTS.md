@@ -1481,3 +1481,19 @@ The exact infinite-measure moment identity and actual Lp formula complete
 Proposition 9.1. The broader finite centre-set/width scope and explicit c
 are P1-MATH-0059. No additional literature theorem or Paper C port is used.
 See [complete alignment](SHORT_MOMENT_ENUMERATION_ALIGNMENT.md).
+
+## Complete short old-space projection count
+
+The positive old-space character density and its exact moments follow from
+proved character orthogonality. The finite weighted multi-factor Holder
+inequality is derived from Mathlib's proved ENNReal integral inequality,
+including the zero cases. Actual finite-cylinder norm roots equal the
+unrestricted split-sum Lp norms from 9.1. The full old value span and its
+character image are identified on a constructed common cutoff. Actual
+bounded integer motifs are counted using the proved finite subset-weight
+bound, and the complete projected-list cover is summed uniformly.
+
+No old-space projection, motif count, Holder estimate, norm transfer or
+old-generator height bound is an unproved input. The broader scope is
+P1-MATH-0060; no new Paper C port or literature assumption is introduced.
+See [complete alignment](SHORT_OLD_SPACE_PROJECTION_ALIGNMENT.md).
