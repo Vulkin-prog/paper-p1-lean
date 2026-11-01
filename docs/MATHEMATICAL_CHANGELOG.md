@@ -2855,3 +2855,10 @@ width; empty old blocks can be recentered without changing their full
 span. Actual even selections, absolute nonzero vectors and unrestricted
 old spans are preserved. Full main 10.1 is complete, bringing coverage
 to 63/167. See [complete alignment](CONDITIONAL_HALF_COUNT_ALIGNMENT.md).
+
+P1-MATH-0064 consequence: main Corollary 10.3 is now fully instantiated
+from 10.1. Actual equal-centre pairs are also counted separately through
+active centres. Explicit fixed-logarithmic-width versions of both results
+are proved. This adds no independent mathematical finding; the confirmed
+count remains 64 and numbered coverage is now 64/167. See
+[pair alignment](DEPENDENT_BLOCK_PAIRS_ALIGNMENT.md).

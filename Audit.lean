@@ -886,6 +886,12 @@ import PaperP1
 #print axioms PaperP1.DefectivePredicate.canonical_odd_mul_sq_decomposition
 #print axioms PaperP1.DefectivePredicate.oddPrimeSupport_subset_smallPrimesUpTo
 #print axioms PaperP1.DefectivePredicate.hDefective_iff_exists_HDefectRepresentation
+#print axioms PaperP1.DependentBlockPairs.dependent_iff_intersection
+#print axioms PaperP1.DependentBlockPairs.tuple_injective
+#print axioms PaperP1.DependentBlockPairs.off_diagonal_in_effective
+#print axioms PaperP1.DependentBlockPairs.off_diagonal_count
+#print axioms PaperP1.DependentBlockPairs.diagonal_count
+#print axioms PaperP1.DependentBlockPairs.split_count
 #print axioms PaperP1.DivisorSubpolynomial.factorization_le_binary_log
 #print axioms PaperP1.DivisorSubpolynomial.local_divisor_pow_le_prime_pow
 #print axioms PaperP1.DivisorSubpolynomial.card_small_primeFactors_le
@@ -1998,6 +2004,7 @@ import PaperP1
 #print axioms PaperP1.WindowPoolCount.card_fixed_offset_le
 #print axioms PaperP1.WindowPoolCount.sum_supportedIndices_le
 #print axioms PaperP1.WindowPoolCount.sum_supportedIndices_dyadic
+#print axioms PaperP1.ActiveBlockCentresCount.uniform_count
 #print axioms PaperP1.ActualPrescribedDivisorBudget.actual_outside_height
 #print axioms PaperP1.ActualPrescribedDivisorBudget.actual_outside_divisor_count
 #print axioms PaperP1.AlignedPairRank.units_residual_bound
@@ -2113,6 +2120,8 @@ import PaperP1
 #print axioms PaperP1.CriticalPolynomialScale.source_size_eventually
 #print axioms PaperP1.CriticalWindowGeometry.uniform_geometry
 #print axioms PaperP1.CriticalWindowGeometry.log_base_lower
+#print axioms PaperP1.DependentBlockPairsCount.article_10_3
+#print axioms PaperP1.DependentBlockPairsCount.uniform_logarithmic_count
 #print axioms PaperP1.DyadicMatchingArithmetic.uniform_core
 #print axioms PaperP1.DyadicQuadraticBudgets.dyadic_bounds
 #print axioms PaperP1.DyadicQuadraticBudgets.mem_indices
@@ -2298,6 +2307,8 @@ import PaperP1
 #print axioms PaperP1.LogSquaredPrimePool.windowEnvelope_ge_one
 #print axioms PaperP1.LogSquaredPrimePool.raw_budget_le_envelope
 #print axioms PaperP1.LogSquaredPrimePool.actual_pool_count_critical
+#print axioms PaperP1.LogarithmicBlockGeometry.length_band
+#print axioms PaperP1.LogarithmicBlockGeometry.width_transfer
 #print axioms PaperP1.LogarithmicWindowCap.cap_div_log_tendsto
 #print axioms PaperP1.LogarithmicWindowCap.cap_tendsto_atTop
 #print axioms PaperP1.LogarithmicWindowCap.cap_div_nat_tendsto
@@ -2551,6 +2562,7 @@ import PaperP1
 #print axioms PaperP1.uniformLittleOOn_zero
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
 #print axioms PaperP1.ValueHeightHalfCount.article_10_1
+#print axioms PaperP1.ValueHeightHalfCount.uniform_logarithmic_count
 #print axioms PaperP1.VerySmallTail.moment_bound
 #print axioms PaperP1.VerySmallTail.power_threshold
 #print axioms PaperP1.VerySmallTail.companion_T19_6

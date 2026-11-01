@@ -1573,3 +1573,14 @@ critical-band width transfer are proved. There is no unproved asymptotic
 count or new literature input. Main 10.1 is now complete; P1-MATH-0064
 records the constant-cutoff/full-squarefree proof improvement. No new Paper C
 port is introduced. See [complete alignment](CONDITIONAL_HALF_COUNT_ALIGNMENT.md).
+
+## Complete dependent block pair count
+
+Off-diagonal pairs are injected into the actual r=2, s=0 main 10.1 list
+set using the proved characteristic-two equality u+u=0. Diagonal pairs
+inject into actual active centres, whose heights and cardinalities are
+proved from literal block values and radii. Both actual classes are summed
+and their fixed factor is absorbed. A proved floor/log critical-length
+bridge supplies every fixed logarithmic width. No unproved pair count,
+new external theorem or Paper C port is introduced. Main 10.3 is complete;
+see [alignment](DEPENDENT_BLOCK_PAIRS_ALIGNMENT.md).

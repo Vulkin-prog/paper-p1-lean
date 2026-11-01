@@ -136,3 +136,9 @@ improvements.
 Lean v4.36.0-rc2 full build passed (9,797 jobs); actual axiom audit passed for all 4,453 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,168 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.24 GiB. No unproved local or target count, new literature input, new Paper C port, manuscript-byte change or Palomar registration.
 
 Proof checkpoint: [4b6397f3dda595939efcf044b2459e6945983df2](https://github.com/Vulkin-prog/paper-p1-lean/commit/4b6397f3dda595939efcf044b2459e6945983df2).
+
+Subsequent consequence: `ValueHeightHalfCount.uniform_logarithmic_count`
+removes the critical-length input for every fixed logarithmic width using
+the proved canonical floor/log length. Main 10.3 is also complete, raising
+coverage to 64/167 while confirmed improvements remain 64. See
+[pair alignment](DEPENDENT_BLOCK_PAIRS_ALIGNMENT.md).

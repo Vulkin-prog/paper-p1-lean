@@ -2,6 +2,7 @@ module
 
 public import PaperP1.Asymptotics.EffectiveHalfCount
 public import PaperP1.Asymptotics.BlockCentreHeights
+public import PaperP1.Asymptotics.LogarithmicBlockGeometry
 
 /-! # Main 10.1 with actual value heights and arbitrary finite candidate centres
 
@@ -72,5 +73,26 @@ theorem article_10_1 (r s : ℕ) (a b D Cband ε : ℝ)
   exact (show ((lists G blocks (univ.biUnion oldBlocks)).card : ℝ) ≤
     ((lists G' blocks (univ.biUnion oldBlocks)).card : ℝ) by exact_mod_cast card_le_card hsub).trans
     (hNI N (by omega) L old' G' blocks oldBlocks hband hG' hold' hdist' holdDist')
+
+theorem uniform_logarithmic_count (r s : ℕ) (a b E ε : ℝ)
+    (ha : 0 < a) (hE : 0 ≤ E) (hε : 0 < ε) :
+    ∃ N₀ : ℕ, ∀ N ≥ N₀, ∀ old : Fin s → ℕ, ∀ G : Finset ℕ,
+      ∀ blocks : Fin r → ℕ → Finset ℕ, ∀ oldBlocks : Fin s → Finset ℕ,
+      (∀ i, ∀ x ∈ G, ∀ v ∈ blocks i x, a * N ≤ v ∧ (v : ℝ) ≤ b * N) →
+      (∀ k, ∀ v ∈ oldBlocks k, a * N ≤ v ∧ (v : ℝ) ≤ b * N) →
+      (∀ i, ∀ x ∈ G, ∀ v ∈ blocks i x, (((v : ℤ) - x).natAbs : ℝ) ≤ E * Real.log N) →
+      (∀ k, ∀ v ∈ oldBlocks k, (((v : ℤ) - old k).natAbs : ℝ) ≤ E * Real.log N) →
+      ((PaperP1.EffectiveWindowLists.lists G blocks (univ.biUnion oldBlocks)).card : ℝ) ≤
+        (N : ℝ) ^ ((r : ℝ) / 2 + ε) := by
+  obtain ⟨NI, hNI⟩ := article_10_1 r s a b (E / PaperP1.CriticalBandScale.lowerScale) 1 ε
+    ha (div_nonneg hE PaperP1.CriticalBandScale.lowerScale_pos.le) hε
+  obtain ⟨NT, hNT⟩ := PaperP1.LogarithmicBlockGeometry.width_transfer E hE
+  refine ⟨max NI NT, ?_⟩
+  intro N hN old G blocks oldBlocks hvalues holdValues hdist holdDist
+  have htransfer := hNT N (by omega)
+  exact hNI N (by omega) (PaperP1.LogarithmicBlockGeometry.length N) old G blocks oldBlocks
+    htransfer.1 hvalues holdValues
+    (fun i x hx v hv ↦ (hdist i x hx v hv).trans htransfer.2)
+    (fun k v hv ↦ (holdDist k v hv).trans htransfer.2)
 
 end PaperP1.ValueHeightHalfCount

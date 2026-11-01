@@ -1211,7 +1211,10 @@
         "PaperP1.HalfCountPowerBounds.rare_coordinate_bound",
         "PaperP1.HalfCountPowerBounds.removed_power_bound",
         "PaperP1.HalfCountPowerBounds.finite_assembly",
-        "PaperP1.ValueHeightHalfCount.article_10_1"
+        "PaperP1.ValueHeightHalfCount.article_10_1",
+        "PaperP1.ValueHeightHalfCount.uniform_logarithmic_count",
+        "PaperP1.LogarithmicBlockGeometry.length_band",
+        "PaperP1.LogarithmicBlockGeometry.width_transfer"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
@@ -1249,11 +1252,25 @@
       "source": "main_sections/half_counts.tex",
       "line": 100,
       "sha256": "d0401cc3a0b5abf2efddbf7513ffad78f341898538ee7ba3f1d177373698a5ce",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.DependentBlockPairs.dependent_iff_intersection",
+        "PaperP1.DependentBlockPairs.tuple_injective",
+        "PaperP1.DependentBlockPairs.off_diagonal_in_effective",
+        "PaperP1.DependentBlockPairs.off_diagonal_count",
+        "PaperP1.DependentBlockPairs.diagonal_count",
+        "PaperP1.DependentBlockPairs.split_count",
+        "PaperP1.ActiveBlockCentresCount.uniform_count",
+        "PaperP1.DependentBlockPairsCount.article_10_3",
+        "PaperP1.DependentBlockPairsCount.uniform_logarithmic_count",
+        "PaperP1.LogarithmicBlockGeometry.length_band",
+        "PaperP1.LogarithmicBlockGeometry.width_transfer"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0064"
+      ],
+      "notes": "Full main Corollary 10.3. Actual ordered block pairs with nonzero intersection of their effective even-selection images are counted by N^(1+epsilon), including coincident centres. Off-diagonal pairs inject into actual two-target full-support lists with no old sources by the characteristic-two identity u+u=0. Actual diagonal pairs inject into actual active centres, whose number is proved from actual value heights and block geometry. Both counts and their finite sum are instantiated and the factor two is absorbed. Thresholds precede arbitrary finite candidate sets and all heterogeneous block shapes. Both literal critical-block widths and every fixed logarithmic signed-distance width are proved, uniformly in fixed normalizations encoded by those value/radius bounds."
     },
     {
       "label": "p13:activity:deficit",

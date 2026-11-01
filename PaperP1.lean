@@ -654,3 +654,11 @@ public import PaperP1.Asymptotics.EffectiveHalfCount
 public import PaperP1.Asymptotics.HalfCountPowerBounds
 
 public import PaperP1.Asymptotics.ValueHeightHalfCount
+
+public import PaperP1.Arithmetic.DependentBlockPairs
+
+public import PaperP1.Asymptotics.ActiveBlockCentresCount
+
+public import PaperP1.Asymptotics.DependentBlockPairsCount
+
+public import PaperP1.Asymptotics.LogarithmicBlockGeometry
