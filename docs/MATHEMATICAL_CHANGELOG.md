@@ -2658,3 +2658,12 @@ already uses beta<=2+o(1). The literal display remains unclaimed, so the
 numbered row stays in progress. See
 [full count and range alignment](QUADRATIC_KERNEL_COMPLETE_COUNTS_ALIGNMENT.md)
 and the machine-readable finding for every checked declaration.
+
+## Growing-degree budget verification checkpoint
+
+The factorial prime-support, squarefree-divisor and prime-colouring budgets
+used inside T5.2 are now proved with explicit uniform thresholds, including
+a fixed cubic-loglog height error. These close source proof ingredients;
+they are not claimed as a new mathematical improvement or a complete
+numbered result. The number of confirmed improvements remains 54.
+See [alignment](GROWING_DEGREE_PRIME_BUDGET_ALIGNMENT.md).

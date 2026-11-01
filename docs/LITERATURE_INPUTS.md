@@ -1354,3 +1354,15 @@ CRT root classification or Paper C port is assumed. All uses of divisor
 subpolynomiality, logarithmic growth, positive quadratic fibres and real
 powers reduce to previously proved project declarations and the pinned
 Mathlib. See [alignment](QUADRATIC_KERNEL_COMPLETE_COUNTS_ALIGNMENT.md).
+
+## Factorial inverse budget at growing degree
+
+The distinct-prime factorial lower bound is proved directly on finite sets,
+and the existing proved finite Stirling bound gives the growing-degree
+prime-support estimate. The exact squarefree divisor formula reduces to
+pinned Mathlib factorization and divisor declarations. All asymptotic
+comparisons use proved elementary logarithmic limits. No variable-degree
+divisor estimate is assumed; the error version has an explicit ordinary
+logarithmic-height premise, not an assumed enumeration estimate.
+The actual split-product application remains open. See
+[alignment](GROWING_DEGREE_PRIME_BUDGET_ALIGNMENT.md).

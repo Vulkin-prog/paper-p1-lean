@@ -424,3 +424,9 @@ public import PaperP1.Asymptotics.QuadraticSquarePartCount
 public import PaperP1.Asymptotics.QuadraticKernelExponents
 
 public import PaperP1.Asymptotics.PrescribedQuadraticKernelTheorem
+
+public import PaperP1.Arithmetic.PrimeFactorialBudget
+
+public import PaperP1.Asymptotics.GrowingDegreePrimeBudget
+
+public import PaperP1.Asymptotics.GrowingDegreePrimeError

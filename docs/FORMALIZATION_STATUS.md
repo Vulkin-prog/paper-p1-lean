@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3912 audited theorem/lemma declarations**. This
+- The project currently has **3927 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1709,3 +1709,22 @@ Verification: full build passed (9,567 jobs); actual axiom audit passed for
 3,912 declarations; all 1,627 distinct ledger/finding names were checked
 directly. All 138 manifest entries and 167 result records remain intact.
 Ubuntu available space: 17.63 GiB.
+
+## Growing-degree prime-support and enumeration budgets
+
+T5.2 now has proved preparatory budgets. The actual prime product dominates
+omega(n)!, giving a finite logarithmic lower bound. For every fixed c>=0,
+C>=1 and epsilon>0, one threshold before n,d proves omega(n)<=(c+epsilon)logN
+when n<=(CN)^d and d<=c loglogN. Exact squarefree-divisor counts and
+actual prime-colouring counts give N^(c log(a)+epsilon); a fixed
+E(loglogN)^3 logarithmic-height error is also absorbed uniformly.
+The literal split-product resultant/support arguments and their actual
+height estimates are still open; T5.2 is not complete. Coverage remains
+56/167 and there are still 54 confirmed improvements: formalizing this
+source ingredient is not recorded as a new mathematical improvement.
+See [alignment](GROWING_DEGREE_PRIME_BUDGET_ALIGNMENT.md).
+
+Budget verification: full build passed (9,573 jobs); actual axiom audit
+passed for 3,927 declarations; all 1,642 distinct ledger/finding names
+were checked directly. The 138 manifest entries and 167 result records
+remain intact; Ubuntu available space is 17.62 GiB.

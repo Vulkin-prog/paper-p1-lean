@@ -3290,11 +3290,27 @@
       "source": "companion_sections/short_supports.tex",
       "line": 59,
       "sha256": "32f53c032c8c2c0458723e096e068b662179498b5e4a5a9eb4c5ddb3170f2c04",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.PrimeFactorialBudget.positive_factorial_le_prod",
+        "PaperP1.PrimeFactorialBudget.prime_factorial_le",
+        "PaperP1.PrimeFactorialBudget.prime_card_log_lower",
+        "PaperP1.PrimeFactorialBudget.prime_card_lt_of_log_budget",
+        "PaperP1.PrimeFactorialBudget.squarefree_divisors_card",
+        "PaperP1.GrowingDegreePrimeBudget.trial_log_ratio",
+        "PaperP1.GrowingDegreePrimeBudget.prime_card_of_log_height",
+        "PaperP1.GrowingDegreePrimeBudget.growing_degree_prime_card",
+        "PaperP1.GrowingDegreePrimeBudget.exponential_prime_budget",
+        "PaperP1.GrowingDegreePrimeBudget.exponential_prime_budget_additive",
+        "PaperP1.GrowingDegreePrimeBudget.squarefree_divisor_budget",
+        "PaperP1.GrowingDegreePrimeBudget.prime_colourings_budget",
+        "PaperP1.GrowingDegreePrimeError.polylog_error_budget",
+        "PaperP1.GrowingDegreePrimeError.prime_card_of_log_height_with_error",
+        "PaperP1.GrowingDegreePrimeError.exponential_budget_with_error"
+      ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Preparatory growing-degree prime-support and enumeration budgets are proved, with one threshold before the actual integer n and degree d. Actual distinct prime products dominate omega(n)!, Stirling gives the inverse budget, and n<=(C*N)^d with d<=c*loglogN gives omega(n)<=(c+epsilon)*logN. Exact squarefree divisor counts and actual prime-colouring counts yield N^(c*log(a)+epsilon). The same bound tolerates an explicit E*(loglogN)^3 logarithmic-height error. No degree-growing divisor estimate is assumed. The actual split-product resultant/parity bookkeeping, two-factor kernel support restriction, derived q*D height, selected quadratic enumeration and fixed-kernel fibre are still open; full T5.2 is not claimed."
     },
     {
       "label": "p13:half:small-kernels",
