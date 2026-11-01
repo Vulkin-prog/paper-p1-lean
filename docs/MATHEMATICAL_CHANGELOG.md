@@ -2209,3 +2209,40 @@ Original manuscript bytes are unchanged.
 Validated complete companion T2.5 checkpoint (9,405 build jobs;
 3,577 audited declarations; 1,292 directly checked coverage/finding names):
 [b71d4e7409dccd61850024f99066ecaa24c6bccd](https://github.com/Vulkin-prog/paper-p1-lean/commit/b71d4e7409dccd61850024f99066ecaa24c6bccd).
+
+## P1-MATH-0046 — Explicit actual selected-kernel counts and broader scope
+
+Location: companion Lemma T1.6, page 9, `p1:arith:anchor`, source
+`companion_sections/arithmetic_appendix.tex:416`. Both source assertions
+are proved by `LargeSelectedKernelTheorem.companion_T1_6`.
+
+The actual mixed-square relation forces each prime above B in a selected
+anchor's odd support into the other window. Evenness is unnecessary.
+The stronger finite pair family permits overlapping windows and both
+orientations. If 2<=N and 1<=B<=N, the explicit bounds are
+
+    #pairs <= 8*sqrt(3)*B*N^(3/2)*T^(-1/2+tau)
+      * exp(2*sqrt(B)+(2^tau/tau)*B^(1-tau)),
+    #windows <= 2*sqrt(3)*B*N^(1/2)*sqrt(T)*exp(2*sqrt(B)).
+
+The bounds hold for every real T>0 and 0<tau<=1/2. The source separated
+family is proved to be a subset of the finite pair family. All labels
+include the predecessor. The residue count retains floor(N/r)+1 and
+proves it at most 4N/r from r<=3N, also when r>N. A finite rough Euler
+product and the already proved integer p-series tail replace an infinite
+Euler-product identity. Uniform sublinear logarithmic exponentials give
+the two source asymptotics under a single threshold before all lengths
+and cutoffs. No target estimate is assumed.
+
+The canonical-triple argument is generalized from the attributed Paper C
+source; all code is rebuilt under Lean v4.36.0-rc2. No new unproved
+literature input is introduced. See
+[full statement alignment](LARGE_SELECTED_KERNEL_ALIGNMENT.md).
+Coverage is 54/167, with 46 confirmed improvements. Main 3.2 and the
+complete pair profile 3.3 retain their other unproved arithmetic regimes.
+The full build passed (9,427 jobs) and all 3,626 declarations passed the
+actual axiom audit, permitting only propext, Classical.choice and
+Quot.sound. The original manuscript bytes are unchanged.
+
+All 1,341 distinct coverage/finding declaration names were checked directly
+by Lean against the compiled root import.

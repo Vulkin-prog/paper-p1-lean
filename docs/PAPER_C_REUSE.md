@@ -351,3 +351,28 @@ See [alignment](GOOD_EDGE_COMPRESSION_ALIGNMENT.md).
 
 Validated implementation of article Lemma 3.5 and P1-MATH-0035:
 [37c99c7ea71d70271902fd12d1b52494646ec919](https://github.com/Vulkin-prog/paper-p1-lean/commit/37c99c7ea71d70271902fd12d1b52494646ec919).
+
+## Weighted canonical support fibres for companion T1.6
+
+`PaperC/Arithmetic/LargeKernelWeightedCounting.lean`, exact commit
+`b9fa9ba490f201b408a302a86f1594ee620b228b`, Git blob
+`0a767c88c4899fbb1fc4996c6a5188a5c19af103`, Apache-2.0, originally Lean 4.34,
+supplies the selected canonical small-support/large-support/square-part
+reindexing argument. `PaperP1/Arithmetic/KernelSupportFibres.lean` adapts
+that argument to the existing P1 odd-support definitions and generalizes
+the weight to an arbitrary nonnegative function of both supports.
+Candidate square fibres and canonical injection are proved under Lean
+v4.36.0-rc2, with no old compiled artifacts.
+
+The other inspected modules, `PaperC/Arithmetic/TerminalKernelCount.lean`
+(blob `94289ea41c663424d1109e802b15cdabfc21151b`),
+`PaperCPrel8/RoughKernelStrongCount.lean`
+(blob `b23149170bdf30dd0b93a291209992114a8b271a`) and
+`PaperCV282/SmallKernelAnchors.lean`
+(blob `58cd4b4d32eac9e8c4055e1785390fdc82759d9a`), were compared and remain
+unported. P1 already has the needed square-root small-kernel count. Its
+new finite weighted tail, actual parity witnesses, prime-assignment
+count and source-family bridges are proved separately.
+
+The full 9,427-job build and actual audit of 3,626 declarations passed.
+See [statement comparison](LARGE_SELECTED_KERNEL_ALIGNMENT.md).

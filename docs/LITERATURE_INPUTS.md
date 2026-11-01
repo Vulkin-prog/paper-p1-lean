@@ -1114,3 +1114,22 @@ literal separated-family transport. Both source T2.5 assertions and
 its stronger explicit remainder are proved with existing project results
 and the pinned Mathlib only. There is no new literature premise, global
 axiom or Paper C port. The complete main pair profile remains unfinished.
+
+## Actual large selected kernels and one-small-kernel windows
+
+Stable ID: `P1-ARITH-LARGE-SELECTED-KERNEL`. Status: **proved**, complete T1.6.
+
+- `LargeSelectedKernelTheorem.companion_T1_6` proves both source bounds on
+  actual mixed rational-square selections and actual dyadic window values.
+  Both orientations, real cutoffs and a threshold before all critical
+  lengths and cutoffs are included. No target counting, probability, rank,
+  CRT or Euler estimate is supplied as a premise.
+- The generalized canonical-triple port uses Paper C commit
+  b9fa9ba490f201b408a302a86f1594ee620b228b, Apache-2.0, with exact provenance
+  in PAPER_C_REUSE.md. All other bridges and finite-tail arguments are new
+  P1 proofs using already pinned Mathlib finite sums and real powers.
+- Finite rough prime pools and the already proved integer p-series tail
+  close the Rankin/Euler estimate. The explicit bounds, r>N residue-fibre
+  case and stronger selection scope are P1-MATH-0046. No new unproved
+  literature input is introduced. See
+  [alignment](LARGE_SELECTED_KERNEL_ALIGNMENT.md).

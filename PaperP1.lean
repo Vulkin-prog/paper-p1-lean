@@ -358,3 +358,14 @@ public import PaperP1.Asymptotics.ChannelMainTermBounds
 public import PaperP1.Asymptotics.PrivateChannelMassPhase
 public import PaperP1.Model.RealPrivateChannelSources
 public import PaperP1.Asymptotics.FixedChannelMassTheorem
+public import PaperP1.Arithmetic.KernelSupportFibres
+public import PaperP1.Arithmetic.SupportRankinTail
+public import PaperP1.Arithmetic.WeightedKernelTail
+public import PaperP1.Arithmetic.KernelAssignments
+public import PaperP1.Arithmetic.SelectedKernelWitness
+public import PaperP1.Arithmetic.LargeAnchorPairs
+public import PaperP1.Arithmetic.SmallKernelWindows
+public import PaperP1.Asymptotics.LogPowerExponential
+public import PaperP1.Asymptotics.SelectedKernelCounts
+public import PaperP1.Arithmetic.SelectedKernelSourceFamilies
+public import PaperP1.Asymptotics.LargeSelectedKernelTheorem

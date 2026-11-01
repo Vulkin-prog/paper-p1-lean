@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **53 / 167**: article Propositions 3.1, 4.1, 5.2, 13.7, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **54 / 167**: article Propositions 3.1, 4.1, 5.2, 13.7, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3577 audited theorem/lemma declarations**. This
+- The project currently has **3626 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1341,3 +1341,23 @@ Ubuntu root free space is 17.83 GiB.
 Validated complete companion T2.5 checkpoint (9,405 build jobs;
 3,577 audited declarations; 1,292 directly checked coverage/finding names):
 [b71d4e7409dccd61850024f99066ecaa24c6bccd](https://github.com/Vulkin-prog/paper-p1-lean/commit/b71d4e7409dccd61850024f99066ecaa24c6bccd).
+
+## Complete actual selected-kernel counts (companion T1.6)
+
+Both assertions of T1.6 are proved for the actual separated mixed rational-square
+pair family and actual dyadic windows with one small kernel. One critical-band
+threshold precedes every length and real cutoff 1<=T<=3N. The stronger estimate
+permits all T>0 and tau=1/2, and the finite intermediate pair family also allows
+odd selections and overlapping windows. Exact canonical support fibres, private
+large primes and the residue-assignment count are proved; no asymptotic or
+probabilistic bound is assumed. Explicit finite constants and the r>N CRT
+case are P1-MATH-0046. See [alignment](LARGE_SELECTED_KERNEL_ALIGNMENT.md).
+
+The full build passed (9,427 jobs); all 3,626 declarations passed the actual
+axiom audit, with only propext, Classical.choice and Quot.sound. Numbered
+coverage is 54/167 (article 17/73, companion 37/94). Original manuscript
+bytes are unchanged. The remaining small-kernel and nonaligned geometric
+regimes for main 3.2 and 3.3 are still open.
+
+All 1,341 distinct coverage/finding declaration names were checked directly
+by Lean against the compiled root import.
