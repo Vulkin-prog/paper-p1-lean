@@ -1573,3 +1573,7 @@ The full build passed (9,515 jobs), the actual axiom audit passed for
 all 3,772 declarations, and Lean checked all 1,487 distinct
 coverage/finding names. Only propext, Classical.choice and Quot.sound
 occur; original manuscript bytes are unchanged.
+
+Validated bilinear minimum-height checkpoint (9,515 build jobs;
+3,772 audited declarations; 1,487 directly checked names):
+[b6cfffa06c97f77d6cdf3ec017a3c9af3e5902bd](https://github.com/Vulkin-prog/paper-p1-lean/commit/b6cfffa06c97f77d6cdf3ec017a3c9af3e5902bd).

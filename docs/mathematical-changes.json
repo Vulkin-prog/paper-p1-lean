@@ -2266,7 +2266,10 @@
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "bc9f8dc072a9efe82022b91f1a5261debfd49529"
+      "validation_commit": "b6cfffa06c97f77d6cdf3ec017a3c9af3e5902bd",
+      "validation_history": [
+        "bc9f8dc072a9efe82022b91f1a5261debfd49529"
+      ]
     },
     {
       "id": "P1-MATH-0050",
