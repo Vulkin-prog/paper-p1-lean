@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4017 audited theorem/lemma declarations**. This
+- The project currently has **4026 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1804,3 +1804,22 @@ Allocation verification: full build passed (9,595 jobs); actual axiom
 audit passed for all 4,017 declarations; all 1,732 distinct ledger/finding
 names were checked directly. All 138 original manifest entries and 167
 result records remain intact. Ubuntu available space: 17.57 GiB.
+
+## Actual pair partition and uniform selected-quadratic averaging
+
+Every even finite set now has an actual pair partition, with d=2*card(P).
+For the actual allocated divisors, a selected block has logarithmic cost
+at most (log(q)-2log(e)+4log(D_A))/(d/2). The actual resultant error
+is uniformly negligible after division by logN at d<=c loglogN.
+The stronger selection theorem quantifies one common threshold before
+every prescribed fixed partition and all varying data; it introduces
+no partition-enumeration factor per solution. This extends the explicit
+finite scope of P1-MATH-0056. Shifted quadratic counting and final
+selected-block/divisor/dyadic enumeration are still open. T5.2 stays
+in progress; coverage stays 56/167 with 56 improvements. See
+[alignment](SELECTED_QUADRATIC_BUDGET_ALIGNMENT.md).
+
+Selected-quadratic verification: full build passed (9,601 jobs); actual
+axiom audit passed for all 4,026 declarations; all 1,741 distinct
+ledger/finding names were checked directly. All 138 manifest entries
+and 167 result records remain intact; Ubuntu has 17.56 GiB free.

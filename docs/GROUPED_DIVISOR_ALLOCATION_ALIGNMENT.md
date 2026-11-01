@@ -53,5 +53,9 @@ The remaining T5.2 proof must construct/use the quadratic pairing, choose
 a quadratic by its averaged exponent, count its shifted actual values
 and complete the finite enumeration. Those steps are not yet claimed.
 
+The later [selected-quadratic checkpoint](SELECTED_QUADRATIC_BUDGET_ALIGNMENT.md)
+constructs the pairing and proves the uniform averaged exponent with its
+explicit resultant error. Shifted counting and final enumeration remain open.
+
 No new unproved literature input, Paper C port, original manuscript-byte
 change or Palomar registration is introduced.

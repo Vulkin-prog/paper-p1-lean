@@ -3396,14 +3396,23 @@
         "PaperP1.GroupedPrescribedDivisors.assigned_coprime",
         "PaperP1.GroupedPrescribedDivisors.outside_source_allocation",
         "PaperP1.ActualPrescribedDivisorBudget.actual_outside_height",
-        "PaperP1.ActualPrescribedDivisorBudget.actual_outside_divisor_count"
+        "PaperP1.ActualPrescribedDivisorBudget.actual_outside_divisor_count",
+        "PaperP1.FinitePairPartition.exists_pair_partition",
+        "PaperP1.FinitePairPartition.partition_cardinality",
+        "PaperP1.SelectedQuadraticBudget.exists_le_average",
+        "PaperP1.SelectedQuadraticBudget.total_weight_budget",
+        "PaperP1.SelectedQuadraticBudget.selected_source_block",
+        "PaperP1.SelectedQuadraticBudget.exists_selected_pair",
+        "PaperP1.SelectedQuadraticError.resultant_error_budget",
+        "PaperP1.SelectedQuadraticError.source_fixed_pair_selection",
+        "PaperP1.SelectedQuadraticError.source_selected_pair"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
         "P1-MATH-0055",
         "P1-MATH-0056"
       ],
-      "notes": "The full fixed-kernel bound is proved for arbitrary degrees >=2 and fixed polylogarithmic widths (P1-MATH-0055). The quantitative grouped-kernel resultant identity M=q*R^2, R|D_A, is proved for arbitrary disjoint blocks (P1-MATH-0056). The actual prescribed divisor e prime-removal operation now has exact e prime = e/gcd(e,rad(D_A)), positivity, squarefreeness, coprimality and logarithmic loss <=log(D_A). Explicit assigned prime products divide each block kernel and e prime, have product e prime, and are pairwise coprime. Their actual divisor enumeration cost is <=N^(c*log(2)+epsilon), from a derived height rather than an assumed count. The remaining prescribed-divisor conclusion still needs the actual pairing/selected-quadratic averaging, uniform shifted quadratic counts and the final enumeration. Full T5.2 is not claimed."
+      "notes": "The full fixed-kernel bound is proved for arbitrary degrees >=2 and fixed polylogarithmic widths (P1-MATH-0055). All finite grouped-kernel/resultant, prescribed-divisor removal/allocation and actual divisor-budget ingredients are proved (P1-MATH-0056). Actual pair partitions of even finite sets are now constructed, with card(P)=d/2. A selected block is proved to have log(kernel_B)-2log(e_B) <=(log(q)-2log(e)+4log(D_A))/(d/2). The actual resultant error is absorbed uniformly at growing degree. A separate theorem has one threshold before every prescribed fixed pair partition and varying n,e,A,W; no new partition choice is charged per solution. The remaining prescribed-divisor conclusion still needs uniform shifted quadratic counts and the final selected-block/divisor/dyadic enumeration. Full T5.2 is not claimed."
     },
     {
       "label": "p13:half:small-kernels",

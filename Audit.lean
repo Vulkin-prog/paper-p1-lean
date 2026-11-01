@@ -1468,6 +1468,10 @@ import PaperP1
 #print axioms PaperP1.SelectedKernelSourceFamilies.small_windows_eq
 #print axioms PaperP1.SelectedKernelWitness.other_prime_divisor
 #print axioms PaperP1.SelectedKernelWitness.other_start_mem_hits
+#print axioms PaperP1.SelectedQuadraticBudget.exists_le_average
+#print axioms PaperP1.SelectedQuadraticBudget.total_weight_budget
+#print axioms PaperP1.SelectedQuadraticBudget.selected_source_block
+#print axioms PaperP1.SelectedQuadraticBudget.exists_selected_pair
 #print axioms PaperP1.SelectedUnitExtrema.bounds_nonempty
 #print axioms PaperP1.SelectedUnitExtrema.bounds_unique
 #print axioms PaperP1.SelectedUnitExtrema.first_lt_last
@@ -2167,6 +2171,9 @@ import PaperP1
 #print axioms PaperP1.SelectedKernelCounts.finite_large_factor
 #print axioms PaperP1.SelectedKernelCounts.uniform_counts
 #print axioms PaperP1.SelectedKernelCounts.critical_counts
+#print axioms PaperP1.SelectedQuadraticError.resultant_error_budget
+#print axioms PaperP1.SelectedQuadraticError.source_fixed_pair_selection
+#print axioms PaperP1.SelectedQuadraticError.source_selected_pair
 #print axioms PaperP1.SeveralAnchorCounts.factor_subpolynomial
 #print axioms PaperP1.SeveralAnchorCounts.ambient_sqrt
 #print axioms PaperP1.SeveralAnchorCounts.finite_factor_bound
@@ -2474,6 +2481,8 @@ import PaperP1
 #print axioms PaperP1.DiscardTouchedSupports.remaining_avoids
 #print axioms PaperP1.DiscardTouchedSupports.card_touched_le
 #print axioms PaperP1.DiscardTouchedSupports.exists_discard
+#print axioms PaperP1.FinitePairPartition.exists_pair_partition
+#print axioms PaperP1.FinitePairPartition.partition_cardinality
 #print axioms PaperP1.FinitePolymerBound.weight_nonneg
 #print axioms PaperP1.FinitePolymerBound.weight_eq_partition
 #print axioms PaperP1.FinitePolymerBound.generating_le_product

@@ -1410,3 +1410,15 @@ height <=(3N)^d and the proved squarefree divisor budget. No allocation,
 prime-occurrence uniqueness or enumeration estimate is assumed. The
 selected quadratic counting application is still open; see
 [alignment](GROUPED_DIVISOR_ALLOCATION_ALIGNMENT.md).
+
+## Actual pair partitions and selected-block average
+
+The pair partition is constructed by finite even-cardinality induction.
+The actual logarithmic sums follow from proved grouped-kernel and
+allocated-divisor product identities; a finite minimum gives the
+selected block. The explicit 4*log(D_A)/(d/2) error is absorbed using
+the actual difference-product height and the proved loglog-squared/logN
+limit, with one threshold before all fixed partitions and source data.
+No averaged exponent estimate or selected-block witness is assumed.
+The shifted quadratic counting application remains open; see
+[alignment](SELECTED_QUADRATIC_BUDGET_ALIGNMENT.md).

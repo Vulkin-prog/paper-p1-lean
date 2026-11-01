@@ -452,3 +452,9 @@ public import PaperP1.Arithmetic.SquarefreeOutsideDivisor
 public import PaperP1.Arithmetic.GroupedPrescribedDivisors
 
 public import PaperP1.Asymptotics.ActualPrescribedDivisorBudget
+
+public import PaperP1.Combinatorics.FinitePairPartition
+
+public import PaperP1.Arithmetic.SelectedQuadraticBudget
+
+public import PaperP1.Asymptotics.SelectedQuadraticError

@@ -2708,3 +2708,12 @@ closed from its derived height. This extends the existing finding and
 adds no new improvement identifier. Full T5.2 remains open at the
 selected quadratic counting step. See
 [alignment](GROUPED_DIVISOR_ALLOCATION_ALIGNMENT.md).
+
+## P1-MATH-0056 extension — Explicit selected-block error and fixed partitions
+
+An actual pair partition and selected block now give the finite error
+4*log(D_A)/(d/2), uniformly absorbed in the source growing-degree
+regime. The partition can be fixed before counting solutions under a
+common threshold. This extends the existing finding and adds no new
+improvement identifier. The final shifted counting/enumeration remains
+open. See [alignment](SELECTED_QUADRATIC_BUDGET_ALIGNMENT.md).
