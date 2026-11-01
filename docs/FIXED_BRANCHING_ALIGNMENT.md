@@ -156,3 +156,6 @@ Numbered coverage is now 42 / 167: main 15 / 73, companion 27 / 94.
 The 30 confirmed improvements retain their earlier validation records.
 Original manuscript bytes are preserved and no Palomar registration
 is made. Available Ubuntu-root space is 17.86 GiB.
+
+Validated complete implementation of companion T1.15:
+[aa40b4a69208172c6fca0cdd9def2e336e92f278](https://github.com/Vulkin-prog/paper-p1-lean/commit/aa40b4a69208172c6fca0cdd9def2e336e92f278).
