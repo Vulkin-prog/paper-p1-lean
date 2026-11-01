@@ -69,3 +69,6 @@ global numerator reduction. The physical divisor fractions are handled
 separately at the fraction-classification stage. The actual target-match
 and residual-rank bridges remain open. See the
 [finite matching checkpoint](FIXED_CHANNEL_MATCHES_ALIGNMENT.md).
+
+Validated finite matching checkpoint for T2.6/T1.11 and P1-MATH-0037:
+[84c4c9a4016ce9f1c4ab9f7828675f3495eced85](https://github.com/Vulkin-prog/paper-p1-lean/commit/84c4c9a4016ce9f1c4ab9f7828675f3495eced85).

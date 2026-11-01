@@ -711,3 +711,6 @@ as did the actual axiom audit of all 3,123 theorem/lemma declarations
 and all 838 coverage/finding names. Coverage remains 48 / 167, with
 37 confirmed improvements. Original sources are preserved; no Palomar
 registration is made. Ubuntu root free space is 18.15 GiB.
+
+Validated finite matching checkpoint for T2.6/T1.11 and P1-MATH-0037:
+[84c4c9a4016ce9f1c4ab9f7828675f3495eced85](https://github.com/Vulkin-prog/paper-p1-lean/commit/84c4c9a4016ce9f1c4ab9f7828675f3495eced85).

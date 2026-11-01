@@ -70,3 +70,6 @@ the class count is not assumed to equal an actual rank loss.
 
 No external mathematical premise, new Paper C port, manuscript revision
 or Palomar registration is introduced.
+
+Validated finite matching checkpoint for T2.6/T1.11 and P1-MATH-0037:
+[84c4c9a4016ce9f1c4ab9f7828675f3495eced85](https://github.com/Vulkin-prog/paper-p1-lean/commit/84c4c9a4016ce9f1c4ab9f7828675f3495eced85).
