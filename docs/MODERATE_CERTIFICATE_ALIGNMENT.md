@@ -104,3 +104,6 @@ actual axiom audit of all 2,092 project theorem/lemma declarations. Only
 remains 31 / 167. No Palomar registration is made.
 
 All 337 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of the full first finite counting conclusion:
+[e349c4801dffc0e0e76a7caa152c3aa2330e55f7](https://github.com/Vulkin-prog/paper-p1-lean/commit/e349c4801dffc0e0e76a7caa152c3aa2330e55f7).
