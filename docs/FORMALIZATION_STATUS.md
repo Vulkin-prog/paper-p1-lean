@@ -1361,3 +1361,7 @@ regimes for main 3.2 and 3.3 are still open.
 
 All 1,341 distinct coverage/finding declaration names were checked directly
 by Lean against the compiled root import.
+
+Validated complete companion T1.6 checkpoint (9,427 build jobs;
+3,626 audited declarations; 1,341 directly checked coverage/finding names):
+[3be7415366bd3d27aa016bf9690b0f93d7304fd9](https://github.com/Vulkin-prog/paper-p1-lean/commit/3be7415366bd3d27aa016bf9690b0f93d7304fd9).

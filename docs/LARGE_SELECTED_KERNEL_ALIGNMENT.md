@@ -100,3 +100,7 @@ The explicit finite version and stronger selection scope are tracked as
 P1-MATH-0046. Main article 3.2 and the complete pair profile 3.3 still
 require the other small-kernel and nonaligned geometric regimes. This
 checkpoint does not prove those results or authorize a Palomar submission.
+
+Validated complete companion T1.6 checkpoint (9,427 build jobs;
+3,626 audited declarations; 1,341 directly checked coverage/finding names):
+[3be7415366bd3d27aa016bf9690b0f93d7304fd9](https://github.com/Vulkin-prog/paper-p1-lean/commit/3be7415366bd3d27aa016bf9690b0f93d7304fd9).
