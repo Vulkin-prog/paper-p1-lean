@@ -2911,3 +2911,11 @@ estimate for T1.14. Its independent half-count dependency is acyclic.
 The separate kernel estimates remain open for other uses. Coverage is
 66/167 and confirmed improvements are 66. See
 [complete support alignment](SEVERAL_BLOCK_RELATION_ALIGNMENT.md).
+
+P1-MATH-0030 extension: its smaller deterministic exception set now has
+the logarithmic cardinality Euler gain needed in T19.4. The literal source
+rate is proved uniformly for all orders 1<=j<=log(N). The actual factorial
+recurrence retains F_2, and the missing uniform initial pair estimate is
+recorded separately; T19.4 remains in progress. No new independent finding
+is counted. Coverage and confirmed improvements stay 66/167 and 66. See
+[order-dependent alignment](ORDER_DEPENDENT_BRANCHING_ALIGNMENT.md).

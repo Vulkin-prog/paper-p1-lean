@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4536 audited theorem/lemma declarations**. This
+- The project currently has **4570 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2119,3 +2119,21 @@ partition and triple deficit remain open. See
 [complete support alignment](SEVERAL_BLOCK_RELATION_ALIGNMENT.md).
 
 Full several-block support verification: Lean v4.36.0-rc2 full build passed (9,845 jobs); actual axiom audit passed for all 4,536 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,251 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.16 GiB. Full T1.14 is complete with the stronger support bound and actual fixed-parameter record counts; coverage is 66/167 (main 22/73, companion 44/94), with 66 confirmed improvements. No unfinished determinant or kernel count, target-count hypothesis, new external input, Paper C port, manuscript-byte change or Palomar registration.
+
+## Order-dependent branching — exact finite and uniform rate, initial moment retained
+
+The actual rounded cardinality budget now has the logarithmic Euler gain
+sqrt(m/log(m+2)), proved by elementary prime-sum splitting. The full
+infinite-model independence conclusion and deterministic two-supported-value
+exception give (B/2)*sqrt(3N)*exp(C0*sqrt(m/log(m+2))) with no separate contact
+term. The literal larger source exception has its uniform logarithmic rate
+for all 1<=j<=log(N), under one threshold before every critical length.
+
+The actual factorial recurrence also gives the displayed growing-order
+exponential factor multiplied by the actual F_2. A uniform O_C(1) bound
+for that initial pair moment remains open, so T19.4 is in progress. This
+extends P1-MATH-0030; coverage stays 66/167 and confirmed findings stay 66.
+No extrapolation of fixed-order constants or target estimate is assumed.
+See [exact scope](ORDER_DEPENDENT_BRANCHING_ALIGNMENT.md).
+
+Order-dependent branching verification: Lean v4.36.0-rc2 full build passed (9,855 jobs); actual axiom audit passed for all 4,570 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,285 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.13 GiB. T19.4 remains in progress only for its bounded initial pair moment; coverage is 66/167 and confirmed improvements remain 66. No new external input, Paper C port, manuscript-byte change or Palomar registration.

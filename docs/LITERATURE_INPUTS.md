@@ -1632,3 +1632,18 @@ hypothesis, new external result or Paper C port is used. The independent
 T1.5 and the two-small-kernel part of T1.13 remain open for their separate
 statements. P1-MATH-0066 records this completed T1.14 strengthening; see
 [complete alignment](SEVERAL_BLOCK_RELATION_ALIGNMENT.md).
+
+## Order-dependent prime cardinality and actual growing factorial recurrence
+
+Stable ID: `P1-ARITH-ORDER-DEPENDENT-BRANCHING`. Status: **proved finite
+exception and uniform rate; bounded-initial-pair conclusion unresolved**.
+
+The elementary weighted prime sum proves the cardinality Euler estimate
+at sqrt(m/log(m+2)) by a literal low/high prime split. Exact natural
+ceilings, the actual old prime pool and all infinite-model independence
+conclusions are retained. The logarithmic source rate is uniform for
+1<=j<=log(N), with one threshold before lengths and old windows. The
+actual growing factorial bound is proved with F_2 as its explicit initial
+factor. The unproved O_C(1) bound for F_2 is not supplied as an argument
+and T19.4 is not counted complete. No new external input or Paper C port.
+See [alignment](ORDER_DEPENDENT_BRANCHING_ALIGNMENT.md).

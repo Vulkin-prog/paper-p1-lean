@@ -51,6 +51,10 @@ and [connected-family scope](docs/CONNECTED_FAMILY_ALIGNMENT.md).
 Companion T1.14 now has the stronger exponent r-s/2, with actual fixed
 offset/dilation record counts, from the complete conditional half-count.
 See [the complete support alignment](docs/SEVERAL_BLOCK_RELATION_ALIGNMENT.md).
+The exact order-dependent exception and logarithmic rate in T19.4 are
+proved. Its growing moment bound retains the actual initial second
+factorial moment; the uniform bound for that moment remains open.
+See [the precise remaining scope](docs/ORDER_DEPENDENT_BRANCHING_ALIGNMENT.md).
 Companion T1.9 now covers the full enlarged geometric alignment, including
 zero exact units and both orientations, with its fixed-height enlarged-prime
 rate. The earlier one-unit coverage error and its subsequent closure are
