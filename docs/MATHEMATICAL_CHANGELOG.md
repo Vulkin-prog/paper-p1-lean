@@ -1719,3 +1719,34 @@ Palomar registration is made.
 Validated complete T1.11/T2.6 (9,309 build jobs; 3,344 audited declarations;
 1,059 directly checked coverage/finding names):
 [3cc9dc9f816193e9488d32fab93f7aae9f9b6f90](https://github.com/Vulkin-prog/paper-p1-lean/commit/3cc9dc9f816193e9488d32fab93f7aae9f9b6f90).
+
+## P1-MATH-0042 — Replace known-line extraction by the proved residual
+
+- Source: article Proposition 13.7, page 33, `p13:rig:aligned`,
+  `main_sections/pair_rigidity.tex:331`, original hash
+  `f35f1d523724f58d47358f9401d9a7d7ac65506632395e176199769a7b446a1e`.
+- Original proof: short-basis extraction, two norm-polynomial witnesses,
+  substitution on the known line and a fixed tau extraction loss.
+- Improvement: T1.9 directly gives full pair deficiency
+  <=L/max(a,b)+o(B). For fixed tau in (0,1), choose the residual margin
+  (2/3)*log(1/tau). The first displayed article bound then holds eventually
+  with zero additional error. This does not claim uniformity when tau
+  varies with N.
+- Height one: actual compatibility forces at most one common true value,
+  including contact at exactly L. Thus (u-1)_+=0, giving full pair loss
+  and actual intersection rank o(B). At larger height the channel bound
+  gives B/2+o(B) uniformly.
+- Evidence: `KnownAlignmentRank.height_one_units`, `quantitative_bound`,
+  `height_one_bound`, `compatible_half_bound` and `main_13_7`.
+- Suggested revision: replace the known-alignment proof by this residual
+  corollary and exact contact argument. Keep short-basis and curve
+  machinery for the nonaligned arguments, which remain unfinished.
+
+This is reuse of the proved T1.9 estimate, not an independent new residual
+theorem. The full pair deficiency retains internal local rank defects.
+All three assertions of article 13.7 are complete in both orientations.
+Coverage is 52/167, with 42 confirmed improvements. The full build passed
+(9,311 jobs), all 3,349 theorem/lemma declarations passed the actual axiom
+audit, and all 1,064 coverage/finding names were checked directly. Only
+propext, Classical.choice and Quot.sound occur. No manuscript revision
+or Palomar registration is made.

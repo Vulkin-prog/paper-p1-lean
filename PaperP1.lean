@@ -310,3 +310,4 @@ public import PaperP1.Asymptotics.TargetUnionResidual
 public import PaperP1.Asymptotics.TargetQuotientRank
 public import PaperP1.Asymptotics.AlignedTargetRank
 public import PaperP1.Asymptotics.AlignedTargetSourceTheorem
+public import PaperP1.Asymptotics.KnownAlignmentRank

@@ -990,3 +990,12 @@ external premise. All arithmetic uses the already proved Runge, Hamming,
 prime-count and finite linear-algebra results. No new Paper C source is
 used. T1.11 and T2.6 are complete; source mass and Palm mean remain
 separate. See the [full alignment](ALIGNED_TARGET_RANK_ALIGNMENT.md).
+
+## Known-alignment rank from the existing residual
+
+Article 13.7 now follows from the proved full enlarged-alignment T1.9
+and actual compatible-window separation. The fixed-tau bound, uniform
+half bound and exact height-one contact case require no new external
+input. Short-basis, norm-polynomial and curve-counting results are not
+premises of this known-alignment conclusion. Their nonaligned uses remain
+separate unfinished work. See the [alignment](KNOWN_ALIGNMENT_RANK_ALIGNMENT.md).

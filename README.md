@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 51 / 167 numbered results proved.**
+**Status: active formalization, 52 / 167 numbered results proved.**
 Companion T1.9 now covers the full enlarged geometric alignment, including
 zero exact units and both orientations, with its fixed-height enlarged-prime
 rate. The earlier one-unit coverage error and its subsequent closure are
@@ -18,6 +18,9 @@ rank conclusion. See the [complete target-rank alignment](docs/ALIGNED_TARGET_RA
 The exact leading coefficients are 1/3 for channel 2:3 and 1/2 for 3:4;
 the universal finite coefficient bound 2/3 is attained in channel 8:9.
 This coefficient computation does not assert optimality of rank or Palm bounds.
+Article Proposition 13.7 is proved from the uniform residual, including
+the exact height-one contact case. The same bounds hold for full pair
+deficiency, retaining local defects. See the [alignment note](docs/KNOWN_ALIGNMENT_RANK_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,
 with deduplicated normalized values, an explicit finite rank bound and at
 most (L+1)^2 one-parameter motifs. See

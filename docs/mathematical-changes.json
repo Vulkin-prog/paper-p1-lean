@@ -1610,6 +1610,41 @@
       "validation_history": [
         "469f5ac7ab234cdd18962337291971682554d913"
       ]
+    },
+    {
+      "id": "P1-MATH-0042",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "main",
+        "label": "p13:rig:aligned",
+        "number": "13.7",
+        "page": 33,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 331,
+        "version": "P1 V1.6",
+        "statement_sha256": "f35f1d523724f58d47358f9401d9a7d7ac65506632395e176199769a7b446a1e"
+      },
+      "original_assumption": "Proposition 13.7 and its companion proof use short-basis extraction, two norm-polynomial witnesses, substitution on the known line and a fixed tau extraction loss, plus O_{tau,C}(B/sqrt(log B)).",
+      "finding": "The already proved full enlarged-alignment residual T1.9 directly gives the stronger uniform full pair deficiency <=L/max(a,b)+o(B), including internal local rank defects. For every fixed tau in (0,1), choosing a positive residual margin (2/3)*log(1/tau) makes the first bound of Proposition 13.7 valid eventually with zero additional error term. At height one, actual compatibility of distinct centres gives at most one exact unit, including contact at distance exactly L; the unit-count bound then gives full pair deficiency o(B). At reduced height at least two, the channel estimate gives the uniform compatible B/2+o(B) bound.",
+      "evidence": [
+        "PaperP1.KnownAlignmentRank.height_one_units",
+        "PaperP1.KnownAlignmentRank.quantitative_bound",
+        "PaperP1.KnownAlignmentRank.height_one_bound",
+        "PaperP1.KnownAlignmentRank.compatible_half_bound",
+        "PaperP1.KnownAlignmentRank.main_13_7",
+        "PaperP1.EnlargedAlignedPairTheorem.uniform_bounds",
+        "PaperP1.NormalizedPairRankLoss.intersection_rank_le_loss",
+        "PaperP1.CompatibleWindowOverlap.compatible_pair_separated",
+        "PaperP1.CompatibleWindowOverlap.interval_overlap_le_one"
+      ],
+      "proposed_revision": "Replace the proof of Proposition 13.7 by a direct application of the uniform normalized residual estimate T1.9 and the exact channel count. State the stronger full pair-deficiency bound as well. Treat height one separately using the literal at-most-one common true position under compatibility, including equality in the contact distance. Retain the short-basis and resultant machinery for the genuinely nonaligned arguments.",
+      "impact": "Simplifies the known-alignment proof and removes its dependence on short-basis and two-witness results. The fixed-tau source formula follows with no additional error after a tau-dependent threshold. This reuses T1.9 rather than claiming an independent new residual theorem. It does not close the nonaligned rank bound, triple bound or their algebraic-geometry inputs.",
+      "validation": "Full Lean v4.36.0-rc2 build (9311 jobs), actual axiom audit of all 3349 theorem/lemma declarations, and direct Lean checks of all 1064 distinct coverage/finding names. Only propext, Classical.choice and Quot.sound occur. All three assertions of article 13.7, both coefficient orientations and exact compatible height-one contact are covered. Coverage is 52/167; source bytes remain unchanged.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

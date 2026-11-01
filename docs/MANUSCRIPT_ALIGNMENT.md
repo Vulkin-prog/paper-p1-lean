@@ -12,7 +12,7 @@ a blank declaration field nor a preparatory algebraic lemma establishes coverage
 Coverage includes the exact declarations listed below. Preparatory lemmas are
 recorded in the project status without counting as complete numbered results.
 
-## Main article: 16 / 73 proved
+## Main article: 17 / 73 proved
 
 | Result | Original label and source | Title | Status | Lean declarations |
 |---|---|---|---|---|
@@ -56,7 +56,7 @@ recorded in the project status without counting as complete numbered results.
 | 13.4 (p. 32) | [p13:rig:bcn](../manuscripts/paper-p1/v1.6/sources/main_sections/pair_rigidity.tex#L214) | Binyamini--Cluckers--Novikov | not_started | — |
 | 13.5 (p. 32) | [p13:rig:sublinear-grid](../manuscripts/paper-p1/v1.6/sources/main_sections/pair_rigidity.tex#L228) | Sublinear counts in the offset box | not_started | — |
 | 13.6 (p. 32) | [p13:rig:nonaligned](../manuscripts/paper-p1/v1.6/sources/main_sections/pair_rigidity.tex#L259) | A uniform nonaligned rank bound | not_started | — |
-| 13.7 (p. 33) | [p13:rig:aligned](../manuscripts/paper-p1/v1.6/sources/main_sections/pair_rigidity.tex#L331) | Rank on a known alignment | not_started | — |
+| 13.7 (p. 33) | [p13:rig:aligned](../manuscripts/paper-p1/v1.6/sources/main_sections/pair_rigidity.tex#L331) | Rank on a known alignment | proved | `PaperP1.KnownAlignmentRank.height_one_units`, `PaperP1.KnownAlignmentRank.quantitative_bound`, `PaperP1.KnownAlignmentRank.height_one_bound`, `PaperP1.KnownAlignmentRank.compatible_half_bound`, `PaperP1.KnownAlignmentRank.main_13_7`, `PaperP1.EnlargedAlignedPairTheorem.uniform_bounds`, `PaperP1.NormalizedPairRankLoss.intersection_rank_le_loss`, `PaperP1.CompatibleWindowOverlap.compatible_pair_separated`, `PaperP1.CompatibleWindowOverlap.interval_overlap_le_one` |
 | 13.8 (p. 33) | [p13:rig:triple](../manuscripts/paper-p1/v1.6/sources/main_sections/pair_rigidity.tex#L355) | Triple rank and maximum joint probability | not_started | — |
 | 14.1 (p. 34) | [p13:third:main](../manuscripts/paper-p1/v1.6/sources/main_sections/third_cumulant.tex#L32) | Optimal power of the third factorial cumulant | not_started | — |
 | 14.2 (p. 35) | [p13:third:rational-rank](../manuscripts/paper-p1/v1.6/sources/main_sections/third_cumulant.tex#L79) | A sharp rational overlap inequality | not_started | — |

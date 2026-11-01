@@ -1609,6 +1609,11 @@ import PaperP1
 #print axioms PaperP1.GeneralWindowBranching.finite_conclusion
 #print axioms PaperP1.GeneralWindowBranching.logarithmic_windows
 #print axioms PaperP1.GeneralWindowBranching.bounded_height_windows
+#print axioms PaperP1.KnownAlignmentRank.height_one_units
+#print axioms PaperP1.KnownAlignmentRank.quantitative_bound
+#print axioms PaperP1.KnownAlignmentRank.height_one_bound
+#print axioms PaperP1.KnownAlignmentRank.compatible_half_bound
+#print axioms PaperP1.KnownAlignmentRank.main_13_7
 #print axioms PaperP1.LocalBlocksTheorem.finite_conclusion
 #print axioms PaperP1.LocalBlocksTheorem.finite_conditions
 #print axioms PaperP1.LocalBlocksTheorem.companion_T19_2

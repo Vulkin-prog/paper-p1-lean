@@ -911,11 +911,24 @@
       "source": "main_sections/pair_rigidity.tex",
       "line": 331,
       "sha256": "f35f1d523724f58d47358f9401d9a7d7ac65506632395e176199769a7b446a1e",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.KnownAlignmentRank.height_one_units",
+        "PaperP1.KnownAlignmentRank.quantitative_bound",
+        "PaperP1.KnownAlignmentRank.height_one_bound",
+        "PaperP1.KnownAlignmentRank.compatible_half_bound",
+        "PaperP1.KnownAlignmentRank.main_13_7",
+        "PaperP1.EnlargedAlignedPairTheorem.uniform_bounds",
+        "PaperP1.NormalizedPairRankLoss.intersection_rank_le_loss",
+        "PaperP1.CompatibleWindowOverlap.compatible_pair_separated",
+        "PaperP1.CompatibleWindowOverlap.interval_overlap_le_one"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0039",
+        "P1-MATH-0042"
+      ],
+      "notes": "Complete known-alignment statement on actual intersection rank, including both coefficient orientations and the height-one compatible contact case. The stronger full pair deficiency is also bounded. For every fixed tau in (0,1), the first displayed source bound holds eventually with zero additional error term, by applying the proved uniform T1.9 residual with epsilon=(2/3)*log(1/tau). Compatible distinct centres have at most one exact unit at height one, including distance exactly L, so full pair loss and actual intersection rank are o(B). For larger reduced height, the channel bound gives full pair loss <=B/2+epsilon*B uniformly. No short-basis, norm-polynomial or resultant input is needed for this known-alignment conclusion; it is a corollary of the already proved residual argument. See docs/KNOWN_ALIGNMENT_RANK_ALIGNMENT.md."
     },
     {
       "label": "p13:rig:triple",

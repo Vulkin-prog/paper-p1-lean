@@ -932,3 +932,28 @@ root free space is 17.99 GiB.
 Validated complete T1.11/T2.6 (9,309 build jobs; 3,344 audited declarations;
 1,059 directly checked coverage/finding names):
 [3cc9dc9f816193e9488d32fab93f7aae9f9b6f90](https://github.com/Vulkin-prog/paper-p1-lean/commit/3cc9dc9f816193e9488d32fab93f7aae9f9b6f90).
+
+## Article 13.7 completed — rank on a known alignment and exact contact
+
+Current coverage is **52 / 167** (main 17 / 73; companion 35 / 94).
+`KnownAlignmentRank.main_13_7` packages all three source assertions on
+the actual intersection rank, with the stronger full pair deficiency
+included. The fixed-tau estimate follows from T1.9 with zero additional
+error after a tau-dependent threshold. No uniform assertion as tau varies
+with N is made. The compatible uniform half bound and height-one o(B)
+bound include the exact contact distance L, where the true windows share
+at most one position.
+
+This is a proof simplification from the already proved residual estimate:
+short-basis extraction and norm-polynomial witnesses are unnecessary for
+this known-line result. P1-MATH-0042 records that replacement and its
+stronger full pair-deficiency scope. There are 42 confirmed improvements.
+See the [full statement alignment](KNOWN_ALIGNMENT_RANK_ALIGNMENT.md).
+
+The full build passed (9,311 jobs), all 3,349 theorem/lemma declarations
+passed the actual axiom audit, and all 1,064 coverage/finding names were
+checked directly by Lean. Only propext, Classical.choice and Quot.sound
+occur. Original source bytes and all statement hashes remain unchanged.
+The nonaligned rank and triple results remain open. No new external
+mathematical input, Paper C port, manuscript revision or Palomar registration
+is introduced. Ubuntu root free space is 17.98 GiB.
