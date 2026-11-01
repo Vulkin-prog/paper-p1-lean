@@ -5033,7 +5033,10 @@
       ],
       "mathematical_changes": [],
       "notes": "Complete companion T19.9, with a single actual finite-start family selected before all asymptotic tolerances. The family is eventually regular, nonempty, compatible and connected under the canonical square-class partition, and contains no good pair for any private-prime threshold. Its exact original infinite joint and centered moments are transported from the actual peeled finite-character component. Full and compatible nullity coincide. Both lower-bound coefficients tend to kappa=6 log(2)/17, giving size >=(kappa-o(1))*L and relative nullity >=(kappa-o(1))*L^2. The explicit centered comparison is c >=(1-2/sqrt(L))*q>0. The literal dynamic peeling density avoids interchanging the choice of a family and epsilon. All prime budgets, actual cardinalities, ranks, peeling denominator positivity, connectedness and index/coefficient transports are proved; no target estimate or external mathematical assumption is supplied. See QUADRATIC_COMPONENT_ALIGNMENT.md.",
-      "validation_commit": "f4f13e7e119cced9399a101cabb825472f2c417d"
+      "validation_commit": "ca008d7f75908a671f84cd685bf8aba9f2132aa4",
+      "validation_history": [
+        "f4f13e7e119cced9399a101cabb825472f2c417d"
+      ]
     },
     {
       "label": "p1:limits:erasure",

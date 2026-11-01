@@ -141,3 +141,5 @@ Palomar registration is introduced.
 Validated input checkpoint: [f4f13e7e119cced9399a101cabb825472f2c417d](https://github.com/Vulkin-prog/paper-p1-lean/commit/f4f13e7e119cced9399a101cabb825472f2c417d).
 
 Completion validation: Lean v4.36.0-rc2 full build passed (9905 jobs); actual axiom audit passed for all 4713 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2428 distinct ledger/finding declarations were checked directly by Lean. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.72 GiB. Full T19.9 is complete, with a fixed family before every epsilon and the actual infinite-model moments. Coverage is 68/167 (main 23/73, companion 45/94); confirmed improvements remain 67. No target component assumption, external input, Paper C port, manuscript-byte change or Palomar registration.
+
+Validated complete proof checkpoint: [ca008d7f75908a671f84cd685bf8aba9f2132aa4](https://github.com/Vulkin-prog/paper-p1-lean/commit/ca008d7f75908a671f84cd685bf8aba9f2132aa4).
