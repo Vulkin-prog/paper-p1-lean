@@ -1665,3 +1665,7 @@ The full build passed (9,551 jobs), the actual axiom audit passed for
 all 3,870 declarations, and Lean checked all 1,585 distinct
 coverage/finding names. Only propext, Classical.choice and Quot.sound
 occur; original manuscript bytes are unchanged.
+
+Validated exact cutoff-asymptotic checkpoint (9,551 build jobs;
+3,870 audited declarations; 1,585 directly checked names):
+[e220886c65aecc4b2f1f7ca78165ab6b2b6a60a1](https://github.com/Vulkin-prog/paper-p1-lean/commit/e220886c65aecc4b2f1f7ca78165ab6b2b6a60a1).
