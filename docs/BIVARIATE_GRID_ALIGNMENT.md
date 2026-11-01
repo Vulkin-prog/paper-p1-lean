@@ -69,3 +69,7 @@ actual axiom audit, permitting only propext, Classical.choice and
 Quot.sound. All 1,392 distinct coverage/finding names were checked
 directly by Lean. Available Ubuntu-root space is 17.75 GiB after the
 selected dependency downloads. Original manuscript bytes are unchanged.
+
+Validated bivariate grid checkpoint (9,477 build jobs; 3,677 audited
+declarations; 1,392 directly checked coverage/finding names):
+[227b402575302cfdd178e7820c980874611a57c5](https://github.com/Vulkin-prog/paper-p1-lean/commit/227b402575302cfdd178e7820c980874611a57c5).
