@@ -2931,3 +2931,11 @@ third-cumulant estimate. All pair positions and finite exceptional
 numerator/denominator cases are checked. Coverage is 67/167 and confirmed
 improvements are 67. See
 [complete overlap alignment](RATIONAL_TRIPLE_OVERLAP_ALIGNMENT.md).
+
+T19.9 preparatory checkpoint: the actual late regular population, its
+compatible cylinder, absence of leading good pairs, literal 17/12 prime
+budget, actual rank-density envelope and integer peeling-order loss are
+proved. These source inputs do not supply the final selected component
+by assumption. No new independent mathematical finding is counted;
+coverage and confirmed improvements stay 67/167 and 67. See
+[remaining component scope](QUADRATIC_COMPONENT_ALIGNMENT.md).

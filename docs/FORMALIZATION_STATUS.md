@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4603 audited theorem/lemma declarations**. This
+- The project currently has **4671 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2154,3 +2154,21 @@ additional arithmetic relations and third-cumulant exponent remain open.
 See [complete overlap alignment](RATIONAL_TRIPLE_OVERLAP_ALIGNMENT.md).
 
 Rational-overlap verification: Lean v4.36.0-rc2 full build passed (9863 jobs); actual axiom audit passed for all 4603 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2318 distinct ledger/finding names were checked directly by Lean. All 138 source manifest entries and 167 numbered records are intact. Ubuntu available space: 16.78 GiB. Full main 14.2, the integer equality classification and the attained next-value bound are proved; no arithmetic rank or counting hypothesis, external input, Paper C port or Palomar registration. Coverage is 67/167 (main 23/73, companion 44/94) and confirmed improvements are 67.
+
+## Quadratic-component construction — actual population, rank and order inputs
+
+For T19.9 the actual late prime-cylinder population is now constructed
+and counted. A concrete common sample proves every subfamily compatible;
+its actual position excludes every leading good pair. The actual three-band
+prime cover, its literal 17/12 PNT budget and the actual finite-character
+rank bound are proved. The regular population has size asymptotic to
+N/(2q) and its rank-density envelope tends to 17/(6log2).
+
+The literal integer peeling order tends to infinity, stays below L, and
+its actual positive-mass loss is at most 2/sqrt(L). The selected canonical
+component and its original-model moment/nullity/connectedness transport
+remain to be instantiated. T19.9 is in progress; coverage stays 67/167
+and confirmed findings stay 67. See
+[actual quadratic-component inputs](QUADRATIC_COMPONENT_ALIGNMENT.md).
+
+Quadratic-component input verification: Lean v4.36.0-rc2 full build passed (9,883 jobs); actual axiom audit passed for all 4,671 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,386 distinct ledger/finding names were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.75 GiB. T19.9 remains in progress for the selected-component conclusion; coverage stays 67/167 and confirmed findings stay 67. No new external input, Paper C port, manuscript-byte change or Palomar registration.

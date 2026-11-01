@@ -711,3 +711,13 @@ public import PaperP1.Arithmetic.RationalTripleDensity
 public import PaperP1.Arithmetic.RationalTripleSmallRatios
 public import PaperP1.Arithmetic.RationalTripleOverlap
 public import PaperP1.Arithmetic.RationalTripleIntegers
+public import PaperP1.Arithmetic.LateWindowPrimes
+public import PaperP1.Asymptotics.ScaledPrimeCounts
+public import PaperP1.Asymptotics.LatePrimeBudget
+public import PaperP1.Arithmetic.LatePrimeStarts
+public import PaperP1.Model.LatePrimeWindows
+public import PaperP1.Model.RawPrimeRank
+public import PaperP1.Asymptotics.LateWindowRank
+public import PaperP1.Asymptotics.LatePrimePopulation
+public import PaperP1.Asymptotics.LatePrimeRankDensity
+public import PaperP1.Asymptotics.LatePeelingOrder

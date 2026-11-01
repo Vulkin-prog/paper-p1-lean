@@ -1658,3 +1658,18 @@ primitive shape and the attained next-value bound are proved as well.
 No additional square-class rank, private-prime estimate, Paper C port or
 literature assumption is introduced. See
 [exact alignment](RATIONAL_TRIPLE_OVERLAP_ALIGNMENT.md).
+
+## Actual late prime-cylinder population and the 17/12 rank budget
+
+Stable ID: `P1-ARITH-LATE-QUADRATIC-COMPONENT`. Status: **proved population,
+rank and order inputs; selected-component conclusion in progress**.
+
+The raw prime support is covered by three literal finite prime intervals.
+The already proved PNT is transported through the exact divided and
+shifted natural cutoffs, giving the source leading coefficient 17/12.
+All actual finite-character ranks are bounded internally by the actual
+raw prime support. The actual regular prime-cylinder population, common
+compatible sample, exclusion of good edges, size asymptotic and integer
+peeling order/mass error are proved. The source's final selected-component
+conclusions are not assumed or counted complete. No new external input
+or Paper C port. See [scope](QUADRATIC_COMPONENT_ALIGNMENT.md).
