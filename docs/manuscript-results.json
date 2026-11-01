@@ -207,7 +207,8 @@
       "mathematical_changes": [
         "P1-MATH-0035"
       ],
-      "notes": "All source conclusions hold for the actual deterministic good-edge family with actual positive joint mass, dependence, leading slope and private normalized prime coordinates. The normalized union deduplicates values. Its even parity map is injective with range S_x+S_y and rank |U|-1, at least (2-1/b)*L-1. At most (L+1)^2 integer motifs in [-bL,bL] occur, and one fixed-pattern anchor determines both starts. The general finite compression needs only one normalized coincidence and private coordinates; local regularity is automatic. See docs/GOOD_EDGE_COMPRESSION_ALIGNMENT.md."
+      "notes": "All source conclusions hold for the actual deterministic good-edge family with actual positive joint mass, dependence, leading slope and private normalized prime coordinates. The normalized union deduplicates values. Its even parity map is injective with range S_x+S_y and rank |U|-1, at least (2-1/b)*L-1. At most (L+1)^2 integer motifs in [-bL,bL] occur, and one fixed-pattern anchor determines both starts. The general finite compression needs only one normalized coincidence and private coordinates; local regularity is automatic. See docs/GOOD_EDGE_COMPRESSION_ALIGNMENT.md.",
+      "validation_commit": "37c99c7ea71d70271902fd12d1b52494646ec919"
     },
     {
       "label": "p1:alg:centred",

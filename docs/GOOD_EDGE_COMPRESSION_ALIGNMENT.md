@@ -70,3 +70,6 @@ not ported; the even-image/normalization proof here is new P1 code.
 No good-edge count, mass asymptotic or pair-profile estimate is assumed
 or proved by this compression lemma. Those are separate numbered results.
 No revised manuscript or Palomar registration is made.
+
+Validated implementation of article Lemma 3.5 and P1-MATH-0035:
+[37c99c7ea71d70271902fd12d1b52494646ec919](https://github.com/Vulkin-prog/paper-p1-lean/commit/37c99c7ea71d70271902fd12d1b52494646ec919).

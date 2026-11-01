@@ -662,3 +662,6 @@ coverage/finding names. Coverage is 48 / 167: main 16 / 73,
 companion 32 / 94, with 35 confirmed improvements. The pair mass
 and complete profile remain open; no Palomar registration is made.
 Ubuntu root free space is 17.72 GiB.
+
+Validated implementation of article Lemma 3.5 and P1-MATH-0035:
+[37c99c7ea71d70271902fd12d1b52494646ec919](https://github.com/Vulkin-prog/paper-p1-lean/commit/37c99c7ea71d70271902fd12d1b52494646ec919).

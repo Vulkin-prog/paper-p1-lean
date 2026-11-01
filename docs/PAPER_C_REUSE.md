@@ -348,3 +348,6 @@ and anchor/motif assertions in new modules. This avoids importing its
 separate two-start representation. The actual P1 good-edge definition
 retains infinite-model positive joint probability and dependence.
 See [alignment](GOOD_EDGE_COMPRESSION_ALIGNMENT.md).
+
+Validated implementation of article Lemma 3.5 and P1-MATH-0035:
+[37c99c7ea71d70271902fd12d1b52494646ec919](https://github.com/Vulkin-prog/paper-p1-lean/commit/37c99c7ea71d70271902fd12d1b52494646ec919).

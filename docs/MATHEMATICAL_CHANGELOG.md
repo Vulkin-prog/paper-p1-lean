@@ -1339,3 +1339,6 @@ theorem/lemma declarations passed the actual axiom audit with only
 coverage/finding names were checked directly by Lean. Coverage is
 48 / 167, with 35 confirmed improvements. Original source bytes are
 preserved; no manuscript revision or Palomar registration is made.
+
+Validated implementation of article Lemma 3.5 and P1-MATH-0035:
+[37c99c7ea71d70271902fd12d1b52494646ec919](https://github.com/Vulkin-prog/paper-p1-lean/commit/37c99c7ea71d70271902fd12d1b52494646ec919).
