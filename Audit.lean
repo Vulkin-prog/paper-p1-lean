@@ -1384,6 +1384,9 @@ import PaperP1
 #print axioms PaperP1.PhysicalNormalizedMatches.physical_b_bound
 #print axioms PaperP1.PolynomialEndpointBudget.source_size_bound
 #print axioms PaperP1.PolynomialEndpointBudget.exceptional_polynomial
+#print axioms PaperP1.PositiveProductPairs.positive_values_count
+#print axioms PaperP1.PositiveProductPairs.product_fibre_count
+#print axioms PaperP1.PositiveProductPairs.uniform_count
 #print axioms PaperP1.PrescribedPatternDivisors.prescribed_pos
 #print axioms PaperP1.PrescribedPatternDivisors.newPart_pos
 #print axioms PaperP1.PrescribedPatternDivisors.coordinate_split
@@ -2373,6 +2376,15 @@ import PaperP1
 #print axioms PaperP1.TargetUnionResidual.row_rank_sublinear
 #print axioms PaperP1.TwoProgressionSublinear.rank_sublinear
 #print axioms PaperP1.TwoProgressionSublinear.row_rank_sublinear
+#print axioms PaperP1.TwoSmallKernelCount.dyadic_count
+#print axioms PaperP1.TwoSmallKernelCount.comparable_count
+#print axioms PaperP1.TwoSmallKernelCount.real_bounds_count
+#print axioms PaperP1.TwoSmallKernelCount.companion_T6_1
+#print axioms PaperP1.TwoSmallKernelCount.critical_block_count
+#print axioms PaperP1.TwoSmallKernelFibres.largeKernel_pos
+#print axioms PaperP1.TwoSmallKernelFibres.kernel_factorization
+#print axioms PaperP1.TwoSmallKernelFibres.largeKernel_le
+#print axioms PaperP1.TwoSmallKernelFibres.fixed_offsets
 #print axioms PaperP1.uniformLittleOOn_zero
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
 #print axioms PaperP1.VerySmallTail.moment_bound

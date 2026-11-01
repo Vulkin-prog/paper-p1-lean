@@ -2799,3 +2799,15 @@ positivity verified uniformly. No count or analytic inequality is assumed.
 
 Corollary 9.2 is complete; coverage is 59/167. See
 [alignment](SHORT_OLD_SPACE_PROJECTION_ALIGNMENT.md).
+
+## P1-MATH-0061 — Uniform real-cap count for two small kernels
+
+Full companion T6.1 holds in the stronger form #S<=Q*N^epsilon, with a
+threshold before every real cap Q>=0. Actual kernel heights from the centre
+interval permit a fixed polynomial divisor bound independently of Q. The
+q version is uniform in every real q, including q varying with N. Cutoff
+and window radius are independent: H<=D*logN and any fixed polylogarithmic
+width suffice, with no condition H>block diameter. The literal critical
+B=L+1 source version and positivity are proved. All support, kernel-pair,
+Pell-fibre, offset and interval-cover counts are proved and summed.
+Coverage is 60/167; see [complete alignment](TWO_SMALL_KERNEL_ALIGNMENT.md).

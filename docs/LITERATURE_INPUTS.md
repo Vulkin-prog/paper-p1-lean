@@ -1497,3 +1497,16 @@ No old-space projection, motif count, Holder estimate, norm transfer or
 old-generator height bound is an unproved input. The broader scope is
 P1-MATH-0060; no new Paper C port or literature assumption is introduced.
 See [complete alignment](SHORT_OLD_SPACE_PROJECTION_ALIGNMENT.md).
+
+## Complete two-small-kernel centre count
+
+T6.1 uses the already proved canonical odd-factor decomposition, uniform
+logarithmic prime-support count, divisor subpolynomiality and uniform
+positive quadratic count. Every actual positive kernel pair has polynomial
+height derived from the value interval. Finite product fibres inject into
+actual divisors, and actual fixed-kernel centre fibres are covered by the
+proved Pell count, including its factorizable case. All offset and interval
+covers are counted explicitly. No external or target count is an unproved
+input. The stronger real-cap/cutoff/width scope is P1-MATH-0061; no new
+Paper C port or literature assumption is introduced. See
+[complete alignment](TWO_SMALL_KERNEL_ALIGNMENT.md).

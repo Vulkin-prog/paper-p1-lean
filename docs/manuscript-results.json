@@ -3683,11 +3683,26 @@
       "source": "companion_sections/half_counts.tex",
       "line": 20,
       "sha256": "8ea560b886a7b2a0904892a85d4c6971d05302a4bbad238cef5ffb8d7025189e",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.PositiveProductPairs.positive_values_count",
+        "PaperP1.PositiveProductPairs.product_fibre_count",
+        "PaperP1.PositiveProductPairs.uniform_count",
+        "PaperP1.TwoSmallKernelFibres.largeKernel_pos",
+        "PaperP1.TwoSmallKernelFibres.kernel_factorization",
+        "PaperP1.TwoSmallKernelFibres.largeKernel_le",
+        "PaperP1.TwoSmallKernelFibres.fixed_offsets",
+        "PaperP1.TwoSmallKernelCount.dyadic_count",
+        "PaperP1.TwoSmallKernelCount.comparable_count",
+        "PaperP1.TwoSmallKernelCount.real_bounds_count",
+        "PaperP1.TwoSmallKernelCount.companion_T6_1",
+        "PaperP1.TwoSmallKernelCount.critical_block_count"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0061"
+      ],
+      "notes": "Full actual two-small-kernel count: arbitrary positive comparable intervals, critical B=L+1 blocks, fixed polylogarithmic offset widths and logarithmic cutoffs. Stronger real-cap bound Q*N^epsilon has a threshold before Q; hence the q formulation is uniform even in varying real q. Small-prime supports, positive kernel pairs and fixed-coefficient Pell fibres are all counted by proved estimates, with source positivity and literal value identities. No H>diameter hypothesis is needed."
     },
     {
       "label": "p13:half:smooth",

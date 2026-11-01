@@ -564,3 +564,9 @@ public import PaperP1.Model.OldSpaceProjection
 public import PaperP1.Model.ProjectedSplitTuples
 
 public import PaperP1.Probability.FiniteHolder
+
+public import PaperP1.Arithmetic.PositiveProductPairs
+
+public import PaperP1.Asymptotics.TwoSmallKernelFibres
+
+public import PaperP1.Asymptotics.TwoSmallKernelCount

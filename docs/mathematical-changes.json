@@ -3156,6 +3156,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "c44a304deab3c227f2ffe0ac38272e8eb5a7e598"
+    },
+    {
+      "id": "P1-MATH-0061",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:half:small-kernels",
+        "number": "T6.1",
+        "page": 33,
+        "source": "companion_sections/half_counts.tex",
+        "line": 20,
+        "statement_sha256": "8ea560b886a7b2a0904892a85d4c6971d05302a4bbad238cef5ffb8d7025189e"
+      },
+      "original_assumption": "Companion Lemma T6.1 fixes q>0, uses blocks of logarithmic width B, and chooses H=C_D*B larger than the block diameters. Its bound is stated with constants depending on q.",
+      "finding": "The actual centre count is at most Q*N^epsilon for any nonnegative real product cap Q, with one threshold before Q and all varying cutoffs, offsets and centre families. The cutoff only needs H<=D*logN and need not exceed the block diameter; the offset width can be any fixed polylogarithm. Actual large kernels individually have polynomial height derived from the centre interval. Grouping positive kernel pairs by their product and injecting each fibre into divisors gives Q*N^eta uniformly in Q. Actual small-prime supports have uniformly subpolynomial choices, and each resulting pair of full linear kernels has a proved subpolynomial Pell fibre, including the factorizable case. Finite offset and interval covers are summed. Consequently the q formulation is uniform for every real q after the same threshold, even if q varies with N.",
+      "evidence": [
+        "PaperP1.PositiveProductPairs.positive_values_count",
+        "PaperP1.PositiveProductPairs.product_fibre_count",
+        "PaperP1.PositiveProductPairs.uniform_count",
+        "PaperP1.TwoSmallKernelFibres.largeKernel_pos",
+        "PaperP1.TwoSmallKernelFibres.kernel_factorization",
+        "PaperP1.TwoSmallKernelFibres.largeKernel_le",
+        "PaperP1.TwoSmallKernelFibres.fixed_offsets",
+        "PaperP1.TwoSmallKernelCount.dyadic_count",
+        "PaperP1.TwoSmallKernelCount.comparable_count",
+        "PaperP1.TwoSmallKernelCount.real_bounds_count",
+        "PaperP1.TwoSmallKernelCount.companion_T6_1",
+        "PaperP1.TwoSmallKernelCount.critical_block_count"
+      ],
+      "proposed_revision": "State the stronger Q*N^epsilon count with a threshold independent of the real cap Q>=0. Retain N^(q+epsilon) as a corollary, allowing real q to vary. Separate the logarithmic cutoff from the fixed polylogarithmic offset width, and remove the unused condition H>block diameter from this lemma. Explain that polynomial actual kernel heights make the divisor bound uniform in Q.",
+      "impact": "Full companion Lemma T6.1 is complete. Coverage is 60/167 (main 19/73, companion 41/94), with 61 confirmed improvements. The smooth-modulus and private-prime certificate steps of the conditional half-count remain separate open results.",
+      "validation": "Lean v4.36.0-rc2 full build passed (9,713 jobs); actual axiom audit passed for all 4,282 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 1,997 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.38 GiB. No unproved centre/fibre count, new literature input, new Paper C port, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
