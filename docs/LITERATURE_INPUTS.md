@@ -1560,3 +1560,16 @@ schedule are proved locally. No external theorem or asymptotic target count
 is introduced. The fewer-target bounds in the finite stage inequalities
 remain explicit arguments until the simultaneous induction is completed.
 Main 10.1 is still in progress; see [scope](CONDITIONAL_HALF_COUNT_ALIGNMENT.md).
+
+## Complete simultaneous conditional half-count induction
+
+`ConditionalHalfCount.uniform_count` actually instantiates each finite
+one-/two-deletion bound by strong induction with fewer new targets and
+every fixed number of old sources. All actual classes and finite constants
+are counted. The complete 9.2 and T6.1/T6.2/T6.3 results are proved internal
+inputs, not assumptions. Actual effective-image selections, full old spans,
+value-height-to-centre-height transfer, empty old-block recentering and
+critical-band width transfer are proved. There is no unproved asymptotic
+count or new literature input. Main 10.1 is now complete; P1-MATH-0064
+records the constant-cutoff/full-squarefree proof improvement. No new Paper C
+port is introduced. See [complete alignment](CONDITIONAL_HALF_COUNT_ALIGNMENT.md).

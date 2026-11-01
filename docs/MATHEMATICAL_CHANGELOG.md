@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**63 mathematical improvements are confirmed; no error in a manuscript conclusion
+**64 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -2838,3 +2838,20 @@ are included. A common critical radius proves the literal N*B threshold,
 and positivity identifies every actual signed value. Coverage is 62/167;
 see [complete alignment](ANCHOR_CERTIFICATE_ALIGNMENT.md). The separate
 smooth-modulus lemma retains its A>=2 range.
+
+## P1-MATH-0064 — Constant selection cutoff and full squarefree initial exception
+
+The complete 10.1 induction uses the fixed threshold m=t+25, with
+t=5(r+s-1)+1 at the relevant target order. Complete 9.2 handles every
+all-short witness eventually, and constant-selection T6.2 handles every
+remaining long selection. The initial two-kernel exception uses H=0,
+hence complete squarefree kernels. The actual finite schedule j/(2J)
+ends at one half exactly. Every one-/two-deletion count is instantiated
+by strong induction with fewer new targets and all old-source counts.
+
+The final effective-block theorem counts arbitrary finite candidate sets.
+Active centre heights follow from actual value heights and logarithmic
+width; empty old blocks can be recentered without changing their full
+span. Actual even selections, absolute nonzero vectors and unrestricted
+old spans are preserved. Full main 10.1 is complete, bringing coverage
+to 63/167. See [complete alignment](CONDITIONAL_HALF_COUNT_ALIGNMENT.md).

@@ -642,3 +642,15 @@ public import PaperP1.Asymptotics.HalfCountStageReceivers
 public import PaperP1.Asymptotics.HalfCountStages
 
 public import PaperP1.Combinatorics.FiniteStageCounts
+
+public import PaperP1.Arithmetic.EffectiveWindowLists
+
+public import PaperP1.Asymptotics.BlockCentreHeights
+
+public import PaperP1.Asymptotics.ConditionalHalfCount
+
+public import PaperP1.Asymptotics.EffectiveHalfCount
+
+public import PaperP1.Asymptotics.HalfCountPowerBounds
+
+public import PaperP1.Asymptotics.ValueHeightHalfCount

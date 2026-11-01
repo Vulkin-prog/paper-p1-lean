@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 62 / 167 numbered results proved.**
+**Status: active formalization, 63 / 167 numbered results proved.**
 Companion T12.1 now proves the actual retained class is hereditary, has a unique dependent pair, and has boundary nullity at most 4L/3+1. See the
 [complete retained-class alignment](docs/RETAINED_CLASS_ALIGNMENT.md).
 Companion T12.2 now proves the actual large-boundary mass estimate with the source least cutoff, and strengthens its decay to N^(-5/3). See the
@@ -35,9 +35,11 @@ and moduli suffice. See the [complete smooth-modulus alignment](docs/LARGE_SMOOT
 Companion T6.3 now constructs the actual received certificates and proves both
 incoming and outgoing degrees. Its complete scope extends to A>1 and both
 directions share one finite subset bound. See the [complete certificate alignment](docs/ANCHOR_CERTIFICATE_ALIGNMENT.md).
-Main Theorem 10.1 is in progress: the actual list model, deletion fibres,
-all-short case, survivor confinement and finite receiver-class counts are proved.
-Its simultaneous asymptotic induction and final source alignment remain open. See the [current half-count scope](docs/CONDITIONAL_HALF_COUNT_ALIGNMENT.md).
+Main Theorem 10.1 is proved by the full simultaneous induction and actual
+stage counts, with arbitrary finite effective blocks, full old spans and
+actual value-height/critical-width alignment. A constant short-selection cap
+and full squarefree kernels suffice in its iteration. See the
+[complete half-count alignment](docs/CONDITIONAL_HALF_COUNT_ALIGNMENT.md).
 Companion T1.9 now covers the full enlarged geometric alignment, including
 zero exact units and both orientations, with its fixed-height enlarged-prime
 rate. The earlier one-unit coverage error and its subsequent closure are

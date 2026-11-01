@@ -934,6 +934,13 @@ import PaperP1
 #print axioms PaperP1.DyadicUnitWordHosts.integer_dyadic_sum
 #print axioms PaperP1.DyadicUnitWordHosts.signed_hosts_integer
 #print axioms PaperP1.DyadicUnitWordHosts.signed_hosts_twice_forward
+#print axioms PaperP1.EffectiveWindowLists.mem_lists
+#print axioms PaperP1.EffectiveWindowLists.value_at_difference
+#print axioms PaperP1.EffectiveWindowLists.effective_nonempty
+#print axioms PaperP1.EffectiveWindowLists.mem_blockValues_of_distance
+#print axioms PaperP1.EffectiveWindowLists.even_space_selection
+#print axioms PaperP1.EffectiveWindowLists.lift_selection
+#print axioms PaperP1.EffectiveWindowLists.subset_window_lists
 #print axioms PaperP1.EnlargedPairGeometry.geometric_swap
 #print axioms PaperP1.EnlargedPairGeometry.union_swap
 #print axioms PaperP1.EnlargedPairGeometry.offset_abs
@@ -2015,6 +2022,13 @@ import PaperP1
 #print axioms PaperP1.AnchorRelationCertificates.critical_radius_control
 #print axioms PaperP1.AnchorRelationCertificates.companion_T6_3
 #print axioms PaperP1.AnchorThresholdBudget.threshold_power
+#print axioms PaperP1.BlockCentreHeights.lower_pos
+#print axioms PaperP1.BlockCentreHeights.default_bounds
+#print axioms PaperP1.BlockCentreHeights.centre_bounds
+#print axioms PaperP1.BlockCentreHeights.logarithmic_radius
+#print axioms PaperP1.BlockCentreHeights.radius_pos
+#print axioms PaperP1.BlockCentreHeights.distance_le_radius
+#print axioms PaperP1.BlockCentreHeights.radius_logarithmic
 #print axioms PaperP1.BoundaryCutoff.condition_exists
 #print axioms PaperP1.BoundaryCutoff.cutoff_spec
 #print axioms PaperP1.BoundaryCutoff.cutoff_minimal
@@ -2058,6 +2072,10 @@ import PaperP1
 #print axioms PaperP1.ComparableSplitProductCount.dyadic_count
 #print axioms PaperP1.ComparableSplitProductCount.companion_T5_2
 #print axioms PaperP1.ComparableSplitProductCount.companion_T5_2_real_bounds
+#print axioms PaperP1.ConditionalHalfCount.cons_mem
+#print axioms PaperP1.ConditionalHalfCount.zero_count
+#print axioms PaperP1.ConditionalHalfCount.induction_step
+#print axioms PaperP1.ConditionalHalfCount.uniform_count
 #print axioms PaperP1.ConditionalPoolLower.lowerConstant_pos
 #print axioms PaperP1.ConditionalPoolLower.cast_sub_one_lower
 #print axioms PaperP1.ConditionalPoolLower.binary_factor_lower
@@ -2104,6 +2122,9 @@ import PaperP1
 #print axioms PaperP1.DyadicQuadraticBudgets.indices_card_budget
 #print axioms PaperP1.DyadicQuadraticBudgets.logarithmic_card_budget
 #print axioms PaperP1.DyadicUnitFourierCount.all_heights
+#print axioms PaperP1.EffectiveHalfCount.old_blocks_subset
+#print axioms PaperP1.EffectiveHalfCount.uniform_effective_count
+#print axioms PaperP1.EffectiveHalfCount.critical_centre_count
 #print axioms PaperP1.EffectiveOrderMoments.errorConstant_pos
 #print axioms PaperP1.EffectiveOrderMoments.finite_exception_bound
 #print axioms PaperP1.EffectiveOrderMoments.factorial_bound
@@ -2211,6 +2232,9 @@ import PaperP1
 #print axioms PaperP1.HalfCountExceptionalSets.small_kernel_count
 #print axioms PaperP1.HalfCountExceptionalSets.outside_pairs
 #print axioms PaperP1.HalfCountExceptionalSets.stage_confinement
+#print axioms PaperP1.HalfCountPowerBounds.rare_coordinate_bound
+#print axioms PaperP1.HalfCountPowerBounds.removed_power_bound
+#print axioms PaperP1.HalfCountPowerBounds.finite_assembly
 #print axioms PaperP1.HalfCountSchedule.exists_small_step
 #print axioms PaperP1.HalfCountSchedule.x_zero
 #print axioms PaperP1.HalfCountSchedule.x_last
@@ -2526,6 +2550,7 @@ import PaperP1
 #print axioms PaperP1.TwoSmallKernelFibres.fixed_offsets
 #print axioms PaperP1.uniformLittleOOn_zero
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
+#print axioms PaperP1.ValueHeightHalfCount.article_10_1
 #print axioms PaperP1.VerySmallTail.moment_bound
 #print axioms PaperP1.VerySmallTail.power_threshold
 #print axioms PaperP1.VerySmallTail.companion_T19_6

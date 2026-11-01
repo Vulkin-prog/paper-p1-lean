@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **62 / 167**: article Propositions 3.1, 4.1, 5.2, 9.1, 13.7, 19.2, Corollary 9.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3.
+- Numbered results completed: **63 / 167**: article Propositions 3.1, 4.1, 5.2, 9.1, 13.7, 19.2, Corollary 9.2, Theorem 10.1 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4428 audited theorem/lemma declarations**. This
+- The project currently has **4453 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2029,3 +2029,22 @@ has not yet instantiated their explicit fewer-target cardinal arguments.
 The complete main 10.1 count and its final geometric alignment remain open;
 numbered coverage stays 62/167 and confirmed improvements stay 63. See
 [current half-count alignment](CONDITIONAL_HALF_COUNT_ALIGNMENT.md).
+
+## Full conditional half-count — main Theorem 10.1 complete
+
+The simultaneous strong induction now instantiates every actual fewer-
+target list count for all fixed old-source counts. All initial, removed
+and final classes are counted with the actual finite stage schedule and
+common thresholds before every position and block geometry. The proof
+uses the fixed cap t+25 and H=0, recorded as P1-MATH-0064.
+
+Actual effective even-selection images lift to the exact offset witnesses,
+retaining nonzero vectors in each own space. Arbitrary finite candidate
+sets and actual value heights are included; active centre heights follow
+from the values, and empty old blocks can be recentered harmlessly.
+Full old spans, overlap, dependence and literal critical B=L+1 are covered.
+Main 10.1 is complete. Coverage is 63/167 (main 20/73, companion 43/94),
+with 64 confirmed improvements. See
+[complete alignment](CONDITIONAL_HALF_COUNT_ALIGNMENT.md).
+
+Full main 10.1 verification: Lean v4.36.0-rc2 full build passed (9,797 jobs); actual axiom audit passed for all 4,453 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,168 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.24 GiB. No unproved local or target count, new literature input, new Paper C port, manuscript-byte change or Palomar registration.

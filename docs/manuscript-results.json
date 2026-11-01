@@ -1119,7 +1119,7 @@
       "source": "main_sections/half_counts.tex",
       "line": 21,
       "sha256": "25a435d2425f2c0cd459d50bd8eeff0c2427feacbe79bb43cd0acfa441a8c3a6",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.FinTupleErasure.determined",
         "PaperP1.FinTupleErasure.fixed_coordinate_count",
@@ -1186,16 +1186,42 @@
         "PaperP1.HalfCountStages.removed_source",
         "PaperP1.FiniteStageCounts.initial_cover",
         "PaperP1.FiniteStageCounts.decreasing_identity",
-        "PaperP1.FiniteStageCounts.decreasing_bound"
+        "PaperP1.FiniteStageCounts.decreasing_bound",
+        "PaperP1.EffectiveWindowLists.mem_lists",
+        "PaperP1.EffectiveWindowLists.value_at_difference",
+        "PaperP1.EffectiveWindowLists.effective_nonempty",
+        "PaperP1.EffectiveWindowLists.mem_blockValues_of_distance",
+        "PaperP1.EffectiveWindowLists.even_space_selection",
+        "PaperP1.EffectiveWindowLists.lift_selection",
+        "PaperP1.EffectiveWindowLists.subset_window_lists",
+        "PaperP1.BlockCentreHeights.lower_pos",
+        "PaperP1.BlockCentreHeights.default_bounds",
+        "PaperP1.BlockCentreHeights.centre_bounds",
+        "PaperP1.BlockCentreHeights.logarithmic_radius",
+        "PaperP1.BlockCentreHeights.radius_pos",
+        "PaperP1.BlockCentreHeights.distance_le_radius",
+        "PaperP1.BlockCentreHeights.radius_logarithmic",
+        "PaperP1.ConditionalHalfCount.cons_mem",
+        "PaperP1.ConditionalHalfCount.zero_count",
+        "PaperP1.ConditionalHalfCount.induction_step",
+        "PaperP1.ConditionalHalfCount.uniform_count",
+        "PaperP1.EffectiveHalfCount.old_blocks_subset",
+        "PaperP1.EffectiveHalfCount.uniform_effective_count",
+        "PaperP1.EffectiveHalfCount.critical_centre_count",
+        "PaperP1.HalfCountPowerBounds.rare_coordinate_bound",
+        "PaperP1.HalfCountPowerBounds.removed_power_bound",
+        "PaperP1.HalfCountPowerBounds.finite_assembly",
+        "PaperP1.ValueHeightHalfCount.article_10_1"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
         "P1-MATH-0060",
         "P1-MATH-0061",
         "P1-MATH-0062",
-        "P1-MATH-0063"
+        "P1-MATH-0063",
+        "P1-MATH-0064"
       ],
-      "notes": "Preparatory only: actual injective lists, own-space nonzero even witnesses, enlarged-old-span deletion fibres and the complete all-short constant-size count are proved. Actual decreasing survivor sets, zero-cutoff small-kernel exceptions, deterministic confinement of every surviving long source, receiver extraction for each removed list, actual certificate-pair populations and finite new/old receiver list bounds are proved. A finite exact schedule reaches exponent one half with an arbitrarily small fixed increment. The finite loss inequalities take explicit actual fewer-target counts as arguments; the simultaneous asymptotic induction has not yet instantiated them. The complete induction and final geometric/effective-space alignment remain open, so this is not a completed numbered result."
+      "notes": "Full main Theorem 10.1. A simultaneous strong induction in the number of new targets instantiates every actual one-/two-deletion count, uniformly in all fixed numbers of old sources. The actual initial exception, all-short case, decreasing-stage losses, deterministic confinement and final surviving set are all counted; every common threshold precedes centre positions and block geometry. The finite exact schedule ends at one half and all role/stage constants are absorbed. Actual nonzero vectors in each own effective even-selection image lift to actual even offset selections. Full old spans, overlapping/dependent/empty old blocks, arbitrary finite candidate sets, actual value heights, signed-distance geometry and literal critical B=L+1 are included. Active centre heights are deduced from actual values; empty old blocks are recentered harmlessly. The proof works with H=0 and a constant selection-size threshold t+25. No target count or unproved literature input is assumed."
     },
     {
       "label": "p13:half:connected",

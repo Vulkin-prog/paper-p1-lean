@@ -3329,6 +3329,61 @@
         "status": "not_integrated"
       },
       "validation_commit": "39e6799d4bdadb910084cac4c43346067a379c61"
+    },
+    {
+      "id": "P1-MATH-0064",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:half:conditional",
+        "number": "10.1",
+        "page": 26,
+        "source": "main_sections/half_counts.tex",
+        "line": 21,
+        "statement_sha256": "25a435d2425f2c0cd459d50bd8eeff0c2427feacbe79bb43cd0acfa441a8c3a6"
+      },
+      "original_assumption": "The printed half-count iteration separates selections at a growing c*loglogN threshold and uses a large cutoff H exceeding the block diameter for the initial two-small-kernel exception.",
+      "finding": "The complete simultaneous induction can use the fixed cutoff m=t+25, where t=5(r+s-1)+1 at each target order. Complete 9.2 counts all witnesses whose selections have size at most m for sufficiently large N, and the stronger constant-selection T6.2 controls every remaining long selection. The initial exception can use H=0, hence full squarefree kernels; no small-prime cutoff or extra source separation is needed there. The actual finite schedule x_j=j/(2J) reaches one half exactly, with one common threshold before every old centre and block shape. The final result also permits arbitrary finite candidate-centre sets: comparable centre heights follow for active blocks from their actual value heights, and empty old blocks can be recentered without changing the old full span.",
+      "evidence": [
+        "PaperP1.EffectiveWindowLists.mem_lists",
+        "PaperP1.EffectiveWindowLists.value_at_difference",
+        "PaperP1.EffectiveWindowLists.effective_nonempty",
+        "PaperP1.EffectiveWindowLists.mem_blockValues_of_distance",
+        "PaperP1.EffectiveWindowLists.even_space_selection",
+        "PaperP1.EffectiveWindowLists.lift_selection",
+        "PaperP1.EffectiveWindowLists.subset_window_lists",
+        "PaperP1.BlockCentreHeights.lower_pos",
+        "PaperP1.BlockCentreHeights.default_bounds",
+        "PaperP1.BlockCentreHeights.centre_bounds",
+        "PaperP1.BlockCentreHeights.logarithmic_radius",
+        "PaperP1.BlockCentreHeights.radius_pos",
+        "PaperP1.BlockCentreHeights.distance_le_radius",
+        "PaperP1.BlockCentreHeights.radius_logarithmic",
+        "PaperP1.ConditionalHalfCount.cons_mem",
+        "PaperP1.ConditionalHalfCount.zero_count",
+        "PaperP1.ConditionalHalfCount.induction_step",
+        "PaperP1.ConditionalHalfCount.uniform_count",
+        "PaperP1.EffectiveHalfCount.old_blocks_subset",
+        "PaperP1.EffectiveHalfCount.uniform_effective_count",
+        "PaperP1.EffectiveHalfCount.critical_centre_count",
+        "PaperP1.HalfCountPowerBounds.rare_coordinate_bound",
+        "PaperP1.HalfCountPowerBounds.removed_power_bound",
+        "PaperP1.HalfCountPowerBounds.finite_assembly",
+        "PaperP1.ValueHeightHalfCount.article_10_1",
+        "PaperP1.HalfCountExceptionalSets.zero_kernel",
+        "PaperP1.HalfCountExceptionalSets.small_kernel_count",
+        "PaperP1.HalfCountStageConfinement.uniform_confinement",
+        "PaperP1.ShortWitnessListsCount.uniform_short_count"
+      ],
+      "proposed_revision": "Replace the growing short/long boundary in the iteration by the fixed cap t+25, using the strengthened constant-selection smooth lemma. Define the initial exception by full squarefree kernels (H=0). Use the exact finite grid j/(2J), explicitly state that all thresholds precede source positions and block shapes, and explain the active-centre height deduction and harmless recentering of empty old blocks. Keep absolute nonzero projections and the full old value span.",
+      "impact": "The entire conditional full-support half-count, main Theorem 10.1, is proved without an assumed local or target count. Coverage is 63/167 (main 20/73, companion 43/94), with 64 confirmed improvements. The global paper formalization and Palomar milestone remain incomplete.",
+      "validation": "Lean v4.36.0-rc2 full build passed (9,797 jobs); actual axiom audit passed for all 4,453 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,168 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.24 GiB. No unproved local or target count, new literature input, new Paper C port, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
