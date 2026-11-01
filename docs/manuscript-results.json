@@ -186,7 +186,10 @@
         "P1-MATH-0044"
       ],
       "notes": "Preparatory finite channel calculation and actual dyadic translation counts are proved, not the full numbered asymptotic result. The A_d selection counts, predecessor-signed placements, arbitrary-shift channel identity, empty sums and exact leading-channel signed formulas are checked. For each fixed pair of actual source unit indices, sourcePairs is in bijection with an exact integer translation interval. The ordered count has error <=3B around N*(2/b-1/a); both orientations have error <=6B around N*w(a,b), with w=2*(2a-b)/(a*b). A common critical-band threshold precedes all reduced channel choices b<=B^3, all actual source positions and both orientations. Each leading channel has coefficient 1/3. Remaining: sum relation-word hosts with their predecessor signs, identify the actual probability/mass contribution on private normalizations, bound exceptional normalizations, and finish the full pair profile/mass and phase equivalents. Counting at fixed indices is not counting the union of all source pairs without multiplicity. See docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md and docs/SOURCE_TRANSLATIONS_ALIGNMENT.md.",
-      "validation_commit": "67187ee05582f888683838e0d09f0509a0157867"
+      "validation_commit": "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df",
+      "validation_history": [
+        "67187ee05582f888683838e0d09f0509a0157867"
+      ]
     },
     {
       "label": "p1:arith:edgefamily",
@@ -2256,7 +2259,10 @@
         "P1-MATH-0044"
       ],
       "notes": "Preparatory finite channel calculation and actual dyadic translation counts are proved, not the full numbered asymptotic result. The A_d selection counts, predecessor-signed placements, arbitrary-shift channel identity, empty sums and exact leading-channel signed formulas are checked. For each fixed pair of actual source unit indices, sourcePairs is in bijection with an exact integer translation interval. The ordered count has error <=3B around N*(2/b-1/a); both orientations have error <=6B around N*w(a,b), with w=2*(2a-b)/(a*b). A common critical-band threshold precedes all reduced channel choices b<=B^3, all actual source positions and both orientations. Each leading channel has coefficient 1/3. Remaining: sum relation-word hosts with their predecessor signs, identify the actual probability/mass contribution on private normalizations, bound exceptional normalizations, and finish the full pair profile/mass and phase equivalents. Counting at fixed indices is not counting the union of all source pairs without multiplicity. See docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md and docs/SOURCE_TRANSLATIONS_ALIGNMENT.md.",
-      "validation_commit": "67187ee05582f888683838e0d09f0509a0157867"
+      "validation_commit": "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df",
+      "validation_history": [
+        "67187ee05582f888683838e0d09f0509a0157867"
+      ]
     },
     {
       "label": "p1:arith:fixed-channel-rank",

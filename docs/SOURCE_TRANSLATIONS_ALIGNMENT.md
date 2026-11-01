@@ -91,3 +91,7 @@ full fixed-channel mass and complete pair profile remain open. These
 translation counts alone do not establish any of those assertions.
 No new external mathematical hypothesis, Paper C port, manuscript revision
 or Palomar registration is introduced.
+
+Validated actual translation checkpoint and P1-MATH-0044 (9,323 build jobs;
+3,394 audited declarations; 1,109 directly checked coverage/finding names):
+[fc4c31d1a01ccb880d28fa6cdbd1d30040e054df](https://github.com/Vulkin-prog/paper-p1-lean/commit/fc4c31d1a01ccb880d28fa6cdbd1d30040e054df).
