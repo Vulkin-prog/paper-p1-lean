@@ -486,3 +486,27 @@ public import PaperP1.Asymptotics.SplitProductPowerForm
 public import PaperP1.Asymptotics.ComparableCoverPower
 
 public import PaperP1.Asymptotics.ComparableSplitProductCount
+
+public import PaperP1.Arithmetic.EvenPrimePatterns
+
+public import PaperP1.Arithmetic.KernelTuplePatterns
+
+public import PaperP1.Combinatorics.ExposureWeights
+
+public import PaperP1.Combinatorics.ExposureOrder
+
+public import PaperP1.Combinatorics.OrderedExposure
+
+public import PaperP1.Arithmetic.KernelExposureWeights
+
+public import PaperP1.Arithmetic.PrescribedPatternDivisors
+
+public import PaperP1.Arithmetic.KernelExposureExponent
+
+public import PaperP1.Asymptotics.SplitTupleExposure
+
+public import PaperP1.Model.MultiplicativeMoments
+
+public import PaperP1.Arithmetic.CoprimeFactorCodes
+
+public import PaperP1.Asymptotics.ExposureAssignmentBudget

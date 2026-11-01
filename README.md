@@ -18,6 +18,10 @@ The prescribed-divisor estimate also holds cumulatively
 below a kernel-size bound; both counts accept fixed polylogarithmic widths.
 The fixed-kernel assertion additionally permits odd degrees. See the
 [complete split-product alignment](docs/PRESCRIBED_SPLIT_PRODUCT_ALIGNMENT.md).
+Article 9.1 is in progress: the exact infinite-measure moment identity, actual
+prime-pattern decomposition and finite exposure/assignment budgets are proved.
+The final tuple enumeration remains open. See the
+[moment enumeration checkpoint](docs/SHORT_MOMENT_ENUMERATION_ALIGNMENT.md).
 Companion T1.9 now covers the full enlarged geometric alignment, including
 zero exact units and both orientations, with its fixed-height enlarged-prime
 rate. The earlier one-unit coverage error and its subsequent closure are

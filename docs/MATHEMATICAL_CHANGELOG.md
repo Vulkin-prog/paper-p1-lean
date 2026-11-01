@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**57 mathematical improvements are confirmed; no error in a manuscript conclusion
+**58 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -2745,3 +2745,22 @@ beta is introduced and the c coefficient is preserved. The real-bounds
 formulation also verifies positivity and the literal signed-product
 identity. Earlier open-stage entries for T5.2 above are closed by this
 checkpoint; they remain as development history.
+
+## P1-MATH-0058 — Choose only a minimum-degree last exposure
+
+The finite correction is exactly sum_S(1-|S|/2)*alpha_S+beta_last/2.
+Choosing the last index with minimum weighted degree suffices; no average
+over all permutations is needed. The finite lemma works for every
+nonnegative weighted family of subsets of size >=2, including odd sizes.
+An actual injective exposure rank and its precise earlier-pattern weights
+are constructed. At actual kernel height (KN)^d, the total exposure
+exponent is <=v/2+log(K)/(2logN), with an explicit error independent of d.
+
+Actual square-product tuples have the canonical unique even-pattern
+decomposition, explicit prescribed divisors and last-kernel identity.
+Their new coprime factor assignments are counted by an injective prime
+code, with the proved growing-degree budget. The exact infinite-model
+moment identity is also verified, including repeated tuple entries.
+The full profile/prefix-state enumeration is still open, so Proposition
+9.1 remains in progress and numbered coverage stays 57/167. See
+[alignment](SHORT_MOMENT_ENUMERATION_ALIGNMENT.md).

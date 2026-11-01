@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4092 audited theorem/lemma declarations**. This
+- The project currently has **4162 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1870,3 +1870,23 @@ unclaimed; its proved actual affine count suffices here. See
 [complete alignment](PRESCRIBED_SPLIT_PRODUCT_ALIGNMENT.md).
 
 Verification checkpoint: Lean v4.36.0-rc2 full build passed (9,629 jobs); actual axiom audit passed for all 4,092 theorem/lemma declarations using only propext, Classical.choice and Quot.sound. All 1,807 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 result records remain intact. Ubuntu available space: 17.52 GiB. No unproved count, new literature input, new Paper C port or Palomar registration.
+
+## Actual short-product moment foundations — article 9.1 in progress
+
+The actual infinite-measure even moment is exactly the number of square
+product tuples, including repetitions. Canonical occurrence patterns of
+the actual squarefree kernels are proved positive, squarefree, pairwise
+coprime, even, reconstructive and unique. Earlier-pattern prescribed
+divisors divide the actual coordinate kernels, split off the fresh product
+and determine the last kernel completely.
+
+The finite exponent calculation now uses a minimum weighted-degree last
+index and a constructed actual injective exposure rank. Its exact finite
+height error is log(K)/(2logN), without a dependence on d. This is
+P1-MATH-0058. Actual fresh coprime factor families inject into prime
+colourings; their uniform assignment cost is proved. Full size-profile
+and prefix-state enumeration still remain open. Article 9.1 is in progress;
+coverage stays 57/167 with 58 confirmed improvements. See
+[moment checkpoint](SHORT_MOMENT_ENUMERATION_ALIGNMENT.md).
+
+Verification checkpoint: Lean v4.36.0-rc2 full build passed (9,653 jobs); actual axiom audit passed for all 4,162 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 1,877 distinct ledger/finding declarations were directly checked. All 138 manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.49 GiB. No unproved literature input, new Paper C port, original manuscript change or Palomar registration.

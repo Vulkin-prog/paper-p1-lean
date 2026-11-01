@@ -1451,3 +1451,18 @@ A finite dyadic cover, exact scale-independent power identity, width and
 degree transfer and absorbed constant prefactors are all proved directly.
 No comparable-interval count is assumed. Earlier open selected-count
 entries above are historical stages now closed by this complete proof.
+
+## Actual moment identity and finite prime-pattern exposure
+
+The infinite even moment is transported to an actual finite prime cylinder,
+expanded over all ordered tuples, and evaluated by proved character
+orthogonality. The tuple entries may repeat. The canonical even-pattern
+representation and its uniqueness use actual prime factorizations and
+squarefreeness. Earlier-pattern divisors, the final-kernel identity and
+new-factor prime codes are constructed explicitly. The finite exposure
+exponent uses minimum weighted degree and a constructed injective order,
+P1-MATH-0058. Source positivity and polynomial heights on comparable
+intervals are proved. No moment bound or tuple count is supplied as an
+unproved input; the final enumeration remains open. No new literature
+input or Paper C port is introduced. See
+[checkpoint](SHORT_MOMENT_ENUMERATION_ALIGNMENT.md).
