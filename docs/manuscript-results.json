@@ -1857,7 +1857,27 @@
         "PaperP1.SingleResultantFibreCount.scale_count",
         "PaperP1.SingleResultantFibreCount.finite_count",
         "PaperP1.SingleResultantFibreCount.actual_real_solutions_count",
-        "PaperP1.SingleResultantFibreCount.coprime_actual_real_solutions_count"
+        "PaperP1.SingleResultantFibreCount.coprime_actual_real_solutions_count",
+        "PaperP1.ProjectiveResultants.homogenize_raise",
+        "PaperP1.ProjectiveResultants.native_homogenize_dvd",
+        "PaperP1.ProjectiveResultants.coprime_of_homogeneous_relprime",
+        "PaperP1.ProjectiveResultants.full_degree_of_homogeneous_relprime",
+        "PaperP1.ProjectiveResultants.resultant_ne_zero_of_homogeneous_relprime",
+        "PaperP1.ProjectiveResultants.constant_divisor_isUnit_of_irreducible",
+        "PaperP1.ProjectiveResultants.coefficients_relprime_of_irreducible",
+        "PaperP1.ProjectiveResultants.linear_coefficient_left",
+        "PaperP1.ProjectiveResultants.linear_coefficient_right",
+        "PaperP1.HomogeneousCharts.chart_degree",
+        "PaperP1.HomogeneousCharts.chart_homogenize",
+        "PaperP1.HomogeneousCharts.chart_coeff",
+        "PaperP1.HomogeneousCharts.chart_coefficient_bound",
+        "PaperP1.HomogeneousCharts.integer_resultant_ne_zero",
+        "PaperP1.HomogeneousCharts.integer_resultant_ne_zero_of_irreducible",
+        "PaperP1.ProjectiveCurveCount.good_eq_charts",
+        "PaperP1.ProjectiveCurveCount.realSolutions_eq_charts",
+        "PaperP1.ProjectiveCurveCount.mem_realSolutions",
+        "PaperP1.ProjectiveCurveCount.homogeneous_relprime_count",
+        "PaperP1.ProjectiveCurveCount.irreducible_auxiliary_count"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
@@ -1865,7 +1885,7 @@
         "P1-MATH-0049",
         "P1-MATH-0050"
       ],
-      "notes": "The actual elementary bidegree-one elimination count is proved, including literal real boxes, real coefficient exponents, canonical primitive scales, constructed homogeneous eliminants and coefficient-to-resultant height bounds. Exact Sylvester row/column reversal proves equal absolute values of the padded chart resultants; primitive cancellation gives q dividing a single homogeneous resultant. The finite bound is sharpened to 2*tau(|R|)*(k+d*ell)*(2H+1). The actual N^epsilon*H count now needs one nonzero resultant, or univariate coprimality over Q and one polynomial attaining the padded degree. This is the elementary bound in the remaining pair height. Full T1.4 remains in progress: source auxiliary extraction/nondegeneracy and coefficient height from determinant/lattice steps, the complementary Heath-Brown bound in the eliminated pair height, other curve cases and short-vector sums are open. See SINGLE_RESULTANT_ALIGNMENT.md and BIDEGREE_ONE_CURVE_ALIGNMENT.md."
+      "notes": "Preparatory components only. The actual bidegree-one elementary elimination bound in the remaining pair height now uses literal homogeneous auxiliary forms: irreducibility over Q implies common-factor coprimality, which proves univariate coprimality and full padded degree including the point at infinity. A single homogeneous resultant controls the signed primitive scale. Exact dehomogenization preserves degree and coefficient height. The complementary Heath-Brown bound in the eliminated pair height, source determinant/lattice auxiliary extraction and height control, other curve cases and short-vector sums remain open; full T1.4 is not claimed."
     },
     {
       "label": "p1:arith:twokernel",

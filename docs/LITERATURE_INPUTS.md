@@ -1254,3 +1254,17 @@ Stable ID: `P1-ALG-SINGLE-HOMOGENEOUS-RESULTANT`. Status: **proved refinement**.
 - The complementary Heath-Brown bound and source determinant/lattice
   construction remain open. No new unproved literature input or Paper C
   port is introduced. See [alignment](SINGLE_RESULTANT_ALIGNMENT.md).
+
+## Projective common factors and exact homogeneous charts
+
+Stable ID: `P1-ALG-PROJECTIVE-NONDEGENERACY`. Status: **proved bridge**.
+
+The source irreducible auxiliary polynomial supplies homogeneous
+common-factor coprimality. Homogenization of arbitrary chart divisors
+and exclusion of the shared factor at infinity give univariate
+coprimality and one full padded degree. Exact chart coefficients
+preserve polynomial height, and the actual primitive real-box count
+requires no separately assumed resultant condition. No new unproved
+literature input or Paper C port is introduced; the determinant/lattice
+construction and complementary curve bound remain open. See
+[alignment](PROJECTIVE_NONDEGENERACY_ALIGNMENT.md).

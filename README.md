@@ -68,6 +68,8 @@ The elementary bidegree-one elimination estimate now counts actual primitive poi
 [local algebraic count](docs/BIDEGREE_ONE_CURVE_ALIGNMENT.md).
 The primitive denominator now divides a single homogeneous resultant, giving a sharper finite bound and removing a redundant chart condition. See the
 [single-resultant refinement](docs/SINGLE_RESULTANT_ALIGNMENT.md).
+The actual homogeneous auxiliary factor now supplies its chart nondegeneracy by irreducibility, with exact degree and coefficient transport. See the
+[projective bridge](docs/PROJECTIVE_NONDEGENERACY_ALIGNMENT.md).
 The complete main pair profile remains in progress. See the
 [finite calculation](docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,

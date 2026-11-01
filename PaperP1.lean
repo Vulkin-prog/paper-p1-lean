@@ -388,3 +388,6 @@ public import PaperP1.Diophantine.BidegreeOneFibreCount
 public import PaperP1.Diophantine.BidegreeOneCurveCount
 public import PaperP1.Diophantine.ReflectedResultants
 public import PaperP1.Diophantine.SingleResultantFibreCount
+public import PaperP1.Diophantine.ProjectiveResultants
+public import PaperP1.Diophantine.HomogeneousCharts
+public import PaperP1.Diophantine.ProjectiveCurveCount

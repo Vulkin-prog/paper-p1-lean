@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3733 audited theorem/lemma declarations**. This
+- The project currently has **3753 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1533,3 +1533,20 @@ directly by Lean. Original manuscript bytes are unchanged.
 Validated single-resultant checkpoint (9,503 build jobs; 3,733 audited
 declarations; 1,448 directly checked coverage/finding names):
 [a1ed70f2f336473fa51b6e345409308f78b78873](https://github.com/Vulkin-prog/paper-p1-lean/commit/a1ed70f2f336473fa51b6e345409308f78b78873).
+
+## Projective nondegeneracy from the actual auxiliary factor
+
+The elementary bidegree-one count now applies to literal homogeneous
+forms. Irreducibility over Q gives absence of common nonunit factors;
+homogenizing chart divisors and excluding the common factor at infinity
+proves all chart nondegeneracy conditions. Exact degree/coefficient
+transport and actual real-box solution equality are proved. This extends
+P1-MATH-0050; coverage remains 54/167, with 50 confirmed improvements.
+Source determinant/lattice extraction and height control, the complementary
+Heath-Brown bound and full T1.4 remain open. See
+[alignment](PROJECTIVE_NONDEGENERACY_ALIGNMENT.md).
+
+The full build passed (9,509 jobs), the actual axiom audit passed for
+all 3,753 declarations, and Lean checked all 1,468 distinct
+coverage/finding names. Only propext, Classical.choice and Quot.sound
+occur; original manuscript bytes are unchanged.
