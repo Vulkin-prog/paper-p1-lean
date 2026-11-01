@@ -940,9 +940,10 @@
       ],
       "mathematical_changes": [],
       "notes": "Complete actual main Proposition 6.3. FixedSourcePropagationTheorem.main_6_3 bundles all three conclusions with one uniform threshold: the literal source-excluding conditional sum for arbitrary compatible affine source prescriptions and centre-dependent target prescriptions; actual ordered-distinct extension-family mass propagation for r=s+k; and original-model fixed-order positive mass O(N^(-1+epsilon)) for every family containing a local defect or contact. Homogeneous conditional and propagation specializations are included. The exact effective nullity increment and local rank are preserved, including zero-mass source tuples and incompatible target atoms. Physical finite tuple extension families and their membership and sum identities are constructed. An explicit finite permutation cover moves actual seeds to arbitrary positions and costs at most r!. The one-coordinate irregular seed mass is proved for arbitrary affine atoms. At exact contact, the two square-class spaces span the full union interval, whose relation rank is bounded by its actual defective positions; uniform local defect bounds give subpower binary relation cost and actual N^(-1+epsilon) total contact-seed mass. Strict contacts have zero mass for actual run starts; this exclusion is not asserted for arbitrary homogeneous overlapping prescriptions. Positive-contact filtering, seed injection and the final union mass are all proved on actual finite populations. PrescribedRunMass identifies the masses with original infinite run moments. No conditional-sum, propagation, contact-rank or seed-mass premise is assumed. Main 6.4 moment expansion remains separate. See FIXED_SOURCE_PROPAGATION_ALIGNMENT.md.",
-      "validation_commit": "b9e411cecc036eaa1e87da5a2f981792d9aadc76",
+      "validation_commit": "acd0100a33d7250f8abcfd7204d434f7d3c82933",
       "validation_history": [
-        "d61129a4481b626b35958ee0329ac668362aec1e"
+        "d61129a4481b626b35958ee0329ac668362aec1e",
+        "b9e411cecc036eaa1e87da5a2f981792d9aadc76"
       ]
     },
     {
