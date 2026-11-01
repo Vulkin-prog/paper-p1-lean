@@ -2995,3 +2995,13 @@ literal finite physical support pools are constructed and bounded. The
 prime-group classification and dense-target count remain open. Coverage
 and confirmed improvements stay 69/167 and 69; no new independent finding
 is counted. See [the precise remaining scope](DENSE_TARGET_ALIGNMENT.md).
+
+
+Main 6.2 arithmetic checkpoint: actual prime rows, physical supports,
+assigned coprime prime groups and the certificate-or-small-groups
+dichotomy are proved. The resulting residual kernel bound includes
+its full fixed multiplicity/support-pool factor. The small-prime and
+source-divisor factors and actual square equations are constructed.
+Two-class selection and coefficient enumeration remain open. This
+records proof progression without counting a new independent finding
+or a completed numbered result. See [alignment](DENSE_TARGET_ALIGNMENT.md).

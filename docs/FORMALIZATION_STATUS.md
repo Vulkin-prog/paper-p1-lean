@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4775 audited theorem/lemma declarations**. This
+- The project currently has **4833 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2260,3 +2260,25 @@ stays 69/167 and confirmed improvements stay 69. See
 [exact scope](DENSE_TARGET_ALIGNMENT.md).
 
 Dense-target input verification: Lean v4.36.0-rc2 full build passed (9943 jobs); actual axiom audit passed for all 4775 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2490 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.66 GiB. Actual physical/effective relation projections, their fixed-order recovery regularization and finite support pools are proved. Main 6.2 remains in progress for the prime-group classification and actual target count. Coverage and confirmed improvements stay 69/167 and 69. No target-count premise, external assumption, Paper C port, manuscript-byte change or Palomar registration.
+
+
+## Actual prime groups and the residual-kernel bound for main 6.2
+
+All actual large-prime row equations are proved on the physical code and
+its regularization. A prime above the window width meets at most one
+vertex per window. An active target occurrence has a bounded actual
+source support from its literal finite pool. Assigning each such prime
+to one chosen physical support constructs squarefree pairwise coprime
+groups dividing actual source and target values.
+
+A maximal-product argument gives an actual strict product certificate
+or small remaining groups. At most k target label classes are discarded,
+with no second restriction of the relation space. Each nonzero class
+meets at most (t-1)*Dstar groups. Its actual residual odd-prime product
+is bounded by N^((t-1)*Dstar/k). The canonical three-part kernel
+factorization gives small-prime and source divisors and a square
+equation. Two-class selection and the final position/coefficient
+enumeration remain open; main 6.2 stays in progress. No new coverage or
+independent mathematical finding is counted.
+
+Prime-group checkpoint verification: Lean v4.36.0-rc2 full build passed (9961 jobs); actual axiom audit passed for all 4833 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2548 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 16.63 GiB. Actual circuit groups, the strict-certificate dichotomy and the residual-kernel exponent are proved. Main 6.2 remains in progress for the final two-class selection and population count. Coverage and confirmed improvements remain 69/167 and 69. No output-count premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.

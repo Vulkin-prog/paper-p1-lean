@@ -751,3 +751,13 @@ public import PaperP1.Coding.RegularizedProjection
 public import PaperP1.Coding.RegularizedSupportPools
 public import PaperP1.Combinatorics.BinaryLabelRepresentations
 public import PaperP1.Combinatorics.PhysicalLabelSupportCount
+
+public import PaperP1.Arithmetic.WindowPrimeIncidence
+public import PaperP1.Arithmetic.PrimeCircuitSupports
+public import PaperP1.Arithmetic.AssignedPrimeGroups
+public import PaperP1.Combinatorics.TopProductSelection
+public import PaperP1.Arithmetic.PrimeCircuitGroups
+public import PaperP1.Arithmetic.PrimeGroupIncidence
+public import PaperP1.Arithmetic.PrimeGroupDichotomy
+public import PaperP1.Arithmetic.RelativeSquarefreeParts
+public import PaperP1.Arithmetic.ClassPrimeResidual

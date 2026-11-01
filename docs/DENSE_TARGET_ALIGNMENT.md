@@ -76,18 +76,51 @@ each fibre, giving a larger constant than the source injective-choice
 bound K^j. No sharper constant is claimed. All these constants are fixed
 before N, which is the scope needed for the later counting argument.
 
+## Actual prime-group classification and residual bound
+
+`WindowPrimeIncidence` proves every actual prime row equation and the
+uniqueness of a large-prime occurrence within each window.
+`PrimeCircuitSupports` chooses an actual short source support with
+nonzero target sum. Its insertion gives a physical relation support
+containing precisely one target vertex and at least one source vertex.
+
+`PrimeCircuitGroups` assigns every active prime to one chosen support.
+`AssignedPrimeGroups` proves that the resulting actual products are
+squarefree, pairwise coprime, greater than one, and divide every value
+at their assigned physical support. Each group therefore divides an
+actual source value and an actual target value.
+
+`PrimeGroupIncidence` bounds actual groups through a nonzero class by
+K*Dstar, where K=t-1. It proves that discarding the target labels of
+at most k selected groups removes at most k classes.
+`TopProductSelection` proves the finite maximal-product dichotomy.
+`PrimeGroupDichotomy.selected_certificate` constructs the actual strict
+T4.2 source certificate in the large-product branch. Otherwise every
+remaining incident group has kth power at most N.
+
+`ClassPrimeResidual.residual_covered` proves that each odd prime in the
+actual class product above H and not dividing the actual old product
+belongs to an incident group. The resulting residual product e has
+
+    e^k <= N^(K*Dstar),  e <= N^(K*Dstar/k).
+
+`RelativeSquarefreeParts` supplies an exact canonical decomposition of
+the class squarefree kernel into a divisor of primorial H, a divisor
+of the actual source product, and this residual product. It proves
+the actual square equation. No relation-space enumeration or second
+restriction of the regularized code is used.
+
 ## Remaining arithmetic count
 
 The completed T4.1 now supplies the final two-disjoint-square-equation
 input without a curve-count assumption. The completed T4.2 supplies
 the product-certificate count. Still required for full main 6.2:
 
-- construct the actual large-prime circuit groups from these physical
-  relations and prove their divisibility and pairwise coprimality;
-- prove the product-certificate or small-group dichotomy and retain two
-  disjoint target label classes;
-- enumerate their actual small-prime, source-divisor and residual-kernel
-  coefficients, then apply the two-equation count to the actual targets.
+- retain two actual disjoint target label classes after discarding
+  selected-group classes;
+- enumerate their physical positions and actual small-prime, source-divisor
+  and residual coefficients, then apply the two-equation count to the
+  literal target population.
 
 Coverage stays 69/167 and confirmed improvements stay 69. This checkpoint
 formalizes source inputs rather than introducing a new independent
@@ -97,3 +130,5 @@ or Palomar registration is introduced.
 Dense-target input verification: Lean v4.36.0-rc2 full build passed (9943 jobs); actual axiom audit passed for all 4775 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2490 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.66 GiB. Actual physical/effective relation projections, their fixed-order recovery regularization and finite support pools are proved. Main 6.2 remains in progress for the prime-group classification and actual target count. Coverage and confirmed improvements stay 69/167 and 69. No target-count premise, external assumption, Paper C port, manuscript-byte change or Palomar registration.
 
 Validated preparatory proof checkpoint: [b83bdedd5e12fc31c3f964c454392afcf9121988](https://github.com/Vulkin-prog/paper-p1-lean/commit/b83bdedd5e12fc31c3f964c454392afcf9121988).
+
+Prime-group checkpoint verification: Lean v4.36.0-rc2 full build passed (9961 jobs); actual axiom audit passed for all 4833 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2548 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 16.63 GiB. Actual circuit groups, the strict-certificate dichotomy and the residual-kernel exponent are proved. Main 6.2 remains in progress for the final two-class selection and population count. Coverage and confirmed improvements remain 69/167 and 69. No output-count premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.

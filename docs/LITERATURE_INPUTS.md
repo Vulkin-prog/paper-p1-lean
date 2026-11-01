@@ -1731,3 +1731,19 @@ regularization. Every minimal representation and physical lift is
 proved. The large-prime group classification and actual population count
 are not assumptions or completed conclusions. No new literature input
 or Paper C source is used. See [scope](DENSE_TARGET_ALIGNMENT.md).
+
+
+## Actual prime-group classification behind main 6.2
+
+Stable ID: `P1-ARITH-DENSE-TARGET-PRIME-GROUPS`. Status: **proved
+preparatory arithmetic**, not a completed dense-target count.
+
+Actual window-prime row equations produce bounded source supports and
+a unique assignment to physical supports. Their prime products are
+pairwise coprime, squarefree and divide actual old and target values.
+A finite maximal-product selection constructs a strict T4.2 certificate
+or small incident groups after at most k discarded target classes.
+The actual residual kernel has exponent (t-1)*Dstar/k. Its canonical
+small/source/residual factorization and square equation require no
+external arithmetic input. Only final class selection and enumeration
+remain. No new literature assumption or Paper C code is introduced.
