@@ -72,7 +72,8 @@ recorded in P1-MATH-0043.
 
 ## Remaining source statements
 
-Actual dyadic source translations, exceptional defective normalizations,
+Actual dyadic source translations were completed at the later checkpoint
+below. Relation-word summation, exceptional defective normalizations,
 nonaligned arithmetic residual mass, full pair profiles and asymptotic
 phase equivalents remain open. The finite calculation is not substituted
 for those missing estimates. There is no new external mathematical
@@ -81,3 +82,9 @@ hypothesis, Paper C port, manuscript revision or Palomar registration.
 Validated finite channel checkpoint and P1-MATH-0043 (9,317 build jobs;
 3,375 audited declarations; 1,090 directly checked coverage/finding names):
 [67187ee05582f888683838e0d09f0509a0157867](https://github.com/Vulkin-prog/paper-p1-lean/commit/67187ee05582f888683838e0d09f0509a0157867).
+
+The subsequent [actual translation checkpoint](SOURCE_TRANSLATIONS_ALIGNMENT.md)
+closes dyadic translation counts with an exact interval/source-pair
+bijection, both orientations and height-uniform error <=6B. Summing
+relation-word hosts and the probability/mass and defective-normalization
+bridges remain open.

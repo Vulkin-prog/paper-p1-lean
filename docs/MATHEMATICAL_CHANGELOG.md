@@ -1790,3 +1790,34 @@ No manuscript revision or Palomar registration is made.
 Validated finite channel checkpoint and P1-MATH-0043 (9,317 build jobs;
 3,375 audited declarations; 1,090 directly checked coverage/finding names):
 [67187ee05582f888683838e0d09f0509a0157867](https://github.com/Vulkin-prog/paper-p1-lean/commit/67187ee05582f888683838e0d09f0509a0157867).
+
+## P1-MATH-0044 — Actual dyadic translations with explicit height-uniform error
+
+- Source: companion T2.5, page 22, `p1:arith:fixed-channel-mass`,
+  `companion_sections/supplemental_arithmetic.tex:164`, original hash
+  `3f277bcb49753b0c57c75eaa012cdfc127c5f3253a66fb6fe0c40707b4e533e4`.
+- Original step: N*w(a,b) translations per within-window placement, up to
+  implicit endpoint errors, with w=2*(2a-b)/(a*b).
+- Improvement: the literal ceiling interval, actual source-pair bijection
+  and both orientations are proved. At N>=(a+b)B, the one-orientation
+  error is <=B/a+B/b+1. For strict inequality the orientation families
+  are disjoint, giving two-orientation error <=2*(B/a+B/b+1)<=6B.
+- Uniformity: one critical-band threshold precedes all reduced a<b<2a
+  with b<=B^3 and all actual source-unit index choices. Both leading
+  coefficients are exactly 1/3. Negative predecessor offsets are retained.
+- Evidence: `SourceTranslationInterval.mem_translations`,
+  `translation_count_error`, `ActualSourceTranslations.translations_card`,
+  `source_pair_order`, `symmetric_card_error`, `leading_coefficients`,
+  `SourceTranslationCount.all_heights` and `leading_counts`.
+- Suggested revision: use this exact finite interval and error bound in
+  the translation step, and distinguish counts at fixed indices from a
+  union over all index witnesses.
+
+The relation-word sum, actual probability/mass bridge and defective
+normalizations remain open. Neither article 3.3 nor companion T2.5 is
+counted complete. Coverage stays 52/167, with 44 confirmed improvements.
+The full build passed (9,323 jobs); all 3,394 theorem/lemma declarations
+passed the actual axiom audit, and all 1,109 coverage/finding names were
+checked directly. Only propext, Classical.choice and Quot.sound occur.
+Original sources are unchanged. No manuscript revision or Palomar
+registration is made.

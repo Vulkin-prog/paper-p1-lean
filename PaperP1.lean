@@ -314,3 +314,6 @@ public import PaperP1.Asymptotics.KnownAlignmentRank
 public import PaperP1.Arithmetic.ChannelSumIdentity
 public import PaperP1.Arithmetic.ChannelSelectionCount
 public import PaperP1.Arithmetic.ChannelPlacements
+public import PaperP1.Arithmetic.SourceTranslationInterval
+public import PaperP1.Arithmetic.ActualSourceTranslations
+public import PaperP1.Asymptotics.SourceTranslationCount

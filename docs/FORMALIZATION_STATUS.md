@@ -993,3 +993,32 @@ is 17.98 GiB.
 Validated finite channel checkpoint and P1-MATH-0043 (9,317 build jobs;
 3,375 audited declarations; 1,090 directly checked coverage/finding names):
 [67187ee05582f888683838e0d09f0509a0157867](https://github.com/Vulkin-prog/paper-p1-lean/commit/67187ee05582f888683838e0d09f0509a0157867).
+
+## Actual dyadic source translations with a common growing-height threshold
+
+`SourceTranslationInterval` proves the exact ceiling interval for t and
+its equivalence with all four actual dyadic inequalities. Its two-sided
+finite count differs from N*(2/b-1/a) by at most B/a+B/b+1.
+`ActualSourceTranslations` constructs the bijection with the actual
+source-pair set at each fixed pair of source-unit indices. The predecessor
+offset -1 is included. For strict N>(a+b)B, forward and reverse families
+are disjoint; their union differs from N*w(a,b) by at most 6B.
+Both leading coefficients are exactly w(2,3)=w(3,4)=1/3.
+
+`SourceTranslationCount.all_heights` chooses one critical-band threshold
+before every reduced a<b<2a with b<=B^3 and every within-window index
+choice. The errors are <=3B in one orientation and <=6B in both.
+P1-MATH-0044 records these explicit constants and stronger quantifiers;
+there are 44 confirmed improvements. See the
+[actual translation alignment](SOURCE_TRANSLATIONS_ALIGNMENT.md).
+
+Coverage remains **52 / 167**. Article 3.3 and companion T2.5 remain
+in progress: relation-word host summation, probability/mass identification
+and defective-normalization errors are still open. Fixed-index counting
+is not an unweighted union over all index choices. The full build passed
+(9,323 jobs), all 3,394 theorem/lemma declarations passed the actual axiom
+audit, and all 1,109 coverage/finding names were checked directly by Lean.
+Only propext, Classical.choice and Quot.sound occur. Original sources are
+preserved. No new external mathematical input, Paper C port, manuscript
+revision or Palomar registration is introduced. Ubuntu root free space
+is 17.97 GiB.

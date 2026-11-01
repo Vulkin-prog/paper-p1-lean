@@ -23,6 +23,9 @@ the exact height-one contact case. The same bounds hold for full pair
 deficiency, retaining local defects. See the [alignment note](docs/KNOWN_ALIGNMENT_RANK_ALIGNMENT.md).
 The finite channel sums now have checked even-selection counts,
 predecessor-signed placements and both exact leading-channel formulas.
+Actual dyadic translations now have an exact interval bijection and
+error at most 6B for both orientations, uniformly up to height B^3.
+See the [translation checkpoint](docs/SOURCE_TRANSLATIONS_ALIGNMENT.md).
 The full pair profile and fixed-channel mass remain in progress. See the
 [finite calculation](docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,

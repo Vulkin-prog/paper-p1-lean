@@ -1010,3 +1010,14 @@ assumed. These finite calculations do not supply the source-host, mass
 or asymptotic error estimates of article 3.3 and companion T2.5. Both
 numbered statements remain in progress. See the
 [finite alignment](FINITE_CHANNEL_SUMS_ALIGNMENT.md).
+
+## Actual source translation counts
+
+The exact rational-ceiling interval, its bijection with actual dyadic
+source pairs, disjoint orientations and the uniform 3B/6B finite errors
+are proved from elementary integer arithmetic. The common threshold
+before all reduced heights <=B^3 uses the proved critical polynomial
+scale lemma. No external lattice-counting input is assumed and no new
+Paper C source is used. Probability/mass identification and defective
+normalizations remain separate. See the
+[translation alignment](SOURCE_TRANSLATIONS_ALIGNMENT.md).
