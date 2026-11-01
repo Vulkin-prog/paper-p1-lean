@@ -2660,7 +2660,8 @@
       },
       "validation_history": [
         "f6f7b37f7d6d5437bc4228d3ec8ca550e7c388ed"
-      ]
+      ],
+      "validation_commit": "ee61ce9cc660e4fb5655e54ce8f78af06e0602ff"
     },
     {
       "id": "P1-MATH-0056",
@@ -2827,7 +2828,8 @@
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "ee61ce9cc660e4fb5655e54ce8f78af06e0602ff"
     }
   ]
 }
