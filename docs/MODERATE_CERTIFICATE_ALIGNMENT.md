@@ -73,3 +73,6 @@ axiom audit of all 2,047 project theorem/lemma declarations. Only `propext`,
 31 / 167. No Palomar registration is made.
 
 All 320 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of this finite receiving-cost checkpoint:
+[c389a5368f0aa4ab70adc436c6bb34ba0db16432](https://github.com/Vulkin-prog/paper-p1-lean/commit/c389a5368f0aa4ab70adc436c6bb34ba0db16432).
