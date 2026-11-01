@@ -3450,6 +3450,58 @@
         "2e1bbd65872d4f73927ba606ef20cb592c8b81bb"
       ],
       "validation_commit": "bc51be81e8dfe31ca8176e4b3631cca10c6d4f45"
+    },
+    {
+      "id": "P1-MATH-0066",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:fixed-support",
+        "number": "T1.14",
+        "page": 17,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 1035,
+        "statement_sha256": "a6cc454365ad3be4f4e5fd085e0de49e402d933a1af003488cdc040d20ed7d4b"
+      },
+      "original_assumption": "Companion T1.14 gives N^(r-2s/(2s+1)+epsilon) for a relation meeting at least s blocks. Its printed proof uses a small/large kernel split and the separate two-small-kernel determinant estimate, and its fixed-width extension asks for injective even-selection spaces.",
+      "finding": "The complete conditional half-count gives the stronger N^(r-s/2+epsilon) bound. The actual nonzero support has d>=s coordinates; its complement of k=r-d coordinates is fixed and freely counted, while complete 10.1 counts the actual d new nonzero projections relative to the full complement span by N^(d/2+epsilon). Thus the exponent is k+d/2=r-d/2<=r-s/2. Actual finite support bijections, complement fibres and role codes are proved and counted. Both the actual tuple union and all coded records for fixed logarithmic offsets and bounded fixed dilations retain this stronger estimate, with their actual code cardinalities proved. Only nonzero vectors in the actual even-image spaces are needed; injectivity of the selection map and window separation beyond distinct tuple centres are unnecessary. The original-window and literal critical-width versions are proved. This proof is independent of the unfinished two-small-kernel determinant input.",
+      "evidence": [
+        "PaperP1.BlockSupportProjection.mem_population",
+        "PaperP1.BlockSupportProjection.mem_cell",
+        "PaperP1.BlockSupportProjection.split_support",
+        "PaperP1.BlockSupportProjection.projected_group",
+        "PaperP1.BlockSupportProjection.population_cover",
+        "PaperP1.BlockSupportProjection.suffix_effective",
+        "PaperP1.BlockSupportProjection.fibre_count",
+        "PaperP1.BlockSupportProjection.cell_count",
+        "PaperP1.BlockSupportCount.uniform_count",
+        "PaperP1.BlockSupportCount.source_exponent",
+        "PaperP1.BlockSupportCount.interval_count",
+        "PaperP1.BlockSupportCount.critical_interval_count",
+        "PaperP1.BlockSupportCount.companion_T1_14",
+        "PaperP1.BlockSupportParameters.code_card",
+        "PaperP1.BlockSupportParameters.records_bound",
+        "PaperP1.BlockSupportParameters.code_budget",
+        "PaperP1.BlockSupportParameters.uniform_count",
+        "PaperP1.BlockSupportParameters.critical_count",
+        "PaperP1.BlockSupportParameters.companion_T1_14",
+        "PaperP1.SeveralWindowProjections.tuples_eq",
+        "PaperP1.SeveralWindowProjectionCount.companion_T1_14",
+        "PaperP1.ValueHeightHalfCount.uniform_logarithmic_count",
+        "PaperP1.NormalizedWindowSets.space_values",
+        "PaperP1.NormalizedWindowSets.space_normalized",
+        "PaperP1.NormalizedWindowSets.space_union",
+        "PaperP1.FiniteEvenSquareClasses.space_dilate"
+      ],
+      "proposed_revision": "Replace the exponent in T1.14 by r-s/2 and prove the statement by exposing the complement and invoking the independently established conditional half-count. Place this proof after 10.1 or make the acyclic dependency explicit. State the result on actual finite even-image spaces, allowing local relations, and retain explicit actual value-height/radius data for normalized blocks. Count the finite offset/dilation records uniformly before their values. Keep the separate two-small-kernel estimate for other uses; do not treat its still-open formal proof as an input to this result. The order r and all code dimensions remain fixed before N.",
+      "impact": "Full companion T1.14 is complete with a stronger bound and full fixed-width/finite-parameter scope. Coverage is 66/167 (main 22/73, companion 44/94), with 66 confirmed improvements. The pair activity partition and triple deficit remain separate open tasks.",
+      "validation": "Lean v4.36.0-rc2 full build passed (9,845 jobs); actual axiom audit passed for all 4,536 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,251 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.16 GiB. Full T1.14 is complete with the stronger support bound and actual fixed-parameter record counts; coverage is 66/167 (main 22/73, companion 44/94), with 66 confirmed improvements. No unfinished determinant or kernel count, target-count hypothesis, new external input, Paper C port, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -75,3 +75,8 @@ directly by Lean. Original manuscript bytes are unchanged.
 Validated selected fixed-width one-kernel checkpoint (9,447 build jobs;
 3,667 audited declarations; 1,382 directly checked coverage/finding names):
 [77be471d8c127edb6104caae2922aaef3a95ec54](https://github.com/Vulkin-prog/paper-p1-lean/commit/77be471d8c127edb6104caae2922aaef3a95ec54).
+
+Subsequent scope update: T1.14 is now complete by the independent stronger
+conditional half-count proof, including its actual fixed-width parameter
+records. The separate two-small-kernel assertion of T1.13 remains open.
+See [the complete T1.14 alignment](SEVERAL_BLOCK_RELATION_ALIGNMENT.md).

@@ -1,8 +1,11 @@
 # Large-kernel branch of companion T1.14
 
-The actual large-selected-kernel tuple count is proved. Companion T1.14
-remains **in progress**: the all-small-kernel branch and the full compressed
-fixed-width extension are not proved by this checkpoint.
+The actual large-selected-kernel tuple count below is a preserved historical
+checkpoint. Full T1.14 is now proved by a different, stronger conditional
+half-count argument, with exponent r-s/2 and actual fixed-parameter records.
+See [the complete current alignment](SEVERAL_BLOCK_RELATION_ALIGNMENT.md).
+The separate two-small-kernel estimate remains open and is not needed by
+that complete alternative proof.
 
 Source: `companion_sections/arithmetic_appendix.tex:1035`, page 17,
 `p1:arith:fixed-support`, statement hash
@@ -74,7 +77,7 @@ Both the parameter choice and the error absorption are proved. This
 establishes the source exponent for its large-selected-kernel branch,
 without assuming a target tuple bound.
 
-## Remaining scope and provenance
+## Historical remaining scope and provenance at the large-kernel checkpoint
 
 The all-small-kernel branch requires the two-small-kernel estimate in
 T1.13/T1.5, including its coefficient-uniform determinant input. That

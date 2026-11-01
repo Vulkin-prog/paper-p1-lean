@@ -692,3 +692,13 @@ public import PaperP1.Combinatorics.FiniteFamilyEnumeration
 public import PaperP1.Model.ConnectedWindowFamilies
 
 public import PaperP1.Model.FamilyIndependentMass
+
+public import PaperP1.Arithmetic.BlockSupportProjection
+
+public import PaperP1.Asymptotics.BlockSupportCount
+
+public import PaperP1.Asymptotics.BlockSupportParameters
+
+public import PaperP1.Model.SeveralWindowProjections
+
+public import PaperP1.Asymptotics.SeveralWindowProjectionCount

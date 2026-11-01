@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**65 mathematical improvements are confirmed; no error in a manuscript conclusion
+**66 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -2888,3 +2888,26 @@ and their proved common critical-band cap. Main 10.2 is complete; coverage
 is 65/167 and confirmed improvements remain 65. The earlier generic-only
 proof checkpoint is preserved in the finding's validation history. See
 [complete connected-family alignment](CONNECTED_FAMILY_ALIGNMENT.md).
+
+## P1-MATH-0066 — A half power for each nonzero block projection
+
+Full T1.14 now has the stronger bound N^(r-s/2+epsilon). Split the actual
+nonzero support, of size d>=s, from its k=r-d complementary centres.
+The complement has at most O(N^k) choices and the complete conditional
+half-count gives N^(d/2+epsilon) at each actual fixed complement. Actual
+finite fibres and role codes give r-d/2<=r-s/2. The printed weaker
+exponent follows from a proved comparison.
+
+Actual original windows, arbitrary finite even-image blocks and fixed
+normalized/compressed block shapes with literal height/radius data are
+covered. The actual fixed offset/dilation code cardinal and all coded
+records are counted and absorbed. Injectivity of the even-selection map
+is unnecessary when actual image vectors are nonzero. Only the new
+centre tuple must be injective; separation is not needed. All orders
+and code dimensions remain fixed before N.
+
+This complete proof bypasses the unfinished two-small-kernel determinant
+estimate for T1.14. Its independent half-count dependency is acyclic.
+The separate kernel estimates remain open for other uses. Coverage is
+66/167 and confirmed improvements are 66. See
+[complete support alignment](SEVERAL_BLOCK_RELATION_ALIGNMENT.md).

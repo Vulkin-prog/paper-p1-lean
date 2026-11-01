@@ -2774,7 +2774,7 @@
       "source": "companion_sections/arithmetic_appendix.tex",
       "line": 1035,
       "sha256": "a6cc454365ad3be4f4e5fd085e0de49e402d933a1af003488cdc040d20ed7d4b",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.SeveralKernelReceivers.hits_cover",
         "PaperP1.SeveralKernelReceivers.one_add_div_bound",
@@ -2804,13 +2804,35 @@
         "PaperP1.LargeKernelTupleCounts.tuple_count",
         "PaperP1.LargeKernelTupleCounts.beta_bounds",
         "PaperP1.LargeKernelTupleCounts.exponent_identity",
-        "PaperP1.LargeKernelTupleCounts.large_branch"
+        "PaperP1.LargeKernelTupleCounts.large_branch",
+        "PaperP1.BlockSupportProjection.mem_population",
+        "PaperP1.BlockSupportProjection.mem_cell",
+        "PaperP1.BlockSupportProjection.split_support",
+        "PaperP1.BlockSupportProjection.projected_group",
+        "PaperP1.BlockSupportProjection.population_cover",
+        "PaperP1.BlockSupportProjection.suffix_effective",
+        "PaperP1.BlockSupportProjection.fibre_count",
+        "PaperP1.BlockSupportProjection.cell_count",
+        "PaperP1.BlockSupportCount.uniform_count",
+        "PaperP1.BlockSupportCount.source_exponent",
+        "PaperP1.BlockSupportCount.interval_count",
+        "PaperP1.BlockSupportCount.critical_interval_count",
+        "PaperP1.BlockSupportCount.companion_T1_14",
+        "PaperP1.BlockSupportParameters.code_card",
+        "PaperP1.BlockSupportParameters.records_bound",
+        "PaperP1.BlockSupportParameters.code_budget",
+        "PaperP1.BlockSupportParameters.uniform_count",
+        "PaperP1.BlockSupportParameters.critical_count",
+        "PaperP1.BlockSupportParameters.companion_T1_14",
+        "PaperP1.SeveralWindowProjections.tuples_eq",
+        "PaperP1.SeveralWindowProjectionCount.companion_T1_14"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
-        "P1-MATH-0047"
+        "P1-MATH-0047",
+        "P1-MATH-0066"
       ],
-      "notes": "The actual large-selected-kernel branch is proved for every fixed tuple size, including all marked anchors, exact finite receiver cost, scaled weighted tail and the source exponent with beta_s=(2s-1)/(2s+1), tau chosen after epsilon. Broader raw binary relations, repeated centres and overlapping windows are allowed. Full T1.14 is not complete: the all-small-kernel branch needs T1.13/T1.5, and compressed fixed-width/dilation and complete source-relative-image assembly remain. See LARGE_KERNEL_TUPLES_ALIGNMENT.md. No target tuple estimate is assumed."
+      "notes": "Full companion T1.14, with the stronger exponent r-s/2 for actual injective centre tuples whose full effective even-image relation has at least s nonzero block projections. An actual zero/nonzero-support bijection separates freely counted complementary centres from a full-support new group. The complete conditional 10.1 count is instantiated at each actual fixed complement; exact fibres and all finite role codes are summed. Ordinary candidate interval cardinalities are proved. Actual original-window spaces, values and critical widths are identified literally. Arbitrary finite effective block subsets and fixed normalized/compressed block images are covered by the same literal height/radius hypotheses, without injectivity of the even-selection map. Fixed offset/dilation codes have their actual polynomial cardinal counted and absorbed; both the actual union tuple population and the full coded-record population are bounded. The source weaker exponent follows by a proved comparison. The independent two-small-kernel/determinant lemma remains open and is not used in this complete alternative proof."
     },
     {
       "label": "p1:arith:fixed-branching",

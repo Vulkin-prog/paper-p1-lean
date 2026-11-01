@@ -1614,3 +1614,21 @@ constants are proved and absorbed. No host, primitive or mass estimate is
 an unproved external argument. Full main 10.2 is complete; no new Paper C
 port or literature assumption is introduced. See
 [complete alignment](CONNECTED_FAMILY_ALIGNMENT.md).
+
+## Complete several-block support count from the independent half-count
+
+Actual support extraction, finite bijections and complementary fibre
+injections reduce the actual many-projection relation population to the
+complete conditional half-count at each actual fixed complement. All free
+centre tuples, finite role codes and actual offset/dilation records are
+counted. Their fixed factors and logarithmic code cardinalities are proved
+and absorbed. Actual original-window and normalized finite even-image
+identities supply the source geometric scope. This gives the stronger
+r-s/2 exponent and the printed T1.14 exponent as a consequence.
+
+No unfinished determinant estimate, two-small-kernel count, target-count
+hypothesis, new external result or Paper C port is used. The independent
+10.1 proof predates this result, so this is an acyclic alternative proof.
+T1.5 and the two-small-kernel part of T1.13 remain open for their separate
+statements. P1-MATH-0066 records this completed T1.14 strengthening; see
+[complete alignment](SEVERAL_BLOCK_RELATION_ALIGNMENT.md).

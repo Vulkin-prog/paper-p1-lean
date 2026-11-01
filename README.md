@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 65 / 167 numbered results proved.**
+**Status: active formalization, 66 / 167 numbered results proved.**
 Companion T12.1 now proves the actual retained class is hereditary, has a unique dependent pair, and has boundary nullity at most 4L/3+1. See the
 [complete retained-class alignment](docs/RETAINED_CLASS_ALIGNMENT.md).
 Companion T12.2 now proves the actual large-boundary mass estimate with the source least cutoff, and strengthens its decay to N^(-5/3). See the
@@ -48,6 +48,9 @@ Main Corollary 10.2 now counts actual unordered connected and primitive
 original-window families and their independent mass, retaining every exact
 heterogeneous marginal. See [the relative extension](docs/RELATIVE_PARTICIPATION_ALIGNMENT.md)
 and [connected-family scope](docs/CONNECTED_FAMILY_ALIGNMENT.md).
+Companion T1.14 now has the stronger exponent r-s/2, with actual fixed
+offset/dilation record counts, from the complete conditional half-count.
+See [the complete support alignment](docs/SEVERAL_BLOCK_RELATION_ALIGNMENT.md).
 Companion T1.9 now covers the full enlarged geometric alignment, including
 zero exact units and both orientations, with its fixed-height enlarged-prime
 rate. The earlier one-unit coverage error and its subsequent closure are
