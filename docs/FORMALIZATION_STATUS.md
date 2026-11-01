@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **47 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **48 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **2996 audited theorem/lemma declarations**. This
+- The project currently has **3078 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -636,3 +636,29 @@ open. No Palomar registration is made. Ubuntu root free space is 17.74 GiB.
 
 Validated implementation of companion T19.5 and P1-MATH-0034:
 [fa7ba5f5dd20098526dba859bb770a8ba73318f0](https://github.com/Vulkin-prog/paper-p1-lean/commit/fa7ba5f5dd20098526dba859bb770a8ba73318f0).
+
+
+## Exact finite compression of the actual good-edge family
+
+Article Lemma 3.5 is complete. The normalized union contains each value
+once. Its actual parity map on even selections is injective with range
+the sum of the two square-class spaces, and rank |U|-1. The finite
+lower bound is (2-1/b)*L-1. There are at most (L+1)^2 integer motifs
+in [-bL,bL], and one fixed-pattern anchor determines both centres.
+The general finite result needs only one normalized coincidence and
+private coordinates; local regularity follows automatically and no
+affine compatibility or dependence premise is needed for compression.
+The actual deterministic good-edge definition retains both of those
+source properties and the leading slopes. This is P1-MATH-0035.
+See [alignment](GOOD_EDGE_COMPRESSION_ALIGNMENT.md).
+
+Four elementary channel arithmetic modules are ported from the pinned
+Paper C snapshot, with exact blob attribution and a successful new
+compiler build. The larger rational-channel-code module remains
+unported. All even-image, normalization and motif bridges are new P1
+proofs. The full build passed (9,191 jobs), as did the actual axiom
+audit of all 3,078 theorem/lemma declarations and all 793
+coverage/finding names. Coverage is 48 / 167: main 16 / 73,
+companion 32 / 94, with 35 confirmed improvements. The pair mass
+and complete profile remain open; no Palomar registration is made.
+Ubuntu root free space is 17.72 GiB.

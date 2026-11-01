@@ -1298,3 +1298,44 @@ preserved; no manuscript revision or Palomar registration is made.
 
 Validated implementation of companion T19.5 and P1-MATH-0034:
 [fa7ba5f5dd20098526dba859bb770a8ba73318f0](https://github.com/Vulkin-prog/paper-p1-lean/commit/fa7ba5f5dd20098526dba859bb770a8ba73318f0).
+
+
+## P1-MATH-0035 — Finite compression from one normalized coincidence
+
+- Location: article Lemma 3.5, page 16, `p1:arith:compression`,
+  `main_sections/arithmetic.tex:230`; original statement hash
+  `4b5ad33b5095a54af69a7b243e7e6c652772ff666d9271ec067e63cfe9fb126d`.
+- Original scope: good compatible dependent pairs in the two leading
+  channels, with an unspecified O(1) rank loss, O(B) width and
+  B^{O(1)} choices of endpoint offsets.
+- Improvement: one shared normalized value and private coordinates
+  suffice for the complete finite compression, for positive coprime
+  coefficients a<=b and positive window values. Compatibility,
+  dependence, separation and a prior regularity hypothesis are not
+  needed. Private coordinates imply both local ranks are L.
+- Explicit bounds: rank=|U|-1 >=(2-1/b)*L-1; at most (L+1)^2 integer
+  motifs, each in [-bL,bL]. At a fixed offset pattern its anchor
+  determines both centres. Repeated normalized values are included once.
+- Evidence: `EvenImage.image_eq_span_differences`,
+  `FiniteEvenSquareClasses.space_union`, `space_dilate`,
+  `CompressionRank.private_local_ranks`, `dependent_two_units`,
+  `rank_lower_bound`, `NormalizedMotifs.family_card`,
+  `anchor_injective`, `GoodEdgeCompression.finite_compression`
+  and `main_3_5`.
+- Suggested revision: state this finite version before specializing
+  to good edges, replace the unspecified constants by these bounds,
+  and give the anchor uniqueness assertion explicitly. For fixed a,b
+  the width is logarithmic. No optimality claim is made.
+
+All source conclusions hold for the actual deterministic good-edge
+family. Its positive joint mass and dependence are retained in the
+definition; normalized dependence supplies at least two exact units.
+No pair-count or mass estimate is assumed by the compression proof.
+See [alignment](GOOD_EDGE_COMPRESSION_ALIGNMENT.md).
+
+The full Lean v4.36.0-rc2 build passed (9,191 jobs), and all 3,078
+theorem/lemma declarations passed the actual axiom audit with only
+`propext`, `Classical.choice` and `Quot.sound`. All 793 distinct
+coverage/finding names were checked directly by Lean. Coverage is
+48 / 167, with 35 confirmed improvements. Original source bytes are
+preserved; no manuscript revision or Palomar registration is made.

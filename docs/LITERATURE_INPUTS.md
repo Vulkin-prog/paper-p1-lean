@@ -867,3 +867,16 @@ moment theorem is an input. Elementary real-power limits, the exact
 finite-cylinder Markov inequality and Z<=N finish both source bounds.
 No new Paper C code is ported. See
 [alignment](EFFECTIVE_SUPPORT_ALIGNMENT.md).
+
+
+## Article Lemma 3.5 — Finite normalized compression
+
+Zero-sum image generators, the intersecting-union rule, dilation
+invariance and private-coordinate injectivity are proved internally.
+The actual normalized intersection is identified with exact units and
+bounded by the proved elementary channel lattice count. Four channel
+arithmetic modules are attributed Paper C ports rebuilt under the new
+compiler; no rank, private-coordinate implication or asymptotic target
+is supplied as a literature hypothesis. The motif count and uniqueness
+of the translation parameter are explicit finite proofs. See
+[alignment](GOOD_EDGE_COMPRESSION_ALIGNMENT.md).

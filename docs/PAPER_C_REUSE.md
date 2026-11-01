@@ -322,3 +322,29 @@ no source declaration or unresolved Stein-factor input is imported.
 The new proofs are compiled under Lean v4.36.0-rc2 and included in the
 full audit of 2,875 declarations. See
 [statement alignment](SCALAR_RECURRENCE_ALIGNMENT.md).
+
+
+## Exact two-window normalization and finite channel counts
+
+All four ports below use `b9fa9ba490f201b408a302a86f1594ee620b228b`,
+Apache-2.0, originally Lean 4.34.0. Their complete source proofs have
+been recompiled under Lean v4.36.0-rc2, with no old compiled artifacts.
+The source and target both use offsets {-1,...,L-1}, hence B=L+1.
+P1's normalized coincidence b*(x+i)=a*(y+j) uses the old channel-count
+interface with coefficients (b,a), explicitly swapped at the call site.
+
+| Upstream path and Git blob | Target and scope | Adaptation |
+|---|---|---|
+| `PaperC/Arithmetic/ChannelGeometry.lean`, `a63745d3e50cafa3387d50b9570c0b68e5158cb4` | `PaperP1/Arithmetic/ChannelGeometry.lean`, full module | Public 4.36 declarations, `PaperP1.Channels` namespace; positive coprime primitive direction and exact offset box retained |
+| `PaperC/Arithmetic/IntervalCongruence.lean`, `f55ba828c9613a5202c5e1ae3fc3ae0f4332e54e` | `PaperP1/Arithmetic/IntervalCongruence.lean`, full module | Public 4.36 declarations and channel namespace; exact integer ceiling, rational interval bounds and natural/product wrappers retained |
+| `PaperC/Arithmetic/ChannelCount.lean`, `58e46fa13533ee3cc4c0c48558be6db2ca3ce6bb` | `PaperP1/Arithmetic/ChannelCount.lean`, full module | Public declarations, dependency paths and namespace; first, second and maximum step counts retained |
+| `PaperC/Arithmetic/ChannelEnumeration.lean`, `a0bebc0b4b36c3ee1274a381cd386ee200d4f4c4` | `PaperP1/Arithmetic/ChannelEnumeration.lean`, full module | Public declarations, dependency path and namespace; finite ratio/height bounds and empty-channel convention retained |
+
+`PaperC/Affine/RationalChannelCode.lean`, blob
+`491cfb0ab916209e068673206f37a48d7ab8eb74`, was read for statement
+comparison. It remains unported. P1 instead proves the finite even-image
+union, dilation, private-coordinate injectivity, exact normalized set
+and anchor/motif assertions in new modules. This avoids importing its
+separate two-start representation. The actual P1 good-edge definition
+retains infinite-model positive joint probability and dependence.
+See [alignment](GOOD_EDGE_COMPRESSION_ALIGNMENT.md).

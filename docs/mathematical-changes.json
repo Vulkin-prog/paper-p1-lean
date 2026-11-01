@@ -1161,6 +1161,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "fa7ba5f5dd20098526dba859bb770a8ba73318f0"
+    },
+    {
+      "id": "P1-MATH-0035",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "main",
+        "label": "p1:arith:compression",
+        "number": "3.5",
+        "page": 16,
+        "source": "main_sections/arithmetic.tex",
+        "line": 230,
+        "version": "P1 V1.6",
+        "statement_sha256": "4b5ad33b5095a54af69a7b243e7e6c652772ff666d9271ec067e63cfe9fb126d"
+      },
+      "original_assumption": "Lemma 3.5 is stated for good edges in the leading channels: compatible dependent regular pairs, with private prime coordinates on their distinct normalized values. It gives a rank lower bound with O(1), a width O(B) and B^{O(1)} endpoint patterns.",
+      "finding": "Finite compression holds for arbitrary positive coprime coefficients a<=b as soon as one normalized value is shared and the distinct normalized values have private parity coordinates. Affine compatibility, dependence, physical separation and a prior local-regularity assumption are unnecessary. Private coordinates already imply both local ranks equal L. The actual compressed rank is |U|-1 and at least (2-1/b)*L-1. There are at most (L+1)^2 fixed integer motifs, all in [-bL,bL]; one fixed-pattern integer anchor determines both centres.",
+      "evidence": [
+        "PaperP1.EvenImage.image_eq_span_differences",
+        "PaperP1.FiniteEvenSquareClasses.space_union",
+        "PaperP1.FiniteEvenSquareClasses.space_dilate",
+        "PaperP1.FiniteEvenSquareClasses.combination_injective",
+        "PaperP1.CompressionRank.private_local_ranks",
+        "PaperP1.CompressionRank.dependent_two_units",
+        "PaperP1.CompressionRank.rank_lower_bound",
+        "PaperP1.NormalizedMotifs.family_card",
+        "PaperP1.NormalizedMotifs.anchor_injective",
+        "PaperP1.GoodEdgeCompression.finite_compression",
+        "PaperP1.GoodEdgeCompression.main_3_5"
+      ],
+      "proposed_revision": "State the finite compression for positive coprime coefficients a<=b, a shared normalized value and private coordinates, and then specialize to good edges. Replace the unspecified finite losses and offset count by rank >=(2-1/b)*L-1 and at most (L+1)^2 motifs in [-bL,bL]. State explicitly that the anchor determines both centres and that local regularity follows from the private-coordinate condition.",
+      "impact": "Gives explicit finite constants and patterns, extends the compression beyond compatible dependent separated pairs and makes the deduplication and single-parameter assertion precise. For fixed a,b the width remains logarithmic. No good-edge count, mass asymptotic or optimality claim is added.",
+      "validation": "Full Lean v4.36.0-rc2 build (9191 jobs) and actual axiom audit of all 3078 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 793 distinct coverage/finding declaration names were checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -239,3 +239,15 @@ public import PaperP1.Asymptotics.EffectiveTailScale
 public import PaperP1.Asymptotics.EffectivePrimePool
 public import PaperP1.Asymptotics.EffectiveOrderMoments
 public import PaperP1.Asymptotics.EffectiveSupport
+public import PaperP1.Algebra.EvenImage
+public import PaperP1.Arithmetic.ChannelGeometry
+public import PaperP1.Arithmetic.IntervalCongruence
+public import PaperP1.Arithmetic.ChannelCount
+public import PaperP1.Arithmetic.ChannelEnumeration
+public import PaperP1.Arithmetic.FiniteEvenSquareClasses
+public import PaperP1.Arithmetic.NormalizedWindowSets
+public import PaperP1.Arithmetic.NormalizedUnitCount
+public import PaperP1.Arithmetic.PrivateEvenImages
+public import PaperP1.Arithmetic.NormalizedMotifs
+public import PaperP1.Arithmetic.CompressionRank
+public import PaperP1.Arithmetic.GoodEdgeCompression
