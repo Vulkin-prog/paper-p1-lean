@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 57 / 167 numbered results proved.**
+**Status: active formalization, 58 / 167 numbered results proved.**
 Companion T12.1 now proves the actual retained class is hereditary, has a unique dependent pair, and has boundary nullity at most 4L/3+1. See the
 [complete retained-class alignment](docs/RETAINED_CLASS_ALIGNMENT.md).
 Companion T12.2 now proves the actual large-boundary mass estimate with the source least cutoff, and strengthens its decay to N^(-5/3). See the
@@ -18,10 +18,10 @@ The prescribed-divisor estimate also holds cumulatively
 below a kernel-size bound; both counts accept fixed polylogarithmic widths.
 The fixed-kernel assertion additionally permits odd degrees. See the
 [complete split-product alignment](docs/PRESCRIBED_SPLIT_PRODUCT_ALIGNMENT.md).
-Article 9.1 is in progress: the exact infinite-measure moment identity, actual
-prime-pattern decomposition and finite exposure/assignment budgets are proved.
-The final tuple enumeration remains open. See the
-[moment enumeration checkpoint](docs/SHORT_MOMENT_ENUMERATION_ALIGNMENT.md).
+Article 9.1 and its actual Lᵛ consequence are proved, including every fixed
+comparable positive interval, arbitrary subsets of centres and fixed
+polylogarithmic widths. The choice of c is explicit. See the
+[complete moment alignment](docs/SHORT_MOMENT_ENUMERATION_ALIGNMENT.md).
 Companion T1.9 now covers the full enlarged geometric alignment, including
 zero exact units and both orientations, with its fixed-height enlarged-prime
 rate. The earlier one-unit coverage error and its subsequent closure are

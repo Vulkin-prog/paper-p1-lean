@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**58 mathematical improvements are confirmed; no error in a manuscript conclusion
+**59 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -2764,3 +2764,23 @@ moment identity is also verified, including repeated tuple entries.
 The full profile/prefix-state enumeration is still open, so Proposition
 9.1 remains in progress and numbered coverage stays 57/167. See
 [alignment](SHORT_MOMENT_ENUMERATION_ALIGNMENT.md).
+
+P1-MATH-0058 closure: uniform size-profile enumeration and actual prefix-state
+counts are now complete, so the minimum-degree last-index argument is
+instantiated in the full moment and Lp proof of Proposition 9.1.
+
+## P1-MATH-0059 — Arbitrary centre subsets and polylogarithmic widths in 9.1
+
+The full source moment exponent holds for every finite subset of a fixed
+comparable positive interval, without a lower size condition, and every
+fixed polylogarithmic offset width. Both v and the degree retain their
+source evenness hypotheses. Repeated tuple entries are included exactly.
+The actual sum is measurable and in every Lp. The explicit choice
+c=epsilon*v/(2*[v*(v-1)+2]*log2)>0 is made before the fixed interval and
+width constants and gives the actual lpNorm and eLpNorm conclusions.
+Uniform positivity identifies the source signed polynomial exactly.
+
+All profiles, prescribed centre counts, factor assignments, state
+transitions and the last fixed-kernel fibre are proved and summed. No
+count estimate is assumed. Proposition 9.1 is complete; 9.2 remains open.
+Coverage is 58/167. See [alignment](SHORT_MOMENT_ENUMERATION_ALIGNMENT.md).

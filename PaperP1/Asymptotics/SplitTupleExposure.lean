@@ -27,6 +27,21 @@ theorem product_height (C N n W : ℕ) (A : Finset ℤ)
     _ ≤ ∏ _a ∈ A, (C + 1) * N := prod_le_prod hlocal
     _ = _ := by simp
 
+theorem source_height (C : ℕ) (D A₀ : ℝ) :
+    ∃ N₀ : ℕ, ∀ N ≥ N₀, ∀ W n : ℕ, ∀ A : Finset ℤ,
+      N ≤ C * n → n ≤ C * N → (W : ℝ) ≤ D * (Real.log N) ^ A₀ →
+      (∀ a ∈ A, a.natAbs ≤ W) → 0 < product A n ∧ kernel A n ≤ ((C + 1) * N) ^ A.card := by
+  obtain ⟨Nv, hNv⟩ := PaperP1.ComparableSplitProductCount.width_lt_centre C D A₀
+  obtain ⟨Nw, hNw⟩ := PaperP1.SplitQuadraticCongruenceCount.polylog_le_rpow D A₀ 1 (by norm_num)
+  refine ⟨max Nv Nw, ?_⟩
+  intro N hN W n A hnlo hnhi hwidth hA
+  have hWN : W ≤ N := by
+    have hw := hNw N (by omega)
+    rw [Real.rpow_one] at hw
+    exact_mod_cast hwidth.trans hw
+  have hpos := product_pos A n W (hNv N (by omega) n W hnlo hwidth) hA
+  exact ⟨hpos, (kernel_le A n hpos).trans (product_height C N n W A hnhi hWN hA)⟩
+
 theorem source_exposure {ι : Type*} [Fintype ι] [DecidableEq ι] [Nonempty ι]
     (C : ℕ) (D A₀ : ℝ) :
     ∃ N₀ : ℕ, ∀ N ≥ N₀, ∀ W : ℕ, ∀ A : Finset ℤ, ∀ n : ι → ℕ,

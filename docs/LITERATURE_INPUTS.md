@@ -1466,3 +1466,18 @@ intervals are proved. No moment bound or tuple count is supplied as an
 unproved input; the final enumeration remains open. No new literature
 input or Paper C port is introduced. See
 [checkpoint](SHORT_MOMENT_ENUMERATION_ALIGNMENT.md).
+
+## Complete actual short split-product moment and Lp estimate
+
+The previously open size-profile and prefix-state enumeration is closed.
+The actual state stores earlier centres and pattern factors already seen;
+its next state is determined by the counted current record. Fixed states
+have a fixed prescribed divisor, so the proved T5.2 count applies before
+choosing the centre. New factor families are actual finite images, injected
+into prime colourings. The final state fixes its kernel and has no fresh
+factors. All local counts, finite refinement inequalities and their
+iteration are proved; no local or target count is an unproved input.
+The exact infinite-measure moment identity and actual Lp formula complete
+Proposition 9.1. The broader finite centre-set/width scope and explicit c
+are P1-MATH-0059. No additional literature theorem or Paper C port is used.
+See [complete alignment](SHORT_MOMENT_ENUMERATION_ALIGNMENT.md).

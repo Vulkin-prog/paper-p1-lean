@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **57 / 167**: article Propositions 3.1, 4.1, 5.2, 13.7, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemma T5.2.
+- Numbered results completed: **58 / 167**: article Propositions 3.1, 4.1, 5.2, 9.1, 13.7, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemma T5.2.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4162 audited theorem/lemma declarations**. This
+- The project currently has **4226 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1890,3 +1890,29 @@ coverage stays 57/167 with 58 confirmed improvements. See
 [moment checkpoint](SHORT_MOMENT_ENUMERATION_ALIGNMENT.md).
 
 Verification checkpoint: Lean v4.36.0-rc2 full build passed (9,653 jobs); actual axiom audit passed for all 4,162 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 1,877 distinct ledger/finding declarations were directly checked. All 138 manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.49 GiB. No unproved literature input, new Paper C port, original manuscript change or Palomar registration.
+
+## Complete actual short split-product moments — article 9.1
+
+The full actual square-tuple count is proved. Each fixed dyadic profile
+has one fixed exposure order; actual prefix states fix the prescribed
+divisor before the centre is counted. New coprime factors are counted by
+an injective prime code, and at the final step the kernel is fixed and
+there is no fresh factor assignment. The actual finite transition counts
+are iterated and all profiles and exponent losses are summed uniformly.
+No target moment, tuple count or local enumeration estimate is assumed.
+
+The exact infinite-measure moment identity then gives the source exponent
+v/2+c*[v*(v-1)+2]*log2+epsilon. The source signed polynomial is uniformly
+positive and identified exactly with the natural product used in Lean.
+Measurability and MemLp are proved. The explicit positive choice
+c=epsilon*v/(2*[v*(v-1)+2]*log2), chosen before every fixed interval and
+width constant, gives both actual lpNorm and eLpNorm bounds N^(1/2+epsilon).
+The theorem allows every finite subset of the comparable positive range
+and every fixed polylogarithmic width, P1-MATH-0059.
+
+This closes the historical open-profile and prefix-state entries above.
+Proposition 9.1 is complete; Corollary 9.2 remains open. Coverage is
+58/167 (main 18/73, companion 40/94), with 59 confirmed improvements. See
+[complete moment alignment](SHORT_MOMENT_ENUMERATION_ALIGNMENT.md).
+
+Verification checkpoint: Lean v4.36.0-rc2 full build passed (9,683 jobs); actual axiom audit passed for all 4,226 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 1,941 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.43 GiB. No unproved arithmetic/tuple count, new literature input, new Paper C port, manuscript-byte change or Palomar registration.

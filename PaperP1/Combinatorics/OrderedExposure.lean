@@ -32,6 +32,16 @@ theorem exists_rank_last [Fintype ι] (last : ι) :
     change (e i).val ≤ Fintype.card ι - 1
     omega
 
+omit [DecidableEq ι] in
+theorem exists_equiv_last [Fintype ι] (last : ι) :
+    ∃ e : ι ≃ Fin (Fintype.card ι), (e last).val = Fintype.card ι - 1 := by
+  have hv : 0 < Fintype.card ι := Fintype.card_pos_iff.mpr ⟨last⟩
+  let top : Fin (Fintype.card ι) := ⟨Fintype.card ι - 1, by omega⟩
+  let e := (Fintype.equivFin ι).trans (Equiv.swap ((Fintype.equivFin ι) last) top)
+  refine ⟨e, ?_⟩
+  have he : e last = top := by simp [e]
+  exact congrArg Fin.val he
+
 def firstByRank (rank : ι → ℕ) (fallback : ι) (S : Finset ι) : ι :=
   if hS : S.Nonempty then Classical.choose (S.exists_min_image rank hS) else fallback
 

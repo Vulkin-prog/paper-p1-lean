@@ -510,3 +510,33 @@ public import PaperP1.Model.MultiplicativeMoments
 public import PaperP1.Arithmetic.CoprimeFactorCodes
 
 public import PaperP1.Asymptotics.ExposureAssignmentBudget
+
+public import PaperP1.Arithmetic.DyadicPatternWeights
+
+public import PaperP1.Arithmetic.PrimePatternStates
+
+public import PaperP1.Arithmetic.ProfileExposureOrder
+
+public import PaperP1.Arithmetic.SplitFreshFamilies
+
+public import PaperP1.Arithmetic.SplitKernelStates
+
+public import PaperP1.Asymptotics.GrowingDegreeProfiles
+
+public import PaperP1.Asymptotics.ProfileCentreCount
+
+public import PaperP1.Asymptotics.ProfileRecordCount
+
+public import PaperP1.Asymptotics.ProfileStateSteps
+
+public import PaperP1.Asymptotics.ProfileTupleCount
+
+public import PaperP1.Asymptotics.ShortSplitLpBounds
+
+public import PaperP1.Asymptotics.ShortSplitMoments
+
+public import PaperP1.Asymptotics.SquareTupleCount
+
+public import PaperP1.Combinatorics.FiniteRefinementCount
+
+public import PaperP1.Model.SplitSumLp
