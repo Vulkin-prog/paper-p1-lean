@@ -1,7 +1,7 @@
 # Moderate certificates — article Lemma 7.2
 
-**Status: in progress. The full first finite counting conclusion is proved;
-the weighted second conclusion remains open.** Source: article V1.6, page 23,
+**Status: proved, both the finite count and the weighted growing-order
+conclusion.** Source: article V1.6, page 23,
 `main_sections/cores.tex:65`, label `p1:core:moderate`. Exact statement SHA-256:
 `9594d0ca09a407ca09f83dbf5e3e3a35c779690b9000a1041eb967ba1042956a`.
 
@@ -77,13 +77,47 @@ These finite conditions hold eventually in the manuscript's critical band.
 before **every** r, Y,T and tuple. Thus the finite bound is valid on a
 growing-order range; no fixed-order uniformity is silently substituted.
 
-## Remaining weighted conclusion
+## The actual weighted sum and growing ceiling
 
-The source second conclusion sums all orders with weights `(u*p)^r/r!`.
-That infinite weighted sum, its factorial/exponential majorant and the
-literal growing ceiling asymptotic remain to be proved. The full numbered
-lemma is therefore still in progress and adds no completed numbered result.
-No new mathematical improvement is asserted by this checkpoint.
+`sourceTuples_zero` identifies the empty order, and
+`sourceTuples_empty_of_lt` proves that the actual population vanishes for
+r>N, since its centres are distinct elements of an interval with N entries.
+Thus `ModerateWeightedSeries.weightedTotal` is summable without any
+analytic estimate. `weightedTotal_eq_positiveOrders` identifies it with
+the source sum over r>=1.
+
+Applying the finite count termwise gives the exact majorant
+
+`18*B^(m+4)*T^(-2)*(m+1)!*exp(exp(1)*2*a*N)`.
+
+`ExponentialPowerSum` proves the needed series bound from the actual
+exponential series and the positive-term inequality
+`r^(m+1) <= (m+1)!*exp(r)`. No distributional, moment or counting estimate
+is a premise.
+
+For Y=(logN)^A, `ModerateOrder.order_eq_ceil` identifies the literal m with
+`ceil(2*log(3*N)/(A*loglogN))`. Ceiling bounds give
+`m*loglogN/logN -> 2/A` and `m/logN -> 0`.
+`ModerateFactorialBudget.product_le_power_eventually` then proves
+
+`B^(m+4)*(m+1)! <= N^(4/A+epsilon)`
+
+for all 1<=B<=D*logN, with a threshold before every B. It uses a proved
+finite log-factorial bound, with no assumed Stirling asymptotic.
+
+In the critical band, the nominal weight satisfies
+`2^(-L)*N <= 2^C`. Taking a=u*2^(-L), T=N^beta, and absorbing a fixed
+exponential constant into N^(epsilon/2) gives
+
+`sum_{r>=1} (u*2^(-L))^r/r! * card(sourceTuples r)
+ <= N^(-2*beta+4/A+epsilon)`.
+
+This holds for every epsilon>0 with one threshold before **every** allowed
+critical-band length. `ModerateCertificateAsymptotic.main_7_2` combines this
+statement with the full finite count. It retains the original A>1,
+0<beta<1 and u>0. The stronger weighted theorem permits beta>=0, u>=0,
+and more general nonnegative weights with bounded a*N; see P1-MATH-0020.
+This extension concerns this estimate only.
 
 ## Inputs, history and validation
 
@@ -98,12 +132,15 @@ audited declarations:
 That partial scope is retained as historical validation, rather than evidence
 for the later arithmetic cover.
 
-The current full Lean v4.36.0-rc2 build passed (8,865 jobs), followed by the
-actual axiom audit of all 2,092 project theorem/lemma declarations. Only
-`propext`, `Classical.choice` and `Quot.sound` occur. Completed coverage
-remains 31 / 167. No Palomar registration is made.
-
-All 337 distinct coverage/finding declaration names were checked directly by Lean.
-
-Validated implementation of the full first finite counting conclusion:
+The earlier full first finite counting conclusion was validated with 8,865
+build jobs, 2,092 audited declarations and 337 directly checked ledger
+references at
 [e349c4801dffc0e0e76a7caa152c3aa2330e55f7](https://github.com/Vulkin-prog/paper-p1-lean/commit/e349c4801dffc0e0e76a7caa152c3aa2330e55f7).
+It did not then validate the weighted conclusion.
+
+The current full Lean v4.36.0-rc2 build passed (8,875 jobs), followed by the
+actual axiom audit of all 2,123 project theorem/lemma declarations. Only
+`propext`, `Classical.choice` and `Quot.sound` occur. Completed coverage is
+32 / 167 (main 12 / 73, companion 20 / 94). No Palomar registration is made.
+
+All 349 distinct coverage/finding declaration names were checked directly by Lean.

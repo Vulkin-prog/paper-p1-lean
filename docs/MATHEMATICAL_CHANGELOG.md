@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Nineteen mathematical improvements are confirmed; no error in a manuscript conclusion
+**Twenty mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -687,3 +687,33 @@ All 313 distinct coverage/finding declaration names were checked directly by Lea
 
 Validated implementation of companion T20.5 and P1-MATH-0019:
 [9fac0fbf1971b9145acd77ce72f3e6e42cbfedfc](https://github.com/Vulkin-prog/paper-p1-lean/commit/9fac0fbf1971b9145acd77ce72f3e6e42cbfedfc).
+
+## P1-MATH-0020 — Wider parameters for the weighted moderate-certificate estimate
+
+- Location: article Lemma 7.2, page 23, `p1:core:moderate`,
+  `main_sections/cores.tex:65` in V1.6.
+- Original setting: A>1, 0<beta<1 and every fixed u>0.
+- Improvement: the same weighted bound with exponent -2*beta+4/A+o(1)
+  holds for every fixed beta>=0 and u>=0. More generally, a nonnegative
+  weight a with a*N<=M for fixed M suffices, together with the explicit
+  finite width constraints and B<=D*logN. The stronger theorem needs
+  only an upper logarithmic width bound.
+- Evidence: `ModerateCertificateAsymptotic.weightedTotal_le_power_eventually`,
+  `weighted_criticalBand`, `ModerateWeightedSeries.weightedTotal_le`,
+  `ModerateFactorialBudget.product_le_power_eventually` and
+  `ModerateOrder.scaledOrder_tendsto`.
+- The exact finite population is summed over every order; it vanishes
+  above N. Its proved majorant is
+  `18*B^(m+4)*T^(-2)*(m+1)!*exp(exp(1)*2*a*N)`.
+  The actual ceiling, rather than an assumed asymptotic order, gives the
+  factorial budget with exponent 4/A. The power estimate means that for
+  every epsilon>0 one threshold precedes every allowed window length.
+- Suggested revision: record this broader certificate estimate separately;
+  retain beta<1 in any other core argument which requires it. No global
+  extension of the paper's parameter ranges is claimed.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,875 jobs) and the
+  actual audit of 2,123 theorem/lemma declarations. Only `propext`,
+  `Classical.choice` and `Quot.sound` occur. No manuscript conclusion is
+  corrected. Not integrated into a new manuscript version.
+
+All 349 distinct coverage/finding declaration names were checked directly by Lean.

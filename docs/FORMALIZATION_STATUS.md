@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **31 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1, together with Lemmas T19.13, T2.1, T2.2, T4.2, T20.2, T20.5, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **32 / 167**: article Propositions 3.1, 4.1, 5.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T19.12, T23.1, together with Lemmas T19.13, T2.1, T2.2, T4.2, T20.2, T20.5, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **2092 audited theorem/lemma declarations**. This
+- The project currently has **2123 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -347,16 +347,14 @@ Neither document is fully formalized.
   their root sets are pairwise disjoint. Only first-window regularity is
   needed in the stronger theorem. See
   [offset-root separation alignment](OFFSET_ROOT_SEPARATION_ALIGNMENT.md).
-- Article Lemma 7.2 is in progress, with its full first finite counting
-  conclusion proved. The actual unmarked anchor values give coprime
-  squarefree kernels, a bounded product and the literal ceiling exponent.
-  All prime assignments, actual receiver congruences and anchor tuples are
-  counted, giving the exact constant 36. The original ordered distinct
-  tuples form a proved subset of a larger congruence cover. A single
-  critical-band threshold precedes every order r and all cutoffs. The
-  weighted second conclusion over growing orders remains open. This adds
-  no completed numbered result. See
-  [moderate-certificate progress](MODERATE_CERTIFICATE_ALIGNMENT.md).
+- Article Lemma 7.2 is proved in full. The exact finite count includes all
+  actual prime assignments and receiving congruences. The actual population
+  vanishes above order N. Its factorial/exponential series majorant is
+  proved, and the literal ceiling has scaled limit 2/A. A uniform factorial
+  budget yields the weighted exponent -2*beta+4/A+epsilon for every
+  epsilon>0. One threshold precedes all critical-band lengths and all
+  finite counting orders. The stronger weighted statement allows beta>=0
+  and u>=0. See [alignment](MODERATE_CERTIFICATE_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
@@ -380,7 +378,9 @@ Neither document is fully formalized.
   the wider d and integer-tilt ranges for offset-pattern counts;
   `P1-MATH-0018`, a non-strict certificate product threshold and an upper
   logarithmic width condition for fixed sources; `P1-MATH-0019`,
-  first-window regularity alone in the complete root-separation lemma.
+  first-window regularity alone in the complete root-separation lemma;
+  `P1-MATH-0020`, the wider beta and weight ranges for the weighted
+  moderate-certificate estimate.
   No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.

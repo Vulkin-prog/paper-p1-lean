@@ -85,6 +85,11 @@ public import PaperP1.Arithmetic.OffsetPatternRankin
 public import PaperP1.Arithmetic.UniformFixedSourceCertificates
 public import PaperP1.Arithmetic.OffsetRootPolynomials
 public import PaperP1.Arithmetic.ModerateCertificateCount
+public import PaperP1.Analysis.ExponentialPowerSum
+public import PaperP1.Arithmetic.ModerateWeightedSeries
+public import PaperP1.Asymptotics.ModerateOrder
+public import PaperP1.Asymptotics.ModerateFactorialBudget
+public import PaperP1.Asymptotics.ModerateCertificateAsymptotic
 public import PaperP1.Analysis.IntegerProductTail
 public import PaperP1.Coding.CoordinateRegularisation
 public import PaperP1.Coding.TernaryConstraints

@@ -52,6 +52,26 @@ theorem sourceTuples_subset_cover (r B N : ℕ) (Y T : ℝ) :
     mem_biUnion.mpr ⟨f, (PaperP1.ModeratePrimeAssignments.mem_moderateCodes _ _ _ f).mpr hmoderate, hreceiving⟩
   exact (mem_tupleCover r B N Y T z).mpr ⟨A, hgood, ha, hcovered⟩
 
+theorem sourceTuples_zero (B N : ℕ) (Y T : ℝ) : sourceTuples 0 B N Y T = ∅ := by
+  apply eq_empty_iff_forall_notMem.mpr
+  intro z hz
+  obtain ⟨_, _, A, _⟩ := (mem_sourceTuples 0 B N Y T z).mp hz
+  exact Fin.elim0 A.1
+
+theorem sourceTuples_empty_of_lt (r B N : ℕ) (Y T : ℝ) (hNr : N < r) :
+    sourceTuples r B N Y T = ∅ := by
+  apply eq_empty_iff_forall_notMem.mpr
+  intro z hz
+  obtain ⟨hwindows, hcert⟩ := (mem_sourceTuples r B N Y T z).mp hz
+  let f : Fin r → Finset.Ico N (2 * N) := fun i ↦ ⟨z i, hwindows i⟩
+  have hinj : Function.Injective f := by
+    intro i j hij
+    exact hcert.1 (congrArg Subtype.val hij)
+  have hcard := Fintype.card_le_of_injective f hinj
+  simp only [Fintype.card_fin, Fintype.card_coe, Nat.card_Ico, two_mul,
+    Nat.add_sub_cancel_left] at hcard
+  omega
+
 theorem main_7_2_finite (r B N : ℕ) (hr : 1 ≤ r) (hN : 10 ≤ N) (hB : 2 ≤ B) (hBN : B ≤ N + 1)
     (Y T : ℝ) (hY : (B : ℝ) ≤ Y) (hT : 1 ≤ T) :
     ((sourceTuples r B N Y T).card : ℝ) ≤

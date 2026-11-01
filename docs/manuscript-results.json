@@ -444,8 +444,20 @@
       "source": "main_sections/cores.tex",
       "line": 65,
       "sha256": "9594d0ca09a407ca09f83dbf5e3e3a35c779690b9000a1041eb967ba1042956a",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
+        "PaperP1.ModerateCertificateAsymptotic.main_7_2",
+        "PaperP1.ModerateCertificateAsymptotic.weighted_criticalBand",
+        "PaperP1.ModerateCertificateAsymptotic.weightedTotal_le_power_eventually",
+        "PaperP1.ModerateCertificateAsymptotic.cutoff_ge_log_eventually",
+        "PaperP1.ModerateWeightedSeries.weightedTotal_le",
+        "PaperP1.ModerateWeightedSeries.weightedTotal_eq_positiveOrders",
+        "PaperP1.ModerateWeightedSeries.summable_weightedTerm",
+        "PaperP1.ModerateCertificateCount.sourceTuples_empty_of_lt",
+        "PaperP1.ModerateOrder.order_eq_ceil",
+        "PaperP1.ModerateOrder.scaledOrder_tendsto",
+        "PaperP1.ModerateFactorialBudget.product_le_power_eventually",
+        "PaperP1.ExponentialPowerSum.total_le",
         "PaperP1.ModerateCertificateCount.main_7_2_finite",
         "PaperP1.ModerateCertificateCount.main_7_2_finite_criticalBand",
         "PaperP1.ModerateCertificateCount.mem_sourceTuples",
@@ -474,8 +486,10 @@
       "literature_inputs": [
         "P1-ARITH-MODERATE-CERTIFICATES"
       ],
-      "mathematical_changes": [],
-      "notes": "The full first finite counting conclusion is proved for actual ordered distinct window tuples admitting an unmarked anchor, two distinct anchor values, and an assignment of every prime in their actual kernel product to an odd-valuation occurrence in another window. The tuple population is identified explicitly; a larger divisibility-only cover is counted internally. Canonical kernel supports, squarefreeness, coprimality, product bounds and the literal prime-count ceiling are proved. Group products partition the actual prime product; all assignments and receiving centres are counted. The exact source bound is 36*r*B^4*2^(r-1)*N^r*T^(-2)*(r*B)^m with m=ceil(2*log(3*N)/logY). The finite theorem has N>=10, 2<=B<=N+1, Y>=B and T>=1. A critical-band specialization chooses one threshold before every order r, Y,T and tuple. The weighted second conclusion over all growing orders remains open; the entire numbered result therefore remains in progress and adds no completed result. See MODERATE_CERTIFICATE_ALIGNMENT.md."
+      "mathematical_changes": [
+        "P1-MATH-0020"
+      ],
+      "notes": "Both source conclusions are proved for the actual ordered distinct window tuples with an unmarked anchor and moderate prime assignments. The first finite count has the exact constant 36, powers and literal ceiling m. The actual weighted population vanishes for r>N, is summable, and is bounded by 18*B^(m+4)*T^(-2)*(m+1)!*exp(exp(1)*2*a*N). The exact ceiling satisfies m*loglogN/logN -> 2/A. For Y=(logN)^A, T=N^beta and a=u*2^(-L), the bound is N^(-2*beta+4/A+epsilon) for every epsilon>0, with one threshold before every critical-band length and every finite order. The main theorem retains the original 0<beta<1 and u>0. A stronger weighted theorem permits beta>=0 and u>=0, or any nonnegative a with bounded a*N. Full build: 8875 jobs; actual audit: 2123 theorem/lemma declarations. Earlier receiving-only and finite-count checkpoints remain identified in MODERATE_CERTIFICATE_ALIGNMENT.md."
     },
     {
       "label": "p1:core:degrees",

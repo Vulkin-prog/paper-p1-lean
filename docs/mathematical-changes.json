@@ -659,6 +659,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "9fac0fbf1971b9145acd77ce72f3e6e42cbfedfc"
+    },
+    {
+      "id": "P1-MATH-0020",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:core:moderate",
+        "number": "7.2",
+        "page": 23,
+        "source": "main_sections/cores.tex",
+        "line": 65,
+        "statement_sha256": "9594d0ca09a407ca09f83dbf5e3e3a35c779690b9000a1041eb967ba1042956a"
+      },
+      "original_assumption": "Article Lemma 7.2 is stated in the ambient range A>1, 0<beta<1 and with each fixed u>0.",
+      "finding": "Its weighted certificate bound remains valid for every fixed beta>=0 and u>=0, with the same exponent -2*beta+4/A+o(1). More generally, the sum has the same uniform bound at any nonnegative weight a whose product a*N is bounded by a fixed M, for logarithmic widths B bounded above by D*logN and with the explicit finite width constraints. No lower logarithmic width comparison is used in this stronger weighted theorem.",
+      "evidence": [
+        "PaperP1.ModerateCertificateAsymptotic.weightedTotal_le_power_eventually",
+        "PaperP1.ModerateCertificateAsymptotic.weighted_criticalBand",
+        "PaperP1.ModerateWeightedSeries.weightedTotal_le",
+        "PaperP1.ModerateFactorialBudget.product_le_power_eventually",
+        "PaperP1.ModerateOrder.scaledOrder_tendsto"
+      ],
+      "proposed_revision": "State the weighted moderate-certificate estimate for fixed A>1, beta>=0 and u>=0, or record the broader bounded-a*N version separately. Retain beta<1 wherever required elsewhere in the core construction. Express the growing-order uniformity with one threshold before every critical-band length.",
+      "impact": "Widens the parameters only for this certificate-count estimate; no claim is made that other core arguments extend beyond their original ranges. The original statement and exponent are recovered without an unproved moment or counting input.",
+      "validation": "Full Lean v4.36.0-rc2 build (8875 jobs) and actual axiom audit of all 2123 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 349 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

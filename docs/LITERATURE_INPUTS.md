@@ -20,29 +20,26 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
-## Moderate congruence certificates — first counting conclusion proved
+## Moderate congruence certificates — both conclusions proved
 
-Stable ID: `P1-ARITH-MODERATE-CERTIFICATES`. Overall status: **unresolved**;
-full first finite counting conclusion: **proved**.
+Stable ID: `P1-ARITH-MODERATE-CERTIFICATES`. Status: **proved**.
 
 - Target: article Lemma 7.2, page 23, `p1:core:moderate`.
-- Lean: `ModerateCertificateCount.main_7_2_finite`, and its
-  `main_7_2_finite_criticalBand` specialization with the threshold before
-  every order r, cutoffs and source tuple.
-- The actual truncated kernels, prime supports, squarefreeness, coprimality,
-  product bounds and literal ceiling exponent are proved. Every prime is
-  assigned once to another window and a physical offset. The receiver
-  modules partition the actual product; congruences give their full count.
-- The original distinct window tuples with an unmarked anchor and actual
-  odd-valuation witnesses are proved contained in the counted cover.
-  Counting all anchors and all prime assignments yields the exact source
-  constant and powers. No arithmetic cover or CRT count is assumed.
+- Lean: `ModerateCertificateAsymptotic.main_7_2`, retaining both original
+  conclusions and the exact growing-order quantifiers.
+- Actual truncated kernels, prime supports, squarefreeness, coprimality,
+  product bounds, all assignments and receiver congruences give the exact
+  finite count. The source population has an explicit membership theorem.
+- Distinct centres make the weighted population empty above order N.
+  The proved exponential-series estimate gives its exact finite-parameter
+  majorant. The literal ceiling order satisfies m*loglogN/logN -> 2/A;
+  the factorial budget and bounded nominal mean give the weighted power.
 - Mathlib at the pinned revision supplies finite products, prime factors,
-  logarithms, natural division and finite function counts. No additional
-  Paper C source is ported.
-- The weighted second conclusion over growing orders remains open. The
-  entire numbered result remains in progress. See
-  [alignment](MODERATE_CERTIFICATE_ALIGNMENT.md).
+  logarithms, factorial bounds, exponentials and filter limits. No external
+  estimate is assumed and no additional Paper C source is ported.
+- The full build and actual audit validate both conclusions. See
+  [alignment](MODERATE_CERTIFICATE_ALIGNMENT.md) and P1-MATH-0020 for the
+  precisely delimited stronger parameter ranges.
 
 ## Root separation on a rational offset line
 
