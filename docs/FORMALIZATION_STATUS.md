@@ -587,3 +587,6 @@ The full build passed (9,135 jobs), as did the actual audit of all
 2,927 theorem/lemma declarations and all 700 coverage/finding names.
 Coverage is 45 / 167, with 32 confirmed improvements. No primitive-host
 count, six-vertex mass estimate or Palomar registration is asserted.
+
+Validated implementation of companion T20.7 and P1-MATH-0032:
+[2ecbeb2a1c57c75e700e1efc63225a9107335400](https://github.com/Vulkin-prog/paper-p1-lean/commit/2ecbeb2a1c57c75e700e1efc63225a9107335400).

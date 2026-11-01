@@ -89,3 +89,6 @@ passed for all 138 manifest entries and 167 original statement hashes.
 Coverage is 45 / 167: main 15 / 73, companion 30 / 94. There are
 32 confirmed improvements, with no new manuscript version or Palomar
 registration. Ubuntu-root space is 17.80 GiB.
+
+Validated implementation of companion T20.7 and P1-MATH-0032:
+[2ecbeb2a1c57c75e700e1efc63225a9107335400](https://github.com/Vulkin-prog/paper-p1-lean/commit/2ecbeb2a1c57c75e700e1efc63225a9107335400).
