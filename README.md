@@ -44,6 +44,10 @@ The actual dyadic signed unit sum is now identified with the global
 pattern/source aggregate. Both orientations give main term N*w*S and
 error <=6B*U, uniformly through reduced height B^3. See the
 [dyadic Fourier aggregate](docs/DYADIC_UNIT_FOURIER_ALIGNMENT.md).
+The actual nonprivate normalized hosts now have an explicit finite
+defect injection and an N^(1/2+epsilon) bound for each fixed channel.
+Their rational-unit weights are bounded without a privacy assumption.
+See the [exceptional-host checkpoint](docs/NORMALIZED_DEFECT_HOSTS_ALIGNMENT.md).
 The full pair profile and fixed-channel mass remain in progress. See the
 [finite calculation](docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,

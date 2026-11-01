@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3506 audited theorem/lemma declarations**. This
+- The project currently has **3525 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1197,3 +1197,35 @@ Original sources are unchanged. Ubuntu root free space is 17.90 GiB.
 Validated actual dyadic unit-Fourier checkpoint (9,369 build jobs;
 3,506 audited declarations; 1,221 directly checked coverage/finding names):
 [74727a964e38c4b8b556fac2f93194485c695c11](https://github.com/Vulkin-prog/paper-p1-lean/commit/74727a964e38c4b8b556fac2f93194485c695c11).
+
+## Actual normalized-defect hosts, source separation and rational-unit weights
+
+`NormalizedPrivateDefects` proves the exact cutoff-private/nondefective
+equivalence on a finite actual set of diameter less than H. For a true
+normalized source union, H>=2bB suffices. `NormalizedDefectSources`
+extracts an actual defective normalized vertex and injects its source
+family, at fixed unit and vertex indices, into the positive defect list.
+The explicit finite bound is 2B^3 times the positive H-defect count below
+b(2N+L). `NormalizedDefectSourceCount.bad_sources_rate` derives the
+actual N^(1/2+epsilon) host count, with one threshold before all critical
+lengths and integer H in [2bB,DB], for fixed a,b,D.
+
+`UnitFourierWeight` proves |signedUnitSum|<=2^((u-1)_+)-1 and then
+<=2^(B/b), without a private-coordinate or joint-compatibility premise.
+The signed sum vanishes at zero or one unit. `FixedChannelSourceGeometry`
+proves fixed-index source count <=N, total unit-host count <=B^2*N and
+deterministic separation under N>(a+b)B. The polynomial baseline count
+is deliberately recorded at its actual strength. See the
+[exceptional-host alignment](NORMALIZED_DEFECT_HOSTS_ALIGNMENT.md).
+
+This extends P1-MATH-0044; there remain 44 confirmed improvements.
+The final combination into the actual retained private-channel mass,
+its p^2 baseline and critical-scale error comparison remains unfinished,
+as do the full mass/profile estimates and phase equivalents. Article 3.3
+and T2.5 remain in progress; coverage stays **52 / 167**.
+The full build passed (9,379 jobs), all 3,525 theorem/lemma declarations
+passed the actual axiom audit, and all 1,240 coverage/finding names were
+checked directly by Lean. Only propext, Classical.choice and Quot.sound
+occur. There is no new literature input, Paper C port, manuscript revision
+or Palomar registration. Manuscript bytes are unchanged. Ubuntu root
+free space is 17.87 GiB.

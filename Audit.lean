@@ -941,6 +941,10 @@ import PaperP1
 #print axioms PaperP1.FixedChannelMatches.window_match_two_three
 #print axioms PaperP1.FixedChannelMatches.window_match_three_four
 #print axioms PaperP1.FixedChannelMatches.physical_fraction_of_divisor
+#print axioms PaperP1.FixedChannelSourceGeometry.first_projection_injective
+#print axioms PaperP1.FixedChannelSourceGeometry.source_pairs_card
+#print axioms PaperP1.FixedChannelSourceGeometry.unit_sources_card
+#print axioms PaperP1.FixedChannelSourceGeometry.source_separated
 #print axioms PaperP1.FixedSourceCertificate.sourceValues_pos
 #print axioms PaperP1.FixedSourceCertificate.sourceValues_le_square
 #print axioms PaperP1.FixedSourceCertificate.mem_certificateTargets
@@ -1091,6 +1095,12 @@ import PaperP1
 #print axioms PaperP1.ModerateWeightedSeries.finite_weight_identity
 #print axioms PaperP1.ModerateWeightedSeries.weightedTerm_le
 #print axioms PaperP1.ModerateWeightedSeries.weightedTotal_le
+#print axioms PaperP1.NormalizedDefectSources.value_injective
+#print axioms PaperP1.NormalizedDefectSources.value_bounds
+#print axioms PaperP1.NormalizedDefectSources.defect_sources_card
+#print axioms PaperP1.NormalizedDefectSources.covered_sources_card
+#print axioms PaperP1.NormalizedDefectSources.bad_sources_subset
+#print axioms PaperP1.NormalizedDefectSources.bad_sources_card
 #print axioms PaperP1.NormalizedMotifs.motif_mem_family
 #print axioms PaperP1.NormalizedMotifs.family_card
 #print axioms PaperP1.NormalizedMotifs.offset_difference_bound
@@ -1111,6 +1121,10 @@ import PaperP1
 #print axioms PaperP1.NormalizedPairRankLoss.dimension_le_space_add_kernel
 #print axioms PaperP1.NormalizedPairRankLoss.loss_le_units_add_residual
 #print axioms PaperP1.NormalizedPairRankLoss.loss_le_units_add_residual_all
+#print axioms PaperP1.NormalizedPrivateDefects.privateAbove_iff_nondefective
+#print axioms PaperP1.NormalizedPrivateDefects.normalized_dist_bound
+#print axioms PaperP1.NormalizedPrivateDefects.normalized_private_iff
+#print axioms PaperP1.NormalizedPrivateDefects.normalized_bad_witness
 #print axioms PaperP1.NormalizedUnitCount.mem_units
 #print axioms PaperP1.NormalizedUnitCount.label_cast
 #print axioms PaperP1.NormalizedUnitCount.offset_injective
@@ -1806,6 +1820,7 @@ import PaperP1
 #print axioms PaperP1.NearLinearThreshold.scale_bound_eventually
 #print axioms PaperP1.NearLinearThreshold.window_bound_eventually
 #print axioms PaperP1.NearLinearThreshold.threshold_ge_power
+#print axioms PaperP1.NormalizedDefectSourceCount.bad_sources_rate
 #print axioms PaperP1.NormalizedPairResidual.rank_sublinear
 #print axioms PaperP1.OffsetLineMajorant.majorantConstant_pos
 #print axioms PaperP1.OffsetLineMajorant.majorantConstant_eq
@@ -2777,6 +2792,10 @@ import PaperP1
 #print axioms PaperP1.TripleProbabilityBound.pair_joint_le
 #print axioms PaperP1.TripleProbabilityBound.pair_subset_tupleSet
 #print axioms PaperP1.TripleProbabilityBound.triple_joint_le
+#print axioms PaperP1.UnitFourierWeight.abs_signed_unit_sum
+#print axioms PaperP1.UnitFourierWeight.unit_kernel_rank_bound
+#print axioms PaperP1.UnitFourierWeight.signed_unit_sum_zero_of_card_le_one
+#print axioms PaperP1.UnitFourierWeight.abs_signed_unit_sum_le_rpow
 #print axioms PaperP1.PNT.AsymptoticHelpers.isLittleO_const_id_cocompact
 #print axioms PaperP1.PNT.AsymptoticHelpers.isLittleO_const_id_atTop2
 #print axioms PaperP1.PNT.AsymptoticHelpers.isLittleO_const_id_atBot2

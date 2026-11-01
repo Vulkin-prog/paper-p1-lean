@@ -72,9 +72,13 @@ identifies p^2 times this sum with q_{x,y}-p^2. Probability-zero pairs
 retain their character cancellations. On a nonprivate pair, the rational
 unit sum has no asserted equality with the complete covariance.
 
-To obtain the source's fixed-channel mass, defective normalized hosts
-must still be removed and the p^2 baseline added on the retained private
-dependent family. Their errors and the full mass/profile asymptotics
+The actual defective normalized hosts now have a finite injection and
+fixed-channel square-root count; their rational-unit weights are bounded
+without privacy. See the
+[exceptional-host checkpoint](NORMALIZED_DEFECT_HOSTS_ALIGNMENT.md).
+To obtain the source's fixed-channel mass, these estimates must still
+be combined to remove the bad terms and add the p^2 baseline on the
+retained private dependent family. The full mass/profile asymptotics
 and positive phase equivalents remain unfinished. Neither article 3.3
 nor companion T2.5 is declared proved.
 

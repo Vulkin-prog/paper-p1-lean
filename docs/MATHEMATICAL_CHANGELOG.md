@@ -2015,3 +2015,44 @@ registration is introduced. Manuscript bytes are unchanged.
 Validated actual dyadic unit-Fourier checkpoint (9,369 build jobs;
 3,506 audited declarations; 1,221 directly checked coverage/finding names):
 [74727a964e38c4b8b556fac2f93194485c695c11](https://github.com/Vulkin-prog/paper-p1-lean/commit/74727a964e38c4b8b556fac2f93194485c695c11).
+
+## P1-MATH-0044 extended — actual normalized exceptions and rational-unit weights
+
+For an actual finite set with distinct values at distance less than H,
+privacy above the integer cutoff H is equivalent to nondefectivity of
+every value. The true normalized union has diameter <=2bL, so H>=2bB
+suffices. Failure supplies an actual H-defective normalized value.
+
+At fixed source-unit indices and fixed normalized vertex index and
+window, that value determines both centres injectively. A finite union
+over 2B^3 such choices gives
+
+    #badSources <= 2B^3 * #positiveDefectsBelow(H,b(2N+L)).
+
+For each fixed positive a<=b and natural D, one critical-band threshold
+precedes all lengths and H in [2bB,DB], giving #badSources<=N^(1/2+epsilon).
+This does not put growing b or D after the threshold.
+
+The actual rational-unit signed sum is independently bounded by
+2^((u-1)_+)-1<=2^(B/b), with zero at u=0 or 1. No privacy or joint
+compatibility is used for these weight bounds. A fixed unit choice has
+at most N sources, giving a B^2*N count for all unit hosts. Sources are
+actually separated under N>(a+b)B. This records the proved coarser
+baseline, without claiming the source's sharper NB intermediate count.
+
+Evidence: `NormalizedPrivateDefects.privateAbove_iff_nondefective`,
+`normalized_dist_bound`, `normalized_private_iff`, `normalized_bad_witness`,
+`NormalizedDefectSources.value_injective`, `bad_sources_subset`,
+`bad_sources_card`, `NormalizedDefectSourceCount.bad_sources_rate`,
+`UnitFourierWeight.abs_signed_unit_sum`, `unit_kernel_rank_bound`,
+`signed_unit_sum_zero_of_card_le_one`, `abs_signed_unit_sum_le_rpow`,
+`FixedChannelSourceGeometry.source_pairs_card`, `unit_sources_card`
+and `source_separated`.
+
+There remain 44 confirmed improvements and coverage stays 52/167.
+The final retained private-channel mass calculation, baseline correction
+and critical-scale phase estimates remain open. The full build passed
+(9,379 jobs), all 3,525 theorem/lemma declarations passed the actual
+axiom audit, and all 1,240 coverage/finding names were checked directly.
+Only propext, Classical.choice and Quot.sound occur. No new literature
+input, Paper C port, manuscript revision or Palomar registration is introduced.

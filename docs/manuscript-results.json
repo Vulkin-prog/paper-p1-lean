@@ -290,7 +290,26 @@
         "PaperP1.DyadicUnitFourierAggregate.dyadic_unit_sum",
         "PaperP1.DyadicUnitFourierAggregate.symmetric_unit_sum",
         "PaperP1.DyadicUnitFourierAggregate.finite_signed_sum_error",
-        "PaperP1.DyadicUnitFourierCount.all_heights"
+        "PaperP1.DyadicUnitFourierCount.all_heights",
+        "PaperP1.NormalizedPrivateDefects.privateAbove_iff_nondefective",
+        "PaperP1.NormalizedPrivateDefects.normalized_dist_bound",
+        "PaperP1.NormalizedPrivateDefects.normalized_private_iff",
+        "PaperP1.NormalizedPrivateDefects.normalized_bad_witness",
+        "PaperP1.NormalizedDefectSources.value_injective",
+        "PaperP1.NormalizedDefectSources.value_bounds",
+        "PaperP1.NormalizedDefectSources.defect_sources_card",
+        "PaperP1.NormalizedDefectSources.covered_sources_card",
+        "PaperP1.NormalizedDefectSources.bad_sources_subset",
+        "PaperP1.NormalizedDefectSources.bad_sources_card",
+        "PaperP1.NormalizedDefectSourceCount.bad_sources_rate",
+        "PaperP1.UnitFourierWeight.abs_signed_unit_sum",
+        "PaperP1.UnitFourierWeight.unit_kernel_rank_bound",
+        "PaperP1.UnitFourierWeight.signed_unit_sum_zero_of_card_le_one",
+        "PaperP1.UnitFourierWeight.abs_signed_unit_sum_le_rpow",
+        "PaperP1.FixedChannelSourceGeometry.first_projection_injective",
+        "PaperP1.FixedChannelSourceGeometry.source_pairs_card",
+        "PaperP1.FixedChannelSourceGeometry.unit_sources_card",
+        "PaperP1.FixedChannelSourceGeometry.source_separated"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
@@ -298,7 +317,7 @@
         "P1-MATH-0044",
         "P1-MATH-0035"
       ],
-      "notes": "Preparatory finite channel sums, actual dyadic translations, the private pair covariance formula and complete local selected-unit word bijection are proved. The global bridge is now also complete: actual pair-specific shapes are bijective with global patterns carrying the corresponding source unit, and finite sum interchange identifies the actual dyadic signed unit sum with the literal source-pair host aggregate. Both orientations give the exact signedHosts aggregate. Its signed main term is N*w*S with error <=6B*U, under one critical-band threshold before all reduced heights b<=B^3. Probability-zero pairs retain their cancellations. Remaining: remove defective normalizations from this actual rational-unit aggregate, add the baseline p^2 correction on the retained private dependent family, and prove the full mass/profile asymptotics and phase equivalents. Neither article 3.3 nor T2.5 is newly complete. See docs/DYADIC_UNIT_FOURIER_ALIGNMENT.md and the earlier local and probability alignments.",
+      "notes": "The private covariance identity, complete actual unit-word bijection and global dyadic signed unit aggregate are proved, with main term N*w*S and error <=6B*U uniformly through reduced height B^3. Exceptional normalized source counting is now also actual: for H>=2bB, privacy above H is equivalent to nondefectivity of every distinct normalized value. The bad host count is <=2B^3 times the positive H-defect count below b(2N+L), hence <=N^(1/2+epsilon) for fixed a,b,D and 2bB<=H<=DB in the critical band. Rational-unit signed weights are bounded without privacy by 2^(B/b); zero/one-unit sums vanish. Literal fixed-index source counts are <=N, all unit-host counts are <=B^2*N, and sources are separated once N>(a+b)B. Remaining: combine these proved counts and weights into the actual retained private-channel mass error, add its p^2 baseline, and prove the full asymptotics and phase equivalents. No numbered result is newly complete. See docs/NORMALIZED_DEFECT_HOSTS_ALIGNMENT.md and earlier bridges.",
       "validation_commit": "74727a964e38c4b8b556fac2f93194485c695c11",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
@@ -2481,7 +2500,26 @@
         "PaperP1.DyadicUnitFourierAggregate.dyadic_unit_sum",
         "PaperP1.DyadicUnitFourierAggregate.symmetric_unit_sum",
         "PaperP1.DyadicUnitFourierAggregate.finite_signed_sum_error",
-        "PaperP1.DyadicUnitFourierCount.all_heights"
+        "PaperP1.DyadicUnitFourierCount.all_heights",
+        "PaperP1.NormalizedPrivateDefects.privateAbove_iff_nondefective",
+        "PaperP1.NormalizedPrivateDefects.normalized_dist_bound",
+        "PaperP1.NormalizedPrivateDefects.normalized_private_iff",
+        "PaperP1.NormalizedPrivateDefects.normalized_bad_witness",
+        "PaperP1.NormalizedDefectSources.value_injective",
+        "PaperP1.NormalizedDefectSources.value_bounds",
+        "PaperP1.NormalizedDefectSources.defect_sources_card",
+        "PaperP1.NormalizedDefectSources.covered_sources_card",
+        "PaperP1.NormalizedDefectSources.bad_sources_subset",
+        "PaperP1.NormalizedDefectSources.bad_sources_card",
+        "PaperP1.NormalizedDefectSourceCount.bad_sources_rate",
+        "PaperP1.UnitFourierWeight.abs_signed_unit_sum",
+        "PaperP1.UnitFourierWeight.unit_kernel_rank_bound",
+        "PaperP1.UnitFourierWeight.signed_unit_sum_zero_of_card_le_one",
+        "PaperP1.UnitFourierWeight.abs_signed_unit_sum_le_rpow",
+        "PaperP1.FixedChannelSourceGeometry.first_projection_injective",
+        "PaperP1.FixedChannelSourceGeometry.source_pairs_card",
+        "PaperP1.FixedChannelSourceGeometry.unit_sources_card",
+        "PaperP1.FixedChannelSourceGeometry.source_separated"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
@@ -2489,7 +2527,7 @@
         "P1-MATH-0044",
         "P1-MATH-0035"
       ],
-      "notes": "Preparatory finite channel sums, actual dyadic translations, the private pair covariance formula and complete local selected-unit word bijection are proved. The global bridge is now also complete: actual pair-specific shapes are bijective with global patterns carrying the corresponding source unit, and finite sum interchange identifies the actual dyadic signed unit sum with the literal source-pair host aggregate. Both orientations give the exact signedHosts aggregate. Its signed main term is N*w*S with error <=6B*U, under one critical-band threshold before all reduced heights b<=B^3. Probability-zero pairs retain their cancellations. Remaining: remove defective normalizations from this actual rational-unit aggregate, add the baseline p^2 correction on the retained private dependent family, and prove the full mass/profile asymptotics and phase equivalents. Neither article 3.3 nor T2.5 is newly complete. See docs/DYADIC_UNIT_FOURIER_ALIGNMENT.md and the earlier local and probability alignments.",
+      "notes": "The private covariance identity, complete actual unit-word bijection and global dyadic signed unit aggregate are proved, with main term N*w*S and error <=6B*U uniformly through reduced height B^3. Exceptional normalized source counting is now also actual: for H>=2bB, privacy above H is equivalent to nondefectivity of every distinct normalized value. The bad host count is <=2B^3 times the positive H-defect count below b(2N+L), hence <=N^(1/2+epsilon) for fixed a,b,D and 2bB<=H<=DB in the critical band. Rational-unit signed weights are bounded without privacy by 2^(B/b); zero/one-unit sums vanish. Literal fixed-index source counts are <=N, all unit-host counts are <=B^2*N, and sources are separated once N>(a+b)B. Remaining: combine these proved counts and weights into the actual retained private-channel mass error, add its p^2 baseline, and prove the full asymptotics and phase equivalents. No numbered result is newly complete. See docs/NORMALIZED_DEFECT_HOSTS_ALIGNMENT.md and earlier bridges.",
       "validation_commit": "74727a964e38c4b8b556fac2f93194485c695c11",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",

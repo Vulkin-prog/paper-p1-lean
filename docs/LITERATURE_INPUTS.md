@@ -1072,3 +1072,15 @@ and its <=6B*U translation error uniformly through height B^3. These
 use previously proved finite and critical-scale results only. There is
 no new literature premise or Paper C port. Exceptional normalization
 removal and full channel mass/profile asymptotics remain unfinished.
+
+## Actual normalized exceptional hosts
+
+`NormalizedPrivateDefects`, `NormalizedDefectSources`,
+`NormalizedDefectSourceCount`, `UnitFourierWeight` and
+`FixedChannelSourceGeometry` use the already proved elementary private-prime
+lemma, actual global defect count and finite binary coefficient cardinalities.
+They give actual host injections, fixed-channel square-root counts,
+privacy-free rational-unit weights and source geometry. No residual-rank
+or external host-count premise is introduced. The final retained mass
+calculation and phase comparison remain unfinished; no literature input
+or Paper C port is added.

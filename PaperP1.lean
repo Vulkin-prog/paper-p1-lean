@@ -340,3 +340,8 @@ public import PaperP1.Arithmetic.UnitShapePatterns
 public import PaperP1.Arithmetic.DyadicUnitWordHosts
 public import PaperP1.Model.DyadicUnitFourierAggregate
 public import PaperP1.Asymptotics.DyadicUnitFourierCount
+public import PaperP1.Arithmetic.NormalizedPrivateDefects
+public import PaperP1.Arithmetic.NormalizedDefectSources
+public import PaperP1.Asymptotics.NormalizedDefectSourceCount
+public import PaperP1.Model.UnitFourierWeight
+public import PaperP1.Arithmetic.FixedChannelSourceGeometry
