@@ -3329,11 +3329,29 @@
         "PaperP1.SplitOffsetSupports.shared_prime_divides_resultant",
         "PaperP1.SplitOffsetSupports.private_prime_parity",
         "PaperP1.SplitOffsetSupports.linear_support_subset",
-        "PaperP1.SplitOffsetSupports.linear_kernel_divides_radical"
+        "PaperP1.SplitOffsetSupports.linear_kernel_divides_radical",
+        "PaperP1.LinearKernelFibres.offset_bounds",
+        "PaperP1.LinearKernelFibres.linearKernel_pos",
+        "PaperP1.LinearKernelFibres.representation",
+        "PaperP1.LinearKernelFibres.squarePart_pos",
+        "PaperP1.LinearKernelFibres.kernel_part_le_value",
+        "PaperP1.LinearKernelFibres.integer_representation",
+        "PaperP1.LinearKernelFibres.embed_injective_at",
+        "PaperP1.LinearKernelFibres.embed_equation",
+        "PaperP1.LinearKernelFibres.height_budget",
+        "PaperP1.LinearKernelFibres.fixed_linear_kernels_count",
+        "PaperP1.SplitOffsetFixedKernelCount.mem_values",
+        "PaperP1.SplitOffsetFixedKernelCount.code_card",
+        "PaperP1.SplitOffsetFixedKernelCount.kernels_of_code",
+        "PaperP1.SplitOffsetFixedKernelCount.finite_fibre_count",
+        "PaperP1.SplitOffsetFixedKernelCount.growing_degree_fixed_kernel_count",
+        "PaperP1.SplitOffsetFixedKernelCount.actual_values_fixed_kernel_count"
       ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": "The growing-degree prime-support/divisor/colouring budgets are proved uniformly. The literal integer-offset product, its positivity and equality with the signed source product, the actual unordered difference resultant D_A, and the derived logarithmic height of q*D_A are now proved, with arbitrary fixed polylogarithmic widths and d<=c*loglogN. This yields actual omega(q*D_A)<=(c+epsilon)logN and a^omega<=N^(c log(a)+epsilon). Every actual linear kernel is proved to divide rad(q*D_A) by private-prime parity and the difference resultant. The quantitative quotient prod(q_j)/q | D_A^2, prescribed-divisor allocation, selected quadratic enumeration and the full fixed-kernel fibre count remain open. T5.2 stays in progress; no source count is assumed."
+      "mathematical_changes": [
+        "P1-MATH-0055"
+      ],
+      "notes": "The full actual fixed-kernel conclusion is proved: the literal finite family with sf(P_A(n))=q has cardinal <=N^(2*c*log(2)+epsilon), uniformly at d<=c*loglogN and any fixed polylogarithmic offset width. No even-degree assumption is needed for this conclusion, only d>=2. Actual q*D_A height, prime budgets and linear support restriction are derived. Pairs of actual linear supports have at most 4^omega(q*D_A) codes; each code has a proved injective positive quadratic fibre with all polynomial coefficient/coordinate/shift heights derived, including factorizable cases. The other T5.2 conclusion, with prescribed divisor e and exponent 1/2+beta/(2d)-delta/d+c*log(2), remains open: its quadratic-kernel quotient, prescribed-divisor allocation and selected enumeration are not yet proved. Full T5.2 is not claimed."
     },
     {
       "label": "p13:half:small-kernels",

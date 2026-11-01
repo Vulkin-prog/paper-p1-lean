@@ -62,6 +62,10 @@ selected quadratic enumeration, and the complete fixed-kernel count
 remain open. This checkpoint does not infer a solution count from the
 prime budget alone.
 
+The subsequent [fixed-kernel checkpoint](SPLIT_OFFSET_FIXED_KERNEL_ALIGNMENT.md)
+proves the full fixed-kernel count using actual injective quadratic fibres;
+the other prescribed-divisor assertion remains open.
+
 No new unproved literature input, Paper C port, manuscript-byte change
 or Palomar registration is introduced.
 

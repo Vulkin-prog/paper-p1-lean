@@ -1378,3 +1378,14 @@ identity and elementary integer divisibility. No resultant/support
 estimate or extra literature input is assumed. The quadratic-kernel
 quotient and counting applications remain open; see
 [alignment](SPLIT_OFFSET_KERNEL_BUDGET_ALIGNMENT.md).
+
+## Full fixed-kernel split-product count
+
+The actual fixed-kernel count is now proved from actual q*D_A prime
+supports, finite powerset coding and the already proved uniform positive
+quadratic count. Every quadratic input height and the injective embedding
+are derived; no fixed-fibre count is assumed. Factoring and nonsquare
+cases use the existing checked uniform quadratic theorem. Odd degree
+and arbitrary fixed polylogarithmic width are included in this part,
+P1-MATH-0055. The prescribed-divisor conclusion remains open; see
+[alignment](SPLIT_OFFSET_FIXED_KERNEL_ALIGNMENT.md).

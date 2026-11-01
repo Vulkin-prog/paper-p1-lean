@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3950 audited theorem/lemma declarations**. This
+- The project currently has **3966 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1748,3 +1748,22 @@ Actual-offset verification: full build passed (9,579 jobs), the actual
 axiom audit passed for all 3,950 declarations, and all 1,665 distinct
 ledger/finding names were checked. The 138 source manifest entries and
 167 result records remain intact. Ubuntu available space: 17.60 GiB.
+
+## Full actual fixed-kernel part of T5.2
+
+The literal fixed-kernel split-product family is bounded by
+N^(2c log2+epsilon), using the actual q*D_A prime budget and at most
+4^omega(q*D_A) two-linear-support codes. Every code has a proved
+injective positive quadratic embedding, with actual coefficients
+<=3N and all coordinate/nonzero-shift heights derived. Factorizable
+cases are included. This conclusion needs no even-degree assumption
+and accepts every fixed polylogarithmic width: P1-MATH-0055.
+The prescribed-divisor conclusion and its quadratic-kernel allocation
+remain open, so T5.2 stays in progress. Coverage stays 56/167 with
+55 confirmed improvements. See
+[alignment](SPLIT_OFFSET_FIXED_KERNEL_ALIGNMENT.md).
+
+Fixed-kernel verification: full build passed (9,583 jobs); actual axiom
+audit passed for all 3,966 declarations; all 1,681 distinct ledger/finding
+names were checked directly. All 138 manifest entries and 167 result
+records remain intact. Ubuntu available space: 17.60 GiB.

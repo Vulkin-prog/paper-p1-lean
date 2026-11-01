@@ -2561,6 +2561,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "de20445461d4c2ddde4823d870e99b36cfeb414c"
+    },
+    {
+      "id": "P1-MATH-0055",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:short:split",
+        "number": "T5.2",
+        "page": 32,
+        "source": "companion_sections/short_supports.tex",
+        "line": 59,
+        "statement_sha256": "32f53c032c8c2c0458723e096e068b662179498b5e4a5a9eb4c5ddb3170f2c04"
+      },
+      "original_assumption": "Companion T5.2 states its split-product and fixed-kernel conclusions for even degree 2<=d<=c loglogN, with offsets in a fixed multiple of the critical logarithmic width B.",
+      "finding": "The full actual fixed-kernel bound N^(2*c*log(2)+epsilon) holds for every degree d>=2, including odd d, and for any fixed polylogarithmic width D*(log N)^A0. One common threshold precedes q, the integer offset set, its degree and width, and the finite actual solution family. The proof derives the actual q*D_A prime budget, injects two linear support codes into the product of the actual prime-pool powersets, and counts each code via an explicit injective positive quadratic embedding. Every quadratic coefficient, coordinate and nonzero shift height is derived from actual positive linear values; all factorizable cases are included.",
+      "evidence": [
+        "PaperP1.LinearKernelFibres.offset_bounds",
+        "PaperP1.LinearKernelFibres.linearKernel_pos",
+        "PaperP1.LinearKernelFibres.representation",
+        "PaperP1.LinearKernelFibres.squarePart_pos",
+        "PaperP1.LinearKernelFibres.kernel_part_le_value",
+        "PaperP1.LinearKernelFibres.integer_representation",
+        "PaperP1.LinearKernelFibres.embed_injective_at",
+        "PaperP1.LinearKernelFibres.embed_equation",
+        "PaperP1.LinearKernelFibres.height_budget",
+        "PaperP1.LinearKernelFibres.fixed_linear_kernels_count",
+        "PaperP1.SplitOffsetFixedKernelCount.mem_values",
+        "PaperP1.SplitOffsetFixedKernelCount.code_card",
+        "PaperP1.SplitOffsetFixedKernelCount.kernels_of_code",
+        "PaperP1.SplitOffsetFixedKernelCount.finite_fibre_count",
+        "PaperP1.SplitOffsetFixedKernelCount.growing_degree_fixed_kernel_count",
+        "PaperP1.SplitOffsetFixedKernelCount.actual_values_fixed_kernel_count"
+      ],
+      "proposed_revision": "Separate the fixed-kernel assertion from the paired-quadratic prescribed-divisor assertion: state the former for arbitrary d>=2 and fixed polylogarithmic offset widths. Retain the even-degree hypothesis in the latter unless a separate extension is proved. Explain that the fixed-kernel quadratic coefficients are actual linear kernels <=3N, even though the product kernel may have growing-degree height.",
+      "impact": "Completes the actual fixed-kernel part of T5.2 and extends its degree/width scope without changing its advertised exponent. The prescribed-divisor count and its quadratic-kernel bookkeeping remain open, so T5.2 stays in progress and numbered coverage stays 56/167.",
+      "validation": "Lean v4.36.0-rc2 full build passed (9,583 jobs); actual axiom audit passed for all 3,966 theorem/lemma declarations using only propext, Classical.choice and Quot.sound. All 1,681 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 result records remain intact. Ubuntu available space: 17.60 GiB. No new unproved literature input or Paper C port.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

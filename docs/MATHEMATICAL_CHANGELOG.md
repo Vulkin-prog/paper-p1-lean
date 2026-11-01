@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**54 mathematical improvements are confirmed; no error in a manuscript conclusion
+**55 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -2676,3 +2676,15 @@ actual linear-kernel support restriction. These verify source ingredients
 and add no new improvement entry or numbered-result completion. The
 confirmed-improvement count remains 54. See
 [alignment](SPLIT_OFFSET_KERNEL_BUDGET_ALIGNMENT.md).
+
+## P1-MATH-0055 — Odd degrees and polylogarithmic widths for fixed split-product kernels
+
+The full actual fixed-kernel part of companion T5.2 is proved uniformly
+with N^(2c log2+epsilon). This part only needs d>=2; it does not need
+even d, and it permits every fixed polylogarithmic offset width. The
+other, prescribed-divisor assertion retains its source scope and remains
+open. Explicit two-linear-kernel quadratic fibres derive all heights,
+including factorizable cases. See
+[alignment](SPLIT_OFFSET_FIXED_KERNEL_ALIGNMENT.md) and the machine-readable
+finding for every checked declaration. No change to the source exponent
+or error in its asymptotic conclusion is claimed.

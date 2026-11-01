@@ -436,3 +436,7 @@ public import PaperP1.Arithmetic.SplitOffsetProducts
 public import PaperP1.Asymptotics.SplitOffsetHeightBudget
 
 public import PaperP1.Arithmetic.SplitOffsetSupports
+
+public import PaperP1.Diophantine.LinearKernelFibres
+
+public import PaperP1.Asymptotics.SplitOffsetFixedKernelCount
