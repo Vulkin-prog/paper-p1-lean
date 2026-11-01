@@ -3448,7 +3448,8 @@
       },
       "validation_history": [
         "2e1bbd65872d4f73927ba606ef20cb592c8b81bb"
-      ]
+      ],
+      "validation_commit": "bc51be81e8dfe31ca8176e4b3631cca10c6d4f45"
     }
   ]
 }

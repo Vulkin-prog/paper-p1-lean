@@ -108,3 +108,5 @@ bytes, external input or Paper C port change. Palomar remains a later
 milestone for the completed development as a whole.
 
 Full original-window family verification: Lean v4.36.0-rc2 full build passed (9,835 jobs); actual axiom audit passed for all 4,515 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,230 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.18 GiB. Full main 10.2 is complete; coverage is 65/167 (main 22/73, companion 43/94), with 65 confirmed improvements. No unproved host or independent-mass count, new external input, Paper C port, manuscript-byte change or Palomar registration.
+
+Proof checkpoint: [bc51be81e8dfe31ca8176e4b3631cca10c6d4f45](https://github.com/Vulkin-prog/paper-p1-lean/commit/bc51be81e8dfe31ca8176e4b3631cca10c6d4f45).
