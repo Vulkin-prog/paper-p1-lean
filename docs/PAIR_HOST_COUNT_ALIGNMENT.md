@@ -83,3 +83,5 @@ estimate. T19.4 remains in progress. No new external assumption, Paper C
 port, manuscript edit or Palomar registration is introduced.
 
 Pair-host verification: Lean v4.36.0-rc2 full build passed (9915 jobs); actual axiom audit passed for all 4729 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2444 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.69 GiB. The stronger full-loss host count and exact heterogeneous independent mass are proved; main 3.2 remains in progress for its weighted nonaligned residual. The actual F_2<=N^epsilon bound does not close T19.4. Coverage stays 68/167; confirmed improvements are 68. No target host count, external assumption, Paper C port, manuscript-byte change or Palomar registration.
+
+Validated proof checkpoint: [e36d5982ab5f4949e0a5620b194b1ba69f7ce883](https://github.com/Vulkin-prog/paper-p1-lean/commit/e36d5982ab5f4949e0a5620b194b1ba69f7ce883).
