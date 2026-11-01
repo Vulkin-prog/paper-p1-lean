@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3966 audited theorem/lemma declarations**. This
+- The project currently has **3991 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1767,3 +1767,21 @@ Fixed-kernel verification: full build passed (9,583 jobs); actual axiom
 audit passed for all 3,966 declarations; all 1,681 distinct ledger/finding
 names were checked directly. All 138 manifest entries and 167 result
 records remain intact. Ubuntu available space: 17.60 GiB.
+
+## Exact grouped-kernel square-overlap decomposition
+
+The quantitative resultant relation is closed in stronger form: for every
+finite disjoint grouping of nonzero linear factors, the product M of
+block kernels equals q*R^2 with R|D_A. The source paired-quadratic
+quotient M/q|D_A^2 follows. No even degree or block-size restriction is
+needed for this finite identity. The exact kernel multiplication and
+ordered-offset overlap induction replace a prime-occurrence valuation
+argument. This is P1-MATH-0056. Divisor allocation and selected quadratic
+enumeration still remain open; T5.2 stays in progress. Coverage stays
+56/167, with 56 confirmed improvements. See
+[alignment](GROUPED_KERNEL_RESULTANT_ALIGNMENT.md).
+
+Grouped-resultant verification: full build passed (9,589 jobs); the
+actual audit passed for all 3,991 declarations; all 1,706 distinct
+ledger/finding names were checked directly. All 138 manifest entries
+and 167 result records remain intact; Ubuntu has 17.59 GiB free.

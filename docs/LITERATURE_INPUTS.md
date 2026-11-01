@@ -1389,3 +1389,14 @@ cases use the existing checked uniform quadratic theorem. Odd degree
 and arbitrary fixed polylogarithmic width are included in this part,
 P1-MATH-0055. The prescribed-divisor conclusion remains open; see
 [alignment](SPLIT_OFFSET_FIXED_KERNEL_ALIGNMENT.md).
+
+## Exact grouped-kernel resultant identity
+
+The kernel symmetric-difference product law, square invariance, finite
+canonical product decomposition and exact grouped resultant relation
+are proved. The quotient relation is no longer an external arithmetic
+input or assumed valuation estimate. The stronger M=q*R^2, R|D_A
+identity works for arbitrary disjoint block sizes, P1-MATH-0056.
+It uses actual offset differences, elementary prime divisibility and
+checked finite products. No additional literature input or Paper C
+port is introduced. See [alignment](GROUPED_KERNEL_RESULTANT_ALIGNMENT.md).

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**55 mathematical improvements are confirmed; no error in a manuscript conclusion
+**56 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -2688,3 +2688,13 @@ including factorizable cases. See
 [alignment](SPLIT_OFFSET_FIXED_KERNEL_ALIGNMENT.md) and the machine-readable
 finding for every checked declaration. No change to the source exponent
 or error in its asymptotic conclusion is claimed.
+
+## P1-MATH-0056 — Exact square-overlap decomposition for arbitrary groupings
+
+The source paired-kernel quotient relation is proved in stronger form:
+M=q*R^2 with R|D_A for every disjoint grouping of nonzero linear
+factors, with arbitrary block sizes and no even-degree restriction.
+The prescribed-divisor count still uses quadratic blocks and is not
+completed by this algebraic extension alone. See
+[alignment](GROUPED_KERNEL_RESULTANT_ALIGNMENT.md) and the machine-readable
+finding for every checked declaration.

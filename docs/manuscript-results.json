@@ -3345,13 +3345,39 @@
         "PaperP1.SplitOffsetFixedKernelCount.kernels_of_code",
         "PaperP1.SplitOffsetFixedKernelCount.finite_fibre_count",
         "PaperP1.SplitOffsetFixedKernelCount.growing_degree_fixed_kernel_count",
-        "PaperP1.SplitOffsetFixedKernelCount.actual_values_fixed_kernel_count"
+        "PaperP1.SplitOffsetFixedKernelCount.actual_values_fixed_kernel_count",
+        "PaperP1.SquarefreeKernelProducts.mem_support_iff",
+        "PaperP1.SquarefreeKernelProducts.support_mul",
+        "PaperP1.SquarefreeKernelProducts.support_square",
+        "PaperP1.SquarefreeKernelProducts.kernel_mul_square",
+        "PaperP1.SquarefreeKernelProducts.support_product_identity",
+        "PaperP1.SquarefreeKernelProducts.kernel_mul_overlap",
+        "PaperP1.SquarefreeKernelProducts.overlap_pos",
+        "PaperP1.SquarefreeKernelProducts.overlap_dvd_of_prime_divisibility",
+        "PaperP1.SquarefreeKernelProducts.support_of_squarefree",
+        "PaperP1.SquarefreeKernelProducts.kernel_of_squarefree",
+        "PaperP1.SquarefreeKernelProducts.squarefreeKernel_pos",
+        "PaperP1.SquarefreeKernelProducts.canonical_part_ne_zero",
+        "PaperP1.SquarefreeKernelProducts.finite_product_decomposition",
+        "PaperP1.SquarefreeKernelProducts.kernel_product_kernels",
+        "PaperP1.SplitOffsetResultantDecomposition.resultant_eq_nested",
+        "PaperP1.SplitOffsetResultantDecomposition.resultant_insert_max",
+        "PaperP1.SplitOffsetResultantDecomposition.overlap_divides_cross",
+        "PaperP1.SplitOffsetResultantDecomposition.linear_product_decomposition",
+        "PaperP1.SplitOffsetResultantDecomposition.linear_product_divides_kernel_resultant_square",
+        "PaperP1.GroupedKernelResultants.grouped_pos",
+        "PaperP1.GroupedKernelResultants.product_union",
+        "PaperP1.GroupedKernelResultants.kernel_grouped",
+        "PaperP1.GroupedKernelResultants.grouped_divides_linear_product",
+        "PaperP1.GroupedKernelResultants.grouped_overlap_decomposition",
+        "PaperP1.GroupedKernelResultants.grouped_quotient_divides_resultant_square"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
-        "P1-MATH-0055"
+        "P1-MATH-0055",
+        "P1-MATH-0056"
       ],
-      "notes": "The full actual fixed-kernel conclusion is proved: the literal finite family with sf(P_A(n))=q has cardinal <=N^(2*c*log(2)+epsilon), uniformly at d<=c*loglogN and any fixed polylogarithmic offset width. No even-degree assumption is needed for this conclusion, only d>=2. Actual q*D_A height, prime budgets and linear support restriction are derived. Pairs of actual linear supports have at most 4^omega(q*D_A) codes; each code has a proved injective positive quadratic fibre with all polynomial coefficient/coordinate/shift heights derived, including factorizable cases. The other T5.2 conclusion, with prescribed divisor e and exponent 1/2+beta/(2d)-delta/d+c*log(2), remains open: its quadratic-kernel quotient, prescribed-divisor allocation and selected enumeration are not yet proved. Full T5.2 is not claimed."
+      "notes": "The full actual fixed-kernel bound N^(2*c*log(2)+epsilon) is proved for all degrees >=2 and fixed polylogarithmic widths (P1-MATH-0055). The quantitative grouped-kernel resultant relation is now also closed: for every disjoint grouping of the nonzero actual linear factors, M=product of block kernels equals q*R^2 with R|D_A, hence M/q|D_A^2. This strengthens the paired-quadratic source relation and uses no assumed prime-power valuation count (P1-MATH-0056). Actual q*D_A heights, prime budgets and linear support restrictions are proved. The prescribed-divisor allocation, source selected quadratic enumeration and its complete growing-degree count remain open; full T5.2 is not claimed."
     },
     {
       "label": "p13:half:small-kernels",

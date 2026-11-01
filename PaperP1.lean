@@ -440,3 +440,9 @@ public import PaperP1.Arithmetic.SplitOffsetSupports
 public import PaperP1.Diophantine.LinearKernelFibres
 
 public import PaperP1.Asymptotics.SplitOffsetFixedKernelCount
+
+public import PaperP1.Arithmetic.SquarefreeKernelProducts
+
+public import PaperP1.Arithmetic.SplitOffsetResultantDecomposition
+
+public import PaperP1.Arithmetic.GroupedKernelResultants

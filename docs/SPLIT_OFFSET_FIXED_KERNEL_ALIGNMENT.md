@@ -59,5 +59,9 @@ fixed power of log N as offset width. These extensions concern only
 the fixed-kernel assertion. The prescribed-divisor part still needs its
 paired-quadratic quotient and allocation/counting arguments.
 
+The subsequent [grouped-resultant checkpoint](GROUPED_KERNEL_RESULTANT_ALIGNMENT.md)
+closes the quotient argument in exact square form. The remaining allocation
+and selected quadratic count are still not claimed.
+
 No new unproved literature input, Paper C port, original manuscript-byte
 change or Palomar registration is introduced.

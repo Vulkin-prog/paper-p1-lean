@@ -13,6 +13,11 @@ The exact least cutoff also has the source asymptotic 3*log(N)/loglog(N) and its
 [cutoff asymptotic alignment](docs/BOUNDARY_CUTOFF_ASYMPTOTICS_ALIGNMENT.md).
 Both prescribed quadratic-kernel counting branches and the final affine count are proved uniformly, with a stronger capped exponent. T5.1 stays in progress solely for a qualification of its printed exact exponent comparison. See the
 [full counting and range alignment](docs/QUADRATIC_KERNEL_COMPLETE_COUNTS_ALIGNMENT.md).
+The fixed-kernel part of T5.2 is proved for odd and even degrees and arbitrary
+fixed polylogarithmic widths. Its quantitative resultant relation is also proved
+in stronger exact form for arbitrary disjoint groupings. The prescribed-divisor
+count remains open; see the [fixed-kernel](docs/SPLIT_OFFSET_FIXED_KERNEL_ALIGNMENT.md)
+and [grouped-resultant](docs/GROUPED_KERNEL_RESULTANT_ALIGNMENT.md) alignments.
 Companion T1.9 now covers the full enlarged geometric alignment, including
 zero exact units and both orientations, with its fixed-height enlarged-prime
 rate. The earlier one-unit coverage error and its subsequent closure are

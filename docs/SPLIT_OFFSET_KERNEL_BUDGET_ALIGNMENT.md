@@ -66,6 +66,10 @@ The subsequent [fixed-kernel checkpoint](SPLIT_OFFSET_FIXED_KERNEL_ALIGNMENT.md)
 proves the full fixed-kernel count using actual injective quadratic fibres;
 the other prescribed-divisor assertion remains open.
 
+The later [grouped-resultant checkpoint](GROUPED_KERNEL_RESULTANT_ALIGNMENT.md)
+also closes the quantitative quotient relation, in stronger exact square form.
+Divisor allocation and selected quadratic enumeration still remain open.
+
 No new unproved literature input, Paper C port, manuscript-byte change
 or Palomar registration is introduced.
 
