@@ -68,3 +68,6 @@ The result controls very rare large counts. It does not prove bounded
 second moments, small-count Poisson approximation, the sharper
 square-root effective support of T19.5, or the main asymptotic theorem.
 No revised manuscript or Palomar registration is produced at this stage.
+
+Validated implementation of companion T19.6 and P1-MATH-0033:
+[79e4e6d814ac0dc941544b2beb92437e45657a39](https://github.com/Vulkin-prog/paper-p1-lean/commit/79e4e6d814ac0dc941544b2beb92437e45657a39).

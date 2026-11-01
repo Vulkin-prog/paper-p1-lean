@@ -2673,7 +2673,8 @@
       "mathematical_changes": [
         "P1-MATH-0033"
       ],
-      "notes": "Both source bounds are proved for the actual infinite count, uniformly over a fixed critical band and all integer r<=log N. A stronger bound holds at every real threshold b>=N^(9/10): probability<=exp(-2(log N)^3). The literal source threshold follows for every fixed c>0, removing its smooth-pair input and upper restriction on c. Growing-order factorial bounds are proved explicitly, not extrapolated from fixed moments. See docs/VERY_SMALL_TAIL_ALIGNMENT.md."
+      "notes": "Both source bounds are proved for the actual infinite count, uniformly over a fixed critical band and all integer r<=log N. A stronger bound holds at every real threshold b>=N^(9/10): probability<=exp(-2(log N)^3). The literal source threshold follows for every fixed c>0, removing its smooth-pair input and upper restriction on c. Growing-order factorial bounds are proved explicitly, not extrapolated from fixed moments. See docs/VERY_SMALL_TAIL_ALIGNMENT.md.",
+      "validation_commit": "79e4e6d814ac0dc941544b2beb92437e45657a39"
     },
     {
       "label": "p1:limits:cylinder",
