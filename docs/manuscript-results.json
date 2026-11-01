@@ -2774,11 +2774,39 @@
       "source": "companion_sections/limits_appendix.tex",
       "line": 847,
       "sha256": "7e070bb71a29687765ca75f1869a42e82d2ab9acc98731d44928fbff56191eab",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.ScalarRecurrenceTheorem.companion_T19_11",
+        "PaperP1.ScalarRecurrenceTheorem.finiteFirstMoment_iff_integrable",
+        "PaperP1.ScalarRecurrenceTheorem.firstMoment_eq_integral",
+        "PaperP1.ScalarRecurrenceTheorem.residual_parameter_bound",
+        "PaperP1.PoissonSteinSolution.unit_stein_factors",
+        "PaperP1.PoissonSteinSolution.stein_equation",
+        "PaperP1.PoissonSteinSolution.solution_abs_le_one",
+        "PaperP1.PoissonSteinSolution.solution_difference_abs_le_one",
+        "PaperP1.PoissonPartialSums.prefix_mul_tail_bound",
+        "PaperP1.PoissonPartialSums.lowerFactor_mono",
+        "PaperP1.PoissonPartialSums.upperFactor_antitone",
+        "PaperP1.PoissonPartialSums.adjacent_factor_bound",
+        "PaperP1.AtomicTests.attainingTest_difference",
+        "PaperP1.RawRecurrence.operator_expectation",
+        "PaperP1.RawRecurrence.comparison_of_stationary",
+        "PaperP1.HermiteRecurrence.law_eq_product_sum",
+        "PaperP1.HermiteRecurrence.poissonLaw_eq_mathlib",
+        "PaperP1.HermiteRecurrence.reference_stationary",
+        "PaperP1.HermiteRecurrence.scalar_recurrence_criterion",
+        "PaperP1.HermiteRecurrence.scalar_recurrence_criterion_closed",
+        "PaperP1.SizeBiasedRecurrence.realMass_sizeBiased",
+        "PaperP1.SizeBiasedRecurrence.realMass_successor",
+        "PaperP1.SizeBiasedRecurrence.shiftMixture_eq_weighted_successors",
+        "PaperP1.SizeBiasedRecurrence.residual_sizeBias_identity",
+        "PaperP1.SizeBiasedRecurrence.size_bias_totalVariation_identity"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0031"
+      ],
+      "notes": "Both conclusions of companion T19.11 are proved for arbitrary actual probability laws on the naturals with finite first moment. The Poisson Stein solution is explicitly constructed; its absolute value and successive difference are proved bounded by one from finite Poisson balance and exact cumulative/tail factors, with no Stein-factor hypothesis. An attained indicator test gives the literal half-l1 total variation convention. The Hermite reference is proved equal to the actual pushforward of the product of two Mathlib Poisson laws by (u,v)->u+2*v, with parameters mu-theta and theta/2; its stationary identity is proved internally. The raw recurrence criterion has the exact denominator 1-2*theta, and includes the pure double-jump boundary theta=mu for mu>0, theta<1/2. The canonical size-biased law has singleton mass k*P_k/m. The comparison mixture is proved equal as a measure to the stated weighted laws of X+1 and X+2. Its norm identity is proved for every 0<=theta<=m, with only a positive finite first moment; taking theta=Var(X)-E(X) gives the source specialization. The parameter stability bound is also proved. No residual estimate, stationarity property, Stein factor or external mathematical proposition is assumed. The Paper C Stein files remain inspected, not ported. See SCALAR_RECURRENCE_ALIGNMENT.md."
     },
     {
       "label": "p1:limits:signed-palm",

@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **43 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T21.2, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **44 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T21.2, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **2777 audited theorem/lemma declarations**. This
+- The project currently has **2875 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -487,7 +487,9 @@ Neither document is fully formalized.
   `P1-MATH-0029`, the sharper incidence-slope coefficient in the finite
   conditional-mean pool budget;
   `P1-MATH-0030`, the smaller deterministic original-window exception set,
-  with no separate contact term and half the pool coefficient.
+  with no separate contact term and half the pool coefficient;
+  `P1-MATH-0031`, the pure-double-jump endpoint in the scalar criterion
+  and the size-bias identity for any parameter in [0,m].
   No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.
@@ -538,3 +540,23 @@ growing-order factorial-moment estimate or principal Poisson theorem.
 
 Validated implementation of companion T22.4:
 [c5334aa55a0c179a93747cf2d3d6820d575b78dc](https://github.com/Vulkin-prog/paper-p1-lean/commit/c5334aa55a0c179a93747cf2d3d6820d575b78dc).
+
+## Closed scalar recurrence criterion
+
+Companion T19.11 is complete. An explicit Poisson Stein solution has
+both unit factor bounds proved internally from finite cumulative/tail
+balance. The actual Hermite reference is identified with the pushforward
+of two independent Mathlib Poisson laws by (u,v)->u+2*v. Its stationary
+identity and the literal 1/(1-2*theta) comparison are proved. The canonical
+size-biased law, actual successor laws and their weighted mixture give
+the exact second identity; the general identity needs only a positive
+finite first moment. P1-MATH-0031 includes the pure-double-jump boundary
+theta=mu and the arbitrary parameter form of that identity. Parameter
+stability is also proved. No Stein factor or stationarity estimate is
+an assumption. The inspected Paper C Stein modules remain unported.
+See [alignment](SCALAR_RECURRENCE_ALIGNMENT.md).
+
+The full build passed (9,113 jobs), as did the actual axiom audit of all
+2,875 theorem/lemma declarations and all 672 coverage/finding names.
+Coverage is 44 / 167, with 31 confirmed improvements. Original sources
+are preserved; no Palomar submission or principal asymptotic is claimed.

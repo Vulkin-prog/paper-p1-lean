@@ -1140,3 +1140,38 @@ and principal Poisson theorems remain open.
 
 Validated implementation of companion T22.4:
 [c5334aa55a0c179a93747cf2d3d6820d575b78dc](https://github.com/Vulkin-prog/paper-p1-lean/commit/c5334aa55a0c179a93747cf2d3d6820d575b78dc).
+
+## P1-MATH-0031 — Closed scalar comparison and its boundary
+
+- Location: companion Lemma T19.11, page 76, `p1:limits:stein`,
+  `companion_sections/limits_appendix.tex:847`; original statement hash
+  `7e070bb71a29687765ca75f1869a42e82d2ab9acc98731d44928fbff56191eab`.
+- Original range: 0<=theta<min(mu,1/2).
+- Improvement: for mu>0 permit 0<=theta<=mu and theta<1/2, including
+  the pure-double-jump endpoint theta=mu. The same exact denominator
+  1-2*theta and total variation convention hold. The size-bias norm
+  identity holds for every theta in [0,m], requiring only a positive
+  finite mean; a variance or second moment is unnecessary in this form.
+- Evidence: `HermiteRecurrence.law_eq_product_sum`, `reference_stationary`,
+  `scalar_recurrence_criterion_closed`,
+  `PoissonSteinSolution.unit_stein_factors`,
+  `SizeBiasedRecurrence.shiftMixture_eq_weighted_successors` and
+  `size_bias_totalVariation_identity`.
+- Suggested revision: state the closed boundary range for the scalar
+  criterion, then the general size-bias identity before specializing
+  its parameter to the second factorial cumulant. No optimality claim
+  or small-residual estimate is added.
+
+Both numbered conclusions of T19.11 and the following parameter stability
+inequality are proved. The Stein solution, its two unit bounds and
+reference stationarity are closed internal proofs. The actual reference
+is the product-Poisson pushforward; the canonical biased and successor
+laws retain their measure-theoretic meanings. The Paper C Stein modules
+remain unported. See [alignment](SCALAR_RECURRENCE_ALIGNMENT.md).
+
+The full Lean v4.36.0-rc2 build passed (9,113 jobs), and all 2,875
+theorem/lemma declarations passed the actual axiom audit with only
+`propext`, `Classical.choice` and `Quot.sound`. All 672 distinct
+coverage/finding names were checked directly by Lean. Coverage is
+44 / 167, with 31 confirmed improvements. Original source bytes
+are preserved; no manuscript revision or Palomar registration is made.

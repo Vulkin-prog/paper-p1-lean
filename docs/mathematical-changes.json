@@ -1022,6 +1022,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "8b5542412a96f221e87921abc9892ddabdac0505"
+    },
+    {
+      "id": "P1-MATH-0031",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "companion",
+        "label": "p1:limits:stein",
+        "number": "T19.11",
+        "page": 76,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 847,
+        "version": "P1 V1.6",
+        "statement_sha256": "7e070bb71a29687765ca75f1869a42e82d2ab9acc98731d44928fbff56191eab"
+      },
+      "original_assumption": "The scalar recurrence comparison in T19.11 assumes 0<=theta<min(mu,1/2). Its size-bias identity is stated with theta=Var(X)-E(X), under that range.",
+      "finding": "For every mu>0 the same comparison holds for 0<=theta<=mu with theta<1/2, including the pure double-jump reference theta=mu. Its single Poisson intensity is then zero, and stationarity still holds. The exact size-bias identity in fact holds for every 0<=theta<=m, requiring only a positive finite first moment; theta need not be defined using a variance.",
+      "evidence": [
+        "PaperP1.HermiteRecurrence.law_eq_product_sum",
+        "PaperP1.HermiteRecurrence.reference_stationary",
+        "PaperP1.HermiteRecurrence.scalar_recurrence_criterion_closed",
+        "PaperP1.PoissonSteinSolution.unit_stein_factors",
+        "PaperP1.SizeBiasedRecurrence.shiftMixture_eq_weighted_successors",
+        "PaperP1.SizeBiasedRecurrence.size_bias_totalVariation_identity"
+      ],
+      "proposed_revision": "For mu>0 permit 0<=theta<=mu and theta<1/2 in the scalar comparison. State the size-bias identity first for arbitrary theta in [0,m], with m a positive finite mean, and then specialize to the second factorial cumulant when that quantity is available.",
+      "impact": "Includes the pure double-jump boundary without changing the denominator 1-2*theta or the total variation convention. Removes unnecessary variance and second-moment requirements from the general size-bias identity. No optimality claim or small residual bound is added.",
+      "validation": "Full Lean v4.36.0-rc2 build (9113 jobs) and actual axiom audit of all 2875 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 672 distinct coverage/finding declaration names were checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

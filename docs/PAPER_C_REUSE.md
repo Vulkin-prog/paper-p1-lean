@@ -311,3 +311,14 @@ specialization are new proofs in this project. The full build passed
 (8,805 jobs), and all 1,914 project theorem/lemma declarations passed the
 actual axiom audit. No old compiled artifacts were copied. See
 [statement alignment](RANKIN_SMALL_KERNEL_ALIGNMENT.md).
+
+## Closure of the P1 scalar Stein estimates
+
+The T19.11 implementation closes the positive-intensity Poisson Stein
+factor bounds using new P1 cumulative/tail proofs. The three modules
+inspected at the T19.7 checkpoint remain inspected, not ported. Their
+exact blobs and snapshot above remain the provenance of the inspection;
+no source declaration or unresolved Stein-factor input is imported.
+The new proofs are compiled under Lean v4.36.0-rc2 and included in the
+full audit of 2,875 declarations. See
+[statement alignment](SCALAR_RECURRENCE_ALIGNMENT.md).

@@ -819,3 +819,15 @@ previously validated P1-MATH-0030 construction. No target exception
 count, conditional independence or external mathematical estimate
 is an input. No new Paper C code is ported. See
 [alignment](CRITICAL_ORDER_BRANCHING_ALIGNMENT.md).
+
+## Companion T19.11 — Closed scalar Stein factors
+
+The Poisson solution and its two unit bounds are now proved from finite
+Poisson balance, cumulative and tail factors, their monotonicity and
+the exact signed difference kernel. No immigration/death-process
+representation, unproved Stein-factor statement or literature estimate
+is an input. Product Poisson mass identities prove stationarity of the
+actual single/double reference. The total variation test and size-bias
+identities are proved internally for actual probability measures.
+The previously inspected Paper C modules are still not ported.
+See [alignment](SCALAR_RECURRENCE_ALIGNMENT.md).

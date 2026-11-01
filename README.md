@@ -4,7 +4,10 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 43 / 167 numbered results proved.**
+**Status: active formalization, 44 / 167 numbered results proved.**
+Companion T19.11 is proved with a constructed Stein solution, both unit
+factor bounds, the actual single/double Poisson reference and the exact
+size-bias identity. See [statement alignment](docs/SCALAR_RECURRENCE_ALIGNMENT.md).
 Companion T22.4 proves exact full-vector branching up to the growing
 critical order K*log(N)/log(log(N)), including the stated logarithmic
 correction and one uniform deterministic envelope. See
