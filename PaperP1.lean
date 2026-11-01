@@ -707,3 +707,7 @@ public import PaperP1.Asymptotics.OrderDependentBranching
 public import PaperP1.Asymptotics.OrderPrimeBudget
 public import PaperP1.Asymptotics.OrderDependentRate
 public import PaperP1.Asymptotics.OrderDependentMoments
+public import PaperP1.Arithmetic.RationalTripleDensity
+public import PaperP1.Arithmetic.RationalTripleSmallRatios
+public import PaperP1.Arithmetic.RationalTripleOverlap
+public import PaperP1.Arithmetic.RationalTripleIntegers

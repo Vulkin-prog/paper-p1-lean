@@ -4,7 +4,11 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 66 / 167 numbered results proved.**
+**Status: active formalization, 67 / 167 numbered results proved.**
+Main Lemma 14.2 proves the sharp rational overlap bound for every integer
+triple in the source range. The unique extremal triple is (10,12,15),
+and all other primitive triples have the sharp smaller bound 11/18.
+See [the complete overlap alignment](docs/RATIONAL_TRIPLE_OVERLAP_ALIGNMENT.md).
 Companion T12.1 now proves the actual retained class is hereditary, has a unique dependent pair, and has boundary nullity at most 4L/3+1. See the
 [complete retained-class alignment](docs/RETAINED_CLASS_ALIGNMENT.md).
 Companion T12.2 now proves the actual large-boundary mass estimate with the source least cutoff, and strengthens its decay to N^(-5/3). See the

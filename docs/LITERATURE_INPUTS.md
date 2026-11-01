@@ -1647,3 +1647,14 @@ actual growing factorial bound is proved with F_2 as its explicit initial
 factor. The unproved O_C(1) bound for F_2 is not supplied as an argument
 and T19.4 is not counted complete. No new external input or Paper C port.
 See [alignment](ORDER_DEPENDENT_BRANCHING_ALIGNMENT.md).
+
+## Complete rational triple-overlap inequality and its sharp geometric gap
+
+Stable ID: `P1-ARITH-RATIONAL-TRIPLE-OVERLAP`. Status: **proved**.
+The actual gcd geometry and elementary divisibility/coprimality prove the
+full integer statement of main 14.2. All reduced pair ratios, small
+numerators and denominators are checked internally. The unique extremal
+primitive shape and the attained next-value bound are proved as well.
+No additional square-class rank, private-prime estimate, Paper C port or
+literature assumption is introduced. See
+[exact alignment](RATIONAL_TRIPLE_OVERLAP_ALIGNMENT.md).

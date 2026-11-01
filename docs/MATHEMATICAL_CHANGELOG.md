@@ -2919,3 +2919,15 @@ recurrence retains F_2, and the missing uniform initial pair estimate is
 recorded separately; T19.4 remains in progress. No new independent finding
 is counted. Coverage and confirmed improvements stay 66/167 and 66. See
 [order-dependent alignment](ORDER_DEPENDENT_BRANCHING_ALIGNMENT.md).
+
+## P1-MATH-0067 — Unique primitive extremal rational triple and a sharp gap
+
+Main 14.2 is complete for every integer triple in its literal range.
+The exact canonical density reaches 19/30 only at (10,12,15). Every other
+primitive ordered triple has density at most 11/18, attained at (8,9,12).
+Thus the canonical geometry has the sharp gap 1/45. The improvement does
+not assert a gap for additional arithmetic rank losses or prove a
+third-cumulant estimate. All pair positions and finite exceptional
+numerator/denominator cases are checked. Coverage is 67/167 and confirmed
+improvements are 67. See
+[complete overlap alignment](RATIONAL_TRIPLE_OVERLAP_ALIGNMENT.md).

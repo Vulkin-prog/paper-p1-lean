@@ -3511,6 +3511,65 @@
         "status": "not_integrated"
       },
       "validation_commit": "64ab0cfdf7c9f6ff8d7acdf4a12db0b0ff05ba19"
+    },
+    {
+      "id": "P1-MATH-0067",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:third:rational-rank",
+        "number": "14.2",
+        "page": 35,
+        "source": "main_sections/third_cumulant.tex",
+        "line": 79,
+        "statement_sha256": "1444566fc49d3124a28816f757f4d3b2f6dd5360c6017e8b9b97f606942c573c"
+      },
+      "original_assumption": "Main Lemma 14.2 proves D(u,v,w)<=19/30 on primitive integer triples u<v<w<2u and gives equality at (10,12,15), without asserting uniqueness or the next possible overlap value.",
+      "finding": "The extremal primitive ordered triple is unique: D=19/30 if and only if (u,v,w)=(10,12,15). Every other primitive ordered triple in the source range has D<=11/18, and (8,9,12) attains that value. Thus canonical coincidence geometry has the sharp gap 19/30-11/18=1/45. The proof treats every possible low reduced-height pair, retains the actual gcd formula, and proves all finite numerator/denominator exclusions. Integer positivity and the passage to natural slopes are proved from the printed hypotheses.",
+      "evidence": [
+        "PaperP1.RationalTripleDensity.pairDensity_comm",
+        "PaperP1.RationalTripleDensity.density_swap",
+        "PaperP1.RationalTripleDensity.density_cycle",
+        "PaperP1.RationalTripleDensity.density_ordered",
+        "PaperP1.RationalTripleDensity.third_window_bound",
+        "PaperP1.RationalTripleDensity.pairDensity_le_fifth",
+        "PaperP1.RationalTripleDensity.all_pairs_high",
+        "PaperP1.RationalTripleDensity.small_pair",
+        "PaperP1.RationalTripleSmallRatios.scaled_third_bound",
+        "PaperP1.RationalTripleSmallRatios.numerator23",
+        "PaperP1.RationalTripleSmallRatios.numerator34",
+        "PaperP1.RationalTripleSmallRatios.ratio23_gap",
+        "PaperP1.RationalTripleSmallRatios.ratio34_gap",
+        "PaperP1.RationalTripleOverlap.primitive_swap_last",
+        "PaperP1.RationalTripleOverlap.primitive_cycle",
+        "PaperP1.RationalTripleOverlap.scaled_primitive",
+        "PaperP1.RationalTripleOverlap.density_swap_last",
+        "PaperP1.RationalTripleOverlap.gap",
+        "PaperP1.RationalTripleOverlap.extremal_value",
+        "PaperP1.RationalTripleOverlap.next_value",
+        "PaperP1.RationalTripleOverlap.bound",
+        "PaperP1.RationalTripleOverlap.equality_iff",
+        "PaperP1.RationalTripleOverlap.article_14_2",
+        "PaperP1.RationalTripleOverlap.ordered_gap",
+        "PaperP1.RationalTripleIntegers.positive_reduction",
+        "PaperP1.RationalTripleIntegers.density_eq_nat",
+        "PaperP1.RationalTripleIntegers.extremal_value",
+        "PaperP1.RationalTripleIntegers.next_value",
+        "PaperP1.RationalTripleIntegers.gap",
+        "PaperP1.RationalTripleIntegers.article_14_2",
+        "PaperP1.RationalTripleIntegers.equality_iff",
+        "PaperP1.RationalTripleIntegers.bound_away_from_extremal",
+        "PaperP1.RationalTripleIntegers.sharp_witnesses"
+      ],
+      "proposed_revision": "Strengthen Lemma 14.2 by adding the equality classification and the sharp bound D<=11/18 away from (10,12,15), with the witness (8,9,12). Keep the statement restricted to primitive ordered triples in the strict ratio range. Explicitly retain the existing distinction between canonical coincidence geometry and additional arithmetic relations among distinct normalized values.",
+      "impact": "Full main 14.2 is complete, bringing coverage to 67/167 (main 23/73, companion 44/94). The improvement isolates the unique primitive extremal rational shape and its sharp geometric gap. It supplies no unproved rank estimate, asymptotic probability bound or third-cumulant conclusion.",
+      "validation": "Lean v4.36.0-rc2 full build passed (9863 jobs); actual axiom audit passed for all 4603 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2318 distinct ledger/finding names were checked directly by Lean. All 138 source manifest entries and 167 numbered records are intact. Ubuntu available space: 16.78 GiB. Full main 14.2, the integer equality classification and the attained next-value bound are proved; no arithmetic rank or counting hypothesis, external input, Paper C port or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
