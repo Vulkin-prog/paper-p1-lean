@@ -25,3 +25,7 @@ unit is an additional restriction relative to enlarged alignment, not a
 weakening of every source assumption. No Lean theorem is retracted and
 no manuscript bytes are changed. Historical validation commits remain
 in the ledger, with this correction stated explicitly.
+
+Validated scope correction (full build 9,285 jobs; 3,294 audited declarations;
+1,009 directly checked coverage/finding names):
+[50889df7921f8374971c70d4d33878cc2a9326d4](https://github.com/Vulkin-prog/paper-p1-lean/commit/50889df7921f8374971c70d4d33878cc2a9326d4).

@@ -860,3 +860,7 @@ the wrapper is renamed `AlignedPairTheorem.one_unit_T1_9`. The zero-unit
 case and the full enlarged-alignment geometry remain unfinished. T1.9 is
 in progress. See [scope audit](FORMALIZATION_SCOPE_AUDIT.md). No change
 to original manuscript bytes or to the Lean proof validity is involved.
+
+Validated scope correction (full build 9,285 jobs; 3,294 audited declarations;
+1,009 directly checked coverage/finding names):
+[50889df7921f8374971c70d4d33878cc2a9326d4](https://github.com/Vulkin-prog/paper-p1-lean/commit/50889df7921f8374971c70d4d33878cc2a9326d4).
