@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **49 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.9, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **48 / 167**: article Propositions 3.1, 4.1, 5.2, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T9.1, T9.2, T9.3, T9.4, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -848,3 +848,15 @@ free space is 18.04 GiB.
 
 Validated finite target quotient-rank checkpoint and P1-MATH-0041:
 [469f5ac7ab234cdd18962337291971682554d913](https://github.com/Vulkin-prog/paper-p1-lean/commit/469f5ac7ab234cdd18962337291971682554d913).
+
+
+## Scope audit — T1.9 enlarged geometric alignment
+
+Current coverage is corrected to **48 / 167** (main 16 / 73, companion
+32 / 94). The earlier completion mapping of T1.9 checked its one-unit
+subcase, but the source definition |b*x-a*y|<=(a+b)B also permits zero
+units. The existing theorems remain proved with their literal hypotheses;
+the wrapper is renamed `AlignedPairTheorem.one_unit_T1_9`. The zero-unit
+case and the full enlarged-alignment geometry remain unfinished. T1.9 is
+in progress. See [scope audit](FORMALIZATION_SCOPE_AUDIT.md). No change
+to original manuscript bytes or to the Lean proof validity is involved.

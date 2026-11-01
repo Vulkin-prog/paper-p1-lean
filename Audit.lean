@@ -1470,7 +1470,7 @@ import PaperP1
 #print axioms PaperP1.AlignedPairRank.actual_intersection_bound
 #print axioms PaperP1.AlignedPairTheorem.uniform_bounds
 #print axioms PaperP1.AlignedPairTheorem.fixed_height_loss
-#print axioms PaperP1.AlignedPairTheorem.companion_T1_9
+#print axioms PaperP1.AlignedPairTheorem.one_unit_T1_9
 #print axioms PaperP1.BoundedObservationPool.widthEnvelope_ge_one
 #print axioms PaperP1.BoundedObservationPool.pool_budget_le_envelope
 #print axioms PaperP1.BoundedObservationPool.pool_count_logarithmic

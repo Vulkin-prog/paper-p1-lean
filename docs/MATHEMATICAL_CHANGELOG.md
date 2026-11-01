@@ -1625,3 +1625,16 @@ is made; original source bytes are preserved.
 
 Validated finite target quotient-rank checkpoint and P1-MATH-0041:
 [469f5ac7ab234cdd18962337291971682554d913](https://github.com/Vulkin-prog/paper-p1-lean/commit/469f5ac7ab234cdd18962337291971682554d913).
+
+
+## Formalization scope correction — T1.9
+
+The previous complete mapping of T1.9 was too broad. The verified Lean
+statements assume an actual normalized unit; the manuscript's enlarged
+geometric alignment also allows zero units. The proofs remain valid,
+and the wrapper is renamed `AlignedPairTheorem.one_unit_T1_9`. Source
+coverage is corrected to 48 / 167 until the zero-unit case and enlarged
+geometry are closed. This is a correction to the formalization ledger,
+not a new mathematical finding about the manuscript. P1-MATH-0039
+continues to record the valid one-unit subcase with its literal scope.
+See [scope audit](FORMALIZATION_SCOPE_AUDIT.md).

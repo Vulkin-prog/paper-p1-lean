@@ -1,10 +1,12 @@
-# Companion T1.9 — actual aligned residual rank
+# Partial companion T1.9 — the actual one-unit subcase
 
 Source: companion T1.9, page 14, `p1:arith:alignedrank`,
 `companion_sections/arithmetic_appendix.tex:770`, statement hash
 `7de9608ecc780ef5a448579b04b2ebeabe5e1157579ce3025b0303a047157acc`.
-All assertions are **proved**. The uniform and fixed-height bounds use
-actual normalized values. Original manuscript bytes are unchanged.
+The one-unit subcase is **proved**. The manuscript uses an enlarged
+geometric alignment which also permits zero exact units; that case is
+unfinished. T1.9 is **in progress**, not counted complete. See the
+[scope audit](FORMALIZATION_SCOPE_AUDIT.md). Original source bytes are unchanged.
 
 ## Actual finite value kernel
 
@@ -105,10 +107,10 @@ is an admissible fixed enlarged cutoff. The full value kernel embeds in
 it. `full_kernel_rate` and `AlignedPairTheorem.fixed_height_loss` give
 the corresponding full-kernel and (u-1)+K*B/log B pair-deficiency bounds.
 
-`AlignedPairTheorem.companion_T1_9` packages the uniform assertions and
+`AlignedPairTheorem.one_unit_T1_9` packages the one-unit assertions and
 this enlarged-cutoff fixed-height assertion. `UniformConclusion` and
 `FixedConclusion` are the literal quantified statements on the actual
-maps, not hypotheses for missing estimates. T1.9 is counted complete.
+maps, not hypotheses for missing estimates. This does not yet complete the enlarged-alignment source statement.
 Separation, compatibility and local regularity are unnecessary throughout.
 
 ## Remaining work beyond T1.9

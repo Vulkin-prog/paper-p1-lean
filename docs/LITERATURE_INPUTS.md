@@ -919,7 +919,7 @@ and endpoint exceptions remain unresolved. See
 
 ## Uniform aligned residual arithmetic
 
-Stable ID: `P1-ARITH-ALIGNED-RESIDUAL`. Status: **proved, complete T1.9**.
+Stable ID: `P1-ARITH-ALIGNED-RESIDUAL`. Status: **proved one-unit subcase; full T1.9 in progress**.
 The actual normalized full value kernel is uniformly o(B) for all
 heights up to B^3, without separation, compatibility or local regularity.
 The full pair deficiency is <=(u-1)+epsilon*B and, in reduced channels,

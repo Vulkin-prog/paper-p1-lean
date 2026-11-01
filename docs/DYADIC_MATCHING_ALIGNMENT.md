@@ -98,8 +98,9 @@ the target. The construction of such data from the paper's geometric
 alignment predicate remains separate unfinished work. The finite actual
 [target quotient-rank bridge](TARGET_QUOTIENT_RANK_ALIGNMENT.md), including
 old prime information, is now proved. Its asymptotic application to the
-geometry of the actual combined target union remains open. Complete T1.9
-and generic residual arithmetic are available. The actual position count
+geometry of the actual combined target union remains open. The one-unit T1.9 subcase
+and generic residual arithmetic are proved; see the scope audit for the
+broader source convention. The actual position count
 is never asserted equal to rank loss. Neither T1.11 nor T2.6 is counted complete.
 
 No optimality of the finite constants is claimed. No new Paper C port,

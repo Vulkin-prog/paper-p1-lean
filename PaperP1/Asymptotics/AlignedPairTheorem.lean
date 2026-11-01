@@ -3,7 +3,7 @@ module
 public import PaperP1.Asymptotics.AlignedPairRank
 public import PaperP1.Asymptotics.FixedHeightResidual
 
-/-! # Full T1.9, including fixed-height enlarged-prime residuals -/
+/-! # One-unit subcase of T1.9, including fixed-height enlarged-prime residuals -/
 
 set_option autoImplicit false
 
@@ -69,7 +69,7 @@ theorem fixed_height_loss (Q : ℕ) (hQ : 1 ≤ Q) :
     exact_mod_cast loss_le_units_add_residual ha hb hx2 hy2 ⟨u, hu⟩
   linarith
 
-theorem companion_T1_9 :
+theorem one_unit_T1_9 :
     (∀ C ε : ℝ, 0 < ε → ∃ N₀, UniformConclusion C ε N₀) ∧
     (∀ Q : ℕ, 1 ≤ Q → ∀ D : ℝ, 0 ≤ D →
       ∃ K : ℝ, 0 < K ∧ ∀ C : ℝ, ∃ N₀, FixedConclusion Q D K C N₀) := by
