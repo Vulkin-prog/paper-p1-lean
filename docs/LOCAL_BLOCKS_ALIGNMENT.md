@@ -99,3 +99,6 @@ coverage is 38 / 167: main 15 / 73, companion 23 / 94. The original
 manuscripts remain unchanged. No Palomar registration is made.
 
 All 523 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of companion T19.2 and P1-MATH-0027:
+[14bbf2d16f3c69615a182b774c6952d4fc323373](https://github.com/Vulkin-prog/paper-p1-lean/commit/14bbf2d16f3c69615a182b774c6952d4fc323373).

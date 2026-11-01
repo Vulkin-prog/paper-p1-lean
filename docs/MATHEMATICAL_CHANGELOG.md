@@ -945,3 +945,6 @@ Validated implementation of companion T20.3 and P1-MATH-0026:
   new manuscript version.
 
 All 523 distinct coverage/finding declaration names were checked directly by Lean.
+
+Validated implementation of companion T19.2 and P1-MATH-0027:
+[14bbf2d16f3c69615a182b774c6952d4fc323373](https://github.com/Vulkin-prog/paper-p1-lean/commit/14bbf2d16f3c69615a182b774c6952d4fc323373).
