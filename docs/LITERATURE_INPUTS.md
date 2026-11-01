@@ -1765,3 +1765,19 @@ full uniformity is instantiated, not assumed. There is no curve-count,
 classification, coefficient-enumeration or target-count hypothesis.
 No new external result or Paper C port is introduced. Main 6.3 remains
 open for conditional propagation. See [alignment](DENSE_TARGET_ALIGNMENT.md).
+
+
+## Actual fixed-source conditional sum
+
+Stable ID: `P1-PROB-FIXED-SOURCE-CONDITIONAL-SUM`. Status: **proved**,
+first conditional-sum assertion of main 6.3; the full result is in progress.
+
+The exact infinite-measure conditional probability is transported to
+a finite-cylinder affine observation law. Compatible source prescriptions
+have actual witnesses; arbitrary and homogeneous target prescriptions
+are included. Exact effective rank identities give the nullity-increment
+conditional rate. The proved critical local rigidity and complete main
+6.2 supply the low/high split, with one uniform threshold and explicit
+exponent margins. No probability, rank or target-count input is assumed.
+The higher-order family propagation and seed consequence remain open.
+No new external input or Paper C port is introduced.

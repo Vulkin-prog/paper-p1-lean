@@ -774,3 +774,11 @@ public import PaperP1.Asymptotics.ClassCodeFibres
 public import PaperP1.Asymptotics.CodedClassCount
 public import PaperP1.Arithmetic.DenseTargetCover
 public import PaperP1.Asymptotics.DenseTargetCount
+
+public import PaperP1.Affine.ExtensionRankBudget
+public import PaperP1.Affine.FamilyConditionalMass
+public import PaperP1.Model.WindowFamilyConditional
+public import PaperP1.Model.WindowConditionalSum
+public import PaperP1.Model.CompatibleWindowPrescriptions
+public import PaperP1.Asymptotics.SmallRankLossPower
+public import PaperP1.Asymptotics.FixedSourceConditionalSum

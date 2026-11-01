@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4880 audited theorem/lemma declarations**. This
+- The project currently has **4908 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2303,3 +2303,25 @@ source scope. Main 6.3 propagation and main 6.4 moments remain open.
 See [full statement alignment](DENSE_TARGET_ALIGNMENT.md).
 
 Complete dense-target verification: Lean v4.36.0-rc2 full build passed (9985 jobs); actual axiom audit passed for all 4880 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2595 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.59 GiB. Main 6.2 is complete for its literal source-excluding effective-rank-loss population, with a stronger repeated-source and source-inclusive count. Coverage is 70/167 (main 24/73, companion 46/94); confirmed independent findings stay 69. Main 6.3 and 6.4 remain open. No target-count premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.
+
+
+## Main 6.3 — Complete actual conditional-sum assertion
+
+The first conditional-sum assertion of main 6.3 is proved on the actual
+infinite prime-sign measure, including the literal source-excluding
+sum and homogeneous prescriptions. It is uniform before every source
+tuple, length and compatible affine prescription; a stronger theorem
+permits repeated sources and arbitrary centre-dependent target
+prescriptions. Every source prescription of positive mass is represented
+by an actual finite-cylinder witness. The conditional law is identified
+with the finite affine observation law and its exact effective nullity
+increment. Actual local rank loss is retained; incompatible target
+atoms have zero mass. The low/high split invokes the completed main
+6.2 count with explicit exponent margins.
+
+The full numbered result remains in progress for extension-family
+propagation and the local-defect/contact seed conclusion. Coverage
+stays 70/167 and confirmed independent findings stay 69. See
+[precise scope](FIXED_SOURCE_PROPAGATION_ALIGNMENT.md).
+
+Conditional-sum checkpoint verification: Lean v4.36.0-rc2 full build passed (9999 jobs); actual axiom audit passed for all 4908 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2623 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.57 GiB. The first conditional-sum assertion of main 6.3 is complete on the actual infinite prime-sign measure, including arbitrary compatible affine prescriptions, homogeneous prescriptions and literal source exclusion. Extension-family propagation and the final seed consequence remain open, so main 6.3 stays in progress. Coverage and confirmed independent findings remain 70/167 and 69. No conditional-sum premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.

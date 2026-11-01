@@ -3020,3 +3020,15 @@ candidates, with no regularity, separation or compatibility premise.
 These scope details are traced in the [complete alignment](DENSE_TARGET_ALIGNMENT.md).
 Coverage is 70/167. No additional independent finding is counted beyond
 the 69 already registered; main 6.3 and the moment expansion stay open.
+
+
+Main 6.3 conditional-sum checkpoint: the first assertion is fully proved
+for actual infinite-measure conditional affine probabilities, including
+homogeneous prescriptions. The proof preserves the exact local rank
+and the actual effective nullity increment, so local defects and
+incompatible target atoms are accounted for. A stronger bound includes
+source centres, repeated sources and centre-dependent target prescriptions.
+These scope extensions are recorded without counting a separate
+independent finding. Extension-family propagation and the final seed
+conclusion remain open. Coverage stays 70/167 and registered findings
+stay 69. See [alignment](FIXED_SOURCE_PROPAGATION_ALIGNMENT.md).
