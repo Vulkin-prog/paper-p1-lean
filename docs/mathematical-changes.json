@@ -2307,7 +2307,10 @@
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "a1ed70f2f336473fa51b6e345409308f78b78873"
+      "validation_commit": "f8cc5d409f099f7440d9346f576605130073bc21",
+      "validation_history": [
+        "a1ed70f2f336473fa51b6e345409308f78b78873"
+      ]
     }
   ]
 }
