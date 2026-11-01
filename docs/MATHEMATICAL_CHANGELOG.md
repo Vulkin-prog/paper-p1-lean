@@ -1137,3 +1137,6 @@ coverage/finding names were checked directly by Lean. Coverage is
 43 / 167, with 30 confirmed improvements. No new manuscript version
 or Palomar registration is made. Growing-order moment estimates
 and principal Poisson theorems remain open.
+
+Validated implementation of companion T22.4:
+[c5334aa55a0c179a93747cf2d3d6820d575b78dc](https://github.com/Vulkin-prog/paper-p1-lean/commit/c5334aa55a0c179a93747cf2d3d6820d575b78dc).

@@ -535,3 +535,6 @@ The full build passed (9,095 jobs), as did the actual audit of all
 2,777 theorem/lemma declarations and all 647 coverage/finding names.
 Coverage is 43 / 167, with 30 confirmed improvements. This proves no
 growing-order factorial-moment estimate or principal Poisson theorem.
+
+Validated implementation of companion T22.4:
+[c5334aa55a0c179a93747cf2d3d6820d575b78dc](https://github.com/Vulkin-prog/paper-p1-lean/commit/c5334aa55a0c179a93747cf2d3d6820d575b78dc).

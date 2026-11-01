@@ -65,3 +65,6 @@ statement hashes. Coverage is 43 / 167: main 15 / 73, companion
 28 / 94. The 30 confirmed improvements retain their earlier validation
 commits. Original source bytes are preserved. Ubuntu-root space is
 17.85 GiB.
+
+Validated implementation of companion T22.4:
+[c5334aa55a0c179a93747cf2d3d6820d575b78dc](https://github.com/Vulkin-prog/paper-p1-lean/commit/c5334aa55a0c179a93747cf2d3d6820d575b78dc).
