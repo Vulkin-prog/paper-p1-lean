@@ -1572,3 +1572,6 @@ declarations passed the actual axiom audit with only `propext`,
 names were checked directly by Lean. Coverage remains 49 / 167, with
 40 confirmed improvements. Original source bytes are preserved; no
 manuscript revision or Palomar registration is made.
+
+Validated bounded-affine dyadic checkpoint and P1-MATH-0040:
+[1b87f9df9ba2c7a710a86f73443d39c7925abe63](https://github.com/Vulkin-prog/paper-p1-lean/commit/1b87f9df9ba2c7a710a86f73443d39c7925abe63).

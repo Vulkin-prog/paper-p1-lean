@@ -104,3 +104,6 @@ asserted to equal a rank loss. Neither T1.11 nor T2.6 is counted complete.
 No optimality of the finite constants is claimed. No new Paper C port,
 external mathematical hypothesis, manuscript revision or Palomar
 registration is introduced; original source bytes are preserved.
+
+Validated bounded-affine dyadic checkpoint and P1-MATH-0040:
+[1b87f9df9ba2c7a710a86f73443d39c7925abe63](https://github.com/Vulkin-prog/paper-p1-lean/commit/1b87f9df9ba2c7a710a86f73443d39c7925abe63).

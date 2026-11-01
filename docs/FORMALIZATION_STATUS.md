@@ -816,3 +816,6 @@ Classical.choice and Quot.sound, and all 965 coverage/finding names were
 checked directly by Lean. No new Paper C source or external mathematical
 hypothesis is introduced. Original manuscript bytes are preserved and no
 Palomar registration is made. Ubuntu root free space is 18.05 GiB.
+
+Validated bounded-affine dyadic checkpoint and P1-MATH-0040:
+[1b87f9df9ba2c7a710a86f73443d39c7925abe63](https://github.com/Vulkin-prog/paper-p1-lean/commit/1b87f9df9ba2c7a710a86f73443d39c7925abe63).
