@@ -3195,6 +3195,68 @@
         "status": "not_integrated"
       },
       "validation_commit": "53e62e69519dae5ab4ee3f1c6dcd8036c80f5966"
+    },
+    {
+      "id": "P1-MATH-0062",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:half:smooth",
+        "number": "T6.2",
+        "page": 34,
+        "source": "companion_sections/half_counts.tex",
+        "line": 50,
+        "statement_sha256": "fe43a176e0940f309f157b97d31dd0b5a96188785c8ec5d3a12e8c04715c8884"
+      },
+      "original_assumption": "Companion T6.2 asks for more than c*loglogN selected values and uses entire Y-smooth parts, large-prime square parts and a first-passage modulus with prime-power multiplicities. The surrounding setup takes H above the block diameter.",
+      "finding": "Only t+26 distinct selected values are needed. One uses the full canonical square part and the squarefree Y-small odd-prime part instead of the entire smooth part. Outside the two-small-kernel exception at H, at most one selected value has full square part squared exceeding N^(19/25); after removing it and fewer than t large Y-kernels, 26 parts remain, each at least a fixed positive multiple of N^(1/25). Their lcm exceeds the centre interval using a proved pairwise-gcd product estimate. Its squarefree prime union admits a squarefree first-passage modulus m between the interval height X and X*Y. Actual coprime prime allocations give a literal congruence certificate. The deterministic exceptional set is counted by proved Rankin, divisor, offset and congruence bounds. It is independent of t, H and the selection, and the constant-selection threshold precedes every varying t and H. No condition H>diameter or H<=Y is used. The full source long-selection and real-cutoff formulation follows with source positivity checked.",
+      "evidence": [
+        "PaperP1.GcdLcmProductBound.gcd_prod_dvd",
+        "PaperP1.GcdLcmProductBound.gcd_lcm_le",
+        "PaperP1.GcdLcmProductBound.product_le_lcm_mul_bound",
+        "PaperP1.KernelSquareBudget.large_kernel_le_squarefree",
+        "PaperP1.KernelSquareBudget.kernel_square_le",
+        "PaperP1.KernelSquareBudget.pair_bound",
+        "PaperP1.KernelSquareBudget.large_squares_card_le_one",
+        "PaperP1.KernelSquareBudget.smooth_part_lower",
+        "PaperP1.KernelSquareBudget.good_values_card",
+        "PaperP1.LargeSmoothCertificates.small_part_dvd",
+        "PaperP1.LargeSmoothCertificates.gcd_parts_le",
+        "PaperP1.LargeSmoothCertificates.prime_product_kernel_one",
+        "PaperP1.LargeSmoothCertificates.prime_product_squarefree",
+        "PaperP1.LargeSmoothCertificates.exists_certificate",
+        "PaperP1.PrimeSubsetAllocations.first_passage",
+        "PaperP1.PrimeSubsetAllocations.part_pos",
+        "PaperP1.PrimeSubsetAllocations.product_parts",
+        "PaperP1.PrimeSubsetAllocations.prime_dvd_part",
+        "PaperP1.PrimeSubsetAllocations.parts_coprime",
+        "PaperP1.PrimeSubsetAllocations.part_dvd_value",
+        "PaperP1.PrimeSubsetAllocations.exists_coprime_allocation",
+        "PaperP1.SmoothModulusHosts.value_cast",
+        "PaperP1.SmoothModulusHosts.common_modEq",
+        "PaperP1.SmoothModulusHosts.fixed_fibre_count",
+        "PaperP1.SmoothModulusHosts.fixed_modulus_count",
+        "PaperP1.PolylogSmoothModuli.log_power_exponential",
+        "PaperP1.PolylogSmoothModuli.odd_smooth_count",
+        "PaperP1.SmoothCertificateCount.uniform_count",
+        "PaperP1.SmoothSelectionCertificates.value_bounds",
+        "PaperP1.SmoothSelectionCertificates.square_budget",
+        "PaperP1.SmoothSelectionCertificates.product_budget",
+        "PaperP1.SmoothSelectionCertificates.source_certificates",
+        "PaperP1.LargeSmoothExceptionalSet.exceptional_count",
+        "PaperP1.LargeSmoothExceptionalSet.radius_bounds",
+        "PaperP1.LargeSmoothExceptionalSet.constant_selection",
+        "PaperP1.LargeSmoothExceptionalSet.companion_T6_2"
+      ],
+      "proposed_revision": "Replace the long-selection hypothesis by cardinality at least t+26 in the smooth-modulus lemma, retaining the long-selection formulation as a corollary. Use the full canonical square part and the squarefree small odd-prime part; choose a squarefree first-passage modulus and allocate its primes without prime-power multiplicity bookkeeping. State that the deterministic exceptional set can be chosen independently of t and H, and that the construction does not require H to exceed the block diameter.",
+      "impact": "Full companion Lemma T6.2 is complete. Coverage is 61/167 (main 19/73, companion 42/94), with 62 confirmed improvements. The incoming/outgoing private-prime certificate step and conditional full-support theorem remain open.",
+      "validation": "Lean v4.36.0-rc2 full build passed (9,731 jobs); actual axiom audit passed for all 4,318 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,033 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.35 GiB. No unproved modulus/centre count, new literature input, new Paper C port, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

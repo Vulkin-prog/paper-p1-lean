@@ -2811,3 +2811,17 @@ width suffice, with no condition H>block diameter. The literal critical
 B=L+1 source version and positivity are proved. All support, kernel-pair,
 Pell-fibre, offset and interval-cover counts are proved and summed.
 Coverage is 60/167; see [complete alignment](TWO_SMALL_KERNEL_ALIGNMENT.md).
+
+## P1-MATH-0062 — A constant selection and squarefree moduli suffice in T6.2
+
+The actual smooth-modulus exceptional set and its count are proved from
+only t+26 distinct selected values. One uses full canonical square parts
+and squarefree small odd-prime parts; at most one large square part is
+removed, leaving 26 large parts after the fewer-than-t large kernels.
+Their actual lcm exceeds the interval, and a squarefree first-passage
+modulus gives a proved congruence certificate. All Rankin, divisor-code,
+offset and centre-fibre counts are proved. The common deterministic set
+and constant-selection threshold are independent of t,H and the selection.
+Neither H>diameter nor H<=Y is needed. The full original long-selection,
+real-cutoff and critical-block theorem follows, with source positivity.
+Coverage is 61/167. See [complete alignment](LARGE_SMOOTH_MODULUS_ALIGNMENT.md).

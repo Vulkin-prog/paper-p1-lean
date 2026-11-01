@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 60 / 167 numbered results proved.**
+**Status: active formalization, 61 / 167 numbered results proved.**
 Companion T12.1 now proves the actual retained class is hereditary, has a unique dependent pair, and has boundary nullity at most 4L/3+1. See the
 [complete retained-class alignment](docs/RETAINED_CLASS_ALIGNMENT.md).
 Companion T12.2 now proves the actual large-boundary mass estimate with the source least cutoff, and strengthens its decay to N^(-5/3). See the
@@ -29,6 +29,9 @@ Companion T6.1 now counts the actual two-small-kernel centres, with the stronger
 uniform real-cap bound Q*N^epsilon. The threshold is independent of Q, the cutoff
 need not exceed the block diameter, and fixed polylogarithmic widths are allowed.
 See the [complete two-small-kernel alignment](docs/TWO_SMALL_KERNEL_ALIGNMENT.md).
+Companion T6.2 now constructs and counts the actual deterministic smooth-modulus
+exceptional set. Only t+26 selected values are needed, and squarefree smooth parts
+and moduli suffice. See the [complete smooth-modulus alignment](docs/LARGE_SMOOTH_MODULUS_ALIGNMENT.md).
 Companion T1.9 now covers the full enlarged geometric alignment, including
 zero exact units and both orientations, with its fixed-height enlarged-prime
 rate. The earlier one-unit coverage error and its subsequent closure are

@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **60 / 167**: article Propositions 3.1, 4.1, 5.2, 9.1, 13.7, 19.2, Corollary 9.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1.
+- Numbered results completed: **61 / 167**: article Propositions 3.1, 4.1, 5.2, 9.1, 13.7, 19.2, Corollary 9.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4282 audited theorem/lemma declarations**. This
+- The project currently has **4318 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1958,3 +1958,22 @@ confirmed improvements. See [complete alignment](TWO_SMALL_KERNEL_ALIGNMENT.md).
 The smooth-modulus/certificate steps and conditional half-count stay open.
 
 Verification checkpoint: Lean v4.36.0-rc2 full build passed (9,713 jobs); actual axiom audit passed for all 4,282 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 1,997 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.38 GiB. No unproved centre/fibre count, new literature input, new Paper C port, manuscript-byte change or Palomar registration.
+
+## Complete deterministic smooth-modulus exception — companion T6.2
+
+The actual exceptional set, its full Rankin/divisor/offset/congruence count
+and the selection-to-membership implication are now proved. The literal
+real cutoff Y=(logN)^A, critical B=L+1, arbitrary fixed comparable positive
+intervals and source value positivity are included. No target count or
+modulus-existence premise is left unproved.
+
+Only t+26 selected values are needed, with a threshold before t,H and the
+selection. Full canonical square parts and squarefree small odd-prime
+parts suffice, and the actual first-passage modulus is squarefree. The
+deterministic set is common to all H,t and selections; H>diameter and
+H<=Y are not required. This is P1-MATH-0062. Coverage is 61/167 (main 19/73,
+companion 42/94), with 62 confirmed improvements. See
+[complete alignment](LARGE_SMOOTH_MODULUS_ALIGNMENT.md). The incoming/outgoing
+certificate lemma and full conditional half-count remain open.
+
+Verification checkpoint: Lean v4.36.0-rc2 full build passed (9,731 jobs); actual axiom audit passed for all 4,318 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,033 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.35 GiB. No unproved modulus/centre count, new literature input, new Paper C port, manuscript-byte change or Palomar registration.

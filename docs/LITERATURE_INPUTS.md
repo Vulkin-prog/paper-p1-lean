@@ -1510,3 +1510,17 @@ covers are counted explicitly. No external or target count is an unproved
 input. The stronger real-cap/cutoff/width scope is P1-MATH-0061; no new
 Paper C port or literature assumption is introduced. See
 [complete alignment](TWO_SMALL_KERNEL_ALIGNMENT.md).
+
+## Complete deterministic smooth-modulus exception
+
+The T6.2 proof constructs its actual large squarefree smooth modulus from
+canonical prime factorizations, a proved finite gcd/lcm product inequality,
+a proved first-passage subset and actual prime allocations. Its modulus
+count is derived from the already proved small-kernel Rankin/Euler estimate
+and a verified logarithmic power limit. Actual divisor and offset codes
+are counted, and actual congruence fibres have at most one centre by the
+proved coprime-product uniqueness theorem. No smooth-modulus existence,
+Rankin bound, code count or target centre count is an unproved input. The
+stronger constant-selection/squarefree scope is P1-MATH-0062; no new Paper C
+port or external literature assumption is introduced. See
+[complete alignment](LARGE_SMOOTH_MODULUS_ALIGNMENT.md).

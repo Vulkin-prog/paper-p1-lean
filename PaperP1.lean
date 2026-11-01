@@ -570,3 +570,21 @@ public import PaperP1.Arithmetic.PositiveProductPairs
 public import PaperP1.Asymptotics.TwoSmallKernelFibres
 
 public import PaperP1.Asymptotics.TwoSmallKernelCount
+
+public import PaperP1.Arithmetic.GcdLcmProductBound
+
+public import PaperP1.Arithmetic.KernelSquareBudget
+
+public import PaperP1.Arithmetic.LargeSmoothCertificates
+
+public import PaperP1.Arithmetic.PrimeSubsetAllocations
+
+public import PaperP1.Arithmetic.SmoothModulusHosts
+
+public import PaperP1.Asymptotics.PolylogSmoothModuli
+
+public import PaperP1.Asymptotics.SmoothCertificateCount
+
+public import PaperP1.Asymptotics.SmoothSelectionCertificates
+
+public import PaperP1.Asymptotics.LargeSmoothExceptionalSet
