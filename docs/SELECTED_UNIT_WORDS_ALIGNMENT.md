@@ -105,3 +105,7 @@ Those global and asymptotic claims are not supplied by this local bijection.
 No new literature premise or Paper C port is introduced. Existing primitive
 channel geometry and source-parameter results are reused within P1.
 The preserved manuscripts are unchanged and no Palomar registration is made.
+
+Validated actual local word-enumeration checkpoint (9,361 build jobs;
+3,492 audited declarations; 1,207 directly checked coverage/finding names):
+[75b7018923d2fc85473e609a5788b6bb97805498](https://github.com/Vulkin-prog/paper-p1-lean/commit/75b7018923d2fc85473e609a5788b6bb97805498).

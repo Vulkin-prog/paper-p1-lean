@@ -1973,3 +1973,7 @@ with 44 confirmed improvements. The full build passed (9,361 jobs), all
 1,207 coverage/finding names were checked directly. Only propext,
 Classical.choice and Quot.sound occur. No new external input, Paper C
 port, manuscript revision or Palomar registration is introduced.
+
+Validated actual local word-enumeration checkpoint (9,361 build jobs;
+3,492 audited declarations; 1,207 directly checked coverage/finding names):
+[75b7018923d2fc85473e609a5788b6bb97805498](https://github.com/Vulkin-prog/paper-p1-lean/commit/75b7018923d2fc85473e609a5788b6bb97805498).
