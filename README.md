@@ -40,6 +40,10 @@ Actual nonzero even unit selections are now bijective with their unique
 endpoint-selected words. Their signed sum at a fixed pair is proved to
 equal the sum of A_d times the two literal placement signs. See the
 [local word enumeration](docs/SELECTED_UNIT_WORDS_ALIGNMENT.md).
+The actual dyadic signed unit sum is now identified with the global
+pattern/source aggregate. Both orientations give main term N*w*S and
+error <=6B*U, uniformly through reduced height B^3. See the
+[dyadic Fourier aggregate](docs/DYADIC_UNIT_FOURIER_ALIGNMENT.md).
 The full pair profile and fixed-channel mass remain in progress. See the
 [finite calculation](docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,

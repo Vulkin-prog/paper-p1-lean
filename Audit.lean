@@ -859,6 +859,10 @@ import PaperP1
 #print axioms PaperP1.DyadicTargetInterior.lower_endpoint
 #print axioms PaperP1.DyadicTargetInterior.upper_endpoint
 #print axioms PaperP1.DyadicTargetInterior.strict_interior_of_no_endpoints
+#print axioms PaperP1.DyadicUnitWordHosts.weighted_unit_hosts
+#print axioms PaperP1.DyadicUnitWordHosts.integer_dyadic_sum
+#print axioms PaperP1.DyadicUnitWordHosts.signed_hosts_integer
+#print axioms PaperP1.DyadicUnitWordHosts.signed_hosts_twice_forward
 #print axioms PaperP1.EnlargedPairGeometry.geometric_swap
 #print axioms PaperP1.EnlargedPairGeometry.union_swap
 #print axioms PaperP1.EnlargedPairGeometry.offset_abs
@@ -1596,6 +1600,11 @@ import PaperP1
 #print axioms PaperP1.UnitIntersectionEquiv.valueEquiv_apply_val
 #print axioms PaperP1.UnitIntersectionEquiv.unitIntersectionEquiv_apply
 #print axioms PaperP1.UnitIntersectionEquiv.unitClassMap_injective
+#print axioms PaperP1.UnitShapePatterns.index_fin_value
+#print axioms PaperP1.UnitShapePatterns.pattern_has_unit
+#print axioms PaperP1.UnitShapePatterns.pattern_shape
+#print axioms PaperP1.UnitShapePatterns.shape_pattern
+#print axioms PaperP1.UnitShapePatterns.shape_sum
 #print axioms PaperP1.WeightedDefectCounting.mem_positiveValuesForSupport_iff
 #print axioms PaperP1.WeightedDefectCounting.mem_positiveDefectValues_iff
 #print axioms PaperP1.WeightedDefectCounting.positiveValuesForSupport_subset_image_Icc
@@ -1668,6 +1677,7 @@ import PaperP1
 #print axioms PaperP1.CriticalWindowGeometry.uniform_geometry
 #print axioms PaperP1.CriticalWindowGeometry.log_base_lower
 #print axioms PaperP1.DyadicMatchingArithmetic.uniform_core
+#print axioms PaperP1.DyadicUnitFourierCount.all_heights
 #print axioms PaperP1.EffectiveOrderMoments.errorConstant_pos
 #print axioms PaperP1.EffectiveOrderMoments.finite_exception_bound
 #print axioms PaperP1.EffectiveOrderMoments.factorial_bound
@@ -2472,6 +2482,10 @@ import PaperP1
 #print axioms PaperP1.CountTailBounds.falling_markov_product
 #print axioms PaperP1.CountTailBounds.probability_le_power
 #print axioms PaperP1.CountTailBounds.moment_le_count_power
+#print axioms PaperP1.DyadicUnitFourierAggregate.pair_pattern_sum
+#print axioms PaperP1.DyadicUnitFourierAggregate.dyadic_unit_sum
+#print axioms PaperP1.DyadicUnitFourierAggregate.symmetric_unit_sum
+#print axioms PaperP1.DyadicUnitFourierAggregate.finite_signed_sum_error
 #print axioms PaperP1.FactorialBranching.factorial_zero
 #print axioms PaperP1.FactorialBranching.factorial_succ_bound
 #print axioms PaperP1.FactorialBranching.factorial_le_power

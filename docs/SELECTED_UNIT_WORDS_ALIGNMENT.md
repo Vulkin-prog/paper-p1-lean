@@ -93,14 +93,13 @@ the same actual signed unit sum in the
 For an actual probability interpretation, that formula retains privacy
 of every distinct normalized value and positive length.
 
-## Remaining global step
+## Global step completed at the next checkpoint
 
-The fixed-pair actual shapes must still be reindexed over all dyadic
-pairs by the global patterns and the actual source-pair sets in
-[the weighted translation aggregate](CHANNEL_WORD_HOSTS_ALIGNMENT.md).
-Then defective normalizations must be removed, the p^2 baseline added,
+The fixed-pair actual shapes are now reindexed over all dyadic pairs
+by global patterns and literal actual source-pair sets. See the
+[complete dyadic aggregation](DYADIC_UNIT_FOURIER_ALIGNMENT.md).
+Defective normalizations must still be removed, the p^2 baseline added,
 and the full mass/profile estimates and phase equivalents proved.
-Those global and asymptotic claims are not supplied by this local bijection.
 
 No new literature premise or Paper C port is introduced. Existing primitive
 channel geometry and source-parameter results are reused within P1.

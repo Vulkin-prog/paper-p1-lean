@@ -1977,3 +1977,37 @@ port, manuscript revision or Palomar registration is introduced.
 Validated actual local word-enumeration checkpoint (9,361 build jobs;
 3,492 audited declarations; 1,207 directly checked coverage/finding names):
 [75b7018923d2fc85473e609a5788b6bb97805498](https://github.com/Vulkin-prog/paper-p1-lean/commit/75b7018923d2fc85473e609a5788b6bb97805498).
+
+## P1-MATH-0044 extended — actual dyadic Fourier-word aggregation
+
+Pair-specific fitting unit shapes are now explicitly bijective with
+those global patterns carrying the corresponding actual source unit.
+Finite sum interchange counts the literal dyadic source-pair set.
+The two orientation source families are disjoint once N>(a+b)B.
+Thus twice the actual forward dyadic signed unit sum equals signedHosts,
+with exact signed main term N*w*S and error <=6B*U. One critical-band
+threshold precedes every reduced positive a<b<2a with b<=B^3.
+
+Evidence: `UnitShapePatterns.pattern_shape`, `shape_pattern`, `shape_sum`,
+`DyadicUnitWordHosts.weighted_unit_hosts`, `integer_dyadic_sum`,
+`signed_hosts_twice_forward`, `DyadicUnitFourierAggregate.pair_pattern_sum`,
+`dyadic_unit_sum`, `symmetric_unit_sum`, `finite_signed_sum_error` and
+`DyadicUnitFourierCount.all_heights`.
+
+The aggregate is the actual rational-unit Fourier contribution, with
+no guessed source multiplicity or assumed probability/mass bound.
+Its actual covariance interpretation uses the already proved private
+normalized-pair formula. On nonprivate hosts the complete covariance
+is not identified with the rational-unit sum. Defective-normalization
+removal, the baseline correction, full mass/profile estimates and phase
+equivalents remain open. Article 3.3 and T2.5 remain in progress.
+
+There are still 44 confirmed improvements and coverage stays 52/167.
+The full build passed (9,369 jobs), all 3,506 theorem/lemma declarations
+passed the actual axiom audit, and all 1,221 coverage/finding names were
+checked directly. Only propext, Classical.choice and Quot.sound occur.
+Current JSON impact/validation summaries for MATH-0035 and MATH-0043
+have been synchronized with their earlier validated covariance and
+word extensions, preserving their exact validation commits and histories.
+No literature input, Paper C port, manuscript revision or Palomar
+registration is introduced. Manuscript bytes are unchanged.

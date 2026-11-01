@@ -336,3 +336,7 @@ public import PaperP1.Arithmetic.ChannelGapWords
 public import PaperP1.Arithmetic.SelectedUnitWords
 public import PaperP1.Arithmetic.SelectedUnitWordBijection
 public import PaperP1.Model.SelectedUnitFourierEnumeration
+public import PaperP1.Arithmetic.UnitShapePatterns
+public import PaperP1.Arithmetic.DyadicUnitWordHosts
+public import PaperP1.Model.DyadicUnitFourierAggregate
+public import PaperP1.Asymptotics.DyadicUnitFourierCount

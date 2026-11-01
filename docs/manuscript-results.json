@@ -276,7 +276,21 @@
         "PaperP1.SelectedUnitFourierEnumeration.weighted_selection_sum",
         "PaperP1.SelectedUnitFourierEnumeration.kernelEquiv_coefficients",
         "PaperP1.SelectedUnitFourierEnumeration.kernelEquiv_sign",
-        "PaperP1.SelectedUnitFourierEnumeration.signed_unit_enumeration"
+        "PaperP1.SelectedUnitFourierEnumeration.signed_unit_enumeration",
+        "PaperP1.UnitShapePatterns.index_fin_value",
+        "PaperP1.UnitShapePatterns.pattern_has_unit",
+        "PaperP1.UnitShapePatterns.pattern_shape",
+        "PaperP1.UnitShapePatterns.shape_pattern",
+        "PaperP1.UnitShapePatterns.shape_sum",
+        "PaperP1.DyadicUnitWordHosts.weighted_unit_hosts",
+        "PaperP1.DyadicUnitWordHosts.integer_dyadic_sum",
+        "PaperP1.DyadicUnitWordHosts.signed_hosts_integer",
+        "PaperP1.DyadicUnitWordHosts.signed_hosts_twice_forward",
+        "PaperP1.DyadicUnitFourierAggregate.pair_pattern_sum",
+        "PaperP1.DyadicUnitFourierAggregate.dyadic_unit_sum",
+        "PaperP1.DyadicUnitFourierAggregate.symmetric_unit_sum",
+        "PaperP1.DyadicUnitFourierAggregate.finite_signed_sum_error",
+        "PaperP1.DyadicUnitFourierCount.all_heights"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
@@ -284,7 +298,7 @@
         "P1-MATH-0044",
         "P1-MATH-0035"
       ],
-      "notes": "Preparatory finite channel sums, actual dyadic translations and signed canonical-pattern aggregates are proved with errors <=6B*U uniformly through reduced height B^3. The actual private pair covariance is p^2 times the signed nonzero even-unit sum, with no joint compatibility premise. The local word bridge is now complete: nonzero even coefficients correspond to nonempty even selected subsets, each subset has unique extreme units and positive primitive gap, and an explicit bijection identifies these actual selections with fitting endpoint-selected words. The exact signed Fourier unit sum for a fixed pair is the shape sum of A_d times both literal predecessor placement signs. Remaining: aggregate these actual pair-specific shapes into the global canonical-pattern/source translation sum, remove defective normalizations, add the baseline correction, and complete the full mass/profile and phase equivalents. No numbered result is newly completed. See docs/SELECTED_UNIT_WORDS_ALIGNMENT.md and docs/PRIVATE_UNIT_COVARIANCE_ALIGNMENT.md.",
+      "notes": "Preparatory finite channel sums, actual dyadic translations, the private pair covariance formula and complete local selected-unit word bijection are proved. The global bridge is now also complete: actual pair-specific shapes are bijective with global patterns carrying the corresponding source unit, and finite sum interchange identifies the actual dyadic signed unit sum with the literal source-pair host aggregate. Both orientations give the exact signedHosts aggregate. Its signed main term is N*w*S with error <=6B*U, under one critical-band threshold before all reduced heights b<=B^3. Probability-zero pairs retain their cancellations. Remaining: remove defective normalizations from this actual rational-unit aggregate, add the baseline p^2 correction on the retained private dependent family, and prove the full mass/profile asymptotics and phase equivalents. Neither article 3.3 nor T2.5 is newly complete. See docs/DYADIC_UNIT_FOURIER_ALIGNMENT.md and the earlier local and probability alignments.",
       "validation_commit": "75b7018923d2fc85473e609a5788b6bb97805498",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
@@ -2452,7 +2466,21 @@
         "PaperP1.SelectedUnitFourierEnumeration.weighted_selection_sum",
         "PaperP1.SelectedUnitFourierEnumeration.kernelEquiv_coefficients",
         "PaperP1.SelectedUnitFourierEnumeration.kernelEquiv_sign",
-        "PaperP1.SelectedUnitFourierEnumeration.signed_unit_enumeration"
+        "PaperP1.SelectedUnitFourierEnumeration.signed_unit_enumeration",
+        "PaperP1.UnitShapePatterns.index_fin_value",
+        "PaperP1.UnitShapePatterns.pattern_has_unit",
+        "PaperP1.UnitShapePatterns.pattern_shape",
+        "PaperP1.UnitShapePatterns.shape_pattern",
+        "PaperP1.UnitShapePatterns.shape_sum",
+        "PaperP1.DyadicUnitWordHosts.weighted_unit_hosts",
+        "PaperP1.DyadicUnitWordHosts.integer_dyadic_sum",
+        "PaperP1.DyadicUnitWordHosts.signed_hosts_integer",
+        "PaperP1.DyadicUnitWordHosts.signed_hosts_twice_forward",
+        "PaperP1.DyadicUnitFourierAggregate.pair_pattern_sum",
+        "PaperP1.DyadicUnitFourierAggregate.dyadic_unit_sum",
+        "PaperP1.DyadicUnitFourierAggregate.symmetric_unit_sum",
+        "PaperP1.DyadicUnitFourierAggregate.finite_signed_sum_error",
+        "PaperP1.DyadicUnitFourierCount.all_heights"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
@@ -2460,7 +2488,7 @@
         "P1-MATH-0044",
         "P1-MATH-0035"
       ],
-      "notes": "Preparatory finite channel sums, actual dyadic translations and signed canonical-pattern aggregates are proved with errors <=6B*U uniformly through reduced height B^3. The actual private pair covariance is p^2 times the signed nonzero even-unit sum, with no joint compatibility premise. The local word bridge is now complete: nonzero even coefficients correspond to nonempty even selected subsets, each subset has unique extreme units and positive primitive gap, and an explicit bijection identifies these actual selections with fitting endpoint-selected words. The exact signed Fourier unit sum for a fixed pair is the shape sum of A_d times both literal predecessor placement signs. Remaining: aggregate these actual pair-specific shapes into the global canonical-pattern/source translation sum, remove defective normalizations, add the baseline correction, and complete the full mass/profile and phase equivalents. No numbered result is newly completed. See docs/SELECTED_UNIT_WORDS_ALIGNMENT.md and docs/PRIVATE_UNIT_COVARIANCE_ALIGNMENT.md.",
+      "notes": "Preparatory finite channel sums, actual dyadic translations, the private pair covariance formula and complete local selected-unit word bijection are proved. The global bridge is now also complete: actual pair-specific shapes are bijective with global patterns carrying the corresponding source unit, and finite sum interchange identifies the actual dyadic signed unit sum with the literal source-pair host aggregate. Both orientations give the exact signedHosts aggregate. Its signed main term is N*w*S with error <=6B*U, under one critical-band threshold before all reduced heights b<=B^3. Probability-zero pairs retain their cancellations. Remaining: remove defective normalizations from this actual rational-unit aggregate, add the baseline p^2 correction on the retained private dependent family, and prove the full mass/profile asymptotics and phase equivalents. Neither article 3.3 nor T2.5 is newly complete. See docs/DYADIC_UNIT_FOURIER_ALIGNMENT.md and the earlier local and probability alignments.",
       "validation_commit": "75b7018923d2fc85473e609a5788b6bb97805498",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",

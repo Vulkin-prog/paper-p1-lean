@@ -57,14 +57,15 @@ This extends P1-MATH-0044; it is not a new independent finding count.
 The finite source-family counts and their signs are proved, not assumed.
 No bound on the target probability/mass is an input to these theorems.
 
-## Remaining identification and exceptional sources
+## Actual identification and remaining exceptional sources
 
-The canonical-pattern aggregate must still be identified with the
-actual complete unit-relation/Fourier contribution on private normalized
-value sets. This requires the relation-kernel and word-enumeration bridge;
-no equality with the actual probability is asserted here.
-Defective-normalization removal, full fixed-channel mass, complete pair
-profile and asymptotic phases also remain open. Original manuscript
+The canonical-pattern aggregate is now identified with the actual
+dyadic signed nonzero even-unit sum, using the complete local word
+bijection and literal source-pair reindexing. On private normalized
+pairs, its p^2 multiple is the actual covariance. See the
+[complete dyadic bridge](DYADIC_UNIT_FOURIER_ALIGNMENT.md).
+Defective-normalization removal, the baseline correction, full fixed-channel
+mass, complete pair profile and asymptotic phases remain open. Original manuscript
 bytes are preserved. No external mathematical hypothesis, new Paper C
 port, manuscript revision or Palomar registration is introduced.
 
@@ -74,5 +75,5 @@ Validated weighted canonical-pattern checkpoint (9,329 build jobs;
 
 The subsequent [exact unit-intersection checkpoint](EXACT_UNIT_INTERSECTION_ALIGNMENT.md)
 constructs the actual even-unit/common-class linear equivalence, including
-zero and one unit. Affine character signs, selected-word enumeration and
-the actual Fourier/probability identification remain open.
+zero and one unit. The later covariance, local word and dyadic aggregation
+checkpoints linked above complete its affine-sign and enumeration bridges.

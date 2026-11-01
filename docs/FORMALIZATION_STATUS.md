@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3492 audited theorem/lemma declarations**. This
+- The project currently has **3506 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1162,3 +1162,34 @@ Ubuntu root free space is 17.91 GiB.
 Validated actual local word-enumeration checkpoint (9,361 build jobs;
 3,492 audited declarations; 1,207 directly checked coverage/finding names):
 [75b7018923d2fc85473e609a5788b6bb97805498](https://github.com/Vulkin-prog/paper-p1-lean/commit/75b7018923d2fc85473e609a5788b6bb97805498).
+
+## Actual dyadic signed unit aggregate and height-uniform error
+
+`UnitShapePatterns.patternEquiv` reindexes actual pair-specific fitting
+shapes by global patterns carrying the corresponding exact source unit.
+`DyadicUnitWordHosts` proves the literal source-pair filter identity,
+finite sum interchange and the exact two-orientation source cardinality.
+`DyadicUnitFourierAggregate` transports these identities to the actual
+real signed nonzero even-unit sum over all dyadic centres. Twice the
+forward sum is exactly the earlier signed canonical-pattern aggregate.
+It therefore has signed main term N*w*S and explicit error <=6B*U.
+`DyadicUnitFourierCount.all_heights` gives one critical-band threshold
+before every reduced positive a<b<2a with b<=B^3. See the
+[complete global bridge](DYADIC_UNIT_FOURIER_ALIGNMENT.md).
+
+This extends P1-MATH-0044, leaving 44 confirmed improvements. The
+summed expression is the actual rational-unit Fourier contribution;
+on private normalized pairs its p^2 multiple is the actual covariance.
+No complete covariance identity is asserted on nonprivate hosts.
+Defective-normalization removal, the p^2 baseline correction and full
+mass/profile asymptotics and phase equivalents remain unfinished.
+Article 3.3 and T2.5 remain in progress; coverage stays **52 / 167**.
+
+The full build passed (9,369 jobs), all 3,506 theorem/lemma declarations
+passed the actual axiom audit, and all 1,221 coverage/finding names were
+checked directly by Lean. Only propext, Classical.choice and Quot.sound
+occur. Current finding summaries have also been synchronized with the
+already validated covariance and local-word extensions; their earlier
+validation commits and histories are retained. No new literature input,
+Paper C port, manuscript revision or Palomar registration is introduced.
+Original sources are unchanged. Ubuntu root free space is 17.90 GiB.

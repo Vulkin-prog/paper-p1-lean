@@ -1062,3 +1062,13 @@ bijection, exact cardinality and predecessor sign enumeration. They use
 finite binary algebra, coprimality, actual window labels and finite
 extrema only. There is no new literature premise or Paper C port. The
 global host aggregation and exceptional-normalization estimates remain open.
+
+## Actual dyadic rational-unit aggregate
+
+`UnitShapePatterns`, `DyadicUnitWordHosts`, `DyadicUnitFourierAggregate`
+and `DyadicUnitFourierCount` prove the actual pair-shape/global-pattern
+bijection, dyadic host reindexing, exact symmetric signed unit aggregate
+and its <=6B*U translation error uniformly through height B^3. These
+use previously proved finite and critical-scale results only. There is
+no new literature premise or Paper C port. Exceptional normalization
+removal and full channel mass/profile asymptotics remain unfinished.
