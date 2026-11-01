@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 1 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **55 / 167**: article Propositions 3.1, 4.1, 5.2, 13.7, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
+- Numbered results completed: **56 / 167**: article Propositions 3.1, 4.1, 5.2, 13.7, 19.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3826 audited theorem/lemma declarations**. This
+- The project currently has **3855 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1624,3 +1624,24 @@ occur; original manuscript bytes are unchanged.
 Validated full T12.1 checkpoint (9,537 build jobs; 3,826 audited
 declarations; 1,541 directly checked names):
 [8320668612ecc2b0e8b8945c974325dc8676f6c4](https://github.com/Vulkin-prog/paper-p1-lean/commit/8320668612ecc2b0e8b8945c974325dc8676f6c4).
+
+## Companion T12.2 — a stronger actual large-boundary estimate
+
+The exact least cutoff is constructed and proved minimal. A finite
+powerset exponential tilt gives the actual large-subset tail <=N^(-3),
+without an infinite factorial series. Actual affine joint probabilities
+and exact regular marginals, including incompatible zero-probability
+families, give the full source O(N^(-3/2)) mass estimate. Retaining
+the precise loss rho<=4L/3+1 strengthens it to
+2*2^(4C/3)*N^(-5/3), with the same cutoff and hypotheses. The actual
+regular mean is <=2^C, so an admissible upper mean is proved explicitly.
+One threshold precedes all lengths, real prime cutoffs and families.
+Companion T12.2 is complete; coverage is 56/167, with 52 confirmed
+improvements. This is P1-MATH-0052. The separate unnumbered cutoff
+asymptotic and eventual K<=L/4 range remain open. See
+[alignment](LARGE_BOUNDARY_TAIL_ALIGNMENT.md).
+
+The full build passed (9,545 jobs), the actual axiom audit passed for
+all 3,855 declarations, and Lean checked all 1,570 distinct
+coverage/finding names. Only propext, Classical.choice and Quot.sound
+occur; original manuscript bytes are unchanged.

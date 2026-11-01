@@ -2391,6 +2391,61 @@
         "status": "not_integrated"
       },
       "validation_commit": "8320668612ecc2b0e8b8945c974325dc8676f6c4"
+    },
+    {
+      "id": "P1-MATH-0052",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:stop:tail",
+        "number": "T12.2",
+        "page": 50,
+        "source": "companion_sections/stopped.tex",
+        "line": 120,
+        "statement_sha256": "58419af8ab6f89d036eca8383642d845b56d29aec345513766e926272b6359ce"
+      },
+      "original_assumption": "T12.2 uses the least cutoff K>=max(4,ceil(4eLambda)) with K log(K/(2eLambda))>=3 log N, a fixed upper regular mean Lambda, and the coarse boundary loss rho<3L/2 to obtain O_C(N^(-3/2)). Its proof bounds a factorial tail by 2N^(-3).",
+      "finding": "The same least cutoff gives the stronger actual large-boundary mass <=2*2^(4C/3)*N^(-5/3), by retaining the proved boundary nullity rho<=4L/3+1. A finite exponential tilt of the exact powerset polynomial bounds its large-subset tail by N^(-3) without the factorial-series factor 2. Existence, defining condition and minimality of the literal source cutoff are proved. Actual affine probabilities, exact regular marginals and incompatible zero-probability families are included. The actual regular mean is <=2^C, supplying a concrete admissible Lambda.",
+      "evidence": [
+        "PaperP1.LargeSubsetWeights.weightSum_nonneg",
+        "PaperP1.LargeSubsetWeights.tilt_product_bound",
+        "PaperP1.LargeSubsetWeights.tilt_exponential_bound",
+        "PaperP1.LargeSubsetWeights.optimized_bound",
+        "PaperP1.LargeSubsetWeights.log_budget_bound",
+        "PaperP1.BoundaryCutoff.condition_exists",
+        "PaperP1.BoundaryCutoff.cutoff_spec",
+        "PaperP1.BoundaryCutoff.cutoff_minimal",
+        "PaperP1.BoundaryCutoff.cutoff_pos",
+        "PaperP1.BoundaryCutoff.cutoff_size",
+        "PaperP1.BoundaryCutoff.powerset_tail_bound",
+        "PaperP1.LargeBoundaryMass.mem_families",
+        "PaperP1.LargeBoundaryMass.joint_probability_bound",
+        "PaperP1.LargeBoundaryMass.boundary_probability_bound",
+        "PaperP1.LargeBoundaryMass.rank_budget_majorant",
+        "PaperP1.LargeBoundaryMass.mass_majorant",
+        "PaperP1.LargeBoundaryMass.precise_nullity_majorant",
+        "PaperP1.LargeBoundaryMass.cutoff_mass_bound",
+        "PaperP1.LargeBoundaryMass.precise_cutoff_mass_bound",
+        "PaperP1.LargeBoundaryTail.critical_parameters",
+        "PaperP1.LargeBoundaryTail.critical_power_bound",
+        "PaperP1.LargeBoundaryTail.critical_prefactor",
+        "PaperP1.LargeBoundaryTail.regular_mean_bound",
+        "PaperP1.LargeBoundaryTail.mass_nonneg",
+        "PaperP1.LargeBoundaryTail.critical_mass_bound",
+        "PaperP1.LargeBoundaryTail.companion_T12_2_with_mean_bound",
+        "PaperP1.LargeBoundaryTail.companion_T12_2",
+        "PaperP1.LargeBoundaryTail.improved_critical_mass_bound",
+        "PaperP1.LargeBoundaryTail.improved_source_tail"
+      ],
+      "proposed_revision": "Replace the T12.2 conclusion by O_C(N^(-5/3)) while keeping the same cutoff. Use the precise T12.1 nullity bound instead of weakening it to 3L/2. Give the finite exponential-tilt argument as a direct alternative to the binomial/factorial tail calculation, with the explicit constants above. Keep the cutoff asymptotic and eventual range as separate claims for their later uses.",
+      "impact": "Completes full companion T12.2 on the actual regular set and retained-class boundary, and strengthens its decay exponent from -3/2 to -5/3 without additional hypotheses. The original estimate remains separately proved. Thresholds precede all critical lengths, prime cutoffs and families; arbitrary admissible fixed upper means are covered as well as the explicit Lambda=2^C choice. Numbered coverage becomes 56/167.",
+      "validation": "Full Lean v4.36.0-rc2 build (9545 jobs), actual axiom audit of all 3855 theorem/lemma declarations, and direct Lean checks of all 1570 distinct coverage/finding names. Only propext, Classical.choice and Quot.sound occur. The actual least cutoff, finite exponential tilt, actual affine probabilities and full source T12.2 are proved, together with the stronger N^(-5/3) mass estimate. No new unproved literature input or Paper C port is introduced. Original manuscript bytes are unchanged.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

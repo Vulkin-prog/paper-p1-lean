@@ -1304,3 +1304,16 @@ increment. Existing arithmetic good-edge compression gives explicit
 +1 constants and L>=7. The actual source class and critical-band
 threshold are proved without new unproved literature inputs or a
 Paper C port. See [alignment](RETAINED_CLASS_ALIGNMENT.md).
+
+## The exact cutoff and finite large-boundary tail
+
+Stable ID: `P1-PROB-LARGE-BOUNDARY-TAIL`. Status: **proved, full T12.2**.
+
+The least source cutoff is constructed with its defining condition and
+minimality. The exact finite powerset polynomial and an exponential
+tilt prove its tail bound, without an assumed factorial estimate or
+independence. Actual affine joint probabilities and the precise
+retained boundary nullity yield both the source N^(-3/2) mass estimate
+and the stronger N^(-5/3) estimate, with a proved upper mean. No new
+unproved literature input or Paper C port is introduced. See
+[alignment](LARGE_BOUNDARY_TAIL_ALIGNMENT.md).

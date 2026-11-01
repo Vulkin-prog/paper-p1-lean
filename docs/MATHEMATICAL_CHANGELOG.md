@@ -2585,3 +2585,24 @@ occur; original manuscript bytes are unchanged.
 Validated full T12.1 checkpoint (9,537 build jobs; 3,826 audited
 declarations; 1,541 directly checked names):
 [8320668612ecc2b0e8b8945c974325dc8676f6c4](https://github.com/Vulkin-prog/paper-p1-lean/commit/8320668612ecc2b0e8b8945c974325dc8676f6c4).
+
+## Companion T12.2 — a stronger actual large-boundary estimate
+
+The exact least cutoff is constructed and proved minimal. A finite
+powerset exponential tilt gives the actual large-subset tail <=N^(-3),
+without an infinite factorial series. Actual affine joint probabilities
+and exact regular marginals, including incompatible zero-probability
+families, give the full source O(N^(-3/2)) mass estimate. Retaining
+the precise loss rho<=4L/3+1 strengthens it to
+2*2^(4C/3)*N^(-5/3), with the same cutoff and hypotheses. The actual
+regular mean is <=2^C, so an admissible upper mean is proved explicitly.
+One threshold precedes all lengths, real prime cutoffs and families.
+Companion T12.2 is complete; coverage is 56/167, with 52 confirmed
+improvements. This is P1-MATH-0052. The separate unnumbered cutoff
+asymptotic and eventual K<=L/4 range remain open. See
+[alignment](LARGE_BOUNDARY_TAIL_ALIGNMENT.md).
+
+The full build passed (9,545 jobs), the actual axiom audit passed for
+all 3,855 declarations, and Lean checked all 1,570 distinct
+coverage/finding names. Only propext, Classical.choice and Quot.sound
+occur; original manuscript bytes are unchanged.
