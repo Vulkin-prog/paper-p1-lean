@@ -763,3 +763,6 @@ names were checked directly by Lean. Coverage remains 48 / 167, with
 39 confirmed improvements. No new Paper C port or external premise is
 added. Original source bytes remain unchanged; no Palomar registration
 is made. Ubuntu root free space is 18.09 GiB.
+
+Validated uniform residual checkpoint for T1.9 and P1-MATH-0039:
+[df34686b343f5297c181e6150e21834acc335ad8](https://github.com/Vulkin-prog/paper-p1-lean/commit/df34686b343f5297c181e6150e21834acc335ad8).

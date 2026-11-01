@@ -1498,3 +1498,6 @@ theorem/lemma declarations passed the actual axiom audit with only
 coverage/finding names were checked directly by Lean. Coverage remains
 48 / 167, with 39 confirmed improvements. Original manuscript bytes
 are preserved; no manuscript revision or Palomar registration is made.
+
+Validated uniform residual checkpoint for T1.9 and P1-MATH-0039:
+[df34686b343f5297c181e6150e21834acc335ad8](https://github.com/Vulkin-prog/paper-p1-lean/commit/df34686b343f5297c181e6150e21834acc335ad8).

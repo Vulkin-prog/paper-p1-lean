@@ -92,3 +92,6 @@ bridge, endpoint exceptions and old-information extension are not yet
 closed. All three numbered statements remain in progress. No new Paper C
 port, external mathematical assumption, manuscript revision or Palomar
 registration is introduced.
+
+Validated uniform residual checkpoint for T1.9 and P1-MATH-0039:
+[df34686b343f5297c181e6150e21834acc335ad8](https://github.com/Vulkin-prog/paper-p1-lean/commit/df34686b343f5297c181e6150e21834acc335ad8).

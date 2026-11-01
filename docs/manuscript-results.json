@@ -1678,7 +1678,8 @@
       "mathematical_changes": [
         "P1-MATH-0039"
       ],
-      "notes": "The actual normalized full value kernel is uniformly o(B) for all heights b<=B^3. The full pair deficiency, including internal local defects, is <=(u-1)+epsilon*B and <=L/b+epsilon*B for every fixed epsilon>0 with a common critical-band threshold. One exact unit suffices; separation and affine compatibility are not required for these assertions. The actual intersection rank is also bounded. The final fixed-height O(B/log B) assertion with an enlarged prime cutoff remains open, so T1.9 is not counted complete. See docs/ALIGNED_RESIDUAL_RANK_ALIGNMENT.md."
+      "notes": "The actual normalized full value kernel is uniformly o(B) for all heights b<=B^3. The full pair deficiency, including internal local defects, is <=(u-1)+epsilon*B and <=L/b+epsilon*B for every fixed epsilon>0 with a common critical-band threshold. One exact unit suffices; separation and affine compatibility are not required for these assertions. The actual intersection rank is also bounded. The final fixed-height O(B/log B) assertion with an enlarged prime cutoff remains open, so T1.9 is not counted complete. See docs/ALIGNED_RESIDUAL_RANK_ALIGNMENT.md.",
+      "validation_commit": "df34686b343f5297c181e6150e21834acc335ad8"
     },
     {
       "label": "p1:arith:asymmetric",
@@ -1747,7 +1748,8 @@
       "validation_history": [
         "84c4c9a4016ce9f1c4ab9f7828675f3495eced85",
         "4212bf9ec45186af0f1ce85ed9a6fea00542775e"
-      ]
+      ],
+      "validation_commit": "df34686b343f5297c181e6150e21834acc335ad8"
     },
     {
       "label": "p1:arith:fixed-homogeneous-seeds",
@@ -2088,7 +2090,8 @@
         "b9ff1b2874b76ba8fe97e314db236980b2fe6e13",
         "84c4c9a4016ce9f1c4ab9f7828675f3495eced85",
         "4212bf9ec45186af0f1ce85ed9a6fea00542775e"
-      ]
+      ],
+      "validation_commit": "df34686b343f5297c181e6150e21834acc335ad8"
     },
     {
       "label": "p1:arith:fixed-channel-palm",
