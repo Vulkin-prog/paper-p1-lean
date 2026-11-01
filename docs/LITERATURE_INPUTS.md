@@ -20,6 +20,26 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Fixed-window exposure and full-vector independence
+
+Stable ID: `P1-ARITH-FIXED-WINDOW-BRANCHING`. Status: **original windows
+proved**; T1.15 is **in progress** pending its generalized-window clause.
+
+- The entire actual new relative vector has its fair product law and
+  Mathlib `IndepFun` from all old raw values whenever its supported-value
+  count is at most one. Every conditional word mass and the literal
+  joint pushforward are proved; unrealizable old vectors have zero mass.
+- Finite prime-cardinality and positive-integer reciprocal-half-power
+  bounds prove the source explicit rounded exceptional estimate. A
+  smaller deterministic set removes the contact term and halves the
+  pool coefficient, as recorded in P1-MATH-0030. The actual critical
+  prime-pool count proves the uniform fixed-j exponent.
+- No independence, conditional word law, prime-cardinality, Euler or
+  exceptional-count estimate is assumed. No additional Paper C source or
+  unproved literature statement is introduced. Fixed dilations, subsets
+  and enlarged-window variants remain open at this checkpoint. See
+  [alignment](FIXED_BRANCHING_ALIGNMENT.md).
+
 ## Conditional rank after old raw observations
 
 Stable ID: `P1-ARITH-CONDITIONAL-RANK`. Status: **proved**, complete T21.2.

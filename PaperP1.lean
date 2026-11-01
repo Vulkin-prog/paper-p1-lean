@@ -187,3 +187,8 @@ public import PaperP1.Asymptotics.LogSquaredPrimePool
 public import PaperP1.Asymptotics.ConditionalPoolTerm
 public import PaperP1.Asymptotics.ConditionalPoolLower
 public import PaperP1.Asymptotics.ConditionalRankTheorem
+public import PaperP1.Arithmetic.PrimeSetEuler
+public import PaperP1.Arithmetic.OldPrimeCardinality
+public import PaperP1.Arithmetic.BranchingExceptional
+public import PaperP1.Model.ConditionalRelativeBits
+public import PaperP1.Asymptotics.FixedWindowBranching

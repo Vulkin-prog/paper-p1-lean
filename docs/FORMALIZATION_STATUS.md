@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **2687 audited theorem/lemma declarations**. This
+- The project currently has **2713 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -436,6 +436,14 @@ Neither document is fully formalized.
   both sides of the final N^(1/2-delta+o(1)) scale. One threshold precedes
   all critical lengths, old-window choices and realizable old vectors. See
   [alignment](CONDITIONAL_RANK_ALIGNMENT.md).
+- Companion T1.15 is in progress. Original consecutive windows have the
+  complete fair relative-vector law and Mathlib independence from all
+  old raw values, every conditional word probability, the literal rounded
+  exceptional bound and its uniform fixed-j exponent. A constructed
+  smaller exception set removes the separate contact term and halves
+  the pool coefficient. Its fixed-dilation, subset and enlarged-window
+  variants remain open, so no numbered coverage is added. See
+  [alignment](FIXED_BRANCHING_ALIGNMENT.md).
 - Mathematical improvements confirmed: `P1-MATH-0001`, weaker ambient algebra
   assumptions for Lemma 5.1; `P1-MATH-0002`, an entirely algebraic proof of
   companion T1.1 with its original constant; `P1-MATH-0003`, weaker cutoff
@@ -474,7 +482,9 @@ Neither document is fully formalized.
   `P1-MATH-0028`, the factor-two positive-core improvement and its
   heterogeneous private-rank profile;
   `P1-MATH-0029`, the sharper incidence-slope coefficient in the finite
-  conditional-mean pool budget.
+  conditional-mean pool budget;
+  `P1-MATH-0030`, the smaller deterministic original-window exception set,
+  with no separate contact term and half the pool coefficient.
   No error in an original
   conclusion is asserted.
 - Palomar registrations: none; preparation only.

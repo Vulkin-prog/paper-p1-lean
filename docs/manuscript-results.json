@@ -1665,11 +1665,32 @@
       "source": "companion_sections/arithmetic_appendix.tex",
       "line": 1075,
       "sha256": "a92935eea4e5bf50e484074d857575c10136d376340ccbfe4cc24180ff9d3f97",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.FixedWindowBranching.original_windows_critical",
+        "PaperP1.FixedWindowBranching.finite_source_bound",
+        "PaperP1.FixedWindowBranching.finite_stronger",
+        "PaperP1.FixedWindowBranching.badStarts_card_critical",
+        "PaperP1.ConditionalRelativeBits.map_joint_eq_fair_prod_old",
+        "PaperP1.ConditionalRelativeBits.map_new_eq_fair",
+        "PaperP1.ConditionalRelativeBits.independent_of_old",
+        "PaperP1.ConditionalRelativeBits.conditionalWordProbability_nominal",
+        "PaperP1.BranchingExceptional.retained_card_le_one",
+        "PaperP1.BranchingExceptional.twice_badStarts_card_le",
+        "PaperP1.BranchingExceptional.badStarts_card_half",
+        "PaperP1.BranchingExceptional.badStarts_card_explicit",
+        "PaperP1.OldPrimeCardinality.raw_pool_card_le",
+        "PaperP1.PrimeSetEuler.sum_neg_half_le",
+        "PaperP1.PrimeSetEuler.euler_half_le",
+        "PaperP1.PrimeSetEuler.naturalValues_card_le_sqrt_exp"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-FIXED-WINDOW-BRANCHING"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0030"
+      ],
+      "notes": "Original consecutive windows are proved with the actual full relative-vector law, Mathlib IndepFun from the entire old raw vector, all conditional word probabilities, the literal source rounded-prime exceptional bound, and the uniform fixed-j N^(1/2+epsilon) count. The actual deterministic exception set contains only windows with at least two old-pool-supported values; no separate contact deletion is needed. Incidence counting improves its finite bound to (B/2)*sqrt(3N)*exp(2sqrt(m_jN)), removing the source contact term and halving the pool coefficient. Finite prime-cardinality and Euler estimates are proved. The final extension to fixed dilations, subsets and fixed enlarged logarithmic windows remains OPEN, so T1.15 is not counted as proved. No independence, conditional-law, Euler, prime-cardinality or exception estimate is assumed. See FIXED_BRANCHING_ALIGNMENT.md."
     },
     {
       "label": "p1:arith:ternary-budget",

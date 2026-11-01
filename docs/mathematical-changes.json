@@ -989,6 +989,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "dd3755df492b2fab0b50515d6b3b1dfc75014e3d"
+    },
+    {
+      "id": "P1-MATH-0030",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "companion",
+        "label": "p1:arith:fixed-branching",
+        "number": "T1.15",
+        "page": 17,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 1075,
+        "version": "P1 V1.6",
+        "statement_sha256": "a92935eea4e5bf50e484074d857575c10136d376340ccbfe4cc24180ff9d3f97"
+      },
+      "original_assumption": "The original-window exceptional bound in T1.15 is j*(2L+1)+B*sqrt(3N)*exp(2sqrt(m_jN)), after deleting contacts and windows containing at least two old-pool-supported values.",
+      "finding": "For the original consecutive windows, the deterministic exception set need contain only starts with at least two old-pool-supported values. The actual conditional relative kernel vanishes whenever there is at most one such value, regardless of contact. The entire new relative vector is fair and independent of every old raw value under the original infinite prime-sign measure. Twice the number of exceptional starts is at most B*card(poolValues), yielding the stronger bound (B/2)*sqrt(3N)*exp(2sqrt(m_jN)), with no separate j*(2L+1) term. The literal source bound and uniform fixed-j exponent remain proved.",
+      "evidence": [
+        "PaperP1.BranchingExceptional.twice_badStarts_card_le",
+        "PaperP1.BranchingExceptional.badStarts_card_explicit",
+        "PaperP1.ConditionalRelativeBits.map_joint_eq_fair_prod_old",
+        "PaperP1.ConditionalRelativeBits.independent_of_old",
+        "PaperP1.FixedWindowBranching.finite_stronger",
+        "PaperP1.FixedWindowBranching.original_windows_critical"
+      ],
+      "proposed_revision": "For the original-window branching statement, use the deterministic set of starts containing at least two pool-supported values, omit a separate contact deletion and replace the pool coefficient B by B/2. Include the full-vector conditional argument and the incidence count.",
+      "impact": "Removes an unnecessary finite contact term and halves the finite pool coefficient in the proved original-window scope. It asserts exact independence of the relative vector, not independence of the raw new values. No optimality or estimate for all arithmetic dependencies is claimed. Fixed dilations, subsets and enlarged-window variants remain open at this checkpoint, so T1.15 is not counted as complete.",
+      "validation": "Full Lean v4.36.0-rc2 build (9071 jobs) and actual axiom audit of all 2713 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 618 distinct coverage/finding names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

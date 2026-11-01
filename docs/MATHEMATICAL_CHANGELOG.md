@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**29 mathematical improvements are confirmed; no error in a manuscript conclusion
+**30 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -1056,3 +1056,34 @@ is made. The earlier finite validation remains recorded above.
 
 Validated complete implementation of companion T21.2:
 [64d651e45f660ed5151a11586ffd918c0878325d](https://github.com/Vulkin-prog/paper-p1-lean/commit/64d651e45f660ed5151a11586ffd918c0878325d).
+
+## P1-MATH-0030 — A smaller deterministic branching exception set
+
+- Location: the original-window exceptional estimate in companion
+  Proposition T1.15, page 17, `p1:arith:fixed-branching`,
+  `companion_sections/arithmetic_appendix.tex:1075`.
+- Original bound: j*(2L+1)+B*sqrt(3N)*exp(2sqrt(m_{j,N})).
+- Improvement: the constructed exceptional set need contain only
+  windows with at least two old-pool-supported values. It has cardinality
+  at most (B/2)*sqrt(3N)*exp(2sqrt(m_{j,N})). This removes the separate
+  contact term and halves the pool coefficient in the proved original
+  consecutive-window scope.
+- Evidence: `BranchingExceptional.twice_badStarts_card_le`,
+  `badStarts_card_explicit`, `ConditionalRelativeBits.map_joint_eq_fair_prod_old`,
+  `independent_of_old`, `FixedWindowBranching.finite_stronger` and
+  `original_windows_critical`.
+- Reason: at most one supported value makes the relative conditional
+  kernel zero even in a contact. The whole new relative vector is fair
+  and independent of every old raw value under the original infinite
+  measure. Every exceptional window charges at least two incidences to
+  the budget B*card(poolValues).
+- Suggested revision: use this deterministic criterion and its finite
+  bound, with the full-vector conditional-law argument. No optimality
+  or estimate for all arithmetic dependencies is asserted. Fixed dilation,
+  subset and enlarged-window variants remain open at this checkpoint;
+  T1.15 is therefore not yet counted as complete.
+- Status: confirmed by the full build (9,071 jobs) and actual audit of
+  all 2,713 theorem/lemma declarations, with only `propext`,
+  `Classical.choice` and `Quot.sound`. All 618 distinct coverage/finding
+  names were checked directly by Lean. Not integrated into a new
+  manuscript version. See [alignment](FIXED_BRANCHING_ALIGNMENT.md).
