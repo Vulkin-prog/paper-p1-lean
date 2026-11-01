@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3525 audited theorem/lemma declarations**. This
+- The project currently has **3538 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1233,3 +1233,38 @@ free space is 17.87 GiB.
 Validated actual normalized exceptional-host checkpoint (9,379 build jobs;
 3,525 audited declarations; 1,240 directly checked coverage/finding names):
 [bd95627543139b4690c1311ce84f622d8ce7a221](https://github.com/Vulkin-prog/paper-p1-lean/commit/bd95627543139b4690c1311ce84f622d8ce7a221).
+
+## Actual retained channel mass and direct bad-term deletion
+
+`PrivateChannelSources` defines the actual cutoff-private source family
+with at least two exact units, retains probability-zero pairs and proves
+its deterministic order/separation and disjoint symmetric orientations.
+Its literal sum of actual joint probabilities is twice the forward mass.
+The actual private covariance formula gives its exact p^2 baseline and
+signed unit contribution.
+
+`PrivateChannelRemoval` partitions the full dyadic rational-unit sum
+into the retained and bad terms, using zero/one-unit vanishing. The bad
+sum has absolute value <=#badSources*2^(B/b), without a privacy or complete
+residual-nullity premise. `PrivateChannelMassBound` proves the exact mass
+identity and the finite error
+
+    |M-p^2*N*w*S| <= p^2*(6B*U+2B^2*N+2*#badSources*2^(B/b)).
+
+This is P1-MATH-0045, a verified simplification of the fixed-channel mass
+route: bad rational-unit terms can be deleted before applying the actual
+private probability identity. It is unnecessary to estimate the complete
+nullity of defective pairs for this finite reduction. The proved coarser
+B^2*N baseline is retained at its actual strength. See the
+[actual mass alignment](PRIVATE_CHANNEL_MASS_ALIGNMENT.md).
+
+There are now **45 confirmed improvements**. Coverage stays **52 / 167**:
+the critical-scale comparison, unsigned channel-sum bound and positive
+fixed-channel phase equivalent remain unfinished for T2.5, as do the
+other arithmetic regimes of the complete main pair profile.
+The full build passed (9,385 jobs), all 3,538 theorem/lemma declarations
+passed the actual axiom audit, and all 1,253 coverage/finding names were
+checked directly by Lean. Only propext, Classical.choice and Quot.sound
+occur. No new literature input, Paper C port, manuscript revision or
+Palomar registration is introduced. Original sources are preserved.
+Ubuntu root free space is 17.86 GiB.

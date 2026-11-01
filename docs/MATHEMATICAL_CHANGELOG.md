@@ -2060,3 +2060,44 @@ input, Paper C port, manuscript revision or Palomar registration is introduced.
 Validated actual normalized exceptional-host checkpoint (9,379 build jobs;
 3,525 audited declarations; 1,240 directly checked coverage/finding names):
 [bd95627543139b4690c1311ce84f622d8ce7a221](https://github.com/Vulkin-prog/paper-p1-lean/commit/bd95627543139b4690c1311ce84f622d8ce7a221).
+
+## P1-MATH-0045 — Finite actual channel mass without defective-pair residual nullity
+
+- Source: companion T2.5, page 22, `p1:arith:fixed-channel-mass`,
+  `companion_sections/supplemental_arithmetic.tex:164`, original hash
+  `3f277bcb49753b0c57c75eaa012cdfc127c5f3253a66fb6fe0c40707b4e533e4`.
+- Original removal step: use the defective host count together with a
+  complete-pair nullity estimate L/b+o(L), then add a p^2 baseline using
+  O(NB) possible source partners.
+- Improvement: define the actual cutoff-private source family, retain
+  probability-zero pairs, and prove its actual symmetric joint mass.
+  Partition the full rational-unit sum before applying the private
+  covariance identity. Its deleted terms have direct coefficient-space
+  weight <=2^(B/b), without privacy or complete residual nullity.
+- Exact formula: with F the full forward unit sum, V its bad-source sum
+  and G the retained forward source count, M=p^2*(2F+2G-2V).
+- Explicit finite error:
+
+      |M-p^2*N*w*S| <= p^2*(6B*U+2B^2*N+2*#badSources*2^(B/b)).
+
+- Scope: N>=2, L>0, positive reduced a<b<2a and N>(a+b)B; the integer
+  cutoff H is arbitrary in this finite bound. The later square-root
+  exceptional count retains the fixed-channel range 2bB<=H<=DB.
+- Evidence: `PrivateChannelSources.mem_goodSources`, `good_sources_separated`,
+  `orientation_disjoint`, `channel_mass_twice_forward`, `forward_mass_formula`,
+  `PrivateChannelRemoval.signed_sum_partition`, `bad_signed_sum_bound`,
+  `PrivateChannelMassBound.mass_exact_decomposition` and `finite_mass_error`.
+- Suggested revision: use exact rational-unit deletion and its own
+  cardinality bound in T2.5. Keep the residual-rank estimates for the
+  other regimes that need them. Record the available B^2*N baseline
+  honestly; the sharper NB intermediate count is not proved here.
+
+This is a verified finite probability-mass reduction. The unsigned-sum
+bound, critical-scale error comparison and positive phase equivalent
+remain open, so T2.5 is not newly counted complete. Main 3.3 also keeps
+its other regimes unfinished. Coverage stays 52/167 with 45 confirmed
+improvements. The full build passed (9,385 jobs), all 3,538 theorem/lemma
+declarations passed the actual axiom audit, and all 1,253 coverage/finding
+names were checked directly. Only propext, Classical.choice and Quot.sound
+occur. No new literature input, Paper C port, manuscript revision or
+Palomar registration is introduced.

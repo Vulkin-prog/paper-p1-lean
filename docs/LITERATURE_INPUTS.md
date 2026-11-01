@@ -1084,3 +1084,12 @@ privacy-free rational-unit weights and source geometry. No residual-rank
 or external host-count premise is introduced. The final retained mass
 calculation and phase comparison remain unfinished; no literature input
 or Paper C port is added.
+
+## Actual finite private-channel mass reduction
+
+`PrivateChannelSources`, `PrivateChannelRemoval` and
+`PrivateChannelMassBound` combine the already proved actual probability,
+dyadic aggregate, source count and rational-unit weight identities. Their
+finite mass error uses no complete residual-nullity estimate for defective
+pairs and no external input. The critical-scale and phase comparisons
+remain unfinished. No Paper C port is added.

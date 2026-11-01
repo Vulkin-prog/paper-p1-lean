@@ -95,13 +95,13 @@ compatibility. The existing source-order result gives x<y as well.
 
 ## Remaining mass calculation
 
-The actual private-pair probability formula and the complete
-[dyadic signed unit aggregate](DYADIC_UNIT_FOURIER_ALIGNMENT.md) are
-already proved. It remains to subtract the bad rational-unit terms,
-add the p^2 baseline on the retained private dependent family, transport
-the resulting finite errors to the critical scale, and prove the
-positive fixed-channel phase equivalent. The full pair profile also
-has its other arithmetic regimes unfinished.
+The actual private-pair probability formula and complete dyadic signed
+unit aggregate are now combined with these estimates. The subsequent
+[actual mass reduction](PRIVATE_CHANNEL_MASS_ALIGNMENT.md) proves exact
+bad-term deletion, the literal baseline and an explicit finite mass error.
+The critical-scale comparison and positive fixed-channel phase equivalent
+remain unfinished. The full pair profile also has its other arithmetic
+regimes unfinished.
 
 No new literature premise, Paper C port, manuscript revision or Palomar
 registration is introduced. Original manuscript bytes are unchanged.

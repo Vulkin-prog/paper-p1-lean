@@ -345,3 +345,6 @@ public import PaperP1.Arithmetic.NormalizedDefectSources
 public import PaperP1.Asymptotics.NormalizedDefectSourceCount
 public import PaperP1.Model.UnitFourierWeight
 public import PaperP1.Arithmetic.FixedChannelSourceGeometry
+public import PaperP1.Model.PrivateChannelSources
+public import PaperP1.Model.PrivateChannelRemoval
+public import PaperP1.Model.PrivateChannelMassBound

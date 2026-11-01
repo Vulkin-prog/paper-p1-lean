@@ -309,15 +309,29 @@
         "PaperP1.FixedChannelSourceGeometry.first_projection_injective",
         "PaperP1.FixedChannelSourceGeometry.source_pairs_card",
         "PaperP1.FixedChannelSourceGeometry.unit_sources_card",
-        "PaperP1.FixedChannelSourceGeometry.source_separated"
+        "PaperP1.FixedChannelSourceGeometry.source_separated",
+        "PaperP1.PrivateChannelSources.mem_goodSources",
+        "PaperP1.PrivateChannelSources.good_sources_subset_unitSources",
+        "PaperP1.PrivateChannelSources.good_sources_card",
+        "PaperP1.PrivateChannelSources.good_sources_order",
+        "PaperP1.PrivateChannelSources.good_sources_separated",
+        "PaperP1.PrivateChannelSources.orientation_disjoint",
+        "PaperP1.PrivateChannelSources.channel_mass_twice_forward",
+        "PaperP1.PrivateChannelSources.forward_mass_formula",
+        "PaperP1.PrivateChannelRemoval.signed_sum_partition",
+        "PaperP1.PrivateChannelRemoval.bad_signed_sum_bound",
+        "PaperP1.PrivateChannelMassBound.mass_exact_decomposition",
+        "PaperP1.PrivateChannelMassBound.three_term_bound",
+        "PaperP1.PrivateChannelMassBound.finite_mass_error"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
         "P1-MATH-0043",
         "P1-MATH-0044",
-        "P1-MATH-0035"
+        "P1-MATH-0035",
+        "P1-MATH-0045"
       ],
-      "notes": "The private covariance identity, complete actual unit-word bijection and global dyadic signed unit aggregate are proved, with main term N*w*S and error <=6B*U uniformly through reduced height B^3. Exceptional normalized source counting is now also actual: for H>=2bB, privacy above H is equivalent to nondefectivity of every distinct normalized value. The bad host count is <=2B^3 times the positive H-defect count below b(2N+L), hence <=N^(1/2+epsilon) for fixed a,b,D and 2bB<=H<=DB in the critical band. Rational-unit signed weights are bounded without privacy by 2^(B/b); zero/one-unit sums vanish. Literal fixed-index source counts are <=N, all unit-host counts are <=B^2*N, and sources are separated once N>(a+b)B. Remaining: combine these proved counts and weights into the actual retained private-channel mass error, add its p^2 baseline, and prove the full asymptotics and phase equivalents. No numbered result is newly complete. See docs/NORMALIZED_DEFECT_HOSTS_ALIGNMENT.md and earlier bridges.",
+      "notes": "The actual retained private channel family is now explicit, with zero-probability pairs retained, deterministic source separation and disjoint symmetric orientations. Its exact actual joint-mass formula is proved. Exact deletion of bad rational-unit terms and the baseline give the finite error |M-p^2*N*w*S|<=p^2*(6B*U+2B^2*N+2*#badSources*2^(B/b)). The exceptional host count is <=N^(1/2+epsilon) for each fixed channel and H in [2bB,DB]; rational-unit weights need no privacy or complete residual-rank estimate. All previous actual coefficient, word and dyadic bridges are proved. Remaining: bound U, compare the finite errors on the critical scale, and prove the positive fixed-channel phase equivalent; the full main pair profile also has other regimes unfinished. Article 3.3 and companion T2.5 remain in progress. See docs/PRIVATE_CHANNEL_MASS_ALIGNMENT.md.",
       "validation_commit": "bd95627543139b4690c1311ce84f622d8ce7a221",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
@@ -2520,15 +2534,29 @@
         "PaperP1.FixedChannelSourceGeometry.first_projection_injective",
         "PaperP1.FixedChannelSourceGeometry.source_pairs_card",
         "PaperP1.FixedChannelSourceGeometry.unit_sources_card",
-        "PaperP1.FixedChannelSourceGeometry.source_separated"
+        "PaperP1.FixedChannelSourceGeometry.source_separated",
+        "PaperP1.PrivateChannelSources.mem_goodSources",
+        "PaperP1.PrivateChannelSources.good_sources_subset_unitSources",
+        "PaperP1.PrivateChannelSources.good_sources_card",
+        "PaperP1.PrivateChannelSources.good_sources_order",
+        "PaperP1.PrivateChannelSources.good_sources_separated",
+        "PaperP1.PrivateChannelSources.orientation_disjoint",
+        "PaperP1.PrivateChannelSources.channel_mass_twice_forward",
+        "PaperP1.PrivateChannelSources.forward_mass_formula",
+        "PaperP1.PrivateChannelRemoval.signed_sum_partition",
+        "PaperP1.PrivateChannelRemoval.bad_signed_sum_bound",
+        "PaperP1.PrivateChannelMassBound.mass_exact_decomposition",
+        "PaperP1.PrivateChannelMassBound.three_term_bound",
+        "PaperP1.PrivateChannelMassBound.finite_mass_error"
       ],
       "literature_inputs": [],
       "mathematical_changes": [
         "P1-MATH-0043",
         "P1-MATH-0044",
-        "P1-MATH-0035"
+        "P1-MATH-0035",
+        "P1-MATH-0045"
       ],
-      "notes": "The private covariance identity, complete actual unit-word bijection and global dyadic signed unit aggregate are proved, with main term N*w*S and error <=6B*U uniformly through reduced height B^3. Exceptional normalized source counting is now also actual: for H>=2bB, privacy above H is equivalent to nondefectivity of every distinct normalized value. The bad host count is <=2B^3 times the positive H-defect count below b(2N+L), hence <=N^(1/2+epsilon) for fixed a,b,D and 2bB<=H<=DB in the critical band. Rational-unit signed weights are bounded without privacy by 2^(B/b); zero/one-unit sums vanish. Literal fixed-index source counts are <=N, all unit-host counts are <=B^2*N, and sources are separated once N>(a+b)B. Remaining: combine these proved counts and weights into the actual retained private-channel mass error, add its p^2 baseline, and prove the full asymptotics and phase equivalents. No numbered result is newly complete. See docs/NORMALIZED_DEFECT_HOSTS_ALIGNMENT.md and earlier bridges.",
+      "notes": "The actual retained private channel family is now explicit, with zero-probability pairs retained, deterministic source separation and disjoint symmetric orientations. Its exact actual joint-mass formula is proved. Exact deletion of bad rational-unit terms and the baseline give the finite error |M-p^2*N*w*S|<=p^2*(6B*U+2B^2*N+2*#badSources*2^(B/b)). The exceptional host count is <=N^(1/2+epsilon) for each fixed channel and H in [2bB,DB]; rational-unit weights need no privacy or complete residual-rank estimate. All previous actual coefficient, word and dyadic bridges are proved. Remaining: bound U, compare the finite errors on the critical scale, and prove the positive fixed-channel phase equivalent; the full main pair profile also has other regimes unfinished. Article 3.3 and companion T2.5 remain in progress. See docs/PRIVATE_CHANNEL_MASS_ALIGNMENT.md.",
       "validation_commit": "bd95627543139b4690c1311ce84f622d8ce7a221",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
