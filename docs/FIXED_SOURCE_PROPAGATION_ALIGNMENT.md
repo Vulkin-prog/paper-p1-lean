@@ -1,11 +1,10 @@
-# Main 6.3 — Conditional sums and propagation
+# Main 6.3 — Complete conditional sums, propagation and exceptional mass
 
 Source: main Proposition 6.3, page 22, `p1:fixed:propagation`,
 `main_sections/fixed_moments.tex:105`, statement SHA-256
 `a053ebcb00eb0a8b133d02a11c330ec2119e4122cb9304305b1a7b8e4858a659`.
-The conditional-sum and actual extension-family propagation assertions
-are **proved**. The full numbered result remains **in progress** for
-the local-defect/contact seed conclusion.
+The complete numbered result is **proved**, including the final
+local-defect/contact positive-mass conclusion at every fixed order.
 
 ## Actual conditional affine probabilities
 
@@ -90,12 +89,62 @@ the prescribed start masses with the original infinite run moments.
 all-homogeneous specialization is already included by the arbitrary
 common centre prescription. There is no assumed propagation estimate.
 
-## Remaining full-statement obligation
+## Actual local-defect and exact-contact seed masses
 
-Supply the actual local-defect and compatible-contact seed mass bounds,
-and propagate them to all positions in fixed-order tuples. No seed
-mass conclusion is currently counted complete. Coverage remains 70/167
-(main 24/73, companion 46/94), with 69 confirmed independent findings.
+`SingletonSeedMass` constructs the literal one-coordinate irregular
+seed family and identifies its mass with the actual affine-window
+atoms. `IrregularSeedMass` combines the proved local-rank and
+irregular-population bounds to give O(N^(-1+epsilon)) seed mass,
+uniformly for arbitrary affine prescriptions.
+
+`ContactWindowSpan.value_union` identifies the two physical intervals
+at exact contact. They share their boundary value. The complete finite
+even-image union theorem proves
+
+    S(x,L) + S(x+L,L) = S(x,2L).
+
+`PrescribedTupleRank` identifies the actual prescribed tuple atom with
+zero or the inverse power of two of its total effective rank. Thus
+`ContactPairMass` bounds each exact-contact atom using the actual local
+relation code of the union interval. Restriction to actual defective
+positions bounds that relation rank. `ContactDefectBudget` applies
+the complete local count at cutoff 2L+1 and diameter 2L.
+`LogarithmicDefectPower` proves its binary factor is N^epsilon after
+one uniform threshold. `ContactSeedMass` gives point mass
+O(N^(-2+epsilon)) and total forward contact mass O(N^(-1+epsilon)).
+`ExactContactSeeds` constructs the actual two-coordinate seed family
+inside I_N and proves its coordinates, membership and mass bounds.
+
+## All seed positions and the full original exceptional population
+
+`TuplePositions.allPositions` is a literal finite permutation cover of
+the actual distinct extension family. It costs at most r!, with a
+proved weighted sum bound. The finite permutation extension theorem
+constructs a permutation for every injected seed position.
+`PrescribedTuplePositions.joint_permute` proves invariance of actual
+joint mass. `PositionedMassPropagation` and `PositionedSeedBounds`
+therefore propagate both actual seed families to every tuple position.
+
+`BadSeedFamilies` defines the literal ordered-distinct populations
+containing a local rank defect or a contact of distance at most L.
+Strict contacts have zero mass for the original run prescriptions,
+by deterministic run separation. Every positive contact therefore
+has distance exactly L and contains an injected actual contact seed.
+Filtering out zero-mass tuples preserves the full contact mass. This
+strict-contact exclusion is not asserted for homogeneous overlapping
+window prescriptions. Their conditional and propagation results
+remain valid separately.
+
+`FixedExceptionalMass` proves the local-defect and full contact bounds
+for the actual finite populations, then their union. It includes the
+small orders where a contact cannot exist. `bad_original_mass` is
+stated directly with the original infinite joint run moments.
+`FixedSourcePropagationTheorem.main_6_3` bundles all three source
+assertions after one common threshold, with r=s+k. The order k and
+all constants are fixed before N, L, prescriptions and seed families.
+
+Coverage is 71/167 (main 25/73, companion 46/94), with 69 confirmed
+independent findings. Main 6.4 and its moment expansion remain separate.
 No external assumption, new Paper C code, original manuscript edit or
 Palomar registration is introduced.
 
@@ -108,3 +157,5 @@ Validated conditional-sum proof checkpoint: [d61129a4481b626b35958ee0329ac668362
 Fixed-order propagation verification: Lean v4.36.0-rc2 full build passed (10011 jobs); actual axiom audit passed for all 4929 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2644 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.55 GiB. The conditional-sum and actual ordered-distinct extension-family propagation assertions of main 6.3 are complete, including an exact bridge to original infinite joint moments. The final local-defect/contact seed conclusion remains open; main 6.3 stays in progress. Coverage and confirmed independent findings remain 70/167 and 69. No propagation-mass premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.
 
 Validated actual propagation proof checkpoint: [b9e411cecc036eaa1e87da5a2f981792d9aadc76](https://github.com/Vulkin-prog/paper-p1-lean/commit/b9e411cecc036eaa1e87da5a2f981792d9aadc76).
+
+Complete main 6.3 verification: Lean v4.36.0-rc2 full build passed (10043 jobs); actual axiom audit passed for all 4978 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2693 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.50 GiB. The full conditional-sum, actual ordered-distinct propagation and all-position local-defect/contact mass conclusions are proved, with original infinite joint moments and one common threshold. Coverage is 71/167 (main 25/73, companion 46/94); confirmed independent findings stay 69. No conditional-sum, propagation, contact-rank or seed-mass premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.

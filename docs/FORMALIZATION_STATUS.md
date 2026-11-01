@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 2 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **70 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 9.1, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorem 10.1 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Proposition T1.14.
+- Numbered results completed: **71 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 6.3, 9.1, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorem 10.1 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Proposition T1.14.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4929 audited theorem/lemma declarations**. This
+- The project currently has **4978 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2345,3 +2345,26 @@ Coverage and confirmed independent findings remain 70/167 and 69.
 See [exact current scope](FIXED_SOURCE_PROPAGATION_ALIGNMENT.md).
 
 Fixed-order propagation verification: Lean v4.36.0-rc2 full build passed (10011 jobs); actual axiom audit passed for all 4929 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2644 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.55 GiB. The conditional-sum and actual ordered-distinct extension-family propagation assertions of main 6.3 are complete, including an exact bridge to original infinite joint moments. The final local-defect/contact seed conclusion remains open; main 6.3 stays in progress. Coverage and confirmed independent findings remain 70/167 and 69. No propagation-mass premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.
+
+
+## Complete main 6.3, including every exceptional seed position
+
+All three main 6.3 assertions are proved. Local-defect seeds have the
+actual affine mass O(N^(-1+epsilon)). At exact contact the two window
+spaces span the full union interval; its relation rank is at most its
+actual defect count. The uniform local count gives a subpower binary
+relation factor and actual contact-seed mass O(N^(-1+epsilon)). Strict
+contacts have zero joint mass for original run starts. This exclusion
+is not applied to arbitrary homogeneous overlapping prescriptions.
+
+A literal finite permutation cover places one-coordinate and two-
+coordinate seeds at all positions of ordered distinct tuples, at cost
+at most r!. Actual population membership and injected seeds are proved.
+The completed propagation estimate supplies the final positive mass
+bound. `FixedSourcePropagationTheorem.main_6_3` bundles conditional
+sums, actual propagation and original-model exceptional mass after
+one common threshold. Coverage is 71/167 (main 25/73, companion 46/94);
+confirmed independent findings remain 69. Main 6.4 remains open.
+See [complete alignment](FIXED_SOURCE_PROPAGATION_ALIGNMENT.md).
+
+Complete main 6.3 verification: Lean v4.36.0-rc2 full build passed (10043 jobs); actual axiom audit passed for all 4978 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2693 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.50 GiB. The full conditional-sum, actual ordered-distinct propagation and all-position local-defect/contact mass conclusions are proved, with original infinite joint moments and one common threshold. Coverage is 71/167 (main 25/73, companion 46/94); confirmed independent findings stay 69. No conditional-sum, propagation, contact-rank or seed-mass premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.

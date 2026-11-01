@@ -789,3 +789,20 @@ public import PaperP1.Asymptotics.FixedSourceMassStep
 public import PaperP1.Model.TupleMassIteration
 public import PaperP1.Model.PrescribedRunMass
 public import PaperP1.Asymptotics.FixedOrderMassPropagation
+
+public import PaperP1.Arithmetic.ContactWindowSpan
+public import PaperP1.Model.PrescribedTupleRank
+public import PaperP1.Asymptotics.LogarithmicDefectPower
+public import PaperP1.Asymptotics.ContactDefectBudget
+public import PaperP1.Model.ContactPairMass
+public import PaperP1.Asymptotics.ContactSeedMass
+public import PaperP1.Model.SingletonSeedMass
+public import PaperP1.Asymptotics.IrregularSeedMass
+public import PaperP1.Combinatorics.TuplePositions
+public import PaperP1.Model.PrescribedTuplePositions
+public import PaperP1.Arithmetic.ExactContactSeeds
+public import PaperP1.Asymptotics.PositionedMassPropagation
+public import PaperP1.Arithmetic.BadSeedFamilies
+public import PaperP1.Asymptotics.PositionedSeedBounds
+public import PaperP1.Asymptotics.FixedExceptionalMass
+public import PaperP1.Asymptotics.FixedSourcePropagationTheorem

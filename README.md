@@ -4,7 +4,12 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 70 / 167 numbered results proved.**
+**Status: active formalization, 71 / 167 numbered results proved.**
+Main Proposition 6.3 is complete: actual conditional affine sums,
+ordered-distinct extension-family propagation, and the full fixed-order
+local-defect/contact mass bound are proved on the original infinite model.
+Seed placement at every tuple position is included. See
+[the complete propagation alignment](docs/FIXED_SOURCE_PROPAGATION_ALIGNMENT.md).
 Main Proposition 6.2 is now complete: the actual large-rank-loss targets
 are uniformly bounded by N^epsilon after any fixed source tuple, even
 with repeated or overlapping sources. The proof constructs and counts

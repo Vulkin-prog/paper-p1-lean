@@ -3043,3 +3043,17 @@ then bounds every subfamily. These quantifier and scope details are
 traced without counting a new independent finding. The final local-
 defect/contact seed consequence remains open; coverage stays 70/167
 and confirmed findings stay 69. See [alignment](FIXED_SOURCE_PROPAGATION_ALIGNMENT.md).
+
+
+Main 6.3 is fully proved, including its final exceptional-family
+conclusion. At exact contact, an exact span identity replaces a separate
+graph-tree calculation: the two effective spaces span the full union
+window. Its actual defective positions control the relation rank and
+the uniform subpower cost. Actual local and contact seed masses are
+placed at all ordered tuple positions by a finite permutation cover
+with explicit r! cost. Strict-contact incompatibility is used only for
+original run prescriptions. The conditional and propagation assertions
+retain their arbitrary affine and homogeneous scope. These proof and
+scope details are traced without counting a new independent finding.
+Coverage is 71/167 and confirmed findings remain 69. See the
+[complete propagation alignment](FIXED_SOURCE_PROPAGATION_ALIGNMENT.md).

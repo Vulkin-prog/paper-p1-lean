@@ -1797,3 +1797,23 @@ N^epsilon propagation factor. The exact ordered-distinct family is
 filtered and counted, and the prescribed start masses are identified
 with the original infinite joint moments. No extension-population or
 mass bound is an assumed interface. No new external result is used.
+
+
+## Complete actual exceptional-family mass in main 6.3
+
+Stable ID: `P1-PROB-FIXED-EXCEPTIONAL-MASS`. Status: **proved**, closing
+full main 6.3 together with the conditional-sum and propagation inputs.
+
+Actual irregular one-coordinate seed mass follows from the complete
+critical local rigidity and irregular count. Actual exact-contact
+pair rank is the rank of the even square-class space of the union
+interval, by a proved finite-set union identity. Its relation rank
+is bounded by the actual defective coordinates. The complete local
+defect count and uniform logarithm-over-loglog power bound give the
+contact-seed mass. Strict contacts have zero mass for actual run starts.
+An explicit finite permutation cover, injective seed placement and
+proved tuple propagation bound all exceptional ordered-distinct
+families at every fixed order. The actual original infinite joint
+moments are identified exactly. No contact-rank, seed-mass, family-
+count or propagation estimate is assumed. No new external result or
+Paper C port is introduced.
