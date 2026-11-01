@@ -77,9 +77,12 @@ distinct centres, so that the two-element event is represented correctly.
 
 ## Remaining channel work
 
-The signed sum on actual unit coefficients must still be enumerated by
-the canonical gap, placement and endpoint-selected interior words in
-[the weighted host calculation](CHANNEL_WORD_HOSTS_ALIGNMENT.md).
+The signed sum on actual unit coefficients is now enumerated, for each
+fixed pair, by its unique canonical gap, placements and endpoint-selected
+interior word. See the
+[complete local word bijection](SELECTED_UNIT_WORDS_ALIGNMENT.md).
+These actual pair-specific shapes must still be summed over all dyadic
+hosts into [the weighted host calculation](CHANNEL_WORD_HOSTS_ALIGNMENT.md).
 Defective normalized hosts, the baseline p^2 term, and the full uniform
 mass/profile asymptotics and phase equivalents remain unfinished.
 Neither article 3.3 nor companion T2.5 is declared proved.

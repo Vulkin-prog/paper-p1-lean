@@ -1052,3 +1052,13 @@ These finite algebra and probability identities use already proved project
 results and the pinned Mathlib only. There is no new literature premise
 or Paper C port. Full selected-word enumeration and normalization estimates
 for article 3.3 and companion T2.5 remain unfinished.
+
+## Actual canonical unit-word enumeration
+
+`BinaryEvenSelections`, `ExactUnitProgression`, `SelectedUnitExtrema`,
+`ChannelGapWords`, `SelectedUnitWords`, `SelectedUnitWordBijection` and
+`SelectedUnitFourierEnumeration` prove the fixed-pair actual word
+bijection, exact cardinality and predecessor sign enumeration. They use
+finite binary algebra, coprimality, actual window labels and finite
+extrema only. There is no new literature premise or Paper C port. The
+global host aggregation and exceptional-normalization estimates remain open.

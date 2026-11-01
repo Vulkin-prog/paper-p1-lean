@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **3446 audited theorem/lemma declarations**. This
+- The project currently has **3492 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -1126,3 +1126,35 @@ introduced. Ubuntu root free space is 17.93 GiB.
 Validated actual private pair covariance checkpoint (9,347 build jobs;
 3,446 audited declarations; 1,161 directly checked coverage/finding names):
 [c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd](https://github.com/Vulkin-prog/paper-p1-lean/commit/c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd).
+
+## Actual selected-unit word bijection and fixed-pair signed enumeration
+
+`BinaryEvenSelections` identifies actual nonzero even coefficient vectors
+with nonempty even selected subsets. `ExactUnitProgression` derives the
+primitive step (a,b) and constructs every intermediate fitting exact unit.
+`SelectedUnitExtrema` proves unique selected endpoints and a unique
+positive gap d<=L/b, with the literal within-window placements.
+
+`SelectedUnitWordBijection.canonicalEquiv` is an explicit finite bijection
+between these actual subsets and their fitting endpoint-selected words.
+Both injectivity and surjectivity are proved on the actual unit indices.
+`ChannelGapWords` proves the exact A_d cardinality and shows that every
+word at a shape has the same two predecessor placement signs.
+`SelectedUnitFourierEnumeration.signed_unit_enumeration` transports the
+actual signed nonzero even-unit sum to the integer weighted shape sum
+for each fixed pair. The arithmetic enumeration imposes no privacy,
+separation or affine compatibility. Its actual probability use retains
+the private normalized-union hypothesis of the earlier covariance formula.
+See the [local word alignment](SELECTED_UNIT_WORDS_ALIGNMENT.md).
+
+This extends P1-MATH-0043; there remain 44 confirmed improvements.
+Coverage stays **52 / 167**. The global reindexing over actual dyadic
+hosts into the canonical-pattern/source translation sum remains open,
+as do defective normalization removal, baseline correction and the
+full mass/profile estimates and phase equivalents for article 3.3/T2.5.
+The full build passed (9,361 jobs), all 3,492 theorem/lemma declarations
+passed the actual axiom audit, and all 1,207 coverage/finding names were
+checked directly by Lean. Only propext, Classical.choice and Quot.sound
+occur. No new literature input, Paper C port, manuscript revision or
+Palomar registration is introduced. Manuscript bytes remain unchanged.
+Ubuntu root free space is 17.91 GiB.

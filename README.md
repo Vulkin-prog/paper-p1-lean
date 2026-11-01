@@ -36,6 +36,10 @@ The actual private pair covariance is now p^2 times the signed sum of
 nonzero even unit selections, including probability-zero pairs. The
 paired characters are proved to be the literal predecessor signs. See
 the [actual probability bridge](docs/PRIVATE_UNIT_COVARIANCE_ALIGNMENT.md).
+Actual nonzero even unit selections are now bijective with their unique
+endpoint-selected words. Their signed sum at a fixed pair is proved to
+equal the sum of A_d times the two literal placement signs. See the
+[local word enumeration](docs/SELECTED_UNIT_WORDS_ALIGNMENT.md).
 The full pair profile and fixed-channel mass remain in progress. See the
 [finite calculation](docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,

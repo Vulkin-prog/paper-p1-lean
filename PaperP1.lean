@@ -329,3 +329,10 @@ public import PaperP1.Arithmetic.UnitAffineSigns
 public import PaperP1.Affine.PairFourierIntersection
 public import PaperP1.Model.PairSquareClassFourier
 public import PaperP1.Model.PrivateUnitCovariance
+public import PaperP1.Algebra.BinaryEvenSelections
+public import PaperP1.Arithmetic.ExactUnitProgression
+public import PaperP1.Arithmetic.SelectedUnitExtrema
+public import PaperP1.Arithmetic.ChannelGapWords
+public import PaperP1.Arithmetic.SelectedUnitWords
+public import PaperP1.Arithmetic.SelectedUnitWordBijection
+public import PaperP1.Model.SelectedUnitFourierEnumeration

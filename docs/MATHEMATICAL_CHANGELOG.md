@@ -1937,3 +1937,39 @@ manuscript revision or Palomar registration is introduced.
 Validated actual private pair covariance checkpoint (9,347 build jobs;
 3,446 audited declarations; 1,161 directly checked coverage/finding names):
 [c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd](https://github.com/Vulkin-prog/paper-p1-lean/commit/c4d65eee4e0d0efc81a7e16fcc17538546ba5cdd).
+
+## P1-MATH-0043 extended — actual word bijection and fixed-pair signed sum
+
+The formal interpretation of A_d now reaches the actual exact units.
+Nonzero even coefficient vectors correspond to nonempty even subsets.
+Every such subset has unique selected extreme units, a positive primitive
+gap d<=L/b and literal fitting placements. Actual primitive-step geometry
+supplies all intermediate units. Endpoint-selected words reconstruct every
+subset exactly once; injectivity, surjectivity and the coefficient inverse
+are proved separately.
+
+For d>0 there are exactly A_d such words at a fixed shape. Their predecessor
+parities depend only on the first placement in each window. Therefore the
+actual fixed-pair signed unit sum equals the integer finite shape sum of
+A_d times both literal placement signs. This preserves cancellation and
+includes empty/singleton unit families and diameter-L contacts. The
+arithmetic bijection needs neither private coordinates, separation nor
+joint compatibility. Its link to actual probability retains the private
+normalized-union assumption of `PrivateUnitCovariance`.
+
+Evidence: `BinaryEvenSelections.nonemptyEvenEquiv`,
+`ExactUnitProgression.ordered_difference`, `stepUnit_injective`,
+`SelectedUnitExtrema.canonical_gap`, `bounds_unique`, `selected_eq_stepUnit`,
+`ChannelGapWords.weight_eq_word_card`, `word_sign`,
+`SelectedUnitWordBijection.represent_selection`, `encode_injective`,
+`encode_surjective`, `SelectedUnitFourierEnumeration.kernelEquiv_sign`
+and `signed_unit_enumeration`.
+
+The global dyadic-host reindexing, defective normalization removal,
+baseline correction and full mass/profile asymptotics remain unfinished.
+Article 3.3 and companion T2.5 remain in progress; coverage stays 52/167
+with 44 confirmed improvements. The full build passed (9,361 jobs), all
+3,492 theorem/lemma declarations passed the actual axiom audit, and all
+1,207 coverage/finding names were checked directly. Only propext,
+Classical.choice and Quot.sound occur. No new external input, Paper C
+port, manuscript revision or Palomar registration is introduced.
