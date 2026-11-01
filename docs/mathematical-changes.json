@@ -793,6 +793,69 @@
         "status": "not_integrated"
       },
       "validation_commit": "c3ae67f0b8622f142f16dce9eb4bb22fd541a2c5"
+    },
+    {
+      "id": "P1-MATH-0024",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:offset:line-product",
+        "number": "T20.1",
+        "page": 82,
+        "source": "companion_sections/offset_geometry.tex",
+        "line": 25,
+        "statement_sha256": "3d4614d57da7feeb6e0285ad305978a6ebb6e00ab2cb871ee9fd0ae624c6af41"
+      },
+      "original_assumption": "Companion T20.1 is stated in the ambient setting of three distinct regular windows with pairwise direct relative square-class spaces and cutoff H=C0*B for fixed C0>1.",
+      "finding": "The whole line-product estimate and its uniform offset-count conclusions need only first-window regularity and directness of the first and second square-class spaces. The second and third windows need no regularity, and the third space needs no directness condition. The cutoff may satisfy H>=B, including C0=1. The primitive direction and parametrization of every lattice point on the line are constructed internally.",
+      "evidence": [
+        "PaperP1.OffsetLineTheorem.uniform_stronger",
+        "PaperP1.OffsetLineTheorem.finite_bounds",
+        "PaperP1.OffsetLineData.exists_nonzero_cross",
+        "PaperP1.OffsetLinePopulation.odd_offsets_unique",
+        "PaperP1.IntegralLine.parametrize_line_of_primitive"
+      ],
+      "proposed_revision": "State the line estimate under injectivity of the first even-selection map and directness with the second space, or retain first-window regularity as a convenient sufficient condition. Require only H>=B for canonical offsets. Keep stronger regularity/directness assumptions wherever later plane or residual-space arguments use them.",
+      "impact": "Weakens assumptions for the entire line estimate only. The third center may even coincide with another center in the stronger theorem; it still obeys the source size/positivity bounds. No later geometric lemma is asserted to inherit this extension automatically, and no manuscript error or optimality claim is made.",
+      "validation": "Full Lean v4.36.0-rc2 build (8935 jobs) and actual axiom audit of all 2305 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 438 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
+    },
+    {
+      "id": "P1-MATH-0025",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:offset:line-product",
+        "number": "T20.1",
+        "page": 82,
+        "source": "companion_sections/offset_geometry.tex",
+        "line": 25,
+        "statement_sha256": "3d4614d57da7feeb6e0285ad305978a6ebb6e00ab2cb871ee9fd0ae624c6af41"
+      },
+      "original_assumption": "T20.1 bounds the number of distinct offsets supplied by primes above Y by 1+log(6*N*B)/logY, with an O_{C0,C}(B/logB) estimate for this majorant.",
+      "finding": "The additive one is unnecessary: the actual distinct offset count is at most log(6*N*B)/logY for Y>=H>=B and large critical N. The original majorant itself is uniformly at most (1+6*log(2))*B/logB, with this absolute multiplicative constant chosen before the band constant, cutoff multiple, centers, line and Y. The threshold may depend on the fixed band constant; the uniform o(B) statement has its explicit epsilon quantifiers.",
+      "evidence": [
+        "PaperP1.OffsetLineCount.distinct_offsets_le",
+        "PaperP1.OffsetLinePopulation.pool_product_le",
+        "PaperP1.OffsetLineMajorant.majorant_bound_eventually",
+        "PaperP1.OffsetLineMajorant.majorantConstant_eq",
+        "PaperP1.OffsetLineMajorant.majorant_little_o_uniform",
+        "PaperP1.OffsetLineTheorem.companion_T20_1"
+      ],
+      "proposed_revision": "Remove the additive one from the distinct-offset bound and record that the logarithmic majorant permits an absolute multiplicative constant, for example 1+6*log(2) eventually. Retain the explicit threshold dependence and the order of quantifiers for the o(B) conclusion.",
+      "impact": "Sharpens the finite count and its parameter uniformity. The same whole-product bound 6*N*B covers the single-offset and multiple-offset cases, and the empty prime pool is included. The original weaker bound is true; no error or optimality claim is made.",
+      "validation": "Full Lean v4.36.0-rc2 build (8935 jobs) and actual axiom audit of all 2305 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. All evidence declarations are included in the audit. All 438 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

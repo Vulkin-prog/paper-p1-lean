@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**Twenty-three mathematical improvements are confirmed; no error in a manuscript conclusion
+**Twenty-five mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -821,3 +821,57 @@ All 415 distinct coverage/finding declaration names were checked directly by Lea
 
 Validated implementation of article Proposition 19.2 and P1-MATH-0023:
 [c3ae67f0b8622f142f16dce9eb4bb22fd541a2c5](https://github.com/Vulkin-prog/paper-p1-lean/commit/c3ae67f0b8622f142f16dce9eb4bb22fd541a2c5).
+
+## P1-MATH-0024 — Weaker hypotheses for the whole offset-line estimate
+
+- Location: companion T20.1, page 82, `p1:offset:line-product`,
+  `companion_sections/offset_geometry.tex:25` in V1.6.
+- Original setting: three distinct regular windows, pairwise direct
+  relative spaces, and H=C0*B with C0>1.
+- Improvement: first-window regularity and directness of the first two
+  spaces suffice for the entire lemma. The other windows need no
+  regularity, and the third space needs no directness condition. The
+  stronger theorem even permits the third center to coincide with another
+  center. All source positivity and size bounds remain in force.
+  Canonical offsets need only H>=B, including C0=1.
+- Evidence: `OffsetLineTheorem.uniform_stronger`, `finite_bounds`,
+  `OffsetLineData.exists_nonzero_cross`, `OffsetLinePopulation.odd_offsets_unique`
+  and `IntegralLine.parametrize_line_of_primitive`.
+- Reason: a zero common minor vector would force two proportional value
+  vectors. Only one regular/direct pair is needed to exclude them. The
+  remaining prime-product and logarithmic arguments use no other local
+  rank assumption. The primitive direction and all lattice parameters
+  are constructed with integer Bezout identities.
+- Suggested revision: weaken the line lemma separately; keep all stronger
+  assumptions required by later plane and residual-space results.
+  No manuscript error or optimality claim is made.
+- Status: confirmed by the full Lean v4.36.0-rc2 build (8,935 jobs) and
+  actual audit of all 2,305 theorem/lemma declarations, with only `propext`,
+  `Classical.choice` and `Quot.sound`. Not integrated into a new version.
+
+## P1-MATH-0025 — Sharper offset count and an absolute logarithmic constant
+
+- Location: the distinct-offset conclusion of companion T20.1, same
+  source and exact original statement hash as P1-MATH-0024.
+- Original bound: 1+log(6*N*B)/logY, with O_{C0,C}(B/logB) dependence.
+- Improvement: the actual distinct-offset count is at most
+  log(6*N*B)/logY. The additive one can be omitted. The original majorant
+  itself is eventually at most (1+6*log(2))*B/logB, with this absolute
+  multiplicative constant chosen before C, C0, the centers, line and Y.
+  The threshold dependence remains explicit.
+- Evidence: `OffsetLineCount.distinct_offsets_le`,
+  `OffsetLinePopulation.pool_product_le`,
+  `OffsetLineMajorant.majorant_bound_eventually`, `majorantConstant_eq`,
+  `majorant_little_o_uniform` and `OffsetLineTheorem.companion_T20_1`.
+- Reason: both the single-point and multiple-point cases obey the same
+  whole-product bound 6*N*B, so logarithms bound the number of primes and
+  hence offsets without a separate additive term. The critical-band
+  lower scale yields the absolute constant. The empty pool is included.
+- Suggested revision: remove the additive one and record absolute
+  multiplicative uniformity, while retaining the explicit eventual
+  threshold and epsilon quantifiers for o(B). No error or optimality
+  claim is made.
+- Status: confirmed by the same full 8,935-job build and actual 2,305-
+  declaration audit. Not integrated into a new manuscript version.
+
+All 438 distinct coverage/finding declaration names were checked directly by Lean.

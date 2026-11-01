@@ -112,6 +112,14 @@ public import PaperP1.Algebra.CharlierRoots
 public import PaperP1.Analysis.FiniteNegativeMass
 public import PaperP1.Probability.PoissonDifferenceSigned
 public import PaperP1.Probability.PoissonSecondDifferenceNorm
+public import PaperP1.Algebra.PrimitiveTripleDirection
+public import PaperP1.Algebra.IntegralLine
+public import PaperP1.Arithmetic.OffsetLineData
+public import PaperP1.Arithmetic.OffsetLinePrimeProduct
+public import PaperP1.Arithmetic.OffsetLinePopulation
+public import PaperP1.Arithmetic.OffsetLineCount
+public import PaperP1.Asymptotics.OffsetLineMajorant
+public import PaperP1.Asymptotics.OffsetLineTheorem
 public import PaperP1.Analysis.IntegerProductTail
 public import PaperP1.Coding.CoordinateRegularisation
 public import PaperP1.Coding.TernaryConstraints

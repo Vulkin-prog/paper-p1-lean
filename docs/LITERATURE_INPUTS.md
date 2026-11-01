@@ -20,6 +20,31 @@ determinant and local rigidity bounds in companion T1 and article Section 2.
 Compare the stronger uniformity required here with the exact interfaces in
 Paper C; importing an old interface alone cannot discharge this comparison.
 
+## Whole prime products and offset counts on a line
+
+Stable ID: `P1-ARITH-OFFSET-LINE-PRODUCT`. Status: **proved**.
+
+- Target: all conclusions of companion T20.1, page 82,
+  `p1:offset:line-product`.
+- Lean: `OffsetLineTheorem.companion_T20_1`, with the original three-
+  regular-window specialization and all uniform logarithmic conclusions.
+- The actual prime pool has an exact source-membership iff. Above H>=B,
+  every prime has one physical offset per window, and the chosen point
+  population is proved equal to all actual odd-valuation occurrences.
+  Integer collinearity is explicitly bridged from real affine lines.
+- Bezout identities construct the primitive direction and all lattice
+  parameters. Every prime divides a common integer minor; actual square
+  classes prove some minor is nonzero. Its exact value bound gives the
+  whole prime-product estimate, not an assumed geometric count.
+- Logarithms of the actual product give the finite distinct-offset bound.
+  Critical-band scales and elementary logarithmic limits give the uniform
+  O(B/logB) and o(B) statements. No determinant estimate or prime-density
+  theorem is needed. No additional Paper C source is ported.
+- Mathlib at the pinned revision supplies integer gcd/Bezout, finite
+  products, prime divisibility and real logarithms. See
+  [alignment](OFFSET_LINE_PRODUCT_ALIGNMENT.md), P1-MATH-0024 and
+  P1-MATH-0025 for the precisely delimited improvements.
+
 ## Norms of actual Poisson differences
 
 Stable ID: `P1-PROB-POISSON-DIFFERENCE-NORMS`. Status: **proved**.

@@ -2776,11 +2776,40 @@
       "source": "companion_sections/offset_geometry.tex",
       "line": 25,
       "sha256": "3d4614d57da7feeb6e0285ad305978a6ebb6e00ab2cb871ee9fd0ae624c6af41",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.OffsetLineTheorem.companion_T20_1",
+        "PaperP1.OffsetLineTheorem.uniform_stronger",
+        "PaperP1.OffsetLineTheorem.finite_bounds",
+        "PaperP1.OffsetLinePopulation.mem_pool_iff_actual",
+        "PaperP1.OffsetLinePopulation.odd_offsets_unique",
+        "PaperP1.OffsetLinePopulation.chosen_points_iff_actual",
+        "PaperP1.OffsetLinePopulation.collinearSet_of_real_line",
+        "PaperP1.OffsetLinePopulation.pool_product_le",
+        "PaperP1.OffsetLinePrimeProduct.single_point_product_bound",
+        "PaperP1.OffsetLinePrimeProduct.line_product_bound",
+        "PaperP1.OffsetLinePrimeProduct.product_dvd_cross",
+        "PaperP1.OffsetLinePrimeProduct.cross_natAbs_le",
+        "PaperP1.OffsetLineData.exists_nonzero_cross",
+        "PaperP1.OffsetLineData.exists_direction",
+        "PaperP1.IntegralLine.exists_primitive_line",
+        "PaperP1.IntegralLine.parametrize_line_of_primitive",
+        "PaperP1.PrimitiveTripleDirection.primitive_iff_content_one",
+        "PaperP1.PrimitiveTripleDirection.integer_multiple_of_minors",
+        "PaperP1.OffsetLineCount.distinct_offsets_le",
+        "PaperP1.OffsetLineCount.distinct_offsets_le_sourceMajorant",
+        "PaperP1.OffsetLineMajorant.majorant_bound_eventually",
+        "PaperP1.OffsetLineMajorant.majorant_little_o_uniform",
+        "PaperP1.OffsetLineMajorant.majorantConstant_eq"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-OFFSET-LINE-PRODUCT"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0024",
+        "P1-MATH-0025"
+      ],
+      "notes": "All conclusions are proved for the actual shared odd-valuation prime pool on a collinear set of physical offsets. Membership is exactly the source arithmetic condition; the finite prime cutoff follows from actual value bounds. For H>=B the offset witness of every prime is unique, and the chosen point image is proved to be exactly the original distinct offset population. A real affine line is bridged to the integer collinearity predicate. Single-point products are at most 3*N; with at least two points the constructed primitive integer direction has height at most B, parametrizes every integer point on the line, and gives product at most 6*N*height(d)<=6*N*B. The exact source majorant 1+log(6*N*B)/logY is uniformly O(B/logB) and o(B), with one threshold before all lengths, centers, lines and Y. Stronger results need only first-window regularity and directness with the second window, permit H=B, remove the additive one from the offset count, and give the absolute constant 1+6*log(2) for the original majorant. Full build: 8935 jobs; actual audit: 2305 theorem/lemma declarations. See OFFSET_LINE_PRODUCT_ALIGNMENT.md."
     },
     {
       "label": "p1:offset:integer-tail",
