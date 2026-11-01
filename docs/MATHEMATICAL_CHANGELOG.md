@@ -1053,3 +1053,6 @@ and `Quot.sound`. All 602 distinct coverage/finding declaration names
 were checked directly by Lean. Coverage is 41 / 167, with 29 confirmed
 improvements. Original sources are preserved; no Palomar registration
 is made. The earlier finite validation remains recorded above.
+
+Validated complete implementation of companion T21.2:
+[64d651e45f660ed5151a11586ffd918c0878325d](https://github.com/Vulkin-prog/paper-p1-lean/commit/64d651e45f660ed5151a11586ffd918c0878325d).
