@@ -165,7 +165,8 @@
       "mathematical_changes": [
         "P1-MATH-0043"
       ],
-      "notes": "Preparatory finite channel calculation proved, not the numbered asymptotic result. The weight A_d is the exact cardinality of binary even selections with both extreme unit positions selected. The actual within-window placement count and predecessor-signed sum are proved, including signed contact value -1 at diameter L. The resulting positive and signed pair placement sums equal the literal U and S definitions. All three weighted geometric moments and the closed channel identity are proved for every integer shift s and arbitrary integer coefficients satisfying L=b*m+r with m>=1. Empty sums m=0 and both exact leading-channel signed formulas are explicit. Source-host translation counts, exceptional normalization costs, full arithmetic pair profile/mass and asymptotic equivalents remain open. See docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md."
+      "notes": "Preparatory finite channel calculation proved, not the numbered asymptotic result. The weight A_d is the exact cardinality of binary even selections with both extreme unit positions selected. The actual within-window placement count and predecessor-signed sum are proved, including signed contact value -1 at diameter L. The resulting positive and signed pair placement sums equal the literal U and S definitions. All three weighted geometric moments and the closed channel identity are proved for every integer shift s and arbitrary integer coefficients satisfying L=b*m+r with m>=1. Empty sums m=0 and both exact leading-channel signed formulas are explicit. Source-host translation counts, exceptional normalization costs, full arithmetic pair profile/mass and asymptotic equivalents remain open. See docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md.",
+      "validation_commit": "67187ee05582f888683838e0d09f0509a0157867"
     },
     {
       "label": "p1:arith:edgefamily",
@@ -2214,7 +2215,8 @@
       "mathematical_changes": [
         "P1-MATH-0043"
       ],
-      "notes": "Preparatory finite channel calculation proved, not the numbered asymptotic result. The weight A_d is the exact cardinality of binary even selections with both extreme unit positions selected. The actual within-window placement count and predecessor-signed sum are proved, including signed contact value -1 at diameter L. The resulting positive and signed pair placement sums equal the literal U and S definitions. All three weighted geometric moments and the closed channel identity are proved for every integer shift s and arbitrary integer coefficients satisfying L=b*m+r with m>=1. Empty sums m=0 and both exact leading-channel signed formulas are explicit. Source-host translation counts, exceptional normalization costs, full arithmetic pair profile/mass and asymptotic equivalents remain open. See docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md."
+      "notes": "Preparatory finite channel calculation proved, not the numbered asymptotic result. The weight A_d is the exact cardinality of binary even selections with both extreme unit positions selected. The actual within-window placement count and predecessor-signed sum are proved, including signed contact value -1 at diameter L. The resulting positive and signed pair placement sums equal the literal U and S definitions. All three weighted geometric moments and the closed channel identity are proved for every integer shift s and arbitrary integer coefficients satisfying L=b*m+r with m>=1. Empty sums m=0 and both exact leading-channel signed formulas are explicit. Source-host translation counts, exceptional normalization costs, full arithmetic pair profile/mass and asymptotic equivalents remain open. See docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md.",
+      "validation_commit": "67187ee05582f888683838e0d09f0509a0157867"
     },
     {
       "label": "p1:arith:fixed-channel-rank",

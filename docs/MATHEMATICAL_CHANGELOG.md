@@ -1786,3 +1786,7 @@ The full build passed (9,317 jobs), all 3,375 theorem/lemma declarations
 passed the actual axiom audit, and all 1,090 coverage/finding names were
 checked directly. Only propext, Classical.choice and Quot.sound occur.
 No manuscript revision or Palomar registration is made.
+
+Validated finite channel checkpoint and P1-MATH-0043 (9,317 build jobs;
+3,375 audited declarations; 1,090 directly checked coverage/finding names):
+[67187ee05582f888683838e0d09f0509a0157867](https://github.com/Vulkin-prog/paper-p1-lean/commit/67187ee05582f888683838e0d09f0509a0157867).

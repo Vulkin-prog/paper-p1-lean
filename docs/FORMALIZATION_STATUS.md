@@ -989,3 +989,7 @@ Classical.choice and Quot.sound occur. All original source bytes are
 preserved. No external mathematical input, Paper C port, manuscript
 revision or Palomar registration is introduced. Ubuntu root free space
 is 17.98 GiB.
+
+Validated finite channel checkpoint and P1-MATH-0043 (9,317 build jobs;
+3,375 audited declarations; 1,090 directly checked coverage/finding names):
+[67187ee05582f888683838e0d09f0509a0157867](https://github.com/Vulkin-prog/paper-p1-lean/commit/67187ee05582f888683838e0d09f0509a0157867).
