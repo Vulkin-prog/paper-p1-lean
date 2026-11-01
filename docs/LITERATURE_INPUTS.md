@@ -1549,3 +1549,14 @@ product/parity bridge, old-generator count and eventual degree inclusion
 are verified. No unproved literature input is introduced. The full stage
 iteration and simultaneous induction are still open, and main 10.1 is
 not counted complete. See [preparatory alignment](CONDITIONAL_HALF_COUNT_ALIGNMENT.md).
+
+## Actual conditional half-count stage bookkeeping
+
+All survivor sets and receiver classes are actual finite sets. The initial
+exception and stage confinement use the complete T6.1/T6.2 proofs; actual
+projected relations use complete T6.3. Pair counting, one-/two-coordinate
+fibre injections, finite role covers, telescoping and the exact exponent
+schedule are proved locally. No external theorem or asymptotic target count
+is introduced. The fewer-target bounds in the finite stage inequalities
+remain explicit arguments until the simultaneous induction is completed.
+Main 10.1 is still in progress; see [scope](CONDITIONAL_HALF_COUNT_ALIGNMENT.md).

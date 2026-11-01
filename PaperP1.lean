@@ -620,3 +620,25 @@ public import PaperP1.Combinatorics.FinTupleErasure
 public import PaperP1.Arithmetic.ProjectedWindowLists
 
 public import PaperP1.Asymptotics.ShortWitnessListsCount
+
+public import PaperP1.Arithmetic.CertificatePairs
+
+public import PaperP1.Arithmetic.ChosenWindowWitness
+
+public import PaperP1.Arithmetic.HalfCountCertificateLists
+
+public import PaperP1.Arithmetic.ProjectedWindowCounts
+
+public import PaperP1.Asymptotics.HalfCountExceptionalSets
+
+public import PaperP1.Asymptotics.HalfCountSchedule
+
+public import PaperP1.Asymptotics.HalfCountStageBounds
+
+public import PaperP1.Asymptotics.HalfCountStageConfinement
+
+public import PaperP1.Asymptotics.HalfCountStageReceivers
+
+public import PaperP1.Asymptotics.HalfCountStages
+
+public import PaperP1.Combinatorics.FiniteStageCounts

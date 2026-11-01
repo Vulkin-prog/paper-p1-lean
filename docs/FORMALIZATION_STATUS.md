@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4381 audited theorem/lemma declarations**. This
+- The project currently has **4428 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2014,4 +2014,18 @@ and final geometric/effective-space alignment, remain open. Main 10.1 is
 not included in completed coverage. Coverage stays 62/167, with 63 confirmed
 improvements. See [preparatory alignment](CONDITIONAL_HALF_COUNT_ALIGNMENT.md).
 
-Preparatory verification checkpoint: Lean v4.36.0-rc2 full build passed (9,763 jobs); actual axiom audit passed for all 4,381 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,096 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.29 GiB. Numbered coverage remains 62/167 and confirmed findings remain 63; main 10.1 is still in progress.
+Preparatory verification checkpoint: Lean v4.36.0-rc2 full build passed (9,785 jobs); actual axiom audit passed for all 4,428 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2,143 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 17.27 GiB. Numbered coverage remains 62/167 and confirmed findings remain 63; main 10.1 is still in progress.
+
+## Actual conditional half-count stage classes
+
+The actual decreasing survivor sets, chosen-witness receiver extraction,
+zero-cutoff initial exception and deterministic confinement of every
+surviving long source are now proved. Actual directed source-receiver pairs
+and new/old receiver list classes are counted by the exact tuple-deletion
+fibres. The finite schedule reaches one half exactly and its increment
+can be chosen arbitrarily small. Exact finite telescoping and the resulting
+finite loss inequalities are verified. The simultaneous asymptotic induction
+has not yet instantiated their explicit fewer-target cardinal arguments.
+The complete main 10.1 count and its final geometric alignment remain open;
+numbered coverage stays 62/167 and confirmed improvements stay 63. See
+[current half-count alignment](CONDITIONAL_HALF_COUNT_ALIGNMENT.md).
