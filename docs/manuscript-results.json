@@ -1718,9 +1718,10 @@
       "notes": "Complete enlarged-alignment statement, including zero exact units and both coefficient orientations: literal |b*x-a*y|<=(a+b)B, positive coprime a,b with max(a,b)<=B^3. The full pair deficiency is <=(u-1)_++epsilon*B and <=L/max(a,b)+epsilon*B, and dominates actual intersection rank. Separation, compatibility and local regularity are unnecessary. For fixed height bound Q and D>=0, a constant K>0 is chosen before the critical-band width C; all enlarged cutoffs 6*max(a,b)*B<=H<=D*B have actual large-prime kernel rank <=K*B/log B, including zero units. The full kernel and pair-deficiency fixed-height rate are also proved. The previous one-unit coverage error and its corrected historical checkpoints remain documented in docs/FORMALIZATION_SCOPE_AUDIT.md. See docs/ALIGNED_RESIDUAL_RANK_ALIGNMENT.md.",
       "validation_history": [
         "df34686b343f5297c181e6150e21834acc335ad8",
-        "6165382c14d6f8e653ddec27accb9c042628ae10"
+        "6165382c14d6f8e653ddec27accb9c042628ae10",
+        "50889df7921f8374971c70d4d33878cc2a9326d4"
       ],
-      "validation_commit": "50889df7921f8374971c70d4d33878cc2a9326d4"
+      "validation_commit": "e4d183ed6e300f0352f6164c1c049cadfe0c0db4"
     },
     {
       "label": "p1:arith:asymmetric",

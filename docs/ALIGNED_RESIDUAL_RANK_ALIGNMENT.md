@@ -110,3 +110,7 @@ are proved. The actual combined target-union asymptotic and construction
 of bounded affine data from literal geometric alignment remain open.
 No new Paper C port, external mathematical assumption, manuscript revision
 or Palomar registration is introduced.
+
+Validated full enlarged-alignment T1.9 (9,295 build jobs; 3,319 audited
+declarations; 1,034 directly checked coverage/finding names):
+[e4d183ed6e300f0352f6164c1c049cadfe0c0db4](https://github.com/Vulkin-prog/paper-p1-lean/commit/e4d183ed6e300f0352f6164c1c049cadfe0c0db4).

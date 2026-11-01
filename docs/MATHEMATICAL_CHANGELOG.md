@@ -1672,3 +1672,7 @@ with 41 confirmed improvements. The full build passed (9,295 jobs), all
 1,034 coverage/finding declaration names were checked directly. Only
 propext, Classical.choice and Quot.sound occur. Original sources remain
 unchanged; no manuscript revision or Palomar registration is made.
+
+Validated full enlarged-alignment T1.9 (9,295 build jobs; 3,319 audited
+declarations; 1,034 directly checked coverage/finding names):
+[e4d183ed6e300f0352f6164c1c049cadfe0c0db4](https://github.com/Vulkin-prog/paper-p1-lean/commit/e4d183ed6e300f0352f6164c1c049cadfe0c0db4).

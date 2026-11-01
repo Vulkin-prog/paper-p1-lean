@@ -50,3 +50,7 @@ restoring coverage to 49/167 (main 16/73; companion 33/94).
 This completes the missing proof; it does not erase the prior coverage
 error or modify its historical validation records. Original manuscript
 bytes remain unchanged.
+
+Validated full enlarged-alignment T1.9 (9,295 build jobs; 3,319 audited
+declarations; 1,034 directly checked coverage/finding names):
+[e4d183ed6e300f0352f6164c1c049cadfe0c0db4](https://github.com/Vulkin-prog/paper-p1-lean/commit/e4d183ed6e300f0352f6164c1c049cadfe0c0db4).
