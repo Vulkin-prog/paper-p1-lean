@@ -1714,3 +1714,20 @@ or target classification is an unproved input. P1-MATH-0069 records the
 stronger scope. The two-variable and graph parts of T1.7 and the later
 dense-target classification remain open. See
 [exact alignment](DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md).
+
+## Actual dense-target projection and regularized physical support pools
+
+Stable ID: `P1-AFFINE-DENSE-TARGET-REGULARIZATION`. Status: **proved
+preparatory inputs**; main 6.2's target count remains open.
+
+The effective nullity increment is proved equal to its actual new-block
+projection rank. An actual code on all physical window copies surjects
+onto the effective relation kernel. Projection loss under restriction
+is bounded by codimension, and actual distinct nonzero coordinate labels
+bound the restricted rank. A fixed integer recovery order gives loss
+at most eta*L/4 before every source tuple and length. Constructed finite
+physical support pools have an explicit fixed bound after recovery
+regularization. Every minimal representation and physical lift is
+proved. The large-prime group classification and actual population count
+are not assumptions or completed conclusions. No new literature input
+or Paper C source is used. See [scope](DENSE_TARGET_ALIGNMENT.md).

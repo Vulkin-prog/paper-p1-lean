@@ -2987,3 +2987,11 @@ graph conclusions remain open. Main 6.2 and 6.3 are still separate
 classification and propagation obligations. Coverage is 69/167 and
 confirmed improvements are 69. See
 [complete square-equation alignment](DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md).
+
+Main 6.2 preparatory checkpoint: the actual effective nullity increment,
+physical relation-code lift, projection restriction budget and fixed-order
+recovery regularization are proved. The retained target labels and their
+literal finite physical support pools are constructed and bounded. The
+prime-group classification and dense-target count remain open. Coverage
+and confirmed improvements stay 69/167 and 69; no new independent finding
+is counted. See [the precise remaining scope](DENSE_TARGET_ALIGNMENT.md).

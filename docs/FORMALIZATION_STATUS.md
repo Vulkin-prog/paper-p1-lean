@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **4740 audited theorem/lemma declarations**. This
+- The project currently has **4775 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2238,3 +2238,25 @@ open obligations. Coverage is 69/167 (main 23/73, companion 46/94), with
 [complete alignment](DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md).
 
 Disjoint-square verification: Lean v4.36.0-rc2 full build passed (9923 jobs); actual axiom audit passed for all 4740 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2455 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.68 GiB. Full T4.1 is complete with j=2, arbitrary nonzero integer coefficients and actual integer solution sets. The one-variable part of T1.7 is complete; its two-variable and graph conclusions remain open. Coverage is 69/167 (main 23/73, companion 46/94); confirmed improvements are 69. No Pila or target-count hypothesis, new external assumption, Paper C port, manuscript-byte change or Palomar registration.
+
+
+## Actual dense-target projection and regularized support pools
+
+Main 6.2 is in progress. The effective nullity increment equals the
+new-block relation-projection rank. A complete physical code surjects
+onto the actual effective relations, so its physical target projection
+has at least that rank, including overlapping and dependent sources.
+Restriction loses at most its codimension in any projection. Distinct
+nonzero target labels bound the restricted projection rank.
+
+One integer recovery order, fixed before all lengths and starts, loses
+at most eta*L/4. The actual target retains at least delta_z-eta*L/4
+labels. Minimal binary representations, injective physical lifts,
+finite support pools and their fixed multiplicity-based count are
+constructed. The prime-group classification, coefficient enumeration
+and resulting actual target count remain open. Completed T4.1 and T4.2
+supply the later square-equation and product-certificate inputs. Coverage
+stays 69/167 and confirmed improvements stay 69. See
+[exact scope](DENSE_TARGET_ALIGNMENT.md).
+
+Dense-target input verification: Lean v4.36.0-rc2 full build passed (9943 jobs); actual axiom audit passed for all 4775 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2490 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.66 GiB. Actual physical/effective relation projections, their fixed-order recovery regularization and finite support pools are proved. Main 6.2 remains in progress for the prime-group classification and actual target count. Coverage and confirmed improvements stay 69/167 and 69. No target-count premise, external assumption, Paper C port, manuscript-byte change or Palomar registration.

@@ -741,3 +741,13 @@ public import PaperP1.Arithmetic.SquareEquationKernel
 public import PaperP1.Asymptotics.DisjointSquareEquations
 public import PaperP1.Asymptotics.DisjointSquareTheorem
 public import PaperP1.Asymptotics.FixedDegreeKernelCount
+public import PaperP1.Affine.RelationProjection
+public import PaperP1.Analysis.SmallRecoveryParameter
+public import PaperP1.Arithmetic.DenseTargetRegularization
+public import PaperP1.Arithmetic.PhysicalWindowRelations
+public import PaperP1.Coding.ProjectionLabelBudget
+public import PaperP1.Coding.ProjectionRestrictionBudget
+public import PaperP1.Coding.RegularizedProjection
+public import PaperP1.Coding.RegularizedSupportPools
+public import PaperP1.Combinatorics.BinaryLabelRepresentations
+public import PaperP1.Combinatorics.PhysicalLabelSupportCount
