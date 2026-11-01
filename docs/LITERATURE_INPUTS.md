@@ -1236,5 +1236,5 @@ full T1.4 remains in progress.
 Scope precision for P1-MATH-0049: the proved elementary elimination
 estimate is in the remaining pair height. The complementary Heath-Brown
 bound in the eliminated pair height remains open, including for the
-relevant bidegree-one auxiliary factors. No min-of-both-heights estimate
-is claimed by this checkpoint.
+relevant bidegree-one auxiliary factors. The estimate involving the minimum of
+the two heights remains unproved.
