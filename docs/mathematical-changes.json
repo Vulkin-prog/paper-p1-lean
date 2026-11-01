@@ -1791,9 +1791,10 @@
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "75b7018923d2fc85473e609a5788b6bb97805498",
+      "validation_commit": "b71d4e7409dccd61850024f99066ecaa24c6bccd",
       "validation_history": [
-        "67187ee05582f888683838e0d09f0509a0157867"
+        "67187ee05582f888683838e0d09f0509a0157867",
+        "75b7018923d2fc85473e609a5788b6bb97805498"
       ]
     },
     {
@@ -1895,11 +1896,12 @@
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "bd95627543139b4690c1311ce84f622d8ce7a221",
+      "validation_commit": "b71d4e7409dccd61850024f99066ecaa24c6bccd",
       "validation_history": [
         "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df",
         "88ce8a72b7b579b3b7442de98efd91af4b445764",
-        "74727a964e38c4b8b556fac2f93194485c695c11"
+        "74727a964e38c4b8b556fac2f93194485c695c11",
+        "bd95627543139b4690c1311ce84f622d8ce7a221"
       ]
     },
     {
@@ -1983,9 +1985,10 @@
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "b19ae93509861774fd90f72c07a8d452603e5fc5",
+      "validation_commit": "b71d4e7409dccd61850024f99066ecaa24c6bccd",
       "validation_history": [
-        "37e67975065e2b4df18be484c2e7ba9123a6c8b9"
+        "37e67975065e2b4df18be484c2e7ba9123a6c8b9",
+        "b19ae93509861774fd90f72c07a8d452603e5fc5"
       ]
     }
   ]

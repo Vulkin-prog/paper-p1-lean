@@ -119,3 +119,7 @@ This completes one fixed-channel input to article 3.3. That theorem's
 complete pair profile and other arithmetic regimes remain unfinished.
 No new literature premise, Paper C port, manuscript revision or Palomar
 registration is introduced. Original manuscript bytes are unchanged.
+
+Validated complete companion T2.5 checkpoint (9,405 build jobs;
+3,577 audited declarations; 1,292 directly checked coverage/finding names):
+[b71d4e7409dccd61850024f99066ecaa24c6bccd](https://github.com/Vulkin-prog/paper-p1-lean/commit/b71d4e7409dccd61850024f99066ecaa24c6bccd).

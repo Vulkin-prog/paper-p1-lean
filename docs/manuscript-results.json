@@ -371,7 +371,7 @@
         "P1-MATH-0045"
       ],
       "notes": "The complete actual fixed-channel mass theorem T2.5 is now proved, including the literal separated symmetric family, fixed real prime cutoff, zero-probability pairs, signed main term, explicit O(B^2/N) remainder, source N^(-1+epsilon) error and positive phase L*N^(-1+1/b). Earlier exact channel sums, actual word and dyadic bridges are fully connected. This completes a fixed-channel input to article 3.3, not its whole pair profile: other channel regimes, remainder/profile bounds and their full asymptotic comparisons remain unfinished. Article 3.3 stays in progress. See docs/FIXED_CHANNEL_MASS_ALIGNMENT.md.",
-      "validation_commit": "b19ae93509861774fd90f72c07a8d452603e5fc5",
+      "validation_commit": "b71d4e7409dccd61850024f99066ecaa24c6bccd",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
         "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df",
@@ -381,7 +381,8 @@
         "75b7018923d2fc85473e609a5788b6bb97805498",
         "74727a964e38c4b8b556fac2f93194485c695c11",
         "bd95627543139b4690c1311ce84f622d8ce7a221",
-        "37e67975065e2b4df18be484c2e7ba9123a6c8b9"
+        "37e67975065e2b4df18be484c2e7ba9123a6c8b9",
+        "b19ae93509861774fd90f72c07a8d452603e5fc5"
       ]
     },
     {
@@ -2637,7 +2638,7 @@
         "P1-MATH-0045"
       ],
       "notes": "Complete actual fixed-channel mass and positive phase. FixedChannelMassTheorem.companion_T2_5 treats the literal symmetric ordered separated family with at least two exact units and private prime coordinates above D*B for every fixed real D>=2b. The forward normalization uses a<b and the second orientation is its swapped copy. Actual infinite-measure joint probabilities are summed and zero-probability pairs remain in the family. Exact real-cutoff/floor transport and eventual deterministic separation identify the literal source family. Both M=p^2*N*w*S+O(N^(-1+epsilon)) and M comparable to L*N^(-1+1/b) are proved, with one threshold before all critical lengths. The stronger explicit remainder K(C,b)*B^2/N is included. Positive constants come from exact signed-sum coefficient and remainder bounds, including L>=10b^3 finite positivity. Full manuscript bytes are preserved and no Palomar registration is made. See docs/FIXED_CHANNEL_MASS_ALIGNMENT.md.",
-      "validation_commit": "b19ae93509861774fd90f72c07a8d452603e5fc5",
+      "validation_commit": "b71d4e7409dccd61850024f99066ecaa24c6bccd",
       "validation_history": [
         "67187ee05582f888683838e0d09f0509a0157867",
         "fc4c31d1a01ccb880d28fa6cdbd1d30040e054df",
@@ -2647,7 +2648,8 @@
         "75b7018923d2fc85473e609a5788b6bb97805498",
         "74727a964e38c4b8b556fac2f93194485c695c11",
         "bd95627543139b4690c1311ce84f622d8ce7a221",
-        "37e67975065e2b4df18be484c2e7ba9123a6c8b9"
+        "37e67975065e2b4df18be484c2e7ba9123a6c8b9",
+        "b19ae93509861774fd90f72c07a8d452603e5fc5"
       ]
     },
     {
