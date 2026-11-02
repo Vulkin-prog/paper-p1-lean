@@ -284,13 +284,39 @@ product_i(x+gamma_i), and positivity holds at positive x. The small
 parameter condition follows from x>=4B and the actual absolute offset
 bound. No square-root value is inserted as an axiom.
 
+## Literal bivariate value and its actual vanishing tail
+
+`WeightedGeometricTail` proves the ordinary weighted geometric sum and,
+for 0<=r<=1/4, bounds its tail starting at M by
+2*(M+1)*r^M. A real sequence with the corresponding norm majorant and
+an actual zero prefix inherits this bound. M=0 and r=0 are included.
+
+`BivariateSeriesValue` defines the actual term c_ab*xi^a*eta^b and sums
+it over the literal finite antidiagonal a+b=n, before summing over n.
+Every pair of coefficient indices is included exactly once. The
+coefficient majorant |c_ab|<=C*R^(a+b), with |xi|,|eta|<=t, implies the
+diagonal norm bound C*(n+1)*(R*t)^n and absolute convergence for R*t<1.
+If the actual coefficients below total degree M vanish and R*t<=1/4,
+then the actual real value satisfies
+
+    |value(f,xi,eta)| <=2*C*(M+1)*(R*t)^M.
+
+The actual formal branch value is identified with the product of its
+two one-variable Runge values by the proved ordinary Cauchy product.
+`BivariateSeriesOperations` proves finite sums and scalar multiples,
+and proves convergence and value under the actual monomial shift.
+The shifted antidiagonal identity is a finite bijection with its exact
+zero prefix. No analytic-value or target tail premise is used to assert
+these conclusions.
+
 ## Remaining obligations
 
-The source analytic integer separation is open. Total-degree bivariate
-evaluation must transfer the actual divided-numerator cancellation to
-a quantitative tail bound at (1/x,1/y). The finite general branch lists
-must be linked with the literal word offset sets. The norm's
-evaluation-zero lemma is conditional on the actual auxiliary value
-being zero; it does not supply the integer-gap conclusion. No full
-T9.5 result or new numbered coverage is claimed. No new external
-estimate assumption, Paper C port or Palomar registration is introduced.
+The reciprocal polynomial real evaluation must still identify the
+scaled literal numerator value with the polynomial-family auxiliary.
+The finite branch lists must be enumerations of the actual word offsets.
+The explicit remaining-pole scaling and height threshold must turn the
+proved tail estimate into the final integer separation. The norm's
+evaluation-zero lemma remains conditional on that actual auxiliary
+integer value being zero. No full T9.5 result or new numbered coverage
+is claimed. No new external estimate assumption, Paper C port or
+Palomar registration is introduced.

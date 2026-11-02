@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5448 audited theorem/lemma declarations**. This
+- The project currently has **5473 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2493,3 +2493,6 @@ Literal norm degree/height checkpoint verification: Lean v4.36.0-rc2 full build 
 
 
 Real branch-value and numerator majorant checkpoint verification: Lean v4.36.0-rc2 full build passed (10283 jobs); actual axiom audit passed for all 5448 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3163 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.19 GiB. The actual reduced numerator has coefficient majorant (B+1)^(300q)*(2B)^(a+b). Real series evaluation, geometric absolute convergence, Cauchy multiplication and finite products are proved. The actual Runge factors square to 1+gamma*t and are positive for |gamma*t|<=1/4; scaled products have the literal split-product square. Total-degree bivariate evaluation, the vanishing-tail bound, finite-word enumeration linkage and the final integer separation remain open. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 75. No analytic binomial input assumption, additional Paper C source, manuscript-byte change or Palomar registration.
+
+
+Actual bivariate value and vanishing-tail checkpoint verification: Lean v4.36.0-rc2 full build passed (10289 jobs); actual axiom audit passed for all 5473 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3188 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.18 GiB. Literal total-degree bivariate evaluation is defined and proved absolutely convergent under the actual geometric coefficient majorant. An actual vanishing prefix gives the quantitative value bound 2*C*(M+1)*(R*t)^M. Branch values, finite sums, scalar multiples and literal monomial shifts have their proved real values. Reciprocal polynomial evaluation, finite-word enumeration linkage, remaining-pole scaling and final integer separation remain open. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 75. No new external estimate assumption, additional Paper C source, manuscript-byte change or Palomar registration.

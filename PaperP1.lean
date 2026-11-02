@@ -935,3 +935,7 @@ public import PaperP1.Arithmetic.BiquadraticNumeratorBounds
 public import PaperP1.Analysis.RealSeriesEvaluation
 public import PaperP1.Analysis.RealSeriesTail
 public import PaperP1.Analysis.RungeSeriesValues
+
+public import PaperP1.Analysis.WeightedGeometricTail
+public import PaperP1.Analysis.BivariateSeriesValue
+public import PaperP1.Analysis.BivariateSeriesOperations

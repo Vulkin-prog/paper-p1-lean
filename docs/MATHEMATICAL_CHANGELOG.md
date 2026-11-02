@@ -3265,3 +3265,12 @@ as positive square-root branches in the required small-parameter domain.
 Scaled products have exactly the literal split-product square. The
 bivariate vanishing-tail estimate, word enumeration linkage and integer
 gap remain open. No new independent finding or numbered result is counted.
+
+
+P1-MATH-0075 bivariate-tail checkpoint: literal total-degree evaluation
+is proved absolutely convergent under the actual geometric coefficient
+majorant. Its vanishing prefix gives the explicit value bound
+2*C*(M+1)*(R*t)^M. The actual branch, finite sum, scalar and monomial
+shift values are identified. Reciprocal polynomial evaluation, word
+list linkage, pole scaling and the final integer separation remain open.
+No new independent finding or numbered result is counted.

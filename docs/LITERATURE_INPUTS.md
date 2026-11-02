@@ -2117,3 +2117,21 @@ Each actual Runge factor squares to 1+gamma*t and is positive for
 square. No analytic binomial input or square-root value is assumed.
 The bivariate vanishing-tail bound, word enumeration linkage and final
 integer separation remain open. No new Paper C source or Palomar record.
+
+
+## Actual total-degree bivariate value and vanishing tail
+
+Stable ID: `P1-ANALYTIC-BIVARIATE-VANISHING-TAIL`. Status: **proved**,
+quantitative analytic-tail components of companion T9.5.
+
+The literal finite antidiagonal coefficient sums define real bivariate
+value. A geometric coefficient bound gives actual absolute convergence.
+An actual vanishing prefix gives the value bound
+2*C*(M+1)*(R*t)^M when |xi|,|eta|<=t and 0<=R*t<=1/4.
+Ordinary weighted geometric sums and Cauchy products are the only pinned
+Mathlib analytic inputs (commit 9d581dfff2e41de989072ea63abf3daf69311520).
+Finite sums, scalar multiples and actual monomial shifts have their
+expected values. Reciprocal polynomial real evaluation, finite-word
+list linkage, remaining-pole scaling and the final integer separation
+remain open. No external estimate assumption, new Paper C source or
+Palomar record is introduced.
