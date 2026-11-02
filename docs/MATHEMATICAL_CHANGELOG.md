@@ -3524,3 +3524,8 @@ The actual law U+2V is constructed from independent Poisson variables of means m
 ## P1-MATH-0086: a universal conversion constant with no mean cap
 
 The heterogeneous analytic conversion now has the universal constant16exp(2), valid for every finite Bernoulli family in[0,1], without mu<=M. Norm-one probability factors replace the total-mean exponential bound in the product perturbation. The actual run reference and homogeneous binomial pair reference are included. Arithmetic pair-activity and covariance scales remain open; coverage77/167, confirmed findings86.
+
+
+## Finite arithmetic foundations ofT19.15
+
+Canonical square-part injection, the literal positive reciprocal sums, a uniform2X/A square tail and a finite logarithmic-preimage dyadic transfer are now proved. These validate the elementary reduction in the manuscript without changing its claim. The cited ordinary reciprocal-prime asymptotic and uniform saddle comparison remain open. No new mathematical finding or proved numbered result; coverage77/167, findings86.

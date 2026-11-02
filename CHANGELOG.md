@@ -14,6 +14,7 @@
 - Prove exact integer mean quantization, actual signed irregular-window classification and a parity criterion for a nonzero bias; record finding85.
 - Construct actual independent Poisson-jump and Hermite laws, with exact moments and explicit quadratic-reference error.
 - Strengthen the finite analytic conversion to the universal constant16exp(2), removing the mean cap; record finding86.
+- Prove the finite reciprocal-pivot square-part and dyadic reductions forT19.15, with no analytic input; its final asymptotic remains open.
 - Original manuscripts remain byte-preserved; Palomar qualification is still a later milestone.
 
 ## In progress — 31 October 2026

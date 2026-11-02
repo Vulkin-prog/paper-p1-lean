@@ -1208,3 +1208,11 @@ public import PaperP1.Probability.UniversalHeterogeneousConversion
 public import PaperP1.Model.UniversalRunConversion
 
 public import PaperP1.Probability.UniversalBinomialConversion
+
+public import PaperP1.Arithmetic.OddPrimePivot
+
+public import PaperP1.Arithmetic.ReciprocalOddPivots
+
+public import PaperP1.Arithmetic.DyadicOddPivots
+
+public import PaperP1.Arithmetic.ReciprocalPivotSquareTail

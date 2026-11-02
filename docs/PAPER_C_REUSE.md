@@ -380,3 +380,8 @@ See [statement comparison](LARGE_SELECTED_KERNEL_ALIGNMENT.md).
 Validated complete companion T1.6 checkpoint (9,427 build jobs;
 3,626 audited declarations; 1,341 directly checked coverage/finding names):
 [3be7415366bd3d27aa016bf9690b0f93d7304fd9](https://github.com/Vulkin-prog/paper-p1-lean/commit/3be7415366bd3d27aa016bf9690b0f93d7304fd9).
+
+
+## Selected odd-valuation pivot port forT19.15
+
+The exact source is `PaperCPrel8/OddPrimePivot.lean`, Git blob `1139eb6c2e9978bfe7c6cb8a33a7648fa340bced`, at commit `b9fa9ba490f201b408a302a86f1594ee620b228b`, Apache-2.0 by Vulkin-prog. The target `PaperP1/Arithmetic/OddPrimePivot.lean` retains the definition `max1(sup oddPrimeSupport)`, its positive lower bound, the cutoff equivalence and the positive pivot population definition. Module/public declarations, namespaces and exposed helpers use Lean4.36.0-rc2. The remaining old Rankin/PNT/saddle imports and analytic propositions are excluded. New P1 comparison, squarefree interpretation, canonical injection, square tail and dyadic transfer proofs use already checked P1 foundations. All selected fragments were rebuilt under the pinned compiler; no old binary artifacts were copied. See [alignment](RECIPROCAL_PIVOT_ALIGNMENT.md).
