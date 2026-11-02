@@ -4479,3 +4479,51 @@ stay 88. Original manuscript bytes, compiler/dependency pins and the later
 Palomar milestone are preserved.
 
 Verified Lean v4.36.0-rc2 full build (10813 jobs), actual Audit.lean kernel audit (6675 declarations; only propext, Classical.choice, Quot.sound), 4392 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.45 GiB. Exact deletion of zero-marginal sites preserves every actual factorial moment and the third cumulant. Under the existing ordinary explicit BCN premise, full absolute triple activity and the third factorial cumulant are uniformly at most N^(-1/2+eta) for every dyadic subground. All repeated and incompatible costs remain explicit. The sharp source exponents remain open; main 11.3,14.1,14.6 stay in progress. Coverage 77/167; improvements 88.
+
+
+## Actual retained-modified moments and Poisson laws converge under BCN
+
+The actual retained-modified count now agrees asymptotically with the
+original count at every fixed ordinary moment, under explicit BCN.
+For every fixed j>=0 and tolerance epsilon>0 there is a threshold N0,
+uniform over every critical length L, every G contained in the dyadic
+block and every real H, such that
+
+    |E Z_G^j - E modified(H,N,L,G)^j| <= epsilon.
+
+This is not inferred from small total variation alone. An unconditional
+finite-cylinder theorem gives the actual quantitative truncation inequality
+for every finite G, every j<=q and every R>0:
+
+    |E Z_G^j - E modified^j|
+       <= R^j * delta + E Z_G^q / R^(q-j).
+
+Here delta is the literal probability of the actual bad event, and the
+original count and modified variable are evaluated on the same finite
+prime cylinder. The original and modified observables have their exact
+Bochner integrals; every real original observable is proved integrable.
+The finite modified count is pointwise bounded by the original count,
+and their disagreement probability is exactly delta. No numerical estimate
+for delta or moment bound is assumed in this finite theorem.
+
+For convergence take the fixed higher order q=j+1. The previously proved
+BCN-dependent uniform original moment bound gives E Z_G^(j+1)<=B.
+Choose R=1+2B/epsilon before N, then apply the uniform actual bad-event
+convergence with tolerance epsilon/(2R^j). The two truncation terms are
+at most epsilon/2. The order, truncation level and bad-event tolerance
+are all fixed before the final scale; no growing-order substitution occurs.
+
+The actual modified law also converges uniformly, for every H, in total
+variation to both actual Poisson references Pois(mu_N) and Pois(lambda_N)
+on the full dyadic block. This follows from the checked original-law
+Poisson theorem and the exact original-to-modified coupling by delta.
+The references use the original actual and nominal means; no identity
+between the modified mean and original mean is asserted at finite N.
+
+The source numerical bad-event rate and identification with its specified
+seed union remain open. Companion T15.2 and T19.3 remain in progress.
+No new numbered completion, mathematical finding, external input, axiom,
+dependency download, manuscript-byte change or Palomar registration occurs.
+Coverage 77/167 (main 28/73, companion 49/94), improvements 88.
+
+Verified Lean v4.36.0-rc2 full build (10817 jobs), actual Audit.lean kernel audit (6682 declarations; only propext, Classical.choice, Quot.sound), 4399 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.44 GiB. Finite original-to-modified moment truncation and original-observable integrability are unconditional. Every fixed original-to-modified moment difference and both modified-law Poisson TV distances converge uniformly under the existing ordinary explicit BCN premise. Higher order q=j+1, truncation level and bad-event tolerance are fixed before N. The sharp source error rate stays open. Coverage 77/167; confirmed improvements 88.

@@ -3668,3 +3668,8 @@ The original count law now converges uniformly in TV to actual Poisson probabili
 ## Stronger coarse triple-activity and cumulant bounds
 
 Actual fixed factorial-moment estimates improve both full absolute triple activity and the third factorial cumulant to N^(-1/2+eta) under explicit BCN for every dyadic subground, including zero marginals. Exact zero-marginal moment restriction and all repeated/incompatible terms are checked. Main 11.3, 14.1 and 14.6 remain in progress for their sharp claims; no numbered completion or new finding. Coverage 77/167; confirmed improvements 88.
+
+
+## Actual retained-modified moment convergence
+
+The actual original-to-modified moment truncation inequality is proved on a common finite cylinder. Combining the real bad-event probability with the proved higher original moments gives convergence of every fixed ordinary moment under explicit BCN, uniformly over all dyadic subgrounds and every H. Actual modified-law Poisson convergence is also checked. The source numerical error rate remains open. No new numbered completion or finding: coverage 77/167, improvements 88.

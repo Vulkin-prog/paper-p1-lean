@@ -3915,6 +3915,8 @@ import PaperP1
 #print axioms PaperP1.RetainedBadProbabilityUnderBCN.uniform_badProbability
 #print axioms PaperP1.RetainedBadProbabilityUnderBCN.uniform_totalVariation
 #print axioms PaperP1.RetainedClassTheorem.companion_T12_1
+#print axioms PaperP1.RetainedMomentConvergenceUnderBCN.uniform_moment_transfer
+#print axioms PaperP1.RetainedMomentConvergenceUnderBCN.uniform_poisson_totalVariation
 #print axioms PaperP1.SaturationDegreeBudget.envelope_div_log_tendsto
 #print axioms PaperP1.SaturationDegreeBudget.log_product_le_envelope
 #print axioms PaperP1.SaturationDegreeBudget.product_le_power_eventually
@@ -5570,6 +5572,11 @@ import PaperP1
 #print axioms PaperP1.RetainedModifiedLaw.integrable_law
 #print axioms PaperP1.RetainedModifiedLaw.integral_law
 #print axioms PaperP1.RetainedModifiedLaw.coupling
+#print axioms PaperP1.RetainedMomentTransfer.original_observable_integral
+#print axioms PaperP1.RetainedMomentTransfer.original_observable_integrable
+#print axioms PaperP1.RetainedMomentTransfer.finite_modified_le
+#print axioms PaperP1.RetainedMomentTransfer.original_disagreement
+#print axioms PaperP1.RetainedMomentTransfer.moment_truncation
 #print axioms PaperP1.RetainedReferenceCardinalityTheorem.deficit_polynomial_grouped
 #print axioms PaperP1.RetainedReferenceCardinalityTheorem.Ftotal_nonneg
 #print axioms PaperP1.RetainedReferenceCardinalityTheorem.Gtotal_nonneg
