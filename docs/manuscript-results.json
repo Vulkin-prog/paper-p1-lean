@@ -4804,9 +4804,10 @@
       ],
       "notes": "The actual finite Runge matrix, common denominator 4^(6q), entry height (B+1)^(28q), nonzero integer coefficient array and four coefficient polynomials of height (B+1)^(266q) are constructed. The actual formal numerator cancels through total degree 6q. A nonzero common integer polynomial factor is now extracted; every common divisor of the quotient family is a unit. At least one quotient polynomial is nonzero. Their partial degrees decrease by the actual degrees of the common factor and their heights are bounded by (B+1)^(275q), using the complete T9.4 factor-height theorem. The original numerator cancellation is retained. Preservation of the required vanishing order for the divided numerator, integer separation, function independence and the final nonzero norm remain open. This does not complete T9.5. See TWO_WITNESS_ALIGNMENT.md.",
       "validation": "Lean v4.36.0-rc2 full build passed (10209 jobs); actual axiom audit passed for all 5280 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2995 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.28 GiB. The actual auxiliary coefficient family has a nonzero common integer polynomial factor and a quotient family with no common nonunit divisor. At least one quotient is nonzero. Its exact reduced partial degree bounds and explicit height (B+1)^(275q) follow from the complete T9.4. The original formal numerator cancellation remains in the same construction; preservation of the divided-numerator order, integer gap, function independence and nonzero norm are still open. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 74. No new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.",
-      "validation_commit": "b709618b43c2f1c6df1660960088afac96f8c0ee",
+      "validation_commit": "9e12b4c1fceb4b6b117ca8981ab98df31b80469d",
       "validation_history": [
-        "1a6c2cb25140aff00068aa7fc35dc07227e58a08"
+        "1a6c2cb25140aff00068aa7fc35dc07227e58a08",
+        "b709618b43c2f1c6df1660960088afac96f8c0ee"
       ]
     },
     {
