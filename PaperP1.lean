@@ -849,3 +849,14 @@ public import PaperP1.Model.ReplicaCopyBlocks
 public import PaperP1.Model.ReplicaPositiveSum
 public import PaperP1.Model.ReplicaWordColors
 public import PaperP1.Model.RunReplicaSums
+
+public import PaperP1.Affine.FamilyCenteredMass
+public import PaperP1.Affine.TripleFullSupportConnected
+public import PaperP1.Algebra.TripleCancellationBound
+public import PaperP1.Algebra.TripleCentering
+public import PaperP1.Asymptotics.IncompatibleTripleSeed
+public import PaperP1.Combinatorics.SmallFinpartition
+public import PaperP1.Model.CompatibleActivitySplit
+public import PaperP1.Model.CompatibleRunCentered
+public import PaperP1.Model.InfiniteTripleCancellation
+public import PaperP1.Model.TripleActivityConnected

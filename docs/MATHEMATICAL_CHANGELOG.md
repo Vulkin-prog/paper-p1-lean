@@ -3092,3 +3092,19 @@ kept separate. The actual infinite colored atom also satisfies the
 pointwise homogeneous domination of P1-MATH-0070. No additional finding
 is counted for this proof progression. Coverage is 72/167 and confirmed
 findings remain 70. See [complete alignment](COLORED_REPLICAS_ALIGNMENT.md).
+
+
+P1-MATH-0071: the compatible-triple sign assertion of main 11.3 extends
+to every compatible finite binary affine family. Its centered coefficient
+is the product of actual heterogeneous marginals times a nonnegative
+integer full-support relation count. A single common witness removes
+every Fourier sign. The actual original infinite run and physical
+square-class identifications are proved. This replaces the ordered
+three-pair-rank argument without changing an asymptotic exponent.
+
+The exact incompatible cancellation, canonical connectedness of nonzero
+triple coefficients and finite activity comparisons are proved. Only
+their independent triple-weight component has the full source decay;
+the pair/target deficit and third-cumulant correction assembly remain
+open. Main 11.2 and 11.3 stay in progress. Coverage remains 72/167;
+confirmed findings are 71. See [alignment](TRIPLE_ACTIVITIES_ALIGNMENT.md).

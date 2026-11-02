@@ -3686,6 +3686,42 @@
         "d53d34382231f689dc36f83d28511437c6696710",
         "4fdd8dcab8797cb8527681bd81182c2f3d676e66"
       ]
+    },
+    {
+      "id": "P1-MATH-0071",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:activity:kappa3",
+        "number": "11.3",
+        "page": 28,
+        "source": "main_sections/triple_activities.tex",
+        "line": 62,
+        "statement_sha256": "958ca6688c9554cd8b0f998dbbf3f3133dad606a0fc97dc79d01e50009151afb"
+      },
+      "original_assumption": "Main Proposition 11.3 proves nonnegativity for compatible triples by ordering their three pair ranks and comparing powers of two.",
+      "finding": "Every compatible finite family of binary affine events has a nonnegative fully centered moment, at every finite order. The exact value is the product of its actual heterogeneous local probabilities times the number of full-support effective relations. A common affine witness makes every relation character equal to one. The actual original infinite run family has the same exact formula in the physical effective square-class spaces. Repeated formal centers, irregular windows, empty families and degenerate compatible local spaces are included. No arithmetic or asymptotic hypothesis is required.",
+      "evidence": [
+        "PaperP1.Affine.compatible_centered_count",
+        "PaperP1.FamilyCenteredMass.of_witness_cardinality",
+        "PaperP1.FamilyCenteredMass.nonneg_of_compatible",
+        "PaperP1.CompatibleRunCentered.row_count",
+        "PaperP1.CompatibleRunCentered.full_support_count_eq",
+        "PaperP1.CompatibleRunCentered.square_class_count",
+        "PaperP1.CompatibleRunCentered.nonneg",
+        "PaperP1.CompatibleRunCentered.coefficient_nonneg",
+        "PaperP1.CompatibleActivitySplit.absolute_split",
+        "PaperP1.CompatibleActivitySplit.signed_error"
+      ],
+      "proposed_revision": "State nonnegativity for every compatible finite affine family and prove the exact full-support relation count using one common witness in the existing Fourier identity. Deduce the compatible-triple assertion immediately. Keep the incompatible absolute-activity estimate and the repeated-index factorial-cumulant correction as separate arguments; the compatible sign assertion alone does not control them.",
+      "impact": "Strengthens the qualitative positivity assertion of main 11.3 to every finite order, with exact heterogeneous marginals and no regularity or separation requirement. It simplifies its proof. No uniform arithmetic activity count or new asymptotic error for growing order is asserted. The full main 11.2 and 11.3 estimates remain open; numbered coverage stays 72/167.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10143 jobs); actual axiom audit passed for all 5143 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2858 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.36 GiB. Compatible centered coefficients are proved nonnegative at every finite order with exact heterogeneous marginals and an explicit full-support physical effective relation count, including original infinite run families. Exact incompatible-triple cancellation, canonical connectedness, finite activity comparisons and the actual independent N^(-3/2+epsilon) incompatible seed weight are proved. The pair/target activity deficit and third factorial-cumulant correction assembly remain open; main 11.2 and 11.3 stay in progress. Coverage remains 72/167 (main 25/73, companion 47/94); confirmed findings are 71. No activity deficit, moment bound, arithmetic count, new external input or Paper C source is assumed. No manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

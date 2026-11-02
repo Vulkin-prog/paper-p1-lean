@@ -1876,3 +1876,31 @@ events are identified, and all positive integer orders, tuple lengths
 including zero, repetitions and empty families are included. No moment,
 first-moment, conditional-sum or uniform-law estimate is assumed. No new
 external theorem or Paper C source is introduced.
+
+
+## Compatible centered coefficients at all finite orders
+
+Stable ID: `P1-PROB-COMPATIBLE-CENTERED-POSITIVITY`. Status: **proved**,
+strengthening the qualitative positivity assertion of main 11.3.
+
+The existing full-support Fourier count is instantiated by an actual
+common affine witness. Finite normalized probabilities, original
+infinite run moments and physical effective square-class relation counts
+are identified. No order-specific rank inequality or arithmetic input
+is needed. A finite partition argument identifies nonzero admissible
+triple coefficients with connected families and proves exact finite
+activity comparisons. The quantitative main 11.3 conclusions remain open.
+No new external theorem or Paper C source is used.
+
+## Incompatible triple cancellation and its independent seed mass
+
+Stable ID: `P1-PROB-INCOMPATIBLE-TRIPLE-CANCELLATION`. Status: **proved**,
+preparatory components of main 11.2.
+
+The heterogeneous triple centering identity and both-sign absolute
+cancellation bound are proved for actual infinite joint moments and
+marginals. The actual nonzero incompatible population is connected;
+complete main 10.2 bounds its independent weight by N^(-3/2+epsilon).
+The remaining pair-activity/independent-target deficit from main 11.1
+is not assumed and is still open. The full main 11.2 is therefore not
+counted complete. No new external input or Paper C source is introduced.

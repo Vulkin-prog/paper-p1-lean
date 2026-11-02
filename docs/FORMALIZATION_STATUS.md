@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5105 audited theorem/lemma declarations**. This
+- The project currently has **5143 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2432,3 +2432,25 @@ Main 6.4 and the full pair profile remain open. See
 [complete replica alignment](COLORED_REPLICAS_ALIGNMENT.md).
 
 Complete T22.7 verification: Lean v4.36.0-rc2 full build passed (10123 jobs); actual axiom audit passed for all 5105 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2820 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.39 GiB. Full companion T22.7 is complete: actual infinite conditional replica formula, printed p^r specialization on the actual regular set, literal infinite colored conditional target sum and actual original-run positive weighted moment estimate. Every fixed positive integer order, all tuple lengths including zero, repeated centers, arbitrary ordered dyadic tuple subfamilies, empty families and nonnegative logarithmically bounded weights are included, with threshold before Y and all varying families/colorings/weights. The actual infinite colored product space and its exact cylinder law are constructed. Coverage is 72/167 (main 25/73, companion 47/94); confirmed findings remain 70. No conditional-sum, moment, first-moment, independence, uniform-law or propagation estimate is assumed; no new external input, Paper C port, manuscript-byte change or Palomar registration.
+
+
+## Triple positivity and incompatible cancellation checkpoint
+
+Every compatible finite binary affine family now has a proved
+nonnegative centered coefficient, equal to its exact heterogeneous
+independent weight times the full-support effective relation count.
+The result is identified with actual original infinite run coefficients
+at every finite order, including irregular windows and repeated formal
+centers. This strengthens the sign assertion of main 11.3 and is recorded
+as P1-MATH-0071. Confirmed independent findings are now 71.
+
+The exact incompatible triple cancellation, both-sign absolute bound,
+canonical connectedness of nonzero triple activities and the finite
+absolute/signed activity comparisons are proved. The actual independent
+weight of the nonzero incompatible triple population has the full
+N^(-3/2+epsilon) bound. The remaining pair/target activity deficit and
+third factorial-cumulant assembly stay open, so main 11.2 and 11.3 remain
+in progress. Coverage stays 72/167. See
+[triple activity alignment](TRIPLE_ACTIVITIES_ALIGNMENT.md).
+
+Triple activity checkpoint verification: Lean v4.36.0-rc2 full build passed (10143 jobs); actual axiom audit passed for all 5143 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2858 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.36 GiB. Compatible centered coefficients are proved nonnegative at every finite order with exact heterogeneous marginals and an explicit full-support physical effective relation count, including original infinite run families. Exact incompatible-triple cancellation, canonical connectedness, finite activity comparisons and the actual independent N^(-3/2+epsilon) incompatible seed weight are proved. The pair/target activity deficit and third factorial-cumulant correction assembly remain open; main 11.2 and 11.3 stay in progress. Coverage remains 72/167 (main 25/73, companion 47/94); confirmed findings are 71. No activity deficit, moment bound, arithmetic count, new external input or Paper C source is assumed. No manuscript-byte change or Palomar registration.

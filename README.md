@@ -10,6 +10,10 @@ uniform colored conditional target sum and every fixed positive weighted
 replica moment are proved. Repeated centers and arbitrary ordered tuple
 subfamilies are included. See
 [the complete replica alignment](docs/COLORED_REPLICAS_ALIGNMENT.md).
+Compatible centered coefficients are now proved nonnegative at every
+finite order. The exact incompatible-triple cancellation and activity
+comparisons are proved; their remaining arithmetic bound stays open.
+See [the triple activity scope](docs/TRIPLE_ACTIVITIES_ALIGNMENT.md).
 Main Proposition 6.3 is complete: actual conditional affine sums,
 ordered-distinct extension-family propagation, and the full fixed-order
 local-defect/contact mass bound are proved on the original infinite model.
