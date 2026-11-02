@@ -4082,10 +4082,11 @@
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "d0f535d84ad1109c42dfaa288881dc7af353ae79",
+      "validation_commit": "b18f57976591b0700778f028f8c8a2b59d623b65",
       "validation_history": [
         "814324abe2a8d8af8e96dfe6bc284499f211557a",
-        "8c4f9c97bb50746e930c7a51d8d46709b59b2c48"
+        "8c4f9c97bb50746e930c7a51d8d46709b59b2c48",
+        "d0f535d84ad1109c42dfaa288881dc7af353ae79"
       ]
     }
   ]
