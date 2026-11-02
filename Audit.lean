@@ -3781,6 +3781,9 @@ import PaperP1
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.tripleGap_lt_half
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.uniform_pair_probability
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.uniform_family_probability
+#print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_block_mass
+#print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_activity
+#print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_absolute_difference
 #print axioms PaperP1.NormalizedDefectSourceCount.bad_sources_rate
 #print axioms PaperP1.NormalizedPairResidual.rank_sublinear
 #print axioms PaperP1.OffsetLineMajorant.majorantConstant_pos
@@ -4443,6 +4446,9 @@ import PaperP1
 #print axioms PaperP1.FinitePolymerBound.weight_eq_partition
 #print axioms PaperP1.FinitePolymerBound.generating_le_product
 #print axioms PaperP1.FinitePolymerBound.generating_le_exp
+#print axioms PaperP1.FinitePolymerTail.tail_eq
+#print axioms PaperP1.FinitePolymerTail.tail_bound
+#print axioms PaperP1.FinitePolymerTail.covered_bound
 #print axioms PaperP1.FiniteRefinementCount.image_card_le_of_determined
 #print axioms PaperP1.FiniteRefinementCount.pairs_card_le
 #print axioms PaperP1.FiniteRefinementCount.pair_image_bound
@@ -4964,6 +4970,17 @@ import PaperP1
 #print axioms PaperP1.AbsoluteActivityDecomposition.centered_split
 #print axioms PaperP1.AbsoluteActivityDecomposition.absolute_elementary_bound
 #print axioms PaperP1.AbsoluteActivityDecomposition.absolute_power_bound
+#print axioms PaperP1.ActualCanonicalComponents.image_injective
+#print axioms PaperP1.ActualCanonicalComponents.card_blocks
+#print axioms PaperP1.ActualCanonicalComponents.union_blocks
+#print axioms PaperP1.ActualCanonicalComponents.block_subset
+#print axioms PaperP1.ActualCanonicalComponents.block_nonempty
+#print axioms PaperP1.ActualCanonicalComponents.block_connected
+#print axioms PaperP1.ActualCanonicalComponents.coefficient_factor
+#print axioms PaperP1.ActualCanonicalComponents.absolute_factor
+#print axioms PaperP1.ActualCanonicalComponents.singleton_zero
+#print axioms PaperP1.ActualCanonicalComponents.nonzero_block_card
+#print axioms PaperP1.ActualCanonicalComponents.nonconnected_card
 #print axioms PaperP1.AlignedTripleFamilies.mem_families
 #print axioms PaperP1.AlignedTripleFamilies.family_cover
 #print axioms PaperP1.AlignedTripleFamilies.star_card
@@ -5430,6 +5447,9 @@ import PaperP1
 #print axioms PaperP1.Model.MultiplicativeMoments.finite_product_mean
 #print axioms PaperP1.Model.MultiplicativeMoments.finite_even_moment
 #print axioms PaperP1.Model.MultiplicativeMoments.infinite_even_moment
+#print axioms PaperP1.NonconnectedActivity.canonical_cover
+#print axioms PaperP1.NonconnectedActivity.finite_bound
+#print axioms PaperP1.NonconnectedActivity.absolute_difference
 #print axioms PaperP1.OldSpaceProjection.oldSpace_rank_le
 #print axioms PaperP1.OldSpaceProjection.characterSpace_rank_le
 #print axioms PaperP1.OldSpaceProjection.characterSpace_card_le

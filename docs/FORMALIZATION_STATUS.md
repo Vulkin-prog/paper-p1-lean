@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **6818 audited theorem/lemma declarations**. This
+- The project currently has **6838 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -4978,3 +4978,47 @@ improvements increase to 90. No new external input, axiom, dependency
 download, source-byte change or Palomar registration is introduced.
 
 Verified Lean v4.36.0-rc2 full build (10905 jobs), actual Audit.lean kernel audit (6818 declarations; only propext, Classical.choice, Quot.sound), 4535 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.30 GiB. Weak dependent activity N^(-1+eta+epsilon), irregular-touching and incompatible pair activity N^(-1+epsilon), the exact initial disjoint partition, and the quantitative full-count equivalence 0<=2*A2/alpha-1<=N^(-1/3+epsilon) are unconditional. No BCN, complete signed profile or target A2 estimate is supplied as a premise. T7.1 and main 3.3 remain in progress; coverage 77/167, confirmed improvements 90.
+
+
+## All-order actual canonical blocks and a quadratic nonconnected remainder
+
+Actual canonical components are now handled as original finite subsets
+at every finite order. Their union recovers I, every part is nonempty and
+connected, and the original coefficient satisfies c(I)=prod_(C in P(I))c(C).
+The absolute identity also holds exactly. Reindexing the subtype parts is
+injective, so no duplicate part or hidden multiplicity is introduced.
+If c(I)!=0, every part has at least two sites. Every nonempty nonconnected
+family has at least two canonical parts. These finite statements include
+zero marginals and incompatible families; only L>0 is needed for the
+probability factorization.
+
+A separate arbitrary-weight finite polymer lemma proves the tail bound
+
+    sum_(P subset A, |P|>=2) prod_(C in P)w(C)
+        <= (W^2/2)*exp(W),  W=sum_(C in A)w(C), w>=0.
+
+An actual decomposition whose union recovers its source family is injective
+as a finite record, so the same bound controls any covered family with
+at least two blocks. No independence of arbitrary polymers is assumed.
+Applying this to the actual canonical components gives, for every fixed r>=1,
+
+    A_r - A_r_connected = A_r_nonconnected >= 0,
+    A_r_nonconnected <= (W_r^2/2)*exp(W_r),
+
+where W_r is the literal absolute activity of all connected original blocks
+of sizes 2 through r. The finite bound and exact difference are unconditional.
+Under the existing ordinary explicit BCN premise, the already checked
+fixed-order half-power estimates at the finitely many orders up to r give
+
+    0 <= A_r - A_r_connected <= N^(-1+epsilon)
+
+eventually uniformly over critical lengths and all dyadic subgrounds.
+The threshold depends on r before N; no growing-order conclusion is made.
+This is a sharper remainder for nonconnected families. The source 4/5
+connected bound and separate contact estimate of T14.1 remain open.
+Main 4.4 stays proved and companion T14.1 stays in progress. Coverage stays
+77/167 (main 28/73, companion 49/94), confirmed improvements stay 90.
+No new external input, axiom, dependency download, source-byte change or
+Palomar registration is introduced.
+
+Verified Lean v4.36.0-rc2 full build (10913 jobs), actual Audit.lean kernel audit (6838 declarations; only propext, Classical.choice, Quot.sound), 4555 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.28 GiB. Exact canonical original block images, connectedness, coefficient/absolute factorization, nonzero block size and the finite quadratic polymer tail are unconditional. Under existing explicit BCN, nonconnected activity and the absolute all/connected activity difference are at most N^(-1+epsilon) at every fixed positive order, uniformly over dyadic subgrounds. Growing orders and the source sharp connected/contact bounds are not claimed. Main 4.4 stays proved; companion T14.1 stays in progress. Coverage 77/167, improvements 90.

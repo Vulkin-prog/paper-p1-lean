@@ -4728,3 +4728,47 @@ the good-channel partition or sharp triple/quartic errors. Main 3.3 remains
 in progress. Coverage stays 77/167 (main 28/73, companion 49/94); confirmed
 improvements increase to 90. No new external input, axiom, dependency
 download, source-byte change or Palomar registration is introduced.
+
+
+## Actual canonical blocks and the fixed nonconnected remainder
+
+Stable ID: `P1-PROB-FIXED-NONCONNECTED-ACTIVITY`. Status: **finite canonical/polymer bounds proved unconditionally for L>0; fixed N^-1 remainder under existing explicit BCN**.
+
+Actual canonical components are now handled as original finite subsets
+at every finite order. Their union recovers I, every part is nonempty and
+connected, and the original coefficient satisfies c(I)=prod_(C in P(I))c(C).
+The absolute identity also holds exactly. Reindexing the subtype parts is
+injective, so no duplicate part or hidden multiplicity is introduced.
+If c(I)!=0, every part has at least two sites. Every nonempty nonconnected
+family has at least two canonical parts. These finite statements include
+zero marginals and incompatible families; only L>0 is needed for the
+probability factorization.
+
+A separate arbitrary-weight finite polymer lemma proves the tail bound
+
+    sum_(P subset A, |P|>=2) prod_(C in P)w(C)
+        <= (W^2/2)*exp(W),  W=sum_(C in A)w(C), w>=0.
+
+An actual decomposition whose union recovers its source family is injective
+as a finite record, so the same bound controls any covered family with
+at least two blocks. No independence of arbitrary polymers is assumed.
+Applying this to the actual canonical components gives, for every fixed r>=1,
+
+    A_r - A_r_connected = A_r_nonconnected >= 0,
+    A_r_nonconnected <= (W_r^2/2)*exp(W_r),
+
+where W_r is the literal absolute activity of all connected original blocks
+of sizes 2 through r. The finite bound and exact difference are unconditional.
+Under the existing ordinary explicit BCN premise, the already checked
+fixed-order half-power estimates at the finitely many orders up to r give
+
+    0 <= A_r - A_r_connected <= N^(-1+epsilon)
+
+eventually uniformly over critical lengths and all dyadic subgrounds.
+The threshold depends on r before N; no growing-order conclusion is made.
+This is a sharper remainder for nonconnected families. The source 4/5
+connected bound and separate contact estimate of T14.1 remain open.
+Main 4.4 stays proved and companion T14.1 stays in progress. Coverage stays
+77/167 (main 28/73, companion 49/94), confirmed improvements stay 90.
+No new external input, axiom, dependency download, source-byte change or
+Palomar registration is introduced.

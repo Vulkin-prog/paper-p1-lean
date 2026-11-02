@@ -3757,3 +3757,8 @@ improvements increase to 90. No new external input, axiom, dependency
 download, source-byte change or Palomar registration is introduced.
 
 Verified Lean v4.36.0-rc2 full build (10905 jobs), actual Audit.lean kernel audit (6818 declarations; only propext, Classical.choice, Quot.sound), 4535 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.30 GiB. Weak dependent activity N^(-1+eta+epsilon), irregular-touching and incompatible pair activity N^(-1+epsilon), the exact initial disjoint partition, and the quantitative full-count equivalence 0<=2*A2/alpha-1<=N^(-1/3+epsilon) are unconditional. No BCN, complete signed profile or target A2 estimate is supplied as a premise. T7.1 and main 3.3 remain in progress; coverage 77/167, confirmed improvements 90.
+
+
+## Exact all-order canonical factors and quadratic nonconnected activity
+
+Original canonical component images are injective, connected and cover the actual family; every nonzero factor has at least two sites. An unconditional finite polymer tail bound controls nonconnected activity by W^2*exp(W)/2. Under existing explicit BCN, this yields N^(-1+epsilon) at every fixed order, without a growing-order assertion. Source connected 4/5 and contact estimates remain open. Coverage 77/167, improvements 90.

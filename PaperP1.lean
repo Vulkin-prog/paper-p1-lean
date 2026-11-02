@@ -1458,3 +1458,11 @@ public import PaperP1.Model.PairActivityCumulantGap
 public import PaperP1.Asymptotics.PairActivityCumulantGap
 
 public import PaperP1.Asymptotics.InitialPairPartition
+
+public import PaperP1.Combinatorics.FinitePolymerTail
+
+public import PaperP1.Model.ActualCanonicalComponents
+
+public import PaperP1.Model.NonconnectedActivity
+
+public import PaperP1.Asymptotics.NonconnectedActivityUnderBCN
