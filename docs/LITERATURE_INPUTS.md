@@ -2859,3 +2859,56 @@ registration. Proved coverage77/167 (main28/73, companion49/94),
 confirmed findings83.
 
 Pinned Mathlib finite fiber summation, powerset-cardinality counts, finite complement cardinalities, zero-tail tsum identities and existing project finite-law embeddings supply every grouping step. No unformalized arithmetic or analytic input is used.
+
+
+## Bounded actual pair seed and growing-order moments under the same BCN input
+
+Stable ID: `P1-PROB-BOUNDED-SEED-BCN`. Status: **conditional** on `P1-GEO-BCN-PLANE-UNIFORM`; no other unformalized input.
+
+The missing bounded second-moment seed and the full growing-order
+source conclusion of companionT19.4 are now proved under the single
+ordinary explicit field-polynomial BCN input already used for13.5,
+13.6 and13.8. The deterministic exception, actual infinite-model
+independence, first logarithmic rate and recurrence remain unconditional.
+The result is conditional and adds no proved numbered coverage.
+
+`SecondMomentPairCap.finite_bound` splits actual ordered pairs into
+zero-full-loss pairs and the actual full-loss hosts. The zero-loss
+contribution is at most N^2*(2^(-L))^2, with actual affine deficiencies
+handled by the proved zero-loss implication. The remaining contribution
+is at most the actual host cardinality times a bound for actual distinct
+pair joint probabilities. This is an unconditional finite theorem;
+the asymptotic pair cap is discharged in the next step, not assumed
+as a completed conclusion.
+
+The proved host bound with epsilon=1/8 and the conditional pair joint
+bound with epsilon=1/8 give an exceptional contribution at most
+
+    N^(1+1/8)*N^(-3/2+1/8) = N^(-1/4) <= 1.
+
+The nominal critical mean is at most2^C. Consequently
+`BoundedSecondMomentUnderBCN.uniform_bound` proves the explicit actual
+seed F_2<=(2^C)^2+1, uniformly before every critical length. This does
+not assert that actual heterogeneous marginals equal the nominal one.
+No weighted residual estimate, bounded pair moment, independence
+premise or fixed-order extrapolation is supplied as an input.
+
+`OrderDependentMomentsUnderBCN.uniform_source_growth` combines this
+seed with the existing actual recurrence and absorbs its fixed
+constant into the exponential, obtaining
+
+    F_k <= exp((k-2)*H/2 + K_C*(k*h+k^(3/2)*H/h))
+
+simultaneously for every2<=k<=H, where H=logN and h=logH. The positive
+K_C is chosen before the BCN constants c,kappa; these affect only the
+eventual threshold. The absorption uses h>=1 and the actual order
+range, with all real powers and denominator signs proved. This
+implies the source statement, including its allowed fixed prefactor.
+
+The external BCN proof and its geometric-to-plane-polynomial
+presentation remain unformalized. T19.4 is therefore conditional,
+with exactly the same named BCN input, and remains outside proved
+coverage77/167 (main28/73, companion49/94). No additional external
+input or new mathematical finding is introduced. P1-MATH-0030 retains
+the unconditional smaller exception improvement. Confirmed findings83.
+No Paper C port, manuscript-byte change or Palomar registration.

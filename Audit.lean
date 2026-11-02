@@ -3094,6 +3094,8 @@ import PaperP1
 #print axioms PaperP1.BoundedObservationPool.widthEnvelope_ge_one
 #print axioms PaperP1.BoundedObservationPool.pool_budget_le_envelope
 #print axioms PaperP1.BoundedObservationPool.pool_count_logarithmic
+#print axioms PaperP1.BoundedSecondMomentUnderBCN.seedConstant_gt_one
+#print axioms PaperP1.BoundedSecondMomentUnderBCN.uniform_bound
 #print axioms PaperP1.ChannelMainTermAlgebra.main_term_scale
 #print axioms PaperP1.ChannelMainTermBounds.coefficient_pos
 #print axioms PaperP1.ChannelMainTermBounds.constants_pos
@@ -3540,6 +3542,7 @@ import PaperP1
 #print axioms PaperP1.OrderDependentMoments.uniform_from_two
 #print axioms PaperP1.OrderDependentMoments.three_half_power
 #print axioms PaperP1.OrderDependentMoments.uniform_source_growth
+#print axioms PaperP1.OrderDependentMomentsUnderBCN.uniform_source_growth
 #print axioms PaperP1.OrderDependentRate.primeConstant_nonneg
 #print axioms PaperP1.OrderDependentRate.prefactor_bounds
 #print axioms PaperP1.OrderDependentRate.constant_pos
@@ -5215,6 +5218,7 @@ import PaperP1
 #print axioms PaperP1.RunSeparation.infiniteStartIndicator_separated
 #print axioms PaperP1.RunSeparation.infiniteStartCount_interval_support
 #print axioms PaperP1.RunSeparation.dyadic_count_support
+#print axioms PaperP1.SecondMomentPairCap.finite_bound
 #print axioms PaperP1.SelectedRelativeBits.boundary_single
 #print axioms PaperP1.SelectedRelativeBits.selectedBits_apply
 #print axioms PaperP1.SelectedRelativeBits.full_relative_identity

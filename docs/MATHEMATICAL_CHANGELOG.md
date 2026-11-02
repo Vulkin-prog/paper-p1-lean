@@ -3494,3 +3494,8 @@ The exact retained-reference identity and l1 bound now hold for arbitrary hetero
 ## The homogeneous cardinality form ofT17.2 is complete
 
 The exact sourceF_r,G_r, direct/gamma meanings, binomial complement counts and natural-to-real subtractions are proved. Finite cardinality grouping, r=0,1 and r>n zero conventions, nonnegative coefficients and weighted infinite-tsum identities are checked. The retained equality and l1 bound hold as actual atomic signed measures. This completes the original specialization of P1-MATH-0083 without a new finding. Coverage77/167 (main28/73, companion49/94), confirmed findings83.
+
+
+## Conditional completion ofT19.4 without a separate seed assumption
+
+The actual host count and the same explicit BCN-dependent pair cap prove F_2<=(2^C)^2+1. Its absorption yields the full growing-order source bound uniformly for2<=k<=logN. K_C precedes the external BCN constants; only the threshold depends on them. The smaller exception of P1-MATH-0030 remains unconditional. No new finding or external input; coverage77/167, confirmed findings83. T19.4 is conditional and is not counted proved.

@@ -8,6 +8,7 @@
 - Current numbered coverage:77/167; confirmed mathematical findings:83.
 - Prove conditional13.8 and record the larger-family probability extension and compatibility-free nonaligned triple bound.
 - Complete companionT17.2 with exact source cardinality deficits and actual signed-measure identity/norm.
+- Prove the bounded actual second-moment seed and fullT19.4 growing-order conclusion under the same explicit BCN input.
 - Original manuscripts remain byte-preserved; Palomar qualification is still a later milestone.
 
 ## In progress — 31 October 2026

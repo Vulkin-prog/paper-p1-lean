@@ -1148,3 +1148,9 @@ public import PaperP1.Model.RetainedCardinalityDeficits
 public import PaperP1.Model.RetainedDeficitGrouping
 
 public import PaperP1.Model.RetainedReferenceCardinalityTheorem
+
+public import PaperP1.Model.SecondMomentPairCap
+
+public import PaperP1.Asymptotics.BoundedSecondMomentUnderBCN
+
+public import PaperP1.Asymptotics.OrderDependentMomentsUnderBCN
