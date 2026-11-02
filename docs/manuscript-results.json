@@ -1368,7 +1368,8 @@
           "validation_commit": "fb01e14b02b172b30392d8d7f327ac81a358f7fb"
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full lake build (10979 jobs), source and ledger checks, actual axiom audit of 6960 declarations (only propext, Classical.choice and Quot.sound), and 4677 direct ledger/evidence declaration checks; Ubuntu root free space 15.14 GiB. Original manuscript bytes and all 167 statement hashes preserved."
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (10979 jobs), source and ledger checks, actual axiom audit of 6960 declarations (only propext, Classical.choice and Quot.sound), and 4677 direct ledger/evidence declaration checks; Ubuntu root free space 15.14 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "validation_commit": "5f39112d3cdb49446889fef38f3d8340350df62e"
     },
     {
       "label": "p1:fixed:moments",
@@ -6731,7 +6732,8 @@
           "validation_commit": "b8aa3cc103cda3bb1b196a00bb050d18d7f859b5"
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full lake build (10979 jobs), source and ledger checks, actual axiom audit of 6960 declarations (only propext, Classical.choice and Quot.sound), and 4677 direct ledger/evidence declaration checks; Ubuntu root free space 15.14 GiB. Original manuscript bytes and all 167 statement hashes preserved."
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (10979 jobs), source and ledger checks, actual axiom audit of 6960 declarations (only propext, Classical.choice and Quot.sound), and 4677 direct ledger/evidence declaration checks; Ubuntu root free space 15.14 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "validation_commit": "5f39112d3cdb49446889fef38f3d8340350df62e"
     },
     {
       "label": "p13:conf:groups",
@@ -7483,7 +7485,8 @@
           "validation": "Verified under Lean v4.36.0-rc2: full lake build (10931 jobs), source and ledger checks, actual axiom audit of 6864 declarations (only propext, Classical.choice and Quot.sound), and 4581 direct ledger/evidence declaration checks; Ubuntu root free space 15.24 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
           "validation_commit": "8bb8b9875fbc1c46f465899b3d56d9001e2c9bee"
         }
-      ]
+      ],
+      "validation_commit": "5f39112d3cdb49446889fef38f3d8340350df62e"
     },
     {
       "label": "p1:core:primitive",
