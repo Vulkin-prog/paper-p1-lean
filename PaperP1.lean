@@ -1154,3 +1154,21 @@ public import PaperP1.Model.SecondMomentPairCap
 public import PaperP1.Asymptotics.BoundedSecondMomentUnderBCN
 
 public import PaperP1.Asymptotics.OrderDependentMomentsUnderBCN
+
+public import PaperP1.Probability.CompletedLaw
+
+public import PaperP1.Probability.CompletedPoisson
+
+public import PaperP1.Analysis.BanachExponentialRemainder
+
+public import PaperP1.Analysis.BanachPowerPerturbation
+
+public import PaperP1.Analysis.BernoulliExponentialApproximation
+
+public import PaperP1.Probability.CompletedLawShift
+
+public import PaperP1.Probability.CompletedBinomial
+
+public import PaperP1.Probability.FinitePoissonCharlierConversion
+
+public import PaperP1.Asymptotics.PoissonCharlierConversion

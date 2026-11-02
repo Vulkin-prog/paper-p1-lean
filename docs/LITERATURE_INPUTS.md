@@ -2912,3 +2912,69 @@ coverage77/167 (main28/73, companion49/94). No additional external
 input or new mathematical finding is introduced. P1-MATH-0030 retains
 the unconditional smaller exception improvement. Confirmed findings83.
 No Paper C port, manuscript-byte change or Palomar registration.
+
+
+## Finite analytic Poisson–Charlier conversion and completion of actual laws
+
+Stable ID: `P1-ANALYTIC-FINITE-PC-CONVERSION`. Status: **proved analytic step**; T17.4 remains in progress for its arithmetic covariance scale.
+
+The full analytic finite conversion is now proved for actual atomic
+signed measures. Finite signed laws carry their ordinary l1 ring norm;
+its nondegeneracy and exact scalar behavior are proved. Their completion
+is a real Banach algebra. Singleton evaluation extends continuously,
+and every completed element has an absolutely summable coefficient
+sequence whose ordinary l1 sum is bounded by its completion norm.
+Consequently all norm estimates below control genuine actual signed
+measures, including their infinite tails.
+
+The convolution exponential exp(mu*Delta) is proved coefficientwise
+equal to the actual Poisson mass exp(-mu)*mu^k/k!. Its positivity and
+probability interpretation are proved for mu>=0. Convolution byDelta
+is actual translation minus the identity; convolution byDelta^2 gives
+the literal second difference. The completed quadratic reference is
+proved equal to the existing actual signed-measure Q(mu,alpha).
+
+For every elementv of a real Banach algebra, absolute exponential
+series prove a Taylor tail at every order, with no small-norm premise.
+Finite-product perturbation and actual quadratic cancellation give
+
+    ||(1+v)^n-exp(v)^n+(n/2)*v^2*exp(v)^n||
+      <= (2n||v||^3+n^2||v||^4)*exp((n+2)||v||).
+
+No convolution logarithm is used. For every integern>=2,0<=p<=1,
+np<=A and arbitrary realbeta,c2, write mu=np and alpha=2c2-np^2.
+The actual finite reference b^n+beta*Delta^2*b^(n-2) satisfies
+
+    ||reference-Q(mu,alpha)||_1
+      <=4|beta-c2|
+        +16exp(2A+4)*(np^3+(np^2)^2)
+        +16exp(2A+2)*|c2|*(p+np^2).
+
+Both finite binomial expansions in the source proof, the deletion of
+two Bernoulli factors, the exact quadratic coefficient and the
+beta-replacement cost are proved. The source restriction2p<1 is
+unnecessary for this analytic step; the valid finite scope is0<=p<=1.
+
+The critical mean and p<=2^C/N are proved inputs, not assumptions.
+An explicit positive errorConstant(C), chosen before everyN,L,n,beta,
+c2, yields
+
+    ||reference-Q||_1
+      <=4|beta-c2|+K_C*(N^(-2)+|c2|/N)
+
+for everyN>=2,2<=n<=N and critical-bandL. The actual regular-set
+cardinality is proved eventually at least2 under one uniform
+threshold. Thus the same estimate holds for the literal actual
+RetainedReferenceTheorem.binomialReference, with its actual good-edge
+joint-moment sum beta. All measures and the ordinary sum of absolute
+singleton differences are included.
+
+The arithmetic bound C_2=O(a_N) used in the source is not yet proved.
+No such bound is assumed or counted as completion: T17.4 is in progress,
+with exactly this remaining obligation. Proved coverage remains77/167
+(main28/73, companion49/94). P1-MATH-0084 records the logarithm-free
+finite extension; confirmed findings84. No external mathematical input,
+BCN argument, Paper C port, dependency download, manuscript-byte change
+or Palomar registration is added.
+
+Pinned Mathlib supplies the actual norm completion, continuous linear extension, absolutely convergent Banach-algebra exponential, summation transport and normed algebra laws. Every finite-law norm, coefficient identification, Taylor comparison, product error and critical substitution is proved in the project. No external analytic estimate is assumed.

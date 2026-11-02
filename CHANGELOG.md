@@ -5,10 +5,11 @@
 - Complete article13.1 with actual short-basis subspaces, bases and all source asymptotic estimates.
 - Record the endpoint a=1 extension and constant uniformity before C.
 - Prove the complete13.6 critical reduction, actual maximum and limsup under the named external integer BCN input; retain conditional status.
-- Current numbered coverage:77/167; confirmed mathematical findings:83.
+- Current numbered coverage:77/167; confirmed mathematical findings:84.
 - Prove conditional13.8 and record the larger-family probability extension and compatibility-free nonaligned triple bound.
 - Complete companionT17.2 with exact source cardinality deficits and actual signed-measure identity/norm.
 - Prove the bounded actual second-moment seed and fullT19.4 growing-order conclusion under the same explicit BCN input.
+- Prove explicit finite Poisson–Charlier conversion for actual signed measures throughout0<=p<=1; record the logarithm-free improvement.
 - Original manuscripts remain byte-preserved; Palomar qualification is still a later milestone.
 
 ## In progress — 31 October 2026

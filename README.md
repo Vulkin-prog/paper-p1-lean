@@ -19,6 +19,8 @@ Article13.8 is also conditional on that same BCN input: all triple rank bounds a
 
 Companion T17.2 is complete: the actual retained-reference identity and ordinary l1 bound use the literal sourceF_r,G_r, exact binomial counts, all zero conventions and weighted infinite sums. A finite heterogeneous extension is also proved. See [the retained-reference alignment](docs/RETAINED_REFERENCE_ALIGNMENT.md).
 
+The analytic part ofT17.4 now has an explicit finite signed-measure conversion for0<=p<=1, with no convolution logarithm. The actual critical reference is controlled by4|beta-c2|+K_C*(N^(-2)+|c2|/N); the arithmetic covariance scale remains open. See [the conversion scope](docs/POISSON_CHARLIER_CONVERSION_ALIGNMENT.md).
+
 Companion T22.7 is complete: the actual infinite replica formula, the
 uniform colored conditional target sum and every fixed positive weighted
 replica moment are proved. Repeated centers and arbitrary ordered tuple
@@ -51,8 +53,7 @@ moments and the order of all asymptotic quantifiers are retained. See
 The support count in main 3.2 now has the stronger exponent 1+epsilon,
 including local kernels, contacts and equal centres. Its weighted
 nonaligned residual remains open. The actual second factorial moment
-is bounded by N^epsilon for each fixed epsilon, with a bounded seed
-still open. See [the exact pair-host scope](docs/PAIR_HOST_COUNT_ALIGNMENT.md).
+is bounded unconditionally by N^epsilon for each fixed epsilon. The bounded seed and fullT19.4 growing-order bound are now proved under the same explicit BCN input as13.6; they add no proved coverage. See [the exact pair-host scope](docs/PAIR_HOST_COUNT_ALIGNMENT.md).
 Main Lemma 14.2 proves the sharp rational overlap bound for every integer
 triple in the source range. The unique extremal triple is (10,12,15),
 and all other primitive triples have the sharp smaller bound 11/18.

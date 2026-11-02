@@ -4513,6 +4513,40 @@
           "validation": "Lean v4.36.0-rc2 full build passed (10575 jobs); actual axiom audit passed for all6033 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All3750 distinct ledger/finding declarations were directly checked. All138 original manifest entries and167 numbered records are intact. Ubuntu available space:15.84 GiB. Equal compressed nullity is proved to force actual relation support inside the pair. The exact heterogeneous direct/compressed joint formulas follow from actual Fourier full-support and centered-moment reconstruction, including globally incompatible families by their actual zero mass. Direct/pair families have a proved disjoint enumeration and literal extension/union bijection. The finite heterogeneous retained-reference product identity and ordinary l1 bound are proved on arbitrary admissible finite grounds, with no assumed target probability factorization. On actual regular starts and actual goodEdges the product reference is exactly b^n+beta*Delta^2*b^(n-2), for everyN>=2,L>0 and every realH. P1-MATH-0083 records this heterogeneous finite extension. The originalF_r,G_r cardinality grouping remains open, soT17.2 is in progress. Coverage76/167 (main28/73, companion48/94), confirmed findings83. No BCN input, added external theorem, Paper C port, dependency download, manuscript-byte change or Palomar registration."
         }
       ]
+    },
+    {
+      "id": "P1-MATH-0084",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "companion",
+        "label": "p1:close:conversion",
+        "number": "T17.4",
+        "page": 64,
+        "source": "companion_sections/closure.tex",
+        "line": 323,
+        "version": "P1 V1.6",
+        "statement_sha256": "89280dbf15ea1944fa20cccc30b40b192ec4817908c3e23ce8433a5a2df71636"
+      },
+      "original_assumption": "The proof of companionT17.4 assumes2p<1 for convergence of a convolution logarithm and states its conversion in the critical asymptotic regime.",
+      "finding": "Absolute exponential tails and explicit second-order finite-product perturbation prove the actual signed-measure conversion for every integern>=2 and0<=p<=1, with explicit constants depending only on a boundA fornp. No convolution logarithm or2p<1 premise is needed. The ordinary l1 error is at most4|beta-c2|+16exp(2A+4)*(np^3+(np^2)^2)+16exp(2A+2)*|c2|*(p+np^2). The completed exponential and quadratic reference are identified with actual Poisson and Poisson–Charlier signed measures, so no formal-series or tail hypothesis is supplied.",
+      "evidence": [
+        "PaperP1.CompletedLaw.tsum_abs_coeff_le",
+        "PaperP1.CompletedPoisson.coeff_poisson",
+        "PaperP1.CompletedLawShift.quadratic_actual_signed_measure",
+        "PaperP1.BernoulliExponentialApproximation.norm_quadratic_error",
+        "PaperP1.CompletedBinomial.quadratic_error",
+        "PaperP1.CompletedBinomial.two_deleted_error",
+        "PaperP1.FinitePoissonCharlierConversion.actual_signed_measure_conversion",
+        "PaperP1.PoissonCharlierConversion.actual_regular_bound"
+      ],
+      "proposed_revision": "Replace the logarithm step by the absolute exponential Taylor tail and finite-product perturbation, state the explicit finite conversion first, then substitute p<=2^C/N and the separately established arithmetic estimate forC_2. Keep beta, covariance and the quadratic coefficient distinct.",
+      "impact": "Removes the2p<1 analytic restriction and supplies an explicit finite estimate for the whole probability range0<=p<=1. The actual critical regular-set reference has error4|beta-c2|+K_C*(N^(-2)+|c2|/N), with K_C chosen uniformly before all varying data. This does not prove the missing arithmetic C_2=O(a_N), completeT17.4, or assert a new law approximation. Proved coverage77/167.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10619 jobs); actual axiom audit passed for all 6130 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3847 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.83 GiB. Actual finite-law l1 completion, summable singleton coefficients, exact Poisson exponential and quadratic signed-measure identification, unrestricted Banach exponential Taylor bounds, finite-product perturbation and explicit finite Poisson–Charlier conversion are proved. The actual regular-set reference has uniform error4|beta-c2|+K_C*(N^(-2)+|c2|/N), with no2p<1 premise. The arithmetic covariance scale C_2=O(a_N) remains open; T17.4 is in progress and adds no proved coverage. Coverage77/167 (main28/73, companion49/94); confirmed findings84. No external mathematical input, BCN premise, Paper C port, dependency download, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
