@@ -3136,6 +3136,13 @@ import PaperP1
 #print axioms PaperP1.ActualReferenceAdmissibility.quadratic_of_bounds
 #print axioms PaperP1.ActualReferenceAdmissibility.uniform_quadratic_probability
 #print axioms PaperP1.ActualReferenceAdmissibility.uniform_hermite_probability
+#print axioms PaperP1.AdjacentHermiteReferencePhase.uniform_leading_lower
+#print axioms PaperP1.AdjacentHermiteReferencePhase.uniform_probability_gap
+#print axioms PaperP1.AdjacentReferencePhase.exact_gap
+#print axioms PaperP1.AdjacentReferencePhase.leadingGap_pos
+#print axioms PaperP1.AdjacentReferencePhase.uniform_relative
+#print axioms PaperP1.AdjacentReferencePhase.uniform_ratio
+#print axioms PaperP1.AdjacentReferencePhase.uniform_probability_gap
 #print axioms PaperP1.AlignedPairRank.units_residual_bound
 #print axioms PaperP1.AlignedPairRank.channel_bound
 #print axioms PaperP1.AlignedPairRank.actual_intersection_bound
@@ -5860,6 +5867,7 @@ import PaperP1
 #print axioms PaperP1.AtomicProbabilityMetric.triangle
 #print axioms PaperP1.AtomicProbabilityMetric.reference_stability
 #print axioms PaperP1.AtomicProbabilityMetric.signed_distance
+#print axioms PaperP1.AtomicProbabilityMetric.pair_stability
 #print axioms PaperP1.AtomicProbabilityMetric.reference_stability_signed
 #print axioms PaperP1.AtomicSignedLaw.integrable_of_summable
 #print axioms PaperP1.AtomicSignedLaw.ofSequence_singleton
@@ -6401,6 +6409,9 @@ import PaperP1
 #print axioms PaperP1.QuadraticPoisson.reference_singleton
 #print axioms PaperP1.QuadraticPoisson.main_8_1
 #print axioms PaperP1.QuadraticPoisson.main_8_1_fract
+#print axioms PaperP1.QuadraticReferenceDistance.singleton_difference
+#print axioms PaperP1.QuadraticReferenceDistance.signed_distance
+#print axioms PaperP1.QuadraticReferenceDistance.totalVariation_exact
 #print axioms PaperP1.RawRecurrence.summable_residual
 #print axioms PaperP1.RawRecurrence.norm_nonneg
 #print axioms PaperP1.RawRecurrence.shifted_test_sum

@@ -3569,3 +3569,8 @@ Actual Poisson and quadratic signed references have universal parameter Lipschit
 ## Actual conditional mean and uniform negative Palm deviation
 
 For every fixed maximum number of sources, actual negative conditional deviation is at mostN^(-1/2+epsilon) and source deletion costsN^(-1+epsilon), without BCN. Actual conditional Bochner means, the exact positive/negative decomposition and arbitrary nonnegative source averaging are checked. The source-specific positive excess remains open; T2.7 is in progress. No new finding or numbered completion. Coverage77/167, confirmed findings87.
+
+
+## Actual adjacent-reference distance constants are checked
+
+The ordinary quadratic same-mean distance is exactly|alpha-beta|*norm(Pi_mu*Delta^2)/2, and its actual TV is half that. Literal adjacent fixed-height quadratic references have the full uniform moving-phase equivalent, with actual probability witnesses. Adjacent Hermite references have the same leading TV. Original-count distance equivalents and optimality remain open. No new finding or numbered completion. Coverage77/167, findings87.

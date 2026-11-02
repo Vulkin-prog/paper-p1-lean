@@ -1296,3 +1296,9 @@ public import PaperP1.Model.SourceConditionalDeviations
 public import PaperP1.Model.SourceConditionalCountMean
 
 public import PaperP1.Asymptotics.ConditionalNegativeDeviation
+
+public import PaperP1.Probability.QuadraticReferenceDistance
+
+public import PaperP1.Asymptotics.AdjacentReferencePhase
+
+public import PaperP1.Asymptotics.AdjacentHermiteReferencePhase

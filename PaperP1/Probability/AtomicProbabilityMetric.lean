@@ -45,6 +45,14 @@ theorem signed_distance (P Q : ProbabilityMeasure ℕ) :
   change (∑' k, |realMass P k - realMass Q k|) = 2 * ((∑' k, |realMass P k - realMass Q k|) / 2)
   ring
 
+theorem pair_stability (P Q R S : ProbabilityMeasure ℕ) :
+    |totalVariation P Q - totalVariation R S| ≤ totalVariation P R + totalVariation Q S := by
+  have h1 := reference_stability P Q S
+  have h2 := reference_stability S P R
+  rw [totalVariation_symm S P, totalVariation_symm S R] at h2
+  have h := abs_sub_le (totalVariation P Q) (totalVariation P S) (totalVariation R S)
+  linarith only [h1, h2, h]
+
 theorem reference_stability_signed (P Q R : ProbabilityMeasure ℕ) :
     |totalVariation P Q - totalVariation P R| ≤
       (∑' k : ℕ, |((Q : Measure ℕ).toSignedMeasure - (R : Measure ℕ).toSignedMeasure) {k}|) / 2 := by

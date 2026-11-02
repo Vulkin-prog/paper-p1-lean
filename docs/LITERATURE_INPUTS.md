@@ -3744,3 +3744,58 @@ Coverage77/167 (main28/73, companion49/94), findings87 unchanged.
 No new mathematical finding, external input, BCN premise, PaperC
 port, dependency download, manuscript-byte change or Palomar
 registration is introduced.
+
+
+## Adjacent explicit-reference distance from the literal channel increment
+
+Stable ID: `P1-PROB-ADJACENT-REFERENCE-PHASE`. Status: **proved unconditional reference-to-reference distances; source original-count equivalents remain open**.
+
+The actual distances between adjacent explicit references now have
+their exact coefficient and uniform moving-phase equivalents, without
+BCN, an actual-cumulant comparison or any count-law error input.
+For every nonnegative common meanmu and arbitrary realalpha,beta,
+
+    ||Q(mu,alpha)-Q(mu,beta)||_1
+      = |alpha-beta|/2 * ||Pi_mu*Delta^2||_1.
+
+This is the ordinary sum of absolute singleton masses of actual signed
+measures. When the two references are probabilities, their actual
+total variation is exactly |alpha-beta|/4 times the same norm.
+All coefficients, infinite sums and the factor2 between l1 andTV
+are proved, including the zero-mean endpoint of the signed identity.
+
+The exact coefficient increment from heighth to h+1 is the literal
+heightMass_(h+1), with no asymptotic substitution. Therefore the
+ordinary adjacent-reference distance is exactly
+
+    |heightMass_(h+1)|/2 * ||Pi_lambda*Delta^2||_1.
+
+For each fixedh>=3, define the positive moving leading term
+
+    E_h = phaseMass_(h+1)/2 * ||Pi_lambda*Delta^2||_1.
+
+For everyepsilon>0, one threshold precedes allN,L in the critical band
+and |gap_h/E_h-1|<=epsilon. The phase includes the actual residue and
+nominal mean, and the Poisson norm is evaluated at that same moving
+mean. Its positivity follows from the proved lower bound
+||Pi_lambda*Delta^2||_1>=2exp(-lambda). Actual probability witnesses
+for the two adjacent quadratic references have TV gap_h/2, hence
+the full equivalent E_h/2=phaseMass_(h+1)*norm/4.
+
+Adjacent literal Hermite probabilities have the SAME uniform leading
+total-variation equivalent E_h/2. A proved four-law metric stability
+inequality bounds the change of the pair distance by the sum of the
+two quadratic/Hermite comparison costs. Their checked error is
+negligible on E_h: a positive lower bound d_C,h/N for E_h/2 follows
+from the phase lower bound and the compact nominal-mean bound.
+The comparison uses actual probability witnesses and ordinary signed
+singleton errors, not formal generating functions as distributions.
+
+These statements compare two constructed references. They do not
+prove a leading distance from the original count to either reference,
+a count-law remainder, an actual-cumulant remainder or optimality.
+Those parts of main18.1,18.3,19.1 remain open and all three rows stay
+in progress. No numbered completion is added: coverage77/167
+(main28/73, companion49/94), findings87 unchanged. No new mathematical
+finding, external input, BCN premise, PaperC port, dependency download,
+manuscript-byte change or Palomar registration is introduced.
