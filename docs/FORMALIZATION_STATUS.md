@@ -4638,3 +4638,69 @@ Original manuscript bytes, compiler/dependency pins and the later Palomar
 milestone are preserved; no dependency download or axiom is introduced.
 
 Verified Lean v4.36.0-rc2 full build (10835 jobs), actual Audit.lean kernel audit (6714 declarations; only propext, Classical.choice, Quot.sound), 4431 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.41 GiB. The finite absolute-activity decomposition and fixed-order dependent product mass N^(-1+eta) are unconditional. Full and connected actual absolute centered activity at every fixed positive order are at most N^(-1/2+eta) under the existing ordinary explicit BCN premise, uniformly over all dyadic subgrounds. Zero marginals and incompatible families are included; no fixed-order theorem is used at growing order. Companion T14.1 stays in progress for its sharper connected 4/5 exponent and contact bound. Coverage 77/167; improvements 89.
+
+
+## Actual quartic component factorization and source-scale repeated-index error
+
+Two further parts of main 16.1 are now checked on the actual original
+model: nonconnected quartic component factorization and the complete
+repeated-index error at the source 3/2 scale under explicit BCN.
+
+A finite four-element partition without singleton parts is either one
+block or exactly two two-element parts. Applied to an actual full-support
+relation, this classifies the canonical effective-space components.
+Nonzero actual centered activity forces every local marginal to be positive;
+this is proved from exact zero-marginal cancellation, not assumed.
+Consequently every nonconnected actual four-site family I with c(I)!=0
+has actual disjoint two-site subsets e,f such that
+
+    e union f = I,
+    rho(I) = rho(e)+rho(f),
+    c(I) = c(e)*c(f).
+
+The subsets are obtained from the canonical effective-space partition;
+finite-part reindexing identifies their moments and nullities exactly.
+The factorization and nullity additivity use the checked canonical direct
+partition, actual infinite-model moment factorization and exact part
+images. No arithmetic or BCN premise is needed for this finite geometry.
+This existence result is not yet an identification of the sum over all
+unordered direct edge pairs with the source D22 population.
+
+Write C2 for the actual signed pair activity and C4 for the signed sum over
+ALL four-element families. The exact heterogeneous identity gives
+
+    kappa4 - 24*C4 + 12*C2^2 = repeatedRemainder.
+
+For any nonnegative individual marginals p_x bounded by P, a checked finite
+bound retains every term:
+
+    |repeatedRemainder| <= 72*P*A3 + 72*P^2*A2 + 6*P^3*mu,
+
+where A2,A3 are the full actual absolute centered activities and mu=sum p_x.
+The triple sum, two-site quadratic weights and diagonal fourth powers are
+bounded separately before taking their total absolute value. The finite
+bound needs no asymptotic estimate.
+
+For every critical length and every G contained in the dyadic block, the
+proved marginal cap P<=K/N, bounded actual mean, BCN-dependent half-power
+A3 and pair-activity bound yield
+
+    |kappa4(G)-24*C4(G)+12*C2(G)^2| <= N^(-3/2+eta)
+
+for every eta>0, eventually uniformly in G. The pair-weight contribution
+actually costs N^(-5/2+eta), and the diagonal contribution costs N^-3.
+The constants and thresholds are chosen before N. No target fourth-cumulant
+comparison is assumed, and no incompatible family or repeated index is
+silently removed.
+
+This proves the complete repeated-index precision used in the source
+argument, conditional only on its already inventoried ordinary explicit
+BCN premise. The remaining work includes the exact unordered direct-pair
+population decomposition, its comparison with C2^2/2, and the sharp
+incompatible/connected quartic estimates. No claim kappa4=24*K4 with the
+source error is made yet. Main 16.1 stays in progress; coverage remains
+77/167 (main 28/73, companion 49/94), improvements remain 89.
+No new external input, axiom, dependency download, source-byte change or
+Palomar registration is introduced.
+
+Verified Lean v4.36.0-rc2 full build (10847 jobs), actual Audit.lean kernel audit (6728 declarations; only propext, Classical.choice, Quot.sound), 4445 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.39 GiB. The exact nonconnected quartic pair factorization, nullity additivity and finite repeated-index bound are unconditional. Under the existing ordinary explicit BCN premise, the full repeated remainder relative to 24*C4-12*C2^2 is at most N^(-3/2+eta) uniformly over all dyadic subgrounds. The exact unordered direct-pair population and its sharp product/incompatible comparisons remain open; main 16.1 stays in progress. Coverage 77/167; confirmed improvements 89.

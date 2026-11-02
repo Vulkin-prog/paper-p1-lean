@@ -3683,3 +3683,8 @@ The entire finite identity displayed in the proof of main 16.1 is proved over an
 ## Coarse absolute centered activity at every fixed positive order
 
 A finite actual centering decomposition bounds absolute activity by dependent product mass and lower-order actual dependent joint masses. Product mass is unconditionally at most N^(-1+eta); under explicit BCN the full absolute activity, hence the connected activity, is at most N^(-1/2+eta) for every fixed positive order and every dyadic subground. Companion T14.1 is now in progress for its sharper 4/5 exponent and contact claim. No new numbered completion or finding: coverage 77/167, improvements 89.
+
+
+## Actual quartic factorization and repeated-index precision
+
+Every nonconnected nonzero actual quartic coefficient factors over two canonical pair components, with exact nullity additivity. All repeated-index corrections satisfy the finite bound 72*P*A3+72*P^2*A2+6*P^3*mu, which is uniformly N^(-3/2+eta) under explicit BCN. The direct-pair-product and incompatible quartic comparisons remain open; main 16.1 is still in progress. No new numbered completion or finding. Coverage 77/167, confirmed improvements 89.

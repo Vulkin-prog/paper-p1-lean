@@ -1388,3 +1388,15 @@ public import PaperP1.Asymptotics.DependentProductMass
 public import PaperP1.Model.AbsoluteActivityDecomposition
 
 public import PaperP1.Asymptotics.CoarseFixedAbsoluteActivityUnderBCN
+
+public import PaperP1.Combinatorics.FourFinpartition
+
+public import PaperP1.Affine.FourthFullSupportComponents
+
+public import PaperP1.Model.FourthRunComponents
+
+public import PaperP1.Algebra.FourthRepeatedIndexCost
+
+public import PaperP1.Model.FourthRunRemainder
+
+public import PaperP1.Asymptotics.FourthRepeatedRunCostUnderBCN

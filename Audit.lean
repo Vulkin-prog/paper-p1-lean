@@ -131,6 +131,7 @@ import PaperP1
 #print axioms PaperP1.Affine.effectiveCenteredMoment_bound
 #print axioms PaperP1.Affine.effectiveCenteredMoment_coarse_bound
 #print axioms PaperP1.Affine.fullSupportRelation_of_centeredMoment_ne_zero
+#print axioms PaperP1.FourthFullSupportComponents.connected_or_two_pairs
 #print axioms PaperP1.Affine.fullRelations_image
 #print axioms PaperP1.Affine.fullRelations_card
 #print axioms PaperP1.Affine.fullSupport_card_lower
@@ -674,6 +675,11 @@ import PaperP1
 #print axioms PaperP1.FourthFactorialCumulant.weighted_complement
 #print axioms PaperP1.FourthFactorialCumulant.pairSquare_eq
 #print axioms PaperP1.FourthFactorialCumulant.exact_formula
+#print axioms PaperP1.FourthRepeatedIndexCost.triple_bound
+#print axioms PaperP1.FourthRepeatedIndexCost.pair_weight_bound
+#print axioms PaperP1.FourthRepeatedIndexCost.pair_bound
+#print axioms PaperP1.FourthRepeatedIndexCost.diagonal_bound
+#print axioms PaperP1.FourthRepeatedIndexCost.bound
 #print axioms PaperP1.GreedyShortKernel.mono
 #print axioms PaperP1.GreedyShortKernel.independent_family
 #print axioms PaperP1.GreedyShortKernel.sparse_subspace_basis
@@ -3528,6 +3534,7 @@ import PaperP1
 #print axioms PaperP1.FixedWindowBranching.finite_source_bound
 #print axioms PaperP1.FixedWindowBranching.badStarts_card_critical
 #print axioms PaperP1.FixedWindowBranching.original_windows_critical
+#print axioms PaperP1.FourthRepeatedRunCostUnderBCN.uniform_bound
 #print axioms PaperP1.GeneralBranchingTheorem.reindexed_windows
 #print axioms PaperP1.GeneralBranchingTheorem.dilation_conclusion
 #print axioms PaperP1.GeneralBranchingTheorem.companion_T1_15
@@ -4409,6 +4416,7 @@ import PaperP1
 #print axioms PaperP1.FiniteStageCounts.initial_cover
 #print axioms PaperP1.FiniteStageCounts.decreasing_identity
 #print axioms PaperP1.FiniteStageCounts.decreasing_bound
+#print axioms PaperP1.FourFinpartition.top_or_two_pairs
 #print axioms PaperP1.GraphStarPartition.admissible_iff_isolated_marked
 #print axioms PaperP1.GraphStarPartition.mem_atoms
 #print axioms PaperP1.GraphStarPartition.atoms_cover
@@ -5107,9 +5115,15 @@ import PaperP1
 #print axioms PaperP1.Model.dyadic_marginal_reference_isProbability
 #print axioms PaperP1.FiniteSplitLp.finiteSum_restrict
 #print axioms PaperP1.FiniteSplitLp.moment_root_eq_lpNorm
+#print axioms PaperP1.FourthRunComponents.positive_marginals
+#print axioms PaperP1.FourthRunComponents.images_disjoint
+#print axioms PaperP1.FourthRunComponents.images_union
+#print axioms PaperP1.FourthRunComponents.disconnected_factorization
 #print axioms PaperP1.FourthRunFactorialCumulant.eq_subset_data
 #print axioms PaperP1.FourthRunFactorialCumulant.exact_formula
 #print axioms PaperP1.FourthRunFactorialCumulant.zero_marginal_restriction
+#print axioms PaperP1.FourthRunRemainder.exact_cost
+#print axioms PaperP1.FourthRunRemainder.finite_bound
 #print axioms PaperP1.FreeComponentRank.intersection_le_components_add_defects
 #print axioms PaperP1.FreeComponentRank.components_le_intersection_add_cost
 #print axioms PaperP1.FreeComponentRank.component_intersection_abs_bound
