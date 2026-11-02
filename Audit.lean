@@ -1813,6 +1813,11 @@ import PaperP1
 #print axioms PaperP1.EffectiveWindowLists.even_space_selection
 #print axioms PaperP1.EffectiveWindowLists.lift_selection
 #print axioms PaperP1.EffectiveWindowLists.subset_window_lists
+#print axioms PaperP1.EndpointAlignedTriplePool.parameters_card
+#print axioms PaperP1.EndpointAlignedTriplePool.radius_budget
+#print axioms PaperP1.EndpointAlignedTriplePool.pool_card
+#print axioms PaperP1.EndpointAlignedTriplePool.families_card
+#print axioms PaperP1.EndpointAlignedTriplePool.source_mem_families
 #print axioms PaperP1.EnlargedPairGeometry.geometric_swap
 #print axioms PaperP1.EnlargedPairGeometry.union_swap
 #print axioms PaperP1.EnlargedPairGeometry.offset_abs
@@ -3439,6 +3444,10 @@ import PaperP1
 #print axioms PaperP1.AlignedTargetTripleProbability.uniform_point_bound
 #print axioms PaperP1.AlignedTripleCount.uniform_count
 #print axioms PaperP1.AlignedTripleCount.uniform_joint_mass
+#print axioms PaperP1.AllAlignedTargetTripleMass.source_mem_hosts
+#print axioms PaperP1.AllAlignedTargetTripleMass.all_actual_sources
+#print axioms PaperP1.AllAlignedTargetTripleMass.mass_le_sum
+#print axioms PaperP1.AllAlignedTargetTripleMass.uniform_mass
 #print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound_succ
 #print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound
 #print axioms PaperP1.AllPairRankUnderBCN.nonaligned_pair_bound
@@ -3714,6 +3723,12 @@ import PaperP1
 #print axioms PaperP1.EmptyReplicaMoment.block_eq_one
 #print axioms PaperP1.EmptyReplicaMoment.sum_constant
 #print axioms PaperP1.EmptyReplicaMoment.positive_moment
+#print axioms PaperP1.EndpointAlignedTripleMass.hosts_card
+#print axioms PaperP1.EndpointAlignedTripleMass.host_data
+#print axioms PaperP1.EndpointAlignedTripleMass.source_mem_hosts
+#print axioms PaperP1.EndpointAlignedTripleMass.all_actual_sources
+#print axioms PaperP1.EndpointAlignedTripleMass.uniform_count
+#print axioms PaperP1.EndpointAlignedTripleMass.uniform_mass
 #print axioms PaperP1.EnlargedAlignedPairTheorem.uniform_bounds
 #print axioms PaperP1.EnlargedAlignedPairTheorem.fixed_height_residual
 #print axioms PaperP1.EnlargedAlignedPairTheorem.fixed_height_loss
@@ -3776,6 +3791,8 @@ import PaperP1
 #print axioms PaperP1.FixedChannelMassTheorem.source_error
 #print axioms PaperP1.FixedChannelMassTheorem.source_positive_phase
 #print axioms PaperP1.FixedChannelMassTheorem.companion_T2_5
+#print axioms PaperP1.FixedChannelPairProbability.uniform_bound
+#print axioms PaperP1.FixedChannelPairProbability.uniform_coarse
 #print axioms PaperP1.FixedContactCenteredActivity.uniform_bound
 #print axioms PaperP1.FixedCountMomentBoundsUnderBCN.uniform_factorial_upper
 #print axioms PaperP1.FixedCountMomentBoundsUnderBCN.uniform_factorial_bound

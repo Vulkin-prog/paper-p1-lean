@@ -1623,3 +1623,7 @@ public import PaperP1.Asymptotics.ThreeWindowRankProbability
 public import PaperP1.Asymptotics.PhysicalTargetTripleProbability
 public import PaperP1.Asymptotics.PhysicalTargetTripleMass
 public import PaperP1.Asymptotics.InteriorAlignedTripleMass
+public import PaperP1.Asymptotics.FixedChannelPairProbability
+public import PaperP1.Arithmetic.EndpointAlignedTriplePool
+public import PaperP1.Asymptotics.EndpointAlignedTripleMass
+public import PaperP1.Asymptotics.AllAlignedTargetTripleMass
