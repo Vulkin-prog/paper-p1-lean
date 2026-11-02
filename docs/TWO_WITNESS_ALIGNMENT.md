@@ -309,14 +309,46 @@ The shifted antidiagonal identity is a finite bijection with its exact
 zero prefix. No analytic-value or target tail premise is used to assert
 these conclusions.
 
+## Actual polynomial auxiliary values and finite word lists
+
+`BivariateEvaluation` defines nested integer-polynomial evaluation in
+any commutative ring and proves its compatibility with integer-point
+casting. Its finite reciprocal coefficient sum, scaled by x^a*y^b,
+is exactly the polynomial evaluation at nonzero field coordinates.
+
+`BivariateReciprocalValue` expands every actual reciprocal polynomial
+times a branch as the literal finite sum of scalar monomial shifts.
+It proves convergence and the real reciprocal-branch value formula.
+Scaling gives the actual polynomial evaluation times the branch value.
+
+`BiquadraticAuxiliaryValue.primitive_pole_budget` proves the full
+remaining-pole budget for each nonzero primitive quotient, retaining
+the source r,s<=q assumptions. This hypothesis is needed to prevent
+unrelated natural-subtraction saturation outside the source ranks.
+`scaled_value` handles zero quotient members separately and proves
+that the literal scaled numerator value equals the actual sum over
+its four polynomial evaluations and scaled branch values. The identity
+is not an assumed analytic-value premise.
+
+`BiquadraticWordEnumeration` constructs injective root lists from the
+actual finite word sets. The four offset sets are exactly
+[empty,I,K,I symmetricDifference K], with lengths 2*blockRank(r,chi).
+Every finite product on the list is the corresponding product on the
+literal offset set. The actual absolute offset bounds are proved for
+all characters, including the empty list. No arbitrary branch list is
+silently declared to enumerate a word.
+
 ## Remaining obligations
 
-The reciprocal polynomial real evaluation must still identify the
-scaled literal numerator value with the polynomial-family auxiliary.
-The finite branch lists must be enumerations of the actual word offsets.
-The explicit remaining-pole scaling and height threshold must turn the
-proved tail estimate into the final integer separation. The norm's
-evaluation-zero lemma remains conditional on that actual auxiliary
-integer value being zero. No full T9.5 result or new numbered coverage
-is claimed. No new external estimate assumption, Paper C port or
-Palomar registration is introduced.
+The explicit remaining-pole scaling must bound the actual auxiliary
+value by (B+1)^(O(q))/N. The enumerated branch squares and positivity
+must be identified with the actual positive integer roots at the
+source square point, including the third root with its overlap sign.
+The final height threshold and integer separation must then prove
+that this actual auxiliary integer value is zero and apply the already
+proved norm evaluation identity. The formula-level source norm must
+also be linked explicitly with a conjugate-product norm certificate or
+Algebra.norm in a degree-four field for the source moreover clause.
+An explicit field-norm model has not yet been constructed. No full T9.5 result or new numbered
+coverage is claimed. No new external estimate assumption, Paper C port
+or Palomar registration is introduced.

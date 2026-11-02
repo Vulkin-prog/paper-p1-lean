@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5473 audited theorem/lemma declarations**. This
+- The project currently has **5491 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2496,3 +2496,6 @@ Real branch-value and numerator majorant checkpoint verification: Lean v4.36.0-r
 
 
 Actual bivariate value and vanishing-tail checkpoint verification: Lean v4.36.0-rc2 full build passed (10289 jobs); actual axiom audit passed for all 5473 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3188 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.18 GiB. Literal total-degree bivariate evaluation is defined and proved absolutely convergent under the actual geometric coefficient majorant. An actual vanishing prefix gives the quantitative value bound 2*C*(M+1)*(R*t)^M. Branch values, finite sums, scalar multiples and literal monomial shifts have their proved real values. Reciprocal polynomial evaluation, finite-word enumeration linkage, remaining-pole scaling and final integer separation remain open. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 75. No new external estimate assumption, additional Paper C source, manuscript-byte change or Palomar registration.
+
+
+Actual auxiliary-value and word-enumeration checkpoint verification: Lean v4.36.0-rc2 full build passed (10297 jobs); actual axiom audit passed for all 5491 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3206 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.17 GiB. Actual polynomial evaluation has its finite reciprocal scaling identity and integer-point casting compatibility. The literal scaled numerator value equals the actual four-polynomial auxiliaryValue. Nonzero primitive quotient members satisfy the full remaining-pole budget under the source rank bounds; zero members are handled directly. Actual finite word sets supply injective lists with exact products, lengths and offset bounds. Explicit 1/N scaling, positive integer word-root realization, final integer separation and an explicit degree-four field-norm certificate for the moreover clause remain open. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 75. No new external estimate assumption, additional Paper C source, manuscript-byte change or Palomar registration.

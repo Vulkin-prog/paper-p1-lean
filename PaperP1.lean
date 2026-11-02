@@ -939,3 +939,8 @@ public import PaperP1.Analysis.RungeSeriesValues
 public import PaperP1.Analysis.WeightedGeometricTail
 public import PaperP1.Analysis.BivariateSeriesValue
 public import PaperP1.Analysis.BivariateSeriesOperations
+
+public import PaperP1.Algebra.BivariateEvaluation
+public import PaperP1.Analysis.BivariateReciprocalValue
+public import PaperP1.Analysis.BiquadraticAuxiliaryValue
+public import PaperP1.Arithmetic.BiquadraticWordEnumeration

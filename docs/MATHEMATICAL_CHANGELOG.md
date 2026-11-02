@@ -3274,3 +3274,13 @@ majorant. Its vanishing prefix gives the explicit value bound
 shift values are identified. Reciprocal polynomial evaluation, word
 list linkage, pole scaling and the final integer separation remain open.
 No new independent finding or numbered result is counted.
+
+
+P1-MATH-0075 actual-value checkpoint: finite reciprocal polynomial
+evaluation and the scaled full numerator/auxiliary identity are proved.
+Every nonzero primitive coefficient has the required remaining-pole
+budget under the source rank bounds; zero members are handled directly.
+The literal finite word sets supply injective root lists with exact
+products and offset bounds. The 1/N scaling, integer root realization
+and final integer separation remain open. No new independent finding
+or numbered result is counted.

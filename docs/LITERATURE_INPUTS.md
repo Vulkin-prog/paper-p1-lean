@@ -2135,3 +2135,21 @@ expected values. Reciprocal polynomial real evaluation, finite-word
 list linkage, remaining-pole scaling and the final integer separation
 remain open. No external estimate assumption, new Paper C source or
 Palomar record is introduced.
+
+
+## Actual scaled auxiliary value and literal finite root lists
+
+Stable ID: `P1-ANALYTIC-AUXILIARY-VALUE-IDENTITY`. Status: **proved**,
+realization components of companion T9.5.
+
+Actual polynomial evaluation commutes with integer-point casting and
+has the literal finite reciprocal scaling formula. Real values of
+reciprocal-polynomial branches converge and scale to their polynomial
+evaluations. The actual scaled full numerator equals the four-term
+auxiliary value. The remaining-pole budget is proved for nonzero
+primitive coefficients with the source rank bounds retained; zero
+members are treated directly. Literal finite word sets supply injective
+root lists with exact products, cardinalities and offset bounds.
+The explicit 1/N scaling, integer word-root identification and final
+integer separation remain open. No external estimate assumption, new
+Paper C source or Palomar record is introduced.
