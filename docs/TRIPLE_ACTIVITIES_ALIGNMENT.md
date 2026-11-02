@@ -141,6 +141,28 @@ counting their conclusions as completed numbered results. This completes
 the source cumulant/repeated-index assembly and adds no independent new
 mathematical finding beyond the already recorded improvements.
 
+## Uniform actual independent target mass
+
+`WindowTargetHosts` lifts every actual target with a nontrivial effective
+intersection into the one-block finite effective-relation population. The
+source effective span is proved contained in the full span of its actual
+raw window values. A finite source enumeration preserves the value union
+exactly, including overlapping and internally defective source windows.
+No short basis or prime witness is assumed.
+
+`IndependentTargetMass.uniform_count` applies the complete half-count to
+prove N^(1/2+epsilon) actual targets after every source family of a fixed
+cardinality. `uniform_mass` combines this count with the actual
+heterogeneous critical-band marginals, giving N^(-1/2+epsilon) independent
+target mass. One threshold precedes the length, dyadic subfamily and
+source centers; zero source cardinality is allowed. `deficit_bound`
+consequently proves D_(2,1) <= A2 N^(-1/2+epsilon).
+
+This verifies the fixed-source target step of the main 11.1 source proof.
+It is not the claimed N^(-3/2+epsilon) full deficit estimate: the good
+channels need their sharper two-block compression count, and the weak/
+exceptional classes need their separate pair-activity estimates.
+
 ## Remaining obligations
 
 The actual pair-activity/independent-target deficit D_(2,1) from main

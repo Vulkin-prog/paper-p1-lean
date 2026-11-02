@@ -3135,3 +3135,12 @@ activity A2. Neither of their remaining arithmetic bounds is assumed.
 This completes a proof obligation, not a new independent improvement;
 confirmed improvements remain 72 and numbered coverage remains 72/167.
 See [alignment](TRIPLE_ACTIVITIES_ALIGNMENT.md).
+
+
+Independent target checkpoint: the actual fixed-source target count and
+independent mass are now proved, uniformly for every fixed source
+cardinality, including arbitrary overlaps and local defects. This
+verifies the source half-count step of main 11.1 and proves the literal
+D_(2,1) <= A2 N^(-1/2+epsilon) comparison. The sharper deficit estimate
+remains open; no new independent improvement is counted. Coverage stays
+72/167 and confirmed improvements stay 72.

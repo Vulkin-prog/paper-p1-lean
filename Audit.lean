@@ -2637,6 +2637,9 @@ import PaperP1
 #print axioms PaperP1.IncompatibleTripleSeed.subset_connected
 #print axioms PaperP1.IncompatibleTripleSeed.activity_eq_active
 #print axioms PaperP1.IncompatibleTripleSeed.independent_mass
+#print axioms PaperP1.IndependentTargetMass.uniform_count
+#print axioms PaperP1.IndependentTargetMass.uniform_mass
+#print axioms PaperP1.IndependentTargetMass.deficit_bound
 #print axioms PaperP1.InfiniteColoredConditionalSum.companion_T22_7
 #print axioms PaperP1.IrregularSeedMass.affine_sum
 #print axioms PaperP1.IrregularSeedMass.seed_family
@@ -4446,6 +4449,10 @@ import PaperP1
 #print axioms PaperP1.WindowFamilyConditional.conditional_nonneg
 #print axioms PaperP1.WindowFamilyConditional.conditional_le_one
 #print axioms PaperP1.WindowFamilyConditional.conditional_le_nominal
+#print axioms PaperP1.WindowTargetHosts.source_span_le_full
+#print axioms PaperP1.WindowTargetHosts.sourceValues_enumeration
+#print axioms PaperP1.WindowTargetHosts.lift_target
+#print axioms PaperP1.WindowTargetHosts.card_le_lists
 #print axioms PaperP1.PNT.AsymptoticHelpers.isLittleO_const_id_cocompact
 #print axioms PaperP1.PNT.AsymptoticHelpers.isLittleO_const_id_atTop2
 #print axioms PaperP1.PNT.AsymptoticHelpers.isLittleO_const_id_atBot2

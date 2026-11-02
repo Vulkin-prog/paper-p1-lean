@@ -1633,14 +1633,22 @@
         "PaperP1.IndependentTargetDeficit.pair_rank",
         "PaperP1.IndependentTargetDeficit.target_pair",
         "PaperP1.IndependentTargetDeficit.nonneg",
-        "PaperP1.IndependentTargetDeficit.incidence_formula"
+        "PaperP1.IndependentTargetDeficit.incidence_formula",
+        "PaperP1.WindowTargetHosts.source_span_le_full",
+        "PaperP1.WindowTargetHosts.sourceValues_enumeration",
+        "PaperP1.WindowTargetHosts.lift_target",
+        "PaperP1.WindowTargetHosts.card_le_lists",
+        "PaperP1.IndependentTargetMass.uniform_count",
+        "PaperP1.IndependentTargetMass.uniform_mass",
+        "PaperP1.IndependentTargetMass.deficit_bound"
       ],
       "literature_inputs": [
-        "P1-PROB-PAIR-TARGET-INCIDENCE"
+        "P1-PROB-PAIR-TARGET-INCIDENCE",
+        "P1-ARITH-INDEPENDENT-TARGET-MASS"
       ],
       "mathematical_changes": [],
-      "notes": "The literal actual pair-activity/independent-target deficit is defined. Effective pair nullity is identified with the intersection rank, and the target predicate with the sum of its two source spaces. Its nonnegativity and exact incidence-sum formula are proved. The uniform arithmetic N^(-3/2+epsilon) bound, pair partition and fixed-channel compression count remain open. This preparatory identification does not complete main 11.1. See TRIPLE_ACTIVITIES_ALIGNMENT.md.",
-      "validation": "Lean v4.36.0-rc2 full build passed (10153 jobs); actual axiom audit passed for all 5161 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2876 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.35 GiB. The literal pair/target deficit, its physical effective-space alignment and the exact all-order incidence bijection are proved. Actual nonzero centered coefficients meet every complementary span. The actual incompatible triple activity is at most its independent active mass plus ONE copy of D_(2,1); the independent mass has the complete N^(-3/2+epsilon) decay. The uniform arithmetic D_(2,1) estimate and third factorial-cumulant correction assembly remain open. Main 11.1, 11.2 and 11.3 stay in progress. Coverage remains 72/167 (main 25/73, companion 47/94); confirmed improvements are 72. No target estimate, new external theorem or Paper C source is assumed. No manuscript-byte change or Palomar registration.",
+      "notes": "The literal actual pair-activity/independent-target deficit is defined and aligned with physical effective pair intersection rank and the target intersection with the source sum. For every fixed source cardinality, actual dependent targets inject into one-block effective relation lists. The complete half-count gives N^(1/2+epsilon) actual targets and independent target mass N^(-1/2+epsilon), uniformly before L, G and every source family. Consequently the literal deficit is at most A2 times N^(-1/2+epsilon). This proves the fixed-source target-cost step of the source proof. The sharper N^(-3/2+epsilon) bound still requires the weak/exceptional/good pair partition and fixed-channel compression count. No arithmetic activity bound is assumed and this proposition stays in progress. See TRIPLE_ACTIVITIES_ALIGNMENT.md.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10173 jobs); actual axiom audit passed for all 5197 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2912 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.32 GiB. Every actual dependent target injects into one-block effective relation lists after exact source enumeration. The complete half-count proves N^(1/2+epsilon) targets and N^(-1/2+epsilon) independent target mass after every source family of a fixed cardinality, uniformly before L, G and all source centers, including overlaps and local defects. Consequently the literal D_(2,1) is bounded by A2 times N^(-1/2+epsilon). The full N^(-3/2+epsilon) deficit estimate still needs the pair partition and good-channel compression count; main 11.1 stays in progress. Coverage remains 72/167 and confirmed improvements remain 72. No deficit bound, new external input or Paper C source is assumed. No manuscript-byte change or Palomar registration.",
       "validation_commit": "7b4ebc0ddd92a9142403a40c3907d896b65e469e"
     },
     {

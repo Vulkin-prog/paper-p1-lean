@@ -1934,3 +1934,20 @@ marginals bound its correction by 12 K A2/N+2 K^3/N^2. The full third-
 cumulant comparison is reduced to the actual D_(2,1) and pair activity A2.
 Their source arithmetic decay estimates are not assumed and remain open.
 No new external theorem, literature estimate or Paper C code is introduced.
+
+
+## Actual independent dependent-target mass
+
+Stable ID: `P1-ARITH-INDEPENDENT-TARGET-MASS`. Status: **proved**,
+fixed-source target component of main 11.1.
+
+Every actual effective target intersection gives a nonzero one-block
+relation relative to the full raw source value span. Source enumeration
+preserves its literal union, and the proved half-count supplies
+N^(1/2+epsilon) actual targets for every fixed source cardinality.
+Actual heterogeneous marginal caps give independent mass
+N^(-1/2+epsilon), uniformly before all dyadic source families.
+The resulting D_(2,1) <= A2 N^(-1/2+epsilon) is proved, but the source
+full deficit estimate still needs its pair partition and good-channel
+compression count. No such estimate is assumed. No new external theorem
+or Paper C source is introduced.

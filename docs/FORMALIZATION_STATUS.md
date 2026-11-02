@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5190 audited theorem/lemma declarations**. This
+- The project currently has **5197 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2460,3 +2460,6 @@ Triple incidence checkpoint verification: Lean v4.36.0-rc2 full build passed (10
 
 
 Third factorial-cumulant checkpoint verification: Lean v4.36.0-rc2 full build passed (10169 jobs); actual axiom audit passed for all 5190 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2905 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.33 GiB. The actual original infinite run count has the complete third factorial-cumulant identity, including all repeated-index pair and cubic terms. Actual heterogeneous critical-band marginals give the uniform correction 12 K A2/N+2 K^3/N^2. The cumulant/positive connected activity comparison is reduced to exactly the actual D_(2,1) and pair activity A2, with the independent N^(-3/2+epsilon) term proved. The nonnegative A3-K3+ difference has the same deficit reduction. Neither remaining arithmetic activity estimate is assumed; main 11.1, 11.2 and 11.3 stay in progress. Coverage remains 72/167 and confirmed improvements remain 72. No new external input or Paper C source, manuscript-byte change or Palomar registration.
+
+
+Independent target checkpoint verification: Lean v4.36.0-rc2 full build passed (10173 jobs); actual axiom audit passed for all 5197 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2912 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.32 GiB. Every actual dependent target injects into one-block effective relation lists after exact source enumeration. The complete half-count proves N^(1/2+epsilon) targets and N^(-1/2+epsilon) independent target mass after every source family of a fixed cardinality, uniformly before L, G and all source centers, including overlaps and local defects. Consequently the literal D_(2,1) is bounded by A2 times N^(-1/2+epsilon). The full N^(-3/2+epsilon) deficit estimate still needs the pair partition and good-channel compression count; main 11.1 stays in progress. Coverage remains 72/167 and confirmed improvements remain 72. No deficit bound, new external input or Paper C source is assumed. No manuscript-byte change or Palomar registration.

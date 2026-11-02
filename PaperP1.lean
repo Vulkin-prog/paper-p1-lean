@@ -875,3 +875,6 @@ public import PaperP1.Model.ThirdRunFactorialCumulant
 public import PaperP1.Model.ThirdRunActivityComparison
 public import PaperP1.Asymptotics.RepeatedRunCost
 public import PaperP1.Asymptotics.ThirdCumulantReduction
+
+public import PaperP1.Model.WindowTargetHosts
+public import PaperP1.Asymptotics.IndependentTargetMass
