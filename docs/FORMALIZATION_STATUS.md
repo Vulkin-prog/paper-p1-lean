@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5900 audited theorem/lemma declarations**. This
+- The project currently has **5927 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2764,3 +2764,41 @@ Lean v4.36.0-rc2 full build passed (10519 jobs); actual axiom audit passed for a
 The actual profile endpoint estimate, its cap-growth-free variant, all logarithmic weights and uniform little-o limits are proved. Actual plane-polynomial grids and exact real box membership are constructed. Under the ordinary explicit named BCN plane bound, article13.5 has both its exact uniform big-O bound and uniform o(B) conclusion, strengthened to upper power caps with0<=a<1/2. The external BCN proof and geometric specialization remain open:13.4 is in progress,13.5 conditional, and proved coverage stays76/167. P1-MATH-0079 records the cap improvement; confirmed findings79. See [alignment](GROWING_DEGREE_ALIGNMENT.md).
 
 Lean v4.36.0-rc2 full build passed (10525 jobs); actual axiom audit passed for all 5900 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3616 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.93 GiB. Actual finite plane-polynomial integer grids, exact real floor boxes and a negation bijection to the previously used offset grid are proved. Convex logarithmic degree profiles prove the endpoint maximum and the cap-growth-free bound4sqrt(H)+e*(M^2+(log H)^2). All real-logarithmic weights and uniform little-o limits are internally proved. The actual source big-O and uniform o(B) grid-count conclusions retain PlaneCurvePointCount.UniformBound c kappa as an ordinary explicit argument. The external BCN proof and geometric plane-polynomial specialization remain open; no global axiom or completed proof of13.4 is introduced. Article13.5 is conditional and adds no proved coverage. P1-MATH-0079 records that only an upper degree cap and0<=a<1/2 are needed. Coverage76/167 (main28/73, companion48/94); confirmed findings79. The exact primary author version arXiv2302.04209v2, Theorem2 equation(27), page7 was checked. No extra Paper C source, dependency download, manuscript-byte change or Palomar registration.
+
+
+## Actual complete-relation words, squares and common curve
+
+The actual offset embedding sends a complete vertex index i to i-1,
+including the predecessor offset-1. It is injective and lies in the
+exact integer box[-B,B], B=L+1. The finite coefficient conversion and
+actual domain map prove literal support equality, not just a bound.
+Total word support equals actual physical support on the disjoint
+formal block copies, even when numerical windows overlap.
+
+The actual complete-relation subspace and basis transport to their
+actual word image by a proved injective linear equivalence. Dimension,
+both physical projection injectivities, evenness and support bounds
+are preserved. Complete prime-parity equations prove the actual
+selected natural product square; if that product is zero, its square
+status is handled directly. At actual centers x,y>=1, exact label
+casts identify word evaluation with that natural product's integer
+cast. Thus all actual image words are square-valued, without a supplied
+square-word conclusion.
+
+`CurveFromCompleteRelations.common_curve` reindexes the actual basis
+to a finite integer index and applies the proved common-curve theorem.
+Its inputs are the actual complete-relation certificate, rank>=2,
+physical basis support<=2q,1<=q<=B and the explicit point threshold.
+It constructs the actual curve certificate, point, degree<=48q and
+height<=(B+1)^(2472q). The actual grid lower bound uses the original
+relation-space rank and exceptional constant6, with the proved image
+projection injectivities and literal offset bounds.
+
+This is a finite bridge. The critical asymptotic point-threshold
+assembly, degree-one alignment and final nonaligned contradiction
+remain open for13.6. BCN retains its separate named explicit input
+and is not counted proved. Coverage76/167, confirmed findings79;
+no new correction, external input, Paper C source, cache download,
+manuscript-byte change or Palomar registration.
+
+Lean v4.36.0-rc2 full build passed (10531 jobs); actual axiom audit passed for all 5927 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3643 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.92 GiB. Actual complete relations map injectively to actual offset words at i-1. Literal supports, total physical support, actual image bases, dimension and both projection injectivities are preserved. Actual prime-parity equations prove the selected product square, including the zero-product case, and exact label casts prove square-valued word evaluation at the actual centers. The actual relation certificate with rank>=2, support<=2q and the explicit point threshold constructs the actual common curve; its actual grid count uses the original relation-space rank and exceptional constant6. No separate square, arbitrary word basis, support correspondence or target grid count is assumed. Critical asymptotic threshold assembly, degree-one alignment and the final nonaligned contradiction remain open for13.6; BCN remains separately explicit and unformalized. Coverage76/167 (main28/73, companion48/94); confirmed findings79. No new mathematical correction, external input, Paper C source, cache download, manuscript-byte change or Palomar registration.

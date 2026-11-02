@@ -1094,3 +1094,9 @@ public import PaperP1.Analysis.CurveDegreeProfile
 public import PaperP1.Analysis.CurveDegreeAsymptotics
 
 public import PaperP1.Arithmetic.PlaneCurvePointCount
+
+public import PaperP1.Arithmetic.CompleteRelationWordEmbedding
+
+public import PaperP1.Arithmetic.CompleteRelationWordSquares
+
+public import PaperP1.Arithmetic.CurveFromCompleteRelations

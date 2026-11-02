@@ -142,6 +142,44 @@ extension, with a coarse support bound there; the universal literal
 physical support cap2B also holds. No a=0 or varying-a claim is made.
 Neither manuscript is fully formalized. No Palomar registration occurs.
 
+## Actual words and the common-curve application
+
+The actual offset embedding sends a complete vertex index i to i-1,
+including the predecessor offset-1. It is injective and lies in the
+exact integer box[-B,B], B=L+1. The finite coefficient conversion and
+actual domain map prove literal support equality, not just a bound.
+Total word support equals actual physical support on the disjoint
+formal block copies, even when numerical windows overlap.
+
+The actual complete-relation subspace and basis transport to their
+actual word image by a proved injective linear equivalence. Dimension,
+both physical projection injectivities, evenness and support bounds
+are preserved. Complete prime-parity equations prove the actual
+selected natural product square; if that product is zero, its square
+status is handled directly. At actual centers x,y>=1, exact label
+casts identify word evaluation with that natural product's integer
+cast. Thus all actual image words are square-valued, without a supplied
+square-word conclusion.
+
+`CurveFromCompleteRelations.common_curve` reindexes the actual basis
+to a finite integer index and applies the proved common-curve theorem.
+Its inputs are the actual complete-relation certificate, rank>=2,
+physical basis support<=2q,1<=q<=B and the explicit point threshold.
+It constructs the actual curve certificate, point, degree<=48q and
+height<=(B+1)^(2472q). The actual grid lower bound uses the original
+relation-space rank and exceptional constant6, with the proved image
+projection injectivities and literal offset bounds.
+
+This is a finite bridge. The critical asymptotic point-threshold
+assembly, degree-one alignment and final nonaligned contradiction
+remain open for13.6. BCN retains its separate named explicit input
+and is not counted proved. Coverage76/167, confirmed findings79;
+no new correction, external input, Paper C source, cache download,
+manuscript-byte change or Palomar registration.
+
 ## Validation
 
 Lean v4.36.0-rc2 full build passed (10519 jobs); actual axiom audit passed for all 5879 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3594 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.94 GiB. Full article13.1 is proved: the actual complete-relation subspace and its actual transported basis have dimension >=d_xy-(2/3)B log(1/a)-KD(a) B/sqrt(log B) and literal physical support<=KS(a) B^a log B/loglog B. Both physical projections and the actual common square-class map are injective; every nonzero vector selects nonempty even sets in both formal blocks and has nonzero common class. All actual prime estimates, retained-component bounds, labelled incidence-core/route/ball arguments, witness deletion, final sparse kernel cuts, basis transport and logarithmic numerical estimates are internally proved. Constants KD(a),KS(a) precede C, with a C-dependent threshold; KS(a)=352/a is a safe explicit choice. P1-MATH-0006 propagates this constant order, and P1-MATH-0078 adds the endpoint a=1. No compatibility, nonalignment, non-overlap, short-cycle, sparse-basis or target-bound premise. Coverage76/167 (main28/73, companion48/94); findings78. No optimized constant, source-conclusion error, new external estimate, added Paper C source, dependency download, manuscript-byte change or Palomar registration.
+
+
+Actual-word bridge checkpoint: Lean v4.36.0-rc2 full build passed (10531 jobs); actual axiom audit passed for all 5927 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3643 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.92 GiB. Actual complete relations map injectively to actual offset words at i-1. Literal supports, total physical support, actual image bases, dimension and both projection injectivities are preserved. Actual prime-parity equations prove the selected product square, including the zero-product case, and exact label casts prove square-valued word evaluation at the actual centers. The actual relation certificate with rank>=2, support<=2q and the explicit point threshold constructs the actual common curve; its actual grid count uses the original relation-space rank and exceptional constant6. No separate square, arbitrary word basis, support correspondence or target grid count is assumed. Critical asymptotic threshold assembly, degree-one alignment and the final nonaligned contradiction remain open for13.6; BCN remains separately explicit and unformalized. Coverage76/167 (main28/73, companion48/94); confirmed findings79. No new mathematical correction, external input, Paper C source, cache download, manuscript-byte change or Palomar registration.

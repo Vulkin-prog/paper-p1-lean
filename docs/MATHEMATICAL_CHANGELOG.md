@@ -3454,3 +3454,8 @@ Full article13.1 is proved. P1-MATH-0006 now propagates through the full theorem
 ## P1-MATH-0079: upper degree caps and the subpolynomial endpoint
 
 The unconditionally proved analytic estimate D^2 H^(1/D)<=4sqrt(H)+e*(M^2+(log H)^2) removes the need for a lower growth condition on the cap M. Its logarithmic square is absorbed into sqrt B. Under the source degree-uniform BCN input, the full corollary13.5 reduction therefore needs only an upper power cap and permitsa=0. Bounded and polylogarithmic caps are included. BCN remains an explicit ordinary hypothesis with its Lean proof and geometric specialization open; no extra proved coverage is claimed. Coverage76/167, confirmed findings79.
+
+
+## Exact actual-code to word/curve compatibility
+
+The literal offset i-1, total physical support identity, actual image basis, integer-square evaluations and application of the proved common-curve and grid theorems are now verified from actual complete relations. This confirms the source compatibility of the constructions, including overlapping numerical windows and the zero-product edge case, without a new manuscript correction. Critical asymptotic thresholds, degree-one alignment and the final nonaligned contradiction remain open for13.6. Proved coverage76/167 and confirmed findings79 are unchanged.

@@ -2521,3 +2521,43 @@ source count has uniform constants before every varying degree,
 coefficient, field and cap. Only an upper power cap with0<=a<1/2 is
 needed; P1-MATH-0079 records this improvement. Proved coverage76/167,
 confirmed findings79. No additional Paper C source or cache download.
+
+
+## Actual complete-relation to square-word and curve bridge
+
+Stable ID: `P1-ALG-ACTUAL-RELATION-WORD-BRIDGE`. Status: **proved finite bridge**.
+
+The actual offset embedding sends a complete vertex index i to i-1,
+including the predecessor offset-1. It is injective and lies in the
+exact integer box[-B,B], B=L+1. The finite coefficient conversion and
+actual domain map prove literal support equality, not just a bound.
+Total word support equals actual physical support on the disjoint
+formal block copies, even when numerical windows overlap.
+
+The actual complete-relation subspace and basis transport to their
+actual word image by a proved injective linear equivalence. Dimension,
+both physical projection injectivities, evenness and support bounds
+are preserved. Complete prime-parity equations prove the actual
+selected natural product square; if that product is zero, its square
+status is handled directly. At actual centers x,y>=1, exact label
+casts identify word evaluation with that natural product's integer
+cast. Thus all actual image words are square-valued, without a supplied
+square-word conclusion.
+
+`CurveFromCompleteRelations.common_curve` reindexes the actual basis
+to a finite integer index and applies the proved common-curve theorem.
+Its inputs are the actual complete-relation certificate, rank>=2,
+physical basis support<=2q,1<=q<=B and the explicit point threshold.
+It constructs the actual curve certificate, point, degree<=48q and
+height<=(B+1)^(2472q). The actual grid lower bound uses the original
+relation-space rank and exceptional constant6, with the proved image
+projection injectivities and literal offset bounds.
+
+This is a finite bridge. The critical asymptotic point-threshold
+assembly, degree-one alignment and final nonaligned contradiction
+remain open for13.6. BCN retains its separate named explicit input
+and is not counted proved. Coverage76/167, confirmed findings79;
+no new correction, external input, Paper C source, cache download,
+manuscript-byte change or Palomar registration.
+
+Pinned Mathlib finite-function/Finsupp equivalences, injective domain maps, mapped supports, finite products, finite basis reindexing and actual image equivalences are used. Squares follow from the already proved actual prime-parity/product criterion. No additional external theorem or old Paper C file is introduced.
