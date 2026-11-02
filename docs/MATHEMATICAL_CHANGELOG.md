@@ -3217,3 +3217,14 @@ coefficient-level quotient vanishing theorem are proved. The actual
 source numerator/common-factor product identity is still required for
 the final primitive-order conclusion. No new independent improvement
 or completed numbered result is counted.
+
+
+P1-MATH-0074 primitive-order checkpoint: the actual common-factor
+reciprocal product identity and the source reduced-numerator vanishing
+order are now proved. The constructed primitive integer coefficient
+family has height at most (B+1)^(275q); its reduced numerator vanishes
+through the remaining pole weight plus the total degree of the removed
+factor. The argument includes zero family members and does not divide
+by D(x,y). Integer separation, character independence and the nonzero
+norm remain open. No new independent finding or completed numbered
+result is counted.

@@ -143,15 +143,37 @@ and proves for nonzero P with partial degrees at most a,b:
     order(reciprocal(P,a,b)) =a+b-totalDegree(P).
 
 Thus the exact order of the actual reciprocal common factor is proved.
-The product identity identifying the constructed old numerator with
-this factor times the new numerator is still required to instantiate
-the generic division theorem in the source construction. That identity
-is not inserted as an assumption to claim T9.5 complete.
+The next checkpoint below supplies the actual product identity and
+instantiates division in the source construction.
+
+## Actual primitive numerator division
+
+`BivariateReciprocalProduct` proves reconstruction from rectangular
+integer coefficients, embeds the actual nested series domain injectively
+in its fraction field, identifies every reciprocal with the corresponding
+polynomial evaluation at inverse variables, and proves reciprocal
+multiplication with arbitrary sufficient partial degree bounds.
+
+`BiquadraticNumeratorFactor` identifies the original indexed numerator
+with the sum over its four actual coefficient polynomials. It proves
+that the old numerator equals the actual reciprocal common factor times
+the reduced numerator. Zero coefficient polynomials are included; they
+do not impose spurious degree equalities.
+
+`BiquadraticPrimitiveOrder.exists_primitive_vanishing` constructs the
+same actual w,D,Q as the prior primitive-coefficient theorem, retaining
+nonzero D, a nonzero quotient member, no common nonunit divisor,
+reduced partial degrees and height (B+1)^(275q). With k=3q, a=degreeX D,
+b=degreeY D and e=totalDegree D, every coefficient of its reduced
+numerator of total degree at most (k-a)+(k-b)+e is zero. Equivalently,
+its order is at least (k-a)+(k-b)+e+1, exactly the source primitive-order
+step. This follows from the proved product identity and exact reciprocal
+order, without division by D(x,y). No target vanishing estimate is
+supplied as an external assumption.
 
 ## Remaining obligations
 
-Preservation of the required formal vanishing order after the proved
-primitive polynomial gcd division remains open. Formal word/character independence
+Formal word/character independence
 must still establish that the auxiliary is a nonzero function; a
 nonzero coefficient array alone does not do so for arbitrary branch
 data. The integer separation at the actual square point, nonzero

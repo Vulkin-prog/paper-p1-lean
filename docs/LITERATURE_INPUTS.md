@@ -2046,3 +2046,20 @@ The coefficient-level quotient vanishing rule is proved, but its actual
 source numerator/common-factor product identity remains open.
 No divided-numerator conclusion or final norm estimate is assumed.
 No new Paper C source or Palomar registration is introduced.
+
+
+## Actual primitive numerator order
+
+Stable ID: `P1-ALG-PRIMITIVE-NUMERATOR-ORDER`. Status: **proved**,
+formal-division component of companion T9.5.
+
+The actual finite reciprocal polynomial is identified with inverse-variable
+polynomial evaluation inside the fraction field of the nested series domain.
+Its multiplication law and the exact original-numerator/factor/reduced-numerator
+identity are proved. The constructed primitive coefficient family retains
+height (B+1)^(275q), nonzero membership and no common nonunit divisor.
+The reduced numerator vanishes through the remaining pole weight plus the
+total degree of the common factor. This proves the source primitive-order
+step, including zero members, without evaluating or dividing the common
+factor at the integer point. Integer separation and the nonzero norm
+remain open. No new external estimate, Paper C source or Palomar record.

@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5305 audited theorem/lemma declarations**. This
+- The project currently has **5326 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2481,3 +2481,6 @@ Primitive auxiliary coefficients checkpoint verification: Lean v4.36.0-rc2 full 
 
 
 Reciprocal series order checkpoint verification: Lean v4.36.0-rc2 full build passed (10229 jobs); actual axiom audit passed for all 5305 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3020 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.26 GiB. The actual bivariate reciprocal polynomial has exact order equal to its pole weight minus its total degree. The order multiplication law and coefficient-level quotient vanishing theorem are proved. Instantiating division still requires the actual numerator/common-factor product identity. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 74. No new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.
+
+
+Actual primitive-order checkpoint verification: Lean v4.36.0-rc2 full build passed (10235 jobs); actual axiom audit passed for all 5326 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3041 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.25 GiB. The actual original numerator/common-factor/reduced-numerator product identity and the exact primitive divided-numerator vanishing order are proved for the constructed integer coefficient family with height (B+1)^(275q). No division by the common factor at a point is used. Integer separation, character independence and the nonzero norm remain open. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 74. No new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.

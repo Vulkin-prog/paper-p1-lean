@@ -906,3 +906,7 @@ public import PaperP1.Algebra.IteratedPowerSeriesEquiv
 public import PaperP1.Algebra.BivariateSeriesOrder
 public import PaperP1.Algebra.BivariateTotalDegree
 public import PaperP1.Algebra.BivariateReciprocalSeries
+
+public import PaperP1.Algebra.BivariateReciprocalProduct
+public import PaperP1.Arithmetic.BiquadraticNumeratorFactor
+public import PaperP1.Arithmetic.BiquadraticPrimitiveOrder

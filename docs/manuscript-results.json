@@ -4817,19 +4817,41 @@
         "PaperP1.BivariateReciprocalSeries.toMultivariate_reciprocal",
         "PaperP1.BivariateReciprocalSeries.totalOrder_reciprocal",
         "PaperP1.BivariateReciprocalSeries.coefficient_reciprocal",
-        "PaperP1.BivariateReciprocalSeries.reciprocal_zero"
+        "PaperP1.BivariateReciprocalSeries.reciprocal_zero",
+        "PaperP1.BivariateReciprocalProduct.series_monomial",
+        "PaperP1.BivariateReciprocalProduct.iterated_monomial",
+        "PaperP1.BivariateReciprocalProduct.reciprocal_sum",
+        "PaperP1.BivariateReciprocalProduct.row_reconstruction",
+        "PaperP1.BivariateReciprocalProduct.rectangle_reconstruction",
+        "PaperP1.BivariateReciprocalProduct.embed_injective",
+        "PaperP1.BivariateReciprocalProduct.x_ne_zero",
+        "PaperP1.BivariateReciprocalProduct.y_ne_zero",
+        "PaperP1.BivariateReciprocalProduct.reverse_power",
+        "PaperP1.BivariateReciprocalProduct.embed_scalar",
+        "PaperP1.BivariateReciprocalProduct.evaluate_rectangle",
+        "PaperP1.BivariateReciprocalProduct.embed_reciprocal",
+        "PaperP1.BivariateReciprocalProduct.reciprocal_mul",
+        "PaperP1.BiquadraticNumeratorFactor.reciprocal_rectangle",
+        "PaperP1.BiquadraticNumeratorFactor.reciprocal_rectangle_mul",
+        "PaperP1.BiquadraticNumeratorFactor.numerator_eq_family",
+        "PaperP1.BiquadraticNumeratorFactor.reciprocal_factor",
+        "PaperP1.BiquadraticNumeratorFactor.fromPolynomials_factor",
+        "PaperP1.BiquadraticNumeratorFactor.numerator_factor",
+        "PaperP1.BiquadraticPrimitiveOrder.divided_vanishing",
+        "PaperP1.BiquadraticPrimitiveOrder.exists_primitive_vanishing"
       ],
       "literature_inputs": [
         "P1-ALG-TWO-WITNESS-AUXILIARY-BUDGET",
         "P1-ALG-TWO-WITNESS-RUNGE-CONSTRUCTION",
         "P1-ALG-TWO-WITNESS-PRIMITIVE-COEFFICIENTS",
-        "P1-ALG-BIVARIATE-RECIPROCAL-ORDER"
+        "P1-ALG-BIVARIATE-RECIPROCAL-ORDER",
+        "P1-ALG-PRIMITIVE-NUMERATOR-ORDER"
       ],
       "mathematical_changes": [
         "P1-MATH-0074"
       ],
-      "notes": "The actual finite Runge matrix, common denominator 4^(6q), entry height (B+1)^(28q), nonzero integer coefficient array and four coefficient polynomials of height (B+1)^(266q) are constructed. The actual formal numerator cancels through total degree 6q. A nonzero common integer polynomial factor is now extracted; every common divisor of the quotient family is a unit. At least one quotient polynomial is nonzero. Their partial degrees decrease by the actual degrees of the common factor and their heights are bounded by (B+1)^(275q), using the complete T9.4 factor-height theorem. The original numerator cancellation is retained. Preservation of the required vanishing order for the divided numerator, integer separation, function independence and the final nonzero norm remain open. This does not complete T9.5. See TWO_WITNESS_ALIGNMENT.md. The actual nested bivariate series now have their exact total order and multiplicative order law. The finite reciprocal polynomial has exact order a+b-totalDegree(P) for every nonzero bounded-degree P. A generic coefficient-level division theorem is proved from that exact order. Its source instantiation still needs the actual numerator/common-factor product identity; no divided-numerator order conclusion is assumed from the generic interface.",
-      "validation": "Lean v4.36.0-rc2 full build passed (10229 jobs); actual axiom audit passed for all 5305 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3020 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.26 GiB. The actual bivariate reciprocal polynomial has exact order equal to its pole weight minus its total degree. The order multiplication law and coefficient-level quotient vanishing theorem are proved. Instantiating division still requires the actual numerator/common-factor product identity. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 74. No new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.",
+      "notes": "The actual finite Runge matrix, common denominator 4^(6q), entry height (B+1)^(28q), nonzero integer coefficient array and four coefficient polynomials of height (B+1)^(266q) are constructed. The actual formal numerator cancels through total degree 6q. A nonzero common integer polynomial factor is now extracted; every common divisor of the quotient family is a unit. At least one quotient polynomial is nonzero. Their partial degrees decrease by the actual degrees of the common factor and their heights are bounded by (B+1)^(275q), using the complete T9.4 factor-height theorem. The original numerator cancellation is retained. Preservation of the required vanishing order for the divided numerator, integer separation, function independence and the final nonzero norm remain open. This does not complete T9.5. See TWO_WITNESS_ALIGNMENT.md. The actual nested bivariate series now have their exact total order and multiplicative order law. The finite reciprocal polynomial has exact order a+b-totalDegree(P) for every nonzero bounded-degree P. A generic coefficient-level division theorem is proved from that exact order. Its source instantiation still needs the actual numerator/common-factor product identity; no divided-numerator order conclusion is assumed from the generic interface. The actual source numerator is now proved to equal the reciprocal gcd times the reduced polynomial-family numerator. Reciprocal multiplication is proved using an injective embedding into the fraction field of the actual formal-series domain. The actual divided numerator has all coefficients through total degree (3q-degreeX D)+(3q-degreeY D)+totalDegree D equal to zero. This is the source primitive-order conclusion, instantiated for the constructed primitive integer family with height (B+1)^(275q), without division by a point value. The integer separation, character independence and final nonzero norm remain open.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10235 jobs); actual axiom audit passed for all 5326 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3041 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.25 GiB. The actual original numerator/common-factor/reduced-numerator product identity and the exact primitive divided-numerator vanishing order are proved for the constructed integer coefficient family with height (B+1)^(275q). No division by the common factor at a point is used. Integer separation, character independence and the nonzero norm remain open. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 74. No new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.",
       "validation_commit": "0c7ea31500f5cd5e458cc5b148066e8c39ca36db",
       "validation_history": [
         "1a6c2cb25140aff00068aa7fc35dc07227e58a08",
