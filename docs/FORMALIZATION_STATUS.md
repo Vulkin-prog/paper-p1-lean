@@ -4704,3 +4704,101 @@ No new external input, axiom, dependency download, source-byte change or
 Palomar registration is introduced.
 
 Verified Lean v4.36.0-rc2 full build (10847 jobs), actual Audit.lean kernel audit (6728 declarations; only propext, Classical.choice, Quot.sound), 4445 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.39 GiB. The exact nonconnected quartic pair factorization, nullity additivity and finite repeated-index bound are unconditional. Under the existing ordinary explicit BCN premise, the full repeated remainder relative to 24*C4-12*C2^2 is at most N^(-3/2+eta) uniformly over all dyadic subgrounds. The exact unordered direct-pair population and its sharp product/incompatible comparisons remain open; main 16.1 stays in progress. Coverage 77/167; confirmed improvements 89.
+
+
+## Unconditional actual pair rows and source-scale overlapping-edge costs
+
+The per-site actual pair-row estimate used in the proof of main 16.1
+is now proved unconditionally. For every eta>0, uniformly over critical
+lengths, all G contained in the dyadic block and every source x in that
+block, eventually
+
+    sum_(y in G, y!=x) |c({x,y})| <= p_x*N^eta.
+
+The local probability p_x is its exact actual marginal. No common-marginal
+replacement, source compatibility assumption or positive-marginal premise
+is used; if p_x=0, the whole row vanishes exactly.
+
+The proof transports the already checked fixed-source conditional mass
+step to original run events. Boolean indicator products are proved to
+depend only on tuple support, even for tuples with repetitions. Thus the
+source-excluding row is obtained without dropping diagonal terms from an
+identity that needed injectivity. The actual joint row, including y=x,
+is uniformly at most p_x*N^eta. For distinct x,y,
+
+    |c({x,y})| <= q({x,y})+p_x*p_y,
+    |c({x,y})| <= p_x.
+
+Actual marginals lie in [0,1]; the covariance bounds follow from the
+actual joint-mass antitonicity. The uniformly bounded actual mean absorbs
+the product-marginal row. All orders and thresholds are fixed before N.
+This row estimate does not use BCN.
+
+An exact finite incidence identity proves that summing every absolute
+row counts every unordered edge twice. If all p_x<=P and the absolute
+row at x is at most B*p_x, the actual finite product costs satisfy
+
+    sum_e c(e)^2 <= P*A2,
+    sum_x (sum_(y!=x)|c({x,y})|)^2 <= 2*B*P*A2.
+
+These sums retain repeated edges and bound all pairs of incident edges;
+no graph degree cap or independence of the filtered indicators is used.
+The second bound intentionally includes diagonal and both ordered
+neighbor choices, so it is an upper bound for the narrower distinct
+shared-vertex contribution in the source argument.
+
+Under the existing explicit BCN premise, insert the checked global
+pair-activity estimate, P<=K/N and the unconditional row bound B=N^eta.
+For every epsilon>0, both the actual repeated-edge square cost and full
+star-square cost are eventually at most N^(-3/2+epsilon), uniformly in
+every dyadic subground. This supplies the source remainder precision for
+these overlapping-edge cases. The source's sharper intermediate 5/3
+exponent is not asserted.
+
+The disjoint non-direct edge-pair population and the full direct-pair
+product comparison remain open. Main 16.1 therefore remains in progress.
+No numbered result or new mathematical finding is counted complete.
+Coverage stays 77/167 (main 28/73, companion 49/94); improvements stay 89.
+BCN is an ordinary explicit argument used only in the global pair-activity
+step. No new external input, axiom, dependency download, manuscript-byte
+change or Palomar registration is introduced.
+
+Verified Lean v4.36.0-rc2 full build (10857 jobs), actual Audit.lean kernel audit (6746 declarations; only propext, Classical.choice, Quot.sound), 4463 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.38 GiB. Actual per-site joint/absolute rows, repeated tuple support and finite repeated-edge/star-square bounds are unconditional. The source-scale N^(-3/2+epsilon) repeated/shared-vertex product costs use the existing ordinary explicit BCN premise. Disjoint non-direct edge products, the full direct-pair comparison and sharp connected/incompatible quartic estimates remain open; main 16.1 stays in progress. Coverage 77/167; confirmed improvements 89.
+
+
+## Pause at the requested usage threshold — 2026-11-02
+
+The user authorized autonomous continuation until approximately 5% of the
+Codex usage quota remained. The displayed remaining quota reached 5% after
+the pair-row and overlapping-edge checkpoint had passed the full build and
+kernel audit. No further mathematical development was started. This is a
+pause at the requested usage threshold, not completion of the formalization.
+
+The current compiler remains Lean v4.36.0-rc2. Numbered coverage is 77/167:
+28/73 main and 49/94 companion, with 89 confirmed mathematical improvements
+recorded for a future manuscript revision. The original v1.6 sources remain
+byte-for-byte preserved. Work, dependencies and caches remain on the Ubuntu
+root partition; the last measured free space is 15.38 GiB.
+
+Recent proved results include convergence of the actual original count to
+Poisson in total variation under the existing explicit BCN premise, transfer
+to the actual retained modification, the exact heterogeneous fourth factorial
+cumulant identity, a source-scale repeated-index error, unconditional per-site
+pair rows and source-scale overlapping-edge product costs. Qualitative Poisson
+convergence does not establish the manuscript's optimal rate or its quadratic
+reference approximation.
+
+On resumption, the immediate finite task for main 16.1 is to isolate the
+product cost from disjoint non-direct edge pairs, using the already checked
+repeated-edge and star-square bounds for all overlapping cases. The next
+geometric task is to identify the full unordered direct edge-pair sum with
+the disconnected quartic population. Its sharp comparison with half the
+squared signed pair sum, and the incompatible/connected quartic bounds,
+remain open. The numbered-result ledger and the dedicated fourth-cumulant
+alignment document record the exact current scope.
+
+Other remaining manuscript claims include sharp third-order and higher-order
+rates, growing-order estimates, the source retained-event identification and
+sharp exceptional-event rate, and the optimal quadratic/Poisson approximation.
+Palomar registrations remain deferred until full coverage and final alignment
+checks. No registration or completion claim is made at this checkpoint.

@@ -221,3 +221,61 @@ the new moment-transfer consequence is conditional only on BCN. Numbered
 coverage remains 77/167 (main 28/73, companion 49/94), confirmed improvements
 remain 88. No new external input, axiom, dependency download, source-byte
 change, or Palomar registration is introduced.
+
+
+## Actual original-run rows, including repeated tuple coordinates
+
+The per-site actual pair-row estimate used in the proof of main 16.1
+is now proved unconditionally. For every eta>0, uniformly over critical
+lengths, all G contained in the dyadic block and every source x in that
+block, eventually
+
+    sum_(y in G, y!=x) |c({x,y})| <= p_x*N^eta.
+
+The local probability p_x is its exact actual marginal. No common-marginal
+replacement, source compatibility assumption or positive-marginal premise
+is used; if p_x=0, the whole row vanishes exactly.
+
+The proof transports the already checked fixed-source conditional mass
+step to original run events. Boolean indicator products are proved to
+depend only on tuple support, even for tuples with repetitions. Thus the
+source-excluding row is obtained without dropping diagonal terms from an
+identity that needed injectivity. The actual joint row, including y=x,
+is uniformly at most p_x*N^eta. For distinct x,y,
+
+    |c({x,y})| <= q({x,y})+p_x*p_y,
+    |c({x,y})| <= p_x.
+
+Actual marginals lie in [0,1]; the covariance bounds follow from the
+actual joint-mass antitonicity. The uniformly bounded actual mean absorbs
+the product-marginal row. All orders and thresholds are fixed before N.
+This row estimate does not use BCN.
+
+An exact finite incidence identity proves that summing every absolute
+row counts every unordered edge twice. If all p_x<=P and the absolute
+row at x is at most B*p_x, the actual finite product costs satisfy
+
+    sum_e c(e)^2 <= P*A2,
+    sum_x (sum_(y!=x)|c({x,y})|)^2 <= 2*B*P*A2.
+
+These sums retain repeated edges and bound all pairs of incident edges;
+no graph degree cap or independence of the filtered indicators is used.
+The second bound intentionally includes diagonal and both ordered
+neighbor choices, so it is an upper bound for the narrower distinct
+shared-vertex contribution in the source argument.
+
+Under the existing explicit BCN premise, insert the checked global
+pair-activity estimate, P<=K/N and the unconditional row bound B=N^eta.
+For every epsilon>0, both the actual repeated-edge square cost and full
+star-square cost are eventually at most N^(-3/2+epsilon), uniformly in
+every dyadic subground. This supplies the source remainder precision for
+these overlapping-edge cases. The source's sharper intermediate 5/3
+exponent is not asserted.
+
+The disjoint non-direct edge-pair population and the full direct-pair
+product comparison remain open. Main 16.1 therefore remains in progress.
+No numbered result or new mathematical finding is counted complete.
+Coverage stays 77/167 (main 28/73, companion 49/94); improvements stay 89.
+BCN is an ordinary explicit argument used only in the global pair-activity
+step. No new external input, axiom, dependency download, manuscript-byte
+change or Palomar registration is introduced.

@@ -1400,3 +1400,13 @@ public import PaperP1.Algebra.FourthRepeatedIndexCost
 public import PaperP1.Model.FourthRunRemainder
 
 public import PaperP1.Asymptotics.FourthRepeatedRunCostUnderBCN
+
+public import PaperP1.Model.JointTupleSupport
+
+public import PaperP1.Combinatorics.UnorderedPairRows
+
+public import PaperP1.Model.PairRowActivity
+
+public import PaperP1.Asymptotics.ActualPairRowActivity
+
+public import PaperP1.Asymptotics.OverlappingPairProductCostUnderBCN

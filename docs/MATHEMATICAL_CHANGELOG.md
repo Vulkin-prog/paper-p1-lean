@@ -3688,3 +3688,8 @@ A finite actual centering decomposition bounds absolute activity by dependent pr
 ## Actual quartic factorization and repeated-index precision
 
 Every nonconnected nonzero actual quartic coefficient factors over two canonical pair components, with exact nullity additivity. All repeated-index corrections satisfy the finite bound 72*P*A3+72*P^2*A2+6*P^3*mu, which is uniformly N^(-3/2+eta) under explicit BCN. The direct-pair-product and incompatible quartic comparisons remain open; main 16.1 is still in progress. No new numbered completion or finding. Coverage 77/167, confirmed improvements 89.
+
+
+## Actual per-site covariance rows and overlap costs
+
+Fixed-source propagation is specialized exactly to actual original joint rows, including tuple repetitions. The unconditional absolute row bound retains p_x, including p_x=0. Finite repeated-edge and star-square bounds then give N^(-3/2+epsilon) under explicit BCN, supplying the source precision for overlapping edge products in main 16.1. The disjoint non-direct case remains open. No new numbered completion or finding: coverage 77/167, improvements 89.

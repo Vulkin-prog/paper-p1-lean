@@ -3155,6 +3155,9 @@ import PaperP1
 #print axioms PaperP1.ActualNominalReferenceComparison.uniform_upper
 #print axioms PaperP1.ActualNominalReferenceComparison.uniform_nonzero_bias_lower
 #print axioms PaperP1.ActualNominalReferenceComparison.uniform_two_sided
+#print axioms PaperP1.ActualPairRowActivity.uniform_joint_row
+#print axioms PaperP1.ActualPairRowActivity.uniform_absolute_row
+#print axioms PaperP1.ActualPairRowActivity.uniform_marginal_cap
 #print axioms PaperP1.ActualPrescribedDivisorBudget.actual_outside_height
 #print axioms PaperP1.ActualPrescribedDivisorBudget.actual_outside_divisor_count
 #print axioms PaperP1.ActualReferenceAdmissibility.quadratic_of_bounds
@@ -3807,6 +3810,8 @@ import PaperP1
 #print axioms PaperP1.OriginalWindowFamilyCounts.uniform_hosts
 #print axioms PaperP1.OriginalWindowFamilyMass.uniform_marginals
 #print axioms PaperP1.OriginalWindowFamilyMass.article_10_2
+#print axioms PaperP1.OverlappingPairProductCostUnderBCN.uniform_repeated_square
+#print axioms PaperP1.OverlappingPairProductCostUnderBCN.uniform_star_square
 #print axioms PaperP1.PairActivityUnderBCN.uniform_pair_activity
 #print axioms PaperP1.PairActivityUnderBCN.uniform_conversion
 #print axioms PaperP1.PairHostIndependentMass.finite_mass_cap
@@ -4657,6 +4662,7 @@ import PaperP1
 #print axioms PaperP1.TuplePositions.of_injected_seed
 #print axioms PaperP1.TuplePositions.mass_bound
 #print axioms PaperP1.UniformTransversal.exists_transversal
+#print axioms PaperP1.UnorderedPairRows.sum_rows
 #print axioms PaperP1.ZeroSumFreeRepresentations.mem_representations
 #print axioms PaperP1.ZeroSumFreeRepresentations.zeroSumFree_mono
 #print axioms PaperP1.ZeroSumFreeRepresentations.erase_representation
@@ -5235,6 +5241,11 @@ import PaperP1
 #print axioms PaperP1.Model.startFamilyJointMoment_eq_affineMass
 #print axioms PaperP1.Model.startFamilyJointMoment_pos_iff
 #print axioms PaperP1.Model.familyStartSystem_compatible_locally
+#print axioms PaperP1.JointTupleSupport.product_image
+#print axioms PaperP1.JointTupleSupport.family_eq_support
+#print axioms PaperP1.JointTupleSupport.prescribed_eq_support
+#print axioms PaperP1.JointTupleSupport.constant_one_support
+#print axioms PaperP1.JointTupleSupport.snoc_one_support
 #print axioms PaperP1.LargeBoundaryMass.mem_families
 #print axioms PaperP1.LargeBoundaryMass.joint_probability_bound
 #print axioms PaperP1.LargeBoundaryMass.boundary_probability_bound
@@ -5377,6 +5388,13 @@ import PaperP1
 #print axioms PaperP1.PairHostMoment.tupleValues_pair
 #print axioms PaperP1.PairHostMoment.badTuples_card
 #print axioms PaperP1.PairHostMoment.finite_second_bound
+#print axioms PaperP1.PairRowActivity.marginal_le_one
+#print axioms PaperP1.PairRowActivity.pair_absolute_bound
+#print axioms PaperP1.PairRowActivity.pair_absolute_le_marginal
+#print axioms PaperP1.PairRowActivity.row_bound
+#print axioms PaperP1.PairRowActivity.row_sum
+#print axioms PaperP1.PairRowActivity.repeated_square_bound
+#print axioms PaperP1.PairRowActivity.star_square_bound
 #print axioms PaperP1.PairSquareClassFourier.full_support_at
 #print axioms PaperP1.PairSquareClassFourier.pair_common_formula
 #print axioms PaperP1.PairSquareClassFourier.pair_moment_covariance
