@@ -1534,3 +1534,6 @@ public import PaperP1.Model.NonalignedActivityHostCap
 public import PaperP1.Asymptotics.NonalignedActivityUnderBCN
 public import PaperP1.Asymptotics.AlignedActivityPower
 public import PaperP1.Asymptotics.RefinedPairActivityUnderBCN
+public import PaperP1.Model.HomogeneousRunMass
+public import PaperP1.Asymptotics.HomogeneousSeedPropagation
+public import PaperP1.Asymptotics.HomogeneousChannelMass
