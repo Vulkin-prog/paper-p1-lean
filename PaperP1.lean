@@ -891,3 +891,9 @@ public import PaperP1.Asymptotics.OrderedPrimitiveMass
 public import PaperP1.Algebra.SmallIntegerKernel
 public import PaperP1.Arithmetic.BiquadraticAuxiliaryBudget
 public import PaperP1.Arithmetic.BiquadraticAuxiliaryCoordinates
+
+public import PaperP1.Algebra.BivariateRungeCoefficients
+public import PaperP1.Arithmetic.BiquadraticRungeMatrix
+public import PaperP1.Arithmetic.BiquadraticFormalNumerator
+public import PaperP1.Arithmetic.BiquadraticCoefficientPolynomials
+public import PaperP1.Arithmetic.BiquadraticAuxiliaryConstruction

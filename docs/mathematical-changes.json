@@ -3819,6 +3819,63 @@
       "validation_history": [
         "8d0c369c294e4fcbed9fbe08bfd5243bc8c19ccd"
       ]
+    },
+    {
+      "id": "P1-MATH-0074",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:rig:two-witnesses",
+        "number": "T9.5",
+        "page": 42,
+        "source": "companion_sections/pair_rigidity.tex",
+        "line": 277,
+        "statement_sha256": "8184bdbf23396e914181cfc3607def429f6cfb7f28d802887703a3d2004ed4c9"
+      },
+      "original_assumption": "The first linear-system-at-infinity stage of companion T9.5 obtains its numerator-coefficient bound from Cauchy estimates and invokes an elementary Siegel argument with unspecified absolute height exponents.",
+      "finding": "Finite Runge coefficient formulas replace the Cauchy estimate at this coefficient/kernel stage. For total degree at most 6q, the two-variable product coefficients have common denominator 2^(12q)=4^(6q), and the actual integer matrix entries have height at most (B+1)^(28q). Exact finite pigeonhole counting constructs a nonzero integer coefficient array of height (B+1)^(266q). Its actual formal numerator has all coefficients through total degree 6q equal to zero. The four integer coefficient polynomials have the required partial degree bounds and the same height, with at least one nonzero polynomial. Empty root lists are included.",
+      "evidence": [
+        "PaperP1.BivariateRungeCoefficients.weakComposition_bound",
+        "PaperP1.BivariateRungeCoefficients.coefficient_bound",
+        "PaperP1.BivariateRungeCoefficients.product_bound",
+        "PaperP1.BivariateRungeCoefficients.scaled_product_integral",
+        "PaperP1.BivariateRungeCoefficients.scaledCoefficient_spec",
+        "PaperP1.BivariateRungeCoefficients.scaled_height",
+        "PaperP1.BiquadraticRungeMatrix.rank_bound",
+        "PaperP1.BiquadraticRungeMatrix.slot_degree_bound",
+        "PaperP1.BiquadraticRungeMatrix.shift_identity",
+        "PaperP1.BiquadraticRungeMatrix.residual_degree",
+        "PaperP1.BiquadraticRungeMatrix.integerEntry_spec",
+        "PaperP1.BiquadraticRungeMatrix.integerEntry_height",
+        "PaperP1.BiquadraticRungeMatrix.exists_coefficients",
+        "PaperP1.BiquadraticFormalNumerator.coefficient_branch",
+        "PaperP1.BiquadraticFormalNumerator.coefficient_shift",
+        "PaperP1.BiquadraticFormalNumerator.coefficient_sum",
+        "PaperP1.BiquadraticFormalNumerator.coefficient_scalar",
+        "PaperP1.BiquadraticFormalNumerator.coefficient_numerator",
+        "PaperP1.BiquadraticFormalNumerator.exists_vanishing_numerator",
+        "PaperP1.BiquadraticCoefficientPolynomials.row_coefficient",
+        "PaperP1.BiquadraticCoefficientPolynomials.row_degree",
+        "PaperP1.BiquadraticCoefficientPolynomials.rectangle_outer_coefficient",
+        "PaperP1.BiquadraticCoefficientPolynomials.rectangle_coefficient",
+        "PaperP1.BiquadraticCoefficientPolynomials.rectangle_degreeY",
+        "PaperP1.BiquadraticCoefficientPolynomials.rectangle_swap",
+        "PaperP1.BiquadraticCoefficientPolynomials.rectangle_degreeX",
+        "PaperP1.BiquadraticCoefficientPolynomials.rectangle_height",
+        "PaperP1.BiquadraticCoefficientPolynomials.family_degrees",
+        "PaperP1.BiquadraticCoefficientPolynomials.family_height",
+        "PaperP1.BiquadraticCoefficientPolynomials.family_nonzero",
+        "PaperP1.BiquadraticAuxiliaryConstruction.exists_auxiliary"
+      ],
+      "proposed_revision": "Use the finite Runge coefficient count and denominator formulas in the initial coefficient estimate. The explicit bounds (B+1)^(28q) for matrix entries and (B+1)^(266q) for auxiliary polynomial coefficients suffice. Keep primitive gcd division, the subsequent tail/integer-gap estimate, formal character independence and the final nonzero norm argument separate.",
+      "impact": "Makes the initial two-witness coefficient and kernel construction entirely finite and algebraic, with explicit constants. It does not prove the remaining primitive division, integer-gap or norm steps, and no error in the original Cauchy bound or final proposition is asserted. T9.5 stays in progress and numbered coverage remains 72/167.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10203 jobs); actual axiom audit passed for all 5273 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2988 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.28 GiB. The actual Runge matrix has common denominator 4^(6q), integer entry height (B+1)^(28q) and a nonzero integer kernel array of height (B+1)^(266q). The actual nested square-root formal numerator cancels through total degree 6q. Its four integer coefficient polynomials have the required partial degrees and the same height, with at least one nonzero polynomial. No Cauchy estimate is needed for this coefficient/kernel stage (P1-MATH-0074). Primitive gcd division and vanishing-order preservation, function independence, integer separation and the nonzero norm remain open; T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements are 74. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

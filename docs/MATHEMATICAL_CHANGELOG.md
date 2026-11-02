@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**73 mathematical improvements are confirmed; no error in a manuscript conclusion
+**74 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -3182,3 +3182,19 @@ cardinalities; all source dimension inequalities and height absorption
 are proved. The actual Runge matrix and final norm polynomial remain
 open. This is a verified proof component; no new independent finding
 or completed numbered result is counted.
+
+
+## P1-MATH-0074 — Finite coefficient bounds for the two-witness auxiliary
+
+Finite Runge coefficients replace the first Cauchy coefficient estimate
+in T9.5. A common denominator 4^(6q), matrix height (B+1)^(28q),
+and integer auxiliary-coefficient height (B+1)^(266q) are proved.
+The actual formal numerator cancels through total degree 6q, and its
+four integer coefficient polynomials have the required degrees with
+at least one nonzero member.
+
+This is a proof improvement to the initial coefficient/kernel stage.
+Primitive division, the later integer gap and nonzero norm remain open;
+T9.5 is not counted complete. No error in the original analytic bound
+or the final manuscript conclusion is asserted. See
+[the exact alignment](TWO_WITNESS_ALIGNMENT.md).

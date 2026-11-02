@@ -48,13 +48,55 @@ For 1<=q<=B, the upper dimension bound gives
 (B+1)^[7(10+c)q]. Both inequalities are explicit natural-number
 statements, with no asymptotic premise left as an argument.
 
+## Actual Runge matrix and explicit coefficient heights
+
+`BivariateRungeCoefficients` proves the stars-and-bars coefficient bound
+for all root-list sizes, including zero. Finite binomial integrality
+gives the common denominator 2^(12q)=4^(6q) for every branch coefficient
+of total degree at most 6q. For root lists of total size at most 4q and
+offsets of absolute value at most B, the scaled integer coefficient has
+height at most (B+1)^(28q). No analytic estimate is needed.
+
+`BiquadraticRungeMatrix` constructs the literal rational convolution
+entry at each equation/slot and its integral multiple. Slot shifts are
+proved consistent with the source pole weights. The actual integer
+matrix has the stated entry height. The proved indexed integer kernel
+and dimension budget then give a nonzero coefficient array w with
+
+    |w_i| <=(B+1)^(266q).
+
+Every actual rational coefficient equation vanishes; no matrix or
+coefficient-height estimate is supplied as an unproved premise.
+
+## Actual formal numerator and integer coefficient polynomials
+
+`BiquadraticFormalNumerator` uses nested formal power series, with inner
+X and outer Y. Its four branch series are the actual products of the
+univariate square-root binomial series. Every coefficient is identified
+with the finite Runge formula. The numerator is the explicit finite sum
+over the coefficient slots, shifted by 3q-r_chi-a and 3q-s_chi-b.
+Its equation coefficients are exactly the constructed rational matrix
+applied to w. Thus every coefficient of total degree <=6q is zero.
+
+`BiquadraticCoefficientPolynomials` assembles the same array into four
+actual integer bivariate polynomials. Coefficient extraction recovers
+every slot exactly, so at least one polynomial is nonzero. Their partial
+degrees are at most 3q-r_chi and 3q-s_chi, and every integer coefficient
+has absolute value at most (B+1)^(266q). `exists_auxiliary` supplies all
+these facts and the actual formal numerator cancellation together.
+
+This replaces the first source Cauchy estimate by finite coefficient
+combinatorics and gives explicit height constants (P1-MATH-0074).
+It does not replace or prove the later integer-gap estimate.
+
 ## Remaining obligations
 
-The bounded integer matrix on these slots is still an arbitrary matrix.
-Its actual construction from the two-variable Runge coefficients, common
-denominator and height bound remain to be proved. Polynomial assembly,
-vanishing order after primitive gcd division, integer separation and the
-nonzero biquadratic norm with all degree and height bounds also remain
-open. The generic finite kernel statement is not counted as the target
-polynomial conclusion. No external theorem, new Paper C source or
-Palomar registration is introduced.
+Primitive polynomial gcd division and preservation of the required
+formal vanishing order remain open. Formal word/character independence
+must still establish that the auxiliary is a nonzero function; a
+nonzero coefficient array alone does not do so for arbitrary branch
+data. The integer separation at the actual square point, nonzero
+biquadratic norm and its final partial/total degree and height bounds
+are also open. No norm polynomial conclusion is inferred from the
+constructed low-order cancellation alone. No new external theorem,
+Paper C port or Palomar registration is introduced.

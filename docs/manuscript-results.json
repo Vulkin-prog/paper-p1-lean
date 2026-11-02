@@ -4754,14 +4754,48 @@
         "PaperP1.BiquadraticAuxiliaryCoordinates.triangular_sum",
         "PaperP1.BiquadraticAuxiliaryCoordinates.equation_card",
         "PaperP1.BiquadraticAuxiliaryCoordinates.equation_total_degree",
-        "PaperP1.BiquadraticAuxiliaryCoordinates.indexed_kernel"
+        "PaperP1.BiquadraticAuxiliaryCoordinates.indexed_kernel",
+        "PaperP1.BivariateRungeCoefficients.weakComposition_bound",
+        "PaperP1.BivariateRungeCoefficients.coefficient_bound",
+        "PaperP1.BivariateRungeCoefficients.product_bound",
+        "PaperP1.BivariateRungeCoefficients.scaled_product_integral",
+        "PaperP1.BivariateRungeCoefficients.scaledCoefficient_spec",
+        "PaperP1.BivariateRungeCoefficients.scaled_height",
+        "PaperP1.BiquadraticRungeMatrix.rank_bound",
+        "PaperP1.BiquadraticRungeMatrix.slot_degree_bound",
+        "PaperP1.BiquadraticRungeMatrix.shift_identity",
+        "PaperP1.BiquadraticRungeMatrix.residual_degree",
+        "PaperP1.BiquadraticRungeMatrix.integerEntry_spec",
+        "PaperP1.BiquadraticRungeMatrix.integerEntry_height",
+        "PaperP1.BiquadraticRungeMatrix.exists_coefficients",
+        "PaperP1.BiquadraticFormalNumerator.coefficient_branch",
+        "PaperP1.BiquadraticFormalNumerator.coefficient_shift",
+        "PaperP1.BiquadraticFormalNumerator.coefficient_sum",
+        "PaperP1.BiquadraticFormalNumerator.coefficient_scalar",
+        "PaperP1.BiquadraticFormalNumerator.coefficient_numerator",
+        "PaperP1.BiquadraticFormalNumerator.exists_vanishing_numerator",
+        "PaperP1.BiquadraticCoefficientPolynomials.row_coefficient",
+        "PaperP1.BiquadraticCoefficientPolynomials.row_degree",
+        "PaperP1.BiquadraticCoefficientPolynomials.rectangle_outer_coefficient",
+        "PaperP1.BiquadraticCoefficientPolynomials.rectangle_coefficient",
+        "PaperP1.BiquadraticCoefficientPolynomials.rectangle_degreeY",
+        "PaperP1.BiquadraticCoefficientPolynomials.rectangle_swap",
+        "PaperP1.BiquadraticCoefficientPolynomials.rectangle_degreeX",
+        "PaperP1.BiquadraticCoefficientPolynomials.rectangle_height",
+        "PaperP1.BiquadraticCoefficientPolynomials.family_degrees",
+        "PaperP1.BiquadraticCoefficientPolynomials.family_height",
+        "PaperP1.BiquadraticCoefficientPolynomials.family_nonzero",
+        "PaperP1.BiquadraticAuxiliaryConstruction.exists_auxiliary"
       ],
       "literature_inputs": [
-        "P1-ALG-TWO-WITNESS-AUXILIARY-BUDGET"
+        "P1-ALG-TWO-WITNESS-AUXILIARY-BUDGET",
+        "P1-ALG-TWO-WITNESS-RUNGE-CONSTRUCTION"
       ],
-      "mathematical_changes": [],
-      "notes": "The explicit integer pigeonhole kernel bound is proved, including actual box cardinalities, all matrix image bounds and a nonzero kernel vector of height (3 n H)^7 under 8 t<=7 n. For the biquadratic auxiliary, the actual four rectangular coefficient slot sets and triangular total-degree equation index set have exactly the source n and t cardinalities. The source lower/upper n bounds, exact t formula, strict sixfold gap and admissible dimension ratio are proved. The indexed kernel vector and height absorption to (B+1)^[7(10+c)q] are proved for every bounded integer matrix on these actual slots. The Runge coefficient matrix has not yet been constructed; common denominators, matrix heights, primitive polynomial coefficients, integer separation and nonzero norm remain open. This is preparation, not the full two-witness polynomial theorem. See TWO_WITNESS_ALIGNMENT.md.",
-      "validation": "Lean v4.36.0-rc2 full build passed (10193 jobs); actual axiom audit passed for all 5242 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2957 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.29 GiB. Actual integer box cardinalities and matrix image bounds prove the nonzero integer kernel vector of height (3 n H)^7. The biquadratic four rectangular coefficient slot sets and triangular equation set have the exact source cardinalities. All dimension-gap inequalities, indexed kernel transport and explicit (B+1)^[7(10+c)q] height absorption are proved. The actual Runge matrix, its denominator and entry heights, primitive gcd division, integer separation and nonzero norm remain open; T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 73. No external Siegel lemma, new estimate or Paper C source is assumed. No manuscript-byte change or Palomar registration.",
+      "mathematical_changes": [
+        "P1-MATH-0074"
+      ],
+      "notes": "The actual finite Runge coefficient matrix is now constructed on the four rectangular coefficient slot sets and triangular equation index set. A common denominator 2^(12q)=4^(6q) and integer matrix height (B+1)^(28q) are proved by finite combinatorics, including empty root lists. The actual integer kernel vector has height (B+1)^(266q). The nested two-variable formal numerator is the explicit sum of shifted square-root product series and has every coefficient of total degree <=6q equal to zero. Its four actual integer coefficient polynomials have the source partial degree bounds, the same explicit coefficient height and at least one nonzero member. No Cauchy estimate is needed for this coefficient/kernel stage. Primitive gcd division and preservation of the required vanishing order, integer separation, formal character independence and the nonzero norm polynomial with its final degree/height bounds remain open. This does not complete T9.5. See TWO_WITNESS_ALIGNMENT.md.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10203 jobs); actual axiom audit passed for all 5273 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2988 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.28 GiB. The actual Runge matrix has common denominator 4^(6q), integer entry height (B+1)^(28q) and a nonzero integer kernel array of height (B+1)^(266q). The actual nested square-root formal numerator cancels through total degree 6q. Its four integer coefficient polynomials have the required partial degrees and the same height, with at least one nonzero polynomial. No Cauchy estimate is needed for this coefficient/kernel stage (P1-MATH-0074). Primitive gcd division and vanishing-order preservation, function independence, integer separation and the nonzero norm remain open; T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements are 74. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.",
       "validation_commit": "1a6c2cb25140aff00068aa7fc35dc07227e58a08"
     },
     {

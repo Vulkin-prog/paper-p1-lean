@@ -1994,3 +1994,20 @@ indexed bounded matrix has the claimed nonzero indexed kernel vector.
 The actual Runge matrix, denominator, coefficient heights, primitive gcd
 division, integer gap and nonzero norm remain open. No external Siegel
 lemma or matrix-height bound is assumed; this does not complete T9.5.
+
+
+## Actual two-witness Runge matrix and formal cancellation
+
+Stable ID: `P1-ALG-TWO-WITNESS-RUNGE-CONSTRUCTION`. Status: **proved**,
+initial coefficient and kernel stage of companion T9.5.
+
+Finite stars-and-bars and binomial integrality give common denominator
+4^(6q), actual integer matrix height (B+1)^(28q), and an actual nonzero
+integer coefficient array of height (B+1)^(266q). The corresponding
+two-variable formal square-root numerator cancels through total degree
+6q. Four actual integer coefficient polynomials have the source degrees,
+the same height and at least one nonzero member. These use only existing
+audited Runge coefficient and formal-series results; no new external
+Cauchy or Siegel estimate and no additional Paper C source is assumed.
+Primitive gcd division, function independence, integer separation and
+the final nonzero norm are still open. T9.5 stays in progress.
