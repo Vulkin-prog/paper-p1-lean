@@ -4549,3 +4549,39 @@ Coverage stays 77/167 (main 28/73, companion 49/94); improvements stay 89.
 BCN is an ordinary explicit argument used only in the global pair-activity
 step. No new external input, axiom, dependency download, manuscript-byte
 change or Palomar registration is introduced.
+
+
+## Actual direct pair-product reduction
+
+Stable ID: `P1-PROB-DIRECT-PAIR-PRODUCT-REDUCTION`. Status: **finite reduction proved unconditionally; overlap scale under existing explicit BCN; disjoint non-direct bound unresolved**.
+
+The actual squared-pair comparison in the proof of main 16.1 has been
+reduced to an explicitly defined finite population of disjoint non-direct
+edge pairs. Write D for the sum of products c(e)c(f) over unordered,
+disjoint, distinct two-site edges with rho(e union f)=rho(e)+rho(f).
+Write B for the sum of |c(e)c(f)| over the corresponding disjoint pairs
+where this nullity equality fails. Both are literal finite original-model
+sums, including zero marginals and incompatible edge data.
+
+The exact arbitrary-weight identity separates the diagonal square term
+from all omitted unordered edge products. A finite star cover and the
+nonnegative elementary-symmetric inequality prove that all unordered
+shared-vertex products have weight at most half the sum of squared rows.
+Membership in the overlap population is proved equivalent to non-disjointness
+for every distinct pair of actual two-site edges. Thus, without arithmetic
+hypotheses,
+
+    |C2^2/2 - D| <= (repeatedSquare + starSquare)/2 + B.
+
+The checked source-scale repeated-edge and star-square bounds then give,
+under the already explicit ordinary BCN premise, for every epsilon>0,
+
+    |C2^2/2 - D| <= B + N^(-3/2+epsilon)
+
+eventually uniformly over all critical lengths and dyadic subgrounds.
+No estimate on B is assumed or asserted. The reduction is not counted as
+having proved the source D22 comparison. Identifying D with the full
+nonconnected quartic sum is also still open. Main 16.1 remains in progress;
+coverage stays 77/167 (main 28/73, companion 49/94), improvements stay 89.
+No new external input, axiom, dependency download, source-byte change or
+Palomar registration is introduced.

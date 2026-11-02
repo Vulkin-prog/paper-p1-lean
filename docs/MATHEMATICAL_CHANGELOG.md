@@ -3693,3 +3693,8 @@ Every nonconnected nonzero actual quartic coefficient factors over two canonical
 ## Actual per-site covariance rows and overlap costs
 
 Fixed-source propagation is specialized exactly to actual original joint rows, including tuple repetitions. The unconditional absolute row bound retains p_x, including p_x=0. Finite repeated-edge and star-square bounds then give N^(-3/2+epsilon) under explicit BCN, supplying the source precision for overlapping edge products in main 16.1. The disjoint non-direct case remains open. No new numbered completion or finding: coverage 77/167, improvements 89.
+
+
+## Exact isolation of the disjoint non-direct quartic product cost
+
+Actual unordered pair products are partitioned exactly into direct disjoint, non-direct disjoint and shared-vertex populations, with the repeated-edge term retained separately. The shared population is bounded by half the sum of squared rows. This leaves a literal non-direct positive sum, not an assumed target estimate. Main 16.1 stays in progress; coverage 77/167, improvements 89.

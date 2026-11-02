@@ -710,6 +710,8 @@ import PaperP1
 #print axioms PaperP1.MomentReconstruction.finite_uncentered_expansion
 #print axioms PaperP1.NonnegativePowerDifference.bound
 #print axioms PaperP1.OldBlockSelections.exists_selections
+#print axioms PaperP1.PairProductComparison.exact_difference
+#print axioms PaperP1.PairProductComparison.absolute_bound
 #print axioms PaperP1.PairwiseEqualSpan.exists_line
 #print axioms PaperP1.PairwiseEqualSpan.finrank_le_one
 #print axioms PaperP1.PlaneIntersection.realDot_int_cast
@@ -3389,6 +3391,7 @@ import PaperP1
 #print axioms PaperP1.DependentProductMass.uniform_seeded_mass
 #print axioms PaperP1.DependentProductMass.uniform_seed_orders
 #print axioms PaperP1.DependentProductMass.uniform_mass
+#print axioms PaperP1.DirectPairProductReductionUnderBCN.uniform_reduction
 #print axioms PaperP1.DisjointSquareEquations.combine
 #print axioms PaperP1.DisjointSquareEquations.single_equation
 #print axioms PaperP1.DisjointSquareEquations.two_equations
@@ -4637,6 +4640,12 @@ import PaperP1
 #print axioms PaperP1.SaturationGraph.directed_degrees_le_degree
 #print axioms PaperP1.SaturationGraph.degree_bound
 #print axioms PaperP1.SaturationGraph.maxDegree_bound
+#print axioms PaperP1.SharedPairProducts.overlapping_subset
+#print axioms PaperP1.SharedPairProducts.pair_mem_overlapping
+#print axioms PaperP1.SharedPairProducts.incident_eq_image
+#print axioms PaperP1.SharedPairProducts.incident_sum
+#print axioms PaperP1.SharedPairProducts.overlapping_cover
+#print axioms PaperP1.SharedPairProducts.overlapping_bound
 #print axioms PaperP1.SmallFinpartition.eq_top_without_singletons
 #print axioms PaperP1.SubsetSums.one
 #print axioms PaperP1.SubsetSums.succ_insert
@@ -5085,6 +5094,11 @@ import PaperP1
 #print axioms PaperP1.DirectActiveEnvelope.expected_factorial
 #print axioms PaperP1.DirectActiveEnvelope.expected_power
 #print axioms PaperP1.DirectActiveEnvelope.tail_probability
+#print axioms PaperP1.DirectPairProductComparison.direct_pair_iff
+#print axioms PaperP1.DirectPairProductComparison.nonDirectApartCost_nonneg
+#print axioms PaperP1.DirectPairProductComparison.omitted_decomposition
+#print axioms PaperP1.DirectPairProductComparison.overlapping_disjoint_nonDirect
+#print axioms PaperP1.DirectPairProductComparison.finite_bound
 #print axioms PaperP1.DyadicUnitFourierAggregate.pair_pattern_sum
 #print axioms PaperP1.DyadicUnitFourierAggregate.dyadic_unit_sum
 #print axioms PaperP1.DyadicUnitFourierAggregate.symmetric_unit_sum

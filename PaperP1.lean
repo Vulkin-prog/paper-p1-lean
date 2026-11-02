@@ -1410,3 +1410,11 @@ public import PaperP1.Model.PairRowActivity
 public import PaperP1.Asymptotics.ActualPairRowActivity
 
 public import PaperP1.Asymptotics.OverlappingPairProductCostUnderBCN
+
+public import PaperP1.Algebra.PairProductComparison
+
+public import PaperP1.Combinatorics.SharedPairProducts
+
+public import PaperP1.Model.DirectPairProductComparison
+
+public import PaperP1.Asymptotics.DirectPairProductReductionUnderBCN

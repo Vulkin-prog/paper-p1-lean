@@ -178,3 +178,39 @@ step. No new external input, axiom, dependency download, manuscript-byte
 change or Palomar registration is introduced.
 
 Verified Lean v4.36.0-rc2 full build (10857 jobs), actual Audit.lean kernel audit (6746 declarations; only propext, Classical.choice, Quot.sound), 4463 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.38 GiB. Actual per-site joint/absolute rows, repeated tuple support and finite repeated-edge/star-square bounds are unconditional. The source-scale N^(-3/2+epsilon) repeated/shared-vertex product costs use the existing ordinary explicit BCN premise. Disjoint non-direct edge products, the full direct-pair comparison and sharp connected/incompatible quartic estimates remain open; main 16.1 stays in progress. Coverage 77/167; confirmed improvements 89.
+
+
+## Exact pair-product reduction and the remaining arithmetic cost
+
+The actual squared-pair comparison in the proof of main 16.1 has been
+reduced to an explicitly defined finite population of disjoint non-direct
+edge pairs. Write D for the sum of products c(e)c(f) over unordered,
+disjoint, distinct two-site edges with rho(e union f)=rho(e)+rho(f).
+Write B for the sum of |c(e)c(f)| over the corresponding disjoint pairs
+where this nullity equality fails. Both are literal finite original-model
+sums, including zero marginals and incompatible edge data.
+
+The exact arbitrary-weight identity separates the diagonal square term
+from all omitted unordered edge products. A finite star cover and the
+nonnegative elementary-symmetric inequality prove that all unordered
+shared-vertex products have weight at most half the sum of squared rows.
+Membership in the overlap population is proved equivalent to non-disjointness
+for every distinct pair of actual two-site edges. Thus, without arithmetic
+hypotheses,
+
+    |C2^2/2 - D| <= (repeatedSquare + starSquare)/2 + B.
+
+The checked source-scale repeated-edge and star-square bounds then give,
+under the already explicit ordinary BCN premise, for every epsilon>0,
+
+    |C2^2/2 - D| <= B + N^(-3/2+epsilon)
+
+eventually uniformly over all critical lengths and dyadic subgrounds.
+No estimate on B is assumed or asserted. The reduction is not counted as
+having proved the source D22 comparison. Identifying D with the full
+nonconnected quartic sum is also still open. Main 16.1 remains in progress;
+coverage stays 77/167 (main 28/73, companion 49/94), improvements stay 89.
+No new external input, axiom, dependency download, source-byte change or
+Palomar registration is introduced.
+
+Verified Lean v4.36.0-rc2 full build (10865 jobs), actual Audit.lean kernel audit (6760 declarations; only propext, Classical.choice, Quot.sound), 4477 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.37 GiB. Exact arbitrary signed-weight square comparison, finite overlap cover and actual direct/non-direct pair partition are unconditional. The N^(-3/2+epsilon) overlap remainder uses the existing ordinary explicit BCN premise; the literal disjoint non-direct cost is retained without an assumed estimate. Main 16.1 stays in progress, coverage 77/167, improvements 89.
