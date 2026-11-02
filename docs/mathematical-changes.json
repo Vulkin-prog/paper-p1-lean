@@ -6216,7 +6216,8 @@
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "a9ddb0776ba438fb4e28b64710d6841c5df6cd25"
     }
   ]
 }
