@@ -1497,3 +1497,7 @@ public import PaperP1.Probability.PositiveCountBonferroni
 public import PaperP1.Model.ActiveEdgeObservables
 public import PaperP1.Model.ActiveEdgeBonferroni
 public import PaperP1.Asymptotics.PrincipalEdgeActivation
+public import PaperP1.Probability.SeededCountMoments
+public import PaperP1.Probability.NonnegativeActivation
+public import PaperP1.Asymptotics.ActualFamilyJointRows
+public import PaperP1.Asymptotics.ActiveEdgeMoments

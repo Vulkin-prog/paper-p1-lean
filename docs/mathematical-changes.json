@@ -5009,6 +5009,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "ccbdc75fa061b469f05781226a35013870d8e35d"
+    },
+    {
+      "id": "P1-MATH-0093",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:fixed:propagation",
+        "number": "6.3",
+        "page": 22,
+        "source": "main_sections/fixed_moments.tex",
+        "line": 105,
+        "statement_sha256": "a053ebcb00eb0a8b133d02a11c330ec2119e4122cb9304305b1a7b8e4858a659"
+      },
+      "original_assumption": "Main 6.3 states actual fixed-source propagation. Its uniform consequences for the activation probability and all fixed moments of an arbitrary deterministic family of fixed-size configurations are not stated.",
+      "finding": "For every fixed s>=1,r>=1 and epsilon>0, uniformly over every original dyadic subground and every family F of s-element configurations, E[Xi_F^r]<=N^epsilon*sum_F q and (sum_F q)*N^(-epsilon)<=P(Xi_F>0)<=sum_F q. This follows unconditionally from exact actual joint rows and finite seeded count-moment iteration, including zero source masses, irregular sites and arbitrary overlapping family members.",
+      "evidence": [
+        "PaperP1.SeededCountMoments.insert_product",
+        "PaperP1.SeededCountMoments.zero",
+        "PaperP1.SeededCountMoments.succ",
+        "PaperP1.SeededCountMoments.bound",
+        "PaperP1.SeededCountMoments.selected_pair_power",
+        "PaperP1.SeededCountMoments.value_le_count_power",
+        "PaperP1.SeededCountMoments.selected_family_power",
+        "PaperP1.NonnegativeActivation.truncation",
+        "PaperP1.NonnegativeActivation.relative_second_bound",
+        "PaperP1.ActualFamilyJointRows.append_support",
+        "PaperP1.ActualFamilyJointRows.uniform_row",
+        "PaperP1.ActiveEdgeMoments.uniform_moment",
+        "PaperP1.ActiveEdgeMoments.uniform_activation"
+      ],
+      "proposed_revision": "Add a positive-family corollary after main 6.3. Define Xi_F as the number of fully active configurations. State the fixed s,r and arbitrary-subfamily quantifiers explicitly, prove the relative moment bound via Xi_F<=Z^s and s(r-1) fixed extensions, then derive the activation bound by a finite second-moment truncation with no division by sum_F q.",
+      "impact": "Provides a general original-model conversion from a rare positive joint mass to an activation probability and all fixed positive moments with only an arbitrary subpower loss. It supports the principal-edge rare-event exponent without sharp factorial asymptotics. It asserts no multiplicative equivalent, growing-order regime or manuscript conclusion error.",
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (10965 jobs), source and ledger checks, actual axiom audit of 6936 declarations (only propext, Classical.choice and Quot.sound), and 4653 direct ledger/evidence declaration checks; Ubuntu root free space 15.17 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

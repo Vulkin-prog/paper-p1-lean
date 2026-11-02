@@ -3164,6 +3164,10 @@ import PaperP1
 #print axioms PaperP1.WordNormCertificate.element_ne_zero
 #print axioms PaperP1.WordNormCertificate.certificate
 #print axioms PaperP1.ActiveBlockCentresCount.uniform_count
+#print axioms PaperP1.ActiveEdgeMoments.uniform_moment
+#print axioms PaperP1.ActiveEdgeMoments.uniform_activation
+#print axioms PaperP1.ActualFamilyJointRows.append_support
+#print axioms PaperP1.ActualFamilyJointRows.uniform_row
 #print axioms PaperP1.ActualNominalReferenceComparison.lowerConstant_pos
 #print axioms PaperP1.ActualNominalReferenceComparison.actual_mean_nonneg
 #print axioms PaperP1.ActualNominalReferenceComparison.finite_upper
@@ -6695,6 +6699,8 @@ import PaperP1
 #print axioms PaperP1.MomentObstructionMoments.factorial_moment_eq_iff
 #print axioms PaperP1.MomentObstructionMoments.qLaw_factorial_moment
 #print axioms PaperP1.MomentObstructionMoments.pLaw_factorial_moment_of_ne
+#print axioms PaperP1.NonnegativeActivation.truncation
+#print axioms PaperP1.NonnegativeActivation.relative_second_bound
 #print axioms PaperP1.Probability.mem_tupleValues
 #print axioms PaperP1.Probability.tupleValues_subset
 #print axioms PaperP1.Probability.tupleValues_card
@@ -6858,6 +6864,13 @@ import PaperP1
 #print axioms PaperP1.SeededCenteredTruncation.pair_positive_mean
 #print axioms PaperP1.SeededCenteredTruncation.pointwise_truncation
 #print axioms PaperP1.SeededCenteredTruncation.finite_bound
+#print axioms PaperP1.SeededCountMoments.insert_product
+#print axioms PaperP1.SeededCountMoments.zero
+#print axioms PaperP1.SeededCountMoments.succ
+#print axioms PaperP1.SeededCountMoments.bound
+#print axioms PaperP1.SeededCountMoments.selected_pair_power
+#print axioms PaperP1.SeededCountMoments.value_le_count_power
+#print axioms PaperP1.SeededCountMoments.selected_family_power
 #print axioms PaperP1.SizeBiasedRecurrence.realMass_sizeBiased
 #print axioms PaperP1.SizeBiasedRecurrence.realMass_successor
 #print axioms PaperP1.SizeBiasedRecurrence.mixtureMass_nonneg
