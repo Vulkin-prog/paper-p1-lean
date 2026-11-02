@@ -653,6 +653,16 @@ import PaperP1
 #print axioms PaperP1.FinitePiExtension.extendEven_injective
 #print axioms PaperP1.FinitePiExtension.evenMap_extend
 #print axioms PaperP1.FinitePiExtension.even_injective_of_embedding
+#print axioms PaperP1.FiniteQuadraticTower.base_injective
+#print axioms PaperP1.FiniteQuadraticTower.index_card
+#print axioms PaperP1.FiniteQuadraticTower.finrank
+#print axioms PaperP1.FiniteQuadraticTower.root_zero
+#print axioms PaperP1.FiniteQuadraticTower.root_succ
+#print axioms PaperP1.FiniteQuadraticTower.root_square
+#print axioms PaperP1.FiniteQuadraticTower.basis_cons_zero
+#print axioms PaperP1.FiniteQuadraticTower.basis_cons_one
+#print axioms PaperP1.FiniteQuadraticTower.induction_on
+#print axioms PaperP1.FiniteQuadraticTower.adjoin_roots
 #print axioms PaperP1.FiniteSetRelativeRank.relative_rank_le_even_dimension
 #print axioms PaperP1.FiniteSetRelativeRank.matches_add_residual
 #print axioms PaperP1.FiniteSetRelativeRank.matches_add_residual_of_old_le
@@ -709,6 +719,11 @@ import PaperP1
 #print axioms PaperP1.GreedyShortKernel.independent_family
 #print axioms PaperP1.GreedyShortKernel.sparse_subspace_basis
 #print axioms PaperP1.GreedyShortKernel.physical_subspace_basis
+#print axioms PaperP1.IndependentQuadraticTower.tail_independent
+#print axioms PaperP1.IndependentQuadraticTower.sublist_square_step
+#print axioms PaperP1.IndependentQuadraticTower.field_and_square_descent
+#print axioms PaperP1.IndependentQuadraticTower.isField
+#print axioms PaperP1.IndependentQuadraticTower.square_descent
 #print axioms PaperP1.IntegerOverlapRoot.exists_root
 #print axioms PaperP1.integerPolynomialHeight_zero
 #print axioms PaperP1.coeff_natAbs_le_integerPolynomialHeight
@@ -806,6 +821,8 @@ import PaperP1
 #print axioms PaperP1.PrivateRankPeeling.exists_terminal
 #print axioms PaperP1.PrivateRankPeeling.trace_size_bound
 #print axioms PaperP1.PrivateRankPeeling.exists_terminal_real
+#print axioms PaperP1.QuadraticSquareDescent.square_iff
+#print axioms PaperP1.QuadraticSquareDescent.nonsquare_iff
 #print axioms PaperP1.QuotientRank.ker_modulo
 #print axioms PaperP1.QuotientRank.rank_add_kernel
 #print axioms PaperP1.QuotientRank.range_restricted_quotient
@@ -902,6 +919,8 @@ import PaperP1
 #print axioms PaperP1.SparseKernelBasis.kernel_basis_from_section
 #print axioms PaperP1.SparseKernelBasis.exists_sparse_kernel_basis
 #print axioms PaperP1.SparseKernelBasis.finite_equations
+#print axioms PaperP1.SplitRadicalField.list_independent
+#print axioms PaperP1.SplitRadicalField.source_field
 #print axioms PaperP1.SplitRootPolynomial.polynomial_factor
 #print axioms PaperP1.SplitRootPolynomial.polynomial_squarefree
 #print axioms PaperP1.SplitRootPolynomial.isRoot_iff

@@ -6464,3 +6464,50 @@ dependency download, original source change or Palomar registration
 is introduced.
 
 Verified with Lean v4.36.0-rc2: full lake build (11333 jobs), actual Audit.lean kernel-axiom audit (7726 declarations; only propext, Classical.choice, Quot.sound), all 5443 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.45 GiB.
+
+
+## The literal multiquadratic generic field and its degree
+
+The generic multiquadratic field in Step 1 of companion T1.7 is now
+constructed internally and proved to have degree 2^k. This advances
+the previously checked square-class independence to a literal field
+construction, rather than postulating an abstract extension degree.
+For every commutative base ring and finite radicand list, a recursively
+defined tower of actual quadratic algebras has an explicit free basis
+indexed by one binary choice per equation. Over a nontrivial base its
+finite rank is 2^k. The base embedding is proved injective, each actual
+radical generator squares to its specified base radicand, and those
+generators generate the entire algebra. A structural induction
+principle is proved on the literal tower.
+
+Over a characteristic-zero field, an exact one-step criterion says
+that a base element g becomes square after adjoining sqrt(f), f!=0,
+if and only if g or f*g is square in the base. This includes the
+reducible one-step algebra as well. Induction proves a full descent
+criterion for an independent radicand list: a base element g becomes
+square exactly when g times the product of some selected sublist is
+square in the original field. If every nonempty selected sublist has
+nonsquare product, each successive radical remains nonsquare and the
+literal tower is a field. No fieldhood or extension degree is assumed.
+
+The source application uses the actual scaled split radicands over
+Frac(F[X][Y]), for every characteristic-zero field F. Pairwise disjoint
+integer root lists, at least one nonempty root list per equation, and
+arbitrary nonzero constants prove the required sublist condition by
+the already checked nonsquare finite-product theorem. Every finite
+list of distinct equations therefore gives an actual generic field
+of degree 2^k. This remains true when F is algebraically closed; no
+smoothness or coefficient-height hypothesis enters this algebraic
+step.
+
+The explicit coordinate-ring quotient presentation and its embedding
+in this generic field, the finite birational sum-of-radicals projection,
+the projective and curve-degree arguments and the two-variable point
+counts remain open. Thus this is further checked algebraic groundwork
+for T1.7, not completion of the geometric count. T1.7 stays in_progress,
+coverage stays 79/167 and improvements stay 104; the source already
+uses this algebraic argument, so no new improvement identifier is
+assigned. No external counting input, dependency download, original
+manuscript change or Palomar registration is introduced.
+
+Verified with Lean v4.36.0-rc2: full lake build (11341 jobs), actual Audit.lean kernel-axiom audit (7745 declarations; only propext, Classical.choice, Quot.sound), all 5462 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.44 GiB.

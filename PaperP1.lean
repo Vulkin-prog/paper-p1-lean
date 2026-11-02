@@ -1685,3 +1685,7 @@ public import PaperP1.Model.PrincipalResidualDensity
 public import PaperP1.Asymptotics.PrincipalResidualDensity
 public import PaperP1.Algebra.ScaledSplitWordSquares
 public import PaperP1.Algebra.DisjointSplitSquareClasses
+public import PaperP1.Algebra.FiniteQuadraticTower
+public import PaperP1.Algebra.QuadraticSquareDescent
+public import PaperP1.Algebra.IndependentQuadraticTower
+public import PaperP1.Algebra.SplitRadicalField
