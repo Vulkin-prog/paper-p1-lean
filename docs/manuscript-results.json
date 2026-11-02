@@ -737,7 +737,8 @@
           "validation": "Verified under Lean v4.36.0-rc2: full lake build (10947 jobs), source and ledger checks, actual axiom audit of 6902 declarations (only propext, Classical.choice and Quot.sound), and 4619 direct ledger/evidence declaration checks; Ubuntu root free space 15.20 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
           "validation_commit": "693d743279f7e3630a86db05e549e677e312c674"
         }
-      ]
+      ],
+      "validation_commit": "ccbdc75fa061b469f05781226a35013870d8e35d"
     },
     {
       "label": "p1:arith:compression",
@@ -5346,7 +5347,8 @@
         "P1-MATH-0092"
       ],
       "notes": "\n\nThe literal positive count Xi of active edges in any deterministic finite\npair family is now constructed on the original infinite prime-sign model.\nIts value is the number of edges all of whose sites are active. Exact\nfinite-cylinder transport proves its first moment is the sum of actual\njoint masses and its positivity event is precisely the union of the edge\nevents. A finite combinatorial estimate bounds Xi by Z_G^2. For every\nR>0 and fixed m>=2 the actual truncation inequality is\n\n    sum_(e in F)q(e) <= R^2*P(Xi>0)+E[Z_G^m]/R^(m-2).\n\nThe first Bonferroni correction is proved for every integer-valued finite\ncount, then transported to the actual original edge count:\n\n    0 <= E[Xi]-P(Xi>0) <= E[Xi*(Xi-1)]/2.\n\nFor the literal principal channels 2:3 and 3:4, E[Xi]=beta exactly.\nTheir already proved positive beta phase and the unconditional subpower\nfixed count moments imply, for every fixed epsilon>0 and C,D, one uniform\nthreshold for all critical lengths and 8(L+1)<=H<=D(L+1),\n\n    N^(-2/3-epsilon) <= P(Xi>0) <= N^(-2/3+epsilon).\n\nThe proof chooses delta=epsilon/4, one fixed higher moment m=2+k with\ndelta*k>=2, and R=N^delta. The tail is bounded by N^(-3/2), which is\nabsorbed into half the positive beta lower bound. This needs neither BCN,\na complete signed pair profile, uniformly bounded fixed moments nor the\nsharp second-factorial-moment estimate. The logarithmic rare-event exponent\nis recorded as improvement P1-MATH-0092 for later manuscript integration.\nIt does not imply P(Xi>0)~beta or E[(Xi)_2]~beta^2; those sharp assertions\nof T1.17 remain open. T1.17 moves from not_started to in_progress; main\n3.4 stays in progress. Coverage remains 77/167 (main 28/73, companion 49/94),\nconfirmed improvements 92. No new external input, axiom, download,\noriginal-source change or Palomar registration is introduced.",
-      "validation": "Verified under Lean v4.36.0-rc2: full lake build (10957 jobs), source and ledger checks, actual axiom audit of 6923 declarations (only propext, Classical.choice and Quot.sound), and 4640 direct ledger/evidence declaration checks; Ubuntu root free space 15.18 GiB. Original manuscript bytes and all 167 statement hashes preserved."
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (10957 jobs), source and ledger checks, actual axiom audit of 6923 declarations (only propext, Classical.choice and Quot.sound), and 4640 direct ledger/evidence declaration checks; Ubuntu root free space 15.18 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "validation_commit": "ccbdc75fa061b469f05781226a35013870d8e35d"
     },
     {
       "label": "p1:arith:smallpart-budget",
