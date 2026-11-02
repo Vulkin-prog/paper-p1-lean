@@ -1440,3 +1440,21 @@ public import PaperP1.Model.UnrestrictedRunComponents
 public import PaperP1.Model.DirectPairCostBound
 
 public import PaperP1.Asymptotics.CoarseConnectedFourthUnderBCN
+
+public import PaperP1.Model.WeakPairActivity
+
+public import PaperP1.Asymptotics.WeakPairActivity
+
+public import PaperP1.Combinatorics.TouchingEdgeWeights
+
+public import PaperP1.Asymptotics.IrregularPairActivity
+
+public import PaperP1.Model.IncompatiblePairActivity
+
+public import PaperP1.Asymptotics.IncompatiblePairActivity
+
+public import PaperP1.Model.PairActivityCumulantGap
+
+public import PaperP1.Asymptotics.PairActivityCumulantGap
+
+public import PaperP1.Asymptotics.InitialPairPartition

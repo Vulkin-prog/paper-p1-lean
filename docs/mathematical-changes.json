@@ -4863,6 +4863,53 @@
         "status": "not_integrated"
       },
       "validation_commit": "221b69e436bc738b3473e438856c5cb088d5a972"
+    },
+    {
+      "id": "P1-MATH-0090",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:activity:pair-partition",
+        "number": "T7.1",
+        "page": 36,
+        "source": "companion_sections/triple_activities.tex",
+        "line": 8,
+        "statement_sha256": "314417432b0ff44f833afcf1e8517782ba516f0c6587804ec485c9c1af2ac268"
+      },
+      "original_assumption": "Companion T7.1 states a finite pair-activity partition and an upper bound on A2. Main 3.3 describes the signed second-cumulant profile. The proposed addition concerns the relation between actual absolute pair activity and the actual second factorial cumulant.",
+      "finding": "For every dyadic subground, the exact nonnegative gap A2-alpha/2 equals twice the incompatible pair activity plus half the marginal-square diagonal, and is uniformly at most N^(-1+epsilon). For the full original count, the independently proved positive 2:3 channel lower bound gives 0<=2*A2/alpha-1<=N^(-1/3+epsilon). This quantitative leading equivalence includes irregular and zero-marginal sites and is proved without BCN, a complete signed pair profile or an assumed sharp upper bound on A2.",
+      "evidence": [
+        "PaperP1.WeakPairActivity.coefficient_bound",
+        "PaperP1.WeakPairActivity.finite_bound",
+        "PaperP1.WeakPairActivityAsymptotic.critical_binary_power",
+        "PaperP1.WeakPairActivityAsymptotic.uniform_activity",
+        "PaperP1.TouchingEdgeWeights.cover",
+        "PaperP1.TouchingEdgeWeights.sum_bound",
+        "PaperP1.IrregularPairActivity.finite_bound",
+        "PaperP1.IrregularPairActivity.uniform_marginal_mass",
+        "PaperP1.IrregularPairActivity.uniform_activity",
+        "PaperP1.IncompatiblePairActivity.finite_bound",
+        "PaperP1.IncompatiblePairActivity.signed_absolute_gap",
+        "PaperP1.IncompatiblePairActivityAsymptotic.uniform_activity",
+        "PaperP1.IncompatiblePairActivityAsymptotic.uniform_signed_absolute_gap",
+        "PaperP1.PairActivityCumulantGap.exact_gap",
+        "PaperP1.PairActivityCumulantGapAsymptotic.uniform_gap",
+        "PaperP1.PairActivityCumulantGapAsymptotic.uniform_relative",
+        "PaperP1.InitialPairPartition.weak_disjoint_exceptional",
+        "PaperP1.InitialPairPartition.cover",
+        "PaperP1.InitialPairPartition.remaining_data",
+        "PaperP1.InitialPairPartition.activity_split",
+        "PaperP1.InitialPairPartition.uniform_bounds"
+      ],
+      "proposed_revision": "Add the exact heterogeneous identity A2-alpha/2=2*A2_incompatible+sum p_x^2/2 and its unconditional N^(-1+epsilon) bound after the pair-activity partition. State the resulting quantitative equivalence 2*A2/alpha=1+O(N^(-1/3+epsilon)) for the full original count, separating it from the deeper explicit channel-profile calculation.",
+      "impact": "Supplies a new quantitative corollary and an unconditional proof route for the leading absolute/signed pair-mass relation. It does not establish the source N^(-2/3+epsilon) absolute upper bound, the full good-channel partition, explicit pair-profile asymptotics or sharp triple/quartic estimates. T7.1 and main 3.3 remain in progress.",
+      "validation": "Verified Lean v4.36.0-rc2 full build (10905 jobs), actual Audit.lean kernel audit (6818 declarations; only propext, Classical.choice, Quot.sound), 4535 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.30 GiB. Weak dependent activity N^(-1+eta+epsilon), irregular-touching and incompatible pair activity N^(-1+epsilon), the exact initial disjoint partition, and the quantitative full-count equivalence 0<=2*A2/alpha-1<=N^(-1/3+epsilon) are unconditional. No BCN, complete signed profile or target A2 estimate is supplied as a premise. T7.1 and main 3.3 remain in progress; coverage 77/167, confirmed improvements 90.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -6,7 +6,7 @@ by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
 **Status: active formalization, 77 / 167 numbered results proved.**
 
-The actual direct active maximum and its shifted envelope now have all-order factorial, tail and exponential bounds with the exact heterogeneous mean, including irregular and zero-marginal windows. The modified-count coupling error remains open. See [the envelope alignment](docs/MODIFIED_COUNT_ENVELOPE_ALIGNMENT.md) and improvement `P1-MATH-0088` in the [mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The actual original count and its retained modification now converge to Poisson in total variation under the explicit BCN premise; the sharp source rates remain open. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The project records **90 confirmed mathematical improvements**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.

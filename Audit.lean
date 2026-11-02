@@ -3618,6 +3618,8 @@ import PaperP1
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.meanCap_pos
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.errorConstant_pos
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.uniform_actual_bound
+#print axioms PaperP1.IncompatiblePairActivityAsymptotic.uniform_activity
+#print axioms PaperP1.IncompatiblePairActivityAsymptotic.uniform_signed_absolute_gap
 #print axioms PaperP1.IncompatibleTripleReduction.pair_cost
 #print axioms PaperP1.IncompatibleTripleReduction.finite_bound
 #print axioms PaperP1.IncompatibleTripleReduction.reduced_bound
@@ -3628,6 +3630,14 @@ import PaperP1
 #print axioms PaperP1.IndependentTargetMass.uniform_mass
 #print axioms PaperP1.IndependentTargetMass.deficit_bound
 #print axioms PaperP1.InfiniteColoredConditionalSum.companion_T22_7
+#print axioms PaperP1.InitialPairPartition.weak_disjoint_exceptional
+#print axioms PaperP1.InitialPairPartition.cover
+#print axioms PaperP1.InitialPairPartition.remaining_data
+#print axioms PaperP1.InitialPairPartition.activity_split
+#print axioms PaperP1.InitialPairPartition.uniform_bounds
+#print axioms PaperP1.IrregularPairActivity.finite_bound
+#print axioms PaperP1.IrregularPairActivity.uniform_marginal_mass
+#print axioms PaperP1.IrregularPairActivity.uniform_activity
 #print axioms PaperP1.IrregularSeedMass.affine_sum
 #print axioms PaperP1.IrregularSeedMass.seed_family
 #print axioms PaperP1.IrregularSeedMass.seed_coordinates
@@ -3829,6 +3839,8 @@ import PaperP1
 #print axioms PaperP1.OriginalWindowFamilyMass.article_10_2
 #print axioms PaperP1.OverlappingPairProductCostUnderBCN.uniform_repeated_square
 #print axioms PaperP1.OverlappingPairProductCostUnderBCN.uniform_star_square
+#print axioms PaperP1.PairActivityCumulantGapAsymptotic.uniform_gap
+#print axioms PaperP1.PairActivityCumulantGapAsymptotic.uniform_relative
 #print axioms PaperP1.PairActivityUnderBCN.uniform_pair_activity
 #print axioms PaperP1.PairActivityUnderBCN.uniform_conversion
 #print axioms PaperP1.PairHostIndependentMass.finite_mass_cap
@@ -4087,6 +4099,8 @@ import PaperP1
 #print axioms PaperP1.VerySmallTail.moment_bound
 #print axioms PaperP1.VerySmallTail.power_threshold
 #print axioms PaperP1.VerySmallTail.companion_T19_6
+#print axioms PaperP1.WeakPairActivityAsymptotic.critical_binary_power
+#print axioms PaperP1.WeakPairActivityAsymptotic.uniform_activity
 #print axioms PaperP1.WideQuadraticKernelCount.three_exponent_bounds
 #print axioms PaperP1.WideQuadraticKernelCount.uniform_affine_count
 #print axioms PaperP1.WideQuadraticSquarePartCount.reciprocal_budget
@@ -4671,6 +4685,8 @@ import PaperP1
 #print axioms PaperP1.TopProductSelection.outside_power_le
 #print axioms PaperP1.TopProductSelection.certificate_or_small_groups
 #print axioms PaperP1.TopProductSelection.real_root_bound
+#print axioms PaperP1.TouchingEdgeWeights.cover
+#print axioms PaperP1.TouchingEdgeWeights.sum_bound
 #print axioms PaperP1.TriplePairIncidence.erased_sum
 #print axioms PaperP1.TriplePairIncidence.restricted_erased_sum_le
 #print axioms PaperP1.TupleExtensions.mem_step
@@ -5201,6 +5217,8 @@ import PaperP1
 #print axioms PaperP1.HeterogeneousRunConversion.second_cumulant_formula
 #print axioms PaperP1.HeterogeneousRunConversion.absoluteMass_nonneg
 #print axioms PaperP1.HeterogeneousRunConversion.actual_signed_measure_conversion
+#print axioms PaperP1.IncompatiblePairActivity.finite_bound
+#print axioms PaperP1.IncompatiblePairActivity.signed_absolute_gap
 #print axioms PaperP1.IndependentTargetDeficit.pair_rank
 #print axioms PaperP1.IndependentTargetDeficit.target_pair
 #print axioms PaperP1.IndependentTargetDeficit.nonneg
@@ -5423,6 +5441,7 @@ import PaperP1
 #print axioms PaperP1.OneNegativePrime.parity_simple_multiple
 #print axioms PaperP1.OneNegativePrime.not_dvd_inside
 #print axioms PaperP1.OneNegativePrime.positive_exact_run
+#print axioms PaperP1.PairActivityCumulantGap.exact_gap
 #print axioms PaperP1.PairActivityHostCap.absoluteMass_mono
 #print axioms PaperP1.PairActivityHostCap.centered_zero_of_zero_loss
 #print axioms PaperP1.PairActivityHostCap.ordered_mass
@@ -5845,6 +5864,8 @@ import PaperP1
 #print axioms PaperP1.UnrestrictedRunComponents.centered_partition
 #print axioms PaperP1.UnrestrictedRunComponents.nullity_partition
 #print axioms PaperP1.UnrestrictedRunComponents.canonical_run_components
+#print axioms PaperP1.WeakPairActivity.coefficient_bound
+#print axioms PaperP1.WeakPairActivity.finite_bound
 #print axioms PaperP1.WindowConditionalSum.finite_bound
 #print axioms PaperP1.WindowFamilyConditional.conditionalProbability_nonneg
 #print axioms PaperP1.WindowFamilyConditional.sourceEvent_restrict
