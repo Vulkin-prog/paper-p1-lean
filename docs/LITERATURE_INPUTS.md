@@ -2509,8 +2509,8 @@ of coefficients and degree and integral curves over K contained in C.
 Lean input: `PaperP1.PlaneCurvePointCount.UniformBound c kappa`.
 This actual plane-polynomial specialization, including the geometric
 presentation bridge, is an ordinary explicit argument; its proof and
-the full broad theorem13.4 remain open. Used only by the separate
-conditional corollary13.5 reduction. No global axiom is introduced.
+the full broad theorem13.4 remain open. Used by conditional13.5 and, after the proved rationalization bridge,
+conditional13.6. No global axiom is introduced.
 
 Actual finite grids, floor boxes, the negative-offset cardinality
 bijection, convex logarithmic profile, endpoint maximum, exponential
@@ -2604,9 +2604,9 @@ Pinned Mathlib coefficient extensionality, finite coefficient bounds, actual fin
 
 ## Explicit integer-polynomial BCN input
 
-Stable ID: `P1-GEO-BCN-INTEGER-UNIFORM`. Status: **explicit_hypothesis**.
+Stable ID: `P1-GEO-BCN-INTEGER-UNIFORM`. Status: **proved specialization of the explicit field input**.
 
-Reference: [arXiv2302.04209v2](https://arxiv.org/pdf/2302.04209v2), Theorem2 equation(27), page7,20September2023. The integer-polynomial specialization is the ordinary explicit property `IntegerCurvePointInput.UniformBound c kappa`: for every actual irreducible nested integer polynomial P of positive total degree D and every H>2, its actual negative-offset integer grid in the floor(H) box has cardinality at most c*D^2*H^(1/D)*(log H)^kappa, with c independent of P,D,H. Both the BCN proof and the rational/Gauss presentation bridge from the separate field-polynomial input remain unformalized. This scope is named explicitly, without claiming the geometric specialization or BCN proved. The actual growing-degree bound and all analytic consequences are proved under this argument, and only conditional13.6 uses it.
+Reference: [arXiv2302.04209v2](https://arxiv.org/pdf/2302.04209v2), Theorem2 equation(27), page7,20September2023. The integer-polynomial specialization is the ordinary explicit property `IntegerCurvePointInput.UniformBound c kappa`: for every actual irreducible nested integer polynomial P of positive total degree D and every H>2, its actual negative-offset integer grid in the floor(H) box has cardinality at most c*D^2*H^(1/D)*(log H)^kappa, with c independent of P,D,H. The rational presentation bridge from the field-polynomial input is now proved by actual polynomial localization, preserved degree and identical grids. BCN itself and its geometric presentation remain unformalized. This scope is named explicitly, without claiming the geometric specialization or BCN proved. The actual growing-degree bound and all analytic consequences are proved under this argument, and only conditional13.6 uses it.
 
 Stable ID: `P1-ARITH-NONALIGNED-CRITICAL-ASSEMBLY`. Status: **proved reduction with the named external argument**.
 
@@ -2659,3 +2659,38 @@ Article13.6 is now conditional;13.4 remains in progress and13.5
 conditional. Proved coverage76/167 (main28/73, companion48/94),
 confirmed findings80. No added Paper C source, dependency download,
 manuscript-byte change or Palomar registration.
+
+
+## Proved integer/rational polynomial presentation bridge
+
+Stable ID: `P1-ALG-INTEGER-RATIONAL-CURVE-BRIDGE`. Status: **proved**.
+
+The integer-to-rational presentation bridge is now proved.
+`IntegerCurveRationalization.coefficientMap` is the literal nested
+coefficient ring map. An injective coefficient map preserves actual
+total degree and the entire actual finite integer grid. Every unit
+of a nested polynomial ring over a domain has total degree0.
+
+The rational nested ring is constructed as two successive polynomial
+localizations of the integer nested ring at nonzero integer constants.
+An actual irreducible integer polynomial is prime in that UFD. Its
+image is nonzero by coefficient injectivity and is not a unit because
+its positive total degree is preserved. The pinned localization prime
+mapping theorem therefore proves actual rational irreducibility.
+No primitive-content, Gauss-bridge or irreducibility conclusion is
+assumed. The field input applied at K=Q now gives the exact integer
+input, with identical c,kappa,D,H and actual grid cardinality.
+
+`NonalignedRankFieldBCN` consequently proves the full uniform rank
+bound, literal source limsup and uniform strict half-window gap from
+the same single `PlaneCurvePointCount.UniformBound c kappa` argument
+already used in13.5. The integer input is a proved specialization of
+that field input, not a second independent unformalized assumption.
+BCN itself and the geometric-to-plane-polynomial theorem presentation
+remain unformalized.13.4 stays in progress;13.5 and13.6 stay
+conditional. Proved coverage76/167, confirmed findings80 unchanged.
+No new Paper C source, dependency download, manuscript-byte change or
+Palomar registration. One additional pinned Mathlib localization
+module was compiled locally from existing sources.
+
+Pinned Mathlib commit9d581dfff2e41de989072ea63abf3daf69311520 supplies `Polynomial.isLocalization`, `Submonoid.LocalizationMap.map_prime`, polynomial UFD instances, injective coefficient support and natural-degree preservation, polynomial-unit characterization and literal nested evaluation transport. All are recompiled or previously cached under the pinned compiler and included through the actual project theorem dependencies.

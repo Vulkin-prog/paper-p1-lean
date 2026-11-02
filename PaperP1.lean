@@ -1114,3 +1114,7 @@ public import PaperP1.Arithmetic.IntegerCurvePointInput
 public import PaperP1.Arithmetic.NonalignedRankUnderBCN
 
 public import PaperP1.Arithmetic.NonalignedRankLimsup
+
+public import PaperP1.Arithmetic.IntegerCurveRationalization
+
+public import PaperP1.Arithmetic.NonalignedRankFieldBCN

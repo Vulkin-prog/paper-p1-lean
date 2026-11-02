@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5956 audited theorem/lemma declarations**. This
+- The project currently has **5965 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2894,3 +2894,36 @@ confirmed findings80. No added Paper C source, dependency download,
 manuscript-byte change or Palomar registration.
 
 Lean v4.36.0-rc2 full build passed (10545 jobs); the actual axiom audit passed for all5956 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All3673 distinct ledger/finding declarations were directly checked. All138 original manifest entries and167 numbered records are intact. Ubuntu available space:15.88 GiB. The actual critical short basis, support floor q=floor(B^b), common-curve point threshold, degree<=48q, degree-one exclusion, real grid rank budget, sublinear degree loss and final contradiction are kernel-checked. The actual finite nonaligned-pair maximum, literal Filter.limsup bound and a fixed sigma<1/2 before every C retain the ordinary explicit integer-polynomial BCN input. The numerical threshold<1/2 is unconditional. BCN and its rational/Gauss/geometric presentation specialization remain unformalized. Article13.6 is conditional; proved coverage76/167 (main28/73, companion48/94), confirmed findings80 unchanged. No added Paper C source, dependency download, manuscript-byte change or Palomar registration.
+
+
+## The integer/rational BCN bridge is proved
+
+The integer-to-rational presentation bridge is now proved.
+`IntegerCurveRationalization.coefficientMap` is the literal nested
+coefficient ring map. An injective coefficient map preserves actual
+total degree and the entire actual finite integer grid. Every unit
+of a nested polynomial ring over a domain has total degree0.
+
+The rational nested ring is constructed as two successive polynomial
+localizations of the integer nested ring at nonzero integer constants.
+An actual irreducible integer polynomial is prime in that UFD. Its
+image is nonzero by coefficient injectivity and is not a unit because
+its positive total degree is preserved. The pinned localization prime
+mapping theorem therefore proves actual rational irreducibility.
+No primitive-content, Gauss-bridge or irreducibility conclusion is
+assumed. The field input applied at K=Q now gives the exact integer
+input, with identical c,kappa,D,H and actual grid cardinality.
+
+`NonalignedRankFieldBCN` consequently proves the full uniform rank
+bound, literal source limsup and uniform strict half-window gap from
+the same single `PlaneCurvePointCount.UniformBound c kappa` argument
+already used in13.5. The integer input is a proved specialization of
+that field input, not a second independent unformalized assumption.
+BCN itself and the geometric-to-plane-polynomial theorem presentation
+remain unformalized.13.4 stays in progress;13.5 and13.6 stay
+conditional. Proved coverage76/167, confirmed findings80 unchanged.
+No new Paper C source, dependency download, manuscript-byte change or
+Palomar registration. One additional pinned Mathlib localization
+module was compiled locally from existing sources.
+
+Lean v4.36.0-rc2 full build passed (10551 jobs); actual axiom audit passed for all5965 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All3682 distinct ledger/finding declarations were directly checked. All138 original manifest entries and167 numbered records are intact. Ubuntu available space:15.87 GiB. The actual nested coefficient map preserves total degree and every integer grid. Two actual polynomial localizations, actual coefficient injectivity and the total-degree nonunit obstruction prove rational irreducibility of every positive-degree irreducible integer nested polynomial. The integer BCN input is derived from the field-polynomial input with unchanged c,kappa,D,H and actual grid cardinality. Full13.6 rank, actual maximum, limsup and strict half-window gap now use the same single field-polynomial BCN argument as13.5. No independent integer/Gauss bridge assumption remains. BCN itself and its geometric presentation remain unformalized;13.4 is in progress,13.5 and13.6 conditional. Coverage76/167 (main28/73, companion48/94), findings80. No extra Paper C source, dependency download, manuscript-byte change or Palomar registration.

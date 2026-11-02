@@ -1825,6 +1825,12 @@ import PaperP1
 #print axioms PaperP1.IntegerCurvePointInput.constant_power_cap
 #print axioms PaperP1.IntegerCurvePointInput.growing_degree_under_BCN
 #print axioms PaperP1.IntegerCurvePointInput.fixed_power_degree_under_BCN
+#print axioms PaperP1.IntegerCurveRationalization.coefficientMap_injective
+#print axioms PaperP1.IntegerCurveRationalization.degree_coefficientMap
+#print axioms PaperP1.IntegerCurveRationalization.degree_of_isUnit
+#print axioms PaperP1.IntegerCurveRationalization.grid_coefficientMap
+#print axioms PaperP1.IntegerCurveRationalization.rational_irreducible
+#print axioms PaperP1.IntegerCurveRationalization.integer_input_of_field_input
 #print axioms PaperP1.IntegerGridTheorem.floor_box_iff
 #print axioms PaperP1.IntegerGridTheorem.mem_real_grid
 #print axioms PaperP1.IntegerGridTheorem.real_rhs_le_truncated
@@ -2052,6 +2058,9 @@ import PaperP1
 #print axioms PaperP1.ModerateWeightedSeries.finite_weight_identity
 #print axioms PaperP1.ModerateWeightedSeries.weightedTerm_le
 #print axioms PaperP1.ModerateWeightedSeries.weightedTotal_le
+#print axioms PaperP1.NonalignedRankFieldBCN.critical_rank_bound
+#print axioms PaperP1.NonalignedRankFieldBCN.article_13_6_under_field_BCN
+#print axioms PaperP1.NonalignedRankFieldBCN.uniform_half_window_gap
 #print axioms PaperP1.NonalignedRankLimsup.maximalRatio_nonneg
 #print axioms PaperP1.NonalignedRankLimsup.pair_ratio_le_maximal
 #print axioms PaperP1.NonalignedRankLimsup.critical_maximal_ratio_bound

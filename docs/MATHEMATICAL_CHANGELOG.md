@@ -3469,3 +3469,8 @@ Two actual bounded integer points on the actual line, together with a center bey
 ## Completed conditional nonaligned-rank assembly
 
 The exact source nonaligned-rank threshold, actual finite-pair maximum, literal limsup and a uniform strict half-window gap now follow from one named ordinary integer-polynomial BCN argument. The short basis, support floor, actual common curve and square-word bridge, critical point threshold, degree-one alignment, degree loss and final contradiction are all proved internally. The numerical threshold<1/2 is unconditional. This closes the assembly promised after P1-MATH-0080 without a new mathematical finding. BCN and its presentation specialization remain unformalized;13.6 is conditional, not proved coverage. Coverage76/167; findings80.
+
+
+## One common external BCN input for13.5 and13.6
+
+The exact integer/rational coefficient map now preserves total degree, the actual integer grid and irreducibility of every positive-degree irreducible integer nested polynomial. Two actual polynomial localizations and the nonunit degree obstruction prove the irreducibility step. The integer BCN input is therefore derived from the same field-polynomial input used by13.5, with no second independent external assumption. This closes a formal presentation gap without a new manuscript correction. BCN and its geometric presentation remain open. Coverage76/167, findings80.
