@@ -3459,3 +3459,8 @@ The unconditionally proved analytic estimate D^2 H^(1/D)<=4sqrt(H)+e*(M^2+(log H
 ## Exact actual-code to word/curve compatibility
 
 The literal offset i-1, total physical support identity, actual image basis, integer-square evaluations and application of the proved common-curve and grid theorems are now verified from actual complete relations. This confirms the source compatibility of the constructions, including overlapping numerical windows and the zero-product edge case, without a new manuscript correction. Critical asymptotic thresholds, degree-one alignment and the final nonaligned contradiction remain open for13.6. Proved coverage76/167 and confirmed findings79 are unchanged.
+
+
+## P1-MATH-0080: a direct bounded-grid proof of the linear branch
+
+Two actual bounded integer points on the actual line, together with a center beyond the box, force the required positive reduced alignment. The already proved13.3 grid lower bound supplies them at actual relation rank>=9 when D=1. This replaces the coefficient-height sign argument and the additional functional-square/root-pairing choice in that branch. All coefficient, sign, gcd, height and affine-error steps are formalized; no original conclusion error or optimized threshold is claimed. The full13.6 threshold assembly, BCN input and final contradiction remain open. Proved coverage76/167, confirmed findings80.

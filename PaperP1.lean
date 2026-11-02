@@ -1100,3 +1100,9 @@ public import PaperP1.Arithmetic.CompleteRelationWordEmbedding
 public import PaperP1.Arithmetic.CompleteRelationWordSquares
 
 public import PaperP1.Arithmetic.CurveFromCompleteRelations
+
+public import PaperP1.Algebra.BivariateLineGeometry
+
+public import PaperP1.Arithmetic.BoundedPointAlignment
+
+public import PaperP1.Arithmetic.LinearCurveAlignment

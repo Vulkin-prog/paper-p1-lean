@@ -444,6 +444,8 @@ import PaperP1
 #print axioms PaperP1.BivariateLargeRoot.degreeY_pos
 #print axioms PaperP1.BivariateLargeRoot.degreeX_pos
 #print axioms PaperP1.BivariateLargeRoot.both_degrees_pos
+#print axioms PaperP1.BivariateLineGeometry.exists_linear_form
+#print axioms PaperP1.BivariateLineGeometry.points_cross
 #print axioms PaperP1.BivariateReciprocalProduct.series_monomial
 #print axioms PaperP1.BivariateReciprocalProduct.iterated_monomial
 #print axioms PaperP1.BivariateReciprocalProduct.reciprocal_sum
@@ -1269,6 +1271,9 @@ import PaperP1
 #print axioms PaperP1.BlockSupportProjection.suffix_effective
 #print axioms PaperP1.BlockSupportProjection.fibre_count
 #print axioms PaperP1.BlockSupportProjection.cell_count
+#print axioms PaperP1.BoundedPointAlignment.ordered_alignment
+#print axioms PaperP1.BoundedPointAlignment.alignment_of_cross
+#print axioms PaperP1.BoundedPointAlignment.source_alignment
 #print axioms PaperP1.BranchingExceptional.badStarts_subset
 #print axioms PaperP1.BranchingExceptional.retained_card_le_one
 #print axioms PaperP1.BranchingExceptional.twice_badStarts_card_le
@@ -1892,6 +1897,9 @@ import PaperP1
 #print axioms PaperP1.LateWindowPrimes.middle_card
 #print axioms PaperP1.LateWindowPrimes.high_card
 #print axioms PaperP1.LateWindowPrimes.cover_card
+#print axioms PaperP1.LinearCurveAlignment.bounded_grid_alignment
+#print axioms PaperP1.LinearCurveAlignment.actual_linear_case
+#print axioms PaperP1.LinearCurveAlignment.nonaligned_degree_ne_one
 #print axioms PaperP1.LocalBlockBoundary.block_subset_full
 #print axioms PaperP1.LocalBlockBoundary.fullBlock_nonempty
 #print axioms PaperP1.LocalBlockBoundary.fullBlock_card

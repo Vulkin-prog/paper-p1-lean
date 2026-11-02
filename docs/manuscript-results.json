@@ -2353,13 +2353,24 @@
         "PaperP1.CompleteRelationWordSquares.wordBasis_square",
         "PaperP1.CompleteRelationWordSquares.wordSpace_square",
         "PaperP1.CurveFromCompleteRelations.common_curve",
-        "PaperP1.CurveFromCompleteRelations.actual_grid_bound"
+        "PaperP1.CurveFromCompleteRelations.actual_grid_bound",
+        "PaperP1.BivariateLineGeometry.exists_linear_form",
+        "PaperP1.BivariateLineGeometry.points_cross",
+        "PaperP1.BoundedPointAlignment.ordered_alignment",
+        "PaperP1.BoundedPointAlignment.alignment_of_cross",
+        "PaperP1.BoundedPointAlignment.source_alignment",
+        "PaperP1.LinearCurveAlignment.bounded_grid_alignment",
+        "PaperP1.LinearCurveAlignment.actual_linear_case",
+        "PaperP1.LinearCurveAlignment.nonaligned_degree_ne_one"
       ],
       "literature_inputs": [
-        "P1-ALG-ACTUAL-RELATION-WORD-BRIDGE"
+        "P1-ALG-ACTUAL-RELATION-WORD-BRIDGE",
+        "P1-ALG-LINEAR-CURVE-ALIGNMENT"
       ],
-      "mathematical_changes": [],
-      "notes": "Finite actual-code-to-curve bridge completed. The actual complete-relation vector maps injectively to integer-offset formal words through the explicit offset i.val-1. The literal word supports are the mapped selected physical vertices, with exactly the same total physical cardinality and exact radius L+1. The actual short-basis subspace and its actual basis transport through an explicit linear equivalence, preserving dimension and both projection injectivities. Complete prime-parity cancellation proves that the literal selected natural product is a square, including the zero-product case; the actual word-polynomial evaluation at the actual centers is its integer cast, hence square. For actual rank>=2, actual physical basis support<=2q,1<=q<=B=L+1 and the actual common-curve point threshold, CurveFromCompleteRelations.common_curve constructs the actual common-curve certificate from the actual complete-relation certificate. No separate square, arbitrary word basis or support-correspondence premise is supplied. CurveFromCompleteRelations.actual_grid_bound then proves the actual integer-grid lower bound with the original relation-space rank and constant6. The critical asymptotic threshold assembly, degree-one alignment argument and final nonaligned rank contradiction remain open; BCN13.4 is still unformalized and its named input is explicit in the separate conditional count development. Article13.6 is not counted complete. Coverage76/167 and confirmed findings79 unchanged."
+      "mathematical_changes": [
+        "P1-MATH-0080"
+      ],
+      "notes": "Finite actual-code-to-curve bridge completed. The actual complete-relation vector maps injectively to integer-offset formal words through the explicit offset i.val-1. The literal word supports are the mapped selected physical vertices, with exactly the same total physical cardinality and exact radius L+1. The actual short-basis subspace and its actual basis transport through an explicit linear equivalence, preserving dimension and both projection injectivities. Complete prime-parity cancellation proves that the literal selected natural product is a square, including the zero-product case; the actual word-polynomial evaluation at the actual centers is its integer cast, hence square. For actual rank>=2, actual physical basis support<=2q,1<=q<=B=L+1 and the actual common-curve point threshold, CurveFromCompleteRelations.common_curve constructs the actual common-curve certificate from the actual complete-relation certificate. No separate square, arbitrary word basis or support-correspondence premise is supplied. CurveFromCompleteRelations.actual_grid_bound then proves the actual integer-grid lower bound with the original relation-space rank and constant6. The critical asymptotic threshold assembly, degree-one alignment argument and final nonaligned rank contradiction remain open; BCN13.4 is still unformalized and its named input is explicit in the separate conditional count development. Article13.6 is not counted complete. Coverage76/167 and confirmed findings79 unchanged. The actual degree-one branch is subsequently closed. BivariateLineGeometry proves the literal linear form and collinearity for every actual nested integer polynomial of total degree1. Two actual distinct bounded collinear integer points and a center with both coordinates>B force positive coprime alignment coefficients<=2B; actual gcd reduction and the exact(p+q)B affine bound are proved. For the actual common curve of an actual relation certificate of rank>=9, the proved grid lower bound with D=1 gives at least two such integer points. LinearCurveAlignment.actual_linear_case therefore constructs the literal source alignment, and nonalignment excludes degree1. No coefficient height estimate, sign-of-slope input, functional root-pairing witness or assumed alignment conclusion is needed in this branch. P1-MATH-0080 records this proof simplification; the original common-curve construction and its point threshold are still required. Critical asymptotic threshold assembly, the unformalized BCN input/geometric specialization and the final nonaligned contradiction remain open;13.6 is in progress. Coverage76/167, confirmed findings80."
     },
     {
       "label": "p13:rig:aligned",

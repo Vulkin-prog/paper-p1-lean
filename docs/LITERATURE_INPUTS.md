@@ -2561,3 +2561,42 @@ no new correction, external input, Paper C source, cache download,
 manuscript-byte change or Palomar registration.
 
 Pinned Mathlib finite-function/Finsupp equivalences, injective domain maps, mapped supports, finite products, finite basis reindexing and actual image equivalences are used. Squares follow from the already proved actual prime-parity/product criterion. No additional external theorem or old Paper C file is introduced.
+
+
+## Actual bounded-point and degree-one common-curve alignment
+
+Stable ID: `P1-ALG-LINEAR-CURVE-ALIGNMENT`. Status: **proved finite branch**.
+
+`BivariateLineGeometry` proves that an actual total-degree-one
+nested integer polynomial is a literal nonconstant linear form. Its
+actual zero points satisfy the exact collinearity determinant.
+
+`BoundedPointAlignment` proves that two distinct actual integer points
+p,q in[-B,B]^2, collinear with a center(x,y) having x,y>B, force
+positive reduced coefficients a,b<=2B and
+
+    abs(b*x-a*y) <= (a+b)B.
+
+Ordering the first coordinates forces the second coordinates to have
+the same order, because both center differences are positive. Actual
+gcd division gives positive coprime coefficients, the small coefficient
+bounds and the exact reduced affine error. For B>=2 this is the actual
+source alignment with allowed coefficient height B^3.
+
+`LinearCurveAlignment.actual_linear_case` applies the already proved
+actual common-curve grid bound. At total degree1, actual relation rank
+at least9 leaves at least two bounded integer points after the safe
+exceptional budget6. The actual positive-center alignment follows.
+Consequently, nonalignment excludes degree1 for such an actual common
+curve. No line coefficient-height estimate, sign input or additional
+functional-square/root-matching witness is supplied.
+
+P1-MATH-0080 records this proof simplification. It does not remove the
+common-curve construction or its point threshold from the full argument.
+The critical asymptotic threshold assembly, the actual degree>=2 BCN
+input/geometric specialization, and the final nonaligned contradiction
+remain open. Article13.6 stays in progress. Coverage76/167, confirmed
+findings80; no new external theorem, Paper C source, dependency download,
+manuscript-byte change or Palomar registration.
+
+Pinned Mathlib coefficient extensionality, finite coefficient bounds, actual finite-grid point extraction, integer absolute values, natural gcd positivity/divisibility and coprime gcd division are used. No external geometric estimate or additional Paper C source is introduced.

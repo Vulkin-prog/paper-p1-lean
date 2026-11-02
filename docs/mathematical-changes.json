@@ -4358,6 +4358,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "0f51b89b05a7d43e077f2c1e20c64e27567226cc"
+    },
+    {
+      "id": "P1-MATH-0080",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:nonaligned",
+        "number": "13.6",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 259,
+        "statement_sha256": "bfe3ffef35f01b69168fe958413ef9b1f7970253c5be921e9b3ee5a73445d770"
+      },
+      "original_assumption": "The degree-one branch in the proof of13.6 uses the common-curve height estimate to force opposite signs of its two linear coefficients, then chooses a nonzero functional-square word and at least two matched simple roots to bound its rational slope.",
+      "finding": "The already proved integer-grid proposition13.3 supplies a shorter direct branch. For an actual complete-relation certificate of rank at least9 and a degree-one actual common curve, its explicit exceptional budget6 gives at least two distinct integer points in[-B,B]^2 on the line. If both actual center coordinates exceed B, elementary collinearity alone forces a positive reduced alignment with both coefficients at most2B and affine error at most(p+q)B. An actual linear-form decomposition, coordinate-order/sign argument, gcd reduction and exact height/error bounds are all proved. The line branch needs no coefficient-height estimate or extra functional-square/root-pairing selection.",
+      "evidence": [
+        "PaperP1.BivariateLineGeometry.exists_linear_form",
+        "PaperP1.BivariateLineGeometry.points_cross",
+        "PaperP1.BoundedPointAlignment.ordered_alignment",
+        "PaperP1.BoundedPointAlignment.alignment_of_cross",
+        "PaperP1.BoundedPointAlignment.source_alignment",
+        "PaperP1.LinearCurveAlignment.bounded_grid_alignment",
+        "PaperP1.LinearCurveAlignment.actual_linear_case",
+        "PaperP1.LinearCurveAlignment.nonaligned_degree_ne_one"
+      ],
+      "proposed_revision": "In the degree-one case of13.6, apply13.3 first. Once the extracted rank is at least9, obtain two actual bounded integer points on the line and apply the elementary bounded-point alignment lemma with x,y>B. This yields the required positive coprime coefficients<=2B directly. Remove the separate coefficient-height sign argument and second functional-square root-matching paragraph in this branch.",
+      "impact": "Simplifies and weakens the inputs of the linear branch without changing the original nonaligned-rank conclusion or claiming it complete. The actual common-curve construction, its rank/small-support hypotheses and point threshold remain necessary. BCN and final critical asymptotic assembly remain open. No optimized rank threshold or error in the original proof is claimed. Coverage76/167, confirmed findings80.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10537 jobs); actual axiom audit passed for all 5935 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3651 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.90 GiB. Every actual degree-one nested integer polynomial has a proved nonconstant linear form and actual collinear zero points. Two actual bounded distinct integer points and a center with both coordinates>B give positive reduced alignment coefficients<=2B and exact affine error<=(a+b)B. Actual gcd reduction, sign, coefficient bounds and source-height conversion are proved. The already proved actual common-curve grid lower bound supplies two such points at relation rank>=9 when D=1. Nonalignment therefore excludes degree1 for that actual common curve. P1-MATH-0080 records the proof simplification: no coefficient-height sign argument or additional functional-square/root-pairing witness is needed in the linear branch. The original curve construction and point  threshold remain necessary. Critical threshold assembly, unformalized BCN/geometric specialization and the final nonaligned contradiction remain open;13.6 stays in progress. Coverage76/167 (main28/73, companion48/94); confirmed findings80. No optimized threshold, source-conclusion error, new external theorem, added Paper C source, cache download, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

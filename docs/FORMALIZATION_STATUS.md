@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5927 audited theorem/lemma declarations**. This
+- The project currently has **5935 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2802,3 +2802,40 @@ no new correction, external input, Paper C source, cache download,
 manuscript-byte change or Palomar registration.
 
 Lean v4.36.0-rc2 full build passed (10531 jobs); actual axiom audit passed for all 5927 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3643 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.92 GiB. Actual complete relations map injectively to actual offset words at i-1. Literal supports, total physical support, actual image bases, dimension and both projection injectivities are preserved. Actual prime-parity equations prove the selected product square, including the zero-product case, and exact label casts prove square-valued word evaluation at the actual centers. The actual relation certificate with rank>=2, support<=2q and the explicit point threshold constructs the actual common curve; its actual grid count uses the original relation-space rank and exceptional constant6. No separate square, arbitrary word basis, support correspondence or target grid count is assumed. Critical asymptotic threshold assembly, degree-one alignment and the final nonaligned contradiction remain open for13.6; BCN remains separately explicit and unformalized. Coverage76/167 (main28/73, companion48/94); confirmed findings79. No new mathematical correction, external input, Paper C source, cache download, manuscript-byte change or Palomar registration.
+
+
+## Actual degree-one common curve forces alignment
+
+`BivariateLineGeometry` proves that an actual total-degree-one
+nested integer polynomial is a literal nonconstant linear form. Its
+actual zero points satisfy the exact collinearity determinant.
+
+`BoundedPointAlignment` proves that two distinct actual integer points
+p,q in[-B,B]^2, collinear with a center(x,y) having x,y>B, force
+positive reduced coefficients a,b<=2B and
+
+    abs(b*x-a*y) <= (a+b)B.
+
+Ordering the first coordinates forces the second coordinates to have
+the same order, because both center differences are positive. Actual
+gcd division gives positive coprime coefficients, the small coefficient
+bounds and the exact reduced affine error. For B>=2 this is the actual
+source alignment with allowed coefficient height B^3.
+
+`LinearCurveAlignment.actual_linear_case` applies the already proved
+actual common-curve grid bound. At total degree1, actual relation rank
+at least9 leaves at least two bounded integer points after the safe
+exceptional budget6. The actual positive-center alignment follows.
+Consequently, nonalignment excludes degree1 for such an actual common
+curve. No line coefficient-height estimate, sign input or additional
+functional-square/root-matching witness is supplied.
+
+P1-MATH-0080 records this proof simplification. It does not remove the
+common-curve construction or its point threshold from the full argument.
+The critical asymptotic threshold assembly, the actual degree>=2 BCN
+input/geometric specialization, and the final nonaligned contradiction
+remain open. Article13.6 stays in progress. Coverage76/167, confirmed
+findings80; no new external theorem, Paper C source, dependency download,
+manuscript-byte change or Palomar registration.
+
+Lean v4.36.0-rc2 full build passed (10537 jobs); actual axiom audit passed for all 5935 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3651 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.90 GiB. Every actual degree-one nested integer polynomial has a proved nonconstant linear form and actual collinear zero points. Two actual bounded distinct integer points and a center with both coordinates>B give positive reduced alignment coefficients<=2B and exact affine error<=(a+b)B. Actual gcd reduction, sign, coefficient bounds and source-height conversion are proved. The already proved actual common-curve grid lower bound supplies two such points at relation rank>=9 when D=1. Nonalignment therefore excludes degree1 for that actual common curve. P1-MATH-0080 records the proof simplification: no coefficient-height sign argument or additional functional-square/root-pairing witness is needed in the linear branch. The original curve construction and point  threshold remain necessary. Critical threshold assembly, unformalized BCN/geometric specialization and the final nonaligned contradiction remain open;13.6 stays in progress. Coverage76/167 (main28/73, companion48/94); confirmed findings80. No optimized threshold, source-conclusion error, new external theorem, added Paper C source, cache download, manuscript-byte change or Palomar registration.
