@@ -3648,7 +3648,8 @@
           "validation": "Lean v4.36.0-rc2 full build passed (9863 jobs); actual axiom audit passed for all 4603 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2318 distinct ledger/finding names were checked directly by Lean. All 138 source manifest entries and 167 numbered records are intact. Ubuntu available space: 16.78 GiB. Full main 14.2, the integer equality classification and the attained next-value bound are proved; no arithmetic rank or counting hypothesis, external input, Paper C port or Palomar registration.",
           "validation_commit": "b213976b9a0e0aac822f374b3838524fdf05c0d2"
         }
-      ]
+      ],
+      "validation_commit": "f618f71e77ba929827fb1dcfeba0bb93e270659d"
     },
     {
       "id": "P1-MATH-0068",

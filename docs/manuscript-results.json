@@ -3453,7 +3453,8 @@
           "notes": ""
         }
       ],
-      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11147 jobs), actual axiom audit of all 7329 theorem/lemma declarations, direct Lean checks of all 5046 ledger/finding references, source integrity (138 manifest entries and 167 numbered statements), and git diff --check. Only propext, Classical.choice and Quot.sound occur. Ubuntu root space after verification: 14.83 GiB."
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11147 jobs), actual axiom audit of all 7329 theorem/lemma declarations, direct Lean checks of all 5046 ledger/finding references, source integrity (138 manifest entries and 167 numbered statements), and git diff --check. Only propext, Classical.choice and Quot.sound occur. Ubuntu root space after verification: 14.83 GiB.",
+      "validation_commit": "f618f71e77ba929827fb1dcfeba0bb93e270659d"
     },
     {
       "label": "p13:third:aligned",
