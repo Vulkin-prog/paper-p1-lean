@@ -1953,11 +1953,35 @@
       "source": "main_sections/pair_rigidity.tex",
       "line": 166,
       "sha256": "1ee0a2e2750461d837dea949cb2b861f208c7d5139454b1837376c0e47bd288e",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.PolynomialDeterminantHeight.determinant_degree",
+        "PaperP1.BivariateResultantHeight.resultant_degree",
+        "PaperP1.BivariateCurveDegrees.degreeX_le_of_coefficients",
+        "PaperP1.BivariateCurveDegrees.degreeX_derivative_le",
+        "PaperP1.BivariateCurveDegrees.degreeX_le_total",
+        "PaperP1.BivariateCurveDegrees.degreeY_le_total",
+        "PaperP1.BivariateCurveDegrees.degreeX_swap",
+        "PaperP1.BivariateCurveDegrees.degreeY_swap",
+        "PaperP1.CurveCriticalFibres.critical_nonzero",
+        "PaperP1.CurveCriticalFibres.critical_degree",
+        "PaperP1.CurveCriticalFibres.mem_badOffsets_iff",
+        "PaperP1.CurveCriticalFibres.regular_iff",
+        "PaperP1.CurveCriticalFibres.badOffsets_card",
+        "PaperP1.CurveCriticalFibres.swapped_critical_nonzero",
+        "PaperP1.CurveCriticalFibres.exceptional_budget",
+        "PaperP1.CurveFibreRegularity.fibre_degree",
+        "PaperP1.CurveFibreRegularity.fibre_nonzero",
+        "PaperP1.CurveFibreRegularity.fibre_separable",
+        "PaperP1.CurveFibreRegularity.root_derivative_ne_zero",
+        "PaperP1.CurveFibreRegularity.fibre_roots_card",
+        "PaperP1.CurveFibreRegularity.fibre_integer_evaluation"
+      ],
+      "literature_inputs": [
+        "P1-ALG-NONCRITICAL-CURVE-FIBRES"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "The actual exceptional-fibre polynomial is constructed as leadingCoeff(C)*Res_Y(C,derivative_Y(C)). It is proved nonzero for an irreducible integer curve of positive Y-degree, using actual Gauss/resultant nonvanishing and the strict derivative degree. Actual polynomial determinant and Sylvester entry degrees bound it by dX+2*dX*dY. Its negative integer root set is the actual finite exceptional offset set. Both blocks together have at most6*D^2 exceptional offsets, D the actual total degree; partial-degree/total-degree and swap identities are proved. Outside the exceptional set, actual specialization to any characteristic-zero field retains full degree and is separable; every root has nonzero derivative, and over an algebraically closed field the actual finite root set has exactly dY elements. Integer evaluations are identified with the original curve equation. No geometric-integrality assumption is inserted. The functional-square-to-offset-matching step, coordinate-cut dimension loss and final grid-point lower bound remain open. No root matching, normalization or target grid count is assumed to count the numbered result proved. Coverage remains74/167; see INTEGER_FIBRES_ALIGNMENT.md."
     },
     {
       "label": "p13:rig:bcn",

@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5607 audited theorem/lemma declarations**. This
+- The project currently has **5628 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2563,3 +2563,18 @@ are covered. Coverage is now74/167 (main26/73, companion48/94).
 Findings remain76. See [full statement alignment](COMMON_CURVE_ALIGNMENT.md).
 
 Complete common-curve theorem checkpoint verification: Lean v4.36.0-rc2 full build passed (10353 jobs); actual axiom audit passed for all 5607 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3322 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.11 GiB. Full article theorem13.2 is proved from the actual bounded independent even basis through actual T9.5 pair norms, simultaneous primitive irreducible curve extraction and the actual function-field square-class map. Real B,q0, source comparable points, total degree48q0, point zero and common threshold/height constant1000000 are included, uniformly in the basis size. No pair-norm, common-factor, resultant bound, image-rank or unproved external premise is inserted. Coverage is74/167 (main26/73, companion48/94); findings remain76. No new manuscript conclusion error, external estimate, Paper C source, manuscript-byte change or Palomar registration.
+
+
+## Actual exceptional sets and noncritical fibres for proposition13.3
+
+Article13.3 is in progress. The actual leading-coefficient/derivative-
+resultant polynomial is constructed and proved nonzero; its root set
+provides at most6D^2 exceptional offsets across both blocks. Actual
+regular fibres retain full degree, are separable and have exactly dY
+distinct roots over an algebraically closed characteristic-zero field.
+The literal integer point equation is retained. Functional-square root
+matching, coordinate-cut dimension and the final grid-point lower bound
+remain open. Coverage74/167 and findings76 are unchanged. See
+[exact scope](INTEGER_FIBRES_ALIGNMENT.md).
+
+Actual noncritical-fibre checkpoint verification: Lean v4.36.0-rc2 full build passed (10359 jobs); actual axiom audit passed for all 5628 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3343 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.10 GiB. Actual nonzero exceptional polynomials, exact bad-offset membership and the combined6D^2 budget are proved. Regular specialization over any characteristic-zero field preserves degree and is separable; each root has nonzero derivative, and the actual finite root set over an algebraically closed field has cardinality dY. Literal integer point evaluations are retained. Functional-square root matching, coordinate-cut dimension and the final integer-grid lower bound remain open, so article13.3 stays in progress. Coverage74/167 and findings76 are unchanged. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.

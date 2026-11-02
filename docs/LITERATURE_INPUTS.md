@@ -2259,3 +2259,21 @@ at most1. Theorem `CommonCurveTheorem.article_13_2` covers real B,q0,
 source dyadic points, total degree48q0 and explicit common threshold/
 height constant1000000, uniformly in the basis size. No unproved input
 or additional Paper C source is introduced. Coverage74/167, findings76.
+
+
+## Actual noncritical curve fibres
+
+Stable ID: `P1-ALG-NONCRITICAL-CURVE-FIBRES`. Status: **proved**,
+exceptional-set and specialized-root stage of article proposition13.3.
+
+The actual polynomial leadingCoeff(C)*Res_Y(C,derivative(C)) is nonzero
+and has degree at most dX+2*dX*dY. Its actual negative integer roots
+and their swapped counterparts have total cardinality at most6D^2.
+Outside them, actual specialization preserves degree and the derivative
+resultant, hence is separable, has nonzero derivative at each root and
+has exactly dY distinct roots over an algebraically closed field of
+characteristic zero. Literal integer evaluations are proved compatible.
+Pinned Mathlib derivative, resultant, separability and algebraically
+closed splitting results are used. Functional-square root matching
+and the final grid bound remain open; no external normalization or
+matching estimate is passed as an unconditional theorem.

@@ -47,4 +47,11 @@ theorem resultant_height (f g : ℤ[X][X]) (m n d H : ℕ)
     PolynomialDeterminantHeight.determinant_height (Polynomial.sylvester f g m n) d H
       (sylvester_entry_degree f g m n d hfd hgd) (sylvester_entry_height f g m n H hfH hgH)
 
+theorem resultant_degree (f g : ℤ[X][X]) (m n d : ℕ)
+    (hf : degreeX f ≤ d) (hg : degreeX g ≤ d) :
+    (f.resultant g m n).natDegree ≤ (m + n) * d := by
+  simpa only [Polynomial.resultant, Fintype.card_fin] using
+    PolynomialDeterminantHeight.determinant_degree (Polynomial.sylvester f g m n) d
+      (sylvester_entry_degree f g m n d hf hg)
+
 end PaperP1.BivariateResultantHeight

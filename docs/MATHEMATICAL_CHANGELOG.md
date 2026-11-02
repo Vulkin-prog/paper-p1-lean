@@ -3344,3 +3344,15 @@ exponent124608q0^2 remain explicit. This confirms and quantifies the
 source argument; no optimized constant or manuscript conclusion error
 is asserted. Coverage is74/167 (main26/73, companion48/94); confirmed
 findings remain76, and original manuscripts are unchanged.
+
+
+## Actual exceptional-fibre budget for proposition13.3
+
+The exceptional polynomials and all source regularity facts are now
+constructed. Their actual integer root sets cost at most6D^2 across
+the two blocks. Every remaining actual fibre retains full degree and
+has the expected distinct roots. This quantifies the existing source
+argument without asserting an optimized constant, a manuscript error
+or a completed integer-grid lower bound. Functional-square matching
+and dimension assembly remain open; coverage74/167 and findings76 stay
+unchanged. See [alignment](INTEGER_FIBRES_ALIGNMENT.md).

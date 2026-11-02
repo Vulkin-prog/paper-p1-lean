@@ -76,4 +76,15 @@ theorem determinant_height {ι : Type*} [Fintype ι] [DecidableEq ι] (M : Matri
           (fun i ↦ hdeg (σ i) i) (fun i ↦ hheight (σ i) i))
     _ = _ := by simp only [sum_const, card_univ, nsmul_eq_mul, Fintype.card_perm, mul_pow, Nat.cast_id]
 
+theorem determinant_degree {ι : Type*} [Fintype ι] [DecidableEq ι] (M : Matrix ι ι ℤ[X]) (d : ℕ)
+    (hdeg : ∀ i j, (M i j).natDegree ≤ d) : M.det.natDegree ≤ Fintype.card ι * d := by
+  classical
+  rw [Matrix.det_apply']
+  apply Polynomial.natDegree_sum_le_of_forall_le
+  intro σ _
+  have hprod : (∏ i, M (σ i) i).natDegree ≤ Fintype.card ι * d := by
+    simpa only [card_univ] using product_degree univ (fun i ↦ M (σ i) i) d (fun i ↦ hdeg (σ i) i)
+  have hmul := Polynomial.natDegree_mul_le (p := ((Equiv.Perm.sign σ : ℤ) : ℤ[X])) (q := ∏ i, M (σ i) i)
+  exact hmul.trans (by simpa only [natDegree_intCast, zero_add] using hprod)
+
 end PaperP1.PolynomialDeterminantHeight

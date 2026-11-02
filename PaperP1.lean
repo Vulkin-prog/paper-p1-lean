@@ -996,3 +996,9 @@ public import PaperP1.Arithmetic.EvenWordRanks
 public import PaperP1.Arithmetic.TwoWitnessFromSupports
 
 public import PaperP1.Arithmetic.CommonCurveTheorem
+
+public import PaperP1.Algebra.BivariateCurveDegrees
+
+public import PaperP1.Algebra.CurveCriticalFibres
+
+public import PaperP1.Algebra.CurveFibreRegularity
