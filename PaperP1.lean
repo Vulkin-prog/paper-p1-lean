@@ -1324,3 +1324,9 @@ public import PaperP1.Model.RetainedCountCylinder
 public import PaperP1.Model.RetainedModifiedLaw
 
 public import PaperP1.Model.RetainedModifiedBounds
+
+public import PaperP1.Model.PrimitiveActiveSeeds
+
+public import PaperP1.Asymptotics.CoarsePrimitiveJointMassUnderBCN
+
+public import PaperP1.Asymptotics.RetainedBadProbabilityUnderBCN

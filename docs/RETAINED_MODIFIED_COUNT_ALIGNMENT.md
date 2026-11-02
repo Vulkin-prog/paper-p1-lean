@@ -67,3 +67,51 @@ No new external input, BCN premise, PaperC port, dependency download,
 manuscript-byte change or Palomar registration is introduced.
 
 Lean v4.36.0-rc2 full build passed (10771 jobs); actual axiom audit passed for all 6598 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4315 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.54 GiB. Deleting a compressed-pair endpoint gives a direct subfamily, proving actual retained-active count domination byR+1. Outside the literal measurable bad event, every active subfamily has nullity<=L/3+1 forN>=2. The zeroed retained-count law and the original law are actual probability pushforwards of the original infinite signs; every observable is integrable and all finite-cylinder and law integrals agree. Exact disagreement is the bad event, giving actual TV coupling<=delta. All-order heterogeneous modified factorial/tail/product-exponential bounds, the original tail with+delta and all five regular-setT19.3 inequalities are proved. The source arithmetic estimate fordelta and identification with its seed-union event remain open; T15.2,T19.3 are in progress. Finding88 is extended; coverage77/167 (main28/73, companion49/94), confirmed improvements88. No new external input, BCN premise, PaperC port, dependency download, manuscript-byte change or Palomar registration.
+
+
+## Uniform vanishing of the literal error under BCN
+
+The actual retained-modification error now converges uniformly to zero,
+conditional on the existing explicit BCN plane-curve bound. For every fixed
+critical-band width C and tolerance epsilon>0, there is a threshold N0 such that,
+for every N>=N0, every critical L, every G contained in the dyadic block and
+every real H,
+
+    delta(H,N,L,G) <= epsilon,
+    TV(Law(originalCount),Law(retainedModifiedCount)) <= epsilon.
+
+Here delta is the literal probability that the actual active configuration is
+not retained. No estimate for delta or convergence assertion is a premise.
+
+The finite probabilistic step is unconditional: a nonretained active set has
+positive relative nullity and hence contains an actual minimally dependent
+subfamily of size at least two. For every finite cutoff K,
+
+    delta <= actualMean/(K+1)
+             + sum_(r=2..K) actualJointMass(primitiveFamilies of size r).
+
+The expectation identity uses the exact finite cylinder of the original
+infinite measure. The first term handles configurations with more than K
+active starts; the remaining terms are actual joint probabilities, not
+centered activities or formal weights. Empty ground sets and zero marginals
+are included.
+
+Under BCN, the two-site primitive joint mass is at most N^(-1/2+eta), using
+the actual pair host count and actual joint-probability bound. Every fixed
+order r>=3 has this same weaker bound from the unconditional primitive
+estimate N^(1-r/2+eta). Only finitely many fixed orders are assembled.
+The critical actual mean is uniformly bounded by M=2*2^C. Choose K after
+epsilon so that M/(K+1)<=epsilon/2, then choose N0 to make the finitely many
+primitive masses sum to at most epsilon/2. In particular K is fixed before
+N, and no fixed-order constant is applied to an order growing with N.
+
+This proves qualitative disappearance of the actual modification and its
+coupling error. It does not prove the source rate N^(-4/5+eta), identify the
+bad event with the specified source seed union, or establish a Poisson or
+quadratic approximation for the original count. Companion T15.2 and T19.3
+remain in progress. Numbered coverage stays 77/167 (main 28/73, companion
+49/94), confirmed mathematical improvements stay 88. The BCN result remains
+an ordinary explicit theorem argument; no new external input or axiom is
+introduced. Original manuscript bytes and the Lean/Mathlib pins are preserved.
+
+Verified Lean v4.36.0-rc2 full build (10777 jobs), actual Audit.lean kernel audit (6611 declarations; only propext, Classical.choice, Quot.sound), 4328 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.52 GiB. The literal retained bad-event probability and actual original-to-modified TV tend uniformly to zero under the ordinary explicit BCN premise. Finite cutoff K is fixed after the tolerance and before N. No source quantitative rate, Poisson approximation, new numbered completion or new mathematical finding is claimed. Coverage 77/167 (main 28/73, companion 49/94); confirmed improvements 88.

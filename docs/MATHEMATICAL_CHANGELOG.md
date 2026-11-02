@@ -3643,3 +3643,8 @@ manuscript-byte change or Palomar registration is introduced.
 ## Finding88 extended: actual retained-modified law and its literal error
 
 An actual retained-configuration modified count is constructed and proved dominated by the shifted direct maximum. Its actual law, every-order heterogeneous moment/tail bound and TV coupling by the exact bad-event probabilitydelta are checked. The retained outside-event subfamily nullity is at mostL/3+1. The source arithmetic rate fordelta and seed-union event identification remain open; T15.2,T19.3 are in progress. No new finding or numbered completion. Coverage77/167, findings88.
+
+
+## Qualitative control of the actual retained-modification error
+
+The actual bad-event probability and original-to-modified total variation now tend uniformly to zero under explicit BCN. The finite seed/mean decomposition is unconditional; its finite order cutoff is chosen before N. This is a weaker intermediate estimate, with no new mathematical finding or numbered completion. The source quantitative rate and seed-union identification remain open. Coverage 77/167, confirmed improvements 88.

@@ -3992,3 +3992,51 @@ with the actual heterogeneous retained-modified construction.
 Coverage77/167 (main28/73, companion49/94), findings88 unchanged.
 No new external input, BCN premise, PaperC port, dependency download,
 manuscript-byte change or Palomar registration is introduced.
+
+
+## Actual retained-error convergence from finitely many fixed primitive orders
+
+Stable ID: `P1-PROB-VANISHING-RETAINED-ERROR-BCN`. Status: **proved conditional on the existing explicit BCN bound**.
+
+The actual retained-modification error now converges uniformly to zero,
+conditional on the existing explicit BCN plane-curve bound. For every fixed
+critical-band width C and tolerance epsilon>0, there is a threshold N0 such that,
+for every N>=N0, every critical L, every G contained in the dyadic block and
+every real H,
+
+    delta(H,N,L,G) <= epsilon,
+    TV(Law(originalCount),Law(retainedModifiedCount)) <= epsilon.
+
+Here delta is the literal probability that the actual active configuration is
+not retained. No estimate for delta or convergence assertion is a premise.
+
+The finite probabilistic step is unconditional: a nonretained active set has
+positive relative nullity and hence contains an actual minimally dependent
+subfamily of size at least two. For every finite cutoff K,
+
+    delta <= actualMean/(K+1)
+             + sum_(r=2..K) actualJointMass(primitiveFamilies of size r).
+
+The expectation identity uses the exact finite cylinder of the original
+infinite measure. The first term handles configurations with more than K
+active starts; the remaining terms are actual joint probabilities, not
+centered activities or formal weights. Empty ground sets and zero marginals
+are included.
+
+Under BCN, the two-site primitive joint mass is at most N^(-1/2+eta), using
+the actual pair host count and actual joint-probability bound. Every fixed
+order r>=3 has this same weaker bound from the unconditional primitive
+estimate N^(1-r/2+eta). Only finitely many fixed orders are assembled.
+The critical actual mean is uniformly bounded by M=2*2^C. Choose K after
+epsilon so that M/(K+1)<=epsilon/2, then choose N0 to make the finitely many
+primitive masses sum to at most epsilon/2. In particular K is fixed before
+N, and no fixed-order constant is applied to an order growing with N.
+
+This proves qualitative disappearance of the actual modification and its
+coupling error. It does not prove the source rate N^(-4/5+eta), identify the
+bad event with the specified source seed union, or establish a Poisson or
+quadratic approximation for the original count. Companion T15.2 and T19.3
+remain in progress. Numbered coverage stays 77/167 (main 28/73, companion
+49/94), confirmed mathematical improvements stay 88. The BCN result remains
+an ordinary explicit theorem argument; no new external input or axiom is
+introduced. Original manuscript bytes and the Lean/Mathlib pins are preserved.

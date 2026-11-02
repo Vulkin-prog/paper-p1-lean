@@ -3248,6 +3248,9 @@ import PaperP1
 #print axioms PaperP1.CoarseIncompatibleTripleUnderBCN.uniform_incompatible
 #print axioms PaperP1.CoarseIncompatibleTripleUnderBCN.uniform_activity_comparison
 #print axioms PaperP1.CoarseIncompatibleTripleUnderBCN.uniform_cumulant_comparison
+#print axioms PaperP1.CoarsePrimitiveJointMassUnderBCN.uniform_pair_mass
+#print axioms PaperP1.CoarsePrimitiveJointMassUnderBCN.uniform_mass
+#print axioms PaperP1.CoarsePrimitiveJointMassUnderBCN.uniform_finite_orders
 #print axioms PaperP1.CoarseThirdCumulantUnderBCN.uniform_repeated_cost
 #print axioms PaperP1.CoarseThirdCumulantUnderBCN.uniform_bound
 #print axioms PaperP1.CoarseThirdCumulantUnderBCN.uniform_vanishing_cumulant
@@ -3885,6 +3888,8 @@ import PaperP1
 #print axioms PaperP1.ResidualComponentRank.small_component_rate
 #print axioms PaperP1.ResidualComponentRank.row_rank_sublinear
 #print axioms PaperP1.ResidualComponentRank.residual_rank_sublinear
+#print axioms PaperP1.RetainedBadProbabilityUnderBCN.uniform_badProbability
+#print axioms PaperP1.RetainedBadProbabilityUnderBCN.uniform_totalVariation
 #print axioms PaperP1.RetainedClassTheorem.companion_T12_1
 #print axioms PaperP1.SaturationDegreeBudget.envelope_div_log_tendsto
 #print axioms PaperP1.SaturationDegreeBudget.log_product_le_envelope
@@ -5333,6 +5338,14 @@ import PaperP1
 #print axioms PaperP1.PrimeRunCylinder.positive_exponential_lower
 #print axioms PaperP1.PrimeRunCylinder.positive_log_lower
 #print axioms PaperP1.PrimeRunCylinder.total_log_lower
+#print axioms PaperP1.PrimitiveActiveSeeds.primitive_card_ge_two
+#print axioms PaperP1.PrimitiveActiveSeeds.exists_primitive_subset
+#print axioms PaperP1.PrimitiveActiveSeeds.not_retained_positive
+#print axioms PaperP1.PrimitiveActiveSeeds.activeWeight_nonneg
+#print axioms PaperP1.PrimitiveActiveSeeds.bad_indicator_bound
+#print axioms PaperP1.PrimitiveActiveSeeds.finite_activeWeight_expectation
+#print axioms PaperP1.PrimitiveActiveSeeds.finite_count_mean
+#print axioms PaperP1.PrimitiveActiveSeeds.badProbability_bound
 #print axioms PaperP1.PrimitiveNominalMass.weight_nonneg
 #print axioms PaperP1.PrimitiveNominalMass.primitive_mass_cap
 #print axioms PaperP1.PrimitiveNominalMass.ordered_sum
