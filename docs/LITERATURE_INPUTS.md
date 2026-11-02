@@ -2223,3 +2223,22 @@ both coordinates exceed this height budget. Primitivity and degree
 bounds are derived. The simultaneous resultant step and final source
 assembly remain open. No external result is left as an axiom or target
 bound hypothesis, and no additional Paper C code is copied.
+
+
+## Actual uniform resultants and simultaneous curve extraction
+
+Stable ID: `P1-ALG-COMMON-CURVE-RESULTANTS`. Status: **proved**,
+simultaneous polynomial-family stage of article theorem13.2.
+
+Gauss's primitive divisibility reflection and irreducibility over the
+coefficient fraction field prove actual resultant nonvanishing when
+divisibility fails. Actual evaluation of the Sylvester Bezout identity
+produces the common integer root. Coefficient arithmetic and the
+permutation determinant give n!*((n*d+1)*H)^n; an explicit uniform power
+budget gives exponent124608q^2 for source degree/height budgets. The
+safe threshold exponent1000000q^2 forces a simultaneous irreducible
+primitive factor for every polynomial in an arbitrary family, with
+total degree48q and height exponent2472q. Final assembly of the actual
+basis pair norms from T9.5 remains open. Pinned Mathlib Gauss, fraction
+map, resultant and determinant theorems are used; no unproved external
+result or new Paper C code is introduced.

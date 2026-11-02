@@ -1897,14 +1897,36 @@
         "PaperP1.BivariateLargeRoot.degreeX_pos",
         "PaperP1.BivariateLargeRoot.both_degrees_pos",
         "PaperP1.InitialCurveFactor.exists_curve",
-        "PaperP1.BivariateDivisionBounds.quotient_height_power_general"
+        "PaperP1.BivariateDivisionBounds.quotient_height_power_general",
+        "PaperP1.PolynomialDeterminantHeight.product_degree",
+        "PaperP1.PolynomialDeterminantHeight.product_height",
+        "PaperP1.PolynomialDeterminantHeight.unit_mul_height",
+        "PaperP1.PolynomialDeterminantHeight.determinant_height",
+        "PaperP1.BivariateResultantNonzero.nonzero_of_not_dvd",
+        "PaperP1.BivariateResultantPoint.common_point",
+        "PaperP1.BivariateResultantPoint.divides_of_large_point",
+        "PaperP1.BivariateResultantHeight.sylvester_entry_degree",
+        "PaperP1.BivariateResultantHeight.sylvester_entry_height",
+        "PaperP1.BivariateResultantHeight.resultant_height",
+        "PaperP1.ResultantPowerBudget.linear_budget",
+        "PaperP1.ResultantPowerBudget.determinant_budget",
+        "PaperP1.ResultantPowerBudget.common_curve_budget",
+        "PaperP1.CommonCurveFamily.linear_threshold",
+        "PaperP1.CommonCurveFamily.exists_curve",
+        "PaperP1.FormalWordEncoding.encode_apply",
+        "PaperP1.FormalWordEncoding.encode_empty",
+        "PaperP1.FormalWordEncoding.encode_support",
+        "PaperP1.FormalWordEncoding.support_representation",
+        "PaperP1.FormalWordEncoding.encode_injective",
+        "PaperP1.FormalWordEncoding.basis_independent"
       ],
       "literature_inputs": [
         "P1-ALG-COMMON-CURVE-NORM-COLLAPSE",
-        "P1-ALG-COMMON-CURVE-POINT-FACTOR"
+        "P1-ALG-COMMON-CURVE-POINT-FACTOR",
+        "P1-ALG-COMMON-CURVE-RESULTANTS"
       ],
       "mathematical_changes": [],
-      "notes": "The actual coordinate ring Z[X,Y]/(C) and its fraction field are constructed for an irreducible integer polynomial C. Positive Y-degree proves characteristic zero; positive degrees in both variables prove all literal word factors survive specialization. The exact specialization kernel is divisibility by C. Primitive norm coefficients cannot all vanish in this field; if C divides the literal pair norm, the two square classes are dependent. Actual field square classes are constructed as the additive unit group modulo doubles, with their F2-module structure and square/multiplication/product equivalences. The actual linear map on finitely supported formal words agrees with the literal polynomial word classes. Pairwise primitive norms divisible by C force the image of the entire word space to have dimension at most one, uniformly in the basis size. Independently, a nonzero integer polynomial vanishing at the point yields a vanishing irreducible factor. Its explicit factor-height bound and Cauchy integer-root bound prove that this factor is primitive and depends on both variables once both integer coordinates exceed the derived height budget. These are actual algebraic constructions and honest intermediate implications. The resultant step forcing the same irreducible factor to divide all pair norms, the uniform quadratic-height threshold and final assembly from the original bounded independent basis remain open. No shared-factor or final image-rank premise is assumed to count this numbered theorem proved. Coverage remains73/167; see COMMON_CURVE_ALIGNMENT.md."
+      "notes": "The actual coordinate ring Z[X,Y]/(C) and its fraction field are constructed for an irreducible integer polynomial C. Positive Y-degree proves characteristic zero; positive degrees in both variables prove all literal word factors survive specialization. The exact specialization kernel is divisibility by C. Primitive norm coefficients cannot all vanish in this field; if C divides the literal pair norm, the two square classes are dependent. Actual field square classes are constructed as the additive unit group modulo doubles, with their F2-module structure and square/multiplication/product equivalences. The actual linear map on finitely supported formal words agrees with the literal polynomial word classes. Pairwise primitive norms divisible by C force the image of the entire word space to have dimension at most one, uniformly in the basis size. Independently, a nonzero integer polynomial vanishing at the point yields a vanishing irreducible factor. Its explicit factor-height bound and Cauchy integer-root bound prove that this factor is primitive and depends on both variables once both integer coordinates exceed the derived height budget. These are actual algebraic constructions and honest intermediate implications. The simultaneous resultant stage is now proved for actual integer polynomial families: an irreducible factor of positive Y-degree which fails to divide another member has a nonzero resultant, by actual Gauss divisibility reflection and coprimality over the coefficient fraction field. The actual common point is a root of that resultant by a Sylvester Bezout identity. Polynomial product heights and the determinant expansion give a coefficient-uniform bound n!*((n*d+1)*H)^n. Under partial-degree budgets24q and height budget2472q this is at most (B+1)^(124608q^2). The explicit threshold with exponent1000000q^2 therefore forces one irreducible primitive two-variable factor to divide every member, independently of family cardinality. It has total degree at most48q and height at most(B+1)^(2472q). Final assembly of this family from the original independent even bounded basis using completed T9.5 remains open. No shared-factor or final image-rank premise is assumed to count this numbered theorem proved. Coverage remains73/167; see COMMON_CURVE_ALIGNMENT.md. Every binary finitely supported selection is now proved to equal the finite-set encoding of its actual support; this encoding is injective. Distinct vectors of an actual basis therefore give literal independent formal words, derived rather than assumed as an extra basis premise."
     },
     {
       "label": "p13:rig:grid-fibres",

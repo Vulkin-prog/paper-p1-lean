@@ -51,6 +51,11 @@ word subspace with the span of the actual basis-word classes. Hence
 pair norms divisible by C, with primitive coefficient families, imply
 the dimension bound for the entire image, not just for a list of words.
 
+`FormalWordEncoding` proves that every binary finitely supported
+selection equals the finite-set encoding of its actual support, and
+that this encoding is injective. Distinct actual basis vectors give
+literal independent words, without an additional independence premise.
+
 ## Constructing the first irreducible factor through the point
 
 `IrreduciblePointFactor` uses actual irreducible factorization and
@@ -76,20 +81,51 @@ as a polynomial over Z[X] and as exclusion of nonunit integer constant
 factors. No common curve, factor height or positive degree is inserted
 as an unproved consequence of the source threshold.
 
+## Actual uniform resultants and a simultaneous common factor
+
+`BivariateResultantNonzero` uses Gauss's lemma over the actual
+coefficient fraction field to prove that an irreducible factor of
+positive Y-degree has nonzero resultant with a polynomial it does not
+divide. No integral Bezout-coprimality assumption is inserted.
+`BivariateResultantPoint` evaluates the actual Sylvester Bezout identity:
+the common integer point forces the resultant to vanish at x.
+
+`PolynomialDeterminantHeight` proves finite product and determinant
+heights by coefficient arithmetic and the actual permutation expansion.
+`BivariateResultantHeight` bounds every actual Sylvester entry from the
+bivariate coefficient bounds, giving
+
+    height(Res_Y(f,g)) <= n! * (((n*d+1)*H)^n).
+
+Here n is the actual Sylvester size, d bounds the X-degree and H the
+coefficient height. The estimate includes zero entries and the empty
+matrix. `ResultantPowerBudget` absorbs every factorial and degree factor
+uniformly. For n<=48q, d<=24q and H<=(B+1)^(2472q), 1<=q<=B, the
+resultant height is at most (B+1)^(124608*q^2).
+
+`CommonCurveFamily.exists_curve` now constructs one actual irreducible
+primitive factor for an arbitrary family of integer polynomials through
+the same point, with partial degrees24q and heights(B+1)^(2400q).
+One member is required nonzero; zero other members are permitted.
+If both absolute coordinates exceed (B+1)^(1000000*q^2), the factor
+divides every member, has both degrees positive, total degree<=48q
+and height<=(B+1)^(2472q). There is no dependence on family cardinality.
+A common factor or resultant height is not assumed as a target premise.
+
 ## Remaining obligations
 
-The resultant of this first factor and any other pair norm must be
-shown nonzero whenever divisibility fails, with a coefficient height
-bound uniform in the degree. Its common-point root would then violate
-the integer-root bound under an explicit quadratic-support threshold.
-This will force the same factor to divide every pair norm.
-The construction must still be assembled for an actual independent
-even bounded basis using completed T9.5, with the original source
-quantifiers and a threshold independent of the basis size.
-Until these steps are checked, theorem13.2 remains in progress.
-No new mathematical correction, external estimate, Paper C source,
-manuscript-byte change or Palomar registration is counted here.
+This simultaneous polynomial family must still be constructed and
+assembled for an actual independent even bounded basis using completed
+T9.5. This includes the symmetric-difference half-rank budget,
+source dyadic thresholds and identification with the already constructed
+formal-word square-class map. The original real source parameters and
+quantifiers must be retained. Until that assembly is checked,
+article theorem13.2 remains in progress. No new independent correction,
+external estimate, Paper C source, manuscript-byte change or Palomar
+registration is counted here.
 
 ## Validation
 
 Lean v4.36.0-rc2 full build passed (10333 jobs); actual axiom audit passed for all 5572 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3287 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.13 GiB. Actual curve field and square classes, entire formal-word image-rank collapse from shared primitive norms, and actual irreducible point-factor extraction with explicit height and positive-degree budgets are proved. Uniform resultant nonvanishing/height and final source assembly remain open; article13.2 is in progress. Coverage remains73/167 and confirmed findings76. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.
+
+Latest uniform-resultant checkpoint: Lean v4.36.0-rc2 full build passed (10347 jobs); actual axiom audit passed for all 5593 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3308 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.12 GiB. Actual resultant nonvanishing, common-point vanishing and coefficient-uniform height are proved. The explicit resultant exponent124608q^2 and safe threshold1000000q^2 construct one primitive irreducible two-variable factor for an arbitrary bounded polynomial family, with total degree48q and height exponent2472q, independently of family size. Exact binary support encoding and independence of distinct actual basis words are proved. Final assembly of the source basis pair norms remains open, so article13.2 stays in progress. Coverage73/167 and findings76 are unchanged. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.

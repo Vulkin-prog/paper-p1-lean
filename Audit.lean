@@ -445,6 +445,12 @@ import PaperP1
 #print axioms PaperP1.BivariateReciprocalSeries.totalOrder_reciprocal
 #print axioms PaperP1.BivariateReciprocalSeries.coefficient_reciprocal
 #print axioms PaperP1.BivariateReciprocalSeries.reciprocal_zero
+#print axioms PaperP1.BivariateResultantHeight.sylvester_entry_degree
+#print axioms PaperP1.BivariateResultantHeight.sylvester_entry_height
+#print axioms PaperP1.BivariateResultantHeight.resultant_height
+#print axioms PaperP1.BivariateResultantNonzero.nonzero_of_not_dvd
+#print axioms PaperP1.BivariateResultantPoint.common_point
+#print axioms PaperP1.BivariateResultantPoint.divides_of_large_point
 #print axioms PaperP1.BivariateRungeCoefficients.weakComposition_bound
 #print axioms PaperP1.BivariateRungeCoefficients.coefficient_bound
 #print axioms PaperP1.BivariateRungeCoefficients.product_bound
@@ -618,6 +624,10 @@ import PaperP1
 #print axioms PaperP1.PlaneNormalRigidity.normal_zero_of_two_constant
 #print axioms PaperP1.PlaneNormalRigidity.two_coordinate_plane_constant
 #print axioms PaperP1.PlaneNormalRigidity.normal_coordinates_ne_zero
+#print axioms PaperP1.PolynomialDeterminantHeight.product_degree
+#print axioms PaperP1.PolynomialDeterminantHeight.product_height
+#print axioms PaperP1.PolynomialDeterminantHeight.unit_mul_height
+#print axioms PaperP1.PolynomialDeterminantHeight.determinant_height
 #print axioms PaperP1.PolynomialHeightArithmetic.integer_height_le
 #print axioms PaperP1.PolynomialHeightArithmetic.integer_height_add
 #print axioms PaperP1.PolynomialHeightArithmetic.integer_height_neg
@@ -659,6 +669,9 @@ import PaperP1
 #print axioms PaperP1.RepeatedIndexCost.pair_bound
 #print axioms PaperP1.RepeatedIndexCost.cube_bound
 #print axioms PaperP1.RepeatedIndexCost.bound
+#print axioms PaperP1.ResultantPowerBudget.linear_budget
+#print axioms PaperP1.ResultantPowerBudget.determinant_budget
+#print axioms PaperP1.ResultantPowerBudget.common_curve_budget
 #print axioms PaperP1.RungeQPolynomial.map_integerSplitProduct
 #print axioms PaperP1.RungeQPolynomial.monic_integerSplitProduct
 #print axioms PaperP1.RungeQPolynomial.natDegree_integerSplitProduct
@@ -1263,6 +1276,8 @@ import PaperP1
 #print axioms PaperP1.CodedClassTargets.mem_targets
 #print axioms PaperP1.CodedClassTargets.equations_card
 #print axioms PaperP1.CodedClassTargets.targets_card
+#print axioms PaperP1.CommonCurveFamily.linear_threshold
+#print axioms PaperP1.CommonCurveFamily.exists_curve
 #print axioms PaperP1.ComponentPrimeBudget.prime_constraint_cost_eventually
 #print axioms PaperP1.CompressedTargetAlignment.of_geometric
 #print axioms PaperP1.CompressedTargetAlignment.bounded_data
@@ -1547,6 +1562,12 @@ import PaperP1
 #print axioms PaperP1.FixedSourceCertificate.hasIntegerCertificate_iff
 #print axioms PaperP1.FixedSourceCertificate.mem_sourceTargets_integer
 #print axioms PaperP1.FixedSourceCertificate.finite_real_bound
+#print axioms PaperP1.FormalWordEncoding.encode_apply
+#print axioms PaperP1.FormalWordEncoding.encode_empty
+#print axioms PaperP1.FormalWordEncoding.encode_support
+#print axioms PaperP1.FormalWordEncoding.support_representation
+#print axioms PaperP1.FormalWordEncoding.encode_injective
+#print axioms PaperP1.FormalWordEncoding.basis_independent
 #print axioms PaperP1.GcdLcmProductBound.gcd_prod_dvd
 #print axioms PaperP1.GcdLcmProductBound.gcd_lcm_le
 #print axioms PaperP1.GcdLcmProductBound.product_le_lcm_mul_bound

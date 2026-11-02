@@ -976,3 +976,17 @@ public import PaperP1.Algebra.IrreduciblePointFactor
 public import PaperP1.Algebra.BivariateLargeRoot
 
 public import PaperP1.Arithmetic.InitialCurveFactor
+
+public import PaperP1.Algebra.PolynomialDeterminantHeight
+
+public import PaperP1.Algebra.BivariateResultantNonzero
+
+public import PaperP1.Algebra.BivariateResultantPoint
+
+public import PaperP1.Algebra.BivariateResultantHeight
+
+public import PaperP1.Algebra.ResultantPowerBudget
+
+public import PaperP1.Arithmetic.CommonCurveFamily
+
+public import PaperP1.Arithmetic.FormalWordEncoding

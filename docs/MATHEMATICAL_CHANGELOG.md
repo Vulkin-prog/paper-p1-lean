@@ -3319,3 +3319,15 @@ counted as a new independent correction or improvement. Findings stay76.
 The simultaneous resultant stage remains open, so numbered coverage
 stays73/167. The exact scope is recorded in
 [the common-curve alignment](COMMON_CURVE_ALIGNMENT.md).
+
+
+## Uniform common-curve resultants: explicit constants
+
+The actual simultaneous polynomial-family construction is now proved.
+Its determinant height is n!*((n*d+1)*H)^n. Source budgets give exponent
+124608q^2 for the resultant and a convenient safe common threshold
+1000000q^2, independently of the family size. The common factor retains
+total degree48q and height exponent2472q. This makes constants in the
+existing source argument explicit, without changing its conclusion or
+claiming optimization. Final basis-norm assembly remains open, so
+article13.2 stays in progress, coverage73/167 and findings76.

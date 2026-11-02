@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5572 audited theorem/lemma declarations**. This
+- The project currently has **5593 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2532,3 +2532,19 @@ of the single common factor for all pair norms remain open. Coverage
 stays73/167; findings remain76. See [exact alignment](COMMON_CURVE_ALIGNMENT.md).
 
 Common-curve algebra and point-factor checkpoint verification: Lean v4.36.0-rc2 full build passed (10333 jobs); actual axiom audit passed for all 5572 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3287 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.13 GiB. Actual curve field and square classes, entire formal-word image-rank collapse from shared primitive norms, and actual irreducible point-factor extraction with explicit height and positive-degree budgets are proved. Uniform resultant nonvanishing/height and final source assembly remain open; article13.2 is in progress. Coverage remains73/167 and confirmed findings76. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.
+
+
+## Uniform resultants and simultaneous polynomial-family extraction
+
+The full simultaneous common-factor step is proved for actual bounded
+integer polynomial families. Resultant nonvanishing is derived over the
+coefficient fraction field, and the common integer root follows from
+the Sylvester Bezout identity. The coefficient-uniform determinant bound
+gives resultant exponent124608q^2; threshold1000000q^2 constructs one
+irreducible primitive two-variable factor dividing every family member,
+with total degree48q and height exponent2472q. The construction is
+independent of the number of family members. Final assembly from the
+original bounded independent even basis via T9.5 remains open.
+Coverage73/167 and findings76 are unchanged.
+
+Uniform common-curve resultant checkpoint verification: Lean v4.36.0-rc2 full build passed (10347 jobs); actual axiom audit passed for all 5593 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3308 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.12 GiB. Actual resultant nonvanishing, common-point vanishing and coefficient-uniform height are proved. The explicit resultant exponent124608q^2 and safe threshold1000000q^2 construct one primitive irreducible two-variable factor for an arbitrary bounded polynomial family, with total degree48q and height exponent2472q, independently of family size. Exact binary support encoding and independence of distinct actual basis words are proved. Final assembly of the source basis pair norms remains open, so article13.2 stays in progress. Coverage73/167 and findings76 are unchanged. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.
