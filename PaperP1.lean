@@ -1584,3 +1584,11 @@ public import PaperP1.Asymptotics.ThreeSlopePrivateDensity
 public import PaperP1.Asymptotics.ThreeSlopePositiveActivity
 public import PaperP1.Arithmetic.ConnectedValueUnions
 public import PaperP1.Model.ConnectedPrivateNormalizedFamilies
+public import PaperP1.Arithmetic.ScaledNormalizedIntersections
+public import PaperP1.Combinatorics.ThreeUnionCard
+public import PaperP1.Arithmetic.RationalTripleNormalizers
+public import PaperP1.Arithmetic.RationalTripleUnionRank
+public import PaperP1.Model.RationalTriplePrivateRank
+public import PaperP1.Asymptotics.BinaryRankPowers
+public import PaperP1.Asymptotics.RationalTriplePrivateProbability
+public import PaperP1.Asymptotics.RationalTriplePrivateMass
