@@ -1573,6 +1573,11 @@ import PaperP1
 #print axioms PaperP1.ComponentSelectionSupport.physicalSelection_apply
 #print axioms PaperP1.ComponentSelectionSupport.physical_single_support
 #print axioms PaperP1.ComponentSelectionSupport.retained_single_card
+#print axioms PaperP1.ComponentSixVertexBudget.family_avoids
+#print axioms PaperP1.ComponentSixVertexBudget.transverse_card
+#print axioms PaperP1.ComponentSixVertexBudget.component_packing
+#print axioms PaperP1.ComponentSixVertexBudget.residual_budget
+#print axioms PaperP1.ComponentSixVertexBudget.residual_real_budget
 #print axioms PaperP1.CompressedTargetAlignment.of_geometric
 #print axioms PaperP1.CompressedTargetAlignment.bounded_data
 #print axioms PaperP1.CompressionRank.private_local_ranks
@@ -1917,6 +1922,15 @@ import PaperP1
 #print axioms PaperP1.FormalWordEncoding.encode_injective
 #print axioms PaperP1.FormalWordEncoding.support_encode
 #print axioms PaperP1.FormalWordEncoding.basis_independent
+#print axioms PaperP1.FullComponentMotifs.component_nonempty
+#print axioms PaperP1.FullComponentMotifs.vertices_injective
+#print axioms PaperP1.FullComponentMotifs.components_disjoint
+#print axioms PaperP1.FullComponentMotifs.component_transverse
+#print axioms PaperP1.FullComponentMotifs.product_eq
+#print axioms PaperP1.FullComponentMotifs.family_card
+#print axioms PaperP1.FullComponentMotifs.family_disjoint
+#print axioms PaperP1.FullComponentMotifs.family_data
+#print axioms PaperP1.FullComponentMotifs.many_of_full_count
 #print axioms PaperP1.GcdLcmProductBound.gcd_prod_dvd
 #print axioms PaperP1.GcdLcmProductBound.gcd_lcm_le
 #print axioms PaperP1.GcdLcmProductBound.product_le_lcm_mul_bound
@@ -3465,6 +3479,7 @@ import PaperP1
 #print axioms PaperP1.ContactSeedKernel.uniform_kernel
 #print axioms PaperP1.ContactSeedMass.point_bound
 #print axioms PaperP1.ContactSeedMass.forward_sum
+#print axioms PaperP1.CoverPrimeSmallCost.uniform_small_cost
 #print axioms PaperP1.CriticalActualMean.mean_mono
 #print axioms PaperP1.CriticalActualMean.lowerMean_pos
 #print axioms PaperP1.CriticalActualMean.uniform_bounds
@@ -3977,6 +3992,7 @@ import PaperP1
 #print axioms PaperP1.OrderPrimeBudget.finite_root_bound
 #print axioms PaperP1.OrderPrimeBudget.critical_conditions
 #print axioms PaperP1.OrderPrimeBudget.critical_root_bound
+#print axioms PaperP1.OrderedPrimitiveHostCount.uniform_count
 #print axioms PaperP1.OrderedPrimitiveMass.subset_population
 #print axioms PaperP1.OrderedPrimitiveMass.nominal_bound
 #print axioms PaperP1.OrderedPrimitiveMass.actual_joint_bound
@@ -3999,6 +4015,10 @@ import PaperP1
 #print axioms PaperP1.PairActivityUnderBCN.uniform_conversion
 #print axioms PaperP1.PairHostIndependentMass.finite_mass_cap
 #print axioms PaperP1.PairHostIndependentMass.uniform_mass
+#print axioms PaperP1.PlanarResidualRankHosts.residual_forces_many
+#print axioms PaperP1.PlanarResidualRankHosts.uniform_all_covers
+#print axioms PaperP1.PlanarResidualRankHosts.hosts_data
+#print axioms PaperP1.PlanarResidualRankHosts.source_planar_assertion
 #print axioms PaperP1.PoissonCharlierConversion.errorConstant_pos
 #print axioms PaperP1.PoissonCharlierConversion.critical_bound
 #print axioms PaperP1.PoissonCharlierConversion.regular_card_eventually
@@ -4146,6 +4166,9 @@ import PaperP1
 #print axioms PaperP1.ResidualComponentRank.small_component_rate
 #print axioms PaperP1.ResidualComponentRank.row_rank_sublinear
 #print axioms PaperP1.ResidualComponentRank.residual_rank_sublinear
+#print axioms PaperP1.ResidualPrimitiveHostCount.hosts_data
+#print axioms PaperP1.ResidualPrimitiveHostCount.all_primitive_triples
+#print axioms PaperP1.ResidualPrimitiveHostCount.source_unrestricted_assertion
 #print axioms PaperP1.RetainedBadProbabilityUnderBCN.uniform_badProbability
 #print axioms PaperP1.RetainedBadProbabilityUnderBCN.uniform_totalVariation
 #print axioms PaperP1.RetainedClassTheorem.companion_T12_1
@@ -4606,6 +4629,8 @@ import PaperP1
 #print axioms PaperP1.DisjointColumnWeights.light_add_heavy
 #print axioms PaperP1.DisjointColumnWeights.retained_card_lower
 #print axioms PaperP1.DisjointColumnWeights.retained_card_real
+#print axioms PaperP1.DisjointSixVertexBudget.surviving_size
+#print axioms PaperP1.DisjointSixVertexBudget.six_vertex_budget
 #print axioms PaperP1.DisjointSubsetIncidence.split_sum
 #print axioms PaperP1.ExposureOrder.total_newWeight
 #print axioms PaperP1.ExposureOrder.newWeight_last_zero
@@ -4762,6 +4787,8 @@ import PaperP1
 #print axioms PaperP1.OrderedExposure.earlier_iff_ne_first
 #print axioms PaperP1.OrderedExposure.prescribedWeight_earlier
 #print axioms PaperP1.OrderedExposure.exists_exposure_exponent_le
+#print axioms PaperP1.OrderedFunctionHosts.population_card
+#print axioms PaperP1.OrderedFunctionHosts.card_le
 #print axioms PaperP1.OrderedPairTuples.values_injective
 #print axioms PaperP1.OrderedPairTuples.values_mem
 #print axioms PaperP1.OrderedPairTuples.values_tuple

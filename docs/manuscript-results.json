@@ -9516,11 +9516,48 @@
       "source": "companion_sections/offset_geometry.tex",
       "line": 309,
       "sha256": "2306bb432c6b369d3fc460c2bff772ea8c7ab113a90cef1e499b0a96666bf574",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.FullComponentMotifs.component_nonempty",
+        "PaperP1.FullComponentMotifs.vertices_injective",
+        "PaperP1.FullComponentMotifs.components_disjoint",
+        "PaperP1.FullComponentMotifs.component_transverse",
+        "PaperP1.FullComponentMotifs.product_eq",
+        "PaperP1.FullComponentMotifs.family_card",
+        "PaperP1.FullComponentMotifs.family_disjoint",
+        "PaperP1.FullComponentMotifs.family_data",
+        "PaperP1.FullComponentMotifs.many_of_full_count",
+        "PaperP1.ComponentSixVertexBudget.family_avoids",
+        "PaperP1.ComponentSixVertexBudget.transverse_card",
+        "PaperP1.ComponentSixVertexBudget.component_packing",
+        "PaperP1.ComponentSixVertexBudget.residual_budget",
+        "PaperP1.ComponentSixVertexBudget.residual_real_budget",
+        "PaperP1.OrderedFunctionHosts.population_card",
+        "PaperP1.OrderedFunctionHosts.card_le",
+        "PaperP1.DisjointSixVertexBudget.surviving_size",
+        "PaperP1.DisjointSixVertexBudget.six_vertex_budget",
+        "PaperP1.CoverPrimeSmallCost.uniform_small_cost",
+        "PaperP1.PlanarResidualRankHosts.residual_forces_many",
+        "PaperP1.PlanarResidualRankHosts.uniform_all_covers",
+        "PaperP1.PlanarResidualRankHosts.hosts_data",
+        "PaperP1.PlanarResidualRankHosts.source_planar_assertion",
+        "PaperP1.OrderedPrimitiveHostCount.uniform_count",
+        "PaperP1.ResidualPrimitiveHostCount.hosts_data",
+        "PaperP1.ResidualPrimitiveHostCount.all_primitive_triples",
+        "PaperP1.ResidualPrimitiveHostCount.source_unrestricted_assertion"
+      ],
+      "literature_inputs": [
+        "P1-DIOPH-THREE-PLANAR-MOTIFS"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "The prescribed-plane and unrestricted host assertions of T20.8 are\nproved on the actual covered three-window relation space. For each\narbitrary cover, its unpinned components meeting all three blocks give\nan exact finite family of pairwise disjoint transverse motifs. Their\nnatural products equal the component products used by T20.7, so their\nsmall-prime square constraints are literal. Component-to-vertex-set\ninjectivity preserves their exact count. The finite small-prime rank\ncost is uniformly below any fixed fraction of B.\n\nConsequently, if any cover has residual dimension at least eta*L,\nthen the triple admits at least (eta/4)*B actual disjoint transverse\nsquare products, eventually and uniformly in all covers. T20.6 then\ngives N^(1+epsilon) hosts and N^(-1+epsilon) original affine mass on\nevery prescribed polynomial family of integer planes. The cover stays\ninside an existential host predicate and is never enumerated. The\nbound holds before primitive filtering, and hence for the literal\nprimitive mass as well. The real cutoff H=C0*B is retained exactly.\n\nThe unrestricted N^(3/2+epsilon) count of primitive triples is also\nproved. In fact it follows from the stronger elementary fixed-order\ncount of all primitive hosts, without a residual-dimension premise.\nA new exact finite conversion from unordered families to injective\ncenter functions supplies the r! enumeration factor and works at\nevery fixed r>=2. It preserves the original primitive predicate.\n\nThe six-vertex packing calculation itself is now exact and checked:\n6*dim(R_D)+|D| <= 3B+3*s(D)+18*(pi(H)+2), where s(D) is the literal\nnumber of free transverse components of size at most five. Its real\nform gives (3B-|D|)/6+s(D)/2+3*(pi(H)+2). This includes arbitrary\ncovers and pins. The remaining unproved part of T20.8 is the exceptional\nmass N^(-1+epsilon) needed to bound s(D) by a fixed constant simultaneously\nfor every cover. That small-component exclusion still needs the\nunrestricted degree-one geometric count. It is not inferred from\npacking or from the planar proposition.\n\nT20.8 moves from not started to in progress; coverage stays 79/167\n(main 28/73, companion 51/94), with 97 confirmed improvements. These\nare applications and exact interfaces for existing improvements,\nnot a new counted finding. No external premise, manuscript edit,\ndependency download or Palomar registration is introduced.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": ""
+        }
+      ],
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11107 jobs), actual axiom audit of all 7200 theorem/lemma declarations, direct Lean checks of all 4917 ledger/finding references, source integrity (138 manifest entries and 167 numbered statements), and git diff --check. Only propext, Classical.choice and Quot.sound occur. Ubuntu root space after verification: 14.91 GiB."
     },
     {
       "label": "p1:consequences:macro",

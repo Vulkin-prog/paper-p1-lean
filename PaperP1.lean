@@ -1564,3 +1564,11 @@ public import PaperP1.Asymptotics.CriticalMotifBudget
 public import PaperP1.Asymptotics.OrientedPlanarMotifCount
 public import PaperP1.Asymptotics.GeneralPlanarMotifCount
 public import PaperP1.Asymptotics.ManyPlanarSquareProducts
+public import PaperP1.Arithmetic.FullComponentMotifs
+public import PaperP1.Arithmetic.ComponentSixVertexBudget
+public import PaperP1.Combinatorics.OrderedFunctionHosts
+public import PaperP1.Combinatorics.DisjointSixVertexBudget
+public import PaperP1.Asymptotics.CoverPrimeSmallCost
+public import PaperP1.Asymptotics.PlanarResidualRankHosts
+public import PaperP1.Asymptotics.OrderedPrimitiveHostCount
+public import PaperP1.Asymptotics.ResidualPrimitiveHostCount
