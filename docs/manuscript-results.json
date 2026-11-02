@@ -3584,7 +3584,8 @@
           "validation": "Verified Lean v4.36.0-rc2 full build (10857 jobs), actual Audit.lean kernel audit (6746 declarations; only propext, Classical.choice, Quot.sound), 4463 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.38 GiB. Actual per-site joint/absolute rows, repeated tuple support and finite repeated-edge/star-square bounds are unconditional. The source-scale N^(-3/2+epsilon) repeated/shared-vertex product costs use the existing ordinary explicit BCN premise. Disjoint non-direct edge products, the full direct-pair comparison and sharp connected/incompatible quartic estimates remain open; main 16.1 stays in progress. Coverage 77/167; confirmed improvements 89.",
           "validation_commit": "8efc2669434edec83ceeb7f64d361a13d6564dbc"
         }
-      ]
+      ],
+      "validation_commit": "4a726866c3198d1ce37ce8e930c6d9d2ca81926b"
     },
     {
       "label": "p13:lower:optimal",
