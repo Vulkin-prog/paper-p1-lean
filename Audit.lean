@@ -974,6 +974,9 @@ import PaperP1
 #print axioms PaperP1.ClippedPowerSum.clipped_sum_le
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le_power
+#print axioms PaperP1.ContractiveExponentialProducts.norm_exponentialProduct_le_one
+#print axioms PaperP1.ContractiveExponentialProducts.norm_first_order_le
+#print axioms PaperP1.ContractiveExponentialProducts.norm_quadratic_error_le
 #print axioms PaperP1.CriticalRankMass.succ_coefficient_eventually
 #print axioms PaperP1.CriticalRankMass.rankMass_exp
 #print axioms PaperP1.CriticalRankMass.critical_rankMass_bound
@@ -5369,6 +5372,7 @@ import PaperP1
 #print axioms PaperP1.UnitFourierWeight.unit_kernel_rank_bound
 #print axioms PaperP1.UnitFourierWeight.signed_unit_sum_zero_of_card_le_one
 #print axioms PaperP1.UnitFourierWeight.abs_signed_unit_sum_le_rpow
+#print axioms PaperP1.UniversalRunConversion.actual_signed_measure_conversion
 #print axioms PaperP1.WindowConditionalSum.finite_bound
 #print axioms PaperP1.WindowFamilyConditional.conditionalProbability_nonneg
 #print axioms PaperP1.WindowFamilyConditional.sourceEvent_restrict
@@ -6230,6 +6234,18 @@ import PaperP1
 #print axioms PaperP1.UniformFubini.equiv
 #print axioms PaperP1.UniformFubini.condition_first
 #print axioms PaperP1.UniformFubini.set_average
+#print axioms PaperP1.UniversalBinomialConversion.covariance_reference_error
+#print axioms PaperP1.UniversalBinomialConversion.reference_lipschitz
+#print axioms PaperP1.UniversalBinomialConversion.norm_conversion
+#print axioms PaperP1.UniversalBinomialConversion.actual_signed_measure_conversion
+#print axioms PaperP1.UniversalHeterogeneousConversion.universalConstant_pos
+#print axioms PaperP1.UniversalHeterogeneousConversion.factor_bounds
+#print axioms PaperP1.UniversalHeterogeneousConversion.first_order_error
+#print axioms PaperP1.UniversalHeterogeneousConversion.quadratic_error
+#print axioms PaperP1.UniversalHeterogeneousConversion.omitted_pair_error
+#print axioms PaperP1.UniversalHeterogeneousConversion.norm_pair_error
+#print axioms PaperP1.UniversalHeterogeneousConversion.norm_conversion
+#print axioms PaperP1.UniversalHeterogeneousConversion.actual_signed_measure_conversion
 #print axioms PaperP1.WeightedPoissonNorm.mass_nonneg
 #print axioms PaperP1.WeightedPoissonNorm.poisson_eq_mathlib
 #print axioms PaperP1.WeightedPoissonNorm.realMass_poisson

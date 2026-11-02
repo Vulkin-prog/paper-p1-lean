@@ -4599,6 +4599,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "72894c0c1dda29fbeb1e57bea917b20f55d6f534"
+    },
+    {
+      "id": "P1-MATH-0086",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "main",
+        "label": "p13:transfer:conversion",
+        "number": "15.1",
+        "page": 39,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 80,
+        "version": "P1 V1.6",
+        "statement_sha256": "ecaa37b976094a2d309768a81a671f3d7517916194a54dd66f5d48df215e523b"
+      },
+      "original_assumption": "The finite conversion in main15.1 assumes mu<=M and uses a constant C_M. Its logarithm proof bounds the whole product by an exponential in the total mean. The earlier logarithm-free proof removed p_*<=1/4 while retaining a mean-dependent constant16exp(2M).",
+      "finding": "A universal constant16exp(2) suffices for the same ordinary l1 expression s_3+s_2^2+A_2*(s_2+p_*), with no bounded-mean premise. Actual Bernoulli and Poisson factors are norm-one probabilities; using their contraction property in the exact finite-product perturbation leaves only the local increment cap2. All marginals in[0,1], arbitrary finite families, signed pair weights and empty families are included. The actual original-run specialization uses the exact mean and second cumulant. The homogeneous binomial pair conversion has the same universal constant without an upper bound onnp.",
+      "evidence": [
+        "PaperP1.JumpPoissonSeries.norm_poisson",
+        "PaperP1.ContractiveExponentialProducts.norm_first_order_le",
+        "PaperP1.ContractiveExponentialProducts.norm_quadratic_error_le",
+        "PaperP1.UniversalHeterogeneousConversion.factor_bounds",
+        "PaperP1.UniversalHeterogeneousConversion.actual_signed_measure_conversion",
+        "PaperP1.UniversalRunConversion.actual_signed_measure_conversion",
+        "PaperP1.UniversalBinomialConversion.actual_signed_measure_conversion"
+      ],
+      "proposed_revision": "Strengthen the finite analytic lemma to the full probability range0<=p_i<=1 and replace C_M by the universal16exp(2), removing mu<=M from that statement. Use contraction of the actual probability factors in the finite-product argument. State the analogous homogeneous finite conversion without a mean bound before the critical asymptotic specialization.",
+      "impact": "Removes the bounded-mean hypothesis from the finite analytic conversion and gives an explicit universal constant. This is separate from finding84, which removed the logarithm and small-marginal restriction. The source arithmetic rates forA_2 andC_2 remain open; there is no new exponent or count-law approximation. Coverage stays77/167.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10655 jobs); actual axiom audit passed for all 6254 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3971 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.77 GiB. The universal constant16exp(2) is proved for the actual finite heterogeneous Poisson–Charlier conversion, with no bounded-mean argument and every true Bernoulli marginal in[0,1]. Every contraction premise is discharged for actual probability factors. Actual original-run means, signed covariances and exact second cumulants are retained. The homogeneous binomial pair conversion has the same universal constant with no bound onnp. Arithmetic pair-activity and covariance scales remain open; main15.1 and companionT17.4 are in progress and add no proved coverage. Coverage77/167 (main28/73, companion49/94); confirmed findings86. No new external input, BCN premise, Paper C port, dependency download, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

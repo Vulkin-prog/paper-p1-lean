@@ -3519,3 +3519,8 @@ The actual finite integer identity is proved without a critical-band premise. In
 ## Actual Hermite reference and its uniform finite comparison
 
 The actual law U+2V is constructed from independent Poisson variables of means mu-alpha andalpha/2. Its factorization and ordinary l1 comparison with Q(mu,alpha) are proved with error4alpha^2 exp(2alpha), plus a finite TV transfer for arbitrary probability laws. Its actual mean and every real exponential moment are proved as integrable Bochner quantities. General natural jump sizes are included in the probability construction. Arithmetic parameter admissibility and source count-law rates remain open; main19.1 is in progress. No new finding; coverage77/167, confirmed findings85.
+
+
+## P1-MATH-0086: a universal conversion constant with no mean cap
+
+The heterogeneous analytic conversion now has the universal constant16exp(2), valid for every finite Bernoulli family in[0,1], without mu<=M. Norm-one probability factors replace the total-mean exponential bound in the product perturbation. The actual run reference and homogeneous binomial pair reference are included. Arithmetic pair-activity and covariance scales remain open; coverage77/167, confirmed findings86.

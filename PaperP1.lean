@@ -1200,3 +1200,11 @@ public import PaperP1.Probability.HermiteReference
 public import PaperP1.Probability.CompoundPoissonExponential
 
 public import PaperP1.Probability.CompoundPoissonMoments
+
+public import PaperP1.Analysis.ContractiveExponentialProducts
+
+public import PaperP1.Probability.UniversalHeterogeneousConversion
+
+public import PaperP1.Model.UniversalRunConversion
+
+public import PaperP1.Probability.UniversalBinomialConversion

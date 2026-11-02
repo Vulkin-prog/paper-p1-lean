@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **6238 audited theorem/lemma declarations**. This
+- The project currently has **6254 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -3391,3 +3391,57 @@ port, dependency download, manuscript-byte change or Palomar
 registration is introduced.
 
 Lean v4.36.0-rc2 full build passed (10647 jobs); actual axiom audit passed for all 6238 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3955 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.78 GiB. Actual independent Poisson product coordinates, all natural jump sizes, absolutely convergent atomic series, exact coefficient pushforwards and norm-one probability exponentials are proved. The actual Hermite law has meanmu, every real exponential moment, factorization pi_mu*exp(alpha*Delta^2/2), explicit ordinary l1 error4alpha^2 exp(2alpha) and a finite TV transfer for any probability law. Integrability precedes all actual Bochner integrals. Eventual admissibility of model/truncated parameters and the source count-law rates remain open; main19.1 is in progress. Coverage77/167 (main28/73, companion49/94); confirmed findings85. No new finding, external input, BCN premise, Paper C port, dependency download, manuscript-byte change or Palomar registration.
+
+
+## Universal analytic conversion without a mean bound
+
+A further strengthening of the finite analytic conversion is proved:
+the constant is universal, C=16exp(2), with no upper bound on the total
+mean. For arbitrary finite Bernoulli marginals0<=p_i<=1, arbitrary
+signed weights on selected two-element subsets, and any nonnegative
+upper marginal capP,
+
+    ||B_2-Q(mu,2C_2-s_2)||_1
+      <=16exp(2)*(s_3+s_2^2+A_2*(s_2+P)).
+
+No mean bound mu<=M or small-marginal condition is required. The actual
+Bernoulli convolution factors and actual Poisson factors are proved to
+have normone. Their finite products are contractions. Exact insertion
+identities and absolute exponential tails then need only the local
+increment cap ||p_i*Delta||<=2, rather than a bound involving their sum.
+Every contraction premise of the generic algebra lemma is discharged
+for the actual probability factors; the target conversion is not an
+input. All actual signed singleton masses and infinite tails remain
+controlled by the ordinary l1 norm.
+
+The universal inequality is instantiated on actual original-run
+Bochner marginals and centered pair coefficients, with the actual count
+mean and exact variance-minus-mean parameter. The full diagonal term
+and all covariance signs are retained. It holds for every deterministic
+dyadic subset, with no mean-cap argument and no asymptotic premise.
+
+The homogeneous specialization is proved too. For every integern>=2,
+0<=p<=1 and arbitrary realbeta,c2, the actual finite binomial pair
+reference satisfies
+
+    ||reference-Q(np,2c2-np^2)||_1
+      <=4|beta-c2|+16exp(2)*
+          (np^3+(np^2)^2+|c2|*(np^2+p)).
+
+No upper bound onnp is assumed. A selected single pair in the full
+finite heterogeneous theorem gives the exact covariance-reference
+bound; the beta replacement has its proved cost4|beta-c2|. The source
+natural subtractionn-2, omitted-product cardinality and all finite
+products/sums are checked.
+
+P1-MATH-0084 records the earlier removal of the logarithm and small-p
+restriction. New P1-MATH-0086 records the independent removal of the
+bounded-mean premise and the universal constant. This changes no
+asymptotic exponent. Main15.1 remains in progress for the arithmetic
+pair-activity rate A_2=O(N^(-2/3+epsilon)); companionT17.4 remains in
+progress for C_2=O(a_N). Neither bound is assumed or counted proved.
+Coverage77/167 (main28/73, companion49/94), confirmed findings86.
+No external mathematical input, BCN premise, Paper C port, dependency
+download, manuscript-byte change or Palomar registration is added.
+
+Lean v4.36.0-rc2 full build passed (10655 jobs); actual axiom audit passed for all 6254 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3971 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.77 GiB. The universal constant16exp(2) is proved for the actual finite heterogeneous Poisson–Charlier conversion, with no bounded-mean argument and every true Bernoulli marginal in[0,1]. Every contraction premise is discharged for actual probability factors. Actual original-run means, signed covariances and exact second cumulants are retained. The homogeneous binomial pair conversion has the same universal constant with no bound onnp. Arithmetic pair-activity and covariance scales remain open; main15.1 and companionT17.4 are in progress and add no proved coverage. Coverage77/167 (main28/73, companion49/94); confirmed findings86. No new external input, BCN premise, Paper C port, dependency download, manuscript-byte change or Palomar registration.
