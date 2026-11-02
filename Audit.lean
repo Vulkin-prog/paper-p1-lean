@@ -2432,9 +2432,18 @@ import PaperP1
 #print axioms PaperP1.PlaneCurvePointCount.article_13_5_under_BCN
 #print axioms PaperP1.PolynomialEndpointBudget.source_size_bound
 #print axioms PaperP1.PolynomialEndpointBudget.exceptional_polynomial
+#print axioms PaperP1.PolynomialPrimeFactorPowers.two_pow_le_divisors
+#print axioms PaperP1.PolynomialPrimeFactorPowers.uniform_four_pow
 #print axioms PaperP1.PositiveProductPairs.positive_values_count
 #print axioms PaperP1.PositiveProductPairs.product_fibre_count
 #print axioms PaperP1.PositiveProductPairs.uniform_count
+#print axioms PaperP1.PositiveSplitProducts.product_pos
+#print axioms PaperP1.PositiveSplitProducts.product_cast
+#print axioms PaperP1.PositiveSplitProducts.product_bound
+#print axioms PaperP1.PositiveSplitProducts.difference_bound
+#print axioms PaperP1.PositiveSplitProducts.resultant_bound
+#print axioms PaperP1.PositiveSplitProducts.kernel_resultant_bound
+#print axioms PaperP1.PositiveSplitProducts.integer_square_kernel
 #print axioms PaperP1.PrescribedPatternDivisors.prescribed_pos
 #print axioms PaperP1.PrescribedPatternDivisors.newPart_pos
 #print axioms PaperP1.PrescribedPatternDivisors.coordinate_split
@@ -3928,6 +3937,10 @@ import PaperP1
 #print axioms PaperP1.PoissonCharlierConversion.actual_regular_bound
 #print axioms PaperP1.PolylogSmoothModuli.log_power_exponential
 #print axioms PaperP1.PolylogSmoothModuli.odd_smooth_count
+#print axioms PaperP1.PolynomialSplitKernelCount.finite_code_bound
+#print axioms PaperP1.PolynomialSplitKernelCount.uniform_count
+#print axioms PaperP1.PolynomialSplitKernelCount.single_square_equation
+#print axioms PaperP1.PolynomialSplitKernelCount.two_square_equations
 #print axioms PaperP1.PositionedMassPropagation.all_positions
 #print axioms PaperP1.PositionedSeedBounds.defects
 #print axioms PaperP1.PositionedSeedBounds.contacts
@@ -4929,6 +4942,7 @@ import PaperP1
 #print axioms PaperP1.LinearKernelFibres.embed_equation
 #print axioms PaperP1.LinearKernelFibres.height_budget
 #print axioms PaperP1.LinearKernelFibres.fixed_linear_kernels_count
+#print axioms PaperP1.PolynomialLinearKernelFibres.uniform_count
 #print axioms PaperP1.PolynomialPellCount.generalizedPellBox_atMost_divisor_orbit
 #print axioms PaperP1.PolynomialPellCount.product_not_isSquare_of_ratio_not_isSquare
 #print axioms PaperP1.PolynomialPellCount.originalToGeneralized_injective

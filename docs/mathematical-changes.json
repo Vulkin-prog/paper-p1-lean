@@ -5167,6 +5167,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "a724a5961263b32fd7e6aa0f8ba7bcaf4ebc27b3"
+    },
+    {
+      "id": "P1-MATH-0096",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The checked one-variable split-product estimates associated with T1.7 and T4.1 use offsets in fixed logarithmic windows and a variable in a fixed comparable positive interval.",
+      "finding": "For fixed degree and polynomial exponent, the N^epsilon one-variable count needs only that every actual selected value n+a be positive and at most N^K. Offsets and their common translation may be arbitrary, n need not be comparable to N, and the nonzero square multiplier has no height restriction. One equation of degree at least two, two disjoint nonempty equations, and fixed full-product kernel fibres are all covered.",
+      "evidence": [
+        "PaperP1.PolynomialLinearKernelFibres.uniform_count",
+        "PaperP1.PolynomialPrimeFactorPowers.two_pow_le_divisors",
+        "PaperP1.PolynomialPrimeFactorPowers.uniform_four_pow",
+        "PaperP1.PositiveSplitProducts.product_pos",
+        "PaperP1.PositiveSplitProducts.product_cast",
+        "PaperP1.PositiveSplitProducts.product_bound",
+        "PaperP1.PositiveSplitProducts.difference_bound",
+        "PaperP1.PositiveSplitProducts.resultant_bound",
+        "PaperP1.PositiveSplitProducts.kernel_resultant_bound",
+        "PaperP1.PositiveSplitProducts.integer_square_kernel",
+        "PaperP1.PolynomialSplitKernelCount.finite_code_bound",
+        "PaperP1.PolynomialSplitKernelCount.uniform_count",
+        "PaperP1.PolynomialSplitKernelCount.single_square_equation",
+        "PaperP1.PolynomialSplitKernelCount.two_square_equations"
+      ],
+      "proposed_revision": "State a positive-value version of the one-variable split-product lemma, with a fixed polynomial value cap and the threshold before all offsets and coefficients. Use the kernel-resultant prime support and uniform positive quadratic fibre argument. Apply it to later moving line substitutions only after their integer scaling and positive value bounds have been verified.",
+      "impact": "Weakens geometric restrictions in the one-variable input while retaining uniformity and including both square and nonsquare quadratic ratios. It does not by itself prove the planar substitution, the complete planar count T20.6, two-variable geometric counts or the dense weighted sector.",
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (11063 jobs), source and ledger checks, actual axiom audit of 7100 declarations (only propext, Classical.choice and Quot.sound), and 4817 direct ledger/evidence declaration checks; Ubuntu root free space 14.98 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

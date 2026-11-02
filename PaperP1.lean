@@ -1546,3 +1546,7 @@ public import PaperP1.Arithmetic.OffsetPlaneSupports
 public import PaperP1.Asymptotics.SmallNormalPlanes
 public import PaperP1.Arithmetic.BoundedIntegerPlanes
 public import PaperP1.Asymptotics.OffsetPlaneNormalBudget
+public import PaperP1.Diophantine.PolynomialLinearKernelFibres
+public import PaperP1.Arithmetic.PolynomialPrimeFactorPowers
+public import PaperP1.Arithmetic.PositiveSplitProducts
+public import PaperP1.Asymptotics.PolynomialSplitKernelCount

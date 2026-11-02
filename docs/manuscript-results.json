@@ -5021,26 +5021,42 @@
       "sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813",
       "status": "in_progress",
       "lean_declarations": [
-        "PaperP1.SquareEquationKernel.kernels_eq_of_square_mul",
-        "PaperP1.SquareEquationKernel.integer_square_to_kernel",
         "PaperP1.DisjointSquareEquations.combine",
+        "PaperP1.DisjointSquareEquations.integer_two_equations",
         "PaperP1.DisjointSquareEquations.single_equation",
         "PaperP1.DisjointSquareEquations.two_equations",
-        "PaperP1.DisjointSquareEquations.integer_two_equations",
+        "PaperP1.DisjointSquareTheorem.companion_T4_1",
         "PaperP1.DisjointSquareTheorem.mem_solutions",
         "PaperP1.DisjointSquareTheorem.two_equation_count",
-        "PaperP1.DisjointSquareTheorem.companion_T4_1",
+        "PaperP1.FixedDegreeKernelCount.real_interval_count",
         "PaperP1.FixedDegreeKernelCount.uniform_count",
-        "PaperP1.FixedDegreeKernelCount.real_interval_count"
+        "PaperP1.PolynomialLinearKernelFibres.uniform_count",
+        "PaperP1.PolynomialPrimeFactorPowers.two_pow_le_divisors",
+        "PaperP1.PolynomialPrimeFactorPowers.uniform_four_pow",
+        "PaperP1.PolynomialSplitKernelCount.finite_code_bound",
+        "PaperP1.PolynomialSplitKernelCount.single_square_equation",
+        "PaperP1.PolynomialSplitKernelCount.two_square_equations",
+        "PaperP1.PolynomialSplitKernelCount.uniform_count",
+        "PaperP1.PositiveSplitProducts.difference_bound",
+        "PaperP1.PositiveSplitProducts.integer_square_kernel",
+        "PaperP1.PositiveSplitProducts.kernel_resultant_bound",
+        "PaperP1.PositiveSplitProducts.product_bound",
+        "PaperP1.PositiveSplitProducts.product_cast",
+        "PaperP1.PositiveSplitProducts.product_pos",
+        "PaperP1.PositiveSplitProducts.resultant_bound",
+        "PaperP1.SquareEquationKernel.integer_square_to_kernel",
+        "PaperP1.SquareEquationKernel.kernels_eq_of_square_mul"
       ],
       "literature_inputs": [
-        "P1-ARITH-DISJOINT-SQUARE-EQUATIONS"
+        "P1-ARITH-DISJOINT-SQUARE-EQUATIONS",
+        "P1-DIOPH-POLYNOMIAL-MOVING-ROOT-COUNT"
       ],
       "mathematical_changes": [
-        "P1-MATH-0069"
+        "P1-MATH-0069",
+        "P1-MATH-0096"
       ],
-      "notes": "The complete one-variable assertion is proved with uniform arbitrary nonzero integer coefficients: one split equation of degree at least two, or two equations with nonempty disjoint root lists, has at most N^epsilon solutions on every fixed comparable positive interval, for each fixed degree cap and polylogarithmic offset width. Coefficient heights are unnecessary, and odd degrees are included. The two-variable surface counts and all remaining graph consequences are still open; T1.7 is not counted complete. See DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md.",
-      "validation_commit": "a870737a5c2bac6f352bf92984c80f7e30fa1dba"
+      "notes": "The complete one-variable assertion is proved with uniform arbitrary nonzero integer coefficients: one split equation of degree at least two, or two equations with nonempty disjoint root lists, has at most N^epsilon solutions on every fixed comparable positive interval, for each fixed degree cap and polylogarithmic offset width. Coefficient heights are unnecessary, and odd degrees are included. The two-variable surface counts and all remaining graph consequences are still open; T1.7 is not counted complete. See DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md.\n\nThe one-variable split-product count now permits arbitrary moving\ninteger offsets. For fixed natural K,d and epsilon>0, one threshold\nprecedes every offset set A, nonzero integer coefficient c and finite\nsolution population S. If 2<=|A|<=d, every actual value n+a is positive\nand at most N^K, and\n\n    c * product_(a in A)(n+a) is an integer square,\n\nthen |S|<=N^epsilon. The variable n is natural but has no required\ncomparison with N. The offsets can be arbitrarily far from zero;\nonly the actual positive values are bounded. The coefficient c has\nno height restriction. Two equations with disjoint nonempty offset\nsets satisfy the same count. Fixed product-kernel fibres also have\nthe same bound, uniformly in their squarefree kernel.\n\nThe argument is internal. Two fixed individual squarefree kernels give\nan injective positive Pell representation, with coefficients, square\nparts and offset difference bounded by N^K. The full product kernel\nand pairwise offset resultant have height at most N^(K(d+d^2)), using\none actual solution and the positive value cap. Individual prime\nsupports lie in that fixed kernel-resultant support. The number of\nsupport codes is at most 4^omega(m)<=tau(m)^2=N^o(1), and every code\nfibre is bounded by the checked uniform positive quadratic theorem.\nBoth square and nonsquare coefficient ratios are included.\n\nThis strengthens the previously checked one-variable portions of T1.7\nand T4.1 beyond logarithmic offset windows, without Pila or another\nexternal curve-counting premise. It provides an input for moving line\nsubstitutions in later planar arguments; those substitutions and the\nfull planar population count T20.6 are NOT yet proved here. T20.6\nstays not started. The two-variable geometric counts in T1.7 and the\ndense weighted sector remain open. T1.7 stays in progress; T4.1 stays\nproved. Coverage stays 78/167 (main 28/73, companion 50/94).\nThe relaxation of the offset hypotheses is confirmed improvement\nP1-MATH-0096. Confirmed improvements become 96. No new external input,\nkernel axiom, dependency download, original manuscript edit or Palomar\nregistration is introduced.",
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (11063 jobs), source and ledger checks, actual axiom audit of 7100 declarations (only propext, Classical.choice and Quot.sound), and 4817 direct ledger/evidence declaration checks; Ubuntu root free space 14.98 GiB. Original manuscript bytes and all 167 statement hashes preserved."
     },
     {
       "label": "p1:arith:dense",
@@ -6283,26 +6299,42 @@
       "sha256": "541205f707e088c00ac965f0b54abb3d30a14b550bc2e9575a3940e438666784",
       "status": "proved",
       "lean_declarations": [
-        "PaperP1.SquareEquationKernel.kernels_eq_of_square_mul",
-        "PaperP1.SquareEquationKernel.integer_square_to_kernel",
         "PaperP1.DisjointSquareEquations.combine",
+        "PaperP1.DisjointSquareEquations.integer_two_equations",
         "PaperP1.DisjointSquareEquations.single_equation",
         "PaperP1.DisjointSquareEquations.two_equations",
-        "PaperP1.DisjointSquareEquations.integer_two_equations",
+        "PaperP1.DisjointSquareTheorem.companion_T4_1",
         "PaperP1.DisjointSquareTheorem.mem_solutions",
         "PaperP1.DisjointSquareTheorem.two_equation_count",
-        "PaperP1.DisjointSquareTheorem.companion_T4_1",
+        "PaperP1.FixedDegreeKernelCount.real_interval_count",
         "PaperP1.FixedDegreeKernelCount.uniform_count",
-        "PaperP1.FixedDegreeKernelCount.real_interval_count"
+        "PaperP1.PolynomialLinearKernelFibres.uniform_count",
+        "PaperP1.PolynomialPrimeFactorPowers.two_pow_le_divisors",
+        "PaperP1.PolynomialPrimeFactorPowers.uniform_four_pow",
+        "PaperP1.PolynomialSplitKernelCount.finite_code_bound",
+        "PaperP1.PolynomialSplitKernelCount.single_square_equation",
+        "PaperP1.PolynomialSplitKernelCount.two_square_equations",
+        "PaperP1.PolynomialSplitKernelCount.uniform_count",
+        "PaperP1.PositiveSplitProducts.difference_bound",
+        "PaperP1.PositiveSplitProducts.integer_square_kernel",
+        "PaperP1.PositiveSplitProducts.kernel_resultant_bound",
+        "PaperP1.PositiveSplitProducts.product_bound",
+        "PaperP1.PositiveSplitProducts.product_cast",
+        "PaperP1.PositiveSplitProducts.product_pos",
+        "PaperP1.PositiveSplitProducts.resultant_bound",
+        "PaperP1.SquareEquationKernel.integer_square_to_kernel",
+        "PaperP1.SquareEquationKernel.kernels_eq_of_square_mul"
       ],
       "literature_inputs": [
-        "P1-ARITH-DISJOINT-SQUARE-EQUATIONS"
+        "P1-ARITH-DISJOINT-SQUARE-EQUATIONS",
+        "P1-DIOPH-POLYNOMIAL-MOVING-ROOT-COUNT"
       ],
       "mathematical_changes": [
-        "P1-MATH-0069"
+        "P1-MATH-0069",
+        "P1-MATH-0096"
       ],
-      "notes": "Full companion T4.1, with a stronger acyclic arithmetic proof: j=2 always suffices, independent of the degree cap and error margin, and all coefficients may be arbitrary nonzero integers without any height bound. One equation with at least two distinct roots fixes the actual squarefree kernel; the proved fixed-degree split-product fibre count is uniformly N^epsilon for every kernel. Multiplying two nonconstant equations with disjoint roots gives such an equation, of degree at most 2K. The literal finite set of integer solutions in every fixed comparable positive interval is counted. One threshold precedes all critical-band lengths, root lists, coefficients and solution sets; polynomial-height and even-degree restrictions are unnecessary. The proof uses the complete uniform quadratic/Pell and fixed-kernel count chains, without a Pila curve-count premise. See DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md.",
-      "validation_commit": "a870737a5c2bac6f352bf92984c80f7e30fa1dba"
+      "notes": "Full companion T4.1, with a stronger acyclic arithmetic proof: j=2 always suffices, independent of the degree cap and error margin, and all coefficients may be arbitrary nonzero integers without any height bound. One equation with at least two distinct roots fixes the actual squarefree kernel; the proved fixed-degree split-product fibre count is uniformly N^epsilon for every kernel. Multiplying two nonconstant equations with disjoint roots gives such an equation, of degree at most 2K. The literal finite set of integer solutions in every fixed comparable positive interval is counted. One threshold precedes all critical-band lengths, root lists, coefficients and solution sets; polynomial-height and even-degree restrictions are unnecessary. The proof uses the complete uniform quadratic/Pell and fixed-kernel count chains, without a Pila curve-count premise. See DISJOINT_SQUARE_EQUATIONS_ALIGNMENT.md.\n\nThe one-variable split-product count now permits arbitrary moving\ninteger offsets. For fixed natural K,d and epsilon>0, one threshold\nprecedes every offset set A, nonzero integer coefficient c and finite\nsolution population S. If 2<=|A|<=d, every actual value n+a is positive\nand at most N^K, and\n\n    c * product_(a in A)(n+a) is an integer square,\n\nthen |S|<=N^epsilon. The variable n is natural but has no required\ncomparison with N. The offsets can be arbitrarily far from zero;\nonly the actual positive values are bounded. The coefficient c has\nno height restriction. Two equations with disjoint nonempty offset\nsets satisfy the same count. Fixed product-kernel fibres also have\nthe same bound, uniformly in their squarefree kernel.\n\nThe argument is internal. Two fixed individual squarefree kernels give\nan injective positive Pell representation, with coefficients, square\nparts and offset difference bounded by N^K. The full product kernel\nand pairwise offset resultant have height at most N^(K(d+d^2)), using\none actual solution and the positive value cap. Individual prime\nsupports lie in that fixed kernel-resultant support. The number of\nsupport codes is at most 4^omega(m)<=tau(m)^2=N^o(1), and every code\nfibre is bounded by the checked uniform positive quadratic theorem.\nBoth square and nonsquare coefficient ratios are included.\n\nThis strengthens the previously checked one-variable portions of T1.7\nand T4.1 beyond logarithmic offset windows, without Pila or another\nexternal curve-counting premise. It provides an input for moving line\nsubstitutions in later planar arguments; those substitutions and the\nfull planar population count T20.6 are NOT yet proved here. T20.6\nstays not started. The two-variable geometric counts in T1.7 and the\ndense weighted sector remain open. T1.7 stays in progress; T4.1 stays\nproved. Coverage stays 78/167 (main 28/73, companion 50/94).\nThe relaxation of the offset hypotheses is confirmed improvement\nP1-MATH-0096. Confirmed improvements become 96. No new external input,\nkernel axiom, dependency download, original manuscript edit or Palomar\nregistration is introduced.",
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (11063 jobs), source and ledger checks, actual axiom audit of 7100 declarations (only propext, Classical.choice and Quot.sound), and 4817 direct ledger/evidence declaration checks; Ubuntu root free space 14.98 GiB. Original manuscript bytes and all 167 statement hashes preserved."
     },
     {
       "label": "p1:fixed:CRT",
