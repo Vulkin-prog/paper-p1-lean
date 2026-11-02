@@ -4102,3 +4102,54 @@ the new moment-transfer consequence is conditional only on BCN. Numbered
 coverage remains 77/167 (main 28/73, companion 49/94), confirmed improvements
 remain 88. No new external input, axiom, dependency download, source-byte
 change, or Palomar registration is introduced.
+
+
+## Two-sided coarse actual factorial-moment convergence
+
+Stable ID: `P1-PROB-COARSE-FIXED-FACTORIAL-BCN`. Status: **lower branch proved unconditionally; two-sided result proved conditional on existing explicit BCN**.
+
+Every fixed actual factorial moment now has a two-sided coarse estimate.
+For the original full dyadic count, with its exact actual mean mu_N,
+for every fixed r>=0 and eta>0, under the existing explicit BCN premise,
+
+    |E(Z_N)_r - mu_N^r| <= N^(-1/2+eta)
+
+eventually, uniformly for every critical length L in the fixed band. The
+same estimate holds with the nominal mean lambda_N. These are actual
+Bochner factorial moments of the original infinite prime-sign count.
+No target moment expansion is assumed.
+
+The new lower branch is unconditional. Exact deletion and insertion of a
+marked coordinate give the finite identity
+
+    sum_(distinct (r+1)-tuples) q(tuple)
+      = sum_(distinct r-tuples t) sum_(z not in t) q(t union {z}).
+
+For positive source mass, the inner sum is exactly that source mass times
+its actual fresh conditional mean. Zero source masses are handled directly
+by nonnegativity; no incompatible family is divided by its zero mass.
+The previously checked negative conditional-deviation bound therefore gives
+
+    E(Z_N)_r >= max(0,lambda_N-N^(-1/2+eta))^r
+
+for every fixed r, without BCN. A bounded nonnegative power-difference
+inequality yields lambda_N^r-E(Z_N)_r<=N^(-1/2+eta), still unconditionally.
+All source cardinalities used in this induction are bounded by fixed r
+before the final scale N is chosen.
+
+The existing BCN-dependent upper bound uses the actual heterogeneous mean
+and actual dependent-family mass. The exact mean bias estimate also gives,
+unconditionally at every fixed r,
+
+    |mu_N^r-lambda_N^r| <= N^(-1+eta).
+
+Combining these checked branches proves the displayed two-sided estimates.
+This is a first factorial-moment convergence result and is weaker than the
+source quadratic expansion: the correction binom(r,2)*mu_N^(r-2)*alpha_N,
+the source 4/5 error, ordinary-moment expansion and higher-cumulant estimate
+remain open. It is not asserted to be an original-law total-variation or
+Poisson approximation theorem. Main 6.4 remains in progress. Coverage stays
+77/167 (main 28/73, companion 49/94), confirmed improvements stay 88.
+The external BCN input is an ordinary explicit argument; no axiom, new
+literature input, dependency download, source-byte change or Palomar
+registration is introduced.

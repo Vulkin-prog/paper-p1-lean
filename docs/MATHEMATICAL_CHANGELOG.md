@@ -3653,3 +3653,8 @@ The actual bad-event probability and original-to-modified total variation now te
 ## Bounded original-count moments from actual primitive seed propagation
 
 Canonical tuple enumeration and the proved propagation theorem yield an actual unordered seed-mass bound. Under explicit BCN, every fixed-order dependent joint mass is at most N^(-1/2+eta), giving an actual factorial upper bound by mu^r plus that scale and bounded original moments of every fixed order. This discharges the higher-moment premise in regular-count transfer under BCN. Main 6.4 is now in progress; its sharp two-sided expansion remains open. No numbered completion or new mathematical finding is counted. Coverage 77/167; confirmed improvements 88.
+
+
+## First two-sided actual factorial-moment convergence estimate
+
+An exact fresh-tuple recurrence and the unconditional negative conditional-deviation estimate prove an unconditional factorial-moment lower bound. Under explicit BCN this combines with actual dependent-family upper bounds to give |E(Z_N)_r-mu_N^r|<=N^(-1/2+eta) at every fixed order. The nominal-mean version is proved too. Main 6.4 remains in progress for its sharper quadratic correction and remainder. No numbered completion or new finding. Coverage 77/167, confirmed improvements 88.

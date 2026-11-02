@@ -53,3 +53,52 @@ port, dependency download, manuscript-byte change or Palomar
 registration is introduced.
 
 Lean v4.36.0-rc2 full build passed (10743 jobs); actual axiom audit passed for all 6485 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4202 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.59 GiB. For any fixed maximum source cardinality, actual negative conditional deviation is at mostN^(-1/2+epsilon), source deletion costsN^(-1+epsilon), and the actual conditional expectation of Z_N-#A is at leastlambda-N^(-1/2+epsilon), without BCN. Actual event probability ratios, finite indicator integrability, conditional Bochner mean identities, signed positive/negative decomposition and arbitrary weighted/normalized source averaging are proved. The fixed-channel positive excess and two-sided Palm estimate remain open; T2.7 is in progress. Coverage77/167 (main28/73, companion49/94), confirmed findings87. No new mathematical finding, external input, BCN premise, PaperC port, dependency download, manuscript-byte change or Palomar registration.
+
+
+## Negative fresh-mean control implies unconditional factorial lower bounds
+
+Every fixed actual factorial moment now has a two-sided coarse estimate.
+For the original full dyadic count, with its exact actual mean mu_N,
+for every fixed r>=0 and eta>0, under the existing explicit BCN premise,
+
+    |E(Z_N)_r - mu_N^r| <= N^(-1/2+eta)
+
+eventually, uniformly for every critical length L in the fixed band. The
+same estimate holds with the nominal mean lambda_N. These are actual
+Bochner factorial moments of the original infinite prime-sign count.
+No target moment expansion is assumed.
+
+The new lower branch is unconditional. Exact deletion and insertion of a
+marked coordinate give the finite identity
+
+    sum_(distinct (r+1)-tuples) q(tuple)
+      = sum_(distinct r-tuples t) sum_(z not in t) q(t union {z}).
+
+For positive source mass, the inner sum is exactly that source mass times
+its actual fresh conditional mean. Zero source masses are handled directly
+by nonnegativity; no incompatible family is divided by its zero mass.
+The previously checked negative conditional-deviation bound therefore gives
+
+    E(Z_N)_r >= max(0,lambda_N-N^(-1/2+eta))^r
+
+for every fixed r, without BCN. A bounded nonnegative power-difference
+inequality yields lambda_N^r-E(Z_N)_r<=N^(-1/2+eta), still unconditionally.
+All source cardinalities used in this induction are bounded by fixed r
+before the final scale N is chosen.
+
+The existing BCN-dependent upper bound uses the actual heterogeneous mean
+and actual dependent-family mass. The exact mean bias estimate also gives,
+unconditionally at every fixed r,
+
+    |mu_N^r-lambda_N^r| <= N^(-1+eta).
+
+Combining these checked branches proves the displayed two-sided estimates.
+This is a first factorial-moment convergence result and is weaker than the
+source quadratic expansion: the correction binom(r,2)*mu_N^(r-2)*alpha_N,
+the source 4/5 error, ordinary-moment expansion and higher-cumulant estimate
+remain open. It is not asserted to be an original-law total-variation or
+Poisson approximation theorem. Main 6.4 remains in progress. Coverage stays
+77/167 (main 28/73, companion 49/94), confirmed improvements stay 88.
+The external BCN input is an ordinary explicit argument; no axiom, new
+literature input, dependency download, source-byte change or Palomar
+registration is introduced.

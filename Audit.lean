@@ -690,6 +690,7 @@ import PaperP1
 #print axioms PaperP1.LinearCombinationSupport.support_subset
 #print axioms PaperP1.LinearCombinationSupport.card_le
 #print axioms PaperP1.MomentReconstruction.finite_uncentered_expansion
+#print axioms PaperP1.NonnegativePowerDifference.bound
 #print axioms PaperP1.OldBlockSelections.exists_selections
 #print axioms PaperP1.PairwiseEqualSpan.exists_line
 #print axioms PaperP1.PairwiseEqualSpan.finrank_le_one
@@ -3247,6 +3248,9 @@ import PaperP1
 #print axioms PaperP1.CoarseDependentFamilyMassUnderBCN.uniform_seeded_mass
 #print axioms PaperP1.CoarseDependentFamilyMassUnderBCN.uniform_seed_orders
 #print axioms PaperP1.CoarseDependentFamilyMassUnderBCN.uniform_dependent_mass
+#print axioms PaperP1.CoarseFixedFactorialMomentsUnderBCN.uniform_power_mean_bias
+#print axioms PaperP1.CoarseFixedFactorialMomentsUnderBCN.uniform_nominal_error
+#print axioms PaperP1.CoarseFixedFactorialMomentsUnderBCN.uniform_actual_error
 #print axioms PaperP1.CoarseIncompatibleTripleUnderBCN.uniform_deficit
 #print axioms PaperP1.CoarseIncompatibleTripleUnderBCN.uniform_incompatible
 #print axioms PaperP1.CoarseIncompatibleTripleUnderBCN.uniform_activity_comparison
@@ -3468,6 +3472,8 @@ import PaperP1
 #print axioms PaperP1.FixedExceptionalMass.contact_bound
 #print axioms PaperP1.FixedExceptionalMass.bad_mass
 #print axioms PaperP1.FixedExceptionalMass.bad_original_mass
+#print axioms PaperP1.FixedFactorialLower.uniform_lower_power
+#print axioms PaperP1.FixedFactorialLower.uniform_lower_error
 #print axioms PaperP1.FixedHeightResidual.large_kernel_rate
 #print axioms PaperP1.FixedHeightResidual.full_kernel_rate
 #print axioms PaperP1.FixedOrderMassPropagation.all_extensions
@@ -5066,6 +5072,9 @@ import PaperP1
 #print axioms PaperP1.FreeComponentRank.components_le_intersection_add_cost
 #print axioms PaperP1.FreeComponentRank.component_intersection_abs_bound
 #print axioms PaperP1.FreeComponentRank.companion_T9_3
+#print axioms PaperP1.FreshFactorialLower.joint_fresh_sum_eq
+#print axioms PaperP1.FreshFactorialLower.factorial_succ_lower
+#print axioms PaperP1.FreshFactorialLower.factorial_lower_power
 #print axioms PaperP1.HeterogeneousDirectMaximum.direct_joint_factor
 #print axioms PaperP1.HeterogeneousDirectMaximum.finite_joint_product
 #print axioms PaperP1.HeterogeneousDirectMaximum.actualMean_eq_countMoment
@@ -6238,6 +6247,9 @@ import PaperP1
 #print axioms PaperP1.FiniteSignedPalm.deletion_l1_bound
 #print axioms PaperP1.FiniteSignedPalm.diagonalError_l1_bound
 #print axioms PaperP1.FiniteSignedPalm.signed_palm_residual_bound
+#print axioms PaperP1.FreshTupleRecurrence.encoding_image
+#print axioms PaperP1.FreshTupleRecurrence.sum_succ_eq_fresh
+#print axioms PaperP1.FreshTupleRecurrence.sum_succ_lower
 #print axioms PaperP1.HereditaryActiveMaximum.active_mem
 #print axioms PaperP1.HereditaryActiveMaximum.active_hereditary
 #print axioms PaperP1.HereditaryActiveMaximum.maximum_congr

@@ -1342,3 +1342,13 @@ public import PaperP1.Asymptotics.CoarseDependentFamilyMassUnderBCN
 public import PaperP1.Model.DependentFactorialBound
 
 public import PaperP1.Asymptotics.FixedCountMomentBoundsUnderBCN
+
+public import PaperP1.Probability.FreshTupleRecurrence
+
+public import PaperP1.Algebra.NonnegativePowerDifference
+
+public import PaperP1.Model.FreshFactorialLower
+
+public import PaperP1.Asymptotics.FixedFactorialLower
+
+public import PaperP1.Asymptotics.CoarseFixedFactorialMomentsUnderBCN
