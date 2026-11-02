@@ -4230,16 +4230,52 @@
         "PaperP1.CurveCriticalFibres.exceptional_budget",
         "PaperP1.CurveFibreRegularity.fibre_separable",
         "PaperP1.CurveFibreRegularity.root_derivative_ne_zero",
-        "PaperP1.CurveFibreRegularity.fibre_roots_card"
+        "PaperP1.CurveFibreRegularity.fibre_roots_card",
+        "PaperP1.FormalWordEncoding.support_encode",
+        "PaperP1.FiniteSupportImageRank.finrank_le_card_of_supported",
+        "PaperP1.FiniteSupportImageRank.mem_supportUnion",
+        "PaperP1.FiniteSupportImageRank.outside_union_zero",
+        "PaperP1.FiniteSupportImageRank.support_subset_union",
+        "PaperP1.FiniteSupportImageRank.supportUnion_subset",
+        "PaperP1.FiniteSupportImageRank.support_subset_of_basis",
+        "PaperP1.FiniteSupportImageRank.rank_le_supportUnion",
+        "PaperP1.CurveSwapField.swap_dvd_iff",
+        "PaperP1.CurveSwapField.coordinateMap_injective",
+        "PaperP1.CurveSwapField.fieldMap_specialize",
+        "PaperP1.CurveSwapField.square_word_swap",
+        "PaperP1.SubspaceKernelCut.finrank_lower",
+        "PaperP1.CurveIntegerFibres.mem_offsetBox",
+        "PaperP1.CurveIntegerFibres.mem_integerFibre",
+        "PaperP1.CurveIntegerFibres.mem_integerGrid",
+        "PaperP1.CurveIntegerFibres.grid_card_eq_sum_fibres",
+        "PaperP1.CurveIntegerFibres.grid_card_swap",
+        "PaperP1.CurveIntegerFibres.degree_le_fibre",
+        "PaperP1.CurveIntegerFibres.mul_card_le_grid",
+        "PaperP1.CurveSquareGridBound.basis_grid_bound",
+        "PaperP1.CurveCoordinateCut.inclusion_injective",
+        "PaperP1.CurveCoordinateCut.literal_square",
+        "PaperP1.CurveCoordinateCut.first_regular",
+        "PaperP1.CurveCoordinateCut.second_regular",
+        "PaperP1.CurveCoordinateCut.badData_finrank",
+        "PaperP1.CurveCoordinateCut.dimension_lower",
+        "PaperP1.IntegerGridTheorem.floor_box_iff",
+        "PaperP1.IntegerGridTheorem.mem_real_grid",
+        "PaperP1.IntegerGridTheorem.real_rhs_le_truncated",
+        "PaperP1.IntegerGridTheorem.certificate_grid_bound",
+        "PaperP1.IntegerGridTheorem.basis_support_bounds",
+        "PaperP1.IntegerGridTheorem.article_13_3"
       ],
-      "proposed_revision": "Offer the formal Hensel argument as an algebraic replacement for the local normalization paragraph. Spell out the actual critical polynomial leadingCoeff(C)*Res_Y(C,derivative_Y(C)), the safe exceptional-coordinate constant6, the translated formal parameter and exact function-field embedding. Explain that an unmatched selection produces T times a unit and hence cannot represent a functional square. Keep the later dimension and grid-count assembly separate. No optimization of the numerical constant or error in the original conclusion is claimed.",
-      "impact": "Proves the actual local functional-square-to-integer-offset matching stage of proposition13.3 without constructing a geometric normalization or assuming a branch or valuation theorem as an external input. Coordinate-cut dimension and final grid-count assembly remain open, so the numbered proposition stays in progress and coverage remains74/167. Confirmed findings total77.",
-      "validation": "Lean v4.36.0-rc2 full build passed (10443 jobs); actual axiom audit passed for all 5652 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3367 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.05 GiB. Actual simple-root lifting follows from proved power-series adic completeness and Hensel after unit leading-coefficient normalization. The actual formal branch, exact curve substitution kernel, injective coordinate-ring map and actual function-field fraction map are proved. An unmatched selected fibre gives an actual T-times-unit word series, irreducible and nonsquare in its fraction field; actual functional squares therefore force an integer-offset match. No normalization, branch, valuation, kernel or target matching conclusion is assumed as an external theorem. This confirms P1-MATH-0077. Coordinate-cut dimension and final grid-count assembly remain open; article13.3 stays in progress. Coverage74/167 and findings77. No new manuscript conclusion error, external estimate, Paper C source, manuscript-byte change or Palomar registration.",
+      "proposed_revision": "Offer the actual formal Hensel argument as an algebraic replacement for the local normalization paragraph. Spell out the critical polynomial leadingCoeff(C)*Res_Y(C,derivative_Y(C)), the safe exceptional-coordinate constant6, the translated formal parameter and exact function-field embedding. Explain that an unmatched selection produces T times a unit and cannot be a functional square. The retained dimension is at least t-1-6D^2, and the two injective physical projections give max(dX,dY) times this dimension as an actual integer-grid lower bound. Negative right sides are covered by truncation to zero. No optimized constant or error in the original conclusion is claimed.",
+      "impact": "Completes article proposition13.3 from its actual source hypotheses with explicit exceptional constant6. The full Hensel matching, actual coordinate cuts, support-union rank bounds, both integer-fibre counts and the real-box/truncated-bound identifications are proved. Geometric normalization and geometric integrality are unnecessary extra inputs. Coverage75/167 (main27/73, companion48/94); confirmed findings remain77.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10457 jobs); actual axiom audit passed for all 5685 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3400 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.04 GiB. Full article13.3 is proved through the actual common-curve certificate, the actual class-map and exceptional-coordinate kernels, bounded basis supports, both injective physical projections, actual Hensel root matching and the actual swapped function-field map. The retained dimension is at least t-1-6D^2 and the actual integer-grid lower bound has constant6. Original real parameters, exact real-box grid membership and the original real/truncated natural lower bounds are proved. No branch, normalization, matching, dimension-loss or target grid count is an unproved input. Coverage75/167 (main27/73, companion48/94); findings77. No optimized constant, source-conclusion error, external point-count estimate, Paper C source, manuscript-byte change or Palomar registration.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "0c658ee35b8050dfbc3b3da5cc90ae3c1568a58b"
+      "validation_commit": "0c658ee35b8050dfbc3b3da5cc90ae3c1568a58b",
+      "validation_history": [
+        "0c658ee35b8050dfbc3b3da5cc90ae3c1568a58b"
+      ]
     }
   ]
 }

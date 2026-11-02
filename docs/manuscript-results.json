@@ -1953,8 +1953,9 @@
       "source": "main_sections/pair_rigidity.tex",
       "line": 166,
       "sha256": "1ee0a2e2750461d837dea949cb2b861f208c7d5139454b1837376c0e47bd288e",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
+        "PaperP1.IntegerGridTheorem.article_13_3",
         "PaperP1.PolynomialDeterminantHeight.determinant_degree",
         "PaperP1.BivariateResultantHeight.resultant_degree",
         "PaperP1.BivariateCurveDegrees.degreeX_le_of_coefficients",
@@ -1999,16 +2000,49 @@
         "PaperP1.CurveWordSeries.second_factor_unit",
         "PaperP1.CurveWordSeries.exists_simple_factor",
         "PaperP1.CurveWordSeries.not_fraction_square_word",
-        "PaperP1.CurveSquareMatching.root_matches_offset"
+        "PaperP1.CurveSquareMatching.root_matches_offset",
+        "PaperP1.FormalWordEncoding.support_encode",
+        "PaperP1.FiniteSupportImageRank.finrank_le_card_of_supported",
+        "PaperP1.FiniteSupportImageRank.mem_supportUnion",
+        "PaperP1.FiniteSupportImageRank.outside_union_zero",
+        "PaperP1.FiniteSupportImageRank.support_subset_union",
+        "PaperP1.FiniteSupportImageRank.supportUnion_subset",
+        "PaperP1.FiniteSupportImageRank.support_subset_of_basis",
+        "PaperP1.FiniteSupportImageRank.rank_le_supportUnion",
+        "PaperP1.CurveSwapField.swap_dvd_iff",
+        "PaperP1.CurveSwapField.coordinateMap_injective",
+        "PaperP1.CurveSwapField.fieldMap_specialize",
+        "PaperP1.CurveSwapField.square_word_swap",
+        "PaperP1.SubspaceKernelCut.finrank_lower",
+        "PaperP1.CurveIntegerFibres.mem_offsetBox",
+        "PaperP1.CurveIntegerFibres.mem_integerFibre",
+        "PaperP1.CurveIntegerFibres.mem_integerGrid",
+        "PaperP1.CurveIntegerFibres.grid_card_eq_sum_fibres",
+        "PaperP1.CurveIntegerFibres.grid_card_swap",
+        "PaperP1.CurveIntegerFibres.degree_le_fibre",
+        "PaperP1.CurveIntegerFibres.mul_card_le_grid",
+        "PaperP1.CurveSquareGridBound.basis_grid_bound",
+        "PaperP1.CurveCoordinateCut.inclusion_injective",
+        "PaperP1.CurveCoordinateCut.literal_square",
+        "PaperP1.CurveCoordinateCut.first_regular",
+        "PaperP1.CurveCoordinateCut.second_regular",
+        "PaperP1.CurveCoordinateCut.badData_finrank",
+        "PaperP1.CurveCoordinateCut.dimension_lower",
+        "PaperP1.IntegerGridTheorem.floor_box_iff",
+        "PaperP1.IntegerGridTheorem.mem_real_grid",
+        "PaperP1.IntegerGridTheorem.real_rhs_le_truncated",
+        "PaperP1.IntegerGridTheorem.certificate_grid_bound",
+        "PaperP1.IntegerGridTheorem.basis_support_bounds"
       ],
       "literature_inputs": [
         "P1-ALG-NONCRITICAL-CURVE-FIBRES",
-        "P1-ALG-FORMAL-CURVE-ROOT-MATCHING"
+        "P1-ALG-FORMAL-CURVE-ROOT-MATCHING",
+        "P1-ALG-INTEGER-GRID-BOUND"
       ],
       "mathematical_changes": [
         "P1-MATH-0077"
       ],
-      "notes": "The actual exceptional-fibre polynomial is constructed as leadingCoeff(C)*Res_Y(C,derivative_Y(C)). It is proved nonzero for an irreducible integer curve of positive Y-degree, using actual Gauss/resultant nonvanishing and the strict derivative degree. Actual polynomial determinant and Sylvester entry degrees bound it by dX+2*dX*dY. Its negative integer root set is the actual finite exceptional offset set. Both blocks together have at most6*D^2 exceptional offsets, D the actual total degree; partial-degree/total-degree and swap identities are proved. Outside the exceptional set, actual specialization to any characteristic-zero field retains full degree and is separable; every root has nonzero derivative, and over an algebraically closed field the actual finite root set has exactly dY elements. Integer evaluations are identified with the original curve equation. No geometric-integrality assumption is inserted. Actual functional-square root matching is now proved by an explicit formal Hensel branch over any characteristic-zero field containing the chosen fibre root. The branch has X=T-u and Y(0)=z; its substitution kernel is exactly(C), proved by nonzero resultants and injective translated-polynomial evaluation, so the actual curve function field maps into the fraction field of the power-series ring. An unmatched selected first-block factor gives the actual word series T times a unit, which is irreducible and remains nonsquare in the fraction field by integral closure. This contradicts an actual functional square and forces z=-v for a selected second-block offset. Hensel completeness, leading-coefficient normalization, branch existence, kernel equality and fraction-field transport are all proved, not assumed. P1-MATH-0077 records this replacement for the geometric-normalization matching argument. Coordinate-cut dimension loss and final integer-grid lower-bound assembly remain open. No root matching, normalization or target grid count is assumed to count the numbered result proved. Coverage remains74/167; see INTEGER_FIBRES_ALIGNMENT.md."
+      "notes": "The actual exceptional-fibre polynomial is constructed as leadingCoeff(C)*Res_Y(C,derivative_Y(C)). It is proved nonzero for an irreducible integer curve of positive Y-degree, using actual Gauss/resultant nonvanishing and the strict derivative degree. Actual polynomial determinant and Sylvester entry degrees bound it by dX+2*dX*dY. Its negative integer root set is the actual finite exceptional offset set. Both blocks together have at most6*D^2 exceptional offsets, D the actual total degree; partial-degree/total-degree and swap identities are proved. Outside the exceptional set, actual specialization to any characteristic-zero field retains full degree and is separable; every root has nonzero derivative, and over an algebraically closed field the actual finite root set has exactly dY elements. Integer evaluations are identified with the original curve equation. No geometric-integrality assumption is inserted. Actual functional-square root matching is now proved by an explicit formal Hensel branch over any characteristic-zero field containing the chosen fibre root. The branch has X=T-u and Y(0)=z; its substitution kernel is exactly(C), proved by nonzero resultants and injective translated-polynomial evaluation, so the actual curve function field maps into the fraction field of the power-series ring. An unmatched selected first-block factor gives the actual word series T times a unit, which is irreducible and remains nonsquare in the fraction field by integral closure. This contradicts an actual functional square and forces z=-v for a selected second-block offset. Hensel completeness, leading-coefficient normalization, branch existence, kernel equality and fraction-field transport are all proved, not assumed. P1-MATH-0077 records this replacement for the geometric-normalization matching argument. The actual class-map kernel followed by the actual exceptional-coordinate kernel is now constructed. Rank-nullity and the finite exceptional-coordinate target give dimension at least t-1-6D^2. The literal polynomial of every retained binary word is proved to be a functional square, and all its selected coordinates are regular. Supports of all subspace words are bounded by the actual original finite basis. Injective physical projections make the actual basis-support unions have cardinality at least the retained dimension. Actual complex roots and Hensel matching give at least dY integer points on every selected regular vertical fibre. A proved injective map of the actual swapped coordinate rings and fraction fields transports functional squares; the horizontal argument gives dX. The actual grid cardinality is the sum of fibre cardinalities and is invariant under swapping coordinates. Thus max(dX,dY)*(t-1-6D^2) bounds the actual grid cardinality from below. The full article_13_3 theorem constructs the actual certificate through article_13_2 from the original bounded independent even source basis, real B,q and comparable integer points. It retains the point, degree and height conclusions, proves both the truncated natural and original real lower bounds, and identifies grid membership exactly with integer points in the real box. No image-rank, matching, branch, coordinate-cut dimension or target grid-count estimate is assumed beyond the source hypotheses. The safe exceptional constant is explicitly6; no optimization or error in the source conclusion is claimed. Coverage75/167; see INTEGER_FIBRES_ALIGNMENT.md."
     },
     {
       "label": "p13:rig:bcn",

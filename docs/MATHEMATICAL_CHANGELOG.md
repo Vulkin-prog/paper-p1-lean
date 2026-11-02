@@ -3375,3 +3375,16 @@ constant or completed grid-point lower bound is asserted. Coordinate-
 cut dimension and final count assembly remain open. Coverage stays
 74/167; confirmed findings now77. See
 [exact alignment](INTEGER_FIBRES_ALIGNMENT.md).
+
+
+## Completed integer-grid proposition13.3, exceptional constant6
+
+The local Hensel replacement recorded in P1-MATH-0077 is now assembled
+with actual coordinate kernels, injective physical projections, support
+unions and both actual integer-fibre counts. The full proposition holds
+with explicit safe constant6, including real parameters and truncation
+of negative right sides to zero. No geometric integrality or unproved
+normalization input is required. This quantifies and supplies an
+alternative proof of the existing conclusion; no optimized constant
+or source-conclusion error is claimed. Coverage75/167 (main27/73,
+companion48/94); confirmed findings remain77. Originals are unchanged.

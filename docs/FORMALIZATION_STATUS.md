@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 2 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **74 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 6.3, 9.1, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorems 10.1, 13.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Proposition T9.5, Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Propositions T1.14 and T22.7.
+- Numbered results completed: **75 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 6.3, 9.1, 13.3, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorems 10.1, 13.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Proposition T9.5, Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Propositions T1.14 and T22.7.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5652 audited theorem/lemma declarations**. This
+- The project currently has **5685 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2594,3 +2594,20 @@ the disk alert threshold; only the required Hensel dependency cache was
 added. See [alignment](INTEGER_FIBRES_ALIGNMENT.md).
 
 Formal Hensel root-matching checkpoint verification: Lean v4.36.0-rc2 full build passed (10443 jobs); actual axiom audit passed for all 5652 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3367 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.05 GiB. Actual simple-root lifting follows from proved power-series adic completeness and Hensel after unit leading-coefficient normalization. The actual formal branch, exact curve substitution kernel, injective coordinate-ring map and actual function-field fraction map are proved. An unmatched selected fibre gives an actual T-times-unit word series, irreducible and nonsquare in its fraction field; actual functional squares therefore force an integer-offset match. No normalization, branch, valuation, kernel or target matching conclusion is assumed as an external theorem. This confirms P1-MATH-0077. Coordinate-cut dimension and final grid-count assembly remain open; article13.3 stays in progress. Coverage74/167 and findings77. No new manuscript conclusion error, external estimate, Paper C source, manuscript-byte change or Palomar registration.
+
+
+## Completed integer-grid proposition13.3
+
+Article13.3 is proved from the actual source hypotheses. The class-map
+kernel followed by actual bad-coordinate restrictions has dimension
+at least t-1-6D^2. Both injective physical projections force this many
+used offsets. Actual Hensel root matching and a proved swap map of
+the actual function fields give dY and dX integer points per selected
+regular fibre, respectively. The actual grid count is at least their
+maximum times the retained dimension. Real B,q, exact real-box grid
+membership and both original/truncated lower bounds are included.
+P1-MATH-0077 now covers the completed proof improvement. Coverage75/167
+(main27/73, companion48/94); findings remain77. See
+[statement alignment](INTEGER_FIBRES_ALIGNMENT.md).
+
+Complete integer-grid checkpoint verification: Lean v4.36.0-rc2 full build passed (10457 jobs); actual axiom audit passed for all 5685 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3400 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.04 GiB. Full article13.3 is proved through the actual common-curve certificate, the actual class-map and exceptional-coordinate kernels, bounded basis supports, both injective physical projections, actual Hensel root matching and the actual swapped function-field map. The retained dimension is at least t-1-6D^2 and the actual integer-grid lower bound has constant6. Original real parameters, exact real-box grid membership and the original real/truncated natural lower bounds are proved. No branch, normalization, matching, dimension-loss or target grid count is an unproved input. Coverage75/167 (main27/73, companion48/94); findings77. No optimized constant, source-conclusion error, external point-count estimate, Paper C source, manuscript-byte change or Palomar registration.

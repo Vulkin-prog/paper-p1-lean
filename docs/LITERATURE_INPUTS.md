@@ -2298,3 +2298,21 @@ two needed Henselian/completeness module dependency caches were fetched.
 No Henselian or branch conclusion is an external axiom or extra source
 assumption. P1-MATH-0077 records the proof improvement. The quantitative
 coordinate-cut and final grid assembly remain open.
+
+
+## Actual coordinate cuts and both integer-grid counts
+
+Stable ID: `P1-ALG-INTEGER-GRID-BOUND`. Status: **proved**,
+full article proposition13.3.
+
+The actual two-stage kernel cuts lose at most1+6D^2 dimensions.
+Injective physical projections and actual finite basis-support unions
+retain at least this many offsets. Actual complex roots, the proved
+formal Hensel matching and the actual swapped coordinate/fraction-field
+map yield both integer-fibre counts, hence the maximum-degree grid
+bound. Original real parameters and the negative-right-side convention
+are included. Pinned Mathlib rank-nullity, finite basis, finite-function
+dimension, algebraically closed splitting and fraction-map APIs are
+used with their actual proved instances. No new external estimate,
+normalization input, assumed dimension bound or assumed grid count is
+introduced. Coverage75/167; confirmed findings77.

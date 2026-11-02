@@ -1,8 +1,8 @@
 # Actual noncritical fibres and the integer offset-grid problem
 
 Source: article proposition13.3, `p13:rig:grid-fibres`,
-`main_sections/pair_rigidity.tex:166`. Status: **in progress**.
-Coverage remains74/167 (main26/73, companion48/94).
+`main_sections/pair_rigidity.tex:166`. Status: **proved**.
+Coverage75/167 (main27/73, companion48/94).
 
 ## The actual exceptional polynomials
 
@@ -92,16 +92,57 @@ premise. The theorem holds over any characteristic-zero field containing
 the chosen root; geometric integrality is not required.
 P1-MATH-0077 records this local proof improvement for future integration.
 
-## Remaining obligations
+## The actual coordinate cut and support unions
 
-The coordinate restrictions excluding the bad offsets must still be
-assembled with the class-map kernel and injective physical projections
-to derive the dimension and final actual integer-grid lower bound.
-These quantitative assembly steps remain open; article13.3 is not
-counted complete. Coverage stays74/167 and confirmed findings now77.
-No new external estimate, Paper C source, manuscript-byte change or
-Palomar registration is introduced.
+`CurveCoordinateCut` constructs the kernel of the actual functional
+square-class map on V, then the kernel of the actual evaluations at
+the two finite bad-offset sets. Rank-nullity gives retained dimension
+at least t-1-6D^2. Every retained word is proved to have a literal
+functional-square polynomial; every selected coordinate is regular.
+
+`FiniteSupportImageRank` proves that an injective finitely supported
+projection has rank at most its actual basis-support union cardinality.
+Coordinate functionals show that these unions support every vector.
+The bounded original basis therefore bounds every retained word.
+Injectivity of both source physical projections is preserved on the
+constructed nested kernels.
+
+## Both actual integer-fibre counts
+
+`CurveIntegerFibres` defines the actual finite integer grid and fibres
+by filtering the offset box with C(-u,-v)=0. Complex polynomial roots
+have the full distinct-root cardinality outside the bad offsets.
+Hensel root matching puts each root in the negative integer image of
+the selected second-block support, proving at least dY points in each
+selected first-block fibre. The actual grid cardinality is the sum
+of its fibre cardinalities.
+
+`CurveSwapField` constructs the injective map of actual coordinate
+rings under variable exchange and the induced actual fraction-field
+map. Specialization commutes with it, so actual functional squares
+transport to the swapped literal word. Swapping the grid preserves
+its cardinality. Applying the same argument gives dX times the
+retained dimension. No horizontal matching or field transport is an
+assumed input.
+
+`IntegerGridTheorem.certificate_grid_bound` applies to any actual
+common-curve certificate with both injective physical projections.
+`article_13_3` constructs such a certificate through the fully proved
+article13.2 from the original actual bounded even independent basis,
+real B,q and comparable integer points. It keeps the point, degree
+and height conclusions and proves
+
+    #grid >= max(dX,dY) * (t-1-6D^2).
+
+Both the original real inequality and its natural truncation at zero
+are proved. `mem_real_grid` identifies membership exactly with integer
+points in [-B,B]^2 satisfying the original curve equation. This is the
+full numbered proposition with explicit safe constant6, independent
+of t,B and the curve degree. No optimized constant or source-conclusion
+error is asserted. P1-MATH-0077 records the proof improvement.
+No external point-count estimate, Paper C source, manuscript-byte
+change or Palomar registration is introduced.
 
 ## Validation
 
-Lean v4.36.0-rc2 full build passed (10443 jobs); actual axiom audit passed for all 5652 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3367 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.05 GiB. Actual simple-root lifting follows from proved power-series adic completeness and Hensel after unit leading-coefficient normalization. The actual formal branch, exact curve substitution kernel, injective coordinate-ring map and actual function-field fraction map are proved. An unmatched selected fibre gives an actual T-times-unit word series, irreducible and nonsquare in its fraction field; actual functional squares therefore force an integer-offset match. No normalization, branch, valuation, kernel or target matching conclusion is assumed as an external theorem. This confirms P1-MATH-0077. Coordinate-cut dimension and final grid-count assembly remain open; article13.3 stays in progress. Coverage74/167 and findings77. No new manuscript conclusion error, external estimate, Paper C source, manuscript-byte change or Palomar registration.
+Lean v4.36.0-rc2 full build passed (10457 jobs); actual axiom audit passed for all 5685 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3400 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.04 GiB. Full article13.3 is proved through the actual common-curve certificate, the actual class-map and exceptional-coordinate kernels, bounded basis supports, both injective physical projections, actual Hensel root matching and the actual swapped function-field map. The retained dimension is at least t-1-6D^2 and the actual integer-grid lower bound has constant6. Original real parameters, exact real-box grid membership and the original real/truncated natural lower bounds are proved. No branch, normalization, matching, dimension-loss or target grid count is an unproved input. Coverage75/167 (main27/73, companion48/94); findings77. No optimized constant, source-conclusion error, external point-count estimate, Paper C source, manuscript-byte change or Palomar registration.

@@ -42,6 +42,9 @@ theorem encode_injective : Function.Injective encode := by
   rw [encode_apply, encode_apply] at he
   by_cases hI : z ∈ I <;> by_cases hJ : z ∈ J <;> simp_all
 
+theorem support_encode (I : Finset ℤ) : (encode I).support = I :=
+  encode_injective (encode_support (encode I))
+
 theorem basis_independent {ι : Type*} (V : Submodule (ZMod 2) Words)
     (b : Module.Basis ι (ZMod 2) V) (I J : ι → Finset ℤ)
     (hwords : ∀ i, (b i : Words) = (encode (I i), encode (J i))) (i j : ι) (hij : i ≠ j) :

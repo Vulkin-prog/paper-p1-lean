@@ -1014,3 +1014,17 @@ public import PaperP1.Algebra.CurveSeriesField
 public import PaperP1.Arithmetic.CurveWordSeries
 
 public import PaperP1.Arithmetic.CurveSquareMatching
+
+public import PaperP1.Algebra.FiniteSupportImageRank
+
+public import PaperP1.Algebra.CurveSwapField
+
+public import PaperP1.Algebra.SubspaceKernelCut
+
+public import PaperP1.Arithmetic.CurveIntegerFibres
+
+public import PaperP1.Arithmetic.CurveSquareGridBound
+
+public import PaperP1.Arithmetic.CurveCoordinateCut
+
+public import PaperP1.Arithmetic.IntegerGridTheorem
