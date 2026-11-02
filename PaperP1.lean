@@ -1511,3 +1511,6 @@ public import PaperP1.Asymptotics.ExactContactCenteredActivity
 public import PaperP1.Model.PairLossWeights
 public import PaperP1.Asymptotics.UnitChannelPairWeights
 public import PaperP1.Asymptotics.NormalizedDefectPairActivity
+public import PaperP1.Asymptotics.LogHeightUnitChannelWeights
+public import PaperP1.Model.LogHeightUnitChannelFamily
+public import PaperP1.Asymptotics.LogHeightUnitChannelActivity

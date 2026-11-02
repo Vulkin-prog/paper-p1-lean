@@ -3732,6 +3732,11 @@ import PaperP1
 #print axioms PaperP1.LocalBlocksTheorem.finite_conditions
 #print axioms PaperP1.LocalBlocksTheorem.companion_T19_2
 #print axioms PaperP1.LocalBlocksTheorem.boundary_improvement_uniform
+#print axioms PaperP1.LogHeightUnitChannelActivity.uniform_bounds
+#print axioms PaperP1.LogHeightUnitChannelActivity.all_heights_from_three
+#print axioms PaperP1.LogHeightUnitChannelActivity.source_tail_from_five
+#print axioms PaperP1.LogHeightUnitChannelWeights.uniform_joint
+#print axioms PaperP1.LogHeightUnitChannelWeights.uniform_coefficient
 #print axioms PaperP1.LogPowerExponential.log_power_ratio_tendsto
 #print axioms PaperP1.LogPowerExponential.exponential_le_rpow
 #print axioms PaperP1.LogPowerExponential.uniformSubpolynomial
@@ -5466,6 +5471,9 @@ import PaperP1
 #print axioms PaperP1.LocalRunRank.squareClass_rank_eq_or_pred
 #print axioms PaperP1.LocalRunRank.infiniteMarginal_eq_squareClass_rank
 #print axioms PaperP1.LocalRunRank.infiniteMarginal_eq_nominal_or_double
+#print axioms PaperP1.LogHeightUnitChannelFamily.channel_data
+#print axioms PaperP1.LogHeightUnitChannelFamily.channel_card_bound
+#print axioms PaperP1.LogHeightUnitChannelFamily.weighted_bound
 #print axioms PaperP1.MaximumDirectActive.mem_families
 #print axioms PaperP1.MaximumDirectActive.empty_mem
 #print axioms PaperP1.MaximumDirectActive.families_hereditary
