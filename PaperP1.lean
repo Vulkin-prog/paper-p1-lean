@@ -1550,3 +1550,8 @@ public import PaperP1.Diophantine.PolynomialLinearKernelFibres
 public import PaperP1.Arithmetic.PolynomialPrimeFactorPowers
 public import PaperP1.Arithmetic.PositiveSplitProducts
 public import PaperP1.Asymptotics.PolynomialSplitKernelCount
+public import PaperP1.Arithmetic.PositiveLineSplitProducts
+public import PaperP1.Arithmetic.PositiveLineOffsetRoots
+public import PaperP1.Asymptotics.PositiveLineSplitCount
+public import PaperP1.Asymptotics.ThreeLineSplitCount
+public import PaperP1.Asymptotics.FixedPlaneSplitCount

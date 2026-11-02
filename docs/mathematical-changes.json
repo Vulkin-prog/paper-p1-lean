@@ -5208,6 +5208,57 @@
         "status": "not_integrated"
       },
       "validation_commit": "add2eb09f717ba6eeca69fb84ec24ae4d6e48c1f"
+    },
+    {
+      "id": "P1-MATH-0097",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:offset:planar-components",
+        "number": "T20.6",
+        "page": 84,
+        "source": "companion_sections/offset_geometry.tex",
+        "line": 212,
+        "statement_sha256": "521b1c0fcc0f0550cab1e1f1acd43d5dda7a513d48442ad936de4c46fb711071"
+      },
+      "original_assumption": "The fixed-plane, fixed-motif proof of T20.6 selects k+2 transverse square products and invokes a uniform Pila curve estimate after fixing one center.",
+      "finding": "Three disjoint transverse motifs suffice for the fixed-plane count. Root separation removes at most two coordinates, leaving one split square equation. An exact positive-slope integer scaling and the internal moving-root/Pell count give N^epsilon points in each fixed-center fibre and N^(1+epsilon) hosts for a fixed oriented plane and fixed motifs. No Pila premise is needed for this fixed-motif estimate.",
+      "evidence": [
+        "PaperP1.PositiveLineSplitProducts.left_injective",
+        "PaperP1.PositiveLineSplitProducts.right_injective",
+        "PaperP1.PositiveLineSplitProducts.factor_left",
+        "PaperP1.PositiveLineSplitProducts.factor_right",
+        "PaperP1.PositiveLineSplitProducts.shifted_card",
+        "PaperP1.PositiveLineSplitProducts.scale_ne_zero",
+        "PaperP1.PositiveLineSplitProducts.product_identity",
+        "PaperP1.PositiveLineSplitProducts.square_transfer",
+        "PaperP1.PositiveLineSplitProducts.value_left",
+        "PaperP1.PositiveLineSplitProducts.value_right",
+        "PaperP1.PositiveLineOffsetRoots.integerOffset_injective",
+        "PaperP1.PositiveLineOffsetRoots.cast_integerOffset",
+        "PaperP1.PositiveLineOffsetRoots.mem_coordinates_left",
+        "PaperP1.PositiveLineOffsetRoots.mem_coordinates_right",
+        "PaperP1.PositiveLineOffsetRoots.coordinates_pairwise_disjoint",
+        "PaperP1.PositiveLineOffsetRoots.shift_root",
+        "PaperP1.PositiveLineOffsetRoots.shift_injective_of_root",
+        "PaperP1.PositiveLineOffsetRoots.exists_surviving",
+        "PaperP1.PositiveLineOffsetRoots.disjoint_scaled_images",
+        "PaperP1.PositiveLineSplitCount.uniform_count",
+        "PaperP1.ThreeLineSplitCount.uniform_count",
+        "PaperP1.FixedPlaneSplitCount.offset_bounds",
+        "PaperP1.FixedPlaneSplitCount.scaled_offset_bounds",
+        "PaperP1.FixedPlaneSplitCount.pairFibre_card",
+        "PaperP1.FixedPlaneSplitCount.uniform_count"
+      ],
+      "proposed_revision": "Replace the per-fixed-motif Pila argument in T20.6 by the three-product root-discard and positive quadratic fibre argument. Keep the general-plane orientation, motif enumeration, and bounded-component selection explicit before claiming the full proposition.",
+      "impact": "Reduces the number of selected equations and removes the external algebraic-curve count from the fixed-motif step. The full aggregate planar proposition and the dense weighted sector are not completed by this checkpoint.",
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (11073 jobs), source and ledger checks, actual axiom audit of 7125 declarations (only propext, Classical.choice and Quot.sound), and 4842 direct ledger/evidence declaration checks; Ubuntu root free space 14.97 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
