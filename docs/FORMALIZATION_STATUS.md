@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5212 audited theorem/lemma declarations**. This
+- The project currently has **5223 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2466,3 +2466,6 @@ Independent target checkpoint verification: Lean v4.36.0-rc2 full build passed (
 
 
 Primitive general-mass checkpoint verification: Lean v4.36.0-rc2 full build passed (10179 jobs); actual axiom audit passed for all 5212 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2927 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.31 GiB. Minimal effective nullity is bounded by every local rank without a finite-dimensional ambient assumption. Actual heterogeneous primitive weight, original infinite joint mass and admissible absolute centered mass are at most N^(1-r/2+epsilon) at every fixed r>=2. Both main 15.5 exponents follow for every fixed r>=5 on all primitive subpopulations, so its dense certificate argument is needed only at r=4. That case remains open; no growing-order or complete ordered nominal T4.3 claim is made. Coverage remains 72/167; confirmed improvements are 73. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.
+
+
+Ordered primitive mass checkpoint verification: Lean v4.36.0-rc2 full build passed (10187 jobs); actual axiom audit passed for all 5223 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2938 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.30 GiB. Exact weighted finite fibers give r! ordered enumerations. The literal nominal p^r 2^rho sum and actual original infinite joint-mass sum are independently bounded by N^(1-r/2+epsilon) at every fixed r>=2. Both full ordered T4.3 source conclusions follow for every fixed r>=4 on all primitive subpopulations without separation. Only r=3 remains open there; main 15.5 still lacks only r=4. Coverage remains 72/167 and confirmed improvements remain 73. No growing-order claim, nominal-equals-actual substitution outside the regular-set convention, new external estimate or Paper C source is assumed. No manuscript-byte change or Palomar registration.

@@ -3779,7 +3779,7 @@
         "statement_sha256": "f34d841b32f24438f362f3a452f5ab40a3261869bf738d6d5eea3c1ff5c53817"
       },
       "original_assumption": "The proof of main Proposition 15.5 treats every fixed r>=4 by a low-nullity split and a dense certificate argument with small kernels, CRT and two dense targets.",
-      "finding": "For every fixed r>=2, primitive effective nullity is at most every local rank and hence L. The already proved complete independent primitive mass, multiplied by 2^L=O_C(N), gives the stronger full heterogeneous primitive weight N^(1-r/2+epsilon). For every fixed r>=5 this implies BOTH displayed main 15.5 bounds, including the dense-sector exponent -2r/(r+2), for the entire population without any density restriction. The proof also bounds actual original infinite joint mass and admissible absolute centered mass. Thus the dense certificate argument in main 15.5 is needed only for r=4.",
+      "finding": "For every fixed r>=2, primitive effective nullity is at most every local rank and hence L. The already proved complete independent primitive mass, multiplied by 2^L=O_C(N), gives the stronger full heterogeneous primitive weight N^(1-r/2+epsilon). For every fixed r>=5 this implies BOTH displayed main 15.5 bounds, including the dense-sector exponent -2r/(r+2), for the entire population without any density restriction. The proof also bounds actual original infinite joint mass and admissible absolute centered mass. Thus the dense certificate argument in main 15.5 is needed only for r=4. The complete ordered nominal and actual probability branches of companion T4.3 are also proved for every fixed r>=4, using exact r! enumeration and independent proofs of the nominal and heterogeneous mass bounds. Separation is unnecessary for these fixed-order conclusions.",
       "evidence": [
         "PaperP1.PrimitiveNullity.delete_bound",
         "PaperP1.PrimitiveNullity.minimal_bound",
@@ -3795,11 +3795,22 @@
         "PaperP1.PrimitiveGeneralMass.actual_joint_submass",
         "PaperP1.PrimitiveGeneralMass.actual_centered_submass",
         "PaperP1.PrimitiveGeneralMass.from_four",
-        "PaperP1.PrimitiveGeneralMass.main_15_5_from_five"
+        "PaperP1.PrimitiveGeneralMass.main_15_5_from_five",
+        "PaperP1.OrderedSubsetWeights.fiber_card",
+        "PaperP1.OrderedSubsetWeights.fiber_sum",
+        "PaperP1.OrderedSubsetWeights.weighted_sum",
+        "PaperP1.PrimitiveNominalMass.weight_nonneg",
+        "PaperP1.PrimitiveNominalMass.primitive_mass_cap",
+        "PaperP1.PrimitiveNominalMass.ordered_sum",
+        "PaperP1.PrimitiveNominalCountMass.uniform_mass",
+        "PaperP1.OrderedPrimitiveMass.subset_population",
+        "PaperP1.OrderedPrimitiveMass.nominal_bound",
+        "PaperP1.OrderedPrimitiveMass.actual_joint_bound",
+        "PaperP1.OrderedPrimitiveMass.companion_T4_3_from_four"
       ],
       "proposed_revision": "First state sum_primitive (product p_x) 2^rho <= N^(1-r/2+epsilon), from rho<=L and main Corollary 10.2. Deduce both fixed-order Proposition 15.5 exponents for r>=5, and restrict the difficult dense argument to r=4. Keep the fixed-order threshold dependence explicit; no growing-order assertion follows from this shortcut.",
-      "impact": "Strengthens and substantially simplifies all fixed orders r>=5 in main 15.5, retaining exact heterogeneous marginals, irregular windows and arbitrary primitive subpopulations. The r=4 case remains unproved, so numbered coverage stays 72/167. At the unordered heterogeneous level the companion T4.3 exponent also follows for r>=4, but its r=3 arithmetic case and literal ordered nominal population are still open.",
-      "validation": "Lean v4.36.0-rc2 full build passed (10179 jobs); actual axiom audit passed for all 5212 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2927 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.31 GiB. Minimal effective nullity is bounded by every local rank without a finite-dimensional ambient assumption. Actual heterogeneous primitive weight, original infinite joint mass and admissible absolute centered mass are at most N^(1-r/2+epsilon) at every fixed r>=2. Both main 15.5 exponents follow for every fixed r>=5 on all primitive subpopulations, so its dense certificate argument is needed only at r=4. That case remains open; no growing-order or complete ordered nominal T4.3 claim is made. Coverage remains 72/167; confirmed improvements are 73. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.",
+      "impact": "Strengthens and simplifies all fixed orders r>=5 in main 15.5, retaining exact heterogeneous marginals, irregular windows and arbitrary primitive subpopulations. The r=4 case there remains open. Companion T4.3 is proved in its full ordered nominal and actual probability scope for every fixed r>=4, with no separation requirement; only r=3 remains open. Numbered coverage stays 72/167. Every threshold retains dependence on the fixed order; no growing-order estimate is claimed.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10187 jobs); actual axiom audit passed for all 5223 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2938 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.30 GiB. Exact weighted finite fibers give r! ordered enumerations. The literal nominal p^r 2^rho sum and actual original infinite joint-mass sum are independently bounded by N^(1-r/2+epsilon) at every fixed r>=2. Both full ordered T4.3 source conclusions follow for every fixed r>=4 on all primitive subpopulations without separation. Only r=3 remains open there; main 15.5 still lacks only r=4. Coverage remains 72/167 and confirmed improvements remain 73. No growing-order claim, nominal-equals-actual substitution outside the regular-set convention, new external estimate or Paper C source is assumed. No manuscript-byte change or Palomar registration.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"

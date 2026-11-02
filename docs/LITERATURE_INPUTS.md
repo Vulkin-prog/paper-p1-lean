@@ -1967,3 +1967,14 @@ exponents follow for all primitive subpopulations at fixed r>=5.
 The r=4 case is still open. No new analytic or arithmetic theorem is
 assumed; no dense certificate, external estimate or Paper C source is
 introduced. The source growing-order regime is not asserted.
+
+
+`P1-ARITH-PRIMITIVE-GENERAL-MASS`, ordered scope extension: exact r!
+enumeration is proved for arbitrary real weights by a finite fiber
+equivalence. The nominal homogeneous p^r 2^rho mass is bounded directly
+from the complete host count. The actual original joint-mass sum has
+its independent heterogeneous proof. Both literal ordered T4.3 bounds
+now hold at every fixed r>=4, on arbitrary primitive subpopulations
+without separation. The r=3 arithmetic case remains open. No external
+enumeration formula, nominal probability identification or asymptotic
+activity estimate is assumed.

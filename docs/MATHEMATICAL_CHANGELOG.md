@@ -3161,3 +3161,13 @@ but depends on the fixed order. No growing-order estimate is inferred.
 The r=4 case remains open, so main 15.5 stays in progress. Companion
 T4.3 also retains its r=3 and ordered nominal-population obligations.
 See [exact statement alignment](PRIMITIVE_GENERAL_MASS_ALIGNMENT.md).
+
+
+P1-MATH-0073 ordered extension: an exact weighted fiber enumeration
+proves the r! factor. The literal nominal p^r 2^rho and actual original
+probability sums are bounded independently by N^(1-r/2+epsilon). Both
+ordered source T4.3 conclusions now hold for every fixed r>=4, including
+all ordered primitive subpopulations without a separation requirement.
+The sole remaining T4.3 order is r=3. This extends the existing proof
+simplification; no new independent finding is counted. Coverage remains
+72/167 and confirmed improvements remain 73.

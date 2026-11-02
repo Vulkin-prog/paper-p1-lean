@@ -2818,6 +2818,10 @@ import PaperP1
 #print axioms PaperP1.OrderPrimeBudget.finite_root_bound
 #print axioms PaperP1.OrderPrimeBudget.critical_conditions
 #print axioms PaperP1.OrderPrimeBudget.critical_root_bound
+#print axioms PaperP1.OrderedPrimitiveMass.subset_population
+#print axioms PaperP1.OrderedPrimitiveMass.nominal_bound
+#print axioms PaperP1.OrderedPrimitiveMass.actual_joint_bound
+#print axioms PaperP1.OrderedPrimitiveMass.companion_T4_3_from_four
 #print axioms PaperP1.OriginalPairHosts.separated_subset
 #print axioms PaperP1.OriginalPairHosts.effective_hosts
 #print axioms PaperP1.OriginalPairHosts.uniform_count
@@ -2891,6 +2895,7 @@ import PaperP1
 #print axioms PaperP1.PrimitiveGeneralMass.actual_centered_submass
 #print axioms PaperP1.PrimitiveGeneralMass.from_four
 #print axioms PaperP1.PrimitiveGeneralMass.main_15_5_from_five
+#print axioms PaperP1.PrimitiveNominalCountMass.uniform_mass
 #print axioms PaperP1.PrivateChannelMassPhase.phase_bounds
 #print axioms PaperP1.PrivateChannelMassPhase.positive_phase
 #print axioms PaperP1.PrivateChannelMassRate.massConstant_pos
@@ -3486,6 +3491,9 @@ import PaperP1
 #print axioms PaperP1.OrderedExposure.earlier_iff_ne_first
 #print axioms PaperP1.OrderedExposure.prescribedWeight_earlier
 #print axioms PaperP1.OrderedExposure.exists_exposure_exponent_le
+#print axioms PaperP1.OrderedSubsetWeights.fiber_card
+#print axioms PaperP1.OrderedSubsetWeights.fiber_sum
+#print axioms PaperP1.OrderedSubsetWeights.weighted_sum
 #print axioms PaperP1.PairDecompositions.mem_pairs
 #print axioms PaperP1.PairDecompositions.pair_partner
 #print axioms PaperP1.PairDecompositions.pairs_pairwise_disjoint
@@ -4243,6 +4251,9 @@ import PaperP1
 #print axioms PaperP1.PrimeRunCylinder.positive_exponential_lower
 #print axioms PaperP1.PrimeRunCylinder.positive_log_lower
 #print axioms PaperP1.PrimeRunCylinder.total_log_lower
+#print axioms PaperP1.PrimitiveNominalMass.weight_nonneg
+#print axioms PaperP1.PrimitiveNominalMass.primitive_mass_cap
+#print axioms PaperP1.PrimitiveNominalMass.ordered_sum
 #print axioms PaperP1.PrimitiveWindowMass.weight_nonneg
 #print axioms PaperP1.PrimitiveWindowMass.primitive_nullity_le
 #print axioms PaperP1.PrimitiveWindowMass.primitive_weight_le

@@ -882,3 +882,8 @@ public import PaperP1.Asymptotics.IndependentTargetMass
 public import PaperP1.Affine.PrimitiveNullity
 public import PaperP1.Model.PrimitiveWindowMass
 public import PaperP1.Asymptotics.PrimitiveGeneralMass
+
+public import PaperP1.Combinatorics.OrderedSubsetWeights
+public import PaperP1.Model.PrimitiveNominalMass
+public import PaperP1.Asymptotics.PrimitiveNominalCountMass
+public import PaperP1.Asymptotics.OrderedPrimitiveMass

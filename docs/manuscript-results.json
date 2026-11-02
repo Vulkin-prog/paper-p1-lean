@@ -4094,7 +4094,18 @@
         "PaperP1.PrimitiveGeneralMass.from_four",
         "PaperP1.PrimitiveGeneralMass.uniform_mass",
         "PaperP1.PrimitiveWindowMass.primitive_nullity_le",
-        "PaperP1.PrimitiveWindowMass.primitive_mass_le"
+        "PaperP1.PrimitiveWindowMass.primitive_mass_le",
+        "PaperP1.OrderedSubsetWeights.fiber_card",
+        "PaperP1.OrderedSubsetWeights.fiber_sum",
+        "PaperP1.OrderedSubsetWeights.weighted_sum",
+        "PaperP1.PrimitiveNominalMass.weight_nonneg",
+        "PaperP1.PrimitiveNominalMass.primitive_mass_cap",
+        "PaperP1.PrimitiveNominalMass.ordered_sum",
+        "PaperP1.PrimitiveNominalCountMass.uniform_mass",
+        "PaperP1.OrderedPrimitiveMass.subset_population",
+        "PaperP1.OrderedPrimitiveMass.nominal_bound",
+        "PaperP1.OrderedPrimitiveMass.actual_joint_bound",
+        "PaperP1.OrderedPrimitiveMass.companion_T4_3_from_four"
       ],
       "literature_inputs": [
         "P1-ARITH-PRIMITIVE-GENERAL-MASS"
@@ -4102,8 +4113,8 @@
       "mathematical_changes": [
         "P1-MATH-0073"
       ],
-      "notes": "Preparatory bound for the actual unordered heterogeneous primitive weight: N^(1-r/2+epsilon) for every fixed r>=2, hence the T4.3 exponent -4/5 for r>=4 at this unordered level. The literal separated ordered nominal p^r population has not yet been identified by a weighted enumeration formula, and the r=3 arithmetic bound remains open. This preparatory branch is not the complete source statement. See PRIMITIVE_GENERAL_MASS_ALIGNMENT.md.",
-      "validation": "Lean v4.36.0-rc2 full build passed (10179 jobs); actual axiom audit passed for all 5212 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2927 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.31 GiB. Minimal effective nullity is bounded by every local rank without a finite-dimensional ambient assumption. Actual heterogeneous primitive weight, original infinite joint mass and admissible absolute centered mass are at most N^(1-r/2+epsilon) at every fixed r>=2. Both main 15.5 exponents follow for every fixed r>=5 on all primitive subpopulations, so its dense certificate argument is needed only at r=4. That case remains open; no growing-order or complete ordered nominal T4.3 claim is made. Coverage remains 72/167; confirmed improvements are 73. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.",
+      "notes": "The entire T4.3 branch for every fixed r>=4 is proved, with the literal ordered nominal p^r 2^rho sum and the actual original infinite joint-mass sum both bounded by N^(-4/5+epsilon). The stronger exponent 1-r/2 is proved separately for both sums. An explicit fiber equivalence proves exactly r! distinct ordered enumerations of every r-set with arbitrary real weights. Nominal homogeneous weights and actual heterogeneous probabilities are bounded separately; no nominal-equals-actual assertion is used outside the regular-set convention. All ordered primitive subpopulations are included without requiring separation, hence the source separated population is covered. The remaining r=3 arithmetic estimate is open, so the full proposition stays in progress. See PRIMITIVE_GENERAL_MASS_ALIGNMENT.md.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10187 jobs); actual axiom audit passed for all 5223 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2938 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.30 GiB. Exact weighted finite fibers give r! ordered enumerations. The literal nominal p^r 2^rho sum and actual original infinite joint-mass sum are independently bounded by N^(1-r/2+epsilon) at every fixed r>=2. Both full ordered T4.3 source conclusions follow for every fixed r>=4 on all primitive subpopulations without separation. Only r=3 remains open there; main 15.5 still lacks only r=4. Coverage remains 72/167 and confirmed improvements remain 73. No growing-order claim, nominal-equals-actual substitution outside the regular-set convention, new external estimate or Paper C source is assumed. No manuscript-byte change or Palomar registration.",
       "validation_commit": "8d0c369c294e4fcbed9fbe08bfd5243bc8c19ccd"
     },
     {

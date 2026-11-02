@@ -55,11 +55,30 @@ recorded as P1-MATH-0073. The unresolved r=4 case is the only missing
 fixed order in main 15.5. No uniformity over a growing range of orders
 is claimed: each fixed r retains its own threshold.
 
-At r>=4 the elementary exponent also implies -4/5 for the unordered
-heterogeneous primitive weight (`from_four`). This is useful preparation
-for companion T4.3. Its literal separated ordered nominal p^r population
-has not yet been identified by a weighted enumeration formula, and its
-r=3 arithmetic estimate is still open. It is not counted complete.
+## Complete ordered T4.3 branch from r=4 onwards
+
+`OrderedSubsetWeights.fiberEquiv` identifies every fiber of ordered
+r-tuples with the embeddings from Fin r into its unordered r-set.
+The fiber therefore has exactly r! members. `weighted_sum` proves the
+exact ordered/unordered identity for arbitrary real weights, with no
+positivity assumption and including r=0 and empty populations.
+
+`PrimitiveNominalMass` defines the literal nominal weight p^r 2^rho,
+where p=2^(-L). `PrimitiveNominalCountMass.uniform_mass` proves the same
+elementary exponent 1-r/2 for this nominal sum directly from the
+complete host count and critical-band scalar inequalities. It does not
+substitute nominal probabilities for actual heterogeneous marginals.
+The source fixed-moments section explicitly uses the regular-set
+convention; the actual probability bound is proved independently here.
+
+`OrderedPrimitiveMass.nominal_bound` and `actual_joint_bound` absorb
+the proved r! enumeration cost for every fixed order. Their
+`companion_T4_3_from_four` proves BOTH source ordered nominal and actual
+original infinite joint-probability estimates for every fixed r>=4,
+with exponent -4/5+epsilon. In fact the stronger exponent 1-r/2 holds.
+Every ordered primitive subpopulation is included, so no separation
+premise is needed. The sole remaining T4.3 order is r=3; the complete
+numbered proposition is therefore still in progress.
 
 No new external theorem, literature estimate, Paper C source, manuscript
 revision or Palomar registration is introduced.
