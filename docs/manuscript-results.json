@@ -815,7 +815,8 @@
           "notes": "Complete existence, uniqueness and all three factorization identities on the effective square-class spaces under the actual infinite prime-sign law. Relation-preserving partitions are closed under common refinement and have a unique finest member; their criterion is proved equivalent to injectivity of addition from the actual block-sum spaces. Regrouping gives an explicit linear equivalence of relation kernels, proving nullity additivity. A general finite spectral partition identity yields exact joint and centered moment factorization, transported through actual finite/infinite cylinders with heterogeneous marginals. The final finite-set theorem reindexes the original family by its subtype, constructs its adequate cutoff internally, and includes the empty family. All effective relations are used, rather than only primitive block supports. See docs/DIRECT_COMPONENT_ALIGNMENT.md. No unproved literature, arithmetic or independent-block premise is used."
         }
       ],
-      "validation": "Verified Lean v4.36.0-rc2 full build (10887 jobs), actual Audit.lean kernel audit (6797 declarations; only propext, Classical.choice, Quot.sound), 4514 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.34 GiB. The unique canonical original finite-set decomposition and all direct-partition joint/centered products include zero marginals and need no positivity premise. The literal non-direct pair cost is at most A2^2/2; the complete actual connected fourth-cumulant comparison at N^(-1+epsilon) uses the existing explicit BCN premise. The sharper source N^(-3/2+epsilon) comparison remains open. Main 4.4 stays proved; main 16.1 stays in progress. Coverage 77/167, improvements 89."
+      "validation": "Verified Lean v4.36.0-rc2 full build (10887 jobs), actual Audit.lean kernel audit (6797 declarations; only propext, Classical.choice, Quot.sound), 4514 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.34 GiB. The unique canonical original finite-set decomposition and all direct-partition joint/centered products include zero marginals and need no positivity premise. The literal non-direct pair cost is at most A2^2/2; the complete actual connected fourth-cumulant comparison at N^(-1+epsilon) uses the existing explicit BCN premise. The sharper source N^(-3/2+epsilon) comparison remains open. Main 4.4 stays proved; main 16.1 stays in progress. Coverage 77/167, improvements 89.",
+      "validation_commit": "02a62bf60d38ec4fa852ef51cc4296be9fbf4fac"
     },
     {
       "label": "p1:stop:polynomial",
@@ -3644,7 +3645,8 @@
           "validation": "Verified Lean v4.36.0-rc2 full build (10881 jobs), actual Audit.lean kernel audit (6790 declarations; only propext, Classical.choice, Quot.sound), 4507 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.35 GiB. Cross-block nullity, direct-space equivalence, zero-marginal block factorization, canonical uniqueness and the complete actual disconnected quartic/direct-pair sum identity are unconditional for L>0. The actual connected fourth-cumulant comparison has a checked N^(-3/2+epsilon) remainder under existing explicit BCN, with 24 times the literal disjoint non-direct product cost retained. The sharp estimate of that cost and the incompatible connected quartic bound remain open. Main 16.1 stays in progress; coverage 77/167, improvements 89.",
           "validation_commit": "585e4c76c3c559c157a6053b4f4c70edceda9b52"
         }
-      ]
+      ],
+      "validation_commit": "02a62bf60d38ec4fa852ef51cc4296be9fbf4fac"
     },
     {
       "label": "p13:lower:optimal",
