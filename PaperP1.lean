@@ -1649,3 +1649,10 @@ public import PaperP1.Arithmetic.AdjacentSquareDivisibility
 public import PaperP1.Arithmetic.TwoAdjacentSmallKernels
 public import PaperP1.Asymptotics.TwoSmallKernelLower
 public import PaperP1.Asymptotics.TwoSmallKernelWindows
+public import PaperP1.Combinatorics.TwoEdgeTripleCover
+public import PaperP1.Model.PrincipalEdgeGeometry
+public import PaperP1.Model.SharedPrincipalTriples
+public import PaperP1.Model.SharedPrincipalEdgePairs
+public import PaperP1.Asymptotics.EndpointGeometricTripleMass
+public import PaperP1.Asymptotics.SharedPrincipalTripleMass
+public import PaperP1.Asymptotics.SharedPrincipalEdgePairMass

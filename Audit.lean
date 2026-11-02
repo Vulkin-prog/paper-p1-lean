@@ -3775,6 +3775,10 @@ import PaperP1
 #print axioms PaperP1.EndpointAlignedTripleMass.all_actual_sources
 #print axioms PaperP1.EndpointAlignedTripleMass.uniform_count
 #print axioms PaperP1.EndpointAlignedTripleMass.uniform_mass
+#print axioms PaperP1.EndpointGeometricTripleMass.host_data
+#print axioms PaperP1.EndpointGeometricTripleMass.source_mem_hosts
+#print axioms PaperP1.EndpointGeometricTripleMass.uniform_inclusion
+#print axioms PaperP1.EndpointGeometricTripleMass.uniform_mass
 #print axioms PaperP1.EnlargedAlignedPairTheorem.uniform_bounds
 #print axioms PaperP1.EnlargedAlignedPairTheorem.fixed_height_residual
 #print axioms PaperP1.EnlargedAlignedPairTheorem.fixed_height_loss
@@ -4519,6 +4523,11 @@ import PaperP1
 #print axioms PaperP1.SeveralAnchorCounts.uniform_count
 #print axioms PaperP1.SeveralAnchorCounts.critical_count
 #print axioms PaperP1.SeveralWindowProjectionCount.companion_T1_14
+#print axioms PaperP1.SharedPrincipalEdgePairMass.uniform_bound
+#print axioms PaperP1.SharedPrincipalEdgePairMass.relative_to_beta_squared
+#print axioms PaperP1.SharedPrincipalTripleMass.inclusion
+#print axioms PaperP1.SharedPrincipalTripleMass.uniform_mass
+#print axioms PaperP1.SharedPrincipalTripleMass.relative_to_beta_squared
 #print axioms PaperP1.ShiftedQuadraticKernelCount.ordered_pair_count
 #print axioms PaperP1.ShiftedQuadraticKernelCount.two_factor_count
 #print axioms PaperP1.ShortCertificateDegreeBudget.envelope_tendsto
@@ -5261,6 +5270,9 @@ import PaperP1
 #print axioms PaperP1.TuplePositions.of_reindexed
 #print axioms PaperP1.TuplePositions.of_injected_seed
 #print axioms PaperP1.TuplePositions.mass_bound
+#print axioms PaperP1.TwoEdgeTripleCover.third_vertex
+#print axioms PaperP1.TwoEdgeTripleCover.other_edge
+#print axioms PaperP1.TwoEdgeTripleCover.union_card_three
 #print axioms PaperP1.UniformTransversal.exists_transversal
 #print axioms PaperP1.UnorderedPairRows.sum_rows
 #print axioms PaperP1.ZeroSumFreeRepresentations.mem_representations
@@ -6219,6 +6231,10 @@ import PaperP1
 #print axioms PaperP1.PrincipalChannelEdges.subset_pairs
 #print axioms PaperP1.PrincipalChannelEdges.activity_gap
 #print axioms PaperP1.PrincipalChannelEdges.beta_nonneg
+#print axioms PaperP1.PrincipalEdgeGeometry.channel_properties
+#print axioms PaperP1.PrincipalEdgeGeometry.channel_data
+#print axioms PaperP1.PrincipalEdgeGeometry.edge_data
+#print axioms PaperP1.PrincipalEdgeGeometry.pair_geometry
 #print axioms PaperP1.PrivateChannelActivity.pair_map_injective
 #print axioms PaperP1.PrivateChannelActivity.pair_data
 #print axioms PaperP1.PrivateChannelActivity.card_bound
@@ -6497,6 +6513,12 @@ import PaperP1
 #print axioms PaperP1.SelectedUnitFourierEnumeration.kernelEquiv_sign
 #print axioms PaperP1.SelectedUnitFourierEnumeration.signed_unit_enumeration
 #print axioms PaperP1.SeveralWindowProjections.tuples_eq
+#print axioms PaperP1.SharedPrincipalEdgePairs.union_mem_families
+#print axioms PaperP1.SharedPrincipalEdgePairs.fibre_card
+#print axioms PaperP1.SharedPrincipalEdgePairs.contribution_le_mass
+#print axioms PaperP1.SharedPrincipalEdgePairs.contribution_nonneg
+#print axioms PaperP1.SharedPrincipalTriples.family_data
+#print axioms PaperP1.SharedPrincipalTriples.source_data
 #print axioms PaperP1.ShiftedCountMoments.add_power_bound
 #print axioms PaperP1.ShiftedCountMoments.eq_finite
 #print axioms PaperP1.ShiftedCountMoments.finite_upper
