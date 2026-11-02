@@ -5556,7 +5556,8 @@
           "notes": ""
         }
       ],
-      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11261 jobs), actual kernel-axiom audit (7593 declarations; only propext, Classical.choice and Quot.sound), 5310 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.60 GiB free on Ubuntu root."
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11261 jobs), actual kernel-axiom audit (7593 declarations; only propext, Classical.choice and Quot.sound), 5310 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.60 GiB free on Ubuntu root.",
+      "validation_commit": "03a959af19117b59d38b7e0cfa6176ec81059639"
     },
     {
       "label": "p1:arith:anchor",
