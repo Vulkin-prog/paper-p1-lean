@@ -4115,7 +4115,10 @@
       ],
       "notes": "The entire T4.3 branch for every fixed r>=4 is proved, with the literal ordered nominal p^r 2^rho sum and the actual original infinite joint-mass sum both bounded by N^(-4/5+epsilon). The stronger exponent 1-r/2 is proved separately for both sums. An explicit fiber equivalence proves exactly r! distinct ordered enumerations of every r-set with arbitrary real weights. Nominal homogeneous weights and actual heterogeneous probabilities are bounded separately; no nominal-equals-actual assertion is used outside the regular-set convention. All ordered primitive subpopulations are included without requiring separation, hence the source separated population is covered. The remaining r=3 arithmetic estimate is open, so the full proposition stays in progress. See PRIMITIVE_GENERAL_MASS_ALIGNMENT.md.",
       "validation": "Lean v4.36.0-rc2 full build passed (10187 jobs); actual axiom audit passed for all 5223 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2938 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.30 GiB. Exact weighted finite fibers give r! ordered enumerations. The literal nominal p^r 2^rho sum and actual original infinite joint-mass sum are independently bounded by N^(1-r/2+epsilon) at every fixed r>=2. Both full ordered T4.3 source conclusions follow for every fixed r>=4 on all primitive subpopulations without separation. Only r=3 remains open there; main 15.5 still lacks only r=4. Coverage remains 72/167 and confirmed improvements remain 73. No growing-order claim, nominal-equals-actual substitution outside the regular-set convention, new external estimate or Paper C source is assumed. No manuscript-byte change or Palomar registration.",
-      "validation_commit": "8d0c369c294e4fcbed9fbe08bfd5243bc8c19ccd"
+      "validation_commit": "7fa74e37b9349c321f37f0795e93147c6fe7fe5d",
+      "validation_history": [
+        "8d0c369c294e4fcbed9fbe08bfd5243bc8c19ccd"
+      ]
     },
     {
       "label": "p1:fixed:compressed",
