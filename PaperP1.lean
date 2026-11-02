@@ -1184,3 +1184,9 @@ public import PaperP1.Probability.HeterogeneousPoissonCharlierConversion
 public import PaperP1.Model.HeterogeneousRunConversion
 
 public import PaperP1.Asymptotics.HeterogeneousRunConversion
+
+public import PaperP1.Model.MeanBiasQuantization
+
+public import PaperP1.Model.MeanBiasClassification
+
+public import PaperP1.Probability.PoissonReferenceSeparation

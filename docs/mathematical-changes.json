@@ -4563,6 +4563,41 @@
           "impact": "Removes the2p<1 analytic restriction and supplies an explicit finite estimate for the whole probability range0<=p<=1. The actual critical regular-set reference has error4|beta-c2|+K_C*(N^(-2)+|c2|/N), with K_C chosen uniformly before all varying data. This does not prove the missing arithmetic C_2=O(a_N), completeT17.4, or assert a new law approximation. Proved coverage77/167."
         }
       ]
+    },
+    {
+      "id": "P1-MATH-0085",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "main",
+        "label": "p13:optimal:nominal",
+        "number": "17.3",
+        "page": 54,
+        "source": "main_sections/optimal_closure.tex",
+        "line": 107,
+        "version": "P1 V1.6",
+        "statement_sha256": "9930a66023f6178a86ad23dead68d2e585acd6ce00afe5911a2c5d3d9b0013e7"
+      },
+      "original_assumption": "Main17.3 writes the mean bias as2^(-L) times the integer sum of compatibility-weighted powers2^h_x minus1. It explicitly makes no assertion of infinitely many nonzero scales.",
+      "finding": "The proved critical rank restriction h_x<=1 sharpens the integer description to an exact signed count: M=#double-marginal windows minus#zero-marginal windows. These two actual classes are disjoint and partition the irregular set. Thus M=2*#double-#irregular, |M|<=#irregular, and M has the same parity as#irregular. An odd irregular cardinality is a proved finite sufficient criterion for a nonzero mean bias. All classes use actual infinite-model marginal masses and are identified with actual affine compatibility.",
+      "evidence": [
+        "PaperP1.MeanBiasQuantization.multiplicity_source",
+        "PaperP1.MeanBiasQuantization.main_17_3_integer_identity",
+        "PaperP1.MeanBiasClassification.zeroStarts_source",
+        "PaperP1.MeanBiasClassification.doubleStarts_source",
+        "PaperP1.MeanBiasClassification.irregular_partition",
+        "PaperP1.MeanBiasClassification.bias_double_minus_irregular",
+        "PaperP1.MeanBiasClassification.bias_mod_two",
+        "PaperP1.MeanBiasClassification.bias_ne_zero_of_odd_irregular",
+        "PaperP1.MeanBiasClassification.uniform_odd_irregular_mean"
+      ],
+      "proposed_revision": "After the integer-mean identity, state the signed-count formula and parity criterion using the earlier critical one-window rank theorem. Distinguish this finite criterion from any assertion that odd irregular counts occur infinitely often.",
+      "impact": "Supplies an exact sign interpretation, parity constraint and finite certificate for a nonzero nominal-mean bias. It improves no asymptotic exponent and proves no infinitely-many-scales assertion. The source true-law distance comparison remains open, so main17.3 is in progress and coverage stays77/167.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10637 jobs); actual axiom audit passed for all 6201 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3918 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.80 GiB. Exact finite integer mean quantization, source affine compatibility, the nonzero quantum, critical signed zero/double-window classification, parity and the odd-irregular-count criterion are proved. Actual quadratic signed references have explicit mean-separation lower bound exp(-M)/2 for0<=mu,nu<=M andalpha>=-1. No infinitely-many-scales or true-count law approximation is claimed. Main17.3 remains in progress for its true-law distance conclusions. Coverage77/167 (main28/73, companion49/94); confirmed findings85. No new external mathematical input, BCN premise, Paper C port, dependency download, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

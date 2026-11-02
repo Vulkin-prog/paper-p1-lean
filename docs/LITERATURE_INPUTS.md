@@ -3049,3 +3049,64 @@ input, BCN premise, Paper C port, dependency download, manuscript-byte
 change or Palomar registration is introduced.
 
 Only the pinned Mathlib finite sums/products, normed algebra and completed exponential development are used. Exact product perturbation, Poisson coefficient transport, all actual moment/covariance identities and critical parameter substitutions are proved internally. No literature estimate or pair-activity hypothesis is added.
+
+
+## The finite mean quantum, signed irregular classes and reference separation
+
+Stable ID: `P1-MEAN-INTEGER-QUANTUM`. Status: **proved finite and uniform critical statements**; main17.3 remains in progress for its true-law approximation consequences.
+
+The exact integer identity and quantum in main17.3 are now proved
+for everyN>=2 and positive lengthL, without a critical-band assumption.
+The more general finite statement holds for every deterministic subsetG
+of the dyadic block, with nominal mean#G*2^(-L).
+
+`deficiency` is exactly L minus the actual square-class rank, proved
+nonnegative. `localMultiplicity` is zero when the actual infinite
+marginal vanishes and otherwise2^deficiency. Its equality with the
+source compatibility indicator times2^deficiency is proved through the
+actual finite affine system. The actual Bochner marginal is exactly
+2^(-L) times this natural multiplicity; rank truncation and every cast
+are justified. Thus the actual count mean minus the nominal mean is
+exactly2^(-L) times an actual finite sum of integer coefficients.
+No heterogeneous marginal is replaced by a nominal one.
+
+The mean equals the nominal mean if and only if the integer bias is
+zero. Every nonzero bias has absolute value at least2^(-L), with the
+explicit critical lower constant (2^C)^(-1)/N. This includes both signs
+and makes no assertion of infinitely many nonzero scales.
+
+The proved critical one-window rank theorem gives deficiency at most1
+under one threshold before every length. Define actual zero windows
+by marginal0 and actual double windows by marginal2*2^(-L). Their
+identification with local multiplicities0 and2 is proved. They are
+disjoint and partition the irregular set. Regular windows have
+multiplicity1. Consequently the literal integer bias satisfies
+
+    M = #double - #zero = 2*#double - #irregular,
+    |M| <= #irregular,
+    M mod2 = #irregular mod2.
+
+An odd irregular cardinality therefore forces a nonzero mean bias at
+that scale. Both the finite criterion and its uniform critical version
+are proved. P1-MATH-0085 records this exact signed classification and
+parity criterion. It does not claim odd cardinalities or nonzero biases
+at infinitely many scales.
+
+The analytic reference comparison is also proved independently:
+if0<=mu,nu<=M and alpha>=-1, then
+
+    ||Q(mu,alpha)-Q(nu,alpha)||_1
+      >=exp(-M)/2*|mu-nu|.
+
+It uses the actual signed measures and their zero singleton mass;
+the exponential difference and all infinite sums are justified. The
+parameter assumptions are explicit and are not counted as an actual
+law approximation. The remaining conclusions of main17.3 concern
+the true count law and require the still-open approximation theorem.
+The result is in progress and adds no proved numbered coverage.
+
+Coverage77/167 (main28/73, companion49/94), confirmed findings85.
+No new external mathematical input, BCN premise, Paper C port,
+dependency download, manuscript-byte change or Palomar registration.
+
+The prior actual affine mass formula, local square-class rank theorem, finite Bochner mean identity, critical nominal lower bound and exact quadratic Poisson singleton masses supply every model input. Integer casts, parity, finite partitions and exponential inequalities use the pinned Mathlib. No external estimate or nonzero-scale hypothesis is assumed.

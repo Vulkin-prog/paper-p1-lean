@@ -3509,3 +3509,8 @@ The analytic conversion holds for every n>=2 and0<=p<=1 with explicit constants 
 ## P1-MATH-0084 extended to heterogeneous actual marginals
 
 The finite conversion of main15.1 holds with C_M=16exp(2M) for the full probability range0<=p_i<=1, removing p_*<=1/4. Actual signed covariances, the actual count mean and the exact second factorial cumulant are retained. A uniform actual reference bound K_C*(N^(-2)+A_2/N) holds before every deterministic dyadic subset. The source numerical rate remains open for A_2. This extends finding84 without a new finding; coverage77/167.
+
+
+## P1-MATH-0085: signed irregular-window counts determine the mean bias
+
+The actual finite integer identity is proved without a critical-band premise. In the uniform critical range, zero-marginal and double-marginal windows partition the irregular set, giving M=2*#double-#irregular and identical parity. Odd irregular cardinality forces a nonzero mean bias at that scale; no infinitely-many-scales assertion follows. The actual quadratic references also satisfy an explicit mean-separation lower bound. True-law distance estimates remain open. Coverage77/167, confirmed findings85.
