@@ -3511,3 +3511,57 @@ All three numbered rows stay in progress. Coverage77/167
 (main28/73, companion49/94), confirmed findings87 unchanged.
 No new mathematical finding, external estimate, BCN input, PaperC
 port, dependency download, source-byte change or Palomar registration.
+
+
+## Actual Hermite signed error and reference-distance stability
+
+Stable ID: `P1-PROB-EXPLICIT-HERMITE-STABILITY`. Status: **proved unconditional reference comparison and phase negligibility**. Original-count distances remain open.
+
+The comparison of every literal fixed-height explicit Hermite reference
+with its quadratic reference is now proved at the full source analytic
+error scale, without any unformalized input. For each fixedh>=3, bandC
+and everyepsilon>0, one threshold precedes allN,L and
+
+    ||Q(lambda,alphaHat_h)-H(lambda,alphaHat_h)||_1<=N^(-4/3+epsilon).
+
+The norm is the ordinary infinite sum of actual signed singleton
+masses. The completed-algebra norm is only a proved majorant; it is
+not substituted for the ordinary measure norm. Every coefficient and
+both actual signed measures are identified exactly. The finite bound
+4*alpha^2*exp(2*|alpha|), the proved literal coefficient rate and
+uniform smallness give the displayed numerical rate. No comparison
+with the exact cumulant, BCN or count-law error is assumed.
+
+Actual total variation on the naturals now has checked triangle and
+reference-stability inequalities. The signed-measure distance is
+identified with exactly2*TV. Actual probability witnesses for the
+literal Q andH references therefore satisfy, uniformly for EVERY
+actual probability lawP on the naturals,
+
+    |TV(P,Q)-TV(P,H)|<=N^(-4/3+epsilon)/2.
+
+The witnesses and common threshold do not depend onP. In particular
+this comparison is available for the actual run-count law, without
+asserting either distance is already small.
+
+The actual scalar phase of every omitted heightb>=3 also has a
+positive uniform lower bound d_(C,b)*L*N^(-1+1/b), and hence d_(C,b)/N.
+It follows that for everyepsilon>0 and fixedh>=3, eventually uniformly
+in the critical band and for everyP,
+
+    |TV(P,Q_h)-TV(P,H_h)|<=epsilon*phaseMass_(h+1).
+
+The positive omitted-height phase retains the actual moving residue
+and nominal mean. Its lower bound uses the included numeratorb-1,
+the actual finite main terms and the previously proved uniform phase
+equivalent. The final comparison proves negligibility on this scalar
+phase without assuming a leading distance equivalent for either law.
+
+These results complete the explicit-reference analytic comparison in
+the proof of main19.1. Its original run-count approximation, the
+quadratic hierarchy remainder and leading distance/optimality claims
+remain open; the exact-parameter Hermite rate remains open too.
+Main19.1 stays in progress, as do main18.1 and18.3. No numbered result
+is added: coverage77/167 (main28/73, companion49/94), findings87.
+No new mathematical finding, external estimate, BCN argument, PaperC
+port, dependency download, manuscript-byte change or Palomar registration.

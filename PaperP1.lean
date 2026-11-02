@@ -1250,3 +1250,13 @@ public import PaperP1.Asymptotics.SignedChannelPhaseLimit
 public import PaperP1.Asymptotics.ChannelWordPhase
 
 public import PaperP1.Asymptotics.ChannelMassPhaseEquivalent
+
+public import PaperP1.Probability.AtomicProbabilityMetric
+
+public import PaperP1.Probability.HermiteSignedComparison
+
+public import PaperP1.Asymptotics.ExplicitHermiteComparison
+
+public import PaperP1.Asymptotics.ChannelMassPhaseLower
+
+public import PaperP1.Asymptotics.ExplicitHermitePhaseStability

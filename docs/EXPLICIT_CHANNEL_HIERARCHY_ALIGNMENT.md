@@ -114,3 +114,57 @@ No new mathematical finding, external estimate, BCN input, PaperC
 port, dependency download, source-byte change or Palomar registration.
 
 Lean v4.36.0-rc2 full build passed (10697 jobs); actual axiom audit passed for all 6393 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4110 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.68 GiB. The literal finite height contribution has the full uniform source leading phase equivalent, with moving residue and nominal mean. Exact normalized integer identities, reciprocal/geometric limits, actual finite residue assembly and real-power transport are checked. No fixed-residue subsequence or frozen nominal mean is used in the final theorem. Actual pair-profile, cumulant and law remainders, distance equivalents and optimality remain open; main3.3,18.1,18.3 are in progress. Coverage77/167 (main28/73, companion49/94); confirmed findings87. No new mathematical finding, external estimate, BCN input, PaperC port, dependency download, manuscript-byte change or Palomar registration.
+
+
+## The Hermite reference change is negligible on the omitted-height phase
+
+The comparison of every literal fixed-height explicit Hermite reference
+with its quadratic reference is now proved at the full source analytic
+error scale, without any unformalized input. For each fixedh>=3, bandC
+and everyepsilon>0, one threshold precedes allN,L and
+
+    ||Q(lambda,alphaHat_h)-H(lambda,alphaHat_h)||_1<=N^(-4/3+epsilon).
+
+The norm is the ordinary infinite sum of actual signed singleton
+masses. The completed-algebra norm is only a proved majorant; it is
+not substituted for the ordinary measure norm. Every coefficient and
+both actual signed measures are identified exactly. The finite bound
+4*alpha^2*exp(2*|alpha|), the proved literal coefficient rate and
+uniform smallness give the displayed numerical rate. No comparison
+with the exact cumulant, BCN or count-law error is assumed.
+
+Actual total variation on the naturals now has checked triangle and
+reference-stability inequalities. The signed-measure distance is
+identified with exactly2*TV. Actual probability witnesses for the
+literal Q andH references therefore satisfy, uniformly for EVERY
+actual probability lawP on the naturals,
+
+    |TV(P,Q)-TV(P,H)|<=N^(-4/3+epsilon)/2.
+
+The witnesses and common threshold do not depend onP. In particular
+this comparison is available for the actual run-count law, without
+asserting either distance is already small.
+
+The actual scalar phase of every omitted heightb>=3 also has a
+positive uniform lower bound d_(C,b)*L*N^(-1+1/b), and hence d_(C,b)/N.
+It follows that for everyepsilon>0 and fixedh>=3, eventually uniformly
+in the critical band and for everyP,
+
+    |TV(P,Q_h)-TV(P,H_h)|<=epsilon*phaseMass_(h+1).
+
+The positive omitted-height phase retains the actual moving residue
+and nominal mean. Its lower bound uses the included numeratorb-1,
+the actual finite main terms and the previously proved uniform phase
+equivalent. The final comparison proves negligibility on this scalar
+phase without assuming a leading distance equivalent for either law.
+
+These results complete the explicit-reference analytic comparison in
+the proof of main19.1. Its original run-count approximation, the
+quadratic hierarchy remainder and leading distance/optimality claims
+remain open; the exact-parameter Hermite rate remains open too.
+Main19.1 stays in progress, as do main18.1 and18.3. No numbered result
+is added: coverage77/167 (main28/73, companion49/94), findings87.
+No new mathematical finding, external estimate, BCN argument, PaperC
+port, dependency download, manuscript-byte change or Palomar registration.
+
+Lean v4.36.0-rc2 full build passed (10707 jobs); actual axiom audit passed for all 6406 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4123 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.66 GiB. Actual signed explicit quadratic/Hermite error is at mostN^(-4/3+epsilon), unconditionally for every fixed height. Actual probability witnesses have distance-to-P changes bounded by half that error for every probability lawP, with P after the common threshold. The change is negligible on the actual moving first-omitted-height scalar phase, whose positive lower bound is proved. Original-count approximation, distance equivalents and optimality remain open; main18.1,18.3,19.1 remain in progress. Coverage77/167 (main28/73, companion49/94); confirmed findings87. No new mathematical finding, external input, BCN premise, PaperC port, dependency download, manuscript-byte change or Palomar registration.

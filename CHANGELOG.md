@@ -19,6 +19,7 @@
 - Prove unconditional positivity of the actual second cumulant from the2:3 channel, actual reference admissibility under the existing explicit BCN input, and the actual mean-bias clause of main1.1; record finding87.
 - Prove unconditional probability status of every fixed-height explicit reference, exact height4 parameters and masses, phase constants and the height5 polynomial; extend finding87.
 - Prove the full uniform moving-residue equivalent of each literal finite channel height, keeping the nominal mean and exact source phase; arithmetic remainders remain open.
+- Prove ordinary l1 explicit Hermite comparison atN^(-4/3+epsilon) and uniform reference-distance negligibility on every fixed omitted-height phase.
 - Original manuscripts remain byte-preserved; Palomar qualification is still a later milestone.
 
 ## In progress — 31 October 2026

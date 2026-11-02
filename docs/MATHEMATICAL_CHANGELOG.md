@@ -3549,3 +3549,8 @@ For every fixedh>=3, the literal source finite coefficient is positive and tends
 ## Uniform finite-height moving phase is checked
 
 The literal finite omitted-height contribution has the exact source uniform leading equivalent, with the residue and nominal mean moving over the critical band. Normalized integer identities, reciprocal/geometric limits, finite residue assembly and the exact real-power transport are proved. This validates the finite analytic step without assuming or proving the actual pair-profile, cumulant or law remainder. Main3.3,18.1,18.3 remain in progress; coverage77/167, findings87.
+
+
+## Explicit Hermite reference changes are negligible at every fixed omitted height
+
+The literal explicit Hermite and quadratic signed references have ordinary l1 distance at mostN^(-4/3+epsilon), unconditionally. Their actual probabilities have distance-to-P changes at most half that bound, uniformly for every probability lawP. A proved positive omitted-height phase lower bound makes this change negligible on the actual moving scalar phase. No original-count approximation or distance equivalent is assumed or established; main19.1 remains in progress. Coverage77/167, findings87 unchanged.

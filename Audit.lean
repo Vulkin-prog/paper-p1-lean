@@ -3200,6 +3200,9 @@ import PaperP1
 #print axioms PaperP1.ChannelMassPhaseEquivalent.phaseMass_pos
 #print axioms PaperP1.ChannelMassPhaseEquivalent.uniform_relative
 #print axioms PaperP1.ChannelMassPhaseEquivalent.uniform_ratio
+#print axioms PaperP1.ChannelMassPhaseLower.heightMass_eq_main_terms
+#print axioms PaperP1.ChannelMassPhaseLower.uniform_phase_lower
+#print axioms PaperP1.ChannelMassPhaseLower.uniform_coarse_lower
 #print axioms PaperP1.ChannelWordHostCount.all_heights
 #print axioms PaperP1.ChannelWordPhase.wordMain_pos
 #print axioms PaperP1.ChannelWordPhase.word_power_identity
@@ -3375,6 +3378,9 @@ import PaperP1
 #print axioms PaperP1.ExpSqrtLog.two_pow_log_div_loglog_pow_le_nat_eventually
 #print axioms PaperP1.ExpSqrtLog.uniformSubpolynomialOn_two_pow_log_div_loglog
 #print axioms PaperP1.ExpSqrtLog.uniformSubpolynomialOn_weighted_defect_factor
+#print axioms PaperP1.ExplicitHermiteComparison.uniform_bound
+#print axioms PaperP1.ExplicitHermiteComparison.uniform_reference_stability
+#print axioms PaperP1.ExplicitHermitePhaseStability.uniform_stability
 #print axioms PaperP1.ExplicitReferenceAdmissibility.uniform_probabilities
 #print axioms PaperP1.ExplicitReferenceAdmissibility.uniform_two_channel_probabilities
 #print axioms PaperP1.ExplicitReferenceAdmissibility.explicit_mass_formula
@@ -5782,6 +5788,10 @@ import PaperP1
 #print axioms PaperP1.AtomicProbability.ofMass_integrable_iff
 #print axioms PaperP1.AtomicProbability.ofMass_integral
 #print axioms PaperP1.AtomicProbability.ofMass_toSignedMeasure
+#print axioms PaperP1.AtomicProbabilityMetric.triangle
+#print axioms PaperP1.AtomicProbabilityMetric.reference_stability
+#print axioms PaperP1.AtomicProbabilityMetric.signed_distance
+#print axioms PaperP1.AtomicProbabilityMetric.reference_stability_signed
 #print axioms PaperP1.AtomicSignedLaw.integrable_of_summable
 #print axioms PaperP1.AtomicSignedLaw.ofSequence_singleton
 #print axioms PaperP1.AtomicSignedLaw.ofSequence_univ
@@ -6054,6 +6064,9 @@ import PaperP1
 #print axioms PaperP1.HermiteReference.norm_error
 #print axioms PaperP1.HermiteReference.coefficient_error
 #print axioms PaperP1.HermiteReference.totalVariation_transfer
+#print axioms PaperP1.HermiteSignedComparison.singleton_difference
+#print axioms PaperP1.HermiteSignedComparison.actual_signed_error
+#print axioms PaperP1.HermiteSignedComparison.actual_signed_error_symmetric
 #print axioms PaperP1.HeterogeneousBernoulli.mean_nonneg
 #print axioms PaperP1.HeterogeneousBernoulli.powerSum_nonneg
 #print axioms PaperP1.HeterogeneousBernoulli.base_eq_product
