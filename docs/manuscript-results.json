@@ -1893,13 +1893,36 @@
         "PaperP1.MediumPrimeIncidence.retained_incidence_model",
         "PaperP1.MediumPrimeIncidence.selection_weighted_sum",
         "PaperP1.MediumPrimeIncidence.actualMap_coordinate",
-        "PaperP1.MediumPrimeIncidence.actual_kernel_iff"
+        "PaperP1.MediumPrimeIncidence.actual_kernel_iff",
+        "PaperP1.SupportedLinearSection.map_eq_linearCombination",
+        "PaperP1.SupportedLinearSection.span_single_images",
+        "PaperP1.SupportedLinearSection.exists_supported_section",
+        "PaperP1.SparseKernelBasis.kernel_basis_from_section",
+        "PaperP1.SparseKernelBasis.exists_sparse_kernel_basis",
+        "PaperP1.SparseKernelBasis.finite_equations",
+        "PaperP1.LinearCombinationSupport.support_subset",
+        "PaperP1.LinearCombinationSupport.card_le",
+        "PaperP1.SparseConstraintBasis.coordinateKernelEquiv_apply",
+        "PaperP1.SparseConstraintBasis.physical_combination",
+        "PaperP1.SparseConstraintBasis.exists_sparse_cut_basis",
+        "PaperP1.SparseConstraintBasis.finite_equations",
+        "PaperP1.ShortBasisFinalCut.constraintTarget_finrank",
+        "PaperP1.ShortBasisFinalCut.mem_constraints_ker",
+        "PaperP1.ShortBasisFinalCut.complete_of_medium_and_small",
+        "PaperP1.ShortBasisFinalCut.relationMap_injective",
+        "PaperP1.ShortBasisFinalCut.dimension_lower",
+        "PaperP1.ShortBasisFinalCut.coefficientMap_injective",
+        "PaperP1.ShortBasisFinalCut.physical_projections_injective",
+        "PaperP1.ShortBasisFinalCut.square_class_image_injective",
+        "PaperP1.ShortBasisFinalCut.complete_image_dimension_lower",
+        "PaperP1.ShortBasisFinalCut.exists_cut_basis"
       ],
       "literature_inputs": [
-        "P1-ALG-SHORT-BASIS-COMPONENT-STAGE"
+        "P1-ALG-SHORT-BASIS-COMPONENT-STAGE",
+        "P1-ALG-SPARSE-FINAL-RELATION-CUT"
       ],
       "mathematical_changes": [],
-      "notes": "The actual finite component/medium-prime stage is proved. Start with the actual nontrivial unpinned large-prime components of the two disjoint formal windows, B=L+1. Deleting components larger than M costs at most2B/(M+1). The actual parity column of each retained component on the actual primes z<p<=10B is constructed. Disjointness makes its total nonzero weight no larger than the actual number of odd prime occurrences. Injecting each block into its actual interval and counting multiples gives total column weight <=2B*sum(1/p)+2*#P. Discarding only weight>=3 columns costs one third of this total, without any extra factor M. The actual retained component set therefore has cardinality at least d_xy-D0-2B/(M+1)-(2B*sum(1/p)+2*#P)/3, with D0 the actual defective vertex count. Both physical projections and the actual first-block prime-parity square-class map are injective; each component has an actual private large prime witnessing its coefficient. All large-prime equations are satisfied. The actual remaining medium-prime map is identified coefficientwise with literal component parity sums and with the actual selected physical-occurrence equations. Adding the infinity row as the sum of the other rows is injective and preserves the exact kernel. Actual endpoints for every weight0/1/2 column give a labelled incidence model, including loops and parallel edges, with the same actual kernel. These are finite internally proved preparation results, not the full theorem. The quantitative prime harmonic estimate at z=floor(B^a), short-cycle construction and its length/rank estimates, the sparse fundamental kernel basis for the final small-prime/parity equations, and full source asymptotic short-basis assembly remain open. The retained candidate coordinate space is not called a complete-relation subspace before these equations are imposed. Coverage75/167 and findings77 unchanged; see SHORT_BASIS_ALIGNMENT.md."
+      "notes": "The actual finite component/medium-prime stage is proved. Start with the actual nontrivial unpinned large-prime components of the two disjoint formal windows, B=L+1. Deleting components larger than M costs at most2B/(M+1). The actual parity column of each retained component on the actual primes z<p<=10B is constructed. Disjointness makes its total nonzero weight no larger than the actual number of odd prime occurrences. Injecting each block into its actual interval and counting multiples gives total column weight <=2B*sum(1/p)+2*#P. Discarding only weight>=3 columns costs one third of this total, without any extra factor M. The actual retained component set therefore has cardinality at least d_xy-D0-2B/(M+1)-(2B*sum(1/p)+2*#P)/3, with D0 the actual defective vertex count. Both physical projections and the actual first-block prime-parity square-class map are injective; each component has an actual private large prime witnessing its coefficient. All large-prime equations are satisfied. The actual remaining medium-prime map is identified coefficientwise with literal component parity sums and with the actual selected physical-occurrence equations. Adding the infinity row as the sum of the other rows is injective and preserves the exact kernel. Actual endpoints for every weight0/1/2 column give a labelled incidence model, including loops and parallel edges, with the same actual kernel. The final sparse kernel-basis step is now also proved internally. An actual right inverse of a finite-rank map is constructed on at most rank-many actual pivot columns. Projecting actual single columns onto the kernel and extracting a basis yields support at most target dimension+1, even for arbitrary index sets. Physical supports of literal linear combinations are bounded by the sum of the actual input supports. Therefore cutting a basis of physical support<=ell by s finite equations admits an actual kernel basis of physical support<=ell*(s+1). ShortBasisFinalCut constructs the actual small-prime and two separate block-parity equations after any actual medium-prime subspace. Its kernel maps injectively into the actual complete even-relation code, loses at most pi(z)+2 dimensions and has a basis of physical support<=ell*(pi(z)+3) whenever its input basis has physical support<=ell. Both physical projections and the actual prime-parity class image remain injective. Completeness is proved by checking every actual prime in the large, medium or small range, and by proving zero coordinates at every nonprime. These are finite internally proved preparation results, not the full theorem. The quantitative prime harmonic estimate at z=floor(B^a), short-cycle construction and its length/rank estimates, and full source asymptotic short-basis assembly remain open. The final-cut theorem takes an actual medium-prime subspace and its actual basis as inputs; the required short-cycle basis is not assumed to count article13.1 proved. Coverage75/167 and findings77 unchanged; see SHORT_BASIS_ALIGNMENT.md."
     },
     {
       "label": "p13:rig:common-curve",

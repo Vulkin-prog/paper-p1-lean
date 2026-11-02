@@ -3404,3 +3404,19 @@ This verifies and quantifies the existing argument, with no new
 manuscript correction or optimized constant claimed. The short-cycle
 and final short-basis/asymptotic steps remain open; article13.1 is in
 progress. Coverage75/167 and confirmed findings77 stay unchanged.
+
+
+## Constructed sparse kernel basis and final finite cut for13.1
+
+The source fundamental-kernel-basis step is now proved through an
+actual supported right inverse and actual projected single columns.
+A system of s equations has an actual kernel basis of support<=s+1,
+even for arbitrary coordinate index sets. Actual physical support
+transports to ell*(s+1). The final pi(z) prime equations and two
+separate block parities produce actual complete even relations,
+with dimension loss<=pi(z)+2 and support<=ell*(pi(z)+3), preserving
+both physical and square-class-image injectivity. This verifies the
+source linear-algebra argument and exposes its finite constants;
+no new manuscript error or optimized bound is claimed. The required
+input short-cycle basis and prime-harmonic estimate remain open,
+so coverage75/167 and findings77 are unchanged.

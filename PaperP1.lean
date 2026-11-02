@@ -1040,3 +1040,13 @@ public import PaperP1.Algebra.BinaryIncidenceAugmentation
 public import PaperP1.Arithmetic.ShortBasisComponentStage
 
 public import PaperP1.Arithmetic.MediumPrimeIncidence
+
+public import PaperP1.Algebra.SupportedLinearSection
+
+public import PaperP1.Algebra.SparseKernelBasis
+
+public import PaperP1.Algebra.LinearCombinationSupport
+
+public import PaperP1.Algebra.SparseConstraintBasis
+
+public import PaperP1.Arithmetic.ShortBasisFinalCut

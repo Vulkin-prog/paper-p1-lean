@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5737 audited theorem/lemma declarations**. This
+- The project currently has **5759 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2629,3 +2629,21 @@ assembly remain open. Coverage75/167 and findings77 are unchanged.
 See [alignment](SHORT_BASIS_ALIGNMENT.md).
 
 Component-stage checkpoint verification: Lean v4.36.0-rc2 full build passed (10469 jobs); actual axiom audit passed for all 5737 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3452 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.01 GiB. The actual retained component family, literal medium-prime columns, finite one-third heavy-column loss and oversized-component budget are proved. Both physical projections and the actual first-block prime-parity image are injective. Actual medium-prime equations equal selected physical-occurrence sums and have a constructed labelled incidence model with identical kernel. Quantitative short cycles, the prime harmonic estimate, sparse final kernel basis and full short-basis assembly remain open; article13.1 stays in progress. Coverage75/167 (main27/73, companion48/94); findings77. No source-conclusion error, external graph estimate, additional Paper C source, manuscript-byte change or Palomar registration.
+
+
+## Sparse kernel basis and actual final cut for13.1
+
+The sparse fundamental-kernel-basis step is proved. An actual right
+inverse on actual pivot columns gives a basis of the actual kernel
+with support<=s+1 for s equations. Literal physical supports transfer
+to ell*(s+1). After an actual medium-prime subspace, the constructed
+small-prime and two-parity kernel maps injectively into the actual
+complete even-relation code, loses at mostpi(z)+2 dimensions and has
+a basis of support<=ell*(pi(z)+3) for an input basis of support<=ell.
+Both physical projections and the actual square-class image remain
+injective. The short-cycle basis with the required length/rank bounds,
+the sharp prime-harmonic estimate and full asymptotic assembly remain
+open. Article13.1 stays in progress; coverage75/167 and findings77.
+See [alignment](SHORT_BASIS_ALIGNMENT.md).
+
+Sparse-final-cut checkpoint verification: Lean v4.36.0-rc2 full build passed (10479 jobs); actual axiom audit passed for all 5759 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3474 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.00 GiB. An actual supported section on pivot columns, the actual sparse kernel basis, literal physical support transport and the actual final small-prime/two-parity cut are proved. The cut maps injectively into actual complete even relations, loses at mostpi(z)+2 dimensions and has a basis of support<=ell*(pi(z)+3), preserving physical and square-class-image injectivity. Its input medium-prime subspace and basis are explicit data. Short-cycle construction, its length/rank estimates, the sharp prime-harmonic bound and full source asymptotic assembly remain open; article13.1 stays in progress. Coverage75/167 (main27/73, companion48/94); findings77. Read-only Paper C comparisons introduce no additional source dependency, external estimate or assumed pivot/basis/completeness theorem. Original manuscripts and Palomar status are unchanged.

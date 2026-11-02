@@ -67,18 +67,50 @@ physical occurrences. The labelled incidence map and this actual
 medium-prime map have exactly the same kernel. This is a constructed
 finite model, not a postulated incidence or kernel correspondence.
 
+## The final actual small-prime and parity cut
+
+`SupportedLinearSection` extracts a basis of the actual range from
+actual single-column images, chooses the corresponding pivot columns
+and constructs an actual right inverse supported on at most the target
+dimension many pivots. `SparseKernelBasis` projects each actual single
+column into the kernel. These projected vectors span the actual kernel;
+a basis extracted from them has support at most target dimension+1.
+The result holds even for arbitrary coordinate index sets.
+
+`LinearCombinationSupport` bounds the literal support of a linear
+combination by the actual union of its input supports.
+`SparseConstraintBasis` transports the coordinate kernel back into
+the original space. Thus a basis with physical support at most ell,
+cut by s finite equations, has an actual kernel basis of physical
+support at most ell*(s+1). No sparse basis or pivot conclusion is an
+unproved argument of this theorem.
+
+`ShortBasisFinalCut` constructs the actual pi(z) small-prime equations
+and the separate two block-parity equations on any actual medium-prime
+subspace. Every vector of the resulting actual kernel is proved to be
+an actual complete even relation: every prime is checked in its large,
+medium or small range; nonprime parity coordinates are zero. The map
+into the actual complete relation code is injective and loses at most
+pi(z)+2 dimensions. Both physical projections and the actual first-
+block prime-parity image remain injective after this cut.
+
+The resulting actual kernel has a basis of physical support at most
+ell*(pi(z)+3) whenever its supplied input basis has physical support
+at most ell. This is the proved final linear-algebra step of the source
+proof. The requisite input short-cycle space and its short basis still
+must be constructed from the actual retained incidence model.
+
 ## Remaining obligations
 
 The quantitative prime harmonic estimate at z=floor(B^a), the short-
-cycle construction with its length and retained-rank bounds, the
-sparse fundamental kernel basis for the final small-prime/parity
-equations, and the full asymptotic short-basis assembly remain open.
-The retained candidate coordinate space is not counted as a complete-
-relation subspace before the remaining equations are imposed.
-Article13.1 is not counted proved. No source-conclusion error,
-optimized constant, external graph bound, new Paper C source,
-manuscript-byte change or Palomar registration is claimed.
+cycle construction with its length and retained-rank bounds, and the
+full source asymptotic short-basis assembly remain open. The final
+cut accepts an actual medium-prime subspace with its actual basis;
+these inputs are not counted as proved short-cycle constructions.
+Article13.1 remains in progress. No source-conclusion error, optimized
+constant, external graph bound, new Paper C source, manuscript-byte
+change or Palomar registration is claimed.
 
 ## Validation
 
-Lean v4.36.0-rc2 full build passed (10469 jobs); actual axiom audit passed for all 5737 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3452 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.01 GiB. The actual retained component family, literal medium-prime columns, finite one-third heavy-column loss and oversized-component budget are proved. Both physical projections and the actual first-block prime-parity image are injective. Actual medium-prime equations equal selected physical-occurrence sums and have a constructed labelled incidence model with identical kernel. Quantitative short cycles, the prime harmonic estimate, sparse final kernel basis and full short-basis assembly remain open; article13.1 stays in progress. Coverage75/167 (main27/73, companion48/94); findings77. No source-conclusion error, external graph estimate, additional Paper C source, manuscript-byte change or Palomar registration.
+Lean v4.36.0-rc2 full build passed (10479 jobs); actual axiom audit passed for all 5759 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3474 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.00 GiB. An actual supported section on pivot columns, the actual sparse kernel basis, literal physical support transport and the actual final small-prime/two-parity cut are proved. The cut maps injectively into actual complete even relations, loses at mostpi(z)+2 dimensions and has a basis of support<=ell*(pi(z)+3), preserving physical and square-class-image injectivity. Its input medium-prime subspace and basis are explicit data. Short-cycle construction, its length/rank estimates, the sharp prime-harmonic bound and full source asymptotic assembly remain open; article13.1 stays in progress. Coverage75/167 (main27/73, companion48/94); findings77. Read-only Paper C comparisons introduce no additional source dependency, external estimate or assumed pivot/basis/completeness theorem. Original manuscripts and Palomar status are unchanged.

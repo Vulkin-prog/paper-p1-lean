@@ -2334,3 +2334,34 @@ combinations and binary-field computation are used. No new external
 graph or prime-harmonic estimate is assumed. Quantitative short cycles,
 prime harmonic asymptotics and final short-basis assembly remain open.
 No additional Paper C source is introduced. Coverage75/167, findings77.
+
+
+## Actual sparse kernel basis and final complete-relation cut
+
+Stable ID: `P1-ALG-SPARSE-FINAL-RELATION-CUT`. Status: **proved**
+finite preparation for article13.1, which stays in progress.
+
+Actual pivot columns give a supported right inverse; projecting actual
+single columns and extracting a basis proves support<=s+1 for the
+actual kernel of s equations. Literal physical support then gives
+ell*(s+1). The actual pi(z) small-prime equations and two parities
+produce an injective map into the actual complete even-relation code,
+with dimension loss<=pi(z)+2 and a basis of support<=ell*(pi(z)+3).
+The supplied input is an actual medium-prime subspace and its basis;
+the source short-cycle space and its estimates remain to be built.
+Pinned Mathlib basis extraction from a spanning family, actual finite
+linear combinations, submodule-restricted linear equivalences and
+rank-nullity are used. No pivot, sparse basis, relation completeness
+or final dimension estimate is an unproved input.
+
+Read-only comparison at Paper C commit
+`b9fa9ba490f201b408a302a86f1594ee620b228b` checked
+`GraphCycleRank.lean` (blob `fc45565844192bbaaabcbc1fe6a27015c4bab26a`),
+`CycleSpaceDimension.lean` (blob `5cbd8cbfaf1bc93de1dd62231f35d23d76a2730f`),
+`DyadicPrimeReciprocalSums.lean` (blob `234fa825e83a801eef5f573d80001af7fc0ff866`)
+and `RoughPairReciprocalSaddle.lean`
+(blob `3378205796ed10b6989de0520e137cf1609b9a3e`). Their rank bounds,
+dyadic reciprocal estimates and explicit PNT-remainder input do not
+prove the missing short-cycle length estimate or the required sharp
+prime-harmonic error here. No code from these files is adapted and no
+such premise is silently imported. Coverage75/167, findings77.
