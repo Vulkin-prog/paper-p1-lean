@@ -3256,3 +3256,12 @@ original and divided formal cancellations, nonzero norm and all degree
 and height bounds. Analytic integer separation and actual word-branch
 linkage remain open. No new independent finding or numbered result is
 counted; the 75 confirmed improvements are retained.
+
+
+P1-MATH-0075 convergence checkpoint: the actual primitive numerator
+coefficients satisfy (B+1)^(300q)*(2B)^(a+b). Ordinary real absolute
+convergence and Cauchy products identify the actual Runge factor values
+as positive square-root branches in the required small-parameter domain.
+Scaled products have exactly the literal split-product square. The
+bivariate vanishing-tail estimate, word enumeration linkage and integer
+gap remain open. No new independent finding or numbered result is counted.

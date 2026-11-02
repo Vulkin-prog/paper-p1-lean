@@ -929,3 +929,9 @@ public import PaperP1.Algebra.BivariateHeightPower
 public import PaperP1.Algebra.BiquadraticNormHeight
 public import PaperP1.Arithmetic.BiquadraticWordNormHeight
 public import PaperP1.Arithmetic.BiquadraticAlgebraicAuxiliary
+
+public import PaperP1.Algebra.BivariateBranchBounds
+public import PaperP1.Arithmetic.BiquadraticNumeratorBounds
+public import PaperP1.Analysis.RealSeriesEvaluation
+public import PaperP1.Analysis.RealSeriesTail
+public import PaperP1.Analysis.RungeSeriesValues

@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5416 audited theorem/lemma declarations**. This
+- The project currently has **5448 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2490,3 +2490,6 @@ Literal formal-word norm checkpoint verification: Lean v4.36.0-rc2 full build pa
 
 
 Literal norm degree/height checkpoint verification: Lean v4.36.0-rc2 full build passed (10273 jobs); actual axiom audit passed for all 5416 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3131 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.20 GiB. The actual independent-word norm has both partial degrees at most 12q, total degree at most 24q and explicit height at most (B+1)^(1200q), with the same constructed primitive coefficient family of height (B+1)^(275q). One construction retains actual w,D,Q,R, primitive coefficients, the numerator product identity, original and divided cancellations, and the nonzero bounded norm. The norm map identity is generalized to arbitrary RingHomClass morphisms, including variable swap. Analytic integer separation and actual branch linkage remain open; no point-vanishing conclusion is inferred from formal cancellation alone. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 75. No new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.
+
+
+Real branch-value and numerator majorant checkpoint verification: Lean v4.36.0-rc2 full build passed (10283 jobs); actual axiom audit passed for all 5448 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3163 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.19 GiB. The actual reduced numerator has coefficient majorant (B+1)^(300q)*(2B)^(a+b). Real series evaluation, geometric absolute convergence, Cauchy multiplication and finite products are proved. The actual Runge factors square to 1+gamma*t and are positive for |gamma*t|<=1/4; scaled products have the literal split-product square. Total-degree bivariate evaluation, the vanishing-tail bound, finite-word enumeration linkage and the final integer separation remain open. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 75. No analytic binomial input assumption, additional Paper C source, manuscript-byte change or Palomar registration.

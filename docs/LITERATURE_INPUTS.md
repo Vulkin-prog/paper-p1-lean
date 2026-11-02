@@ -2100,3 +2100,20 @@ construction retains the same actual coefficients, common factor,
 old/new numerator identity, both cancellations and nonzero bounded norm.
 Analytic integer separation and actual branch linkage remain open.
 No new external estimate, Paper C source or Palomar registration.
+
+
+## Actual real Runge values and the primitive numerator majorant
+
+Stable ID: `P1-ANALYTIC-REAL-RUNGE-VALUES`. Status: **proved**, convergence
+and coefficient components of companion T9.5.
+
+The actual reduced numerator has a finite coefficient bound
+(B+1)^(300q)*(2B)^(a+b). Real rational-series evaluation is defined by
+its sum; geometric convergence, ordinary Cauchy multiplication and
+finite-product identities are proved using pinned Mathlib's infinite-sum
+results (commit 9d581dfff2e41de989072ea63abf3daf69311520).
+Each actual Runge factor squares to 1+gamma*t and is positive for
+|gamma*t|<=1/4. Scaled product values have the literal split-product
+square. No analytic binomial input or square-root value is assumed.
+The bivariate vanishing-tail bound, word enumeration linkage and final
+integer separation remain open. No new Paper C source or Palomar record.

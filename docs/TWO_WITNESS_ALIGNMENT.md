@@ -253,12 +253,44 @@ degrees 12q, total degree 24q and height exponent 1200q.
 The general branch-list data remain explicit. Their identification with
 the actual word radicals and the integer-gap step are not assumed.
 
+## Geometric numerator coefficients and actual real branches
+
+`BivariateBranchBounds` proves coefficient bounds for every shifted
+formal branch and every actual reciprocal polynomial times that branch.
+The literal rectangular coefficient count is retained.
+`BiquadraticNumeratorBounds.geometric_bound` applies to the actual
+reduced family for every pair of coefficient indices:
+
+    |c_ab| <=(B+1)^(300q)*(2B)^(a+b).
+
+It requires only the proved quotient height 275q, reduced partial
+polynomial degrees, kx,ky<=3q, and the actual offset/rank bounds. It
+includes zero polynomials, empty branch lists and arbitrary large a,b.
+
+`RealSeriesEvaluation` defines the real value of a rational formal
+series by its sum, proves absolute convergence from a geometric
+coefficient majorant, and proves addition, Cauchy multiplication and
+finite products for absolutely convergent series. This uses pinned
+Mathlib's ordinary infinite-sum/Cauchy-product theorems, not an
+analytic binomial theorem or an assumed branch identification.
+
+`RealSeriesTail` bounds the nonconstant tail by r/(1-r).
+`RungeSeriesValues` proves each actual formal factor converges for
+|gamma*t|<1 and its real value squares to 1+gamma*t. When
+|gamma*t|<=1/4 this value is positive. Its products are positive and
+have the actual split-product square, including empty products. For
+2r offsets, the scaled value x^r*value(1/x) squares exactly to
+product_i(x+gamma_i), and positivity holds at positive x. The small
+parameter condition follows from x>=4B and the actual absolute offset
+bound. No square-root value is inserted as an axiom.
+
 ## Remaining obligations
 
-The source analytic integer separation is open. The initial general
-Runge branch lists must be linked with the literal independent word
-radicals in the analytic construction. The norm's evaluation-zero lemma
-is conditional on the actual auxiliary value being zero; it does not
-supply that integer-gap conclusion. No full T9.5 result or new numbered
-coverage is claimed. No new external theorem assumption, Paper C port
-or Palomar registration is introduced.
+The source analytic integer separation is open. Total-degree bivariate
+evaluation must transfer the actual divided-numerator cancellation to
+a quantitative tail bound at (1/x,1/y). The finite general branch lists
+must be linked with the literal word offset sets. The norm's
+evaluation-zero lemma is conditional on the actual auxiliary value
+being zero; it does not supply the integer-gap conclusion. No full
+T9.5 result or new numbered coverage is claimed. No new external
+estimate assumption, Paper C port or Palomar registration is introduced.
