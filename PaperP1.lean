@@ -1656,3 +1656,13 @@ public import PaperP1.Model.SharedPrincipalEdgePairs
 public import PaperP1.Asymptotics.EndpointGeometricTripleMass
 public import PaperP1.Asymptotics.SharedPrincipalTripleMass
 public import PaperP1.Asymptotics.SharedPrincipalEdgePairMass
+public import PaperP1.Arithmetic.CompressedSourceBlocks
+public import PaperP1.Arithmetic.PrincipalSourcePatterns
+public import PaperP1.Asymptotics.CoupledPrincipalSourceCount
+public import PaperP1.Model.DirectJointBlocks
+public import PaperP1.Model.PrincipalEdgeSpaces
+public import PaperP1.Asymptotics.CoupledPrincipalEdgesCount
+public import PaperP1.Asymptotics.PrincipalEdgeProbability
+public import PaperP1.Asymptotics.CoupledPrincipalProductMass
+public import PaperP1.Model.ActiveFamilySecondMoment
+public import PaperP1.Asymptotics.PrincipalEdgeSecondMomentLower

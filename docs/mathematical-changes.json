@@ -6058,6 +6058,69 @@
         "status": "not_integrated"
       },
       "validation_commit": "03a959af19117b59d38b7e0cfa6176ec81059639"
+    },
+    {
+      "id": "P1-MATH-0101",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:twogoodpositive",
+        "number": "T1.17",
+        "page": 19,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 1199,
+        "statement_sha256": "be55642021944d9eabbc4a130b9b44d199f05d751d860a5b47b42c715c03a25b"
+      },
+      "original_assumption": "Companion T1.17 asserts the two-sided asymptotic E[(Xi)_2]=beta^2+o(beta^2), without an explicit one-sided lower error or a separation of the lower proof from the weighted nonaligned estimates used for the upper direction.",
+      "finding": "The actual second factorial moment satisfies E[(Xi)_2]>=beta^2-N^(-7/3+epsilon), uniformly before all critical lengths and private-prime cutoffs. Literal coupled principal-edge pairs number N^(1+epsilon), including diagonal pairs, by a fixed-offset anchor injection into the complete unweighted dependent-block count. Their independent product weights cost N^(-7/3+epsilon). Direct event-space factorization and a generic exact active-family second-moment identity give the stated actual lower error.",
+      "evidence": [
+        "PaperP1.CompressedSourceBlocks.block_eq",
+        "PaperP1.CompressedSourceBlocks.source_abs_bound",
+        "PaperP1.CompressedSourceBlocks.block_distance",
+        "PaperP1.CompressedSourceBlocks.normalized_heights",
+        "PaperP1.CompressedSourceBlocks.block_heights",
+        "PaperP1.CompressedSourceBlocks.anchor_bound",
+        "PaperP1.CompressedSourceBlocks.space_eq",
+        "PaperP1.PrincipalSourcePatterns.properties",
+        "PaperP1.PrincipalSourcePatterns.patterns_card",
+        "PaperP1.PrincipalSourcePatterns.anchor_injective",
+        "PaperP1.PrincipalSourcePatterns.space_eq",
+        "PaperP1.PrincipalSourcePatterns.source_of_edge",
+        "PaperP1.CoupledPrincipalSourceCount.anchorPair_injective",
+        "PaperP1.CoupledPrincipalSourceCount.mem_dependent_pairs",
+        "PaperP1.CoupledPrincipalSourceCount.uniform_count",
+        "PaperP1.DirectJointBlocks.factor",
+        "PaperP1.PrincipalEdgeSpaces.space_pair",
+        "PaperP1.PrincipalEdgeSpaces.site_le",
+        "PaperP1.PrincipalEdgeSpaces.regular",
+        "PaperP1.PrincipalEdgeSpaces.independent_sets",
+        "PaperP1.PrincipalEdgeSpaces.joint_factor",
+        "PaperP1.PrincipalEdgeSpaces.independent_ne",
+        "PaperP1.PrincipalEdgeSpaces.beta_squared_le_joint_add_coupled",
+        "PaperP1.CoupledPrincipalEdgesCount.source_cover",
+        "PaperP1.CoupledPrincipalEdgesCount.uniform_pool_count",
+        "PaperP1.CoupledPrincipalEdgesCount.uniform_count",
+        "PaperP1.PrincipalEdgeProbability.uniform_coarse",
+        "PaperP1.PrincipalEdgeProbability.beta_squared_lower",
+        "PaperP1.CoupledPrincipalProductMass.uniform_bound",
+        "PaperP1.ActiveFamilySecondMoment.union_product",
+        "PaperP1.ActiveFamilySecondMoment.factorial_value",
+        "PaperP1.ActiveFamilySecondMoment.infinite_mean_eq",
+        "PaperP1.PrincipalEdgeSecondMomentLower.actual_second_eq",
+        "PaperP1.PrincipalEdgeSecondMomentLower.uniform_lower",
+        "PaperP1.PrincipalEdgeSecondMomentLower.relative_lower",
+        "PaperP1.PrincipalEdgeSecondMomentLower.uniform_moment_lower",
+        "PaperP1.PrincipalEdgeSecondMomentLower.relative_moment_lower"
+      ],
+      "proposed_revision": "Isolate the unconditional lower direction with its explicit N^(-7/3+epsilon) error, and give the compressed-source counting proof. State separately that the coupled joint activation mass, rather than its product weights, is the remaining quantity needed for the upper direction. Retain the full T1.17 conclusion only after that upper estimate is verified.",
+      "impact": "Strengthens the lower direction quantitatively and proves it with an unweighted count already established in the project. Gives an actual infinite-measure moment identity and a uniform (1-delta)*beta^2 lower comparison. Does not prove the two-sided asymptotic, the full T1.17 upper bound or the unresolved weighted nonaligned input; no source conclusion error is asserted.",
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11295 jobs), actual kernel-axiom audit (7652 declarations; only propext, Classical.choice and Quot.sound), 5369 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.53 GiB free on Ubuntu root.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
