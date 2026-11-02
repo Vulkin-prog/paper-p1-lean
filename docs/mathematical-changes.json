@@ -5333,7 +5333,7 @@
         "statement_sha256": "a7e11e39ad2329e7d1ea49686a06acea6f21b59fbdc5121f85ef2acb700b0b9d"
       },
       "original_assumption": "The proof of main 14.5 constructs affine compatibility for the specific triple (10t,12t,15t), with private primes above H=10B in the dyadic critical band.",
-      "finding": "The affine witness and exact normalized-union probability hold for arbitrary finite families of positive integer-normalized windows. A private union, a common normalized value and absence of predecessor/internal collisions suffice. No cutoff, height, separation, ratio or dyadic hypothesis is needed for this finite theorem. The source positive connected activity lower bound is proved with the explicit constant 2^(-4-(71/30)*C)/240.",
+      "finding": "The affine witness and exact normalized-union probability hold for arbitrary finite families of positive integer-normalized windows. A private union, connected overlap among the normalized windows and absence of predecessor/internal collisions suffice. No cutoff, height, separation, ratio or dyadic hypothesis is needed for this finite theorem. The source positive connected activity lower bound is proved with the explicit constant 2^(-4-(71/30)*C)/240. The even-space union identity itself only requires connected overlap of nonempty finite value sets and does not use private primes.",
       "evidence": [
         "PaperP1.PrivateValuePrescriptions.value_of_functional",
         "PaperP1.PrivateValuePrescriptions.evaluation_single",
@@ -5414,16 +5414,31 @@
         "PaperP1.ThreeSlopePositiveActivity.families_data",
         "PaperP1.ThreeSlopePositiveActivity.positive_connected_lower",
         "PaperP1.ThreeSlopePositiveActivity.dyadic_positive_lower",
-        "PaperP1.ThreeSlopePositiveActivity.source_positive_lower"
+        "PaperP1.ThreeSlopePositiveActivity.source_positive_lower",
+        "PaperP1.ConnectedValueUnions.difference_mem",
+        "PaperP1.ConnectedValueUnions.propagate",
+        "PaperP1.ConnectedValueUnions.connected_union_space",
+        "PaperP1.ConnectedPrivateNormalizedFamilies.connected_normalized_space",
+        "PaperP1.ConnectedPrivateNormalizedFamilies.connected_joint_rank",
+        "PaperP1.ConnectedPrivateNormalizedFamilies.connected_actual_probability",
+        "PaperP1.ConnectedPrivateNormalizedFamilies.connected_probability_nullity"
       ],
       "proposed_revision": "State the finite normalized-family compatibility and rank-probability lemma before the rational witness argument. Specialize it to (10t,12t,15t), include the exact pair and triple probabilities and the explicit lower constant, and keep the final total-cumulant passage dependent on its separately proved negative-error control.",
       "impact": "Generalizes and separates the finite affine argument from the arithmetic density count; gives reusable exact probabilities and an unconditional positive connected activity lower bound. The lower bound for the total third factorial cumulant remains unproved at this checkpoint.",
-      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11127 jobs), actual axiom audit of all 7280 theorem/lemma declarations, direct Lean checks of all 4997 ledger/finding references, source integrity (138 manifest entries and 167 numbered statements), and git diff --check. Only propext, Classical.choice and Quot.sound occur. Ubuntu root space after verification: 14.87 GiB.",
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11131 jobs), actual axiom audit of all 7287 theorem/lemma declarations, direct Lean checks of all 5004 ledger/finding references, source integrity (138 manifest entries and 167 numbered statements), and git diff --check. Only propext, Classical.choice and Quot.sound occur. Ubuntu root space after verification: 14.86 GiB.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "e8edda21719f29694a817816d780a6d429e7df38"
+      "validation_history": [
+        {
+          "finding": "The affine witness and exact normalized-union probability hold for arbitrary finite families of positive integer-normalized windows. A private union, a common normalized value and absence of predecessor/internal collisions suffice. No cutoff, height, separation, ratio or dyadic hypothesis is needed for this finite theorem. The source positive connected activity lower bound is proved with the explicit constant 2^(-4-(71/30)*C)/240.",
+          "impact": "Generalizes and separates the finite affine argument from the arithmetic density count; gives reusable exact probabilities and an unconditional positive connected activity lower bound. The lower bound for the total third factorial cumulant remains unproved at this checkpoint.",
+          "proposed_revision": "State the finite normalized-family compatibility and rank-probability lemma before the rational witness argument. Specialize it to (10t,12t,15t), include the exact pair and triple probabilities and the explicit lower constant, and keep the final total-cumulant passage dependent on its separately proved negative-error control.",
+          "validation": "Verified with Lean v4.36.0-rc2: full lake build (11127 jobs), actual axiom audit of all 7280 theorem/lemma declarations, direct Lean checks of all 4997 ledger/finding references, source integrity (138 manifest entries and 167 numbered statements), and git diff --check. Only propext, Classical.choice and Quot.sound occur. Ubuntu root space after verification: 14.87 GiB.",
+          "validation_commit": "e8edda21719f29694a817816d780a6d429e7df38"
+        }
+      ]
     }
   ]
 }

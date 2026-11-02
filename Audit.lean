@@ -1592,6 +1592,9 @@ import PaperP1
 #print axioms PaperP1.ConnectedBlockLists.mem_population
 #print axioms PaperP1.ConnectedBlockLists.covered_of_connected
 #print axioms PaperP1.ConnectedBlockLists.population_subset_covered
+#print axioms PaperP1.ConnectedValueUnions.difference_mem
+#print axioms PaperP1.ConnectedValueUnions.propagate
+#print axioms PaperP1.ConnectedValueUnions.connected_union_space
 #print axioms PaperP1.ContactWindowSpan.value_union
 #print axioms PaperP1.ContactWindowSpan.shared_value
 #print axioms PaperP1.ContactWindowSpan.joined_space
@@ -5426,6 +5429,10 @@ import PaperP1
 #print axioms PaperP1.ConditionalRunRank.row_kernel_finrank
 #print axioms PaperP1.ConnectedFourthReduction.exact_reduction
 #print axioms PaperP1.ConnectedFourthReduction.finite_bound
+#print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_normalized_space
+#print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_joint_rank
+#print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_actual_probability
+#print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_probability_nullity
 #print axioms PaperP1.ConnectedWindowFamilies.connected_enumeration
 #print axioms PaperP1.ConnectedWindowFamilies.primitive_enumeration
 #print axioms PaperP1.ConnectedWindowFamilies.connected_family_count

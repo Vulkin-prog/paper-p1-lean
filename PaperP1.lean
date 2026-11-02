@@ -1582,3 +1582,5 @@ public import PaperP1.Model.ThreeSlopeWitnessActivity
 public import PaperP1.Arithmetic.ThreeSlopePrivatePopulation
 public import PaperP1.Asymptotics.ThreeSlopePrivateDensity
 public import PaperP1.Asymptotics.ThreeSlopePositiveActivity
+public import PaperP1.Arithmetic.ConnectedValueUnions
+public import PaperP1.Model.ConnectedPrivateNormalizedFamilies
