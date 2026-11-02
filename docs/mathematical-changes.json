@@ -4480,7 +4480,8 @@
           "validation": "Lean v4.36.0-rc2 full build passed (10561 jobs); actual axiom audit passed for all5988 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All3705 distinct ledger/finding declarations were directly checked. All138 original manifest entries and167 numbered records are intact. Ubuntu available space:15.85 GiB. Actual triple insertion/nullity, the minimum pair-rank bound, reconstruction from any pair, the exact critical local marginal cap and the finite pair/family probability bound with factor4 are proved without BCN. The B=L+1 to L conversion, exact binary-mass exponential identity and critical N-exponent absorption are proved. Under the same single field-polynomial BCN input as13.5 and13.6, all compatible pairs have a uniform half-window rank bound, all compatible triples have nullity<=(3/2+epsilon)L, every triple containing a nonaligned pair has the stronger1+(2/3)log2 bound without compatibility, and every actual family of cardinality>=2 has joint mass<=N^(-3/2+epsilon). The literal finite triple-probability maximum is constructed and bounded. P1-MATH-0081 and0082 record the larger-family probability proof and compatibility-free nonaligned-triple scope. BCN itself and its geometric presentation remain unformalized;13.8 is conditional, not proved coverage. Coverage76/167 (main28/73, companion48/94), confirmed findings82. No added Paper C source, dependency download, manuscript-byte change or Palomar registration.",
           "validation_commit": "109f02d0401db62f9d9a9e99cc891edde4ec0b30"
         }
-      ]
+      ],
+      "validation_commit": "073a25974c6a6cccb2e3e6da7630e79c3d77d5d6"
     },
     {
       "id": "P1-MATH-0083",
