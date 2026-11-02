@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**74 mathematical improvements are confirmed; no error in a manuscript conclusion
+**75 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -3228,3 +3228,20 @@ factor. The argument includes zero family members and does not divide
 by D(x,y). Integer separation, character independence and the nonzero
 norm remain open. No new independent finding or completed numbered
 result is counted.
+
+
+## P1-MATH-0075 — An elementary nonzero norm certificate for literal words
+
+The exact reduced-word intersection and symmetric-difference identities
+prove the required rational-function nonsquare conditions. Quadratic
+anisotropy and a difference of squares prove the literal biquadratic
+norm polynomial nonzero for every nonzero coefficient family. This
+avoids constructing a degree-four character basis for that conclusion;
+evenness and offset bounds are unnecessary for this algebraic stage.
+The third integer root and its signed overlap relation are also proved.
+A zero actual auxiliary value makes the norm vanish at the point.
+
+The integer-gap estimate, actual branch linkage and final norm degree
+and height bounds remain open; T9.5 is not counted complete. No error
+in the manuscript conclusion or exponent is asserted. See
+[the exact alignment](TWO_WITNESS_ALIGNMENT.md).

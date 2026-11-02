@@ -171,13 +171,55 @@ step. This follows from the proved product identity and exact reciprocal
 order, without division by D(x,y). No target vanishing estimate is
 supplied as an external assumption.
 
+## Literal formal words and the nonzero norm
+
+`BivariateWordSquares` treats actual finite offset sets I,J. Their word
+polynomial is the product of the distinct factors X+i and Y+j. Every
+nonempty word is proved nonsquare in Q(X,Y): an injective coefficient
+localization gives a separable nonconstant univariate polynomial, while
+integral closure reflects a fraction-field square to a polynomial square.
+The empty word is correctly excluded from this nonsquare conclusion.
+
+`FormalWordPolynomials` proves the exact overlap identity over every
+commutative ring:
+
+    F(I,J)*F(K,L) =F(I symmetricDifference K,J symmetricDifference L)
+                    *F(I intersection K,J intersection L)^2.
+
+It constructs the quotient H=F(K\I,L\J) with G*H=F(K,L), and
+identifies the integer polynomials with their rational counterparts.
+`BiquadraticNorm` proves the elementary normalized norm is zero iff all
+four coefficients are zero when F1,F2,F1*F2 are nonsquares. The proof
+uses quadratic anisotropy and a difference of squares; it assumes no
+four-character basis.
+
+`BiquadraticWordNorm.normPolynomial_ne_zero` applies this criterion to
+the literal integer source norm U^2-4F1*V^2, using F3 from symmetric
+difference and H from the proved quotient. It is nonzero for every
+nonzero four-polynomial coefficient family whenever both words and their
+symmetric difference are nonempty. `independent_of_distinct` derives
+these conditions from two distinct nonempty word pairs. Evenness and
+offset bounds are unnecessary for this nonzero-norm component.
+
+`IntegerOverlapRoot` and `exists_third_root` construct the third integer
+root from the two actual square roots and a nonzero overlap value, with
+the required signed relation G*w3=w1*w2. Positivity of word values is
+proved when the coordinates exceed the absolute offset bound.
+The literal norm evaluates to zero if the actual auxiliary integer value
+is zero. `auxiliary_ne_zero` proves nonzero auxiliary functions in every
+injective domain realization of these radical identities; such a
+realization is structural data, not an assumed target estimate.
+
+This checkpoint records P1-MATH-0075, a separate algebraic proof
+improvement. No analytic integer-gap estimate is inferred from it.
+
 ## Remaining obligations
 
-Formal word/character independence
-must still establish that the auxiliary is a nonzero function; a
-nonzero coefficient array alone does not do so for arbitrary branch
-data. The integer separation at the actual square point, nonzero
-biquadratic norm and its final partial/total degree and height bounds
-are also open. No norm polynomial conclusion is inferred from the
-constructed low-order cancellation alone. No new external theorem,
-Paper C port or Palomar registration is introduced.
+The source analytic integer separation and final partial/total degree
+and height bounds of the actual norm are open. The initial general
+Runge branch lists must be linked with the literal independent word
+radicals in the analytic construction. The norm's evaluation-zero lemma
+is conditional on the actual auxiliary value being zero; it does not
+supply that integer-gap conclusion. No full T9.5 result or new numbered
+coverage is claimed. No new external theorem assumption, Paper C port
+or Palomar registration is introduced.

@@ -2063,3 +2063,23 @@ total degree of the common factor. This proves the source primitive-order
 step, including zero members, without evaluating or dividing the common
 factor at the integer point. Integer separation and the nonzero norm
 remain open. No new external estimate, Paper C source or Palomar record.
+
+
+## Literal reduced-word norm and third-root integrality
+
+Stable ID: `P1-ALG-FORMAL-WORD-NORM`. Status: **proved**, algebraic
+components of companion T9.5.
+
+Finite integer offset sets give the actual word polynomials, exact
+intersection quotient and symmetric-difference identity. Nonempty
+word functions are proved nonsquares using pinned Mathlib separability
+and integral closure (commit 9d581dfff2e41de989072ea63abf3daf69311520).
+The elementary biquadratic norm criterion proves the literal integer
+norm nonzero for every nonzero coefficient family of independent words,
+without a degree-four basis premise or evenness assumption at this stage.
+The third root at an integer square point is constructed integrally with
+its signed overlap identity. A zero actual auxiliary value implies the
+literal norm evaluates to zero; the integer-gap proof remains open.
+Arbitrary general branch lists are not silently identified with word
+radicals. P1-MATH-0075 records this proof improvement. No external
+estimate, new Paper C source or Palomar registration is introduced.

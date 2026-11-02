@@ -910,3 +910,11 @@ public import PaperP1.Algebra.BivariateReciprocalSeries
 public import PaperP1.Algebra.BivariateReciprocalProduct
 public import PaperP1.Arithmetic.BiquadraticNumeratorFactor
 public import PaperP1.Arithmetic.BiquadraticPrimitiveOrder
+
+public import PaperP1.Algebra.BiquadraticNorm
+public import PaperP1.Algebra.BiquadraticSourceNorm
+public import PaperP1.Algebra.SquareInFractionField
+public import PaperP1.Algebra.BivariateWordSquares
+public import PaperP1.Algebra.FormalWordPolynomials
+public import PaperP1.Algebra.IntegerOverlapRoot
+public import PaperP1.Arithmetic.BiquadraticWordNorm
