@@ -699,7 +699,8 @@
           "validation_commit": "bacc63d303b95d1d80b1d9d341d2bbb308375d68"
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full lake build (11003 jobs), source and ledger checks, actual axiom audit of 6992 declarations (only propext, Classical.choice and Quot.sound), and 4709 direct ledger/evidence declaration checks; Ubuntu root free space 15.09 GiB. Original manuscript bytes and all 167 statement hashes preserved."
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (11003 jobs), source and ledger checks, actual axiom audit of 6992 declarations (only propext, Classical.choice and Quot.sound), and 4709 direct ledger/evidence declaration checks; Ubuntu root free space 15.09 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "validation_commit": "058be7038c8141688f0d4d82b56de43097d4ae10"
     },
     {
       "label": "p1:arith:edgefamily",
@@ -6851,7 +6852,8 @@
           "validation_commit": "bacc63d303b95d1d80b1d9d341d2bbb308375d68"
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full lake build (11003 jobs), source and ledger checks, actual axiom audit of 6992 declarations (only propext, Classical.choice and Quot.sound), and 4709 direct ledger/evidence declaration checks; Ubuntu root free space 15.09 GiB. Original manuscript bytes and all 167 statement hashes preserved."
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (11003 jobs), source and ledger checks, actual axiom audit of 6992 declarations (only propext, Classical.choice and Quot.sound), and 4709 direct ledger/evidence declaration checks; Ubuntu root free space 15.09 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "validation_commit": "058be7038c8141688f0d4d82b56de43097d4ae10"
     },
     {
       "label": "p13:conf:groups",
