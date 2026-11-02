@@ -3388,3 +3388,19 @@ normalization input is required. This quantifies and supplies an
 alternative proof of the existing conclusion; no optimized constant
 or source-conclusion error is claimed. Coverage75/167 (main27/73,
 companion48/94); confirmed findings remain77. Originals are unchanged.
+
+
+## Finite medium-prime deletion and incidence kernel for13.1
+
+The actual source component argument now has explicit finite bounds.
+Discarding oversized components costs at most2B/(M+1); discarding
+weight>=3 medium-prime columns costs one third of the actual total
+column weight, bounded by2B*sum(1/p)+2*#P. No extra component-size
+factor enters this deletion count. The actual retained family has
+injective physical projections and an injective prime-parity image.
+Its actual medium-prime kernel has a constructed labelled incidence
+model, with the infinity row equal to the sum of the other rows.
+This verifies and quantifies the existing argument, with no new
+manuscript correction or optimized constant claimed. The short-cycle
+and final short-basis/asymptotic steps remain open; article13.1 is in
+progress. Coverage75/167 and confirmed findings77 stay unchanged.

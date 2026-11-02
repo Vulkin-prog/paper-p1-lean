@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5685 audited theorem/lemma declarations**. This
+- The project currently has **5737 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2611,3 +2611,21 @@ P1-MATH-0077 now covers the completed proof improvement. Coverage75/167
 [statement alignment](INTEGER_FIBRES_ALIGNMENT.md).
 
 Complete integer-grid checkpoint verification: Lean v4.36.0-rc2 full build passed (10457 jobs); actual axiom audit passed for all 5685 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3400 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.04 GiB. Full article13.3 is proved through the actual common-curve certificate, the actual class-map and exceptional-coordinate kernels, bounded basis supports, both injective physical projections, actual Hensel root matching and the actual swapped function-field map. The retained dimension is at least t-1-6D^2 and the actual integer-grid lower bound has constant6. Original real parameters, exact real-box grid membership and the original real/truncated natural lower bounds are proved. No branch, normalization, matching, dimension-loss or target grid count is an unproved input. Coverage75/167 (main27/73, companion48/94); findings77. No optimized constant, source-conclusion error, external point-count estimate, Paper C source, manuscript-byte change or Palomar registration.
+
+
+## Actual component and incidence stages of13.1
+
+Article13.1 is in progress. Actual medium-prime columns on actual
+large-prime components have total weight at most2B*sum(1/p)+2*#P.
+The one-third heavy-column loss and2B/(M+1) oversized-component loss
+give an explicit retained-family cardinality bound against actual
+intersection rank and defective count. Both physical projections and
+the actual first-block prime-parity image are injective. Actual
+medium-prime equations equal the selected physical-occurrence sums
+and have a constructed labelled incidence model with identical kernel,
+including loops and parallel edges. The quantitative prime harmonic
+estimate, short cycles, final sparse kernel basis and full source
+assembly remain open. Coverage75/167 and findings77 are unchanged.
+See [alignment](SHORT_BASIS_ALIGNMENT.md).
+
+Component-stage checkpoint verification: Lean v4.36.0-rc2 full build passed (10469 jobs); actual axiom audit passed for all 5737 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3452 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.01 GiB. The actual retained component family, literal medium-prime columns, finite one-third heavy-column loss and oversized-component budget are proved. Both physical projections and the actual first-block prime-parity image are injective. Actual medium-prime equations equal selected physical-occurrence sums and have a constructed labelled incidence model with identical kernel. Quantitative short cycles, the prime harmonic estimate, sparse final kernel basis and full short-basis assembly remain open; article13.1 stays in progress. Coverage75/167 (main27/73, companion48/94); findings77. No source-conclusion error, external graph estimate, additional Paper C source, manuscript-byte change or Palomar registration.

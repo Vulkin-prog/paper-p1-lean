@@ -2316,3 +2316,21 @@ dimension, algebraically closed splitting and fraction-map APIs are
 used with their actual proved instances. No new external estimate,
 normalization input, assumed dimension bound or assumed grid count is
 introduced. Coverage75/167; confirmed findings77.
+
+
+## Actual short-basis component and incidence stages
+
+Stable ID: `P1-ALG-SHORT-BASIS-COMPONENT-STAGE`. Status: **proved**
+finite preparation for article13.1, which stays in progress.
+
+Disjoint actual component columns, exact one-third heavy-column loss,
+actual interval-multiple counts and the oversized-component budget
+give an explicit finite retained-component bound. Physical and actual
+prime-parity-image injectivity are proved by private large primes.
+The actual medium-prime map is exactly the selected-occurrence map
+and has a constructed labelled incidence model with the same kernel.
+Pinned Mathlib finite sums, finite-set injections, finite linear
+combinations and binary-field computation are used. No new external
+graph or prime-harmonic estimate is assumed. Quantitative short cycles,
+prime harmonic asymptotics and final short-basis assembly remain open.
+No additional Paper C source is introduced. Coverage75/167, findings77.

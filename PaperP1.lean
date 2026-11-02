@@ -1028,3 +1028,15 @@ public import PaperP1.Arithmetic.CurveSquareGridBound
 public import PaperP1.Arithmetic.CurveCoordinateCut
 
 public import PaperP1.Arithmetic.IntegerGridTheorem
+
+public import PaperP1.Combinatorics.DisjointColumnWeights
+
+public import PaperP1.Arithmetic.MediumPrimeColumns
+
+public import PaperP1.Arithmetic.ComponentProjectionInjectivity
+
+public import PaperP1.Algebra.BinaryIncidenceAugmentation
+
+public import PaperP1.Arithmetic.ShortBasisComponentStage
+
+public import PaperP1.Arithmetic.MediumPrimeIncidence
