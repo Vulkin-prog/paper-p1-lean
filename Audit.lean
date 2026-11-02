@@ -3732,6 +3732,9 @@ import PaperP1
 #print axioms PaperP1.LocalBlocksTheorem.finite_conditions
 #print axioms PaperP1.LocalBlocksTheorem.companion_T19_2
 #print axioms PaperP1.LocalBlocksTheorem.boundary_improvement_uniform
+#print axioms PaperP1.LogHeightAlignedActivity.uniform_bound
+#print axioms PaperP1.LogHeightAlignedActivity.all_heights_from_three
+#print axioms PaperP1.LogHeightAlignedActivity.source_tail_from_five
 #print axioms PaperP1.LogHeightUnitChannelActivity.uniform_bounds
 #print axioms PaperP1.LogHeightUnitChannelActivity.all_heights_from_three
 #print axioms PaperP1.LogHeightUnitChannelActivity.source_tail_from_five
@@ -4150,6 +4153,7 @@ import PaperP1
 #print axioms PaperP1.WideQuadraticSquarePartCount.second_branch_count
 #print axioms PaperP1.ZeroDegreeAuxiliaryCounts.polylog_shift_budget
 #print axioms PaperP1.ZeroDegreeAuxiliaryCounts.linear_auxiliary_zero_count
+#print axioms PaperP1.ZeroUnitAlignedActivity.uniform_bound
 #print axioms PaperP1.BinaryResidual.card_support
 #print axioms PaperP1.BinaryResidual.eq_of_support_eq
 #print axioms PaperP1.BinaryResidual.mem_ker_puncture_iff
@@ -5038,6 +5042,9 @@ import PaperP1
 #print axioms PaperP1.ActualCanonicalComponents.singleton_zero
 #print axioms PaperP1.ActualCanonicalComponents.nonzero_block_card
 #print axioms PaperP1.ActualCanonicalComponents.nonconnected_card
+#print axioms PaperP1.AlignedChannelFamilies.relative_le_loss
+#print axioms PaperP1.AlignedChannelFamilies.cover
+#print axioms PaperP1.AlignedChannelFamilies.activity_bound
 #print axioms PaperP1.AlignedTripleFamilies.mem_families
 #print axioms PaperP1.AlignedTripleFamilies.family_cover
 #print axioms PaperP1.AlignedTripleFamilies.star_card

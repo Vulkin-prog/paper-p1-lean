@@ -1514,3 +1514,6 @@ public import PaperP1.Asymptotics.NormalizedDefectPairActivity
 public import PaperP1.Asymptotics.LogHeightUnitChannelWeights
 public import PaperP1.Model.LogHeightUnitChannelFamily
 public import PaperP1.Asymptotics.LogHeightUnitChannelActivity
+public import PaperP1.Model.AlignedChannelFamilies
+public import PaperP1.Asymptotics.ZeroUnitAlignedActivity
+public import PaperP1.Asymptotics.LogHeightAlignedActivity
