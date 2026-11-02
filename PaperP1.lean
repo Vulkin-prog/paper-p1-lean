@@ -1679,3 +1679,7 @@ public import PaperP1.Model.AlignedPrincipalEdgePairs
 public import PaperP1.Asymptotics.AlignedPrincipalEdgePairMass
 public import PaperP1.Model.PrincipalSecondMomentReduction
 public import PaperP1.Asymptotics.PrincipalSecondMomentReduction
+public import PaperP1.Model.JointBlockCovariance
+public import PaperP1.Asymptotics.CriticalBinaryGrowth
+public import PaperP1.Model.PrincipalResidualDensity
+public import PaperP1.Asymptotics.PrincipalResidualDensity

@@ -3718,6 +3718,8 @@ import PaperP1
 #print axioms PaperP1.CriticalBandScale.lowerScale_pos
 #print axioms PaperP1.CriticalBandScale.upperScale_pos
 #print axioms PaperP1.CriticalBandScale.critical_band_scale
+#print axioms PaperP1.CriticalBinaryGrowth.upper
+#print axioms PaperP1.CriticalBinaryGrowth.uniform_upper
 #print axioms PaperP1.CriticalBranchingBudget.coefficient_ge_one
 #print axioms PaperP1.CriticalBranchingBudget.raw_budget_le_cubic
 #print axioms PaperP1.CriticalBranchingBudget.errorConstant_pos
@@ -4418,6 +4420,11 @@ import PaperP1
 #print axioms PaperP1.PrincipalEdgeSecondMomentLower.relative_lower
 #print axioms PaperP1.PrincipalEdgeSecondMomentLower.uniform_moment_lower
 #print axioms PaperP1.PrincipalEdgeSecondMomentLower.relative_moment_lower
+#print axioms PaperP1.PrincipalDenseResidual.bounded_mass
+#print axioms PaperP1.PrincipalDenseResidual.uniform_dense_comparison
+#print axioms PaperP1.PrincipalDenseResidual.uniform_dense_lower
+#print axioms PaperP1.PrincipalDenseResidual.relative_dense_comparison
+#print axioms PaperP1.PrincipalDenseResidual.uniform_dense_moment_comparison
 #print axioms PaperP1.PrincipalSecondMomentError.uniform_error
 #print axioms PaperP1.PrincipalSecondMomentError.uniform_moment_error
 #print axioms PaperP1.PrincipalSecondMomentError.relative_error
@@ -6025,6 +6032,10 @@ import PaperP1
 #print axioms PaperP1.InfiniteTripleCancellation.incompatible_identity
 #print axioms PaperP1.InfiniteTripleCancellation.incompatible_bound
 #print axioms PaperP1.InfiniteTripleCancellation.incompatible_set_bound
+#print axioms PaperP1.JointBlockCovariance.zero_or_homogeneous
+#print axioms PaperP1.JointBlockCovariance.positive_eq_homogeneous
+#print axioms PaperP1.JointBlockCovariance.homogeneous_union_factor
+#print axioms PaperP1.JointBlockCovariance.actual_covariance_bound
 #print axioms PaperP1.JointBranchingBudget.sum_extensions_bound
 #print axioms PaperP1.JointBranchingEvents.oldField_infinite
 #print axioms PaperP1.JointBranchingEvents.startEvent_congr
@@ -6311,6 +6322,12 @@ import PaperP1
 #print axioms PaperP1.PrincipalEdgeSpaces.joint_factor
 #print axioms PaperP1.PrincipalEdgeSpaces.independent_ne
 #print axioms PaperP1.PrincipalEdgeSpaces.beta_squared_le_joint_add_coupled
+#print axioms PaperP1.PrincipalResidualDensity.bounded_nonneg
+#print axioms PaperP1.PrincipalResidualDensity.dense_nonneg
+#print axioms PaperP1.PrincipalResidualDensity.principal_positive
+#print axioms PaperP1.PrincipalResidualDensity.bounded_by_cap
+#print axioms PaperP1.PrincipalResidualDensity.dense_le_residual
+#print axioms PaperP1.PrincipalResidualDensity.residual_le_bounded_add_dense
 #print axioms PaperP1.PrincipalSecondMomentReduction.residual_nonneg
 #print axioms PaperP1.PrincipalSecondMomentReduction.finite_upper
 #print axioms PaperP1.PrincipalSecondMomentReduction.finite_residual_lower

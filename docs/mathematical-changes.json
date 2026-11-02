@@ -6218,6 +6218,49 @@
         "status": "not_integrated"
       },
       "validation_commit": "a9ddb0776ba438fb4e28b64710d6841c5df6cd25"
+    },
+    {
+      "id": "P1-MATH-0104",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:twogoodpositive",
+        "number": "T1.17",
+        "page": 19,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 1199,
+        "statement_sha256": "be55642021944d9eabbc4a130b9b44d199f05d751d860a5b47b42c715c03a25b"
+      },
+      "original_assumption": "The proof of T1.17 invokes a nonaligned two-block absolute covariance estimate without separating the exact range of their full intersection dimensions needed for the beta-squared scale.",
+      "finding": "For every fixed theta, all coupled actual principal-edge pairs with full intersection dimension at most theta*L have absolute covariance mass at most N^(-7/3+theta+epsilon). Taking theta=29/30 removes this entire population at the proved aligned error scale. The remaining strictly dense residual covariance sum differs from the absolute actual second-moment error by at most N^(-41/30+epsilon), with a two-sided finite foundation and an actual expectation version.",
+      "evidence": [
+        "PaperP1.JointBlockCovariance.zero_or_homogeneous",
+        "PaperP1.JointBlockCovariance.positive_eq_homogeneous",
+        "PaperP1.JointBlockCovariance.homogeneous_union_factor",
+        "PaperP1.JointBlockCovariance.actual_covariance_bound",
+        "PaperP1.CriticalBinaryGrowth.upper",
+        "PaperP1.CriticalBinaryGrowth.uniform_upper",
+        "PaperP1.PrincipalResidualDensity.bounded_nonneg",
+        "PaperP1.PrincipalResidualDensity.dense_nonneg",
+        "PaperP1.PrincipalResidualDensity.principal_positive",
+        "PaperP1.PrincipalResidualDensity.bounded_by_cap",
+        "PaperP1.PrincipalResidualDensity.dense_le_residual",
+        "PaperP1.PrincipalResidualDensity.residual_le_bounded_add_dense",
+        "PaperP1.PrincipalDenseResidual.bounded_mass",
+        "PaperP1.PrincipalDenseResidual.uniform_dense_comparison",
+        "PaperP1.PrincipalDenseResidual.uniform_dense_lower",
+        "PaperP1.PrincipalDenseResidual.relative_dense_comparison",
+        "PaperP1.PrincipalDenseResidual.uniform_dense_moment_comparison"
+      ],
+      "proposed_revision": "Introduce the complete two-block intersection dimension and the exact homogeneous rank-factor identity. Separate its d<=29L/30 contribution using the coupled product mass, and state the remaining estimate only on the strictly denser nonaligned residual population. Retain all incompatible unions and zero probabilities.",
+      "impact": "Narrows the precise unresolved arithmetic population and makes its equivalence to the actual second-moment error quantitative, uniformly over cutoffs. Does not prove the dense residual estimate or change numbered-result coverage; no manuscript conclusion error is asserted.",
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11329 jobs), actual Audit.lean kernel-axiom audit (7711 declarations; only propext, Classical.choice, Quot.sound), all 5428 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.46 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
