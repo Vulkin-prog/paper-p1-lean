@@ -1856,3 +1856,23 @@ seed weights and bounds every actual extension subfamily, uniformly in
 Y and the coloring. Adding unused colors preserves the actual joint
 seed mass. The final positive moment expansion remains open. No external
 estimate or new Paper C source is introduced.
+
+
+## Complete actual positive replica moments
+
+Stable ID: `P1-PROB-FULL-POSITIVE-REPLICA-MOMENTS`. Status: **proved**,
+closing the complete T22.7 together with its formula and conditional sum.
+
+The infinite colored product space, its finite cylinder pushforward, and
+the exact singleton normalization are constructed. Literal infinite
+colored conditional ratios are identified with the actual finite affine
+ratios. Positive replica moments are expanded exactly; an injective
+ordered flattening identifies their actual extension population and
+first seed. A proved positive weight cover retains that seed weight
+exactly. Actual colored weighted propagation bounds every such population,
+and fixed logarithmic weight powers are absorbed before the varying
+family and weights. Ordinary conditional expectations and original run
+events are identified, and all positive integer orders, tuple lengths
+including zero, repetitions and empty families are included. No moment,
+first-moment, conditional-sum or uniform-law estimate is assumed. No new
+external theorem or Paper C source is introduced.

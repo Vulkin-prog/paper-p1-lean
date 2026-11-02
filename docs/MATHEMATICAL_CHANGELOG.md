@@ -3079,3 +3079,16 @@ weight exactly and includes all repeated-center extension subfamilies.
 No new independent improvement is counted beyond P1-MATH-0070; the
 positive random-sum moment assembly remains open. Coverage stays 71/167
 and confirmed findings stay 70. See [alignment](COLORED_REPLICAS_ALIGNMENT.md).
+
+
+Full T22.7 is complete. The exact infinite replica formula, actual
+infinite colored conditional target sum and positive weighted random-sum
+moments are all proved. An explicit injective flattening keeps every
+ordered occurrence and its first-tuple weight, including repeats. The
+positive moment bound uses no first-moment lower bound and covers empty
+families, zero weights and zero-length tuples. The source p^r formula is
+stated on the actual regular set, with the general heterogeneous formula
+kept separate. The actual infinite colored atom also satisfies the
+pointwise homogeneous domination of P1-MATH-0070. No additional finding
+is counted for this proof progression. Coverage is 72/167 and confirmed
+findings remain 70. See [complete alignment](COLORED_REPLICAS_ALIGNMENT.md).

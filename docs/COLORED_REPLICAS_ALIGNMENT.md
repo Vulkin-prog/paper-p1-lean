@@ -3,7 +3,7 @@
 Source: companion Proposition T22.7, `p1:uniform:replicas`, page 92,
 `companion_sections/uniform_appendix.tex:351`, statement SHA-256
 `cee349c607e43eada20a10105ca13a96aba5dbd24c8c491a6857a75064ff04d9`.
-Status: **in progress**, not counted as a completed numbered result.
+Status: **proved**, all three assertions. Coverage is 72/167 (main 25/73, companion 47/94).
 
 ## Actual model and replica identity
 
@@ -112,12 +112,75 @@ centers are retained. `ReplicaColorEmbedding.joint_mass_eq` proves that
 adding unused independent colors leaves the actual seed probability
 unchanged.
 
-## Remaining obligation
+## Exact infinite colored source conditioning
 
-The full positive weighted random-sum moment assertion still requires
-its actual replica expansion, ordered-occurrence reindexing and final
-logarithmic-weight absorption. The exact replica identity and weighted
-extension propagation are now proved, but this last assembly has not
-yet been checked. T22.7 remains in progress and main 6.4 remains open.
-No new unproved literature assumption, axiom, Paper C port or Palomar
-submission is used.
+`InfiniteColoredSamples` constructs the actual product probability space
+of one common infinite prime-sign sample and independent infinite samples
+per color. `map_restrict` proves its finite cylinder pushforward law.
+`InfiniteColoredCylinder` identifies every actual finite joint event
+probability with the constructed uniform finite weights.
+
+`InfiniteColoredBits` defines the shared-small/colored-large prime bits
+at the original infinite prime coordinates and proves the exact window
+restriction identity. `InfiniteColoredConditional` defines the literal
+source/target conditional probability as the ratio of actual infinite
+colored event probabilities. It is identified with the finite affine
+conditional ratio. Its pointwise homogeneous domination also proves the
+actual infinite-model version of P1-MATH-0070.
+
+`InfiniteColoredConditionalSum.companion_T22_7` is the full source
+conditional-sum assertion, uniformly in Y and the coloring. The common
+small signs are averaged in the constructed product law. Source centers
+and target prescriptions can repeat; source centers are included among
+the targets. There is no division by a null source probability: the sum
+assertion has the literal positive-source-mass premise of conditioning
+on compatible source events.
+
+## Complete positive random-sum moments
+
+`ReplicaPositiveSum` defines the actual positive finite replica sum and
+proves the exact first moment and every integer moment expansion. Each
+product of block probabilities is realized by a separate independent
+color copy per replica. `ReplicaTupleIndex` injectively flattens every
+ordered replica occurrence array into a literal extension of its first
+tuple; the initial tuple and every coordinate are identified exactly.
+Repeated centers are kept as separate formal occurrence coordinates.
+
+`ReplicaWordColors` identifies the actual flattened joint mass and its
+seed mass; adding unused colors does not change the latter. The positive
+weight cover retains w of the first tuple and bounds only the remaining
+q weights by W^q at moment order q+1. No lower bound for the first moment
+is used. Zero weights, empty families and incompatible seeds are included.
+The already proved weighted colored extension propagation supplies the
+subpower factor. Fixed logarithmic powers in W^q are then absorbed with
+an explicit epsilon split before all varying data.
+
+`InfiniteReplicaPositiveSum` transports the actual conditional random
+sum and every moment to this finite expansion, using equality almost
+everywhere of ordinary measure-theoretic conditional expectations.
+`AllReplicaMoments.companion_T22_7_moment` proves the full estimate for
+every fixed positive integer moment order and every fixed tuple length,
+including zero. The zero-length tuple case is handled explicitly: its
+index family contains at most one tuple and the random sum is constant.
+
+`RunReplicaSums` identifies each block and sum with the original run-start
+events for positive length. `RegularReplicaFormula.companion_T22_7`
+proves the printed p^r identity on the actual regular set, using the
+proved square-class/row-rank equivalence. It is separate from the exact
+heterogeneous-marginal formula valid without regularity.
+`ReplicaRunMoment.companion_T22_7` is the complete original-run moment
+conclusion for arbitrary ordered dyadic tuple subfamilies and nonnegative
+deterministic weights bounded by D*(log N)^A0. One threshold precedes N,
+L, Y, the color type and coloring, the tuple family and all its weights.
+The constants may depend on the fixed tuple length, moment order,
+critical-band bound, logarithmic weight bound and epsilon. In fact the
+final bounds have multiplicative constant one after increasing the
+threshold.
+
+All three T22.7 assertions are complete. The actual p^r formula retains
+its regular-window scope; the general version uses exact heterogeneous
+marginals and the effective relative kernel. These conclusions do not
+supply the full pair profile or main 6.4 moment expansion. No conditional
+sum, moment estimate, uniform-law assertion, first-moment bound, new
+external theorem or new Paper C source is assumed. Palomar remains a
+later milestone after complete coverage of both documents.

@@ -4,12 +4,12 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 71 / 167 numbered results proved.**
-The replica formula is proved for actual infinite conditional expectations
-and exact heterogeneous marginals. Colored extension propagation retains
-arbitrary nonnegative seed weights. T22.7 remains in progress for its final
-positive random-sum moment assembly. See
-[the current replica scope](docs/COLORED_REPLICAS_ALIGNMENT.md).
+**Status: active formalization, 72 / 167 numbered results proved.**
+Companion T22.7 is complete: the actual infinite replica formula, the
+uniform colored conditional target sum and every fixed positive weighted
+replica moment are proved. Repeated centers and arbitrary ordered tuple
+subfamilies are included. See
+[the complete replica alignment](docs/COLORED_REPLICAS_ALIGNMENT.md).
 Main Proposition 6.3 is complete: actual conditional affine sums,
 ordered-distinct extension-family propagation, and the full fixed-order
 local-defect/contact mass bound are proved on the original infinite model.
