@@ -1607,3 +1607,7 @@ public import PaperP1.Asymptotics.FixedRationalTripleProbability
 public import PaperP1.Asymptotics.FixedRationalTripleMass
 public import PaperP1.Asymptotics.RationalTripleEvenSharpMass
 public import PaperP1.Asymptotics.FixedRationalTripleSharpMass
+public import PaperP1.Arithmetic.IntervalDivisibilityCount
+public import PaperP1.Arithmetic.RationalDivisibilityFilters
+public import PaperP1.Arithmetic.AffineRationalTripleUnionRank
+public import PaperP1.Asymptotics.AffineRationalTripleEvenProbability

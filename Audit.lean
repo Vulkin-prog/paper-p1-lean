@@ -1268,6 +1268,10 @@ import PaperP1
 #print axioms PaperP1.ActualSourceTranslations.leading_coefficients
 #print axioms PaperP1.ActualSourceTranslations.symmetric_card_error
 #print axioms PaperP1.ActualSourceTranslations.simple_errors
+#print axioms PaperP1.AffineRationalTripleUnionRank.union_three
+#print axioms PaperP1.AffineRationalTripleUnionRank.union_loss_bound
+#print axioms PaperP1.AffineRationalTripleUnionRank.extremal_union_rank
+#print axioms PaperP1.AffineRationalTripleUnionRank.nonextremal_union_rank
 #print axioms PaperP1.AffineResidueClasses.exists_solution
 #print axioms PaperP1.AffineResidueClasses.affine_iff_modEq
 #print axioms PaperP1.AffineResidueClasses.solutions_eq_residue
@@ -2021,6 +2025,11 @@ import PaperP1
 #print axioms PaperP1.Channels.card_Ico_modEq_cast_le_div_add_one
 #print axioms PaperP1.Channels.card_nat_Ico_modEq_cast_le_div_add_one
 #print axioms PaperP1.Channels.card_product_Ico_modEq_cast_le
+#print axioms PaperP1.IntervalDivisibilityCount.values_Ioc
+#print axioms PaperP1.IntervalDivisibilityCount.count_add_div
+#print axioms PaperP1.IntervalDivisibilityCount.count_bounds
+#print axioms PaperP1.IntervalDivisibilityCount.hits_inter
+#print axioms PaperP1.IntervalDivisibilityCount.union_bound
 #print axioms PaperP1.IntervalResidualKernel.mem_largeKernel_iff
 #print axioms PaperP1.IntervalResidualKernel.coefficient_zero
 #print axioms PaperP1.IntervalResidualKernel.restriction_injective
@@ -2676,6 +2685,13 @@ import PaperP1
 #print axioms PaperP1.RankinSmallKernel.countConstant_pos
 #print axioms PaperP1.RankinSmallKernel.main_7_1_explicit
 #print axioms PaperP1.RankinSmallKernel.main_7_1
+#print axioms PaperP1.RationalDivisibilityFilters.reduced_pos
+#print axioms PaperP1.RationalDivisibilityFilters.reduced_dvd_iff
+#print axioms PaperP1.RationalDivisibilityFilters.reduced_lcm
+#print axioms PaperP1.RationalDivisibilityFilters.reduced_ratio
+#print axioms PaperP1.RationalDivisibilityFilters.normalized_dvd
+#print axioms PaperP1.RationalDivisibilityFilters.intersection_union_subset
+#print axioms PaperP1.RationalDivisibilityFilters.intersection_union_bound
 #print axioms PaperP1.RationalTripleDensity.pairDensity_comm
 #print axioms PaperP1.RationalTripleDensity.density_swap
 #print axioms PaperP1.RationalTripleDensity.density_cycle
@@ -3366,6 +3382,8 @@ import PaperP1
 #print axioms PaperP1.AdjacentReferencePhase.uniform_relative
 #print axioms PaperP1.AdjacentReferencePhase.uniform_ratio
 #print axioms PaperP1.AdjacentReferencePhase.uniform_probability_gap
+#print axioms PaperP1.AffineRationalTripleEvenProbability.uniform_point_bound
+#print axioms PaperP1.AffineRationalTripleEvenProbability.nonextremal_point_bound
 #print axioms PaperP1.AlignedActivityPower.uniform_bound
 #print axioms PaperP1.AlignedPairRank.units_residual_bound
 #print axioms PaperP1.AlignedPairRank.channel_bound
