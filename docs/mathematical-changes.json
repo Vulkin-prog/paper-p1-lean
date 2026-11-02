@@ -6122,6 +6122,54 @@
         "status": "not_integrated"
       },
       "validation_commit": "f0af304b226b3ba4b23ed2678f06efc8b6463f83"
+    },
+    {
+      "id": "P1-MATH-0102",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:twokernel",
+        "number": "T1.5",
+        "page": 9,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 360,
+        "statement_sha256": "bb1695001b6698be23b183ea4794053283d9baed656240adcaf51b682b72ff50"
+      },
+      "original_assumption": "Companion T1.5 derives its full upper exponent max(beta,7/12) through the uniform Reuss determinant estimate after an elementary congruence count in dyadic square-part boxes. It states sharpness for 7/12<=beta<1.",
+      "finding": "A separate unconditional upper estimate G2(N,T)<=(T+N^(2/3))*N^epsilon holds uniformly in every real T>=0 and every logarithmically bounded prime cutoff and polylogarithmically bounded length. Finite weighted congruence fibres and an actual product-cap split prove it without the determinant estimate. With the proved lower bound it yields the complete sharp exponent for 2/3<=beta<1.",
+      "evidence": [
+        "PaperP1.ReciprocalSquareTail.interval_bound",
+        "PaperP1.ReciprocalSquareTail.finite_bound",
+        "PaperP1.ReciprocalSquareTail.product_bound",
+        "PaperP1.ReciprocalSquareTail.weighted_product_bound",
+        "PaperP1.ShiftedDivisibilityCount.uniform_finite",
+        "PaperP1.SquareDivisibilityFibres.finite_count",
+        "PaperP1.TwoSmallKernelSquareParts.decomposition",
+        "PaperP1.TwoSmallKernelSquareParts.square_part_le",
+        "PaperP1.TwoSmallKernelSquareParts.fixed_smooth_parts",
+        "PaperP1.TwoSmallKernelSquareParts.product_square_budget",
+        "PaperP1.TwoSmallKernelSquareParts.large_square_product",
+        "PaperP1.TwoSmallKernelSmallSquares.uniform_count",
+        "PaperP1.TwoSmallKernelElementaryUpper.squareCut_data",
+        "PaperP1.TwoSmallKernelElementaryUpper.uniform_count",
+        "PaperP1.TwoSmallKernelWindowCover.ordered_values",
+        "PaperP1.TwoSmallKernelWindowCover.witness",
+        "PaperP1.TwoSmallKernelWindowCover.translated_injective",
+        "PaperP1.TwoSmallKernelWindowCover.translated_heights",
+        "PaperP1.TwoSmallKernelWindowUpper.uniform_budget",
+        "PaperP1.TwoSmallKernelWindowUpper.critical_budget",
+        "PaperP1.TwoSmallKernelWindowUpper.critical_upper",
+        "PaperP1.TwoSmallKernelWindowUpper.critical_sharp"
+      ],
+      "proposed_revision": "Record the elementary uniform threshold bound separately, with the finite reciprocal-square and shifted-divisibility estimates. State the sharpness subregime 2/3<=beta<1 independently of the stronger Reuss-based theorem, and preserve the latter for the remaining range.",
+      "impact": "Strengthens uniform threshold scope and separates a complete unconditional sharpness subregime from the deeper determinant argument. Does not prove the full source exponent for beta<2/3 and does not change numbered-result coverage. No manuscript conclusion error is asserted.",
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11311 jobs), actual Audit.lean kernel-axiom audit (7674 declarations; only propext, Classical.choice, Quot.sound), all 5391 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.50 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

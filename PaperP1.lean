@@ -1666,3 +1666,11 @@ public import PaperP1.Asymptotics.PrincipalEdgeProbability
 public import PaperP1.Asymptotics.CoupledPrincipalProductMass
 public import PaperP1.Model.ActiveFamilySecondMoment
 public import PaperP1.Asymptotics.PrincipalEdgeSecondMomentLower
+public import PaperP1.Analysis.ReciprocalSquareTail
+public import PaperP1.Arithmetic.ShiftedDivisibilityCount
+public import PaperP1.Arithmetic.SquareDivisibilityFibres
+public import PaperP1.Arithmetic.TwoSmallKernelSquareParts
+public import PaperP1.Asymptotics.TwoSmallKernelSmallSquares
+public import PaperP1.Asymptotics.TwoSmallKernelElementaryUpper
+public import PaperP1.Arithmetic.TwoSmallKernelWindowCover
+public import PaperP1.Asymptotics.TwoSmallKernelWindowUpper
