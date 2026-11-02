@@ -3514,3 +3514,8 @@ The finite conversion of main15.1 holds with C_M=16exp(2M) for the full probabil
 ## P1-MATH-0085: signed irregular-window counts determine the mean bias
 
 The actual finite integer identity is proved without a critical-band premise. In the uniform critical range, zero-marginal and double-marginal windows partition the irregular set, giving M=2*#double-#irregular and identical parity. Odd irregular cardinality forces a nonzero mean bias at that scale; no infinitely-many-scales assertion follows. The actual quadratic references also satisfy an explicit mean-separation lower bound. True-law distance estimates remain open. Coverage77/167, confirmed findings85.
+
+
+## Actual Hermite reference and its uniform finite comparison
+
+The actual law U+2V is constructed from independent Poisson variables of means mu-alpha andalpha/2. Its factorization and ordinary l1 comparison with Q(mu,alpha) are proved with error4alpha^2 exp(2alpha), plus a finite TV transfer for arbitrary probability laws. Its actual mean and every real exponential moment are proved as integrable Bochner quantities. General natural jump sizes are included in the probability construction. Arithmetic parameter admissibility and source count-law rates remain open; main19.1 is in progress. No new finding; coverage77/167, confirmed findings85.

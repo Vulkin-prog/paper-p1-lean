@@ -1190,3 +1190,13 @@ public import PaperP1.Model.MeanBiasQuantization
 public import PaperP1.Model.MeanBiasClassification
 
 public import PaperP1.Probability.PoissonReferenceSeparation
+
+public import PaperP1.Probability.JumpPoissonSeries
+
+public import PaperP1.Probability.CompoundPoissonSeries
+
+public import PaperP1.Probability.HermiteReference
+
+public import PaperP1.Probability.CompoundPoissonExponential
+
+public import PaperP1.Probability.CompoundPoissonMoments

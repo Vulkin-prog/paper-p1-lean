@@ -3110,3 +3110,67 @@ No new external mathematical input, BCN premise, Paper C port,
 dependency download, manuscript-byte change or Palomar registration.
 
 The prior actual affine mass formula, local square-class rank theorem, finite Bochner mean identity, critical nominal lower bound and exact quadratic Poisson singleton masses supply every model input. Integer casts, parity, finite partitions and exponential inequalities use the pinned Mathlib. No external estimate or nonzero-scale hypothesis is assumed.
+
+
+## Actual Hermite probability and the quadratic signed-reference comparison
+
+Stable ID: `P1-PROB-HERMITE-ACTUAL-REFERENCE`. Status: **proved probabilistic and finite analytic step**; main19.1 remains in progress.
+
+The actual probabilistic and analytic reference step of main19.1
+is now proved. General jump-Poisson exponentials exp(b*(delta_j-delta_0))
+have absolutely convergent series of actual atomic masses. Their
+singleton coefficients are proved to be the pushforward of the actual
+Poisson masses by n->j*n, for every naturalj including0. They define
+actual probability measures for b>=0 and have completion norm exactly1.
+The ordinary Poisson exponential consequently has norm exactly1 too.
+
+The general compound reference pi_a*jumpPoisson(j,b) is proved equal
+to the actual law of U+jV, where U,V are the coordinate maps on the
+actual product of Poisson measures of meansa,b. Both coordinate laws,
+their independence, every actual product singleton and the full
+pushforward count law are proved. All series products, coefficient
+transport, normalization and infinite tails are justified; none is
+supplied as an input.
+
+For0<=alpha<=mu, the Hermite reference is the actual probability law
+of U+2V with independent meansmu-alpha andalpha/2, including both zero
+parameter endpoints. Its completed reference factors exactly as
+
+    H(mu,alpha)=pi_mu*exp((alpha/2)*Delta^2).
+
+The exact source quadratic reference is identified as an actual signed
+measure, and absolute Taylor tails give the explicit bound
+
+    ||H(mu,alpha)-Q(mu,alpha)||_1<=4alpha^2 exp(2alpha).
+
+The completed algebra inequality also holds for any realalpha when
+mu>=0, with exp(2|alpha|); the probability interpretation requires
+the stated nonnegative Poisson means. No small-alpha or upper-mean
+assumption is used in this finite comparison. For every actual
+probability lawP, a proved finite transfer gives
+
+    TV(P,H)<=||P-Q||_1/2+2alpha^2 exp(2alpha).
+
+No bound for ||P-Q|| is assumed or counted as a count-law approximation.
+
+Actual exponential sums and Bochner integrals are also proved. The
+general compound law has mean a+j*b and exponential moment
+
+    exp(a*(exp(t)-1)+b*(exp(j*t)-1))
+
+for every realt. The Hermite law has actual meanmu and exponential
+moment exp(mu*(exp(t)-1)+(alpha/2)*(exp(t)-1)^2). Integrability is
+proved before using each actual Bochner integral. These properties
+concern the constructed reference, not the original run count.
+
+The actual/truncated parameter admissibility at largeN, the numerical
+law approximation, and the fixed-height hierarchy rates and leading
+equivalents in main19.1 remain open. No matching lower bound for the
+exact-parameter Hermite error is asserted. The source row is in
+progress and adds no proved numbered coverage. Coverage77/167
+(main28/73, companion49/94); confirmed findings remain85.
+No new mathematical finding, external input, BCN premise, Paper C
+port, dependency download, manuscript-byte change or Palomar
+registration is introduced.
+
+Pinned Mathlib supplies actual Poisson measures, product measures and independence, measurable pushforwards, absolute summation and the Banach exponential. Every reference coefficient, norm-one statement, actual distribution identity, explicit error, exponential moment and integrability proof is checked in the project. No reference probability, infinite-tail bound or count-law approximation is supplied as a hypothesis.
