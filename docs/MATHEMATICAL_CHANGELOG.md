@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**88 mathematical improvements are confirmed; no error in a manuscript conclusion
+**89 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -3673,3 +3673,8 @@ Actual fixed factorial-moment estimates improve both full absolute triple activi
 ## Actual retained-modified moment convergence
 
 The actual original-to-modified moment truncation inequality is proved on a common finite cylinder. Combining the real bad-event probability with the proved higher original moments gives convergence of every fixed ordinary moment under explicit BCN, uniformly over all dyadic subgrounds and every H. Actual modified-law Poisson convergence is also checked. The source numerical error rate remains open. No new numbered completion or finding: coverage 77/167, improvements 88.
+
+
+## P1-MATH-0089 — Fourth factorial-cumulant identity in a commutative ring
+
+The entire finite identity displayed in the proof of main 16.1 is proved over any commutative ring for normalized coherent centered data, and instantiated to the actual heterogeneous original count. No positivity, regularity, independence, arithmetic hypothesis or analytic logarithm is required for that identity. Every repeated-index term and zero-marginal restriction are checked. The source sharp connected-quartic estimates remain open; a weaker BCN-dependent half-power bound is proved separately. Main 16.1 is in progress. Coverage 77/167; confirmed improvements 89.

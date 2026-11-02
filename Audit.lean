@@ -508,6 +508,12 @@ import PaperP1
 #print axioms PaperP1.BivariateWordSquares.wordPolynomial_not_square_right
 #print axioms PaperP1.BivariateWordSquares.wordPolynomial_not_square
 #print axioms PaperP1.BivariateWordSquares.wordFunction_not_square
+#print axioms PaperP1.CenteredCardConvolution.convolution
+#print axioms PaperP1.CenteredCardConvolution.zero_layer
+#print axioms PaperP1.CenteredCardConvolution.one_layer
+#print axioms PaperP1.CenteredCardConvolution.two
+#print axioms PaperP1.CenteredCardConvolution.three
+#print axioms PaperP1.CenteredCardConvolution.four
 #print axioms PaperP1.Algebra.centeredCoefficient_empty
 #print axioms PaperP1.Algebra.centeredCoefficient_singleton
 #print axioms PaperP1.Algebra.centeredCoefficient_singleton_eq_zero
@@ -662,6 +668,12 @@ import PaperP1
 #print axioms PaperP1.FormalWordPolynomials.rationalize_linear
 #print axioms PaperP1.FormalWordPolynomials.rationalize_word
 #print axioms PaperP1.FormalWordPolynomials.integer_word_ne_zero
+#print axioms PaperP1.FourthFactorialCumulant.independent_quartic
+#print axioms PaperP1.FourthFactorialCumulant.pair_deletion
+#print axioms PaperP1.FourthFactorialCumulant.weighted_pair_deletion
+#print axioms PaperP1.FourthFactorialCumulant.weighted_complement
+#print axioms PaperP1.FourthFactorialCumulant.pairSquare_eq
+#print axioms PaperP1.FourthFactorialCumulant.exact_formula
 #print axioms PaperP1.GreedyShortKernel.mono
 #print axioms PaperP1.GreedyShortKernel.independent_family
 #print axioms PaperP1.GreedyShortKernel.sparse_subspace_basis
@@ -3253,6 +3265,7 @@ import PaperP1
 #print axioms PaperP1.CoarseFixedFactorialMomentsUnderBCN.uniform_power_mean_bias
 #print axioms PaperP1.CoarseFixedFactorialMomentsUnderBCN.uniform_nominal_error
 #print axioms PaperP1.CoarseFixedFactorialMomentsUnderBCN.uniform_actual_error
+#print axioms PaperP1.CoarseFourthCumulantUnderBCN.uniform_bound
 #print axioms PaperP1.CoarseIncompatibleTripleUnderBCN.uniform_deficit
 #print axioms PaperP1.CoarseIncompatibleTripleUnderBCN.uniform_incompatible
 #print axioms PaperP1.CoarseIncompatibleTripleUnderBCN.uniform_activity_comparison
@@ -4354,6 +4367,7 @@ import PaperP1
 #print axioms PaperP1.DisjointColumnWeights.light_add_heavy
 #print axioms PaperP1.DisjointColumnWeights.retained_card_lower
 #print axioms PaperP1.DisjointColumnWeights.retained_card_real
+#print axioms PaperP1.DisjointSubsetIncidence.split_sum
 #print axioms PaperP1.ExposureOrder.total_newWeight
 #print axioms PaperP1.ExposureOrder.newWeight_last_zero
 #print axioms PaperP1.ExposureOrder.exposure_identity
@@ -5080,6 +5094,9 @@ import PaperP1
 #print axioms PaperP1.Model.dyadic_marginal_reference_isProbability
 #print axioms PaperP1.FiniteSplitLp.finiteSum_restrict
 #print axioms PaperP1.FiniteSplitLp.moment_root_eq_lpNorm
+#print axioms PaperP1.FourthRunFactorialCumulant.eq_subset_data
+#print axioms PaperP1.FourthRunFactorialCumulant.exact_formula
+#print axioms PaperP1.FourthRunFactorialCumulant.zero_marginal_restriction
 #print axioms PaperP1.FreeComponentRank.intersection_le_components_add_defects
 #print axioms PaperP1.FreeComponentRank.components_le_intersection_add_cost
 #print axioms PaperP1.FreeComponentRank.component_intersection_abs_bound

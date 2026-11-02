@@ -4819,6 +4819,49 @@
         }
       ],
       "validation_commit": "24427d676728c4d08241773a1787034c02e8ea36"
+    },
+    {
+      "id": "P1-MATH-0089",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:lower:quartic",
+        "number": "16.1",
+        "page": 50,
+        "source": "main_sections/quartic_lower.tex",
+        "line": 28,
+        "statement_sha256": "2bd4adbc6f85cc75b2c8c0910ab4f30c43f939e40c365eee2d5fb2aae71a4fda"
+      },
+      "original_assumption": "The finite fourth-factorial-cumulant identity is displayed in the proof of main 16.1 for the actual run count with real heterogeneous marginal probabilities.",
+      "finding": "The complete displayed identity, with every repeated-index term, holds over any commutative ring for coherent finite joint and centered data with centered empty coefficient one and zero singleton coefficients. Exact disjoint-subset incidence, cardinality convolution and finite pair deletion prove it without probability positivity, independence, regularity, arithmetic or an analytic logarithm. The actual infinite-model coherence and all original-count terms are instantiated and checked.",
+      "evidence": [
+        "PaperP1.DisjointSubsetIncidence.split_sum",
+        "PaperP1.CenteredCardConvolution.convolution",
+        "PaperP1.CenteredCardConvolution.zero_layer",
+        "PaperP1.CenteredCardConvolution.one_layer",
+        "PaperP1.CenteredCardConvolution.two",
+        "PaperP1.CenteredCardConvolution.three",
+        "PaperP1.CenteredCardConvolution.four",
+        "PaperP1.FourthFactorialCumulant.independent_quartic",
+        "PaperP1.FourthFactorialCumulant.pair_deletion",
+        "PaperP1.FourthFactorialCumulant.weighted_pair_deletion",
+        "PaperP1.FourthFactorialCumulant.weighted_complement",
+        "PaperP1.FourthFactorialCumulant.pairSquare_eq",
+        "PaperP1.FourthFactorialCumulant.exact_formula",
+        "PaperP1.FourthRunFactorialCumulant.eq_subset_data",
+        "PaperP1.FourthRunFactorialCumulant.exact_formula",
+        "PaperP1.FourthRunFactorialCumulant.zero_marginal_restriction",
+        "PaperP1.CoarseFourthCumulantUnderBCN.uniform_bound"
+      ],
+      "proposed_revision": "State the exact finite quartic identity as a separate commutative-ring lemma for normalized coherent centered data, then specialize it to the actual original count before applying the separate connected, incompatible and repeated-edge estimates.",
+      "impact": "Generalizes only the finite identity used in the proof of main 16.1 and makes every repeated-index correction explicit. It does not prove or change the source exponent 3/2, connected-quartic comparison, positive quartic lower bound or optimal law-approximation rate. Main 16.1 remains in progress.",
+      "validation": "Verified Lean v4.36.0-rc2 full build (10827 jobs), actual Audit.lean kernel audit (6699 declarations; only propext, Classical.choice, Quot.sound), 4416 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.42 GiB. Exact disjoint-subset incidence, all-order centered cardinality convolution and the complete heterogeneous quartic identity hold over a commutative ring. The original infinite-model specialization and zero-marginal restriction are proved unconditionally. The separate half-power fourth-cumulant decay uses the existing ordinary explicit BCN premise. Source sharp connected-quartic comparisons remain open. Main 16.1 and 6.4 stay in progress. Confirmed improvement P1-MATH-0089 concerns only the generalized finite identity. Coverage 77/167; improvements 89.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
