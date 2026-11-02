@@ -2436,3 +2436,53 @@ confirmed findings77. No additional external estimate, Paper C source,
 manuscript-byte change or Palomar registration is introduced.
 
 Pinned Mathlib finite-set induction, `LinearIndependent.finCons`, actual span bases, injective submodule equivalences and finite-function/Finsupp linear equivalences are used with their actual hypotheses. The source BFS/Moore estimate is not assumed as a proved library theorem.
+
+
+## Actual labelled-incidence Moore bound and finite short basis
+
+Stable ID: `P1-COMB-ACTUAL-SHORT-INCIDENCE`. Status: **proved finite construction**.
+
+`LabelledEdgeCore` proves actual pruning by finite-set induction, with
+an exact edge-deletion budget. If e>2d*n, a nonempty actual vertex set
+retains incident degree at least2d. Edge labels are preserved, including
+loops and parallel edges. An exact double count bounds the sum of
+incident degrees on a set by twice its number of touching edge labels.
+
+`ShortIncidenceRoutes` represents a vertex by an actual bounded-support
+edge vector with boundary delta(root)+delta(vertex). Adding an actual
+edge extends the route. In the absence of kernel vectors of support
+at most2r+1, every actual edge with both endpoints in the radius-r ball
+is exactly the difference of its actual endpoint route vectors. Actual
+independent single-edge coordinates in their actual finite span give
+#insideEdges<=#ball. No forest or BFS-rank estimate is assumed.
+
+`IncidenceBallGrowth` constructs the actual finite route balls. The
+proved rank and incidence bounds give d*#ball(r)<=#ball(r+1) in a core
+of incident degree>=2d. Hence #ball(r)>=d^r. Comparing with the actual
+vertex set proves the finite Moore-type statement
+
+    e>2d*n and n<d^r => an actual nonzero incidence-kernel vector
+                         of support<=2r+1 within these edge labels.
+
+This proof treats labelled incidence maps directly; no simple-graph
+conversion, girth result or external short-cycle theorem is a premise.
+
+`ShortBasisFiniteConstruction` applies this bound to the actual
+retained components, actual medium-prime equations and constructed
+incidence endpoints. The proved injective augmentation transports the
+actual kernel vector back to the actual medium-prime map. With
+n=#mediumPrimes+1 and n<d^r, the actual constructed complete-relation
+image has
+
+    dimension >= #retained - 2d*n - (pi(z)+2),
+    basis physical support <= M*(2r+1)*(pi(z)+3).
+
+Both physical projections and the actual common square-class map are
+injective. The earlier local short-vector hypothesis is now discharged
+in this finite construction. The remaining obligations for full13.1
+are the numerical choice of d,r and the source logarithmic estimates
+and asymptotic assembly. Coverage75/167, confirmed findings77; no new
+source-conclusion error, optimized bound, Paper C source, manuscript-
+byte change or Palomar registration is claimed.
+
+Pinned Mathlib finite-set induction, exact finite sums, independent single-coordinate families, finite-span dimensions and the already proved actual sparse final cut supply all steps. No external graph-theoretic proposition or numeric power bound is silently assumed.

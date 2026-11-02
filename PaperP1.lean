@@ -1072,3 +1072,11 @@ public import PaperP1.Algebra.BinaryIncidenceShortVectors
 public import PaperP1.Arithmetic.ComponentSelectionSupport
 
 public import PaperP1.Arithmetic.ShortBasisCycleReduction
+
+public import PaperP1.Combinatorics.LabelledEdgeCore
+
+public import PaperP1.Algebra.ShortIncidenceRoutes
+
+public import PaperP1.Combinatorics.IncidenceBallGrowth
+
+public import PaperP1.Arithmetic.ShortBasisFiniteConstruction

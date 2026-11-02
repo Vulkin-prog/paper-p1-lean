@@ -186,14 +186,59 @@ Final source asymptotic assembly also remains open. Coverage75/167,
 confirmed findings77. No additional external estimate, Paper C source,
 manuscript-byte change or Palomar registration is introduced.
 
+## Actual labelled incidence growth and finite extraction
+
+`LabelledEdgeCore` proves actual pruning by finite-set induction, with
+an exact edge-deletion budget. If e>2d*n, a nonempty actual vertex set
+retains incident degree at least2d. Edge labels are preserved, including
+loops and parallel edges. An exact double count bounds the sum of
+incident degrees on a set by twice its number of touching edge labels.
+
+`ShortIncidenceRoutes` represents a vertex by an actual bounded-support
+edge vector with boundary delta(root)+delta(vertex). Adding an actual
+edge extends the route. In the absence of kernel vectors of support
+at most2r+1, every actual edge with both endpoints in the radius-r ball
+is exactly the difference of its actual endpoint route vectors. Actual
+independent single-edge coordinates in their actual finite span give
+#insideEdges<=#ball. No forest or BFS-rank estimate is assumed.
+
+`IncidenceBallGrowth` constructs the actual finite route balls. The
+proved rank and incidence bounds give d*#ball(r)<=#ball(r+1) in a core
+of incident degree>=2d. Hence #ball(r)>=d^r. Comparing with the actual
+vertex set proves the finite Moore-type statement
+
+    e>2d*n and n<d^r => an actual nonzero incidence-kernel vector
+                         of support<=2r+1 within these edge labels.
+
+This proof treats labelled incidence maps directly; no simple-graph
+conversion, girth result or external short-cycle theorem is a premise.
+
+`ShortBasisFiniteConstruction` applies this bound to the actual
+retained components, actual medium-prime equations and constructed
+incidence endpoints. The proved injective augmentation transports the
+actual kernel vector back to the actual medium-prime map. With
+n=#mediumPrimes+1 and n<d^r, the actual constructed complete-relation
+image has
+
+    dimension >= #retained - 2d*n - (pi(z)+2),
+    basis physical support <= M*(2r+1)*(pi(z)+3).
+
+Both physical projections and the actual common square-class map are
+injective. The earlier local short-vector hypothesis is now discharged
+in this finite construction. The remaining obligations for full13.1
+are the numerical choice of d,r and the source logarithmic estimates
+and asymptotic assembly. Coverage75/167, confirmed findings77; no new
+source-conclusion error, optimized bound, Paper C source, manuscript-
+byte change or Palomar registration is claimed.
+
 ## Remaining obligations
 
-The simple-graph local short-cycle existence bound with the required
-length and residual-edge estimates, and the full source asymptotic
-short-basis assembly remain open. The local hypothesis of
-`complete_space_from_short_vectors` is explicit. Article13.1 remains
-in progress; no preparation or conditional reduction adds coverage.
+The finite short-vector existence bound and the actual finite complete-
+relation construction are proved. Full13.1 still requires choosing the
+branching and radius parameters and proving the source logarithmic
+length, residual-dimension and support estimates. Article13.1 remains
+in progress; the finite construction does not add numbered coverage.
 
 ## Validation
 
-Lean v4.36.0-rc2 full build passed (10503 jobs); actual axiom audit passed for all 5821 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3536 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.97 GiB. Actual witness-coordinate deletion constructs an independent short-kernel family and its actual basis. Loops, unordered parallel columns and the finite incidence correspondence are proved. Actual component unit-selection supports are their actual physical vertex sets. Under the explicit local short-vector hypothesis, the actual final complete-relation image has dimension at least #retained-r-(pi(z)+2), a basis of physical support at most M*k*(pi(z)+3), and injective physical and square-class maps. The local short-vector hypothesis with the source logarithmic length and residual-edge bounds remains open; article13.1 stays in progress. Coverage75/167 (main27/73, companion48/94); findings77. No unproved short-cycle estimate is counted as a completed numbered result. No new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.
+Lean v4.36.0-rc2 full build passed (10511 jobs); actual axiom audit passed for all 5855 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3570 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.96 GiB. Actual labelled vertex pruning, exact incidence double counting, bounded edge-vector routes and their actual finite span rank prove a finite Moore bound internally: e>2d*n and n<d^r force an actual nonzero incidence kernel vector of support<=2r+1. Applying it to actual retained components and actual medium-prime columns discharges the earlier local short-vector hypothesis. The actual complete-relation construction has dimension>=#retained-2d*n-(pi(z)+2), basis physical support<=M*(2r+1)*(pi(z)+3), and injective physical and square-class maps. Numerical logarithmic parameter choices and full source asymptotic assembly remain open; article13.1 stays in progress. Coverage75/167 (main27/73, companion48/94); findings77. No unproved graph, BFS, girth, rank or cycle-length estimate, additional Paper C source, manuscript-byte change or Palomar registration.

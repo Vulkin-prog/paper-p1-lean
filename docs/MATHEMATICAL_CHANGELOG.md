@@ -3439,3 +3439,8 @@ open. Coverage75/167 and confirmed findings77 are unchanged.
 ## Constructed witness-edge independence and finite complete-relation reduction
 
 The source deletion argument is now proved with actual witness coordinates and actual basis extraction. Its final relation-space assembly has the explicit constants #retained-r-(pi(z)+2) and M*k*(pi(z)+3), under the clearly exposed local short-vector hypothesis. Loops and parallel columns are fully discharged. This verifies the source finite construction without a new correction or an optimized bound. The simple-graph logarithmic length estimate and full asymptotic assembly remain open; coverage75/167 and confirmed findings77 are unchanged.
+
+
+## Direct finite incidence growth closes the short-vector existence input
+
+The source Moore/BFS step now has a direct proof using actual bounded edge-vector routes and their actual span rank. It preserves all labelled edges and proves explicit constants e>2d*n, n<d^r and support<=2r+1. Combined with actual witness deletion and final prime/parity constraints, the finite complete-relation construction loses at most2d*n+pi(z)+2 dimensions and has basis physical support<=M*(2r+1)*(pi(z)+3). This verifies the finite source argument without an external short-cycle hypothesis. Numerical logarithmic choices and full source asymptotic assembly remain open. No new correction or optimized constant is claimed; coverage75/167 and confirmed findings77 are unchanged.
