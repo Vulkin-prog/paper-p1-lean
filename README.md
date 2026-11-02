@@ -426,3 +426,8 @@ excluded from that grant and retains its original authorship and terms; no new
 manuscript licence is inferred. The source package records its original AI
 assistance. Repository setup and initial development are agent-assisted;
 compilation and source checks are distinct from independent human review.
+
+The exact incompatible-triple reduction now uses one copy of the actual
+pair/target deficit, with its full effective-space support and exact incidence
+bijection proved. The arithmetic bound for this deficit remains open. See
+[triple activity alignment](docs/TRIPLE_ACTIVITIES_ALIGNMENT.md).

@@ -860,3 +860,9 @@ public import PaperP1.Model.CompatibleActivitySplit
 public import PaperP1.Model.CompatibleRunCentered
 public import PaperP1.Model.InfiniteTripleCancellation
 public import PaperP1.Model.TripleActivityConnected
+
+public import PaperP1.Affine.RelationCoordinateSpan
+public import PaperP1.Combinatorics.TriplePairIncidence
+public import PaperP1.Model.CenteredDependenceSupport
+public import PaperP1.Model.IndependentTargetDeficit
+public import PaperP1.Asymptotics.IncompatibleTripleReduction

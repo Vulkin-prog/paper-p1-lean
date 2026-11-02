@@ -3723,6 +3723,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "8bcb46b63f336099f9f13a5ad62df52a32c22bf5"
+    },
+    {
+      "id": "P1-MATH-0072",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:activity:incompatible",
+        "number": "11.2",
+        "page": 28,
+        "source": "main_sections/triple_activities.tex",
+        "line": 33,
+        "statement_sha256": "476a44444d74bac001c4065d93fbb6386a1b8ae6f29a1fbf1ea59fd75aab99d3"
+      },
+      "original_assumption": "The proof of main Theorem 11.2 bounds the pair terms of incompatible connected triples by three copies of D_(2,1).",
+      "finding": "One copy of the literal pair-activity/independent-target deficit suffices. The correspondence between (triple T, distinguished target z) and (pair T without z, z) is injective and covers the full unrestricted incidence population exactly. For the actual nonzero incompatible population, every remaining target has a nontrivial effective intersection and every nonzero pair coefficient has positive relative pair rank. All exact heterogeneous probabilities and both coefficient signs are retained.",
+      "evidence": [
+        "PaperP1.TriplePairIncidence.erased_sum",
+        "PaperP1.TriplePairIncidence.restricted_erased_sum_le",
+        "PaperP1.CenteredDependenceSupport.exists_full_support",
+        "PaperP1.CenteredDependenceSupport.every_target",
+        "PaperP1.CenteredDependenceSupport.nullity_pos",
+        "PaperP1.CenteredDependenceSupport.inserted_target",
+        "PaperP1.IndependentTargetDeficit.pair_rank",
+        "PaperP1.IndependentTargetDeficit.target_pair",
+        "PaperP1.IndependentTargetDeficit.nonneg",
+        "PaperP1.IndependentTargetDeficit.incidence_formula",
+        "PaperP1.IncompatibleTripleReduction.pair_cost",
+        "PaperP1.IncompatibleTripleReduction.finite_bound",
+        "PaperP1.IncompatibleTripleReduction.reduced_bound"
+      ],
+      "proposed_revision": "Replace the three-copy comparison in the proof of main 11.2 by the exact distinguished-target incidence sum and bound it by D_(2,1). The finite bound is incompatible absolute activity <= independent mass of nonzero incompatible triples + D_(2,1). State explicitly that nonzero activity supplies a full-support effective relation, which proves the target intersection at every finite order.",
+      "impact": "Sharpens only the finite proof constant and supplies precise incidence justification. It does not change an asymptotic exponent or prove the arithmetic estimate for D_(2,1). Main 11.1, 11.2 and 11.3 remain in progress and numbered coverage remains 72/167.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10153 jobs); actual axiom audit passed for all 5161 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2876 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.35 GiB. The literal pair/target deficit, its physical effective-space alignment and the exact all-order incidence bijection are proved. Actual nonzero centered coefficients meet every complementary span. The actual incompatible triple activity is at most its independent active mass plus ONE copy of D_(2,1); the independent mass has the complete N^(-3/2+epsilon) decay. The uniform arithmetic D_(2,1) estimate and third factorial-cumulant correction assembly remain open. Main 11.1, 11.2 and 11.3 stay in progress. Coverage remains 72/167 (main 25/73, companion 47/94); confirmed improvements are 72. No target estimate, new external theorem or Paper C source is assumed. No manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

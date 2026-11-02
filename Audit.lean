@@ -203,6 +203,10 @@ import PaperP1
 #print axioms PaperP1.Affine.uniformSolutionMass_of_compatible
 #print axioms PaperP1.Affine.uniformSolutionMass_of_not_compatible
 #print axioms PaperP1.Affine.uniformSolutionMass_pos_iff
+#print axioms PaperP1.RelationCoordinateSpan.coordinate_mem
+#print axioms PaperP1.RelationCoordinateSpan.intersection_ne_bot
+#print axioms PaperP1.RelationCoordinateSpan.otherSpace_subtype
+#print axioms PaperP1.RelationCoordinateSpan.full_support_intersection
 #print axioms PaperP1.Affine.relationAddition_restrictCoefficients
 #print axioms PaperP1.Affine.sum_restrictCoefficients
 #print axioms PaperP1.Affine.relationDirectPartition_top
@@ -2612,6 +2616,9 @@ import PaperP1
 #print axioms PaperP1.HalfCountStages.survivor_data
 #print axioms PaperP1.HalfCountStages.survivor_few_large
 #print axioms PaperP1.HalfCountStages.removed_source
+#print axioms PaperP1.IncompatibleTripleReduction.pair_cost
+#print axioms PaperP1.IncompatibleTripleReduction.finite_bound
+#print axioms PaperP1.IncompatibleTripleReduction.reduced_bound
 #print axioms PaperP1.IncompatibleTripleSeed.subset_connected
 #print axioms PaperP1.IncompatibleTripleSeed.activity_eq_active
 #print axioms PaperP1.IncompatibleTripleSeed.independent_mass
@@ -3543,6 +3550,8 @@ import PaperP1
 #print axioms PaperP1.TopProductSelection.outside_power_le
 #print axioms PaperP1.TopProductSelection.certificate_or_small_groups
 #print axioms PaperP1.TopProductSelection.real_root_bound
+#print axioms PaperP1.TriplePairIncidence.erased_sum
+#print axioms PaperP1.TriplePairIncidence.restricted_erased_sum_le
 #print axioms PaperP1.TupleExtensions.mem_step
 #print axioms PaperP1.TupleExtensions.appended_disjoint
 #print axioms PaperP1.TupleExtensions.step_sum
@@ -3820,6 +3829,10 @@ import PaperP1
 #print axioms PaperP1.Model.InfiniteStarts.canonical_run_components_finset
 #print axioms PaperP1.CanonicalSquareClasses.canonical_eq_rows
 #print axioms PaperP1.CanonicalSquareClasses.connected_iff_rows
+#print axioms PaperP1.CenteredDependenceSupport.exists_full_support
+#print axioms PaperP1.CenteredDependenceSupport.every_target
+#print axioms PaperP1.CenteredDependenceSupport.nullity_pos
+#print axioms PaperP1.CenteredDependenceSupport.inserted_target
 #print axioms PaperP1.ColoredPrimeSamples.select_diagonal
 #print axioms PaperP1.ColoredPrimeSamples.start_diagonal
 #print axioms PaperP1.ColoredPrimeSamples.relationMap_comp
@@ -3978,6 +3991,10 @@ import PaperP1
 #print axioms PaperP1.FreeComponentRank.components_le_intersection_add_cost
 #print axioms PaperP1.FreeComponentRank.component_intersection_abs_bound
 #print axioms PaperP1.FreeComponentRank.companion_T9_3
+#print axioms PaperP1.IndependentTargetDeficit.pair_rank
+#print axioms PaperP1.IndependentTargetDeficit.target_pair
+#print axioms PaperP1.IndependentTargetDeficit.nonneg
+#print axioms PaperP1.IndependentTargetDeficit.incidence_formula
 #print axioms PaperP1.InfiniteColoredBits.selected_restrict
 #print axioms PaperP1.InfiniteColoredBits.bits_restrict
 #print axioms PaperP1.InfiniteColoredConditional.source_restrict
@@ -4038,6 +4055,7 @@ import PaperP1
 #print axioms PaperP1.InfiniteTripleCancellation.normalized
 #print axioms PaperP1.InfiniteTripleCancellation.incompatible_identity
 #print axioms PaperP1.InfiniteTripleCancellation.incompatible_bound
+#print axioms PaperP1.InfiniteTripleCancellation.incompatible_set_bound
 #print axioms PaperP1.JointBranchingBudget.sum_extensions_bound
 #print axioms PaperP1.JointBranchingEvents.oldField_infinite
 #print axioms PaperP1.JointBranchingEvents.startEvent_congr

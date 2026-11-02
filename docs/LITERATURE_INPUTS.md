@@ -1904,3 +1904,17 @@ complete main 10.2 bounds its independent weight by N^(-3/2+epsilon).
 The remaining pair-activity/independent-target deficit from main 11.1
 is not assumed and is still open. The full main 11.2 is therefore not
 counted complete. No new external input or Paper C source is introduced.
+
+
+## Exact pair/target incidence reduction
+
+Stable ID: `P1-PROB-PAIR-TARGET-INCIDENCE`. Status: **proved**, finite
+reduction underlying main 11.2.
+
+An explicit erased-set/insertion bijection proves the incidence identity
+at every finite order. Actual full-support square-class relations justify
+the dependence support, and actual pair nullity equals its intersection
+rank. The resulting original infinite-model incompatible triple activity
+is at most its independent active mass plus one literal D_(2,1).
+The latter's arithmetic decay is not assumed and remains unproved.
+This introduces no new external theorem, literature input or Paper C code.

@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5143 audited theorem/lemma declarations**. This
+- The project currently has **5161 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2454,3 +2454,6 @@ in progress. Coverage stays 72/167. See
 [triple activity alignment](TRIPLE_ACTIVITIES_ALIGNMENT.md).
 
 Triple activity checkpoint verification: Lean v4.36.0-rc2 full build passed (10143 jobs); actual axiom audit passed for all 5143 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2858 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.36 GiB. Compatible centered coefficients are proved nonnegative at every finite order with exact heterogeneous marginals and an explicit full-support physical effective relation count, including original infinite run families. Exact incompatible-triple cancellation, canonical connectedness, finite activity comparisons and the actual independent N^(-3/2+epsilon) incompatible seed weight are proved. The pair/target activity deficit and third factorial-cumulant correction assembly remain open; main 11.2 and 11.3 stay in progress. Coverage remains 72/167 (main 25/73, companion 47/94); confirmed findings are 71. No activity deficit, moment bound, arithmetic count, new external input or Paper C source is assumed. No manuscript-byte change or Palomar registration.
+
+
+Triple incidence checkpoint verification: Lean v4.36.0-rc2 full build passed (10153 jobs); actual axiom audit passed for all 5161 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2876 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.35 GiB. The literal pair/target deficit, its physical effective-space alignment and the exact all-order incidence bijection are proved. Actual nonzero centered coefficients meet every complementary span. The actual incompatible triple activity is at most its independent active mass plus ONE copy of D_(2,1); the independent mass has the complete N^(-3/2+epsilon) decay. The uniform arithmetic D_(2,1) estimate and third factorial-cumulant correction assembly remain open. Main 11.1, 11.2 and 11.3 stay in progress. Coverage remains 72/167 (main 25/73, companion 47/94); confirmed improvements are 72. No target estimate, new external theorem or Paper C source is assumed. No manuscript-byte change or Palomar registration.

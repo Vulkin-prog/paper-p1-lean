@@ -2,7 +2,7 @@
 
 Sources: main Theorem 11.2 (`p13:activity:incompatible`) and Proposition
 11.3 (`p13:activity:kappa3`), `main_sections/triple_activities.tex`.
-Both numbered results are **in progress**, not counted complete.
+All three numbered results 11.1, 11.2 and 11.3 are **in progress**, not counted complete.
 Coverage remains 72/167 (main 25/73, companion 47/94).
 
 ## Positivity holds at every finite order
@@ -78,10 +78,37 @@ threshold before the length and admissible dyadic center set.
 This is the first term in the main 11.2 proof. It is an independent
 weight estimate, not the full incompatible activity estimate.
 
+## Exact pair/target deficit and incidence reduction
+
+`IndependentTargetDeficit.deficit` is the literal source D_(2,1), using
+actual infinite pair coefficients, actual heterogeneous target marginals
+and the physical effective square-class spaces. `pair_rank` identifies
+the pair nullity with dim(S_x intersection S_y); `target_pair` identifies
+the target condition with S_z intersection (S_x+S_y) nonzero.
+
+`CenteredDependenceSupport` proves that at every finite order, a nonzero
+admissible centered coefficient supplies a full-support effective relation.
+Every coordinate lies in the span of the others, so every target meets
+that span nontrivially. A nonempty nonzero coefficient also forces positive
+effective relative nullity. No assumption on connectedness is needed for
+these stronger support statements.
+
+`TriplePairIncidence.erased_sum` proves, for arbitrary r and additive
+commutative target, the exact sum identity between an (r+1)-element set
+with a distinguished member and its r-element complement with that member.
+Its restricted nonnegative form retains the actual dependence predicates.
+`IncompatibleTripleReduction.pair_cost` consequently bounds all pair terms
+of the actual active incompatible population by ONE copy of D_(2,1).
+`finite_bound` gives incompatible absolute activity <= independent active
+triple mass + D_(2,1). `reduced_bound` supplies the complete independent
+N^(-3/2+epsilon) term with a threshold before L and the admissible dyadic set.
+The improved finite constant and its incidence justification are recorded
+as P1-MATH-0072.
+
 ## Remaining obligations
 
 The actual pair-activity/independent-target deficit D_(2,1) from main
-11.1 still needs its arithmetic proof and precise incidence summation.
+11.1 still needs its arithmetic proof; the exact incidence summation is now proved.
 It is necessary to bound the remaining terms in the incompatible triple
 cancellation. The final N^(-3/2+epsilon) incompatible activity estimate
 is therefore open. Main 11.3 also needs the exact third factorial-

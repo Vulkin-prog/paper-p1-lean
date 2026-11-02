@@ -56,4 +56,14 @@ theorem incompatible_bound (L : ℕ) {x y z : ℕ} (hxy : x ≠ y) (hxz : x ≠ 
     (PaperP1.MissingBlockProbabilities.infiniteMarginal_nonneg y L)
     (PaperP1.MissingBlockProbabilities.infiniteMarginal_nonneg z L) hq
 
+theorem incompatible_set_bound (L : ℕ) (I : Finset ℕ) (hI : I.card = 3)
+    (hq : infiniteJointMoment L I = 0) :
+    |infiniteCenteredCoefficient L I| ≤ (∏ x ∈ I, infiniteMarginal x L) +
+      ∑ z ∈ I, |infiniteCenteredCoefficient L (I.erase z)| * infiniteMarginal z L := by
+  obtain ⟨x, y, z, hxy, hxz, hyz, rfl⟩ := card_eq_three.mp hI
+  have hbound := incompatible_bound L hxy hxz hyz hq
+  convert hbound using 1
+  simp [hxy, hxz, hyz, erase_insert_of_ne hxy, erase_insert_of_ne hxz, erase_insert_of_ne hyz]
+  ring
+
 end PaperP1.InfiniteTripleCancellation

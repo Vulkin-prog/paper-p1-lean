@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**69 mathematical improvements are confirmed; no error in a manuscript conclusion
+**72 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -3108,3 +3108,19 @@ their independent triple-weight component has the full source decay;
 the pair/target deficit and third-cumulant correction assembly remain
 open. Main 11.2 and 11.3 stay in progress. Coverage remains 72/167;
 confirmed findings are 71. See [alignment](TRIPLE_ACTIVITIES_ALIGNMENT.md).
+
+
+## P1-MATH-0072 — Exact pair/target incidence removes a factor three
+
+The main 11.2 finite comparison uses one copy of D_(2,1), instead of
+the three allowed by the original proof. The exact bijection is
+(T,z) -> (T without z,z); each pair/target occurrence has the unique
+triple obtained by insertion. Actual nonzero centered activity supplies
+a full-support effective relation, proving every target intersection.
+Nonzero pair activity forces positive effective pair rank. Thus no sign
+or dependence restriction is discarded in the comparison.
+
+This changes only a proof constant. The uniform arithmetic D_(2,1)
+estimate remains open. No new numbered result is counted complete.
+The exact finite reduction and the remaining obligations are detailed in
+[the alignment note](TRIPLE_ACTIVITIES_ALIGNMENT.md).
