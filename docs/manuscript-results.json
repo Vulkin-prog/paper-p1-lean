@@ -3621,7 +3621,8 @@
           "validation": "Verified Lean v4.36.0-rc2 full build (10865 jobs), actual Audit.lean kernel audit (6760 declarations; only propext, Classical.choice, Quot.sound), 4477 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.37 GiB. Exact arbitrary signed-weight square comparison, finite overlap cover and actual direct/non-direct pair partition are unconditional. The N^(-3/2+epsilon) overlap remainder uses the existing ordinary explicit BCN premise; the literal disjoint non-direct cost is retained without an assumed estimate. Main 16.1 stays in progress, coverage 77/167, improvements 89.",
           "validation_commit": "4a726866c3198d1ce37ce8e930c6d9d2ca81926b"
         }
-      ]
+      ],
+      "validation_commit": "585e4c76c3c559c157a6053b4f4c70edceda9b52"
     },
     {
       "label": "p13:lower:optimal",
