@@ -1466,3 +1466,5 @@ public import PaperP1.Model.ActualCanonicalComponents
 public import PaperP1.Model.NonconnectedActivity
 
 public import PaperP1.Asymptotics.NonconnectedActivityUnderBCN
+
+public import PaperP1.Asymptotics.SubpowerFixedCountMoments

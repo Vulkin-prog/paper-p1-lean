@@ -4076,6 +4076,9 @@ import PaperP1
 #print axioms PaperP1.SplitTupleExposure.source_height
 #print axioms PaperP1.SplitTupleExposure.source_exposure
 #print axioms PaperP1.SquareTupleCount.square_tuple_count
+#print axioms PaperP1.SubpowerFixedCountMoments.uniform_joint_mass
+#print axioms PaperP1.SubpowerFixedCountMoments.uniform_factorial
+#print axioms PaperP1.SubpowerFixedCountMoments.uniform_ordinary
 #print axioms PaperP1.TargetQuotientRank.bounded_affine_rank
 #print axioms PaperP1.TargetUnionResidual.row_rank_sublinear
 #print axioms PaperP1.ThirdCumulantReduction.absolute_reduction

@@ -3762,3 +3762,8 @@ Verified Lean v4.36.0-rc2 full build (10905 jobs), actual Audit.lean kernel audi
 ## Exact all-order canonical factors and quadratic nonconnected activity
 
 Original canonical component images are injective, connected and cover the actual family; every nonzero factor has at least two sites. An unconditional finite polymer tail bound controls nonconnected activity by W^2*exp(W)/2. Under existing explicit BCN, this yields N^(-1+epsilon) at every fixed order, without a growing-order assertion. Source connected 4/5 and contact estimates remain open. Coverage 77/167, improvements 90.
+
+
+## Actual fixed moments are subpolynomial without BCN
+
+Positive singleton-seed propagation gives actual joint subset mass, factorial and ordinary moments at most N^epsilon at every fixed order, including zero, without BCN. This does not claim uniformly bounded moments or the source full fixed-moment asymptotics. Coverage 77/167, improvements 90.

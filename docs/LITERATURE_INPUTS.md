@@ -4772,3 +4772,33 @@ Main 4.4 stays proved and companion T14.1 stays in progress. Coverage stays
 77/167 (main 28/73, companion 49/94), confirmed improvements stay 90.
 No new external input, axiom, dependency download, source-byte change or
 Palomar registration is introduced.
+
+
+## Unconditional subpower fixed moments
+
+Stable ID: `P1-PROB-SUBPOWER-FIXED-MOMENTS`. Status: **proved unconditionally at every fixed nonnegative order**.
+
+Every fixed nonnegative order now has an unconditional subpower bound
+on the actual original model. For every fixed r>=0 and epsilon>0,
+
+    sum_(I subset G, |I|=r)q(I) <= N^epsilon,
+    E[(Z_G)_r] <= N^epsilon,
+    E[Z_G^r] <= N^epsilon,
+
+eventually uniformly over all critical lengths and every dyadic subground.
+No BCN premise is used. The order, exponent and threshold are fixed before N.
+For r>=1, every r-site family contains a singleton seed. The checked
+unordered positive propagation bound and bounded exact actual mean give
+the first estimate, with its factorial coefficient absorbed only afterward.
+The exact factorial-moment subset formula gives the second. The elementary
+pointwise comparison n^r<=(2r)^r+2^r*(n)_r gives the third. Order zero is
+included explicitly. Irregular windows and zero marginals remain present.
+
+These are weaker than uniform boundedness or convergence to the Poisson
+factorial moments; the stronger existing boundedness/convergence theorems
+remain conditional on their already explicit BCN premise. The new
+unconditional subpower bounds can be used in fixed-order truncation and
+contact estimates without assuming the source full fixed-moment asymptotic.
+Main 6.4 remains in progress. Coverage stays 77/167 (main 28/73, companion
+49/94), improvements stay 90. No new external input, axiom, dependency
+download, source-byte change or Palomar registration is introduced.
