@@ -1118,3 +1118,13 @@ public import PaperP1.Arithmetic.NonalignedRankLimsup
 public import PaperP1.Arithmetic.IntegerCurveRationalization
 
 public import PaperP1.Arithmetic.NonalignedRankFieldBCN
+
+public import PaperP1.Model.TripleRankGeometry
+
+public import PaperP1.Analysis.CriticalRankMass
+
+public import PaperP1.Asymptotics.AllPairRankUnderBCN
+
+public import PaperP1.Asymptotics.JointFamilyProbabilityUnderBCN
+
+public import PaperP1.Asymptotics.TripleRankUnderBCN

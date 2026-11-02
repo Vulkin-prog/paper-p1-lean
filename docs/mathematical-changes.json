@@ -4393,6 +4393,69 @@
         "status": "not_integrated"
       },
       "validation_commit": "80c94b7ac6cf0142befc41a3f8f18c9f87639a2d"
+    },
+    {
+      "id": "P1-MATH-0081",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:triple",
+        "number": "13.8",
+        "page": 33,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 355,
+        "statement_sha256": "e988260f0b55298f58f309bc4b778d5509ca6e955c2617b8ad8cf6d2d059c07a"
+      },
+      "original_assumption": "The maximum joint probability conclusion of13.8 is stated for triples. Its proof first uses the triple-nullity bound and estimates the ranks of all three windows via the coarser defective-position error.",
+      "finding": "A direct actual-pair argument is enough and gives a stronger population statement. The already proved critical local rigidity supplies p_x<=2*2^(-L) for every actual dyadic start, including incompatible local windows by their zero mass. The exact pair affine mass and actual event monotonicity give q(I)<=q({x,y})<=4*2^(-2L+d_xy) for any family containing distinct x,y with those marginal caps. Under the same degree-uniform BCN input used by13.6, the proved compatible pair half-window bound therefore yields q(I)<=N^(-3/2+epsilon) uniformly over all actual families with at least two distinct centers, with one threshold before every cardinality. No third-window rank or marginal estimate is needed for this probability conclusion.",
+      "evidence": [
+        "PaperP1.TripleRankGeometry.critical_nominal_marginal_cap",
+        "PaperP1.TripleRankGeometry.pair_joint_le_rank_mass",
+        "PaperP1.TripleRankGeometry.family_joint_le_rank_mass",
+        "PaperP1.CriticalRankMass.rankMass_exp",
+        "PaperP1.CriticalRankMass.critical_rankMass_bound",
+        "PaperP1.JointFamilyProbabilityUnderBCN.uniform_family_probability",
+        "PaperP1.JointFamilyProbabilityUnderBCN.uniform_maximal_triple_probability"
+      ],
+      "proposed_revision": "State the maximum joint probability consequence for every actual family of at least two centers. Prove it by selecting one pair and using q(I)<=q(pair), its exact affine probability, p_x,p_y<=2*2^(-L), and the already established compatible-pair rank bound. The resulting explicit finite factor is4. Keep the separate triple-nullity conclusions and the same BCN dependence.",
+      "impact": "Shortens the probability branch and extends its scope to arbitrary larger finite families, without an order restriction or compatibility assumption. The finite mass bridge and critical local cap are proved without BCN; the N^(-3/2+epsilon) consequence retains BCN through the nonaligned pair-rank theorem. No improved asymptotic exponent, independence assumption or proved external theorem is asserted.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10561 jobs); actual axiom audit passed for all5988 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All3705 distinct ledger/finding declarations were directly checked. All138 original manifest entries and167 numbered records are intact. Ubuntu available space:15.85 GiB. Actual triple insertion/nullity, the minimum pair-rank bound, reconstruction from any pair, the exact critical local marginal cap and the finite pair/family probability bound with factor4 are proved without BCN. The B=L+1 to L conversion, exact binary-mass exponential identity and critical N-exponent absorption are proved. Under the same single field-polynomial BCN input as13.5 and13.6, all compatible pairs have a uniform half-window rank bound, all compatible triples have nullity<=(3/2+epsilon)L, every triple containing a nonaligned pair has the stronger1+(2/3)log2 bound without compatibility, and every actual family of cardinality>=2 has joint mass<=N^(-3/2+epsilon). The literal finite triple-probability maximum is constructed and bounded. P1-MATH-0081 and0082 record the larger-family probability proof and compatibility-free nonaligned-triple scope. BCN itself and its geometric presentation remain unformalized;13.8 is conditional, not proved coverage. Coverage76/167 (main28/73, companion48/94), confirmed findings82. No added Paper C source, dependency download, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
+    },
+    {
+      "id": "P1-MATH-0082",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:triple",
+        "number": "13.8",
+        "page": 33,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 355,
+        "statement_sha256": "e988260f0b55298f58f309bc4b778d5509ca6e955c2617b8ad8cf6d2d059c07a"
+      },
+      "original_assumption": "Corollary13.8 introduces compatible triples and states the stronger rank bound for such triples when one pair is nonaligned.",
+      "finding": "Compatibility is unnecessary for the stronger nonaligned-triple rank bound. The exact finite inequality rho(T)<=L+d_xy holds for the actual effective spaces of every three-element dyadic set, independently of affine consistency. The source nonaligned pair-rank theorem13.6 also needs no compatibility. Their proved combination therefore yields rho(T)<=(1+(2/3)log2+epsilon)L for every actual triple containing a nonaligned pair, under the same single explicit BCN input. Only the separate uniform3L/2 conclusion for arbitrary pairs needs compatibility in the aligned branch.",
+      "evidence": [
+        "PaperP1.TripleRankGeometry.nullity_le_pair",
+        "PaperP1.TripleRankGeometry.set_nullity_le_pair",
+        "PaperP1.AllPairRankUnderBCN.nonaligned_pair_bound",
+        "PaperP1.TripleRankUnderBCN.uniform_nonaligned_triple_nullity"
+      ],
+      "proposed_revision": "Separate the statements: retain compatibility for the universal3L/2 triple-nullity estimate, but state the stronger1+(2/3)log2 estimate for every triple containing a nonaligned pair. Use the exact finite insertion-nullity bound and13.6 directly.",
+      "impact": "Weakens one hypothesis of the stronger rank conclusion without changing its coefficient or the BCN dependency. Incompatible triples still have zero joint probability; the rank statement concerns their actual square-class spaces and remains meaningful. No additional numbered result is counted proved.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10561 jobs); actual axiom audit passed for all5988 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All3705 distinct ledger/finding declarations were directly checked. All138 original manifest entries and167 numbered records are intact. Ubuntu available space:15.85 GiB. Actual triple insertion/nullity, the minimum pair-rank bound, reconstruction from any pair, the exact critical local marginal cap and the finite pair/family probability bound with factor4 are proved without BCN. The B=L+1 to L conversion, exact binary-mass exponential identity and critical N-exponent absorption are proved. Under the same single field-polynomial BCN input as13.5 and13.6, all compatible pairs have a uniform half-window rank bound, all compatible triples have nullity<=(3/2+epsilon)L, every triple containing a nonaligned pair has the stronger1+(2/3)log2 bound without compatibility, and every actual family of cardinality>=2 has joint mass<=N^(-3/2+epsilon). The literal finite triple-probability maximum is constructed and bounded. P1-MATH-0081 and0082 record the larger-family probability proof and compatibility-free nonaligned-triple scope. BCN itself and its geometric presentation remain unformalized;13.8 is conditional, not proved coverage. Coverage76/167 (main28/73, companion48/94), confirmed findings82. No added Paper C source, dependency download, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

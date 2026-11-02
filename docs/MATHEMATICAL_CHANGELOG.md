@@ -3474,3 +3474,13 @@ The exact source nonaligned-rank threshold, actual finite-pair maximum, literal 
 ## One common external BCN input for13.5 and13.6
 
 The exact integer/rational coefficient map now preserves total degree, the actual integer grid and irreducibility of every positive-degree irreducible integer nested polynomial. Two actual polynomial localizations and the nonunit degree obstruction prove the irreducibility step. The integer BCN input is therefore derived from the same field-polynomial input used by13.5, with no second independent external assumption. This closes a formal presentation gap without a new manuscript correction. BCN and its geometric presentation remain open. Coverage76/167, findings80.
+
+
+## P1-MATH-0081: a pair controls every larger joint event
+
+The exact actual pair formula and the proved critical cap p_x<=2*2^(-L) give q(I)<=4*2^(-2L+d_xy) whenever I contains that distinct pair. This finite bridge needs no BCN. Under the same BCN-dependent pair-rank bound as the source, q(I)<=N^(-3/2+epsilon) uniformly for every cardinality>=2, including incompatible families. The triple maximum is constructed literally. No third-window rank estimate is needed for this probability branch, and no improved asymptotic exponent is claimed.
+
+
+## P1-MATH-0082: nonaligned triple rank without compatibility
+
+The exact finite bound rho(T)<=L+d_xy and the compatibility-free nonaligned pair theorem give the stronger1+(2/3)log2 triple-nullity coefficient for every triple containing a nonaligned pair, under the same explicit BCN input. Compatibility remains in the universal3L/2 rank statement because of the aligned branch. Article13.8 is conditional; proved coverage76/167, confirmed findings82.

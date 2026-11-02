@@ -15,6 +15,8 @@ are also complete. See [the short-basis alignment](docs/SHORT_BASIS_ALIGNMENT.md
 
 Article13.6 now has its complete actual nonaligned-rank reduction, including the finite-pair maximum, literal limsup and a strict half-window gap, **conditional on the explicitly unformalized field-polynomial BCN bound**. All critical threshold, degree-one alignment and integer/rational presentation steps are proved internally. This adds no proved numbered coverage. See [the conditional scope](docs/NONALIGNED_RANK_ALIGNMENT.md).
 
+Article13.8 is also conditional on that same BCN input: all triple rank bounds and the actual maximum joint probability are proved. The probability estimate extends to every family of at least two centers, and the stronger nonaligned-triple rank bound needs no compatibility. See [the triple alignment](docs/TRIPLE_RANK_ALIGNMENT.md).
+
 Companion T22.7 is complete: the actual infinite replica formula, the
 uniform colored conditional target sum and every fixed positive weighted
 replica moment are proved. Repeated centers and arbitrary ordered tuple

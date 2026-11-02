@@ -2694,3 +2694,59 @@ Palomar registration. One additional pinned Mathlib localization
 module was compiled locally from existing sources.
 
 Pinned Mathlib commit9d581dfff2e41de989072ea63abf3daf69311520 supplies `Polynomial.isLocalization`, `Submonoid.LocalizationMap.map_prime`, polynomial UFD instances, injective coefficient support and natural-degree preservation, polynomial-unit characterization and literal nested evaluation transport. All are recompiled or previously cached under the pinned compiler and included through the actual project theorem dependencies.
+
+
+## Actual finite triple geometry and uniform conditional family probability
+
+Stable ID: `P1-ALG-TRIPLE-RANK-GEOMETRY`. Status: **proved finite bridge**.
+
+Stable ID: `P1-PROB-JOINT-FAMILY-BCN`. Status: **conditional** on `P1-GEO-BCN-PLANE-UNIFORM`, with no other unformalized input.
+
+All three source conclusions of article13.8 are now proved under
+the same ordinary explicit field-polynomial BCN input as13.5 and13.6.
+The external BCN proof and geometric presentation remain unformalized;
+this row is conditional and adds no proved numbered coverage.
+
+The actual finite-dimensional relation spaces satisfy
+
+    rho({x,y,z}) <= L + min(d_xy,d_xz,d_yz).
+
+This is proved from actual insertion-nullity and pair-intersection
+identities, not assumed. Every actual three-element set can be
+reconstructed from any two of its distinct members. Known alignments
+use the proved compatible half-window bound13.7, including exact
+contact; nonaligned pairs use the proved reduction13.6 under BCN.
+The actual enlarged alignment predicate is transported with exact
+coefficient heights. The B=L+1 to L conversion is proved uniformly.
+Thus compatible triple nullity is at most(3/2+epsilon)L. A triple
+containing a nonaligned pair has nullity at most
+(1+(2/3)log2+epsilon)L, even without compatibility.
+
+The probability step can be shortened. The proved critical local
+rigidity gives the actual cap p_x<=2*2^(-L), including zero marginals.
+The exact compatible pair identity, and a separate zero-mass case,
+give the unconditional finite bridge
+
+    q(I) <= q({x,y}) <= 4*2^(-2L+d_xy)
+
+whenever I contains distinct x,y with the stated local marginal caps.
+The cap itself is proved uniformly for all actual dyadic starts.
+No third-window rank or marginal estimate enters this step.
+The exponential identity for this finite mass, the exact critical
+band error and absorption of its fixed constant into N^epsilon are
+proved. Under the same BCN input, one threshold precedes all actual
+families of cardinality at least2, giving q(I)<=N^(-3/2+epsilon),
+with no order bound or compatibility restriction. In particular all
+actual triples satisfy the source probability bound. An actual finite
+maximum over the three-element subsets is constructed by a zero-
+adjoined max fold and satisfies the same uniform estimate.
+
+P1-MATH-0081 records the shorter pair-based probability proof, explicit
+finite factor4 and extension to every larger family. P1-MATH-0082
+records removal of compatibility from the stronger nonaligned-triple
+rank bound. Neither claims an improved N exponent or a proof of BCN.
+Proved coverage76/167 (main28/73, companion48/94), confirmed findings82.
+No added Paper C source, dependency download, manuscript-byte change
+or Palomar registration.
+
+Pinned Mathlib finite set erasure/cardinality, finite maximum folds, finite-dimensional insertion and intersection identities, exact binary powers, exponential monotonicity, real powers and logarithmic growth are used with proved hypotheses. Actual affine probability and infinite event monotonicity come from existing project proofs.

@@ -949,6 +949,9 @@ import PaperP1
 #print axioms PaperP1.ClippedPowerSum.clipped_sum_le
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le_power
+#print axioms PaperP1.CriticalRankMass.succ_coefficient_eventually
+#print axioms PaperP1.CriticalRankMass.rankMass_exp
+#print axioms PaperP1.CriticalRankMass.critical_rankMass_bound
 #print axioms PaperP1.CubicLogTilt.budget_pos
 #print axioms PaperP1.CubicLogTilt.log_budget
 #print axioms PaperP1.CubicLogTilt.log_budget_bounds
@@ -3029,6 +3032,9 @@ import PaperP1
 #print axioms PaperP1.AlignedTargetSourceTheorem.geometric_good_source_units
 #print axioms PaperP1.AlignedTargetSourceTheorem.companion_T2_6
 #print axioms PaperP1.AlignedTargetSourceTheorem.companion_T1_11
+#print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound_succ
+#print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound
+#print axioms PaperP1.AllPairRankUnderBCN.nonaligned_pair_bound
 #print axioms PaperP1.AllReplicaMoments.all_lengths
 #print axioms PaperP1.AllReplicaMoments.companion_T22_7_moment
 #print axioms PaperP1.AnchorCertificateDegrees.uniform_degrees
@@ -3357,6 +3363,12 @@ import PaperP1
 #print axioms PaperP1.IrregularSeedMass.affine_sum
 #print axioms PaperP1.IrregularSeedMass.seed_family
 #print axioms PaperP1.IrregularSeedMass.seed_coordinates
+#print axioms PaperP1.JointFamilyProbabilityUnderBCN.maximalTripleProbability_nonneg
+#print axioms PaperP1.JointFamilyProbabilityUnderBCN.triple_probability_le_maximum
+#print axioms PaperP1.JointFamilyProbabilityUnderBCN.uniform_pair_probability
+#print axioms PaperP1.JointFamilyProbabilityUnderBCN.uniform_family_probability
+#print axioms PaperP1.JointFamilyProbabilityUnderBCN.uniform_triple_probability
+#print axioms PaperP1.JointFamilyProbabilityUnderBCN.uniform_maximal_triple_probability
 #print axioms PaperP1.KnownAlignmentRank.height_one_units
 #print axioms PaperP1.KnownAlignmentRank.quantitative_bound
 #print axioms PaperP1.KnownAlignmentRank.height_one_bound
@@ -3755,6 +3767,9 @@ import PaperP1
 #print axioms PaperP1.TargetUnionResidual.row_rank_sublinear
 #print axioms PaperP1.ThirdCumulantReduction.absolute_reduction
 #print axioms PaperP1.ThirdCumulantReduction.cumulant_reduction
+#print axioms PaperP1.TripleRankUnderBCN.uniform_triple_nullity
+#print axioms PaperP1.TripleRankUnderBCN.uniform_nonaligned_triple_nullity
+#print axioms PaperP1.TripleRankUnderBCN.article_13_8_under_BCN
 #print axioms PaperP1.TwoProgressionSublinear.rank_sublinear
 #print axioms PaperP1.TwoProgressionSublinear.row_rank_sublinear
 #print axioms PaperP1.TwoSmallKernelCount.dyadic_count
@@ -5201,6 +5216,14 @@ import PaperP1
 #print axioms PaperP1.TripleProbabilityBound.pair_joint_le
 #print axioms PaperP1.TripleProbabilityBound.pair_subset_tupleSet
 #print axioms PaperP1.TripleProbabilityBound.triple_joint_le
+#print axioms PaperP1.TripleRankGeometry.insert_third
+#print axioms PaperP1.TripleRankGeometry.nullity_le_pair
+#print axioms PaperP1.TripleRankGeometry.nullity_le_min_pair
+#print axioms PaperP1.TripleRankGeometry.third_of_pair
+#print axioms PaperP1.TripleRankGeometry.set_nullity_le_pair
+#print axioms PaperP1.TripleRankGeometry.critical_nominal_marginal_cap
+#print axioms PaperP1.TripleRankGeometry.pair_joint_le_rank_mass
+#print axioms PaperP1.TripleRankGeometry.family_joint_le_rank_mass
 #print axioms PaperP1.TupleMassIteration.iterate
 #print axioms PaperP1.UnitFourierWeight.abs_signed_unit_sum
 #print axioms PaperP1.UnitFourierWeight.unit_kernel_rank_bound
