@@ -1520,3 +1520,13 @@ public import PaperP1.Asymptotics.LogHeightAlignedActivity
 public import PaperP1.Model.ActivityFamilyCover
 public import PaperP1.Model.BoundaryAlignedPairs
 public import PaperP1.Asymptotics.BoundaryAlignedActivity
+public import PaperP1.Model.AllAlignedPairs
+public import PaperP1.Model.PrincipalAlignedCover
+public import PaperP1.Asymptotics.AlignedPrincipalActivity
+public import PaperP1.Model.ActivitySignGap
+public import PaperP1.Asymptotics.PairActivitySignGap
+public import PaperP1.Asymptotics.AlignedPrincipalSigned
+public import PaperP1.Model.AlignedCumulantReduction
+public import PaperP1.Asymptotics.SecondCumulantNonalignedReduction
+public import PaperP1.Asymptotics.DenseNonalignedProfileReduction
+public import PaperP1.Asymptotics.TwoChannelDenseProfileReduction

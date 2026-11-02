@@ -3195,6 +3195,9 @@ import PaperP1
 #print axioms PaperP1.AlignedPairTheorem.uniform_bounds
 #print axioms PaperP1.AlignedPairTheorem.fixed_height_loss
 #print axioms PaperP1.AlignedPairTheorem.one_unit_T1_9
+#print axioms PaperP1.AlignedPrincipalActivity.uniform_geometry
+#print axioms PaperP1.AlignedPrincipalActivity.uniform_absolute
+#print axioms PaperP1.AlignedPrincipalSigned.uniform_bound
 #print axioms PaperP1.AlignedTargetRank.uniform_core
 #print axioms PaperP1.AlignedTargetSourceTheorem.source_representation
 #print axioms PaperP1.AlignedTargetSourceTheorem.symmetric_endpoint_card
@@ -3406,6 +3409,9 @@ import PaperP1
 #print axioms PaperP1.CriticalPolynomialScale.source_size_eventually
 #print axioms PaperP1.CriticalWindowGeometry.uniform_geometry
 #print axioms PaperP1.CriticalWindowGeometry.log_base_lower
+#print axioms PaperP1.DenseNonalignedProfileReduction.dense_data
+#print axioms PaperP1.DenseNonalignedProfileReduction.nonaligned_activity_bound
+#print axioms PaperP1.DenseNonalignedProfileReduction.uniform_bound
 #print axioms PaperP1.DenseTargetCount.small_residual_exponent
 #print axioms PaperP1.DenseTargetCount.uniform_count
 #print axioms PaperP1.DenseTargetCount.mem_freshTargets
@@ -3874,6 +3880,7 @@ import PaperP1
 #print axioms PaperP1.OverlappingPairProductCostUnderBCN.uniform_star_square
 #print axioms PaperP1.PairActivityCumulantGapAsymptotic.uniform_gap
 #print axioms PaperP1.PairActivityCumulantGapAsymptotic.uniform_relative
+#print axioms PaperP1.PairActivitySignGap.uniform_bound
 #print axioms PaperP1.PairActivityUnderBCN.uniform_pair_activity
 #print axioms PaperP1.PairActivityUnderBCN.uniform_conversion
 #print axioms PaperP1.PairHostIndependentMass.finite_mass_cap
@@ -4031,6 +4038,7 @@ import PaperP1
 #print axioms PaperP1.ScaledPrimeCounts.divided_cutoff_ratio
 #print axioms PaperP1.ScaledPrimeCounts.shifted_cutoff_ratio
 #print axioms PaperP1.ScaledPrimeCounts.prime_count_divided_shifted
+#print axioms PaperP1.SecondCumulantNonalignedReduction.uniform_bound
 #print axioms PaperP1.SecondCumulantUnderBCN.diagonal_bound
 #print axioms PaperP1.SecondCumulantUnderBCN.uniform_bound
 #print axioms PaperP1.SecondCumulantUnderBCN.uniform_eventually_small
@@ -4126,6 +4134,7 @@ import PaperP1
 #print axioms PaperP1.TripleRankUnderBCN.uniform_triple_nullity
 #print axioms PaperP1.TripleRankUnderBCN.uniform_nonaligned_triple_nullity
 #print axioms PaperP1.TripleRankUnderBCN.article_13_8_under_BCN
+#print axioms PaperP1.TwoChannelDenseProfileReduction.uniform_bound
 #print axioms PaperP1.TwoProgressionSublinear.rank_sublinear
 #print axioms PaperP1.TwoProgressionSublinear.row_rank_sublinear
 #print axioms PaperP1.TwoSmallKernelCount.dyadic_count
@@ -5035,6 +5044,8 @@ import PaperP1
 #print axioms PaperP1.ActualActiveFamilyCover.close_probability_eq_exact
 #print axioms PaperP1.ActivityFamilyCover.finite_cover
 #print axioms PaperP1.ActivityFamilyCover.two_families
+#print axioms PaperP1.ActivitySignGap.nonneg
+#print axioms PaperP1.ActivitySignGap.mono
 #print axioms PaperP1.ActualCanonicalComponents.image_injective
 #print axioms PaperP1.ActualCanonicalComponents.card_blocks
 #print axioms PaperP1.ActualCanonicalComponents.union_blocks
@@ -5049,11 +5060,20 @@ import PaperP1
 #print axioms PaperP1.AlignedChannelFamilies.relative_le_loss
 #print axioms PaperP1.AlignedChannelFamilies.cover
 #print axioms PaperP1.AlignedChannelFamilies.activity_bound
+#print axioms PaperP1.AlignedCumulantReduction.signed_partition
+#print axioms PaperP1.AlignedCumulantReduction.second_cumulant_split
+#print axioms PaperP1.AlignedCumulantReduction.finite_bound
 #print axioms PaperP1.AlignedTripleFamilies.mem_families
 #print axioms PaperP1.AlignedTripleFamilies.family_cover
 #print axioms PaperP1.AlignedTripleFamilies.star_card
 #print axioms PaperP1.AlignedTripleFamilies.card_cap
 #print axioms PaperP1.AlignedTripleFamilies.card_bound
+#print axioms PaperP1.AllAlignedPairs.orientation
+#print axioms PaperP1.AllAlignedPairs.interior
+#print axioms PaperP1.AllAlignedPairs.data
+#print axioms PaperP1.AllAlignedPairs.classification
+#print axioms PaperP1.AllAlignedPairs.private_channel_subset
+#print axioms PaperP1.AllAlignedPairs.principal_subset
 #print axioms PaperP1.BoundaryAlignedPairs.data
 #print axioms PaperP1.BoundaryAlignedPairs.channel_eq_image
 #print axioms PaperP1.BoundaryAlignedPairs.height_two_sources_cover
@@ -5649,6 +5669,9 @@ import PaperP1
 #print axioms PaperP1.PrimitiveWindowMass.primitive_mass_le
 #print axioms PaperP1.PrimitiveWindowMass.joint_le_weight
 #print axioms PaperP1.PrimitiveWindowMass.centered_le_weight
+#print axioms PaperP1.PrincipalAlignedCover.one_unit_zero
+#print axioms PaperP1.PrincipalAlignedCover.channel_nonzero_cover
+#print axioms PaperP1.PrincipalAlignedCover.finite_bound
 #print axioms PaperP1.PrincipalChannelEdges.forward_disjoint
 #print axioms PaperP1.PrincipalChannelEdges.unordered_disjoint
 #print axioms PaperP1.PrincipalChannelEdges.compatible_disjoint
