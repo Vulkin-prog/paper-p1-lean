@@ -1611,3 +1611,10 @@ public import PaperP1.Arithmetic.IntervalDivisibilityCount
 public import PaperP1.Arithmetic.RationalDivisibilityFilters
 public import PaperP1.Arithmetic.AffineRationalTripleUnionRank
 public import PaperP1.Asymptotics.AffineRationalTripleEvenProbability
+public import PaperP1.Algebra.ThreeFiniteValueSpan
+public import PaperP1.Model.ThreeNormalizedFamilyRank
+public import PaperP1.Arithmetic.ConnectedThreeWindowGeometry
+public import PaperP1.Arithmetic.AlignedTargetCanonicalRank
+public import PaperP1.Arithmetic.AlignedTripleParameterPool
+public import PaperP1.Asymptotics.AlignedTargetTripleProbability
+public import PaperP1.Asymptotics.AlignedTargetTripleMass

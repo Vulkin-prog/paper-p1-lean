@@ -3555,7 +3555,7 @@
         "statement_sha256": "1444566fc49d3124a28816f757f4d3b2f6dd5360c6017e8b9b97f606942c573c"
       },
       "original_assumption": "Main Lemma 14.2 proves D(u,v,w)<=19/30 on primitive integer triples u<v<w<2u and gives equality at (10,12,15), without asserting uniqueness or the next possible overlap value.",
-      "finding": "The extremal primitive ordered triple is unique: D=19/30 if and only if (u,v,w)=(10,12,15). Every other primitive ordered triple in the source range has D<=11/18, and (8,9,12) attains that value. Thus canonical coincidence geometry has the sharp gap 19/30-11/18=1/45. The proof treats every possible low reduced-height pair, retains the actual gcd formula, and proves all finite numerator/denominator exclusions. Integer positivity and the passage to natural slopes are proved from the printed hypotheses. On actual private rational triples with zero affine intercept, the gap now gives point-probability exponents -71/30 and -43/18 uniformly at every primitive slope height, and literal host mass bounds N^(-41/30+epsilon) and N^(-25/18+epsilon) at polynomial logarithmic slope height. General intercept and nonprivate sectors are not asserted. The actual rational probability and host-mass consequences extend from raw private normalized values to full even-selection rank, a strictly weaker condition invariant under common positive dilation. All zero-intercept primitive rational triples of slope height bounded before N satisfy the actual probability and mass gap without private, even-injective or regular-window filters: the entire merged-value kernel is proved O_Q(B/log B). For Q>=15 the exponent 41/30 is attained by the actual extremal witness population. The even-rank polynomial-height sector has a checked nonextremal relative-mass decay N^(-1/45+epsilon). The finite canonical loss bound now holds for arbitrary independent window translations with absolute error 3. Under connected normalized overlap and full even rank, the actual probability gap is uniform in all translations and slope heights, without a predecessor-exclusivity premise.",
+      "finding": "The extremal primitive ordered triple is unique: D=19/30 if and only if (u,v,w)=(10,12,15). Every other primitive ordered triple in the source range has D<=11/18, and (8,9,12) attains that value. Thus canonical coincidence geometry has the sharp gap 19/30-11/18=1/45. The proof treats every possible low reduced-height pair, retains the actual gcd formula, and proves all finite numerator/denominator exclusions. Integer positivity and the passage to natural slopes are proved from the printed hypotheses. On actual private rational triples with zero affine intercept, the gap now gives point-probability exponents -71/30 and -43/18 uniformly at every primitive slope height, and literal host mass bounds N^(-41/30+epsilon) and N^(-25/18+epsilon) at polynomial logarithmic slope height. General intercept and nonprivate sectors are not asserted. The actual rational probability and host-mass consequences extend from raw private normalized values to full even-selection rank, a strictly weaker condition invariant under common positive dilation. All zero-intercept primitive rational triples of slope height bounded before N satisfy the actual probability and mass gap without private, even-injective or regular-window filters: the entire merged-value kernel is proved O_Q(B/log B). For Q>=15 the exponent 41/30 is attained by the actual extremal witness population. The even-rank polynomial-height sector has a checked nonextremal relative-mass decay N^(-1/45+epsilon). The finite canonical loss bound now holds for arbitrary independent window translations with absolute error 3. Under connected normalized overlap and full even rank, the actual probability gap is uniform in all translations and slope heights, without a predecessor-exclusivity premise. The finite canonical bound now combines with the already proved actual target-union residual to give unconditional point probability N^(-71/30+epsilon) and literal host mass N^(-41/30+epsilon) for all distinct interior physical slopes above one fixed reduced source channel, with arbitrary affine offsets and polynomial target height B^J. No private, even-injective, regular-window or connected-normalized-overlap hypothesis is imposed. Repeated physical, endpoint and nonaligned sectors remain open.",
       "evidence": [
         "PaperP1.RationalTripleDensity.pairDensity_comm",
         "PaperP1.RationalTripleDensity.density_swap",
@@ -3736,11 +3736,40 @@
         "PaperP1.AffineRationalTripleUnionRank.extremal_union_rank",
         "PaperP1.AffineRationalTripleUnionRank.nonextremal_union_rank",
         "PaperP1.AffineRationalTripleEvenProbability.uniform_point_bound",
-        "PaperP1.AffineRationalTripleEvenProbability.nonextremal_point_bound"
+        "PaperP1.AffineRationalTripleEvenProbability.nonextremal_point_bound",
+        "PaperP1.ThreeFiniteValueSpan.full_union_rank_le_three_even_add_three",
+        "PaperP1.ThreeNormalizedFamilyRank.joint_space_three",
+        "PaperP1.ThreeNormalizedFamilyRank.union_three",
+        "PaperP1.ThreeNormalizedFamilyRank.card_le_rank_add_kernel",
+        "PaperP1.ConnectedThreeWindowGeometry.common_point_connected",
+        "PaperP1.ConnectedThreeWindowGeometry.three_edges",
+        "PaperP1.ConnectedThreeWindowGeometry.normalized_radius",
+        "PaperP1.ConnectedThreeWindowGeometry.adjacent_origins",
+        "PaperP1.ConnectedThreeWindowGeometry.connected_origins",
+        "PaperP1.ConnectedThreeWindowGeometry.union_bounds",
+        "PaperP1.ConnectedThreeWindowGeometry.interval_data",
+        "PaperP1.AlignedTargetCanonicalRank.allValues_eq_union",
+        "PaperP1.AlignedTargetCanonicalRank.allValues_eq_family",
+        "PaperP1.AlignedTargetCanonicalRank.product_union_dilate",
+        "PaperP1.AlignedTargetCanonicalRank.product_union_dilate_middle",
+        "PaperP1.AlignedTargetCanonicalRank.product_union_dilate_left",
+        "PaperP1.AlignedTargetCanonicalRank.physical_primitive",
+        "PaperP1.AlignedTargetCanonicalRank.canonical_rank",
+        "PaperP1.AlignedTripleParameterPool.pool_card",
+        "PaperP1.AlignedTripleParameterPool.families_card",
+        "PaperP1.AlignedTripleParameterPool.source_mem_pool",
+        "PaperP1.AlignedTripleParameterPool.source_mem_families",
+        "PaperP1.AlignedTargetTripleProbability.uniform_point_bound",
+        "PaperP1.AlignedTargetTripleMass.hosts_card",
+        "PaperP1.AlignedTargetTripleMass.host_data",
+        "PaperP1.AlignedTargetTripleMass.source_mem_hosts",
+        "PaperP1.AlignedTargetTripleMass.all_actual_sources",
+        "PaperP1.AlignedTargetTripleMass.uniform_count",
+        "PaperP1.AlignedTargetTripleMass.uniform_mass"
       ],
       "proposed_revision": "Strengthen Lemma 14.2 by adding the equality classification and the sharp bound D<=11/18 away from (10,12,15), with the witness (8,9,12). Keep the statement restricted to primitive ordered triples in the strict ratio range. Explicitly retain the existing distinction between canonical coincidence geometry and additional arithmetic relations among distinct normalized values. Add the checked private zero-intercept probability and mass consequence, with explicit finite rank error 5 and the inherited 1/45 exponent gap.",
       "impact": "Full main 14.2 is complete, bringing coverage to 67/167 (main 23/73, companion 44/94). The improvement isolates the unique primitive extremal rational shape and its sharp geometric gap. It supplies no unproved rank estimate, asymptotic probability bound or third-cumulant conclusion. The strict geometric gap is realized by actual affine probabilities and finite host populations on this specified private sector; the full aligned-triple proposition and total cumulant lower bound remain open.",
-      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11185 jobs), actual kernel-axiom audit (7434 declarations; only propext, Classical.choice and Quot.sound), 5151 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.75 GiB free on Ubuntu root.",
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11199 jobs), actual kernel-axiom audit (7463 declarations; only propext, Classical.choice and Quot.sound), 5180 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.73 GiB free on Ubuntu root.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
@@ -3773,9 +3802,15 @@
           "proposed_revision": "Strengthen Lemma 14.2 by adding the equality classification and the sharp bound D<=11/18 away from (10,12,15), with the witness (8,9,12). Keep the statement restricted to primitive ordered triples in the strict ratio range. Explicitly retain the existing distinction between canonical coincidence geometry and additional arithmetic relations among distinct normalized values. Add the checked private zero-intercept probability and mass consequence, with explicit finite rank error 5 and the inherited 1/45 exponent gap.",
           "validation": "Verified with Lean v4.36.0-rc2: full lake build (11177 jobs), actual kernel-axiom audit (7416 declarations; only propext, Classical.choice and Quot.sound), 5133 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.77 GiB free on Ubuntu root.",
           "validation_commit": "ccd6d5abe039e52207130635ce5cdebb2c8ab7ae"
+        },
+        {
+          "finding": "The extremal primitive ordered triple is unique: D=19/30 if and only if (u,v,w)=(10,12,15). Every other primitive ordered triple in the source range has D<=11/18, and (8,9,12) attains that value. Thus canonical coincidence geometry has the sharp gap 19/30-11/18=1/45. The proof treats every possible low reduced-height pair, retains the actual gcd formula, and proves all finite numerator/denominator exclusions. Integer positivity and the passage to natural slopes are proved from the printed hypotheses. On actual private rational triples with zero affine intercept, the gap now gives point-probability exponents -71/30 and -43/18 uniformly at every primitive slope height, and literal host mass bounds N^(-41/30+epsilon) and N^(-25/18+epsilon) at polynomial logarithmic slope height. General intercept and nonprivate sectors are not asserted. The actual rational probability and host-mass consequences extend from raw private normalized values to full even-selection rank, a strictly weaker condition invariant under common positive dilation. All zero-intercept primitive rational triples of slope height bounded before N satisfy the actual probability and mass gap without private, even-injective or regular-window filters: the entire merged-value kernel is proved O_Q(B/log B). For Q>=15 the exponent 41/30 is attained by the actual extremal witness population. The even-rank polynomial-height sector has a checked nonextremal relative-mass decay N^(-1/45+epsilon). The finite canonical loss bound now holds for arbitrary independent window translations with absolute error 3. Under connected normalized overlap and full even rank, the actual probability gap is uniform in all translations and slope heights, without a predecessor-exclusivity premise.",
+          "impact": "Full main 14.2 is complete, bringing coverage to 67/167 (main 23/73, companion 44/94). The improvement isolates the unique primitive extremal rational shape and its sharp geometric gap. It supplies no unproved rank estimate, asymptotic probability bound or third-cumulant conclusion. The strict geometric gap is realized by actual affine probabilities and finite host populations on this specified private sector; the full aligned-triple proposition and total cumulant lower bound remain open.",
+          "proposed_revision": "Strengthen Lemma 14.2 by adding the equality classification and the sharp bound D<=11/18 away from (10,12,15), with the witness (8,9,12). Keep the statement restricted to primitive ordered triples in the strict ratio range. Explicitly retain the existing distinction between canonical coincidence geometry and additional arithmetic relations among distinct normalized values. Add the checked private zero-intercept probability and mass consequence, with explicit finite rank error 5 and the inherited 1/45 exponent gap.",
+          "validation": "Verified with Lean v4.36.0-rc2: full lake build (11185 jobs), actual kernel-axiom audit (7434 declarations; only propext, Classical.choice and Quot.sound), 5151 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.75 GiB free on Ubuntu root.",
+          "validation_commit": "4aefc95b7c4ad6ff7f6f1dbbfef8ba456a19d9a3"
         }
-      ],
-      "validation_commit": "4aefc95b7c4ad6ff7f6f1dbbfef8ba456a19d9a3"
+      ]
     },
     {
       "id": "P1-MATH-0068",
@@ -5734,7 +5769,7 @@
         "statement_sha256": "1444566fc49d3124a28816f757f4d3b2f6dd5360c6017e8b9b97f606942c573c"
       },
       "original_assumption": "The canonical overlap calculation preceding main Lemma 14.2 uses parameter-interval lengths and states D(u,v,w)*L+O(1), with an absolute but unspecified endpoint error.",
-      "finding": "For every primitive u<v<w<2u, every L>=0 and arbitrary actual centers X_i>=2, complete product-normalized windows satisfy 3L-(union.card-1)<=D(u,v,w)*L+3. A direct union of two divisibility classes proves the bound, with no common-point, affine alignment, dyadic, private-prime, even-injectivity or compatibility assumption. Connected overlap and full even rank then give actual joint probability constants 2^(3+alpha*C), alpha=71/30 or 43/18 in the nonextremal case, including incompatible zero-mass systems.",
+      "finding": "For every primitive u<v<w<2u, every L>=0 and arbitrary actual centers X_i>=2, complete product-normalized windows satisfy 3L-(union.card-1)<=D(u,v,w)*L+3. A direct union of two divisibility classes proves the bound, with no common-point, affine alignment, dyadic, private-prime, even-injectivity or compatibility assumption. Connected overlap and full even rank then give actual joint probability constants 2^(3+alpha*C), alpha=71/30 or 43/18 in the nonextremal case, including incompatible zero-mass systems. The finite canonical bound now combines with the already proved actual target-union residual to give unconditional point probability N^(-71/30+epsilon) and literal host mass N^(-41/30+epsilon) for all distinct interior physical slopes above one fixed reduced source channel, with arbitrary affine offsets and polynomial target height B^J. No private, even-injective, regular-window or connected-normalized-overlap hypothesis is imposed. Repeated physical, endpoint and nonaligned sectors remain open.",
       "evidence": [
         "PaperP1.IntervalDivisibilityCount.values_Ioc",
         "PaperP1.IntervalDivisibilityCount.count_add_div",
@@ -5753,16 +5788,53 @@
         "PaperP1.AffineRationalTripleUnionRank.extremal_union_rank",
         "PaperP1.AffineRationalTripleUnionRank.nonextremal_union_rank",
         "PaperP1.AffineRationalTripleEvenProbability.uniform_point_bound",
-        "PaperP1.AffineRationalTripleEvenProbability.nonextremal_point_bound"
+        "PaperP1.AffineRationalTripleEvenProbability.nonextremal_point_bound",
+        "PaperP1.ThreeFiniteValueSpan.full_union_rank_le_three_even_add_three",
+        "PaperP1.ThreeNormalizedFamilyRank.joint_space_three",
+        "PaperP1.ThreeNormalizedFamilyRank.union_three",
+        "PaperP1.ThreeNormalizedFamilyRank.card_le_rank_add_kernel",
+        "PaperP1.ConnectedThreeWindowGeometry.common_point_connected",
+        "PaperP1.ConnectedThreeWindowGeometry.three_edges",
+        "PaperP1.ConnectedThreeWindowGeometry.normalized_radius",
+        "PaperP1.ConnectedThreeWindowGeometry.adjacent_origins",
+        "PaperP1.ConnectedThreeWindowGeometry.connected_origins",
+        "PaperP1.ConnectedThreeWindowGeometry.union_bounds",
+        "PaperP1.ConnectedThreeWindowGeometry.interval_data",
+        "PaperP1.AlignedTargetCanonicalRank.allValues_eq_union",
+        "PaperP1.AlignedTargetCanonicalRank.allValues_eq_family",
+        "PaperP1.AlignedTargetCanonicalRank.product_union_dilate",
+        "PaperP1.AlignedTargetCanonicalRank.product_union_dilate_middle",
+        "PaperP1.AlignedTargetCanonicalRank.product_union_dilate_left",
+        "PaperP1.AlignedTargetCanonicalRank.physical_primitive",
+        "PaperP1.AlignedTargetCanonicalRank.canonical_rank",
+        "PaperP1.AlignedTripleParameterPool.pool_card",
+        "PaperP1.AlignedTripleParameterPool.families_card",
+        "PaperP1.AlignedTripleParameterPool.source_mem_pool",
+        "PaperP1.AlignedTripleParameterPool.source_mem_families",
+        "PaperP1.AlignedTargetTripleProbability.uniform_point_bound",
+        "PaperP1.AlignedTargetTripleMass.hosts_card",
+        "PaperP1.AlignedTargetTripleMass.host_data",
+        "PaperP1.AlignedTargetTripleMass.source_mem_hosts",
+        "PaperP1.AlignedTargetTripleMass.all_actual_sources",
+        "PaperP1.AlignedTargetTripleMass.uniform_count",
+        "PaperP1.AlignedTargetTripleMass.uniform_mass"
       ],
       "proposed_revision": "State the finite canonical-union inequality with explicit endpoint constant 3 before the sharp rational inequality, and give the exact divisibility-class proof. Preserve the separate need to control the residual arithmetic kernel when converting canonical coincidences to actual ranks.",
       "impact": "Makes the bounded endpoint error effective and uniform in all slopes and affine window translations; simplifies the geometric proof to exact integer counts. It improves the earlier formalized zero-intercept finite error 5 to 3. No manuscript conclusion error or change to asymptotic exponents is asserted; full aligned-family aggregation and the total third-cumulant bound remain incomplete.",
-      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11185 jobs), actual kernel-axiom audit (7434 declarations; only propext, Classical.choice and Quot.sound), 5151 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.75 GiB free on Ubuntu root.",
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11199 jobs), actual kernel-axiom audit (7463 declarations; only propext, Classical.choice and Quot.sound), 5180 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.73 GiB free on Ubuntu root.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "4aefc95b7c4ad6ff7f6f1dbbfef8ba456a19d9a3"
+      "validation_history": [
+        {
+          "finding": "For every primitive u<v<w<2u, every L>=0 and arbitrary actual centers X_i>=2, complete product-normalized windows satisfy 3L-(union.card-1)<=D(u,v,w)*L+3. A direct union of two divisibility classes proves the bound, with no common-point, affine alignment, dyadic, private-prime, even-injectivity or compatibility assumption. Connected overlap and full even rank then give actual joint probability constants 2^(3+alpha*C), alpha=71/30 or 43/18 in the nonextremal case, including incompatible zero-mass systems.",
+          "impact": "Makes the bounded endpoint error effective and uniform in all slopes and affine window translations; simplifies the geometric proof to exact integer counts. It improves the earlier formalized zero-intercept finite error 5 to 3. No manuscript conclusion error or change to asymptotic exponents is asserted; full aligned-family aggregation and the total third-cumulant bound remain incomplete.",
+          "proposed_revision": "State the finite canonical-union inequality with explicit endpoint constant 3 before the sharp rational inequality, and give the exact divisibility-class proof. Preserve the separate need to control the residual arithmetic kernel when converting canonical coincidences to actual ranks.",
+          "validation": "Verified with Lean v4.36.0-rc2: full lake build (11185 jobs), actual kernel-axiom audit (7434 declarations; only propext, Classical.choice and Quot.sound), 5151 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.75 GiB free on Ubuntu root.",
+          "validation_commit": "4aefc95b7c4ad6ff7f6f1dbbfef8ba456a19d9a3"
+        }
+      ]
     }
   ]
 }
