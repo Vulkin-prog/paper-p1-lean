@@ -3189,6 +3189,7 @@ import PaperP1
 #print axioms PaperP1.AdjacentReferencePhase.uniform_relative
 #print axioms PaperP1.AdjacentReferencePhase.uniform_ratio
 #print axioms PaperP1.AdjacentReferencePhase.uniform_probability_gap
+#print axioms PaperP1.AlignedActivityPower.uniform_bound
 #print axioms PaperP1.AlignedPairRank.units_residual_bound
 #print axioms PaperP1.AlignedPairRank.channel_bound
 #print axioms PaperP1.AlignedPairRank.actual_intersection_bound
@@ -3809,6 +3810,7 @@ import PaperP1
 #print axioms PaperP1.NearLinearThreshold.scale_bound_eventually
 #print axioms PaperP1.NearLinearThreshold.window_bound_eventually
 #print axioms PaperP1.NearLinearThreshold.threshold_ge_power
+#print axioms PaperP1.NonalignedActivityUnderBCN.uniform_bound
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.rankSlope_pos
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.tripleGap_pos
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.tripleGap_lt_half
@@ -4008,6 +4010,11 @@ import PaperP1
 #print axioms PaperP1.QuarticLogPrimePool.raw_budget_le_envelope
 #print axioms PaperP1.QuarticLogPrimePool.actual_pool_count_critical
 #print axioms PaperP1.HostRealPowers.le_rpow_div_of_pow_le
+#print axioms PaperP1.RefinedPairActivityUnderBCN.rankSlope_ge_third
+#print axioms PaperP1.RefinedPairActivityUnderBCN.absolute_partition
+#print axioms PaperP1.RefinedPairActivityUnderBCN.uniform_pair_activity
+#print axioms PaperP1.RefinedPairActivityUnderBCN.uniform_cumulant
+#print axioms PaperP1.RefinedPairActivityUnderBCN.uniform_conversion
 #print axioms PaperP1.RelativeBlockRelationsCount.zero_count
 #print axioms PaperP1.RelativeBlockRelationsCount.induction_step
 #print axioms PaperP1.RelativeBlockRelationsCount.uniform_count
@@ -5570,6 +5577,9 @@ import PaperP1
 #print axioms PaperP1.Model.MultiplicativeMoments.finite_product_mean
 #print axioms PaperP1.Model.MultiplicativeMoments.finite_even_moment
 #print axioms PaperP1.Model.MultiplicativeMoments.infinite_even_moment
+#print axioms PaperP1.NonalignedActivityHostCap.ordered_data
+#print axioms PaperP1.NonalignedActivityHostCap.nonzero_cover
+#print axioms PaperP1.NonalignedActivityHostCap.finite_bound
 #print axioms PaperP1.NonconnectedActivity.canonical_cover
 #print axioms PaperP1.NonconnectedActivity.finite_bound
 #print axioms PaperP1.NonconnectedActivity.absolute_difference

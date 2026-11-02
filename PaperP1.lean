@@ -1530,3 +1530,7 @@ public import PaperP1.Model.AlignedCumulantReduction
 public import PaperP1.Asymptotics.SecondCumulantNonalignedReduction
 public import PaperP1.Asymptotics.DenseNonalignedProfileReduction
 public import PaperP1.Asymptotics.TwoChannelDenseProfileReduction
+public import PaperP1.Model.NonalignedActivityHostCap
+public import PaperP1.Asymptotics.NonalignedActivityUnderBCN
+public import PaperP1.Asymptotics.AlignedActivityPower
+public import PaperP1.Asymptotics.RefinedPairActivityUnderBCN
