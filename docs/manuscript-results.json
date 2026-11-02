@@ -9455,7 +9455,8 @@
           "validation": "Verified under Lean v4.36.0-rc2: full lake build (11073 jobs), source and ledger checks, actual axiom audit of 7125 declarations (only propext, Classical.choice and Quot.sound), and 4842 direct ledger/evidence declaration checks; Ubuntu root free space 14.97 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
           "validation_commit": "feefe733760d84967aede93a4dc2589abf4cfa9b"
         }
-      ]
+      ],
+      "validation_commit": "758042bd7c4f1da9d06ec7f78fab7365ec603267"
     },
     {
       "label": "p1:offset:cover-rank",
