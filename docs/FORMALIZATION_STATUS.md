@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5759 audited theorem/lemma declarations**. This
+- The project currently has **5801 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2647,3 +2647,19 @@ open. Article13.1 stays in progress; coverage75/167 and findings77.
 See [alignment](SHORT_BASIS_ALIGNMENT.md).
 
 Sparse-final-cut checkpoint verification: Lean v4.36.0-rc2 full build passed (10479 jobs); actual axiom audit passed for all 5759 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3474 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.00 GiB. An actual supported section on pivot columns, the actual sparse kernel basis, literal physical support transport and the actual final small-prime/two-parity cut are proved. The cut maps injectively into actual complete even relations, loses at mostpi(z)+2 dimensions and has a basis of support<=ell*(pi(z)+3), preserving physical and square-class-image injectivity. Its input medium-prime subspace and basis are explicit data. Short-cycle construction, its length/rank estimates, the sharp prime-harmonic bound and full source asymptotic assembly remain open; article13.1 stays in progress. Coverage75/167 (main27/73, companion48/94); findings77. Read-only Paper C comparisons introduce no additional source dependency, external estimate or assumed pivot/basis/completeness theorem. Original manuscripts and Palomar status are unchanged.
+
+
+## Actual sharp prime-harmonic and retained-component estimates for13.1
+
+The source prime-harmonic window is proved from actual factorial
+floors, actual prime-power summability and an actual Abel integral
+with all regularity hypotheses discharged. Its explicit inverse-log
+error supplies the exact(2/3)B log(1/a) retained-component loss. The
+actual retained family has count>=d_xy-(2/3)B log(1/a)-K_a B/log B
+uniformly over all critical pairs; K_a precedes C. Compatibility,
+nonalignment and non-overlap are unnecessary. The graph short-cycle
+length/rank estimates and final source short-basis assembly remain
+open, so article13.1 stays in progress. Coverage75/167, findings77.
+See [alignment](SHORT_BASIS_ALIGNMENT.md).
+
+Prime-harmonic checkpoint verification: Lean v4.36.0-rc2 full build passed (10493 jobs); actual axiom audit passed for all 5801 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3516 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.98 GiB. Actual factorial floors and prime-power summability construct the weighted prime-logarithm error constant; the actual Abel integral and exact real cutoffs prove the source prime-harmonic estimate with inverse-log error. Actual component deletion, internally proved prime-count and defective-vertex budgets give retained count>=d_xy-(2/3)B log(1/a)-K_a B/log B uniformly over all critical pairs, with K_a before C. No weighted-error, prime-harmonic, PNT-remainder or retained-count estimate is an unproved input. Graph short-cycle length/rank estimates and full short-basis assembly remain open; article13.1 stays in progress. Coverage75/167 (main27/73, companion48/94); findings77. Only one selective Log.Sum cache file was fetched; no additional Paper C source, manuscript-byte change or Palomar registration.

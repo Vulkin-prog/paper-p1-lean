@@ -3420,3 +3420,17 @@ source linear-algebra argument and exposes its finite constants;
 no new manuscript error or optimized bound is claimed. The required
 input short-cycle basis and prime-harmonic estimate remain open,
 so coverage75/167 and findings77 are unchanged.
+
+
+## Sharp actual harmonic error and retained-component coefficient for13.1
+
+The source prime harmonic window now has an actual internal proof,
+with an explicit positive constant H and error<=(2H/a+log10)/log B.
+Exact factorial floors, actual prime-power summability and actual Abel
+integrals discharge all inputs. The actual retained component family
+therefore has count>=d_xy-(2/3)B log(1/a)-K_a B/log B uniformly over
+every critical pair. K_a precedes C, propagating P1-MATH-0006; only
+the threshold depends on C. This verifies the source coefficient and
+error order, without claiming optimization or a new source-conclusion
+error. Short cycles and full asymptotic short-basis assembly remain
+open. Coverage75/167 and confirmed findings77 are unchanged.

@@ -2365,3 +2365,33 @@ dyadic reciprocal estimates and explicit PNT-remainder input do not
 prove the missing short-cycle length estimate or the required sharp
 prime-harmonic error here. No code from these files is adapted and no
 such premise is silently imported. Coverage75/167, findings77.
+
+
+## Actual sharp prime-harmonic window and retained components
+
+Stable ID: `P1-ARITH-MEDIUM-PRIME-HARMONIC`. Status: **proved**,
+the actual source Mertens window and initial component estimate for13.1.
+
+The exact factorial/von-Mangoldt floor identity, bounded floor errors
+and actual Chebyshev bound construct a bounded weighted Mangoldt
+error. Pinned Mathlib
+`ArithmeticFunction.vonMangoldt.summable_residueClass_non_primes_div`
+at modulus1 removes actual prime-power terms; inspection confirms its
+proof uses elementary prime-power parametrization, geometric sums and
+a convergent3/2-power series, without a PNT or Dirichlet remainder
+argument. Actual log-factorial bounds use pinned Mathlib Log.Sum and
+its proved Stirling/sum-integral foundations. An actual positive H is
+constructed from the actual convergent prime-power sum. Proved Abel
+summation, all regularity/integrability obligations and exact envelope
+integrals yield actual window error<=2H/log lowerEndpoint. Exact real
+cutoffs give error<=(2H/a+log10)/log B for the actual medium-prime sum.
+No weighted-sum, prime-harmonic, PNT-remainder or target retained-count
+estimate is an unproved input. One selective Log.Sum cache file was
+downloaded; no additional Paper C source is adapted.
+
+The proved actual prime-count and critical defective-position budgets
+then give actual retained count>=d_xy-(2/3)B log(1/a)-K_a B/log B,
+with K_a before C and uniformity over all critical pairs. This extends
+the existing P1-MATH-0006 constant-order improvement. The graph short-
+cycle estimates and final short-basis assembly remain open. Coverage
+75/167, confirmed findings77.

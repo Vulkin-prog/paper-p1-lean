@@ -100,17 +100,66 @@ at most ell. This is the proved final linear-algebra step of the source
 proof. The requisite input short-cycle space and its short basis still
 must be constructed from the actual retained incidence model.
 
+## The actual sharp prime harmonic window
+
+`MangoldtFloorBudget` proves the exact factorial identity with the
+actual floor divisions N/d. Their errors lie in [0,1], so Chebyshev's
+proved psi bound and actual log-factorial bounds give
+
+    log N - 1 <= sum_{n<=N} Lambda(n)/n <= log N + log4 + 4.
+
+`PrimeLogMertens` proves actual nonprime prime-power terms summable
+using the pinned Mathlib elementary prime-power/geometric-series
+lemma at modulus1. Their actual convergent sum gives an absolute
+constant H>0 bounding the weighted prime-log summatory error at every
+real endpoint>=2. No PNT remainder or weighted-sum bound is assumed.
+
+`LogarithmicAbelWindow` proves and estimates the actual Abel identity.
+All differentiability, integrability of the actual finite summatory
+function, envelope inequalities and log-log/inverse-log integrals are
+proved. The constant-error hypothesis is instantiated with the actual
+H just constructed, giving actual harmonic-window error<=2H/log a.
+
+`MediumPrimeHarmonic` identifies the actual finite medium-prime set
+with the real cutoff B^a<p<=10B. The two-logarithm shift and exact
+log-rpow identities give
+
+    abs(sum_{B^a<p<=10B} 1/p - log(1/a))
+      <= (2H/a+log10)/log B.
+
+An explicit power/ceiling threshold supplies the eventual estimate
+for every fixed0<a<=1. Only one missing Mathlib cache file was fetched
+for the log-factorial bounds; all caches remain on Ubuntu.
+
+## The actual uniform retained-component coefficient
+
+`RetainedComponentAsymptotics` combines the actual harmonic estimate,
+prime-count budget, one-third column deletion and component-size cut.
+With M=floor(log B), the exact actual retained family has count at least
+
+    d_xy - D0 - (2/3)B log(1/a) - ((2/3)K_window+18)B/log B.
+
+The actual defective-vertex estimate then proves, uniformly over every
+critical dyadic pair,
+
+    #retained >= d_xy - (2/3)B log(1/a) - K_a B/log B.
+
+K_a is chosen before C; only the eventual threshold depends on C.
+This propagates the existing uniformity improvement P1-MATH-0006.
+Compatibility, nonalignment and non-overlap are unnecessary. This is
+the full initial retained-component estimate of the source argument;
+it does not assert a completed short-cycle space or short basis.
+
 ## Remaining obligations
 
-The quantitative prime harmonic estimate at z=floor(B^a), the short-
-cycle construction with its length and retained-rank bounds, and the
-full source asymptotic short-basis assembly remain open. The final
-cut accepts an actual medium-prime subspace with its actual basis;
-these inputs are not counted as proved short-cycle constructions.
-Article13.1 remains in progress. No source-conclusion error, optimized
-constant, external graph bound, new Paper C source, manuscript-byte
-change or Palomar registration is claimed.
+The short-cycle construction with its length and retained-rank bounds,
+and the full source asymptotic short-basis assembly remain open. The
+final cut accepts an actual medium-prime subspace with its actual basis;
+the required short-cycle inputs must still be constructed from the
+actual incidence model. Article13.1 remains in progress. No source-
+conclusion error, optimized constant, external graph bound, new Paper C
+source, manuscript-byte change or Palomar registration is claimed.
 
 ## Validation
 
-Lean v4.36.0-rc2 full build passed (10479 jobs); actual axiom audit passed for all 5759 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3474 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.00 GiB. An actual supported section on pivot columns, the actual sparse kernel basis, literal physical support transport and the actual final small-prime/two-parity cut are proved. The cut maps injectively into actual complete even relations, loses at mostpi(z)+2 dimensions and has a basis of support<=ell*(pi(z)+3), preserving physical and square-class-image injectivity. Its input medium-prime subspace and basis are explicit data. Short-cycle construction, its length/rank estimates, the sharp prime-harmonic bound and full source asymptotic assembly remain open; article13.1 stays in progress. Coverage75/167 (main27/73, companion48/94); findings77. Read-only Paper C comparisons introduce no additional source dependency, external estimate or assumed pivot/basis/completeness theorem. Original manuscripts and Palomar status are unchanged.
+Lean v4.36.0-rc2 full build passed (10493 jobs); actual axiom audit passed for all 5801 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3516 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.98 GiB. Actual factorial floors and prime-power summability construct the weighted prime-logarithm error constant; the actual Abel integral and exact real cutoffs prove the source prime-harmonic estimate with inverse-log error. Actual component deletion, internally proved prime-count and defective-vertex budgets give retained count>=d_xy-(2/3)B log(1/a)-K_a B/log B uniformly over all critical pairs, with K_a before C. No weighted-error, prime-harmonic, PNT-remainder or retained-count estimate is an unproved input. Graph short-cycle length/rank estimates and full short-basis assembly remain open; article13.1 stays in progress. Coverage75/167 (main27/73, companion48/94); findings77. Only one selective Log.Sum cache file was fetched; no additional Paper C source, manuscript-byte change or Palomar registration.
