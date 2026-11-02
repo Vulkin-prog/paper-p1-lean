@@ -2807,6 +2807,14 @@ import PaperP1
 #print axioms PaperP1.RelaxedSaturation.outgoing_bound
 #print axioms PaperP1.RelaxedSaturation.incoming_bound
 #print axioms PaperP1.RelaxedSaturation.neighbors_bound
+#print axioms PaperP1.RepeatedCoefficientUnionRank.intersection_union_subset
+#print axioms PaperP1.RepeatedCoefficientUnionRank.union_rank
+#print axioms PaperP1.RepeatedCoefficientUnionRank.physical_a_dilate
+#print axioms PaperP1.RepeatedCoefficientUnionRank.physical_b_dilate
+#print axioms PaperP1.RepeatedCoefficientUnionRank.physical_a_rank
+#print axioms PaperP1.RepeatedCoefficientUnionRank.physical_b_rank
+#print axioms PaperP1.RepeatedCoefficientUnionRank.reduced_physical
+#print axioms PaperP1.RepeatedCoefficientUnionRank.triple_distinct
 #print axioms PaperP1.RetainedComponentAsymptotics.medium_card_le_primeCount
 #print axioms PaperP1.RetainedComponentAsymptotics.component_size_cost
 #print axioms PaperP1.RetainedComponentAsymptotics.lossConstant_pos
@@ -3922,6 +3930,10 @@ import PaperP1
 #print axioms PaperP1.InitialPairPartition.remaining_data
 #print axioms PaperP1.InitialPairPartition.activity_split
 #print axioms PaperP1.InitialPairPartition.uniform_bounds
+#print axioms PaperP1.InteriorAlignedTripleMass.source_mem_hosts
+#print axioms PaperP1.InteriorAlignedTripleMass.all_actual_sources
+#print axioms PaperP1.InteriorAlignedTripleMass.mass_le_sum
+#print axioms PaperP1.InteriorAlignedTripleMass.uniform_mass
 #print axioms PaperP1.IrregularPairActivity.finite_bound
 #print axioms PaperP1.IrregularPairActivity.uniform_marginal_mass
 #print axioms PaperP1.IrregularPairActivity.uniform_activity
@@ -4158,6 +4170,13 @@ import PaperP1
 #print axioms PaperP1.PairActivityUnderBCN.uniform_conversion
 #print axioms PaperP1.PairHostIndependentMass.finite_mass_cap
 #print axioms PaperP1.PairHostIndependentMass.uniform_mass
+#print axioms PaperP1.PhysicalTargetTripleMass.hosts_card
+#print axioms PaperP1.PhysicalTargetTripleMass.host_data
+#print axioms PaperP1.PhysicalTargetTripleMass.source_mem_hosts
+#print axioms PaperP1.PhysicalTargetTripleMass.all_actual_sources
+#print axioms PaperP1.PhysicalTargetTripleMass.uniform_count
+#print axioms PaperP1.PhysicalTargetTripleMass.uniform_mass
+#print axioms PaperP1.PhysicalTargetTripleProbability.uniform_point_bound
 #print axioms PaperP1.PlanarResidualRankHosts.residual_forces_many
 #print axioms PaperP1.PlanarResidualRankHosts.uniform_all_covers
 #print axioms PaperP1.PlanarResidualRankHosts.hosts_data
@@ -4475,6 +4494,7 @@ import PaperP1
 #print axioms PaperP1.ThreeSlopePositiveActivity.source_positive_lower
 #print axioms PaperP1.ThreeSlopePrivateDensity.bad_rate
 #print axioms PaperP1.ThreeSlopePrivateDensity.linear_good_population
+#print axioms PaperP1.ThreeWindowRankProbability.upper
 #print axioms PaperP1.TripleRankUnderBCN.uniform_triple_nullity
 #print axioms PaperP1.TripleRankUnderBCN.uniform_nonaligned_triple_nullity
 #print axioms PaperP1.TripleRankUnderBCN.article_13_8_under_BCN

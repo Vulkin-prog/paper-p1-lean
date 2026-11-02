@@ -5770,7 +5770,7 @@
         "statement_sha256": "1444566fc49d3124a28816f757f4d3b2f6dd5360c6017e8b9b97f606942c573c"
       },
       "original_assumption": "The canonical overlap calculation preceding main Lemma 14.2 uses parameter-interval lengths and states D(u,v,w)*L+O(1), with an absolute but unspecified endpoint error.",
-      "finding": "For every primitive u<v<w<2u, every L>=0 and arbitrary actual centers X_i>=2, complete product-normalized windows satisfy 3L-(union.card-1)<=D(u,v,w)*L+3. A direct union of two divisibility classes proves the bound, with no common-point, affine alignment, dyadic, private-prime, even-injectivity or compatibility assumption. Connected overlap and full even rank then give actual joint probability constants 2^(3+alpha*C), alpha=71/30 or 43/18 in the nonextremal case, including incompatible zero-mass systems. The finite canonical bound now combines with the already proved actual target-union residual to give unconditional point probability N^(-71/30+epsilon) and literal host mass N^(-41/30+epsilon) for all distinct interior physical slopes above one fixed reduced source channel, with arbitrary affine offsets and polynomial target height B^J. No private, even-injective, regular-window or connected-normalized-overlap hypothesis is imposed. Repeated physical, endpoint and nonaligned sectors remain open.",
+      "finding": "For every primitive u<v<w<2u, every L>=0 and arbitrary actual centers X_i>=2, complete product-normalized windows satisfy 3L-(union.card-1)<=D(u,v,w)*L+3. A direct union of two divisibility classes proves the bound, with no common-point, affine alignment, dyadic, private-prime, even-injectivity or compatibility assumption. Connected overlap and full even rank then give actual joint probability constants 2^(3+alpha*C), alpha=71/30 or 43/18 in the nonextremal case, including incompatible zero-mass systems. The finite canonical bound now combines with the already proved actual target-union residual to give unconditional point probability N^(-71/30+epsilon) and literal host mass N^(-41/30+epsilon) for all distinct interior physical slopes above one fixed reduced source channel, with arbitrary affine offsets and polynomial target height B^J. No private, even-injective, regular-window or connected-normalized-overlap hypothesis is imposed. Repeated physical, endpoint and nonaligned sectors remain open. For repeated physical slopes, positive actual triple mass leaves at most one complete-window overlap and the two remaining coincidence families lie in a single divisibility class. Their union gives canonical rank at least (5/2)*L-1, actual point probability N^(-5/2+epsilon) and actual host mass N^(-3/2+epsilon). Joining this sector with distinct slopes proves actual mass N^(-41/30+epsilon) for every represented interior aligned target, including exact contacts.",
       "evidence": [
         "PaperP1.IntervalDivisibilityCount.values_Ioc",
         "PaperP1.IntervalDivisibilityCount.count_add_div",
@@ -5818,11 +5818,31 @@
         "PaperP1.AlignedTargetTripleMass.source_mem_hosts",
         "PaperP1.AlignedTargetTripleMass.all_actual_sources",
         "PaperP1.AlignedTargetTripleMass.uniform_count",
-        "PaperP1.AlignedTargetTripleMass.uniform_mass"
+        "PaperP1.AlignedTargetTripleMass.uniform_mass",
+        "PaperP1.RepeatedCoefficientUnionRank.intersection_union_subset",
+        "PaperP1.RepeatedCoefficientUnionRank.union_rank",
+        "PaperP1.RepeatedCoefficientUnionRank.physical_a_dilate",
+        "PaperP1.RepeatedCoefficientUnionRank.physical_b_dilate",
+        "PaperP1.RepeatedCoefficientUnionRank.physical_a_rank",
+        "PaperP1.RepeatedCoefficientUnionRank.physical_b_rank",
+        "PaperP1.RepeatedCoefficientUnionRank.reduced_physical",
+        "PaperP1.RepeatedCoefficientUnionRank.triple_distinct",
+        "PaperP1.ThreeWindowRankProbability.upper",
+        "PaperP1.PhysicalTargetTripleProbability.uniform_point_bound",
+        "PaperP1.PhysicalTargetTripleMass.hosts_card",
+        "PaperP1.PhysicalTargetTripleMass.host_data",
+        "PaperP1.PhysicalTargetTripleMass.source_mem_hosts",
+        "PaperP1.PhysicalTargetTripleMass.all_actual_sources",
+        "PaperP1.PhysicalTargetTripleMass.uniform_count",
+        "PaperP1.PhysicalTargetTripleMass.uniform_mass",
+        "PaperP1.InteriorAlignedTripleMass.source_mem_hosts",
+        "PaperP1.InteriorAlignedTripleMass.all_actual_sources",
+        "PaperP1.InteriorAlignedTripleMass.mass_le_sum",
+        "PaperP1.InteriorAlignedTripleMass.uniform_mass"
       ],
       "proposed_revision": "State the finite canonical-union inequality with explicit endpoint constant 3 before the sharp rational inequality, and give the exact divisibility-class proof. Preserve the separate need to control the residual arithmetic kernel when converting canonical coincidences to actual ranks.",
       "impact": "Makes the bounded endpoint error effective and uniform in all slopes and affine window translations; simplifies the geometric proof to exact integer counts. It improves the earlier formalized zero-intercept finite error 5 to 3. No manuscript conclusion error or change to asymptotic exponents is asserted; full aligned-family aggregation and the total third-cumulant bound remain incomplete.",
-      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11199 jobs), actual kernel-axiom audit (7463 declarations; only propext, Classical.choice and Quot.sound), 5180 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.73 GiB free on Ubuntu root.",
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11209 jobs), actual kernel-axiom audit (7483 declarations; only propext, Classical.choice and Quot.sound), 5200 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.71 GiB free on Ubuntu root.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
@@ -5834,9 +5854,15 @@
           "proposed_revision": "State the finite canonical-union inequality with explicit endpoint constant 3 before the sharp rational inequality, and give the exact divisibility-class proof. Preserve the separate need to control the residual arithmetic kernel when converting canonical coincidences to actual ranks.",
           "validation": "Verified with Lean v4.36.0-rc2: full lake build (11185 jobs), actual kernel-axiom audit (7434 declarations; only propext, Classical.choice and Quot.sound), 5151 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.75 GiB free on Ubuntu root.",
           "validation_commit": "4aefc95b7c4ad6ff7f6f1dbbfef8ba456a19d9a3"
+        },
+        {
+          "finding": "For every primitive u<v<w<2u, every L>=0 and arbitrary actual centers X_i>=2, complete product-normalized windows satisfy 3L-(union.card-1)<=D(u,v,w)*L+3. A direct union of two divisibility classes proves the bound, with no common-point, affine alignment, dyadic, private-prime, even-injectivity or compatibility assumption. Connected overlap and full even rank then give actual joint probability constants 2^(3+alpha*C), alpha=71/30 or 43/18 in the nonextremal case, including incompatible zero-mass systems. The finite canonical bound now combines with the already proved actual target-union residual to give unconditional point probability N^(-71/30+epsilon) and literal host mass N^(-41/30+epsilon) for all distinct interior physical slopes above one fixed reduced source channel, with arbitrary affine offsets and polynomial target height B^J. No private, even-injective, regular-window or connected-normalized-overlap hypothesis is imposed. Repeated physical, endpoint and nonaligned sectors remain open.",
+          "impact": "Makes the bounded endpoint error effective and uniform in all slopes and affine window translations; simplifies the geometric proof to exact integer counts. It improves the earlier formalized zero-intercept finite error 5 to 3. No manuscript conclusion error or change to asymptotic exponents is asserted; full aligned-family aggregation and the total third-cumulant bound remain incomplete.",
+          "proposed_revision": "State the finite canonical-union inequality with explicit endpoint constant 3 before the sharp rational inequality, and give the exact divisibility-class proof. Preserve the separate need to control the residual arithmetic kernel when converting canonical coincidences to actual ranks.",
+          "validation": "Verified with Lean v4.36.0-rc2: full lake build (11199 jobs), actual kernel-axiom audit (7463 declarations; only propext, Classical.choice and Quot.sound), 5180 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.73 GiB free on Ubuntu root.",
+          "validation_commit": "afe4303f243bc54a69935c7fe1331747ce1a9214"
         }
-      ],
-      "validation_commit": "afe4303f243bc54a69935c7fe1331747ce1a9214"
+      ]
     }
   ]
 }

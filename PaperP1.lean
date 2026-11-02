@@ -1618,3 +1618,8 @@ public import PaperP1.Arithmetic.AlignedTargetCanonicalRank
 public import PaperP1.Arithmetic.AlignedTripleParameterPool
 public import PaperP1.Asymptotics.AlignedTargetTripleProbability
 public import PaperP1.Asymptotics.AlignedTargetTripleMass
+public import PaperP1.Arithmetic.RepeatedCoefficientUnionRank
+public import PaperP1.Asymptotics.ThreeWindowRankProbability
+public import PaperP1.Asymptotics.PhysicalTargetTripleProbability
+public import PaperP1.Asymptotics.PhysicalTargetTripleMass
+public import PaperP1.Asymptotics.InteriorAlignedTripleMass
