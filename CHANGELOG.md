@@ -1,5 +1,12 @@
 # Change log
 
+## Verified development — 2 November 2026
+
+- Complete article13.1 with actual short-basis subspaces, bases and all source asymptotic estimates.
+- Record the endpoint a=1 extension and constant uniformity before C.
+- Current numbered coverage:76/167; confirmed mathematical findings:78.
+- Original manuscripts remain byte-preserved; Palomar qualification is still a later milestone.
+
 ## In progress — 31 October 2026
 
 - Prove article Lemma 5.1 over arbitrary finite ordered carriers, including

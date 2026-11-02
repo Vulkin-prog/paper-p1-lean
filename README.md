@@ -4,7 +4,15 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: active formalization, 72 / 167 numbered results proved.**
+**Status: active formalization, 76 / 167 numbered results proved.**
+
+Article13.1 now has a complete actual short-basis construction, with
+both physical projections and the common square-class map injective.
+All arithmetic, incidence-growth and logarithmic estimates are proved.
+The support constant352/a is explicit; multiplicative constants precede
+C, and the endpoint a=1 is included. Article13.2 and proposition13.3
+are also complete. See [the short-basis alignment](docs/SHORT_BASIS_ALIGNMENT.md).
+
 Companion T22.7 is complete: the actual infinite replica formula, the
 uniform colored conditional target sum and every fixed positive weighted
 replica moment are proved. Repeated centers and arbitrary ordered tuple

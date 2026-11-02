@@ -1080,3 +1080,11 @@ public import PaperP1.Algebra.ShortIncidenceRoutes
 public import PaperP1.Combinatorics.IncidenceBallGrowth
 
 public import PaperP1.Arithmetic.ShortBasisFiniteConstruction
+
+public import PaperP1.Analysis.ShortBasisParameters
+
+public import PaperP1.Arithmetic.SmallPrimeShortBasisBudget
+
+public import PaperP1.Arithmetic.ShortBasisActualSpace
+
+public import PaperP1.Arithmetic.ShortBasisTheorem

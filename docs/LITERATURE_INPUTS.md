@@ -2486,3 +2486,10 @@ source-conclusion error, optimized bound, Paper C source, manuscript-
 byte change or Palomar registration is claimed.
 
 Pinned Mathlib finite-set induction, exact finite sums, independent single-coordinate families, finite-span dimensions and the already proved actual sparse final cut supply all steps. No external graph-theoretic proposition or numeric power bound is silently assumed.
+
+
+## Completed source short basis and all logarithmic parameter estimates
+
+Stable ID: `P1-ARITH-COMPLETE-SHORT-BASIS`. Status: **proved**, full article13.1.
+
+All source arithmetic and graph inputs are internally proved. Actual Chebyshev bounds, integer-log power bounds, real log/sqrt/floor inequalities, actual range equivalences and actual complete-relation constraints discharge all finite and asymptotic steps. There is no external Moore, BFS, short-cycle, sparse-basis, Mertens-window or target-bound premise. Pinned Mathlib `Real.natLog_le_logb`, `Nat.lt_pow_succ_log_self`, finite-dimensional basis transport, finite sums, powers and logarithms are used with actual proved hypotheses. The chosen d,r give residual<=48B/sqrt(log B), short-vector support<=11log B/loglog B and final support constant352/a. The critical threshold precedes all variable lengths/starts; multiplicative constants precede C. The endpoint a=1 is included; a remains fixed. No added Paper C source or dependency download. Coverage76/167, findings78.

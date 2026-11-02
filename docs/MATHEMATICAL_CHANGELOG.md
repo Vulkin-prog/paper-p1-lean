@@ -3444,3 +3444,8 @@ The source deletion argument is now proved with actual witness coordinates and a
 ## Direct finite incidence growth closes the short-vector existence input
 
 The source Moore/BFS step now has a direct proof using actual bounded edge-vector routes and their actual span rank. It preserves all labelled edges and proves explicit constants e>2d*n, n<d^r and support<=2r+1. Combined with actual witness deletion and final prime/parity constraints, the finite complete-relation construction loses at most2d*n+pi(z)+2 dimensions and has basis physical support<=M*(2r+1)*(pi(z)+3). This verifies the finite source argument without an external short-cycle hypothesis. Numerical logarithmic choices and full source asymptotic assembly remain open. No new correction or optimized constant is claimed; coverage75/167 and confirmed findings77 are unchanged.
+
+
+## Completed13.1: constant uniformity and endpoint a=1
+
+Full article13.1 is proved. P1-MATH-0006 now propagates through the full theorem: KD(a),KS(a) are chosen before C, with only the threshold N0(a,C) depending on C. The support constant can be taken352/a, without an optimization claim. P1-MATH-0078 records the additional endpoint a=1; the source interval(0,1) remains included. Its support bound is coarse at the endpoint, and the universal physical cap2B is proved separately. No a=0 or varying-a extension is claimed. Actual complete-relation subspaces, their actual bases, physical/common-class injectivity and nonzero even selections are all explicit. Coverage76/167(main28/73,companion48/94), confirmed findings78.

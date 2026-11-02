@@ -189,7 +189,7 @@
         "statement_sha256": "8b2ed4253a1ab2c85cfe8f957d205dff13ea7e6b5dd7ea1f04e82f28f3b49409"
       },
       "original_assumption": "The number of 10B-defective positions in every critical window is O_C(B/log B). Companion T9.3 likewise states its free-component error as O_C(B/log B).",
-      "finding": "One positive absolute multiplicative constant works for every fixed critical-band width C. Only the eventual threshold N0 depends on C. The count is the actual kernel-one set in the full vertex interval. The free-component comparison in T9.3 also has an absolute multiplicative constant before C, with a C-dependent threshold, by the complete rank-cost proof and the critical local-kernel bound.",
+      "finding": "One positive absolute multiplicative constant works for every fixed critical-band width C. Only the eventual threshold N0 depends on C. The count is the actual kernel-one set in the full vertex interval. The free-component comparison in T9.3 also has an absolute multiplicative constant before C, with a C-dependent threshold, by the complete rank-cost proof and the critical local-kernel bound. This now propagates through the complete article13.1 short-basis construction: both the dimension-loss constant and the basis-support constant depend on fixed a alone and can be chosen before C. The latter can be taken explicitly as352/a. Only N0(a,C) depends on C.",
       "evidence": [
         "PaperP1.CriticalDefectPositions.uniform_critical_defect_constant",
         "PaperP1.CriticalDefectPositions.companion_T9_2",
@@ -198,11 +198,14 @@
         "PaperP1.FreeComponentRank.companion_T9_3",
         "PaperP1.FreeComponentRank.component_intersection_abs_bound",
         "PaperP1.Affine.finrank_completeRelationCode",
-        "PaperP1.Affine.large_relation_rank_le_complete_add_cost"
+        "PaperP1.Affine.large_relation_rank_le_complete_add_cost",
+        "PaperP1.RetainedComponentAsymptotics.critical_retained_lower",
+        "PaperP1.ShortBasisTheorem.supportConstant_eq",
+        "PaperP1.ShortBasisTheorem.article_13_1"
       ],
-      "proposed_revision": "There exists an absolute K>0 such that for every fixed C there is N0(C), and all N≥N0(C), all critical-band lengths L and all dyadic starts x, the number of n∈V_x with K_(10B)(n)=1 is at most K B/log B, where B=L+1. In T9.3, the same quantifier order also gives an absolute constant for |c-d_xy|≤K B/log B, with only the threshold depending on C; the multiplicative constant need not equal the one in T9.2.",
-      "impact": "Clarifies and strengthens the constant uniformity in T9.2. The threshold may still depend on the fixed band width. No admissibility, positive start probability or full-rank assumption is added. The cutoff 10B and the B/log B rate are unchanged. This constant uniformity propagates to the full free-component estimate in T9.3, including overlapping physical windows. The two local kernels are bounded using the proved critical rigidity theorem; no regularity or admissibility premise is introduced.",
-      "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 1435 declarations at the recorded complete T9.3 implementation commit; only propext, Classical.choice and Quot.sound. The original T9.2 validation is preserved in validation_history. All recorded evidence declarations are directly audited, and all 112 distinct coverage/finding reference names were also checked by Lean.",
+      "proposed_revision": "There exists an absolute K>0 such that for every fixed C there is N0(C), and all N≥N0(C), all critical-band lengths L and all dyadic starts x, the number of n∈V_x with K_(10B)(n)=1 is at most K B/log B, where B=L+1. In T9.3, the same quantifier order also gives an absolute constant for |c-d_xy|≤K B/log B, with only the threshold depending on C; the multiplicative constant need not equal the one in T9.2. In article13.1, replace O_(a,C) in both the dimension loss and support bound by O_a, retaining an eventual threshold N0(a,C); the proved support constant352/a is a safe explicit choice.",
+      "impact": "Clarifies and strengthens the constant uniformity in T9.2. The threshold may still depend on the fixed band width. No admissibility, positive start probability or full-rank assumption is added. The cutoff 10B and the B/log B rate are unchanged. This constant uniformity propagates to the full free-component estimate in T9.3, including overlapping physical windows. The two local kernels are bounded using the proved critical rigidity theorem; no regularity or admissibility premise is introduced. The complete short-basis theorem13.1 inherits this stronger constant order; neither compatibility nor nonalignment nor disjointness of the underlying numerical windows is required.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10519 jobs); actual axiom audit passed for all 5879 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3594 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.94 GiB. Full article13.1 is proved: the actual complete-relation subspace and its actual transported basis have dimension >=d_xy-(2/3)B log(1/a)-KD(a) B/sqrt(log B) and literal physical support<=KS(a) B^a log B/loglog B. Both physical projections and the actual common square-class map are injective; every nonzero vector selects nonempty even sets in both formal blocks and has nonzero common class. All actual prime estimates, retained-component bounds, labelled incidence-core/route/ball arguments, witness deletion, final sparse kernel cuts, basis transport and logarithmic numerical estimates are internally proved. Constants KD(a),KS(a) precede C, with a C-dependent threshold; KS(a)=352/a is a safe explicit choice. P1-MATH-0006 propagates this constant order, and P1-MATH-0078 adds the endpoint a=1. No compatibility, nonalignment, non-overlap, short-cycle, sparse-basis or target-bound premise. Coverage76/167 (main28/73, companion48/94); findings78. No optimized constant, source-conclusion error, new external estimate, added Paper C source, dependency download, manuscript-byte change or Palomar registration.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
@@ -212,6 +215,12 @@
           "validation_commit": "548a0d2d02f1871aa3e4b26d7526082183f7bf03",
           "audited_declarations": 1301,
           "scope": "Original T9.2 absolute defect constant; the T9.3 consequence is added at the later complete free-component checkpoint."
+        },
+        {
+          "validation_commit": "a96edd26685699c9dfc651d9de2e7f7945773342",
+          "audited_declarations": 1435,
+          "validation": "Full Lean v4.36.0-rc2 build and actual kernel axiom audit for all 1435 declarations at the recorded complete T9.3 implementation commit; only propext, Classical.choice and Quot.sound. The original T9.2 validation is preserved in validation_history. All recorded evidence declarations are directly audited, and all 112 distinct coverage/finding reference names were also checked by Lean.",
+          "scope": "Completed T9.2/T9.3 constant uniformity before extending it to the full article13.1 short-basis theorem."
         }
       ],
       "affected_locations": [
@@ -224,9 +233,18 @@
           "source": "companion_sections/pair_rigidity.tex",
           "line": 129,
           "statement_sha256": "3180e3bd07251b593f9c834c334297f64d5d97fcad49629093e529b7d39d45ca"
+        },
+        {
+          "version": "P1 V1.6",
+          "document": "main",
+          "label": "p13:rig:short-basis",
+          "number": "13.1",
+          "page": 30,
+          "source": "main_sections/pair_rigidity.tex",
+          "line": 88,
+          "statement_sha256": "15f2fe4ac0c1ddbc4e232f710469e0a1cf2eecaff16778177bd0ac1cadde3838"
         }
-      ],
-      "validation_commit": "a96edd26685699c9dfc651d9de2e7f7945773342"
+      ]
     },
     {
       "id": "P1-MATH-0007",
@@ -4276,6 +4294,36 @@
       "validation_history": [
         "0c658ee35b8050dfbc3b3da5cc90ae3c1568a58b"
       ]
+    },
+    {
+      "id": "P1-MATH-0078",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:short-basis",
+        "number": "13.1",
+        "page": 30,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 88,
+        "statement_sha256": "15f2fe4ac0c1ddbc4e232f710469e0a1cf2eecaff16778177bd0ac1cadde3838"
+      },
+      "original_assumption": "Article13.1 states short-basis extraction for each fixed a in the open interval(0,1).",
+      "finding": "The entire source construction, actual dimension lower bound, actual basis support bound, both physical injectivities, common square-class injectivity and the nonzero even-selection conclusion remain valid for each fixed0<a<=1. No strict inequality a<1 is used in the completed proof. The endpoint a=1 retains positive logarithmic denominators eventually; the leading logarithmic dimension loss vanishes because log(1)=0.",
+      "evidence": [
+        "PaperP1.ShortBasisTheorem.article_13_1",
+        "PaperP1.SmallPrimeShortBasisBudget.constraint_cost_le_large_scale",
+        "PaperP1.ShortBasisActualSpace.nonzero_even_selections",
+        "PaperP1.ShortBasisActualSpace.physical_support_card_le"
+      ],
+      "proposed_revision": "Allow a in(0,1] in theorem13.1 and its extraction proof. Keep a fixed and retain an a-dependent threshold. Mention that the endpoint is a scope extension; the genuinely sublinear power scale is the range a<1.",
+      "impact": "Adds the endpoint a=1 without changing any original source conclusion or claiming optimized constants. At the endpoint the support estimate is coarse; the universal literal support cap2B is also proved. This does not extend to a=0 or allow a to vary with N. Full original theorem13.1 is included. Coverage76/167(main28/73,companion48/94); confirmed findings78.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10519 jobs); actual axiom audit passed for all 5879 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3594 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.94 GiB. Full article13.1 is proved: the actual complete-relation subspace and its actual transported basis have dimension >=d_xy-(2/3)B log(1/a)-KD(a) B/sqrt(log B) and literal physical support<=KS(a) B^a log B/loglog B. Both physical projections and the actual common square-class map are injective; every nonzero vector selects nonempty even sets in both formal blocks and has nonzero common class. All actual prime estimates, retained-component bounds, labelled incidence-core/route/ball arguments, witness deletion, final sparse kernel cuts, basis transport and logarithmic numerical estimates are internally proved. Constants KD(a),KS(a) precede C, with a C-dependent threshold; KS(a)=352/a is a safe explicit choice. P1-MATH-0006 propagates this constant order, and P1-MATH-0078 adds the endpoint a=1. No compatibility, nonalignment, non-overlap, short-cycle, sparse-basis or target-bound premise. Coverage76/167 (main28/73, companion48/94); findings78. No optimized constant, source-conclusion error, new external estimate, added Paper C source, dependency download, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

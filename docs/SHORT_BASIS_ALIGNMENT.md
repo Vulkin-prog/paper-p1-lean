@@ -1,244 +1,147 @@
-# Actual finite stages of short-basis extraction
+# Complete article short-basis theorem13.1
 
-Source: article theorem13.1, `p13:rig:short-basis`,
-`main_sections/pair_rigidity.tex:88`, and its companion proof in
-`companion_sections/pair_rigidity.tex:159`. Status: **in progress**.
-Coverage75/167 (main27/73, companion48/94); confirmed findings77.
+Source: article13.1, `p13:rig:short-basis`,
+`main_sections/pair_rigidity.tex:88`, and its companion extraction proof
+in `companion_sections/pair_rigidity.tex:159`. Status: **proved**.
+Coverage76/167 (main28/73, companion48/94); confirmed findings78.
+Original V1.6 manuscript bytes are unchanged.
 
-## Actual components and finite deletion costs
+## Exact statement and quantifier order
 
-`MediumPrimeColumns` constructs the actual medium primes z<p<=10B,
-the actual vertex sets of the actual large-prime components, their
-literal prime-parity sums and the supports of these columns. Here
-B=L+1 and the two physical blocks stay disjoint formal copies.
-For any selected component family, disjointness implies
+`ShortBasisTheorem.article_13_1` proves that, for each fixed0<a<=1,
+there are positive KD(a),KS(a), chosen before every critical-band
+width C, and a threshold N0(a,C), such that for all larger N, every
+critical length L and every dyadic pair x,y, an actual complete-relation
+subspace has
 
-    sum(column weights) <= sum_p #(actual odd p-occurrences).
+    dimension >= d_xy - (2/3)B log(1/a) - KD(a) B/sqrt(log B),
+    basis total physical support <= KS(a) B^a log B/loglog B,
+    B=L+1.
 
-Each original block injects into its actual interval of length B.
-Counting its multiples gives at most B/p+1 occurrences, even before
-discarding even prime valuations. Thus the total actual column weight
-is at most 2B*sum_p(1/p)+2*#P. All interval shifts, including the left
-true-window endpoint, are retained.
+`ShortBasisActualSpace.Certificate.space` is an actual submodule of
+`Affine.completeRelationCode`, with an actual basis. Its two physical
+projections and its actual common square-class map are injective.
+Every nonzero vector selects a nonempty even set in each block and
+has nonzero common square class. `commonClasses_equal` identifies
+that class with the second-block image; `commonClasses_mem_intersection`
+places it in both actual square-class spaces.
 
-`DisjointColumnWeights` proves the exact finite deletion cost:
-weight>=3 columns number at most one third of the total weight.
-There is no factor M multiplying that loss. The actual component
-vertex sets are disjoint and have total size at most2B, so deleting
-components of size>M costs at most2B/(M+1).
+The two physical blocks are disjoint formal copies, including when
+their numerical windows overlap. Compatibility, admissibility,
+nonalignment and non-overlap are unnecessary.
 
-`ShortBasisComponentStage` constructs the actual retained family.
-Using the already proved comparison with the actual intersection rank,
-its cardinality is at least
+## Actual components, prime columns and deletion costs
 
-    d_xy - D0 - 2B/(M+1) - (2B*sum_p(1/p)+2*#P)/3,
+Actual medium primes are z<p<=10B. Disjoint actual component vertex
+sets imply the sum of literal column weights is at most the sum of
+actual odd prime-occurrence counts. The actual interval maps and
+multiple counts give total weight<=2B*sum(1/p)+2*#P.
 
-where D0 is the actual defective vertex count and P is the actual
-medium-prime set. Every retained component has size at most M and
-an actual medium-prime column of weight at most two. No defective
-count or prime asymptotic is assumed as an unconditional conclusion.
+Deleting components of size>M costs at most2B/(M+1); deleting columns
+of weight>=3 costs at most one third of their actual total weight.
+There is no extra factor M in this deletion count. Actual free
+nontrivial components meet both blocks and carry a private large
+prime, which proves both physical and actual class-map injectivity.
 
-## Actual physical and square-class injectivity
+`MangoldtFloorBudget` proves the exact factorial/Mangoldt floor
+identity. Actual Chebyshev and log-factorial bounds, and the actual
+convergent nonprime prime-power sum, give a bounded weighted-prime
+logarithm error. `LogarithmicAbelWindow` discharges all differentiability
+and integrability obligations of the actual Abel identity and proves
+the inverse-log error. Exact real cutoffs yield
 
-`ComponentProjectionInjectivity` proves that selecting the free
-nontrivial components satisfies every actual large-prime equation.
-Every such component meets both physical blocks, so both physical
-projections are injective. An actual large prime carried by an edge
-occurs once in each block and witnesses the coefficient of that
-component in the actual first-block prime-parity map. This proves
-square-class-image injectivity, without an assumed rank or separation
-property. Later subspaces inherit these injectivities.
+    abs(sum_{B^a<p<=10B} 1/p - log(1/a)) <= K_window(a)/log B.
 
-## Actual medium-prime incidence model
+Thus `RetainedComponentAsymptotics.critical_retained_lower` gives an
+actual retained count>=d_xy-(2/3)B log(1/a)-K_ret(a) B/log B, with
+K_ret(a) before C. No prime-harmonic, PNT-remainder, retained-count or
+summatory-error conclusion is an external premise.
 
-`BinaryIncidenceAugmentation` adds one row equal to the sum of all
-original rows. The resulting linear map is injective, hence preserves
-the kernel after composition with any actual column map. Every finite
-binary column of weight at most two is realized by actual endpoints
-among the original row vertices plus one infinity vertex. A zero
-column is a loop, a weight-one column joins infinity, and weight-two
-columns join their actual distinct row vertices. Edge labels retain
-parallel columns.
+## Actual incidence model and proved short-vector bound
 
-`MediumPrimeIncidence` proves that the typed column indicators equal
-the actual component prime-parity sums. Its actual medium-prime map
-is also identified with the literal equations on the selected formal
-physical occurrences. The labelled incidence map and this actual
-medium-prime map have exactly the same kernel. This is a constructed
-finite model, not a postulated incidence or kernel correspondence.
+Every retained binary medium-prime column has weight<=2. Add one
+infinity row equal to the sum of all original rows. This augmentation
+is injective and preserves the actual kernel. Actual endpoints realize
+weight0 columns as loops, weight1 columns as infinity edges, and
+weight2 columns as ordinary labelled edges. Parallel labels are kept.
+`MediumPrimeIncidence` identifies this actual incidence kernel with
+the literal medium-prime equations on selected physical occurrences.
 
-## The final actual small-prime and parity cut
+`LabelledEdgeCore` proves actual vertex pruning with the exact edge-
+deletion budget. If e>2d*n, a nonempty actual core retains incident
+degree>=2d. Exact double counting bounds incidence sums by twice the
+number of touching edge labels.
 
-`SupportedLinearSection` extracts a basis of the actual range from
-actual single-column images, chooses the corresponding pivot columns
-and constructs an actual right inverse supported on at most the target
-dimension many pivots. `SparseKernelBasis` projects each actual single
-column into the kernel. These projected vectors span the actual kernel;
-a basis extracted from them has support at most target dimension+1.
-The result holds even for arbitrary coordinate index sets.
+`ShortIncidenceRoutes` constructs actual short edge vectors with
+boundary delta(root)+delta(vertex). If there is no nonzero kernel
+vector of support<=2r+1, each edge inside the radius-r ball is exactly
+the difference of its actual endpoint route vectors. The independent
+single-edge vectors lie in their actual finite span, giving
+#insideEdges<=#ball. `IncidenceBallGrowth` deduces d-fold ball growth,
+then #ball(r)>=d^r. Therefore
 
-`LinearCombinationSupport` bounds the literal support of a linear
-combination by the actual union of its input supports.
-`SparseConstraintBasis` transports the coordinate kernel back into
-the original space. Thus a basis with physical support at most ell,
-cut by s finite equations, has an actual kernel basis of physical
-support at most ell*(s+1). No sparse basis or pivot conclusion is an
-unproved argument of this theorem.
+    e>2d*n and n<d^r => an actual nonzero kernel vector of support<=2r+1.
 
-`ShortBasisFinalCut` constructs the actual pi(z) small-prime equations
-and the separate two block-parity equations on any actual medium-prime
-subspace. Every vector of the resulting actual kernel is proved to be
-an actual complete even relation: every prime is checked in its large,
-medium or small range; nonprime parity coordinates are zero. The map
-into the actual complete relation code is injective and loses at most
-pi(z)+2 dimensions. Both physical projections and the actual first-
-block prime-parity image remain injective after this cut.
+No simple-graph conversion, BFS, girth, cycle-length or forest-rank
+estimate is an unproved input. Loops and parallel edges are covered.
 
-The resulting actual kernel has a basis of physical support at most
-ell*(pi(z)+3) whenever its supplied input basis has physical support
-at most ell. This is the proved final linear-algebra step of the source
-proof. The requisite input short-cycle space and its short basis still
-must be constructed from the actual retained incidence model.
+## Independent family, final kernel and actual basis
 
-## The actual sharp prime harmonic window
+`GreedyShortKernel` chooses an actual nonzero witness coordinate in
+each short vector and deletes only that coordinate. It vanishes on
+all later vectors, proving independence. The actual spanned subspace
+has dimension>=e-2d*n and an actual short basis.
 
-`MangoldtFloorBudget` proves the exact factorial identity with the
-actual floor divisions N/d. Their errors lie in [0,1], so Chebyshev's
-proved psi bound and actual log-factorial bounds give
+Selecting one retained component has actual physical support exactly
+its actual vertex set, of size<=M. Literal support unions give actual
+physical support<=M*(2r+1) for this basis.
 
-    log N - 1 <= sum_{n<=N} Lambda(n)/n <= log N + log4 + 4.
-
-`PrimeLogMertens` proves actual nonprime prime-power terms summable
-using the pinned Mathlib elementary prime-power/geometric-series
-lemma at modulus1. Their actual convergent sum gives an absolute
-constant H>0 bounding the weighted prime-log summatory error at every
-real endpoint>=2. No PNT remainder or weighted-sum bound is assumed.
-
-`LogarithmicAbelWindow` proves and estimates the actual Abel identity.
-All differentiability, integrability of the actual finite summatory
-function, envelope inequalities and log-log/inverse-log integrals are
-proved. The constant-error hypothesis is instantiated with the actual
-H just constructed, giving actual harmonic-window error<=2H/log a.
-
-`MediumPrimeHarmonic` identifies the actual finite medium-prime set
-with the real cutoff B^a<p<=10B. The two-logarithm shift and exact
-log-rpow identities give
-
-    abs(sum_{B^a<p<=10B} 1/p - log(1/a))
-      <= (2H/a+log10)/log B.
-
-An explicit power/ceiling threshold supplies the eventual estimate
-for every fixed0<a<=1. Only one missing Mathlib cache file was fetched
-for the log-factorial bounds; all caches remain on Ubuntu.
-
-## The actual uniform retained-component coefficient
-
-`RetainedComponentAsymptotics` combines the actual harmonic estimate,
-prime-count budget, one-third column deletion and component-size cut.
-With M=floor(log B), the exact actual retained family has count at least
-
-    d_xy - D0 - (2/3)B log(1/a) - ((2/3)K_window+18)B/log B.
-
-The actual defective-vertex estimate then proves, uniformly over every
-critical dyadic pair,
-
-    #retained >= d_xy - (2/3)B log(1/a) - K_a B/log B.
-
-K_a is chosen before C; only the eventual threshold depends on C.
-This propagates the existing uniformity improvement P1-MATH-0006.
-Compatibility, nonalignment and non-overlap are unnecessary. This is
-the full initial retained-component estimate of the source argument;
-it does not assert a completed short-cycle space or short basis.
-
-## Greedy independence and actual complete-relation assembly
-
-`GreedyShortKernel` proves the actual witness-edge deletion argument.
-A nonzero short kernel vector has an actual nonzero coordinate. Deleting
-that coordinate and recursing gives independent vectors: the chosen
-coordinate vanishes on the span of all later vectors. If every remaining
-set of more than r columns has a kernel vector of support<=k, the actual
-spanned subspace has dimension>=#columns-r and an actual basis of such
-vectors. Literal physical support transfers through the actual linear map.
-
-`ColumnDependencies` constructs actual unit or difference vectors for
-zero and equal columns. `BinaryIncidenceShortVectors` specializes these
-to loops and unordered parallel endpoints, including characteristic2
-and the exact finite-function/Finsupp correspondence. These cases have
-support1 and2; no simple-graph short-cycle bound is inferred from them.
-
-`ComponentSelectionSupport` identifies the actual support of selecting
-one retained component with its actual physical vertex set, of size<=M.
-`ShortBasisCycleReduction` combines the proved greedy construction,
-actual medium-prime map, physical selection and actual final cut. Its
-**explicit local hypothesis** is: every edge subset of cardinality>r
-has a nonzero vector of the actual incidence kernel, supported there
-and of cardinality<=k. Under this hypothesis it constructs an actual
-complete-relation image with
-
-    dimension >= #retained - r - (pi(z)+2),
-    basis physical support <= M*k*(pi(z)+3).
-
-Both physical projections and the actual common square-class map are
-injective. The conditional statement is finite preparation, not the
-full source theorem. The local existence hypothesis with the required
-logarithmic k and residual r is still open for actual simple graphs.
-Final source asymptotic assembly also remains open. Coverage75/167,
-confirmed findings77. No additional external estimate, Paper C source,
-manuscript-byte change or Palomar registration is introduced.
-
-## Actual labelled incidence growth and finite extraction
-
-`LabelledEdgeCore` proves actual pruning by finite-set induction, with
-an exact edge-deletion budget. If e>2d*n, a nonempty actual vertex set
-retains incident degree at least2d. Edge labels are preserved, including
-loops and parallel edges. An exact double count bounds the sum of
-incident degrees on a set by twice its number of touching edge labels.
-
-`ShortIncidenceRoutes` represents a vertex by an actual bounded-support
-edge vector with boundary delta(root)+delta(vertex). Adding an actual
-edge extends the route. In the absence of kernel vectors of support
-at most2r+1, every actual edge with both endpoints in the radius-r ball
-is exactly the difference of its actual endpoint route vectors. Actual
-independent single-edge coordinates in their actual finite span give
-#insideEdges<=#ball. No forest or BFS-rank estimate is assumed.
-
-`IncidenceBallGrowth` constructs the actual finite route balls. The
-proved rank and incidence bounds give d*#ball(r)<=#ball(r+1) in a core
-of incident degree>=2d. Hence #ball(r)>=d^r. Comparing with the actual
-vertex set proves the finite Moore-type statement
-
-    e>2d*n and n<d^r => an actual nonzero incidence-kernel vector
-                         of support<=2r+1 within these edge labels.
-
-This proof treats labelled incidence maps directly; no simple-graph
-conversion, girth result or external short-cycle theorem is a premise.
-
-`ShortBasisFiniteConstruction` applies this bound to the actual
-retained components, actual medium-prime equations and constructed
-incidence endpoints. The proved injective augmentation transports the
-actual kernel vector back to the actual medium-prime map. With
-n=#mediumPrimes+1 and n<d^r, the actual constructed complete-relation
-image has
+An actual right inverse on actual pivot columns gives a fundamental
+basis of a kernel of s equations with support<=s+1. The actual small-
+prime equations and two separate block parities impose at mostpi(z)+2
+constraints. Every resulting vector is proved to be an actual complete
+even relation; all prime ranges and nonprime coordinates are checked.
+The final actual dimension and basis support bounds are
 
     dimension >= #retained - 2d*n - (pi(z)+2),
-    basis physical support <= M*(2r+1)*(pi(z)+3).
+    physical support <= M*(2r+1)*(pi(z)+3).
 
-Both physical projections and the actual common square-class map are
-injective. The earlier local short-vector hypothesis is now discharged
-in this finite construction. The remaining obligations for full13.1
-are the numerical choice of d,r and the source logarithmic estimates
-and asymptotic assembly. Coverage75/167, confirmed findings77; no new
-source-conclusion error, optimized bound, Paper C source, manuscript-
-byte change or Palomar registration is claimed.
+The injective actual relation map is transported to its actual range
+by a proved linear equivalence; the basis belongs to that actual range.
+Both physical and common-class maps stay injective.
 
-## Remaining obligations
+## Numerical choices and full asymptotic assembly
 
-The finite short-vector existence bound and the actual finite complete-
-relation construction are proved. Full13.1 still requires choosing the
-branching and radius parameters and proving the source logarithmic
-length, residual-dimension and support estimates. Article13.1 remains
-in progress; the finite construction does not add numbered coverage.
+Set M=floor(log B), z=floor(B^a), n=#mediumPrimes+1,
+d=floor(sqrt(log B)), r=Nat.log d n+1. For all sufficiently large B,
+
+    n<d^r,
+    2d*n <= 48 B/sqrt(log B),
+    2r+1 <= 11 log B/loglog B,
+    pi(z)+3 <= (32/a) B^a/log B.
+
+All floors, real logarithms and integer powers are proved compatible.
+The small-prime bound follows from the actual finite Chebyshev bound,
+not an assumed prime-count estimate at B^a. The existing actual count
+at10B gives n<=24B/log B. The two final constants may be chosen as
+
+    KD(a)=K_ret(a)+48+32/a,
+    KS(a)=352/a.
+
+No optimization is claimed. The critical-band scale supplies a common
+N0(a,C) before all variable lengths and starts. This closes every
+finite and asymptotic input of the original theorem13.1.
+
+## Recorded improvements
+
+P1-MATH-0006 now propagates the constant order through full13.1:
+multiplicative constants depend on a alone; only the threshold depends
+on C. Historical validations of T9.2/T9.3 are preserved separately.
+P1-MATH-0078 records the additional endpoint a=1. It is a scope
+extension, with a coarse support bound there; the universal literal
+physical support cap2B also holds. No a=0 or varying-a claim is made.
+Neither manuscript is fully formalized. No Palomar registration occurs.
 
 ## Validation
 
-Lean v4.36.0-rc2 full build passed (10511 jobs); actual axiom audit passed for all 5855 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3570 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.96 GiB. Actual labelled vertex pruning, exact incidence double counting, bounded edge-vector routes and their actual finite span rank prove a finite Moore bound internally: e>2d*n and n<d^r force an actual nonzero incidence kernel vector of support<=2r+1. Applying it to actual retained components and actual medium-prime columns discharges the earlier local short-vector hypothesis. The actual complete-relation construction has dimension>=#retained-2d*n-(pi(z)+2), basis physical support<=M*(2r+1)*(pi(z)+3), and injective physical and square-class maps. Numerical logarithmic parameter choices and full source asymptotic assembly remain open; article13.1 stays in progress. Coverage75/167 (main27/73, companion48/94); findings77. No unproved graph, BFS, girth, rank or cycle-length estimate, additional Paper C source, manuscript-byte change or Palomar registration.
+Lean v4.36.0-rc2 full build passed (10519 jobs); actual axiom audit passed for all 5879 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3594 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.94 GiB. Full article13.1 is proved: the actual complete-relation subspace and its actual transported basis have dimension >=d_xy-(2/3)B log(1/a)-KD(a) B/sqrt(log B) and literal physical support<=KS(a) B^a log B/loglog B. Both physical projections and the actual common square-class map are injective; every nonzero vector selects nonempty even sets in both formal blocks and has nonzero common class. All actual prime estimates, retained-component bounds, labelled incidence-core/route/ball arguments, witness deletion, final sparse kernel cuts, basis transport and logarithmic numerical estimates are internally proved. Constants KD(a),KS(a) precede C, with a C-dependent threshold; KS(a)=352/a is a safe explicit choice. P1-MATH-0006 propagates this constant order, and P1-MATH-0078 adds the endpoint a=1. No compatibility, nonalignment, non-overlap, short-cycle, sparse-basis or target-bound premise. Coverage76/167 (main28/73, companion48/94); findings78. No optimized constant, source-conclusion error, new external estimate, added Paper C source, dependency download, manuscript-byte change or Palomar registration.
