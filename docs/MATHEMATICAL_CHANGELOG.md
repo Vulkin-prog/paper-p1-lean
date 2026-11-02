@@ -3356,3 +3356,22 @@ argument without asserting an optimized constant, a manuscript error
 or a completed integer-grid lower bound. Functional-square matching
 and dimension assembly remain open; coverage74/167 and findings76 stay
 unchanged. See [alignment](INTEGER_FIBRES_ALIGNMENT.md).
+
+
+## P1-MATH-0077 — Formal Hensel root matching instead of geometric normalization
+
+A regular fibre root now has an actual branch X=T-u,Y=Y(T) in the
+complete power-series ring. The exact substitution kernel and map of
+function fields are proved by nonzero resultants and translated-
+polynomial injectivity. Without a matching second-block offset, the
+literal word series is T times a unit, irreducible and nonsquare even
+in its fraction field. A functional square therefore forces the actual
+integer-offset match. No geometric normalization or branch is assumed.
+The two-block exceptional budget is explicitly at most6D^2.
+
+This supplies an algebraic replacement for the local normalization
+paragraph of article13.3. No error in the original conclusion, optimized
+constant or completed grid-point lower bound is asserted. Coordinate-
+cut dimension and final count assembly remain open. Coverage stays
+74/167; confirmed findings now77. See
+[exact alignment](INTEGER_FIBRES_ALIGNMENT.md).

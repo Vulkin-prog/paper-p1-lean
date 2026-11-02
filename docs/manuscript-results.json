@@ -1975,13 +1975,40 @@
         "PaperP1.CurveFibreRegularity.fibre_separable",
         "PaperP1.CurveFibreRegularity.root_derivative_ne_zero",
         "PaperP1.CurveFibreRegularity.fibre_roots_card",
-        "PaperP1.CurveFibreRegularity.fibre_integer_evaluation"
+        "PaperP1.CurveFibreRegularity.fibre_integer_evaluation",
+        "PaperP1.PowerSeriesHenselLift.constantCoeff_eval",
+        "PaperP1.PowerSeriesHenselLift.exists_root",
+        "PaperP1.PowerSeriesSquareGap.not_square",
+        "PaperP1.PowerSeriesSquareGap.not_fraction_square",
+        "PaperP1.CurveFormalBranch.coefficientLift_constant",
+        "PaperP1.CurveFormalBranch.curvePolynomial_constant",
+        "PaperP1.CurveFormalBranch.evaluation_eq",
+        "PaperP1.CurveFormalBranch.evaluation_C",
+        "PaperP1.CurveFormalBranch.evaluation_Y",
+        "PaperP1.CurveFormalBranch.curvePolynomial_leadingCoeff_unit",
+        "PaperP1.CurveFormalBranch.exists_branch",
+        "PaperP1.CurveFormalBranch.evaluation_first_factor",
+        "PaperP1.CurveFormalBranch.evaluation_selected_factor",
+        "PaperP1.CurveFormalBranch.evaluation_second_factor",
+        "PaperP1.CurveFormalBranch.coefficientLift_injective",
+        "PaperP1.CurveSeriesField.evaluation_zero_iff",
+        "PaperP1.CurveSeriesField.coordinateMap_injective",
+        "PaperP1.CurveSeriesField.fieldMap_specialize",
+        "PaperP1.CurveWordSeries.word_value",
+        "PaperP1.CurveWordSeries.first_factor_unit",
+        "PaperP1.CurveWordSeries.second_factor_unit",
+        "PaperP1.CurveWordSeries.exists_simple_factor",
+        "PaperP1.CurveWordSeries.not_fraction_square_word",
+        "PaperP1.CurveSquareMatching.root_matches_offset"
       ],
       "literature_inputs": [
-        "P1-ALG-NONCRITICAL-CURVE-FIBRES"
+        "P1-ALG-NONCRITICAL-CURVE-FIBRES",
+        "P1-ALG-FORMAL-CURVE-ROOT-MATCHING"
       ],
-      "mathematical_changes": [],
-      "notes": "The actual exceptional-fibre polynomial is constructed as leadingCoeff(C)*Res_Y(C,derivative_Y(C)). It is proved nonzero for an irreducible integer curve of positive Y-degree, using actual Gauss/resultant nonvanishing and the strict derivative degree. Actual polynomial determinant and Sylvester entry degrees bound it by dX+2*dX*dY. Its negative integer root set is the actual finite exceptional offset set. Both blocks together have at most6*D^2 exceptional offsets, D the actual total degree; partial-degree/total-degree and swap identities are proved. Outside the exceptional set, actual specialization to any characteristic-zero field retains full degree and is separable; every root has nonzero derivative, and over an algebraically closed field the actual finite root set has exactly dY elements. Integer evaluations are identified with the original curve equation. No geometric-integrality assumption is inserted. The functional-square-to-offset-matching step, coordinate-cut dimension loss and final grid-point lower bound remain open. No root matching, normalization or target grid count is assumed to count the numbered result proved. Coverage remains74/167; see INTEGER_FIBRES_ALIGNMENT.md."
+      "mathematical_changes": [
+        "P1-MATH-0077"
+      ],
+      "notes": "The actual exceptional-fibre polynomial is constructed as leadingCoeff(C)*Res_Y(C,derivative_Y(C)). It is proved nonzero for an irreducible integer curve of positive Y-degree, using actual Gauss/resultant nonvanishing and the strict derivative degree. Actual polynomial determinant and Sylvester entry degrees bound it by dX+2*dX*dY. Its negative integer root set is the actual finite exceptional offset set. Both blocks together have at most6*D^2 exceptional offsets, D the actual total degree; partial-degree/total-degree and swap identities are proved. Outside the exceptional set, actual specialization to any characteristic-zero field retains full degree and is separable; every root has nonzero derivative, and over an algebraically closed field the actual finite root set has exactly dY elements. Integer evaluations are identified with the original curve equation. No geometric-integrality assumption is inserted. Actual functional-square root matching is now proved by an explicit formal Hensel branch over any characteristic-zero field containing the chosen fibre root. The branch has X=T-u and Y(0)=z; its substitution kernel is exactly(C), proved by nonzero resultants and injective translated-polynomial evaluation, so the actual curve function field maps into the fraction field of the power-series ring. An unmatched selected first-block factor gives the actual word series T times a unit, which is irreducible and remains nonsquare in the fraction field by integral closure. This contradicts an actual functional square and forces z=-v for a selected second-block offset. Hensel completeness, leading-coefficient normalization, branch existence, kernel equality and fraction-field transport are all proved, not assumed. P1-MATH-0077 records this replacement for the geometric-normalization matching argument. Coordinate-cut dimension loss and final integer-grid lower-bound assembly remain open. No root matching, normalization or target grid count is assumed to count the numbered result proved. Coverage remains74/167; see INTEGER_FIBRES_ALIGNMENT.md."
     },
     {
       "label": "p13:rig:bcn",

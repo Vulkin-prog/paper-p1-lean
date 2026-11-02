@@ -53,19 +53,55 @@ Geometric integrality of C after field extension is not assumed.
 The source irreducibility is used over the original integer ring,
 and the specialized separability follows from the actual resultant.
 
+## Actual formal branch and functional-square root matching
+
+`PowerSeriesHenselLift` proves the formal lifting theorem for a
+polynomial over K[[T]] with unit leading coefficient and a simple
+root modulo T. The polynomial is normalized to be monic, and the
+actual T-adic completeness instance proves the Henselian hypothesis.
+The result is a genuine root series with the prescribed constant term.
+Only the two required Mathlib modules and their missing dependencies
+were cached (42 files), on the Ubuntu partition.
+
+`CurveFormalBranch` constructs X(T)=T-u and the actual integer-curve
+polynomial over K[[T]]. The coefficient/constant-term diagram is exactly
+the already proved regular fibre. Every regular fibre root z therefore
+lifts to Y(T), with Y(0)=z and C(T-u,Y(T))=0. The coefficient lift is
+proved injective using the actual Taylor ring equivalence and the
+polynomial-to-power-series embedding.
+
+`CurveSeriesField` proves that the full substitution kernel is (C):
+a nonmultiple in the kernel would force a nonzero actual resultant
+in X to vanish at the transcendental formal parameter. The actual
+coordinate ring consequently injects into K[[T]], and its fraction
+field maps into Frac(K[[T]]), with exact specialization compatibility.
+
+`CurveWordSeries` evaluates the literal finite word products along
+this branch. If u is selected and z is not matched by a selected
+second-block offset, the actual word series is T times an explicitly
+constructed unit. `PowerSeriesSquareGap` proves this is irreducible
+and nonsquare; integral closure of the power-series ring shows it
+remains nonsquare in its actual fraction field.
+
+`CurveSquareMatching.root_matches_offset` maps the actual functional
+square into that fraction field and derives a contradiction. Thus
+every regular selected first-block fibre root is -v for an actual
+selected second-block integer offset. No normalization, branch,
+valuation, substitution-kernel or target matching fact is an unproved
+premise. The theorem holds over any characteristic-zero field containing
+the chosen root; geometric integrality is not required.
+P1-MATH-0077 records this local proof improvement for future integration.
+
 ## Remaining obligations
 
-A functional square must force each root of a selected regular fibre
-to match a selected second-block offset. This local matching statement
-has not been proved or assumed as an unconditional input.
-The coordinate restrictions excluding the bad offsets must be assembled
-with the class-map kernel and injective physical projections to derive
-the dimension and final actual integer-grid lower bound. These steps
-remain open. Article13.3 is not counted complete, and no new independent
-mathematical correction or improvement is confirmed at this checkpoint.
-No external estimate, new Paper C source, manuscript-byte change or
+The coordinate restrictions excluding the bad offsets must still be
+assembled with the class-map kernel and injective physical projections
+to derive the dimension and final actual integer-grid lower bound.
+These quantitative assembly steps remain open; article13.3 is not
+counted complete. Coverage stays74/167 and confirmed findings now77.
+No new external estimate, Paper C source, manuscript-byte change or
 Palomar registration is introduced.
 
 ## Validation
 
-Lean v4.36.0-rc2 full build passed (10359 jobs); actual axiom audit passed for all 5628 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3343 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.10 GiB. Actual nonzero exceptional polynomials, exact bad-offset membership and the combined6D^2 budget are proved. Regular specialization over any characteristic-zero field preserves degree and is separable; each root has nonzero derivative, and the actual finite root set over an algebraically closed field has cardinality dY. Literal integer point evaluations are retained. Functional-square root matching, coordinate-cut dimension and the final integer-grid lower bound remain open, so article13.3 stays in progress. Coverage74/167 and findings76 are unchanged. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.
+Lean v4.36.0-rc2 full build passed (10443 jobs); actual axiom audit passed for all 5652 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3367 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.05 GiB. Actual simple-root lifting follows from proved power-series adic completeness and Hensel after unit leading-coefficient normalization. The actual formal branch, exact curve substitution kernel, injective coordinate-ring map and actual function-field fraction map are proved. An unmatched selected fibre gives an actual T-times-unit word series, irreducible and nonsquare in its fraction field; actual functional squares therefore force an integer-offset match. No normalization, branch, valuation, kernel or target matching conclusion is assumed as an external theorem. This confirms P1-MATH-0077. Coordinate-cut dimension and final grid-count assembly remain open; article13.3 stays in progress. Coverage74/167 and findings77. No new manuscript conclusion error, external estimate, Paper C source, manuscript-byte change or Palomar registration.

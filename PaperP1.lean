@@ -1002,3 +1002,15 @@ public import PaperP1.Algebra.BivariateCurveDegrees
 public import PaperP1.Algebra.CurveCriticalFibres
 
 public import PaperP1.Algebra.CurveFibreRegularity
+
+public import PaperP1.Algebra.PowerSeriesHenselLift
+
+public import PaperP1.Algebra.PowerSeriesSquareGap
+
+public import PaperP1.Algebra.CurveFormalBranch
+
+public import PaperP1.Algebra.CurveSeriesField
+
+public import PaperP1.Arithmetic.CurveWordSeries
+
+public import PaperP1.Arithmetic.CurveSquareMatching

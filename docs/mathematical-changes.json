@@ -4184,6 +4184,61 @@
       "validation_history": [
         "8448b7eb97768bd6f5eb6ffb4946770bf48bac31"
       ]
+    },
+    {
+      "id": "P1-MATH-0077",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:grid-fibres",
+        "number": "13.3",
+        "page": 31,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 166,
+        "statement_sha256": "1ee0a2e2750461d837dea949cb2b861f208c7d5139454b1837376c0e47bd288e"
+      },
+      "original_assumption": "The local matching step in proposition13.3 extends the curve to an algebraically closed field, normalizes its components and uses simple-zero valuation parity to force every selected first-block fibre root to match a selected second-block offset. The exceptional-coordinate loss is recorded as an unspecified absolute constant times D^2.",
+      "finding": "The same actual root-matching conclusion is proved through a concrete formal Hensel branch. At a regular root z over X=-u, normalize the power-series polynomial by its unit leading coefficient and use the proved adic completeness of K[[T]] to lift z to Y(T), with X(T)=T-u and Y(0)=z. Actual Gauss/resultant nonvanishing and translated-polynomial injectivity prove the substitution kernel exactly(C), yielding a map of the actual curve function field into Frac(K[[T]]). If no selected second-block offset matches z, the literal word specializes to T times a unit. That series is irreducible and therefore nonsquare, including in its fraction field by integral closure. This contradicts the image of an actual functional square. The proof works over any characteristic-zero field containing the chosen fibre root, without assuming geometric integrality or a normalization, valuation, branch, kernel or nonsquare conclusion. The actual two-block exceptional offset budget is at most6D^2.",
+      "evidence": [
+        "PaperP1.PowerSeriesHenselLift.constantCoeff_eval",
+        "PaperP1.PowerSeriesHenselLift.exists_root",
+        "PaperP1.PowerSeriesSquareGap.not_square",
+        "PaperP1.PowerSeriesSquareGap.not_fraction_square",
+        "PaperP1.CurveFormalBranch.coefficientLift_constant",
+        "PaperP1.CurveFormalBranch.curvePolynomial_constant",
+        "PaperP1.CurveFormalBranch.evaluation_eq",
+        "PaperP1.CurveFormalBranch.evaluation_C",
+        "PaperP1.CurveFormalBranch.evaluation_Y",
+        "PaperP1.CurveFormalBranch.curvePolynomial_leadingCoeff_unit",
+        "PaperP1.CurveFormalBranch.exists_branch",
+        "PaperP1.CurveFormalBranch.evaluation_first_factor",
+        "PaperP1.CurveFormalBranch.evaluation_selected_factor",
+        "PaperP1.CurveFormalBranch.evaluation_second_factor",
+        "PaperP1.CurveFormalBranch.coefficientLift_injective",
+        "PaperP1.CurveSeriesField.evaluation_zero_iff",
+        "PaperP1.CurveSeriesField.coordinateMap_injective",
+        "PaperP1.CurveSeriesField.fieldMap_specialize",
+        "PaperP1.CurveWordSeries.word_value",
+        "PaperP1.CurveWordSeries.first_factor_unit",
+        "PaperP1.CurveWordSeries.second_factor_unit",
+        "PaperP1.CurveWordSeries.exists_simple_factor",
+        "PaperP1.CurveWordSeries.not_fraction_square_word",
+        "PaperP1.CurveSquareMatching.root_matches_offset",
+        "PaperP1.CurveCriticalFibres.critical_nonzero",
+        "PaperP1.CurveCriticalFibres.exceptional_budget",
+        "PaperP1.CurveFibreRegularity.fibre_separable",
+        "PaperP1.CurveFibreRegularity.root_derivative_ne_zero",
+        "PaperP1.CurveFibreRegularity.fibre_roots_card"
+      ],
+      "proposed_revision": "Offer the formal Hensel argument as an algebraic replacement for the local normalization paragraph. Spell out the actual critical polynomial leadingCoeff(C)*Res_Y(C,derivative_Y(C)), the safe exceptional-coordinate constant6, the translated formal parameter and exact function-field embedding. Explain that an unmatched selection produces T times a unit and hence cannot represent a functional square. Keep the later dimension and grid-count assembly separate. No optimization of the numerical constant or error in the original conclusion is claimed.",
+      "impact": "Proves the actual local functional-square-to-integer-offset matching stage of proposition13.3 without constructing a geometric normalization or assuming a branch or valuation theorem as an external input. Coordinate-cut dimension and final grid-count assembly remain open, so the numbered proposition stays in progress and coverage remains74/167. Confirmed findings total77.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10443 jobs); actual axiom audit passed for all 5652 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3367 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.05 GiB. Actual simple-root lifting follows from proved power-series adic completeness and Hensel after unit leading-coefficient normalization. The actual formal branch, exact curve substitution kernel, injective coordinate-ring map and actual function-field fraction map are proved. An unmatched selected fibre gives an actual T-times-unit word series, irreducible and nonsquare in its fraction field; actual functional squares therefore force an integer-offset match. No normalization, branch, valuation, kernel or target matching conclusion is assumed as an external theorem. This confirms P1-MATH-0077. Coordinate-cut dimension and final grid-count assembly remain open; article13.3 stays in progress. Coverage74/167 and findings77. No new manuscript conclusion error, external estimate, Paper C source, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

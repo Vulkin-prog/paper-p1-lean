@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5628 audited theorem/lemma declarations**. This
+- The project currently has **5652 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2578,3 +2578,19 @@ remain open. Coverage74/167 and findings76 are unchanged. See
 [exact scope](INTEGER_FIBRES_ALIGNMENT.md).
 
 Actual noncritical-fibre checkpoint verification: Lean v4.36.0-rc2 full build passed (10359 jobs); actual axiom audit passed for all 5628 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3343 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.10 GiB. Actual nonzero exceptional polynomials, exact bad-offset membership and the combined6D^2 budget are proved. Regular specialization over any characteristic-zero field preserves degree and is separable; each root has nonzero derivative, and the actual finite root set over an algebraically closed field has cardinality dY. Literal integer point evaluations are retained. Functional-square root matching, coordinate-cut dimension and the final integer-grid lower bound remain open, so article13.3 stays in progress. Coverage74/167 and findings76 are unchanged. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.
+
+
+## Actual functional-square matching by formal Hensel branches
+
+The local matching stage of article13.3 is now proved. Actual regular
+fibre roots lift into the complete power-series ring; the exact curve
+substitution kernel and actual function-field map are proved. An
+unmatched selected offset would produce T times a unit, nonsquare even
+in the fraction field, contradicting the actual functional square.
+P1-MATH-0077 records this alternative to geometric normalization.
+The coordinate-cut dimension and final grid-count assembly remain open,
+so coverage stays74/167. Confirmed findings now77. Ubuntu remains above
+the disk alert threshold; only the required Hensel dependency cache was
+added. See [alignment](INTEGER_FIBRES_ALIGNMENT.md).
+
+Formal Hensel root-matching checkpoint verification: Lean v4.36.0-rc2 full build passed (10443 jobs); actual axiom audit passed for all 5652 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3367 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.05 GiB. Actual simple-root lifting follows from proved power-series adic completeness and Hensel after unit leading-coefficient normalization. The actual formal branch, exact curve substitution kernel, injective coordinate-ring map and actual function-field fraction map are proved. An unmatched selected fibre gives an actual T-times-unit word series, irreducible and nonsquare in its fraction field; actual functional squares therefore force an integer-offset match. No normalization, branch, valuation, kernel or target matching conclusion is assumed as an external theorem. This confirms P1-MATH-0077. Coordinate-cut dimension and final grid-count assembly remain open; article13.3 stays in progress. Coverage74/167 and findings77. No new manuscript conclusion error, external estimate, Paper C source, manuscript-byte change or Palomar registration.

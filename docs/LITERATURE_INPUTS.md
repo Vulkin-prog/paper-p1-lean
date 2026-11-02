@@ -2277,3 +2277,24 @@ Pinned Mathlib derivative, resultant, separability and algebraically
 closed splitting results are used. Functional-square root matching
 and the final grid bound remain open; no external normalization or
 matching estimate is passed as an unconditional theorem.
+
+
+## Actual formal Hensel branch and functional-square matching
+
+Stable ID: `P1-ALG-FORMAL-CURVE-ROOT-MATCHING`. Status: **proved**,
+local matching stage of article proposition13.3.
+
+The actual complete power-series ring lifts every regular fibre root.
+The original polynomial is normalized by its unit leading coefficient;
+all residue, derivative and completeness hypotheses are proved. The
+substitution kernel is exactly the irreducible curve ideal by actual
+resultants and Taylor injectivity. The resulting map of actual fraction
+fields transports a functional square; an unmatched selected root gives
+T times a unit, which remains nonsquare by integral closure. This proves
+actual integer-offset matching without geometric normalization.
+Pinned Mathlib Henselian, adic-completion, power-series DVR, Taylor and
+fraction-map results are used with actual proved instances. Only the
+two needed Henselian/completeness module dependency caches were fetched.
+No Henselian or branch conclusion is an external axiom or extra source
+assumption. P1-MATH-0077 records the proof improvement. The quantitative
+coordinate-cut and final grid assembly remain open.
