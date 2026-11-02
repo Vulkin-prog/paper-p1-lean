@@ -4458,6 +4458,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "109f02d0401db62f9d9a9e99cc891edde4ec0b30"
+    },
+    {
+      "id": "P1-MATH-0083",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:close:retained-reference",
+        "number": "T17.2",
+        "page": 62,
+        "source": "companion_sections/closure.tex",
+        "line": 151,
+        "statement_sha256": "7843fc3967027b5c1da59491af81d0a000d06b845e4254c9d781c0fca496cf94"
+      },
+      "original_assumption": "The retained-reference propositionT17.2 is written for regular windows with a common marginal p, a binomial base and cardinality deficitsF_r,G_r.",
+      "finding": "Its exact finite product identity and ordinary l1 control extend to arbitrary heterogeneous positive actual marginals on every finite admissible ground set, with any chosen family of dependent two-element blocks. The independent reference becomes the product of the individual Bernoulli laws, and each pair correction is q(e)*Delta^2 times the product outside e. Deficits retain the actual products of individual marginals. The actual compressed joint formula is proved from relation-kernel extension, the full-support Fourier criterion and centered-moment reconstruction, including globally incompatible families by their actual zero mass. The disjoint enumeration and unique pair are proved, so there is no assumed independence or multiplicity correction.",
+      "evidence": [
+        "PaperP1.CompressedRelationSupport.relation_zero_outside",
+        "PaperP1.CompressedJointMoments.compressed_joint_factor",
+        "PaperP1.RetainedFamilyEnumeration.retained_sum_decomposition",
+        "PaperP1.RetainedReferenceIdentity.retained_identity",
+        "PaperP1.RetainedDeficitNorm.combined_norm_le",
+        "PaperP1.RetainedReferenceTheorem.admissible_identity",
+        "PaperP1.RetainedReferenceTheorem.admissible_norm_bound"
+      ],
+      "proposed_revision": "State first the finite heterogeneous retained-reference identity and l1 estimate with subset-defined independent deficits. Specialize to equal marginals only when grouping by cardinality to obtain the binomial reference andF_r,G_r. Keep all local admissibility and pair-nullity hypotheses explicit.",
+      "impact": "Removes equal marginals and the asymptotic regime from the finite identity and norm estimate. Actual affine incompatibility is retained correctly. The original homogeneous cardinality-grouped statement still requires its separate correspondence proof beforeT17.2 can be counted complete. No new asymptotic law estimate, external theorem or Palomar qualification follows.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10575 jobs); actual axiom audit passed for all6033 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All3750 distinct ledger/finding declarations were directly checked. All138 original manifest entries and167 numbered records are intact. Ubuntu available space:15.84 GiB. Equal compressed nullity is proved to force actual relation support inside the pair. The exact heterogeneous direct/compressed joint formulas follow from actual Fourier full-support and centered-moment reconstruction, including globally incompatible families by their actual zero mass. Direct/pair families have a proved disjoint enumeration and literal extension/union bijection. The finite heterogeneous retained-reference product identity and ordinary l1 bound are proved on arbitrary admissible finite grounds, with no assumed target probability factorization. On actual regular starts and actual goodEdges the product reference is exactly b^n+beta*Delta^2*b^(n-2), for everyN>=2,L>0 and every realH. P1-MATH-0083 records this heterogeneous finite extension. The originalF_r,G_r cardinality grouping remains open, soT17.2 is in progress. Coverage76/167 (main28/73, companion48/94), confirmed findings83. No BCN input, added external theorem, Paper C port, dependency download, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

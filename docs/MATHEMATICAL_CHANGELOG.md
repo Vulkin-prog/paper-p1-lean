@@ -3484,3 +3484,8 @@ The exact actual pair formula and the proved critical cap p_x<=2*2^(-L) give q(I
 ## P1-MATH-0082: nonaligned triple rank without compatibility
 
 The exact finite bound rho(T)<=L+d_xy and the compatibility-free nonaligned pair theorem give the stronger1+(2/3)log2 triple-nullity coefficient for every triple containing a nonaligned pair, under the same explicit BCN input. Compatibility remains in the universal3L/2 rank statement because of the aligned branch. Article13.8 is conditional; proved coverage76/167, confirmed findings82.
+
+
+## P1-MATH-0083: the finite heterogeneous retained reference
+
+The exact retained-reference identity and l1 bound now hold for arbitrary heterogeneous positive actual marginals on a finite admissible ground set. Pair compression is justified by actual relation-kernel support and centered Fourier reconstruction; the finite pair/extension enumeration is disjoint. The original regular equal-marginal setting gives the literal binomial correction for everyN>=2,L>0. The sourceF_r,G_r count grouping remains open, soT17.2 is in progress. Coverage76/167, findings83.

@@ -2750,3 +2750,57 @@ No added Paper C source, dependency download, manuscript-byte change
 or Palomar registration.
 
 Pinned Mathlib finite set erasure/cardinality, finite maximum folds, finite-dimensional insertion and intersection identities, exact binary powers, exponential monotonicity, real powers and logarithmic growth are used with proved hypotheses. Actual affine probability and infinite event monotonicity come from existing project proofs.
+
+
+## Actual compressed moments and finite retained-reference algebra
+
+Stable ID: `P1-ALG-RETAINED-FINITE-REFERENCE`. Status: **proved finite identity and norm**.
+
+The actual finite retained-reference identity and ordinary l1 bound
+are proved. The source cardinality coefficients F_r,G_r and their
+literal binomial-count/grouping correspondence remain to be verified;
+T17.2 stays in progress and adds no completed numbered coverage.
+
+Equal compressed nullity makes extension by zero from the actual pair
+relation kernel surjective. Every actual relation therefore vanishes
+outside the compressed pair. Proper nonempty restrictions other than
+that pair have no full-support relation. The proved actual Fourier
+criterion kills their actual centered moments. Finite centered-moment
+reconstruction then proves the exact heterogeneous identities
+
+    q(I)=prod_x p_x                     for direct I,
+    q(I)=q(e)*prod_(x in I\e) p_x       for pair-compressed I.
+
+Local admissibility is explicit; global affine incompatibility is not
+discarded. Incompatible compressed families have their actual zero
+joint moment. All factorization steps are proved internally, rather
+than assumed as target probability identities.
+
+Direct families and families containing one compressed pair have an
+actual disjoint finite enumeration. A dependent pair is unique, so
+the sum over edges and admitted extensions has no multiplicity. A
+literal union/erasure bijection reindexes every admitted extension.
+
+For arbitrary heterogeneous positive actual marginals on any finite
+admissible ground set and any chosen family of dependent pairs, the
+retained reference equals the independent Bernoulli product plus the
+sum of pair corrections, minus the two actual independent deficit
+polynomials. Each deficit sums the actual excluded subsets or failed
+compressed extensions. Their ordinary l1 costs are bounded by the
+corresponding independent weights times2^(original cardinality),
+with no suffix factor or unproved independence assumption.
+
+On the actual regular dyadic ground set with actual goodEdges,
+the exact marginal identities specialize the product reference to
+b^n+beta*Delta^2*b^(n-2), where beta is the actual sum of good-edge
+joint moments. For every N>=2,L>0 and every real cutoff H,
+`finite_identity` and `finite_norm_bound` prove the finite source form
+with subset-defined deficits. The remaining F_r,G_r cardinality
+grouping is not silently identified with this already proved form.
+
+P1-MATH-0083 records the heterogeneous finite extension. No BCN,
+unproved literature input, Paper C port, dependency download,
+manuscript-byte change or Palomar registration is introduced.
+Proved coverage76/167, confirmed findings83.
+
+Pinned Mathlib rank equality/injective-surjective equivalence, finite kernel maps, subset sums/products, powers and binomial product algebra are used with actual proved hypotheses. All affine Fourier and infinite-measure transport inputs are existing checked project proofs.

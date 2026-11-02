@@ -1128,3 +1128,17 @@ public import PaperP1.Asymptotics.AllPairRankUnderBCN
 public import PaperP1.Asymptotics.JointFamilyProbabilityUnderBCN
 
 public import PaperP1.Asymptotics.TripleRankUnderBCN
+
+public import PaperP1.Affine.CompressedRelationSupport
+
+public import PaperP1.Algebra.MomentReconstruction
+
+public import PaperP1.Model.CompressedJointMoments
+
+public import PaperP1.Combinatorics.RetainedFamilyEnumeration
+
+public import PaperP1.Algebra.RetainedReferenceIdentity
+
+public import PaperP1.Probability.RetainedDeficitNorm
+
+public import PaperP1.Model.RetainedReferenceTheorem
