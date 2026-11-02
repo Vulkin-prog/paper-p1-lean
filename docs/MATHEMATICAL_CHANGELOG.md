@@ -3564,3 +3564,8 @@ The actual A3 and third factorial cumulant have a proved vanishing power under t
 ## Finding85 reference quantum and universal parameter stability
 
 Actual Poisson and quadratic signed references have universal parameter Lipschitz bounds. The exact-to-nominal mean replacement has unconditional costN^(-1+epsilon), and explicit lower boundc_C/N at every nonzero integer-bias scale with fixedalpha>=-1. For every fixed omitted height, the mean-change cost is negligible on its actual moving phase. Literal explicit coefficients also give probabilities at the actual mean without BCN. True-count law estimates and infinitely-many-nonzero-scale assertions remain open. Finding85 is extended; no new finding or numbered completion. Coverage77/167, findings87.
+
+
+## Actual conditional mean and uniform negative Palm deviation
+
+For every fixed maximum number of sources, actual negative conditional deviation is at mostN^(-1/2+epsilon) and source deletion costsN^(-1+epsilon), without BCN. Actual conditional Bochner means, the exact positive/negative decomposition and arbitrary nonnegative source averaging are checked. The source-specific positive excess remains open; T2.7 is in progress. No new finding or numbered completion. Coverage77/167, confirmed findings87.

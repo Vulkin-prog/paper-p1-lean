@@ -1290,3 +1290,9 @@ public import PaperP1.Probability.PoissonParameterStability
 public import PaperP1.Asymptotics.ActualNominalReferenceComparison
 
 public import PaperP1.Asymptotics.ExplicitMeanPhaseStability
+
+public import PaperP1.Model.SourceConditionalDeviations
+
+public import PaperP1.Model.SourceConditionalCountMean
+
+public import PaperP1.Asymptotics.ConditionalNegativeDeviation

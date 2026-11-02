@@ -5382,11 +5382,34 @@
       "source": "companion_sections/supplemental_arithmetic.tex",
       "line": 279,
       "sha256": "e1363efe24511cb2801268b9975d6b2c226855615c5f85f8a8a7132fc19ada0d",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.SourceConditionalDeviations.conditional_nonneg",
+        "PaperP1.SourceConditionalDeviations.conditional_le_one",
+        "PaperP1.SourceConditionalDeviations.conditional_probability_ratio",
+        "PaperP1.SourceConditionalDeviations.retained_conditional",
+        "PaperP1.SourceConditionalDeviations.positive_nonneg",
+        "PaperP1.SourceConditionalDeviations.negative_nonneg",
+        "PaperP1.SourceConditionalDeviations.finite_negative_bound",
+        "PaperP1.SourceConditionalDeviations.mean_decomposition",
+        "PaperP1.SourceConditionalDeviations.finite_mean_lower",
+        "PaperP1.SourceConditionalCountMean.weighted_count_integral",
+        "PaperP1.SourceConditionalCountMean.freshMean_eq_conditional_integral",
+        "PaperP1.SourceConditionalCountMean.fresh_count_on_source",
+        "PaperP1.SourceConditionalCountMean.freshMean_eq_full_minus_source_integral",
+        "PaperP1.ConditionalNegativeDeviation.uniform_negative",
+        "PaperP1.ConditionalNegativeDeviation.uniform_source_cost",
+        "PaperP1.ConditionalNegativeDeviation.uniform_mean_lower",
+        "PaperP1.ConditionalNegativeDeviation.uniform_weighted_negative",
+        "PaperP1.ConditionalNegativeDeviation.uniform_normalized_negative",
+        "PaperP1.ConditionalNegativeDeviation.uniform_conditional_expectation_lower"
+      ],
+      "literature_inputs": [
+        "P1-PROB-CONDITIONAL-NEGATIVE-DEVIATION"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "The negative-deviation and source-deletion step in the proof of\ncompanionT2.7 is now proved without BCN, for every source set of any\nfixed maximum cardinalityj, not only the selected good channel pairs.\nConditioning uses the actual prescribed source event with positive\njoint massq(A). Each actual new conditional probability is precisely\nq(A union{z})/q(A); it lies in[0,1] and its probability-event ratio is\nidentified under the original infinite measure.\n\nWith p=2^(-L), define the positive and negative deviations over the\nfresh dyadic starts by max(0,conditional-p) and\nmax(0,p-conditional). The actual retained branching identity gives\nconditional=p outside the deterministic badStarts set constructed\nfrom the old raw-value prime pool. Thus, at finiteN,L,\n\n    negativeDeviation <= #badStarts*p.\n\nThe complete fixed-j exceptional count and the critical nominal bound\ngive, for everyepsilon>0, eventually uniformly beforeN,L,A,\n\n    negativeDeviation <= N^(-1/2+epsilon),\n    #A*p <= N^(-1+epsilon),\n    E[Z_N-#A | all sources inA active] >= lambda-N^(-1/2+epsilon).\n\nThe expectation is an actual conditional Bochner integral, not a\nformal sum substituted for an unproved conditional law. Finite\nindicator integrability and integral linearity identify it with the\nsum of actual conditional probabilities over fresh starts. On the\nsource event all#A source indicators are one, so deleting them is\nproved identical to subtracting#A from the full original count.\nThe exact signed decomposition is\n\n    freshMean=lambda-#A*p+positiveDeviation-negativeDeviation.\n\nThe same negative bound holds after any finite nonnegative weighting\nof source sets, including division by the actual positive total\nweight. One threshold precedes the population and its weights.\nForj=2 this supplies the complete negative error and source-removal\npart of the source Palm mean proof, including its actual conditional\nexpectation and arbitrary good-pair averaging.\n\nThe positive excess, its fixed-channel exponenteta_(a:b), the\nasymmetric nonaligned pair profile and the resulting two-sided Palm\nmean estimate remain open. No positive-excess bound or conditional\nmean convergence is assumed or counted proved. CompanionT2.7 moves\nfrom not_started to in_progress, without a numbered completion.\nCoverage77/167 (main28/73, companion49/94), findings87 unchanged.\nNo new mathematical finding, external input, BCN premise, PaperC\nport, dependency download, manuscript-byte change or Palomar\nregistration is introduced.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10743 jobs); actual axiom audit passed for all 6485 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4202 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.59 GiB. For any fixed maximum source cardinality, actual negative conditional deviation is at mostN^(-1/2+epsilon), source deletion costsN^(-1+epsilon), and the actual conditional expectation of Z_N-#A is at leastlambda-N^(-1/2+epsilon), without BCN. Actual event probability ratios, finite indicator integrability, conditional Bochner mean identities, signed positive/negative decomposition and arbitrary weighted/normalized source averaging are proved. The fixed-channel positive excess and two-sided Palm estimate remain open; T2.7 is in progress. Coverage77/167 (main28/73, companion49/94), confirmed findings87. No new mathematical finding, external input, BCN premise, PaperC port, dependency download, manuscript-byte change or Palomar registration."
     },
     {
       "label": "p1:arith:finite-family-triples",
