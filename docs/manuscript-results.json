@@ -4785,17 +4785,25 @@
         "PaperP1.BiquadraticCoefficientPolynomials.family_degrees",
         "PaperP1.BiquadraticCoefficientPolynomials.family_height",
         "PaperP1.BiquadraticCoefficientPolynomials.family_nonzero",
-        "PaperP1.BiquadraticAuxiliaryConstruction.exists_auxiliary"
+        "PaperP1.BiquadraticAuxiliaryConstruction.exists_auxiliary",
+        "PaperP1.PrimitiveCoefficientFamily.extract",
+        "PaperP1.BivariateDivisionBounds.quotient_degrees",
+        "PaperP1.BivariateDivisionBounds.height_of_coefficients",
+        "PaperP1.BivariateDivisionBounds.quotient_height",
+        "PaperP1.BivariateDivisionBounds.linear_dimension_power",
+        "PaperP1.BivariateDivisionBounds.quotient_height_power",
+        "PaperP1.BiquadraticPrimitiveCoefficients.exists_primitive_coefficients"
       ],
       "literature_inputs": [
         "P1-ALG-TWO-WITNESS-AUXILIARY-BUDGET",
-        "P1-ALG-TWO-WITNESS-RUNGE-CONSTRUCTION"
+        "P1-ALG-TWO-WITNESS-RUNGE-CONSTRUCTION",
+        "P1-ALG-TWO-WITNESS-PRIMITIVE-COEFFICIENTS"
       ],
       "mathematical_changes": [
         "P1-MATH-0074"
       ],
-      "notes": "The actual finite Runge coefficient matrix is now constructed on the four rectangular coefficient slot sets and triangular equation index set. A common denominator 2^(12q)=4^(6q) and integer matrix height (B+1)^(28q) are proved by finite combinatorics, including empty root lists. The actual integer kernel vector has height (B+1)^(266q). The nested two-variable formal numerator is the explicit sum of shifted square-root product series and has every coefficient of total degree <=6q equal to zero. Its four actual integer coefficient polynomials have the source partial degree bounds, the same explicit coefficient height and at least one nonzero member. No Cauchy estimate is needed for this coefficient/kernel stage. Primitive gcd division and preservation of the required vanishing order, integer separation, formal character independence and the nonzero norm polynomial with its final degree/height bounds remain open. This does not complete T9.5. See TWO_WITNESS_ALIGNMENT.md.",
-      "validation": "Lean v4.36.0-rc2 full build passed (10203 jobs); actual axiom audit passed for all 5273 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2988 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.28 GiB. The actual Runge matrix has common denominator 4^(6q), integer entry height (B+1)^(28q) and a nonzero integer kernel array of height (B+1)^(266q). The actual nested square-root formal numerator cancels through total degree 6q. Its four integer coefficient polynomials have the required partial degrees and the same height, with at least one nonzero polynomial. No Cauchy estimate is needed for this coefficient/kernel stage (P1-MATH-0074). Primitive gcd division and vanishing-order preservation, function independence, integer separation and the nonzero norm remain open; T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements are 74. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.",
+      "notes": "The actual finite Runge matrix, common denominator 4^(6q), entry height (B+1)^(28q), nonzero integer coefficient array and four coefficient polynomials of height (B+1)^(266q) are constructed. The actual formal numerator cancels through total degree 6q. A nonzero common integer polynomial factor is now extracted; every common divisor of the quotient family is a unit. At least one quotient polynomial is nonzero. Their partial degrees decrease by the actual degrees of the common factor and their heights are bounded by (B+1)^(275q), using the complete T9.4 factor-height theorem. The original numerator cancellation is retained. Preservation of the required vanishing order for the divided numerator, integer separation, function independence and the final nonzero norm remain open. This does not complete T9.5. See TWO_WITNESS_ALIGNMENT.md.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10209 jobs); actual axiom audit passed for all 5280 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2995 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.28 GiB. The actual auxiliary coefficient family has a nonzero common integer polynomial factor and a quotient family with no common nonunit divisor. At least one quotient is nonzero. Its exact reduced partial degree bounds and explicit height (B+1)^(275q) follow from the complete T9.4. The original formal numerator cancellation remains in the same construction; preservation of the divided-numerator order, integer gap, function independence and nonzero norm are still open. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 74. No new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.",
       "validation_commit": "b709618b43c2f1c6df1660960088afac96f8c0ee",
       "validation_history": [
         "1a6c2cb25140aff00068aa7fc35dc07227e58a08"

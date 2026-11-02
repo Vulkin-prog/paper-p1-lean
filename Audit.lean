@@ -345,6 +345,11 @@ import PaperP1
 #print axioms PaperP1.BivariateDegrees.factor_natDegree_le
 #print axioms PaperP1.BivariateDegrees.factor_degreeX_le
 #print axioms PaperP1.BivariateDegrees.factor_partial_degrees_le
+#print axioms PaperP1.BivariateDivisionBounds.quotient_degrees
+#print axioms PaperP1.BivariateDivisionBounds.height_of_coefficients
+#print axioms PaperP1.BivariateDivisionBounds.quotient_height
+#print axioms PaperP1.BivariateDivisionBounds.linear_dimension_power
+#print axioms PaperP1.BivariateDivisionBounds.quotient_height_power
 #print axioms PaperP1.BivariateFactorHeight.one_le_mahler_complexPolynomial
 #print axioms PaperP1.BivariateFactorHeight.mahler_outer_coefficient_le
 #print axioms PaperP1.BivariateFactorHeight.factor_coefficient_le_own_degrees
@@ -472,6 +477,7 @@ import PaperP1
 #print axioms PaperP1.PlaneNormalRigidity.normal_zero_of_two_constant
 #print axioms PaperP1.PlaneNormalRigidity.two_coordinate_plane_constant
 #print axioms PaperP1.PlaneNormalRigidity.normal_coordinates_ne_zero
+#print axioms PaperP1.PrimitiveCoefficientFamily.extract
 #print axioms PaperP1.PrimitiveTripleDirection.content_dvd
 #print axioms PaperP1.PrimitiveTripleDirection.exists_content_combination
 #print axioms PaperP1.PrimitiveTripleDirection.content_pos
@@ -846,6 +852,7 @@ import PaperP1
 #print axioms PaperP1.BiquadraticFormalNumerator.coefficient_scalar
 #print axioms PaperP1.BiquadraticFormalNumerator.coefficient_numerator
 #print axioms PaperP1.BiquadraticFormalNumerator.exists_vanishing_numerator
+#print axioms PaperP1.BiquadraticPrimitiveCoefficients.exists_primitive_coefficients
 #print axioms PaperP1.BiquadraticRungeMatrix.rank_bound
 #print axioms PaperP1.BiquadraticRungeMatrix.slot_degree_bound
 #print axioms PaperP1.BiquadraticRungeMatrix.shift_identity

@@ -2011,3 +2011,19 @@ audited Runge coefficient and formal-series results; no new external
 Cauchy or Siegel estimate and no additional Paper C source is assumed.
 Primitive gcd division, function independence, integer separation and
 the final nonzero norm are still open. T9.5 stays in progress.
+
+
+## Actual primitive coefficient reduction and quotient height
+
+Stable ID: `P1-ALG-TWO-WITNESS-PRIMITIVE-COEFFICIENTS`. Status: **proved**,
+polynomial coefficient reduction component of T9.5.
+
+Finite gcd extraction supplies the actual common integer polynomial
+factor and quotients with no common nonunit divisor. Exact degree
+subtraction and complete T9.4 give quotient height (B+1)^(275q) for
+the actual Runge auxiliary polynomials. At least one quotient remains
+nonzero. The constructed original numerator cancellation is retained;
+preservation of the required divided-numerator order is still open.
+No value at a point is divided by an unverified nonzero number. No
+external gcd or factor-height assumption, new Paper C source or
+Palomar registration is introduced.

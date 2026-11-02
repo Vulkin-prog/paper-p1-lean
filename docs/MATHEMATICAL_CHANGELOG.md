@@ -3198,3 +3198,13 @@ Primitive division, the later integer gap and nonzero norm remain open;
 T9.5 is not counted complete. No error in the original analytic bound
 or the final manuscript conclusion is asserted. See
 [the exact alignment](TWO_WITNESS_ALIGNMENT.md).
+
+
+P1-MATH-0074 coefficient reduction checkpoint: the actual common integer
+polynomial factor and primitive quotient family are proved to exist.
+Every common quotient divisor is a unit, at least one quotient is
+nonzero, the partial degrees decrease exactly and the quotient height
+is at most (B+1)^(275q). This uses the complete audited T9.4 bound.
+Preservation of the divided numerator vanishing order remains open,
+as do the integer gap and nonzero norm. No new independent finding
+or completed numbered result is counted.

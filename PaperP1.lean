@@ -897,3 +897,7 @@ public import PaperP1.Arithmetic.BiquadraticRungeMatrix
 public import PaperP1.Arithmetic.BiquadraticFormalNumerator
 public import PaperP1.Arithmetic.BiquadraticCoefficientPolynomials
 public import PaperP1.Arithmetic.BiquadraticAuxiliaryConstruction
+
+public import PaperP1.Algebra.PrimitiveCoefficientFamily
+public import PaperP1.Algebra.BivariateDivisionBounds
+public import PaperP1.Arithmetic.BiquadraticPrimitiveCoefficients

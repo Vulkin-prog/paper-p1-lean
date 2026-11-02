@@ -89,10 +89,36 @@ This replaces the first source Cauchy estimate by finite coefficient
 combinatorics and gives explicit height constants (P1-MATH-0074).
 It does not replace or prove the later integer-gap estimate.
 
+## Actual primitive coefficient reduction
+
+`PrimitiveCoefficientFamily.extract` proves finite common-factor
+extraction in a normalized gcd monoid. For the actual four nonzero-family
+integer polynomials, it supplies a nonzero common factor D and integer
+quotients Q_chi. Every common divisor of all quotients is a unit; this
+also removes common integer content. At least one quotient is nonzero.
+
+`BivariateDivisionBounds` proves the exact reduced partial degree bounds
+and derives an explicit quotient-height consequence of complete T9.4.
+If the original partial degrees are at most 3q and its height is at most
+(B+1)^(cq), the quotient height is at most (B+1)^[(c+9)q], for 1<=q<=B.
+Zero coefficient polynomials are included in the same bounds.
+
+`BiquadraticPrimitiveCoefficients.exists_primitive_coefficients` applies
+these results to the actual constructed auxiliary family. It gives
+
+    deg_X Q_chi <=(3q-r_chi)-deg_X D,
+    deg_Y Q_chi <=(3q-s_chi)-deg_Y D,
+    height(Q_chi) <=(B+1)^(275q).
+
+The original formal numerator cancellation remains in the same existential
+construction. The required cancellation statement for the DIVIDED
+numerator is a separate remaining obligation, not a consequence silently
+assumed from polynomial divisibility.
+
 ## Remaining obligations
 
-Primitive polynomial gcd division and preservation of the required
-formal vanishing order remain open. Formal word/character independence
+Preservation of the required formal vanishing order after the proved
+primitive polynomial gcd division remains open. Formal word/character independence
 must still establish that the auxiliary is a nonzero function; a
 nonzero coefficient array alone does not do so for arbitrary branch
 data. The integer separation at the actual square point, nonzero
