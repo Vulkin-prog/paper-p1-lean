@@ -108,3 +108,5 @@ No Paper C port, manuscript-byte change or Palomar registration.
 ## Validation
 
 Lean v4.36.0-rc2 full build passed (10587 jobs); actual axiom audit passed for all 6074 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3791 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.81 GiB. The bounded actual seed F_2<=(2^C)^2+1 and complete T19.4 growing-order source conclusion are proved under the existing single field-polynomial BCN input. The positive exponential constant precedes the BCN constants; those affect only the threshold. Finite branching and its smaller exception remain unconditional. T19.4 is conditional and adds no proved coverage. Coverage77/167 (main28/73, companion49/94); confirmed findings83. No additional unformalized input, Paper C port, dependency download, manuscript-byte change or Palomar registration.
+
+Validated proof checkpoint: [d2b4fc1393d73ee9dfe8f02cfc59718a5a756b77](https://github.com/Vulkin-prog/paper-p1-lean/commit/d2b4fc1393d73ee9dfe8f02cfc59718a5a756b77).

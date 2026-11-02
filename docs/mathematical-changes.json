@@ -1049,7 +1049,7 @@
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "d67cfc727b27a99fa0ebc4565f181d5353d3a0f1",
+      "validation_commit": "d2b4fc1393d73ee9dfe8f02cfc59718a5a756b77",
       "validation_history": [
         "8b5542412a96f221e87921abc9892ddabdac0505",
         {
