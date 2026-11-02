@@ -1,8 +1,8 @@
 # Two-witness auxiliary: exact finite kernel budget
 
 Source: companion Proposition T9.5, `p13:rig:two-witnesses`,
-`companion_sections/pair_rigidity.tex:277`. Status: **in progress**.
-Coverage remains 72/167; no complete two-witness polynomial is claimed.
+`companion_sections/pair_rigidity.tex:277`. Status: **proved**, including the field-norm moreover clause.
+Coverage is 73/167 (main25/73, companion48/94).
 
 ## Explicit integer pigeonhole theorem
 
@@ -378,13 +378,37 @@ This is the actual polynomial conclusion of T9.5. P1-MATH-0076 records
 the separate real-series integer-gap proof improvement; P1-MATH-0075
 retains the algebraic nonvanishing/degree/height improvement.
 
-## Remaining obligations
+## The actual degree-four field norm and completed source theorem
 
-For the source moreover clause, the proved literal sourceNorm formula
-must still be identified explicitly with a conjugate-product norm
-certificate or Algebra.norm in a degree-four field. The primitive Q,
-actual point zero and all polynomial bounds are already proved.
-An explicit field-norm model has not yet been constructed, so the full
-T9.5 result is still in progress and no new numbered coverage is counted.
-No new external estimate assumption, Paper C port or Palomar registration
-is introduced.
+`BiquadraticNormModel` constructs two actual quadratic algebras over
+K=FractionRing(Q[X][X]). Literal formal independence proves that the
+word functions f,g and fg are nonsquares. The tower is a field of
+K-dimension four. `BiquadraticNormGenerators.generators_top` proves
+that its two radical generators generate the full K-algebra.
+
+The determinant definition of `Algebra.norm`, quadratic conjugation
+and norm transitivity identify the auxiliary norm with the literal
+source polynomial. The third radical is W1*W2/G; its square and exact
+overlap relation are proved. `WordNormCertificate.Certificate` packages
+the field, dimension, generators, nonzero auxiliary, four-term
+expansion, radical identities and the actual Algebra.norm identity.
+Its polynomial coefficients are the same primitive family Q as in the
+point and height construction.
+
+`TwoWitnessTheorem.companion_T9_5` assembles every source conclusion
+with the explicit absolute constant c=1200. It permits real B and q,
+1<=q<=B, by using floor(B) for the integer offsets and floor(q) for
+the integer half-ranks. Monotonicity restores the original real power
+thresholds and heights. Its partial degrees <=12*floor(q) and total
+degree <=24*floor(q) imply the stated source bounds. The closed range
+N<=x,y<=2N includes the source half-open dyadic range. In particular,
+no integrality restriction on B or q has been inserted.
+
+The four polynomial coefficients have every common divisor a unit,
+which implies the source absence of a common nonconstant factor.
+No target norm-nonzero, basis, tail bound, value identity, auxiliary
+integrality or point-vanishing premise is assumed. T9.5 is now proved;
+the subsequent article common-curve theorem13.2 remains open. Confirmed
+findings remain76; this completes the existing improvements 75 and76.
+No new external estimate, Paper C source, manuscript-byte change or
+Palomar registration is introduced.

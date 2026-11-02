@@ -3301,6 +3301,8 @@ This replaces the later bidisc/Cauchy integer-gap step and makes its
 constants explicit. It is distinct from the initial matrix estimate
 (P1-MATH-0074) and algebraic norm-expression certificate (P1-MATH-0075).
 No optimization or error in the manuscript conclusion is asserted.
-The explicit degree-four field-norm model for the moreover clause is
-still open, so full T9.5 and new numbered coverage are not yet counted.
+The explicit degree-four field-norm model is now proved and assembled
+with these estimates in `TwoWitnessTheorem.companion_T9_5`, including
+real B,q and the full source moreover clause. Coverage is now73/167.
+This completes findings75 and76; no new independent finding is counted.
 See [the exact alignment](TWO_WITNESS_ALIGNMENT.md).

@@ -950,3 +950,11 @@ public import PaperP1.Analysis.BiquadraticAuxiliaryGap
 public import PaperP1.Analysis.BiquadraticWordValues
 public import PaperP1.Analysis.BiquadraticWordRealization
 public import PaperP1.Arithmetic.TwoWitnessPolynomial
+
+public import PaperP1.Algebra.BiquadraticNormModel
+
+public import PaperP1.Algebra.BiquadraticNormGenerators
+
+public import PaperP1.Arithmetic.WordNormCertificate
+
+public import PaperP1.Arithmetic.TwoWitnessTheorem
