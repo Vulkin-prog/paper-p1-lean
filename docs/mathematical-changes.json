@@ -4272,7 +4272,7 @@
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "0c658ee35b8050dfbc3b3da5cc90ae3c1568a58b",
+      "validation_commit": "020f3831043808cd339892534e3fecb25fd1a85a",
       "validation_history": [
         "0c658ee35b8050dfbc3b3da5cc90ae3c1568a58b"
       ]
