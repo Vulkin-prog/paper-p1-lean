@@ -1644,3 +1644,8 @@ public import PaperP1.Asymptotics.EnlargedFiniteAlignedTargetTripleMass
 public import PaperP1.Arithmetic.GeometricAlignedTargetData
 public import PaperP1.Asymptotics.GeometricAlignedTripleMass
 public import PaperP1.Asymptotics.CompressedAlignedTripleMass
+public import PaperP1.Arithmetic.CoprimeIntervalPairs
+public import PaperP1.Arithmetic.AdjacentSquareDivisibility
+public import PaperP1.Arithmetic.TwoAdjacentSmallKernels
+public import PaperP1.Asymptotics.TwoSmallKernelLower
+public import PaperP1.Asymptotics.TwoSmallKernelWindows

@@ -5980,6 +5980,54 @@
         }
       ],
       "validation_commit": "03b135574c190376e5f8647aaaa5e6d0d16881fa"
+    },
+    {
+      "id": "P1-MATH-0100",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:twokernel",
+        "number": "T1.5",
+        "page": 9,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 360,
+        "statement_sha256": "bb1695001b6698be23b183ea4794053283d9baed656240adcaf51b682b72ff50"
+      },
+      "original_assumption": "T1.5 states sharpness for 7/12<=beta<1 with a prime cutoff and length comparable to log N. Its CRT lower-bound proof already uses only beta>1/2, but leaves the coprime supply, multiplicity control and finite constants implicit.",
+      "finding": "The lower count holds for every fixed 1/2<beta<1, uniformly in every natural cutoff H and every complete-window length L>=2, with one threshold before all these choices. A fully explicit coprime-pair count and CRT construction give N/(4000 D^2) square-divisibility incidences whenever N>=40000 D^4. Actual divisor fibres and squarefree-kernel identities produce the lower bound on the literal source window population.",
+      "evidence": [
+        "PaperP1.CoprimeIntervalPairs.reciprocal_square_sum_le",
+        "PaperP1.CoprimeIntervalPairs.bad_cover",
+        "PaperP1.CoprimeIntervalPairs.bad_card",
+        "PaperP1.CoprimeIntervalPairs.pairs_card_lower",
+        "PaperP1.CoprimeIntervalPairs.intervalPairs_data",
+        "PaperP1.CoprimeIntervalPairs.intervalPairs_card_lower",
+        "PaperP1.AdjacentSquareDivisibility.residue_exists",
+        "PaperP1.AdjacentSquareDivisibility.residue_progression_count",
+        "PaperP1.AdjacentSquareDivisibility.solutions_card_lower",
+        "PaperP1.AdjacentSquareDivisibility.uniform_solutions_card_lower",
+        "PaperP1.TwoAdjacentSmallKernels.square_divisor_budget",
+        "PaperP1.TwoAdjacentSmallKernels.incidences_lower",
+        "PaperP1.TwoAdjacentSmallKernels.fibre_card",
+        "PaperP1.TwoAdjacentSmallKernels.incidence_admissible",
+        "PaperP1.TwoAdjacentSmallKernels.incidences_upper",
+        "PaperP1.TwoAdjacentSmallKernels.finite_lower",
+        "PaperP1.TwoSmallKernelLower.scale_data",
+        "PaperP1.TwoSmallKernelLower.uniform_lower",
+        "PaperP1.TwoSmallKernelWindows.two_neighbors",
+        "PaperP1.TwoSmallKernelWindows.admissible_subset",
+        "PaperP1.TwoSmallKernelWindows.uniform_lower",
+        "PaperP1.TwoSmallKernelWindows.critical_lower"
+      ],
+      "proposed_revision": "State the lower estimate separately for all 1/2<beta<1 and arbitrary cutoff H and L>=2. Make the finite CRT proof explicit using coprime pairs in [D,10D]^2 and the above constants. Retain the sharper source upper estimate as a separate assertion until its uniform determinant input is fully formalized.",
+      "impact": "Extracts a stronger uniform lower-count theorem already suggested by the source proof, with effective finite constants and no additional analytic input. Does not prove the general upper estimate, the sharpness equality or the full numbered lemma; no manuscript conclusion error is asserted.",
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11261 jobs), actual kernel-axiom audit (7593 declarations; only propext, Classical.choice and Quot.sound), 5310 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.60 GiB free on Ubuntu root.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

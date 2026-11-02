@@ -5520,11 +5520,43 @@
       "source": "companion_sections/arithmetic_appendix.tex",
       "line": 360,
       "sha256": "bb1695001b6698be23b183ea4794053283d9baed656240adcaf51b682b72ff50",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.CoprimeIntervalPairs.reciprocal_square_sum_le",
+        "PaperP1.CoprimeIntervalPairs.bad_cover",
+        "PaperP1.CoprimeIntervalPairs.bad_card",
+        "PaperP1.CoprimeIntervalPairs.pairs_card_lower",
+        "PaperP1.CoprimeIntervalPairs.intervalPairs_data",
+        "PaperP1.CoprimeIntervalPairs.intervalPairs_card_lower",
+        "PaperP1.AdjacentSquareDivisibility.residue_exists",
+        "PaperP1.AdjacentSquareDivisibility.residue_progression_count",
+        "PaperP1.AdjacentSquareDivisibility.solutions_card_lower",
+        "PaperP1.AdjacentSquareDivisibility.uniform_solutions_card_lower",
+        "PaperP1.TwoAdjacentSmallKernels.square_divisor_budget",
+        "PaperP1.TwoAdjacentSmallKernels.incidences_lower",
+        "PaperP1.TwoAdjacentSmallKernels.fibre_card",
+        "PaperP1.TwoAdjacentSmallKernels.incidence_admissible",
+        "PaperP1.TwoAdjacentSmallKernels.incidences_upper",
+        "PaperP1.TwoAdjacentSmallKernels.finite_lower",
+        "PaperP1.TwoSmallKernelLower.scale_data",
+        "PaperP1.TwoSmallKernelLower.uniform_lower",
+        "PaperP1.TwoSmallKernelWindows.two_neighbors",
+        "PaperP1.TwoSmallKernelWindows.admissible_subset",
+        "PaperP1.TwoSmallKernelWindows.uniform_lower",
+        "PaperP1.TwoSmallKernelWindows.critical_lower"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0100"
+      ],
+      "notes": "The complete lower-count portion of companion T1.5 is now proved on\nliteral dyadic windows, with a stronger explicit scope. For every\nfixed 1/2<beta<1 and epsilon>0, one threshold precedes N, every\nnatural prime cutoff H and every length L>=2. The number of actual\ndyadic windows containing at least two distinct values whose\nindividual large odd kernels are at most N^beta is at least\nN^(beta-epsilon). Taking H=B=L+1 and a critical-band length gives\nthe source lower count. This concerns two individual bounds, rather\nthan the different existing product-cap upper count.\n\nThe proof makes the source CRT construction effective. In the box\n[1,M]^2, a common-divisor cover and the elementary finite bound\nsum_(d=2)^M 1/d^2 <= 3/4 supply at least M^2/4 coprime pairs.\nRestricting to [D,10D]^2 leaves at least 5D^2 such pairs. For each\npositive coprime d,e, CRT constructs at least N/(d^2*e^2)-1 integer\nsolutions in the exact interval [N,2N). If N>=40000*D^4, their\nliteral square-divisibility incidence count is at least\nN/(4000*D^2). Each integer has at most tau(n)*tau(n+1) witnesses,\nand the proved uniform divisor bound absorbs this multiplicity.\nA squared divisor d^2 of n proves K_H(n)*d^2<=n for arbitrary H.\nThe scale D=ceil(2*N^((1-beta)/2)) then yields the asserted exponent.\nThe neighboring values n,n+1 are proved to belong to the actual\ncomplete window at x=n for every L>=2.\n\nThis is P1-MATH-0100: the lower exponent and its all-cutoff uniformity\nare isolated explicitly, with finite constants. The CRT idea and the\ncondition beta>1/2 were already present in the source proof; no error\nin a manuscript conclusion is asserted. The upper count\nN^(max(beta,7/12)+epsilon) still requires the unresolved determinant\nestimate. Hence T1.5 moves from not_started to in_progress and is\nnot counted complete; neither is its full sharpness equality.\nCoverage stays 79/167. Improvements now total 100. There are no new\nexternal estimates, dependency changes or Palomar claims, and the\noriginal manuscript sources remain byte-for-byte unchanged.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": ""
+        }
+      ],
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11261 jobs), actual kernel-axiom audit (7593 declarations; only propext, Classical.choice and Quot.sound), 5310 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.60 GiB free on Ubuntu root."
     },
     {
       "label": "p1:arith:anchor",
