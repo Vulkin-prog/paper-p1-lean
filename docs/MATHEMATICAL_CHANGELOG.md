@@ -3331,3 +3331,16 @@ total degree48q and height exponent2472q. This makes constants in the
 existing source argument explicit, without changing its conclusion or
 claiming optimization. Final basis-norm assembly remains open, so
 article13.2 stays in progress, coverage73/167 and findings76.
+
+
+## Completed common-curve theorem13.2 with explicit constants
+
+The actual bounded even source basis is now assembled with T9.5,
+the simultaneous resultant construction and the actual function-field
+square-class image. All source conclusions hold with absolute constant
+1000000, independent of the basis size, including real parameters.
+The stronger natural-parameter curve height exponent2472 and resultant
+exponent124608q0^2 remain explicit. This confirms and quantifies the
+source argument; no optimized constant or manuscript conclusion error
+is asserted. Coverage is74/167 (main26/73, companion48/94); confirmed
+findings remain76, and original manuscripts are unchanged.

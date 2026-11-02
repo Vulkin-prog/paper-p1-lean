@@ -1278,6 +1278,10 @@ import PaperP1
 #print axioms PaperP1.CodedClassTargets.targets_card
 #print axioms PaperP1.CommonCurveFamily.linear_threshold
 #print axioms PaperP1.CommonCurveFamily.exists_curve
+#print axioms PaperP1.CommonCurveTheorem.point_threshold
+#print axioms PaperP1.CommonCurveTheorem.integer_parameters
+#print axioms PaperP1.CommonCurveTheorem.even_card_floor
+#print axioms PaperP1.CommonCurveTheorem.article_13_2
 #print axioms PaperP1.ComponentPrimeBudget.prime_constraint_cost_eventually
 #print axioms PaperP1.CompressedTargetAlignment.of_geometric
 #print axioms PaperP1.CompressedTargetAlignment.bounded_data
@@ -1483,6 +1487,15 @@ import PaperP1
 #print axioms PaperP1.Arithmetic.exists_vertex_iff_in_window
 #print axioms PaperP1.Arithmetic.vertexParityMap_zero_iff_rational_square
 #print axioms PaperP1.EvenSquareSelection.cardinal_gt
+#print axioms PaperP1.EvenWordRanks.twice_halfCard
+#print axioms PaperP1.EvenWordRanks.symmDiff_card_balance
+#print axioms PaperP1.EvenWordRanks.symmDiff_even
+#print axioms PaperP1.EvenWordRanks.symmDiff_card_le
+#print axioms PaperP1.EvenWordRanks.symmDiff_bounded
+#print axioms PaperP1.EvenWordRanks.card_le_radius
+#print axioms PaperP1.EvenWordRanks.halfCard_le_radius
+#print axioms PaperP1.EvenWordRanks.pairRanks_cards
+#print axioms PaperP1.EvenWordRanks.pairRanks_bound
 #print axioms PaperP1.ExactContactSeeds.mem_seeds
 #print axioms PaperP1.ExactContactSeeds.seed_coordinates
 #print axioms PaperP1.ExactContactSeeds.seed_mass
@@ -2585,6 +2598,7 @@ import PaperP1
 #print axioms PaperP1.TwoProgressionPrimeRows.exceptional_card
 #print axioms PaperP1.TwoProgressionResidualRank.finite_rank_bound
 #print axioms PaperP1.TwoProgressionResidualRank.cardinal_budget
+#print axioms PaperP1.TwoWitnessFromSupports.exists_norm
 #print axioms PaperP1.TwoWitnessPolynomial.threshold
 #print axioms PaperP1.TwoWitnessPolynomial.exists_polynomial
 #print axioms PaperP1.TwoWitnessTheorem.integer_radius

@@ -990,3 +990,9 @@ public import PaperP1.Algebra.ResultantPowerBudget
 public import PaperP1.Arithmetic.CommonCurveFamily
 
 public import PaperP1.Arithmetic.FormalWordEncoding
+
+public import PaperP1.Arithmetic.EvenWordRanks
+
+public import PaperP1.Arithmetic.TwoWitnessFromSupports
+
+public import PaperP1.Arithmetic.CommonCurveTheorem

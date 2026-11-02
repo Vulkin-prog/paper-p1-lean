@@ -2,8 +2,8 @@
 
 Source: article theorem13.2, `p13:rig:common-curve`,
 `main_sections/pair_rigidity.tex:127`, with its companion proof in
-`companion_sections/pair_rigidity.tex:434`. Status: **in progress**.
-Coverage remains73/167 (main25/73, companion48/94).
+`companion_sections/pair_rigidity.tex:434`. Status: **proved**, with explicit absolute constant1000000.
+Coverage is74/167 (main26/73, companion48/94).
 
 ## The actual curve field
 
@@ -112,20 +112,46 @@ divides every member, has both degrees positive, total degree<=48q
 and height<=(B+1)^(2472q). There is no dependence on family cardinality.
 A common factor or resultant height is not assumed as a target premise.
 
-## Remaining obligations
+## Completed assembly from the actual source basis
 
-This simultaneous polynomial family must still be constructed and
-assembled for an actual independent even bounded basis using completed
-T9.5. This includes the symmetric-difference half-rank budget,
-source dyadic thresholds and identification with the already constructed
-formal-word square-class map. The original real source parameters and
-quantifiers must be retained. Until that assembly is checked,
-article theorem13.2 remains in progress. No new independent correction,
-external estimate, Paper C source, manuscript-byte change or Palomar
-registration is counted here.
+`EvenWordRanks` derives all literal even-cardinality and symmetric-
+difference identities. An even subset of the integer interval [-B,B]
+has half-cardinality at most B. Two basis supports each of cardinality
+at most2q0 therefore give the actual pair-rank budget min(2q0,B).
+No independent rank or parity premise is introduced for their sum.
+
+`TwoWitnessFromSupports.exists_norm` instantiates completed T9.5 for
+these literal sets and produces the actual primitive pair norm, nonzero
+and vanishing at the point, with partial degrees24q0, total48q0,
+height exponent2400q0 and a field-norm certificate. Actual basis
+independence is derived from the binary support encoding.
+
+`CommonCurveTheorem.integer_parameters` constructs the norms for every
+unequal pair of actual basis indices, applies `CommonCurveFamily` to
+that actual family and then applies the actual word-map rank theorem.
+The first unequal pair exists from t>=2. The output certificate contains
+an actual irreducible primitive polynomial, positive degrees in both
+variables and the rank<=1 conclusion for the image of the whole source
+space in its actual function-field square classes. The point, total
+degree48q0 and height exponent2472q0 are supplied for this same curve.
+
+`CommonCurveTheorem.article_13_2` covers arbitrary real B and q0 with
+1<=q0<=B. Even-cardinality identities convert cardinal bounds to bounds
+with floor(q0); the integer offsets lie in the floor(B) box. Monotone
+base and exponent comparisons restore the original real thresholds.
+The explicit common source constant c=1000000 gives both
+
+    N > (B+1)^(c*q0^2),
+    height(C) <= (B+1)^(c*q0), totalDegree(C) <=48q0.
+
+The closed range N<=x,y<=2N includes the paper's half-open range. The
+constant is independent of t. No curve, shared factor, pair norm,
+image-rank or external height bound is assumed to prove the result.
+Theorem13.2 is now complete. The subsequent integer-grid-fibre theorem
+13.3 remains open. Coverage is74/167; findings remain76. No new
+independent mathematical correction, external estimate, Paper C source,
+manuscript-byte change or Palomar registration is counted.
 
 ## Validation
 
-Lean v4.36.0-rc2 full build passed (10333 jobs); actual axiom audit passed for all 5572 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3287 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.13 GiB. Actual curve field and square classes, entire formal-word image-rank collapse from shared primitive norms, and actual irreducible point-factor extraction with explicit height and positive-degree budgets are proved. Uniform resultant nonvanishing/height and final source assembly remain open; article13.2 is in progress. Coverage remains73/167 and confirmed findings76. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.
-
-Latest uniform-resultant checkpoint: Lean v4.36.0-rc2 full build passed (10347 jobs); actual axiom audit passed for all 5593 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3308 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.12 GiB. Actual resultant nonvanishing, common-point vanishing and coefficient-uniform height are proved. The explicit resultant exponent124608q^2 and safe threshold1000000q^2 construct one primitive irreducible two-variable factor for an arbitrary bounded polynomial family, with total degree48q and height exponent2472q, independently of family size. Exact binary support encoding and independence of distinct actual basis words are proved. Final assembly of the source basis pair norms remains open, so article13.2 stays in progress. Coverage73/167 and findings76 are unchanged. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.
+Lean v4.36.0-rc2 full build passed (10353 jobs); actual axiom audit passed for all 5607 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3322 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.11 GiB. Full article theorem13.2 is proved from the actual bounded independent even basis through actual T9.5 pair norms, simultaneous primitive irreducible curve extraction and the actual function-field square-class map. Real B,q0, source comparable points, total degree48q0, point zero and common threshold/height constant1000000 are included, uniformly in the basis size. No pair-norm, common-factor, resultant bound, image-rank or unproved external premise is inserted. Coverage is74/167 (main26/73, companion48/94); findings remain76. No new manuscript conclusion error, external estimate, Paper C source, manuscript-byte change or Palomar registration.

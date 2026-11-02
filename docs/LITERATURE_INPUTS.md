@@ -2242,3 +2242,20 @@ total degree48q and height exponent2472q. Final assembly of the actual
 basis pair norms from T9.5 remains open. Pinned Mathlib Gauss, fraction
 map, resultant and determinant theorems are used; no unproved external
 result or new Paper C code is introduced.
+
+
+## Completed source-basis common-curve construction
+
+Stable ID: `P1-ALG-COMMON-CURVE-BASIS-ASSEMBLY`. Status: **proved**,
+full article theorem13.2.
+
+Literal even supports and their symmetric differences yield all actual
+half-ranks bounded by min(2q0,B). Actual basis independence is derived.
+T9.5 constructs all pair norms with primitive coefficients and their
+point/degree/height bounds. The proved simultaneous resultant argument
+constructs one actual irreducible primitive two-variable curve; the
+actual curve field and square-class linear map have whole-image rank
+at most1. Theorem `CommonCurveTheorem.article_13_2` covers real B,q0,
+source dyadic points, total degree48q0 and explicit common threshold/
+height constant1000000, uniformly in the basis size. No unproved input
+or additional Paper C source is introduced. Coverage74/167, findings76.

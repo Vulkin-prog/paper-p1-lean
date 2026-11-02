@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 2 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **73 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 6.3, 9.1, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorem 10.1 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Proposition T9.5, Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Propositions T1.14 and T22.7.
+- Numbered results completed: **74 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 6.3, 9.1, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorems 10.1, 13.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Proposition T9.5, Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Propositions T1.14 and T22.7.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5593 audited theorem/lemma declarations**. This
+- The project currently has **5607 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2548,3 +2548,18 @@ original bounded independent even basis via T9.5 remains open.
 Coverage73/167 and findings76 are unchanged.
 
 Uniform common-curve resultant checkpoint verification: Lean v4.36.0-rc2 full build passed (10347 jobs); actual axiom audit passed for all 5593 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3308 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.12 GiB. Actual resultant nonvanishing, common-point vanishing and coefficient-uniform height are proved. The explicit resultant exponent124608q^2 and safe threshold1000000q^2 construct one primitive irreducible two-variable factor for an arbitrary bounded polynomial family, with total degree48q and height exponent2472q, independently of family size. Exact binary support encoding and independence of distinct actual basis words are proved. Final assembly of the source basis pair norms remains open, so article13.2 stays in progress. Coverage73/167 and findings76 are unchanged. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.
+
+
+## Completed common-curve theorem13.2
+
+`CommonCurveTheorem.article_13_2` proves the full source theorem with
+explicit absolute constant1000000, independent of the basis size.
+Actual bounded even basis supports generate the actual T9.5 norms,
+one primitive irreducible curve divides all of them, and its actual
+function-field square-class map has entire image dimension at most1.
+Total degree48q0, the point equation and the source height bound are
+proved for this same curve. Real B,q0 and the source half-open range
+are covered. Coverage is now74/167 (main26/73, companion48/94).
+Findings remain76. See [full statement alignment](COMMON_CURVE_ALIGNMENT.md).
+
+Complete common-curve theorem checkpoint verification: Lean v4.36.0-rc2 full build passed (10353 jobs); actual axiom audit passed for all 5607 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3322 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.11 GiB. Full article theorem13.2 is proved from the actual bounded independent even basis through actual T9.5 pair norms, simultaneous primitive irreducible curve extraction and the actual function-field square-class map. Real B,q0, source comparable points, total degree48q0, point zero and common threshold/height constant1000000 are included, uniformly in the basis size. No pair-norm, common-factor, resultant bound, image-rank or unproved external premise is inserted. Coverage is74/167 (main26/73, companion48/94); findings remain76. No new manuscript conclusion error, external estimate, Paper C source, manuscript-byte change or Palomar registration.
