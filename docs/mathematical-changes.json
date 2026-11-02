@@ -4025,12 +4025,13 @@
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "1c8ec9ccd1d8be71ff4e92a437914c9138a62eb4",
+      "validation_commit": "8448b7eb97768bd6f5eb6ffb4946770bf48bac31",
       "validation_history": [
         "814324abe2a8d8af8e96dfe6bc284499f211557a",
         "8c4f9c97bb50746e930c7a51d8d46709b59b2c48",
         "d0f535d84ad1109c42dfaa288881dc7af353ae79",
-        "b18f57976591b0700778f028f8c8a2b59d623b65"
+        "b18f57976591b0700778f028f8c8a2b59d623b65",
+        "1c8ec9ccd1d8be71ff4e92a437914c9138a62eb4"
       ]
     },
     {
@@ -4149,7 +4150,8 @@
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "8448b7eb97768bd6f5eb6ffb4946770bf48bac31"
     }
   ]
 }
