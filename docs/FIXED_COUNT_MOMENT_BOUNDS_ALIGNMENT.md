@@ -256,3 +256,8 @@ Main 6.4 remains in progress. Coverage stays 77/167 (main 28/73, companion
 download, source-byte change or Palomar registration is introduced.
 
 Verified Lean v4.36.0-rc2 full build (10915 jobs), actual Audit.lean kernel audit (6841 declarations; only propext, Classical.choice, Quot.sound), 4558 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.28 GiB. Actual joint subset masses, factorial and ordinary moments are at most N^epsilon at every fixed nonnegative order, unconditionally and uniformly over all dyadic subgrounds. The proof uses positive singleton-seed propagation and the bounded actual mean, not BCN or assumed moment bounds. This does not claim uniform boundedness or the complete source asymptotic. Main 6.4 stays in progress; coverage 77/167, improvements 90.
+
+
+## Subpower moments suffice for the complete fixed contact bound
+
+Every fixed shifted moment E[(Z+mu)^m] is now at most N^epsilon without BCN. A finite two-site-seed truncation uses only these weaker bounds to prove the full contact activity estimate of T14.1, on every original dyadic subground. Uniform boundedness and the full fixed-moment asymptotic remain separate. See [the contact alignment](CONTACT_CENTERED_ACTIVITY_ALIGNMENT.md).

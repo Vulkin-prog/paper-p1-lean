@@ -3366,6 +3366,9 @@ import PaperP1
 #print axioms PaperP1.ConnectedFourthReductionUnderBCN.uniform_reduction
 #print axioms PaperP1.ContactDefectBudget.defect_count
 #print axioms PaperP1.ContactDefectBudget.relation_power
+#print axioms PaperP1.ContactSeedKernel.uniform_joint_mass
+#print axioms PaperP1.ContactSeedKernel.uniform_independent_mass
+#print axioms PaperP1.ContactSeedKernel.uniform_kernel
 #print axioms PaperP1.ContactSeedMass.point_bound
 #print axioms PaperP1.ContactSeedMass.forward_sum
 #print axioms PaperP1.CriticalActualMean.mean_mono
@@ -3513,6 +3516,7 @@ import PaperP1
 #print axioms PaperP1.FixedChannelMassTheorem.source_error
 #print axioms PaperP1.FixedChannelMassTheorem.source_positive_phase
 #print axioms PaperP1.FixedChannelMassTheorem.companion_T2_5
+#print axioms PaperP1.FixedContactCenteredActivity.uniform_bound
 #print axioms PaperP1.FixedCountMomentBoundsUnderBCN.uniform_factorial_upper
 #print axioms PaperP1.FixedCountMomentBoundsUnderBCN.uniform_factorial_bound
 #print axioms PaperP1.FixedCountMomentBoundsUnderBCN.uniform_ordinary_bound
@@ -4079,6 +4083,7 @@ import PaperP1
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_joint_mass
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_factorial
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_ordinary
+#print axioms PaperP1.SubpowerShiftedCountMoments.uniform_bound
 #print axioms PaperP1.TargetQuotientRank.bounded_affine_rank
 #print axioms PaperP1.TargetUnionResidual.row_rank_sublinear
 #print axioms PaperP1.ThirdCumulantReduction.absolute_reduction
@@ -4386,6 +4391,10 @@ import PaperP1
 #print axioms PaperP1.BoundedSubsetWeights.weightSum_le_of_card_le
 #print axioms PaperP1.BoundedSubsets.mem_sets
 #print axioms PaperP1.BoundedSubsets.card_sets
+#print axioms PaperP1.ClosePairs.subset
+#print axioms PaperP1.ClosePairs.data
+#print axioms PaperP1.ClosePairs.forward_cover
+#print axioms PaperP1.ClosePairs.independent_weight_bound
 #print axioms PaperP1.ColoredPrimeConstraints.finrank_constraintTarget
 #print axioms PaperP1.ColoredPrimeConstraints.selection_kernel_trivial
 #print axioms PaperP1.ColoredPrimeConstraints.missing_components_card_bound
@@ -5115,6 +5124,13 @@ import PaperP1
 #print axioms PaperP1.ConnectedWindowFamilies.primitive_enumeration
 #print axioms PaperP1.ConnectedWindowFamilies.connected_family_count
 #print axioms PaperP1.ConnectedWindowFamilies.primitive_family_count
+#print axioms PaperP1.ContactCenteredTruncation.mem_families
+#print axioms PaperP1.ContactCenteredTruncation.seedKernel_nonneg
+#print axioms PaperP1.ContactCenteredTruncation.finite_bound
+#print axioms PaperP1.ContactFamilySeeds.positive_exact
+#print axioms PaperP1.ContactFamilySeeds.positive_cover
+#print axioms PaperP1.ContactFamilySeeds.joint_sum_bound
+#print axioms PaperP1.ContactFamilySeeds.prescribed_contact
 #print axioms PaperP1.ContactPairMass.pair_span
 #print axioms PaperP1.ContactPairMass.joint_le_union_rank
 #print axioms PaperP1.ContactPairMass.joint_le_relation_ratio
@@ -5790,6 +5806,9 @@ import PaperP1
 #print axioms PaperP1.SelectedUnitFourierEnumeration.kernelEquiv_sign
 #print axioms PaperP1.SelectedUnitFourierEnumeration.signed_unit_enumeration
 #print axioms PaperP1.SeveralWindowProjections.tuples_eq
+#print axioms PaperP1.ShiftedCountMoments.add_power_bound
+#print axioms PaperP1.ShiftedCountMoments.eq_finite
+#print axioms PaperP1.ShiftedCountMoments.finite_upper
 #print axioms PaperP1.SingletonSeedMass.singleton_injective
 #print axioms PaperP1.SingletonSeedMass.joint_singleton
 #print axioms PaperP1.SingletonSeedMass.sum_seeds
@@ -6776,6 +6795,10 @@ import PaperP1
 #print axioms PaperP1.ScalarRecurrenceTheorem.companion_T19_11
 #print axioms PaperP1.SeedProductBound.elementary_bound
 #print axioms PaperP1.SeedProductBound.power_bound
+#print axioms PaperP1.SeededCenteredTruncation.centered_le_positive
+#print axioms PaperP1.SeededCenteredTruncation.pair_positive_mean
+#print axioms PaperP1.SeededCenteredTruncation.pointwise_truncation
+#print axioms PaperP1.SeededCenteredTruncation.finite_bound
 #print axioms PaperP1.SizeBiasedRecurrence.realMass_sizeBiased
 #print axioms PaperP1.SizeBiasedRecurrence.realMass_successor
 #print axioms PaperP1.SizeBiasedRecurrence.mixtureMass_nonneg

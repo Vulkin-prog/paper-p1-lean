@@ -4911,6 +4911,55 @@
         "status": "not_integrated"
       },
       "validation_commit": "5d2397f7bfbda51f0b7104feb81f329c2733333b"
+    },
+    {
+      "id": "P1-MATH-0091",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:core:fixed-centred",
+        "number": "T14.1",
+        "page": 53,
+        "source": "companion_sections/cores.tex",
+        "line": 160,
+        "statement_sha256": "80f300c82f31d2deecc2baf2eccdcb59d7235d91f77f2446ddb6660280209ca1"
+      },
+      "original_assumption": "The contact part of T14.1 is stated on the regular ground G_N. Its proof bounds centered contact completions using uniformly bounded fixed moments from the full fixed-moment classification.",
+      "finding": "At every fixed r>=2, the same N^(-1+epsilon) contact activity bound holds unconditionally on every original dyadic subground, including irregular sites and zero heterogeneous marginals. A generic finite two-site-seed truncation bounds it by R^(r-2) times the exact seed kernel sum(q(e)+3*prod p), plus the higher shifted moment E[(Z+mu)^m]/R^(m-r). The actual contact kernel is N^(-1+delta); only unconditional subpower fixed moments are needed. Choosing delta and a fixed higher moment before N proves the result without BCN or a uniformly bounded-moment premise.",
+      "evidence": [
+        "PaperP1.ClosePairs.subset",
+        "PaperP1.ClosePairs.data",
+        "PaperP1.ClosePairs.forward_cover",
+        "PaperP1.ClosePairs.independent_weight_bound",
+        "PaperP1.ContactFamilySeeds.positive_exact",
+        "PaperP1.ContactFamilySeeds.positive_cover",
+        "PaperP1.ContactFamilySeeds.joint_sum_bound",
+        "PaperP1.ContactFamilySeeds.prescribed_contact",
+        "PaperP1.SeededCenteredTruncation.centered_le_positive",
+        "PaperP1.SeededCenteredTruncation.pair_positive_mean",
+        "PaperP1.SeededCenteredTruncation.pointwise_truncation",
+        "PaperP1.SeededCenteredTruncation.finite_bound",
+        "PaperP1.ShiftedCountMoments.add_power_bound",
+        "PaperP1.ShiftedCountMoments.eq_finite",
+        "PaperP1.ShiftedCountMoments.finite_upper",
+        "PaperP1.SubpowerShiftedCountMoments.uniform_bound",
+        "PaperP1.ContactCenteredTruncation.mem_families",
+        "PaperP1.ContactCenteredTruncation.seedKernel_nonneg",
+        "PaperP1.ContactCenteredTruncation.finite_bound",
+        "PaperP1.ContactSeedKernel.uniform_joint_mass",
+        "PaperP1.ContactSeedKernel.uniform_independent_mass",
+        "PaperP1.ContactSeedKernel.uniform_kernel",
+        "PaperP1.FixedContactCenteredActivity.uniform_bound"
+      ],
+      "proposed_revision": "Replace or supplement the contact part of the proof of T14.1 with the finite positive-envelope seed truncation. State the contact conclusion for every original dyadic subground with heterogeneous exact marginals and all fixed r>=2. Use only the unconditional subpower fixed-moment corollary, keeping the deeper bounded-moment and connected-activity classifications separate.",
+      "impact": "Weakens the proof inputs for the contact estimate and extends its original-model scope, while preserving its N^(-1+epsilon) exponent. It does not prove the separate connected 4/5 estimate, any growing-order theorem or the full fixed-moment asymptotic. T14.1 and main 6.4 remain in progress; no manuscript conclusion error is claimed.",
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (10931 jobs), source and ledger checks, actual axiom audit of 6864 declarations (only propext, Classical.choice and Quot.sound), and 4581 direct ledger/evidence declaration checks; Ubuntu root free space 15.24 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

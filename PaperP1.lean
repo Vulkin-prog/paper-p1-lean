@@ -1468,3 +1468,19 @@ public import PaperP1.Model.NonconnectedActivity
 public import PaperP1.Asymptotics.NonconnectedActivityUnderBCN
 
 public import PaperP1.Asymptotics.SubpowerFixedCountMoments
+
+public import PaperP1.Combinatorics.ClosePairs
+
+public import PaperP1.Model.ContactFamilySeeds
+
+public import PaperP1.Probability.SeededCenteredTruncation
+
+public import PaperP1.Model.ShiftedCountMoments
+
+public import PaperP1.Asymptotics.SubpowerShiftedCountMoments
+
+public import PaperP1.Model.ContactCenteredTruncation
+
+public import PaperP1.Asymptotics.ContactSeedKernel
+
+public import PaperP1.Asymptotics.FixedContactCenteredActivity
