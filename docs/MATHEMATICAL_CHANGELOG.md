@@ -3529,3 +3529,8 @@ The heterogeneous analytic conversion now has the universal constant16exp(2), va
 ## Finite arithmetic foundations ofT19.15
 
 Canonical square-part injection, the literal positive reciprocal sums, a uniform2X/A square tail and a finite logarithmic-preimage dyadic transfer are now proved. These validate the elementary reduction in the manuscript without changing its claim. The cited ordinary reciprocal-prime asymptotic and uniform saddle comparison remain open. No new mathematical finding or proved numbered result; coverage77/167, findings86.
+
+
+## Coarse actual pair activity and the upper Hermite parameter gap
+
+The exact finite bound2A2<=#hosts*M+actual independent host mass is proved, with the actual factor2 and zero-loss covariance support. Under the existing explicit BCN input this yields A2<=N^(-1/2+epsilon), conversion errorN^(-3/2+epsilon) and uniform decay of the actual second factorial cumulant. Actual two-sided mean bounds are unconditional. The upper gap |alpha|<=mu/2 follows under BCN; alpha>=0 and the source sharp rates remain open. This is a verified intermediate step, without a new mathematical finding or numbered completion. Coverage77/167, findings86.

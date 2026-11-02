@@ -3214,6 +3214,9 @@ import PaperP1
 #print axioms PaperP1.ContactDefectBudget.relation_power
 #print axioms PaperP1.ContactSeedMass.point_bound
 #print axioms PaperP1.ContactSeedMass.forward_sum
+#print axioms PaperP1.CriticalActualMean.mean_mono
+#print axioms PaperP1.CriticalActualMean.lowerMean_pos
+#print axioms PaperP1.CriticalActualMean.uniform_bounds
 #print axioms PaperP1.CriticalBandScale.lowerScale_pos
 #print axioms PaperP1.CriticalBandScale.upperScale_pos
 #print axioms PaperP1.CriticalBandScale.critical_band_scale
@@ -3631,6 +3634,8 @@ import PaperP1
 #print axioms PaperP1.OriginalWindowFamilyCounts.uniform_hosts
 #print axioms PaperP1.OriginalWindowFamilyMass.uniform_marginals
 #print axioms PaperP1.OriginalWindowFamilyMass.article_10_2
+#print axioms PaperP1.PairActivityUnderBCN.uniform_pair_activity
+#print axioms PaperP1.PairActivityUnderBCN.uniform_conversion
 #print axioms PaperP1.PairHostIndependentMass.finite_mass_cap
 #print axioms PaperP1.PairHostIndependentMass.uniform_mass
 #print axioms PaperP1.PoissonCharlierConversion.errorConstant_pos
@@ -3770,6 +3775,10 @@ import PaperP1
 #print axioms PaperP1.ScaledPrimeCounts.divided_cutoff_ratio
 #print axioms PaperP1.ScaledPrimeCounts.shifted_cutoff_ratio
 #print axioms PaperP1.ScaledPrimeCounts.prime_count_divided_shifted
+#print axioms PaperP1.SecondCumulantUnderBCN.diagonal_bound
+#print axioms PaperP1.SecondCumulantUnderBCN.uniform_bound
+#print axioms PaperP1.SecondCumulantUnderBCN.uniform_eventually_small
+#print axioms PaperP1.SecondCumulantUnderBCN.uniform_parameter_gap
 #print axioms PaperP1.SecondMomentSubpower.uniform_subpower
 #print axioms PaperP1.SelectedKernelCounts.small_factor_subpolynomial
 #print axioms PaperP1.SelectedKernelCounts.large_factor_subpolynomial
@@ -5095,6 +5104,13 @@ import PaperP1
 #print axioms PaperP1.OneNegativePrime.parity_simple_multiple
 #print axioms PaperP1.OneNegativePrime.not_dvd_inside
 #print axioms PaperP1.OneNegativePrime.positive_exact_run
+#print axioms PaperP1.PairActivityHostCap.absoluteMass_mono
+#print axioms PaperP1.PairActivityHostCap.centered_zero_of_zero_loss
+#print axioms PaperP1.PairActivityHostCap.ordered_mass
+#print axioms PaperP1.PairActivityHostCap.restrict_bad_tuples
+#print axioms PaperP1.PairActivityHostCap.finite_bound
+#print axioms PaperP1.PairActivityHostCap.covariance_sum_absolute_bound
+#print axioms PaperP1.PairActivityHostCap.second_cumulant_absolute_bound
 #print axioms PaperP1.PairHostMoment.zero_loss
 #print axioms PaperP1.PairHostMoment.tuplePair_injective
 #print axioms PaperP1.PairHostMoment.tupleValues_pair

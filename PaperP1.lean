@@ -1216,3 +1216,11 @@ public import PaperP1.Arithmetic.ReciprocalOddPivots
 public import PaperP1.Arithmetic.DyadicOddPivots
 
 public import PaperP1.Arithmetic.ReciprocalPivotSquareTail
+
+public import PaperP1.Model.PairActivityHostCap
+
+public import PaperP1.Asymptotics.PairActivityUnderBCN
+
+public import PaperP1.Asymptotics.SecondCumulantUnderBCN
+
+public import PaperP1.Asymptotics.CriticalActualMean

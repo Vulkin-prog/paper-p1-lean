@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **6289 audited theorem/lemma declarations**. This
+- The project currently has **6305 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -3494,3 +3494,57 @@ are new P1 code. No new external mathematical argument, dependency
 download, source-byte change or Palomar registration is introduced.
 
 Lean v4.36.0-rc2 full build passed (10663 jobs); actual axiom audit passed for all 6289 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4006 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.74 GiB. Actual reciprocal-pivot comparison, canonical square-part injection, literal finite sum reduction, the2X/A tail and logarithmic-preimage dyadic transfer are proved with no analytic premise. The exact Erdos--Ivic--Pomerance and uniform saddle asymptotics remain open; T19.15 is in progress. Coverage77/167 (main28/73, companion49/94); confirmed findings86. Only the exactly attributed elementary pivot fragments are ported from PaperC; no old analytic assumption or binary is imported. No new external mathematical input, dependency download, source-byte change or Palomar registration.
+
+
+## Coarse actual pair activity and cumulant decay under the common BCN input
+
+The literal actual absolute pair mass A2 now has an unconditional finite
+host reduction. The exact factor2 from unordered pairs to ordered tuples
+is proved. Zero full pair loss forces zero covariance, including every
+actual affine compatibility case. An injective tuple-to-host map gives
+
+    2*A2(full)<=#full_loss_hosts*M+actual_host_independent_mass
+
+wheneverM bounds actual joint masses of distinct pairs. The independent
+term retains the actual heterogeneous products p_x*p_y. Every smaller
+deterministic ground set has no greater absolute pair mass.
+
+Under precisely the same explicit field-polynomial BCN argument already
+used for main13.5,13.6,13.8, the checked actual host count N^(1+epsilon)
+and actual pair cap N^(-3/2+epsilon) imply, uniformly before every
+critical length and every deterministic dyadic subsetG,
+
+    A2(G)<=N^(-1/2+epsilon),
+    ||B2(G)-Q(actual_mean,actual_second_cumulant)||_1<=N^(-3/2+epsilon).
+
+These are coarse rates. They do not supply the stronger manuscript
+A2=O(N^(-2/3+epsilon)) or the optimal conversion exponent5/3, and they
+do not compare the original count law with the retained reference.
+
+The exact second factorial cumulant, including its negative diagonal
+term, satisfies |alpha(G)|<=2*A2(G)+sum p_x^2. Its actual diagonal is
+bounded byK^2/N using the proved critical marginal cap. The same BCN
+argument therefore gives |alpha(G)|<=N^(-1/2+epsilon), and hence a
+uniform eventually-small statement with the threshold beforeL andG.
+No cumulant or activity bound is supplied as a premise of these rates.
+
+Independently of BCN, the actual full count mean satisfies eventually
+
+    (2^C)^(-1)/2<=mu<=2*2^C.
+
+The lower bound uses the actual regular population, whose size is at
+leastN/2, and its actual nominal marginal; the upper bound uses the
+proved actual marginal cap. Under BCN this gives |alpha|<=mu/2 and
+alpha<mu uniformly in the critical band. Nonnegativity ofalpha is NOT
+proved here, so the remaining Hermite admissibility condition remains
+open, as do the original and explicit-parameter approximation rates.
+
+Main15.1 and19.1 remain in progress. Neither this weaker conversion nor
+a partial parameter gap adds proved numbered coverage. Coverage77/167
+(main28/73, companion49/94), confirmed findings86 unchanged. The only
+unformalized input is the existing ordinary BCN argument, explicitly
+passed at every dependent theorem. The finite host identities and the
+mean bounds are unconditional. No new external estimate, PaperC port,
+dependency download, manuscript-byte change or Palomar registration.
+
+Lean v4.36.0-rc2 full build passed (10671 jobs); actual axiom audit passed for all 6305 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4022 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.73 GiB. The exact finite2A2 host reduction and unconditional actual two-sided mean bounds are proved. Under the same explicit unformalized BCN argument, actual pair activity and actual second cumulants are at mostN^(-1/2+epsilon), actual conversion is at mostN^(-3/2+epsilon), and the upper parameter gap |alpha|<=mu/2 holds uniformly. No target activity, covariance or cumulant rate is assumed. Positivity ofalpha and the sharper source rates remain open; main15.1 and19.1 are in progress. Coverage77/167 (main28/73, companion49/94); confirmed findings86. No new external input, PaperC port, dependency download, manuscript-byte change or Palomar registration.
