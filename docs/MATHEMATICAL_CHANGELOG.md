@@ -3464,3 +3464,8 @@ The literal offset i-1, total physical support identity, actual image basis, int
 ## P1-MATH-0080: a direct bounded-grid proof of the linear branch
 
 Two actual bounded integer points on the actual line, together with a center beyond the box, force the required positive reduced alignment. The already proved13.3 grid lower bound supplies them at actual relation rank>=9 when D=1. This replaces the coefficient-height sign argument and the additional functional-square/root-pairing choice in that branch. All coefficient, sign, gcd, height and affine-error steps are formalized; no original conclusion error or optimized threshold is claimed. The full13.6 threshold assembly, BCN input and final contradiction remain open. Proved coverage76/167, confirmed findings80.
+
+
+## Completed conditional nonaligned-rank assembly
+
+The exact source nonaligned-rank threshold, actual finite-pair maximum, literal limsup and a uniform strict half-window gap now follow from one named ordinary integer-polynomial BCN argument. The short basis, support floor, actual common curve and square-word bridge, critical point threshold, degree-one alignment, degree loss and final contradiction are all proved internally. The numerical threshold<1/2 is unconditional. This closes the assembly promised after P1-MATH-0080 without a new mathematical finding. BCN and its presentation specialization remain unformalized;13.6 is conditional, not proved coverage. Coverage76/167; findings80.

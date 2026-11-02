@@ -1106,3 +1106,11 @@ public import PaperP1.Algebra.BivariateLineGeometry
 public import PaperP1.Arithmetic.BoundedPointAlignment
 
 public import PaperP1.Arithmetic.LinearCurveAlignment
+
+public import PaperP1.Analysis.ShortBasisCurveScale
+
+public import PaperP1.Arithmetic.IntegerCurvePointInput
+
+public import PaperP1.Arithmetic.NonalignedRankUnderBCN
+
+public import PaperP1.Arithmetic.NonalignedRankLimsup

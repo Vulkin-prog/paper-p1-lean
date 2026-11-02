@@ -188,3 +188,8 @@ Actual-word bridge checkpoint: Lean v4.36.0-rc2 full build passed (10531 jobs); 
 ## Subsequent degree-one branch
 
 The actual degree-one common-curve branch is now proved by two bounded integer-grid points, at actual relation rank>=9. No line height/sign or extra root-pairing input is required. The critical threshold assembly, BCN specialization and final13.6 contradiction remain open. See [the current finite nonaligned scope](NONALIGNED_RANK_ALIGNMENT.md).
+
+
+## Completed subsequent critical assembly
+
+The actual support and critical logarithmic budgets now discharge every common-curve threshold in13.6. The final nonaligned rank bound, actual finite-pair maximum, literal limsup and strict half-window gap are proved under the separately named integer BCN input. All remaining unformalized scope is explicit. See [the conditional alignment](NONALIGNED_RANK_ALIGNMENT.md).

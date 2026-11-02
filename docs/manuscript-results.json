@@ -2325,7 +2325,7 @@
       "source": "main_sections/pair_rigidity.tex",
       "line": 259,
       "sha256": "bfe3ffef35f01b69168fe958413ef9b1f7970253c5be921e9b3ee5a73445d770",
-      "status": "in_progress",
+      "status": "conditional",
       "lean_declarations": [
         "PaperP1.CompleteRelationWordEmbedding.finiteCoefficients_apply",
         "PaperP1.CompleteRelationWordEmbedding.finiteCoefficients_support",
@@ -2361,16 +2361,41 @@
         "PaperP1.BoundedPointAlignment.source_alignment",
         "PaperP1.LinearCurveAlignment.bounded_grid_alignment",
         "PaperP1.LinearCurveAlignment.actual_linear_case",
-        "PaperP1.LinearCurveAlignment.nonaligned_degree_ne_one"
+        "PaperP1.LinearCurveAlignment.nonaligned_degree_ne_one",
+        "PaperP1.ShortBasisCurveScale.extractionExponent_choice",
+        "PaperP1.ShortBasisCurveScale.support_budget_eventually",
+        "PaperP1.ShortBasisCurveScale.log_succ_le",
+        "PaperP1.ShortBasisCurveScale.logarithmic_budget_eventually",
+        "PaperP1.ShortBasisCurveScale.dimension_budget_eventually",
+        "PaperP1.ShortBasisCurveScale.extraction_error_eventually",
+        "PaperP1.ShortBasisCurveScale.rank_threshold_eventually",
+        "PaperP1.ShortBasisCurveScale.point_threshold_of_log_budget",
+        "PaperP1.ShortBasisCurveScale.point_threshold_eventually",
+        "PaperP1.ShortBasisCurveScale.degree_loss_of_power_bound",
+        "PaperP1.ShortBasisCurveScale.rank_threshold_lt_half",
+        "PaperP1.IntegerCurvePointInput.constant_power_cap",
+        "PaperP1.IntegerCurvePointInput.growing_degree_under_BCN",
+        "PaperP1.IntegerCurvePointInput.fixed_power_degree_under_BCN",
+        "PaperP1.NonalignedRankUnderBCN.critical_rank_bound",
+        "PaperP1.NonalignedRankLimsup.maximalRatio_nonneg",
+        "PaperP1.NonalignedRankLimsup.pair_ratio_le_maximal",
+        "PaperP1.NonalignedRankLimsup.critical_maximal_ratio_bound",
+        "PaperP1.NonalignedRankLimsup.article_13_6_under_BCN",
+        "PaperP1.NonalignedRankLimsup.uniform_half_window_gap",
+        "PaperP1.IntegerCurvePointInput.UniformBound",
+        "PaperP1.CurveFromCompleteRelations.grid_rank_budget"
       ],
       "literature_inputs": [
         "P1-ALG-ACTUAL-RELATION-WORD-BRIDGE",
-        "P1-ALG-LINEAR-CURVE-ALIGNMENT"
+        "P1-ALG-LINEAR-CURVE-ALIGNMENT",
+        "P1-ARITH-NONALIGNED-CRITICAL-ASSEMBLY",
+        "P1-GEO-BCN-INTEGER-UNIFORM"
       ],
       "mathematical_changes": [
         "P1-MATH-0080"
       ],
-      "notes": "Finite actual-code-to-curve bridge completed. The actual complete-relation vector maps injectively to integer-offset formal words through the explicit offset i.val-1. The literal word supports are the mapped selected physical vertices, with exactly the same total physical cardinality and exact radius L+1. The actual short-basis subspace and its actual basis transport through an explicit linear equivalence, preserving dimension and both projection injectivities. Complete prime-parity cancellation proves that the literal selected natural product is a square, including the zero-product case; the actual word-polynomial evaluation at the actual centers is its integer cast, hence square. For actual rank>=2, actual physical basis support<=2q,1<=q<=B=L+1 and the actual common-curve point threshold, CurveFromCompleteRelations.common_curve constructs the actual common-curve certificate from the actual complete-relation certificate. No separate square, arbitrary word basis or support-correspondence premise is supplied. CurveFromCompleteRelations.actual_grid_bound then proves the actual integer-grid lower bound with the original relation-space rank and constant6. The critical asymptotic threshold assembly, degree-one alignment argument and final nonaligned rank contradiction remain open; BCN13.4 is still unformalized and its named input is explicit in the separate conditional count development. Article13.6 is not counted complete. Coverage76/167 and confirmed findings79 unchanged. The actual degree-one branch is subsequently closed. BivariateLineGeometry proves the literal linear form and collinearity for every actual nested integer polynomial of total degree1. Two actual distinct bounded collinear integer points and a center with both coordinates>B force positive coprime alignment coefficients<=2B; actual gcd reduction and the exact(p+q)B affine bound are proved. For the actual common curve of an actual relation certificate of rank>=9, the proved grid lower bound with D=1 gives at least two such integer points. LinearCurveAlignment.actual_linear_case therefore constructs the literal source alignment, and nonalignment excludes degree1. No coefficient height estimate, sign-of-slope input, functional root-pairing witness or assumed alignment conclusion is needed in this branch. P1-MATH-0080 records this proof simplification; the original common-curve construction and its point threshold are still required. Critical asymptotic threshold assembly, the unformalized BCN input/geometric specialization and the final nonaligned contradiction remain open;13.6 is in progress. Coverage76/167, confirmed findings80."
+      "notes": "The complete actual nonaligned-rank argument is now proved under\nthe ordinary explicit integer-polynomial BCN input\n`IntegerCurvePointInput.UniformBound c kappa`, with c>0. The source\nBCN theorem and its specialization remain unformalized. This is a\nconditional result and does not increase proved numbered coverage.\n\nFor every epsilon>0 choose the actual exponent\n\n    a = exp(-3epsilon/8)/2,\n    (2/3)log(1/a) = (2/3)log2 + epsilon/4,\n\nand b=(a+1/2)/2, so a<b<1/2. The proved source short basis13.1 has\nphysical basis support at most2q for q=floor(B^b), once B is large.\nThe actual q satisfies1<=q<=B. All floor, logarithmic and power\nestimates are proved. The critical geometry B<=U logN and the actual\nbudget q^2 log(B+1)=o(B) discharge the explicit common-curve threshold\n(B+1)^(1000000q^2)<N.\n\nIf d_xy>((2/3)log2+epsilon)B, the extracted actual rank exceeds\nepsilon B/2. Its actual common curve has D<=48B^b. The proved\ndegree-one branch gives literal source alignment when extracted\nrank>=9 and x,y>B, so nonalignment forces D>=2. The actual grid\nrank budget is\n\n    rank <= #integerGrid + 1 + 6D^2.\n\nThe loss1+6D^2 is at most epsilon B/4 eventually. The named external\ninteger BCN input, through the proved growing-degree analytic\nestimate, bounds that same actual grid by epsilon B/8. This gives\nthe contradiction. No compatibility assumption is used.\n\n`critical_rank_bound` has one N0 before every length in the fixed\ncritical band and every actual dyadic pair. `nonalignedPairs`,\n`maximalRank` and `maximalRatio` construct the actual finite maximum,\nwith value0 for an empty pair set. Its uniform bound and the literal\nFilter.limsup inequality hold for every eventually critical length\nfunction L(N). The numerical inequality(2/3)log2<1/2 is proved\nunconditionally by rational power/log bounds. A single sigma<1/2\nis chosen before every band constant C, giving a uniform half-window\ngap under the same explicit external input.\n\nThe field-polynomial input used for conditional13.5 and the integer-\npolynomial input here are separately named. Their rational/Gauss\npresentation bridge has not been claimed proved. No global axiom,\nassumed target rank bound or hidden external theorem is introduced.\nArticle13.6 is now conditional;13.4 remains in progress and13.5\nconditional. Proved coverage76/167 (main28/73, companion48/94),\nconfirmed findings80. No added Paper C source, dependency download,\nmanuscript-byte change or Palomar registration.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10545 jobs); the actual axiom audit passed for all5956 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All3673 distinct ledger/finding declarations were directly checked. All138 original manifest entries and167 numbered records are intact. Ubuntu available space:15.88 GiB. The actual critical short basis, support floor q=floor(B^b), common-curve point threshold, degree<=48q, degree-one exclusion, real grid rank budget, sublinear degree loss and final contradiction are kernel-checked. The actual finite nonaligned-pair maximum, literal Filter.limsup bound and a fixed sigma<1/2 before every C retain the ordinary explicit integer-polynomial BCN input. The numerical threshold<1/2 is unconditional. BCN and its rational/Gauss/geometric presentation specialization remain unformalized. Article13.6 is conditional; proved coverage76/167 (main28/73, companion48/94), confirmed findings80 unchanged. No added Paper C source, dependency download, manuscript-byte change or Palomar registration."
     },
     {
       "label": "p13:rig:aligned",

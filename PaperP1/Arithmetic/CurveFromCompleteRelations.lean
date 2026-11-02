@@ -72,4 +72,23 @@ theorem actual_grid_bound (x y L : ℕ) (cert : ShortBasisActualSpace.Certificat
     (fun w v hv ↦ (mem_offsetBox (L + 1) v).mpr ((wordSpace_offsets_bound x y L cert w).2 v hv))
   simpa only [wordSpace_finrank] using h
 
+theorem grid_rank_budget (x y L : ℕ) (cert : ShortBasisActualSpace.Certificate x y L)
+    (curve : CommonCurveTheorem.Certificate (wordSpace x y L cert)) :
+    (Module.finrank F₂ cert.space : ℝ) ≤ ((integerGrid curve.polynomial (L + 1)).card : ℝ) +
+      1 + 6 * (totalDegree curve.polynomial : ℝ) ^ 2 := by
+  have hg := actual_grid_bound x y L cert curve
+  have hm : 1 ≤ max (degreeX curve.polynomial) (degreeY curve.polynomial) :=
+    (show 1 ≤ degreeX curve.polynomial by have h := curve.degreeX_pos; omega).trans (le_max_left _ _)
+  have hmul := Nat.mul_le_mul_right
+    (Module.finrank F₂ cert.space - 1 - 6 * totalDegree curve.polynomial ^ 2) hm
+  have hmul' : Module.finrank F₂ cert.space - 1 - 6 * totalDegree curve.polynomial ^ 2 ≤
+      max (degreeX curve.polynomial) (degreeY curve.polynomial) *
+        (Module.finrank F₂ cert.space - 1 - 6 * totalDegree curve.polynomial ^ 2) := by
+    simpa only [one_mul] using hmul
+  have hnat : Module.finrank F₂ cert.space ≤ (integerGrid curve.polynomial (L + 1)).card +
+      1 + 6 * totalDegree curve.polynomial ^ 2 := by
+    have h := hmul'.trans hg
+    omega
+  exact_mod_cast hnat
+
 end PaperP1.CurveFromCompleteRelations

@@ -13,6 +13,8 @@ The support constant352/a is explicit; multiplicative constants precede
 C, and the endpoint a=1 is included. Article13.2 and proposition13.3
 are also complete. See [the short-basis alignment](docs/SHORT_BASIS_ALIGNMENT.md).
 
+Article13.6 now has its complete actual nonaligned-rank reduction, including the finite-pair maximum, literal limsup and a strict half-window gap, **conditional on the explicitly unformalized integer BCN bound**. All critical threshold and degree-one alignment steps are proved internally. This adds no proved numbered coverage. See [the conditional scope](docs/NONALIGNED_RANK_ALIGNMENT.md).
+
 Companion T22.7 is complete: the actual infinite replica formula, the
 uniform colored conditional target sum and every fixed positive weighted
 replica moment are proved. Repeated centers and arbitrary ordered tuple
