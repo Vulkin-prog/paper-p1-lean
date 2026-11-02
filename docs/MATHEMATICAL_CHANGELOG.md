@@ -3638,3 +3638,8 @@ and numerical coupling/error estimate remain open;T19.3 stays in
 progress. Coverage77/167 (main28/73, companion49/94), findings88.
 No new external input, BCN premise, PaperC port, dependency download,
 manuscript-byte change or Palomar registration is introduced.
+
+
+## Finding88 extended: actual retained-modified law and its literal error
+
+An actual retained-configuration modified count is constructed and proved dominated by the shifted direct maximum. Its actual law, every-order heterogeneous moment/tail bound and TV coupling by the exact bad-event probabilitydelta are checked. The retained outside-event subfamily nullity is at mostL/3+1. The source arithmetic rate fordelta and seed-union event identification remain open; T15.2,T19.3 are in progress. No new finding or numbered completion. Coverage77/167, findings88.

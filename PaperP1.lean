@@ -1314,3 +1314,13 @@ public import PaperP1.Algebra.ElementarySymmetricBound
 public import PaperP1.Probability.HeterogeneousActiveMaximum
 
 public import PaperP1.Model.HeterogeneousDirectMaximum
+
+public import PaperP1.Probability.FiniteObservationLaw
+
+public import PaperP1.Model.RetainedActiveCount
+
+public import PaperP1.Model.RetainedCountCylinder
+
+public import PaperP1.Model.RetainedModifiedLaw
+
+public import PaperP1.Model.RetainedModifiedBounds

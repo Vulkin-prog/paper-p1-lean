@@ -55,4 +55,10 @@ theorem finiteCylinder_event (M : ℕ) (E : SampleSpace M → Prop) [DecidablePr
       finiteExpectation (cylinderProbability M).weight (fun σ => if E σ then 1 else 0) := by
   rw [← finiteMeasure_indicator_expectation, finiteCylinder_weights_eq]
 
+theorem infiniteCylinder_event (M : ℕ) (E : SampleSpace M → Prop) [DecidablePred E] :
+    infiniteRademacherMeasure.real {ω | E (restrictToFinite M ω)} =
+      finiteExpectation (cylinderProbability M).weight (fun σ ↦ if E σ then 1 else 0) := by
+  rw [← finiteCylinder_event, ← map_infiniteRademacherMeasure_restrictToFinite M]
+  exact (map_measureReal_apply (measurable_restrictToFinite M) ((Set.to_countable _).measurableSet)).symm
+
 end PaperP1.Probability.CylinderExpectations
