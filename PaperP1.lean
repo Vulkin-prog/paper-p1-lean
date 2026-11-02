@@ -1517,3 +1517,6 @@ public import PaperP1.Asymptotics.LogHeightUnitChannelActivity
 public import PaperP1.Model.AlignedChannelFamilies
 public import PaperP1.Asymptotics.ZeroUnitAlignedActivity
 public import PaperP1.Asymptotics.LogHeightAlignedActivity
+public import PaperP1.Model.ActivityFamilyCover
+public import PaperP1.Model.BoundaryAlignedPairs
+public import PaperP1.Asymptotics.BoundaryAlignedActivity

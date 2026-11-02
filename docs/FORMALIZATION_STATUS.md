@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **6982 audited theorem/lemma declarations**. This
+- The project currently has **6992 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -5413,3 +5413,34 @@ premise, axiom, dependency download, original-source change or Palomar
 registration is introduced.
 
 Verified under Lean v4.36.0-rc2: full lake build (10997 jobs), source and ledger checks, actual axiom audit of 6982 declarations (only propext, Classical.choice and Quot.sound), and 4699 direct ledger/evidence declaration checks; Ubuntu root free space 15.10 GiB. Original manuscript bytes and all 167 statement hashes preserved.
+
+
+## The height-one/two dyadic boundary populations
+
+The literal enlarged aligned height-one and height-two populations are
+now constructed. A general finite positive cover controls actual activity
+from families covering every nonzero coefficient, without requiring
+representations or covering classes to be disjoint.
+
+For the reduced channel 1:2, dyadic geometry confines the first center
+to [N,N+3(L+1)] and the second to [2N-3(L+1),2N]. Thus its unordered
+family has cardinality at most 16(L+1)^2, including all original irregular
+sites and all affine incompatibilities. Each actual covariance magnitude
+and each joint probability is bounded by an actual single-site marginal.
+The unconditional marginal cap therefore bounds both the joint mass and
+absolute centered activity by N^(-1+epsilon).
+
+For 1:1, a pair with separation at most L belongs to the already checked
+close-pair family. A pair farther apart has no exact normalized unit and
+belongs to the checked zero-unit enlarged alignment class. Their positive
+cover gives total absolute centered activity N^(-1+epsilon), with no BCN
+or local compatibility premise.
+
+These are the small-height boundary contributions to main 3.3 and T7.1.
+The complete principal-versus-aligned comparison and the macroscopic
+nonaligned sector remain open. Both numbered results stay in progress.
+Coverage stays 77/167 (main 28/73, companion 49/94), confirmed improvements
+94. No new correction, external premise, axiom, dependency download,
+original-source change or Palomar registration is introduced.
+
+Verified under Lean v4.36.0-rc2: full lake build (11003 jobs), source and ledger checks, actual axiom audit of 6992 declarations (only propext, Classical.choice and Quot.sound), and 4709 direct ledger/evidence declaration checks; Ubuntu root free space 15.09 GiB. Original manuscript bytes and all 167 statement hashes preserved.

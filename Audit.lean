@@ -3236,6 +3236,8 @@ import PaperP1
 #print axioms PaperP1.BlockSupportParameters.uniform_count
 #print axioms PaperP1.BlockSupportParameters.critical_count
 #print axioms PaperP1.BlockSupportParameters.companion_T1_14
+#print axioms PaperP1.BoundaryAlignedActivity.height_one
+#print axioms PaperP1.BoundaryAlignedActivity.height_two
 #print axioms PaperP1.BoundaryCutoff.condition_exists
 #print axioms PaperP1.BoundaryCutoff.cutoff_spec
 #print axioms PaperP1.BoundaryCutoff.cutoff_minimal
@@ -5031,6 +5033,8 @@ import PaperP1
 #print axioms PaperP1.ActiveEdgeObservables.truncation
 #print axioms PaperP1.ActualActiveFamilyCover.probability_mono
 #print axioms PaperP1.ActualActiveFamilyCover.close_probability_eq_exact
+#print axioms PaperP1.ActivityFamilyCover.finite_cover
+#print axioms PaperP1.ActivityFamilyCover.two_families
 #print axioms PaperP1.ActualCanonicalComponents.image_injective
 #print axioms PaperP1.ActualCanonicalComponents.card_blocks
 #print axioms PaperP1.ActualCanonicalComponents.union_blocks
@@ -5050,6 +5054,12 @@ import PaperP1
 #print axioms PaperP1.AlignedTripleFamilies.star_card
 #print axioms PaperP1.AlignedTripleFamilies.card_cap
 #print axioms PaperP1.AlignedTripleFamilies.card_bound
+#print axioms PaperP1.BoundaryAlignedPairs.data
+#print axioms PaperP1.BoundaryAlignedPairs.channel_eq_image
+#print axioms PaperP1.BoundaryAlignedPairs.height_two_sources_cover
+#print axioms PaperP1.BoundaryAlignedPairs.height_two_card
+#print axioms PaperP1.BoundaryAlignedPairs.unit_one_empty
+#print axioms PaperP1.BoundaryAlignedPairs.height_one_cover
 #print axioms PaperP1.CanonicalPairImages.canonical_images
 #print axioms PaperP1.Model.InfiniteStarts.infiniteFamilyJointMoment_eq_finite
 #print axioms PaperP1.Model.InfiniteStarts.infiniteFamilyJointMoment_partition
