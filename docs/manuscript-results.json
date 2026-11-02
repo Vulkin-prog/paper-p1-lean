@@ -1212,7 +1212,8 @@
           "validation": "Verified Lean v4.36.0-rc2 full build (10789 jobs), actual Audit.lean kernel audit (6636 declarations; only propext, Classical.choice, Quot.sound), 4353 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.49 GiB. Unordered actual seed propagation is unconditional; fixed dependent-mass and original moment bounds use only the existing ordinary explicit BCN premise. All moment orders and finite seed-size covers are fixed before N. Main 6.4 is in progress: bounded original moments are proved under BCN, but no full sharp moment expansion is claimed. Coverage 77/167 (main 28/73, companion 49/94); confirmed improvements 88.",
           "validation_commit": "aa6034d316a96701da11067aa6e1d2b93ae3cc88"
         }
-      ]
+      ],
+      "validation_commit": "6a793bb3add547da6ede0ea45baabb24f3b840bb"
     },
     {
       "label": "p1:core:rankin",
