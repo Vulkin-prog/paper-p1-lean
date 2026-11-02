@@ -1418,3 +1418,19 @@ public import PaperP1.Combinatorics.SharedPairProducts
 public import PaperP1.Model.DirectPairProductComparison
 
 public import PaperP1.Asymptotics.DirectPairProductReductionUnderBCN
+
+public import PaperP1.Affine.DisjointBlockNullity
+
+public import PaperP1.Affine.FinitePartPreimage
+
+public import PaperP1.Model.DirectRunBlocks
+
+public import PaperP1.Combinatorics.PairFinpartition
+
+public import PaperP1.Model.CanonicalPairImages
+
+public import PaperP1.Model.FourthDirectPairSum
+
+public import PaperP1.Model.ConnectedFourthReduction
+
+public import PaperP1.Asymptotics.ConnectedFourthReductionUnderBCN

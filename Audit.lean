@@ -80,6 +80,12 @@ import PaperP1
 #print axioms PaperP1.Affine.canonicalRelationPartition_direct
 #print axioms PaperP1.Affine.canonicalRelationPartition_le_direct
 #print axioms PaperP1.Affine.existsUnique_finest_directPartition
+#print axioms PaperP1.DisjointBlockNullity.union_nullity
+#print axioms PaperP1.DisjointBlockNullity.additive_iff_disjoint
+#print axioms PaperP1.DisjointBlockNullity.sum_mem_span
+#print axioms PaperP1.DisjointBlockNullity.relation_cut
+#print axioms PaperP1.DisjointBlockNullity.twoPartPartition_respects
+#print axioms PaperP1.DisjointBlockNullity.cut_not_connected
 #print axioms PaperP1.Affine.effectiveRowEvent_iff
 #print axioms PaperP1.Affine.effectiveRowSign_independent_of_solution
 #print axioms PaperP1.Affine.affineIndicator_eq_effectiveIndicator
@@ -111,6 +117,11 @@ import PaperP1
 #print axioms PaperP1.FinitePartImage.prod_equiv
 #print axioms PaperP1.FinitePartImage.connected_image
 #print axioms PaperP1.FinitePartImage.nullity_image
+#print axioms PaperP1.FinitePartPreimage.image_part
+#print axioms PaperP1.FinitePartPreimage.part_nonempty
+#print axioms PaperP1.FinitePartPreimage.parts_disjoint
+#print axioms PaperP1.FinitePartPreimage.parts_union
+#print axioms PaperP1.FinitePartPreimage.span_image
 #print axioms PaperP1.Affine.binarySign_zero
 #print axioms PaperP1.Affine.binarySign_eq_one_iff
 #print axioms PaperP1.Affine.binarySign_add
@@ -3350,6 +3361,7 @@ import PaperP1
 #print axioms PaperP1.ConditionalRankTheorem.floor_conditions
 #print axioms PaperP1.ConditionalRankTheorem.companion_T21_2
 #print axioms PaperP1.ConnectedBlockCount.uniform_count
+#print axioms PaperP1.ConnectedFourthReductionUnderBCN.uniform_reduction
 #print axioms PaperP1.ContactDefectBudget.defect_count
 #print axioms PaperP1.ContactDefectBudget.relation_power
 #print axioms PaperP1.ContactSeedMass.point_bound
@@ -4551,6 +4563,7 @@ import PaperP1
 #print axioms PaperP1.PairDecompositions.target_not_mem_pair
 #print axioms PaperP1.PairDecompositions.map_constant_on_pairs
 #print axioms PaperP1.PairDecompositions.nonzero_image_card_drop
+#print axioms PaperP1.PairFinpartition.eq_of_pair_refinement
 #print axioms PaperP1.PhysicalLabelSupportCount.preimage_eq_biUnion
 #print axioms PaperP1.PhysicalLabelSupportCount.preimage_card
 #print axioms PaperP1.PhysicalLabelSupportCount.lift_cover
@@ -4938,6 +4951,7 @@ import PaperP1
 #print axioms PaperP1.AlignedTripleFamilies.star_card
 #print axioms PaperP1.AlignedTripleFamilies.card_cap
 #print axioms PaperP1.AlignedTripleFamilies.card_bound
+#print axioms PaperP1.CanonicalPairImages.canonical_images
 #print axioms PaperP1.Model.InfiniteStarts.infiniteFamilyJointMoment_eq_finite
 #print axioms PaperP1.Model.InfiniteStarts.infiniteFamilyJointMoment_partition
 #print axioms PaperP1.Model.InfiniteStarts.infiniteFamilyCenteredMoment_partition
@@ -5057,6 +5071,8 @@ import PaperP1
 #print axioms PaperP1.ConditionalRunRank.evenMap_boundary
 #print axioms PaperP1.ConditionalRunRank.row_kernel_mem_iff
 #print axioms PaperP1.ConditionalRunRank.row_kernel_finrank
+#print axioms PaperP1.ConnectedFourthReduction.exact_reduction
+#print axioms PaperP1.ConnectedFourthReduction.finite_bound
 #print axioms PaperP1.ConnectedWindowFamilies.connected_enumeration
 #print axioms PaperP1.ConnectedWindowFamilies.primitive_enumeration
 #print axioms PaperP1.ConnectedWindowFamilies.connected_family_count
@@ -5099,6 +5115,11 @@ import PaperP1
 #print axioms PaperP1.DirectPairProductComparison.omitted_decomposition
 #print axioms PaperP1.DirectPairProductComparison.overlapping_disjoint_nonDirect
 #print axioms PaperP1.DirectPairProductComparison.finite_bound
+#print axioms PaperP1.DirectRunBlocks.additive_iff_spaces
+#print axioms PaperP1.DirectRunBlocks.exists_partition
+#print axioms PaperP1.DirectRunBlocks.centered_factor_positive
+#print axioms PaperP1.DirectRunBlocks.centered_factor
+#print axioms PaperP1.DirectRunBlocks.not_connected
 #print axioms PaperP1.DyadicUnitFourierAggregate.pair_pattern_sum
 #print axioms PaperP1.DyadicUnitFourierAggregate.dyadic_unit_sum
 #print axioms PaperP1.DyadicUnitFourierAggregate.symmetric_unit_sum
@@ -5135,6 +5156,15 @@ import PaperP1
 #print axioms PaperP1.Model.dyadic_marginal_reference_isProbability
 #print axioms PaperP1.FiniteSplitLp.finiteSum_restrict
 #print axioms PaperP1.FiniteSplitLp.moment_root_eq_lpNorm
+#print axioms PaperP1.FourthDirectPairSum.pair_mem_direct_iff
+#print axioms PaperP1.FourthDirectPairSum.direct_pair_data
+#print axioms PaperP1.FourthDirectPairSum.union_mem_disconnected
+#print axioms PaperP1.FourthDirectPairSum.product_eq_union
+#print axioms PaperP1.FourthDirectPairSum.canonical_images_eq
+#print axioms PaperP1.FourthDirectPairSum.union_injective_nonzero
+#print axioms PaperP1.FourthDirectPairSum.disconnected_preimage
+#print axioms PaperP1.FourthDirectPairSum.signedDirect_eq_disconnected
+#print axioms PaperP1.FourthDirectPairSum.quartic_split
 #print axioms PaperP1.FourthRunComponents.positive_marginals
 #print axioms PaperP1.FourthRunComponents.images_disjoint
 #print axioms PaperP1.FourthRunComponents.images_union

@@ -3698,3 +3698,8 @@ Fixed-source propagation is specialized exactly to actual original joint rows, i
 ## Exact isolation of the disjoint non-direct quartic product cost
 
 Actual unordered pair products are partitioned exactly into direct disjoint, non-direct disjoint and shared-vertex populations, with the repeated-edge term retained separately. The shared population is bounded by half the sum of squared rows. This leaves a literal non-direct positive sum, not an assumed target estimate. Main 16.1 stays in progress; coverage 77/167, improvements 89.
+
+
+## Canonical identification of the quartic direct-pair sum
+
+Nullity additivity is proved equivalent to disjointness of actual block spaces, with an exact cross-block dimension term. Actual centered coefficients factor across arbitrary nonempty direct blocks, including zero marginals. Canonical uniqueness gives the exact sum over all nonconnected quartic families. The full fourth-cumulant comparison is reduced to 24 times the literal disjoint non-direct product cost, plus a checked source-scale remainder under explicit BCN. No new numbered completion or finding: coverage 77/167, improvements 89.

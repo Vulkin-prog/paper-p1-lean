@@ -214,3 +214,56 @@ No new external input, axiom, dependency download, source-byte change or
 Palomar registration is introduced.
 
 Verified Lean v4.36.0-rc2 full build (10865 jobs), actual Audit.lean kernel audit (6760 declarations; only propext, Classical.choice, Quot.sound), 4477 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.37 GiB. Exact arbitrary signed-weight square comparison, finite overlap cover and actual direct/non-direct pair partition are unconditional. The N^(-3/2+epsilon) overlap remainder uses the existing ordinary explicit BCN premise; the literal disjoint non-direct cost is retained without an assumed estimate. Main 16.1 stays in progress, coverage 77/167, improvements 89.
+
+
+## The full unordered direct-pair identity is proved
+
+The complete finite direct-pair population identity in main 16.1 is now
+proved on the original infinite model. For disjoint blocks e,f, the exact
+cross-block identity is
+
+    rho(e union f) = rho(e)+rho(f)+dim(span(e) intersection span(f)).
+
+Consequently nullity additivity is equivalent to disjointness of the actual
+effective block spaces. The proof only needs the finite local spaces; the
+ambient square-class space need not be finite dimensional. A checked
+relation cut constructs the actual two-part direct partition. Exact
+finite-subtype preimages preserve the original blocks, their spaces and
+their moments. For arbitrary nonempty disjoint direct blocks, not just
+pairs, c(e union f)=c(e)c(f). Zero marginals are included by exact
+cancellation; no compatibility assumption is introduced. Such a genuine
+two-block direct family is nonconnected.
+
+A refinement without singleton parts cannot split two-element blocks.
+A nonzero quartic coefficient has an actual full-support relation, so any
+direct two-pair split agrees with the canonical relation partition. This
+proves uniqueness of the unordered split on the nonzero population.
+Every nonconnected nonzero quartic coefficient has such a split by the
+already checked component classification. An exact finite bijection
+between nonzero summands, with zero terms retained in both full sums,
+therefore proves
+
+    sum_(all four-site I)c(I) = K4 + D,
+
+where K4 is the actual connected quartic sum and D is the literal unordered
+disjoint direct-pair product sum from the preceding checkpoint. This is an
+identification of the actual populations, not a freely supplied D22 formula.
+The finite geometry and probability identity are unconditional for L>0.
+
+Combining this identity, the exact heterogeneous fourth-cumulant formula,
+the checked repeated-index error and the checked overlap comparison gives,
+under the existing ordinary explicit BCN premise, for every epsilon>0,
+
+    |kappa4(G)-24*K4(G)| <= 24*B(G)+N^(-3/2+epsilon),
+
+eventually uniformly over critical lengths and every dyadic subground.
+Here B is exactly the sum of |c(e)c(f)| over disjoint two-site edge pairs
+with non-direct total spaces. It remains in the conclusion with its
+literal definition; no target bound on B is assumed or claimed.
+The sharp estimate of B, the incompatible connected quartic activity
+bound and the full source conclusions remain open. Main 16.1 remains
+in progress; coverage 77/167 (main 28/73, companion 49/94), improvements 89.
+No new external input, axiom, dependency download, source-byte change or
+Palomar registration is introduced.
+
+Verified Lean v4.36.0-rc2 full build (10881 jobs), actual Audit.lean kernel audit (6790 declarations; only propext, Classical.choice, Quot.sound), 4507 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.35 GiB. Cross-block nullity, direct-space equivalence, zero-marginal block factorization, canonical uniqueness and the complete actual disconnected quartic/direct-pair sum identity are unconditional for L>0. The actual connected fourth-cumulant comparison has a checked N^(-3/2+epsilon) remainder under existing explicit BCN, with 24 times the literal disjoint non-direct product cost retained. The sharp estimate of that cost and the incompatible connected quartic bound remain open. Main 16.1 stays in progress; coverage 77/167, improvements 89.
