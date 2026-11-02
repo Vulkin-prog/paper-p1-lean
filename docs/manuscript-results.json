@@ -3563,7 +3563,8 @@
           "validation": "Verified Lean v4.36.0-rc2 full build (10847 jobs), actual Audit.lean kernel audit (6728 declarations; only propext, Classical.choice, Quot.sound), 4445 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.39 GiB. The exact nonconnected quartic pair factorization, nullity additivity and finite repeated-index bound are unconditional. Under the existing ordinary explicit BCN premise, the full repeated remainder relative to 24*C4-12*C2^2 is at most N^(-3/2+eta) uniformly over all dyadic subgrounds. The exact unordered direct-pair population and its sharp product/incompatible comparisons remain open; main 16.1 stays in progress. Coverage 77/167; confirmed improvements 89.",
           "validation_commit": "95774eedd4387fb51b4b4f561eaf01aa9d86fe4d"
         }
-      ]
+      ],
+      "validation_commit": "8efc2669434edec83ceeb7f64d361a13d6564dbc"
     },
     {
       "label": "p13:lower:optimal",
