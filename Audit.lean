@@ -3564,6 +3564,9 @@ import PaperP1
 #print axioms PaperP1.HalfCountStages.survivor_data
 #print axioms PaperP1.HalfCountStages.survivor_few_large
 #print axioms PaperP1.HalfCountStages.removed_source
+#print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_full_cumulant
+#print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_absolute_activity
+#print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_cumulant
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.powerSum_succ_le
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.meanCap_pos
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.errorConstant_pos
@@ -5337,6 +5340,10 @@ import PaperP1
 #print axioms PaperP1.Model.parityVec_mem_boundedPrimeParity
 #print axioms PaperP1.Model.parityPairing_eq_zero_iff_of_bounded
 #print axioms PaperP1.Model.parityPairing_injOn_bounded
+#print axioms PaperP1.PositiveJointRestriction.joint_zero
+#print axioms PaperP1.PositiveJointRestriction.sum_restrict
+#print axioms PaperP1.PositiveJointRestriction.factorial_restrict
+#print axioms PaperP1.PositiveJointRestriction.third_restrict
 #print axioms PaperP1.PositiveMarginalRestriction.zero_centered
 #print axioms PaperP1.PositiveMarginalRestriction.positiveGround_subset
 #print axioms PaperP1.PositiveMarginalRestriction.marginal_positive

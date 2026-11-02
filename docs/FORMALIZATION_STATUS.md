@@ -4433,3 +4433,49 @@ input, axiom, dependency download, manuscript-byte change or Palomar
 registration is introduced.
 
 Verified Lean v4.36.0-rc2 full build (10809 jobs), actual Audit.lean kernel audit (6668 declarations; only propext, Classical.choice, Quot.sound), 4385 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.46 GiB. Finite factorial count-law reconstruction, the factorial Banach remainder and actual Poisson parameter stability are unconditional. Uniform original-law TV convergence to actual and nominal Poisson references uses the existing ordinary explicit BCN premise. Reconstruction order is chosen after tolerance and before N. No quantitative TV rate, optimal quadratic correction, new numbered completion or new mathematical finding is claimed. Coverage 77/167 (main 28/73, companion 49/94); confirmed improvements 88.
+
+
+## Half-power actual triple activity and third cumulants under BCN
+
+The actual absolute triple activity and actual third factorial cumulant
+now satisfy the stronger coarse half-power estimates under explicit BCN:
+for every eta>0, uniformly in every critical L and every G contained in
+the dyadic block, eventually
+
+    sum_(I subset G, |I|=3) |c(I)| <= N^(-1/2+eta),
+    |kappa_3^factorial(Z_G)| <= N^(-1/2+eta).
+
+These improve the earlier coarse exponent g=1/2-(2/3)*log(2)>0. The sharper
+source exponents in main 14.1 and 14.6, and the sharp comparison remainder
+in main 11.3, remain open. The new result does not replace those aligned
+statements or count them complete.
+
+The proof first uses the newly checked second and third factorial-moment
+estimates for the full original count. With its actual mean mu,
+
+    kappa_3 = (F_3-mu^3) - 3*mu*(F_2-mu^2),
+
+and mu is uniformly bounded, so the full third cumulant has the half-power
+bound. Next, deleting zero-marginal sites is proved to preserve all actual
+joint-mass sums, every factorial moment and this cumulant exactly. A joint
+family containing a zero-marginal site has actual mass zero; it is never
+divided by a zero probability.
+
+On the positive ground set, the existing actual incompatible-activity and
+cumulant comparisons cost at most N^(-1+eta). These compare the full third
+cumulant with six times the positive connected activity, and the latter
+with the actual absolute triple activity. Exact zero-marginal restriction
+recovers the activity on the full dyadic block. Since absolute activity
+is a nonnegative sum, restriction to every G costs nothing. Finally the
+exact third-cumulant identity, including its actual repeated-index cost
+N^(-3/2+eta), gives the same half-power cumulant bound for every G.
+All fixed orders and thresholds are assembled before N; heterogeneous
+marginals, incompatible families and repeated indices remain explicit.
+
+No new external input or axiom is introduced: BCN is the same ordinary
+explicit plane-curve argument. Main 11.3, 14.1 and 14.6 remain in progress.
+Coverage stays 77/167 (main 28/73, companion 49/94), confirmed improvements
+stay 88. Original manuscript bytes, compiler/dependency pins and the later
+Palomar milestone are preserved.
+
+Verified Lean v4.36.0-rc2 full build (10813 jobs), actual Audit.lean kernel audit (6675 declarations; only propext, Classical.choice, Quot.sound), 4392 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.45 GiB. Exact deletion of zero-marginal sites preserves every actual factorial moment and the third cumulant. Under the existing ordinary explicit BCN premise, full absolute triple activity and the third factorial cumulant are uniformly at most N^(-1/2+eta) for every dyadic subground. All repeated and incompatible costs remain explicit. The sharp source exponents remain open; main 11.3,14.1,14.6 stay in progress. Coverage 77/167; improvements 88.

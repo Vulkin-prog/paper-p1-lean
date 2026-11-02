@@ -3663,3 +3663,8 @@ An exact fresh-tuple recurrence and the unconditional negative conditional-devia
 ## First actual original-law Poisson approximation under BCN
 
 The original count law now converges uniformly in TV to actual Poisson probability laws with the current actual mean or nominal mean, under explicit BCN. The unconditional finite factorial reconstruction bound and factorial Banach remainder supply the passage from fixed moments to laws. The reconstruction order is chosen after the final tolerance and before N. No optimal rate, quadratic correction, new numbered completion or new mathematical finding is claimed. Coverage 77/167, confirmed improvements 88.
+
+
+## Stronger coarse triple-activity and cumulant bounds
+
+Actual fixed factorial-moment estimates improve both full absolute triple activity and the third factorial cumulant to N^(-1/2+eta) under explicit BCN for every dyadic subground, including zero marginals. Exact zero-marginal moment restriction and all repeated/incompatible terms are checked. Main 11.3, 14.1 and 14.6 remain in progress for their sharp claims; no numbered completion or new finding. Coverage 77/167; confirmed improvements 88.

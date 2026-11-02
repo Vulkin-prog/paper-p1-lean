@@ -1362,3 +1362,7 @@ public import PaperP1.Probability.CompletedFactorialTruncation
 public import PaperP1.Probability.CompletedPoissonMetric
 
 public import PaperP1.Asymptotics.CoarsePoissonLawUnderBCN
+
+public import PaperP1.Model.PositiveJointRestriction
+
+public import PaperP1.Asymptotics.HalfPowerThirdActivityUnderBCN

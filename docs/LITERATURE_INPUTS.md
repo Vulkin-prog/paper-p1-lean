@@ -4218,3 +4218,49 @@ counted complete. Numbered coverage remains 77/167 (main 28/73, companion
 ordinary explicit theorem argument already inventoried. No new external
 input, axiom, dependency download, manuscript-byte change or Palomar
 registration is introduced.
+
+
+## Half-power actual triple activity and third cumulants
+
+Stable ID: `P1-PROB-HALF-POWER-TRIPLE-ACTIVITY-BCN`. Status: **proved conditional on existing explicit BCN; sharp source exponents remain open**.
+
+The actual absolute triple activity and actual third factorial cumulant
+now satisfy the stronger coarse half-power estimates under explicit BCN:
+for every eta>0, uniformly in every critical L and every G contained in
+the dyadic block, eventually
+
+    sum_(I subset G, |I|=3) |c(I)| <= N^(-1/2+eta),
+    |kappa_3^factorial(Z_G)| <= N^(-1/2+eta).
+
+These improve the earlier coarse exponent g=1/2-(2/3)*log(2)>0. The sharper
+source exponents in main 14.1 and 14.6, and the sharp comparison remainder
+in main 11.3, remain open. The new result does not replace those aligned
+statements or count them complete.
+
+The proof first uses the newly checked second and third factorial-moment
+estimates for the full original count. With its actual mean mu,
+
+    kappa_3 = (F_3-mu^3) - 3*mu*(F_2-mu^2),
+
+and mu is uniformly bounded, so the full third cumulant has the half-power
+bound. Next, deleting zero-marginal sites is proved to preserve all actual
+joint-mass sums, every factorial moment and this cumulant exactly. A joint
+family containing a zero-marginal site has actual mass zero; it is never
+divided by a zero probability.
+
+On the positive ground set, the existing actual incompatible-activity and
+cumulant comparisons cost at most N^(-1+eta). These compare the full third
+cumulant with six times the positive connected activity, and the latter
+with the actual absolute triple activity. Exact zero-marginal restriction
+recovers the activity on the full dyadic block. Since absolute activity
+is a nonnegative sum, restriction to every G costs nothing. Finally the
+exact third-cumulant identity, including its actual repeated-index cost
+N^(-3/2+eta), gives the same half-power cumulant bound for every G.
+All fixed orders and thresholds are assembled before N; heterogeneous
+marginals, incompatible families and repeated indices remain explicit.
+
+No new external input or axiom is introduced: BCN is the same ordinary
+explicit plane-curve argument. Main 11.3, 14.1 and 14.6 remain in progress.
+Coverage stays 77/167 (main 28/73, companion 49/94), confirmed improvements
+stay 88. Original manuscript bytes, compiler/dependency pins and the later
+Palomar milestone are preserved.
