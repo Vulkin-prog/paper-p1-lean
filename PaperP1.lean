@@ -1600,3 +1600,10 @@ public import PaperP1.Model.NormalizedFamilyDilation
 public import PaperP1.Model.RationalTripleEvenRank
 public import PaperP1.Asymptotics.RationalTripleEvenProbability
 public import PaperP1.Asymptotics.RationalTripleEvenMass
+public import PaperP1.Model.NormalizedFamilyDefectRank
+public import PaperP1.Arithmetic.RationalTripleUnionGeometry
+public import PaperP1.Asymptotics.FixedRationalTripleResidual
+public import PaperP1.Asymptotics.FixedRationalTripleProbability
+public import PaperP1.Asymptotics.FixedRationalTripleMass
+public import PaperP1.Asymptotics.RationalTripleEvenSharpMass
+public import PaperP1.Asymptotics.FixedRationalTripleSharpMass
