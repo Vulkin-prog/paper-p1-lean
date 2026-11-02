@@ -14,7 +14,8 @@ def sourceNorm {R : Type*} [CommRing R] (f₁ f₂ f₃ h a b c d : R) : R :=
   (a ^ 2 + f₁ * b ^ 2 - f₂ * c ^ 2 - f₃ * d ^ 2) ^ 2 -
     4 * f₁ * (a * b - h * c * d) ^ 2
 
-theorem map_sourceNorm {R S : Type*} [CommRing R] [CommRing S] (φ : R →+* S)
+theorem map_sourceNorm {R S F : Type*} [CommRing R] [CommRing S]
+    [FunLike F R S] [RingHomClass F R S] (φ : F)
     (f₁ f₂ f₃ h a b c d : R) :
     φ (sourceNorm f₁ f₂ f₃ h a b c d) =
       sourceNorm (φ f₁) (φ f₂) (φ f₃) (φ h) (φ a) (φ b) (φ c) (φ d) := by

@@ -3245,3 +3245,14 @@ The integer-gap estimate, actual branch linkage and final norm degree
 and height bounds remain open; T9.5 is not counted complete. No error
 in the manuscript conclusion or exponent is asserted. See
 [the exact alignment](TWO_WITNESS_ALIGNMENT.md).
+
+
+P1-MATH-0075 norm degree/height checkpoint: the actual integer word norm
+has partial degrees at most 12q and total degree at most 24q. Finite
+coefficient arithmetic proves explicit height (B+1)^(1200q) from the
+constructed primitive coefficient height (B+1)^(275q). The same actual
+w,D,Q,R now retain primitive coefficients, numerator factorization,
+original and divided formal cancellations, nonzero norm and all degree
+and height bounds. Analytic integer separation and actual word-branch
+linkage remain open. No new independent finding or numbered result is
+counted; the 75 confirmed improvements are retained.

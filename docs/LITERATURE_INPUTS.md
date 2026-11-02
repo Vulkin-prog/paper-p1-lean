@@ -2083,3 +2083,20 @@ literal norm evaluates to zero; the integer-gap proof remains open.
 Arbitrary general branch lists are not silently identified with word
 radicals. P1-MATH-0075 records this proof improvement. No external
 estimate, new Paper C source or Palomar registration is introduced.
+
+
+## Exact literal norm degrees and finite explicit height
+
+Stable ID: `P1-ALG-TWO-WITNESS-NORM-BOUNDS`. Status: **proved**,
+remaining degree and height components of companion T9.5.
+
+Literal word degrees, overlap half-rank balance and the U,V norm formula
+prove both partial degrees <=12q and total degree <=24q. Finite integer
+coefficient convolutions give bivariate product height with the literal
+rectangle cost. Linear word factors have height growth <=(B+1)^card.
+For the constructed primitive coefficient bound (B+1)^(275q), the actual
+norm height is <=(B+1)^(1200q), uniformly for 1<=q<=B. An existential
+construction retains the same actual coefficients, common factor,
+old/new numerator identity, both cancellations and nonzero bounded norm.
+Analytic integer separation and actual branch linkage remain open.
+No new external estimate, Paper C source or Palomar registration.

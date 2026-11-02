@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5371 audited theorem/lemma declarations**. This
+- The project currently has **5416 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2487,3 +2487,6 @@ Actual primitive-order checkpoint verification: Lean v4.36.0-rc2 full build pass
 
 
 Literal formal-word norm checkpoint verification: Lean v4.36.0-rc2 full build passed (10253 jobs); actual axiom audit passed for all 5371 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3086 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.23 GiB. The literal integer word norm is proved nonzero for every nonzero four-polynomial coefficient family of independent finite reduced words. Word square-class independence, exact overlap quotient, third integer root and signed overlap relation are proved. The norm evaluates to zero whenever the actual auxiliary integer value is zero. Auxiliary nonvanishing holds in any injective domain realization of the radical identities. Analytic integer separation, general branch linkage and final norm degree/height bounds remain open. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements now total 75. No new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.
+
+
+Literal norm degree/height checkpoint verification: Lean v4.36.0-rc2 full build passed (10273 jobs); actual axiom audit passed for all 5416 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3131 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.20 GiB. The actual independent-word norm has both partial degrees at most 12q, total degree at most 24q and explicit height at most (B+1)^(1200q), with the same constructed primitive coefficient family of height (B+1)^(275q). One construction retains actual w,D,Q,R, primitive coefficients, the numerator product identity, original and divided cancellations, and the nonzero bounded norm. The norm map identity is generalized to arbitrary RingHomClass morphisms, including variable swap. Analytic integer separation and actual branch linkage remain open; no point-vanishing conclusion is inferred from formal cancellation alone. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 75. No new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.

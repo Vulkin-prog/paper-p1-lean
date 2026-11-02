@@ -213,10 +213,49 @@ realization is structural data, not an assumed target estimate.
 This checkpoint records P1-MATH-0075, a separate algebraic proof
 improvement. No analytic integer-gap estimate is inferred from it.
 
+## Exact norm degrees and an explicit finite height bound
+
+`FormalWordDegrees` proves the literal word partial degrees are exactly
+the corresponding offset cardinalities. The symmetric-difference and
+intersection cardinal identities give the quotient rank balance
+
+    degreeX(H)+r1 =r2+r3,
+
+and its Y analogue. `BiquadraticNormDegree` proves degree(U)<=2k,
+degree(V)<=2k-r1, hence degree(R)<=4k over any commutative coefficient
+ring. `BiquadraticWordNormDegree.q_bounds` gives the exact source
+partial bounds 12q and total bound 24q, including zero coefficient
+polynomials.
+
+`PolynomialHeightArithmetic` proves finite coefficient height estimates
+for sums, differences, scalar multiples and products. The bivariate
+product cost is the literal rectangle
+(dX(P)+dX(Q)+1)(dY(P)+dY(Q)+1), proved from the two finite coefficient
+convolutions. `FormalWordHeight` proves linear-product height at most
+(B+1)^card and word height at most (B+1)^(cardX+cardY); thus all three
+word radicals and the intersection quotient have height <=(B+1)^(4q).
+
+`BivariateHeightPower` absorbs every product rectangle of degrees <=32q
+into (B+1)^(12q), uniformly for 1<=q<=B. The literal source norm built
+from coefficients of height <=(B+1)^(275q) has height
+
+    H(R) <=(B+1)^(1200q).
+
+The internal verified exponent is already 1189; 1200 is a convenient
+safe constant. This is a finite coefficient proof; the later analytic
+integer-gap estimate is not inferred from it.
+
+`BiquadraticAlgebraicAuxiliary.exists_auxiliary` assembles the same
+actual w,D,Q,R with primitive nonzero coefficient family, all reduced
+degrees, coefficient height 275q, numerator factorization, old and
+primitive-order cancellation, literal nonzero word norm, norm partial
+degrees 12q, total degree 24q and height exponent 1200q.
+The general branch-list data remain explicit. Their identification with
+the actual word radicals and the integer-gap step are not assumed.
+
 ## Remaining obligations
 
-The source analytic integer separation and final partial/total degree
-and height bounds of the actual norm are open. The initial general
+The source analytic integer separation is open. The initial general
 Runge branch lists must be linked with the literal independent word
 radicals in the analytic construction. The norm's evaluation-zero lemma
 is conditional on the actual auxiliary value being zero; it does not

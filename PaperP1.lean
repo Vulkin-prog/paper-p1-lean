@@ -918,3 +918,14 @@ public import PaperP1.Algebra.BivariateWordSquares
 public import PaperP1.Algebra.FormalWordPolynomials
 public import PaperP1.Algebra.IntegerOverlapRoot
 public import PaperP1.Arithmetic.BiquadraticWordNorm
+
+public import PaperP1.Algebra.BiquadraticNormDegree
+public import PaperP1.Algebra.FormalWordDegrees
+public import PaperP1.Arithmetic.BiquadraticWordNormDegree
+public import PaperP1.Algebra.PolynomialHeightArithmetic
+public import PaperP1.Algebra.BivariateDegreeArithmetic
+public import PaperP1.Algebra.FormalWordHeight
+public import PaperP1.Algebra.BivariateHeightPower
+public import PaperP1.Algebra.BiquadraticNormHeight
+public import PaperP1.Arithmetic.BiquadraticWordNormHeight
+public import PaperP1.Arithmetic.BiquadraticAlgebraicAuxiliary
