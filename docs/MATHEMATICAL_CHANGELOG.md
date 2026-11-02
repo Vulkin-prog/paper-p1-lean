@@ -3554,3 +3554,8 @@ The literal finite omitted-height contribution has the exact source uniform lead
 ## Explicit Hermite reference changes are negligible at every fixed omitted height
 
 The literal explicit Hermite and quadratic signed references have ordinary l1 distance at mostN^(-4/3+epsilon), unconditionally. Their actual probabilities have distance-to-P changes at most half that bound, uniformly for every probability lawP. A proved positive omitted-height phase lower bound makes this change negligible on the actual moving scalar phase. No original-count approximation or distance equivalent is assumed or established; main19.1 remains in progress. Coverage77/167, findings87 unchanged.
+
+
+## Coarse actual triple estimates and finding82 probability consequence
+
+The actual A3 and third factorial cumulant have a proved vanishing power under the same explicit BCN input. The all-aligned target count is unconditional. The literal D_(2,1) and incompatible/comparison costs have coarse exponent1; repeated-index cost has exponent3/2. The source sharp rates and optimality remain open. Finding82 is extended with the retained stronger nonaligned actual probability cap; no new finding or numbered completion is added. Coverage77/167, confirmed findings87.

@@ -3565,3 +3565,61 @@ Main19.1 stays in progress, as do main18.1 and18.3. No numbered result
 is added: coverage77/167 (main28/73, companion49/94), findings87.
 No new mathematical finding, external estimate, BCN argument, PaperC
 port, dependency download, manuscript-byte change or Palomar registration.
+
+
+## Coarse actual triple activity from the retained nonaligned rank gap
+
+Stable ID: `P1-PROB-COARSE-TRIPLE-ACTIVITY-BCN`. Status: **proved coarse intermediate bounds under the existing explicit BCN input**.
+
+A first vanishing estimate for the actual absolute triple activity
+and third factorial cumulant is proved under the existing single explicit
+field-polynomial BCN input. Set
+
+    g = 1/2 - (2/3)*log(2) > 0.
+
+For every critical-band constantC and epsilon>0, one threshold precedes
+allN,L and every actual G contained in the dyadic block. The connected
+triple joint mass, full absolute triple activityA3 and absolute third
+factorial cumulant are each at mostN^(-g+epsilon). Choosing epsilon=g/2
+gives an explicit vanishing power. Zero-marginal sites are included in
+the A3 and cumulant bounds; there is no regular-set substitution.
+
+The arithmetic split is exact. For any fixed sourceX, actual aligned
+targets have cardinality at most(4D+1)*(L+1)^10, by an injection of each
+integer strip into[-R,R] and the actual bounded alignment codes. Thus
+the all-pairwise-aligned triple population has cardinality at most
+25*|G|*(L+1)^20, uniformly N^(1+epsilon) in the critical band. Its actual
+joint mass is at mostN^(-1/2+epsilon) under BCN. Every other connected
+triple contains a nonaligned pair. The retained stronger pair-rank
+coefficient (2/3)*log2 gives its actual joint cap
+N^(-2+(2/3)*log2+epsilon), without compatibility. The connected host
+countN^(3/2+epsilon) yields the positive gapg. No dense-triple estimate
+is assumed.
+
+For every positive-joint family, the actual compatible-nullity bound
+and exact joint formula give |c(I)|<=2^|I|*q(I). Nonzero compatible
+triple activity is connected. Every centered coefficient containing
+a zero-marginal site is proved zero, by a finite probability argument
+that permits zero-weight samples; this gives an exact restriction of
+every centered activity sum to the positive-marginal ground set.
+
+The literal independent-target deficit has the coarse numerical bound
+D_(2,1)<=N^(-1+epsilon) under BCN. On the positive-marginal ground set,
+the actual incompatible triple activity is at mostN^(-1+epsilon),
+including both signs. Both A3-K3+ and |kappa3-6K3+| have the same coarse
+bound; the first difference is nonnegative. All repeated-index terms
+are retained, and their absolute cost is separately at most
+N^(-3/2+epsilon). These are consequences of the proved coarse A2
+estimate and actual marginal caps, not target-bound hypotheses.
+
+Every displayed estimate has the uniform source quantifier order.
+The exponentg is substantially weaker than the source41/30 activity
+exponent, and the exponent1 deficit/comparison rate is weaker than
+the source3/2. Main11.1,11.2,11.3,14.1 and14.6 remain in progress;
+14.1 also lacks its lower bound and optimality. Main13.8 remains
+conditional on BCN itself. No numbered completion is added:
+coverage77/167 (main28/73, companion49/94), findings87 unchanged.
+The existing finding82 is extended only with the analytic probability
+consequence of its retained stronger nonaligned rank coefficient.
+No new external input, PaperC port, dependency download, manuscript-byte
+change or Palomar registration is introduced.

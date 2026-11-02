@@ -36,12 +36,12 @@ theorem rankMass_exp (L d : ℕ) :
   unfold rankMass
   ring
 
-theorem critical_rankMass_bound (C ε : ℝ) (hε : 0 < ε) :
+theorem critical_rankMass_coefficient_bound (C a ε : ℝ) (hε : 0 < ε) :
     ∃ N₀ : ℕ, ∀ N ≥ N₀, ∀ L d : ℕ,
       |(L : ℝ) - Real.log N / Real.log 2| ≤ C →
-      (d : ℝ) ≤ (1 / 2 + ε / 2) * (L : ℝ) →
-        rankMass L d ≤ (N : ℝ) ^ (-3 / 2 + ε) := by
-  let β : ℝ := -3 / 2 + ε / 2
+      (d : ℝ) ≤ (a + ε / 2) * (L : ℝ) →
+        rankMass L d ≤ (N : ℝ) ^ (a - 2 + ε) := by
+  let β : ℝ := a - 2 + ε / 2
   let K : ℝ := Real.log 4 + |β| * |C| * Real.log 2
   obtain ⟨N₀, hN₀⟩ := ElementaryLogGrowth.log_ge_eventually (K / (ε / 2))
   refine ⟨N₀, ?_⟩
@@ -69,5 +69,13 @@ theorem critical_rankMass_bound (C ε : ℝ) (hε : 0 < ε) :
   apply Real.exp_le_exp.mpr
   dsimp [β, K] at hβerr hK
   nlinarith only [hscaled, hβerr, hK]
+
+theorem critical_rankMass_bound (C ε : ℝ) (hε : 0 < ε) :
+    ∃ N₀ : ℕ, ∀ N ≥ N₀, ∀ L d : ℕ,
+      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →
+      (d : ℝ) ≤ (1 / 2 + ε / 2) * (L : ℝ) →
+        rankMass L d ≤ (N : ℝ) ^ (-3 / 2 + ε) := by
+  simpa only [show (1 / 2 : ℝ) - 2 + ε = -3 / 2 + ε by ring] using
+    critical_rankMass_coefficient_bound C (1 / 2) ε hε
 
 end PaperP1.CriticalRankMass
