@@ -1501,3 +1501,10 @@ public import PaperP1.Probability.SeededCountMoments
 public import PaperP1.Probability.NonnegativeActivation
 public import PaperP1.Asymptotics.ActualFamilyJointRows
 public import PaperP1.Asymptotics.ActiveEdgeMoments
+public import PaperP1.Model.FullRankPrescriptions
+public import PaperP1.Model.ExactContactEdges
+public import PaperP1.Probability.ActiveFamilyCover
+public import PaperP1.Model.ActiveFamilyCover
+public import PaperP1.Asymptotics.ExactContactActivation
+public import PaperP1.Model.ExactContactCentered
+public import PaperP1.Asymptotics.ExactContactCenteredActivity

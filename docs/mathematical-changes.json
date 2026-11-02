@@ -5049,6 +5049,56 @@
         "status": "not_integrated"
       },
       "validation_commit": "fb01e14b02b172b30392d8d7f327ac81a358f7fb"
+    },
+    {
+      "id": "P1-MATH-0094",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:fixed:propagation",
+        "number": "6.3",
+        "page": 22,
+        "source": "main_sections/fixed_moments.tex",
+        "line": 105,
+        "statement_sha256": "a053ebcb00eb0a8b133d02a11c330ec2119e4122cb9304305b1a7b8e4858a659"
+      },
+      "original_assumption": "The source contact seed estimates provide upper bounds at scale N^(-1+epsilon). The separate activation probability exponent and the smaller exact-contact centered pair activity are not stated.",
+      "finding": "The literal dyadic exact-contact joint mass is at least c_C*N^(-1) and at most N^(-1+epsilon). Its activation probability, equal to the probability of any two active starts at distance at most L, is between N^(-1-epsilon) and N^(-1+epsilon), unconditionally. Meanwhile the absolute centered activity of the exact-separation-L pairs is at most N^(-2+epsilon), because all regular union windows have zero actual pair loss and only subpower many irregular unions contribute.",
+      "evidence": [
+        "PaperP1.FullRankPrescriptions.joint_of_full_rank",
+        "PaperP1.FullRankPrescriptions.contact_on_regular_union",
+        "PaperP1.FullRankPrescriptions.actual_contact_on_regular_union",
+        "PaperP1.ExactContactEdges.map_injective",
+        "PaperP1.ExactContactEdges.subset_pairs",
+        "PaperP1.ExactContactEdges.subset_close",
+        "PaperP1.ExactContactEdges.mass_eq",
+        "PaperP1.ExactContactEdges.starts_eq_interval",
+        "PaperP1.ExactContactEdges.starts_card",
+        "PaperP1.ExactContactEdges.regular_union_count",
+        "PaperP1.ExactContactEdges.regular_union_mem",
+        "PaperP1.ExactContactEdges.mass_lower",
+        "PaperP1.ActiveFamilyCover.joint_pos_of_active",
+        "PaperP1.ActiveFamilyCover.activation_mono",
+        "PaperP1.ActualActiveFamilyCover.probability_mono",
+        "PaperP1.ActualActiveFamilyCover.close_probability_eq_exact",
+        "PaperP1.ExactContactActivation.uniform_regular_union_count",
+        "PaperP1.ExactContactActivation.uniform_mass_lower",
+        "PaperP1.ExactContactActivation.uniform_mass_upper",
+        "PaperP1.ExactContactActivation.uniform_probability",
+        "PaperP1.ExactContactActivation.uniform_close_probability",
+        "PaperP1.ExactContactCentered.zero_on_regular_union",
+        "PaperP1.ExactContactCentered.absolute_bound",
+        "PaperP1.ExactContactCenteredActivity.uniform_bound"
+      ],
+      "proposed_revision": "Add an exact-contact corollary after main 6.3. Use the full-rank 2L union to obtain the exact prescribed atom 2^(-2L), count at least N/2 regular admissible unions, and apply the positive-family activation theorem. State the distinct N^(-2+epsilon) covariance bound only for separation exactly L, retaining the broader close-pair centered estimate separately.",
+      "impact": "Gives a matching logarithmic positive-event exponent and a sharper exact-contact covariance estimate, with original irregular windows, affine incompatibility and dyadic endpoints handled explicitly. It does not assert a multiplicative probability equivalent, an improved arbitrary-order close-family centered exponent, the complete pair profile or a manuscript conclusion error.",
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (10979 jobs), source and ledger checks, actual axiom audit of 6960 declarations (only propext, Classical.choice and Quot.sound), and 4677 direct ledger/evidence declaration checks; Ubuntu root free space 15.14 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
