@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**75 mathematical improvements are confirmed; no error in a manuscript conclusion
+**76 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -3284,3 +3284,23 @@ The literal finite word sets supply injective root lists with exact
 products and offset bounds. The 1/N scaling, integer root realization
 and final integer separation remain open. No new independent finding
 or numbered result is counted.
+
+
+## P1-MATH-0076 — Explicit real-series integer separation for two witnesses
+
+The actual primitive numerator has geometric coefficient exponent 300,
+and its divided vanishing order gives an explicit weighted real-series
+tail. Exact pole scaling bounds the actual auxiliary by
+(B+1)^(400q)/N. The actual word enumerations realize positive integer
+roots, including the derived third root, and prove auxiliary integrality.
+N>(B+1)^(1200q) therefore forces zero. The same primitive coefficient
+family yields a nonzero integer polynomial vanishing at the point with
+both partial degrees12q,total24q and height exponent1200q.
+
+This replaces the later bidisc/Cauchy integer-gap step and makes its
+constants explicit. It is distinct from the initial matrix estimate
+(P1-MATH-0074) and algebraic norm-expression certificate (P1-MATH-0075).
+No optimization or error in the manuscript conclusion is asserted.
+The explicit degree-four field-norm model for the moreover clause is
+still open, so full T9.5 and new numbered coverage are not yet counted.
+See [the exact alignment](TWO_WITNESS_ALIGNMENT.md).

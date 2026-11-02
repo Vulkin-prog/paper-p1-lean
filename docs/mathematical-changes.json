@@ -3925,7 +3925,7 @@
         "statement_sha256": "8184bdbf23396e914181cfc3607def429f6cfb7f28d802887703a3d2004ed4c9"
       },
       "original_assumption": "The nonzero-function and nonzero-norm stage of companion T9.5 constructs a degree-four function-field extension and invokes independence of its four radical characters. The third specialized radical is justified as an integer from being a rational square root of an integer.",
-      "finding": "An elementary norm identity suffices for the nonzero integer norm polynomial itself. Every nonempty literal reduced word is a nonsquare rational function. Exact intersection and symmetric-difference polynomial identities prove that two distinct nonempty words have independent square classes. The field norm U^2-4F1 V^2 vanishes only when all four coefficients are zero, proved by two successive quadratic anisotropy arguments and a difference of squares. This proves the actual integer word norm nonzero for every nonzero four-polynomial coefficient family. Evenness and offset bounds are not needed for this algebraic stage. The integer third root with its required signed overlap relation is constructed using square reflection from the fraction field of the integers. The norm vanishes at any square point where the actual auxiliary integer value is zero; nonzero auxiliary functions follow in every injective domain realization of the radical identities. The literal norm partial degrees are at most 12q and its total degree is at most 24q. A completely finite coefficient estimate now supplies explicit height (B+1)^(1200q), starting from the actual primitive coefficient bound (B+1)^(275q). These conclusions are assembled with the actual coefficient and numerator construction. The actual primitive numerator has coefficient majorant (B+1)^(300q)*(2B)^(a+b), proved finitely. Absolute convergence and Cauchy products identify its one-variable Runge factors with positive real square-root branches for the required small parameter, without an analytic binomial theorem assumption. Literal total-degree evaluation now has a proved bivariate vanishing-tail estimate 2*C*(M+1)*(R*t)^M from the actual coefficient bound and vanishing prefix. Convergent finite sums and actual monomial shifts have their expected real values, and the actual branch value equals the product of its two one-variable Runge values. Actual reciprocal polynomial evaluation and the scaled full numerator/auxiliary-value identity are proved. Nonzero primitive quotient members satisfy the full remaining-pole budget; zero members are handled separately. Literal finite word sets now supply injective root lists with exact products and offset bounds.",
+      "finding": "An elementary norm-expression identity suffices to prove the actual integer word norm polynomial nonzero. Every nonempty literal reduced word is a nonsquare rational function. Exact intersection and symmetric-difference polynomial identities give independent square classes for two distinct nonempty words. The literal expression U^2-4F1 V^2 vanishes only when all four coefficients are zero, proved by quadratic anisotropy and a difference of squares. No four-character basis is assumed for this nonzero-expression conclusion; evenness and offset bounds are unnecessary at this algebraic stage. The third specialized integer root is constructed with the required signed overlap relation. The literal norm has source partial degrees at most 12q, total degree at most 24q and explicit finite height at most (B+1)^(1200q), from the actual primitive coefficient bound (B+1)^(275q). An explicit Algebra.norm realization in a degree-four field remains to be constructed for the source moreover clause. The separate analytic integer-gap improvement is recorded in P1-MATH-0076.",
       "evidence": [
         "PaperP1.BiquadraticNorm.nonsquare_ne_zero",
         "PaperP1.BiquadraticNorm.anisotropic",
@@ -4016,7 +4016,40 @@
         "PaperP1.BivariateHeightPower.scalar_four",
         "PaperP1.BiquadraticNormHeight.formula_height",
         "PaperP1.BiquadraticWordNormHeight.height_bound",
-        "PaperP1.BiquadraticAlgebraicAuxiliary.exists_auxiliary",
+        "PaperP1.BiquadraticAlgebraicAuxiliary.exists_auxiliary"
+      ],
+      "proposed_revision": "Keep the existing auxiliary coefficient construction and integer-gap step. For nonvanishing, use the exact reduced-word overlap identity and the elementary anisotropic norm criterion, which avoid a separate construction of the degree-four extension and basis for this purpose. Include the signed third-root integrality lemma to make the specialization explicit. The norm evaluation-zero result still requires the independently proved auxiliary-value zero. The finite coefficient proof provides the explicit safe norm height exponent 1200; no optimization of this constant is claimed.",
+      "impact": "Closes the nonzero literal norm expression, radical integrality and final polynomial degree/height components of T9.5 for literal independent words. Nonvanishing follows without a target nonzero-norm premise or a basis assumption. The actual vanishing polynomial conclusion is proved using the separately recorded P1-MATH-0076. Explicit degree-four field-norm semantics remain open. Numbered coverage remains 72/167; no error in the manuscript conclusion or exponent is asserted.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10307 jobs); actual axiom audit passed for all 5508 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3223 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.16 GiB. The actual primitive auxiliary has bound (B+1)^(400q)/N and is proved integral at the given two-square integer point via canonical positive word-root realization, including the derived third root. Threshold N>(B+1)^(1200q) forces zero. The same construction supplies a nonzero integer polynomial vanishing at the point, primitive coefficient family, partial degrees12q,total24q,height1200q, uniformly for all source ranks and offsets and comparable integer points. This proves the polynomial conclusion of T9.5 without an external tail, value or integrality premise. The source moreover clause still needs an explicit degree-four field-norm realization; T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements now total 76. No manuscript conclusion error, new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      },
+      "validation_commit": "1c8ec9ccd1d8be71ff4e92a437914c9138a62eb4",
+      "validation_history": [
+        "814324abe2a8d8af8e96dfe6bc284499f211557a",
+        "8c4f9c97bb50746e930c7a51d8d46709b59b2c48",
+        "d0f535d84ad1109c42dfaa288881dc7af353ae79",
+        "b18f57976591b0700778f028f8c8a2b59d623b65"
+      ]
+    },
+    {
+      "id": "P1-MATH-0076",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:rig:two-witnesses",
+        "number": "T9.5",
+        "page": 42,
+        "source": "companion_sections/pair_rigidity.tex",
+        "line": 277,
+        "statement_sha256": "8184bdbf23396e914181cfc3607def429f6cfb7f28d802887703a3d2004ed4c9"
+      },
+      "original_assumption": "The integer-separation stage of companion T9.5 bounds the analytic primitive numerator on a bidisc, invokes Cauchy estimates, and absorbs unspecified absolute height exponents into the threshold N>(B+1)^(cq).",
+      "finding": "A finite coefficient majorant and ordinary real absolute convergence replace this bidisc/Cauchy step. The actual primitive numerator satisfies |c_ab|<=(B+1)^(300q)*(2B)^(a+b). Its actual total-degree evaluation has tail at most 2*C*(M+1)*(2B/N)^M after the proved vanishing prefix. Exact remaining-pole scaling gives the actual auxiliary bound (B+1)^(400q)/N. Canonical injective finite word enumerations realize the positive integer square roots, including the derived third root and its overlap sign, so the same actual auxiliary value is an integer. The threshold N>(B+1)^(1200q) forces it to vanish. The same constructed primitive coefficient family yields a nonzero literal norm polynomial vanishing at the point, with both partial degrees <=12q, total degree <=24q and height <=(B+1)^(1200q). Empty character lists, zero coefficient members, the exact common-factor division and all source rank/offset bounds are included.",
+      "evidence": [
         "PaperP1.BivariateBranchBounds.shift_branch_bound",
         "PaperP1.BivariateBranchBounds.rational_coefficient_height",
         "PaperP1.BivariateBranchBounds.reciprocal_branch_bound",
@@ -4091,22 +4124,32 @@
         "PaperP1.BiquadraticWordEnumeration.offsets_card",
         "PaperP1.BiquadraticWordEnumeration.offsets_bound",
         "PaperP1.BiquadraticWordEnumeration.rootLists_bound",
-        "PaperP1.BiquadraticWordEnumeration.rootLists_product"
+        "PaperP1.BiquadraticWordEnumeration.rootLists_product",
+        "PaperP1.PrimitiveTailScaling.coefficient_budget",
+        "PaperP1.PrimitiveTailScaling.scaled_geometric_bound",
+        "PaperP1.PrimitiveTailScaling.scaled_series_bound",
+        "PaperP1.PrimitiveTailScaling.remaining_order_budget",
+        "PaperP1.BiquadraticAuxiliaryGap.primitive_bound",
+        "PaperP1.BiquadraticAuxiliaryGap.integer_gap",
+        "PaperP1.BiquadraticWordValues.rootValue_product",
+        "PaperP1.BiquadraticWordValues.rootValue_positive",
+        "PaperP1.BiquadraticWordValues.enumerated_square",
+        "PaperP1.BiquadraticWordValues.enumerated_integer",
+        "PaperP1.BiquadraticWordValues.positive_integer_root",
+        "PaperP1.BiquadraticWordValues.square_point_roots",
+        "PaperP1.BiquadraticWordRealization.auxiliary_realization",
+        "PaperP1.BiquadraticWordRealization.integer_value",
+        "PaperP1.BiquadraticWordRealization.norm_point_zero",
+        "PaperP1.TwoWitnessPolynomial.threshold",
+        "PaperP1.TwoWitnessPolynomial.exists_polynomial"
       ],
-      "proposed_revision": "Keep the existing auxiliary coefficient construction and integer-gap step. For nonvanishing, use the exact reduced-word overlap identity and the elementary anisotropic norm criterion, which avoid a separate construction of the degree-four extension and basis for this purpose. Include the signed third-root integrality lemma to make the specialization explicit. The norm evaluation-zero result still requires the independently proved auxiliary-value zero. The finite coefficient proof provides the explicit safe norm height exponent 1200; no optimization of this constant is claimed.",
-      "impact": "Closes the nonzero integer norm polynomial and radical integrality components of T9.5 for literal independent finite words. The conclusion does not rely on a target nonzero norm or a basis premise. The final literal norm degree bounds and height (B+1)^(1200q) are also proved. Analytic integer separation and linkage of the arbitrary initial branch lists with the literal word branches remain open. Numbered coverage remains 72/167; no error in the manuscript conclusion or exponent is asserted.",
-      "validation": "Lean v4.36.0-rc2 full build passed (10297 jobs); actual axiom audit passed for all 5491 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3206 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.17 GiB. Actual polynomial evaluation has its finite reciprocal scaling identity and integer-point casting compatibility. The literal scaled numerator value equals the actual four-polynomial auxiliaryValue. Nonzero primitive quotient members satisfy the full remaining-pole budget under the source rank bounds; zero members are handled directly. Actual finite word sets supply injective lists with exact products, lengths and offset bounds. Explicit 1/N scaling, positive integer word-root realization, final integer separation and an explicit degree-four field-norm certificate for the moreover clause remain open. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 75. No new external estimate assumption, additional Paper C source, manuscript-byte change or Palomar registration.",
+      "proposed_revision": "Replace the later bidisc/Cauchy integer-gap argument by the explicit finite coefficient majorant, real geometric convergence and total-degree weighted-tail estimate. The actual auxiliary height exponent 400 and the common safe final threshold/height exponent 1200 suffice. Keep the primitive formal division and the actual positive integer-root identification explicit. No optimization of the numerical constants is claimed.",
+      "impact": "Proves the actual polynomial conclusion of T9.5 with explicit uniform constants using real convergent series and finite coefficient counting. No unproved analytic-tail, branch-value or integrality assumption is used. The source moreover clause still needs an explicit degree-four field-norm realization, so T9.5 remains in progress and numbered coverage stays 72/167. No manuscript error or asymptotic exponent change is asserted.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10307 jobs); actual axiom audit passed for all 5508 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3223 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.16 GiB. The actual primitive auxiliary has bound (B+1)^(400q)/N and is proved integral at the given two-square integer point via canonical positive word-root realization, including the derived third root. Threshold N>(B+1)^(1200q) forces zero. The same construction supplies a nonzero integer polynomial vanishing at the point, primitive coefficient family, partial degrees12q,total24q,height1200q, uniformly for all source ranks and offsets and comparable integer points. This proves the polynomial conclusion of T9.5 without an external tail, value or integrality premise. The source moreover clause still needs an explicit degree-four field-norm realization; T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements now total 76. No manuscript conclusion error, new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      },
-      "validation_commit": "1c8ec9ccd1d8be71ff4e92a437914c9138a62eb4",
-      "validation_history": [
-        "814324abe2a8d8af8e96dfe6bc284499f211557a",
-        "8c4f9c97bb50746e930c7a51d8d46709b59b2c48",
-        "d0f535d84ad1109c42dfaa288881dc7af353ae79",
-        "b18f57976591b0700778f028f8c8a2b59d623b65"
-      ]
+      }
     }
   ]
 }

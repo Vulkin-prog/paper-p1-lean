@@ -2153,3 +2153,23 @@ root lists with exact products, cardinalities and offset bounds.
 The explicit 1/N scaling, integer word-root identification and final
 integer separation remain open. No external estimate assumption, new
 Paper C source or Palomar record is introduced.
+
+
+## Actual two-witness integer separation and vanishing polynomial
+
+Stable ID: `P1-ANALYTIC-TWO-WITNESS-INTEGER-GAP`. Status: **proved**,
+full polynomial conclusion of companion T9.5.
+
+Exact finite coefficient bounds, real convergence, actual total-degree
+vanishing and remaining-pole scaling give the auxiliary bound
+(B+1)^(400q)/N. The canonical finite root lists realize the positive
+integer word roots and derive the third integer root, so the actual
+auxiliary is integral. Threshold N>(B+1)^(1200q) forces zero and gives
+a nonzero integer polynomial vanishing at the point with source partial
+degrees12q,total24q,height1200q and a primitive coefficient family.
+All source ranks, offset bounds and comparable integer points are
+included. No external analytic or integrality premise remains.
+The explicit degree-four field-norm interpretation of the source
+moreover clause is still open; full T9.5 coverage is not yet counted.
+P1-MATH-0076 records the analytic proof improvement separately from
+P1-MATH-0075's algebraic certificate. No new Paper C source or Palomar record.

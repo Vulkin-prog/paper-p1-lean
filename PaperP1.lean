@@ -944,3 +944,9 @@ public import PaperP1.Algebra.BivariateEvaluation
 public import PaperP1.Analysis.BivariateReciprocalValue
 public import PaperP1.Analysis.BiquadraticAuxiliaryValue
 public import PaperP1.Arithmetic.BiquadraticWordEnumeration
+
+public import PaperP1.Analysis.PrimitiveTailScaling
+public import PaperP1.Analysis.BiquadraticAuxiliaryGap
+public import PaperP1.Analysis.BiquadraticWordValues
+public import PaperP1.Analysis.BiquadraticWordRealization
+public import PaperP1.Arithmetic.TwoWitnessPolynomial

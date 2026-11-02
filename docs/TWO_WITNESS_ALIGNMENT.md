@@ -338,17 +338,53 @@ literal offset set. The actual absolute offset bounds are proved for
 all characters, including the empty list. No arbitrary branch list is
 silently declared to enumerate a word.
 
+## The actual integer gap and vanishing polynomial
+
+`PrimitiveTailScaling` proves the finite power budget and the actual
+remaining-pole scaling. With K=kx+ky, K+1<=M<=6q+1, 1<=q<=B and
+N>=8B, the scaled tail is at most (B+1)^(400q)/N. The proof compares
+N^K/N^M with 1/N and absorbs the finite factors into exponent 326q,
+then uses the convenient safe exponent 400q.
+
+`BiquadraticAuxiliaryGap.primitive_bound` instantiates this estimate
+for the actual w,D,Q and its proved divided cancellation:
+
+    |auxiliaryValue(Q,x,y)| <=(B+1)^(400q)/N.
+
+`BiquadraticWordValues` and `BiquadraticWordRealization` identify the
+enumerated scaled branch values with the actual positive integer roots
+of the two words and their symmetric difference. The third root is
+derived, including its signed overlap relation; it is not an extra
+square-point assumption. The actual auxiliary is the real cast of the
+literal four-term integer polynomial-root expression. Integer separation
+therefore forces it to be zero once N>(B+1)^(400q).
+
+`TwoWitnessPolynomial.threshold` shows the convenient common source
+threshold N>(B+1)^(1200q) implies N>=8B and the integer-gap threshold.
+`exists_polynomial` constructs the same primitive nonzero coefficient
+family Q and actual literal norm polynomial R with
+
+    R !=0, R(x,y)=0,
+    degreeX R,degreeY R <=12q,
+    totalDegree R <=24q,
+    height R <=(B+1)^(1200q).
+
+The theorem is uniform for 1<=q<=B, the actual source half-ranks and
+offset bounds, literal independent word sets, both actual integer-square
+conditions and every comparable integer point N<=x,y<=2N. Thus it
+includes the source half-open dyadic range. No tail, branch-value,
+auxiliary-integrality or target point-vanishing premise is inserted.
+This is the actual polynomial conclusion of T9.5. P1-MATH-0076 records
+the separate real-series integer-gap proof improvement; P1-MATH-0075
+retains the algebraic nonvanishing/degree/height improvement.
+
 ## Remaining obligations
 
-The explicit remaining-pole scaling must bound the actual auxiliary
-value by (B+1)^(O(q))/N. The enumerated branch squares and positivity
-must be identified with the actual positive integer roots at the
-source square point, including the third root with its overlap sign.
-The final height threshold and integer separation must then prove
-that this actual auxiliary integer value is zero and apply the already
-proved norm evaluation identity. The formula-level source norm must
-also be linked explicitly with a conjugate-product norm certificate or
-Algebra.norm in a degree-four field for the source moreover clause.
-An explicit field-norm model has not yet been constructed. No full T9.5 result or new numbered
-coverage is claimed. No new external estimate assumption, Paper C port
-or Palomar registration is introduced.
+For the source moreover clause, the proved literal sourceNorm formula
+must still be identified explicitly with a conjugate-product norm
+certificate or Algebra.norm in a degree-four field. The primitive Q,
+actual point zero and all polynomial bounds are already proved.
+An explicit field-norm model has not yet been constructed, so the full
+T9.5 result is still in progress and no new numbered coverage is counted.
+No new external estimate assumption, Paper C port or Palomar registration
+is introduced.
