@@ -2261,11 +2261,15 @@
       "source": "main_sections/pair_rigidity.tex",
       "line": 214,
       "sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.PlaneCurvePointCount.UniformBound"
+      ],
+      "literature_inputs": [
+        "P1-GEO-BCN-PLANE-UNIFORM"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Primary author version arXiv2302.04209v2, dated20September2023, Theorem2 equation(27), page7, has been inspected. It states the required degree-uniform integer-point bound for integral curves over K contained in C, with c(n) and an absolute logarithmic exponent. UniformBound is only a named explicit plane-polynomial input to separate conditional theorems; it is NOT a Lean proof of BCN. The general-variety statement, its geometric plane-polynomial specialization and the external theorem proof remain unformalized. No global axiom and no completed numbered coverage."
     },
     {
       "label": "p13:rig:sublinear-grid",
@@ -2277,11 +2281,38 @@
       "source": "main_sections/pair_rigidity.tex",
       "line": 228,
       "sha256": "ef4c221ed67d6eba27c4ceeeb16591c98447e85f2c53b4e4c6e0a2e6441f46fa",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "conditional",
+      "lean_declarations": [
+        "PaperP1.CurveDegreeProfile.logarithmic_convex",
+        "PaperP1.CurveDegreeProfile.exp_logarithmic",
+        "PaperP1.CurveDegreeProfile.endpoint_bound",
+        "PaperP1.CurveDegreeProfile.large_endpoint",
+        "PaperP1.CurveDegreeProfile.degree_uniform_bound",
+        "PaperP1.CurveDegreeProfile.degree_uniform_bound_without_cap_growth",
+        "PaperP1.CurveDegreeAsymptotics.envelope_tendsto_zero",
+        "PaperP1.CurveDegreeAsymptotics.logarithmic_weights_eventually",
+        "PaperP1.CurveDegreeAsymptotics.power_div_scale",
+        "PaperP1.CurveDegreeAsymptotics.degree_uniform_eventually",
+        "PaperP1.CurveDegreeAsymptotics.uniform_sublinear",
+        "PaperP1.PlaneCurvePointCount.mem_grid",
+        "PaperP1.PlaneCurvePointCount.mem_real_grid",
+        "PaperP1.PlaneCurvePointCount.degree_integer",
+        "PaperP1.PlaneCurvePointCount.integer_grid_card",
+        "PaperP1.PlaneCurvePointCount.finite_bound",
+        "PaperP1.PlaneCurvePointCount.uniform_sublinear_under_BCN",
+        "PaperP1.PlaneCurvePointCount.upperPowerCap_of_log_ratio",
+        "PaperP1.PlaneCurvePointCount.growing_degree_under_BCN",
+        "PaperP1.PlaneCurvePointCount.source_uniform_bound_under_BCN",
+        "PaperP1.PlaneCurvePointCount.article_13_5_under_BCN"
+      ],
+      "literature_inputs": [
+        "P1-GEO-BCN-PLANE-UNIFORM"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0079"
+      ],
+      "notes": "The actual analytic and finite-grid reduction is proved under the ordinary explicit argument PlaneCurvePointCount.UniformBound c kappa. This named property is the degree-uniform plane-polynomial specialization of BCN Theorem2 equation(27), arXiv2302.04209v2; its proof remains unformalized. No global axiom or opaque proof is introduced, and this row is NOT counted proved. Actual irreducible nested plane polynomials over any characteristic-zero field equipped with an algebra structure on C are used, with literal integer-coordinate grids and exact real floor boxes. Their total degree is the actual coefficient-support maximum. The geometric curve/polynomial presentation specialization is part of the still unformalized external bound, rather than a silently assumed theorem about general varieties. Logarithmic reparametrization makes log(D^2 H^(1/D)) convex, giving the actual endpoint bound. A cap-growth-free analytic estimate adds e*(log H)^2, which is absorbed into sqrt B eventually. The exact source big-O bound with one constant before all degrees, coefficients, fields and cap values follows under the same named BCN input. Uniform little-o(B) holds for every upper power cap B^(a+o(1)) with0<=a<1/2; only the upper envelope is needed and a=0 is permitted. The source positive logarithmic-ratio exponent condition implies that cap property by a proved lemma. All limit, floor, field, height, logarithmic-weight and degree uniformities are explicit. The actual integer-polynomial grid cardinality agrees with the already used negative-offset grid by an actual negation bijection. P1-MATH-0079 records the weaker cap hypothesis and endpoint extension of this conditional consequence. Full BCN13.4 remains open; coverage76/167, confirmed findings79.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10525 jobs); actual axiom audit passed for all 5900 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3616 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.93 GiB. Actual finite plane-polynomial integer grids, exact real floor boxes and a negation bijection to the previously used offset grid are proved. Convex logarithmic degree profiles prove the endpoint maximum and the cap-growth-free bound4sqrt(H)+e*(M^2+(log H)^2). All real-logarithmic weights and uniform little-o limits are internally proved. The actual source big-O and uniform o(B) grid-count conclusions retain PlaneCurvePointCount.UniformBound c kappa as an ordinary explicit argument. The external BCN proof and geometric plane-polynomial specialization remain open; no global axiom or completed proof of13.4 is introduced. Article13.5 is conditional and adds no proved coverage. P1-MATH-0079 records that only an upper degree cap and0<=a<1/2 are needed. Coverage76/167 (main28/73, companion48/94); confirmed findings79. The exact primary author version arXiv2302.04209v2, Theorem2 equation(27), page7 was checked. No extra Paper C source, dependency download, manuscript-byte change or Palomar registration."
     },
     {
       "label": "p13:rig:nonaligned",

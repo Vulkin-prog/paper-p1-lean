@@ -4326,6 +4326,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "baf122a8ba9b8b0e2f27125cf24cb7d994b731f8"
+    },
+    {
+      "id": "P1-MATH-0079",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:sublinear-grid",
+        "number": "13.5",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 228,
+        "statement_sha256": "ef4c221ed67d6eba27c4ceeeb16591c98447e85f2c53b4e4c6e0a2e6441f46fa"
+      },
+      "original_assumption": "Corollary13.5 uses a positive fixed exponent0<a<1/2 and an exact degree envelope Dmax=B^(a+o(1)); its proof uses that Dmax grows faster than log B to bound H^(1/Dmax).",
+      "finding": "The analytic argument only needs an upper power envelope and also allows a=0. Unconditionally, for H>=1 and2<=D<=M, the actual profile D^2 H^(1/D) is at most4sqrt(H)+e*(M^2+(log H)^2), without assuming M>=log H. The extra logarithmic square is absorbed into sqrt(B) for H=c0 B at large B. Consequently, under the same explicit degree-uniform BCN input as in the source, the original big-O bound and uniform o(B) conclusion hold for every cap bounded above by B^(a+o(1)) with0<=a<1/2, including bounded or polylogarithmic caps. No lower growth of the cap is needed.",
+      "evidence": [
+        "PaperP1.CurveDegreeProfile.degree_uniform_bound_without_cap_growth",
+        "PaperP1.CurveDegreeAsymptotics.uniform_sublinear",
+        "PaperP1.PlaneCurvePointCount.source_uniform_bound_under_BCN",
+        "PaperP1.PlaneCurvePointCount.upperPowerCap_of_log_ratio",
+        "PaperP1.PlaneCurvePointCount.article_13_5_under_BCN"
+      ],
+      "proposed_revision": "State corollary13.5 for an upper envelope Dmax<=B^(a+o(1)), allowing0<=a<1/2. In the proof, split at M=log H and use the cap-growth-free profile estimate; absorb its additional(log H)^2 into sqrt B. Preserve the degree-uniform BCN dependence explicitly.",
+      "impact": "Weakens the cap hypothesis and adds the subpolynomial endpointa=0 to the conditional point-count consequence. The analytic estimate and all its limit steps are proved without BCN; actual curve counts retain BCN as an ordinary explicit argument because its Lean proof is still open. This is not a correction to the original conclusion, a proof of BCN, a varying-degree-constant estimate or extra completed coverage. Coverage76/167; confirmed findings79.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10525 jobs); actual axiom audit passed for all 5900 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3616 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.93 GiB. Actual finite plane-polynomial integer grids, exact real floor boxes and a negation bijection to the previously used offset grid are proved. Convex logarithmic degree profiles prove the endpoint maximum and the cap-growth-free bound4sqrt(H)+e*(M^2+(log H)^2). All real-logarithmic weights and uniform little-o limits are internally proved. The actual source big-O and uniform o(B) grid-count conclusions retain PlaneCurvePointCount.UniformBound c kappa as an ordinary explicit argument. The external BCN proof and geometric plane-polynomial specialization remain open; no global axiom or completed proof of13.4 is introduced. Article13.5 is conditional and adds no proved coverage. P1-MATH-0079 records that only an upper degree cap and0<=a<1/2 are needed. Coverage76/167 (main28/73, companion48/94); confirmed findings79. The exact primary author version arXiv2302.04209v2, Theorem2 equation(27), page7 was checked. No extra Paper C source, dependency download, manuscript-byte change or Palomar registration.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -1088,3 +1088,9 @@ public import PaperP1.Arithmetic.SmallPrimeShortBasisBudget
 public import PaperP1.Arithmetic.ShortBasisActualSpace
 
 public import PaperP1.Arithmetic.ShortBasisTheorem
+
+public import PaperP1.Analysis.CurveDegreeProfile
+
+public import PaperP1.Analysis.CurveDegreeAsymptotics
+
+public import PaperP1.Arithmetic.PlaneCurvePointCount

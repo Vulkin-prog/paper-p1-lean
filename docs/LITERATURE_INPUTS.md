@@ -1,7 +1,9 @@
 # External mathematical inputs
 
-No literature proposition is currently encoded as an unproved assumption in the
-Lean development. The arithmetic and analytic input inventory is **not complete**.
+Unproved literature inputs are passed as ordinary explicit theorem arguments.
+In particular, the separate conditional growing-degree development uses the named
+BCN plane bound below; it is not a global axiom or proved numbered coverage.
+The arithmetic and analytic input inventory is **not complete**.
 The paper's claims of unconditionality remain manuscript claims until their
 inputs and proofs have been accounted for.
 
@@ -2493,3 +2495,29 @@ Pinned Mathlib finite-set induction, exact finite sums, independent single-coord
 Stable ID: `P1-ARITH-COMPLETE-SHORT-BASIS`. Status: **proved**, full article13.1.
 
 All source arithmetic and graph inputs are internally proved. Actual Chebyshev bounds, integer-log power bounds, real log/sqrt/floor inequalities, actual range equivalences and actual complete-relation constraints discharge all finite and asymptotic steps. There is no external Moore, BFS, short-cycle, sparse-basis, Mertens-window or target-bound premise. Pinned Mathlib `Real.natLog_le_logb`, `Nat.lt_pow_succ_log_self`, finite-dimensional basis transport, finite sums, powers and logarithms are used with actual proved hypotheses. The chosen d,r give residual<=48B/sqrt(log B), short-vector support<=11log B/loglog B and final support constant352/a. The critical threshold precedes all variable lengths/starts; multiplicative constants precede C. The endpoint a=1 is included; a remains fixed. No added Paper C source or dependency download. Coverage76/167, findings78.
+
+
+## BCN degree-uniform plane input and its analytic consequences
+
+Stable ID: `P1-GEO-BCN-PLANE-UNIFORM`. Status: **explicit_hypothesis**.
+Reference: [arXiv2302.04209v2](https://arxiv.org/pdf/2302.04209v2),
+20September2023, Theorem2 equation(27), page7; DOI10.1093/imrn/rnae034.
+The specified author version was checked directly. Its integer-point
+bound is c(n)D^2 H^(1/D)(log H)^kappa, H>2, with c(n) independent
+of coefficients and degree and integral curves over K contained in C.
+
+Lean input: `PaperP1.PlaneCurvePointCount.UniformBound c kappa`.
+This actual plane-polynomial specialization, including the geometric
+presentation bridge, is an ordinary explicit argument; its proof and
+the full broad theorem13.4 remain open. Used only by the separate
+conditional corollary13.5 reduction. No global axiom is introduced.
+
+Actual finite grids, floor boxes, the negative-offset cardinality
+bijection, convex logarithmic profile, endpoint maximum, exponential
+cap and every real-logarithmic limit are proved internally with pinned
+Mathlib convexity, Jensen, real-power and finite-set APIs. The cap-
+growth-free analytic bound needs no external estimate. The conditional
+source count has uniform constants before every varying degree,
+coefficient, field and cap. Only an upper power cap with0<=a<1/2 is
+needed; P1-MATH-0079 records this improvement. Proved coverage76/167,
+confirmed findings79. No additional Paper C source or cache download.

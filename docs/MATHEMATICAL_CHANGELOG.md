@@ -3449,3 +3449,8 @@ The source Moore/BFS step now has a direct proof using actual bounded edge-vecto
 ## Completed13.1: constant uniformity and endpoint a=1
 
 Full article13.1 is proved. P1-MATH-0006 now propagates through the full theorem: KD(a),KS(a) are chosen before C, with only the threshold N0(a,C) depending on C. The support constant can be taken352/a, without an optimization claim. P1-MATH-0078 records the additional endpoint a=1; the source interval(0,1) remains included. Its support bound is coarse at the endpoint, and the universal physical cap2B is proved separately. No a=0 or varying-a extension is claimed. Actual complete-relation subspaces, their actual bases, physical/common-class injectivity and nonzero even selections are all explicit. Coverage76/167(main28/73,companion48/94), confirmed findings78.
+
+
+## P1-MATH-0079: upper degree caps and the subpolynomial endpoint
+
+The unconditionally proved analytic estimate D^2 H^(1/D)<=4sqrt(H)+e*(M^2+(log H)^2) removes the need for a lower growth condition on the cap M. Its logarithmic square is absorbed into sqrt B. Under the source degree-uniform BCN input, the full corollary13.5 reduction therefore needs only an upper power cap and permitsa=0. Bounded and polylogarithmic caps are included. BCN remains an explicit ordinary hypothesis with its Lean proof and geometric specialization open; no extra proved coverage is claimed. Coverage76/167, confirmed findings79.
