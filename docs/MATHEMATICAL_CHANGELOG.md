@@ -3678,3 +3678,8 @@ The actual original-to-modified moment truncation inequality is proved on a comm
 ## P1-MATH-0089 — Fourth factorial-cumulant identity in a commutative ring
 
 The entire finite identity displayed in the proof of main 16.1 is proved over any commutative ring for normalized coherent centered data, and instantiated to the actual heterogeneous original count. No positivity, regularity, independence, arithmetic hypothesis or analytic logarithm is required for that identity. Every repeated-index term and zero-marginal restriction are checked. The source sharp connected-quartic estimates remain open; a weaker BCN-dependent half-power bound is proved separately. Main 16.1 is in progress. Coverage 77/167; confirmed improvements 89.
+
+
+## Coarse absolute centered activity at every fixed positive order
+
+A finite actual centering decomposition bounds absolute activity by dependent product mass and lower-order actual dependent joint masses. Product mass is unconditionally at most N^(-1+eta); under explicit BCN the full absolute activity, hence the connected activity, is at most N^(-1/2+eta) for every fixed positive order and every dyadic subground. Companion T14.1 is now in progress for its sharper 4/5 exponent and contact claim. No new numbered completion or finding: coverage 77/167, improvements 89.

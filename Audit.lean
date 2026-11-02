@@ -3262,6 +3262,9 @@ import PaperP1
 #print axioms PaperP1.CoarseDependentFamilyMassUnderBCN.uniform_seeded_mass
 #print axioms PaperP1.CoarseDependentFamilyMassUnderBCN.uniform_seed_orders
 #print axioms PaperP1.CoarseDependentFamilyMassUnderBCN.uniform_dependent_mass
+#print axioms PaperP1.CoarseFixedAbsoluteActivityUnderBCN.uniform_dependent_orders
+#print axioms PaperP1.CoarseFixedAbsoluteActivityUnderBCN.uniform_absolute_activity
+#print axioms PaperP1.CoarseFixedAbsoluteActivityUnderBCN.uniform_connected_activity
 #print axioms PaperP1.CoarseFixedFactorialMomentsUnderBCN.uniform_power_mean_bias
 #print axioms PaperP1.CoarseFixedFactorialMomentsUnderBCN.uniform_nominal_error
 #print axioms PaperP1.CoarseFixedFactorialMomentsUnderBCN.uniform_actual_error
@@ -3373,6 +3376,10 @@ import PaperP1
 #print axioms PaperP1.DenseTargetCount.main_6_2
 #print axioms PaperP1.DependentBlockPairsCount.article_10_3
 #print axioms PaperP1.DependentBlockPairsCount.uniform_logarithmic_count
+#print axioms PaperP1.DependentProductMass.cover_bound
+#print axioms PaperP1.DependentProductMass.uniform_seeded_mass
+#print axioms PaperP1.DependentProductMass.uniform_seed_orders
+#print axioms PaperP1.DependentProductMass.uniform_mass
 #print axioms PaperP1.DisjointSquareEquations.combine
 #print axioms PaperP1.DisjointSquareEquations.single_equation
 #print axioms PaperP1.DisjointSquareEquations.two_equations
@@ -4897,6 +4904,12 @@ import PaperP1
 #print axioms PaperP1.ZeroDegreeQuadraticFibres.encode_injective_on_fibre
 #print axioms PaperP1.ZeroDegreeQuadraticFibres.quadratic_fibre_count
 #print axioms PaperP1.ZeroDegreeQuadraticFibres.auxiliary_zero_count
+#print axioms PaperP1.AbsoluteActivityDecomposition.centered_zero_direct
+#print axioms PaperP1.AbsoluteActivityDecomposition.absolute_eq_dependent
+#print axioms PaperP1.AbsoluteActivityDecomposition.centered_bound
+#print axioms PaperP1.AbsoluteActivityDecomposition.centered_split
+#print axioms PaperP1.AbsoluteActivityDecomposition.absolute_elementary_bound
+#print axioms PaperP1.AbsoluteActivityDecomposition.absolute_power_bound
 #print axioms PaperP1.AlignedTripleFamilies.mem_families
 #print axioms PaperP1.AlignedTripleFamilies.family_cover
 #print axioms PaperP1.AlignedTripleFamilies.star_card
@@ -6634,6 +6647,8 @@ import PaperP1
 #print axioms PaperP1.ScalarRecurrenceTheorem.firstMoment_eq_integral
 #print axioms PaperP1.ScalarRecurrenceTheorem.residual_parameter_bound
 #print axioms PaperP1.ScalarRecurrenceTheorem.companion_T19_11
+#print axioms PaperP1.SeedProductBound.elementary_bound
+#print axioms PaperP1.SeedProductBound.power_bound
 #print axioms PaperP1.SizeBiasedRecurrence.realMass_sizeBiased
 #print axioms PaperP1.SizeBiasedRecurrence.realMass_successor
 #print axioms PaperP1.SizeBiasedRecurrence.mixtureMass_nonneg

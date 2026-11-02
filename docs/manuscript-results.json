@@ -6884,11 +6884,31 @@
       "source": "companion_sections/cores.tex",
       "line": 160,
       "sha256": "80f300c82f31d2deecc2baf2eccdcb59d7235d91f77f2446ddb6660280209ca1",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.SeedProductBound.elementary_bound",
+        "PaperP1.SeedProductBound.power_bound",
+        "PaperP1.DependentProductMass.cover_bound",
+        "PaperP1.DependentProductMass.uniform_seeded_mass",
+        "PaperP1.DependentProductMass.uniform_seed_orders",
+        "PaperP1.DependentProductMass.uniform_mass",
+        "PaperP1.AbsoluteActivityDecomposition.centered_zero_direct",
+        "PaperP1.AbsoluteActivityDecomposition.absolute_eq_dependent",
+        "PaperP1.AbsoluteActivityDecomposition.centered_bound",
+        "PaperP1.AbsoluteActivityDecomposition.centered_split",
+        "PaperP1.AbsoluteActivityDecomposition.absolute_elementary_bound",
+        "PaperP1.AbsoluteActivityDecomposition.absolute_power_bound",
+        "PaperP1.CoarseFixedAbsoluteActivityUnderBCN.uniform_dependent_orders",
+        "PaperP1.CoarseFixedAbsoluteActivityUnderBCN.uniform_absolute_activity",
+        "PaperP1.CoarseFixedAbsoluteActivityUnderBCN.uniform_connected_activity"
+      ],
+      "literature_inputs": [
+        "P1-GEO-BCN-PLANE-UNIFORM",
+        "P1-PROB-FIXED-ABSOLUTE-ACTIVITY-BCN"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "\n\nThe actual absolute centered activity now has a uniform half-power bound\nat every fixed positive order under the existing explicit BCN premise.\nFor every fixed r>=1 and eta>0, every critical L and every G contained in\nthe dyadic block, eventually\n\n    sum_(I subset G, |I|=r) |c(I)| <= N^(-1/2+eta).\n\nThe connected subfamily satisfies the same bound. These are absolute sums\nof the actual centered Bochner coefficients, not absolute values of signed\nsums or a consequence of scalar factorial-moment cancellation. Zero\nmarginals and incompatible affine families are included. The order and\nall finite lower-order assemblies are fixed before N.\n\nThe finite decomposition is unconditional. Nonempty direct families have\nzero actual centered coefficient, including their zero-marginal cases.\nExpanding the absolute heterogeneous centering transform and separating its\ndirect and dependent subfamilies gives, with mu=sum_x p_x,\n\n    A_r <= 2^r * productDependentMass_r\n           + sum_(s=0..r) jointDependentMass_s * mu^(r-s)/(r-s)!.\n\nBoth masses use actual geometric dependence rho>0. In the second mass,\nq(A) is the actual joint probability, and the complementary marginals\nare their actual heterogeneous products. Exact disjoint-subset incidence\nand the previously proved cardinality convolution give this finite bound.\nNo absolute-activity estimate is a premise.\n\nA new unconditional estimate proves, for every fixed r and eta>0,\n\n    productDependentMass_r <= N^(-1+eta).\n\nEvery dependent family contains a primitive seed. A finite seed-cover\ninequality preserves its entire nonnegative heterogeneous product weight:\nfor s-site seeds and total size s+k, completion costs at most\nmu^k/k! times the actual seed product mass. Primitive host counts,\nthe actual local marginal cap, and the actual mean bound give the displayed\nproduct estimate; no BCN or actual joint estimate is used here.\n\nFor the full absolute activity, the actual dependent joint masses at the\nfinitely many orders 0..r are at most N^(-1/2+eta) under BCN. The actual\nmean is uniformly bounded, so the finite decomposition yields the claimed\nhalf-power bound after absorbing fixed constants. BCN is the already\ninventoried ordinary explicit plane-curve argument.\n\nCompanion T14.1 moves from not_started to in_progress. Its sharper connected\n4/5 exponent and its separate N^(-1+eta) absolute contact bound are not\nclaimed. The proof makes no growing-order use of fixed-order estimates.\nNo numbered result or new mathematical finding is counted complete.\nCoverage stays 77/167 (main 28/73, companion 49/94), improvements stay 89.\nOriginal manuscript bytes, compiler/dependency pins and the later Palomar\nmilestone are preserved; no dependency download or axiom is introduced.",
+      "validation": "Verified Lean v4.36.0-rc2 full build (10835 jobs), actual Audit.lean kernel audit (6714 declarations; only propext, Classical.choice, Quot.sound), 4431 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.41 GiB. The finite absolute-activity decomposition and fixed-order dependent product mass N^(-1+eta) are unconditional. Full and connected actual absolute centered activity at every fixed positive order are at most N^(-1/2+eta) under the existing ordinary explicit BCN premise, uniformly over all dyadic subgrounds. Zero marginals and incompatible families are included; no fixed-order theorem is used at growing order. Companion T14.1 stays in progress for its sharper connected 4/5 exponent and contact bound. Coverage 77/167; improvements 89."
     },
     {
       "label": "p1:core:primitive",

@@ -1380,3 +1380,11 @@ public import PaperP1.Algebra.FourthFactorialCumulant
 public import PaperP1.Model.FourthRunFactorialCumulant
 
 public import PaperP1.Asymptotics.CoarseFourthCumulantUnderBCN
+
+public import PaperP1.Probability.SeedProductBound
+
+public import PaperP1.Asymptotics.DependentProductMass
+
+public import PaperP1.Model.AbsoluteActivityDecomposition
+
+public import PaperP1.Asymptotics.CoarseFixedAbsoluteActivityUnderBCN
