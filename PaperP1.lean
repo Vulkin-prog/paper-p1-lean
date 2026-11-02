@@ -1572,3 +1572,13 @@ public import PaperP1.Asymptotics.CoverPrimeSmallCost
 public import PaperP1.Asymptotics.PlanarResidualRankHosts
 public import PaperP1.Asymptotics.OrderedPrimitiveHostCount
 public import PaperP1.Asymptotics.ResidualPrimitiveHostCount
+public import PaperP1.Model.PrivateValuePrescriptions
+public import PaperP1.Model.PrivateNormalizedFamilies
+public import PaperP1.Model.PrivateNormalizedFamilyRank
+public import PaperP1.Arithmetic.ThreeSlopeProgressions
+public import PaperP1.Arithmetic.ThreeSlopeValueCounts
+public import PaperP1.Model.ThreeSlopeWitnessMass
+public import PaperP1.Model.ThreeSlopeWitnessActivity
+public import PaperP1.Arithmetic.ThreeSlopePrivatePopulation
+public import PaperP1.Asymptotics.ThreeSlopePrivateDensity
+public import PaperP1.Asymptotics.ThreeSlopePositiveActivity
