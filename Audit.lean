@@ -3088,6 +3088,9 @@ import PaperP1
 #print axioms PaperP1.ActiveBlockCentresCount.uniform_count
 #print axioms PaperP1.ActualPrescribedDivisorBudget.actual_outside_height
 #print axioms PaperP1.ActualPrescribedDivisorBudget.actual_outside_divisor_count
+#print axioms PaperP1.ActualReferenceAdmissibility.quadratic_of_bounds
+#print axioms PaperP1.ActualReferenceAdmissibility.uniform_quadratic_probability
+#print axioms PaperP1.ActualReferenceAdmissibility.uniform_hermite_probability
 #print axioms PaperP1.AlignedPairRank.units_residual_bound
 #print axioms PaperP1.AlignedPairRank.channel_bound
 #print axioms PaperP1.AlignedPairRank.actual_intersection_bound
@@ -3217,6 +3220,7 @@ import PaperP1
 #print axioms PaperP1.CriticalActualMean.mean_mono
 #print axioms PaperP1.CriticalActualMean.lowerMean_pos
 #print axioms PaperP1.CriticalActualMean.uniform_bounds
+#print axioms PaperP1.CriticalActualMean.uniform_nominal_bias
 #print axioms PaperP1.CriticalBandScale.lowerScale_pos
 #print axioms PaperP1.CriticalBandScale.upperScale_pos
 #print axioms PaperP1.CriticalBandScale.critical_band_scale
@@ -3647,6 +3651,9 @@ import PaperP1
 #print axioms PaperP1.PositionedMassPropagation.all_positions
 #print axioms PaperP1.PositionedSeedBounds.defects
 #print axioms PaperP1.PositionedSeedBounds.contacts
+#print axioms PaperP1.PositiveSecondCumulant.uniform_lower
+#print axioms PaperP1.PositiveSecondCumulant.uniform_positive
+#print axioms PaperP1.PositiveSecondCumulant.uniform_hermite_admissibility
 #print axioms PaperP1.PrescribedQuadraticKernelCount.mem_values
 #print axioms PaperP1.PrescribedQuadraticKernelCount.divisible_positive_card
 #print axioms PaperP1.PrescribedQuadraticKernelCount.first_branch_count
@@ -4339,6 +4346,13 @@ import PaperP1
 #print axioms PaperP1.OrderedExposure.earlier_iff_ne_first
 #print axioms PaperP1.OrderedExposure.prescribedWeight_earlier
 #print axioms PaperP1.OrderedExposure.exists_exposure_exponent_le
+#print axioms PaperP1.OrderedPairTuples.values_injective
+#print axioms PaperP1.OrderedPairTuples.values_mem
+#print axioms PaperP1.OrderedPairTuples.values_tuple
+#print axioms PaperP1.OrderedPairTuples.image_values
+#print axioms PaperP1.OrderedPairTuples.set_values
+#print axioms PaperP1.OrderedPairTuples.sum_pairs
+#print axioms PaperP1.OrderedPairTuples.weighted_subsets
 #print axioms PaperP1.OrderedSubsetWeights.fiber_card
 #print axioms PaperP1.OrderedSubsetWeights.fiber_sum
 #print axioms PaperP1.OrderedSubsetWeights.weighted_sum
@@ -5163,6 +5177,10 @@ import PaperP1
 #print axioms PaperP1.PrimitiveWindowMass.primitive_mass_le
 #print axioms PaperP1.PrimitiveWindowMass.joint_le_weight
 #print axioms PaperP1.PrimitiveWindowMass.centered_le_weight
+#print axioms PaperP1.PrivateChannelHostSupport.loss_positive_of_two_units
+#print axioms PaperP1.PrivateChannelHostSupport.good_sources_subset_hosts
+#print axioms PaperP1.PrivateChannelHostSupport.channel_sources_subset_hosts
+#print axioms PaperP1.PrivateChannelHostSupport.channel_cumulant_lower
 #print axioms PaperP1.PrivateChannelMassBound.mass_exact_decomposition
 #print axioms PaperP1.PrivateChannelMassBound.three_term_bound
 #print axioms PaperP1.PrivateChannelMassBound.finite_mass_error
@@ -5334,6 +5352,13 @@ import PaperP1
 #print axioms PaperP1.RunSeparation.infiniteStartCount_interval_support
 #print axioms PaperP1.RunSeparation.dyadic_count_support
 #print axioms PaperP1.SecondMomentPairCap.finite_bound
+#print axioms PaperP1.SelectedPairCumulantLower.distinctHosts_subset_pairs
+#print axioms PaperP1.SelectedPairCumulantLower.swap_mem_distinctHosts
+#print axioms PaperP1.SelectedPairCumulantLower.ordered_covariance
+#print axioms PaperP1.SelectedPairCumulantLower.restrict_to_hosts
+#print axioms PaperP1.SelectedPairCumulantLower.host_joint_identity
+#print axioms PaperP1.SelectedPairCumulantLower.selected_joint_lower
+#print axioms PaperP1.SelectedPairCumulantLower.second_cumulant_lower
 #print axioms PaperP1.SelectedRelativeBits.boundary_single
 #print axioms PaperP1.SelectedRelativeBits.selectedBits_apply
 #print axioms PaperP1.SelectedRelativeBits.full_relative_identity

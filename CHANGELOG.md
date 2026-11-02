@@ -5,7 +5,7 @@
 - Complete article13.1 with actual short-basis subspaces, bases and all source asymptotic estimates.
 - Record the endpoint a=1 extension and constant uniformity before C.
 - Prove the complete13.6 critical reduction, actual maximum and limsup under the named external integer BCN input; retain conditional status.
-- Current numbered coverage:77/167; confirmed mathematical findings:86.
+- Current numbered coverage:77/167; confirmed mathematical findings:87.
 - Prove conditional13.8 and record the larger-family probability extension and compatibility-free nonaligned triple bound.
 - Complete companionT17.2 with exact source cardinality deficits and actual signed-measure identity/norm.
 - Prove the bounded actual second-moment seed and fullT19.4 growing-order conclusion under the same explicit BCN input.
@@ -16,6 +16,7 @@
 - Strengthen the finite analytic conversion to the universal constant16exp(2), removing the mean cap; record finding86.
 - Prove the finite reciprocal-pivot square-part and dyadic reductions forT19.15, with no analytic input; its final asymptotic remains open.
 - Prove the actual finite pair-activity host reduction, unconditional mean bounds and weaker activity/conversion/cumulant rates under the common explicit BCN input.
+- Prove unconditional positivity of the actual second cumulant from the2:3 channel, actual reference admissibility under the existing explicit BCN input, and the actual mean-bias clause of main1.1; record finding87.
 - Original manuscripts remain byte-preserved; Palomar qualification is still a later milestone.
 
 ## In progress — 31 October 2026

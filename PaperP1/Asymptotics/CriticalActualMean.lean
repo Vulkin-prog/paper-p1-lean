@@ -65,4 +65,23 @@ theorem uniform_bounds (C : ℝ) :
           (LocalRigidityConsequences.nominal_marginal_bound hNtwo hband) (by norm_num)) hn.le
       _ = _ := by field_simp
 
+theorem uniform_nominal_bias (C ε : ℝ) (hε : 0 < ε) :
+    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
+      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →
+      |countMoment (dyadicBlock N) L 1 - (N : ℝ) * (2 ^ L : ℝ)⁻¹| ≤
+        (2 : ℝ) ^ C * (N : ℝ) ^ (-1 + ε) := by
+  obtain ⟨NR, hrank⟩ := RegularSetAsymptotic.dyadic_critical_relation_rank_le_one C
+  obtain ⟨NI, hirregular⟩ := RegularSetAsymptotic.irregular_count_critical C ε hε
+  obtain ⟨NG, hgeom⟩ := CriticalWindowGeometry.uniform_geometry C 2
+  refine ⟨max 2 (max NR (max NI NG)), by omega, ?_⟩
+  intro N hN L hband
+  have hNtwo : 2 ≤ N := by omega
+  have hL : 0 < L := by have h := (hgeom N (by omega) L hband).2.2.1; omega
+  calc
+    _ ≤ (2 ^ L : ℝ)⁻¹ * (irregularStarts N L).card :=
+      RegularSetFinite.full_mean_bias hNtwo hL (hrank N (by omega) L hband)
+    _ ≤ (2 ^ L : ℝ)⁻¹ * (N : ℝ) ^ ε :=
+      mul_le_mul_of_nonneg_left (hirregular N (by omega) L hband) (by positivity)
+    _ ≤ _ := RegularSetAsymptotic.nominal_times_rpow_bound hNtwo hband
+
 end PaperP1.CriticalActualMean

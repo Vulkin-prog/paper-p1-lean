@@ -4633,6 +4633,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "88ba9a757f9264e6ea74ebc07b94c1616e327ccb"
+    },
+    {
+      "id": "P1-MATH-0087",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "main",
+        "label": "p1:cor:compound",
+        "number": "19.1",
+        "page": 57,
+        "source": "main_sections/discussion.tex",
+        "line": 22,
+        "version": "P1 V1.6",
+        "statement_sha256": "a9ffdb62e06b1e04f3aa844d6d8be7662542059790ac01f64f52f4ad8401f732"
+      },
+      "original_assumption": "The proof of main19.1 begins with eventual nonnegativity of both Poisson means, using the complete asymptotic for the exact second factorial cumulant from the full pair profile. The probability status of the actual quadratic reference similarly follows after the exact parameter asymptotics.",
+      "finding": "Eventual strict positivity and the lower bound alpha_N>=d_C*L*N^(-2/3) can be proved unconditionally from the positive2:3 joint-mass channel alone, the unweighted full-loss host count and the actual marginal diagonal. The finite identity alpha>=selected ordered joint mass-actual host independent mass-sum p_x^2 avoids estimating signs or the full channel profile. All selected private channel sources are proved actual distinct hosts. Combined with the coarse BCN-dependent upper bound |alpha|<=N^(-1/2+epsilon) and unconditional mean bounds, this already proves exact-parameter Hermite and quadratic probability status, without the complete pair asymptotic or the count-law approximation.",
+      "evidence": [
+        "PaperP1.OrderedPairTuples.weighted_subsets",
+        "PaperP1.SelectedPairCumulantLower.host_joint_identity",
+        "PaperP1.SelectedPairCumulantLower.second_cumulant_lower",
+        "PaperP1.PrivateChannelHostSupport.channel_sources_subset_hosts",
+        "PaperP1.PositiveSecondCumulant.uniform_lower",
+        "PaperP1.PositiveSecondCumulant.uniform_positive",
+        "PaperP1.PositiveSecondCumulant.uniform_hermite_admissibility",
+        "PaperP1.ActualReferenceAdmissibility.uniform_quadratic_probability",
+        "PaperP1.ActualReferenceAdmissibility.uniform_hermite_probability"
+      ],
+      "proposed_revision": "Prove positivity of the exact second factorial cumulant immediately after the leading private2:3 channel and host count, using the finite selected-joint identity and the marginal diagonal. Separate this unconditional lower bound from the coarse upper bound used for eventual parameter admissibility. Establish the probability references before invoking the complete pair-profile equivalents and sharp law errors.",
+      "impact": "Simplifies and weakens the prerequisites for actual reference admissibility. Positivity itself needs no BCN input; the current Lean upper parameter bounds still use exactly the existing explicit BCN argument. No new asymptotic exponent, full pair-profile equivalent or count-law approximation is claimed. All involved numbered rows remain in progress; coverage77/167.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10681 jobs); actual axiom audit passed for all 6330 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4047 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.71 GiB. The actual second cumulant has the unconditional lower bound d_C*L*N^(-2/3)>0, from the actual selected-joint host identity and the private2:3 channel. No BCN, full pair profile, covariance sign or count-law approximation is assumed for this positivity theorem. The actual mean bias has explicit unconditional constant2^C. Actual quadratic and Hermite probability status is proved uniformly under the same existing explicit BCN input for the coarse upper bound. Sharp pair and law rates and explicit fixed-height parameters remain open; main1.1,3.3,19.1 are in progress. Coverage77/167 (main28/73, companion49/94); confirmed findings87. No new external input, PaperC port, dependency download, manuscript-byte change or Palomar registration."
     }
   ]
 }

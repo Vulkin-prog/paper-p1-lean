@@ -1224,3 +1224,13 @@ public import PaperP1.Asymptotics.PairActivityUnderBCN
 public import PaperP1.Asymptotics.SecondCumulantUnderBCN
 
 public import PaperP1.Asymptotics.CriticalActualMean
+
+public import PaperP1.Combinatorics.OrderedPairTuples
+
+public import PaperP1.Model.SelectedPairCumulantLower
+
+public import PaperP1.Model.PrivateChannelHostSupport
+
+public import PaperP1.Asymptotics.PositiveSecondCumulant
+
+public import PaperP1.Asymptotics.ActualReferenceAdmissibility

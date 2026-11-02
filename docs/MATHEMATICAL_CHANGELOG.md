@@ -3534,3 +3534,8 @@ Canonical square-part injection, the literal positive reciprocal sums, a uniform
 ## Coarse actual pair activity and the upper Hermite parameter gap
 
 The exact finite bound2A2<=#hosts*M+actual independent host mass is proved, with the actual factor2 and zero-loss covariance support. Under the existing explicit BCN input this yields A2<=N^(-1/2+epsilon), conversion errorN^(-3/2+epsilon) and uniform decay of the actual second factorial cumulant. Actual two-sided mean bounds are unconditional. The upper gap |alpha|<=mu/2 follows under BCN; alpha>=0 and the source sharp rates remain open. This is a verified intermediate step, without a new mathematical finding or numbered completion. Coverage77/167, findings86.
+
+
+## P1-MATH-0087: positivity from one channel before the complete pair profile
+
+The actual second factorial cumulant satisfies alpha>=d_C*L*N^(-2/3)>0 without BCN, from the selected-joint host identity and the private2:3 channel alone. Actual Hermite and quadratic probability status then follow using the already checked coarse upper bound under the existing explicit BCN input. The sharp pair profile, count-law errors and explicit fixed-height parameters remain open. The actual mean-bias clause of main1.1 has the explicit unconditional constant2^C. Main1.1 is in progress; coverage77/167, confirmed findings87.

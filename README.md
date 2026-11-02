@@ -23,7 +23,7 @@ The analytic part ofT17.4 now has an explicit finite signed-measure conversion f
 
 Main15.1 now has its full finite heterogeneous analytic bound with the universal constant16exp(2), valid throughout0<=p_i<=1 with no mean bound. The actual run reference uses the exact mean and second cumulant, and has uniform error K_C*(N^(-2)+A_2/N). The arithmetic pair-activity rate remains open. See [the exact scope](docs/HETEROGENEOUS_CONVERSION_ALIGNMENT.md).
 
-The actual Hermite probability reference is now constructed on an independent Poisson product space. Its exact mean, exponential moments and explicit quadratic-reference comparison are proved. The source count-law rates remain open. See [the reference scope](docs/HERMITE_REFERENCE_ALIGNMENT.md).
+The actual Hermite probability reference is now constructed on an independent Poisson product space. Its exact mean, exponential moments and explicit quadratic-reference comparison are proved. The actual second cumulant is eventually positive without BCN; exact-parameter Hermite and quadratic probability status is now proved under the same explicit BCN input used for the coarse upper bound. The source count-law rates remain open. See [the reference scope](docs/HERMITE_REFERENCE_ALIGNMENT.md).
 
 Companion T22.7 is complete: the actual infinite replica formula, the
 uniform colored conditional target sum and every fixed positive weighted
