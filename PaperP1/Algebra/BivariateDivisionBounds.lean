@@ -95,4 +95,29 @@ theorem quotient_height_power (P D Q : ℤ[X][X]) (hD : D ≠ 0) (hfactor : P = 
       _ = _ := by push_cast; rw [← pow_add, ← pow_add]; congr 1; ring
   exact_mod_cast hbound
 
+theorem quotient_height_power_general (P D Q : ℤ[X][X]) (hD : D ≠ 0) (hfactor : P = D * Q)
+    (B q c d : ℕ) (hq : 1 ≤ q) (hqB : q ≤ B)
+    (hx : degreeX P ≤ d * q) (hy : degreeY P ≤ d * q) (hH : height P ≤ (B + 1) ^ (c * q)) :
+    height Q ≤ (B + 1) ^ ((c + 3 * d) * q) := by
+  have hbase : (2 : ℝ) ≤ B + 1 := by exact_mod_cast (show 2 ≤ B + 1 by omega)
+  have hsqrt : Real.sqrt (((d * q + 1) * (d * q + 1) : ℕ) : ℝ) = (d * q + 1 : ℕ) := by
+    rw [show (((d * q + 1) * (d * q + 1) : ℕ) : ℝ) = (((d * q + 1 : ℕ) : ℝ) ^ 2) by push_cast; ring,
+      Real.sqrt_sq (by positivity)]
+  have hlinear : ((d * q + 1 : ℕ) : ℝ) ≤ ((B : ℝ) + 1) ^ (d * q) := by
+    have hn : d * q + 1 ≤ (B + 1) ^ (d * q) :=
+      (Nat.succ_le_of_lt (show d * q < 2 ^ (d * q) from Nat.lt_two_pow_self)).trans
+        (Nat.pow_le_pow_left (by omega : 2 ≤ B + 1) _)
+    exact_mod_cast hn
+  have hp : (2 : ℝ) ^ (2 * d * q) ≤ ((B : ℝ) + 1) ^ (2 * d * q) :=
+    pow_le_pow_left₀ (by norm_num) hbase _
+  have hfinite := quotient_height P D Q hD hfactor (d * q) (d * q) ((B + 1) ^ (c * q)) hx hy hH
+  rw [hsqrt, show d * q + d * q = 2 * d * q by ring] at hfinite
+  have hbound : (height Q : ℝ) ≤ ((B : ℝ) + 1) ^ ((c + 3 * d) * q) := by
+    calc
+      _ ≤ (2 : ℝ) ^ (2 * d * q) * ((d * q + 1 : ℕ) : ℝ) * ((B + 1) ^ (c * q) : ℕ) := hfinite
+      _ ≤ (((B : ℝ) + 1) ^ (2 * d * q) * ((B : ℝ) + 1) ^ (d * q)) * ((B + 1) ^ (c * q) : ℕ) :=
+        mul_le_mul_of_nonneg_right (mul_le_mul hp hlinear (by positivity) (by positivity)) (Nat.cast_nonneg _)
+      _ = _ := by push_cast; rw [← pow_add, ← pow_add]; congr 1; ring
+  exact_mod_cast hbound
+
 end PaperP1.BivariateDivisionBounds

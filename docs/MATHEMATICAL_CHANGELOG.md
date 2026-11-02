@@ -3306,3 +3306,16 @@ with these estimates in `TwoWitnessTheorem.companion_T9_5`, including
 real B,q and the full source moreover clause. Coverage is now73/167.
 This completes findings75 and76; no new independent finding is counted.
 See [the exact alignment](TWO_WITNESS_ALIGNMENT.md).
+
+
+## Common-curve proof progression after T9.5
+
+The algebraic image-collapse and initial point-factor stages of article
+theorem13.2 are proved for actual curve fields and actual polynomial
+factorizations. The factor height budget is explicit: c+3*d for input
+height exponent c and partial-degree budget d*q. This extends existing
+factor-height work and uses the existing Cauchy root theorem; it is not
+counted as a new independent correction or improvement. Findings stay76.
+The simultaneous resultant stage remains open, so numbered coverage
+stays73/167. The exact scope is recorded in
+[the common-curve alignment](COMMON_CURVE_ALIGNMENT.md).

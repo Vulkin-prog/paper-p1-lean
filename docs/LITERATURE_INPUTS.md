@@ -2191,3 +2191,35 @@ Mathlib at pinned commit9d581dfff2e41de989072ea63abf3daf69311520
 provides quadratic algebras, their determinant norm, norm transitivity,
 module finrank and adjoin facts. No external estimate, new Paper C
 source or Palomar record is introduced. Coverage is73/167; findings76.
+
+
+## Actual common-curve norm collapse
+
+Stable ID: `P1-ALG-COMMON-CURVE-NORM-COLLAPSE`. Status: **proved**,
+algebraic stage of article theorem13.2.
+
+The actual coordinate ring, fraction field, characteristic zero,
+nonzero word units and exact divisibility kernel are constructed.
+Field square classes are the additive unit group modulo doubles.
+The actual linear map on two finitely supported selection spaces
+agrees with literal polynomial word classes. Primitive pair norms
+divisible by the given irreducible two-variable curve force the image
+of the whole word space to have dimension at most one. The common
+factor divisibility is an explicit intermediate hypothesis, not a
+proved consequence of the source threshold at this checkpoint.
+Pinned Mathlib supplies prime ideal quotients, fraction rings,
+ZMod modules, finitely supported linear combinations and span dimension.
+
+## Actual first irreducible point factor
+
+Stable ID: `P1-ALG-COMMON-CURVE-POINT-FACTOR`. Status: **proved**,
+initial factor stage of article theorem13.2.
+
+Actual factorization chooses an irreducible factor vanishing at the
+integer point. The established T9.4 height bound gives exponent c+3*d
+for input partial degrees d*q and height exponent c. The existing
+strong Cauchy integer-root bound excludes one-variable factors when
+both coordinates exceed this height budget. Primitivity and degree
+bounds are derived. The simultaneous resultant step and final source
+assembly remain open. No external result is left as an axiom or target
+bound hypothesis, and no additional Paper C code is copied.

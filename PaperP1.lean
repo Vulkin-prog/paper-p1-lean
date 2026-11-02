@@ -958,3 +958,21 @@ public import PaperP1.Algebra.BiquadraticNormGenerators
 public import PaperP1.Arithmetic.WordNormCertificate
 
 public import PaperP1.Arithmetic.TwoWitnessTheorem
+
+public import PaperP1.Algebra.CurveFunctionField
+
+public import PaperP1.Algebra.FieldSquareClasses
+
+public import PaperP1.Algebra.PairwiseEqualSpan
+
+public import PaperP1.Arithmetic.CurveNormCollapse
+
+public import PaperP1.Arithmetic.CurveWordSquareClasses
+
+public import PaperP1.Arithmetic.CurveWordMap
+
+public import PaperP1.Algebra.IrreduciblePointFactor
+
+public import PaperP1.Algebra.BivariateLargeRoot
+
+public import PaperP1.Arithmetic.InitialCurveFactor
