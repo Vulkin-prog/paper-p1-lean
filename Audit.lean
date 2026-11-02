@@ -3777,6 +3777,8 @@ import PaperP1
 #print axioms PaperP1.ExposureAssignmentBudget.uniform_fresh_assignment_budget
 #print axioms PaperP1.FactorialLogBounds.log_factorial_bounds
 #print axioms PaperP1.FactorialLogBounds.log_factorial_error
+#print axioms PaperP1.FiniteAlignedTargetTripleMass.all_actual_sources
+#print axioms PaperP1.FiniteAlignedTargetTripleMass.uniform_mass
 #print axioms PaperP1.FiniteChannelActivity.uniform_activity
 #print axioms PaperP1.FiniteChannelHierarchyBounds.upperConstant_pos
 #print axioms PaperP1.FiniteChannelHierarchyBounds.coefficient_eq_main_terms

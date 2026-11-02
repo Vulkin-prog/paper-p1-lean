@@ -1627,3 +1627,4 @@ public import PaperP1.Asymptotics.FixedChannelPairProbability
 public import PaperP1.Arithmetic.EndpointAlignedTriplePool
 public import PaperP1.Asymptotics.EndpointAlignedTripleMass
 public import PaperP1.Asymptotics.AllAlignedTargetTripleMass
+public import PaperP1.Asymptotics.FiniteAlignedTargetTripleMass

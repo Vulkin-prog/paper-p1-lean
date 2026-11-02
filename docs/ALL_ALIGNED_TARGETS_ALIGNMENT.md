@@ -49,3 +49,25 @@ bytes, dependency versions, external-input scope and Palomar state
 are unchanged.
 
 Verified with Lean v4.36.0-rc2: full lake build (11217 jobs), actual kernel-axiom audit (7500 declarations; only propext, Classical.choice and Quot.sound), 5217 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.69 GiB free on Ubuntu root.
+
+
+## One common threshold for finitely many represented source channels
+
+The actual aligned-target population and its source completeness
+are now aggregated over any fixed finite family F of reduced interior
+source channels. Each channel may have its own fixed natural target
+height exponent J(a,b). One critical threshold precedes N, L, every
+channel in F and every actual three-element represented family.
+The literal union mass remains at most N^(-41/30+epsilon); repeated
+families are handled by nonnegative actual joint probabilities.
+No overlap-disjointness or target probability is assumed.
+
+This is the finite-family aligned-target sector of main 14.3,
+retaining all previously proved distinct-slope, physical and endpoint
+cases and exact contacts. The nonaligned-target sector remains open,
+and no source alignment lacking the explicit exact source-vertex
+representation is included silently. Coverage stays 79/167 and
+confirmed improvements stay 99. No original source, dependency,
+external estimate or Palomar state changes.
+
+Verified with Lean v4.36.0-rc2: full lake build (11219 jobs), actual kernel-axiom audit (7502 declarations; only propext, Classical.choice and Quot.sound), 5219 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.68 GiB free on Ubuntu root.
