@@ -758,7 +758,8 @@
           "validation": "Verified under Lean v4.36.0-rc2: full lake build (10957 jobs), source and ledger checks, actual axiom audit of 6923 declarations (only propext, Classical.choice and Quot.sound), and 4640 direct ledger/evidence declaration checks; Ubuntu root free space 15.18 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
           "validation_commit": "ccbdc75fa061b469f05781226a35013870d8e35d"
         }
-      ]
+      ],
+      "validation_commit": "fb01e14b02b172b30392d8d7f327ac81a358f7fb"
     },
     {
       "label": "p1:arith:compression",
@@ -1335,7 +1336,8 @@
         "d61129a4481b626b35958ee0329ac668362aec1e",
         "b9e411cecc036eaa1e87da5a2f981792d9aadc76"
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full lake build (10965 jobs), source and ledger checks, actual axiom audit of 6936 declarations (only propext, Classical.choice and Quot.sound), and 4653 direct ledger/evidence declaration checks; Ubuntu root free space 15.17 GiB. Original manuscript bytes and all 167 statement hashes preserved."
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (10965 jobs), source and ledger checks, actual axiom audit of 6936 declarations (only propext, Classical.choice and Quot.sound), and 4653 direct ledger/evidence declaration checks; Ubuntu root free space 15.17 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "validation_commit": "fb01e14b02b172b30392d8d7f327ac81a358f7fb"
     },
     {
       "label": "p1:fixed:moments",
@@ -5406,7 +5408,8 @@
           "validation": "Verified under Lean v4.36.0-rc2: full lake build (10957 jobs), source and ledger checks, actual axiom audit of 6923 declarations (only propext, Classical.choice and Quot.sound), and 4640 direct ledger/evidence declaration checks; Ubuntu root free space 15.18 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
           "validation_commit": "ccbdc75fa061b469f05781226a35013870d8e35d"
         }
-      ]
+      ],
+      "validation_commit": "fb01e14b02b172b30392d8d7f327ac81a358f7fb"
     },
     {
       "label": "p1:arith:smallpart-budget",
