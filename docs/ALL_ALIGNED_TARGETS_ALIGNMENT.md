@@ -71,3 +71,42 @@ confirmed improvements stay 99. No original source, dependency,
 external estimate or Palomar state changes.
 
 Verified with Lean v4.36.0-rc2: full lake build (11219 jobs), actual kernel-axiom audit (7502 declarations; only propext, Classical.choice and Quot.sound), 5219 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.68 GiB free on Ubuntu root.
+
+
+## Polynomial-height aligned targets above enlarged sources, including zero exact units
+
+The polynomial-height aligned-target sector now allows the manuscript's
+enlarged source condition |b*x-a*y| <= (a+b)*B, with B=L+1,
+in place of two exact source vertices. Only one actual vertex
+label_x(i)=a*t is retained. Every positive source window has such
+a vertex once B>a; the second source has the proved virtual bound
+|b*t-y| <= D*B with D=a+2*b. Sources with zero exact units are included.
+
+The actual merged value set lies in two progressions of lengths
+6*b*B and L and in an interval of radius 8*a*b*H*B around a*b*c*t.
+The full residual rank is uniformly o(B) for H=B^J. The actual point
+bounds N^(-71/30+epsilon) for distinct interior physical ratios and
+N^(-5/2+epsilon) for repeated ratios retain every local defect and
+affine incompatibility. No private-prime, even-rank or regularity
+premise is introduced.
+
+A literal source code replaces the second vertex by the integer
+displacement y-b*t in [-D*B,D*B]. Its complete target-family pool
+has at most 18*a*(2*D+1)*N*B^(3*J+2) codes. Near endpoints, radius
+D*B+2*B^J yields at most
+6*a*(2*D+1)*(4*D+10)*B^(4*J+3) codes, with no factor N.
+Actual enlarged-source pair probabilities give endpoint triple mass
+N^(-5/3+epsilon). Source completeness and the final actual mass
+N^(-41/30+epsilon) hold for all represented polynomial-height affine
+targets, including exact contacts, and share one threshold across
+any fixed finite family of reduced channels 0<a<b<2*a.
+
+The target representation d*z=c*t+h still has to satisfy the stated
+height bounds relative to the chosen source parameter. The nonaligned
+target sector and the total third-cumulant lower passage remain open.
+Main 14.3 remains in progress; coverage stays 79/167 and confirmed
+improvements stay 99. This extends P1-MATH-0099 without claiming a
+new manuscript conclusion error or a completed Palomar submission.
+Original manuscript bytes, dependencies and external-input scope are unchanged.
+
+Verified with Lean v4.36.0-rc2: full lake build (11245 jobs), actual kernel-axiom audit (7557 declarations; only propext, Classical.choice and Quot.sound), 5274 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.62 GiB free on Ubuntu root.
