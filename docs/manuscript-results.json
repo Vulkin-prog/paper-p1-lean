@@ -1782,7 +1782,10 @@
       ],
       "notes": "The compatible coefficient is nonnegative at every finite order with exact heterogeneous marginals and an actual full-support count. The actual original run count now has the complete third factorial-cumulant identity, including all pair and cubic repeated-index terms. Finite repeated-index cost is bounded by 12 p_* A2 + 2 p_*^2 mu. Actual critical-band marginals give uniform cost <=12 K A2/N+2 K^3/N^2. The third cumulant/positive connected activity comparison is reduced to the literal D_(2,1) plus the actual pair activity, with its independent N^(-3/2+epsilon) term proved. The nonnegative absolute-activity error has the same D_(2,1) reduction. The arithmetic bounds for D_(2,1) (11.1) and A2 (3.3) remain open, so the full proposition stays in progress. See TRIPLE_ACTIVITIES_ALIGNMENT.md.",
       "validation": "Lean v4.36.0-rc2 full build passed (10169 jobs); actual axiom audit passed for all 5190 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2905 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.33 GiB. The actual original infinite run count has the complete third factorial-cumulant identity, including all repeated-index pair and cubic terms. Actual heterogeneous critical-band marginals give the uniform correction 12 K A2/N+2 K^3/N^2. The cumulant/positive connected activity comparison is reduced to exactly the actual D_(2,1) and pair activity A2, with the independent N^(-3/2+epsilon) term proved. The nonnegative A3-K3+ difference has the same deficit reduction. Neither remaining arithmetic activity estimate is assumed; main 11.1, 11.2 and 11.3 stay in progress. Coverage remains 72/167 and confirmed improvements remain 72. No new external input or Paper C source, manuscript-byte change or Palomar registration.",
-      "validation_commit": "8bcb46b63f336099f9f13a5ad62df52a32c22bf5"
+      "validation_commit": "e44d7f90c08910f19e6d0664bd8d82381ab6db80",
+      "validation_history": [
+        "8bcb46b63f336099f9f13a5ad62df52a32c22bf5"
+      ]
     },
     {
       "label": "p13:conf:near-primitive",
