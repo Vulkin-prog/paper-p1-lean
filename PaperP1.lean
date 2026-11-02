@@ -1490,3 +1490,5 @@ public import PaperP1.Model.PrivateChannelRank
 public import PaperP1.Model.CompatibleChannelEdges
 public import PaperP1.Asymptotics.PrivateChannelActivityRate
 public import PaperP1.Asymptotics.FiniteChannelActivity
+public import PaperP1.Model.PrincipalChannelEdges
+public import PaperP1.Asymptotics.PrincipalChannelEdgesPhase

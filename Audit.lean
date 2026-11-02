@@ -3926,6 +3926,10 @@ import PaperP1
 #print axioms PaperP1.PrimitiveGeneralMass.from_four
 #print axioms PaperP1.PrimitiveGeneralMass.main_15_5_from_five
 #print axioms PaperP1.PrimitiveNominalCountMass.uniform_mass
+#print axioms PaperP1.PrincipalChannelEdgesPhase.uniform_geometry
+#print axioms PaperP1.PrincipalChannelEdgesPhase.positive_phase
+#print axioms PaperP1.PrincipalChannelEdgesPhase.uniform_activity_gap
+#print axioms PaperP1.PrincipalChannelEdgesPhase.uniform_cumulant_upper_error
 #print axioms PaperP1.PrivateChannelActivityRate.uniform_independent_mass
 #print axioms PaperP1.PrivateChannelActivityRate.uniform_coefficient
 #print axioms PaperP1.PrivateChannelActivityRate.uniform_absolute_comparison
@@ -5575,6 +5579,14 @@ import PaperP1
 #print axioms PaperP1.PrimitiveWindowMass.primitive_mass_le
 #print axioms PaperP1.PrimitiveWindowMass.joint_le_weight
 #print axioms PaperP1.PrimitiveWindowMass.centered_le_weight
+#print axioms PaperP1.PrincipalChannelEdges.forward_disjoint
+#print axioms PaperP1.PrincipalChannelEdges.unordered_disjoint
+#print axioms PaperP1.PrincipalChannelEdges.compatible_disjoint
+#print axioms PaperP1.PrincipalChannelEdges.card_bound
+#print axioms PaperP1.PrincipalChannelEdges.beta_eq
+#print axioms PaperP1.PrincipalChannelEdges.subset_pairs
+#print axioms PaperP1.PrincipalChannelEdges.activity_gap
+#print axioms PaperP1.PrincipalChannelEdges.beta_nonneg
 #print axioms PaperP1.PrivateChannelActivity.pair_map_injective
 #print axioms PaperP1.PrivateChannelActivity.pair_data
 #print axioms PaperP1.PrivateChannelActivity.card_bound
