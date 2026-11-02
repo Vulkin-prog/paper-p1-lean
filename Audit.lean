@@ -3494,6 +3494,9 @@ import PaperP1
 #print axioms PaperP1.AlignedPairTheorem.one_unit_T1_9
 #print axioms PaperP1.AlignedPrincipalActivity.uniform_geometry
 #print axioms PaperP1.AlignedPrincipalActivity.uniform_absolute
+#print axioms PaperP1.AlignedPrincipalEdgePairMass.source_cover
+#print axioms PaperP1.AlignedPrincipalEdgePairMass.uniform_bound
+#print axioms PaperP1.AlignedPrincipalEdgePairMass.relative_to_beta_squared
 #print axioms PaperP1.AlignedPrincipalSigned.uniform_bound
 #print axioms PaperP1.AlignedTargetRank.uniform_core
 #print axioms PaperP1.AlignedTargetSourceTheorem.source_representation
@@ -3513,6 +3516,10 @@ import PaperP1
 #print axioms PaperP1.AlignedTargetTripleProbability.uniform_point_bound
 #print axioms PaperP1.AlignedTripleCount.uniform_count
 #print axioms PaperP1.AlignedTripleCount.uniform_joint_mass
+#print axioms PaperP1.AlignedTripleExtensions.seed_data
+#print axioms PaperP1.AlignedTripleExtensions.family_data
+#print axioms PaperP1.AlignedTripleExtensions.seeds_mass_le
+#print axioms PaperP1.AlignedTripleExtensions.uniform_mass
 #print axioms PaperP1.AllAlignedTargetTripleMass.source_mem_hosts
 #print axioms PaperP1.AllAlignedTargetTripleMass.all_actual_sources
 #print axioms PaperP1.AllAlignedTargetTripleMass.mass_le_sum
@@ -4411,6 +4418,12 @@ import PaperP1
 #print axioms PaperP1.PrincipalEdgeSecondMomentLower.relative_lower
 #print axioms PaperP1.PrincipalEdgeSecondMomentLower.uniform_moment_lower
 #print axioms PaperP1.PrincipalEdgeSecondMomentLower.relative_moment_lower
+#print axioms PaperP1.PrincipalSecondMomentError.uniform_error
+#print axioms PaperP1.PrincipalSecondMomentError.uniform_moment_error
+#print axioms PaperP1.PrincipalSecondMomentError.relative_error
+#print axioms PaperP1.PrincipalSecondMomentError.uniform_residual_lower
+#print axioms PaperP1.PrincipalSecondMomentError.uniform_error_comparison
+#print axioms PaperP1.PrincipalSecondMomentError.relative_error_comparison
 #print axioms PaperP1.PrivateChannelActivityRate.uniform_independent_mass
 #print axioms PaperP1.PrivateChannelActivityRate.uniform_coefficient
 #print axioms PaperP1.PrivateChannelActivityRate.uniform_absolute_comparison
@@ -5622,6 +5635,10 @@ import PaperP1
 #print axioms PaperP1.AlignedCumulantReduction.signed_partition
 #print axioms PaperP1.AlignedCumulantReduction.second_cumulant_split
 #print axioms PaperP1.AlignedCumulantReduction.finite_bound
+#print axioms PaperP1.AlignedPrincipalEdgePairs.union_mem_families
+#print axioms PaperP1.AlignedPrincipalEdgePairs.fibre_card
+#print axioms PaperP1.AlignedPrincipalEdgePairs.contribution_le_mass
+#print axioms PaperP1.AlignedPrincipalEdgePairs.contribution_nonneg
 #print axioms PaperP1.AlignedTripleFamilies.mem_families
 #print axioms PaperP1.AlignedTripleFamilies.family_cover
 #print axioms PaperP1.AlignedTripleFamilies.star_card
@@ -6294,6 +6311,9 @@ import PaperP1
 #print axioms PaperP1.PrincipalEdgeSpaces.joint_factor
 #print axioms PaperP1.PrincipalEdgeSpaces.independent_ne
 #print axioms PaperP1.PrincipalEdgeSpaces.beta_squared_le_joint_add_coupled
+#print axioms PaperP1.PrincipalSecondMomentReduction.residual_nonneg
+#print axioms PaperP1.PrincipalSecondMomentReduction.finite_upper
+#print axioms PaperP1.PrincipalSecondMomentReduction.finite_residual_lower
 #print axioms PaperP1.PrivateChannelActivity.pair_map_injective
 #print axioms PaperP1.PrivateChannelActivity.pair_data
 #print axioms PaperP1.PrivateChannelActivity.card_bound

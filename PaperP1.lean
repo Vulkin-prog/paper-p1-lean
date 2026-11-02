@@ -1674,3 +1674,8 @@ public import PaperP1.Asymptotics.TwoSmallKernelSmallSquares
 public import PaperP1.Asymptotics.TwoSmallKernelElementaryUpper
 public import PaperP1.Arithmetic.TwoSmallKernelWindowCover
 public import PaperP1.Asymptotics.TwoSmallKernelWindowUpper
+public import PaperP1.Asymptotics.AlignedTripleExtensions
+public import PaperP1.Model.AlignedPrincipalEdgePairs
+public import PaperP1.Asymptotics.AlignedPrincipalEdgePairMass
+public import PaperP1.Model.PrincipalSecondMomentReduction
+public import PaperP1.Asymptotics.PrincipalSecondMomentReduction

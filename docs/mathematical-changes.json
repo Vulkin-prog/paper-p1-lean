@@ -6171,6 +6171,52 @@
         "status": "not_integrated"
       },
       "validation_commit": "5b3b64945c6ca62848c3a2525d919dcc80a734a0"
+    },
+    {
+      "id": "P1-MATH-0103",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:twogoodpositive",
+        "number": "T1.17",
+        "page": 19,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 1199,
+        "statement_sha256": "be55642021944d9eabbc4a130b9b44d199f05d751d860a5b47b42c715c03a25b"
+      },
+      "original_assumption": "The source proof of T1.17 bounds shared-vertex and aligned four-vertex configurations by N^(-27/20+o(1)), then invokes a nonaligned two-block covariance estimate to obtain the full second moment.",
+      "finding": "Actual unordered seed propagation carries the stronger aligned-triple exponent -41/30 to arbitrary fixed extensions and to the complete represented aligned four-vertex principal-edge sector. A finite two-sided decomposition identifies the absolute second-moment error with the literal nonaligned residual absolute covariance sum, up to N^(-41/30+epsilon); the reverse inequality uses only a N^(-7/3+epsilon) product error.",
+      "evidence": [
+        "PaperP1.AlignedTripleExtensions.seed_data",
+        "PaperP1.AlignedTripleExtensions.family_data",
+        "PaperP1.AlignedTripleExtensions.seeds_mass_le",
+        "PaperP1.AlignedTripleExtensions.uniform_mass",
+        "PaperP1.AlignedPrincipalEdgePairs.union_mem_families",
+        "PaperP1.AlignedPrincipalEdgePairs.fibre_card",
+        "PaperP1.AlignedPrincipalEdgePairs.contribution_le_mass",
+        "PaperP1.AlignedPrincipalEdgePairs.contribution_nonneg",
+        "PaperP1.AlignedPrincipalEdgePairMass.source_cover",
+        "PaperP1.AlignedPrincipalEdgePairMass.uniform_bound",
+        "PaperP1.AlignedPrincipalEdgePairMass.relative_to_beta_squared",
+        "PaperP1.PrincipalSecondMomentReduction.residual_nonneg",
+        "PaperP1.PrincipalSecondMomentReduction.finite_upper",
+        "PaperP1.PrincipalSecondMomentReduction.finite_residual_lower",
+        "PaperP1.PrincipalSecondMomentError.uniform_error",
+        "PaperP1.PrincipalSecondMomentError.uniform_moment_error",
+        "PaperP1.PrincipalSecondMomentError.relative_error",
+        "PaperP1.PrincipalSecondMomentError.uniform_residual_lower",
+        "PaperP1.PrincipalSecondMomentError.uniform_error_comparison",
+        "PaperP1.PrincipalSecondMomentError.relative_error_comparison"
+      ],
+      "proposed_revision": "Use fixed-order propagation of the sharp aligned-triple mass to treat the aligned four-vertex sector, allowing an arbitrary fourth window. State the explicit residual covariance decomposition and the reverse error comparison, then prove the remaining nonaligned bound separately.",
+      "impact": "Improves the aligned-sector exponent from -27/20 to -41/30 and gives an effective characterization of the exact remaining obstruction, uniformly over private cutoffs and with the actual factorial-moment expectation. Does not prove the residual covariance estimate or complete T1.17; no manuscript conclusion error is asserted.",
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11321 jobs), actual Audit.lean kernel-axiom audit (7694 declarations; only propext, Classical.choice, Quot.sound), all 5411 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.48 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
