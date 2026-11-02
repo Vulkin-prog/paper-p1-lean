@@ -18,6 +18,7 @@
 - Prove the actual finite pair-activity host reduction, unconditional mean bounds and weaker activity/conversion/cumulant rates under the common explicit BCN input.
 - Prove unconditional positivity of the actual second cumulant from the2:3 channel, actual reference admissibility under the existing explicit BCN input, and the actual mean-bias clause of main1.1; record finding87.
 - Prove unconditional probability status of every fixed-height explicit reference, exact height4 parameters and masses, phase constants and the height5 polynomial; extend finding87.
+- Prove the full uniform moving-residue equivalent of each literal finite channel height, keeping the nominal mean and exact source phase; arithmetic remainders remain open.
 - Original manuscripts remain byte-preserved; Palomar qualification is still a later milestone.
 
 ## In progress — 31 October 2026

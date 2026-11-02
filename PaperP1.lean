@@ -1244,3 +1244,9 @@ public import PaperP1.Asymptotics.ExplicitReferenceAdmissibility
 public import PaperP1.Arithmetic.ChannelPhaseConstants
 
 public import PaperP1.Arithmetic.HeightFiveChannelCorrection
+
+public import PaperP1.Asymptotics.SignedChannelPhaseLimit
+
+public import PaperP1.Asymptotics.ChannelWordPhase
+
+public import PaperP1.Asymptotics.ChannelMassPhaseEquivalent

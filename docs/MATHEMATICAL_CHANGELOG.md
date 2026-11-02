@@ -3544,3 +3544,8 @@ The actual second factorial cumulant satisfies alpha>=d_C*L*N^(-2/3)>0 without B
 ## P1-MATH-0087 extended: explicit parameters without the pair profile
 
 For every fixedh>=3, the literal source finite coefficient is positive and tends uniformly to zero, by finite signed-channel bounds and the2:3 summand. Its quadratic and Hermite references are actual probabilities unconditionally, without alphaHat_h~alpha or BCN. The exact height4 coefficient, singleton masses, phase constants at heights3..6 and height5 polynomial are checked. The source distance and cumulant remainder rates remain open. Main1.4,18.1,18.3 move to in_progress; no new numbered completion or finding. Coverage77/167, findings87.
+
+
+## Uniform finite-height moving phase is checked
+
+The literal finite omitted-height contribution has the exact source uniform leading equivalent, with the residue and nominal mean moving over the critical band. Normalized integer identities, reciprocal/geometric limits, finite residue assembly and the exact real-power transport are proved. This validates the finite analytic step without assuming or proving the actual pair-profile, cumulant or law remainder. Main3.3,18.1,18.3 remain in progress; coverage77/167, findings87.

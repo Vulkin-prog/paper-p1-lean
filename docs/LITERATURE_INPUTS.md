@@ -3464,3 +3464,50 @@ finite route to reference admissibility, without comparison to the
 actual cumulant. Coverage77/167 (main28/73, companion49/94), findings87.
 No new external mathematical input, BCN argument, PaperC port,
 dependency download, manuscript-byte change or Palomar registration.
+
+
+## Uniform finite channel phase equivalent from actual residue limits
+
+Stable ID: `P1-ANALYTIC-CHANNEL-PHASE-EQUIVALENT`. Status: **proved unconditional finite-channel asymptotic**. Actual arithmetic and law remainders remain open.
+
+The literal finite height contribution now has its complete uniform
+leading phase equivalent. For each fixed heightb>=3 and bandC, with
+r=L modb andlambda=N*2^(-L), put
+
+    heightMass_b=lambda^2/N*T_b(L),
+    phaseMass_b=c_b(r)*lambda^(2-1/b)*L*N^(-1+1/b).
+
+For everyepsilon>0, a threshold precedes allN,L in the critical band:
+phaseMass_b>0 and
+
+    |heightMass_b/phaseMass_b-1|<=epsilon,
+    |heightMass_b-phaseMass_b|<=epsilon*phaseMass_b.
+
+The moving residue and moving nominal mean are retained. No restriction
+to a fixed phase subsequence is imposed. The heightb is fixed before
+the threshold; no growing-height uniformity is asserted.
+
+The original integer signed sum has an exact normalized Euclidean
+formula atL=bq+r. Division byq*2^q leaves its positive leading
+coefficient and only inverse-q and geometric terms. Their actual
+limits prove each residue limit for the finite height sum. The actual
+finite residue set is then assembled into one common threshold,
+followed by Euclidean division for every sufficiently largeL. Critical
+window geometry transports that common length threshold to the source
+quantifier order beforeN,L.
+
+The conversion to the source N,lambda expression is an exact real-power
+identity, usingN/lambda=2^L. The positive nominal prefactor cancels;
+it is not frozen or replaced by a constant. All fixed-residue limits,
+finite sums, nonzero denominators, positivity and uniform assembly are
+proved, not supplied as premises.
+
+This proves the leading equivalent of the finite omitted-height term
+appearing in the proof of main18.1, including the finite height5 and
+height6 phases used in18.3. It does NOT prove the actual-cumulant
+remainder, the count-law remainder, a total-variation equivalent or
+optimality. The complete actual pair profile in3.3 remains open too.
+All three numbered rows stay in progress. Coverage77/167
+(main28/73, companion49/94), confirmed findings87 unchanged.
+No new mathematical finding, external estimate, BCN input, PaperC
+port, dependency download, source-byte change or Palomar registration.
