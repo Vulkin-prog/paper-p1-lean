@@ -2804,3 +2804,58 @@ manuscript-byte change or Palomar registration is introduced.
 Proved coverage76/167, confirmed findings83.
 
 Pinned Mathlib rank equality/injective-surjective equivalence, finite kernel maps, subset sums/products, powers and binomial product algebra are used with actual proved hypotheses. All affine Fourier and infinite-measure transport inputs are existing checked project proofs.
+
+
+## Complete source cardinality grouping and signed-measure retained identity
+
+Stable ID: `P1-ALG-RETAINED-CARDINALITY-COMPLETE`. Status: **proved**, fullT17.2.
+
+CompanionT17.2 is now proved in full, including the literal source
+cardinality coefficients, their binomial counts, every zero convention,
+the total weighted deficits, actual signed-measure identity and ordinary
+l1 estimate. The theorem holds for everyN>=2,L>0 and real cutoffH;
+the critical-band instance needs no further asymptotic argument.
+
+`directAt` is exactly the r-element subfamilies of the actual regular
+set whose addition map is injective. `gamma` is exactly the h-element
+subsets of G\e whose singleton spaces and the actual compressed block
+are in direct sum. Both source interpretations are proved. The actual
+complement counts equal
+
+    choose(n,r)-#directAt(r),
+    choose(n-2,h)-#gamma(e,h).
+
+Their nonnegativity and the equality between natural subtraction and
+the corresponding real difference are proved. The actual F_r is
+p^r times the first difference. Each edge contributes to G_r its
+actual joint moment times p^(r-2) times the second difference, with
+G_0=G_1=0 by the literal r<2 guard. F_0=F_1=0, all coefficients
+are nonnegative, and both sequences vanish for r>n.
+
+An exact finite fiber partition by cardinality proves every polynomial
+and weighted-mass regrouping. In particular the two subset-defined
+deficit polynomials sum to
+
+    sum_r scalar(F_r+G_r)*Delta^r,
+
+and their independent masses are the exact source sums of2^r F_r
+and2^r G_r. These totals are also proved equal to the infinite tsums,
+using the verified zero tails. No finite/infinite grouping or binomial
+coefficient convention is assumed.
+
+`companion_T17_2` proves the literal retained-reference identity and
+ordinary l1 bound. `companion_T17_2_measures` transports them to actual
+atomic signed measures and the sum of absolute singleton masses.
+The actual coefficients are Bochner joint moments of the original
+infinite prime-sign model. All direct/compressed probability formulas,
+affine-zero cases and unique-pair enumeration were proved internally
+in the preceding finite checkpoint.
+
+P1-MATH-0083 remains the heterogeneous finite extension. Its equal-
+marginal specialization now has the complete source cardinality form.
+No new mathematical finding, BCN input, literature premise, Paper C
+port, dependency download, manuscript-byte change or Palomar
+registration. Proved coverage77/167 (main28/73, companion49/94),
+confirmed findings83.
+
+Pinned Mathlib finite fiber summation, powerset-cardinality counts, finite complement cardinalities, zero-tail tsum identities and existing project finite-law embeddings supply every grouping step. No unformalized arithmetic or analytic input is used.

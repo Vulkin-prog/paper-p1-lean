@@ -4,7 +4,7 @@ Stage: **exact probability identities and uniform arithmetic foundations**, 2 No
 Neither document is fully formalized.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **76 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 6.3, 9.1, 13.3, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorems 10.1, 13.1, 13.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Proposition T9.5, Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Propositions T1.14 and T22.7.
+- Numbered results completed: **77 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 6.3, 9.1, 13.3, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorems 10.1, 13.1, 13.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Proposition T9.5, Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Propositions T1.14, T22.7 and T17.2.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **6033 audited theorem/lemma declarations**. This
+- The project currently has **6070 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -3031,3 +3031,56 @@ manuscript-byte change or Palomar registration is introduced.
 Proved coverage76/167, confirmed findings83.
 
 Lean v4.36.0-rc2 full build passed (10575 jobs); actual axiom audit passed for all6033 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All3750 distinct ledger/finding declarations were directly checked. All138 original manifest entries and167 numbered records are intact. Ubuntu available space:15.84 GiB. Equal compressed nullity is proved to force actual relation support inside the pair. The exact heterogeneous direct/compressed joint formulas follow from actual Fourier full-support and centered-moment reconstruction, including globally incompatible families by their actual zero mass. Direct/pair families have a proved disjoint enumeration and literal extension/union bijection. The finite heterogeneous retained-reference product identity and ordinary l1 bound are proved on arbitrary admissible finite grounds, with no assumed target probability factorization. On actual regular starts and actual goodEdges the product reference is exactly b^n+beta*Delta^2*b^(n-2), for everyN>=2,L>0 and every realH. P1-MATH-0083 records this heterogeneous finite extension. The originalF_r,G_r cardinality grouping remains open, soT17.2 is in progress. Coverage76/167 (main28/73, companion48/94), confirmed findings83. No BCN input, added external theorem, Paper C port, dependency download, manuscript-byte change or Palomar registration.
+
+
+## Completed companionT17.2 with exact cardinality deficits
+
+CompanionT17.2 is now proved in full, including the literal source
+cardinality coefficients, their binomial counts, every zero convention,
+the total weighted deficits, actual signed-measure identity and ordinary
+l1 estimate. The theorem holds for everyN>=2,L>0 and real cutoffH;
+the critical-band instance needs no further asymptotic argument.
+
+`directAt` is exactly the r-element subfamilies of the actual regular
+set whose addition map is injective. `gamma` is exactly the h-element
+subsets of G\e whose singleton spaces and the actual compressed block
+are in direct sum. Both source interpretations are proved. The actual
+complement counts equal
+
+    choose(n,r)-#directAt(r),
+    choose(n-2,h)-#gamma(e,h).
+
+Their nonnegativity and the equality between natural subtraction and
+the corresponding real difference are proved. The actual F_r is
+p^r times the first difference. Each edge contributes to G_r its
+actual joint moment times p^(r-2) times the second difference, with
+G_0=G_1=0 by the literal r<2 guard. F_0=F_1=0, all coefficients
+are nonnegative, and both sequences vanish for r>n.
+
+An exact finite fiber partition by cardinality proves every polynomial
+and weighted-mass regrouping. In particular the two subset-defined
+deficit polynomials sum to
+
+    sum_r scalar(F_r+G_r)*Delta^r,
+
+and their independent masses are the exact source sums of2^r F_r
+and2^r G_r. These totals are also proved equal to the infinite tsums,
+using the verified zero tails. No finite/infinite grouping or binomial
+coefficient convention is assumed.
+
+`companion_T17_2` proves the literal retained-reference identity and
+ordinary l1 bound. `companion_T17_2_measures` transports them to actual
+atomic signed measures and the sum of absolute singleton masses.
+The actual coefficients are Bochner joint moments of the original
+infinite prime-sign model. All direct/compressed probability formulas,
+affine-zero cases and unique-pair enumeration were proved internally
+in the preceding finite checkpoint.
+
+P1-MATH-0083 remains the heterogeneous finite extension. Its equal-
+marginal specialization now has the complete source cardinality form.
+No new mathematical finding, BCN input, literature premise, Paper C
+port, dependency download, manuscript-byte change or Palomar
+registration. Proved coverage77/167 (main28/73, companion49/94),
+confirmed findings83.
+
+Lean v4.36.0-rc2 full build passed (10581 jobs); actual axiom audit passed for all6070 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All3787 distinct ledger/finding declarations were directly checked. All138 original manifest entries and167 numbered records are intact. Ubuntu available space:15.82 GiB. Literal source directAt and gamma definitions are proved equivalent to actual addition-map and compressed directness. Exact binomial complement counts, valid natural-to-real subtraction, nonnegative F_r,G_r, r=0,1 and r>n zero conventions, shifted-cardinality fiber grouping, both deficit polynomials and both independent weighted masses are proved. Ftotal,Gtotal equal the source infinite weighted tsums. companion_T17_2 proves the exact source reference identity and l1 bound, and companion_T17_2_measures proves their actual atomic signed-measure and absolute singleton-tsum forms. All probability coefficients are actual Bochner moments and all direct/compressed factorization and unique-pair enumeration steps are proved internally. The complete source theorem holds for everyN>=2,L>0 and realH, without needing a critical-band argument. T17.2 is proved. P1-MATH-0083 remains the heterogeneous finite extension; no new finding is added. Coverage77/167 (main28/73, companion49/94), confirmed findings83. No BCN input, new literature premise, Paper C port, dependency download, manuscript-byte change or Palomar registration.

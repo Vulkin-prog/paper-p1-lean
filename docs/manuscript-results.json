@@ -5854,7 +5854,7 @@
       "source": "companion_sections/closure.tex",
       "line": 151,
       "sha256": "7843fc3967027b5c1da59491af81d0a000d06b845e4254c9d781c0fca496cf94",
-      "status": "in_progress",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.CompressedRelationSupport.kernel_extension_surjective",
         "PaperP1.CompressedRelationSupport.relation_zero_outside",
@@ -5900,17 +5900,61 @@
         "PaperP1.RetainedReferenceTheorem.independentReference_eq_binomial",
         "PaperP1.RetainedReferenceTheorem.pairReference_eq_binomial",
         "PaperP1.RetainedReferenceTheorem.finite_identity",
-        "PaperP1.RetainedReferenceTheorem.finite_norm_bound"
+        "PaperP1.RetainedReferenceTheorem.finite_norm_bound",
+        "PaperP1.RetainedCardinalityDeficits.sum_by_shifted_card",
+        "PaperP1.RetainedCardinalityDeficits.first_layer_eq",
+        "PaperP1.RetainedCardinalityDeficits.first_layer_count",
+        "PaperP1.RetainedCardinalityDeficits.failed_layer_eq",
+        "PaperP1.RetainedCardinalityDeficits.failed_layer_empty",
+        "PaperP1.RetainedCardinalityDeficits.failed_layer_count",
+        "PaperP1.RetainedCardinalityDeficits.failed_size_bound",
+        "PaperP1.RetainedCardinalityDeficits.directAt_source",
+        "PaperP1.RetainedCardinalityDeficits.gamma_source",
+        "PaperP1.RetainedCardinalityDeficits.directAt_card_le",
+        "PaperP1.RetainedCardinalityDeficits.gamma_card_le",
+        "PaperP1.RetainedCardinalityDeficits.firstCoefficient_real_formula",
+        "PaperP1.RetainedCardinalityDeficits.edgeCoefficient_real_formula",
+        "PaperP1.RetainedCardinalityDeficits.firstCoefficient_nonneg",
+        "PaperP1.RetainedCardinalityDeficits.edgeCoefficient_nonneg",
+        "PaperP1.RetainedCardinalityDeficits.secondCoefficient_nonneg",
+        "PaperP1.RetainedCardinalityDeficits.firstCoefficient_zero_small",
+        "PaperP1.RetainedCardinalityDeficits.secondCoefficient_zero_small",
+        "PaperP1.RetainedCardinalityDeficits.firstCoefficient_zero_large",
+        "PaperP1.RetainedCardinalityDeficits.edgeCoefficient_zero_large",
+        "PaperP1.RetainedCardinalityDeficits.secondCoefficient_zero_large",
+        "PaperP1.RetainedDeficitGrouping.nominal_product",
+        "PaperP1.RetainedDeficitGrouping.sum_mapped_constant",
+        "PaperP1.RetainedDeficitGrouping.first_grouped",
+        "PaperP1.RetainedDeficitGrouping.edge_grouped",
+        "PaperP1.RetainedDeficitGrouping.firstDeficit_grouped",
+        "PaperP1.RetainedDeficitGrouping.firstMass_grouped",
+        "PaperP1.RetainedDeficitGrouping.secondDeficit_grouped",
+        "PaperP1.RetainedDeficitGrouping.secondMass_grouped",
+        "PaperP1.RetainedReferenceCardinalityTheorem.deficit_polynomial_grouped",
+        "PaperP1.RetainedReferenceCardinalityTheorem.Ftotal_nonneg",
+        "PaperP1.RetainedReferenceCardinalityTheorem.Gtotal_nonneg",
+        "PaperP1.RetainedReferenceCardinalityTheorem.Ftotal_eq_tsum",
+        "PaperP1.RetainedReferenceCardinalityTheorem.Gtotal_eq_tsum",
+        "PaperP1.RetainedReferenceCardinalityTheorem.companion_T17_2",
+        "PaperP1.RetainedReferenceCardinalityTheorem.embed_sum",
+        "PaperP1.RetainedReferenceCardinalityTheorem.companion_T17_2_measures"
       ],
       "literature_inputs": [
-        "P1-ALG-RETAINED-FINITE-REFERENCE"
+        "P1-ALG-RETAINED-FINITE-REFERENCE",
+        "P1-ALG-RETAINED-CARDINALITY-COMPLETE"
       ],
       "mathematical_changes": [
         "P1-MATH-0083"
       ],
-      "notes": "The actual finite retained-reference identity and ordinary l1 bound\nare proved. The source cardinality coefficients F_r,G_r and their\nliteral binomial-count/grouping correspondence remain to be verified;\nT17.2 stays in progress and adds no completed numbered coverage.\n\nEqual compressed nullity makes extension by zero from the actual pair\nrelation kernel surjective. Every actual relation therefore vanishes\noutside the compressed pair. Proper nonempty restrictions other than\nthat pair have no full-support relation. The proved actual Fourier\ncriterion kills their actual centered moments. Finite centered-moment\nreconstruction then proves the exact heterogeneous identities\n\n    q(I)=prod_x p_x                     for direct I,\n    q(I)=q(e)*prod_(x in I\\e) p_x       for pair-compressed I.\n\nLocal admissibility is explicit; global affine incompatibility is not\ndiscarded. Incompatible compressed families have their actual zero\njoint moment. All factorization steps are proved internally, rather\nthan assumed as target probability identities.\n\nDirect families and families containing one compressed pair have an\nactual disjoint finite enumeration. A dependent pair is unique, so\nthe sum over edges and admitted extensions has no multiplicity. A\nliteral union/erasure bijection reindexes every admitted extension.\n\nFor arbitrary heterogeneous positive actual marginals on any finite\nadmissible ground set and any chosen family of dependent pairs, the\nretained reference equals the independent Bernoulli product plus the\nsum of pair corrections, minus the two actual independent deficit\npolynomials. Each deficit sums the actual excluded subsets or failed\ncompressed extensions. Their ordinary l1 costs are bounded by the\ncorresponding independent weights times2^(original cardinality),\nwith no suffix factor or unproved independence assumption.\n\nOn the actual regular dyadic ground set with actual goodEdges,\nthe exact marginal identities specialize the product reference to\nb^n+beta*Delta^2*b^(n-2), where beta is the actual sum of good-edge\njoint moments. For every N>=2,L>0 and every real cutoff H,\n`finite_identity` and `finite_norm_bound` prove the finite source form\nwith subset-defined deficits. The remaining F_r,G_r cardinality\ngrouping is not silently identified with this already proved form.\n\nP1-MATH-0083 records the heterogeneous finite extension. No BCN,\nunproved literature input, Paper C port, dependency download,\nmanuscript-byte change or Palomar registration is introduced.\nProved coverage76/167, confirmed findings83.",
-      "validation": "Lean v4.36.0-rc2 full build passed (10575 jobs); actual axiom audit passed for all6033 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All3750 distinct ledger/finding declarations were directly checked. All138 original manifest entries and167 numbered records are intact. Ubuntu available space:15.84 GiB. Equal compressed nullity is proved to force actual relation support inside the pair. The exact heterogeneous direct/compressed joint formulas follow from actual Fourier full-support and centered-moment reconstruction, including globally incompatible families by their actual zero mass. Direct/pair families have a proved disjoint enumeration and literal extension/union bijection. The finite heterogeneous retained-reference product identity and ordinary l1 bound are proved on arbitrary admissible finite grounds, with no assumed target probability factorization. On actual regular starts and actual goodEdges the product reference is exactly b^n+beta*Delta^2*b^(n-2), for everyN>=2,L>0 and every realH. P1-MATH-0083 records this heterogeneous finite extension. The originalF_r,G_r cardinality grouping remains open, soT17.2 is in progress. Coverage76/167 (main28/73, companion48/94), confirmed findings83. No BCN input, added external theorem, Paper C port, dependency download, manuscript-byte change or Palomar registration.",
-      "validation_commit": "ad6ce2aaea1b3349fcb6a5f9d66c505698ad3ed2"
+      "notes": "CompanionT17.2 is now proved in full, including the literal source\ncardinality coefficients, their binomial counts, every zero convention,\nthe total weighted deficits, actual signed-measure identity and ordinary\nl1 estimate. The theorem holds for everyN>=2,L>0 and real cutoffH;\nthe critical-band instance needs no further asymptotic argument.\n\n`directAt` is exactly the r-element subfamilies of the actual regular\nset whose addition map is injective. `gamma` is exactly the h-element\nsubsets of G\\e whose singleton spaces and the actual compressed block\nare in direct sum. Both source interpretations are proved. The actual\ncomplement counts equal\n\n    choose(n,r)-#directAt(r),\n    choose(n-2,h)-#gamma(e,h).\n\nTheir nonnegativity and the equality between natural subtraction and\nthe corresponding real difference are proved. The actual F_r is\np^r times the first difference. Each edge contributes to G_r its\nactual joint moment times p^(r-2) times the second difference, with\nG_0=G_1=0 by the literal r<2 guard. F_0=F_1=0, all coefficients\nare nonnegative, and both sequences vanish for r>n.\n\nAn exact finite fiber partition by cardinality proves every polynomial\nand weighted-mass regrouping. In particular the two subset-defined\ndeficit polynomials sum to\n\n    sum_r scalar(F_r+G_r)*Delta^r,\n\nand their independent masses are the exact source sums of2^r F_r\nand2^r G_r. These totals are also proved equal to the infinite tsums,\nusing the verified zero tails. No finite/infinite grouping or binomial\ncoefficient convention is assumed.\n\n`companion_T17_2` proves the literal retained-reference identity and\nordinary l1 bound. `companion_T17_2_measures` transports them to actual\natomic signed measures and the sum of absolute singleton masses.\nThe actual coefficients are Bochner joint moments of the original\ninfinite prime-sign model. All direct/compressed probability formulas,\naffine-zero cases and unique-pair enumeration were proved internally\nin the preceding finite checkpoint.\n\nP1-MATH-0083 remains the heterogeneous finite extension. Its equal-\nmarginal specialization now has the complete source cardinality form.\nNo new mathematical finding, BCN input, literature premise, Paper C\nport, dependency download, manuscript-byte change or Palomar\nregistration. Proved coverage77/167 (main28/73, companion49/94),\nconfirmed findings83.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10581 jobs); actual axiom audit passed for all6070 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All3787 distinct ledger/finding declarations were directly checked. All138 original manifest entries and167 numbered records are intact. Ubuntu available space:15.82 GiB. Literal source directAt and gamma definitions are proved equivalent to actual addition-map and compressed directness. Exact binomial complement counts, valid natural-to-real subtraction, nonnegative F_r,G_r, r=0,1 and r>n zero conventions, shifted-cardinality fiber grouping, both deficit polynomials and both independent weighted masses are proved. Ftotal,Gtotal equal the source infinite weighted tsums. companion_T17_2 proves the exact source reference identity and l1 bound, and companion_T17_2_measures proves their actual atomic signed-measure and absolute singleton-tsum forms. All probability coefficients are actual Bochner moments and all direct/compressed factorization and unique-pair enumeration steps are proved internally. The complete source theorem holds for everyN>=2,L>0 and realH, without needing a critical-band argument. T17.2 is proved. P1-MATH-0083 remains the heterogeneous finite extension; no new finding is added. Coverage77/167 (main28/73, companion49/94), confirmed findings83. No BCN input, new literature premise, Paper C port, dependency download, manuscript-byte change or Palomar registration.",
+      "validation_commit": "ad6ce2aaea1b3349fcb6a5f9d66c505698ad3ed2",
+      "validation_history": [
+        {
+          "validation_commit": "ad6ce2aaea1b3349fcb6a5f9d66c505698ad3ed2",
+          "validation": "Lean v4.36.0-rc2 full build passed (10575 jobs); actual axiom audit passed for all6033 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All3750 distinct ledger/finding declarations were directly checked. All138 original manifest entries and167 numbered records are intact. Ubuntu available space:15.84 GiB. Equal compressed nullity is proved to force actual relation support inside the pair. The exact heterogeneous direct/compressed joint formulas follow from actual Fourier full-support and centered-moment reconstruction, including globally incompatible families by their actual zero mass. Direct/pair families have a proved disjoint enumeration and literal extension/union bijection. The finite heterogeneous retained-reference product identity and ordinary l1 bound are proved on arbitrary admissible finite grounds, with no assumed target probability factorization. On actual regular starts and actual goodEdges the product reference is exactly b^n+beta*Delta^2*b^(n-2), for everyN>=2,L>0 and every realH. P1-MATH-0083 records this heterogeneous finite extension. The originalF_r,G_r cardinality grouping remains open, soT17.2 is in progress. Coverage76/167 (main28/73, companion48/94), confirmed findings83. No BCN input, added external theorem, Paper C port, dependency download, manuscript-byte change or Palomar registration."
+        }
+      ]
     },
     {
       "label": "p1:close:boundary-mass",

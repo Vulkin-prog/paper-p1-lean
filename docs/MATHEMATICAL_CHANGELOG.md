@@ -3489,3 +3489,8 @@ The exact finite bound rho(T)<=L+d_xy and the compatibility-free nonaligned pair
 ## P1-MATH-0083: the finite heterogeneous retained reference
 
 The exact retained-reference identity and l1 bound now hold for arbitrary heterogeneous positive actual marginals on a finite admissible ground set. Pair compression is justified by actual relation-kernel support and centered Fourier reconstruction; the finite pair/extension enumeration is disjoint. The original regular equal-marginal setting gives the literal binomial correction for everyN>=2,L>0. The sourceF_r,G_r count grouping remains open, soT17.2 is in progress. Coverage76/167, findings83.
+
+
+## The homogeneous cardinality form ofT17.2 is complete
+
+The exact sourceF_r,G_r, direct/gamma meanings, binomial complement counts and natural-to-real subtractions are proved. Finite cardinality grouping, r=0,1 and r>n zero conventions, nonnegative coefficients and weighted infinite-tsum identities are checked. The retained equality and l1 bound hold as actual atomic signed measures. This completes the original specialization of P1-MATH-0083 without a new finding. Coverage77/167 (main28/73, companion49/94), confirmed findings83.

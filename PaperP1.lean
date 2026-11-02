@@ -1142,3 +1142,9 @@ public import PaperP1.Algebra.RetainedReferenceIdentity
 public import PaperP1.Probability.RetainedDeficitNorm
 
 public import PaperP1.Model.RetainedReferenceTheorem
+
+public import PaperP1.Model.RetainedCardinalityDeficits
+
+public import PaperP1.Model.RetainedDeficitGrouping
+
+public import PaperP1.Model.RetainedReferenceCardinalityTheorem
