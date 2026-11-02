@@ -746,7 +746,8 @@
           "validation_commit": "9376efe68ae050f5808d5a98b1c67519bbb502d2"
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full lake build (11031 jobs), source and ledger checks, actual axiom audit of 7025 declarations (only propext, Classical.choice and Quot.sound), and 4742 direct ledger/evidence declaration checks; Ubuntu root free space 15.03 GiB. Original manuscript bytes and all 167 statement hashes preserved."
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (11031 jobs), source and ledger checks, actual axiom audit of 7025 declarations (only propext, Classical.choice and Quot.sound), and 4742 direct ledger/evidence declaration checks; Ubuntu root free space 15.03 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "validation_commit": "4eb54436aa21d3aced5354466dd8ebee1cbb290e"
     },
     {
       "label": "p1:arith:edgefamily",
@@ -881,7 +882,8 @@
           "validation": "Verified under Lean v4.36.0-rc2: full lake build (10965 jobs), source and ledger checks, actual axiom audit of 6936 declarations (only propext, Classical.choice and Quot.sound), and 4653 direct ledger/evidence declaration checks; Ubuntu root free space 15.17 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
           "validation_commit": "fb01e14b02b172b30392d8d7f327ac81a358f7fb"
         }
-      ]
+      ],
+      "validation_commit": "4eb54436aa21d3aced5354466dd8ebee1cbb290e"
     },
     {
       "label": "p1:arith:compression",
@@ -3601,7 +3603,8 @@
           "validation": "Lean v4.36.0-rc2 full build passed (10671 jobs); actual axiom audit passed for all 6305 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4022 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.73 GiB. The exact finite2A2 host reduction and unconditional actual two-sided mean bounds are proved. Under the same explicit unformalized BCN argument, actual pair activity and actual second cumulants are at mostN^(-1/2+epsilon), actual conversion is at mostN^(-3/2+epsilon), and the upper parameter gap |alpha|<=mu/2 holds uniformly. No target activity, covariance or cumulant rate is assumed. Positivity ofalpha and the sharper source rates remain open; main15.1 and19.1 are in progress. Coverage77/167 (main28/73, companion49/94); confirmed findings86. No new external input, PaperC port, dependency download, manuscript-byte change or Palomar registration.",
           "validation_commit": "ba8ffd0d69f7352a812bc0c709d3a9e1f4ad148f"
         }
-      ]
+      ],
+      "validation_commit": "4eb54436aa21d3aced5354466dd8ebee1cbb290e"
     },
     {
       "label": "p13:transfer:dense-targets",
@@ -6977,7 +6980,8 @@
           "validation_commit": "9376efe68ae050f5808d5a98b1c67519bbb502d2"
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full lake build (11031 jobs), source and ledger checks, actual axiom audit of 7025 declarations (only propext, Classical.choice and Quot.sound), and 4742 direct ledger/evidence declaration checks; Ubuntu root free space 15.03 GiB. Original manuscript bytes and all 167 statement hashes preserved."
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (11031 jobs), source and ledger checks, actual axiom audit of 7025 declarations (only propext, Classical.choice and Quot.sound), and 4742 direct ledger/evidence declaration checks; Ubuntu root free space 15.03 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "validation_commit": "4eb54436aa21d3aced5354466dd8ebee1cbb290e"
     },
     {
       "label": "p13:conf:groups",
