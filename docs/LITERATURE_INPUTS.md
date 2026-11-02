@@ -6112,3 +6112,37 @@ new manuscript conclusion error or a completed Palomar submission.
 Original manuscript bytes, dependencies and external-input scope are unchanged.
 
 Verified with Lean v4.36.0-rc2: full lake build (11245 jobs), actual kernel-axiom audit (7557 declarations; only propext, Classical.choice and Quot.sound), 5274 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.62 GiB free on Ubuntu root.
+
+
+## Literal geometric and compressed aligned target populations
+
+The aligned-target mass is now stated on literal dyadic three-element
+families defined by geometric alignment predicates, rather than an
+assumed reduced affine representation. For a source channel in any
+fixed finite reduced interior family F, a second geometric relation
+|s*x-r*z| <= (r+s)*B supplies the required affine data. The proof
+selects one actual x-window multiple of a, reduces the coefficient
+pair by its gcd and bounds the resulting integer offset. For fixed
+r,s<=Q, quadratic word height suffices. More generally r,s<=B^K
+give denominator and offset at most B^(K+2), uniformly for fixed K.
+The actual literal family mass is at most N^(-41/30+epsilon).
+This includes the paper's cubic geometric target height K=3.
+
+A second literal family uses alignment of the target with the true
+compressed center X=a*b*t in a fixed enlarged width D*B. The existing
+reduced-data construction supplies height B^5 inside the proof.
+Its actual mass has the same N^(-41/30+epsilon) bound across F,
+including zero-unit sources, physical ratios, endpoint populations,
+local arithmetic defects and affine incompatibility. Source membership
+and inclusion in the proved finite affine pool are checked separately.
+No affine coefficient or target probability is assumed by either
+geometric family definition.
+
+The compressed center in this statement is based on an actual source
+vertex label_x(i)=a*t. Changing this parameter or allowing nonaligned
+targets is not inferred without a further argument. Main 14.3 remains
+in progress and the total third-cumulant lower passage remains open.
+Coverage stays 79/167 and improvements stay 99. Original manuscripts,
+dependencies, external-input scope and Palomar state are unchanged.
+
+Verified with Lean v4.36.0-rc2: full lake build (11251 jobs), actual kernel-axiom audit (7571 declarations; only propext, Classical.choice and Quot.sound), 5288 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.61 GiB free on Ubuntu root.

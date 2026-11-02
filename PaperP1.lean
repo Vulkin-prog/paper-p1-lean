@@ -1641,3 +1641,6 @@ public import PaperP1.Asymptotics.EnlargedInteriorAlignedTripleMass
 public import PaperP1.Asymptotics.EnlargedEndpointAlignedTripleMass
 public import PaperP1.Asymptotics.EnlargedAllAlignedTargetTripleMass
 public import PaperP1.Asymptotics.EnlargedFiniteAlignedTargetTripleMass
+public import PaperP1.Arithmetic.GeometricAlignedTargetData
+public import PaperP1.Asymptotics.GeometricAlignedTripleMass
+public import PaperP1.Asymptotics.CompressedAlignedTripleMass

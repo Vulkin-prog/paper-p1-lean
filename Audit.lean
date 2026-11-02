@@ -2006,6 +2006,10 @@ import PaperP1
 #print axioms PaperP1.GeneralBranchingExceptions.retained_card_le_one
 #print axioms PaperP1.GeneralBranchingExceptions.twice_card_le
 #print axioms PaperP1.GeneralBranchingExceptions.card_le_half
+#print axioms PaperP1.GeometricAlignedTargetData.scaled_offset_bound
+#print axioms PaperP1.GeometricAlignedTargetData.reduced_affine_data
+#print axioms PaperP1.GeometricAlignedTargetData.bounded_height
+#print axioms PaperP1.GeometricAlignedTargetData.bounded_polynomial_height
 #print axioms PaperP1.GlobalDefectCount.mem_positiveDefectsBelow
 #print axioms PaperP1.GlobalDefectCount.mem_positiveDefectsBelow_iff_largeOddKernel
 #print axioms PaperP1.GlobalDefectCount.mem_positiveDefectsBelow_real_height
@@ -3612,6 +3616,10 @@ import PaperP1
 #print axioms PaperP1.ComparableSplitProductCount.dyadic_count
 #print axioms PaperP1.ComparableSplitProductCount.companion_T5_2
 #print axioms PaperP1.ComparableSplitProductCount.companion_T5_2_real_bounds
+#print axioms PaperP1.CompressedAlignedTripleMass.host_data
+#print axioms PaperP1.CompressedAlignedTripleMass.source_mem_hosts
+#print axioms PaperP1.CompressedAlignedTripleMass.uniform_inclusion
+#print axioms PaperP1.CompressedAlignedTripleMass.uniform_mass
 #print axioms PaperP1.ConditionalHalfCount.cons_mem
 #print axioms PaperP1.ConditionalHalfCount.zero_count
 #print axioms PaperP1.ConditionalHalfCount.induction_step
@@ -3920,6 +3928,12 @@ import PaperP1
 #print axioms PaperP1.GeneralWindowBranching.finite_conclusion
 #print axioms PaperP1.GeneralWindowBranching.logarithmic_windows
 #print axioms PaperP1.GeneralWindowBranching.bounded_height_windows
+#print axioms PaperP1.GeometricAlignedTripleMass.host_data
+#print axioms PaperP1.GeometricAlignedTripleMass.source_mem_hosts
+#print axioms PaperP1.GeometricAlignedTripleMass.uniform_inclusion
+#print axioms PaperP1.GeometricAlignedTripleMass.uniform_mass
+#print axioms PaperP1.GeometricAlignedTripleMass.uniform_polynomial_inclusion
+#print axioms PaperP1.GeometricAlignedTripleMass.uniform_polynomial_mass
 #print axioms PaperP1.GrowingDegreePrimeBudget.trial_log_ratio
 #print axioms PaperP1.GrowingDegreePrimeBudget.prime_card_of_log_height
 #print axioms PaperP1.GrowingDegreePrimeBudget.growing_degree_prime_card
