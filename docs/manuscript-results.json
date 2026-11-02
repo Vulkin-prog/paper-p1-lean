@@ -6952,7 +6952,8 @@
           "validation": "Verified Lean v4.36.0-rc2 full build (10777 jobs), actual Audit.lean kernel audit (6611 declarations; only propext, Classical.choice, Quot.sound), 4328 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.52 GiB. The literal retained bad-event probability and actual original-to-modified TV tend uniformly to zero under the ordinary explicit BCN premise. Finite cutoff K is fixed after the tolerance and before N. No source quantitative rate, Poisson approximation, new numbered completion or new mathematical finding is claimed. Coverage 77/167 (main 28/73, companion 49/94); confirmed improvements 88.",
           "validation_commit": "908c19d14eb37a7a6acb4fe2f875ea08e9256ded"
         }
-      ]
+      ],
+      "validation_commit": "82bd933b135bdf2911384a258c4f04f3273ff316"
     },
     {
       "label": "p1:core:low-nullity",
@@ -7517,7 +7518,8 @@
           "validation": "Verified Lean v4.36.0-rc2 full build (10777 jobs), actual Audit.lean kernel audit (6611 declarations; only propext, Classical.choice, Quot.sound), 4328 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.52 GiB. The literal retained bad-event probability and actual original-to-modified TV tend uniformly to zero under the ordinary explicit BCN premise. Finite cutoff K is fixed after the tolerance and before N. No source quantitative rate, Poisson approximation, new numbered completion or new mathematical finding is claimed. Coverage 77/167 (main 28/73, companion 49/94); confirmed improvements 88.",
           "validation_commit": "908c19d14eb37a7a6acb4fe2f875ea08e9256ded"
         }
-      ]
+      ],
+      "validation_commit": "82bd933b135bdf2911384a258c4f04f3273ff316"
     },
     {
       "label": "p1:limits:branching",
