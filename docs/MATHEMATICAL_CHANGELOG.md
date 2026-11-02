@@ -3434,3 +3434,8 @@ the threshold depends on C. This verifies the source coefficient and
 error order, without claiming optimization or a new source-conclusion
 error. Short cycles and full asymptotic short-basis assembly remain
 open. Coverage75/167 and confirmed findings77 are unchanged.
+
+
+## Constructed witness-edge independence and finite complete-relation reduction
+
+The source deletion argument is now proved with actual witness coordinates and actual basis extraction. Its final relation-space assembly has the explicit constants #retained-r-(pi(z)+2) and M*k*(pi(z)+3), under the clearly exposed local short-vector hypothesis. Loops and parallel columns are fully discharged. This verifies the source finite construction without a new correction or an optimized bound. The simple-graph logarithmic length estimate and full asymptotic assembly remain open; coverage75/167 and confirmed findings77 are unchanged.

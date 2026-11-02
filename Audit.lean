@@ -345,6 +345,13 @@ import PaperP1
 #print axioms PaperP1.BinaryIncidenceAugmentation.augmented_column_none
 #print axioms PaperP1.BinaryIncidenceAugmentation.exists_edge
 #print axioms PaperP1.BinaryIncidenceAugmentation.exists_incidence_model
+#print axioms PaperP1.BinaryIncidenceShortVectors.map_single
+#print axioms PaperP1.BinaryIncidenceShortVectors.edgeColumn_self
+#print axioms PaperP1.BinaryIncidenceShortVectors.edgeColumn_swap
+#print axioms PaperP1.BinaryIncidenceShortVectors.loop_short
+#print axioms PaperP1.BinaryIncidenceShortVectors.parallel_short
+#print axioms PaperP1.BinaryIncidenceShortVectors.finite_equivalence
+#print axioms PaperP1.BinaryIncidenceShortVectors.finite_apply
 #print axioms PaperP1.BinaryRankOne.nonzero_eq
 #print axioms PaperP1.BiquadraticNorm.nonsquare_ne_zero
 #print axioms PaperP1.BiquadraticNorm.anisotropic
@@ -513,6 +520,8 @@ import PaperP1
 #print axioms PaperP1.CharlierRoots.quadratic_neg_iff_between
 #print axioms PaperP1.CharlierRoots.indices_bounds
 #print axioms PaperP1.CharlierRoots.quadratic_neg_iff_indices
+#print axioms PaperP1.ColumnDependencies.zero_column
+#print axioms PaperP1.ColumnDependencies.equal_columns
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_le
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_empty
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_rank_le
@@ -642,6 +651,10 @@ import PaperP1
 #print axioms PaperP1.FormalWordPolynomials.rationalize_linear
 #print axioms PaperP1.FormalWordPolynomials.rationalize_word
 #print axioms PaperP1.FormalWordPolynomials.integer_word_ne_zero
+#print axioms PaperP1.GreedyShortKernel.mono
+#print axioms PaperP1.GreedyShortKernel.independent_family
+#print axioms PaperP1.GreedyShortKernel.sparse_subspace_basis
+#print axioms PaperP1.GreedyShortKernel.physical_subspace_basis
 #print axioms PaperP1.IntegerOverlapRoot.exists_root
 #print axioms PaperP1.integerPolynomialHeight_zero
 #print axioms PaperP1.coeff_natAbs_le_integerPolynomialHeight
@@ -1369,6 +1382,10 @@ import PaperP1
 #print axioms PaperP1.ComponentProjectionInjectivity.component_first_private_prime
 #print axioms PaperP1.ComponentProjectionInjectivity.firstClasses_coordinate
 #print axioms PaperP1.ComponentProjectionInjectivity.firstClasses_injective
+#print axioms PaperP1.ComponentSelectionSupport.selection_single
+#print axioms PaperP1.ComponentSelectionSupport.physicalSelection_apply
+#print axioms PaperP1.ComponentSelectionSupport.physical_single_support
+#print axioms PaperP1.ComponentSelectionSupport.retained_single_card
 #print axioms PaperP1.CompressedTargetAlignment.of_geometric
 #print axioms PaperP1.CompressedTargetAlignment.bounded_data
 #print axioms PaperP1.CompressionRank.private_local_ranks
@@ -2511,6 +2528,9 @@ import PaperP1
 #print axioms PaperP1.ShortBasisComponentStage.physical_projections_injective
 #print axioms PaperP1.ShortBasisComponentStage.first_square_classes_injective
 #print axioms PaperP1.ShortBasisComponentStage.large_prime_equations
+#print axioms PaperP1.ShortBasisCycleReduction.actual_incidence_presentation
+#print axioms PaperP1.ShortBasisCycleReduction.medium_space_from_short_vectors
+#print axioms PaperP1.ShortBasisCycleReduction.complete_space_from_short_vectors
 #print axioms PaperP1.ShortBasisFinalCut.constraintTarget_finrank
 #print axioms PaperP1.ShortBasisFinalCut.mem_constraints_ker
 #print axioms PaperP1.ShortBasisFinalCut.complete_of_medium_and_small

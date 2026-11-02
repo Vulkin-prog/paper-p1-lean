@@ -2395,3 +2395,44 @@ with K_a before C and uniformity over all critical pairs. This extends
 the existing P1-MATH-0006 constant-order improvement. The graph short-
 cycle estimates and final short-basis assembly remain open. Coverage
 75/167, confirmed findings77.
+
+
+## Greedy short-kernel basis and actual complete-relation reduction
+
+Stable ID: `P1-ALG-GREEDY-SHORT-KERNEL`. Status: **proved finite reduction with an explicit local short-vector hypothesis**.
+
+`GreedyShortKernel` proves the actual witness-edge deletion argument.
+A nonzero short kernel vector has an actual nonzero coordinate. Deleting
+that coordinate and recursing gives independent vectors: the chosen
+coordinate vanishes on the span of all later vectors. If every remaining
+set of more than r columns has a kernel vector of support<=k, the actual
+spanned subspace has dimension>=#columns-r and an actual basis of such
+vectors. Literal physical support transfers through the actual linear map.
+
+`ColumnDependencies` constructs actual unit or difference vectors for
+zero and equal columns. `BinaryIncidenceShortVectors` specializes these
+to loops and unordered parallel endpoints, including characteristic2
+and the exact finite-function/Finsupp correspondence. These cases have
+support1 and2; no simple-graph short-cycle bound is inferred from them.
+
+`ComponentSelectionSupport` identifies the actual support of selecting
+one retained component with its actual physical vertex set, of size<=M.
+`ShortBasisCycleReduction` combines the proved greedy construction,
+actual medium-prime map, physical selection and actual final cut. Its
+**explicit local hypothesis** is: every edge subset of cardinality>r
+has a nonzero vector of the actual incidence kernel, supported there
+and of cardinality<=k. Under this hypothesis it constructs an actual
+complete-relation image with
+
+    dimension >= #retained - r - (pi(z)+2),
+    basis physical support <= M*k*(pi(z)+3).
+
+Both physical projections and the actual common square-class map are
+injective. The conditional statement is finite preparation, not the
+full source theorem. The local existence hypothesis with the required
+logarithmic k and residual r is still open for actual simple graphs.
+Final source asymptotic assembly also remains open. Coverage75/167,
+confirmed findings77. No additional external estimate, Paper C source,
+manuscript-byte change or Palomar registration is introduced.
+
+Pinned Mathlib finite-set induction, `LinearIndependent.finCons`, actual span bases, injective submodule equivalences and finite-function/Finsupp linear equivalences are used with their actual hypotheses. The source BFS/Moore estimate is not assumed as a proved library theorem.

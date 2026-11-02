@@ -150,16 +150,50 @@ Compatibility, nonalignment and non-overlap are unnecessary. This is
 the full initial retained-component estimate of the source argument;
 it does not assert a completed short-cycle space or short basis.
 
+## Greedy independence and actual complete-relation assembly
+
+`GreedyShortKernel` proves the actual witness-edge deletion argument.
+A nonzero short kernel vector has an actual nonzero coordinate. Deleting
+that coordinate and recursing gives independent vectors: the chosen
+coordinate vanishes on the span of all later vectors. If every remaining
+set of more than r columns has a kernel vector of support<=k, the actual
+spanned subspace has dimension>=#columns-r and an actual basis of such
+vectors. Literal physical support transfers through the actual linear map.
+
+`ColumnDependencies` constructs actual unit or difference vectors for
+zero and equal columns. `BinaryIncidenceShortVectors` specializes these
+to loops and unordered parallel endpoints, including characteristic2
+and the exact finite-function/Finsupp correspondence. These cases have
+support1 and2; no simple-graph short-cycle bound is inferred from them.
+
+`ComponentSelectionSupport` identifies the actual support of selecting
+one retained component with its actual physical vertex set, of size<=M.
+`ShortBasisCycleReduction` combines the proved greedy construction,
+actual medium-prime map, physical selection and actual final cut. Its
+**explicit local hypothesis** is: every edge subset of cardinality>r
+has a nonzero vector of the actual incidence kernel, supported there
+and of cardinality<=k. Under this hypothesis it constructs an actual
+complete-relation image with
+
+    dimension >= #retained - r - (pi(z)+2),
+    basis physical support <= M*k*(pi(z)+3).
+
+Both physical projections and the actual common square-class map are
+injective. The conditional statement is finite preparation, not the
+full source theorem. The local existence hypothesis with the required
+logarithmic k and residual r is still open for actual simple graphs.
+Final source asymptotic assembly also remains open. Coverage75/167,
+confirmed findings77. No additional external estimate, Paper C source,
+manuscript-byte change or Palomar registration is introduced.
+
 ## Remaining obligations
 
-The short-cycle construction with its length and retained-rank bounds,
-and the full source asymptotic short-basis assembly remain open. The
-final cut accepts an actual medium-prime subspace with its actual basis;
-the required short-cycle inputs must still be constructed from the
-actual incidence model. Article13.1 remains in progress. No source-
-conclusion error, optimized constant, external graph bound, new Paper C
-source, manuscript-byte change or Palomar registration is claimed.
+The simple-graph local short-cycle existence bound with the required
+length and residual-edge estimates, and the full source asymptotic
+short-basis assembly remain open. The local hypothesis of
+`complete_space_from_short_vectors` is explicit. Article13.1 remains
+in progress; no preparation or conditional reduction adds coverage.
 
 ## Validation
 
-Lean v4.36.0-rc2 full build passed (10493 jobs); actual axiom audit passed for all 5801 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3516 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.98 GiB. Actual factorial floors and prime-power summability construct the weighted prime-logarithm error constant; the actual Abel integral and exact real cutoffs prove the source prime-harmonic estimate with inverse-log error. Actual component deletion, internally proved prime-count and defective-vertex budgets give retained count>=d_xy-(2/3)B log(1/a)-K_a B/log B uniformly over all critical pairs, with K_a before C. No weighted-error, prime-harmonic, PNT-remainder or retained-count estimate is an unproved input. Graph short-cycle length/rank estimates and full short-basis assembly remain open; article13.1 stays in progress. Coverage75/167 (main27/73, companion48/94); findings77. Only one selective Log.Sum cache file was fetched; no additional Paper C source, manuscript-byte change or Palomar registration.
+Lean v4.36.0-rc2 full build passed (10503 jobs); actual axiom audit passed for all 5821 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3536 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 15.97 GiB. Actual witness-coordinate deletion constructs an independent short-kernel family and its actual basis. Loops, unordered parallel columns and the finite incidence correspondence are proved. Actual component unit-selection supports are their actual physical vertex sets. Under the explicit local short-vector hypothesis, the actual final complete-relation image has dimension at least #retained-r-(pi(z)+2), a basis of physical support at most M*k*(pi(z)+3), and injective physical and square-class maps. The local short-vector hypothesis with the source logarithmic length and residual-edge bounds remains open; article13.1 stays in progress. Coverage75/167 (main27/73, companion48/94); findings77. No unproved short-cycle estimate is counted as a completed numbered result. No new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.
