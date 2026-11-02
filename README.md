@@ -6,6 +6,8 @@ by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
 **Status: active formalization, 77 / 167 numbered results proved.**
 
+The actual direct active maximum and its shifted envelope now have all-order factorial, tail and exponential bounds with the exact heterogeneous mean, including irregular and zero-marginal windows. The modified-count coupling error remains open. See [the envelope alignment](docs/MODIFIED_COUNT_ENVELOPE_ALIGNMENT.md) and improvement `P1-MATH-0088` in the [mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
 All arithmetic, incidence-growth and logarithmic estimates are proved.

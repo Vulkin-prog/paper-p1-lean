@@ -3862,3 +3862,64 @@ No numbered completion is added: coverage77/167 (main28/73,
 companion49/94), findings87 unchanged. No new mathematical finding,
 external input, BCN premise, PaperC port, dependency download,
 manuscript-byte change or Palomar registration is introduced.
+
+
+## Heterogeneous elementary moments and actual direct-family factors
+
+Stable ID: `P1-PROB-HETEROGENEOUS-DIRECT-MAXIMUM`. Status: **proved unconditionally on any finite actual ground set; modified-count error remains open**.
+
+Regularity is unnecessary for the actual direct-maximum moment
+envelope. The same constructedR andV=R+1 now have every-order
+Poisson-type bounds on ANY finite actual ground setG, using
+
+    p_x = actual infinite marginal atx,
+    mu = sum_(x inG) p_x.
+
+The displayed mu is proved equal to the actual original count mean
+for every dyadic ground subset. No nominal substitution is used.
+The statements require onlyL>0; there is no critical band, BCN input,
+positive-local-marginal requirement or regularity assumption.
+
+The actual direct-family joint identity is proved in full scope:
+
+    rho(I)=0 => q(I)=product_(x inI) p_x.
+
+If all local marginals are positive, the existing direct Fourier
+identity applies. If one marginal is zero, its singleton joint bound
+forces the whole joint mass zero, and the product has that zero
+factor. The empty family is included. Thus even local impossibility
+is handled by the actual model, not by assuming consistency or
+removing windows before the argument.
+
+A finite all-order heterogeneous counting theorem first gives
+E choose(R,r)<=e_r(p). The elementary symmetric inequality
+r!*e_r(p)<=mu^r is proved by finite ground-set induction and a
+nonnegative binomial lower bound, with no moment estimate as input.
+The actual full subset generator gives
+
+    E s^R <= product_(x inG) (1+(s-1)*p_x)
+          <= exp((s-1)*mu)       (s>=1).
+
+It follows for everyr>=0 that E(R)_r<=mu^r and
+P(R>=r)<=mu^r/r!. ForV, every positive-order factorial moment is
+at mostmu^r+r*mu^(r-1), its tail is at most
+mu^(k-1)/(k-1)! for everyk>=1, and
+
+    E s^V <= s*product_(x inG)(1+(s-1)*p_x)
+           <= s*exp((s-1)*mu).
+
+The bounds concern actual Bochner integrals and actual infinite-law
+event probabilities, using the previously checked observable
+integrability and exact finite-cylinder transport. No generating
+function is asserted to be a distribution without construction.
+All natural orders, zero means, zero marginals and empty ground sets
+are included, without a growing-order asymptotic substitution.
+
+P1-MATH-0088 records removal of regularity for this direct-maximum
+envelope part ofT19.3. This does not remove regularization from the
+full approximation theorem, or prove domination of the full original
+count byV. The specified modified count, exceptional-event structure
+and numerical coupling/error estimate remain open;T19.3 stays in
+progress. Coverage77/167 (main28/73, companion49/94), findings88.
+No new external input, BCN premise, PaperC port, dependency download,
+manuscript-byte change or Palomar registration is introduced.

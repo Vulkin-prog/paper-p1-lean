@@ -4719,6 +4719,53 @@
           "impact": "Simplifies and weakens the prerequisites for actual reference admissibility. Positivity itself needs no BCN input; the current Lean upper parameter bounds still use exactly the existing explicit BCN argument. No new asymptotic exponent, full pair-profile equivalent or count-law approximation is claimed. All involved numbered rows remain in progress; coverage77/167."
         }
       ]
+    },
+    {
+      "id": "P1-MATH-0088",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "companion",
+        "label": "p1:limits:modified",
+        "number": "T19.3",
+        "page": 68,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 132,
+        "version": "P1 V1.6",
+        "statement_sha256": "6dd4d383f64a5ff25688b3f5aa56ba446e7702e3a8eb1111ff36440cfd388495"
+      },
+      "original_assumption": "The proof of companionT19.3 constructs the largest direct active subfamily on the regular setG_N, with common nominal marginalp and meanmu=|G_N|p.",
+      "finding": "Regularity and positive local marginals are unnecessary for the direct-maximum envelope bounds. On any finite actual ground set, direct families have joint mass exactly the product of their actual heterogeneous marginals, including zero factors. The actual largest direct active subfamilyR therefore satisfies all-order elementary-symmetric and Poisson factorial/tail bounds with the exact meanmu=sum p_x. Its exponential bound is the actual heterogeneous product product(1+(s-1)p_x), and R+1 has every corresponding source envelope inequality.",
+      "evidence": [
+        "PaperP1.ElementarySymmetricBound.power_add_linear_lower",
+        "PaperP1.ElementarySymmetricBound.factorial_elementary_le",
+        "PaperP1.ElementarySymmetricBound.elementary_le_power_div",
+        "PaperP1.HeterogeneousActiveMaximum.expected_choose_elementary",
+        "PaperP1.HeterogeneousActiveMaximum.expected_choose_poisson",
+        "PaperP1.HeterogeneousActiveMaximum.expected_factorial",
+        "PaperP1.HeterogeneousActiveMaximum.expected_power_product",
+        "PaperP1.HeterogeneousActiveMaximum.expected_power_exponential",
+        "PaperP1.HeterogeneousActiveMaximum.tail_bound",
+        "PaperP1.HeterogeneousDirectMaximum.direct_joint_factor",
+        "PaperP1.HeterogeneousDirectMaximum.finite_joint_product",
+        "PaperP1.HeterogeneousDirectMaximum.actualMean_eq_countMoment",
+        "PaperP1.HeterogeneousDirectMaximum.expected_choose_elementary",
+        "PaperP1.HeterogeneousDirectMaximum.expected_choose_poisson",
+        "PaperP1.HeterogeneousDirectMaximum.expected_factorial",
+        "PaperP1.HeterogeneousDirectMaximum.expected_power_product",
+        "PaperP1.HeterogeneousDirectMaximum.expected_power_exponential",
+        "PaperP1.HeterogeneousDirectMaximum.tail_probability",
+        "PaperP1.HeterogeneousDirectMaximum.envelope_factorial",
+        "PaperP1.HeterogeneousDirectMaximum.envelope_power",
+        "PaperP1.HeterogeneousDirectMaximum.envelope_tail"
+      ],
+      "proposed_revision": "Add a heterogeneous envelope remark toT19.3: for any finite actual ground set and L>0, use the exact local marginals and their sum in the direct-maximum and shifted-envelope bounds. Retain separate regularization, structural and exceptional-event requirements for the specified modified count and the full approximation theorem.",
+      "impact": "Extends the envelope part to all irregular and zero-marginal windows without a critical-band or BCN premise. It proves no numerical coupling error, no domination of the full original count by R+1 and no completeT19.3 or new numbered coverage.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      },
+      "validation": "Lean v4.36.0-rc2 full build passed (10761 jobs); actual axiom audit passed for all 6555 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4272 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.56 GiB. Actual direct-family joint factorization is proved for all finite actual ground sets, including zero marginals. The constructed maximum and its shifted envelope have all-order elementary-symmetric, Poisson factorial/tail and heterogeneous product/exponential bounds with the exact sum of actual marginals. This sum is identified with the actual dyadic count mean. All integrals and probabilities are transported through the actual finite cylinder; no regularity, critical band, BCN or unproved numerical estimate is assumed. P1-MATH-0088 records the regularity-free envelope extension. The specified modified count, structural domination and numerical exceptional-event/coupling estimate remain open; T19.3 stays in progress. Coverage77/167 (main28/73, companion49/94), confirmed mathematical improvements88. No new external input, PaperC port, dependency download, manuscript-byte change or Palomar registration."
     }
   ]
 }

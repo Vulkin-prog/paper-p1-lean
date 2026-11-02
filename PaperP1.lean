@@ -1308,3 +1308,9 @@ public import PaperP1.Probability.HereditaryActiveMaximum
 public import PaperP1.Model.MaximumDirectActive
 
 public import PaperP1.Model.DirectActiveEnvelope
+
+public import PaperP1.Algebra.ElementarySymmetricBound
+
+public import PaperP1.Probability.HeterogeneousActiveMaximum
+
+public import PaperP1.Model.HeterogeneousDirectMaximum
