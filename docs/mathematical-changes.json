@@ -244,7 +244,8 @@
           "line": 88,
           "statement_sha256": "15f2fe4ac0c1ddbc4e232f710469e0a1cf2eecaff16778177bd0ac1cadde3838"
         }
-      ]
+      ],
+      "validation_commit": "baf122a8ba9b8b0e2f27125cf24cb7d994b731f8"
     },
     {
       "id": "P1-MATH-0007",
@@ -4323,7 +4324,8 @@
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "baf122a8ba9b8b0e2f27125cf24cb7d994b731f8"
     }
   ]
 }
