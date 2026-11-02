@@ -4040,3 +4040,65 @@ remain in progress. Numbered coverage stays 77/167 (main 28/73, companion
 49/94), confirmed mathematical improvements stay 88. The BCN result remains
 an ordinary explicit theorem argument; no new external input or axiom is
 introduced. Original manuscript bytes and the Lean/Mathlib pins are preserved.
+
+
+## Actual fixed dependent mass and bounded original-count moments
+
+Stable ID: `P1-PROB-FIXED-COUNT-MOMENT-BOUNDS-BCN`. Status: **proved conditional on the existing explicit BCN bound**.
+
+Actual fixed-order dependent-family mass is now bounded under the existing
+explicit BCN premise. For every fixed r and eta>0, uniformly for critical L
+and every G contained in the dyadic block,
+
+    sum_(I subset G, |I|=r, rho(I)>0) P(all starts in I active)
+       <= N^(-1/2+eta)
+
+for all sufficiently large N. The argument does not assume this bound.
+Every dependent I contains a primitive seed D of size between 2 and r.
+Canonical injective enumerations transport actual unordered families to the
+already proved ordered-tuple propagation theorem, with an explicit r! position
+factor. Their joint masses are exactly those of the original infinite measure.
+The zero masses of incompatible seeds are retained; no regularity or positivity
+restriction is imposed. A finite cover over all seed sizes is taken before N.
+
+More generally, every actual family of size s+k containing a seed from a
+finite s-site seed family F has joint mass at most
+
+    (s+k)! * N^eta * sum_(D in F) P(all starts in D active).
+
+This propagation statement is unconditional and keeps the full actual seed
+mass. BCN is used only for the primitive two-site mass needed in the final
+coarse dependent-family estimate.
+
+An unconditional finite decomposition then proves, with the exact
+heterogeneous mean mu=sum_x p_x,
+
+    E(Z_G)_r <= mu^r + r! * dependentJointMass(G,L,r).
+
+The direct families have exactly their actual product marginals, and the
+nonnegative elementary-symmetric inequality bounds their total. Under BCN,
+for every fixed r and eta>0 this gives
+
+    E(Z_G)_r <= mu^r + N^(-1/2+eta).
+
+The critical mean is uniformly bounded. Hence every fixed factorial moment
+and every fixed ordinary moment of the original count is uniformly bounded.
+The passage to ordinary moments uses the checked finite integer inequality
+
+    n^r <= (2*r)^r + 2^r * n.descFactorial(r),
+
+including r=0. No moment hypothesis, Poisson-law approximation, small coupling
+error, or large-order estimate is used to deduce these bounded moments.
+The already proved regular-count transfer now has its higher-moment premise
+discharged under BCN, yielding, for every fixed j>=1,
+
+    |E Z_N^j - E Z_regular^j| <= K * N^(-1+eta).
+
+Main 6.4 moves from not_started to in_progress: its bounded-moment clause is
+proved under explicit BCN, but its two-sided factorial/ordinary expansions,
+quadratic correction, sharp 4/5 remainder and all higher factorial cumulants
+are not asserted. Main 3.1 retains its previously proved aligned scope;
+the new moment-transfer consequence is conditional only on BCN. Numbered
+coverage remains 77/167 (main 28/73, companion 49/94), confirmed improvements
+remain 88. No new external input, axiom, dependency download, source-byte
+change, or Palomar registration is introduced.

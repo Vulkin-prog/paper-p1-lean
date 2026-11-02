@@ -3648,3 +3648,8 @@ An actual retained-configuration modified count is constructed and proved domina
 ## Qualitative control of the actual retained-modification error
 
 The actual bad-event probability and original-to-modified total variation now tend uniformly to zero under explicit BCN. The finite seed/mean decomposition is unconditional; its finite order cutoff is chosen before N. This is a weaker intermediate estimate, with no new mathematical finding or numbered completion. The source quantitative rate and seed-union identification remain open. Coverage 77/167, confirmed improvements 88.
+
+
+## Bounded original-count moments from actual primitive seed propagation
+
+Canonical tuple enumeration and the proved propagation theorem yield an actual unordered seed-mass bound. Under explicit BCN, every fixed-order dependent joint mass is at most N^(-1/2+eta), giving an actual factorial upper bound by mu^r plus that scale and bounded original moments of every fixed order. This discharges the higher-moment premise in regular-count transfer under BCN. Main 6.4 is now in progress; its sharp two-sided expansion remains open. No numbered completion or new mathematical finding is counted. Coverage 77/167; confirmed improvements 88.
