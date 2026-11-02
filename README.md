@@ -459,3 +459,5 @@ connected activity is reduced to the two remaining arithmetic activities.
 Every fixed primitive order r>=5 now satisfies both bounds of main 15.5
 by the stronger elementary exponent 1-r/2; r=4 remains open.
 [Statement and fixed-order scope](docs/PRIMITIVE_GENERAL_MASS_ALIGNMENT.md).
+
+Every literal fixed-height explicit coefficient now has direct positive vanishing bounds. Its quadratic and Hermite references are actual probabilities without BCN or the complete pair profile. The height4 coefficient, exact masses, first moving-phase constants and height5 correction are checked; source distance rates remain open. See [the finite-height scope](docs/EXPLICIT_CHANNEL_HIERARCHY_ALIGNMENT.md).

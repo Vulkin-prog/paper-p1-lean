@@ -3539,3 +3539,8 @@ The exact finite bound2A2<=#hosts*M+actual independent host mass is proved, with
 ## P1-MATH-0087: positivity from one channel before the complete pair profile
 
 The actual second factorial cumulant satisfies alpha>=d_C*L*N^(-2/3)>0 without BCN, from the selected-joint host identity and the private2:3 channel alone. Actual Hermite and quadratic probability status then follow using the already checked coarse upper bound under the existing explicit BCN input. The sharp pair profile, count-law errors and explicit fixed-height parameters remain open. The actual mean-bias clause of main1.1 has the explicit unconditional constant2^C. Main1.1 is in progress; coverage77/167, confirmed findings87.
+
+
+## P1-MATH-0087 extended: explicit parameters without the pair profile
+
+For every fixedh>=3, the literal source finite coefficient is positive and tends uniformly to zero, by finite signed-channel bounds and the2:3 summand. Its quadratic and Hermite references are actual probabilities unconditionally, without alphaHat_h~alpha or BCN. The exact height4 coefficient, singleton masses, phase constants at heights3..6 and height5 polynomial are checked. The source distance and cumulant remainder rates remain open. Main1.4,18.1,18.3 move to in_progress; no new numbered completion or finding. Coverage77/167, findings87.

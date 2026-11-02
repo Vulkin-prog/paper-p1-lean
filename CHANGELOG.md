@@ -17,6 +17,7 @@
 - Prove the finite reciprocal-pivot square-part and dyadic reductions forT19.15, with no analytic input; its final asymptotic remains open.
 - Prove the actual finite pair-activity host reduction, unconditional mean bounds and weaker activity/conversion/cumulant rates under the common explicit BCN input.
 - Prove unconditional positivity of the actual second cumulant from the2:3 channel, actual reference admissibility under the existing explicit BCN input, and the actual mean-bias clause of main1.1; record finding87.
+- Prove unconditional probability status of every fixed-height explicit reference, exact height4 parameters and masses, phase constants and the height5 polynomial; extend finding87.
 - Original manuscripts remain byte-preserved; Palomar qualification is still a later milestone.
 
 ## In progress — 31 October 2026

@@ -1234,3 +1234,13 @@ public import PaperP1.Model.PrivateChannelHostSupport
 public import PaperP1.Asymptotics.PositiveSecondCumulant
 
 public import PaperP1.Asymptotics.ActualReferenceAdmissibility
+
+public import PaperP1.Arithmetic.FiniteChannelHierarchy
+
+public import PaperP1.Asymptotics.FiniteChannelHierarchyBounds
+
+public import PaperP1.Asymptotics.ExplicitReferenceAdmissibility
+
+public import PaperP1.Arithmetic.ChannelPhaseConstants
+
+public import PaperP1.Arithmetic.HeightFiveChannelCorrection
