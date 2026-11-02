@@ -4961,6 +4961,53 @@
         "status": "not_integrated"
       },
       "validation_commit": "8bb8b9875fbc1c46f465899b3d56d9001e2c9bee"
+    },
+    {
+      "id": "P1-MATH-0092",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:twogoodpositive",
+        "number": "T1.17",
+        "page": 19,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 1199,
+        "statement_sha256": "be55642021944d9eabbc4a130b9b44d199f05d751d860a5b47b42c715c03a25b"
+      },
+      "original_assumption": "T1.17 pairs its union correction with the sharp second factorial asymptotic E[(Xi)_2]~beta^2. A separate derivation of the logarithmic activation exponent using only weak subpower moments is not stated.",
+      "finding": "For the literal compatible private principal-edge family in channels 2:3 and 3:4, its original infinite-model activation probability lies between N^(-2/3-epsilon) and N^(-2/3+epsilon), for every fixed epsilon>0, uniformly through the critical band and fixed logarithmic cutoffs 8(L+1)<=H<=D(L+1). This is unconditional and follows from the independently proved positive beta phase and subpower fixed moments through an exact finite truncation. The exact first moment and the general original-model Bonferroni inequality are also proved.",
+      "evidence": [
+        "PaperP1.ActivePairCount.value_nonneg",
+        "PaperP1.ActivePairCount.value_eq_card",
+        "PaperP1.ActivePairCount.active_iff_positive",
+        "PaperP1.ActivePairCount.indicator_le_value",
+        "PaperP1.ActivePairCount.value_le_count_square",
+        "PaperP1.ActivePairCount.mean_eq",
+        "PaperP1.ActivePairCount.truncation",
+        "PaperP1.PositiveCountBonferroni.pointwise",
+        "PaperP1.PositiveCountBonferroni.finite_bound",
+        "PaperP1.ActiveEdgeObservables.positive_iff",
+        "PaperP1.ActiveEdgeObservables.value_restrict",
+        "PaperP1.ActiveEdgeObservables.integral_eq_finite",
+        "PaperP1.ActiveEdgeObservables.finite_mean_eq",
+        "PaperP1.ActiveEdgeObservables.mean_eq",
+        "PaperP1.ActiveEdgeObservables.probability_eq_finite",
+        "PaperP1.ActiveEdgeObservables.probability_le_mass",
+        "PaperP1.ActiveEdgeObservables.truncation",
+        "PaperP1.ActiveEdgeBonferroni.factorialSecond_eq_finite",
+        "PaperP1.ActiveEdgeBonferroni.union_correction",
+        "PaperP1.ActiveEdgeBonferroni.principal_mean_and_union",
+        "PaperP1.PrincipalEdgeActivation.uniform_probability"
+      ],
+      "proposed_revision": "Add a corollary before or after T1.17 stating the unconditional logarithmic probability exponent, with a proof using Xi<=Z^2 and beta<=R^2*P(Xi>0)+E[Z^m]/R^(m-2). Choose one higher fixed moment before N. Keep the sharper second-moment asymptotic and multiplicative equivalence as separate statements.",
+      "impact": "Provides an independently verified probability consequence requiring substantially weaker intermediate moment information. It does not prove the sharp second-factorial estimate, a multiplicative probability equivalent, growing-order control or full pair profile. No manuscript conclusion error is claimed.",
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (10957 jobs), source and ledger checks, actual axiom audit of 6923 declarations (only propext, Classical.choice and Quot.sound), and 4640 direct ledger/evidence declaration checks; Ubuntu root free space 15.18 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

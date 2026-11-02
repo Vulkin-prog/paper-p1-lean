@@ -1492,3 +1492,8 @@ public import PaperP1.Asymptotics.PrivateChannelActivityRate
 public import PaperP1.Asymptotics.FiniteChannelActivity
 public import PaperP1.Model.PrincipalChannelEdges
 public import PaperP1.Asymptotics.PrincipalChannelEdgesPhase
+public import PaperP1.Probability.ActivePairCount
+public import PaperP1.Probability.PositiveCountBonferroni
+public import PaperP1.Model.ActiveEdgeObservables
+public import PaperP1.Model.ActiveEdgeBonferroni
+public import PaperP1.Asymptotics.PrincipalEdgeActivation
