@@ -1508,3 +1508,6 @@ public import PaperP1.Model.ActiveFamilyCover
 public import PaperP1.Asymptotics.ExactContactActivation
 public import PaperP1.Model.ExactContactCentered
 public import PaperP1.Asymptotics.ExactContactCenteredActivity
+public import PaperP1.Model.PairLossWeights
+public import PaperP1.Asymptotics.UnitChannelPairWeights
+public import PaperP1.Asymptotics.NormalizedDefectPairActivity

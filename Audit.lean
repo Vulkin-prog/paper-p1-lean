@@ -3801,6 +3801,9 @@ import PaperP1
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_block_mass
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_activity
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_absolute_difference
+#print axioms PaperP1.NormalizedDefectPairActivity.bad_subset_units
+#print axioms PaperP1.NormalizedDefectPairActivity.uniform_activity
+#print axioms PaperP1.NormalizedDefectPairActivity.uniform_joint_mass
 #print axioms PaperP1.NormalizedDefectSourceCount.bad_sources_rate
 #print axioms PaperP1.NormalizedPairResidual.rank_sublinear
 #print axioms PaperP1.OffsetLineMajorant.majorantConstant_pos
@@ -4126,6 +4129,8 @@ import PaperP1
 #print axioms PaperP1.TwoSmallKernelFibres.fixed_offsets
 #print axioms PaperP1.uniformLittleOOn_zero
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
+#print axioms PaperP1.UnitChannelPairWeights.uniform_joint
+#print axioms PaperP1.UnitChannelPairWeights.uniform_coefficient
 #print axioms PaperP1.UnorderedSeedMassPropagation.uniform_mass
 #print axioms PaperP1.ValueHeightHalfCount.article_10_1
 #print axioms PaperP1.ValueHeightHalfCount.uniform_logarithmic_count
@@ -5547,6 +5552,8 @@ import PaperP1
 #print axioms PaperP1.PairHostMoment.tupleValues_pair
 #print axioms PaperP1.PairHostMoment.badTuples_card
 #print axioms PaperP1.PairHostMoment.finite_second_bound
+#print axioms PaperP1.PairLossWeights.joint_bound
+#print axioms PaperP1.PairLossWeights.unit_order
 #print axioms PaperP1.PairRowActivity.marginal_le_one
 #print axioms PaperP1.PairRowActivity.pair_absolute_bound
 #print axioms PaperP1.PairRowActivity.pair_absolute_le_marginal
