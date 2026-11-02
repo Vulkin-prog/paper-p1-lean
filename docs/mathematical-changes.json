@@ -3774,7 +3774,8 @@
           "validation": "Verified with Lean v4.36.0-rc2: full lake build (11177 jobs), actual kernel-axiom audit (7416 declarations; only propext, Classical.choice and Quot.sound), 5133 ledger/finding declaration checks, all 138 source manifest entries and 167 numbered-result hashes preserved; 14.77 GiB free on Ubuntu root.",
           "validation_commit": "ccd6d5abe039e52207130635ce5cdebb2c8ab7ae"
         }
-      ]
+      ],
+      "validation_commit": "4aefc95b7c4ad6ff7f6f1dbbfef8ba456a19d9a3"
     },
     {
       "id": "P1-MATH-0068",
@@ -5760,7 +5761,8 @@
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "4aefc95b7c4ad6ff7f6f1dbbfef8ba456a19d9a3"
     }
   ]
 }
