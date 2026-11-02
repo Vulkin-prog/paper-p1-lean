@@ -1,6 +1,7 @@
 module
 
 public import PaperP1.Probability.FactorialTuples
+public import PaperP1.Probability.SubsetFactorials
 public import PaperP1.Model.CountObservables
 public import PaperP1.Model.InfiniteJointMoments
 
@@ -21,6 +22,10 @@ local instance factorialCountMeasurableF2 : MeasurableSpace F₂ := ⊤
 def factorialCountMoment (G : Finset ℕ) (L r : ℕ) : ℝ :=
   ∫ ω, ((infiniteStartCount G L ω).descFactorial r : ℝ) ∂infiniteRademacherMeasure
 
+theorem factorialCountMoment_one (G : Finset ℕ) (L : ℕ) :
+    factorialCountMoment G L 1 = countMoment G L 1 := by
+  simp only [factorialCountMoment, countMoment, Nat.descFactorial_one, pow_one]
+
 theorem factorialCountMoment_eq_falling_product (G : Finset ℕ) (L r : ℕ) :
     factorialCountMoment G L r =
       ∫ ω, ∏ i ∈ range r, ((infiniteStartCount G L ω : ℝ) - i)
@@ -39,6 +44,19 @@ theorem factorialCountMoment_nonneg {N L : ℕ} {G : Finset ℕ}
     (hG : G ⊆ dyadicBlock N) (r : ℕ) : 0 ≤ factorialCountMoment G L r := by
   rw [factorialCountMoment_eq_finite hG]
   exact finiteExpectation_nonneg _ (fun _ ↦ Nat.cast_nonneg _)
+
+theorem factorialCountMoment_eq_subset {N L : ℕ} {G : Finset ℕ}
+    (hG : G ⊆ dyadicBlock N) (r : ℕ) :
+    factorialCountMoment G L r = (r.factorial : ℝ) *
+      ∑ I ∈ G.powersetCard r, infiniteJointMoment L I := by
+  rw [factorialCountMoment_eq_finite hG]
+  simp_rw [factorial_subset_expansion]
+  rw [finiteExpectation_const_mul, finiteExpectation_sum]
+  congr 1
+  apply sum_congr rfl
+  intro I hI
+  exact (infiniteJointMoment_eq_finite (dyadicCutoff N L) L I
+    (dyadic_subset_cutoff ((mem_powersetCard.mp hI).1.trans hG))).symm
 
 theorem factorialCountMoment_two {N L : ℕ} {G : Finset ℕ}
     (hG : G ⊆ dyadicBlock N) :

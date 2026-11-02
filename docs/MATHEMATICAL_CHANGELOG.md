@@ -3124,3 +3124,14 @@ This changes only a proof constant. The uniform arithmetic D_(2,1)
 estimate remains open. No new numbered result is counted complete.
 The exact finite reduction and the remaining obligations are detailed in
 [the alignment note](TRIPLE_ACTIVITIES_ALIGNMENT.md).
+
+
+Third-cumulant assembly checkpoint: the actual original infinite run count
+has the complete factorial-cumulant identity, retaining every repeated-
+index pair and cubic term. Their uniform critical-band correction is
+12 K A2/N+2 K^3/N^2, using proved actual marginal bounds. The source
+comparison is now reduced to precisely the actual D_(2,1) and pair
+activity A2. Neither of their remaining arithmetic bounds is assumed.
+This completes a proof obligation, not a new independent improvement;
+confirmed improvements remain 72 and numbered coverage remains 72/167.
+See [alignment](TRIPLE_ACTIVITIES_ALIGNMENT.md).

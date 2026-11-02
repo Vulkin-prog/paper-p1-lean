@@ -485,6 +485,9 @@ import PaperP1
 #print axioms PaperP1.QuotientRank.range_restricted_quotient
 #print axioms PaperP1.QuotientRank.rank_add_old
 #print axioms PaperP1.QuotientRank.joined_rank_add_kernel
+#print axioms PaperP1.RepeatedIndexCost.pair_bound
+#print axioms PaperP1.RepeatedIndexCost.cube_bound
+#print axioms PaperP1.RepeatedIndexCost.bound
 #print axioms PaperP1.RungeQPolynomial.map_integerSplitProduct
 #print axioms PaperP1.RungeQPolynomial.monic_integerSplitProduct
 #print axioms PaperP1.RungeQPolynomial.natDegree_integerSplitProduct
@@ -548,6 +551,12 @@ import PaperP1
 #print axioms PaperP1.Algebra.boundaryPolynomial_insert_max
 #print axioms PaperP1.Algebra.first_excluded_prefix
 #print axioms PaperP1.Algebra.stopped_expansion
+#print axioms PaperP1.SubsetPowerSums.elementary_zero
+#print axioms PaperP1.SubsetPowerSums.elementary_one
+#print axioms PaperP1.SubsetPowerSums.elementary_insert
+#print axioms PaperP1.SubsetPowerSums.pairPower_insert
+#print axioms PaperP1.SubsetPowerSums.square
+#print axioms PaperP1.SubsetPowerSums.cube
 #print axioms PaperP1.SubspaceFamilyRank.span_mono
 #print axioms PaperP1.SubspaceFamilyRank.rank_mono
 #print axioms PaperP1.SubspaceFamilyRank.span_empty
@@ -567,6 +576,12 @@ import PaperP1
 #print axioms PaperP1.SubspaceFamilyRank.privateRank_subtype
 #print axioms PaperP1.TernaryPairwiseRigidity.disjoint_sum_zero
 #print axioms PaperP1.TernaryPairwiseRigidity.ternary_missing_zero
+#print axioms PaperP1.ThirdFactorialCumulant.pair_formula
+#print axioms PaperP1.ThirdFactorialCumulant.triple_formula
+#print axioms PaperP1.ThirdFactorialCumulant.complementary_pair_sum
+#print axioms PaperP1.ThirdFactorialCumulant.triple_sum
+#print axioms PaperP1.ThirdFactorialCumulant.weighted_centered_pairs
+#print axioms PaperP1.ThirdFactorialCumulant.exact_formula
 #print axioms PaperP1.TripleCancellationBound.abs_four
 #print axioms PaperP1.TripleCancellationBound.incompatible
 #print axioms PaperP1.TripleCentering.expansion
@@ -2911,6 +2926,9 @@ import PaperP1
 #print axioms PaperP1.RelativeBlockRelationsCount.induction_step
 #print axioms PaperP1.RelativeBlockRelationsCount.uniform_count
 #print axioms PaperP1.RelaxedSaturationDegrees.relaxed_neighborhood_bounds
+#print axioms PaperP1.RepeatedRunCost.mean_bound
+#print axioms PaperP1.RepeatedRunCost.finite_bound
+#print axioms PaperP1.RepeatedRunCost.uniform_bound
 #print axioms PaperP1.ReplicaFiniteMoment.bounded_weight_moment
 #print axioms PaperP1.ReplicaFiniteMoment.logarithmic_weight_moment
 #print axioms PaperP1.ReplicaMomentTheorem.positive_moment
@@ -3007,6 +3025,8 @@ import PaperP1
 #print axioms PaperP1.SquareTupleCount.square_tuple_count
 #print axioms PaperP1.TargetQuotientRank.bounded_affine_rank
 #print axioms PaperP1.TargetUnionResidual.row_rank_sublinear
+#print axioms PaperP1.ThirdCumulantReduction.absolute_reduction
+#print axioms PaperP1.ThirdCumulantReduction.cumulant_reduction
 #print axioms PaperP1.TwoProgressionSublinear.rank_sublinear
 #print axioms PaperP1.TwoProgressionSublinear.row_rank_sublinear
 #print axioms PaperP1.TwoSmallKernelCount.dyadic_count
@@ -3543,6 +3563,8 @@ import PaperP1
 #print axioms PaperP1.SaturationGraph.degree_bound
 #print axioms PaperP1.SaturationGraph.maxDegree_bound
 #print axioms PaperP1.SmallFinpartition.eq_top_without_singletons
+#print axioms PaperP1.SubsetSums.one
+#print axioms PaperP1.SubsetSums.succ_insert
 #print axioms PaperP1.ThreeBlockComponents.free_components_card_bound
 #print axioms PaperP1.ThreeBlockComponents.residual_rank_bound
 #print axioms PaperP1.ThreeBlockComponents.free_component_prime_sum
@@ -3960,9 +3982,11 @@ import PaperP1
 #print axioms PaperP1.FactorialBranching.factorial_zero
 #print axioms PaperP1.FactorialBranching.factorial_succ_bound
 #print axioms PaperP1.FactorialBranching.factorial_le_power
+#print axioms PaperP1.FactorialCountMoments.factorialCountMoment_one
 #print axioms PaperP1.FactorialCountMoments.factorialCountMoment_eq_falling_product
 #print axioms PaperP1.FactorialCountMoments.factorialCountMoment_eq_finite
 #print axioms PaperP1.FactorialCountMoments.factorialCountMoment_nonneg
+#print axioms PaperP1.FactorialCountMoments.factorialCountMoment_eq_subset
 #print axioms PaperP1.FactorialCountMoments.factorialCountMoment_two
 #print axioms PaperP1.FactorialCountMoments.sum_tuple_joint_moments
 #print axioms PaperP1.FamilyIndependentMass.finite_mass_cap
@@ -4392,6 +4416,11 @@ import PaperP1
 #print axioms PaperP1.Model.dyadicMarginal_of_compatible
 #print axioms PaperP1.Model.dyadicMarginal_of_not_compatible
 #print axioms PaperP1.Model.dyadicMarginal_pos_iff
+#print axioms PaperP1.ThirdRunActivityComparison.exact_decomposition
+#print axioms PaperP1.ThirdRunActivityComparison.repeated_cost_bound
+#print axioms PaperP1.ThirdRunActivityComparison.finite_bound
+#print axioms PaperP1.ThirdRunFactorialCumulant.eq_subset_data
+#print axioms PaperP1.ThirdRunFactorialCumulant.exact_formula
 #print axioms PaperP1.TripleActivityConnected.connected_of_coefficient_ne_zero
 #print axioms PaperP1.TripleActivityConnected.coefficient_zero_of_disconnected
 #print axioms PaperP1.TripleActivityConnected.positive_eq_connected

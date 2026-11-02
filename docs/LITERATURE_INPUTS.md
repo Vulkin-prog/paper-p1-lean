@@ -1918,3 +1918,19 @@ rank. The resulting original infinite-model incompatible triple activity
 is at most its independent active mass plus one literal D_(2,1).
 The latter's arithmetic decay is not assumed and remains unproved.
 This introduces no new external theorem, literature input or Paper C code.
+
+
+## Exact third factorial cumulant and original repeated-index cost
+
+Stable ID: `P1-PROB-THIRD-FACTORIAL-CUMULANT`. Status: **proved**,
+exact probabilistic and algebraic components of main 11.3.
+
+Finite square/cube expansions and the exact erased-set incidence identity
+prove the full heterogeneous third-cumulant formula over any commutative
+ring. The actual infinite run falling-factorial count moments are identified
+with factorial times unordered joint-mass sums. Thus every repeated-index
+term has its literal original-model interpretation. Actual critical-band
+marginals bound its correction by 12 K A2/N+2 K^3/N^2. The full third-
+cumulant comparison is reduced to the actual D_(2,1) and pair activity A2.
+Their source arithmetic decay estimates are not assumed and remain open.
+No new external theorem, literature estimate or Paper C code is introduced.

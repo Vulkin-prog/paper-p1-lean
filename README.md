@@ -431,3 +431,8 @@ The exact incompatible-triple reduction now uses one copy of the actual
 pair/target deficit, with its full effective-space support and exact incidence
 bijection proved. The arithmetic bound for this deficit remains open. See
 [triple activity alignment](docs/TRIPLE_ACTIVITIES_ALIGNMENT.md).
+
+The actual original run count now has the complete third factorial-cumulant
+identity, with every repeated-index correction. Its comparison with positive
+connected activity is reduced to the two remaining arithmetic activities.
+[Precise scope and remaining bounds](docs/TRIPLE_ACTIVITIES_ALIGNMENT.md).

@@ -866,3 +866,12 @@ public import PaperP1.Combinatorics.TriplePairIncidence
 public import PaperP1.Model.CenteredDependenceSupport
 public import PaperP1.Model.IndependentTargetDeficit
 public import PaperP1.Asymptotics.IncompatibleTripleReduction
+
+public import PaperP1.Combinatorics.SubsetSums
+public import PaperP1.Algebra.SubsetPowerSums
+public import PaperP1.Algebra.ThirdFactorialCumulant
+public import PaperP1.Algebra.RepeatedIndexCost
+public import PaperP1.Model.ThirdRunFactorialCumulant
+public import PaperP1.Model.ThirdRunActivityComparison
+public import PaperP1.Asymptotics.RepeatedRunCost
+public import PaperP1.Asymptotics.ThirdCumulantReduction

@@ -105,14 +105,51 @@ N^(-3/2+epsilon) term with a threshold before L and the admissible dyadic set.
 The improved finite constant and its incidence justification are recorded
 as P1-MATH-0072.
 
+## Actual third factorial cumulant and repeated indices
+
+`SubsetPowerSums` proves the complete square and cube expansions with
+all repeated indices over any commutative ring. `ThirdFactorialCumulant`
+then proves the exact heterogeneous subset-data identity using the
+erased-set incidence sum. These are algebraic identities, without sign
+or independence assumptions. `FactorialCountMoments.factorialCountMoment_eq_subset`
+identifies the actual infinite falling-factorial count moment with r! times
+the unordered joint-mass sum. `ThirdRunFactorialCumulant.exact_formula`
+therefore gives the literal original infinite-count third factorial cumulant:
+
+    kappa3 = 6 sum_{|T|=3} c(T)
+             -6 sum_{e={x,y}} (p_x+p_y)c(e) +2 sum_x p_x^3.
+
+`RepeatedIndexCost.bound` proves the exact cost bound
+12 p_* A2 +2 p_*^2 mu, retaining arbitrary heterogeneous p_x and both signs
+of c(e). `ThirdRunActivityComparison.finite_bound` adds 6 times the actual
+incompatible absolute activity to this cost. `RepeatedRunCost` uses the
+proved actual critical-band marginal cap and finite dyadic mean bound to
+obtain, uniformly before L and every dyadic subfamily,
+
+    repeated cost <=12 K A2/N +2 K^3/N^2.
+
+`ThirdCumulantReduction.cumulant_reduction` completes the actual comparison
+assembly, with explicit remaining arithmetic quantities:
+
+    |kappa3 -6 K3+| <= N^(-3/2+epsilon) +6 D_(2,1)
+                       +12 K A2/N +2 K^3/N^2.
+
+Its `absolute_reduction` gives the nonnegative difference A3-K3+ at most
+N^(-3/2+epsilon)+D_(2,1). No bound for D_(2,1) or A2 is assumed. These
+formulas isolate exactly the unproved arithmetic obligations, without
+counting their conclusions as completed numbered results. This completes
+the source cumulant/repeated-index assembly and adds no independent new
+mathematical finding beyond the already recorded improvements.
+
 ## Remaining obligations
 
 The actual pair-activity/independent-target deficit D_(2,1) from main
 11.1 still needs its arithmetic proof; the exact incidence summation is now proved.
 It is necessary to bound the remaining terms in the incompatible triple
 cancellation. The final N^(-3/2+epsilon) incompatible activity estimate
-is therefore open. Main 11.3 also needs the exact third factorial-
-cumulant/repeated-index assembly and its quantitative correction bounds.
+is therefore open. Main 11.3 now has the complete exact third factorial-cumulant/repeated-index
+assembly. Its remaining quantitative correction uses the still open
+A2 <= N^(-2/3+epsilon) pair profile of main 3.3.
 Neither numbered result is marked proved. No deficit or target activity
 estimate is introduced as an axiom or used to inflate coverage.
 No new external theorem, Paper C source or Palomar submission is used.
