@@ -3574,3 +3574,8 @@ For every fixed maximum number of sources, actual negative conditional deviation
 ## Actual adjacent-reference distance constants are checked
 
 The ordinary quadratic same-mean distance is exactly|alpha-beta|*norm(Pi_mu*Delta^2)/2, and its actual TV is half that. Literal adjacent fixed-height quadratic references have the full uniform moving-phase equivalent, with actual probability witnesses. Adjacent Hermite references have the same leading TV. Original-count distance equivalents and optimality remain open. No new finding or numbered completion. Coverage77/167, findings87.
+
+
+## The actual direct maximum has the complete all-order envelope bounds
+
+The largest active direct subfamily is constructed under the original infinite law. All observables are integrable and transported exactly to a concrete finite cylinder. Actual regular-window joint equalities supply unconditional binomial/Poisson factorial bounds, actual tail probabilities and exponential bounds at every order. The shifted maximumR+1 has all corresponding source envelope inequalities, including the repeated-index term. The specified modified-count and exceptional-event/coupling estimate remain open; T19.3 is in progress. No new finding or numbered completion. Coverage77/167, findings87.

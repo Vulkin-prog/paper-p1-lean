@@ -1302,3 +1302,9 @@ public import PaperP1.Probability.QuadraticReferenceDistance
 public import PaperP1.Asymptotics.AdjacentReferencePhase
 
 public import PaperP1.Asymptotics.AdjacentHermiteReferencePhase
+
+public import PaperP1.Probability.HereditaryActiveMaximum
+
+public import PaperP1.Model.MaximumDirectActive
+
+public import PaperP1.Model.DirectActiveEnvelope
