@@ -5224,7 +5224,7 @@
         "statement_sha256": "521b1c0fcc0f0550cab1e1f1acd43d5dda7a513d48442ad936de4c46fb711071"
       },
       "original_assumption": "The fixed-plane, fixed-motif proof of T20.6 selects k+2 transverse square products and invokes a uniform Pila curve estimate after fixing one center.",
-      "finding": "Three disjoint transverse motifs suffice for the fixed-plane count. Root separation removes at most two coordinates, leaving one split square equation. An exact positive-slope integer scaling and the internal moving-root/Pell count give N^epsilon points in each fixed-center fibre and N^(1+epsilon) hosts for a fixed oriented plane and fixed motifs. No Pila premise is needed for this fixed-motif estimate.",
+      "finding": "The complete T20.6 follows from three disjoint bounded transverse products, an internal moving-root/Pell fibre count, exact general-plane orientation, and subpower enumeration of actual small-prime support codes and offsets. The full host count is N^(1+epsilon), and the original affine mass is N^(-1+epsilon) even before primitive filtering. No Pila or BCN premise is needed.",
       "evidence": [
         "PaperP1.PositiveLineSplitProducts.left_injective",
         "PaperP1.PositiveLineSplitProducts.right_injective",
@@ -5250,16 +5250,72 @@
         "PaperP1.FixedPlaneSplitCount.offset_bounds",
         "PaperP1.FixedPlaneSplitCount.scaled_offset_bounds",
         "PaperP1.FixedPlaneSplitCount.pairFibre_card",
-        "PaperP1.FixedPlaneSplitCount.uniform_count"
+        "PaperP1.FixedPlaneSplitCount.uniform_count",
+        "PaperP1.MixedPlaneNormal.nonnegative_dot_lower",
+        "PaperP1.MixedPlaneNormal.opposite_signs",
+        "PaperP1.MixedPlaneNormal.exists_perm_pair",
+        "PaperP1.MixedPlaneNormal.positive_permutation",
+        "PaperP1.MixedPlaneNormal.dot_permutation",
+        "PaperP1.TransverseMotifs.mem_offsets",
+        "PaperP1.TransverseMotifs.slice_image",
+        "PaperP1.TransverseMotifs.slice_card",
+        "PaperP1.TransverseMotifs.slice_product",
+        "PaperP1.TransverseMotifs.product_decomposition",
+        "PaperP1.TransverseMotifs.card_decomposition",
+        "PaperP1.TransverseMotifs.first_two_card_le",
+        "PaperP1.TransverseMotifs.offsets_pairwise_disjoint",
+        "PaperP1.TransverseMotifs.mem_pool",
+        "PaperP1.TransverseMotifs.card_pool",
+        "PaperP1.SmoothMotifCodes.product_pos",
+        "PaperP1.SmoothMotifCodes.product_cast",
+        "PaperP1.SmoothMotifCodes.coefficient_pos",
+        "PaperP1.SmoothMotifCodes.code_mem_pool",
+        "PaperP1.SmoothMotifCodes.pool_coefficient_pos",
+        "PaperP1.SmoothMotifCodes.square_prescription",
+        "PaperP1.SmoothMotifReindex.vertex_map_injective",
+        "PaperP1.SmoothMotifReindex.reindex_card",
+        "PaperP1.SmoothMotifReindex.offsets_reindex",
+        "PaperP1.SmoothMotifReindex.transverse_reindex",
+        "PaperP1.SmoothMotifReindex.pairwise_disjoint_reindex",
+        "PaperP1.SmoothMotifReindex.natural_product_reindex",
+        "PaperP1.SmoothMotifReindex.code_reindex",
+        "PaperP1.SmoothMotifReindex.square_outside_reindex",
+        "PaperP1.SmoothMotifReindex.centres_injective",
+        "PaperP1.TransverseMotifSelection.total_size",
+        "PaperP1.TransverseMotifSelection.small_population",
+        "PaperP1.TransverseMotifSelection.select_three",
+        "PaperP1.CriticalMotifBudget.motif_card",
+        "PaperP1.CriticalMotifBudget.code_card",
+        "PaperP1.CriticalMotifBudget.motif_polynomial_bound",
+        "PaperP1.CriticalMotifBudget.uniform_motifs",
+        "PaperP1.CriticalMotifBudget.uniform_codes",
+        "PaperP1.CriticalMotifBudget.parameter_budget",
+        "PaperP1.OrientedPlanarMotifCount.uniform_count",
+        "PaperP1.GeneralPlanarMotifCount.uniform_count",
+        "PaperP1.ManyPlanarSquareProducts.primitive_mass_le",
+        "PaperP1.ManyPlanarSquareProducts.mass_le",
+        "PaperP1.ManyPlanarSquareProducts.uniform_natural",
+        "PaperP1.ManyPlanarSquareProducts.companion_T20_6",
+        "PaperP1.ManyPlanarSquareProducts.many_real_iff",
+        "PaperP1.ManyPlanarSquareProducts.hosts_data",
+        "PaperP1.ManyPlanarSquareProducts.source_population"
       ],
-      "proposed_revision": "Replace the per-fixed-motif Pila argument in T20.6 by the three-product root-discard and positive quadratic fibre argument. Keep the general-plane orientation, motif enumeration, and bounded-component selection explicit before claiming the full proposition.",
-      "impact": "Reduces the number of selected equations and removes the external algebraic-curve count from the fixed-motif step. The full aggregate planar proposition and the dense weighted sector are not completed by this checkpoint.",
-      "validation": "Verified under Lean v4.36.0-rc2: full lake build (11073 jobs), source and ledger checks, actual axiom audit of 7125 declarations (only propext, Classical.choice and Quot.sound), and 4842 direct ledger/evidence declaration checks; Ubuntu root free space 14.97 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "proposed_revision": "Replace the Pila argument and k+2 selected products in T20.6 by three bounded disjoint motifs, positive-slope integer scaling and the internal quadratic count. Include the exact small-prime code budget, orientation of mixed-sign plane normals, and the stronger total affine mass conclusion.",
+      "impact": "Completes the source planar proposition unconditionally, removes its external curve-count input and coefficient-height requirement in the arithmetic step, and extends the mass bound to all qualifying regular/direct triples.",
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11091 jobs), actual axiom audit of all 7173 theorem/lemma declarations, direct Lean checks of all 4890 ledger/finding references, source integrity (138 manifest entries and 167 numbered statements), and git diff --check. Only propext, Classical.choice and Quot.sound occur; no sorry, admit, native_decide, or new axiom was added. Ubuntu root space after verification: 14.94 GiB.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "feefe733760d84967aede93a4dc2589abf4cfa9b"
+      "validation_history": [
+        {
+          "finding": "Three disjoint transverse motifs suffice for the fixed-plane count. Root separation removes at most two coordinates, leaving one split square equation. An exact positive-slope integer scaling and the internal moving-root/Pell count give N^epsilon points in each fixed-center fibre and N^(1+epsilon) hosts for a fixed oriented plane and fixed motifs. No Pila premise is needed for this fixed-motif estimate.",
+          "impact": "Reduces the number of selected equations and removes the external algebraic-curve count from the fixed-motif step. The full aggregate planar proposition and the dense weighted sector are not completed by this checkpoint.",
+          "proposed_revision": "Replace the per-fixed-motif Pila argument in T20.6 by the three-product root-discard and positive quadratic fibre argument. Keep the general-plane orientation, motif enumeration, and bounded-component selection explicit before claiming the full proposition.",
+          "validation": "Verified under Lean v4.36.0-rc2: full lake build (11073 jobs), source and ledger checks, actual axiom audit of 7125 declarations (only propext, Classical.choice and Quot.sound), and 4842 direct ledger/evidence declaration checks; Ubuntu root free space 14.97 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+          "validation_commit": "feefe733760d84967aede93a4dc2589abf4cfa9b"
+        }
+      ]
     }
   ]
 }

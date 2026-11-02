@@ -1555,3 +1555,12 @@ public import PaperP1.Arithmetic.PositiveLineOffsetRoots
 public import PaperP1.Asymptotics.PositiveLineSplitCount
 public import PaperP1.Asymptotics.ThreeLineSplitCount
 public import PaperP1.Asymptotics.FixedPlaneSplitCount
+public import PaperP1.Algebra.MixedPlaneNormal
+public import PaperP1.Arithmetic.TransverseMotifs
+public import PaperP1.Arithmetic.SmoothMotifCodes
+public import PaperP1.Arithmetic.SmoothMotifReindex
+public import PaperP1.Combinatorics.TransverseMotifSelection
+public import PaperP1.Asymptotics.CriticalMotifBudget
+public import PaperP1.Asymptotics.OrientedPlanarMotifCount
+public import PaperP1.Asymptotics.GeneralPlanarMotifCount
+public import PaperP1.Asymptotics.ManyPlanarSquareProducts
