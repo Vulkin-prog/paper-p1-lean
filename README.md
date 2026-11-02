@@ -5,10 +5,10 @@ correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
 **Status: active formalization, 71 / 167 numbered results proved.**
-Colored replica conditional sums and the exact finite replica identity
-are proved. A stronger pointwise homogeneous domination simplifies the
-conditional argument; T22.7 remains in progress for its full moment
-statement and conditional-expectation alignment. See
+The replica formula is proved for actual infinite conditional expectations
+and exact heterogeneous marginals. Colored extension propagation retains
+arbitrary nonnegative seed weights. T22.7 remains in progress for its final
+positive random-sum moment assembly. See
 [the current replica scope](docs/COLORED_REPLICAS_ALIGNMENT.md).
 Main Proposition 6.3 is complete: actual conditional affine sums,
 ordered-distinct extension-family propagation, and the full fixed-order

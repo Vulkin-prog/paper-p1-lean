@@ -1835,3 +1835,24 @@ actual replica-product identity and its nominal-row compatibility/kernel
 formula. The small-prime conditional-expectation interpretation,
 effective relative-kernel alignment and full weighted moment assertion
 remain open. No new external theorem or Paper C source is introduced.
+
+
+## Actual infinite replica formula and weighted colored extensions
+
+Stable ID: `P1-PROB-INFINITE-REPLICA-FORMULA`. Status: **proved**,
+the complete formula component and actual weighted colored extension
+propagation in T22.7.
+
+Finite coordinate splitting and the set-integral characterization of
+Mathlib conditional expectation prove the conditional interpretation.
+The uniform observation law is instantiated by proved infinite-cylinder
+transport. The observed small-prime sigma algebra is identified exactly
+and proved independent of the larger cutoff. Effective-family Fourier
+counts give the exact heterogeneous-marginal relative-kernel formula;
+local full rank supplies the printed regular specialization. Actual
+colored tuple probabilities have the exact conditional factorization
+even for zero-mass seeds. Finite iteration retains arbitrary nonnegative
+seed weights and bounds every actual extension subfamily, uniformly in
+Y and the coloring. Adding unused colors preserves the actual joint
+seed mass. The final positive moment expansion remains open. No external
+estimate or new Paper C source is introduced.

@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5007 audited theorem/lemma declarations**. This
+- The project currently has **5052 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2387,3 +2387,21 @@ independent findings are now 70, including P1-MATH-0070. See
 [colored replica alignment](COLORED_REPLICAS_ALIGNMENT.md).
 
 Colored replica checkpoint verification: Lean v4.36.0-rc2 full build passed (10061 jobs); actual axiom audit passed for all 5007 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2722 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.48 GiB. Actual finite replica products, the nominal-row compatibility/kernel formula and the full finite colored conditional target sum are proved. The stronger pointwise homogeneous comparison is P1-MATH-0070. T22.7 stays in progress for conditional-expectation interpretation, effective relative-kernel alignment and the positive weighted moment bound. Coverage remains 71/167 (main 25/73, companion 46/94); confirmed independent findings are 70. No conditional-sum, independence or merging premise, external assumption, new Paper C port, manuscript-byte change or Palomar registration.
+
+
+## Infinite replica formula and weighted colored propagation
+
+The exact replica formula is now proved for actual infinite-measure
+conditional expectations given the small-prime sigma algebra. The
+cutoff independence of that sigma algebra is proved. Exact heterogeneous
+uncolored marginals and the effective relative kernel are retained;
+the printed p^r version follows from regularity. Actual fixed-order
+colored tuple masses propagate with any nonnegative seed weight retained
+exactly, including all extension subfamilies and repeated centers.
+
+T22.7 remains in progress for its final positive random-sum moment
+expansion and logarithmic-weight absorption. Coverage stays 71/167
+and confirmed findings stay 70; no additional independent finding is
+counted for this proof progression. See [alignment](COLORED_REPLICAS_ALIGNMENT.md).
+
+Infinite replica and weighted propagation verification: Lean v4.36.0-rc2 full build passed (10087 jobs); actual axiom audit passed for all 5052 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2767 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.45 GiB. The replica formula uses actual infinite-measure conditional expectations and the exact small-prime sigma algebra; exact heterogeneous uncolored marginals and the effective relative kernel are proved, with the regular p^r specialization. Actual colored extension propagation retains arbitrary nonnegative seed weights and all extension subfamilies. The positive random-sum moment assembly remains open; T22.7 stays in progress. Coverage remains 71/167 (main 25/73, companion 46/94); confirmed findings remain 70. No conditional-expectation, uniform-law, weighted propagation or seed-mass premise remains uninstantiated; no new external assumption, Paper C port, manuscript-byte change or Palomar registration.

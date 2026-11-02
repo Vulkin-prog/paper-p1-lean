@@ -3069,3 +3069,13 @@ zero merged affine atom is claimed. Finite replica identities are also
 proved, but the remaining T22.7 assertions keep the numbered result in
 progress. Coverage remains 71/167 and confirmed findings are now 70.
 See [precise scope](COLORED_REPLICAS_ALIGNMENT.md).
+
+
+T22.7 formula/propagation checkpoint: the actual infinite conditional
+expectation, small-prime sigma algebra, exact heterogeneous marginal
+formula, effective relative kernel and its regular p^r specialization
+are proved. Colored tuple propagation retains every nonnegative seed
+weight exactly and includes all repeated-center extension subfamilies.
+No new independent improvement is counted beyond P1-MATH-0070; the
+positive random-sum moment assembly remains open. Coverage stays 71/167
+and confirmed findings stay 70. See [alignment](COLORED_REPLICAS_ALIGNMENT.md).

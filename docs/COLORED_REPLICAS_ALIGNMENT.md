@@ -27,10 +27,12 @@ weights, not an abstract independence premise.
 `exact_nominal_formula` gives the exact right side with denominator
 2^(rL), compatibility indicator, and 2 to the dimension of the full
 nominal-row relation kernel. Every local row relation is included.
-The identification of this kernel with the source effective relative
-kernel in its regular-window convention is still an alignment task.
-No nominal marginal is silently substituted for an irregular window's
-actual marginal.
+`ColoredRelativeFormula.exact_relative_formula` separately proves the
+effective relative-kernel version with the exact heterogeneous original
+uncolored marginal of each occurrence. Surjectivity of `select`, proved
+from its diagonal right inverse, preserves every local affine law.
+`regular_formula` gives the printed p^r specialization from local full
+rank. No nominal marginal is silently substituted at an irregular window.
 
 ## Complete finite colored conditional target sum
 
@@ -67,19 +69,55 @@ The common small signs are still averaged in these probabilities.
 There is no assertion of a bound for every fixed realization of the
 common signs, which would be a different statement.
 
-## Remaining obligations
+## Actual small-prime conditional expectations and the infinite formula
 
-- Identify the fixed-common-sign block average with the conditional
-  probability given the actual small-prime sigma algebra, including the
-  infinite prime-sign interpretation.
-- Align the effective relative kernel and exact heterogeneous local
-  rates with the nominal-row version, then recover the printed p^r
-  specialization in its regular-window scope.
-- Prove the full positive weighted random-sum moment estimate from
-  actual replica expansions and iterated colored conditional sums,
-  including repeated centers, arbitrary ordered-tuple subfamilies and
-  deterministic weights bounded by a fixed logarithmic power.
+`UniformFubini.condition_first` and `CoordinateConditioning` identify
+fixing finite coordinates with the actual ratio of event probabilities
+and private-coordinate averaging. `FiniteObservationConditional` proves
+the ordinary measure-theoretic conditional-expectation identification
+from the uniform joint observation law, using its defining set-integral
+property. This input law is instantiated by the already proved exact
+infinite-to-finite cylinder transport.
 
-These are separate mathematical tasks. The finite replica formula and
-conditional sum alone do not complete T22.7 or main 6.4. No new unproved
-literature assumption, axiom, Paper C port or Palomar submission is used.
+`SmallPrimeConditioning.block_condExp` identifies each private-sample
+block average with the actual infinite-model conditional expectation.
+`SmallPrimeFiltration.filtration_eq` proves that observing the small
+coordinates in a cylinder M gives precisely the sigma algebra generated
+by the prime signs up to Y whenever Y <= M. The observed sigma algebra
+is therefore independent of the larger cutoff; no abstract conditional
+probability interpretation is assumed.
+
+`InfiniteReplicaFormula.exact_relative_formula` proves the full actual
+infinite-measure replica identity with exact heterogeneous marginals,
+affine compatibility and the effective relative kernel. Its regular
+specialization is the printed p^r identity. Repeated centers remain
+separate formal occurrence coordinates. The index of colors can be the
+actual partition parts, and unused colors are permitted.
+
+## Actual weighted colored extension propagation
+
+`ColoredTupleMass` defines actual colored tuple event probabilities.
+Appending an occurrence has an exact conditional factorization, including
+zero-probability seeds. Colors and prescribed words can depend on the
+occurrence position; words may also depend on the center.
+
+`ColoredMassStep` gives a single threshold before every bounded source
+order, color type, coloring, Y, cutoff and prescription.
+`ColoredWeightedIteration` keeps an arbitrary nonnegative weight of the
+initial seed exactly through finite iteration. The weight need not be
+bounded. `ColoredMassPropagation.weighted_extensions` and
+`weighted_subfamilies` prove an arbitrary subpower propagation factor
+for literal finite extension populations and every subfamily. Repeated
+centers are retained. `ReplicaColorEmbedding.joint_mass_eq` proves that
+adding unused independent colors leaves the actual seed probability
+unchanged.
+
+## Remaining obligation
+
+The full positive weighted random-sum moment assertion still requires
+its actual replica expansion, ordered-occurrence reindexing and final
+logarithmic-weight absorption. The exact replica identity and weighted
+extension propagation are now proved, but this last assembly has not
+yet been checked. T22.7 remains in progress and main 6.4 remains open.
+No new unproved literature assumption, axiom, Paper C port or Palomar
+submission is used.
