@@ -1592,3 +1592,11 @@ public import PaperP1.Model.RationalTriplePrivateRank
 public import PaperP1.Asymptotics.BinaryRankPowers
 public import PaperP1.Asymptotics.RationalTriplePrivateProbability
 public import PaperP1.Asymptotics.RationalTriplePrivateMass
+public import PaperP1.Algebra.FinitePiExtension
+public import PaperP1.Arithmetic.EvenIndependentValues
+public import PaperP1.Model.EvenValuePrescriptions
+public import PaperP1.Model.EvenNormalizedFamilies
+public import PaperP1.Model.NormalizedFamilyDilation
+public import PaperP1.Model.RationalTripleEvenRank
+public import PaperP1.Asymptotics.RationalTripleEvenProbability
+public import PaperP1.Asymptotics.RationalTripleEvenMass
