@@ -1484,3 +1484,9 @@ public import PaperP1.Model.ContactCenteredTruncation
 public import PaperP1.Asymptotics.ContactSeedKernel
 
 public import PaperP1.Asymptotics.FixedContactCenteredActivity
+public import PaperP1.Arithmetic.FixedChannelLinearCount
+public import PaperP1.Model.PrivateChannelActivity
+public import PaperP1.Model.PrivateChannelRank
+public import PaperP1.Model.CompatibleChannelEdges
+public import PaperP1.Asymptotics.PrivateChannelActivityRate
+public import PaperP1.Asymptotics.FiniteChannelActivity

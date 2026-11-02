@@ -1864,6 +1864,8 @@ import PaperP1
 #print axioms PaperP1.FixedChannelGamma.gammaReal_two_three
 #print axioms PaperP1.FixedChannelGamma.gammaReal_three_four
 #print axioms PaperP1.FixedChannelGamma.gammaReal_eight_nine
+#print axioms PaperP1.FixedChannelLinearCount.unit_alignment
+#print axioms PaperP1.FixedChannelLinearCount.unit_sources_card_linear
 #print axioms PaperP1.FixedChannelMatches.large_numerator_density_lt_base
 #print axioms PaperP1.FixedChannelMatches.density_le_gamma_all
 #print axioms PaperP1.FixedChannelMatches.window_match_gamma
@@ -3503,6 +3505,7 @@ import PaperP1
 #print axioms PaperP1.ExposureAssignmentBudget.uniform_fresh_assignment_budget
 #print axioms PaperP1.FactorialLogBounds.log_factorial_bounds
 #print axioms PaperP1.FactorialLogBounds.log_factorial_error
+#print axioms PaperP1.FiniteChannelActivity.uniform_activity
 #print axioms PaperP1.FiniteChannelHierarchyBounds.upperConstant_pos
 #print axioms PaperP1.FiniteChannelHierarchyBounds.coefficient_eq_main_terms
 #print axioms PaperP1.FiniteChannelHierarchyBounds.uniform_bounds
@@ -3923,6 +3926,10 @@ import PaperP1
 #print axioms PaperP1.PrimitiveGeneralMass.from_four
 #print axioms PaperP1.PrimitiveGeneralMass.main_15_5_from_five
 #print axioms PaperP1.PrimitiveNominalCountMass.uniform_mass
+#print axioms PaperP1.PrivateChannelActivityRate.uniform_independent_mass
+#print axioms PaperP1.PrivateChannelActivityRate.uniform_coefficient
+#print axioms PaperP1.PrivateChannelActivityRate.uniform_absolute_comparison
+#print axioms PaperP1.PrivateChannelActivityRate.uniform_activity
 #print axioms PaperP1.PrivateChannelMassPhase.phase_bounds
 #print axioms PaperP1.PrivateChannelMassPhase.positive_phase
 #print axioms PaperP1.PrivateChannelMassRate.massConstant_pos
@@ -5047,6 +5054,11 @@ import PaperP1
 #print axioms PaperP1.CompatibleActivitySplit.absolute_minus_positive
 #print axioms PaperP1.CompatibleActivitySplit.absolute_minus_positive_nonneg
 #print axioms PaperP1.CompatibleActivitySplit.signed_error
+#print axioms PaperP1.CompatibleChannelEdges.card_bound
+#print axioms PaperP1.CompatibleChannelEdges.edge_data
+#print axioms PaperP1.CompatibleChannelEdges.joint_mass_eq
+#print axioms PaperP1.CompatibleChannelEdges.absolute_eq
+#print axioms PaperP1.CompatibleChannelEdges.absolute_comparison
 #print axioms PaperP1.Model.InfiniteStarts.runCompatibleNullity_eq_maximum
 #print axioms PaperP1.Model.InfiniteStarts.runCompatibleNullity_attained
 #print axioms PaperP1.Model.InfiniteStarts.runRelativeNullity_mono
@@ -5563,6 +5575,15 @@ import PaperP1
 #print axioms PaperP1.PrimitiveWindowMass.primitive_mass_le
 #print axioms PaperP1.PrimitiveWindowMass.joint_le_weight
 #print axioms PaperP1.PrimitiveWindowMass.centered_le_weight
+#print axioms PaperP1.PrivateChannelActivity.pair_map_injective
+#print axioms PaperP1.PrivateChannelActivity.pair_data
+#print axioms PaperP1.PrivateChannelActivity.card_bound
+#print axioms PaperP1.PrivateChannelActivity.card_bound_linear
+#print axioms PaperP1.PrivateChannelActivity.joint_mass_eq
+#print axioms PaperP1.PrivateChannelActivity.independent_mass_eq
+#print axioms PaperP1.PrivateChannelActivity.signed_eq
+#print axioms PaperP1.PrivateChannelActivity.absolute_comparison
+#print axioms PaperP1.PrivateChannelActivity.coefficient_bound
 #print axioms PaperP1.PrivateChannelHostSupport.loss_positive_of_two_units
 #print axioms PaperP1.PrivateChannelHostSupport.good_sources_subset_hosts
 #print axioms PaperP1.PrivateChannelHostSupport.channel_sources_subset_hosts
@@ -5570,6 +5591,11 @@ import PaperP1
 #print axioms PaperP1.PrivateChannelMassBound.mass_exact_decomposition
 #print axioms PaperP1.PrivateChannelMassBound.three_term_bound
 #print axioms PaperP1.PrivateChannelMassBound.finite_mass_error
+#print axioms PaperP1.PrivateChannelRank.source_nullity_eq
+#print axioms PaperP1.PrivateChannelRank.nullity_positive
+#print axioms PaperP1.PrivateChannelRank.nullity_bound
+#print axioms PaperP1.PrivateChannelRank.regular
+#print axioms PaperP1.PrivateChannelRank.joint_bound
 #print axioms PaperP1.PrivateChannelRemoval.signed_sum_partition
 #print axioms PaperP1.PrivateChannelRemoval.bad_signed_sum_bound
 #print axioms PaperP1.PrivateChannelSources.mem_goodSources
