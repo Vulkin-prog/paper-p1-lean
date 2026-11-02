@@ -6173,7 +6173,10 @@
       ],
       "notes": "The exact replica formula now uses actual infinite-measure conditional expectations given the small-prime sigma algebra. Its cutoff independence is proved. Exact heterogeneous uncolored marginals and the effective relative relation kernel are retained; the printed p^r version is proved under local full rank. The complete uniform finite colored conditional target sum is proved. Actual fixed-order colored extension masses are propagated with arbitrary nonnegative seed weights retained exactly. Adding unused independent colors preserves actual joint masses. The full positive weighted random-sum moment expansion and final logarithmic-weight absorption remain open; T22.7 is not counted complete. See COLORED_REPLICAS_ALIGNMENT.md.",
       "validation": "Lean v4.36.0-rc2 full build passed (10087 jobs); actual axiom audit passed for all 5052 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2767 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.45 GiB. The replica formula uses actual infinite-measure conditional expectations and the exact small-prime sigma algebra; exact heterogeneous uncolored marginals and the effective relative kernel are proved, with the regular p^r specialization. Actual colored extension propagation retains arbitrary nonnegative seed weights and all extension subfamilies. The positive random-sum moment assembly remains open; T22.7 stays in progress. Coverage remains 71/167 (main 25/73, companion 46/94); confirmed findings remain 70. No conditional-expectation, uniform-law, weighted propagation or seed-mass premise remains uninstantiated; no new external assumption, Paper C port, manuscript-byte change or Palomar registration.",
-      "validation_commit": "d53d34382231f689dc36f83d28511437c6696710"
+      "validation_commit": "4fdd8dcab8797cb8527681bd81182c2f3d676e66",
+      "validation_history": [
+        "d53d34382231f689dc36f83d28511437c6696710"
+      ]
     },
     {
       "label": "p1:obstruction:fixed",
