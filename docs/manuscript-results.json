@@ -7223,7 +7223,8 @@
           "validation": "Lean v4.36.0-rc2 full build passed (10755 jobs); actual axiom audit passed for all 6534 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4251 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.56 GiB. The maximum actual direct active subfamily is constructed, attained and bounded by the original regular count. Every real observable is integrable and transported exactly to a concrete finite cylinder. Actual direct regular-window joint equalities prove binomial/Poisson choose/factorial bounds, actual tail probabilities and binomial/exponential moment bounds at every order, for every N>=2,L>0. The shifted maximum has all source envelope inequalities, retaining the falling-factorial repeated-index term. No fixed-order theorem is used at growing order and no BCN or numerical probability estimate is assumed. The specified modified original count, structural domination and exceptional-event/coupling estimate remain open; T19.3 is in progress. Coverage77/167 (main28/73, companion49/94), confirmed findings87 unchanged. No new mathematical finding, external input, PaperC port, dependency download, manuscript-byte change or Palomar registration.",
           "validation_commit": "8403a86f4ea1894aac80b818d90e430241d610e1"
         }
-      ]
+      ],
+      "validation_commit": "872c44ac7c022613bedcce3f8481d2fc87d308a0"
     },
     {
       "label": "p1:limits:branching",
