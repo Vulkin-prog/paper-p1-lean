@@ -115,6 +115,39 @@ construction. The required cancellation statement for the DIVIDED
 numerator is a separate remaining obligation, not a consequence silently
 assumed from polynomial divisibility.
 
+## Exact reciprocal order and coefficient-level division
+
+`IteratedPowerSeriesEquiv` is a minimal selected adaptation of the
+option-variable correspondence from Mathlib commit
+`9d581dfff2e41de989072ea63abf3daf69311520`, source
+`Mathlib/RingTheory/MvPowerSeries/Equiv.lean`, blob
+`29a3a9340ea5d982e0c9af5f3444a9d25c463ca6` (Apache-2.0, Bingyu Xia
+and Wenrong Zou). The four adapted proof declarations are part of
+the project kernel audit. The selected correspondence keeps the
+dependency budget focused on formal series.
+
+`BivariateSeriesOrder` identifies every actual nested coefficient with
+a coefficient of a two-variable multivariate series. Total order is
+therefore multiplicative by the pinned Mathlib domain theorem.
+A proved coefficient-level division theorem says: if D has finite
+order delta and D*g has every coefficient of total degree <n zero,
+then g has every coefficient of total degree <n-delta zero.
+
+`BivariateTotalDegree` defines the ordinary total degree of a nested
+integer polynomial and proves a nonzero coefficient attains it,
+with total degree at most the sum of the partial degrees.
+`BivariateReciprocalSeries` constructs the finite reversed coefficient
+series explicitly, recovers every rectangular coefficient exactly,
+and proves for nonzero P with partial degrees at most a,b:
+
+    order(reciprocal(P,a,b)) =a+b-totalDegree(P).
+
+Thus the exact order of the actual reciprocal common factor is proved.
+The product identity identifying the constructed old numerator with
+this factor times the new numerator is still required to instantiate
+the generic division theorem in the source construction. That identity
+is not inserted as an assumption to claim T9.5 complete.
+
 ## Remaining obligations
 
 Preservation of the required formal vanishing order after the proved

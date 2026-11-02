@@ -901,3 +901,8 @@ public import PaperP1.Arithmetic.BiquadraticAuxiliaryConstruction
 public import PaperP1.Algebra.PrimitiveCoefficientFamily
 public import PaperP1.Algebra.BivariateDivisionBounds
 public import PaperP1.Arithmetic.BiquadraticPrimitiveCoefficients
+
+public import PaperP1.Algebra.IteratedPowerSeriesEquiv
+public import PaperP1.Algebra.BivariateSeriesOrder
+public import PaperP1.Algebra.BivariateTotalDegree
+public import PaperP1.Algebra.BivariateReciprocalSeries

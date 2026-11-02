@@ -3208,3 +3208,12 @@ is at most (B+1)^(275q). This uses the complete audited T9.4 bound.
 Preservation of the divided numerator vanishing order remains open,
 as do the integer gap and nonzero norm. No new independent finding
 or completed numbered result is counted.
+
+
+Reciprocal-order checkpoint: every coefficient of the actual reversed
+polynomial is identified and its total formal order is exactly the
+pole weight minus the total degree. The multiplicative order law and
+coefficient-level quotient vanishing theorem are proved. The actual
+source numerator/common-factor product identity is still required for
+the final primitive-order conclusion. No new independent improvement
+or completed numbered result is counted.

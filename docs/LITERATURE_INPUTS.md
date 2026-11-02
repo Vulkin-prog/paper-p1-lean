@@ -2027,3 +2027,22 @@ preservation of the required divided-numerator order is still open.
 No value at a point is divided by an unverified nonzero number. No
 external gcd or factor-height assumption, new Paper C source or
 Palomar registration is introduced.
+
+
+## Exact bivariate reciprocal order
+
+Stable ID: `P1-ALG-BIVARIATE-RECIPROCAL-ORDER`. Status: **proved**,
+formal-order components of companion T9.5.
+
+The option-variable correspondence is selected from pinned Mathlib
+commit 9d581dfff2e41de989072ea63abf3daf69311520, source
+Mathlib/RingTheory/MvPowerSeries/Equiv.lean, blob
+29a3a9340ea5d982e0c9af5f3444a9d25c463ca6. Apache-2.0 attribution
+to Bingyu Xia and Wenrong Zou is preserved in the adapted module.
+All four adapted proofs are audited. Mathlib's multivariate domain
+order theorem gives multiplicativity of the actual nested series order.
+An explicit finite reciprocal polynomial has exact order a+b-totalDegree.
+The coefficient-level quotient vanishing rule is proved, but its actual
+source numerator/common-factor product identity remains open.
+No divided-numerator conclusion or final norm estimate is assumed.
+No new Paper C source or Palomar registration is introduced.

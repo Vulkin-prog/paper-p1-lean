@@ -4792,18 +4792,44 @@
         "PaperP1.BivariateDivisionBounds.quotient_height",
         "PaperP1.BivariateDivisionBounds.linear_dimension_power",
         "PaperP1.BivariateDivisionBounds.quotient_height_power",
-        "PaperP1.BiquadraticPrimitiveCoefficients.exists_primitive_coefficients"
+        "PaperP1.BiquadraticPrimitiveCoefficients.exists_primitive_coefficients",
+        "PaperP1.IteratedPowerSeriesEquiv.coefficient_toIterated",
+        "PaperP1.IteratedPowerSeriesEquiv.toIterated_monomial",
+        "PaperP1.IteratedPowerSeriesEquiv.toIterated_mul",
+        "PaperP1.IteratedPowerSeriesEquiv.coefficient_fromIterated",
+        "PaperP1.BivariateSeriesOrder.exponent_inner",
+        "PaperP1.BivariateSeriesOrder.exponent_outer",
+        "PaperP1.BivariateSeriesOrder.exponent_degree",
+        "PaperP1.BivariateSeriesOrder.coefficient_toMultivariate",
+        "PaperP1.BivariateSeriesOrder.coefficient_order_le",
+        "PaperP1.BivariateSeriesOrder.nat_le_totalOrder",
+        "PaperP1.BivariateSeriesOrder.coefficient_zero_of_lt",
+        "PaperP1.BivariateSeriesOrder.totalOrder_mul",
+        "PaperP1.BivariateSeriesOrder.quotient_vanishing",
+        "PaperP1.BivariateTotalDegree.coefficient_degree_le",
+        "PaperP1.BivariateTotalDegree.exists_coefficient_degree",
+        "PaperP1.BivariateTotalDegree.totalDegree_le_partial",
+        "PaperP1.BivariateTotalDegree.totalDegree_zero",
+        "PaperP1.BivariateReciprocalSeries.reversedExponent_injective",
+        "PaperP1.BivariateReciprocalSeries.coefficient_reciprocalMulti",
+        "PaperP1.BivariateReciprocalSeries.reciprocal_order_lower",
+        "PaperP1.BivariateReciprocalSeries.reciprocal_order",
+        "PaperP1.BivariateReciprocalSeries.toMultivariate_reciprocal",
+        "PaperP1.BivariateReciprocalSeries.totalOrder_reciprocal",
+        "PaperP1.BivariateReciprocalSeries.coefficient_reciprocal",
+        "PaperP1.BivariateReciprocalSeries.reciprocal_zero"
       ],
       "literature_inputs": [
         "P1-ALG-TWO-WITNESS-AUXILIARY-BUDGET",
         "P1-ALG-TWO-WITNESS-RUNGE-CONSTRUCTION",
-        "P1-ALG-TWO-WITNESS-PRIMITIVE-COEFFICIENTS"
+        "P1-ALG-TWO-WITNESS-PRIMITIVE-COEFFICIENTS",
+        "P1-ALG-BIVARIATE-RECIPROCAL-ORDER"
       ],
       "mathematical_changes": [
         "P1-MATH-0074"
       ],
-      "notes": "The actual finite Runge matrix, common denominator 4^(6q), entry height (B+1)^(28q), nonzero integer coefficient array and four coefficient polynomials of height (B+1)^(266q) are constructed. The actual formal numerator cancels through total degree 6q. A nonzero common integer polynomial factor is now extracted; every common divisor of the quotient family is a unit. At least one quotient polynomial is nonzero. Their partial degrees decrease by the actual degrees of the common factor and their heights are bounded by (B+1)^(275q), using the complete T9.4 factor-height theorem. The original numerator cancellation is retained. Preservation of the required vanishing order for the divided numerator, integer separation, function independence and the final nonzero norm remain open. This does not complete T9.5. See TWO_WITNESS_ALIGNMENT.md.",
-      "validation": "Lean v4.36.0-rc2 full build passed (10209 jobs); actual axiom audit passed for all 5280 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2995 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.28 GiB. The actual auxiliary coefficient family has a nonzero common integer polynomial factor and a quotient family with no common nonunit divisor. At least one quotient is nonzero. Its exact reduced partial degree bounds and explicit height (B+1)^(275q) follow from the complete T9.4. The original formal numerator cancellation remains in the same construction; preservation of the divided-numerator order, integer gap, function independence and nonzero norm are still open. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 74. No new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.",
+      "notes": "The actual finite Runge matrix, common denominator 4^(6q), entry height (B+1)^(28q), nonzero integer coefficient array and four coefficient polynomials of height (B+1)^(266q) are constructed. The actual formal numerator cancels through total degree 6q. A nonzero common integer polynomial factor is now extracted; every common divisor of the quotient family is a unit. At least one quotient polynomial is nonzero. Their partial degrees decrease by the actual degrees of the common factor and their heights are bounded by (B+1)^(275q), using the complete T9.4 factor-height theorem. The original numerator cancellation is retained. Preservation of the required vanishing order for the divided numerator, integer separation, function independence and the final nonzero norm remain open. This does not complete T9.5. See TWO_WITNESS_ALIGNMENT.md. The actual nested bivariate series now have their exact total order and multiplicative order law. The finite reciprocal polynomial has exact order a+b-totalDegree(P) for every nonzero bounded-degree P. A generic coefficient-level division theorem is proved from that exact order. Its source instantiation still needs the actual numerator/common-factor product identity; no divided-numerator order conclusion is assumed from the generic interface.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10229 jobs); actual axiom audit passed for all 5305 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3020 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.26 GiB. The actual bivariate reciprocal polynomial has exact order equal to its pole weight minus its total degree. The order multiplication law and coefficient-level quotient vanishing theorem are proved. Instantiating division still requires the actual numerator/common-factor product identity. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 74. No new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.",
       "validation_commit": "9e12b4c1fceb4b6b117ca8981ab98df31b80469d",
       "validation_history": [
         "1a6c2cb25140aff00068aa7fc35dc07227e58a08",

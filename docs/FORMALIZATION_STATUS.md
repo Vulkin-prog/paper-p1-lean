@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **5280 audited theorem/lemma declarations**. This
+- The project currently has **5305 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -2478,3 +2478,6 @@ Actual Runge auxiliary checkpoint verification: Lean v4.36.0-rc2 full build pass
 
 
 Primitive auxiliary coefficients checkpoint verification: Lean v4.36.0-rc2 full build passed (10209 jobs); actual axiom audit passed for all 5280 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2995 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.28 GiB. The actual auxiliary coefficient family has a nonzero common integer polynomial factor and a quotient family with no common nonunit divisor. At least one quotient is nonzero. Its exact reduced partial degree bounds and explicit height (B+1)^(275q) follow from the complete T9.4. The original formal numerator cancellation remains in the same construction; preservation of the divided-numerator order, integer gap, function independence and nonzero norm are still open. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 74. No new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.
+
+
+Reciprocal series order checkpoint verification: Lean v4.36.0-rc2 full build passed (10229 jobs); actual axiom audit passed for all 5305 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 3020 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.26 GiB. The actual bivariate reciprocal polynomial has exact order equal to its pole weight minus its total degree. The order multiplication law and coefficient-level quotient vanishing theorem are proved. Instantiating division still requires the actual numerator/common-factor product identity. T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 74. No new external estimate, additional Paper C source, manuscript-byte change or Palomar registration.
