@@ -1434,3 +1434,9 @@ public import PaperP1.Model.FourthDirectPairSum
 public import PaperP1.Model.ConnectedFourthReduction
 
 public import PaperP1.Asymptotics.ConnectedFourthReductionUnderBCN
+
+public import PaperP1.Model.UnrestrictedRunComponents
+
+public import PaperP1.Model.DirectPairCostBound
+
+public import PaperP1.Asymptotics.CoarseConnectedFourthUnderBCN

@@ -267,3 +267,25 @@ No new external input, axiom, dependency download, source-byte change or
 Palomar registration is introduced.
 
 Verified Lean v4.36.0-rc2 full build (10881 jobs), actual Audit.lean kernel audit (6790 declarations; only propext, Classical.choice, Quot.sound), 4507 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.35 GiB. Cross-block nullity, direct-space equivalence, zero-marginal block factorization, canonical uniqueness and the complete actual disconnected quartic/direct-pair sum identity are unconditional for L>0. The actual connected fourth-cumulant comparison has a checked N^(-3/2+epsilon) remainder under existing explicit BCN, with 24 times the literal disjoint non-direct product cost retained. The sharp estimate of that cost and the incompatible connected quartic bound remain open. Main 16.1 stays in progress; coverage 77/167, improvements 89.
+
+
+## A complete comparison at the weaker N^-1 scale
+
+The literal remaining disjoint non-direct pair cost B admits the
+unconditional finite bound B <= A2^2/2. Under the existing ordinary explicit
+BCN premise, the proved global pair-activity estimate gives
+
+    B(G) <= N^(-1+epsilon),
+    |kappa4(G)-24*K4(G)| <= N^(-1+epsilon),
+
+eventually uniformly in all critical lengths and dyadic subgrounds. The
+second statement is a proved complete comparison with the actual connected
+quartic sum; it uses the already checked canonical population identity.
+This is weaker than the source 3/2 precision and is not counted as completing
+main 16.1. Its stronger source-scale reduction with the literal cost B remains
+available separately. The sharp disjoint non-direct cost and incompatible
+connected quartic bound remain open. Coverage stays 77/167 (main 28/73,
+companion 49/94), improvements stay 89. No new external input, axiom,
+dependency download, source-byte change or Palomar registration is introduced.
+
+Verified Lean v4.36.0-rc2 full build (10887 jobs), actual Audit.lean kernel audit (6797 declarations; only propext, Classical.choice, Quot.sound), 4514 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.34 GiB. The unique canonical original finite-set decomposition and all direct-partition joint/centered products include zero marginals and need no positivity premise. The literal non-direct pair cost is at most A2^2/2; the complete actual connected fourth-cumulant comparison at N^(-1+epsilon) uses the existing explicit BCN premise. The sharper source N^(-3/2+epsilon) comparison remains open. Main 4.4 stays proved; main 16.1 stays in progress. Coverage 77/167, improvements 89.

@@ -4638,3 +4638,44 @@ bound and the full source conclusions remain open. Main 16.1 remains
 in progress; coverage 77/167 (main 28/73, companion 49/94), improvements 89.
 No new external input, axiom, dependency download, source-byte change or
 Palomar registration is introduced.
+
+
+## Unrestricted actual component factorization
+
+Stable ID: `P1-PROB-UNRESTRICTED-RUN-COMPONENTS`. Status: **proved unconditionally for L>0, including zero marginals**.
+
+The actual finite-set version of main 4.4 is now checked without a
+positive-marginal/admissibility premise. For every finite original family I,
+L>0 and every actual relation-direct partition P, the original q(I), c(I)
+and relative nullity factor exactly over the original images of its parts.
+The same unique finest canonical partition satisfies the complete existing
+CanonicalRunPartitionConclusion, with no positive-marginal argument supplied
+by the caller. If a marginal vanishes, its unique containing part has zero
+joint and centered coefficients, and both full products vanish exactly.
+The positive case uses the already checked effective-space factorization.
+Empty families and all zero-mass cases are retained. This completes the
+unrestricted original-model statement directly rather than relying on a
+standing admissibility convention. Main 4.4 stays proved; no new numbered
+completion or manuscript correction is counted.
+
+
+## Coarse connected fourth-cumulant comparison
+
+Stable ID: `P1-PROB-COARSE-CONNECTED-FOURTH`. Status: **finite cost bound unconditional; N^-1 comparison under existing explicit BCN**.
+
+The literal remaining disjoint non-direct pair cost B admits the
+unconditional finite bound B <= A2^2/2. Under the existing ordinary explicit
+BCN premise, the proved global pair-activity estimate gives
+
+    B(G) <= N^(-1+epsilon),
+    |kappa4(G)-24*K4(G)| <= N^(-1+epsilon),
+
+eventually uniformly in all critical lengths and dyadic subgrounds. The
+second statement is a proved complete comparison with the actual connected
+quartic sum; it uses the already checked canonical population identity.
+This is weaker than the source 3/2 precision and is not counted as completing
+main 16.1. Its stronger source-scale reduction with the literal cost B remains
+available separately. The sharp disjoint non-direct cost and incompatible
+connected quartic bound remain open. Coverage stays 77/167 (main 28/73,
+companion 49/94), improvements stay 89. No new external input, axiom,
+dependency download, source-byte change or Palomar registration is introduced.

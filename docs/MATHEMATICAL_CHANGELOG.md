@@ -3703,3 +3703,8 @@ Actual unordered pair products are partitioned exactly into direct disjoint, non
 ## Canonical identification of the quartic direct-pair sum
 
 Nullity additivity is proved equivalent to disjointness of actual block spaces, with an exact cross-block dimension term. Actual centered coefficients factor across arbitrary nonempty direct blocks, including zero marginals. Canonical uniqueness gives the exact sum over all nonconnected quartic families. The full fourth-cumulant comparison is reduced to 24 times the literal disjoint non-direct product cost, plus a checked source-scale remainder under explicit BCN. No new numbered completion or finding: coverage 77/167, improvements 89.
+
+
+## Unrestricted original component laws and a weaker complete quartic rate
+
+Actual component products are now proved on every finite original family with L>0, without a caller-supplied positivity premise. This matches the unrestricted finite-family scope of main 4.4; it is not counted as a new manuscript correction. The literal disjoint non-direct cost is at most A2^2/2, giving the actual connected fourth-cumulant comparison at N^(-1+epsilon) under explicit BCN. Source 3/2 precision remains open. Coverage 77/167, improvements 89.

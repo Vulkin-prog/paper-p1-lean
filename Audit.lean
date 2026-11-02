@@ -3278,6 +3278,8 @@ import PaperP1
 #print axioms PaperP1.ClassCodeBudget.coefficient_count
 #print axioms PaperP1.ClassCodeBudget.position_count
 #print axioms PaperP1.ClassCodeFibres.pair_count
+#print axioms PaperP1.CoarseConnectedFourthUnderBCN.uniform_nonDirect_cost
+#print axioms PaperP1.CoarseConnectedFourthUnderBCN.uniform_cumulant_comparison
 #print axioms PaperP1.CoarseConnectedTripleJointMass.uniform_nonaligned_mass
 #print axioms PaperP1.CoarseConnectedTripleJointMass.uniform_connected_mass
 #print axioms PaperP1.CoarseConnectedTripleJointMass.uniform_vanishing_mass
@@ -5110,6 +5112,7 @@ import PaperP1
 #print axioms PaperP1.DirectActiveEnvelope.expected_factorial
 #print axioms PaperP1.DirectActiveEnvelope.expected_power
 #print axioms PaperP1.DirectActiveEnvelope.tail_probability
+#print axioms PaperP1.DirectPairCostBound.finite_bound
 #print axioms PaperP1.DirectPairProductComparison.direct_pair_iff
 #print axioms PaperP1.DirectPairProductComparison.nonDirectApartCost_nonneg
 #print axioms PaperP1.DirectPairProductComparison.omitted_decomposition
@@ -5838,6 +5841,10 @@ import PaperP1
 #print axioms PaperP1.UnitFourierWeight.signed_unit_sum_zero_of_card_le_one
 #print axioms PaperP1.UnitFourierWeight.abs_signed_unit_sum_le_rpow
 #print axioms PaperP1.UniversalRunConversion.actual_signed_measure_conversion
+#print axioms PaperP1.UnrestrictedRunComponents.joint_partition
+#print axioms PaperP1.UnrestrictedRunComponents.centered_partition
+#print axioms PaperP1.UnrestrictedRunComponents.nullity_partition
+#print axioms PaperP1.UnrestrictedRunComponents.canonical_run_components
 #print axioms PaperP1.WindowConditionalSum.finite_bound
 #print axioms PaperP1.WindowFamilyConditional.conditionalProbability_nonneg
 #print axioms PaperP1.WindowFamilyConditional.sourceEvent_restrict
