@@ -1649,7 +1649,10 @@
       "mathematical_changes": [],
       "notes": "The literal actual pair-activity/independent-target deficit is defined and aligned with physical effective pair intersection rank and the target intersection with the source sum. For every fixed source cardinality, actual dependent targets inject into one-block effective relation lists. The complete half-count gives N^(1/2+epsilon) actual targets and independent target mass N^(-1/2+epsilon), uniformly before L, G and every source family. Consequently the literal deficit is at most A2 times N^(-1/2+epsilon). This proves the fixed-source target-cost step of the source proof. The sharper N^(-3/2+epsilon) bound still requires the weak/exceptional/good pair partition and fixed-channel compression count. No arithmetic activity bound is assumed and this proposition stays in progress. See TRIPLE_ACTIVITIES_ALIGNMENT.md.",
       "validation": "Lean v4.36.0-rc2 full build passed (10173 jobs); actual axiom audit passed for all 5197 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2912 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.32 GiB. Every actual dependent target injects into one-block effective relation lists after exact source enumeration. The complete half-count proves N^(1/2+epsilon) targets and N^(-1/2+epsilon) independent target mass after every source family of a fixed cardinality, uniformly before L, G and all source centers, including overlaps and local defects. Consequently the literal D_(2,1) is bounded by A2 times N^(-1/2+epsilon). The full N^(-3/2+epsilon) deficit estimate still needs the pair partition and good-channel compression count; main 11.1 stays in progress. Coverage remains 72/167 and confirmed improvements remain 72. No deficit bound, new external input or Paper C source is assumed. No manuscript-byte change or Palomar registration.",
-      "validation_commit": "7b4ebc0ddd92a9142403a40c3907d896b65e469e"
+      "validation_commit": "42d1bd557fa5f793583601989cdc9ab3bea05d85",
+      "validation_history": [
+        "7b4ebc0ddd92a9142403a40c3907d896b65e469e"
+      ]
     },
     {
       "label": "p13:activity:incompatible",
