@@ -1284,3 +1284,9 @@ public import PaperP1.Asymptotics.CoarseTripleActivityUnderBCN
 public import PaperP1.Asymptotics.CoarseThirdCumulantUnderBCN
 
 public import PaperP1.Asymptotics.CoarseIncompatibleTripleUnderBCN
+
+public import PaperP1.Probability.PoissonParameterStability
+
+public import PaperP1.Asymptotics.ActualNominalReferenceComparison
+
+public import PaperP1.Asymptotics.ExplicitMeanPhaseStability

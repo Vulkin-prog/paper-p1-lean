@@ -168,3 +168,67 @@ No new mathematical finding, external estimate, BCN argument, PaperC
 port, dependency download, manuscript-byte change or Palomar registration.
 
 Lean v4.36.0-rc2 full build passed (10707 jobs); actual axiom audit passed for all 6406 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4123 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.66 GiB. Actual signed explicit quadratic/Hermite error is at mostN^(-4/3+epsilon), unconditionally for every fixed height. Actual probability witnesses have distance-to-P changes bounded by half that error for every probability lawP, with P after the common threshold. The change is negligible on the actual moving first-omitted-height scalar phase, whose positive lower bound is proved. Original-count approximation, distance equivalents and optimality remain open; main18.1,18.3,19.1 remain in progress. Coverage77/167 (main28/73, companion49/94); confirmed findings87. No new mathematical finding, external input, BCN premise, PaperC port, dependency download, manuscript-byte change or Palomar registration.
+
+
+## Uniform mean-change negligibility at every fixed omitted height
+
+The finite analytic mean-change step used in main1.4 and the fixed-height
+hierarchy is now checked for actual signed measures. For nonnegative
+meansmu,nu and arbitrary realalpha,beta,
+
+    ||Pi_mu-Pi_nu||_1 <= 2*|mu-nu|,
+    ||Q(mu,alpha)-Q(nu,beta)||_1
+      <= 2*(1+2*|alpha|)*|mu-nu| + 2*|alpha-beta|.
+
+The same bounds hold first in the completed convolution algebra and
+are transported coefficient by coefficient to the ordinary infinite
+sum of absolute singleton masses. The Poisson estimate uses its
+actual nonnegative series, the explicit bound
+||Pi_t-delta_0||<=2*(1-exp(-t))<=2t and the norm-one convolution
+semigroup. It needs neither a mean cap nor an exponential loss.
+No reference probability or infinite-tail estimate is assumed.
+
+For each fixed coefficient boundA>=0 and epsilon>0, one threshold
+precedes everyN,L in the critical band and every |alpha|<=A. Holding
+alpha fixed, changing the actual original count mean toN*2^(-L)
+costs at mostN^(-1+epsilon). This uses the already proved actual mean
+bias estimate and is unconditional. At every sufficiently large scale
+where the literal integer mean bias is nonzero, the same signed
+reference distance is at leastc_C/N for everyalpha>=-1, with
+
+    c_C = exp(-2*2^C)/(2*2^C) > 0.
+
+Both signs of the mean bias are included. This is a scale-by-scale
+conditional lower bound, not an assertion that nonzero biases occur
+infinitely often. The coefficient is held fixed in this lower bound;
+no lower bound for simultaneous arbitrary parameter changes is claimed.
+The true count-law distance in main17.3 remains open.
+
+For every fixed heightb>=3 and epsilon>0, the exact-to-nominal mean
+change is at mostepsilon times the actual moving scalar phase at
+heightb, uniformly for every boundedalpha. The proof uses the full
+positive phase lower boundd*L*N^(-1+1/b) and chooses a mean-bias loss
+strictly smaller than1/b. A weaker d/N phase lower bound would not
+suffice for this step. Neither the residue nor the nominal mean is
+frozen along a subsequence.
+
+For each literal finite channel coefficientalphaHat_h, h>=3, both
+Q(actualMean,alphaHat_h) and the corresponding actual Hermite law
+are eventually probabilities without BCN or a pair-profile input.
+Positive actual mean bounds and direct smallness/positivity of the
+finite channel sum establish admissibility. There are actual
+probability witnesses for Q(actualMean,alphaHat_h) and
+Q(nominalMean,alphaHat_h) whose distances to EVERY probability lawP
+differ by at mostepsilon times phaseMass_(h+1). The threshold and
+witnesses precedeP, and both references retain the same literal
+finite coefficient. No count-law approximation or leading distance
+equivalent is assumed or established.
+
+These results complete the analytic mean-replacement step of main1.4
+and18.1. Their original count-law and cumulant remainders, leading
+distance equivalents and optimality remain open. Main17.3 remains
+in progress for its true-law conclusions. No numbered completion is
+added: coverage77/167 (main28/73, companion49/94), findings87 unchanged.
+Finding85 is extended with its explicit actual-reference quantum.
+No new external input, BCN premise, PaperC port, dependency download,
+manuscript-byte change or Palomar registration is introduced.

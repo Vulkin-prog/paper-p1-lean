@@ -3559,3 +3559,8 @@ The literal explicit Hermite and quadratic signed references have ordinary l1 di
 ## Coarse actual triple estimates and finding82 probability consequence
 
 The actual A3 and third factorial cumulant have a proved vanishing power under the same explicit BCN input. The all-aligned target count is unconditional. The literal D_(2,1) and incompatible/comparison costs have coarse exponent1; repeated-index cost has exponent3/2. The source sharp rates and optimality remain open. Finding82 is extended with the retained stronger nonaligned actual probability cap; no new finding or numbered completion is added. Coverage77/167, confirmed findings87.
+
+
+## Finding85 reference quantum and universal parameter stability
+
+Actual Poisson and quadratic signed references have universal parameter Lipschitz bounds. The exact-to-nominal mean replacement has unconditional costN^(-1+epsilon), and explicit lower boundc_C/N at every nonzero integer-bias scale with fixedalpha>=-1. For every fixed omitted height, the mean-change cost is negligible on its actual moving phase. Literal explicit coefficients also give probabilities at the actual mean without BCN. True-count law estimates and infinitely-many-nonzero-scale assertions remain open. Finding85 is extended; no new finding or numbered completion. Coverage77/167, findings87.

@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **6448 audited theorem/lemma declarations**. This
+- The project currently has **6466 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -3838,3 +3838,69 @@ No new external input, PaperC port, dependency download, manuscript-byte
 change or Palomar registration is introduced.
 
 Lean v4.36.0-rc2 full build passed (10731 jobs); actual axiom audit passed for all 6448 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4165 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.62 GiB. Under the existing single explicit BCN input, actual connected triple joint mass, full A3 and absolute third factorial cumulant are at most N^(-g+epsilon), g=1/2-(2/3)log2>0. All-aligned target counting is unconditional; the stronger nonaligned actual probability cap retains the strict rank gap. Zero-marginal centered coefficients vanish exactly, so the full A3 and cumulant include all actual dyadic starts. The literal deficit and positive-ground incompatible/comparison costs have coarse exponent1; repeated-index cost has exponent3/2. Source sharp exponents and optimality remain open; no numbered completion is added. Coverage77/167 (main28/73, companion49/94), confirmed findings87. Finding82 is extended only with its stronger probability consequence. No new external input, PaperC port, dependency download, manuscript-byte change or Palomar registration.
+
+
+## Universal parameter stability and the actual-to-nominal mean change
+
+The finite analytic mean-change step used in main1.4 and the fixed-height
+hierarchy is now checked for actual signed measures. For nonnegative
+meansmu,nu and arbitrary realalpha,beta,
+
+    ||Pi_mu-Pi_nu||_1 <= 2*|mu-nu|,
+    ||Q(mu,alpha)-Q(nu,beta)||_1
+      <= 2*(1+2*|alpha|)*|mu-nu| + 2*|alpha-beta|.
+
+The same bounds hold first in the completed convolution algebra and
+are transported coefficient by coefficient to the ordinary infinite
+sum of absolute singleton masses. The Poisson estimate uses its
+actual nonnegative series, the explicit bound
+||Pi_t-delta_0||<=2*(1-exp(-t))<=2t and the norm-one convolution
+semigroup. It needs neither a mean cap nor an exponential loss.
+No reference probability or infinite-tail estimate is assumed.
+
+For each fixed coefficient boundA>=0 and epsilon>0, one threshold
+precedes everyN,L in the critical band and every |alpha|<=A. Holding
+alpha fixed, changing the actual original count mean toN*2^(-L)
+costs at mostN^(-1+epsilon). This uses the already proved actual mean
+bias estimate and is unconditional. At every sufficiently large scale
+where the literal integer mean bias is nonzero, the same signed
+reference distance is at leastc_C/N for everyalpha>=-1, with
+
+    c_C = exp(-2*2^C)/(2*2^C) > 0.
+
+Both signs of the mean bias are included. This is a scale-by-scale
+conditional lower bound, not an assertion that nonzero biases occur
+infinitely often. The coefficient is held fixed in this lower bound;
+no lower bound for simultaneous arbitrary parameter changes is claimed.
+The true count-law distance in main17.3 remains open.
+
+For every fixed heightb>=3 and epsilon>0, the exact-to-nominal mean
+change is at mostepsilon times the actual moving scalar phase at
+heightb, uniformly for every boundedalpha. The proof uses the full
+positive phase lower boundd*L*N^(-1+1/b) and chooses a mean-bias loss
+strictly smaller than1/b. A weaker d/N phase lower bound would not
+suffice for this step. Neither the residue nor the nominal mean is
+frozen along a subsequence.
+
+For each literal finite channel coefficientalphaHat_h, h>=3, both
+Q(actualMean,alphaHat_h) and the corresponding actual Hermite law
+are eventually probabilities without BCN or a pair-profile input.
+Positive actual mean bounds and direct smallness/positivity of the
+finite channel sum establish admissibility. There are actual
+probability witnesses for Q(actualMean,alphaHat_h) and
+Q(nominalMean,alphaHat_h) whose distances to EVERY probability lawP
+differ by at mostepsilon times phaseMass_(h+1). The threshold and
+witnesses precedeP, and both references retain the same literal
+finite coefficient. No count-law approximation or leading distance
+equivalent is assumed or established.
+
+These results complete the analytic mean-replacement step of main1.4
+and18.1. Their original count-law and cumulant remainders, leading
+distance equivalents and optimality remain open. Main17.3 remains
+in progress for its true-law conclusions. No numbered completion is
+added: coverage77/167 (main28/73, companion49/94), findings87 unchanged.
+Finding85 is extended with its explicit actual-reference quantum.
+No new external input, BCN premise, PaperC port, dependency download,
+manuscript-byte change or Palomar registration is introduced.
+
+Lean v4.36.0-rc2 full build passed (10737 jobs); actual axiom audit passed for all 6466 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4183 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.61 GiB. Actual Poisson and quadratic signed references have universal parameter Lipschitz bounds, without a mean cap. Holding a bounded quadratic coefficient fixed, exact-to-nominal mean replacement has unconditional cost N^(-1+epsilon), and at every nonzero integer-bias scale has lower bound exp(-2*2^C)/(2*2^C*N) for alpha>=-1. No infinitely-many-scales assertion is made. The change is negligible on the actual moving omitted-height phase for every fixed height, and literal explicit references at the actual mean are eventually probabilities without BCN. Stability holds for every actual probability law P, after the common threshold and witness choices. Original-count approximation, distance equivalents and optimality remain open; main1.4,17.3,18.1 remain in progress. Coverage77/167 (main28/73, companion49/94), confirmed findings87. Finding85 is extended with its actual-reference quantum. No new external input, BCN premise, PaperC port, dependency download, manuscript-byte change or Palomar registration.
