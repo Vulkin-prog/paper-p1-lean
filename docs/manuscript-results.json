@@ -4734,11 +4734,34 @@
       "source": "companion_sections/pair_rigidity.tex",
       "line": 277,
       "sha256": "8184bdbf23396e914181cfc3607def429f6cfb7f28d802887703a3d2004ed4c9",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.SmallIntegerKernel.positiveBox_card",
+        "PaperP1.SmallIntegerKernel.symmetricBox_card",
+        "PaperP1.SmallIntegerKernel.evaluation_mem",
+        "PaperP1.SmallIntegerKernel.exists_of_capacity",
+        "PaperP1.SmallIntegerKernel.power_capacity",
+        "PaperP1.SmallIntegerKernel.exists_small_kernel",
+        "PaperP1.BiquadraticAuxiliaryBudget.unknown_lower",
+        "PaperP1.BiquadraticAuxiliaryBudget.unknown_upper",
+        "PaperP1.BiquadraticAuxiliaryBudget.equation_formula",
+        "PaperP1.BiquadraticAuxiliaryBudget.sixfold_gap",
+        "PaperP1.BiquadraticAuxiliaryBudget.capacity_dimension",
+        "PaperP1.BiquadraticAuxiliaryBudget.exists_kernel",
+        "PaperP1.BiquadraticAuxiliaryBudget.dimension_height",
+        "PaperP1.BiquadraticAuxiliaryBudget.kernel_height",
+        "PaperP1.BiquadraticAuxiliaryCoordinates.coefficient_card",
+        "PaperP1.BiquadraticAuxiliaryCoordinates.triangular_sum",
+        "PaperP1.BiquadraticAuxiliaryCoordinates.equation_card",
+        "PaperP1.BiquadraticAuxiliaryCoordinates.equation_total_degree",
+        "PaperP1.BiquadraticAuxiliaryCoordinates.indexed_kernel"
+      ],
+      "literature_inputs": [
+        "P1-ALG-TWO-WITNESS-AUXILIARY-BUDGET"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "The explicit integer pigeonhole kernel bound is proved, including actual box cardinalities, all matrix image bounds and a nonzero kernel vector of height (3 n H)^7 under 8 t<=7 n. For the biquadratic auxiliary, the actual four rectangular coefficient slot sets and triangular total-degree equation index set have exactly the source n and t cardinalities. The source lower/upper n bounds, exact t formula, strict sixfold gap and admissible dimension ratio are proved. The indexed kernel vector and height absorption to (B+1)^[7(10+c)q] are proved for every bounded integer matrix on these actual slots. The Runge coefficient matrix has not yet been constructed; common denominators, matrix heights, primitive polynomial coefficients, integer separation and nonzero norm remain open. This is preparation, not the full two-witness polynomial theorem. See TWO_WITNESS_ALIGNMENT.md.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10193 jobs); actual axiom audit passed for all 5242 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2957 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.29 GiB. Actual integer box cardinalities and matrix image bounds prove the nonzero integer kernel vector of height (3 n H)^7. The biquadratic four rectangular coefficient slot sets and triangular equation set have the exact source cardinalities. All dimension-gap inequalities, indexed kernel transport and explicit (B+1)^[7(10+c)q] height absorption are proved. The actual Runge matrix, its denominator and entry heights, primitive gcd division, integer separation and nonzero norm remain open; T9.5 stays in progress. Coverage remains 72/167 and confirmed improvements remain 73. No external Siegel lemma, new estimate or Paper C source is assumed. No manuscript-byte change or Palomar registration."
     },
     {
       "label": "p1:stop:class",

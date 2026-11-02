@@ -1978,3 +1978,19 @@ now hold at every fixed r>=4, on arbitrary primitive subpopulations
 without separation. The r=3 arithmetic case remains open. No external
 enumeration formula, nominal probability identification or asymptotic
 activity estimate is assumed.
+
+
+## Explicit integer auxiliary kernel and its actual coefficient budget
+
+Stable ID: `P1-ALG-TWO-WITNESS-AUXILIARY-BUDGET`. Status: **proved**,
+finite linear-algebra component of companion T9.5.
+
+Actual finite integer-box cardinalities and image bounds give a nonzero
+integer kernel vector of height (3 n H)^7 under 8t<=7n. The four actual
+rectangular coefficient slot sets and triangular total-degree equation
+set have exactly the source n and t cardinalities. Their required
+dimension gap and explicit height absorption are proved. An arbitrary
+indexed bounded matrix has the claimed nonzero indexed kernel vector.
+The actual Runge matrix, denominator, coefficient heights, primitive gcd
+division, integer gap and nonzero norm remain open. No external Siegel
+lemma or matrix-height bound is assumed; this does not complete T9.5.

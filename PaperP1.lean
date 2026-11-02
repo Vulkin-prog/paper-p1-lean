@@ -887,3 +887,7 @@ public import PaperP1.Combinatorics.OrderedSubsetWeights
 public import PaperP1.Model.PrimitiveNominalMass
 public import PaperP1.Asymptotics.PrimitiveNominalCountMass
 public import PaperP1.Asymptotics.OrderedPrimitiveMass
+
+public import PaperP1.Algebra.SmallIntegerKernel
+public import PaperP1.Arithmetic.BiquadraticAuxiliaryBudget
+public import PaperP1.Arithmetic.BiquadraticAuxiliaryCoordinates

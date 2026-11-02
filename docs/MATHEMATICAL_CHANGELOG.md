@@ -3171,3 +3171,14 @@ all ordered primitive subpopulations without a separation requirement.
 The sole remaining T4.3 order is r=3. This extends the existing proof
 simplification; no new independent finding is counted. Coverage remains
 72/167 and confirmed improvements remain 73.
+
+
+Two-witness auxiliary checkpoint: the source integer pigeonhole argument
+is proved with exact box cardinalities, a nonzero kernel vector and
+explicit height (3 n H)^7. The sufficient dimension condition 8t<=7n
+also covers the source stricter sixfold gap. The actual rectangular
+coefficient slots and triangular equation indices have the stated
+cardinalities; all source dimension inequalities and height absorption
+are proved. The actual Runge matrix and final norm polynomial remain
+open. This is a verified proof component; no new independent finding
+or completed numbered result is counted.
