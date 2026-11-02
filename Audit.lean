@@ -171,6 +171,8 @@ import PaperP1
 #print axioms PaperP1.Affine.rank_partition_inter
 #print axioms PaperP1.Affine.rank_partition_sum
 #print axioms PaperP1.Affine.privateRank_in_part
+#print axioms PaperP1.PrimitiveNullity.delete_bound
+#print axioms PaperP1.PrimitiveNullity.minimal_bound
 #print axioms PaperP1.PrimitiveRelations.full_relation_of_minimal_nullity
 #print axioms PaperP1.PrivateCoreMoments.component_mass_bounds
 #print axioms PaperP1.Affine.rank_add_nullity_on
@@ -2882,6 +2884,13 @@ import PaperP1
 #print axioms PaperP1.PrimeCylinderScale.log_cutoff_over_log_size_tendsto
 #print axioms PaperP1.PrimeCylinderScale.log_size_over_log_cutoff_tendsto
 #print axioms PaperP1.PrimeCylinderScale.primeCharge_tendsto
+#print axioms PaperP1.PrimitiveGeneralMass.binary_factor
+#print axioms PaperP1.PrimitiveGeneralMass.uniform_mass
+#print axioms PaperP1.PrimitiveGeneralMass.uniform_submass
+#print axioms PaperP1.PrimitiveGeneralMass.actual_joint_submass
+#print axioms PaperP1.PrimitiveGeneralMass.actual_centered_submass
+#print axioms PaperP1.PrimitiveGeneralMass.from_four
+#print axioms PaperP1.PrimitiveGeneralMass.main_15_5_from_five
 #print axioms PaperP1.PrivateChannelMassPhase.phase_bounds
 #print axioms PaperP1.PrivateChannelMassPhase.positive_phase
 #print axioms PaperP1.PrivateChannelMassRate.massConstant_pos
@@ -4234,6 +4243,12 @@ import PaperP1
 #print axioms PaperP1.PrimeRunCylinder.positive_exponential_lower
 #print axioms PaperP1.PrimeRunCylinder.positive_log_lower
 #print axioms PaperP1.PrimeRunCylinder.total_log_lower
+#print axioms PaperP1.PrimitiveWindowMass.weight_nonneg
+#print axioms PaperP1.PrimitiveWindowMass.primitive_nullity_le
+#print axioms PaperP1.PrimitiveWindowMass.primitive_weight_le
+#print axioms PaperP1.PrimitiveWindowMass.primitive_mass_le
+#print axioms PaperP1.PrimitiveWindowMass.joint_le_weight
+#print axioms PaperP1.PrimitiveWindowMass.centered_le_weight
 #print axioms PaperP1.PrivateChannelMassBound.mass_exact_decomposition
 #print axioms PaperP1.PrivateChannelMassBound.three_term_bound
 #print axioms PaperP1.PrivateChannelMassBound.finite_mass_error

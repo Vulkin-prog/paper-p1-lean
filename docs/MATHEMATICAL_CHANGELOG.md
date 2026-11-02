@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**72 mathematical improvements are confirmed; no error in a manuscript conclusion
+**73 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -3144,3 +3144,20 @@ verifies the source half-count step of main 11.1 and proves the literal
 D_(2,1) <= A2 N^(-1/2+epsilon) comparison. The sharper deficit estimate
 remains open; no new independent improvement is counted. Coverage stays
 72/167 and confirmed improvements stay 72.
+
+
+## P1-MATH-0073 — Elementary primitive mass suffices at every fixed order r>=5
+
+The complete independent primitive mass and the elementary rho<=L bound
+give the stronger total heterogeneous weight N^(1-r/2+epsilon). For every
+fixed r>=5 this proves both exponents of main Proposition 15.5 for the
+entire population, without a dense-sector restriction. The difficult
+source dense-certificate argument can therefore be restricted to r=4.
+The same elementary bound controls actual original joint mass and
+admissible absolute centered mass.
+
+Every threshold precedes the varying length and dyadic center family,
+but depends on the fixed order. No growing-order estimate is inferred.
+The r=4 case remains open, so main 15.5 stays in progress. Companion
+T4.3 also retains its r=3 and ordered nominal-population obligations.
+See [exact statement alignment](PRIMITIVE_GENERAL_MASS_ALIGNMENT.md).

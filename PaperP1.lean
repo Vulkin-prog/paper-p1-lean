@@ -878,3 +878,7 @@ public import PaperP1.Asymptotics.ThirdCumulantReduction
 
 public import PaperP1.Model.WindowTargetHosts
 public import PaperP1.Asymptotics.IndependentTargetMass
+
+public import PaperP1.Affine.PrimitiveNullity
+public import PaperP1.Model.PrimitiveWindowMass
+public import PaperP1.Asymptotics.PrimitiveGeneralMass

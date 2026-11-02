@@ -2179,11 +2179,32 @@
       "source": "main_sections/exact_transfer.tex",
       "line": 219,
       "sha256": "f34d841b32f24438f362f3a452f5ab40a3261869bf738d6d5eea3c1ff5c53817",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.PrimitiveNullity.delete_bound",
+        "PaperP1.PrimitiveNullity.minimal_bound",
+        "PaperP1.PrimitiveWindowMass.weight_nonneg",
+        "PaperP1.PrimitiveWindowMass.primitive_nullity_le",
+        "PaperP1.PrimitiveWindowMass.primitive_weight_le",
+        "PaperP1.PrimitiveWindowMass.primitive_mass_le",
+        "PaperP1.PrimitiveWindowMass.joint_le_weight",
+        "PaperP1.PrimitiveWindowMass.centered_le_weight",
+        "PaperP1.PrimitiveGeneralMass.binary_factor",
+        "PaperP1.PrimitiveGeneralMass.uniform_mass",
+        "PaperP1.PrimitiveGeneralMass.uniform_submass",
+        "PaperP1.PrimitiveGeneralMass.actual_joint_submass",
+        "PaperP1.PrimitiveGeneralMass.actual_centered_submass",
+        "PaperP1.PrimitiveGeneralMass.from_four",
+        "PaperP1.PrimitiveGeneralMass.main_15_5_from_five"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-PRIMITIVE-GENERAL-MASS"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0073"
+      ],
+      "notes": "For every fixed r>=2, the complete actual heterogeneous primitive weight is bounded by N^(1-r/2+epsilon), uniformly before the length, dyadic center family and every primitive subpopulation. Minimal relative nullity is bounded by every actual local rank, hence by L; the proved main 10.2 independent mass and 2^L<=2^C N finish. Actual joint mass and admissible absolute centered mass have the same bound. For every fixed r>=5 this implies BOTH complete main 15.5 exponents, including its nominally dense subpopulation, without a density assumption or dense certificates. The exceptional r=4 case remains open, so the full proposition is not counted complete. Fixed-order thresholds do not assert uniformity over growing r. See PRIMITIVE_GENERAL_MASS_ALIGNMENT.md.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10179 jobs); actual axiom audit passed for all 5212 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2927 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.31 GiB. Minimal effective nullity is bounded by every local rank without a finite-dimensional ambient assumption. Actual heterogeneous primitive weight, original infinite joint mass and admissible absolute centered mass are at most N^(1-r/2+epsilon) at every fixed r>=2. Both main 15.5 exponents follow for every fixed r>=5 on all primitive subpopulations, so its dense certificate argument is needed only at r=4. That case remains open; no growing-order or complete ordered nominal T4.3 claim is made. Coverage remains 72/167; confirmed improvements are 73. No new external estimate, Paper C source, manuscript-byte change or Palomar registration."
     },
     {
       "label": "p13:transfer:independent-deficit",
@@ -4067,11 +4088,21 @@
       "source": "companion_sections/fixed_moments.tex",
       "line": 184,
       "sha256": "693bbfde36bfeb61edbaf5454a23ee9a9a87f8e1bda9eb0b2bb2939af0873a96",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.PrimitiveGeneralMass.from_four",
+        "PaperP1.PrimitiveGeneralMass.uniform_mass",
+        "PaperP1.PrimitiveWindowMass.primitive_nullity_le",
+        "PaperP1.PrimitiveWindowMass.primitive_mass_le"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-PRIMITIVE-GENERAL-MASS"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0073"
+      ],
+      "notes": "Preparatory bound for the actual unordered heterogeneous primitive weight: N^(1-r/2+epsilon) for every fixed r>=2, hence the T4.3 exponent -4/5 for r>=4 at this unordered level. The literal separated ordered nominal p^r population has not yet been identified by a weighted enumeration formula, and the r=3 arithmetic bound remains open. This preparatory branch is not the complete source statement. See PRIMITIVE_GENERAL_MASS_ALIGNMENT.md.",
+      "validation": "Lean v4.36.0-rc2 full build passed (10179 jobs); actual axiom audit passed for all 5212 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2927 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.31 GiB. Minimal effective nullity is bounded by every local rank without a finite-dimensional ambient assumption. Actual heterogeneous primitive weight, original infinite joint mass and admissible absolute centered mass are at most N^(1-r/2+epsilon) at every fixed r>=2. Both main 15.5 exponents follow for every fixed r>=5 on all primitive subpopulations, so its dense certificate argument is needed only at r=4. That case remains open; no growing-order or complete ordered nominal T4.3 claim is made. Coverage remains 72/167; confirmed improvements are 73. No new external estimate, Paper C source, manuscript-byte change or Palomar registration."
     },
     {
       "label": "p1:fixed:compressed",

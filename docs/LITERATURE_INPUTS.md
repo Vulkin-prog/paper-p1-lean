@@ -1951,3 +1951,19 @@ The resulting D_(2,1) <= A2 N^(-1/2+epsilon) is proved, but the source
 full deficit estimate still needs its pair partition and good-channel
 compression count. No such estimate is assumed. No new external theorem
 or Paper C source is introduced.
+
+
+## Elementary primitive mass at every fixed order
+
+Stable ID: `P1-ARITH-PRIMITIVE-GENERAL-MASS`. Status: **proved**,
+complete main 15.5 branch for every fixed r>=5.
+
+Rank-nullity and monotonicity bound a minimal effective relation nullity
+by each local rank, hence L for actual windows. The completed main 10.2
+independent mass and the proved 2^L<=2^C N critical-band inequality give
+N^(1-r/2+epsilon) full primitive weight. Actual infinite joint mass and
+admissible absolute centered mass have the same bound. Both main 15.5
+exponents follow for all primitive subpopulations at fixed r>=5.
+The r=4 case is still open. No new analytic or arithmetic theorem is
+assumed; no dense certificate, external estimate or Paper C source is
+introduced. The source growing-order regime is not asserted.

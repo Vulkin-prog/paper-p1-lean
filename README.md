@@ -436,3 +436,7 @@ The actual original run count now has the complete third factorial-cumulant
 identity, with every repeated-index correction. Its comparison with positive
 connected activity is reduced to the two remaining arithmetic activities.
 [Precise scope and remaining bounds](docs/TRIPLE_ACTIVITIES_ALIGNMENT.md).
+
+Every fixed primitive order r>=5 now satisfies both bounds of main 15.5
+by the stronger elementary exponent 1-r/2; r=4 remains open.
+[Statement and fixed-order scope](docs/PRIMITIVE_GENERAL_MASS_ALIGNMENT.md).
