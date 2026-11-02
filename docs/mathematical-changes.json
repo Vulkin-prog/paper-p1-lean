@@ -5100,6 +5100,72 @@
         "status": "not_integrated"
       },
       "validation_commit": "5f39112d3cdb49446889fef38f3d8340350df62e"
+    },
+    {
+      "id": "P1-MATH-0095",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:offset:normal-budget",
+        "number": "T20.4",
+        "page": 83,
+        "source": "companion_sections/offset_geometry.tex",
+        "line": 145,
+        "statement_sha256": "e86f009e40077995680f159cf21dde3df78717faedc6a4fa2982d32bed4b9a28"
+      },
+      "original_assumption": "T20.4 uses a shortest Euclidean lattice vector and a completed lattice basis to obtain the constants 6, 24 and 72 in the planar support, normal and plane-constant bounds.",
+      "finding": "An arbitrary primitive integer direction of height at most B, obtained from two actual offsets, admits integer line levels using Bezout coordinates of the primitive normal. The resulting one-fibre decomposition proves m_(A,Y)<=M_Y+4B^2/||A||_infinity and the uniform bounds ||A||_infinity<=16B/delta, |h|<=48B^2/delta, with an explicit O_delta(B^5) finite family of integer planes. No Euclidean shortest-vector or lattice-basis premise is needed.",
+      "evidence": [
+        "PaperP1.PrimitivePlaneLines.primitive_dot",
+        "PaperP1.PrimitivePlaneLines.cross_sub_right",
+        "PaperP1.PrimitivePlaneLines.cross_cross_right",
+        "PaperP1.PrimitivePlaneLines.cross_cross_left",
+        "PaperP1.PrimitivePlaneLines.cross_parallel_normal",
+        "PaperP1.PrimitivePlaneLines.level_sub",
+        "PaperP1.PrimitivePlaneLines.difference_cross",
+        "PaperP1.PrimitivePlaneLines.same_level_parameter",
+        "PaperP1.PrimitivePlaneLines.short_direction",
+        "PaperP1.PrimitivePlaneLines.height_attained",
+        "PaperP1.IntegerDiameter.card_le",
+        "PaperP1.IntegerDiameter.image_card_le",
+        "PaperP1.PlaneFibreBounds.abs_cast",
+        "PaperP1.PlaneFibreBounds.parameter_difference",
+        "PaperP1.PlaneFibreBounds.level_diameter",
+        "PaperP1.PlaneFibreBounds.level_card",
+        "PaperP1.PlaneFibreBounds.fibre_card",
+        "PaperP1.PlaneSupportCount.finite_bound",
+        "PaperP1.OffsetVertexCover.first_covers",
+        "PaperP1.OffsetVertexCover.exists_cover",
+        "PaperP1.OffsetVertexCover.minimum_realized",
+        "PaperP1.OffsetVertexCover.minimum_le_card",
+        "PaperP1.OffsetVertexCover.minimum_le_supports",
+        "PaperP1.OffsetPlaneSupports.mem_supports",
+        "PaperP1.OffsetPlaneSupports.on_plane",
+        "PaperP1.OffsetPlaneSupports.width",
+        "PaperP1.OffsetPlaneSupports.coordinate_bound",
+        "PaperP1.OffsetPlaneSupports.covers_actual",
+        "PaperP1.OffsetPlaneSupports.on_integer_line_subset",
+        "PaperP1.OffsetPlaneSupports.integer_line_collinear",
+        "PaperP1.OffsetPlaneSupports.majorant_nonneg",
+        "PaperP1.OffsetPlaneSupports.finite_count",
+        "PaperP1.SmallNormalPlanes.height_from_count",
+        "PaperP1.SmallNormalPlanes.uniform_bounds",
+        "PaperP1.BoundedIntegerPlanes.interval_mem",
+        "PaperP1.BoundedIntegerPlanes.height_le_iff",
+        "PaperP1.BoundedIntegerPlanes.mem_family",
+        "PaperP1.BoundedIntegerPlanes.card_family",
+        "PaperP1.BoundedIntegerPlanes.card_bound",
+        "PaperP1.OffsetPlaneNormalBudget.companion_T20_4"
+      ],
+      "proposed_revision": "Replace the covolume/shortest-vector paragraph of T20.4 by the integer level and fibre argument. Use the sharper constants 4, 16 and 48, or retain the existing looser constants as immediate consequences. Describe the finite minimum cover and the literal shared-prime offset population explicitly.",
+      "impact": "Simplifies the geometric proof and improves explicit constants without changing the O_delta(B^5) exponent. The finite support bound requires only the first even-selection map to be injective and the first two square-class spaces to be direct. No dense weighted-sector or complete pair-profile claim follows from this lemma alone.",
+      "validation": "Verified under Lean v4.36.0-rc2: full lake build (11055 jobs), source and ledger checks, actual axiom audit of 7086 declarations (only propext, Classical.choice and Quot.sound), and 4803 direct ledger/evidence declaration checks; Ubuntu root free space 14.99 GiB. Original manuscript bytes and all 167 statement hashes preserved.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

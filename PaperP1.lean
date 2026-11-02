@@ -1537,3 +1537,12 @@ public import PaperP1.Asymptotics.RefinedPairActivityUnderBCN
 public import PaperP1.Model.HomogeneousRunMass
 public import PaperP1.Asymptotics.HomogeneousSeedPropagation
 public import PaperP1.Asymptotics.HomogeneousChannelMass
+public import PaperP1.Algebra.PrimitivePlaneLines
+public import PaperP1.Combinatorics.IntegerDiameter
+public import PaperP1.Combinatorics.PlaneFibreBounds
+public import PaperP1.Combinatorics.PlaneSupportCount
+public import PaperP1.Combinatorics.OffsetVertexCover
+public import PaperP1.Arithmetic.OffsetPlaneSupports
+public import PaperP1.Asymptotics.SmallNormalPlanes
+public import PaperP1.Arithmetic.BoundedIntegerPlanes
+public import PaperP1.Asymptotics.OffsetPlaneNormalBudget
