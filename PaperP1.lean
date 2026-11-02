@@ -1172,3 +1172,15 @@ public import PaperP1.Probability.CompletedBinomial
 public import PaperP1.Probability.FinitePoissonCharlierConversion
 
 public import PaperP1.Asymptotics.PoissonCharlierConversion
+
+public import PaperP1.Analysis.FiniteExponentialProducts
+
+public import PaperP1.Probability.HeterogeneousBernoulli
+
+public import PaperP1.Probability.HeterogeneousPairDeletion
+
+public import PaperP1.Probability.HeterogeneousPoissonCharlierConversion
+
+public import PaperP1.Model.HeterogeneousRunConversion
+
+public import PaperP1.Asymptotics.HeterogeneousRunConversion

@@ -10,6 +10,7 @@
 - Complete companionT17.2 with exact source cardinality deficits and actual signed-measure identity/norm.
 - Prove the bounded actual second-moment seed and fullT19.4 growing-order conclusion under the same explicit BCN input.
 - Prove explicit finite Poisson–Charlier conversion for actual signed measures throughout0<=p<=1; record the logarithm-free improvement.
+- Extend the analytic conversion to heterogeneous exact marginals throughout[0,1], with explicit constant16exp(2M) and actual mean/cumulant identification.
 - Original manuscripts remain byte-preserved; Palomar qualification is still a later milestone.
 
 ## In progress — 31 October 2026

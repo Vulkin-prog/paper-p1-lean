@@ -3504,3 +3504,8 @@ The actual host count and the same explicit BCN-dependent pair cap prove F_2<=(2
 ## P1-MATH-0084: logarithm-free finite Poisson–Charlier conversion
 
 The analytic conversion holds for every n>=2 and0<=p<=1 with explicit constants in a mean bound, through actual summable signed measures. The2p<1 restriction is removed from the analytic argument. The actual critical regular-set reference has error4|beta-c2|+K_C*(N^(-2)+|c2|/N). The source arithmetic C_2=O(a_N) remains open; T17.4 is in progress. Coverage77/167, confirmed findings84.
+
+
+## P1-MATH-0084 extended to heterogeneous actual marginals
+
+The finite conversion of main15.1 holds with C_M=16exp(2M) for the full probability range0<=p_i<=1, removing p_*<=1/4. Actual signed covariances, the actual count mean and the exact second factorial cumulant are retained. A uniform actual reference bound K_C*(N^(-2)+A_2/N) holds before every deterministic dyadic subset. The source numerical rate remains open for A_2. This extends finding84 without a new finding; coverage77/167.

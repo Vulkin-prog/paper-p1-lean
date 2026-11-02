@@ -21,6 +21,8 @@ Companion T17.2 is complete: the actual retained-reference identity and ordinary
 
 The analytic part ofT17.4 now has an explicit finite signed-measure conversion for0<=p<=1, with no convolution logarithm. The actual critical reference is controlled by4|beta-c2|+K_C*(N^(-2)+|c2|/N); the arithmetic covariance scale remains open. See [the conversion scope](docs/POISSON_CHARLIER_CONVERSION_ALIGNMENT.md).
 
+Main15.1 now has its full finite heterogeneous analytic bound with C_M=16exp(2M), valid throughout0<=p_i<=1. The actual run reference uses the exact mean and second cumulant, and has uniform error K_C*(N^(-2)+A_2/N). The arithmetic pair-activity rate remains open. See [the exact scope](docs/HETEROGENEOUS_CONVERSION_ALIGNMENT.md).
+
 Companion T22.7 is complete: the actual infinite replica formula, the
 uniform colored conditional target sum and every fixed positive weighted
 replica moment are proved. Repeated centers and arbitrary ordered tuple
