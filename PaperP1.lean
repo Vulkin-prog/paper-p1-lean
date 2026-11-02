@@ -1352,3 +1352,13 @@ public import PaperP1.Model.FreshFactorialLower
 public import PaperP1.Asymptotics.FixedFactorialLower
 
 public import PaperP1.Asymptotics.CoarseFixedFactorialMomentsUnderBCN
+
+public import PaperP1.Probability.FactorialCountTruncation
+
+public import PaperP1.Analysis.BanachFactorialRemainder
+
+public import PaperP1.Probability.CompletedFactorialTruncation
+
+public import PaperP1.Probability.CompletedPoissonMetric
+
+public import PaperP1.Asymptotics.CoarsePoissonLawUnderBCN

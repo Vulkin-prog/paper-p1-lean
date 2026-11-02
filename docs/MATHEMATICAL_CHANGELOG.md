@@ -3658,3 +3658,8 @@ Canonical tuple enumeration and the proved propagation theorem yield an actual u
 ## First two-sided actual factorial-moment convergence estimate
 
 An exact fresh-tuple recurrence and the unconditional negative conditional-deviation estimate prove an unconditional factorial-moment lower bound. Under explicit BCN this combines with actual dependent-family upper bounds to give |E(Z_N)_r-mu_N^r|<=N^(-1/2+eta) at every fixed order. The nominal-mean version is proved too. Main 6.4 remains in progress for its sharper quadratic correction and remainder. No numbered completion or new finding. Coverage 77/167, confirmed improvements 88.
+
+
+## First actual original-law Poisson approximation under BCN
+
+The original count law now converges uniformly in TV to actual Poisson probability laws with the current actual mean or nominal mean, under explicit BCN. The unconditional finite factorial reconstruction bound and factorial Banach remainder supply the passage from fixed moments to laws. The reconstruction order is chosen after the final tolerance and before N. No optimal rate, quadratic correction, new numbered completion or new mathematical finding is claimed. Coverage 77/167, confirmed improvements 88.

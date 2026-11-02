@@ -917,6 +917,8 @@ import PaperP1
 #print axioms PaperP1.BanachExponentialRemainder.norm_exp_sub_one_le
 #print axioms PaperP1.BanachExponentialRemainder.norm_exp_sub_linear_le
 #print axioms PaperP1.BanachExponentialRemainder.norm_exp_sub_quadratic_le
+#print axioms PaperP1.BanachFactorialRemainder.norm_tail_term_le
+#print axioms PaperP1.BanachFactorialRemainder.norm_exp_sub_partial_le
 #print axioms PaperP1.BanachPowerPerturbation.norm_pow_sub_le
 #print axioms PaperP1.BanachPowerPerturbation.second_order_identity
 #print axioms PaperP1.BanachPowerPerturbation.norm_second_order_le
@@ -3255,6 +3257,11 @@ import PaperP1
 #print axioms PaperP1.CoarseIncompatibleTripleUnderBCN.uniform_incompatible
 #print axioms PaperP1.CoarseIncompatibleTripleUnderBCN.uniform_activity_comparison
 #print axioms PaperP1.CoarseIncompatibleTripleUnderBCN.uniform_cumulant_comparison
+#print axioms PaperP1.CoarsePoissonLawUnderBCN.realMass_actualPoissonLaw
+#print axioms PaperP1.CoarsePoissonLawUnderBCN.uniform_finite_orders
+#print axioms PaperP1.CoarsePoissonLawUnderBCN.uniform_completed_distance
+#print axioms PaperP1.CoarsePoissonLawUnderBCN.uniform_totalVariation
+#print axioms PaperP1.CoarsePoissonLawUnderBCN.uniform_nominal_totalVariation
 #print axioms PaperP1.CoarsePrimitiveJointMassUnderBCN.uniform_pair_mass
 #print axioms PaperP1.CoarsePrimitiveJointMassUnderBCN.uniform_mass
 #print axioms PaperP1.CoarsePrimitiveJointMassUnderBCN.uniform_finite_orders
@@ -6045,6 +6052,10 @@ import PaperP1
 #print axioms PaperP1.CompletedBinomial.quadratic_error
 #print axioms PaperP1.CompletedBinomial.delete_two_error
 #print axioms PaperP1.CompletedBinomial.two_deleted_error
+#print axioms PaperP1.CompletedFactorialTruncation.polynomial_eq
+#print axioms PaperP1.CompletedFactorialTruncation.poisson_partial_eq
+#print axioms PaperP1.CompletedFactorialTruncation.poisson_remainder
+#print axioms PaperP1.CompletedFactorialTruncation.count_distance_bound
 #print axioms PaperP1.CompletedLaw.abs_coeff_le
 #print axioms PaperP1.CompletedLaw.zero_of_l1Norm_eq_zero
 #print axioms PaperP1.CompletedLaw.norm_finite
@@ -6069,6 +6080,9 @@ import PaperP1
 #print axioms PaperP1.CompletedPoisson.coeff_poisson
 #print axioms PaperP1.CompletedPoisson.poisson_actual_signed_measure
 #print axioms PaperP1.CompletedPoisson.poisson_is_probability
+#print axioms PaperP1.CompletedPoissonMetric.realMass_law
+#print axioms PaperP1.CompletedPoissonMetric.totalVariation_bound
+#print axioms PaperP1.CompletedPoissonMetric.parameter_stability
 #print axioms PaperP1.CompoundPoissonExponential.hasSum_joint_exp
 #print axioms PaperP1.CompoundPoissonExponential.hasSum_law_exp
 #print axioms PaperP1.CompoundPoissonExponential.hasSum_hermite_exp
@@ -6131,6 +6145,12 @@ import PaperP1
 #print axioms PaperP1.DifferenceCoefficients.finite_factorial_moment
 #print axioms PaperP1.DifferenceCoefficients.difference_factorial_moment
 #print axioms PaperP1.DifferenceCoefficients.hasSum_weighted_finite
+#print axioms PaperP1.FactorialCountTruncation.moment_eq_joint
+#print axioms PaperP1.FactorialCountTruncation.boundary_card
+#print axioms PaperP1.FactorialCountTruncation.retained_layer
+#print axioms PaperP1.FactorialCountTruncation.retained_eq_polynomial
+#print axioms PaperP1.FactorialCountTruncation.remainder_bound
+#print axioms PaperP1.FactorialCountTruncation.polynomial_difference
 #print axioms PaperP1.FactorialGeneratingPolynomial.transform_single
 #print axioms PaperP1.FactorialGeneratingPolynomial.transform_atom
 #print axioms PaperP1.FactorialGeneratingPolynomial.transform_scalar
