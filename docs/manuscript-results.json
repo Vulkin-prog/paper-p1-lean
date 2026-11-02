@@ -6433,7 +6433,8 @@
           "validation": "Verified with Lean v4.36.0-rc2: full lake build (11321 jobs), actual Audit.lean kernel-axiom audit (7694 declarations; only propext, Classical.choice, Quot.sound), all 5411 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.48 GiB.",
           "validation_commit": "a9ddb0776ba438fb4e28b64710d6841c5df6cd25"
         }
-      ]
+      ],
+      "validation_commit": "767053f98ad1ddb7c5074dac9cfa11b57684d7da"
     },
     {
       "label": "p1:arith:smallpart-budget",
