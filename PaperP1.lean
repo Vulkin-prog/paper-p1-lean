@@ -2228,3 +2228,9 @@ public import PaperP1.Arithmetic.TwoTargetPhysicalRegularization
 public import PaperP1.Arithmetic.TwoTargetPhysicalBudgets
 public import PaperP1.Asymptotics.TwoTargetIntrinsicEnumeration
 public import PaperP1.Asymptotics.TwoTargetPhysicalEnumeration
+public import PaperP1.Arithmetic.CoefficientSplitRadicalPatterns
+public import PaperP1.Asymptotics.CriticalCoefficientPatterns
+public import PaperP1.Asymptotics.CoefficientNonalignedHostCount
+public import PaperP1.Arithmetic.TwoTargetClassOffsets
+public import PaperP1.Asymptotics.TwoTargetMixedClassData
+public import PaperP1.Asymptotics.TwoTargetNonalignedMixedCount
