@@ -2023,3 +2023,6 @@ public import PaperP1.Asymptotics.SurfaceCountParameters
 public import PaperP1.Asymptotics.SurfaceCurveCoverPowerBound
 public import PaperP1.Arithmetic.UniformOrdinarySurfaceCover
 public import PaperP1.Asymptotics.OrdinarySurfaceSubpowerUnderInputs
+public import PaperP1.Arithmetic.OrdinaryRootEvaluation
+public import PaperP1.Arithmetic.OrdinaryRootPointHeight
+public import PaperP1.Asymptotics.OrdinaryDyadicRootHostCount

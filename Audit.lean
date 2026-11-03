@@ -3488,6 +3488,15 @@ import PaperP1
 #print axioms PaperP1.OrdinaryIntegerPoints.mem_curvePoints
 #print axioms PaperP1.OrdinaryIntegerPoints.hosts_card_le
 #print axioms PaperP1.OrdinaryIntegerPoints.lift_card_le
+#print axioms PaperP1.OrdinaryRootEvaluation.evaluation_C
+#print axioms PaperP1.OrdinaryRootEvaluation.nativeLinear_value
+#print axioms PaperP1.OrdinaryRootEvaluation.integerProduct_cast
+#print axioms PaperP1.OrdinaryRootEvaluation.ordinaryRelation_value
+#print axioms PaperP1.OrdinaryRootEvaluation.ideal_le_kernel
+#print axioms PaperP1.OrdinaryRootEvaluation.lift_mem
+#print axioms PaperP1.OrdinaryRootPointHeight.constant_ge_one
+#print axioms PaperP1.OrdinaryRootPointHeight.coordinates_height
+#print axioms PaperP1.OrdinaryRootPointHeight.point_floor_height
 #print axioms PaperP1.OriginalWindowValueBounds.values_geometry
 #print axioms PaperP1.PairHostCover.regular_loss_iff
 #print axioms PaperP1.PairHostCover.cover
@@ -5351,6 +5360,8 @@ import PaperP1
 #print axioms PaperP1.OrderedPrimitiveMass.nominal_bound
 #print axioms PaperP1.OrderedPrimitiveMass.actual_joint_bound
 #print axioms PaperP1.OrderedPrimitiveMass.companion_T4_3_from_four
+#print axioms PaperP1.OrdinaryDyadicRootHostCount.choose_homogenization
+#print axioms PaperP1.OrdinaryDyadicRootHostCount.uniform_hosts
 #print axioms PaperP1.OrdinarySurfaceSubpowerUnderInputs.uniform_subpower
 #print axioms PaperP1.OrientedPlanarMotifCount.uniform_count
 #print axioms PaperP1.OriginalPairHosts.separated_subset

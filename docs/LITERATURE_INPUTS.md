@@ -9046,3 +9046,55 @@ improvements remain 112 and Palomar is deferred. Original manuscript
 bytes and pinned dependencies are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12593 jobs, direct axiom audit of 9032 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 7026 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.70 GiB.
+
+
+## Literal integer square-equation hosts and equation-count-independent height
+
+The literal integer square-equation host and point-height
+composition is now proved. Evaluating the actual native linear
+products and ordinary radical relations at (Y,X,Z,w)=(y,x,1,w)
+gives exactly the original integer split-product equations.
+Their integer roots therefore put the literal lift in the actual
+ordinary radical surface ideal kernel.
+
+For fixed D>=1 with A0+K<=2D, every ordinary coordinate of a
+literal dyadic root lift is bounded by
+(2^D+3^K)*N^D. This height constant is independent of the number
+of equations. It uses the individual radical bounds rather than
+the larger common constant needed for the sum-of-radicals
+projection. The natural floor of this real height is proved >=1,
+no larger than the real height, and contains the actual integer
+lift in the actual finite normalized point set.
+
+The final theorem starts with arbitrary nonzero integer
+coefficients of height <=N^A0, disjoint offset sets of common
+positive size a and distinct singleton offsets on the Y side.
+It counts an arbitrary finite set of actual integer hosts for
+which the literal square equations have integer roots. The hosts
+have X in the dyadic range, |Y|<=2N, positive selected values,
+an injective actual left even-selection map and actual left/right
+square-class images in direct sum. The offset cap is any fixed
+polynomial in the critical logarithmic window.
+
+The proof derives the offset bound <=N from the critical scale,
+constructs a choice of literal integer roots for each host, lifts
+the actual host set to the actual bounded ordinary point set,
+and proves that projection recovers exactly the original host
+set. The preceding conditional point-count theorem then gives
+the coefficient-uniform A*N^epsilon host bound. The equation
+threshold is chosen before the ambient-size cap, and A and the
+N cutoff before every actual system, coefficient and host set.
+Choosing a suitable fixed D from A0 and K is also proved.
+
+Only the two previously isolated uniform geometric properties
+remain explicit unproved arguments in this literal per-system
+degree-(a,1) result. No abstract host-count or point-height
+conclusion is a premise. Coefficient smoothness is not used and
+coefficient enumeration is not included. The general half-power
+geometric bound, the graph applications with their own alignment
+scope, and the external geometric input proofs remain open.
+T1.7 stays in_progress; numbered coverage remains 79/167,
+confirmed improvements remain 112 and Palomar is deferred.
+Original manuscript bytes and pinned dependencies are unchanged.
+
+Verified under Lean v4.36.0-rc2: full build passed (12599 jobs); direct axiom audit passed for 9043 declarations using only propext, Classical.choice and Quot.sound; all 7039 distinct ledger/evidence declaration references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.68 GiB.
