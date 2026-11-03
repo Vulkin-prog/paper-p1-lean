@@ -6456,6 +6456,8 @@ import PaperP1
 #print axioms PaperP1.QuadraticOrderBranching.quadratic_order_branching
 #print axioms PaperP1.QuadraticOrderMoments.nominal_mean_bound
 #print axioms PaperP1.QuadraticOrderMoments.factorial_bound
+#print axioms PaperP1.QuadraticRateOneUnderInputs.uniform_exact
+#print axioms PaperP1.QuadraticRateOneUnderInputs.companion_T17_5
 #print axioms PaperP1.QuadraticSquarePartCount.reciprocal_budget
 #print axioms PaperP1.QuadraticSquarePartCount.second_branch_count
 #print axioms PaperP1.QuadraticTailScale.order_bounds
@@ -6813,6 +6815,11 @@ import PaperP1
 #print axioms PaperP1.ThreeSlopePrivateDensity.bad_rate
 #print axioms PaperP1.ThreeSlopePrivateDensity.linear_good_population
 #print axioms PaperP1.ThreeWindowRankProbability.upper
+#print axioms PaperP1.TripleActivityClosureUnderInputs.uniform_bounds
+#print axioms PaperP1.TripleActivityLawReconstructionUnderInputs.uniform_estimates
+#print axioms PaperP1.TripleActivityLawReconstructionUnderInputs.uniform_bound
+#print axioms PaperP1.TripleActivityLawReconstructionUnderInputs.article_15_14_symbolic
+#print axioms PaperP1.TripleControlledFixedActivity.uniform_weighted
 #print axioms PaperP1.TripleRankUnderBCN.uniform_triple_nullity
 #print axioms PaperP1.TripleRankUnderBCN.uniform_nonaligned_triple_nullity
 #print axioms PaperP1.TripleRankUnderBCN.article_13_8_under_BCN

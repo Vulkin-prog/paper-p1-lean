@@ -2608,3 +2608,7 @@ public import PaperP1.Asymptotics.SharpConnectedSeedParameters
 public import PaperP1.Asymptotics.SharpConnectedSeedCatalogUnderInputs
 public import PaperP1.Asymptotics.SharpCompatibleActivityUnderInputs
 public import PaperP1.Asymptotics.ConnectedReductionToTriplesUnderInputs
+public import PaperP1.Asymptotics.TripleControlledFixedActivity
+public import PaperP1.Asymptotics.TripleActivityClosureUnderInputs
+public import PaperP1.Asymptotics.TripleActivityLawReconstructionUnderInputs
+public import PaperP1.Asymptotics.QuadraticRateOneUnderInputs

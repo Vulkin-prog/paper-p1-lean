@@ -10608,6 +10608,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "9fb83c92d3d579a21ed04e9539f0f8c96774957b"
+    },
+    {
+      "id": "P1-MATH-0149",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:base-approximation",
+        "number": "T17.5",
+        "page": 64,
+        "source": "companion_sections/closure.tex",
+        "line": 373,
+        "statement_sha256": "3f9a073e1d0926a504ce14a82f8e6da9fa67dae624de32d26f2521aa90245a03"
+      },
+      "original_assumption": "CompanionT17.5 states both first quadratic approximations with error N^(-4/5+epsilon), obtained through the exceptional-event coupling.",
+      "finding": "Both first quadratic approximations of companionT17.5 have the\nstronger error N^(-1+epsilon), under the same three existing explicit\ngeometric properties. The actual original law on every dyadic subground\nfirst satisfies the full symbolic reconstruction N^epsilon*A3+N^(-4/3+epsilon).\nThe already proved coarse full third activity of rate1, with fixed smaller\nmargins, gives the numerical rate1. Unconditional restoration then gives\nboth full-model exact-mean and nominal-mean references with the same full\nactual second factorial cumulant. This avoids limiting the first-law\nestimate to the4/5 exceptional-event coupling rate. It neither proves nor\nassumes the optimal triple activity or the optimal4/3 law remainder.",
+      "impact": "Strengthens both first quadratic approximations from4/5 to1 and proves the exact symbolic main15.14 error for the original full law. The optimal4/3 numerical law estimate and main15.14 final consequence remain open.",
+      "proposed_revision": "After the completed second-order stopping reconstruction, combine its explicit A3-dependent error with the coarse full third activity of rate1. Record the stronger rate1 for both first quadratic references. Keep the numerical optimal4/3 conclusion separate until the sharp triple estimate is supplied.",
+      "evidence": [
+        "PaperP1.TripleControlledFixedActivity.uniform_weighted",
+        "PaperP1.TripleActivityClosureUnderInputs.uniform_bounds",
+        "PaperP1.TripleActivityLawReconstructionUnderInputs.uniform_estimates",
+        "PaperP1.TripleActivityLawReconstructionUnderInputs.article_15_14_symbolic",
+        "PaperP1.QuadraticRateOneUnderInputs.uniform_exact",
+        "PaperP1.QuadraticRateOneUnderInputs.companion_T17_5"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13783 jobs); direct axiom audit passed for 10737 declarations using only propext, Classical.choice and Quot.sound; all 9189 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.23 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
