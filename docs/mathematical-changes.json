@@ -10135,10 +10135,10 @@
         "line": 152,
         "statement_sha256": "c6e85c5c60a33b6e4f4e614d923f638d1855ecd1fd2d6dab7f29cb5aa08e6190"
       },
-      "original_assumption": "The fixed factorial-moment clause in main6.4 has remainder exponent4/5, with the exact mean and full second factorial cumulant.",
-      "finding": "The exact-parameter factorial AND ordinary fixed-moment remainders\nin main6.4 improve from N^(-4/5+epsilon) to N^(-1+epsilon) under the same\nfinite geometric properties. The bounds hold on every actual dyadic\nsubground with heterogeneous marginals, affine incompatibility and zero\nmarginals included. The factorial proof uses full higher centered activity\nat rate1, a nonconnected quadratic tail at rate4/3, and finite pointed\ncollision/deletion inequalities retaining the complete diagonal correction.\nThe ordinary proof uses the exact Stirling transform and the genuine\nTouchard polynomial, whose evaluation is proved equal to the Poisson\nordinary moment and whose actual second derivative gives the displayed\nquadratic coefficient. A common threshold is taken after all finitely many\norders and geometric bundles. Uniform boundedness of every fixed ordinary\nmoment is also proved directly, without the final law approximation. The\narbitrary higher factorial-cumulant clause is not claimed complete yet.",
-      "impact": "Proves both exact-parameter fixed factorial and ordinary moment corrections with exponent1 and uniform boundedness of all fixed ordinary moments. The whole numbered theorem remains in_progress until the arbitrary higher factorial-cumulant clause is proved.",
-      "proposed_revision": "Replace the factorial and ordinary remainder exponent4/5 by1. Use the exact heterogeneous cardinality convolution and diagonal correction for factorial moments, then the exact Stirling transform and actual Touchard second derivative for ordinary moments. Keep the fixed-before-N order restriction explicit.",
+      "original_assumption": "Main6.4 states fixed factorial and ordinary corrections and all higher factorial cumulants with remainder exponent4/5, plus boundedness of every fixed ordinary moment and the equivalent nominal factorial correction.",
+      "finding": "Every scalar fixed-moment and higher-factorial-cumulant remainder\nin main6.4 improves from N^(-4/5+epsilon) to N^(-1+epsilon) under the same\nfinite geometric properties. This includes exact actual parameters, the\noptional nominal factorial reformulation, the genuine ordinary Poisson\nTouchard correction and all actual logarithmic factorial cumulants of fixed\norder>=3. All fixed ordinary moments are uniformly bounded independently\nof the final law approximation. Actual-parameter statements hold on every\ndyadic subground with heterogeneous marginals, zero marginals and affine\nincompatibility included. The factorial proof uses the complete higher\ncentered activity rate1 and exact collision/deletion bounds with the full\ndiagonal correction. The ordinary correction follows by the exact Stirling\ntransform and actual second derivative of the Poisson Touchard polynomial.\nThe all-order cumulants are defined by the actual formal logarithm; its\nmoment recurrence is proved, and the exact quadratic-model residual is\nsecond order in a. A finite induction combines the fixed moment errors\nwith a^2=O(N^(-4/3+epsilon)) to obtain all higher cumulants at rate1. The\nfinite order cutoffs, constants and geometric bundles all precede N.\nNo growing-order conclusion or later sharp4/3 remainder is asserted.",
+      "impact": "Completes every conclusion of main6.4 conditionally and strengthens all its scalar remainders to exponent1. The actual all-order cumulants are coefficients of the true formal logarithm and agree with existing third/fourth definitions.",
+      "proposed_revision": "State exponent1 for both factorial parameterizations, the ordinary Touchard correction and every fixed higher factorial cumulant. Give the exact heterogeneous collision/deletion argument, genuine Stirling/Touchard transfer, proved logarithmic recurrence and finite quadratic-residual induction. Retain fixed-before-N order quantifiers and distinguish later sharp4/3 remainders.",
       "evidence": [
         "PaperP1.ElementarySymmetricApproximation.pointed_identity",
         "PaperP1.ElementarySymmetricApproximation.factorial_increment_bound",
@@ -10168,9 +10168,55 @@
         "PaperP1.BoundedFixedMomentsUnderInputs.uniform_low",
         "PaperP1.TouchardCountMoments.touchard",
         "PaperP1.FixedMomentInputs.Parameters",
-        "PaperP1.FixedMomentInputs.Hypotheses"
+        "PaperP1.FixedMomentInputs.Hypotheses",
+        "PaperP1.FormalFactorialCumulants.logarithmic_derivative",
+        "PaperP1.FormalFactorialCumulants.moment_zero",
+        "PaperP1.FormalFactorialCumulants.cumulant_zero",
+        "PaperP1.FormalFactorialCumulants.moment_succ",
+        "PaperP1.FormalFactorialCumulants.recurrence",
+        "PaperP1.FormalFactorialCumulants.cumulant_one",
+        "PaperP1.FormalFactorialCumulants.cumulant_two",
+        "PaperP1.FormalFactorialCumulants.cumulant_three",
+        "PaperP1.FormalFactorialCumulants.cumulant_four",
+        "PaperP1.AllFactorialCumulants.moment_series",
+        "PaperP1.AllFactorialCumulants.series_coeff",
+        "PaperP1.AllFactorialCumulants.series_constant",
+        "PaperP1.AllFactorialCumulants.recurrence",
+        "PaperP1.AllFactorialCumulants.cumulant_zero",
+        "PaperP1.AllFactorialCumulants.cumulant_one",
+        "PaperP1.AllFactorialCumulants.cumulant_two",
+        "PaperP1.AllFactorialCumulants.cumulant_three",
+        "PaperP1.AllFactorialCumulants.cumulant_four",
+        "PaperP1.QuadraticMomentRecurrence.quadratic_zero",
+        "PaperP1.QuadraticMomentRecurrence.quadratic_one",
+        "PaperP1.QuadraticMomentRecurrence.quadratic_two",
+        "PaperP1.QuadraticMomentRecurrence.recurrence_three",
+        "PaperP1.QuadraticMomentRecurrence.recurrence_four",
+        "PaperP1.QuadraticMomentRecurrence.cumulant_recurrence",
+        "PaperP1.QuadraticMomentRecurrence.quadratic_bound",
+        "PaperP1.QuadraticMomentRecurrence.moment_bound",
+        "PaperP1.QuadraticMomentRecurrence.residual_bound",
+        "PaperP1.QuadraticCumulantBound.Data.mono",
+        "PaperP1.QuadraticCumulantBound.Data.parameter_bound",
+        "PaperP1.QuadraticCumulantBound.Data.moment_bound",
+        "PaperP1.QuadraticCumulantBound.envelope_nonneg",
+        "PaperP1.QuadraticCumulantBound.curvature_nonneg",
+        "PaperP1.QuadraticCumulantBound.budget_nonneg",
+        "PaperP1.QuadraticCumulantBound.step_bound",
+        "PaperP1.FiniteCumulantControl.finite_bound",
+        "PaperP1.FixedHigherCumulantsUnderInputs.uniform_fixed",
+        "PaperP1.NominalQuadraticFactorialMomentsUnderInputs.uniform_fixed",
+        "PaperP1.FormalFactorialCumulants.moment",
+        "PaperP1.FormalFactorialCumulants.cumulant",
+        "PaperP1.AllFactorialCumulants.series",
+        "PaperP1.AllFactorialCumulants.factorialCumulant",
+        "PaperP1.QuadraticMomentRecurrence.quadratic",
+        "PaperP1.QuadraticCumulantBound.Data",
+        "PaperP1.QuadraticCumulantBound.envelope",
+        "PaperP1.QuadraticCumulantBound.curvature",
+        "PaperP1.QuadraticCumulantBound.budget"
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13577 jobs); direct axiom audit passed for 10445 declarations using only propext, Classical.choice and Quot.sound; all 8808 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.72 GiB.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13599 jobs); direct axiom audit passed for 10482 declarations using only propext, Classical.choice and Quot.sound; all 8854 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.70 GiB.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
@@ -10181,9 +10227,14 @@
           "impact": "Proves the exact-parameter factorial clause with stronger exponent1 on every actual dyadic subground. The whole numbered theorem remains in_progress until its remaining clauses are assembled.",
           "validation": "Verified under Lean v4.36.0-rc2: full build passed (13565 jobs); direct axiom audit passed for 10432 declarations using only propext, Classical.choice and Quot.sound; all 8792 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.76 GiB.",
           "validation_commit": "6cf2937f2d2aa80c00ea28dac442bd47939b8eda"
+        },
+        {
+          "finding": "The exact-parameter factorial AND ordinary fixed-moment remainders\nin main6.4 improve from N^(-4/5+epsilon) to N^(-1+epsilon) under the same\nfinite geometric properties. The bounds hold on every actual dyadic\nsubground with heterogeneous marginals, affine incompatibility and zero\nmarginals included. The factorial proof uses full higher centered activity\nat rate1, a nonconnected quadratic tail at rate4/3, and finite pointed\ncollision/deletion inequalities retaining the complete diagonal correction.\nThe ordinary proof uses the exact Stirling transform and the genuine\nTouchard polynomial, whose evaluation is proved equal to the Poisson\nordinary moment and whose actual second derivative gives the displayed\nquadratic coefficient. A common threshold is taken after all finitely many\norders and geometric bundles. Uniform boundedness of every fixed ordinary\nmoment is also proved directly, without the final law approximation. The\narbitrary higher factorial-cumulant clause is not claimed complete yet.",
+          "impact": "Proves both exact-parameter fixed factorial and ordinary moment corrections with exponent1 and uniform boundedness of all fixed ordinary moments. The whole numbered theorem remains in_progress until the arbitrary higher factorial-cumulant clause is proved.",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (13577 jobs); direct axiom audit passed for 10445 declarations using only propext, Classical.choice and Quot.sound; all 8808 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.72 GiB.",
+          "validation_commit": "43225445ad28c7b45177d1031bc46d5331288357"
         }
-      ],
-      "validation_commit": "43225445ad28c7b45177d1031bc46d5331288357"
+      ]
     }
   ]
 }

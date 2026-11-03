@@ -2513,3 +2513,10 @@ public import PaperP1.Model.TouchardApproximation
 public import PaperP1.Asymptotics.FixedQuadraticOrdinaryMomentsUnderInputs
 public import PaperP1.Asymptotics.FinitePairActivityInputs
 public import PaperP1.Asymptotics.BoundedFixedMomentsUnderInputs
+public import PaperP1.Algebra.FormalFactorialCumulants
+public import PaperP1.Model.AllFactorialCumulants
+public import PaperP1.Algebra.QuadraticMomentRecurrence
+public import PaperP1.Algebra.QuadraticCumulantBound
+public import PaperP1.Algebra.FiniteCumulantControl
+public import PaperP1.Asymptotics.FixedHigherCumulantsUnderInputs
+public import PaperP1.Asymptotics.NominalQuadraticFactorialMomentsUnderInputs
