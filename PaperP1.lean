@@ -2697,3 +2697,7 @@ public import PaperP1.Asymptotics.LowConnectedRankMass
 public import PaperP1.Asymptotics.StrongNoExactTripleMassUnderBCN
 public import PaperP1.Asymptotics.WeakExactTripleMassUnderBCN
 public import PaperP1.Asymptotics.StrongExactTripleActivityReductionUnderInputs
+public import PaperP1.Probability.FiniteConvolutionAlgebra
+public import PaperP1.Probability.PositionalFiniteLaw
+public import PaperP1.Model.PositionalStoppedLaw
+public import PaperP1.Asymptotics.PositionalBoundaryApproximationUnderInputs
