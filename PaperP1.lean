@@ -1924,3 +1924,9 @@ public import PaperP1.Diophantine.GridRationalGraphBound
 public import PaperP1.Diophantine.GridRationalGraphExclusion
 public import PaperP1.Diophantine.IntegralPolynomialGraphBound
 public import PaperP1.Diophantine.IntegralRationalGraphBound
+public import PaperP1.Algebra.IntegralInterpolationDescent
+public import PaperP1.Asymptotics.CriticalGridGraphExclusion
+public import PaperP1.Asymptotics.CriticalDisjointEquationGraphExclusion
+public import PaperP1.Combinatorics.DisjointOffsetGrid
+public import PaperP1.Diophantine.DisjointEquationGraphBound
+public import PaperP1.Diophantine.DisjointEquationGraphDescent

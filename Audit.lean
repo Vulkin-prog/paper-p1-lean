@@ -1048,6 +1048,12 @@ import PaperP1
 #print axioms PaperP1.IntegerSquareGap.abs_le_abs_sq_sub_sq
 #print axioms PaperP1.IntegerSquareGap.natAbs_le_natAbs_sq_sub_sq
 #print axioms PaperP1.IntegerSquareGap.eval_natAbs_le
+#print axioms PaperP1.IntegralInterpolationDescent.rational_images_coprime
+#print axioms PaperP1.IntegralInterpolationDescent.exists_integral_presentation
+#print axioms PaperP1.IntegralInterpolationDescent.scalar_degree_eq
+#print axioms PaperP1.IntegralInterpolationDescent.integral_point_of_scalar
+#print axioms PaperP1.IntegralInterpolationDescent.point_iff_of_scalar
+#print axioms PaperP1.IntegralInterpolationDescent.exists_rational_descent
 #print axioms PaperP1.IntegralInterpolationPolynomials.polynomial_coeff
 #print axioms PaperP1.IntegralInterpolationPolynomials.polynomial_natDegree
 #print axioms PaperP1.IntegralInterpolationPolynomials.polynomial_eval
@@ -4528,6 +4534,10 @@ import PaperP1
 #print axioms PaperP1.CriticalChannelPowers.nominal_square_lower
 #print axioms PaperP1.CriticalChannelPowers.quotient_word_lower
 #print axioms PaperP1.CriticalChannelPowers.quotient_word_upper
+#print axioms PaperP1.CriticalDisjointEquationGraphExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalGridGraphExclusion.bound_le_power
+#print axioms PaperP1.CriticalGridGraphExclusion.cutoff_lt_scale
+#print axioms PaperP1.CriticalGridGraphExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalMotifBudget.motif_card
 #print axioms PaperP1.CriticalMotifBudget.code_card
 #print axioms PaperP1.CriticalMotifBudget.motif_polynomial_bound
@@ -5827,6 +5837,11 @@ import PaperP1
 #print axioms PaperP1.DisjointColumnWeights.light_add_heavy
 #print axioms PaperP1.DisjointColumnWeights.retained_card_lower
 #print axioms PaperP1.DisjointColumnWeights.retained_card_real
+#print axioms PaperP1.DisjointOffsetGrid.fst_injective
+#print axioms PaperP1.DisjointOffsetGrid.card_points
+#print axioms PaperP1.DisjointOffsetGrid.select
+#print axioms PaperP1.DisjointOffsetGrid.three_survivors
+#print axioms PaperP1.DisjointOffsetGrid.select_survivors
 #print axioms PaperP1.DisjointSixVertexBudget.surviving_size
 #print axioms PaperP1.DisjointSixVertexBudget.six_vertex_budget
 #print axioms PaperP1.DisjointSubsetIncidence.split_sum
@@ -6197,6 +6212,8 @@ import PaperP1
 #print axioms PaperP1.BivariateGridCount.homogeneous_level_grid_bound
 #print axioms PaperP1.BivariateGridCount.homogeneous_grid_degree_bound
 #print axioms PaperP1.BivariateGridCount.homogeneous_integer_box_bound
+#print axioms PaperP1.DisjointEquationGraphBound.integral_point
+#print axioms PaperP1.DisjointEquationGraphDescent.integral_point
 #print axioms PaperP1.PellInput.toZsqrtd_re
 #print axioms PaperP1.PellInput.toZsqrtd_im
 #print axioms PaperP1.PellInput.norm_toZsqrtd

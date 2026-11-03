@@ -7191,3 +7191,52 @@ in_progress, coverage stays 79/167, confirmed improvements stay 108,
 and Palomar remains deferred. Original sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12391 jobs, direct axiom audit of 8691 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6581 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.04 GiB.
+
+
+## Rational descent, surviving equation grids, and uniform critical exclusion
+
+The arithmetic graph cutoff is now converted to an actual uniform
+large-scale exclusion in the critical band. If the offset height is
+at most (L+1)^J and L differs from log(N)/log(2) by at most C, then
+one threshold, chosen before all coefficients, grids and hosts,
+excludes admissible graph points with X>=N and |Y|<=2N.
+
+The interpolation also descends coefficients: over every field F of
+characteristic zero, a reduced rational polynomial pair of exact
+maximum degree a fitting 2a+1 bounded integer grid points is a common
+nonzero F-scalar multiple of an actual bounded integral pair. The
+rational images of that integral pair are proved coprime. This gives
+an actual reduced pair over the rationals with the same exact degree,
+whose images under the rational embedding into F are the stated
+scalar multiples. Its integral graph-point condition is proved
+exactly equivalent to the original one. Rationality of the initial
+graph's coefficients is therefore not a separate input.
+
+The finite selection of the interpolation grid is also constructed.
+Three disjoint root families of cardinality a>=1 give at least 3a
+grid points with distinct first coordinates; an actual 2a+1-point
+subfamily is selected. If the initial number of equations is at least
+4(E+1)^2 and at most 2e^2 are excluded, e<=E, the actual surviving
+set has at least three equations. No assumed grid-selection map or
+survivor-count witness remains.
+
+These results are combined for the actual disjoint equation-root
+families and their actual exceptional set. A single large-scale
+threshold excludes the resulting graph host, uniformly over all
+characteristic-zero coefficient fields, equation families, excluded
+sets, numerator/denominator coefficients, and admissible hosts. It
+retains the exact root-family disjointness, cardinalities, positivity,
+selected-value independence, direct sum, critical band and offset
+height hypotheses. The numeric exceptional-set bound and the reduced
+graph with its actual root matches are explicit hypotheses: the
+preceding genus, branching, reduced-fibre, and graph-construction
+geometry has not been supplied or counted as complete.
+
+T1.7 stays in_progress, numbered coverage stays 79/167, confirmed
+mathematical improvements stay 108, and Palomar remains deferred.
+Geometric curve dimension/source prime height, any intrinsic
+line-bundle degree interpretation, and the external uniform
+surface/curve point counts also remain open. Original sources and
+the Lean/Mathlib pins are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12403 jobs, direct axiom audit of 8708 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6601 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.02 GiB.
