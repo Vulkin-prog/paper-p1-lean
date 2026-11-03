@@ -2701,3 +2701,10 @@ public import PaperP1.Probability.FiniteConvolutionAlgebra
 public import PaperP1.Probability.PositionalFiniteLaw
 public import PaperP1.Model.PositionalStoppedLaw
 public import PaperP1.Asymptotics.PositionalBoundaryApproximationUnderInputs
+public import PaperP1.Probability.CompletedPositionalLaw
+public import PaperP1.Probability.PositionalPoissonJump
+public import PaperP1.Probability.PositionalTotalMass
+public import PaperP1.Probability.PositionalCoefficientExpansion
+public import PaperP1.Probability.PositivePositionalConvolution
+public import PaperP1.Probability.PositionalCompoundPoisson
+public import PaperP1.Probability.PositionalProbabilityMeasure
