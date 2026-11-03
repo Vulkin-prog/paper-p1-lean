@@ -9981,6 +9981,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "8b881c3f015b20234f177835f78f3dd1ef611eb5"
+    },
+    {
+      "id": "P1-MATH-0137",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:core:fixed-centred",
+        "number": "T14.1",
+        "page": 53,
+        "source": "companion_sections/cores.tex",
+        "line": 160,
+        "statement_sha256": "80f300c82f31d2deecc2baf2eccdcb59d7235d91f77f2446ddb6660280209ca1"
+      },
+      "original_assumption": "CompanionT14.1 states a4/5 fixed-order absolute connected exponent, using a homogeneous majorant for separated windows and a separate contact bound.",
+      "finding": "The full fixed-order connected absolute centered bound of\ncompanionT14.1 improves from N^(-4/5+epsilon) to N^(-1+epsilon)\nunder the same existing finite geometric properties. It holds on\nany actual dyadic subground, including affine incompatibility and\nzero marginals; the separate contact bound retains its unconditional\nrate1. The proof first bounds all dependent joint masses and all\nabsolute centered masses at rate2/3. Exact inverse centering then\ncharges each incompatible connected family to proper centered sources\nand their actual failed independent complements. The latter have\nthe already proved rate1/2, so the entire incompatible contribution\nhas rate7/6. Combining it with the completed compatible connected\njoint/centered rate1 gives the stronger full rate1. This avoids a\nhomogeneous-majorant argument for separated systems and avoids\nassuming the sharper uncompleted4/3 fixed connected proposition15.10.\nOnly fixed finite ranges are asserted; the constant and threshold\nmay depend on their order cutoff, selected before N.",
+      "impact": "Completes both literal assertions ofT14.1 conditionally and strengthens the full connected exponent to1, including incompatible actual systems and arbitrary dyadic subgrounds. The contact assertion is independently unconditional.",
+      "proposed_revision": "State exponent1 in T14.1. Use the complete actual dependent seed cover and positive propagation for rate2/3, exact inverse centering with actual non-direct complements for incompatible rate7/6, then combine with the compatible connected rate1. Retain the existing unconditional contact argument and make the fixed-before-N order cutoff explicit.",
+      "evidence": [
+        "PaperP1.FixedDependentJointMassUnderInputs.uniform_range",
+        "PaperP1.FixedAbsoluteActivityUnderInputs.uniform_range",
+        "PaperP1.IncompatibleConnectedDeficit.finite_bound",
+        "PaperP1.IncompatibleConnectedActivityUnderInputs.uniform_range",
+        "PaperP1.CoarseConnectedActivityUnderInputs.uniform_range",
+        "PaperP1.CoarseConnectedActivityUnderInputs.companion_T14_1",
+        "PaperP1.FixedContactCenteredActivity.uniform_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13525 jobs); direct axiom audit passed for 10392 declarations using only propext, Classical.choice and Quot.sound; all 8750 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.88 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

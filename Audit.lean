@@ -5214,6 +5214,8 @@ import PaperP1
 #print axioms PaperP1.ClassCodeBudget.coefficient_count
 #print axioms PaperP1.ClassCodeBudget.position_count
 #print axioms PaperP1.ClassCodeFibres.pair_count
+#print axioms PaperP1.CoarseConnectedActivityUnderInputs.uniform_range
+#print axioms PaperP1.CoarseConnectedActivityUnderInputs.companion_T14_1
 #print axioms PaperP1.CoarseConnectedFourthUnderBCN.uniform_nonDirect_cost
 #print axioms PaperP1.CoarseConnectedFourthUnderBCN.uniform_cumulant_comparison
 #print axioms PaperP1.CoarseConnectedJointMassUnderInputs.uniform_catalog_extensions
@@ -5637,6 +5639,7 @@ import PaperP1
 #print axioms PaperP1.FinitePairDeficitInputs.fixed_order
 #print axioms PaperP1.FinitePairDeficitInputs.finite_orders
 #print axioms PaperP1.FinitePairDeficitInputs.partition_inputs
+#print axioms PaperP1.FixedAbsoluteActivityUnderInputs.uniform_range
 #print axioms PaperP1.FixedChannelErrorAlgebra.error_scale
 #print axioms PaperP1.FixedChannelMassTheorem.eventual_mass_eq
 #print axioms PaperP1.FixedChannelMassTheorem.strong_error
@@ -5653,6 +5656,7 @@ import PaperP1
 #print axioms PaperP1.FixedCountMomentBoundsUnderBCN.regular_moment_transfer
 #print axioms PaperP1.FixedDegreeKernelCount.uniform_count
 #print axioms PaperP1.FixedDegreeKernelCount.real_interval_count
+#print axioms PaperP1.FixedDependentJointMassUnderInputs.uniform_range
 #print axioms PaperP1.FixedExceptionalMass.defect_bound
 #print axioms PaperP1.FixedExceptionalMass.small_order_contacts
 #print axioms PaperP1.FixedExceptionalMass.contact_bound
@@ -5821,6 +5825,7 @@ import PaperP1
 #print axioms PaperP1.HomogeneousSeedPropagation.uniform_probability_mass
 #print axioms PaperP1.HomogeneousSeedPropagation.uniform_nominal_mass
 #print axioms PaperP1.HomogeneousSeedPropagation.uniform_regular_mass
+#print axioms PaperP1.IncompatibleConnectedActivityUnderInputs.uniform_range
 #print axioms PaperP1.IncompatiblePairActivityAsymptotic.uniform_activity
 #print axioms PaperP1.IncompatiblePairActivityAsymptotic.uniform_signed_absolute_gap
 #print axioms PaperP1.IncompatibleTripleReduction.pair_cost
@@ -8290,6 +8295,9 @@ import PaperP1
 #print axioms PaperP1.DependentFamilySeeds.dependentMass_le_seeded
 #print axioms PaperP1.DependentPairJointActivity.pointwise
 #print axioms PaperP1.DependentPairJointActivity.finite_bound
+#print axioms PaperP1.DependentSeedCover.family_data
+#print axioms PaperP1.DependentSeedCover.cover
+#print axioms PaperP1.DependentSeedCover.low_card_empty
 #print axioms PaperP1.DirectActiveEnvelope.observable_integrable
 #print axioms PaperP1.DirectActiveEnvelope.expected_factorial
 #print axioms PaperP1.DirectActiveEnvelope.expected_power
@@ -8466,6 +8474,9 @@ import PaperP1
 #print axioms PaperP1.HomogeneousSourcePairMass.probability_positive_loss
 #print axioms PaperP1.HomogeneousSourcePairMass.regular_loss_eq
 #print axioms PaperP1.HomogeneousSourcePairMass.regular_dependent_bound
+#print axioms PaperP1.IncompatibleConnectedDeficit.mem_sources
+#print axioms PaperP1.IncompatibleConnectedDeficit.proper_bound
+#print axioms PaperP1.IncompatibleConnectedDeficit.finite_bound
 #print axioms PaperP1.IncompatiblePairActivity.finite_bound
 #print axioms PaperP1.IncompatiblePairActivity.signed_absolute_gap
 #print axioms PaperP1.IndependentDeficitMonotonicity.nonneg

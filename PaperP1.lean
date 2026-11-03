@@ -2481,3 +2481,9 @@ public import PaperP1.Asymptotics.NoSingletonJointMassUnderInputs
 public import PaperP1.Asymptotics.SmallCoreJointMassUnderInputs
 public import PaperP1.Asymptotics.SmallCoreSourceMassUnderInputs
 public import PaperP1.Asymptotics.ConnectedTailUnderInputs
+public import PaperP1.Model.DependentSeedCover
+public import PaperP1.Asymptotics.FixedDependentJointMassUnderInputs
+public import PaperP1.Asymptotics.FixedAbsoluteActivityUnderInputs
+public import PaperP1.Model.IncompatibleConnectedDeficit
+public import PaperP1.Asymptotics.IncompatibleConnectedActivityUnderInputs
+public import PaperP1.Asymptotics.CoarseConnectedActivityUnderInputs
