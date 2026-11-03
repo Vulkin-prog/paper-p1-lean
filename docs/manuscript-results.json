@@ -1901,7 +1901,8 @@
             "P1-GEO-NORMALIZED-CURVE-UNIFORM"
           ]
         }
-      ]
+      ],
+      "validation_commit": "43225445ad28c7b45177d1031bc46d5331288357"
     },
     {
       "label": "p1:core:rankin",
