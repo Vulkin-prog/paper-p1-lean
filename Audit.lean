@@ -2740,6 +2740,10 @@ import PaperP1
 #print axioms PaperP1.CompressedChannelTargetHosts.host_key_injective
 #print axioms PaperP1.CompressedChannelTargetHosts.source_targets_card
 #print axioms PaperP1.CompressedChannelTargetHosts.all_targets_cover
+#print axioms PaperP1.CompressedPairIntersectionHosts.host_mem_pairs
+#print axioms PaperP1.CompressedPairIntersectionHosts.host_key_injective
+#print axioms PaperP1.CompressedPairIntersectionHosts.finite_count
+#print axioms PaperP1.CompressedPairIntersectionHosts.all_pairs_cover
 #print axioms PaperP1.CompressedSourceBlocks.block_eq
 #print axioms PaperP1.CompressedSourceBlocks.source_abs_bound
 #print axioms PaperP1.CompressedSourceBlocks.block_distance
@@ -5357,6 +5361,8 @@ import PaperP1
 #print axioms PaperP1.CompressedAlignedTripleMass.uniform_mass
 #print axioms PaperP1.CompressedChannelTargetCount.fixed_offsets
 #print axioms PaperP1.CompressedChannelTargetCount.uniform_count
+#print axioms PaperP1.CompressedPairIntersectionCount.fixed_offsets
+#print axioms PaperP1.CompressedPairIntersectionCount.uniform_count
 #print axioms PaperP1.CompressedPairMassUnderInputs.uniform_bound
 #print axioms PaperP1.CompressedPairMassUnderInputs.uniform_subfamily
 #print axioms PaperP1.ConditionalHalfCount.cons_mem
@@ -5807,7 +5813,10 @@ import PaperP1
 #print axioms PaperP1.FixedWindowBranching.finite_source_bound
 #print axioms PaperP1.FixedWindowBranching.badStarts_card_critical
 #print axioms PaperP1.FixedWindowBranching.original_windows_critical
+#print axioms PaperP1.FourthConnectedCumulantUnderInputs.uniform_bound
+#print axioms PaperP1.FourthCumulantIdentitiesUnderInputs.article_16_1
 #print axioms PaperP1.FourthRepeatedRunCostUnderBCN.uniform_bound
+#print axioms PaperP1.FourthRepeatedRunCostUnderInputs.uniform_bound
 #print axioms PaperP1.FullFixedActivityUnderInputs.uniform_range
 #print axioms PaperP1.FullSupportIndependentTail.article_15_8_original
 #print axioms PaperP1.FullSupportWeightedCount.uniform_ordered_mass
@@ -5842,6 +5851,9 @@ import PaperP1
 #print axioms PaperP1.GeometricAlignedTripleMass.uniform_mass
 #print axioms PaperP1.GeometricAlignedTripleMass.uniform_polynomial_inclusion
 #print axioms PaperP1.GeometricAlignedTripleMass.uniform_polynomial_mass
+#print axioms PaperP1.GoodApartPairProductMass.uniform_count
+#print axioms PaperP1.GoodApartPairProductMass.uniform_coefficient
+#print axioms PaperP1.GoodApartPairProductMass.uniform_mass
 #print axioms PaperP1.GoodPairSeedTail.private_product
 #print axioms PaperP1.GoodPairSeedTail.private_ratio
 #print axioms PaperP1.GoodPairSeedTail.uniform_ratio
@@ -6159,6 +6171,7 @@ import PaperP1
 #print axioms PaperP1.NoSingletonJointMassUnderInputs.uniform_range
 #print axioms PaperP1.NoSingletonJointMassUnderInputs.uniform_weighted
 #print axioms PaperP1.NominalQuadraticFactorialMomentsUnderInputs.uniform_fixed
+#print axioms PaperP1.NonDirectApartCostUnderInputs.uniform_bound
 #print axioms PaperP1.NonalignedActivityUnderBCN.uniform_bound
 #print axioms PaperP1.NonalignedDyadicRootHostCount.uniform_hosts
 #print axioms PaperP1.NonalignedDyadicRootHostCount.source_admissible
@@ -6257,6 +6270,8 @@ import PaperP1
 #print axioms PaperP1.OriginalWindowFamilyMass.article_10_2
 #print axioms PaperP1.OverlappingPairProductCostUnderBCN.uniform_repeated_square
 #print axioms PaperP1.OverlappingPairProductCostUnderBCN.uniform_star_square
+#print axioms PaperP1.OverlappingPairProductCostUnderInputs.uniform_repeated_square
+#print axioms PaperP1.OverlappingPairProductCostUnderInputs.uniform_star_square
 #print axioms PaperP1.PairActivityCumulantGapAsymptotic.uniform_gap
 #print axioms PaperP1.PairActivityCumulantGapAsymptotic.uniform_relative
 #print axioms PaperP1.PairActivitySignGap.uniform_bound
@@ -7210,6 +7225,8 @@ import PaperP1
 #print axioms PaperP1.AllCardinalitySeedBound.cover_bound
 #print axioms PaperP1.AllFamilyEnumerations.tupleSet_comp_perm
 #print axioms PaperP1.AllFamilyEnumerations.factorial_count_le
+#print axioms PaperP1.BadPairProductCover.bad_cover
+#print axioms PaperP1.BadPairProductCover.bad_bound
 #print axioms PaperP1.BinaryLabelRepresentations.minimal_representation
 #print axioms PaperP1.BinaryLabelRepresentations.zero_not_mem_of_zeroSumFree
 #print axioms PaperP1.BinaryLabelRepresentations.sum_subselection
@@ -8659,6 +8676,10 @@ import PaperP1
 #print axioms PaperP1.FullSupportOrderedLists.layer_weight
 #print axioms PaperP1.FullSupportOrderedLists.ordered_mass_eq
 #print axioms PaperP1.FullSupportOrderedLists.nominal_weight_formula
+#print axioms PaperP1.GoodApartPairProducts.span_pair
+#print axioms PaperP1.GoodApartPairProducts.nonDirect_intersection
+#print axioms PaperP1.GoodApartPairProducts.finite_cover
+#print axioms PaperP1.GoodApartPairProducts.finite_count
 #print axioms PaperP1.HeterogeneousDirectMaximum.direct_joint_factor
 #print axioms PaperP1.HeterogeneousDirectMaximum.finite_joint_product
 #print axioms PaperP1.HeterogeneousDirectMaximum.actualMean_eq_countMoment
@@ -8951,6 +8972,8 @@ import PaperP1
 #print axioms PaperP1.Model.MultiplicativeMoments.infinite_even_moment
 #print axioms PaperP1.NoSingletonSeedCover.distinct_blocks
 #print axioms PaperP1.NoSingletonSeedCover.cover
+#print axioms PaperP1.NonDirectApartPartition.bad_activity
+#print axioms PaperP1.NonDirectApartPartition.finite_bound
 #print axioms PaperP1.NonalignedActivityHostCap.ordered_data
 #print axioms PaperP1.NonalignedActivityHostCap.nonzero_cover
 #print axioms PaperP1.NonalignedActivityHostCap.finite_bound

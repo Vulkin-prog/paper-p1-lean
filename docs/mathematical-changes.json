@@ -10641,6 +10641,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "4991a635fece942006f40a9b0ce387762e84c963"
+    },
+    {
+      "id": "P1-MATH-0150",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:lower:quartic",
+        "number": "16.1",
+        "page": 50,
+        "source": "main_sections/quartic_lower.tex",
+        "line": 28,
+        "statement_sha256": "2bd4adbc6f85cc75b2c8c0910ab4f30c43f939e40c365eee2d5fb2aae71a4fda"
+      },
+      "original_assumption": "Main16.1 states kappa4=24K4+O(N^(-3/2+epsilon)); its proof bounds the good-good apart cost by N^(-11/6+o(1)) and invokes the optimal triple41/30 activity.",
+      "finding": "The first fourth-cumulant identity is valid with the stronger error\nN^(-5/3+epsilon), under the same finite geometric properties. The actual\ngood-good apart product cost is unconditionally N^(-7/3+epsilon), stronger\nthan the printed11/6: two compressed pairs, with all four actual offsets,\nmap injectively into a global dependent-block pair population of size\nN^(1+epsilon). The finite cover from unordered disjoint non-direct edge\npairs is checked using exact nullity and actual effective spaces. The\nremaining products are bounded by A2*(Aweak+Aexceptional), giving power5/3\nfor the complete literal apart cost. Repeated/shared-edge costs have5/3;\ncoarse full A3 of rate1 already gives rate2 for repeated-index cumulant\nterms. Neither the first identity nor the incompatible3/2 comparison\nrequires the still open optimal triple41/30 estimate. The other two\nsource errors remain3/2.",
+      "impact": "Strengthens the first source cumulant error to5/3 and removes dependence on the still open optimal triple activity. Completes all three literal main16.1 conclusions under the existing finite three geometric properties.",
+      "proposed_revision": "Use the global dependent-block pair count on the two actual compressed blocks and sum all fixed offset patterns. State good-good apart power7/3, total apart and first cumulant errors5/3, and coarse A3 rate1 as sufficient. Keep the incompatible and final positive-quartic error3/2.",
+      "evidence": [
+        "PaperP1.CompressedPairIntersectionCount.uniform_count",
+        "PaperP1.GoodApartPairProducts.nonDirect_intersection",
+        "PaperP1.GoodApartPairProducts.finite_cover",
+        "PaperP1.GoodApartPairProductMass.uniform_mass",
+        "PaperP1.NonDirectApartPartition.finite_bound",
+        "PaperP1.NonDirectApartCostUnderInputs.uniform_bound",
+        "PaperP1.FourthRepeatedRunCostUnderInputs.uniform_bound",
+        "PaperP1.FourthConnectedCumulantUnderInputs.uniform_bound",
+        "PaperP1.FourthCumulantIdentitiesUnderInputs.article_16_1"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13805 jobs); direct axiom audit passed for 10760 declarations using only propext, Classical.choice and Quot.sound; all 9222 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.18 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

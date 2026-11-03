@@ -2612,3 +2612,14 @@ public import PaperP1.Asymptotics.TripleControlledFixedActivity
 public import PaperP1.Asymptotics.TripleActivityClosureUnderInputs
 public import PaperP1.Asymptotics.TripleActivityLawReconstructionUnderInputs
 public import PaperP1.Asymptotics.QuadraticRateOneUnderInputs
+public import PaperP1.Arithmetic.CompressedPairIntersectionHosts
+public import PaperP1.Asymptotics.CompressedPairIntersectionCount
+public import PaperP1.Asymptotics.FourthRepeatedRunCostUnderInputs
+public import PaperP1.Asymptotics.OverlappingPairProductCostUnderInputs
+public import PaperP1.Combinatorics.BadPairProductCover
+public import PaperP1.Model.GoodApartPairProducts
+public import PaperP1.Asymptotics.GoodApartPairProductMass
+public import PaperP1.Model.NonDirectApartPartition
+public import PaperP1.Asymptotics.NonDirectApartCostUnderInputs
+public import PaperP1.Asymptotics.FourthConnectedCumulantUnderInputs
+public import PaperP1.Asymptotics.FourthCumulantIdentitiesUnderInputs

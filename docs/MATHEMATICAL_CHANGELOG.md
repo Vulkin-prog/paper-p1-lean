@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**149 mathematical improvements are confirmed; no error in a manuscript conclusion
+**150 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -15500,3 +15500,113 @@ original source-byte edit, new literature input, hidden axiom or Palomar
 registration is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (13783 jobs); direct axiom audit passed for 10737 declarations using only propext, Classical.choice and Quot.sound; all 9189 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.23 GiB.
+
+
+## P1-MATH-0150 — Stronger fourth-cumulant reduction from a global compressed-pair count
+
+The first fourth-cumulant identity is valid with the stronger error
+N^(-5/3+epsilon), under the same finite geometric properties. The actual
+good-good apart product cost is unconditionally N^(-7/3+epsilon), stronger
+than the printed11/6: two compressed pairs, with all four actual offsets,
+map injectively into a global dependent-block pair population of size
+N^(1+epsilon). The finite cover from unordered disjoint non-direct edge
+pairs is checked using exact nullity and actual effective spaces. The
+remaining products are bounded by A2*(Aweak+Aexceptional), giving power5/3
+for the complete literal apart cost. Repeated/shared-edge costs have5/3;
+coarse full A3 of rate1 already gives rate2 for repeated-index cumulant
+terms. Neither the first identity nor the incompatible3/2 comparison
+requires the still open optimal triple41/30 estimate. The other two
+source errors remain3/2.
+
+
+## Complete fourth-cumulant identities with a stronger first error
+
+Main Lemma16.1 is complete conditionally for the actual full original
+count, including all three literal identities and K4positive>=0. In fact
+its first error has the stronger power5/3:
+
+  |kappa4-24*K4| <=N^(-5/3+epsilon),
+  |K4-K4positive| <=N^(-3/2+epsilon),
+  |kappa4+3*alpha^2-(3*alpha^2+24*K4positive)| <=N^(-3/2+epsilon).
+
+Here alpha is the actual second factorial cumulant, K4 sums the actual
+original centered coefficients over all connected quadruples of the full
+dyadic block, and K4positive retains precisely those with positive actual
+joint probability. Every heterogeneous marginal, repeated index, zero
+marginal and incompatible affine configuration is retained. One finite
+bundle of the SAME three geometric properties and one threshold precede
+all critical lengths. No optimal triple estimate, target cumulant bound,
+abstract non-direct-cost assumption or BCN premise is used.
+
+The key new unconditional estimate is a GLOBAL count of two actual
+compressed pairs, rather than a fixed-source exceptional-target count.
+For fixed channels (a,b),(c,d), with positive ordered entries, both
+actual unit relations and a nonzero intersection between their actual
+effective spaces, all literal ordered source quadruples have cardinality
+at most N^(1+epsilon), after all four offsets have been summed.
+Each first source pair is uniquely recovered from its compressed anchor
+when its two offsets are fixed. The host key consists of the two anchors.
+Its two compressed blocks are actual unions of dilated original window
+values, of height between N/2 and 3(b+d)N, and width (b+d)(L+1).
+Their even square-class spaces equal the sums of the two original spaces.
+The existing unconditional dependent-block pair count applies to these
+literal blocks, including equal compressed centers. The four offset
+patterns cost only a fixed polylogarithmic factor. No branching statement
+for a new assumed population is inserted.
+
+For the actual good-good apart products, a finite cover is proved from
+unordered pairs of disjoint edges to these source quadruples. Non-direct
+nullity is equivalent to a nonzero intersection of the two total spaces,
+because the edge vertex sets are disjoint. All finite retained channels
+are summed after their parameters have been fixed. Thus their actual
+unordered population also has cardinality N^(1+epsilon), uniformly in the
+private threshold H. At H=2Q(L+1), each good actual centered coefficient
+has size N^(-5/3+epsilon), by the existing private-channel ratio and exact
+heterogeneous marginal cap. Their complete product mass consequently has
+the stronger UNCONDITIONAL power7/3, replacing the source proof's11/6.
+
+The complement is controlled by an exact nonnegative finite cover. Every
+product involving an edge outside the good class is charged to
+A2*(Aweak+Aexceptional), with no missing repeated bad edge or implicit
+sign assumption. The exact actual pair activity decomposition identifies
+the complement weight. Choosing the partition's fixed small parameter
+after epsilon and before N gives rate5/3 for the entire literal
+nonDirectApartCost. This step uses the existing finite geometric inputs
+for the actual pair, weak and exceptional activities; its good-good
+part remains unconditional.
+
+Repeated-edge and shared-vertex products have rate5/3 under the same
+finite inputs, using the unconditional actual covariance-row bound and
+marginal cap. The exact fourth repeated-index remainder has rate2:
+its costs are p_*A3, p_*^2 A2 and p_*^3 mu. The already established coarse
+FULL third absolute activity of rate1 suffices. The unproved optimal
+triple rate41/30 is unnecessary for this lemma. Combining these finite
+costs with the exact connected fourth-cumulant identity proves the
+stronger first error5/3. Incompatible connected quadruples have rate3/2
+by the already completed sharp incompatible activity theorem; its proof
+also uses only coarse higher activity. Compatible original coefficients
+are nonnegative, yielding the other two source identities.
+
+FourthConnectedCumulantUnderInputs.Hypotheses makes all finite inputs
+explicit: coarse order3 activity at epsilon, four sharp-pair bundles at
+sizeCap(1/100), and one actual partition bundle at sizeCap(epsilon/2048).
+The final Lemma16.1 bundle uses this at epsilon/2 and the existing sharp
+incompatible order4 bundle at epsilon/2. These reduce to ordinary
+arguments for P1-GEO-CHOSEN-SOURCE-SURFACE-COVER,
+P1-GEO-ORDINARY-SURFACE-COVER and P1-GEO-NORMALIZED-CURVE-UNIFORM.
+They are not global axioms. The earlier BCN preparatory declarations
+remain valid but are no longer needed by the completed source theorem.
+
+P1-MATH-0150 records the stronger global compressed-pair count, the
+unconditional good-good cost7/3, the complete apart cost5/3, and the
+improved first cumulant error5/3. The second and positive-quartic errors
+retain3/2, because the incompatible contribution is controlled at that
+rate. Main16.2 and the optimal4/3 law lower bound remain open at this
+checkpoint. This does not claim completion of the optimal upper bound,
+sharp triple arithmetic, both documents or Palomar preparation.
+
+No original manuscript byte, dependency, external literature input,
+Paper C port, new axiom or Palomar registration is introduced. Coverage
+is87/167 unconditional and35 conditional; confirmed improvements150.
+
+Verified under Lean v4.36.0-rc2: full build passed (13805 jobs); direct axiom audit passed for 10760 declarations using only propext, Classical.choice and Quot.sound; all 9222 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.18 GiB.
