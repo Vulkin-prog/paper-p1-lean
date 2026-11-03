@@ -1755,3 +1755,6 @@ public import PaperP1.Algebra.IrrelevantGenerated
 public import PaperP1.Algebra.SourceVeroneseIrrelevant
 public import PaperP1.Geometry.ProjRadicalMap
 public import PaperP1.Geometry.SourceProjectiveMap
+public import PaperP1.Algebra.GradedDehomogenization
+public import PaperP1.Geometry.ProjRadicalCharts
+public import PaperP1.Geometry.SourceProjectiveFinite

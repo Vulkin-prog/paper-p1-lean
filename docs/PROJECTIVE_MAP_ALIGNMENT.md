@@ -59,3 +59,53 @@ Audit discovery also includes theorem and lemma attributes on the same
 line as their declaration. This adds seven older auxiliary declarations
 to direct axiom inspection, along with all twelve declarations in this
 checkpoint; it changes neither mathematical statements nor coverage.
+
+
+## P1-MATH-0106 extended — Finiteness of the actual projective morphism
+
+The constructed projective source morphism is now proved finite
+as a morphism of schemes. This is the literal map from the source
+Veronese Proj to the standard native Veronese Proj, not merely the
+already verified finite map of affine cones. The theorem applies
+over every field for arbitrary coefficients, positive D and root
+counts at most 2D. Characteristic zero and root independence are
+not required for finiteness.
+
+For any nonnegatively graded commutative ring and any homogeneous
+element b of degree one, a ring homomorphism to its degree-zero
+homogeneous localization is constructed by sending each degree-n
+component a to a/b^n. Compatibility with addition, multiplication
+and one is proved, followed by its formula on homogeneous
+elements, surjectivity and naturality for actual graded ring maps.
+Surjectivity and naturality transport a finite total ring map to
+a finite map of these actual chart rings, including degenerate
+charts, without a nonzero or domain assumption.
+
+The radical-admissible projective morphism is proved to restrict on
+each degree-one basic open to the corresponding Spec map, under
+the actual chart isomorphisms. Finiteness of that ring map proves
+finiteness of each restricted scheme map. Degree-one base opens
+cover the entire target by the proved irrelevant-ideal span
+identity and generation in degree one. Zariski locality then
+proves finiteness of the actual global projective morphism.
+
+This extends the argument supporting P1-MATH-0106; no new
+mathematical-change identifier is introduced. The cover's generic
+degree, identification of the base Proj with the projective plane,
+the degree-zero function-field bridge, the Hilbert calculation,
+surface degree 2^k D^2, curve-degree identities and external host
+counts remain open. T1.7 stays in_progress, coverage stays 79/167,
+confirmed improvements stay 106 and Palomar remains deferred.
+
+Verified with Lean v4.36.0-rc2: full build 12009 jobs, direct axiom audit of 8103 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 5813 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.78 GiB.
+
+The first three proofs in `Geometry/ProjRadicalCharts.lean` adapt
+the basic-open and localization compatibility proofs from the same
+upstream Functor.lean file and pinned Mathlib commit recorded above.
+The copyright and Apache 2.0 attribution are preserved. The new
+dehomogenization and finiteness arguments are proved locally;
+Mathlib's definition of finite scheme morphisms, its affine Spec
+criterion and its Zariski locality supply the checked scheme API.
+No external arithmetic estimate, original source change or further
+Paper C port is introduced. Additional Mathlib dependencies were
+compiled selectively, without downloading the full cache.

@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **8089 audited theorem/lemma declarations**. This
+- The project currently has **8103 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -7479,3 +7479,42 @@ No original manuscript source is changed. Palomar remains deferred.
 See [statement alignment and upstream provenance](PROJECTIVE_MAP_ALIGNMENT.md).
 
 Verified with Lean v4.36.0-rc2: full build 11821 jobs, direct axiom audit of 8089 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 5799 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.95 GiB.
+
+
+## P1-MATH-0106 extended — Finiteness of the actual projective morphism
+
+The constructed projective source morphism is now proved finite
+as a morphism of schemes. This is the literal map from the source
+Veronese Proj to the standard native Veronese Proj, not merely the
+already verified finite map of affine cones. The theorem applies
+over every field for arbitrary coefficients, positive D and root
+counts at most 2D. Characteristic zero and root independence are
+not required for finiteness.
+
+For any nonnegatively graded commutative ring and any homogeneous
+element b of degree one, a ring homomorphism to its degree-zero
+homogeneous localization is constructed by sending each degree-n
+component a to a/b^n. Compatibility with addition, multiplication
+and one is proved, followed by its formula on homogeneous
+elements, surjectivity and naturality for actual graded ring maps.
+Surjectivity and naturality transport a finite total ring map to
+a finite map of these actual chart rings, including degenerate
+charts, without a nonzero or domain assumption.
+
+The radical-admissible projective morphism is proved to restrict on
+each degree-one basic open to the corresponding Spec map, under
+the actual chart isomorphisms. Finiteness of that ring map proves
+finiteness of each restricted scheme map. Degree-one base opens
+cover the entire target by the proved irrelevant-ideal span
+identity and generation in degree one. Zariski locality then
+proves finiteness of the actual global projective morphism.
+
+This extends the argument supporting P1-MATH-0106; no new
+mathematical-change identifier is introduced. The cover's generic
+degree, identification of the base Proj with the projective plane,
+the degree-zero function-field bridge, the Hilbert calculation,
+surface degree 2^k D^2, curve-degree identities and external host
+counts remain open. T1.7 stays in_progress, coverage stays 79/167,
+confirmed improvements stay 106 and Palomar remains deferred.
+
+Verified with Lean v4.36.0-rc2: full build 12009 jobs, direct axiom audit of 8103 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 5813 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.78 GiB.
