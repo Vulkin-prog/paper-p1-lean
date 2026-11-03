@@ -2240,3 +2240,10 @@ public import PaperP1.Asymptotics.TwoTargetPureClassData
 public import PaperP1.Asymptotics.TwoTargetPureCount
 public import PaperP1.Arithmetic.TwoTargetLabelDimension
 public import PaperP1.Asymptotics.TwoTargetNonalignedDenseCount
+public import PaperP1.Asymptotics.CoefficientDegreeOneHostCount
+public import PaperP1.Arithmetic.TwoTargetSingletonLabels
+public import PaperP1.Arithmetic.TwoTargetSingletonSelection
+public import PaperP1.Asymptotics.TwoTargetSingletonClassData
+public import PaperP1.Arithmetic.CompressedAlignmentSymmetry
+public import PaperP1.Asymptotics.TwoTargetNonalignedSingletonCount
+public import PaperP1.Asymptotics.TwoTargetNonalignedUpperCount

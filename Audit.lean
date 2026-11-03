@@ -2623,6 +2623,7 @@ import PaperP1
 #print axioms PaperP1.ComponentSixVertexBudget.component_packing
 #print axioms PaperP1.ComponentSixVertexBudget.residual_budget
 #print axioms PaperP1.ComponentSixVertexBudget.residual_real_budget
+#print axioms PaperP1.CompressedAlignmentSymmetry.symm
 #print axioms PaperP1.CompressedChannelTargetHosts.normalized_heights
 #print axioms PaperP1.CompressedChannelTargetHosts.block_distance
 #print axioms PaperP1.CompressedChannelTargetHosts.block_heights
@@ -4735,6 +4736,12 @@ import PaperP1
 #print axioms PaperP1.TwoTargetRegularization.uniform_regularization
 #print axioms PaperP1.TwoTargetRegularization.physical_class_budgets
 #print axioms PaperP1.TwoTargetRegularization.physical_class_size
+#print axioms PaperP1.TwoTargetSingletonLabels.mem_singleton_labels
+#print axioms PaperP1.TwoTargetSingletonLabels.singleton_parts_eq
+#print axioms PaperP1.TwoTargetSingletonLabels.singleton_labels_card
+#print axioms PaperP1.TwoTargetSingletonLabels.dimension_singleton_budget
+#print axioms PaperP1.TwoTargetSingletonSelection.mixed_type_samples
+#print axioms PaperP1.TwoTargetSingletonSelection.singleton_dichotomy
 #print axioms PaperP1.TwoTargetWindowSections.range_source_map
 #print axioms PaperP1.TwoTargetWindowSections.target_coordinate
 #print axioms PaperP1.TwoTargetWindowSections.target_projection_injective
@@ -5053,6 +5060,7 @@ import PaperP1
 #print axioms PaperP1.CoarseTripleActivityUnderBCN.uniform_absolute_activity
 #print axioms PaperP1.CoarseTripleActivityUnderBCN.uniform_vanishing_activity
 #print axioms PaperP1.CodedClassCount.uniform_count
+#print axioms PaperP1.CoefficientDegreeOneHostCount.uniform_hosts
 #print axioms PaperP1.CoefficientNonalignedHostCount.uniform_hosts
 #print axioms PaperP1.CoefficientUnivariateCount.uniform_count
 #print axioms PaperP1.CoefficientUnivariateCount.uniform_pairs
@@ -6351,11 +6359,15 @@ import PaperP1
 #print axioms PaperP1.TwoTargetMixedClassData.uniform_patterns
 #print axioms PaperP1.TwoTargetNonalignedDenseCount.uniform_pairs
 #print axioms PaperP1.TwoTargetNonalignedMixedCount.uniform_hosts
+#print axioms PaperP1.TwoTargetNonalignedSingletonCount.uniform_hosts
+#print axioms PaperP1.TwoTargetNonalignedUpperCount.uniform_pairs
 #print axioms PaperP1.TwoTargetPhysicalEnumeration.uniform_enumeration
 #print axioms PaperP1.TwoTargetPureClassData.univariate_square
 #print axioms PaperP1.TwoTargetPureClassData.exists_system
 #print axioms PaperP1.TwoTargetPureClassData.uniform_systems
 #print axioms PaperP1.TwoTargetPureCount.uniform_pairs
+#print axioms PaperP1.TwoTargetSingletonClassData.exists_pattern
+#print axioms PaperP1.TwoTargetSingletonClassData.uniform_patterns
 #print axioms PaperP1.uniformLittleOOn_zero
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
 #print axioms PaperP1.UnitChannelPairWeights.uniform_joint
