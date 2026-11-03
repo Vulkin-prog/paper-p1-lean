@@ -9353,6 +9353,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "be1dcd5743cfad45c0c2390a041e609878dcfb10"
+    },
+    {
+      "id": "P1-MATH-0119",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:activity:deficit",
+        "number": "11.1",
+        "page": 28,
+        "source": "main_sections/triple_activities.tex",
+        "line": 11,
+        "statement_sha256": "8337a1e3afa7d9d8e2bbef56acbb98cd087625773ba8e97f865a607dd4eae0cb"
+      },
+      "original_assumption": "The compressed-block host count in the proof of11.1 is applied to good private fixed-channel sources with injective even-selection maps.",
+      "finding": "The actual compressed source/target count only needs one exact\nnormalized source coincidence and a nonzero effective target intersection.\nThe coefficients may be any fixed0<a<=b, even equal or non-coprime.\nNo private-coordinate, local full-rank, positive-joint, pair separation\nor injectivity premise is needed. Arbitrary finite effective-block\ncounting includes targets equal to the compressed anchor. The actual\nnumber of source/target tuples remains N^(1+epsilon).",
+      "impact": "Unconditional weakening of the hypotheses of the auxiliary compressed source/target count. The source exponent1+epsilon and the later private-channel mass exponents are unchanged; no probability cap for nonprivate sources is claimed.",
+      "proposed_revision": "State this broader counting lemma separately before the pair/target deficit proof. Use the exact source-space equality from a single normalized coincidence, inject the actual tuple into compressed-anchor/target pairs, and apply the finite effective-block pair count with its diagonal included. Reserve private coordinates for the subsequent individual source-weight bound.",
+      "evidence": [
+        "PaperP1.CompressedChannelTargetHosts.normalized_heights",
+        "PaperP1.CompressedChannelTargetHosts.block_distance",
+        "PaperP1.CompressedChannelTargetHosts.block_heights",
+        "PaperP1.CompressedChannelTargetHosts.anchor_bound",
+        "PaperP1.CompressedChannelTargetHosts.host_mem_pairs",
+        "PaperP1.CompressedChannelTargetHosts.host_key_injective",
+        "PaperP1.CompressedChannelTargetHosts.source_targets_card",
+        "PaperP1.CompressedChannelTargetHosts.all_targets_cover",
+        "PaperP1.CompressedChannelTargetCount.fixed_offsets",
+        "PaperP1.CompressedChannelTargetCount.uniform_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (12931 jobs); direct axiom audit passed for 9593 declarations using only propext, Classical.choice and Quot.sound; all 7738 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.24 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

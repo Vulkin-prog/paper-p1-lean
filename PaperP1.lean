@@ -2186,3 +2186,9 @@ public import PaperP1.Asymptotics.FiniteChannelActivityBounds
 public import PaperP1.Asymptotics.FiniteGoodPartitionUnderInputs
 public import PaperP1.Asymptotics.SharpPairActivityUnderInputs
 public import PaperP1.Asymptotics.SharpRunConversionUnderInputs
+public import PaperP1.Arithmetic.CompressedChannelTargetHosts
+public import PaperP1.Asymptotics.CompressedChannelTargetCount
+public import PaperP1.Model.PairTargetCost
+public import PaperP1.Asymptotics.ChannelPairTargetCost
+public import PaperP1.Asymptotics.SharpPairTargetDeficitUnderInputs
+public import PaperP1.Asymptotics.SharpThirdCancellationUnderInputs

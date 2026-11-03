@@ -3,6 +3,8 @@
 Stage: **exact probability identities and uniform arithmetic foundations**, 3 November 2026.
 Neither document is fully formalized.
 
+Article11.1–11.3 and15.1, and companion T7.1, now have complete conditional source statements under the recorded geometric properties. Their conditional status does not increase unconditional numbered coverage.
+
 Article Theorem 3.3 now has all five literal conclusions proved **conditionally** on the explicitly recorded geometric properties. See [complete pair-profile alignment](COMPLETE_PAIR_PROFILE_ALIGNMENT.md). This is not an unconditional completion or a Palomar registration.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
@@ -34,7 +36,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **9567 audited theorem/lemma declarations**. This
+- The project currently has **9593 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -11104,3 +11106,115 @@ remain open. The next step is to count actual dependent targets
 after a compressed fixed-channel source.
 
 Verified under Lean v4.36.0-rc2: full build passed (12919 jobs); direct axiom audit passed for 9567 declarations using only propext, Classical.choice and Quot.sound; all 7703 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.28 GiB.
+
+
+## Sharp actual pair-target deficit and triple cancellation
+
+Article Proposition11.1, Theorem11.2 and Proposition11.3 now
+have every literal source conclusion proved CONDITIONALLY on the
+already inventoried normalized-curve and ordinary/chosen-source
+surface-cover properties. Their ledger status moves from
+in_progress to conditional. No target deficit, incompatible
+activity, repeated-index estimate or cumulant comparison is an
+external premise. Unconditionally proved numbered coverage stays
+81/167. P1-MATH-0119 records an unconditional strengthening of
+the compressed source/target host count, bringing the confirmed
+improvement total to119 without a manuscript conclusion error.
+
+CompressedChannelTargetHosts works at arbitrary fixed positive
+coefficients0<a<=b. It extends the earlier principal-channel
+geometry beyond b<=4: actual compressed values have height
+between N/2 and3bN, width at most b(L+1) about their actual
+anchor, and the anchor is at most3bN. For each pair of actual
+unit offsets(i,j), the map((x,y),z) -> (anchor(x,y),z) is
+injective. Exact source-space compression identifies the
+nonzero target intersection with a genuine dependent pair of
+finite effective blocks. The existing complete article10.3
+then counts these pairs, including the diagonal where z equals
+the compressed anchor. No private prime, local full rank,
+compatibility, separation or pair injectivity is required.
+
+CompressedChannelTargetCount.fixed_offsets has a common
+critical-band threshold before all actual unit offsets.
+Summing the actual finite offset cover and absorbing its
+(L+1)^2 multiplicity gives the unconditional bound
+#allTargets(N,a,b,L)<=N^(1+epsilon).
+The actual tuple population includes every source with at
+least one exact normalized coincidence and every target whose
+effective space meets the original pair sum nontrivially.
+The fixed coefficients need not be coprime or distinct.
+This weaker-assumption count is P1-MATH-0119. It does not
+assert the private-channel probability bound for arbitrary
+nonprivate sources, or improve a printed asymptotic exponent.
+
+PairTargetCost defines the actual restricted pair/target mass
+and actual incidence population. It proves their exact
+weighted-sum identity and monotonicity in both the pair family
+and the ground set, retaining all covariance signs by absolute
+value and every heterogeneous target marginal. The original
+deficit is exactly this mass on the actual dependent-pair
+family. The already constructed three-class channel partition
+therefore gives an exact three-term deficit decomposition.
+Every actual private-pair/target incidence belongs to the image
+of the actual compressed tuple population; counting an image
+costs no orientation or inverse-normalization assumption.
+
+ChannelPairTargetCost.uniform_channel combines that proved
+N^(1+epsilon) population count with the actual private-pair
+coefficient cap N^(-2+1/b+epsilon) and the actual target cap
+K_C/N. It proves the total actual pair/independent-target
+cost N^(-2+1/b+epsilon), uniformly before EVERY prime cutoff H.
+Its fixed finite private-channel union therefore costs
+N^(-5/3+epsilon). Affine incompatibility is allowed in this
+positive absolute cost. A separate uniform_restricted_mass
+bounds any actual pair subfamily by its own absolute activity
+times N^(-1/2+epsilon), using the already complete fixed-source
+independent-target mass theorem. These finite arithmetic
+source/target counts and channel-cost bounds are unconditional.
+
+SharpPairTargetDeficitUnderInputs.article_11_1 chooses the
+finite-channel partition with a small fixed fraction of the
+final margin. The good part has the stronger5/3 rate just
+proved; the weak and exceptional parts each have3/2 rate
+from their actual activity and the independent-target half
+count. Their exact sum and constant absorption prove
+D_(2,1)(G)<=N^(-3/2+epsilon) for every deterministic subset G
+of the original dyadic block, not only the positive-marginal
+ground set. The same threshold also gives
+A2(G)<=N^(-2/3+epsilon). The exact geometric source cap is
+epsilon/512. It is fixed before the actual source/target
+populations and is not a deficit estimate supplied as an input.
+
+SharpThirdCancellationUnderInputs.uniform_cancellation uses
+that proved deficit and the unconditional incompatible-triple
+reduction. For every actual positive-marginal ground subset G,
+it proves simultaneously
+  incompatible absolute triple activity<=N^(-3/2+epsilon),
+  0<=A3-K3plus<=N^(-3/2+epsilon),
+  |kappa3-6K3plus|<=N^(-3/2+epsilon),
+  absolute repeated-index cost<=N^(-5/3+epsilon).
+Both signs of incompatible coefficients remain in the sum.
+Every repeated occurrence of a Bernoulli variable is retained;
+the stronger5/3 repeated-index rate is derived from the actual
+marginal caps and sharp A2 estimate, not assumed. The exact
+connected_activity_eq identifies the full absolute triple sum
+with the literal connected A3 in the source. Compatible
+coefficient nonnegativity was already proved unconditionally.
+The geometric source cap is preciselyepsilon/2048 in this
+joint theorem, with one threshold before G,N,L. Its actual
+positive-marginal premise is the source admissible set, not a
+homogeneous or regular-window replacement.
+
+Stable input P1-ARITH-COMPRESSED-CHANNEL-TARGETS is now proved.
+The only unproved properties in the final three article rows
+remain P1-GEO-NORMALIZED-CURVE-UNIFORM,
+P1-GEO-ORDINARY-SURFACE-COVER and
+P1-GEO-CHOSEN-SOURCE-SURFACE-COVER, as ordinary explicit theorem
+arguments at the displayed finite caps. This checkpoint adds
+no new literature assumption, Paper C source, kernel axiom,
+dependency download or manuscript-byte edit. It does not prove
+the remaining dense primitive triple bound, the optimal third
+cumulant exponent/lower bound, conditional Palm rates or any
+complete count-law reconstruction. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (12931 jobs); direct axiom audit passed for 9593 declarations using only propext, Classical.choice and Quot.sound; all 7738 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.24 GiB.
