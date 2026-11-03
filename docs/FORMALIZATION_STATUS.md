@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **8573 audited theorem/lemma declarations**. This
+- The project currently has **8599 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -8310,3 +8310,43 @@ T1.7 stays in_progress, coverage stays 79/167, confirmed improvements
 stay 107 and Palomar remains deferred. Original sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12311 jobs, direct axiom audit of 8573 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6425 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.15 GiB.
+
+
+## Actual radical descent, affine quotient charts, and graph-line exclusion
+
+The literal homogeneous radical equations are now proved in the actual
+source and base curve quotients. For a finite graded projection of rank
+one, these equations descend to squares in the actual projective base
+function field on any nonzero degree-one chart. This is specialized to
+an actual projective source point and its actual degree-one field map.
+
+For any surjective graded map, the kernel of the actual degree-one
+chart map is proved to be the image of the graded-map kernel under
+dehomogenization. The actual native Veronese quotient Z-chart is thereby
+identified with the affine polynomial-plane quotient. Contracting a
+homogeneous principal plane ideal and then taking this chart gives
+exactly the principal ideal of its affine equation, for any homogeneous
+equation degree and any positive Veronese degree.
+
+For a plane-image ideal whose affine equation is Y = alpha X + beta,
+the actual base chart is constructed as a polynomial ring in one
+variable. Its nonzero chart coordinate follows from the image-ideal
+condition. The chart equivalence sends every literal radicand to exactly
+the line-restriction polynomial used in the proved square obstruction.
+The actual source degree-one projection therefore produces functional
+squares in the ordinary rational function field, without separate
+square or coordinate-diagram assumptions. Over the rationals, the
+admissible-host square-class and disjoint-support hypotheses contradict
+this. An actual height-one source curve with such a graph-line image
+through an admissible host has Hilbert multiplicity at least 2D.
+
+The graph-line image ideal and host-on-line conditions remain explicit.
+The classification of an arbitrary homogeneous linear image into a
+graph or vertical line, and the corresponding actual vertical-chart
+diagram, remain open. So do geometric dimension/prime-height and
+intrinsic hyperplane-degree/Hilbert-multiplicity alignment, higher
+low-degree geometry, and external uniform host counts. T1.7 remains
+in_progress, coverage stays 79/167, confirmed improvements stay 107,
+and Palomar remains deferred. Original sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12331 jobs, direct axiom audit of 8599 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6464 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.12 GiB.

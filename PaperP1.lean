@@ -1884,3 +1884,13 @@ public import PaperP1.Algebra.RankOneFieldSquares
 public import PaperP1.Geometry.ProjFunctionFieldRankOne
 public import PaperP1.Geometry.SourceProjectiveCurveSmallDegree
 public import PaperP1.Geometry.SourceProjectiveCurveFieldEquiv
+public import PaperP1.Algebra.GradedQuotientChartMap
+public import PaperP1.Algebra.NativeVeroneseAffineIdeal
+public import PaperP1.Algebra.NativeVeroneseLineChart
+public import PaperP1.Algebra.NativeVeroneseQuotientChart
+public import PaperP1.Algebra.SourceCurveRadicalRelations
+public import PaperP1.Geometry.ProjChartFunctionFieldTransport
+public import PaperP1.Geometry.ProjRankOneQuadraticDescent
+public import PaperP1.Geometry.SourceProjectiveCurveGraphExclusion
+public import PaperP1.Geometry.SourceProjectiveCurveLineSquares
+public import PaperP1.Geometry.SourceProjectiveCurveRadicalDescent

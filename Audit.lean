@@ -816,6 +816,9 @@ import PaperP1
 #print axioms PaperP1.GradedQuotientAdmissibility.irrelevant_le_radical
 #print axioms PaperP1.GradedQuotientChartCoordinate.exists_linear_outside
 #print axioms PaperP1.GradedQuotientChartCoordinate.exists_coordinate
+#print axioms PaperP1.GradedQuotientChartMap.kernel
+#print axioms PaperP1.GradedQuotientChartMap.equiv_mk
+#print axioms PaperP1.GradedQuotientChartMap.transportEquiv_map
 #print axioms PaperP1.GradedQuotientIdealCongruence.parameters
 #print axioms PaperP1.GradedQuotientIdealCongruence.hilbertPolynomial
 #print axioms PaperP1.GradedQuotientModuleGenerators.baseIdeal_homogeneous
@@ -1074,6 +1077,17 @@ import PaperP1
 #print axioms PaperP1.NativePlaneQuotientNormalization.hasParameters
 #print axioms PaperP1.NativePlaneQuotientNormalization.piece_finite
 #print axioms PaperP1.NativePlaneQuotientNormalization.exists_polynomial
+#print axioms PaperP1.NativeVeroneseAffineIdeal.affineMap_apply
+#print axioms PaperP1.NativeVeroneseAffineIdeal.specialization_Z
+#print axioms PaperP1.NativeVeroneseAffineIdeal.affineMap_radicand
+#print axioms PaperP1.NativeVeroneseAffineIdeal.contracted_principal
+#print axioms PaperP1.NativeVeroneseLineChart.polynomialEquiv_mk
+#print axioms PaperP1.NativeVeroneseLineChart.polynomialMap_scaled
+#print axioms PaperP1.NativeVeroneseLineChart.coordinate_ne_zero
+#print axioms PaperP1.NativeVeroneseLineChart.equiv_dehomogenization
+#print axioms PaperP1.NativeVeroneseLineChart.equiv_radicand
+#print axioms PaperP1.NativeVeroneseQuotientChart.chartIdeal_eq
+#print axioms PaperP1.NativeVeroneseQuotientChart.equiv_dehomogenization
 #print axioms PaperP1.NonnegativePowerDifference.bound
 #print axioms PaperP1.OldBlockSelections.exists_selections
 #print axioms PaperP1.PairProductComparison.exact_difference
@@ -1397,6 +1411,10 @@ import PaperP1
 #print axioms PaperP1.SourceCurveQuotient.rank_bounds
 #print axioms PaperP1.SourceCurveQuotient.hasSlope
 #print axioms PaperP1.SourceCurveQuotient.multiplicity
+#print axioms PaperP1.SourceCurveRadicalRelations.root_mem_one
+#print axioms PaperP1.SourceCurveRadicalRelations.baseRadicand_mem_two
+#print axioms PaperP1.SourceCurveRadicalRelations.original_square
+#print axioms PaperP1.SourceCurveRadicalRelations.root_square
 #print axioms PaperP1.SourceVeroneseChartBasis.chartBasis_apply
 #print axioms PaperP1.SourceVeroneseChartBasis.chartBasis_fraction
 #print axioms PaperP1.SourceVeroneseChartBasis.chart_free_rank
@@ -6329,6 +6347,8 @@ import PaperP1
 #print axioms PaperP1.ProjChartFunctionFieldNaturality.germToFunctionField_natural
 #print axioms PaperP1.ProjChartFunctionFieldNaturality.chartMapCat_natural
 #print axioms PaperP1.ProjChartFunctionFieldNaturality.chartMap_natural
+#print axioms PaperP1.ProjChartFunctionFieldTransport.equiv_chartMap
+#print axioms PaperP1.ProjChartFunctionFieldTransport.isSquare_iff
 #print axioms PaperP1.ProjDegreeScalingCharts.inclusion_comp_map
 #print axioms PaperP1.ProjDegreeScalingCharts.awayToSection_comp_appLE
 #print axioms PaperP1.ProjDegreeScalingCharts.chart_comp_map
@@ -6373,6 +6393,8 @@ import PaperP1
 #print axioms PaperP1.ProjRadicalMap.map_preimage_basicOpen
 #print axioms PaperP1.ProjRadicalRank.chart_pullback
 #print axioms PaperP1.ProjRadicalRank.rank_on_chart
+#print axioms PaperP1.ProjRankOneQuadraticDescent.dehomogenized_isSquare
+#print axioms PaperP1.ProjRankOneQuadraticDescent.parametrized_isSquare
 #print axioms PaperP1.ProjSurjectiveClosedImmersion.restriction_closedImmersion
 #print axioms PaperP1.ProjSurjectiveClosedImmersion.map_closedImmersion
 #print axioms PaperP1.SourceCurveHeightOneDegree.exists_polynomial
@@ -6420,6 +6442,10 @@ import PaperP1
 #print axioms PaperP1.SourceProjectiveCurveDegree.exists_polynomial
 #print axioms PaperP1.SourceProjectiveCurveDegree.exists_degree_formula
 #print axioms PaperP1.SourceProjectiveCurveFieldEquiv.isSquare_iff
+#print axioms PaperP1.SourceProjectiveCurveGraphExclusion.no_degree_one
+#print axioms PaperP1.SourceProjectiveCurveGraphExclusion.multiplicity_ge_twoD
+#print axioms PaperP1.SourceProjectiveCurveLineSquares.lineRestriction_isSquare
+#print axioms PaperP1.SourceProjectiveCurveRadicalDescent.radical_isSquare
 #print axioms PaperP1.SourceProjectiveCurveSmallDegree.factors_lt_two
 #print axioms PaperP1.SourceProjectiveCurveSmallDegree.line_and_degree_one
 #print axioms PaperP1.SourceProjectiveEmbedding.index_finite
