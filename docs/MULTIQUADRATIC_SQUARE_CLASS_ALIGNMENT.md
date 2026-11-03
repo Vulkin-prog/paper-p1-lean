@@ -768,3 +768,43 @@ improvements stay 106. No external estimate, dependency download,
 original-source change or Palomar registration is introduced.
 
 Verified with Lean v4.36.0-rc2: targeted builds and full lake build (11469 jobs), actual 8070-declaration axiom audit, all 5787 ledger/finding declaration references, 138 preserved source-manifest entries and the complete 167-result inventory. Only propext, Classical.choice and Quot.sound occur. Ubuntu root free space: 14.28 GiB. Numbered coverage remains 79/167; confirmed improvements remain 106.
+
+
+## Actual projective scheme map
+
+The actual rescaled standard-base inclusion now induces a constructed
+morphism of schemes from the source Proj to the native standard
+Veronese Proj. Its inverse image of every base basic open D(b) is
+exactly the source basic open D(f(b)). This construction uses the
+literal graded inclusion and the actual source quotient, rather
+than an assumed projective model.
+
+The admissibility criterion is proved: the source irrelevant ideal
+is contained in the radical of the mapped base irrelevant ideal.
+The source generators are proved to generate their actual ring;
+the irrelevant ideal of a ring generated in degree one is proved
+to be their ideal span. Each pure base generator lies in the mapped
+base irrelevant ideal, while the square of each radical generator
+lies there by its actual homogeneous radicand relation. These
+arguments apply over every field, including zero radicand
+coefficients, for positive D and root counts at most 2D.
+
+The pinned Mathlib Proj functor takes the stronger condition
+H_plus <= map(G_plus). The quadratic source supplies the sufficient
+radical containment above. A local extension implements the point
+map, its continuity, the structure-sheaf map and its locality on
+stalks under that weaker condition, and bundles the resulting
+Scheme.Hom. This is a library interface extension, not an error
+in the manuscript or a new mathematical-change identifier.
+
+Finiteness of the scheme morphism, identification of the base Proj
+with the projective plane, the degree-zero function-field bridge,
+the degree 2^k of the projective cover, surface degree 2^k D^2,
+curve-degree identities and the external surface covering and
+host counts remain open. T1.7 stays in_progress, numbered coverage
+stays 79/167 and confirmed mathematical improvements stay 106.
+No original manuscript source is changed. Palomar remains deferred.
+
+See [statement alignment and upstream provenance](PROJECTIVE_MAP_ALIGNMENT.md).
+
+Verified with Lean v4.36.0-rc2: full build 11821 jobs, direct axiom audit of 8089 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 5799 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.95 GiB.

@@ -854,6 +854,8 @@ import PaperP1
 #print axioms PaperP1.IrreduciblePointFactor.exists_factor
 #print axioms PaperP1.IrreduciblePointFactor.integer_point
 #print axioms PaperP1.IrreduciblePointFactor.factor_partial_degrees
+#print axioms PaperP1.IrrelevantGenerated.irrelevant_eq_span
+#print axioms PaperP1.IrrelevantGenerated.irrelevant_le_radical
 #print axioms PaperP1.IteratedPowerSeriesEquiv.coefficient_toIterated
 #print axioms PaperP1.IteratedPowerSeriesEquiv.toIterated_monomial
 #print axioms PaperP1.IteratedPowerSeriesEquiv.toIterated_mul
@@ -1130,6 +1132,11 @@ import PaperP1
 #print axioms PaperP1.SourceVeroneseHomogeneousBasis.mapped_basis_mem
 #print axioms PaperP1.SourceVeroneseHomogeneousBasis.sourceBasis_mem
 #print axioms PaperP1.SourceVeroneseHomogeneousBasis.sourceBasis_degree_bound
+#print axioms PaperP1.SourceVeroneseIrrelevant.source_generators_adjoin_top
+#print axioms PaperP1.SourceVeroneseIrrelevant.native_homogeneous_mem_irrelevant
+#print axioms PaperP1.SourceVeroneseIrrelevant.radical_square_mem_map
+#print axioms PaperP1.SourceVeroneseIrrelevant.pure_generator_mem_map
+#print axioms PaperP1.SourceVeroneseIrrelevant.source_irrelevant_le_radical
 #print axioms PaperP1.SparseConstraintBasis.coordinateKernelEquiv_apply
 #print axioms PaperP1.SparseConstraintBasis.physical_combination
 #print axioms PaperP1.SparseConstraintBasis.exists_sparse_cut_basis
@@ -1581,6 +1588,7 @@ import PaperP1
 #print axioms PaperP1.WeightedRecurrence.l1_nonneg
 #print axioms PaperP1.WeightedRecurrence.abs_tsum_le_l1
 #print axioms PaperP1.WeightedRecurrence.l1_add_le
+#print axioms PaperP1.WeightedRecurrence.l1_neg
 #print axioms PaperP1.WeightedRecurrence.l1_sub_comm
 #print axioms PaperP1.WeightedRecurrence.abs_l1_sub_le
 #print axioms PaperP1.WeightedRecurrence.recurrence
@@ -5093,6 +5101,7 @@ import PaperP1
 #print axioms PaperP1.ComponentParityCode.selected_card_le
 #print axioms PaperP1.ComponentParityCode.kernel_even
 #print axioms PaperP1.ComponentParityCode.kernel_square
+#print axioms PaperP1.CoordinateForms.mem_zeroCoordinates
 #print axioms PaperP1.CoordinateForms.zeroCoordinates_empty
 #print axioms PaperP1.CoordinateForms.zeroCoordinates_insert
 #print axioms PaperP1.CoordinateForms.zeroCoordinates_insert_le
@@ -5958,6 +5967,11 @@ import PaperP1
 #print axioms PaperP1.ZeroDegreeQuadraticFibres.encode_injective_on_fibre
 #print axioms PaperP1.ZeroDegreeQuadraticFibres.quadratic_fibre_count
 #print axioms PaperP1.ZeroDegreeQuadraticFibres.auxiliary_zero_count
+#print axioms PaperP1.ProjRadicalMap.locallyFraction
+#print axioms PaperP1.ProjRadicalMap.germMap
+#print axioms PaperP1.ProjRadicalMap.localHomStalk
+#print axioms PaperP1.ProjRadicalMap.map_preimage_basicOpen
+#print axioms PaperP1.SourceProjectiveMap.map_preimage_basicOpen
 #print axioms PaperP1.AbsoluteActivityDecomposition.centered_zero_direct
 #print axioms PaperP1.AbsoluteActivityDecomposition.absolute_eq_dependent
 #print axioms PaperP1.AbsoluteActivityDecomposition.centered_bound
@@ -7369,6 +7383,7 @@ import PaperP1
 #print axioms PaperP1.AtomicProbability.hasSum_realMass
 #print axioms PaperP1.AtomicProbability.totalVariation_nonneg
 #print axioms PaperP1.AtomicProbability.totalVariation_symm
+#print axioms PaperP1.AtomicProbability.totalVariation_self
 #print axioms PaperP1.AtomicProbability.ofMass_real_singleton
 #print axioms PaperP1.AtomicProbability.ofMass_integrable_iff
 #print axioms PaperP1.AtomicProbability.ofMass_integral
@@ -7446,6 +7461,7 @@ import PaperP1
 #print axioms PaperP1.CompletedLaw.norm_finite
 #print axioms PaperP1.CompletedLaw.finite_norm_smul
 #print axioms PaperP1.CompletedLaw.norm_ofFinite
+#print axioms PaperP1.CompletedLaw.coeff_ofFinite
 #print axioms PaperP1.CompletedLaw.finite_sum_abs_coeff_le
 #print axioms PaperP1.CompletedLaw.summable_abs_coeff
 #print axioms PaperP1.CompletedLaw.tsum_abs_coeff_le
@@ -7608,6 +7624,7 @@ import PaperP1
 #print axioms PaperP1.FiniteLawEmbedding.embed_sub
 #print axioms PaperP1.FiniteLawEmbedding.embed_scalar_mul
 #print axioms PaperP1.FiniteLawEmbedding.l1Norm_eq_signed_singleton_tsum
+#print axioms PaperP1.FiniteLawShift.extendedCoefficient_nat
 #print axioms PaperP1.FiniteLawShift.scalar_mul_coeff
 #print axioms PaperP1.FiniteLawShift.shift_coeff_zero
 #print axioms PaperP1.FiniteLawShift.shift_coeff_succ
@@ -7928,6 +7945,8 @@ import PaperP1
 #print axioms PaperP1.PoissonSecondDifferenceNorm.main_19_2
 #print axioms PaperP1.PoissonSequence.hasSum_mass
 #print axioms PaperP1.PoissonSequence.mass_pos
+#print axioms PaperP1.PoissonSequence.shift_zero
+#print axioms PaperP1.PoissonSequence.shift_succ
 #print axioms PaperP1.PoissonSequence.hasSum_shift
 #print axioms PaperP1.PoissonSequence.hasSum_secondDifference
 #print axioms PaperP1.PoissonSequence.hasSum_quadraticMass

@@ -1751,3 +1751,7 @@ public import PaperP1.Algebra.SourceVeroneseGrading
 public import PaperP1.Algebra.QuadraticTowerHomogeneousBasis
 public import PaperP1.Algebra.SourceVeroneseHomogeneousBasis
 public import PaperP1.Algebra.SourceVeroneseGradedBaseMap
+public import PaperP1.Algebra.IrrelevantGenerated
+public import PaperP1.Algebra.SourceVeroneseIrrelevant
+public import PaperP1.Geometry.ProjRadicalMap
+public import PaperP1.Geometry.SourceProjectiveMap
