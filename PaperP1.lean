@@ -1868,3 +1868,12 @@ public import PaperP1.Algebra.SourceCurveFiniteParameters
 public import PaperP1.Algebra.GradedQuotientIdealCongruence
 public import PaperP1.Algebra.SourceCurvePlaneEquationHilbert
 public import PaperP1.Geometry.SourceCurvePlaneEquationDegree
+public import PaperP1.Algebra.HomogeneousPrincipalIdealGenerator
+public import PaperP1.Algebra.HomogeneousHeightOneEquation
+public import PaperP1.Algebra.IntegralPrimeHeight
+public import PaperP1.Algebra.GradedVeroneseIntegral
+public import PaperP1.Geometry.VeroneseHomogeneousPrime
+public import PaperP1.Geometry.SourceCurvePlaneImagePrime
+public import PaperP1.Geometry.SourceCurvePlaneImageEquation
+public import PaperP1.Geometry.SourceCurveProjectionHeight
+public import PaperP1.Geometry.SourceCurveHeightOneDegree

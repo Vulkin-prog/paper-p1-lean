@@ -857,6 +857,8 @@ import PaperP1
 #print axioms PaperP1.GradedVeroneseInclusion.irrelevant_le_radical
 #print axioms PaperP1.GradedVeroneseInclusion.chart_injective
 #print axioms PaperP1.GradedVeroneseInclusion.chart_surjective
+#print axioms PaperP1.GradedVeroneseIntegral.homogeneous_integral
+#print axioms PaperP1.GradedVeroneseIntegral.integral
 #print axioms PaperP1.GradedVeroneseMap.mem_veronese
 #print axioms PaperP1.GradedVeroneseMap.map_val
 #print axioms PaperP1.GradedVeroneseMap.surjective
@@ -887,6 +889,7 @@ import PaperP1
 #print axioms PaperP1.HomogeneousFreeApproximation.component_mul_mem_span
 #print axioms PaperP1.HomogeneousFreeApproximation.component_clears
 #print axioms PaperP1.HomogeneousFreeApproximation.exists_homogeneous_free_approximation
+#print axioms PaperP1.HomogeneousHeightOneEquation.exists_equation
 #print axioms PaperP1.HomogeneousLinearNormalization.quotientEquiv_mk
 #print axioms PaperP1.HomogeneousLinearNormalization.parameterMap_X
 #print axioms PaperP1.HomogeneousLinearNormalization.parameter_mem
@@ -907,6 +910,9 @@ import PaperP1
 #print axioms PaperP1.HomogeneousPolynomialEvaluation.eval_scale
 #print axioms PaperP1.HomogeneousPolynomialEvaluation.homogeneous_zero_eq_C
 #print axioms PaperP1.HomogeneousPolynomialEvaluation.exists_eval_cons_one
+#print axioms PaperP1.HomogeneousPrincipalIdealGenerator.homogeneous_of_span
+#print axioms PaperP1.HomogeneousPrincipalIdealGenerator.exists_generator
+#print axioms PaperP1.HomogeneousPrincipalIdealGenerator.exists_positive_generator
 #print axioms PaperP1.HomogeneousPrincipalQuotient.quotientMap_surjective
 #print axioms PaperP1.HomogeneousPrincipalQuotient.mulMap_injective
 #print axioms PaperP1.HomogeneousPrincipalQuotient.range_mulMap
@@ -1021,6 +1027,9 @@ import PaperP1
 #print axioms PaperP1.IntegralLine.collinear_of_rational_parameter
 #print axioms PaperP1.IntegralLine.exists_primitive_line
 #print axioms PaperP1.IntegralLine.parametrize_line_of_primitive
+#print axioms PaperP1.IntegralPrimeHeight.comap_strictMono
+#print axioms PaperP1.IntegralPrimeHeight.height_le
+#print axioms PaperP1.IntegralPrimeHeight.height_eq
 #print axioms PaperP1.IrreduciblePointFactor.exists_factor
 #print axioms PaperP1.IrreduciblePointFactor.integer_point
 #print axioms PaperP1.IrreduciblePointFactor.factor_partial_degrees
@@ -6359,7 +6368,18 @@ import PaperP1
 #print axioms PaperP1.ProjRadicalRank.rank_on_chart
 #print axioms PaperP1.ProjSurjectiveClosedImmersion.restriction_closedImmersion
 #print axioms PaperP1.ProjSurjectiveClosedImmersion.map_closedImmersion
+#print axioms PaperP1.SourceCurveHeightOneDegree.exists_polynomial
+#print axioms PaperP1.SourceCurveHeightOneDegree.exists_degree_formula
+#print axioms PaperP1.SourceCurveHeightOneDegree.exists_polynomial_of_source_height
+#print axioms PaperP1.SourceCurveHeightOneDegree.exists_degree_formula_of_source_height
 #print axioms PaperP1.SourceCurvePlaneEquationDegree.multiplicity
+#print axioms PaperP1.SourceCurvePlaneImageEquation.exists_equation
+#print axioms PaperP1.SourceCurvePlaneImagePrime.ideal_prime
+#print axioms PaperP1.SourceCurvePlaneImagePrime.ideal_homogeneous
+#print axioms PaperP1.SourceCurvePlaneImagePrime.contraction
+#print axioms PaperP1.SourceCurveProjectionHeight.base_height
+#print axioms PaperP1.SourceCurveProjectionHeight.plane_height_le
+#print axioms PaperP1.SourceCurveProjectionHeight.plane_height_one
 #print axioms PaperP1.SourceCurveProjectiveFieldRank.base_nonempty
 #print axioms PaperP1.SourceCurveProjectiveFieldRank.source_nonempty
 #print axioms PaperP1.SourceCurveProjectiveFieldRank.baseIntegral
@@ -6415,6 +6435,9 @@ import PaperP1
 #print axioms PaperP1.SourceProjectivePlane.projection_rank
 #print axioms PaperP1.SourceProjectiveRank.map_rank
 #print axioms PaperP1.SourceProjectiveRank.map_surjective
+#print axioms PaperP1.VeroneseHomogeneousPrime.pointEquiv_apply
+#print axioms PaperP1.VeroneseHomogeneousPrime.comap_inverse
+#print axioms PaperP1.VeroneseHomogeneousPrime.exists_prime_over
 #print axioms PaperP1.AbsoluteActivityDecomposition.centered_zero_direct
 #print axioms PaperP1.AbsoluteActivityDecomposition.absolute_eq_dependent
 #print axioms PaperP1.AbsoluteActivityDecomposition.centered_bound

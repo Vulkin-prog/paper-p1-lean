@@ -7943,3 +7943,57 @@ the adapted homogeneous top-coefficient argument is attributed to the
 pinned Mathlib source with its Apache licence.
 
 Verified with Lean v4.36.0-rc2: full build 12269 jobs, direct axiom audit of 8532 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6372 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.21 GiB.
+
+
+## Actual source prime heights and extracted plane-equation degree
+
+The actual homogeneous prime ideals now pass through the checked
+Veronese projective isomorphism. Its underlying point equivalence is
+constructed, and the contraction of its inverse prime is proved to be
+the original Veronese prime. For an actual source prime quotient, a
+nonzero degree-one base quotient coordinate constructs its projective
+base prime. Its inverse gives an actual homogeneous prime in the
+ordinary three-variable plane ring, with contraction exactly equal to
+the actual base ideal.
+
+A nonzero principal homogeneous polynomial ideal is proved to have a
+homogeneous generator. The proof takes a nonzero homogeneous component
+of a generator. Divisibility by the generator and additivity of total
+degree force the quotient to be a nonzero constant. The generator is
+therefore a scalar multiple of that homogeneous component. For a proper
+ideal its degree is positive. The pinned UFD height-one theorem then
+produces a positive-degree homogeneous generator of a height-one prime;
+primality of the principal ideal proves the generator irreducible.
+
+Prime contraction is strictly increasing along chains under integral
+maps. The actual height inequality is proved using order height. With
+going down, chains lift and the heights are equal. The actual source
+projection has both properties: its checked finite free basis supplies
+integrality and flatness, hence going down. Therefore the actual source
+prime and its native base contraction have equal heights. Every positive
+Veronese inclusion is also proved integral by taking D-th powers of
+homogeneous elements and recomposing arbitrary elements. The lifted
+ordinary plane prime has height at most the native base prime. If the
+source prime has height one, its base contraction is nonzero of height
+one, so the lifted ordinary plane prime is nonzero and has height one.
+
+Consequently a height-one actual source prime supplies its own
+homogeneous irreducible plane equation and the exact contracted-ideal
+equality. Over an infinite field, source Hilbert-polynomial existence
+then follows from the preceding finite-normalization proof. The actual
+source Hilbert multiplicity equals D times the extracted equation degree
+times the actual projective function-field degree. The final theorem
+assumes neither a plane equation, an image ideal equality, an image-height
+condition, a Hilbert polynomial nor a slope. The source-height-one input
+and a nonzero degree-one base quotient coordinate remain explicit.
+
+The algebraic image-equation extraction is thus complete in this
+source-height-one formulation. A separate statement-alignment step must
+relate the manuscript's geometric dimension-one curve condition to that
+source prime height, and compare the actual Hilbert multiplicity with
+the intrinsic hyperplane degree. Low-degree geometry and external host
+counts remain open. T1.7 stays in_progress, coverage stays 79/167,
+confirmed improvements stay 107 and Palomar remains deferred. Original
+manuscript sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12297 jobs, direct axiom audit of 8555 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6399 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.18 GiB.
