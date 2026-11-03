@@ -1900,3 +1900,55 @@ surface/curve point counts also remain open. Original sources and
 the Lean/Mathlib pins are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12403 jobs, direct axiom audit of 8708 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6601 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.02 GiB.
+
+
+## Actual field-degree tower and direct common-quotient graph construction
+
+The rational-function degree tower in Step 5 is now proved for
+actual intermediate fields. For a reduced pair p,q over any field F,
+q nonzero, the degree of F(T) over F(p/q) is max(deg p,deg q), using
+the proved Mathlib rational-function degree theorem and an explicit
+comparison with the supplied reduced pair. Evaluating at an actual
+transcendental x in an extension K transports this to F(x)/F(p(x)/q(x)).
+The tower identity for the actual extension K follows; positive degree
+of K/F(x) permits exact cancellation in the manuscript's mY=a*mX.
+
+A more direct algebraic construction is also proved. Write
+A_nu=b_nu product_{i in I_nu}(T+i), with nonzero b_nu in F, disjoint
+root sets of the same positive cardinality a, and actual identities
+A_nu(x)=t*(y+j_nu). Two equations suffice to construct
+q=A_0-A_1 and p=j_0*A_1-j_1*A_0. The denominator is nonzero;
+j_0 and j_1 are proved distinct, rather than assumed distinct.
+The pair p,q is coprime and has exact maximum degree a. Every further
+equation gives the actual polynomial identity
+p+j_nu*q=(j_0-j_1)*A_nu. Thus all selected offsets give the required
+grid matches, and coprimality proves the denominator nonzero there.
+The natural input in which the original quotients differ by nonzero
+F-constants is converted to these identities as well. Exact graph
+degree and all root matches therefore follow algebraically after
+the common-quotient step, without a separate curve-degree cancellation.
+
+The graph relation C(p)-Y*C(q) is proved to lie in the actual kernel
+of evaluation at the function-field coordinates. Every integral
+point whose evaluation kernel contains that actual coordinate ideal
+satisfies the graph equation. Combining the constructed reduced graph,
+all its constructed matches, actual survivor/grid selection, rational
+descent and the preceding arithmetic bounds gives an explicit offset-
+only bound on admissible integral curve points. Its critical-band
+large-scale exclusion chooses one threshold before both fields F,K,
+the equations, constants, exceptional set, coordinates and hosts.
+There is no assumed reduced graph, exact graph degree, grid-match map,
+or graph-point equation in this final common-quotient exclusion.
+
+This is recorded as improvement P1-MATH-0109, a simplification of the
+transition between Steps 5 and 6. The geometric arguments providing
+nonconstant/transcendental x, the common-quotient constants from equal
+divisors, and the exceptional-equation bound remain explicit open
+work. Genus, Riemann--Hurwitz, reduced-fibre/divisor arguments,
+geometric dimension versus source prime height, intrinsic line-bundle
+degrees and the external uniform point counts are not claimed proved.
+T1.7 stays in_progress, coverage stays 79/167, confirmed improvements
+become 109, and Palomar remains deferred. Original manuscript bytes
+and the Lean/Mathlib pins are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12421 jobs, direct axiom audit of 8740 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6639 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.99 GiB.

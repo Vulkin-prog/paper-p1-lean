@@ -1930,3 +1930,10 @@ public import PaperP1.Asymptotics.CriticalDisjointEquationGraphExclusion
 public import PaperP1.Combinatorics.DisjointOffsetGrid
 public import PaperP1.Diophantine.DisjointEquationGraphBound
 public import PaperP1.Diophantine.DisjointEquationGraphDescent
+public import PaperP1.Algebra.RationalMapFieldDegree
+public import PaperP1.Algebra.RationalGraphFieldTower
+public import PaperP1.Algebra.CommonQuotientGraph
+public import PaperP1.Algebra.OffsetCommonQuotientGraph
+public import PaperP1.Algebra.BivariateGraphSpecialization
+public import PaperP1.Diophantine.DisjointCommonQuotientBound
+public import PaperP1.Asymptotics.CriticalCommonQuotientExclusion
