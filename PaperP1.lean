@@ -1766,3 +1766,9 @@ public import PaperP1.Geometry.ProjRadicalFlat
 public import PaperP1.Geometry.SourceProjectiveFlat
 public import PaperP1.Geometry.ProjRadicalRank
 public import PaperP1.Geometry.SourceProjectiveRank
+public import PaperP1.Algebra.StandardVeroneseCoordinates
+public import PaperP1.Geometry.ProjIntegral
+public import PaperP1.Geometry.SourceProjectiveIntegral
+public import PaperP1.Geometry.ProjFunctionField
+public import PaperP1.Geometry.ProjFunctionFieldMap
+public import PaperP1.Geometry.SourceProjectiveFunctionField

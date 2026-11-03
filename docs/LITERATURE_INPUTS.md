@@ -7324,3 +7324,55 @@ coverage stays 79/167, confirmed improvements stay 106 and
 Palomar remains deferred.
 
 Verified with Lean v4.36.0-rc2: full build 12061 jobs, direct axiom audit of 8129 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 5839 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.71 GiB.
+
+
+## Actual integral projective schemes and their function fields
+
+The actual native base and the actual source projective schemes
+are now proved integral under the source integrality hypotheses.
+The base needs only a field and positive D. The source retains
+characteristic zero, nonzero radicand coefficients, at least one
+root in each equation and the exact pairwise disjoint root-set
+hypotheses already used for its coordinate-domain proof. The
+positive degree and root-count bounds supply its rescaled grading.
+No domain or integrality assertion is assumed as a new interface.
+
+For a graded domain, homogeneous localization at any submonoid
+avoiding zero is proved a domain by its faithful embedding into
+the ordinary localization. Every actual Proj stalk is consequently
+a domain, and the scheme is reduced. If the irrelevant ideal is
+nonzero, the literal zero homogeneous prime is constructed as a
+point and proved generic. This proves irreducibility, nonemptiness
+and integrality, and identifies the scheme's chosen generic point
+with that zero prime.
+
+The native coordinate powers X_j^D are constructed in the actual
+standard Veronese algebra, with proved degree-one membership and
+nonvanishing. The Z^D coordinate proves nonzero irrelevant ideals
+for both the base and, by the faithful graded base inclusion, the
+source. These facts discharge the nonempty-Proj hypotheses on the
+literal algebras used for the projective cover.
+
+The actual scheme function field is constructed as ring-equivalent
+to the homogeneous localization at the zero ideal: fractions of
+homogeneous numerators and nonzero denominators of the same degree.
+The latter ring is proved a field. A faithful radical-admissible
+graded map is proved to map the zero prime and generic point to
+their actual counterparts. Its map of scheme function fields is
+constructed directly from the scheme morphism's stalk map and
+proved injective. The corresponding map on degree-zero homogeneous
+fractions is also constructed. These constructions are instantiated
+for the exact projective base inclusion of the source, retaining
+all the stated source hypotheses.
+
+The remaining alignment includes the compatibility of the two
+function-field maps under these equivalences and identification
+with the affine split-radical generic field in the manuscript.
+The degree of that actual field extension is not yet certified by
+the already proved constant scheme rank. The explicit base Proj
+identification with the projective plane, Hilbert computation,
+surface degree 2^k D^2, curve-degree identities and external host
+counts remain open. T1.7 stays in_progress, coverage stays 79/167,
+confirmed improvements stay 106 and Palomar remains deferred.
+
+Verified with Lean v4.36.0-rc2: full build 12075 jobs, direct axiom audit of 8151 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 5867 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.69 GiB.
