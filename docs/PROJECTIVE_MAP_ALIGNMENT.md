@@ -2049,3 +2049,49 @@ not a confirmed manuscript-conclusion error. Original manuscript
 bytes and pinned dependencies are unchanged.
 
 Verified under Lean v4.36.0-rc2: full build passed (12639 jobs); direct axiom audit passed for 9067 declarations using only propext, Classical.choice and Quot.sound; all 7069 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.60 GiB.
+
+
+## Direct integer systems and a uniform fixed-subsystem reduction
+
+The literal degree-(a,1) per-system host bound now has a
+single direct statement with exactly the paper's alignment
+scope. It starts only with finite integer systems d_i,I_i,j_i,
+common positive left size a, disjoint left root sets, distinct
+right offsets, coefficients of height <=N^A0, offsets <=L+1,
+positive dyadic hosts and actual integer roots of
+w_i^2=d_i*product_(z in I_i)(X+z)*(Y+j_i).
+For a>=2 aligned hosts are permitted; only when a=1 does the
+statement exclude the actual source alignment predicate.
+Neither host square-class injectivity nor directness is assumed.
+
+The proof chooses the homogenization degree from A0,K,
+constructs the actual homogeneous radicand list and its index
+equivalence, and constructs both selected-value sets. Positivity
+of all selected values and L>=1 are deduced uniformly from the
+critical scale and offset bounds. They are no longer supplied
+premises. The two alignment cases share one equation threshold,
+one host constant and one scale cutoff.
+
+The stronger uniform_hosts_of_many statement selects the first
+k equations from every larger finite system. Its host constant
+and cutoff are therefore independent of the actual number of
+equations. The two explicit unproved uniform geometric input
+properties are needed only at the chosen fixed equation count
+k, with arbitrary curve degree cap for the curve-count property.
+The equation threshold is chosen before these properties; the
+host constant and scale cutoff precede every actual system,
+coefficient and finite host set. There is no supplied homogeneous
+list, projective curve, field, cover, Hilbert polynomial,
+height bound or target count in the final statement.
+
+Only the two isolated uniform geometric properties remain
+unproved explicit arguments in this direct per-system theorem.
+Coefficient smoothness is unnecessary; summing smooth patterns,
+the actual graph component-to-system reduction, the general
+half-power bound and the external geometric proofs remain open.
+T1.7 stays in_progress; numbered coverage remains 79/167 and
+confirmed improvements remain 112. This strengthens the proof,
+without a confirmed manuscript-conclusion error. Palomar is
+deferred; original manuscript bytes and dependencies are unchanged.
+
+Verified under Lean v4.36.0-rc2: full build passed (12643 jobs); direct axiom audit passed for 9072 declarations using only propext, Classical.choice and Quot.sound; all 7076 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.58 GiB.

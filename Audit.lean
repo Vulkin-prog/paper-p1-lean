@@ -3500,6 +3500,8 @@ import PaperP1
 #print axioms PaperP1.OrdinaryRootPointHeight.constant_ge_one
 #print axioms PaperP1.OrdinaryRootPointHeight.coordinates_height
 #print axioms PaperP1.OrdinaryRootPointHeight.point_floor_height
+#print axioms PaperP1.OrdinaryRootSystemData.length
+#print axioms PaperP1.OrdinaryRootSystemData.get
 #print axioms PaperP1.OriginalWindowValueBounds.values_geometry
 #print axioms PaperP1.PairHostCover.regular_loss_iff
 #print axioms PaperP1.PairHostCover.cover
@@ -4818,6 +4820,9 @@ import PaperP1
 #print axioms PaperP1.CriticalSourceCurveCoverExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalWindowGeometry.uniform_geometry
 #print axioms PaperP1.CriticalWindowGeometry.log_base_lower
+#print axioms PaperP1.DegreeOneRootHostCount.critical_window_positive
+#print axioms PaperP1.DegreeOneRootHostCount.uniform_hosts
+#print axioms PaperP1.DegreeOneRootHostCount.uniform_hosts_of_many
 #print axioms PaperP1.DenseNonalignedProfileReduction.dense_data
 #print axioms PaperP1.DenseNonalignedProfileReduction.nonaligned_activity_bound
 #print axioms PaperP1.DenseNonalignedProfileReduction.uniform_bound

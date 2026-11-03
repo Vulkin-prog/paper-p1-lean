@@ -2046,3 +2046,5 @@ public import PaperP1.Asymptotics.CriticalNonalignedDegreeGap
 public import PaperP1.Asymptotics.CriticalNonalignedPointCover
 public import PaperP1.Asymptotics.NonalignedSurfaceSubpowerUnderInputs
 public import PaperP1.Asymptotics.NonalignedDyadicRootHostCount
+public import PaperP1.Arithmetic.OrdinaryRootSystemData
+public import PaperP1.Asymptotics.DegreeOneRootHostCount
