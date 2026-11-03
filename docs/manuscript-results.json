@@ -326,7 +326,8 @@
             "P1-PROB-MEAN-PARAMETER-STABILITY"
           ]
         }
-      ]
+      ],
+      "validation_commit": "d345b0a2035612338f707abd0b995b3f22debf28"
     },
     {
       "label": "p1:limits:local-rigidity",
@@ -7006,7 +7007,8 @@
             "P1-PROB-ADJACENT-REFERENCE-PHASE"
           ]
         }
-      ]
+      ],
+      "validation_commit": "d345b0a2035612338f707abd0b995b3f22debf28"
     },
     {
       "label": "p13:channels:weighted-nonaligned",
@@ -7207,7 +7209,8 @@
             "P1-PROB-ADJACENT-REFERENCE-PHASE"
           ]
         }
-      ]
+      ],
+      "validation_commit": "d345b0a2035612338f707abd0b995b3f22debf28"
     },
     {
       "label": "p1:cor:compound",
@@ -7466,7 +7469,8 @@
             "P1-PROB-ADJACENT-REFERENCE-PHASE"
           ]
         }
-      ]
+      ],
+      "validation_commit": "d345b0a2035612338f707abd0b995b3f22debf28"
     },
     {
       "label": "p1:discussion:charlier-norm",
