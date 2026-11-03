@@ -5103,11 +5103,39 @@
       "source": "main_sections/exact_transfer.tex",
       "line": 323,
       "sha256": "2e51aac1ce519c8575213a7bf68f7cfa29dec771eb20fd6206c923407df86563",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.FiniteProductPowerMean.product_le_average_power",
+        "PaperP1.FiniteProductPowerMean.sum_product_le_moment",
+        "PaperP1.InverseSqrtTail.step",
+        "PaperP1.InverseSqrtTail.interval_bound",
+        "PaperP1.InverseSqrtTail.tail_bound",
+        "PaperP1.FiniteEulerAverage.product_divides_iff",
+        "PaperP1.FiniteEulerAverage.localProduct_expand",
+        "PaperP1.FiniteEulerAverage.exact_average",
+        "PaperP1.FiniteEulerAverage.average_bound",
+        "PaperP1.RoughEulerMoments.increment_nonneg",
+        "PaperP1.RoughEulerMoments.increment_bound",
+        "PaperP1.RoughEulerMoments.increment_sum",
+        "PaperP1.RoughEulerMoments.moment_bound",
+        "PaperP1.WindowEulerAverage.local_nonneg",
+        "PaperP1.WindowEulerAverage.window_nonneg",
+        "PaperP1.WindowEulerAverage.first_moment",
+        "PaperP1.FiniteEulerAverage.localProduct",
+        "PaperP1.RoughEulerMoments.halfWeight",
+        "PaperP1.RoughEulerMoments.increment",
+        "PaperP1.WindowEulerAverage.windowProduct"
+      ],
       "literature_inputs": [],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Preparation of the all-cardinality independent deficit15.6:\nthe rough-prime WINDOW AVERAGE in its proof is now established\nunconditionally, with an explicit constant and without treating\nthe number of exposed sources as fixed. Main15.6 moves from\nnot_started to in_progress. Its final deficit estimate is NOT\nyet proved. Coverage remains84/167 proved and16 conditional,\nwith128 confirmed mathematical improvements. This checkpoint\nadds arithmetic foundations and no new numbered completion.\n\nFiniteEulerAverage proves the exact finite divisor expansion\nof an arbitrary nonnegative local Euler product over a finite\nset of distinct primes. For every natural X, the average over\n1<=n<=X is at most\nX*product_p(1+h(p)/p).\nThe exact expansion uses the actual count floor(X/d) of positive\nmultiples of the product d of the selected distinct primes.\nPrimality supplies the actual coprimality implication d|n iff\nevery selected prime divides n. In particular there is no\nspurious +1 term for each modulus in this first-moment bound.\n\nInverseSqrtTail proves the finite elementary bound\nsum_{Y<n<=X} n^(-3/2) <= 2/sqrt(Y), for every Y>=1.\nIt telescopes reciprocal square roots and does not invoke an\nanalytic tail premise or any prime-distribution estimate.\nRoughEulerMoments uses the cutoff Y=64*B^2 and the actual\nfactor p^(-1/2). For p>Y the moment increment\nh_B(p)=(1+p^(-1/2))^B-1 is at most8*B*p^(-1/2).\nThe already proved elementary exponential remainder gives\nthis bound since B/sqrt(p)<1/8. The finite tail bound gives\nsum_p h_B(p)/p<=2 for EVERY finite prime set above this cutoff.\nConsequently the actual B-th moment of the local rough-prime\nEuler product, summed over1<=n<=X, is at most X*exp(2),\nuniformly in B and in the actual finite prime set.\n\nFiniteProductPowerMean proves the pointwise AM-GM inequality\nproduct_i f_i <= average_i f_i^B for B positive positions,\nand the finite first-moment consequence after interchanging\nthe actual sums. This suffices in place of the printed Holder\nstep. WindowEulerAverage.first_moment applies it to every true\nposition x-1+i of an actual complete dyadic window. Each fixed\nposition maps the actual starts injectively into1..3N.\nFor N>=2 and1<=B<=N+1 it proves\nsum_{N<=x<2N} product_{i<B} product_{p in P,p|(x-1+i)}\n  (1+p^(-1/2)) <= 3*N*exp(2),\nfor EVERY finite prime set P above64*B^2. This product counts\na prime once for every position it divides and therefore also\nmajorizes the single-occurrence union-of-primes product in\nthe manuscript. The explicit bound is independent of B.\n\nThe constant enlargement from the printed cutoff B^2 to64*B^2\nis internal to these new lemmas; no preserved manuscript is\nchanged. The old-source Euler factor, the actual relative\nexceptional exposure count and its entire cardinality sum\nremain to be connected before15.6 can be completed. No desired\ndeficit bound or growing-order arithmetic constant is assumed.\nThere is no new geometric or literature input, PaperC port,\ndependency download, original-source edit or Palomar registration.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": ""
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13195 jobs); direct axiom audit passed for 9990 declarations using only propext, Classical.choice and Quot.sound; all 8249 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.65 GiB."
     },
     {
       "label": "p13:transfer:fixed-deficit",

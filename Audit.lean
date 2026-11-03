@@ -2102,6 +2102,8 @@ import PaperP1
 #print axioms PaperP1.FiniteNegativeMass.l1_ge_twice_point
 #print axioms PaperP1.FiniteNegativeMass.l1_eq_negative_sum
 #print axioms PaperP1.FiniteNegativeMass.secondDifference_interval_sum
+#print axioms PaperP1.FiniteProductPowerMean.product_le_average_power
+#print axioms PaperP1.FiniteProductPowerMean.sum_product_le_moment
 #print axioms PaperP1.IntegerProductTail.pairTerm_nonneg
 #print axioms PaperP1.IntegerProductTail.pairTerm_eq_power
 #print axioms PaperP1.IntegerProductTail.summable_pairTerm
@@ -2119,6 +2121,9 @@ import PaperP1
 #print axioms PaperP1.IntegerProductTail.logarithmic_budget
 #print axioms PaperP1.IntegerProductTail.productTail_bound
 #print axioms PaperP1.IntegerProductTail.companion_T20_2
+#print axioms PaperP1.InverseSqrtTail.step
+#print axioms PaperP1.InverseSqrtTail.interval_bound
+#print axioms PaperP1.InverseSqrtTail.tail_bound
 #print axioms PaperP1.LogarithmicAbelWindow.weight_nonneg
 #print axioms PaperP1.LogarithmicAbelWindow.weight_continuousOn
 #print axioms PaperP1.LogarithmicAbelWindow.abel_identity
@@ -3030,6 +3035,10 @@ import PaperP1
 #print axioms PaperP1.FiniteChannelHierarchy.truncatedSum_three
 #print axioms PaperP1.FiniteChannelHierarchy.truncatedSum_four
 #print axioms PaperP1.FiniteChannelHierarchy.coefficient_four
+#print axioms PaperP1.FiniteEulerAverage.product_divides_iff
+#print axioms PaperP1.FiniteEulerAverage.localProduct_expand
+#print axioms PaperP1.FiniteEulerAverage.exact_average
+#print axioms PaperP1.FiniteEulerAverage.average_bound
 #print axioms PaperP1.FiniteEulerRankin.mem_admissibleSupports
 #print axioms PaperP1.FiniteEulerRankin.rankin_term
 #print axioms PaperP1.FiniteEulerRankin.weightedCount_le_euler
@@ -4084,6 +4093,10 @@ import PaperP1
 #print axioms PaperP1.RetainedComponentAsymptotics.lossConstant_pos
 #print axioms PaperP1.RetainedComponentAsymptotics.eventual_retained_lower
 #print axioms PaperP1.RetainedComponentAsymptotics.critical_retained_lower
+#print axioms PaperP1.RoughEulerMoments.increment_nonneg
+#print axioms PaperP1.RoughEulerMoments.increment_bound
+#print axioms PaperP1.RoughEulerMoments.increment_sum
+#print axioms PaperP1.RoughEulerMoments.moment_bound
 #print axioms PaperP1.RoughValuePrimePool.roughPrimes_data
 #print axioms PaperP1.RoughValuePrimePool.roughPrimes_log
 #print axioms PaperP1.RoughValuePrimePool.pool_data
@@ -4916,6 +4929,9 @@ import PaperP1
 #print axioms PaperP1.WeightedRootEvaluation.quotientEvaluation_mk
 #print axioms PaperP1.WeightedRootEvaluation.sourceGenerator_value
 #print axioms PaperP1.WeightedTranslationError.weighted_error
+#print axioms PaperP1.WindowEulerAverage.local_nonneg
+#print axioms PaperP1.WindowEulerAverage.window_nonneg
+#print axioms PaperP1.WindowEulerAverage.first_moment
 #print axioms PaperP1.WindowPoolCount.card_fixed_offset_le
 #print axioms PaperP1.WindowPoolCount.sum_supportedIndices_le
 #print axioms PaperP1.WindowPoolCount.sum_supportedIndices_dyadic

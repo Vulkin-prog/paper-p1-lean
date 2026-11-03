@@ -2317,3 +2317,8 @@ public import PaperP1.Combinatorics.FamilyEnumerationUpper
 public import PaperP1.Asymptotics.OriginalParticipatingMass
 public import PaperP1.Model.FullSupportOrderedLists
 public import PaperP1.Asymptotics.FullSupportWeightedCount
+public import PaperP1.Analysis.FiniteProductPowerMean
+public import PaperP1.Analysis.InverseSqrtTail
+public import PaperP1.Arithmetic.FiniteEulerAverage
+public import PaperP1.Arithmetic.RoughEulerMoments
+public import PaperP1.Arithmetic.WindowEulerAverage
