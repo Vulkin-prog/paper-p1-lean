@@ -167,6 +167,9 @@ import PaperP1
 #print axioms PaperP1.MinimalRelativeRelations.zero_iff_compressed
 #print axioms PaperP1.MinimalRelativeRelations.exists_minimal
 #print axioms PaperP1.MinimalRelativeRelations.exists_relation
+#print axioms PaperP1.MinimalSpanCrossing.exists_minimal
+#print axioms PaperP1.MinimalSpanCrossing.exists_relation
+#print axioms PaperP1.MinimalSpanCrossing.disjoint_singletons
 #print axioms PaperP1.Affine.subfamilyExtend_has_preimage
 #print axioms PaperP1.Affine.subfamilyKernelExtend_has_preimage
 #print axioms PaperP1.Affine.erasedKernelToFull_surjective
@@ -265,6 +268,8 @@ import PaperP1
 #print axioms PaperP1.RelationProjectionRank.loss_eq_dimension
 #print axioms PaperP1.RelationProjectionRank.erase_add_loss
 #print axioms PaperP1.Affine.relationAddition_apply
+#print axioms PaperP1.RelativeIntersectionNullity.identity
+#print axioms PaperP1.RelativeIntersectionNullity.zero_of_direct
 #print axioms PaperP1.Affine.range_relationAddition
 #print axioms PaperP1.Affine.relativeNullity_eq_dimension_deficit
 #print axioms PaperP1.Affine.relativeNullity_dimension_identity
@@ -369,6 +374,10 @@ import PaperP1
 #print axioms PaperP1.Affine.card_solution_is_power_of_two
 #print axioms PaperP1.TripleFullSupportConnected.no_singleton_part
 #print axioms PaperP1.TripleFullSupportConnected.connected
+#print axioms PaperP1.TwoTargetCrossingCut.direct_data
+#print axioms PaperP1.TwoTargetCrossingCut.source_nullity_zero
+#print axioms PaperP1.TwoTargetCrossingCut.relative_nullity_eq_deficit
+#print axioms PaperP1.TwoTargetCrossingCut.data
 #print axioms PaperP1.TwoTargetKernel.range_addition
 #print axioms PaperP1.TwoTargetKernel.left_projection_injective
 #print axioms PaperP1.TwoTargetKernel.right_projection_injective
@@ -5405,6 +5414,7 @@ import PaperP1
 #print axioms PaperP1.DegreeOneRootHostCount.uniform_hosts_of_many
 #print axioms PaperP1.DenseCompressedTargetCount.uniform_offsets
 #print axioms PaperP1.DenseCompressedTargetCount.article_15_3
+#print axioms PaperP1.DenseDirectCrossingFamiliesUnderInputs.uniform_families
 #print axioms PaperP1.DenseNonalignedProfileReduction.dense_data
 #print axioms PaperP1.DenseNonalignedProfileReduction.nonaligned_activity_bound
 #print axioms PaperP1.DenseNonalignedProfileReduction.uniform_bound
@@ -5425,10 +5435,14 @@ import PaperP1
 #print axioms PaperP1.DenseWeightedSectorUnderInputs.uniform_kernels
 #print axioms PaperP1.DependentBlockPairsCount.article_10_3
 #print axioms PaperP1.DependentBlockPairsCount.uniform_logarithmic_count
+#print axioms PaperP1.DependentPairJointMassUnderInputs.uniform_bound
 #print axioms PaperP1.DependentProductMass.cover_bound
 #print axioms PaperP1.DependentProductMass.uniform_seeded_mass
 #print axioms PaperP1.DependentProductMass.uniform_seed_orders
 #print axioms PaperP1.DependentProductMass.uniform_mass
+#print axioms PaperP1.DirectCrossingExtensionsUnderInputs.uniform_extensions
+#print axioms PaperP1.DirectCrossingFamiliesUnderInputs.uniform_families
+#print axioms PaperP1.DirectCrossingPairSeedsUnderInputs.uniform_bound
 #print axioms PaperP1.DirectPairProductReductionUnderBCN.uniform_reduction
 #print axioms PaperP1.DisjointSquareEquations.combine
 #print axioms PaperP1.DisjointSquareEquations.single_equation
@@ -5914,6 +5928,7 @@ import PaperP1
 #print axioms PaperP1.LogarithmicWordPowers.polynomial_factor_uniformSubpolynomial
 #print axioms PaperP1.LogarithmicWordPowers.polynomial_factor_le_rpow_eventually
 #print axioms PaperP1.LowCompatibleNullityTail.uniform_bound
+#print axioms PaperP1.LowCrossingJointMass.uniform_bound
 #print axioms PaperP1.ManyPlanarSquareProducts.primitive_mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.uniform_natural
@@ -8145,6 +8160,8 @@ import PaperP1
 #print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_joint_rank
 #print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_actual_probability
 #print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_probability_nullity
+#print axioms PaperP1.ConnectedSpanCrossing.cut
+#print axioms PaperP1.ConnectedSpanCrossing.exists_minimal
 #print axioms PaperP1.ConnectedTargetDependence.every_target
 #print axioms PaperP1.ConnectedTriplePositiveReduction.pair_cost
 #print axioms PaperP1.ConnectedTriplePositiveReduction.finite_bound
@@ -8194,10 +8211,15 @@ import PaperP1
 #print axioms PaperP1.DependentFamilySeeds.primitive_mem
 #print axioms PaperP1.DependentFamilySeeds.dependent_cover
 #print axioms PaperP1.DependentFamilySeeds.dependentMass_le_seeded
+#print axioms PaperP1.DependentPairJointActivity.pointwise
+#print axioms PaperP1.DependentPairJointActivity.finite_bound
 #print axioms PaperP1.DirectActiveEnvelope.observable_integrable
 #print axioms PaperP1.DirectActiveEnvelope.expected_factorial
 #print axioms PaperP1.DirectActiveEnvelope.expected_power
 #print axioms PaperP1.DirectActiveEnvelope.tail_probability
+#print axioms PaperP1.DirectCrossingTargets.union_family
+#print axioms PaperP1.DirectCrossingTargets.data
+#print axioms PaperP1.DirectCrossingTargets.weight_bound
 #print axioms PaperP1.DirectJointBlocks.factor
 #print axioms PaperP1.DirectPairCostBound.finite_bound
 #print axioms PaperP1.DirectPairProductComparison.direct_pair_iff
@@ -8237,6 +8259,8 @@ import PaperP1
 #print axioms PaperP1.ExactContactEdges.regular_union_count
 #print axioms PaperP1.ExactContactEdges.regular_union_mem
 #print axioms PaperP1.ExactContactEdges.mass_lower
+#print axioms PaperP1.ExtensionJointFactor.exact_of_positive
+#print axioms PaperP1.ExtensionJointFactor.upper_bound
 #print axioms PaperP1.FactorialBranching.factorial_zero
 #print axioms PaperP1.FactorialBranching.factorial_succ_bound
 #print axioms PaperP1.FactorialBranching.factorial_le_power
@@ -8583,6 +8607,8 @@ import PaperP1
 #print axioms PaperP1.MeanBiasQuantization.quantum_lower_bound
 #print axioms PaperP1.MeanBiasQuantization.finite_dichotomy
 #print axioms PaperP1.MeanBiasQuantization.critical_quantum_lower_bound
+#print axioms PaperP1.MinimalCrossingWindows.witnesses
+#print axioms PaperP1.MinimalCrossingWindows.mem_families
 #print axioms PaperP1.MissingBlockProbabilities.infiniteMarginal_nonneg
 #print axioms PaperP1.MissingBlockProbabilities.infiniteJointMoment_antitone
 #print axioms PaperP1.MissingBlockProbabilities.infinite_joint_missing_block_bound

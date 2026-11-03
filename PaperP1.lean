@@ -2417,3 +2417,17 @@ public import PaperP1.Asymptotics.ConnectedTriplePositiveUnderInputs
 public import PaperP1.Model.ConnectedTargetDependence
 public import PaperP1.Model.ConnectedTriplePositiveReduction
 public import PaperP1.Model.TripleJointReconstruction
+public import PaperP1.Affine.MinimalSpanCrossing
+public import PaperP1.Affine.RelativeIntersectionNullity
+public import PaperP1.Affine.TwoTargetCrossingCut
+public import PaperP1.Asymptotics.DenseDirectCrossingFamiliesUnderInputs
+public import PaperP1.Asymptotics.DependentPairJointMassUnderInputs
+public import PaperP1.Asymptotics.DirectCrossingExtensionsUnderInputs
+public import PaperP1.Asymptotics.DirectCrossingFamiliesUnderInputs
+public import PaperP1.Asymptotics.DirectCrossingPairSeedsUnderInputs
+public import PaperP1.Asymptotics.LowCrossingJointMass
+public import PaperP1.Model.ConnectedSpanCrossing
+public import PaperP1.Model.DependentPairJointActivity
+public import PaperP1.Model.DirectCrossingTargets
+public import PaperP1.Model.ExtensionJointFactor
+public import PaperP1.Model.MinimalCrossingWindows
