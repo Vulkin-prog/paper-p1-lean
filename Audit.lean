@@ -4742,6 +4742,7 @@ import PaperP1
 #print axioms PaperP1.CriticalOrderBranching.finite_exception_bound
 #print axioms PaperP1.CriticalOrderBranching.uniform_exception_bound
 #print axioms PaperP1.CriticalOrderBranching.companion_T22_4
+#print axioms PaperP1.CriticalOrdinaryCurveExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalPolynomialScale.polynomial_lt_scale
 #print axioms PaperP1.CriticalPolynomialScale.source_size_eventually
 #print axioms PaperP1.CriticalRationalPlaneCoverExclusion.eventually_no_dyadic_point
@@ -6646,6 +6647,9 @@ import PaperP1
 #print axioms PaperP1.GradedVeroneseProj.iso_hom
 #print axioms PaperP1.OrdinaryCurveDegreeBound.plane_rank_le_ordinary
 #print axioms PaperP1.OrdinaryCurveDegreeBound.degree_bounds
+#print axioms PaperP1.OrdinaryCurveHostImage.base_evaluation
+#print axioms PaperP1.OrdinaryCurveHostImage.host_image
+#print axioms PaperP1.OrdinaryCurveMultiplicityComparison.source_multiplicity_le
 #print axioms PaperP1.OrdinaryCurveProjectionDegree.exists_plane_equation
 #print axioms PaperP1.OrdinaryCurveProjectionDegree.exists_rank_bounds
 #print axioms PaperP1.OrdinaryCurveProjectionDegree.exists_degree_bounds

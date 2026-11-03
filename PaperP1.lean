@@ -1999,3 +1999,6 @@ public import PaperP1.Geometry.SourceCurveAffineRadicalCover
 public import PaperP1.Geometry.SourceCurveHostChart
 public import PaperP1.Geometry.SourceProjectiveCurveBoundedDegree
 public import PaperP1.Asymptotics.CriticalSourceCurveCoverExclusion
+public import PaperP1.Geometry.OrdinaryCurveMultiplicityComparison
+public import PaperP1.Geometry.OrdinaryCurveHostImage
+public import PaperP1.Asymptotics.CriticalOrdinaryCurveExclusion

@@ -7780,3 +7780,38 @@ confirmed improvements stay 112 and Palomar remains deferred.
 Original manuscript bytes and compiler/dependency pins are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12545 jobs, direct axiom audit of 8960 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6920 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.79 GiB.
+
+
+## Actual ordinary host and Hilbert comparison complete the source exclusion
+
+The actual ordinary prime quotient now supplies the complete
+input to the actual projective-source exclusion. Its ordinary
+Hilbert polynomial E*n+beta bounds the induced source Hilbert
+multiplicity by D*E, using the actual graded injection and the
+actual plane-degree times cover-rank comparison. An actual
+ordinary affine host evaluation, with Z=1 and Q in its kernel,
+proves the source Z-coordinate nonzero and the actual source
+image ideal contained in the host kernel.
+
+The final ordinary-curve theorem chooses its critical-band
+threshold before all radical equations, integer coefficients,
+ordinary prime ideals, Hilbert constant terms and hosts. For
+k>=4(E+1)^2 it excludes every admissible comparable host under
+the explicit induced source-height-one and actual ordinary
+linear-Hilbert hypotheses. It internally constructs the source
+point, source degree cap, image containment, irreducible affine
+equation and actual projective function-field radical cover.
+Both constant-coordinate cases and all finite cover degrees
+are included. No supplied source point, affine presentation,
+cover, roots, degree cap or genus premise remains.
+
+This completes the previously open ordinary host/multiplicity
+composition in P1-MATH-0111 and P1-MATH-0112. The general geometric
+curve-to-induced-source-height-one and ordinary linear-Hilbert
+identification, and external uniform surface/curve counting
+inputs, remain open. T1.7 stays in_progress, numbered coverage
+stays 79/167, confirmed improvements stay 112 and Palomar remains
+deferred. Original manuscript bytes and pinned dependencies are
+unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12551 jobs, direct axiom audit of 8964 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6924 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.77 GiB.
