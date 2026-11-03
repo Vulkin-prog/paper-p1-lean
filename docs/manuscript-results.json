@@ -13992,11 +13992,41 @@
       "source": "companion_sections/uniform_appendix.tex",
       "line": 21,
       "sha256": "c3b68f1c23695e421ff747f0e2abb1756be8b2bf1b82764750ace5cba5bbf8f1",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.FamilyEnumerationUpper.tupleSet_card",
+        "PaperP1.FamilyEnumerationUpper.factorial_count_ge",
+        "PaperP1.FamilyEnumerationUpper.factorial_count_eq",
+        "PaperP1.OriginalParticipatingMass.fixed_mass",
+        "PaperP1.OriginalParticipatingMass.uniform_mass",
+        "PaperP1.FullSupportOrderedLists.manuscriptLists_subset",
+        "PaperP1.FullSupportOrderedLists.mem_atFamilies",
+        "PaperP1.FullSupportOrderedLists.mem_lists",
+        "PaperP1.FullSupportOrderedLists.mem_manuscriptLists",
+        "PaperP1.FullSupportOrderedLists.card_lists",
+        "PaperP1.FullSupportOrderedLists.layer_weight",
+        "PaperP1.FullSupportOrderedLists.ordered_mass_eq",
+        "PaperP1.FullSupportOrderedLists.nominal_weight_formula",
+        "PaperP1.FullSupportWeightedCount.uniform_ordered_mass",
+        "PaperP1.FullSupportWeightedCount.full_list_bound",
+        "PaperP1.FullSupportWeightedCount.companion_T22_1",
+        "PaperP1.FullSupportOrderedLists.atFamilies",
+        "PaperP1.FullSupportOrderedLists.lists",
+        "PaperP1.FullSupportOrderedLists.orderedMass",
+        "PaperP1.FullSupportOrderedLists.manuscriptLists"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0128"
+      ],
+      "notes": "Companion Proposition T22.1 is now proved UNCONDITIONALLY,\nincluding the literal ordered-list sum with weights u^r/r!\nand nominal factor p^r, p=2^(-L). The actual manuscript list\npopulation requires distinct dyadic starts, full effective\nsupport, rank L at every window, and pairwise distance greater\nthan L. FullSupportOrderedLists.mem_manuscriptLists identifies\nall these actual conditions. No minimality or affine\ncompatibility is imposed. The printed bound is exactly\nN^(-2*s/(2*s+1)+epsilon) for each fixed s>=2.\nT22.1 moves from not_started to proved. Unconditional numbered\ncoverage rises from83 to84/167; the16 conditional results stay\nseparate. P1-MATH-0128 records a stronger N^(-1+epsilon) bound.\n\nFamilyEnumerationUpper proves the reverse factorial inequality\nby injecting actual ordered tuples into their actual finite\nfamily and the permutation of its canonical enumeration.\nTogether with the previously proved forward injection it gives\nthe exact identity #lists=r!*#unorderedFamilies. It includes\nempty and singleton orders as well. FullSupportOrderedLists\nproves the exact cardinality identity for the real full-support\ntuple population, cancels the actual factorial, and identifies\nthe sum over all orders with the actual unordered family sum.\nThe nominal-weight formula is exactly the expression printed\nin T22.1. The manuscript population is a proved subset of this\nlarger actual list population, so its weighted count follows\nwithout a counting assumption.\n\nOriginalParticipatingMass.fixed_mass proves independent mass\nat most N^(-r/2+epsilon) at each fixed order r, for arbitrary\nnonnegative heterogeneous weights bounded by M/N and actual\ncoordinatewise participating families. It uses the proved\nrelative half-count with no old sources, and the actual family\ninclusion, not a supplied desired host estimate.\nOriginalParticipatingMass.uniform_mass combines these finitely\nmany fixed-order bounds with OriginalParticipatingTail's uniform\nall-cardinality tail. The small-order cutoff is chosen before N;\nonly the finitely many orders below that cutoff use their own\nfixed-order thresholds. The large orders use the already proved\nuniform certificate generator. The total mass of ALL such\nfamilies of size at least two is at most N^(-1+epsilon).\nThe threshold precedes every actual weight function and family\npopulation; zero weights and all actual overlaps are allowed.\n\nFullSupportWeightedCount.uniform_ordered_mass specializes to\nthe nominal constant weight u*2^(-L), whose cap is proved from\nthe critical-band condition. It gives N^(-1+epsilon) for the\nlarger actual injective full-support list population, without\nregularity or separation, with one threshold before EVERY\ncutoff s>=2. The stated source exponent follows because\n2*s/(2*s+1)<=1. FullSupportWeightedCount.companion_T22_1 then\nrestricts to the literal separated regular manuscript lists.\n\nThe strengthening concerns INDEPENDENT product weights. It\ndoes not establish positive joint or centered masses containing\nthe factor2^rho, nor the separate compressed-block assertion of\nmain15.8. No geometric input, dependency download, PaperC port,\noriginal manuscript edit or Palomar registration is added.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": ""
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13185 jobs); direct axiom audit passed for 9974 declarations using only propext, Classical.choice and Quot.sound; all 8229 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.67 GiB."
     },
     {
       "label": "p1:uniform:missing-block",

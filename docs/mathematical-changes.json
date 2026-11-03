@@ -9662,6 +9662,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "b5f9a1a124234bd97722f3583a9be524688d7af9"
+    },
+    {
+      "id": "P1-MATH-0128",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:uniform:full-support",
+        "number": "T22.1",
+        "page": 89,
+        "source": "companion_sections/uniform_appendix.tex",
+        "line": 21,
+        "statement_sha256": "c3b68f1c23695e421ff747f0e2abb1756be8b2bf1b82764750ace5cba5bbf8f1"
+      },
+      "original_assumption": "T22.1 gives the independent full-support exponent2*s/(2*s+1), for separated regular windows and each fixed cutoff s>=2.",
+      "finding": "The proved fixed-order half-exponent count gives independent\nmass N^(-r/2+epsilon) for coordinatewise participating actual\nfamilies. Combine its finitely many orders below a fixed cutoff\nwith the already uniform all-cardinality certificate tail, using\na=1 in that tail. Every nontrivial family has size at least two,\nso the entire sum is N^(-1+epsilon). The exact r! enumeration\nthen gives this stronger bound for all injective full-support\nordered lists with nominal weights, even without separation or\nregularity, and with one threshold before all cutoffs s>=2.\nThis strengthens T22.1's exponent2*s/(2*s+1) to1. It applies\nto arbitrary nonnegative heterogeneous product weights capped\nby M/N at the unordered level. Positive joint probabilities or\ncentered activities with relative-nullity factors are not covered.",
+      "impact": "The exponent improves to1 for the larger actual injective full-support list population; separation and regularity are unnecessary, and the threshold is uniform over every cutoff at least two.",
+      "proposed_revision": "Replace T22.1 by the stronger N^(-1+epsilon) independent weighted count. Prove it by the fixed-order half-count plus the already uniform certificate tail, then use the exact factorial enumeration identity. State explicitly that relative-nullity-amplified positive or centered masses are separate.",
+      "evidence": [
+        "PaperP1.FamilyEnumerationUpper.factorial_count_eq",
+        "PaperP1.OriginalParticipatingMass.fixed_mass",
+        "PaperP1.OriginalParticipatingMass.uniform_mass",
+        "PaperP1.FullSupportOrderedLists.card_lists",
+        "PaperP1.FullSupportOrderedLists.ordered_mass_eq",
+        "PaperP1.FullSupportWeightedCount.uniform_ordered_mass",
+        "PaperP1.FullSupportWeightedCount.companion_T22_1"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13185 jobs); direct axiom audit passed for 9974 declarations using only propext, Classical.choice and Quot.sound; all 8229 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.67 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -5563,6 +5563,9 @@ import PaperP1
 #print axioms PaperP1.FixedWindowBranching.original_windows_critical
 #print axioms PaperP1.FourthRepeatedRunCostUnderBCN.uniform_bound
 #print axioms PaperP1.FullSupportIndependentTail.article_15_8_original
+#print axioms PaperP1.FullSupportWeightedCount.uniform_ordered_mass
+#print axioms PaperP1.FullSupportWeightedCount.full_list_bound
+#print axioms PaperP1.FullSupportWeightedCount.companion_T22_1
 #print axioms PaperP1.GeneralBranchingTheorem.reindexed_windows
 #print axioms PaperP1.GeneralBranchingTheorem.dilation_conclusion
 #print axioms PaperP1.GeneralBranchingTheorem.companion_T1_15
@@ -5934,6 +5937,8 @@ import PaperP1
 #print axioms PaperP1.OriginalPairHosts.uniform_count
 #print axioms PaperP1.OriginalPairHosts.improved_support
 #print axioms PaperP1.OriginalPairHosts.article_3_2_support
+#print axioms PaperP1.OriginalParticipatingMass.fixed_mass
+#print axioms PaperP1.OriginalParticipatingMass.uniform_mass
 #print axioms PaperP1.OriginalParticipatingTail.uniform_split_bound
 #print axioms PaperP1.OriginalParticipatingTail.subcritical_parameters
 #print axioms PaperP1.OriginalParticipatingTail.subcritical_tail
@@ -6874,6 +6879,9 @@ import PaperP1
 #print axioms PaperP1.ExposureWeights.correction_as_totals
 #print axioms PaperP1.ExposureWeights.exists_small_last
 #print axioms PaperP1.ExposureWeights.exists_last_exponent_le
+#print axioms PaperP1.FamilyEnumerationUpper.tupleSet_card
+#print axioms PaperP1.FamilyEnumerationUpper.factorial_count_ge
+#print axioms PaperP1.FamilyEnumerationUpper.factorial_count_eq
 #print axioms PaperP1.FinTupleErasure.determined
 #print axioms PaperP1.FinTupleErasure.fixed_coordinate_count
 #print axioms PaperP1.FinTupleErasure.pair_determined
@@ -8098,6 +8106,14 @@ import PaperP1
 #print axioms PaperP1.FullRankPrescriptions.joint_of_full_rank
 #print axioms PaperP1.FullRankPrescriptions.contact_on_regular_union
 #print axioms PaperP1.FullRankPrescriptions.actual_contact_on_regular_union
+#print axioms PaperP1.FullSupportOrderedLists.manuscriptLists_subset
+#print axioms PaperP1.FullSupportOrderedLists.mem_atFamilies
+#print axioms PaperP1.FullSupportOrderedLists.mem_lists
+#print axioms PaperP1.FullSupportOrderedLists.mem_manuscriptLists
+#print axioms PaperP1.FullSupportOrderedLists.card_lists
+#print axioms PaperP1.FullSupportOrderedLists.layer_weight
+#print axioms PaperP1.FullSupportOrderedLists.ordered_mass_eq
+#print axioms PaperP1.FullSupportOrderedLists.nominal_weight_formula
 #print axioms PaperP1.HeterogeneousDirectMaximum.direct_joint_factor
 #print axioms PaperP1.HeterogeneousDirectMaximum.finite_joint_product
 #print axioms PaperP1.HeterogeneousDirectMaximum.actualMean_eq_countMoment

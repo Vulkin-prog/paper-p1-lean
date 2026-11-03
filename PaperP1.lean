@@ -2313,3 +2313,7 @@ public import PaperP1.Model.WindowCertificateMass
 public import PaperP1.Asymptotics.OriginalParticipatingTail
 public import PaperP1.Model.IndependentFullSupportTail
 public import PaperP1.Asymptotics.FullSupportIndependentTail
+public import PaperP1.Combinatorics.FamilyEnumerationUpper
+public import PaperP1.Asymptotics.OriginalParticipatingMass
+public import PaperP1.Model.FullSupportOrderedLists
+public import PaperP1.Asymptotics.FullSupportWeightedCount

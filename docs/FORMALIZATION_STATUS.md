@@ -3,6 +3,8 @@
 Stage: **exact probability identities and uniform arithmetic foundations**, 3 November 2026.
 Neither document is fully formalized.
 
+Companion T22.1 is complete unconditionally, with a stronger independent exponent1.
+
 Article15.7 is complete conditionally for every fixed extension size, under the existing geometry.
 
 Article15.3 is complete unconditionally for actual compressed centers, including all unit-offset patterns.
@@ -16,7 +18,7 @@ Article11.1–11.3 and15.1, and companion T7.1, now have complete conditional so
 Article Theorem 3.3 now has all five literal conclusions proved **conditionally** on the explicitly recorded geometric properties. See [complete pair-profile alignment](COMPLETE_PAIR_PROFILE_ALIGNMENT.md). This is not an unconditional completion or a Palomar registration.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **83 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 6.3, 9.1, 13.3, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorems 10.1, 13.1, 13.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Proposition T9.5, Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Propositions T1.14, T22.7 and T17.2, and Lemma T20.4 and Propositions T20.6, T1.16 and T21.4. Article Lemma15.4 is also complete.
+- Numbered results completed: **84 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 6.3, 9.1, 13.3, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorems 10.1, 13.1, 13.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Proposition T9.5, Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Propositions T1.14, T22.7 and T17.2, and Lemma T20.4 and Propositions T20.6, T1.16 and T21.4. Article Lemma15.4 is also complete.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -44,7 +46,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **9958 audited theorem/lemma declarations**. This
+- The project currently has **9974 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -12691,3 +12693,66 @@ positive or centered masses amplified by relative nullity remain
 separate open tasks.
 
 Verified under Lean v4.36.0-rc2: full build passed (13177 jobs); direct axiom audit passed for 9958 declarations using only propext, Classical.choice and Quot.sound; all 8209 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.69 GiB.
+
+
+## Unconditional completion of companion T22.1
+
+Companion Proposition T22.1 is now proved UNCONDITIONALLY,
+including the literal ordered-list sum with weights u^r/r!
+and nominal factor p^r, p=2^(-L). The actual manuscript list
+population requires distinct dyadic starts, full effective
+support, rank L at every window, and pairwise distance greater
+than L. FullSupportOrderedLists.mem_manuscriptLists identifies
+all these actual conditions. No minimality or affine
+compatibility is imposed. The printed bound is exactly
+N^(-2*s/(2*s+1)+epsilon) for each fixed s>=2.
+T22.1 moves from not_started to proved. Unconditional numbered
+coverage rises from83 to84/167; the16 conditional results stay
+separate. P1-MATH-0128 records a stronger N^(-1+epsilon) bound.
+
+FamilyEnumerationUpper proves the reverse factorial inequality
+by injecting actual ordered tuples into their actual finite
+family and the permutation of its canonical enumeration.
+Together with the previously proved forward injection it gives
+the exact identity #lists=r!*#unorderedFamilies. It includes
+empty and singleton orders as well. FullSupportOrderedLists
+proves the exact cardinality identity for the real full-support
+tuple population, cancels the actual factorial, and identifies
+the sum over all orders with the actual unordered family sum.
+The nominal-weight formula is exactly the expression printed
+in T22.1. The manuscript population is a proved subset of this
+larger actual list population, so its weighted count follows
+without a counting assumption.
+
+OriginalParticipatingMass.fixed_mass proves independent mass
+at most N^(-r/2+epsilon) at each fixed order r, for arbitrary
+nonnegative heterogeneous weights bounded by M/N and actual
+coordinatewise participating families. It uses the proved
+relative half-count with no old sources, and the actual family
+inclusion, not a supplied desired host estimate.
+OriginalParticipatingMass.uniform_mass combines these finitely
+many fixed-order bounds with OriginalParticipatingTail's uniform
+all-cardinality tail. The small-order cutoff is chosen before N;
+only the finitely many orders below that cutoff use their own
+fixed-order thresholds. The large orders use the already proved
+uniform certificate generator. The total mass of ALL such
+families of size at least two is at most N^(-1+epsilon).
+The threshold precedes every actual weight function and family
+population; zero weights and all actual overlaps are allowed.
+
+FullSupportWeightedCount.uniform_ordered_mass specializes to
+the nominal constant weight u*2^(-L), whose cap is proved from
+the critical-band condition. It gives N^(-1+epsilon) for the
+larger actual injective full-support list population, without
+regularity or separation, with one threshold before EVERY
+cutoff s>=2. The stated source exponent follows because
+2*s/(2*s+1)<=1. FullSupportWeightedCount.companion_T22_1 then
+restricts to the literal separated regular manuscript lists.
+
+The strengthening concerns INDEPENDENT product weights. It
+does not establish positive joint or centered masses containing
+the factor2^rho, nor the separate compressed-block assertion of
+main15.8. No geometric input, dependency download, PaperC port,
+original manuscript edit or Palomar registration is added.
+
+Verified under Lean v4.36.0-rc2: full build passed (13185 jobs); direct axiom audit passed for 9974 declarations using only propext, Classical.choice and Quot.sound; all 8229 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.67 GiB.
