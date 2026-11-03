@@ -2552,3 +2552,10 @@ public import PaperP1.Model.RetainedBoundaryPositiveMass
 public import PaperP1.Asymptotics.RetainedBadPairActivityUnderInputs
 public import PaperP1.Asymptotics.RetainedComponentActivityUnderInputs
 public import PaperP1.Asymptotics.PositiveBoundaryMassUnderInputs
+public import PaperP1.Probability.SignedAtomicDistance
+public import PaperP1.Asymptotics.RegularSecondCumulantRestoration
+public import PaperP1.Model.RetainedStoppedLaw
+public import PaperP1.Asymptotics.RetainedBetaCovarianceUnderInputs
+public import PaperP1.Asymptotics.RetainedBinomialApproximationUnderInputs
+public import PaperP1.Asymptotics.RegularQuadraticReferenceRestoration
+public import PaperP1.Asymptotics.FirstQuadraticApproximationUnderInputs

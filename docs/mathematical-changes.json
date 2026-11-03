@@ -10457,6 +10457,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "76dd87ce6c9fa42c6ff5e1d67d882ece56a07de8"
+    },
+    {
+      "id": "P1-MATH-0146",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "document": "companion",
+        "label": "p13:base-approximation",
+        "number": "T17.5",
+        "page": 64,
+        "source": "companion_sections/closure.tex",
+        "line": 373,
+        "version": "P1 V1.6",
+        "statement_sha256": "3f9a073e1d0926a504ce14a82f8e6da9fa67dae624de32d26f2521aa90245a03"
+      },
+      "original_assumption": "The regular-set second factorial cumulant transfer was previously supplied through a bounded higher-moment argument, discharged under BCN.",
+      "finding": "The second factorial cumulant transfer needed to restore irregular\nwindows can be proved unconditionally with rate N^(-1+epsilon), without\nthe bounded higher-moment premise in the earlier regular-set argument.\nFor H subset G, the exact removed unordered pairs are precisely those\nin G touching G minus H. The cumulant identity gives an error bounded by\ntwice their absolute centered activity plus the full marginal diagonal.\nThe established unconditional irregular-pair activity and marginal cap\nbound these terms with rate1. Together with the exact mean gap and an\nunconditional subpower cumulant envelope, this proves rate1 for the sum\nof actual-law restoration and quadratic-reference restoration, both for\nthe full actual mean and for N*2^(-L), with the SAME full actual cumulant.\nThis removes auxiliary moment and BCN premises from this specific\nsecond-order restoration step; it does not prove unconditional bounds for\nall higher-order moment transfers or the complete law approximation.",
+      "impact": "Makes the exact full/regular second factorial cumulant transfer and both actual/nominal quadratic-reference restoration errors unconditional at rate1; the complete4/5 law theorem still has its three explicit geometric inputs.",
+      "proposed_revision": "Give the direct touching-pair cumulant identity and the unconditional irregular-pair bound before the first quadratic approximation. Separate this second-order restoration from the general higher-moment transfer that uses additional moment estimates.",
+      "evidence": [
+        "PaperP1.RegularSecondCumulantRestoration.pair_difference",
+        "PaperP1.RegularSecondCumulantRestoration.covariance_difference",
+        "PaperP1.RegularSecondCumulantRestoration.finite_bound",
+        "PaperP1.RegularSecondCumulantRestoration.uniform_bound",
+        "PaperP1.RegularQuadraticReferenceRestoration.mean_gap",
+        "PaperP1.RegularQuadraticReferenceRestoration.uniform_mean_gap",
+        "PaperP1.RegularQuadraticReferenceRestoration.uniform_subpower_cumulant",
+        "PaperP1.RegularQuadraticReferenceRestoration.parameter_bound",
+        "PaperP1.RegularQuadraticReferenceRestoration.uniform_reference_errors"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13677 jobs); direct axiom audit passed for 10599 declarations using only propext, Classical.choice and Quot.sound; all 9000 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.49 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
