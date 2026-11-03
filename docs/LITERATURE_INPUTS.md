@@ -9775,3 +9775,58 @@ Palomar remains deferred and no manuscript-conclusion error is
 newly confirmed.
 
 Verified under Lean v4.36.0-rc2: full build passed (12733 jobs); direct axiom audit passed for 9222 declarations using only propext, Classical.choice and Quot.sound; all 7279 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.36 GiB.
+
+
+## The complete actual principal-edge input under the geometric properties
+
+Article Corollary 3.4 now has all its actual principal-edge
+inputs under the explicit geometric properties. Its ledger
+status is CONDITIONAL, not proved. The new uniform_edge_input
+packages one common set of geometric dimensions and caps,
+positive beta comparison constants and one scale cutoff before
+all windows and prime thresholds. It gives the exact edge-card
+bound 26*(L+1)*N, beta comparable to L*N^(-2/3), the actual
+second-cumulant comparison |kappa2-2*beta|<=N^(-4/5+epsilon),
+and the actual ordered covariance sum outside these edges.
+The per-channel actual rank, regularity and joint-mass caps
+were already proved by CompatibleChannelEdges.edge_data;
+these retain the separate denominators 3 and 4 and nominal
+marginal (2^L)^(-1). Together they give the complete source
+corollary, with a stronger remainder than its additional B/N.
+
+The new finite argument uses the exact positive gap between
+absolute pair activity and half the actual second factorial
+cumulant, and the exact nonnegative beta-minus-edge-activity
+gap. Subtracting the actual edge population from all two-element
+subsets gives the off-edge absolute activity. The conditional
+cumulant profile therefore bounds the whole off-edge activity
+by N^(-4/5+epsilon). An exact ordered-host identity gives the
+same rate for every subset G of the full dyadic ground set,
+with no regularity or separation premise on that actual-
+marginal statement.
+
+For the original source formula, the regular-set marginal
+identity is applied inside the actual Bochner integral.
+regular_nominal_coefficient proves the coefficient is precisely
+the expectation of (J_x-p)*(J_y-p), with p=(2^L)^(-1), rather
+than leaving a change of centering implicit. The final ordered
+sum is over the actual regular set and excludes exactly the
+literal PrincipalChannelEdges.edges. Its bound is
+N^(-4/5+epsilon), which also implies the printed bound with
+an additional B/N term. All arithmetic, probability, centering,
+set partitions, orientation factors and exponent absorption
+are internally proved. The nominal covariance count is not
+provided as a theorem argument.
+
+The exact unproved inputs remain the generic normalized curve
+property and the ordinary/chosen-source surface-cover properties
+at the exposed fixed dimensions and caps. No BCN input, target
+cumulant bound, covariance remainder or opaque arithmetic input
+is added. Primary determinant/translation proofs remain open.
+Main 3.4 moves from in_progress to conditional, T1.8 remains
+conditional, main 3.3 and T1.7 remain in_progress, and proved
+coverage stays 79/167. Confirmed improvements stay 112, original
+source bytes are preserved, and Palomar remains deferred.
+No new manuscript-conclusion error is confirmed.
+
+Verified under Lean v4.36.0-rc2: full build passed (12735 jobs); direct axiom audit passed for 9226 declarations using only propext, Classical.choice and Quot.sound; all 7283 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.35 GiB.

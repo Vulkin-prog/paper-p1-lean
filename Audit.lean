@@ -5619,6 +5619,10 @@ import PaperP1
 #print axioms PaperP1.PrincipalEdgeActivation.uniform_probability
 #print axioms PaperP1.PrincipalEdgeProbability.uniform_coarse
 #print axioms PaperP1.PrincipalEdgeProbability.beta_squared_lower
+#print axioms PaperP1.PrincipalEdgeRemainderUnderInputs.regular_nominal_coefficient
+#print axioms PaperP1.PrincipalEdgeRemainderUnderInputs.uniform_remainder
+#print axioms PaperP1.PrincipalEdgeRemainderUnderInputs.uniform_nominal_remainder
+#print axioms PaperP1.PrincipalEdgeRemainderUnderInputs.uniform_edge_input
 #print axioms PaperP1.PrincipalEdgeSecondMomentLower.actual_second_eq
 #print axioms PaperP1.PrincipalEdgeSecondMomentLower.uniform_lower
 #print axioms PaperP1.PrincipalEdgeSecondMomentLower.relative_lower

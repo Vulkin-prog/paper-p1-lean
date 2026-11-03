@@ -2093,3 +2093,4 @@ public import PaperP1.Asymptotics.DenseWeightedSectorUnderInputs
 public import PaperP1.Combinatorics.PairSubfamilyWeights
 public import PaperP1.Asymptotics.DensePairActivityUnderInputs
 public import PaperP1.Asymptotics.PairProfilesUnderGeometricInputs
+public import PaperP1.Asymptotics.PrincipalEdgeRemainderUnderInputs
