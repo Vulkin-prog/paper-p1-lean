@@ -6135,7 +6135,8 @@
           "validation": "Verified with Lean v4.36.0-rc2: targeted builds and full lake build (11441 jobs), actual 8015-declaration axiom audit, all 5732 ledger/finding declaration references, 138 preserved source-manifest entries and the complete 167-result inventory. Only propext, Classical.choice and Quot.sound occur. Ubuntu root free space: 14.31 GiB. Numbered coverage remains 79/167; confirmed improvements remain 105.",
           "validation_commit": "70dbbd2bd6e0ead4bfab46665de2909721d08e02"
         }
-      ]
+      ],
+      "validation_commit": "c0d0f8fb6baaadc7c2d841a363f096c0e1c5175f"
     },
     {
       "label": "p1:arith:dense",
