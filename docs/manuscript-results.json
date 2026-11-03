@@ -4653,7 +4653,8 @@
           "validation": "Verified under Lean v4.36.0-rc2: full build passed (12971 jobs); direct axiom audit passed for 9691 declarations using only propext, Classical.choice and Quot.sound; all 7863 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.16 GiB.",
           "validation_commit": "c70b24a9c6db8731843f65b69e82d51cffa6b07a"
         }
-      ]
+      ],
+      "validation_commit": "b79409862dc73b19eafe6ccca7024d506d36d54f"
     },
     {
       "label": "p13:transfer:compressed-target",
