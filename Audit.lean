@@ -2963,6 +2963,11 @@ import PaperP1
 #print axioms PaperP1.EnlargedSourceTargetGeometry.old_abs_bound
 #print axioms PaperP1.EnlargedSourceTargetGeometry.all_abs_bound
 #print axioms PaperP1.EnlargedSourceTargetGeometry.interval_bounds
+#print axioms PaperP1.EulerPrimeCovers.mono
+#print axioms PaperP1.EulerPrimeCovers.biUnion
+#print axioms PaperP1.EulerPrimeCovers.cover
+#print axioms PaperP1.EulerPrimeCovers.local_one_le
+#print axioms PaperP1.EulerPrimeCovers.window_one_le
 #print axioms PaperP1.EvenIndependentIntersection.coefficient_zero_of_absent
 #print axioms PaperP1.EvenIndependentIntersection.space_inter
 #print axioms PaperP1.EvenIndependentIntersection.disjoint_of_inter_card_le_one
@@ -3365,6 +3370,9 @@ import PaperP1
 #print axioms PaperP1.LocalSquareThreshold.sixtyfour_mul_le_fifth_power
 #print axioms PaperP1.LocalSquareThreshold.local_square_threshold_power_five
 #print axioms PaperP1.LocalSquareThreshold.companion_T9_1
+#print axioms PaperP1.LogBudgetEuler.euler_one_le
+#print axioms PaperP1.LogBudgetEuler.euler_union
+#print axioms PaperP1.LogBudgetEuler.finite_bound
 #print axioms PaperP1.LogarithmicPrimeBudget.budgetConstant_pos
 #print axioms PaperP1.LogarithmicPrimeBudget.primeBudgetSum_mul_log_le
 #print axioms PaperP1.LogarithmicPrimeBudget.primeBudgetSum_le
@@ -5692,6 +5700,9 @@ import PaperP1
 #print axioms PaperP1.IncompatibleTripleSeed.subset_connected
 #print axioms PaperP1.IncompatibleTripleSeed.activity_eq_active
 #print axioms PaperP1.IncompatibleTripleSeed.independent_mass
+#print axioms PaperP1.IndependentExposurePrimePool.base_prime
+#print axioms PaperP1.IndependentExposurePrimePool.logarithmic_budget
+#print axioms PaperP1.IndependentExposurePrimePool.uniform_bound
 #print axioms PaperP1.IndependentTargetMass.uniform_count
 #print axioms PaperP1.IndependentTargetMass.uniform_mass
 #print axioms PaperP1.IndependentTargetMass.deficit_bound
@@ -6515,6 +6526,8 @@ import PaperP1
 #print axioms PaperP1.TwoTargetWeakUpperCount.uniform_pairs
 #print axioms PaperP1.uniformLittleOOn_zero
 #print axioms PaperP1.UniformGraphCardinalityTail.uniform_tail
+#print axioms PaperP1.UniformIndependentExposureBudget.uniform_row_constant
+#print axioms PaperP1.UniformIndependentExposureBudget.uniform_budget
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
 #print axioms PaperP1.UnitChannelPairWeights.uniform_joint
 #print axioms PaperP1.UnitChannelPairWeights.uniform_coefficient
@@ -8166,6 +8179,13 @@ import PaperP1
 #print axioms PaperP1.HomogeneousSourcePairMass.regular_dependent_bound
 #print axioms PaperP1.IncompatiblePairActivity.finite_bound
 #print axioms PaperP1.IncompatiblePairActivity.signed_absolute_gap
+#print axioms PaperP1.IndependentExposureEulerBudget.new_euler_bound
+#print axioms PaperP1.IndependentExposureEulerBudget.window_one_le
+#print axioms PaperP1.IndependentExposureEulerBudget.pool_covered
+#print axioms PaperP1.IndependentExposureEulerBudget.pool_factorization
+#print axioms PaperP1.IndependentExposureEulerBudget.first_moment
+#print axioms PaperP1.IndependentExposureEulerBudget.weighted_first_moment
+#print axioms PaperP1.IndependentExposureEulerBudget.weighted_bad_row
 #print axioms PaperP1.IndependentFullSupportTail.mem_families
 #print axioms PaperP1.IndependentFullSupportTail.witnesses
 #print axioms PaperP1.IndependentFullSupportTail.primitive_fullSupport

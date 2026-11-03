@@ -2322,3 +2322,8 @@ public import PaperP1.Analysis.InverseSqrtTail
 public import PaperP1.Arithmetic.FiniteEulerAverage
 public import PaperP1.Arithmetic.RoughEulerMoments
 public import PaperP1.Arithmetic.WindowEulerAverage
+public import PaperP1.Arithmetic.LogBudgetEuler
+public import PaperP1.Asymptotics.IndependentExposurePrimePool
+public import PaperP1.Arithmetic.EulerPrimeCovers
+public import PaperP1.Model.IndependentExposureEulerBudget
+public import PaperP1.Asymptotics.UniformIndependentExposureBudget
