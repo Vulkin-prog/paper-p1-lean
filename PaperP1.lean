@@ -2192,3 +2192,14 @@ public import PaperP1.Model.PairTargetCost
 public import PaperP1.Asymptotics.ChannelPairTargetCost
 public import PaperP1.Asymptotics.SharpPairTargetDeficitUnderInputs
 public import PaperP1.Asymptotics.SharpThirdCancellationUnderInputs
+public import PaperP1.Arithmetic.PrimePowerAllocations
+public import PaperP1.Arithmetic.ProductFirstPassage
+public import PaperP1.Arithmetic.CutoffSquareParts
+public import PaperP1.Arithmetic.CutoffSquareLcm
+public import PaperP1.Arithmetic.OffsetValueGeometry
+public import PaperP1.Arithmetic.SmallKernelCrossingCertificates
+public import PaperP1.Arithmetic.SmallKernelWindowSets
+public import PaperP1.Asymptotics.SquareCertificateCount
+public import PaperP1.Asymptotics.SmallKernelLcmGrowth
+public import PaperP1.Asymptotics.SeveralSmallKernelCount
+public import PaperP1.Asymptotics.SmallKernelWindows

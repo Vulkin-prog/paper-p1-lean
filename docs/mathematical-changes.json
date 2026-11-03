@@ -9390,6 +9390,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "4db28b5c922c9cf9e8a3ee9477e931f28cc9a15a"
+    },
+    {
+      "id": "P1-MATH-0120",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:small-kernels",
+        "number": "15.4",
+        "page": 41,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 202,
+        "statement_sha256": "ba793c625366bd2be81e9d283284fc46283d9dbf2560f0218802f99f8c392bf2"
+      },
+      "original_assumption": "Lemma15.4 fixes A>2, 0<beta,u<1 and states its second clause for fixed q>=0.",
+      "finding": "The complete several-small-kernel window bound remains valid at\nA=2. The proof only needs A>=2, u<=1 and m*(1-beta)>1; it needs\nno positive lower bound on beta or u. The actual product-kernel\nwindow estimate is uniform in every real q and every cutoff\n0<=H<=D*(L+1), with one common threshold before those choices.\nAll original strict positive parameter regimes are included.",
+      "impact": "Unconditional endpoint and parameter extension, without changing the printed exponents or identifying any error in the source conclusion. In particular A=2 needs a Rankin parameter strictly larger than1/2, which the proved square-smooth modulus bound supplies.",
+      "proposed_revision": "Allow A>=2 and state the actually needed hypotheses u<=1 and m*(1-beta)>1. State the product-cap estimate uniformly in q and in H bounded above by a fixed multiple of the complete window width. Keep the definition of a_Y restricted to primes above Y and the complete prime powers in the CRT modulus allocation.",
+      "evidence": [
+        "PaperP1.SeveralSmallKernelCount.uniform_count",
+        "PaperP1.SmallKernelWindows.critical_several_count",
+        "PaperP1.SmallKernelWindows.critical_two_count",
+        "PaperP1.SmallKernelWindows.article_15_4"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (12953 jobs); direct axiom audit passed for 9645 declarations using only propext, Classical.choice and Quot.sound; all 7799 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.20 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
