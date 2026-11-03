@@ -5596,3 +5596,54 @@ input, dependency download, source-byte change or Palomar
 registration is introduced.
 
 Verified with Lean v4.36.0-rc2: full lake build (11379 jobs), actual Audit.lean kernel-axiom audit (7836 declarations; only propext, Classical.choice, Quot.sound), all 5553 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.40 GiB.
+
+
+## A universal integer equation and the coefficient-uniform image-degree bound
+
+The actual defining polynomial of the split-radical image now
+has both degree bounds needed in Step 1 of companion T1.7:
+  2^k <= totalDegree(H) <= C(k)*max(1,K),
+where each equation's two root lists have total size at most K.
+The natural constant C(k) is defined as the actual total degree of
+one fixed integer-coefficient universal polynomial. It depends only
+on k, independently of the coefficient values, their heights,
+smoothness, the selected integer roots, and the base field. This
+also makes the upper dependence on the root-list degree linear.
+The lower bound and the exact image presentation are the ones
+already verified in the preceding checkpoint.
+
+The proof constructs a literal tower over Z[T_1,...,T_k] and takes
+the actual minimal polynomial of the sum of its formal radicals.
+It is monic and has degree in Z at most 2^k by the already proved
+finite free tower. Mapping T_i to the actual radicands specializes
+this SAME polynomial to the actual image equation whenever the
+target generic radicands are independent. The earlier base-change
+theorem requires only independence in the target, so no unproved
+generic square-class assertion about these universal parameters
+is needed. The parameter-list map and every coefficient homomorphism
+are checked on the actual rings.
+
+The universal equation is transported to a multivariable polynomial
+over Z, with one variable for the radical sum and k for the
+radicands. Its literal evaluation in MvPolynomial (Fin 3) F is
+proved equal to the actual image equation. A general support-sum
+argument bounds the total degree of polynomial substitution by
+the original total degree times the maximum substituend degree.
+Each actual split radicand has lifted total degree at most its
+two root-list sizes, and the sum variable has degree one. This
+gives the displayed bound with no coefficient-height dependence
+and no elimination or geometric estimate supplied as an input.
+
+This extends P1-MATH-0105 with the fixed universal equation and
+the linear-in-K degree bound. Its earlier free-power-basis finding
+and validation are preserved in the history. Confirmed improvement
+count remains 105, numbered coverage remains 79/167 and T1.7 stays
+in_progress. The remaining work includes identification of the
+projective closure's intersection-theoretic degree, the weighted
+embedding and curve-degree formulas, surface coverings, curve
+exclusions, and the actual two-variable host counts. No completed
+projective or counting claim is inferred just from a total-degree
+inequality. No external input, dependency download, original-source
+change or Palomar registration is introduced.
+
+Verified with Lean v4.36.0-rc2: full lake build (11387 jobs), actual Audit.lean kernel-axiom audit (7856 declarations; only propext, Classical.choice, Quot.sound), all 5573 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.39 GiB.

@@ -1708,3 +1708,7 @@ public import PaperP1.Algebra.TrivariatePolynomialEvaluation
 public import PaperP1.Algebra.SplitRadicalProjectionPolynomial
 public import PaperP1.Algebra.RadicalProjectionPolynomialBaseChange
 public import PaperP1.Algebra.SplitRadicalProjectionBaseChange
+public import PaperP1.Algebra.MvPolynomialSubstitutionDegree
+public import PaperP1.Algebra.UniversalRadicalProjection
+public import PaperP1.Algebra.UniversalRadicalProjectionEvaluation
+public import PaperP1.Algebra.SplitRadicalProjectionDegree
