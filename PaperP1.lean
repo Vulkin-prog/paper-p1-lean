@@ -2500,3 +2500,6 @@ public import PaperP1.Model.VariableRelationCore
 public import PaperP1.Model.HighNullityCoreCover
 public import PaperP1.Asymptotics.HighNullityClosureUnderInputs
 public import PaperP1.Asymptotics.GrowingConnectedUnderInputs
+public import PaperP1.Model.BoundedComponentActivity
+public import PaperP1.Asymptotics.NonconnectedActivityUnderInputs
+public import PaperP1.Asymptotics.FullFixedActivityUnderInputs

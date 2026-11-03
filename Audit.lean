@@ -5722,6 +5722,7 @@ import PaperP1
 #print axioms PaperP1.FixedWindowBranching.badStarts_card_critical
 #print axioms PaperP1.FixedWindowBranching.original_windows_critical
 #print axioms PaperP1.FourthRepeatedRunCostUnderBCN.uniform_bound
+#print axioms PaperP1.FullFixedActivityUnderInputs.uniform_range
 #print axioms PaperP1.FullSupportIndependentTail.article_15_8_original
 #print axioms PaperP1.FullSupportWeightedCount.uniform_ordered_mass
 #print axioms PaperP1.FullSupportWeightedCount.full_list_bound
@@ -6084,6 +6085,7 @@ import PaperP1
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_block_mass
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_activity
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_absolute_difference
+#print axioms PaperP1.NonconnectedActivityUnderInputs.uniform_bound
 #print axioms PaperP1.NormalizedDefectPairActivity.bad_subset_units
 #print axioms PaperP1.NormalizedDefectPairActivity.uniform_activity
 #print axioms PaperP1.NormalizedDefectPairActivity.uniform_joint_mass
@@ -8106,6 +8108,8 @@ import PaperP1
 #print axioms PaperP1.BoundaryAlignedPairs.height_two_card
 #print axioms PaperP1.BoundaryAlignedPairs.unit_one_empty
 #print axioms PaperP1.BoundaryAlignedPairs.height_one_cover
+#print axioms PaperP1.BoundedComponentActivity.sum_bound
+#print axioms PaperP1.BoundedComponentActivity.finite_bound
 #print axioms PaperP1.CanonicalPairImages.canonical_images
 #print axioms PaperP1.Model.InfiniteStarts.infiniteFamilyJointMoment_eq_finite
 #print axioms PaperP1.Model.InfiniteStarts.infiniteFamilyJointMoment_partition
