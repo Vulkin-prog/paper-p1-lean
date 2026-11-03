@@ -10493,6 +10493,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "9bcd48a40c02d78fcf3f2b7ece0ff2946b8f15de"
+    },
+    {
+      "id": "P1-MATH-0147",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:uniform:modified-moments",
+        "number": "T22.6",
+        "page": 92,
+        "source": "companion_sections/uniform_appendix.tex",
+        "line": 266,
+        "statement_sha256": "cf2511fff8a020bfd5a599e7579bdc4fb62b023e306a1d569fb781fbdc2d1869"
+      },
+      "original_assumption": "The printed pair-leakage proof invokes uniform boundedness of every fixed moment before the weighted finite-cutoff argument.",
+      "finding": "The pair-leakage argument in companion T22.6 does not need uniformly\nbounded fixed moments. The unconditional subpower bounds for every fixed\nordinary moment suffice. A finite Holder estimate with exponents1/8 and7/8,\nusing the existing exceptional probability at fixed margin1/120, bounds\nANY nonnegative active-set observable f(A)<=|A|^j by N^(-83/120) on the\nexceptional event. The SAME finite geometric input bundle is chosen before\nALL fixed degrees j and before the final relative tolerance. The actual\npair count is polynomially bounded, so each H_r has this rate. An\nunconditional4^r generator bound and an unconditional positive lower bound\nfor the actual correction scale then prove the complete2^r-weighted\nlittle-o estimate by a fixed-cutoff argument. This removes BCN and\norder-dependent bounded-moment geometry from this proof route. It does\nnot claim a stronger fixed-order exponent than the printed7/10; the\nweaker83/120 already exceeds2/3 and proves the complete source claim.",
+      "impact": "Proves the full weighted little-o leakage under a single existing finite exceptional-event input bundle, chosen before all fixed moment orders and all relative tolerances. The needed subpower moments and generator scale comparisons are unconditional.",
+      "proposed_revision": "Replace the bounded-fixed-moment invocation in the T22.6 leakage proof by the unconditional subpower moment estimate with a fixed small power margin. State the fixed geometric bundle before the polynomial degree and final tolerance, and retain the separate positive generator bound for the complete weighted tail.",
+      "evidence": [
+        "PaperP1.ExceptionalEventHolder.restricted_eighth",
+        "PaperP1.ActiveSetExceptionalMoment.eighth_bound",
+        "PaperP1.SubpowerFixedCountMoments.uniform_ordinary",
+        "PaperP1.ExceptionalPolynomialMomentsUnderInputs.uniform_fixed",
+        "PaperP1.RetainedGoodPairScale.uniform_bound",
+        "PaperP1.RetainedPairLeakageUnderInputs.uniform_fixed_pair",
+        "PaperP1.RetainedPairLeakageUnderInputs.uniform_generator_bound",
+        "PaperP1.RetainedPairLeakageLittleO.uniform_relative",
+        "PaperP1.ModifiedMomentDecompositionUnderInputs.companion_T22_6"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13733 jobs); direct axiom audit passed for 10690 declarations using only propext, Classical.choice and Quot.sound; all 9122 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.36 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
