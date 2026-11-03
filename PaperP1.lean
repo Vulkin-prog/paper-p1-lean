@@ -1949,3 +1949,11 @@ public import PaperP1.Algebra.SquareClassKernelDegree
 public import PaperP1.Algebra.OddDegreeFieldSquares
 public import PaperP1.Geometry.ProjOddDegreeQuadraticDescent
 public import PaperP1.Geometry.SourceProjectiveCurveLineEvenDegree
+public import PaperP1.Algebra.RationalGraphSquareRoots
+public import PaperP1.Algebra.RationalGraphPoleEquations
+public import PaperP1.Algebra.RationalSquareGraphNonconstant
+public import PaperP1.Combinatorics.DisjointOffsetGridSelection
+public import PaperP1.Diophantine.GridRationalGraphDescent
+public import PaperP1.Diophantine.DisjointRationalSquareGraphBound
+public import PaperP1.Asymptotics.BoundedDegreeGridGraphExclusion
+public import PaperP1.Asymptotics.CriticalRationalSquareGraphExclusion

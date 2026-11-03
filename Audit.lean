@@ -1388,6 +1388,15 @@ import PaperP1
 #print axioms PaperP1.RationalGraphFieldTower.graph_relative_degree
 #print axioms PaperP1.RationalGraphFieldTower.graph_tower_degree
 #print axioms PaperP1.RationalGraphFieldTower.exact_graph_degree
+#print axioms PaperP1.RationalGraphPoleEquations.mem_badEquations
+#print axioms PaperP1.RationalGraphPoleEquations.card_badEquations_le
+#print axioms PaperP1.RationalGraphPoleEquations.survivor_nonvanishing
+#print axioms PaperP1.RationalGraphPoleEquations.survivors_card
+#print axioms PaperP1.RationalGraphSquareRoots.cleared_square
+#print axioms PaperP1.RationalGraphSquareRoots.square_derivative_zero
+#print axioms PaperP1.RationalGraphSquareRoots.root_match
+#print axioms PaperP1.RationalGraphSquareRoots.selected_derivative_ne_zero
+#print axioms PaperP1.RationalGraphSquareRoots.offset_match
 #print axioms PaperP1.RationalInterpolationKernel.bounded_natDegree
 #print axioms PaperP1.RationalInterpolationKernel.mem_kernel_iff
 #print axioms PaperP1.RationalInterpolationKernel.kernel_eq_span
@@ -1400,6 +1409,7 @@ import PaperP1
 #print axioms PaperP1.RationalInterpolationUniqueness.unique_up_to_scalar_family
 #print axioms PaperP1.RationalMapFieldDegree.reduced_degrees
 #print axioms PaperP1.RationalMapFieldDegree.extension_rank
+#print axioms PaperP1.RationalSquareGraphNonconstant.degree_pos
 #print axioms PaperP1.RelativeVeroneseBasis.source_free_rank
 #print axioms PaperP1.RelativeVeroneseBasis.sourceBasis_apply
 #print axioms PaperP1.RelativeVeroneseImage.scalar_range
@@ -4444,6 +4454,7 @@ import PaperP1
 #print axioms PaperP1.BoundaryCutoffTrial.cutoff_le_trial_eventually
 #print axioms PaperP1.BoundaryCutoffTrial.cutoff_div_log_tendsto
 #print axioms PaperP1.BoundaryCutoffTrial.critical_quarter_range
+#print axioms PaperP1.BoundedDegreeGridGraphExclusion.cutoff_lt_scale
 #print axioms PaperP1.BoundedObservationPool.widthEnvelope_ge_one
 #print axioms PaperP1.BoundedObservationPool.pool_budget_le_envelope
 #print axioms PaperP1.BoundedObservationPool.pool_count_logarithmic
@@ -4619,6 +4630,9 @@ import PaperP1
 #print axioms PaperP1.CriticalOrderBranching.companion_T22_4
 #print axioms PaperP1.CriticalPolynomialScale.polynomial_lt_scale
 #print axioms PaperP1.CriticalPolynomialScale.source_size_eventually
+#print axioms PaperP1.CriticalRationalSquareGraphExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalRationalSquareGraphExclusion.squares_of_odd_extension
+#print axioms PaperP1.CriticalRationalSquareGraphExclusion.eventually_no_dyadic_point_of_odd_extension
 #print axioms PaperP1.CriticalWindowGeometry.uniform_geometry
 #print axioms PaperP1.CriticalWindowGeometry.log_base_lower
 #print axioms PaperP1.DenseNonalignedProfileReduction.dense_data
@@ -5912,6 +5926,7 @@ import PaperP1
 #print axioms PaperP1.DisjointOffsetGrid.select
 #print axioms PaperP1.DisjointOffsetGrid.three_survivors
 #print axioms PaperP1.DisjointOffsetGrid.select_survivors
+#print axioms PaperP1.DisjointOffsetGridSelection.select_n
 #print axioms PaperP1.DisjointSixVertexBudget.surviving_size
 #print axioms PaperP1.DisjointSixVertexBudget.six_vertex_budget
 #print axioms PaperP1.DisjointSubsetIncidence.split_sum
@@ -6286,6 +6301,7 @@ import PaperP1
 #print axioms PaperP1.DisjointCommonQuotientBound.integral_point
 #print axioms PaperP1.DisjointEquationGraphBound.integral_point
 #print axioms PaperP1.DisjointEquationGraphDescent.integral_point
+#print axioms PaperP1.DisjointRationalSquareGraphBound.integral_point
 #print axioms PaperP1.PellInput.toZsqrtd_re
 #print axioms PaperP1.PellInput.toZsqrtd_im
 #print axioms PaperP1.PellInput.norm_toZsqrtd
@@ -6312,6 +6328,7 @@ import PaperP1
 #print axioms PaperP1.GridPolynomialGraphBound.integral_point
 #print axioms PaperP1.GridRationalGraphBound.integral_point
 #print axioms PaperP1.GridRationalGraphBound.bound_le_polynomial
+#print axioms PaperP1.GridRationalGraphDescent.integral_point
 #print axioms PaperP1.GridRationalGraphExclusion.integral_point
 #print axioms PaperP1.GridRationalGraphExclusion.bound_le_polynomial
 #print axioms PaperP1.PellInput.quadraticOrderConductorFiberBound

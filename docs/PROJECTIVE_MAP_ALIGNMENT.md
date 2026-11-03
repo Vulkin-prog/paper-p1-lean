@@ -1327,3 +1327,48 @@ become 110, and Palomar remains deferred. Original manuscript bytes
 and the Lean/Mathlib pins are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12445 jobs, direct axiom audit of 8787 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6695 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.95 GiB.
+
+
+## Rational square graphs: actual pole deletion, arbitrary-degree interpolation, and odd-extension exclusion
+
+The odd-degree descent now also gives a checked arithmetic
+exclusion for every bounded-degree rational graph. This route takes
+the actual split-product radical equations in an actual field
+extension of F(T), whose degree is odd; it does not assume common
+quotients, an exceptional-equation budget or interpolation matches.
+Odd-degree reflection makes the literal rational functions
+c_nu product(T+i)*(p/q+j_nu) squares in the actual fraction field.
+
+Clearing the actual nonzero denominator squared and reflecting
+squares to F[T] yields a polynomial square. Its derivative vanishes
+at each selected root. The split root is proved simple, so whenever
+q(-i) is nonzero this forces p(-i)=-j_nu*q(-i). The actual equations
+whose selected root sets meet a denominator zero are constructed;
+disjointness gives an injection into the actual roots of q and
+proves that at most deg(q) equations are lost. No assumed pole-
+exclusion set or assumed cardinal estimate is used.
+
+If d=max(deg p,deg q) is at most E and there are at least 3E+1
+equations with disjoint nonempty root sets of a common cardinality,
+the actual survivors supply 2d+1 distinct offset abscissae. The
+requested grid selection is constructed for arbitrary grid size,
+so the root-family cardinality need not equal d. The constant graph
+case is itself excluded by one radical equation and positivity at
+the actual host; positive graph degree is derived, not assumed.
+Actual rational descent then gives the preceding explicit offset-
+only abscissa bound. One critical-band threshold works for every
+d<=E, and is chosen before both coefficient/extension fields, the
+root-family degree, the graph coefficients, all radical coefficients,
+all selected data, the odd extension degree and all hosts.
+
+The final statement uses actual radical roots in the specified odd-
+degree extension and the actual integral graph-point equation. The
+transport from a general source curve to such a rational image is
+not assumed established. Even-degree extensions and nonrational
+images still require further geometry. This extends P1-MATH-0110;
+it adds no numbered coverage or separate finding. T1.7 remains
+in_progress, coverage stays 79/167, confirmed improvements stay 110,
+and Palomar remains deferred. Original source bytes and pins are
+unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12461 jobs, direct axiom audit of 8804 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6714 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.93 GiB.
