@@ -1,86 +1,96 @@
-# All-pair finite reconstruction toward main15.13
+# Complete finite-order transfer to the full law, main15.13
 
-Source: main_sections/exact_transfer.tex:887. The unconditional finite mechanism and large-boundary tail are proved; the complete fixed-order implication is still in progress.
+Source: main_sections/exact_transfer.tex:887. The entire stated implication is proved under its exact254 fixed-order hypotheses and the already recorded geometric properties.
 
-Main15.13 is now IN PROGRESS with its unconditional exact finite
-reconstruction and unconditional large-boundary tail. Its complete
-implication from the254 fixed connected-activity estimates is NOT yet
-claimed. This checkpoint does not add a completed numbered result.
+Main15.13 is now COMPLETE CONDITIONALLY as the literal theorem stated in
+the source: for1<beta<=4/3, the254 fixed connected-activity estimates at
+orders3 through256 imply the complete original-law quadratic estimate
+with rate N^(-beta+epsilon). The same three previously recorded geometric
+counting properties remain explicit ordinary arguments for the already
+proved all-pair deficit, pair activity and connected tail. No new
+geometric counting property is introduced.
 
-The literal all-pair class D2 on ANY finite actual ground G is constructed:
-I is retained when its original square-class spaces are direct, or its
-nullity equals that of one contained pair. Every pair of G is allowed,
-including incompatible pairs and pairs with zero covariance. Heredity,
-empty-set membership and retention of every pair are proved. For a
-positive dyadic ground, every first excluded prefix has positive nullity
-at most2L, and every subfamily has compatible nullity at most2L.
-This is the full2L boundary, not the smaller good-pair boundary from T17.5.
+The SOURCE FIXED-ORDER ASSUMPTION is explicit and has not been discharged:
+FiniteConnectedActivity254.Hypothesis C beta quantifies ONLY r=3,...,256.
+For every such r and every positive accuracy it supplies a nonnegative
+constant A_r and a threshold before all critical N,L, bounding the sum
+of |c(I)| over ALL actual connected r-site families with compatible
+nullity<=2L by A_r*N^(-beta+accuracy). The constants may depend on r,C
+and accuracy, exactly as in the printed big-O hypothesis. It assumes
+neither the desired law bound nor a growing-order activity bound.
+This completion proves the stated implication; it is NOT recorded as a
+proof of those254 activity estimates, main15.10, main15.14 or main1.1.
 
-UnrestrictedRetainedExpansion proves the exact inverse-centering expansion
-on this class:
+FiniteConnectedActivity254.uniform_weighted chooses the254 constants
+and thresholds before N using a finite index type. Exact cardinality
+filters cover every family of size3..256, and finite fixed weights are
+absorbed with a smaller accuracy. There is then ONE threshold for the
+entire finite range. PrimitiveConnectedGeometry proves that primitive
+original families are connected and have compatible nullity<=L, so the
+same hypotheses control primitive sizes3..256. The already proved
+unconditional primitive tail supplies all larger sizes with power7/5.
+The complete primitive sum consequently has rate beta.
 
-  q(I) = product_I p_x + sum_(e subset I, |e|=2) c(e)*product_(I minus e) p_x.
+FiniteConnectedClosureUnderInputs combines the exact small-size estimate
+with ConnectedTailUnderInputs at the literal cutoff from
+SecondOrderBoundaryCutoff. The latter cutoff is proved o(log N). The
+connected tail at sizesSTRICTLY GREATER THAN256 has power83/60, which is
+strictly stronger than4/3. Every actual connected family of size3..K
+and compatible nullity<=2L is retained, including incompatible systems.
+Both the complete connected sum and all-cardinality primitive sum have
+rate beta after one threshold, uniformly over every G in the full dyadic
+ground. No unproved estimate at sizes>256 is added to the hypothesis.
 
-No positivity or compatibility premise is imposed. If a marginal is zero,
-the actual centered coefficient vanishes by the already proved zero-mass
-argument. Otherwise the full-support relation criterion proves that all
-centered coefficients of size at least3 vanish on a retained family.
-A primitive original family has c(I)=q(I)-product_I p_x, including the
-incompatible case q(I)=0, and product_I p_x<=|c(I)|. Canonical nullity
-additivity separately proves that every primitive family is connected;
-its compatible nullity is at mostL on the positive dyadic ground.
+The previous unconditional finite reconstruction theorem remains the
+probabilistic mechanism. D2 contains direct original families and families
+with exactly the nullity of a contained pair; ALL original pairs are
+allowed. Its boundary has nullity<=2L. On D2, inverse centering is exactly
+q(I)=product_I p_x+sum_pairs c(e)*product_complement p_x. The retained
+polynomial differs from the full heterogeneous Bernoulli-plus-signed-pair
+reference by the explicit discarded independent and pair terms. Failed
+pair complements are proved non-direct after source compression. The
+finite bound uses actual primitive centered mass, the actual all-pair
+extension deficit, and exp(A2+T)-1-A2, with the whole linear pair activity
+subtracted BEFORE the absolute component estimate. It holds for every K
+and exact heterogeneous marginals, including zeros and incompatibility.
 
-AllPairPolynomialExpansion proves an exact finite commutative-ring
-identity, retaining EVERY signed pair weight. Specialization identifies
-the all-pair reference with the full heterogeneous Bernoulli product plus
-its signed covariance corrections. SecondOrderRetainedReference proves
-that its difference from the actual D2 retained polynomial is precisely
-the negative discarded sum of the independent and signed pair terms.
-In particular, no incompatible covariance is replaced by a joint event
-probability and no equal-marginal reduction is used.
+FiniteCompleteLawTransferUnderInputs uses a fixed internal accuracy
+delta=min(epsilon/8,1/24). Absolute pair activity has rate2/3, the complete
+connected remainder has rate beta>1, the all-pair independent deficit has
+rate3/2, and the actual large-boundary mass has unconditional rate4.
+The total component activity x is at most5*N^(-2/3+delta), hence eventually
+at most1. The proved exponential remainder costs T+x^2*exp(x)/2. Its
+squared pair term has rate4/3, so beta<=4/3 is exactly sufficient.
+A uniformly bounded actual mean controls all free complements. Finally
+the already proved signed heterogeneous Poisson--Charlier conversion
+has rate5/3 and uses the EXACT actual mean and second factorial cumulant,
+including the marginal diagonal. Fixed constants are absorbed before
+taking the final threshold.
 
-SecondOrderIndependentDeficit charges the independent mass of discarded
-families to primitive sources of size at least3 and failed extensions of
-a contained pair. For the latter, nonretention itself proves failure of
-directness after compression. The exact complement map is injective in
-every source fiber. Arbitrary u>=0, arbitrary finite source ground and all
-cardinalities are covered; the primitive independent weight is bounded by
-its actual centered activity even for incompatible systems.
-SecondOrderPositiveMass removes the empty coefficient and the ENTIRE
-one-pair contribution before applying the actual canonical-component
-generator. The resulting finite probability bound holds for EVERY K.
+Parameters are a finite connected-tail bundle, a finite all-pair-deficit
+bundle, and two finite-pair bundles for activity and conversion. At the
+chosen delta, connected hypotheses use coarse margin delta/128 and
+pair caps sizeCap(delta/32768), sizeCap(delta/1048576). The all-pair-deficit
+hypotheses use caps sizeCap(delta/2048), sizeCap(delta/65536). Pair activity
+and conversion use sizeCap(1/100). The underlying bundle definitions
+expose every constituent ordinary surface cover, chosen-source surface
+cover and normalized-curve bound. No BCN or bounded-moment assumption
+occurs. All parameters, constants and fixed orders precede N; the final
+threshold precedes ALL critical lengths and ALL dyadic subgrounds.
 
-SecondOrderStoppedLaw.finite_bound is an unconditional bound for the
-actual ORIGINAL normalized count law, at any positive dyadic ground,
-L>0 and arbitrary K. Write A=sum_pairs 4|c(e)|, T=sum_(connected C,
-3<=|C|<=K,compatible-nullity<=2L) 2^|C|*|c(C)|, P=sum_(primitive D,
-|D|>=3)2^|D|*|c(D)|, D=the literal all-pair failed-extension deficit
-at weight2, and M=sum_x2p_x. Then its exact checked bound is
+article_15_13 specializes the stronger subground theorem to the original
+full count law. The source-count law is an actual normalized pushforward,
+and the reference is the actual signed Poisson--Charlier measure; distance
+is the convergent ordinary sum of absolute singleton differences. The
+finite suffix count remains an actual positive kernel, never a freely
+expanded signed approximation to a probability.
 
-  distance(Law Z_G, embed B2) <=
-    2 exp(M)*P +16 D + exp(M)*(exp(A+T)-1-A) +largeBoundaryMass.
+This completion adds3 modules,5 theorems,2 definitions and4 finite
+parameter structures. Coverage is87/167 unconditional and31 conditional;
+confirmed mathematical improvements remain146. This is completion of
+the source implication and introduces no new correction identifier.
+The optimal4/3 activity inputs and main15.14 reconstruction still require
+their own proofs. No dependency download, original source-byte change,
+Paper C port, hidden axiom or Palomar registration is introduced.
 
-All quantities on the right are explicitly defined finite actual sums.
-The original law is transported through an actual containing finite
-cylinder and the exact stopped expansion, whose suffix remains positive.
-No eventwise polynomial is treated as a probability law.
-
-SecondOrderBoundaryCutoff evaluates the already defined least cutoff at
-N^2. It is PROVED to be o(log N), and the log-budget tail is then N^-6.
-The literal2L boundary costs O_C(N^2), giving the unconditional final
-large-boundary bound2^(2C)*N^-4, uniformly for all G in the dyadic block.
-All irregular windows, exact heterogeneous marginals, zero masses and
-incompatible systems are retained. No growing-order moment premise is
-used for this tail.
-
-This checkpoint adds9 modules,36 theorems and10 definitions. Coverage
-remains87/167 unconditional and30 conditional; confirmed mathematical
-improvements remain146. These are exact proof constructions and do not
-receive a new correction identifier. The next step is to insert the
-source254 fixed connected-activity hypotheses, combine the proved tails,
-pair activity and pair deficits, and perform the existing sharp analytic
-conversion. Main15.13 stays in progress until that implication is checked.
-No dependency download, source-byte change, Paper C port, hidden axiom
-or Palomar registration is introduced.
-
-The main15.13 JSON row records the direct validation and exact proof commit.
+The main15.13 JSON row records the direct validation, previous unconditional finite checkpoint and exact proof commit.

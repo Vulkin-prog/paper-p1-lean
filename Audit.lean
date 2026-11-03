@@ -5693,6 +5693,11 @@ import PaperP1
 #print axioms PaperP1.FiniteChannelHierarchyBounds.uniform_power_bound
 #print axioms PaperP1.FiniteChannelHierarchyBounds.uniform_small
 #print axioms PaperP1.FiniteChannelHierarchyBounds.nominal_bounds
+#print axioms PaperP1.FiniteCompleteLawTransferUnderInputs.uniform_bound
+#print axioms PaperP1.FiniteCompleteLawTransferUnderInputs.article_15_13
+#print axioms PaperP1.FiniteConnectedActivity254.uniform_weighted
+#print axioms PaperP1.FiniteConnectedActivity254.uniform_primitives
+#print axioms PaperP1.FiniteConnectedClosureUnderInputs.uniform_bounds
 #print axioms PaperP1.FiniteGoodPartitionUnderInputs.choose_height
 #print axioms PaperP1.FiniteGoodPartitionUnderInputs.uniform_exceptional
 #print axioms PaperP1.FiniteGoodPartitionUnderInputs.companion_T7_1

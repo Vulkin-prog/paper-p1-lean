@@ -2568,3 +2568,6 @@ public import PaperP1.Model.SecondOrderPositiveMass
 public import PaperP1.Model.SecondOrderStoppedLaw
 public import PaperP1.Model.PrimitiveConnectedGeometry
 public import PaperP1.Asymptotics.SecondOrderBoundaryCutoff
+public import PaperP1.Asymptotics.FiniteConnectedActivity254
+public import PaperP1.Asymptotics.FiniteConnectedClosureUnderInputs
+public import PaperP1.Asymptotics.FiniteCompleteLawTransferUnderInputs
