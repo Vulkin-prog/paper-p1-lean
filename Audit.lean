@@ -5759,6 +5759,9 @@ import PaperP1
 #print axioms PaperP1.GoodPairSeedTail.private_ratio
 #print axioms PaperP1.GoodPairSeedTail.uniform_ratio
 #print axioms PaperP1.GoodPairSeedTail.uniform_large_seeds
+#print axioms PaperP1.GrowingConnectedUnderInputs.uniform_linear_range
+#print axioms PaperP1.GrowingConnectedUnderInputs.uniform_sublog_range
+#print axioms PaperP1.GrowingConnectedUnderInputs.companion_T16_3
 #print axioms PaperP1.GrowingDegreePrimeBudget.trial_log_ratio
 #print axioms PaperP1.GrowingDegreePrimeBudget.prime_card_of_log_height
 #print axioms PaperP1.GrowingDegreePrimeBudget.growing_degree_prime_card
@@ -5817,6 +5820,7 @@ import PaperP1
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.meanCap_pos
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.errorConstant_pos
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.uniform_actual_bound
+#print axioms PaperP1.HighNullityClosureUnderInputs.uniform_bound
 #print axioms PaperP1.HighNullityPairMassUnderInputs.aligned_cover
 #print axioms PaperP1.HighNullityPairMassUnderInputs.uniform_mass
 #print axioms PaperP1.HomogeneousChannelMass.finite_pair_bound
@@ -8472,6 +8476,8 @@ import PaperP1
 #print axioms PaperP1.HeterogeneousRunConversion.second_cumulant_formula
 #print axioms PaperP1.HeterogeneousRunConversion.absoluteMass_nonneg
 #print axioms PaperP1.HeterogeneousRunConversion.actual_signed_measure_conversion
+#print axioms PaperP1.HighNullityCoreCover.mem_cores
+#print axioms PaperP1.HighNullityCoreCover.finite_bound
 #print axioms PaperP1.HomogeneousRunMass.bits_zero_iff_equal
 #print axioms PaperP1.HomogeneousRunMass.tuple_probability
 #print axioms PaperP1.HomogeneousRunMass.tuple_rank
@@ -9411,6 +9417,8 @@ import PaperP1
 #print axioms PaperP1.UnsignedUnitFourierAggregate.dyadic_unit_sum
 #print axioms PaperP1.UnsignedUnitFourierAggregate.symmetric_unit_sum
 #print axioms PaperP1.UnsignedUnitFourierAggregate.finite_unsigned_sum_error
+#print axioms PaperP1.VariableRelationCore.exists_bound
+#print axioms PaperP1.VariableRelationCore.weighted_bound
 #print axioms PaperP1.WeakPairActivity.coefficient_bound
 #print axioms PaperP1.WeakPairActivity.finite_bound
 #print axioms PaperP1.WeightedPrimitiveMass.mem_families

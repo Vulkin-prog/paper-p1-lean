@@ -10084,6 +10084,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "70a7d23693d6898c8d49d1ef29e3f966583fcd39"
+    },
+    {
+      "id": "P1-MATH-0140",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:core:bounded-nullity",
+        "number": "T16.3",
+        "page": 59,
+        "source": "companion_sections/cores.tex",
+        "line": 704,
+        "statement_sha256": "c672fc069a515cba354f69e71bde1bff93b069e2ad4e095b3048543df69780f3"
+      },
+      "original_assumption": "Theorem T16.3 states exponent4/5 for K_N=o(L), and explicitly the linear range K<=L/(2*(t-2)) for eta>1 and even t>=eta+2.",
+      "finding": "Companion T16.3 improves from exponent4/5 to1 on its full stated\nlinear range K<=L/(2*(t-2)), under the same finite geometric properties.\nThe result includes all eta>=0, every actual dyadic subground, affine\nincompatibility and zero marginals. The proof constructs an actual positive\nt-core after maximizing compatible nullity, proves its exact deletion loss\nbudget and retains nullity>L/2 in the stated linear range. Summing exact\nheterogeneous free-complement weights gives a fixed exponential factor,\nwithout counting deletion orders. The completed positive-core rate1 and\nall-cardinality low-nullity rate1 give the full result. A separate proved\nuniform cap handles K_N/log(N)->0; an even t is selected before N. For\neta=3/2,t=4 the bound is valid for the literal K<=L/4 range, as in the\nsource, with the stronger exponent1.",
+      "impact": "Completes both the sublogarithmic and literal linear size regimes conditionally and strengthens their exponent to1, with actual heterogeneous marginals and incompatible original families.",
+      "proposed_revision": "State exponent1. Retain the explicit linear size condition, prove the compatible-maximizing terminal t-core budget and sum free complements with their actual individual marginals. State the cutoff-before-N quantifier order and keep the growing-range conclusion separate from fixed-order bounds.",
+      "evidence": [
+        "PaperP1.VariableRelationCore.exists_bound",
+        "PaperP1.VariableRelationCore.weighted_bound",
+        "PaperP1.HighNullityCoreCover.mem_cores",
+        "PaperP1.HighNullityCoreCover.finite_bound",
+        "PaperP1.HighNullityClosureUnderInputs.uniform_bound",
+        "PaperP1.GrowingConnectedUnderInputs.uniform_linear_range",
+        "PaperP1.GrowingConnectedUnderInputs.uniform_sublog_range",
+        "PaperP1.GrowingConnectedUnderInputs.companion_T16_3",
+        "PaperP1.HighNullityCoreCover.cores"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13551 jobs); direct axiom audit passed for 10415 declarations using only propext, Classical.choice and Quot.sound; all 8774 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.80 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
