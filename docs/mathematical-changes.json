@@ -9489,6 +9489,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "c3adcc3c8a072285cdd289135010e3a06013406a"
+    },
+    {
+      "id": "P1-MATH-0123",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:dense-targets",
+        "number": "15.2",
+        "page": 40,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 129,
+        "statement_sha256": "67d2424adbe9ce58d341f300471c14a7e1cf21728b62ee4a3f73ad0425362605"
+      },
+      "original_assumption": "The companion proof of15.2 removes small aligned curves by first proving uniqueness of a global bounded alignment determined by two exact units.",
+      "finding": "The small-curve removal stage for weak aligned targets can\nuse any one bounded alignment supplied by the actual alignment\ncondition. Its unit count is controlled by the effective\nintersection. Exclude classes touching all but at most one\nunit of that chosen channel. For every FIXED number of selected\ncoordinates, the deduplicated values normalized by its two\nchannel coefficients lie in one polynomial-logarithmic interval.\nThe proved Runge bound gives even independence of this small\nunion, and its at-most-one overlap gives exact selected-space\ndisjointness. Thus the actual selected grids satisfy the\ngeometric admissibility properties directly. No uniqueness\nproof for the global alignment is required for this local\nstage, and no claim about units on all other channels is needed.\nThe full weak aligned population count is still separate.",
+      "impact": "A direct proved arithmetic admissibility mechanism for every actual fixed-size surviving selected grid, using the supplied bounded channel and the local defect bound. It simplifies the local small-curve removal argument while retaining all existing geometric input properties. This does not yet complete the weak aligned cardinality or weighted statements.",
+      "proposed_revision": "Choose any bounded alignment witnessing the aligned case. Bound its actual units by the effective intersection and local defect, remove endpoint labels for all but one unit, and normalize only the fixed selected grids. State their finite Runge even-independence and exact intersection identity, then invoke the selected-admissibility geometric counts. A global alignment uniqueness lemma can be omitted from this step.",
+      "evidence": [
+        "PaperP1.WeakAlignmentUnitCount.uniform_weak_bound",
+        "PaperP1.TwoTargetUnitExclusion.except_one",
+        "PaperP1.TwoTargetUnitExclusion.selected_overlap_le_one",
+        "PaperP1.EvenIndependentIntersection.disjoint_of_inter_card_le_one",
+        "PaperP1.CriticalAlignedSelections.uniform_selected_directness",
+        "PaperP1.WeakAlignedSelectedGrids.uniform_admissible",
+        "PaperP1.CoefficientSelectedHostCount.uniform_hosts",
+        "PaperP1.CoefficientSelectedDegreeOneHostCount.uniform_hosts"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13083 jobs); direct axiom audit passed for 9838 declarations using only propext, Classical.choice and Quot.sound; all 8057 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.91 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

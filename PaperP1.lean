@@ -2260,3 +2260,9 @@ public import PaperP1.Asymptotics.CriticalFiniteRungeIndependence
 public import PaperP1.Arithmetic.EvenIndependentIntersection
 public import PaperP1.Asymptotics.CriticalAlignedSelections
 public import PaperP1.Arithmetic.TwoTargetUnitExclusion
+public import PaperP1.Arithmetic.CoefficientPatternGrids
+public import PaperP1.Asymptotics.CoefficientSelectedHostCount
+public import PaperP1.Asymptotics.SelectedDegreeOneRootHostCount
+public import PaperP1.Asymptotics.CoefficientSelectedDegreeOneHostCount
+public import PaperP1.Arithmetic.TwoTargetSelectedGrids
+public import PaperP1.Asymptotics.WeakAlignedSelectedGrids

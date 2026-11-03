@@ -2572,6 +2572,10 @@ import PaperP1
 #print axioms PaperP1.CodedClassTargets.mem_targets
 #print axioms PaperP1.CodedClassTargets.equations_card
 #print axioms PaperP1.CodedClassTargets.targets_card
+#print axioms PaperP1.CoefficientPatternGrids.left_subset
+#print axioms PaperP1.CoefficientPatternGrids.right_subset
+#print axioms PaperP1.CoefficientPatternGrids.total_card_le
+#print axioms PaperP1.CoefficientPatternGrids.values_card_le
 #print axioms PaperP1.CoefficientSplitRadicalPatterns.mem_pool
 #print axioms PaperP1.CoefficientSplitRadicalPatterns.card_pool
 #print axioms PaperP1.CoefficientSplitRadicalPatterns.coefficient_mem
@@ -4749,6 +4753,15 @@ import PaperP1
 #print axioms PaperP1.TwoTargetRegularization.uniform_regularization
 #print axioms PaperP1.TwoTargetRegularization.physical_class_budgets
 #print axioms PaperP1.TwoTargetRegularization.physical_class_size
+#print axioms PaperP1.TwoTargetSelectedGrids.grid_offsets_eq
+#print axioms PaperP1.TwoTargetSelectedGrids.vertex_cast
+#print axioms PaperP1.TwoTargetSelectedGrids.integer_values_eq
+#print axioms PaperP1.TwoTargetSelectedGrids.selected_values_eq
+#print axioms PaperP1.TwoTargetSelectedGrids.values_subset
+#print axioms PaperP1.TwoTargetSelectedGrids.grid_positive
+#print axioms PaperP1.TwoTargetSelectedGrids.indices_total_card_le
+#print axioms PaperP1.TwoTargetSelectedGrids.avoids_deleted_units
+#print axioms PaperP1.TwoTargetSelectedGrids.normalized_overlap_le_one
 #print axioms PaperP1.TwoTargetSingletonLabels.mem_singleton_labels
 #print axioms PaperP1.TwoTargetSingletonLabels.singleton_parts_eq
 #print axioms PaperP1.TwoTargetSingletonLabels.singleton_labels_card
@@ -5083,6 +5096,8 @@ import PaperP1
 #print axioms PaperP1.CodedClassCount.uniform_count
 #print axioms PaperP1.CoefficientDegreeOneHostCount.uniform_hosts
 #print axioms PaperP1.CoefficientNonalignedHostCount.uniform_hosts
+#print axioms PaperP1.CoefficientSelectedDegreeOneHostCount.uniform_hosts
+#print axioms PaperP1.CoefficientSelectedHostCount.uniform_hosts
 #print axioms PaperP1.CoefficientUnivariateCount.uniform_count
 #print axioms PaperP1.CoefficientUnivariateCount.uniform_pairs
 #print axioms PaperP1.ColoredConditionalSum.uniform_sum
@@ -6155,6 +6170,7 @@ import PaperP1
 #print axioms PaperP1.SecondCumulantUnderBCN.uniform_eventually_small
 #print axioms PaperP1.SecondCumulantUnderBCN.uniform_parameter_gap
 #print axioms PaperP1.SecondMomentSubpower.uniform_subpower
+#print axioms PaperP1.SelectedDegreeOneRootHostCount.uniform_hosts
 #print axioms PaperP1.SelectedKernelCounts.small_factor_subpolynomial
 #print axioms PaperP1.SelectedKernelCounts.large_factor_subpolynomial
 #print axioms PaperP1.SelectedKernelCounts.ambient_sqrt
@@ -6405,6 +6421,8 @@ import PaperP1
 #print axioms PaperP1.VerySmallTail.moment_bound
 #print axioms PaperP1.VerySmallTail.power_threshold
 #print axioms PaperP1.VerySmallTail.companion_T19_6
+#print axioms PaperP1.WeakAlignedSelectedGrids.admissible_swap
+#print axioms PaperP1.WeakAlignedSelectedGrids.uniform_admissible
 #print axioms PaperP1.WeakAlignmentUnitCount.uniform_bound
 #print axioms PaperP1.WeakAlignmentUnitCount.uniform_weak_bound
 #print axioms PaperP1.WeakPairActivityAsymptotic.critical_binary_power
