@@ -1746,3 +1746,8 @@ public import PaperP1.Algebra.QuadraticTowerListCongr
 public import PaperP1.Algebra.RelativeVeroneseMap
 public import PaperP1.Algebra.RelativeVeroneseImage
 public import PaperP1.Algebra.RelativeVeroneseBasis
+public import PaperP1.Algebra.GradedVeroneseGrading
+public import PaperP1.Algebra.SourceVeroneseGrading
+public import PaperP1.Algebra.QuadraticTowerHomogeneousBasis
+public import PaperP1.Algebra.SourceVeroneseHomogeneousBasis
+public import PaperP1.Algebra.SourceVeroneseGradedBaseMap

@@ -7141,3 +7141,55 @@ conclusion error is asserted. No external estimate, dependency
 download, original-source change or Palomar registration is introduced.
 
 Verified with Lean v4.36.0-rc2: targeted builds and full lake build (11455 jobs), actual 8044-declaration axiom audit, all 5761 ledger/finding declaration references, 138 preserved source-manifest entries and the complete 167-result inventory. Only propext, Classical.choice and Quot.sound occur. Ubuntu root free space: 14.29 GiB. Numbered coverage remains 79/167; confirmed improvements total 106.
+
+
+## P1-MATH-0106 extended — The actual rescaled grading, homogeneous basis and graded base map
+
+Both actual Veronese algebras now carry the grading in which
+original degree nD becomes degree n. The construction is made on
+their literal direct-sum range algebras, with degree-n piece equal
+to the preimage of the original degree-nD piece. Original homogeneous
+projections lift to actual linear projections on the Veronese
+algebra. For positive D their action on each image piece is the
+identity in its own degree and zero in every other degree.
+Injectivity and surjectivity of recomposition are proved, followed
+by the actual GradedAlgebra structure and its projection formula.
+
+For the standard three-variable base and the literal source weighted
+quotient, generation in degree D is transported to generation of
+these actual rescaled rings by their degree-one pieces. Every exact
+source generator, including each radical, is proved to belong to
+degree one. The source degree-zero piece is exactly its scalar image.
+The source quotient grading uses the source root-count bound; the
+rescaling uses positive D. No generation or decomposition assertion
+is assumed as an unproved interface.
+
+The free normal basis of P1-MATH-0106 is now proved homogeneous. A
+recursive index weight counts the selected radicals and is proved
+at most k. For any actual ring map from a quadratic tower to a
+graded ring, homogeneous radical images of degree D imply that the
+image of each literal normal basis vector has degree D times its
+index weight. Applying this statement to the exact relative map,
+using its checked generator formulas, proves that the actual source
+basis vector belongs to rescaled degree equal to that weight, with
+all weights between 0 and k. This is a statement about the already
+constructed source basis, not a new basis assumed homogeneous.
+
+Finally the actual finite faithful standard-base map is proved to
+preserve every rescaled degree and is bundled as a GradedRingHom.
+The proof transports every ordinary homogeneous native base
+polynomial through the literal variable rename into the weighted
+polynomial grading, and then through the actual quotient map. The
+bundled graded map retains the previously verified injectivity and
+finiteness properties. These results extend P1-MATH-0106 without a
+new improvement identifier.
+
+The Hilbert-function computation, projective construction and its
+degree-zero function-field bridge, finite projective cover degree
+and all surface- and curve-degree identities remain open. The
+external surface covering and two-variable host counts remain open.
+T1.7 stays in_progress, numbered coverage stays 79/167 and confirmed
+improvements stay 106. No external estimate, dependency download,
+original-source change or Palomar registration is introduced.
+
+Verified with Lean v4.36.0-rc2: targeted builds and full lake build (11469 jobs), actual 8070-declaration axiom audit, all 5787 ledger/finding declaration references, 138 preserved source-manifest entries and the complete 167-result inventory. Only propext, Classical.choice and Quot.sound occur. Ubuntu root free space: 14.28 GiB. Numbered coverage remains 79/167; confirmed improvements remain 106.
