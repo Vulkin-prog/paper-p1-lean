@@ -2332,3 +2332,11 @@ public import PaperP1.Combinatorics.ExceptionalSeedBound
 public import PaperP1.Arithmetic.IntersectionExceptional
 public import PaperP1.Model.IndependentExtensionDeficit
 public import PaperP1.Asymptotics.UniformIndependentDeficit
+public import PaperP1.Model.RelativeParticipatingUnion
+public import PaperP1.Combinatorics.DistinguishedSeedWeights
+public import PaperP1.Model.PairExtensionSeedTail
+public import PaperP1.Asymptotics.GoodPairSeedTail
+public import PaperP1.Model.AllPairExtensionDeficit
+public import PaperP1.Asymptotics.FinitePairDeficitInputs
+public import PaperP1.Asymptotics.UniformPairClassDeficit
+public import PaperP1.Asymptotics.AllPairDeficitUnderInputs

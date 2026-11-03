@@ -5043,6 +5043,7 @@ import PaperP1
 #print axioms PaperP1.AllAlignedTargetTripleMass.all_actual_sources
 #print axioms PaperP1.AllAlignedTargetTripleMass.mass_le_sum
 #print axioms PaperP1.AllAlignedTargetTripleMass.uniform_mass
+#print axioms PaperP1.AllPairDeficitUnderInputs.article_15_9
 #print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound_succ
 #print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound
 #print axioms PaperP1.AllPairRankUnderBCN.nonaligned_pair_bound
@@ -5518,6 +5519,9 @@ import PaperP1
 #print axioms PaperP1.FiniteGoodPartitionUnderInputs.choose_height
 #print axioms PaperP1.FiniteGoodPartitionUnderInputs.uniform_exceptional
 #print axioms PaperP1.FiniteGoodPartitionUnderInputs.companion_T7_1
+#print axioms PaperP1.FinitePairDeficitInputs.fixed_order
+#print axioms PaperP1.FinitePairDeficitInputs.finite_orders
+#print axioms PaperP1.FinitePairDeficitInputs.partition_inputs
 #print axioms PaperP1.FixedChannelErrorAlgebra.error_scale
 #print axioms PaperP1.FixedChannelMassTheorem.eventual_mass_eq
 #print axioms PaperP1.FixedChannelMassTheorem.strong_error
@@ -5623,6 +5627,10 @@ import PaperP1
 #print axioms PaperP1.GeometricAlignedTripleMass.uniform_mass
 #print axioms PaperP1.GeometricAlignedTripleMass.uniform_polynomial_inclusion
 #print axioms PaperP1.GeometricAlignedTripleMass.uniform_polynomial_mass
+#print axioms PaperP1.GoodPairSeedTail.private_product
+#print axioms PaperP1.GoodPairSeedTail.private_ratio
+#print axioms PaperP1.GoodPairSeedTail.uniform_ratio
+#print axioms PaperP1.GoodPairSeedTail.uniform_large_seeds
 #print axioms PaperP1.GrowingDegreePrimeBudget.trial_log_ratio
 #print axioms PaperP1.GrowingDegreePrimeBudget.prime_card_of_log_height
 #print axioms PaperP1.GrowingDegreePrimeBudget.growing_degree_prime_card
@@ -6534,6 +6542,7 @@ import PaperP1
 #print axioms PaperP1.UniformIndependentDeficit.uniform_bound
 #print axioms PaperP1.UniformIndependentExposureBudget.uniform_row_constant
 #print axioms PaperP1.UniformIndependentExposureBudget.uniform_budget
+#print axioms PaperP1.UniformPairClassDeficit.uniform_bound
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
 #print axioms PaperP1.UnitChannelPairWeights.uniform_joint
 #print axioms PaperP1.UnitChannelPairWeights.uniform_coefficient
@@ -6907,6 +6916,8 @@ import PaperP1
 #print axioms PaperP1.DisjointSixVertexBudget.surviving_size
 #print axioms PaperP1.DisjointSixVertexBudget.six_vertex_budget
 #print axioms PaperP1.DisjointSubsetIncidence.split_sum
+#print axioms PaperP1.DistinguishedSeedWeights.union_injective
+#print axioms PaperP1.DistinguishedSeedWeights.mass_bound
 #print axioms PaperP1.ExceptionalSeedBound.seed_mass
 #print axioms PaperP1.ExceptionalSeedBound.cover_mass
 #print axioms PaperP1.ExceptionalSeedBound.constant_bound
@@ -7845,6 +7856,12 @@ import PaperP1
 #print axioms PaperP1.AllAlignedPairs.classification
 #print axioms PaperP1.AllAlignedPairs.private_channel_subset
 #print axioms PaperP1.AllAlignedPairs.principal_subset
+#print axioms PaperP1.AllPairExtensionDeficit.seed_subset
+#print axioms PaperP1.AllPairExtensionDeficit.seed_cover
+#print axioms PaperP1.AllPairExtensionDeficit.one_pair_bound
+#print axioms PaperP1.AllPairExtensionDeficit.class_cap
+#print axioms PaperP1.AllPairExtensionDeficit.class_seed_bound
+#print axioms PaperP1.AllPairExtensionDeficit.partition
 #print axioms PaperP1.BoundaryAlignedPairs.data
 #print axioms PaperP1.BoundaryAlignedPairs.channel_eq_image
 #print axioms PaperP1.BoundaryAlignedPairs.height_two_sources_cover
@@ -8461,6 +8478,10 @@ import PaperP1
 #print axioms PaperP1.PairActivityHostCap.finite_bound
 #print axioms PaperP1.PairActivityHostCap.covariance_sum_absolute_bound
 #print axioms PaperP1.PairActivityHostCap.second_cumulant_absolute_bound
+#print axioms PaperP1.PairExtensionSeedTail.mem_largeSeeds
+#print axioms PaperP1.PairExtensionSeedTail.mem_participating
+#print axioms PaperP1.PairExtensionSeedTail.union_mem
+#print axioms PaperP1.PairExtensionSeedTail.weighted_bound
 #print axioms PaperP1.PairHostMoment.zero_loss
 #print axioms PaperP1.PairHostMoment.tuplePair_injective
 #print axioms PaperP1.PairHostMoment.tupleValues_pair
@@ -8712,6 +8733,8 @@ import PaperP1
 #print axioms PaperP1.RegularStarts.affine_atom_on_regular
 #print axioms PaperP1.RegularStarts.infiniteMarginal_eq_affine_atom
 #print axioms PaperP1.RegularStarts.marginal_on_regular
+#print axioms PaperP1.RelativeParticipatingUnion.union_witnesses
+#print axioms PaperP1.RelativeParticipatingUnion.pair_witnesses
 #print axioms PaperP1.RelativeSignIndependence.startSystem_restrict_eq
 #print axioms PaperP1.RelativeSignIndependence.measurable_infiniteStartBits
 #print axioms PaperP1.RelativeSignIndependence.infiniteStartBits_atom_eq_finite

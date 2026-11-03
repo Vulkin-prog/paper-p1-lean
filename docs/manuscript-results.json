@@ -5337,11 +5337,55 @@
       "source": "main_sections/exact_transfer.tex",
       "line": 520,
       "sha256": "562b4f96b7b2fd49cc9b5ac6c1ce1baa48b9743787258156f714afc5b4fcd259",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "conditional",
+      "lean_declarations": [
+        "PaperP1.RelativeParticipatingUnion.union_witnesses",
+        "PaperP1.RelativeParticipatingUnion.pair_witnesses",
+        "PaperP1.DistinguishedSeedWeights.union_injective",
+        "PaperP1.DistinguishedSeedWeights.mass_bound",
+        "PaperP1.PairExtensionSeedTail.mem_largeSeeds",
+        "PaperP1.PairExtensionSeedTail.mem_participating",
+        "PaperP1.PairExtensionSeedTail.union_mem",
+        "PaperP1.PairExtensionSeedTail.weighted_bound",
+        "PaperP1.GoodPairSeedTail.private_product",
+        "PaperP1.GoodPairSeedTail.private_ratio",
+        "PaperP1.GoodPairSeedTail.uniform_ratio",
+        "PaperP1.GoodPairSeedTail.uniform_large_seeds",
+        "PaperP1.AllPairExtensionDeficit.seed_subset",
+        "PaperP1.AllPairExtensionDeficit.seed_cover",
+        "PaperP1.AllPairExtensionDeficit.one_pair_bound",
+        "PaperP1.AllPairExtensionDeficit.class_cap",
+        "PaperP1.AllPairExtensionDeficit.class_seed_bound",
+        "PaperP1.AllPairExtensionDeficit.partition",
+        "PaperP1.FinitePairDeficitInputs.fixed_order",
+        "PaperP1.FinitePairDeficitInputs.finite_orders",
+        "PaperP1.FinitePairDeficitInputs.partition_inputs",
+        "PaperP1.UniformPairClassDeficit.uniform_bound",
+        "PaperP1.AllPairDeficitUnderInputs.article_15_9",
+        "PaperP1.PairExtensionSeedTail.largeSeeds",
+        "PaperP1.PairExtensionSeedTail.participating",
+        "PaperP1.AllPairExtensionDeficit.deficit",
+        "PaperP1.AllPairExtensionDeficit.classMass",
+        "PaperP1.AllPairExtensionDeficit.sourceSeeds",
+        "PaperP1.FinitePairDeficitInputs.Parameters",
+        "PaperP1.FinitePairDeficitInputs.Hypotheses"
+      ],
+      "literature_inputs": [
+        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+        "P1-GEO-ORDINARY-SURFACE-COVER",
+        "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0130"
+      ],
+      "notes": "Article Proposition15.9 is now complete CONDITIONALLY under\nexactly the existing chosen-source surface covers, ordinary\nsurface covers, and uniform normalized-curve point bounds.\nAllPairExtensionDeficit.deficit is the literal D_2(u): sum over\nALL unordered actual dyadic pairs of the absolute actual centered\ncoefficient times the exact independent extension deficit over\nEVERY cardinality, with the actual heterogeneous marginals.\nAllPairDeficitUnderInputs.article_15_9 proves its eventual bound\nN^(-3/2+epsilon). No desired pair or extension mass is assumed.\nMain15.9 moves from not_started to conditional; unconditional\ncoverage remains85/167, conditional results rise from16 to17,\nand confirmed mathematical improvements rise from129 to130.\n\nRelativeParticipatingUnion proves a stronger algebraic bridge\nthan a simultaneous full-support relation. If every source\ncoordinate participates in some relation, and every target\ncoordinate participates relative to the effective source span,\nthen EVERY coordinate in the original source-target union\nparticipates in some relation with zero total. For a target,\nits actual relative sum is lifted through the actual addition\nmap onto the source span, and subtracted after extension by zero.\nFor a source, its source-only relation is extended by zero.\nEvery actual dependent pair is participating, since it is a\nminimal non-direct two-element family. Source coordinates may\nvanish in target witnesses. No claim of a single relation\nnonzero at all source-target coordinates is made or needed.\n\nDistinguishedSeedWeights proves the exact finite overcounting\nbound for a distinguished disjoint source e and target seed A.\nIf c(e)<=R*product_e(w), then\n  sum_e c(e)*sum_A product_A(w)\n    <= R*sum_I product_I(2*w),\nprovided each union I=e union A belongs to the target family.\nFor each fixed e, A is determined by I because e and A are\ndisjoint. For fixed I, at most2^card(I) choices of e exist.\nThat factor is absorbed exactly by doubling the independent\nweight, before any cardinality cutoff or N is chosen.\nPairExtensionSeedTail applies the bridge to actual relative\nparticipating seeds disjoint from each dependent pair.\n\nGoodPairSeedTail.private_product proves the exact product\nof actual marginal weights for a private channel pair:\nproduct_e(u*p_x)=u^2*(2^(-L))^2.\nThe existing actual covariance estimate divided by this product\nis at most2^((L+1)/3)/u^2, since every channel in the finite\ngood family has height b>=3. In the critical band this is at\nmost K*N^(1/3), K=2^((C+1)/3)/u^2. uniform_ratio has one threshold\nbefore every actual good pair in the fixed finite channel set.\nThe doubled weights2*u*p_x have a fixed cap4*u*2^C/N.\nThe already proved original coordinatewise-participating tail,\nwith a=23/12<2, bounds all unions of large relative seeds by\nN^(-23/12+eta). Multiplying by the ratio gives\nK*N^(-19/12+eta), stronger than the required N^(-3/2+epsilon).\nThis entire good-pair large-seed estimate is UNCONDITIONAL.\nIt uses original windows and does not use a compressed-block\ncertificate theorem or assume a compressed-tail estimate.\n\nAllPairExtensionDeficit proves the remaining exact finite cover.\nEvery failed extension contains a minimal nonempty relative seed.\nSeeds of size below fixed s are covered by the actual fixed-order\nextension populations of15.7; all larger ones belong to the\nactual relative participating-seed tail. The exact finite\nsuperset identity charges free complements by exp(sum_x u*p_x).\nAfter weighting pairs, each fixed small seed order contributes\nu^k*FixedPairExtensions.deficit(G,L,k). The cutoff s is chosen\nbefore N, so only finitely many fixed-order bounds are used.\nThe class partition is an equality for the literal weighted\nD_2, including all direct pairs with their zero coefficients.\n\nUniformPairClassDeficit proves that ANY actual pair class has\nmass at most its absolute activity times N^(-1/2+eta), using\nunconditional15.6 with the actual full raw source span. The\nproved finite-channel weak and exceptional activity bounds,\nN^(-1+eta) and N^(-1+eta), therefore yield N^(-3/2+O(eta)).\nThe good-pair small seeds use the existing conditional15.7,\nand their large seeds use the new unconditional estimate.\nThe true actual marginal mean bounds the free-complement\nfactor by exp(u*2*2^C). All finite factors are absorbed after\nchoosing eta=epsilon/16.\n\nFinitePairDeficitInputs.Parameters and Hypotheses are only a\nfinite explicit bundle of the SAME geometric propositions.\nThey contain no host estimate, arithmetic mass bound or new\naxiom. The final theorem chooses Q,s and finitely many actual\ngeometric dimensions before their supplied hypotheses, then\none threshold before all N and critical L. The chosen-source\nsize caps are sizeCap(epsilon/2048) for the pair partition and\nsizeCap(epsilon/65536) for each of the finitely many fixed seed\norders. The three geometric translations themselves remain\nunformalized, so this result is NOT counted as unconditional.\n\nP1-MATH-0130 records that the stronger coordinatewise-tail\nproperty removes the geometric-compression step from the proof\nof15.9, and also removes the need to separate internal target\ndependence in this argument. Main15.8's separate compressed\nassertion remains OPEN; this checkpoint does not claim it.\nNo new dependency, PaperC port, original-source change or\nPalomar registration is introduced.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": ""
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13231 jobs); direct axiom audit passed for 10049 declarations using only propext, Classical.choice and Quot.sound; all 8328 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.56 GiB."
     },
     {
       "label": "p13:transfer:fixed-activities",

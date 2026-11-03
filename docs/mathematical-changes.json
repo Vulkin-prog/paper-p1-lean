@@ -9731,6 +9731,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "8717fbe90c06ce7f98f5010604861b607225ae34"
+    },
+    {
+      "id": "P1-MATH-0130",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:pair-deficit",
+        "number": "15.9",
+        "page": 44,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 520,
+        "statement_sha256": "562b4f96b7b2fd49cc9b5ac6c1ce1baa48b9743787258156f714afc5b4fcd259"
+      },
+      "original_assumption": "The proof of15.9 treats internal dependence separately and uses geometric pair compression followed by the compressed full-support tail to control large crossing seeds.",
+      "finding": "The good-pair large-seed part of15.9 can be proved entirely\nwith ORIGINAL windows, without the compressed clause of15.8.\nA dependent pair is coordinatewise participating. A minimal\nrelative target seed over its effective span is participating\nrelative to that pair. Lifting each actual relative sum through\nthe source addition map shows that their union is coordinatewise\nparticipating in the original spaces. Different coordinates\nmay have different witnessing relations; a single full-support\nrelation is unnecessary. The stronger original certificate tail\nalready proved for this larger population therefore applies.\nFor actual private good-channel pairs the activity divided by\nproduct_e(u*p_x) is at most K*N^(1/3). Charge a distinguished\npair inside its union by at most2^card(I), absorbed by doubling\nthe fixed independent weight. Taking a=23/12 in the original\nparticipating tail gives the stronger large-seed rate\nN^(-19/12+epsilon), hence the required N^(-3/2+epsilon).\nFree complements cost a constant by the actual marginal mean.\nMinimal relative seeds include internal target dependence,\nso a separate internal-directness test is also unnecessary.\nThe final15.9 remains conditional only on the same finite\ngeometric inputs already used for weak/exceptional activities\nand fixed-size seeds; no compressed-tail premise is added.",
+      "impact": "The large good-pair seed contribution is proved unconditionally using original coordinatewise participating families and exact doubled weights. The final pair-deficit proof no longer depends on the still-open compressed clause of15.8.",
+      "proposed_revision": "Use minimal relative seeds uniformly, lift their witnesses through the source span, and apply the stronger original participating-tail theorem to the source-target union. Insert the distinguished-source weighted inequality and the exact private pair product ratio. Keep the existing geometric dependencies of the small-seed and weak/exceptional terms explicit.",
+      "evidence": [
+        "PaperP1.RelativeParticipatingUnion.union_witnesses",
+        "PaperP1.RelativeParticipatingUnion.pair_witnesses",
+        "PaperP1.DistinguishedSeedWeights.mass_bound",
+        "PaperP1.PairExtensionSeedTail.weighted_bound",
+        "PaperP1.GoodPairSeedTail.private_ratio",
+        "PaperP1.GoodPairSeedTail.uniform_large_seeds",
+        "PaperP1.AllPairExtensionDeficit.one_pair_bound",
+        "PaperP1.AllPairDeficitUnderInputs.article_15_9"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13231 jobs); direct axiom audit passed for 10049 declarations using only propext, Classical.choice and Quot.sound; all 8328 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.56 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
