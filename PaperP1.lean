@@ -1978,3 +1978,9 @@ public import PaperP1.Algebra.UnivariateRadicalCoverDegree
 public import PaperP1.Algebra.IntegerConstantCurve
 public import PaperP1.Arithmetic.ConstantCurveCoverDegree
 public import PaperP1.Asymptotics.CriticalAllCurveCoverExclusion
+public import PaperP1.Algebra.WeightedOrdinarySubstitution
+public import PaperP1.Algebra.LinearHilbertSlopeComparison
+public import PaperP1.Geometry.OrdinaryCurveSourceMap
+public import PaperP1.Geometry.OrdinaryCurveSourcePoint
+public import PaperP1.Geometry.OrdinaryCurveDegreeBound
+public import PaperP1.Geometry.OrdinaryCurveProjectionDegree

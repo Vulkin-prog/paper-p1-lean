@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **8887 audited theorem/lemma declarations**. This
+- The project currently has **8917 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -8961,3 +8961,51 @@ confirmed improvements stay 111 and Palomar remains deferred.
 Original manuscript bytes and compiler/dependency pins are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12503 jobs, direct axiom audit of 8887 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6822 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.86 GiB.
+
+
+## P1-MATH-0112 — Actual ordinary-to-weighted curve Hilbert degree comparison
+
+A literal homogeneous algebra comparison now connects the ordinary
+affine-projective embedding in Step 5 to the weighted source used
+in the existing degree formula. The substitution fixes X,Y,Z and
+sends each weighted radical coordinate w to Z^(D-1)w. A polynomial
+of weighted degree n maps to an ordinary homogeneous polynomial of
+degree n. When 2<=g=|I|+|J|<=2D, each actual weighted radical
+relation maps exactly to Z^(2D-g) times the ordinary homogeneous
+relation w^2 Z^(g-2)-c P_I P_J.
+
+An actual homogeneous prime ideal Q of the ordinary polynomial ring
+containing these literal relations therefore constructs an actual
+map from the weighted radical coordinate algebra. Restricting its
+actual Veronese map and quotienting by its actual kernel constructs
+the source prime P. Its primality and homogeneity are proved. The
+actual quotient map is injective and sends every source piece n
+into the ordinary quotient piece D*n. If Z is not in Q, its actual
+nonvanishing D-th power constructs a relevant source projective
+point with precisely this ideal P.
+
+A numerical Hilbert-slope comparison is proved from the constructed
+injections, not supplied as a degree inequality. If the ordinary
+curve quotient has actual Hilbert polynomial E*n+beta, the actual
+source slope is at most D*E. Combined with the proved finite-rank
+projection slope, the extracted plane degree times the actual
+cover rank is at most E. In particular each is at most E. For the
+constructed source projective point with height(P)=1, its own
+irreducible homogeneous plane equation is extracted internally,
+and the bound is transported to the actual projective function-
+field extension degree through the previously proved comparison.
+No plane equation, cover rank inequality, supplied Hilbert-piece
+dimension inequality, coordinate-degree comparison or coefficient
+height bound is an input to this final extraction theorem.
+
+The ordinary Hilbert polynomial and the height-one condition on
+the constructed P remain explicit geometric hypotheses. Their
+identification with every curve supplied by the external covering
+theorem, the integer affine-equation/fraction-field identification,
+and the external uniform point counts remain open. This is the
+confirmed proof improvement P1-MATH-0112; it does not claim the full
+ordinary-curve exclusion or T1.7. Numbered coverage stays 79/167,
+confirmed improvements become 112 and Palomar remains deferred.
+Original manuscript bytes and compiler/dependency pins are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12515 jobs, direct axiom audit of 8917 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6864 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.84 GiB.
