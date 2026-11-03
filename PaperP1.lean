@@ -1813,3 +1813,10 @@ public import PaperP1.Geometry.GradedVeroneseProj
 public import PaperP1.Geometry.ProjDegreeScalingCharts
 public import PaperP1.Geometry.ProjDegreeScalingMap
 public import PaperP1.Geometry.SourceProjectivePlane
+public import PaperP1.Algebra.GradedPolynomialGenerators
+public import PaperP1.Algebra.GradedPolynomialPresentation
+public import PaperP1.Algebra.GradedSurjectiveChartMap
+public import PaperP1.Algebra.SplitWeightedGeneratorIndex
+public import PaperP1.Geometry.ProjSurjectiveClosedImmersion
+public import PaperP1.Geometry.SourceEmbeddingCoordinateAlgebra
+public import PaperP1.Geometry.SourceProjectiveEmbedding

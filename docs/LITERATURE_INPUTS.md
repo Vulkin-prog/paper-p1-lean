@@ -7615,3 +7615,54 @@ coverage remains 79/167, confirmed improvements remain 107 and
 Palomar remains deferred. Original manuscript sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12159 jobs, direct axiom audit of 8285 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6049 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.58 GiB.
+
+
+## Actual closed projective embedding, coordinate quotient and Hilbert degree
+
+The actual source now has the closed projective immersion defined
+by precisely its degree-D base monomials and radical coordinates.
+The ambient scheme is the standard Proj of the ordinary polynomial
+ring on that literal coordinate index. An explicit bijection
+identifies the index with the disjoint union of ternary degree-D
+exponents and the original radical indices. Its cardinality is
+binom(D+2,2)+k, giving the manuscript ambient coordinate count.
+
+The polynomial evaluation map to the actual source Veronese is
+constructed, proved surjective and proved to preserve every
+homogeneous degree. Its irrelevant-ideal admissibility follows
+from the actual degree-one generators. Surjectivity descends to
+all degree-one affine chart maps by dehomogenization. Their actual
+spectrum maps are closed immersions, and the checked chart
+compatibility proves the global source map is a closed immersion.
+No closed-immersion premise is supplied as an external input.
+
+The homogeneous coordinate ideal is exactly the kernel of that
+same polynomial evaluation map. It is proved homogeneous. Its
+literal polynomial quotient has the grading whose pieces are the
+images of the ordinary homogeneous polynomial pieces. The actual
+quotient algebra is proved isomorphic to the source Veronese, and
+every graded piece is identified by a linear equivalence.
+Thus the coordinate quotient and grading used in the Hilbert
+calculation match the verified chosen projective presentation.
+
+Every coordinate piece is finite dimensional. The previously
+computed exact source Hilbert function and unique eventual
+quadratic polynomial are transported to these actual coordinate
+pieces. Their Hilbert multiplicity is proved to be 2^k D^2.
+The closed immersion and this numerical multiplicity are bundled
+in one checked statement. This computes the Hilbert degree in the
+manuscript's explicit projective coordinates, rather than only an
+invariant of an unidentified graded algebra.
+
+The structural embedding permits arbitrary coefficient fields and
+zero coefficients under the explicit degree bound and positive D.
+The Hilbert formula retains the literal original radicand identities.
+The separate source-integrality hypotheses are unchanged for
+function-field arguments. The hyperplane-bundle pullback comparison,
+curve-degree projection formula, low-degree curve geometry, a
+scheme-dimension comparison and external surface/curve point counts
+remain open. T1.7 stays in_progress, numbered coverage remains
+79/167, confirmed improvements remain 107 and Palomar remains
+deferred. Original manuscript sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12173 jobs, direct axiom audit of 8318 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6098 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.56 GiB.
