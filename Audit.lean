@@ -876,6 +876,8 @@ import PaperP1
 #print axioms PaperP1.FormalWordPolynomials.rationalize_linear
 #print axioms PaperP1.FormalWordPolynomials.rationalize_word
 #print axioms PaperP1.FormalWordPolynomials.integer_word_ne_zero
+#print axioms PaperP1.FourthCharlierPolynomial.factorial_envelope
+#print axioms PaperP1.FourthCharlierPolynomial.envelope
 #print axioms PaperP1.FourthFactorialCumulant.independent_quartic
 #print axioms PaperP1.FourthFactorialCumulant.pair_deletion
 #print axioms PaperP1.FourthFactorialCumulant.weighted_pair_deletion
@@ -2221,6 +2223,7 @@ import PaperP1
 #print axioms PaperP1.PolynomialParsevalBounds.circleIntegrable_sq_norm_eval
 #print axioms PaperP1.PolynomialParsevalBounds.coefficient_energy_le_of_pointwise_bound
 #print axioms PaperP1.PolynomialParsevalBounds.l2_le_of_pointwise_bound
+#print axioms PaperP1.PolynomialTestTruncation.test_bound
 #print axioms PaperP1.PowerSeriesTail.weight_nonneg
 #print axioms PaperP1.PowerSeriesTail.tailTerm_nonneg
 #print axioms PaperP1.PowerSeriesTail.tailTerm_le_weight
@@ -6322,6 +6325,7 @@ import PaperP1
 #print axioms PaperP1.PositiveBoundaryMassUnderInputs.uniform_bound
 #print axioms PaperP1.PositiveBoundaryMassUnderInputs.companion_T17_3
 #print axioms PaperP1.PositiveLineSplitCount.uniform_count
+#print axioms PaperP1.PositiveQuarticObstructionUnderInputs.uniform_lower
 #print axioms PaperP1.PositiveSecondCumulant.uniform_lower
 #print axioms PaperP1.PositiveSecondCumulant.uniform_positive
 #print axioms PaperP1.PositiveSecondCumulant.uniform_hermite_admissibility
@@ -6467,6 +6471,7 @@ import PaperP1
 #print axioms PaperP1.QuadraticKernelExponents.exponent_le_affine
 #print axioms PaperP1.QuadraticKernelExponents.exponent_le_affine_with_margin
 #print axioms PaperP1.QuadraticKernelExponents.unrestricted_comparison_counterexample
+#print axioms PaperP1.QuadraticLawLowerBoundUnderInputs.article_16_2_lower
 #print axioms PaperP1.QuadraticOrderBranching.badStarts_card_critical
 #print axioms PaperP1.QuadraticOrderBranching.quadratic_order_branching
 #print axioms PaperP1.QuadraticOrderMoments.nominal_mean_bound
@@ -8640,6 +8645,8 @@ import PaperP1
 #print axioms PaperP1.FixedPairExtensions.mass_bound
 #print axioms PaperP1.FixedPairExtensions.unary_cost_eq
 #print axioms PaperP1.FixedPairExtensions.finite_bound
+#print axioms PaperP1.FourthCharlierLawDistance.distance_eq_sequence
+#print axioms PaperP1.FourthCharlierLawDistance.finite_bound
 #print axioms PaperP1.FourthDirectPairSum.pair_mem_direct_iff
 #print axioms PaperP1.FourthDirectPairSum.direct_pair_data
 #print axioms PaperP1.FourthDirectPairSum.union_mem_disconnected
@@ -9020,6 +9027,11 @@ import PaperP1
 #print axioms PaperP1.OriginalCountLawCoupling.finite_law
 #print axioms PaperP1.OriginalCountLawCoupling.coupling
 #print axioms PaperP1.OriginalCountLawCoupling.restore_modified
+#print axioms PaperP1.OriginalLawPolynomialMoments.original_hasSum
+#print axioms PaperP1.OriginalLawPolynomialMoments.ordinary_hasSum
+#print axioms PaperP1.OriginalLawPolynomialMoments.factorial_hasSum
+#print axioms PaperP1.OriginalLawPolynomialMoments.charlier_hasSum
+#print axioms PaperP1.OriginalLawPolynomialMoments.weighted_moment_bound
 #print axioms PaperP1.OriginalTwoAnchorWitnesses.participating_core
 #print axioms PaperP1.OriginalTwoAnchorWitnesses.connected_core
 #print axioms PaperP1.OriginalTwoAnchorWitnesses.connected_witnesses
@@ -10331,6 +10343,10 @@ import PaperP1
 #print axioms PaperP1.FiniteSignedPalm.deletion_l1_bound
 #print axioms PaperP1.FiniteSignedPalm.diagonalError_l1_bound
 #print axioms PaperP1.FiniteSignedPalm.signed_palm_residual_bound
+#print axioms PaperP1.FourthCharlierReference.second_shift_factorial_succ_succ
+#print axioms PaperP1.FourthCharlierReference.quadratic_factorial_succ_succ
+#print axioms PaperP1.FourthCharlierReference.quadratic_first
+#print axioms PaperP1.FourthCharlierReference.hasSum_zero
 #print axioms PaperP1.FreshTupleRecurrence.encoding_image
 #print axioms PaperP1.FreshTupleRecurrence.sum_succ_eq_fresh
 #print axioms PaperP1.FreshTupleRecurrence.sum_succ_lower
@@ -10580,6 +10596,14 @@ import PaperP1
 #print axioms PaperP1.PoissonPartialSums.lowerFactor_mono
 #print axioms PaperP1.PoissonPartialSums.upperFactor_antitone
 #print axioms PaperP1.PoissonPartialSums.adjacent_factor_bound
+#print axioms PaperP1.PoissonPolynomialMoments.shifted_power_summable
+#print axioms PaperP1.PoissonPolynomialMoments.shift_power_summable
+#print axioms PaperP1.PoissonPolynomialMoments.envelope_summable
+#print axioms PaperP1.PoissonPolynomialMoments.mass_domination
+#print axioms PaperP1.PoissonPolynomialMoments.shift_nonneg
+#print axioms PaperP1.PoissonPolynomialMoments.shift_domination
+#print axioms PaperP1.PoissonPolynomialMoments.quadratic_envelope
+#print axioms PaperP1.PoissonPolynomialMoments.uniform_absolute_moment
 #print axioms PaperP1.PoissonProduct.joint_nonneg
 #print axioms PaperP1.PoissonProduct.joint_summable
 #print axioms PaperP1.PoissonProduct.joint_hasSum

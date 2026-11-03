@@ -2623,3 +2623,11 @@ public import PaperP1.Model.NonDirectApartPartition
 public import PaperP1.Asymptotics.NonDirectApartCostUnderInputs
 public import PaperP1.Asymptotics.FourthConnectedCumulantUnderInputs
 public import PaperP1.Asymptotics.FourthCumulantIdentitiesUnderInputs
+public import PaperP1.Algebra.FourthCharlierPolynomial
+public import PaperP1.Analysis.PolynomialTestTruncation
+public import PaperP1.Probability.PoissonPolynomialMoments
+public import PaperP1.Probability.FourthCharlierReference
+public import PaperP1.Model.OriginalLawPolynomialMoments
+public import PaperP1.Model.FourthCharlierLawDistance
+public import PaperP1.Asymptotics.PositiveQuarticObstructionUnderInputs
+public import PaperP1.Asymptotics.QuadraticLawLowerBoundUnderInputs
