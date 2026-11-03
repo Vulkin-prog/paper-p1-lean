@@ -4200,6 +4200,14 @@ import PaperP1
 #print axioms PaperP1.SplitRadicalLineObstruction.two_equations
 #print axioms PaperP1.SplitRadicalLineObstruction.family_obstruction
 #print axioms PaperP1.SplitRadicalLineObstruction.vertical_family_obstruction
+#print axioms PaperP1.SplitRadicalPatternPool.mem_pool
+#print axioms PaperP1.SplitRadicalPatternPool.offset_card_bound
+#print axioms PaperP1.SplitRadicalPatternPool.code_card
+#print axioms PaperP1.SplitRadicalPatternPool.coefficient_pos
+#print axioms PaperP1.SplitRadicalPatternPool.coefficient_natAbs
+#print axioms PaperP1.SplitRadicalPatternPool.coefficient_le_four_pow
+#print axioms PaperP1.SplitRadicalPatternPool.left_bound
+#print axioms PaperP1.SplitRadicalPatternPool.right_bound
 #print axioms PaperP1.SplitRadicalPointHeight.product_height
 #print axioms PaperP1.SplitRadicalPointHeight.square_height
 #print axioms PaperP1.SplitRadicalPointHeight.dyadic_square_height
@@ -4817,6 +4825,10 @@ import PaperP1
 #print axioms PaperP1.CriticalRepeatedLeftPointCover.eventually_finite_cover_bound
 #print axioms PaperP1.CriticalRepeatedLeftRationalExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalRepeatedLeftSourceExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalRootSystemPatterns.uniform_offsets
+#print axioms PaperP1.CriticalRootSystemPatterns.uniform_codes
+#print axioms PaperP1.CriticalRootSystemPatterns.uniform_pool
+#print axioms PaperP1.CriticalRootSystemPatterns.uniform_coefficient_height
 #print axioms PaperP1.CriticalSourceCurveCoverExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalWindowGeometry.uniform_geometry
 #print axioms PaperP1.CriticalWindowGeometry.log_base_lower
@@ -5707,6 +5719,7 @@ import PaperP1
 #print axioms PaperP1.SmallRankLossPower.loss_power
 #print axioms PaperP1.SmallRankLossPower.low_sum_bound
 #print axioms PaperP1.SmoothCertificateCount.uniform_count
+#print axioms PaperP1.SmoothDegreeOneHostCount.uniform_hosts
 #print axioms PaperP1.SmoothSelectionCertificates.value_bounds
 #print axioms PaperP1.SmoothSelectionCertificates.square_budget
 #print axioms PaperP1.SmoothSelectionCertificates.product_budget

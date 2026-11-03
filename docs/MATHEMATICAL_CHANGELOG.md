@@ -8154,3 +8154,50 @@ without a confirmed manuscript-conclusion error. Palomar is
 deferred; original manuscript bytes and dependencies are unchanged.
 
 Verified under Lean v4.36.0-rc2: full build passed (12643 jobs); direct axiom audit passed for 9072 declarations using only propext, Classical.choice and Quot.sound; all 7076 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.58 GiB.
+
+
+## Actual smooth-pattern summation for degree-one systems
+
+The actual offset and smooth coefficient-pattern summation
+for degree-(a,1) systems is now proved. The finite pool consists
+of k bounded-cardinality subsets of the integer offset interval,
+k right offsets, and k subsets of the literal primes <=H.
+Each coefficient is the positive product of its actual prime
+support. Pool membership, positivity, offset bounds and the
+coefficient bound <=4^H are proved directly.
+
+The offset-pattern count is at most
+(((K+1)*4^K*3)^k)*(L+1)^((K+1)*k).
+The existing elementary Chebyshev support bound gives at most
+N^epsilon prime-support patterns for every fixed k and every
+H<=D*(L+1) in the critical band. Combining these proves the
+unconditional N^epsilon bound for the entire actual finite pool.
+No PNT assumption or new external estimate is used.
+A fixed polynomial coefficient-height exponent is constructed
+from D and the critical-band constant, uniformly before all
+N,L,H,k,K and every actual support pattern.
+
+SmoothDegreeOneHostCount.uniform_hosts sums the literal integer
+host counts over the valid actual patterns. It chooses one fixed
+k, then takes the two explicit unproved uniform geometric
+properties only at that k. The constant and scale cutoff precede
+a, N,L,H, every actual pattern and every finite host set. A host
+need only admit some valid smooth split-product square system;
+the witness pattern may vary with the host. Disjoint left sets,
+distinct right offsets, common positive left size, actual integer
+roots and the dyadic host bounds are checked in that witness.
+Aligned hosts are permitted for a>=2; for a=1 only the literal
+source alignment is excluded. No host independence or direct-sum
+hypothesis is present, and no target count is a premise.
+
+This closes the explicit smooth-pattern summation in the second
+T1.7 graph consequence, conditional only on the two isolated
+uniform geometric inputs. Extraction of these actual systems
+from the literal graph components, the general half-power bound
+and the external geometric proofs remain open. T1.7 stays
+in_progress; numbered coverage remains 79/167 and confirmed
+improvements remain 112. This is a proof improvement without a
+confirmed manuscript-conclusion error. Palomar is deferred;
+original manuscript bytes and pinned dependencies are unchanged.
+
+Verified under Lean v4.36.0-rc2: full build passed (12649 jobs); direct axiom audit passed for 9085 declarations using only propext, Classical.choice and Quot.sound; all 7097 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.57 GiB.

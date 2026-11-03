@@ -2048,3 +2048,6 @@ public import PaperP1.Asymptotics.NonalignedSurfaceSubpowerUnderInputs
 public import PaperP1.Asymptotics.NonalignedDyadicRootHostCount
 public import PaperP1.Arithmetic.OrdinaryRootSystemData
 public import PaperP1.Asymptotics.DegreeOneRootHostCount
+public import PaperP1.Arithmetic.SplitRadicalPatternPool
+public import PaperP1.Asymptotics.CriticalRootSystemPatterns
+public import PaperP1.Asymptotics.SmoothDegreeOneHostCount
