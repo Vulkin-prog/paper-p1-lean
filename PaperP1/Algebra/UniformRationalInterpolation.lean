@@ -44,4 +44,21 @@ theorem exists_integral_presentation (a B : ℕ) (hB : 1 ≤ B) (x y : Fin (2 * 
   · rw [hpδ, hqδ, natDegree_C_mul hδ, natDegree_C_mul hδ]
     exact hdegree
 
+theorem scalar_degree_eq (P : ℤ[X]) (p : ℚ[X]) (δ : ℚ) (hδ : δ ≠ 0)
+    (hpδ : P.map (Int.castRingHom ℚ) = C δ * p) : P.natDegree = p.natDegree :=
+  (natDegree_map_eq_of_injective (f := Int.castRingHom ℚ) Int.cast_injective P).symm.trans
+    (by rw [hpδ, natDegree_C_mul hδ])
+
+theorem integral_point_of_scalar (P Q : ℤ[X]) (p q : ℚ[X]) (δ : ℚ)
+    (hpδ : P.map (Int.castRingHom ℚ) = C δ * p) (hqδ : Q.map (Int.castRingHom ℚ) = C δ * q)
+    (X Y : ℤ) (hpoint : p.eval (X : ℚ) = (Y : ℚ) * q.eval (X : ℚ)) : P.eval X = Y * Q.eval X := by
+  apply (Int.cast_injective (α := ℚ))
+  change (Int.castRingHom ℚ) (P.eval X) = (Int.castRingHom ℚ) (Y * Q.eval X)
+  rw [map_mul, ← eval_map_apply, ← eval_map_apply]
+  change (P.map (Int.castRingHom ℚ)).eval (X : ℚ) = (Y : ℚ) * (Q.map (Int.castRingHom ℚ)).eval (X : ℚ)
+  rw [hpδ, hqδ]
+  simp only [eval_mul, eval_C]
+  rw [hpoint]
+  ring
+
 end PaperP1.UniformRationalInterpolation

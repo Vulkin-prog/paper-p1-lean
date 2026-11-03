@@ -7145,3 +7145,49 @@ coverage stays 79/167, confirmed mathematical improvements become 108,
 and Palomar remains deferred. Original sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12373 jobs, direct axiom audit of 8673 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6561 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.06 GiB.
+
+
+## Grid-uniform rational-graph exclusion after interpolation
+
+The arithmetic alternatives following rational interpolation in Step 6
+are now proved for actual rational polynomial pairs and integral points.
+For integral numerator and denominator polynomials whose rational images
+are coprime, the denominator value at an integral graph point divides
+the actual nonzero resultant. The existing determinant height bound
+therefore bounds that value uniformly. A nonconstant integer polynomial
+of coefficient height M taking a value of absolute value at most K has
+its integer input bounded by M+K, via the verified integral-root bound.
+Consequently a nonconstant rational denominator gives an explicit
+abscissa bound M+(2a)! M^(2a).
+
+For a polynomial graph of exact degree a at least two, the nonzero
+integral leading coefficient and a bounded coefficient tail prove
+|X|^a <= |P(X)|+a M |X|^(a-1). At an integral graph point with
+|Y| <= 2|X| and constant denominator of height at most M this gives
+|X| <= (a+2)M. The actual integral presentation from the grid is proved
+to preserve both degrees and every original integral graph equation.
+
+The remaining linear graph is treated directly from two actual offset
+grid matches. They give proportional positive selected values at the
+host; independence and direct sum contradict this. This argument takes
+no functional-square premise and no degree-one curve-field assumption.
+
+All cases are combined: for every positive exact rational-function
+degree a and 2a+1 distinct offset abscissae, the actual reduced rational
+graph fitting the grid has no admissible comparable integral host with
+abscissa larger than an explicit polynomial in the offset height B.
+Writing C=(3(2a+2))^(2a+1), its bound is at most
+[C+(2a)! C^(2a)+(a+2)C] B^(2a(a+1)(2a+1)). This is uniform in the
+original rational coefficients and all auxiliary radical coefficients.
+
+Thus the elementary interpolation and subsequent arithmetic rational-
+graph exclusion in Step 6 are checked. The geometric work producing
+that reduced rational graph and its offset-grid matches from a general
+low-degree source curve, including genus, branching and reduced-fibre
+arguments, remains open. Geometric curve dimension/source prime height,
+any intrinsic line-bundle intersection degree interpretation, and the
+external surface/curve point counts also remain open. T1.7 stays
+in_progress, coverage stays 79/167, confirmed improvements stay 108,
+and Palomar remains deferred. Original sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12391 jobs, direct axiom audit of 8691 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6581 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.04 GiB.

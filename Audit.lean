@@ -1037,6 +1037,7 @@ import PaperP1
 #print axioms PaperP1.IndependentQuadraticTower.isField
 #print axioms PaperP1.IndependentQuadraticTower.square_descent
 #print axioms PaperP1.IntegerOverlapRoot.exists_root
+#print axioms PaperP1.IntegerPolynomialGrowth.lower_power_bound
 #print axioms PaperP1.integerPolynomialHeight_zero
 #print axioms PaperP1.coeff_natAbs_le_integerPolynomialHeight
 #print axioms PaperP1.nnnorm_intCast_real
@@ -1057,6 +1058,8 @@ import PaperP1
 #print axioms PaperP1.IntegralLine.collinear_of_rational_parameter
 #print axioms PaperP1.IntegralLine.exists_primitive_line
 #print axioms PaperP1.IntegralLine.parametrize_line_of_primitive
+#print axioms PaperP1.IntegralPolynomialValueBound.shifted_height
+#print axioms PaperP1.IntegralPolynomialValueBound.bounded_value
 #print axioms PaperP1.IntegralPrimeHeight.comap_strictMono
 #print axioms PaperP1.IntegralPrimeHeight.height_le
 #print axioms PaperP1.IntegralPrimeHeight.height_eq
@@ -1082,6 +1085,7 @@ import PaperP1
 #print axioms PaperP1.LinearHilbertGrowth.hilbert_polynomial_affine
 #print axioms PaperP1.LinearHilbertGrowth.coefficient_eq
 #print axioms PaperP1.LinearHilbertGrowth.polynomial_natDegree_le_one
+#print axioms PaperP1.LinearRationalGraph.exists_parameters
 #print axioms PaperP1.MixedPlaneNormal.nonnegative_dot_lower
 #print axioms PaperP1.MixedPlaneNormal.opposite_signs
 #print axioms PaperP1.MixedPlaneNormal.exists_perm_pair
@@ -1682,6 +1686,8 @@ import PaperP1
 #print axioms PaperP1.TwoVariableGradedHilbert.exists_polynomial_of_generators
 #print axioms PaperP1.TwoVariableGradedHilbert.exists_polynomial_of_finite
 #print axioms PaperP1.UniformRationalInterpolation.exists_integral_presentation
+#print axioms PaperP1.UniformRationalInterpolation.scalar_degree_eq
+#print axioms PaperP1.UniformRationalInterpolation.integral_point_of_scalar
 #print axioms PaperP1.UnivariateGradedModuleHilbert.parameter_mem
 #print axioms PaperP1.UnivariateGradedModuleHilbert.map_C
 #print axioms PaperP1.UnivariateGradedModuleHilbert.map_homogeneous
@@ -3541,6 +3547,8 @@ import PaperP1
 #print axioms PaperP1.RationalDivisibilityFilters.normalized_dvd
 #print axioms PaperP1.RationalDivisibilityFilters.intersection_union_subset
 #print axioms PaperP1.RationalDivisibilityFilters.intersection_union_bound
+#print axioms PaperP1.RationalGridLineObstruction.two_matches
+#print axioms PaperP1.RationalGridLineObstruction.rational_graph
 #print axioms PaperP1.RationalTripleDensity.pairDensity_comm
 #print axioms PaperP1.RationalTripleDensity.density_swap
 #print axioms PaperP1.RationalTripleDensity.density_cycle
@@ -6212,6 +6220,11 @@ import PaperP1
 #print axioms PaperP1.PellInput.scaleImag_height
 #print axioms PaperP1.PellInput.exists_squarefree_reduction
 #print axioms PaperP1.PellInput.hasAtMostSolutionsReal_of_squarefree_reduction
+#print axioms PaperP1.GridPolynomialGraphBound.integral_point
+#print axioms PaperP1.GridRationalGraphBound.integral_point
+#print axioms PaperP1.GridRationalGraphBound.bound_le_polynomial
+#print axioms PaperP1.GridRationalGraphExclusion.integral_point
+#print axioms PaperP1.GridRationalGraphExclusion.bound_le_polynomial
 #print axioms PaperP1.PellInput.quadraticOrderConductorFiberBound
 #print axioms PaperP1.HomogeneousCharts.chart_degree
 #print axioms PaperP1.HomogeneousCharts.chart_homogenize
@@ -6226,6 +6239,11 @@ import PaperP1
 #print axioms PaperP1.IntegerLinearFibres.positive_box_count
 #print axioms PaperP1.IntegerLinearFibres.scaled_positive_count
 #print axioms PaperP1.IntegerLinearFibres.weighted_height_count
+#print axioms PaperP1.IntegralPolynomialGraphBound.abscissa_bound
+#print axioms PaperP1.IntegralRationalGraphBound.actual_resultant_ne_zero
+#print axioms PaperP1.IntegralRationalGraphBound.denominator_dvd_resultant
+#print axioms PaperP1.IntegralRationalGraphBound.denominator_value_bound
+#print axioms PaperP1.IntegralRationalGraphBound.abscissa_bound
 #print axioms PaperP1.LinearKernelFibres.offset_bounds
 #print axioms PaperP1.LinearKernelFibres.linearKernel_pos
 #print axioms PaperP1.LinearKernelFibres.representation
