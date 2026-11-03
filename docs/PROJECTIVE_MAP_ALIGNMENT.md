@@ -715,3 +715,35 @@ complete on the basis of this general algebraic step. Coverage stays
 Palomar remains deferred; original manuscript sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12235 jobs, direct axiom audit of 8466 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6289 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.49 GiB.
+
+
+## Literal Veronese quotients and plane-equation Hilbert degree
+
+The literal Veronese construction now commutes with quotient by a
+homogeneous ideal, after contracting that ideal along the inclusion.
+A graded map is restricted to the actual Veronese subalgebras. Its
+surjectivity follows by lifting each homogeneous component, rather
+than by assuming surjectivity after restriction. The restricted
+quotient kernel is proved equal to the contracted ideal. The actual
+quotient isomorphism identifies every rescaled homogeneous piece,
+including its vector-space dimension.
+
+For a nonzero homogeneous plane equation f of degree e, this constructs
+an isomorphism from the native Veronese quotient by the contracted
+principal ideal (f) to the literal D-th Veronese of F[X,Y,Z]/(f).
+The native quotient therefore has the actual affine Hilbert polynomial
+De*T + (3e-e^2)/2 and Hilbert multiplicity De when D,e are positive.
+This identifies actual quotient pieces; no Hilbert-degree comparison
+is supplied as an assumption.
+
+The remaining geometric step is to extract the homogeneous plane
+equation and prove that the actual image prime ideal is its contracted
+principal ideal. The Veronese/quotient algebra comparison needed once
+that equality is established is now proved. Finite two-parameter
+normalization for actual source curve quotients, scheme dimension,
+hyperplane-bundle comparison, low-degree geometry and external host
+counts remain open. T1.7 stays in_progress, numbered coverage stays
+79/167, confirmed mathematical improvements stay 107, and Palomar
+remains deferred. Original sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12241 jobs, direct axiom audit of 8484 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6313 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.48 GiB.

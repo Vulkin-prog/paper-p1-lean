@@ -1851,3 +1851,6 @@ public import PaperP1.Algebra.FiniteHomogeneousModuleGenerators
 public import PaperP1.Algebra.GradedHilbertHyperplane
 public import PaperP1.Algebra.TwoParameterQuotientGenerators
 public import PaperP1.Algebra.TwoVariableGradedHilbert
+public import PaperP1.Algebra.GradedVeroneseMap
+public import PaperP1.Algebra.GradedVeroneseQuotient
+public import PaperP1.Algebra.PlaneCurveVeroneseBaseQuotient
