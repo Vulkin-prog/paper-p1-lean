@@ -5929,6 +5929,11 @@ import PaperP1
 #print axioms PaperP1.LogarithmicWordPowers.polynomial_factor_le_rpow_eventually
 #print axioms PaperP1.LowCompatibleNullityTail.uniform_bound
 #print axioms PaperP1.LowCrossingJointMass.uniform_bound
+#print axioms PaperP1.LowTwoPairJointMassUnderInputs.uniform_bound
+#print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_seeds
+#print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_extensions
+#print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_centered_extensions
+#print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_small_intersection_extensions
 #print axioms PaperP1.ManyPlanarSquareProducts.primitive_mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.uniform_natural
@@ -8019,6 +8024,9 @@ import PaperP1
 #print axioms PaperP1.AllPairExtensionDeficit.class_cap
 #print axioms PaperP1.AllPairExtensionDeficit.class_seed_bound
 #print axioms PaperP1.AllPairExtensionDeficit.partition
+#print axioms PaperP1.BlockJointIntersection.exact_of_positive
+#print axioms PaperP1.BlockJointIntersection.upper_bound
+#print axioms PaperP1.BlockJointIntersection.finite_bound
 #print axioms PaperP1.BoundaryAlignedPairs.data
 #print axioms PaperP1.BoundaryAlignedPairs.channel_eq_image
 #print axioms PaperP1.BoundaryAlignedPairs.height_two_sources_cover
@@ -8563,6 +8571,9 @@ import PaperP1
 #print axioms PaperP1.LogHeightUnitChannelFamily.channel_data
 #print axioms PaperP1.LogHeightUnitChannelFamily.channel_card_bound
 #print axioms PaperP1.LogHeightUnitChannelFamily.weighted_bound
+#print axioms PaperP1.LowTwoPairSeeds.mem_sourcePairs
+#print axioms PaperP1.LowTwoPairSeeds.family_data
+#print axioms PaperP1.LowTwoPairSeeds.mass_bound
 #print axioms PaperP1.MaximumDirectActive.mem_families
 #print axioms PaperP1.MaximumDirectActive.empty_mem
 #print axioms PaperP1.MaximumDirectActive.families_hereditary

@@ -2431,3 +2431,7 @@ public import PaperP1.Model.DependentPairJointActivity
 public import PaperP1.Model.DirectCrossingTargets
 public import PaperP1.Model.ExtensionJointFactor
 public import PaperP1.Model.MinimalCrossingWindows
+public import PaperP1.Asymptotics.LowTwoPairJointMassUnderInputs
+public import PaperP1.Asymptotics.LowTwoPairSeedsUnderInputs
+public import PaperP1.Model.BlockJointIntersection
+public import PaperP1.Model.LowTwoPairSeeds
