@@ -5047,6 +5047,10 @@ import PaperP1
 #print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound_succ
 #print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound
 #print axioms PaperP1.AllPairRankUnderBCN.nonaligned_pair_bound
+#print axioms PaperP1.AllPrimitiveMassUnderInputs.weighted_fixed
+#print axioms PaperP1.AllPrimitiveMassUnderInputs.uniform_rank
+#print axioms PaperP1.AllPrimitiveMassUnderInputs.uniform_actual
+#print axioms PaperP1.AllPrimitiveMassUnderInputs.companion_T14_2
 #print axioms PaperP1.AllReplicaMoments.all_lengths
 #print axioms PaperP1.AllReplicaMoments.companion_T22_7_moment
 #print axioms PaperP1.AnchorCertificateDegrees.uniform_degrees
@@ -5345,6 +5349,7 @@ import PaperP1
 #print axioms PaperP1.DensePairActivityUnderInputs.dense_components
 #print axioms PaperP1.DensePairActivityUnderInputs.centered_host_bound
 #print axioms PaperP1.DensePairActivityUnderInputs.uniform_activity
+#print axioms PaperP1.DensePrimitiveTripleMassUnderInputs.uniform_bound
 #print axioms PaperP1.DenseSourcePairKernelUnderInputs.uniform_source_kernel
 #print axioms PaperP1.DenseTargetCount.small_residual_exponent
 #print axioms PaperP1.DenseTargetCount.uniform_count
@@ -5556,6 +5561,8 @@ import PaperP1
 #print axioms PaperP1.FixedPlaneSplitCount.scaled_offset_bounds
 #print axioms PaperP1.FixedPlaneSplitCount.pairFibre_card
 #print axioms PaperP1.FixedPlaneSplitCount.uniform_count
+#print axioms PaperP1.FixedPrimitiveMassUnderInputs.uniform_triples
+#print axioms PaperP1.FixedPrimitiveMassUnderInputs.uniform_fixed
 #print axioms PaperP1.FixedProjectedMotifs.exists_even_order
 #print axioms PaperP1.FixedProjectedMotifs.old_factor_bound
 #print axioms PaperP1.FixedProjectedMotifs.fixed_motif_count
@@ -5967,6 +5974,8 @@ import PaperP1
 #print axioms PaperP1.OrderedPrimitiveMass.nominal_bound
 #print axioms PaperP1.OrderedPrimitiveMass.actual_joint_bound
 #print axioms PaperP1.OrderedPrimitiveMass.companion_T4_3_from_four
+#print axioms PaperP1.OrderedPrimitiveMassUnderInputs.uniform_strong
+#print axioms PaperP1.OrderedPrimitiveMassUnderInputs.companion_T4_3
 #print axioms PaperP1.OrdinaryDyadicRootHostCount.choose_homogenization
 #print axioms PaperP1.OrdinaryDyadicRootHostCount.uniform_hosts
 #print axioms PaperP1.OrdinaryIndependentDeficitBound.uniform_bound
@@ -6570,6 +6579,7 @@ import PaperP1
 #print axioms PaperP1.WeakAlignmentUnitCount.uniform_weak_bound
 #print axioms PaperP1.WeakPairActivityAsymptotic.critical_binary_power
 #print axioms PaperP1.WeakPairActivityAsymptotic.uniform_activity
+#print axioms PaperP1.WeightedPrimitiveTail.uniform_tail
 #print axioms PaperP1.WideQuadraticKernelCount.three_exponent_bounds
 #print axioms PaperP1.WideQuadraticKernelCount.uniform_affine_count
 #print axioms PaperP1.WideQuadraticSquarePartCount.reciprocal_budget
@@ -6946,6 +6956,7 @@ import PaperP1
 #print axioms PaperP1.FamilyEnumerationUpper.tupleSet_card
 #print axioms PaperP1.FamilyEnumerationUpper.factorial_count_ge
 #print axioms PaperP1.FamilyEnumerationUpper.factorial_count_eq
+#print axioms PaperP1.FamilyEnumerationWeights.weighted_bound
 #print axioms PaperP1.FinTupleErasure.determined
 #print axioms PaperP1.FinTupleErasure.fixed_coordinate_count
 #print axioms PaperP1.FinTupleErasure.pair_determined
@@ -8578,6 +8589,11 @@ import PaperP1
 #print axioms PaperP1.PrimitiveNominalMass.weight_nonneg
 #print axioms PaperP1.PrimitiveNominalMass.primitive_mass_cap
 #print axioms PaperP1.PrimitiveNominalMass.ordered_sum
+#print axioms PaperP1.PrimitiveOrderedMass.mem_lists
+#print axioms PaperP1.PrimitiveOrderedMass.tuple_regular
+#print axioms PaperP1.PrimitiveOrderedMass.weight_formula
+#print axioms PaperP1.PrimitiveOrderedMass.rank_formula
+#print axioms PaperP1.PrimitiveOrderedMass.finite_bound
 #print axioms PaperP1.PrimitiveTripleWeights.primitive_pair_good
 #print axioms PaperP1.PrimitiveTripleWeights.homogeneous_pair_eq
 #print axioms PaperP1.PrimitiveTripleWeights.homogeneous_triple_le
@@ -9084,6 +9100,11 @@ import PaperP1
 #print axioms PaperP1.UnsignedUnitFourierAggregate.finite_unsigned_sum_error
 #print axioms PaperP1.WeakPairActivity.coefficient_bound
 #print axioms PaperP1.WeakPairActivity.finite_bound
+#print axioms PaperP1.WeightedPrimitiveMass.mem_families
+#print axioms PaperP1.WeightedPrimitiveMass.rankMass_nonneg
+#print axioms PaperP1.WeightedPrimitiveMass.fixed_weight
+#print axioms PaperP1.WeightedPrimitiveMass.rank_le_independent
+#print axioms PaperP1.WeightedPrimitiveMass.actual_le_rank
 #print axioms PaperP1.WindowCertificateFamilies.mem_vertices
 #print axioms PaperP1.WindowCertificateFamilies.vertices_image
 #print axioms PaperP1.WindowCertificateFamilies.vertices_card

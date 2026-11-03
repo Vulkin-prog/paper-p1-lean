@@ -2349,3 +2349,11 @@ public import PaperP1.Model.SecondFactorialCorrection
 public import PaperP1.Asymptotics.SecondFactorialCorrectionLower
 public import PaperP1.Asymptotics.SharpCovarianceScaleUnderInputs
 public import PaperP1.Asymptotics.SharpRetainedConversionUnderInputs
+public import PaperP1.Asymptotics.DensePrimitiveTripleMassUnderInputs
+public import PaperP1.Asymptotics.FixedPrimitiveMassUnderInputs
+public import PaperP1.Model.WeightedPrimitiveMass
+public import PaperP1.Asymptotics.WeightedPrimitiveTail
+public import PaperP1.Asymptotics.AllPrimitiveMassUnderInputs
+public import PaperP1.Combinatorics.FamilyEnumerationWeights
+public import PaperP1.Model.PrimitiveOrderedMass
+public import PaperP1.Asymptotics.OrderedPrimitiveMassUnderInputs

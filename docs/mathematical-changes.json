@@ -9801,6 +9801,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "12831b0235382ee73095f2de031c18856a8846ff"
+    },
+    {
+      "id": "P1-MATH-0132",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:core:primitive",
+        "number": "T14.2",
+        "page": 54,
+        "source": "companion_sections/cores.tex",
+        "line": 260,
+        "statement_sha256": "cbaa12a43b7e2bb83c203f455496560232a5084008d229fe84295aa0e06a2f44"
+      },
+      "original_assumption": "The fixed-order primitive mass T4.3 and all-cardinality primitive joint-plus-centered mass T14.2 have exponent4/5 and use a longer certificate/rank stratification.",
+      "finding": "The primitive exponent4/5 in T4.3 and T14.2 improves to1\nunder the existing dense two-target geometric inputs. For\ntriples with nullity at least L/4, sum the already proved\none-source extension bound over the N singleton sources:\neach costs O(N^(-2+eta)), giving N^(-1+eta) in total.\nFor smaller nullity, the unconditional independent half-count\nN^(-3/2+eta) is multiplied by at mostN^(1/4), giving the\nstronger N^(-5/4+eta). Fixed orders at least four already have\nthe unconditional boundN^(1-r/2+eta)<=N^(-1+eta).\nAt all larger cardinalities a primitive has nullity at mostL;\nmultiply the uniform original participating independent tail,\nwith exponent arbitrarily close to2, by at most2^L=O(N).\nThe resulting primitive rank tail is N^(-1+epsilon).\nCombine only finitely many small orders, then use the actual\njoint and centered rank bounds on the regular ground.\nThe ordered fixed-size statement retains its exact factorial\nfiber bound. The larger unordered rank-weight result allows\nall dyadic primitive families, including overlap, local\nirregularity and zero marginals. Geometry is needed only\nfor the dense three-window fixed-order branch.",
+      "impact": "Both literal source bounds have the stronger exponent1 under the same three kinds of geometric input, with a shorter triple argument and a uniform primitive rank tail. Fixed orders at least four and the large-size tail are unconditional.",
+      "proposed_revision": "Replace the fixed three-window primitive step by the L/4 low-nullity split and the sum of the actual one-source two-target estimate. State exponent1 in T4.3 and T14.2, use the uniform original participating tail plus the primitive nullity bound for large sizes, and retain exact weighted factorial enumeration for ordered lists.",
+      "evidence": [
+        "PaperP1.DensePrimitiveTripleMassUnderInputs.uniform_bound",
+        "PaperP1.FixedPrimitiveMassUnderInputs.uniform_triples",
+        "PaperP1.FixedPrimitiveMassUnderInputs.uniform_fixed",
+        "PaperP1.WeightedPrimitiveTail.uniform_tail",
+        "PaperP1.AllPrimitiveMassUnderInputs.uniform_rank",
+        "PaperP1.AllPrimitiveMassUnderInputs.uniform_actual",
+        "PaperP1.FamilyEnumerationWeights.weighted_bound",
+        "PaperP1.PrimitiveOrderedMass.rank_formula",
+        "PaperP1.OrderedPrimitiveMassUnderInputs.companion_T4_3",
+        "PaperP1.AllPrimitiveMassUnderInputs.companion_T14_2"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13265 jobs); direct axiom audit passed for 10094 declarations using only propext, Classical.choice and Quot.sound; all 8385 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.47 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
