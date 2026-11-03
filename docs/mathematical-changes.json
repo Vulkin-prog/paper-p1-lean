@@ -9766,6 +9766,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "89ba1515b71f9838c7de52eb1f9bfaee20583212"
+    },
+    {
+      "id": "P1-MATH-0131",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:close:deficit-bounds",
+        "number": "T17.1",
+        "page": 61,
+        "source": "companion_sections/closure.tex",
+        "line": 44,
+        "statement_sha256": "afe72183e9a7781f135a12e5bdf9f79b44d646048201e3f4b0e8ee7ac6f7b022"
+      },
+      "original_assumption": "T17.1 states F=O(N^(-4/5+epsilon)+B/N) and mathfrakG=O(N^(-1+epsilon)), using positive primitive and distinguished compressed mass estimates.",
+      "finding": "Both counting deficits of T17.1 admit stronger unconditional\nindependent-weight estimates. Ordinary primitive seed coverage,\nthe exact finite superset identity, and the already proved\ncoordinatewise-participating independent mass give\nF<=N^(-1+epsilon), removing the printed separate B/N term.\nThe second deficit is exactly4*sum_good_e q(e)*E_{S_e}(2).\nThe actual good-pair total joint mass is at mostN^(-2/3+eta),\nuniformly for every real private-prime cutoff H: actual good\nedges are a subset of the two private channel families at\ncutoff0, whose homogeneous mass already has that upper scale.\nCombine this with unconditional15.6, E_{S_e}(2)<=N^(-1/2+eta),\nto obtain mathfrakG<=N^(-7/6+epsilon), stronger thanN^(-1+epsilon).\nThus neither positive primitive mass nor positive distinguished\ncompressed mass is needed to prove T17.1. These estimates concern\nthe literal independent counting weights; they do not prove the\nseparate positive-mass estimates with nullity amplification.",
+      "impact": "The literal deficits are proved unconditionally with stronger exponents1 and7/6, with one threshold before all real private-prime cutoffs; the positive primitive/compressed mass inputs are unnecessary for this result.",
+      "proposed_revision": "Replace the T17.1 proof by ordinary independent primitive-seed coverage and the exact identity mathfrakG=4*sum q(e)*E_{S_e}(2). State the stronger rates and distinguish these independent counting deficits from positive/nullity-amplified masses.",
+      "evidence": [
+        "PaperP1.OrdinaryIndependentDeficit.finite_bound",
+        "PaperP1.OrdinaryIndependentDeficitBound.uniform_bound",
+        "PaperP1.RetainedIndependentDeficitComparison.first_eq",
+        "PaperP1.RetainedIndependentDeficitComparison.second_eq",
+        "PaperP1.RetainedIndependentDeficitComparison.good_subset_zero_channels",
+        "PaperP1.RetainedGoodPairMass.uniform_bound",
+        "PaperP1.RetainedIndependentDeficitRates.uniform_strong",
+        "PaperP1.RetainedIndependentDeficitRates.companion_T17_1"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13241 jobs); direct axiom audit passed for 10065 declarations using only propext, Classical.choice and Quot.sound; all 8347 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.54 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

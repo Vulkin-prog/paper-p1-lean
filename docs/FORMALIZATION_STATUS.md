@@ -3,6 +3,8 @@
 Stage: **exact probability identities and uniform arithmetic foundations**, 3 November 2026.
 Neither document is fully formalized.
 
+Companion T17.1 is complete unconditionally, with stronger independent powers1 and7/6.
+
 Main15.9 is complete conditionally at every cardinality under the existing finite geometry, using original-window tails.
 
 Main15.6 is complete unconditionally at all cardinalities, uniformly over the full raw source span.
@@ -22,7 +24,7 @@ Article11.1–11.3 and15.1, and companion T7.1, now have complete conditional so
 Article Theorem 3.3 now has all five literal conclusions proved **conditionally** on the explicitly recorded geometric properties. See [complete pair-profile alignment](COMPLETE_PAIR_PROFILE_ALIGNMENT.md). This is not an unconditional completion or a Palomar registration.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **85 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 6.3, 9.1, 13.3, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorems 10.1, 13.1, 13.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Proposition T9.5, Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Propositions T1.14, T22.7 and T17.2, and Lemma T20.4 and Propositions T20.6, T1.16 and T21.4. Article Lemma15.4 is also complete.
+- Numbered results completed: **86 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 6.3, 9.1, 13.3, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorems 10.1, 13.1, 13.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Proposition T9.5, Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Propositions T1.14, T22.7 and T17.2, and Lemma T20.4 and Propositions T20.6, T1.16 and T21.4. Article Lemma15.4 is also complete.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -50,7 +52,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **10049 audited theorem/lemma declarations**. This
+- The project currently has **10065 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -13079,3 +13081,84 @@ No new dependency, PaperC port, original-source change or
 Palomar registration is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (13231 jobs); direct axiom audit passed for 10049 declarations using only propext, Classical.choice and Quot.sound; all 8328 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.56 GiB.
+
+
+## Unconditional completion of companion T17.1
+
+Companion Lemma T17.1 is now complete UNCONDITIONALLY, with
+stronger independent deficit powers than the printed statement:
+  F <= N^(-1+epsilon),
+  mathfrakG <= N^(-7/6+epsilon).
+These are the literal two retained-reference counting deficits,
+including their original2^r cardinality weights, actual nominal
+marginal on the regular ground, and actual good-pair joint
+probabilities. RetainedIndependentDeficitRates.companion_T17_1
+proves exactly the printed weaker rates
+F<=N^(-4/5+epsilon)+(L+1)/N and mathfrakG<=N^(-1+epsilon).
+The existing exact cardinality grouping identifies the complete
+sums over0<=r<=n; coefficients above n are already zero.
+The common threshold precedes every critical L and EVERY real
+private-prime threshold H, including a scale-dependent H.
+
+OrdinaryIndependentDeficit defines ALL non-direct subsets of
+an actual original-window ground set with arbitrary independent
+product weights. Each contains an ordinary primitive subset.
+Every primitive subset has size at least two and is genuinely
+coordinatewise participating; its simultaneous full-support
+relation is also proved. The exact finite superset cover gives
+mass<=exp(sum_G w)*primitiveSeedMass. The already proved
+OriginalParticipatingMass.uniform_mass bounds every such seed
+population by N^(-1+eta), for arbitrary heterogeneous w>=0
+with w_x<=M/N. The total weight is at most M, since the dyadic
+block has exactly N starts. After absorbing exp(M),
+OrdinaryIndependentDeficitBound.uniform_bound proves the entire
+non-direct independent mass<=N^(-1+epsilon), uniformly over
+all actual dyadic ground sets and all weights with the fixed cap.
+No positive joint mass or relative-nullity amplification is
+substituted for these independent product weights.
+
+RetainedIndependentDeficitComparison.first_eq identifies the
+literal firstMass with that development at w_x=2*p_x on the
+actual regular set. failed_eq identifies the actual failed
+compressed extensions with literal non-directness of the source
+span plus individual target spaces. second_eq proves the exact
+identity
+  secondMass(H,N,L)=4*sum_good_e q(e)*E_{S_e}(2),
+with all cardinalities present. The factor4 is exactly the two
+original endpoints' cardinality weight, not an asymptotic loss.
+These identities use effective spaces and do not assume direct
+factorization of any failed dependent extension.
+
+Every prime is positive, so an actual PrivateAbove(H) condition
+implies PrivateAbove(0), even for arbitrary real H. Actual good
+edges lie in the two private channel families2:3 and3:4 at
+cutoff0; the at-least-two-unit property follows from actual
+nonzero intersection and private normalized values. Their true
+joint mass is bounded by the actual homogeneous rank probability,
+then by the previously proved raw principal homogeneous mass.
+RetainedGoodPairMass proves beta(H,N,L)<=N^(-2/3+eta), uniformly
+in ALL H, with no H-range assumption and no new geometry.
+This is an upper bound; it asserts no uniform lower phase at
+arbitrary H.
+
+Uniform independent deficit15.6, with exactly two old sources
+and u=2, gives E_{S_e}(2)<=N^(-1/2+eta) for every good pair,
+including all its failed extensions and exact zero marginals.
+The exact secondMass identity thus gives
+4*beta*N^(-1/2+eta)<=N^(-7/6+epsilon).
+The actual marginal cap supplies the firstMass specialization
+with M=4*2^C. Both stronger estimates are unconditional.
+Consequently T17.1 needs neither the positive primitive
+mass theorem nor the distinguished compressed positive-mass
+theorem used in its printed proof. No conclusion about those
+separate positive-mass theorems is inferred.
+
+T17.1 moves from not_started to proved; unconditional coverage
+rises from85 to86/167;17 conditional results remain separate.
+P1-MATH-0131 records the stronger powers and simpler independent
+proof. All geometric translations remain explicit unproved
+arguments in their separate conditional results. No new
+external input, dependency download, PaperC port, manuscript
+byte change or Palomar registration is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (13241 jobs); direct axiom audit passed for 10065 declarations using only propext, Classical.choice and Quot.sound; all 8347 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.54 GiB.

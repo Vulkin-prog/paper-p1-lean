@@ -5969,6 +5969,7 @@ import PaperP1
 #print axioms PaperP1.OrderedPrimitiveMass.companion_T4_3_from_four
 #print axioms PaperP1.OrdinaryDyadicRootHostCount.choose_homogenization
 #print axioms PaperP1.OrdinaryDyadicRootHostCount.uniform_hosts
+#print axioms PaperP1.OrdinaryIndependentDeficitBound.uniform_bound
 #print axioms PaperP1.OrdinarySurfaceSubpowerUnderInputs.uniform_subpower
 #print axioms PaperP1.OrientedPlanarMotifCount.uniform_count
 #print axioms PaperP1.OriginalPairHosts.separated_subset
@@ -6256,6 +6257,12 @@ import PaperP1
 #print axioms PaperP1.RetainedBadProbabilityUnderBCN.uniform_badProbability
 #print axioms PaperP1.RetainedBadProbabilityUnderBCN.uniform_totalVariation
 #print axioms PaperP1.RetainedClassTheorem.companion_T12_1
+#print axioms PaperP1.RetainedGoodPairMass.beta_le_raw
+#print axioms PaperP1.RetainedGoodPairMass.uniform_bound
+#print axioms PaperP1.RetainedIndependentDeficitRates.first_bound
+#print axioms PaperP1.RetainedIndependentDeficitRates.second_bound
+#print axioms PaperP1.RetainedIndependentDeficitRates.uniform_strong
+#print axioms PaperP1.RetainedIndependentDeficitRates.companion_T17_1
 #print axioms PaperP1.RetainedMomentConvergenceUnderBCN.uniform_moment_transfer
 #print axioms PaperP1.RetainedMomentConvergenceUnderBCN.uniform_poisson_totalVariation
 #print axioms PaperP1.SaturationDegreeBudget.envelope_div_log_tendsto
@@ -8470,6 +8477,9 @@ import PaperP1
 #print axioms PaperP1.OneNegativePrime.parity_simple_multiple
 #print axioms PaperP1.OneNegativePrime.not_dvd_inside
 #print axioms PaperP1.OneNegativePrime.positive_exact_run
+#print axioms PaperP1.OrdinaryIndependentDeficit.seed_data
+#print axioms PaperP1.OrdinaryIndependentDeficit.seed_cover
+#print axioms PaperP1.OrdinaryIndependentDeficit.finite_bound
 #print axioms PaperP1.PairActivityCumulantGap.exact_gap
 #print axioms PaperP1.PairActivityHostCap.absoluteMass_mono
 #print axioms PaperP1.PairActivityHostCap.centered_zero_of_zero_loss
@@ -8826,6 +8836,12 @@ import PaperP1
 #print axioms PaperP1.RetainedGoodEdges.hereditary
 #print axioms PaperP1.RetainedGoodEdges.unique_dependent_pair
 #print axioms PaperP1.RetainedGoodEdges.finite_boundary_bound
+#print axioms PaperP1.RetainedIndependentDeficitComparison.first_eq
+#print axioms PaperP1.RetainedIndependentDeficitComparison.direct_source_iff_compressed
+#print axioms PaperP1.RetainedIndependentDeficitComparison.failed_eq
+#print axioms PaperP1.RetainedIndependentDeficitComparison.second_eq
+#print axioms PaperP1.RetainedIndependentDeficitComparison.privateAbove_zero
+#print axioms PaperP1.RetainedIndependentDeficitComparison.good_subset_zero_channels
 #print axioms PaperP1.RetainedModifiedBounds.expected_factorial
 #print axioms PaperP1.RetainedModifiedBounds.expected_power
 #print axioms PaperP1.RetainedModifiedBounds.tail_probability

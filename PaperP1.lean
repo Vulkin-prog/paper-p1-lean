@@ -2340,3 +2340,8 @@ public import PaperP1.Model.AllPairExtensionDeficit
 public import PaperP1.Asymptotics.FinitePairDeficitInputs
 public import PaperP1.Asymptotics.UniformPairClassDeficit
 public import PaperP1.Asymptotics.AllPairDeficitUnderInputs
+public import PaperP1.Model.OrdinaryIndependentDeficit
+public import PaperP1.Asymptotics.OrdinaryIndependentDeficitBound
+public import PaperP1.Model.RetainedIndependentDeficitComparison
+public import PaperP1.Asymptotics.RetainedGoodPairMass
+public import PaperP1.Asymptotics.RetainedIndependentDeficitRates

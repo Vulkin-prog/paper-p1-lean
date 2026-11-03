@@ -12282,11 +12282,40 @@
       "source": "companion_sections/closure.tex",
       "line": 44,
       "sha256": "afe72183e9a7781f135a12e5bdf9f79b44d646048201e3f4b0e8ee7ac6f7b022",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.OrdinaryIndependentDeficit.seed_data",
+        "PaperP1.OrdinaryIndependentDeficit.seed_cover",
+        "PaperP1.OrdinaryIndependentDeficit.finite_bound",
+        "PaperP1.OrdinaryIndependentDeficitBound.uniform_bound",
+        "PaperP1.RetainedIndependentDeficitComparison.first_eq",
+        "PaperP1.RetainedIndependentDeficitComparison.direct_source_iff_compressed",
+        "PaperP1.RetainedIndependentDeficitComparison.failed_eq",
+        "PaperP1.RetainedIndependentDeficitComparison.second_eq",
+        "PaperP1.RetainedIndependentDeficitComparison.privateAbove_zero",
+        "PaperP1.RetainedIndependentDeficitComparison.good_subset_zero_channels",
+        "PaperP1.RetainedGoodPairMass.beta_le_raw",
+        "PaperP1.RetainedGoodPairMass.uniform_bound",
+        "PaperP1.RetainedIndependentDeficitRates.first_bound",
+        "PaperP1.RetainedIndependentDeficitRates.second_bound",
+        "PaperP1.RetainedIndependentDeficitRates.uniform_strong",
+        "PaperP1.RetainedIndependentDeficitRates.companion_T17_1",
+        "PaperP1.OrdinaryIndependentDeficit.families",
+        "PaperP1.OrdinaryIndependentDeficit.seeds",
+        "PaperP1.OrdinaryIndependentDeficit.mass"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0131"
+      ],
+      "notes": "Companion Lemma T17.1 is now complete UNCONDITIONALLY, with\nstronger independent deficit powers than the printed statement:\n  F <= N^(-1+epsilon),\n  mathfrakG <= N^(-7/6+epsilon).\nThese are the literal two retained-reference counting deficits,\nincluding their original2^r cardinality weights, actual nominal\nmarginal on the regular ground, and actual good-pair joint\nprobabilities. RetainedIndependentDeficitRates.companion_T17_1\nproves exactly the printed weaker rates\nF<=N^(-4/5+epsilon)+(L+1)/N and mathfrakG<=N^(-1+epsilon).\nThe existing exact cardinality grouping identifies the complete\nsums over0<=r<=n; coefficients above n are already zero.\nThe common threshold precedes every critical L and EVERY real\nprivate-prime threshold H, including a scale-dependent H.\n\nOrdinaryIndependentDeficit defines ALL non-direct subsets of\nan actual original-window ground set with arbitrary independent\nproduct weights. Each contains an ordinary primitive subset.\nEvery primitive subset has size at least two and is genuinely\ncoordinatewise participating; its simultaneous full-support\nrelation is also proved. The exact finite superset cover gives\nmass<=exp(sum_G w)*primitiveSeedMass. The already proved\nOriginalParticipatingMass.uniform_mass bounds every such seed\npopulation by N^(-1+eta), for arbitrary heterogeneous w>=0\nwith w_x<=M/N. The total weight is at most M, since the dyadic\nblock has exactly N starts. After absorbing exp(M),\nOrdinaryIndependentDeficitBound.uniform_bound proves the entire\nnon-direct independent mass<=N^(-1+epsilon), uniformly over\nall actual dyadic ground sets and all weights with the fixed cap.\nNo positive joint mass or relative-nullity amplification is\nsubstituted for these independent product weights.\n\nRetainedIndependentDeficitComparison.first_eq identifies the\nliteral firstMass with that development at w_x=2*p_x on the\nactual regular set. failed_eq identifies the actual failed\ncompressed extensions with literal non-directness of the source\nspan plus individual target spaces. second_eq proves the exact\nidentity\n  secondMass(H,N,L)=4*sum_good_e q(e)*E_{S_e}(2),\nwith all cardinalities present. The factor4 is exactly the two\noriginal endpoints' cardinality weight, not an asymptotic loss.\nThese identities use effective spaces and do not assume direct\nfactorization of any failed dependent extension.\n\nEvery prime is positive, so an actual PrivateAbove(H) condition\nimplies PrivateAbove(0), even for arbitrary real H. Actual good\nedges lie in the two private channel families2:3 and3:4 at\ncutoff0; the at-least-two-unit property follows from actual\nnonzero intersection and private normalized values. Their true\njoint mass is bounded by the actual homogeneous rank probability,\nthen by the previously proved raw principal homogeneous mass.\nRetainedGoodPairMass proves beta(H,N,L)<=N^(-2/3+eta), uniformly\nin ALL H, with no H-range assumption and no new geometry.\nThis is an upper bound; it asserts no uniform lower phase at\narbitrary H.\n\nUniform independent deficit15.6, with exactly two old sources\nand u=2, gives E_{S_e}(2)<=N^(-1/2+eta) for every good pair,\nincluding all its failed extensions and exact zero marginals.\nThe exact secondMass identity thus gives\n4*beta*N^(-1/2+eta)<=N^(-7/6+epsilon).\nThe actual marginal cap supplies the firstMass specialization\nwith M=4*2^C. Both stronger estimates are unconditional.\nConsequently T17.1 needs neither the positive primitive\nmass theorem nor the distinguished compressed positive-mass\ntheorem used in its printed proof. No conclusion about those\nseparate positive-mass theorems is inferred.\n\nT17.1 moves from not_started to proved; unconditional coverage\nrises from85 to86/167;17 conditional results remain separate.\nP1-MATH-0131 records the stronger powers and simpler independent\nproof. All geometric translations remain explicit unproved\narguments in their separate conditional results. No new\nexternal input, dependency download, PaperC port, manuscript\nbyte change or Palomar registration is introduced.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": ""
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13241 jobs); direct axiom audit passed for 10065 declarations using only propext, Classical.choice and Quot.sound; all 8347 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.54 GiB."
     },
     {
       "label": "p1:close:retained-reference",
