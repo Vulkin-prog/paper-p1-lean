@@ -5293,6 +5293,7 @@ import PaperP1
 #print axioms PaperP1.ConditionalRankTheorem.companion_T21_2
 #print axioms PaperP1.ConnectedBlockCount.uniform_count
 #print axioms PaperP1.ConnectedFourthReductionUnderBCN.uniform_reduction
+#print axioms PaperP1.ConnectedIndependent256Budget.uniform_bound
 #print axioms PaperP1.ContactDefectBudget.defect_count
 #print axioms PaperP1.ContactDefectBudget.relation_power
 #print axioms PaperP1.ContactSeedKernel.uniform_joint_mass
@@ -5822,6 +5823,7 @@ import PaperP1
 #print axioms PaperP1.LargeBoundaryTail.companion_T12_2
 #print axioms PaperP1.LargeBoundaryTail.improved_critical_mass_bound
 #print axioms PaperP1.LargeBoundaryTail.improved_source_tail
+#print axioms PaperP1.LargeCoreClosureMass.uniform_bound
 #print axioms PaperP1.LargeKernelTupleCounts.tuple_count
 #print axioms PaperP1.LargeKernelTupleCounts.beta_bounds
 #print axioms PaperP1.LargeKernelTupleCounts.exponent_identity
@@ -5909,6 +5911,7 @@ import PaperP1
 #print axioms PaperP1.LogarithmicWordPowers.length_pow_uniformSubpolynomial
 #print axioms PaperP1.LogarithmicWordPowers.polynomial_factor_uniformSubpolynomial
 #print axioms PaperP1.LogarithmicWordPowers.polynomial_factor_le_rpow_eventually
+#print axioms PaperP1.LowCompatibleNullityTail.uniform_bound
 #print axioms PaperP1.ManyPlanarSquareProducts.primitive_mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.uniform_natural
@@ -7352,6 +7355,9 @@ import PaperP1
 #print axioms PaperP1.SaturationGraph.directed_degrees_le_degree
 #print axioms PaperP1.SaturationGraph.degree_bound
 #print axioms PaperP1.SaturationGraph.maxDegree_bound
+#print axioms PaperP1.SeedComplementMass.complement_sum
+#print axioms PaperP1.SeedComplementMass.complement_bound
+#print axioms PaperP1.SeedComplementMass.cover_bound
 #print axioms PaperP1.SharedPairProducts.overlapping_subset
 #print axioms PaperP1.SharedPairProducts.pair_mem_overlapping
 #print axioms PaperP1.SharedPairProducts.incident_eq_image
@@ -8007,6 +8013,8 @@ import PaperP1
 #print axioms PaperP1.CenteredDependenceSupport.every_target
 #print axioms PaperP1.CenteredDependenceSupport.nullity_pos
 #print axioms PaperP1.CenteredDependenceSupport.inserted_target
+#print axioms PaperP1.ChosenRelationCore.properties
+#print axioms PaperP1.ChosenRelationCore.weighted_bound
 #print axioms PaperP1.ColoredPrimeSamples.select_diagonal
 #print axioms PaperP1.ColoredPrimeSamples.start_diagonal
 #print axioms PaperP1.ColoredPrimeSamples.relationMap_comp
@@ -8451,6 +8459,9 @@ import PaperP1
 #print axioms PaperP1.LargeBoundaryMass.precise_nullity_majorant
 #print axioms PaperP1.LargeBoundaryMass.cutoff_mass_bound
 #print axioms PaperP1.LargeBoundaryMass.precise_cutoff_mass_bound
+#print axioms PaperP1.LargeCoreFamilyCover.mem_cores
+#print axioms PaperP1.LargeCoreFamilyCover.finite_bound
+#print axioms PaperP1.LargeCoreFamilyCover.source_mass_le_actual
 #print axioms PaperP1.LatePrimeWindows.common_start_event
 #print axioms PaperP1.LatePrimeWindows.family_compatible
 #print axioms PaperP1.LatePrimeWindows.joint_positive
@@ -8603,6 +8614,9 @@ import PaperP1
 #print axioms PaperP1.OrdinaryIndependentDeficit.seed_data
 #print axioms PaperP1.OrdinaryIndependentDeficit.seed_cover
 #print axioms PaperP1.OrdinaryIndependentDeficit.finite_bound
+#print axioms PaperP1.OriginalTwoAnchorWitnesses.participating_core
+#print axioms PaperP1.OriginalTwoAnchorWitnesses.connected_core
+#print axioms PaperP1.OriginalTwoAnchorWitnesses.connected_witnesses
 #print axioms PaperP1.PairActivityCumulantGap.exact_gap
 #print axioms PaperP1.PairActivityHostCap.absoluteMass_mono
 #print axioms PaperP1.PairActivityHostCap.centered_zero_of_zero_loss

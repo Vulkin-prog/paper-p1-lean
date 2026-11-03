@@ -2396,3 +2396,10 @@ public import PaperP1.Asymptotics.RelationCoreIndependentBudget
 public import PaperP1.Model.RelationCoreActivityPeeling
 public import PaperP1.Model.RelationCoreMomentRatio
 public import PaperP1.Model.RelationCoreWitnesses
+public import PaperP1.Asymptotics.ConnectedIndependent256Budget
+public import PaperP1.Asymptotics.LargeCoreClosureMass
+public import PaperP1.Asymptotics.LowCompatibleNullityTail
+public import PaperP1.Combinatorics.SeedComplementMass
+public import PaperP1.Model.ChosenRelationCore
+public import PaperP1.Model.LargeCoreFamilyCover
+public import PaperP1.Model.OriginalTwoAnchorWitnesses
