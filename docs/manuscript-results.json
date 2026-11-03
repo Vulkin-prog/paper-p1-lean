@@ -12981,7 +12981,8 @@
             "P1-GEO-NORMALIZED-CURVE-UNIFORM"
           ]
         }
-      ]
+      ],
+      "validation_commit": "2ce8c5e956daacad2d0635100b987cb395f3ded5"
     },
     {
       "label": "p1:core:positive-core",
