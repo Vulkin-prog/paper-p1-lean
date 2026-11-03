@@ -2236,6 +2236,9 @@ import PaperP1
 #print axioms PaperP1.AdjacentSquareDivisibility.residue_progression_count
 #print axioms PaperP1.AdjacentSquareDivisibility.solutions_card_lower
 #print axioms PaperP1.AdjacentSquareDivisibility.uniform_solutions_card_lower
+#print axioms PaperP1.AffineGridAlignment.of_affine_grid
+#print axioms PaperP1.AffineGridAlignment.source_alignment
+#print axioms PaperP1.AffineGridAlignment.source_alignment_of_nonneg
 #print axioms PaperP1.AffineRationalTripleUnionRank.union_three
 #print axioms PaperP1.AffineRationalTripleUnionRank.union_loss_bound
 #print axioms PaperP1.AffineRationalTripleUnionRank.extremal_union_rank
@@ -4787,6 +4790,12 @@ import PaperP1
 #print axioms PaperP1.CriticalMotifBudget.uniform_motifs
 #print axioms PaperP1.CriticalMotifBudget.uniform_codes
 #print axioms PaperP1.CriticalMotifBudget.parameter_budget
+#print axioms PaperP1.CriticalNonalignedAllCoverExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalNonalignedCurveExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalNonalignedDegreeGap.eventually_degree_gt
+#print axioms PaperP1.CriticalNonalignedPointCover.eventually_finite_cover_bound
+#print axioms PaperP1.CriticalNonalignedRationalExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalNonalignedSourceExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalOrderBranching.finite_exception_bound
 #print axioms PaperP1.CriticalOrderBranching.uniform_exception_bound
 #print axioms PaperP1.CriticalOrderBranching.companion_T22_4
@@ -5305,11 +5314,15 @@ import PaperP1
 #print axioms PaperP1.NearLinearThreshold.window_bound_eventually
 #print axioms PaperP1.NearLinearThreshold.threshold_ge_power
 #print axioms PaperP1.NonalignedActivityUnderBCN.uniform_bound
+#print axioms PaperP1.NonalignedDyadicRootHostCount.uniform_hosts
+#print axioms PaperP1.NonalignedDyadicRootHostCount.source_admissible
+#print axioms PaperP1.NonalignedDyadicRootHostCount.source_uniform_hosts
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.rankSlope_pos
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.tripleGap_pos
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.tripleGap_lt_half
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.uniform_pair_probability
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.uniform_family_probability
+#print axioms PaperP1.NonalignedSurfaceSubpowerUnderInputs.uniform_subpower
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_block_mass
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_activity
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_absolute_difference
@@ -6497,6 +6510,7 @@ import PaperP1
 #print axioms PaperP1.BivariateGridCount.homogeneous_integer_box_bound
 #print axioms PaperP1.CurveCommonQuotientBound.integral_point
 #print axioms PaperP1.CurveCoverGraphBound.integral_point
+#print axioms PaperP1.CurveCoverNonalignedBound.integral_point
 #print axioms PaperP1.CurveCoverRepeatedLeftBound.integral_point
 #print axioms PaperP1.DisjointCommonQuotientBound.integral_point
 #print axioms PaperP1.DisjointEquationGraphBound.integral_point

@@ -9142,3 +9142,54 @@ not a confirmed manuscript-conclusion error. Palomar is deferred;
 the original manuscript bytes and pinned dependencies are unchanged.
 
 Verified under Lean v4.36.0-rc2: full build passed (12619 jobs); direct axiom audit passed for 9053 declarations using only propext, Classical.choice and Quot.sound; all 7051 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.64 GiB.
+
+
+## The affine exception gives the actual source alignment
+
+The positive-left-size degree-(a,1) host count now has an
+independence-free nonaligned version, including a=1. It uses
+actual integer hosts with both coordinates in the positive
+dyadic range and excludes only a concrete bounded positive
+coprime alignment. No even-selection injectivity or left/right
+square-class directness is assumed.
+
+The affine exceptional graph is handled constructively. Two
+distinct bounded integer grid points and the actual host on the
+same rational affine graph give an exact rational cross-product
+identity, then its exact integer counterpart. The existing
+bounded collinearity argument constructs positive coprime a,b
+with a,b<=2B and |bX-aY|<=(a+b)B. The critical-window cutoff
+ensures that both host coordinates exceed the offset cap B.
+This discharges the affine alternative for every positive common
+left size; the other graph cases retain the same offset-only
+polynomial bound.
+
+For the paper's offset cap B=L+1 and L>=1, the constructed
+alignment is proved to imply the literal
+CompressedTargetAlignment.Aligned 1 X.natAbs Y.natAbs L.
+The final source_uniform_hosts theorem therefore assumes the
+paper's actual nonalignment predicate, rather than a supplied
+line-exclusion or graph-bound conclusion.
+
+The argument is composed through the actual integer/rational
+plane covers, projective source, ambient prime height and
+ordinary Hilbert multiplicity, simultaneous degree gap, actual
+finite curve-cover count, conditional surface point count and
+literal integer-root lift. One cutoff is uniform before all
+actual equations, coefficients, curves, covers and hosts.
+The two previously isolated uniform geometric properties remain
+explicit unproved arguments; the host-count target is not a
+premise. Constant-coordinate images and even finite cover
+degrees remain included.
+
+Together with the repeated-left a>=2 version, this recovers
+the per-system alignment scope needed by the second graph
+consequence of T1.7. Smooth coefficient-pattern enumeration,
+the general half-power geometric bound, and the external
+uniform geometric proofs remain open. T1.7 stays in_progress,
+numbered coverage remains 79/167, confirmed improvements remain
+112, and Palomar is deferred. This is a proof improvement,
+not a confirmed manuscript-conclusion error. Original manuscript
+bytes and pinned dependencies are unchanged.
+
+Verified under Lean v4.36.0-rc2: full build passed (12639 jobs); direct axiom audit passed for 9067 declarations using only propext, Classical.choice and Quot.sound; all 7069 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.60 GiB.
