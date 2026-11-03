@@ -1844,3 +1844,10 @@ public import PaperP1.Algebra.GradedQuotientAdmissibility
 public import PaperP1.Geometry.ProjFunctionFieldRank
 public import PaperP1.Geometry.SourceCurveProjectiveMap
 public import PaperP1.Geometry.SourceCurveProjectiveFieldRank
+public import PaperP1.Algebra.UnivariateHomogeneousPolynomial
+public import PaperP1.Algebra.NatEventuallyConstant
+public import PaperP1.Algebra.UnivariateGradedModuleHilbert
+public import PaperP1.Algebra.FiniteHomogeneousModuleGenerators
+public import PaperP1.Algebra.GradedHilbertHyperplane
+public import PaperP1.Algebra.TwoParameterQuotientGenerators
+public import PaperP1.Algebra.TwoVariableGradedHilbert

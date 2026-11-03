@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **8440 audited theorem/lemma declarations**. This
+- The project currently has **8466 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -8067,3 +8067,41 @@ in_progress; numbered coverage remains 79/167, confirmed improvements
 remain 107 and Palomar remains deferred. Original sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12221 jobs, direct axiom audit of 8440 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6261 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.50 GiB.
+
+
+## Hilbert-polynomial existence from two actual parameters
+
+Hilbert-polynomial existence is now proved for an internally graded
+F-algebra domain finite over two actual degree-one parameters, with
+finite-dimensional homogeneous pieces. Finite module generation, rather
+than a Hilbert-polynomial existence premise, is the input.
+
+A homogeneous polynomial in one variable is its actual coefficient
+times the corresponding monomial. After the degrees of finitely many
+homogeneous generators, multiplication by that parameter is surjective
+on consecutive module pieces. Their finite dimensions decrease and
+therefore eventually stabilize. This proves an actual constant Hilbert
+polynomial for any such one-parameter module, including rings with
+zero divisors.
+
+For two parameters, the actual homogeneous quotient by the first
+parameter is generated over the second. The polynomial coefficient
+map that kills the first variable is constructed and checked. The
+quotient Hilbert function therefore stabilizes. If the first parameter
+is nonzero in the domain, the checked hyperplane exact sequence gives
+an affine Hilbert function by a natural-number recurrence. If it is
+zero, the original Hilbert function is already eventually constant.
+Both cases produce actual rational Hilbert polynomials. Finally, finite
+module generation yields a finite homogeneous generating family by
+taking the finitely many components of actual finite generators.
+
+The theorem still needs a checked two-parameter finite normalization
+for the actual curve quotients. Identification of the base image
+quotient with the literal plane-equation Veronese remains open, as do
+scheme dimension, hyperplane-bundle comparison, low-degree geometry
+and external host-count inputs. No manuscript result is counted as
+complete on the basis of this general algebraic step. Coverage stays
+79/167 and the confirmed mathematical-improvement count stays 107.
+Palomar remains deferred; original manuscript sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12235 jobs, direct axiom audit of 8466 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6289 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.49 GiB.
