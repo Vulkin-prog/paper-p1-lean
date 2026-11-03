@@ -95,7 +95,8 @@
             "P1-PROB-COARSE-POISSON-BCN"
           ]
         }
-      ]
+      ],
+      "validation_commit": "9bcd48a40c02d78fcf3f2b7ece0ff2946b8f15de"
     },
     {
       "label": "p1:cor:tv",
@@ -313,7 +314,8 @@
             "P1-PROB-FIXED-COUNT-MOMENT-BOUNDS-BCN"
           ]
         }
-      ]
+      ],
+      "validation_commit": "9bcd48a40c02d78fcf3f2b7ece0ff2946b8f15de"
     },
     {
       "label": "p1:arith:hosts",
@@ -13587,7 +13589,8 @@
           "literature_inputs": []
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13677 jobs); direct axiom audit passed for 10599 declarations using only propext, Classical.choice and Quot.sound; all 9000 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.49 GiB."
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13677 jobs); direct axiom audit passed for 10599 declarations using only propext, Classical.choice and Quot.sound; all 9000 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.49 GiB.",
+      "validation_commit": "9bcd48a40c02d78fcf3f2b7ece0ff2946b8f15de"
     },
     {
       "label": "p1:limits:lattice",
