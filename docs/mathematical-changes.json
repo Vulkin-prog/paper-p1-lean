@@ -10340,6 +10340,56 @@
         "status": "not_integrated"
       },
       "validation_commit": "b83c6f24be7a1db7ef88b1376fc1742a4ebdcfe5"
+    },
+    {
+      "id": "P1-MATH-0144",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:core:exceptional",
+        "number": "T15.2",
+        "page": 57,
+        "source": "companion_sections/cores.tex",
+        "line": 511,
+        "statement_sha256": "1a1f10bd011bfda802c8ffb800620eddbefe2a72fde7cd8c9053f9e8573a3660"
+      },
+      "original_assumption": "The printed T15.2 proof excludes contacts separately and invokes the sharper separated two-pair seed and compressed-pair statements.",
+      "finding": "The exceptional-event conclusion in companion T15.2 admits a shorter\nexhaustive positive-seed proof. Every nonretained actual family contains a\nnongood dependent pair, an original primitive of size at least3, two disjoint\ndependent pairs, or a primitive compressed extension. For two disjoint pairs,\npositive deletion loss at every coordinate and the completed fixed\nno-singleton joint theorem give rate1 without the sharper separated\nhomogeneous two-pair bound. The whole compressed-pair rate1 suffices; its\nstill-open sharp separated clauses are unnecessary here. No separate\ncontact exclusion is needed for the retained direct-sum conclusion. All\nother seed contributions have rate1; the actual nongood pair tail supplies\nthe final rate4/5. The measurable event is exactly nonretention, and every\nactual subfamily off it has rho<=L/3+1. This event also proves the same\nquantitative rate4/5 in total variation between the actual normalized\noriginal and retained-modified count laws, improving the earlier Lean\nqualitative BCN-based preparation. All actual dyadic subgrounds, affine\nincompatibility, zero marginals and all cardinalities are included. The\nconditional input scope is only the three existing geometric properties.",
+      "impact": "Completes the literal actual exceptional-event conclusion using an exhaustive all-cardinality positive cover, without separate contacts or the still-open sharp separated estimates; supplies the same rate for actual normalized law total variation.",
+      "proposed_revision": "Use the four positive seed classes and the direct canonical-component joint bound for two disjoint dependent pairs. State the exact event of nonretention, explicit rho<=L/3+1 bound and quantitative coupling consequence. Keep the separate sharper homogeneous statements independent.",
+      "evidence": [
+        "PaperP1.NongoodPairSeeds.mem_families",
+        "PaperP1.NongoodPairSeeds.good_four_subset",
+        "PaperP1.NongoodPairSeeds.cover",
+        "PaperP1.NongoodPairSeeds.joint_bound",
+        "PaperP1.NongoodPairJointMassUnderInputs.uniform_bound",
+        "PaperP1.TwoDependentPairSeeds.mem_sourcePairs",
+        "PaperP1.TwoDependentPairSeeds.union_core",
+        "PaperP1.TwoDependentPairSeeds.family_data",
+        "PaperP1.TwoDependentPairJointMassUnderInputs.uniform_bound",
+        "PaperP1.RetainedActivationSeeds.family_subset",
+        "PaperP1.RetainedActivationSeeds.primitive_seed",
+        "PaperP1.RetainedActivationSeeds.cover",
+        "PaperP1.RetainedActivationSeeds.compressed_joint_bound",
+        "PaperP1.RetainedActivationSeeds.joint_bound",
+        "PaperP1.RetainedActivationSeeds.badProbability_le_mass",
+        "PaperP1.RetainedExceptionalEventUnderInputs.uniform_badProbability",
+        "PaperP1.RetainedExceptionalEventUnderInputs.uniform_totalVariation",
+        "PaperP1.RetainedExceptionalEventUnderInputs.companion_T15_2",
+        "PaperP1.NongoodPairSeeds.families",
+        "PaperP1.TwoDependentPairSeeds.sourcePairs",
+        "PaperP1.TwoDependentPairSeeds.families",
+        "PaperP1.RetainedActivationSeeds.families",
+        "PaperP1.RetainedExceptionalEventUnderInputs.Parameters",
+        "PaperP1.RetainedExceptionalEventUnderInputs.Hypotheses"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13639 jobs); direct axiom audit passed for 10542 declarations using only propext, Classical.choice and Quot.sound; all 8928 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.59 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -6146,6 +6146,7 @@ import PaperP1
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_activity
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_absolute_difference
 #print axioms PaperP1.NonconnectedActivityUnderInputs.uniform_bound
+#print axioms PaperP1.NongoodPairJointMassUnderInputs.uniform_bound
 #print axioms PaperP1.NormalizedDefectPairActivity.bad_subset_units
 #print axioms PaperP1.NormalizedDefectPairActivity.uniform_activity
 #print axioms PaperP1.NormalizedDefectPairActivity.uniform_joint_mass
@@ -6505,6 +6506,9 @@ import PaperP1
 #print axioms PaperP1.RetainedBadProbabilityUnderBCN.uniform_badProbability
 #print axioms PaperP1.RetainedBadProbabilityUnderBCN.uniform_totalVariation
 #print axioms PaperP1.RetainedClassTheorem.companion_T12_1
+#print axioms PaperP1.RetainedExceptionalEventUnderInputs.uniform_badProbability
+#print axioms PaperP1.RetainedExceptionalEventUnderInputs.uniform_totalVariation
+#print axioms PaperP1.RetainedExceptionalEventUnderInputs.companion_T15_2
 #print axioms PaperP1.RetainedGoodPairMass.beta_le_raw
 #print axioms PaperP1.RetainedGoodPairMass.uniform_bound
 #print axioms PaperP1.RetainedIndependentDeficitRates.first_bound
@@ -6749,6 +6753,7 @@ import PaperP1
 #print axioms PaperP1.TripleRankUnderBCN.article_13_8_under_BCN
 #print axioms PaperP1.TwoBlockComponentHostData.exists_pattern
 #print axioms PaperP1.TwoChannelDenseProfileReduction.uniform_bound
+#print axioms PaperP1.TwoDependentPairJointMassUnderInputs.uniform_bound
 #print axioms PaperP1.TwoProgressionSublinear.rank_sublinear
 #print axioms PaperP1.TwoProgressionSublinear.row_rank_sublinear
 #print axioms PaperP1.TwoSmallKernelCount.dyadic_count
@@ -8846,6 +8851,10 @@ import PaperP1
 #print axioms PaperP1.NonconnectedActivity.canonical_cover
 #print axioms PaperP1.NonconnectedActivity.finite_bound
 #print axioms PaperP1.NonconnectedActivity.absolute_difference
+#print axioms PaperP1.NongoodPairSeeds.mem_families
+#print axioms PaperP1.NongoodPairSeeds.good_four_subset
+#print axioms PaperP1.NongoodPairSeeds.cover
+#print axioms PaperP1.NongoodPairSeeds.joint_bound
 #print axioms PaperP1.NormalizedFamilyDefectRank.common_rank_defect
 #print axioms PaperP1.NormalizedFamilyDefectRank.connected_rank_defect
 #print axioms PaperP1.NormalizedFamilyDefectRank.actual_joint_le_rank
@@ -9205,6 +9214,12 @@ import PaperP1
 #print axioms PaperP1.ReplicaWordColors.flatten_event
 #print axioms PaperP1.ReplicaWordColors.flattened_mass
 #print axioms PaperP1.ReplicaWordColors.seed_mass
+#print axioms PaperP1.RetainedActivationSeeds.family_subset
+#print axioms PaperP1.RetainedActivationSeeds.primitive_seed
+#print axioms PaperP1.RetainedActivationSeeds.cover
+#print axioms PaperP1.RetainedActivationSeeds.compressed_joint_bound
+#print axioms PaperP1.RetainedActivationSeeds.joint_bound
+#print axioms PaperP1.RetainedActivationSeeds.badProbability_le_mass
 #print axioms PaperP1.RetainedActiveCount.erase_pair_endpoint_zero
 #print axioms PaperP1.RetainedActiveCount.large_direct_subfamily
 #print axioms PaperP1.RetainedActiveCount.retained_empty
@@ -9501,6 +9516,9 @@ import PaperP1
 #print axioms PaperP1.TripleRankGeometry.pair_joint_le_rank_mass
 #print axioms PaperP1.TripleRankGeometry.family_joint_le_rank_mass
 #print axioms PaperP1.TupleMassIteration.iterate
+#print axioms PaperP1.TwoDependentPairSeeds.mem_sourcePairs
+#print axioms PaperP1.TwoDependentPairSeeds.union_core
+#print axioms PaperP1.TwoDependentPairSeeds.family_data
 #print axioms PaperP1.TwoTargetJointWeight.pair_kernel
 #print axioms PaperP1.TwoTargetJointWeight.intersection_le_kernel
 #print axioms PaperP1.TwoTargetJointWeight.joint_bound

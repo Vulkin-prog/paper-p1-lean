@@ -2534,3 +2534,9 @@ public import PaperP1.Model.CompressedPairMass
 public import PaperP1.Asymptotics.ConnectedOneRankOffsetMassUnderInputs
 public import PaperP1.Asymptotics.ConnectedFourCoreMassUnderInputs
 public import PaperP1.Asymptotics.CompressedPairMassUnderInputs
+public import PaperP1.Model.NongoodPairSeeds
+public import PaperP1.Asymptotics.NongoodPairJointMassUnderInputs
+public import PaperP1.Model.TwoDependentPairSeeds
+public import PaperP1.Asymptotics.TwoDependentPairJointMassUnderInputs
+public import PaperP1.Model.RetainedActivationSeeds
+public import PaperP1.Asymptotics.RetainedExceptionalEventUnderInputs
