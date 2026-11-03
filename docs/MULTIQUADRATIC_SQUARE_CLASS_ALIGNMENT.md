@@ -1572,3 +1572,37 @@ confirmed improvements stay 107 and Palomar remains deferred. Original
 manuscript sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12297 jobs, direct axiom audit of 8555 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6399 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.18 GiB.
+
+
+## Actual projective curve points and their constructed chart coordinates
+
+The source curve degree theorem now takes an actual projective source
+point and the height-one condition on its homogeneous prime. The point
+itself supplies primality, homogeneity, and relevance. Its image under
+the actual source projection is a relevant native Veronese prime.
+
+For any internally graded algebra generated in degree one, relevance
+of a quotient ideal is proved to yield a nonzero degree-one quotient
+coordinate: otherwise all degree-one generators would lie in the ideal,
+forcing it to contain the irrelevant ideal. The native base satisfies
+the required generation theorem. An actual nonzero base coordinate is
+therefore constructed from the source projective point and its actual
+projection. No coordinate witness is a separate theorem input.
+
+The resulting theorem constructs the homogeneous irreducible plane
+equation, proves the actual base ideal equals its contracted principal
+ideal, proves source Hilbert-polynomial existence, and identifies the
+actual source Hilbert multiplicity with D times the extracted plane
+equation degree times the actual projective function-field degree.
+The stored public statement uses literal quotient Proj function fields;
+its elaborated type and kernel axioms are inspected directly.
+
+The remaining statement-alignment steps concern the geometric curve
+dimension versus homogeneous prime height and intrinsic hyperplane
+degree versus the actual coordinate Hilbert multiplicity. Low-degree
+curve geometry and the external uniform host counts remain open.
+T1.7 stays in_progress, numbered coverage stays 79/167, confirmed
+mathematical improvements stay 107, and Palomar remains deferred.
+Original manuscript sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12303 jobs, direct axiom audit of 8565 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6413 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.17 GiB.

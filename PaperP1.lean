@@ -1877,3 +1877,6 @@ public import PaperP1.Geometry.SourceCurvePlaneImagePrime
 public import PaperP1.Geometry.SourceCurvePlaneImageEquation
 public import PaperP1.Geometry.SourceCurveProjectionHeight
 public import PaperP1.Geometry.SourceCurveHeightOneDegree
+public import PaperP1.Algebra.GradedQuotientChartCoordinate
+public import PaperP1.Geometry.SourceCurveProjectivePointData
+public import PaperP1.Geometry.SourceProjectiveCurveDegree

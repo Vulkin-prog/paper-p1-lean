@@ -814,6 +814,8 @@ import PaperP1
 #print axioms PaperP1.GradedPolynomialPresentation.piece_map
 #print axioms PaperP1.GradedPolynomialPresentation.pieceEquiv_apply
 #print axioms PaperP1.GradedQuotientAdmissibility.irrelevant_le_radical
+#print axioms PaperP1.GradedQuotientChartCoordinate.exists_linear_outside
+#print axioms PaperP1.GradedQuotientChartCoordinate.exists_coordinate
 #print axioms PaperP1.GradedQuotientIdealCongruence.parameters
 #print axioms PaperP1.GradedQuotientIdealCongruence.hilbertPolynomial
 #print axioms PaperP1.GradedQuotientModuleGenerators.baseIdeal_homogeneous
@@ -6388,6 +6390,12 @@ import PaperP1
 #print axioms PaperP1.SourceCurveProjectiveFieldRank.degree_bounds
 #print axioms PaperP1.SourceCurveProjectiveFieldRank.multiplicity
 #print axioms PaperP1.SourceCurveProjectiveMap.admissible
+#print axioms PaperP1.SourceCurveProjectivePointData.ideal_prime
+#print axioms PaperP1.SourceCurveProjectivePointData.ideal_homogeneous
+#print axioms PaperP1.SourceCurveProjectivePointData.basePoint_ideal
+#print axioms PaperP1.SourceCurveProjectivePointData.exists_coordinate
+#print axioms PaperP1.SourceCurveProjectivePointData.coordinate_mem
+#print axioms PaperP1.SourceCurveProjectivePointData.coordinate_ne_zero
 #print axioms PaperP1.SourceEmbeddingCoordinateAlgebra.kernel_eq
 #print axioms PaperP1.SourceEmbeddingCoordinateAlgebra.kernel_homogeneous
 #print axioms PaperP1.SourceEmbeddingCoordinateAlgebra.coordinateEquiv_mk
@@ -6404,6 +6412,8 @@ import PaperP1
 #print axioms PaperP1.SourceProjectiveAffineField.sourceEquiv_chartMap
 #print axioms PaperP1.SourceProjectiveAffineFieldCompatibility.chart_dehomogenization_natural
 #print axioms PaperP1.SourceProjectiveAffineFieldCompatibility.equiv_comp_map
+#print axioms PaperP1.SourceProjectiveCurveDegree.exists_polynomial
+#print axioms PaperP1.SourceProjectiveCurveDegree.exists_degree_formula
 #print axioms PaperP1.SourceProjectiveEmbedding.index_finite
 #print axioms PaperP1.SourceProjectiveEmbedding.coordinate_count
 #print axioms PaperP1.SourceProjectiveEmbedding.coordinate_count_fin
