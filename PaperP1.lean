@@ -2631,3 +2631,11 @@ public import PaperP1.Model.OriginalLawPolynomialMoments
 public import PaperP1.Model.FourthCharlierLawDistance
 public import PaperP1.Asymptotics.PositiveQuarticObstructionUnderInputs
 public import PaperP1.Asymptotics.QuadraticLawLowerBoundUnderInputs
+public import PaperP1.Asymptotics.ExplicitQuadraticApproximationUnderInputs
+public import PaperP1.Model.FixedHeightPrivateChannels
+public import PaperP1.Asymptotics.FixedHeightPrivateChannelProfile
+public import PaperP1.Asymptotics.FixedHeightCumulantProfileUnderInputs
+public import PaperP1.Asymptotics.FixedHeightQuadraticLawUnderInputs
+public import PaperP1.Asymptotics.FixedHeightHierarchyUnderInputs
+public import PaperP1.Asymptotics.TwoChannelReferenceUnderInputs
+public import PaperP1.Asymptotics.ExplicitHermiteLawUnderInputs

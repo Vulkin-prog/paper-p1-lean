@@ -10677,6 +10677,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "99d2e0596b8c3a3de45a39f762e952c8134734a5"
+    },
+    {
+      "id": "P1-MATH-0151",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:channels:hierarchy",
+        "number": "18.1",
+        "page": 54,
+        "source": "main_sections/channel_hierarchy.tex",
+        "line": 28,
+        "statement_sha256": "26e02ddbfa3972d68cba362c8fb4c97b5f4bc6d5518cab955d5a30333971fa7a"
+      },
+      "original_assumption": "The source fixed-height law hierarchy invokes the optimal exact-reference4/3 approximation and a homogeneous nonaligned-rank profile before deriving its original-law equivalents.",
+      "finding": "Every fixed-height explicit quadratic and Hermite original-law\nhierarchy follows already from the first exact quadratic approximation\nof rate1 and the actual finite-channel cumulant profiles. The source\nproof invokes the optimal exact-reference4/3 rate, which is unnecessary\nbecause (h+1)/(h+2)<1 at each fixed height. The complete actual signed\nremainders, moving TV equivalents, probability witnesses and optimal\npowers h/(h+1) are verified. The actual weak/exceptional/private pair\npartition also suffices without the stronger homogeneous nonaligned\nmain18.2 rank sum on incompatible configurations. Thus main1.4,18.1\nand18.3 are complete under the existing finite geometric properties,\nindependently of the still open optimal triple arithmetic and exact-\nreference optimal upper bound. The exact-parameter Hermite4/3 assertion\nand main19.1 full completion remain open.",
+      "impact": "Weakens the dependencies of the complete fixed-height quadratic/Hermite hierarchy and the explicit two-channel approximation. Completes three source results without assuming the still open optimal exact-reference upper bound or sharper triple activity.",
+      "proposed_revision": "Derive the literal fixed-height cumulant profile directly from the actual weak/exceptional/private pair partition. Then use the already proved first exact quadratic rate1, since every fixed-height next-order exponent is strictly less than1. Retain the moving phase and exact singleton/TV factor throughout.",
+      "evidence": [
+        "PaperP1.FixedHeightPrivateChannels.source_channel_unique",
+        "PaperP1.FixedHeightPrivateChannels.signed_remainder_bound",
+        "PaperP1.FixedHeightCumulantProfileUnderInputs.uniform_coarse",
+        "PaperP1.FixedHeightQuadraticLawUnderInputs.uniform_next_remainder",
+        "PaperP1.FixedHeightQuadraticLawUnderInputs.uniform_probability_equivalent",
+        "PaperP1.FixedHeightHierarchyUnderInputs.uniform_lower_power",
+        "PaperP1.FixedHeightHierarchyUnderInputs.article_18_1",
+        "PaperP1.TwoChannelReferenceUnderInputs.uniform_equivalents",
+        "PaperP1.ExplicitQuadraticApproximationUnderInputs.article_1_4",
+        "PaperP1.ExplicitHermiteLawUnderInputs.uniform_probability_equivalent"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13837 jobs); direct axiom audit passed for 10816 declarations using only propext, Classical.choice and Quot.sound; all 9288 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.09 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
