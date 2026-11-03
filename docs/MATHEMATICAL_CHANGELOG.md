@@ -8533,3 +8533,57 @@ complete. Coverage remains 79/167, confirmed improvements remain
 new error in a manuscript conclusion is confirmed.
 
 Verified under Lean v4.36.0-rc2: full build passed (12715 jobs); direct axiom audit passed for 9183 declarations using only propext, Classical.choice and Quot.sound; all 7235 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.42 GiB.
+
+
+## The actual dense weighted sector, conditional on the exact geometric properties
+
+Companion T1.8, the dense weighted sector, now has its full
+finite-sum and asymptotic composition under explicitly listed
+geometric properties. Its status is CONDITIONAL, not proved.
+For arbitrary actual dyadic host sets F, literal nonalignment and
+c(x,y)>=eta*(L+1) imply sum_F(2^rho-1)=O(N^(1+epsilon)).
+The same bound is proved for the full value kernel with the
+separate block-parity equations omitted. In fact the theorem
+bounds the larger sum_F 2^r where r is the actual dimension of
+the kernel of the two-window value parity map, including local
+relations. The effective pair nullity is proved <= this actual
+full kernel rank. No compatibility, regularity or separation
+hypothesis is needed, so overlapping physical windows are included.
+
+The unconditional graph foundations are now literal. Swapping
+the two start windows gives a graph isomorphism, a connected-
+component equivalence and exact pin preservation. It exchanges
+the two vertex projections. A general disjoint-block argument
+proves 4*c<=2*B+2*t2+t3, and the actual component construction
+identifies each size-two component with type (1,1). Every size-
+three component has type (2,1), either in the original graph or
+under the actual swap equivalence. The resulting cardinality
+bounds justify the precise two-orientation split used by T1.8.
+
+The actual raw value kernel is contained in the large-prime
+solution space and therefore has dimension <=D_defect+c.
+Previously proved critical defect estimates yield uniformly
+D_defect=o(B). Exact binary-power conversion gives weight
+<=N^(1+delta) globally and <=N^(1/2+delta) whenever the two-
+and three-vertex populations are bounded. The proof partitions
+the finite host set into many (1,1) components, many oriented
+(2,1) components, and the remainder. The two subpower actual
+graph counts bound the first populations, and the actual general
+half-power graph count bounds the remainder. All partitions,
+weights, epsilon margins, sums and constant orders are proved.
+
+Only the exact generic normalized curve property and the
+ordinary/chosen-source surface-cover properties remain inputs.
+Their uses are limited to the fixed dimensions and degree caps
+selected before the hosts. The generic property supplies the
+ordinary Pila specialization internally. These properties still
+include unproved primary determinant estimates and their exact
+projection, lifting, integrality and prime/Hilbert translations.
+No target weighted bound or arithmetic graph count is supplied
+as an assumption. Thus T1.8 moves from not_started to conditional;
+proved numbered coverage stays 79/167. T1.7 and the full papers
+remain incomplete, confirmed improvements stay 112, and Palomar
+is deferred. Original manuscript bytes are unchanged and no
+manuscript-conclusion error is newly confirmed.
+
+Verified under Lean v4.36.0-rc2: full build passed (12727 jobs); direct axiom audit passed for 9215 declarations using only propext, Classical.choice and Quot.sound; all 7271 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.38 GiB.

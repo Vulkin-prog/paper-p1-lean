@@ -2084,3 +2084,9 @@ public import PaperP1.Asymptotics.CriticalGeneralRootPatterns
 public import PaperP1.Asymptotics.SmoothGeneralNonalignedHostCount
 public import PaperP1.Asymptotics.GeneralTwoBlockComponentHostData
 public import PaperP1.Asymptotics.GeneralGraphHostCount
+public import PaperP1.Combinatorics.FourVertexBudget
+public import PaperP1.Combinatorics.TwoWindowGraphSwap
+public import PaperP1.Arithmetic.RawPairRelationRank
+public import PaperP1.Arithmetic.TwoWindowComponentSizeBudget
+public import PaperP1.Asymptotics.CriticalPairKernelPowers
+public import PaperP1.Asymptotics.DenseWeightedSectorUnderInputs

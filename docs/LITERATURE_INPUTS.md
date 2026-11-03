@@ -9618,3 +9618,108 @@ complete. Coverage remains 79/167, confirmed improvements remain
 new error in a manuscript conclusion is confirmed.
 
 Verified under Lean v4.36.0-rc2: full build passed (12715 jobs); direct axiom audit passed for 9183 declarations using only propext, Classical.choice and Quot.sound; all 7235 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.42 GiB.
+
+
+## The actual dense weighted sector, conditional on the exact geometric properties
+
+Companion T1.8, the dense weighted sector, now has its full
+finite-sum and asymptotic composition under explicitly listed
+geometric properties. Its status is CONDITIONAL, not proved.
+For arbitrary actual dyadic host sets F, literal nonalignment and
+c(x,y)>=eta*(L+1) imply sum_F(2^rho-1)=O(N^(1+epsilon)).
+The same bound is proved for the full value kernel with the
+separate block-parity equations omitted. In fact the theorem
+bounds the larger sum_F 2^r where r is the actual dimension of
+the kernel of the two-window value parity map, including local
+relations. The effective pair nullity is proved <= this actual
+full kernel rank. No compatibility, regularity or separation
+hypothesis is needed, so overlapping physical windows are included.
+
+The unconditional graph foundations are now literal. Swapping
+the two start windows gives a graph isomorphism, a connected-
+component equivalence and exact pin preservation. It exchanges
+the two vertex projections. A general disjoint-block argument
+proves 4*c<=2*B+2*t2+t3, and the actual component construction
+identifies each size-two component with type (1,1). Every size-
+three component has type (2,1), either in the original graph or
+under the actual swap equivalence. The resulting cardinality
+bounds justify the precise two-orientation split used by T1.8.
+
+The actual raw value kernel is contained in the large-prime
+solution space and therefore has dimension <=D_defect+c.
+Previously proved critical defect estimates yield uniformly
+D_defect=o(B). Exact binary-power conversion gives weight
+<=N^(1+delta) globally and <=N^(1/2+delta) whenever the two-
+and three-vertex populations are bounded. The proof partitions
+the finite host set into many (1,1) components, many oriented
+(2,1) components, and the remainder. The two subpower actual
+graph counts bound the first populations, and the actual general
+half-power graph count bounds the remainder. All partitions,
+weights, epsilon margins, sums and constant orders are proved.
+
+Only the exact generic normalized curve property and the
+ordinary/chosen-source surface-cover properties remain inputs.
+Their uses are limited to the fixed dimensions and degree caps
+selected before the hosts. The generic property supplies the
+ordinary Pila specialization internally. These properties still
+include unproved primary determinant estimates and their exact
+projection, lifting, integrality and prime/Hilbert translations.
+No target weighted bound or arithmetic graph count is supplied
+as an assumption. Thus T1.8 moves from not_started to conditional;
+proved numbered coverage stays 79/167. T1.7 and the full papers
+remain incomplete, confirmed improvements stay 112, and Palomar
+is deferred. Original manuscript bytes are unchanged and no
+manuscript-conclusion error is newly confirmed.
+
+Verified under Lean v4.36.0-rc2: full build passed (12727 jobs); direct axiom audit passed for 9215 declarations using only propext, Classical.choice and Quot.sound; all 7271 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.38 GiB.
+
+
+## The three geometric properties used by the conditional dense sector
+
+Stable ID: `P1-GEO-NORMALIZED-CURVE-UNIFORM`. Status:
+**explicit_hypothesis**. Exact Lean property:
+`PaperP1.UniformNormalizedCurvePointCount.UniformBound nmax M`.
+For every delta>0 its constant precedes the actual finite coordinate
+set of cardinality <=nmax, homogeneous prime curve ideal with its
+actual positive rational linear Hilbert leading coefficient <=M,
+normalizing coordinate and integral height H>=1. The actual normalized
+integer-point set has cardinality <=A*H^(1/degree+delta). The primary
+curve reference is [Pila, Asterisque 228 (1995), Theorem A](https://www.numdam.org/item/AST_1995__228__183_0.pdf).
+Pila's primary affine-real irreducibility formulation is not identical
+to the present rational-prime/Hilbert/chart formulation. The treatment
+of rational primes which are not geometrically integral and the exact
+chart/degree translation remain INCLUDED UNPROVED parts of this
+explicit property. The project proves only its ordinary and chosen-
+source specializations; it does not claim a formal proof of Pila.
+
+Stable ID: `P1-GEO-ORDINARY-SURFACE-COVER`. Status:
+**explicit_hypothesis**. Exact Lean property:
+`PaperP1.UniformOrdinarySurfaceCover.UniformCover kmax K`.
+It supplies an actual finite exceptional set and actual bounded-degree
+ordinary source curves, with exponents 2/sqrt(2^k)+delta and
+1/sqrt(2^k)+delta, uniformly before coefficients and root sets. The
+primary surface reference is [Salberger, arXiv:2311.05561v1, Lemma 2](https://arxiv.org/pdf/2311.05561v1).
+That lemma concerns geometrically integral projective surfaces in P3.
+The literal finite affine projection, lifting, component/degree bounds,
+geometric-integrality hypotheses and translation to this ordinary
+prime-ideal/Hilbert curve presentation remain INCLUDED UNPROVED parts
+of this property. Its constants do not assume the target host count.
+
+Stable ID: `P1-GEO-CHOSEN-SOURCE-SURFACE-COVER`. Status:
+**explicit_hypothesis**. Exact Lean property:
+`PaperP1.UniformSourceSurfaceCover.UniformCover kmax K D`.
+It covers actual normalized integer points of the global ideal in
+the chosen degree-D Veronese/radical source embedding by an actual
+exceptional set and actual height-one source curves, with the same
+number/exception exponents and uniformly bounded chosen-coordinate
+Hilbert degree. The same Salberger reference is the primary starting
+point; the higher-dimensional chosen-embedding projection, affine
+lifting, degree, integrality and actual source-prime translations
+remain INCLUDED UNPROVED parts. This property is kept distinct from
+the ordinary one. The source embedding degree, integer lifts, height,
+curve degree comparison and low-degree exclusions are separately
+proved and do not discharge these remaining covering inputs.
+
+T1.8 uses each property only at the fixed dimensions and caps exposed
+by DenseWeightedSectorUnderInputs.uniform_kernels. No global axiom,
+primary-input certification or Palomar registration is introduced.

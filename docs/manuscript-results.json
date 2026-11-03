@@ -7940,11 +7940,62 @@
       "source": "companion_sections/arithmetic_appendix.tex",
       "line": 745,
       "sha256": "7614514fd992641b83baeb2b37b92f6bd4d7a162a047f7d8221af58e63368513",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "conditional",
+      "lean_declarations": [
+        "PaperP1.FourVertexBudget.budget",
+        "PaperP1.TwoWindowGraphSwap.label_swap",
+        "PaperP1.TwoWindowGraphSwap.mem_occurrences_swap",
+        "PaperP1.TwoWindowGraphSwap.occurrences_swap",
+        "PaperP1.TwoWindowGraphSwap.pinned_forward",
+        "PaperP1.TwoWindowGraphSwap.pinned_swap",
+        "PaperP1.TwoWindowGraphSwap.mem_vertices_swap",
+        "PaperP1.TwoWindowGraphSwap.left_vertices_swap",
+        "PaperP1.TwoWindowGraphSwap.right_vertices_swap",
+        "PaperP1.TwoWindowGraphSwap.component_pinned_forward",
+        "PaperP1.TwoWindowGraphSwap.component_pinned_swap",
+        "PaperP1.RawPairRelationRank.kernel_le_large",
+        "PaperP1.RawPairRelationRank.rank_le_large",
+        "PaperP1.RawPairRelationRank.rank_le_components",
+        "PaperP1.RawPairRelationRank.complete_le_full",
+        "PaperP1.RawPairRelationRank.intersection_le_full",
+        "PaperP1.RawPairRelationRank.relative_le_full",
+        "PaperP1.TwoWindowComponentSizeBudget.size_min",
+        "PaperP1.TwoWindowComponentSizeBudget.four_vertex_budget",
+        "PaperP1.TwoWindowComponentSizeBudget.two_subset",
+        "PaperP1.TwoWindowComponentSizeBudget.three_orientation",
+        "PaperP1.TwoWindowComponentSizeBudget.three_card_bound",
+        "PaperP1.TwoWindowComponentSizeBudget.full_rank_bound",
+        "PaperP1.CriticalPairKernelPowers.defects_small",
+        "PaperP1.CriticalPairKernelPowers.power_of_rank",
+        "PaperP1.CriticalPairKernelPowers.uniform_global",
+        "PaperP1.CriticalPairKernelPowers.uniform_few_small",
+        "PaperP1.DenseWeightedSectorUnderInputs.weighted_card_bound",
+        "PaperP1.DenseWeightedSectorUnderInputs.relative_kernel_le_full_sum",
+        "PaperP1.DenseWeightedSectorUnderInputs.full_kernel_le_full_sum",
+        "PaperP1.DenseWeightedSectorUnderInputs.uniform_full_weight",
+        "PaperP1.DenseWeightedSectorUnderInputs.uniform_kernels",
+        "PaperP1.TwoWindowGraphSwap.iso",
+        "PaperP1.TwoWindowGraphSwap.componentEquiv",
+        "PaperP1.RawPairRelationRank.fullRank",
+        "PaperP1.TwoWindowComponentSizeBudget.sizeComponents"
+      ],
+      "literature_inputs": [
+        "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+        "P1-GEO-ORDINARY-SURFACE-COVER",
+        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0111",
+        "P1-MATH-0112"
+      ],
+      "notes": "\n\nCompanion T1.8, the dense weighted sector, now has its full\nfinite-sum and asymptotic composition under explicitly listed\ngeometric properties. Its status is CONDITIONAL, not proved.\nFor arbitrary actual dyadic host sets F, literal nonalignment and\nc(x,y)>=eta*(L+1) imply sum_F(2^rho-1)=O(N^(1+epsilon)).\nThe same bound is proved for the full value kernel with the\nseparate block-parity equations omitted. In fact the theorem\nbounds the larger sum_F 2^r where r is the actual dimension of\nthe kernel of the two-window value parity map, including local\nrelations. The effective pair nullity is proved <= this actual\nfull kernel rank. No compatibility, regularity or separation\nhypothesis is needed, so overlapping physical windows are included.\n\nThe unconditional graph foundations are now literal. Swapping\nthe two start windows gives a graph isomorphism, a connected-\ncomponent equivalence and exact pin preservation. It exchanges\nthe two vertex projections. A general disjoint-block argument\nproves 4*c<=2*B+2*t2+t3, and the actual component construction\nidentifies each size-two component with type (1,1). Every size-\nthree component has type (2,1), either in the original graph or\nunder the actual swap equivalence. The resulting cardinality\nbounds justify the precise two-orientation split used by T1.8.\n\nThe actual raw value kernel is contained in the large-prime\nsolution space and therefore has dimension <=D_defect+c.\nPreviously proved critical defect estimates yield uniformly\nD_defect=o(B). Exact binary-power conversion gives weight\n<=N^(1+delta) globally and <=N^(1/2+delta) whenever the two-\nand three-vertex populations are bounded. The proof partitions\nthe finite host set into many (1,1) components, many oriented\n(2,1) components, and the remainder. The two subpower actual\ngraph counts bound the first populations, and the actual general\nhalf-power graph count bounds the remainder. All partitions,\nweights, epsilon margins, sums and constant orders are proved.\n\nOnly the exact generic normalized curve property and the\nordinary/chosen-source surface-cover properties remain inputs.\nTheir uses are limited to the fixed dimensions and degree caps\nselected before the hosts. The generic property supplies the\nordinary Pila specialization internally. These properties still\ninclude unproved primary determinant estimates and their exact\nprojection, lifting, integrality and prime/Hilbert translations.\nNo target weighted bound or arithmetic graph count is supplied\nas an assumption. Thus T1.8 moves from not_started to conditional;\nproved numbered coverage stays 79/167. T1.7 and the full papers\nremain incomplete, confirmed improvements stay 112, and Palomar\nis deferred. Original manuscript bytes are unchanged and no\nmanuscript-conclusion error is newly confirmed.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": ""
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (12727 jobs); direct axiom audit passed for 9215 declarations using only propext, Classical.choice and Quot.sound; all 7271 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.38 GiB."
     },
     {
       "label": "p1:arith:alignedrank",
