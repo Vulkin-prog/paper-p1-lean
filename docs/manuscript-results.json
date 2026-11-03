@@ -12644,7 +12644,8 @@
             "P1-PROB-FIXED-NONCONNECTED-ACTIVITY"
           ]
         }
-      ]
+      ],
+      "validation_commit": "dfba0157f27ccb234819d68bcb9ac63941946fab"
     },
     {
       "label": "p1:core:primitive",
