@@ -6530,7 +6530,8 @@
             "P1-PROB-COARSE-CONNECTED-FOURTH"
           ]
         }
-      ]
+      ],
+      "validation_commit": "99d2e0596b8c3a3de45a39f762e952c8134734a5"
     },
     {
       "label": "p13:lower:optimal",
