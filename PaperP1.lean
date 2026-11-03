@@ -2714,3 +2714,5 @@ public import PaperP1.Model.PositionalRetainedReference
 public import PaperP1.Probability.PositionalPairConversion
 public import PaperP1.Asymptotics.PositionalPairConversionRate
 public import PaperP1.Asymptotics.PositionalRegularApproximationUnderInputs
+public import PaperP1.Model.IncidentPairMass
+public import PaperP1.Asymptotics.WeakPairIncidence

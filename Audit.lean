@@ -7096,6 +7096,11 @@ import PaperP1
 #print axioms PaperP1.WeakExactTripleMassUnderBCN.uniform_reduction
 #print axioms PaperP1.WeakPairActivityAsymptotic.critical_binary_power
 #print axioms PaperP1.WeakPairActivityAsymptotic.uniform_activity
+#print axioms PaperP1.WeakPairIncidence.uniform_bound
+#print axioms PaperP1.WeakPairIncidence.good_single_rates_positive
+#print axioms PaperP1.WeakPairIncidence.good_target_isProbability
+#print axioms PaperP1.WeakPairIncidence.full_single_rates_positive
+#print axioms PaperP1.WeakPairIncidence.full_target_isProbability
 #print axioms PaperP1.WeightedNonalignedPairsUnderInputs.uniform_families
 #print axioms PaperP1.WeightedNonalignedPairsUnderInputs.regular_nullity_eq_loss
 #print axioms PaperP1.WeightedNonalignedPairsUnderInputs.article_18_2
@@ -8904,6 +8909,7 @@ import PaperP1
 #print axioms PaperP1.HomogeneousSourcePairMass.probability_positive_loss
 #print axioms PaperP1.HomogeneousSourcePairMass.regular_loss_eq
 #print axioms PaperP1.HomogeneousSourcePairMass.regular_dependent_bound
+#print axioms PaperP1.IncidentPairMass.finite_bound
 #print axioms PaperP1.IncompatibleConnectedDeficit.mem_sources
 #print axioms PaperP1.IncompatibleConnectedDeficit.proper_bound
 #print axioms PaperP1.IncompatibleConnectedDeficit.finite_bound

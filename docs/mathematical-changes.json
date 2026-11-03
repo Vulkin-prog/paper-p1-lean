@@ -10780,6 +10780,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "ecd9ab8bd4b857953bc727dda686588edd012661"
+    },
+    {
+      "id": "P1-MATH-0154",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:limits:vector-reference",
+        "number": "20.1",
+        "page": 60,
+        "source": "main_sections/limits_appendix.tex",
+        "line": 45,
+        "statement_sha256": "fd15ebe1159f165a714eb5337648229bacb982d63e0d76c87f983cdeaf06f6a4"
+      },
+      "original_assumption": "The positivity of the single intensities nu_x=p-iota_x before main20.1 is deduced from the good-edge degree bound and the good-edge probability cap.",
+      "finding": "The already proved one-source conditional half-count and the pair-nullity cap rho(e)<=L/3+1 suffice, without any graph-degree bound. A finite weighted neighbor cover gives iota_x<=p_x*K times the actual dependent-target marginal mass. Uniform critical bounds with margin1/24 yield iota_x<=p_x*N^(-1/12) for every finite dyadic pair graph of positive nullity in this weak-rank class. For actual good edges, regular p_x is positive; outside the regular ground incidence is zero. Thus all original nominal single rates are strictly positive, uniformly over every real private-prime cutoff. This broadens the positivity criterion and does not improve the claimed final approximation rate or assert a manuscript error.",
+      "evidence": [
+        "PaperP1.IncidentPairMass.finite_bound",
+        "PaperP1.WeakPairIncidence.uniform_bound",
+        "PaperP1.WeakPairIncidence.good_single_rates_positive",
+        "PaperP1.WeakPairIncidence.good_target_isProbability",
+        "PaperP1.WeakPairIncidence.full_single_rates_positive",
+        "PaperP1.WeakPairIncidence.full_target_isProbability"
+      ],
+      "proposed_revision": "Replace the separate degree-based positivity step by the finite incident-mass inequality and the existing one-source half-count. State the relative estimate iota_x<=p_x*N^(-1/12) for arbitrary positive-nullity pair families with rho(e)<=L/3+1; then specialize to good edges and handle nonregular sites by their zero incidence.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13993 jobs); direct axiom audit passed for 11104 declarations using only propext, Classical.choice and Quot.sound; all 9638 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.71 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
