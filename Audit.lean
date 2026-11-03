@@ -4185,6 +4185,10 @@ import PaperP1
 #print axioms PaperP1.SourceIntegerPoints.host_point
 #print axioms PaperP1.SourceIntegerPoints.mem_box
 #print axioms PaperP1.SourceIntegerPoints.mem_curvePoints
+#print axioms PaperP1.SourcePairKernelComparison.local_rank_identity
+#print axioms PaperP1.SourcePairKernelComparison.complete_rank_eq_loss
+#print axioms PaperP1.SourcePairKernelComparison.loss_le_full
+#print axioms PaperP1.SourcePairKernelComparison.source_kernel_le_full_sum
 #print axioms PaperP1.SourceTranslationInterval.rational_interval_error
 #print axioms PaperP1.SourceTranslationInterval.ordered_bounds
 #print axioms PaperP1.SourceTranslationInterval.lower_le_upper
@@ -4923,6 +4927,7 @@ import PaperP1
 #print axioms PaperP1.DensePairActivityUnderInputs.dense_components
 #print axioms PaperP1.DensePairActivityUnderInputs.centered_host_bound
 #print axioms PaperP1.DensePairActivityUnderInputs.uniform_activity
+#print axioms PaperP1.DenseSourcePairKernelUnderInputs.uniform_source_kernel
 #print axioms PaperP1.DenseTargetCount.small_residual_exponent
 #print axioms PaperP1.DenseTargetCount.uniform_count
 #print axioms PaperP1.DenseTargetCount.mem_freshTargets
@@ -5446,6 +5451,9 @@ import PaperP1
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.tripleGap_lt_half
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.uniform_pair_probability
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.uniform_family_probability
+#print axioms PaperP1.NonalignedSourceResidualUnderInputs.uniform_weighted_hosts
+#print axioms PaperP1.NonalignedSourceResidualUnderInputs.uniform_source_bounds
+#print axioms PaperP1.NonalignedSourceResidualUnderInputs.article_3_2
 #print axioms PaperP1.NonalignedSurfaceSubpowerUnderInputs.uniform_subpower
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_block_mass
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_activity

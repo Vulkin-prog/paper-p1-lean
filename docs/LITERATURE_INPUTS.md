@@ -9830,3 +9830,59 @@ source bytes are preserved, and Palomar remains deferred.
 No new manuscript-conclusion error is confirmed.
 
 Verified under Lean v4.36.0-rc2: full build passed (12735 jobs); direct axiom audit passed for 9226 declarations using only propext, Classical.choice and Quot.sound; all 7283 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.35 GiB.
+
+
+## The literal full arithmetic rank and a stronger conditional residual
+
+The literal arithmetic rank in the manuscript is now connected
+explicitly to the full value-kernel bound. It is pairLoss=2L minus
+the dimension of the joint square-class image, INCLUDING local
+kernels, whereas the exact-marginal probabilistic development
+uses the effective relative nullity. A rank-nullity computation
+on the actual even-selection domains proves, for all x,y,L,
+pairLoss=finrank(completeRelationCode). The inclusion of that
+actual code in the raw value kernel then proves pairLoss<=fullRank.
+No regularity, positivity or independence premise is needed for
+these exact algebraic comparisons. T1.8's dense estimate is now
+specialized explicitly to the source's full arithmetic rank;
+the earlier full raw-kernel theorem was the stronger input.
+This closes a source-translation obligation, without an error
+in the manuscript or an identification of the two ranks.
+
+The weighted nonaligned residual in article Proposition 3.2
+is now proved under exactly the same explicit generic normalized
+curve and ordinary/chosen-source surface-cover properties.
+The proved exponent is 1+epsilon, improving the printed
+6/5+epsilon. This is recorded separately as P1-MATH-0113,
+a confirmed implication CONDITIONAL on those exact geometric
+properties; the external determinant and translation proofs
+remain unformalized. It is not an unconditional exponent claim.
+
+The proof removes the zero-pairLoss terms and partitions the
+actual remaining host set by whether c>=epsilon*(L+1)/16.
+The dense part has its already proved O(N^(1+epsilon/2))
+source-kernel weighted bound. In the sparse part, the actual
+raw kernel rank is at most the defective count plus c; the
+unconditional defect estimate and binary-power conversion
+bound each weight by N^(epsilon/4). The positive-pairLoss
+support is literally a subset of PairHostCover.hosts, whose
+stronger unconditional count is N^(1+epsilon/4). Multiplying
+and summing proves the improved weighted bound, with all
+constants and geometric caps fixed before the host data.
+Local kernels, zero compatibility, irregular windows, contacts
+and overlapping windows are all retained; no effective-rank
+replacement or supplied support/count estimate is used.
+
+NonalignedSourceResidualUnderInputs.uniform_source_bounds
+packages both separated support and weighted residual counts
+with exponent 1+epsilon. article_3_2 specializes these to both
+literal printed 6/5+epsilon conclusions. Hence main 3.2 moves
+to CONDITIONAL, not proved. T1.8 and main 3.4 remain conditional,
+main 3.3 and T1.7 remain in_progress, and proved numbered
+coverage stays 79/167. Confirmed improvements become 113,
+including the explicitly conditional improvement just stated.
+No manuscript conclusion error is confirmed. Original source
+bytes, compiler and dependencies are unchanged; Palomar remains
+deferred until completed coverage and actual input proofs.
+
+Verified under Lean v4.36.0-rc2: full build passed (12741 jobs); direct axiom audit passed for 9234 declarations using only propext, Classical.choice and Quot.sound; all 7292 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.33 GiB.

@@ -2094,3 +2094,6 @@ public import PaperP1.Combinatorics.PairSubfamilyWeights
 public import PaperP1.Asymptotics.DensePairActivityUnderInputs
 public import PaperP1.Asymptotics.PairProfilesUnderGeometricInputs
 public import PaperP1.Asymptotics.PrincipalEdgeRemainderUnderInputs
+public import PaperP1.Arithmetic.SourcePairKernelComparison
+public import PaperP1.Asymptotics.DenseSourcePairKernelUnderInputs
+public import PaperP1.Asymptotics.NonalignedSourceResidualUnderInputs
