@@ -2465,3 +2465,13 @@ public import PaperP1.Asymptotics.CoarseTriplePairSeedsUnderInputs
 public import PaperP1.Asymptotics.CoarseTripleFiniteReduction
 public import PaperP1.Asymptotics.CoarseConnectedTripleJointMassUnderInputs
 public import PaperP1.Asymptotics.CoarseConnectedTripleActivityUnderInputs
+public import PaperP1.Affine.SmallParticipatingConnected
+public import PaperP1.Model.CrossingPairTriple
+public import PaperP1.Model.DirectCrossingSeedFamilies
+public import PaperP1.Asymptotics.DirectCrossingSeedFamiliesUnderInputs
+public import PaperP1.Model.ConnectedSeedCover
+public import PaperP1.Asymptotics.VariableSeedMassPropagation
+public import PaperP1.Model.ConnectedSeedCatalog
+public import PaperP1.Asymptotics.CoarseConnectedParameters
+public import PaperP1.Asymptotics.ConnectedSeedCatalogUnderInputs
+public import PaperP1.Asymptotics.CoarseConnectedJointMassUnderInputs

@@ -296,6 +296,8 @@ import PaperP1
 #print axioms PaperP1.RetainedNullity.nullity_insert_le
 #print axioms PaperP1.RetainedNullity.span_pair
 #print axioms PaperP1.RetainedNullity.nullity_pair_eq_intersection
+#print axioms PaperP1.SmallParticipatingConnected.coordinate_relation
+#print axioms PaperP1.SmallParticipatingConnected.connected
 #print axioms PaperP1.Affine.pairVertexParityMap_coord
 #print axioms PaperP1.Affine.completeRelation_mem_largePrime
 #print axioms PaperP1.Affine.parity_zero_of_large_and_small
@@ -5211,6 +5213,8 @@ import PaperP1
 #print axioms PaperP1.ClassCodeFibres.pair_count
 #print axioms PaperP1.CoarseConnectedFourthUnderBCN.uniform_nonDirect_cost
 #print axioms PaperP1.CoarseConnectedFourthUnderBCN.uniform_cumulant_comparison
+#print axioms PaperP1.CoarseConnectedJointMassUnderInputs.uniform_range
+#print axioms PaperP1.CoarseConnectedJointMassUnderInputs.uniform_compatible_activity
 #print axioms PaperP1.CoarseConnectedTripleActivityUnderInputs.uniform_activity
 #print axioms PaperP1.CoarseConnectedTripleJointMass.uniform_nonaligned_mass
 #print axioms PaperP1.CoarseConnectedTripleJointMass.uniform_connected_mass
@@ -5313,6 +5317,7 @@ import PaperP1
 #print axioms PaperP1.ConnectedBlockCount.uniform_count
 #print axioms PaperP1.ConnectedFourthReductionUnderBCN.uniform_reduction
 #print axioms PaperP1.ConnectedIndependent256Budget.uniform_bound
+#print axioms PaperP1.ConnectedSeedCatalogUnderInputs.uniform_mass
 #print axioms PaperP1.ConnectedTripleLowCrossingUnderInputs.uniform_bound
 #print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_reduction
 #print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_absolute_error
@@ -5463,6 +5468,8 @@ import PaperP1
 #print axioms PaperP1.DirectCrossingExtensionsUnderInputs.uniform_extensions
 #print axioms PaperP1.DirectCrossingFamiliesUnderInputs.uniform_families
 #print axioms PaperP1.DirectCrossingPairSeedsUnderInputs.uniform_bound
+#print axioms PaperP1.DirectCrossingSeedFamiliesUnderInputs.uniform_seeds
+#print axioms PaperP1.DirectCrossingSeedFamiliesUnderInputs.uniform_extensions
 #print axioms PaperP1.DirectPairProductReductionUnderBCN.uniform_reduction
 #print axioms PaperP1.DisjointSquareEquations.combine
 #print axioms PaperP1.DisjointSquareEquations.single_equation
@@ -6724,6 +6731,7 @@ import PaperP1
 #print axioms PaperP1.UnorderedSeedMassPropagation.uniform_mass
 #print axioms PaperP1.ValueHeightHalfCount.article_10_1
 #print axioms PaperP1.ValueHeightHalfCount.uniform_logarithmic_count
+#print axioms PaperP1.VariableSeedMassPropagation.uniform_mass
 #print axioms PaperP1.VerySmallTail.moment_bound
 #print axioms PaperP1.VerySmallTail.power_threshold
 #print axioms PaperP1.VerySmallTail.companion_T19_6
@@ -8202,6 +8210,10 @@ import PaperP1
 #print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_joint_rank
 #print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_actual_probability
 #print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_probability_nullity
+#print axioms PaperP1.ConnectedSeedCatalog.cover
+#print axioms PaperP1.ConnectedSeedCatalog.family_data
+#print axioms PaperP1.ConnectedSeedCatalog.mass_bound
+#print axioms PaperP1.ConnectedSeedCover.cover
 #print axioms PaperP1.ConnectedSpanCrossing.cut
 #print axioms PaperP1.ConnectedSpanCrossing.exists_minimal
 #print axioms PaperP1.ConnectedTargetDependence.every_target
@@ -8248,6 +8260,9 @@ import PaperP1
 #print axioms PaperP1.CountVariance.count_memLp_two
 #print axioms PaperP1.CountVariance.variance_count
 #print axioms PaperP1.CountVariance.second_cumulant_variance
+#print axioms PaperP1.CrossingPairTriple.connected_of_participation
+#print axioms PaperP1.CrossingPairTriple.pair_extension
+#print axioms PaperP1.CrossingPairTriple.connected_positive
 #print axioms PaperP1.DenseAdmissiblePairSeeds.mem_targets
 #print axioms PaperP1.DenseAdmissiblePairSeeds.family_data
 #print axioms PaperP1.DenseAdmissiblePairSeeds.mass_bound
@@ -8267,6 +8282,9 @@ import PaperP1
 #print axioms PaperP1.DirectActiveEnvelope.expected_factorial
 #print axioms PaperP1.DirectActiveEnvelope.expected_power
 #print axioms PaperP1.DirectActiveEnvelope.tail_probability
+#print axioms PaperP1.DirectCrossingSeedFamilies.mem_targets
+#print axioms PaperP1.DirectCrossingSeedFamilies.family_data
+#print axioms PaperP1.DirectCrossingSeedFamilies.mass_bound
 #print axioms PaperP1.DirectCrossingTargets.union_family
 #print axioms PaperP1.DirectCrossingTargets.data
 #print axioms PaperP1.DirectCrossingTargets.weight_bound
