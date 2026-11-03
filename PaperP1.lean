@@ -2090,3 +2090,6 @@ public import PaperP1.Arithmetic.RawPairRelationRank
 public import PaperP1.Arithmetic.TwoWindowComponentSizeBudget
 public import PaperP1.Asymptotics.CriticalPairKernelPowers
 public import PaperP1.Asymptotics.DenseWeightedSectorUnderInputs
+public import PaperP1.Combinatorics.PairSubfamilyWeights
+public import PaperP1.Asymptotics.DensePairActivityUnderInputs
+public import PaperP1.Asymptotics.PairProfilesUnderGeometricInputs

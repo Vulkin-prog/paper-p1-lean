@@ -4919,6 +4919,10 @@ import PaperP1
 #print axioms PaperP1.DenseNonalignedProfileReduction.dense_data
 #print axioms PaperP1.DenseNonalignedProfileReduction.nonaligned_activity_bound
 #print axioms PaperP1.DenseNonalignedProfileReduction.uniform_bound
+#print axioms PaperP1.DensePairActivityUnderInputs.nonaligned_host
+#print axioms PaperP1.DensePairActivityUnderInputs.dense_components
+#print axioms PaperP1.DensePairActivityUnderInputs.centered_host_bound
+#print axioms PaperP1.DensePairActivityUnderInputs.uniform_activity
 #print axioms PaperP1.DenseTargetCount.small_residual_exponent
 #print axioms PaperP1.DenseTargetCount.uniform_count
 #print axioms PaperP1.DenseTargetCount.mem_freshTargets
@@ -5520,6 +5524,7 @@ import PaperP1
 #print axioms PaperP1.PairActivityUnderBCN.uniform_conversion
 #print axioms PaperP1.PairHostIndependentMass.finite_mass_cap
 #print axioms PaperP1.PairHostIndependentMass.uniform_mass
+#print axioms PaperP1.PairProfilesUnderGeometricInputs.uniform_profiles
 #print axioms PaperP1.PhysicalTargetTripleMass.hosts_card
 #print axioms PaperP1.PhysicalTargetTripleMass.host_data
 #print axioms PaperP1.PhysicalTargetTripleMass.source_mem_hosts
@@ -6441,6 +6446,8 @@ import PaperP1
 #print axioms PaperP1.PairDecompositions.map_constant_on_pairs
 #print axioms PaperP1.PairDecompositions.nonzero_image_card_drop
 #print axioms PaperP1.PairFinpartition.eq_of_pair_refinement
+#print axioms PaperP1.PairSubfamilyWeights.mem_hosts
+#print axioms PaperP1.PairSubfamilyWeights.weighted_sum
 #print axioms PaperP1.PhysicalLabelSupportCount.preimage_eq_biUnion
 #print axioms PaperP1.PhysicalLabelSupportCount.preimage_card
 #print axioms PaperP1.PhysicalLabelSupportCount.lift_cover

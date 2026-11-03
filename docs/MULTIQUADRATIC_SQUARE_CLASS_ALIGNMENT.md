@@ -3247,3 +3247,55 @@ is deferred. Original manuscript bytes are unchanged and no
 manuscript-conclusion error is newly confirmed.
 
 Verified under Lean v4.36.0-rc2: full build passed (12727 jobs); direct axiom audit passed for 9215 declarations using only propext, Classical.choice and Quot.sound; all 7271 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.38 GiB.
+
+
+## Actual second-cumulant and two-channel approximations under the geometric inputs
+
+The conditional geometric graph bounds are now connected to
+the actual infinite-model second factorial cumulant. The dense
+nonaligned coefficient family used by the existing pair-profile
+reduction has absolute activity <=N^(-1+epsilon), uniformly in
+the critical window, under the same explicit generic curve and
+ordinary/chosen-source cover properties. Every actual pair in
+this family has positive joint mass and relative nullity >L/10.
+Raw-kernel domination and the unconditional defect bound imply
+an actual nontrivial-component population >=(L+1)/100. Thus the
+proved weighted graph sector applies to the precise family
+remaining in the probabilistic reduction, not an assumed count.
+
+A new exact finite identity converts any selected family of
+two-element subsets to its actual ordered pair hosts, giving
+exactly twice the original weighted sum. Literal source
+nonalignment is recovered in both orientations from exclusion
+of the actual aligned family. The compatible centered-moment
+bound, positive exact marginals, dyadic marginal cap, full
+kernel domination and finite weighted sum give the stated
+dense-activity rate. No compatibility probability, marginal,
+rank, host count or dense-activity estimate is supplied as an
+extra theorem premise. All are recovered from the existing
+actual model and membership in its defined dense family.
+
+PairProfilesUnderGeometricInputs.uniform_profiles then proves
+both |kappa2-2*beta|<=N^(-4/5+epsilon) and the exact two-channel
+approximation with mainTerm(2,3)+mainTerm(3,4), for the actual
+second factorial cumulant of the full dyadic count. Fixed
+threshold multipliers satisfy the original 8*(L+1)<=H<=D*(L+1)
+scope. The nonaligned dense remainder is completely eliminated
+in these two conditional conclusions. The already proved aligned,
+weak, irregular, diagonal and channel comparison estimates
+supply all other terms, with explicit epsilon absorption.
+
+The exact unproved inputs remain solely the generic normalized
+curve and the two distinct surface-cover properties, at the
+fixed dimensions/caps exposed before the hosts. In particular
+this composition does not add a BCN or target-profile argument.
+The raw positive/signed relation-count displays and the full
+phase-asymptotic alignment in article Theorem 3.3 are not newly
+claimed complete. That row stays in_progress. T1.8 remains
+conditional; T1.7 and the whole project remain incomplete.
+Proved numbered coverage stays 79/167 and confirmed improvements
+stay 112. No source bytes, compiler or dependencies are changed;
+Palomar remains deferred and no manuscript-conclusion error is
+newly confirmed.
+
+Verified under Lean v4.36.0-rc2: full build passed (12733 jobs); direct axiom audit passed for 9222 declarations using only propext, Classical.choice and Quot.sound; all 7279 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.36 GiB.
