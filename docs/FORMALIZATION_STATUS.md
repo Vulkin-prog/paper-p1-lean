@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **9161 audited theorem/lemma declarations**. This
+- The project currently has **9183 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -9812,3 +9812,55 @@ This verifies the source's nonalignment alternative and introduces
 no new confirmed manuscript-conclusion error or source change.
 
 Verified under Lean v4.36.0-rc2: full build passed (12705 jobs); direct axiom audit passed for 9161 declarations using only propext, Classical.choice and Quot.sound; all 7203 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.45 GiB.
+
+
+## The actual general graph half-power consequence
+
+The first actual graph consequence of companion T1.7 is now
+proved under exactly the generic normalized curve-count and
+chosen-source uniform surface-cover properties. For every fixed
+eta,epsilon>0, actual dyadic pairs with literal source nonalignment
+and at least eta*(L+1) nontrivial unpinned components have
+O(N^(1/2+epsilon)) hosts. The graph and component count are the
+paper's actual arithmetic objects. The theorem even includes
+overlapping physical windows; the two indexed copies of their
+vertices are retained throughout. No component, polynomial
+system, degree lower bound or target host count is assumed.
+
+The construction enumerates bounded root subsets on BOTH sides,
+including unequal positive sizes. Its exact finite pool consists
+of two families of bounded offset sets and one family of actual
+small-prime supports. Elementary Chebyshev bounds already proved
+in the project give N^epsilon patterns, and the product of each
+actual support has uniform polynomial coefficient height. No
+prime-number theorem or smooth-number asymptotic is added.
+The general nonaligned per-system estimate is summed over this
+pool, with an explicit split of the epsilon margin.
+
+Every actual nontrivial unpinned component meets both window
+copies. Its two literal offset sets have total cardinality equal
+to its vertex count; distinct components give disjoint root sets.
+The product of the component labels has odd-prime support below
+10*(L+1), and its actual squarefree prescription gives an integer
+root for the corresponding equation. A chosen finite family of
+components therefore constructs every pattern and root witness
+required by the uniform smooth-system theorem.
+
+For a population c>=eta*(L+1), the actual disjoint-vertex budget
+and size cap ceil(4/eta) give at least eta*(L+1)/2 small components.
+The logarithmic critical window eventually supplies any fixed
+required number k. The fixed system size, chosen homogeneous
+embedding degree, coefficient and pattern bounds all precede the
+hosts and component choices. The final graph count is obtained
+internally by injective host conversion and finite covering.
+
+The first and degree-(a,1) graph consequences are thus composed
+from the actual arithmetic graph under their respective explicit
+geometric properties. The primary determinant theorems and their
+translation/lifting statements remain unproved arguments; the
+full T1.7 statement and later weighted sectors are not declared
+complete. Coverage remains 79/167, confirmed improvements remain
+112 and Palomar is deferred. No source bytes are changed and no
+new error in a manuscript conclusion is confirmed.
+
+Verified under Lean v4.36.0-rc2: full build passed (12715 jobs); direct axiom audit passed for 9183 declarations using only propext, Classical.choice and Quot.sound; all 7235 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.42 GiB.

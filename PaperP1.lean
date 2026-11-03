@@ -2079,3 +2079,8 @@ public import PaperP1.Geometry.SourceIntegerNonalignedCurvePoint
 public import PaperP1.Asymptotics.SourceCurvePointCoverDegreeBound
 public import PaperP1.Asymptotics.GeneralNonalignedSourceHalfPowerUnderInputs
 public import PaperP1.Asymptotics.GeneralNonalignedRootHostCount
+public import PaperP1.Arithmetic.GeneralSplitRadicalPatternPool
+public import PaperP1.Asymptotics.CriticalGeneralRootPatterns
+public import PaperP1.Asymptotics.SmoothGeneralNonalignedHostCount
+public import PaperP1.Asymptotics.GeneralTwoBlockComponentHostData
+public import PaperP1.Asymptotics.GeneralGraphHostCount

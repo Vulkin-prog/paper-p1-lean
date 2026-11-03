@@ -3008,6 +3008,14 @@ import PaperP1
 #print axioms PaperP1.GeneralBranchingExceptions.card_le_half
 #print axioms PaperP1.GeneralRootSystemData.length
 #print axioms PaperP1.GeneralRootSystemData.get
+#print axioms PaperP1.GeneralSplitRadicalPatternPool.mem_pool
+#print axioms PaperP1.GeneralSplitRadicalPatternPool.offset_card_bound
+#print axioms PaperP1.GeneralSplitRadicalPatternPool.code_card
+#print axioms PaperP1.GeneralSplitRadicalPatternPool.coefficient_pos
+#print axioms PaperP1.GeneralSplitRadicalPatternPool.coefficient_natAbs
+#print axioms PaperP1.GeneralSplitRadicalPatternPool.coefficient_le_four_pow
+#print axioms PaperP1.GeneralSplitRadicalPatternPool.left_bound
+#print axioms PaperP1.GeneralSplitRadicalPatternPool.right_bound
 #print axioms PaperP1.GeometricAlignedTargetData.scaled_offset_bound
 #print axioms PaperP1.GeometricAlignedTargetData.reduced_affine_data
 #print axioms PaperP1.GeometricAlignedTargetData.bounded_height
@@ -4838,6 +4846,10 @@ import PaperP1
 #print axioms PaperP1.CriticalCurveRationalOddExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalCurveRationalOddExclusion.eventually_even_degree
 #print axioms PaperP1.CriticalDisjointEquationGraphExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalGeneralRootPatterns.uniform_offsets
+#print axioms PaperP1.CriticalGeneralRootPatterns.uniform_codes
+#print axioms PaperP1.CriticalGeneralRootPatterns.uniform_pool
+#print axioms PaperP1.CriticalGeneralRootPatterns.uniform_coefficient_height
 #print axioms PaperP1.CriticalGridGraphExclusion.bound_le_power
 #print axioms PaperP1.CriticalGridGraphExclusion.cutoff_lt_scale
 #print axioms PaperP1.CriticalGridGraphExclusion.eventually_no_dyadic_point
@@ -5129,6 +5141,11 @@ import PaperP1
 #print axioms PaperP1.GeneralBranchingTheorem.reindexed_windows
 #print axioms PaperP1.GeneralBranchingTheorem.dilation_conclusion
 #print axioms PaperP1.GeneralBranchingTheorem.companion_T1_15
+#print axioms PaperP1.GeneralGraphHostCount.mem_components
+#print axioms PaperP1.GeneralGraphHostCount.exists_system_of_components
+#print axioms PaperP1.GeneralGraphHostCount.uniform_hosts
+#print axioms PaperP1.GeneralGraphHostCount.small_density
+#print axioms PaperP1.GeneralGraphHostCount.uniform_dense_hosts
 #print axioms PaperP1.GeneralNonalignedRootHostCount.uniform_hosts
 #print axioms PaperP1.GeneralNonalignedRootHostCount.uniform_hosts_of_many
 #print axioms PaperP1.GeneralNonalignedRootHostCount.source_uniform_hosts_of_many
@@ -5137,6 +5154,10 @@ import PaperP1
 #print axioms PaperP1.GeneralRootHostCount.uniform_hosts
 #print axioms PaperP1.GeneralRootHostCount.uniform_hosts_of_many
 #print axioms PaperP1.GeneralSourceHalfPowerUnderInputs.uniform_hosts
+#print axioms PaperP1.GeneralTwoBlockComponentHostData.offsets_nonempty
+#print axioms PaperP1.GeneralTwoBlockComponentHostData.total_card
+#print axioms PaperP1.GeneralTwoBlockComponentHostData.square_roots
+#print axioms PaperP1.GeneralTwoBlockComponentHostData.exists_pattern
 #print axioms PaperP1.GeneralWindowBranching.finite_conclusion
 #print axioms PaperP1.GeneralWindowBranching.logarithmic_windows
 #print axioms PaperP1.GeneralWindowBranching.bounded_height_windows
@@ -5781,6 +5802,7 @@ import PaperP1
 #print axioms PaperP1.SmallRankLossPower.low_sum_bound
 #print axioms PaperP1.SmoothCertificateCount.uniform_count
 #print axioms PaperP1.SmoothDegreeOneHostCount.uniform_hosts
+#print axioms PaperP1.SmoothGeneralNonalignedHostCount.uniform_hosts
 #print axioms PaperP1.SmoothSelectionCertificates.value_bounds
 #print axioms PaperP1.SmoothSelectionCertificates.square_budget
 #print axioms PaperP1.SmoothSelectionCertificates.product_budget
