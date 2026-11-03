@@ -7815,3 +7815,40 @@ deferred. Original manuscript bytes and pinned dependencies are
 unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12551 jobs, direct axiom audit of 8964 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6924 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.77 GiB.
+
+
+## Actual inverse homogenization and ordinary/source quotient chart isomorphism
+
+The actual ordinary and weighted radical equations are proved
+to define exactly the same quotient after Z=1. The two defining
+ideals plus the literal ideal (Z-1) are equal. The forward weighted
+substitution is the identity after every Z=1 ring evaluation.
+
+The literal inverse homogenization sends each base variable V
+to Z^(D-1)*V and leaves each radical variable unchanged. It sends
+ordinary homogeneous degree n to weighted degree D*n. Composing
+with the forward substitution multiplies an actual homogeneous
+ordinary polynomial by Z^((D-1)*n). The inverse homogenization
+is also the identity after every Z=1 evaluation.
+
+For every actual homogeneous ordinary ideal containing the radical
+relations, its induced source quotient and its ordinary quotient
+now have an explicitly constructed isomorphism of their actual
+Z-coordinate charts. The map is the actual coordinate map on
+dehomogenized elements; its inverse is built from the literal
+inverse homogenization. Injectivity clears powers of Z using the
+actual quotient-to-ordinary injection. No primality, domain,
+dimension, curve-height, Hilbert or nonzero-coordinate premise
+is required for this chart isomorphism. It includes nonreduced
+quotients and empty charts.
+
+This strengthens the ordinary-to-source identification supporting
+P1-MATH-0112. It does not yet prove equality of ambient prime
+heights: the full localized ambient-ring comparison and its prime
+height transport remain to be established. The geometric linear
+Hilbert identification and external uniform counting inputs also
+remain open. T1.7 stays in_progress; numbered coverage stays
+79/167, confirmed improvements stay 112 and Palomar is deferred.
+Original manuscript bytes and pinned dependencies are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12559 jobs, direct axiom audit of 8986 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6961 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.76 GiB.

@@ -2002,3 +2002,7 @@ public import PaperP1.Asymptotics.CriticalSourceCurveCoverExclusion
 public import PaperP1.Geometry.OrdinaryCurveMultiplicityComparison
 public import PaperP1.Geometry.OrdinaryCurveHostImage
 public import PaperP1.Asymptotics.CriticalOrdinaryCurveExclusion
+public import PaperP1.Algebra.WeightedOrdinaryAffineIdeal
+public import PaperP1.Algebra.OrdinaryWeightedHomogenization
+public import PaperP1.Algebra.GradedInjectiveChartMap
+public import PaperP1.Geometry.OrdinaryCurveAffineChart
