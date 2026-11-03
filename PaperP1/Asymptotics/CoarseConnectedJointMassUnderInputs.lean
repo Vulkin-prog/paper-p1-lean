@@ -14,11 +14,11 @@ namespace PaperP1.CoarseConnectedJointMassUnderInputs
 open Finset PaperP1.Model PaperP1.Model.InfiniteStarts PaperP1.ConnectedWindowFamilies
   PaperP1.CoarseConnectedParameters
 
-theorem uniform_range (R : ℕ) (C ε : ℝ) (hε : 0 < ε) :
+theorem uniform_catalog_extensions (R : ℕ) (C ε : ℝ) (hε : 0 < ε) :
     ∃ p : Parameters R, Hypotheses p (ε / 4) → ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
       |(L : ℝ) - Real.log N / Real.log 2| ≤ C → ∀ r : ℕ, 3 ≤ r → r ≤ R →
       ∀ G : Finset ℕ, G ⊆ dyadicBlock N → ∀ F : Finset (Finset ℕ),
-      F ⊆ connectedFamilies G L r →
+      (∀ I ∈ F, I ⊆ G ∧ I.card = r ∧ ∃ D ∈ ConnectedSeedCatalog.families G L R, D ⊆ I) →
       (∑ I ∈ F, infiniteJointMoment L I) ≤ (N : ℝ) ^ (-1 + ε) := by
   classical
   obtain ⟨p, hp⟩ := ConnectedSeedCatalogUnderInputs.uniform_mass R C (ε / 4) (by positivity)
@@ -43,9 +43,7 @@ theorem uniform_range (R : ℕ) (C ε : ℝ) (hε : 0 < ε) :
     exact ⟨hd.1.trans hG, by omega, hcard⟩
   have htarget (I : Finset ℕ) (hI : I ∈ F) :
       I ⊆ dyadicBlock N ∧ I.card = r ∧ ∃ D ∈ S, D ⊆ I := by
-    obtain ⟨hIG, hconn⟩ := mem_filter.mp (hF hI)
-    obtain ⟨hsub, hcard⟩ := mem_powersetCard.mp hIG
-    obtain ⟨D, hD, hDI⟩ := ConnectedSeedCatalog.cover G L R I hsub (by omega) (by omega) hconn
+    obtain ⟨hsub, hcard, D, hD, hDI⟩ := hF I hI
     exact ⟨hsub.trans hG, hcard, D, mem_filter.mpr ⟨hD, by have h := card_le_card hDI; omega⟩, hDI⟩
   have hseed : (∑ D ∈ S, infiniteJointMoment L D) ≤ (N : ℝ) ^ (-1 + ε / 4) :=
     (sum_le_sum_of_subset_of_nonneg (filter_subset _ _) (fun D _ _ ↦ infiniteJointMoment_nonneg L D)).trans
@@ -66,6 +64,26 @@ theorem uniform_range (R : ℕ) (C ε : ℝ) (hε : 0 < ε) :
       convert hf N (by omega) using 1
       congr 1
       ring
+
+theorem uniform_range (R : ℕ) (C ε : ℝ) (hε : 0 < ε) :
+    ∃ p : Parameters R, Hypotheses p (ε / 4) → ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
+      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → ∀ r : ℕ, 3 ≤ r → r ≤ R →
+      ∀ G : Finset ℕ, G ⊆ dyadicBlock N → ∀ F : Finset (Finset ℕ),
+      F ⊆ connectedFamilies G L r →
+      (∑ I ∈ F, infiniteJointMoment L I) ≤ (N : ℝ) ^ (-1 + ε) := by
+  classical
+  obtain ⟨p, hp⟩ := uniform_catalog_extensions R C ε hε
+  refine ⟨p, ?_⟩
+  intro hgeo
+  obtain ⟨N₀, hN₀, h⟩ := hp hgeo
+  refine ⟨N₀, hN₀, ?_⟩
+  intro N hN L hband r hthree hcap G hG F hF
+  apply h N hN L hband r hthree hcap G hG F
+  intro I hI
+  obtain ⟨hIG, hconn⟩ := mem_filter.mp (hF hI)
+  obtain ⟨hsub, hcard⟩ := mem_powersetCard.mp hIG
+  obtain ⟨D, hD, hDI⟩ := ConnectedSeedCatalog.cover G L R I hsub (by omega) (by omega) hconn
+  exact ⟨hsub, hcard, D, hD, hDI⟩
 
 theorem uniform_compatible_activity (R : ℕ) (C ε : ℝ) (hε : 0 < ε) :
     ∃ p : Parameters R, Hypotheses p (ε / 8) → ∃ N₀ : ℕ, 10 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**135 mathematical improvements are confirmed; no error in a manuscript conclusion
+**136 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -13474,3 +13474,120 @@ axiom, dependency download, Paper C port, manuscript-byte edit
 or Palomar action is added.
 
 Verified under Lean v4.36.0-rc2: full build passed (13501 jobs); direct axiom audit passed for 10367 declarations using only propext, Classical.choice and Quot.sound; all 8723 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.95 GiB.
+
+
+## P1-MATH-0136 — Complete connected tail at power83/60 with coarse positive fixed-order inputs
+
+The ENTIRE connected tail in main15.12 improves from
+N^(-4/3+epsilon) to N^(-83/60+epsilon), with the same fixed cutoff256,
+true compatible-nullity cap2L, fixed positive weight and every
+K_N=o(L), under the same three finite geometric properties.
+The source's already available low-rank83/60 budget is preserved
+when combined with the now proved3/2 large-core and small-core
+budgets, instead of weakening the combined result to4/3.
+Moreover the small-core proof needs only the coarse ACTUAL connected
+joint rate1 at fixed orders, not the sharper4/3 centered proposition
+15.10. Every canonical component has size>=2 because the compatible
+ten-core ratio forces a nonzero centered coefficient. A component
+of size>=3 contains a seed from the completed positive catalog;
+otherwise two direct canonical pairs supply a controlled four-window
+seed. The same positive propagation thus bounds the full actual
+small-core joint mass by N^(-1+epsilon). Apply the independently
+proved all-cardinality complement deficit N^(-1/2+epsilon) DIRECTLY
+to q(D), and keep the already proved exact pair-core branch. This
+avoids both a sharp primitive-four dependency and a separate estimate
+for incompatible fixed higher-centered activity. Those stronger
+fixed-order tasks remain open and are not implicitly asserted.
+
+
+## Completion of both15.12 clauses and stronger connected tail
+
+Main15.12 is now COMPLETE CONDITIONALLY on the SAME existing
+finite geometric properties: its entire growing-order connected
+clause and its all-cardinality primitive clause are both proved.
+The connected clause has the stronger exponent83/60 instead of4/3;
+the primitive clause retains its previously proved UNCONDITIONAL
+stronger exponent7/5. Finding136 records the full connected
+improvement, distinct from the earlier primitive improvement133.
+Unconditional numbered coverage remains87/167; conditional results
+increase from20 to21. Confirmed improvements increase135 to136.
+
+The connected theorem includes EVERY actual dyadic subground,
+fixed positive cardinality weightu, every finite actual connected
+population with256<card(I)<=K(N), and true compatible nullity
+rho*(I)<=2L. K(N)/log(N)->0 is selected before the common critical
+threshold; in the critical band this is the source's K_N=o(L).
+The primitive assertion sums every size>256 with NO upper cutoff;
+its stronger existing version also includes size256. All marginals,
+zero probabilities and incompatible centered coefficients are actual.
+No good-source, private-prime, separated or regular-only replacement
+is made to the connected population.
+
+DirectBlockDisjoint proves distinct parts of a genuine direct
+partition have disjoint effective sum-spaces, using injectivity
+of block addition and two single-coordinate tuples. No finite-
+dimensional ambient assumption is needed. NoSingletonSeedCover
+transfers this to actual canonical component images. Any family
+with at least3 vertices and no singleton canonical components
+contains a controlled connected seed: either a connected component
+of size>=3 contains a seed from the completed catalog, or two
+actual canonical pair components form a zero-intersection low
+pair-pair seed. The pair components are genuinely dependent and
+their actual spaces are direct, with no assumed factorization cost.
+
+The previously proved connected joint-range theorem is strengthened
+by exposing uniform_catalog_extensions for ALL actual families
+containing catalog seeds. Its older uniform_range and compatible
+activity statements remain unchanged. NoSingletonJointMassUnderInputs
+therefore proves actual joint mass N^(-1+epsilon) for ALL fixed
+orders3..R without singleton components. Its weighted version
+sums every size3..R simultaneously, absorbing only fixed powers
+and the true finite cardinality-fiber constant. Its finite geometric
+bundle is the SAME CoarseConnectedParameters bundle; it does not
+assume any desired mass, count or activity conclusion.
+
+SmallCoreJointMassUnderInputs applies this to the actual compatible
+ten-cores of sizes3..255. The PROVED ratio q(D)<=2c(D) makes their
+centered coefficient nonzero, so their canonical components cannot
+be singleton. Their ENTIRE weighted actual joint mass is consequently
+N^(-1+epsilon), even when the core is disconnected. This avoids any
+need for a sharp fixed higher-centered estimate or for assuming the
+full4/3 proposition15.10. Applying the completed UNCONDITIONAL
+all-cardinality independent deficit directly to q(D), not to a
+surrogate centered activity, proves their actual source-deficit
+mass is N^(-3/2+epsilon). The source cap is255 before all actual cores.
+
+SmallCoreSourceMassUnderInputs combines this with the ALREADY PROVED
+size-two core branch and the EXACT two/at-least-three source split.
+Thus the WHOLE small compatible-core sourceMass has rate3/2.
+The exact chosen-core finite cover and retained rank under the
+sublogarithmic cardinality cap prove the entire high-rank, small-core
+connected branch at rate3/2, uniformly in its actual growing orders.
+No enumeration of peeling orders or growing factorial cost is added.
+
+ConnectedTailUnderInputs.uniform_tail now covers the ENTIRE connected
+population by low compatible nullity, a large chosen core, and the
+remaining high-rank small core. The three PROVED rates are respectively
+83/60,3/2 and3/2. Positive actual union bounds and fixed-factor
+absorption retain83/60 for their full sum. The low and large-core
+branches are unconditional; only the small-core arithmetic uses
+the SAME recorded chosen-source surface, ordinary surface and
+normalized curve properties, in explicit FINITE parameter bundles.
+The final coarse bundle margin isepsilon/64; the pair source caps
+are sizeCap((epsilon/128)/128) and sizeCap((epsilon/128)/4096).
+Every geometric parameter precedes one N-threshold uniform in
+critical lengths, grounds, all orders and all actual families.
+
+ConnectedTailUnderInputs.article_15_12 weakens83/60 to the printed
+4/3 and combines it with the separately proved literal all-cardinality
+primitive assertion under the same threshold, proving BOTH clauses
+of the numbered source proposition. No desired connected or primitive
+bound is supplied as an external input. The three geometric literature
+properties remain ordinary explicit arguments and are NOT axioms or
+claimed internally proved. Main15.10's sharper fixed4/3 assertion,
+including primitive-four sharpness and incompatible higher activity,
+remains open; it is not needed for this completed tail proof. No
+new literature property, dependency download, Paper C port, original
+manuscript-byte edit or Palomar action is added.
+
+Verified under Lean v4.36.0-rc2: full build passed (13513 jobs); direct axiom audit passed for 10381 declarations using only propext, Classical.choice and Quot.sound; all 8737 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.92 GiB.

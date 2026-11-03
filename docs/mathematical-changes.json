@@ -9946,6 +9946,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "b12df97528e9b90e7e55a24e8da6f8db95206667"
+    },
+    {
+      "id": "P1-MATH-0136",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:uniform-tail",
+        "number": "15.12",
+        "page": 47,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 776,
+        "statement_sha256": "6bb3d1cfe69419dcebe52240716af3886d4eb7f3b4a0f8dd9b3eed81c7e552bd"
+      },
+      "original_assumption": "The connected clause of15.12 is stated at power4/3. Its small-core proof cites the sharper fixed connected-activity proposition15.10 and the arithmetic triple bound to obtain a coarse N^(-1+eta) core activity.",
+      "finding": "The ENTIRE connected tail in main15.12 improves from\nN^(-4/3+epsilon) to N^(-83/60+epsilon), with the same fixed cutoff256,\ntrue compatible-nullity cap2L, fixed positive weight and every\nK_N=o(L), under the same three finite geometric properties.\nThe source's already available low-rank83/60 budget is preserved\nwhen combined with the now proved3/2 large-core and small-core\nbudgets, instead of weakening the combined result to4/3.\nMoreover the small-core proof needs only the coarse ACTUAL connected\njoint rate1 at fixed orders, not the sharper4/3 centered proposition\n15.10. Every canonical component has size>=2 because the compatible\nten-core ratio forces a nonzero centered coefficient. A component\nof size>=3 contains a seed from the completed positive catalog;\notherwise two direct canonical pairs supply a controlled four-window\nseed. The same positive propagation thus bounds the full actual\nsmall-core joint mass by N^(-1+epsilon). Apply the independently\nproved all-cardinality complement deficit N^(-1/2+epsilon) DIRECTLY\nto q(D), and keep the already proved exact pair-core branch. This\navoids both a sharp primitive-four dependency and a separate estimate\nfor incompatible fixed higher-centered activity. Those stronger\nfixed-order tasks remain open and are not implicitly asserted.",
+      "impact": "Completes BOTH clauses of15.12 conditionally; the connected exponent strengthens to83/60 under unchanged hypotheses and a larger actual dyadic ground scope. Its proof no longer depends on the uncompleted sharp fixed-order4/3 activity theorem. The primitive7/5 improvement remains independently unconditional.",
+      "proposed_revision": "State the connected tail with exponent83/60. For compatible cores of sizes3..255, use their nonzero centered coefficient to exclude singleton canonical components, cover by the actual positive connected/pair-pair seed catalog, prove joint mass at rate1, and apply the independent deficit directly to q(D). Combine its3/2 rate with the large-core3/2 rate and preserve the low-rank83/60 rate. Retain the sublogarithmic cardinality cap and compatible-nullity cap2L.",
+      "evidence": [
+        "PaperP1.NoSingletonSeedCover.cover",
+        "PaperP1.NoSingletonJointMassUnderInputs.uniform_weighted",
+        "PaperP1.SmallCoreJointMassUnderInputs.uniform_source",
+        "PaperP1.SmallCoreSourceMassUnderInputs.uniform_source",
+        "PaperP1.SmallCoreSourceMassUnderInputs.uniform_families",
+        "PaperP1.ConnectedTailUnderInputs.uniform_tail",
+        "PaperP1.ConnectedTailUnderInputs.article_15_12",
+        "PaperP1.Primitive256Tail.uniform_actual"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13513 jobs); direct axiom audit passed for 10381 declarations using only propext, Classical.choice and Quot.sound; all 8737 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.92 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

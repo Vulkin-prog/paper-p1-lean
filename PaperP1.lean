@@ -2475,3 +2475,9 @@ public import PaperP1.Model.ConnectedSeedCatalog
 public import PaperP1.Asymptotics.CoarseConnectedParameters
 public import PaperP1.Asymptotics.ConnectedSeedCatalogUnderInputs
 public import PaperP1.Asymptotics.CoarseConnectedJointMassUnderInputs
+public import PaperP1.Affine.DirectBlockDisjoint
+public import PaperP1.Model.NoSingletonSeedCover
+public import PaperP1.Asymptotics.NoSingletonJointMassUnderInputs
+public import PaperP1.Asymptotics.SmallCoreJointMassUnderInputs
+public import PaperP1.Asymptotics.SmallCoreSourceMassUnderInputs
+public import PaperP1.Asymptotics.ConnectedTailUnderInputs

@@ -71,6 +71,9 @@ import PaperP1
 #print axioms PaperP1.Affine.conditionalAffineMass_zero_or_pow
 #print axioms PaperP1.Affine.conditionalAffineMass_nominal_of_kernel_zero
 #print axioms PaperP1.ConnectedRelations.coordinate_relation
+#print axioms PaperP1.DirectBlockDisjoint.single_addition
+#print axioms PaperP1.DirectBlockDisjoint.pairwise_disjoint
+#print axioms PaperP1.DirectBlockDisjoint.partition_parts
 #print axioms PaperP1.Affine.blockSpace_eq_iSup
 #print axioms PaperP1.Affine.blockTotals_apply
 #print axioms PaperP1.Affine.blockTotals_total_sum
@@ -5213,6 +5216,7 @@ import PaperP1
 #print axioms PaperP1.ClassCodeFibres.pair_count
 #print axioms PaperP1.CoarseConnectedFourthUnderBCN.uniform_nonDirect_cost
 #print axioms PaperP1.CoarseConnectedFourthUnderBCN.uniform_cumulant_comparison
+#print axioms PaperP1.CoarseConnectedJointMassUnderInputs.uniform_catalog_extensions
 #print axioms PaperP1.CoarseConnectedJointMassUnderInputs.uniform_range
 #print axioms PaperP1.CoarseConnectedJointMassUnderInputs.uniform_compatible_activity
 #print axioms PaperP1.CoarseConnectedTripleActivityUnderInputs.uniform_activity
@@ -5318,6 +5322,8 @@ import PaperP1
 #print axioms PaperP1.ConnectedFourthReductionUnderBCN.uniform_reduction
 #print axioms PaperP1.ConnectedIndependent256Budget.uniform_bound
 #print axioms PaperP1.ConnectedSeedCatalogUnderInputs.uniform_mass
+#print axioms PaperP1.ConnectedTailUnderInputs.uniform_tail
+#print axioms PaperP1.ConnectedTailUnderInputs.article_15_12
 #print axioms PaperP1.ConnectedTripleLowCrossingUnderInputs.uniform_bound
 #print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_reduction
 #print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_absolute_error
@@ -6038,6 +6044,8 @@ import PaperP1
 #print axioms PaperP1.NearLinearThreshold.scale_bound_eventually
 #print axioms PaperP1.NearLinearThreshold.window_bound_eventually
 #print axioms PaperP1.NearLinearThreshold.threshold_ge_power
+#print axioms PaperP1.NoSingletonJointMassUnderInputs.uniform_range
+#print axioms PaperP1.NoSingletonJointMassUnderInputs.uniform_weighted
 #print axioms PaperP1.NonalignedActivityUnderBCN.uniform_bound
 #print axioms PaperP1.NonalignedDyadicRootHostCount.uniform_hosts
 #print axioms PaperP1.NonalignedDyadicRootHostCount.source_admissible
@@ -6515,8 +6523,12 @@ import PaperP1
 #print axioms PaperP1.SignedSourceProfileUnderInputs.uniform_all_ordered
 #print axioms PaperP1.SmallCoreDeficitReduction.uniform_source
 #print axioms PaperP1.SmallCoreDeficitReduction.growing_range_reduction
+#print axioms PaperP1.SmallCoreJointMassUnderInputs.uniform_mass
+#print axioms PaperP1.SmallCoreJointMassUnderInputs.uniform_source
 #print axioms PaperP1.SmallCorePairMassUnderInputs.uniform_pair_source
 #print axioms PaperP1.SmallCorePairMassUnderInputs.uniform_pair_families
+#print axioms PaperP1.SmallCoreSourceMassUnderInputs.uniform_source
+#print axioms PaperP1.SmallCoreSourceMassUnderInputs.uniform_families
 #print axioms PaperP1.SmallKernelBlockCount.logarithmic_blocks
 #print axioms PaperP1.SmallKernelBlockCount.arbitrary_selected_blocks
 #print axioms PaperP1.SmallKernelLcmGrowth.product_budget
@@ -8704,6 +8716,8 @@ import PaperP1
 #print axioms PaperP1.Model.MultiplicativeMoments.finite_product_mean
 #print axioms PaperP1.Model.MultiplicativeMoments.finite_even_moment
 #print axioms PaperP1.Model.MultiplicativeMoments.infinite_even_moment
+#print axioms PaperP1.NoSingletonSeedCover.distinct_blocks
+#print axioms PaperP1.NoSingletonSeedCover.cover
 #print axioms PaperP1.NonalignedActivityHostCap.ordered_data
 #print axioms PaperP1.NonalignedActivityHostCap.nonzero_cover
 #print axioms PaperP1.NonalignedActivityHostCap.finite_bound
