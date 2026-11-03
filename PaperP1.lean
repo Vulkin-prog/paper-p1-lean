@@ -1992,3 +1992,10 @@ public import PaperP1.Arithmetic.IntegerCurveLift
 public import PaperP1.Arithmetic.IntegerCurveFieldEquiv
 public import PaperP1.Arithmetic.RationalCurveRadicalTransport
 public import PaperP1.Asymptotics.CriticalRationalPlaneCoverExclusion
+public import PaperP1.Algebra.HomogeneousAffinePrincipalChart
+public import PaperP1.Algebra.HomogeneousAffineDegree
+public import PaperP1.Geometry.ProjChartRadicalCover
+public import PaperP1.Geometry.SourceCurveAffineRadicalCover
+public import PaperP1.Geometry.SourceCurveHostChart
+public import PaperP1.Geometry.SourceProjectiveCurveBoundedDegree
+public import PaperP1.Asymptotics.CriticalSourceCurveCoverExclusion

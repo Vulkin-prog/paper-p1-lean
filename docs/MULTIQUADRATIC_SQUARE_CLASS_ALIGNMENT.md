@@ -2386,3 +2386,57 @@ stays 79/167, confirmed improvements stay 112 and Palomar remains
 deferred. Original manuscript bytes and pins are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12531 jobs, direct axiom audit of 8941 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6896 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.82 GiB.
+
+
+## Actual homogeneous charts, constructed projective field covers and source-curve exclusion
+
+The alternative Step 5--6 exclusion is now proved on the actual
+projective radical source, with no supplied affine presentation,
+extension field, cover-degree bound or literal radical roots.
+For a homogeneous irreducible plane equation, its actual nonempty
+Z-chart quotient is constructed and proved a domain. Its literal
+affine specialization is nonzero and irreducible. Both actual
+affine partial degrees are bounded by the homogeneous degree;
+the proof uses the actual coefficient specialization and variable
+swap, with no coefficient-height hypothesis.
+
+A generic finite graded projection and actual chart equivalence
+construct a finite extension of the actual chart fraction field.
+The extension carrier is the actual projective source function
+field. Its degree is proved equal to the actual graded module
+rank, and the supplied homogeneous quadratic relations construct
+the literal roots in that field. Applying this to the actual
+source prime quotient and actual native Veronese chart transports
+every actual radical polynomial to the actual affine curve
+quotient, not merely its abstract square class.
+
+For an actual height-one projective source point with Hilbert
+multiplicity at most D*E, its own irreducible homogeneous plane
+equation is extracted and its plane degree and actual source cover
+rank are at most E. Actual containment of the affine image ideal
+in the host evaluation kernel proves the Z-chart nonempty, the
+extracted equation not at infinity, and the literal affine host
+equation. Thus all hypotheses of the rational-plane radical-cover
+exclusion are derived from the actual source data.
+
+The final theorem chooses a single critical-band threshold before
+the actual radical-source equations and nonzero integer
+coefficients, D, offsets, projective point, curve-height proof,
+Hilbert bound, offset family degree and integer host. It excludes
+all admissible comparable hosts on every actual height-one source
+curve of Hilbert multiplicity <=D*E when k>=4(E+1)^2. Constant-
+coordinate images and all finite cover degrees are included.
+No genus, Riemann--Hurwitz, assumed graph, supplied affine equation,
+supplied field presentation, assumed cover rank or supplied radical
+root is a premise of this final actual-source statement.
+
+This extends P1-MATH-0111 and P1-MATH-0112. The ordinary geometric
+curve-to-height-one/Hilbert identification and the external uniform
+surface and curve point counts remain open. The ordinary quotient
+comparison has already been proved separately, and its final host
+and multiplicity composition with this source theorem remains to
+be completed. T1.7 stays in_progress; numbered coverage stays 79/167,
+confirmed improvements stay 112 and Palomar remains deferred.
+Original manuscript bytes and compiler/dependency pins are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12545 jobs, direct axiom audit of 8960 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6920 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.79 GiB.

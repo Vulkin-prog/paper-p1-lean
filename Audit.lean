@@ -935,12 +935,23 @@ import PaperP1
 #print axioms PaperP1.GreedyShortKernel.independent_family
 #print axioms PaperP1.GreedyShortKernel.sparse_subspace_basis
 #print axioms PaperP1.GreedyShortKernel.physical_subspace_basis
+#print axioms PaperP1.HomogeneousAffineDegree.degreeY_le
+#print axioms PaperP1.HomogeneousAffineDegree.specialization_swap
+#print axioms PaperP1.HomogeneousAffineDegree.degreeX_le
+#print axioms PaperP1.HomogeneousAffineDegree.partial_degrees_le
 #print axioms PaperP1.HomogeneousAffineLineClassification.specialization_C
 #print axioms PaperP1.HomogeneousAffineLineClassification.specialization_Y
 #print axioms PaperP1.HomogeneousAffineLineClassification.specialization_X
 #print axioms PaperP1.HomogeneousAffineLineClassification.specialization_linear
 #print axioms PaperP1.HomogeneousAffineLineClassification.coefficients_nonzero
 #print axioms PaperP1.HomogeneousAffineLineClassification.classify
+#print axioms PaperP1.HomogeneousAffinePrincipalChart.chartCoordinate_mem
+#print axioms PaperP1.HomogeneousAffinePrincipalChart.chartCoordinate_ne_zero
+#print axioms PaperP1.HomogeneousAffinePrincipalChart.chartIdeal_eq
+#print axioms PaperP1.HomogeneousAffinePrincipalChart.chart_isDomain
+#print axioms PaperP1.HomogeneousAffinePrincipalChart.affineQuotient_isDomain
+#print axioms PaperP1.HomogeneousAffinePrincipalChart.specialization_ne_zero
+#print axioms PaperP1.HomogeneousAffinePrincipalChart.affine_irreducible
 #print axioms PaperP1.HomogeneousChartCoefficientQuotient.chart_surjective
 #print axioms PaperP1.HomogeneousChartCoefficientQuotient.chart_ker
 #print axioms PaperP1.HomogeneousChartCoefficientQuotient.coefficientQuotientEquiv_mk
@@ -4737,6 +4748,7 @@ import PaperP1
 #print axioms PaperP1.CriticalRationalSquareGraphExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalRationalSquareGraphExclusion.squares_of_odd_extension
 #print axioms PaperP1.CriticalRationalSquareGraphExclusion.eventually_no_dyadic_point_of_odd_extension
+#print axioms PaperP1.CriticalSourceCurveCoverExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalWindowGeometry.uniform_geometry
 #print axioms PaperP1.CriticalWindowGeometry.log_base_lower
 #print axioms PaperP1.DenseNonalignedProfileReduction.dense_data
@@ -6662,6 +6674,7 @@ import PaperP1
 #print axioms PaperP1.ProjChartFunctionFieldNaturality.chartMap_natural
 #print axioms PaperP1.ProjChartFunctionFieldTransport.equiv_chartMap
 #print axioms PaperP1.ProjChartFunctionFieldTransport.isSquare_iff
+#print axioms PaperP1.ProjChartRadicalCover.exists_cover
 #print axioms PaperP1.ProjDegreeScalingCharts.inclusion_comp_map
 #print axioms PaperP1.ProjDegreeScalingCharts.awayToSection_comp_appLE
 #print axioms PaperP1.ProjDegreeScalingCharts.chart_comp_map
@@ -6713,6 +6726,8 @@ import PaperP1
 #print axioms PaperP1.ProjSurjectiveClosedImmersion.restriction_closedImmersion
 #print axioms PaperP1.ProjSurjectiveClosedImmersion.map_closedImmersion
 #print axioms PaperP1.SourceAffineCurveDegreeBound.multiplicity_ge_twoD
+#print axioms PaperP1.SourceCurveAffineRadicalCover.chartEquiv_radicand
+#print axioms PaperP1.SourceCurveAffineRadicalCover.exists_cover
 #print axioms PaperP1.SourceCurveEmbeddingCoordinates.evaluation_surjective
 #print axioms PaperP1.SourceCurveEmbeddingCoordinates.evaluation_commutes
 #print axioms PaperP1.SourceCurveEmbeddingCoordinates.kernel_eq
@@ -6724,6 +6739,9 @@ import PaperP1
 #print axioms PaperP1.SourceCurveHeightOneDegree.exists_degree_formula
 #print axioms PaperP1.SourceCurveHeightOneDegree.exists_polynomial_of_source_height
 #print axioms PaperP1.SourceCurveHeightOneDegree.exists_degree_formula_of_source_height
+#print axioms PaperP1.SourceCurveHostChart.coordinate_ne_zero
+#print axioms PaperP1.SourceCurveHostChart.not_infinity
+#print axioms PaperP1.SourceCurveHostChart.affine_point
 #print axioms PaperP1.SourceCurvePlaneEquationDegree.multiplicity
 #print axioms PaperP1.SourceCurvePlaneImageEquation.exists_equation
 #print axioms PaperP1.SourceCurvePlaneImagePrime.ideal_prime
@@ -6768,6 +6786,7 @@ import PaperP1
 #print axioms PaperP1.SourceProjectiveAffineField.sourceEquiv_chartMap
 #print axioms PaperP1.SourceProjectiveAffineFieldCompatibility.chart_dehomogenization_natural
 #print axioms PaperP1.SourceProjectiveAffineFieldCompatibility.equiv_comp_map
+#print axioms PaperP1.SourceProjectiveCurveBoundedDegree.exists_bounded_equation
 #print axioms PaperP1.SourceProjectiveCurveDegree.exists_polynomial
 #print axioms PaperP1.SourceProjectiveCurveDegree.exists_degree_formula
 #print axioms PaperP1.SourceProjectiveCurveEmbeddingHilbert.piece_finrank
