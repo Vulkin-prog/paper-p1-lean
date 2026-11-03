@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **7882 audited theorem/lemma declarations**. This
+- The project currently has **7911 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -7074,3 +7074,53 @@ and confirmed improvements stay 105. No external estimate, dependency
 download, source-byte modification or Palomar registration is introduced.
 
 Verified with Lean v4.36.0-rc2: full lake build (11401 jobs), actual Audit.lean kernel-axiom audit (7882 declarations; only propext, Classical.choice, Quot.sound), all 5599 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.37 GiB.
+
+
+## The literal homogenized split-radical coordinate domain
+
+The underlying coordinate algebra of the actual homogenized
+split-radical presentation in Step 2 of companion T1.7 is now proved
+to be a domain. Over every characteristic-zero field F, take the
+literal polynomial ring F[Z][X][Y] and actual radicands
+  c_i*Z^(e_i)*product_(a in I_i)(X+a*Z)*product_(b in J_i)(Y+b*Z).
+The coefficients c_i are arbitrary nonzero elements, the integer
+root lists are pairwise disjoint in each coordinate, and at least
+one list in each equation is nonempty. The literal quadratic tower
+is finite free of rank 2^k over this three-variable base. Its domain
+property is proved internally for arbitrary natural e_i, and hence
+includes the source exponents e_i=2D-|I_i|-|J_i|. No point-height
+or coefficient-smoothness premise enters this algebraic assertion.
+
+The proof first extends the nonsquare split-word lemmas from integer
+roots to arbitrary finite sets of distinct field roots. These
+supporting nonsquare and finite-product independence statements hold
+over any field; the subsequent actual quadratic-field construction
+uses characteristic zero as before. Nonempty disjoint selections
+have nonsquare product, and their actual generic tower is proved
+to be a field of degree 2^k. No Kummer or field-degree assertion
+is assumed as an input.
+
+For the homogenized system, an explicit injective coefficient map
+F[Z]->F(Z) is lifted through both polynomial coordinates. If z is
+the actual nonzero fraction-field image of Z, the source root lists
+become the literal finite sets {a*z:a in I_i} and {b*z:b in J_i}.
+Their disjointness is proved using the injectivity of a->a*z in
+characteristic zero. The mapped coefficient is c_i*z^(e_i), proved
+nonzero. Every actual radicand and the complete equation list are
+proved to map to these exact scaled root words. Passing to the
+fraction field F(Z)(X,Y) gives the internally constructed generic
+field. The recursive tower base-change map is faithful, proving
+that the original homogenized coordinate algebra is a domain.
+
+This provides the literal integral algebra underlying the source
+weighted presentation, including over an algebraically closed base.
+The formal grading, the explicit Z=1 specialization, generation of
+the D-th Veronese algebra, the projective embedding and cover-degree
+and curve-degree identities remain open. The surface coverings and
+two-variable host counts also remain open. T1.7 stays in_progress,
+numbered coverage stays 79/167 and confirmed improvements stay 105.
+These are checked source-algebra foundations with no new improvement
+identifier. No external input, dependency download, original-source
+change or Palomar registration is introduced.
+
+Verified with Lean v4.36.0-rc2: full lake build (11409 jobs), actual Audit.lean kernel-axiom audit (7911 declarations; only propext, Classical.choice, Quot.sound), all 5628 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.36 GiB.

@@ -1719,3 +1719,7 @@ public import PaperP1.Algebra.SquareLineMatching
 public import PaperP1.Arithmetic.SelectedProportionalPairs
 public import PaperP1.Arithmetic.SplitRadicalLineObstruction
 public import PaperP1.Algebra.SplitRadicalLineMap
+public import PaperP1.Algebra.FiniteRootWordSquares
+public import PaperP1.Algebra.FiniteRootWordField
+public import PaperP1.Algebra.HomogeneousSplitRadicalData
+public import PaperP1.Algebra.HomogeneousSplitRadicalAlgebra
