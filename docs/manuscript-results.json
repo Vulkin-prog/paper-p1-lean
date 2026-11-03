@@ -13174,7 +13174,8 @@
           "notes": ""
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (12863 jobs); direct axiom audit passed for 9482 declarations using only propext, Classical.choice and Quot.sound; all 7597 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.40 GiB."
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (12863 jobs); direct axiom audit passed for 9482 declarations using only propext, Classical.choice and Quot.sound; all 7597 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.40 GiB.",
+      "validation_commit": "c7bb44193ab0abfaf6159bf1ccbb168f76ce7b9d"
     },
     {
       "label": "p1:uniform:full-support",
