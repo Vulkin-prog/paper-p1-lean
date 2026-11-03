@@ -2449,3 +2449,9 @@ public import PaperP1.Asymptotics.StrongAlignedDenseJointMass
 public import PaperP1.Asymptotics.StrongAlignedDensePairCount
 public import PaperP1.Asymptotics.StrongAlignedUnitChannels
 public import PaperP1.Model.DensePairCrossingSeeds
+public import PaperP1.Affine.ProperPairCrossing
+public import PaperP1.Combinatorics.RestrictedSingletonPairCover
+public import PaperP1.Model.ConnectedTripleLowCrossing
+public import PaperP1.Asymptotics.ConnectedTripleLowCrossingUnderInputs
+public import PaperP1.Asymptotics.IsolatedVertexDenseTripleMassUnderInputs
+public import PaperP1.Asymptotics.IsolatedVertexTripleMassUnderInputs

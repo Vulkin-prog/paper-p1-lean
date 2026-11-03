@@ -238,6 +238,7 @@ import PaperP1
 #print axioms PaperP1.ProjectionDensity.mean_phi_rpow_root
 #print axioms PaperP1.ProjectionDensity.mean_phi_character
 #print axioms PaperP1.ProjectionHolder.projected_count_holder
+#print axioms PaperP1.ProperPairCrossing.proper_direct
 #print axioms PaperP1.Affine.uniformSolutionMass_eq_card_ratio
 #print axioms PaperP1.Affine.uniformSolutionMass_eq_ite
 #print axioms PaperP1.Affine.uniformSolutionMass_of_compatible
@@ -5307,6 +5308,7 @@ import PaperP1
 #print axioms PaperP1.ConnectedBlockCount.uniform_count
 #print axioms PaperP1.ConnectedFourthReductionUnderBCN.uniform_reduction
 #print axioms PaperP1.ConnectedIndependent256Budget.uniform_bound
+#print axioms PaperP1.ConnectedTripleLowCrossingUnderInputs.uniform_bound
 #print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_reduction
 #print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_absolute_error
 #print axioms PaperP1.ContactDefectBudget.defect_count
@@ -5830,6 +5832,8 @@ import PaperP1
 #print axioms PaperP1.IrregularSeedMass.affine_sum
 #print axioms PaperP1.IrregularSeedMass.seed_family
 #print axioms PaperP1.IrregularSeedMass.seed_coordinates
+#print axioms PaperP1.IsolatedVertexDenseTripleMassUnderInputs.uniform_mass
+#print axioms PaperP1.IsolatedVertexTripleMassUnderInputs.uniform_mass
 #print axioms PaperP1.JointFamilyProbabilityUnderBCN.maximalTripleProbability_nonneg
 #print axioms PaperP1.JointFamilyProbabilityUnderBCN.triple_probability_le_maximum
 #print axioms PaperP1.JointFamilyProbabilityUnderBCN.uniform_pair_probability
@@ -7367,6 +7371,9 @@ import PaperP1
 #print axioms PaperP1.ReplicaWeightedCover.weighted_cover
 #print axioms PaperP1.RestrictedSeedComplements.fiber_bound
 #print axioms PaperP1.RestrictedSeedComplements.cover_bound
+#print axioms PaperP1.RestrictedSingletonPairCover.mem_fibers
+#print axioms PaperP1.RestrictedSingletonPairCover.weighted_cover
+#print axioms PaperP1.RestrictedSingletonPairCover.erase_source
 #print axioms PaperP1.RetainedFamilyEnumeration.retained_split
 #print axioms PaperP1.RetainedFamilyEnumeration.direct_disjoint_compressed
 #print axioms PaperP1.RetainedFamilyEnumeration.compressed_pair_unique
@@ -8187,6 +8194,8 @@ import PaperP1
 #print axioms PaperP1.ConnectedSpanCrossing.cut
 #print axioms PaperP1.ConnectedSpanCrossing.exists_minimal
 #print axioms PaperP1.ConnectedTargetDependence.every_target
+#print axioms PaperP1.ConnectedTripleLowCrossing.pointwise
+#print axioms PaperP1.ConnectedTripleLowCrossing.finite_bound
 #print axioms PaperP1.ConnectedTriplePositiveReduction.pair_cost
 #print axioms PaperP1.ConnectedTriplePositiveReduction.finite_bound
 #print axioms PaperP1.ConnectedTriplePositiveReduction.signed_error
