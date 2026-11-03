@@ -6427,3 +6427,55 @@ conclusion error has been confirmed. Palomar remains deferred.
 Original manuscript sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12115 jobs, direct axiom audit of 8213 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 5949 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.64 GiB.
+
+
+## Actual projective charts and function fields match the literal affine system
+
+The actual native and source Z-charts are now identified with the
+literal affine rings in the manuscript. The native chart is the
+polynomial plane F[X][X]. The source chart is the actual iterated
+quadratic algebra with radicands c_i prod(X+a) prod(Y+b), indexed by
+the original finite list. Scheme isomorphisms identify the actual
+basic-open subschemes with the spectra of these rings.
+
+The construction first proves, for any graded commutative coefficient
+algebra and positive D, that its rescaled Veronese chart at b^D is
+isomorphic to the original homogeneous chart at b. The literal map
+uses dehomogenization and the quotient by b^D-1; its injectivity and
+surjectivity are proved by clearing powers of b. No domain hypothesis
+is used, and rings with zero divisors are included.
+
+For the quadratic tower, coefficient specialization is proved
+surjective when the base specialization is surjective, with kernel
+exactly the extended base kernel. Specializing the homogenizing
+variable to one has exactly the principal kernel (Z-1), both in the
+coefficient ring and in the actual source coordinate quotient.
+This produces the affine chart isomorphism without assuming a
+geometric identification. The actual base variables and radical
+generators are proved to map to their literal affine counterparts.
+These ring and chart computations allow any coefficient field and
+zero coefficients, under the explicit radicand identities and degree
+bound used to construct the grading.
+
+Under the separate existing source-integrality hypotheses, the
+canonical scheme function fields are now explicitly isomorphic to
+F(X,Y) and the affine generic split-radical tower. The proof uses the
+canonical chart-to-generic-stalk map and its actual fraction-field
+property, together with the previously verified affine generic tower
+fraction-field theorem. The actual projective function-field map
+commutes with these two explicit isomorphisms and the literal base
+field inclusion. Naturality is proved on dehomogenized chart elements
+and extended to the full fields by the localization universal property.
+This closes the previously open affine generic-tower identification.
+
+The native target's global projective-plane identification, the
+comparison of the chosen graded presentation with the explicit
+projective embedding and hyperplane bundle, the curve-degree
+projection formula and the external surface/curve host counts remain
+open. The source Hilbert multiplicity 2^k D^2, finite-flat rank 2^k
+and actual function-field degree 2^k remain previously checked facts.
+T1.7 remains in_progress, numbered coverage remains 79/167, confirmed
+improvements remain 107 and Palomar remains deferred. Original
+manuscript sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12143 jobs, direct axiom audit of 8258 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6010 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.60 GiB.

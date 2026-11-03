@@ -1791,3 +1791,17 @@ public import PaperP1.Algebra.StandardVeroneseHilbert
 public import PaperP1.Algebra.StandardVeronesePieceBasis
 public import PaperP1.Algebra.WeightedVeroneseHilbertPolynomial
 public import PaperP1.Algebra.WeightedVeronesePieceIndex
+public import PaperP1.Algebra.GradedVeroneseChart
+public import PaperP1.Algebra.GradedVeroneseChartEquiv
+public import PaperP1.Algebra.HomogeneousChartCoefficientQuotient
+public import PaperP1.Algebra.HomogeneousSourceSpecialization
+public import PaperP1.Algebra.NativeAffineChart
+public import PaperP1.Algebra.QuadraticTowerQuotient
+public import PaperP1.Algebra.SourceAffineChart
+public import PaperP1.Algebra.SourceAffineChartCoordinates
+public import PaperP1.Algebra.VeroneseCoordinateCharts
+public import PaperP1.Geometry.ProjAffineFieldEquiv
+public import PaperP1.Geometry.ProjChartDehomogenizationNaturality
+public import PaperP1.Geometry.SourceProjectiveAffineCharts
+public import PaperP1.Geometry.SourceProjectiveAffineField
+public import PaperP1.Geometry.SourceProjectiveAffineFieldCompatibility
