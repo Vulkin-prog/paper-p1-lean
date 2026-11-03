@@ -4800,6 +4800,12 @@ import PaperP1
 #print axioms PaperP1.CriticalRationalSquareGraphExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalRationalSquareGraphExclusion.squares_of_odd_extension
 #print axioms PaperP1.CriticalRationalSquareGraphExclusion.eventually_no_dyadic_point_of_odd_extension
+#print axioms PaperP1.CriticalRepeatedLeftAllCoverExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalRepeatedLeftCurveExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalRepeatedLeftDegreeGap.eventually_degree_gt
+#print axioms PaperP1.CriticalRepeatedLeftPointCover.eventually_finite_cover_bound
+#print axioms PaperP1.CriticalRepeatedLeftRationalExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalRepeatedLeftSourceExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalSourceCurveCoverExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalWindowGeometry.uniform_geometry
 #print axioms PaperP1.CriticalWindowGeometry.log_base_lower
@@ -5587,6 +5593,8 @@ import PaperP1
 #print axioms PaperP1.RelativeBlockRelationsCount.induction_step
 #print axioms PaperP1.RelativeBlockRelationsCount.uniform_count
 #print axioms PaperP1.RelaxedSaturationDegrees.relaxed_neighborhood_bounds
+#print axioms PaperP1.RepeatedLeftDyadicRootHostCount.uniform_hosts
+#print axioms PaperP1.RepeatedLeftSurfaceSubpowerUnderInputs.uniform_subpower
 #print axioms PaperP1.RepeatedRunCost.mean_bound
 #print axioms PaperP1.RepeatedRunCost.finite_bound
 #print axioms PaperP1.RepeatedRunCost.uniform_bound
@@ -6489,6 +6497,7 @@ import PaperP1
 #print axioms PaperP1.BivariateGridCount.homogeneous_integer_box_bound
 #print axioms PaperP1.CurveCommonQuotientBound.integral_point
 #print axioms PaperP1.CurveCoverGraphBound.integral_point
+#print axioms PaperP1.CurveCoverRepeatedLeftBound.integral_point
 #print axioms PaperP1.DisjointCommonQuotientBound.integral_point
 #print axioms PaperP1.DisjointEquationGraphBound.integral_point
 #print axioms PaperP1.DisjointEquationGraphDescent.integral_point
@@ -6517,6 +6526,7 @@ import PaperP1
 #print axioms PaperP1.PellInput.exists_squarefree_reduction
 #print axioms PaperP1.PellInput.hasAtMostSolutionsReal_of_squarefree_reduction
 #print axioms PaperP1.GridPolynomialGraphBound.integral_point
+#print axioms PaperP1.GridRationalGraphAlternative.integral_point
 #print axioms PaperP1.GridRationalGraphBound.integral_point
 #print axioms PaperP1.GridRationalGraphBound.bound_le_polynomial
 #print axioms PaperP1.GridRationalGraphDescent.integral_point

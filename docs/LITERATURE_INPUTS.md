@@ -9098,3 +9098,47 @@ confirmed improvements remain 112 and Palomar is deferred.
 Original manuscript bytes and pinned dependencies are unchanged.
 
 Verified under Lean v4.36.0-rc2: full build passed (12599 jobs); direct axiom audit passed for 9043 declarations using only propext, Classical.choice and Quot.sound; all 7039 distinct ledger/evidence declaration references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.68 GiB.
+
+
+## Repeated left offsets remove host independence from the conditional count
+
+For every fixed left size a>=2, the literal degree-(a,1)
+coefficient-uniform N^epsilon host bound now requires no actual
+square-class independence or direct-sum hypothesis on the host.
+The two explicit unproved uniform geometric properties remain
+arguments, with precisely the same quantifier order and scope.
+
+The strengthened terminal graph argument first proves an
+independence-free alternative: an integral point on a reduced
+rational graph selected by a bounded offset grid either has the
+existing offset-only bound, or the entire rational graph is an
+actual affine line. For the latter alternative, one good family
+contains two distinct left roots with the same right root.
+Their affine equations force slope zero. The actual host would
+then satisfy Y+j=0, contrary to positivity. Neither the actual
+left even-selection map nor the actual left/right class spaces
+is used in this contradiction.
+
+This repeated-left argument is composed through the actual
+integer and rational plane covers, including constant-coordinate
+images, the actual projective source curve, ambient prime height,
+ordinary Hilbert multiplicity and the simultaneous ordinary
+degree gap. It then supplies the actual finite curve-cover count,
+conditional surface point count and literal integer-root host
+count with admissibility consisting only of the dyadic bounds
+and positivity of the selected values. The proof covers even
+finite radical-cover degrees and arbitrary nonzero integer
+coefficients of bounded polynomial height. It does not assume
+coefficient smoothness or include pattern enumeration.
+
+This recovers the independence-free per-system scope needed
+for the a>=2 part of the second graph consequence in T1.7.
+The a=1 case with geometric nonalignment, the general half-power
+bound, smooth coefficient-pattern enumeration and the two
+external uniform geometric proofs remain open. T1.7 stays
+in_progress; numbered coverage remains 79/167 and confirmed
+mathematical improvements remain 112. This is a proof improvement,
+not a confirmed manuscript-conclusion error. Palomar is deferred;
+the original manuscript bytes and pinned dependencies are unchanged.
+
+Verified under Lean v4.36.0-rc2: full build passed (12619 jobs); direct axiom audit passed for 9053 declarations using only propext, Classical.choice and Quot.sound; all 7051 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.64 GiB.
