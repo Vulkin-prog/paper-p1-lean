@@ -2247,3 +2247,7 @@ public import PaperP1.Asymptotics.TwoTargetSingletonClassData
 public import PaperP1.Arithmetic.CompressedAlignmentSymmetry
 public import PaperP1.Asymptotics.TwoTargetNonalignedSingletonCount
 public import PaperP1.Asymptotics.TwoTargetNonalignedUpperCount
+public import PaperP1.Asymptotics.TwoTargetNonalignedRankWeight
+public import PaperP1.Asymptotics.TwoTargetNonalignedMass
+public import PaperP1.Arithmetic.TwoTargetDensePairs
+public import PaperP1.Asymptotics.TwoTargetNonalignedMassTheorem

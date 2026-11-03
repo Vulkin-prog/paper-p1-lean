@@ -4716,6 +4716,8 @@ import PaperP1
 #print axioms PaperP1.TwoTargetCodeLift.coordinate_pullback
 #print axioms PaperP1.TwoTargetCodeLift.injective_of_target
 #print axioms PaperP1.TwoTargetCodeLift.to_code_injective
+#print axioms PaperP1.TwoTargetDensePairs.deficit_eq_kernel
+#print axioms PaperP1.TwoTargetDensePairs.mem_pairs
 #print axioms PaperP1.TwoTargetIntrinsicClassCoefficients.source_cover_card
 #print axioms PaperP1.TwoTargetIntrinsicClassCoefficients.kernel_in_pool
 #print axioms PaperP1.TwoTargetLabelDimension.dimension_le_labels
@@ -6358,7 +6360,10 @@ import PaperP1
 #print axioms PaperP1.TwoTargetMixedClassData.exists_pattern
 #print axioms PaperP1.TwoTargetMixedClassData.uniform_patterns
 #print axioms PaperP1.TwoTargetNonalignedDenseCount.uniform_pairs
+#print axioms PaperP1.TwoTargetNonalignedMass.uniform_mass
+#print axioms PaperP1.TwoTargetNonalignedMassTheorem.article_15_2_nonaligned
 #print axioms PaperP1.TwoTargetNonalignedMixedCount.uniform_hosts
+#print axioms PaperP1.TwoTargetNonalignedRankWeight.uniform_weight
 #print axioms PaperP1.TwoTargetNonalignedSingletonCount.uniform_hosts
 #print axioms PaperP1.TwoTargetNonalignedUpperCount.uniform_pairs
 #print axioms PaperP1.TwoTargetPhysicalEnumeration.uniform_enumeration
