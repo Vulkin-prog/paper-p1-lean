@@ -2285,3 +2285,15 @@ public import PaperP1.Combinatorics.TwoTargetFamilyCover
 public import PaperP1.Model.TwoTargetPrimitiveData
 public import PaperP1.Asymptotics.TwoTargetPrimitiveExtensions
 public import PaperP1.Asymptotics.SourceRestrictedDenseMass
+public import PaperP1.Asymptotics.LogarithmicSourceCoefficientCount
+public import PaperP1.Asymptotics.LogarithmicCoefficientPatterns
+public import PaperP1.Asymptotics.LogarithmicUnivariateCount
+public import PaperP1.Affine.IntersectionKernelLift
+public import PaperP1.Arithmetic.OneTargetPhysicalLift
+public import PaperP1.Arithmetic.OneTargetPhysicalRegularization
+public import PaperP1.Asymptotics.OneTargetClassSystem
+public import PaperP1.Asymptotics.OneTargetLogDenseCount
+public import PaperP1.Arithmetic.BoundedWidthWindows
+public import PaperP1.Asymptotics.BoundedWidthDenseCount
+public import PaperP1.Arithmetic.CompressedTargetCenters
+public import PaperP1.Asymptotics.DenseCompressedTargetCount

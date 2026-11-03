@@ -156,6 +156,9 @@ import PaperP1
 #print axioms PaperP1.Affine.relationSignedSum_eq_one_of_injective
 #print axioms PaperP1.Affine.uniformSolutionMass_of_injective_relationMap
 #print axioms PaperP1.Affine.uniformSolutionMass_of_full_effective_rank
+#print axioms PaperP1.IntersectionKernelLift.left_projection
+#print axioms PaperP1.IntersectionKernelLift.right_projection
+#print axioms PaperP1.IntersectionKernelLift.left_projection_injective
 #print axioms PaperP1.Affine.subfamilyExtend_has_preimage
 #print axioms PaperP1.Affine.subfamilyKernelExtend_has_preimage
 #print axioms PaperP1.Affine.erasedKernelToFull_surjective
@@ -2417,6 +2420,10 @@ import PaperP1
 #print axioms PaperP1.BoundedPointAlignment.ordered_alignment
 #print axioms PaperP1.BoundedPointAlignment.alignment_of_cross
 #print axioms PaperP1.BoundedPointAlignment.source_alignment
+#print axioms PaperP1.BoundedWidthWindows.values_subset
+#print axioms PaperP1.BoundedWidthWindows.space_le_window
+#print axioms PaperP1.BoundedWidthWindows.window_space_mono
+#print axioms PaperP1.BoundedWidthWindows.center_injective_on
 #print axioms PaperP1.BranchingExceptional.badStarts_subset
 #print axioms PaperP1.BranchingExceptional.retained_card_le_one
 #print axioms PaperP1.BranchingExceptional.twice_badStarts_card_le
@@ -2654,6 +2661,10 @@ import PaperP1
 #print axioms PaperP1.CompressedSourceBlocks.space_eq
 #print axioms PaperP1.CompressedTargetAlignment.of_geometric
 #print axioms PaperP1.CompressedTargetAlignment.bounded_data
+#print axioms PaperP1.CompressedTargetCenters.mem_dense_centers
+#print axioms PaperP1.CompressedTargetCenters.block_width
+#print axioms PaperP1.CompressedTargetCenters.center_bounds
+#print axioms PaperP1.CompressedTargetCenters.actual_pair_mem
 #print axioms PaperP1.CompressionRank.private_local_ranks
 #print axioms PaperP1.CompressionRank.dependent_two_units
 #print axioms PaperP1.CompressionRank.units_intersection_nonempty
@@ -3612,6 +3623,10 @@ import PaperP1
 #print axioms PaperP1.OldValuePrimeBudget.oldPrimes_log_sum_le
 #print axioms PaperP1.OldValuePrimeBudget.primePool_log_sum_le
 #print axioms PaperP1.OldValuePrimeBudget.raw_primePool_log_sum_le
+#print axioms PaperP1.OneTargetPhysicalLift.exists_lift
+#print axioms PaperP1.OneTargetPhysicalRegularization.dimension_le_labels
+#print axioms PaperP1.OneTargetPhysicalRegularization.zero_projection_offsets
+#print axioms PaperP1.OneTargetPhysicalRegularization.uniform_subspace
 #print axioms PaperP1.OrdinaryIntegerPoints.evaluation_X
 #print axioms PaperP1.OrdinaryIntegerPoints.host_lift
 #print axioms PaperP1.OrdinaryIntegerPoints.lift_Z
@@ -5046,6 +5061,7 @@ import PaperP1
 #print axioms PaperP1.BoundedObservationPool.pool_count_logarithmic
 #print axioms PaperP1.BoundedSecondMomentUnderBCN.seedConstant_gt_one
 #print axioms PaperP1.BoundedSecondMomentUnderBCN.uniform_bound
+#print axioms PaperP1.BoundedWidthDenseCount.uniform_count
 #print axioms PaperP1.ChannelMainTermAlgebra.main_term_scale
 #print axioms PaperP1.ChannelMainTermBounds.coefficient_pos
 #print axioms PaperP1.ChannelMainTermBounds.constants_pos
@@ -5280,6 +5296,8 @@ import PaperP1
 #print axioms PaperP1.DegreeOneRootHostCount.critical_window_positive
 #print axioms PaperP1.DegreeOneRootHostCount.uniform_hosts
 #print axioms PaperP1.DegreeOneRootHostCount.uniform_hosts_of_many
+#print axioms PaperP1.DenseCompressedTargetCount.uniform_offsets
+#print axioms PaperP1.DenseCompressedTargetCount.article_15_3
 #print axioms PaperP1.DenseNonalignedProfileReduction.dense_data
 #print axioms PaperP1.DenseNonalignedProfileReduction.nonaligned_activity_bound
 #print axioms PaperP1.DenseNonalignedProfileReduction.uniform_bound
@@ -5753,7 +5771,12 @@ import PaperP1
 #print axioms PaperP1.LogSquaredPrimePool.actual_pool_count_critical
 #print axioms PaperP1.LogarithmicBlockGeometry.length_band
 #print axioms PaperP1.LogarithmicBlockGeometry.width_transfer
+#print axioms PaperP1.LogarithmicCoefficientPatterns.uniform_offsets
+#print axioms PaperP1.LogarithmicCoefficientPatterns.uniform_pool
 #print axioms PaperP1.LogarithmicDefectPower.uniform_power
+#print axioms PaperP1.LogarithmicSourceCoefficientCount.position_count
+#print axioms PaperP1.LogarithmicSourceCoefficientCount.uniform_count
+#print axioms PaperP1.LogarithmicUnivariateCount.uniform_count
 #print axioms PaperP1.LogarithmicWindowCap.cap_div_log_tendsto
 #print axioms PaperP1.LogarithmicWindowCap.cap_tendsto_atTop
 #print axioms PaperP1.LogarithmicWindowCap.cap_div_nat_tendsto
@@ -5853,6 +5876,8 @@ import PaperP1
 #print axioms PaperP1.OffsetPlaneTheorem.uniform_stronger
 #print axioms PaperP1.OffsetPlaneTheorem.companion_T20_3
 #print axioms PaperP1.OffsetPlaneTheorem.companion_T20_3_shared
+#print axioms PaperP1.OneTargetClassSystem.of_two_labels
+#print axioms PaperP1.OneTargetLogDenseCount.uniform_count
 #print axioms PaperP1.OrderDependentBranching.exception_nonneg
 #print axioms PaperP1.OrderDependentBranching.exception_le_source
 #print axioms PaperP1.OrderDependentBranching.finite_exception_bound

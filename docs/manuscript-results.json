@@ -4926,11 +4926,51 @@
       "source": "main_sections/exact_transfer.tex",
       "line": 172,
       "sha256": "d8441e534031b48e0792ad2d7c2c35e8da01b87d706e88a3f678a14f1288c9d8",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "proved",
+      "lean_declarations": [
+        "PaperP1.LogarithmicSourceCoefficientCount.position_count",
+        "PaperP1.LogarithmicSourceCoefficientCount.uniform_count",
+        "PaperP1.LogarithmicCoefficientPatterns.uniform_offsets",
+        "PaperP1.LogarithmicCoefficientPatterns.uniform_pool",
+        "PaperP1.LogarithmicUnivariateCount.uniform_count",
+        "PaperP1.IntersectionKernelLift.left_projection",
+        "PaperP1.IntersectionKernelLift.right_projection",
+        "PaperP1.IntersectionKernelLift.left_projection_injective",
+        "PaperP1.OneTargetPhysicalLift.exists_lift",
+        "PaperP1.OneTargetPhysicalRegularization.dimension_le_labels",
+        "PaperP1.OneTargetPhysicalRegularization.zero_projection_offsets",
+        "PaperP1.OneTargetPhysicalRegularization.uniform_subspace",
+        "PaperP1.OneTargetClassSystem.of_two_labels",
+        "PaperP1.OneTargetLogDenseCount.uniform_count",
+        "PaperP1.BoundedWidthWindows.values_subset",
+        "PaperP1.BoundedWidthWindows.space_le_window",
+        "PaperP1.BoundedWidthWindows.window_space_mono",
+        "PaperP1.BoundedWidthWindows.center_injective_on",
+        "PaperP1.BoundedWidthDenseCount.uniform_count",
+        "PaperP1.CompressedTargetCenters.mem_dense_centers",
+        "PaperP1.CompressedTargetCenters.block_width",
+        "PaperP1.CompressedTargetCenters.center_bounds",
+        "PaperP1.CompressedTargetCenters.actual_pair_mem",
+        "PaperP1.DenseCompressedTargetCount.uniform_offsets",
+        "PaperP1.DenseCompressedTargetCount.article_15_3",
+        "PaperP1.IntersectionKernelLift.embed",
+        "PaperP1.BoundedWidthWindows.center",
+        "PaperP1.CompressedTargetCenters.centers",
+        "PaperP1.CompressedTargetCenters.denseCenters",
+        "PaperP1.CompressedTargetCenters.allDenseCenters"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0125"
+      ],
+      "notes": "Article Lemma15.3 is now proved UNCONDITIONALLY, for the actual\ncompressed-center population of every fixed positive channel\n0<a<=b. DenseCompressedTargetCount.article_15_3 includes ALL\nactual unit-offset patterns and the exact effective prescribed\nspace W. Coprimality, strict channel ordering, private primes,\nlocal regularity and injectivity of the compressed selection\nmap are not needed for this stronger count. Main15.3 moves\nfrom not_started to proved. Unconditional numbered coverage\nrises from82 to83/167; the15 conditional results stay separate.\nP1-MATH-0125 records the two-whole-class proof at logarithmic\nwidth, bringing confirmed mathematical improvements to125.\n\nLogarithmicSourceCoefficientCount proves the common source-\nonly coefficient pool bound with only an upper logarithmic\nwidth for the actual source coordinate set and the prime\ncutoff. Actual source values have the explicit height bound\nN^2. The threshold precedes every source-value list, length\nand cutoff. LogarithmicCoefficientPatterns proves the bounded\noffset and common-list pattern count under the same upper\nwidth alone. LogarithmicUnivariateCount then applies the\nproved unconditional two-disjoint-square-equation estimate on\nany fixed comparable positive interval. Its integer coefficients\nneed only be nonzero and come from a common subpower list;\nno coefficient height or unformalized curve estimate is used.\n\nIntersectionKernelLift embeds W intersect S_y in the actual\ntwo-target relation kernel by (u,-u,0). Its auxiliary target\nprojection is identically zero and its first target projection\nis injective. OneTargetPhysicalLift composes this with the\nproved arbitrary effective sections, obtaining an injective\nphysical lift of the ACTUAL intersection. Sources may overlap,\nbe dependent or have local relations.\n\nOneTargetPhysicalRegularization chooses t from the source\nnumber and rank margin before all actual windows and W. It\nregularizes the pulled-back physical coordinate forms and\npushes the shared subspace into the literal physical code.\nThe image has intrinsic recovery exclusion, retains rank at\nleast dim(W intersect S_y)-xi*L/4, has injective first target\nprojection and still has identically zero auxiliary target.\nThe first target separately has at least dim(P) distinct\nnonzero coordinate labels. Every nonzero class has no\ncoordinate at all in the auxiliary target.\n\nOneTargetClassSystem consequently chooses just TWO distinct\nactual target labels. Their physical classes have uniformly\nbounded size, disjoint nonempty target offsets and coefficients\nin the common full squarefree source-only list. The actual\nsquare roots and both univariate square equations are proved.\nOneTargetLogDenseCount combines these constructions with the\nlogarithmic pool and two-equation counts. It gives N^epsilon\nactual dense targets on every fixed comparable positive interval,\nfor ANY sufficiently large logarithmic length, above ANY\nprescribed subspace of the actual source span. The threshold\nprecedes every source, W, target population and actual code.\nThe old strict-product-certificate/residual-prime-group\nclassification is not required for this alternative proof.\n\nBoundedWidthWindows embeds every actual finite set in\nX+[-R,R] into the complete original window starting at\nX-R+1 with length2R. It proves monotonicity of the actual even\nsquare-class spaces and injectivity of this shifted center\nonce X>=R. BoundedWidthDenseCount uses this embedding with\nR=D*(L+1). The enlarged length remains logarithmic; all old\nsource windows embed in the corresponding longer source\nwindows. Their actual values satisfy the fixed height bound\nuniformly. A fixed reduced density margin retains the original\nintersection threshold eta*L. The shifted center stays in a\nfixed comparable positive interval. Thus the count applies to\nEVERY actual family U_X of bounded width, even when it varies\nwith X and has local square relations. No injectivity of its\neven-selection map is assumed.\n\nCompressedTargetCenters constructs the actual centers as the\nimage of actual dyadic source pairs with an exact unit at the\nchosen two offsets. Its block is exactly the previously proved\ncompressed union of the two normalized windows. Its width is\nat most b*(L+1), with center between N/2 and3*b*N. The literal\ndense population filters the actual effective intersection\nwith W. Every actual compressed pair satisfying that rank\ncondition is proved to belong to the population, and all unit\noffset patterns are included in allDenseCenters.\n\nDenseCompressedTargetCount first applies the general bounded-\nwidth count uniformly to every offset pair. It then sums all\n(L+1)^2 choices, absorbing this factor into the exponent margin.\nThe final article_15_3 theorem counts the actual compressed\ncenters, with one N0 before the critical length, every source\ntuple, every W and all offset patterns. It proves card<=N^epsilon,\nwhich implies the printed big-O conclusion. A fixed finite\nset of channels can be summed with the same margin convention.\nThis proof uses only established unconditional arithmetic,\nlinear algebra and two-equation estimates.\n\nThere is no new external literature property, kernel axiom,\ndependency download, Paper C port or manuscript-source edit.\nThe broader project remains incomplete and Palomar is deferred.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": ""
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13145 jobs); direct axiom audit passed for 9906 declarations using only propext, Classical.choice and Quot.sound; all 8141 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.77 GiB."
     },
     {
       "label": "p13:transfer:small-kernels",

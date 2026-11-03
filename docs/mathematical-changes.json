@@ -9558,6 +9558,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "288a16d79bd547ebc54995b58254f4fd261dfd75"
+    },
+    {
+      "id": "P1-MATH-0125",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:compressed-target",
+        "number": "15.3",
+        "page": 40,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 172,
+        "statement_sha256": "d8441e534031b48e0792ad2d7c2c35e8da01b87d706e88a3f678a14f1288c9d8"
+      },
+      "original_assumption": "The dense compressed-target proof adapts the fixed-source CRT and split-product classification and cites an injective compressed even-selection map.",
+      "finding": "A dense single free target above fixed sources can be counted\nusing just two whole coordinate-label classes. Lift the actual\neffective intersection into a physical relation code with an\nidentically zero auxiliary target; regularization preserves\nmany distinct nonzero labels in the free target. Every such\nclass is pure there and supplies one actual square equation\nwhose full squarefree coefficient belongs to one source-only\nsubpower list. Two distinct classes have disjoint nonempty\nroot sets, so the proved unconditional two-equation count\nalready gives N^epsilon targets. Upper logarithmic width alone\nsuffices for both coefficient and offset enumeration. Enclosing\nan arbitrary bounded-width compressed set in one longer original\nwindow therefore proves the compressed-target count without\nthe old product-certificate/residual-group dichotomy or an\ninjectivity hypothesis for the compressed map.",
+      "impact": "An unconditional alternative proof for arbitrary actual bounded-width even square-class target sets, with one common threshold and all actual compressed offset patterns included; no compressed-map injectivity or geometric input is required.",
+      "proposed_revision": "State the logarithmic-width one-target dense-intersection theorem separately. Prove it through an injective physical lift with a zero auxiliary block, two surviving whole label classes, the common full source coefficient list and the two-equation estimate. Enclose each actual compressed set in its full bounded-width interval and apply monotonicity.",
+      "evidence": [
+        "PaperP1.LogarithmicSourceCoefficientCount.uniform_count",
+        "PaperP1.LogarithmicUnivariateCount.uniform_count",
+        "PaperP1.IntersectionKernelLift.embed",
+        "PaperP1.OneTargetPhysicalLift.exists_lift",
+        "PaperP1.OneTargetPhysicalRegularization.uniform_subspace",
+        "PaperP1.OneTargetClassSystem.of_two_labels",
+        "PaperP1.OneTargetLogDenseCount.uniform_count",
+        "PaperP1.BoundedWidthDenseCount.uniform_count",
+        "PaperP1.CompressedTargetCenters.actual_pair_mem",
+        "PaperP1.DenseCompressedTargetCount.article_15_3"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13145 jobs); direct axiom audit passed for 9906 declarations using only propext, Classical.choice and Quot.sound; all 8141 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.77 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
