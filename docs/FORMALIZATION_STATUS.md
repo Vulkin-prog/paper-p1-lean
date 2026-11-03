@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **8804 audited theorem/lemma declarations**. This
+- The project currently has **8811 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -8762,3 +8762,45 @@ and Palomar remains deferred. Original source bytes and pins are
 unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12461 jobs, direct axiom audit of 8804 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6714 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.93 GiB.
+
+
+## Actual curve radical transport and eventual even rational-image cover degree
+
+The odd-degree rational-image exclusion is now transported from
+the rational-function presentation to an actual irreducible plane
+curve equation and its actual fraction field. An explicit F-algebra
+equivalence from FractionRing F[T] to that curve field is constructed
+for a supplied reduced graph presentation in its actual generic
+coordinates. Its value on every polynomial is proved to be actual
+evaluation at the generic first coordinate. The actual rational
+quotient is proved to equal the generic second coordinate.
+
+The literal scaled split-radical polynomial c*P_I(X)*(Y+j) is
+transported exactly to the rational-graph function used in the
+preceding pole-deletion argument. Squarehood is equivalent under
+this actual field equivalence. Thus actual radical roots in an
+actual odd-degree extension of the curve field provide the precise
+functional squares; no unidentified scalar map or separately assumed
+functional-square premise remains. The host graph equation follows
+from the actual point condition C(X,Y)=0 by the proved identification
+of C with its reduced graph relation.
+
+The final uniform statement excludes actual integral curve points
+under the literal radical equations in that odd-degree cover. Its
+threshold precedes the curve equation, both fields, all reduced
+graph coefficients, the radical roots and coefficients, the common
+root-family degree and the host data. The graph's maximum degree
+is bounded by E; it is not required equal to the root-family degree.
+A corresponding theorem states the actual finite cover degree must
+be even at every such sufficiently large admissible host.
+
+This extends P1-MATH-0110 without a new finding or numbered result.
+It does not assert that a general source curve has a graph image,
+nor identify all source-scheme cover maps with this affine fraction-
+field presentation. The even-degree and non-graph image geometry,
+general degree comparisons and external uniform point counts remain
+open. T1.7 stays in_progress, coverage stays 79/167, confirmed
+improvements stay 110 and Palomar remains deferred. Original sources
+and the compiler/dependency pins remain unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12467 jobs, direct axiom audit of 8811 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6722 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.91 GiB.

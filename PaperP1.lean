@@ -1957,3 +1957,6 @@ public import PaperP1.Diophantine.GridRationalGraphDescent
 public import PaperP1.Diophantine.DisjointRationalSquareGraphBound
 public import PaperP1.Asymptotics.BoundedDegreeGridGraphExclusion
 public import PaperP1.Asymptotics.CriticalRationalSquareGraphExclusion
+public import PaperP1.Algebra.AffineCurveFractionParametrization
+public import PaperP1.Algebra.CurveRationalSquareDescent
+public import PaperP1.Asymptotics.CriticalCurveRationalOddExclusion

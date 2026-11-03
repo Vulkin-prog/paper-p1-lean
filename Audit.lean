@@ -353,6 +353,10 @@ import PaperP1
 #print axioms PaperP1.AffineCurveFieldGeneration.coordinates_generate
 #print axioms PaperP1.AffineCurveFieldGeneration.first_generates_of_graph
 #print axioms PaperP1.AffineCurveFieldGeneration.rationalEquiv_X
+#print axioms PaperP1.AffineCurveFractionParametrization.equiv_polynomial
+#print axioms PaperP1.AffineCurveFractionParametrization.quotient_eq_coordinate
+#print axioms PaperP1.AffineCurveFractionParametrization.equiv_value
+#print axioms PaperP1.AffineCurveFractionParametrization.value_isSquare_iff
 #print axioms PaperP1.AffineCurveFunctionField.specialize_zero_iff
 #print axioms PaperP1.AffineCurveFunctionField.coordinates_evaluation
 #print axioms PaperP1.AffineCurveFunctionField.coordinates_kernel
@@ -618,6 +622,7 @@ import PaperP1
 #print axioms PaperP1.CurveFunctionField.first_linear_ne_zero
 #print axioms PaperP1.CurveFunctionField.second_linear_ne_zero
 #print axioms PaperP1.CurveFunctionField.word_ne_zero
+#print axioms PaperP1.CurveRationalSquareDescent.value_isSquare
 #print axioms PaperP1.CurveSeriesField.evaluation_zero_iff
 #print axioms PaperP1.CurveSeriesField.coordinateMap_injective
 #print axioms PaperP1.CurveSeriesField.fieldMap_specialize
@@ -4615,6 +4620,8 @@ import PaperP1
 #print axioms PaperP1.CriticalChannelPowers.quotient_word_upper
 #print axioms PaperP1.CriticalCommonQuotientExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalCurveCommonQuotientExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalCurveRationalOddExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalCurveRationalOddExclusion.eventually_even_degree
 #print axioms PaperP1.CriticalDisjointEquationGraphExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalGridGraphExclusion.bound_le_power
 #print axioms PaperP1.CriticalGridGraphExclusion.cutoff_lt_scale
