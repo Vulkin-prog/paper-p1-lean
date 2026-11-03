@@ -3849,3 +3849,86 @@ compiler and dependency pins are unchanged; no new Paper C
 source is copied and Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (12803 jobs); direct axiom audit passed for 9377 declarations using only propext, Classical.choice and Quot.sound; all 7463 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.52 GiB.
+
+
+## Actual ternary groups: both CRT counting regimes
+
+The two CRT counting regimes in the proof of companion T1.16
+are now proved on actual finite center populations, with the
+three sets of values, their prime cutoff and their height cap
+allowed to vary after the uniform threshold and with the center.
+The sets themselves are never enumerated. The finite covers
+enumerate only actual group products, their ordered positive
+factorizations and bounded integer offsets.
+
+IntegerOffsetCRT cancels arbitrary signed integer offsets in
+two divisibility conditions and proves equality of the residue
+classes. Pairwise coprimality combines all moduli. Each actual
+coordinate in an interval of length N has at most N/Q+1 values;
+an actual d-dimensional population has at most (N/Q+1)^d points.
+No CRT solution is chosen, and no lower endpoint or offset
+positivity is required. PlaneOffsetCRT proves that two actual
+coordinates determine the third on an integer plane with
+nonzero third normal coordinate. The corresponding count is
+(N/Q+1)^2. The forced planes previously constructed have every
+normal coordinate nonzero, so this condition is discharged.
+
+ProductFactorizations constructs the actual finite pool of
+ordered k-factor decompositions of Q, with cardinality at most
+tau(Q)^k. The already proved elementary divisor estimate yields
+a uniform subpower bound at every fixed polynomial product
+height. CRTProductCover constructs the actual center cover,
+including its coprimality and divisibility filters. Its offset
+pool has exactly (2R+1)^(dk) members.
+
+FiniteCRTTails transfers finite positive integer and positive
+pair sums into the already proved summable p-series and
+hyperbolic tails. The elementary inequalities
+(a+1)^3<=4(a^3+1), a>=0, and (a+1)^2<=2(a^2+1)
+remove all intermediate reciprocal terms. The finite cubic
+sum is at most 8N^3*T^(-2)+4V for T<q<=V. The finite square
+sum over positive pairs with ab>T is at most
+2*C_2*N^2*T^(-1)*log(2T)+2*#pairs. Thus the source's separate
+reciprocal-product logarithmic-square sum is unnecessary.
+This checked proof simplification is P1-MATH-0115.
+
+CRTProductRange proves the weak-regime count, retaining the
+literal offset factor and uniformly paying for actual ordered
+factorizations by M^epsilon. PlaneProductCover proves the
+strong-regime count over any actual finite plane pool and only
+two positive group sizes. The positive-product divisor count
+pays for the latter size pool by V*M^epsilon. The third group
+is not enumerated a second time.
+
+TernaryTopProducts defines the actual maximum over products of
+k distinct active groups, with value zero when too few exist.
+The maximum is proved attained whenever positive, and every
+selected product is bounded by it. Injective finite enumerations
+give its actual group vectors. TernaryGroupCertificates proves
+that these groups supply the actual offset-CRT certificates.
+For a triple with product above 6AH^2 and whose squared product
+exceeds T^3, an actual pair has product>T and <=2A(H+1), and the
+center belongs to the actual two-group cover of the previously
+constructed finite plane pool. No count or plane is postulated.
+
+TernaryGroupCounts proves both uniform regimes for arbitrary
+finite center populations with center-dependent arithmetic
+sets. The weak bound is
+M^epsilon*(2R+1)^(3k)*(8N^3/T^2+4V).
+The strong bound is the exact plane-pool cardinality times
+(2R+1)^6 times
+(2*C_2*N^2*log(2T)/T+2V*M^epsilon).
+All local data injectivity, disjointness, positive value and
+diameter hypotheses in the strong bound are the actual
+arithmetic predicates. The top-product height bound <=A^k is
+also proved from actual group divisibility. These statements
+have no new external input and no assumed target count.
+
+The final critical-band absorption, the choice V=N^(6/5), and
+the fixed-k induction remain open. Accordingly T1.16 stays
+in_progress, numbered coverage stays 79/167, and main 3.3 stays
+conditional. Confirmed improvements total 115. The compiler,
+dependency pins and original manuscript bytes are unchanged;
+no new Paper C source is copied and Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (12823 jobs); direct axiom audit passed for 9421 declarations using only propext, Classical.choice and Quot.sound; all 7518 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.49 GiB.

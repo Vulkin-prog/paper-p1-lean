@@ -2128,3 +2128,13 @@ public import PaperP1.Arithmetic.TernaryPrimeGroups
 public import PaperP1.Arithmetic.TernaryGroupDeterminants
 public import PaperP1.Arithmetic.TernaryGroupForcedPlane
 public import PaperP1.Arithmetic.TernaryOffsetPlanes
+public import PaperP1.Arithmetic.IntegerOffsetCRT
+public import PaperP1.Arithmetic.PlaneOffsetCRT
+public import PaperP1.Arithmetic.ProductFactorizations
+public import PaperP1.Analysis.FiniteCRTTails
+public import PaperP1.Arithmetic.CRTProductCover
+public import PaperP1.Arithmetic.CRTProductRange
+public import PaperP1.Arithmetic.PlaneProductCover
+public import PaperP1.Arithmetic.TernaryTopProducts
+public import PaperP1.Arithmetic.TernaryGroupCertificates
+public import PaperP1.Arithmetic.TernaryGroupCounts
