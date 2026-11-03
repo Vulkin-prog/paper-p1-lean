@@ -7938,7 +7938,8 @@
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "d1430cf"
     }
   ]
 }
