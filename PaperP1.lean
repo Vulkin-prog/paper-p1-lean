@@ -1805,3 +1805,11 @@ public import PaperP1.Geometry.ProjChartDehomogenizationNaturality
 public import PaperP1.Geometry.SourceProjectiveAffineCharts
 public import PaperP1.Geometry.SourceProjectiveAffineField
 public import PaperP1.Geometry.SourceProjectiveAffineFieldCompatibility
+public import PaperP1.Algebra.DegreeScalingAwayMap
+public import PaperP1.Algebra.DegreeScalingGrading
+public import PaperP1.Algebra.DegreeScalingHomogeneousMap
+public import PaperP1.Algebra.GradedVeroneseInclusion
+public import PaperP1.Geometry.GradedVeroneseProj
+public import PaperP1.Geometry.ProjDegreeScalingCharts
+public import PaperP1.Geometry.ProjDegreeScalingMap
+public import PaperP1.Geometry.SourceProjectivePlane

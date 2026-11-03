@@ -6479,3 +6479,54 @@ improvements remain 107 and Palomar remains deferred. Original
 manuscript sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12143 jobs, direct axiom audit of 8258 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6010 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.60 GiB.
+
+
+## Global standard projective-plane target and finite flat source projection
+
+The native standard Veronese projective target is now globally
+isomorphic to the standard projective plane, defined as Proj of the
+ordinary homogeneous grading on F[X_0,X_1,X_2]. This is an actual
+scheme isomorphism, constructed from the literal Veronese inclusion.
+Composing it with the existing source morphism gives the actual
+projection to that plane. This projection is proved finite, flat,
+surjective and of constant scheme rank 2^k at every plane point.
+These cover statements allow arbitrary coefficient fields and zero
+radicand coefficients; the separate source-integrality hypotheses
+remain explicit for function-field assertions.
+
+The underlying general theorem proves Proj invariance under every
+positive Veronese construction on an internally graded commutative
+coefficient algebra. No domain, reducedness, characteristic-zero,
+Noetherian or generation-in-degree-one hypothesis is used. The
+inclusion multiplies the grading by D, so it is handled by a verified
+positive-degree-scaling Proj functor, not incorrectly treated as a
+same-degree graded homomorphism. Homogeneous ideal pullback is
+justified by a proved projection identity; actual homogeneous
+localization and local-ring maps multiply fraction degrees by D.
+
+For admissibility, a positive-degree homogeneous element has its Dth
+power in the positive part of the actual Veronese. The necessary
+irrelevant-ideal containment therefore holds in the radical. On
+every positive homogeneous chart the actual ring map is proved
+bijective: all relevant numerator degrees are already multiples
+of D. Local scheme chart compatibility and locality of being an
+isomorphism then prove the global isomorphism. The point map,
+structure sheaf maps and generic local-ring locality are constructed
+and checked, rather than supplied as an abstract isomorphism premise.
+
+The scaled-localization and Proj chart constructions adapt the
+pinned Mathlib source with its Kenny Lau copyright and Apache 2.0
+attribution preserved in the new modules. The upstream files and
+pinned dependency are unchanged.
+
+This closes the previously open global projective-plane target
+identification. The numerical Hilbert multiplicity 2^k D^2, explicit
+affine generic-field identifications and actual function-field
+degree 2^k remain checked. Comparison with the chosen projective
+embedding and hyperplane bundle, the curve-degree projection
+formula, low-degree curve geometry and external surface/curve
+point counts remain open. T1.7 remains in_progress, numbered
+coverage remains 79/167, confirmed improvements remain 107 and
+Palomar remains deferred. Original manuscript sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12159 jobs, direct axiom audit of 8285 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6049 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.58 GiB.
