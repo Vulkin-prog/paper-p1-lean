@@ -677,6 +677,10 @@ import PaperP1
 #print axioms PaperP1.EvenImageDataRigidity.data_injective
 #print axioms PaperP1.EvenImageDefect.kernelEmbedding_injective
 #print axioms PaperP1.EvenImageDefect.dimension_le_image_add_kernel
+#print axioms PaperP1.EvenImageEmbeddingDefect.extend_outside
+#print axioms PaperP1.EvenImageEmbeddingDefect.kernel_embedding_injective
+#print axioms PaperP1.EvenImageEmbeddingDefect.kernel_rank_le
+#print axioms PaperP1.EvenImageEmbeddingDefect.image_defect_bound
 #print axioms PaperP1.EvenImageMap.evenMap_map
 #print axioms PaperP1.EvenImageMap.image_map
 #print axioms PaperP1.EvenReindex.sum_comp_symm
@@ -2926,6 +2930,9 @@ import PaperP1
 #print axioms PaperP1.EnlargedSourceTargetGeometry.old_abs_bound
 #print axioms PaperP1.EnlargedSourceTargetGeometry.all_abs_bound
 #print axioms PaperP1.EnlargedSourceTargetGeometry.interval_bounds
+#print axioms PaperP1.EvenIndependentIntersection.coefficient_zero_of_absent
+#print axioms PaperP1.EvenIndependentIntersection.space_inter
+#print axioms PaperP1.EvenIndependentIntersection.disjoint_of_inter_card_le_one
 #print axioms PaperP1.EvenIndependentValues.of_private
 #print axioms PaperP1.EvenIndependentValues.Independent.mono
 #print axioms PaperP1.EvenIndependentValues.rank_iff
@@ -2962,6 +2969,7 @@ import PaperP1
 #print axioms PaperP1.Arithmetic.exists_vertex_iff_in_window
 #print axioms PaperP1.Arithmetic.vertexParityMap_zero_iff_rational_square
 #print axioms PaperP1.EvenSquareSelection.cardinal_gt
+#print axioms PaperP1.EvenSubsetRankDefect.subset_defect
 #print axioms PaperP1.EvenWordRanks.twice_halfCard
 #print axioms PaperP1.EvenWordRanks.symmDiff_card_balance
 #print axioms PaperP1.EvenWordRanks.symmDiff_even
@@ -3021,6 +3029,9 @@ import PaperP1
 #print axioms PaperP1.FiniteResidualRank.row_rank_le_small_add_large_budget
 #print axioms PaperP1.FiniteResidualRank.finite_rank_bound
 #print axioms PaperP1.FiniteResidualRank.finite_row_rank_bound
+#print axioms PaperP1.FiniteRungeIndependence.combination_selected
+#print axioms PaperP1.FiniteRungeIndependence.independent_of_no_even_square
+#print axioms PaperP1.FiniteRungeIndependence.independent_of_growth
 #print axioms PaperP1.FixedChannelGamma.mem_candidates
 #print axioms PaperP1.FixedChannelGamma.ratio_conditions
 #print axioms PaperP1.FixedChannelGamma.mem_values_iff_source
@@ -4744,6 +4755,11 @@ import PaperP1
 #print axioms PaperP1.TwoTargetSingletonLabels.dimension_singleton_budget
 #print axioms PaperP1.TwoTargetSingletonSelection.mixed_type_samples
 #print axioms PaperP1.TwoTargetSingletonSelection.singleton_dichotomy
+#print axioms PaperP1.TwoTargetUnitExclusion.endpoints_card
+#print axioms PaperP1.TwoTargetUnitExclusion.image_labels_card
+#print axioms PaperP1.TwoTargetUnitExclusion.class_avoids_endpoints
+#print axioms PaperP1.TwoTargetUnitExclusion.except_one
+#print axioms PaperP1.TwoTargetUnitExclusion.selected_overlap_le_one
 #print axioms PaperP1.TwoTargetWindowSections.range_source_map
 #print axioms PaperP1.TwoTargetWindowSections.target_coordinate
 #print axioms PaperP1.TwoTargetWindowSections.target_projection_injective
@@ -4802,6 +4818,9 @@ import PaperP1
 #print axioms PaperP1.UnitIntersectionEquiv.valueEquiv_apply_val
 #print axioms PaperP1.UnitIntersectionEquiv.unitIntersectionEquiv_apply
 #print axioms PaperP1.UnitIntersectionEquiv.unitClassMap_injective
+#print axioms PaperP1.UnitIntersectionRankLower.unit_count_le_local_defect
+#print axioms PaperP1.UnitIntersectionRankLower.unit_count_le_intersection_add_two
+#print axioms PaperP1.UnitIntersectionRankLower.intersection_lower
 #print axioms PaperP1.UnitShapePatterns.index_fin_value
 #print axioms PaperP1.UnitShapePatterns.pattern_has_unit
 #print axioms PaperP1.UnitShapePatterns.pattern_shape
@@ -5143,6 +5162,8 @@ import PaperP1
 #print axioms PaperP1.CriticalActualMean.lowerMean_pos
 #print axioms PaperP1.CriticalActualMean.uniform_bounds
 #print axioms PaperP1.CriticalActualMean.uniform_nominal_bias
+#print axioms PaperP1.CriticalAlignedSelections.uniform_independent
+#print axioms PaperP1.CriticalAlignedSelections.uniform_selected_directness
 #print axioms PaperP1.CriticalAllCurveCoverExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalBandScale.lowerScale_pos
 #print axioms PaperP1.CriticalBandScale.upperScale_pos
@@ -5170,6 +5191,7 @@ import PaperP1
 #print axioms PaperP1.CriticalCurveRationalOddExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalCurveRationalOddExclusion.eventually_even_degree
 #print axioms PaperP1.CriticalDisjointEquationGraphExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalFiniteRungeIndependence.uniform_independent
 #print axioms PaperP1.CriticalGeneralRootPatterns.uniform_offsets
 #print axioms PaperP1.CriticalGeneralRootPatterns.uniform_codes
 #print axioms PaperP1.CriticalGeneralRootPatterns.uniform_pool
@@ -6383,6 +6405,8 @@ import PaperP1
 #print axioms PaperP1.VerySmallTail.moment_bound
 #print axioms PaperP1.VerySmallTail.power_threshold
 #print axioms PaperP1.VerySmallTail.companion_T19_6
+#print axioms PaperP1.WeakAlignmentUnitCount.uniform_bound
+#print axioms PaperP1.WeakAlignmentUnitCount.uniform_weak_bound
 #print axioms PaperP1.WeakPairActivityAsymptotic.critical_binary_power
 #print axioms PaperP1.WeakPairActivityAsymptotic.uniform_activity
 #print axioms PaperP1.WideQuadraticKernelCount.three_exponent_bounds

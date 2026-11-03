@@ -2251,3 +2251,12 @@ public import PaperP1.Asymptotics.TwoTargetNonalignedRankWeight
 public import PaperP1.Asymptotics.TwoTargetNonalignedMass
 public import PaperP1.Arithmetic.TwoTargetDensePairs
 public import PaperP1.Asymptotics.TwoTargetNonalignedMassTheorem
+public import PaperP1.Algebra.EvenImageEmbeddingDefect
+public import PaperP1.Arithmetic.EvenSubsetRankDefect
+public import PaperP1.Arithmetic.UnitIntersectionRankLower
+public import PaperP1.Asymptotics.WeakAlignmentUnitCount
+public import PaperP1.Arithmetic.FiniteRungeIndependence
+public import PaperP1.Asymptotics.CriticalFiniteRungeIndependence
+public import PaperP1.Arithmetic.EvenIndependentIntersection
+public import PaperP1.Asymptotics.CriticalAlignedSelections
+public import PaperP1.Arithmetic.TwoTargetUnitExclusion
