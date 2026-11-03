@@ -2507,3 +2507,9 @@ public import PaperP1.Algebra.ElementarySymmetricApproximation
 public import PaperP1.Algebra.QuadraticMomentApproximation
 public import PaperP1.Asymptotics.SubpowerPairAbsoluteActivity
 public import PaperP1.Asymptotics.FixedQuadraticFactorialMomentsUnderInputs
+public import PaperP1.Model.TouchardCountMoments
+public import PaperP1.Asymptotics.FixedMomentInputs
+public import PaperP1.Model.TouchardApproximation
+public import PaperP1.Asymptotics.FixedQuadraticOrdinaryMomentsUnderInputs
+public import PaperP1.Asymptotics.FinitePairActivityInputs
+public import PaperP1.Asymptotics.BoundedFixedMomentsUnderInputs

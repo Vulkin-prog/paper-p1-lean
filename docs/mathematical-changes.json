@@ -10136,9 +10136,9 @@
         "statement_sha256": "c6e85c5c60a33b6e4f4e614d923f638d1855ecd1fd2d6dab7f29cb5aa08e6190"
       },
       "original_assumption": "The fixed factorial-moment clause in main6.4 has remainder exponent4/5, with the exact mean and full second factorial cumulant.",
-      "finding": "The exact-parameter fixed factorial-moment remainder in main6.4\nimproves from N^(-4/5+epsilon) to N^(-1+epsilon) under the same finite\ngeometric properties. It holds on every actual dyadic subground with\nheterogeneous marginals, affine incompatibility and zero marginals included.\nThe full higher centered activity has rate1; disconnected contributions\nhave rate4/3 through their actual canonical-component quadratic tail.\nA finite pointed-incidence calculation controls collisions and deletion of\nthe actual pair indices at cost O(1/N). The exact cardinality convolution\nthen isolates the pair correction. Its diagonal squared-marginal term is\nretained, so the coefficient is the full second factorial cumulant. All\norders and finite constants precede N. This finding concerns the factorial\nclause only; the remaining ordinary-moment and higher-cumulant clauses of\nthe multi-conclusion theorem are not claimed complete at this checkpoint.",
-      "impact": "Proves the exact-parameter factorial clause with stronger exponent1 on every actual dyadic subground. The whole numbered theorem remains in_progress until its remaining clauses are assembled.",
-      "proposed_revision": "Replace the factorial remainder exponent4/5 by1. Give the exact heterogeneous cardinality convolution, pointed collision/deletion estimates and actual diagonal correction, retaining the fixed-before-N order restriction.",
+      "finding": "The exact-parameter factorial AND ordinary fixed-moment remainders\nin main6.4 improve from N^(-4/5+epsilon) to N^(-1+epsilon) under the same\nfinite geometric properties. The bounds hold on every actual dyadic\nsubground with heterogeneous marginals, affine incompatibility and zero\nmarginals included. The factorial proof uses full higher centered activity\nat rate1, a nonconnected quadratic tail at rate4/3, and finite pointed\ncollision/deletion inequalities retaining the complete diagonal correction.\nThe ordinary proof uses the exact Stirling transform and the genuine\nTouchard polynomial, whose evaluation is proved equal to the Poisson\nordinary moment and whose actual second derivative gives the displayed\nquadratic coefficient. A common threshold is taken after all finitely many\norders and geometric bundles. Uniform boundedness of every fixed ordinary\nmoment is also proved directly, without the final law approximation. The\narbitrary higher factorial-cumulant clause is not claimed complete yet.",
+      "impact": "Proves both exact-parameter fixed factorial and ordinary moment corrections with exponent1 and uniform boundedness of all fixed ordinary moments. The whole numbered theorem remains in_progress until the arbitrary higher factorial-cumulant clause is proved.",
+      "proposed_revision": "Replace the factorial and ordinary remainder exponent4/5 by1. Use the exact heterogeneous cardinality convolution and diagonal correction for factorial moments, then the exact Stirling transform and actual Touchard second derivative for ordinary moments. Keep the fixed-before-N order restriction explicit.",
       "evidence": [
         "PaperP1.ElementarySymmetricApproximation.pointed_identity",
         "PaperP1.ElementarySymmetricApproximation.factorial_increment_bound",
@@ -10152,14 +10152,37 @@
         "PaperP1.QuadraticMomentApproximation.factorial_pair_coefficient",
         "PaperP1.QuadraticMomentApproximation.factorial_error_bound",
         "PaperP1.SubpowerPairAbsoluteActivity.uniform_bound",
-        "PaperP1.FixedQuadraticFactorialMomentsUnderInputs.uniform_fixed"
+        "PaperP1.FixedQuadraticFactorialMomentsUnderInputs.uniform_fixed",
+        "PaperP1.TouchardCountMoments.eval_touchard",
+        "PaperP1.TouchardCountMoments.ordinary_eq_factorial",
+        "PaperP1.TouchardCountMoments.poisson_hasSum",
+        "PaperP1.TouchardCountMoments.second_derivative",
+        "PaperP1.TouchardCountMoments.count_zero",
+        "PaperP1.FixedMomentInputs.uniform_fixed",
+        "PaperP1.TouchardApproximation.finite_bound",
+        "PaperP1.FixedQuadraticOrdinaryMomentsUnderInputs.uniform_fixed",
+        "PaperP1.FinitePairActivityInputs.uniform_pair",
+        "PaperP1.FinitePairActivityInputs.uniform_cumulant",
+        "PaperP1.BoundedFixedMomentsUnderInputs.uniform_factorial",
+        "PaperP1.BoundedFixedMomentsUnderInputs.uniform_ordinary",
+        "PaperP1.BoundedFixedMomentsUnderInputs.uniform_low",
+        "PaperP1.TouchardCountMoments.touchard",
+        "PaperP1.FixedMomentInputs.Parameters",
+        "PaperP1.FixedMomentInputs.Hypotheses"
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13565 jobs); direct axiom audit passed for 10432 declarations using only propext, Classical.choice and Quot.sound; all 8792 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.76 GiB.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13577 jobs); direct axiom audit passed for 10445 declarations using only propext, Classical.choice and Quot.sound; all 8808 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.72 GiB.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "6cf2937f2d2aa80c00ea28dac442bd47939b8eda"
+      "validation_history": [
+        {
+          "finding": "The exact-parameter fixed factorial-moment remainder in main6.4\nimproves from N^(-4/5+epsilon) to N^(-1+epsilon) under the same finite\ngeometric properties. It holds on every actual dyadic subground with\nheterogeneous marginals, affine incompatibility and zero marginals included.\nThe full higher centered activity has rate1; disconnected contributions\nhave rate4/3 through their actual canonical-component quadratic tail.\nA finite pointed-incidence calculation controls collisions and deletion of\nthe actual pair indices at cost O(1/N). The exact cardinality convolution\nthen isolates the pair correction. Its diagonal squared-marginal term is\nretained, so the coefficient is the full second factorial cumulant. All\norders and finite constants precede N. This finding concerns the factorial\nclause only; the remaining ordinary-moment and higher-cumulant clauses of\nthe multi-conclusion theorem are not claimed complete at this checkpoint.",
+          "impact": "Proves the exact-parameter factorial clause with stronger exponent1 on every actual dyadic subground. The whole numbered theorem remains in_progress until its remaining clauses are assembled.",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (13565 jobs); direct axiom audit passed for 10432 declarations using only propext, Classical.choice and Quot.sound; all 8792 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.76 GiB.",
+          "validation_commit": "6cf2937f2d2aa80c00ea28dac442bd47939b8eda"
+        }
+      ]
     }
   ]
 }

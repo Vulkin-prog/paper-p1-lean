@@ -5194,6 +5194,9 @@ import PaperP1
 #print axioms PaperP1.BoundaryCutoffTrial.cutoff_div_log_tendsto
 #print axioms PaperP1.BoundaryCutoffTrial.critical_quarter_range
 #print axioms PaperP1.BoundedDegreeGridGraphExclusion.cutoff_lt_scale
+#print axioms PaperP1.BoundedFixedMomentsUnderInputs.uniform_factorial
+#print axioms PaperP1.BoundedFixedMomentsUnderInputs.uniform_ordinary
+#print axioms PaperP1.BoundedFixedMomentsUnderInputs.uniform_low
 #print axioms PaperP1.BoundedObservationPool.widthEnvelope_ge_one
 #print axioms PaperP1.BoundedObservationPool.pool_budget_le_envelope
 #print axioms PaperP1.BoundedObservationPool.pool_count_logarithmic
@@ -5652,6 +5655,8 @@ import PaperP1
 #print axioms PaperP1.FiniteGoodPartitionUnderInputs.choose_height
 #print axioms PaperP1.FiniteGoodPartitionUnderInputs.uniform_exceptional
 #print axioms PaperP1.FiniteGoodPartitionUnderInputs.companion_T7_1
+#print axioms PaperP1.FinitePairActivityInputs.uniform_pair
+#print axioms PaperP1.FinitePairActivityInputs.uniform_cumulant
 #print axioms PaperP1.FinitePairDeficitInputs.fixed_order
 #print axioms PaperP1.FinitePairDeficitInputs.finite_orders
 #print axioms PaperP1.FinitePairDeficitInputs.partition_inputs
@@ -5683,6 +5688,7 @@ import PaperP1
 #print axioms PaperP1.FixedFactorialLower.uniform_lower_error
 #print axioms PaperP1.FixedHeightResidual.large_kernel_rate
 #print axioms PaperP1.FixedHeightResidual.full_kernel_rate
+#print axioms PaperP1.FixedMomentInputs.uniform_fixed
 #print axioms PaperP1.FixedOrderMassPropagation.all_extensions
 #print axioms PaperP1.FixedOrderMassPropagation.extension_subfamilies
 #print axioms PaperP1.FixedOrderMassPropagation.main_6_3_propagation
@@ -5699,6 +5705,7 @@ import PaperP1
 #print axioms PaperP1.FixedProjectedMotifs.old_factor_bound
 #print axioms PaperP1.FixedProjectedMotifs.fixed_motif_count
 #print axioms PaperP1.FixedQuadraticFactorialMomentsUnderInputs.uniform_fixed
+#print axioms PaperP1.FixedQuadraticOrdinaryMomentsUnderInputs.uniform_fixed
 #print axioms PaperP1.FixedRationalTripleMass.hosts_card
 #print axioms PaperP1.FixedRationalTripleMass.host_data
 #print axioms PaperP1.FixedRationalTripleMass.mem_hosts_of_source
@@ -9384,6 +9391,12 @@ import PaperP1
 #print axioms PaperP1.ThreeSlopeWitnessMass.pair_zero_one_probability
 #print axioms PaperP1.ThreeSlopeWitnessMass.pair_zero_two_probability
 #print axioms PaperP1.ThreeSlopeWitnessMass.pair_one_two_probability
+#print axioms PaperP1.TouchardApproximation.finite_bound
+#print axioms PaperP1.TouchardCountMoments.eval_touchard
+#print axioms PaperP1.TouchardCountMoments.ordinary_eq_factorial
+#print axioms PaperP1.TouchardCountMoments.poisson_hasSum
+#print axioms PaperP1.TouchardCountMoments.second_derivative
+#print axioms PaperP1.TouchardCountMoments.count_zero
 #print axioms PaperP1.TripleActivityConnected.connected_of_coefficient_ne_zero
 #print axioms PaperP1.TripleActivityConnected.coefficient_zero_of_disconnected
 #print axioms PaperP1.TripleActivityConnected.positive_eq_connected
