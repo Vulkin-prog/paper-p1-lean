@@ -2122,3 +2122,9 @@ public import PaperP1.Asymptotics.ActualPairPhaseUnderInputs
 public import PaperP1.Model.HomogeneousSourcePairMass
 public import PaperP1.Asymptotics.RawPairResidualUnderInputs
 public import PaperP1.Asymptotics.HomogeneousPairResidualUnderInputs
+public import PaperP1.Algebra.EvenImageDataRigidity
+public import PaperP1.Arithmetic.FiniteEvenSetRigidity
+public import PaperP1.Arithmetic.TernaryPrimeGroups
+public import PaperP1.Arithmetic.TernaryGroupDeterminants
+public import PaperP1.Arithmetic.TernaryGroupForcedPlane
+public import PaperP1.Arithmetic.TernaryOffsetPlanes

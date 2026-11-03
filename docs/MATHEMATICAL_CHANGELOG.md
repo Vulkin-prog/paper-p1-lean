@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**113 mathematical improvements are confirmed; no error in a manuscript conclusion
+**114 mathematical improvements are confirmed; no error in a manuscript conclusion
 has been confirmed.** The paper has not yet undergone a complete formal audit.
 Absence of an entry does not mean the argument has been verified.
 
@@ -9108,3 +9108,84 @@ Original manuscript bytes, dependencies, compiler and Palomar
 state are unchanged.
 
 Verified under Lean v4.36.0-rc2: full build passed (12791 jobs); direct axiom audit passed for 9337 declarations using only propext, Classical.choice and Quot.sound; all 7414 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.55 GiB.
+
+
+## P1-MATH-0114 — Direct finite forcing of actual ternary group planes
+
+The finite arithmetic and plane-forcing core of companion T1.16
+is now proved for actual prime groups on three arbitrary finite
+sets of positive integers. This is the source ternary group
+budget, not the separate abstract ternary selection theorem T2.3.
+The final CRT tail sums and fixed-k induction are still open,
+so T1.16 moves from not_started to in_progress, not proved.
+
+TernaryPrimeGroups constructs the actual finite value-triple
+pool and, for each triple, the product of exactly the primes
+above H with odd valuation in all three entries. Membership,
+primality, positivity, squarefreeness and divisibility of every
+entry are proved. A prime above the common diameter cannot
+occur at two different values in a block. Consequently the
+prime sets of distinct actual triples are disjoint, their
+products are coprime, and all active group values greater than
+one are distinct. The strict decreasing-order convention in
+the source therefore causes no hidden tie issue. The literal
+support-pool cardinality is the product of the three set sizes.
+
+The arithmetic rigidity is proved for arbitrary finite sets.
+Injectivity of an even-selection map implies injectivity of
+its data vectors, by the two-coordinate zero-sum selection.
+For the finite forcing argument it suffices that the parity
+vectors of distinct local values are distinct, together with
+pairwise disjoint even square-class images. Proportional
+positive value pairs would give the same nonzero even class
+in two disjoint images, which is impossible. The three-block
+projection rigidity is derived from these actual arithmetic
+hypotheses; it is not an assumed geometric exclusion.
+
+Actual products of two groups divide every corresponding
+2x2 integer minor. If values are at most A and within-block
+diameters are at most H, the minor is at most 2AH. A shared
+value is handled separately using coprimality and product
+divisibility. This gives the uniform finite bound 2A(H+1).
+The product of three actual groups divides their 3x3 determinant,
+whose absolute value is at most 6AH^2. A group product greater
+than this threshold forces the determinant to vanish.
+
+The collinear exception is excluded without a primitive-direction
+choice. Put d=v-u for the first two value triples. If u,v,w
+are collinear, d cross u=d cross v=d cross w. Every actual
+group therefore divides all coordinates of the same integer
+cross vector. Pairwise coprimality makes their product divide
+it, while each coordinate is at most 2AH. A larger product
+forces the cross vector to vanish. The actual pairwise
+square-class rigidity then forces u=v, contradicting distinct
+supports. Thus, for H>=1, product>6AH^2 forces a genuine plane.
+Every normal coordinate is proved nonzero, using the actual
+positive projection rigidity and the vanishing determinant.
+This unconditional finite simplification and weaker local
+hypothesis are recorded as P1-MATH-0114. It is not an assertion
+of the still open asymptotic counting bound.
+
+For centers X and offsets bounded in absolute value by R,
+the normal is identified with the cross product of offset
+differences; it is independent of a common center translation.
+Each normal coordinate has absolute value at most 8R^2 and
+the plane constant is at most 24R^3. The centers satisfy the
+actual resulting integer-plane equation. The actual plane
+belongs to an explicitly defined pool depending only on R,
+of cardinality (16R^2+1)^3*(48R^3+1). The plane is genuine and
+all its normal coordinates are nonzero. No target plane,
+primitive vector, rank premise or host count is postulated.
+
+All these finite results are unconditional. The remaining
+T1.16 obligation is the uniform tuple count
+N^epsilon*(N^3/T^2+N^(6/5)), including actual CRT encoding,
+hyperbolic reciprocal sums and the fixed-k induction. No new
+external input is added. Coverage stays 79/167; main 3.3 stays
+conditional and T1.12 clauses (2),(3) remain open. Confirmed
+mathematical improvements total 114, with the exact finite
+scope of the new finding retained. Original source bytes,
+compiler and dependency pins are unchanged; no new Paper C
+source is copied and Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (12803 jobs); direct axiom audit passed for 9377 declarations using only propext, Classical.choice and Quot.sound; all 7463 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.52 GiB.
