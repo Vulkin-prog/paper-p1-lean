@@ -4717,6 +4717,12 @@ import PaperP1
 #print axioms PaperP1.TwoTargetCodeLift.to_code_injective
 #print axioms PaperP1.TwoTargetIntrinsicClassCoefficients.source_cover_card
 #print axioms PaperP1.TwoTargetIntrinsicClassCoefficients.kernel_in_pool
+#print axioms PaperP1.TwoTargetLabelDimension.dimension_le_labels
+#print axioms PaperP1.TwoTargetLabelSelection.mem_target_labels
+#print axioms PaperP1.TwoTargetLabelSelection.mem_mixed_labels
+#print axioms PaperP1.TwoTargetLabelSelection.mem_pure_labels
+#print axioms PaperP1.TwoTargetLabelSelection.exists_samples
+#print axioms PaperP1.TwoTargetLabelSelection.mixed_or_two_pure
 #print axioms PaperP1.TwoTargetPhysicalBudgets.class_budgets
 #print axioms PaperP1.TwoTargetPhysicalBudgets.class_size
 #print axioms PaperP1.TwoTargetPhysicalBudgets.uniform_class_data
@@ -5048,6 +5054,8 @@ import PaperP1
 #print axioms PaperP1.CoarseTripleActivityUnderBCN.uniform_vanishing_activity
 #print axioms PaperP1.CodedClassCount.uniform_count
 #print axioms PaperP1.CoefficientNonalignedHostCount.uniform_hosts
+#print axioms PaperP1.CoefficientUnivariateCount.uniform_count
+#print axioms PaperP1.CoefficientUnivariateCount.uniform_pairs
 #print axioms PaperP1.ColoredConditionalSum.uniform_sum
 #print axioms PaperP1.ColoredConditionalSum.prescribed_sum
 #print axioms PaperP1.ColoredMassPropagation.bounded_point_orders
@@ -6341,8 +6349,13 @@ import PaperP1
 #print axioms PaperP1.TwoTargetMixedClassData.bounded_coefficient
 #print axioms PaperP1.TwoTargetMixedClassData.exists_pattern
 #print axioms PaperP1.TwoTargetMixedClassData.uniform_patterns
+#print axioms PaperP1.TwoTargetNonalignedDenseCount.uniform_pairs
 #print axioms PaperP1.TwoTargetNonalignedMixedCount.uniform_hosts
 #print axioms PaperP1.TwoTargetPhysicalEnumeration.uniform_enumeration
+#print axioms PaperP1.TwoTargetPureClassData.univariate_square
+#print axioms PaperP1.TwoTargetPureClassData.exists_system
+#print axioms PaperP1.TwoTargetPureClassData.uniform_systems
+#print axioms PaperP1.TwoTargetPureCount.uniform_pairs
 #print axioms PaperP1.uniformLittleOOn_zero
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
 #print axioms PaperP1.UnitChannelPairWeights.uniform_joint

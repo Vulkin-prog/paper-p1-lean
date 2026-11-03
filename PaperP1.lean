@@ -2234,3 +2234,9 @@ public import PaperP1.Asymptotics.CoefficientNonalignedHostCount
 public import PaperP1.Arithmetic.TwoTargetClassOffsets
 public import PaperP1.Asymptotics.TwoTargetMixedClassData
 public import PaperP1.Asymptotics.TwoTargetNonalignedMixedCount
+public import PaperP1.Asymptotics.CoefficientUnivariateCount
+public import PaperP1.Arithmetic.TwoTargetLabelSelection
+public import PaperP1.Asymptotics.TwoTargetPureClassData
+public import PaperP1.Asymptotics.TwoTargetPureCount
+public import PaperP1.Arithmetic.TwoTargetLabelDimension
+public import PaperP1.Asymptotics.TwoTargetNonalignedDenseCount
