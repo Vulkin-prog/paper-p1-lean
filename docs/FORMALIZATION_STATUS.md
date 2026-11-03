@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **8986 audited theorem/lemma declarations**. This
+- The project currently has **9012 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -9183,3 +9183,53 @@ remain open. T1.7 stays in_progress; numbered coverage stays
 Original manuscript bytes and pinned dependencies are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12559 jobs, direct axiom audit of 8986 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6961 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.76 GiB.
+
+
+## Actual ambient ordinary/source height equality and surface-curve exclusion
+
+The ambient ordinary-to-source prime-height comparison is now
+proved. A generic bijective homogeneous coordinate chart map
+induces a bijection on the full localized rings, including rings
+with zero divisors. The proof clears denominators of actual
+homogeneous components. This comparison persists in every
+positive Veronese ring: the clearing exponent is made divisible
+by D while preserving the actual homogeneous preimage degree.
+An actual ring isomorphism after inverting a coordinate preserves
+the heights of all primes meeting that chart.
+
+The actual ordinary radical surface is the quotient by the
+literal ordinary radical relations. Its grading is constructed.
+Equality of the weighted and ordinary defining ideals after
+Z=1 proves that the actual forward coordinate map on the two
+ambient charts is bijective. The generic localization and
+Veronese results therefore apply to the actual ambient map,
+not only to the previously compared curve quotients.
+
+For an actual homogeneous ordinary prime Q containing the
+radical relations, the prime in the actual ordinary surface
+Veronese ring is constructed as the kernel of its actual curve
+evaluation quotient map. Its contraction is proved equal to the
+previously constructed source ideal. Whenever Z is outside Q,
+the two actual ambient prime heights are equal.
+
+The final uniform ordinary-surface-curve exclusion now assumes
+height one only of the prime in the actual ordinary radical
+surface. Height one of the induced source is derived internally.
+Its actual ordinary Hilbert polynomial E*n+beta bounds all
+required source, plane and cover degrees. The final statement
+supplies neither an induced source-height hypothesis nor a
+source point, affine equation, cover field, root or cover bound.
+Its threshold is uniform before all actual ideals, equations,
+integer coefficients and hosts. All coordinate cases and finite
+cover degrees are included.
+
+This closes the algebraic ambient height bridge in P1-MATH-0112
+and strengthens the exclusion recorded in P1-MATH-0111. The
+identification of exceptional curves from a geometric uniform
+covering theorem with these actual prime/Hilbert data, and the
+external uniform covering and point-counting inputs, remain
+open. T1.7 stays in_progress; numbered coverage remains 79/167,
+confirmed improvements remain 112 and Palomar is deferred.
+Original manuscript bytes and pinned dependencies are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12575 jobs, direct axiom audit of 9012 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6996 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.74 GiB.

@@ -371,6 +371,10 @@ import PaperP1
 #print axioms PaperP1.AffineCurveGraphPresentation.point_iff_graph
 #print axioms PaperP1.AffineLineClassification.value_linear
 #print axioms PaperP1.AffineLineClassification.classify
+#print axioms PaperP1.AffineQuotientChartComparison.chartIdeal_map
+#print axioms PaperP1.AffineQuotientChartComparison.combinedEquiv_mk
+#print axioms PaperP1.AffineQuotientChartComparison.quotientEquiv_mk
+#print axioms PaperP1.AffineQuotientChartComparison.chartEquiv_dehomogenization
 #print axioms PaperP1.BinaryEvenSelections.binary_bit
 #print axioms PaperP1.BinaryEvenSelections.selected_coefficients
 #print axioms PaperP1.BinaryEvenSelections.coefficients_selected
@@ -811,6 +815,12 @@ import PaperP1
 #print axioms PaperP1.GradedChartBasis.chart_free_finite
 #print axioms PaperP1.GradedChartBasis.chart_finrank
 #print axioms PaperP1.GradedChartBasis.chart_isDomain
+#print axioms PaperP1.GradedChartLocalization.clear_add
+#print axioms PaperP1.GradedChartLocalization.clear_sum
+#print axioms PaperP1.GradedChartLocalization.map_injective
+#print axioms PaperP1.GradedChartLocalization.homogeneous_clear_degree
+#print axioms PaperP1.GradedChartLocalization.homogeneous_clear
+#print axioms PaperP1.GradedChartLocalization.map_surjective
 #print axioms PaperP1.GradedDehomogenization.component_one
 #print axioms PaperP1.GradedDehomogenization.component_mul
 #print axioms PaperP1.GradedDehomogenization.map_homogeneous
@@ -920,6 +930,11 @@ import PaperP1
 #print axioms PaperP1.GradedVeroneseInclusion.chart_surjective
 #print axioms PaperP1.GradedVeroneseIntegral.homogeneous_integral
 #print axioms PaperP1.GradedVeroneseIntegral.integral
+#print axioms PaperP1.GradedVeroneseLocalization.map_injective
+#print axioms PaperP1.GradedVeroneseLocalization.homogeneous_clear
+#print axioms PaperP1.GradedVeroneseLocalization.map_surjective
+#print axioms PaperP1.GradedVeroneseLocalization.map_bijective
+#print axioms PaperP1.GradedVeroneseLocalization.height_comap
 #print axioms PaperP1.GradedVeroneseMap.mem_veronese
 #print axioms PaperP1.GradedVeroneseMap.map_val
 #print axioms PaperP1.GradedVeroneseMap.surjective
@@ -957,6 +972,7 @@ import PaperP1
 #print axioms PaperP1.HomogeneousChartCoefficientQuotient.chart_surjective
 #print axioms PaperP1.HomogeneousChartCoefficientQuotient.chart_ker
 #print axioms PaperP1.HomogeneousChartCoefficientQuotient.coefficientQuotientEquiv_mk
+#print axioms PaperP1.HomogeneousChartCoordinateChange.equiv_dehomogenization
 #print axioms PaperP1.HomogeneousDenominator.exists_component_ne_zero
 #print axioms PaperP1.HomogeneousDenominator.component_representation
 #print axioms PaperP1.HomogeneousDenominator.mulMap_injective
@@ -1173,6 +1189,7 @@ import PaperP1
 #print axioms PaperP1.LinearHilbertSlopeComparison.multiplicity_eq_slope
 #print axioms PaperP1.LinearRationalGraph.exists_parameters
 #print axioms PaperP1.LocalizationIrreducibleLift.exists_associated
+#print axioms PaperP1.LocalizationPrimeHeightEquiv.height_comap
 #print axioms PaperP1.LocalizedFractionEquiv.fraction_isFractionRing
 #print axioms PaperP1.LocalizedFractionEquiv.equiv_algebraMap
 #print axioms PaperP1.LocalizedQuotientFractionEquiv.map_isPrime
@@ -4755,6 +4772,7 @@ import PaperP1
 #print axioms PaperP1.CriticalOrderBranching.uniform_exception_bound
 #print axioms PaperP1.CriticalOrderBranching.companion_T22_4
 #print axioms PaperP1.CriticalOrdinaryCurveExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalOrdinarySurfaceCurveExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalPolynomialScale.polynomial_lt_scale
 #print axioms PaperP1.CriticalPolynomialScale.source_size_eventually
 #print axioms PaperP1.CriticalRationalPlaneCoverExclusion.eventually_no_dyadic_point
@@ -6675,6 +6693,11 @@ import PaperP1
 #print axioms PaperP1.OrdinaryCurveProjectionDegree.exists_plane_equation
 #print axioms PaperP1.OrdinaryCurveProjectionDegree.exists_rank_bounds
 #print axioms PaperP1.OrdinaryCurveProjectionDegree.exists_degree_bounds
+#print axioms PaperP1.OrdinaryCurveSourceHeight.ordinaryIdeal_le
+#print axioms PaperP1.OrdinaryCurveSourceHeight.surfaceIdeal_prime
+#print axioms PaperP1.OrdinaryCurveSourceHeight.factor_coordinate
+#print axioms PaperP1.OrdinaryCurveSourceHeight.surfaceIdeal_comap
+#print axioms PaperP1.OrdinaryCurveSourceHeight.height_eq
 #print axioms PaperP1.OrdinaryCurveSourceMap.ordinaryPiece_finite
 #print axioms PaperP1.OrdinaryCurveSourceMap.relationIdeal_le_kernel
 #print axioms PaperP1.OrdinaryCurveSourceMap.coordinateMap_mk
@@ -6689,6 +6712,9 @@ import PaperP1
 #print axioms PaperP1.OrdinaryCurveSourcePoint.sourceZ_mem
 #print axioms PaperP1.OrdinaryCurveSourcePoint.sourceZ_not_mem
 #print axioms PaperP1.OrdinaryCurveSourcePoint.point_ideal
+#print axioms PaperP1.OrdinaryRadicalSurface.relation_mem
+#print axioms PaperP1.OrdinaryRadicalSurface.homogeneous
+#print axioms PaperP1.OrdinaryRadicalSurface.chart_bijective
 #print axioms PaperP1.ProjAffineFieldEquiv.equiv_chartMap
 #print axioms PaperP1.ProjChartDehomogenizationNaturality.dehomogenization_natural
 #print axioms PaperP1.ProjChartDehomogenizationNaturality.chart_dehomogenization_congr

@@ -2006,3 +2006,11 @@ public import PaperP1.Algebra.WeightedOrdinaryAffineIdeal
 public import PaperP1.Algebra.OrdinaryWeightedHomogenization
 public import PaperP1.Algebra.GradedInjectiveChartMap
 public import PaperP1.Geometry.OrdinaryCurveAffineChart
+public import PaperP1.Algebra.GradedChartLocalization
+public import PaperP1.Algebra.LocalizationPrimeHeightEquiv
+public import PaperP1.Algebra.AffineQuotientChartComparison
+public import PaperP1.Algebra.GradedVeroneseLocalization
+public import PaperP1.Algebra.HomogeneousChartCoordinateChange
+public import PaperP1.Geometry.OrdinaryRadicalSurface
+public import PaperP1.Geometry.OrdinaryCurveSourceHeight
+public import PaperP1.Asymptotics.CriticalOrdinarySurfaceCurveExclusion
