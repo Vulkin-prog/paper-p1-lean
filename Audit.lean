@@ -3912,11 +3912,15 @@ import PaperP1
 #print axioms PaperP1.PhysicalClassData.targetProduct_pos
 #print axioms PaperP1.PhysicalClassData.sourceProduct_le
 #print axioms PaperP1.PhysicalClassData.targetProduct_cast
+#print axioms PaperP1.PhysicalCoordinateErasure.exists_erasure
+#print axioms PaperP1.PhysicalCoordinateErasure.active_no_exact
 #print axioms PaperP1.PhysicalNormalizedMatches.same_dilation_intersection
 #print axioms PaperP1.PhysicalNormalizedMatches.physical_card
 #print axioms PaperP1.PhysicalNormalizedMatches.intersection_union
 #print axioms PaperP1.PhysicalNormalizedMatches.physical_a_bound
 #print axioms PaperP1.PhysicalNormalizedMatches.physical_b_bound
+#print axioms PaperP1.PhysicalRelationSections.section_subspace
+#print axioms PaperP1.PhysicalSubspaceRegularization.uniform_subspace
 #print axioms PaperP1.PhysicalWindowRelations.mem_code
 #print axioms PaperP1.PhysicalWindowRelations.toEffective_surjective
 #print axioms PaperP1.PhysicalWindowRelations.localValue_range
@@ -6298,6 +6302,11 @@ import PaperP1
 #print axioms PaperP1.NearLinearThreshold.scale_bound_eventually
 #print axioms PaperP1.NearLinearThreshold.window_bound_eventually
 #print axioms PaperP1.NearLinearThreshold.threshold_ge_power
+#print axioms PaperP1.NearPrimitivePhysicalRegularization.uniform_subspace
+#print axioms PaperP1.NearPrimitiveTripleHostsUnderBCN.uniform_hosts
+#print axioms PaperP1.NearPrimitiveTripleMassUnderBCN.rank_bound
+#print axioms PaperP1.NearPrimitiveTripleMassUnderBCN.uniform_mass
+#print axioms PaperP1.NearPrimitiveTripleMassUnderBCN.main_12_1
 #print axioms PaperP1.NoSingletonJointMassUnderInputs.uniform_range
 #print axioms PaperP1.NoSingletonJointMassUnderInputs.uniform_weighted
 #print axioms PaperP1.NominalQuadraticFactorialMomentsUnderInputs.uniform_fixed
@@ -6432,6 +6441,7 @@ import PaperP1
 #print axioms PaperP1.PlaneTernaryConfinement.first_term_bound
 #print axioms PaperP1.PlaneTernaryConfinement.uniform_count
 #print axioms PaperP1.PointwiseJointRankCap.uniform_bound
+#print axioms PaperP1.PointwiseRankWeightCap.uniform_bound
 #print axioms PaperP1.PoissonCharlierConversion.errorConstant_pos
 #print axioms PaperP1.PoissonCharlierConversion.critical_bound
 #print axioms PaperP1.PoissonCharlierConversion.regular_card_eventually
@@ -9938,6 +9948,9 @@ import PaperP1
 #print axioms PaperP1.VariableRelationCore.weighted_bound
 #print axioms PaperP1.WeakPairActivity.coefficient_bound
 #print axioms PaperP1.WeakPairActivity.finite_bound
+#print axioms PaperP1.WeakTripleEffectiveRestriction.kernel_finrank
+#print axioms PaperP1.WeakTripleEffectiveRestriction.kernel_bound
+#print axioms PaperP1.WeakTripleEffectiveRestriction.exists_restriction
 #print axioms PaperP1.WeightedPrimitiveMass.mem_families
 #print axioms PaperP1.WeightedPrimitiveMass.rankMass_nonneg
 #print axioms PaperP1.WeightedPrimitiveMass.fixed_weight

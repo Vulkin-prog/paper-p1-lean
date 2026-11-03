@@ -2685,3 +2685,11 @@ public import PaperP1.Arithmetic.SmallChannelUniqueness
 public import PaperP1.Arithmetic.ExactUnitDeletion
 public import PaperP1.Arithmetic.OffsetNonalignmentOn
 public import PaperP1.Asymptotics.ExactUnitDeletionUniform
+public import PaperP1.Arithmetic.PhysicalRelationSections
+public import PaperP1.Arithmetic.PhysicalCoordinateErasure
+public import PaperP1.Arithmetic.PhysicalSubspaceRegularization
+public import PaperP1.Model.WeakTripleEffectiveRestriction
+public import PaperP1.Asymptotics.NearPrimitivePhysicalRegularization
+public import PaperP1.Asymptotics.NearPrimitiveTripleHostsUnderBCN
+public import PaperP1.Asymptotics.PointwiseRankWeightCap
+public import PaperP1.Asymptotics.NearPrimitiveTripleMassUnderBCN
