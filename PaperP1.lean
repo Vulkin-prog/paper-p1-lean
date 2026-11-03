@@ -1758,3 +1758,11 @@ public import PaperP1.Geometry.SourceProjectiveMap
 public import PaperP1.Algebra.GradedDehomogenization
 public import PaperP1.Geometry.ProjRadicalCharts
 public import PaperP1.Geometry.SourceProjectiveFinite
+public import PaperP1.Algebra.GradedDehomogenizationQuotient
+public import PaperP1.Algebra.QuotientFreeBasis
+public import PaperP1.Algebra.GradedChartBasis
+public import PaperP1.Algebra.SourceVeroneseChartBasis
+public import PaperP1.Geometry.ProjRadicalFlat
+public import PaperP1.Geometry.SourceProjectiveFlat
+public import PaperP1.Geometry.ProjRadicalRank
+public import PaperP1.Geometry.SourceProjectiveRank

@@ -7272,3 +7272,55 @@ counts remain open. T1.7 stays in_progress, coverage stays 79/167,
 confirmed improvements stay 106 and Palomar remains deferred.
 
 Verified with Lean v4.36.0-rc2: full build 12009 jobs, direct axiom audit of 8103 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 5813 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.78 GiB.
+
+
+## P1-MATH-0106 extended — The actual finite flat cover has constant rank 2^k
+
+The actual projective source morphism is now proved finite,
+flat, surjective and of constant scheme rank 2^k. The rank statement
+is the equality of Mathlib's Scheme.Hom.finrank with 2^k at every
+point of the actual native Veronese Proj. It applies over every
+field, to arbitrary coefficients including zero, for positive D
+and source root counts at most 2D. In particular the geometric
+flatness and constant-rank assertions do not require generic
+square-class independence or characteristic zero.
+
+The degree-one dehomogenization map has proved kernel generated
+by b-1, and gives an actual ring equivalence from that quotient to
+the homogeneous localization. The proof constructs the inverse
+evaluation using the ordinary localization, where b maps to one.
+A literal ring basis is transported to the quotient by tensor
+base change, then through the constructed ring equivalences and
+coefficient transport. This proves that a free graded ring map
+has an actual free map on each degree-one chart, with basis the
+dehomogenized original basis. Homogeneity of the original basis
+is used for the explicit fraction formula, not assumed for the
+base-change basis argument itself.
+
+For the source, the exact chart basis vector is the previously
+constructed normal basis vector divided by f(b) to its explicit
+radical-count weight. Every nonzero native chart is a domain and
+the actual source chart module is finite free of rank 2^k. The
+base and source actions are the actual homogeneous-localization
+map, not auxiliary actions assumed compatible.
+
+The actual projective map is flat by those chart bases and Zariski
+locality. Each chart square is proved to be a pullback. Mathlib's
+finite-flat scheme rank is then computed on that pullback from
+the literal chart basis. The proved degree-one target cover gives
+constant rank everywhere, and its positive value proves
+surjectivity. This establishes the projective cover rank, not
+only the rank of its affine cone.
+
+This extends P1-MATH-0106 without a new identifier. The geometric
+base is still the actual standard Veronese Proj; its explicit
+identification with the projective plane remains open. The
+degree-zero function-field bridge and its identification with
+the manuscript's generic field, Hilbert computation, surface
+degree 2^k D^2, curve-degree identities and external host counts
+remain open. The constant scheme rank does not replace those
+separate alignment steps. T1.7 stays in_progress, numbered
+coverage stays 79/167, confirmed improvements stay 106 and
+Palomar remains deferred.
+
+Verified with Lean v4.36.0-rc2: full build 12061 jobs, direct axiom audit of 8129 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 5839 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.71 GiB.
