@@ -2708,3 +2708,9 @@ public import PaperP1.Probability.PositionalCoefficientExpansion
 public import PaperP1.Probability.PositivePositionalConvolution
 public import PaperP1.Probability.PositionalCompoundPoisson
 public import PaperP1.Probability.PositionalProbabilityMeasure
+public import PaperP1.Probability.PositionalBernoulliProducts
+public import PaperP1.Probability.PositionalDeficitNorm
+public import PaperP1.Model.PositionalRetainedReference
+public import PaperP1.Probability.PositionalPairConversion
+public import PaperP1.Asymptotics.PositionalPairConversionRate
+public import PaperP1.Asymptotics.PositionalRegularApproximationUnderInputs
