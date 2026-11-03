@@ -5124,6 +5124,8 @@ import PaperP1
 #print axioms PaperP1.AllAlignedTargetTripleMass.uniform_mass
 #print axioms PaperP1.AllCardinalityConnectedUnderInputs.uniform_bound
 #print axioms PaperP1.AllCardinalityConnectedUnderInputs.companion_T16_1
+#print axioms PaperP1.AllCardinalityCoreMassUnderInputs.uniform_bound
+#print axioms PaperP1.AllCardinalityCoreMassUnderInputs.companion_T16_2
 #print axioms PaperP1.AllPairDeficitUnderInputs.article_15_9
 #print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound_succ
 #print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound
@@ -5679,6 +5681,7 @@ import PaperP1
 #print axioms PaperP1.FixedPlaneSplitCount.scaled_offset_bounds
 #print axioms PaperP1.FixedPlaneSplitCount.pairFibre_card
 #print axioms PaperP1.FixedPlaneSplitCount.uniform_count
+#print axioms PaperP1.FixedPositiveCoreMassUnderInputs.uniform_bound
 #print axioms PaperP1.FixedPrimitiveMassUnderInputs.uniform_triples
 #print axioms PaperP1.FixedPrimitiveMassUnderInputs.uniform_fixed
 #print axioms PaperP1.FixedProjectedMotifs.exists_even_order
@@ -5814,6 +5817,8 @@ import PaperP1
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.meanCap_pos
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.errorConstant_pos
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.uniform_actual_bound
+#print axioms PaperP1.HighNullityPairMassUnderInputs.aligned_cover
+#print axioms PaperP1.HighNullityPairMassUnderInputs.uniform_mass
 #print axioms PaperP1.HomogeneousChannelMass.finite_pair_bound
 #print axioms PaperP1.HomogeneousChannelMass.uniform_fixed_channel
 #print axioms PaperP1.HomogeneousChannelMass.raw_principal_regular
@@ -5888,6 +5893,9 @@ import PaperP1
 #print axioms PaperP1.LargeKernelTupleCounts.beta_bounds
 #print axioms PaperP1.LargeKernelTupleCounts.exponent_identity
 #print axioms PaperP1.LargeKernelTupleCounts.large_branch
+#print axioms PaperP1.LargePositiveCoreTail.parameters
+#print axioms PaperP1.LargePositiveCoreTail.uniform_rank
+#print axioms PaperP1.LargePositiveCoreTail.uniform_joint
 #print axioms PaperP1.LargeSelectedKernelTheorem.uniform_source_counts
 #print axioms PaperP1.LargeSelectedKernelTheorem.companion_T1_6
 #print axioms PaperP1.LargeSmoothExceptionalSet.exceptional_count
@@ -8260,6 +8268,8 @@ import PaperP1
 #print axioms PaperP1.ContactPairMass.pair_span
 #print axioms PaperP1.ContactPairMass.joint_le_union_rank
 #print axioms PaperP1.ContactPairMass.joint_le_relation_ratio
+#print axioms PaperP1.CoreCanonicalComponents.singleton_loss_zero
+#print axioms PaperP1.CoreCanonicalComponents.block_card
 #print axioms PaperP1.CountObservables.dyadic_subset_cutoff
 #print axioms PaperP1.CountObservables.countMoment_eq_finite
 #print axioms PaperP1.CountObservables.count_observable_integral_eq_finite

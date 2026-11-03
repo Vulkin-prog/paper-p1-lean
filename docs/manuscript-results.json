@@ -12831,11 +12831,29 @@
       "source": "companion_sections/cores.tex",
       "line": 622,
       "sha256": "e5c6ebd716c5f8a8c0e132b36197a29e569891cdb0cc61b3d3d5bef5877ceec6",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "conditional",
+      "lean_declarations": [
+        "PaperP1.CoreCanonicalComponents.singleton_loss_zero",
+        "PaperP1.CoreCanonicalComponents.block_card",
+        "PaperP1.HighNullityPairMassUnderInputs.aligned_cover",
+        "PaperP1.HighNullityPairMassUnderInputs.uniform_mass",
+        "PaperP1.LargePositiveCoreTail.parameters",
+        "PaperP1.LargePositiveCoreTail.uniform_rank",
+        "PaperP1.LargePositiveCoreTail.uniform_joint",
+        "PaperP1.FixedPositiveCoreMassUnderInputs.uniform_bound",
+        "PaperP1.AllCardinalityCoreMassUnderInputs.uniform_bound",
+        "PaperP1.AllCardinalityCoreMassUnderInputs.companion_T16_2"
+      ],
+      "literature_inputs": [
+        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+        "P1-GEO-ORDINARY-SURFACE-COVER",
+        "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0139"
+      ],
+      "notes": "Companion T16.2 is complete conditionally, with the stronger positive\njoint-mass exponent1 instead of4/5. The bound is uniform over all actual\ncardinalities, all actual dyadic subgrounds and all actual t-cores whose\nrelative nullity lies in (L/2,eta*L]. The source's compatible population is\nincluded; the formal inequality also permits incompatible systems, which\nhave actual joint mass zero. It holds for even t>=2, eta>=0 and t>=eta+2,\nthus includes the source's eta>1 regime without imposing that unnecessary\nrestriction. Only the same three existing finite geometric properties\nremain explicit theorem arguments. No desired mass estimate is a premise.\n\nCoreCanonicalComponents proves that a singleton canonical part forces its\ncoordinate projection to be the zero linear map, so its exact deletion\nnullity loss is zero. Consequently every t-core with t>=2 has only\ncanonical components of cardinality at least two, with no compatibility or\ncardinality restriction. This is a structural statement for actual\nsquare-class relation kernels, not the size<256 ten-core moment ratio.\n\nHighNullityPairMassUnderInputs handles the entire size-two population with\nrelative nullity>L/2. The proved uniform enlarged alignment rank bound\nexcludes every aligned coefficient height>=3. Exact orientation and\ncoprimality leave only the literal1:1 and1:2 boundary populations. Their\nfull centered activities are already bounded unconditionally at rate1.\nThe entire nonaligned activity has the existing conditional rate1.\nEvery dependent pair satisfies actual q<=2|c|, including q=0, so positive\nunion bounds and a fixed-factor absorption give weighted joint mass rate1\nfor ALL such high-nullity pairs. No Private, good-source, regularity,\nselected-unit or affine-compatibility filter is imposed.\n\nLargePositiveCoreTail proves an unconditional sufficiently large\ncardinality rank-mass and joint-mass bound of rate3/2. For arbitrary even\nt>=2 it verifies all multi-anchor parameter conditions with A=8t,\nbeta=1-1/(4t), sigma=1-1/(16t). The moderate independent exponent is exactly\n-t+1/2. The positive saturated decay parameter selects a finite size s\nbefore N. Multiplying the completed multi-anchor independent budgets by\nthe actual relative-rank amplification N^(eta+small margin) gives rate3/2\nwhen t>=eta+2, and the actual joint mass is at most that rank weight. Each\nblock may use a different actual heavy relation. Heterogeneous marginals,\nzero marginals and all actual core populations are retained.\n\nFixedPositiveCoreMassUnderInputs proves joint mass rate1 for every\nprescribed bounded cardinality range. Sizes>=3 use the completed actual\nno-singleton seed catalog and positive extension propagation; size2 uses\nthe new high-nullity pair estimate. This avoids an exceptional activation\nevent and a Holder argument with high count moments. The full\nAllCardinalityCoreMassUnderInputs.uniform_bound selects the unconditional\nlarge-cardinality cutoff first, the finite coarse and pair geometric\nparameter bundles second, and N0 last. It then combines the finite range\nat rate1 with the unconditional rate3/2 tail. Final geometric margins are\nepsilon/32 for the coarse bundle and sizeCap(epsilon/256) for the pair\nbundle. companion_T16_2 supplies the literal source exponent4/5.\n\nFinding P1-MATH-0139 records the improvement. Unconditional coverage stays\n87/167; conditional coverage increases23 to24; confirmed improvements\nincrease138 to139. T16.3 and the final stopped expansion remain open at\nthis checkpoint. No original manuscript bytes, dependencies, axioms,\nPaper C port or Palomar action are added.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13543 jobs); direct axiom audit passed for 10407 declarations using only propext, Classical.choice and Quot.sound; all 8765 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.83 GiB."
     },
     {
       "label": "p1:core:bounded-nullity",

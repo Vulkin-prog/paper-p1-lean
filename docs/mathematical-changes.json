@@ -10047,6 +10047,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "fc27c655342de0585835f652e8f85ff85868cea3"
+    },
+    {
+      "id": "P1-MATH-0139",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:core:positive-core",
+        "number": "T16.2",
+        "page": 58,
+        "source": "companion_sections/cores.tex",
+        "line": 622,
+        "statement_sha256": "e5c6ebd716c5f8a8c0e132b36197a29e569891cdb0cc61b3d3d5bef5877ceec6"
+      },
+      "original_assumption": "Proposition T16.2 states exponent4/5 for compatible high-nullity cores with eta>1, with bounded orders handled through an exceptional event and Holder using fixed count moments.",
+      "finding": "The positive all-cardinality high-nullity core bound in companion\nT16.2 improves from N^(-4/5+epsilon) to N^(-1+epsilon) under the same finite\ngeometric properties. Every positive-projection core has no singleton\ncanonical components. Its bounded cardinalities>=3 therefore have the\ncompleted actual seed-catalog rate1 directly, while its high-nullity pairs\nhave rate1 by excluding every aligned height>=3 and using the two literal\nboundary populations plus the full nonaligned activity. This replaces the\nexceptional activation event and high-moment Holder argument. The\nsufficiently large cardinality sector is independently unconditional at\nrate3/2 from the complete multi-anchor budgets and actual relative-rank\namplification. The formal scope includes all eta>=0 and even t>=2 with\nt>=eta+2, all actual dyadic subgrounds and all affine-incompatible systems\nwith joint mass zero. The cutoff and finite geometric bundles precede N.",
+      "impact": "Completes the all-cardinality positive core proposition conditionally and improves the exponent to1; large orders have unconditional exponent3/2. The eta>1 restriction can be dropped.",
+      "proposed_revision": "State exponent1 for eta>=0, even t>=2 and t>=eta+2. Bound the fixed orders directly via no-singleton canonical components and a complete high-nullity pair bound, retaining the unconditional multiple-anchor argument for the tail.",
+      "evidence": [
+        "PaperP1.CoreCanonicalComponents.singleton_loss_zero",
+        "PaperP1.CoreCanonicalComponents.block_card",
+        "PaperP1.HighNullityPairMassUnderInputs.aligned_cover",
+        "PaperP1.HighNullityPairMassUnderInputs.uniform_mass",
+        "PaperP1.LargePositiveCoreTail.parameters",
+        "PaperP1.LargePositiveCoreTail.uniform_rank",
+        "PaperP1.LargePositiveCoreTail.uniform_joint",
+        "PaperP1.FixedPositiveCoreMassUnderInputs.uniform_bound",
+        "PaperP1.AllCardinalityCoreMassUnderInputs.uniform_bound",
+        "PaperP1.AllCardinalityCoreMassUnderInputs.companion_T16_2"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13543 jobs); direct axiom audit passed for 10407 declarations using only propext, Classical.choice and Quot.sound; all 8765 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.83 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

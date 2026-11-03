@@ -2491,3 +2491,8 @@ public import PaperP1.Model.ConnectedParticipatingWindows
 public import PaperP1.Asymptotics.FixedConnectedWeightedUnderInputs
 public import PaperP1.Asymptotics.ConnectedBoundedNullityTail
 public import PaperP1.Asymptotics.AllCardinalityConnectedUnderInputs
+public import PaperP1.Model.CoreCanonicalComponents
+public import PaperP1.Asymptotics.HighNullityPairMassUnderInputs
+public import PaperP1.Asymptotics.LargePositiveCoreTail
+public import PaperP1.Asymptotics.FixedPositiveCoreMassUnderInputs
+public import PaperP1.Asymptotics.AllCardinalityCoreMassUnderInputs
