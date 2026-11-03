@@ -2060,3 +2060,11 @@ public import PaperP1.Arithmetic.SourceIntegerLift
 public import PaperP1.Arithmetic.SourceIntegerPoints
 public import PaperP1.Arithmetic.SourceIntegerPointHeight
 public import PaperP1.Geometry.SourceIntegerCurvePoint
+public import PaperP1.Geometry.ProjectiveCurveData
+public import PaperP1.Arithmetic.NormalizedIntegerPoints
+public import PaperP1.Arithmetic.UniformNormalizedCurvePointCount
+public import PaperP1.Algebra.SourceCurveLinearHilbert
+public import PaperP1.Geometry.SourceEmbeddedCurveLinearHilbert
+public import PaperP1.Geometry.SourceProjectiveCurveData
+public import PaperP1.Arithmetic.UniformSourceCurvePointCount
+public import PaperP1.Asymptotics.SourceCurvePointCover

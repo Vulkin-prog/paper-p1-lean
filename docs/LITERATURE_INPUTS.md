@@ -9391,3 +9391,67 @@ conclusion error is confirmed; source bytes and dependencies
 are unchanged.
 
 Verified under Lean v4.36.0-rc2: full build passed (12667 jobs); direct axiom audit passed for 9127 declarations using only propext, Classical.choice and Quot.sound; all 7154 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.53 GiB.
+
+
+## One generic curve input and the actual source finite-cover count
+
+A single explicit generic curve-count property now covers
+both actual ordinary curves and actual curves in the chosen
+weighted-source embedding. Its input data are a homogeneous
+prime ideal, a positive rational degree, the actual linear
+Hilbert polynomial, a normalized coordinate chart and an
+integer height box. The ambient coordinate count and degree cap
+are fixed before all curves, coefficients, charts and heights.
+
+This generic UniformNormalizedCurvePointCount.UniformBound is
+an UNPROVED ARGUMENT, not an axiom or a newly proved version of
+Pila. It includes the primary curve theorem and its translation
+to actual prime/Hilbert data, non-geometrically-integral curves
+over Q and the normalized chart, including the height-one case.
+Primary sources are Pila, Theorem A, Astérisque 228 (1995),
+https://www.numdam.org/item/AST_1995__228__183_0.pdf , and the
+integral projective curve formulation in P3 in Salberger,
+https://arxiv.org/pdf/2311.05561v1 , Lemma 3. The higher-dimensional
+ambient/prime-presentation translation is not claimed proved.
+
+The specialization of this one property to the previous actual
+ordinary curve-count property is proved. Its specialization to
+the actual chosen source-embedding point sets is also proved.
+The two applications are therefore derived from a single generic
+curve input, rather than silently identifying incompatible
+embeddings or introducing an unexplained new source count.
+
+To construct the source curve data, actual finite graded module
+rank gives the actual source Hilbert slope. Existence of its
+Hilbert polynomial then gives an actual affine polynomial with
+slope equal to its actual multiplicity. This is transported to
+the chosen embedding by equality of actual piece dimensions.
+The resulting chosen-coordinate degree is proved positive for
+every actual height-one source projective curve. No degree,
+Hilbert polynomial or positivity assumption is added to that
+curve data: they are constructed from the actual point and its
+height-one property.
+
+SourceCurvePointCover.finite_cover_bound now counts literal
+integer hosts from an actual finite collection of such curves.
+Every curve meeting a covered admissible literal root point has
+actual degree at least 2D, by the proved source-degree bridge.
+Filtering to these curves and applying the generic curve input
+gives #hosts <= #exceptional_points + #curves*A*H^(1/(2D)+delta).
+Exact host recovery proves injectivity of the actual lift.
+Both selected-set even-selection injectivities and their actual
+direct sum remain explicit in this general source argument.
+
+The covering collection and its exceptional set are actual data
+in this intermediate theorem; a surface-cover theorem is not
+assumed proved. The final general half-power estimate still
+requires a uniform surface-cover application in the chosen
+source embedding and the numerical/height composition. The
+primary geometric input proofs remain open. The degree-(a,1)
+graph composition remains valid under its explicit curve and
+ordinary surface-cover inputs. T1.7 stays in_progress; numbered
+coverage remains 79/167, confirmed improvements remain 112,
+and Palomar is deferred. No manuscript-conclusion error is
+confirmed; original source bytes and dependencies are unchanged.
+
+Verified under Lean v4.36.0-rc2: full build passed (12683 jobs); direct axiom audit passed for 9144 declarations using only propext, Classical.choice and Quot.sound; all 7183 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.50 GiB.

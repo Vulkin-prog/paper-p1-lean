@@ -1596,6 +1596,9 @@ import PaperP1
 #print axioms PaperP1.SourceCurveFiniteParameters.finite
 #print axioms PaperP1.SourceCurveFiniteParameters.hasParameters
 #print axioms PaperP1.SourceCurveFiniteParameters.exists_polynomial
+#print axioms PaperP1.SourceCurveLinearHilbert.hasSlope
+#print axioms PaperP1.SourceCurveLinearHilbert.affine_polynomial
+#print axioms PaperP1.SourceCurveLinearHilbert.affine_polynomial_multiplicity
 #print axioms PaperP1.SourceCurvePlaneEquationHilbert.base_hasParameters
 #print axioms PaperP1.SourceCurvePlaneEquationHilbert.source_hasParameters
 #print axioms PaperP1.SourceCurvePlaneEquationHilbert.exists_polynomial
@@ -3320,6 +3323,8 @@ import PaperP1
 #print axioms PaperP1.NormalizedDefectSources.covered_sources_card
 #print axioms PaperP1.NormalizedDefectSources.bad_sources_subset
 #print axioms PaperP1.NormalizedDefectSources.bad_sources_card
+#print axioms PaperP1.NormalizedIntegerPoints.mem_box
+#print axioms PaperP1.NormalizedIntegerPoints.mem_points
 #print axioms PaperP1.NormalizedMotifs.motif_mem_family
 #print axioms PaperP1.NormalizedMotifs.family_card
 #print axioms PaperP1.NormalizedMotifs.offset_difference_bound
@@ -4459,8 +4464,13 @@ import PaperP1
 #print axioms PaperP1.UniformFixedSourceCertificates.certificateTargets_le_power_eventually
 #print axioms PaperP1.UniformFixedSourceCertificates.critical_band_certificateTargets
 #print axioms PaperP1.UniformFixedSourceCertificates.companion_T4_2
+#print axioms PaperP1.UniformNormalizedCurvePointCount.above_degree_bound
+#print axioms PaperP1.UniformNormalizedCurvePointCount.ordinary_points
+#print axioms PaperP1.UniformNormalizedCurvePointCount.ordinary_specialization
 #print axioms PaperP1.UniformOrdinarySurfaceCover.decay_mono
 #print axioms PaperP1.UniformOrdinarySurfaceCover.subpower_parameters
+#print axioms PaperP1.UniformSourceCurvePointCount.source_points
+#print axioms PaperP1.UniformSourceCurvePointCount.uniform_bound
 #print axioms PaperP1.UnionMatchDensity.divisible_lcm_iff
 #print axioms PaperP1.UnionMatchDensity.solutions_intersection
 #print axioms PaperP1.UnionMatchDensity.union_abs_error
@@ -5761,6 +5771,7 @@ import PaperP1
 #print axioms PaperP1.SmoothSelectionCertificates.square_budget
 #print axioms PaperP1.SmoothSelectionCertificates.product_budget
 #print axioms PaperP1.SmoothSelectionCertificates.source_certificates
+#print axioms PaperP1.SourceCurvePointCover.finite_cover_bound
 #print axioms PaperP1.SourceTranslationCount.uniform_counts
 #print axioms PaperP1.SourceTranslationCount.all_heights
 #print axioms PaperP1.SourceTranslationCount.leading_counts
@@ -6888,6 +6899,7 @@ import PaperP1
 #print axioms PaperP1.ProjRankOneQuadraticDescent.parametrized_isSquare
 #print axioms PaperP1.ProjSurjectiveClosedImmersion.restriction_closedImmersion
 #print axioms PaperP1.ProjSurjectiveClosedImmersion.map_closedImmersion
+#print axioms PaperP1.ProjectiveCurveData.degree_unique
 #print axioms PaperP1.SourceAffineCurveDegreeBound.multiplicity_ge_twoD
 #print axioms PaperP1.SourceCurveAffineRadicalCover.chartEquiv_radicand
 #print axioms PaperP1.SourceCurveAffineRadicalCover.exists_cover
@@ -6928,6 +6940,8 @@ import PaperP1
 #print axioms PaperP1.SourceCurveProjectivePointData.coordinate_mem
 #print axioms PaperP1.SourceCurveProjectivePointData.coordinate_ne_zero
 #print axioms PaperP1.SourceEmbeddedCurveDegreeBound.multiplicity_ge_twoD
+#print axioms PaperP1.SourceEmbeddedCurveLinearHilbert.exists_affine_polynomial
+#print axioms PaperP1.SourceEmbeddedCurveLinearHilbert.degree_pos
 #print axioms PaperP1.SourceEmbeddedCurvePointData.point_eq_embedding
 #print axioms PaperP1.SourceEmbeddedCurvePointData.point_ideal
 #print axioms PaperP1.SourceEmbeddedCurvePointData.ideal_prime
@@ -6954,6 +6968,9 @@ import PaperP1
 #print axioms PaperP1.SourceProjectiveAffineFieldCompatibility.chart_dehomogenization_natural
 #print axioms PaperP1.SourceProjectiveAffineFieldCompatibility.equiv_comp_map
 #print axioms PaperP1.SourceProjectiveCurveBoundedDegree.exists_bounded_equation
+#print axioms PaperP1.SourceProjectiveCurveData.degree_pos
+#print axioms PaperP1.SourceProjectiveCurveData.toCurve_ideal
+#print axioms PaperP1.SourceProjectiveCurveData.toCurve_degree
 #print axioms PaperP1.SourceProjectiveCurveDegree.exists_polynomial
 #print axioms PaperP1.SourceProjectiveCurveDegree.exists_degree_formula
 #print axioms PaperP1.SourceProjectiveCurveEmbeddingHilbert.piece_finrank
