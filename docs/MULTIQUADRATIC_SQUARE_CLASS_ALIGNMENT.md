@@ -1952,3 +1952,50 @@ become 109, and Palomar remains deferred. Original manuscript bytes
 and the Lean/Mathlib pins are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12421 jobs, direct axiom audit of 8740 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6639 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.99 GiB.
+
+
+## Actual affine-curve equation, fraction field, and common-quotient exclusion
+
+The common-quotient exclusion now applies to the actual coordinate
+domain F[X,Y]/(C) and its actual fraction field, for an irreducible
+plane equation C over any characteristic-zero field. The generic
+coordinates are constructed from the quotient and fraction maps;
+their actual evaluation kernel is proved to be the principal ideal
+(C). Positive degree in Y proves the first coordinate transcendental.
+Every actual integral point satisfying C(X,Y)=0 gives the exact kernel
+containment needed to specialize the constructed graph equation.
+Thus neither transcendence of an abstract coordinate nor an assumed
+coordinate-ideal containment remains in the actual-curve cutoff.
+
+The graph relation p(X)-Y*q(X) is proved irreducible when p,q are
+coprime and q is nonzero. A relation in the actual curve function
+field makes C divide this polynomial, so the actual irreducible C is
+associated to the graph relation. Its degree in Y is proved exactly
+one, and its points are proved exactly equivalent to the cross-
+multiplied graph equation. This identifies the actual plane equation,
+rather than only supplying a rational function with selected matches.
+
+Both generic coordinates are proved to generate the entire actual
+fraction field: every fraction is represented by quotient classes of
+two actual bivariate polynomials. When the second coordinate satisfies
+the graph relation, the first coordinate alone generates that field.
+An actual F-algebra equivalence with RatFunc F is constructed, sending
+the rational indeterminate to the actual first coordinate.
+
+The explicit admissible-integral-point bound and the critical-band
+exclusion are assembled for this actual curve equation and actual
+fraction field. The large-scale threshold precedes the coefficient
+field, the curve equation, all equation data, constants and hosts.
+Curve-coefficient height and auxiliary coefficient height do not
+enter it. The remaining geometric input is still the common-quotient
+identities and the bounded exceptional set. Their derivation from the
+original radical source curve, its genus/branching/divisor theory,
+and the final uniform point counts remain open. Rationality here
+concerns the plane image's function field, not the function field
+of the radical source cover. This extends P1-MATH-0109; it adds no
+new numbered coverage or separate finding. Coverage stays 79/167,
+confirmed improvements stay 109, T1.7 stays in_progress, and Palomar
+remains deferred. Original sources and compiler/dependency pins are
+unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12431 jobs, direct axiom audit of 8759 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6665 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.97 GiB.

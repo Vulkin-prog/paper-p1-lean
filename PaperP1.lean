@@ -1937,3 +1937,8 @@ public import PaperP1.Algebra.OffsetCommonQuotientGraph
 public import PaperP1.Algebra.BivariateGraphSpecialization
 public import PaperP1.Diophantine.DisjointCommonQuotientBound
 public import PaperP1.Asymptotics.CriticalCommonQuotientExclusion
+public import PaperP1.Algebra.AffineCurveFunctionField
+public import PaperP1.Algebra.AffineCurveGraphPresentation
+public import PaperP1.Algebra.AffineCurveFieldGeneration
+public import PaperP1.Diophantine.CurveCommonQuotientBound
+public import PaperP1.Asymptotics.CriticalCurveCommonQuotientExclusion
