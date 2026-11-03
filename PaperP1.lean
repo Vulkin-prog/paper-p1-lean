@@ -2403,3 +2403,13 @@ public import PaperP1.Combinatorics.SeedComplementMass
 public import PaperP1.Model.ChosenRelationCore
 public import PaperP1.Model.LargeCoreFamilyCover
 public import PaperP1.Model.OriginalTwoAnchorWitnesses
+public import PaperP1.Asymptotics.SmallCoreDeficitReduction
+public import PaperP1.Asymptotics.SmallCorePairMassUnderInputs
+public import PaperP1.Asymptotics.SublogCardinalityCap
+public import PaperP1.Combinatorics.RestrictedSeedComplements
+public import PaperP1.Model.AllPairDeficitMonotonicity
+public import PaperP1.Model.ConnectedComplementDeficit
+public import PaperP1.Model.IndependentDeficitMonotonicity
+public import PaperP1.Model.SmallCoreFamilyCover
+public import PaperP1.Model.SmallCorePairDeficit
+public import PaperP1.Model.SmallCoreRankRetention

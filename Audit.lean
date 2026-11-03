@@ -6461,6 +6461,10 @@ import PaperP1
 #print axioms PaperP1.SignedSourceProfileUnderInputs.scaled_mainTerm
 #print axioms PaperP1.SignedSourceProfileUnderInputs.unscale
 #print axioms PaperP1.SignedSourceProfileUnderInputs.uniform_all_ordered
+#print axioms PaperP1.SmallCoreDeficitReduction.uniform_source
+#print axioms PaperP1.SmallCoreDeficitReduction.growing_range_reduction
+#print axioms PaperP1.SmallCorePairMassUnderInputs.uniform_pair_source
+#print axioms PaperP1.SmallCorePairMassUnderInputs.uniform_pair_families
 #print axioms PaperP1.SmallKernelBlockCount.logarithmic_blocks
 #print axioms PaperP1.SmallKernelBlockCount.arbitrary_selected_blocks
 #print axioms PaperP1.SmallKernelLcmGrowth.product_budget
@@ -6517,6 +6521,7 @@ import PaperP1
 #print axioms PaperP1.SplitTupleExposure.source_exposure
 #print axioms PaperP1.SquareCertificateCount.uniform_count
 #print axioms PaperP1.SquareTupleCount.square_tuple_count
+#print axioms PaperP1.SublogCardinalityCap.uniform_cap
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_joint_mass
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_factorial
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_ordinary
@@ -7322,6 +7327,8 @@ import PaperP1
 #print axioms PaperP1.ReplicaWeightedCover.product_weight
 #print axioms PaperP1.ReplicaWeightedCover.seed_sum
 #print axioms PaperP1.ReplicaWeightedCover.weighted_cover
+#print axioms PaperP1.RestrictedSeedComplements.fiber_bound
+#print axioms PaperP1.RestrictedSeedComplements.cover_bound
 #print axioms PaperP1.RetainedFamilyEnumeration.retained_split
 #print axioms PaperP1.RetainedFamilyEnumeration.direct_disjoint_compressed
 #print axioms PaperP1.RetainedFamilyEnumeration.compressed_pair_unique
@@ -7987,6 +7994,8 @@ import PaperP1
 #print axioms PaperP1.AllAlignedPairs.classification
 #print axioms PaperP1.AllAlignedPairs.private_channel_subset
 #print axioms PaperP1.AllAlignedPairs.principal_subset
+#print axioms PaperP1.AllPairDeficitMonotonicity.nonneg
+#print axioms PaperP1.AllPairDeficitMonotonicity.deficit_mono
 #print axioms PaperP1.AllPairExtensionDeficit.seed_subset
 #print axioms PaperP1.AllPairExtensionDeficit.seed_cover
 #print axioms PaperP1.AllPairExtensionDeficit.one_pair_bound
@@ -8126,6 +8135,8 @@ import PaperP1
 #print axioms PaperP1.ConditionalRunRank.evenMap_boundary
 #print axioms PaperP1.ConditionalRunRank.row_kernel_mem_iff
 #print axioms PaperP1.ConditionalRunRank.row_kernel_finrank
+#print axioms PaperP1.ConnectedComplementDeficit.not_direct
+#print axioms PaperP1.ConnectedComplementDeficit.complement_mem
 #print axioms PaperP1.ConnectedFourthReduction.exact_reduction
 #print axioms PaperP1.ConnectedFourthReduction.finite_bound
 #print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_normalized_space
@@ -8341,6 +8352,9 @@ import PaperP1
 #print axioms PaperP1.HomogeneousSourcePairMass.regular_dependent_bound
 #print axioms PaperP1.IncompatiblePairActivity.finite_bound
 #print axioms PaperP1.IncompatiblePairActivity.signed_absolute_gap
+#print axioms PaperP1.IndependentDeficitMonotonicity.nonneg
+#print axioms PaperP1.IndependentDeficitMonotonicity.families_mono
+#print axioms PaperP1.IndependentDeficitMonotonicity.deficit_mono
 #print axioms PaperP1.IndependentExposureEulerBudget.new_euler_bound
 #print axioms PaperP1.IndependentExposureEulerBudget.window_one_le
 #print axioms PaperP1.IndependentExposureEulerBudget.pool_covered
@@ -9093,6 +9107,15 @@ import PaperP1
 #print axioms PaperP1.SingletonSeedMass.joint_singleton
 #print axioms PaperP1.SingletonSeedMass.sum_seeds
 #print axioms PaperP1.SingletonSeedMass.seeds_coordinates
+#print axioms PaperP1.SmallCoreFamilyCover.mem_cores
+#print axioms PaperP1.SmallCoreFamilyCover.finite_bound
+#print axioms PaperP1.SmallCoreFamilyCover.centered_source_bound
+#print axioms PaperP1.SmallCorePairDeficit.source_split
+#print axioms PaperP1.SmallCorePairDeficit.pair_bound
+#print axioms PaperP1.SmallCorePairDeficit.pair_family_bound
+#print axioms PaperP1.SmallCoreRankRetention.rank_retained
+#print axioms PaperP1.SmallCoreRankRetention.size_two
+#print axioms PaperP1.SmallCoreRankRetention.small_core_properties
 #print axioms PaperP1.SmallPrimeConditioning.glue_eq_merge
 #print axioms PaperP1.SmallPrimeConditioning.block_average_merge
 #print axioms PaperP1.SmallPrimeConditioning.block_condExp
