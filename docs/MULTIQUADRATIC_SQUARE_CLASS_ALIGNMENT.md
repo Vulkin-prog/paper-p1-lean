@@ -2338,3 +2338,51 @@ confirmed improvements become 112 and Palomar remains deferred.
 Original manuscript bytes and compiler/dependency pins are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12515 jobs, direct axiom audit of 8917 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6864 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.84 GiB.
+
+
+## Actual integer models, quotient-field equivalences and rational-plane radical-cover exclusion
+
+The actual rational plane-curve presentation is now connected to
+the integer plane/cover exclusion. A generic actual-localization
+argument lifts an irreducible localized element to an irreducible
+element of the original unique-factorization ring, up to actual
+association. Applied to the two integer polynomial variables and
+the explicit nonzero integer coefficient denominators, it constructs
+an irreducible integer equation associated to any actual
+irreducible rational plane equation. Its integer points agree
+exactly, and its partial degrees are bounded by the rational
+equation's corresponding partial degrees. No separately supplied
+primitive integer model or coefficient-height estimate is used.
+
+The actual localized prime-quotient fraction fields are proved
+equivalent. The integer principal curve ideal maps to the rational
+principal ideal, and the denominator set is proved disjoint from
+the integer ideal because the rational ideal is proper. The
+constructed integer/rational function-field equivalence preserves
+every literal specialized integer polynomial. In particular square
+status and the actual scaled radical functions are transported.
+
+An explicit base-field equivalence transports the actual extension
+algebra, preserves its actual finrank exactly, and preserves finite
+dimension. The literal radical roots in the supplied rational-
+curve extension therefore give the literal radical roots over the
+constructed integer model, with exactly the same degree bound.
+The final theorem chooses a single critical-band threshold before
+the rational plane equation, all its coefficients, its actual
+finite extension, radical roots and integer coefficients, offsets,
+root-family cardinality and integer host. It excludes all admissible
+comparable hosts under the explicit rational partial-degree and
+actual finite-cover-degree bounds, including constant-coordinate
+images and even cover degrees. Every model and scalar transport in
+this rational-to-integer bridge is constructed internally.
+
+This extends P1-MATH-0111 and P1-MATH-0112. Still open are the
+actual projective-source/affine-curve field identification for the
+extracted plane equation, its affine irreducibility and degree
+comparison through the chosen chart, the ordinary geometric
+curve-to-height-one/Hilbert identification, and the external
+uniform counting inputs. T1.7 stays in_progress, numbered coverage
+stays 79/167, confirmed improvements stay 112 and Palomar remains
+deferred. Original manuscript bytes and pins are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12531 jobs, direct axiom audit of 8941 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6896 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.82 GiB.

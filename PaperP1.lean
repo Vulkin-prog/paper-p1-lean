@@ -1984,3 +1984,11 @@ public import PaperP1.Geometry.OrdinaryCurveSourceMap
 public import PaperP1.Geometry.OrdinaryCurveSourcePoint
 public import PaperP1.Geometry.OrdinaryCurveDegreeBound
 public import PaperP1.Geometry.OrdinaryCurveProjectionDegree
+public import PaperP1.Algebra.LocalizationIrreducibleLift
+public import PaperP1.Algebra.LocalizedFractionEquiv
+public import PaperP1.Algebra.LocalizedQuotientFractionEquiv
+public import PaperP1.Algebra.FieldEquivScalarTransport
+public import PaperP1.Arithmetic.IntegerCurveLift
+public import PaperP1.Arithmetic.IntegerCurveFieldEquiv
+public import PaperP1.Arithmetic.RationalCurveRadicalTransport
+public import PaperP1.Asymptotics.CriticalRationalPlaneCoverExclusion
