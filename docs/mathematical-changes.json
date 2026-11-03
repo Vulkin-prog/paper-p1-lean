@@ -4045,7 +4045,7 @@
         "statement_sha256": "f34d841b32f24438f362f3a452f5ab40a3261869bf738d6d5eea3c1ff5c53817"
       },
       "original_assumption": "The proof of main Proposition 15.5 treats every fixed r>=4 by a low-nullity split and a dense certificate argument with small kernels, CRT and two dense targets.",
-      "finding": "For every fixed r>=2, primitive effective nullity is at most every local rank and hence L. The already proved complete independent primitive mass, multiplied by 2^L=O_C(N), gives the stronger full heterogeneous primitive weight N^(1-r/2+epsilon). For every fixed r>=5 this implies BOTH displayed main 15.5 bounds, including the dense-sector exponent -2r/(r+2), for the entire population without any density restriction. The proof also bounds actual original infinite joint mass and admissible absolute centered mass. Thus the dense certificate argument in main 15.5 is needed only for r=4. The complete ordered nominal and actual probability branches of companion T4.3 are also proved for every fixed r>=4, using exact r! enumeration and independent proofs of the nominal and heterogeneous mass bounds. Separation is unnecessary for these fixed-order conclusions.",
+      "finding": "For every fixed r>=2, primitive effective nullity is at most every local rank and hence L. The already proved complete independent primitive mass, multiplied by 2^L=O_C(N), gives the stronger full heterogeneous primitive weight N^(1-r/2+epsilon). For every fixed r>=5 this implies BOTH displayed main 15.5 bounds, including the dense-sector exponent -2r/(r+2), for the entire population without any density restriction. The proof also bounds actual original infinite joint mass and admissible absolute centered mass. Thus the dense certificate argument in main 15.5 is needed only for r=4. The complete ordered nominal and actual probability branches of companion T4.3 are also proved for every fixed r>=4, using exact r! enumeration and independent proofs of the nominal and heterogeneous mass bounds. Separation is unnecessary for these fixed-order conclusions. The r=4 dense estimate is now proved under the same three finite geometric properties, completing both source exponents. The stronger exponent2r/(r+2) therefore holds on the whole fixed-order primitive population for every r>=4, without a density restriction. The four-block proof also establishes the sharper fixed-order moderate certificate cost t/A, needs only its selected anchors to have large kernels, and uses the enlarged two-individually-small-kernel population instead of the stricter product-cap population. The exact square-kernel inequality a_Y(v)^2*K_H(v)<=v and a binary restricted-support rank argument complete the literal eleven-small-coordinate reduction. The threshold remains dependent on fixed r; none of these conclusions asserts a sharper all-order certificate budget.",
       "evidence": [
         "PaperP1.PrimitiveNullity.delete_bound",
         "PaperP1.PrimitiveNullity.minimal_bound",
@@ -4072,18 +4072,62 @@
         "PaperP1.OrderedPrimitiveMass.subset_population",
         "PaperP1.OrderedPrimitiveMass.nominal_bound",
         "PaperP1.OrderedPrimitiveMass.actual_joint_bound",
-        "PaperP1.OrderedPrimitiveMass.companion_T4_3_from_four"
+        "PaperP1.OrderedPrimitiveMass.companion_T4_3_from_four",
+        "PaperP1.SelectedAnchorRelation.coordinate_alternative",
+        "PaperP1.WindowSquareKernelBound.square_kernel_le",
+        "PaperP1.WindowSquareKernelBound.large_square_small_kernel",
+        "PaperP1.WindowSquareKernelBound.outside_two_kernel",
+        "PaperP1.DensePrimitiveFourMassUnderInputs.uniform_bound",
+        "PaperP1.FixedAnchorDegreeBudget.envelope_div_log_tendsto",
+        "PaperP1.FixedAnchorDegreeBudget.log_product_le_envelope",
+        "PaperP1.FixedAnchorDegreeBudget.product_le_power_eventually",
+        "PaperP1.FixedOrderAnchorMass.cardinal_bound",
+        "PaperP1.FixedOrderAnchorMass.uniform_bound",
+        "PaperP1.PrimitiveFourLowMass.uniform_bound",
+        "PaperP1.PrimitiveFourModerateMass.uniform_bound",
+        "PaperP1.PrimitiveSharpMassUnderInputs.uniform_four",
+        "PaperP1.PrimitiveSharpMassUnderInputs.article_15_5",
+        "PaperP1.RestrictedDensePrimitiveMassUnderInputs.uniform_bound",
+        "PaperP1.RestrictedSupportRank.restriction_card",
+        "PaperP1.RestrictedSupportRank.finrank_bound",
+        "PaperP1.TwoSourcePopulations.marked_properties",
+        "PaperP1.TwoSourcePopulations.marked_card",
+        "PaperP1.TwoSourcePopulations.marked_cover",
+        "PaperP1.TwoSourcePopulations.pair_card",
+        "PaperP1.TwoSourcePopulations.pair_cover",
+        "PaperP1.TwoSourcePopulations.saturated_properties",
+        "PaperP1.TwoSourcePopulations.saturated_card",
+        "PaperP1.TwoSourcePopulations.saturated_cover",
+        "PaperP1.PrimitiveRareWindows.small_offsets_card",
+        "PaperP1.PrimitiveRareWindows.many_small_values",
+        "PaperP1.PrimitiveSmallKernelDichotomy.selected_alternative",
+        "PaperP1.PrimitiveSmallKernelDichotomy.sparse_projection",
+        "PaperP1.PrimitiveSmallKernelDichotomy.primitive_nullity",
+        "PaperP1.WindowSquareKernelBound.largeSquareValues",
+        "PaperP1.FixedAnchorDegreeBudget.envelope",
+        "PaperP1.FixedOrderAnchorMass.Covered",
+        "PaperP1.TwoSourcePopulations.markedPairs",
+        "PaperP1.TwoSourcePopulations.saturatedPairs",
+        "PaperP1.PrimitiveRareWindows.kernelValues",
+        "PaperP1.PrimitiveSmallKernelDichotomy.smallOffsets",
+        "PaperP1.PrimitiveSmallKernelDichotomy.SaturatedPair"
       ],
-      "proposed_revision": "First state sum_primitive (product p_x) 2^rho <= N^(1-r/2+epsilon), from rho<=L and main Corollary 10.2. Deduce both fixed-order Proposition 15.5 exponents for r>=5, and restrict the difficult dense argument to r=4. Keep the fixed-order threshold dependence explicit; no growing-order assertion follows from this shortcut.",
-      "impact": "Strengthens and simplifies all fixed orders r>=5 in main 15.5, retaining exact heterogeneous marginals, irregular windows and arbitrary primitive subpopulations. The r=4 case there remains open. Companion T4.3 is proved in its full ordered nominal and actual probability scope for every fixed r>=4, with no separation requirement; only r=3 remains open. Numbered coverage stays 72/167. Every threshold retains dependence on the fixed order; no growing-order estimate is claimed.",
-      "validation": "Lean v4.36.0-rc2 full build passed (10187 jobs); actual axiom audit passed for all 5223 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2938 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.30 GiB. Exact weighted finite fibers give r! ordered enumerations. The literal nominal p^r 2^rho sum and actual original infinite joint-mass sum are independently bounded by N^(1-r/2+epsilon) at every fixed r>=2. Both full ordered T4.3 source conclusions follow for every fixed r>=4 on all primitive subpopulations without separation. Only r=3 remains open there; main 15.5 still lacks only r=4. Coverage remains 72/167 and confirmed improvements remain 73. No growing-order claim, nominal-equals-actual substitution outside the regular-set convention, new external estimate or Paper C source is assumed. No manuscript-byte change or Palomar registration.",
+      "proposed_revision": "State the elementary full-population primitive mass N^(1-r/2+epsilon) first and deduce both source exponents for fixed r>=5. Treat only r=4 by the four-sector proof. State the stronger exponent2r/(r+2) for the entire fixed-order primitive population. At fixed order use the t/A assignment budget and only selected-anchor kernel conditions. The enlarged two-small-kernel population and exact square-kernel inequality suffice for the eleven-coordinate branch. Retain the distinct all-cardinality certificate theorem and explicit uniform geometric input scope.",
+      "impact": "Completes main15.5 conditionally at r=4 and unconditionally at every fixed r>=5; strengthens its dense-sector exponent to the whole primitive population, with exact heterogeneous marginals and all affine cases. The r=4 proof uses only the same three recorded geometric properties. It also improves the fixed-order moderate certificate cost from2t/A to t/A without altering the all-cardinality regime. CompanionT4.3 was already complete conditionally at every fixed r>=3. The original manuscripts remain unmodified.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13759 jobs); direct axiom audit passed for 10720 declarations using only propext, Classical.choice and Quot.sound; all 9160 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.31 GiB.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "7fa74e37b9349c321f37f0795e93147c6fe7fe5d",
       "validation_history": [
-        "8d0c369c294e4fcbed9fbe08bfd5243bc8c19ccd"
+        "8d0c369c294e4fcbed9fbe08bfd5243bc8c19ccd",
+        {
+          "finding": "For every fixed r>=2, primitive effective nullity is at most every local rank and hence L. The already proved complete independent primitive mass, multiplied by 2^L=O_C(N), gives the stronger full heterogeneous primitive weight N^(1-r/2+epsilon). For every fixed r>=5 this implies BOTH displayed main 15.5 bounds, including the dense-sector exponent -2r/(r+2), for the entire population without any density restriction. The proof also bounds actual original infinite joint mass and admissible absolute centered mass. Thus the dense certificate argument in main 15.5 is needed only for r=4. The complete ordered nominal and actual probability branches of companion T4.3 are also proved for every fixed r>=4, using exact r! enumeration and independent proofs of the nominal and heterogeneous mass bounds. Separation is unnecessary for these fixed-order conclusions.",
+          "impact": "Strengthens and simplifies all fixed orders r>=5 in main 15.5, retaining exact heterogeneous marginals, irregular windows and arbitrary primitive subpopulations. The r=4 case there remains open. Companion T4.3 is proved in its full ordered nominal and actual probability scope for every fixed r>=4, with no separation requirement; only r=3 remains open. Numbered coverage stays 72/167. Every threshold retains dependence on the fixed order; no growing-order estimate is claimed.",
+          "proposed_revision": "First state sum_primitive (product p_x) 2^rho <= N^(1-r/2+epsilon), from rho<=L and main Corollary 10.2. Deduce both fixed-order Proposition 15.5 exponents for r>=5, and restrict the difficult dense argument to r=4. Keep the fixed-order threshold dependence explicit; no growing-order assertion follows from this shortcut.",
+          "validation": "Lean v4.36.0-rc2 full build passed (10187 jobs); actual axiom audit passed for all 5223 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2938 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.30 GiB. Exact weighted finite fibers give r! ordered enumerations. The literal nominal p^r 2^rho sum and actual original infinite joint-mass sum are independently bounded by N^(1-r/2+epsilon) at every fixed r>=2. Both full ordered T4.3 source conclusions follow for every fixed r>=4 on all primitive subpopulations without separation. Only r=3 remains open there; main 15.5 still lacks only r=4. Coverage remains 72/167 and confirmed improvements remain 73. No growing-order claim, nominal-equals-actual substitution outside the regular-set convention, new external estimate or Paper C source is assumed. No manuscript-byte change or Palomar registration.",
+          "validation_commit": "7fa74e37b9349c321f37f0795e93147c6fe7fe5d"
+        }
       ]
     },
     {

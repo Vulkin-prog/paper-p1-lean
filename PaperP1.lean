@@ -2587,3 +2587,16 @@ public import PaperP1.Model.RetainedPairCountSource
 public import PaperP1.Model.RetainedPairMomentGenerator
 public import PaperP1.Probability.ExceptionalEventHolder
 public import PaperP1.Probability.SelectedSubsetCounts
+public import PaperP1.Arithmetic.SelectedAnchorRelation
+public import PaperP1.Arithmetic.WindowSquareKernelBound
+public import PaperP1.Asymptotics.DensePrimitiveFourMassUnderInputs
+public import PaperP1.Asymptotics.FixedAnchorDegreeBudget
+public import PaperP1.Asymptotics.FixedOrderAnchorMass
+public import PaperP1.Asymptotics.PrimitiveFourLowMass
+public import PaperP1.Asymptotics.PrimitiveFourModerateMass
+public import PaperP1.Asymptotics.PrimitiveSharpMassUnderInputs
+public import PaperP1.Asymptotics.RestrictedDensePrimitiveMassUnderInputs
+public import PaperP1.Coding.RestrictedSupportRank
+public import PaperP1.Combinatorics.TwoSourcePopulations
+public import PaperP1.Model.PrimitiveRareWindows
+public import PaperP1.Model.PrimitiveSmallKernelDichotomy

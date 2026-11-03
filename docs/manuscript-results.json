@@ -5249,7 +5249,7 @@
       "source": "main_sections/exact_transfer.tex",
       "line": 219,
       "sha256": "f34d841b32f24438f362f3a452f5ab40a3261869bf738d6d5eea3c1ff5c53817",
-      "status": "in_progress",
+      "status": "conditional",
       "lean_declarations": [
         "PaperP1.PrimitiveNullity.delete_bound",
         "PaperP1.PrimitiveNullity.minimal_bound",
@@ -5265,17 +5265,67 @@
         "PaperP1.PrimitiveGeneralMass.actual_joint_submass",
         "PaperP1.PrimitiveGeneralMass.actual_centered_submass",
         "PaperP1.PrimitiveGeneralMass.from_four",
-        "PaperP1.PrimitiveGeneralMass.main_15_5_from_five"
+        "PaperP1.PrimitiveGeneralMass.main_15_5_from_five",
+        "PaperP1.SelectedAnchorRelation.coordinate_alternative",
+        "PaperP1.WindowSquareKernelBound.square_kernel_le",
+        "PaperP1.WindowSquareKernelBound.large_square_small_kernel",
+        "PaperP1.WindowSquareKernelBound.outside_two_kernel",
+        "PaperP1.DensePrimitiveFourMassUnderInputs.uniform_bound",
+        "PaperP1.FixedAnchorDegreeBudget.envelope_div_log_tendsto",
+        "PaperP1.FixedAnchorDegreeBudget.log_product_le_envelope",
+        "PaperP1.FixedAnchorDegreeBudget.product_le_power_eventually",
+        "PaperP1.FixedOrderAnchorMass.cardinal_bound",
+        "PaperP1.FixedOrderAnchorMass.uniform_bound",
+        "PaperP1.PrimitiveFourLowMass.uniform_bound",
+        "PaperP1.PrimitiveFourModerateMass.uniform_bound",
+        "PaperP1.PrimitiveSharpMassUnderInputs.uniform_four",
+        "PaperP1.PrimitiveSharpMassUnderInputs.article_15_5",
+        "PaperP1.RestrictedDensePrimitiveMassUnderInputs.uniform_bound",
+        "PaperP1.RestrictedSupportRank.restriction_card",
+        "PaperP1.RestrictedSupportRank.finrank_bound",
+        "PaperP1.TwoSourcePopulations.marked_properties",
+        "PaperP1.TwoSourcePopulations.marked_card",
+        "PaperP1.TwoSourcePopulations.marked_cover",
+        "PaperP1.TwoSourcePopulations.pair_card",
+        "PaperP1.TwoSourcePopulations.pair_cover",
+        "PaperP1.TwoSourcePopulations.saturated_properties",
+        "PaperP1.TwoSourcePopulations.saturated_card",
+        "PaperP1.TwoSourcePopulations.saturated_cover",
+        "PaperP1.PrimitiveRareWindows.small_offsets_card",
+        "PaperP1.PrimitiveRareWindows.many_small_values",
+        "PaperP1.PrimitiveSmallKernelDichotomy.selected_alternative",
+        "PaperP1.PrimitiveSmallKernelDichotomy.sparse_projection",
+        "PaperP1.PrimitiveSmallKernelDichotomy.primitive_nullity",
+        "PaperP1.WindowSquareKernelBound.largeSquareValues",
+        "PaperP1.FixedAnchorDegreeBudget.envelope",
+        "PaperP1.FixedOrderAnchorMass.Covered",
+        "PaperP1.TwoSourcePopulations.markedPairs",
+        "PaperP1.TwoSourcePopulations.saturatedPairs",
+        "PaperP1.PrimitiveRareWindows.kernelValues",
+        "PaperP1.PrimitiveSmallKernelDichotomy.smallOffsets",
+        "PaperP1.PrimitiveSmallKernelDichotomy.SaturatedPair"
       ],
       "literature_inputs": [
-        "P1-ARITH-PRIMITIVE-GENERAL-MASS"
+        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+        "P1-GEO-ORDINARY-SURFACE-COVER",
+        "P1-GEO-NORMALIZED-CURVE-UNIFORM"
       ],
       "mathematical_changes": [
         "P1-MATH-0073"
       ],
-      "notes": "For every fixed r>=2, the complete actual heterogeneous primitive weight is bounded by N^(1-r/2+epsilon), uniformly before the length, dyadic center family and every primitive subpopulation. Minimal relative nullity is bounded by every actual local rank, hence by L; the proved main 10.2 independent mass and 2^L<=2^C N finish. Actual joint mass and admissible absolute centered mass have the same bound. For every fixed r>=5 this implies BOTH complete main 15.5 exponents, including its nominally dense subpopulation, without a density assumption or dense certificates. The exceptional r=4 case remains open, so the full proposition is not counted complete. Fixed-order thresholds do not assert uniformity over growing r. See PRIMITIVE_GENERAL_MASS_ALIGNMENT.md.",
-      "validation": "Lean v4.36.0-rc2 full build passed (10179 jobs); actual axiom audit passed for all 5212 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2927 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.31 GiB. Minimal effective nullity is bounded by every local rank without a finite-dimensional ambient assumption. Actual heterogeneous primitive weight, original infinite joint mass and admissible absolute centered mass are at most N^(1-r/2+epsilon) at every fixed r>=2. Both main 15.5 exponents follow for every fixed r>=5 on all primitive subpopulations, so its dense certificate argument is needed only at r=4. That case remains open; no growing-order or complete ordered nominal T4.3 claim is made. Coverage remains 72/167; confirmed improvements are 73. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.",
-      "validation_commit": "8d0c369c294e4fcbed9fbe08bfd5243bc8c19ccd"
+      "notes": "Main Proposition15.5 is COMPLETE CONDITIONALLY, including its formerly\nopen r=4 case. For every fixed r>=4 and positive epsilon, one finite\nbundle of the SAME three existing geometric counting properties gives\none threshold before every critical length L, dyadic subground G and\nactual primitive subpopulation F of size r. Both source bounds hold:\n\n  mass(F)=sum_I (product_(x in I) actual p_x)*2^rho(I)\n    <=N^(-4/3+epsilon),\n  mass(F)<=N^(-2r/(r+2)+epsilon).\n\nThe SECOND bound now holds on the WHOLE primitive population: the dense\nnullity restriction is unnecessary. At r=4 the two exponents coincide.\nFor every fixed r>=5 the existing stronger UNCONDITIONAL elementary\nbound N^(1-r/2+epsilon) already gives both inequalities on the whole\npopulation. The new conditional proof is needed only at r=4. All exact\nheterogeneous marginals, including zero marginals and irregular windows,\nare retained. No affine compatibility or positive joint-event premise\nis imposed, and no fixed-order result is used at a growing order.\n\nFor r=4 below rho<L/2, the proved independent primitive mass has power2;\nthe rank factor costs only N^(1/2+o(1)), giving the UNCONDITIONAL stronger\nrate3/2. The dense sector rho>=eta*L, for each fixed eta>0, has power4/3\nunder the existing two-target geometric inputs. Its four sectors are\nliteral finite families, and the proof tracks every source set before\nusing its uniform two-target extension bound.\n\nFixedAnchorDegreeBudget allows any fixed polynomial width prefactor.\nFixedOrderAnchorMass counts actual good-anchor CRT covers at FIXED order\nr. The assignment cost is N^(t/A+epsilon), instead of the all-order\nfactorial-series cost N^(2t/A+epsilon). Its heterogeneous independent\nmass therefore has exponent -t*beta+t/A. The threshold depends on r;\nthis does not alter the existing all-cardinality statement. Furthermore\nSelectedAnchorRelation needs only the t selected anchors to have large\nkernels. It does not require every value of the source window to have\na large kernel. These are explicit improvements recorded by extending\nP1-MATH-0073; no new correction identifier is needed.\n\nChoose A=6, beta=9/10 and t=4. The actual moderate certificate sector has\nUNCONDITIONAL rank-weight power29/15, stronger than4/3. The actual\nsaturated pairs have at most N^(1+4/6+epsilon) source choices, by the\nalready proved literal outgoing-degree theorem. Fixing each such source\npair leaves exactly two dense primitive targets. The restricted\nextension theorem gives a uniform cost (K_C/N)^2*N^(-1+epsilon), so the\ncomplete saturated mass has rate4/3.\n\nFor the small-kernel sector, the proof uses the already proved enlarged\npopulation Bad of windows having two values with EACH K_(L+1)<=N^(2/3).\nIts cardinality is N^(2/3+epsilon). Marking one such source and any other\nsource gives at most N^(5/3+epsilon) source pairs; the same two-target\nestimate gives rate4/3. This enlarged population has sufficient size\ncontrol; the more specific product-cap population is unnecessary here.\n\nWindowSquareKernelBound proves the exact finite inequality\n\n  a_Y(v)^2*K_H(v)<=v\n\nfor every positive integer v and ALL cutoffs H,Y. It follows by removing\nthe actual square factor, preserving its full parity vector, and bounding\nthe actual remaining odd kernel by the quotient. Consequently, outside\nBad, at most ONE value has a_Y(v)^2>N^(2/3), eventually. No smoothness\nassumption, pairwise separation or unproved square-part count is used.\n\nRestrictedSupportRank proves a finite binary-code estimate: if every\nword has at most d nonzero coordinates outside S, the actual code rank\nis at most |S|+d. The physical code projects onto every actual effective\nrelation. A primitive projects injectively onto each whole block. If\nneither a moderate four-anchor certificate nor a saturated pair exists,\nevery physical relation selects at most three large-kernel coordinates\nin each block. Thus EVERY window has at least rho-3 small-kernel\ncoordinates. Dense rho is eventually at least15, so deleting the one\npossible large square part leaves eleven literal distinct small-kernel\nvalues with controlled square parts.\n\nWith m=11, A=6, beta=9/10, u=2/3, the completed several-small-kernel\nwindow theorem bounds this actual Rare population by N^(5/6+epsilon).\nAny two-source subset of an all-Rare four-window primitive lies in\nRare.powersetCard2, of cardinality at most N^(5/3+epsilon). The SAME\nrestricted two-target theorem supplies rate4/3 for this last sector.\nThe four exact sectors cover every dense primitive family. Fixed\nconstants and smaller margins are absorbed before the final threshold.\n\nRestrictedDensePrimitiveMassUnderInputs proves a reusable, stronger\nsource-population statement: for any fixed s>=1 and source-population\nexponent sigma, actual dense primitive extensions of size s+2 over at\nmost N^sigma prescribed source sets have rank mass\nN^(-1-s+sigma+epsilon). It constructs the parameter bundle from the\nproved two-target theorem; it does not assume a desired family mass.\nThe same bundle, chosen before N,L and all source/subfamily choices,\ncontrols the three source-restricted sectors of the four-block proof.\n\nOnly P1-GEO-CHOSEN-SOURCE-SURFACE-COVER,\nP1-GEO-ORDINARY-SURFACE-COVER and P1-GEO-NORMALIZED-CURVE-UNIFORM remain\nunproved ordinary arguments. No BCN, bounded moments, target primitive\nmass or new literature property is assumed. The finite anchor, code,\nsquare and source-cover results are unconditional. This checkpoint adds\n13 modules,30 theorems and8 definitions. Coverage is87/167 unconditional\nand33 conditional; the existing finding73 is extended and the confirmed\nfinding count stays147. The sharp triple activity, main15.10 reduction,\nmain15.14 reconstruction and optimal main1.1 remain open. No dependency\ndownload, Paper C port, original source-byte edit, new axiom or Palomar\nregistration is introduced.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13759 jobs); direct axiom audit passed for 10720 declarations using only propext, Classical.choice and Quot.sound; all 9160 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.31 GiB.",
+      "validation_history": [
+        {
+          "status": "in_progress",
+          "notes": "For every fixed r>=2, the complete actual heterogeneous primitive weight is bounded by N^(1-r/2+epsilon), uniformly before the length, dyadic center family and every primitive subpopulation. Minimal relative nullity is bounded by every actual local rank, hence by L; the proved main 10.2 independent mass and 2^L<=2^C N finish. Actual joint mass and admissible absolute centered mass have the same bound. For every fixed r>=5 this implies BOTH complete main 15.5 exponents, including its nominally dense subpopulation, without a density assumption or dense certificates. The exceptional r=4 case remains open, so the full proposition is not counted complete. Fixed-order thresholds do not assert uniformity over growing r. See PRIMITIVE_GENERAL_MASS_ALIGNMENT.md.",
+          "validation": "Lean v4.36.0-rc2 full build passed (10179 jobs); actual axiom audit passed for all 5212 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 2927 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records are intact. Ubuntu available space: 16.31 GiB. Minimal effective nullity is bounded by every local rank without a finite-dimensional ambient assumption. Actual heterogeneous primitive weight, original infinite joint mass and admissible absolute centered mass are at most N^(1-r/2+epsilon) at every fixed r>=2. Both main 15.5 exponents follow for every fixed r>=5 on all primitive subpopulations, so its dense certificate argument is needed only at r=4. That case remains open; no growing-order or complete ordered nominal T4.3 claim is made. Coverage remains 72/167; confirmed improvements are 73. No new external estimate, Paper C source, manuscript-byte change or Palomar registration.",
+          "validation_commit": "8d0c369c294e4fcbed9fbe08bfd5243bc8c19ccd",
+          "literature_inputs": [
+            "P1-ARITH-PRIMITIVE-GENERAL-MASS"
+          ]
+        }
+      ]
     },
     {
       "label": "p13:transfer:independent-deficit",

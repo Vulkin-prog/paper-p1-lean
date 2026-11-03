@@ -4298,6 +4298,7 @@ import PaperP1
 #print axioms PaperP1.ScaledTargetValues.new_card
 #print axioms PaperP1.ScaledTargetValues.intersection_card
 #print axioms PaperP1.ScaledTargetValues.all_card_le
+#print axioms PaperP1.SelectedAnchorRelation.coordinate_alternative
 #print axioms PaperP1.SelectedKernelSourceFamilies.square_parity_relation
 #print axioms PaperP1.SelectedKernelSourceFamilies.selection_sum
 #print axioms PaperP1.SelectedKernelSourceFamilies.anchored_of_selection
@@ -5085,6 +5086,9 @@ import PaperP1
 #print axioms PaperP1.WindowPrimeIncidence.physical_row_sum
 #print axioms PaperP1.WindowPrimeIncidence.restricted_row_sum
 #print axioms PaperP1.WindowPrimeIncidence.others_label_sum
+#print axioms PaperP1.WindowSquareKernelBound.square_kernel_le
+#print axioms PaperP1.WindowSquareKernelBound.large_square_small_kernel
+#print axioms PaperP1.WindowSquareKernelBound.outside_two_kernel
 #print axioms PaperP1.WordNormCertificate.model_isField
 #print axioms PaperP1.WordNormCertificate.model_finrank
 #print axioms PaperP1.WordNormCertificate.norm_identity
@@ -5516,6 +5520,7 @@ import PaperP1
 #print axioms PaperP1.DensePairCrossingFamiliesUnderInputs.uniform_seeds
 #print axioms PaperP1.DensePairCrossingFamiliesUnderInputs.uniform_centered_extensions
 #print axioms PaperP1.DensePairCrossingSeedsUnderInputs.uniform_bound
+#print axioms PaperP1.DensePrimitiveFourMassUnderInputs.uniform_bound
 #print axioms PaperP1.DensePrimitiveTripleMassUnderInputs.uniform_bound
 #print axioms PaperP1.DenseSourcePairKernelUnderInputs.uniform_source_kernel
 #print axioms PaperP1.DenseTargetCount.small_residual_exponent
@@ -5713,6 +5718,9 @@ import PaperP1
 #print axioms PaperP1.FirstQuadraticApproximationUnderInputs.regular_bound
 #print axioms PaperP1.FirstQuadraticApproximationUnderInputs.companion_T17_5
 #print axioms PaperP1.FixedAbsoluteActivityUnderInputs.uniform_range
+#print axioms PaperP1.FixedAnchorDegreeBudget.envelope_div_log_tendsto
+#print axioms PaperP1.FixedAnchorDegreeBudget.log_product_le_envelope
+#print axioms PaperP1.FixedAnchorDegreeBudget.product_le_power_eventually
 #print axioms PaperP1.FixedChannelErrorAlgebra.error_scale
 #print axioms PaperP1.FixedChannelMassTheorem.eventual_mass_eq
 #print axioms PaperP1.FixedChannelMassTheorem.strong_error
@@ -5743,6 +5751,8 @@ import PaperP1
 #print axioms PaperP1.FixedHeightResidual.full_kernel_rate
 #print axioms PaperP1.FixedHigherCumulantsUnderInputs.uniform_fixed
 #print axioms PaperP1.FixedMomentInputs.uniform_fixed
+#print axioms PaperP1.FixedOrderAnchorMass.cardinal_bound
+#print axioms PaperP1.FixedOrderAnchorMass.uniform_bound
 #print axioms PaperP1.FixedOrderMassPropagation.all_extensions
 #print axioms PaperP1.FixedOrderMassPropagation.extension_subfamilies
 #print axioms PaperP1.FixedOrderMassPropagation.main_6_3_propagation
@@ -6357,6 +6367,8 @@ import PaperP1
 #print axioms PaperP1.Primitive256Tail.uniform_centered
 #print axioms PaperP1.Primitive256Tail.article_15_12_primitive
 #print axioms PaperP1.PrimitiveConfinementWeights.uniform_weights
+#print axioms PaperP1.PrimitiveFourLowMass.uniform_bound
+#print axioms PaperP1.PrimitiveFourModerateMass.uniform_bound
 #print axioms PaperP1.PrimitiveGeneralMass.binary_factor
 #print axioms PaperP1.PrimitiveGeneralMass.uniform_mass
 #print axioms PaperP1.PrimitiveGeneralMass.uniform_submass
@@ -6368,6 +6380,8 @@ import PaperP1
 #print axioms PaperP1.PrimitiveIndependentBudgets.two_anchor_bound
 #print axioms PaperP1.PrimitiveIndependentBudgets.ten_anchor_bound
 #print axioms PaperP1.PrimitiveNominalCountMass.uniform_mass
+#print axioms PaperP1.PrimitiveSharpMassUnderInputs.uniform_four
+#print axioms PaperP1.PrimitiveSharpMassUnderInputs.article_15_5
 #print axioms PaperP1.PrincipalChannelEdgesPhase.uniform_geometry
 #print axioms PaperP1.PrincipalChannelEdgesPhase.positive_phase
 #print axioms PaperP1.PrincipalChannelEdgesPhase.uniform_activity_gap
@@ -6532,6 +6546,7 @@ import PaperP1
 #print axioms PaperP1.ResidualPrimitiveHostCount.hosts_data
 #print axioms PaperP1.ResidualPrimitiveHostCount.all_primitive_triples
 #print axioms PaperP1.ResidualPrimitiveHostCount.source_unrestricted_assertion
+#print axioms PaperP1.RestrictedDensePrimitiveMassUnderInputs.uniform_bound
 #print axioms PaperP1.RetainedBadPairActivityUnderInputs.uniform_bound
 #print axioms PaperP1.RetainedBadProbabilityUnderBCN.uniform_badProbability
 #print axioms PaperP1.RetainedBadProbabilityUnderBCN.uniform_totalVariation
@@ -7102,6 +7117,8 @@ import PaperP1
 #print axioms PaperP1.RegularizedProjection.regularized_projection
 #print axioms PaperP1.RegularizedSupportPools.support_pool_contains
 #print axioms PaperP1.RegularizedSupportPools.regularized_pools
+#print axioms PaperP1.RestrictedSupportRank.restriction_card
+#print axioms PaperP1.RestrictedSupportRank.finrank_bound
 #print axioms PaperP1.RungeDefectApplication.noShortRungeSquare_of_growth
 #print axioms PaperP1.RungeDefectApplication.rungeScale_mono
 #print axioms PaperP1.RungeDefectApplication.noShortRungeSquare_of_endpoint_growth
@@ -7630,6 +7647,14 @@ import PaperP1
 #print axioms PaperP1.TwoEdgeTripleCover.other_edge
 #print axioms PaperP1.TwoEdgeTripleCover.union_card_three
 #print axioms PaperP1.TwoFreeBlockSupport.source_mem
+#print axioms PaperP1.TwoSourcePopulations.marked_properties
+#print axioms PaperP1.TwoSourcePopulations.marked_card
+#print axioms PaperP1.TwoSourcePopulations.marked_cover
+#print axioms PaperP1.TwoSourcePopulations.pair_card
+#print axioms PaperP1.TwoSourcePopulations.pair_cover
+#print axioms PaperP1.TwoSourcePopulations.saturated_properties
+#print axioms PaperP1.TwoSourcePopulations.saturated_card
+#print axioms PaperP1.TwoSourcePopulations.saturated_cover
 #print axioms PaperP1.TwoTargetFamilyCover.mem_pairs
 #print axioms PaperP1.TwoTargetFamilyCover.exists_pair
 #print axioms PaperP1.TwoTargetFamilyCover.extension_sum_le
@@ -9079,6 +9104,11 @@ import PaperP1
 #print axioms PaperP1.PrimitiveOrderedMass.rank_formula
 #print axioms PaperP1.PrimitiveOrderedMass.finite_bound
 #print axioms PaperP1.PrimitiveRankAmplification.mass_bound
+#print axioms PaperP1.PrimitiveRareWindows.small_offsets_card
+#print axioms PaperP1.PrimitiveRareWindows.many_small_values
+#print axioms PaperP1.PrimitiveSmallKernelDichotomy.selected_alternative
+#print axioms PaperP1.PrimitiveSmallKernelDichotomy.sparse_projection
+#print axioms PaperP1.PrimitiveSmallKernelDichotomy.primitive_nullity
 #print axioms PaperP1.PrimitiveTripleWeights.primitive_pair_good
 #print axioms PaperP1.PrimitiveTripleWeights.homogeneous_pair_eq
 #print axioms PaperP1.PrimitiveTripleWeights.homogeneous_triple_le
