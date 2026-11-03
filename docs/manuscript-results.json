@@ -163,7 +163,8 @@
             "P1-GEO-NORMALIZED-CURVE-UNIFORM"
           ]
         }
-      ]
+      ],
+      "validation_commit": "250e054bb66fd565c7717e9a3ef07cc434562539"
     },
     {
       "label": "p1:cor:tv",
@@ -6630,7 +6631,8 @@
           "literature_inputs": []
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13821 jobs); direct axiom audit passed for 10784 declarations using only propext, Classical.choice and Quot.sound; all 9249 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.14 GiB."
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13821 jobs); direct axiom audit passed for 10784 declarations using only propext, Classical.choice and Quot.sound; all 9249 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.14 GiB.",
+      "validation_commit": "250e054bb66fd565c7717e9a3ef07cc434562539"
     },
     {
       "label": "p13:optimal:weighted",
