@@ -2379,3 +2379,12 @@ public import PaperP1.Asymptotics.MultiAnchorSaturationDegrees
 public import PaperP1.Asymptotics.UniformGraphExponentTail
 public import PaperP1.Combinatorics.MultiAnchorGraph
 public import PaperP1.Model.MultiAnchorRelationFamilies
+public import PaperP1.Affine.PrimitiveCoordinateProjection
+public import PaperP1.Arithmetic.HeavyPhysicalRelations
+public import PaperP1.Asymptotics.Primitive256RankTail
+public import PaperP1.Asymptotics.Primitive256Tail
+public import PaperP1.Asymptotics.PrimitiveIndependentBudgets
+public import PaperP1.Coding.MaximalSupportWord
+public import PaperP1.Model.PrimitiveActualMass
+public import PaperP1.Model.PrimitiveAnchorWitnesses
+public import PaperP1.Model.PrimitiveRankAmplification

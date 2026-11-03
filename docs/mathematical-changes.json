@@ -9838,6 +9838,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "198cc360d486e7e60ad37314dd311238e7866983"
+    },
+    {
+      "id": "P1-MATH-0133",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:uniform-tail",
+        "number": "15.12",
+        "page": 47,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 776,
+        "statement_sha256": "6bb3d1cfe69419dcebe52240716af3886d4eb7f3b4a0f8dd9b3eed81c7e552bd"
+      },
+      "original_assumption": "The primitive large-size tail in15.12 has exponent4/3 and its proof splits compatibility and nullity at L/60.",
+      "finding": "The primitive tail in main15.12 improves unconditionally\nfrom N^(-4/3+epsilon) to N^(-7/5+epsilon), for every cardinality\nat least256. The stronger statement bounds actual rank mass\nand q(P)+|c(P)| on the whole dyadic block, including contacts,\nirregular windows, incompatibility and zero marginals.\nSplit at the FIXED nullity9. Below9 the rank factor is at\nmost256; apply the two-anchor15.11 budget with\nA=14,b=59/70,sigma=93/100, giving powers7/5 and176/125.\nAt nullity at least9, every primitive kernel coordinate\nprojection has that same dimension; the maximal-support\neven-word argument provides ten selected values there.\nUse t=10,A=12,b=31/60,sigma=23/25, whose independent\npowers are7/2 and1856/375. The primitive rank factor\n2^rho<=2^L=O(N) leaves power at least5/2.\nCombine the two filtered populations and absorb fixed\nconstants. This removes the primitive compatibility\ncase split, the L/60 threshold and the growing-rank\ncomparison in the original proof. The connected clause\nis a separate assertion and is not proved by this argument.",
+      "impact": "An unconditional stronger7/5 tail holds for all primitive families at sizes at least256, even for the larger actual joint-plus-absolute-centered mass and without regularity or separation restrictions.",
+      "proposed_revision": "Replace the primitive paragraph of15.12 by the fixed nullity9 split. Use the exact retuned two-anchor parameters14,59/70,93/100 below9 and the ten-anchor budget above9. State7/5 for the primitive clause while keeping the connected assertion distinct.",
+      "evidence": [
+        "PaperP1.MaximalSupportWord.exists_even_large_word",
+        "PaperP1.PrimitiveCoordinateProjection.injective",
+        "PaperP1.HeavyPhysicalRelations.exists_relation",
+        "PaperP1.PrimitiveAnchorWitnesses.witnesses",
+        "PaperP1.PrimitiveIndependentBudgets.two_anchor_bound",
+        "PaperP1.PrimitiveIndependentBudgets.ten_anchor_bound",
+        "PaperP1.Primitive256RankTail.uniform_strong",
+        "PaperP1.PrimitiveActualMass.centered_le_weight",
+        "PaperP1.Primitive256Tail.uniform_actual",
+        "PaperP1.Primitive256Tail.article_15_12_primitive"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13327 jobs); direct axiom audit passed for 10193 declarations using only propext, Classical.choice and Quot.sound; all 8524 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.36 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -204,6 +204,8 @@ import PaperP1
 #print axioms PaperP1.Affine.rank_partition_inter
 #print axioms PaperP1.Affine.rank_partition_sum
 #print axioms PaperP1.Affine.privateRank_in_part
+#print axioms PaperP1.PrimitiveCoordinateProjection.injective
+#print axioms PaperP1.PrimitiveCoordinateProjection.finrank_range
 #print axioms PaperP1.PrimitiveNullity.delete_bound
 #print axioms PaperP1.PrimitiveNullity.minimal_bound
 #print axioms PaperP1.PrimitiveRelations.full_relation_of_minimal_nullity
@@ -3189,6 +3191,7 @@ import PaperP1
 #print axioms PaperP1.HalfCountCertificateLists.no_new_receiver
 #print axioms PaperP1.HalfCountCertificateLists.new_receiver_bound
 #print axioms PaperP1.HalfCountCertificateLists.old_receiver_bound
+#print axioms PaperP1.HeavyPhysicalRelations.exists_relation
 #print axioms PaperP1.HeightFiveChannelCorrection.truncatedSum_succ
 #print axioms PaperP1.HeightFiveChannelCorrection.coefficient_succ
 #print axioms PaperP1.HeightFiveChannelCorrection.heightSum_five
@@ -6169,6 +6172,12 @@ import PaperP1
 #print axioms PaperP1.PrimeCylinderScale.log_cutoff_over_log_size_tendsto
 #print axioms PaperP1.PrimeCylinderScale.log_size_over_log_cutoff_tendsto
 #print axioms PaperP1.PrimeCylinderScale.primeCharge_tendsto
+#print axioms PaperP1.Primitive256RankTail.low_nullity
+#print axioms PaperP1.Primitive256RankTail.high_nullity
+#print axioms PaperP1.Primitive256RankTail.uniform_strong
+#print axioms PaperP1.Primitive256Tail.uniform_actual
+#print axioms PaperP1.Primitive256Tail.uniform_centered
+#print axioms PaperP1.Primitive256Tail.article_15_12_primitive
 #print axioms PaperP1.PrimitiveConfinementWeights.uniform_weights
 #print axioms PaperP1.PrimitiveGeneralMass.binary_factor
 #print axioms PaperP1.PrimitiveGeneralMass.uniform_mass
@@ -6177,6 +6186,9 @@ import PaperP1
 #print axioms PaperP1.PrimitiveGeneralMass.actual_centered_submass
 #print axioms PaperP1.PrimitiveGeneralMass.from_four
 #print axioms PaperP1.PrimitiveGeneralMass.main_15_5_from_five
+#print axioms PaperP1.PrimitiveIndependentBudgets.uniform_mass
+#print axioms PaperP1.PrimitiveIndependentBudgets.two_anchor_bound
+#print axioms PaperP1.PrimitiveIndependentBudgets.ten_anchor_bound
 #print axioms PaperP1.PrimitiveNominalCountMass.uniform_mass
 #print axioms PaperP1.PrincipalChannelEdgesPhase.uniform_geometry
 #print axioms PaperP1.PrincipalChannelEdgesPhase.positive_phase
@@ -6825,6 +6837,8 @@ import PaperP1
 #print axioms PaperP1.LocalRigidityThreshold.griesmer_ceiling_sum_ge
 #print axioms PaperP1.LocalRigidityThreshold.window_relation_finrank_lt_of_geometric
 #print axioms PaperP1.LocalRigidityThreshold.window_relation_finrank_lt_of_log_budget
+#print axioms PaperP1.MaximalSupportWord.exists_large_word
+#print axioms PaperP1.MaximalSupportWord.exists_even_large_word
 #print axioms PaperP1.PrimeComponentCount.listedPrime_covers
 #print axioms PaperP1.PrimeComponentCount.small_count
 #print axioms PaperP1.PrimeComponentCount.small_add_large
@@ -8666,6 +8680,10 @@ import PaperP1
 #print axioms PaperP1.PrimitiveActiveSeeds.finite_activeWeight_expectation
 #print axioms PaperP1.PrimitiveActiveSeeds.finite_count_mean
 #print axioms PaperP1.PrimitiveActiveSeeds.badProbability_bound
+#print axioms PaperP1.PrimitiveActualMass.centered_le_weight
+#print axioms PaperP1.PrimitiveActualMass.actual_le_rank
+#print axioms PaperP1.PrimitiveAnchorWitnesses.witnesses
+#print axioms PaperP1.PrimitiveAnchorWitnesses.two_witnesses
 #print axioms PaperP1.PrimitiveNominalMass.weight_nonneg
 #print axioms PaperP1.PrimitiveNominalMass.primitive_mass_cap
 #print axioms PaperP1.PrimitiveNominalMass.ordered_sum
@@ -8674,6 +8692,7 @@ import PaperP1
 #print axioms PaperP1.PrimitiveOrderedMass.weight_formula
 #print axioms PaperP1.PrimitiveOrderedMass.rank_formula
 #print axioms PaperP1.PrimitiveOrderedMass.finite_bound
+#print axioms PaperP1.PrimitiveRankAmplification.mass_bound
 #print axioms PaperP1.PrimitiveTripleWeights.primitive_pair_good
 #print axioms PaperP1.PrimitiveTripleWeights.homogeneous_pair_eq
 #print axioms PaperP1.PrimitiveTripleWeights.homogeneous_triple_le

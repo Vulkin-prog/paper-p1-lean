@@ -5563,11 +5563,42 @@
       "source": "main_sections/exact_transfer.tex",
       "line": 776,
       "sha256": "6bb3d1cfe69419dcebe52240716af3886d4eb7f3b4a0f8dd9b3eed81c7e552bd",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.PrimitiveCoordinateProjection.injective",
+        "PaperP1.PrimitiveCoordinateProjection.finrank_range",
+        "PaperP1.HeavyPhysicalRelations.exists_relation",
+        "PaperP1.Primitive256RankTail.low_nullity",
+        "PaperP1.Primitive256RankTail.high_nullity",
+        "PaperP1.Primitive256RankTail.uniform_strong",
+        "PaperP1.Primitive256Tail.uniform_actual",
+        "PaperP1.Primitive256Tail.uniform_centered",
+        "PaperP1.Primitive256Tail.article_15_12_primitive",
+        "PaperP1.PrimitiveIndependentBudgets.uniform_mass",
+        "PaperP1.PrimitiveIndependentBudgets.two_anchor_bound",
+        "PaperP1.PrimitiveIndependentBudgets.ten_anchor_bound",
+        "PaperP1.MaximalSupportWord.exists_large_word",
+        "PaperP1.MaximalSupportWord.exists_even_large_word",
+        "PaperP1.PrimitiveActualMass.centered_le_weight",
+        "PaperP1.PrimitiveActualMass.actual_le_rank",
+        "PaperP1.PrimitiveAnchorWitnesses.witnesses",
+        "PaperP1.PrimitiveAnchorWitnesses.two_witnesses",
+        "PaperP1.PrimitiveRankAmplification.mass_bound",
+        "PaperP1.PrimitiveCoordinateProjection.Kernel",
+        "PaperP1.PrimitiveCoordinateProjection.projection"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0133"
+      ],
+      "notes": "The primitive clause of main15.12 is now proved\nUNCONDITIONALLY, with a stronger exponent7/5 instead of4/3.\nIt includes every cardinality at least256, and proves the\nlarger actual joint-plus-absolute-centered mass, as well as\nthe actual heterogeneous rank mass. Main15.12 moves from\nnot_started to in_progress because its separate CONNECTED\nclause remains OPEN. Numbered coverage87/167 and20 conditional\nresults are unchanged. Confirmed improvement133 records the\nstronger primitive tail and its shorter fixed-rank split.\n\nMaximalSupportWord proves an elementary finite coding fact:\nsome binary codeword has weight at least the code dimension.\nChoose a word of maximal support; restriction of the code to\nthat support is injective, since a nonzero kernel word has\ndisjoint support and increases the chosen support after\naddition. The dimension is bounded by that restriction's\ntarget dimension. For an even code and even t, dimension\nat least t-1 therefore yields a word of weight at least t.\nNo pivot coordinates or simultaneous block support are\nassumed or supplied as external data.\n\nPrimitiveCoordinateProjection proves every coordinate\nprojection of a minimal effective relation kernel is\nINJECTIVE. A kernel vector vanishing at that coordinate\nrestricts to the proper erased family; its nullity zero\nforces the restriction to vanish, and extension by zero\nrecovers the whole vector. Hence every projection image has\ndimension equal to the entire primitive nullity.\nHeavyPhysicalRelations uses the previously proved\neffective_projection_rank_le and the actual surjection\nfrom physical even relations to effective relations.\nThe coding lemma then constructs an ACTUAL global physical\neven relation with at least t selected values at any\nprescribed block. PrimitiveAnchorWitnesses consequently\ngives the literal15.11 witness predicate whenever\nrho>=t-1. Different blocks may use different relations.\nIn particular every primitive has two-anchor witnesses,\nand nullity at least9 gives ten-anchor witnesses.\n\nPrimitiveIndependentBudgets supplies a uniform general\nall-cardinality bound from the PROVED15.11 budgets,\nusing actual independent weights u*p_x and the\nunconditional cap p_x<=2*2^C/N. Two explicit specializations\nstart at cardinality256:\n  t=2,A=14,b=59/70,sigma=93/100:\n    delta=11/1000, theta=1/7,\n    moderate exponent=-7/5,\n    saturated exponent=-176/125.\n  t=10,A=12,b=31/60,sigma=23/25:\n    delta=29/750, theta=5/6,\n    moderate exponent=-7/2,\n    saturated exponent=-1856/375.\nThe strict cutoff and graph gaps are verified by exact\nrational arithmetic. Both estimates have one threshold\nbefore all sizes, lengths and actual primitive populations.\n\nPrimitive256RankTail splits ONLY at the FIXED integer\nnullity9. When rho<9, rank amplification is at most2^8=256,\nso the two-anchor independent bound gives rank mass\nN^(-7/5+epsilon). When rho>=9, the ten-anchor independent\nbound applies, and the already proved primitive inequality\nrho<=L costs at most2^L<=2^C*N. That branch has the stronger\nrank mass N^(-5/2+epsilon). The exact finite filtered sum\nthen proves the FULL primitive rank mass at every\ncardinality at least256 is N^(-7/5+epsilon).\nNo comparison rho versus a growing fraction of L, no\ncore deletion, compatibility split, or cardinality upper\ncutoff is needed for this primitive argument.\n\nPrimitiveActualMass extends the exact centered-to-rank\ncomparison to ALL actual marginal patterns. If some actual\nmarginal is zero, the existing finite probability transport\nproves its whole centered coefficient is zero. Otherwise\nthe actual heterogeneous Fourier inequality applies.\nTogether with the already proved joint inequality this\ngives q(I)+|c(I)|<=2*rankWeight(I), including contacts,\nlocal irregularities, affine incompatibility and zero\nmarginals. The ground is the FULL dyadic block, with no\nregularity filter or separation assumption.\n\nPrimitive256Tail.uniform_actual and uniform_centered prove\nthe stronger all-size exponent7/5. The named\narticle_15_12_primitive proves the literal printed4/3\nbound for all primitive sets of cardinality>256 above\nANY actual ground subset of the dyadic block. It therefore\nincludes every source-family restriction in the paper.\nThe independent per-block weight remains fixed before N.\nNo geometric property, desired arithmetic mass, or new\naxiom is an input. The connected part of15.12 is not\nclaimed, and the all-size T14.2 total still has its recorded\nconditional small-size step. No original manuscript byte,\ndependency download, Paper C port or Palomar action changes.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": ""
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13327 jobs); direct axiom audit passed for 10193 declarations using only propext, Classical.choice and Quot.sound; all 8524 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.36 GiB."
     },
     {
       "label": "p13:transfer:finite",
