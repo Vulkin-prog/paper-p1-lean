@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **8623 audited theorem/lemma declarations**. This
+- The project currently has **8648 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -8395,3 +8395,42 @@ improvements stay 107, and Palomar remains deferred. Original sources
 are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12349 jobs, direct axiom audit of 8623 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6496 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.10 GiB.
+
+
+## Actual embedded-curve coordinate quotients and degree comparison
+
+The actual ambient homogeneous coordinate ideal of a source curve is
+now constructed as the preimage of its source prime under exactly the
+polynomial evaluation map defining the chosen projective embedding.
+Its coordinate quotient is constructed as an algebra isomorphic to the
+actual source prime quotient, with a linear equivalence of every pair
+of corresponding graded pieces. These constructions work for general
+homogeneous ideals; no primality or Hilbert polynomial is assumed for
+the coordinate algebra comparison itself.
+
+For an actual source projective point, the ambient coordinate ideal is
+proved to be the ideal of its actual image under the chosen embedding.
+It is prime and projectively relevant and contains the global source
+embedding relations. Thus the coordinate quotient is attached to the
+actual embedded image point, rather than an unrelated presentation.
+
+Equality of the actual graded-piece dimensions transports Hilbert
+polynomial existence, the polynomial itself, and its multiplicity.
+For an actual height-one source point this gives the ambient curve
+coordinate Hilbert polynomial, its multiplicity equality with the
+source quotient, and the literal degree formula D times the plane-image
+equation degree times the actual projective function-field degree.
+Over the rationals, the full low-degree exclusion through an actual
+admissible affine source point therefore yields multiplicity at least
+2D in the actual ambient homogeneous coordinate presentation as well.
+
+The curve-level comparison with the chosen projective coordinate
+presentation is now discharged. A separate intrinsic line-bundle
+intersection-degree theory is not constructed or claimed here.
+Geometric curve dimension versus homogeneous source prime height,
+higher low-degree curve geometry, and external surface/curve uniform
+point counts remain open. T1.7 stays in_progress, numbered coverage
+stays 79/167, confirmed mathematical improvements stay 107, and Palomar
+remains deferred. Original manuscript sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12361 jobs, direct axiom audit of 8648 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6529 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.08 GiB.

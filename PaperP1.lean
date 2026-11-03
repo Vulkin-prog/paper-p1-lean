@@ -1903,3 +1903,9 @@ public import PaperP1.Geometry.SourceAffineCurveDegreeBound
 public import PaperP1.Geometry.SourceProjectiveCurveLowDegreeExclusion
 public import PaperP1.Geometry.SourceProjectiveCurveVerticalExclusion
 public import PaperP1.Geometry.SourceProjectiveCurveVerticalSquares
+public import PaperP1.Algebra.GradedHilbertTransport
+public import PaperP1.Algebra.GradedSurjectivePresentation
+public import PaperP1.Geometry.SourceCurveEmbeddingCoordinates
+public import PaperP1.Geometry.SourceEmbeddedCurveDegreeBound
+public import PaperP1.Geometry.SourceEmbeddedCurvePointData
+public import PaperP1.Geometry.SourceProjectiveCurveEmbeddingHilbert
