@@ -1973,3 +1973,8 @@ public import PaperP1.Algebra.IntegerGraphEquation
 public import PaperP1.Algebra.RationalGridNonconstant
 public import PaperP1.Diophantine.CurveCoverGraphBound
 public import PaperP1.Asymptotics.CriticalCurveCoverExclusion
+public import PaperP1.Algebra.UnivariateSplitSquareClasses
+public import PaperP1.Algebra.UnivariateRadicalCoverDegree
+public import PaperP1.Algebra.IntegerConstantCurve
+public import PaperP1.Arithmetic.ConstantCurveCoverDegree
+public import PaperP1.Asymptotics.CriticalAllCurveCoverExclusion

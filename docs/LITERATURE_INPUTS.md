@@ -8664,3 +8664,54 @@ confirmed improvements stay 111 and Palomar remains deferred.
 Original manuscript bytes and compiler/dependency pins are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12493 jobs, direct axiom audit of 8859 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6788 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.88 GiB.
+
+
+## Actual constant-coordinate charts and uniform exclusion of all bounded radical covers
+
+The actual-plane/finite-cover exclusion now includes both
+constant-coordinate image branches. Over every characteristic-zero
+integrally closed domain, the actual fraction-field square classes
+of nonzero scalar multiples of disjoint nonempty univariate split
+products are proved independent. This includes the integer
+coefficient polynomial ring itself. The corresponding literal
+radical roots in an actual extension force 2^k to divide its actual
+field degree; in a finite extension this gives 2^k <= [L:K].
+
+For an actual irreducible integer plane equation with an integer
+point, zero Y partial degree forces its ideal to be the actual
+vertical line through that point; zero X partial degree similarly
+forces the horizontal line. The actual quotient coordinate rings
+are constructed as polynomial rings over Z by explicit kernel and
+surjectivity proofs. Their fraction-field equivalences are
+constructed and proved to transport every literal specialized
+polynomial. No separately supplied rational parametrization or
+square-class independence premise is used.
+
+On the vertical line the scalar coefficient is the original
+nonzero integer radical coefficient times the selected first split
+product at the actual integer point. Host positivity proves it
+nonzero, and the distinct singleton second offsets give independent
+univariate classes. The horizontal line has the symmetric argument
+using disjoint nonempty first-root families and positivity at the
+second coordinate. Thus neither constant-coordinate image can
+support the bounded actual cover when k >= E. Both positive partial
+degrees are derived internally before invoking the nonconstant
+graph/interpolation exclusion.
+
+The combined theorem chooses one critical-band threshold before
+the actual integer curve, its coefficients, extension field,
+literal radical roots, offset families, root-family degree and
+hosts, and excludes all actual bounded-plane/field presentations
+under the previously explicit degree bounds. This includes every
+finite cover degree, with no genus, Riemann--Hurwitz, odd-degree,
+assumed graph, supplied grid, coefficient-height or constant-
+coordinate restriction.
+
+This extends P1-MATH-0111. General source-scheme identifications,
+comparisons between ordinary ambient curve degree and the actual
+plane/field degree bounds, and external uniform point counts remain
+open. T1.7 stays in_progress, numbered coverage stays 79/167,
+confirmed improvements stay 111 and Palomar remains deferred.
+Original manuscript bytes and compiler/dependency pins are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12503 jobs, direct axiom audit of 8887 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6822 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.86 GiB.
