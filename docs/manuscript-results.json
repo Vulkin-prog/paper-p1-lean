@@ -5185,11 +5185,54 @@
       "source": "main_sections/exact_transfer.tex",
       "line": 461,
       "sha256": "26d84d57f8cb53436e7b79775ab6c877710277ee810b9a8dbf849a805d4c6e27",
-      "status": "not_started",
-      "lean_declarations": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.AllFamilyEnumerations.tupleSet_comp_perm",
+        "PaperP1.AllFamilyEnumerations.factorial_count_le",
+        "PaperP1.ParticipatingWindowCertificates.other_odd_receiver",
+        "PaperP1.ParticipatingWindowCertificates.physical_relation",
+        "PaperP1.ParticipatingWindowCertificates.coordinate_alternative",
+        "PaperP1.MarkedWindowCount.mem_marked",
+        "PaperP1.MarkedWindowCount.finite_bound",
+        "PaperP1.MarkedWindowCount.logarithmic_exponential",
+        "PaperP1.MarkedWindowCount.uniform_count",
+        "PaperP1.PowerTiltedGraphTail.tilt_bound",
+        "PaperP1.PowerTiltedGraphTail.total_bound",
+        "PaperP1.UniformGraphCardinalityTail.uniform_tail",
+        "PaperP1.WindowCertificateFamilies.mem_vertices",
+        "PaperP1.WindowCertificateFamilies.vertices_image",
+        "PaperP1.WindowCertificateFamilies.vertices_card",
+        "PaperP1.WindowCertificateFamilies.covered_of_witnesses",
+        "PaperP1.WindowCertificateFamilies.certified_count",
+        "PaperP1.WindowCertificateFamilies.noncertified_admissible",
+        "PaperP1.WindowCertificateMass.certified_layer_bound",
+        "PaperP1.WindowCertificateMass.certified_total_bound",
+        "PaperP1.OriginalParticipatingTail.uniform_split_bound",
+        "PaperP1.OriginalParticipatingTail.subcritical_parameters",
+        "PaperP1.OriginalParticipatingTail.subcritical_tail",
+        "PaperP1.IndependentFullSupportTail.mem_families",
+        "PaperP1.IndependentFullSupportTail.witnesses",
+        "PaperP1.IndependentFullSupportTail.primitive_fullSupport",
+        "PaperP1.FullSupportIndependentTail.article_15_8_original",
+        "PaperP1.MarkedWindowCount.marked",
+        "PaperP1.WindowCertificateFamilies.Certified",
+        "PaperP1.WindowCertificateFamilies.vertices",
+        "PaperP1.IndependentFullSupportTail.FullSupport",
+        "PaperP1.IndependentFullSupportTail.families",
+        "PaperP1.IndependentFullSupportTail.mass"
+      ],
       "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "mathematical_changes": [
+        "P1-MATH-0127"
+      ],
+      "notes": "The ORIGINAL-WINDOW assertion of article Lemma15.8 is now proved\nUNCONDITIONALLY at all cardinalities. For every fixed v>0,a<2 and\nepsilon>0, one fixed cutoff s and one threshold precede all N,L\nand all actual dyadic ground sets. The literal sum over actual\nfull-support families of cardinality at least s, weighted by\nthe exact product of v*p_x, is at most N^(-a+epsilon). Overlapping\nwindows, local relations, incompatible affine systems and zero\nmarginals are all retained. The separate assertion with one fixed\ncompressed block is NOT yet proved. Main15.8 moves to in_progress;\nunconditional coverage stays83/167 and conditional coverage16.\nP1-MATH-0127 records the stronger participating-family bridge.\n\nParticipatingWindowCertificates lifts actual effective relations\nto actual even physical window words. A selected large odd prime\nhas an actual receiving value with ODD valuation in another\nwindow, not just a divisibility witness. Every unmarked window\nthat participates in some actual relation yields either an actual\nmoderate certificate for the entire tuple or an actual outgoing\nsaturation edge. The proof is uniform in the finite order; no\nbound on the number of windows or growing-order constant is used.\nThe existing moderate and saturation estimates are then applied\nto their exact original arithmetic populations.\n\nAllFamilyEnumerations injects every actual unordered family\ntogether with ALL permutations of its enumeration into the\nactual tuple population. It proves F.card*r!<=tuplePopulation.card.\nWindowCertificateFamilies uses a universal enumeration predicate\nfor certified families and proves that a family failing this\npredicate has an actual enumeration with no moderate certificate.\nThe coordinate alternative makes its literal subtype vertex set\nadmissible in the actual marked saturation graph. Exact vertex\nimages and cardinalities are proved. WindowCertificateMass uses\nthe factorial divisor at every order and then sums the actual\nfinite family layers against the already proved summable moderate\ncertificate series. The factorial never estimates the growth\nof an arithmetic constant depending on the order.\n\nMarkedWindowCount proves the actual marked-center count\nN^[1-(1-beta)*(1-sigma)+epsilon] for Y=log(N)^A,T=N^beta,\nprovided sigma>=1/2,sigma<1,A*(1-sigma)<1. It starts from an\nactual B-position cover of marked centers and the proved Rankin\nbound. Upper logarithmic width alone suffices for this count.\nPowerTiltedGraphTail applies the actual marked-star generator.\nUniformGraphCardinalityTail has ONE threshold before every\ncardinality cutoff s and every finite graph: if its vertex count\nis at most N and both mark count and maximum degree are at most\nN^(1-2*theta), its independent tail with weight at most M/N is\nat most N^(-theta*s+epsilon). Tilting by N^theta leaves the full\ngenerating function bounded by exp(M+8*M^2).\n\nOriginalParticipatingTail splits an actual finite population by\nits certificate predicate and proves its mass is at most\nN^(-2*beta+4/A+epsilon)+N^(-theta*s+epsilon). Its threshold precedes\nall orders, every nonnegative heterogeneous weight function\nbounded by M/N, and every actual family population in the dyadic\nblock. Crucially it needs only that EACH target participates in\nSOME relation; a single relation using all targets is unnecessary.\nExplicit parameter choices prove the subcritical a<2 tail with\ns fixed before N. FullSupportIndependentTail.article_15_8_original\nspecializes this stronger statement to the literal actual\nfull-support population and the true Bernoulli marginals.\n\nNo geometric input, desired target estimate, dependency download,\nPaperC port, manuscript-byte change or Palomar registration is\nadded. Compressed blocks, the all-cardinality pair deficit and\npositive or centered masses amplified by relative nullity remain\nseparate open tasks.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": ""
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13177 jobs); direct axiom audit passed for 9958 declarations using only propext, Classical.choice and Quot.sound; all 8209 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.69 GiB."
     },
     {
       "label": "p13:transfer:pair-deficit",

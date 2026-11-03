@@ -3670,6 +3670,9 @@ import PaperP1
 #print axioms PaperP1.Arithmetic.sum_parityVec_eq_zero_iff_prod_eq_sq
 #print axioms PaperP1.Arithmetic.add_parityVec_eq_zero_of_mul_eq_sq
 #print axioms PaperP1.Arithmetic.add_parityVec_eq_zero_iff_mul_eq_sq
+#print axioms PaperP1.ParticipatingWindowCertificates.other_odd_receiver
+#print axioms PaperP1.ParticipatingWindowCertificates.physical_relation
+#print axioms PaperP1.ParticipatingWindowCertificates.coordinate_alternative
 #print axioms PaperP1.PhysicalClassData.source_image
 #print axioms PaperP1.PhysicalClassData.target_image
 #print axioms PaperP1.PhysicalClassData.sources_card
@@ -5559,6 +5562,7 @@ import PaperP1
 #print axioms PaperP1.FixedWindowBranching.badStarts_card_critical
 #print axioms PaperP1.FixedWindowBranching.original_windows_critical
 #print axioms PaperP1.FourthRepeatedRunCostUnderBCN.uniform_bound
+#print axioms PaperP1.FullSupportIndependentTail.article_15_8_original
 #print axioms PaperP1.GeneralBranchingTheorem.reindexed_windows
 #print axioms PaperP1.GeneralBranchingTheorem.dilation_conclusion
 #print axioms PaperP1.GeneralBranchingTheorem.companion_T1_15
@@ -5801,6 +5805,10 @@ import PaperP1
 #print axioms PaperP1.ManyPlanarSquareProducts.many_real_iff
 #print axioms PaperP1.ManyPlanarSquareProducts.hosts_data
 #print axioms PaperP1.ManyPlanarSquareProducts.source_population
+#print axioms PaperP1.MarkedWindowCount.mem_marked
+#print axioms PaperP1.MarkedWindowCount.finite_bound
+#print axioms PaperP1.MarkedWindowCount.logarithmic_exponential
+#print axioms PaperP1.MarkedWindowCount.uniform_count
 #print axioms PaperP1.ModerateCertificateAsymptotic.constant_le_power_eventually
 #print axioms PaperP1.ModerateCertificateAsymptotic.cutoff_ge_log_eventually
 #print axioms PaperP1.ModerateCertificateAsymptotic.weightedTotal_le_power_eventually
@@ -5926,6 +5934,9 @@ import PaperP1
 #print axioms PaperP1.OriginalPairHosts.uniform_count
 #print axioms PaperP1.OriginalPairHosts.improved_support
 #print axioms PaperP1.OriginalPairHosts.article_3_2_support
+#print axioms PaperP1.OriginalParticipatingTail.uniform_split_bound
+#print axioms PaperP1.OriginalParticipatingTail.subcritical_parameters
+#print axioms PaperP1.OriginalParticipatingTail.subcritical_tail
 #print axioms PaperP1.OriginalWindowFamilyCounts.uniform_hosts
 #print axioms PaperP1.OriginalWindowFamilyMass.uniform_marginals
 #print axioms PaperP1.OriginalWindowFamilyMass.article_10_2
@@ -6482,6 +6493,7 @@ import PaperP1
 #print axioms PaperP1.TwoTargetWeakSingletonCount.uniform_hosts
 #print axioms PaperP1.TwoTargetWeakUpperCount.uniform_pairs
 #print axioms PaperP1.uniformLittleOOn_zero
+#print axioms PaperP1.UniformGraphCardinalityTail.uniform_tail
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
 #print axioms PaperP1.UnitChannelPairWeights.uniform_joint
 #print axioms PaperP1.UnitChannelPairWeights.uniform_coefficient
@@ -6783,6 +6795,8 @@ import PaperP1
 #print axioms PaperP1.WindowRelationMonotone.sum_extend
 #print axioms PaperP1.WindowRelationMonotone.relationExtend_injective
 #print axioms PaperP1.WindowRelationMonotone.window_relation_finrank_mono
+#print axioms PaperP1.AllFamilyEnumerations.tupleSet_comp_perm
+#print axioms PaperP1.AllFamilyEnumerations.factorial_count_le
 #print axioms PaperP1.BinaryLabelRepresentations.minimal_representation
 #print axioms PaperP1.BinaryLabelRepresentations.zero_not_mem_of_zeroSumFree
 #print axioms PaperP1.BinaryLabelRepresentations.sum_subselection
@@ -7088,6 +7102,8 @@ import PaperP1
 #print axioms PaperP1.PlaneFibreBounds.level_card
 #print axioms PaperP1.PlaneFibreBounds.fibre_card
 #print axioms PaperP1.PlaneSupportCount.finite_bound
+#print axioms PaperP1.PowerTiltedGraphTail.tilt_bound
+#print axioms PaperP1.PowerTiltedGraphTail.total_bound
 #print axioms PaperP1.PrimeRowComponents.mem_values
 #print axioms PaperP1.PrimeRowComponents.values_subset
 #print axioms PaperP1.PrimeRowComponents.values_nonempty
@@ -8118,6 +8134,9 @@ import PaperP1
 #print axioms PaperP1.HomogeneousSourcePairMass.regular_dependent_bound
 #print axioms PaperP1.IncompatiblePairActivity.finite_bound
 #print axioms PaperP1.IncompatiblePairActivity.signed_absolute_gap
+#print axioms PaperP1.IndependentFullSupportTail.mem_families
+#print axioms PaperP1.IndependentFullSupportTail.witnesses
+#print axioms PaperP1.IndependentFullSupportTail.primitive_fullSupport
 #print axioms PaperP1.IndependentTargetDeficit.pair_rank
 #print axioms PaperP1.IndependentTargetDeficit.target_pair
 #print axioms PaperP1.IndependentTargetDeficit.nonneg
@@ -8950,6 +8969,14 @@ import PaperP1
 #print axioms PaperP1.UnsignedUnitFourierAggregate.finite_unsigned_sum_error
 #print axioms PaperP1.WeakPairActivity.coefficient_bound
 #print axioms PaperP1.WeakPairActivity.finite_bound
+#print axioms PaperP1.WindowCertificateFamilies.mem_vertices
+#print axioms PaperP1.WindowCertificateFamilies.vertices_image
+#print axioms PaperP1.WindowCertificateFamilies.vertices_card
+#print axioms PaperP1.WindowCertificateFamilies.covered_of_witnesses
+#print axioms PaperP1.WindowCertificateFamilies.certified_count
+#print axioms PaperP1.WindowCertificateFamilies.noncertified_admissible
+#print axioms PaperP1.WindowCertificateMass.certified_layer_bound
+#print axioms PaperP1.WindowCertificateMass.certified_total_bound
 #print axioms PaperP1.WindowConditionalSum.finite_bound
 #print axioms PaperP1.WindowFamilyConditional.conditionalProbability_nonneg
 #print axioms PaperP1.WindowFamilyConditional.sourceEvent_restrict

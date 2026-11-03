@@ -2303,3 +2303,13 @@ public import PaperP1.Model.RelativeWindowFamilies
 public import PaperP1.Asymptotics.RelativeOriginalWindowMass
 public import PaperP1.Model.FixedPairExtensions
 public import PaperP1.Asymptotics.FixedPairExtensionDeficitUnderInputs
+public import PaperP1.Combinatorics.AllFamilyEnumerations
+public import PaperP1.Arithmetic.ParticipatingWindowCertificates
+public import PaperP1.Asymptotics.MarkedWindowCount
+public import PaperP1.Combinatorics.PowerTiltedGraphTail
+public import PaperP1.Asymptotics.UniformGraphCardinalityTail
+public import PaperP1.Model.WindowCertificateFamilies
+public import PaperP1.Model.WindowCertificateMass
+public import PaperP1.Asymptotics.OriginalParticipatingTail
+public import PaperP1.Model.IndependentFullSupportTail
+public import PaperP1.Asymptotics.FullSupportIndependentTail
