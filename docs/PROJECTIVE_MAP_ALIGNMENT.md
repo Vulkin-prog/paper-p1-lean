@@ -318,3 +318,53 @@ remain open. T1.7 stays in_progress, numbered coverage stays
 deferred. Original manuscript sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12087 jobs, direct axiom audit of 8167 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 5888 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.67 GiB.
+
+
+## P1-MATH-0107 — Exact Hilbert function, polynomial and multiplicity of the actual source
+
+The actual source homogeneous pieces now have explicit coefficient-field
+bases and exact dimensions. If e ranges over the literal quadratic
+normal-basis indices, and |e| is its proved radical-count weight, then
+
+    h_S(n) = sum_{|e| <= n} binom(D(n-|e|)+2,2).
+
+Every homogeneous piece is finite dimensional. For n >= k all normal
+indices occur. The rational polynomial
+
+    P_S(T) = (1/2) sum_e (DT-D|e|+1)(DT-D|e|+2)
+
+is proved to equal these actual dimensions for every n >= k. Its
+quadratic coefficient is 2^k D^2/2; for positive D its degree is exactly
+two and its Hilbert multiplicity is 2^k D^2. This last invariant is
+constructed from the unique eventual polynomial of the actual graded
+pieces, not supplied as a premise or defined to be the target value.
+
+The proof first restricts actual homogeneous vector bases to components.
+The native standard Veronese basis consists of literal monomials.
+The scalar-preserving literal base inclusion then composes that vector
+basis with the actual relative free quadratic basis. Its component
+indices are explicitly reindexed by radical weight and polynomial
+exponents. Exponents of degree m are identified with symmetric powers,
+giving the proved monomial count binom(m+2,2). The native base pieces
+accordingly have dimension binom(nD+2,2).
+
+All these dimension and Hilbert identities hold over any coefficient
+field, including positive characteristic and zero radicand coefficients,
+under the literal radicand identities, positive D and degree bound.
+The separate characteristic-zero, nonzero-coefficient and root-disjointness
+hypotheses remain necessary in the existing source-integrality argument.
+This gives an elementary Hilbert-function proof of the numerical surface
+factor appearing in Step 2, and a stronger exact formula for a revision.
+
+The invariant computed here is the Hilbert multiplicity of the actual
+chosen graded presentation. A scheme-theoretic comparison with the
+manuscript's explicit projective embedding and hyperplane bundle, the
+native target's identification with the plane, the curve-degree
+projection formula and the external surface/curve host counts remain
+open. The explicit affine generic-tower identification is also still
+open. T1.7 remains in_progress and numbered coverage remains 79/167.
+Confirmed mathematical improvements now total 107; no manuscript
+conclusion error has been confirmed. Palomar remains deferred.
+Original manuscript sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12115 jobs, direct axiom audit of 8213 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 5949 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.64 GiB.

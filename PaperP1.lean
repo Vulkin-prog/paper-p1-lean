@@ -1778,3 +1778,16 @@ public import PaperP1.Geometry.ProjChartFunctionField
 public import PaperP1.Geometry.ProjChartFunctionFieldNaturality
 public import PaperP1.Geometry.ProjFunctionFieldDegree
 public import PaperP1.Geometry.SourceProjectiveFunctionFieldDegree
+public import PaperP1.Algebra.GradedFreePieceBasis
+public import PaperP1.Algebra.GradedHilbertPolynomial
+public import PaperP1.Algebra.HomogeneousMonomialCount
+public import PaperP1.Algebra.HomogeneousPieceBasis
+public import PaperP1.Algebra.MvPolynomialHomogeneousBasis
+public import PaperP1.Algebra.SourceVeroneseHilbert
+public import PaperP1.Algebra.SourceVeroneseHilbertPolynomial
+public import PaperP1.Algebra.SourceVeroneseScalars
+public import PaperP1.Algebra.SourceVeroneseVectorBasis
+public import PaperP1.Algebra.StandardVeroneseHilbert
+public import PaperP1.Algebra.StandardVeronesePieceBasis
+public import PaperP1.Algebra.WeightedVeroneseHilbertPolynomial
+public import PaperP1.Algebra.WeightedVeronesePieceIndex
