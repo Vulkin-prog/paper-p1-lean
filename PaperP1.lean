@@ -2138,3 +2138,14 @@ public import PaperP1.Arithmetic.PlaneProductCover
 public import PaperP1.Arithmetic.TernaryTopProducts
 public import PaperP1.Arithmetic.TernaryGroupCertificates
 public import PaperP1.Arithmetic.TernaryGroupCounts
+public import PaperP1.Arithmetic.TernaryTopProductDrop
+public import PaperP1.Arithmetic.TernaryLargestSelection
+public import PaperP1.Arithmetic.TernaryCutoffMonotonicity
+public import PaperP1.Asymptotics.TernaryGroupScales
+public import PaperP1.Asymptotics.TernaryWeakCritical
+public import PaperP1.Asymptotics.TernaryStrongCritical
+public import PaperP1.Asymptotics.TernaryBudgetDomain
+public import PaperP1.Asymptotics.TernaryGroupBudget
+public import PaperP1.Asymptotics.TernaryPatternBudget
+public import PaperP1.Asymptotics.TernaryGroupTheorem
+public import PaperP1.Asymptotics.TernaryUnboundedCutoff

@@ -9216,6 +9216,71 @@
         "status": "not_integrated"
       },
       "validation_commit": "b4a8289d9ff86e29e5ab9d7591cabd6d21284f84"
+    },
+    {
+      "id": "P1-MATH-0116",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:ternary-budget",
+        "number": "T1.16",
+        "page": 18,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 1114,
+        "statement_sha256": "d42d4e3cc2633493ca9ba962d80af9cd070b75dfad3b4f6b7b3713e368a20f2f"
+      },
+      "original_assumption": "The fixed-k induction in T1.16 uses the exact drop exponent 6(k-1)/(5k), separating the cases k=4, k=5 and k>=6 and truncating the previous-order threshold at N.",
+      "finding": "For every k>=4 the exact drop exponent is at least 9/10. Applying the already proved previous-order budget at the single cutoff N^(9/10) gives N^3/N^(18/10)=N^(6/5) at every step. The source case split and threshold truncation are unnecessary. The maximizing-selection deletion inequality, exponent comparison and complete fixed-k induction are proved for the actual prime groups.",
+      "impact": "This simplifies the unconditional proof without changing the source exponent, fixed-k quantifiers or arithmetic hypotheses. The final source theorem, including labeled offset patterns, actual tuple population and arbitrary prime cutoffs above the diameters, is now proved. Coverage increases to 80/167. No error in the source conclusion is claimed.",
+      "proposed_revision": "After proving G_k^(k-1)<=G_(k-1)^k, use the common preceding-order threshold N^(9/10) for all k>=4 and one induction paragraph. Retain fixed k and the internal error margins explicitly. State the cutoff monotonicity reduction when H is not assumed logarithmically bounded.",
+      "evidence": [
+        "PaperP1.TernaryTopProductDrop.drop_power",
+        "PaperP1.TernaryTopProductDrop.threshold_drop",
+        "PaperP1.TernaryTopProductDrop.thresholdExponent_ge",
+        "PaperP1.TernaryTopProductDrop.thresholdExponent_ge_one",
+        "PaperP1.TernaryLargestSelection.attained_largest",
+        "PaperP1.TernaryCutoffMonotonicity.primes_mono",
+        "PaperP1.TernaryCutoffMonotonicity.group_le",
+        "PaperP1.TernaryCutoffMonotonicity.active_mono",
+        "PaperP1.TernaryCutoffMonotonicity.top_product_le",
+        "PaperP1.TernaryGroupScales.radius_length_factor",
+        "PaperP1.TernaryGroupScales.affine_power_bound",
+        "PaperP1.TernaryGroupScales.plane_pool_factor_bound",
+        "PaperP1.TernaryGroupScales.plane_length_factor",
+        "PaperP1.TernaryGroupScales.forcing_scale",
+        "PaperP1.TernaryGroupScales.logConstant_nonneg",
+        "PaperP1.TernaryGroupScales.pair_threshold_log",
+        "PaperP1.TernaryWeakCritical.uniform_bound",
+        "PaperP1.TernaryStrongCritical.coefficient_nonneg",
+        "PaperP1.TernaryStrongCritical.numeric_bracket",
+        "PaperP1.TernaryStrongCritical.uniform_bound",
+        "PaperP1.TernaryBudgetDomain.three_group_bound",
+        "PaperP1.TernaryGroupBudget.uniform_bound",
+        "PaperP1.TernaryPatternBudget.uniform_bound",
+        "PaperP1.TernaryGroupTheorem.SourceAdmissible.toAdmissible",
+        "PaperP1.TernaryGroupTheorem.mem_sourceCentres",
+        "PaperP1.TernaryGroupTheorem.bounded_cutoff_patterns",
+        "PaperP1.TernaryGroupTheorem.source_centres_bound",
+        "PaperP1.TernaryUnboundedCutoff.SourceConditions.capped",
+        "PaperP1.TernaryUnboundedCutoff.companion_T1_16",
+        "PaperP1.TernaryUnboundedCutoff.mem_tuples",
+        "PaperP1.TernaryUnboundedCutoff.actual_tuples_bound",
+        "PaperP1.TernaryTopProductDrop.thresholdExponent",
+        "PaperP1.TernaryGroupScales.logConstant",
+        "PaperP1.TernaryStrongCritical.coefficient",
+        "PaperP1.TernaryBudgetDomain.Admissible",
+        "PaperP1.TernaryGroupTheorem.SourceAdmissible",
+        "PaperP1.TernaryGroupTheorem.sourceCentres",
+        "PaperP1.TernaryUnboundedCutoff.SourceConditions",
+        "PaperP1.TernaryUnboundedCutoff.tuples"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (12845 jobs); direct axiom audit passed for 9452 declarations using only propext, Classical.choice and Quot.sound; all 7557 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.44 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
