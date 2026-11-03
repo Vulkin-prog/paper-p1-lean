@@ -193,3 +193,66 @@ counting estimate, dependency download, original-source modification
 or Palomar registration is introduced.
 
 Verified with Lean v4.36.0-rc2: full lake build (11365 jobs), actual Audit.lean kernel-axiom audit (7793 declarations; only propext, Classical.choice, Quot.sound), all 5510 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.42 GiB.
+
+
+## P1-MATH-0105 — A monic equation and a free power basis for the actual affine image
+
+The actual affine image in companion T1.7 now has its literal
+monic irreducible equation and an explicit free power basis over the
+base polynomial ring. Write R=F[X,Y], A for the actual quadratic
+tower and s for the sum of its k radical generators. The actual
+minimal polynomial P in R[Z] is monic, has Z-degree exactly 2^k,
+and generates the full kernel of evaluation Z->s. The quotient
+R[Z]/(P) is identified with the actual image subalgebra R[s], with
+the isomorphism proved on every polynomial. Thus this is a
+presentation of the image, rather than a polynomial merely
+vanishing on a collection of source points.
+
+The general argument works over any domain R with a characteristic-
+zero fraction field K for which the actual mapped radicands are
+independent. Every nonzero annihilating polynomial over R has
+Z-degree at least 2^k. The finite free coordinate tower bounds the
+minimal polynomial degree from above. Its coefficient map to K is
+the actual generic minimal polynomial. Monic division then reflects
+divisibility from K[Z] to R[Z] and proves the complete kernel
+identity. No integral-closedness hypothesis on R is needed.
+
+Transporting the actual quotient's power basis gives
+  R[s] free and finite over R, of rank 2^k,
+  with actual basis 1,s,...,s^(2^k-1).
+This strengthens the source's description of the affine image and
+is recorded as P1-MATH-0105. The freeness concerns the image as an
+algebra over the plane; the finite birational map from A to its
+image is a different morphism. All coefficients remain arbitrary
+nonzero constants, and no height or smoothness premise is used
+for this algebraic assertion.
+
+A concrete algebra equivalence transports the nested polynomial
+to Mathlib's MvPolynomial (Fin 3) F. Its coordinate 0 is Z, 1 is Y
+and 2 is X; the variable images and literal evaluation are checked.
+The transported equation is irreducible and its actual totalDegree
+is at least 2^k. Every actual solution of the original split
+equations maps to its zero at (sum w_i,Y,X). The point statement
+is obtained from the already proved unique source ring map, not
+from an assumed point-count or geometric correspondence.
+
+Finally the monic projection equation is proved to commute with
+arbitrary base changes that retain the actual generic independence.
+For every characteristic-zero field extension the actual scaled
+split polynomials, root-list system and projection equation all
+commute with the literal coefficient maps. The original image
+equation therefore remains irreducible after every such extension,
+including passage to an algebraic closure. This verifies the
+coefficient compatibility needed for geometric irreducibility.
+
+The uniform upper bound on the defining total degree, projective
+closure and degree formulas, curve exclusions, surface coverings
+and two-variable host estimates remain open. The totalDegree
+lower bound proved here is not a completed projective intersection-
+theoretic degree argument. T1.7 stays in_progress and numbered
+coverage stays 79/167. Confirmed improvements total 105; no error
+in a manuscript conclusion is asserted. No external counting
+input, dependency download, source-byte change or Palomar
+registration is introduced.
+
+Verified with Lean v4.36.0-rc2: full lake build (11379 jobs), actual Audit.lean kernel-axiom audit (7836 declarations; only propext, Classical.choice, Quot.sound), all 5553 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.40 GiB.

@@ -6262,6 +6262,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "767053f98ad1ddb7c5074dac9cfa11b57684d7da"
+    },
+    {
+      "id": "P1-MATH-0105",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Step 1 states freeness of the original coordinate algebra over the plane and finiteness and birationality of its radical-sum projection; it does not give a free power basis for the actual image algebra.",
+      "finding": "The actual affine image R[s], where s is the sum of the independent radicals, is itself a finite free R-module of rank 2^k, with literal basis 1,s,...,s^(2^k-1). Its single monic irreducible equation is the actual minimal polynomial of s, has Z-degree 2^k, and generates the full evaluation kernel. The general proof requires only a domain R with characteristic-zero fraction field and actual generic radicand independence.",
+      "evidence": [
+        "PaperP1.RadicalProjectionPowerBasis.imagePowerBasis_dim",
+        "PaperP1.RadicalProjectionPowerBasis.imagePowerBasis_gen",
+        "PaperP1.RadicalProjectionPowerBasis.imagePowerBasis_apply",
+        "PaperP1.RadicalProjectionPowerBasis.image_free",
+        "PaperP1.RadicalProjectionPowerBasis.image_finite",
+        "PaperP1.RadicalProjectionPowerBasis.image_finrank",
+        "PaperP1.RadicalProjectionPolynomial.kernel_eq_span",
+        "PaperP1.RadicalProjectionPolynomial.quotientEquivImage_apply",
+        "PaperP1.SplitRadicalProjectionPolynomial.source_image_free_rank"
+      ],
+      "proposed_revision": "After the finite birational projection argument, give the presentation R[s]=R[Z]/(P), with P monic of Z-degree 2^k, and state the resulting power basis and free rank of the actual image over the plane. Distinguish this base projection from the finite birational source-to-image morphism.",
+      "impact": "Strengthens the algebraic description of the projected image and makes its defining equation and generic degree explicit. No host-count exponent or numbered-result status changes, and no manuscript conclusion error is asserted.",
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11379 jobs), actual Audit.lean kernel-axiom audit (7836 declarations; only propext, Classical.choice, Quot.sound), all 5553 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.40 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

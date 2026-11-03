@@ -1701,3 +1701,10 @@ public import PaperP1.Algebra.QuadraticTowerSumBaseChange
 public import PaperP1.Algebra.FractionFieldFromGenericGenerator
 public import PaperP1.Algebra.BirationalRadicalProjection
 public import PaperP1.Algebra.SplitRadicalBirationalProjection
+public import PaperP1.Algebra.RadicalProjectionPolynomial
+public import PaperP1.Algebra.RadicalProjectionPowerBasis
+public import PaperP1.Algebra.TrivariatePolynomialEquiv
+public import PaperP1.Algebra.TrivariatePolynomialEvaluation
+public import PaperP1.Algebra.SplitRadicalProjectionPolynomial
+public import PaperP1.Algebra.RadicalProjectionPolynomialBaseChange
+public import PaperP1.Algebra.SplitRadicalProjectionBaseChange
