@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **8318 audited theorem/lemma declarations**. This
+- The project currently has **8351 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -7912,3 +7912,43 @@ remain open. T1.7 stays in_progress, numbered coverage remains
 deferred. Original manuscript sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12173 jobs, direct axiom audit of 8318 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6098 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.56 GiB.
+
+
+## Plane-equation quotient and actual Veronese Hilbert degree
+
+For the literal quotient F[X,Y,Z]/(f), with nonzero homogeneous f
+of degree e, multiplication by f is an injective map from the
+ordinary degree-n piece to the degree-(n+e) piece. Its actual range
+is exactly the kernel of the homogeneous quotient map. Rank-nullity
+and the proved monomial bases therefore give
+h(n+e)+binom(n+2,2)=binom(n+e+2,2).
+Every quotient piece is finite dimensional. Its unique eventual
+Hilbert polynomial is eT+(3e-e^2)/2. For positive e its degree is
+one and its Hilbert multiplicity is e.
+
+For any internally graded algebra over a field, the actual rescaled
+D-th Veronese piece is proved linearly equivalent to the original
+degree-nD piece. For positive D, any established Hilbert polynomial
+P becomes P(DT); its multiplicity is multiplied by D^(deg P).
+These are proved from the actual pieces and polynomial composition.
+Applying this to the literal plane-equation quotient gives Hilbert
+degree De for its D-th Veronese, with its quotient and Veronese
+gradings explicitly constructed.
+
+These calculations hold over any coefficient field. The plane
+Hilbert identities require neither irreducibility nor reducedness
+of f, only f nonzero and homogeneous; positivity of e and D is
+explicit when claiming degree one or Veronese rescaling. No general
+Hilbert-polynomial existence theorem is assumed.
+
+This proves the target plane-curve factor De needed in Step 2.
+The remaining comparison with the Hilbert degree of an arbitrary
+integral curve in the actual source still requires the finite
+graded-module rank formula and its degree-zero field comparison.
+The full curve projection-degree formula, scheme-dimension and
+hyperplane-bundle comparisons, low-degree curve geometry and
+external host-count inputs remain open. T1.7 stays in_progress,
+numbered coverage remains 79/167 and confirmed improvements remain
+107. Palomar remains deferred; original sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12185 jobs, direct axiom audit of 8351 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6144 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.55 GiB.

@@ -1820,3 +1820,9 @@ public import PaperP1.Algebra.SplitWeightedGeneratorIndex
 public import PaperP1.Geometry.ProjSurjectiveClosedImmersion
 public import PaperP1.Geometry.SourceEmbeddingCoordinateAlgebra
 public import PaperP1.Geometry.SourceProjectiveEmbedding
+public import PaperP1.Algebra.HomogeneousPrincipalQuotient
+public import PaperP1.Algebra.MvPolynomialHilbert
+public import PaperP1.Algebra.PlaneCurveHilbert
+public import PaperP1.Algebra.GradedVeronesePieceEquiv
+public import PaperP1.Algebra.GradedVeroneseHilbertPolynomial
+public import PaperP1.Algebra.PlaneCurveVeroneseHilbert

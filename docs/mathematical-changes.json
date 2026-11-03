@@ -6666,9 +6666,9 @@
         "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
       },
       "original_assumption": "Step 2 computes the surface factor 2^k D^2 from a hyperplane-bundle pullback on an integral projective surface in characteristic zero. It gives no exact Hilbert function or polynomial and does not discuss degenerate coefficients or positive characteristic for this numerical identity.",
-      "finding": "The literal source Veronese has finite-dimensional homogeneous pieces with h_S(n)=sum_{|e|<=n} binom(D(n-|e|)+2,2). Its unique eventual rational Hilbert polynomial is (1/2) sum_e (DT-D|e|+1)(DT-D|e|+2). It has degree two and Hilbert multiplicity 2^k D^2 for positive D. These identities hold over any field, allowing zero coefficients, under the literal homogeneous relations and degree bound. The Veronese coordinate-chart equivalences and coefficient-specialization quotient formulas are also proved over arbitrary fields with zero coefficients; the generic Veronese chart equivalence allows commutative coefficient algebras with zero divisors. The general positive-Veronese Proj invariance theorem is now proved for arbitrary internally graded commutative coefficient algebras, including nonreduced rings, without finite-generation or domain hypotheses. The Hilbert multiplicity 2^k D^2 is now also proved for the literal homogeneous polynomial coordinate quotient of the verified closed immersion in the manuscript monomial/radical coordinates. Every quotient piece has the actual ordinary homogeneous image grading and is linearly equivalent to the computed source piece.",
+      "finding": "The literal source Veronese has finite-dimensional homogeneous pieces with h_S(n)=sum_{|e|<=n} binom(D(n-|e|)+2,2). Its unique eventual rational Hilbert polynomial is (1/2) sum_e (DT-D|e|+1)(DT-D|e|+2). It has degree two and Hilbert multiplicity 2^k D^2 for positive D. These identities hold over any field, allowing zero coefficients, under the literal homogeneous relations and degree bound. The Veronese coordinate-chart equivalences and coefficient-specialization quotient formulas are also proved over arbitrary fields with zero coefficients; the generic Veronese chart equivalence allows commutative coefficient algebras with zero divisors. The general positive-Veronese Proj invariance theorem is now proved for arbitrary internally graded commutative coefficient algebras, including nonreduced rings, without finite-generation or domain hypotheses. The Hilbert multiplicity 2^k D^2 is now also proved for the literal homogeneous polynomial coordinate quotient of the verified closed immersion in the manuscript monomial/radical coordinates. Every quotient piece has the actual ordinary homogeneous image grading and is linearly equivalent to the computed source piece. The literal plane-equation quotient has the proved eventual polynomial eT+(3e-e^2)/2 and Hilbert multiplicity e for positive e. Its actual positive D-th Veronese has Hilbert multiplicity De. These curve calculations permit arbitrary fields and nonzero homogeneous equations without irreducibility or reducedness. General Veronese Hilbert rescaling P(T) to P(DT) is checked for actual pieces.",
       "impact": "Gives the exact Hilbert function and polynomial, and the numerical Hilbert degree 2^k D^2 for the actual specified projective embedding, with arbitrary characteristic and zero coefficients allowed. The coordinate quotient and grading are verified. It does not assume or establish the remaining hyperplane-bundle, curve projection-degree, scheme-dimension or external point-count results.",
-      "proposed_revision": "Add the explicit shifted monomial basis and Hilbert formula to Step 2. Derive the surface multiplicity by counting basis monomials, while retaining the separate stronger hypotheses when asserting integrality and using curve function fields. Distinguish this Hilbert computation from the remaining scheme and intersection-theoretic identifications. State the chart-specialization identities under their weaker ring hypotheses, separately from source integrality. The underlying Veronese Proj invariance and chart identities can be cited separately under their weaker ring hypotheses. Use the actual homogeneous coordinate kernel and quotient to connect the elementary Hilbert calculation to the specified closed immersion, while treating the subsequent curve projection formula separately.",
+      "proposed_revision": "Add the explicit shifted monomial basis and Hilbert formula to Step 2. Derive the surface multiplicity by counting basis monomials, while retaining the separate stronger hypotheses when asserting integrality and using curve function fields. Distinguish this Hilbert computation from the remaining scheme and intersection-theoretic identifications. State the chart-specialization identities under their weaker ring hypotheses, separately from source integrality. The underlying Veronese Proj invariance and chart identities can be cited separately under their weaker ring hypotheses. Use the actual homogeneous coordinate kernel and quotient to connect the elementary Hilbert calculation to the specified closed immersion, while treating the subsequent curve projection formula separately. For the plane target, record the exact homogeneous quotient sequence and Hilbert polynomial before proving the separate finite-map rank comparison for source curves.",
       "evidence": [
         "PaperP1.GradedFreePieceBasis.basis_apply",
         "PaperP1.GradedFreePieceBasis.basis_mem",
@@ -6879,9 +6879,55 @@
         "PaperP1.SourceEmbeddingCoordinateAlgebra.coordinateEquiv",
         "PaperP1.SourceEmbeddingCoordinateAlgebra.coordinatePiece",
         "PaperP1.SourceEmbeddingCoordinateAlgebra.coordinateGrading",
-        "PaperP1.SourceEmbeddingCoordinateAlgebra.pieceEquiv"
+        "PaperP1.SourceEmbeddingCoordinateAlgebra.pieceEquiv",
+        "PaperP1.HomogeneousPrincipalQuotient.quotientMap_surjective",
+        "PaperP1.HomogeneousPrincipalQuotient.mulMap_injective",
+        "PaperP1.HomogeneousPrincipalQuotient.range_mulMap",
+        "PaperP1.HomogeneousPrincipalQuotient.finrank_add",
+        "PaperP1.MvPolynomialHilbert.piece_finite",
+        "PaperP1.MvPolynomialHilbert.piece_finrank",
+        "PaperP1.MvPolynomialHilbert.ternary_piece_finrank",
+        "PaperP1.PlaneCurveHilbert.polynomial_natDegree_le",
+        "PaperP1.PlaneCurveHilbert.polynomial_coeff_one",
+        "PaperP1.PlaneCurveHilbert.polynomial_natDegree",
+        "PaperP1.PlaneCurveHilbert.polynomial_leadingCoeff",
+        "PaperP1.PlaneCurveHilbert.ideal_homogeneous",
+        "PaperP1.PlaneCurveHilbert.piece_finite",
+        "PaperP1.PlaneCurveHilbert.piece_finrank_add",
+        "PaperP1.PlaneCurveHilbert.isHilbertPolynomial",
+        "PaperP1.PlaneCurveHilbert.exists_polynomial",
+        "PaperP1.PlaneCurveHilbert.multiplicity",
+        "PaperP1.GradedVeronesePieceEquiv.equiv_val",
+        "PaperP1.GradedVeronesePieceEquiv.finrank_eq",
+        "PaperP1.GradedVeronesePieceEquiv.finite",
+        "PaperP1.GradedVeroneseHilbertPolynomial.rescale_eval",
+        "PaperP1.GradedVeroneseHilbertPolynomial.isHilbertPolynomial",
+        "PaperP1.GradedVeroneseHilbertPolynomial.rescale_natDegree",
+        "PaperP1.GradedVeroneseHilbertPolynomial.rescale_leadingCoeff",
+        "PaperP1.GradedVeroneseHilbertPolynomial.exists_polynomial",
+        "PaperP1.GradedVeroneseHilbertPolynomial.multiplicity",
+        "PaperP1.PlaneCurveVeroneseHilbert.piece_finrank",
+        "PaperP1.PlaneCurveVeroneseHilbert.piece_finite",
+        "PaperP1.PlaneCurveVeroneseHilbert.isHilbertPolynomial",
+        "PaperP1.PlaneCurveVeroneseHilbert.exists_polynomial",
+        "PaperP1.PlaneCurveVeroneseHilbert.polynomial_natDegree",
+        "PaperP1.PlaneCurveVeroneseHilbert.polynomial_leadingCoeff",
+        "PaperP1.PlaneCurveVeroneseHilbert.multiplicity",
+        "PaperP1.HomogeneousPrincipalQuotient.ideal",
+        "PaperP1.HomogeneousPrincipalQuotient.piece",
+        "PaperP1.HomogeneousPrincipalQuotient.quotientMap",
+        "PaperP1.HomogeneousPrincipalQuotient.mulMap",
+        "PaperP1.PlaneCurveHilbert.CoordinateRing",
+        "PaperP1.PlaneCurveHilbert.piece",
+        "PaperP1.PlaneCurveHilbert.polynomial",
+        "PaperP1.PlaneCurveHilbert.grading",
+        "PaperP1.GradedVeronesePieceEquiv.equiv",
+        "PaperP1.GradedVeroneseHilbertPolynomial.rescale",
+        "PaperP1.PlaneCurveVeroneseHilbert.CoordinateRing",
+        "PaperP1.PlaneCurveVeroneseHilbert.piece",
+        "PaperP1.PlaneCurveVeroneseHilbert.grading"
       ],
-      "validation": "Verified with Lean v4.36.0-rc2: full build 12173 jobs, direct axiom audit of 8318 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6098 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.56 GiB.",
+      "validation": "Verified with Lean v4.36.0-rc2: full build 12185 jobs, direct axiom audit of 8351 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6144 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.55 GiB.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
@@ -6907,9 +6953,15 @@
           "proposed_revision": "Add the explicit shifted monomial basis and Hilbert formula to Step 2. Derive the surface multiplicity by counting basis monomials, while retaining the separate stronger hypotheses when asserting integrality and using curve function fields. Distinguish this Hilbert computation from the remaining scheme and intersection-theoretic identifications. State the chart-specialization identities under their weaker ring hypotheses, separately from source integrality. The underlying Veronese Proj invariance and chart identities can be cited separately under their weaker ring hypotheses.",
           "validation": "Verified with Lean v4.36.0-rc2: full build 12159 jobs, direct axiom audit of 8285 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6049 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.58 GiB.",
           "validation_commit": "bcda705"
+        },
+        {
+          "finding": "The literal source Veronese has finite-dimensional homogeneous pieces with h_S(n)=sum_{|e|<=n} binom(D(n-|e|)+2,2). Its unique eventual rational Hilbert polynomial is (1/2) sum_e (DT-D|e|+1)(DT-D|e|+2). It has degree two and Hilbert multiplicity 2^k D^2 for positive D. These identities hold over any field, allowing zero coefficients, under the literal homogeneous relations and degree bound. The Veronese coordinate-chart equivalences and coefficient-specialization quotient formulas are also proved over arbitrary fields with zero coefficients; the generic Veronese chart equivalence allows commutative coefficient algebras with zero divisors. The general positive-Veronese Proj invariance theorem is now proved for arbitrary internally graded commutative coefficient algebras, including nonreduced rings, without finite-generation or domain hypotheses. The Hilbert multiplicity 2^k D^2 is now also proved for the literal homogeneous polynomial coordinate quotient of the verified closed immersion in the manuscript monomial/radical coordinates. Every quotient piece has the actual ordinary homogeneous image grading and is linearly equivalent to the computed source piece.",
+          "impact": "Gives the exact Hilbert function and polynomial, and the numerical Hilbert degree 2^k D^2 for the actual specified projective embedding, with arbitrary characteristic and zero coefficients allowed. The coordinate quotient and grading are verified. It does not assume or establish the remaining hyperplane-bundle, curve projection-degree, scheme-dimension or external point-count results.",
+          "proposed_revision": "Add the explicit shifted monomial basis and Hilbert formula to Step 2. Derive the surface multiplicity by counting basis monomials, while retaining the separate stronger hypotheses when asserting integrality and using curve function fields. Distinguish this Hilbert computation from the remaining scheme and intersection-theoretic identifications. State the chart-specialization identities under their weaker ring hypotheses, separately from source integrality. The underlying Veronese Proj invariance and chart identities can be cited separately under their weaker ring hypotheses. Use the actual homogeneous coordinate kernel and quotient to connect the elementary Hilbert calculation to the specified closed immersion, while treating the subsequent curve projection formula separately.",
+          "validation": "Verified with Lean v4.36.0-rc2: full build 12173 jobs, direct axiom audit of 8318 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6098 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.56 GiB.",
+          "validation_commit": "d95009e"
         }
-      ],
-      "validation_commit": "d95009e"
+      ]
     }
   ]
 }
