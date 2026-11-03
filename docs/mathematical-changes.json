@@ -10574,6 +10574,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "e3c62b91c21d7a347902777fd88bb5eb4281a50f"
+    },
+    {
+      "id": "P1-MATH-0148",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:fixed-activities",
+        "number": "15.10",
+        "page": 45,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 561,
+        "statement_sha256": "12de4a1b34610fa9a45c667c976fa4a12804e7cf9884a5192c8c21adc7fd5cff"
+      },
+      "original_assumption": "The printed proof invokes the optimal arithmetic triple exponent41/30 inside an induction to obtain the3/2 incompatible connected remainder.",
+      "finding": "The sharp incompatible connected remainder of main15.10 needs no\noptimal triple activity exponent. Separate all pair sources in the exact\nproper-source expansion and use the already proved all-cardinality pair\ndeficit of rate3/2. Singleton coefficients vanish. Every higher source\nhas the earlier coarse full absolute activity rate1, while its failed\nindependent complement costs1/2 unconditionally. Their product has rate3/2.\nA finite size split proves the sharp incompatible bound uniformly over\nevery prescribed bounded order range. The coarse activity dependency\nchain predates this theorem, so no induction on the target sharp rate or\ncircular sharp input is used. The whole connected reduction to A3 then\nfollows from the actual finite seed cover and completed primitive4/3 mass.\nThe optimal41/30 triple estimate is still needed for the later optimal\nlaw consequence; it is removed only from this incompatible-sector proof.",
+      "impact": "Weakens the mathematical prerequisites for the sharp incompatible remainder to the earlier coarse higher full activity of rate1 and the completed pair deficit, with exact original marginals and all affine cases. It yields the complete literal main15.10 reduction under the same finite geometric properties.",
+      "proposed_revision": "Separate pair sources before the independent-complement estimate. Charge them directly to the full all-cardinality pair deficit. Use coarse full higher activity of rate1 times the unconditional complement saving1/2 on all remaining proper sources; the sharp triple exponent is unnecessary at this step. Retain it separately for the optimal law conclusion.",
+      "evidence": [
+        "PaperP1.IncompatibleHigherDeficit.finite_bound",
+        "PaperP1.FixedActivityInputBundle.uniform_range",
+        "PaperP1.SharpIncompatibleActivityUnderInputs.uniform_range",
+        "PaperP1.SharpConnectedSeedCatalogUnderInputs.uniform_mass",
+        "PaperP1.SharpCompatibleActivityUnderInputs.uniform_range",
+        "PaperP1.ConnectedReductionToTriplesUnderInputs.uniform_range",
+        "PaperP1.ConnectedReductionToTriplesUnderInputs.article_15_10"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13775 jobs); direct axiom audit passed for 10730 declarations using only propext, Classical.choice and Quot.sound; all 9178 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.26 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

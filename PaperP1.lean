@@ -2600,3 +2600,11 @@ public import PaperP1.Coding.RestrictedSupportRank
 public import PaperP1.Combinatorics.TwoSourcePopulations
 public import PaperP1.Model.PrimitiveRareWindows
 public import PaperP1.Model.PrimitiveSmallKernelDichotomy
+public import PaperP1.Model.IncompatibleHigherDeficit
+public import PaperP1.Model.VariableConnectedSeedCatalog
+public import PaperP1.Asymptotics.FixedActivityInputBundle
+public import PaperP1.Asymptotics.SharpIncompatibleActivityUnderInputs
+public import PaperP1.Asymptotics.SharpConnectedSeedParameters
+public import PaperP1.Asymptotics.SharpConnectedSeedCatalogUnderInputs
+public import PaperP1.Asymptotics.SharpCompatibleActivityUnderInputs
+public import PaperP1.Asymptotics.ConnectedReductionToTriplesUnderInputs

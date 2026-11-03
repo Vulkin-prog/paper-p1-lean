@@ -5390,6 +5390,8 @@ import PaperP1
 #print axioms PaperP1.ConnectedIndependent256Budget.uniform_bound
 #print axioms PaperP1.ConnectedJointBoundedNullityTail.uniform_bound
 #print axioms PaperP1.ConnectedOneRankOffsetMassUnderInputs.uniform_bound
+#print axioms PaperP1.ConnectedReductionToTriplesUnderInputs.uniform_range
+#print axioms PaperP1.ConnectedReductionToTriplesUnderInputs.article_15_10
 #print axioms PaperP1.ConnectedSeedCatalogUnderInputs.uniform_mass
 #print axioms PaperP1.ConnectedTailUnderInputs.uniform_tail
 #print axioms PaperP1.ConnectedTailUnderInputs.article_15_12
@@ -5718,6 +5720,7 @@ import PaperP1
 #print axioms PaperP1.FirstQuadraticApproximationUnderInputs.regular_bound
 #print axioms PaperP1.FirstQuadraticApproximationUnderInputs.companion_T17_5
 #print axioms PaperP1.FixedAbsoluteActivityUnderInputs.uniform_range
+#print axioms PaperP1.FixedActivityInputBundle.uniform_range
 #print axioms PaperP1.FixedAnchorDegreeBudget.envelope_div_log_tendsto
 #print axioms PaperP1.FixedAnchorDegreeBudget.log_product_le_envelope
 #print axioms PaperP1.FixedAnchorDegreeBudget.product_le_power_eventually
@@ -6626,8 +6629,11 @@ import PaperP1
 #print axioms PaperP1.SharedPrincipalTripleMass.inclusion
 #print axioms PaperP1.SharedPrincipalTripleMass.uniform_mass
 #print axioms PaperP1.SharedPrincipalTripleMass.relative_to_beta_squared
+#print axioms PaperP1.SharpCompatibleActivityUnderInputs.uniform_range
+#print axioms PaperP1.SharpConnectedSeedCatalogUnderInputs.uniform_mass
 #print axioms PaperP1.SharpCovarianceScaleUnderInputs.uniform_absolute_scale
 #print axioms PaperP1.SharpCovarianceScaleUnderInputs.uniform_regular_covariance
+#print axioms PaperP1.SharpIncompatibleActivityUnderInputs.uniform_range
 #print axioms PaperP1.SharpPairActivityUnderInputs.uniform_principal_profile
 #print axioms PaperP1.SharpPairActivityUnderInputs.uniform_pair_activity
 #print axioms PaperP1.SharpPairTargetDeficitUnderInputs.article_11_1
@@ -8685,6 +8691,7 @@ import PaperP1
 #print axioms PaperP1.IncompatibleConnectedDeficit.mem_sources
 #print axioms PaperP1.IncompatibleConnectedDeficit.proper_bound
 #print axioms PaperP1.IncompatibleConnectedDeficit.finite_bound
+#print axioms PaperP1.IncompatibleHigherDeficit.finite_bound
 #print axioms PaperP1.IncompatiblePairActivity.finite_bound
 #print axioms PaperP1.IncompatiblePairActivity.signed_absolute_gap
 #print axioms PaperP1.IndependentDeficitMonotonicity.nonneg
@@ -9712,6 +9719,9 @@ import PaperP1
 #print axioms PaperP1.UnsignedUnitFourierAggregate.dyadic_unit_sum
 #print axioms PaperP1.UnsignedUnitFourierAggregate.symmetric_unit_sum
 #print axioms PaperP1.UnsignedUnitFourierAggregate.finite_unsigned_sum_error
+#print axioms PaperP1.VariableConnectedSeedCatalog.cover
+#print axioms PaperP1.VariableConnectedSeedCatalog.family_data
+#print axioms PaperP1.VariableConnectedSeedCatalog.mass_bound
 #print axioms PaperP1.VariableRelationCore.exists_bound
 #print axioms PaperP1.VariableRelationCore.weighted_bound
 #print axioms PaperP1.WeakPairActivity.coefficient_bound
