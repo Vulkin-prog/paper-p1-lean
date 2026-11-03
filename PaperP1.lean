@@ -2266,3 +2266,17 @@ public import PaperP1.Asymptotics.SelectedDegreeOneRootHostCount
 public import PaperP1.Asymptotics.CoefficientSelectedDegreeOneHostCount
 public import PaperP1.Arithmetic.TwoTargetSelectedGrids
 public import PaperP1.Asymptotics.WeakAlignedSelectedGrids
+public import PaperP1.Arithmetic.TwoTargetAllowedLabels
+public import PaperP1.Arithmetic.TwoTargetAllowedSingletonSelection
+public import PaperP1.Asymptotics.TwoTargetWeakRegularization
+public import PaperP1.Asymptotics.TwoTargetOrientedClassPattern
+public import PaperP1.Asymptotics.TwoTargetSelectedClassData
+public import PaperP1.Asymptotics.TwoTargetWeakMixedCount
+public import PaperP1.Asymptotics.TwoTargetWeakSingletonCount
+public import PaperP1.Asymptotics.TwoTargetWeakDenseCount
+public import PaperP1.Asymptotics.TwoTargetWeakUpperCount
+public import PaperP1.Asymptotics.TwoTargetWeakRankWeight
+public import PaperP1.Asymptotics.TwoTargetWeakMass
+public import PaperP1.Asymptotics.TwoTargetDenseMass
+public import PaperP1.Arithmetic.TwoTargetAdmissibleDensePairs
+public import PaperP1.Asymptotics.TwoTargetDensePairTheorem

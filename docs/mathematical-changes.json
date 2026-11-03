@@ -9524,6 +9524,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "176f82971fbbcee9d3cab902fb7614966120e9f8"
+    },
+    {
+      "id": "P1-MATH-0124",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:dense-targets",
+        "number": "15.2",
+        "page": 40,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 129,
+        "statement_sha256": "67d2424adbe9ce58d341f300471c14a7e1cf21728b62ee4a3f73ad0425362605"
+      },
+      "original_assumption": "After removing weak aligned components, derive the singleton lower bound from the remaining total component count through n_singleton>=2*m-B.",
+      "finding": "After excluding a common set E of endpoint labels, count the\nsurviving singleton labels directly. Before exclusion, each\ntarget satisfies 2*dim(P)<=B+n_singleton. At most |E| of those\nsingleton labels are removed, so the surviving population is\nat least 2*dim(P)-B-|E|. In contrast, applying the generic\ninequality n_singleton_remaining>=2*m_remaining-B after\nm_remaining>=dim(P)-|E| loses 2*|E|. The direct budget saves\none entire exclusion cost, without restricting P or changing\nits coordinate labels or coefficient list. With the actual\nunit exclusion |E|<=2*theta*L+2 this yields the proved lower\nbound 2*d-xi*L/2-B-(2*theta*L+2) and the upper-stratum count.",
+      "impact": "A sharper exact singleton population after unit-label exclusion; the full weak aligned upper-stratum and weighted dense-pair bounds are now proved using this budget under the unchanged explicit geometric properties.",
+      "proposed_revision": "Record the singleton population before endpoint-label exclusion and subtract at most the number of excluded labels once. Use n_singleton_remaining>=2*dim(P)-B-|E| instead of deriving a weaker bound only from m_remaining. State that P and its intrinsic recovery exclusion are unchanged.",
+      "evidence": [
+        "PaperP1.TwoTargetSingletonLabels.dimension_singleton_budget",
+        "PaperP1.TwoTargetAllowedLabels.singleton_population_budget",
+        "PaperP1.TwoTargetWeakRegularization.excluded_budget",
+        "PaperP1.TwoTargetWeakRegularization.population_bounds",
+        "PaperP1.TwoTargetWeakRegularization.uniform_selection_data",
+        "PaperP1.TwoTargetWeakUpperCount.uniform_pairs",
+        "PaperP1.TwoTargetDensePairTheorem.article_15_2_dense_pair"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13111 jobs); direct axiom audit passed for 9866 declarations using only propext, Classical.choice and Quot.sound; all 8093 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.85 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
