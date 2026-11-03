@@ -9286,3 +9286,56 @@ confirmed manuscript-conclusion error. Palomar is deferred;
 original manuscript bytes and pinned dependencies are unchanged.
 
 Verified under Lean v4.36.0-rc2: full build passed (12649 jobs); direct axiom audit passed for 9085 declarations using only propext, Classical.choice and Quot.sound; all 7097 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.57 GiB.
+
+
+## Actual degree-one graph components construct the counted integer systems
+
+The literal two-window graph component-to-system extraction
+is now proved. The graph is the actual largePrimeGraph with
+cutoff 10*(L+1), and unpinned means the actual ComponentPinned
+predicate. Its component indicator is proved to satisfy the
+actual large-prime equations. The component product therefore
+has no odd prime support above the cutoff. Its actual support
+product is a positive smooth coefficient giving an integer
+square prescription.
+
+The component's two sets of integer offsets are constructed
+from its literal left/right vertices using u.val-1. Their
+cardinalities equal the actual numbers of vertices in each
+window. Distinct components give disjoint offset sets on each
+side. The actual component product is proved to be exactly
+the product of the two offset polynomials at the actual starts.
+When the right side has one vertex, this yields the literal
+integer square equation with an actual integer root.
+
+An injective choice of k actual unpinned components with left
+size a and right size one constructs the full valid smooth
+pattern witness. Selection from the actual finite component
+set is proved internally; no system-extraction premise is used.
+DegreeOneGraphHostCount.uniform_hosts then proves the actual
+N^epsilon dyadic host bound, conditional only on the two explicit
+uniform geometric properties at a fixed k. It assumes no actual
+square-class independence, directness, supplied coefficient
+height, square roots, curve, field or abstract host-count bound.
+For a>=2 aligned hosts are included; for a=1 only the actual
+source alignment is excluded.
+
+The two ordered windows are both counted explicitly. The source
+alignment is proved symmetric. A second theorem counts either
+window order, and a pigeonhole version accepts a total of at
+least 2k typed components across those two orders. All constants
+and cutoffs precede actual dyadic starts, window lengths,
+components and finite host sets. Formal vertex copies are kept
+when the physical windows overlap.
+
+This completes the actual degree-(a,1) graph-count composition
+under the two isolated uniform geometric inputs, including the
+previously proved finite smooth-pattern enumeration. The general
+half-power geometric count and the proofs of the two external
+uniform geometric inputs remain open. T1.7 stays in_progress;
+numbered coverage remains 79/167 and confirmed improvements
+remain 112. This is a proof improvement without a confirmed
+manuscript-conclusion error. Palomar is deferred; original
+manuscript bytes and pinned dependencies are unchanged.
+
+Verified under Lean v4.36.0-rc2: full build passed (12657 jobs); direct axiom audit passed for 9109 declarations using only propext, Classical.choice and Quot.sound; all 7127 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.55 GiB.

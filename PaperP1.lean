@@ -2051,3 +2051,7 @@ public import PaperP1.Asymptotics.DegreeOneRootHostCount
 public import PaperP1.Arithmetic.SplitRadicalPatternPool
 public import PaperP1.Asymptotics.CriticalRootSystemPatterns
 public import PaperP1.Asymptotics.SmoothDegreeOneHostCount
+public import PaperP1.Arithmetic.TwoBlockComponentSquares
+public import PaperP1.Arithmetic.TwoBlockComponentPatterns
+public import PaperP1.Asymptotics.TwoBlockComponentHostData
+public import PaperP1.Asymptotics.DegreeOneGraphHostCount
