@@ -7376,3 +7376,40 @@ counts remain open. T1.7 stays in_progress, coverage stays 79/167,
 confirmed improvements stay 106 and Palomar remains deferred.
 
 Verified with Lean v4.36.0-rc2: full build 12075 jobs, direct axiom audit of 8151 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 5867 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.69 GiB.
+
+
+## Naturality of the actual projective function-field map
+
+The map on actual scheme function fields is now proved compatible
+with the map on actual degree-zero homogeneous fractions. The
+function-field equivalences and the generic-point stalk map are
+exposed as their categorical isomorphism and morphism, preserving
+their previous ring types and constructions. Their commuting
+diagram is a proved equality of actual ring homomorphisms.
+
+The proof transports a scheme stalk map along proved equalities
+of source and target points. A Proj stalk compatibility theorem
+identifies it with the actual homogeneous local ring map after
+that point transport. At the zero homogeneous primes, this is
+exactly the degree-zero fraction map of the original graded ring
+homomorphism. Applying the checked generic-point equalities gives
+the categorical square and then the ring-homomorphism square.
+
+For the paper's source, the separately constructed map induced by
+the actual projective morphism is proved equal to the general
+construction. The literal base and source function-field
+equivalences then give the commuting diagram with the actual
+graded base inclusion on homogeneous fractions. All source domain
+and integrality hypotheses remain explicit and are discharged by
+the previously proved source domain and nonempty-Proj results.
+
+Thus the naturality part of the degree-zero function-field bridge
+is complete. Identification with the manuscript's affine
+split-radical generic tower and the numerical degree of this
+actual field extension remain open. The explicit plane
+identification, Hilbert computation, surface degree 2^k D^2,
+curve-degree identities and external host counts also remain
+open. T1.7 stays in_progress, coverage stays 79/167, confirmed
+improvements stay 106 and Palomar remains deferred.
+
+Verified with Lean v4.36.0-rc2: full build 12079 jobs, direct axiom audit of 8157 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 5876 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.68 GiB.

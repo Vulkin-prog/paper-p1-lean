@@ -1772,3 +1772,5 @@ public import PaperP1.Geometry.SourceProjectiveIntegral
 public import PaperP1.Geometry.ProjFunctionField
 public import PaperP1.Geometry.ProjFunctionFieldMap
 public import PaperP1.Geometry.SourceProjectiveFunctionField
+public import PaperP1.Geometry.ProjFunctionFieldCompatibility
+public import PaperP1.Geometry.SourceProjectiveFunctionFieldCompatibility

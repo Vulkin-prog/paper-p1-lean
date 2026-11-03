@@ -42,15 +42,23 @@ theorem genericPoint_map :
   rw [ProjIntegral.genericPoint_eq_zero G hG, ProjIntegral.genericPoint_eq_zero H hH]
   exact zeroPoint_map f hf hG hH hinj
 
+def mapCat :
+    letI := ProjIntegral.integral G hG
+    letI := ProjIntegral.integral H hH
+    (Proj G).functionField ⟶ (Proj H).functionField := by
+  let := ProjIntegral.integral G hG
+  let := ProjIntegral.integral H hH
+  let e := congrArg (fun p : Proj G ↦ (Proj G).presheaf.stalk p)
+    (genericPoint_map f hf hG hH hinj).symm
+  exact eqToHom e ≫ (ProjRadicalMap.map f hf).stalkMap (genericPoint (Proj H))
+
 def map :
     letI := ProjIntegral.integral G hG
     letI := ProjIntegral.integral H hH
     (Proj G).functionField →+* (Proj H).functionField := by
   let := ProjIntegral.integral G hG
   let := ProjIntegral.integral H hH
-  let e := congrArg (fun p : Proj G ↦ (Proj G).presheaf.stalk p)
-    (genericPoint_map f hf hG hH hinj).symm
-  exact (eqToHom e ≫ (ProjRadicalMap.map f hf).stalkMap (genericPoint (Proj H))).hom
+  exact (mapCat f hf hG hH hinj).hom
 
 theorem map_injective :
     letI := ProjIntegral.integral G hG

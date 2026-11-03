@@ -20,15 +20,19 @@ variable {A σ : Type u} [CommRing A] [IsDomain A] [SetLike σ A] [AddSubgroupCl
 
 abbrev degreeZeroField := AtPrime G (⊥ : Ideal A)
 
+def catIso (hpos : (HomogeneousIdeal.irrelevant G).toIdeal ≠ ⊥) :
+    letI := ProjIntegral.integral G hpos
+    (Proj G).functionField ≅ CommRingCat.of (degreeZeroField G) := by
+  let := ProjIntegral.integral G hpos
+  exact eqToIso (congrArg (fun p : Proj G ↦ (Proj G).presheaf.stalk p)
+    (ProjIntegral.genericPoint_eq_zero G hpos)) ≪≫
+    AlgebraicGeometry.Proj.stalkIso G (ProjIntegral.zeroPoint G hpos)
+
 def equiv (hpos : (HomogeneousIdeal.irrelevant G).toIdeal ≠ ⊥) :
     letI := ProjIntegral.integral G hpos
     (Proj G).functionField ≃+* degreeZeroField G := by
   let := ProjIntegral.integral G hpos
-  let e : (Proj G).functionField ≅ CommRingCat.of (degreeZeroField G) := by
-    change (Proj G).presheaf.stalk (genericPoint (Proj G)) ≅ CommRingCat.of (AtPrime G (⊥ : Ideal A))
-    rw [ProjIntegral.genericPoint_eq_zero G hpos]
-    exact AlgebraicGeometry.Proj.stalkIso G (ProjIntegral.zeroPoint G hpos)
-  exact e.commRingCatIsoToRingEquiv
+  exact (catIso G hpos).commRingCatIsoToRingEquiv
 
 theorem degreeZero_isField (hpos : (HomogeneousIdeal.irrelevant G).toIdeal ≠ ⊥) :
     IsField (degreeZeroField G) := by

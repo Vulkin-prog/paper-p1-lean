@@ -5995,6 +5995,10 @@ import PaperP1
 #print axioms PaperP1.ZeroDegreeQuadraticFibres.auxiliary_zero_count
 #print axioms PaperP1.ProjFunctionField.degreeZero_isField
 #print axioms PaperP1.ProjFunctionField.fraction_representation
+#print axioms PaperP1.ProjFunctionFieldCompatibility.stalkMap_transport
+#print axioms PaperP1.ProjFunctionFieldCompatibility.localHomStalk_of_eq
+#print axioms PaperP1.ProjFunctionFieldCompatibility.mapCat_comp_catIso
+#print axioms PaperP1.ProjFunctionFieldCompatibility.equiv_comp_map
 #print axioms PaperP1.ProjFunctionFieldMap.zeroPoint_map
 #print axioms PaperP1.ProjFunctionFieldMap.genericPoint_map
 #print axioms PaperP1.ProjFunctionFieldMap.map_injective
@@ -6027,6 +6031,8 @@ import PaperP1
 #print axioms PaperP1.SourceProjectiveFlat.map_flat
 #print axioms PaperP1.SourceProjectiveFunctionField.genericPoint_map
 #print axioms PaperP1.SourceProjectiveFunctionField.map_injective
+#print axioms PaperP1.SourceProjectiveFunctionFieldCompatibility.map_eq
+#print axioms PaperP1.SourceProjectiveFunctionFieldCompatibility.equiv_comp_map
 #print axioms PaperP1.SourceProjectiveIntegral.base_irrelevant_ne_bot
 #print axioms PaperP1.SourceProjectiveIntegral.base_integral
 #print axioms PaperP1.SourceProjectiveIntegral.source_irrelevant_ne_bot
