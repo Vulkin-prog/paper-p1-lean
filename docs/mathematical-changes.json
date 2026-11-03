@@ -7802,7 +7802,8 @@
         "PaperP1.UniqueKernelFibreMatching.space",
         "PaperP1.BoundedCoverForcesGraph.goodFamilies"
       ],
-      "validation": "Verified with Lean v4.36.0-rc2: full build 12483 jobs, direct axiom audit of 8845 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6771 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.90 GiB."
+      "validation": "Verified with Lean v4.36.0-rc2: full build 12483 jobs, direct axiom audit of 8845 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6771 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.90 GiB.",
+      "validation_commit": "6f2180a"
     }
   ]
 }
