@@ -1868,7 +1868,8 @@
             "P1-GEO-NORMALIZED-CURVE-UNIFORM"
           ]
         }
-      ]
+      ],
+      "validation_commit": "6cf2937f2d2aa80c00ea28dac442bd47939b8eda"
     },
     {
       "label": "p1:core:rankin",
