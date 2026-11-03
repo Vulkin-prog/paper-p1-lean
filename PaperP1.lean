@@ -1960,3 +1960,11 @@ public import PaperP1.Asymptotics.CriticalRationalSquareGraphExclusion
 public import PaperP1.Algebra.AffineCurveFractionParametrization
 public import PaperP1.Algebra.CurveRationalSquareDescent
 public import PaperP1.Asymptotics.CriticalCurveRationalOddExclusion
+public import PaperP1.Combinatorics.ImageRepetitionBudget
+public import PaperP1.Combinatorics.DisjointExceptionalFamilies
+public import PaperP1.Coding.UniqueCoordinateBudget
+public import PaperP1.Coding.BinaryFormSeparation
+public import PaperP1.Arithmetic.ScaledCurveSquareMatching
+public import PaperP1.Arithmetic.ScaledCurveEquationClasses
+public import PaperP1.Arithmetic.UniqueKernelFibreMatching
+public import PaperP1.Arithmetic.BoundedCoverForcesGraph

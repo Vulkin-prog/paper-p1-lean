@@ -2133,3 +2133,56 @@ improvements stay 110 and Palomar remains deferred. Original sources
 and the compiler/dependency pins remain unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12467 jobs, direct axiom audit of 8811 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6722 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.91 GiB.
+
+
+## Bounded radical covers force graph images through actual square-class kernels
+
+A new algebraic route proves the graph-image conclusion in the
+nonconstant-coordinate branch of Step 5, including even cover degrees.
+Let C be an actual irreducible integer plane equation of positive
+degree in both coordinates, K its actual quotient fraction field,
+and L an actual finite extension containing the literal scaled
+radical roots d_nu*P_I_nu(X)*(Y+j_nu). The integer coefficients are
+nonzero, the selected first-root sets are disjoint and nonempty,
+and the singleton second offsets j_nu are distinct.
+
+The actual square-class map from binary equation selectors is
+constructed. Its image lies in the actual square-class kernel for
+L/K, so its rank is at most log_2[L:K]. A finite linear argument
+proves that on a subspace of codimension s, at most 2s coordinate
+forms vanish or coincide with another coordinate form. The actual
+remaining nonzero distinct coordinate forms separate one selected
+equation from every other equation by a kernel word.
+
+The formal-branch matching argument is extended to every actual
+nonzero integer scalar multiplying a word. For a good coordinate,
+every root of every regular selected first fibre must equal that
+equation's own second offset: one kernel word gives an offset match,
+and a second word selecting this equation while omitting a proposed
+different equation rules out every other match. The existing actual
+separability and exact fibre-root count then prove deg_Y(C)=1.
+No genus, Riemann--Hurwitz, divisor-constant or common-quotient
+hypothesis is used in this conclusion.
+
+The exceptional equation sets are constructed. Disjoint first-root
+sets give an actual injection of equations meeting bad first fibres
+into the actual critical-offset set. The total loss is at most
+2 floor(log_2[L:K]) plus the cardinality of that critical set, bounded
+by deg_X(C)+2 deg_X(C)deg_Y(C). If both partial degrees and the actual
+cover degree are at most E and there are at least 4(E+1)^2 equations,
+the actual good family has at least 2E+1 equations. Each selected
+offset in every good equation is proved an actual integer point
+C(-i,-j_nu)=0, and the plane image is proved a graph.
+
+This is improvement P1-MATH-0111, an alternative to the genus and
+common-quotient part of Step 5 for the stated nonconstant-coordinate
+and bounded-degree presentation. It has not yet supplied the general
+source-scheme identification, bounds comparing the actual ordinary
+ambient curve degree to both image and extension degrees, the
+constant-coordinate cases, or the complete subsequent graph
+interpolation for arbitrary cover degree. Those and the external
+uniform point counts remain open. T1.7 stays in_progress, numbered
+coverage stays 79/167, confirmed improvements become 111 and Palomar
+remains deferred. Original sources and pins remain unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12483 jobs, direct axiom audit of 8845 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6771 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.90 GiB.
