@@ -701,7 +701,8 @@
           "validation": "Full Lean v4.36.0-rc2 build (8847 jobs) and actual axiom audit of all 2038 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. Every evidence theorem is directly included in the audit. All 313 distinct coverage/finding declaration names were also checked directly by Lean.",
           "validation_commit": "9fac0fbf1971b9145acd77ce72f3e6e42cbfedfc"
         }
-      ]
+      ],
+      "validation_commit": "8e3f9e3012f3534567bd874bc60f10fa595f116c"
     },
     {
       "id": "P1-MATH-0020",
