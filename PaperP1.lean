@@ -2014,3 +2014,12 @@ public import PaperP1.Algebra.HomogeneousChartCoordinateChange
 public import PaperP1.Geometry.OrdinaryRadicalSurface
 public import PaperP1.Geometry.OrdinaryCurveSourceHeight
 public import PaperP1.Asymptotics.CriticalOrdinarySurfaceCurveExclusion
+public import PaperP1.Asymptotics.CriticalOrdinarySurfaceDegreeGap
+public import PaperP1.Arithmetic.OrdinaryIntegerPoints
+public import PaperP1.Geometry.OrdinarySurfaceCurveData
+public import PaperP1.Arithmetic.UniformAffineCurvePointCount
+public import PaperP1.Asymptotics.CriticalOrdinarySurfacePointCover
+public import PaperP1.Asymptotics.SurfaceCountParameters
+public import PaperP1.Asymptotics.SurfaceCurveCoverPowerBound
+public import PaperP1.Arithmetic.UniformOrdinarySurfaceCover
+public import PaperP1.Asymptotics.OrdinarySurfaceSubpowerUnderInputs

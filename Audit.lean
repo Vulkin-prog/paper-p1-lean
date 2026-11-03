@@ -3481,6 +3481,13 @@ import PaperP1
 #print axioms PaperP1.OldValuePrimeBudget.oldPrimes_log_sum_le
 #print axioms PaperP1.OldValuePrimeBudget.primePool_log_sum_le
 #print axioms PaperP1.OldValuePrimeBudget.raw_primePool_log_sum_le
+#print axioms PaperP1.OrdinaryIntegerPoints.evaluation_X
+#print axioms PaperP1.OrdinaryIntegerPoints.host_lift
+#print axioms PaperP1.OrdinaryIntegerPoints.lift_Z
+#print axioms PaperP1.OrdinaryIntegerPoints.mem_box
+#print axioms PaperP1.OrdinaryIntegerPoints.mem_curvePoints
+#print axioms PaperP1.OrdinaryIntegerPoints.hosts_card_le
+#print axioms PaperP1.OrdinaryIntegerPoints.lift_card_le
 #print axioms PaperP1.OriginalWindowValueBounds.values_geometry
 #print axioms PaperP1.PairHostCover.regular_loss_iff
 #print axioms PaperP1.PairHostCover.cover
@@ -4392,6 +4399,7 @@ import PaperP1
 #print axioms PaperP1.TwoWitnessTheorem.floor_offset
 #print axioms PaperP1.TwoWitnessTheorem.real_radius
 #print axioms PaperP1.TwoWitnessTheorem.companion_T9_5
+#print axioms PaperP1.UniformAffineCurvePointCount.high_degree_bound
 #print axioms PaperP1.UniformDefectCounts.bound_of_window_comparison
 #print axioms PaperP1.UniformDefectCounts.companion_T1_3
 #print axioms PaperP1.UniformDefectCounts.companion_T1_3_fixed_affine
@@ -4401,6 +4409,8 @@ import PaperP1
 #print axioms PaperP1.UniformFixedSourceCertificates.certificateTargets_le_power_eventually
 #print axioms PaperP1.UniformFixedSourceCertificates.critical_band_certificateTargets
 #print axioms PaperP1.UniformFixedSourceCertificates.companion_T4_2
+#print axioms PaperP1.UniformOrdinarySurfaceCover.decay_mono
+#print axioms PaperP1.UniformOrdinarySurfaceCover.subpower_parameters
 #print axioms PaperP1.UnionMatchDensity.divisible_lcm_iff
 #print axioms PaperP1.UnionMatchDensity.solutions_intersection
 #print axioms PaperP1.UnionMatchDensity.union_abs_error
@@ -4773,6 +4783,8 @@ import PaperP1
 #print axioms PaperP1.CriticalOrderBranching.companion_T22_4
 #print axioms PaperP1.CriticalOrdinaryCurveExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalOrdinarySurfaceCurveExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalOrdinarySurfaceDegreeGap.eventually_degree_gt
+#print axioms PaperP1.CriticalOrdinarySurfacePointCover.eventually_finite_cover_bound
 #print axioms PaperP1.CriticalPolynomialScale.polynomial_lt_scale
 #print axioms PaperP1.CriticalPolynomialScale.source_size_eventually
 #print axioms PaperP1.CriticalRationalPlaneCoverExclusion.eventually_no_dyadic_point
@@ -5339,6 +5351,7 @@ import PaperP1
 #print axioms PaperP1.OrderedPrimitiveMass.nominal_bound
 #print axioms PaperP1.OrderedPrimitiveMass.actual_joint_bound
 #print axioms PaperP1.OrderedPrimitiveMass.companion_T4_3_from_four
+#print axioms PaperP1.OrdinarySurfaceSubpowerUnderInputs.uniform_subpower
 #print axioms PaperP1.OrientedPlanarMotifCount.uniform_count
 #print axioms PaperP1.OriginalPairHosts.separated_subset
 #print axioms PaperP1.OriginalPairHosts.effective_hosts
@@ -5689,6 +5702,12 @@ import PaperP1
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_factorial
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_ordinary
 #print axioms PaperP1.SubpowerShiftedCountMoments.uniform_bound
+#print axioms PaperP1.SurfaceCountParameters.choose_degree
+#print axioms PaperP1.SurfaceCountParameters.choose_equations
+#print axioms PaperP1.SurfaceCountParameters.subpower_parameters
+#print axioms PaperP1.SurfaceCurveCoverPowerBound.height_power
+#print axioms PaperP1.SurfaceCurveCoverPowerBound.two_powers
+#print axioms PaperP1.SurfaceCurveCoverPowerBound.finite_cover_bound
 #print axioms PaperP1.TargetQuotientRank.bounded_affine_rank
 #print axioms PaperP1.TargetUnionResidual.row_rank_sublinear
 #print axioms PaperP1.ThirdCumulantReduction.absolute_reduction
@@ -6715,6 +6734,7 @@ import PaperP1
 #print axioms PaperP1.OrdinaryRadicalSurface.relation_mem
 #print axioms PaperP1.OrdinaryRadicalSurface.homogeneous
 #print axioms PaperP1.OrdinaryRadicalSurface.chart_bijective
+#print axioms PaperP1.OrdinarySurfaceCurveData.degree_unique
 #print axioms PaperP1.ProjAffineFieldEquiv.equiv_chartMap
 #print axioms PaperP1.ProjChartDehomogenizationNaturality.dehomogenization_natural
 #print axioms PaperP1.ProjChartDehomogenizationNaturality.chart_dehomogenization_congr

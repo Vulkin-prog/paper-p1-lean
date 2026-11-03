@@ -1843,3 +1843,62 @@ confirmed improvements remain 112 and Palomar is deferred.
 Original manuscript bytes and pinned dependencies are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12575 jobs, direct axiom audit of 9012 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6996 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.74 GiB.
+
+
+## Actual simultaneous degree gap and conditional ordinary surface point counts
+
+One coefficient-uniform critical threshold now excludes all
+ordinary degrees up to a chosen cap E simultaneously. The actual
+Hilbert slope e is arbitrary: every actual ordinary surface curve
+through an admissible host has e>E. This follows from the actual
+source multiplicity bound D*e and the previously proved uniform
+source exclusion with cap E.
+
+Normalized integral points are actual integer coordinate functions
+on Fin 3 plus the radical indices, with Z=1. Their bounded box
+and their actual ideal-kernel point subsets are finite sets.
+Projection gives the integer host (X,Y); chosen literal radical
+lifts inject hosts into the point set. An actual curve record
+contains its prime homogeneous ideal, literal relations, actual
+ordinary surface height one, positive degree and actual linear
+Hilbert polynomial. The degree is proved unique for its ideal.
+
+The geometric counting inputs are isolated as two unproved
+properties, always explicit theorem arguments. The uniform curve
+input bounds the actual normalized integer-point set by
+A*H^(1/e+delta), uniformly over bounded ambient dimensions and
+bounded actual degrees. Its literature source is
+[Pila, Theorem A, Astérisque 228 (1995), pp. 183--187](https://www.numdam.org/item/AST_1995__228__183_0.pdf).
+The uniform lifted-surface input produces actual finite exception
+sets and actual ordinary curve records of bounded degree. Its
+curve-number and exception exponents are 1/sqrt(2^k)+delta and
+2/sqrt(2^k)+delta. It includes the unproved finite-projection
+lifting and prime/Hilbert presentation needed to apply
+[Salberger, arXiv:2311.05561v1, Lemma 2](https://arxiv.org/pdf/2311.05561v1).
+Neither property is an axiom or a proved external counting theorem.
+
+Given an actual finite covering of admissible point sets, the
+proved degree gap discards every curve of degree <=E. The explicit
+curve input bounds the remaining contributions by
+#exceptions + #curves*A*H^(1/(E+1)+delta). Fixed choices of E, k
+and delta are constructed before N so that both surface-cover
+exponents, after the polynomial height H<=B0*N^q, are <=epsilon/2.
+
+The resulting theorem proves N^epsilon bounds for the actual
+normalized point sets and their actual projected integer hosts,
+conditional only on the two stated uniform geometric properties.
+It chooses the equation threshold before the ambient-size cap,
+then its count constant and critical cutoff before all actual
+equations, coefficients, offsets, point sets and heights. The
+finite coverings, degree cut and actual point counts are composed;
+the desired N^epsilon host bound is never an input.
+
+The external properties themselves and their geometric translation
+remain unproved. The literal dyadic square-equation host/height
+composition, the general N^(1/2+epsilon) geometric bound and the
+remaining graph consequences of T1.7 still need to be completed.
+T1.7 stays in_progress; numbered coverage remains 79/167, confirmed
+improvements remain 112 and Palomar is deferred. Original manuscript
+bytes and pinned dependencies are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12593 jobs, direct axiom audit of 9032 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 7026 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.70 GiB.
