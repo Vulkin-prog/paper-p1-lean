@@ -12758,11 +12758,53 @@
       "source": "companion_sections/confinement.tex",
       "line": 75,
       "sha256": "ff492c29ca556e863681d36f4ccffc4abb8f6fa8ebac9dd03e98e106d52f4202",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.ShortZeroSumSupportIncidence.small_support_unique",
+        "PaperP1.ShortZeroSumSupportIncidence.erased_support_mem_pool",
+        "PaperP1.ShortZeroSumSupportIncidence.incidence_bound",
+        "PaperP1.CoordinateErasureRank.evaluation_kernel",
+        "PaperP1.CoordinateErasureRank.dimension_cost",
+        "PaperP1.CoordinateErasureRank.surviving_active",
+        "PaperP1.CoordinateErasureRank.two_active",
+        "PaperP1.ActivePhysicalPrimeGroups.pool_prime",
+        "PaperP1.ActivePhysicalPrimeGroups.pool_gt",
+        "PaperP1.ActivePhysicalPrimeGroups.mem_groups",
+        "PaperP1.ActivePhysicalPrimeGroups.support_sum",
+        "PaperP1.ActivePhysicalPrimeGroups.group_support_data",
+        "PaperP1.ActivePhysicalPrimeGroups.support_card",
+        "PaperP1.ActivePhysicalPrimeGroups.group_coprime",
+        "PaperP1.ActivePhysicalPrimeGroups.support_at_least_two",
+        "PaperP1.ActivePhysicalPrimeGroups.group_dvd_value",
+        "PaperP1.ActivePhysicalPrimeGroups.incidence_bound",
+        "PaperP1.ActivePhysicalPrimeGroups.kernel_le_incident_product",
+        "PaperP1.ActivePhysicalPrimeGroups.badPositions_card",
+        "PaperP1.ActivePhysicalPrimeGroups.kernel_cap_away_from_bad",
+        "PaperP1.ActiveGroupKernelErasure.dimension_cost",
+        "PaperP1.ActiveGroupKernelErasure.two_small_per_block",
+        "PaperP1.CoordinateErasureRank.evaluation",
+        "PaperP1.ActivePhysicalPrimeGroups.label",
+        "PaperP1.ActivePhysicalPrimeGroups.activeSupport",
+        "PaperP1.ActivePhysicalPrimeGroups.primePool",
+        "PaperP1.ActivePhysicalPrimeGroups.group",
+        "PaperP1.ActivePhysicalPrimeGroups.groups",
+        "PaperP1.ActivePhysicalPrimeGroups.largeGroups",
+        "PaperP1.ActivePhysicalPrimeGroups.badPositions",
+        "PaperP1.ActiveGroupKernelErasure.remaining"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-ACTIVE-GROUP-KERNEL-ERASURE"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "The complete FINITE active-group and small-kernel erasure mechanism\nneeded by companion T8.2 and T8.3 is now proved unconditionally.\nBoth numbered rows remain IN PROGRESS: no uniform subpower host count,\nprimitive-triple mass2 or absolute primitive-triple activity3/2 is\nasserted by this checkpoint. The asymptotic assembly with T8.1 and the\nactual no-alignment geometry remains pending.\n\nActivePhysicalPrimeGroups constructs actual composite groups of ALL\nodd primes above H assigned by their physical supports AFTER restriction\nto the chosen subspace M of the original even-relation code.\nA former ternary row becoming binary is automatically retained in\nits new support group. Empty active supports are removed.\nThe prime pool is the literal finite union of the odd-prime supports\nof the true vertex values, cut at H; it is not a supplied prime set.\nAll its elements are proved prime and greater than H.\nEach group divides every true value on its support. Distinct support\ngroups are proved coprime. Every nonempty support has at least two\npositions, all its labels are nonzero and their sum is zero.\nWhen H>=L+1, its block projection is controlled by the actual\nprime-incidence theorem: support size is at most the number of blocks.\n\nShortZeroSumSupportIncidence proves a generic finite minimality step:\na nonempty subset with the same sum as a set of at most two nonzero\nlabels is the whole set. Deleting a position from a binary or ternary\nnonzero zero-sum row therefore gives an ACTUAL member of the bounded\nphysical support pool. Under NoDisjointRecovery of order d=1 or2\nand t>=2, every active position lies on at most\nsupportBound(d,t,t-1) distinct active supports of size<=d+1.\nThese are the already checked finite support-pool constants; a larger\nfixed constant than the source Ct is harmless for later N^epsilon\nbudgets. The order1 pair case is retained explicitly and does not\nrequire an order2 recovery premise.\n\nThe actual large odd kernel of every active true value is at most\nthe product of its incident composite groups: every odd prime above\nH is assigned to the actual active support containing that position.\nlargeGroups is the literal filter of groups exceeding Y, and\nbadPositions is the union of their physical supports. Its cardinality\nis at most3*#largeGroups for at most three blocks.\nEvery initially active position outside badPositions has\nK_H(value)<=Y^supportBound(d,t,t-1), for Y>=1.\n\nCoordinateErasureRank constructs the actual coordinate evaluation map,\nidentifies its kernel with zeroCoordinates and proves that zeroing\nANY prescribed D costs at most#D dimensions, without independence of\nthe erased coordinate forms. A coordinate still active afterwards was\nactive originally and is outside D. Every positive-dimensional space\nwith an injective even projection has at least two active coordinates.\n\nActiveGroupKernelErasure applies these facts to the actual relation\ncode. If3*#largeGroups<dim(M) and all physical block projections of M\nare injective, zeroing badPositions leaves positive dimension and\nEVERY block contains two distinct original vertex positions with\nK_H(value)<=Y^supportBound(d,t,t-1).\nAll groups used in this conclusion are those of the INITIAL M.\nNo regularity, bounded-support pool or no-recovery property is\nsilently transported to the final zeroed space, where labels can merge.\nLocal window kernels, repeated true values across physical blocks,\nand arbitrary affine compatibility are all allowed in this finite\narithmetic mechanism; no probability premise is used.\n\nNo new literature input, global axiom, Paper C port or improvement\nidentifier is introduced. These finite results need no BCN property.\nTheir future combination with the conditional T8.1 is not yet counted\nas the desired asymptotic theorem. T8.2 and T8.3 move from not_started\nto in_progress. Coverage remains87/167 unconditional and40 conditional,\nwith151 confirmed improvements. Original source bytes, dependency pins,\ndisk constraints and the later Palomar milestone are preserved.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": "",
+          "literature_inputs": []
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13879 jobs); direct axiom audit passed for 10901 declarations using only propext, Classical.choice and Quot.sound; all 9391 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.99 GiB."
     },
     {
       "label": "p13:conf:dense-pairs",
@@ -12774,11 +12816,53 @@
       "source": "companion_sections/confinement.tex",
       "line": 149,
       "sha256": "ebb198621a8305171356afb0b7c293475d3d2be577e227606cbaf0698aa16f30",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.ShortZeroSumSupportIncidence.small_support_unique",
+        "PaperP1.ShortZeroSumSupportIncidence.erased_support_mem_pool",
+        "PaperP1.ShortZeroSumSupportIncidence.incidence_bound",
+        "PaperP1.CoordinateErasureRank.evaluation_kernel",
+        "PaperP1.CoordinateErasureRank.dimension_cost",
+        "PaperP1.CoordinateErasureRank.surviving_active",
+        "PaperP1.CoordinateErasureRank.two_active",
+        "PaperP1.ActivePhysicalPrimeGroups.pool_prime",
+        "PaperP1.ActivePhysicalPrimeGroups.pool_gt",
+        "PaperP1.ActivePhysicalPrimeGroups.mem_groups",
+        "PaperP1.ActivePhysicalPrimeGroups.support_sum",
+        "PaperP1.ActivePhysicalPrimeGroups.group_support_data",
+        "PaperP1.ActivePhysicalPrimeGroups.support_card",
+        "PaperP1.ActivePhysicalPrimeGroups.group_coprime",
+        "PaperP1.ActivePhysicalPrimeGroups.support_at_least_two",
+        "PaperP1.ActivePhysicalPrimeGroups.group_dvd_value",
+        "PaperP1.ActivePhysicalPrimeGroups.incidence_bound",
+        "PaperP1.ActivePhysicalPrimeGroups.kernel_le_incident_product",
+        "PaperP1.ActivePhysicalPrimeGroups.badPositions_card",
+        "PaperP1.ActivePhysicalPrimeGroups.kernel_cap_away_from_bad",
+        "PaperP1.ActiveGroupKernelErasure.dimension_cost",
+        "PaperP1.ActiveGroupKernelErasure.two_small_per_block",
+        "PaperP1.CoordinateErasureRank.evaluation",
+        "PaperP1.ActivePhysicalPrimeGroups.label",
+        "PaperP1.ActivePhysicalPrimeGroups.activeSupport",
+        "PaperP1.ActivePhysicalPrimeGroups.primePool",
+        "PaperP1.ActivePhysicalPrimeGroups.group",
+        "PaperP1.ActivePhysicalPrimeGroups.groups",
+        "PaperP1.ActivePhysicalPrimeGroups.largeGroups",
+        "PaperP1.ActivePhysicalPrimeGroups.badPositions",
+        "PaperP1.ActiveGroupKernelErasure.remaining"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-ACTIVE-GROUP-KERNEL-ERASURE"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "The complete FINITE active-group and small-kernel erasure mechanism\nneeded by companion T8.2 and T8.3 is now proved unconditionally.\nBoth numbered rows remain IN PROGRESS: no uniform subpower host count,\nprimitive-triple mass2 or absolute primitive-triple activity3/2 is\nasserted by this checkpoint. The asymptotic assembly with T8.1 and the\nactual no-alignment geometry remains pending.\n\nActivePhysicalPrimeGroups constructs actual composite groups of ALL\nodd primes above H assigned by their physical supports AFTER restriction\nto the chosen subspace M of the original even-relation code.\nA former ternary row becoming binary is automatically retained in\nits new support group. Empty active supports are removed.\nThe prime pool is the literal finite union of the odd-prime supports\nof the true vertex values, cut at H; it is not a supplied prime set.\nAll its elements are proved prime and greater than H.\nEach group divides every true value on its support. Distinct support\ngroups are proved coprime. Every nonempty support has at least two\npositions, all its labels are nonzero and their sum is zero.\nWhen H>=L+1, its block projection is controlled by the actual\nprime-incidence theorem: support size is at most the number of blocks.\n\nShortZeroSumSupportIncidence proves a generic finite minimality step:\na nonempty subset with the same sum as a set of at most two nonzero\nlabels is the whole set. Deleting a position from a binary or ternary\nnonzero zero-sum row therefore gives an ACTUAL member of the bounded\nphysical support pool. Under NoDisjointRecovery of order d=1 or2\nand t>=2, every active position lies on at most\nsupportBound(d,t,t-1) distinct active supports of size<=d+1.\nThese are the already checked finite support-pool constants; a larger\nfixed constant than the source Ct is harmless for later N^epsilon\nbudgets. The order1 pair case is retained explicitly and does not\nrequire an order2 recovery premise.\n\nThe actual large odd kernel of every active true value is at most\nthe product of its incident composite groups: every odd prime above\nH is assigned to the actual active support containing that position.\nlargeGroups is the literal filter of groups exceeding Y, and\nbadPositions is the union of their physical supports. Its cardinality\nis at most3*#largeGroups for at most three blocks.\nEvery initially active position outside badPositions has\nK_H(value)<=Y^supportBound(d,t,t-1), for Y>=1.\n\nCoordinateErasureRank constructs the actual coordinate evaluation map,\nidentifies its kernel with zeroCoordinates and proves that zeroing\nANY prescribed D costs at most#D dimensions, without independence of\nthe erased coordinate forms. A coordinate still active afterwards was\nactive originally and is outside D. Every positive-dimensional space\nwith an injective even projection has at least two active coordinates.\n\nActiveGroupKernelErasure applies these facts to the actual relation\ncode. If3*#largeGroups<dim(M) and all physical block projections of M\nare injective, zeroing badPositions leaves positive dimension and\nEVERY block contains two distinct original vertex positions with\nK_H(value)<=Y^supportBound(d,t,t-1).\nAll groups used in this conclusion are those of the INITIAL M.\nNo regularity, bounded-support pool or no-recovery property is\nsilently transported to the final zeroed space, where labels can merge.\nLocal window kernels, repeated true values across physical blocks,\nand arbitrary affine compatibility are all allowed in this finite\narithmetic mechanism; no probability premise is used.\n\nNo new literature input, global axiom, Paper C port or improvement\nidentifier is introduced. These finite results need no BCN property.\nTheir future combination with the conditional T8.1 is not yet counted\nas the desired asymptotic theorem. T8.2 and T8.3 move from not_started\nto in_progress. Coverage remains87/167 unconditional and40 conditional,\nwith151 confirmed improvements. Original source bytes, dependency pins,\ndisk constraints and the later Palomar milestone are preserved.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": "",
+          "literature_inputs": []
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13879 jobs); direct axiom audit passed for 10901 declarations using only propext, Classical.choice and Quot.sound; all 9391 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.99 GiB."
     },
     {
       "label": "p13:rig:local-square",

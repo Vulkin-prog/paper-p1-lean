@@ -2655,3 +2655,7 @@ public import PaperP1.Arithmetic.PolynomialOffsetPopulation
 public import PaperP1.Asymptotics.OffsetLineDivisorCountUniform
 public import PaperP1.Asymptotics.BoundedPlaneCurveCountUnderBCN
 public import PaperP1.Asymptotics.PolynomialConfinementUnderBCN
+public import PaperP1.Coding.ShortZeroSumSupportIncidence
+public import PaperP1.Coding.CoordinateErasureRank
+public import PaperP1.Arithmetic.ActivePhysicalPrimeGroups
+public import PaperP1.Arithmetic.ActiveGroupKernelErasure
