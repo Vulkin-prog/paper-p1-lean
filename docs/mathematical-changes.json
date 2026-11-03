@@ -9875,6 +9875,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "37c21b6e14bdb7d6ec092069b9cf11f017c3f46d"
+    },
+    {
+      "id": "P1-MATH-0134",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:fixed-activities",
+        "number": "15.10",
+        "page": 45,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 561,
+        "statement_sha256": "12de4a1b34610fa9a45c667c976fa4a12804e7cf9884a5192c8c21adc7fd5cff"
+      },
+      "original_assumption": "The positive connected triple seed step in the proof of15.10 splits primitive triples from nonprimitive ones and states T3_plus<=2*A3+O(N^(-3/2+epsilon)).",
+      "finding": "The positive connected triple seed step of main15.10 can use\ncoefficient1 instead of2 in front of A3. The actual exact centering\nidentity applies to EVERY triple, so its primitive case need not\nbe split off. Connectedness makes each nonzero erased-pair term\nan actual dependent-target event; exact pair/triple incidence\nbounds their total by D1 with no multiplicity factor. Thus\nT3_joint<=A3+D1+M3_independent. The same identity bounds the\nsigned joint/activity error and incompatible connected activity\nby D1+M3_independent, giving the stronger finite statement\n|T3_joint-A3|<=3*(D1+M3_independent).\nThe already proved sharp D1 estimate and connected independent\nhalf-count give |T3_joint-A3|<=N^(-3/2+epsilon) under the SAME\nexplicit finite geometric properties as article11.1. This holds\non every actual dyadic subground, including zero marginals and\nincompatible triples. It replaces only the positive-triple seed\nstep; it does not prove an absolute N^(-1) bound on A3 or the\nremaining higher-order connected activity reduction.",
+      "impact": "The primitive split disappears; the coefficient improves to1 and a two-sided sharp comparison follows on actual grounds including zero marginals. The full connected-family proposition remains open.",
+      "proposed_revision": "Replace the positive-triple paragraph in15.10 by the exact centering reconstruction and restricted pair/target incidence. State T3_joint<=A3+O(N^(-3/2+epsilon)), or the stronger absolute-difference estimate, with the same geometric input scope.",
+      "evidence": [
+        "PaperP1.ConnectedTargetDependence.every_target",
+        "PaperP1.TripleJointReconstruction.identity",
+        "PaperP1.TripleJointReconstruction.error_bound",
+        "PaperP1.ConnectedTriplePositiveReduction.pair_cost",
+        "PaperP1.ConnectedTriplePositiveReduction.finite_bound",
+        "PaperP1.ConnectedTriplePositiveReduction.absolute_error",
+        "PaperP1.ConnectedTriplePositiveUnderInputs.uniform_reduction",
+        "PaperP1.ConnectedTriplePositiveUnderInputs.uniform_absolute_error"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13385 jobs); direct axiom audit passed for 10261 declarations using only propext, Classical.choice and Quot.sound; all 8599 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.23 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -2413,3 +2413,7 @@ public import PaperP1.Model.IndependentDeficitMonotonicity
 public import PaperP1.Model.SmallCoreFamilyCover
 public import PaperP1.Model.SmallCorePairDeficit
 public import PaperP1.Model.SmallCoreRankRetention
+public import PaperP1.Asymptotics.ConnectedTriplePositiveUnderInputs
+public import PaperP1.Model.ConnectedTargetDependence
+public import PaperP1.Model.ConnectedTriplePositiveReduction
+public import PaperP1.Model.TripleJointReconstruction

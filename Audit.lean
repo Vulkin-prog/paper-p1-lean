@@ -5294,6 +5294,8 @@ import PaperP1
 #print axioms PaperP1.ConnectedBlockCount.uniform_count
 #print axioms PaperP1.ConnectedFourthReductionUnderBCN.uniform_reduction
 #print axioms PaperP1.ConnectedIndependent256Budget.uniform_bound
+#print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_reduction
+#print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_absolute_error
 #print axioms PaperP1.ContactDefectBudget.defect_count
 #print axioms PaperP1.ContactDefectBudget.relation_power
 #print axioms PaperP1.ContactSeedKernel.uniform_joint_mass
@@ -8143,6 +8145,12 @@ import PaperP1
 #print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_joint_rank
 #print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_actual_probability
 #print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_probability_nullity
+#print axioms PaperP1.ConnectedTargetDependence.every_target
+#print axioms PaperP1.ConnectedTriplePositiveReduction.pair_cost
+#print axioms PaperP1.ConnectedTriplePositiveReduction.finite_bound
+#print axioms PaperP1.ConnectedTriplePositiveReduction.signed_error
+#print axioms PaperP1.ConnectedTriplePositiveReduction.incompatible_bound
+#print axioms PaperP1.ConnectedTriplePositiveReduction.absolute_error
 #print axioms PaperP1.ConnectedWindowFamilies.connected_enumeration
 #print axioms PaperP1.ConnectedWindowFamilies.primitive_enumeration
 #print axioms PaperP1.ConnectedWindowFamilies.connected_family_count
@@ -9220,6 +9228,9 @@ import PaperP1
 #print axioms PaperP1.TripleJointPopulations.nonaligned_data
 #print axioms PaperP1.TripleJointPopulations.nonaligned_count_le
 #print axioms PaperP1.TripleJointPopulations.split_bound
+#print axioms PaperP1.TripleJointReconstruction.identity
+#print axioms PaperP1.TripleJointReconstruction.absolute_bound
+#print axioms PaperP1.TripleJointReconstruction.error_bound
 #print axioms PaperP1.TripleProbabilityBound.marginal_of_full_rank
 #print axioms PaperP1.TripleProbabilityBound.pair_joint_le
 #print axioms PaperP1.TripleProbabilityBound.pair_subset_tupleSet
