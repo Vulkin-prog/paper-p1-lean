@@ -3998,7 +3998,8 @@
             "P1-PROB-HALF-POWER-TRIPLE-ACTIVITY-BCN"
           ]
         }
-      ]
+      ],
+      "validation_commit": "ecd9ab8bd4b857953bc727dda686588edd012661"
     },
     {
       "label": "p13:third:rational-rank",
@@ -4803,7 +4804,8 @@
             "P1-PROB-HALF-POWER-TRIPLE-ACTIVITY-BCN"
           ]
         }
-      ]
+      ],
+      "validation_commit": "ecd9ab8bd4b857953bc727dda686588edd012661"
     },
     {
       "label": "p13:transfer:conversion",
