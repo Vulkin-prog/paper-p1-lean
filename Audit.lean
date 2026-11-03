@@ -5122,6 +5122,8 @@ import PaperP1
 #print axioms PaperP1.AllAlignedTargetTripleMass.all_actual_sources
 #print axioms PaperP1.AllAlignedTargetTripleMass.mass_le_sum
 #print axioms PaperP1.AllAlignedTargetTripleMass.uniform_mass
+#print axioms PaperP1.AllCardinalityConnectedUnderInputs.uniform_bound
+#print axioms PaperP1.AllCardinalityConnectedUnderInputs.companion_T16_1
 #print axioms PaperP1.AllPairDeficitUnderInputs.article_15_9
 #print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound_succ
 #print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound
@@ -5321,6 +5323,7 @@ import PaperP1
 #print axioms PaperP1.ConditionalRankTheorem.floor_conditions
 #print axioms PaperP1.ConditionalRankTheorem.companion_T21_2
 #print axioms PaperP1.ConnectedBlockCount.uniform_count
+#print axioms PaperP1.ConnectedBoundedNullityTail.uniform_bound
 #print axioms PaperP1.ConnectedFourthReductionUnderBCN.uniform_reduction
 #print axioms PaperP1.ConnectedIndependent256Budget.uniform_bound
 #print axioms PaperP1.ConnectedSeedCatalogUnderInputs.uniform_mass
@@ -5648,6 +5651,7 @@ import PaperP1
 #print axioms PaperP1.FixedChannelMassTheorem.companion_T2_5
 #print axioms PaperP1.FixedChannelPairProbability.uniform_bound
 #print axioms PaperP1.FixedChannelPairProbability.uniform_coarse
+#print axioms PaperP1.FixedConnectedWeightedUnderInputs.uniform_bound
 #print axioms PaperP1.FixedContactCenteredActivity.uniform_bound
 #print axioms PaperP1.FixedCountMomentBoundsUnderBCN.uniform_factorial_upper
 #print axioms PaperP1.FixedCountMomentBoundsUnderBCN.uniform_factorial_bound
@@ -8223,6 +8227,7 @@ import PaperP1
 #print axioms PaperP1.ConnectedComplementDeficit.complement_mem
 #print axioms PaperP1.ConnectedFourthReduction.exact_reduction
 #print axioms PaperP1.ConnectedFourthReduction.finite_bound
+#print axioms PaperP1.ConnectedParticipatingWindows.witnesses
 #print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_normalized_space
 #print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_joint_rank
 #print axioms PaperP1.ConnectedPrivateNormalizedFamilies.connected_actual_probability

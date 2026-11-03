@@ -10015,6 +10015,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "dfba0157f27ccb234819d68bcb9ac63941946fab"
+    },
+    {
+      "id": "P1-MATH-0138",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:core:low-nullity",
+        "number": "T16.1",
+        "page": 57,
+        "source": "companion_sections/cores.tex",
+        "line": 549,
+        "statement_sha256": "3639c6e9ab75e816a5d899c0eaa98156ac7780ae1c841bdbd61bc4ca8e9276e9"
+      },
+      "original_assumption": "Theorem T16.1 states exponent min(4/5,2-eta) for 0<=eta<2, using the finite fixed-order lemma and the moderate and saturated sectors.",
+      "finding": "The all-cardinality connected bound in companion T16.1 improves\nfrom exponent min(4/5,2-eta) to min(1,2-eta) under the same existing finite\ngeometric properties. It applies to every actual dyadic subground, with\nzero actual marginals and affine incompatibility included. All sufficiently\nlarge cardinalities satisfy the stronger rate 2-eta unconditionally, by\nthe completed original participating tail with exact heterogeneous weights\nand the actual compatible-nullity majorant. Every coordinate participates\nin some relation; a single binary relation meeting every block is not\nneeded. The remaining finite cardinality range uses the full connected\nrate1 of T14.1. The cardinality threshold, order cutoff and finite geometric\nbundles are chosen before N. This also extends the displayed inequality to\neta>=2, where it need not express decay; the source's regime 0<=eta<2 is\nfully included.",
+      "impact": "Completes the literal all-cardinality theorem conditionally and improves its exponent to min(1,2-eta); the sufficiently large cardinality sector is unconditional at exponent 2-eta.",
+      "proposed_revision": "Replace the fixed-order exponent4/5 by1. State the unconditional sufficiently large cardinality bound separately, using coordinatewise participation with exact heterogeneous weights, and make the cutoff-before-N quantifier order explicit.",
+      "evidence": [
+        "PaperP1.ConnectedParticipatingWindows.witnesses",
+        "PaperP1.FixedConnectedWeightedUnderInputs.uniform_bound",
+        "PaperP1.ConnectedBoundedNullityTail.uniform_bound",
+        "PaperP1.AllCardinalityConnectedUnderInputs.uniform_bound",
+        "PaperP1.AllCardinalityConnectedUnderInputs.companion_T16_1"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13533 jobs); direct axiom audit passed for 10397 declarations using only propext, Classical.choice and Quot.sound; all 8755 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.86 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

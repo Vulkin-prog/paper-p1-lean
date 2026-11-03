@@ -2487,3 +2487,7 @@ public import PaperP1.Asymptotics.FixedAbsoluteActivityUnderInputs
 public import PaperP1.Model.IncompatibleConnectedDeficit
 public import PaperP1.Asymptotics.IncompatibleConnectedActivityUnderInputs
 public import PaperP1.Asymptotics.CoarseConnectedActivityUnderInputs
+public import PaperP1.Model.ConnectedParticipatingWindows
+public import PaperP1.Asymptotics.FixedConnectedWeightedUnderInputs
+public import PaperP1.Asymptotics.ConnectedBoundedNullityTail
+public import PaperP1.Asymptotics.AllCardinalityConnectedUnderInputs
