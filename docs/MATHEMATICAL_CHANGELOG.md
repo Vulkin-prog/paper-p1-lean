@@ -9552,3 +9552,116 @@ original manuscript and dependency pins remain unchanged.
 Palomar remains deferred until the full work is complete.
 
 Verified under Lean v4.36.0-rc2: full build passed (12885 jobs); direct axiom audit passed for 9515 declarations using only propext, Classical.choice and Quot.sound; all 7635 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.36 GiB.
+
+
+## Complete companion T21.4: polylogarithmic confinement
+
+Companion Proposition T21.4 is now complete, including both
+actual support groups and actual individual primes, all ordinary
+three-dimensional and specified-affine-plane mass estimates,
+the literal retained-count bound and its uniform o(L) consequence,
+and the sufficient c>6 and c>3 thresholds. It moves from
+in_progress to proved. Numbered coverage is now 81/167; confirmed
+mathematical improvements stay 118. This checkpoint closes the
+remaining source obligations without a new correction identifier.
+
+FreePlaneCRT proves that only two congruence coordinates are
+needed on any genuine real affine plane. Choose a coordinate
+with nonzero normal entry and project onto its two complementary
+coordinates. The finite sum identity isolates the omitted
+coordinate, proving injectivity of this projection. The actual
+integer-offset residue population therefore has at most
+(width/Q+1)^2 points. Plane coefficients are arbitrary real
+numbers: there is no rationality, height or quantitative lower
+bound on the nonzero normal coefficient. One common threshold
+precedes the actual choice of planes and coefficients.
+
+PlaneSupportCover defines actual finite plane-restricted CRT
+populations. The canonical enumeration of a factor set A costs
+exactly (2R+1)^(2*card A) offset codes. The third offset is never
+an enumeration label. All three possible omitted coordinates
+are covered by a factor 3. For Q>N and width DN, summing over
+the actual finite plane pool gives the finite bound
+3*#planes*(D+1)^2*integerWeightedCount(Y,V,(2R+1)^2).
+Actual three-coordinate certificates restricted to a genuine
+plane are proved to belong to this new two-coordinate cover.
+This transfers both previously constructed group and prime
+crossing certificates without assuming a plane-count estimate.
+
+PlaneRankinCritical applies the already proved integer-factor
+Rankin bound with d=2. With at most B^K actual planes, its
+critical-band certificate count is at most
+N^((1+1/k)*(1+(1+zeta)/c)+epsilon).
+The arbitrary plane family, all coefficients, center intervals,
+lengths, offsets and factor sets vary after the common threshold.
+The polynomial plane multiplicity and the sublinear-logarithmic
+exponential are absorbed using proved estimates. There is no
+new external geometric or analytic argument.
+
+PlaneTernaryConfinement proves a single simultaneous exceptional
+count for excessive support-group OR individual-prime populations.
+The two actual top-product>N populations are bounded by the
+completed fixed-k budgets. In the remaining population, either
+excess supplies an actual crossing certificate; its genuine
+plane places the point in the two-coordinate Rankin cover.
+The resulting count is N^(max(6/5,1+1/c)+epsilon).
+The same parameter choice k,zeta already used in three dimensions
+suffices, because the d=2 excess exponent is smaller.
+
+PlaneConfinementMass includes B^J actual offset-pattern labels
+and up to B^K real planes for each label. A common threshold
+precedes the label type, all actual assignments and all weights.
+Its actual_plane_confinement theorem defines the actual common
+exceptional finite set and proves its positive mass at most
+N^(-min(beta-6/5,beta-1-1/c)+epsilon).
+Outside it, BOTH the actual support-group and individual-prime
+counts above B^c are bounded by the same
+k-1+floor(log N/(c log B)). The source point-weight regime is
+made explicit as 0<=w<=N^(-beta+epsilon/2). Uniform o(1) point
+errors fit this regime eventually; neither an exceptional count
+nor an exceptional mass is an input.
+
+PolylogConfinementTheorem.companion_T21_4_three_dimensional
+likewise provides ONE actual exceptional set and a common k for
+both ordinary three-dimensional populations. It combines the
+previously proved group and prime branches using the maximum
+of their fixed k values, the monotonicity of the literal count
+threshold and positivity of the actual finite union mass. Its
+mass exponent is exactly the printed
+-min(beta-6/5,beta-1-2/c)+epsilon.
+The final point-weight margin epsilon/4 is explicit. The earlier
+PolylogConfinementScales.logarithmic_count_sublinear gives the
+uniform o(L) conclusion for every such fixed k.
+
+The simultaneous three-dimensional sufficient-cutoff theorem
+proves the beta=2 exceptional mass is o(L*N^(-2/3)) whenever
+c>6. PlaneConfinementNegligibility.sufficient_cutoff proves the
+same conclusion on the specified plane populations for c>3.
+Both give a fixed positive point-weight margin and a fixed k,
+then for every eta>0 a common threshold such that the actual
+exceptional mass is <=eta*L*N^(-2/3). These are sufficient
+thresholds, exactly as in the source, with no optimality claim.
+
+PrimitiveTripleWeights also discharges the source beta=2 weight
+regime for actual original primitive full-rank triples. For an
+injective primitive triple, its first pair is a proper subfamily
+and has zero relative nullity, hence disjoint actual square-class
+spaces. The full local ranks identify its homogeneous pair
+probability with p^2. Monotonicity bounds the full homogeneous
+triple probability by p^2; the actual affine triple probability
+is bounded by the already proved direct-pair formula. The
+uniform critical nominal-square estimate and constant absorption
+give both actual probabilities in the class
+0<=w<=N^(-2+theta), for every fixed theta>0. Full local ranks,
+primitive status and injective original starts are actual
+predicates, not supplied probability bounds. This bridge keeps
+affine incompatibility and zero actual probabilities intact.
+
+All T21.4 branches are unconditional under the source arithmetic
+and positive-host-weight hypotheses. No new literature input,
+Paper C source, original manuscript edit, dependency change or
+Palomar registration is introduced. Main 3.3 and its identified
+geometric applications remain conditional, and the open dense
+edge and target bounds are unchanged.
+
+Verified under Lean v4.36.0-rc2: full build passed (12903 jobs); direct axiom audit passed for 9546 declarations using only propext, Classical.choice and Quot.sound; all 7674 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.32 GiB.

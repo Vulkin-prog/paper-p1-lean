@@ -2169,3 +2169,12 @@ public import PaperP1.Asymptotics.TernaryPrimeTheorem
 public import PaperP1.Asymptotics.TernaryPrimeConfinement
 public import PaperP1.Asymptotics.TernaryPrimeConfinementMass
 public import PaperP1.Asymptotics.TernaryPrimeNegligibility
+public import PaperP1.Arithmetic.FreePlaneCRT
+public import PaperP1.Arithmetic.PlaneSupportCover
+public import PaperP1.Asymptotics.PlaneRankinCritical
+public import PaperP1.Asymptotics.PlaneTernaryConfinement
+public import PaperP1.Asymptotics.PlaneConfinementMass
+public import PaperP1.Asymptotics.PlaneConfinementNegligibility
+public import PaperP1.Asymptotics.PolylogConfinementTheorem
+public import PaperP1.Model.PrimitiveTripleWeights
+public import PaperP1.Asymptotics.PrimitiveConfinementWeights
