@@ -4691,6 +4691,16 @@ import PaperP1
 #print axioms PaperP1.TwoTargetClassSourceCover.recovery_source_cover_card
 #print axioms PaperP1.TwoTargetClassSourceCover.class_product_eq
 #print axioms PaperP1.TwoTargetClassSourceCover.target_kernel_dvd_cover
+#print axioms PaperP1.TwoTargetCodeLift.target_projection
+#print axioms PaperP1.TwoTargetCodeLift.coordinate_pullback
+#print axioms PaperP1.TwoTargetCodeLift.injective_of_target
+#print axioms PaperP1.TwoTargetCodeLift.to_code_injective
+#print axioms PaperP1.TwoTargetIntrinsicClassCoefficients.source_cover_card
+#print axioms PaperP1.TwoTargetIntrinsicClassCoefficients.kernel_in_pool
+#print axioms PaperP1.TwoTargetPhysicalBudgets.class_budgets
+#print axioms PaperP1.TwoTargetPhysicalBudgets.class_size
+#print axioms PaperP1.TwoTargetPhysicalBudgets.uniform_class_data
+#print axioms PaperP1.TwoTargetPhysicalRegularization.uniform_physical_subspace
 #print axioms PaperP1.TwoTargetPrimeClassSupports.value_pos
 #print axioms PaperP1.TwoTargetPrimeClassSupports.odd_class_row
 #print axioms PaperP1.TwoTargetPrimeClassSupports.source_support
@@ -6303,6 +6313,8 @@ import PaperP1
 #print axioms PaperP1.TwoSmallKernelWindows.uniform_lower
 #print axioms PaperP1.TwoSmallKernelWindows.critical_lower
 #print axioms PaperP1.TwoTargetCoefficientEnumeration.uniform_enumeration
+#print axioms PaperP1.TwoTargetIntrinsicEnumeration.uniform_enumeration
+#print axioms PaperP1.TwoTargetPhysicalEnumeration.uniform_enumeration
 #print axioms PaperP1.uniformLittleOOn_zero
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
 #print axioms PaperP1.UnitChannelPairWeights.uniform_joint
@@ -6503,6 +6515,10 @@ import PaperP1
 #print axioms PaperP1.ProjectionRestrictionBudget.kernelInclusion_injective
 #print axioms PaperP1.ProjectionRestrictionBudget.rank_loss_le_codimension
 #print axioms PaperP1.ProjectionRestrictionBudget.real_rank_lower_bound
+#print axioms PaperP1.RecoveryImage.pullback_ne_zero
+#print axioms PaperP1.RecoveryImage.no_recovery_image
+#print axioms PaperP1.RecoveryImage.finrank_image
+#print axioms PaperP1.RecoveryImage.projection_image_injective
 #print axioms PaperP1.RecoveryLabelSupports.mem_labels
 #print axioms PaperP1.RecoveryLabelSupports.noDisjointSums_of_recovery_exclusion
 #print axioms PaperP1.RecoveryRankCertificate.selectionSpan_dimension_le

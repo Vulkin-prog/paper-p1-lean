@@ -2221,3 +2221,10 @@ public import PaperP1.Arithmetic.SourceSupportedCoefficientPool
 public import PaperP1.Asymptotics.SourceSupportedCoefficientCount
 public import PaperP1.Arithmetic.TwoTargetClassCoefficients
 public import PaperP1.Asymptotics.TwoTargetCoefficientEnumeration
+public import PaperP1.Coding.RecoveryImage
+public import PaperP1.Arithmetic.TwoTargetCodeLift
+public import PaperP1.Arithmetic.TwoTargetIntrinsicClassCoefficients
+public import PaperP1.Arithmetic.TwoTargetPhysicalRegularization
+public import PaperP1.Arithmetic.TwoTargetPhysicalBudgets
+public import PaperP1.Asymptotics.TwoTargetIntrinsicEnumeration
+public import PaperP1.Asymptotics.TwoTargetPhysicalEnumeration
