@@ -5211,9 +5211,11 @@ import PaperP1
 #print axioms PaperP1.ClassCodeFibres.pair_count
 #print axioms PaperP1.CoarseConnectedFourthUnderBCN.uniform_nonDirect_cost
 #print axioms PaperP1.CoarseConnectedFourthUnderBCN.uniform_cumulant_comparison
+#print axioms PaperP1.CoarseConnectedTripleActivityUnderInputs.uniform_activity
 #print axioms PaperP1.CoarseConnectedTripleJointMass.uniform_nonaligned_mass
 #print axioms PaperP1.CoarseConnectedTripleJointMass.uniform_connected_mass
 #print axioms PaperP1.CoarseConnectedTripleJointMass.uniform_vanishing_mass
+#print axioms PaperP1.CoarseConnectedTripleJointMassUnderInputs.uniform_mass
 #print axioms PaperP1.CoarseDependentFamilyMassUnderBCN.uniform_seeded_mass
 #print axioms PaperP1.CoarseDependentFamilyMassUnderBCN.uniform_seed_orders
 #print axioms PaperP1.CoarseDependentFamilyMassUnderBCN.uniform_dependent_mass
@@ -5242,6 +5244,9 @@ import PaperP1
 #print axioms PaperP1.CoarseTripleActivityUnderBCN.uniform_positive_activity
 #print axioms PaperP1.CoarseTripleActivityUnderBCN.uniform_absolute_activity
 #print axioms PaperP1.CoarseTripleActivityUnderBCN.uniform_vanishing_activity
+#print axioms PaperP1.CoarseTripleFiniteReduction.uniform_cover
+#print axioms PaperP1.CoarseTriplePairSeedsUnderInputs.uniform_activity
+#print axioms PaperP1.CoarseTriplePairSeedsUnderInputs.uniform_extensions
 #print axioms PaperP1.CodedClassCount.uniform_count
 #print axioms PaperP1.CoefficientDegreeOneHostCount.uniform_hosts
 #print axioms PaperP1.CoefficientNonalignedHostCount.uniform_hosts
@@ -5450,6 +5455,7 @@ import PaperP1
 #print axioms PaperP1.DependentBlockPairsCount.article_10_3
 #print axioms PaperP1.DependentBlockPairsCount.uniform_logarithmic_count
 #print axioms PaperP1.DependentPairJointMassUnderInputs.uniform_bound
+#print axioms PaperP1.DependentPairSeedPropagation.uniform_bound
 #print axioms PaperP1.DependentProductMass.cover_bound
 #print axioms PaperP1.DependentProductMass.uniform_seeded_mass
 #print axioms PaperP1.DependentProductMass.uniform_seed_orders
@@ -6453,6 +6459,7 @@ import PaperP1
 #print axioms PaperP1.SeveralSmallKernelCount.square_crossing_bounds
 #print axioms PaperP1.SeveralSmallKernelCount.uniform_count
 #print axioms PaperP1.SeveralWindowProjectionCount.companion_T1_14
+#print axioms PaperP1.SharedFiniteInteriorTripleMass.uniform_mass
 #print axioms PaperP1.SharedPrincipalEdgePairMass.uniform_bound
 #print axioms PaperP1.SharedPrincipalEdgePairMass.relative_to_beta_squared
 #print axioms PaperP1.SharedPrincipalTripleMass.inclusion
@@ -6561,6 +6568,8 @@ import PaperP1
 #print axioms PaperP1.SquareTupleCount.square_tuple_count
 #print axioms PaperP1.StrongAlignedDenseJointMass.uniform_joint
 #print axioms PaperP1.StrongAlignedDensePairCount.uniform_count
+#print axioms PaperP1.StrongAlignedInteriorEdges.uniform_edges
+#print axioms PaperP1.StrongAlignedUnitChannels.bounded_coprime_channels
 #print axioms PaperP1.StrongAlignedUnitChannels.bounded_channels
 #print axioms PaperP1.SublogCardinalityCap.uniform_cap
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_joint_mass
@@ -8072,6 +8081,8 @@ import PaperP1
 #print axioms PaperP1.CenteredDependenceSupport.inserted_target
 #print axioms PaperP1.ChosenRelationCore.properties
 #print axioms PaperP1.ChosenRelationCore.weighted_bound
+#print axioms PaperP1.CoarseTriplePairSeeds.mem_pairs
+#print axioms PaperP1.CoarseTriplePairSeeds.activity_bound
 #print axioms PaperP1.ColoredPrimeSamples.select_diagonal
 #print axioms PaperP1.ColoredPrimeSamples.start_diagonal
 #print axioms PaperP1.ColoredPrimeSamples.relationMap_comp
@@ -8322,6 +8333,10 @@ import PaperP1
 #print axioms PaperP1.FiniteGoodChannelPartition.exceptional_nonzero_cover
 #print axioms PaperP1.FiniteGoodChannelPartition.exceptional_activity_bound
 #print axioms PaperP1.FiniteGoodChannelPartition.activity_decomposition
+#print axioms PaperP1.FiniteInteriorUnitEdges.channel_data
+#print axioms PaperP1.FiniteInteriorUnitEdges.edge_data
+#print axioms PaperP1.FiniteInteriorUnitEdges.pair_geometry
+#print axioms PaperP1.FiniteInteriorUnitEdges.triple_source
 #print axioms PaperP1.FinitePartMoments.joint_image
 #print axioms PaperP1.FinitePartMoments.centered_image
 #print axioms PaperP1.Model.valueLinear_apply
@@ -9299,6 +9314,7 @@ import PaperP1
 #print axioms PaperP1.TripleJointReconstruction.identity
 #print axioms PaperP1.TripleJointReconstruction.absolute_bound
 #print axioms PaperP1.TripleJointReconstruction.error_bound
+#print axioms PaperP1.TriplePairDependence.isolated_or_two
 #print axioms PaperP1.TripleProbabilityBound.marginal_of_full_rank
 #print axioms PaperP1.TripleProbabilityBound.pair_joint_le
 #print axioms PaperP1.TripleProbabilityBound.pair_subset_tupleSet

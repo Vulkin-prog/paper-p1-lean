@@ -2455,3 +2455,13 @@ public import PaperP1.Model.ConnectedTripleLowCrossing
 public import PaperP1.Asymptotics.ConnectedTripleLowCrossingUnderInputs
 public import PaperP1.Asymptotics.IsolatedVertexDenseTripleMassUnderInputs
 public import PaperP1.Asymptotics.IsolatedVertexTripleMassUnderInputs
+public import PaperP1.Model.FiniteInteriorUnitEdges
+public import PaperP1.Model.TriplePairDependence
+public import PaperP1.Model.CoarseTriplePairSeeds
+public import PaperP1.Asymptotics.SharedFiniteInteriorTripleMass
+public import PaperP1.Asymptotics.StrongAlignedInteriorEdges
+public import PaperP1.Asymptotics.DependentPairSeedPropagation
+public import PaperP1.Asymptotics.CoarseTriplePairSeedsUnderInputs
+public import PaperP1.Asymptotics.CoarseTripleFiniteReduction
+public import PaperP1.Asymptotics.CoarseConnectedTripleJointMassUnderInputs
+public import PaperP1.Asymptotics.CoarseConnectedTripleActivityUnderInputs

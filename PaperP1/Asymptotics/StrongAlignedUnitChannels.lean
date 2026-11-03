@@ -13,13 +13,13 @@ namespace PaperP1.StrongAlignedUnitChannels
 
 open Finset PaperP1.Arithmetic PaperP1.Affine PaperP1.Model
 
-theorem bounded_channels (θ : ℝ) (hθ : 0 < θ) :
+theorem bounded_coprime_channels (θ : ℝ) (hθ : 0 < θ) :
     ∃ Q : ℕ, 1 ≤ Q ∧ ∀ C : ℝ, ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
       |(L : ℝ) - Real.log N / Real.log 2| ≤ C → ∀ y z : ℕ,
       y ∈ dyadicBlock N → z ∈ dyadicBlock N →
       θ * L < (Module.finrank F₂ ↥(squareClassSpace y L ⊓ squareClassSpace z L) : ℝ) →
       CompressedTargetAlignment.Aligned 1 y z L →
-      ∃ a b : ℕ, 0 < a ∧ a ≤ b ∧ b ≤ Q ∧
+      ∃ a b : ℕ, 0 < a ∧ a ≤ b ∧ b ≤ Q ∧ a.Coprime b ∧
         ((NormalizedUnitCount.units a b y z L).Nonempty ∨
           (NormalizedUnitCount.units a b z y L).Nonempty) := by
   obtain ⟨n, hn⟩ := exists_nat_one_div_lt (show 0 < θ / 4 by positivity)
@@ -70,10 +70,27 @@ theorem bounded_channels (θ : ℝ) (hθ : 0 < θ) :
     have hpositive := mul_pos hθ hLpos
     nlinarith only [hstrong, hinter, hloss, herror, hpositive]
   by_cases hab : a ≤ b
-  · exact ⟨a, b, ha, hab, (le_max_right _ _).trans hmax, Or.inl hu⟩
+  · exact ⟨a, b, ha, hab, (le_max_right _ _).trans hmax, hcop, Or.inl hu⟩
   · obtain ⟨ij, hij⟩ := hu
     have hswap : (NormalizedUnitCount.units b a z y L).Nonempty :=
       ⟨(ij.2, ij.1), NormalizedUnitCount.mem_units.mpr (NormalizedUnitCount.mem_units.mp hij).symm⟩
-    exact ⟨b, a, hb, le_of_not_ge hab, (le_max_left _ _).trans hmax, Or.inr hswap⟩
+    exact ⟨b, a, hb, le_of_not_ge hab, (le_max_left _ _).trans hmax, hcop.symm, Or.inr hswap⟩
+
+theorem bounded_channels (θ : ℝ) (hθ : 0 < θ) :
+    ∃ Q : ℕ, 1 ≤ Q ∧ ∀ C : ℝ, ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
+      |(L : ℝ) - Real.log N / Real.log 2| ≤ C → ∀ y z : ℕ,
+      y ∈ dyadicBlock N → z ∈ dyadicBlock N →
+      θ * L < (Module.finrank F₂ ↥(squareClassSpace y L ⊓ squareClassSpace z L) : ℝ) →
+      CompressedTargetAlignment.Aligned 1 y z L →
+      ∃ a b : ℕ, 0 < a ∧ a ≤ b ∧ b ≤ Q ∧
+        ((NormalizedUnitCount.units a b y z L).Nonempty ∨
+          (NormalizedUnitCount.units a b z y L).Nonempty) := by
+  obtain ⟨Q, hQ, h⟩ := bounded_coprime_channels θ hθ
+  refine ⟨Q, hQ, fun C ↦ ?_⟩
+  obtain ⟨N₀, hN₀, h⟩ := h C
+  refine ⟨N₀, hN₀, ?_⟩
+  intro N hN L hband y z hy hz hstrong halign
+  obtain ⟨a, b, ha, hab, hb, _hcop, hu⟩ := h N hN L hband y z hy hz hstrong halign
+  exact ⟨a, b, ha, hab, hb, hu⟩
 
 end PaperP1.StrongAlignedUnitChannels
