@@ -2212,3 +2212,12 @@ public import PaperP1.Combinatorics.LabelClassPartition
 public import PaperP1.Coding.TargetLabelsComponents
 public import PaperP1.Arithmetic.TwoTargetWindowSections
 public import PaperP1.Arithmetic.TwoTargetRegularization
+public import PaperP1.Combinatorics.TwoFreeBlockSupport
+public import PaperP1.Combinatorics.OddLabelCircuitSupport
+public import PaperP1.Combinatorics.PhysicalSupportPoolBudget
+public import PaperP1.Arithmetic.TwoTargetPrimeClassSupports
+public import PaperP1.Arithmetic.TwoTargetClassSourceCover
+public import PaperP1.Arithmetic.SourceSupportedCoefficientPool
+public import PaperP1.Asymptotics.SourceSupportedCoefficientCount
+public import PaperP1.Arithmetic.TwoTargetClassCoefficients
+public import PaperP1.Asymptotics.TwoTargetCoefficientEnumeration

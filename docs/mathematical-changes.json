@@ -9421,6 +9421,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "0223eb6bd0273994dc256851c7b0a18ad15d3462"
+    },
+    {
+      "id": "P1-MATH-0121",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:dense-targets",
+        "number": "15.2",
+        "page": 40,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 129,
+        "statement_sha256": "67d2424adbe9ce58d341f300471c14a7e1cf21728b62ee4a3f73ad0425362605"
+      },
+      "original_assumption": "The coefficient-enumeration paragraph of the companion proof of15.2 first pairs equal active labels into binary components and assigns remaining primes to circuit supports.",
+      "finding": "The coefficient stage can be carried out on whole nonzero\nphysical label classes. Their odd prime rows force short supports\nthrough actual fixed source coordinates. The union of ALL potential\nsource supports of a class has explicitly bounded cardinality.\nIts source-value product is divisible by the entire large odd\nkernel of the class target product. One N^epsilon coefficient\npool depending only on the fixed sources consequently covers\nevery pair of targets, every recovery-regularized relation\nsubspace and every nonzero class, at fixed polynomial height.\nNo equal-label pairing, binary-component choice, subspace\nenumeration or prime assignment is needed for this stage.",
+      "impact": "A stronger and more explicit auxiliary coefficient-enumeration lemma. It retains the N^epsilon coefficient budget and fixes its uniform quantifier order. This does not complete the dense-pair estimate or remove the later small-curve exclusions and geometric strata.",
+      "proposed_revision": "State the bounded-source-cover divisibility lemma for whole label classes, with sourceBound(s,t) explicit. Define one source-dependent coefficient pool by bounded coordinate subsets and actual divisors, prove its N^epsilon bound, and use the exact class target-product square equations in the subsequent selection arguments. Keep the unproved geometric counting and alignment-removal stages separate.",
+      "evidence": [
+        "PaperP1.OddLabelCircuitSupport.source_support",
+        "PaperP1.TwoTargetPrimeClassSupports.source_support",
+        "PaperP1.TwoTargetClassSourceCover.recovery_source_cover_card",
+        "PaperP1.TwoTargetClassSourceCover.target_kernel_dvd_cover",
+        "PaperP1.TwoTargetClassCoefficients.kernel_in_pool",
+        "PaperP1.SourceSupportedCoefficientCount.uniform_count",
+        "PaperP1.TwoTargetCoefficientEnumeration.uniform_enumeration"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (12989 jobs); direct axiom audit passed for 9722 declarations using only propext, Classical.choice and Quot.sound; all 7911 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.13 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
