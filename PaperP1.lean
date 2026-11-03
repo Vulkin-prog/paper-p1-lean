@@ -2641,3 +2641,10 @@ public import PaperP1.Asymptotics.TwoChannelReferenceUnderInputs
 public import PaperP1.Asymptotics.ExplicitHermiteLawUnderInputs
 public import PaperP1.Model.PairRankCovarianceBound
 public import PaperP1.Asymptotics.WeightedNonalignedPairsUnderInputs
+public import PaperP1.Arithmetic.CoprimeRowDeterminants
+public import PaperP1.Algebra.FiniteEvaluationAnnihilator
+public import PaperP1.Algebra.IntegralEvaluationAnnihilator
+public import PaperP1.Algebra.RectangularEvaluationPolynomial
+public import PaperP1.Arithmetic.DivisorAuxiliaryPolynomial
+public import PaperP1.Asymptotics.DivisorAuxiliaryPolynomialUniform
+public import PaperP1.Arithmetic.CoprimeDivisorCardinality

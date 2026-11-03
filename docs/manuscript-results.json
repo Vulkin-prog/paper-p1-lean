@@ -12657,11 +12657,53 @@
       "source": "companion_sections/confinement.tex",
       "line": 9,
       "sha256": "7ebcf350ba28ab0f1bfcc4cc2f6c7f0be0372bf91091a2143a120c1313c7dacf",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "in_progress",
+      "lean_declarations": [
+        "PaperP1.CoprimeRowDeterminants.row_dvd",
+        "PaperP1.CoprimeRowDeterminants.difference_row_dvd",
+        "PaperP1.CoprimeRowDeterminants.replacement_product_dvd",
+        "PaperP1.CoprimeRowDeterminants.replacement_height",
+        "PaperP1.CoprimeRowDeterminants.replacement_zero",
+        "PaperP1.CoprimeRowDeterminants.determinant_zero_of_replacements",
+        "PaperP1.FiniteEvaluationAnnihilator.span_ne_top",
+        "PaperP1.FiniteEvaluationAnnihilator.coefficients",
+        "PaperP1.IntegralEvaluationAnnihilator.coefficients",
+        "PaperP1.RectangularEvaluationPolynomial.outer_coefficient",
+        "PaperP1.RectangularEvaluationPolynomial.coefficient",
+        "PaperP1.RectangularEvaluationPolynomial.nonzero",
+        "PaperP1.RectangularEvaluationPolynomial.outer_degree",
+        "PaperP1.RectangularEvaluationPolynomial.inner_degree",
+        "PaperP1.RectangularEvaluationPolynomial.total_degree",
+        "PaperP1.RectangularEvaluationPolynomial.evaluation",
+        "PaperP1.RectangularEvaluationPolynomial.exists_polynomial",
+        "PaperP1.DivisorAuxiliaryPolynomial.row_height",
+        "PaperP1.DivisorAuxiliaryPolynomial.row_congruence",
+        "PaperP1.DivisorAuxiliaryPolynomial.finite_confinement",
+        "PaperP1.DivisorAuxiliaryPolynomialUniform.choose_degree",
+        "PaperP1.DivisorAuxiliaryPolynomialUniform.uniform_height",
+        "PaperP1.DivisorAuxiliaryPolynomialUniform.uniform_polynomial",
+        "PaperP1.CoprimeDivisorCardinality.product_dvd",
+        "PaperP1.CoprimeDivisorCardinality.card_bound",
+        "PaperP1.CoprimeDivisorCardinality.line_divisor",
+        "PaperP1.CoprimeDivisorCardinality.line_card_bound",
+        "PaperP1.RectangularEvaluationPolynomial.Index",
+        "PaperP1.RectangularEvaluationPolynomial.row",
+        "PaperP1.RectangularEvaluationPolynomial.polynomial",
+        "PaperP1.DivisorAuxiliaryPolynomial.integerRow"
+      ],
+      "literature_inputs": [
+        "P1-ARITH-COPRIME-DIVISOR-AUXILIARY"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "The auxiliary-polynomial construction in companion T8.1 is now\nunconditional. T8.1 remains IN PROGRESS: the final nonlinear-curve point\ncount, O(B^(1/2+delta)) bound and little-o(B) conclusion remain open.\n\nDivisorAuxiliaryPolynomialUniform.uniform_polynomial fixes d>=1 and\nN0>=2 after C,tau>0 and fixed integers A,K>=1, BEFORE every N, critical\nL, index TYPE, integer bases x,y, offset family(s_i,t_i) and composite\ndivisors g_i. The assumptions are |x|,|y|<=A*N, |s_i|,|t_i|<=K*(L+1),\npairwise coprimality, g_i>=N^tau, and divisibility of x+s_i,y+t_i.\nThe conclusion supplies an ACTUAL NONZERO rational polynomial P, with\nboth partial degrees<=d and total degree<=2d, vanishing at EVERY offset.\nNo index-cardinality bound, primeness or nonalignment is needed for\nthis construction. Fixed real comparison constants can be majorized\nby integer A,K; nonalignment is needed later for the line count.\n\nThe (d+1)^2 rectangular monomials have quadratic dimension and linear\ndegree. choose_degree fixes 2d<tau*((d+1)^2-1), then absorbs all fixed\nfactorials and logarithmic powers into half the positive gap.\nReplacing one integer evaluation row by the row at(-x,-y) produces a\ndeterminant divisible by every OTHER g_i and hence their coprime\nproduct. Its natural absolute value is bounded by\nM!*X^(2d)*(B^(2d))^(M-1), M=(d+1)^2: the exceptional height X is paid\nfor once. All replacements vanish. The literal Cramer identity and\nconstant coordinate1 force every maximal evaluation minor to vanish.\nThe span/annihilator proof constructs nonzero coefficients and P,\nrather than assuming them. Casts, row operations, determinant heights,\ndegree bounds and evaluations are checked. The generic annihilator\nworks over every field; its integral variant clears denominators of\na rational kernel to give a nonzero integral kernel.\n\nThe finite indexed divisor bound also keeps all point multiplicities:\npairwise coprime g_i>=N^tau dividing nonzero n with |n|<=N^beta have\ncardinality<=beta/tau for N>1. If a*s_i+b*t_i=c, each g_i divides\na*x+b*y+c. This yields the same line cardinality bound when that\ninteger is nonzero and has the prescribed height. Deriving those two\nline hypotheses uniformly from the source geometry remains pending.\n\nNo new unproved input or additional Paper C port is introduced. The\npreviously attributed logarithmic-factor bound is reused from its\nexisting checked P1 module. No numbered completion or new improvement\nidentifier is added:87/167 unconditional,39 conditional,151 confirmed\nimprovements. Dense primitive triples, dense nonaligned pairs, optimal\ntriple activity and the optimal quadratic upper rate remain open.\nOriginal manuscript bytes, dependency pins and the Palomar milestone\nare preserved.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": "",
+          "literature_inputs": []
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13857 jobs); direct axiom audit passed for 10850 declarations using only propext, Classical.choice and Quot.sound; all 9328 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.04 GiB."
     },
     {
       "label": "p13:conf:dense-primitive",

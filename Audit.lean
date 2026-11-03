@@ -767,6 +767,8 @@ import PaperP1
 #print axioms PaperP1.FieldSquareClasses.add_zero_iff_eq
 #print axioms PaperP1.FieldSquareClasses.pair_dependence_iff
 #print axioms PaperP1.FiniteCumulantControl.finite_bound
+#print axioms PaperP1.FiniteEvaluationAnnihilator.span_ne_top
+#print axioms PaperP1.FiniteEvaluationAnnihilator.coefficients
 #print axioms PaperP1.Algebra.finiteExpectation_const
 #print axioms PaperP1.Algebra.finiteExpectation_add
 #print axioms PaperP1.Algebra.finiteExpectation_mul_const
@@ -1225,6 +1227,7 @@ import PaperP1
 #print axioms PaperP1.IntegerSquareGap.abs_le_abs_sq_sub_sq
 #print axioms PaperP1.IntegerSquareGap.natAbs_le_natAbs_sq_sub_sq
 #print axioms PaperP1.IntegerSquareGap.eval_natAbs_le
+#print axioms PaperP1.IntegralEvaluationAnnihilator.coefficients
 #print axioms PaperP1.IntegralInterpolationDescent.rational_images_coprime
 #print axioms PaperP1.IntegralInterpolationDescent.exists_integral_presentation
 #print axioms PaperP1.IntegralInterpolationDescent.scalar_degree_eq
@@ -1588,6 +1591,14 @@ import PaperP1
 #print axioms PaperP1.RationalMapFieldDegree.reduced_degrees
 #print axioms PaperP1.RationalMapFieldDegree.extension_rank
 #print axioms PaperP1.RationalSquareGraphNonconstant.degree_pos
+#print axioms PaperP1.RectangularEvaluationPolynomial.outer_coefficient
+#print axioms PaperP1.RectangularEvaluationPolynomial.coefficient
+#print axioms PaperP1.RectangularEvaluationPolynomial.nonzero
+#print axioms PaperP1.RectangularEvaluationPolynomial.outer_degree
+#print axioms PaperP1.RectangularEvaluationPolynomial.inner_degree
+#print axioms PaperP1.RectangularEvaluationPolynomial.total_degree
+#print axioms PaperP1.RectangularEvaluationPolynomial.evaluation
+#print axioms PaperP1.RectangularEvaluationPolynomial.exists_polynomial
 #print axioms PaperP1.ReducedQuotientGraph.numerator_degree_le
 #print axioms PaperP1.ReducedQuotientGraph.denominator_degree_le
 #print axioms PaperP1.ReducedQuotientGraph.degree_le
@@ -2795,6 +2806,10 @@ import PaperP1
 #print axioms PaperP1.ContactWindowSpan.joined_space
 #print axioms PaperP1.ContactWindowSpan.rank_add_local_relations
 #print axioms PaperP1.ContactWindowSpan.relation_rank_le_defects
+#print axioms PaperP1.CoprimeDivisorCardinality.product_dvd
+#print axioms PaperP1.CoprimeDivisorCardinality.card_bound
+#print axioms PaperP1.CoprimeDivisorCardinality.line_divisor
+#print axioms PaperP1.CoprimeDivisorCardinality.line_card_bound
 #print axioms PaperP1.CoprimeFactorCodes.receiver_exists
 #print axioms PaperP1.CoprimeFactorCodes.code_divides
 #print axioms PaperP1.CoprimeFactorCodes.code_eq_of_divides
@@ -2806,6 +2821,12 @@ import PaperP1
 #print axioms PaperP1.CoprimeIntervalPairs.pairs_card_lower
 #print axioms PaperP1.CoprimeIntervalPairs.intervalPairs_data
 #print axioms PaperP1.CoprimeIntervalPairs.intervalPairs_card_lower
+#print axioms PaperP1.CoprimeRowDeterminants.row_dvd
+#print axioms PaperP1.CoprimeRowDeterminants.difference_row_dvd
+#print axioms PaperP1.CoprimeRowDeterminants.replacement_product_dvd
+#print axioms PaperP1.CoprimeRowDeterminants.replacement_height
+#print axioms PaperP1.CoprimeRowDeterminants.replacement_zero
+#print axioms PaperP1.CoprimeRowDeterminants.determinant_zero_of_replacements
 #print axioms PaperP1.CoverRankPrimeBudget.constant_pos
 #print axioms PaperP1.CoverRankPrimeBudget.finite_budget
 #print axioms PaperP1.CoverRankPrimeBudget.critical_width_at_least_four
@@ -2937,6 +2958,9 @@ import PaperP1
 #print axioms PaperP1.DependentBlockPairs.off_diagonal_count
 #print axioms PaperP1.DependentBlockPairs.diagonal_count
 #print axioms PaperP1.DependentBlockPairs.split_count
+#print axioms PaperP1.DivisorAuxiliaryPolynomial.row_height
+#print axioms PaperP1.DivisorAuxiliaryPolynomial.row_congruence
+#print axioms PaperP1.DivisorAuxiliaryPolynomial.finite_confinement
 #print axioms PaperP1.DivisorSubpolynomial.factorization_le_binary_log
 #print axioms PaperP1.DivisorSubpolynomial.local_divisor_pow_le_prime_pow
 #print axioms PaperP1.DivisorSubpolynomial.card_small_primeFactors_le
@@ -5565,6 +5589,9 @@ import PaperP1
 #print axioms PaperP1.DisjointSquareTheorem.mem_solutions
 #print axioms PaperP1.DisjointSquareTheorem.two_equation_count
 #print axioms PaperP1.DisjointSquareTheorem.companion_T4_1
+#print axioms PaperP1.DivisorAuxiliaryPolynomialUniform.choose_degree
+#print axioms PaperP1.DivisorAuxiliaryPolynomialUniform.uniform_height
+#print axioms PaperP1.DivisorAuxiliaryPolynomialUniform.uniform_polynomial
 #print axioms PaperP1.DyadicMatchingArithmetic.uniform_core
 #print axioms PaperP1.DyadicQuadraticBudgets.dyadic_bounds
 #print axioms PaperP1.DyadicQuadraticBudgets.mem_indices
