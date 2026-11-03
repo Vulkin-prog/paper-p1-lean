@@ -7,6 +7,7 @@ from pathlib import Path
 import re
 import subprocess
 import sys
+import time
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -26,12 +27,20 @@ def main():
         print("\n".join(modules))
         return
     disk_check = [sys.executable, str(ROOT / "scripts/check_disk.py")]
-    subprocess.run(disk_check, check=True)
     env = os.environ.copy()
     env["MATHLIB_NO_CACHE_ON_UPDATE"] = "1"
     print(f"Fetching the cache for {len(modules)} direct imports and their dependencies.", flush=True)
-    subprocess.run(["lake", "exe", "cache", "get", *modules], cwd=ROOT, env=env, check=True)
-    subprocess.run(disk_check, check=True)
+    command = ["lake", "exe", "cache", "get", *modules]
+    for attempt in range(1, 4):
+        subprocess.run(disk_check, check=True)
+        result = subprocess.run(command, cwd=ROOT, env=env, check=False)
+        subprocess.run(disk_check, check=True)
+        if result.returncode == 0:
+            return
+        if attempt == 3:
+            result.check_returncode()
+        print(f"Cache download failed; retrying the same selective request ({attempt}/3).", flush=True)
+        time.sleep(5 * attempt)
 
 
 if __name__ == "__main__":
