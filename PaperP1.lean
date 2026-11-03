@@ -2097,3 +2097,7 @@ public import PaperP1.Asymptotics.PrincipalEdgeRemainderUnderInputs
 public import PaperP1.Arithmetic.SourcePairKernelComparison
 public import PaperP1.Asymptotics.DenseSourcePairKernelUnderInputs
 public import PaperP1.Asymptotics.NonalignedSourceResidualUnderInputs
+public import PaperP1.Model.SourcePairAffineWeight
+public import PaperP1.Model.SourcePairSignedSum
+public import PaperP1.Asymptotics.SourcePairSignedCentering
+public import PaperP1.Asymptotics.SignedSourceProfileUnderInputs

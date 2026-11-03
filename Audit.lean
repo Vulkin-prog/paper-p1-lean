@@ -5832,6 +5832,9 @@ import PaperP1
 #print axioms PaperP1.SignedChannelPhaseLimit.tendsto_normalized
 #print axioms PaperP1.SignedChannelPhaseLimit.weighted_linear_identity
 #print axioms PaperP1.SignedChannelPhaseLimit.tendsto_height_normalized
+#print axioms PaperP1.SignedSourceProfileUnderInputs.scaled_mainTerm
+#print axioms PaperP1.SignedSourceProfileUnderInputs.unscale
+#print axioms PaperP1.SignedSourceProfileUnderInputs.uniform_all_ordered
 #print axioms PaperP1.SmallKernelBlockCount.logarithmic_blocks
 #print axioms PaperP1.SmallKernelBlockCount.arbitrary_selected_blocks
 #print axioms PaperP1.SmallNormalPlanes.height_from_count
@@ -5847,6 +5850,8 @@ import PaperP1
 #print axioms PaperP1.SmoothSelectionCertificates.source_certificates
 #print axioms PaperP1.SourceCurvePointCover.finite_cover_bound
 #print axioms PaperP1.SourceCurvePointCoverDegreeBound.finite_cover_bound
+#print axioms PaperP1.SourcePairSignedCentering.nominal_diagonal
+#print axioms PaperP1.SourcePairSignedCentering.uniform_error
 #print axioms PaperP1.SourceTranslationCount.uniform_counts
 #print axioms PaperP1.SourceTranslationCount.all_heights
 #print axioms PaperP1.SourceTranslationCount.leading_counts
@@ -8159,6 +8164,14 @@ import PaperP1
 #print axioms PaperP1.SourceConditionalDeviations.finite_negative_bound
 #print axioms PaperP1.SourceConditionalDeviations.mean_decomposition
 #print axioms PaperP1.SourceConditionalDeviations.finite_mean_lower
+#print axioms PaperP1.SourcePairAffineWeight.eta_eq_compatibility
+#print axioms PaperP1.SourcePairAffineWeight.joint_zero_or_nominal
+#print axioms PaperP1.SourcePairAffineWeight.joint_formula
+#print axioms PaperP1.SourcePairAffineWeight.scaled_signed_weight
+#print axioms PaperP1.SourcePairSignedSum.ordered_joint_sum
+#print axioms PaperP1.SourcePairSignedSum.ordered_card
+#print axioms PaperP1.SourcePairSignedSum.scaled_sum
+#print axioms PaperP1.SourcePairSignedSum.centering_error
 #print axioms PaperP1.SplitSumLp.sumValue_aestronglyMeasurable
 #print axioms PaperP1.SplitSumLp.sumValue_bound
 #print axioms PaperP1.SplitSumLp.sumValue_memLp

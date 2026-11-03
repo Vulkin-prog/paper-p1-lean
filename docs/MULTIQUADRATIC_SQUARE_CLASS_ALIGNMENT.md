@@ -3410,3 +3410,56 @@ bytes, compiler and dependencies are unchanged; Palomar remains
 deferred until completed coverage and actual input proofs.
 
 Verified under Lean v4.36.0-rc2: full build passed (12741 jobs); direct axiom audit passed for 9234 declarations using only propext, Classical.choice and Quot.sound; all 7292 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.33 GiB.
+
+
+## The actual all-ordered signed arithmetic pair profile
+
+The signed arithmetic pair Fourier weight is now connected
+literally to actual probabilities, nominal centering and the
+second factorial cumulant. SourcePairAffineWeight constructs
+eta as an actual zero/one compatibility indicator and proves
+its equality to compatibility of the literal finite family
+start system at every adequate cutoff. The exact identity is
+q_xy=p^2*eta_xy*2^pairLoss, with p=(2^L)^(-1), including every
+local kernel and incompatible pair. The scaled signed weight
+is therefore q_xy-p^2. No regularity, positive probability or
+effective-relative-rank replacement is assumed in this identity.
+
+An exact finite sum over all ordered DISTINCT pairs proves
+p^2*sum(eta*2^pairLoss-1)=kappa2+mu^2-(|G|p)^2+|G|p^2.
+The actual diagonal is retained. The identity uses the literal
+ordered/unordered multiplicity and actual falling factorial
+moment. It applies to arbitrary dyadic subfamilies. The proved
+mean bias, actual mean cap and nominal square bound then give
+an UNCONDITIONAL error <=N^(-1+epsilon) between the scaled full
+dyadic signed sum and the actual second factorial cumulant.
+All centering and diagonal terms are recovered internally.
+
+SignedSourceProfileUnderInputs.uniform_all_ordered combines
+this identity with the conditional actual two-channel cumulant
+profile. It proves, for ALL ordered distinct dyadic pairs,
+|sum(eta*2^pairLoss-1)-N/3*(S_23(L)+S_34(L))|
+<=N^(6/5+epsilon). The finite signed channel polynomials are
+exact, including all lower-order terms. The two actual rational
+translation coefficients are each exactly 1/3. The proof derives
+the nominal unscaling estimate from the critical binary word
+bound and composes all exponent and constant margins explicitly.
+Only the previously identified generic normalized curve and
+ordinary/chosen-source surface-cover properties remain inputs.
+A fixed admissible prime threshold 8*(L+1) is selected internally;
+the final source statement has no extra threshold parameter.
+
+This is the ALL-distinct-pair variant, not yet the manuscript's
+separated-pair display. Removing the close pairs still requires
+its explicit contact comparison. The raw positive profile and
+full phase-asymptotic alignment also remain open. Main 3.3 stays
+in_progress and no complete raw pair-profile claim is made.
+Main 3.2, main 3.4 and T1.8 remain conditional on the exact
+geometric properties. Proved coverage stays 79/167, confirmed
+improvements stay 113, and no new improvement identifier is
+assigned to these source identities and proof compositions.
+Original source bytes, compiler and dependencies are unchanged;
+Palomar remains deferred and no manuscript-conclusion error
+is newly confirmed.
+
+Verified under Lean v4.36.0-rc2: full build passed (12749 jobs); direct axiom audit passed for 9247 declarations using only propext, Classical.choice and Quot.sound; all 7308 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.30 GiB.
