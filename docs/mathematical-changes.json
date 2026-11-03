@@ -10714,6 +10714,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "d345b0a2035612338f707abd0b995b3f22debf28"
+    },
+    {
+      "id": "P1-MATH-0152",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:conf:strong-profile",
+        "number": "12.2",
+        "page": 29,
+        "source": "main_sections/confinement.tex",
+        "line": 52,
+        "statement_sha256": "d99d41e212139976236941d0884a622485e5ec59ac7d616977e28d7bf8c08540"
+      },
+      "original_assumption": "The low-crossing branch of main12.2 separately invokes a strong nonaligned-pair joint-mass bound; T8.3 is used explicitly only for the dense-target branch.",
+      "finding": "The full local-convention dense-pair count T8.3 applies to the source pairs in BOTH branches. The universal actual inequality q({x,y})<=p_x<=K_C/N then gives their total joint mass N^(-1+epsilon) directly from the N^epsilon source count. No separate weighted nonaligned-pair estimate, affine compatibility of all source pairs, or further geometric inputs are needed beyond the explicit BCN dependency of this confinement route. All target crossing bounds used afterwards are proved unconditionally.",
+      "evidence": [
+        "PaperP1.DenseNonalignedPairsUnderBCN.uniform_kernel_hosts_of_no_exact",
+        "PaperP1.StrongNoExactPairMassUnderBCN.uniform_count",
+        "PaperP1.StrongNoExactPairMassUnderBCN.uniform_joint_sum",
+        "PaperP1.LowCrossingTargetJointMass.uniform_bound",
+        "PaperP1.DenseOneTargetTripleJointMass.uniform_bound",
+        "PaperP1.StrongNonalignedSourceProfileUnderBCN.uniform_sources",
+        "PaperP1.StrongNonalignedTripleProfileUnderBCN.main_12_2"
+      ],
+      "proposed_revision": "In the low-crossing proof of Proposition12.2, invoke CorollaryT8.3 for the source pairs and multiply by the true maximum marginal K_C/N. Use the same source count in the dense-target branch, keeping the actual conditional q(e) factor in the low branch and the true triple probability in the dense branch. Keep the section-local exact-unit alignment convention explicit.",
+      "impact": "A checked simplification of the printed strong-profile proof, with the same minimum exponent and exact heterogeneous probabilities. Main12.2 is complete conditionally on the existing BCN field property alone; BCN itself and the Pila-only route remain unproved. No stronger unconditionality claim is made.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13919 jobs); direct axiom audit passed for 10939 declarations using only propext, Classical.choice and Quot.sound; all 9432 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.90 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

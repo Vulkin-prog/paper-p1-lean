@@ -2671,3 +2671,11 @@ public import PaperP1.Asymptotics.DensePrimitiveTripleHostsUnderBCN
 public import PaperP1.Asymptotics.DensePrimitiveTripleRankMassUnderBCN
 public import PaperP1.Asymptotics.LowPrimitiveTripleRankMass
 public import PaperP1.Asymptotics.PrimitiveTripleMassUnderBCN
+public import PaperP1.Model.OneTargetCrossing
+public import PaperP1.Asymptotics.DenseEffectiveTargetCount
+public import PaperP1.Asymptotics.PointwiseJointRankCap
+public import PaperP1.Asymptotics.LowCrossingTargetJointMass
+public import PaperP1.Asymptotics.DenseOneTargetTripleJointMass
+public import PaperP1.Asymptotics.StrongNoExactPairMassUnderBCN
+public import PaperP1.Asymptotics.StrongNonalignedSourceProfileUnderBCN
+public import PaperP1.Asymptotics.StrongNonalignedTripleProfileUnderBCN

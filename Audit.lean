@@ -5597,6 +5597,7 @@ import PaperP1
 #print axioms PaperP1.DenseCompressedTargetCount.uniform_offsets
 #print axioms PaperP1.DenseCompressedTargetCount.article_15_3
 #print axioms PaperP1.DenseDirectCrossingFamiliesUnderInputs.uniform_families
+#print axioms PaperP1.DenseEffectiveTargetCount.uniform_count
 #print axioms PaperP1.DenseNonalignedPairsUnderBCN.uniform_kernel_hosts_of_no_exact
 #print axioms PaperP1.DenseNonalignedPairsUnderBCN.uniform_kernel_hosts
 #print axioms PaperP1.DenseNonalignedPairsUnderBCN.companion_T8_3_no_exact
@@ -5604,6 +5605,7 @@ import PaperP1
 #print axioms PaperP1.DenseNonalignedProfileReduction.dense_data
 #print axioms PaperP1.DenseNonalignedProfileReduction.nonaligned_activity_bound
 #print axioms PaperP1.DenseNonalignedProfileReduction.uniform_bound
+#print axioms PaperP1.DenseOneTargetTripleJointMass.uniform_bound
 #print axioms PaperP1.DensePairActivityUnderInputs.nonaligned_host
 #print axioms PaperP1.DensePairActivityUnderInputs.dense_components
 #print axioms PaperP1.DensePairActivityUnderInputs.centered_host_bound
@@ -6197,6 +6199,7 @@ import PaperP1
 #print axioms PaperP1.LogarithmicWordPowers.polynomial_factor_le_rpow_eventually
 #print axioms PaperP1.LowCompatibleNullityTail.uniform_bound
 #print axioms PaperP1.LowCrossingJointMass.uniform_bound
+#print axioms PaperP1.LowCrossingTargetJointMass.uniform_bound
 #print axioms PaperP1.LowPrimitiveTripleRankMass.uniform_bound
 #print axioms PaperP1.LowTwoPairJointMassUnderInputs.uniform_bound
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_seeds
@@ -6415,6 +6418,7 @@ import PaperP1
 #print axioms PaperP1.PlaneRankinCritical.uniform_bound
 #print axioms PaperP1.PlaneTernaryConfinement.first_term_bound
 #print axioms PaperP1.PlaneTernaryConfinement.uniform_count
+#print axioms PaperP1.PointwiseJointRankCap.uniform_bound
 #print axioms PaperP1.PoissonCharlierConversion.errorConstant_pos
 #print axioms PaperP1.PoissonCharlierConversion.critical_bound
 #print axioms PaperP1.PoissonCharlierConversion.regular_card_eventually
@@ -6883,6 +6887,10 @@ import PaperP1
 #print axioms PaperP1.StrongAlignedInteriorEdges.uniform_edges
 #print axioms PaperP1.StrongAlignedUnitChannels.bounded_coprime_channels
 #print axioms PaperP1.StrongAlignedUnitChannels.bounded_channels
+#print axioms PaperP1.StrongNoExactPairMassUnderBCN.uniform_count
+#print axioms PaperP1.StrongNoExactPairMassUnderBCN.uniform_joint_sum
+#print axioms PaperP1.StrongNonalignedSourceProfileUnderBCN.uniform_sources
+#print axioms PaperP1.StrongNonalignedTripleProfileUnderBCN.main_12_2
 #print axioms PaperP1.SublogCardinalityCap.uniform_cap
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_joint_mass
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_factorial
@@ -9161,6 +9169,10 @@ import PaperP1
 #print axioms PaperP1.OneNegativePrime.parity_simple_multiple
 #print axioms PaperP1.OneNegativePrime.not_dvd_inside
 #print axioms PaperP1.OneNegativePrime.positive_exact_run
+#print axioms PaperP1.OneTargetCrossing.nullity_insert
+#print axioms PaperP1.OneTargetCrossing.connected_positive
+#print axioms PaperP1.OneTargetCrossing.mem_targets
+#print axioms PaperP1.OneTargetCrossing.joint_upper
 #print axioms PaperP1.OrdinaryIndependentDeficit.seed_data
 #print axioms PaperP1.OrdinaryIndependentDeficit.seed_cover
 #print axioms PaperP1.OrdinaryIndependentDeficit.finite_bound

@@ -3134,11 +3134,39 @@
       "source": "main_sections/confinement.tex",
       "line": 52,
       "sha256": "d99d41e212139976236941d0884a622485e5ec59ac7d616977e28d7bf8c08540",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "conditional",
+      "lean_declarations": [
+        "PaperP1.OneTargetCrossing.nullity_insert",
+        "PaperP1.OneTargetCrossing.connected_positive",
+        "PaperP1.OneTargetCrossing.mem_targets",
+        "PaperP1.OneTargetCrossing.joint_upper",
+        "PaperP1.DenseEffectiveTargetCount.uniform_count",
+        "PaperP1.PointwiseJointRankCap.uniform_bound",
+        "PaperP1.LowCrossingTargetJointMass.uniform_bound",
+        "PaperP1.DenseOneTargetTripleJointMass.uniform_bound",
+        "PaperP1.StrongNoExactPairMassUnderBCN.uniform_count",
+        "PaperP1.StrongNoExactPairMassUnderBCN.uniform_joint_sum",
+        "PaperP1.StrongNonalignedSourceProfileUnderBCN.uniform_sources",
+        "PaperP1.StrongNonalignedTripleProfileUnderBCN.main_12_2",
+        "PaperP1.OneTargetCrossing.sourceSpace",
+        "PaperP1.OneTargetCrossing.rank"
+      ],
+      "literature_inputs": [
+        "P1-GEO-BCN-PLANE-UNIFORM",
+        "P1-ARITH-STRONG-NONALIGNED-TRIPLE-PROFILE"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0152"
+      ],
+      "notes": "Main Proposition12.2 is complete CONDITIONALLY on the existing\nP1-GEO-BCN-PLANE-UNIFORM property, PlaneCurvePointCount.UniformBound c kappa\nwith c>0. For every fixed theta,sigma,epsilon>0, the LITERAL actual\nunordered connected dyadic triple population containing a nonaligned pair\nwith d_xy>=theta*L and rho_rel<=sigma*L has joint mass at most\nN^(-min(3/2,3-sigma)+epsilon), after one common threshold.\nNonalignment is the section-local absence of TWO exact units, represented\nby ActualOffsetNonalignment.NoExact. Thus the enlarged-nonalignment\nsubcase is included without restricting the source statement.\nThe theorem even permits incompatible triples; their actual joint mass\nis zero. No replacement by independent probabilities is made in the\ndense branch. Local defects and zero marginals are allowed throughout.\n\nOneTargetCrossing defines the actual effective intersection of a new\nwindow with the span of a finite source. It proves the exact nullity\nincrement, positivity from connectedness, membership in the ACTUAL\nhalf-count target population, and the true conditional upper bound\nq(insert z e)<=q(e)*p_z*2^crossing. These finite results are unconditional.\n\nDenseEffectiveTargetCount puts the already proved logarithmic dense\ntarget theorem into the literal critical finite-source form. Its source\ntuple is constructed from the actual source set; its values have the\nproved height<=N^2. Source overlaps and dependence are allowed. One\nthreshold precedes every source set and every target subfamily. A target\ncrossing>=eta*L gives at mostN^epsilon targets, UNCONDITIONALLY.\nNo dense target count is an assumed hypothesis.\n\nPointwiseJointRankCap proves unconditionally that EVERY fixed-cardinality\nactual family with rho_rel<=sigma*L has q(I)<=N^(-r+sigma+epsilon).\nIt uses the actual heterogeneous marginal cap K_C/N, the exact effective\nrank weight and the proved binary-power bound. No positive-probability,\ncompatibility or local full-rank premise is needed.\n\nLowCrossingTargetJointMass proves the true fixed-source cost\nsum_z q(insert z e)<=q(e)*N^(-1/2+1/b+epsilon) for positive crossings<L/b,\nfor every fixed integer b>0. The actual target set is embedded in the\nalready counted dependent-target population. Its independent mass is\nbounded by the checked conditional half-count, while the crossing costs\nonly the actual critical binary root N^(1/b). The factor q(e) is kept.\nDenseOneTargetTripleJointMass proves the complementary crossing>=eta*L\nbranch has total TRUE joint mass N^(-3+sigma+epsilon), above every fixed\nactual pair. It combines the proved dense effective target count with\nthe actual rank-limited probability cap. Both branches are unconditional\nbefore counting the nonaligned source pairs.\n\nStrongNoExactPairMassUnderBCN derives the literal source count N^epsilon\nfrom the full local-convention T8.3 with density theta*L. The universal\ninequality q({x,y})<=p_x<=K_C/N immediately gives the total strong-pair\njoint mass N^(-1+epsilon). The separate weighted nonaligned-pair theorem\nand its three additional geometric properties are not needed in this\nroute. P1-MATH-0152 records this checked simplification for the next\nmanuscript version, explicitly retaining the BCN dependency.\n\nStrongNonalignedSourceProfileUnderBCN splits each actual source-pair\ntarget family at crossing=L/b. Choose b after the final margin and all\ninternal count margins before N. The low branch sums q(e) times its\nconditional cost, giving N^(-3/2+epsilon); the dense branch multiplies\nthe actual subpower source and target counts and the TRUE triple rank\nweight, giving N^(-3+sigma+epsilon). Their sum has the printed minimum\nexponent, with constants absorbed after the final margin.\nStrongNonalignedTripleProfileUnderBCN.main_12_2 constructs the literal\nfinite pair pool and target families from the original unordered triple\nfamily. Every source triple is covered using its actual strong pair and\nthird center. The finite union and image inequalities retain all weights\nand possible repeated representations; no enumeration or injectivity of\nchosen witnesses is assumed. This closes the numbered source theorem,\nnot merely a fixed-source preparatory implication.\n\nNo new unproved input, global axiom or Paper C port is introduced.\nCoverage is87/167 unconditional and43 conditional, with152 confirmed\nmanuscript improvements. Near-primitive triples main12.1, the optimal\nthird activity and optimal quadratic upper rate remain open. The four\nseparately recorded geometric properties, including BCN, remain unproved.\nOriginal manuscript bytes, dependency pins and the later Palomar milestone\nare preserved.\n\nOperational validation: GitHub run41732410060 on commit2cdac1f failed\nBEFORE compilation because three selective Mathlib cache requests returned\nHTTP502. The Lean/source steps did not fail. Commitd4bca6b adds at most\nthree attempts of the SAME selective request, with disk checks before\nand after each attempt and final failure propagation. Mocked immediate-\nsuccess, one/two-retry, exhausted-retry and list-only checks all passed;\nno local dependency download was performed. The current remote workflow\nmust still be observed; local validation is recorded separately below.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": "",
+          "literature_inputs": []
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13919 jobs); direct axiom audit passed for 10939 declarations using only propext, Classical.choice and Quot.sound; all 9432 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.90 GiB."
     },
     {
       "label": "p13:rig:short-basis",
