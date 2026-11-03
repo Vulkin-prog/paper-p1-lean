@@ -4288,6 +4288,7 @@ import PaperP1
 #print axioms PaperP1.SquarefreeOutsideDivisor.prime_dvd_radical_iff
 #print axioms PaperP1.SquarefreeOutsideDivisor.outside_eq_source
 #print axioms PaperP1.SquarefreeOutsideDivisor.log_loss
+#print axioms PaperP1.StrictChannelSourceSeparation.source_strictly_separated
 #print axioms PaperP1.SupportRankinTail.weight_product
 #print axioms PaperP1.SupportRankinTail.weight_nonneg
 #print axioms PaperP1.SupportRankinTail.rankin_term
@@ -4623,6 +4624,12 @@ import PaperP1
 #print axioms PaperP1.AlignedPrincipalEdgePairMass.uniform_bound
 #print axioms PaperP1.AlignedPrincipalEdgePairMass.relative_to_beta_squared
 #print axioms PaperP1.AlignedPrincipalSigned.uniform_bound
+#print axioms PaperP1.AlignedSourcePairMass.finite_support_bound
+#print axioms PaperP1.AlignedSourcePairMass.finite_set_support_bound
+#print axioms PaperP1.AlignedSourcePairMass.uniform_high_family
+#print axioms PaperP1.AlignedSourcePairMass.uniform_zero_family
+#print axioms PaperP1.AlignedSourcePairMass.uniform_height_one_separated
+#print axioms PaperP1.AlignedSourcePairMass.uniform_height_two
 #print axioms PaperP1.AlignedSourcePairPowers.uniform_height
 #print axioms PaperP1.AlignedSourcePairPowers.uniform_zero_units
 #print axioms PaperP1.AlignedTargetRank.uniform_core
@@ -5468,6 +5475,8 @@ import PaperP1
 #print axioms PaperP1.NormalizedDefectPairActivity.uniform_activity
 #print axioms PaperP1.NormalizedDefectPairActivity.uniform_joint_mass
 #print axioms PaperP1.NormalizedDefectSourceCount.bad_sources_rate
+#print axioms PaperP1.NormalizedDefectSourceWeight.uniform_source_mass
+#print axioms PaperP1.NormalizedDefectSourceWeight.uniform_pair_mass
 #print axioms PaperP1.NormalizedPairResidual.rank_sublinear
 #print axioms PaperP1.OffsetLineMajorant.majorantConstant_pos
 #print axioms PaperP1.OffsetLineMajorant.majorantConstant_eq
@@ -5567,6 +5576,8 @@ import PaperP1
 #print axioms PaperP1.PositiveSecondCumulant.uniform_lower
 #print axioms PaperP1.PositiveSecondCumulant.uniform_positive
 #print axioms PaperP1.PositiveSecondCumulant.uniform_hermite_admissibility
+#print axioms PaperP1.PositiveSeparatedSourceProfileUnderInputs.finite_profile_error
+#print axioms PaperP1.PositiveSeparatedSourceProfileUnderInputs.article_3_3_positive
 #print axioms PaperP1.PrescribedQuadraticKernelCount.mem_values
 #print axioms PaperP1.PrescribedQuadraticKernelCount.divisible_positive_card
 #print axioms PaperP1.PrescribedQuadraticKernelCount.first_branch_count
@@ -5642,6 +5653,7 @@ import PaperP1
 #print axioms PaperP1.PrincipalEdgeSecondMomentLower.relative_lower
 #print axioms PaperP1.PrincipalEdgeSecondMomentLower.uniform_moment_lower
 #print axioms PaperP1.PrincipalEdgeSecondMomentLower.relative_moment_lower
+#print axioms PaperP1.PrincipalPositiveResidual.uniform_bound
 #print axioms PaperP1.PrincipalDenseResidual.bounded_mass
 #print axioms PaperP1.PrincipalDenseResidual.uniform_dense_comparison
 #print axioms PaperP1.PrincipalDenseResidual.uniform_dense_lower
@@ -7862,6 +7874,17 @@ import PaperP1
 #print axioms PaperP1.PrincipalEdgeSpaces.joint_factor
 #print axioms PaperP1.PrincipalEdgeSpaces.independent_ne
 #print axioms PaperP1.PrincipalEdgeSpaces.beta_squared_le_joint_add_coupled
+#print axioms PaperP1.PrincipalPositiveCover.ordered_host_sum
+#print axioms PaperP1.PrincipalPositiveCover.ordered_separated_sum
+#print axioms PaperP1.PrincipalPositiveCover.private_pair_not_close
+#print axioms PaperP1.PrincipalPositiveCover.principal_subset_separated
+#print axioms PaperP1.PrincipalPositiveCover.private_mass_eq
+#print axioms PaperP1.PrincipalPositiveCover.principal_mass_eq
+#print axioms PaperP1.PrincipalPositiveCover.one_unit_zero
+#print axioms PaperP1.PrincipalPositiveCover.channel_nonzero_cover
+#print axioms PaperP1.PrincipalPositiveCover.residual_cover
+#print axioms PaperP1.PrincipalPositiveCover.finite_weight_cover
+#print axioms PaperP1.PrincipalPositiveCover.finite_residual_bound
 #print axioms PaperP1.PrincipalResidualDensity.bounded_nonneg
 #print axioms PaperP1.PrincipalResidualDensity.dense_nonneg
 #print axioms PaperP1.PrincipalResidualDensity.principal_positive

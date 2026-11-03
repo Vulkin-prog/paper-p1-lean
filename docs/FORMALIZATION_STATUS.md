@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **9284 audited theorem/lemma declarations**. This
+- The project currently has **9307 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -10242,3 +10242,68 @@ is introduced. Original source bytes, compiler and dependency
 pins are unchanged; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (12767 jobs); direct axiom audit passed for 9284 declarations using only propext, Classical.choice and Quot.sound; all 7354 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.62 GiB.
+
+
+## The literal positive separated source profile
+
+The first display of article Theorem 3.3 is now proved literally:
+|sum_(ordered separated)(2^pairLoss-1)-N/3*(U_23(L)+U_34(L))|
+<=N^(6/5+epsilon). The source rank is exactly 2L-dim(S_x+S_y),
+with local kernels retained. There is no compatibility filter.
+PositiveSeparatedSourceProfileUnderInputs.article_3_3_positive
+uses only the explicit normalized-curve and ordinary/chosen-source
+surface-cover properties already recorded. For this positive
+display the chosen-source component cap is sizeCap(epsilon/64),
+with the embedding degree and all other caps selected before
+those geometric arguments. The signed display has its separately
+recorded fixed cap. No target mass or remainder is an input.
+
+The entire aligned positive residual is unconditional. The proved
+O(N^(1+delta)) support count for actual full-rank-loss pairs,
+including irregular windows, combines with the proved enlarged
+alignment power bounds to give O(N^(1+1/b0+epsilon)) mass on
+all channels of height at least b0. Thus the height-five tail is
+O(N^(6/5+epsilon)), without any additional point-count theorem.
+Zero-unit alignments have O(N^(1+epsilon)) positive source mass.
+The separated height-one boundary is contained in that actual
+zero-unit population. The height-two boundary has O(N^(1/2+
+epsilon)) mass, by its literal endpoint rectangle and full
+source rank bound. Nonprivate fixed-channel sources have
+O(N^(1/2+1/b+epsilon)) positive source mass, including incompatible
+events; the actual unordered image is bounded as well.
+
+StrictChannelSourceSeparation strengthens the existing weak
+separation conclusion to x+L<y, under the same source-parameter
+and size hypotheses. Its proof uses the actual exact-unit
+translation and endpoint bounds; it does not discard contacts
+by a probability assertion. Consequently both private principal
+channels lie inside the actual separated-pair family. Their
+unordered families are disjoint by the already proved slope
+separation. The exact ordered multiplicity two and their actual
+positive masses are proved, with both orientations retained.
+
+A finite nonzero-weight cover classifies the aligned residual
+outside the principal families into six actual populations:
+separated height one, height two, the two nonprivate principal
+channels, zero-unit alignments and the high tail. Private
+one-unit terms vanish by their actual source kernel dimension.
+Their unconditional bounds give the full aligned residual.
+The conditional nonaligned mass bound applies to the actual
+ordered host family, with no regularity or compatibility premise.
+An exact positive decomposition then combines both complete
+unsigned principal polynomials with the aligned and nonaligned
+remainders. All constants and epsilon margins are internally
+absorbed; a fixed threshold H=8*(L+1) is selected in the final
+statement, which has no extra threshold parameter.
+
+This completes the literal positive profile while preserving the
+already proved literal signed profile. The final leading and
+second-phase equivalents for the actual cumulant remain to be
+assembled, so main 3.3 stays in_progress. Completed numbered
+coverage stays 79/167 and confirmed improvements stay 113.
+These are proof and statement-alignment advances; no new
+correction identifier or external input is added. Compiler,
+dependency pins and original manuscript bytes are unchanged.
+Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (12779 jobs); direct axiom audit passed for 9307 declarations using only propext, Classical.choice and Quot.sound; all 7382 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.59 GiB.

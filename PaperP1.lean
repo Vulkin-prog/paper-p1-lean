@@ -2110,3 +2110,9 @@ public import PaperP1.Model.SourcePairPositiveWeight
 public import PaperP1.Asymptotics.AlignedSourcePairPowers
 public import PaperP1.Model.PrivateChannelPositiveMass
 public import PaperP1.Asymptotics.PrivateChannelPositiveProfile
+public import PaperP1.Asymptotics.AlignedSourcePairMass
+public import PaperP1.Asymptotics.NormalizedDefectSourceWeight
+public import PaperP1.Arithmetic.StrictChannelSourceSeparation
+public import PaperP1.Model.PrincipalPositiveCover
+public import PaperP1.Asymptotics.PrincipalPositiveResidual
+public import PaperP1.Asymptotics.PositiveSeparatedSourceProfileUnderInputs
