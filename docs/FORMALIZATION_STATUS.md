@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **9144 audited theorem/lemma declarations**. This
+- The project currently has **9151 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -9701,3 +9701,63 @@ and Palomar is deferred. No manuscript-conclusion error is
 confirmed; original source bytes and dependencies are unchanged.
 
 Verified under Lean v4.36.0-rc2: full build passed (12683 jobs); direct axiom audit passed for 9144 declarations using only propext, Classical.choice and Quot.sound; all 7183 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.50 GiB.
+
+
+## The general literal half-power composition under its exact geometric inputs
+
+The general coefficient-uniform N^(1/2+epsilon) literal
+integer host count is now proved under two explicit geometric
+properties: the generic normalized curve-count property and a
+new chosen-source uniform surface-cover property. The latter
+is an UNPROVED ARGUMENT, not an axiom or an asserted Salberger
+theorem. It includes the primary P3 surface covering and the
+bounded projection, lifting, geometric-integrality, degree and
+actual prime/Hilbert presentation translation for this chosen
+higher-dimensional weighted-source embedding. It is kept
+distinct from the previous ordinary-embedding cover property.
+Its data are an actual finite exceptional point set and actual
+height-one source curves of bounded degree; the desired host
+count is not part of the property.
+
+The proof constructs literal root lifts in the actual normalized
+source point set, with height floor((2^D+3^K)*N^D), and proves
+that they annihilate the actual global embedding ideal. The
+actual source cover yields finite exceptional points and curves.
+Every curve meeting a covered admissible host has actual chosen
+coordinate degree at least 2D. The proved finite-cover count
+therefore gives curve exponent 1/(2D)+delta. Choosing k large
+and delta small before the systems makes the covering decay
+and height conversion yield N^(1/2+epsilon). All numerical
+exponent choices and cardinality compositions are proved.
+
+GeneralRootHostCount.uniform_hosts constructs D and the actual
+homogeneous radicand list directly from the raw integer data.
+The stronger uniform_hosts_of_many selects a fixed first k
+equations from every larger finite system. The constant and
+scale cutoff are independent of the actual equation count and
+precede every coefficient, root set and finite host set. Only
+the geometric properties at that fixed k and chosen D are used.
+The root sets on both sides may have different positive sizes;
+only their common total-degree cap K is used. No equal-degree
+pigeonhole assumption is needed. Coefficients are arbitrary
+nonzero integers of height <=N^A0; smoothness is unnecessary.
+Offsets may lie in any fixed polynomial enlargement of the
+critical window. The actual two selected-set even-selection
+maps, their direct sum and positivity are explicit host
+hypotheses, as in the general per-system manuscript assertion.
+No homogeneous list, height, source point, curve, field, degree
+bound or target host count is supplied in the final statement.
+
+The per-system general half-power composition is therefore
+closed under its exact generic-curve and chosen-source-cover
+arguments. The degree-(a,1) and actual graph compositions retain
+their stronger proved N^epsilon bounds under the generic curve
+input and the distinct ordinary surface-cover input. The
+primary geometric input proofs and the remaining full graph
+consequence of the general half-power estimate remain open.
+T1.7 stays in_progress; numbered coverage remains 79/167,
+confirmed improvements remain 112 and Palomar is deferred.
+This is a proof improvement without a confirmed manuscript
+conclusion error; source bytes and dependencies are unchanged.
+
+Verified under Lean v4.36.0-rc2: full build passed (12693 jobs); direct axiom audit passed for 9151 declarations using only propext, Classical.choice and Quot.sound; all 7193 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.48 GiB.

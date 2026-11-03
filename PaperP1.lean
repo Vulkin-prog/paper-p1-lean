@@ -2068,3 +2068,8 @@ public import PaperP1.Geometry.SourceEmbeddedCurveLinearHilbert
 public import PaperP1.Geometry.SourceProjectiveCurveData
 public import PaperP1.Arithmetic.UniformSourceCurvePointCount
 public import PaperP1.Asymptotics.SourceCurvePointCover
+public import PaperP1.Arithmetic.UniformSourceSurfaceCover
+public import PaperP1.Asymptotics.HalfPowerSurfaceCountParameters
+public import PaperP1.Asymptotics.GeneralSourceHalfPowerUnderInputs
+public import PaperP1.Arithmetic.GeneralRootSystemData
+public import PaperP1.Asymptotics.GeneralRootHostCount

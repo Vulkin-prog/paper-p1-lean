@@ -3006,6 +3006,8 @@ import PaperP1
 #print axioms PaperP1.GeneralBranchingExceptions.retained_card_le_one
 #print axioms PaperP1.GeneralBranchingExceptions.twice_card_le
 #print axioms PaperP1.GeneralBranchingExceptions.card_le_half
+#print axioms PaperP1.GeneralRootSystemData.length
+#print axioms PaperP1.GeneralRootSystemData.get
 #print axioms PaperP1.GeometricAlignedTargetData.scaled_offset_bound
 #print axioms PaperP1.GeometricAlignedTargetData.reduced_affine_data
 #print axioms PaperP1.GeometricAlignedTargetData.bounded_height
@@ -4162,6 +4164,7 @@ import PaperP1
 #print axioms PaperP1.SourceIntegerLift.base_evaluation
 #print axioms PaperP1.SourceIntegerLift.evaluation_coordinate
 #print axioms PaperP1.SourceIntegerLift.evaluation_comp
+#print axioms PaperP1.SourceIntegerLift.global_relations_le_kernel
 #print axioms PaperP1.SourceIntegerPointHeight.coordinates_height
 #print axioms PaperP1.SourceIntegerPointHeight.point_floor_box
 #print axioms PaperP1.SourceIntegerPoints.point_normalizer
@@ -5124,6 +5127,9 @@ import PaperP1
 #print axioms PaperP1.GeneralBranchingTheorem.dilation_conclusion
 #print axioms PaperP1.GeneralBranchingTheorem.companion_T1_15
 #print axioms PaperP1.GeneralPlanarMotifCount.uniform_count
+#print axioms PaperP1.GeneralRootHostCount.uniform_hosts
+#print axioms PaperP1.GeneralRootHostCount.uniform_hosts_of_many
+#print axioms PaperP1.GeneralSourceHalfPowerUnderInputs.uniform_hosts
 #print axioms PaperP1.GeneralWindowBranching.finite_conclusion
 #print axioms PaperP1.GeneralWindowBranching.logarithmic_windows
 #print axioms PaperP1.GeneralWindowBranching.bounded_height_windows
@@ -5183,6 +5189,7 @@ import PaperP1
 #print axioms PaperP1.HalfCountStages.survivor_data
 #print axioms PaperP1.HalfCountStages.survivor_few_large
 #print axioms PaperP1.HalfCountStages.removed_source
+#print axioms PaperP1.HalfPowerSurfaceCountParameters.parameters
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_full_cumulant
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_absolute_activity
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_cumulant

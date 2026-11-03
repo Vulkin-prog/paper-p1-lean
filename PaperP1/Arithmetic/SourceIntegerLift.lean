@@ -79,4 +79,21 @@ theorem evaluation_comp (d : ι → ℤ) (D : ℕ) (I J : ι → Finset ℤ)
     rw [evaluation, aeval_X, SourceProjectiveEmbedding.evaluation_X,
       WeightedRootEvaluation.sourceGenerator_value, evaluation_coordinate]
 
+theorem global_relations_le_kernel (d : ι → ℤ) (D : ℕ) (I J : ι → Finset ℤ)
+    (hdeg : ∀ i, (I i).card + (J i).card ≤ 2 * D) (hD : 0 < D)
+    (x y : ℤ) (w : ι → ℤ)
+    (hroot : ∀ i, w i ^ 2 = d i * SplitRadicalPointHeight.integerProduct (I i) x *
+      SplitRadicalPointHeight.integerProduct (J i) y) :
+    RingHom.ker (SourceProjectiveEmbedding.evaluation (fun i ↦ (d i : ℚ)) D I J hdeg hD).toRingHom ≤
+      RingHom.ker (evaluation D (point D x y w)).toRingHom := by
+  intro f hf
+  have heq := RingHom.congr_fun (evaluation_comp d D I J hdeg hD x y w hroot) f
+  have hz := RingHom.mem_ker.mp hf
+  change SourceProjectiveEmbedding.evaluation (fun i ↦ (d i : ℚ)) D I J hdeg hD f = 0 at hz
+  change evaluation D (point D x y w) f = 0
+  change evaluation D (point D x y w) f = WeightedRootEvaluation.sourceEvaluation d D I J x y w hroot
+    (SourceProjectiveEmbedding.evaluation (fun i ↦ (d i : ℚ)) D I J hdeg hD f) at heq
+  rw [hz, map_zero] at heq
+  exact heq
+
 end PaperP1.SourceIntegerLift
