@@ -8104,3 +8104,48 @@ in_progress, coverage stays 79/167, confirmed improvements stay 107,
 and Palomar remains deferred. Original sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12331 jobs, direct axiom audit of 8599 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6464 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.12 GiB.
+
+
+## Actual full low-degree exclusion through affine source points
+
+The actual vertical base-curve chart is now constructed as a polynomial
+ring in one variable. Its equivalence sends each literal radicand to
+the polynomial used in the existing vertical functional-square
+obstruction. Degree-one projection of the actual source curve gives
+these functional squares, without separate square or chart-coordinate
+assumptions. The admissible-host hypotheses exclude this projection.
+
+A homogeneous polynomial of degree one is proved to equal its literal
+linear coefficient form. On the native Z-chart, a nonzero such equation
+through an affine point is classified exhaustively as a graph line
+through that point or the corresponding vertical line, including the
+horizontal case. Multiplication by the appropriate nonzero scalar is
+proved to preserve the exact principal ideal.
+
+Combining this classification, the previously established actual curve
+degree formula, and both actual chart-square diagrams proves the full
+coordinate-algebraic version of Step 3: an actual height-one projective
+source curve whose affine image contains an admissible rational host
+has Hilbert multiplicity at least 2D. No line, plane equation,
+birationality, or functional-square witness is an input. Both block
+independence conditions, direct sum, nonzero coefficients, at least two
+equations, and both disjoint nonempty support families are explicit.
+
+The containment condition is also proved from an actual affine point
+of the split-radical source with its literal base evaluation and an
+actual source-curve ideal contained in that point's evaluation kernel.
+The actual affine source point restricts to a map on the homogeneous
+source Veronese ring, and its base image is proved to be the literal
+affine host evaluation. Thus the projection/point containment diagram
+is checked, rather than an independent assumption in the degree bound.
+
+The previously open vertical diagram and linear-image classification
+are discharged. Geometric curve dimension versus source prime height
+and intrinsic hyperplane degree versus coordinate Hilbert multiplicity
+still require statement alignment. Higher low-degree curve geometry
+and external surface/curve uniform point counts remain open. T1.7
+stays in_progress, coverage stays 79/167, confirmed mathematical
+improvements stay 107, and Palomar remains deferred. Original sources
+are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12349 jobs, direct axiom audit of 8623 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6496 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.10 GiB.

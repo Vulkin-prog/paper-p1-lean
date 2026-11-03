@@ -348,6 +348,8 @@ import PaperP1
 #print axioms PaperP1.Affine.finrank_completeRelationCode
 #print axioms PaperP1.UniformPrecomposition.range_comp
 #print axioms PaperP1.UniformPrecomposition.mass_eq
+#print axioms PaperP1.AffineLineClassification.value_linear
+#print axioms PaperP1.AffineLineClassification.classify
 #print axioms PaperP1.BinaryEvenSelections.binary_bit
 #print axioms PaperP1.BinaryEvenSelections.selected_coefficients
 #print axioms PaperP1.BinaryEvenSelections.coefficients_selected
@@ -881,6 +883,12 @@ import PaperP1
 #print axioms PaperP1.GreedyShortKernel.independent_family
 #print axioms PaperP1.GreedyShortKernel.sparse_subspace_basis
 #print axioms PaperP1.GreedyShortKernel.physical_subspace_basis
+#print axioms PaperP1.HomogeneousAffineLineClassification.specialization_C
+#print axioms PaperP1.HomogeneousAffineLineClassification.specialization_Y
+#print axioms PaperP1.HomogeneousAffineLineClassification.specialization_X
+#print axioms PaperP1.HomogeneousAffineLineClassification.specialization_linear
+#print axioms PaperP1.HomogeneousAffineLineClassification.coefficients_nonzero
+#print axioms PaperP1.HomogeneousAffineLineClassification.classify
 #print axioms PaperP1.HomogeneousChartCoefficientQuotient.chart_surjective
 #print axioms PaperP1.HomogeneousChartCoefficientQuotient.chart_ker
 #print axioms PaperP1.HomogeneousChartCoefficientQuotient.coefficientQuotientEquiv_mk
@@ -895,6 +903,8 @@ import PaperP1
 #print axioms PaperP1.HomogeneousFreeApproximation.component_clears
 #print axioms PaperP1.HomogeneousFreeApproximation.exists_homogeneous_free_approximation
 #print axioms PaperP1.HomogeneousHeightOneEquation.exists_equation
+#print axioms PaperP1.HomogeneousLinearForm.eq_sum
+#print axioms PaperP1.HomogeneousLinearForm.eq_three
 #print axioms PaperP1.HomogeneousLinearNormalization.quotientEquiv_mk
 #print axioms PaperP1.HomogeneousLinearNormalization.parameterMap_X
 #print axioms PaperP1.HomogeneousLinearNormalization.parameter_mem
@@ -1088,6 +1098,13 @@ import PaperP1
 #print axioms PaperP1.NativeVeroneseLineChart.equiv_radicand
 #print axioms PaperP1.NativeVeroneseQuotientChart.chartIdeal_eq
 #print axioms PaperP1.NativeVeroneseQuotientChart.equiv_dehomogenization
+#print axioms PaperP1.NativeVeroneseVerticalChart.polynomialMap_kernel
+#print axioms PaperP1.NativeVeroneseVerticalChart.polynomialMap_surjective
+#print axioms PaperP1.NativeVeroneseVerticalChart.polynomialEquiv_mk
+#print axioms PaperP1.NativeVeroneseVerticalChart.polynomialMap_scaled
+#print axioms PaperP1.NativeVeroneseVerticalChart.coordinate_ne_zero
+#print axioms PaperP1.NativeVeroneseVerticalChart.equiv_dehomogenization
+#print axioms PaperP1.NativeVeroneseVerticalChart.equiv_radicand
 #print axioms PaperP1.NonnegativePowerDifference.bound
 #print axioms PaperP1.OldBlockSelections.exists_selections
 #print axioms PaperP1.PairProductComparison.exact_difference
@@ -1415,6 +1432,8 @@ import PaperP1
 #print axioms PaperP1.SourceCurveRadicalRelations.baseRadicand_mem_two
 #print axioms PaperP1.SourceCurveRadicalRelations.original_square
 #print axioms PaperP1.SourceCurveRadicalRelations.root_square
+#print axioms PaperP1.SourceVeroneseAffinePoint.sourceMap_base
+#print axioms PaperP1.SourceVeroneseAffinePoint.curve_image
 #print axioms PaperP1.SourceVeroneseChartBasis.chartBasis_apply
 #print axioms PaperP1.SourceVeroneseChartBasis.chartBasis_fraction
 #print axioms PaperP1.SourceVeroneseChartBasis.chart_free_rank
@@ -6397,6 +6416,7 @@ import PaperP1
 #print axioms PaperP1.ProjRankOneQuadraticDescent.parametrized_isSquare
 #print axioms PaperP1.ProjSurjectiveClosedImmersion.restriction_closedImmersion
 #print axioms PaperP1.ProjSurjectiveClosedImmersion.map_closedImmersion
+#print axioms PaperP1.SourceAffineCurveDegreeBound.multiplicity_ge_twoD
 #print axioms PaperP1.SourceCurveHeightOneDegree.exists_polynomial
 #print axioms PaperP1.SourceCurveHeightOneDegree.exists_degree_formula
 #print axioms PaperP1.SourceCurveHeightOneDegree.exists_polynomial_of_source_height
@@ -6445,9 +6465,13 @@ import PaperP1
 #print axioms PaperP1.SourceProjectiveCurveGraphExclusion.no_degree_one
 #print axioms PaperP1.SourceProjectiveCurveGraphExclusion.multiplicity_ge_twoD
 #print axioms PaperP1.SourceProjectiveCurveLineSquares.lineRestriction_isSquare
+#print axioms PaperP1.SourceProjectiveCurveLowDegreeExclusion.multiplicity_ge_twoD
 #print axioms PaperP1.SourceProjectiveCurveRadicalDescent.radical_isSquare
 #print axioms PaperP1.SourceProjectiveCurveSmallDegree.factors_lt_two
 #print axioms PaperP1.SourceProjectiveCurveSmallDegree.line_and_degree_one
+#print axioms PaperP1.SourceProjectiveCurveVerticalExclusion.no_degree_one
+#print axioms PaperP1.SourceProjectiveCurveVerticalExclusion.multiplicity_ge_twoD
+#print axioms PaperP1.SourceProjectiveCurveVerticalSquares.verticalRestriction_isSquare
 #print axioms PaperP1.SourceProjectiveEmbedding.index_finite
 #print axioms PaperP1.SourceProjectiveEmbedding.coordinate_count
 #print axioms PaperP1.SourceProjectiveEmbedding.coordinate_count_fin

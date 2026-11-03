@@ -1894,3 +1894,12 @@ public import PaperP1.Geometry.ProjRankOneQuadraticDescent
 public import PaperP1.Geometry.SourceProjectiveCurveGraphExclusion
 public import PaperP1.Geometry.SourceProjectiveCurveLineSquares
 public import PaperP1.Geometry.SourceProjectiveCurveRadicalDescent
+public import PaperP1.Algebra.AffineLineClassification
+public import PaperP1.Algebra.HomogeneousAffineLineClassification
+public import PaperP1.Algebra.HomogeneousLinearForm
+public import PaperP1.Algebra.NativeVeroneseVerticalChart
+public import PaperP1.Algebra.SourceVeroneseAffinePoint
+public import PaperP1.Geometry.SourceAffineCurveDegreeBound
+public import PaperP1.Geometry.SourceProjectiveCurveLowDegreeExclusion
+public import PaperP1.Geometry.SourceProjectiveCurveVerticalExclusion
+public import PaperP1.Geometry.SourceProjectiveCurveVerticalSquares
