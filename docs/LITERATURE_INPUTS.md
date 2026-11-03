@@ -8031,3 +8031,36 @@ mathematical improvements stay 107, and Palomar remains deferred.
 Original manuscript sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12303 jobs, direct axiom audit of 8565 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6413 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.17 GiB.
+
+
+## Actual small-degree curves and degree-one function-field square descent
+
+For an actual height-one projective source point, source Hilbert
+multiplicity below 2D now forces a homogeneous linear irreducible
+plane-image equation and actual projective function-field degree one.
+The proof uses the already established literal degree formula and the
+positive integer factors; it assumes no line equation or birationality.
+
+A degree-one field extension is proved to be an actual algebra
+isomorphism and to reflect squares and quadratic roots. The generic
+finite graded-map rank comparison is used to construct the isomorphism
+of its actual projective function fields when module rank is one.
+This is specialized to the actual source-point projection. The public
+square-reflection theorem concerns the literal quotient Proj function
+fields and their actual scalar map. It requires no infinite-field
+assumption. The public elaborated types and kernel axioms are inspected
+directly. Instance-preserving generic specialization avoids rebuilding
+large stalk-map expressions in handwritten source-point field types.
+
+Thus a source curve below 2D has the linear image and degree-one field
+map needed for the next exclusion step. The existing functional-square
+line obstruction still needs the checked affine line parametrization
+and the actual curve-coordinate/function-field diagram before it can
+exclude all such curves through admissible hosts. This geometric
+exclusion is not claimed here. Geometric dimension/prime-height and
+intrinsic hyperplane-degree/Hilbert-multiplicity alignment, higher
+low-degree geometry, and the external uniform host counts remain open.
+T1.7 stays in_progress, coverage stays 79/167, confirmed improvements
+stay 107 and Palomar remains deferred. Original sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12311 jobs, direct axiom audit of 8573 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6425 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.15 GiB.

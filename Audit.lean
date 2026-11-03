@@ -1267,6 +1267,10 @@ import PaperP1
 #print axioms PaperP1.RadicalProjectionPowerBasis.image_free
 #print axioms PaperP1.RadicalProjectionPowerBasis.image_finite
 #print axioms PaperP1.RadicalProjectionPowerBasis.image_finrank
+#print axioms PaperP1.RankOneFieldSquares.equiv_isSquare_iff
+#print axioms PaperP1.RankOneFieldSquares.bijective
+#print axioms PaperP1.RankOneFieldSquares.isSquare_iff
+#print axioms PaperP1.RankOneFieldSquares.quadratic_descent
 #print axioms PaperP1.RelativeVeroneseBasis.source_free_rank
 #print axioms PaperP1.RelativeVeroneseBasis.sourceBasis_apply
 #print axioms PaperP1.RelativeVeroneseImage.scalar_range
@@ -6346,6 +6350,7 @@ import PaperP1
 #print axioms PaperP1.ProjFunctionFieldMap.map_injective
 #print axioms PaperP1.ProjFunctionFieldRank.finrank_eq_chart
 #print axioms PaperP1.ProjFunctionFieldRank.finrank_eq_module
+#print axioms PaperP1.ProjFunctionFieldRankOne.isSquare_iff_of_module_rank_one
 #print axioms PaperP1.ProjIntegral.localization_isDomain
 #print axioms PaperP1.ProjIntegral.stalk_isDomain
 #print axioms PaperP1.ProjIntegral.isReduced
@@ -6414,6 +6419,9 @@ import PaperP1
 #print axioms PaperP1.SourceProjectiveAffineFieldCompatibility.equiv_comp_map
 #print axioms PaperP1.SourceProjectiveCurveDegree.exists_polynomial
 #print axioms PaperP1.SourceProjectiveCurveDegree.exists_degree_formula
+#print axioms PaperP1.SourceProjectiveCurveFieldEquiv.isSquare_iff
+#print axioms PaperP1.SourceProjectiveCurveSmallDegree.factors_lt_two
+#print axioms PaperP1.SourceProjectiveCurveSmallDegree.line_and_degree_one
 #print axioms PaperP1.SourceProjectiveEmbedding.index_finite
 #print axioms PaperP1.SourceProjectiveEmbedding.coordinate_count
 #print axioms PaperP1.SourceProjectiveEmbedding.coordinate_count_fin

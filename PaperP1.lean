@@ -1880,3 +1880,7 @@ public import PaperP1.Geometry.SourceCurveHeightOneDegree
 public import PaperP1.Algebra.GradedQuotientChartCoordinate
 public import PaperP1.Geometry.SourceCurveProjectivePointData
 public import PaperP1.Geometry.SourceProjectiveCurveDegree
+public import PaperP1.Algebra.RankOneFieldSquares
+public import PaperP1.Geometry.ProjFunctionFieldRankOne
+public import PaperP1.Geometry.SourceProjectiveCurveSmallDegree
+public import PaperP1.Geometry.SourceProjectiveCurveFieldEquiv
