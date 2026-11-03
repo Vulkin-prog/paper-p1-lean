@@ -2119,3 +2119,6 @@ public import PaperP1.Asymptotics.PositiveSeparatedSourceProfileUnderInputs
 public import PaperP1.Model.CountVariance
 public import PaperP1.Asymptotics.PrincipalPairPhaseComparison
 public import PaperP1.Asymptotics.ActualPairPhaseUnderInputs
+public import PaperP1.Model.HomogeneousSourcePairMass
+public import PaperP1.Asymptotics.RawPairResidualUnderInputs
+public import PaperP1.Asymptotics.HomogeneousPairResidualUnderInputs

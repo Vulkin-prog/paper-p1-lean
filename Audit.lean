@@ -5279,6 +5279,11 @@ import PaperP1
 #print axioms PaperP1.HomogeneousChannelMass.beta_le_raw_mass
 #print axioms PaperP1.HomogeneousChannelMass.uniform_principal_upper
 #print axioms PaperP1.HomogeneousChannelMass.principal_positive_phase
+#print axioms PaperP1.HomogeneousPairResidualUnderInputs.mem_families
+#print axioms PaperP1.HomogeneousPairResidualUnderInputs.subset_off_principal
+#print axioms PaperP1.HomogeneousPairResidualUnderInputs.homogeneous_mass_eq
+#print axioms PaperP1.HomogeneousPairResidualUnderInputs.finite_mass_bound
+#print axioms PaperP1.HomogeneousPairResidualUnderInputs.companion_T1_12_pair_residual
 #print axioms PaperP1.HomogeneousSeedPropagation.sum_tuples
 #print axioms PaperP1.HomogeneousSeedPropagation.uniform_probability_mass
 #print axioms PaperP1.HomogeneousSeedPropagation.uniform_nominal_mass
@@ -5766,6 +5771,8 @@ import PaperP1
 #print axioms PaperP1.RationalTriplePrivateMass.uniform_unordered_nonextremal_mass
 #print axioms PaperP1.RationalTriplePrivateProbability.uniform_point_bound
 #print axioms PaperP1.RationalTriplePrivateProbability.nonextremal_point_bound
+#print axioms PaperP1.RawPairResidualUnderInputs.finite_bound
+#print axioms PaperP1.RawPairResidualUnderInputs.uniform_bound
 #print axioms PaperP1.HostRealPowers.le_rpow_div_of_pow_le
 #print axioms PaperP1.RefinedPairActivityUnderBCN.rankSlope_ge_third
 #print axioms PaperP1.RefinedPairActivityUnderBCN.absolute_partition
@@ -7534,6 +7541,12 @@ import PaperP1
 #print axioms PaperP1.HomogeneousRunMass.regular_weight
 #print axioms PaperP1.HomogeneousRunMass.actual_joint_le
 #print axioms PaperP1.HomogeneousRunMass.private_good_pair
+#print axioms PaperP1.HomogeneousSourcePairMass.rank_add_loss
+#print axioms PaperP1.HomogeneousSourcePairMass.probability_pair
+#print axioms PaperP1.HomogeneousSourcePairMass.positive_power_bound
+#print axioms PaperP1.HomogeneousSourcePairMass.probability_positive_loss
+#print axioms PaperP1.HomogeneousSourcePairMass.regular_loss_eq
+#print axioms PaperP1.HomogeneousSourcePairMass.regular_dependent_bound
 #print axioms PaperP1.IncompatiblePairActivity.finite_bound
 #print axioms PaperP1.IncompatiblePairActivity.signed_absolute_gap
 #print axioms PaperP1.IndependentTargetDeficit.pair_rank
