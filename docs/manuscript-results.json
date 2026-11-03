@@ -5119,11 +5119,60 @@
       "source": "main_sections/exact_transfer.tex",
       "line": 417,
       "sha256": "a39682d4bc3841d42875ba888c8ddbed6e30193ed7ee5ef924e2d2d527e9b6f2",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "conditional",
+      "lean_declarations": [
+        "PaperP1.ErasedNullityRelations.relation_nonzero_on",
+        "PaperP1.MinimalRelativeRelations.indices_erase",
+        "PaperP1.MinimalRelativeRelations.nullity_empty",
+        "PaperP1.MinimalRelativeRelations.dimension_identity",
+        "PaperP1.MinimalRelativeRelations.source_union_identity",
+        "PaperP1.MinimalRelativeRelations.zero_iff_compressed",
+        "PaperP1.MinimalRelativeRelations.exists_minimal",
+        "PaperP1.MinimalRelativeRelations.exists_relation",
+        "PaperP1.RelativeWindowFamilies.minimal_witnesses",
+        "PaperP1.RelativeWindowFamilies.covered_enumeration",
+        "PaperP1.RelativeWindowFamilies.family_count",
+        "PaperP1.RelativeWindowFamilies.old_space_bound",
+        "PaperP1.RelativeWindowFamilies.singleton_iff",
+        "PaperP1.RelativeWindowFamilies.unary_families",
+        "PaperP1.RelativeWindowFamilies.unary_mass",
+        "PaperP1.RelativeOriginalWindowMass.uniform_mass",
+        "PaperP1.FixedPairExtensions.mem_extensions",
+        "PaperP1.FixedPairExtensions.exists_seed",
+        "PaperP1.FixedPairExtensions.extension_cover",
+        "PaperP1.FixedPairExtensions.layer_bound",
+        "PaperP1.FixedPairExtensions.remaining_factor_bound",
+        "PaperP1.FixedPairExtensions.mass_bound",
+        "PaperP1.FixedPairExtensions.unary_cost_eq",
+        "PaperP1.FixedPairExtensions.finite_bound",
+        "PaperP1.FixedPairExtensionDeficitUnderInputs.article_15_7",
+        "PaperP1.MinimalRelativeRelations.augmented",
+        "PaperP1.MinimalRelativeRelations.indices",
+        "PaperP1.MinimalRelativeRelations.nullity",
+        "PaperP1.MinimalRelativeRelations.spanFintype",
+        "PaperP1.RelativeWindowFamilies.Witnesses",
+        "PaperP1.RelativeWindowFamilies.families",
+        "PaperP1.FixedPairExtensions.sourceSpace",
+        "PaperP1.FixedPairExtensions.extensions",
+        "PaperP1.FixedPairExtensions.layer",
+        "PaperP1.FixedPairExtensions.deficit"
+      ],
+      "literature_inputs": [
+        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+        "P1-GEO-ORDINARY-SURFACE-COVER",
+        "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0126"
+      ],
+      "notes": "Article Lemma15.7 is now complete CONDITIONALLY on exactly the\nthree already recorded geometric properties used for article11.1:\nchosen-source surface covers, ordinary surface covers and uniform\nnormalized-curve point bounds. No additional analytic premise or\ndesired extension bound is assumed. Main15.7 moves from not_started\nto conditional. Unconditional coverage remains83/167; conditional\ncoverage rises from15 to16, separately. P1-MATH-0126 records a\nminimal-relative-seed simplification of the proof. All original\nmanuscript bytes are preserved and Palomar remains deferred.\n\nErasedNullityRelations proves that a positive actual relation\nspace, whose erasures vanish at designated target indices, has\none actual relation nonzero at every designated target. Other\nreserved components are allowed to vanish. MinimalRelativeRelations\nadds one actual source span as an Option-indexed block, proves\nthe exact relative dimension identity, identifies zero nullity\nwith the existing compressed directness predicate, and extracts\na minimal nonempty target subset and its full-target-support\nrelative relation. The source component may be zero. This handles\nboth internal target dependence and dependence on the old source\nspan with the same actual construction.\n\nRelativeWindowFamilies defines actual unordered target families\nwith a nonzero participating vector at each target, above the\nprescribed source space. It proves coverage by injective actual\nenumerations in the existing conditional half-count population.\nRelativeOriginalWindowMass proves, unconditionally and uniformly,\ncount at most N^(h/2+delta) and independent heterogeneous mass at\nmost N^(-h/2+delta), for any fixed h and any prescribed space\ninside the sum of a fixed number of actual old dyadic windows.\nThe one threshold precedes N,L,all source centers,the prescribed\nspace and the actual target ground set. All exact marginals,\nincluding zero marginals, remain unchanged.\n\nFixedPairExtensions defines precisely the actual U disjoint from\nthe pair e, of cardinality k, for which the compressed source\nspace and the individual new spaces fail directness. Its proved\nmembership equivalence uses the existing literal compressed-block\ndirectness predicate. Every such U contains a minimal relative\nseed of some size1<=h<=k. Actual finite weighted coverage and the\nseed product estimate bound all remaining independent factors by\n(M+1)^k when the total actual marginal mean is at most M. At h=1,\nthe seed mass is exactly the marginal sum over targets meeting\nthe pair span. Summing over ALL dyadic pairs gives precisely the\nprevious IndependentTargetDeficit: pair activity vanishes for\ndirect pairs. No positivity restriction on the actual activity\nor Bernoulli marginals is introduced.\n\nThe exact finite bound is\nD_k <= (M+1)^k * (D_1 + k*Q*A_2),\nwhere Q uniformly bounds every seed mass of size2 through k,\nD_1 is the literal unary deficit and A_2 is the full actual\nabsolute pair activity. The actual mean bound gives M=2*2^C.\nWith delta=epsilon/8 the proved relative half-count gives\nQ=N^(-1+delta); article11.1 gives D_1<=N^(-3/2+delta)\nand A_2<=N^(-2/3+delta). The higher-seed contribution is\ntherefore at most N^(-5/3+2*delta), and the finite k-dependent\nconstant is absorbed into the exponent margin.\n\nFixedPairExtensionDeficitUnderInputs.article_15_7 proves the\nliteral final N^(-3/2+epsilon) bound. The finite geometric caps\nare chosen before the corresponding geometric arguments, then\nthe common threshold precedes every actual N,L and G subset of\nthe dyadic block. The threshold may depend on fixed k,C,epsilon;\nno growing-order or all-cardinality conclusion is asserted.\nThe geometric properties themselves remain unformalized inputs.\nNo new dependency, PaperC port or registration is added.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": ""
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13157 jobs); direct axiom audit passed for 9931 declarations using only propext, Classical.choice and Quot.sound; all 8176 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.74 GiB."
     },
     {
       "label": "p13:transfer:independent-tail",

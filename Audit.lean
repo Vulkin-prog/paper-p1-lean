@@ -96,6 +96,7 @@ import PaperP1
 #print axioms PaperP1.Affine.affineWitness_solves
 #print axioms PaperP1.Affine.compatible_mass_eq_effectiveRate
 #print axioms PaperP1.Affine.effectiveRowSpace_card_pow
+#print axioms PaperP1.ErasedNullityRelations.relation_nonzero_on
 #print axioms PaperP1.ExtensionRankBudget.total_rank_identity
 #print axioms PaperP1.ExtensionRankBudget.increment_le_new_rank
 #print axioms PaperP1.FactorConditionalKernel.oldSpace_map_le
@@ -159,6 +160,13 @@ import PaperP1
 #print axioms PaperP1.IntersectionKernelLift.left_projection
 #print axioms PaperP1.IntersectionKernelLift.right_projection
 #print axioms PaperP1.IntersectionKernelLift.left_projection_injective
+#print axioms PaperP1.MinimalRelativeRelations.indices_erase
+#print axioms PaperP1.MinimalRelativeRelations.nullity_empty
+#print axioms PaperP1.MinimalRelativeRelations.dimension_identity
+#print axioms PaperP1.MinimalRelativeRelations.source_union_identity
+#print axioms PaperP1.MinimalRelativeRelations.zero_iff_compressed
+#print axioms PaperP1.MinimalRelativeRelations.exists_minimal
+#print axioms PaperP1.MinimalRelativeRelations.exists_relation
 #print axioms PaperP1.Affine.subfamilyExtend_has_preimage
 #print axioms PaperP1.Affine.subfamilyKernelExtend_has_preimage
 #print axioms PaperP1.Affine.erasedKernelToFull_surjective
@@ -5508,6 +5516,7 @@ import PaperP1
 #print axioms PaperP1.FixedOrderMassPropagation.extension_subfamilies
 #print axioms PaperP1.FixedOrderMassPropagation.main_6_3_propagation
 #print axioms PaperP1.FixedOrderMassPropagation.original_run_extensions
+#print axioms PaperP1.FixedPairExtensionDeficitUnderInputs.article_15_7
 #print axioms PaperP1.FixedPlaneSplitCount.offset_bounds
 #print axioms PaperP1.FixedPlaneSplitCount.scaled_offset_bounds
 #print axioms PaperP1.FixedPlaneSplitCount.pairFibre_card
@@ -6172,6 +6181,7 @@ import PaperP1
 #print axioms PaperP1.RelativeBlockRelationsCount.zero_count
 #print axioms PaperP1.RelativeBlockRelationsCount.induction_step
 #print axioms PaperP1.RelativeBlockRelationsCount.uniform_count
+#print axioms PaperP1.RelativeOriginalWindowMass.uniform_mass
 #print axioms PaperP1.RelaxedSaturationDegrees.relaxed_neighborhood_bounds
 #print axioms PaperP1.RepeatedLeftDyadicRootHostCount.uniform_hosts
 #print axioms PaperP1.RepeatedLeftSurfaceSubpowerUnderInputs.uniform_subpower
@@ -8036,6 +8046,14 @@ import PaperP1
 #print axioms PaperP1.Model.dyadic_marginal_reference_isProbability
 #print axioms PaperP1.FiniteSplitLp.finiteSum_restrict
 #print axioms PaperP1.FiniteSplitLp.moment_root_eq_lpNorm
+#print axioms PaperP1.FixedPairExtensions.mem_extensions
+#print axioms PaperP1.FixedPairExtensions.exists_seed
+#print axioms PaperP1.FixedPairExtensions.extension_cover
+#print axioms PaperP1.FixedPairExtensions.layer_bound
+#print axioms PaperP1.FixedPairExtensions.remaining_factor_bound
+#print axioms PaperP1.FixedPairExtensions.mass_bound
+#print axioms PaperP1.FixedPairExtensions.unary_cost_eq
+#print axioms PaperP1.FixedPairExtensions.finite_bound
 #print axioms PaperP1.FourthDirectPairSum.pair_mem_direct_iff
 #print axioms PaperP1.FourthDirectPairSum.direct_pair_data
 #print axioms PaperP1.FourthDirectPairSum.union_mem_disconnected
@@ -8618,6 +8636,13 @@ import PaperP1
 #print axioms PaperP1.RelativeSignIndependence.iIndepFun_relativeSigns
 #print axioms PaperP1.RelativeSignIndependence.subcritical_relative_signs_independent
 #print axioms PaperP1.RelativeSignIndependence.subcritical_window_relative_signs_independent
+#print axioms PaperP1.RelativeWindowFamilies.minimal_witnesses
+#print axioms PaperP1.RelativeWindowFamilies.covered_enumeration
+#print axioms PaperP1.RelativeWindowFamilies.family_count
+#print axioms PaperP1.RelativeWindowFamilies.old_space_bound
+#print axioms PaperP1.RelativeWindowFamilies.singleton_iff
+#print axioms PaperP1.RelativeWindowFamilies.unary_families
+#print axioms PaperP1.RelativeWindowFamilies.unary_mass
 #print axioms PaperP1.ReplicaColorEmbedding.used_block
 #print axioms PaperP1.ReplicaColorEmbedding.unused_block
 #print axioms PaperP1.ReplicaColorEmbedding.joint_mass_eq

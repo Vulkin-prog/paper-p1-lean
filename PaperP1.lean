@@ -2297,3 +2297,9 @@ public import PaperP1.Arithmetic.BoundedWidthWindows
 public import PaperP1.Asymptotics.BoundedWidthDenseCount
 public import PaperP1.Arithmetic.CompressedTargetCenters
 public import PaperP1.Asymptotics.DenseCompressedTargetCount
+public import PaperP1.Affine.ErasedNullityRelations
+public import PaperP1.Affine.MinimalRelativeRelations
+public import PaperP1.Model.RelativeWindowFamilies
+public import PaperP1.Asymptotics.RelativeOriginalWindowMass
+public import PaperP1.Model.FixedPairExtensions
+public import PaperP1.Asymptotics.FixedPairExtensionDeficitUnderInputs

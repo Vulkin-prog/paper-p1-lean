@@ -9595,6 +9595,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "531bbc3649c66b87428c11246b48fa34e6f5e192"
+    },
+    {
+      "id": "P1-MATH-0126",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:fixed-deficit",
+        "number": "15.7",
+        "page": 43,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 417,
+        "statement_sha256": "a39682d4bc3841d42875ba888c8ddbed6e30193ed7ee5ef924e2d2d527e9b6f2"
+      },
+      "original_assumption": "The fixed-pair extension proof first separates internal dependence among new windows from minimal dependence on the old pair span.",
+      "finding": "Choose a minimal nonempty subset of the new target indices\nfor which the prescribed source span and those targets fail\ndirectness. Its actual relative addition kernel is positive,\nand deleting any target makes that kernel zero. Hence one actual\nrelation has a nonzero component at EVERY target, while its old\nsource component is allowed to be zero. This single construction\ncovers both cases in the printed proof: an internal relation\namong new targets and a relation meeting the old pair span.\nThe singleton case agrees exactly with the unary target deficit;\nall larger minimal subsets enter the same conditional half-count.\nFinite weighted coverage proves D_k<=(M+1)^k*(D_1+k*Q*A_2)\nwith the actual heterogeneous marginals. This gives an explicit\nfinite combinatorial bridge and avoids a separate preliminary\ntest for internal directness. The argument is fixed-order only.",
+      "impact": "One minimal relative addition-kernel construction covers both cases, with an explicit exact finite heterogeneous weighted bound and no new external premise.",
+      "proposed_revision": "State the minimal-relative-seed lemma and the finite inequality D_k<=(M+1)^k*(D_1+k*Q*A_2). Allow the source component of a full-target-support relation to vanish; retain the fixed-order quantifier.",
+      "evidence": [
+        "PaperP1.ErasedNullityRelations.relation_nonzero_on",
+        "PaperP1.MinimalRelativeRelations.exists_relation",
+        "PaperP1.FixedPairExtensions.exists_seed",
+        "PaperP1.FixedPairExtensions.unary_cost_eq",
+        "PaperP1.FixedPairExtensions.finite_bound",
+        "PaperP1.FixedPairExtensionDeficitUnderInputs.article_15_7"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13157 jobs); direct axiom audit passed for 9931 declarations using only propext, Classical.choice and Quot.sound; all 8176 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.74 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
