@@ -2520,3 +2520,8 @@ public import PaperP1.Algebra.QuadraticCumulantBound
 public import PaperP1.Algebra.FiniteCumulantControl
 public import PaperP1.Asymptotics.FixedHigherCumulantsUnderInputs
 public import PaperP1.Asymptotics.NominalQuadraticFactorialMomentsUnderInputs
+public import PaperP1.Model.CompatibleJointMajorant
+public import PaperP1.Asymptotics.FixedConnectedJointWeightedUnderInputs
+public import PaperP1.Asymptotics.ConnectedJointBoundedNullityTail
+public import PaperP1.Asymptotics.AllCardinalityConnectedJointUnderInputs
+public import PaperP1.Asymptotics.AllCardinalityTotalActivityUnderInputs

@@ -10236,6 +10236,38 @@
         }
       ],
       "validation_commit": "807b74ba10cb4428a441beb1b36cb5b7b3eb6d43"
+    },
+    {
+      "id": "P1-MATH-0142",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:core:low-nullity",
+        "number": "T16.1",
+        "page": 57,
+        "source": "companion_sections/cores.tex",
+        "line": 549,
+        "statement_sha256": "3639c6e9ab75e816a5d899c0eaa98156ac7780ae1c841bdbd61bc4ca8e9276e9"
+      },
+      "original_assumption": "T16.1 bounds only the absolute centered all-cardinality sum below eta compatible ranks.",
+      "finding": "The all-cardinality connected bound in companion T16.1 extends to\nthe larger positive sum of u^|I|*(q(I)+|c(I)|), at the same improved exponent\nmin(1,2-eta), under the same finite geometric properties. The printed theorem\nonly bounds u^|I|*|c(I)|. The new joint bound uses the exact compatible-nullity\nmajorant q(I)<=prod(p_x)*2^rho_*(I), which includes incompatible systems with\nq=0. Its sufficiently large cardinality sector has unconditional exponent\n2-eta, and its fixed finite sector has the completed rate1. Exact\nheterogeneous marginals, zero marginals, arbitrary actual dyadic subgrounds\nand a common threshold over ALL cardinalities are retained. The new positive\nquantity can control activation events directly; it is not obtained by\nassuming a comparison of q with a possibly cancelling centered coefficient.",
+      "impact": "Extends the same all-cardinality exponent min(1,2-eta) to the larger actual joint-plus-absolute-centered mass, enabling direct positive activation bounds.",
+      "proposed_revision": "State the stronger joint-plus-absolute-centered bound in T16.1. Prove its actual compatible joint majorant separately and combine the unconditional participating tail with the finite connected joint rate1. Keep the common-threshold quantifier order explicit.",
+      "evidence": [
+        "PaperP1.CompatibleJointMajorant.pointwise",
+        "PaperP1.CompatibleJointMajorant.weighted_bound",
+        "PaperP1.FixedConnectedJointWeightedUnderInputs.uniform_bound",
+        "PaperP1.ConnectedJointBoundedNullityTail.uniform_bound",
+        "PaperP1.AllCardinalityConnectedJointUnderInputs.uniform_bound",
+        "PaperP1.AllCardinalityTotalActivityUnderInputs.uniform_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13609 jobs); direct axiom audit passed for 10488 declarations using only propext, Classical.choice and Quot.sound; all 8860 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.67 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

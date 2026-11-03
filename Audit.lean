@@ -5159,10 +5159,12 @@ import PaperP1
 #print axioms PaperP1.AllAlignedTargetTripleMass.all_actual_sources
 #print axioms PaperP1.AllAlignedTargetTripleMass.mass_le_sum
 #print axioms PaperP1.AllAlignedTargetTripleMass.uniform_mass
+#print axioms PaperP1.AllCardinalityConnectedJointUnderInputs.uniform_bound
 #print axioms PaperP1.AllCardinalityConnectedUnderInputs.uniform_bound
 #print axioms PaperP1.AllCardinalityConnectedUnderInputs.companion_T16_1
 #print axioms PaperP1.AllCardinalityCoreMassUnderInputs.uniform_bound
 #print axioms PaperP1.AllCardinalityCoreMassUnderInputs.companion_T16_2
+#print axioms PaperP1.AllCardinalityTotalActivityUnderInputs.uniform_bound
 #print axioms PaperP1.AllPairDeficitUnderInputs.article_15_9
 #print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound_succ
 #print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound
@@ -5368,6 +5370,7 @@ import PaperP1
 #print axioms PaperP1.ConnectedBoundedNullityTail.uniform_bound
 #print axioms PaperP1.ConnectedFourthReductionUnderBCN.uniform_reduction
 #print axioms PaperP1.ConnectedIndependent256Budget.uniform_bound
+#print axioms PaperP1.ConnectedJointBoundedNullityTail.uniform_bound
 #print axioms PaperP1.ConnectedSeedCatalogUnderInputs.uniform_mass
 #print axioms PaperP1.ConnectedTailUnderInputs.uniform_tail
 #print axioms PaperP1.ConnectedTailUnderInputs.article_15_12
@@ -5695,6 +5698,7 @@ import PaperP1
 #print axioms PaperP1.FixedChannelMassTheorem.companion_T2_5
 #print axioms PaperP1.FixedChannelPairProbability.uniform_bound
 #print axioms PaperP1.FixedChannelPairProbability.uniform_coarse
+#print axioms PaperP1.FixedConnectedJointWeightedUnderInputs.uniform_bound
 #print axioms PaperP1.FixedConnectedWeightedUnderInputs.uniform_bound
 #print axioms PaperP1.FixedContactCenteredActivity.uniform_bound
 #print axioms PaperP1.FixedCountMomentBoundsUnderBCN.uniform_factorial_upper
@@ -8225,6 +8229,8 @@ import PaperP1
 #print axioms PaperP1.CompatibleChannelEdges.joint_mass_eq
 #print axioms PaperP1.CompatibleChannelEdges.absolute_eq
 #print axioms PaperP1.CompatibleChannelEdges.absolute_comparison
+#print axioms PaperP1.CompatibleJointMajorant.pointwise
+#print axioms PaperP1.CompatibleJointMajorant.weighted_bound
 #print axioms PaperP1.Model.InfiniteStarts.runCompatibleNullity_eq_maximum
 #print axioms PaperP1.Model.InfiniteStarts.runCompatibleNullity_attained
 #print axioms PaperP1.Model.InfiniteStarts.runRelativeNullity_mono
