@@ -1281,3 +1281,62 @@ numbered coverage remains 79/167 and confirmed improvements remain
 107. Palomar remains deferred; original sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12185 jobs, direct axiom audit of 8351 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6144 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.55 GiB.
+
+
+## Actual graded curve quotients, finite module rank and Hilbert comparison
+
+The finite graded-module comparison is now constructed from actual
+homogeneous generators. The component map sends a tuple of coefficients
+in degrees n-w_i to the actual sum of their images times the generators.
+Projection onto homogeneous components proves surjectivity for a
+generating family; actual module independence proves injectivity.
+Both dimension inequalities follow from checked linear maps.
+
+A maximal independent subfamily of finite generators is selected using
+the pinned Mathlib theorem, with a common nonzero module denominator.
+A nonzero homogeneous component of that denominator gives an injection
+from each sufficiently high target piece into the range of a shifted
+free component map. The reverse injection comes from independence.
+Thus the actual target Hilbert function is squeezed between the sums
+of the source functions at n-w_i and n+m-w_i. The subfamily cardinality
+is proved equal to the actual module finrank, and also to the rank of
+compatible fraction-field extensions, rather than supplied as a premise.
+
+If the base function is eventually an+b, the target function differs
+from rank*a*n by a bounded rational error. This numerical slope is
+proved unique. Any polynomial eventually equal to a function with
+that bounded error must be affine: a nonconstant remaining polynomial
+would have unbounded absolute evaluations on natural arguments.
+Consequently, if a target Hilbert polynomial exists and a is positive,
+its degree is proved to be one and its Hilbert multiplicity equals
+rank*a. Neither the polynomial degree nor the multiplicity identity
+is assumed. General existence of the target polynomial remains an
+explicit ordinary theorem argument, with no new axiom.
+
+The actual quotient by any homogeneous ideal is supplied with its
+image grading, decomposition, projection maps and graded quotient map.
+An actual graded algebra map descends to the quotient by a target
+ideal and its actual preimage. The descended map is injective, and
+the given finite homogeneous module generators descend literally.
+
+These constructions are instantiated for homogeneous prime quotients
+of the manuscript source Veronese, using its actual quadratic normal
+basis and radical-count weights. The source quotient and its base
+preimage quotient are domains, their actual pieces are finite
+dimensional, and their module rank is between 1 and 2^k. Their Hilbert
+slope and, when the explicitly required polynomial exists, their
+multiplicity obey the proved rank formula for any established affine
+base Hilbert polynomial. The actual quotient maps, gradings and
+generator identities are included in the checked statements.
+
+The full manuscript curve projection formula is still open. The
+remaining bridges include general Hilbert-polynomial existence for
+these curve quotients, identification of the image with its literal
+plane-equation Veronese, and comparison of cone-module rank with the
+degree-zero projective function-field extension. Scheme dimension,
+hyperplane-bundle comparison, low-degree curve geometry and external
+host-count inputs also remain open. T1.7 stays in_progress; numbered
+coverage remains 79/167, confirmed improvements remain 107 and Palomar
+remains deferred. Original manuscript sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12203 jobs, direct axiom audit of 8413 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6229 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.53 GiB.

@@ -1826,3 +1826,12 @@ public import PaperP1.Algebra.PlaneCurveHilbert
 public import PaperP1.Algebra.GradedVeronesePieceEquiv
 public import PaperP1.Algebra.GradedVeroneseHilbertPolynomial
 public import PaperP1.Algebra.PlaneCurveVeroneseHilbert
+public import PaperP1.Algebra.GradedModulePieceMap
+public import PaperP1.Algebra.HomogeneousQuotientGrading
+public import PaperP1.Algebra.GradedQuotientModuleGenerators
+public import PaperP1.Algebra.HomogeneousDenominator
+public import PaperP1.Algebra.FreeApproximationRank
+public import PaperP1.Algebra.FiniteGradedModuleSandwich
+public import PaperP1.Algebra.LinearHilbertGrowth
+public import PaperP1.Algebra.FiniteGradedLinearGrowth
+public import PaperP1.Algebra.SourceCurveQuotient
