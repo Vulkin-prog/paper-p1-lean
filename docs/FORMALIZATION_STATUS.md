@@ -3,6 +3,8 @@
 Stage: **exact probability identities and uniform arithmetic foundations**, 3 November 2026.
 Neither document is fully formalized.
 
+Main15.6 is complete unconditionally at all cardinalities, uniformly over the full raw source span.
+
 Companion T22.1 is complete unconditionally, with a stronger independent exponent1.
 
 Article15.7 is complete conditionally for every fixed extension size, under the existing geometry.
@@ -18,7 +20,7 @@ Article11.1–11.3 and15.1, and companion T7.1, now have complete conditional so
 Article Theorem 3.3 now has all five literal conclusions proved **conditionally** on the explicitly recorded geometric properties. See [complete pair-profile alignment](COMPLETE_PAIR_PROFILE_ALIGNMENT.md). This is not an unconditional completion or a Palomar registration.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **84 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 6.3, 9.1, 13.3, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorems 10.1, 13.1, 13.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Proposition T9.5, Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Propositions T1.14, T22.7 and T17.2, and Lemma T20.4 and Propositions T20.6, T1.16 and T21.4. Article Lemma15.4 is also complete.
+- Numbered results completed: **85 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 6.3, 9.1, 13.3, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorems 10.1, 13.1, 13.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Proposition T9.5, Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Propositions T1.14, T22.7 and T17.2, and Lemma T20.4 and Propositions T20.6, T1.16 and T21.4. Article Lemma15.4 is also complete.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -46,7 +48,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **10010 audited theorem/lemma declarations**. This
+- The project currently has **10026 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -12891,3 +12893,83 @@ No new external input, dependency download, PaperC port,
 manuscript-byte change or Palomar registration is added.
 
 Verified under Lean v4.36.0-rc2: full build passed (13205 jobs); direct axiom audit passed for 10010 declarations using only propext, Classical.choice and Quot.sound; all 8276 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.63 GiB.
+
+
+## Unconditional completion of the uniform independent deficit
+
+Main Lemma15.6 is now proved UNCONDITIONALLY for the literal
+independent deficit summed over ALL cardinalities. One threshold
+is chosen before N,L,all actual dyadic source and target sets,
+every source set of cardinality at most the fixed s, and every
+subspace W of the FULL RAW source value span. The result is
+therefore stronger than restricting W to the effective source
+span. The ground set G may be any actual subset of the dyadic
+block; targets are exactly G minus the sources.
+
+IndependentExtensionDeficit.Direct means literal injectivity of
+the addition map from W and the individual effective spaces S_x.
+Its equivalence with zero relative nullity is proved. The finite
+population is exactly every target subset for which this map
+is not injective, with no restriction on cardinality. Its weight
+is exactly u^card(U)*product_{x in U} infiniteMarginal(x,L),
+proved equal to product_{x in U}(u*infiniteMarginal(x,L)). Zero
+marginals are retained. These are independent product weights,
+not conditional extension probabilities or positive joint weights.
+
+IntersectionExceptional proves that a nonzero vector belonging
+both to an actual effective window space and to the full old
+raw-value span forces at least two supported physical positions.
+The even coefficient vector is lifted from the actual effective
+space; its nonempty binary support has even cardinality. Every
+selected coordinate lies in the real old prime pool by the
+already proved private-prime argument. Thus its center belongs
+to the literal BranchingExceptional.badStarts set. The effective
+source span is proved to lie in the raw source-value span. The
+latter has an actual finite enumeration from the full coefficient
+map, so arbitrary source subspaces can be used without assuming
+local regularity or a dimension formula for W.
+
+For each non-direct U, choose a minimal relative dependent J
+inside U. A genuine relation is nonzero in every target of J;
+its sum lies in W. Choose x in J and put A=J minus x. The x
+component is nonzero and lies in the full raw span of sources
+union A. Hence x is an actual exceptional start relative to A,
+and insert(x,A) is a subset of U. This covers internal target
+dependence as well as dependence meeting W. The W component
+may vanish, and no nonzero-source-component condition is added.
+
+AllCardinalitySeedBound proves the exact finite identity for
+all supersets of a seed D inside G:
+  sum_{D subset U subset G} product_U w
+    = product_D w * product_{G minus D}(1+w).
+ExceptionalSeedBound then bounds every covered family by
+  exp(sum_G w) * sum_{A subset G} product_A w * badRow(A).
+If badRow(A)<=D*product_A a, a_x>=1, and
+sum_G w_x*a_x<=K, this is at most D*exp(2K).
+This is a pure finite unordered argument; no enumeration by
+orders, factorial normalization or growing-order constants
+are used in this closure. Overcounting is justified solely by
+nonnegative finite sums, including overlaps between witnesses.
+
+UniformIndependentDeficit.finite_bound applies this identity
+to the actual source-relative seeds. The published arithmetic
+row budget supplies D=N^(-1/2+eta), a_x=windowEuler(N,L,x),
+and K=3*M*exp(2), where M=u*2*2^C is a uniform actual marginal
+cap. These inputs hold before arbitrarily large preceding sets A.
+The already proved first moment bounds K independently of N,L.
+With eta=epsilon/2, the fixed factor exp(2K) is absorbed using
+a second epsilon/2. UniformIndependentDeficit.uniform_bound
+therefore proves the full printed N^(-1/2+epsilon) estimate,
+uniformly in sources and W, at every cardinality simultaneously.
+Contacts and local defects remain in the exceptional row; no
+extra contact deletion or correction term is necessary.
+
+Main15.6 moves from in_progress to proved. Numbered unconditional
+coverage rises from84 to85/167;16 conditional results remain
+separate. P1-MATH-0129 records the unordered finite closure and
+the stronger raw-source-space scope. This result does not prove
+the compressed clause of15.8 or the pair-weighted total15.9.
+No new geometric input, dependency download, PaperC port,
+manuscript-byte change or Palomar registration is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (13215 jobs); direct axiom audit passed for 10026 declarations using only propext, Classical.choice and Quot.sound; all 8298 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.60 GiB.

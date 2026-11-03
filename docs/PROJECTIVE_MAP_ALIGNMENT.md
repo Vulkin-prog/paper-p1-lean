@@ -5487,3 +5487,83 @@ No new external input, dependency download, PaperC port,
 manuscript-byte change or Palomar registration is added.
 
 Verified under Lean v4.36.0-rc2: full build passed (13205 jobs); direct axiom audit passed for 10010 declarations using only propext, Classical.choice and Quot.sound; all 8276 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.63 GiB.
+
+
+## Unconditional completion of the uniform independent deficit
+
+Main Lemma15.6 is now proved UNCONDITIONALLY for the literal
+independent deficit summed over ALL cardinalities. One threshold
+is chosen before N,L,all actual dyadic source and target sets,
+every source set of cardinality at most the fixed s, and every
+subspace W of the FULL RAW source value span. The result is
+therefore stronger than restricting W to the effective source
+span. The ground set G may be any actual subset of the dyadic
+block; targets are exactly G minus the sources.
+
+IndependentExtensionDeficit.Direct means literal injectivity of
+the addition map from W and the individual effective spaces S_x.
+Its equivalence with zero relative nullity is proved. The finite
+population is exactly every target subset for which this map
+is not injective, with no restriction on cardinality. Its weight
+is exactly u^card(U)*product_{x in U} infiniteMarginal(x,L),
+proved equal to product_{x in U}(u*infiniteMarginal(x,L)). Zero
+marginals are retained. These are independent product weights,
+not conditional extension probabilities or positive joint weights.
+
+IntersectionExceptional proves that a nonzero vector belonging
+both to an actual effective window space and to the full old
+raw-value span forces at least two supported physical positions.
+The even coefficient vector is lifted from the actual effective
+space; its nonempty binary support has even cardinality. Every
+selected coordinate lies in the real old prime pool by the
+already proved private-prime argument. Thus its center belongs
+to the literal BranchingExceptional.badStarts set. The effective
+source span is proved to lie in the raw source-value span. The
+latter has an actual finite enumeration from the full coefficient
+map, so arbitrary source subspaces can be used without assuming
+local regularity or a dimension formula for W.
+
+For each non-direct U, choose a minimal relative dependent J
+inside U. A genuine relation is nonzero in every target of J;
+its sum lies in W. Choose x in J and put A=J minus x. The x
+component is nonzero and lies in the full raw span of sources
+union A. Hence x is an actual exceptional start relative to A,
+and insert(x,A) is a subset of U. This covers internal target
+dependence as well as dependence meeting W. The W component
+may vanish, and no nonzero-source-component condition is added.
+
+AllCardinalitySeedBound proves the exact finite identity for
+all supersets of a seed D inside G:
+  sum_{D subset U subset G} product_U w
+    = product_D w * product_{G minus D}(1+w).
+ExceptionalSeedBound then bounds every covered family by
+  exp(sum_G w) * sum_{A subset G} product_A w * badRow(A).
+If badRow(A)<=D*product_A a, a_x>=1, and
+sum_G w_x*a_x<=K, this is at most D*exp(2K).
+This is a pure finite unordered argument; no enumeration by
+orders, factorial normalization or growing-order constants
+are used in this closure. Overcounting is justified solely by
+nonnegative finite sums, including overlaps between witnesses.
+
+UniformIndependentDeficit.finite_bound applies this identity
+to the actual source-relative seeds. The published arithmetic
+row budget supplies D=N^(-1/2+eta), a_x=windowEuler(N,L,x),
+and K=3*M*exp(2), where M=u*2*2^C is a uniform actual marginal
+cap. These inputs hold before arbitrarily large preceding sets A.
+The already proved first moment bounds K independently of N,L.
+With eta=epsilon/2, the fixed factor exp(2K) is absorbed using
+a second epsilon/2. UniformIndependentDeficit.uniform_bound
+therefore proves the full printed N^(-1/2+epsilon) estimate,
+uniformly in sources and W, at every cardinality simultaneously.
+Contacts and local defects remain in the exceptional row; no
+extra contact deletion or correction term is necessary.
+
+Main15.6 moves from in_progress to proved. Numbered unconditional
+coverage rises from84 to85/167;16 conditional results remain
+separate. P1-MATH-0129 records the unordered finite closure and
+the stronger raw-source-space scope. This result does not prove
+the compressed clause of15.8 or the pair-weighted total15.9.
+No new geometric input, dependency download, PaperC port,
+manuscript-byte change or Palomar registration is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (13215 jobs); direct axiom audit passed for 10026 declarations using only propext, Classical.choice and Quot.sound; all 8298 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.60 GiB.

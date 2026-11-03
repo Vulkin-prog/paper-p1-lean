@@ -2327,3 +2327,8 @@ public import PaperP1.Asymptotics.IndependentExposurePrimePool
 public import PaperP1.Arithmetic.EulerPrimeCovers
 public import PaperP1.Model.IndependentExposureEulerBudget
 public import PaperP1.Asymptotics.UniformIndependentExposureBudget
+public import PaperP1.Combinatorics.AllCardinalitySeedBound
+public import PaperP1.Combinatorics.ExceptionalSeedBound
+public import PaperP1.Arithmetic.IntersectionExceptional
+public import PaperP1.Model.IndependentExtensionDeficit
+public import PaperP1.Asymptotics.UniformIndependentDeficit

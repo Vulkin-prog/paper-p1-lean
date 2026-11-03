@@ -3234,6 +3234,10 @@ import PaperP1
 #print axioms PaperP1.IntegerOffsetCRT.common_modEq
 #print axioms PaperP1.IntegerOffsetCRT.coordinate_card
 #print axioms PaperP1.IntegerOffsetCRT.box_card
+#print axioms PaperP1.IntersectionExceptional.of_intersection
+#print axioms PaperP1.IntersectionExceptional.oldSpan_mono
+#print axioms PaperP1.IntersectionExceptional.effective_le_raw
+#print axioms PaperP1.IntersectionExceptional.span_le_raw
 #print axioms PaperP1.Channels.card_Ico_modEq_le_ceil_length
 #print axioms PaperP1.Channels.card_Ico_modEq_cast_le_div_add_one
 #print axioms PaperP1.Channels.card_nat_Ico_modEq_cast_le_div_add_one
@@ -6526,6 +6530,8 @@ import PaperP1
 #print axioms PaperP1.TwoTargetWeakUpperCount.uniform_pairs
 #print axioms PaperP1.uniformLittleOOn_zero
 #print axioms PaperP1.UniformGraphCardinalityTail.uniform_tail
+#print axioms PaperP1.UniformIndependentDeficit.finite_bound
+#print axioms PaperP1.UniformIndependentDeficit.uniform_bound
 #print axioms PaperP1.UniformIndependentExposureBudget.uniform_row_constant
 #print axioms PaperP1.UniformIndependentExposureBudget.uniform_budget
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
@@ -6829,6 +6835,9 @@ import PaperP1
 #print axioms PaperP1.WindowRelationMonotone.sum_extend
 #print axioms PaperP1.WindowRelationMonotone.relationExtend_injective
 #print axioms PaperP1.WindowRelationMonotone.window_relation_finrank_mono
+#print axioms PaperP1.AllCardinalitySeedBound.superset_sum
+#print axioms PaperP1.AllCardinalitySeedBound.superset_bound
+#print axioms PaperP1.AllCardinalitySeedBound.cover_bound
 #print axioms PaperP1.AllFamilyEnumerations.tupleSet_comp_perm
 #print axioms PaperP1.AllFamilyEnumerations.factorial_count_le
 #print axioms PaperP1.BinaryLabelRepresentations.minimal_representation
@@ -6898,6 +6907,9 @@ import PaperP1
 #print axioms PaperP1.DisjointSixVertexBudget.surviving_size
 #print axioms PaperP1.DisjointSixVertexBudget.six_vertex_budget
 #print axioms PaperP1.DisjointSubsetIncidence.split_sum
+#print axioms PaperP1.ExceptionalSeedBound.seed_mass
+#print axioms PaperP1.ExceptionalSeedBound.cover_mass
+#print axioms PaperP1.ExceptionalSeedBound.constant_bound
 #print axioms PaperP1.ExposureOrder.total_newWeight
 #print axioms PaperP1.ExposureOrder.newWeight_last_zero
 #print axioms PaperP1.ExposureOrder.exposure_identity
@@ -8186,6 +8198,10 @@ import PaperP1
 #print axioms PaperP1.IndependentExposureEulerBudget.first_moment
 #print axioms PaperP1.IndependentExposureEulerBudget.weighted_first_moment
 #print axioms PaperP1.IndependentExposureEulerBudget.weighted_bad_row
+#print axioms PaperP1.IndependentExtensionDeficit.mem_families
+#print axioms PaperP1.IndependentExtensionDeficit.direct_iff_nullity
+#print axioms PaperP1.IndependentExtensionDeficit.deficit_eq_product_weights
+#print axioms PaperP1.IndependentExtensionDeficit.exists_exceptional_seed
 #print axioms PaperP1.IndependentFullSupportTail.mem_families
 #print axioms PaperP1.IndependentFullSupportTail.witnesses
 #print axioms PaperP1.IndependentFullSupportTail.primitive_fullSupport
