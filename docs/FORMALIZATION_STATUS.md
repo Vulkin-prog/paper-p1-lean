@@ -3,6 +3,8 @@
 Stage: **exact probability identities and uniform arithmetic foundations**, 3 November 2026.
 Neither document is fully formalized.
 
+Main18.2 is complete conditionally: the literal homogeneous rank sum includes every incompatible regular separated nonaligned pair, and the actual covariance consequence follows from a sharp heterogeneous finite bound. Both estimates also hold on every distinct nonaligned dyadic ordered subfamily.
+
 Main1.4,18.1 and18.3 are complete conditionally: the explicit two-channel approximation and every fixed-height original-law hierarchy, including moving TV equivalents and optimal powers, need only the first rate1 quadratic approximation. The explicit fixed-height Hermite part is also complete; main19.1 stays in progress for its exact-parameter4/3 rate.
 
 The optimal-power lower inequality N^(-4/3-epsilon) of main16.2 and main1.1 is proved under the existing finite geometric inputs, for the actual full law and exact quadratic reference. Both rows remain in progress because their optimal upper-rate/optimality identification remains open.
@@ -96,7 +98,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **10816 audited theorem/lemma declarations**. This
+- The project currently has **10823 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -16596,3 +16598,70 @@ is introduced. Coverage increases from87 unconditional35 conditional
 to87 unconditional38 conditional; confirmed improvements151.
 
 Verified under Lean v4.36.0-rc2: full build passed (13837 jobs); direct axiom audit passed for 10816 declarations using only propext, Classical.choice and Quot.sound; all 9288 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.09 GiB.
+
+
+## Complete homogeneous weighted nonaligned pair statement
+
+Main Lemma18.2 is complete conditionally, including its literal
+HOMOGENEOUS rank-weight sum and actual covariance consequence:
+
+  sum_(ordered regular separated nonaligned)(2^rho-1)<=N^(1+epsilon),
+  sum_(same ordered pairs)|q(x,y)-p_x*p_y|<=N^(-1+epsilon).
+
+The first statement is proved for the actual effective relation nullity,
+without any compatibility filter or actual probability weight. A separate
+exact regular-rank identity also expresses it with the arithmetic full
+source rank deficit pairLoss=2L-rank(S_x+S_y). The literal source population
+regularPairs uses both actual regular-start memberships, the strict
+integer absolute separation |x-y|>L, and the source nonalignment predicate.
+No affine-incompatible or zero-joint-probability pair is discarded.
+
+The proof composes already established arithmetic results, rather than
+introducing a new geometric estimate. NonalignedSourceResidualUnderInputs
+already bounds the GENUINE positive arithmetic weight2^pairLoss-1 over
+ANY actual dyadic nonaligned ordered family, including all local kernels.
+It is not a bound merely on compatible probabilities. Effective relative
+nullity is at most that full source loss, and equals it on regular starts.
+Fixed smaller margins and constant absorption give the source homogeneous
+bound after one common threshold. This closes the previously missing
+statement/population bridge in the main18.2 ledger row.
+
+PairRankCovarianceBound additionally proves the exact finite inequality
+for EVERY actual two-element original family e at positive length:
+
+  |c(e)| <=prod_(x in e)p_x * (2^rho(e)-1).
+
+If any marginal is zero, its actual centered coefficient is zero. If the
+joint is positive, the exact affine formula gives equality. If the joint
+is zero but both marginals are positive, nullity cannot vanish by exact
+direct factorization. Thus2^rho-1>=1 and bounds its negative coefficient.
+This handles incompatible pairs explicitly and retains heterogeneous
+marginals. No joint compatibility premise is imposed.
+
+In fact uniform_families proves BOTH the homogeneous bound and actual
+covariance bound for EVERY finite ordered distinct nonaligned dyadic
+family, even without regularity or a separation restriction. It uses the
+unconditional actual marginal cap M/N, multiplies the genuine finite
+homogeneous sum by (M/N)^2, and proves the exact power cancellation.
+Specializing to the original regular separated population gives all
+source conclusions. The rank-deficit specialization proves the exact
+agreement of both rank conventions on that population.
+
+One finite parameter bundle uses the SAME chosen-source surface,
+ordinary two/three-radical surface and normalized-curve properties,
+at sizeCap(epsilon/32). Its choice precedes N, every critical L and
+EVERY actual finite ordered family. No target rank sum, covariance bound,
+BCN premise, new literature theorem or global axiom is supplied.
+
+This is a proof assembly and exact scope extension of the already
+recorded P1-MATH-0113 weighted arithmetic source improvement. It does not
+create a new improvement identifier. The stronger fixed-height hierarchy
+already completed independently remains valid; main18.2 now also has
+its own exact homogeneous source statement. The asymmetric compressed
+profile T1.10, optimal triple41/30 and optimal exact-reference law upper
+rate remain open. Main18.2 moves from not_started to conditional;
+coverage is87/167 unconditional and39 conditional, with151 confirmed
+improvements. Original source bytes, dependency pins and the later
+Palomar milestone are preserved.
+
+Verified under Lean v4.36.0-rc2: full build passed (13841 jobs); direct axiom audit passed for 10823 declarations using only propext, Classical.choice and Quot.sound; all 9297 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.07 GiB.

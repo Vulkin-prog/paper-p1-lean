@@ -6960,6 +6960,10 @@ import PaperP1
 #print axioms PaperP1.WeakAlignmentUnitCount.uniform_weak_bound
 #print axioms PaperP1.WeakPairActivityAsymptotic.critical_binary_power
 #print axioms PaperP1.WeakPairActivityAsymptotic.uniform_activity
+#print axioms PaperP1.WeightedNonalignedPairsUnderInputs.uniform_families
+#print axioms PaperP1.WeightedNonalignedPairsUnderInputs.regular_nullity_eq_loss
+#print axioms PaperP1.WeightedNonalignedPairsUnderInputs.article_18_2
+#print axioms PaperP1.WeightedNonalignedPairsUnderInputs.article_18_2_rank_deficit
 #print axioms PaperP1.WeightedPrimitiveTail.uniform_tail
 #print axioms PaperP1.WideQuadraticKernelCount.three_exponent_bounds
 #print axioms PaperP1.WideQuadraticKernelCount.uniform_affine_count
@@ -9099,6 +9103,9 @@ import PaperP1
 #print axioms PaperP1.PairPrimitiveCompression.pair_in_block
 #print axioms PaperP1.PairPrimitiveCompression.connected
 #print axioms PaperP1.PairPrimitiveCompression.rank_dichotomy
+#print axioms PaperP1.PairRankCovarianceBound.weight_nonneg
+#print axioms PaperP1.PairRankCovarianceBound.coefficient_bound
+#print axioms PaperP1.PairRankCovarianceBound.pair_cap
 #print axioms PaperP1.PairRowActivity.marginal_le_one
 #print axioms PaperP1.PairRowActivity.pair_absolute_bound
 #print axioms PaperP1.PairRowActivity.pair_absolute_le_marginal

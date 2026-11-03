@@ -2639,3 +2639,5 @@ public import PaperP1.Asymptotics.FixedHeightQuadraticLawUnderInputs
 public import PaperP1.Asymptotics.FixedHeightHierarchyUnderInputs
 public import PaperP1.Asymptotics.TwoChannelReferenceUnderInputs
 public import PaperP1.Asymptotics.ExplicitHermiteLawUnderInputs
+public import PaperP1.Model.PairRankCovarianceBound
+public import PaperP1.Asymptotics.WeightedNonalignedPairsUnderInputs

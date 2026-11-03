@@ -7020,11 +7020,35 @@
       "source": "main_sections/channel_hierarchy.tex",
       "line": 66,
       "sha256": "89fcd3dd7290f5d2e9c88246584d46c192af2ee1acc31acd98ba0b867a0901be",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "conditional",
+      "lean_declarations": [
+        "PaperP1.PairRankCovarianceBound.weight_nonneg",
+        "PaperP1.PairRankCovarianceBound.coefficient_bound",
+        "PaperP1.PairRankCovarianceBound.pair_cap",
+        "PaperP1.WeightedNonalignedPairsUnderInputs.uniform_families",
+        "PaperP1.WeightedNonalignedPairsUnderInputs.regular_nullity_eq_loss",
+        "PaperP1.WeightedNonalignedPairsUnderInputs.article_18_2",
+        "PaperP1.WeightedNonalignedPairsUnderInputs.article_18_2_rank_deficit",
+        "PaperP1.PairRankCovarianceBound.rankWeight",
+        "PaperP1.WeightedNonalignedPairsUnderInputs.regularPairs"
+      ],
+      "literature_inputs": [
+        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+        "P1-GEO-ORDINARY-SURFACE-COVER",
+        "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0113"
+      ],
+      "notes": "Main Lemma18.2 is complete conditionally, including its literal\nHOMOGENEOUS rank-weight sum and actual covariance consequence:\n\n  sum_(ordered regular separated nonaligned)(2^rho-1)<=N^(1+epsilon),\n  sum_(same ordered pairs)|q(x,y)-p_x*p_y|<=N^(-1+epsilon).\n\nThe first statement is proved for the actual effective relation nullity,\nwithout any compatibility filter or actual probability weight. A separate\nexact regular-rank identity also expresses it with the arithmetic full\nsource rank deficit pairLoss=2L-rank(S_x+S_y). The literal source population\nregularPairs uses both actual regular-start memberships, the strict\ninteger absolute separation |x-y|>L, and the source nonalignment predicate.\nNo affine-incompatible or zero-joint-probability pair is discarded.\n\nThe proof composes already established arithmetic results, rather than\nintroducing a new geometric estimate. NonalignedSourceResidualUnderInputs\nalready bounds the GENUINE positive arithmetic weight2^pairLoss-1 over\nANY actual dyadic nonaligned ordered family, including all local kernels.\nIt is not a bound merely on compatible probabilities. Effective relative\nnullity is at most that full source loss, and equals it on regular starts.\nFixed smaller margins and constant absorption give the source homogeneous\nbound after one common threshold. This closes the previously missing\nstatement/population bridge in the main18.2 ledger row.\n\nPairRankCovarianceBound additionally proves the exact finite inequality\nfor EVERY actual two-element original family e at positive length:\n\n  |c(e)| <=prod_(x in e)p_x * (2^rho(e)-1).\n\nIf any marginal is zero, its actual centered coefficient is zero. If the\njoint is positive, the exact affine formula gives equality. If the joint\nis zero but both marginals are positive, nullity cannot vanish by exact\ndirect factorization. Thus2^rho-1>=1 and bounds its negative coefficient.\nThis handles incompatible pairs explicitly and retains heterogeneous\nmarginals. No joint compatibility premise is imposed.\n\nIn fact uniform_families proves BOTH the homogeneous bound and actual\ncovariance bound for EVERY finite ordered distinct nonaligned dyadic\nfamily, even without regularity or a separation restriction. It uses the\nunconditional actual marginal cap M/N, multiplies the genuine finite\nhomogeneous sum by (M/N)^2, and proves the exact power cancellation.\nSpecializing to the original regular separated population gives all\nsource conclusions. The rank-deficit specialization proves the exact\nagreement of both rank conventions on that population.\n\nOne finite parameter bundle uses the SAME chosen-source surface,\nordinary two/three-radical surface and normalized-curve properties,\nat sizeCap(epsilon/32). Its choice precedes N, every critical L and\nEVERY actual finite ordered family. No target rank sum, covariance bound,\nBCN premise, new literature theorem or global axiom is supplied.\n\nThis is a proof assembly and exact scope extension of the already\nrecorded P1-MATH-0113 weighted arithmetic source improvement. It does not\ncreate a new improvement identifier. The stronger fixed-height hierarchy\nalready completed independently remains valid; main18.2 now also has\nits own exact homogeneous source statement. The asymmetric compressed\nprofile T1.10, optimal triple41/30 and optimal exact-reference law upper\nrate remain open. Main18.2 moves from not_started to conditional;\ncoverage is87/167 unconditional and39 conditional, with151 confirmed\nimprovements. Original source bytes, dependency pins and the later\nPalomar milestone are preserved.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": "",
+          "literature_inputs": []
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13841 jobs); direct axiom audit passed for 10823 declarations using only propext, Classical.choice and Quot.sound; all 9297 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.07 GiB."
     },
     {
       "label": "p13:channels:height-five",
