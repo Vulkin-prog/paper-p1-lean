@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **9257 audited theorem/lemma declarations**. This
+- The project currently has **9284 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -10184,3 +10184,61 @@ Original source bytes, compiler and dependencies are unchanged,
 and Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (12755 jobs); direct axiom audit passed for 9257 declarations using only propext, Classical.choice and Quot.sound; all 7320 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.65 GiB.
+
+
+## Positive arithmetic weights and actual unsigned private channels
+
+The positive arithmetic profile now has an actual unsigned
+unit enumeration and an unconditional private-channel theorem.
+SourcePairPositiveWeight retains the literal source rank
+pairLoss=2L-dim(S_x+S_y), including both local kernels, and
+identifies its positive weight with the dimension of the actual
+even unit relation space on private normalized pairs. There is
+no affine-compatibility or positive-probability restriction.
+A separate setWeight uses the full arithmetic rank on finite
+families; its pair specialization is proved exactly.
+
+The existing canonical selected-word equivalence is used to
+count every nonzero even unit relation. Its literal finite
+cardinality is 2^(number of units-1)-1. Reindexing by actual
+source pairs and endpoint placements gives both orientations
+of the unsigned host aggregate, with the actual coefficient
+2*(2a-b)/(ab) and the finite U_ab(L), with endpoint error at
+most 6*(L+1)*U_ab(L). No signed probability estimate is used
+to infer this positive count, so incompatible principal pairs
+are fully retained.
+
+PrivateChannelPositiveMass.channelWeight is the sum of the
+actual 2^pairLoss-1 over the actual private channelSources.
+Its exact deletion identity subtracts precisely the nonprivate
+unit aggregate. One-unit or zero-unit terms vanish by their
+proved even-kernel dimension. The finite error is bounded by
+6*(L+1)*U_ab(L) plus twice the actual nonprivate source count
+times 2^((L+1)/b). Combining the proved square-root nonprivate
+count, critical word bound and polynomial absorption yields
+PrivateChannelPositiveProfile.uniform_error:
+|channelWeight-N*coefficient(a,b)*U_ab(L)|
+<=N^(1/2+1/b+epsilon), uniformly for fixed positive coprime
+interior a<b<2a and 2b(L+1)<=H<=D(L+1). The coefficient is
+therefore literally 1/3 in both principal channels. All these
+results are unconditional.
+
+A separate unconditional uniform source-power theorem on the
+literal enlarged alignments gives 2^pairLoss<=N^(1/b0+epsilon)
+for every height at least b0, up to (L+1)^3. The zero-exact-unit
+version gives N^epsilon. The derivation uses the already proved
+full source rank bounds and keeps local kernels. It introduces
+no determinant or point-count assumption.
+
+The remaining aligned residual populations, strict separated
+source placement, disjoint principal-channel decomposition and
+full phase-asymptotic conclusions are still to be assembled.
+Thus these auxiliary theorems do not complete main 3.3; its
+signed separated profile remains conditional on the explicit
+geometric properties. Proved numbered coverage stays 79/167
+and confirmed mathematical improvements stay 113. No new
+external input, manuscript correction or improvement identifier
+is introduced. Original source bytes, compiler and dependency
+pins are unchanged; Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (12767 jobs); direct axiom audit passed for 9284 declarations using only propext, Classical.choice and Quot.sound; all 7354 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.62 GiB.

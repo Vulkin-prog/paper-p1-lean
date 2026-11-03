@@ -2104,3 +2104,9 @@ public import PaperP1.Asymptotics.SignedSourceProfileUnderInputs
 public import PaperP1.Combinatorics.PairSeparation
 public import PaperP1.Asymptotics.SourcePairCloseWeight
 public import PaperP1.Asymptotics.SignedSeparatedSourceProfileUnderInputs
+public import PaperP1.Arithmetic.UnsignedUnitWordHosts
+public import PaperP1.Model.UnsignedUnitFourierAggregate
+public import PaperP1.Model.SourcePairPositiveWeight
+public import PaperP1.Asymptotics.AlignedSourcePairPowers
+public import PaperP1.Model.PrivateChannelPositiveMass
+public import PaperP1.Asymptotics.PrivateChannelPositiveProfile
