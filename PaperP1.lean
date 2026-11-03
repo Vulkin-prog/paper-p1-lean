@@ -1909,3 +1909,9 @@ public import PaperP1.Geometry.SourceCurveEmbeddingCoordinates
 public import PaperP1.Geometry.SourceEmbeddedCurveDegreeBound
 public import PaperP1.Geometry.SourceEmbeddedCurvePointData
 public import PaperP1.Geometry.SourceProjectiveCurveEmbeddingHilbert
+public import PaperP1.Algebra.RationalInterpolationUniqueness
+public import PaperP1.Algebra.RationalInterpolationKernel
+public import PaperP1.Algebra.SmallIntegerKernelCodimensionOne
+public import PaperP1.Algebra.IntegralInterpolationPolynomials
+public import PaperP1.Algebra.IntegralRationalInterpolation
+public import PaperP1.Algebra.UniformRationalInterpolation

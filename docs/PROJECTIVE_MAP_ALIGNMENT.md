@@ -1044,3 +1044,45 @@ stays 79/167, confirmed mathematical improvements stay 107, and Palomar
 remains deferred. Original manuscript sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12361 jobs, direct axiom audit of 8648 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6529 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.08 GiB.
+
+
+## P1-MATH-0108 — Explicit grid-uniform rational interpolation
+
+A bounded-degree rational function is now proved to be determined by
+more than twice its degree many distinct abscissae. The cross product
+of two interpolating polynomial pairs vanishes by its actual degree
+and roots. For a reduced pair of exact maximum degree a with nonzero
+denominator, every other interpolating pair of degrees at most a is
+an actual constant scalar multiple. The actual linear interpolation
+constraint map on the bounded-polynomial pair space is constructed;
+its kernel is proved to equal the span of that pair and has dimension
+one.
+
+An elementary bounded integer-kernel construction is proved for every
+integer matrix with t rows and t+1 columns: entries of absolute value
+at most H yield a nonzero integer kernel vector whose coordinates have
+absolute value at most (3(t+1)H)^t. This extends the existing explicit
+pigeonhole proof to the codimension-one regime needed for interpolation.
+
+For 2a+1 integer grid points with distinct abscissae and both coordinates
+of absolute value at most B, B at least one, the actual interpolation
+matrix has 2a+2 columns and entry height at most B^(a+1). Its bounded
+integer kernel gives actual integral polynomials P,Q, Q nonzero, of
+degrees at most a, with every coefficient bounded by
+(3(2a+2))^(2a+1) B^((a+1)(2a+1)). If a reduced rational pair of exact
+degree a fits that grid, these integral polynomials map to a common
+nonzero rational scalar multiple of that pair. Their rational images
+are proved coprime and retain exact maximum degree a. The coefficient
+bound therefore depends on the grid and degree alone, independently
+of the original rational coefficients or auxiliary radical coefficients.
+
+This supplies an explicit alternative proof of the coefficient-uniform
+interpolation step in Step 6. It does not establish the preceding
+normalization, genus, branching, reduced-fibre or rational-graph
+conclusions. The remaining geometric dimension/prime-height and any
+intrinsic line-bundle degree interpretation are separate; external
+uniform point counts also remain open. T1.7 stays in_progress, numbered
+coverage stays 79/167, confirmed mathematical improvements become 108,
+and Palomar remains deferred. Original sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12373 jobs, direct axiom audit of 8673 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6561 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.06 GiB.
