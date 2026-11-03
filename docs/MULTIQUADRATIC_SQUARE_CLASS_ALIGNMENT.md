@@ -86,3 +86,54 @@ assigned. No external counting input, dependency download, original
 manuscript change or Palomar registration is introduced.
 
 Verified with Lean v4.36.0-rc2: full lake build (11341 jobs), actual Audit.lean kernel-axiom audit (7745 declarations; only propext, Classical.choice, Quot.sound), all 5462 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.44 GiB.
+
+
+## The actual coordinate domain and the finite affine radical-sum projection
+
+The actual split-radical coordinate algebra in Step 1 of companion
+T1.7 is now proved to be a domain, and the affine sum-of-radicals
+projection is proved finite. The construction continues to work over
+every characteristic-zero base field F, including an algebraic closure.
+It uses the literal tower over F[X][Y] of the actual scaled split
+polynomials, rather than assuming geometric integrality of a surface.
+
+First, the tower has its exact universal property. For every base
+ring homomorphism R->A and every actual family x_i in A satisfying
+x_i^2=phi(f_i), there exists a unique ring homomorphism from the
+tower to A that agrees with phi on the base and sends each actual
+radical generator to x_i. The corresponding algebra-point equivalence
+is also constructed. An explicit two-coordinate quadratic ring map,
+its uniqueness and a recursive lift prove this, including empty
+systems and arbitrary commutative target algebras. Thus the tower
+represents precisely the simultaneous polynomial equations. Evaluation
+at actual values X,Y specializes this statement to the source split
+system; the scaled-word evaluation formula is checked explicitly.
+
+Next, an actual recursive base-change homomorphism is constructed for
+every ring homomorphism R->S. It is proved to commute with the base
+embeddings, and it is injective whenever the base homomorphism is.
+The quadratic step keeps the literal new parameter and the proved
+coefficient equality visible, avoiding an assumed localization map.
+Specializing to F[X][Y]->Frac(F[X][Y]) embeds the coordinate tower in
+the actual generic field already proved to have degree 2^k. This
+proves the coordinate domain property for every disjoint root-list
+system with nonzero coefficients and at least one selected root per
+equation. No coefficient height or smoothness is used in this step.
+
+Finally the image algebra of the sum-of-radicals map is defined as
+R[sum_i sqrt(f_i)] and identified with the literal range of polynomial
+evaluation at that sum. Since the entire coordinate tower is a finite
+R-module, it is a finite module over this actual image algebra. The
+radical sum is also proved integral over R. This establishes the
+algebraic finiteness of the affine projection; its birationality is
+NOT yet proved. The generic primitive-element argument, Krull and
+projective dimensions and degrees, curve exclusions, surface covering
+and all two-variable point estimates remain open.
+
+These are exact internal algebraic parts of the source proof, with
+no new improvement identifier. T1.7 stays in_progress, coverage stays
+79/167 and improvements stay 104. No surface-counting estimate is
+treated as proved, no new external input or dependency download is
+introduced, and the original sources and Palomar status are unchanged.
+
+Verified with Lean v4.36.0-rc2: full lake build (11351 jobs), actual Audit.lean kernel-axiom audit (7767 declarations; only propext, Classical.choice, Quot.sound), all 5484 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.43 GiB.

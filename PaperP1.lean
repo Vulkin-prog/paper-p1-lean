@@ -1689,3 +1689,8 @@ public import PaperP1.Algebra.FiniteQuadraticTower
 public import PaperP1.Algebra.QuadraticSquareDescent
 public import PaperP1.Algebra.IndependentQuadraticTower
 public import PaperP1.Algebra.SplitRadicalField
+public import PaperP1.Algebra.QuadraticUniversalMap
+public import PaperP1.Algebra.QuadraticTowerPoints
+public import PaperP1.Algebra.QuadraticTowerBaseChange
+public import PaperP1.Algebra.SplitRadicalCoordinateAlgebra
+public import PaperP1.Algebra.FiniteRadicalProjection
