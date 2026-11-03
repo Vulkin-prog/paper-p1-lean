@@ -9315,7 +9315,8 @@
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "be1dcd5743cfad45c0c2390a041e609878dcfb10"
     },
     {
       "id": "P1-MATH-0118",
@@ -9350,7 +9351,8 @@
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "be1dcd5743cfad45c0c2390a041e609878dcfb10"
     }
   ]
 }
