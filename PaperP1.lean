@@ -2101,3 +2101,6 @@ public import PaperP1.Model.SourcePairAffineWeight
 public import PaperP1.Model.SourcePairSignedSum
 public import PaperP1.Asymptotics.SourcePairSignedCentering
 public import PaperP1.Asymptotics.SignedSourceProfileUnderInputs
+public import PaperP1.Combinatorics.PairSeparation
+public import PaperP1.Asymptotics.SourcePairCloseWeight
+public import PaperP1.Asymptotics.SignedSeparatedSourceProfileUnderInputs

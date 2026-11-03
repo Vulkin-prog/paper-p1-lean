@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **9247 audited theorem/lemma declarations**. This
+- The project currently has **9257 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -10134,3 +10134,53 @@ Palomar remains deferred and no manuscript-conclusion error
 is newly confirmed.
 
 Verified under Lean v4.36.0-rc2: full build passed (12749 jobs); direct axiom audit passed for 9247 declarations using only propext, Classical.choice and Quot.sound; all 7308 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.30 GiB.
+
+
+## The literal separated signed arithmetic pair profile
+
+The signed raw relation-count display of article Theorem 3.3
+is now proved literally on separated ordered dyadic hosts under
+the explicit geometric properties already identified. The new
+article_3_3_signed theorem gives
+|sum_(separated)(eta*2^pairLoss-1)-N/3*(S_23(L)+S_34(L))|
+<=N^(6/5+epsilon). The source full arithmetic rank includes the
+local kernels, eta is the actual affine compatibility indicator,
+and both finite signed channel polynomials are retained whole.
+There is no supplied separated host count or profile remainder.
+
+The new contact comparison is unconditional. Exact finite
+membership lemmas identify the ordered close hosts with distinct
+pairs whose distance is at most L, and the complementary hosts
+with precisely x+L<y or y+L<x. An exact partition identity
+preserves both orientations and the actual multiplicity two.
+The nominal squared mass of close pairs is bounded by
+L*|G|*p^2 using a constant-weight disjoint-pair estimate.
+The existing actual contact joint-mass bound handles every
+positive close event, including compatible exact contacts.
+No assertion that all close joint probabilities vanish is used.
+
+The exact source Fourier identity converts p^2 times the absolute
+signed source weight to |q_xy-p^2|. Sum the actual joint mass and
+nominal close mass, retain the ordered multiplicity, and use the
+proved critical-window word bound to remove p^2. This gives an
+UNCONDITIONAL O(N^(1+epsilon)) total absolute signed weight on
+all close hosts. It retains irregular windows, local kernels and
+incompatible pairs. Subtracting this exact close population from
+the previously proved all-ordered signed profile gives the
+literal separated display. All finite partitions, powers,
+constants and epsilon margins are internally proved.
+
+Only the generic normalized curve property and the distinct
+ordinary/chosen-source surface covers remain explicit unproved
+arguments in the resulting signed-profile theorem. The contact
+bridge itself uses no BCN or determinant argument. The positive
+raw profile and the full source phase-asymptotic conclusions
+remain open, so main 3.3 stays in_progress. Main 3.2, main 3.4
+and T1.8 remain conditional. Proved numbered coverage stays
+79/167 and confirmed improvements stay 113. These are source
+translation and proof-composition advances, with no new
+improvement identifier or manuscript-conclusion error.
+Original source bytes, compiler and dependencies are unchanged,
+and Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (12755 jobs); direct axiom audit passed for 9257 declarations using only propext, Classical.choice and Quot.sound; all 7320 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.65 GiB.

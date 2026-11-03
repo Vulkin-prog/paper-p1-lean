@@ -5832,6 +5832,7 @@ import PaperP1
 #print axioms PaperP1.SignedChannelPhaseLimit.tendsto_normalized
 #print axioms PaperP1.SignedChannelPhaseLimit.weighted_linear_identity
 #print axioms PaperP1.SignedChannelPhaseLimit.tendsto_height_normalized
+#print axioms PaperP1.SignedSeparatedSourceProfileUnderInputs.article_3_3_signed
 #print axioms PaperP1.SignedSourceProfileUnderInputs.scaled_mainTerm
 #print axioms PaperP1.SignedSourceProfileUnderInputs.unscale
 #print axioms PaperP1.SignedSourceProfileUnderInputs.uniform_all_ordered
@@ -5850,6 +5851,11 @@ import PaperP1
 #print axioms PaperP1.SmoothSelectionCertificates.source_certificates
 #print axioms PaperP1.SourceCurvePointCover.finite_cover_bound
 #print axioms PaperP1.SourceCurvePointCoverDegreeBound.finite_cover_bound
+#print axioms PaperP1.SourcePairCloseWeight.nominal_mass
+#print axioms PaperP1.SourcePairCloseWeight.finite_scaled_abs
+#print axioms PaperP1.SourcePairCloseWeight.uniform_nominal_mass
+#print axioms PaperP1.SourcePairCloseWeight.uniform_scaled_abs
+#print axioms PaperP1.SourcePairCloseWeight.uniform_abs
 #print axioms PaperP1.SourcePairSignedCentering.nominal_diagonal
 #print axioms PaperP1.SourcePairSignedCentering.uniform_error
 #print axioms PaperP1.SourceTranslationCount.uniform_counts
@@ -6463,6 +6469,10 @@ import PaperP1
 #print axioms PaperP1.PairDecompositions.map_constant_on_pairs
 #print axioms PaperP1.PairDecompositions.nonzero_image_card_drop
 #print axioms PaperP1.PairFinpartition.eq_of_pair_refinement
+#print axioms PaperP1.PairSeparation.mem_closeHosts
+#print axioms PaperP1.PairSeparation.close_subset
+#print axioms PaperP1.PairSeparation.mem_separatedHosts
+#print axioms PaperP1.PairSeparation.sum_partition
 #print axioms PaperP1.PairSubfamilyWeights.mem_hosts
 #print axioms PaperP1.PairSubfamilyWeights.weighted_sum
 #print axioms PaperP1.PhysicalLabelSupportCount.preimage_eq_biUnion
