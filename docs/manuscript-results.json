@@ -13318,11 +13318,65 @@
       "source": "companion_sections/closure.tex",
       "line": 209,
       "sha256": "4a59678d5339fa107dcd55356a4517b1a5150890985e9d71db7b5cb5cf327047",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "conditional",
+      "lean_declarations": [
+        "PaperP1.FinitePolymerRemainder.remainder_eq",
+        "PaperP1.FinitePolymerRemainder.covered_bound",
+        "PaperP1.FinitePolymerRemainder.exponential_error",
+        "PaperP1.SeedComplementSum.finite_bound",
+        "PaperP1.CanonicalComponentWeights.disjoint_blocks",
+        "PaperP1.CanonicalComponentWeights.sum_card",
+        "PaperP1.CanonicalComponentWeights.weighted_absolute_factor",
+        "PaperP1.ActualComponentRemainder.population_sum",
+        "PaperP1.ActualComponentRemainder.finite_bound",
+        "PaperP1.CenteredSourcePairBound.pointwise",
+        "PaperP1.NonretainedPositiveMass.mem_residual",
+        "PaperP1.NonretainedPositiveMass.weighted_term",
+        "PaperP1.NonretainedPositiveMass.expansion_bound",
+        "PaperP1.NonretainedPositiveMass.pointwise_bound",
+        "PaperP1.NonretainedPositiveMass.pair_deficit_bound",
+        "PaperP1.NonretainedPositiveMass.finite_bound",
+        "PaperP1.RetainedBoundaryPositiveMass.good_subset",
+        "PaperP1.RetainedBoundaryPositiveMass.good_joint_positive",
+        "PaperP1.RetainedBoundaryPositiveMass.good_weight",
+        "PaperP1.RetainedBoundaryPositiveMass.activities_nonneg",
+        "PaperP1.RetainedBoundaryPositiveMass.pair_activity_split",
+        "PaperP1.RetainedBoundaryPositiveMass.bad_eq_nongood",
+        "PaperP1.RetainedBoundaryPositiveMass.finite_bound",
+        "PaperP1.RetainedBadPairActivityUnderInputs.uniform_bound",
+        "PaperP1.RetainedComponentActivityUnderInputs.uniform_bounds",
+        "PaperP1.PositiveBoundaryMassUnderInputs.uniform_bound",
+        "PaperP1.PositiveBoundaryMassUnderInputs.companion_T17_3",
+        "PaperP1.FinitePolymerRemainder.remainder",
+        "PaperP1.ActualComponentRemainder.higher",
+        "PaperP1.ActualComponentRemainder.population",
+        "PaperP1.ActualComponentRemainder.weight",
+        "PaperP1.NonretainedPositiveMass.residual",
+        "PaperP1.RetainedBoundaryPositiveMass.families",
+        "PaperP1.RetainedBoundaryPositiveMass.mass",
+        "PaperP1.RetainedBoundaryPositiveMass.goodActivity",
+        "PaperP1.RetainedBoundaryPositiveMass.badActivity",
+        "PaperP1.RetainedBoundaryPositiveMass.higherActivity",
+        "PaperP1.RetainedComponentActivityUnderInputs.Parameters",
+        "PaperP1.RetainedComponentActivityUnderInputs.Hypotheses"
+      ],
+      "literature_inputs": [
+        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+        "P1-GEO-ORDINARY-SURFACE-COVER",
+        "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0145"
+      ],
+      "notes": "Companion T17.3 is now COMPLETE CONDITIONALLY, including BOTH its exact\nfinite positive-boundary inequality and its uniform rate4/5 over the literal\nlinear range4K<=L. For H=8*(L+1), G=regularStarts(N,L), mu=E Z_G and the\nliteral actual nonretained low-nullity sum R_K, the checked statements are\n\n  R_K <= F + Gdef + exp(2mu) * [ exp(A_good+A_bad+B_K)-1-A_good ],\n  R_K <= N^(-4/5+epsilon), uniformly over every4K<=L.\n\nF and Gdef are the previously constructed literal independent deficits,\nwith their exact cardinality grouping. A_good=4 sum_good c(e),\nA_bad=4 sum_(all regular nongood pairs) |c(e)|, and B_K is the actual\nweighted connected centered sum at sizes3..K with compatible nullity<=3L/2.\nThe finite family defining R_K is EXACTLY the actual subsets I of G with\nrho(I)<=3L/2, I nonretained and |I|<=K. The original source's added terms\nB/N and a_N^2 are absorbed by the proved uniform N^epsilon slack; the final\nrate is therefore stated in the stronger unit-power form without those\nadditional nonnegative terms.\n\nFinitePolymerRemainder proves an exact finite subset-generator remainder:\nremove the empty component collection and exactly one distinguished good\ncomponent BEFORE the exponential majorant. Actual union-recoverable\ncomponent collections inject into the remaining powerset, so arbitrary\nnonnegative component activities have bound exp(sum_all)-1-sum_good.\nThe exponential Taylor remainder is proved separately, with its explicit\nquadratic budget. No independence of canonical components as random\nchoices, partition count heuristic, or target remainder is assumed.\n\nCanonicalComponentWeights proves actual canonical blocks pairwise disjoint,\ntheir cardinalities sum to |I|, and the EXACT weighted factorization\nu^|I|*|c(I)|=product_C(u^|C|*|c(C)|). ActualComponentRemainder handles zero\ncoefficients by an exact finite filter. Nonzero coefficients have no\nsingleton canonical part. Every remaining part is connected, has at least\ntwo sites, and inherits its actual nullity cap by monotonicity. Thus the\ncomponent remainder includes affine incompatibility and zero marginals;\nno cancelling centered expression is replaced by a joint probability.\n\nCenteredSourcePairBound proves 0<=c(e) and |c(e)|<=q(e) for every actual\npositive-joint source pair, from the exact heterogeneous joint rank formula\nand the pair covariance identity. NonretainedPositiveMass.pointwise_bound\nuses the exact inverse centering expansion and separates the empty term,\nsource-pair terms and residual terms. Source pairs remain distinguished.\nFor a nonretained I and a source e subset I, the complement I minus e is\nPROVED to fail directness after compression; otherwise I would be retained.\nRestrictedSeedComplements.fiber_bound therefore charges that source term\nto its actual source-relative independent deficit. No factorization of a\nfailed extension's arithmetic joint probability is assumed.\n\nSeedComplementSum bounds the sum of EVERY contained residual seed, with\nits own nonnegative centered activity and independently weighted free\ncomplement. The exact complement map is injective in each source fiber;\nits full finite generator is bounded by exp(sum_x u*p_x). Independent\nnonretained terms belong to the actual ordinary independent deficit.\nNonretainedPositiveMass.finite_bound combines these comparisons with the\nnonlinear actual canonical-component remainder on ANY finite actual ground\nG, with exact heterogeneous marginals, ANY fixed u>=0 and ANY size cap K.\nSource pairs only need positive actual joint probability and membership\nin G.powersetCard2. No equal-marginal assumption, regularity premise or\nlinear size restriction is used in this finite theorem.\n\nRetainedBoundaryPositiveMass.finite_bound specializes this stronger finite\nlemma to the actual regular ground, goodEdges and u=2. Exact marginal\nidentities identify F and Gdef with firstMass and secondMass; the exact\npair split identifies A_good+A_bad. It proves the source finite inequality\nfor EVERY K, even when4K>L. The linear restriction is needed only by the\narithmetic rate estimates, not by the finite probability/combinatorics.\nFinding P1-MATH-0145 records this separation and heterogeneous extension.\n\nRetainedBadPairActivityUnderInputs keeps every nongood centered pair,\nincluding incompatible sources. Direct nongood pairs have zero coefficient;\nthe actual dependent ones lie in the height-five tail or finite exceptional\nsector at Q=4. Their rates4/5 and1 give A_bad rate4/5. The only input is the\nexisting finite pair bundle at cap sizeCap(epsilon/128).\nRetainedComponentActivityUnderInputs supplies ONE common threshold over\nALL4K<=L: A_bad has rate4/5, B_K rate1, A_good+A_bad rate2/3. B_K uses the\ncompleted literal linear connected theorem at t=4, eta=3/2 and weight2;\nthe whole pair rate uses the existing fixed-cap pair bundle. These are\nproved constituent estimates, not desired-bound premises.\n\nPositiveBoundaryMassUnderInputs uses the fixed internal margin\ndelta=min(epsilon/4,1/12), selected before N. The total component activity\nis at most2*N^(-7/12), hence eventually at most1. Its squared exponential\nremainder costs N^(-7/6), while A_bad supplies rate4/5 and B_K rate1.\nThe actual mean is bounded uniformly; the already completed independent\ndeficits have stronger rates1 and7/6. A final fixed-factor absorption gives\nthe literal4/5 rate after one threshold, uniformly in K and L.\nThe final Hypotheses are a finite union of the SAME three previously\nrecorded geometric properties: three coarse bundles at margins delta/128,\ndelta/512, delta/128; their pair caps sizeCap(delta/524288) and\nsizeCap(delta/1024); the whole-pair cap sizeCap(1/100); and the nongood-pair\ncap sizeCap(delta/128). No BCN or new unproved property is introduced.\n\nThis checkpoint adds10 modules,27 theorems,10 definitions and2 finite\nparameter structures. Coverage is87/167 unconditional and29 conditional,\nwith145 confirmed mathematical improvements. The complete-law quadratic\napproximation still requires combining this result with the stopped\nidentity, large-boundary tail and reference conversion; no such completion\nis claimed here. The sharp4/3 complete-law rate and T15.1 separated clauses\nremain open. No original manuscript bytes, Paper C port, dependency download,\nhidden axiom or Palomar registration is added.",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "notes": "",
+          "literature_inputs": []
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13663 jobs); direct axiom audit passed for 10574 declarations using only propext, Classical.choice and Quot.sound; all 8972 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.53 GiB."
     },
     {
       "label": "p1:close:conversion",

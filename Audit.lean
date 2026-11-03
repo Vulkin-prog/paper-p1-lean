@@ -6275,6 +6275,8 @@ import PaperP1
 #print axioms PaperP1.PositionedMassPropagation.all_positions
 #print axioms PaperP1.PositionedSeedBounds.defects
 #print axioms PaperP1.PositionedSeedBounds.contacts
+#print axioms PaperP1.PositiveBoundaryMassUnderInputs.uniform_bound
+#print axioms PaperP1.PositiveBoundaryMassUnderInputs.companion_T17_3
 #print axioms PaperP1.PositiveLineSplitCount.uniform_count
 #print axioms PaperP1.PositiveSecondCumulant.uniform_lower
 #print axioms PaperP1.PositiveSecondCumulant.uniform_positive
@@ -6505,9 +6507,11 @@ import PaperP1
 #print axioms PaperP1.ResidualPrimitiveHostCount.hosts_data
 #print axioms PaperP1.ResidualPrimitiveHostCount.all_primitive_triples
 #print axioms PaperP1.ResidualPrimitiveHostCount.source_unrestricted_assertion
+#print axioms PaperP1.RetainedBadPairActivityUnderInputs.uniform_bound
 #print axioms PaperP1.RetainedBadProbabilityUnderBCN.uniform_badProbability
 #print axioms PaperP1.RetainedBadProbabilityUnderBCN.uniform_totalVariation
 #print axioms PaperP1.RetainedClassTheorem.companion_T12_1
+#print axioms PaperP1.RetainedComponentActivityUnderInputs.uniform_bounds
 #print axioms PaperP1.RetainedExceptionalEventUnderInputs.uniform_badProbability
 #print axioms PaperP1.RetainedExceptionalEventUnderInputs.uniform_totalVariation
 #print axioms PaperP1.RetainedExceptionalEventUnderInputs.companion_T15_2
@@ -7248,6 +7252,9 @@ import PaperP1
 #print axioms PaperP1.FinitePolymerBound.weight_eq_partition
 #print axioms PaperP1.FinitePolymerBound.generating_le_product
 #print axioms PaperP1.FinitePolymerBound.generating_le_exp
+#print axioms PaperP1.FinitePolymerRemainder.remainder_eq
+#print axioms PaperP1.FinitePolymerRemainder.covered_bound
+#print axioms PaperP1.FinitePolymerRemainder.exponential_error
 #print axioms PaperP1.FinitePolymerTail.tail_eq
 #print axioms PaperP1.FinitePolymerTail.tail_bound
 #print axioms PaperP1.FinitePolymerTail.covered_bound
@@ -7532,6 +7539,7 @@ import PaperP1
 #print axioms PaperP1.SeedComplementMass.complement_sum
 #print axioms PaperP1.SeedComplementMass.complement_bound
 #print axioms PaperP1.SeedComplementMass.cover_bound
+#print axioms PaperP1.SeedComplementSum.finite_bound
 #print axioms PaperP1.SharedPairProducts.overlapping_subset
 #print axioms PaperP1.SharedPairProducts.pair_mem_overlapping
 #print axioms PaperP1.SharedPairProducts.incident_eq_image
@@ -8140,6 +8148,8 @@ import PaperP1
 #print axioms PaperP1.ActualCanonicalComponents.singleton_zero
 #print axioms PaperP1.ActualCanonicalComponents.nonzero_block_card
 #print axioms PaperP1.ActualCanonicalComponents.nonconnected_card
+#print axioms PaperP1.ActualComponentRemainder.population_sum
+#print axioms PaperP1.ActualComponentRemainder.finite_bound
 #print axioms PaperP1.AlignedChannelFamilies.relative_le_loss
 #print axioms PaperP1.AlignedChannelFamilies.cover
 #print axioms PaperP1.AlignedChannelFamilies.activity_bound
@@ -8189,6 +8199,9 @@ import PaperP1
 #print axioms PaperP1.BoundaryAlignedPairs.height_one_cover
 #print axioms PaperP1.BoundedComponentActivity.sum_bound
 #print axioms PaperP1.BoundedComponentActivity.finite_bound
+#print axioms PaperP1.CanonicalComponentWeights.disjoint_blocks
+#print axioms PaperP1.CanonicalComponentWeights.sum_card
+#print axioms PaperP1.CanonicalComponentWeights.weighted_absolute_factor
 #print axioms PaperP1.CanonicalPairImages.canonical_images
 #print axioms PaperP1.Model.InfiniteStarts.infiniteFamilyJointMoment_eq_finite
 #print axioms PaperP1.Model.InfiniteStarts.infiniteFamilyJointMoment_partition
@@ -8203,6 +8216,7 @@ import PaperP1
 #print axioms PaperP1.CenteredDependenceSupport.every_target
 #print axioms PaperP1.CenteredDependenceSupport.nullity_pos
 #print axioms PaperP1.CenteredDependenceSupport.inserted_target
+#print axioms PaperP1.CenteredSourcePairBound.pointwise
 #print axioms PaperP1.ChosenRelationCore.properties
 #print axioms PaperP1.ChosenRelationCore.weighted_bound
 #print axioms PaperP1.CoarseTriplePairSeeds.mem_pairs
@@ -8857,6 +8871,12 @@ import PaperP1
 #print axioms PaperP1.NongoodPairSeeds.good_four_subset
 #print axioms PaperP1.NongoodPairSeeds.cover
 #print axioms PaperP1.NongoodPairSeeds.joint_bound
+#print axioms PaperP1.NonretainedPositiveMass.mem_residual
+#print axioms PaperP1.NonretainedPositiveMass.weighted_term
+#print axioms PaperP1.NonretainedPositiveMass.expansion_bound
+#print axioms PaperP1.NonretainedPositiveMass.pointwise_bound
+#print axioms PaperP1.NonretainedPositiveMass.pair_deficit_bound
+#print axioms PaperP1.NonretainedPositiveMass.finite_bound
 #print axioms PaperP1.NormalizedFamilyDefectRank.common_rank_defect
 #print axioms PaperP1.NormalizedFamilyDefectRank.connected_rank_defect
 #print axioms PaperP1.NormalizedFamilyDefectRank.actual_joint_le_rank
@@ -9235,6 +9255,13 @@ import PaperP1
 #print axioms PaperP1.RetainedActiveCount.modified_le_envelope
 #print axioms PaperP1.RetainedActiveCount.modified_le_original
 #print axioms PaperP1.RetainedActiveCount.modified_eq_original_iff
+#print axioms PaperP1.RetainedBoundaryPositiveMass.good_subset
+#print axioms PaperP1.RetainedBoundaryPositiveMass.good_joint_positive
+#print axioms PaperP1.RetainedBoundaryPositiveMass.good_weight
+#print axioms PaperP1.RetainedBoundaryPositiveMass.activities_nonneg
+#print axioms PaperP1.RetainedBoundaryPositiveMass.pair_activity_split
+#print axioms PaperP1.RetainedBoundaryPositiveMass.bad_eq_nongood
+#print axioms PaperP1.RetainedBoundaryPositiveMass.finite_bound
 #print axioms PaperP1.RetainedCardinalityDeficits.sum_by_shifted_card
 #print axioms PaperP1.RetainedCardinalityDeficits.first_layer_eq
 #print axioms PaperP1.RetainedCardinalityDeficits.first_layer_count

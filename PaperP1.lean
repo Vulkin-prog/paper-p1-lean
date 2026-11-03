@@ -2542,3 +2542,13 @@ public import PaperP1.Model.RetainedActivationSeeds
 public import PaperP1.Asymptotics.RetainedExceptionalEventUnderInputs
 public import PaperP1.Model.OriginalCountLawCoupling
 public import PaperP1.Asymptotics.ModifiedCountAllTailsUnderInputs
+public import PaperP1.Combinatorics.FinitePolymerRemainder
+public import PaperP1.Combinatorics.SeedComplementSum
+public import PaperP1.Model.CanonicalComponentWeights
+public import PaperP1.Model.ActualComponentRemainder
+public import PaperP1.Model.CenteredSourcePairBound
+public import PaperP1.Model.NonretainedPositiveMass
+public import PaperP1.Model.RetainedBoundaryPositiveMass
+public import PaperP1.Asymptotics.RetainedBadPairActivityUnderInputs
+public import PaperP1.Asymptotics.RetainedComponentActivityUnderInputs
+public import PaperP1.Asymptotics.PositiveBoundaryMassUnderInputs

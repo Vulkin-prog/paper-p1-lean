@@ -10391,6 +10391,71 @@
         "status": "not_integrated"
       },
       "validation_commit": "b51fb684c59771fd5420f280ad31f9fbe31c2423"
+    },
+    {
+      "id": "P1-MATH-0145",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:close:boundary-mass",
+        "number": "T17.3",
+        "page": 63,
+        "source": "companion_sections/closure.tex",
+        "line": 209,
+        "statement_sha256": "4a59678d5339fa107dcd55356a4517b1a5150890985e9d71db7b5cb5cf327047"
+      },
+      "original_assumption": "T17.3 presents the finite comparison on the regular equal-marginal ground and only for K<=L/4.",
+      "finding": "The finite positive-boundary comparison in companion T17.3 holds\nwithout the printed linear size restriction K<=L/4 and extends to arbitrary\nfinite actual grounds with unequal exact marginals. For any fixed u>=0 and\nany population of positive-joint source pairs, its three terms are the\nliteral ordinary independent deficit, the distinguished source-relative\nindependent deficits, and exp(sum_x u*p_x) times a canonical-component\nremainder with the empty collection and one source pair explicitly\nsubtracted. Actual finite source/complement injections and canonical union\nrecovery prove the comparison. In the printed regular case u=2 this is\nexactly R_K<=F+Gdef+exp(2mu)(exp(A_good+A_bad+B_K)-1-A_good), for EVERY K.\nOnly the subsequent uniform arithmetic estimate uses4K<=L. Incompatibility,\nzero marginals and failed extensions remain present. Separating this\nunconditional finite theorem from the arithmetic cutoff clarifies precisely\nwhere each hypothesis is needed and supplies a heterogeneous version.",
+      "impact": "Removes the linear cutoff and equal-marginal/regular-ground restrictions from the finite comparison while preserving the distinguished source term and exact positive deficits. The4/5 rate still uses the stated arithmetic linear range.",
+      "proposed_revision": "State the unconditional heterogeneous finite positive-mass comparison for arbitrary K separately; specialize it to the regular ground, then impose4K<=L only for the component activity estimate. Keep source-pair failed complements and the single-pair subtraction explicit.",
+      "evidence": [
+        "PaperP1.FinitePolymerRemainder.remainder_eq",
+        "PaperP1.FinitePolymerRemainder.covered_bound",
+        "PaperP1.FinitePolymerRemainder.exponential_error",
+        "PaperP1.SeedComplementSum.finite_bound",
+        "PaperP1.CanonicalComponentWeights.disjoint_blocks",
+        "PaperP1.CanonicalComponentWeights.sum_card",
+        "PaperP1.CanonicalComponentWeights.weighted_absolute_factor",
+        "PaperP1.ActualComponentRemainder.population_sum",
+        "PaperP1.ActualComponentRemainder.finite_bound",
+        "PaperP1.CenteredSourcePairBound.pointwise",
+        "PaperP1.NonretainedPositiveMass.mem_residual",
+        "PaperP1.NonretainedPositiveMass.weighted_term",
+        "PaperP1.NonretainedPositiveMass.expansion_bound",
+        "PaperP1.NonretainedPositiveMass.pointwise_bound",
+        "PaperP1.NonretainedPositiveMass.pair_deficit_bound",
+        "PaperP1.NonretainedPositiveMass.finite_bound",
+        "PaperP1.RetainedBoundaryPositiveMass.good_subset",
+        "PaperP1.RetainedBoundaryPositiveMass.good_joint_positive",
+        "PaperP1.RetainedBoundaryPositiveMass.good_weight",
+        "PaperP1.RetainedBoundaryPositiveMass.activities_nonneg",
+        "PaperP1.RetainedBoundaryPositiveMass.pair_activity_split",
+        "PaperP1.RetainedBoundaryPositiveMass.bad_eq_nongood",
+        "PaperP1.RetainedBoundaryPositiveMass.finite_bound",
+        "PaperP1.RetainedBadPairActivityUnderInputs.uniform_bound",
+        "PaperP1.RetainedComponentActivityUnderInputs.uniform_bounds",
+        "PaperP1.PositiveBoundaryMassUnderInputs.uniform_bound",
+        "PaperP1.PositiveBoundaryMassUnderInputs.companion_T17_3",
+        "PaperP1.FinitePolymerRemainder.remainder",
+        "PaperP1.ActualComponentRemainder.higher",
+        "PaperP1.ActualComponentRemainder.population",
+        "PaperP1.ActualComponentRemainder.weight",
+        "PaperP1.NonretainedPositiveMass.residual",
+        "PaperP1.RetainedBoundaryPositiveMass.families",
+        "PaperP1.RetainedBoundaryPositiveMass.mass",
+        "PaperP1.RetainedBoundaryPositiveMass.goodActivity",
+        "PaperP1.RetainedBoundaryPositiveMass.badActivity",
+        "PaperP1.RetainedBoundaryPositiveMass.higherActivity",
+        "PaperP1.RetainedComponentActivityUnderInputs.Parameters",
+        "PaperP1.RetainedComponentActivityUnderInputs.Hypotheses"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13663 jobs); direct axiom audit passed for 10574 declarations using only propext, Classical.choice and Quot.sound; all 8972 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.53 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
