@@ -1854,3 +1854,17 @@ public import PaperP1.Algebra.TwoVariableGradedHilbert
 public import PaperP1.Algebra.GradedVeroneseMap
 public import PaperP1.Algebra.GradedVeroneseQuotient
 public import PaperP1.Algebra.PlaneCurveVeroneseBaseQuotient
+public import PaperP1.Algebra.HomogeneousPolynomialEvaluation
+public import PaperP1.Algebra.HomogeneousLinearShear
+public import PaperP1.Algebra.MonicPolynomialQuotientFinite
+public import PaperP1.Algebra.PolynomialCoordinateProjectionFinite
+public import PaperP1.Algebra.HomogeneousLinearNormalization
+public import PaperP1.Algebra.PolynomialPowerMapFinite
+public import PaperP1.Algebra.VeroneseFinitePowerParameters
+public import PaperP1.Algebra.PlaneQuotientVeroneseNormalization
+public import PaperP1.Algebra.FiniteGradedParameters
+public import PaperP1.Algebra.NativePlaneQuotientNormalization
+public import PaperP1.Algebra.SourceCurveFiniteParameters
+public import PaperP1.Algebra.GradedQuotientIdealCongruence
+public import PaperP1.Algebra.SourceCurvePlaneEquationHilbert
+public import PaperP1.Geometry.SourceCurvePlaneEquationDegree

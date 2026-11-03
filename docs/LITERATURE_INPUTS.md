@@ -7891,3 +7891,55 @@ counts remain open. T1.7 stays in_progress, numbered coverage stays
 remains deferred. Original sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12241 jobs, direct axiom audit of 8484 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6313 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.48 GiB.
+
+
+## Finite plane normalization and actual source curve degree
+
+Finite two-parameter normalization is now constructed over an infinite
+field for an actual homogeneous plane quotient containing a nonzero
+homogeneous relation. A checked scaling identity proves nonvanishing
+somewhere on the fixed projective affine patch X0=1. An explicit
+invertible linear shear preserves every homogeneous degree and makes
+the first-variable leading coefficient a nonzero scalar. Its monic
+normalization and the actual polynomial quotient isomorphism prove
+module finiteness over the remaining linear coordinates.
+
+A polynomial algebra is proved finite over its positive coordinate
+powers: each coordinate is integral over its power, and the actual
+finite coordinate family generates the algebra. For an algebra already
+finite over linear parameters, their D-th powers give a finite action
+on the actual ambient algebra. Its literal Veronese embeds linearly
+into that finite module over a Noetherian polynomial ring, so it is
+finite too. The same parameters are proved to have rescaled degree one.
+This supplies actual finite parameters, rather than assuming them.
+
+Finite parameters transfer through the checked Veronese quotient
+isomorphism and through actual finite graded maps. The actual source
+prime quotient map is constructed as an F-algebra map and is proved
+finite from its existing homogeneous generators. Hence it inherits
+finite parameters and an actual Hilbert polynomial from its native
+base quotient.
+
+When the actual base ideal is the contraction of the principal ideal
+of a nonzero homogeneous plane equation f of positive degree e, the
+native base has the explicit affine Hilbert polynomial
+De*T+(3e-e^2)/2, and source Hilbert-polynomial existence is now proved
+from that ideal equality. Neither Hilbert existence nor an assumed
+Hilbert slope remains a separate input. The actual source Hilbert
+multiplicity is proved equal to D*e times the degree of the actual
+projective function-field map between the literal quotient Proj schemes.
+The stored public theorem states this literal field finrank, verified
+by inspecting its elaborated type and kernel axioms.
+
+This discharges the Hilbert-existence and Veronese-quotient comparison
+steps for an identified plane-equation image. Extracting that equation
+from the actual geometric curve image prime remains open; the image
+ideal equality is still an explicit premise. Scheme dimension,
+hyperplane-bundle comparison, low-degree geometry and external host
+counts remain open. T1.7 stays in_progress, coverage stays 79/167,
+confirmed improvements stay 107, and Palomar remains deferred.
+Original manuscript sources are unchanged. No new Paper C code is reused;
+the adapted homogeneous top-coefficient argument is attributed to the
+pinned Mathlib source with its Apache licence.
+
+Verified with Lean v4.36.0-rc2: full build 12269 jobs, direct axiom audit of 8532 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6372 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.21 GiB.
