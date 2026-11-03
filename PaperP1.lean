@@ -2204,3 +2204,11 @@ public import PaperP1.Asymptotics.SmallKernelLcmGrowth
 public import PaperP1.Asymptotics.SeveralSmallKernelCount
 public import PaperP1.Asymptotics.SmallKernelWindows
 public import PaperP1.Asymptotics.SharpThirdCumulantLowerUnderInputs
+public import PaperP1.Affine.TwoTargetKernel
+public import PaperP1.Affine.EffectiveLinearSections
+public import PaperP1.Coding.SimultaneousProjectionRegularization
+public import PaperP1.Combinatorics.TargetComponentBudget
+public import PaperP1.Combinatorics.LabelClassPartition
+public import PaperP1.Coding.TargetLabelsComponents
+public import PaperP1.Arithmetic.TwoTargetWindowSections
+public import PaperP1.Arithmetic.TwoTargetRegularization
