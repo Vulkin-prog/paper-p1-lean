@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **8015 audited theorem/lemma declarations**. This
+- The project currently has **8044 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -7327,3 +7327,63 @@ identifier, external estimate, dependency download, original-source
 change or Palomar registration is introduced.
 
 Verified with Lean v4.36.0-rc2: targeted builds and full lake build (11441 jobs), actual 8015-declaration axiom audit, all 5732 ledger/finding declaration references, 138 preserved source-manifest entries and the complete 167-result inventory. Only propext, Classical.choice and Quot.sound occur. Ubuntu root free space: 14.31 GiB. Numbered coverage remains 79/167; confirmed improvements remain 105.
+
+
+## P1-MATH-0106 — An actual relative free basis of the source Veronese algebra
+
+The actual source D-th Veronese algebra is now proved finite
+free of rank 2^k over the standard three-variable D-th Veronese
+base. A literal basis is constructed and its value in the weighted
+quotient is checked on every basis index. This strengthens the
+finite-base-map result and is recorded as P1-MATH-0106. It concerns
+the source Veronese algebra; P1-MATH-0105 concerns the different
+radical-sum affine image algebra.
+
+Each actual homogenized radicand has ordinary degree 2D and is
+constructed as an element of the standard Veronese base. The literal
+quadratic tower over that base is free of rank 2^k by its recursive
+normal basis. Its coefficient inclusion into the full three-variable
+polynomial ring is proved injective, and each actual radicand and
+the complete equation list are proved to map to their exact original
+homogenized polynomials. The faithful tower base change is followed
+by literal list transport and the explicit weighted presentation
+equivalence, giving an actual injective map into the source quotient.
+
+Every radical generator, every normal basis vector and the base
+inclusion are proved to commute with the actual base change. The
+relative map sends its generators to the exact source quotient
+radicals, with all list indices tracked. Its image as a base algebra,
+after restricting scalars, is proved to be exactly the source
+Veronese algebra: the scalar range is the previously identified pure
+base image and the generator range is the actual radical range.
+The exact source generation theorem supplies both inclusions.
+
+The image basis is transported through this proved image equality
+to the actual source Veronese algebra. Its module structure is the
+one induced by the previously constructed standard-base ring map,
+and the scalar compatibility is checked explicitly. The resulting
+basis, freeness, module finiteness and exact rank 2^k are internal
+Lean conclusions. No freeness, image equality, degree or counting
+assertion is supplied as an assumption.
+
+The finite-free statement holds over every field and for arbitrary
+coefficients, including zero coefficients, whenever D is positive
+and every root count is at most 2D. It does not require characteristic
+zero, disjointness, nonempty root sets or generic square-class
+independence. Those hypotheses remain separate inputs to the already
+proved integrality statement. The general basis and faithful-map
+lemmas work for arbitrary commutative coefficient rings, with
+nontriviality where needed for finrank.
+
+This supplies the exact relative algebraic free rank underlying
+Step 2. The projective construction, the base projective-scheme
+identification, the degree-zero function-field bridge, the projective
+cover degree and all surface- and curve-degree formulas remain open.
+No projective conclusion is inferred solely from this affine-cone
+module computation. External surface coverings and two-variable
+host counts remain open. T1.7 stays in_progress and numbered coverage
+stays 79/167. Confirmed improvements total 106; no manuscript
+conclusion error is asserted. No external estimate, dependency
+download, original-source change or Palomar registration is introduced.
+
+Verified with Lean v4.36.0-rc2: targeted builds and full lake build (11455 jobs), actual 8044-declaration axiom audit, all 5761 ledger/finding declaration references, 138 preserved source-manifest entries and the complete 167-result inventory. Only propext, Classical.choice and Quot.sound occur. Ubuntu root free space: 14.29 GiB. Numbered coverage remains 79/167; confirmed improvements total 106.

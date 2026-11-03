@@ -1739,3 +1739,10 @@ public import PaperP1.Algebra.FiniteQuadraticSubalgebra
 public import PaperP1.Algebra.HomogeneousSplitRadicalFiniteVeronese
 public import PaperP1.Algebra.StandardBaseVeronese
 public import PaperP1.Algebra.HomogeneousSplitRadicalBaseInjection
+public import PaperP1.Algebra.QuadraticTowerGeneratorBaseChange
+public import PaperP1.Algebra.QuadraticTowerImageBasis
+public import PaperP1.Algebra.HomogeneousSplitRadicalVeroneseTowerData
+public import PaperP1.Algebra.QuadraticTowerListCongr
+public import PaperP1.Algebra.RelativeVeroneseMap
+public import PaperP1.Algebra.RelativeVeroneseImage
+public import PaperP1.Algebra.RelativeVeroneseBasis

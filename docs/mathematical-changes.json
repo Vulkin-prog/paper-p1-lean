@@ -6352,6 +6352,39 @@
         }
       ],
       "validation_commit": "0102a3a7a666cc96160fae026899a788fb2831e4"
+    },
+    {
+      "id": "P1-MATH-0106",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Step 2 gives the weighted integral presentation, its Veronese generators and a finite projective cover of generic degree 2^k. It does not state a relative free normal basis of the actual Veronese algebra over the standard Veronese base or separate the hypotheses needed only for integrality.",
+      "finding": "For every field F, arbitrary coefficients (including zero), positive D and root counts at most 2D, the literal source D-th Veronese algebra is finite free of rank 2^k over the standard D-th Veronese subalgebra of F[X,Y,Z]. An explicit normal basis is constructed from the literal relative quadratic tower and transported through a proved equality of its faithful image with the source Veronese algebra. Characteristic zero and generic square-class independence are unnecessary for this module statement; the independent integrality theorem retains its own exact hypotheses.",
+      "evidence": [
+        "PaperP1.RelativeVeroneseBasis.source_free_rank",
+        "PaperP1.RelativeVeroneseBasis.sourceBasis_apply",
+        "PaperP1.RelativeVeroneseImage.image_eq_source",
+        "PaperP1.RelativeVeroneseMap.toQuotient_injective",
+        "PaperP1.RelativeVeroneseMap.toQuotient_root",
+        "PaperP1.HomogeneousSplitRadicalVeroneseTowerData.baseRadicands_map",
+        "PaperP1.QuadraticTowerGeneratorBaseChange.map_basis"
+      ],
+      "proposed_revision": "Add the explicit relative normal-basis statement to Step 2 before the projective conclusions. State finite freeness and rank over the standard Veronese base without characteristic-zero or independence assumptions, and reserve those hypotheses for integrality and the generic-field interpretation. Keep the passage to projective degree as a separate justified step.",
+      "impact": "Strengthens the actual Veronese finite-map assertion to an explicit free module and separates its formal monic-algebra content from the integrality argument. It introduces no point-count premise, changes no claimed host-count exponent and does not certify the remaining projective degree formulas.",
+      "validation": "Verified with Lean v4.36.0-rc2: targeted builds and full lake build (11455 jobs), actual 8044-declaration axiom audit, all 5761 ledger/finding declaration references, 138 preserved source-manifest entries and the complete 167-result inventory. Only propext, Classical.choice and Quot.sound occur. Ubuntu root free space: 14.29 GiB. Numbered coverage remains 79/167; confirmed improvements total 106.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
