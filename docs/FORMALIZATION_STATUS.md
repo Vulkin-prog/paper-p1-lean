@@ -3,6 +3,8 @@
 Stage: **exact probability identities and uniform arithmetic foundations**, 3 November 2026.
 Neither document is fully formalized.
 
+Article14.5 is complete conditionally: its unconditional positive connected lower bound now passes to the full third factorial cumulant under the recorded geometry.
+
 Article11.1–11.3 and15.1, and companion T7.1, now have complete conditional source statements under the recorded geometric properties. Their conditional status does not increase unconditional numbered coverage.
 
 Article Theorem 3.3 now has all five literal conclusions proved **conditionally** on the explicitly recorded geometric properties. See [complete pair-profile alignment](COMPLETE_PAIR_PROFILE_ALIGNMENT.md). This is not an unconditional completion or a Palomar registration.
@@ -36,7 +38,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **9645 audited theorem/lemma declarations**. This
+- The project currently has **9647 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -11326,3 +11328,46 @@ results. Existing geometric conditional statements retain their
 explicit unproved properties. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (12953 jobs); direct axiom audit passed for 9645 declarations using only propext, Classical.choice and Quot.sound; all 7799 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.20 GiB.
+
+
+## The rational witness survives in the full third cumulant
+
+Article Proposition14.5 now has every literal conclusion proved,
+conditionally on exactly the previously inventoried normalized-curve
+and ordinary/chosen-source surface-cover properties. Its status moves
+from in_progress to conditional. The actual positive connected
+lower bound remains unconditional. Numbered unconditional coverage
+stays82/167 and confirmed mathematical improvements stay120.
+
+SharpThirdCumulantLowerUnderInputs.article_14_5 applies the already
+proved sharp third-cumulant cancellation at the fixed margin1/15.
+Its error is N^(-43/30), whereas the actual rational witness family
+gives K3plus>=c(C)*N^(-41/30), with the explicit positive
+c(C)=2^(-4-(71/30)*C)/240. A proved constant-absorption estimate
+bounds the error by c(C)*N^(-41/30) eventually. Therefore the full
+third factorial cumulant is at least5*c(C)*N^(-41/30).
+The factor5 is a convenient checked lower constant, not a sharp
+leading coefficient. Every covariance sign, incompatible triple
+and repeated occurrence is already included in the cancellation
+theorem; none of these terms is discarded in the lower bound.
+
+The joint theorem simultaneously supplies the lower bound for
+K3plus on the actual positive-marginal ground set, for its third
+factorial cumulant, and for the third factorial cumulant of the
+full original dyadic count. The last equality uses the proved
+exact restriction of all factorial moments to positive marginals.
+It does not discard an exceptional-window event. The common
+threshold precedes every critical length. All geometric inputs
+are ordinary explicit theorem arguments, at the single fixed
+source-cover cap GeneralGraphHostCount.sizeCap(1/30720), and
+the corresponding explicitly displayed finite degree bounds.
+
+No target cumulant lower bound, error estimate, arithmetic
+exception count or rational witness density is assumed. There
+is no new literature property, kernel axiom, dependency download,
+Paper C port or source-manuscript edit. This does not complete
+the sharp upper bound for the third cumulant or the remaining
+aligned/primitive triple populations in article14.1/14.3/14.6.
+Palomar remains deferred until the complete project is verified.
+
+Verified under Lean v4.36.0-rc2: full build passed (12955 jobs); direct axiom audit passed for 9647 declarations using only propext, Classical.choice and Quot.sound; all 7801 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.18 GiB.

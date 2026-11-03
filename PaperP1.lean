@@ -2203,3 +2203,4 @@ public import PaperP1.Asymptotics.SquareCertificateCount
 public import PaperP1.Asymptotics.SmallKernelLcmGrowth
 public import PaperP1.Asymptotics.SeveralSmallKernelCount
 public import PaperP1.Asymptotics.SmallKernelWindows
+public import PaperP1.Asymptotics.SharpThirdCumulantLowerUnderInputs

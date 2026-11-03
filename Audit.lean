@@ -6072,6 +6072,8 @@ import PaperP1
 #print axioms PaperP1.SharpRunConversionUnderInputs.uniform_conversion
 #print axioms PaperP1.SharpThirdCancellationUnderInputs.connected_activity_eq
 #print axioms PaperP1.SharpThirdCancellationUnderInputs.uniform_cancellation
+#print axioms PaperP1.SharpThirdCumulantLowerUnderInputs.error_absorption
+#print axioms PaperP1.SharpThirdCumulantLowerUnderInputs.article_14_5
 #print axioms PaperP1.ShiftedQuadraticKernelCount.ordered_pair_count
 #print axioms PaperP1.ShiftedQuadraticKernelCount.two_factor_count
 #print axioms PaperP1.ShortCertificateDegreeBudget.envelope_tendsto
