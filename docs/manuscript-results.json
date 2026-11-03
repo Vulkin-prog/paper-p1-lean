@@ -7107,7 +7107,8 @@
           "validation": "Verified with Lean v4.36.0-rc2: full build 12373 jobs, direct axiom audit of 8673 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6561 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 15.06 GiB.",
           "validation_commit": "89f0b95c219ba1c97640eb156c59aaa3c4132b0e"
         }
-      ]
+      ],
+      "validation_commit": "3458dad13c4b07d040c6ab865fa70975e0438bed"
     },
     {
       "label": "p1:arith:dense",
