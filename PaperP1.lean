@@ -2440,3 +2440,12 @@ public import PaperP1.Asymptotics.DenseAdmissibleSeedFamiliesUnderInputs
 public import PaperP1.Asymptotics.TwoTargetJointMassUnderInputs
 public import PaperP1.Model.DenseAdmissiblePairSeeds
 public import PaperP1.Model.TwoTargetJointWeight
+public import PaperP1.Arithmetic.DenseCompressedPairs
+public import PaperP1.Asymptotics.DenseCompressedPairCount
+public import PaperP1.Asymptotics.DensePairCrossingFamiliesUnderInputs
+public import PaperP1.Asymptotics.DensePairCrossingSeedsUnderInputs
+public import PaperP1.Asymptotics.DenseTwoTargetJointMassUnderInputs
+public import PaperP1.Asymptotics.StrongAlignedDenseJointMass
+public import PaperP1.Asymptotics.StrongAlignedDensePairCount
+public import PaperP1.Asymptotics.StrongAlignedUnitChannels
+public import PaperP1.Model.DensePairCrossingSeeds

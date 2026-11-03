@@ -2859,6 +2859,10 @@ import PaperP1
 #print axioms PaperP1.DefectivePredicate.canonical_odd_mul_sq_decomposition
 #print axioms PaperP1.DefectivePredicate.oddPrimeSupport_subset_smallPrimesUpTo
 #print axioms PaperP1.DefectivePredicate.hDefective_iff_exists_HDefectRepresentation
+#print axioms PaperP1.DenseCompressedPairs.mem_pairs
+#print axioms PaperP1.DenseCompressedPairs.cover
+#print axioms PaperP1.DenseCompressedPairs.offset_card_le
+#print axioms PaperP1.DenseCompressedPairs.finite_card_bound
 #print axioms PaperP1.DenseTargetClassification.class_equation
 #print axioms PaperP1.DenseTargetClassification.certificate_or_code
 #print axioms PaperP1.DenseTargetCover.mem_targets
@@ -5415,6 +5419,7 @@ import PaperP1
 #print axioms PaperP1.DenseAdmissiblePairSeedsUnderInputs.uniform_bound
 #print axioms PaperP1.DenseAdmissibleSeedFamiliesUnderInputs.uniform_seeds
 #print axioms PaperP1.DenseAdmissibleSeedFamiliesUnderInputs.uniform_centered_extensions
+#print axioms PaperP1.DenseCompressedPairCount.uniform_count
 #print axioms PaperP1.DenseCompressedTargetCount.uniform_offsets
 #print axioms PaperP1.DenseCompressedTargetCount.article_15_3
 #print axioms PaperP1.DenseDirectCrossingFamiliesUnderInputs.uniform_families
@@ -5425,12 +5430,16 @@ import PaperP1
 #print axioms PaperP1.DensePairActivityUnderInputs.dense_components
 #print axioms PaperP1.DensePairActivityUnderInputs.centered_host_bound
 #print axioms PaperP1.DensePairActivityUnderInputs.uniform_activity
+#print axioms PaperP1.DensePairCrossingFamiliesUnderInputs.uniform_seeds
+#print axioms PaperP1.DensePairCrossingFamiliesUnderInputs.uniform_centered_extensions
+#print axioms PaperP1.DensePairCrossingSeedsUnderInputs.uniform_bound
 #print axioms PaperP1.DensePrimitiveTripleMassUnderInputs.uniform_bound
 #print axioms PaperP1.DenseSourcePairKernelUnderInputs.uniform_source_kernel
 #print axioms PaperP1.DenseTargetCount.small_residual_exponent
 #print axioms PaperP1.DenseTargetCount.uniform_count
 #print axioms PaperP1.DenseTargetCount.mem_freshTargets
 #print axioms PaperP1.DenseTargetCount.main_6_2
+#print axioms PaperP1.DenseTwoTargetJointMassUnderInputs.uniform_joint
 #print axioms PaperP1.DenseWeightedSectorUnderInputs.weighted_card_bound
 #print axioms PaperP1.DenseWeightedSectorUnderInputs.relative_kernel_le_full_sum
 #print axioms PaperP1.DenseWeightedSectorUnderInputs.full_kernel_le_full_sum
@@ -6546,6 +6555,9 @@ import PaperP1
 #print axioms PaperP1.SplitTupleExposure.source_exposure
 #print axioms PaperP1.SquareCertificateCount.uniform_count
 #print axioms PaperP1.SquareTupleCount.square_tuple_count
+#print axioms PaperP1.StrongAlignedDenseJointMass.uniform_joint
+#print axioms PaperP1.StrongAlignedDensePairCount.uniform_count
+#print axioms PaperP1.StrongAlignedUnitChannels.bounded_channels
 #print axioms PaperP1.SublogCardinalityCap.uniform_cap
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_joint_mass
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_factorial
@@ -8219,6 +8231,9 @@ import PaperP1
 #print axioms PaperP1.DenseAdmissiblePairSeeds.mem_targets
 #print axioms PaperP1.DenseAdmissiblePairSeeds.family_data
 #print axioms PaperP1.DenseAdmissiblePairSeeds.mass_bound
+#print axioms PaperP1.DensePairCrossingSeeds.mem_targets
+#print axioms PaperP1.DensePairCrossingSeeds.family_data
+#print axioms PaperP1.DensePairCrossingSeeds.mass_bound
 #print axioms PaperP1.DependentFactorialBound.factorial_upper
 #print axioms PaperP1.DependentFactorialBound.nat_power_le_factorial
 #print axioms PaperP1.DependentFactorialBound.ordinary_upper
