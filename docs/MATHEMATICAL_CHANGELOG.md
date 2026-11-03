@@ -5944,3 +5944,55 @@ identifier, external estimate, dependency download, original-source
 change or Palomar registration is introduced.
 
 Verified with Lean v4.36.0-rc2: targeted builds and full lake build (11437 jobs), actual 8004-declaration axiom audit, all 5721 ledger/finding declaration references, 138 preserved source-manifest entries and the complete 167-result inventory. Only propext, Classical.choice and Quot.sound occur. Ubuntu root free space: 14.32 GiB. Numbered coverage remains 79/167; confirmed improvements remain 105.
+
+
+## The faithful finite map from the standard base Veronese algebra
+
+The pure base algebra in T1.7 Step 2 is now identified by an
+explicit F-algebra equivalence with the standard D-th Veronese
+algebra of the native polynomial ring F[X,Y,Z]. This standard algebra
+is defined as the actual range of the direct sum of the ordinary
+homogeneous pieces of degrees nD, not as a polynomial ring assumed
+to represent the base.
+
+The coded pure base monomials in the full weighted variable set are
+proved to be exactly the images, under the literal base-variable
+rename, of ordinary degree-D monomials in three variables. The reverse
+identification constructs the actual exponent preimage and proves
+that its image is the original exponent vector using the vanishing
+of all radical exponents. Native homogeneous degree-D polynomials
+and the standard Veronese algebra have these exact generators.
+Mapping them through the actual quotient gives precisely the pure
+base image used in the finite-inclusion checkpoint.
+
+The complete native three-variable polynomial map into the literal
+weighted quotient is proved injective. Under the explicit weighted
+presentation equivalence, its value on every polynomial is the
+canonical base image of that polynomial under the checked
+three-variable equivalence into the actual radical tower. The base
+map into this tower is injective even for arbitrary radicands. Thus
+the base injectivity uses no domain assertion and no square-class
+independence premise. Restriction to the standard Veronese algebra
+gives the stated explicit base equivalence and its value formula.
+
+Composing this equivalence with the already verified pure-base
+inclusion constructs the actual standard-base-to-source-Veronese
+ring map. Its injectivity and finiteness are proved. These results
+hold over every field for the exact indexed source system; positive
+D and the source root-count bound supply the finite-map assertion.
+No nonzero-coefficient, characteristic-zero or disjointness premise
+is needed for this finite faithful base map. The separate source
+integrality theorem retains its own exact hypotheses.
+
+The relative free rank and generic cover degree 2^k, the projective
+finite morphism, the identification of the base projective scheme
+with the projective plane, and all projective degree formulas remain
+open. This checkpoint identifies and proves the actual affine-cone
+base map; it does not infer those projective conclusions from ring
+finiteness alone. The external surface covering and two-variable
+host counts remain open. T1.7 stays in_progress, numbered coverage
+stays 79/167 and confirmed improvements stay 105. No new improvement
+identifier, external estimate, dependency download, original-source
+change or Palomar registration is introduced.
+
+Verified with Lean v4.36.0-rc2: targeted builds and full lake build (11441 jobs), actual 8015-declaration axiom audit, all 5732 ledger/finding declaration references, 138 preserved source-manifest entries and the complete 167-result inventory. Only propext, Classical.choice and Quot.sound occur. Ubuntu root free space: 14.31 GiB. Numbered coverage remains 79/167; confirmed improvements remain 105.

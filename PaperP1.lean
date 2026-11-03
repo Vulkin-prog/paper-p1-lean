@@ -1737,3 +1737,5 @@ public import PaperP1.Algebra.HomogeneousSplitRadicalVeronese
 public import PaperP1.Algebra.SplitBaseVeronese
 public import PaperP1.Algebra.FiniteQuadraticSubalgebra
 public import PaperP1.Algebra.HomogeneousSplitRadicalFiniteVeronese
+public import PaperP1.Algebra.StandardBaseVeronese
+public import PaperP1.Algebra.HomogeneousSplitRadicalBaseInjection

@@ -752,6 +752,11 @@ import PaperP1
 #print axioms PaperP1.HomogeneousSplitRadicalAlgebra.generic_field
 #print axioms PaperP1.HomogeneousSplitRadicalAlgebra.coordinate_isDomain
 #print axioms PaperP1.HomogeneousSplitRadicalAlgebra.coordinate_finrank
+#print axioms PaperP1.HomogeneousSplitRadicalBaseInjection.presentationEquiv_base
+#print axioms PaperP1.HomogeneousSplitRadicalBaseInjection.basePolynomialMap_injective
+#print axioms PaperP1.HomogeneousSplitRadicalBaseInjection.baseEquiv_apply
+#print axioms PaperP1.HomogeneousSplitRadicalBaseInjection.standardBaseMap_injective
+#print axioms PaperP1.HomogeneousSplitRadicalBaseInjection.standardBaseMap_finite
 #print axioms PaperP1.HomogeneousSplitRadicalChart.linear_chart
 #print axioms PaperP1.HomogeneousSplitRadicalChart.word_chart
 #print axioms PaperP1.HomogeneousSplitRadicalChart.radicand_chart
@@ -1134,6 +1139,12 @@ import PaperP1
 #print axioms PaperP1.SquareLineMatching.square_product_root
 #print axioms PaperP1.SquareLineMatching.matches_offset
 #print axioms PaperP1.SquareLineMatching.function_matches_offset
+#print axioms PaperP1.StandardBaseVeronese.baseMonomials_eq_image
+#print axioms PaperP1.StandardBaseVeronese.homogeneous_mem_adjoin_monomials
+#print axioms PaperP1.StandardBaseVeronese.adjoin_monomials_eq
+#print axioms PaperP1.StandardBaseVeronese.degreeImage_id
+#print axioms PaperP1.StandardBaseVeronese.nativeVeronese_eq_adjoin
+#print axioms PaperP1.StandardBaseVeronese.baseAlgebra_eq_map
 #print axioms PaperP1.Algebra.properPrefix_insert_max
 #print axioms PaperP1.Algebra.properPrefix_eq_erase_max
 #print axioms PaperP1.Algebra.orderedBoundary_nonempty
