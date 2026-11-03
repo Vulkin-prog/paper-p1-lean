@@ -6215,6 +6215,7 @@ import PaperP1
 #print axioms PaperP1.LogarithmicWordPowers.polynomial_factor_uniformSubpolynomial
 #print axioms PaperP1.LogarithmicWordPowers.polynomial_factor_le_rpow_eventually
 #print axioms PaperP1.LowCompatibleNullityTail.uniform_bound
+#print axioms PaperP1.LowConnectedRankMass.uniform_bound
 #print axioms PaperP1.LowCrossingJointMass.uniform_bound
 #print axioms PaperP1.LowCrossingTargetJointMass.uniform_bound
 #print axioms PaperP1.LowPrimitiveTripleRankMass.uniform_bound
@@ -6910,8 +6911,10 @@ import PaperP1
 #print axioms PaperP1.StrongAlignedInteriorEdges.uniform_edges
 #print axioms PaperP1.StrongAlignedUnitChannels.bounded_coprime_channels
 #print axioms PaperP1.StrongAlignedUnitChannels.bounded_channels
+#print axioms PaperP1.StrongExactTripleActivityReductionUnderInputs.uniform_reduction
 #print axioms PaperP1.StrongNoExactPairMassUnderBCN.uniform_count
 #print axioms PaperP1.StrongNoExactPairMassUnderBCN.uniform_joint_sum
+#print axioms PaperP1.StrongNoExactTripleMassUnderBCN.uniform_bound
 #print axioms PaperP1.StrongNonalignedSourceProfileUnderBCN.uniform_sources
 #print axioms PaperP1.StrongNonalignedTripleProfileUnderBCN.main_12_2
 #print axioms PaperP1.SublogCardinalityCap.uniform_cap
@@ -7086,6 +7089,8 @@ import PaperP1
 #print axioms PaperP1.WeakAlignedSelectedGrids.uniform_admissible
 #print axioms PaperP1.WeakAlignmentUnitCount.uniform_bound
 #print axioms PaperP1.WeakAlignmentUnitCount.uniform_weak_bound
+#print axioms PaperP1.WeakExactTripleMassUnderBCN.uniform_bound
+#print axioms PaperP1.WeakExactTripleMassUnderBCN.uniform_reduction
 #print axioms PaperP1.WeakPairActivityAsymptotic.critical_binary_power
 #print axioms PaperP1.WeakPairActivityAsymptotic.uniform_activity
 #print axioms PaperP1.WeightedNonalignedPairsUnderInputs.uniform_families

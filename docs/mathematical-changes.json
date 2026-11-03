@@ -10748,6 +10748,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "cdec902b128b20908bf96303cf04fb7a5d2a097f"
+    },
+    {
+      "id": "P1-MATH-0153",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:third:main",
+        "number": "14.1",
+        "page": 34,
+        "source": "main_sections/third_cumulant.tex",
+        "line": 32,
+        "statement_sha256": "b3c908053821806fbdaaae7e9cc2d22a4c3fd53a144da0b135f5997df780d34c"
+      },
+      "original_assumption": "The final compatible-triple partition fixes eta=1/30 and theta<eta/200. Its low-nullity sector has exponent22/15, while the strong nonaligned sector is controlled after forcing the fixed rank cap3L/2.",
+      "finding": "Choose the nullity cutoff after the requested accuracy:1/b<=epsilon/4,eta=1/(2b),theta=eta/200, all before N. The actual low connected rank mass, complete near-primitive confinement and full strong NoExact profile then give a residual joint-mass error N^(-3/2+epsilon) outside the literal strong exact-alignment population. The existing coefficient-one joint/absolute-centered comparison transfers this same reduction to the full original third activity, including incompatibility and zero marginals. The strong NoExact branch can use the existing compatible rank cap(3/2+delta)L and absorb delta in the accuracy rather than requiring a second exact3L/2 cutoff. This does not bound the remaining strong-aligned mass or prove the optimal upper theorem.",
+      "evidence": [
+        "PaperP1.LowConnectedRankMass.uniform_bound",
+        "PaperP1.StrongNoExactTripleMassUnderBCN.uniform_bound",
+        "PaperP1.WeakExactTripleMassUnderBCN.uniform_bound",
+        "PaperP1.WeakExactTripleMassUnderBCN.uniform_reduction",
+        "PaperP1.StrongExactTripleActivityReductionUnderInputs.uniform_reduction",
+        "PaperP1.WeakExactTripleMassUnderBCN.StrongExactPair"
+      ],
+      "proposed_revision": "After prescribing the final error margin, choose b,eta and theta as above. State A3<=the actual strong exact-alignment triple joint mass+O(N^(-3/2+epsilon)), with coefficient one. Keep theta dependent on the accuracy and fixed before N; retain the explicit geometric inputs of this formal route. Then isolate the remaining strong aligned estimate as the separate final step.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13955 jobs); direct axiom audit passed for 10972 declarations using only propext, Classical.choice and Quot.sound; all 9468 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.80 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

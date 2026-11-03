@@ -2693,3 +2693,7 @@ public import PaperP1.Asymptotics.NearPrimitivePhysicalRegularization
 public import PaperP1.Asymptotics.NearPrimitiveTripleHostsUnderBCN
 public import PaperP1.Asymptotics.PointwiseRankWeightCap
 public import PaperP1.Asymptotics.NearPrimitiveTripleMassUnderBCN
+public import PaperP1.Asymptotics.LowConnectedRankMass
+public import PaperP1.Asymptotics.StrongNoExactTripleMassUnderBCN
+public import PaperP1.Asymptotics.WeakExactTripleMassUnderBCN
+public import PaperP1.Asymptotics.StrongExactTripleActivityReductionUnderInputs
