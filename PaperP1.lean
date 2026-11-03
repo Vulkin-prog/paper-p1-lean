@@ -2435,3 +2435,8 @@ public import PaperP1.Asymptotics.LowTwoPairJointMassUnderInputs
 public import PaperP1.Asymptotics.LowTwoPairSeedsUnderInputs
 public import PaperP1.Model.BlockJointIntersection
 public import PaperP1.Model.LowTwoPairSeeds
+public import PaperP1.Asymptotics.DenseAdmissiblePairSeedsUnderInputs
+public import PaperP1.Asymptotics.DenseAdmissibleSeedFamiliesUnderInputs
+public import PaperP1.Asymptotics.TwoTargetJointMassUnderInputs
+public import PaperP1.Model.DenseAdmissiblePairSeeds
+public import PaperP1.Model.TwoTargetJointWeight

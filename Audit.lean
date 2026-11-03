@@ -5412,6 +5412,9 @@ import PaperP1
 #print axioms PaperP1.DegreeOneRootHostCount.critical_window_positive
 #print axioms PaperP1.DegreeOneRootHostCount.uniform_hosts
 #print axioms PaperP1.DegreeOneRootHostCount.uniform_hosts_of_many
+#print axioms PaperP1.DenseAdmissiblePairSeedsUnderInputs.uniform_bound
+#print axioms PaperP1.DenseAdmissibleSeedFamiliesUnderInputs.uniform_seeds
+#print axioms PaperP1.DenseAdmissibleSeedFamiliesUnderInputs.uniform_centered_extensions
 #print axioms PaperP1.DenseCompressedTargetCount.uniform_offsets
 #print axioms PaperP1.DenseCompressedTargetCount.article_15_3
 #print axioms PaperP1.DenseDirectCrossingFamiliesUnderInputs.uniform_families
@@ -6646,6 +6649,7 @@ import PaperP1
 #print axioms PaperP1.TwoTargetDenseMass.uniform_mass
 #print axioms PaperP1.TwoTargetDensePairTheorem.article_15_2_dense_pair
 #print axioms PaperP1.TwoTargetIntrinsicEnumeration.uniform_enumeration
+#print axioms PaperP1.TwoTargetJointMassUnderInputs.uniform_joint
 #print axioms PaperP1.TwoTargetMixedClassData.bounded_card_le
 #print axioms PaperP1.TwoTargetMixedClassData.bounded_coefficient
 #print axioms PaperP1.TwoTargetMixedClassData.exists_pattern
@@ -8212,6 +8216,9 @@ import PaperP1
 #print axioms PaperP1.CountVariance.count_memLp_two
 #print axioms PaperP1.CountVariance.variance_count
 #print axioms PaperP1.CountVariance.second_cumulant_variance
+#print axioms PaperP1.DenseAdmissiblePairSeeds.mem_targets
+#print axioms PaperP1.DenseAdmissiblePairSeeds.family_data
+#print axioms PaperP1.DenseAdmissiblePairSeeds.mass_bound
 #print axioms PaperP1.DependentFactorialBound.factorial_upper
 #print axioms PaperP1.DependentFactorialBound.nat_power_le_factorial
 #print axioms PaperP1.DependentFactorialBound.ordinary_upper
@@ -9281,6 +9288,10 @@ import PaperP1
 #print axioms PaperP1.TripleRankGeometry.pair_joint_le_rank_mass
 #print axioms PaperP1.TripleRankGeometry.family_joint_le_rank_mass
 #print axioms PaperP1.TupleMassIteration.iterate
+#print axioms PaperP1.TwoTargetJointWeight.pair_kernel
+#print axioms PaperP1.TwoTargetJointWeight.intersection_le_kernel
+#print axioms PaperP1.TwoTargetJointWeight.joint_bound
+#print axioms PaperP1.TwoTargetJointWeight.one_target_bound
 #print axioms PaperP1.TwoTargetPrimitiveData.source_enumeration
 #print axioms PaperP1.TwoTargetPrimitiveData.primitive_data
 #print axioms PaperP1.TwoTargetPrimitiveData.weight_factor
