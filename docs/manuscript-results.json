@@ -2560,7 +2560,8 @@
           "validation": "Lean v4.36.0-rc2 full build passed (10731 jobs); actual axiom audit passed for all 6448 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4165 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.62 GiB. Under the existing single explicit BCN input, actual connected triple joint mass, full A3 and absolute third factorial cumulant are at most N^(-g+epsilon), g=1/2-(2/3)log2>0. All-aligned target counting is unconditional; the stronger nonaligned actual probability cap retains the strict rank gap. Zero-marginal centered coefficients vanish exactly, so the full A3 and cumulant include all actual dyadic starts. The literal deficit and positive-ground incompatible/comparison costs have coarse exponent1; repeated-index cost has exponent3/2. Source sharp exponents and optimality remain open; no numbered completion is added. Coverage77/167 (main28/73, companion49/94), confirmed findings87. Finding82 is extended only with its stronger probability consequence. No new external input, PaperC port, dependency download, manuscript-byte change or Palomar registration.",
           "validation_commit": "073a25974c6a6cccb2e3e6da7630e79c3d77d5d6"
         }
-      ]
+      ],
+      "validation_commit": "4db28b5c922c9cf9e8a3ee9477e931f28cc9a15a"
     },
     {
       "label": "p13:activity:incompatible",
@@ -2643,7 +2644,8 @@
           "validation": "Lean v4.36.0-rc2 full build passed (10731 jobs); actual axiom audit passed for all 6448 theorem/lemma declarations with only propext, Classical.choice and Quot.sound. All 4165 distinct ledger/finding declarations were directly checked. All 138 original manifest entries and 167 numbered records remain intact. Ubuntu available space: 15.62 GiB. Under the existing single explicit BCN input, actual connected triple joint mass, full A3 and absolute third factorial cumulant are at most N^(-g+epsilon), g=1/2-(2/3)log2>0. All-aligned target counting is unconditional; the stronger nonaligned actual probability cap retains the strict rank gap. Zero-marginal centered coefficients vanish exactly, so the full A3 and cumulant include all actual dyadic starts. The literal deficit and positive-ground incompatible/comparison costs have coarse exponent1; repeated-index cost has exponent3/2. Source sharp exponents and optimality remain open; no numbered completion is added. Coverage77/167 (main28/73, companion49/94), confirmed findings87. Finding82 is extended only with its stronger probability consequence. No new external input, PaperC port, dependency download, manuscript-byte change or Palomar registration.",
           "validation_commit": "073a25974c6a6cccb2e3e6da7630e79c3d77d5d6"
         }
-      ]
+      ],
+      "validation_commit": "4db28b5c922c9cf9e8a3ee9477e931f28cc9a15a"
     },
     {
       "label": "p13:activity:kappa3",
@@ -2798,7 +2800,8 @@
           "validation": "Verified Lean v4.36.0-rc2 full build (10813 jobs), actual Audit.lean kernel audit (6675 declarations; only propext, Classical.choice, Quot.sound), 4392 direct ledger/finding declaration checks, 138 source manifest entries and all 167 original statement hashes. Ubuntu root free space: 15.45 GiB. Exact deletion of zero-marginal sites preserves every actual factorial moment and the third cumulant. Under the existing ordinary explicit BCN premise, full absolute triple activity and the third factorial cumulant are uniformly at most N^(-1/2+eta) for every dyadic subground. All repeated and incompatible costs remain explicit. The sharp source exponents remain open; main 11.3,14.1,14.6 stay in progress. Coverage 77/167; improvements 88.",
           "validation_commit": "eb76ab9c1c1ac6373fe0869a0f3530aeb25669e1"
         }
-      ]
+      ],
+      "validation_commit": "4db28b5c922c9cf9e8a3ee9477e931f28cc9a15a"
     },
     {
       "label": "p13:conf:near-primitive",
