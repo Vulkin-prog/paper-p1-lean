@@ -5793,3 +5793,54 @@ identifier. No external input, dependency download, original-source
 change or Palomar registration is introduced.
 
 Verified with Lean v4.36.0-rc2: full lake build (11409 jobs), actual Audit.lean kernel-axiom audit (7911 declarations; only propext, Classical.choice, Quot.sound), all 5628 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.36 GiB.
+
+
+## The literal weighted presentation, homogeneous relations and Z=1 chart
+
+The literal weighted polynomial quotient in Step 2 of T1.7 is
+now identified with the already constructed homogenized radical
+coordinate algebra. This is an explicit ring equivalence, rather
+than an identification of informal presentations. The actual
+quotient by W_i^2-c_i*Z^(2D-|I_i|-|J_i|)*product(X+aZ)*product(Y+bZ)
+is consequently proved to be a domain over every characteristic-zero
+field, under the source nonzero-coefficient, nonempty and disjoint
+root-list hypotheses. No integrality premise is left in this source
+corollary.
+
+A general presentation theorem first constructs inverse algebra maps
+between R[W_1,...,W_k]/(W_i^2-a_i) and the literal quadratic tower,
+for every commutative ring R and every radicand list, including the
+empty list. The maps preserve every radical generator. The kernel
+of the actual polynomial evaluation is proved to be exactly the
+relation ideal. The weighted presentation is transported to this
+general quotient through the actual variable-sum equivalence and
+the checked three-variable polynomial equivalence. Every generator
+and every actual source relation is tracked through those maps.
+
+In the native three-variable polynomial ring, the homogenized
+radicands are proved homogeneous of degree 2D whenever their root
+count is at most 2D. Nonzero coefficients give nonzero radicands and
+exact total degree 2D; these polynomial statements hold over every
+field, without a characteristic-zero assumption. The actual weighted
+relations, with base-variable weights 1 and radical-variable weight
+D, are proved weighted homogeneous of degree 2D. Their literal span
+ideal is homogeneous for the native weighted polynomial grading.
+
+The Z=1 coefficient evaluation, lifted through both polynomial
+coordinates, sends each actual homogenized radicand and the entire
+list to the previously checked affine system. The recursive base
+change supplies an actual ring homomorphism between the corresponding
+coordinate algebras, commuting with this base evaluation.
+
+The induced quotient grading as a bundled graded algebra, generation
+of its D-th Veronese algebra, the projective construction and its
+cover- and curve-degree formulas remain open. This checkpoint does
+not infer projective degree formulas from the affine polynomial
+identities. The external surface covering and the two-variable host
+counts also remain open. T1.7 stays in_progress, numbered coverage
+stays 79/167, and confirmed improvements stay 105. These are checked
+source-algebra foundations with no new improvement identifier. No
+external estimate, new dependency, original manuscript change or
+Palomar registration is introduced.
+
+Verified with Lean v4.36.0-rc2: targeted builds and full lake build (11419 jobs), actual 7955-declaration axiom audit, all 5672 ledger/finding declaration references, 138 preserved source-manifest entries and the complete 167-result inventory. Only propext, Classical.choice and Quot.sound occur. Ubuntu root free space: 14.34 GiB. Numbered coverage remains 79/167; confirmed improvements remain 105.

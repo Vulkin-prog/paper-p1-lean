@@ -1723,3 +1723,8 @@ public import PaperP1.Algebra.FiniteRootWordSquares
 public import PaperP1.Algebra.FiniteRootWordField
 public import PaperP1.Algebra.HomogeneousSplitRadicalData
 public import PaperP1.Algebra.HomogeneousSplitRadicalAlgebra
+public import PaperP1.Algebra.HomogeneousSplitRadicalChart
+public import PaperP1.Algebra.HomogeneousSplitRadicalPolynomials
+public import PaperP1.Algebra.HomogeneousSplitRadicalRelations
+public import PaperP1.Algebra.QuadraticTowerPresentation
+public import PaperP1.Algebra.HomogeneousSplitRadicalPresentation
