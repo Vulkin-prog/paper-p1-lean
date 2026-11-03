@@ -2149,3 +2149,12 @@ public import PaperP1.Asymptotics.TernaryGroupBudget
 public import PaperP1.Asymptotics.TernaryPatternBudget
 public import PaperP1.Asymptotics.TernaryGroupTheorem
 public import PaperP1.Asymptotics.TernaryUnboundedCutoff
+public import PaperP1.Arithmetic.ProductConfinement
+public import PaperP1.Arithmetic.CRTSupportCover
+public import PaperP1.Arithmetic.TernaryValueConfinement
+public import PaperP1.Combinatorics.LabeledPopulationCount
+public import PaperP1.Asymptotics.RankinCertificateCritical
+public import PaperP1.Asymptotics.PolylogConfinementScales
+public import PaperP1.Asymptotics.TernaryGroupConfinement
+public import PaperP1.Asymptotics.TernaryConfinementMass
+public import PaperP1.Asymptotics.TernaryGroupNegligibility
