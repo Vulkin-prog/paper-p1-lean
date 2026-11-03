@@ -1837,7 +1837,8 @@
             "P1-PROB-FIXED-CONTACT-CENTERED-ACTIVITY"
           ]
         }
-      ]
+      ],
+      "validation_commit": "17625efe0cb7dc10746c0a2da3dec760e3d16144"
     },
     {
       "label": "p1:core:rankin",
