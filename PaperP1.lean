@@ -2525,3 +2525,12 @@ public import PaperP1.Asymptotics.FixedConnectedJointWeightedUnderInputs
 public import PaperP1.Asymptotics.ConnectedJointBoundedNullityTail
 public import PaperP1.Asymptotics.AllCardinalityConnectedJointUnderInputs
 public import PaperP1.Asymptotics.AllCardinalityTotalActivityUnderInputs
+public import PaperP1.Affine.RelationLossMonotonicity
+public import PaperP1.Affine.PrimitiveCompressionCriterion
+public import PaperP1.Model.PairPrimitiveCompression
+public import PaperP1.Model.CompressedPairCoefficient
+public import PaperP1.Combinatorics.DistinguishedPairWeights
+public import PaperP1.Model.CompressedPairMass
+public import PaperP1.Asymptotics.ConnectedOneRankOffsetMassUnderInputs
+public import PaperP1.Asymptotics.ConnectedFourCoreMassUnderInputs
+public import PaperP1.Asymptotics.CompressedPairMassUnderInputs
