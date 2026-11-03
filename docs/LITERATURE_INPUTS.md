@@ -10112,3 +10112,71 @@ dependency pins and original manuscript bytes are unchanged.
 Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (12779 jobs); direct axiom audit passed for 9307 declarations using only propext, Classical.choice and Quot.sound; all 7382 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.59 GiB.
+
+
+## Actual variance and both principal phases: conditional completion of theorem 3.3
+
+All five conclusions of article Theorem 3.3 are now aligned
+and proved under explicit geometric inputs, so its ledger status
+is conditional rather than in_progress. This does not discharge
+those geometric properties or increase unconditional numbered
+coverage. The positive and signed ordered separated profiles
+retain their exact finite U_23/U_34 and S_23/S_34 polynomials.
+The existing P1-GEO-NORMALIZED-CURVE-UNIFORM,
+P1-GEO-ORDINARY-SURFACE-COVER and
+P1-GEO-CHOSEN-SOURCE-SURFACE-COVER properties remain unproved
+ordinary theorem arguments, with the precise finite caps exposed
+in the component declarations. The positive profile uses its
+epsilon-dependent source component cap; the signed, cumulant
+and phase declarations expose their fixed-density caps. No
+common supplied target remainder or hidden axiom is introduced.
+
+CountVariance proves that every actual finite infinite-model
+start count is in L2, using its actual measurability and the
+pointwise bound by the number of starts. Its Mathlib variance
+is exactly E[Z^2]-(E[Z])^2. Hence the existing full second
+factorial cumulant is literally Var(Z)-E[Z], with the diagonal
+mean term retained. ActualPairPhaseUnderInputs.alpha uses that
+actual variance and actual Bochner expectation, not a newly
+postulated scalar. These identities are unconditional.
+
+The principal height-three and height-four sums are identified
+exactly with the actual 2:3 and 3:4 main terms. The nominal
+parameter is literally lambda=N*2^(-L). The whole first-channel
+term is exactly lambda^2/(3N)*S_23(L). The existing moving
+height phases evaluate to the printed constants
+(r3+2)/(18*2^(r3/3)) and (r4+3)/(24*2^(r4/4)), with powers
+lambda^(5/3)*L*N^(-2/3) and lambda^(7/4)*L*N^(-3/4).
+The identities hold for the actual residues L mod 3 and L mod 4.
+No fixed-residue subsequence is substituted for the source claim.
+
+Unconditional positive phase lower bounds show that every
+strictly smaller power error is negligible uniformly in the
+critical band. The entire finite 3:4 channel is negligible
+relative to the 2:3 phase. The actual conditional cumulant
+remainder is instantiated at the fixed exponent -31/40,
+strictly below both phase exponents. Combining these facts
+with the proved word-phase equivalents yields, for every
+positive tolerance, a single threshold preceding every
+critical L, and both relative errors at most that tolerance.
+For the second phase, the entire finite S_23 is subtracted
+before comparison; its lower-order internal terms are retained.
+ActualPairPhaseUnderInputs.article_3_3_phases gives the two
+literal source ratios and article_3_3_cumulant gives the
+literal actual-variance-minus-mean expansion with error
+N^(-4/5+epsilon). Positivity of both phase denominators is
+proved inside uniform_phases.
+
+The new COMPLETE_PAIR_PROFILE_ALIGNMENT note maps all five
+displays and the actual probabilistic quantities to their Lean
+declarations and records the residual external scope. Main 3.2,
+3.3, 3.4 and companion T1.8 are conditional on the previously
+identified geometric properties. Unconditionally proved
+numbered coverage stays 79/167 and confirmed mathematical
+improvements stay 113. No new correction identifier is needed:
+these are the remaining exact translations and proof assemblies
+of the source theorem. Original manuscript bytes, compiler and
+dependency pins are unchanged. Palomar remains deferred until
+the full development, external inputs and alignment are complete.
+
+Verified under Lean v4.36.0-rc2: full build passed (12785 jobs); direct axiom audit passed for 9324 declarations using only propext, Classical.choice and Quot.sound; all 7400 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.57 GiB.

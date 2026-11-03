@@ -2116,3 +2116,6 @@ public import PaperP1.Arithmetic.StrictChannelSourceSeparation
 public import PaperP1.Model.PrincipalPositiveCover
 public import PaperP1.Asymptotics.PrincipalPositiveResidual
 public import PaperP1.Asymptotics.PositiveSeparatedSourceProfileUnderInputs
+public import PaperP1.Model.CountVariance
+public import PaperP1.Asymptotics.PrincipalPairPhaseComparison
+public import PaperP1.Asymptotics.ActualPairPhaseUnderInputs

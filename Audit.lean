@@ -4594,6 +4594,11 @@ import PaperP1
 #print axioms PaperP1.ActualNominalReferenceComparison.uniform_upper
 #print axioms PaperP1.ActualNominalReferenceComparison.uniform_nonzero_bias_lower
 #print axioms PaperP1.ActualNominalReferenceComparison.uniform_two_sided
+#print axioms PaperP1.ActualPairPhaseUnderInputs.alpha_eq_cumulant
+#print axioms PaperP1.ActualPairPhaseUnderInputs.main_sum
+#print axioms PaperP1.ActualPairPhaseUnderInputs.article_3_3_cumulant
+#print axioms PaperP1.ActualPairPhaseUnderInputs.uniform_phases
+#print axioms PaperP1.ActualPairPhaseUnderInputs.article_3_3_phases
 #print axioms PaperP1.ActualPairRowActivity.uniform_joint_row
 #print axioms PaperP1.ActualPairRowActivity.uniform_absolute_row
 #print axioms PaperP1.ActualPairRowActivity.uniform_marginal_cap
@@ -5653,6 +5658,15 @@ import PaperP1
 #print axioms PaperP1.PrincipalEdgeSecondMomentLower.relative_lower
 #print axioms PaperP1.PrincipalEdgeSecondMomentLower.uniform_moment_lower
 #print axioms PaperP1.PrincipalEdgeSecondMomentLower.relative_moment_lower
+#print axioms PaperP1.PrincipalPairPhaseComparison.height_three
+#print axioms PaperP1.PrincipalPairPhaseComparison.height_four
+#print axioms PaperP1.PrincipalPairPhaseComparison.mainTerm_eq_nominal
+#print axioms PaperP1.PrincipalPairPhaseComparison.whole_first_channel
+#print axioms PaperP1.PrincipalPairPhaseComparison.phase_three
+#print axioms PaperP1.PrincipalPairPhaseComparison.phase_four
+#print axioms PaperP1.PrincipalPairPhaseComparison.power_error_negligible
+#print axioms PaperP1.PrincipalPairPhaseComparison.next_channel_negligible
+#print axioms PaperP1.PrincipalPairPhaseComparison.ratio_bound
 #print axioms PaperP1.PrincipalPositiveResidual.uniform_bound
 #print axioms PaperP1.PrincipalDenseResidual.bounded_mass
 #print axioms PaperP1.PrincipalDenseResidual.uniform_dense_comparison
@@ -7379,6 +7393,9 @@ import PaperP1
 #print axioms PaperP1.CountTailBounds.falling_markov_product
 #print axioms PaperP1.CountTailBounds.probability_le_power
 #print axioms PaperP1.CountTailBounds.moment_le_count_power
+#print axioms PaperP1.CountVariance.count_memLp_two
+#print axioms PaperP1.CountVariance.variance_count
+#print axioms PaperP1.CountVariance.second_cumulant_variance
 #print axioms PaperP1.DependentFactorialBound.factorial_upper
 #print axioms PaperP1.DependentFactorialBound.nat_power_le_factorial
 #print axioms PaperP1.DependentFactorialBound.ordinary_upper
