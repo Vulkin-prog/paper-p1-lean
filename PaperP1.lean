@@ -2388,3 +2388,11 @@ public import PaperP1.Coding.MaximalSupportWord
 public import PaperP1.Model.PrimitiveActualMass
 public import PaperP1.Model.PrimitiveAnchorWitnesses
 public import PaperP1.Model.PrimitiveRankAmplification
+public import PaperP1.Affine.RelationCoreCounting
+public import PaperP1.Affine.RelationCorePeeling
+public import PaperP1.Affine.RelationProjectionRank
+public import PaperP1.Asymptotics.LargeTenCoreMass
+public import PaperP1.Asymptotics.RelationCoreIndependentBudget
+public import PaperP1.Model.RelationCoreActivityPeeling
+public import PaperP1.Model.RelationCoreMomentRatio
+public import PaperP1.Model.RelationCoreWitnesses

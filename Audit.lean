@@ -244,6 +244,12 @@ import PaperP1
 #print axioms PaperP1.RelationCoordinateSpan.intersection_ne_bot
 #print axioms PaperP1.RelationCoordinateSpan.otherSpace_subtype
 #print axioms PaperP1.RelationCoordinateSpan.full_support_intersection
+#print axioms PaperP1.RelationCoreCounting.full_support_lower
+#print axioms PaperP1.RelationCoreCounting.half_full_support
+#print axioms PaperP1.RelationCorePeeling.trace_subset
+#print axioms PaperP1.RelationCorePeeling.trace_nullity_budget
+#print axioms PaperP1.RelationCorePeeling.exists_terminal_trace
+#print axioms PaperP1.RelationCorePeeling.exists_core
 #print axioms PaperP1.Affine.relationAddition_restrictCoefficients
 #print axioms PaperP1.Affine.sum_restrictCoefficients
 #print axioms PaperP1.Affine.relationDirectPartition_top
@@ -254,6 +260,10 @@ import PaperP1
 #print axioms PaperP1.Affine.existsUnique_finest_relationPartition
 #print axioms PaperP1.RelationProjection.projection_dimension_identity
 #print axioms PaperP1.RelationProjection.nullity_increment
+#print axioms PaperP1.RelationProjectionRank.kernel_finrank
+#print axioms PaperP1.RelationProjectionRank.dimension_identity
+#print axioms PaperP1.RelationProjectionRank.loss_eq_dimension
+#print axioms PaperP1.RelationProjectionRank.erase_add_loss
 #print axioms PaperP1.Affine.relationAddition_apply
 #print axioms PaperP1.Affine.range_relationAddition
 #print axioms PaperP1.Affine.relativeNullity_eq_dimension_deficit
@@ -5822,6 +5832,8 @@ import PaperP1
 #print axioms PaperP1.LargeSmoothExceptionalSet.radius_bounds
 #print axioms PaperP1.LargeSmoothExceptionalSet.constant_selection
 #print axioms PaperP1.LargeSmoothExceptionalSet.companion_T6_2
+#print axioms PaperP1.LargeTenCoreMass.uniform_rank
+#print axioms PaperP1.LargeTenCoreMass.uniform_actual
 #print axioms PaperP1.LateFiniteCore.joint_pos
 #print axioms PaperP1.LateFiniteCore.actual_component
 #print axioms PaperP1.LateOriginalCore.actual_component
@@ -6324,6 +6336,7 @@ import PaperP1
 #print axioms PaperP1.RefinedPairActivityUnderBCN.uniform_pair_activity
 #print axioms PaperP1.RefinedPairActivityUnderBCN.uniform_cumulant
 #print axioms PaperP1.RefinedPairActivityUnderBCN.uniform_conversion
+#print axioms PaperP1.RelationCoreIndependentBudget.uniform_ten
 #print axioms PaperP1.RelativeBlockRelationsCount.zero_count
 #print axioms PaperP1.RelativeBlockRelationsCount.induction_step
 #print axioms PaperP1.RelativeBlockRelationsCount.uniform_count
@@ -8863,6 +8876,13 @@ import PaperP1
 #print axioms PaperP1.RegularStarts.affine_atom_on_regular
 #print axioms PaperP1.RegularStarts.infiniteMarginal_eq_affine_atom
 #print axioms PaperP1.RegularStarts.marginal_on_regular
+#print axioms PaperP1.RelationCoreActivityPeeling.compatible_majorant
+#print axioms PaperP1.RelationCoreActivityPeeling.peeling_bound
+#print axioms PaperP1.RelationCoreActivityPeeling.exists_ten_core_bound
+#print axioms PaperP1.RelationCoreMomentRatio.centered_count
+#print axioms PaperP1.RelationCoreMomentRatio.ten_core_ratio
+#print axioms PaperP1.RelationCoreWitnesses.witnesses
+#print axioms PaperP1.RelationCoreWitnesses.exists_ten_core
 #print axioms PaperP1.RelativeParticipatingUnion.union_witnesses
 #print axioms PaperP1.RelativeParticipatingUnion.pair_witnesses
 #print axioms PaperP1.RelativeSignIndependence.startSystem_restrict_eq
