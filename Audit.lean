@@ -1081,6 +1081,13 @@ import PaperP1
 #print axioms PaperP1.IndependentRadicalDegreeBound.power_dvd_degree
 #print axioms PaperP1.IndependentRadicalDegreeBound.power_le_degree
 #print axioms PaperP1.IndependentRadicalDegreeBound.not_all_squares
+#print axioms PaperP1.IntegerGraphEquation.eval_formula
+#print axioms PaperP1.IntegerGraphEquation.denominator_ne_zero
+#print axioms PaperP1.IntegerGraphEquation.coefficient_ne_zero_at_point
+#print axioms PaperP1.IntegerGraphEquation.original_point
+#print axioms PaperP1.IntegerGraphEquation.denominator_nonvanishing
+#print axioms PaperP1.IntegerGraphEquation.reduced_point
+#print axioms PaperP1.IntegerGraphEquation.reduced_degree_le
 #print axioms PaperP1.IntegerOverlapRoot.exists_root
 #print axioms PaperP1.IntegerPolynomialGrowth.lower_power_bound
 #print axioms PaperP1.integerPolynomialHeight_zero
@@ -1402,6 +1409,7 @@ import PaperP1
 #print axioms PaperP1.RationalGraphSquareRoots.root_match
 #print axioms PaperP1.RationalGraphSquareRoots.selected_derivative_ne_zero
 #print axioms PaperP1.RationalGraphSquareRoots.offset_match
+#print axioms PaperP1.RationalGridNonconstant.degree_pos
 #print axioms PaperP1.RationalInterpolationKernel.bounded_natDegree
 #print axioms PaperP1.RationalInterpolationKernel.mem_kernel_iff
 #print axioms PaperP1.RationalInterpolationKernel.kernel_eq_span
@@ -1415,6 +1423,10 @@ import PaperP1
 #print axioms PaperP1.RationalMapFieldDegree.reduced_degrees
 #print axioms PaperP1.RationalMapFieldDegree.extension_rank
 #print axioms PaperP1.RationalSquareGraphNonconstant.degree_pos
+#print axioms PaperP1.ReducedQuotientGraph.numerator_degree_le
+#print axioms PaperP1.ReducedQuotientGraph.denominator_degree_le
+#print axioms PaperP1.ReducedQuotientGraph.degree_le
+#print axioms PaperP1.ReducedQuotientGraph.point_equation
 #print axioms PaperP1.RelativeVeroneseBasis.source_free_rank
 #print axioms PaperP1.RelativeVeroneseBasis.sourceBasis_apply
 #print axioms PaperP1.RelativeVeroneseImage.scalar_range
@@ -4641,6 +4653,7 @@ import PaperP1
 #print axioms PaperP1.CriticalChannelPowers.quotient_word_upper
 #print axioms PaperP1.CriticalCommonQuotientExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalCurveCommonQuotientExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalCurveCoverExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalCurveRationalOddExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalCurveRationalOddExclusion.eventually_even_degree
 #print axioms PaperP1.CriticalDisjointEquationGraphExclusion.eventually_no_dyadic_point
@@ -6339,6 +6352,7 @@ import PaperP1
 #print axioms PaperP1.BivariateGridCount.homogeneous_grid_degree_bound
 #print axioms PaperP1.BivariateGridCount.homogeneous_integer_box_bound
 #print axioms PaperP1.CurveCommonQuotientBound.integral_point
+#print axioms PaperP1.CurveCoverGraphBound.integral_point
 #print axioms PaperP1.DisjointCommonQuotientBound.integral_point
 #print axioms PaperP1.DisjointEquationGraphBound.integral_point
 #print axioms PaperP1.DisjointEquationGraphDescent.integral_point

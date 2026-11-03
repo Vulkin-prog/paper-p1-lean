@@ -2186,3 +2186,56 @@ coverage stays 79/167, confirmed improvements become 111 and Palomar
 remains deferred. Original sources and pins remain unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12483 jobs, direct axiom audit of 8845 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6771 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.90 GiB.
+
+
+## Actual reduced graph construction and complete nonconstant bounded-cover exclusion
+
+The new bounded-cover argument is now connected through actual
+reduced rational interpolation to a uniform large-scale exclusion.
+For an actual irreducible integer plane equation C with deg_Y(C)=1,
+the original rational numerator and denominator are constructed from
+its actual coefficients. The denominator is proved nonzero at every
+actual integer curve point: otherwise both coefficients vanish at
+the integer first coordinate, forcing a forbidden vertical factor
+of the irreducible equation. No coefficient-height bound is used.
+
+The actual quotient is canonically reduced using its rational-
+function numerator and denominator. Their coprimality and nonzero
+denominator are supplied by the actual rational-function data.
+Both degrees cannot increase under reduction, and the exact
+cross-product identity transports every actual curve point and
+selected offset match to the reduced pair. Thus its maximum degree
+is bounded by deg_X(C), without separately assuming the original
+integer coefficient polynomials coprime. One offset match and host
+positivity exclude a constant reduced graph.
+
+Combining this construction with the actual good equation family
+proves an offset-only abscissa bound for every finite cover degree,
+including even degrees. If both positive plane partial degrees and
+the actual finite cover degree are at most E, there are at least
+4(E+1)^2 literal radical equations, first-root families are disjoint
+of a common positive cardinality and singleton second offsets are
+distinct, the actual good families supply the reduced graph's
+2n+1 interpolation points with 1<=n<=E. The root-family cardinality
+is not required equal to n. The original radical coefficients are
+arbitrary nonzero integers.
+
+A single critical-band threshold, chosen before the integer curve
+equation, all its coefficients, the actual extension field, the
+literal radical roots and coefficients, all offsets and root-family
+degrees, excludes every actual admissible comparable integral point
+on that curve. This statement has no genus, Riemann--Hurwitz,
+common-quotient, assumed graph, supplied grid, exceptional-set count,
+odd-degree, or graph-coefficient-height premise. All those algebraic
+and arithmetic constructions for the stated nonconstant-coordinate
+presentation are proved internally.
+
+This extends P1-MATH-0111. The constant-coordinate image cases,
+general source-scheme identifications, comparisons between ordinary
+ambient curve degree and the actual plane/field degree bounds, and
+the external uniform point counts remain open. The numbered T1.7
+geometric count is not marked complete. Coverage stays 79/167,
+confirmed improvements stay 111 and Palomar remains deferred.
+Original manuscript bytes and compiler/dependency pins are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12493 jobs, direct axiom audit of 8859 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6788 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.88 GiB.

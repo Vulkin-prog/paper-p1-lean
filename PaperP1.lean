@@ -1968,3 +1968,8 @@ public import PaperP1.Arithmetic.ScaledCurveSquareMatching
 public import PaperP1.Arithmetic.ScaledCurveEquationClasses
 public import PaperP1.Arithmetic.UniqueKernelFibreMatching
 public import PaperP1.Arithmetic.BoundedCoverForcesGraph
+public import PaperP1.Algebra.ReducedQuotientGraph
+public import PaperP1.Algebra.IntegerGraphEquation
+public import PaperP1.Algebra.RationalGridNonconstant
+public import PaperP1.Diophantine.CurveCoverGraphBound
+public import PaperP1.Asymptotics.CriticalCurveCoverExclusion
