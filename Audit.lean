@@ -6281,6 +6281,8 @@ import PaperP1
 #print axioms PaperP1.SecondCumulantUnderBCN.uniform_bound
 #print axioms PaperP1.SecondCumulantUnderBCN.uniform_eventually_small
 #print axioms PaperP1.SecondCumulantUnderBCN.uniform_parameter_gap
+#print axioms PaperP1.SecondFactorialCorrectionLower.uniform_gap
+#print axioms PaperP1.SecondFactorialCorrectionLower.uniform_lower
 #print axioms PaperP1.SecondMomentSubpower.uniform_subpower
 #print axioms PaperP1.SelectedDegreeOneRootHostCount.uniform_hosts
 #print axioms PaperP1.SelectedKernelCounts.small_factor_subpolynomial
@@ -6312,9 +6314,12 @@ import PaperP1
 #print axioms PaperP1.SharedPrincipalTripleMass.inclusion
 #print axioms PaperP1.SharedPrincipalTripleMass.uniform_mass
 #print axioms PaperP1.SharedPrincipalTripleMass.relative_to_beta_squared
+#print axioms PaperP1.SharpCovarianceScaleUnderInputs.uniform_absolute_scale
+#print axioms PaperP1.SharpCovarianceScaleUnderInputs.uniform_regular_covariance
 #print axioms PaperP1.SharpPairActivityUnderInputs.uniform_principal_profile
 #print axioms PaperP1.SharpPairActivityUnderInputs.uniform_pair_activity
 #print axioms PaperP1.SharpPairTargetDeficitUnderInputs.article_11_1
+#print axioms PaperP1.SharpRetainedConversionUnderInputs.companion_T17_4
 #print axioms PaperP1.SharpRunConversionUnderInputs.uniform_cumulant
 #print axioms PaperP1.SharpRunConversionUnderInputs.uniform_conversion
 #print axioms PaperP1.SharpThirdCancellationUnderInputs.connected_activity_eq
@@ -8902,6 +8907,9 @@ import PaperP1
 #print axioms PaperP1.RunSeparation.infiniteStartIndicator_separated
 #print axioms PaperP1.RunSeparation.infiniteStartCount_interval_support
 #print axioms PaperP1.RunSeparation.dyadic_count_support
+#print axioms PaperP1.SecondFactorialCorrection.gap_identity
+#print axioms PaperP1.SecondFactorialCorrection.regular_mean
+#print axioms PaperP1.SecondFactorialCorrection.regular_cumulant
 #print axioms PaperP1.SecondMomentPairCap.finite_bound
 #print axioms PaperP1.SelectedPairCumulantLower.distinctHosts_subset_pairs
 #print axioms PaperP1.SelectedPairCumulantLower.swap_mem_distinctHosts

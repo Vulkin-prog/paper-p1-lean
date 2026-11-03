@@ -2345,3 +2345,7 @@ public import PaperP1.Asymptotics.OrdinaryIndependentDeficitBound
 public import PaperP1.Model.RetainedIndependentDeficitComparison
 public import PaperP1.Asymptotics.RetainedGoodPairMass
 public import PaperP1.Asymptotics.RetainedIndependentDeficitRates
+public import PaperP1.Model.SecondFactorialCorrection
+public import PaperP1.Asymptotics.SecondFactorialCorrectionLower
+public import PaperP1.Asymptotics.SharpCovarianceScaleUnderInputs
+public import PaperP1.Asymptotics.SharpRetainedConversionUnderInputs
