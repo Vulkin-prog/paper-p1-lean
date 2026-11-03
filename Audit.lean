@@ -354,6 +354,11 @@ import PaperP1
 #print axioms PaperP1.TwoTargetKernel.dimension_le_left
 #print axioms PaperP1.TwoTargetKernel.dimension_le_right
 #print axioms PaperP1.TwoTargetKernel.dimension_le_min
+#print axioms PaperP1.TwoTargetPrimitiveCut.disjoint_of_zero_union
+#print axioms PaperP1.TwoTargetPrimitiveCut.disjoint_of_zero_insert
+#print axioms PaperP1.TwoTargetPrimitiveCut.disjoint_of_zero_pair
+#print axioms PaperP1.TwoTargetPrimitiveCut.nullity_eq_deficit
+#print axioms PaperP1.TwoTargetPrimitiveCut.primitive_data
 #print axioms PaperP1.Affine.parityVec_ne_zero_unique_in_start
 #print axioms PaperP1.Affine.mem_completeRelationCode
 #print axioms PaperP1.Affine.pairVertexParityMap_elim
@@ -6276,6 +6281,7 @@ import PaperP1
 #print axioms PaperP1.SourcePairCloseWeight.uniform_abs
 #print axioms PaperP1.SourcePairSignedCentering.nominal_diagonal
 #print axioms PaperP1.SourcePairSignedCentering.uniform_error
+#print axioms PaperP1.SourceRestrictedDenseMass.article_15_2_source_restricted
 #print axioms PaperP1.SourceSupportedCoefficientCount.position_count
 #print axioms PaperP1.SourceSupportedCoefficientCount.uniform_count
 #print axioms PaperP1.SourceTranslationCount.uniform_counts
@@ -6423,6 +6429,7 @@ import PaperP1
 #print axioms PaperP1.TwoTargetOrientedClassPattern.grids
 #print axioms PaperP1.TwoTargetOrientedClassPattern.roots
 #print axioms PaperP1.TwoTargetPhysicalEnumeration.uniform_enumeration
+#print axioms PaperP1.TwoTargetPrimitiveExtensions.uniform_extensions
 #print axioms PaperP1.TwoTargetPureClassData.univariate_square
 #print axioms PaperP1.TwoTargetPureClassData.exists_system
 #print axioms PaperP1.TwoTargetPureClassData.uniform_systems
@@ -7153,6 +7160,10 @@ import PaperP1
 #print axioms PaperP1.TwoEdgeTripleCover.other_edge
 #print axioms PaperP1.TwoEdgeTripleCover.union_card_three
 #print axioms PaperP1.TwoFreeBlockSupport.source_mem
+#print axioms PaperP1.TwoTargetFamilyCover.mem_pairs
+#print axioms PaperP1.TwoTargetFamilyCover.exists_pair
+#print axioms PaperP1.TwoTargetFamilyCover.extension_sum_le
+#print axioms PaperP1.TwoTargetFamilyCover.weighted_cover
 #print axioms PaperP1.TwoWindowGraphSwap.label_swap
 #print axioms PaperP1.TwoWindowGraphSwap.mem_occurrences_swap
 #print axioms PaperP1.TwoWindowGraphSwap.occurrences_swap
@@ -8866,6 +8877,10 @@ import PaperP1
 #print axioms PaperP1.TripleRankGeometry.pair_joint_le_rank_mass
 #print axioms PaperP1.TripleRankGeometry.family_joint_le_rank_mass
 #print axioms PaperP1.TupleMassIteration.iterate
+#print axioms PaperP1.TwoTargetPrimitiveData.source_enumeration
+#print axioms PaperP1.TwoTargetPrimitiveData.primitive_data
+#print axioms PaperP1.TwoTargetPrimitiveData.weight_factor
+#print axioms PaperP1.TwoTargetPrimitiveData.source_product_cap
 #print axioms PaperP1.UnitFourierWeight.abs_signed_unit_sum
 #print axioms PaperP1.UnitFourierWeight.unit_kernel_rank_bound
 #print axioms PaperP1.UnitFourierWeight.signed_unit_sum_zero_of_card_le_one

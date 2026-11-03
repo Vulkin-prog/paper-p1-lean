@@ -2280,3 +2280,8 @@ public import PaperP1.Asymptotics.TwoTargetWeakMass
 public import PaperP1.Asymptotics.TwoTargetDenseMass
 public import PaperP1.Arithmetic.TwoTargetAdmissibleDensePairs
 public import PaperP1.Asymptotics.TwoTargetDensePairTheorem
+public import PaperP1.Affine.TwoTargetPrimitiveCut
+public import PaperP1.Combinatorics.TwoTargetFamilyCover
+public import PaperP1.Model.TwoTargetPrimitiveData
+public import PaperP1.Asymptotics.TwoTargetPrimitiveExtensions
+public import PaperP1.Asymptotics.SourceRestrictedDenseMass
