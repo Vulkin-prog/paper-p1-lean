@@ -2559,3 +2559,12 @@ public import PaperP1.Asymptotics.RetainedBetaCovarianceUnderInputs
 public import PaperP1.Asymptotics.RetainedBinomialApproximationUnderInputs
 public import PaperP1.Asymptotics.RegularQuadraticReferenceRestoration
 public import PaperP1.Asymptotics.FirstQuadraticApproximationUnderInputs
+public import PaperP1.Model.UnrestrictedRetainedExpansion
+public import PaperP1.Model.SecondOrderRetainedClass
+public import PaperP1.Algebra.AllPairPolynomialExpansion
+public import PaperP1.Model.SecondOrderIndependentDeficit
+public import PaperP1.Model.SecondOrderRetainedReference
+public import PaperP1.Model.SecondOrderPositiveMass
+public import PaperP1.Model.SecondOrderStoppedLaw
+public import PaperP1.Model.PrimitiveConnectedGeometry
+public import PaperP1.Asymptotics.SecondOrderBoundaryCutoff
