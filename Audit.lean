@@ -6080,6 +6080,8 @@ import PaperP1
 #print axioms PaperP1.ModerateOrderLogarithm.log_order_ratio_tendsto
 #print axioms PaperP1.ModerateOrderLogarithm.order_real_tendsto_atTop
 #print axioms PaperP1.ModerateOrderLogarithm.logarithmic_cost_tendsto
+#print axioms PaperP1.ModifiedCountAllTailsUnderInputs.uniform_restored_totalVariation
+#print axioms PaperP1.ModifiedCountAllTailsUnderInputs.companion_T19_3
 #print axioms PaperP1.MomentObstructionLog.distance_eq_totalVariation
 #print axioms PaperP1.MomentObstructionLog.distance_pos
 #print axioms PaperP1.MomentObstructionLog.log_distance_formula
@@ -8882,6 +8884,9 @@ import PaperP1
 #print axioms PaperP1.OrdinaryIndependentDeficit.seed_data
 #print axioms PaperP1.OrdinaryIndependentDeficit.seed_cover
 #print axioms PaperP1.OrdinaryIndependentDeficit.finite_bound
+#print axioms PaperP1.OriginalCountLawCoupling.finite_law
+#print axioms PaperP1.OriginalCountLawCoupling.coupling
+#print axioms PaperP1.OriginalCountLawCoupling.restore_modified
 #print axioms PaperP1.OriginalTwoAnchorWitnesses.participating_core
 #print axioms PaperP1.OriginalTwoAnchorWitnesses.connected_core
 #print axioms PaperP1.OriginalTwoAnchorWitnesses.connected_witnesses

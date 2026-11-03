@@ -2540,3 +2540,5 @@ public import PaperP1.Model.TwoDependentPairSeeds
 public import PaperP1.Asymptotics.TwoDependentPairJointMassUnderInputs
 public import PaperP1.Model.RetainedActivationSeeds
 public import PaperP1.Asymptotics.RetainedExceptionalEventUnderInputs
+public import PaperP1.Model.OriginalCountLawCoupling
+public import PaperP1.Asymptotics.ModifiedCountAllTailsUnderInputs
