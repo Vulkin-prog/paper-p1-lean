@@ -2648,3 +2648,10 @@ public import PaperP1.Algebra.RectangularEvaluationPolynomial
 public import PaperP1.Arithmetic.DivisorAuxiliaryPolynomial
 public import PaperP1.Asymptotics.DivisorAuxiliaryPolynomialUniform
 public import PaperP1.Arithmetic.CoprimeDivisorCardinality
+public import PaperP1.Algebra.BivariateFactorDegree
+public import PaperP1.Algebra.BivariateRationalLines
+public import PaperP1.Arithmetic.OffsetLineDivisorCount
+public import PaperP1.Arithmetic.PolynomialOffsetPopulation
+public import PaperP1.Asymptotics.OffsetLineDivisorCountUniform
+public import PaperP1.Asymptotics.BoundedPlaneCurveCountUnderBCN
+public import PaperP1.Asymptotics.PolynomialConfinementUnderBCN

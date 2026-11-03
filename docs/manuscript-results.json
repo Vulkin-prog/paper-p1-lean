@@ -12657,7 +12657,7 @@
       "source": "companion_sections/confinement.tex",
       "line": 9,
       "sha256": "7ebcf350ba28ab0f1bfcc4cc2f6c7f0be0372bf91091a2143a120c1313c7dacf",
-      "status": "in_progress",
+      "status": "conditional",
       "lean_declarations": [
         "PaperP1.CoprimeRowDeterminants.row_dvd",
         "PaperP1.CoprimeRowDeterminants.difference_row_dvd",
@@ -12689,22 +12689,63 @@
         "PaperP1.RectangularEvaluationPolynomial.Index",
         "PaperP1.RectangularEvaluationPolynomial.row",
         "PaperP1.RectangularEvaluationPolynomial.polynomial",
-        "PaperP1.DivisorAuxiliaryPolynomial.integerRow"
+        "PaperP1.DivisorAuxiliaryPolynomial.integerRow",
+        "PaperP1.BivariateFactorDegree.coeff_swap",
+        "PaperP1.BivariateFactorDegree.swap_degree_le",
+        "PaperP1.BivariateFactorDegree.coefficient_degree_le",
+        "PaperP1.BivariateFactorDegree.totalDegree_le_degreeSum",
+        "PaperP1.BivariateFactorDegree.partial_degrees_le_total",
+        "PaperP1.BivariateFactorDegree.rectangle_bound",
+        "PaperP1.BivariateFactorDegree.mul_degree",
+        "PaperP1.BivariateFactorDegree.unit_degree",
+        "PaperP1.BivariateFactorDegree.associated_degree",
+        "PaperP1.BivariateFactorDegree.eq_constant_of_degree_zero",
+        "PaperP1.BivariateFactorDegree.irreducible_degree_pos",
+        "PaperP1.BivariateFactorDegree.irreducible_totalDegree_pos",
+        "PaperP1.BivariateFactorDegree.multiset_bounds",
+        "PaperP1.BivariateFactorDegree.normalized_factor_bounds",
+        "PaperP1.BivariateFactorDegree.zero_on_factor",
+        "PaperP1.BivariateRationalLines.totalDegree_zero",
+        "PaperP1.BivariateRationalLines.exists_coefficient_degree",
+        "PaperP1.BivariateRationalLines.exists_linear_form",
+        "PaperP1.BivariateRationalLines.points_cross",
+        "PaperP1.BivariateRationalLines.integer_points_cross",
+        "PaperP1.OffsetLineDivisorCount.canonical_height",
+        "PaperP1.OffsetLineDivisorCount.collinear_card_bound",
+        "PaperP1.PolynomialOffsetPopulation.finite_bound",
+        "PaperP1.OffsetLineDivisorCountUniform.uniform_lines",
+        "PaperP1.BoundedPlaneCurveCountUnderBCN.uniform_bound",
+        "PaperP1.PolynomialConfinementUnderBCN.afterExactAlignments_no_exact",
+        "PaperP1.PolynomialConfinementUnderBCN.companion_T8_1_power",
+        "PaperP1.PolynomialConfinementUnderBCN.companion_T8_1_little_o",
+        "PaperP1.PolynomialConfinementUnderBCN.companion_T8_1_after_alignments",
+        "PaperP1.BivariateFactorDegree.degreeSum",
+        "PaperP1.BivariateFactorDegree.totalDegree",
+        "PaperP1.PolynomialConfinementUnderBCN.afterExactAlignments"
       ],
       "literature_inputs": [
-        "P1-ARITH-COPRIME-DIVISOR-AUXILIARY"
+        "P1-ARITH-COPRIME-DIVISOR-AUXILIARY",
+        "P1-GEO-BCN-PLANE-UNIFORM"
       ],
       "mathematical_changes": [],
-      "notes": "The auxiliary-polynomial construction in companion T8.1 is now\nunconditional. T8.1 remains IN PROGRESS: the final nonlinear-curve point\ncount, O(B^(1/2+delta)) bound and little-o(B) conclusion remain open.\n\nDivisorAuxiliaryPolynomialUniform.uniform_polynomial fixes d>=1 and\nN0>=2 after C,tau>0 and fixed integers A,K>=1, BEFORE every N, critical\nL, index TYPE, integer bases x,y, offset family(s_i,t_i) and composite\ndivisors g_i. The assumptions are |x|,|y|<=A*N, |s_i|,|t_i|<=K*(L+1),\npairwise coprimality, g_i>=N^tau, and divisibility of x+s_i,y+t_i.\nThe conclusion supplies an ACTUAL NONZERO rational polynomial P, with\nboth partial degrees<=d and total degree<=2d, vanishing at EVERY offset.\nNo index-cardinality bound, primeness or nonalignment is needed for\nthis construction. Fixed real comparison constants can be majorized\nby integer A,K; nonalignment is needed later for the line count.\n\nThe (d+1)^2 rectangular monomials have quadratic dimension and linear\ndegree. choose_degree fixes 2d<tau*((d+1)^2-1), then absorbs all fixed\nfactorials and logarithmic powers into half the positive gap.\nReplacing one integer evaluation row by the row at(-x,-y) produces a\ndeterminant divisible by every OTHER g_i and hence their coprime\nproduct. Its natural absolute value is bounded by\nM!*X^(2d)*(B^(2d))^(M-1), M=(d+1)^2: the exceptional height X is paid\nfor once. All replacements vanish. The literal Cramer identity and\nconstant coordinate1 force every maximal evaluation minor to vanish.\nThe span/annihilator proof constructs nonzero coefficients and P,\nrather than assuming them. Casts, row operations, determinant heights,\ndegree bounds and evaluations are checked. The generic annihilator\nworks over every field; its integral variant clears denominators of\na rational kernel to give a nonzero integral kernel.\n\nThe finite indexed divisor bound also keeps all point multiplicities:\npairwise coprime g_i>=N^tau dividing nonzero n with |n|<=N^beta have\ncardinality<=beta/tau for N>1. If a*s_i+b*t_i=c, each g_i divides\na*x+b*y+c. This yields the same line cardinality bound when that\ninteger is nonzero and has the prescribed height. Deriving those two\nline hypotheses uniformly from the source geometry remains pending.\n\nNo new unproved input or additional Paper C port is introduced. The\npreviously attributed logarithmic-factor bound is reused from its\nexisting checked P1 module. No numbered completion or new improvement\nidentifier is added:87/167 unconditional,39 conditional,151 confirmed\nimprovements. Dense primitive triples, dense nonaligned pairs, optimal\ntriple activity and the optimal quadratic upper rate remain open.\nOriginal manuscript bytes, dependency pins and the Palomar milestone\nare preserved.",
+      "notes": "Companion T8.1 is complete CONDITIONALLY on the already recorded\nP1-GEO-BCN-PLANE-UNIFORM property, passed as the ordinary argument\nPlaneCurvePointCount.UniformBound c kappa with c>0.\nThe source proof uses a fixed-degree Pila count. This checkpoint uses\nthe existing stronger BCN field property to supply that count;\nit does NOT prove BCN, Pila, or a reduction from the separate\nP1-GEO-NORMALIZED-CURVE-UNIFORM property. The unconditional auxiliary\npolynomial construction from the preceding checkpoint is unchanged.\n\nThe actual indexed composite-divisor population now satisfies\n#S<=M*(L+1)^(1/2+delta) for every fixed delta>0, and #S<=epsilon*(L+1)\neventually for every epsilon>0 when delta<1/2. The constant M and\nthreshold precede N, every critical L, every index TYPE and finite\nindexed family. Coincident points retain their full multiplicity.\nNo divisor count, auxiliary polynomial or target confinement conclusion\nis assumed. The divisor lower bound is nonstrict g_i>=N^tau.\nThe bases satisfy N<=A*x, |x|,|y|<=A*N with fixed integer A>=1,\nand offsets have |s_i|,|t_i|<=K*(L+1) with fixed integer K>=1.\nThese comparisons encode the source asymptotic and offset constants;\ninteger upper bounds majorize arbitrary fixed real constants.\nOnly the first base needs a positive lower comparison. The second\nbase may have either sign. The source dyadic positive windows are\nincluded. The no-line hypothesis is the literal nonvanishing of\n(x+s_i)*(y+t_j)-(x+s_j)*(y+t_i) for DISTINCT offset points.\n\nEvery indexed collinear subfamily has cardinality<=3/tau after one\nuniform threshold. If all its offsets coincide, the actual nonzero\ncommon value x+s_i bounds its multiplicity. Otherwise an equation is\nconstructed from TWO ACTUAL grid points. Its coefficients are not\ninput data. Its base value is nonzero by the source no-line hypothesis\nand has height<=N^3. Coprimality and divisibility give the indexed\n3/tau bound. No defining-polynomial coefficient height is imposed.\n\nBivariateFactorDegree proves the actual decomposition bounds over\nevery field. The sum of partial degrees is additive on nonzero\nproducts and positive on nonunits. A polynomial with both partial\ndegrees<=d has at most2d normalized irreducible factors, each of\npartial-degree sum<=2d. Every zero lies on one of those ACTUAL factors.\nNormalization is chosen inside the finite proof, not as a mathematical\ninput. Rational degree-one factors have a literal rational linear\nequation, and all their integer points are proved collinear.\nA finite factor cover and an actual point-fibre cover retain every\nindex, including repeated offsets. The same collinear bound controls\nboth line components and every single-point fibre.\n\nThe existing BCN property gives a coefficient-uniform fixed-degree\nbound #grid(Q,K*B)<=B^(1/2+delta), after one threshold before EVERY\nirreducible rational factor Q with degreeSum(Q)<=2d and true total\ndegree>=2. It follows from the already checked source plane-bound\nspecialization and absorption of the actual logarithmic power.\nIrreducibility over Q is exactly what the explicit property requests;\nno unproved geometric-integrality test is silently added.\nThe auxiliary polynomial, its factors, line subfamilies and fibres\nare all constructed in the proof. Applying the finite cover gives\nM=(2d)*(3/tau). Its actual power bound gives little-o by choosing the\nwidth threshold after the final tolerance.\n\nafterExactAlignments is a literal finite filter removing every offset\nwhich shares an exact line through(-x,-y) with a DISTINCT offset of\nthe original family. Equal-offset multiplicities are kept. Its\nno-exact-line property is proved and the same power bound applies\nwith the SAME M,N0. The theorem also applies directly to any other\nremaining subfamily satisfying the source no-line property.\n\nNo new external input, axiom, Paper C port or mathematical-improvement\nidentifier is introduced. T8.1 moves from in_progress to conditional.\nCoverage is87/167 unconditional and40 conditional, with151 confirmed\nimprovements. Dense primitive triples T8.2, dense pairs T8.3, optimal\nthird activity and the optimal quadratic upper rate remain open.\nSource bytes, dependency pins and the later Palomar milestone remain\npreserved. The new dependency on the EXISTING explicit BCN property\nis recorded rather than reported as an unconditional completion.",
       "validation_history": [
         {
           "status": "not_started",
           "notes": "",
           "literature_inputs": []
+        },
+        {
+          "status": "in_progress",
+          "notes": "The auxiliary-polynomial construction in companion T8.1 is now\nunconditional. T8.1 remains IN PROGRESS: the final nonlinear-curve point\ncount, O(B^(1/2+delta)) bound and little-o(B) conclusion remain open.\n\nDivisorAuxiliaryPolynomialUniform.uniform_polynomial fixes d>=1 and\nN0>=2 after C,tau>0 and fixed integers A,K>=1, BEFORE every N, critical\nL, index TYPE, integer bases x,y, offset family(s_i,t_i) and composite\ndivisors g_i. The assumptions are |x|,|y|<=A*N, |s_i|,|t_i|<=K*(L+1),\npairwise coprimality, g_i>=N^tau, and divisibility of x+s_i,y+t_i.\nThe conclusion supplies an ACTUAL NONZERO rational polynomial P, with\nboth partial degrees<=d and total degree<=2d, vanishing at EVERY offset.\nNo index-cardinality bound, primeness or nonalignment is needed for\nthis construction. Fixed real comparison constants can be majorized\nby integer A,K; nonalignment is needed later for the line count.\n\nThe (d+1)^2 rectangular monomials have quadratic dimension and linear\ndegree. choose_degree fixes 2d<tau*((d+1)^2-1), then absorbs all fixed\nfactorials and logarithmic powers into half the positive gap.\nReplacing one integer evaluation row by the row at(-x,-y) produces a\ndeterminant divisible by every OTHER g_i and hence their coprime\nproduct. Its natural absolute value is bounded by\nM!*X^(2d)*(B^(2d))^(M-1), M=(d+1)^2: the exceptional height X is paid\nfor once. All replacements vanish. The literal Cramer identity and\nconstant coordinate1 force every maximal evaluation minor to vanish.\nThe span/annihilator proof constructs nonzero coefficients and P,\nrather than assuming them. Casts, row operations, determinant heights,\ndegree bounds and evaluations are checked. The generic annihilator\nworks over every field; its integral variant clears denominators of\na rational kernel to give a nonzero integral kernel.\n\nThe finite indexed divisor bound also keeps all point multiplicities:\npairwise coprime g_i>=N^tau dividing nonzero n with |n|<=N^beta have\ncardinality<=beta/tau for N>1. If a*s_i+b*t_i=c, each g_i divides\na*x+b*y+c. This yields the same line cardinality bound when that\ninteger is nonzero and has the prescribed height. Deriving those two\nline hypotheses uniformly from the source geometry remains pending.\n\nNo new unproved input or additional Paper C port is introduced. The\npreviously attributed logarithmic-factor bound is reused from its\nexisting checked P1 module. No numbered completion or new improvement\nidentifier is added:87/167 unconditional,39 conditional,151 confirmed\nimprovements. Dense primitive triples, dense nonaligned pairs, optimal\ntriple activity and the optimal quadratic upper rate remain open.\nOriginal manuscript bytes, dependency pins and the Palomar milestone\nare preserved.",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (13857 jobs); direct axiom audit passed for 10850 declarations using only propext, Classical.choice and Quot.sound; all 9328 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.04 GiB.",
+          "validation_commit": "48683ad07c12ba96e19e2ecc661e3e53142b69a0",
+          "literature_inputs": [
+            "P1-ARITH-COPRIME-DIVISOR-AUXILIARY"
+          ]
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13857 jobs); direct axiom audit passed for 10850 declarations using only propext, Classical.choice and Quot.sound; all 9328 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.04 GiB.",
-      "validation_commit": "48683ad07c12ba96e19e2ecc661e3e53142b69a0"
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13871 jobs); direct axiom audit passed for 10879 declarations using only propext, Classical.choice and Quot.sound; all 9360 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.01 GiB."
     },
     {
       "label": "p13:conf:dense-primitive",

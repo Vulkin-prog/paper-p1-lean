@@ -522,6 +522,21 @@ import PaperP1
 #print axioms PaperP1.BivariateEvaluation.rectangle_evaluation
 #print axioms PaperP1.BivariateEvaluation.integer_evaluation
 #print axioms PaperP1.BivariateEvaluation.reciprocal_sum_scaled
+#print axioms PaperP1.BivariateFactorDegree.coeff_swap
+#print axioms PaperP1.BivariateFactorDegree.swap_degree_le
+#print axioms PaperP1.BivariateFactorDegree.coefficient_degree_le
+#print axioms PaperP1.BivariateFactorDegree.totalDegree_le_degreeSum
+#print axioms PaperP1.BivariateFactorDegree.partial_degrees_le_total
+#print axioms PaperP1.BivariateFactorDegree.rectangle_bound
+#print axioms PaperP1.BivariateFactorDegree.mul_degree
+#print axioms PaperP1.BivariateFactorDegree.unit_degree
+#print axioms PaperP1.BivariateFactorDegree.associated_degree
+#print axioms PaperP1.BivariateFactorDegree.eq_constant_of_degree_zero
+#print axioms PaperP1.BivariateFactorDegree.irreducible_degree_pos
+#print axioms PaperP1.BivariateFactorDegree.irreducible_totalDegree_pos
+#print axioms PaperP1.BivariateFactorDegree.multiset_bounds
+#print axioms PaperP1.BivariateFactorDegree.normalized_factor_bounds
+#print axioms PaperP1.BivariateFactorDegree.zero_on_factor
 #print axioms PaperP1.BivariateFactorHeight.one_le_mahler_complexPolynomial
 #print axioms PaperP1.BivariateFactorHeight.mahler_outer_coefficient_le
 #print axioms PaperP1.BivariateFactorHeight.factor_coefficient_le_own_degrees
@@ -560,6 +575,11 @@ import PaperP1
 #print axioms PaperP1.BivariateLargeRoot.both_degrees_pos
 #print axioms PaperP1.BivariateLineGeometry.exists_linear_form
 #print axioms PaperP1.BivariateLineGeometry.points_cross
+#print axioms PaperP1.BivariateRationalLines.totalDegree_zero
+#print axioms PaperP1.BivariateRationalLines.exists_coefficient_degree
+#print axioms PaperP1.BivariateRationalLines.exists_linear_form
+#print axioms PaperP1.BivariateRationalLines.points_cross
+#print axioms PaperP1.BivariateRationalLines.integer_points_cross
 #print axioms PaperP1.BivariateReciprocalProduct.series_monomial
 #print axioms PaperP1.BivariateReciprocalProduct.iterated_monomial
 #print axioms PaperP1.BivariateReciprocalProduct.reciprocal_sum
@@ -3715,6 +3735,8 @@ import PaperP1
 #print axioms PaperP1.OffsetLineData.values_parametrize
 #print axioms PaperP1.OffsetLineData.cross_constant
 #print axioms PaperP1.OffsetLineData.exists_nonzero_cross
+#print axioms PaperP1.OffsetLineDivisorCount.canonical_height
+#print axioms PaperP1.OffsetLineDivisorCount.collinear_card_bound
 #print axioms PaperP1.OffsetLinePopulation.collinearSet_of_real_line
 #print axioms PaperP1.OffsetLinePopulation.mem_pool
 #print axioms PaperP1.OffsetLinePopulation.mem_pool_iff_actual
@@ -3906,6 +3928,7 @@ import PaperP1
 #print axioms PaperP1.PlaneSupportCover.restrict_certificates
 #print axioms PaperP1.PolynomialEndpointBudget.source_size_bound
 #print axioms PaperP1.PolynomialEndpointBudget.exceptional_polynomial
+#print axioms PaperP1.PolynomialOffsetPopulation.finite_bound
 #print axioms PaperP1.PolynomialPrimeFactorPowers.two_pow_le_divisors
 #print axioms PaperP1.PolynomialPrimeFactorPowers.uniform_four_pow
 #print axioms PaperP1.PositiveLineOffsetRoots.integerOffset_injective
@@ -5274,6 +5297,7 @@ import PaperP1
 #print axioms PaperP1.BoundedObservationPool.widthEnvelope_ge_one
 #print axioms PaperP1.BoundedObservationPool.pool_budget_le_envelope
 #print axioms PaperP1.BoundedObservationPool.pool_count_logarithmic
+#print axioms PaperP1.BoundedPlaneCurveCountUnderBCN.uniform_bound
 #print axioms PaperP1.BoundedSecondMomentUnderBCN.seedConstant_gt_one
 #print axioms PaperP1.BoundedSecondMomentUnderBCN.uniform_bound
 #print axioms PaperP1.BoundedWidthDenseCount.uniform_count
@@ -6250,6 +6274,7 @@ import PaperP1
 #print axioms PaperP1.NormalizedDefectSourceWeight.uniform_source_mass
 #print axioms PaperP1.NormalizedDefectSourceWeight.uniform_pair_mass
 #print axioms PaperP1.NormalizedPairResidual.rank_sublinear
+#print axioms PaperP1.OffsetLineDivisorCountUniform.uniform_lines
 #print axioms PaperP1.OffsetLineMajorant.majorantConstant_pos
 #print axioms PaperP1.OffsetLineMajorant.majorantConstant_eq
 #print axioms PaperP1.OffsetLineMajorant.log_product_le
@@ -6364,6 +6389,10 @@ import PaperP1
 #print axioms PaperP1.PolylogConfinementTheorem.three_dimensional_sufficient_cutoff
 #print axioms PaperP1.PolylogSmoothModuli.log_power_exponential
 #print axioms PaperP1.PolylogSmoothModuli.odd_smooth_count
+#print axioms PaperP1.PolynomialConfinementUnderBCN.afterExactAlignments_no_exact
+#print axioms PaperP1.PolynomialConfinementUnderBCN.companion_T8_1_power
+#print axioms PaperP1.PolynomialConfinementUnderBCN.companion_T8_1_little_o
+#print axioms PaperP1.PolynomialConfinementUnderBCN.companion_T8_1_after_alignments
 #print axioms PaperP1.PolynomialSplitKernelCount.finite_code_bound
 #print axioms PaperP1.PolynomialSplitKernelCount.uniform_count
 #print axioms PaperP1.PolynomialSplitKernelCount.single_square_equation

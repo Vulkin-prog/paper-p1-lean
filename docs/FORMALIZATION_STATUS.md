@@ -3,7 +3,7 @@
 Stage: **exact probability identities and uniform arithmetic foundations**, 3 November 2026.
 Neither document is fully formalized.
 
-The actual auxiliary-polynomial construction in companionT8.1 is unconditional, with degree and threshold fixed before all indexed composite-divisor configurations. Its final component count remains open.
+CompanionT8.1 is complete conditionally on the existing explicit BCN field property: actual composite-divisor count, full point multiplicities, little-o and literal erasure of exact alignments. The auxiliary-polynomial construction is unconditional; the separate Pila-only dependency route remains unbridged.
 
 Main18.2 is complete conditionally: the literal homogeneous rank sum includes every incompatible regular separated nonaligned pair, and the actual covariance consequence follows from a sharp heterogeneous finite bound. Both estimates also hold on every distinct nonaligned dyadic ordered subfamily.
 
@@ -100,7 +100,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **10850 audited theorem/lemma declarations**. This
+- The project currently has **10879 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -16718,3 +16718,81 @@ Original manuscript bytes, dependency pins and the Palomar milestone
 are preserved.
 
 Verified under Lean v4.36.0-rc2: full build passed (13857 jobs); direct axiom audit passed for 10850 declarations using only propext, Classical.choice and Quot.sound; all 9328 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.04 GiB.
+
+
+## Complete indexed polynomial confinement under the existing BCN input
+
+Companion T8.1 is complete CONDITIONALLY on the already recorded
+P1-GEO-BCN-PLANE-UNIFORM property, passed as the ordinary argument
+PlaneCurvePointCount.UniformBound c kappa with c>0.
+The source proof uses a fixed-degree Pila count. This checkpoint uses
+the existing stronger BCN field property to supply that count;
+it does NOT prove BCN, Pila, or a reduction from the separate
+P1-GEO-NORMALIZED-CURVE-UNIFORM property. The unconditional auxiliary
+polynomial construction from the preceding checkpoint is unchanged.
+
+The actual indexed composite-divisor population now satisfies
+#S<=M*(L+1)^(1/2+delta) for every fixed delta>0, and #S<=epsilon*(L+1)
+eventually for every epsilon>0 when delta<1/2. The constant M and
+threshold precede N, every critical L, every index TYPE and finite
+indexed family. Coincident points retain their full multiplicity.
+No divisor count, auxiliary polynomial or target confinement conclusion
+is assumed. The divisor lower bound is nonstrict g_i>=N^tau.
+The bases satisfy N<=A*x, |x|,|y|<=A*N with fixed integer A>=1,
+and offsets have |s_i|,|t_i|<=K*(L+1) with fixed integer K>=1.
+These comparisons encode the source asymptotic and offset constants;
+integer upper bounds majorize arbitrary fixed real constants.
+Only the first base needs a positive lower comparison. The second
+base may have either sign. The source dyadic positive windows are
+included. The no-line hypothesis is the literal nonvanishing of
+(x+s_i)*(y+t_j)-(x+s_j)*(y+t_i) for DISTINCT offset points.
+
+Every indexed collinear subfamily has cardinality<=3/tau after one
+uniform threshold. If all its offsets coincide, the actual nonzero
+common value x+s_i bounds its multiplicity. Otherwise an equation is
+constructed from TWO ACTUAL grid points. Its coefficients are not
+input data. Its base value is nonzero by the source no-line hypothesis
+and has height<=N^3. Coprimality and divisibility give the indexed
+3/tau bound. No defining-polynomial coefficient height is imposed.
+
+BivariateFactorDegree proves the actual decomposition bounds over
+every field. The sum of partial degrees is additive on nonzero
+products and positive on nonunits. A polynomial with both partial
+degrees<=d has at most2d normalized irreducible factors, each of
+partial-degree sum<=2d. Every zero lies on one of those ACTUAL factors.
+Normalization is chosen inside the finite proof, not as a mathematical
+input. Rational degree-one factors have a literal rational linear
+equation, and all their integer points are proved collinear.
+A finite factor cover and an actual point-fibre cover retain every
+index, including repeated offsets. The same collinear bound controls
+both line components and every single-point fibre.
+
+The existing BCN property gives a coefficient-uniform fixed-degree
+bound #grid(Q,K*B)<=B^(1/2+delta), after one threshold before EVERY
+irreducible rational factor Q with degreeSum(Q)<=2d and true total
+degree>=2. It follows from the already checked source plane-bound
+specialization and absorption of the actual logarithmic power.
+Irreducibility over Q is exactly what the explicit property requests;
+no unproved geometric-integrality test is silently added.
+The auxiliary polynomial, its factors, line subfamilies and fibres
+are all constructed in the proof. Applying the finite cover gives
+M=(2d)*(3/tau). Its actual power bound gives little-o by choosing the
+width threshold after the final tolerance.
+
+afterExactAlignments is a literal finite filter removing every offset
+which shares an exact line through(-x,-y) with a DISTINCT offset of
+the original family. Equal-offset multiplicities are kept. Its
+no-exact-line property is proved and the same power bound applies
+with the SAME M,N0. The theorem also applies directly to any other
+remaining subfamily satisfying the source no-line property.
+
+No new external input, axiom, Paper C port or mathematical-improvement
+identifier is introduced. T8.1 moves from in_progress to conditional.
+Coverage is87/167 unconditional and40 conditional, with151 confirmed
+improvements. Dense primitive triples T8.2, dense pairs T8.3, optimal
+third activity and the optimal quadratic upper rate remain open.
+Source bytes, dependency pins and the later Palomar milestone remain
+preserved. The new dependency on the EXISTING explicit BCN property
+is recorded rather than reported as an unconditional completion.
+
+Verified under Lean v4.36.0-rc2: full build passed (13871 jobs); direct axiom audit passed for 10879 declarations using only propext, Classical.choice and Quot.sound; all 9360 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.01 GiB.
