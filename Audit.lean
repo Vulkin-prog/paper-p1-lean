@@ -2377,8 +2377,10 @@ import PaperP1
 #print axioms PaperP1.ActivePhysicalPrimeGroups.support_sum
 #print axioms PaperP1.ActivePhysicalPrimeGroups.group_support_data
 #print axioms PaperP1.ActivePhysicalPrimeGroups.support_card
+#print axioms PaperP1.ActivePhysicalPrimeGroups.support_block_injective
 #print axioms PaperP1.ActivePhysicalPrimeGroups.group_coprime
 #print axioms PaperP1.ActivePhysicalPrimeGroups.support_at_least_two
+#print axioms PaperP1.ActivePhysicalPrimeGroups.support_two_blocks
 #print axioms PaperP1.ActivePhysicalPrimeGroups.group_dvd_value
 #print axioms PaperP1.ActivePhysicalPrimeGroups.incidence_bound
 #print axioms PaperP1.ActivePhysicalPrimeGroups.kernel_le_incident_product
@@ -2392,6 +2394,9 @@ import PaperP1
 #print axioms PaperP1.ActualNormalizedMatches.integerOffsets_subset
 #print axioms PaperP1.ActualNormalizedMatches.cardinal_le_classes
 #print axioms PaperP1.ActualNormalizedMatches.nonphysical_match_bound
+#print axioms PaperP1.ActualOffsetNonalignment.NoExact.symm
+#print axioms PaperP1.ActualOffsetNonalignment.of_nonaligned
+#print axioms PaperP1.ActualOffsetNonalignment.of_disjoint
 #print axioms PaperP1.ActualSourceTranslations.sourceAt_cast
 #print axioms PaperP1.ActualSourceTranslations.sourceAt_mem
 #print axioms PaperP1.ActualSourceTranslations.sourceAt_injective
@@ -4996,6 +5001,7 @@ import PaperP1
 #print axioms PaperP1.TwoTargetCodeLift.to_code_injective
 #print axioms PaperP1.TwoTargetDensePairs.deficit_eq_kernel
 #print axioms PaperP1.TwoTargetDensePairs.mem_pairs
+#print axioms PaperP1.TwoTargetEmptySource.dimension
 #print axioms PaperP1.TwoTargetIntrinsicClassCoefficients.source_cover_card
 #print axioms PaperP1.TwoTargetIntrinsicClassCoefficients.kernel_in_pool
 #print axioms PaperP1.TwoTargetLabelDimension.dimension_le_labels
@@ -5166,6 +5172,7 @@ import PaperP1
 #print axioms PaperP1.ActiveBlockCentresCount.uniform_count
 #print axioms PaperP1.ActiveEdgeMoments.uniform_moment
 #print axioms PaperP1.ActiveEdgeMoments.uniform_activation
+#print axioms PaperP1.ActivePhysicalGroupCountUnderBCN.uniform_count
 #print axioms PaperP1.ActualFamilyJointRows.append_support
 #print axioms PaperP1.ActualFamilyJointRows.uniform_row
 #print axioms PaperP1.ActualNominalReferenceComparison.lowerConstant_pos
@@ -5566,6 +5573,8 @@ import PaperP1
 #print axioms PaperP1.CriticalRootSystemPatterns.uniform_pool
 #print axioms PaperP1.CriticalRootSystemPatterns.uniform_coefficient_height
 #print axioms PaperP1.CriticalSourceCurveCoverExclusion.eventually_no_dyadic_point
+#print axioms PaperP1.CriticalTwoPointClasses.uniform_nonzero
+#print axioms PaperP1.CriticalTwoPointClasses.uniform_disjoint_no_exact
 #print axioms PaperP1.CriticalWindowGeometry.uniform_geometry
 #print axioms PaperP1.CriticalWindowGeometry.log_base_lower
 #print axioms PaperP1.DegreeOneGraphHostCount.mem_components
@@ -5584,6 +5593,8 @@ import PaperP1
 #print axioms PaperP1.DenseCompressedTargetCount.uniform_offsets
 #print axioms PaperP1.DenseCompressedTargetCount.article_15_3
 #print axioms PaperP1.DenseDirectCrossingFamiliesUnderInputs.uniform_families
+#print axioms PaperP1.DenseNonalignedPairsUnderBCN.uniform_kernel_hosts
+#print axioms PaperP1.DenseNonalignedPairsUnderBCN.companion_T8_3
 #print axioms PaperP1.DenseNonalignedProfileReduction.dense_data
 #print axioms PaperP1.DenseNonalignedProfileReduction.nonaligned_activity_bound
 #print axioms PaperP1.DenseNonalignedProfileReduction.uniform_bound
@@ -5594,6 +5605,7 @@ import PaperP1
 #print axioms PaperP1.DensePairCrossingFamiliesUnderInputs.uniform_seeds
 #print axioms PaperP1.DensePairCrossingFamiliesUnderInputs.uniform_centered_extensions
 #print axioms PaperP1.DensePairCrossingSeedsUnderInputs.uniform_bound
+#print axioms PaperP1.DensePhysicalKernelWitnessUnderBCN.uniform_witness
 #print axioms PaperP1.DensePrimitiveFourMassUnderInputs.uniform_bound
 #print axioms PaperP1.DensePrimitiveTripleMassUnderInputs.uniform_bound
 #print axioms PaperP1.DenseSourcePairKernelUnderInputs.uniform_source_kernel

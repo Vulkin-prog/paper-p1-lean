@@ -2659,3 +2659,9 @@ public import PaperP1.Coding.ShortZeroSumSupportIncidence
 public import PaperP1.Coding.CoordinateErasureRank
 public import PaperP1.Arithmetic.ActivePhysicalPrimeGroups
 public import PaperP1.Arithmetic.ActiveGroupKernelErasure
+public import PaperP1.Arithmetic.ActualOffsetNonalignment
+public import PaperP1.Arithmetic.TwoTargetEmptySource
+public import PaperP1.Asymptotics.CriticalTwoPointClasses
+public import PaperP1.Asymptotics.ActivePhysicalGroupCountUnderBCN
+public import PaperP1.Asymptotics.DensePhysicalKernelWitnessUnderBCN
+public import PaperP1.Asymptotics.DenseNonalignedPairsUnderBCN

@@ -104,6 +104,15 @@ theorem support_card (X : ι → ℕ) (L : ℕ) (M : Submodule F₂ (code X L)) 
   exact (card_le_card (filter_subset _ _)).trans
     (occurrences_card X L p hX (lt_of_le_of_lt hH (pool_gt X L H p hp)))
 
+theorem support_block_injective (X : ι → ℕ) (L : ℕ) (M : Submodule F₂ (code X L)) (H : ℕ)
+    (hX : ∀ i, 1 ≤ X i) (hH : L + 1 ≤ H)
+    (A : Finset (ι × Fin (L + 1))) (hA : A ∈ groups X L M H) :
+    Set.InjOn Prod.fst (A : Set (ι × Fin (L + 1))) := by
+  classical
+  obtain ⟨_hne, p, hp, rfl⟩ := (mem_groups X L M H A).mp hA
+  exact (block_injective X L p hX (lt_of_le_of_lt hH (pool_gt X L H p hp))).mono
+    (filter_subset _ _)
+
 theorem group_coprime (X : ι → ℕ) (L : ℕ) (M : Submodule F₂ (code X L)) (H : ℕ)
     (A B : Finset (ι × Fin (L + 1))) (hAB : A ≠ B) :
     (group X L M H A).Coprime (group X L M H B) :=
@@ -122,6 +131,15 @@ theorem support_at_least_two (X : ι → ℕ) (L : ℕ) (M : Submodule F₂ (cod
   have hsum := support_sum X L M p
   rw [he, sum_singleton] at hsum
   exact hnonzero hsum
+
+theorem support_two_blocks (X : ι → ℕ) (L : ℕ) (M : Submodule F₂ (code X L)) (H : ℕ)
+    (hX : ∀ i, 1 ≤ X i) (hH : L + 1 ≤ H)
+    (A : Finset (ι × Fin (L + 1))) (hA : A ∈ groups X L M H) :
+    ∃ v ∈ A, ∃ w ∈ A, v.1 ≠ w.1 := by
+  classical
+  obtain ⟨v, hv, w, hw, hne⟩ := one_lt_card.mp
+    (show 1 < A.card by have hh := support_at_least_two X L M H A hA; omega)
+  exact ⟨v, hv, w, hw, fun he ↦ hne (support_block_injective X L M H hX hH A hA hv hw he)⟩
 
 theorem group_dvd_value (X : ι → ℕ) (L : ℕ) (M : Submodule F₂ (code X L)) (H : ℕ)
     (A : Finset (ι × Fin (L + 1))) (v : ι × Fin (L + 1)) (hv : v ∈ A) :
