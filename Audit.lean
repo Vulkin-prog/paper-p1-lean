@@ -987,6 +987,10 @@ import PaperP1
 #print axioms PaperP1.SplitRadicalCoordinateAlgebra.coordinate_isDomain
 #print axioms PaperP1.SplitRadicalCoordinateAlgebra.equation_evaluation
 #print axioms PaperP1.SplitRadicalCoordinateAlgebra.actual_point_map
+#print axioms PaperP1.SplitRadicalEmbeddingHeight.radical_height
+#print axioms PaperP1.SplitRadicalEmbeddingHeight.sum_height
+#print axioms PaperP1.SplitRadicalEmbeddingHeight.commonConstant_pos
+#print axioms PaperP1.SplitRadicalEmbeddingHeight.coordinates_height
 #print axioms PaperP1.SplitRadicalField.list_independent
 #print axioms PaperP1.SplitRadicalField.source_field
 #print axioms PaperP1.SplitRadicalProjectionBaseChange.linear_map
@@ -3315,6 +3319,11 @@ import PaperP1
 #print axioms PaperP1.SplitProductBound.base_le_height_of_nonzero
 #print axioms PaperP1.SplitProductBound.uniform_split_product
 #print axioms PaperP1.SplitProductBound.uniform_split_product_real_radius
+#print axioms PaperP1.SplitRadicalPointHeight.product_height
+#print axioms PaperP1.SplitRadicalPointHeight.square_height
+#print axioms PaperP1.SplitRadicalPointHeight.dyadic_square_height
+#print axioms PaperP1.SplitRadicalPointHeight.monomial_height
+#print axioms PaperP1.SplitRadicalPointHeight.sum_natAbs_le
 #print axioms PaperP1.SquareDivisibilityFibres.finite_count
 #print axioms PaperP1.SquareEquationKernel.kernels_eq_of_square_mul
 #print axioms PaperP1.SquareEquationKernel.integer_square_to_kernel
@@ -4789,6 +4798,7 @@ import PaperP1
 #print axioms PaperP1.SplitProductPowerForm.uniform_prescribed_power_count
 #print axioms PaperP1.SplitQuadraticCongruenceCount.polylog_le_rpow
 #print axioms PaperP1.SplitQuadraticCongruenceCount.uniform_root_count
+#print axioms PaperP1.UniformSplitRadicalEmbeddingHeight.uniform_height
 #print axioms PaperP1.SplitTupleExposure.product_height
 #print axioms PaperP1.SplitTupleExposure.source_height
 #print axioms PaperP1.SplitTupleExposure.source_exposure

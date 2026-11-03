@@ -5647,3 +5647,47 @@ inequality. No external input, dependency download, original-source
 change or Palomar registration is introduced.
 
 Verified with Lean v4.36.0-rc2: full lake build (11387 jobs), actual Audit.lean kernel-axiom audit (7856 declarations; only propext, Classical.choice, Quot.sound), all 5573 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.39 GiB.
+
+
+## The actual radical, Veronese-chart and projection point heights
+
+The actual point-height assertion in Step 2 of companion T1.7
+is now proved from the literal integer equations. If |X|,|Y|<=2N,
+the selected offsets have absolute value at most N, each pair of
+root lists has total size at most K, and |c_i|<=N^A, every actual
+integer solution of
+  w_i^2=c_i*product_(a in I_i)(X+a)*product_(b in J_i)(Y+b)
+satisfies |w_i|<=3^K*N^D whenever A+K<=2D. Here the finite radical
+bound allows real D; the common-coordinate theorem takes an integer
+D for the monomial degrees. It retains signed coefficients, all
+integer X,Y, zero factors and zero radicals.
+
+For k equations a single positive constant
+  C(k,K,D)=2^D+(k+1)*3^K
+bounds the absolute values of every actual affine monomial X^aY^b
+with a+b<=D, every w_i and their literal sum by C(k,K,D)*N^D.
+These are precisely the affine coordinates underlying the weighted
+Veronese chart at Z=1, together with the radical-sum projection.
+The integers remain actual integer coordinates; no presumed geometric
+height or abstract bounding-box hypothesis is substituted for them.
+
+The finite proof first bounds the natural absolute value of each
+integer split product and squares the actual radical equation.
+Real power monotonicity converts the coefficient-height exponent
+to the required D, and the triangle inequality controls the sum.
+The monomial bound is proved separately on the actual integer powers.
+An eventual version then handles offset bounds b*(log N)^r for
+arbitrary fixed b,r: one threshold precedes every coefficient family,
+root-list system, point and radical solution. In particular it covers
+the logarithmic offsets in the source with the asserted uniformity.
+
+This verifies the elementary height component of Step 2, while the
+construction of the projective embedding and its degree and curve-degree
+identities remain open. The curve exclusions, surface coverings and
+two-variable host counts also remain open. T1.7 stays in_progress,
+coverage stays 79/167 and confirmed improvements stay 105; no new
+improvement identifier is assigned to this checked source height
+calculation. No external estimate, dependency download, original
+source edit or Palomar registration is introduced.
+
+Verified with Lean v4.36.0-rc2: full lake build (11393 jobs), actual Audit.lean kernel-axiom audit (7866 declarations; only propext, Classical.choice, Quot.sound), all 5583 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.38 GiB.

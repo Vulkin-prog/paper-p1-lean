@@ -1712,3 +1712,6 @@ public import PaperP1.Algebra.MvPolynomialSubstitutionDegree
 public import PaperP1.Algebra.UniversalRadicalProjection
 public import PaperP1.Algebra.UniversalRadicalProjectionEvaluation
 public import PaperP1.Algebra.SplitRadicalProjectionDegree
+public import PaperP1.Arithmetic.SplitRadicalPointHeight
+public import PaperP1.Algebra.SplitRadicalEmbeddingHeight
+public import PaperP1.Asymptotics.SplitRadicalEmbeddingHeight
