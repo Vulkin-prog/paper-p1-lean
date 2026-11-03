@@ -5245,6 +5245,7 @@ import PaperP1
 #print axioms PaperP1.FiniteAlignedTargetTripleMass.all_actual_sources
 #print axioms PaperP1.FiniteAlignedTargetTripleMass.uniform_mass
 #print axioms PaperP1.FiniteChannelActivity.uniform_activity
+#print axioms PaperP1.FiniteChannelActivityBounds.uniform_bounds
 #print axioms PaperP1.FiniteChannelHierarchyBounds.upperConstant_pos
 #print axioms PaperP1.FiniteChannelHierarchyBounds.coefficient_eq_main_terms
 #print axioms PaperP1.FiniteChannelHierarchyBounds.uniform_bounds
@@ -5252,6 +5253,9 @@ import PaperP1
 #print axioms PaperP1.FiniteChannelHierarchyBounds.uniform_power_bound
 #print axioms PaperP1.FiniteChannelHierarchyBounds.uniform_small
 #print axioms PaperP1.FiniteChannelHierarchyBounds.nominal_bounds
+#print axioms PaperP1.FiniteGoodPartitionUnderInputs.choose_height
+#print axioms PaperP1.FiniteGoodPartitionUnderInputs.uniform_exceptional
+#print axioms PaperP1.FiniteGoodPartitionUnderInputs.companion_T7_1
 #print axioms PaperP1.FixedChannelErrorAlgebra.error_scale
 #print axioms PaperP1.FixedChannelMassTheorem.eventual_mass_eq
 #print axioms PaperP1.FixedChannelMassTheorem.strong_error
@@ -5611,6 +5615,7 @@ import PaperP1
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.tripleGap_lt_half
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.uniform_pair_probability
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.uniform_family_probability
+#print axioms PaperP1.NonalignedPairActivityUnderInputs.uniform_activity
 #print axioms PaperP1.NonalignedSourceResidualUnderInputs.uniform_weighted_hosts
 #print axioms PaperP1.NonalignedSourceResidualUnderInputs.uniform_source_bounds
 #print axioms PaperP1.NonalignedSourceResidualUnderInputs.article_3_2
@@ -6002,6 +6007,10 @@ import PaperP1
 #print axioms PaperP1.SharedPrincipalTripleMass.inclusion
 #print axioms PaperP1.SharedPrincipalTripleMass.uniform_mass
 #print axioms PaperP1.SharedPrincipalTripleMass.relative_to_beta_squared
+#print axioms PaperP1.SharpPairActivityUnderInputs.uniform_principal_profile
+#print axioms PaperP1.SharpPairActivityUnderInputs.uniform_pair_activity
+#print axioms PaperP1.SharpRunConversionUnderInputs.uniform_cumulant
+#print axioms PaperP1.SharpRunConversionUnderInputs.uniform_conversion
 #print axioms PaperP1.ShiftedQuadraticKernelCount.ordered_pair_count
 #print axioms PaperP1.ShiftedQuadraticKernelCount.two_factor_count
 #print axioms PaperP1.ShortCertificateDegreeBudget.envelope_tendsto
@@ -7670,6 +7679,17 @@ import PaperP1
 #print axioms PaperP1.FactorialCountMoments.factorialCountMoment_two
 #print axioms PaperP1.FactorialCountMoments.sum_tuple_joint_moments
 #print axioms PaperP1.FamilyIndependentMass.finite_mass_cap
+#print axioms PaperP1.FiniteAlignedChannelCover.channel_data
+#print axioms PaperP1.FiniteAlignedChannelCover.classification
+#print axioms PaperP1.FiniteAlignedChannelCover.nonzero_cover
+#print axioms PaperP1.FiniteGoodChannelPartition.good_subset
+#print axioms PaperP1.FiniteGoodChannelPartition.disjoint_classes
+#print axioms PaperP1.FiniteGoodChannelPartition.cover
+#print axioms PaperP1.FiniteGoodChannelPartition.good_data
+#print axioms PaperP1.FiniteGoodChannelPartition.good_compression
+#print axioms PaperP1.FiniteGoodChannelPartition.exceptional_nonzero_cover
+#print axioms PaperP1.FiniteGoodChannelPartition.exceptional_activity_bound
+#print axioms PaperP1.FiniteGoodChannelPartition.activity_decomposition
 #print axioms PaperP1.FinitePartMoments.joint_image
 #print axioms PaperP1.FinitePartMoments.centered_image
 #print axioms PaperP1.Model.valueLinear_apply
@@ -8449,6 +8469,7 @@ import PaperP1
 #print axioms PaperP1.SourceConditionalDeviations.finite_negative_bound
 #print axioms PaperP1.SourceConditionalDeviations.mean_decomposition
 #print axioms PaperP1.SourceConditionalDeviations.finite_mean_lower
+#print axioms PaperP1.SourcePairActivityBound.weighted_bound
 #print axioms PaperP1.SourcePairAffineWeight.eta_eq_compatibility
 #print axioms PaperP1.SourcePairAffineWeight.joint_zero_or_nominal
 #print axioms PaperP1.SourcePairAffineWeight.joint_formula

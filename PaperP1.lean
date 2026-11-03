@@ -2178,3 +2178,11 @@ public import PaperP1.Asymptotics.PlaneConfinementNegligibility
 public import PaperP1.Asymptotics.PolylogConfinementTheorem
 public import PaperP1.Model.PrimitiveTripleWeights
 public import PaperP1.Asymptotics.PrimitiveConfinementWeights
+public import PaperP1.Model.SourcePairActivityBound
+public import PaperP1.Model.FiniteAlignedChannelCover
+public import PaperP1.Model.FiniteGoodChannelPartition
+public import PaperP1.Asymptotics.NonalignedPairActivityUnderInputs
+public import PaperP1.Asymptotics.FiniteChannelActivityBounds
+public import PaperP1.Asymptotics.FiniteGoodPartitionUnderInputs
+public import PaperP1.Asymptotics.SharpPairActivityUnderInputs
+public import PaperP1.Asymptotics.SharpRunConversionUnderInputs
