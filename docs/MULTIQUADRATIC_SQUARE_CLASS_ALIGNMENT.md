@@ -2914,3 +2914,55 @@ manuscript-conclusion error. Palomar is deferred; original
 manuscript bytes and pinned dependencies are unchanged.
 
 Verified under Lean v4.36.0-rc2: full build passed (12657 jobs); direct axiom audit passed for 9109 declarations using only propext, Classical.choice and Quot.sound; all 7127 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.55 GiB.
+
+
+## Literal integer points in the chosen weighted-source embedding
+
+The general split-product integer-root system now constructs
+an actual point of the weighted source and of its chosen
+projective coordinate embedding. The construction permits
+arbitrary disjoint nonempty left and right root sets; it is
+not restricted to singleton right sets.
+
+Literal integer square equations annihilate the actual weighted
+relation ideal at Z=1. Quotient evaluation and its restriction
+to the actual source Veronese are constructed. The chosen
+projective generator index is identified with the actual degree-D
+base monomials plus radical variables. Their point coordinates
+are the literal integers X^u*Y^v and w_i. Polynomial evaluation
+at those integers is proved equal to the actual source evaluation
+composed with the chosen embedding presentation.
+
+The Z^D coordinate is proved to be one. The X*Z^(D-1) and
+Y*Z^(D-1) coordinates recover the exact original integer host.
+The actual finite bounded normalized coordinate point sets and
+their ideal-kernel membership characterization are constructed.
+Every literal coordinate is bounded by (2^D+3^K)*N^D; this
+constant is independent of the equation count. The floor of
+this real height is proved >=1 and contains the actual point.
+
+Embedded curve-ideal containment is proved equivalent to actual
+source-ideal containment, using surjectivity of the actual
+embedding presentation. It supplies the actual affine plane
+host-image kernel. Thus the already proved source low-degree
+exclusion applies directly to the literal embedded integer point
+and gives chosen-coordinate Hilbert multiplicity at least 2D.
+This includes constant-coordinate images, with both actual
+selected-set even-selection maps injective and their actual
+images in direct sum. No host-image or degree-bound conclusion
+is assumed in this new point-containment composition.
+
+These are unconditional algebraic and height bridges for the
+general half-power count. That count itself remains open: its
+finite surface-cover and uniform curve-count applications must
+be made in this chosen weighted-source embedding, with their
+exact uniformity. The two previously isolated ordinary-embedding
+input properties alone have not been asserted to cover this
+new setting. The degree-(a,1) graph composition remains proved
+under those two explicit ordinary geometric inputs. T1.7 stays
+in_progress; numbered coverage remains 79/167, confirmed
+improvements remain 112 and Palomar is deferred. No manuscript
+conclusion error is confirmed; source bytes and dependencies
+are unchanged.
+
+Verified under Lean v4.36.0-rc2: full build passed (12667 jobs); direct axiom audit passed for 9127 declarations using only propext, Classical.choice and Quot.sound; all 7154 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.53 GiB.

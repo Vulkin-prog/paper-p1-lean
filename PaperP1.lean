@@ -2055,3 +2055,8 @@ public import PaperP1.Arithmetic.TwoBlockComponentSquares
 public import PaperP1.Arithmetic.TwoBlockComponentPatterns
 public import PaperP1.Asymptotics.TwoBlockComponentHostData
 public import PaperP1.Asymptotics.DegreeOneGraphHostCount
+public import PaperP1.Arithmetic.WeightedRootEvaluation
+public import PaperP1.Arithmetic.SourceIntegerLift
+public import PaperP1.Arithmetic.SourceIntegerPoints
+public import PaperP1.Arithmetic.SourceIntegerPointHeight
+public import PaperP1.Geometry.SourceIntegerCurvePoint
