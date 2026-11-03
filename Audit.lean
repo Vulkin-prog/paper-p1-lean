@@ -993,6 +993,9 @@ import PaperP1
 #print axioms PaperP1.SplitRadicalEmbeddingHeight.coordinates_height
 #print axioms PaperP1.SplitRadicalField.list_independent
 #print axioms PaperP1.SplitRadicalField.source_field
+#print axioms PaperP1.SplitRadicalLineMap.lineMap_scaled
+#print axioms PaperP1.SplitRadicalLineMap.hom_square
+#print axioms PaperP1.SplitRadicalLineMap.no_line_map
 #print axioms PaperP1.SplitRadicalProjectionBaseChange.linear_map
 #print axioms PaperP1.SplitRadicalProjectionBaseChange.word_map
 #print axioms PaperP1.SplitRadicalProjectionBaseChange.scaled_map
@@ -1020,6 +1023,10 @@ import PaperP1
 #print axioms PaperP1.SplitRootPolynomial.isRoot_iff
 #print axioms PaperP1.SquareInFractionField.square_reflect
 #print axioms PaperP1.SquareInFractionField.square_mul_square_iff
+#print axioms PaperP1.SquareLineMatching.square_derivative_at_root
+#print axioms PaperP1.SquareLineMatching.square_product_root
+#print axioms PaperP1.SquareLineMatching.matches_offset
+#print axioms PaperP1.SquareLineMatching.function_matches_offset
 #print axioms PaperP1.Algebra.properPrefix_insert_max
 #print axioms PaperP1.Algebra.properPrefix_eq_erase_max
 #print axioms PaperP1.Algebra.orderedBoundary_nonempty
@@ -3084,6 +3091,12 @@ import PaperP1
 #print axioms PaperP1.SelectedKernelSourceFamilies.small_windows_eq
 #print axioms PaperP1.SelectedKernelWitness.other_prime_divisor
 #print axioms PaperP1.SelectedKernelWitness.other_start_mem_hits
+#print axioms PaperP1.SelectedProportionalPairs.pair_mem_space
+#print axioms PaperP1.SelectedProportionalPairs.pair_ne_zero
+#print axioms PaperP1.SelectedProportionalPairs.no_proportional_pairs
+#print axioms PaperP1.SelectedProportionalPairs.value_cast
+#print axioms PaperP1.SelectedProportionalPairs.values_pos
+#print axioms PaperP1.SelectedProportionalPairs.values_ne
 #print axioms PaperP1.SelectedQuadraticBudget.exists_le_average
 #print axioms PaperP1.SelectedQuadraticBudget.total_weight_budget
 #print axioms PaperP1.SelectedQuadraticBudget.selected_source_block
@@ -3319,6 +3332,9 @@ import PaperP1
 #print axioms PaperP1.SplitProductBound.base_le_height_of_nonzero
 #print axioms PaperP1.SplitProductBound.uniform_split_product
 #print axioms PaperP1.SplitProductBound.uniform_split_product_real_radius
+#print axioms PaperP1.SplitRadicalLineObstruction.two_equations
+#print axioms PaperP1.SplitRadicalLineObstruction.family_obstruction
+#print axioms PaperP1.SplitRadicalLineObstruction.vertical_family_obstruction
 #print axioms PaperP1.SplitRadicalPointHeight.product_height
 #print axioms PaperP1.SplitRadicalPointHeight.square_height
 #print axioms PaperP1.SplitRadicalPointHeight.dyadic_square_height

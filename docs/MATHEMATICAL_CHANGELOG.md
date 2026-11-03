@@ -5691,3 +5691,55 @@ calculation. No external estimate, dependency download, original
 source edit or Palomar registration is introduced.
 
 Verified with Lean v4.36.0-rc2: full lake build (11393 jobs), actual Audit.lean kernel-axiom audit (7866 declarations; only propext, Classical.choice, Quot.sound), all 5583 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.38 GiB.
+
+
+## The actual selected-value obstruction on rational lines
+
+The functional-square obstruction on affine rational lines in
+Step 3 of companion T1.7 is now proved for the actual finite sets of
+selected positive values. It uses their literal even-selection maps
+and square-class spaces, rather than requiring independence of the
+larger full windows. Two equations with disjoint nonempty first root
+lists already suffice. The second selected set's even-selection map
+need not be injective; the two actual even image spaces must remain
+in direct sum. Coefficients are arbitrary nonzero rational constants.
+
+The polynomial proof is explicit. A square polynomial has zero
+derivative at each root. If a product c*P*Q is square, c!=0 and P
+is separable, every root of P must therefore be a root of Q.
+Applying this to the literal restriction Y=alpha*X+beta of each
+scaled split equation forces every first-list root to match an
+actual second-list root. Squares in the actual rational-function
+field are reflected to the integrally closed polynomial ring before
+this argument is applied. No root-matching statement is assumed.
+
+The selected-value arithmetic is proved on arbitrary finite positive
+integer sets S,T. Two distinct elements of S and a proportional pair
+in T give the same nonzero even square class in both actual spaces.
+Injectivity of the first even map makes that class nonzero, and
+directness gives the contradiction. The positive offset values are
+identified with their actual natural absolute values and rational
+casts. Two disjoint equations supply the required distinct pair.
+This includes horizontal slopes alpha=0; swapping the coordinates
+also proves the vertical-line functional-square obstruction.
+
+The result is connected to the actual split-radical coordinate
+algebra. The literal polynomial map substituting a rational line
+is checked on each scaled split radicand. Any ring homomorphism
+from the actual coordinate tower to Q(T) agreeing with that line
+map on Q[X,Y] would turn every actual radical-square relation into
+the forbidden functional squares. Its nonexistence is proved, so
+the obstruction is not left as an unexplained square-condition input.
+
+This extends the one-sided arithmetic refinement P1-MATH-0019 to
+selected sets and the line step of T1.7. Its earlier complete T20.5
+validation is preserved in the finding history. No independence
+weakening is claimed for the entire two-variable host-count lemma.
+The geometric step identifying a curve of minimal projective degree
+with a degree-one function-field map to a line remains open, as do
+the weighted projective degree formulas, surface coverings and final
+two-variable counts. T1.7 stays in_progress, coverage stays 79/167
+and confirmed improvements stay 105. No external estimate, dependency
+download, source-byte modification or Palomar registration is introduced.
+
+Verified with Lean v4.36.0-rc2: full lake build (11401 jobs), actual Audit.lean kernel-axiom audit (7882 declarations; only propext, Classical.choice, Quot.sound), all 5599 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.37 GiB.

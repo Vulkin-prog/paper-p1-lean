@@ -1715,3 +1715,7 @@ public import PaperP1.Algebra.SplitRadicalProjectionDegree
 public import PaperP1.Arithmetic.SplitRadicalPointHeight
 public import PaperP1.Algebra.SplitRadicalEmbeddingHeight
 public import PaperP1.Asymptotics.SplitRadicalEmbeddingHeight
+public import PaperP1.Algebra.SquareLineMatching
+public import PaperP1.Arithmetic.SelectedProportionalPairs
+public import PaperP1.Arithmetic.SplitRadicalLineObstruction
+public import PaperP1.Algebra.SplitRadicalLineMap

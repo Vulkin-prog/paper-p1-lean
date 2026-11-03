@@ -661,23 +661,47 @@
         "statement_sha256": "465917147676dcae0ce62fd66ee88a0eb70874be3aacb04120c5ab5a6b4f772b"
       },
       "original_assumption": "Companion T20.5 assumes a positive pair of regular windows whose actual relative square-class spaces are in direct sum.",
-      "finding": "For the stated rational line and direct square-class spaces, regularity of the first window alone suffices for both conclusions. The second window may have local even square relations. The full at-most-one-common-root bound and removal of at most two equations, with squarefree remaining polynomials and disjoint roots, are proved in this broader setting.",
+      "finding": "For the stated rational line and direct square-class spaces, regularity of the first window alone suffices for both conclusions. The second window may have local even square relations. The full at-most-one-common-root bound and removal of at most two equations, with squarefree remaining polynomials and disjoint roots, are proved in this broader setting. The same one-sided criterion is now proved for the actual finite selected positive value sets. It excludes functional radical solutions for two equations with disjoint nonempty first root lists on a rational affine line through the host, including horizontal slopes. Swapping coordinates treats vertical lines. The obstruction is also proved on actual coordinate-algebra ring maps to Q(T).",
       "evidence": [
         "PaperP1.OffsetRootPolynomials.root_separation",
         "PaperP1.OffsetRootSeparation.match_left_unique",
         "PaperP1.OffsetRootSeparation.commonRoots_card_le_one",
         "PaperP1.TwoPointSquareClasses.no_proportional_pairs",
         "PaperP1.TwoPointSquareClasses.injective_evenMap_of_rank",
-        "PaperP1.OffsetRootExceptionalSet.exists_exceptional_coordinates"
+        "PaperP1.OffsetRootExceptionalSet.exists_exceptional_coordinates",
+        "PaperP1.SquareLineMatching.square_derivative_at_root",
+        "PaperP1.SquareLineMatching.square_product_root",
+        "PaperP1.SquareLineMatching.matches_offset",
+        "PaperP1.SquareLineMatching.function_matches_offset",
+        "PaperP1.SelectedProportionalPairs.pair_mem_space",
+        "PaperP1.SelectedProportionalPairs.pair_ne_zero",
+        "PaperP1.SelectedProportionalPairs.no_proportional_pairs",
+        "PaperP1.SelectedProportionalPairs.value_cast",
+        "PaperP1.SelectedProportionalPairs.values_pos",
+        "PaperP1.SelectedProportionalPairs.values_ne",
+        "PaperP1.SplitRadicalLineObstruction.two_equations",
+        "PaperP1.SplitRadicalLineObstruction.family_obstruction",
+        "PaperP1.SplitRadicalLineObstruction.vertical_family_obstruction",
+        "PaperP1.SplitRadicalLineMap.lineMap_scaled",
+        "PaperP1.SplitRadicalLineMap.hom_square",
+        "PaperP1.SplitRadicalLineMap.no_line_map"
       ],
-      "proposed_revision": "In T20.5 retain positivity, nonzero rational slope and directness of the two actual even square-class spaces, but require only the first window to be regular. Keep the original two-regular-window specialization where used later.",
-      "impact": "Weakens the local arithmetic assumptions in the entire lemma. Two root matches create the same even square class in both windows; only the first map needs injectivity to make this class nonzero. All subsequent root and polynomial arguments use the proved common-root exclusion and disjoint physical supports, without second-window regularity. No original conclusion is corrected or optimality claim is made.",
-      "validation": "Full Lean v4.36.0-rc2 build (8847 jobs) and actual axiom audit of all 2038 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. Every evidence theorem is directly included in the audit. All 313 distinct coverage/finding declaration names were also checked directly by Lean.",
+      "proposed_revision": "In T20.5 retain positivity, nonzero rational slope and directness of the two actual even square-class spaces, but require only the first window to be regular. Keep the original two-regular-window specialization where used later. State the selected-value version in the line step of T1.7, where two disjoint equations and injectivity of only the first selected even map suffice in the Y=alpha*X+beta orientation. Keep both-set hypotheses for subsequent arguments that use them.",
+      "impact": "Weakens the local arithmetic assumptions in the entire lemma. Two root matches create the same even square class in both windows; only the first map needs injectivity to make this class nonzero. All subsequent root and polynomial arguments use the proved common-root exclusion and disjoint physical supports, without second-window regularity. No original conclusion is corrected or optimality claim is made. Extends the checked line obstruction to the exact selected-value scope of T1.7 without imposing stronger full-window independence. The projective curve-to-line bridge and final host estimates remain separate obligations.",
+      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11401 jobs), actual Audit.lean kernel-axiom audit (7882 declarations; only propext, Classical.choice, Quot.sound), all 5599 ledger references, source integrity (138 manifest entries / 167 numbered results), and git diff --check. Ubuntu root free space: 14.37 GiB.",
       "manuscript_integration": {
         "target_version": "next version after formalization",
         "status": "not_integrated"
       },
-      "validation_commit": "9fac0fbf1971b9145acd77ce72f3e6e42cbfedfc"
+      "validation_history": [
+        {
+          "finding": "For the stated rational line and direct square-class spaces, regularity of the first window alone suffices for both conclusions. The second window may have local even square relations. The full at-most-one-common-root bound and removal of at most two equations, with squarefree remaining polynomials and disjoint roots, are proved in this broader setting.",
+          "impact": "Weakens the local arithmetic assumptions in the entire lemma. Two root matches create the same even square class in both windows; only the first map needs injectivity to make this class nonzero. All subsequent root and polynomial arguments use the proved common-root exclusion and disjoint physical supports, without second-window regularity. No original conclusion is corrected or optimality claim is made.",
+          "proposed_revision": "In T20.5 retain positivity, nonzero rational slope and directness of the two actual even square-class spaces, but require only the first window to be regular. Keep the original two-regular-window specialization where used later.",
+          "validation": "Full Lean v4.36.0-rc2 build (8847 jobs) and actual axiom audit of all 2038 theorem/lemma declarations; only propext, Classical.choice and Quot.sound. Every evidence theorem is directly included in the audit. All 313 distinct coverage/finding declaration names were also checked directly by Lean.",
+          "validation_commit": "9fac0fbf1971b9145acd77ce72f3e6e42cbfedfc"
+        }
+      ]
     },
     {
       "id": "P1-MATH-0020",
