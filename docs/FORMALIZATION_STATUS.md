@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **9151 audited theorem/lemma declarations**. This
+- The project currently has **9161 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -9761,3 +9761,54 @@ This is a proof improvement without a confirmed manuscript
 conclusion error; source bytes and dependencies are unchanged.
 
 Verified under Lean v4.36.0-rc2: full build passed (12693 jobs); direct axiom audit passed for 9151 declarations using only propext, Classical.choice and Quot.sound; all 7193 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.48 GiB.
+
+
+## General nonaligned literal hosts and the actual degree gap
+
+The general nonaligned half-power composition is now proved
+without either actual even-selection injectivity or the direct-sum
+hypothesis. The proof excludes the actual source curves of degree D
+using precisely the source's geometric nonalignment alternative.
+Two functional square equations with disjoint nonempty left root
+sets match two distinct integer roots to right roots. Their two
+bounded grid points and the actual host lie on the same rational
+affine graph. The previously proved exact grid-alignment theorem
+constructs positive coprime slope data with the required bound.
+A vertical degree-one image is impossible already from one
+nonempty right root set: square matching forces X+i=0, contrary
+to the far-positive host and bounded offsets. No square-class
+independence premise enters either argument.
+
+The actual height-one source curve small-degree theorem and
+Hilbert multiplicity comparison now yield degree >=2D through
+every such nonaligned integer root lift. A separately proved
+finite-cover lemma accepts only a per-curve degree lower bound,
+then performs the actual point lifting, injectivity, exceptional
+set and finite curve cardinality composition. It does not assume
+a host count. Substitution of the proved nonalignment degree gap
+and the existing height/exponent calculations gives the full
+general N^(1/2+epsilon) coefficient-uniform host count.
+
+GeneralNonalignedRootHostCount constructs the homogeneous data
+and selects a fixed subsystem, with constants independent of the
+larger equation count. Its source_uniform_hosts_of_many starts
+from literal dyadic integer hosts and the paper's exact
+CompressedTargetAlignment.Aligned 1 nonalignment condition.
+Critical-window positivity and the offset-to-scale comparison
+are derived internally. The two root-set sizes can vary freely
+subject to positivity and the common total-degree cap. Both
+families are disjoint as required by the source-cover property.
+There are no supplied fields, curves, Hilbert degrees, heights,
+square-class maps, direct-sum facts or target count bounds.
+
+The exact unproved inputs remain the generic normalized curve
+count and chosen-source uniform surface-cover properties, each
+explicit theorem arguments. Neither primary determinant theorem
+nor its chosen-embedding translation is claimed proved. The
+general actual graph population count and these geometric inputs
+remain open. T1.7 stays in_progress, coverage remains 79/167,
+confirmed improvements remain 112 and Palomar is deferred.
+This verifies the source's nonalignment alternative and introduces
+no new confirmed manuscript-conclusion error or source change.
+
+Verified under Lean v4.36.0-rc2: full build passed (12705 jobs); direct axiom audit passed for 9161 declarations using only propext, Classical.choice and Quot.sound; all 7203 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.45 GiB.

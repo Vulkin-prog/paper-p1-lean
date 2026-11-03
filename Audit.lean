@@ -4235,6 +4235,9 @@ import PaperP1
 #print axioms PaperP1.SquareDivisibilityFibres.finite_count
 #print axioms PaperP1.SquareEquationKernel.kernels_eq_of_square_mul
 #print axioms PaperP1.SquareEquationKernel.integer_square_to_kernel
+#print axioms PaperP1.SquareLineFamilyAlignment.of_two_squares
+#print axioms PaperP1.SquareLineFamilyAlignment.of_family
+#print axioms PaperP1.SquareLineFamilyAlignment.vertical_not_square
 #print axioms PaperP1.SquarePoolLower.oddPrimeSupport_square
 #print axioms PaperP1.SquarePoolLower.naturalValues_card_ge_sqrt
 #print axioms PaperP1.SquarePoolLower.sqrt_le_twice_nat_sqrt
@@ -5126,6 +5129,10 @@ import PaperP1
 #print axioms PaperP1.GeneralBranchingTheorem.reindexed_windows
 #print axioms PaperP1.GeneralBranchingTheorem.dilation_conclusion
 #print axioms PaperP1.GeneralBranchingTheorem.companion_T1_15
+#print axioms PaperP1.GeneralNonalignedRootHostCount.uniform_hosts
+#print axioms PaperP1.GeneralNonalignedRootHostCount.uniform_hosts_of_many
+#print axioms PaperP1.GeneralNonalignedRootHostCount.source_uniform_hosts_of_many
+#print axioms PaperP1.GeneralNonalignedSourceHalfPowerUnderInputs.uniform_hosts
 #print axioms PaperP1.GeneralPlanarMotifCount.uniform_count
 #print axioms PaperP1.GeneralRootHostCount.uniform_hosts
 #print axioms PaperP1.GeneralRootHostCount.uniform_hosts_of_many
@@ -5779,6 +5786,7 @@ import PaperP1
 #print axioms PaperP1.SmoothSelectionCertificates.product_budget
 #print axioms PaperP1.SmoothSelectionCertificates.source_certificates
 #print axioms PaperP1.SourceCurvePointCover.finite_cover_bound
+#print axioms PaperP1.SourceCurvePointCoverDegreeBound.finite_cover_bound
 #print axioms PaperP1.SourceTranslationCount.uniform_counts
 #print axioms PaperP1.SourceTranslationCount.all_heights
 #print axioms PaperP1.SourceTranslationCount.leading_counts
@@ -6968,6 +6976,7 @@ import PaperP1
 #print axioms PaperP1.SourceIntegerCurvePoint.host_image
 #print axioms PaperP1.SourceIntegerCurvePoint.containment_iff
 #print axioms PaperP1.SourceIntegerCurvePoint.embedded_degree_lower
+#print axioms PaperP1.SourceIntegerNonalignedCurvePoint.embedded_degree_lower
 #print axioms PaperP1.SourceProjectiveAffineField.baseEquiv_chartMap
 #print axioms PaperP1.SourceProjectiveAffineField.affineGenericMap_commutes
 #print axioms PaperP1.SourceProjectiveAffineField.sourceCoordinate_ne_zero
@@ -6992,6 +7001,7 @@ import PaperP1
 #print axioms PaperP1.SourceProjectiveCurveLineSquares.lineRestriction_isSquare_of_odd_degree
 #print axioms PaperP1.SourceProjectiveCurveLineSquares.lineRestriction_isSquare
 #print axioms PaperP1.SourceProjectiveCurveLowDegreeExclusion.multiplicity_ge_twoD
+#print axioms PaperP1.SourceProjectiveCurveNonalignedDegreeBound.multiplicity_ge_twoD
 #print axioms PaperP1.SourceProjectiveCurveRadicalDescent.radical_isSquare
 #print axioms PaperP1.SourceProjectiveCurveSmallDegree.factors_lt_two
 #print axioms PaperP1.SourceProjectiveCurveSmallDegree.line_and_degree_one

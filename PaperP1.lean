@@ -2073,3 +2073,9 @@ public import PaperP1.Asymptotics.HalfPowerSurfaceCountParameters
 public import PaperP1.Asymptotics.GeneralSourceHalfPowerUnderInputs
 public import PaperP1.Arithmetic.GeneralRootSystemData
 public import PaperP1.Asymptotics.GeneralRootHostCount
+public import PaperP1.Arithmetic.SquareLineFamilyAlignment
+public import PaperP1.Geometry.SourceProjectiveCurveNonalignedDegreeBound
+public import PaperP1.Geometry.SourceIntegerNonalignedCurvePoint
+public import PaperP1.Asymptotics.SourceCurvePointCoverDegreeBound
+public import PaperP1.Asymptotics.GeneralNonalignedSourceHalfPowerUnderInputs
+public import PaperP1.Asymptotics.GeneralNonalignedRootHostCount
