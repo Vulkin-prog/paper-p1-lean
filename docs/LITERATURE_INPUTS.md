@@ -7765,3 +7765,59 @@ coverage remains 79/167, confirmed improvements remain 107 and Palomar
 remains deferred. Original manuscript sources are unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12203 jobs, direct axiom audit of 8413 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6229 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.53 GiB.
+
+
+## Actual projective curve quotient function-field rank
+
+The finite graded-module rank is now identified with the degree of
+the actual projective function-field map. This comparison is proved
+through literal degree-one affine charts, with no Laurent-polynomial
+identification or cone-field degree supplied as a premise.
+
+The common denominator of an independent homogeneous free approximation
+can be chosen homogeneous and nonzero. Every component of an arbitrary
+clearing denominator still clears the entire module: the proof handles
+both the allowed-degree terms and the terms below a generator weight,
+then recomposes an arbitrary element from its homogeneous components.
+
+For a nonzero degree-one chart coordinate, dehomogenization is injective
+on each homogeneous component of a domain. Every chart element has
+representatives in all sufficiently large degrees. For a finite family
+of chart coefficients, their representative degrees can be adjusted
+simultaneously against the actual generator weights. Thus a relation
+between the dehomogenized independent generators lifts to a single
+homogeneous relation in the original module, proving chart independence.
+Actual finite generators and the homogeneous denominator descend by
+the checked dehomogenization diagram. The same independent subfamily
+therefore computes both the global module rank and the chart-module
+rank. Their equality is proved, rather than assumed.
+
+The actual generic-point function fields are already proved to be the
+fraction fields of these charts. Their checked naturality and the
+pinned fraction-field rank theorem identify the degree of the actual
+scheme function-field map with the chart rank, hence with the global
+finite graded-module rank.
+
+Irrelevant ideals commute with surjective graded maps. The actual
+irrelevant-ideal radical bound is proved to descend to a homogeneous
+target quotient and its actual base preimage quotient. This constructs
+the projective morphism between the literal source prime quotient and
+its literal base quotient. A nonzero degree-one base coordinate proves
+both projective spectra nonempty and integral. Their actual geometric
+function-field map is constructed and its degree is proved equal to
+the already computed source-quotient module rank, between 1 and 2^k.
+The source Hilbert multiplicity comparison is restated using this
+actual projective field degree, still with the target Hilbert-polynomial
+existence and the actual affine base polynomial as explicit arguments.
+
+This closes the module-to-projective-function-field rank comparison
+for these actual quotients. The full manuscript curve formula still
+requires general Hilbert-polynomial existence for the curve quotients
+and identification of the base image quotient with the literal
+plane-equation Veronese, whose Hilbert degree De is already checked.
+Scheme dimension, hyperplane-bundle comparison, low-degree curve
+geometry and external host-count inputs remain open. T1.7 stays
+in_progress; numbered coverage remains 79/167, confirmed improvements
+remain 107 and Palomar remains deferred. Original sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12221 jobs, direct axiom audit of 8440 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6261 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.50 GiB.

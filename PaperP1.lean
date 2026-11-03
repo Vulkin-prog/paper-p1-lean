@@ -1835,3 +1835,12 @@ public import PaperP1.Algebra.FiniteGradedModuleSandwich
 public import PaperP1.Algebra.LinearHilbertGrowth
 public import PaperP1.Algebra.FiniteGradedLinearGrowth
 public import PaperP1.Algebra.SourceCurveQuotient
+public import PaperP1.Algebra.HomogeneousFreeApproximation
+public import PaperP1.Algebra.GradedDehomogenizationPieces
+public import PaperP1.Algebra.GradedDehomogenizationModule
+public import PaperP1.Algebra.GradedDehomogenizationRank
+public import PaperP1.Algebra.GradedIrrelevantMap
+public import PaperP1.Algebra.GradedQuotientAdmissibility
+public import PaperP1.Geometry.ProjFunctionFieldRank
+public import PaperP1.Geometry.SourceCurveProjectiveMap
+public import PaperP1.Geometry.SourceCurveProjectiveFieldRank
