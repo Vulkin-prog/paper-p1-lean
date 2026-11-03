@@ -656,6 +656,7 @@ import PaperP1
 #print axioms PaperP1.FinitePiExtension.extendEven_injective
 #print axioms PaperP1.FinitePiExtension.evenMap_extend
 #print axioms PaperP1.FinitePiExtension.even_injective_of_embedding
+#print axioms PaperP1.FiniteQuadraticSubalgebra.finite_inclusion
 #print axioms PaperP1.FiniteQuadraticTower.base_injective
 #print axioms PaperP1.FiniteQuadraticTower.index_card
 #print axioms PaperP1.FiniteQuadraticTower.finrank
@@ -765,6 +766,11 @@ import PaperP1
 #print axioms PaperP1.HomogeneousSplitRadicalData.linear_map
 #print axioms PaperP1.HomogeneousSplitRadicalData.word_map
 #print axioms PaperP1.HomogeneousSplitRadicalData.radicand_map
+#print axioms PaperP1.HomogeneousSplitRadicalFiniteVeronese.base_le_veronese
+#print axioms PaperP1.HomogeneousSplitRadicalFiniteVeronese.radical_mem_veronese
+#print axioms PaperP1.HomogeneousSplitRadicalFiniteVeronese.radical_square
+#print axioms PaperP1.HomogeneousSplitRadicalFiniteVeronese.relative_generators
+#print axioms PaperP1.HomogeneousSplitRadicalFiniteVeronese.baseMap_finite
 #print axioms PaperP1.HomogeneousSplitRadicalGrading.base_variable_mem
 #print axioms PaperP1.HomogeneousSplitRadicalGrading.radical_variable_mem
 #print axioms PaperP1.HomogeneousSplitRadicalGrading.base_variable_component
@@ -1071,6 +1077,11 @@ import PaperP1
 #print axioms PaperP1.SparseKernelBasis.kernel_basis_from_section
 #print axioms PaperP1.SparseKernelBasis.exists_sparse_kernel_basis
 #print axioms PaperP1.SparseKernelBasis.finite_equations
+#print axioms PaperP1.SplitBaseVeronese.mapDomain_base_pure
+#print axioms PaperP1.SplitBaseVeronese.rename_monomial_mem
+#print axioms PaperP1.SplitBaseVeronese.native_degreeD_image_mem
+#print axioms PaperP1.SplitBaseVeronese.native_multiple_image_mem
+#print axioms PaperP1.SplitBaseVeronese.radicand_image_mem
 #print axioms PaperP1.SplitRadicalBirationalProjection.source_sum_primitive
 #print axioms PaperP1.SplitRadicalBirationalProjection.source_fractionFields
 #print axioms PaperP1.SplitRadicalCoordinateAlgebra.generic_radicands

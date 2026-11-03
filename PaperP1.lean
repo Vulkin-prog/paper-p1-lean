@@ -1734,3 +1734,6 @@ public import PaperP1.Algebra.WeightedVeroneseGeneration
 public import PaperP1.Algebra.GradedVeroneseAlgebra
 public import PaperP1.Algebra.SplitWeightedDegreeGenerators
 public import PaperP1.Algebra.HomogeneousSplitRadicalVeronese
+public import PaperP1.Algebra.SplitBaseVeronese
+public import PaperP1.Algebra.FiniteQuadraticSubalgebra
+public import PaperP1.Algebra.HomogeneousSplitRadicalFiniteVeronese
