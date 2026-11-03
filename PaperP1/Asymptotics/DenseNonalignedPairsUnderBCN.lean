@@ -36,12 +36,12 @@ local instance physicalAddCommGroup {L : ℕ} (X : Fin 0 ⊕ Fin 2 → ℕ)
     (P : Submodule F₂ (code X L)) : AddCommGroup P := by
   with_unfolding_all exact Submodule.addCommGroup (R := F₂) (M := code X L) P
 
-theorem uniform_kernel_hosts (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCount.UniformBound c κ)
+theorem uniform_kernel_hosts_of_no_exact (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCount.UniformBound c κ)
     (C η ε : ℝ) (hη : 0 < η) (hε : 0 < ε) :
     ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
       |(L : ℝ) - Real.log N / Real.log 2| ≤ C →
       ∀ F : Finset (ℕ × ℕ), (∀ p ∈ F, p.1 ∈ dyadicBlock N ∧ p.2 ∈ dyadicBlock N) →
-      (∀ p ∈ F, ¬CompressedTargetAlignment.Aligned 1 p.1 p.2 L) →
+      (∀ p ∈ F, ActualOffsetNonalignment.NoExact p.1 p.2 L) →
       (∀ p ∈ F, η * L ≤ (Module.finrank F₂ (Kernel p.1 p.2 L ⊥) : ℝ)) →
         (F.card : ℝ) ≤ (N : ℝ) ^ ε := by
   obtain ⟨t, ht, hreg⟩ := TwoTargetPhysicalRegularization.uniform_physical_subspace 0 η hη
@@ -71,9 +71,7 @@ theorem uniform_kernel_hosts (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCo
       · fin_cases j
         · simpa [starts] using (hdyadic p hp).1
         · simpa [starts] using (hdyadic p hp).2
-    have hxy := ActualOffsetNonalignment.of_nonaligned hL
-      (by have hh := (mem_Ico.mp (hdyadic p hp).1).1; omega)
-      (by have hh := (mem_Ico.mp (hdyadic p hp).2).1; omega) (hnon p hp)
+    have hxy := hnon p hp
     have hno : ∀ i j, i ≠ j → ActualOffsetNonalignment.NoExact
         (starts x p.1 p.2 i) (starts x p.1 p.2 j) L := by
       rintro (i | i) (j | j) hij
@@ -112,6 +110,43 @@ theorem uniform_kernel_hosts (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCo
       congr 1
       ring
     _ ≤ _ := Real.rpow_le_rpow_of_exponent_le hN1 hbudget
+
+theorem uniform_kernel_hosts (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCount.UniformBound c κ)
+    (C η ε : ℝ) (hη : 0 < η) (hε : 0 < ε) :
+    ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
+      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →
+      ∀ F : Finset (ℕ × ℕ), (∀ p ∈ F, p.1 ∈ dyadicBlock N ∧ p.2 ∈ dyadicBlock N) →
+      (∀ p ∈ F, ¬CompressedTargetAlignment.Aligned 1 p.1 p.2 L) →
+      (∀ p ∈ F, η * L ≤ (Module.finrank F₂ (Kernel p.1 p.2 L ⊥) : ℝ)) →
+        (F.card : ℝ) ≤ (N : ℝ) ^ ε := by
+  obtain ⟨NH, _hNH, hh⟩ := uniform_kernel_hosts_of_no_exact c κ hc hBCN C η ε hη hε
+  obtain ⟨NG, hg⟩ := CriticalWindowGeometry.uniform_geometry C 2
+  refine ⟨3 + NH + NG, by omega, ?_⟩
+  intro N hN L hband F hdyadic hnon hdense
+  have hgeom := hg N (by omega) L hband
+  apply hh N (by omega) L hband F hdyadic _ hdense
+  intro p hp
+  exact ActualOffsetNonalignment.of_nonaligned (by omega)
+    (by have hh := (mem_Ico.mp (hdyadic p hp).1).1; omega)
+    (by have hh := (mem_Ico.mp (hdyadic p hp).2).1; omega) (hnon p hp)
+
+theorem companion_T8_3_no_exact (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCount.UniformBound c κ)
+    (C η ε : ℝ) (hη : 0 < η) (hε : 0 < ε) :
+    ∃ N₀ : ℕ, 3 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
+      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →
+      ∀ F : Finset (ℕ × ℕ), (∀ p ∈ F, p.1 ∈ dyadicBlock N ∧ p.2 ∈ dyadicBlock N) →
+      (∀ p ∈ F, ActualOffsetNonalignment.NoExact p.1 p.2 L) →
+      (∀ p ∈ F, η * ((L + 1 : ℕ) : ℝ) ≤ (FreeComponentRank.pairIntersectionRank p.1 p.2 L : ℝ)) →
+        (F.card : ℝ) ≤ (N : ℝ) ^ ε := by
+  obtain ⟨N₀, hN₀, h⟩ := uniform_kernel_hosts_of_no_exact c κ hc hBCN C η ε hη hε
+  refine ⟨N₀, hN₀, ?_⟩
+  intro N hN L hband F hdyadic hnon hdense
+  apply h N hN L hband F hdyadic hnon
+  intro p hp
+  rw [TwoTargetEmptySource.dimension]
+  have hh := hdense p hp
+  push_cast at hh
+  linarith only [hh, hη]
 
 theorem companion_T8_3 (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCount.UniformBound c κ)
     (C η ε : ℝ) (hη : 0 < η) (hε : 0 < ε) :

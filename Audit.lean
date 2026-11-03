@@ -3356,6 +3356,7 @@ import PaperP1
 #print axioms PaperP1.IndexedPrimeOffsets.offsets_collinear
 #print axioms PaperP1.IndexedPrimeOffsets.product_le_of_collinear
 #print axioms PaperP1.InitialCurveFactor.exists_curve
+#print axioms PaperP1.InjectivePhysicalRelationRegularization.uniform_subspace
 #print axioms PaperP1.IntegerCurveFieldEquiv.mappedIdeal_eq
 #print axioms PaperP1.IntegerCurveFieldEquiv.denominators_disjoint
 #print axioms PaperP1.IntegerCurveFieldEquiv.equiv_specialize
@@ -4095,6 +4096,9 @@ import PaperP1
 #print axioms PaperP1.PrimeSubsetCertificates.primes_pairwise_coprime
 #print axioms PaperP1.PrimeSubsetCertificates.card_targets_le
 #print axioms PaperP1.PrimeSubsetCertificates.card_targets_le_full
+#print axioms PaperP1.PrimitiveTrueWindowRelations.dimension
+#print axioms PaperP1.PrimitiveTrueWindowRelations.projection_injective
+#print axioms PaperP1.PrimitiveTrueWindowRelations.pair_disjoint
 #print axioms PaperP1.PrincipalSourcePatterns.properties
 #print axioms PaperP1.PrincipalSourcePatterns.patterns_card
 #print axioms PaperP1.PrincipalSourcePatterns.anchor_injective
@@ -5593,7 +5597,9 @@ import PaperP1
 #print axioms PaperP1.DenseCompressedTargetCount.uniform_offsets
 #print axioms PaperP1.DenseCompressedTargetCount.article_15_3
 #print axioms PaperP1.DenseDirectCrossingFamiliesUnderInputs.uniform_families
+#print axioms PaperP1.DenseNonalignedPairsUnderBCN.uniform_kernel_hosts_of_no_exact
 #print axioms PaperP1.DenseNonalignedPairsUnderBCN.uniform_kernel_hosts
+#print axioms PaperP1.DenseNonalignedPairsUnderBCN.companion_T8_3_no_exact
 #print axioms PaperP1.DenseNonalignedPairsUnderBCN.companion_T8_3
 #print axioms PaperP1.DenseNonalignedProfileReduction.dense_data
 #print axioms PaperP1.DenseNonalignedProfileReduction.nonaligned_activity_bound
@@ -5607,7 +5613,11 @@ import PaperP1
 #print axioms PaperP1.DensePairCrossingSeedsUnderInputs.uniform_bound
 #print axioms PaperP1.DensePhysicalKernelWitnessUnderBCN.uniform_witness
 #print axioms PaperP1.DensePrimitiveFourMassUnderInputs.uniform_bound
+#print axioms PaperP1.DensePrimitiveTripleHostsUnderBCN.uniform_hosts
+#print axioms PaperP1.DensePrimitiveTripleHostsUnderBCN.companion_T8_2_hosts
 #print axioms PaperP1.DensePrimitiveTripleMassUnderInputs.uniform_bound
+#print axioms PaperP1.DensePrimitiveTripleRankMassUnderBCN.uniform_rank_mass
+#print axioms PaperP1.DensePrimitiveTripleRankMassUnderBCN.uniform_nominal_mass
 #print axioms PaperP1.DenseSourcePairKernelUnderInputs.uniform_source_kernel
 #print axioms PaperP1.DenseTargetCount.small_residual_exponent
 #print axioms PaperP1.DenseTargetCount.uniform_count
@@ -6187,6 +6197,7 @@ import PaperP1
 #print axioms PaperP1.LogarithmicWordPowers.polynomial_factor_le_rpow_eventually
 #print axioms PaperP1.LowCompatibleNullityTail.uniform_bound
 #print axioms PaperP1.LowCrossingJointMass.uniform_bound
+#print axioms PaperP1.LowPrimitiveTripleRankMass.uniform_bound
 #print axioms PaperP1.LowTwoPairJointMassUnderInputs.uniform_bound
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_seeds
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_extensions
@@ -6509,6 +6520,9 @@ import PaperP1
 #print axioms PaperP1.PrimitiveNominalCountMass.uniform_mass
 #print axioms PaperP1.PrimitiveSharpMassUnderInputs.uniform_four
 #print axioms PaperP1.PrimitiveSharpMassUnderInputs.article_15_5
+#print axioms PaperP1.PrimitiveTripleMassUnderBCN.uniform_rank_mass
+#print axioms PaperP1.PrimitiveTripleMassUnderBCN.uniform_actual_activity
+#print axioms PaperP1.PrimitiveTripleMassUnderBCN.companion_T8_2
 #print axioms PaperP1.PrincipalChannelEdgesPhase.uniform_geometry
 #print axioms PaperP1.PrincipalChannelEdgesPhase.positive_phase
 #print axioms PaperP1.PrincipalChannelEdgesPhase.uniform_activity_gap

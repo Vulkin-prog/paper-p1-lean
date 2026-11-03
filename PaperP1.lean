@@ -2665,3 +2665,9 @@ public import PaperP1.Asymptotics.CriticalTwoPointClasses
 public import PaperP1.Asymptotics.ActivePhysicalGroupCountUnderBCN
 public import PaperP1.Asymptotics.DensePhysicalKernelWitnessUnderBCN
 public import PaperP1.Asymptotics.DenseNonalignedPairsUnderBCN
+public import PaperP1.Arithmetic.InjectivePhysicalRelationRegularization
+public import PaperP1.Arithmetic.PrimitiveTrueWindowRelations
+public import PaperP1.Asymptotics.DensePrimitiveTripleHostsUnderBCN
+public import PaperP1.Asymptotics.DensePrimitiveTripleRankMassUnderBCN
+public import PaperP1.Asymptotics.LowPrimitiveTripleRankMass
+public import PaperP1.Asymptotics.PrimitiveTripleMassUnderBCN
