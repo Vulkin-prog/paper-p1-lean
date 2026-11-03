@@ -2357,3 +2357,15 @@ public import PaperP1.Asymptotics.AllPrimitiveMassUnderInputs
 public import PaperP1.Combinatorics.FamilyEnumerationWeights
 public import PaperP1.Model.PrimitiveOrderedMass
 public import PaperP1.Asymptotics.OrderedPrimitiveMassUnderInputs
+public import PaperP1.Arithmetic.MultiAnchorAssignments
+public import PaperP1.Arithmetic.MultiAnchorCertificateCount
+public import PaperP1.Arithmetic.MultiAnchorModuli
+public import PaperP1.Arithmetic.MultiAnchorPrimeBudget
+public import PaperP1.Arithmetic.MultiAnchorTupleCover
+public import PaperP1.Arithmetic.MultiAnchorValues
+public import PaperP1.Arithmetic.MultiAnchorWeightedSeries
+public import PaperP1.Asymptotics.MultiAnchorCertificateAsymptotic
+public import PaperP1.Asymptotics.MultiAnchorFactorialBudget
+public import PaperP1.Asymptotics.MultiAnchorModerateMass
+public import PaperP1.Asymptotics.MultiAnchorOrder
+public import PaperP1.Model.MultiAnchorFamilyMass
