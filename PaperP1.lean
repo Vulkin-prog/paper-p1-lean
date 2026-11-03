@@ -1694,3 +1694,10 @@ public import PaperP1.Algebra.QuadraticTowerPoints
 public import PaperP1.Algebra.QuadraticTowerBaseChange
 public import PaperP1.Algebra.SplitRadicalCoordinateAlgebra
 public import PaperP1.Algebra.FiniteRadicalProjection
+public import PaperP1.Algebra.QuadraticTowerRootBasis
+public import PaperP1.Algebra.QuadraticTowerSigns
+public import PaperP1.Algebra.PrimitiveRadicalSum
+public import PaperP1.Algebra.QuadraticTowerSumBaseChange
+public import PaperP1.Algebra.FractionFieldFromGenericGenerator
+public import PaperP1.Algebra.BirationalRadicalProjection
+public import PaperP1.Algebra.SplitRadicalBirationalProjection
