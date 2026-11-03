@@ -2369,3 +2369,13 @@ public import PaperP1.Asymptotics.MultiAnchorFactorialBudget
 public import PaperP1.Asymptotics.MultiAnchorModerateMass
 public import PaperP1.Asymptotics.MultiAnchorOrder
 public import PaperP1.Model.MultiAnchorFamilyMass
+public import PaperP1.Arithmetic.MultiAnchorRelationCertificate
+public import PaperP1.Arithmetic.MultiAnchorSaturation
+public import PaperP1.Arithmetic.MultiAnchorSaturationCounts
+public import PaperP1.Asymptotics.MultiAnchorBudgets
+public import PaperP1.Asymptotics.MultiAnchorDegreeBudget
+public import PaperP1.Asymptotics.MultiAnchorSaturatedMass
+public import PaperP1.Asymptotics.MultiAnchorSaturationDegrees
+public import PaperP1.Asymptotics.UniformGraphExponentTail
+public import PaperP1.Combinatorics.MultiAnchorGraph
+public import PaperP1.Model.MultiAnchorRelationFamilies

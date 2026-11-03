@@ -3,7 +3,7 @@
 Stage: **exact probability identities and uniform arithmetic foundations**, 3 November 2026.
 Neither document is fully formalized.
 
-Main15.11 now has an unconditional all-order t-anchor moderate certificate mass budget; the saturated clause remains open.
+Main15.11 is complete unconditionally: both t-anchor moderate and exact saturated budgets hold at all orders.
 
 Companion T4.3 and T14.2 are complete conditionally, with the stronger primitive exponent1.
 
@@ -30,7 +30,7 @@ Article11.1–11.3 and15.1, and companion T7.1, now have complete conditional so
 Article Theorem 3.3 now has all five literal conclusions proved **conditionally** on the explicitly recorded geometric properties. See [complete pair-profile alignment](COMPLETE_PAIR_PROFILE_ALIGNMENT.md). This is not an unconditional completion or a Palomar registration.
 
 - Baseline: P1 V1.6, 167 numbered results: main 73, companion 94.
-- Numbered results completed: **86 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 6.3, 9.1, 13.3, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorems 10.1, 13.1, 13.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Proposition T9.5, Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Propositions T1.14, T22.7 and T17.2, and Lemma T20.4 and Propositions T20.6, T1.16 and T21.4. Article Lemma15.4 is also complete.
+- Numbered results completed: **87 / 167**: article Propositions 3.1, 4.1, 5.2, 6.2, 6.3, 9.1, 13.3, 13.7, 19.2, Corollaries 9.2, 10.2, 10.3, Theorems 10.1, 13.1, 13.2 and Lemmas 2.1, 3.5, 4.2, 4.3, 4.4, 5.1, 6.1, 7.1, 7.2, 7.3, 7.4, 8.1, 14.2; companion Lemmas T1.1, T1.2, T1.3, T1.6, T1.9, T1.11, T2.5, T2.6, T9.1, T9.2, T9.3, T9.4, T12.1, T12.2, T19.1, T22.2 and Propositions T1.15, T19.2, T19.5, T19.6, T19.7, T19.9, T19.12, T20.3, T22.4, T23.1, together with Proposition T9.5, Lemmas T19.8, T19.11, T19.13, T2.1, T2.2, T4.1, T4.2, T20.1, T20.2, T20.5, T20.7, T21.2, T21.3, T22.3 and Corollary T2.3, and Lemmas T5.2, T6.1, T6.2, T6.3, and Propositions T1.14, T22.7 and T17.2, and Lemma T20.4 and Propositions T20.6, T1.16 and T21.4. Article Lemmas15.4 and15.11 are also complete.
   Lemma 5.1 is the full
   first-excluded-prefix polynomial expansion on an arbitrary finite ordered set.
   The boundary is proved to be deletion of the maximum, and the suffix is proved
@@ -58,7 +58,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **10143 audited theorem/lemma declarations**. This
+- The project currently has **10174 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -13427,3 +13427,100 @@ No new geometric input, axiom, dependency download, Paper C
 port, manuscript-byte change or Palomar registration is made.
 
 Verified under Lean v4.36.0-rc2: full build passed (13289 jobs); direct axiom audit passed for 10143 declarations using only propext, Classical.choice and Quot.sound; all 8457 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.44 GiB.
+
+
+## Unconditional completion of both multi-anchor certificate budgets
+
+Main Lemma15.11 is now complete UNCONDITIONALLY, including
+both literal all-order certificate budgets and their connection
+to block-dependent physical relation witnesses. It moves from
+in_progress to proved. Unconditional numbered coverage rises
+from86/167 to87/167; conditional results20 and confirmed
+improvements132 are unchanged. No geometric input is used.
+
+MultiAnchorSaturation defines an ACTUAL directed edge x->y:
+t distinct offsets in x have a kernel product divisible by D,
+where D>6NB, and EVERY true prime factor of D divides a value
+in y. Its divisor data prove squarefreeness, prime cardinality
+at most m_t, product(D.primeFactors)=D, and large-prime support.
+The receiving window's full prime pool has at most B*m_t
+members, for every t>=1. There is no abstract edge-degree
+hypothesis substituted for the required arithmetic.
+
+MultiAnchorSaturationCounts proves both exact finite covers.
+Outgoing centers cost at most B^t*(B+1)^m_t. Incoming centers
+cost at most B^t*(t*exp(1)*B)^m_t: every divisor prime is assigned
+to an actual selected source offset, while its membership in
+the actual receiving prime pool is proved. The bounded-subset
+weight inequality handles every prime cardinality, including
+the range near the whole pool. MultiAnchorGraph proves its
+maximum degree is at most
+2*B^t*(2*t*exp(1)*B)^m_t.
+MultiAnchorDegreeBudget and MultiAnchorSaturationDegrees prove
+the eventual bound N^(t/A+epsilon), simultaneously for both
+directed degrees and the actual undirected maximum degree.
+One threshold precedes all critical lengths and vertices.
+
+MultiAnchorRelationCertificate chooses t distinct nonzero
+coordinates from an ACTUAL physical source word. Prime parity
+shows every prime of their truncated kernel product occurs
+with odd exponent at a value of some OTHER window. The finite
+receiver and offset choices construct a literal assignment
+code. If every receiving group modulus is moderate, the tuple
+has HasCertificate. Otherwise its oversized group modulus is
+a divisor witness for an actual t-anchor saturation edge.
+This argument accepts arbitrary contacts and local defects.
+
+MultiAnchorRelationFamilies.Witnesses is the source hypothesis
+in literal physical even coordinates: for each UNMARKED block
+there is a possibly different family of even coefficient words
+whose total parity vector is zero and which selects at least
+t values at that block. The witness may depend on the block.
+No simultaneous full-support relation is assumed. The words
+are reindexed through each actual injective enumeration.
+Every noncertified family satisfying these witnesses is
+proved admissible in the actual marked saturation graph.
+The marks are precisely windows containing a value with
+truncated odd kernel at most N^b above Y=(log N)^A.
+
+UniformGraphExponentTail proves a general uniform generator
+bound with SEPARATE mark and degree exponents d and q.
+For any tilt gamma>0 with d+gamma<=1 and q+2gamma<1, all
+admissible families of cardinality at least s have mass at
+most N^(-gamma*s+epsilon), under weights<=M/N.
+The threshold is chosen before s, every graph and every
+family population. It follows from the already proved
+positive marked component generator; no desired tail is an
+input. The finite denominator and free mark contributions
+are bounded explicitly.
+
+MultiAnchorSaturatedMass sets delta=(1-b)*(1-sigma),
+theta=t/A and eta=min(delta/4,(1-theta-delta)/2).
+The actual marked count is N^(1-delta+eta), and the actual
+degree is N^(theta+eta). When theta+delta<1, the general
+generator admits the EXACT tilt delta/2, uniformly in s.
+Consequently the literal unordered saturated mass is
+N^(-s*delta/2+epsilon), with one threshold before ALL s.
+Arbitrary nonnegative heterogeneous weights bounded by M/N
+are retained. No epsilon times s is lost by moving the tilt.
+
+MultiAnchorBudgets.article_15_11 partitions every actual
+witness family into the moderate and noncertified saturated
+populations and proves the two printed bounds simultaneously:
+N^(-t*b+2*t/A+epsilon) and N^(-s*delta/2+epsilon).
+uniform_split_bound also bounds the complete witness-family
+mass by their sum. The independent weight per block, true
+marginals p_x<=2*nominal_p, contacts, zero weights and irregular
+windows are all covered by the more general cap M/N.
+The moderate estimate itself was already proved without the
+saturated parameter gap; the new theorem preserves that
+earlier independent statement.
+
+This completes15.11. It does not yet prove15.12: the ten-core
+projection-to-heavy-even-word bridge, quantitative core
+peeling, centered activity comparisons and literal primitive
+tail remain to be connected. No new mathematical correction
+is recorded merely for adding these proofs. No manuscript
+byte, dependency, Paper C port or Palomar registration changes.
+
+Verified under Lean v4.36.0-rc2: full build passed (13309 jobs); direct axiom audit passed for 10174 declarations using only propext, Classical.choice and Quot.sound; all 8503 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 13.40 GiB.
