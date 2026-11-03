@@ -988,3 +988,52 @@ open. T1.7 stays in_progress, coverage stays 79/167, confirmed
 improvements stay 106 and Palomar remains deferred.
 
 Verified with Lean v4.36.0-rc2: full build 12079 jobs, direct axiom audit of 8157 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 5876 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.68 GiB.
+
+
+## The actual projective function-field extension has degree 2^k
+
+The actual extension of projective scheme function fields is now
+proved finite of degree 2^k. Its algebra structure is the actual
+stalk-induced map of the constructed source projective morphism.
+By the previously proved naturality diagram, the actual map of
+degree-zero homogeneous fraction fields has the same degree 2^k.
+This computes the numerical field degree, separately from the
+already proved constant finite-flat scheme rank.
+
+For a nonzero degree-one homogeneous element b, its basic open
+is proved nonempty by the actual zero homogeneous prime. The
+chart map to the scheme function field is constructed by the
+canonical localization-to-sections map followed by the actual
+germ at the generic point. The scheme function field is proved
+to be the fraction field of that chart ring, by its existing
+affine-open fraction-field theorem and the actual chart section
+isomorphism. No abstract field identification is assumed.
+
+Naturality of these chart maps is proved first for germs and the
+generic-point stalk map and then for the actual homogeneous
+localization maps. This supplies both scalar-tower identities.
+The fraction-ring dimension theorem equates the actual
+function-field degree with the rank of the actual chart module.
+The literal free chart basis therefore computes that field degree.
+
+For the paper's source, the chart is the nonzero native Z^D
+coordinate. The source chart basis and its index-cardinality
+formula discharge the rank calculation as 2^k. The actual
+geometric field extension is explicitly proved module-finite.
+The checked ring equivalences and commuting diagram transport
+the numerical degree to the actual homogeneous fraction-field
+map. All source integrality hypotheses remain explicit:
+characteristic zero, nonzero coefficients, nonempty root data,
+pairwise disjoint root sets, the literal homogenized radicand
+identities, positive D and the root-count degree bound.
+
+Identification of these fields with the manuscript's explicit
+affine split-radical generic tower remains open. The base target
+is still the native standard Veronese Proj; its explicit plane
+identification, the Hilbert/intersection calculation of surface
+degree 2^k D^2, curve-degree identities and external host counts
+remain open. T1.7 stays in_progress, numbered coverage stays
+79/167, confirmed improvements stay 106 and Palomar remains
+deferred. Original manuscript sources are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12087 jobs, direct axiom audit of 8167 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 5888 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 13.67 GiB.

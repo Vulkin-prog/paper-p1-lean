@@ -1774,3 +1774,7 @@ public import PaperP1.Geometry.ProjFunctionFieldMap
 public import PaperP1.Geometry.SourceProjectiveFunctionField
 public import PaperP1.Geometry.ProjFunctionFieldCompatibility
 public import PaperP1.Geometry.SourceProjectiveFunctionFieldCompatibility
+public import PaperP1.Geometry.ProjChartFunctionField
+public import PaperP1.Geometry.ProjChartFunctionFieldNaturality
+public import PaperP1.Geometry.ProjFunctionFieldDegree
+public import PaperP1.Geometry.SourceProjectiveFunctionFieldDegree
