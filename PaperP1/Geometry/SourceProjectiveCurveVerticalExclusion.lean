@@ -39,8 +39,8 @@ local instance baseQuotientRing : CommRing (SourceCurveQuotient.BaseRing s c D I
   SourceCurveQuotient.baseQuotientRing s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p)
 
 
-theorem no_degree_one
-    (hdegree : beta% (fun {m n : ℕ} (_ : m = n) ↦ m = 1)
+theorem no_odd_degree
+    (hdegree : beta% (fun {m n : ℕ} (_ : m = n) ↦ Odd m)
       (SourceProjectiveCurveDegree.comparisonProof s c D I J hs hdeg hD p))
     (x y : ℤ)
     (himage : NativeVeroneseAffineIdeal.affineIdeal ℚ D (SourceCurveQuotient.baseIdeal s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p)) =
@@ -57,7 +57,23 @@ theorem no_degree_one
     (fun i _ ↦ hI i) (fun i _ ↦ hJ i) (fun _ _ _ _ hij ↦ hdisj hij)
     (fun i _ ↦ hne i) hposS hposT hind hdirect (fun i _ ↦ hc i)
   intro i _
-  exact SourceProjectiveCurveVerticalSquares.verticalRestriction_isSquare s c D I J hs hdeg hD p hdegree (x : ℚ) himage i
+  exact SourceProjectiveCurveVerticalSquares.verticalRestriction_isSquare_of_odd_degree s c D I J hs hdeg hD p hdegree (x : ℚ) himage i
+
+theorem no_degree_one
+    (hdegree : beta% (fun {m n : ℕ} (_ : m = n) ↦ m = 1)
+      (SourceProjectiveCurveDegree.comparisonProof s c D I J hs hdeg hD p))
+    (x y : ℤ)
+    (himage : NativeVeroneseAffineIdeal.affineIdeal ℚ D (SourceCurveQuotient.baseIdeal s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p)) =
+      Ideal.span {NativeVeroneseVerticalChart.equation (x : ℚ)})
+    (hcard : 2 ≤ s.length) (S T : Finset ℤ)
+    (hI : ∀ i, I i ⊆ S) (hJ : ∀ i, J i ⊆ T)
+    (hdisj : Pairwise fun i j ↦ Disjoint (J i) (J j)) (hne : ∀ i, (J i).Nonempty)
+    (hposS : ∀ i ∈ S, 0 < x + i) (hposT : ∀ j ∈ T, 0 < y + j)
+    (hind : EvenIndependentValues.Independent (SelectedProportionalPairs.values y T))
+    (hdirect : Disjoint (FiniteEvenSquareClasses.space (SelectedProportionalPairs.values x S))
+      (FiniteEvenSquareClasses.space (SelectedProportionalPairs.values y T))) (hc : ∀ i, c i ≠ 0) : False := by
+  exact no_odd_degree s c D I J hs hdeg hD p
+    (hdegree.symm ▸ (by decide : Odd (1 : ℕ))) x y himage hcard S T hI hJ hdisj hne hposS hposT hind hdirect hc
 
 theorem multiplicity_ge_twoD
     (hheight : (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p).height = 1)

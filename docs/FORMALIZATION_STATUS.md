@@ -32,7 +32,7 @@ Neither document is fully formalized.
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **8759 audited theorem/lemma declarations**. This
+- The project currently has **8787 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -8670,3 +8670,50 @@ remains deferred. Original sources and compiler/dependency pins are
 unchanged.
 
 Verified with Lean v4.36.0-rc2: full build 12431 jobs, direct axiom audit of 8759 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6665 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.97 GiB.
+
+
+## Quantitative square-class descent and even actual line-projection degree
+
+A quantitative square-class descent theorem is now proved. For
+independent nonzero square classes over a characteristic-zero field
+K whose images become squares in E, the actual independent radical
+tower embeds in E. Therefore 2^r divides the actual degree [E:K],
+where r is the number of independent classes. The actual linear map
+on field square classes is constructed from the unit map and the
+quotient by doubles. Its entire kernel is proved finite-dimensional
+for every finite extension, and 2^(dimension of that kernel) divides
+[E:K]. In particular its dimension is at most floor(log_2 [E:K]).
+Finiteness of the kernel is proved, not assumed as an extra input.
+
+The odd-degree consequence is proved separately in every
+characteristic: a nonsquare acquiring a square root forces 2 to
+divide the actual field degree, by the actual two-dimensional
+quadratic algebra and the tower law. Hence every odd-degree field
+extension reflects squares. This assertion needs no characteristic-
+zero assumption and no asserted field isomorphism.
+
+The odd-degree reflection is transported through the actual graded
+projective function-field degree comparison and actual chart maps.
+The literal radical equations consequently descend on graph-line
+and vertical-line charts whenever the actual source-to-image field
+degree is odd. Their actual polynomial restrictions are squares in
+the corresponding rational-function fields. The selected-value
+independence and direct-sum obstruction excludes both cases at the
+actual admissible integral host. Exhaustive classification of the
+actual homogeneous linear image then proves that every source
+projection onto a line through such a host has even actual field
+degree. The line, host, nonzero coefficients, selected nonempty
+disjoint root families, positivity and both injectivity assumptions
+remain explicit. The former degree-one theorems are corollaries
+of these stronger results and retain their existing statements.
+
+This is improvement P1-MATH-0110: Step 3's degree-one obstruction
+extends to every odd projection degree, and the general square-class
+kernel receives a quantitative degree bound. It does not replace the
+remaining higher-curve genus/branching/divisor arguments, exceptional-
+equation estimates or external uniform point counts. T1.7 remains
+in_progress, numbered coverage stays 79/167, confirmed improvements
+become 110, and Palomar remains deferred. Original manuscript bytes
+and the Lean/Mathlib pins are unchanged.
+
+Verified with Lean v4.36.0-rc2: full build 12445 jobs, direct axiom audit of 8787 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6695 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.95 GiB.

@@ -1,11 +1,11 @@
 module
 
 public import PaperP1.Geometry.SourceProjectiveCurveDegree
-public import PaperP1.Geometry.ProjRankOneQuadraticDescent
+public import PaperP1.Geometry.ProjOddDegreeQuadraticDescent
 public import PaperP1.Algebra.SourceCurveRadicalRelations
 public import PaperP1.Algebra.NativeVeroneseLineChart
 
-/-! # Actual degree-one source-curve projections give literal functional squares on a graph line -/
+/-! # Actual odd-degree source-curve projections give literal functional squares on a graph line -/
 
 set_option autoImplicit false
 
@@ -37,8 +37,8 @@ local instance baseQuotientRing : CommRing (SourceCurveQuotient.BaseRing s c D I
   SourceCurveQuotient.baseQuotientRing s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p)
 
 
-theorem lineRestriction_isSquare
-    (hdegree : beta% (fun {m n : ℕ} (_ : m = n) ↦ m = 1)
+theorem lineRestriction_isSquare_of_odd_degree
+    (hdegree : beta% (fun {m n : ℕ} (_ : m = n) ↦ Odd m)
       (SourceProjectiveCurveDegree.comparisonProof s c D I J hs hdeg hD p))
     (α β : F)
     (hline : NativeVeroneseAffineIdeal.affineIdeal F D (SourceCurveQuotient.baseIdeal s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p)) =
@@ -57,7 +57,7 @@ theorem lineRestriction_isSquare
     (SourceCurveQuotient.map s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p)).toRingHom.toAlgebra
   let : Module (SourceCurveQuotient.BaseRing s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p))
       (SourceCurveQuotient.SourceRing s c D I J (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p)) := Algebra.toModule
-  have h := ProjRankOneQuadraticDescent.parametrized_isSquare
+  have h := ProjOddDegreeQuadraticDescent.parametrized_isSquare
     (F := F) (A := SourceCurveQuotient.BaseRing s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p))
     (B := SourceCurveQuotient.SourceRing s c D I J (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p))
     (G := SourceCurveQuotient.basePiece s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p))
@@ -73,9 +73,9 @@ theorem lineRestriction_isSquare
     (SourceCurveQuotient.weight s c D I J hdeg)
     (SourceCurveQuotient.generator_mem s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p) hdeg)
     (SourceCurveQuotient.generators_span s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p) hdeg)
-    (show Module.finrank (SourceCurveQuotient.BaseRing s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p))
-      (SourceCurveQuotient.SourceRing s c D I J (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p)) = 1 from
-        (SourceProjectiveCurveDegree.comparisonProof s c D I J hs hdeg hD p).symm.trans hdegree)
+    (show Odd (Module.finrank (SourceCurveQuotient.BaseRing s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p))
+      (SourceCurveQuotient.SourceRing s c D I J (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p))) from
+        (congrArg Odd (SourceProjectiveCurveDegree.comparisonProof s c D I J hs hdeg hD p)).mp hdegree)
 
     (SourceCurveRadicalRelations.baseRadicand s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p) hdeg i)
     (SourceCurveRadicalRelations.root s c D I J (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p) i)
@@ -83,5 +83,17 @@ theorem lineRestriction_isSquare
     (NativeVeroneseLineChart.equiv D hD (SourceCurveQuotient.baseIdeal s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p)) (SourceCurveQuotient.baseIdeal_homogeneous s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p) hdeg (SourceCurveProjectivePointData.ideal_homogeneous s c D I J hdeg hD p)) α β hline)
   have he := NativeVeroneseLineChart.equiv_radicand D hD (SourceCurveQuotient.baseIdeal s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p)) (SourceCurveQuotient.baseIdeal_homogeneous s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p) hdeg (SourceCurveProjectivePointData.ideal_homogeneous s c D I J hdeg hD p)) α β hline (c i) (I i) (J i) (hdeg i)
   exact (congrArg (fun x : Polynomial F ↦ IsSquare (algebraMap (Polynomial F) (FractionRing (Polynomial F)) x)) he).mp h
+
+theorem lineRestriction_isSquare
+    (hdegree : beta% (fun {m n : ℕ} (_ : m = n) ↦ m = 1)
+      (SourceProjectiveCurveDegree.comparisonProof s c D I J hs hdeg hD p))
+    (α β : F)
+    (hline : NativeVeroneseAffineIdeal.affineIdeal F D (SourceCurveQuotient.baseIdeal s c D I J hs hD (SourceCurveProjectivePointData.ideal s c D I J hdeg hD p)) =
+      Ideal.span {NativeVeroneseLineChart.equation α β})
+    (i : Fin s.length) :
+    IsSquare (algebraMap (Polynomial F) (FractionRing (Polynomial F))
+      (SquareLineMatching.lineRestriction (c i) (I i) (J i) α β)) := by
+  exact lineRestriction_isSquare_of_odd_degree s c D I J hs hdeg hD p
+    (hdegree.symm ▸ (by decide : Odd (1 : ℕ))) α β hline i
 
 end PaperP1.SourceProjectiveCurveLineSquares

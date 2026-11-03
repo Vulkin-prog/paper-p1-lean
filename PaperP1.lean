@@ -1942,3 +1942,10 @@ public import PaperP1.Algebra.AffineCurveGraphPresentation
 public import PaperP1.Algebra.AffineCurveFieldGeneration
 public import PaperP1.Diophantine.CurveCommonQuotientBound
 public import PaperP1.Asymptotics.CriticalCurveCommonQuotientExclusion
+public import PaperP1.Algebra.IndependentRadicalDegreeBound
+public import PaperP1.Algebra.FieldSquareClassMap
+public import PaperP1.Algebra.SquareClassRadicalDegreeBound
+public import PaperP1.Algebra.SquareClassKernelDegree
+public import PaperP1.Algebra.OddDegreeFieldSquares
+public import PaperP1.Geometry.ProjOddDegreeQuadraticDescent
+public import PaperP1.Geometry.SourceProjectiveCurveLineEvenDegree

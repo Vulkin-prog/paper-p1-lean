@@ -7636,6 +7636,58 @@
         }
       ],
       "validation_commit": "e94dcb7"
+    },
+    {
+      "id": "P1-MATH-0110",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Step 3 excludes a line image when the source-to-image function-field degree is one, by reflecting the literal radical squares to the line function field.",
+      "finding": "The actual degree-one obstruction extends to every odd source-to-image function-field degree. Odd-degree field extensions reflect squares in every characteristic, since an acquired square root of a nonsquare embeds a genuine quadratic field and forces even actual extension degree. The actual projective chart descent and line restrictions are proved under the odd-degree hypothesis. Actual graph and vertical lines through admissible hosts are excluded, and exhaustive homogeneous-line classification proves the actual projection degree even. Separately, in characteristic zero the actual linear map on square classes is constructed and its entire finite-extension kernel is proved finite-dimensional; 2^r divides the actual extension degree, hence r<=floor(log_2 degree), without an assumed finite kernel.",
+      "proposed_revision": "State the Step 3 line obstruction for every odd projection degree and retain degree one as the case needed for the lower bound 2D. Optionally add the quantitative square-class kernel degree bound as a general descent lemma for further low-degree curve arguments. Keep the precise positivity, selected-value independence, direct sum and nonempty disjoint root-family hypotheses explicit.",
+      "impact": "Strengthens the line-image exclusion to a parity restriction on every actual admissible source projection and supplies a quantitative square-class descent tool. No change to the final manuscript count is claimed, and the remaining higher-curve geometry is not supplied.",
+      "evidence": [
+        "PaperP1.IndependentRadicalDegreeBound.lift_injective",
+        "PaperP1.IndependentRadicalDegreeBound.power_dvd_degree",
+        "PaperP1.IndependentRadicalDegreeBound.power_le_degree",
+        "PaperP1.IndependentRadicalDegreeBound.not_all_squares",
+        "PaperP1.FieldSquareClassMap.doubles_le",
+        "PaperP1.FieldSquareClassMap.map_unitClass",
+        "PaperP1.FieldSquareClassMap.map_ofNonzero",
+        "PaperP1.FieldSquareClassMap.mem_kernel_iff",
+        "PaperP1.FieldSquareClassMap.exists_representative",
+        "PaperP1.SquareClassRadicalDegreeBound.independent_list",
+        "PaperP1.SquareClassRadicalDegreeBound.power_dvd_degree",
+        "PaperP1.SquareClassRadicalDegreeBound.power_le_degree",
+        "PaperP1.SquareClassRadicalDegreeBound.card_le_log_degree",
+        "PaperP1.SquareClassKernelDegree.power_dvd_of_independent_family",
+        "PaperP1.SquareClassKernelDegree.kernel_finite",
+        "PaperP1.SquareClassKernelDegree.kernel_power_dvd_degree",
+        "PaperP1.SquareClassKernelDegree.kernel_power_le_degree",
+        "PaperP1.SquareClassKernelDegree.kernel_finrank_le_log",
+        "PaperP1.OddDegreeFieldSquares.two_dvd_degree",
+        "PaperP1.OddDegreeFieldSquares.isSquare_iff",
+        "PaperP1.OddDegreeFieldSquares.quadratic_descent",
+        "PaperP1.ProjOddDegreeQuadraticDescent.dehomogenized_isSquare",
+        "PaperP1.ProjOddDegreeQuadraticDescent.parametrized_isSquare",
+        "PaperP1.SourceProjectiveCurveLineEvenDegree.degree_even",
+        "PaperP1.SourceProjectiveCurveLineSquares.lineRestriction_isSquare_of_odd_degree",
+        "PaperP1.SourceProjectiveCurveVerticalSquares.verticalRestriction_isSquare_of_odd_degree",
+        "PaperP1.SourceProjectiveCurveGraphExclusion.no_odd_degree",
+        "PaperP1.SourceProjectiveCurveVerticalExclusion.no_odd_degree",
+        "PaperP1.FieldSquareClassMap.unitsAddMap",
+        "PaperP1.FieldSquareClassMap.map"
+      ],
+      "validation": "Verified with Lean v4.36.0-rc2: full build 12445 jobs, direct axiom audit of 8787 theorem/lemma declarations using only propext, Classical.choice and Quot.sound, and 6695 distinct ledger declaration references. Source integrity: 138 manifest entries and all 167 numbered results. Ubuntu root free space 14.95 GiB."
     }
   ]
 }
