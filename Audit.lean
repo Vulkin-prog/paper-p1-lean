@@ -708,6 +708,11 @@ import PaperP1
 #print axioms PaperP1.DotTranspose.pairing
 #print axioms PaperP1.DotTranspose.transpose_comp
 #print axioms PaperP1.DotTranspose.relationMap_injective
+#print axioms PaperP1.ElementarySymmetricApproximation.pointed_identity
+#print axioms PaperP1.ElementarySymmetricApproximation.factorial_increment_bound
+#print axioms PaperP1.ElementarySymmetricApproximation.factorial_error_bound
+#print axioms PaperP1.ElementarySymmetricApproximation.elementary_error_bound
+#print axioms PaperP1.ElementarySymmetricApproximation.deletion_error_bound
 #print axioms PaperP1.ElementarySymmetricBound.power_add_linear_lower
 #print axioms PaperP1.ElementarySymmetricBound.factorial_elementary_le
 #print axioms PaperP1.ElementarySymmetricBound.elementary_le_power_div
@@ -1421,6 +1426,12 @@ import PaperP1
 #print axioms PaperP1.PrivateRankPeeling.exists_terminal
 #print axioms PaperP1.PrivateRankPeeling.trace_size_bound
 #print axioms PaperP1.PrivateRankPeeling.exists_terminal_real
+#print axioms PaperP1.QuadraticMomentApproximation.decomposition
+#print axioms PaperP1.QuadraticMomentApproximation.elementary_bound
+#print axioms PaperP1.QuadraticMomentApproximation.higher_bound
+#print axioms PaperP1.QuadraticMomentApproximation.subset_error_bound
+#print axioms PaperP1.QuadraticMomentApproximation.factorial_pair_coefficient
+#print axioms PaperP1.QuadraticMomentApproximation.factorial_error_bound
 #print axioms PaperP1.QuadraticSquareDescent.square_iff
 #print axioms PaperP1.QuadraticSquareDescent.nonsquare_iff
 #print axioms PaperP1.QuadraticTowerBaseChange.quadraticMap_base
@@ -5687,6 +5698,7 @@ import PaperP1
 #print axioms PaperP1.FixedProjectedMotifs.exists_even_order
 #print axioms PaperP1.FixedProjectedMotifs.old_factor_bound
 #print axioms PaperP1.FixedProjectedMotifs.fixed_motif_count
+#print axioms PaperP1.FixedQuadraticFactorialMomentsUnderInputs.uniform_fixed
 #print axioms PaperP1.FixedRationalTripleMass.hosts_card
 #print axioms PaperP1.FixedRationalTripleMass.host_data
 #print axioms PaperP1.FixedRationalTripleMass.mem_hosts_of_source
@@ -6617,6 +6629,7 @@ import PaperP1
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_joint_mass
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_factorial
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_ordinary
+#print axioms PaperP1.SubpowerPairAbsoluteActivity.uniform_bound
 #print axioms PaperP1.SubpowerShiftedCountMoments.uniform_bound
 #print axioms PaperP1.SurfaceCountParameters.choose_degree
 #print axioms PaperP1.SurfaceCountParameters.choose_equations

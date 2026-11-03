@@ -10120,6 +10120,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "21a6cf583d00609b300dd149d99cfcc8911c1aba"
+    },
+    {
+      "id": "P1-MATH-0141",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:fixed:moments",
+        "number": "6.4",
+        "page": 22,
+        "source": "main_sections/fixed_moments.tex",
+        "line": 152,
+        "statement_sha256": "c6e85c5c60a33b6e4f4e614d923f638d1855ecd1fd2d6dab7f29cb5aa08e6190"
+      },
+      "original_assumption": "The fixed factorial-moment clause in main6.4 has remainder exponent4/5, with the exact mean and full second factorial cumulant.",
+      "finding": "The exact-parameter fixed factorial-moment remainder in main6.4\nimproves from N^(-4/5+epsilon) to N^(-1+epsilon) under the same finite\ngeometric properties. It holds on every actual dyadic subground with\nheterogeneous marginals, affine incompatibility and zero marginals included.\nThe full higher centered activity has rate1; disconnected contributions\nhave rate4/3 through their actual canonical-component quadratic tail.\nA finite pointed-incidence calculation controls collisions and deletion of\nthe actual pair indices at cost O(1/N). The exact cardinality convolution\nthen isolates the pair correction. Its diagonal squared-marginal term is\nretained, so the coefficient is the full second factorial cumulant. All\norders and finite constants precede N. This finding concerns the factorial\nclause only; the remaining ordinary-moment and higher-cumulant clauses of\nthe multi-conclusion theorem are not claimed complete at this checkpoint.",
+      "impact": "Proves the exact-parameter factorial clause with stronger exponent1 on every actual dyadic subground. The whole numbered theorem remains in_progress until its remaining clauses are assembled.",
+      "proposed_revision": "Replace the factorial remainder exponent4/5 by1. Give the exact heterogeneous cardinality convolution, pointed collision/deletion estimates and actual diagonal correction, retaining the fixed-before-N order restriction.",
+      "evidence": [
+        "PaperP1.ElementarySymmetricApproximation.pointed_identity",
+        "PaperP1.ElementarySymmetricApproximation.factorial_increment_bound",
+        "PaperP1.ElementarySymmetricApproximation.factorial_error_bound",
+        "PaperP1.ElementarySymmetricApproximation.elementary_error_bound",
+        "PaperP1.ElementarySymmetricApproximation.deletion_error_bound",
+        "PaperP1.QuadraticMomentApproximation.decomposition",
+        "PaperP1.QuadraticMomentApproximation.elementary_bound",
+        "PaperP1.QuadraticMomentApproximation.higher_bound",
+        "PaperP1.QuadraticMomentApproximation.subset_error_bound",
+        "PaperP1.QuadraticMomentApproximation.factorial_pair_coefficient",
+        "PaperP1.QuadraticMomentApproximation.factorial_error_bound",
+        "PaperP1.SubpowerPairAbsoluteActivity.uniform_bound",
+        "PaperP1.FixedQuadraticFactorialMomentsUnderInputs.uniform_fixed"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13565 jobs); direct axiom audit passed for 10432 declarations using only propext, Classical.choice and Quot.sound; all 8792 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.76 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

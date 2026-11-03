@@ -2503,3 +2503,7 @@ public import PaperP1.Asymptotics.GrowingConnectedUnderInputs
 public import PaperP1.Model.BoundedComponentActivity
 public import PaperP1.Asymptotics.NonconnectedActivityUnderInputs
 public import PaperP1.Asymptotics.FullFixedActivityUnderInputs
+public import PaperP1.Algebra.ElementarySymmetricApproximation
+public import PaperP1.Algebra.QuadraticMomentApproximation
+public import PaperP1.Asymptotics.SubpowerPairAbsoluteActivity
+public import PaperP1.Asymptotics.FixedQuadraticFactorialMomentsUnderInputs
