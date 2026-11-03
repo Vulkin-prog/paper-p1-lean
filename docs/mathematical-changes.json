@@ -9282,6 +9282,75 @@
         "status": "not_integrated"
       },
       "validation_commit": "3c10703a9df5315765d8ee6ad436a0f800ef3b6e"
+    },
+    {
+      "id": "P1-MATH-0117",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:confinement",
+        "number": "T21.4",
+        "page": 88,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 244,
+        "statement_sha256": "28f4e76c0d364fdb8dc008ccfe137def18f511be6085955b7fdff6478d91ceb3"
+      },
+      "original_assumption": "The individual-prime extension of T1.16 used in T21.4 treats three coincident supports, two coincident supports, and collinear triples by separate divisibility and cross-product arguments.",
+      "finding": "The product of selected distinct actual primes divides the product of their actual covering support groups. At most two support groups have product <=2A(H+1), by the already proved finite group bounds. A larger three-prime product therefore uses three actual supports and is bounded by the actual three-group top product. Its strong tail is a subset of the already counted group tail, without a new primitive-direction, determinant or collinearity argument.",
+      "impact": "Unconditional checked simplification of the three-dimensional individual-prime confinement branch, retaining the source final exponents, fixed-order quantifiers, exact prime pool and actual tuple populations. It changes no manuscript conclusion; the fixed-plane variant remains open and coverage stays80/167.",
+      "proposed_revision": "Replace the repeated-support case split by the support-merging product divisibility and invoke the established one- and two-group bounds, then reuse the actual three-group strong count.",
+      "evidence": [
+        "PaperP1.TernaryIndividualPrimes.mem_pool",
+        "PaperP1.TernaryIndividualPrimes.prime_of_mem",
+        "PaperP1.TernaryIndividualPrimes.supporting_active",
+        "PaperP1.TernaryIndividualPrimes.covered_product_le",
+        "PaperP1.TernaryIndividualPrimes.small_support_product_bound",
+        "PaperP1.TernaryIndividualPrimes.three_primes_le_top_groups",
+        "PaperP1.TernaryPrimeTopProducts.large_three_le_groups",
+        "PaperP1.TernaryPrimeBudget.three_prime_tail"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (12885 jobs); direct axiom audit passed for 9515 declarations using only propext, Classical.choice and Quot.sound; all 7635 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.36 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
+    },
+    {
+      "id": "P1-MATH-0118",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:confinement",
+        "number": "T21.4",
+        "page": 88,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 244,
+        "statement_sha256": "28f4e76c0d364fdb8dc008ccfe137def18f511be6085955b7fdff6478d91ceb3"
+      },
+      "original_assumption": "The T21.4 proof invokes a prime-only Rankin Euler product for individual primes and a separate distinct-integer-factor product for support groups.",
+      "finding": "The actual individual-prime crossing certificate is also a finite set of distinct integers in the already proved integer-factor CRT cover. Its count is bounded with exponent (1+1/k)*(1+(2+zeta)/c). Choosing a fixed small zeta>0 and then a fixed large k before N absorbs both extra margins into epsilon. The same integer-factor Rankin bound therefore proves the final three-dimensional confinement exponent for both populations.",
+      "impact": "Unconditional checked simplification of the three-dimensional individual-prime confinement branch, retaining the source final exponents, fixed-order quantifiers, exact prime pool and actual tuple populations. It changes no manuscript conclusion; the fixed-plane variant remains open and coverage stays80/167.",
+      "proposed_revision": "Use one integer-factor Rankin cover for the final confinement argument, allowing a fixed positive zeta paid for by epsilon. Retain the separate sharper prime estimate in T21.3 when its more precise exponential factor is useful.",
+      "evidence": [
+        "PaperP1.TernaryPrimeValueConfinement.confinement_or_certificate",
+        "PaperP1.TernaryPrimeValueConfinement.certificate_mem",
+        "PaperP1.TernaryPrimeConfinement.uniform_prime_count",
+        "PaperP1.TernaryPrimeConfinementMass.labeled_count",
+        "PaperP1.TernaryPrimeConfinementMass.mass_exponent",
+        "PaperP1.TernaryPrimeConfinementMass.prime_mass",
+        "PaperP1.TernaryPrimeConfinementMass.actual_prime_confinement",
+        "PaperP1.TernaryPrimeNegligibility.exponent_gap",
+        "PaperP1.TernaryPrimeNegligibility.sufficient_cutoff"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (12885 jobs); direct axiom audit passed for 9515 declarations using only propext, Classical.choice and Quot.sound; all 7635 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.36 GiB.",
+      "manuscript_integration": {
+        "target_version": "next version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

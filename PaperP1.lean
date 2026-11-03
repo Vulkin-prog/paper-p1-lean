@@ -2158,3 +2158,14 @@ public import PaperP1.Asymptotics.PolylogConfinementScales
 public import PaperP1.Asymptotics.TernaryGroupConfinement
 public import PaperP1.Asymptotics.TernaryConfinementMass
 public import PaperP1.Asymptotics.TernaryGroupNegligibility
+public import PaperP1.Combinatorics.FiniteFactorTopProducts
+public import PaperP1.Arithmetic.TernaryIndividualPrimes
+public import PaperP1.Arithmetic.TernaryPrimeTopProducts
+public import PaperP1.Arithmetic.TernaryPrimeCounts
+public import PaperP1.Arithmetic.TernaryPrimeValueConfinement
+public import PaperP1.Asymptotics.TernaryPrimeWeakCritical
+public import PaperP1.Asymptotics.TernaryPrimeBudget
+public import PaperP1.Asymptotics.TernaryPrimeTheorem
+public import PaperP1.Asymptotics.TernaryPrimeConfinement
+public import PaperP1.Asymptotics.TernaryPrimeConfinementMass
+public import PaperP1.Asymptotics.TernaryPrimeNegligibility

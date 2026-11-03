@@ -3399,3 +3399,97 @@ No new literature input, Paper C copy, original source change,
 dependency update or Palomar registration is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (12863 jobs); direct axiom audit passed for 9482 declarations using only propext, Classical.choice and Quot.sound; all 7597 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.40 GiB.
+
+
+## T21.4: the complete individual-prime branch in three dimensions
+
+The individual-prime branch of companion T21.4 is now proved
+in three dimensions, in addition to the previously completed
+support-group branch. The remaining obligation is the specified
+finite-family-of-affine-planes variant with its 1/c exponent
+and sufficient c>3 threshold. T21.4 therefore stays in_progress;
+numbered coverage stays 80/167. The two checked simplifications
+below are P1-MATH-0117 and P1-MATH-0118, bringing the confirmed
+improvement total to 118 without asserting a manuscript error.
+
+TernaryIndividualPrimes constructs the actual finite pool of
+primes above H with odd valuation in an actual value in every
+block. Its membership is the literal existence of a support
+triple in the actual pool. Each such prime is proved prime and
+its support group active. A selected finite product of distinct
+primes divides the product of its actual covering support groups.
+If at most two support groups occur, the previously proved
+one- and two-group bounds give a product <=2A(H+1). Thus three
+selected primes above this threshold must occupy three supports,
+and their product is at most the actual three-group top product.
+This handles every repeated-support case without a new cross
+product or collinearity proof. The large-prime tail reuses the
+already proved actual three-group forced-plane count. This is
+the unconditional proof simplification P1-MATH-0117.
+
+FiniteFactorTopProducts proves the canonical largest k-product
+for an arbitrary actual finite set of integer factors. It is
+attained when positive, is zero when too few factors exist,
+and a maximizing selection consists of the strictly largest
+factors when they are positive. The smallest-factor deletion
+inequality and its arbitrary real-exponent threshold consequence
+are proved. No decreasing-order convention or induction target
+is supplied as an input.
+
+TernaryPrimeTopProducts constructs the actual individual-prime
+top product, proves its height <=A^k and its monotonicity as the
+prime cutoff increases, and constructs the actual offset-CRT
+certificate of every positive maximizing selection. The prime
+sizes are pairwise coprime because they are distinct actual
+primes. Their offset supports may repeat. TernaryPrimeCounts
+and TernaryPrimeWeakCritical prove the weak product count from
+this literal certificate and the actual ordered-factorization
+pool, with uniform critical-band absorption.
+
+TernaryPrimeBudget proves the complete individual-prime fixed-k
+budget N^epsilon*(N^3/T^2+N^(6/5)) for every fixed k>=3. Its
+three-prime strong sector is bounded by the actual group sector
+using the support-merging argument. The same N^(9/10) preceding
+cutoff works throughout the strong induction. TernaryPrimeTheorem
+retains arbitrary source cutoffs with no upper bound by the
+already checked internal cap min(H,2R+1), and includes B^J
+actual pattern labels with one threshold before the label type.
+The source full even-map hypotheses are retained explicitly.
+
+TernaryPrimeValueConfinement supplies the deterministic
+confinement-or-certificate alternative for actual primes>B^c.
+The crossing certificate belongs to the same integer-factor CRT
+cover used for support groups. In particular, the separate
+prime-only Euler product is unnecessary for the final T21.4
+bound: use the proved integer-factor Rankin bound with any fixed
+positive zeta, choose zeta small and k large before N, and absorb
+the extra exponent in epsilon. The exponential in B^(1-zeta)
+is uniformly subpolynomial. This is P1-MATH-0118; it simplifies
+this application without replacing the sharper prime estimate
+already proved in T21.3 or changing its statement.
+
+TernaryPrimeConfinement proves the actual excessive-prime count
+N^(max(6/5,1+2/c)+epsilon). TernaryPrimeConfinementMass counts
+all actual pattern labels and proves the literal exceptional
+mass N^(-min(beta-6/5,beta-1-2/c)+epsilon), for nonnegative
+host weights in the source's uniform N^(-beta+o(1)) class.
+The exact point-weight margin epsilon/2 is exposed. The actual
+exceptional finite set is defined, its mass is bounded and every
+retained tuple has at most k-1+floor(log N/(c log B)) individual
+primes above B^c. The uniform o(L) conclusion follows from the
+previously checked logarithmic-count scale theorem.
+
+TernaryPrimeNegligibility proves the sufficient c>6 assertion
+for beta=2, with a fixed positive point-weight margin and a
+fixed k chosen before N. For every eta>0 the actual exceptional
+mass is eventually <=eta*L*N^(-2/3). The argument is unconditional
+within the explicitly stated positive-host-weight regime; it
+assumes neither the exceptional population count nor its mass.
+
+Only the fixed-plane 1/c and c>3 branch of T21.4 remains open.
+No unproved geometric or analytic input is introduced by these
+prime results, no further Paper C source is copied, and the
+original manuscript and dependency pins remain unchanged.
+Palomar remains deferred until the full work is complete.
+
+Verified under Lean v4.36.0-rc2: full build passed (12885 jobs); direct axiom audit passed for 9515 declarations using only propext, Classical.choice and Quot.sound; all 7635 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 14.36 GiB.
