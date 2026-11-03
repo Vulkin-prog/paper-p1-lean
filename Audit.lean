@@ -3173,6 +3173,8 @@ import PaperP1
 #print axioms PaperP1.ExactMatchCongruences.gcd_quotient_divides
 #print axioms PaperP1.ExactMatchCongruences.source_parameter
 #print axioms PaperP1.ExactMatchCongruences.one_family_congruence
+#print axioms PaperP1.ExactUnitDeletion.cover_double_units
+#print axioms PaperP1.ExactUnitDeletion.pair_deletion
 #print axioms PaperP1.ExactUnitProgression.left_projection_injective
 #print axioms PaperP1.ExactUnitProgression.ordered_difference
 #print axioms PaperP1.ExactUnitProgression.positive_difference
@@ -3774,6 +3776,8 @@ import PaperP1
 #print axioms PaperP1.OffsetLinePrimeProduct.single_point_product_bound
 #print axioms PaperP1.OffsetLinePrimeProduct.line_product_bound
 #print axioms PaperP1.OffsetLinePrimeProduct.product_le_uniform
+#print axioms PaperP1.OffsetNonalignmentOn.of_global
+#print axioms PaperP1.OffsetNonalignmentOn.mono
 #print axioms PaperP1.OffsetPatternRankin.exponent_gt_one
 #print axioms PaperP1.OffsetPatternRankin.primeConstant_pos
 #print axioms PaperP1.OffsetPatternRankin.integerConstant_pos
@@ -4508,6 +4512,12 @@ import PaperP1
 #print axioms PaperP1.SignedPrimeSubsetTargets.mem_targets
 #print axioms PaperP1.SignedPrimeSubsetTargets.fibre_count
 #print axioms PaperP1.SignedPrimeSubsetTargets.targets_count
+#print axioms PaperP1.SmallChannelUniqueness.same_slope
+#print axioms PaperP1.SmallChannelUniqueness.units_eq_of_slope
+#print axioms PaperP1.SmallChannelUniqueness.unit_geometric
+#print axioms PaperP1.SmallExactUnitAlignment.ordered_data
+#print axioms PaperP1.SmallExactUnitAlignment.exact_data
+#print axioms PaperP1.SmallExactUnitAlignment.two_units
 #print axioms PaperP1.SmallKernelBlocks.mem_starts
 #print axioms PaperP1.SmallKernelBlocks.selected_subset
 #print axioms PaperP1.SmallKernelBlocks.fixed_offset_card
@@ -5176,6 +5186,7 @@ import PaperP1
 #print axioms PaperP1.ActiveBlockCentresCount.uniform_count
 #print axioms PaperP1.ActiveEdgeMoments.uniform_moment
 #print axioms PaperP1.ActiveEdgeMoments.uniform_activation
+#print axioms PaperP1.ActivePhysicalGroupCountUnderBCN.uniform_count_active
 #print axioms PaperP1.ActivePhysicalGroupCountUnderBCN.uniform_count
 #print axioms PaperP1.ActualFamilyJointRows.append_support
 #print axioms PaperP1.ActualFamilyJointRows.uniform_row
@@ -5613,6 +5624,7 @@ import PaperP1
 #print axioms PaperP1.DensePairCrossingFamiliesUnderInputs.uniform_seeds
 #print axioms PaperP1.DensePairCrossingFamiliesUnderInputs.uniform_centered_extensions
 #print axioms PaperP1.DensePairCrossingSeedsUnderInputs.uniform_bound
+#print axioms PaperP1.DensePhysicalKernelWitnessUnderBCN.uniform_witness_active
 #print axioms PaperP1.DensePhysicalKernelWitnessUnderBCN.uniform_witness
 #print axioms PaperP1.DensePrimitiveFourMassUnderInputs.uniform_bound
 #print axioms PaperP1.DensePrimitiveTripleHostsUnderBCN.uniform_hosts
@@ -5760,6 +5772,7 @@ import PaperP1
 #print axioms PaperP1.ExactContactActivation.uniform_probability
 #print axioms PaperP1.ExactContactActivation.uniform_close_probability
 #print axioms PaperP1.ExactContactCenteredActivity.uniform_bound
+#print axioms PaperP1.ExactUnitDeletionUniform.uniform_deletion
 #print axioms PaperP1.ExceptionalPolynomialMomentsUnderInputs.uniform_fixed
 #print axioms PaperP1.ExpSqrtLog.pow_le_nat_eventually
 #print axioms PaperP1.ExpSqrtLog.uniformSubpolynomialOn
@@ -7090,6 +7103,8 @@ import PaperP1
 #print axioms PaperP1.BinaryResidual.weight_puncture
 #print axioms PaperP1.BinaryResidual.weight_add_complement
 #print axioms PaperP1.BinaryResidual.residual_minWeight
+#print axioms PaperP1.CommonInjectiveRestriction.finrank_finite_sup
+#print axioms PaperP1.CommonInjectiveRestriction.exists_subspace
 #print axioms PaperP1.ComponentParityCode.parityMap_coordinate
 #print axioms PaperP1.ComponentParityCode.parityMap_last
 #print axioms PaperP1.ComponentParityCode.sum_selected

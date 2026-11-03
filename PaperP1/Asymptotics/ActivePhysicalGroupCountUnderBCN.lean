@@ -2,7 +2,7 @@ module
 
 public import PaperP1.Asymptotics.PolynomialConfinementUnderBCN
 public import PaperP1.Arithmetic.ActivePhysicalPrimeGroups
-public import PaperP1.Arithmetic.ActualOffsetNonalignment
+public import PaperP1.Arithmetic.OffsetNonalignmentOn
 public import PaperP1.Model.FiniteRademacher
 
 /-! # Uniformly few large actual prime groups under the explicit BCN input
@@ -27,20 +27,20 @@ local instance {U : Type*} [AddCommGroup U] [Module F₂ U] (S : Submodule F₂ 
     AddCommGroup S := Submodule.addCommGroup (R := F₂) (M := U) S
 local instance {U : Type*} [AddCommGroup U] [Module F₂ U] (S : Submodule F₂ U) : Module F₂ S := S.module
 
-theorem uniform_count (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCount.UniformBound c κ)
+theorem uniform_count_active (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCount.UniformBound c κ)
     (C τ ε : ℝ) (hτ : 0 < τ) (hε : 0 < ε) :
     ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
       |(L : ℝ) - Real.log N / Real.log 2| ≤ C →
       ∀ (ι : Type u) [Fintype ι] [DecidableEq ι], Fintype.card ι ≤ 3 →
       ∀ X : ι → ℕ, (∀ i, X i ∈ dyadicBlock N) →
-      (∀ i j, i ≠ j → ActualOffsetNonalignment.NoExact (X i) (X j) L) →
       ∀ (M : Submodule F₂ (code X L)) (H : ℕ), L + 1 ≤ H →
+      OffsetNonalignmentOn.NoExactOn X L (fun v ↦ label X L M v ≠ 0) →
         ((largeGroups X L M H ((N : ℝ) ^ τ)).card : ℝ) ≤ ε * ((L + 1 : ℕ) : ℝ) := by
   obtain ⟨N₀, hN₀, h⟩ := PolynomialConfinementUnderBCN.companion_T8_1_little_o
     c κ hc hBCN C τ (1 / 4) hτ (by norm_num) (by norm_num) 2 1 (by omega) (by omega)
     (ε / 9) (by positivity)
   refine ⟨N₀, hN₀, ?_⟩
-  intro N hN L hband ι _ _ hι X hX hno M H hH
+  intro N hN L hband ι _ _ hι X hX M H hH hno
   classical
   have hXpos (i : ι) : 1 ≤ X i := by
     have hi := (mem_Ico.mp (hX i)).1
@@ -49,6 +49,8 @@ theorem uniform_count (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCount.Uni
   have hdata (A : S) : ∃ v ∈ A.val, ∃ w ∈ A.val, v.1 ≠ w.1 :=
     support_two_blocks X L M H hXpos hH A.val (mem_filter.mp A.property).1
   choose v hv w hw hblocks using hdata
+  have hactive (A : S) (z : ι × Fin (L + 1)) (hz : z ∈ A.val) : label X L M z ≠ 0 :=
+    (group_support_data X L M H hXpos hH hι A.val (mem_filter.mp A.property).1).2.2.1 z hz
   let f : S → ι × ι := fun A ↦ ((v A).1, (w A).1)
   have hf (p : ι × ι) (A : S) (hA : A ∈ (univ : Finset S).filter fun A ↦ f A = p) :
       (v A).1 = p.1 ∧ (w A).1 = p.2 := by
@@ -92,11 +94,15 @@ theorem uniform_count (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCount.Uni
       exact hd
     · intro A _hA
       exact (mem_filter.mp A.property).2.le
-    · intro A hA B _hB hne
+    · intro A hA B hB hne
       exact hno p.1 p.2 (by
         intro he
         exact hblocks A ((hf p A hA).1.trans (he.trans (hf p A hA).2.symm)))
-        (v A).2 (v B).2 (w A).2 (w B).2 hne
+        (v A).2 (v B).2 (w A).2 (w B).2
+        (by simpa only [← (hf p A hA).1] using hactive A (v A) (hv A))
+        (by simpa only [← (hf p B hB).1] using hactive B (v B) (hv B))
+        (by simpa only [← (hf p A hA).2] using hactive A (w A) (hw A))
+        (by simpa only [← (hf p B hB).2] using hactive B (w B) (hw B)) hne
   have hcard : S.card = ∑ p : ι × ι, ((univ : Finset S).filter fun A ↦ f A = p).card := by
     simpa only [card_univ, Fintype.card_coe] using
       (card_eq_sum_card_fiberwise (s := (univ : Finset S)) (t := (univ : Finset (ι × ι)))
@@ -112,5 +118,19 @@ theorem uniform_count (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCount.Uni
     _ = ((Fintype.card (ι × ι) : ℕ) : ℝ) * ((ε / 9) * ((L + 1 : ℕ) : ℝ)) := by simp
     _ ≤ 9 * ((ε / 9) * ((L + 1 : ℕ) : ℝ)) := mul_le_mul_of_nonneg_right hιR (by positivity)
     _ = ε * ((L + 1 : ℕ) : ℝ) := by ring
+
+theorem uniform_count (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCount.UniformBound c κ)
+    (C τ ε : ℝ) (hτ : 0 < τ) (hε : 0 < ε) :
+    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
+      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →
+      ∀ (ι : Type u) [Fintype ι] [DecidableEq ι], Fintype.card ι ≤ 3 →
+      ∀ X : ι → ℕ, (∀ i, X i ∈ dyadicBlock N) →
+      (∀ i j, i ≠ j → ActualOffsetNonalignment.NoExact (X i) (X j) L) →
+      ∀ (M : Submodule F₂ (code X L)) (H : ℕ), L + 1 ≤ H →
+        ((largeGroups X L M H ((N : ℝ) ^ τ)).card : ℝ) ≤ ε * ((L + 1 : ℕ) : ℝ) := by
+  obtain ⟨N₀, hN₀, h⟩ := uniform_count_active c κ hc hBCN C τ ε hτ hε
+  refine ⟨N₀, hN₀, ?_⟩
+  intro N hN L hband ι _ _ hι X hX hno M H hH
+  exact h N hN L hband ι hι X hX M H hH (OffsetNonalignmentOn.of_global X L _ hno)
 
 end PaperP1.ActivePhysicalGroupCountUnderBCN

@@ -2679,3 +2679,9 @@ public import PaperP1.Asymptotics.DenseOneTargetTripleJointMass
 public import PaperP1.Asymptotics.StrongNoExactPairMassUnderBCN
 public import PaperP1.Asymptotics.StrongNonalignedSourceProfileUnderBCN
 public import PaperP1.Asymptotics.StrongNonalignedTripleProfileUnderBCN
+public import PaperP1.Coding.CommonInjectiveRestriction
+public import PaperP1.Arithmetic.SmallExactUnitAlignment
+public import PaperP1.Arithmetic.SmallChannelUniqueness
+public import PaperP1.Arithmetic.ExactUnitDeletion
+public import PaperP1.Arithmetic.OffsetNonalignmentOn
+public import PaperP1.Asymptotics.ExactUnitDeletionUniform

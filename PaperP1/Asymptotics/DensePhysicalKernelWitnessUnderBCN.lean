@@ -26,31 +26,31 @@ local instance physicalAddCommGroup {ι : Type*} [Fintype ι] (X : ι → ℕ) (
     (M : Submodule F₂ (code X L)) : AddCommGroup M := by
   with_unfolding_all exact Submodule.addCommGroup (R := F₂) (M := code X L) M
 
-theorem uniform_witness (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCount.UniformBound c κ)
+theorem uniform_witness_active (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCount.UniformBound c κ)
     (C τ η : ℝ) (hτ : 0 < τ) (hη : 0 < η) (d t : ℕ) (hd : 1 ≤ d) (hd₂ : d ≤ 2) (ht : 2 ≤ t) :
     ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
       |(L : ℝ) - Real.log N / Real.log 2| ≤ C →
       ∀ (ι : Type u) [Fintype ι] [DecidableEq ι], Fintype.card ι ≤ d + 1 →
       ∀ X : ι → ℕ, (∀ i, X i ∈ dyadicBlock N) →
-      (∀ i j, i ≠ j → ActualOffsetNonalignment.NoExact (X i) (X j) L) →
       ∀ (M : Submodule F₂ (code X L)) (H : ℕ), L + 1 ≤ H →
+      OffsetNonalignmentOn.NoExactOn X L (fun v ↦ label X L M v ≠ 0) →
       DisjointRecoverySubspace.NoDisjointRecovery (CoordinateForms.coordinateFamily (code X L)) M d t →
       (∀ i, Function.Injective ((projection X L i).comp M.subtype)) →
       η * L ≤ (Module.finrank F₂ M : ℝ) →
       ∀ i : ι, X i ∈ SmallKernelWindowSets.twoWindows N L H
         (2 * τ * (PhysicalLabelSupportCount.supportBound d t (t - 1) : ℝ)) := by
-  obtain ⟨NG, _hNG, hg⟩ := ActivePhysicalGroupCountUnderBCN.uniform_count
+  obtain ⟨NG, _hNG, hg⟩ := ActivePhysicalGroupCountUnderBCN.uniform_count_active
     c κ hc hBCN C τ (η / 24) hτ (by positivity)
   obtain ⟨NW, hw⟩ := CriticalWindowGeometry.uniform_geometry C 2
   refine ⟨max 2 (max NG NW), by omega, ?_⟩
-  intro N hN L hband ι _ _ hι X hX hno M H hH hrec hinj hdim i
+  intro N hN L hband ι _ _ hι X hX M H hH hno hrec hinj hdim i
   have hgeom := hw N (by omega) L hband
   have hL : 1 ≤ L := by omega
   have hN1 : (1 : ℝ) ≤ N := by exact_mod_cast (show 1 ≤ N by omega)
   have hXpos (j : ι) : 1 ≤ X j := by
     have hh := (mem_Ico.mp (hX j)).1
     omega
-  have hcount := hg N (by omega) L hband ι (by omega) X hX hno M H hH
+  have hcount := hg N (by omega) L hband ι (by omega) X hX M H hH hno
   have hlarge : 3 * (largeGroups X L M H ((N : ℝ) ^ τ)).card < Module.finrank F₂ M := by
     have hLR : (1 : ℝ) ≤ L := by exact_mod_cast hL
     have hpositive : 0 < η * L := mul_pos hη (by linarith)
@@ -80,5 +80,23 @@ theorem uniform_witness (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCount.U
       rw [← Real.rpow_add (by positivity : (0 : ℝ) < N)]
       congr 1
       ring
+
+theorem uniform_witness (c κ : ℝ) (hc : 0 < c) (hBCN : PlaneCurvePointCount.UniformBound c κ)
+    (C τ η : ℝ) (hτ : 0 < τ) (hη : 0 < η) (d t : ℕ) (hd : 1 ≤ d) (hd₂ : d ≤ 2) (ht : 2 ≤ t) :
+    ∃ N₀ : ℕ, 2 ≤ N₀ ∧ ∀ N ≥ N₀, ∀ L : ℕ,
+      |(L : ℝ) - Real.log N / Real.log 2| ≤ C →
+      ∀ (ι : Type u) [Fintype ι] [DecidableEq ι], Fintype.card ι ≤ d + 1 →
+      ∀ X : ι → ℕ, (∀ i, X i ∈ dyadicBlock N) →
+      (∀ i j, i ≠ j → ActualOffsetNonalignment.NoExact (X i) (X j) L) →
+      ∀ (M : Submodule F₂ (code X L)) (H : ℕ), L + 1 ≤ H →
+      DisjointRecoverySubspace.NoDisjointRecovery (CoordinateForms.coordinateFamily (code X L)) M d t →
+      (∀ i, Function.Injective ((projection X L i).comp M.subtype)) →
+      η * L ≤ (Module.finrank F₂ M : ℝ) →
+      ∀ i : ι, X i ∈ SmallKernelWindowSets.twoWindows N L H
+        (2 * τ * (PhysicalLabelSupportCount.supportBound d t (t - 1) : ℝ)) := by
+  obtain ⟨N₀, hN₀, h⟩ := uniform_witness_active c κ hc hBCN C τ η hτ hη d t hd hd₂ ht
+  refine ⟨N₀, hN₀, ?_⟩
+  intro N hN L hband ι _ _ hι X hX hno M H hH hrec hinj hdim
+  exact h N hN L hband ι hι X hX M H hH (OffsetNonalignmentOn.of_global X L _ hno) hrec hinj hdim
 
 end PaperP1.DensePhysicalKernelWitnessUnderBCN
