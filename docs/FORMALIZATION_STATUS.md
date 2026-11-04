@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records214 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records215 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13067 audited theorem/lemma declarations**. This
+- The project currently has **13084 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22614,3 +22614,24 @@ All powers use the FULL actual pair loss, including local relations. Each positi
 P1-MATH-0215 records these literal dyadic weighted error sectors. The leading2:3 channel comparison and translation main term, complete dyadic sector assembly, positive B-modulo-three equivalent and final R_rat/R_al comparison still remain. The complete macroscopic portion of T21.1 is already proved. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are214 improvements and one statement-scope correction. No new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14987 jobs); direct axiom audit passed for 13067 declarations using only propext, Classical.choice and Quot.sound; all 12120 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.53 GiB.
+
+
+## Actual dyadic leading two-to-three profile with the five-sixths comparison error
+
+The leading dyadic positive calculation in T21.1 is now proved on the literal complete enlarged2:3/3:2 mask, retaining nonprivate and zero-unit pairs.
+
+DyadicFixedChannelComparison instantiates the internally proved full/rational comparison on the containing macroscopic interval. Every actual dyadic fixed-height subfamily has error N^(1/2+1/q+epsilon), uniformly over both coefficient orientations. At height three this gives the printed five-sixths error, without assuming any mass bound.
+
+DyadicRationalCodeGeometry proves the canonical global ratio-fiber code has its exact unit-count dimension on every moving dyadic channel through B^3. Its off-alignment vanishing and pointwise domination by the full actual loss also hold uniformly. The global code is still defined before selecting a slope; these are transported theorems, not dyadic assumptions.
+
+DyadicLeadingPairGeometry proves ALL enlarged2:3 pairs are eventually separated by more than L and that the two root orientations are disjoint. Every symmetric actual leading weight sums to twice its forward sum. The actual rational unit weight is proved supported on that forward geometric channel. The1:3 and3:1 channels are proved empty for sufficiently large dyadic scale, including zero-unit pairs.
+
+DyadicLeadingPositiveProfile defines the literal positive full-rank leading sum and the actual rational unit total. Their absolute difference is at most N^(5/6+epsilon). The existing exact rational-unit word/source enumeration supplies the finite main term (N/3)*U_2,3(L), with endpoint error6*B*U_2,3(L). That endpoint error is proved at most N^(1/3+epsilon). Combining the actual estimates yields
+
+  |leading_actual_positive - (N/3)*U_2,3(L)| <= N^(5/6+epsilon).
+
+Both orientations, all original labels, local relations and incompatible pairs are retained. No external input, channel-count assumption or nominal-marginal replacement is used.
+
+P1-MATH-0216 records this leading dyadic profile. Complete dyadic sector assembly, the global R_rat/R_al comparison and the B-modulo-three leading equivalent remain. The macroscopic portion of T21.1 is already complete. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are215 improvements and one statement-scope correction. No new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14995 jobs); direct axiom audit passed for 13084 declarations using only propext, Classical.choice and Quot.sound; all 12139 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.50 GiB.

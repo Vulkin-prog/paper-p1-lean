@@ -3213,3 +3213,7 @@ public import PaperP1.Asymptotics.MacroscopicRationalProfile
 public import PaperP1.Arithmetic.DyadicAlignedPairMasks
 public import PaperP1.Asymptotics.DyadicActualSectorPowers
 public import PaperP1.Asymptotics.DyadicMacroscopicTransfer
+public import PaperP1.Asymptotics.DyadicFixedChannelComparison
+public import PaperP1.Asymptotics.DyadicLeadingPairGeometry
+public import PaperP1.Asymptotics.DyadicLeadingPositiveProfile
+public import PaperP1.Asymptotics.DyadicRationalCodeGeometry
