@@ -3179,3 +3179,5 @@ public import PaperP1.Asymptotics.MacroscopicRootLogScale
 public import PaperP1.Arithmetic.BoundedNormalizedDefectPairs
 public import PaperP1.Asymptotics.BoundedNormalizedDefectPairCount
 public import PaperP1.Asymptotics.MacroscopicNormalizedDefectHosts
+public import PaperP1.Arithmetic.EnlargedNormalizedDefectDiagnostics
+public import PaperP1.Asymptotics.MacroscopicKernelExceptionHosts

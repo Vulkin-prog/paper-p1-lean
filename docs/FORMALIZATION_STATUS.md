@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records200 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records201 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **12879 audited theorem/lemma declarations**. This
+- The project currently has **12894 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22254,3 +22254,72 @@ axiom, software dependency or compiler change is introduced. Original
 manuscripts remain byte-identical and Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14919 jobs); direct axiom audit passed for 12879 declarations using only propext, Classical.choice and Quot.sound; all 11885 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.79 GiB.
+
+
+## Actual macroscopic privacy and extra-kernel diagnostics with square-root host counts
+
+Companion T21.1 now has complete finite diagnostics connecting its
+actual nonprivate normalized pairs, positive residual kernels and
+extra rational-code losses to the exceptional population already
+counted. All three actual macroscopic host families satisfy the
+square-root bound. The full weighted profiles remain open.
+
+EnlargedNormalizedDefectDiagnostics first strengthens the finite
+normalized-interval geometry: its saturated natural base
+
+  U=max(b*x-radius,0),  R=2*radius
+
+contains the entire actual normalized union for EVERY positive source,
+without the former auxiliary condition radius<=b*x. When that condition
+fails, U=0 and the literal absolute interval bound still puts every
+normalized value below 2*radius. No root-size or exact-unit premise
+is required for the finite argument.
+
+The same actual geometry gives diameter at most 2*radius. Thus, when
+H>2*radius, the exact private-prime condition above H is equivalent
+to absence of H-defective integers in the normalized union. Every
+nonprivate pair has an actual defective normalized value, including
+pairs with zero exact units.
+
+When H>=2*radius, the full residual value kernel embeds into the
+actual large-prime kernel, which restricts injectively to its actual
+defective values. Consequently positive residual dimension forces
+a defective normalized value. The finite rational-unit loss identity
+then proves the same witness for every pair with
+
+  pairLoss > max(#exactUnits-1,0).
+
+Without a defective normalized value, its actual pair loss is at
+most that exact rational-unit dimension. No residual rank or host
+count is an unformalized input, and no large-source assumption is
+inserted into these finite diagnostics.
+
+MacroscopicKernelExceptionHosts defines three LITERAL ordered
+exceptional pair populations on [ceil(M^delta),M): failure of private
+prime coordinates, positive residual value-kernel dimension and
+strict excess pair loss over the exact rational-unit dimension.
+The proved diagnostics map each into the actual normalized-defect
+pair population, with their original labels retained.
+
+The concrete cutoff H=8Q*B exceeds 2*radius=6bB for every positive
+height b<=Q. Its real cutoff is exactly 8Q*B, as required by the
+previous global count. All three exceptional families therefore have
+cardinality at most M^(1/2+epsilon), uniformly over every critical L,
+moving positive a<=b<=Q, and every delta>0 chosen AFTER the common
+threshold. There is no exact-unit restriction and no dependence of
+the counting threshold on delta. The strict cutoff needed by privacy
+and the weak cutoff sufficient for the kernel are kept distinct.
+
+P1-MATH-0202 records the actual kernel/privacy diagnostics and their
+host counts, together with the removal of the unnecessary unsaturated-
+base condition. This completes the fixed-height exceptional-host
+step needed before weighted rational/full-code comparison in T21.1.
+The remaining work is the weighted fixed/high-height residual sums,
+actual positive and signed channel translation sums, the distinct
+parity formulas and their final leading equivalents. Coverage stays
+88 proved and 70 conditional out of 167, with nine incomplete results.
+There are 201 improvements and one statement-scope correction.
+No new external input, dependency, axiom, compiler setting or original
+manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14923 jobs); direct axiom audit passed for 12894 declarations using only propext, Classical.choice and Quot.sound; all 11904 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.78 GiB.

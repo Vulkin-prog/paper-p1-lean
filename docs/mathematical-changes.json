@@ -13273,6 +13273,51 @@
         "status": "not_integrated"
       },
       "validation_commit": "d5ea0fb307a4f78edf3c486eaf11fa7bdb31a04a"
+    },
+    {
+      "id": "P1-MATH-0202",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "The fixed-height profile comparison in T21.1 needs every actual nonprivate or extra-kernel pair to be covered by the counted defective normalized hosts, including zero exact units.",
+      "finding": "The saturated normalized base contains the actual union without a source-size premise. Its finite diameter proves the full private-prime equivalence and an actual defective-value witness for every positive residual kernel or strict extra rational-unit loss. Three literal macroscopic exceptional families inject into the previously counted defect population at H=8QB, yielding the M^(1/2+epsilon) count with a threshold before every positive delta.",
+      "proposed_revision": "Use the saturated natural base in the finite interval geometry. State the exact private-prime and residual-kernel defect diagnostics, distinguish strict and weak cutoff requirements, then count the three actual exceptional families before weighting their profile contributions.",
+      "impact": "Completes the actual fixed-height exceptional-host diagnostics and counts used by T21.1, with no exact-unit or large-source hypothesis. Weighted profile sums and leading equivalents remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.EnlargedNormalizedDefectDiagnostics.interval_bounds_all",
+        "PaperP1.EnlargedNormalizedDefectDiagnostics.normalized_dist_bound",
+        "PaperP1.EnlargedNormalizedDefectDiagnostics.normalized_private_iff",
+        "PaperP1.EnlargedNormalizedDefectDiagnostics.normalized_bad_witness",
+        "PaperP1.EnlargedNormalizedDefectDiagnostics.kernel_defect_witness",
+        "PaperP1.EnlargedNormalizedDefectDiagnostics.extra_loss_witness",
+        "PaperP1.EnlargedNormalizedDefectDiagnostics.loss_le_of_no_defects",
+        "PaperP1.MacroscopicKernelExceptionHosts.cutoff_bounds",
+        "PaperP1.MacroscopicKernelExceptionHosts.cutoff_real",
+        "PaperP1.MacroscopicKernelExceptionHosts.nonprivate_subset",
+        "PaperP1.MacroscopicKernelExceptionHosts.residual_subset",
+        "PaperP1.MacroscopicKernelExceptionHosts.extra_subset",
+        "PaperP1.MacroscopicKernelExceptionHosts.nonprivate_count",
+        "PaperP1.MacroscopicKernelExceptionHosts.residual_count",
+        "PaperP1.MacroscopicKernelExceptionHosts.extra_loss_count",
+        "PaperP1.MacroscopicKernelExceptionHosts.cutoff",
+        "PaperP1.MacroscopicKernelExceptionHosts.nonprivatePairs",
+        "PaperP1.MacroscopicKernelExceptionHosts.residualPairs",
+        "PaperP1.MacroscopicKernelExceptionHosts.extraLossPairs"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14923 jobs); direct axiom audit passed for 12894 declarations using only propext, Classical.choice and Quot.sound; all 11904 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.78 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
