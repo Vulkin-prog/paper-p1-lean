@@ -8555,6 +8555,8 @@ import PaperP1
 #print axioms PaperP1.SharpThirdCancellationUnderInputs.uniform_cancellation
 #print axioms PaperP1.SharpThirdCumulantLowerUnderInputs.error_absorption
 #print axioms PaperP1.SharpThirdCumulantLowerUnderInputs.article_14_5
+#print axioms PaperP1.SharpTranslatedKernelCounts.two_uniform_budget
+#print axioms PaperP1.SharpTruncatedAsymmetricSupportCount.uniform_count
 #print axioms PaperP1.SharpTwoSmallKernelCount.uniform_count
 #print axioms PaperP1.SharpTwoSmallKernelWindowCount.uniform_budget
 #print axioms PaperP1.SharpTwoSmallKernelWindowCount.critical_budget

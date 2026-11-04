@@ -9,7 +9,7 @@ Companion T1.5 is complete conditionally on exactly the same two ordinary biform
 
 Companion T1.4 is complete conditionally on exactly HeathBrownBiformInput.Input and NonGeometricBiformInput.Input. The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. Both ordinary input proofs remain open. The three incomplete numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records308 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records309 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -128,7 +128,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14056 audited theorem/lemma declarations**. This
+- The project currently has **14058 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24260,3 +24260,16 @@ The final companion_T1_13 theorem is stated DIRECTLY for radii at most D*log(N),
 After the actual full build, axiom audit, source check and declaration check, T1.13 is marked conditional. Coverage becomes89 proved and75 conditional out of167 (164 completed). The three remaining numbered obligations are main13.4, companionT1.10 andT5.1. The ordinary biform input proofs remain open; the other conditional results retain their own recorded inputs. There are308 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred until full coverage and alignment.
 
 Verified under Lean v4.36.0-rc2: full build passed (15495 jobs); direct axiom audit passed for 14056 declarations using only propext, Classical.choice and Quot.sound; all 13305 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.77 GiB.
+
+
+## Sharp31/24 asymmetric support from the actual completed two-kernel count
+
+The actual sparse asymmetric SUPPORT count now has the sharp31/24 exponent, using the completed sharp two-small-kernel theorem. This counts the support of relations, not yet their weighted profile. The literal radius-one T1.10 statement remains false as proved inP1-MATH-0162; its necessary enlarged alignment convention is preserved for the later weighted theorem.
+
+SharpTranslatedKernelCounts applies the actual full sharp integer theorem to the literal translated-window offset cover. Positivity, comparable heights, both actual kernel caps, translation injectivity and all logarithmic placements are verified, giving (T+N^(7/12))*N^epsilon on the original translated two-kernel population.
+
+SharpTruncatedAsymmetricSupportCount sets the actual kernel threshold T=N^(5/12). The unconditional one-kernel count then has exponent17/24, while the actual sharp two-kernel count has exponent7/12. Their product has exponent31/24. Independently, the existing unconditional large-anchor estimate has exponent3/2-(5/12)/2=31/24 after its Rankin and subpolynomial margins are paid. The two-defect population contributes only exponent1 plus a margin. The already proved finite support cover combines these THREE actual populations, and an explicit constant budget yields N^(31/24+epsilon) for the full truncated asymmetric relation support.
+
+Only the same TWO ordinary biform inputs fromT1.4/T1.5 remain in the sharp two-kernel step. No asymmetric support estimate is assumed, and the earlier unconditional coarse4/3 route remains available with its smaller dependency set. Fixed comparable/expanded support transport and the weighted sparse/dense assembly under the necessary enlarged alignment radius still remain before claiming the corrected weighted31/24 profile. The literal original T1.10 is not marked proved or conditional. Coverage remains89 proved and75 conditional out of167 (164 completed), with three numbered obligations incomplete. There are309 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15499 jobs); direct axiom audit passed for 14058 declarations using only propext, Classical.choice and Quot.sound; all 13307 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.75 GiB.

@@ -17609,6 +17609,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "b78dd88250887c859c65edfdd0742117377c4591"
+    },
+    {
+      "id": "P1-MATH-0310",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:asymmetric",
+        "number": "T1.10",
+        "page": 14,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 811,
+        "statement_sha256": "e176fe0574fc119242f3c523853be4fdc4ff53b0366327c5f6387f1af29c802a"
+      },
+      "original_assumption": "The completed sharp two-kernel bound supplies the31/24 sparse asymmetric support estimate with actual translated populations and threshold N^(5/12).",
+      "finding": "The exact one/two-small-kernel product has exponent17/24+7/12=31/24, and the unconditional large-anchor exponent is also31/24 at the same threshold. Their actual finite support cover includes the two-defect sector and closes the sharp support count.",
+      "proposed_revision": "Use the completed sharp two-kernel theorem at T=N^(5/12), retain the actual translated-window membership and placements, and combine the three literal support sectors before addressing weighted profiles and corrected alignment.",
+      "impact": "Closes the sharp truncated asymmetric support count under the two existing ordinary biform inputs. Corrected weighted31/24 assembly remains open; the disproved literal T1.10 and numbered coverage are unchanged.",
+      "evidence": [
+        "PaperP1.SharpTranslatedKernelCounts.two_uniform_budget",
+        "PaperP1.SharpTruncatedAsymmetricSupportCount.uniform_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15499 jobs); direct axiom audit passed for 14058 declarations using only propext, Classical.choice and Quot.sound; all 13307 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.75 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
