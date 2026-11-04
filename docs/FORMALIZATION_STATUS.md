@@ -5,7 +5,7 @@ Neither document is fully formalized.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
-CompanionT19.10 is in progress: actual deletion kernels contract every fixed polynomially weighted field distance. Exact Poisson subset laws, coordinate/pair moments, unconditional rate1 accidental-edge probability and rate1 deletion of the intended independent background are checked. The marked pair arrivals in the compound target and the remaining sharp assertions stay open.
+CompanionT19.10 is in progress: BOTH actual deletion kernels recover the intended independent background from the FULL compound reference at unconditional rate1, and from the ACTUAL original field at conditional rate4/5. The field-distance part is established. The finer intensity, covariance and sharp two-edge O(a_N^2) conclusions remain separate. P1-MATH-0156 removes the degree bound from the field coupling.
 
 The full original third absolute activity now reduces with coefficient one to literal strong exact-alignment triples, plus an error N^(-3/2+epsilon). All other triple sectors are proved at this power after an accuracy-dependent threshold. Main14.1 and14.6 stay in progress for the remaining strong-aligned upper bound.
 
@@ -112,7 +112,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **11285 audited theorem/lemma declarations**. This
+- The project currently has **11316 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -18008,3 +18008,118 @@ registration is introduced. Coverage remains87/167 unconditional
 and45 conditional, with155 confirmed manuscript improvements.
 
 Verified under Lean v4.36.0-rc2: full build passed (14067 jobs); direct axiom audit passed for 11285 declarations using only propext, Classical.choice and Quot.sound; all 9819 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.56 GiB.
+
+
+## Full compound-field deletion and original erased background
+
+The FIELD-DISTANCE part of companionT19.10 is now proved.
+The full original compound reference, including all marked pair
+arrivals, is sent by BOTH actual deletion kernels to its intended
+independent single-arrival background with UNCONDITIONAL ordinary
+L1 error<=N^(-1+epsilon). For the ACTUAL original once-deleted and
+isolated fields, the full-field L1 error to that same independent
+background is<=N^(-4/5+epsilon), conditionally on the existing
+RetainedComponentActivityUnderInputs bundle of main20.1. These are
+the genuine original-model kernels already identified by finite
+prime-sign mixtures. T19.10 remains IN PROGRESS for its finer
+intensity, covariance and sharp two-edge O(a_N^2) conclusions.
+No numbered completion is added.
+
+PositionalInsertedPair defines the exact set S(e) of vertices of
+candidate edges touching e. For any finite simple pair population
+E and e in E, if the background has no active edge and is zero on
+S(e), adding the endpoint vector of e leaves EXACTLY that active
+edge. Uniform deletion then subtracts e and recovers the original
+counting configuration. Isolation also recovers it because both
+endpoints are zero in the background. The result works for
+arbitrary natural-valued configurations, not only binary inputs.
+
+PositionalKernelComposition proves composition of an actual
+probability kernel with ANY deterministic input map by the
+absolutely convergent atomic series. Composition of deterministic
+pushforwards follows. Adding a fixed configuration is EXACTLY
+convolution with its atom.
+
+PositionalPoissonBadEvents bounds the actual probability of an
+active edge OR a positive subset count by the independent edge
+product mass plus the actual subset intensity. Every series is
+proved summable. PositionalInsertedPairCoupling combines this with
+the pointwise recovery and the actual kernel coupling: for ANY
+finite simple pair graph, both once-deletion and isolation of
+atom(endpoints(e))*U have full-field error at most
+
+ 2*(sum_(f in E) product_(x in f)r_x + sum_(x in S(e))r_x).
+
+No graph-degree or arithmetic premise enters this finite estimate.
+
+GoodEdgeTouchingMass covers S(e) by e and the true neighbors of its
+two endpoints. Every positive-nullity neighbor lies in the ACTUAL
+one-source dependent-target population. For nonnegative background
+rates dominated by the actual original marginals, its touching mass
+is at most the endpoint mass plus the sum of those two true
+conditional target masses. This finite statement needs no degree
+bound or local rank cap. GoodEdgeTouchingMassRate applies the already
+proved unconditional half-count: for EVERY actual good edge and
+EVERY real private-prime cutoff, rates between zero and the nominal
+p on the regular ground have
+
+ sum_(x in S(e))r_x<=N^(-1/2+epsilon).
+
+PositionalInsertedPairRate therefore gives both once-deleted and
+isolated fields with ONE inserted good pair L1 error at most
+N^(-1/2+epsilon), uniformly over the inserted edge. The actual
+background rates p-iota_x satisfy the premises by their previously
+proved unconditional strict positivity and q_e>=0.
+
+PositionalMarkedPairExpansion factors the full target EXACTLY as
+U*exp(V), where U is the independent single-arrival field and
+V=sum_e q_e*(atom(endpoints(e))-1), with norm V<=2*beta.
+The zero/one first-order field is
+
+ (1-beta)*U + sum_e q_e*atom(endpoints(e))*U.
+
+Its full-field error is<=4*beta^2*exp(2*beta). For ANY contractive
+continuous linear field operator K, the resulting approximation
+error to U is at most that quadratic remainder plus
+
+ |1-beta|*norm(K(U)-U)
+     +sum_e q_e*norm(K(atom(endpoints(e))*U)-U).
+
+The identities, bounds and actual exponential tail are proved;
+no independent latent-sample representation is assumed.
+
+PositionalCompoundDeletionRate applies this inequality to both
+actual kernels. The unconditional good-edge mass bound at margin
+1/24 gives beta<=N^(-5/8)<=1. Thus the quadratic error has power5/4,
+and the beta-weighted inserted-pair error has power9/8 before
+arbitrarily small margins. The accidental-background deletion has
+rate1 and dominates both. Absorbing the fixed constant4*exp(2)+2
+gives the unconditional full-reference rate N^(-1+epsilon), uniformly
+over every real private-prime cutoff.
+
+PositionalOriginalDeletionUnderInputs combines the full original
+unweighted comparison, kernel contraction and this stronger
+reference rate. A single existing input bundle is chosen before
+the critical threshold. Both actual original deleted fields then
+have L1 distance<=N^(-4/5+epsilon) from the intended independent
+single-arrival background. Coordinates are retained throughout;
+a scalar count approximation is never used to infer a field bound.
+
+P1-MATH-0156 records that the source coupling does not need its
+degree bound. The finite error depends on touching intensity;
+the existing half-count already supplies a sufficient, weaker
+half-power estimate. Its product with beta has a strict power
+gap beyond1, so the original reference rate1 and final4/5 rate
+survive. This broadens the coupling criterion without improving
+the claimed final rate or asserting a manuscript error. It does
+not establish the separate sharp original two-edge asymptotic.
+
+All new finite, geometric-neighbor and full-reference assertions
+are unconditional. Only transfer to the ACTUAL original field
+retains the already explicit geometric bundle. No new external
+property, axiom, Paper C port, dependency download or original
+source edit is introduced. Coverage stays87/167 unconditional
+and45 conditional; confirmed improvements become156. Palomar
+remains a later milestone.
+
+Verified under Lean v4.36.0-rc2: full build passed (14087 jobs); direct axiom audit passed for 11316 declarations using only propext, Classical.choice and Quot.sound; all 9850 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.52 GiB.

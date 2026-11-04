@@ -10843,6 +10843,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "1cd7b7e0d9ccbff3bc49e6ddad302954b1d4bd4e"
+    },
+    {
+      "id": "P1-MATH-0156",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:erasure",
+        "number": "T19.10",
+        "page": 74,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 659,
+        "statement_sha256": "73b7de371366b51ea17e7e91afc81e0ef27fb86753f42d04ec4cf9a2ab1f474d"
+      },
+      "original_assumption": "The coupling proof of T19.10, companion_sections/limits_appendix.tex:697-713, controls competing edges by a deterministic good-edge degree bound and an O(Bp) local cost.",
+      "finding": "A finite one-inserted-pair coupling requires only the actual touching-site intensity, plus the independent accidental-edge product mass. The already proved one-source conditional half-count gives touching mass N^(-1/2+delta), without a degree bound. Since beta<=N^(-5/8), the beta-weighted local error has power9/8-delta and the quadratic marked-arrival error has power5/4. The unconditional compound-reference deletion rate1 and the conditional original-field rate4/5 are therefore preserved under this weaker local criterion. No sharper intensity, covariance or original two-edge O(a_N^2) conclusion is inferred.",
+      "evidence": [
+        "PaperP1.PositionalInsertedPairCoupling.once_poisson_bound",
+        "PaperP1.PositionalInsertedPairCoupling.isolated_poisson_bound",
+        "PaperP1.GoodEdgeTouchingMass.mass_bound",
+        "PaperP1.GoodEdgeTouchingMassRate.uniform_bound",
+        "PaperP1.PositionalMarkedPairExpansion.approximation_bound",
+        "PaperP1.PositionalCompoundDeletionRate.uniform_bound",
+        "PaperP1.PositionalOriginalDeletionUnderInputs.uniform_norm_bound"
+      ],
+      "proposed_revision": "State the finite touching-mass coupling bound before the asymptotic application. Replace the degree-based local step by the existing one-source half-count and explain the beta-weighted strict power gap. Keep the sharper original two-edge estimates separate for the later finer conclusions.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14087 jobs); direct axiom audit passed for 11316 declarations using only propext, Classical.choice and Quot.sound; all 9850 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.52 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

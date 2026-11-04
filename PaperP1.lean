@@ -2753,3 +2753,13 @@ public import PaperP1.Probability.PositionalBackgroundDeletion
 public import PaperP1.Model.GoodEdgePopulationBounds
 public import PaperP1.Asymptotics.GoodEdgeAccidentalMass
 public import PaperP1.Asymptotics.PositionalPoissonAccidentRate
+public import PaperP1.Probability.PositionalInsertedPair
+public import PaperP1.Probability.PositionalKernelComposition
+public import PaperP1.Probability.PositionalPoissonBadEvents
+public import PaperP1.Model.GoodEdgeTouchingMass
+public import PaperP1.Asymptotics.GoodEdgeTouchingMassRate
+public import PaperP1.Probability.PositionalInsertedPairCoupling
+public import PaperP1.Asymptotics.PositionalInsertedPairRate
+public import PaperP1.Probability.PositionalMarkedPairExpansion
+public import PaperP1.Asymptotics.PositionalCompoundDeletionRate
+public import PaperP1.Asymptotics.PositionalOriginalDeletionUnderInputs
