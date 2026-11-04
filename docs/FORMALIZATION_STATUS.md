@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic power and remaining sharp arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile and41/30 activity claims remain open. Coverage is87/167 unconditional and52 conditional. The project records164 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile and41/30 activity claims remain open. Coverage is87/167 unconditional and55 conditional. The project records164 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -120,7 +120,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **11838 audited theorem/lemma declarations**. This
+- The project currently has **11845 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -19319,3 +19319,57 @@ corrected31/24 profile obligations remain open. Original manuscript bytes,
 toolchain and dependencies are unchanged. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14385 jobs); direct axiom audit passed for 11838 declarations using only propext, Classical.choice and Quot.sound; all 10485 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.80 GiB.
+
+
+## Complete reconstruction, nominal mean and Hermite consequences
+
+Main15.14,17.3 and19.1 are now COMPLETE CONDITIONALLY on the existing
+explicit BCN and finite ordinary/source cover and normalized curve-count
+properties. No new external input or mathematical correction is introduced.
+The previously identified sharper41/30 and31/24 obligations remain open.
+
+OptimalTripleReconstructionUnderInputs.article_15_14 assembles BOTH clauses
+of the source theorem for the original full law and exact parameters:
+the symbolic N^epsilon*A3+N^(-4/3+epsilon) estimate, and its actual optimal
+numerical upper bound. All finite geometric properties occur before the
+common critical threshold. The old symbolic estimate remains independent
+of BCN; the additional numerical clause uses the explicit BCN argument.
+
+QuadraticMeanLawComparison transfers quantitative two-sided mean
+separation from two actual quadratic references to an arbitrary actual
+signed law whose approximation error is sufficiently small. With compact
+mean bound M and |alpha|<=1, the explicit lower constant is exp(-M)/4
+and the upper constant is6+exp(-M)/4. OptimalNominalQuadraticUnderInputs
+applies this finite inequality to the ORIGINAL count. The integer mean-bias
+identity and the exact quantum dichotomy are retained. The actual optimal
+approximation is used at the fixed exponent-5/4, strictly below-1.
+The quantum lower bound on every NONZERO-bias scale then absorbs the
+remainder. The nominal-reference error is bounded by N^(-1+epsilon),
+and is comparable to the actual mean gap with explicit constants depending
+only on C whenever the integer bias is nonzero. The same exact second
+cumulant is retained in both references. No existence of infinitely many
+nonzero-bias scales is asserted. The finite geometric bundle is chosen
+at the fixed margin1/12, before the requested final epsilon.
+
+ActualHermiteReferenceRateUnderInputs proves the Hermite/quadratic
+reference difference at power4/3, for EVERY dyadic subground and every
+nonnegative reference mean. It uses the proved sharp second-cumulant
+bound under the existing finite pair-geometric bundle, then the exact
+Banach exponential remainder. Neither the optimal original-law error nor
+the Hermite error is an assumed input. OptimalHermiteUnderInputs gives
+the actual full-law comparison with exact original mean and cumulant,
+proves nonnegative Poisson intensities before constructing the law,
+and obtains both the signed l1 and total-variation optimal power4/3.
+HermiteReference.law is literally the pushforward U+2V of the existing
+product of independent Poisson laws with means mu-alpha and alpha/2.
+Together with the already proved ExplicitHermiteLawUnderInputs bounds
+and moving distance equivalents for EVERY fixed height h>=3, this
+completes all source clauses of main19.1, including h=4. No matching
+lower bound is asserted for the exact-parameter Hermite reference.
+
+Coverage becomes87/167 unconditional and55 conditional. The existing164
+mathematical improvements and one confirmed scope correction are unchanged.
+Original manuscript bytes, compiler and dependency pins are unchanged.
+Palomar remains a later completion milestone.
+
+Verified under Lean v4.36.0-rc2: full build passed (14395 jobs); direct axiom audit passed for 11845 declarations using only propext, Classical.choice and Quot.sound; all 10501 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.76 GiB.

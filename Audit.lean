@@ -5339,6 +5339,7 @@ import PaperP1
 #print axioms PaperP1.ActivePhysicalGroupCountUnderBCN.uniform_count
 #print axioms PaperP1.ActualFamilyJointRows.append_support
 #print axioms PaperP1.ActualFamilyJointRows.uniform_row
+#print axioms PaperP1.ActualHermiteReferenceRateUnderInputs.uniform_comparison
 #print axioms PaperP1.ActualNominalReferenceComparison.lowerConstant_pos
 #print axioms PaperP1.ActualNominalReferenceComparison.actual_mean_nonneg
 #print axioms PaperP1.ActualNominalReferenceComparison.finite_upper
@@ -6636,8 +6637,13 @@ import PaperP1
 #print axioms PaperP1.OnceErasedPoissonUnderInputs.uniform_relative
 #print axioms PaperP1.OneTargetClassSystem.of_two_labels
 #print axioms PaperP1.OneTargetLogDenseCount.uniform_count
+#print axioms PaperP1.OptimalHermiteUnderInputs.article_19_1_exact
+#print axioms PaperP1.OptimalNominalQuadraticUnderInputs.lowerConstant_pos
+#print axioms PaperP1.OptimalNominalQuadraticUnderInputs.uniform_comparison
+#print axioms PaperP1.OptimalNominalQuadraticUnderInputs.article_17_3
 #print axioms PaperP1.OptimalQuadraticUnderInputs.article_1_1
 #print axioms PaperP1.OptimalQuadraticUnderInputs.article_16_2
+#print axioms PaperP1.OptimalTripleReconstructionUnderInputs.article_15_14
 #print axioms PaperP1.OptimalZeroProbabilityUnderInputs.article_17_2
 #print axioms PaperP1.OrderDependentBranching.exception_nonneg
 #print axioms PaperP1.OrderDependentBranching.exception_le_source
@@ -11721,6 +11727,7 @@ import PaperP1
 #print axioms PaperP1.PushforwardMass.realMass_law
 #print axioms PaperP1.PushforwardMass.expectation_law
 #print axioms PaperP1.PushforwardMass.realMass_map
+#print axioms PaperP1.QuadraticMeanLawComparison.finite_bounds
 #print axioms PaperP1.QuadraticPoisson.ofSequence_shift
 #print axioms PaperP1.QuadraticPoisson.ofSequence_secondDifference
 #print axioms PaperP1.QuadraticPoisson.poissonSigned_eq_poissonMeasure

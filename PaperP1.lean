@@ -2912,3 +2912,8 @@ public import PaperP1.Asymptotics.OptimalZeroProbabilityUnderInputs
 public import PaperP1.Asymptotics.PolynomialWeightedQuadraticUnderInputs
 public import PaperP1.Asymptotics.PolynomialWeightedSequenceRate
 public import PaperP1.Model.QuadraticFactorialMomentTransfer
+public import PaperP1.Asymptotics.ActualHermiteReferenceRateUnderInputs
+public import PaperP1.Asymptotics.OptimalHermiteUnderInputs
+public import PaperP1.Asymptotics.OptimalNominalQuadraticUnderInputs
+public import PaperP1.Asymptotics.OptimalTripleReconstructionUnderInputs
+public import PaperP1.Probability.QuadraticMeanLawComparison
