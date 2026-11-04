@@ -11039,6 +11039,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "b5a157cda7055b27a44f13c0a71b680ef6d5504a"
+    },
+    {
+      "id": "P1-MATH-0162",
+      "classification": "correction",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:asymmetric",
+        "number": "T1.10",
+        "page": 14,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 811,
+        "statement_sha256": "e176fe0574fc119242f3c523853be4fdc4ff53b0366327c5f6387f1af29c802a"
+      },
+      "original_assumption": "The old raw-value set may lie in X+[-D*B,D*B] for any fixed D, while nonalignment refers to the article definition with displacement at most (r+s)*B and reduced slopes up to B^3.",
+      "finding": "With the literal radius-one nonalignment predicate, T1.10 is false. For L=3k, X=2t, z=3t+3B and U_X=[X,X+3B], k matched coordinates above every H>=3 yield delta*>=k-1. All reduced slopes up to B^3 are excluded for t>5B^4, but the pairs are aligned at radius2. On m=2^(3k), N=6m, a dyadic family of m-B pairs gives a full profile at least m^(4/3)/8. This exceeds every constant multiple of N^(31/24+1/48), for every fixed positive integer cutoff multiple, on the critical band C=3.",
+      "evidence": [
+        "PaperP1.AsymmetricEvenLoss.loss",
+        "PaperP1.AsymmetricShiftedWitness.loss_lower",
+        "PaperP1.ShiftedAlignmentRadius.narrow_nonalignment",
+        "PaperP1.ShiftedAlignmentRadius.enlarged_alignment",
+        "PaperP1.ShiftedAsymmetricPopulation.total_lower",
+        "PaperP1.ShiftedAsymmetricCriticalFamily.total_lower_four_thirds",
+        "PaperP1.AsymmetricAlignmentScopeObstruction.profile",
+        "PaperP1.AsymmetricAlignmentScopeObstruction.violates_printed_exponent",
+        "PaperP1.AsymmetricAlignmentScopeObstruction.no_uniform_radius_one_bound"
+      ],
+      "proposed_revision": "Define asymmetric nonalignment with a radius depending explicitly on the old width D, for example max(1,D)*(r+s)*B. Reprove the31/24 profile for this enlarged exclusion and verify the enlarged aligned-sector estimates at each use. Radius2 is proved to exclude this witness family, but sufficiency of the revised lemma is not asserted.",
+      "impact": "First confirmed correction to a literal manuscript statement, distinct from161 hypothesis/proof improvements. Companion T1.10 stays in progress; no corrected31/24 estimate is claimed and no main-article conclusion is refuted. Original manuscript bytes are unchanged.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14233 jobs); direct axiom audit passed for 11618 declarations using only propext, Classical.choice and Quot.sound; all 10179 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.17 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

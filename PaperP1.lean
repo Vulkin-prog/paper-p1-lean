@@ -2829,3 +2829,10 @@ public import PaperP1.Asymptotics.UniformGeometricCountStatement
 public import PaperP1.Asymptotics.UniformGeometricCountsUnderInputs
 public import PaperP1.Asymptotics.UniformGeometricSystemsUnderInputs
 public import PaperP1.Combinatorics.FiniteDegreeSelection
+public import PaperP1.Algebra.EvenPreimageRank
+public import PaperP1.Arithmetic.AsymmetricEvenLoss
+public import PaperP1.Arithmetic.AsymmetricShiftedWitness
+public import PaperP1.Arithmetic.ShiftedAlignmentRadius
+public import PaperP1.Arithmetic.ShiftedAsymmetricPopulation
+public import PaperP1.Asymptotics.AsymmetricAlignmentScopeObstruction
+public import PaperP1.Asymptotics.ShiftedAsymmetricCriticalFamily
