@@ -18436,7 +18436,8 @@
             "P1-ARITH-RECIPROCAL-PIVOT-FINITE"
           ]
         }
-      ]
+      ],
+      "validation_commit": "7b28e11b055892b51f967f51719e7158833ace6c"
     },
     {
       "label": "p1:limits:private-exact",
