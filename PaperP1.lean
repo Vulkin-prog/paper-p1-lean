@@ -3149,3 +3149,6 @@ public import PaperP1.Asymptotics.RandomizedHybridObstructionUnderOrdinaryCensus
 public import PaperP1.Model.RandomizedHybridBoundaryPairs
 public import PaperP1.Model.RandomizedHybridSourceData
 public import PaperP1.Model.RandomizedHybridSourceSelection
+public import PaperP1.Asymptotics.RandomizedObstructionArbitraryAuxiliary
+public import PaperP1.Model.RandomizedHybridMeasureAuxiliary
+public import PaperP1.Probability.FiniteOrientationObservation

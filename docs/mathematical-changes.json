@@ -12931,6 +12931,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "0d5d439df8140404bf19087dc71dc24e10f084ad"
+    },
+    {
+      "id": "P1-MATH-0193",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The randomized clause of T19.17 allows independent auxiliary randomness in an arbitrary probability space, with orientation depending only on the original source word and that randomness.",
+      "finding": "The full finite table of original-source and raw-word orientation decisions has an exact measurable pushforward law. Its observed forcing equals the original prime map pointwise. All real original-prime expectations, fairness and conditional Palm identities are preserved exactly, as is the literal integral of the actual offsite cost. The actual randomized half-factor obstruction consequently holds for every independent auxiliary probability measure and measurable source-word orientation under the same independent ordinary source census.",
+      "evidence": [
+        "PaperP1.RandomizedObstructionArbitraryAuxiliary.randomized_under_census",
+        "PaperP1.RandomizedHybridMeasureAuxiliary.primeForce_encode",
+        "PaperP1.RandomizedHybridMeasureAuxiliary.prime_observable_expectation",
+        "PaperP1.RandomizedHybridMeasureAuxiliary.fairness_eq",
+        "PaperP1.RandomizedHybridMeasureAuxiliary.weighted_prime_palm",
+        "PaperP1.RandomizedHybridMeasureAuxiliary.prime_conditional",
+        "PaperP1.RandomizedHybridMeasureAuxiliary.offsite_observation",
+        "PaperP1.FiniteOrientationObservation.encode_measurable",
+        "PaperP1.FiniteOrientationObservation.expectation_eq",
+        "PaperP1.FiniteOrientationObservation.coordinate_expectation",
+        "PaperP1.FiniteOrientationObservation.weight_eq",
+        "PaperP1.RandomizedHybridMeasureAuxiliary.observedOrientation",
+        "PaperP1.RandomizedHybridMeasureAuxiliary.offsite",
+        "PaperP1.FiniteOrientationObservation.Table",
+        "PaperP1.FiniteOrientationObservation.encode",
+        "PaperP1.FiniteOrientationObservation.law"
+      ],
+      "proposed_revision": "Explain the finite-table pushforward argument when treating general auxiliary randomness. State coordinate measurability, retain the original independent prime law and use the exact actual-cost identity before applying the finite-law half-factor bound.",
+      "impact": "Removes the finite auxiliary-law restriction from the actual randomized obstruction and its full original-prime conditional law in T19.17. The ordinary source census and final universal forcing-scope alignment remain open; numbered coverage stays unchanged.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14865 jobs); direct axiom audit passed for 12817 declarations using only propext, Classical.choice and Quot.sound; all 11802 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.96 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

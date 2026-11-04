@@ -7321,6 +7321,7 @@ import PaperP1
 #print axioms PaperP1.RandomizedHybridCostFromCensus.uniform_ordinary_candidates_lower
 #print axioms PaperP1.RandomizedHybridObstructionFromCensus.uniform_census_implication
 #print axioms PaperP1.RandomizedHybridObstructionUnderOrdinaryCensus.randomized_under_census
+#print axioms PaperP1.RandomizedObstructionArbitraryAuxiliary.randomized_under_census
 #print axioms PaperP1.RankinCertificateCritical.weightedCount_mono
 #print axioms PaperP1.RankinCertificateCritical.uniform_bound
 #print axioms PaperP1.RationalTripleEvenMass.hosts_card
@@ -10721,6 +10722,12 @@ import PaperP1
 #print axioms PaperP1.RandomizedHybridField.weighted_indicator_palm
 #print axioms PaperP1.RandomizedHybridField.total_marginal
 #print axioms PaperP1.RandomizedHybridField.cost_diagonal_decomposition
+#print axioms PaperP1.RandomizedHybridMeasureAuxiliary.primeForce_encode
+#print axioms PaperP1.RandomizedHybridMeasureAuxiliary.prime_observable_expectation
+#print axioms PaperP1.RandomizedHybridMeasureAuxiliary.fairness_eq
+#print axioms PaperP1.RandomizedHybridMeasureAuxiliary.weighted_prime_palm
+#print axioms PaperP1.RandomizedHybridMeasureAuxiliary.prime_conditional
+#print axioms PaperP1.RandomizedHybridMeasureAuxiliary.offsite_observation
 #print axioms PaperP1.RandomizedHybridSourceData.fullPivots_injective
 #print axioms PaperP1.RandomizedHybridSourceData.forced_pivot_above
 #print axioms PaperP1.RandomizedHybridSourceData.source_conditions
@@ -11955,6 +11962,10 @@ import PaperP1
 #print axioms PaperP1.FiniteOnceAllCoupling.disagreement_cost
 #print axioms PaperP1.FiniteOnceAllCoupling.totalVariation_bound
 #print axioms PaperP1.FiniteOnceAllCoupling.wasserstein_bound
+#print axioms PaperP1.FiniteOrientationObservation.encode_measurable
+#print axioms PaperP1.FiniteOrientationObservation.expectation_eq
+#print axioms PaperP1.FiniteOrientationObservation.coordinate_expectation
+#print axioms PaperP1.FiniteOrientationObservation.weight_eq
 #print axioms PaperP1.FinitePoissonCharlierConversion.ofFinite_scalar_mul
 #print axioms PaperP1.FinitePoissonCharlierConversion.ofFinite_reference
 #print axioms PaperP1.FinitePoissonCharlierConversion.coeff_completedReference

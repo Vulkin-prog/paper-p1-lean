@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and69 conditional. The project records191 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and69 conditional. The project records192 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **12806 audited theorem/lemma declarations**. This
+- The project currently has **12817 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -21640,3 +21640,69 @@ No source edit, external input, axiom, dependency or compiler change
 is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14859 jobs); direct axiom audit passed for 12806 declarations using only propext, Classical.choice and Quot.sound; all 11786 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.99 GiB.
+
+
+## Exact finite observation of arbitrary auxiliary orientation laws
+
+Companion T19.17 now admits arbitrary independent auxiliary
+probability spaces in the actual randomized hybrid construction,
+with the same proved half-factor lower bound under the independent
+ordinary source census. This removes the finite-auxiliary restriction
+without any approximation, new analytic input or axiom.
+
+FiniteOrientationObservation records, for each auxiliary sample, the
+finite table of its orientation decisions at EVERY original retained
+source and EVERY possible raw source word. The table is a separate
+finite type with its discrete measurable structure. Coordinatewise
+measurability of the actual binary decisions proves measurability of
+the complete observation. Its law is the actual pushforward of the
+original auxiliary probability measure, not a uniform replacement.
+The singleton weights are exactly the original probabilities of
+table fibers. Every real table-observable expectation equals the
+original Bochner integral exactly.
+
+RandomizedHybridMeasureAuxiliary proves that evaluating this observed
+table gives the IDENTICAL original prime forcing, for every source,
+prime sample and auxiliary draw. It proves exact expectation
+preservation for every real observable of the original and forced
+prime samples. Orientation fairness is preserved exactly as well.
+The full original-prime weighted Palm identity and conditional law
+therefore hold for arbitrary independent auxiliary measures under
+the original measurable fairness hypothesis. No joint conditional
+law of the auxiliary output and forced prime sample is asserted.
+
+The actual offsite cost for a general auxiliary law is defined as
+its literal sum of original marginal q_K times the uniform original
+prime-sample average of the auxiliary integral of the absolute target
+indicator changes. The source coordinate is erased before summing.
+It is proved equal to the actual finite-table hybrid offsite cost.
+Thus all lower-bound pairs, exception deletions and original source
+labels survive this reduction exactly. No abstract cost inequality
+is assumed in the measure bridge.
+
+RandomizedObstructionArbitraryAuxiliary applies this exact equality
+to the previously proved randomized obstruction. Under the purely
+arithmetic OrdinaryCensusDensity(C,a), for every eta>0 and both
+unsigned types K=L+i, i=0,1, it proves
+
+  actual_offsite >= (1-eta)*(q_(L+i)^2/2)*N^(2-a)
+
+uniformly over every original admissible arithmetic anchor rule,
+maximal width in the proved logarithmic range, containing prime
+cylinder, actual template, arbitrary independent auxiliary probability
+space and measurable source-word orientation. The uniform threshold
+precedes ALL of these choices. Fairness remains a separate condition
+for the exact conditional law; the numeric lower bound itself needs
+none. The original retained field and its exact marginal q_K are
+unchanged.
+
+P1-MATH-0193 records this exact finite-observation reduction and the
+arbitrary-auxiliary actual-cost obstruction. The ordinary smooth
+source census and final universal forcing-scope alignment remain
+open. Coverage stays88 proved and69 conditional out of167, with ten
+incomplete results. There are192 improvements and one statement-scope
+correction. Original manuscript files are preserved byte for byte.
+No new external input, dependency or compiler change is introduced.
+Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14865 jobs); direct axiom audit passed for 12817 declarations using only propext, Classical.choice and Quot.sound; all 11802 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.96 GiB.
