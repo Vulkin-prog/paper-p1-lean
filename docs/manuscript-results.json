@@ -9665,7 +9665,8 @@
           ]
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15231 jobs); direct axiom audit passed for 13665 declarations using only propext, Classical.choice and Quot.sound; all 12852 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.78 GiB."
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15231 jobs); direct axiom audit passed for 13665 declarations using only propext, Classical.choice and Quot.sound; all 12852 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.78 GiB.",
+      "validation_commit": "90bea45474a66c6f9004c4d99f5e713345fdbbdd"
     },
     {
       "label": "p1:arith:twokernel",
@@ -10541,7 +10542,8 @@
           ]
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15231 jobs); direct axiom audit passed for 13665 declarations using only propext, Classical.choice and Quot.sound; all 12852 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.78 GiB."
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15231 jobs); direct axiom audit passed for 13665 declarations using only propext, Classical.choice and Quot.sound; all 12852 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.78 GiB.",
+      "validation_commit": "90bea45474a66c6f9004c4d99f5e713345fdbbdd"
     },
     {
       "label": "p1:arith:anchor",
