@@ -204,7 +204,8 @@
             "P1-GEO-NORMALIZED-CURVE-UNIFORM"
           ]
         }
-      ]
+      ],
+      "validation_commit": "3b915c560073b7531fde47db4e7c415bb6188a41"
     },
     {
       "label": "p1:cor:tv",
@@ -4077,7 +4078,8 @@
             "P1-GEO-BCN-PLANE-UNIFORM"
           ]
         }
-      ]
+      ],
+      "validation_commit": "3b915c560073b7531fde47db4e7c415bb6188a41"
     },
     {
       "label": "p13:third:rational-rank",
@@ -4959,7 +4961,8 @@
             "P1-PROB-COMPRESSED-FOUR-THIRDS-INTERACTION"
           ]
         }
-      ]
+      ],
+      "validation_commit": "3b915c560073b7531fde47db4e7c415bb6188a41"
     },
     {
       "label": "p13:transfer:conversion",
@@ -7000,7 +7003,8 @@
           ]
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14375 jobs); direct axiom audit passed for 11830 declarations using only propext, Classical.choice and Quot.sound; all 10470 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.84 GiB."
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14375 jobs); direct axiom audit passed for 11830 declarations using only propext, Classical.choice and Quot.sound; all 10470 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.84 GiB.",
+      "validation_commit": "3b915c560073b7531fde47db4e7c415bb6188a41"
     },
     {
       "label": "p13:optimal:weighted",
