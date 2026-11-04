@@ -3307,3 +3307,7 @@ public import PaperP1.Arithmetic.DeterminantIntervalPartition
 public import PaperP1.Analysis.DeterminantWeightMargin
 public import PaperP1.Asymptotics.DeterminantNormalizedWeights
 public import PaperP1.Asymptotics.DeterminantSourceWeightMargin
+public import PaperP1.Analysis.DeterminantBoxScales
+public import PaperP1.Analysis.DeterminantFixedInflation
+public import PaperP1.Arithmetic.DeterminantSourceBox
+public import PaperP1.Asymptotics.DeterminantBoxAuxiliary

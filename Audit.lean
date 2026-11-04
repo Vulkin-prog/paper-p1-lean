@@ -2195,6 +2195,9 @@ import PaperP1
 #print axioms PaperP1.CurveDegreeProfile.large_endpoint
 #print axioms PaperP1.CurveDegreeProfile.degree_uniform_bound
 #print axioms PaperP1.CurveDegreeProfile.degree_uniform_bound_without_cap_growth
+#print axioms PaperP1.DeterminantBoxScales.coordinate_bounds
+#print axioms PaperP1.DeterminantBoxScales.log_DE_upper
+#print axioms PaperP1.DeterminantBoxScales.uniform_base_logs
 #print axioms PaperP1.DeterminantCenterScales.source_ratio_bounds
 #print axioms PaperP1.DeterminantCenterScales.normalized_center_bounds
 #print axioms PaperP1.DeterminantCenterScales.center_ratio_identity
@@ -2227,6 +2230,9 @@ import PaperP1
 #print axioms PaperP1.DeterminantExplicitDecay.normalized_explicit_bound
 #print axioms PaperP1.DeterminantExplicitDecay.original_explicit_bound
 #print axioms PaperP1.DeterminantExplicitDecay.constant_positive
+#print axioms PaperP1.DeterminantFixedInflation.source_comparisons_order
+#print axioms PaperP1.DeterminantFixedInflation.inflation_ge_sixteen
+#print axioms PaperP1.DeterminantFixedInflation.effective_products
 #print axioms PaperP1.DeterminantLogScale.denominator_cost
 #print axioms PaperP1.DeterminantLogScale.product_identity
 #print axioms PaperP1.DeterminantLogScale.ideal_identity
@@ -3407,6 +3413,9 @@ import PaperP1
 #print axioms PaperP1.DeterminantPrimitiveReduction.actual_reduction_mem
 #print axioms PaperP1.DeterminantPrimitiveReduction.reduced_injective_on
 #print axioms PaperP1.DeterminantPrimitiveReduction.finite_primitive_cover
+#print axioms PaperP1.DeterminantSourceBox.population_height
+#print axioms PaperP1.DeterminantSourceBox.population_denominators_positive
+#print axioms PaperP1.DeterminantSourceBox.population_source_lower
 #print axioms PaperP1.DivisorAuxiliaryPolynomial.row_height
 #print axioms PaperP1.DivisorAuxiliaryPolynomial.row_congruence
 #print axioms PaperP1.DivisorAuxiliaryPolynomial.finite_confinement
@@ -6479,6 +6488,7 @@ import PaperP1
 #print axioms PaperP1.DeterminantAuxiliaryHeight.uniform_coefficients
 #print axioms PaperP1.DeterminantBoundedAuxiliaryHeight.heightBound_le_common_power
 #print axioms PaperP1.DeterminantBoundedAuxiliaryHeight.uniform_coefficients
+#print axioms PaperP1.DeterminantBoxAuxiliary.uniform_biforms
 #print axioms PaperP1.DeterminantEnumerationBudget.index_bound
 #print axioms PaperP1.DeterminantEnumerationBudget.box_logarithmic_bound
 #print axioms PaperP1.DeterminantEnumerationBudget.boxes_subpolynomial

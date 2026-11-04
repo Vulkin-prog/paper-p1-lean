@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**242 mathematical improvements and one statement-scope correction are confirmed.**
+**243 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -22360,3 +22360,26 @@ This is the local product-margin condition from the original scale and shift, in
 P1-MATH-0243 closes prescribed-scale and polylogarithmic-error absorption in the local determinant degree argument. Final global-box auxiliary assembly, factor-curve counting and short-vector summation remain open. T1.4 and T1.5 stay in progress; coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are242 improvements and one statement-scope correction. No external input, axiom, Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15175 jobs); direct axiom audit passed for 13521 declarations using only propext, Classical.choice and Quot.sound; all 12673 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.94 GiB.
+
+
+## Uniform actual auxiliary curves on every occupied original source-box interval
+
+For positive integer shifts, the actual original source boxes are now assembled into uniformly bounded auxiliary projective curves on every occupied relative interval. The construction assumes no determinant, rank, kernel or solution-count bound. The later curve counts and lattice summations are still unfinished.
+
+DeterminantBoxScales derives all four coordinate bounds from the actual source monomials and the lower bounds c1,c2,D,E,U,V>=1. It proves log(DE)<=log(N)+log(C), and eventually both base logarithmic sizes are at most 3*log(N), with one threshold before every varying box and coefficient. All actual points in the doubled box have coordinates at most 2*C*N.
+
+DeterminantFixedInflation uses the single fixed constant K=16*C/rho. The original source comparisons imply K>=16. At each occupied center s0, the effective products satisfy
+
+  DE <= (2E)^2*s0 <= K^3*DE,
+  UV <= (K*U)^2*t0 <= K^3*UV,
+  t0=(c1/c2)*s0^2.
+
+Thus the same fixed logarithmic comparison constant serves every occupied center, with no moving-coefficient factor. DeterminantSourceBox.Box and Population record only the literal source parameters, box bounds, logarithmic lower bounds and original equation. Their actual coordinate-height, positive-denominator and source-value lower bounds are proved.
+
+DeterminantBoxAuxiliary.uniform_biforms now chooses B,Amax,kappa,N0 before N, the positive integer shift h, the moving coefficients, every box and its entire source population. For the actual rounded M=ceil(N^zeta*exp(logShape)), with fixed 0<zeta<7/16, it proves M>=4 and the exact partition into at most 2M relative intervals. For EACH occupied interval it constructs A in 1..Amax and an actual nonzero integer bihomogeneous equation with bidegrees (A,B), all coefficients bounded by N^kappa, and vanishing at every original integer point in that interval.
+
+All normalized chart assumptions and small-minor inequalities are derived internally from the original source-box comparisons, positive-shift polylogarithmic bound and lower logarithmic size conditions. The coefficient height and degree range are common to all occupied intervals. Coprimality is unnecessary for this auxiliary-construction step. This closes the positive-shift source-box auxiliary construction, not the full solution-count estimate.
+
+P1-MATH-0244 records this completed assembly. General signed-shift transport, factor-height and irreducibility handling, local curve counts and short-vector summations remain open. T1.4 and T1.5 stay in progress; coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are243 improvements and one statement-scope correction. No external input, axiom, Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15183 jobs); direct axiom audit passed for 13531 declarations using only propext, Classical.choice and Quot.sound; all 12686 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.91 GiB.
