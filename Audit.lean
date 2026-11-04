@@ -2772,6 +2772,11 @@ import PaperP1
 #print axioms PaperP1.ActualRelativeDeterminant.rational_matrix_cast
 #print axioms PaperP1.ActualRelativeDeterminant.rational_denominator_cast
 #print axioms PaperP1.ActualRelativeDeterminant.small_of_real_small
+#print axioms PaperP1.ActualSourceArithmetic.signed_population_height
+#print axioms PaperP1.ActualSourceArithmetic.integerPoint_positive
+#print axioms PaperP1.ActualSourceArithmetic.quadratic_valid
+#print axioms PaperP1.ActualSourceArithmetic.linear_valid
+#print axioms PaperP1.ActualSourceArithmetic.uniform_polynomial_height
 #print axioms PaperP1.ActualSourceTranslations.sourceAt_cast
 #print axioms PaperP1.ActualSourceTranslations.sourceAt_mem
 #print axioms PaperP1.ActualSourceTranslations.sourceAt_injective
@@ -6159,6 +6164,9 @@ import PaperP1
 #print axioms PaperP1.ActualReferenceAdmissibility.quadratic_of_bounds
 #print axioms PaperP1.ActualReferenceAdmissibility.uniform_quadratic_probability
 #print axioms PaperP1.ActualReferenceAdmissibility.uniform_hermite_probability
+#print axioms PaperP1.ActualZeroFirstDegreeCount.uniform_sourcePart_count
+#print axioms PaperP1.ActualZeroFirstDegreeCount.uniform_actual_count
+#print axioms PaperP1.ActualZeroFirstDegreeCount.uniform_normalized_actual_count
 #print axioms PaperP1.AdjacentHermiteReferencePhase.uniform_leading_lower
 #print axioms PaperP1.AdjacentHermiteReferencePhase.uniform_probability_gap
 #print axioms PaperP1.AdjacentReferencePhase.exact_gap

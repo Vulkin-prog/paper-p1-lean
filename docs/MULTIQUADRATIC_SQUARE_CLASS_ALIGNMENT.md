@@ -17103,3 +17103,18 @@ The homogeneous second-pair form is pulled back through the actual inverse basis
 P1-MATH-0281 closes the exact one-pair equations and original-point pullbacks for both degree-zero cases. Their remaining numerical Pell/linear fibre application, higher-degree geometric counting and final primitive-scale assembly stay open. T1.4 and T1.5 remain in progress; coverage remains89 proved and72 conditional out of167. There are280 improvements and one statement-scope correction. No new axiom, external input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15391 jobs); direct axiom audit passed for 13908 declarations using only propext, Classical.choice and Quot.sound; all 13136 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.25 GiB.
+
+
+## Unconditional actual first-degree-zero numerical count from the proved Pell fibres
+
+The ACTUAL first-degree-zero auxiliary-factor branch now has an unconditional numerical cardinality bound N^epsilon. Its original source population is counted by the already proved uniform Pell fibres after the exact pullback of P1-MATH-0281.
+
+ActualSourceArithmetic proves literal positivity of all four integer source coordinates and the exact arithmetic Valid conditions for both the quadratic and linear fibre arguments. It proves a common polynomial bound N^2 for both integer source coefficients and all four original coordinates, with a threshold depending only on the fixed source comparison constant C. These bounds are derived from the actual Box inequalities and signed source population; none is assumed as additional moving height data.
+
+ActualZeroFirstDegreeCount takes a common threshold over all second degrees up to the fixed auxiliary bound. The literal zero-filtered original subset retains the original equation, primitive pairs, positivity and the derived polynomial bounds. Its pulled-back second-pair form is homogeneous and nonzero by the actual two-sided inverse basis and chart matrices. Applying the internally proved ZeroDegreeQuadraticFibres count yields N^epsilon, and injectivity of the original integer-point map retains the source cardinality exactly.
+
+The theorem then applies to EVERY first-degree-zero factor in the actual LocalCover. The actual chart-factor count is bounded by the original preimage count, with denominators discharged from LocalCover and the second-degree bound from its actual factor data. A normalized version derives the shift bound from M>=1 and M*abs(h)<=N, which are already proved for the source cover. Thus this actual local branch requires no additional moving polynomial-height or shift premise beyond the constructed normalization.
+
+P1-MATH-0282 closes the first-degree-zero numerical local branch unconditionally. The second-degree-zero linear branch still requires the literal integer source barrier, and higher-degree geometric counting and final primitive-scale assembly remain open. T1.4 and T1.5 remain in progress; coverage remains89 proved and72 conditional out of167. There are281 improvements and one statement-scope correction. No new axiom, external input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15395 jobs); direct axiom audit passed for 13916 declarations using only propext, Classical.choice and Quot.sound; all 13144 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.23 GiB.
