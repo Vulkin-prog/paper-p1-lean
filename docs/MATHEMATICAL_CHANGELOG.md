@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**315 mathematical improvements and two statement-scope corrections are confirmed.**
+**316 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23589,3 +23589,14 @@ The earlier checked integer Sylvester determinant degree bound therefore applies
 P1-MATH-0317 closes the coefficient-uniform degree and rationalization step. It does not yet identify rational points of a non-geometric factor with the counted critical points, and does not yet transport the rational count to the signed primitive projective representatives in NonGeometricBiformInput.Input. Both steps remain explicit obligations. The existing non-geometric input and Heath-Brown input remain ordinary unproved arguments. T1.4 stays conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are315 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15521 jobs); direct axiom audit passed for 14093 declarations using only propext, Classical.choice and Quot.sound; all 13347 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.65 GiB.
+
+
+## Exact signed primitive lift and degree-uniform critical-point population count
+
+The signed primitive projective multiplicity is now counted exactly on the nonzero-denominator chart. The map sends each actual pair of primitive integer pairs to its two rational coordinate ratios. Reusing PrimitiveDirections.primitive_same_direction and equal_ratio_cross, any other primitive pair with the same ratio is the chosen representative or its simultaneous negative. Thus each rational affine point has at most2*2=4 actual signed representatives. The finite source population has cardinality at most four times the cardinality of its actual rational image.
+
+Applying the unconditional rational critical-point bound from P1-MATH-0317 to this image gives #S<=8*degreeX(G)*degreeY(G)^2 for every finite primitive signed population whose actual rational ratios satisfy the rationalized factor equation and its outer-derivative equation. All signs, denominator nonvanishing, image membership and finite fibre multiplicities are explicit. There is no height or box restriction and no assumed source counting bound. The proof reuses the existing project development rather than duplicating its primitive-direction argument.
+
+P1-MATH-0318 closes the primitive multiplicity and numerical critical-population step. The projective equation still needs to be connected to the rationalized affine equation in this reduction, and the implication from non-geometric rational irreducibility to rational singularity remains unproved. NonGeometricBiformInput.Input is therefore still an ordinary unproved argument; the Heath-Brown input is unchanged. T1.4 remains conditional and no preparatory theorem is counted as completed numbered coverage. Coverage remains89 proved and75 conditional out of167 (164 completed). There are316 improvements and two statement-scope corrections. No new ordinary unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15523 jobs); direct axiom audit passed for 14096 declarations using only propext, Classical.choice and Quot.sound; all 13352 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.63 GiB.

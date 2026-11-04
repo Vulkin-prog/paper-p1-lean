@@ -10069,6 +10069,9 @@ import PaperP1
 #print axioms PaperP1.PrimitiveHomogeneousZeros.ratio_is_root
 #print axioms PaperP1.PrimitiveHomogeneousZeros.nonaxis_card
 #print axioms PaperP1.PrimitiveHomogeneousZeros.primitive_card
+#print axioms PaperP1.PrimitiveRationalPointLift.affine_fibre_card
+#print axioms PaperP1.PrimitiveRationalPointLift.card_le_four_image
+#print axioms PaperP1.PrimitiveRationalPointLift.primitive_critical_points_card
 #print axioms PaperP1.ProjectiveCurveCount.good_eq_charts
 #print axioms PaperP1.ProjectiveCurveCount.realSolutions_eq_charts
 #print axioms PaperP1.ProjectiveCurveCount.mem_realSolutions

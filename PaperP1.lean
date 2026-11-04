@@ -3478,3 +3478,4 @@ public import PaperP1.Arithmetic.AdjacentSquarefreeCount
 public import PaperP1.Asymptotics.ActualQuadraticComparisonCounterexample
 public import PaperP1.Algebra.RationalCurveCriticalPoints
 public import PaperP1.Algebra.RationalizedCriticalPointBound
+public import PaperP1.Diophantine.PrimitiveRationalPointLift

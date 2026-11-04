@@ -17871,6 +17871,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "16cde27a2ea803eacdbae3a574726b692f34fcf5"
+    },
+    {
+      "id": "P1-MATH-0318",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The non-geometric source input counts signed primitive pairs, so an affine rational point count must account for their actual finite multiplicity.",
+      "finding": "Each actual nonzero-denominator rational point has at most four signed primitive lifts. Combining this exact multiplicity with the rational critical-point bound yields at most8*a*b^2 critical source representatives, independently of every height.",
+      "proposed_revision": "Retain the actual fourfold signed multiplicity when transporting affine elimination counts to the biform source population, and keep the missing non-geometric singularity implication explicit.",
+      "impact": "Closes the signed primitive counting transport for critical rational populations. The non-geometric ordinary input is not yet discharged and original numbered coverage stays unchanged.",
+      "evidence": [
+        "PaperP1.PrimitiveRationalPointLift.affine_fibre_card",
+        "PaperP1.PrimitiveRationalPointLift.card_le_four_image",
+        "PaperP1.PrimitiveRationalPointLift.primitive_critical_points_card",
+        "PaperP1.PrimitiveRationalPointLift.Point",
+        "PaperP1.PrimitiveRationalPointLift.affine"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15523 jobs); direct axiom audit passed for 14096 declarations using only propext, Classical.choice and Quot.sound; all 13352 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.63 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
