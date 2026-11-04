@@ -2892,3 +2892,8 @@ public import PaperP1.Asymptotics.ExpandedSmoothDegreeOneHostCount
 public import PaperP1.Asymptotics.ExpandedSmoothGeneralHostCount
 public import PaperP1.Asymptotics.ExpandedXNonalignedRootHostCount
 public import PaperP1.Asymptotics.ExpandedXRepeatedLeftRootHostCount
+public import PaperP1.Algebra.ProjectedPreimageRank
+public import PaperP1.Arithmetic.AsymmetricIntersectionTransport
+public import PaperP1.Asymptotics.CompressedNonalignedInteractionMass
+public import PaperP1.Asymptotics.ConnectedCompressedTripleMassUnderInputs
+public import PaperP1.Model.AsymmetricJointWeight

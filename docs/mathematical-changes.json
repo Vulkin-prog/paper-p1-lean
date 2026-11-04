@@ -11075,6 +11075,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "7924d36564bfedd3a6e3e9da926ddf07bcd7ff20"
+    },
+    {
+      "id": "P1-MATH-0163",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:asymmetric",
+        "number": "T1.10",
+        "page": 14,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 811,
+        "statement_sha256": "e176fe0574fc119242f3c523853be4fdc4ff53b0366327c5f6387f1af29c802a"
+      },
+      "original_assumption": "The sharp asymmetric31/24 profile is used above rationally aligned source pairs in the route to the stronger41/30 third-order bound.",
+      "finding": "For every fixed interior channel a<b<2a with coprime a,b, the corrected coarse4/3 profile already proves actual connected triple joint mass N^(-4/3+epsilon). Projection gives genuine effective overlap<=the literal asymmetric preimage loss without new-map injectivity. Positive crossings cost at most2*q_pair*p_new*(2^delta*-1). The exact source weight -2+1/b and new marginal -1 yield -5/3+1/b<=-4/3, including every unit offset and source multiplicity. The aligned complementary sector is already bounded at41/30. This proof uses the existing explicit geometric properties and no31/24 or Reuss7/12 input.",
+      "evidence": [
+        "PaperP1.ProjectedPreimageRank.intersection_le",
+        "PaperP1.AsymmetricIntersectionTransport.intersection_le_loss",
+        "PaperP1.AsymmetricJointWeight.crossing_bound",
+        "PaperP1.AsymmetricJointWeight.compressed_crossing",
+        "PaperP1.CompressedNonalignedInteractionMass.uniform_mass",
+        "PaperP1.ConnectedCompressedTripleMassUnderInputs.uniform_mass"
+      ],
+      "proposed_revision": "Add a separate corrected coarse asymmetric4/3 lemma and its fixed-interior-channel joint-mass consequence for upper estimates at the four-thirds scale. Keep the sharper corrected31/24 lemma wherever the stronger41/30 rate or strict negligibility of third-order activity is required. State the enlarged old-width-dependent alignment radius and all centre-range and multiplicity bridges explicitly.",
+      "impact": "Proof simplification for the coarse four-thirds interior triple sector only. It does not establish the printed41/30 claims of main14.4/14.6 or sharp second-order constants. No numbered coverage promotion.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14355 jobs); direct axiom audit passed for 11812 declarations using only propext, Classical.choice and Quot.sound; all 10444 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.89 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -1474,6 +1474,7 @@ import PaperP1
 #print axioms PaperP1.PrivateRankPeeling.exists_terminal
 #print axioms PaperP1.PrivateRankPeeling.trace_size_bound
 #print axioms PaperP1.PrivateRankPeeling.exists_terminal_real
+#print axioms PaperP1.ProjectedPreimageRank.intersection_le
 #print axioms PaperP1.QuadraticCumulantBound.Data.mono
 #print axioms PaperP1.QuadraticCumulantBound.Data.parameter_bound
 #print axioms PaperP1.QuadraticCumulantBound.Data.moment_bound
@@ -2502,6 +2503,9 @@ import PaperP1
 #print axioms PaperP1.AsymmetricEvenLoss.largeParity_mul
 #print axioms PaperP1.AsymmetricEvenLoss.largeParity_prime_zero
 #print axioms PaperP1.AsymmetricEvenLoss.scaled_two_three
+#print axioms PaperP1.AsymmetricIntersectionTransport.old_image_le
+#print axioms PaperP1.AsymmetricIntersectionTransport.new_map_eq
+#print axioms PaperP1.AsymmetricIntersectionTransport.intersection_le_loss
 #print axioms PaperP1.AsymmetricLossSelections.exists_selections
 #print axioms PaperP1.AsymmetricShiftedWitness.selected_card
 #print axioms PaperP1.AsymmetricShiftedWitness.source_target_separated
@@ -5643,6 +5647,9 @@ import PaperP1
 #print axioms PaperP1.CompressedAsymmetricCoarseProfile.uniform_channel
 #print axioms PaperP1.CompressedChannelTargetCount.fixed_offsets
 #print axioms PaperP1.CompressedChannelTargetCount.uniform_count
+#print axioms PaperP1.CompressedNonalignedInteractionMass.unit_source
+#print axioms PaperP1.CompressedNonalignedInteractionMass.finite_bound
+#print axioms PaperP1.CompressedNonalignedInteractionMass.uniform_mass
 #print axioms PaperP1.CompressedPairIntersectionCount.fixed_offsets
 #print axioms PaperP1.CompressedPairIntersectionCount.uniform_count
 #print axioms PaperP1.CompressedPairMassUnderInputs.uniform_bound
@@ -5673,6 +5680,10 @@ import PaperP1
 #print axioms PaperP1.ConditionalRankTheorem.companion_T21_2
 #print axioms PaperP1.ConnectedBlockCount.uniform_count
 #print axioms PaperP1.ConnectedBoundedNullityTail.uniform_bound
+#print axioms PaperP1.ConnectedCompressedTripleMassUnderInputs.nonaligned_mass_le
+#print axioms PaperP1.ConnectedCompressedTripleMassUnderInputs.finite_cover
+#print axioms PaperP1.ConnectedCompressedTripleMassUnderInputs.finite_mass
+#print axioms PaperP1.ConnectedCompressedTripleMassUnderInputs.uniform_mass
 #print axioms PaperP1.ConnectedFourCoreMassUnderInputs.uniform_bound
 #print axioms PaperP1.ConnectedFourthReductionUnderBCN.uniform_reduction
 #print axioms PaperP1.ConnectedIndependent256Budget.uniform_bound
@@ -8836,6 +8847,10 @@ import PaperP1
 #print axioms PaperP1.AllPairRetainedGeometry.retained_pair_absent
 #print axioms PaperP1.AllPairRetainedGeometry.retained_original_active
 #print axioms PaperP1.AllPairRetainedGeometry.retained_pair_geometry
+#print axioms PaperP1.AsymmetricJointWeight.connected_crossing
+#print axioms PaperP1.AsymmetricJointWeight.upper_bound
+#print axioms PaperP1.AsymmetricJointWeight.crossing_bound
+#print axioms PaperP1.AsymmetricJointWeight.compressed_crossing
 #print axioms PaperP1.BlockJointIntersection.exact_of_positive
 #print axioms PaperP1.BlockJointIntersection.upper_bound
 #print axioms PaperP1.BlockJointIntersection.finite_bound
