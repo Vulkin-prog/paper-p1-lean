@@ -10812,6 +10812,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "c9342dd69f7082f6c71d40d44bd6046936e526d8"
+    },
+    {
+      "id": "P1-MATH-0155",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:limits:vector-reference",
+        "number": "20.1",
+        "page": 60,
+        "source": "main_sections/limits_appendix.tex",
+        "line": 45,
+        "statement_sha256": "fd15ebe1159f165a714eb5337648229bacb982d63e0d76c87f983cdeaf06f6a4"
+      },
+      "original_assumption": "The end of the positional comparison proof, companion_sections/limits_appendix.tex:623 onward, uses uniform boundedness of all fixed moments of the original count to justify the polynomial weights.",
+      "finding": "Every fixed original moment being subpolynomial already suffices. A direct cutoff at R=N^delta, with delta=epsilon/(4*(j+1)) and a fixed q chosen before N with delta*q>=1, transfers the unweighted4/5 rate to the weight (1+totalCount)^j. The original (j+q)-moment is at most N^(epsilon/4), the target moment is uniformly bounded, and all constants are absorbed before the common critical threshold. The required original subpolynomial moments are unconditional. No original exponential moment or uniformity in a growing polynomial degree is used.",
+      "evidence": [
+        "PaperP1.PolynomialWeightTransfer.cutoff_bound",
+        "PaperP1.PositionalMomentBounds.uniform_original",
+        "PaperP1.PositionalMomentBounds.uniform_reference",
+        "PaperP1.PositionalWeightedApproximationUnderInputs.uniform_coefficient_bound",
+        "PaperP1.PositionalGridApproximationUnderInputs.main_20_1"
+      ],
+      "proposed_revision": "Replace the uniform-moment premise in the final weighted-extension paragraph by every fixed moment being N^o(1), citing the unconditional fixed-order propagation bound. Include the explicit cutoff inequality and choose its degree and exponent before N. Keep the geometric inputs of the unweighted comparison explicit.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14027 jobs); direct axiom audit passed for 11180 declarations using only propext, Classical.choice and Quot.sound; all 9714 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.64 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

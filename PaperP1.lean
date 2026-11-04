@@ -2721,3 +2721,15 @@ public import PaperP1.Model.PositionalGroundCoupling
 public import PaperP1.Probability.PositionalTargetExtension
 public import PaperP1.Asymptotics.PositionalRestorationRates
 public import PaperP1.Asymptotics.PositionalFullApproximationUnderInputs
+public import PaperP1.Probability.PositionalCountProjection
+public import PaperP1.Probability.PositionalCountTests
+public import PaperP1.Probability.PositionalCountReference
+public import PaperP1.Probability.HermitePolynomialMoments
+public import PaperP1.Probability.PolynomialWeightTransfer
+public import PaperP1.Probability.PositionalReferenceMoments
+public import PaperP1.Model.PositionalCountMoments
+public import PaperP1.Asymptotics.PositionalMomentBounds
+public import PaperP1.Asymptotics.PositionalWeightedApproximationUnderInputs
+public import PaperP1.Probability.PositionalGroundSupport
+public import PaperP1.Probability.PositionalGrid
+public import PaperP1.Asymptotics.PositionalGridApproximationUnderInputs
