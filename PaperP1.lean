@@ -3099,3 +3099,9 @@ public import PaperP1.Model.PrivatePivotTargetFlip
 public import PaperP1.Model.RawWordObservation
 public import PaperP1.Probability.PositiveForcingCostLower
 public import PaperP1.Probability.UniformLinearObservation
+public import PaperP1.Asymptotics.RawDependenceCount
+public import PaperP1.Asymptotics.RawTwoWindowHostCount
+public import PaperP1.Asymptotics.UniformSubpolynomialPower
+public import PaperP1.Model.RawDependencePairs
+public import PaperP1.Model.RawTwoWindowHosts
+public import PaperP1.Model.RawValueIndependence

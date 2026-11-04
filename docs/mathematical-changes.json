@@ -12371,6 +12371,62 @@
         "status": "not_integrated"
       },
       "validation_commit": "bc15e30fd6cc1e89f21e60ee004beed41a52825a"
+    },
+    {
+      "id": "P1-MATH-0182",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:private-exact",
+        "number": "T19.16",
+        "page": 80,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1214,
+        "statement_sha256": "6baf345eb5567df4010efd0ecbca65dd33af3c09e924d3b13643b928c59b8315"
+      },
+      "original_assumption": "The clean-pair forcing argument discards at most N^(3/2+o(1)) pairs with a full raw relation, including odd selections in either block.",
+      "finding": "Every nonzero unrestricted raw relation has an oriented actual large-kernel anchor. Using cutoff 1/2 and tau=1/2 in the proved finite anchor bound gives 8*B*N*sqrt(3N)*exp(K*sqrt B), uniformly N^(3/2+epsilon) for every moving B<=D*log N. Failure of the actual joint raw-value matrix to be surjective implies such a full parity relation once its cutoff contains all positive observed integers. The same bound covers any two shorter, different word lengths. No even-effective half-count or probabilistic independence premise is used.",
+      "evidence": [
+        "PaperP1.RawDependenceCount.uniform_bound",
+        "PaperP1.RawDependenceCount.uniform_rectangular_bound",
+        "PaperP1.RawTwoWindowHostCount.envelope_nonneg",
+        "PaperP1.RawTwoWindowHostCount.uniform_envelope",
+        "PaperP1.RawTwoWindowHostCount.rpow_three_halves",
+        "PaperP1.RawTwoWindowHostCount.finite_envelope_bound",
+        "PaperP1.RawTwoWindowHostCount.uniform_bound",
+        "PaperP1.UniformSubpolynomialPower.bound",
+        "PaperP1.RawDependencePairs.subset_hosts",
+        "PaperP1.RawDependencePairs.card_le_hosts",
+        "PaperP1.RawDependencePairs.joint_surjective_restrict",
+        "PaperP1.RawDependencePairs.rectangular_subset",
+        "PaperP1.RawDependencePairs.rectangular_card_le_hosts",
+        "PaperP1.RawTwoWindowHosts.nonzero_coordinate",
+        "PaperP1.RawTwoWindowHosts.anchor_cutoff",
+        "PaperP1.RawTwoWindowHosts.related_oriented_anchor",
+        "PaperP1.RawTwoWindowHosts.hosts_subset_anchored",
+        "PaperP1.RawTwoWindowHosts.growthConstant_nonneg",
+        "PaperP1.RawTwoWindowHosts.finite_bound",
+        "PaperP1.RawValueIndependence.surjective_of_injective_relations",
+        "PaperP1.RawValueIndependence.relation_of_zero_functional",
+        "PaperP1.RawValueIndependence.non_surjective_relation",
+        "PaperP1.RawValueIndependence.joint_surjective_of_combined",
+        "PaperP1.RawValueIndependence.joint_non_surjective_related",
+        "PaperP1.RawTwoWindowHostCount.envelope",
+        "PaperP1.RawDependencePairs.badPairs",
+        "PaperP1.RawDependencePairs.rectangularBadPairs",
+        "PaperP1.RawTwoWindowHosts.Related",
+        "PaperP1.RawTwoWindowHosts.hosts",
+        "PaperP1.RawTwoWindowHosts.growthConstant"
+      ],
+      "proposed_revision": "Give the unrestricted raw relation definition and its oriented anchor argument explicitly. State a threshold before all widths B<=D*log N, both actual word lengths and every containing prime cylinder. Distinguish this full raw count from the even effective-space half-count.",
+      "impact": "Discharges the full raw-dependence exceptional-pair count used in T19.16/T19.17. Other arithmetic and asymptotic inputs remain open, and no completed numbered result is added.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14771 jobs); direct axiom audit passed for 12626 declarations using only propext, Classical.choice and Quot.sound; all 11553 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.16 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
