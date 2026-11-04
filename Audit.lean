@@ -2189,6 +2189,10 @@ import PaperP1
 #print axioms PaperP1.DisjointRecoveryParameters.parameter_pow
 #print axioms PaperP1.DisjointRecoveryParameters.one_sub_inv_pow_le_half
 #print axioms PaperP1.DisjointRecoveryParameters.failure_factor_le_half
+#print axioms PaperP1.DyadicReciprocalScaleBounds.tendsto_nu_div_height
+#print axioms PaperP1.DyadicReciprocalScaleBounds.clog_bound
+#print axioms PaperP1.DyadicReciprocalScaleBounds.logarithmic_prefactor
+#print axioms PaperP1.DyadicReciprocalScaleBounds.small_pivot_negligible
 #print axioms PaperP1.ElementaryLogGrowth.log_le_two_sqrt
 #print axioms PaperP1.ElementaryLogGrowth.thirtyTwo_mul_log_le
 #print axioms PaperP1.ElementaryLogGrowth.square_le_four_mul_exp
@@ -2348,6 +2352,9 @@ import PaperP1
 #print axioms PaperP1.RealSeriesEvaluation.geometric_summability
 #print axioms PaperP1.RealSeriesTail.geometric_tail
 #print axioms PaperP1.RealSeriesTail.constant_tail
+#print axioms PaperP1.ReciprocalOddPivotDyadicScale.nu_shift_bound
+#print axioms PaperP1.ReciprocalOddPivotDyadicScale.uniform_dyadic_sandwich
+#print axioms PaperP1.ReciprocalOddPivotDyadicScale.companion_T19_15
 #print axioms PaperP1.ReciprocalOddPivotFullScale.uniform_full_sandwich
 #print axioms PaperP1.ReciprocalOddPivotUpper.finite_small_part_bound
 #print axioms PaperP1.ReciprocalOddPivotUpper.uniform_finite_upper

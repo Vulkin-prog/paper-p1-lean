@@ -3,7 +3,13 @@
 Source: Lemma T19.15, page79, `p1:limits:reciprocal`,
 `companion_sections/limits_appendix.tex:1138`.
 Statement SHA-256: `50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816`.
-Original bytes are preserved. Status: **in progress**.
+Original bytes are preserved. Current status: **complete conditionally on EIPInput (P1-MATH-0223)**.
+
+The current complete proof is recorded in [the full and dyadic alignment](COMPLETE_RECIPROCAL_PIVOT_ALIGNMENT.md). Actual implicit saddle construction, exact additive second-scale expansion, uniform floor-sensitive square-part transport and both actual reciprocal-pivot populations are now covered. The sole unformalized input is the ordinary largest-prime-factor reciprocal theorem EIPInput. This does not assert an unconditional Lean proof of that classical theorem.
+
+## Historical finite-only checkpoint P1-MATH-0086
+
+The following account preserves the earlier checkpoint and its then-open obligations.
 
 The finite arithmetic reduction of companionT19.15 is proved for the
 actual largest prime with odd valuation, including the prime2. Its

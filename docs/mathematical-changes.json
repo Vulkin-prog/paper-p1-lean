@@ -14269,6 +14269,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "f01daaab43c335315eb94a4ad3d506162ce64019"
+    },
+    {
+      "id": "P1-MATH-0223",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "Companion T19.15 states the same precise logarithmic scale for the full and dyadic reciprocal odd-pivot sums.",
+      "finding": "Both actual sums satisfy the complete epsilon sandwich with one threshold, derived from the sole ordinary classical input; exact dyadic preimages, small-pivot deletion and scale transfer are internal.",
+      "proposed_revision": "Give the actual finite dyadic transfer, prove both losses negligible and identify the ordinary classical theorem as the only remaining unformalized analytic premise.",
+      "impact": "Completes T19.15 conditionally, bringing coverage to89 proved and71 conditional results with seven incomplete numbered obligations.",
+      "evidence": [
+        "PaperP1.DyadicReciprocalScaleBounds.tendsto_nu_div_height",
+        "PaperP1.DyadicReciprocalScaleBounds.clog_bound",
+        "PaperP1.DyadicReciprocalScaleBounds.logarithmic_prefactor",
+        "PaperP1.DyadicReciprocalScaleBounds.small_pivot_negligible",
+        "PaperP1.ReciprocalOddPivotDyadicScale.nu_shift_bound",
+        "PaperP1.ReciprocalOddPivotDyadicScale.uniform_dyadic_sandwich",
+        "PaperP1.ReciprocalOddPivotDyadicScale.companion_T19_15"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15047 jobs); direct axiom audit passed for 13242 declarations using only propext, Classical.choice and Quot.sound; all 12321 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.35 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

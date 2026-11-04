@@ -3241,3 +3241,5 @@ public import PaperP1.Analysis.OrdinaryReciprocalPrimeInput
 public import PaperP1.Analysis.ReciprocalOddPivotFullScale
 public import PaperP1.Analysis.ReciprocalOddPivotUpper
 public import PaperP1.Arithmetic.SquarePartLogGeometry
+public import PaperP1.Analysis.DyadicReciprocalScaleBounds
+public import PaperP1.Analysis.ReciprocalOddPivotDyadicScale
