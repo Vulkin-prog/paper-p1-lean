@@ -13405,6 +13405,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "e0ba982f24788e6daa47df861c8b651776e8df0c"
+    },
+    {
+      "id": "P1-MATH-0205",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "The proof of companion T21.1 says that the height-one channel has no exact units for separated windows and that its residual cost is M^(1+o(1)).",
+      "finding": "For every actual ordered separated1:1 macroscopic pair, the exact unit set is empty and the rational weight is zero. Its original pair mask has at most5*M*(L+1) hosts. Summing the internally proved zero-unit actual powers yields M^(1+epsilon) for the positive relation weights and the sum of absolute signed Boolean affine weights.",
+      "proposed_revision": "State the exact empty-unit criterion using the complete window labels, record the literal linear-times-width host bound, and apply the zero-unit power estimate before summing. The signed estimate should be stated in absolute value.",
+      "impact": "Completes the local separated height-one error estimate in the macroscopic proof of T21.1. It does not finish the global rational-code decomposition, translation asymptotics or dyadic positive profile.",
+      "evidence": [
+        "PaperP1.SeparatedNormalizedUnits.units_empty",
+        "PaperP1.SeparatedNormalizedUnits.rational_weight_zero",
+        "PaperP1.MacroscopicSeparatedHeightOne.subset_bounded",
+        "PaperP1.MacroscopicSeparatedHeightOne.card_bound",
+        "PaperP1.MacroscopicSeparatedHeightOne.units_card_zero",
+        "PaperP1.MacroscopicSeparatedHeightOne.uniform_power_sum",
+        "PaperP1.MacroscopicSeparatedHeightOne.uniform_weights",
+        "PaperP1.MacroscopicSeparatedHeightOne.pairs"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14937 jobs); direct axiom audit passed for 12927 declarations using only propext, Classical.choice and Quot.sound; all 11944 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.72 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

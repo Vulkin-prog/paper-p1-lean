@@ -3186,3 +3186,5 @@ public import PaperP1.Asymptotics.MacroscopicHighRelationMass
 public import PaperP1.Asymptotics.MacroscopicRelationPowers
 public import PaperP1.Arithmetic.PrivateNormalizedPairLoss
 public import PaperP1.Asymptotics.MacroscopicFixedChannelComparison
+public import PaperP1.Arithmetic.SeparatedNormalizedUnits
+public import PaperP1.Asymptotics.MacroscopicSeparatedHeightOne

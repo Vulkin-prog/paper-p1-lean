@@ -4675,6 +4675,8 @@ import PaperP1
 #print axioms PaperP1.SelectedWindowAdmissibility.selected_values_subset
 #print axioms PaperP1.SelectedWindowAdmissibility.admissible_mono
 #print axioms PaperP1.SelectedWindowAdmissibility.admissible
+#print axioms PaperP1.SeparatedNormalizedUnits.units_empty
+#print axioms PaperP1.SeparatedNormalizedUnits.rational_weight_zero
 #print axioms PaperP1.SeparatedPacking.ceil_ratio_eq
 #print axioms PaperP1.SeparatedPacking.card_separated_interval
 #print axioms PaperP1.SeparatedTargetMatches.match_bound
@@ -6883,6 +6885,11 @@ import PaperP1
 #print axioms PaperP1.MacroscopicRelationPowers.uniform_rational_units
 #print axioms PaperP1.MacroscopicRelationPowers.uniform_rational_height
 #print axioms PaperP1.MacroscopicRootLogScale.root_band
+#print axioms PaperP1.MacroscopicSeparatedHeightOne.subset_bounded
+#print axioms PaperP1.MacroscopicSeparatedHeightOne.card_bound
+#print axioms PaperP1.MacroscopicSeparatedHeightOne.units_card_zero
+#print axioms PaperP1.MacroscopicSeparatedHeightOne.uniform_power_sum
+#print axioms PaperP1.MacroscopicSeparatedHeightOne.uniform_weights
 #print axioms PaperP1.ManyPlanarSquareProducts.primitive_mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.uniform_natural

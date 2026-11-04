@@ -22295,3 +22295,20 @@ For the positive weights 2^rho-1, the absolute difference of the actual two tota
 At the leading 1:2 channel the full/rational error is at most M^(1+epsilon). The general fixed-height statement also supplies the exponent needed for height-three comparisons. P1-MATH-0204 records this improvement. T21.1 remains in progress: separated height-one bounds, actual positive/signed translation sums, parity equivalents and the dyadic positive assembly are still open. Coverage remains 88 proved and 70 conditional out of 167, with nine incomplete results. There are now 203 improvements and one statement-scope correction. No external input, kernel axiom, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14933 jobs); direct axiom audit passed for 12920 declarations using only propext, Classical.choice and Quot.sound; all 11936 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.73 GiB.
+
+
+## Literal separated height-one positive and absolute signed profiles
+
+Stable ID: P1-MACROSCOPIC-SEPARATED-HEIGHT-ONE. Exact separated empty-unit criterion and literal actual positive/absolute signed height-one profile bounds are proved internally. No external input.
+
+The height-one part of companion T21.1 is now bounded on the literal ordered separated macroscopic domain. SeparatedNormalizedUnits proves that the exact1:1 unit set is empty whenever the roots have natural distance greater than L. This uses the original complete-vertex labels and applies to every positive pair of roots. Its rational relation weight is exactly zero.
+
+MacroscopicSeparatedHeightOne defines the actual enlarged1:1 geometric channel with the printed separation restriction. Its original ordered pair mask has at most5*M*(L+1) hosts, proved by the exact bounded-source geometric count. The previously proved zero-unit full relation bound gives 2^rho<=M^(epsilon/2) pointwise. Absorbing the literal width factor proves
+
+  sum_separated_height_one 2^rho <= M^(1+epsilon).
+
+Consequently the actual positive weight sum is at most M^(1+epsilon). For EVERY Boolean affine-compatibility function on these pairs, the sum of ABSOLUTE weights |eta*2^rho-1| has the same bound. Both root orders are included directly in the finite mask. No signed cancellation or identification of affine compatibility with a nominal phase is assumed.
+
+P1-MATH-0205 records this internal separated height-one estimate. Together with the high-height bound and the fixed-height full/rational comparison, it supplies the three local arithmetic error estimates used in the macroscopic proof. The global rational-code channel partition, actual positive/signed translation sums, parity equivalents and dyadic positive assembly still need to be completed. T21.1 remains in progress. Coverage stays88 proved and70 conditional out of167, with nine incomplete results. There are204 improvements and one statement-scope correction. No external input, new axiom, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14937 jobs); direct axiom audit passed for 12927 declarations using only propext, Classical.choice and Quot.sound; all 11944 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.72 GiB.

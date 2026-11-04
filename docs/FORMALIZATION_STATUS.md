@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records203 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records204 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **12920 audited theorem/lemma declarations**. This
+- The project currently has **12927 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22412,3 +22412,18 @@ For the positive weights 2^rho-1, the absolute difference of the actual two tota
 At the leading 1:2 channel the full/rational error is at most M^(1+epsilon). The general fixed-height statement also supplies the exponent needed for height-three comparisons. P1-MATH-0204 records this improvement. T21.1 remains in progress: separated height-one bounds, actual positive/signed translation sums, parity equivalents and the dyadic positive assembly are still open. Coverage remains 88 proved and 70 conditional out of 167, with nine incomplete results. There are now 203 improvements and one statement-scope correction. No external input, kernel axiom, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14933 jobs); direct axiom audit passed for 12920 declarations using only propext, Classical.choice and Quot.sound; all 11936 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.73 GiB.
+
+
+## Literal separated height-one positive and absolute signed profiles
+
+The height-one part of companion T21.1 is now bounded on the literal ordered separated macroscopic domain. SeparatedNormalizedUnits proves that the exact1:1 unit set is empty whenever the roots have natural distance greater than L. This uses the original complete-vertex labels and applies to every positive pair of roots. Its rational relation weight is exactly zero.
+
+MacroscopicSeparatedHeightOne defines the actual enlarged1:1 geometric channel with the printed separation restriction. Its original ordered pair mask has at most5*M*(L+1) hosts, proved by the exact bounded-source geometric count. The previously proved zero-unit full relation bound gives 2^rho<=M^(epsilon/2) pointwise. Absorbing the literal width factor proves
+
+  sum_separated_height_one 2^rho <= M^(1+epsilon).
+
+Consequently the actual positive weight sum is at most M^(1+epsilon). For EVERY Boolean affine-compatibility function on these pairs, the sum of ABSOLUTE weights |eta*2^rho-1| has the same bound. Both root orders are included directly in the finite mask. No signed cancellation or identification of affine compatibility with a nominal phase is assumed.
+
+P1-MATH-0205 records this internal separated height-one estimate. Together with the high-height bound and the fixed-height full/rational comparison, it supplies the three local arithmetic error estimates used in the macroscopic proof. The global rational-code channel partition, actual positive/signed translation sums, parity equivalents and dyadic positive assembly still need to be completed. T21.1 remains in progress. Coverage stays88 proved and70 conditional out of167, with nine incomplete results. There are204 improvements and one statement-scope correction. No external input, new axiom, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14937 jobs); direct axiom audit passed for 12927 declarations using only propext, Classical.choice and Quot.sound; all 11944 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.72 GiB.
