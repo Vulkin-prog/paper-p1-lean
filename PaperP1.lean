@@ -3360,3 +3360,6 @@ public import PaperP1.Asymptotics.RelativeIntervalNonAxisCount
 public import PaperP1.Analysis.FiniteSquareTail
 public import PaperP1.Asymptotics.RelativeIntervalNonAxisSum
 public import PaperP1.Asymptotics.RelativeIntervalSideSum
+public import PaperP1.Arithmetic.QuadraticGridWeights
+public import PaperP1.Arithmetic.QuadraticIntervalGrid
+public import PaperP1.Asymptotics.DoubledDeterminantScale

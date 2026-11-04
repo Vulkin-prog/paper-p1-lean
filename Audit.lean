@@ -4912,6 +4912,17 @@ import PaperP1
 #print axioms PaperP1.ProjectedWindowLists.one_fibre_count
 #print axioms PaperP1.ProjectedWindowLists.pair_fibre_count
 #print axioms PaperP1.ProjectedWindowLists.zero_card
+#print axioms PaperP1.QuadraticGridWeights.image_subset
+#print axioms PaperP1.QuadraticGridWeights.weighted_sum_bound
+#print axioms PaperP1.QuadraticIntervalGrid.same_grid_square_gaps
+#print axioms PaperP1.QuadraticIntervalGrid.same_grid_close
+#print axioms PaperP1.QuadraticIntervalGrid.fibre_card
+#print axioms PaperP1.QuadraticIntervalGrid.grid_upper
+#print axioms PaperP1.QuadraticIntervalGrid.grid_lower
+#print axioms PaperP1.QuadraticIntervalGrid.remainder_identity
+#print axioms PaperP1.QuadraticIntervalGrid.grid_error
+#print axioms PaperP1.QuadraticIntervalGrid.quadratic_grid_error
+#print axioms PaperP1.QuadraticIntervalGrid.scaled_center_error
 #print axioms PaperP1.RankinSmallKernel.truncatedKernel_eq_floor
 #print axioms PaperP1.RankinSmallKernel.mem_values
 #print axioms PaperP1.RankinSmallKernel.values_eq_natural
@@ -6701,6 +6712,7 @@ import PaperP1
 #print axioms PaperP1.DivisorAuxiliaryPolynomialUniform.choose_degree
 #print axioms PaperP1.DivisorAuxiliaryPolynomialUniform.uniform_height
 #print axioms PaperP1.DivisorAuxiliaryPolynomialUniform.uniform_polynomial
+#print axioms PaperP1.DoubledDeterminantScale.uniform_doubled_admissible
 #print axioms PaperP1.DyadicActualSectorPowers.uniform_high
 #print axioms PaperP1.DyadicActualSectorPowers.high_height_four
 #print axioms PaperP1.DyadicActualSectorPowers.boundary

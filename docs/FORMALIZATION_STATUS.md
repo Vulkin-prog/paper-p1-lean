@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records259 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records260 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13772 audited theorem/lemma declarations**. This
+- The project currently has **13784 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23495,3 +23495,28 @@ where L(k)=4/|T_k*z(k)| uses the actual source lattice matrix. The threshold pre
 P1-MATH-0260 completes the actual first-lattice interval arithmetic and its weighted side summation. Remaining work concerns the second lattice and its coefficient-uniform quadratic regridding, the geometric local curve counts, and remaining uniform primitive-scale assembly before the final solution-count theorem. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are259 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15281 jobs); direct axiom audit passed for 13772 declarations using only propext, Classical.choice and Quot.sound; all 12973 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.63 GiB.
+
+
+## Actual quadratic regridding with multiplicity two and admissible doubled scale
+
+The actual quadratic grid needed for the second lattice now has a proved coefficient-independent multiplicity bound, range, rounding error and weighted transfer. The doubled determinant scale remains uniformly admissible by direct reuse of the existing scale theorem.
+
+QuadraticIntervalGrid defines the actual integer grid q=floor(k^2/M). Exact integer quotient/remainder identities show that equal grid values have squared indices differing by less than M. When both indices satisfy k>=M/4, equal grid values force the indices to differ by at most one. Consequently EVERY finite grid fibre has cardinality at most TWO, independently of M or the moving coefficients.
+
+For M>=32 and M/4<=k<=2M, the actual grid lies in the range
+
+  M<=32*q, q<=4*M.
+
+The exact remainder proves 0<=k^2/M-q<1, hence
+
+  0<=(k/M)^2-q/M<=1/M.
+
+Multiplying by any nonnegative real coefficient r gives the actual quadratic-center error at most r/M. This is precisely the form needed to retain coefficient uniformity in the vertical lattice normalization.
+
+QuadraticGridWeights gives the literal finite image range and proves that every nonnegative weight sum over original interval indices is at most twice the corresponding sum over actual grid indices. This uses the proved fibre cardinality; no bounded-multiplicity estimate is supplied as an input.
+
+DoubledDeterminantScale reuses the already proved DeterminantHorizontalScale.uniform_admissible theorem with the doubled shift bound. A single threshold BEFORE N, the shift, moving coefficients and source box gives 2*M*|h|<=N and 2*M<=N for the ACTUAL rounded determinant scale, without changing that scale. Thus the second-lattice reparametrization M'=2M remains admissible. No new asymptotic scale theorem is assumed.
+
+P1-MATH-0261 closes the arithmetic quadratic regridding, its multiplicity/weight transfer and the doubled-scale admissibility required by the second lattice. The actual vertical point normalization and second-lattice coordinate/sum assembly, geometric curve counts and remaining primitive scale assembly remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are260 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15287 jobs); direct axiom audit passed for 13784 declarations using only propext, Classical.choice and Quot.sound; all 12986 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.61 GiB.
