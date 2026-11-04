@@ -3247,3 +3247,6 @@ public import PaperP1.Analysis.SaddlePowerErrors
 public import PaperP1.Arithmetic.CleanBoundaryReciprocal
 public import PaperP1.Asymptotics.CleanBoundaryReciprocalLower
 public import PaperP1.Asymptotics.SignedSaddleCostLower
+public import PaperP1.Asymptotics.SignedPrescribedSaddleLower
+public import PaperP1.Asymptotics.SignedSaddleCriticalLower
+public import PaperP1.Asymptotics.SignedSaddleExcess

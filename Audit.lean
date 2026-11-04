@@ -7953,7 +7953,15 @@ import PaperP1
 #print axioms PaperP1.SignedChannelPhaseLimit.weighted_linear_identity
 #print axioms PaperP1.SignedChannelPhaseLimit.tendsto_height_normalized
 #print axioms PaperP1.SignedDyadicCostLower.uniform_actual_lower
+#print axioms PaperP1.SignedPrescribedSaddleLower.uniform_actual_lower
+#print axioms PaperP1.SignedPrescribedSaddleLower.uniform_power_obstruction
 #print axioms PaperP1.SignedSaddleCostLower.uniform_actual_lower
+#print axioms PaperP1.SignedSaddleCriticalLower.lowerConstant_pos
+#print axioms PaperP1.SignedSaddleCriticalLower.critical_prefactor
+#print axioms PaperP1.SignedSaddleCriticalLower.uniform_actual_lower
+#print axioms PaperP1.SignedSaddleExcess.widthConstant_pos
+#print axioms PaperP1.SignedSaddleExcess.uniform_small
+#print axioms PaperP1.SignedSaddleExcess.uniform_width
 #print axioms PaperP1.SignedSeparatedSourceProfileUnderInputs.article_3_3_signed
 #print axioms PaperP1.SignedSourceProfileUnderInputs.scaled_mainTerm
 #print axioms PaperP1.SignedSourceProfileUnderInputs.unscale

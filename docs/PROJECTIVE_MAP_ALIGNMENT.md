@@ -15290,3 +15290,18 @@ This holds uniformly over EVERY L,E with maximal width at most D*log N and L>=1.
 P1-MATH-0224 records the restored source mass and actual signed forcing minorant. Critical-band normalization, the prescribed moving excess cutoff, the full-value weighted upper profile and the final logarithmic cost equivalent remain to be assembled; T19.16 stays in progress. Coverage remains89 proved and71 conditional out of167, with seven incomplete numbered results. There are223 improvements and one statement-scope correction. No new external input beyond EIPInput, new axiom, additional Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15055 jobs); direct axiom audit passed for 13251 declarations using only propext, Classical.choice and Quot.sound; all 12331 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.32 GiB.
+
+
+## Exact prescribed signed forcing lower scale and nonpower obstruction
+
+The full lower-bound and nonpower-obstruction direction of companion T19.16 is now proved for the exact signed forcing and the exact prescribed moving excess cutoff E=ceil(3V_N/log2).
+
+SignedSaddleCriticalLower proves a positive uniform lower bound for the literal signed mark prefactor p0^2*N^2/4 throughout every critical band. Its constant is explicit and positive. The constant is absorbed at the diverging actual second scale, giving cost>=exp(-2V_N-epsilon*nu_N) for every logarithmic maximal width.
+
+SignedSaddleExcess defines the exact natural excess cutoff from the manuscript. The ceiling error is retained. For every eta>0, E+1<=eta*log N after a threshold. The critical length and moving excess therefore give one uniform logarithmic maximal-width bound. No bounded excess or fixed critical shift is substituted.
+
+SignedPrescribedSaddleLower applies that width theorem to the original specified forcing. For every epsilon>0, one threshold precedes every critical length and the original signed cost is at least exp(-2V_N-epsilon*nu_N). The same theorem then proves the precise power obstruction: for EVERY alpha>0 and K>0, eventually cost>=K*N^(-alpha), uniformly over critical lengths. This statement concerns the positive coordinate cost of this specified forcing only; no lower bound for dependence, total variation or a cancelled scalar cost is inferred.
+
+P1-MATH-0225 records the exact critical normalization, prescribed excess and power obstruction. The sharp lower direction of T19.16 is complete under the sole ordinary EIPInput. Its full-value weighted upper profile and final upper-cost assembly remain open, so T19.16 stays in progress. Coverage remains89 proved and71 conditional out of167, with seven incomplete numbered results. There are224 improvements and one statement-scope correction. No additional external input, new axiom, additional Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15061 jobs); direct axiom audit passed for 13259 declarations using only propext, Classical.choice and Quot.sound; all 12342 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.30 GiB.

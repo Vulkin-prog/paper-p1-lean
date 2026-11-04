@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and71 conditional. The project records223 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and71 conditional. The project records224 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13251 audited theorem/lemma declarations**. This
+- The project currently has **13259 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22770,3 +22770,18 @@ This holds uniformly over EVERY L,E with maximal width at most D*log N and L>=1.
 P1-MATH-0224 records the restored source mass and actual signed forcing minorant. Critical-band normalization, the prescribed moving excess cutoff, the full-value weighted upper profile and the final logarithmic cost equivalent remain to be assembled; T19.16 stays in progress. Coverage remains89 proved and71 conditional out of167, with seven incomplete numbered results. There are223 improvements and one statement-scope correction. No new external input beyond EIPInput, new axiom, additional Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15055 jobs); direct axiom audit passed for 13251 declarations using only propext, Classical.choice and Quot.sound; all 12331 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.32 GiB.
+
+
+## Exact prescribed signed forcing lower scale and nonpower obstruction
+
+The full lower-bound and nonpower-obstruction direction of companion T19.16 is now proved for the exact signed forcing and the exact prescribed moving excess cutoff E=ceil(3V_N/log2).
+
+SignedSaddleCriticalLower proves a positive uniform lower bound for the literal signed mark prefactor p0^2*N^2/4 throughout every critical band. Its constant is explicit and positive. The constant is absorbed at the diverging actual second scale, giving cost>=exp(-2V_N-epsilon*nu_N) for every logarithmic maximal width.
+
+SignedSaddleExcess defines the exact natural excess cutoff from the manuscript. The ceiling error is retained. For every eta>0, E+1<=eta*log N after a threshold. The critical length and moving excess therefore give one uniform logarithmic maximal-width bound. No bounded excess or fixed critical shift is substituted.
+
+SignedPrescribedSaddleLower applies that width theorem to the original specified forcing. For every epsilon>0, one threshold precedes every critical length and the original signed cost is at least exp(-2V_N-epsilon*nu_N). The same theorem then proves the precise power obstruction: for EVERY alpha>0 and K>0, eventually cost>=K*N^(-alpha), uniformly over critical lengths. This statement concerns the positive coordinate cost of this specified forcing only; no lower bound for dependence, total variation or a cancelled scalar cost is inferred.
+
+P1-MATH-0225 records the exact critical normalization, prescribed excess and power obstruction. The sharp lower direction of T19.16 is complete under the sole ordinary EIPInput. Its full-value weighted upper profile and final upper-cost assembly remain open, so T19.16 stays in progress. Coverage remains89 proved and71 conditional out of167, with seven incomplete numbered results. There are224 improvements and one statement-scope correction. No additional external input, new axiom, additional Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15061 jobs); direct axiom audit passed for 13259 declarations using only propext, Classical.choice and Quot.sound; all 12342 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.30 GiB.
