@@ -3273,3 +3273,5 @@ public import PaperP1.Asymptotics.SignedSaddleCostUpper
 public import PaperP1.Analysis.DeterminantTwoKernelExponents
 public import PaperP1.Arithmetic.TwoKernelDeterminantBoxes
 public import PaperP1.Arithmetic.TwoKernelDeterminantScale
+public import PaperP1.Arithmetic.DeterminantPrimitiveReduction
+public import PaperP1.Asymptotics.DeterminantEnumerationBudget

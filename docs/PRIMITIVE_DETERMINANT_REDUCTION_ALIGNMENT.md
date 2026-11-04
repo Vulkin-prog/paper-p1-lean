@@ -1,0 +1,13 @@
+# Exact two-pair primitive reduction and complete subpolynomial enumeration budget
+
+Source: companion T1.4 and T1.5, companion_sections/arithmetic_appendix.tex:139 and:360, Step1 and the final enumeration. Primary reference scope checked against [Reuss, Theorem1, arXiv:1212.3150v2](https://arxiv.org/pdf/1212.3150v2), page2: the moving-coefficient extension remains a separate proof obligation. Original source hashes remain preserved.
+
+The primitive-reduction and enumeration steps behind companion T1.4 and T1.5 are now proved on the actual variable-coefficient equation, without using a determinant solution bound.
+
+DeterminantPrimitiveReduction defines both actual gcds, their scale s=g^2*q and the coordinatewise reduced tuple. Every original tuple reconstructs exactly. Both coefficient monomials factor by the same s; the equation therefore proves s divides the actual shift h. Dividing gives the exact reduced equation with the original coefficients unchanged and shift h/s. For positive tuples both reduced pairs are primitive, every coordinate remains positive and the new shift lies between1 and h.
+
+The possible actual gcd pairs belong to a literal finite population with g^2*q dividing h. Its cardinality is at most h^2. On every fixed gcd fibre the reduction map is injective. A finite cover therefore bounds the original actual solution population by the sum of the actual reduced-image populations over just these possible gcd pairs. No multiplicity, primitive-fibre probability or target count is assumed.
+
+DeterminantEnumerationBudget proves the exact dyadic index bound, a fourth-power logarithmic bound for the actual boxes at any fixed positive height multiple Q*N, and a uniform subpolynomial bound for the actual primitive-reduction population at every polylogarithmic shift. The two smooth-support choices, every actual dyadic box and every actual primitive reduction together have at most N^epsilon possibilities. One threshold precedes every allowed prime cutoff H and every allowed shift h. All fixed real logarithmic exponents and arbitrary positive error margins are retained.
+
+P1-MATH-0233 records this complete finite reduction and uniform choice budget. The determinant auxiliary extraction, remaining local curve counts and short-vector sums remain open, so T1.4 and T1.5 stay in progress. The cited fixed-coefficient result is not being substituted for the manuscript's moving-coefficient extension. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are232 improvements and one statement-scope correction. No new external input, axiom, Paper C code port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
