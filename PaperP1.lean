@@ -2836,3 +2836,10 @@ public import PaperP1.Arithmetic.ShiftedAlignmentRadius
 public import PaperP1.Arithmetic.ShiftedAsymmetricPopulation
 public import PaperP1.Asymptotics.AsymmetricAlignmentScopeObstruction
 public import PaperP1.Asymptotics.ShiftedAsymmetricCriticalFamily
+public import PaperP1.Arithmetic.EnlargedGridAlignment
+public import PaperP1.Asymptotics.EnlargedDegreeOneRootHostCount
+public import PaperP1.Asymptotics.EnlargedNonalignedRootHostCount
+public import PaperP1.Asymptotics.EnlargedOffsetRegime
+public import PaperP1.Asymptotics.EnlargedRootPatterns
+public import PaperP1.Asymptotics.EnlargedSmoothDegreeOneHostCount
+public import PaperP1.Asymptotics.EnlargedSmoothGeneralHostCount

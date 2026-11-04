@@ -3106,6 +3106,10 @@ import PaperP1
 #print axioms PaperP1.EnlargedEndpointTriplePool.pool_card
 #print axioms PaperP1.EnlargedEndpointTriplePool.families_card
 #print axioms PaperP1.EnlargedEndpointTriplePool.source_mem_families
+#print axioms PaperP1.EnlargedGridAlignment.radius_mono
+#print axioms PaperP1.EnlargedGridAlignment.of_grid
+#print axioms PaperP1.EnlargedGridAlignment.of_affine_grid
+#print axioms PaperP1.EnlargedGridAlignment.of_exact_match
 #print axioms PaperP1.EnlargedPairGeometry.geometric_swap
 #print axioms PaperP1.EnlargedPairGeometry.union_swap
 #print axioms PaperP1.EnlargedPairGeometry.offset_abs
@@ -5823,6 +5827,8 @@ import PaperP1
 #print axioms PaperP1.EnlargedAllAlignedTargetTripleMass.all_actual_sources
 #print axioms PaperP1.EnlargedAllAlignedTargetTripleMass.mass_le_sum
 #print axioms PaperP1.EnlargedAllAlignedTargetTripleMass.uniform_mass
+#print axioms PaperP1.EnlargedDegreeOneRootHostCount.uniform_hosts
+#print axioms PaperP1.EnlargedDegreeOneRootHostCount.uniform_hosts_of_many
 #print axioms PaperP1.EnlargedEndpointAlignedTripleMass.hosts_card
 #print axioms PaperP1.EnlargedEndpointAlignedTripleMass.host_data
 #print axioms PaperP1.EnlargedEndpointAlignedTripleMass.source_mem_hosts
@@ -5839,6 +5845,8 @@ import PaperP1
 #print axioms PaperP1.EnlargedInteriorAlignedTripleMass.all_actual_sources
 #print axioms PaperP1.EnlargedInteriorAlignedTripleMass.mass_le_sum
 #print axioms PaperP1.EnlargedInteriorAlignedTripleMass.uniform_mass
+#print axioms PaperP1.EnlargedNonalignedRootHostCount.uniform_hosts
+#print axioms PaperP1.EnlargedOffsetRegime.uniform_widths
 #print axioms PaperP1.EnlargedPhysicalTargetTripleMass.hosts_card
 #print axioms PaperP1.EnlargedPhysicalTargetTripleMass.host_data
 #print axioms PaperP1.EnlargedPhysicalTargetTripleMass.source_mem_hosts
@@ -5846,6 +5854,16 @@ import PaperP1
 #print axioms PaperP1.EnlargedPhysicalTargetTripleMass.uniform_count
 #print axioms PaperP1.EnlargedPhysicalTargetTripleMass.uniform_mass
 #print axioms PaperP1.EnlargedPhysicalTargetTripleProbability.uniform_point_bound
+#print axioms PaperP1.EnlargedRootPatterns.polynomial_offset_factor
+#print axioms PaperP1.EnlargedRootPatterns.general_offsets
+#print axioms PaperP1.EnlargedRootPatterns.linear_offsets
+#print axioms PaperP1.EnlargedRootPatterns.general_pool
+#print axioms PaperP1.EnlargedRootPatterns.linear_pool
+#print axioms PaperP1.EnlargedRootPatterns.cutoff_height
+#print axioms PaperP1.EnlargedRootPatterns.general_coefficient_height
+#print axioms PaperP1.EnlargedRootPatterns.linear_coefficient_height
+#print axioms PaperP1.EnlargedSmoothDegreeOneHostCount.uniform_hosts
+#print axioms PaperP1.EnlargedSmoothGeneralHostCount.uniform_hosts
 #print axioms PaperP1.EnlargedSourceTargetResidual.row_rank_sublinear
 #print axioms PaperP1.ErasedCountMeanUnderInputs.uniform_positive
 #print axioms PaperP1.ErasedCountMeanUnderInputs.uniform_error
