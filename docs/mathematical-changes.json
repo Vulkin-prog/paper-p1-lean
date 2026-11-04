@@ -13232,6 +13232,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "e469cf6db622aea2032ac474a323c05144f1f0b0"
+    },
+    {
+      "id": "P1-MATH-0201",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "The proof of T21.1 bounds the fixed-height hosts where a normalized window contains an actual defective integer, including residual pairs with zero exact units.",
+      "finding": "The original ordered enlarged-alignment pairs containing any defective normalized value inject into a finite geometric-residual and positive-defect-value code. The exact quadratic word-width prefactor is proved. Global defect estimates and logarithmic absorption give the actual M^(1/2+epsilon) host count on the entire bounded source interval and then on the literal macroscopic interval, with a common threshold preceding every positive lower-endpoint exponent delta.",
+      "proposed_revision": "Use the actual geometric residual and defective normalized value as the host code, state the exact finite prefactor and then apply the global defect estimate. Keep this unweighted exceptional-host count separate from the subsequent private-kernel and weighted profile comparisons.",
+      "impact": "Discharges the actual fixed-height normalized-defect host census needed by T21.1 for the complete enlarged alignment, uniformly in delta. Diagnostic and weighted profile assembly remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.BoundedNormalizedDefectPairs.value_bounds",
+        "PaperP1.BoundedNormalizedDefectPairs.key_injective",
+        "PaperP1.BoundedNormalizedDefectPairs.atIndex_card",
+        "PaperP1.BoundedNormalizedDefectPairs.pairs_subset_covered",
+        "PaperP1.BoundedNormalizedDefectPairs.covered_card",
+        "PaperP1.BoundedNormalizedDefectPairs.pairs_card",
+        "PaperP1.BoundedNormalizedDefectPairs.prefactor_bound",
+        "PaperP1.BoundedNormalizedDefectPairCount.uniform_bound",
+        "PaperP1.MacroscopicNormalizedDefectHosts.subset_bounded",
+        "PaperP1.MacroscopicNormalizedDefectHosts.uniform_count",
+        "PaperP1.BoundedNormalizedDefectPairs.atIndex",
+        "PaperP1.BoundedNormalizedDefectPairs.covered",
+        "PaperP1.BoundedNormalizedDefectPairs.pairs",
+        "PaperP1.MacroscopicNormalizedDefectHosts.pairs"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14919 jobs); direct axiom audit passed for 12879 declarations using only propext, Classical.choice and Quot.sound; all 11885 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.79 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records199 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records200 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **12869 audited theorem/lemma declarations**. This
+- The project currently has **12879 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22186,3 +22186,71 @@ or software dependency is introduced. Original manuscript files remain
 byte-identical and Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14913 jobs); direct axiom audit passed for 12869 declarations using only propext, Classical.choice and Quot.sound; all 11871 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.81 GiB.
+
+
+## Actual square-root normalized-defect pair hosts for the full enlarged alignment
+
+Companion T21.1 now has an actual square-root host count for every
+fixed-height enlarged aligned pair containing a defective normalized
+integer. The bound includes zero exact units and is uniform over every
+positive macroscopic lower-endpoint exponent AFTER the common threshold.
+The complete profile sums remain open and coverage is unchanged.
+
+BoundedNormalizedDefectPairs works first on the entire bounded source
+interval [2,M). Its ordered pair set uses the literal enlarged geometric
+alignment and the actual existence of an H-defective integer in the
+deduplicated normalized union. No private-prime or residual-rank value
+is a theorem premise, and there is no exact-unit hypothesis.
+
+For each actual source-word position k and side, encode a pair by
+
+  (b*x-a*y, normalizedDefectiveValue).
+
+The defective value fixes the corresponding source coordinate by
+multiplicative cancellation and its actual vertex label. The integer
+geometric residual fixes the other coordinate. This is an injection
+on the original bounded pair population. Its residual lies in the
+literal integer interval with radius (a+b)*B, and its positive defective
+value is at most b*(M+L).
+
+Taking the exact finite union over the B positions and two sides gives
+
+  #defectPairs <= 2B*(2(a+b)B+1)*#positiveDefectsBelow(H,b(M+L)).
+
+All pairs keep their original ordered source and target labels. The
+prefactor is proved at most (8Q+2)*B^2 whenever a<=b<=Q. The proof
+uses no exact-unit choice, coprimality assumption or cutoff lower bound.
+
+BoundedNormalizedDefectPairCount combines this exact injection with
+the already proved global defect count and logarithmic polynomial
+absorption. For every fixed critical band C, height cap Q, cutoff
+constant D>=0 and epsilon>0, one threshold precedes every critical L,
+actual cutoff H<=D*B and moving positive a<=b<=Q. It proves
+
+  #actual bounded defectPairs <= M^(1/2+epsilon).
+
+The global counting height is at most 2Q*M and the cutoff is at most
+D*upperScale*log(M). The exact quadratic prefactor and all constants
+are absorbed in the supplied epsilon margin. This is the literal
+finite exceptional population, rather than a bound assumed of it.
+
+MacroscopicNormalizedDefectHosts defines the same actual defective
+pair population on [ceil(M^delta),M). It injects by inclusion into
+the bounded population, using the exact natural endpoints and source
+positivity. Its square-root host bound therefore has a threshold
+chosen BEFORE every delta>0, as well as before all moving pair and
+cutoff data. This strengthens the fixed-delta form needed by T21.1.
+No profile sum or weighted residual conclusion is inferred solely
+from this unweighted count.
+
+P1-MATH-0201 records this actual exceptional-host count. The next
+steps are its precise connection with nonprivate normalized pairs
+and extra kernel relations, the weighted fixed/high-height residual
+sums and the rational positive/signed channel translation profiles.
+T21.1 remains in progress. Coverage stays 88 proved and 70 conditional
+out of 167, with nine incomplete results. There are 200 improvements
+and one statement-scope correction. No new external input, kernel
+axiom, software dependency or compiler change is introduced. Original
+manuscripts remain byte-identical and Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14919 jobs); direct axiom audit passed for 12879 declarations using only propext, Classical.choice and Quot.sound; all 11885 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.79 GiB.

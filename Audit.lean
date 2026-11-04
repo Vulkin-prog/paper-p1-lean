@@ -2645,6 +2645,13 @@ import PaperP1
 #print axioms PaperP1.BoundedIntegerPlanes.mem_family
 #print axioms PaperP1.BoundedIntegerPlanes.card_family
 #print axioms PaperP1.BoundedIntegerPlanes.card_bound
+#print axioms PaperP1.BoundedNormalizedDefectPairs.value_bounds
+#print axioms PaperP1.BoundedNormalizedDefectPairs.key_injective
+#print axioms PaperP1.BoundedNormalizedDefectPairs.atIndex_card
+#print axioms PaperP1.BoundedNormalizedDefectPairs.pairs_subset_covered
+#print axioms PaperP1.BoundedNormalizedDefectPairs.covered_card
+#print axioms PaperP1.BoundedNormalizedDefectPairs.pairs_card
+#print axioms PaperP1.BoundedNormalizedDefectPairs.prefactor_bound
 #print axioms PaperP1.BoundedPointAlignment.ordered_alignment
 #print axioms PaperP1.BoundedPointAlignment.alignment_of_cross
 #print axioms PaperP1.BoundedPointAlignment.source_alignment
@@ -5713,6 +5720,7 @@ import PaperP1
 #print axioms PaperP1.BoundedFixedMomentsUnderInputs.uniform_factorial
 #print axioms PaperP1.BoundedFixedMomentsUnderInputs.uniform_ordinary
 #print axioms PaperP1.BoundedFixedMomentsUnderInputs.uniform_low
+#print axioms PaperP1.BoundedNormalizedDefectPairCount.uniform_bound
 #print axioms PaperP1.BoundedObservationPool.widthEnvelope_ge_one
 #print axioms PaperP1.BoundedObservationPool.pool_budget_le_envelope
 #print axioms PaperP1.BoundedObservationPool.pool_count_logarithmic
@@ -6829,6 +6837,8 @@ import PaperP1
 #print axioms PaperP1.MacroscopicIntervalGeometry.starts_pos
 #print axioms PaperP1.MacroscopicIntervalGeometry.log_lower
 #print axioms PaperP1.MacroscopicIntervalGeometry.uniform_geometry
+#print axioms PaperP1.MacroscopicNormalizedDefectHosts.subset_bounded
+#print axioms PaperP1.MacroscopicNormalizedDefectHosts.uniform_count
 #print axioms PaperP1.MacroscopicNormalizedPairResidual.rank_sublinear
 #print axioms PaperP1.MacroscopicPolynomialScale.polynomial_lt_source
 #print axioms PaperP1.MacroscopicRootLogScale.root_band
