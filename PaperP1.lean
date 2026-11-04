@@ -2862,3 +2862,7 @@ public import PaperP1.Arithmetic.AsymmetricEnvelopeRank
 public import PaperP1.Arithmetic.AsymmetricEnvelopeRelation
 public import PaperP1.Combinatorics.PinnedTargetBudget
 public import PaperP1.Combinatorics.PinnedTargetRestriction
+public import PaperP1.Arithmetic.AsymmetricComponentOffsets
+public import PaperP1.Asymptotics.AsymmetricComponentHostCount
+public import PaperP1.Asymptotics.AsymmetricComponentHostData
+public import PaperP1.Asymptotics.AsymmetricComponentSystems
