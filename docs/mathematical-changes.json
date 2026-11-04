@@ -14818,6 +14818,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "17179c993217bad63017d17415fad63518e9e69b"
+    },
+    {
+      "id": "P1-MATH-0236",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The determinant method needs one nonzero integer auxiliary coefficient family of polynomial height that vanishes on every source point once all square minors vanish.",
+      "finding": "The full-row annihilator is constructed from an actual selected row span, with no assumed rank gap or source-size restriction, and has the explicit uniform exponent kappa=(A+B+1)*((A+1)*(B+1)-1) at fixed linear source height.",
+      "proposed_revision": "Separate the analytic small-minor estimate from the algebraic extraction, and record the explicit coefficient-height exponent and its degree-before-height quantifier order.",
+      "impact": "Closes the bounded common coefficient-extraction step after normalized smallness. The analytic smallness premise and actual polynomial construction remain outstanding; no numbered coverage is added.",
+      "evidence": [
+        "PaperP1.FiniteRowKernel.exists_spanning_rows",
+        "PaperP1.FiniteRowKernel.exists_integer_annihilator",
+        "PaperP1.SmallIntegerKernelRankGap.power_capacity",
+        "PaperP1.SmallIntegerKernelRankGap.exists_small_kernel",
+        "PaperP1.SmallIntegerKernelRankGap.exists_uniform_small_kernel",
+        "PaperP1.SmallIntegerKernelRankGap.exists_uniform_small_kernel_equiv",
+        "PaperP1.DeterminantAuxiliaryCoefficients.exists_coefficients",
+        "PaperP1.DeterminantAuxiliaryHeight.heightBound_le_power",
+        "PaperP1.DeterminantAuxiliaryHeight.uniform_coefficients",
+        "PaperP1.DeterminantAuxiliaryCoefficients.heightBound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15129 jobs); direct axiom audit passed for 13398 declarations using only propext, Classical.choice and Quot.sound; all 12522 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.08 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -3280,3 +3280,7 @@ public import PaperP1.Analysis.DeterminantRelativeChart
 public import PaperP1.Arithmetic.PrimitiveDeterminantHeights
 public import PaperP1.Arithmetic.DeterminantIntegerRows
 public import PaperP1.Asymptotics.DeterminantHorizontalScale
+public import PaperP1.Algebra.FiniteRowKernel
+public import PaperP1.Algebra.SmallIntegerKernelRankGap
+public import PaperP1.Arithmetic.DeterminantAuxiliaryCoefficients
+public import PaperP1.Asymptotics.DeterminantAuxiliaryHeight

@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records234 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records235 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13389 audited theorem/lemma declarations**. This
+- The project currently has **13398 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22964,3 +22964,22 @@ For every square family of actual rows, the rational determinant multiplied by t
 P1-MATH-0235 records the uniform rounded scale and the complete rational-to-integral monomial bridge. T1.4 and T1.5 stay in progress for the analytic determinant bound, auxiliary extraction, remaining local curve counts and short-vector sums. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are234 improvements and one statement-scope correction. No new external input, axiom, Paper C code port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15121 jobs); direct axiom audit passed for 13389 declarations using only propext, Classical.choice and Quot.sound; all 12512 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.11 GiB.
+
+
+## Bounded common auxiliary coefficients from all singular actual row minors
+
+The algebraic extraction of a common bounded auxiliary coefficient family is now proved for every actual finite point family, with an explicit height exponent selected before N. Its required analytic small-determinant premise remains explicit and unproved.
+
+SmallIntegerKernelRankGap extends the existing pigeonhole argument to EVERY strict row/column dimension gap. For t<n integer rows of entry height H>0, it constructs a nonzero integer kernel vector of coordinate height at most (3*n*H)^t, and hence at most (3*n*H)^(n-1). Finite column reindexing is proved exactly.
+
+FiniteRowKernel selects an actual spanning subfamily of rational rows. If every square row minor vanishes, that subfamily has fewer rows than columns; the rank gap is derived, not assumed. The bounded integer kernel of the selected rows then annihilates the entire original row family by a proved rational-span argument. The coefficient bound depends on the number of columns and entry height, with no dependence on the total number of source points.
+
+DeterminantAuxiliaryCoefficients applies this construction to the actual integer monomial rows. The exact normalized determinant clearing proves the required vanishing minors from the finite smallness premise. One nonzero integer coefficient family annihilates every actual rational monomial row in the source population. Its explicit bound is
+
+  (3*H*(X^(A+B)+1))^(H-1), H=(A+1)*(B+1).
+
+DeterminantAuxiliaryHeight proves that at every fixed source height multiple Q*N this is at most N^kappa after an explicit threshold, with kappa=(A+B+1)*(H-1). Fixed degrees and Q precede kappa and the threshold, which in turn precede N, the source population and all its point data. The original-variable coefficient height is therefore fully uniform.
+
+P1-MATH-0236 records this common coefficient extraction and explicit height exponent. The analytic normalized determinant bound, conversion to the actual auxiliary polynomial, remaining local curve counts and short-vector sums remain unfinished, so T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are235 improvements and one statement-scope correction. No new external input, axiom, Paper C code port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15129 jobs); direct axiom audit passed for 13398 declarations using only propext, Classical.choice and Quot.sound; all 12522 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.08 GiB.

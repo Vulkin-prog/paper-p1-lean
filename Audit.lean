@@ -866,6 +866,8 @@ import PaperP1
 #print axioms PaperP1.FiniteRootWordSquares.polynomial_not_square
 #print axioms PaperP1.FiniteRootWordSquares.function_not_square
 #print axioms PaperP1.FiniteRootWordSquares.function_ne_zero
+#print axioms PaperP1.FiniteRowKernel.exists_spanning_rows
+#print axioms PaperP1.FiniteRowKernel.exists_integer_annihilator
 #print axioms PaperP1.FiniteSetRelativeRank.relative_rank_le_even_dimension
 #print axioms PaperP1.FiniteSetRelativeRank.matches_add_residual
 #print axioms PaperP1.FiniteSetRelativeRank.matches_add_residual_of_old_le
@@ -1743,6 +1745,10 @@ import PaperP1
 #print axioms PaperP1.SmallIntegerKernelCodimensionOne.power_capacity
 #print axioms PaperP1.SmallIntegerKernelCodimensionOne.exists_small_kernel
 #print axioms PaperP1.SmallIntegerKernelCodimensionOne.exists_small_kernel_equiv
+#print axioms PaperP1.SmallIntegerKernelRankGap.power_capacity
+#print axioms PaperP1.SmallIntegerKernelRankGap.exists_small_kernel
+#print axioms PaperP1.SmallIntegerKernelRankGap.exists_uniform_small_kernel
+#print axioms PaperP1.SmallIntegerKernelRankGap.exists_uniform_small_kernel_equiv
 #print axioms PaperP1.SourceAffineChart.affine_radicands
 #print axioms PaperP1.SourceAffineChart.originalEquiv_dehomogenization
 #print axioms PaperP1.SourceAffineChart.veroneseEquiv_dehomogenization
@@ -3273,6 +3279,7 @@ import PaperP1
 #print axioms PaperP1.DependentBlockPairs.off_diagonal_count
 #print axioms PaperP1.DependentBlockPairs.diagonal_count
 #print axioms PaperP1.DependentBlockPairs.split_count
+#print axioms PaperP1.DeterminantAuxiliaryCoefficients.exists_coefficients
 #print axioms PaperP1.DeterminantIntegerRows.homogeneous_clearing
 #print axioms PaperP1.DeterminantIntegerRows.entry_clearing
 #print axioms PaperP1.DeterminantIntegerRows.denominator_pos
@@ -6359,6 +6366,8 @@ import PaperP1
 #print axioms PaperP1.DependentProductMass.uniform_seeded_mass
 #print axioms PaperP1.DependentProductMass.uniform_seed_orders
 #print axioms PaperP1.DependentProductMass.uniform_mass
+#print axioms PaperP1.DeterminantAuxiliaryHeight.heightBound_le_power
+#print axioms PaperP1.DeterminantAuxiliaryHeight.uniform_coefficients
 #print axioms PaperP1.DeterminantEnumerationBudget.index_bound
 #print axioms PaperP1.DeterminantEnumerationBudget.box_logarithmic_bound
 #print axioms PaperP1.DeterminantEnumerationBudget.boxes_subpolynomial
