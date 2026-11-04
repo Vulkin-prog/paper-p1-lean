@@ -3208,3 +3208,5 @@ public import PaperP1.Asymptotics.MacroscopicPhaseScale
 public import PaperP1.Algebra.FiberEvenCode
 public import PaperP1.Arithmetic.RationalUnitCode
 public import PaperP1.Arithmetic.RationalUnitCodeSupport
+public import PaperP1.Asymptotics.MacroscopicRationalCodeGeometry
+public import PaperP1.Asymptotics.MacroscopicRationalProfile

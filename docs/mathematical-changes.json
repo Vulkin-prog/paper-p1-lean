@@ -13796,6 +13796,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "57390fa29d35f9154291fc3d21aa82122905055b"
+    },
+    {
+      "id": "P1-MATH-0214",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "Companion T21.1 sums the global rational code over every separated pair, identifies its leading1:2 channel and compares the resulting R_rat to the full actual aligned R_al with error M^(4/3+epsilon).",
+      "finding": "The canonical global R_rat is defined on ALL original separated pairs and proved supported on the actual aligned domain. Its leading sector equals the literal positive1:2 total. The full uniform main term, domination0<=R_rat<=R_al, printed4/3 comparison error and global moving-parity equivalent are proved internally. All macroscopic assertions of T21.1 are discharged.",
+      "proposed_revision": "Make aligned support of the global rational code a theorem before restricting its all-pairs profile. Use the exact leading-sector identification and nonnegative high remainder to prove the rational main term, then derive the R_rat/R_al comparison and equivalent.",
+      "impact": "Completes every macroscopic positive and signed assertion in T21.1. The dyadic positive equivalents and5/4 comparison remain open, so the numbered proposition is not yet marked complete.",
+      "evidence": [
+        "PaperP1.MacroscopicRationalCodeGeometry.uniform_geometry",
+        "PaperP1.MacroscopicRationalCodeGeometry.uniform_channel",
+        "PaperP1.MacroscopicRationalCodeGeometry.uniform_off_channel",
+        "PaperP1.MacroscopicRationalCodeGeometry.uniform_aligned_bound",
+        "PaperP1.MacroscopicRationalCodeGeometry.uniform_low_zero",
+        "PaperP1.MacroscopicRationalProfile.aligned_subset",
+        "PaperP1.MacroscopicRationalProfile.uniform_support_eq",
+        "PaperP1.MacroscopicRationalProfile.uniform_leading_eq",
+        "PaperP1.MacroscopicRationalProfile.uniform_domination",
+        "PaperP1.MacroscopicRationalProfile.uniform_rational_remainder",
+        "PaperP1.MacroscopicRationalProfile.uniform_main_term",
+        "PaperP1.MacroscopicRationalProfile.uniform_comparison",
+        "PaperP1.MacroscopicRationalProfile.uniform_relative",
+        "PaperP1.MacroscopicRationalProfile.uniform_ratio",
+        "PaperP1.MacroscopicRationalProfile.pairs",
+        "PaperP1.MacroscopicRationalProfile.profile"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14981 jobs); direct axiom audit passed for 13053 declarations using only propext, Classical.choice and Quot.sound; all 12100 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.55 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
