@@ -3125,3 +3125,9 @@ public import PaperP1.Arithmetic.NonanchorPivotSelection
 public import PaperP1.Arithmetic.OrdinarySmoothSourcePopulation
 public import PaperP1.Asymptotics.AnchoredSmallPivotCostLower
 public import PaperP1.Model.AnchoredSmallPivotSelection
+public import PaperP1.Analysis.AnchoredCostNormalization
+public import PaperP1.Asymptotics.AnchoredCostErrorScale
+public import PaperP1.Asymptotics.AnchoredObstructionFromCensus
+public import PaperP1.Asymptotics.AnchoredObstructionUnderOrdinaryCensus
+public import PaperP1.Asymptotics.LogFifthPivotCutoff
+public import PaperP1.Asymptotics.PowerGap

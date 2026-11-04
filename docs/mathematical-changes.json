@@ -12676,6 +12676,47 @@
         "status": "not_integrated"
       },
       "validation_commit": "db276600f7caab610d9470a36559af5da0130cc2"
+    },
+    {
+      "id": "P1-MATH-0188",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "For 0<a<1/10 the actual deterministic-anchor offsite cost is uniformly at least (1-o(1))*2^(-2i)*lambda_N^2*N^(-a), using ordinary smooth values in almost every short interval.",
+      "finding": "The exact natural log-fifth cutoff and all collision, endpoint and exceptional-power errors are proved uniformly over moving logarithmic widths. A quantitative finite source census gives actual offsite cost at least (1-3t)*2^(-2K)*N^(2-a). Under the separately defined OrdinaryCensusDensity(C,a), referring only to actual ordinary largest-prime-factor candidate counts, the full deterministic-anchor lower conclusion follows uniformly over both unsigned types, all original retained fields and every arithmetic anchor rule. Its scale equals the manuscript ambient lambda expression exactly. The ordinary census and randomized-orientation extension remain unproved.",
+      "evidence": [
+        "PaperP1.AnchoredCostNormalization.main_lower",
+        "PaperP1.AnchoredCostNormalization.with_errors",
+        "PaperP1.AnchoredCostErrorScale.errorExponent_pos",
+        "PaperP1.AnchoredCostErrorScale.uniform_errors",
+        "PaperP1.AnchoredObstructionFromCensus.uniform_census_implication",
+        "PaperP1.AnchoredObstructionUnderOrdinaryCensus.rate_factor",
+        "PaperP1.AnchoredObstructionUnderOrdinaryCensus.nominal_scale_identity",
+        "PaperP1.AnchoredObstructionUnderOrdinaryCensus.deterministic_under_census",
+        "PaperP1.LogFifthPivotCutoff.cutoff_upper",
+        "PaperP1.LogFifthPivotCutoff.quadratic_absorption",
+        "PaperP1.LogFifthPivotCutoff.uniform_data",
+        "PaperP1.PowerGap.small",
+        "PaperP1.AnchoredCostErrorScale.errorExponent",
+        "PaperP1.AnchoredObstructionUnderOrdinaryCensus.OrdinaryCensusDensity",
+        "PaperP1.LogFifthPivotCutoff.cutoff"
+      ],
+      "proposed_revision": "State the integer floor cutoff and combine the quantitative source deficit with the complete actual error ledger before taking o(1). Isolate the ordinary short-interval census as an independent arithmetic input and spell out its uniformity over the two word lengths. Distinguish the ambient lambda scale from the actual retained mean.",
+      "impact": "Completes the deterministic part of T19.17 conditional solely on its genuine independent ordinary census, with no cost or probability conclusions among its premises. The full numbered result remains in progress because the census proof and randomized extension are still open; coverage is unchanged.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14823 jobs); direct axiom audit passed for 12723 declarations using only propext, Classical.choice and Quot.sound; all 11681 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.05 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

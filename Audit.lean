@@ -2075,6 +2075,8 @@ import PaperP1
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_card_all
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_finite
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_card
+#print axioms PaperP1.AnchoredCostNormalization.main_lower
+#print axioms PaperP1.AnchoredCostNormalization.with_errors
 #print axioms PaperP1.BanachExponentialRemainder.norm_term_le
 #print axioms PaperP1.BanachExponentialRemainder.norm_tail_term_le
 #print axioms PaperP1.BanachExponentialRemainder.norm_exp_sub_partial_le
@@ -5624,7 +5626,13 @@ import PaperP1
 #print axioms PaperP1.AnchorRelationCertificates.critical_radius_control
 #print axioms PaperP1.AnchorRelationCertificates.companion_T6_3
 #print axioms PaperP1.AnchorThresholdBudget.threshold_power
+#print axioms PaperP1.AnchoredCostErrorScale.errorExponent_pos
+#print axioms PaperP1.AnchoredCostErrorScale.uniform_errors
 #print axioms PaperP1.AnchoredDyadicCostLower.uniform_actual_offsite_lower
+#print axioms PaperP1.AnchoredObstructionFromCensus.uniform_census_implication
+#print axioms PaperP1.AnchoredObstructionUnderOrdinaryCensus.rate_factor
+#print axioms PaperP1.AnchoredObstructionUnderOrdinaryCensus.nominal_scale_identity
+#print axioms PaperP1.AnchoredObstructionUnderOrdinaryCensus.deterministic_under_census
 #print axioms PaperP1.AnchoredRetainedMass.uniform_total_mean
 #print axioms PaperP1.AnchoredSmallPivotCostLower.uniform_ordinary_candidates_lower
 #print axioms PaperP1.AsymmetricAlignmentScopeObstruction.profile_eq_total
@@ -6751,6 +6759,9 @@ import PaperP1
 #print axioms PaperP1.LocalBlocksTheorem.finite_conditions
 #print axioms PaperP1.LocalBlocksTheorem.companion_T19_2
 #print axioms PaperP1.LocalBlocksTheorem.boundary_improvement_uniform
+#print axioms PaperP1.LogFifthPivotCutoff.cutoff_upper
+#print axioms PaperP1.LogFifthPivotCutoff.quadratic_absorption
+#print axioms PaperP1.LogFifthPivotCutoff.uniform_data
 #print axioms PaperP1.LogHeightAlignedActivity.uniform_bound
 #print axioms PaperP1.LogHeightAlignedActivity.all_heights_from_three
 #print axioms PaperP1.LogHeightAlignedActivity.source_tail_from_five
@@ -7122,6 +7133,7 @@ import PaperP1
 #print axioms PaperP1.PositiveSecondCumulant.uniform_hermite_admissibility
 #print axioms PaperP1.PositiveSeparatedSourceProfileUnderInputs.finite_profile_error
 #print axioms PaperP1.PositiveSeparatedSourceProfileUnderInputs.article_3_3_positive
+#print axioms PaperP1.PowerGap.small
 #print axioms PaperP1.PrefixMarkedWindowCount.mem_marked
 #print axioms PaperP1.PrefixMarkedWindowCount.finite_bound
 #print axioms PaperP1.PrefixMarkedWindowCount.logarithmic_exponential
