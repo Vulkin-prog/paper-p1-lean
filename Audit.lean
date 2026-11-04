@@ -3003,6 +3003,10 @@ import PaperP1
 #print axioms PaperP1.BiquadraticWordNormDegree.partial_bounds
 #print axioms PaperP1.BiquadraticWordNormDegree.q_bounds
 #print axioms PaperP1.BiquadraticWordNormHeight.height_bound
+#print axioms PaperP1.BivariateProjectiveSwap.degreeX_swap
+#print axioms PaperP1.BivariateProjectiveSwap.degreeY_swap
+#print axioms PaperP1.BivariateProjectiveSwap.biform_evaluation_swap
+#print axioms PaperP1.BivariateProjectiveSwap.evaluation_swap
 #print axioms PaperP1.BlockSupportProjection.mem_population
 #print axioms PaperP1.BlockSupportProjection.mem_cell
 #print axioms PaperP1.BlockSupportProjection.split_support
@@ -6140,6 +6144,7 @@ import PaperP1
 #print axioms PaperP1.ActualNominalReferenceComparison.uniform_upper
 #print axioms PaperP1.ActualNominalReferenceComparison.uniform_nonzero_bias_lower
 #print axioms PaperP1.ActualNominalReferenceComparison.uniform_two_sided
+#print axioms PaperP1.ActualOtherLinearFactorCount.uniform_actual_second_linear_count
 #print axioms PaperP1.ActualPairPhaseUnderInputs.alpha_eq_cumulant
 #print axioms PaperP1.ActualPairPhaseUnderInputs.main_sum
 #print axioms PaperP1.ActualPairPhaseUnderInputs.article_3_3_cumulant
@@ -9680,6 +9685,7 @@ import PaperP1
 #print axioms PaperP1.ActualIntegerSourceEquation.chart_population_value
 #print axioms PaperP1.ActualIntegerSourceEquation.factor_population_value
 #print axioms PaperP1.ActualLinearFactorCount.uniform_count
+#print axioms PaperP1.ActualSecondLinearFactorCount.uniform_count
 #print axioms PaperP1.BidegreeOneCurveCount.integer_box_floor
 #print axioms PaperP1.BidegreeOneCurveCount.mem_realSolutions
 #print axioms PaperP1.BidegreeOneCurveCount.integer_coefficient_bound
