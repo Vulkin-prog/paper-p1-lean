@@ -3333,3 +3333,5 @@ public import PaperP1.Diophantine.FourProjectiveCharts
 public import PaperP1.Arithmetic.IntegerPairFactorCharts
 public import PaperP1.Asymptotics.FourChartFactorCover
 public import PaperP1.Asymptotics.IntegerPairFactorCover
+public import PaperP1.Analysis.BinaryEuclideanReduction
+public import PaperP1.Arithmetic.PrimitiveBinaryBasis

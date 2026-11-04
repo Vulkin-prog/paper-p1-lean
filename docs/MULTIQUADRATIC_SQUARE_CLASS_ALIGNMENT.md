@@ -16507,3 +16507,20 @@ Every family contains at most Amax+Bmax actual nonconstant factors and obeys the
 P1-MATH-0250 completes the signed affine/projective factor assembly after the coordinate-chart changes. Actual short-vector lattice bases, geometric factor cases, uniform curve counts and final interval sums remain to be proved. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are249 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15227 jobs); direct axiom audit passed for 13654 declarations using only propext, Classical.choice and Quot.sound; all 12834 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.80 GiB.
+
+
+## Bounded primitive integer basis completion and exact nearest-vector geometry
+
+A primitive integer vector can now be completed to an actual integer basis with an explicit polynomial height bound, and the exact two-dimensional nearest-vector geometry is proved. These supply arithmetic and geometric ingredients for the actual short-vector lattice bases; existence of the shortest vector and full lattice assembly remain separate work.
+
+PrimitiveBinaryBasis first bounds Bezout coefficients. For coprime integers p,q with |p|,|q|<=H, the original Bezout solution is reduced modulo p, with the p=0 axis case treated separately. The constructed r,s satisfy p*r+q*s=1 and |r|,|s|<=H^2+1. The actual integer matrix with columns (p,q),(-s,r) has the explicit integer inverse with rows (r,s),(-q,p). Both matrix products are proved to be the identity, and EVERY entry of the basis and inverse is bounded by H^2+H+1. The resulting existence theorem begins with any actual primitive integer pair and returns both bounded inverse matrices with that vector as the first column.
+
+BinaryEuclideanReduction defines the squared Euclidean length, scalar product and oriented area directly in two real coordinates. It proves positivity for nonzero vectors and the exact Gram identity. Subtracting the nearest integer multiple of the first vector from the second preserves area and makes the absolute scalar product at most half the first squared length. Whenever the first vector is no longer than the reduced second vector, the proved area bound is
+
+  3*|v|^2*|w_reduced|^2 <= 4*area(v,w)^2.
+
+The nearest-integer projection step is constructed explicitly; no reduced-basis theorem is supplied as an external input. The length-order premise in this geometric lemma still has to be discharged using an actual shortest nonzero lattice vector.
+
+P1-MATH-0251 records an explicit polynomial-height primitive basis completion and the exact constants in the nearest-vector calculation. Remaining work includes existence and primitivity of the shortest vector, the full reduced basis and coordinate boxes for the actual lattices, geometric curve counts and interval sums. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are250 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15231 jobs); direct axiom audit passed for 13665 declarations using only propext, Classical.choice and Quot.sound; all 12852 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.78 GiB.

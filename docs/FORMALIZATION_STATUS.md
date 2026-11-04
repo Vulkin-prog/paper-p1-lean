@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records249 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records250 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13654 audited theorem/lemma declarations**. This
+- The project currently has **13665 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23268,3 +23268,20 @@ Every family contains at most Amax+Bmax actual nonconstant factors and obeys the
 P1-MATH-0250 completes the signed affine/projective factor assembly after the coordinate-chart changes. Actual short-vector lattice bases, geometric factor cases, uniform curve counts and final interval sums remain to be proved. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are249 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15227 jobs); direct axiom audit passed for 13654 declarations using only propext, Classical.choice and Quot.sound; all 12834 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.80 GiB.
+
+
+## Bounded primitive integer basis completion and exact nearest-vector geometry
+
+A primitive integer vector can now be completed to an actual integer basis with an explicit polynomial height bound, and the exact two-dimensional nearest-vector geometry is proved. These supply arithmetic and geometric ingredients for the actual short-vector lattice bases; existence of the shortest vector and full lattice assembly remain separate work.
+
+PrimitiveBinaryBasis first bounds Bezout coefficients. For coprime integers p,q with |p|,|q|<=H, the original Bezout solution is reduced modulo p, with the p=0 axis case treated separately. The constructed r,s satisfy p*r+q*s=1 and |r|,|s|<=H^2+1. The actual integer matrix with columns (p,q),(-s,r) has the explicit integer inverse with rows (r,s),(-q,p). Both matrix products are proved to be the identity, and EVERY entry of the basis and inverse is bounded by H^2+H+1. The resulting existence theorem begins with any actual primitive integer pair and returns both bounded inverse matrices with that vector as the first column.
+
+BinaryEuclideanReduction defines the squared Euclidean length, scalar product and oriented area directly in two real coordinates. It proves positivity for nonzero vectors and the exact Gram identity. Subtracting the nearest integer multiple of the first vector from the second preserves area and makes the absolute scalar product at most half the first squared length. Whenever the first vector is no longer than the reduced second vector, the proved area bound is
+
+  3*|v|^2*|w_reduced|^2 <= 4*area(v,w)^2.
+
+The nearest-integer projection step is constructed explicitly; no reduced-basis theorem is supplied as an external input. The length-order premise in this geometric lemma still has to be discharged using an actual shortest nonzero lattice vector.
+
+P1-MATH-0251 records an explicit polynomial-height primitive basis completion and the exact constants in the nearest-vector calculation. Remaining work includes existence and primitivity of the shortest vector, the full reduced basis and coordinate boxes for the actual lattices, geometric curve counts and interval sums. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are250 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15231 jobs); direct axiom audit passed for 13665 declarations using only propext, Classical.choice and Quot.sound; all 12852 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.78 GiB.

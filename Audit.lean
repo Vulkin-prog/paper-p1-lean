@@ -2133,6 +2133,13 @@ import PaperP1
 #print axioms PaperP1.BanachPowerPerturbation.corrected_power_identity
 #print axioms PaperP1.BanachPowerPerturbation.norm_corrected_power_le
 #print axioms PaperP1.BernoulliExponentialApproximation.norm_quadratic_error
+#print axioms PaperP1.BinaryEuclideanReduction.squareNorm_nonnegative
+#print axioms PaperP1.BinaryEuclideanReduction.squareNorm_positive
+#print axioms PaperP1.BinaryEuclideanReduction.gram_identity
+#print axioms PaperP1.BinaryEuclideanReduction.reduced_scalar_product
+#print axioms PaperP1.BinaryEuclideanReduction.reduced_area
+#print axioms PaperP1.BinaryEuclideanReduction.reduced_projection_bound
+#print axioms PaperP1.BinaryEuclideanReduction.reduced_area_bound
 #print axioms PaperP1.BiquadraticAuxiliaryGap.primitive_bound
 #print axioms PaperP1.BiquadraticAuxiliaryGap.integer_gap
 #print axioms PaperP1.BiquadraticAuxiliaryValue.primitive_pole_budget
@@ -4707,6 +4714,10 @@ import PaperP1
 #print axioms PaperP1.PrimeSubsetCertificates.primes_pairwise_coprime
 #print axioms PaperP1.PrimeSubsetCertificates.card_targets_le
 #print axioms PaperP1.PrimeSubsetCertificates.card_targets_le_full
+#print axioms PaperP1.PrimitiveBinaryBasis.bounded_bezout
+#print axioms PaperP1.PrimitiveBinaryBasis.basis_inverse
+#print axioms PaperP1.PrimitiveBinaryBasis.basis_height
+#print axioms PaperP1.PrimitiveBinaryBasis.exists_bounded_extension
 #print axioms PaperP1.PrimitiveDeterminantHeights.left_quotient
 #print axioms PaperP1.PrimitiveDeterminantHeights.right_quotient
 #print axioms PaperP1.PrimitiveDeterminantHeights.left_coefficient_bound
