@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records206 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records207 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **12963 audited theorem/lemma declarations**. This
+- The project currently has **12975 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22472,3 +22472,20 @@ The even-B and odd-B cases are verified separately. This is the full finite chan
 P1-MATH-0207 records this actual leading rational-unit calculation. The global rational-code partition, comparison with actual signed affine weights and final relative equivalents, and the dyadic positive assembly remain separate work. T21.1 stays in progress. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are206 improvements and one statement-scope correction. No external input, new axiom, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14947 jobs); direct axiom audit passed for 12963 declarations using only propext, Classical.choice and Quot.sound; all 11990 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.68 GiB.
+
+
+## Actual affine compatibility and literal signed rational-channel comparison
+
+The actual signed affine weights in companion T21.1 are now identified and compared to the actual predecessor-signed rational-unit sum. This closes the phase-identification gap left explicit by the earlier same-Boolean comparison.
+
+ActualAffinePairWeight defines compatibility from the positivity of the ORIGINAL joint start event. Its signed weight is exactly the joint event multiplied by2^(2L), minus1. For every positive pair and L>0, the proved binary affine rank formula identifies this with eta*2^rho-1, where eta is the actual0/1 compatibility bit and rho is the full pair loss, including local relations. Its absolute value is at most2^rho. The normalization uses the ambient word rate; it is not an actual-marginal product or a homogeneous probability replacement.
+
+For every distinct private normalized pair, the existing actual private covariance formula proves that this weight equals signedUnitSum exactly, with the original predecessor signs. The equality also covers zero coincidences. No equality of an arbitrary surrogate compatibility bit is assumed.
+
+MacroscopicSignedChannelComparison proves the literal sum of absolute errors over EVERY distinct actual fixed-channel subfamily E is at most M^(1/2+1/q+epsilon), uniformly for positive coprime a<=b with q<=b<=Q. The threshold precedes all moving lengths, coefficients and subfamilies. The error vanishes outside the actual nonprivate mask; that mask has the proved square-root host bound. The actual full affine weight and actual signed rational sum have separate internal pointwise bounds on the exception. At1:2 the error is M^(1+epsilon). The theorem does not use signed cancellation to bound this error.
+
+MacroscopicActualSignedMass instantiates the previous high-height and separated height-one estimates with the ACTUAL compatibility determined by the event. Thus the sum of absolute actual signed weights is at most M^(4/3+epsilon) in the height-three-and-higher mask, including both orientations, and M^(1+epsilon) in the separated height-one mask.
+
+P1-MATH-0208 records the actual signed affine comparison and exceptional-sector masses. The global rational-code/channel partition, final assembly on the complete aligned separated mask, relative equivalents and dyadic positive profile remain open, so T21.1 stays in progress. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are207 improvements and one statement-scope correction. No external input, new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14953 jobs); direct axiom audit passed for 12975 declarations using only propext, Classical.choice and Quot.sound; all 12004 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.66 GiB.

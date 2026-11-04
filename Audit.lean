@@ -6855,6 +6855,10 @@ import PaperP1
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_extensions
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_centered_extensions
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_small_intersection_extensions
+#print axioms PaperP1.MacroscopicActualSignedMass.weight_eq_affine
+#print axioms PaperP1.MacroscopicActualSignedMass.uniform_high
+#print axioms PaperP1.MacroscopicActualSignedMass.high_height_three
+#print axioms PaperP1.MacroscopicActualSignedMass.uniform_height_one
 #print axioms PaperP1.MacroscopicAlignedPairRank.units_residual_bound
 #print axioms PaperP1.MacroscopicAlignedPairRank.channel_bound
 #print axioms PaperP1.MacroscopicAlignedPairRank.actual_intersection_bound
@@ -6915,6 +6919,8 @@ import PaperP1
 #print axioms PaperP1.MacroscopicSeparatedHeightOne.units_card_zero
 #print axioms PaperP1.MacroscopicSeparatedHeightOne.uniform_power_sum
 #print axioms PaperP1.MacroscopicSeparatedHeightOne.uniform_weights
+#print axioms PaperP1.MacroscopicSignedChannelComparison.uniform_error
+#print axioms PaperP1.MacroscopicSignedChannelComparison.height_two
 #print axioms PaperP1.ManyPlanarSquareProducts.primitive_mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.uniform_natural
@@ -9396,6 +9402,12 @@ import PaperP1
 #print axioms PaperP1.ActivityFamilyCover.two_families
 #print axioms PaperP1.ActivitySignGap.nonneg
 #print axioms PaperP1.ActivitySignGap.mono
+#print axioms PaperP1.ActualAffinePairWeight.rank_rate
+#print axioms PaperP1.ActualAffinePairWeight.joint_binary
+#print axioms PaperP1.ActualAffinePairWeight.weight_eq_compatibility
+#print axioms PaperP1.ActualAffinePairWeight.abs_weight_le
+#print axioms PaperP1.ActualAffinePairWeight.private_weight_eq_units
+#print axioms PaperP1.ActualAffinePairWeight.weight_comm
 #print axioms PaperP1.ActualCanonicalComponents.image_injective
 #print axioms PaperP1.ActualCanonicalComponents.card_blocks
 #print axioms PaperP1.ActualCanonicalComponents.union_blocks

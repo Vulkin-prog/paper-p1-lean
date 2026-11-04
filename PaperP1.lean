@@ -3193,3 +3193,6 @@ public import PaperP1.Asymptotics.MacroscopicChannelTranslations
 public import PaperP1.Arithmetic.OneTwoChannelParity
 public import PaperP1.Asymptotics.MacroscopicLeadingUnitSums
 public import PaperP1.Model.IntervalUnitFourierAggregate
+public import PaperP1.Asymptotics.MacroscopicActualSignedMass
+public import PaperP1.Asymptotics.MacroscopicSignedChannelComparison
+public import PaperP1.Model.ActualAffinePairWeight

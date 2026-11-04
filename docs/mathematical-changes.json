@@ -13540,6 +13540,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "09a81540bef2abbf121768d2c85151312bcb8112"
+    },
+    {
+      "id": "P1-MATH-0208",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "The signed part of T21.1 replaces the actual affine weight eta*2^rho-1 by the signed rational even-unit sum on private normalized pairs and claims the same exceptional costs in absolute value.",
+      "finding": "Actual compatibility is defined from the original joint event and its normalized signed weight is proved exactly eta*2^rho-1. Private covariance identifies it with the actual predecessor-signed unit sum. Every distinct actual fixed-channel subfamily has signed error M^(1/2+1/q+epsilon), giving M^(1+epsilon) at1:2. Actual high and separated height-one absolute signed masses have their printed powers.",
+      "proposed_revision": "Identify the actual event compatibility and the exact normalized affine weight before invoking private unit compression. Bound the difference of the two actual signed weights on the nonprivate support, without assuming their compatibility bits agree. State the exceptional estimates as sums of absolute actual weights.",
+      "impact": "Closes the local actual signed phase-identification and fixed-channel comparison obligations for the macroscopic proof of T21.1. Complete-domain channel partition, final equivalents and dyadic positive assembly remain open.",
+      "evidence": [
+        "PaperP1.MacroscopicActualSignedMass.weight_eq_affine",
+        "PaperP1.MacroscopicActualSignedMass.uniform_high",
+        "PaperP1.MacroscopicActualSignedMass.high_height_three",
+        "PaperP1.MacroscopicActualSignedMass.uniform_height_one",
+        "PaperP1.MacroscopicSignedChannelComparison.uniform_error",
+        "PaperP1.MacroscopicSignedChannelComparison.height_two",
+        "PaperP1.ActualAffinePairWeight.rank_rate",
+        "PaperP1.ActualAffinePairWeight.joint_binary",
+        "PaperP1.ActualAffinePairWeight.weight_eq_compatibility",
+        "PaperP1.ActualAffinePairWeight.abs_weight_le",
+        "PaperP1.ActualAffinePairWeight.private_weight_eq_units",
+        "PaperP1.ActualAffinePairWeight.weight_comm",
+        "PaperP1.ActualAffinePairWeight.compatibility",
+        "PaperP1.ActualAffinePairWeight.weight"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14953 jobs); direct axiom audit passed for 12975 declarations using only propext, Classical.choice and Quot.sound; all 12004 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.66 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
