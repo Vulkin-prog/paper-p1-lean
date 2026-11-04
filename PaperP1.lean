@@ -3019,3 +3019,13 @@ public import PaperP1.Model.HomogeneousEdgeInteractions
 public import PaperP1.Model.PrivatePairInteractions
 public import PaperP1.Model.RawGoodPopulation
 public import PaperP1.Model.WindowPairInteractionHosts
+public import PaperP1.Asymptotics.ActualCompressedCrossingProfile
+public import PaperP1.Asymptotics.AlignedFamilyTripleMassUnderBCN
+public import PaperP1.Asymptotics.OptimalThirdCumulantUnderInputs
+public import PaperP1.Asymptotics.RestrictedAsymmetricProfileUnderInputs
+public import PaperP1.Asymptotics.SharpConnectedChannelMassUnderInputs
+public import PaperP1.Asymptotics.SharpFiniteInteriorMassUnderInputs
+public import PaperP1.Asymptotics.SharpFixedChannelNonalignedMassUnderInputs
+public import PaperP1.Asymptotics.SharpStrongExactMassUnderInputs
+public import PaperP1.Asymptotics.SharpThirdActivityUnderInputs
+public import PaperP1.Asymptotics.StrongAlignedSharpMassUnderInputs

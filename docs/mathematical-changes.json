@@ -11729,6 +11729,58 @@
         "status": "not_integrated"
       },
       "validation_commit": "25d1f39152a027ac9cc904ebdde148517ad83de9"
+    },
+    {
+      "id": "P1-MATH-0175",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:third:main",
+        "number": "14.1",
+        "page": 34,
+        "source": "main_sections/third_cumulant.tex",
+        "line": 32,
+        "statement_sha256": "b3c908053821806fbdaaae7e9cc2d22a4c3fd53a144da0b135f5997df780d34c"
+      },
+      "original_assumption": "The sharp nonaligned target sector above a rational source pair invokes the31/24 asymmetric profile, whose literal radius-one version needs a statement-scope correction and whose corrected sharp form remains unresolved.",
+      "finding": "Restrict the asymmetric weight to actual nonzero EFFECTIVE source-pair/target intersections. Their unconditionalN^(1+epsilon) host count is already proved, while the dense weighted graph sector has the same exponent under the existing finite geometric inputs. The sparse binary factor is subpower. This gives an actual restricted profileN^(1+epsilon), original nonaligned triple massN^(-2+1/b+epsilon), full fixed-channel and strong-aligned massN^(-41/30+epsilon), and—using the existingBCN global weak/no-exact argument—the full connected triple mass, third absolute activity and third factorial cumulant at41/30. The positive rational lower constant is assembled independently ofepsilon. Main14.3 is obtained via that full connected bound and therefore explicitly retainsBCN, rather than claiming the source finite-geometry-only route.",
+      "evidence": [
+        "PaperP1.ActualCompressedCrossingProfile.points_subset_targets",
+        "PaperP1.ActualCompressedCrossingProfile.finite_bound",
+        "PaperP1.ActualCompressedCrossingProfile.uniform_offsets",
+        "PaperP1.ActualCompressedCrossingProfile.uniform_channel",
+        "PaperP1.AlignedFamilyTripleMassUnderBCN.positive_filter_eq",
+        "PaperP1.AlignedFamilyTripleMassUnderBCN.article_14_3",
+        "PaperP1.OptimalThirdCumulantUnderInputs.lowerConstant_pos",
+        "PaperP1.OptimalThirdCumulantUnderInputs.article_14_1",
+        "PaperP1.RestrictedAsymmetricProfileUnderInputs.uniform_weight",
+        "PaperP1.SharpConnectedChannelMassUnderInputs.uniform_mass",
+        "PaperP1.SharpFiniteInteriorMassUnderInputs.uniform_channel",
+        "PaperP1.SharpFiniteInteriorMassUnderInputs.uniform_mass",
+        "PaperP1.SharpFixedChannelNonalignedMassUnderInputs.uniform_bound",
+        "PaperP1.SharpStrongExactMassUnderInputs.uniform_mass",
+        "PaperP1.SharpThirdActivityUnderInputs.uniform_joint_mass",
+        "PaperP1.SharpThirdActivityUnderInputs.uniform_absolute_activity",
+        "PaperP1.SharpThirdActivityUnderInputs.uniform_cumulant",
+        "PaperP1.StrongAlignedSharpMassUnderInputs.aligned_swap",
+        "PaperP1.StrongAlignedSharpMassUnderInputs.strong_aligned_iff_unordered",
+        "PaperP1.StrongAlignedSharpMassUnderInputs.article_14_4",
+        "PaperP1.ActualCompressedCrossingProfile.profile",
+        "PaperP1.ActualCompressedCrossingProfile.channelProfile",
+        "PaperP1.AlignedFamilyTripleMassUnderBCN.families",
+        "PaperP1.AlignedFamilyTripleMassUnderBCN.mass",
+        "PaperP1.OptimalThirdCumulantUnderInputs.lowerConstant",
+        "PaperP1.StrongAlignedSharpMassUnderInputs.StrongAligned"
+      ],
+      "proposed_revision": "Separate the actual effective crossing population from the larger raw-loss support. Use its provedN^(1+epsilon) count in the sparse sector and the existing dense weighted estimate, givingN^(-2+1/b+epsilon) for a nonaligned third target. Propagate this to the full41/30 third-order bounds. Keep the corrected31/24 asymmetric theorem as a separate question; state the explicitBCN dependency if main14.3 is proved through the full connected population. Retain the non-strict strong-pair threshold and all original repeated-index terms.",
+      "impact": "Completes main14.1,14.3,14.4 and14.6 conditionally using existing explicit inputs, without requiring the unresolved corrected31/24 profile or a newReuss hypothesis. Main14.4 needs noBCN; global14.1/14.3/14.6 retainBCN explicitly. The actual nonaligned fixed-channel mass is stronger than needed.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14619 jobs); direct axiom audit passed for 12273 declarations using only propext, Classical.choice and Quot.sound; all 11096 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.16 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

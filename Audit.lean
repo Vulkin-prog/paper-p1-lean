@@ -5445,6 +5445,10 @@ import PaperP1
 #print axioms PaperP1.ActiveEdgeMoments.uniform_activation
 #print axioms PaperP1.ActivePhysicalGroupCountUnderBCN.uniform_count_active
 #print axioms PaperP1.ActivePhysicalGroupCountUnderBCN.uniform_count
+#print axioms PaperP1.ActualCompressedCrossingProfile.points_subset_targets
+#print axioms PaperP1.ActualCompressedCrossingProfile.finite_bound
+#print axioms PaperP1.ActualCompressedCrossingProfile.uniform_offsets
+#print axioms PaperP1.ActualCompressedCrossingProfile.uniform_channel
 #print axioms PaperP1.ActualFamilyJointRows.append_support
 #print axioms PaperP1.ActualFamilyJointRows.uniform_row
 #print axioms PaperP1.ActualHermiteReferenceRateUnderInputs.uniform_comparison
@@ -5478,6 +5482,8 @@ import PaperP1
 #print axioms PaperP1.AffineRationalTripleEvenProbability.uniform_point_bound
 #print axioms PaperP1.AffineRationalTripleEvenProbability.nonextremal_point_bound
 #print axioms PaperP1.AlignedActivityPower.uniform_bound
+#print axioms PaperP1.AlignedFamilyTripleMassUnderBCN.positive_filter_eq
+#print axioms PaperP1.AlignedFamilyTripleMassUnderBCN.article_14_3
 #print axioms PaperP1.AlignedPairRank.units_residual_bound
 #print axioms PaperP1.AlignedPairRank.channel_bound
 #print axioms PaperP1.AlignedPairRank.actual_intersection_bound
@@ -6824,6 +6830,8 @@ import PaperP1
 #print axioms PaperP1.OptimalNominalQuadraticUnderInputs.article_17_3
 #print axioms PaperP1.OptimalQuadraticUnderInputs.article_1_1
 #print axioms PaperP1.OptimalQuadraticUnderInputs.article_16_2
+#print axioms PaperP1.OptimalThirdCumulantUnderInputs.lowerConstant_pos
+#print axioms PaperP1.OptimalThirdCumulantUnderInputs.article_14_1
 #print axioms PaperP1.OptimalTripleReconstructionUnderInputs.article_15_14
 #print axioms PaperP1.OptimalZeroProbabilityUnderInputs.article_17_2
 #print axioms PaperP1.OrderDependentBranching.exception_nonneg
@@ -7239,6 +7247,7 @@ import PaperP1
 #print axioms PaperP1.ResidualPrimitiveHostCount.hosts_data
 #print axioms PaperP1.ResidualPrimitiveHostCount.all_primitive_triples
 #print axioms PaperP1.ResidualPrimitiveHostCount.source_unrestricted_assertion
+#print axioms PaperP1.RestrictedAsymmetricProfileUnderInputs.uniform_weight
 #print axioms PaperP1.RestrictedDensePrimitiveMassUnderInputs.uniform_bound
 #print axioms PaperP1.RetainedBadPairActivityUnderInputs.uniform_bound
 #print axioms PaperP1.RetainedBadProbabilityUnderBCN.uniform_badProbability
@@ -7330,9 +7339,13 @@ import PaperP1
 #print axioms PaperP1.SharedPrincipalTripleMass.uniform_mass
 #print axioms PaperP1.SharedPrincipalTripleMass.relative_to_beta_squared
 #print axioms PaperP1.SharpCompatibleActivityUnderInputs.uniform_range
+#print axioms PaperP1.SharpConnectedChannelMassUnderInputs.uniform_mass
 #print axioms PaperP1.SharpConnectedSeedCatalogUnderInputs.uniform_mass
 #print axioms PaperP1.SharpCovarianceScaleUnderInputs.uniform_absolute_scale
 #print axioms PaperP1.SharpCovarianceScaleUnderInputs.uniform_regular_covariance
+#print axioms PaperP1.SharpFiniteInteriorMassUnderInputs.uniform_channel
+#print axioms PaperP1.SharpFiniteInteriorMassUnderInputs.uniform_mass
+#print axioms PaperP1.SharpFixedChannelNonalignedMassUnderInputs.uniform_bound
 #print axioms PaperP1.SharpIncompatibleActivityUnderInputs.uniform_range
 #print axioms PaperP1.SharpOnceAllCouplingUnderInputs.actual_second_le_homogeneous
 #print axioms PaperP1.SharpOnceAllCouplingUnderInputs.uniform_second
@@ -7343,6 +7356,10 @@ import PaperP1
 #print axioms PaperP1.SharpRetainedConversionUnderInputs.companion_T17_4
 #print axioms PaperP1.SharpRunConversionUnderInputs.uniform_cumulant
 #print axioms PaperP1.SharpRunConversionUnderInputs.uniform_conversion
+#print axioms PaperP1.SharpStrongExactMassUnderInputs.uniform_mass
+#print axioms PaperP1.SharpThirdActivityUnderInputs.uniform_joint_mass
+#print axioms PaperP1.SharpThirdActivityUnderInputs.uniform_absolute_activity
+#print axioms PaperP1.SharpThirdActivityUnderInputs.uniform_cumulant
 #print axioms PaperP1.SharpThirdCancellationUnderInputs.connected_activity_eq
 #print axioms PaperP1.SharpThirdCancellationUnderInputs.uniform_cancellation
 #print axioms PaperP1.SharpThirdCumulantLowerUnderInputs.error_absorption
@@ -7464,6 +7481,9 @@ import PaperP1
 #print axioms PaperP1.StrongAlignedDenseJointMass.uniform_joint
 #print axioms PaperP1.StrongAlignedDensePairCount.uniform_count
 #print axioms PaperP1.StrongAlignedInteriorEdges.uniform_edges
+#print axioms PaperP1.StrongAlignedSharpMassUnderInputs.aligned_swap
+#print axioms PaperP1.StrongAlignedSharpMassUnderInputs.strong_aligned_iff_unordered
+#print axioms PaperP1.StrongAlignedSharpMassUnderInputs.article_14_4
 #print axioms PaperP1.StrongAlignedUnitChannels.bounded_coprime_channels
 #print axioms PaperP1.StrongAlignedUnitChannels.bounded_channels
 #print axioms PaperP1.StrongExactFiniteChannelCover.uniform_cover
