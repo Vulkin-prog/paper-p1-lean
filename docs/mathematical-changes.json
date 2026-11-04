@@ -12830,6 +12830,62 @@
         "status": "not_integrated"
       },
       "validation_commit": "d29bc446ca6bd297fc55e766e043764c22008391"
+    },
+    {
+      "id": "P1-MATH-0191",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The randomized half-factor obstruction concerns the original retained unsigned field and an actual conditional coupling changing only private prime signs, including sources with a possible unforced defective anchor.",
+      "finding": "A valid hybrid is constructed on the whole original field: fully private good sources use the prescribed fair randomized source orientation, and every other source keeps the compatible anchored map. The actual prime/auxiliary product law preserves all original marginals, proves the full conditional law for every original-prime observable and weighted indicator Palm identities, and keeps the diagonal separate from offsite cost. The literal dyadic full-good set has exact population deletion ledger and contains every previously counted ordinary good source. Actual selected clean quarter-flip directed pairs each contribute at least q^2/2 to the actual offsite cost.",
+      "evidence": [
+        "PaperP1.RandomizedDyadicHybridField.mem_fullGood",
+        "PaperP1.RandomizedDyadicHybridField.fullGood_subset_retained",
+        "PaperP1.RandomizedDyadicHybridField.fullGood_deletion_ledger",
+        "PaperP1.RandomizedDyadicHybridField.ordinary_sources_subset",
+        "PaperP1.RandomizedDyadicHybridField.data",
+        "PaperP1.RandomizedDyadicHybridField.total_mean_upper",
+        "PaperP1.RandomizedHybridCleanCost.expected_change_eq",
+        "PaperP1.RandomizedHybridCleanCost.clean_weight_lower",
+        "PaperP1.RandomizedHybridCleanCost.selected_pairs_offsite_lower",
+        "PaperP1.RandomizedHybridCleanCost.selected_pairs_full_cost_lower",
+        "PaperP1.RandomizedHybridField.full_basis",
+        "PaperP1.RandomizedHybridField.primeForce_good",
+        "PaperP1.RandomizedHybridField.primeForce_other",
+        "PaperP1.RandomizedHybridField.force_hits",
+        "PaperP1.RandomizedHybridField.restricted_indicator",
+        "PaperP1.RandomizedHybridField.indicator_marginal",
+        "PaperP1.RandomizedHybridField.weighted_prime_palm",
+        "PaperP1.RandomizedHybridField.prime_conditional",
+        "PaperP1.RandomizedHybridField.weighted_indicator_palm",
+        "PaperP1.RandomizedHybridField.total_marginal",
+        "PaperP1.RandomizedHybridField.cost_diagonal_decomposition",
+        "PaperP1.RandomizedDyadicHybridField.fullGood",
+        "PaperP1.RandomizedHybridField.Data",
+        "PaperP1.RandomizedHybridField.fullPivots",
+        "PaperP1.RandomizedHybridField.primeForce",
+        "PaperP1.RandomizedHybridField.force",
+        "PaperP1.RandomizedHybridField.indicator",
+        "PaperP1.RandomizedHybridField.law",
+        "PaperP1.RandomizedHybridField.cost",
+        "PaperP1.RandomizedHybridField.offsite"
+      ],
+      "proposed_revision": "Specify the global randomized coupling on the original retained population by a full-private/compatible-anchor split. State its original-prime conditional law and actual marginals before summing costs. Keep the auxiliary law explicit and the diagonal separate. Then inject the clean ordinary-source pair population into its actual offsite ledger.",
+      "impact": "Repairs the global randomized coupling scope and discharges the actual hybrid Palm and selected half-factor cost ledger in T19.17. The arithmetic source aggregation, final randomized normalization and ordinary source census remain open; numbered coverage is unchanged.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14845 jobs); direct axiom audit passed for 12792 declarations using only propext, Classical.choice and Quot.sound; all 11769 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.01 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -3139,3 +3139,6 @@ public import PaperP1.Model.RandomizedCleanPivotWordCost
 public import PaperP1.Model.RawAuxiliaryObservation
 public import PaperP1.Probability.IndependentFiniteProbability
 public import PaperP1.Probability.RandomizedSourceFlip
+public import PaperP1.Model.RandomizedDyadicHybridField
+public import PaperP1.Model.RandomizedHybridCleanCost
+public import PaperP1.Model.RandomizedHybridField
