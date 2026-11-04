@@ -13932,6 +13932,50 @@
         "status": "not_integrated"
       },
       "validation_commit": "f7480efc10292289effed491b265266bf536cb0d"
+    },
+    {
+      "id": "P1-MATH-0217",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "Companion T21.1 asserts both dyadic positive profiles have the leading2:3 term and that their difference is O(N^(5/4+epsilon)), using the full actual aligned domain and the global rational code.",
+      "finding": "Both complete original-domain dyadic positive profiles are proved equal(N/3)*U_2,3(L) up to N^(5/4+epsilon), and0<=R_al-R_rat<=N^(5/4+epsilon) is proved uniformly. The global rational code is defined over all separated pairs, with aligned support and leading-channel identification proved internally.",
+      "proposed_revision": "Use the literal nonnegative cover to bound the complete excess over the leading sector, after proving canonical rational support and pointwise domination. State the two exact finite main terms before passing to the B-modulo-three equivalent.",
+      "impact": "Completes both dyadic positive additive main terms and the printed5/4 R_rat/R_al comparison in T21.1. Only its B-modulo-three relative equivalent remains open.",
+      "evidence": [
+        "PaperP1.DyadicPositiveCover.channel_subset_high_one",
+        "PaperP1.DyadicPositiveCover.leading_subset",
+        "PaperP1.DyadicPositiveCover.cover",
+        "PaperP1.DyadicPositiveCover.finite_bound",
+        "PaperP1.DyadicPositiveCover.uniform_bound",
+        "PaperP1.DyadicPositiveProfiles.uniform_pointwise",
+        "PaperP1.DyadicPositiveProfiles.uniform_support_eq",
+        "PaperP1.DyadicPositiveProfiles.uniform_leading_rational",
+        "PaperP1.DyadicPositiveProfiles.uniform_positive_main",
+        "PaperP1.DyadicPositiveProfiles.uniform_rational_main",
+        "PaperP1.DyadicPositiveProfiles.uniform_domination",
+        "PaperP1.DyadicPositiveProfiles.uniform_comparison",
+        "PaperP1.DyadicPositiveRemainder.channel_square",
+        "PaperP1.DyadicPositiveRemainder.high_square",
+        "PaperP1.DyadicPositiveRemainder.boundary_square",
+        "PaperP1.DyadicPositiveRemainder.uniform_remainder",
+        "PaperP1.DyadicPositiveProfiles.positive",
+        "PaperP1.DyadicPositiveProfiles.rational"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15001 jobs); direct axiom audit passed for 13100 declarations using only propext, Classical.choice and Quot.sound; all 12157 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.47 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records215 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records216 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13084 audited theorem/lemma declarations**. This
+- The project currently has **13100 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22635,3 +22635,25 @@ Both orientations, all original labels, local relations and incompatible pairs a
 P1-MATH-0216 records this leading dyadic profile. Complete dyadic sector assembly, the global R_rat/R_al comparison and the B-modulo-three leading equivalent remain. The macroscopic portion of T21.1 is already complete. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are215 improvements and one statement-scope correction. No new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14995 jobs); direct axiom audit passed for 13084 declarations using only propext, Classical.choice and Quot.sound; all 12139 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.50 GiB.
+
+
+## Complete actual and global rational dyadic positive main terms and comparison
+
+The complete actual and GLOBAL rational dyadic positive main terms and the printed five-fourths comparison in T21.1 are now proved internally. Only the final B-modulo-three relative equivalent remains for the numbered proposition.
+
+DyadicPositiveCover proves a literal cover of the original aligned separated ordered domain by height one, height-two endpoints, leading2:3/3:2 pairs and all heights at least four. The leading mask is a subset of the original aligned domain. For every nonnegative weight, the full sum lies above its leading sum and its excess is bounded by the three actual error-sector sums. This finite positive-cover argument allows overlaps in the upper bound and needs no cancellation or unproved multiplicity assumption.
+
+DyadicPositiveRemainder combines that finite cover with the internally proved sector powers. Any nonnegative actual profile weight dominated pointwise by2^rho on the original dyadic square has a nonnegative remainder after its leading mask bounded by N^(5/4+epsilon). This auxiliary statement is instantiated below with actual proved weights; it is not counted as a complete source result by assuming a target bound.
+
+DyadicPositiveProfiles defines the FULL actual aligned positive sum and the canonical GLOBAL rational sum over ALL original separated dyadic pairs. It proves the global rational code is dominated pointwise by the full actual loss everywhere in the dyadic square, vanishes off alignment, and has a leading sector exactly equal to the actual rational2:3 unit total. These are theorems about the original code and domain, not definitions restricting the rational profile to a chosen slope.
+
+Instantiating the positive remainder estimate and the proved leading calculations gives BOTH complete finite main terms:
+
+  |R_al - (N/3)*U_2,3(L)| <= N^(5/4+epsilon),
+  |R_rat - (N/3)*U_2,3(L)| <= N^(5/4+epsilon).
+
+The full pointwise domination also proves0<=R_rat<=R_al. Combining the two actual main terms yields the exact printed comparison0<=R_al-R_rat<=N^(5/4+epsilon), uniformly over every critical length after a common threshold. No profile, phase or counting estimate is assumed externally.
+
+P1-MATH-0217 records the complete dyadic positive additive formulas and comparison. All macroscopic assertions were already proved. T21.1 remains in progress only for the final positive B-modulo-three relative equivalent. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are216 improvements and one statement-scope correction. No new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15001 jobs); direct axiom audit passed for 13100 declarations using only propext, Classical.choice and Quot.sound; all 12157 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.47 GiB.

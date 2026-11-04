@@ -3217,3 +3217,6 @@ public import PaperP1.Asymptotics.DyadicFixedChannelComparison
 public import PaperP1.Asymptotics.DyadicLeadingPairGeometry
 public import PaperP1.Asymptotics.DyadicLeadingPositiveProfile
 public import PaperP1.Asymptotics.DyadicRationalCodeGeometry
+public import PaperP1.Asymptotics.DyadicPositiveCover
+public import PaperP1.Asymptotics.DyadicPositiveProfiles
+public import PaperP1.Asymptotics.DyadicPositiveRemainder
