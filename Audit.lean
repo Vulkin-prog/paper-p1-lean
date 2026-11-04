@@ -2140,6 +2140,17 @@ import PaperP1
 #print axioms PaperP1.BinaryEuclideanReduction.reduced_area
 #print axioms PaperP1.BinaryEuclideanReduction.reduced_projection_bound
 #print axioms PaperP1.BinaryEuclideanReduction.reduced_area_bound
+#print axioms PaperP1.BinaryLatticeCoordinateBounds.cramer_first
+#print axioms PaperP1.BinaryLatticeCoordinateBounds.cramer_second
+#print axioms PaperP1.BinaryLatticeCoordinateBounds.area_length_bound
+#print axioms PaperP1.BinaryLatticeCoordinateBounds.coordinate_square_bounds
+#print axioms PaperP1.BinaryLatticeCoordinateBounds.box_energy
+#print axioms PaperP1.BinaryLatticeCoordinateBounds.bound_of_weighted_square
+#print axioms PaperP1.BinaryLatticeCoordinateBounds.box_coordinate_bounds
+#print axioms PaperP1.BinaryLatticeCoordinateBounds.sideLength_order
+#print axioms PaperP1.BinaryLatticeCoordinateBounds.sideLength_product
+#print axioms PaperP1.BinaryLatticeCoordinateBounds.sideLength_inverse_bound
+#print axioms PaperP1.BinaryLatticeCoordinateBounds.sideLength_lower_square
 #print axioms PaperP1.BinaryLatticeEntryBounds.square_of_abs_bound
 #print axioms PaperP1.BinaryLatticeEntryBounds.squareNorm_bound
 #print axioms PaperP1.BinaryLatticeEntryBounds.inverseSize_bound
@@ -2515,6 +2526,11 @@ import PaperP1
 #print axioms PaperP1.ReducedBinaryLatticeBasis.reduced_second_image
 #print axioms PaperP1.ReducedBinaryLatticeBasis.reduced_geometry
 #print axioms PaperP1.ReducedBinaryLatticeBasis.exists_reduced_basis
+#print axioms PaperP1.ReducedLatticeCoordinateBoxes.image_matrix_expansion
+#print axioms PaperP1.ReducedLatticeCoordinateBoxes.inverse_coordinate_expansion
+#print axioms PaperP1.ReducedLatticeCoordinateBoxes.actual_coordinate_bounds
+#print axioms PaperP1.ReducedLatticeCoordinateBoxes.actual_side_controls
+#print axioms PaperP1.ReducedLatticeCoordinateBoxes.one_le_largest_of_primitive
 #print axioms PaperP1.RungePowerSeries.coeff_sqrtFactorSeries
 #print axioms PaperP1.RungePowerSeries.coeff_rungeProductSeries
 #print axioms PaperP1.RungePowerSeries.binomialSeries_half_sq
@@ -8638,6 +8654,7 @@ import PaperP1
 #print axioms PaperP1.UniformIndependentDeficit.uniform_bound
 #print axioms PaperP1.UniformIndependentExposureBudget.uniform_row_constant
 #print axioms PaperP1.UniformIndependentExposureBudget.uniform_budget
+#print axioms PaperP1.UniformLatticeCoordinateBoxes.uniform_coordinate_boxes
 #print axioms PaperP1.UniformPairClassDeficit.uniform_bound
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
 #print axioms PaperP1.UniformReducedBinaryBasis.uniform_reduced_basis

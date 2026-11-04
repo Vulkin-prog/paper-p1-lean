@@ -3345,3 +3345,6 @@ public import PaperP1.Analysis.BinaryLatticeEntryBounds
 public import PaperP1.Arithmetic.BoundedReducedBinaryBasis
 public import PaperP1.Asymptotics.ReducedBasisPolynomialBound
 public import PaperP1.Asymptotics.UniformReducedBinaryBasis
+public import PaperP1.Analysis.BinaryLatticeCoordinateBounds
+public import PaperP1.Analysis.ReducedLatticeCoordinateBoxes
+public import PaperP1.Asymptotics.UniformLatticeCoordinateBoxes
