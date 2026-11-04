@@ -3163,3 +3163,6 @@ public import PaperP1.Model.PrivateForcingMeasureObservation
 public import PaperP1.Arithmetic.OrdinaryCandidateMonotonicity
 public import PaperP1.Asymptotics.LogarithmicOrdinaryCensusBridge
 public import PaperP1.Asymptotics.OrdinaryShortIntervalCensusInput
+public import PaperP1.Asymptotics.PrintedAnchorObstructionParameters
+public import PaperP1.Asymptotics.PrintedDeterministicAnchorObstruction
+public import PaperP1.Asymptotics.PrintedRandomizedPrivateObstruction

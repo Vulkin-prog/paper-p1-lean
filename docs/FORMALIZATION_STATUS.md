@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and69 conditional. The project records195 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records196 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -17,7 +17,7 @@ CompanionT1.7 is complete conditionally on the existing ordinary/source surface-
 
 CompanionT4.4 is complete conditionally with the stronger fixed compressed primitive exponentkappa_b. Its r>=4 main bound is unconditional; r=3 uses only the existing finite geometry. The exact unordered population and both homogeneous/nominal and original affine weights are transported. CompanionT15.1 is now complete conditionally on the full original dyadic model, with both centered masses, all target cardinalities and all real source cutoffs; its separated exponent is improved to41/30 for both principal channels together.
 
-Main14.1,14.3,14.4 and14.6 are complete conditionally. The full original third absolute activity, connected triple joint mass and third factorial cumulant have their sharp41/30 power. Both optimal cumulant bounds use the actual mean and all repeated-index terms. The strong geometrically aligned sector14.4 needs only finite geometry; the global14.1/14.3/14.6 route explicitly retainsBCN. The new actual nonaligned channel massN^(-2+1/b+epsilon) bypasses the unresolved31/24 raw-loss profile. Ten numbered arithmetic/forcing results remain incomplete. The actual signed private-pivot field and finite directed coordinate-cost ledger ofT19.16 are constructed; its precise logarithmic asymptotic remains in progress. T19.17 now has both actual arbitrary-anchor conditional constructions and finite flip mechanisms; its arithmetic asymptotic obstruction remains in progress.
+Main14.1,14.3,14.4 and14.6 are complete conditionally. The full original third absolute activity, connected triple joint mass and third factorial cumulant have their sharp41/30 power. Both optimal cumulant bounds use the actual mean and all repeated-index terms. The strong geometrically aligned sector14.4 needs only finite geometry; the global14.1/14.3/14.6 route explicitly retainsBCN. The new actual nonaligned channel massN^(-2+1/b+epsilon) bypasses the unresolved31/24 raw-loss profile. Nine numbered arithmetic/forcing results remain incomplete. The actual signed private-pivot field and finite directed coordinate-cost ledger ofT19.16 are constructed; its precise logarithmic asymptotic remains in progress. T19.17 is complete conditionally on the explicit fixed-parameter Matomäki–Radziwiłł ordinary smooth short-interval input, including both actual deterministic and universal measurable randomized bounds at the printed parameters.
 
 Main12.1 is complete conditionally on the existing explicit BCN input: actual dense triples with weak proper intersections have at mostN^epsilon hosts and total heterogeneous rank mass N^(-2+theta+epsilon). The actual common injective physical subspace, exact-alignment deletion and regularization are constructed unconditionally; no chosen object is enumerated.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **12844 audited theorem/lemma declarations**. This
+- The project currently has **12849 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -21909,3 +21909,80 @@ Original manuscripts and compiler settings are preserved. No new
 kernel axiom or software dependency is introduced. Palomar is deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14887 jobs); direct axiom audit passed for 12844 declarations using only propext, Classical.choice and Quot.sound; all 11844 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.90 GiB.
+
+
+## T19.17 complete conditionally at the exact printed parameters
+
+Companion T19.17 is now COMPLETE CONDITIONALLY on the explicit
+fixed-parameter ordinary smooth short-interval input recorded in
+P1-MATH-0196. Both its deterministic assertion for every arithmetic
+anchor and its randomized assertion for every measurable allowed
+private forcing are proved at the exact printed parameters and
+nominal scale. The analytic literature input remains unformalized;
+this is not an unconditional completion or a new kernel axiom.
+
+PrintedAnchorObstructionParameters proves, uniformly in every moving
+critical L and maximal width B*=L+E+2<=D*log(N), that L>=1 and
+2*B*<=floor(log(N)^5) for sufficiently large N. Thus the proof's
+auxiliary full-good cutoff is compatible with the ORIGINAL retained
+population at the EXACT printed Y=2*B*. Neither an extra small-Y
+premise nor an assumed positive critical length remains.
+
+Its nominal scale is the literal manuscript quantity
+
+  2^(-2i) * (N*2^(-L))^2 * N^(-a).
+
+It is proved exactly equal to q_(L+i)^2*N^(2-a), using the already
+proved identity q_(L+i)=2^(-L-i). No retained mean is substituted for
+the nominal lambda_N=N*2^(-L): the separate actual retained mean
+remains |G|*q_(L+i).
+
+PrintedDeterministicAnchorObstruction proves for every eta>0,
+0<a<1/10 and both i=0,1,
+
+  actual_offsite >= (1-eta)*2^(-2i)*lambda_N^2*N^(-a).
+
+The original field G is precisely the translated dyadic population
+with at most one small pivot in its maximal support, at Y=2*B*.
+Every admissible deterministic arithmetic anchor is covered by the
+previously constructed actual anchored data. Every raw template is
+covered; in particular the original start word and unsigned exact
+excess-zero word are identified with their original Boolean events
+by the existing indicator_start and indicator_exact theorems.
+The source and target are ORIGINAL retained labels throughout.
+
+PrintedRandomizedPrivateObstruction proves the SAME printed bound
+with the additional factor 1/2 for every independent auxiliary
+probability space and every measurable actual map F in the indicated
+private-pivot class. Its hypotheses are the literal prescribed
+source word b+g(U,xi)*1 and preservation of all nonpivot prime signs
+on full-good sources. Behavior on the remaining original sources
+is arbitrary. The actual offsite integral cost of F is retained,
+including every source and target. No assumed cost bound, finite
+auxiliary restriction or abstract comparison cost enters the result.
+The bound even holds without fairness; the separately proved fair
+conditional-law constructions certify the Palm interpretation when
+that interpretation is required.
+
+Both uniform thresholds precede ALL moving lengths, maximal excess
+widths, prime cylinders, arithmetic anchor rules, actual templates,
+auxiliary spaces, orientation rules and private maps. Fixed constants
+C,D,a and the tolerance eta precede the threshold, as required for
+a fixed logarithmic-width bound and the printed little-o statement.
+The independent source census is discharged internally from
+CorollarySixLogInput(a). The latter is the only unformalized analytic
+input: a fixed u=2/a consequence of Matomaki--Radziwill 2016,
+Corollary 6, with positive limiting density, verified against the
+primary published PDF and explicitly parameterized in Lean.
+
+P1-MATH-0197 records the complete printed-parameter assembly. T19.17
+changes from in_progress to conditional. Coverage is now 88 proved
+and 70 conditional out of 167: 158 numbered statements complete in
+these explicitly distinguished senses, with nine incomplete.
+There are 196 improvements and one statement-scope correction.
+The remaining exact signed logarithmic cost T19.16 is separate and
+still open. Original manuscripts are byte-identical; no new axiom,
+dependency or compiler change is introduced. Palomar remains deferred
+because the complete two-document formalization is not finished.
+
+Verified under Lean v4.36.0-rc2: full build passed (14893 jobs); direct axiom audit passed for 12849 declarations using only propext, Classical.choice and Quot.sound; all 11850 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.88 GiB.

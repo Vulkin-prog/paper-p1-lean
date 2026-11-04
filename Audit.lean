@@ -7275,6 +7275,11 @@ import PaperP1
 #print axioms PaperP1.PrincipalSelectedPairMassUnderInputs.uniform_first
 #print axioms PaperP1.PrincipalSelectedPairMassUnderInputs.amplitude_upper
 #print axioms PaperP1.PrincipalSelectedPairMassUnderInputs.uniform_weighted
+#print axioms PaperP1.PrintedAnchorObstructionParameters.uniform_parameters
+#print axioms PaperP1.PrintedAnchorObstructionParameters.nominal_eq
+#print axioms PaperP1.PrintedAnchorObstructionParameters.nominal_nonneg
+#print axioms PaperP1.PrintedDeterministicAnchorObstruction.deterministic_under_short_interval_input
+#print axioms PaperP1.PrintedRandomizedPrivateObstruction.randomized_under_short_interval_input
 #print axioms PaperP1.PrivateChannelActivityRate.uniform_independent_mass
 #print axioms PaperP1.PrivateChannelActivityRate.uniform_coefficient
 #print axioms PaperP1.PrivateChannelActivityRate.uniform_absolute_comparison

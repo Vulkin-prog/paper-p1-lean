@@ -13097,6 +13097,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "c306fcd03c1f0b02ba43242275ce686bb45fec52"
+    },
+    {
+      "id": "P1-MATH-0197",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "T19.17 asserts the nominal-scale anchor obstruction at Y=2*B*, uniformly over all arithmetic anchors, and the same bound with factor1/2 for all source-word-oriented private forcings.",
+      "finding": "The critical length and log-fifth auxiliary cutoff conditions are discharged uniformly at the exact printed Y=2*B*. The actual deterministic and universal measurable randomized offsite costs satisfy the exact nominal-scale lower bounds for both unsigned types, with the sole unformalized fixed-parameter ordinary short-interval input made explicit. All original populations, actual indicators, private prescriptions, auxiliary measures and quantifier order are retained.",
+      "proposed_revision": "Present the independent fixed-parameter short-interval input, its proved literal source-census bridge, the actual pair-cost bounds and the exact nominal normalization in sequence. State the dependence on the fixed logarithmic-width constant and distinguish the original retained mean from nominal lambda_N.",
+      "impact": "Completes T19.17 conditionally on the explicitly unformalized Matomaki--Radziwill smooth-number input. Coverage rises to88 proved and70 conditional, with nine incomplete numbered statements. T19.16 and the remaining arithmetic statements are unaffected.",
+      "evidence": [
+        "PaperP1.PrintedAnchorObstructionParameters.uniform_parameters",
+        "PaperP1.PrintedAnchorObstructionParameters.nominal_eq",
+        "PaperP1.PrintedAnchorObstructionParameters.nominal_nonneg",
+        "PaperP1.PrintedDeterministicAnchorObstruction.deterministic_under_short_interval_input",
+        "PaperP1.PrintedRandomizedPrivateObstruction.randomized_under_short_interval_input",
+        "PaperP1.PrintedAnchorObstructionParameters.nominal"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14893 jobs); direct axiom audit passed for 12849 declarations using only propext, Classical.choice and Quot.sound; all 11850 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.88 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
