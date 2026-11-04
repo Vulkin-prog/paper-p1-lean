@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and71 conditional. The project records224 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and71 conditional. The project records225 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13259 audited theorem/lemma declarations**. This
+- The project currently has **13265 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22785,3 +22785,20 @@ SignedPrescribedSaddleLower applies that width theorem to the original specified
 P1-MATH-0225 records the exact critical normalization, prescribed excess and power obstruction. The sharp lower direction of T19.16 is complete under the sole ordinary EIPInput. Its full-value weighted upper profile and final upper-cost assembly remain open, so T19.16 stays in progress. Coverage remains89 proved and71 conditional out of167, with seven incomplete numbered results. There are224 improvements and one statement-scope correction. No additional external input, new axiom, additional Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15061 jobs); direct axiom audit passed for 13259 declarations using only propext, Classical.choice and Quot.sound; all 12342 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.30 GiB.
+
+
+## Actual raw-to-even weighted profile comparison with the genuine host correction
+
+The finite full-value profile comparison needed for the upper direction of T19.16 is now proved directly for the actual P1 raw and even relation maps. The extra correction is counted only on actual unrestricted raw-relation hosts.
+
+RawEvenProfileComparison restricts the two actual block parity sums to the full raw kernel. Its kernel is explicitly linearly equivalent to the complete even-relation code. Rank-nullity proves fullRank<=pairLoss+2, including all local relations. Pointwise positive weights then satisfy the sharp finite bound with an extra3 only when fullRank is nonzero. For EVERY ordered pair mask F, with no separation or regularity premise,
+
+  sum_F(2^fullRank-1) <=4*sum_F(2^pairLoss-1)+3*#rawHosts(F).
+
+This avoids an artificial correction proportional to the size of the whole ambient pair square.
+
+RawEvenProfileHosts proves that nonzero actual full rank is EQUIVALENT to the literal unrestricted nonempty raw parity relation in the two formal windows. Neither block is required to have even selection. Every raw host in any dyadic submask is therefore covered by the existing actual raw-host population. The internally proved global host count yields #rawHosts(F)<=N^(3/2+epsilon), uniformly before every logarithmic width and every original submask. Local defects, diagonal hosts and incompatible start constraints are retained.
+
+P1-MATH-0226 records this exact comparison and host correction. These are new P1 proofs using the existing actual parity maps and the already proved host count; no additional Paper C code is ported. The sharp lower forcing cost and its power obstruction are complete under EIPInput. The weighted upper profile and actual upper-cost assembly remain open, so T19.16 stays in progress. Coverage remains89 proved and71 conditional out of167, with seven incomplete numbered results. There are225 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15065 jobs); direct axiom audit passed for 13265 declarations using only propext, Classical.choice and Quot.sound; all 12351 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.29 GiB.

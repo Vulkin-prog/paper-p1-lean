@@ -4666,6 +4666,9 @@ import PaperP1
 #print axioms PaperP1.RationalUnitCodeSupport.units_le_full_loss
 #print axioms PaperP1.RationalUnitCodeSupport.nullity_le_full_loss
 #print axioms PaperP1.RationalUnitCodeSupport.weight_le_full
+#print axioms PaperP1.RawEvenProfileComparison.full_rank_le_loss_add_two
+#print axioms PaperP1.RawEvenProfileComparison.weight_le
+#print axioms PaperP1.RawEvenProfileComparison.finite_profile
 #print axioms PaperP1.RawPairRelationRank.kernel_le_large
 #print axioms PaperP1.RawPairRelationRank.rank_le_large
 #print axioms PaperP1.RawPairRelationRank.rank_le_components
@@ -11197,6 +11200,9 @@ import PaperP1
 #print axioms PaperP1.RawDependencePairs.joint_surjective_restrict
 #print axioms PaperP1.RawDependencePairs.rectangular_subset
 #print axioms PaperP1.RawDependencePairs.rectangular_card_le_hosts
+#print axioms PaperP1.RawEvenProfileHosts.full_rank_ne_zero_iff_related
+#print axioms PaperP1.RawEvenProfileHosts.rawHosts_subset
+#print axioms PaperP1.RawEvenProfileHosts.uniform_host_bound
 #print axioms PaperP1.RawGoodPopulation.good_iff_raw
 #print axioms PaperP1.RawGoodPopulation.edges_eq_channels
 #print axioms PaperP1.RawPrimeRank.coordinates_injective

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**224 mathematical improvements and one statement-scope correction are confirmed.**
+**225 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -22016,3 +22016,20 @@ SignedPrescribedSaddleLower applies that width theorem to the original specified
 P1-MATH-0225 records the exact critical normalization, prescribed excess and power obstruction. The sharp lower direction of T19.16 is complete under the sole ordinary EIPInput. Its full-value weighted upper profile and final upper-cost assembly remain open, so T19.16 stays in progress. Coverage remains89 proved and71 conditional out of167, with seven incomplete numbered results. There are224 improvements and one statement-scope correction. No additional external input, new axiom, additional Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15061 jobs); direct axiom audit passed for 13259 declarations using only propext, Classical.choice and Quot.sound; all 12342 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.30 GiB.
+
+
+## Actual raw-to-even weighted profile comparison with the genuine host correction
+
+The finite full-value profile comparison needed for the upper direction of T19.16 is now proved directly for the actual P1 raw and even relation maps. The extra correction is counted only on actual unrestricted raw-relation hosts.
+
+RawEvenProfileComparison restricts the two actual block parity sums to the full raw kernel. Its kernel is explicitly linearly equivalent to the complete even-relation code. Rank-nullity proves fullRank<=pairLoss+2, including all local relations. Pointwise positive weights then satisfy the sharp finite bound with an extra3 only when fullRank is nonzero. For EVERY ordered pair mask F, with no separation or regularity premise,
+
+  sum_F(2^fullRank-1) <=4*sum_F(2^pairLoss-1)+3*#rawHosts(F).
+
+This avoids an artificial correction proportional to the size of the whole ambient pair square.
+
+RawEvenProfileHosts proves that nonzero actual full rank is EQUIVALENT to the literal unrestricted nonempty raw parity relation in the two formal windows. Neither block is required to have even selection. Every raw host in any dyadic submask is therefore covered by the existing actual raw-host population. The internally proved global host count yields #rawHosts(F)<=N^(3/2+epsilon), uniformly before every logarithmic width and every original submask. Local defects, diagonal hosts and incompatible start constraints are retained.
+
+P1-MATH-0226 records this exact comparison and host correction. These are new P1 proofs using the existing actual parity maps and the already proved host count; no additional Paper C code is ported. The sharp lower forcing cost and its power obstruction are complete under EIPInput. The weighted upper profile and actual upper-cost assembly remain open, so T19.16 stays in progress. Coverage remains89 proved and71 conditional out of167, with seven incomplete numbered results. There are225 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15065 jobs); direct axiom audit passed for 13265 declarations using only propext, Classical.choice and Quot.sound; all 12351 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.29 GiB.

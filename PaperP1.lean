@@ -3250,3 +3250,5 @@ public import PaperP1.Asymptotics.SignedSaddleCostLower
 public import PaperP1.Asymptotics.SignedPrescribedSaddleLower
 public import PaperP1.Asymptotics.SignedSaddleCriticalLower
 public import PaperP1.Asymptotics.SignedSaddleExcess
+public import PaperP1.Arithmetic.RawEvenProfileComparison
+public import PaperP1.Model.RawEvenProfileHosts

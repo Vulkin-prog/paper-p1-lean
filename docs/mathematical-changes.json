@@ -14378,6 +14378,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "055115ffc71c3f371f4ebb1c3fa4b1956c2c1a59"
+    },
+    {
+      "id": "P1-MATH-0226",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:private-exact",
+        "number": "T19.16",
+        "page": 80,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1214,
+        "statement_sha256": "6baf345eb5567df4010efd0ecbca65dd33af3c09e924d3b13643b928c59b8315"
+      },
+      "original_assumption": "The full-value weighted profile used in T19.16 must account for removing the two block parity equations and for actual unrestricted raw-relation hosts.",
+      "finding": "The actual full kernel loses at most two dimensions under block parity, and its positive weight is bounded by four times the actual even weight plus three only on genuine raw hosts; their uniform three-halves count is proved internally.",
+      "proposed_revision": "Keep the raw-host correction supported on the actual nonzero full kernel and explicitly identify it with unrestricted raw parity relations before applying the host estimate.",
+      "impact": "Provides the finite full-value comparison and its internal correction bound needed for the upper cost direction of T19.16, without charging all ambient pairs or assuming a profile estimate.",
+      "evidence": [
+        "PaperP1.RawEvenProfileComparison.full_rank_le_loss_add_two",
+        "PaperP1.RawEvenProfileComparison.weight_le",
+        "PaperP1.RawEvenProfileComparison.finite_profile",
+        "PaperP1.RawEvenProfileHosts.full_rank_ne_zero_iff_related",
+        "PaperP1.RawEvenProfileHosts.rawHosts_subset",
+        "PaperP1.RawEvenProfileHosts.uniform_host_bound",
+        "PaperP1.RawEvenProfileComparison.rawParityConstraint",
+        "PaperP1.RawEvenProfileComparison.completeEquivParityKer",
+        "PaperP1.RawEvenProfileComparison.rawHosts"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15065 jobs); direct axiom audit passed for 13265 declarations using only propext, Classical.choice and Quot.sound; all 12351 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.29 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
