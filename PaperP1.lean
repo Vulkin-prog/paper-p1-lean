@@ -3348,3 +3348,6 @@ public import PaperP1.Asymptotics.UniformReducedBinaryBasis
 public import PaperP1.Analysis.BinaryLatticeCoordinateBounds
 public import PaperP1.Analysis.ReducedLatticeCoordinateBoxes
 public import PaperP1.Asymptotics.UniformLatticeCoordinateBoxes
+public import PaperP1.Analysis.RelativeIntervalLattice
+public import PaperP1.Analysis.RelativeIntervalLatticeHeight
+public import PaperP1.Asymptotics.UniformRelativeIntervalCoordinates

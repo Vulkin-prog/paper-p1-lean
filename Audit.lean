@@ -2531,6 +2531,14 @@ import PaperP1
 #print axioms PaperP1.ReducedLatticeCoordinateBoxes.actual_coordinate_bounds
 #print axioms PaperP1.ReducedLatticeCoordinateBoxes.actual_side_controls
 #print axioms PaperP1.ReducedLatticeCoordinateBoxes.one_le_largest_of_primitive
+#print axioms PaperP1.RelativeIntervalLattice.inverse_products
+#print axioms PaperP1.RelativeIntervalLattice.determinant
+#print axioms PaperP1.RelativeIntervalLattice.image_formula
+#print axioms PaperP1.RelativeIntervalLattice.floor_residual_identity
+#print axioms PaperP1.RelativeIntervalLattice.actual_point_box
+#print axioms PaperP1.RelativeIntervalLatticeHeight.entry_heights
+#print axioms PaperP1.RelativeIntervalLatticeHeight.uniform_power_heights
+#print axioms PaperP1.RelativeIntervalLatticeHeight.interval_center_range
 #print axioms PaperP1.RungePowerSeries.coeff_sqrtFactorSeries
 #print axioms PaperP1.RungePowerSeries.coeff_rungeProductSeries
 #print axioms PaperP1.RungePowerSeries.binomialSeries_half_sq
@@ -8658,6 +8666,7 @@ import PaperP1
 #print axioms PaperP1.UniformPairClassDeficit.uniform_bound
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
 #print axioms PaperP1.UniformReducedBinaryBasis.uniform_reduced_basis
+#print axioms PaperP1.UniformRelativeIntervalCoordinates.uniform_interval_coordinates
 #print axioms PaperP1.UniformSubpolynomialPower.bound
 #print axioms PaperP1.UnitChannelPairWeights.uniform_joint
 #print axioms PaperP1.UnitChannelPairWeights.uniform_coefficient

@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records255 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records256 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13737 audited theorem/lemma declarations**. This
+- The project currently has **13746 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23396,3 +23396,30 @@ UniformLatticeCoordinateBoxes.uniform_coordinate_boxes chooses the common intege
 P1-MATH-0256 closes the general actual reduced lattice coordinate boxes, retaining the exact side formulas needed for the shortest-vector interval count. Remaining work includes specializing the real lattice matrices and interval populations to the source scales, the geometric curve counts and final interval sums. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are255 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15257 jobs); direct axiom audit passed for 13737 declarations using only propext, Classical.choice and Quot.sound; all 12936 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.71 GiB.
+
+
+## Actual first source-interval lattices with uniform integer coordinates and source-scale boxes
+
+The general reduced-basis construction is now specialized to the ACTUAL first lattice on every original relative interval. Its real matrix, inverse, determinant, image box, coefficient heights and integer coordinate sides are all proved from the source scales.
+
+RelativeIntervalLattice defines the actual matrix and its inverse:
+
+  T = [[M/D,-M*s0/D],[0,1/E]],
+  S = [[D/M,s0*E],[0,E]].
+
+Both inverse products are verified and det(T)=M/(D*E). The exact image of an integer pair is ((M/D)*(d-s0*e),e/E). For the original floor-selected relative interval, its first coordinate equals (e/E)*(scaledRatio-floor(scaledRatio)). The actual floor residual and dyadic bounds imply EVERY original pair has both real image coordinates of absolute value at most 2. This uses the actual interval partition; no approximation or extra width premise is supplied.
+
+RelativeIntervalLatticeHeight proves both real matrices have entry height at most 2*Q*N whenever 1<=D,E,M, M<=N, D,E<=Q*N and 0<=s0<=2D/E. One common threshold gives entry height at most N^2. The same center range is proved for EVERY interval index k<=2M, including empty intervals, so the constants do not depend on choosing a representative source point.
+
+UniformRelativeIntervalCoordinates.uniform_interval_coordinates chooses the integer matrix-height exponent and threshold BEFORE N,M,D,E,k. On every original interval it constructs actual inverse unimodular integer matrices, both of uniformly polynomial height, and sides L0,L1 tied explicitly to the actual shortest and reduced image vectors. It proves
+
+  0<=L1<=L0,
+  L0*L1<=16*D*E/M,
+  4*D*E/M<=L0^2,
+  L0<=4*(2*(N^2)^2+1).
+
+EVERY original integer dyadic pair on that interval has its actual inverse integer coordinates bounded by L0,L1. Global minimality of the first basis vector is retained for the later interval summation. The matrix-height exponent is common to all moving intervals and scales; no short-basis, matrix-height or coordinate-box input is introduced.
+
+P1-MATH-0257 closes the actual first source-lattice specialization. Remaining work includes the shortest-vector interval count, the coefficient-uniform vertical regridding and second lattice, geometric curve counts and final sums, together with the relevant primitive reductions. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are256 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15263 jobs); direct axiom audit passed for 13746 declarations using only propext, Classical.choice and Quot.sound; all 12947 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.69 GiB.
