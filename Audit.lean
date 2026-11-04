@@ -5954,6 +5954,11 @@ import PaperP1
 #print axioms PaperP1.FixedOrderMassPropagation.main_6_3_propagation
 #print axioms PaperP1.FixedOrderMassPropagation.original_run_extensions
 #print axioms PaperP1.FixedPairExtensionDeficitUnderInputs.article_15_7
+#print axioms PaperP1.FixedPartnerComponentCount.component_pattern
+#print axioms PaperP1.FixedPartnerComponentCount.uniform_count
+#print axioms PaperP1.FixedPartnerPatternCount.window_value_bound
+#print axioms PaperP1.FixedPartnerPatternCount.fixed_system
+#print axioms PaperP1.FixedPartnerPatternCount.uniform_count
 #print axioms PaperP1.FixedPlaneSplitCount.offset_bounds
 #print axioms PaperP1.FixedPlaneSplitCount.scaled_offset_bounds
 #print axioms PaperP1.FixedPlaneSplitCount.pairFibre_card
@@ -6863,6 +6868,8 @@ import PaperP1
 #print axioms PaperP1.SecondOrderBoundaryCutoff.finite_large_bound
 #print axioms PaperP1.SecondOrderBoundaryCutoff.uniform_large_bound
 #print axioms PaperP1.SelectedDegreeOneRootHostCount.uniform_hosts
+#print axioms PaperP1.SelectedDegreeOneSystems.uniform_hosts
+#print axioms PaperP1.SelectedDegreeOneSystems.uniform_varying
 #print axioms PaperP1.SelectedKernelCounts.small_factor_subpolynomial
 #print axioms PaperP1.SelectedKernelCounts.large_factor_subpolynomial
 #print axioms PaperP1.SelectedKernelCounts.ambient_sqrt
@@ -7173,6 +7180,9 @@ import PaperP1
 #print axioms PaperP1.TwoTargetWeakSingletonCount.uniform_hosts
 #print axioms PaperP1.TwoTargetWeakUpperCount.uniform_pairs
 #print axioms PaperP1.uniformLittleOOn_zero
+#print axioms PaperP1.UniformGeometricCountsUnderInputs.one_variable
+#print axioms PaperP1.UniformGeometricCountsUnderInputs.companion_T1_7
+#print axioms PaperP1.UniformGeometricSystemsUnderInputs.companion_T1_7_systems
 #print axioms PaperP1.UniformGraphCardinalityTail.uniform_tail
 #print axioms PaperP1.UniformGraphExponentTail.uniform_tail
 #print axioms PaperP1.UniformIndependentDeficit.finite_bound
@@ -7607,6 +7617,7 @@ import PaperP1
 #print axioms PaperP1.FinTupleErasure.pair_determined
 #print axioms PaperP1.FinTupleErasure.fixed_pair_count
 #print axioms PaperP1.FiniteCoverCount.cardinal_le
+#print axioms PaperP1.FiniteDegreeSelection.select
 #print axioms PaperP1.FiniteFactorTopProducts.selected_le
 #print axioms PaperP1.FiniteFactorTopProducts.attained
 #print axioms PaperP1.FiniteFactorTopProducts.zero_of_fewer

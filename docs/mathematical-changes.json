@@ -11009,6 +11009,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "6aed9a6fceee35a509e129909990bdf1908aa2a2"
+    },
+    {
+      "id": "P1-MATH-0161",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The per-system degree-one assertion of T1.7 is stated with injectivity of both actual selected even-selection square-class maps and directness of their two images.",
+      "finding": "For the degree-one branch it suffices that the selected left even-selection map be injective and its actual image be disjoint from the right even square-class space. Right selected-map injectivity is unnecessary. The literal ordinary integer-point admissibility, curve exclusion, height composition and coefficient-uniform count use exactly these weaker hypotheses. A fixed subsystem also proves uniformity over every larger system with varying positive left degrees and polynomially enlarged critical offsets. The geometric surface-cover and normalized-curve properties remain explicit unproved arguments.",
+      "evidence": [
+        "PaperP1.SelectedDegreeOneSystems.uniform_hosts",
+        "PaperP1.SelectedDegreeOneSystems.uniform_varying",
+        "PaperP1.UniformGeometricSystemsUnderInputs.companion_T1_7_systems",
+        "PaperP1.UniformGeometricCountsUnderInputs.companion_T1_7"
+      ],
+      "proposed_revision": "In the degree-one per-system clause, permit the weaker assumption of injectivity only on the left selected even-space map, plus directness from the right selected space and positivity. Keep symmetric injectivity for the general half-power branch. State the fixed-subsystem threshold before the arbitrary total equation count and make varying-degree selection explicit.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14219 jobs); direct axiom audit passed for 11584 declarations using only propext, Classical.choice and Quot.sound; all 10127 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.20 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

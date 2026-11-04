@@ -2822,3 +2822,10 @@ public import PaperP1.Asymptotics.SmallMotifCoefficientBounds
 public import PaperP1.Asymptotics.SmallTransverseHostCount
 public import PaperP1.Asymptotics.SmallTransverseMassUnderInputs
 public import PaperP1.Combinatorics.SmallTransverseSelection
+public import PaperP1.Asymptotics.FixedPartnerComponentCount
+public import PaperP1.Asymptotics.FixedPartnerPatternCount
+public import PaperP1.Asymptotics.SelectedDegreeOneSystems
+public import PaperP1.Asymptotics.UniformGeometricCountStatement
+public import PaperP1.Asymptotics.UniformGeometricCountsUnderInputs
+public import PaperP1.Asymptotics.UniformGeometricSystemsUnderInputs
+public import PaperP1.Combinatorics.FiniteDegreeSelection
