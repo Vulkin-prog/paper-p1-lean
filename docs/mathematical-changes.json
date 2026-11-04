@@ -11322,6 +11322,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "824d0d2c51ededa2af9ed0bc6561fcbb6fa109d0"
+    },
+    {
+      "id": "P1-MATH-0170",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:uniform:one-pair",
+        "number": "T22.5",
+        "page": 91,
+        "source": "companion_sections/uniform_appendix.tex",
+        "line": 198,
+        "statement_sha256": "646f90b04cbce156b2dd69f62580d7c8424af3ff380da04a2b70a432368afe3d"
+      },
+      "original_assumption": "The selected single-pair growing-order argument states its extension count and uniqueness in prose, then invokes an aggregate exponential-series error without constructing the actual tuple population or writing a common finite bound.",
+      "finding": "Actual retained paths preserve the entire effective source relation kernel, which proves uniqueness of the initial dependent pair. Increasing complementary position maps then give an injective encoding of actual ordered tuples across all source pairs and two-position choices. This proves the exact choose(r,2) multiplicity and both orientations, with uniform relative error at most(r-2)*Dstar/N. Adding old centres to the branching exception preserves the precise critical logarithmic envelope. A finite exponential majorant gives weighted error N^(-3/4), hence little-o of the literal nominal second factorial correction, with the exact original mean and cumulant and one geometric bundle before every K and tolerance.",
+      "evidence": [
+        "PaperP1.SequentialRetainedWindows.independent_conclusion",
+        "PaperP1.SequentialRetainedWindows.unique_dependent_pair",
+        "PaperP1.CriticalFreshBranchingBudget.uniform_fresh_exception",
+        "PaperP1.CriticalFreshBranchingLog.fresh_log_upper",
+        "PaperP1.PairPositionEncoding.positions_eq",
+        "PaperP1.SelectedPairBranchingTuples.encode_injective",
+        "PaperP1.SelectedPairBranchingTuples.mass_exact",
+        "PaperP1.SelectedPairCriticalMass.uniform_bound",
+        "PaperP1.SelectedPairCriticalMass.uniform_numeric_bound",
+        "PaperP1.SelectedPairWeightedSeries.finite_bound",
+        "PaperP1.PrincipalSelectedPairMassUnderInputs.uniform_weighted",
+        "PaperP1.SinglePairCriticalTheoremUnderInputs.companion_T22_5"
+      ],
+      "proposed_revision": "Replace the informal selected-tuple count by the actual retained-path construction, source-kernel preservation and injective pair-position encoding. State the explicit relative error(r-2)*Dstar/N and the uniform N^(-3/4) weighted remainder. Retain the exact original mean and second cumulant, and fix one finite geometric bundle before all critical-order constants and little-o tolerances.",
+      "impact": "Completes companionT22.5 conditionally on the existing finite geometric properties; its selected-family construction and first formula are unconditional. The result remains restricted to selected single-pair tuples and supplies no new full growing-order factorial-moment theorem.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14505 jobs); direct axiom audit passed for 12066 declarations using only propext, Classical.choice and Quot.sound; all 10810 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.47 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

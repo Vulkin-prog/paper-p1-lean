@@ -2961,3 +2961,14 @@ public import PaperP1.Model.HomogeneousCompressedCrossing
 public import PaperP1.Model.SeparatedHomogeneousMass
 public import PaperP1.Asymptotics.GoodEdgePositivePalmUnderInputs
 public import PaperP1.Model.GoodEdgePositivePalm
+public import PaperP1.Analysis.SelectedPairWeightedSeries
+public import PaperP1.Asymptotics.CriticalFreshBranchingBudget
+public import PaperP1.Asymptotics.CriticalFreshBranchingLog
+public import PaperP1.Asymptotics.CriticalSequentialPairMass
+public import PaperP1.Asymptotics.PrincipalSelectedPairMassUnderInputs
+public import PaperP1.Asymptotics.SelectedPairCriticalMass
+public import PaperP1.Asymptotics.SinglePairCriticalTheoremUnderInputs
+public import PaperP1.Combinatorics.PairPositionEncoding
+public import PaperP1.Combinatorics.SequentialBranchingPaths
+public import PaperP1.Model.SelectedPairBranchingTuples
+public import PaperP1.Model.SequentialRetainedWindows
