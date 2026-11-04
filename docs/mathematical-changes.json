@@ -2640,7 +2640,11 @@
       "validation_history": [
         "de20445461d4c2ddde4823d870e99b36cfeb414c"
       ],
-      "validation_commit": "821b695086627fb6dda23a7bd41542c381684434"
+      "validation_commit": "821b695086627fb6dda23a7bd41542c381684434",
+      "followup": {
+        "id": "P1-MATH-0315",
+        "scope": "Actual admissible data at arbitrarily large sizes also refute the exact unqualified display. The earlier proved actual asymptotic counts remain valid; see the follow-up proof and validation record."
+      }
     },
     {
       "id": "P1-MATH-0055",
@@ -17768,6 +17772,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "c65877834e16eef9c707246d7add201163b2910d"
+    },
+    {
+      "id": "P1-MATH-0315",
+      "classification": "correction",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:short:quadratic",
+        "number": "T5.1",
+        "page": 31,
+        "source": "companion_sections/short_supports.tex",
+        "line": 9,
+        "statement_sha256": "98eb59430167ea84a4dd75c36b107f990646c6c2f47783b8292f95e2659899bb"
+      },
+      "original_assumption": "Companion T5.1 prints c2(beta,delta)<=1/2+beta/4-delta/2 as an exact unqualified comparison uniformly over actual quadratic-kernel data.",
+      "finding": "For arbitrarily large N, actual admissible data h=e=1,n=N with squarefree N and N+1 give q=N(N+1)=N^beta(N), beta(N)>2 and delta=0. Then c2=beta(N)/2>1/2+beta(N)/4, while all asymptotic counting estimates remain valid.",
+      "proposed_revision": "Replace c2 by min(1,c2) in the exact displayed comparison; alternatively restrict beta-2delta<=2 or include the vanishing exponent margin. Retain the already proved uniform c2 and affine counting conclusions.",
+      "impact": "Confirms a second statement-scope correction with actual admissible counterexamples at arbitrarily large sizes. The original exact display is disproved; the universally capped comparison and the actual counting replacement are proved without unproved inputs. Original baseline coverage is unchanged.",
+      "evidence": [
+        "PaperP1.ActualQuadraticComparisonCounterexample.kernel_value",
+        "PaperP1.ActualQuadraticComparisonCounterexample.size_identity",
+        "PaperP1.ActualQuadraticComparisonCounterexample.beta_gt_two",
+        "PaperP1.ActualQuadraticComparisonCounterexample.comparison_failure",
+        "PaperP1.ActualQuadraticComparisonCounterexample.source_value",
+        "PaperP1.ActualQuadraticComparisonCounterexample.arbitrarily_large_admissible",
+        "PaperP1.ActualQuadraticComparisonCounterexample.beta"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15517 jobs); direct axiom audit passed for 14082 declarations using only propext, Classical.choice and Quot.sound; all 13336 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.67 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

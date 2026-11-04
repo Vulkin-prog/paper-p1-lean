@@ -6265,6 +6265,12 @@ import PaperP1
 #print axioms PaperP1.ActualPositiveGeometricFactorCount.uniform_actual_count
 #print axioms PaperP1.ActualPrescribedDivisorBudget.actual_outside_height
 #print axioms PaperP1.ActualPrescribedDivisorBudget.actual_outside_divisor_count
+#print axioms PaperP1.ActualQuadraticComparisonCounterexample.kernel_value
+#print axioms PaperP1.ActualQuadraticComparisonCounterexample.size_identity
+#print axioms PaperP1.ActualQuadraticComparisonCounterexample.beta_gt_two
+#print axioms PaperP1.ActualQuadraticComparisonCounterexample.comparison_failure
+#print axioms PaperP1.ActualQuadraticComparisonCounterexample.source_value
+#print axioms PaperP1.ActualQuadraticComparisonCounterexample.arbitrarily_large_admissible
 #print axioms PaperP1.ActualQuadraticSubpowerMoments.uniform_moments
 #print axioms PaperP1.ActualReducedFamilyCount.uniform_count
 #print axioms PaperP1.ActualReferenceAdmissibility.quadratic_of_bounds

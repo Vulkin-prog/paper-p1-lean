@@ -1,7 +1,9 @@
 # Formalization status
 
-Stage: **conditional optimal quadratic and third-cumulant powers; three remaining numbered obligations**, 5 November 2026.
+Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
+
+The exact unqualified exponent display in companion T5.1 is disproved on actual admissible data at arbitrarily large sizes (P1-MATH-0315). Its actual uniform counting conclusions and the universally capped exact comparison are proved without unproved inputs. The literal radius-one T1.10 assertion is also false; its checked corrected variants retain the explicitly recorded domains and inputs. Main13.4 is the remaining numbered proof obligation. The two disproved original statements stay in the baseline ledger until a new manuscript version integrates the corrections.
 
 Companion T1.13 is complete conditionally on the same two ordinary biform inputs for its two-kernel assertion. The one-kernel assertion is unconditional. Both actual selected-centre counts have full real-centre, real-radius and real-cutoff alignment, including every fixed logarithmic width, arbitrary selected subsets and the sharp power-cap consequences. See P1-MATH-0309.
 
@@ -9,7 +11,7 @@ Companion T1.5 is complete conditionally on exactly the same two ordinary biform
 
 Companion T1.4 is complete conditionally on exactly HeathBrownBiformInput.Input and NonGeometricBiformInput.Input. The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. Both ordinary input proofs remain open. The three incomplete numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records313 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records313 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -128,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14076 audited theorem/lemma declarations**. This
+- The project currently has **14082 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24327,3 +24329,16 @@ The explicit finite lower bound proves that for every M there is N>max(1,M) with
 P1-MATH-0314 completes the elementary source-witness existence theorem. The conversion of these witnesses into actual T5.1 kernel data and a quantified failure of its unqualified exact exponent display remains for the next step. The actual T5.1 count conclusions remain already proved; this preparatory arithmetic theorem does not change numbered coverage. Coverage stays89 proved and75 conditional out of167 (164 completed). There are313 improvements and one statement-scope correction. No new ordinary input, axiom, dependency download, compiler change or manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15515 jobs); direct axiom audit passed for 14076 declarations using only propext, Classical.choice and Quot.sound; all 13329 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.69 GiB.
+
+
+## Actual admissible counterexamples to the exact unqualified T5.1 exponent comparison
+
+The unqualified exact exponent comparison printed in companionT5.1 is false even on actual admissible source data at arbitrarily large sizes. This is a second statement-scope correction; it does not refute any of the actual counting conclusions. P1-MATH-0054 already proved those conclusions uniformly, including the capped and affine bounds, and supplied the correct qualified comparison.
+
+For every M and every fixed A>=0, the new theorem constructs N>M, N>=2 with h=e=1 and an actual value n=N in PrescribedQuadraticKernelTheorem.values N 1 1 beta(N), with 1<=log(N)^A. The construction uses the unconditional adjacent-squarefree witnesses of P1-MATH-0314. Coprimality of N and N+1 makes N(N+1) squarefree, so its actual canonical kernel is exactly N(N+1). Setting beta(N)=log(N(N+1))/log(N) gives N^beta(N)=N(N+1) exactly. Since N(N+1)>N^2, beta(N)>2. At delta=log(1)/log(N)=0, the displayed uncapped c2 is beta(N)/2, strictly greater than 1/2+beta(N)/4. Thus this is an actual-data counterexample for arbitrarily large N, not only a free-real-parameter example or one small exceptional source value.
+
+The exact display must therefore use min(1,c2), add the range beta-2delta<=2, or include the vanishing exponent margin justified by the actual height bound. The already proved universal capped comparison and the actual uniform c2/capped/affine counts provide the checked replacement. The counterexamples do not contradict those counts: an exact exponent comparison is a different assertion from its arbitrary-positive-margin asymptotic consequence.
+
+P1-MATH-0315 records the failure, explicit admissibility, unbounded size and proposed repair, while preserving original manuscript bytes. The original T5.1 row remains in progress because its exact unqualified display is disproved; its checked revision variant has proved counting and comparison declarations and no ordinary unproved input. Coverage remains89 proved and75 conditional out of167 (164 completed). There are313 improvements and two statement-scope corrections: the radius-one T1.10 assertion and this exact T5.1 display. No main-article counting conclusion is refuted. No external input, axiom, dependency download or compiler change is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15517 jobs); direct axiom audit passed for 14082 declarations using only propext, Classical.choice and Quot.sound; all 13336 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.67 GiB.
