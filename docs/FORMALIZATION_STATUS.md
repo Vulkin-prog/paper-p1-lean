@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and67 conditional. The project records174 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and68 conditional. The project records175 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -15,7 +15,9 @@ CompanionT20.8 is complete conditionally on the existing ordinary surface-cover 
 
 CompanionT1.7 is complete conditionally on the existing ordinary/source surface-cover and normalized curve properties: both coefficient-uniform per-system counts, varying-degree fixed subsystems, both many-component graph counts, the unconditional actual fixed-partner count and the one-variable assertions are assembled. P1-MATH-0161 removes right selected-map injectivity from the degree-one branch. Coverage is87/167 unconditional and48 conditional.
 
-Main14.1,14.3,14.4 and14.6 are complete conditionally. The full original third absolute activity, connected triple joint mass and third factorial cumulant have their sharp41/30 power. Both optimal cumulant bounds use the actual mean and all repeated-index terms. The strong geometrically aligned sector14.4 needs only finite geometry; the global14.1/14.3/14.6 route explicitly retainsBCN. The new actual nonaligned channel massN^(-2+1/b+epsilon) bypasses the unresolved31/24 raw-loss profile. Twelve numbered arithmetic/forcing results remain incomplete.
+CompanionT4.4 is complete conditionally with the stronger fixed compressed primitive exponentkappa_b. Its r>=4 main bound is unconditional; r=3 uses only the existing finite geometry. The exact unordered population and both homogeneous/nominal and original affine weights are transported. CompanionT15.1 remains separate for all-cardinality centered masses.
+
+Main14.1,14.3,14.4 and14.6 are complete conditionally. The full original third absolute activity, connected triple joint mass and third factorial cumulant have their sharp41/30 power. Both optimal cumulant bounds use the actual mean and all repeated-index terms. The strong geometrically aligned sector14.4 needs only finite geometry; the global14.1/14.3/14.6 route explicitly retainsBCN. The new actual nonaligned channel massN^(-2+1/b+epsilon) bypasses the unresolved31/24 raw-loss profile. Eleven numbered arithmetic/forcing results remain incomplete.
 
 Main12.1 is complete conditionally on the existing explicit BCN input: actual dense triples with weak proper intersections have at mostN^epsilon hosts and total heterogeneous rank mass N^(-2+theta+epsilon). The actual common injective physical subspace, exact-alignment deletion and regularization are constructed unconditionally; no chosen object is enumerated.
 
@@ -120,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **12273 audited theorem/lemma declarations**. This
+- The project currently has **12305 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -20157,3 +20159,110 @@ sharper corrected profile remain incomplete, together with the other
 separately listed arithmetic and forcing obligations.
 
 Verified under Lean v4.36.0-rc2: full build passed (14619 jobs); direct axiom audit passed for 12273 declarations using only propext, Classical.choice and Quot.sound; all 11096 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.16 GiB.
+
+
+## Improved fixed primitive mass after exact pair compression
+
+CompanionT4.4 is complete conditionally on the existing finite
+source/ordinary surface-cover and normalized curve properties. The
+fixed-order bound for r>=3 compressed blocks is improved from
+
+  N^(-kappa_b+1/5+epsilon) to N^(-kappa_b+epsilon), kappa_b=2-1/b.
+
+In particular the exponents are5/3 in channel2:3 and7/4 in channel3:4.
+The parameter r is FIXED before the threshold: no growing-order
+application is asserted. The previously completed one-target clause
+ofT1.12 supplies the separate two-block case with powers4/3 and5/4
+(indeed4/3 for both channels). Its original separated geometric-good
+source population and explicit finite geometric inputs are retained.
+
+PairCompressedPrimitiveFamilies treats S_x+S_y as ONE source space.
+It does not apply original-family primitivity to the already dependent
+two source windows. Every proper COMPRESSED subfamily has zero nullity,
+and the whole compressed family has positive nullity. Exact rank-nullity
+gives the homogeneous probability
+
+  H(source pair) * p^t * 2^rho, p=2^(-L), t=r-1,
+
+when the further original windows are regular. Source windows may be
+irregular in this stronger indexed bound. Projection bounds rho<=L.
+The homogeneous event is the actual zero-target event under the
+infinite prime-sign measure, so incompatible affine original events
+are included in this majorant, rather than deleted by a phase argument.
+
+PairCompressedPrimitiveCount proves the actual host count
+N^((t+1)/2+epsilon) UNCONDITIONALLY. For each unit offset pair,
+WindowPairCentreBlocks supplies the genuine normalized value set,
+its exact effective space S_x+S_y, width at most8B for b<=4, and
+comparable value heights. The source centre b*x is strictly above2N
+for b>=3, while all further original centres are in[N,2N); the full
+encoded centre tuple is therefore injective. A minimal compressed
+relation is nonzero on every block and enters the proved actual-value
+half-count theorem with no old blocks. The source pair is recovered
+injectively from its centre at fixed unit offsets. All B^2 offset
+choices are included. No selected relation is counted as a host.
+
+PairCompressedPrimitiveElementaryMass combines this count with the
+unconditional fixed-channel pair probabilityN^(-kappa_b+epsilon).
+For additional nullityrho<=eta*L the resulting sector has mass
+N^(-3/2+1/b-t/2+eta+epsilon). At eta=1, every fixedt>=3 has the
+stronger boundN^(-kappa_b+epsilon) WITHOUT any unproved geometric input.
+Thus the r>=4 part of the new fixed-order result is unconditional.
+
+For r=3, there are precisely two further original windows. The low
+sectorrho<=L/4 already has the stronger powerkappa_b+1/4.
+PairCompressedTwoTargetData constructs the EXACT two-target kernel
+above W=S_x+S_y and identifies its dimension with compressed nullity.
+Primitivity proves all three proper pair cuts direct. In particular,
+the two targets meet the existing nonaligned-or-weak-aligned condition
+for every positive threshold, since their effective intersection is0.
+
+PairCompressedDenseExtensionsUnderInputs then applies the already
+proved TwoTargetDenseMass theorem with the TWO actual source windows
+and their possibly dependent effective span W. It never assumes that
+these two original windows form a direct family. The two further
+windows are regular, so their actual marginals are exactlyp. The exact
+homogeneous weight is the source homogeneous probability times the
+existing heterogeneous dense kernel expression. For each source, its
+dense extension mass is at mostH(source)*N^(-1+epsilon).
+
+HomogeneousFullChannelMass proves that the sum over ALL actual unit
+sources has massN^(-1+1/b+epsilon), with no private-source restriction:
+the unconditional B^2*N host count and individual source bound suffice.
+PairCompressedDenseMassUnderInputs sums these actual sources and gives
+N^(-kappa_b+epsilon) for the dense r=3 sector. All finite geometry is
+fixed beforeN, L, source pair and target population. These are the same
+explicit source/ordinary surface and normalized curve properties as
+in the existing dense two-target proof. No BCN, Reuss or31/24 profile
+is used. The low and dense sectors complete the r=3 case.
+
+InjectiveNullityTransport proves exact nullity transport under an
+injective finite relabelling. PairCompressedPrimitiveTransport uses it
+to pass from the EXISTING unordered PairPrimitiveCompression predicate
+to the indexed family. Canonical target enumeration is injective because
+its actual finite set can be recovered. Its finite_mass_bound transports
+the FULL original distinguished-pair/unordered-target sum, rather than
+assuming a target estimate. No original family is lost, and any ordered
+overcount only enlarges the upper bound. The source pair remains
+distinguished even if several choices yield the same original family.
+
+PairCompressedPrimitiveMassUnderInputs.companion_T4_4_original therefore
+proves the stronger bound for arbitrary actual unordered populations,
+with the literal regular-set convention of fixed_moments.tex:6-8.
+It simultaneously bounds the actual homogeneous probability, the exact
+source W(I)=p^|I|*2^rho(I), and the original affine joint probability.
+Regularity is used explicitly to identify the nominal W weight; no such
+identification is made on irregular source populations. The indexed
+bound is stronger and permits irregular sources. The unweighted family
+image is also bounded with its true multiplicities removed correctly.
+
+P1-MATH-0176 records the improved fixed compressed primitive power and
+the simpler dependency route. Coverage is88/167 unconditional and68
+conditional;11 numbered results remain incomplete. There are175 confirmed
+improvements and one statement-scope correction. CompanionT15.1 remains
+open for its sharper all-cardinality compressed centered masses, and
+T1.10 retains its separate corrected31/24 profile obligation. No new
+external property, axiom, dependency, compiler change, PaperC port,
+original-manuscript byte edit or Palomar registration is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (14641 jobs); direct axiom audit passed for 12305 declarations using only propext, Classical.choice and Quot.sound; all 11138 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.10 GiB.
