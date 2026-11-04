@@ -3222,3 +3222,6 @@ public import PaperP1.Asymptotics.DyadicPositiveProfiles
 public import PaperP1.Asymptotics.DyadicPositiveRemainder
 public import PaperP1.Arithmetic.TwoThreePositiveParity
 public import PaperP1.Asymptotics.TwoThreePositivePhase
+public import PaperP1.Asymptotics.CompanionT21Profiles
+public import PaperP1.Asymptotics.DyadicPhaseScale
+public import PaperP1.Asymptotics.DyadicPositiveEquivalents
