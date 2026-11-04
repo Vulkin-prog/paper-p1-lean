@@ -2772,3 +2772,16 @@ public import PaperP1.Probability.FiniteMomentComparison
 public import PaperP1.Probability.PositionalFactorialCovariance
 public import PaperP1.Probability.PositionalCovarianceComparison
 public import PaperP1.Asymptotics.PositionalOriginalCovarianceUnderInputs
+public import PaperP1.Asymptotics.DependentPairSecondMomentUnderInputs
+public import PaperP1.Asymptotics.NominalMarginalBias
+public import PaperP1.Asymptotics.OriginalDeletedIntensityUnderInputs
+public import PaperP1.Asymptotics.PositionalDeletedCountCumulantUnderInputs
+public import PaperP1.Combinatorics.PairUnionWeights
+public import PaperP1.Model.DependentPairUnionSeeds
+public import PaperP1.Model.FiniteDeletedIntensity
+public import PaperP1.Model.OriginalDeletedIntensity
+public import PaperP1.Model.PositionalDeletedSupport
+public import PaperP1.Probability.PositionalCountCumulant
+public import PaperP1.Probability.PositionalDeletionIntensity
+public import PaperP1.Probability.PositionalDeletionSupport
+public import PaperP1.Probability.PositionalFiniteExpectations

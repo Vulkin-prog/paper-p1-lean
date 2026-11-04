@@ -5,7 +5,7 @@ Neither document is fully formalized.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
-CompanionT19.10 is in progress: BOTH actual original deletion kernels recover the intended independent background at conditional rate4/5 for EVERY FIXED polynomial weight. The full summed factorial covariance assertion is also proved at rate4/5, including all diagonal entries and tensor mean terms. The finer intensity and sharp two-edge O(a_N^2) conclusions remain separate. P1-MATH-0156 removes the degree bound from the earlier field coupling.
+CompanionT19.10 is in progress: BOTH actual original deletion kernels have the independent-background comparison at conditional rate4/5 for EVERY FIXED polynomial weight, the full summed factorial covariance and actual count cumulant bounds at rate4/5, and the finer summed intensity bound at rate1. Only the original sharp two-edge O(a_N^2) bound and the sharp once/all TV and Wasserstein consequences remain open. P1-MATH-0157 proves the finer intensity part without that stronger input.
 
 The full original third absolute activity now reduces with coefficient one to literal strong exact-alignment triples, plus an error N^(-3/2+epsilon). All other triple sectors are proved at this power after an accuracy-dependent threshold. Main14.1 and14.6 stay in progress for the remaining strong-aligned upper bound.
 
@@ -112,7 +112,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **11337 audited theorem/lemma declarations**. This
+- The project currently has **11402 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -18188,3 +18188,94 @@ download, Paper C port or original manuscript edit is introduced.
 Palomar remains a later milestone.
 
 Verified under Lean v4.36.0-rc2: full build passed (14105 jobs); direct axiom audit passed for 11337 declarations using only propext, Classical.choice and Quot.sound; all 9871 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.48 GiB.
+
+
+## Finer original deleted intensities and scalar count cumulants
+
+CompanionT19.10 now has its FINER INTENSITY assertion proved for BOTH
+actual original deleted fields: the SUM of their absolute coordinate
+intensity errors relative to the exact rates p-iota_x is <=N^(-1+epsilon).
+The statement holds uniformly for EVERY real private-prime cutoff, with
+an explicit already recorded finite geometric bundle chosen before the
+critical threshold. The previously checked field-distance, all fixed
+weights and full summed covariance assertions remain available. The
+absolute second factorial cumulants of both actual deleted counts now
+also have the printed rate4/5 by an exact projection identity.
+
+T19.10 remains IN PROGRESS only for the original sharp two-edge O(a_N^2)
+estimate and its sharp once/all total-variation and Wasserstein
+consequences. No numbered completion is added. Coverage stays87/167
+unconditional and45 conditional. Improvement P1-MATH-0157 separates the
+finer intensity proof from the stronger sharp two-edge input.
+
+PositionalDeletionSupport proves that ANY signed field supported on its
+finite ground stays there under both kernels. It proves actual support
+of a kernel action, finite atom average, once-kernel and isolation.
+PositionalDeletedSupport specializes this to the actual original laws.
+PositionalCountCumulant proves exact finite first and factorial-second
+sum identities, absolute moment summability and the identity
+
+ scalarSecondFactorialCumulant(totalCountProjection(nu))
+     = sum_(x,y in G)K_xy(nu).
+
+It requires the stated ground support and actual quadratic moment.
+PositionalDeletedCountCumulantUnderInputs then gives the SUM of the
+absolute second factorial cumulants of the actual once-deleted and
+isolated count laws <=N^(-4/5+epsilon), under the existing field bundle.
+
+PairUnionWeights bounds the fiber of union on ANY ordered set-pair
+population, including overlaps, by4^|I|, and proves its positive weighted
+mass inequality. DependentPairUnionSeeds shows that two DISTINCT actual
+dependent pairs have union cardinality3 or4 and NO singleton canonical
+component. The old positive-projection core lemma applies to overlapping
+as well as disjoint pairs. No geometric connectedness premise is added.
+
+DependentPairSecondMomentUnderInputs applies the already proved weighted
+no-singleton seed theorem at order4 and vertex weight4. For EVERY family
+of actual dependent pairs on ANY dyadic subground, the entire ordered
+two-edge joint sum is <=N^(-1+epsilon). The actual integral factorial
+second moment is bounded at the same rate. In particular all actual good
+edges satisfy this, uniformly over EVERY real cutoff. This is a coarse
+rate1 bound, and does not establish the sharper O(a_N^2) rate or T1.17.
+
+PositionalDeletionIntensity defines the actual active incident degree,
+the uniform once-removal probability degree/k and the literal all-removal
+coordinate. Their nonnegative coordinate bounds, true kernel coordinate
+means and finite sums are proved. For binary inputs, both summed positive
+incidence remainders are <=k(k-1). The once remainder is exactly
+2*(k-1_(k>0)); the isolation remainder is bounded by that same quantity.
+PositionalFiniteExpectations proves arbitrary REAL tests of the actual
+finite field mixtures, including their absolute convergence.
+
+FiniteDeletedIntensity transports these pointwise identities through
+an arbitrary finite probability space and dependent Boolean field.
+For E consisting of pairs on G and any nominal vector b, EACH actual
+deleted field has absolute intensity error to b-incidence(E,q) at most
+
+ sum_(x in G)|originalMarginal_x-b_x| + E[(activeEdgeCount)_2].
+
+The exact finite kernel means, actual edge indicators, full ordered
+second moment and finite expectation interchanges are checked.
+OriginalDeletedIntensity identifies every term with the literal original
+infinite prime-sign model by its common finite cylinder. It retains the
+exact heterogeneous original marginals and actual union joint masses.
+
+NominalMarginalBias proves UNCONDITIONALLY that every dyadic subground
+has summed absolute marginal bias to p=2^(-L) <=N^(-1+epsilon), using the
+already proved rank-one window and subpower exceptional-window count.
+OriginalDeletedIntensityUnderInputs combines this with the coarse
+positive second moment to prove the SUM of the two finer intensity
+errors at rate1. Only the already explicit coarse connected geometric
+bundle remains as an ordinary theorem argument, at accuracy epsilon/16.
+
+P1-MATH-0157 records a weaker sufficient input for this finer assertion:
+the sharp positive two-edge lemma is unnecessary for the rate1 intensity
+proof. Its coarse rate1 consequence already suffices. The sharp O(a_N^2)
+input is still needed for the later sharp coupling conclusions and has
+not been proved, assumed globally or counted as completed coverage.
+
+No new external geometric property, axiom, Paper C port, dependency
+download or original manuscript edit is introduced. Palomar remains a
+later milestone.
+
+Verified under Lean v4.36.0-rc2: full build passed (14131 jobs); direct axiom audit passed for 11402 declarations using only propext, Classical.choice and Quot.sound; all 9936 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.43 GiB.

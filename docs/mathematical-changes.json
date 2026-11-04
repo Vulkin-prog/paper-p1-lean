@@ -10876,6 +10876,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "54a6f6bec6a1038acadd02490bf6aa937f6375e4"
+    },
+    {
+      "id": "P1-MATH-0157",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:erasure",
+        "number": "T19.10",
+        "page": 74,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 659,
+        "statement_sha256": "73b7de371366b51ea17e7e91afc81e0ef27fb86753f42d04ec4cf9a2ab1f474d"
+      },
+      "original_assumption": "The proof of the finer intensity assertion of T19.10, companion_sections/limits_appendix.tex:725-743, invokes the positive two-edge bound of T1.17, which is also used for the sharper O(a_N^2) coupling assertions.",
+      "finding": "For any finite dependent Boolean field, each deleted intensity error is bounded by the summed original marginal bias plus the positive second factorial active-edge moment. The already proved no-singleton seed theorem gives that moment at the coarse rate N^(-1+epsilon), for every actual dependent-pair population and all good-edge cutoffs. This rate suffices to prove the full finer intensity assertion without establishing or assuming the sharper O(a_N^2) estimate. Only the later sharp once/all coupling conclusions continue to depend on that stronger estimate.",
+      "evidence": [
+        "PaperP1.PairUnionWeights.weighted_bound",
+        "PaperP1.DependentPairUnionSeeds.family_data",
+        "PaperP1.DependentPairSecondMomentUnderInputs.uniform_joint_bound",
+        "PaperP1.DependentPairSecondMomentUnderInputs.uniform_good_bound",
+        "PaperP1.FiniteDeletedIntensity.once_bound",
+        "PaperP1.FiniteDeletedIntensity.isolated_bound",
+        "PaperP1.OriginalDeletedIntensity.finite_bounds",
+        "PaperP1.NominalMarginalBias.uniform_bound",
+        "PaperP1.OriginalDeletedIntensityUnderInputs.uniform_bound"
+      ],
+      "proposed_revision": "State the finite intensity inequality first. For the rate1 intensity assertion invoke only the coarse no-singleton two-edge bound. Reserve the sharp T1.17 estimate for the final O(a_N^2) assertions, with their independent remaining proof obligation.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14131 jobs); direct axiom audit passed for 11402 declarations using only propext, Classical.choice and Quot.sound; all 9936 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.43 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
