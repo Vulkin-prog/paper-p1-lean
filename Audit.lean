@@ -1801,6 +1801,11 @@ import PaperP1
 #print axioms PaperP1.SmallIntegerKernelRankGap.exists_small_kernel
 #print axioms PaperP1.SmallIntegerKernelRankGap.exists_uniform_small_kernel
 #print axioms PaperP1.SmallIntegerKernelRankGap.exists_uniform_small_kernel_equiv
+#print axioms PaperP1.SmoothAffineFormalBranch.coefficientLift_constant
+#print axioms PaperP1.SmoothAffineFormalBranch.curvePolynomial_constant
+#print axioms PaperP1.SmoothAffineFormalBranch.coefficientLift_injective
+#print axioms PaperP1.SmoothAffineFormalBranch.exists_branch
+#print axioms PaperP1.SmoothAffineFormalBranch.evaluation_zero_iff
 #print axioms PaperP1.SourceAffineChart.affine_radicands
 #print axioms PaperP1.SourceAffineChart.originalEquiv_dehomogenization
 #print axioms PaperP1.SourceAffineChart.veroneseEquiv_dehomogenization

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**318 mathematical improvements and two statement-scope corrections are confirmed.**
+**319 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23624,3 +23624,16 @@ Specializing the theorem to PowerSeries K for any field K gives a root with a pr
 P1-MATH-0320 closes this lifting improvement. The arbitrary rational smooth-point branch and the absolute irreducibility descent remain to be completed. NonGeometricRationalSingularity.Input is still an unproved alternative ordinary algebraic argument, and the Heath-Brown input is unchanged. T1.4 remains conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are318 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15527 jobs); direct axiom audit passed for 14101 declarations using only propext, Classical.choice and Quot.sound; all 13358 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.61 GiB.
+
+
+## Formal branch and exact polynomial kernel at every smooth affine field point
+
+A formal branch is now constructed at every field-valued affine point where the actual outer derivative is nonzero. The first coordinate is x+T over the original field; the coefficient lift is injective because it is polynomial translation followed by the canonical embedding into power series. Constant-term specialization recovers the exact affine fibre. The general simple-root lift of P1-MATH-0320 then supplies a second-coordinate series with the prescribed constant term and actual equation P(x+T,y(T))=0.
+
+This theorem applies over every field, with no characteristic-zero, integer-first-coordinate, globally regular-fibre, monicity or leading-coefficient condition. Only the selected point equation and the actual local derivative nonvanishing are used. It generalizes the earlier integer-regular-fibre branch construction to the local scope needed for rational-point singularity.
+
+For an irreducible positive-outer-degree polynomial P and any such evaluation killing P, the exact kernel is also proved: a polynomial Q evaluates to zero if and only if P divides Q in the original nested polynomial ring. The forward implication uses a nonzero resultant under nondivisibility, the actual Bezout identity and injectivity of the first-coordinate coefficient lift. The reverse implication is direct multiplication. No polynomial-kernel identity or counting bound is assumed.
+
+P1-MATH-0321 closes the arbitrary smooth-point branch and exact kernel step. The extension-field descent needed to prove geometric irreducibility from a rational smooth point remains open, as does its connection to the actual bihomogeneous geometric definition. NonGeometricRationalSingularity.Input is therefore still an unproved alternative ordinary argument; the Heath-Brown input is unchanged. T1.4 remains conditional and numbered coverage stays89 proved and75 conditional out of167 (164 completed). There are319 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15529 jobs); direct axiom audit passed for 14106 declarations using only propext, Classical.choice and Quot.sound; all 13367 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.59 GiB.

@@ -1,0 +1,11 @@
+# Formal branch and exact polynomial kernel at every smooth affine field point
+
+Source: companion T1.4 non-geometric biform branch, with the explicit unproved singularity premise recorded in P1-MATH-0319. Original source hashes remain preserved.
+
+A formal branch is now constructed at every field-valued affine point where the actual outer derivative is nonzero. The first coordinate is x+T over the original field; the coefficient lift is injective because it is polynomial translation followed by the canonical embedding into power series. Constant-term specialization recovers the exact affine fibre. The general simple-root lift of P1-MATH-0320 then supplies a second-coordinate series with the prescribed constant term and actual equation P(x+T,y(T))=0.
+
+This theorem applies over every field, with no characteristic-zero, integer-first-coordinate, globally regular-fibre, monicity or leading-coefficient condition. Only the selected point equation and the actual local derivative nonvanishing are used. It generalizes the earlier integer-regular-fibre branch construction to the local scope needed for rational-point singularity.
+
+For an irreducible positive-outer-degree polynomial P and any such evaluation killing P, the exact kernel is also proved: a polynomial Q evaluates to zero if and only if P divides Q in the original nested polynomial ring. The forward implication uses a nonzero resultant under nondivisibility, the actual Bezout identity and injectivity of the first-coordinate coefficient lift. The reverse implication is direct multiplication. No polynomial-kernel identity or counting bound is assumed.
+
+P1-MATH-0321 closes the arbitrary smooth-point branch and exact kernel step. The extension-field descent needed to prove geometric irreducibility from a rational smooth point remains open, as does its connection to the actual bihomogeneous geometric definition. NonGeometricRationalSingularity.Input is therefore still an unproved alternative ordinary argument; the Heath-Brown input is unchanged. T1.4 remains conditional and numbered coverage stays89 proved and75 conditional out of167 (164 completed). There are319 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
