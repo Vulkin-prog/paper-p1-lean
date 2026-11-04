@@ -13742,6 +13742,59 @@
         "status": "not_integrated"
       },
       "validation_commit": "2f29e749f58a25325e1bdae918037246367624ae"
+    },
+    {
+      "id": "P1-MATH-0213",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "Companion T21.1 defines sigma as the dimension of the rational even-unit code globally, but later computes it using a single channel without first spelling out a code independent of that choice.",
+      "finding": "A canonical code is defined by even parity in every fiber of ALL actual vertex ratios, without choosing a slope. Its complete nullity is proved equal to the literal unit count minus one on a sufficiently distant aligned channel, and zero when no channel exists. Rational weights are dominated by the full actual pair weights without privacy.",
+      "proposed_revision": "Define the global rational code from all exact ratio fibers before selecting a channel. Prove the unique repeated-fiber dimension theorem and its exact channel identification, then use the full-rank domination to compare global profiles.",
+      "impact": "Removes the global rational-code definition and finite channel-choice ambiguity in T21.1. Uniform-domain summation, the R_rat/R_al comparison and the dyadic positive assertions remain open.",
+      "evidence": [
+        "PaperP1.FiberEvenCode.mem_fiber",
+        "PaperP1.FiberEvenCode.constraint_apply",
+        "PaperP1.FiberEvenCode.mem_code",
+        "PaperP1.FiberEvenCode.zero_at_unique",
+        "PaperP1.FiberEvenCode.code_eq_bot_of_injective",
+        "PaperP1.FiberEvenCode.extension_mem",
+        "PaperP1.FiberEvenCode.fiber_rank_le",
+        "PaperP1.FiberEvenCode.finrank_eq_fiber",
+        "PaperP1.RationalUnitCode.label_positive",
+        "PaperP1.RationalUnitCode.ratio_eq_iff",
+        "PaperP1.RationalUnitCode.fiber_eq_units",
+        "PaperP1.RationalUnitCode.single_repeated_fiber",
+        "PaperP1.RationalUnitCode.nullity_eq_units",
+        "PaperP1.RationalUnitCode.weight_nonneg",
+        "PaperP1.RationalUnitCodeSupport.small_height_bound",
+        "PaperP1.RationalUnitCodeSupport.nullity_zero_of_no_channel",
+        "PaperP1.RationalUnitCodeSupport.weight_zero_of_no_channel",
+        "PaperP1.RationalUnitCodeSupport.units_le_full_loss",
+        "PaperP1.RationalUnitCodeSupport.nullity_le_full_loss",
+        "PaperP1.RationalUnitCodeSupport.weight_le_full",
+        "PaperP1.FiberEvenCode.constraint",
+        "PaperP1.FiberEvenCode.code",
+        "PaperP1.FiberEvenCode.fiber",
+        "PaperP1.RationalUnitCode.ratio",
+        "PaperP1.RationalUnitCode.code",
+        "PaperP1.RationalUnitCode.nullity",
+        "PaperP1.RationalUnitCode.weight"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14977 jobs); direct axiom audit passed for 13039 declarations using only propext, Classical.choice and Quot.sound; all 12084 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.57 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

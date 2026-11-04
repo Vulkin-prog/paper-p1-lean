@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records211 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records212 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13019 audited theorem/lemma declarations**. This
+- The project currently has **13039 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22559,3 +22559,20 @@ These are the actual original aligned ordered separated sums, with full local re
 P1-MATH-0212 records the complete actual macroscopic equivalents. The global rational-code definition/identification and its R_rat comparison, together with the dyadic positive assertions, remain open. T21.1 stays in progress. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are211 improvements and one statement-scope correction. No external input, new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14971 jobs); direct axiom audit passed for 13019 declarations using only propext, Classical.choice and Quot.sound; all 12057 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.59 GiB.
+
+
+## Canonical global rational even-unit code and exact aligned-channel identification
+
+The global rational even-unit code used by T21.1 now has a canonical finite linear definition, made BEFORE choosing any channel. Its exact aligned-channel dimension, support and domination by the full actual pair loss are proved.
+
+FiberEvenCode defines the linear space of coefficient functions having even sum in EVERY equality fiber of a finite map. The definition does not select a repeated fiber. It proves that injective maps have zero code, each fiber contributes its even-selection dimension, and if every fiber outside one chosen value is a singleton then the complete code has dimension exactly that fiber cardinality minus one. The proof uses an actual injective extension by zero and a matching supported-even dimension bound.
+
+RationalUnitCode applies this construction to ALL actual ratios of complete-window vertex values: ratio(i,j)=V_x(i)/V_y(j). The rational code, nullity and positive relation weight are defined from this full map, independently of an alignment witness or private-coordinate condition. For positive actual values, the fiber at the reduced rational a/b is proved exactly equal to the literal unit set b*V_x(i)=a*V_y(j).
+
+Two distinct equal ratios determine an actual positive reduced small channel, by the existing exact two-unit theorem. The growing-height geometric uniqueness proof then forces every repeated fiber to be the aligned channel's fiber. Consequently the GLOBAL rational nullity equals(#units-1)_Nat for every sufficiently distant enlarged primitive channel up to B^3, including zero-unit and nonprivate pairs.
+
+RationalUnitCodeSupport proves that absence of every actual enlarged channel forces the global code and weight to vanish. Independently of any private hypothesis, the rational unit dimension is at most the FULL actual pair loss: the actual union even-image dimension is bounded by its domain dimension, and exact union/intersection cardinalities supply the inequality. Thus on an aligned pair the global rational weight is nonnegative and at most2^rho-1.
+
+P1-MATH-0213 records this canonical code and its finite identifications. Its uniform macroscopic support/comparison and the global R_rat sum still need to be assembled from these internal finite lemmas. The complete actual R_al and C_al macroscopic formulas and equivalents are already proved. The dyadic positive assertions also remain, so T21.1 stays in progress. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are212 improvements and one statement-scope correction. No external input, new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14977 jobs); direct axiom audit passed for 13039 declarations using only propext, Classical.choice and Quot.sound; all 12084 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.57 GiB.

@@ -3205,3 +3205,6 @@ public import PaperP1.Asymptotics.MacroscopicLeadingPairGeometry
 public import PaperP1.Asymptotics.OneTwoChannelPhase
 public import PaperP1.Asymptotics.MacroscopicActualProfileEquivalents
 public import PaperP1.Asymptotics.MacroscopicPhaseScale
+public import PaperP1.Algebra.FiberEvenCode
+public import PaperP1.Arithmetic.RationalUnitCode
+public import PaperP1.Arithmetic.RationalUnitCodeSupport
