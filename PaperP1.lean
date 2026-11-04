@@ -2843,3 +2843,16 @@ public import PaperP1.Asymptotics.EnlargedOffsetRegime
 public import PaperP1.Asymptotics.EnlargedRootPatterns
 public import PaperP1.Asymptotics.EnlargedSmoothDegreeOneHostCount
 public import PaperP1.Asymptotics.EnlargedSmoothGeneralHostCount
+public import PaperP1.Algebra.BinarySpanSelections
+public import PaperP1.Arithmetic.AsymmetricLossSelections
+public import PaperP1.Arithmetic.AsymmetricSupportEnvelope
+public import PaperP1.Arithmetic.ForwardSubsetSelections
+public import PaperP1.Arithmetic.TranslatedKernelWindows
+public import PaperP1.Arithmetic.TruncatedAnchorPairs
+public import PaperP1.Arithmetic.TruncatedAnchorWitness
+public import PaperP1.Arithmetic.TruncatedAsymmetricSupport
+public import PaperP1.Arithmetic.TruncatedSubsetAnchor
+public import PaperP1.Asymptotics.AsymmetricSparseSupport
+public import PaperP1.Asymptotics.TranslatedKernelCounts
+public import PaperP1.Asymptotics.TruncatedAnchorPairCount
+public import PaperP1.Asymptotics.TruncatedAsymmetricSupportCount
