@@ -3181,3 +3181,6 @@ public import PaperP1.Asymptotics.BoundedNormalizedDefectPairCount
 public import PaperP1.Asymptotics.MacroscopicNormalizedDefectHosts
 public import PaperP1.Arithmetic.EnlargedNormalizedDefectDiagnostics
 public import PaperP1.Asymptotics.MacroscopicKernelExceptionHosts
+public import PaperP1.Arithmetic.BoundedGeometricPairCount
+public import PaperP1.Asymptotics.MacroscopicHighRelationMass
+public import PaperP1.Asymptotics.MacroscopicRelationPowers

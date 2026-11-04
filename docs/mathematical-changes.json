@@ -13319,6 +13319,52 @@
         "status": "not_integrated"
       },
       "validation_commit": "e429b6072f9f6be328f1fac4e7dfcff2bd660262"
+    },
+    {
+      "id": "P1-MATH-0203",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "The proof of T21.1 bounds all nonleading reduced heights at least three by M*B^O(1)*2^(L/3+o(L)), including every residual relation and the absolute signed contribution.",
+      "finding": "Literal moving-height actual relation powers and an exact bounded-source geometric-host injection are proved. The full macroscopic primitive-channel mask has at most5*M*B^10 hosts, and summing its actual powers gives M^(1+1/q+epsilon) for every fixed minimum height q. At q=3 this proves the printed M^(4/3+epsilon) high-channel bound for both the positive relation sum and the sum of absolute signed 0/1 affine-compatibility weights, including both orientations and zero-unit pairs.",
+      "proposed_revision": "State the exact host injection and growing-height union count before summing actual relation powers. Use a single moving-height threshold and make the absolute signed-weight domination explicit. Keep the remaining leading channel translation calculations separate.",
+      "impact": "Discharges the actual weighted high-channel error bound in the macroscopic part of T21.1. Leading height-two and height-one comparisons, channel sums, parity equivalents and the dyadic positive assembly remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.BoundedGeometricPairCount.pairs_card",
+        "PaperP1.BoundedGeometricPairCount.coefficients_card",
+        "PaperP1.BoundedGeometricPairCount.pairs_card_height",
+        "PaperP1.BoundedGeometricPairCount.covered_card",
+        "PaperP1.MacroscopicHighRelationMass.high_subset_covered",
+        "PaperP1.MacroscopicHighRelationMass.high_card_bound",
+        "PaperP1.MacroscopicHighRelationMass.affine_weight_abs_le",
+        "PaperP1.MacroscopicHighRelationMass.uniform_power_sum",
+        "PaperP1.MacroscopicHighRelationMass.uniform_weights",
+        "PaperP1.MacroscopicHighRelationMass.high_height_three",
+        "PaperP1.MacroscopicRelationPowers.uniform_channel",
+        "PaperP1.MacroscopicRelationPowers.uniform_height",
+        "PaperP1.MacroscopicRelationPowers.uniform_no_units",
+        "PaperP1.MacroscopicRelationPowers.uniform_rational_units",
+        "PaperP1.MacroscopicRelationPowers.uniform_rational_height",
+        "PaperP1.BoundedGeometricPairCount.pairs",
+        "PaperP1.BoundedGeometricPairCount.coefficients",
+        "PaperP1.BoundedGeometricPairCount.covered",
+        "PaperP1.MacroscopicHighRelationMass.highPairs",
+        "PaperP1.MacroscopicHighRelationMass.affineWeight"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14929 jobs); direct axiom audit passed for 12909 declarations using only propext, Classical.choice and Quot.sound; all 11924 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.75 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

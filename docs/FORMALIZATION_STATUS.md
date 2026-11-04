@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records201 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records202 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **12894 audited theorem/lemma declarations**. This
+- The project currently has **12909 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22323,3 +22323,73 @@ No new external input, dependency, axiom, compiler setting or original
 manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14923 jobs); direct axiom audit passed for 12894 declarations using only propext, Classical.choice and Quot.sound; all 11904 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.78 GiB.
+
+
+## Actual macroscopic weighted high-channel profiles with the four-thirds error power
+
+Companion T21.1 now has the ACTUAL weighted high-channel profile
+bound on its literal macroscopic interval. Both the positive relation
+weight and the absolute signed affine-compatibility weight have the
+printed high-channel error power 4/3, with every growing height up to
+B^3 and both coefficient orientations included. The leading height-
+two channel and full profile equivalents remain open.
+
+MacroscopicRelationPowers transports the proved actual pair-loss
+bounds to literal powers 2^rho. For every fixed q>=1 and epsilon>0,
+it proves 2^rho<=M^(1/q+epsilon) on every actual enlarged channel of
+height at least q. The threshold precedes every moving positive
+coprime coefficient pair, every source and target, and every height
+up to B^3. Swapping both roots and coefficients covers the two
+orientations. Zero-unit actual pairs have the separate subpower
+bound 2^rho<=M^epsilon. The exact rational-unit power has a matching
+height bound, with no upper height restriction in that finite part.
+
+BoundedGeometricPairCount counts the original ordered channel hosts
+on [2,M). The map(x,y)->(x,b*x-a*y) is injective at every positive a,
+and gives the exact upper bound
+
+  #channelPairs <= M*(2(a+b)B+1).
+
+Every positive coefficient pair at height at most B^3 consequently
+has at most 5*M*B^4 hosts. There are exactly B^6 coefficient pairs
+before reducing or filtering heights. The entire finite union of
+all those channels has at most 5*M*B^10 hosts. This is an actual host
+count, with no assumed matrix or mass estimate.
+
+MacroscopicHighRelationMass defines the actual macroscopic union
+of all primitive channels whose maximum coefficient is at least q
+and at most B^3. Both orientations and every original ordered label
+are kept. This full mask contains its ordered separated subfamilies.
+Its cardinality is bounded by the proved bounded-source count.
+Summing the actual relation powers and absorbing the exact logarithmic
+polynomial factor yields
+
+  sum_high 2^rho <= M^(1+1/q+epsilon).
+
+The positive weight 2^rho-1 is dominated pointwise by 2^rho.
+For EVERY Boolean compatibility function eta on the actual pairs,
+Lean also proves |eta*2^rho-1|<=2^rho, interpreting eta as 0 or 1.
+Thus the same uniform theorem bounds the positive sum and the SUM OF
+ABSOLUTE signed affine weights. The result is stronger than merely
+bounding the absolute value of their total signed sum.
+
+At q=3 this gives the exact high-channel power M^(4/3+epsilon)
+needed by the macroscopic assertions of T21.1. The general q version
+also keeps the higher-height exponents explicit. No homogeneous
+probability or nominal-mean rescaling is used: the sums are literal
+unweighted actual relation-code weights on the original interval.
+All cutoffs, height choices, coefficient orientations, sources,
+targets and Boolean compatibility functions follow the threshold.
+
+P1-MATH-0203 records these actual weighted high-channel bounds.
+Remaining work for T21.1 includes the fixed-height-two rational/full
+comparison, the height-one separated contribution, actual positive
+and signed channel translation sums, their distinct parity formulas,
+leading equivalents and the parallel dyadic positive assertion.
+Coverage stays 88 proved and 70 conditional out of 167, with nine
+incomplete results. There are 202 improvements and one statement-
+scope correction. No external input, kernel axiom, dependency,
+compiler change or original manuscript edit is introduced.
+Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14929 jobs); direct axiom audit passed for 12909 declarations using only propext, Classical.choice and Quot.sound; all 11924 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.75 GiB.

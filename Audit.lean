@@ -2640,6 +2640,10 @@ import PaperP1
 #print axioms PaperP1.BoundedCoverForcesGraph.degreeY_eq_one_of_many
 #print axioms PaperP1.BoundedCoverForcesGraph.good_card_bounded
 #print axioms PaperP1.BoundedCoverForcesGraph.degreeY_eq_one_bounded
+#print axioms PaperP1.BoundedGeometricPairCount.pairs_card
+#print axioms PaperP1.BoundedGeometricPairCount.coefficients_card
+#print axioms PaperP1.BoundedGeometricPairCount.pairs_card_height
+#print axioms PaperP1.BoundedGeometricPairCount.covered_card
 #print axioms PaperP1.BoundedIntegerPlanes.interval_mem
 #print axioms PaperP1.BoundedIntegerPlanes.height_le_iff
 #print axioms PaperP1.BoundedIntegerPlanes.mem_family
@@ -6840,6 +6844,12 @@ import PaperP1
 #print axioms PaperP1.MacroscopicFixedHeightResidual.large_kernel_rate
 #print axioms PaperP1.MacroscopicFixedHeightResidual.full_kernel_rate
 #print axioms PaperP1.MacroscopicFixedHeightResidual.pair_loss_fixed_height
+#print axioms PaperP1.MacroscopicHighRelationMass.high_subset_covered
+#print axioms PaperP1.MacroscopicHighRelationMass.high_card_bound
+#print axioms PaperP1.MacroscopicHighRelationMass.affine_weight_abs_le
+#print axioms PaperP1.MacroscopicHighRelationMass.uniform_power_sum
+#print axioms PaperP1.MacroscopicHighRelationMass.uniform_weights
+#print axioms PaperP1.MacroscopicHighRelationMass.high_height_three
 #print axioms PaperP1.MacroscopicIntervalGeometry.mem_starts_iff
 #print axioms PaperP1.MacroscopicIntervalGeometry.starts_pos
 #print axioms PaperP1.MacroscopicIntervalGeometry.log_lower
@@ -6856,6 +6866,11 @@ import PaperP1
 #print axioms PaperP1.MacroscopicNormalizedDefectHosts.uniform_count
 #print axioms PaperP1.MacroscopicNormalizedPairResidual.rank_sublinear
 #print axioms PaperP1.MacroscopicPolynomialScale.polynomial_lt_source
+#print axioms PaperP1.MacroscopicRelationPowers.uniform_channel
+#print axioms PaperP1.MacroscopicRelationPowers.uniform_height
+#print axioms PaperP1.MacroscopicRelationPowers.uniform_no_units
+#print axioms PaperP1.MacroscopicRelationPowers.uniform_rational_units
+#print axioms PaperP1.MacroscopicRelationPowers.uniform_rational_height
 #print axioms PaperP1.MacroscopicRootLogScale.root_band
 #print axioms PaperP1.ManyPlanarSquareProducts.primitive_mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.mass_le
