@@ -3321,3 +3321,6 @@ public import PaperP1.Arithmetic.IntegerFactorProjectiveCurve
 public import PaperP1.Asymptotics.DeterminantFactorCurveCover
 public import PaperP1.Asymptotics.DeterminantFactorHeight
 public import PaperP1.Asymptotics.DeterminantSignedFactorCover
+public import PaperP1.Algebra.BinaryLinearSubstitution
+public import PaperP1.Algebra.BinarySubstitutionHeight
+public import PaperP1.Diophantine.UnimodularBinaryCoordinates

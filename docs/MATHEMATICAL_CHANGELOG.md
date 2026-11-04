@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**245 mathematical improvements and one statement-scope correction are confirmed.**
+**246 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -22423,3 +22423,22 @@ DeterminantFactorCurveCover constructs the finite factor family, proves all proj
 P1-MATH-0246 records this complete finite factor and height reduction. The factors are proved irreducible over Z[X,Y]; no absolute-irreducibility claim is made. Remaining work includes the appropriate geometric factor cases, changes to short-vector lattice coordinates, uniform curve counts and the final interval/lattice summations. T1.4 and T1.5 stay in progress; coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are245 improvements and one statement-scope correction. No external input, axiom, Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15203 jobs); direct axiom audit passed for 13577 declarations using only propext, Classical.choice and Quot.sound; all 12744 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.87 GiB.
+
+
+## Exact integral binary coordinate changes, primitive points and explicit coefficient heights
+
+Integral binary coordinate changes now have a fully proved polynomial substitution, exact evaluation identity, primitive-point transport and explicit coefficient-height bound. These are prerequisites for moving the actual auxiliary curves into lattice coordinates; no short lattice basis or local curve-count theorem is assumed or claimed.
+
+BinaryLinearSubstitution constructs the algebra homomorphism induced by an actual 2 by 2 matrix. Substitution composition is proved with the correct reversed matrix order. Actual inverse integer matrices give an algebra equivalence, so nonzero equations remain nonzero. Every homogeneous degree is preserved, and evaluation of the transformed equation at z equals evaluation of the original equation at the actual vector A*z.
+
+UnimodularBinaryCoordinates proves reconstruction, injectivity and exact finite-population cardinality under an integer left inverse. An explicit Bezout calculation transports coprimality of the two coordinates, hence primitivity of integer pairs in both directions. Primitive pairs are nonzero. If matrix entries have absolute value at most H and source coordinates at most L, each transformed coordinate is bounded by 2*H*L.
+
+BinarySubstitutionHeight proves the stronger linear-factor height estimate without a degree loss at each multiplication. For a degree-d homogeneous integer binary form F of coefficient height at most H and a matrix with entries of absolute value at most M, EVERY coefficient of the actual substituted form is bounded by
+
+  (d+1)*H*(2*M)^d.
+
+The proof derives the actual affine-chart expansion, bounds products of arbitrary powers of two linear forms, and recovers all homogeneous coefficients from the chart. No coefficient-height estimate is supplied as an unproved input.
+
+P1-MATH-0247 records the precise direction of the coordinate/substitution identities and the explicit degree-dependent height factor. Simultaneous transport of both projective pairs, actual short-vector lattice bases, the geometric curve cases and the final interval counts remain to be proved. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are246 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15209 jobs); direct axiom audit passed for 13603 declarations using only propext, Classical.choice and Quot.sound; all 12773 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.86 GiB.

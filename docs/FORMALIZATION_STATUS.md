@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records245 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records246 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13577 audited theorem/lemma declarations**. This
+- The project currently has **13603 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23192,3 +23192,22 @@ DeterminantFactorCurveCover constructs the finite factor family, proves all proj
 P1-MATH-0246 records this complete finite factor and height reduction. The factors are proved irreducible over Z[X,Y]; no absolute-irreducibility claim is made. Remaining work includes the appropriate geometric factor cases, changes to short-vector lattice coordinates, uniform curve counts and the final interval/lattice summations. T1.4 and T1.5 stay in progress; coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are245 improvements and one statement-scope correction. No external input, axiom, Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15203 jobs); direct axiom audit passed for 13577 declarations using only propext, Classical.choice and Quot.sound; all 12744 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.87 GiB.
+
+
+## Exact integral binary coordinate changes, primitive points and explicit coefficient heights
+
+Integral binary coordinate changes now have a fully proved polynomial substitution, exact evaluation identity, primitive-point transport and explicit coefficient-height bound. These are prerequisites for moving the actual auxiliary curves into lattice coordinates; no short lattice basis or local curve-count theorem is assumed or claimed.
+
+BinaryLinearSubstitution constructs the algebra homomorphism induced by an actual 2 by 2 matrix. Substitution composition is proved with the correct reversed matrix order. Actual inverse integer matrices give an algebra equivalence, so nonzero equations remain nonzero. Every homogeneous degree is preserved, and evaluation of the transformed equation at z equals evaluation of the original equation at the actual vector A*z.
+
+UnimodularBinaryCoordinates proves reconstruction, injectivity and exact finite-population cardinality under an integer left inverse. An explicit Bezout calculation transports coprimality of the two coordinates, hence primitivity of integer pairs in both directions. Primitive pairs are nonzero. If matrix entries have absolute value at most H and source coordinates at most L, each transformed coordinate is bounded by 2*H*L.
+
+BinarySubstitutionHeight proves the stronger linear-factor height estimate without a degree loss at each multiplication. For a degree-d homogeneous integer binary form F of coefficient height at most H and a matrix with entries of absolute value at most M, EVERY coefficient of the actual substituted form is bounded by
+
+  (d+1)*H*(2*M)^d.
+
+The proof derives the actual affine-chart expansion, bounds products of arbitrary powers of two linear forms, and recovers all homogeneous coefficients from the chart. No coefficient-height estimate is supplied as an unproved input.
+
+P1-MATH-0247 records the precise direction of the coordinate/substitution identities and the explicit degree-dependent height factor. Simultaneous transport of both projective pairs, actual short-vector lattice bases, the geometric curve cases and the final interval counts remain to be proved. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are246 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15209 jobs); direct axiom audit passed for 13603 declarations using only propext, Classical.choice and Quot.sound; all 12773 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.86 GiB.
