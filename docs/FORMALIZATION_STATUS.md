@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records205 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records206 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **12943 audited theorem/lemma declarations**. This
+- The project currently has **12963 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22444,3 +22444,31 @@ MacroscopicChannelTranslations proves that all finite endpoint conditions hold e
 P1-MATH-0206 records these literal finite bijections and uniform endpoint bounds. This establishes the translation factor used in the leading macroscopic term, but not yet its full signed or unsigned even-selection enumeration. The global rational-code partition, actual signed affine identification, leading parity equivalents and dyadic positive assembly remain open, so T21.1 stays in progress. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are205 improvements and one statement-scope correction. No external input, new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14941 jobs); direct axiom audit passed for 12943 declarations using only propext, Classical.choice and Quot.sound; all 11963 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.71 GiB.
+
+
+## Actual macroscopic leading rational-unit sums and distinct exact parity formulas
+
+The leading macroscopic rational-channel calculation in T21.1 is now proved for the ACTUAL positive and predecessor-signed unit sums on the original roots, rather than for an abstract channel mass.
+
+IntervalUnitFourierAggregate reindexes the actual nonzero even unit selections by the existing canonical finite words. It proves the positive and signed sums on every arbitrary interval [lo,hi) equal literal pattern/source-pair aggregates. The two orientations are included exactly, using their proved disjointness. A finite weighted translation estimate retains signed cancellation in the main term and bounds the endpoint error by the positive channel sum. No target counting or mass estimate is assumed.
+
+MacroscopicLeadingUnitSums defines the literal leading totals as twice the forward1:2 sum over all original macroscopic roots. For both positive unitWeight and signedUnitSum, it proves the main terms
+
+  (M - 2*M^delta) * U_1,2(L),
+  (M - 2*M^delta) * S_1,2(L),
+
+with a common explicit absolute error at most8*B*U_1,2(L). The exact ceiling version has error6*B*U_1,2(L). Ceiling replacement uses the proved signed bound |S|<=U, preserving the actual predecessor sign rather than replacing it by a positive weight. The finite positive channel upper bound and critical power transport then give the sharper endpoint error M^(1/2+epsilon), uniformly over every critical length after the threshold.
+
+OneTwoChannelParity proves the exact printed signed identity, for L=2m+s, s<2 and m>=1:
+
+  S_1,2(L)=2^(m-1)*[(s+1)m+s^2+s+4]-3L+1.
+
+It also proves the exact positive identities with B=L+1=2k+r. For k>=2 and r<2, the full positive sum is
+
+  U_1,2(L)=2^(k-1)*[(2+r)k+6+4r]-3B-2.
+
+The even-B and odd-B cases are verified separately. This is the full finite channel sum, including the nonplateau terms. The distinct parities of B and L are kept explicit throughout.
+
+P1-MATH-0207 records this actual leading rational-unit calculation. The global rational-code partition, comparison with actual signed affine weights and final relative equivalents, and the dyadic positive assembly remain separate work. T21.1 stays in progress. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are206 improvements and one statement-scope correction. No external input, new axiom, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14947 jobs); direct axiom audit passed for 12963 declarations using only propext, Classical.choice and Quot.sound; all 11990 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.68 GiB.

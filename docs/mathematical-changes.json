@@ -13486,6 +13486,59 @@
         "status": "not_integrated"
       },
       "validation_commit": "2087845533be7ca8a16932446cc62f30c1fe4041"
+    },
+    {
+      "id": "P1-MATH-0207",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "Companion T21.1 multiplies the leading channel translation factor by unsigned/signed even-unit selection sums and invokes the channel identity for S_1,2(L), with different parity conventions in the positive and signed equivalents.",
+      "finding": "The actual positive and signed1:2 rational-unit sums on all original macroscopic roots are proved equal their leading terms up to M^(1/2+epsilon). Exact word/source reindexing and finite weighted endpoint errors are internal. The printed signed S_1,2 identity and a full unsigned channel identity are proved with distinct L and B parities.",
+      "proposed_revision": "Give the actual even-selection reindexing and a common endpoint bound8*B*U before absorbing it. State the exact full positive channel identity alongside the signed identity, and explicitly distinguish L parity from B=L+1 parity.",
+      "impact": "Discharges the actual leading rational-unit channel sums and exact parity identities in the macroscopic proof of T21.1. The global code partition, actual full signed comparison, relative equivalents and dyadic positive assertion are not yet complete.",
+      "evidence": [
+        "PaperP1.OneTwoChannelParity.signed_formula",
+        "PaperP1.OneTwoChannelParity.unsigned_odd_B",
+        "PaperP1.OneTwoChannelParity.unsigned_even_B",
+        "PaperP1.OneTwoChannelParity.unsigned_formula",
+        "PaperP1.MacroscopicLeadingUnitSums.uniform_ceil_errors",
+        "PaperP1.MacroscopicLeadingUnitSums.remove_ceiling_error",
+        "PaperP1.MacroscopicLeadingUnitSums.uniform_real_errors",
+        "PaperP1.MacroscopicLeadingUnitSums.endpoint_rate",
+        "PaperP1.MacroscopicLeadingUnitSums.uniform_power_errors",
+        "PaperP1.IntervalUnitFourierAggregate.weighted_unit_hosts",
+        "PaperP1.IntervalUnitFourierAggregate.unsigned_integer_sum",
+        "PaperP1.IntervalUnitFourierAggregate.signed_integer_sum",
+        "PaperP1.IntervalUnitFourierAggregate.unsigned_unit_sum",
+        "PaperP1.IntervalUnitFourierAggregate.signed_unit_sum",
+        "PaperP1.IntervalUnitFourierAggregate.unsigned_twice_forward",
+        "PaperP1.IntervalUnitFourierAggregate.signed_twice_forward",
+        "PaperP1.IntervalUnitFourierAggregate.unsigned_symmetric_sum",
+        "PaperP1.IntervalUnitFourierAggregate.signed_symmetric_sum",
+        "PaperP1.IntervalUnitFourierAggregate.unsigned_error",
+        "PaperP1.IntervalUnitFourierAggregate.signed_error",
+        "PaperP1.MacroscopicLeadingUnitSums.unsignedTotal",
+        "PaperP1.MacroscopicLeadingUnitSums.signedTotal",
+        "PaperP1.IntervalUnitFourierAggregate.forwardUnsigned",
+        "PaperP1.IntervalUnitFourierAggregate.forwardSigned",
+        "PaperP1.IntervalUnitFourierAggregate.sourceCount",
+        "PaperP1.IntervalUnitFourierAggregate.unsignedHosts",
+        "PaperP1.IntervalUnitFourierAggregate.signedHosts"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14947 jobs); direct axiom audit passed for 12963 declarations using only propext, Classical.choice and Quot.sound; all 11990 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.68 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

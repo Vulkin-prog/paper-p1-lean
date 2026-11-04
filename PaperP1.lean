@@ -3190,3 +3190,6 @@ public import PaperP1.Arithmetic.SeparatedNormalizedUnits
 public import PaperP1.Asymptotics.MacroscopicSeparatedHeightOne
 public import PaperP1.Arithmetic.IntervalSourceTranslations
 public import PaperP1.Asymptotics.MacroscopicChannelTranslations
+public import PaperP1.Arithmetic.OneTwoChannelParity
+public import PaperP1.Asymptotics.MacroscopicLeadingUnitSums
+public import PaperP1.Model.IntervalUnitFourierAggregate
