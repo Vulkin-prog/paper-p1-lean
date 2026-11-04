@@ -3084,3 +3084,10 @@ public import PaperP1.Model.SignedPrivateField
 public import PaperP1.Model.SignedPrivatePalmForcing
 public import PaperP1.Probability.ForcingCoordinateCost
 public import PaperP1.Probability.PrivateCoordinateForcing
+public import PaperP1.Arithmetic.AnchoredWindowPivots
+public import PaperP1.Model.AnchoredPrivateForcing
+public import PaperP1.Model.AnchoredPrivateValues
+public import PaperP1.Model.AnchoredWindowForcing
+public import PaperP1.Model.UnsignedAnchoredRunForcing
+public import PaperP1.Probability.BinaryForcingFlip
+public import PaperP1.Probability.WordForcingFlipCost
