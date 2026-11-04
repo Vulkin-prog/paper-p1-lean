@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records216 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records217 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13100 audited theorem/lemma declarations**. This
+- The project currently has **13113 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22657,3 +22657,18 @@ The full pointwise domination also proves0<=R_rat<=R_al. Combining the two actua
 P1-MATH-0217 records the complete dyadic positive additive formulas and comparison. All macroscopic assertions were already proved. T21.1 remains in progress only for the final positive B-modulo-three relative equivalent. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are216 improvements and one statement-scope correction. No new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15001 jobs); direct axiom audit passed for 13100 declarations using only propext, Classical.choice and Quot.sound; all 12157 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.47 GiB.
+
+
+## Exact positive two-to-three B phase and uniform moving-residue equivalent
+
+The positive two-to-three word sum in companion T21.1 now has an exact B=L+1 modulo-three formula and its uniform moving-residue equivalent.
+
+TwoThreePositiveParity proves all three finite cases, including the separate divisible-B boundary where floor(L/3)=k-1. For B=3k+r, r<3 and k>=2, the unified identity is
+
+  U_2,3(L) = 2^(k-1)*((3+r)*k+r^2+5*r+18)-5*B-6.
+
+TwoThreePositivePhase defines the literal positive word reference ((3+r)/6)*B*2^k. Both the finite sum and reference, normalized by k*2^k, tend to (3+r)/2 for each of the three residues. Their ratio tends to one. A finite-residue maximum produces a single length threshold BEFORE choosing any L, and the critical-window geometry then produces a single scale threshold before every moving critical length. Absolute relative-error inequalities are proved with a strictly positive denominator.
+
+P1-MATH-0218 records the exact finite formula and uniform positive phase. The actual dyadic additive main terms and five-fourths comparison were already proved in P1-MATH-0217. Their final transfer to relative equivalents remains to be assembled, so T21.1 is still in progress. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are217 improvements and one statement-scope correction. No external input, new axiom, dependency, compiler change, Paper C code reuse or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15005 jobs); direct axiom audit passed for 13113 declarations using only propext, Classical.choice and Quot.sound; all 12171 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.46 GiB.

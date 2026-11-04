@@ -13977,6 +13977,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "9480fbdb2820fc2c8bb43710e3edf8e5f71d77bc"
+    },
+    {
+      "id": "P1-MATH-0218",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "The positive leading dyadic equivalent uses B=L+1 modulo three, uniformly over all critical lengths.",
+      "finding": "The exact finite formula, its divisible-B boundary, positive normalized limit and uniform relative equivalent are proved for the actual unsigned word sum.",
+      "proposed_revision": "Record the exact B-residue formula and the single threshold obtained by assembling all three residue limits before selecting the moving length.",
+      "impact": "Removes the last finite phase input needed to transfer the proved dyadic actual and global rational additive formulas to their printed relative equivalents.",
+      "evidence": [
+        "PaperP1.TwoThreePositiveParity.unsigned_B_zero",
+        "PaperP1.TwoThreePositiveParity.unsigned_B_one",
+        "PaperP1.TwoThreePositiveParity.unsigned_B_two",
+        "PaperP1.TwoThreePositiveParity.unsigned_formula",
+        "PaperP1.TwoThreePositivePhase.positiveMain_pos",
+        "PaperP1.TwoThreePositivePhase.positive_normalized_identity",
+        "PaperP1.TwoThreePositivePhase.tendsto_positive_normalized",
+        "PaperP1.TwoThreePositivePhase.positiveMain_eval",
+        "PaperP1.TwoThreePositivePhase.tendsto_positiveMain_normalized",
+        "PaperP1.TwoThreePositivePhase.tendsto_positive_ratio",
+        "PaperP1.TwoThreePositivePhase.uniform_ratio_lengths",
+        "PaperP1.TwoThreePositivePhase.uniform_relative_lengths",
+        "PaperP1.TwoThreePositivePhase.uniform_critical_relative",
+        "PaperP1.TwoThreePositivePhase.positiveMain"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15005 jobs); direct axiom audit passed for 13113 declarations using only propext, Classical.choice and Quot.sound; all 12171 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.46 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

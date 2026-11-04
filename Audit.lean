@@ -5446,6 +5446,10 @@ import PaperP1
 #print axioms PaperP1.TwoTargetWindowSections.physical_even
 #print axioms PaperP1.TwoTargetWindowSections.physical_relation
 #print axioms PaperP1.TwoTargetWindowSections.dimension_le_length
+#print axioms PaperP1.TwoThreePositiveParity.unsigned_B_zero
+#print axioms PaperP1.TwoThreePositiveParity.unsigned_B_one
+#print axioms PaperP1.TwoThreePositiveParity.unsigned_B_two
+#print axioms PaperP1.TwoThreePositiveParity.unsigned_formula
 #print axioms PaperP1.TwoWindowComponentSizeBudget.size_min
 #print axioms PaperP1.TwoWindowComponentSizeBudget.four_vertex_budget
 #print axioms PaperP1.TwoWindowComponentSizeBudget.two_subset
@@ -8097,6 +8101,15 @@ import PaperP1
 #print axioms PaperP1.TwoTargetWeakRegularization.uniform_selection_data
 #print axioms PaperP1.TwoTargetWeakSingletonCount.uniform_hosts
 #print axioms PaperP1.TwoTargetWeakUpperCount.uniform_pairs
+#print axioms PaperP1.TwoThreePositivePhase.positiveMain_pos
+#print axioms PaperP1.TwoThreePositivePhase.positive_normalized_identity
+#print axioms PaperP1.TwoThreePositivePhase.tendsto_positive_normalized
+#print axioms PaperP1.TwoThreePositivePhase.positiveMain_eval
+#print axioms PaperP1.TwoThreePositivePhase.tendsto_positiveMain_normalized
+#print axioms PaperP1.TwoThreePositivePhase.tendsto_positive_ratio
+#print axioms PaperP1.TwoThreePositivePhase.uniform_ratio_lengths
+#print axioms PaperP1.TwoThreePositivePhase.uniform_relative_lengths
+#print axioms PaperP1.TwoThreePositivePhase.uniform_critical_relative
 #print axioms PaperP1.uniformLittleOOn_zero
 #print axioms PaperP1.UniformGeometricCountsUnderInputs.one_variable
 #print axioms PaperP1.UniformGeometricCountsUnderInputs.companion_T1_7
