@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records294 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records295 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13996 audited theorem/lemma declarations**. This
+- The project currently has **14002 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24068,3 +24068,16 @@ The conclusion is the full N'^epsilon minimum of the two determinant costs at N'
 P1-MATH-0295 closes actual uniform primitive counting on every gcd family under those two existing ordinary inputs. Exponential-shape/cost comparison back to the original scales, summation over the finite reduction families and the initial original-scale alignment obligation recorded inP1-MATH-0294 remain open. Their completion is required before marking T1.4 complete. The two ordinary input proofs remain open as well. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are294 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15443 jobs); direct axiom audit passed for 13996 declarations using only propext, Classical.choice and Quot.sound; all 13235 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.02 GiB.
+
+
+## Uniform comparison of every reduced determinant exponential with the original source scales
+
+The exact determinant exponential at every effective integer size and normalized reduced scale is now bounded by N^eta times its original source-box value, uniformly before all moving coefficients, shifts, boxes and reduction divisors. This comparison is unconditional and supplies the analytic step needed after the actual primitive count on each gcd family.
+
+DeterminantShapeStability proves an explicit real-variable inequality: when t>=1, t/2<=t'<=t, 0<=A,B<=3*t, 0<=A'<=A+c, 0<=B'<=B+c, c,u>=0 and t-t'<=u, the weighted product quotient at the changed arguments is at most its original value plus81*u/4+27*c/2+9*c^2/4. The denominator and numerator losses are proved separately. The constant-c version is retained for the separate initial-scale alignment obligation.
+
+For gcd reduction, every original Box scale is at least1 and each positive divisor is at least1. Hence max(1,D/g)<=D, and likewise for the other scales; both normalized logarithmic products are nonnegative and do not exceed their original values. Thus c=0 here. The literal rounded parameter has logarithm between half the original logarithm and the original logarithm, and its logarithmic loss is at most log(h). The source monomials give both original base logarithms at most3*log(N). A single polylogarithmic shift threshold makes log(h)<=4*eta*log(N)/81 for every family, so the exact exponential loss is at most N^eta. No nonempty-family premise, reduced count input, extra height assumption or implicit constant is used by this comparison.
+
+P1-MATH-0296 closes the reduced exponential-shape comparison. Comparison of both full determinant costs, summation of the finite gcd families, and the initial original-scale alignment recorded inP1-MATH-0294 remain open before T1.4 can be marked complete. The two ordinary input proofs used by the actual counts also remain open. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are295 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15447 jobs); direct axiom audit passed for 14002 declarations using only propext, Classical.choice and Quot.sound; all 13241 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.00 GiB.

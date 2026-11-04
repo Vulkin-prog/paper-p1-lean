@@ -2333,6 +2333,11 @@ import PaperP1
 #print axioms PaperP1.DeterminantRelativeIntervals.alpha_identity
 #print axioms PaperP1.DeterminantRelativeIntervals.alpha_bounds
 #print axioms PaperP1.DeterminantRelativeIntervals.alpha_absolute_bound
+#print axioms PaperP1.DeterminantShapeStability.denominator_loss
+#print axioms PaperP1.DeterminantShapeStability.numerator_loss
+#print axioms PaperP1.DeterminantShapeStability.weighted_loss
+#print axioms PaperP1.DeterminantShapeStability.enlarged_le_original
+#print axioms PaperP1.DeterminantShapeStability.enlarged_log_bounds
 #print axioms PaperP1.DeterminantStrictMargin.lowerCost_scaling
 #print axioms PaperP1.DeterminantStrictMargin.degree_margin_cost
 #print axioms PaperP1.DeterminantStrictMargin.cleared_determinant_small
@@ -2551,6 +2556,7 @@ import PaperP1
 #print axioms PaperP1.ReducedBinaryLatticeBasis.reduced_second_image
 #print axioms PaperP1.ReducedBinaryLatticeBasis.reduced_geometry
 #print axioms PaperP1.ReducedBinaryLatticeBasis.exists_reduced_basis
+#print axioms PaperP1.ReducedDeterminantShape.uniform_exp_comparison
 #print axioms PaperP1.ReducedDyadicScales.enlarged_ge_one
 #print axioms PaperP1.ReducedDyadicScales.raw_le_enlarged
 #print axioms PaperP1.ReducedDyadicScales.enlarged_le_double

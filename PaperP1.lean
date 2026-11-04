@@ -3439,3 +3439,5 @@ public import PaperP1.Arithmetic.ActualReducedSourceBox
 public import PaperP1.Analysis.ReducedSourceBarrier
 public import PaperP1.Analysis.ReducedSourceShiftBudget
 public import PaperP1.Asymptotics.ActualReducedFamilyCount
+public import PaperP1.Analysis.DeterminantShapeStability
+public import PaperP1.Analysis.ReducedDeterminantShape

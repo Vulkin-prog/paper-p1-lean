@@ -17161,6 +17161,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "a3eec40d295a2d5b37c5aed202d0fd2b66fcaefa"
+    },
+    {
+      "id": "P1-MATH-0296",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The exponential determinant scale after gcd reduction differs from the original one by a uniform subpolynomial factor, including the literal rounded effective integer size.",
+      "finding": "An explicit quotient stability inequality and monotonicity of the normalized reduced scales bound the full exponential loss by N^eta for all reductions at one fixed threshold; only log(h) enters the denominator loss.",
+      "proposed_revision": "Prove the real-variable stability inequality, use max(1,D/g)<=D for original Box scales, and choose the short-shift threshold before any moving reduction. Keep the separate constant-inflation case available for initial-scale normalization.",
+      "impact": "Closes the uniform comparison of the reduced determinant exponential with the original one. Full cost comparison, family summation and initial-scale alignment remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.DeterminantShapeStability.denominator_loss",
+        "PaperP1.DeterminantShapeStability.numerator_loss",
+        "PaperP1.DeterminantShapeStability.weighted_loss",
+        "PaperP1.DeterminantShapeStability.enlarged_le_original",
+        "PaperP1.DeterminantShapeStability.enlarged_log_bounds",
+        "PaperP1.ReducedDeterminantShape.uniform_exp_comparison"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15447 jobs); direct axiom audit passed for 14002 declarations using only propext, Classical.choice and Quot.sound; all 13241 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.00 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
