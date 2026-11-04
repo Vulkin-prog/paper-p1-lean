@@ -3243,3 +3243,7 @@ public import PaperP1.Analysis.ReciprocalOddPivotUpper
 public import PaperP1.Arithmetic.SquarePartLogGeometry
 public import PaperP1.Analysis.DyadicReciprocalScaleBounds
 public import PaperP1.Analysis.ReciprocalOddPivotDyadicScale
+public import PaperP1.Analysis.SaddlePowerErrors
+public import PaperP1.Arithmetic.CleanBoundaryReciprocal
+public import PaperP1.Asymptotics.CleanBoundaryReciprocalLower
+public import PaperP1.Asymptotics.SignedSaddleCostLower

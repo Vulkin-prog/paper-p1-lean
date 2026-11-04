@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and71 conditional. The project records222 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and71 conditional. The project records223 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13242 audited theorem/lemma declarations**. This
+- The project currently has **13251 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22751,3 +22751,22 @@ The cutoff and second scale are the actual uniquely defined implicit roots. Thei
 P1-MATH-0223 records the complete conditional assembly. T19.15 advances from in_progress to conditional after the full pinned-compiler checks and direct axiom audit pass. Coverage becomes89 proved and71 conditional out of167:160 complete and seven incomplete numbered results. There are222 improvements and one statement-scope correction. The remaining incomplete results are main13.4 and companion T1.4,T1.5,T1.10,T1.13,T5.1,T19.16. Neither document is fully formalized; conditional results retain their external inputs. No new axiom, additional Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15047 jobs); direct axiom audit passed for 13242 declarations using only propext, Classical.choice and Quot.sound; all 12321 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.35 GiB.
+
+
+## Actual clean reciprocal sources and sharp specified signed-forcing cost minorant
+
+The lower-cost direction of companion T19.16 now uses the actual reciprocal mass of a literal clean source population, rather than an unproved source-sum hypothesis.
+
+CleanBoundaryReciprocal defines the actual boundary source set by excluding precisely badBoundaries. It proves the original dyadic reciprocal sum differs from the boundary sum by at most one endpoint weight, and removing all bad boundaries loses at most their actual cardinality. Both statements use the actual odd-valuation pivot, with every reciprocal weight at most one.
+
+SaddlePowerErrors proves that every fixed smaller power is negligible relative to the actual reciprocal saddle scale, for arbitrary fixed positive multiplicative margins. CleanBoundaryReciprocalLower combines the complete dyadic theorem T19.15 with the internally proved nine-tenths exceptional-source count. Uniformly before every logarithmic maximal width and every cutoff through log^5 N, the clean reciprocal source sum is at least (N/2)*exp(-2V_N-epsilon*nu_N). Its sole external dependency is the same ordinary EIPInput used for T19.15.
+
+SignedSaddleCostLower instantiates the actual specified signed Palm forcing with that literal clean set and the exact natural cutoff floor(log^5 N). The uniform collision coefficient is at most one quarter. The actual source cardinality and both proved exceptional-pair powers are absorbed using an internal39/20-power error bound and the saddle power comparison. Thus the original finite cost, with its exact heterogeneous signed mark probability p0, satisfies
+
+  cost >= (p0^2*N^2/4)*exp(-2V_N-epsilon*nu_N).
+
+This holds uniformly over EVERY L,E with maximal width at most D*log N and L>=1. No independence, clean population density, reciprocal source bound or negligible-cost assertion is supplied as an additional premise.
+
+P1-MATH-0224 records the restored source mass and actual signed forcing minorant. Critical-band normalization, the prescribed moving excess cutoff, the full-value weighted upper profile and the final logarithmic cost equivalent remain to be assembled; T19.16 stays in progress. Coverage remains89 proved and71 conditional out of167, with seven incomplete numbered results. There are223 improvements and one statement-scope correction. No new external input beyond EIPInput, new axiom, additional Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15055 jobs); direct axiom audit passed for 13251 declarations using only propext, Classical.choice and Quot.sound; all 12331 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.32 GiB.

@@ -2443,6 +2443,7 @@ import PaperP1
 #print axioms PaperP1.SaddleParameters.saddleCutoff_unique
 #print axioms PaperP1.SaddleParameters.existsUnique_saddleCutoff
 #print axioms PaperP1.SaddleParameters.hard_and_soft_saddles_exist
+#print axioms PaperP1.SaddlePowerErrors.power_negligible
 #print axioms PaperP1.SaddleScales.tendsto_saddleCutoff_square_normalized
 #print axioms PaperP1.SaddleScales.tendsto_saddleCutoff_normalized
 #print axioms PaperP1.SaddleScales.tendsto_soft_div_hard_saddle
@@ -2942,6 +2943,12 @@ import PaperP1
 #print axioms PaperP1.ClassPrimeResidual.residual_le_incident_product
 #print axioms PaperP1.ClassPrimeResidual.residual_power_bound
 #print axioms PaperP1.ClassPrimeResidual.residual_real_bound
+#print axioms PaperP1.CleanBoundaryReciprocal.sources_subset
+#print axioms PaperP1.CleanBoundaryReciprocal.sources_good
+#print axioms PaperP1.CleanBoundaryReciprocal.reciprocal_weight_le_one
+#print axioms PaperP1.CleanBoundaryReciprocal.boundary_lower
+#print axioms PaperP1.CleanBoundaryReciprocal.remove_bad
+#print axioms PaperP1.CleanBoundaryReciprocal.finite_lower
 #print axioms PaperP1.CleanPivotMultiples.prefix_card
 #print axioms PaperP1.CleanPivotMultiples.prefix_partition
 #print axioms PaperP1.CleanPivotMultiples.partition_disjoint
@@ -5952,6 +5959,7 @@ import PaperP1
 #print axioms PaperP1.ClassCodeBudget.coefficient_count
 #print axioms PaperP1.ClassCodeBudget.position_count
 #print axioms PaperP1.ClassCodeFibres.pair_count
+#print axioms PaperP1.CleanBoundaryReciprocalLower.uniform_lower
 #print axioms PaperP1.CoarseConnectedActivityUnderInputs.uniform_range
 #print axioms PaperP1.CoarseConnectedActivityUnderInputs.companion_T14_1
 #print axioms PaperP1.CoarseConnectedFourthUnderBCN.uniform_nonDirect_cost
@@ -7945,6 +7953,7 @@ import PaperP1
 #print axioms PaperP1.SignedChannelPhaseLimit.weighted_linear_identity
 #print axioms PaperP1.SignedChannelPhaseLimit.tendsto_height_normalized
 #print axioms PaperP1.SignedDyadicCostLower.uniform_actual_lower
+#print axioms PaperP1.SignedSaddleCostLower.uniform_actual_lower
 #print axioms PaperP1.SignedSeparatedSourceProfileUnderInputs.article_3_3_signed
 #print axioms PaperP1.SignedSourceProfileUnderInputs.scaled_mainTerm
 #print axioms PaperP1.SignedSourceProfileUnderInputs.unscale
