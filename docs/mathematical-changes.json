@@ -14491,6 +14491,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "538f1177b00fc1038b004b99f9109f6fae1a23d3"
+    },
+    {
+      "id": "P1-MATH-0229",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:private-exact",
+        "number": "T19.16",
+        "page": 80,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1214,
+        "statement_sha256": "6baf345eb5567df4010efd0ecbca65dd33af3c09e924d3b13643b928c59b8315"
+      },
+      "original_assumption": "The finite upper Palm cost in T19.16 needs a close-support estimate after summing all exact signed excess types.",
+      "finding": "Exact run geometry, a literal injective selection dropping only two target values, and actual private prime coordinates give joint<=4*p_a*p_b uniformly in both excesses and signs.",
+      "proposed_revision": "Insert the local exclusion and selected-word argument before the Palm cost summation. Keep the exact type probabilities so that summing excesses introduces no artificial cutoff factor.",
+      "impact": "Discharges the close-support pointwise probability obligation without an excess-dependent loss; the finite cost aggregation remains open.",
+      "evidence": [
+        "PaperP1.RawPrivateSelectedValues.columnMap_injective",
+        "PaperP1.RawPrivateSelectedValues.kernel_eq_bot",
+        "PaperP1.RawPrivateSelectedValues.mass_le",
+        "PaperP1.SignedLocalJointMass.joint_comm",
+        "PaperP1.SignedLocalJointMass.joint_zero_of_incompatible",
+        "PaperP1.SignedLocalJointMass.joint_zero_same_boundary",
+        "PaperP1.SignedLocalJointMass.ordered_joint_le_four",
+        "PaperP1.SignedLocalJointMass.joint_le_four_of_close",
+        "PaperP1.SignedMarkLocalGeometry.add_self",
+        "PaperP1.SignedMarkLocalGeometry.ordered_gap",
+        "PaperP1.SignedMarkLocalGeometry.type_unique",
+        "PaperP1.SignedMarkLocalGeometry.trimmed_value",
+        "PaperP1.SignedMarkLocalGeometry.trimmedPositions"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15085 jobs); direct axiom audit passed for 13296 declarations using only propext, Classical.choice and Quot.sound; all 12387 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.23 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

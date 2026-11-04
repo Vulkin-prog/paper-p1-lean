@@ -3259,3 +3259,6 @@ public import PaperP1.Asymptotics.UnsignedTwoChannelMainBound
 public import PaperP1.Model.RawKernelRestriction
 public import PaperP1.Model.RawValueLaw
 public import PaperP1.Model.SignedRawJointMass
+public import PaperP1.Model.RawPrivateSelectedValues
+public import PaperP1.Model.SignedLocalJointMass
+public import PaperP1.Model.SignedMarkLocalGeometry

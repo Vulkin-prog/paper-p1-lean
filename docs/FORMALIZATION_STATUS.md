@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and71 conditional. The project records227 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and71 conditional. The project records228 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13284 audited theorem/lemma declarations**. This
+- The project currently has **13296 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22840,3 +22840,22 @@ The statement holds for every pair, including equal or overlapping supports and 
 P1-MATH-0228 records this exact compatibility-preserving probability bridge and heterogeneous majorant. The actual finite signed cost upper summation remains to be assembled, so T19.16 stays in progress. Coverage remains 89 proved and 71 conditional out of 167, with seven incomplete numbered results. There are 227 improvements and one statement-scope correction. No additional external input, axiom, Paper C code port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15079 jobs); direct axiom audit passed for 13284 declarations using only propext, Classical.choice and Quot.sound; all 12374 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.25 GiB.
+
+
+## Exact close signed-run geometry and uniform fourfold joint bound
+
+The close-support contribution to the actual upper cost in T19.16 now has an internal finite bound uniform over both signed types and all excesses.
+
+RawPrivateSelectedValues proves that every injective selection of actual values from an interval has zero unrestricted raw relation kernel when each selected largest odd-valuation prime is at least the interval width and exceeds one. Its proof evaluates each actual parity relation at a private prime coordinate. The actual finite cylinder then gives the fair-cube upper mass for every selected word, with no probability or independence hypothesis.
+
+SignedMarkLocalGeometry proves directly from the original exact-run definition that a later exact start cannot lie strictly inside the earlier run, and that every given start has at most one excess/sign type. For an admissible ordered pair, dropping just the first two coordinates of the target gives an injective selection of all source values and the remaining target values. The selection is constructed explicitly inside the interval of twice the maximal width.
+
+SignedLocalJointMass applies this selection to the original retained field. Its already specified threshold Y>=2*(L+E+2) makes every selected prime private across the whole union. Monotonicity of the actual cylinder expectation and the fair selected-word mass prove
+
+  joint(a,b) <= 4*p_a*p_b
+
+for every distinct pair with close maximal supports. Both exact heterogeneous probabilities are retained. Incompatible interior starts and distinct same-site types have joint mass zero. No factor depending on E, no assumed overlap independence and no target joint estimate is introduced.
+
+P1-MATH-0229 records the exact local run exclusions and uniform fourfold joint bound. Together with P1-MATH-0228 this closes the pointwise joint estimates needed by T19.16, while their actual cost summation is still to be assembled. Coverage remains 89 proved and 71 conditional out of 167, with seven incomplete numbered results. There are 228 improvements and one statement-scope correction. No new external input, axiom, additional Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15085 jobs); direct axiom audit passed for 13296 declarations using only propext, Classical.choice and Quot.sound; all 12387 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.23 GiB.

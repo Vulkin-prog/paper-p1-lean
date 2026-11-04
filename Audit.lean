@@ -11222,6 +11222,9 @@ import PaperP1
 #print axioms PaperP1.RawPrimeRank.squareClass_le_raw
 #print axioms PaperP1.RawPrimeRank.rowSpace_le_raw
 #print axioms PaperP1.RawPrimeRank.family_rank_le
+#print axioms PaperP1.RawPrivateSelectedValues.columnMap_injective
+#print axioms PaperP1.RawPrivateSelectedValues.kernel_eq_bot
+#print axioms PaperP1.RawPrivateSelectedValues.mass_le
 #print axioms PaperP1.RawTwoWindowHosts.nonzero_coordinate
 #print axioms PaperP1.RawTwoWindowHosts.anchor_cutoff
 #print axioms PaperP1.RawTwoWindowHosts.related_oriented_anchor
@@ -11586,6 +11589,15 @@ import PaperP1
 #print axioms PaperP1.SignedExactWords.signedMarkRate_zero
 #print axioms PaperP1.SignedExactWords.sum_signedMarkRate
 #print axioms PaperP1.SignedExactWords.sum_signedMarkRate_le
+#print axioms PaperP1.SignedLocalJointMass.joint_comm
+#print axioms PaperP1.SignedLocalJointMass.joint_zero_of_incompatible
+#print axioms PaperP1.SignedLocalJointMass.joint_zero_same_boundary
+#print axioms PaperP1.SignedLocalJointMass.ordered_joint_le_four
+#print axioms PaperP1.SignedLocalJointMass.joint_le_four_of_close
+#print axioms PaperP1.SignedMarkLocalGeometry.add_self
+#print axioms PaperP1.SignedMarkLocalGeometry.ordered_gap
+#print axioms PaperP1.SignedMarkLocalGeometry.type_unique
+#print axioms PaperP1.SignedMarkLocalGeometry.trimmed_value
 #print axioms PaperP1.SignedPrivateCleanCost.indicator_eq_word
 #print axioms PaperP1.SignedPrivateCleanCost.target_width_le_pivot
 #print axioms PaperP1.SignedPrivateCleanCost.expected_change_clean
