@@ -5355,6 +5355,7 @@ import PaperP1
 #print axioms PaperP1.ActualPairRowActivity.uniform_marginal_cap
 #print axioms PaperP1.ActualPrescribedDivisorBudget.actual_outside_height
 #print axioms PaperP1.ActualPrescribedDivisorBudget.actual_outside_divisor_count
+#print axioms PaperP1.ActualQuadraticSubpowerMoments.uniform_moments
 #print axioms PaperP1.ActualReferenceAdmissibility.quadratic_of_bounds
 #print axioms PaperP1.ActualReferenceAdmissibility.uniform_quadratic_probability
 #print axioms PaperP1.ActualReferenceAdmissibility.uniform_hermite_probability
@@ -6637,6 +6638,7 @@ import PaperP1
 #print axioms PaperP1.OneTargetLogDenseCount.uniform_count
 #print axioms PaperP1.OptimalQuadraticUnderInputs.article_1_1
 #print axioms PaperP1.OptimalQuadraticUnderInputs.article_16_2
+#print axioms PaperP1.OptimalZeroProbabilityUnderInputs.article_17_2
 #print axioms PaperP1.OrderDependentBranching.exception_nonneg
 #print axioms PaperP1.OrderDependentBranching.exception_le_source
 #print axioms PaperP1.OrderDependentBranching.finite_exception_bound
@@ -6746,6 +6748,9 @@ import PaperP1
 #print axioms PaperP1.PolynomialSplitKernelCount.single_square_equation
 #print axioms PaperP1.PolynomialSplitKernelCount.two_square_equations
 #print axioms PaperP1.PolynomialWeightedFieldRate.uniform_bound
+#print axioms PaperP1.PolynomialWeightedQuadraticUnderInputs.uniform_weighted
+#print axioms PaperP1.PolynomialWeightedQuadraticUnderInputs.article_17_1
+#print axioms PaperP1.PolynomialWeightedSequenceRate.uniform_bound
 #print axioms PaperP1.PositionalBackgroundMoments.uniform_bound
 #print axioms PaperP1.PositionalBoundaryApproximationUnderInputs.uniform_bound
 #print axioms PaperP1.PositionalCompoundDeletionRate.uniform_bound
@@ -9938,6 +9943,9 @@ import PaperP1
 #print axioms PaperP1.ProjectedSplitTuples.cutoff_old
 #print axioms PaperP1.ProjectedSplitTuples.cutoff_value
 #print axioms PaperP1.ProjectedSplitTuples.fixed_motif_holder
+#print axioms PaperP1.QuadraticFactorialMomentTransfer.quadratic_hasSum
+#print axioms PaperP1.QuadraticFactorialMomentTransfer.finite_bound
+#print axioms PaperP1.QuadraticFactorialMomentTransfer.exact_small_orders
 #print axioms PaperP1.RationalTripleEvenRank.actual_probability
 #print axioms PaperP1.RationalTripleEvenRank.effective_rank
 #print axioms PaperP1.RationalTriplePrivateRank.actual_probability

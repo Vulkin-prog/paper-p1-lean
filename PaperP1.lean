@@ -2907,3 +2907,8 @@ public import PaperP1.Asymptotics.SeparatedHeightOneRank
 public import PaperP1.Asymptotics.StrongExactFiniteChannelCover
 public import PaperP1.Asymptotics.StrongExactFourThirdsMassUnderInputs
 public import PaperP1.Model.PositivePairSeparation
+public import PaperP1.Asymptotics.ActualQuadraticSubpowerMoments
+public import PaperP1.Asymptotics.OptimalZeroProbabilityUnderInputs
+public import PaperP1.Asymptotics.PolynomialWeightedQuadraticUnderInputs
+public import PaperP1.Asymptotics.PolynomialWeightedSequenceRate
+public import PaperP1.Model.QuadraticFactorialMomentTransfer

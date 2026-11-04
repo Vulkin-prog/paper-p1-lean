@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic power and remaining sharp arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile and41/30 activity claims remain open. Coverage is87/167 unconditional and50 conditional. The project records163 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile and41/30 activity claims remain open. Coverage is87/167 unconditional and52 conditional. The project records164 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -120,7 +120,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **11830 audited theorem/lemma declarations**. This
+- The project currently has **11838 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -19278,3 +19278,44 @@ claims remain open. Original manuscript bytes, toolchain and dependencies
 are unchanged. Palomar submission remains a later completion milestone.
 
 Verified under Lean v4.36.0-rc2: full build passed (14375 jobs); direct axiom audit passed for 11830 declarations using only propext, Classical.choice and Quot.sound; all 10470 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.84 GiB.
+
+
+## Optimal polynomial weights and the zero-count probability
+
+Main17.1 and17.2 are COMPLETE CONDITIONALLY on the existing explicit
+BCN and finite ordinary/source cover and normalized curve-count properties.
+No new external result or target-bound premise is introduced.
+
+PolynomialWeightedSequenceRate proves a general cutoff interpolation for
+arbitrary nonnegative sequences. One unweighted error bound at epsilon/4
+and independently proved subpolynomial moments of every fixed order give
+the same final error power for EVERY fixed polynomial weight. The chosen
+arithmetic input bundle precedes the degree. ActualQuadraticSubpowerMoments
+proves its moment hypotheses for the literal original count and actual
+quadratic reference. Original count moments are unconditional. Reference
+admissibility and boundedness use the explicit BCN argument. The actual
+mean and second factorial cumulant are retained throughout.
+
+PolynomialWeightedQuadraticUnderInputs.article_17_1 assembles the optimal
+four-thirds weighted singleton l1 bound, its full factorial-moment
+consequence with the exact binomial coefficient and the exact equalities
+at orders0,1,2. All summability assertions are proved. Its parameter bundle
+is chosen before all fixed polynomial degrees and factorial orders.
+QuadraticFactorialMomentTransfer identifies every actual reference
+factorial moment and proves the transfer inequality directly from the
+weighted error, without an assumed moment comparison.
+
+OptimalZeroProbabilityUnderInputs.article_17_2 gives the full scalar
+zero-count formula exp(-mu)*(1+alpha/2) with optimal power4/3. This is
+the absence of retained starts in the original dyadic ground and does
+not exclude a run beginning before its left endpoint.
+
+P1-MATH-0165 records that subpolynomial fixed moments, rather than uniform
+boundedness of all such moments, suffice for this interpolation. The
+stronger fixed-moment theorem remains a separate assertion. Coverage
+becomes87/167 unconditional and52 conditional. There are164 improvements
+and one confirmed scope correction. The sharp41/30 third-order and
+corrected31/24 profile obligations remain open. Original manuscript bytes,
+toolchain and dependencies are unchanged. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14385 jobs); direct axiom audit passed for 11838 declarations using only propext, Classical.choice and Quot.sound; all 10485 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.80 GiB.
