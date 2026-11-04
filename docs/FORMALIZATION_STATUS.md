@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and70 conditional. The project records219 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and70 conditional. The project records220 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13215 audited theorem/lemma declarations**. This
+- The project currently has **13228 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22700,3 +22700,18 @@ The new P1-only HardSaddleExplicitScale module proves the exact conversion missi
 P1-MATH-0220 records this internally checked saddle-scale construction. The ordinary reciprocal-prime input, uniform small-square-part comparison and final full/dyadic reciprocal-pivot equivalent remain open, so T19.15 stays in progress. Coverage remains89 proved and70 conditional out of167, with eight incomplete numbered results. There are219 improvements and one statement-scope correction. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15027 jobs); direct axiom audit passed for 13215 declarations using only propext, Classical.choice and Quot.sound; all 12293 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.41 GiB.
+
+
+## Uniform small-square-part saddle variation and actual scale monotonicity
+
+The uniform scale comparison needed for the square-part reduction in companion T19.15 is now proved from the actual implicit saddle and explicit logarithmic functions.
+
+ExplicitSaddleVariation proves finite differences of log H and log log H with their correct lower-endpoint denominators. A positive square-root factorization then bounds G(H)-G(t) by3*(H-t)*G(H)/H. This bound does not differentiate an asymptotic remainder.
+
+HardSaddleGrowth deduces eventual H<=V(H)^2<=H*log H, V(H)=o(H), log H=o(V(H)), positive-root growth and G(H)<=3V(H) from the already checked actual-root limits. UniformSaddleVariation combines these finite bounds with log H=o(nu(H)): for every fixed A>=0 and epsilon>0, one threshold precedes EVERY t in [H-A*V(H),H], and |G(H)-G(t)|<=epsilon*nu(H).
+
+SaddleMonotonicity proves monotonicity of the actual implicit parameter, cutoff V and second scale nu on their stated upper-branch domain. Thus ordinary prime-sum remainder bounds at every smaller argument in the square-part range can be compared with the same ambient nu(H), without a new uniformity premise.
+
+P1-MATH-0221 records these internal scale comparisons. The ordinary reciprocal-prime theorem and its final transfer to the actual full/dyadic odd-pivot sums remain to be assembled, so T19.15 stays in progress. Coverage remains89 proved and70 conditional out of167, with eight incomplete numbered results. There are220 improvements and one statement-scope correction. These are new P1 proofs using the already attributed saddle modules; no additional Paper C source port, external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15035 jobs); direct axiom audit passed for 13228 declarations using only propext, Classical.choice and Quot.sound; all 12306 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.39 GiB.

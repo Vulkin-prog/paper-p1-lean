@@ -14194,6 +14194,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "7b28e11b055892b51f967f51719e7158833ace6c"
+    },
+    {
+      "id": "P1-MATH-0221",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The reciprocal-pivot square-part reduction needs uniform scale control when the logarithmic population changes by O(V), without differentiating a classical asymptotic remainder.",
+      "finding": "Finite explicit-scale difference bounds, actual-root growth, uniform moving-argument stability and monotonicity of both implicit scales are proved internally.",
+      "proposed_revision": "Use the explicit finite log-difference and square-root factorization bounds before applying the ordinary asymptotic; choose one threshold before every square-part argument.",
+      "impact": "Discharges the moving-argument scale comparison required by T19.15 while retaining the ordinary reciprocal-prime theorem as a separate external input.",
+      "evidence": [
+        "PaperP1.ExplicitSaddleVariation.log_difference_bound",
+        "PaperP1.ExplicitSaddleVariation.core_difference_bound",
+        "PaperP1.ExplicitSaddleVariation.scale_monotone",
+        "PaperP1.ExplicitSaddleVariation.finite_scale_difference",
+        "PaperP1.HardSaddleGrowth.tendsto_cutoff_atTop",
+        "PaperP1.HardSaddleGrowth.tendsto_cutoff_div_height",
+        "PaperP1.HardSaddleGrowth.square_band_eventually",
+        "PaperP1.HardSaddleGrowth.tendsto_log_div_cutoff",
+        "PaperP1.HardSaddleGrowth.scale_upper_eventually",
+        "PaperP1.SaddleMonotonicity.parameter_monotone",
+        "PaperP1.SaddleMonotonicity.cutoff_monotone",
+        "PaperP1.SaddleMonotonicity.nu_monotone",
+        "PaperP1.UniformSaddleVariation.uniform_left_variation"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15035 jobs); direct axiom audit passed for 13228 declarations using only propext, Classical.choice and Quot.sound; all 12306 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.39 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

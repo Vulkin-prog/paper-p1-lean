@@ -3233,3 +3233,7 @@ public import PaperP1.Analysis.SaddleBranch
 public import PaperP1.Analysis.SaddleExpansion
 public import PaperP1.Analysis.SaddleParameters
 public import PaperP1.Analysis.SaddleScales
+public import PaperP1.Analysis.ExplicitSaddleVariation
+public import PaperP1.Analysis.HardSaddleGrowth
+public import PaperP1.Analysis.SaddleMonotonicity
+public import PaperP1.Analysis.UniformSaddleVariation

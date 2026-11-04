@@ -2193,6 +2193,10 @@ import PaperP1
 #print axioms PaperP1.ElementaryLogGrowth.thirtyTwo_mul_log_le
 #print axioms PaperP1.ElementaryLogGrowth.square_le_four_mul_exp
 #print axioms PaperP1.ElementaryLogGrowth.log_ge_eventually
+#print axioms PaperP1.ExplicitSaddleVariation.log_difference_bound
+#print axioms PaperP1.ExplicitSaddleVariation.core_difference_bound
+#print axioms PaperP1.ExplicitSaddleVariation.scale_monotone
+#print axioms PaperP1.ExplicitSaddleVariation.finite_scale_difference
 #print axioms PaperP1.ExponentialIntegral.summable_anchor_series
 #print axioms PaperP1.ExponentialIntegral.exponentialIntegral_one
 #print axioms PaperP1.ExponentialIntegral.continuousOn_integrand
@@ -2258,6 +2262,11 @@ import PaperP1
 #print axioms PaperP1.HardSaddleExplicitScale.finite_normalized_gap
 #print axioms PaperP1.HardSaddleExplicitScale.tendsto_hard_saddle_gap
 #print axioms PaperP1.HardSaddleExplicitScale.tendsto_hard_saddle_log_scale
+#print axioms PaperP1.HardSaddleGrowth.tendsto_cutoff_atTop
+#print axioms PaperP1.HardSaddleGrowth.tendsto_cutoff_div_height
+#print axioms PaperP1.HardSaddleGrowth.square_band_eventually
+#print axioms PaperP1.HardSaddleGrowth.tendsto_log_div_cutoff
+#print axioms PaperP1.HardSaddleGrowth.scale_upper_eventually
 #print axioms PaperP1.IntegerProductTail.pairTerm_nonneg
 #print axioms PaperP1.IntegerProductTail.pairTerm_eq_power
 #print axioms PaperP1.IntegerProductTail.summable_pairTerm
@@ -2398,6 +2407,9 @@ import PaperP1
 #print axioms PaperP1.SaddleExpansion.saddle_cutoff_second_order
 #print axioms PaperP1.SaddleExpansion.hard_saddle_second_order
 #print axioms PaperP1.SaddleExpansion.soft_saddle_second_order
+#print axioms PaperP1.SaddleMonotonicity.parameter_monotone
+#print axioms PaperP1.SaddleMonotonicity.cutoff_monotone
+#print axioms PaperP1.SaddleMonotonicity.nu_monotone
 #print axioms PaperP1.SaddleParameters.saddleCost_eq_param
 #print axioms PaperP1.SaddleParameters.saddleCost_saddleRatio
 #print axioms PaperP1.SaddleParameters.strictMonoOn_saddleCost
@@ -2458,6 +2470,7 @@ import PaperP1
 #print axioms PaperP1.DefectCounting.smallPrimesUpTo_subset_Icc
 #print axioms PaperP1.prod_smallPrimesUpTo_one_add_inv_sqrt_le
 #print axioms PaperP1.prod_smallPrimesUpTo_one_add_rpow_neg_one_half_le
+#print axioms PaperP1.UniformSaddleVariation.uniform_left_variation
 #print axioms PaperP1.WeightedGeometricTail.weighted_hasSum
 #print axioms PaperP1.WeightedGeometricTail.weighted_bound
 #print axioms PaperP1.WeightedGeometricTail.weighted_tail_bound
