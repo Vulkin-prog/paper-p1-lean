@@ -3461,3 +3461,5 @@ public import PaperP1.Asymptotics.CanonicalInteriorSmoothCount
 public import PaperP1.Asymptotics.SharpTwoSmallKernelCount
 public import PaperP1.Asymptotics.CompanionTwoSmallKernelTheorem
 public import PaperP1.Asymptotics.SharpTwoSmallKernelWindowCount
+public import PaperP1.Arithmetic.TwoSmallKernelBlocks
+public import PaperP1.Asymptotics.SharpComparableTwoSmallKernelCount

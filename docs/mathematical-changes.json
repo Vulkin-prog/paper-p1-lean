@@ -17509,6 +17509,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "f91380205326a09bacf47a8062d40572229a6562"
+    },
+    {
+      "id": "P1-MATH-0307",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:small-kernels",
+        "number": "T1.13",
+        "page": 17,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 1016,
+        "statement_sha256": "abfe0badc4580784052dd0b667c0f6e3fcb66cb7df81671a5a21b1c20132fb97"
+      },
+      "original_assumption": "The sharp two-small-kernel count remains uniform on fixed comparable ranges and can be transported exactly from two selected block values to a positive natural shifted population.",
+      "finding": "The actual comparable-dyadic cover carries the full7/12 estimate with explicit distortion budgeting. Literal selected-subset cardinality produces ordered offsets, injective positive translation, an exact natural shift and a controlled positive gap.",
+      "proposed_revision": "Use the full sharp comparable theorem and the actual ordered-offset cover before summing block placements; prove positivity, integer-to-natural transport and translation injectivity explicitly.",
+      "impact": "Closes the comparable-scale and exact finite selected-block transport steps forT1.13. Its final two-small-kernel placement count and full real-parameter assembly remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.TwoSmallKernelBlocks.ordered_witness",
+        "PaperP1.TwoSmallKernelBlocks.selected_subset",
+        "PaperP1.TwoSmallKernelBlocks.pair_translation",
+        "PaperP1.TwoSmallKernelBlocks.fixed_pair_injective",
+        "PaperP1.TwoSmallKernelBlocks.offset_gap",
+        "PaperP1.SharpComparableTwoSmallKernelCount.uniform_count",
+        "PaperP1.TwoSmallKernelBlocks.offsetPairStarts",
+        "PaperP1.TwoSmallKernelBlocks.starts",
+        "PaperP1.TwoSmallKernelBlocks.selectedStarts"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15491 jobs); direct axiom audit passed for 14047 declarations using only propext, Classical.choice and Quot.sound; all 13295 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.80 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

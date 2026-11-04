@@ -20766,13 +20766,32 @@
         "PaperP1.FixedWidthSmallKernel.offsets_card",
         "PaperP1.FixedWidthSmallKernel.one_kernel",
         "PaperP1.FixedWidthSmallKernel.one_kernel_real",
-        "PaperP1.FixedWidthSmallKernel.one_kernel_real_cutoff"
+        "PaperP1.FixedWidthSmallKernel.one_kernel_real_cutoff",
+        "PaperP1.TwoSmallKernelBlocks.ordered_witness",
+        "PaperP1.TwoSmallKernelBlocks.selected_subset",
+        "PaperP1.TwoSmallKernelBlocks.pair_translation",
+        "PaperP1.TwoSmallKernelBlocks.fixed_pair_injective",
+        "PaperP1.TwoSmallKernelBlocks.offset_gap",
+        "PaperP1.SharpComparableTwoSmallKernelCount.uniform_count",
+        "PaperP1.TwoSmallKernelBlocks.offsetPairStarts",
+        "PaperP1.TwoSmallKernelBlocks.starts",
+        "PaperP1.TwoSmallKernelBlocks.selectedStarts"
       ],
-      "literature_inputs": [],
+      "literature_inputs": [
+        "p1:internal:sharp-comparable-count-and-selected-block-transport"
+      ],
       "mathematical_changes": [
-        "P1-MATH-0046"
+        "P1-MATH-0046",
+        "P1-MATH-0307"
       ],
-      "notes": "The one-small-kernel assertion is proved for arbitrary positive selected subsets depending on an integer centre, real fixed width and height constants, real prime cutoffs and all real T>=0, with one threshold before all source choices. Finite offset injection and exact real-cutoff floor transport are proved; no lower centre bound or diameter lower bound on the prime cutoff is needed. Full T1.13 remains in progress: the two-small-kernel assertion needs T1.5. See FIXED_WIDTH_SMALL_KERNEL_ALIGNMENT.md."
+      "notes": "The completed sharp two-kernel count is now transferred uniformly to EVERY fixed comparable positive range, and the exact finite arithmetic cover needed for arbitrary selected blocks is constructed. These are the first assembled two-small-kernel steps for companionT1.13, whose one-small-kernel assertion was already proved.\n\nSharpComparableTwoSmallKernelCount uses the actual fixed finite comparable-dyadic cover. Before all moving prime cutoffs, shifts and populations it chooses thresholds which transfer the logarithmic budgets to each actual local scale. The complete sharp integer count is applied on every cell. Both the N^(7/12) term and the separate error power are transported back to the original N with explicit fixed distortion constants, which are absorbed before summing the finite cells. The resulting bound is (T+N^(7/12))*N^epsilon on any fixed comparable range, under only the two existing ordinary biform inputs fromT1.4/T1.5.\n\nTwoSmallKernelBlocks defines the literal finite set of centres whose arbitrary selected subset contains at least two values with small kernels. Its unconditional ordered-witness theorem extracts two distinct increasing natural values from that exact cardinality condition. Their actual integer offsets give a proved subset of the union over ordered offset pairs. The fixed-pair translation from integer centres to positive natural values is proved injective, and the exact shift identity (x+u).toNat+(v-u).toNat=(x+v).toNat is checked. Offsets in a radius-R integer interval have positive natural gap at most2*R. No sign, truncation, endpoint or multiplicity assumption is left implicit in this finite transport.\n\nP1-MATH-0307 closes sharp comparable-scale counting and the exact selected-block transport. The sharp count still needs to be applied to these actual offset-pair populations, their logarithmic placements summed, and the printed real constants/cutoffs aligned before markingT1.13 complete. Coverage remains89 proved and74 conditional out of167 (163 completed); four numbered obligations remain incomplete. There are306 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.\n\nEarlier checkpoint history:\nThe one-small-kernel assertion is proved for arbitrary positive selected subsets depending on an integer centre, real fixed width and height constants, real prime cutoffs and all real T>=0, with one threshold before all source choices. Finite offset injection and exact real-cutoff floor transport are proved; no lower centre bound or diameter lower bound on the prime cutoff is needed. Full T1.13 remains in progress: the two-small-kernel assertion needs T1.5. See FIXED_WIDTH_SMALL_KERNEL_ALIGNMENT.md.",
+      "validation_history": [
+        {
+          "status": "in_progress",
+          "literature_inputs": []
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15491 jobs); direct axiom audit passed for 14047 declarations using only propext, Classical.choice and Quot.sound; all 13295 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.80 GiB."
     },
     {
       "label": "p1:arith:fixed-support",

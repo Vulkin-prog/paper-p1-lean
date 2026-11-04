@@ -1,13 +1,13 @@
 # Formalization status
 
-Stage: **conditional optimal quadratic and third-cumulant powers; four remaining arithmetic obligations**, 4 November 2026.
+Stage: **conditional optimal quadratic and third-cumulant powers; four remaining arithmetic obligations**, 5 November 2026.
 Neither document is fully formalized.
 
 Companion T1.5 is complete conditionally on exactly the same two ordinary biform inputs as T1.4. Its full actual logarithmic-window upper count has exponent max(beta,7/12); for7/12<=beta<1 it is paired with the earlier unconditional lower bound to give exponent beta+o(1). All actual smooth coefficients, occupied boxes, gcd families, edge regimes and placements are included. See P1-MATH-0306.
 
 Companion T1.4 is complete conditionally on exactly HeathBrownBiformInput.Input and NonGeometricBiformInput.Input. The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. Both ordinary input proofs remain open. The four incomplete numbered results are main13.4 and companionT1.10,T1.13,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and74 conditional (163/167 completed). The project records305 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and74 conditional (163/167 completed). The project records306 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -126,7 +126,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14041 audited theorem/lemma declarations**. This
+- The project currently has **14047 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24217,3 +24217,16 @@ CompanionTwoSmallKernelTheorem gives the printed result for EVERY width with L+1
 Every moving-coefficient determinant estimate, canonical source predicate, gcd family, dyadic box, smooth coefficient, arithmetic edge regime and window placement required for the upper count has now been internally constructed and summed. No assumption of the target two-kernel or window bound remains. After the actual full build, axiom audit, source check and declaration check, T1.5 is marked conditional. Coverage becomes89 proved and74 conditional out of167 (163 completed); the remaining numbered obligations are main13.4 and companionT1.10,T1.13,T5.1. The two ordinary biform input proofs remain open. There are305 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred until full coverage and alignment.
 
 Verified under Lean v4.36.0-rc2: full build passed (15487 jobs); direct axiom audit passed for 14041 declarations using only propext, Classical.choice and Quot.sound; all 13286 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.82 GiB.
+
+
+## Sharp comparable two-kernel counting and exact selected-block offset transport
+
+The completed sharp two-kernel count is now transferred uniformly to EVERY fixed comparable positive range, and the exact finite arithmetic cover needed for arbitrary selected blocks is constructed. These are the first assembled two-small-kernel steps for companionT1.13, whose one-small-kernel assertion was already proved.
+
+SharpComparableTwoSmallKernelCount uses the actual fixed finite comparable-dyadic cover. Before all moving prime cutoffs, shifts and populations it chooses thresholds which transfer the logarithmic budgets to each actual local scale. The complete sharp integer count is applied on every cell. Both the N^(7/12) term and the separate error power are transported back to the original N with explicit fixed distortion constants, which are absorbed before summing the finite cells. The resulting bound is (T+N^(7/12))*N^epsilon on any fixed comparable range, under only the two existing ordinary biform inputs fromT1.4/T1.5.
+
+TwoSmallKernelBlocks defines the literal finite set of centres whose arbitrary selected subset contains at least two values with small kernels. Its unconditional ordered-witness theorem extracts two distinct increasing natural values from that exact cardinality condition. Their actual integer offsets give a proved subset of the union over ordered offset pairs. The fixed-pair translation from integer centres to positive natural values is proved injective, and the exact shift identity (x+u).toNat+(v-u).toNat=(x+v).toNat is checked. Offsets in a radius-R integer interval have positive natural gap at most2*R. No sign, truncation, endpoint or multiplicity assumption is left implicit in this finite transport.
+
+P1-MATH-0307 closes sharp comparable-scale counting and the exact selected-block transport. The sharp count still needs to be applied to these actual offset-pair populations, their logarithmic placements summed, and the printed real constants/cutoffs aligned before markingT1.13 complete. Coverage remains89 proved and74 conditional out of167 (163 completed); four numbered obligations remain incomplete. There are306 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15491 jobs); direct axiom audit passed for 14047 declarations using only propext, Classical.choice and Quot.sound; all 13295 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.80 GiB.

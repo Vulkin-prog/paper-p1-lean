@@ -5972,6 +5972,11 @@ import PaperP1
 #print axioms PaperP1.TwoProgressionPrimeRows.exceptional_card
 #print axioms PaperP1.TwoProgressionResidualRank.finite_rank_bound
 #print axioms PaperP1.TwoProgressionResidualRank.cardinal_budget
+#print axioms PaperP1.TwoSmallKernelBlocks.ordered_witness
+#print axioms PaperP1.TwoSmallKernelBlocks.selected_subset
+#print axioms PaperP1.TwoSmallKernelBlocks.pair_translation
+#print axioms PaperP1.TwoSmallKernelBlocks.fixed_pair_injective
+#print axioms PaperP1.TwoSmallKernelBlocks.offset_gap
 #print axioms PaperP1.TwoSmallKernelSquareParts.decomposition
 #print axioms PaperP1.TwoSmallKernelSquareParts.square_part_le
 #print axioms PaperP1.TwoSmallKernelSquareParts.fixed_smooth_parts
@@ -8516,6 +8521,7 @@ import PaperP1
 #print axioms PaperP1.SharpChannelCompressedActivityUnderInputs.uniform_bound
 #print axioms PaperP1.SharpChannelCompressedActivityUnderInputs.companion_T15_1_separated
 #print axioms PaperP1.SharpChannelCompressedActivityUnderInputs.companion_T15_1
+#print axioms PaperP1.SharpComparableTwoSmallKernelCount.uniform_count
 #print axioms PaperP1.SharpCompatibleActivityUnderInputs.uniform_range
 #print axioms PaperP1.SharpConnectedChannelMassUnderInputs.uniform_mass
 #print axioms PaperP1.SharpConnectedSeedCatalogUnderInputs.uniform_mass
