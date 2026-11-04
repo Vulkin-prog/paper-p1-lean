@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**265 mathematical improvements and one statement-scope correction are confirmed.**
+**266 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -22835,3 +22835,26 @@ The constructed SAME matrices and side lengths then bound the inverse integer co
 P1-MATH-0266 closes the actual second-lattice coordinate construction, effective-scale area comparison and consistent indexing needed for the side sum. The global simultaneous basis-family/side-sum assembly, negative auxiliary-chart flip, geometric curve counts and remaining primitive scale assembly remain open. The negative-point statement uses the original d/e chart and does not identify it with the reversed auxiliary chart. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are265 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15311 jobs); direct axiom audit passed for 13807 declarations using only propext, Classical.choice and Quot.sound; all 13014 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.52 GiB.
+
+
+## Complete actual second-lattice basis family and original-scale side sum
+
+The ACTUAL second-lattice coordinates and the COMPLETE second-lattice side sum are now assembled for ONE simultaneously constructed family of grid bases. No side-count or basis-existence estimate is supplied as a premise.
+
+EffectiveVerticalSideSum proves U'<=U/rho and V'<=V/rho, and the literal square-root comparison
+
+  sqrt((2*C*V')*(C*U')*(2M)) <= (2*C/rho)*sqrt(U*V*M).
+
+It carries these effective scales and the actual radius R=2*(49+16/rho) through the proved quadratic-grid summation. For every consistent primitive grid-vector choice of height at most N^kappa, the complete original-interval sum is bounded by
+
+  (512*R*C/rho)*N^epsilon*(sqrt(U*V*M)+U+V).
+
+The coefficient is explicit and depends only on the fixed source constants C,rho. The effective-scale axes, the multiplicity-two transfer, radius factor and square-root comparison are all included.
+
+VerticalGridCoordinateData records the exact literal matrices, inverse identities, determinant, polynomial heights, globally shortest first column, exact side formulas, area bounds and coordinate bounds for ALL corresponding signed source points. Its uniform existence is proved directly from P1-MATH-0266; this data is not an external assumption.
+
+UniformVerticalLatticeFamily constructs actual functions A(q),B(q),L0(q),L1(q), ONCE for every grid index q. A single kappa,N0 is fixed before N, M and the moving source box. The SAME family satisfies all coordinate data at every q<=4M and the displayed original-scale side sum for EVERY finite original index set with M/4<=k<=2M. Primitivity and the vector-height premises of the arithmetic summation are discharged using the actual integer inverse matrices and their proved heights. The exact large-side formulas identify the summed weights with the actual coordinate boxes.
+
+P1-MATH-0267 closes the complete actual second-lattice coordinate/side-sum/effective-scale assembly. The first- and second-orientation joint packaging, negative auxiliary-chart flip, geometric local curve counts, final rounded-scale loss absorption and primitive scale assembly remain open. The signed coordinate data uses the original d/e chart and does not identify it with reversed negative auxiliary intervals. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are266 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15317 jobs); direct axiom audit passed for 13813 declarations using only propext, Classical.choice and Quot.sound; all 13021 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.51 GiB.

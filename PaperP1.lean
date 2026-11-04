@@ -3375,3 +3375,6 @@ public import PaperP1.Asymptotics.QuadraticGridRadiusSum
 public import PaperP1.Asymptotics.UniformRelativeGridCoordinates
 public import PaperP1.Arithmetic.VerticalGridMatrices
 public import PaperP1.Asymptotics.UniformVerticalGridCoordinates
+public import PaperP1.Asymptotics.EffectiveVerticalSideSum
+public import PaperP1.Asymptotics.UniformVerticalLatticeFamily
+public import PaperP1.Asymptotics.VerticalGridCoordinateData

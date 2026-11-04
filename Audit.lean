@@ -6840,6 +6840,10 @@ import PaperP1
 #print axioms PaperP1.EffectiveTailScale.base_eq_exp
 #print axioms PaperP1.EffectiveTailScale.conditions_eventually
 #print axioms PaperP1.EffectiveTailScale.markov_order_bound
+#print axioms PaperP1.EffectiveVerticalSideSum.effective_upper_bounds
+#print axioms PaperP1.EffectiveVerticalSideSum.quadratic_sqrt_bound
+#print axioms PaperP1.EffectiveVerticalSideSum.numerical_cost_bound
+#print axioms PaperP1.EffectiveVerticalSideSum.uniform_original_scale_sum
 #print axioms PaperP1.EmptyReplicaMoment.block_eq_one
 #print axioms PaperP1.EmptyReplicaMoment.sum_constant
 #print axioms PaperP1.EmptyReplicaMoment.positive_moment
@@ -8729,6 +8733,7 @@ import PaperP1
 #print axioms PaperP1.UniformRelativeIntervalCoordinates.uniform_interval_coordinates
 #print axioms PaperP1.UniformSubpolynomialPower.bound
 #print axioms PaperP1.UniformVerticalGridCoordinates.uniform_vertical_coordinates
+#print axioms PaperP1.UniformVerticalLatticeFamily.uniform_family_sum
 #print axioms PaperP1.UnitChannelPairWeights.uniform_joint
 #print axioms PaperP1.UnitChannelPairWeights.uniform_coefficient
 #print axioms PaperP1.UniversalPrivateObstructionArbitraryAuxiliary.randomized_under_census
@@ -8737,6 +8742,7 @@ import PaperP1
 #print axioms PaperP1.ValueHeightHalfCount.article_10_1
 #print axioms PaperP1.ValueHeightHalfCount.uniform_logarithmic_count
 #print axioms PaperP1.VariableSeedMassPropagation.uniform_mass
+#print axioms PaperP1.VerticalGridCoordinateData.uniform_data
 #print axioms PaperP1.VerySmallTail.moment_bound
 #print axioms PaperP1.VerySmallTail.power_threshold
 #print axioms PaperP1.VerySmallTail.companion_T19_6
