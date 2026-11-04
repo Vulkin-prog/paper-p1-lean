@@ -22632,3 +22632,23 @@ SaddleMonotonicity proves monotonicity of the actual implicit parameter, cutoff 
 P1-MATH-0221 records these internal scale comparisons. The ordinary reciprocal-prime theorem and its final transfer to the actual full/dyadic odd-pivot sums remain to be assembled, so T19.15 stays in progress. Coverage remains89 proved and70 conditional out of167, with eight incomplete numbered results. There are220 improvements and one statement-scope correction. These are new P1 proofs using the already attributed saddle modules; no additional Paper C source port, external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15035 jobs); direct axiom audit passed for 13228 declarations using only propext, Classical.choice and Quot.sound; all 12306 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.39 GiB.
+
+
+## Full actual reciprocal odd-pivot scale from the ordinary classical theorem
+
+Stable ID: P1-EXT-EIP1986-ORDINARY-RECIPROCAL-PRIME. UNFORMALIZED ordinary input: P. Erdos, A. Ivic and C. Pomerance, Glasnik Matematicki21(41) (1986),283-300, Theorem1 and equation(1.3), inspected primary source https://www.renyi.hu/~p_erdos/1986-10.pdf (page284). EIPInput is its ordinary P+(n) reciprocal-sum conclusion at logarithmic precision, expressed using the internally proved equivalent explicit and implicit scales. It is NOT an odd-pivot theorem and is not proved in Lean. Every theorem using it retains hinput explicitly.
+
+The full-population logarithmic equivalent in companion T19.15 is now proved conditional solely on the explicitly named ordinary largest-prime-factor theorem. The dyadic equivalent remains to be assembled.
+
+SquarePartLogGeometry proves positive natural quotient bounds and the actual logarithmic range for floor(X/a^2). Every small square part has log(floor(X/a^2)) between log X-9V and log X, including the integer-floor loss. OrdinaryReciprocalPrimeInput defines EIPInput for the actual ordinary sum of1/P+(n). It states the classical two-sided logarithmic precision around the explicit square-root function G; it says nothing about the target odd-valuation pivot sum. It is an unformalized literature theorem supplied as an explicit argument, not an axiom or a proved declaration.
+
+The uniform upper estimate for every small quotient is DEDUCED from that ordinary theorem, the internally proved finite quotient geometry, actual nu monotonicity and uniform G variation. No uniform square-part estimate is added as a premise. ReciprocalOddPivotUpper sums the actual square-part weights using their bounded reciprocal-square sum, rather than charging the number of parts as a prefactor. The large square-part tail is bounded internally, giving the explicit6X*exp(-G+epsilon*nu) upper bound.
+
+ReciprocalOddPivotFullScale combines this actual upper bound, the ordinary lower bound and the proved odd-pivot comparison. The factor6 is absorbed at the diverging second scale and the internally proved additive saddle expansion replaces G by2V. Thus for every epsilon>0 a threshold gives BOTH
+
+  X*exp(-2V_X-epsilon*nu_X) <= sum_{n<=X}1/kappa(n)
+  <= X*exp(-2V_X+epsilon*nu_X).
+
+P1-MATH-0222 records this complete full-population transfer under EIPInput. The separate dyadic transfer still remains, so T19.15 stays in progress. Coverage remains89 proved and70 conditional out of167, with eight incomplete numbered results. There are221 improvements and one statement-scope correction. No target odd-pivot estimate, unproved uniformity premise, new axiom, additional Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15043 jobs); direct axiom audit passed for 13235 declarations using only propext, Classical.choice and Quot.sound; all 12314 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.37 GiB.

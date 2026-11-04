@@ -14234,6 +14234,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "4a944aae5f8721e916b7108cb045dfc30684af09"
+    },
+    {
+      "id": "P1-MATH-0222",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The source deduces the odd-valuation reciprocal sum from the classical ordinary largest-prime-factor asymptotic and a uniform square-part argument.",
+      "finding": "The ordinary input is named precisely for P+(n); actual floors, uniform small-square-part transport, bounded reciprocal-square weights, the large-part tail and both full-population target bounds are proved internally from it.",
+      "proposed_revision": "State the ordinary classical theorem as the only external analytic input and give the uniform floor-sensitive square-part transfer before concluding the odd-pivot equivalent.",
+      "impact": "Completes the full-population portion of T19.15 conditionally on the classical ordinary theorem, without assuming the target pivot asymptotic; dyadic assembly remains.",
+      "evidence": [
+        "PaperP1.OrdinaryReciprocalPrimeInput.tendsto_left_endpoint",
+        "PaperP1.OrdinaryReciprocalPrimeInput.uniform_square_part_upper",
+        "PaperP1.ReciprocalOddPivotFullScale.uniform_full_sandwich",
+        "PaperP1.ReciprocalOddPivotUpper.finite_small_part_bound",
+        "PaperP1.ReciprocalOddPivotUpper.uniform_finite_upper",
+        "PaperP1.SquarePartLogGeometry.quotient_bounds",
+        "PaperP1.SquarePartLogGeometry.log_quotient_range",
+        "PaperP1.OrdinaryReciprocalPrimeInput.EIPInput"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15043 jobs); direct axiom audit passed for 13235 declarations using only propext, Classical.choice and Quot.sound; all 12314 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.37 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -3237,3 +3237,7 @@ public import PaperP1.Analysis.ExplicitSaddleVariation
 public import PaperP1.Analysis.HardSaddleGrowth
 public import PaperP1.Analysis.SaddleMonotonicity
 public import PaperP1.Analysis.UniformSaddleVariation
+public import PaperP1.Analysis.OrdinaryReciprocalPrimeInput
+public import PaperP1.Analysis.ReciprocalOddPivotFullScale
+public import PaperP1.Analysis.ReciprocalOddPivotUpper
+public import PaperP1.Arithmetic.SquarePartLogGeometry

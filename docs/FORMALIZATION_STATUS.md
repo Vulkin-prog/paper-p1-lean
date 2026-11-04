@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and70 conditional. The project records220 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and70 conditional. The project records221 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13228 audited theorem/lemma declarations**. This
+- The project currently has **13235 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22715,3 +22715,21 @@ SaddleMonotonicity proves monotonicity of the actual implicit parameter, cutoff 
 P1-MATH-0221 records these internal scale comparisons. The ordinary reciprocal-prime theorem and its final transfer to the actual full/dyadic odd-pivot sums remain to be assembled, so T19.15 stays in progress. Coverage remains89 proved and70 conditional out of167, with eight incomplete numbered results. There are220 improvements and one statement-scope correction. These are new P1 proofs using the already attributed saddle modules; no additional Paper C source port, external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15035 jobs); direct axiom audit passed for 13228 declarations using only propext, Classical.choice and Quot.sound; all 12306 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.39 GiB.
+
+
+## Full actual reciprocal odd-pivot scale from the ordinary classical theorem
+
+The full-population logarithmic equivalent in companion T19.15 is now proved conditional solely on the explicitly named ordinary largest-prime-factor theorem. The dyadic equivalent remains to be assembled.
+
+SquarePartLogGeometry proves positive natural quotient bounds and the actual logarithmic range for floor(X/a^2). Every small square part has log(floor(X/a^2)) between log X-9V and log X, including the integer-floor loss. OrdinaryReciprocalPrimeInput defines EIPInput for the actual ordinary sum of1/P+(n). It states the classical two-sided logarithmic precision around the explicit square-root function G; it says nothing about the target odd-valuation pivot sum. It is an unformalized literature theorem supplied as an explicit argument, not an axiom or a proved declaration.
+
+The uniform upper estimate for every small quotient is DEDUCED from that ordinary theorem, the internally proved finite quotient geometry, actual nu monotonicity and uniform G variation. No uniform square-part estimate is added as a premise. ReciprocalOddPivotUpper sums the actual square-part weights using their bounded reciprocal-square sum, rather than charging the number of parts as a prefactor. The large square-part tail is bounded internally, giving the explicit6X*exp(-G+epsilon*nu) upper bound.
+
+ReciprocalOddPivotFullScale combines this actual upper bound, the ordinary lower bound and the proved odd-pivot comparison. The factor6 is absorbed at the diverging second scale and the internally proved additive saddle expansion replaces G by2V. Thus for every epsilon>0 a threshold gives BOTH
+
+  X*exp(-2V_X-epsilon*nu_X) <= sum_{n<=X}1/kappa(n)
+  <= X*exp(-2V_X+epsilon*nu_X).
+
+P1-MATH-0222 records this complete full-population transfer under EIPInput. The separate dyadic transfer still remains, so T19.15 stays in progress. Coverage remains89 proved and70 conditional out of167, with eight incomplete numbered results. There are221 improvements and one statement-scope correction. No target odd-pivot estimate, unproved uniformity premise, new axiom, additional Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15043 jobs); direct axiom audit passed for 13235 declarations using only propext, Classical.choice and Quot.sound; all 12314 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.37 GiB.

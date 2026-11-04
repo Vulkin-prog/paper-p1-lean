@@ -2305,6 +2305,8 @@ import PaperP1
 #print axioms PaperP1.MahlerCoefficientBounds.norm_top_coeff_le_mahler
 #print axioms PaperP1.MahlerCoefficientBounds.factor_coefficient_product_bound
 #print axioms PaperP1.MahlerCoefficientBounds.factor_coefficient_product_bound_two_pow
+#print axioms PaperP1.OrdinaryReciprocalPrimeInput.tendsto_left_endpoint
+#print axioms PaperP1.OrdinaryReciprocalPrimeInput.uniform_square_part_upper
 #print axioms PaperP1.PartialPowerSum.powerSum_nonneg
 #print axioms PaperP1.PartialPowerSum.powerSum_eq_shifted
 #print axioms PaperP1.PartialPowerSum.powerSum_le
@@ -2346,6 +2348,9 @@ import PaperP1
 #print axioms PaperP1.RealSeriesEvaluation.geometric_summability
 #print axioms PaperP1.RealSeriesTail.geometric_tail
 #print axioms PaperP1.RealSeriesTail.constant_tail
+#print axioms PaperP1.ReciprocalOddPivotFullScale.uniform_full_sandwich
+#print axioms PaperP1.ReciprocalOddPivotUpper.finite_small_part_bound
+#print axioms PaperP1.ReciprocalOddPivotUpper.uniform_finite_upper
 #print axioms PaperP1.rpow_neg_one_half_eq_inv_sqrt
 #print axioms PaperP1.sqrt_nat_sub_one_le
 #print axioms PaperP1.sqrt_nat_sq_sub_sq_eq_one
@@ -5115,6 +5120,8 @@ import PaperP1
 #print axioms PaperP1.SquareLineFamilyAlignment.of_two_squares
 #print axioms PaperP1.SquareLineFamilyAlignment.of_family
 #print axioms PaperP1.SquareLineFamilyAlignment.vertical_not_square
+#print axioms PaperP1.SquarePartLogGeometry.quotient_bounds
+#print axioms PaperP1.SquarePartLogGeometry.log_quotient_range
 #print axioms PaperP1.SquarePoolLower.oddPrimeSupport_square
 #print axioms PaperP1.SquarePoolLower.naturalValues_card_ge_sqrt
 #print axioms PaperP1.SquarePoolLower.sqrt_le_twice_nat_sqrt
