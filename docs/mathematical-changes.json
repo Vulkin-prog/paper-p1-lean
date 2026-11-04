@@ -13056,6 +13056,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "ae4058df0111d6edf84b773dc1dde70573f5e93d"
+    },
+    {
+      "id": "P1-MATH-0196",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The proof of T19.17 invokes Matomaki--Radziwill Corollary6 at fixed u=2/a to obtain two ordinary N^a-smooth arguments in almost every actual source word.",
+      "finding": "The needed relative almost-all short-interval input is stated explicitly and independently of every forcing object. Its positive limiting density implies two-candidate natural density with all finite initial losses proved. A growing logarithmic interval fits every moving critical word uniformly, the ordinary cutoff j^(a/2) is at most N^a, and exact translated boundary membership transfers the natural prefix estimate at2N to the actual missing-candidate count. This proves OrdinaryCensusDensity from the fixed Corollary6 input without any analytic assertion being installed as an axiom.",
+      "proposed_revision": "Give the exact logarithmic subinterval and finite ordinary candidate injection. Separate the fixed-parameter analytic relative-density input from the proved two-candidate and dyadic-density deductions, and record the positive limiting density used to obtain two candidates.",
+      "impact": "Discharges the complete independent analytic-input-to-source-census bridge of T19.17. The published analytic input remains explicit and unformalized; the final original parameter and nominal-scale specialization is still pending. Numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.OrdinaryCandidateMonotonicity.card_le",
+        "PaperP1.OrdinaryCandidateMonotonicity.boundary_lt_two_mul",
+        "PaperP1.OrdinaryCandidateMonotonicity.smooth_threshold",
+        "PaperP1.LogarithmicOrdinaryCensusBridge.window_grows",
+        "PaperP1.LogarithmicOrdinaryCensusBridge.window_actual",
+        "PaperP1.LogarithmicOrdinaryCensusBridge.census_of_two_candidates",
+        "PaperP1.LogarithmicOrdinaryCensusBridge.ordinary_census_of_corollary_six",
+        "PaperP1.OrdinaryShortIntervalCensusInput.two_candidates_of_relative",
+        "PaperP1.LogarithmicOrdinaryCensusBridge.windowLength",
+        "PaperP1.LogarithmicOrdinaryCensusBridge.CorollarySixLogInput",
+        "PaperP1.OrdinaryShortIntervalCensusInput.relativeBad",
+        "PaperP1.OrdinaryShortIntervalCensusInput.prefixBad",
+        "PaperP1.OrdinaryShortIntervalCensusInput.RelativeDensityInput",
+        "PaperP1.OrdinaryShortIntervalCensusInput.TwoCandidateDensity"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14887 jobs); direct axiom audit passed for 12844 declarations using only propext, Classical.choice and Quot.sound; all 11844 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.90 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

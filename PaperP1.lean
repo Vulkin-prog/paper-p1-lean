@@ -3160,3 +3160,6 @@ public import PaperP1.Model.RandomizedPrivateForcingBoundaryPairs
 public import PaperP1.Model.RandomizedPrivateForcingClass
 public import PaperP1.Asymptotics.UniversalPrivateObstructionArbitraryAuxiliary
 public import PaperP1.Model.PrivateForcingMeasureObservation
+public import PaperP1.Arithmetic.OrdinaryCandidateMonotonicity
+public import PaperP1.Asymptotics.LogarithmicOrdinaryCensusBridge
+public import PaperP1.Asymptotics.OrdinaryShortIntervalCensusInput

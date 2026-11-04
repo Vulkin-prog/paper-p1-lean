@@ -4001,6 +4001,9 @@ import PaperP1
 #print axioms PaperP1.OneTargetPhysicalRegularization.dimension_le_labels
 #print axioms PaperP1.OneTargetPhysicalRegularization.zero_projection_offsets
 #print axioms PaperP1.OneTargetPhysicalRegularization.uniform_subspace
+#print axioms PaperP1.OrdinaryCandidateMonotonicity.card_le
+#print axioms PaperP1.OrdinaryCandidateMonotonicity.boundary_lt_two_mul
+#print axioms PaperP1.OrdinaryCandidateMonotonicity.smooth_threshold
 #print axioms PaperP1.OrdinaryIntegerPoints.evaluation_X
 #print axioms PaperP1.OrdinaryIntegerPoints.host_lift
 #print axioms PaperP1.OrdinaryIntegerPoints.lift_Z
@@ -6785,6 +6788,10 @@ import PaperP1
 #print axioms PaperP1.LogarithmicCoefficientPatterns.uniform_offsets
 #print axioms PaperP1.LogarithmicCoefficientPatterns.uniform_pool
 #print axioms PaperP1.LogarithmicDefectPower.uniform_power
+#print axioms PaperP1.LogarithmicOrdinaryCensusBridge.window_grows
+#print axioms PaperP1.LogarithmicOrdinaryCensusBridge.window_actual
+#print axioms PaperP1.LogarithmicOrdinaryCensusBridge.census_of_two_candidates
+#print axioms PaperP1.LogarithmicOrdinaryCensusBridge.ordinary_census_of_corollary_six
 #print axioms PaperP1.LogarithmicSourceCoefficientCount.position_count
 #print axioms PaperP1.LogarithmicSourceCoefficientCount.uniform_count
 #print axioms PaperP1.LogarithmicUnivariateCount.uniform_count
@@ -6993,6 +7000,7 @@ import PaperP1
 #print axioms PaperP1.OrdinaryDyadicRootHostCount.choose_homogenization
 #print axioms PaperP1.OrdinaryDyadicRootHostCount.uniform_hosts
 #print axioms PaperP1.OrdinaryIndependentDeficitBound.uniform_bound
+#print axioms PaperP1.OrdinaryShortIntervalCensusInput.two_candidates_of_relative
 #print axioms PaperP1.OrdinarySurfaceSubpowerUnderInputs.uniform_subpower
 #print axioms PaperP1.OrientedPlanarMotifCount.uniform_count
 #print axioms PaperP1.OriginalCompressedActivityUnderInputs.original_cover
