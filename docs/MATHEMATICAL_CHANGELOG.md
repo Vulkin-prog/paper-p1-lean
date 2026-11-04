@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**252 mathematical improvements and one statement-scope correction are confirmed.**
+**253 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -22556,3 +22556,28 @@ It also retains global minimality of the first vector among ALL nonzero integer 
 P1-MATH-0253 closes the existence and elementary geometry of the reduced binary lattice basis. Polynomial coefficient-height control AFTER the nearest-integer shear, the exact lattice coordinate boxes and their source-scale specialization remain to be assembled, followed by geometric curve counts and interval sums. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are252 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15239 jobs); direct axiom audit passed for 13694 declarations using only propext, Classical.choice and Quot.sound; all 12887 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.76 GiB.
+
+
+## Explicit nearest-integer coefficient and reduced matrix height bounds
+
+The nearest-integer step in the actual reduced basis now has an explicit coefficient bound, and its effect on BOTH integer basis matrices is controlled. This removes the unquantified nearest-integer coefficient from the forthcoming polynomial-height assembly.
+
+BinaryReductionBounds proves the elementary scalar-product inequality |<v,w>|<=(|v|^2+|w|^2)/2. Integer nonzero vectors and the proved inverse-matrix coercivity give the complementary lower bound
+
+  1 <= K*|T*z|^2,
+
+where K is the maximum squared row norm of an actual real inverse matrix. The rounded projection integer k then satisfies the proved bound
+
+  |k| <= K*(|v|^2+|w|^2)+1.
+
+The argument uses the actual nearest integer and does not assume a bound for it. The lattice specialization applies to every nonzero integer first vector, independently of minimality.
+
+BinaryMatrixProductHeight proves the explicit entry-height bound 2*H*K for products of binary integer matrices. The actual integer shear and its inverse have entry height at most K+1 when |k|<=K. Consequently, if the unreduced integer basis and its inverse both have entry height H, the actual reduced basis AND its actual inverse have entry height at most
+
+  2*H*(K+1).
+
+The final theorem applies this bound directly to the actual reduced matrices defined in P1-MATH-0253. Together with the bounded primitive completion and the inverse-matrix length estimates, these formulas provide all elementary pieces for a common polynomial-height budget.
+
+P1-MATH-0254 closes the quantitative nearest-integer and matrix-product calculations. Assembly of a common power of N for the constructed bases, the exact coordinate boxes and their source-scale specialization remains to be completed, followed by geometric curve counts and interval sums. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are253 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15243 jobs); direct axiom audit passed for 13703 declarations using only propext, Classical.choice and Quot.sound; all 12896 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.74 GiB.

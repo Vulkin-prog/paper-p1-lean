@@ -2149,6 +2149,11 @@ import PaperP1
 #print axioms PaperP1.BinaryLatticeMinimum.bounded_sublevels
 #print axioms PaperP1.BinaryLatticeMinimum.mem_integerBox
 #print axioms PaperP1.BinaryLatticeMinimum.exists_shortest
+#print axioms PaperP1.BinaryReductionBounds.scalar_product_bound
+#print axioms PaperP1.BinaryReductionBounds.integer_energy_lower_bound
+#print axioms PaperP1.BinaryReductionBounds.round_absolute
+#print axioms PaperP1.BinaryReductionBounds.multiple_bound
+#print axioms PaperP1.BinaryReductionBounds.lattice_multiple_bound
 #print axioms PaperP1.BiquadraticAuxiliaryGap.primitive_bound
 #print axioms PaperP1.BiquadraticAuxiliaryGap.integer_gap
 #print axioms PaperP1.BiquadraticAuxiliaryValue.primitive_pole_budget
@@ -2841,6 +2846,10 @@ import PaperP1
 #print axioms PaperP1.BinaryBasisShear.sheared_image
 #print axioms PaperP1.BinaryBasisShear.image_area
 #print axioms PaperP1.BinaryBasisShear.primitive_basis_det
+#print axioms PaperP1.BinaryMatrixProductHeight.product_height
+#print axioms PaperP1.BinaryMatrixProductHeight.shear_height
+#print axioms PaperP1.BinaryMatrixProductHeight.sheared_heights
+#print axioms PaperP1.BinaryMatrixProductHeight.reduced_heights
 #print axioms PaperP1.BiquadraticAlgebraicAuxiliary.exists_auxiliary
 #print axioms PaperP1.BiquadraticAuxiliaryBudget.unknown_lower
 #print axioms PaperP1.BiquadraticAuxiliaryBudget.unknown_upper
