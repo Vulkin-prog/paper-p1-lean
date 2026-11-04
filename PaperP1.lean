@@ -3373,3 +3373,5 @@ public import PaperP1.Analysis.VerticalGridLattice
 public import PaperP1.Arithmetic.ActualVerticalLattice
 public import PaperP1.Asymptotics.QuadraticGridRadiusSum
 public import PaperP1.Asymptotics.UniformRelativeGridCoordinates
+public import PaperP1.Arithmetic.VerticalGridMatrices
+public import PaperP1.Asymptotics.UniformVerticalGridCoordinates

@@ -6013,6 +6013,9 @@ import PaperP1
 #print axioms PaperP1.UnsignedUnitWordHosts.integer_dyadic_sum
 #print axioms PaperP1.UnsignedUnitWordHosts.unsigned_hosts_integer
 #print axioms PaperP1.UnsignedUnitWordHosts.unsigned_hosts_twice_forward
+#print axioms PaperP1.VerticalGridMatrices.actual_transform_eq
+#print axioms PaperP1.VerticalGridMatrices.inflated_scale_bounds
+#print axioms PaperP1.VerticalGridMatrices.effective_pair_product_bound
 #print axioms PaperP1.WeightedDefectCounting.mem_positiveValuesForSupport_iff
 #print axioms PaperP1.WeightedDefectCounting.mem_positiveDefectValues_iff
 #print axioms PaperP1.WeightedDefectCounting.positiveValuesForSupport_subset_image_Icc
@@ -8725,6 +8728,7 @@ import PaperP1
 #print axioms PaperP1.UniformRelativeGridCoordinates.uniform_grid_coordinates
 #print axioms PaperP1.UniformRelativeIntervalCoordinates.uniform_interval_coordinates
 #print axioms PaperP1.UniformSubpolynomialPower.bound
+#print axioms PaperP1.UniformVerticalGridCoordinates.uniform_vertical_coordinates
 #print axioms PaperP1.UnitChannelPairWeights.uniform_joint
 #print axioms PaperP1.UnitChannelPairWeights.uniform_coefficient
 #print axioms PaperP1.UniversalPrivateObstructionArbitraryAuxiliary.randomized_under_census

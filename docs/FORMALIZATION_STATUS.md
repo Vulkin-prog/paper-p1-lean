@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records264 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records265 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13803 audited theorem/lemma declarations**. This
+- The project currently has **13807 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23586,3 +23586,21 @@ QuadraticGridRadiusSum proves the exact identity sideLength(R,P)=(R/2)*sideLengt
 P1-MATH-0265 closes arbitrary-radius reduced grid coordinates and radius-aware second-grid summation. Their simultaneous application to the actual effective scales and consistently chosen grid bases, signed-chart assembly, geometric curve counts and remaining primitive scale assembly remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are264 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15307 jobs); direct axiom audit passed for 13803 declarations using only propext, Classical.choice and Quot.sound; all 13009 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.54 GiB.
+
+
+## Actual uniformly bounded second-lattice coordinates per quadratic grid index
+
+The ACTUAL second-lattice reduced coordinates are now constructed uniformly and consistently per quadratic GRID index q. VerticalGridMatrices defines the literal matrix with D'=2*C*V', E'=C*U', M'=2M and proves that the actual point transform is exactly this matrix at q=floor(k^2/M). The source comparisons imply1<=D',E', D'<=2*C*N and E'<=C*N. They also give the exact effective pair bound U'*V'<=U*V/rho^2.
+
+UniformVerticalGridCoordinates fixes C,rho>0 and chooses one kappa,N0 BEFORE N, M, the original source Box and q. For M>=32,2M<=N and every q<=4M, it constructs actual integer inverse matrices A,B, det(A)=1, a globally shortest first column and entries bounded by N^kappa. With R=2*(49+16/rho), the actual side lengths are retained as sideLength(R,actual_basis_energy), and satisfy
+
+  0<=L1<=L0,
+  L0*L1<=4*R^2*C^2*U*V/(rho^2*M),
+  L0<=2*R*(2*(N^2)^2+1),
+  R^2*C^2*U'*V'/M<=L0^2.
+
+The constructed SAME matrices and side lengths then bound the inverse integer coordinates of EVERY point of EVERY actual signed population whose original floor index maps to q, whenever M*|h|<=N. Thus neither h, the population nor the point determines a new basis. The proof derives this result from the actual signed point box and the uniform arbitrary-radius grid-coordinate construction. No basis, height, shortest-vector or coordinate bound is supplied as an input.
+
+P1-MATH-0266 closes the actual second-lattice coordinate construction, effective-scale area comparison and consistent indexing needed for the side sum. The global simultaneous basis-family/side-sum assembly, negative auxiliary-chart flip, geometric curve counts and remaining primitive scale assembly remain open. The negative-point statement uses the original d/e chart and does not identify it with the reversed auxiliary chart. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are265 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15311 jobs); direct axiom audit passed for 13807 declarations using only propext, Classical.choice and Quot.sound; all 13014 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.52 GiB.
