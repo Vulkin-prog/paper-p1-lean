@@ -3393,3 +3393,6 @@ public import PaperP1.Diophantine.ActualAuxiliaryCoordinates
 public import PaperP1.Asymptotics.ActualClusterCoordinateBox
 public import PaperP1.Asymptotics.ConstructedClusterFactorCover
 public import PaperP1.Diophantine.FourChartRealBounds
+public import PaperP1.Arithmetic.OccupiedDeterminantIntervals
+public import PaperP1.Asymptotics.ConstructedClusterCurveData
+public import PaperP1.Asymptotics.SourceCurveCover

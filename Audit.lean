@@ -4385,6 +4385,8 @@ import PaperP1
 #print axioms PaperP1.NormalizedWindowSets.normalized_nonempty
 #print axioms PaperP1.NormalizedWindowSets.space_union
 #print axioms PaperP1.NormalizedWindowSets.rank_union
+#print axioms PaperP1.OccupiedDeterminantIntervals.sum_clusters
+#print axioms PaperP1.OccupiedDeterminantIntervals.index_range
 #print axioms PaperP1.OddPivotSpecialValues.square
 #print axioms PaperP1.OddPivotSpecialValues.prime
 #print axioms PaperP1.OddPrimePivot.largestOddPrime_pos
@@ -6514,6 +6516,7 @@ import PaperP1
 #print axioms PaperP1.ConnectedTripleLowCrossingUnderInputs.uniform_bound
 #print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_reduction
 #print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_absolute_error
+#print axioms PaperP1.ConstructedClusterCurveData.uniform_local_cover
 #print axioms PaperP1.ConstructedClusterFactorCover.uniform_cluster_cover
 #print axioms PaperP1.ContactDefectBudget.defect_count
 #print axioms PaperP1.ContactDefectBudget.relation_power
@@ -8494,6 +8497,7 @@ import PaperP1
 #print axioms PaperP1.SmoothSelectionCertificates.square_budget
 #print axioms PaperP1.SmoothSelectionCertificates.product_budget
 #print axioms PaperP1.SmoothSelectionCertificates.source_certificates
+#print axioms PaperP1.SourceCurveCover.uniform_global_cover
 #print axioms PaperP1.SourceCurvePointCover.finite_cover_bound
 #print axioms PaperP1.SourceCurvePointCoverDegreeBound.finite_cover_bound
 #print axioms PaperP1.SourcePairCloseWeight.nominal_mass
