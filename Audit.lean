@@ -10687,6 +10687,11 @@ import PaperP1
 #print axioms PaperP1.RandomOrientationSquareAnchor.original_event_probability
 #print axioms PaperP1.RandomOrientationSquareAnchor.joint_forced_event_probability
 #print axioms PaperP1.RandomOrientationSquareAnchor.not_full_conditional_law
+#print axioms PaperP1.RandomizedCleanPivotWordCost.target_flip
+#print axioms PaperP1.RandomizedCleanPivotWordCost.observation_cost
+#print axioms PaperP1.RandomizedCleanPivotWordCost.actual_cost_identity
+#print axioms PaperP1.RandomizedCleanPivotWordCost.actual_cost_formula
+#print axioms PaperP1.RandomizedCleanPivotWordCost.actual_half_rate_lower
 #print axioms PaperP1.RandomizedPrivatePalmForcing.hits
 #print axioms PaperP1.RandomizedPrivatePalmForcing.force_assemble
 #print axioms PaperP1.RandomizedPrivatePalmForcing.chart_mixture
@@ -10702,6 +10707,7 @@ import PaperP1
 #print axioms PaperP1.RationalTripleEvenRank.effective_rank
 #print axioms PaperP1.RationalTriplePrivateRank.actual_probability
 #print axioms PaperP1.RationalTriplePrivateRank.effective_rank
+#print axioms PaperP1.RawAuxiliaryObservation.independent_words
 #print axioms PaperP1.RawDependencePairs.subset_hosts
 #print axioms PaperP1.RawDependencePairs.card_le_hosts
 #print axioms PaperP1.RawDependencePairs.joint_surjective_restrict
@@ -12043,6 +12049,11 @@ import PaperP1
 #print axioms PaperP1.HeterogeneousPoissonCharlierConversion.norm_conversion
 #print axioms PaperP1.HeterogeneousPoissonCharlierConversion.coefficient_conversion
 #print axioms PaperP1.HeterogeneousPoissonCharlierConversion.actual_signed_measure_conversion
+#print axioms PaperP1.IndependentFiniteProbability.expectation_product
+#print axioms PaperP1.IndependentFiniteProbability.commute
+#print axioms PaperP1.IndependentFiniteProbability.expectation_first
+#print axioms PaperP1.IndependentFiniteProbability.expectation_second
+#print axioms PaperP1.IndependentFiniteProbability.uniform_commute
 #print axioms PaperP1.IndicatorDeletion.count_erase_add
 #print axioms PaperP1.IndicatorDeletion.count_erase_eq_sub
 #print axioms PaperP1.IndicatorDeletion.atom_count_deletion
@@ -12633,6 +12644,10 @@ import PaperP1
 #print axioms PaperP1.QuadraticReferenceDistance.singleton_difference
 #print axioms PaperP1.QuadraticReferenceDistance.signed_distance
 #print axioms PaperP1.QuadraticReferenceDistance.totalVariation_exact
+#print axioms PaperP1.RandomizedSourceFlip.source_parity_fair
+#print axioms PaperP1.RandomizedSourceFlip.quarter_choice
+#print axioms PaperP1.RandomizedSourceFlip.correction_eq
+#print axioms PaperP1.RandomizedSourceFlip.ordinary_quarter_choice
 #print axioms PaperP1.RawRecurrence.summable_residual
 #print axioms PaperP1.RawRecurrence.norm_nonneg
 #print axioms PaperP1.RawRecurrence.shifted_test_sum

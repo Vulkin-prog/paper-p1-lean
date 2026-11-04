@@ -3135,3 +3135,7 @@ public import PaperP1.Arithmetic.OddPivotSpecialValues
 public import PaperP1.Model.RandomOrientationSquareAnchor
 public import PaperP1.Model.RandomizedPrivatePalmForcing
 public import PaperP1.Probability.FairBinaryMixture
+public import PaperP1.Model.RandomizedCleanPivotWordCost
+public import PaperP1.Model.RawAuxiliaryObservation
+public import PaperP1.Probability.IndependentFiniteProbability
+public import PaperP1.Probability.RandomizedSourceFlip

@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and69 conditional. The project records188 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and69 conditional. The project records189 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **12756 audited theorem/lemma declarations**. This
+- The project currently has **12771 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -21405,3 +21405,73 @@ results. No source-manuscript bytes, external axioms, dependency or
 compiler versions are changed. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14831 jobs); direct axiom audit passed for 12756 declarations using only propext, Classical.choice and Quot.sound; all 11720 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.05 GiB.
+
+
+## Actual randomized clean-target cost and quarter-flip selection
+
+Companion T19.17 gains the actual randomized clean-target cost
+formula and a quarter-flip ordinary source choice, with an arbitrary
+independent finite auxiliary probability. The global hybrid field,
+source aggregation and final randomized obstruction remain in progress.
+
+IndependentFiniteProbability constructs the literal product law from
+arbitrary normalized finite real weights. It proves weighted Fubini,
+both exact marginals and the uniform/weighted expectation interchange.
+No uniformity or separate nonempty instance is imposed on the auxiliary
+law. RawAuxiliaryObservation then derives the actual joint uniform
+source/target word law with that independent auxiliary law from the
+surjective original raw matrix. An assumed independent-word probability
+law is not substituted for the original prime model.
+
+RandomizedSourceFlip uses the actual correction
+
+  delta_i(U,xi)=U_i+b_i+g(U,xi).
+
+For any two different original source indices, their correction bits
+sum to the original fair parity. The orientation may depend arbitrarily
+on U and xi. Weighted finite expectation therefore proves that one
+candidate has flip probability theta_i>=1/4. If the actual source has
+two ordinary Q-smooth candidate indices, one such candidate is selected
+among them. This local cost selection does NOT require fairness of g;
+the fully private Palm law requires the separate fairness hypothesis
+proved and scoped at P1-MATH-0189.
+
+RandomizedCleanPivotWordCost connects this calculation to the actual
+private prime modifications. A literal clean target contains the chosen
+source prime to valuation one and contains no other changed source
+prime in any target position. The actual target raw word then changes
+by exactly single_0(delta_i(U,xi)). This is a pointwise identity for
+every original prime sample and auxiliary draw. The actual source
+template b+g(U,xi)*1 is used inside the original forceWord map.
+
+For a clean target whose joint raw matrix is surjective, its actual
+positive unsigned indicator-change expectation satisfies the EXACT
+formula
+
+  actual target change = 2*theta_i*2^(-K)
+
+for a target word of length K+1>=2. The left side is expectation in
+the original prime-cylinder times the actual auxiliary probability.
+The right side is proved by the raw-observation identity and disjoint
+single-bit translates of the unsigned target orbit. For theta_i>=1/4,
+this is at least 2^(-K)/2, the literal half-factor needed in T19.17.
+No desired flip cost or target probability is a theorem premise.
+
+The original finite arithmetic raw-dependence and small-pivot exception
+counts remain available for source aggregation. The randomized Palm
+identity from the previous checkpoint applies on fully private good
+sources. A compatible anchored map must be retained on other original
+one-small-pivot sources, as the concrete square-anchor scope test shows.
+That global hybrid coupling and the final half-factor source summation
+have not yet been declared proved. The independent ordinary source
+census also remains unformalized.
+
+P1-MATH-0190 records the arbitrary auxiliary-law product semantics,
+ordinary quarter-flip selection and exact ACTUAL randomized target-cost
+formula. Coverage stays 88 proved and 69 conditional out of 167 numbered
+results, with ten incomplete. There are 189 improvements and one
+statement-scope correction. No new external theorem, axiom, dependency,
+compiler change or source-manuscript edit is introduced. Palomar stays
+deferred until completion and statement alignment.
+
+Verified under Lean v4.36.0-rc2: full build passed (14839 jobs); direct axiom audit passed for 12771 declarations using only propext, Classical.choice and Quot.sound; all 11739 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.03 GiB.

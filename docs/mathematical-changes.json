@@ -12784,6 +12784,51 @@
         "status": "not_integrated"
       },
       "validation_commit": "76beae3ba49a00993ad6e42fc22b22a3e2ccea1c"
+    },
+    {
+      "id": "P1-MATH-0190",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The randomized extension selects one of two ordinary small source pivots with flip probability at least one quarter, then charges each clean independent target at least half its unsigned mark rate.",
+      "finding": "An explicit product law handles arbitrary finite independent auxiliary randomness. Actual raw source/target uniformity is derived from the original joint matrix. Among two ordinary smooth candidates one has correction probability theta>=1/4 for any source-dependent randomized orientation. The physical prime force changes exactly the first target bit on a literal clean target, and its actual unsigned change expectation equals 2*theta*2^(-K). Thus each selected clean target costs at least 2^(-K)/2, without orientation fairness being required for this local cost calculation. Fairness remains separate in the fully private Palm law.",
+      "evidence": [
+        "PaperP1.RandomizedCleanPivotWordCost.target_flip",
+        "PaperP1.RandomizedCleanPivotWordCost.observation_cost",
+        "PaperP1.RandomizedCleanPivotWordCost.actual_cost_identity",
+        "PaperP1.RandomizedCleanPivotWordCost.actual_cost_formula",
+        "PaperP1.RandomizedCleanPivotWordCost.actual_half_rate_lower",
+        "PaperP1.RawAuxiliaryObservation.independent_words",
+        "PaperP1.IndependentFiniteProbability.expectation_product",
+        "PaperP1.IndependentFiniteProbability.commute",
+        "PaperP1.IndependentFiniteProbability.expectation_first",
+        "PaperP1.IndependentFiniteProbability.expectation_second",
+        "PaperP1.IndependentFiniteProbability.uniform_commute",
+        "PaperP1.RandomizedSourceFlip.source_parity_fair",
+        "PaperP1.RandomizedSourceFlip.quarter_choice",
+        "PaperP1.RandomizedSourceFlip.correction_eq",
+        "PaperP1.RandomizedSourceFlip.ordinary_quarter_choice",
+        "PaperP1.RandomizedCleanPivotWordCost.actualUnsignedCost",
+        "PaperP1.IndependentFiniteProbability.product",
+        "PaperP1.RandomizedSourceFlip.flip",
+        "PaperP1.RandomizedSourceFlip.probability"
+      ],
+      "proposed_revision": "State the independent auxiliary product probability and actual correction bit explicitly. Derive the original raw-word/auxiliary observation law from the joint matrix. Give the exact target-cost formula before applying the quarter-flip choice, and distinguish this local cost argument from the fair-orientation hypothesis for the full conditional law.",
+      "impact": "Completes the finite actual randomized clean-target half-factor calculation and ordinary candidate selection for T19.17. Global hybrid coupling, arithmetic source aggregation and the ordinary source census remain open, so numbered coverage is unchanged.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14839 jobs); direct axiom audit passed for 12771 declarations using only propext, Classical.choice and Quot.sound; all 11739 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.03 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
