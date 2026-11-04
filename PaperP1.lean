@@ -2795,3 +2795,14 @@ public import PaperP1.Model.AllPairRetainedGeometry
 public import PaperP1.Model.FiniteAllPairCost
 public import PaperP1.Model.PositionalObservationLaw
 public import PaperP1.Probability.PositionalAllPairCost
+public import PaperP1.Asymptotics.AllPairCriteriaUnderInputs
+public import PaperP1.Asymptotics.AllPairErasureTheoremUnderInputs
+public import PaperP1.Asymptotics.CriticalPairNegligible
+public import PaperP1.Asymptotics.ErasedCountMeanUnderInputs
+public import PaperP1.Asymptotics.ErasedPoissonCountUnderInputs
+public import PaperP1.Asymptotics.OnceErasedPoissonUnderInputs
+public import PaperP1.Asymptotics.OriginalHermiteCountUnderInputs
+public import PaperP1.Model.ErasedCountReference
+public import PaperP1.Model.OnceErasedCount
+public import PaperP1.Probability.PositionalCountProbability
+public import PaperP1.Probability.PositionalScalarDistance

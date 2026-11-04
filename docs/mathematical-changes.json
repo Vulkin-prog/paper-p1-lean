@@ -10911,6 +10911,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "2cf2885a269423707449743fe6529e281864a8de"
+    },
+    {
+      "id": "P1-MATH-0158",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-pairs",
+        "number": "T19.14",
+        "page": 78,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1059,
+        "statement_sha256": "9ba1b303d71719a03d4c4ac77972609619003359996ad1ac5f2833d0720016fc"
+      },
+      "original_assumption": "The final proof of T19.14, companion_sections/limits_appendix.tex:1096-1100, invokes the sharper once/all total-variation estimate of T19.10, obtained from the O(a_N^2) positive two-good-edge bound.",
+      "finding": "The first-order criterion equivalences of T19.14 need only errors of order N^(-4/5+epsilon), with epsilon<2/15. The full-field deletion comparisons and finer rate1 mean errors give BOTH original erased counts Poisson approximation at their own actual means at this coarser rate. The original full count has the same rate to its exact good-pair Hermite law. Uniform little-o transfer and the actual all-pair recurrence stability complete all criterion equivalences without assuming or proving the stronger O(a_N^2) two-edge estimate. The latter remains open for the separate sharp assertions of T19.10 and T1.17.",
+      "evidence": [
+        "PaperP1.CriticalPairNegligible.power_small",
+        "PaperP1.CriticalPairNegligible.iff_at_scale",
+        "PaperP1.OnceErasedCount.law_eq_observation",
+        "PaperP1.OnceErasedPoissonUnderInputs.uniform_relative",
+        "PaperP1.ErasedPoissonCountUnderInputs.uniform_relative",
+        "PaperP1.OriginalHermiteCountUnderInputs.uniform_relative",
+        "PaperP1.AllPairErasureTheoremUnderInputs.complete_criteria",
+        "PaperP1.AllPairErasureTheoremUnderInputs.criteria_on_scale",
+        "PaperP1.AllPairErasureTheoremUnderInputs.companion_T19_14"
+      ],
+      "proposed_revision": "In the final criterion proof, use the already available full-field rate4/5 comparisons and the finer intensity bound to control both erased counts at their actual means. Explain the strict exponent gap4/5-epsilon>2/3 and use recurrence stability. Reserve the sharper O(a_N^2) input for its own stronger coupling conclusions.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14173 jobs); direct axiom audit passed for 11498 declarations using only propext, Classical.choice and Quot.sound; all 10032 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.32 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
