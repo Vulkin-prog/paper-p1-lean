@@ -3292,3 +3292,7 @@ public import PaperP1.Arithmetic.DeterminantChartExpansion
 public import PaperP1.Analysis.DeterminantExplicitDecay
 public import PaperP1.Analysis.WeightedLatticeCost
 public import PaperP1.Analysis.WeightedLatticeTriangle
+public import PaperP1.Analysis.DeterminantDegreeChoice
+public import PaperP1.Analysis.DeterminantDenominatorBudget
+public import PaperP1.Analysis.DeterminantStrictMargin
+public import PaperP1.Analysis.DeterminantUniformMargin
