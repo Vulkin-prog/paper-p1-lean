@@ -3420,3 +3420,6 @@ public import PaperP1.Asymptotics.ActualZeroSecondDegreeCount
 public import PaperP1.Asymptotics.PolylogSourceBarrierCount
 public import PaperP1.Algebra.GeometricFactorSwap
 public import PaperP1.Arithmetic.ProjectiveFactorCoefficients
+public import PaperP1.Asymptotics.HeathBrownHeightBudget
+public import PaperP1.Asymptotics.SourceLargeSidesHeight
+public import PaperP1.Diophantine.HeathBrownBiformInput

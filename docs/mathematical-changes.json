@@ -16792,6 +16792,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "3593d04619550fb14920771fc545639b1ad280e6"
+    },
+    {
+      "id": "P1-MATH-0285",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "Heath-Brown Lemma2 supplies a coefficient-uniform local geometric bound after the point and coefficient height losses are absorbed with the correct parameter order.",
+      "finding": "The exact ordinary published input is isolated explicitly, and its two numerical geometric consequences have proved height budgets chosen after the fixed degree and height exponents and before N. Actual lattice-side heights are derived unconditionally as N^5.",
+      "proposed_revision": "Retain the exact ordinary absolute-irreducibility input and its coefficient norm, choose the internal exponent only after all fixed height exponents, and derive the actual point-height budget from the constructed lattice data.",
+      "impact": "Closes the moving-height budget conditionally on the exact ordinary Heath-Brown lemma, with unconditional actual lattice-height control. Its ordinary input proof, non-geometric case and final assembly remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.HeathBrownHeightBudget.uniform_first_count",
+        "PaperP1.HeathBrownHeightBudget.uniform_second_count",
+        "PaperP1.SourceLargeSidesHeight.upper_to_fifth_power",
+        "PaperP1.SourceLargeSidesHeight.uniform_height",
+        "PaperP1.HeathBrownBiformInput.Input"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15411 jobs); direct axiom audit passed for 13937 declarations using only propext, Classical.choice and Quot.sound; all 13168 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.17 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

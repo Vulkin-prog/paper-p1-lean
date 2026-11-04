@@ -7334,6 +7334,8 @@ import PaperP1
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_full_cumulant
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_absolute_activity
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_cumulant
+#print axioms PaperP1.HeathBrownHeightBudget.uniform_first_count
+#print axioms PaperP1.HeathBrownHeightBudget.uniform_second_count
 #print axioms PaperP1.HeightTwoBoundaryJointMass.finite_bound
 #print axioms PaperP1.HeightTwoBoundaryJointMass.uniform_mass
 #print axioms PaperP1.HeightTwoBoundaryJointMass.uniform_triples
@@ -8555,6 +8557,8 @@ import PaperP1
 #print axioms PaperP1.SourceFactorPreimages.pullSecondForm_nonzero
 #print axioms PaperP1.SourceFactorPreimages.sourcePart_second_form_zero
 #print axioms PaperP1.SourceFactorPreimages.sourcePart_first_form_zero
+#print axioms PaperP1.SourceLargeSidesHeight.upper_to_fifth_power
+#print axioms PaperP1.SourceLargeSidesHeight.uniform_height
 #print axioms PaperP1.SourcePairCloseWeight.nominal_mass
 #print axioms PaperP1.SourcePairCloseWeight.finite_scaled_abs
 #print axioms PaperP1.SourcePairCloseWeight.uniform_nominal_mass
