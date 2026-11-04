@@ -16470,6 +16470,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "fbe1ae7ca0edee64469a5183c79bbf30d0e6ae8a"
+    },
+    {
+      "id": "P1-MATH-0276",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The actual nonconstant integer irreducible factors can be treated as irreducible rational bivariate equations at the subsequent geometric counting stage.",
+      "finding": "A proved polynomial-localization argument preserves primeness after the literal integer-to-rational coefficient map. Positive degree excludes rational units. Exact bivariate/multivariate compatibility transfers this result to every actual factor already constructed in the source cover.",
+      "proposed_revision": "Justify the rational coefficient change using the positive-degree factor condition and a Gauss/localization argument before using rational irreducibility, while keeping projective and absolute irreducibility as separate prerequisites.",
+      "impact": "Closes rational affine irreducibility of all actual source-cover factors without a new premise. Projective/absolute irreducibility, local curve counts and primitive reductions remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.RationalBivariateIrreducibility.map_naturality",
+        "PaperP1.RationalBivariateIrreducibility.nonconstant_of_degreeSum_pos",
+        "PaperP1.RationalBivariateIrreducibility.rational_irreducible",
+        "PaperP1.RationalMultivariatePrime.map_nonunit",
+        "PaperP1.RationalMultivariatePrime.prime_map",
+        "PaperP1.RationalSourceCurveFactors.local_cover_factors",
+        "PaperP1.RationalBivariateIrreducibility.rationalize"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15369 jobs); direct axiom audit passed for 13869 declarations using only propext, Classical.choice and Quot.sound; all 13091 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.33 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

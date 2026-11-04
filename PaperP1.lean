@@ -3399,3 +3399,6 @@ public import PaperP1.Asymptotics.SourceCurveCover
 public import PaperP1.Arithmetic.IntegralSourceCoefficients
 public import PaperP1.Diophantine.ActualIntegerSourceEquation
 public import PaperP1.Diophantine.SourceBihomogeneousEquation
+public import PaperP1.Algebra.RationalBivariateIrreducibility
+public import PaperP1.Algebra.RationalMultivariatePrime
+public import PaperP1.Asymptotics.RationalSourceCurveFactors

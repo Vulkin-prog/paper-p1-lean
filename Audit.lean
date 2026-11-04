@@ -1623,6 +1623,9 @@ import PaperP1
 #print axioms PaperP1.RankOneFieldSquares.bijective
 #print axioms PaperP1.RankOneFieldSquares.isSquare_iff
 #print axioms PaperP1.RankOneFieldSquares.quadratic_descent
+#print axioms PaperP1.RationalBivariateIrreducibility.map_naturality
+#print axioms PaperP1.RationalBivariateIrreducibility.nonconstant_of_degreeSum_pos
+#print axioms PaperP1.RationalBivariateIrreducibility.rational_irreducible
 #print axioms PaperP1.RationalGraphFieldTower.evaluation_polynomial
 #print axioms PaperP1.RationalGraphFieldTower.evaluation_quotient
 #print axioms PaperP1.RationalGraphFieldTower.map_top
@@ -1653,6 +1656,8 @@ import PaperP1
 #print axioms PaperP1.RationalInterpolationUniqueness.unique_up_to_scalar_family
 #print axioms PaperP1.RationalMapFieldDegree.reduced_degrees
 #print axioms PaperP1.RationalMapFieldDegree.extension_rank
+#print axioms PaperP1.RationalMultivariatePrime.map_nonunit
+#print axioms PaperP1.RationalMultivariatePrime.prime_map
 #print axioms PaperP1.RationalSquareGraphNonconstant.degree_pos
 #print axioms PaperP1.RectangularEvaluationPolynomial.outer_coefficient
 #print axioms PaperP1.RectangularEvaluationPolynomial.coefficient
@@ -8181,6 +8186,7 @@ import PaperP1
 #print axioms PaperP1.RandomizedPrivateClassObstructionUnderOrdinaryCensus.randomized_under_census
 #print axioms PaperP1.RankinCertificateCritical.weightedCount_mono
 #print axioms PaperP1.RankinCertificateCritical.uniform_bound
+#print axioms PaperP1.RationalSourceCurveFactors.local_cover_factors
 #print axioms PaperP1.RationalTripleEvenMass.hosts_card
 #print axioms PaperP1.RationalTripleEvenMass.host_data
 #print axioms PaperP1.RationalTripleEvenMass.mem_hosts_of_source

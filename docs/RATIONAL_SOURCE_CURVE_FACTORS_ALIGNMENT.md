@@ -1,0 +1,13 @@
+# Rational irreducibility of every actual nonconstant integer source-curve factor
+
+Source: companion T1.4, companion_sections/arithmetic_appendix.tex:139, integer/rational auxiliary-factor transition in Step3; T1.5 uses that reduction. Original source hashes remain preserved.
+
+The actual NONCONSTANT integer factors in the global source curve cover are now proved irreducible over the RATIONALS. This closes one essential field-change prerequisite without assuming projective or absolute irreducibility.
+
+RationalMultivariatePrime proves that a nonconstant integer multivariate polynomial cannot become a unit after the literal coefficient map to Q. If its rational image were a unit, the reduced polynomial-ring unit criterion would make that image constant; coefficient recovery and injectivity of the integer cast would make the original polynomial constant. It then uses the actual proved localization of Z-polynomials at nonzero integer constants to show that every such integer PRIME remains prime over Q.
+
+RationalBivariateIrreducibility defines the literal double coefficient map Z[X][X]->Q[X][X] and proves its exact compatibility with the actual bivariate/multivariate ring equivalences. Positive degree excludes constants. Integer irreducibility supplies primeness in the integer polynomial UFD, the localization theorem proves primeness after coefficient change, and the rational ring equivalence returns actual irreducibility of the rationalized bivariate polynomial.
+
+RationalSourceCurveFactors applies this theorem to EVERY actual factor in the constructed LocalCover data. Integer irreducibility and the required positive degree are both discharged using the already constructed factor data. Thus no rational irreducibility premise is added to the global source cover.
+
+P1-MATH-0276 closes rational AFFINE irreducibility of the actual integer factors. Projective/absolute irreducibility, the geometric local point-count cases and final primitive reductions remain open. No stronger geometric property is inferred from this rational result, and no solution-population count is claimed. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are275 improvements and one statement-scope correction. Exactly TWO missing pinned Mathlib cache artifacts were fetched selectively for the localization/unit arguments; no full cache or dependency/version update was requested. The compiler and original manuscript sources remain unchanged. No external counting input or new axiom is introduced. Palomar remains deferred.
