@@ -20347,8 +20347,10 @@
           "UniformNormalizedCurvePointCount.UniformBound at ko+3"
         ],
         "validation": "Verified under Lean v4.36.0-rc2: full build passed (15511 jobs); direct axiom audit passed for 14064 declarations using only propext, Classical.choice and Quot.sound; all 13313 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.71 GiB.",
-        "integration": "not integrated; original manuscript bytes preserved"
-      }
+        "integration": "not integrated; original manuscript bytes preserved",
+        "validation_commit": "78e42800d848c027158ecdffad4185edcbf37ad7"
+      },
+      "validation_commit": "78e42800d848c027158ecdffad4185edcbf37ad7"
     },
     {
       "label": "p1:arith:palmrank",
