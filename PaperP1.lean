@@ -3328,3 +3328,5 @@ public import PaperP1.Asymptotics.BiformCoordinateHeight
 public import PaperP1.Diophantine.BiformCoordinateEquation
 public import PaperP1.Diophantine.BiformLinearCoordinates
 public import PaperP1.Diophantine.BiformPointCoordinates
+public import PaperP1.Diophantine.FourChartEquations
+public import PaperP1.Diophantine.FourProjectiveCharts

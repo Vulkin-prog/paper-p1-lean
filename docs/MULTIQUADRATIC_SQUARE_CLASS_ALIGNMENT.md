@@ -16473,3 +16473,18 @@ BiformPointCoordinates constructs the actual map of integer point pairs. Integer
 P1-MATH-0248 records the full two-pair algebraic and height transport. Actual short-vector bases, projective chart/factor assembly in those coordinates, geometric curve counts and interval sums remain to be established. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are247 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15217 jobs); direct axiom audit passed for 13630 declarations using only propext, Classical.choice and Quot.sound; all 12804 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.83 GiB.
+
+
+## Four actual projective charts retain every transformed primitive point
+
+The passage from lattice coordinates to affine factor curves now retains points whose transformed denominator is zero. Four actual coordinate charts cover the whole primitive population, with an exact cardinality partition and nonzero bounded-height integer equations.
+
+FourProjectiveCharts constructs the identity/swap integer matrices and proves their involutions, entry heights and exact coordinate actions. The chart of each pair is chosen from whether its last coordinate vanishes. Every nonzero pair then has a nonzero last coordinate in its selected chart. Splitting a finite population by the two Boolean choices gives four disjoint parts; each fixed chart map is injective and preserves the corresponding cardinality. The sum of the four actual chart-population cardinalities is exactly the original cardinality.
+
+Primitivity of both integer pairs is preserved. The coordinate-height boxes are preserved exactly because the chart maps merely exchange the two coordinates. All coordinates remain signed integers: no positivity assumption or identification of opposite primitive vectors is inserted. Each selected denominator is proved nonzero, including the original boundary cases.
+
+FourChartEquations constructs a distinct actual transformed coefficient family and biform for each chart. Every equation stays nonzero, retains its two homogeneous degrees and vanishes at its entire actual chart population. A common polynomial coefficient-height exponent and threshold precede N, both bounded degrees, the source family and the population. The complete finite reduction includes every chart denominator, primitive pair and point membership, together with the exact cardinality identity.
+
+P1-MATH-0249 makes the projective-boundary handling explicit in the lattice-to-curve reduction. Generic signed denominator clearing and factor cover in these charts, short-vector lattice bases, geometric curve counts and interval sums remain to be established. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are248 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15221 jobs); direct axiom audit passed for 13645 declarations using only propext, Classical.choice and Quot.sound; all 12824 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.82 GiB.
