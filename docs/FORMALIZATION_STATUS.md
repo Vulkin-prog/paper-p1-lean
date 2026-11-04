@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records284 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records285 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13937 audited theorem/lemma declarations**. This
+- The project currently has **13940 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23924,3 +23924,16 @@ SourceLargeSidesHeight separately proves an UNCONDITIONAL fixed polynomial budge
 P1-MATH-0285 closes both conditional geometric height budgets and the actual lattice-side height prerequisite. Actual geometric-factor application over all bounded degrees, the non-geometric rational-factor case, the proof of the ordinary Heath-Brown input itself and final source/primitive-scale assembly remain open. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are284 improvements and one statement-scope correction. The ONE newly explicit literature input remains unproved and is never hidden in the axiom set. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15411 jobs); direct axiom audit passed for 13937 declarations using only propext, Classical.choice and Quot.sound; all 13168 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.17 GiB.
+
+
+## Actual positive-bidegree geometric factor populations have the uniform minimum-side count
+
+EVERY actual positive-bidegree GEOMETRIC auxiliary factor now has the numerical count N^epsilon*min(L,T), conditional ONLY on the exact ordinary Heath-Brown input isolated in P1-MATH-0285. All degree, coefficient-height, coordinate-height, primitivity, chart and source-equation prerequisites are discharged using the actual constructed data. Geometric irreducibility remains an explicit BRANCH hypothesis; it is never inferred from rational irreducibility.
+
+ActualGeometricFactorCount takes finite maxima of the proved ordinary geometric-count thresholds over both fixed auxiliary-degree ranges. One threshold precedes N, every source comparison parameter, every actual lattice basis, every chart, every finite source population and every actual factor. The unconditional actual side-height bound N^5 discharges the point-height budget. Actual factor height, partial-degree bounds, primitive points, real coordinate bounds and nonzero chart denominators all come from LocalCover and the actual coordinate data. Thus a second degree at least2 gives N^epsilon*L, while a first degree at least2 gives N^epsilon*T on the literal affine chart-factor zero population.
+
+ActualPositiveGeometricFactorCount combines those two geometric orientations with the internally proved coefficient-uniform elimination branches. For the L bound, second degree at least2 uses the geometric input, and second degree1 uses actual elimination. For the T bound, first degree at least2 uses the geometric input, and first degree1 uses actual elimination. The original nonzero integer source equation supplies the elimination hypotheses after the actual inverse bases and charts. Both bounds hold at one common threshold, giving the minimum of the two ACTUAL large lattice sides for every positive-bidegree geometric factor, including all linear cases.
+
+P1-MATH-0286 closes the complete actual positive-degree geometric local branch under the ONE existing explicit unproved ordinary input, HeathBrownBiformInput.Input. No new literature input is introduced. The non-geometric rational-factor branch, proof of the ordinary Heath-Brown input itself and final source/primitive-scale assembly remain open. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are285 improvements and one statement-scope correction. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15415 jobs); direct axiom audit passed for 13940 declarations using only propext, Classical.choice and Quot.sound; all 13171 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.15 GiB.

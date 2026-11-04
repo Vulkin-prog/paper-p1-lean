@@ -3423,3 +3423,5 @@ public import PaperP1.Arithmetic.ProjectiveFactorCoefficients
 public import PaperP1.Asymptotics.HeathBrownHeightBudget
 public import PaperP1.Asymptotics.SourceLargeSidesHeight
 public import PaperP1.Diophantine.HeathBrownBiformInput
+public import PaperP1.Asymptotics.ActualGeometricFactorCount
+public import PaperP1.Asymptotics.ActualPositiveGeometricFactorCount

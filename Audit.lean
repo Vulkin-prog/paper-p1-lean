@@ -6155,6 +6155,8 @@ import PaperP1
 #print axioms PaperP1.ActualFamilyJointRows.uniform_row
 #print axioms PaperP1.ActualFirstLinearFactorCount.cluster_population
 #print axioms PaperP1.ActualFirstLinearFactorCount.uniform_actual_first_linear_count
+#print axioms PaperP1.ActualGeometricFactorCount.uniform_first_count
+#print axioms PaperP1.ActualGeometricFactorCount.uniform_second_count
 #print axioms PaperP1.ActualHermiteReferenceRateUnderInputs.uniform_comparison
 #print axioms PaperP1.ActualNominalReferenceComparison.lowerConstant_pos
 #print axioms PaperP1.ActualNominalReferenceComparison.actual_mean_nonneg
@@ -6171,6 +6173,7 @@ import PaperP1
 #print axioms PaperP1.ActualPairRowActivity.uniform_joint_row
 #print axioms PaperP1.ActualPairRowActivity.uniform_absolute_row
 #print axioms PaperP1.ActualPairRowActivity.uniform_marginal_cap
+#print axioms PaperP1.ActualPositiveGeometricFactorCount.uniform_actual_count
 #print axioms PaperP1.ActualPrescribedDivisorBudget.actual_outside_height
 #print axioms PaperP1.ActualPrescribedDivisorBudget.actual_outside_divisor_count
 #print axioms PaperP1.ActualQuadraticSubpowerMoments.uniform_moments
