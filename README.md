@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: 87 unconditional and 55 conditional numbered results out of 167.**
+**Status: 87 unconditional and 56 conditional numbered results out of 167.**
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 

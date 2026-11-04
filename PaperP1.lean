@@ -2917,3 +2917,7 @@ public import PaperP1.Asymptotics.OptimalHermiteUnderInputs
 public import PaperP1.Asymptotics.OptimalNominalQuadraticUnderInputs
 public import PaperP1.Asymptotics.OptimalTripleReconstructionUnderInputs
 public import PaperP1.Probability.QuadraticMeanLawComparison
+public import PaperP1.Asymptotics.ExactPoissonScaleUnderInputs
+public import PaperP1.Asymptotics.FixedPairPhaseUnderInputs
+public import PaperP1.Asymptotics.PoissonScaleRatesUnderInputs
+public import PaperP1.Probability.PoissonDistanceExpansion

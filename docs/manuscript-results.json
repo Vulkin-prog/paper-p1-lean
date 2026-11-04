@@ -217,11 +217,38 @@
       "source": "main_sections/introduction.tex",
       "line": 116,
       "sha256": "a0f42f421329445730495eb8212e5f118185dc3ca6c440acd96dc5279dbda027",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
+      "status": "conditional",
+      "lean_declarations": [
+        "PaperP1.ExactPoissonScaleUnderInputs.phaseScale_formula",
+        "PaperP1.ExactPoissonScaleUnderInputs.article_1_2",
+        "PaperP1.FixedPairPhaseUnderInputs.uniform_errors",
+        "PaperP1.PoissonScaleRatesUnderInputs.uniform_rates",
+        "PaperP1.PoissonDistanceExpansion.zero_reference",
+        "PaperP1.PoissonDistanceExpansion.distance_symm",
+        "PaperP1.PoissonDistanceExpansion.finite_expansion",
+        "PaperP1.PoissonDistanceExpansion.finite_mean_change",
+        "PaperP1.ExactPoissonScaleUnderInputs.actualPoisson",
+        "PaperP1.ExactPoissonScaleUnderInputs.nominalPoisson",
+        "PaperP1.ExactPoissonScaleUnderInputs.actualTV",
+        "PaperP1.ExactPoissonScaleUnderInputs.nominalTV",
+        "PaperP1.ExactPoissonScaleUnderInputs.phaseScale",
+        "PaperP1.ExactPoissonScaleUnderInputs.Parameters",
+        "PaperP1.ExactPoissonScaleUnderInputs.Hypotheses",
+        "PaperP1.PoissonScaleRatesUnderInputs.actualError"
+      ],
+      "literature_inputs": [
+        "P1-PROB-EXACT-POISSON-SCALE",
+        "P1-GEO-BCN-PLANE-UNIFORM"
+      ],
       "mathematical_changes": [],
-      "notes": ""
+      "notes": "Main1.2 is now COMPLETE CONDITIONALLY on the existing explicit BCN\nand finite ordinary/source cover and normalized curve-count properties.\nEvery source clause is covered: the exact coefficient alpha/4 times\nthe second Poisson-difference norm, the nominal-mean error power1,\nthe actual-mean error power4/3, and the SAME literal moving equivalent\nfor both specified Poisson references along the full critical band.\n\nPoissonDistanceExpansion proves the finite expansion inequality for\nan arbitrary actual probability law, retaining an arbitrary nonnegative\nsecond parameter. The l1 error enters with its exact factor1/2.\nThe quadratic reference need not first be supplied as a probability.\nIt also proves the uniform Lipschitz comparison of the two actual\nPoisson distances as their means change, with constant1.\n\nPoissonScaleRatesUnderInputs chooses one fixed optimal-law geometric\nbundle at min(epsilon/2,1/12). It proves the two requested approximation\npowers and, simultaneously, a strict fixed remainder power11/12 for\nthe nominal quadratic error and the mean gap. All rates concern the\noriginal law and the exact actual second factorial cumulant.\nFixedPairPhaseUnderInputs chooses one finite pair-geometric bundle\nBEFORE EVERY relative tolerance and proves both actual moving pair\nphases, including the complete first channel before the second phase.\nNeither a fixed residue nor a selected subsequence is substituted.\n\nExactPoissonScaleUnderInputs.article_1_2 assembles both total-variation\nexpansions and both uniform relative-error limits. Its phaseScale_formula\nis the literal source denominator with coefficient\n(r+2)/(72*2^(r/3)), r=L mod3, and factors lambda^(5/3), the second\nPoisson-difference norm at lambda, L and N^(-2/3). Strict positivity\nof this denominator is proved inside the theorem. The same expression\nis used for the actual-mean Poisson comparison, by the proved\nmean-change inequality and the smaller mean-bias remainder. No\nunproved continuity or norm-parameter approximation is assumed.\n\nCoverage becomes87/167 unconditional and56 conditional. The existing164\nmathematical improvements and one confirmed scope correction are unchanged.\nThe sharper41/30 third-order theorem and corrected31/24 asymmetric profile\nremain open. Original manuscript bytes, compiler and dependency pins are\nunchanged. Palomar remains a later completion milestone.\n\nEarlier checkpoint history:\n",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "literature_inputs": []
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14403 jobs); direct axiom audit passed for 11853 declarations using only propext, Classical.choice and Quot.sound; all 10517 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.73 GiB."
     },
     {
       "label": "p1:cor:explicit",

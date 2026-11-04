@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic power and remaining sharp arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile and41/30 activity claims remain open. Coverage is87/167 unconditional and55 conditional. The project records164 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile and41/30 activity claims remain open. Coverage is87/167 unconditional and56 conditional. The project records164 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -120,7 +120,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **11845 audited theorem/lemma declarations**. This
+- The project currently has **11853 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -19373,3 +19373,48 @@ Original manuscript bytes, compiler and dependency pins are unchanged.
 Palomar remains a later completion milestone.
 
 Verified under Lean v4.36.0-rc2: full build passed (14395 jobs); direct axiom audit passed for 11845 declarations using only propext, Classical.choice and Quot.sound; all 10501 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.76 GiB.
+
+
+## Exact Poisson total-variation scale for both specified means
+
+Main1.2 is now COMPLETE CONDITIONALLY on the existing explicit BCN
+and finite ordinary/source cover and normalized curve-count properties.
+Every source clause is covered: the exact coefficient alpha/4 times
+the second Poisson-difference norm, the nominal-mean error power1,
+the actual-mean error power4/3, and the SAME literal moving equivalent
+for both specified Poisson references along the full critical band.
+
+PoissonDistanceExpansion proves the finite expansion inequality for
+an arbitrary actual probability law, retaining an arbitrary nonnegative
+second parameter. The l1 error enters with its exact factor1/2.
+The quadratic reference need not first be supplied as a probability.
+It also proves the uniform Lipschitz comparison of the two actual
+Poisson distances as their means change, with constant1.
+
+PoissonScaleRatesUnderInputs chooses one fixed optimal-law geometric
+bundle at min(epsilon/2,1/12). It proves the two requested approximation
+powers and, simultaneously, a strict fixed remainder power11/12 for
+the nominal quadratic error and the mean gap. All rates concern the
+original law and the exact actual second factorial cumulant.
+FixedPairPhaseUnderInputs chooses one finite pair-geometric bundle
+BEFORE EVERY relative tolerance and proves both actual moving pair
+phases, including the complete first channel before the second phase.
+Neither a fixed residue nor a selected subsequence is substituted.
+
+ExactPoissonScaleUnderInputs.article_1_2 assembles both total-variation
+expansions and both uniform relative-error limits. Its phaseScale_formula
+is the literal source denominator with coefficient
+(r+2)/(72*2^(r/3)), r=L mod3, and factors lambda^(5/3), the second
+Poisson-difference norm at lambda, L and N^(-2/3). Strict positivity
+of this denominator is proved inside the theorem. The same expression
+is used for the actual-mean Poisson comparison, by the proved
+mean-change inequality and the smaller mean-bias remainder. No
+unproved continuity or norm-parameter approximation is assumed.
+
+Coverage becomes87/167 unconditional and56 conditional. The existing164
+mathematical improvements and one confirmed scope correction are unchanged.
+The sharper41/30 third-order theorem and corrected31/24 asymmetric profile
+remain open. Original manuscript bytes, compiler and dependency pins are
+unchanged. Palomar remains a later completion milestone.
+
+Verified under Lean v4.36.0-rc2: full build passed (14403 jobs); direct axiom audit passed for 11853 declarations using only propext, Classical.choice and Quot.sound; all 10517 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.73 GiB.

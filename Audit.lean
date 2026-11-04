@@ -6010,6 +6010,8 @@ import PaperP1
 #print axioms PaperP1.ExactContactActivation.uniform_probability
 #print axioms PaperP1.ExactContactActivation.uniform_close_probability
 #print axioms PaperP1.ExactContactCenteredActivity.uniform_bound
+#print axioms PaperP1.ExactPoissonScaleUnderInputs.phaseScale_formula
+#print axioms PaperP1.ExactPoissonScaleUnderInputs.article_1_2
 #print axioms PaperP1.ExactUnitDeletionUniform.uniform_deletion
 #print axioms PaperP1.ExceptionalPolynomialMomentsUnderInputs.uniform_fixed
 #print axioms PaperP1.ExpSqrtLog.pow_le_nat_eventually
@@ -6157,6 +6159,7 @@ import PaperP1
 #print axioms PaperP1.FixedOrderMassPropagation.main_6_3_propagation
 #print axioms PaperP1.FixedOrderMassPropagation.original_run_extensions
 #print axioms PaperP1.FixedPairExtensionDeficitUnderInputs.article_15_7
+#print axioms PaperP1.FixedPairPhaseUnderInputs.uniform_errors
 #print axioms PaperP1.FixedPartnerComponentCount.component_pattern
 #print axioms PaperP1.FixedPartnerComponentCount.uniform_count
 #print axioms PaperP1.FixedPartnerPatternCount.window_value_bound
@@ -6737,6 +6740,7 @@ import PaperP1
 #print axioms PaperP1.PoissonCharlierConversion.critical_bound
 #print axioms PaperP1.PoissonCharlierConversion.regular_card_eventually
 #print axioms PaperP1.PoissonCharlierConversion.actual_regular_bound
+#print axioms PaperP1.PoissonScaleRatesUnderInputs.uniform_rates
 #print axioms PaperP1.PolylogConfinementScales.choose_parameters
 #print axioms PaperP1.PolylogConfinementScales.logarithmic_count_sublinear
 #print axioms PaperP1.PolylogConfinementTheorem.threshold_mono
@@ -11301,6 +11305,10 @@ import PaperP1
 #print axioms PaperP1.PoissonDifferenceSigned.signedDifference_singleton
 #print axioms PaperP1.PoissonDifferenceSigned.norm_eq_l1
 #print axioms PaperP1.PoissonDifferenceSigned.norm_all_orders
+#print axioms PaperP1.PoissonDistanceExpansion.zero_reference
+#print axioms PaperP1.PoissonDistanceExpansion.distance_symm
+#print axioms PaperP1.PoissonDistanceExpansion.finite_expansion
+#print axioms PaperP1.PoissonDistanceExpansion.finite_mean_change
 #print axioms PaperP1.PoissonExponential.hasSum_mass_exp
 #print axioms PaperP1.PoissonExponential.hasSum_shift_exp
 #print axioms PaperP1.PoissonExponential.hasSum_quadraticMass_exp
