@@ -4527,6 +4527,7 @@ import PaperP1
 #print axioms PaperP1.SeparatedPacking.ceil_ratio_eq
 #print axioms PaperP1.SeparatedPacking.card_separated_interval
 #print axioms PaperP1.SeparatedTargetMatches.match_bound
+#print axioms PaperP1.SeparatedUnitCount.height_one
 #print axioms PaperP1.SeveralAnchorConfigurations.configurations_cover
 #print axioms PaperP1.SeveralAnchorConfigurations.configurations_card_sum
 #print axioms PaperP1.SeveralAnchorConfigurations.configurations_weighted
@@ -6078,6 +6079,9 @@ import PaperP1
 #print axioms PaperP1.FiniteChannelHierarchyBounds.nominal_bounds
 #print axioms PaperP1.FiniteCompleteLawTransferUnderInputs.uniform_bound
 #print axioms PaperP1.FiniteCompleteLawTransferUnderInputs.article_15_13
+#print axioms PaperP1.FiniteCompressedInteriorMass.uniform_channel
+#print axioms PaperP1.FiniteCompressedInteriorMass.mem_hosts
+#print axioms PaperP1.FiniteCompressedInteriorMass.uniform_mass
 #print axioms PaperP1.FiniteConnectedActivity254.uniform_weighted
 #print axioms PaperP1.FiniteConnectedActivity254.uniform_primitives
 #print axioms PaperP1.FiniteConnectedClosureUnderInputs.uniform_bounds
@@ -6202,6 +6206,10 @@ import PaperP1
 #print axioms PaperP1.FixedWindowBranching.finite_source_bound
 #print axioms PaperP1.FixedWindowBranching.badStarts_card_critical
 #print axioms PaperP1.FixedWindowBranching.original_windows_critical
+#print axioms PaperP1.FourThirdsQuadraticUpperUnderInputs.uniform_exact
+#print axioms PaperP1.FourThirdsThirdActivityUnderInputs.uniform_joint_mass
+#print axioms PaperP1.FourThirdsThirdActivityUnderInputs.uniform_absolute_activity
+#print axioms PaperP1.FourThirdsThirdActivityUnderInputs.uniform_cumulant
 #print axioms PaperP1.FourthConnectedCumulantUnderInputs.uniform_bound
 #print axioms PaperP1.FourthCumulantIdentitiesUnderInputs.article_16_1
 #print axioms PaperP1.FourthRepeatedRunCostUnderBCN.uniform_bound
@@ -6306,6 +6314,9 @@ import PaperP1
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_full_cumulant
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_absolute_activity
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_cumulant
+#print axioms PaperP1.HeightTwoBoundaryJointMass.finite_bound
+#print axioms PaperP1.HeightTwoBoundaryJointMass.uniform_mass
+#print axioms PaperP1.HeightTwoBoundaryJointMass.uniform_triples
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.powerSum_succ_le
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.meanCap_pos
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.errorConstant_pos
@@ -6624,6 +6635,8 @@ import PaperP1
 #print axioms PaperP1.OnceErasedPoissonUnderInputs.uniform_relative
 #print axioms PaperP1.OneTargetClassSystem.of_two_labels
 #print axioms PaperP1.OneTargetLogDenseCount.uniform_count
+#print axioms PaperP1.OptimalQuadraticUnderInputs.article_1_1
+#print axioms PaperP1.OptimalQuadraticUnderInputs.article_16_2
 #print axioms PaperP1.OrderDependentBranching.exception_nonneg
 #print axioms PaperP1.OrderDependentBranching.exception_le_source
 #print axioms PaperP1.OrderDependentBranching.finite_exception_bound
@@ -7083,6 +7096,8 @@ import PaperP1
 #print axioms PaperP1.SelectedQuadraticError.resultant_error_budget
 #print axioms PaperP1.SelectedQuadraticError.source_fixed_pair_selection
 #print axioms PaperP1.SelectedQuadraticError.source_selected_pair
+#print axioms PaperP1.SeparatedHeightOneRank.uniform_bound
+#print axioms PaperP1.SeparatedHeightOneRank.uniform_exclusion
 #print axioms PaperP1.SeveralAnchorCounts.factor_subpolynomial
 #print axioms PaperP1.SeveralAnchorCounts.ambient_sqrt
 #print axioms PaperP1.SeveralAnchorCounts.finite_factor_bound
@@ -7227,6 +7242,8 @@ import PaperP1
 #print axioms PaperP1.StrongAlignedInteriorEdges.uniform_edges
 #print axioms PaperP1.StrongAlignedUnitChannels.bounded_coprime_channels
 #print axioms PaperP1.StrongAlignedUnitChannels.bounded_channels
+#print axioms PaperP1.StrongExactFiniteChannelCover.uniform_cover
+#print axioms PaperP1.StrongExactFourThirdsMassUnderInputs.uniform_mass
 #print axioms PaperP1.StrongExactTripleActivityReductionUnderInputs.uniform_reduction
 #print axioms PaperP1.StrongNoExactPairMassUnderBCN.uniform_count
 #print axioms PaperP1.StrongNoExactPairMassUnderBCN.uniform_joint_sum
@@ -9750,6 +9767,7 @@ import PaperP1
 #print axioms PaperP1.PositiveMarginalRestriction.positiveGround_subset
 #print axioms PaperP1.PositiveMarginalRestriction.marginal_positive
 #print axioms PaperP1.PositiveMarginalRestriction.sum_restrict
+#print axioms PaperP1.PositivePairSeparation.of_joint
 #print axioms PaperP1.PositiveStarts.indicator_restrict
 #print axioms PaperP1.PositiveStarts.count_restrict
 #print axioms PaperP1.PositiveStarts.measurable_infiniteCount

@@ -1,9 +1,9 @@
 # Formalization status
 
-Stage: **exact probability identities and uniform arithmetic foundations**, 4 November 2026.
+Stage: **conditional optimal quadratic power and remaining sharp arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile and41/30 activity claims remain open. Coverage stays87/167 unconditional and48 conditional. The project records162 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile and41/30 activity claims remain open. Coverage is87/167 unconditional and50 conditional. The project records163 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -15,7 +15,7 @@ CompanionT20.8 is complete conditionally on the existing ordinary surface-cover 
 
 CompanionT1.7 is complete conditionally on the existing ordinary/source surface-cover and normalized curve properties: both coefficient-uniform per-system counts, varying-degree fixed subsystems, both many-component graph counts, the unconditional actual fixed-partner count and the one-variable assertions are assembled. P1-MATH-0161 removes right selected-map injectivity from the degree-one branch. Coverage is87/167 unconditional and48 conditional.
 
-The full original third absolute activity now reduces with coefficient one to literal strong exact-alignment triples, plus an error N^(-3/2+epsilon). All other triple sectors are proved at this power after an accuracy-dependent threshold. Main14.1 and14.6 stay in progress for the remaining strong-aligned upper bound.
+The full original third absolute activity, connected triple joint mass and third factorial cumulant now have the coarse4/3 power under explicit BCN and finite geometric inputs. Every boundary and finite interior unit channel is covered. Main14.1 and14.6 remain in progress for their stronger41/30 claims.
 
 Main12.1 is complete conditionally on the existing explicit BCN input: actual dense triples with weak proper intersections have at mostN^epsilon hosts and total heterogeneous rank mass N^(-2+theta+epsilon). The actual common injective physical subspace, exact-alignment deletion and regularization are constructed unconditionally; no chosen object is enumerated.
 
@@ -29,7 +29,7 @@ Main18.2 is complete conditionally: the literal homogeneous rank sum includes ev
 
 Main1.4,18.1 and18.3 are complete conditionally: the explicit two-channel approximation and every fixed-height original-law hierarchy, including moving TV equivalents and optimal powers, need only the first rate1 quadratic approximation. The explicit fixed-height Hermite part is also complete; main19.1 stays in progress for its exact-parameter4/3 rate.
 
-The optimal-power lower inequality N^(-4/3-epsilon) of main16.2 and main1.1 is proved under the existing finite geometric inputs, for the actual full law and exact quadratic reference. Both rows remain in progress because their optimal upper-rate/optimality identification remains open.
+Main1.1 and16.2 are now complete conditionally on explicit BCN and finite geometric inputs: both optimal quadratic4/3 power bounds, exact actual mean/second cumulant, nominal-mean bias and eventual probability status are assembled. P1-MATH-0164 removes the sharper41/30 third-order theorem from this optimal-power dependency route.
 
 Main16.1 is complete conditionally, including all three original fourth-cumulant identities. Its first error has the stronger power5/3, and coarse third activity suffices; the optimal triple estimate remains open.
 
@@ -43,7 +43,7 @@ Companion T22.6 is complete conditionally: exact original-model modified moments
 
 Main15.13 is complete conditionally as its stated finite-order implication: exactly254 fixed connected-activity estimates imply the original full-law rate beta for1<beta<=4/3. The254 activity bounds remain the source theorem's explicit hypotheses; the three existing geometric inputs remain explicit for its already proved tails and pair bounds.
 
-Companion T17.5 is complete conditionally: both actual and nominal quadratic approximations have rate4/5 for the original full count law. Their second-cumulant and quadratic-reference restoration is unconditional at rate1. Main1.1 stays in progress for its optimal4/3 rate.
+Companion T17.5 is complete conditionally: both actual and nominal quadratic approximations have rate4/5 for the original full count law. Their second-cumulant and quadratic-reference restoration is unconditional at rate1. Main1.1 now has its optimal4/3 power conditionally via the separate coarse-third route.
 
 Companion T17.3 is complete conditionally: its exact finite positive-boundary inequality and uniform4/5 rate hold over every4K<=L; its finite comparison is unconditional, heterogeneous and valid for every K.
 
@@ -120,7 +120,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **11812 audited theorem/lemma declarations**. This
+- The project currently has **11830 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -19210,3 +19210,71 @@ one confirmed statement-scope correction. Original manuscripts and
 Palomar records remain untouched.
 
 Verified under Lean v4.36.0-rc2: full build passed (14355 jobs); direct axiom audit passed for 11812 declarations using only propext, Classical.choice and Quot.sound; all 10444 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.89 GiB.
+
+
+## Optimal quadratic power and global four-thirds third activity
+
+Main Theorem1.1 and Theorem16.2 are now COMPLETE CONDITIONALLY,
+with the existing explicit BCN field-polynomial property and finite
+ordinary/source surface-cover and normalized curve-count properties.
+OptimalQuadraticUnderInputs.article_1_1 assembles BOTH actual quadratic
+power bounds N^(-4/3-epsilon) and N^(-4/3+epsilon), the actual-to-nominal
+mean bias O(N^(-1+epsilon)), and eventual probability status of the exact
+quadratic reference. The mean and second factorial cumulant are the ACTUAL
+ones of the full original law. article_16_2 gives the two-sided optimal
+power consequence. No approximation-error bound is an input field.
+
+This closes the optimal upper power through a coarser route than the
+manuscript: the new whole third absolute activity bound4/3+epsilon already
+suffices in the previously proved symbolic reconstruction. It is not
+necessary to finish the sharper41/30 third-order theorem for this
+particular optimal-power approximation. P1-MATH-0164 records the dependency
+improvement. It does not establish unconditional coverage or sharp
+second-order constants. The three geometric properties and BCN remain
+unproved explicit ordinary arguments, with their exact finite dimensions.
+
+SeparatedUnitCount proves that two literally separated original complete
+windows have at most one exact1:1 unit. PositivePairSeparation proves that
+positive actual pair joint probability forces the required run-start
+separation. SeparatedHeightOneRank therefore excludes any fixed positive
+intersection-rank density in a positive height-one boundary source.
+HeightTwoBoundaryJointMass proves that the ENTIRE enlarged1:2 boundary
+pair population has actual joint mass N^(-3/2+epsilon), including zero-unit
+and incompatible pairs. The same rate holds for all containing triples,
+by actual unordered seed propagation. These boundary statements are
+unconditional and use neither a selected profile nor Reuss.
+
+StrongExactFiniteChannelCover gives an exhaustive literal cover of all
+positive strong-exact connected triples: either a height-two boundary
+pair is present or the triple lies over one of a fixed finite family of
+interior coprime unit channels. FiniteCompressedInteriorMass keeps one
+explicit finite geometric parameter bundle for each channel, chosen
+before the arbitrary original family. The original weighted sums over
+all source pairs and unit offsets are retained. StrongExactFourThirdsMassUnderInputs
+then proves the total strong-exact connected joint mass at power4/3.
+
+FourThirdsThirdActivityUnderInputs combines this with the earlier proved
+BCN weak/no-exact reductions. It proves the FULL original connected triple
+joint mass at power4/3, the FULL third absolute centered activity at the
+same power on EVERY dyadic subground, and the FULL third factorial
+cumulant bound, including every repeated-index term. Actual zero marginals
+are removed by exact restriction identities, not a regularity premise.
+Main14.1 and14.6 remain in progress: their printed41/30 exponent is stronger.
+
+FourThirdsQuadraticUpperUnderInputs applies the existing actual-law
+symbolic bound
+  distance<=N^eta*A3+N^(-4/3+eta)
+with the newly PROVED A3 estimate. It obtains the optimal quadratic upper
+power for every original dyadic subground. OptimalQuadraticUnderInputs
+combines it with the already proved positive quartic lower obstruction,
+uniform original moments, exact actual mean/second cumulant, nominal-mean
+bias and eventual quadratic-reference probability theorem. Every chosen
+order, channel and geometric dimension precedes the common N threshold.
+
+Coverage becomes87/167 unconditional and50 conditional. Findings become
+163 improvements plus one confirmed statement-scope correction. The
+corrected sharp31/24 asymmetric profile and the sharp41/30 third-order
+claims remain open. Original manuscript bytes, toolchain and dependencies
+are unchanged. Palomar submission remains a later completion milestone.
+
+Verified under Lean v4.36.0-rc2: full build passed (14375 jobs); direct axiom audit passed for 11830 declarations using only propext, Classical.choice and Quot.sound; all 10470 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.84 GiB.

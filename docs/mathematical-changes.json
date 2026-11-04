@@ -11108,6 +11108,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "3b634c9c5b621f98ebbcb6100a58675e3d78a08c"
+    },
+    {
+      "id": "P1-MATH-0164",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:thm:main",
+        "number": "1.1",
+        "page": 3,
+        "source": "main_sections/introduction.tex",
+        "line": 77,
+        "statement_sha256": "4ccdedb6f9f89c0e2caaea4a94e66bb60c61ceb7efce3472de8120316a0d4e5a"
+      },
+      "original_assumption": "The upper optimal quadratic power is obtained through the stronger41/30 third-order activity bound, whose nonaligned compressed sector uses the sharp asymmetric31/24 profile.",
+      "finding": "The proved symbolic original-law reconstruction only requires A3<=N^(-4/3+eta) for every fixed eta>0. The corrected coarse4/3 asymmetric profile gives every fixed interior-channel connected triple mass at this power. Exact separation excludes a strong positive1:1 boundary pair, and the whole1:2 boundary and all containing triples have the unconditional3/2 joint-mass rate. The existing BCN weak/no-exact reductions therefore give the full actual third absolute activity and full third factorial cumulant at4/3. Substitution proves the optimal quadratic upper power without the sharper41/30 or31/24 estimates or a Reuss7/12 input. With the earlier positive quartic obstruction this assembles every clause of main1.1 and the optimal-power statement16.2, conditionally on explicit BCN and finite geometric properties.",
+      "evidence": [
+        "PaperP1.HeightTwoBoundaryJointMass.uniform_triples",
+        "PaperP1.StrongExactFiniteChannelCover.uniform_cover",
+        "PaperP1.FourThirdsThirdActivityUnderInputs.uniform_absolute_activity",
+        "PaperP1.FourThirdsThirdActivityUnderInputs.uniform_cumulant",
+        "PaperP1.FourThirdsQuadraticUpperUnderInputs.uniform_exact",
+        "PaperP1.OptimalQuadraticUnderInputs.article_1_1",
+        "PaperP1.OptimalQuadraticUnderInputs.article_16_2"
+      ],
+      "proposed_revision": "Separate the optimal quadratic power theorem from the sharper third-cumulant theorem. Offer the coarser corrected asymmetric4/3 route for the former and retain31/24/41/30 only for the stronger third-order conclusions and strict lower-order comparisons. Keep all geometric inputs and the enlarged old-width alignment exclusion explicit.",
+      "impact": "Main1.1 and16.2 are conditionally complete, including exact actual parameters, both power bounds, mean bias and probability status. Main14.1/14.6 and companionT1.10 retain their separate sharper obligations. No unconditional theorem or Palomar completion is claimed.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14375 jobs); direct axiom audit passed for 11830 declarations using only propext, Classical.choice and Quot.sound; all 10470 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.84 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

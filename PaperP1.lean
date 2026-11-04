@@ -2897,3 +2897,13 @@ public import PaperP1.Arithmetic.AsymmetricIntersectionTransport
 public import PaperP1.Asymptotics.CompressedNonalignedInteractionMass
 public import PaperP1.Asymptotics.ConnectedCompressedTripleMassUnderInputs
 public import PaperP1.Model.AsymmetricJointWeight
+public import PaperP1.Arithmetic.SeparatedUnitCount
+public import PaperP1.Asymptotics.FiniteCompressedInteriorMass
+public import PaperP1.Asymptotics.FourThirdsQuadraticUpperUnderInputs
+public import PaperP1.Asymptotics.FourThirdsThirdActivityUnderInputs
+public import PaperP1.Asymptotics.HeightTwoBoundaryJointMass
+public import PaperP1.Asymptotics.OptimalQuadraticUnderInputs
+public import PaperP1.Asymptotics.SeparatedHeightOneRank
+public import PaperP1.Asymptotics.StrongExactFiniteChannelCover
+public import PaperP1.Asymptotics.StrongExactFourThirdsMassUnderInputs
+public import PaperP1.Model.PositivePairSeparation
