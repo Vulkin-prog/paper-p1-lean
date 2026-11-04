@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**314 mathematical improvements and two statement-scope corrections are confirmed.**
+**315 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23578,3 +23578,14 @@ In characteristic zero, Q=the outer derivative of P is nonzero and has smaller d
 P1-MATH-0316 closes this elimination and finite-fibre step. A coefficient-uniform degree bound for actual rationalized integer factors and the primitive projective chart lift remain to be connected. Most importantly, the algebraic implication from rational irreducibility plus failure of geometric irreducibility to singularity of rational points is NOT assumed or proved here. NonGeometricBiformInput.Input therefore remains an ordinary unproved argument, as does HeathBrownBiformInput.Input. T1.4 keeps its conditional status and original two inputs; no preparatory lemma is counted as new numbered coverage. Coverage remains89 proved and75 conditional out of167 (164 completed). There are314 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15519 jobs); direct axiom audit passed for 14089 declarations using only propext, Classical.choice and Quot.sound; all 13343 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.66 GiB.
+
+
+## Coefficient-uniform rational critical-point bound for actual integer factors
+
+The unconditional affine critical-point count is now connected to the actual integer factors and literal partial degrees used by the source determinant argument. Rationalization preserves the outer degree. Differentiation commutes with the coefficient map, and the exact rational resultant is the coefficientwise rationalization of the actual integer resultant.
+
+The earlier checked integer Sylvester determinant degree bound therefore applies without any coefficient-height hypothesis: the resultant of rationalize(G) and its outer derivative has degree at most2*degreeX(G)*degreeY(G). The actual rationalized irreducible polynomial has no identically zero affine fibre. Combining the finite common-point and fibre counts of P1-MATH-0316 yields #S<=2*degreeX(G)*degreeY(G)^2 for every finite rational population satisfying the actual equation and its outer-derivative equation. The bound is independent of coefficients, denominators, heights, boxes and the chosen finite population. No target cardinality inequality is assumed.
+
+P1-MATH-0317 closes the coefficient-uniform degree and rationalization step. It does not yet identify rational points of a non-geometric factor with the counted critical points, and does not yet transport the rational count to the signed primitive projective representatives in NonGeometricBiformInput.Input. Both steps remain explicit obligations. The existing non-geometric input and Heath-Brown input remain ordinary unproved arguments. T1.4 stays conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are315 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15521 jobs); direct axiom audit passed for 14093 declarations using only propext, Classical.choice and Quot.sound; all 13347 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.65 GiB.

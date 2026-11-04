@@ -11,7 +11,7 @@ Companion T1.5 is complete conditionally on exactly the same two ordinary biform
 
 Companion T1.4 is complete conditionally on exactly HeathBrownBiformInput.Input and NonGeometricBiformInput.Input. The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. Both ordinary input proofs remain open. The three incomplete numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records314 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records315 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14089 audited theorem/lemma declarations**. This
+- The project currently has **14093 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24355,3 +24355,14 @@ In characteristic zero, Q=the outer derivative of P is nonzero and has smaller d
 P1-MATH-0316 closes this elimination and finite-fibre step. A coefficient-uniform degree bound for actual rationalized integer factors and the primitive projective chart lift remain to be connected. Most importantly, the algebraic implication from rational irreducibility plus failure of geometric irreducibility to singularity of rational points is NOT assumed or proved here. NonGeometricBiformInput.Input therefore remains an ordinary unproved argument, as does HeathBrownBiformInput.Input. T1.4 keeps its conditional status and original two inputs; no preparatory lemma is counted as new numbered coverage. Coverage remains89 proved and75 conditional out of167 (164 completed). There are314 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15519 jobs); direct axiom audit passed for 14089 declarations using only propext, Classical.choice and Quot.sound; all 13343 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.66 GiB.
+
+
+## Coefficient-uniform rational critical-point bound for actual integer factors
+
+The unconditional affine critical-point count is now connected to the actual integer factors and literal partial degrees used by the source determinant argument. Rationalization preserves the outer degree. Differentiation commutes with the coefficient map, and the exact rational resultant is the coefficientwise rationalization of the actual integer resultant.
+
+The earlier checked integer Sylvester determinant degree bound therefore applies without any coefficient-height hypothesis: the resultant of rationalize(G) and its outer derivative has degree at most2*degreeX(G)*degreeY(G). The actual rationalized irreducible polynomial has no identically zero affine fibre. Combining the finite common-point and fibre counts of P1-MATH-0316 yields #S<=2*degreeX(G)*degreeY(G)^2 for every finite rational population satisfying the actual equation and its outer-derivative equation. The bound is independent of coefficients, denominators, heights, boxes and the chosen finite population. No target cardinality inequality is assumed.
+
+P1-MATH-0317 closes the coefficient-uniform degree and rationalization step. It does not yet identify rational points of a non-geometric factor with the counted critical points, and does not yet transport the rational count to the signed primitive projective representatives in NonGeometricBiformInput.Input. Both steps remain explicit obligations. The existing non-geometric input and Heath-Brown input remain ordinary unproved arguments. T1.4 stays conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are315 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15521 jobs); direct axiom audit passed for 14093 declarations using only propext, Classical.choice and Quot.sound; all 13347 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.65 GiB.

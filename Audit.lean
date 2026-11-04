@@ -1678,6 +1678,10 @@ import PaperP1
 #print axioms PaperP1.RationalMultivariatePrime.map_nonunit
 #print axioms PaperP1.RationalMultivariatePrime.prime_map
 #print axioms PaperP1.RationalSquareGraphNonconstant.degree_pos
+#print axioms PaperP1.RationalizedCriticalPointBound.outer_degree
+#print axioms PaperP1.RationalizedCriticalPointBound.resultant_identity
+#print axioms PaperP1.RationalizedCriticalPointBound.resultant_degree_bound
+#print axioms PaperP1.RationalizedCriticalPointBound.critical_points_card
 #print axioms PaperP1.RectangularEvaluationPolynomial.outer_coefficient
 #print axioms PaperP1.RectangularEvaluationPolynomial.coefficient
 #print axioms PaperP1.RectangularEvaluationPolynomial.nonzero
