@@ -3091,3 +3091,11 @@ public import PaperP1.Model.AnchoredWindowForcing
 public import PaperP1.Model.UnsignedAnchoredRunForcing
 public import PaperP1.Probability.BinaryForcingFlip
 public import PaperP1.Probability.WordForcingFlipCost
+public import PaperP1.Arithmetic.CleanPivotMultiples
+public import PaperP1.Arithmetic.CleanPivotPairs
+public import PaperP1.Arithmetic.CleanPivotTargets
+public import PaperP1.Model.CleanPivotWordCost
+public import PaperP1.Model.PrivatePivotTargetFlip
+public import PaperP1.Model.RawWordObservation
+public import PaperP1.Probability.PositiveForcingCostLower
+public import PaperP1.Probability.UniformLinearObservation
