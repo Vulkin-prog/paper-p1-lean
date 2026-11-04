@@ -3142,3 +3142,10 @@ public import PaperP1.Probability.RandomizedSourceFlip
 public import PaperP1.Model.RandomizedDyadicHybridField
 public import PaperP1.Model.RandomizedHybridCleanCost
 public import PaperP1.Model.RandomizedHybridField
+public import PaperP1.Asymptotics.OrdinaryCensusNormalization
+public import PaperP1.Asymptotics.RandomizedHybridCostFromCensus
+public import PaperP1.Asymptotics.RandomizedHybridObstructionFromCensus
+public import PaperP1.Asymptotics.RandomizedHybridObstructionUnderOrdinaryCensus
+public import PaperP1.Model.RandomizedHybridBoundaryPairs
+public import PaperP1.Model.RandomizedHybridSourceData
+public import PaperP1.Model.RandomizedHybridSourceSelection

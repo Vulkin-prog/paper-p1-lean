@@ -12887,6 +12887,49 @@
         "status": "not_integrated"
       },
       "validation_commit": "c19e03f4543ae5380fba3ff33941d07c7d33e126"
+    },
+    {
+      "id": "P1-MATH-0192",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "T19.17 asserts a randomized obstruction with one half of the deterministic leading lower bound, uniformly over the original retained field and the permitted source orientation rules.",
+      "finding": "The literal ordinary-candidate population yields a simultaneous small-pivot quarter-flip selector. Actual clean survivors retain cardinality when lifted into the original hybrid field, each with actual weight at least q^2/2. The proved arithmetic exception estimates, reciprocal substitution and uniform cutoff normalization now give the complete finite-law randomized lower bound under the independent ordinary source census, including both unsigned types and all moving widths.",
+      "evidence": [
+        "PaperP1.OrdinaryCensusNormalization.uniform_normalized_ledger",
+        "PaperP1.RandomizedHybridCostFromCensus.uniform_ordinary_candidates_lower",
+        "PaperP1.RandomizedHybridObstructionFromCensus.uniform_census_implication",
+        "PaperP1.RandomizedHybridObstructionUnderOrdinaryCensus.randomized_under_census",
+        "PaperP1.RandomizedHybridBoundaryPairs.selectedPrime_apply",
+        "PaperP1.RandomizedHybridBoundaryPairs.otherPrimes_apply",
+        "PaperP1.RandomizedHybridBoundaryPairs.surviving_metadata",
+        "PaperP1.RandomizedHybridBoundaryPairs.actual_offsite_lower",
+        "PaperP1.RandomizedHybridSourceData.fullPivots_injective",
+        "PaperP1.RandomizedHybridSourceData.forced_pivot_above",
+        "PaperP1.RandomizedHybridSourceData.source_conditions",
+        "PaperP1.RandomizedHybridSourceData.selectedPrime_pos",
+        "PaperP1.RandomizedHybridSourceData.reciprocal_lower",
+        "PaperP1.RandomizedHybridSourceSelection.exists_selector",
+        "PaperP1.RandomizedHybridBoundaryPairs.selectedPrime",
+        "PaperP1.RandomizedHybridBoundaryPairs.otherPrimes",
+        "PaperP1.RandomizedHybridBoundaryPairs.survivingPairs"
+      ],
+      "proposed_revision": "State the independent ordinary source census explicitly, then prove the small quarter-flip selector and exact clean-pair injection before the uniform cutoff normalization. Specify the original retained population and separate its exact mean from the nominal N*q scale.",
+      "impact": "Discharges the actual randomized source selection, full clean-pair arithmetic aggregation and final half-factor power normalization of T19.17 for arbitrary independent finite auxiliary laws. The ordinary smooth source census and final general auxiliary scope alignment remain open; numbered coverage is unchanged.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14859 jobs); direct axiom audit passed for 12806 declarations using only propext, Classical.choice and Quot.sound; all 11786 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.99 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

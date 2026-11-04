@@ -6989,6 +6989,7 @@ import PaperP1
 #print axioms PaperP1.OrderedPrimitiveMass.companion_T4_3_from_four
 #print axioms PaperP1.OrderedPrimitiveMassUnderInputs.uniform_strong
 #print axioms PaperP1.OrderedPrimitiveMassUnderInputs.companion_T4_3
+#print axioms PaperP1.OrdinaryCensusNormalization.uniform_normalized_ledger
 #print axioms PaperP1.OrdinaryDyadicRootHostCount.choose_homogenization
 #print axioms PaperP1.OrdinaryDyadicRootHostCount.uniform_hosts
 #print axioms PaperP1.OrdinaryIndependentDeficitBound.uniform_bound
@@ -7317,6 +7318,9 @@ import PaperP1
 #print axioms PaperP1.QuarticLogPrimePool.count_le_power_eventually
 #print axioms PaperP1.QuarticLogPrimePool.raw_budget_le_envelope
 #print axioms PaperP1.QuarticLogPrimePool.actual_pool_count_critical
+#print axioms PaperP1.RandomizedHybridCostFromCensus.uniform_ordinary_candidates_lower
+#print axioms PaperP1.RandomizedHybridObstructionFromCensus.uniform_census_implication
+#print axioms PaperP1.RandomizedHybridObstructionUnderOrdinaryCensus.randomized_under_census
 #print axioms PaperP1.RankinCertificateCritical.weightedCount_mono
 #print axioms PaperP1.RankinCertificateCritical.uniform_bound
 #print axioms PaperP1.RationalTripleEvenMass.hosts_card
@@ -10698,6 +10702,10 @@ import PaperP1
 #print axioms PaperP1.RandomizedDyadicHybridField.ordinary_sources_subset
 #print axioms PaperP1.RandomizedDyadicHybridField.data
 #print axioms PaperP1.RandomizedDyadicHybridField.total_mean_upper
+#print axioms PaperP1.RandomizedHybridBoundaryPairs.selectedPrime_apply
+#print axioms PaperP1.RandomizedHybridBoundaryPairs.otherPrimes_apply
+#print axioms PaperP1.RandomizedHybridBoundaryPairs.surviving_metadata
+#print axioms PaperP1.RandomizedHybridBoundaryPairs.actual_offsite_lower
 #print axioms PaperP1.RandomizedHybridCleanCost.expected_change_eq
 #print axioms PaperP1.RandomizedHybridCleanCost.clean_weight_lower
 #print axioms PaperP1.RandomizedHybridCleanCost.selected_pairs_offsite_lower
@@ -10713,6 +10721,12 @@ import PaperP1
 #print axioms PaperP1.RandomizedHybridField.weighted_indicator_palm
 #print axioms PaperP1.RandomizedHybridField.total_marginal
 #print axioms PaperP1.RandomizedHybridField.cost_diagonal_decomposition
+#print axioms PaperP1.RandomizedHybridSourceData.fullPivots_injective
+#print axioms PaperP1.RandomizedHybridSourceData.forced_pivot_above
+#print axioms PaperP1.RandomizedHybridSourceData.source_conditions
+#print axioms PaperP1.RandomizedHybridSourceData.selectedPrime_pos
+#print axioms PaperP1.RandomizedHybridSourceData.reciprocal_lower
+#print axioms PaperP1.RandomizedHybridSourceSelection.exists_selector
 #print axioms PaperP1.RandomizedPrivatePalmForcing.hits
 #print axioms PaperP1.RandomizedPrivatePalmForcing.force_assemble
 #print axioms PaperP1.RandomizedPrivatePalmForcing.chart_mixture
