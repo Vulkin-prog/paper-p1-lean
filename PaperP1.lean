@@ -3289,3 +3289,6 @@ public import PaperP1.Arithmetic.DeterminantAuxiliaryPolynomial
 public import PaperP1.Algebra.WeightedEvaluationDeterminant
 public import PaperP1.Analysis.DeterminantChartBound
 public import PaperP1.Arithmetic.DeterminantChartExpansion
+public import PaperP1.Analysis.DeterminantExplicitDecay
+public import PaperP1.Analysis.WeightedLatticeCost
+public import PaperP1.Analysis.WeightedLatticeTriangle
