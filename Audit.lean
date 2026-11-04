@@ -2139,6 +2139,8 @@ import PaperP1
 #print axioms PaperP1.BivariateSpecialization.coefficientEnergy_specialize
 #print axioms PaperP1.BivariateSpecialization.factor_pointwise_sq
 #print axioms PaperP1.BivariateSpecialization.factor_outer_coefficient_l2_bound
+#print axioms PaperP1.CleanPairReciprocalLower.factor_identity
+#print axioms PaperP1.CleanPairReciprocalLower.substitute_lower
 #print axioms PaperP1.ClippedPowerSum.clipped_nonneg
 #print axioms PaperP1.ClippedPowerSum.clipped_antitone
 #print axioms PaperP1.ClippedPowerSum.prefix_sum_le
@@ -3808,6 +3810,9 @@ import PaperP1
 #print axioms PaperP1.NonalignedRankLimsup.article_13_6_under_BCN
 #print axioms PaperP1.NonalignedRankLimsup.uniform_half_window_gap
 #print axioms PaperP1.NonalignedRankUnderBCN.critical_rank_bound
+#print axioms PaperP1.NonanchorPivotSelection.pivot_le_of_ordinary
+#print axioms PaperP1.NonanchorPivotSelection.exists_nonanchor
+#print axioms PaperP1.NonanchorPivotSelection.exists_selector
 #print axioms PaperP1.NormalizedDefectSources.value_injective
 #print axioms PaperP1.NormalizedDefectSources.value_bounds
 #print axioms PaperP1.NormalizedDefectSources.defect_sources_card
@@ -4010,6 +4015,9 @@ import PaperP1
 #print axioms PaperP1.OrdinaryRootPointHeight.point_floor_height
 #print axioms PaperP1.OrdinaryRootSystemData.length
 #print axioms PaperP1.OrdinaryRootSystemData.get
+#print axioms PaperP1.OrdinarySmoothSourcePopulation.mem_goodSources
+#print axioms PaperP1.OrdinarySmoothSourcePopulation.goodSources_subset
+#print axioms PaperP1.OrdinarySmoothSourcePopulation.source_deletion_ledger
 #print axioms PaperP1.OriginalWindowValueBounds.values_geometry
 #print axioms PaperP1.PairHostCover.regular_loss_iff
 #print axioms PaperP1.PairHostCover.cover
@@ -5618,6 +5626,7 @@ import PaperP1
 #print axioms PaperP1.AnchorThresholdBudget.threshold_power
 #print axioms PaperP1.AnchoredDyadicCostLower.uniform_actual_offsite_lower
 #print axioms PaperP1.AnchoredRetainedMass.uniform_total_mean
+#print axioms PaperP1.AnchoredSmallPivotCostLower.uniform_ordinary_candidates_lower
 #print axioms PaperP1.AsymmetricAlignmentScopeObstruction.profile_eq_total
 #print axioms PaperP1.AsymmetricAlignmentScopeObstruction.violates_printed_exponent
 #print axioms PaperP1.AsymmetricAlignmentScopeObstruction.no_uniform_radius_one_bound
@@ -9367,6 +9376,10 @@ import PaperP1
 #print axioms PaperP1.AnchoredPrivateValues.relative_value
 #print axioms PaperP1.AnchoredPrivateValues.relative_eq_iff
 #print axioms PaperP1.AnchoredPrivateValues.relative_prime_basis
+#print axioms PaperP1.AnchoredSmallPivotSelection.goodSources_subset_retained
+#print axioms PaperP1.AnchoredSmallPivotSelection.selectedPrime_pos
+#print axioms PaperP1.AnchoredSmallPivotSelection.exists_actual_small_selector
+#print axioms PaperP1.AnchoredSmallPivotSelection.reciprocal_source_lower
 #print axioms PaperP1.AnchoredWindowForcing.anchor_rule_iff
 #print axioms PaperP1.AnchoredWindowForcing.exists_anchor
 #print axioms PaperP1.AnchoredWindowForcing.small_card_mono

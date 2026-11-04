@@ -3120,3 +3120,8 @@ public import PaperP1.Model.AnchoredPrivateField
 public import PaperP1.Asymptotics.AnchoredDyadicCostLower
 public import PaperP1.Model.AnchoredCleanBoundaryPairs
 public import PaperP1.Model.AnchoredCleanSourceData
+public import PaperP1.Analysis.CleanPairReciprocalLower
+public import PaperP1.Arithmetic.NonanchorPivotSelection
+public import PaperP1.Arithmetic.OrdinarySmoothSourcePopulation
+public import PaperP1.Asymptotics.AnchoredSmallPivotCostLower
+public import PaperP1.Model.AnchoredSmallPivotSelection
