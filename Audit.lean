@@ -6227,6 +6227,7 @@ import PaperP1
 #print axioms PaperP1.ActualPrescribedDivisorBudget.actual_outside_height
 #print axioms PaperP1.ActualPrescribedDivisorBudget.actual_outside_divisor_count
 #print axioms PaperP1.ActualQuadraticSubpowerMoments.uniform_moments
+#print axioms PaperP1.ActualReducedFamilyCount.uniform_count
 #print axioms PaperP1.ActualReferenceAdmissibility.quadratic_of_bounds
 #print axioms PaperP1.ActualReferenceAdmissibility.uniform_quadratic_probability
 #print axioms PaperP1.ActualReferenceAdmissibility.uniform_hermite_probability

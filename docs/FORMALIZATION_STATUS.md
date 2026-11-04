@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records293 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records294 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13995 audited theorem/lemma declarations**. This
+- The project currently has **13996 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24053,3 +24053,18 @@ Additional statement-alignment check: the printed T1.4 statement does not explic
 P1-MATH-0294 closes the remaining reduced source-barrier and short-shift transfer UNCONDITIONALLY. Actual primitive-count application to every reduced family, exponential-shape comparison and final reduction summation remain open. The two ordinary inputs retained by the primitive determinant theorem still have unformalized proofs. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are293 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15441 jobs); direct axiom audit passed for 13995 declarations using only propext, Classical.choice and Quot.sound; all 13234 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.03 GiB.
+
+
+## Full primitive determinant count applied uniformly to every actual gcd-reduced source family
+
+The complete primitive determinant theorem is now ACTUALLY APPLIED to every nonempty original gcd-reduced family, uniformly before all moving source coefficients, shifts, boxes, populations and reduction divisors. The resulting numerical estimate is stated directly in the literal effective integer parameter and the four literal normalized reduced scales.
+
+ActualReducedFamilyCount first fixes the new short-shift and barrier constants K'=K*2^A and2*K'. At the changed source comparison constants rho/2 and8*C and logarithmic constant delta/2, the full primitive theorem chooses its numerical threshold L BEFORE the original N and every moving family. The unconditional reduced-box construction then selects one original threshold ensuring N'>=L for ALL nonempty families simultaneously.
+
+For each actual family, the constructed reduced Box contains exactly its literal reduced integer points and both primitive pairs. The original integer coefficients are transferred unchanged. The proved source-barrier transfer supplies Gamma'=2*g^2/q, and the proved logarithmic rebase supplies both Gamma'<=2*K'*log(N')^A and the positive divided shift h'<=K'*log(N')^A. The exact natural source equation is transported to its signed integer version without changing the point population. Every primitive-count prerequisite is therefore discharged from actual source data and proved arithmetic/analytic reductions.
+
+The conclusion is the full N'^epsilon minimum of the two determinant costs at N'=ceil(N/(g^2*q)) and D'=max(1,D/g),E'=max(1,E/g),U'=max(1,U/q),V'=max(1,V/q), with the exact exponential logShape at those arguments. No reduced Box, source predicate, coefficient height, local factor count or primitive numerical count is left as a moving-family premise. The only unproved arguments are the same TWO explicitly retained ordinary inputs used by the primitive theorem.
+
+P1-MATH-0295 closes actual uniform primitive counting on every gcd family under those two existing ordinary inputs. Exponential-shape/cost comparison back to the original scales, summation over the finite reduction families and the initial original-scale alignment obligation recorded inP1-MATH-0294 remain open. Their completion is required before marking T1.4 complete. The two ordinary input proofs remain open as well. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are294 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15443 jobs); direct axiom audit passed for 13996 declarations using only propext, Classical.choice and Quot.sound; all 13235 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.02 GiB.
