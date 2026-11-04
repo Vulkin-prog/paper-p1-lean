@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records198 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records199 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **12865 audited theorem/lemma declarations**. This
+- The project currently has **12869 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22126,3 +22126,63 @@ manuscripts, compiler settings, dependencies and permitted axioms
 are unchanged. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14909 jobs); direct axiom audit passed for 12865 declarations using only propext, Classical.choice and Quot.sound; all 11867 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.83 GiB.
+
+
+## Quantitative fixed-height macroscopic residual rank with uniform constant order
+
+Companion T21.1 now has the quantitative fixed-height macroscopic
+residual bound O(B/log(B)), including the complete enlarged alignment
+with zero exact units. The common constant is chosen BEFORE the
+critical-band constant C. The actual profile sums remain open and
+numbered coverage is unchanged.
+
+MacroscopicRootLogScale proves the exact scale transport for every
+source x in [ceil(M^delta),M), with delta>0 and critical L:
+
+  lowerScale*log(x) <= B=L+1 <= (upperScale/delta)*log(x).
+
+This uses both literal endpoint inequalities, log(x)<=log(M) and
+log(x)>=delta*log(M). It allows the already proved local defect
+count theorem to be applied at N=x itself. No bounded endpoint ratio
+or comparability of x with the ambient M is assumed.
+
+MacroscopicFixedHeightResidual.large_kernel_rate fixes Q>=1, delta>0
+and D>=0, then chooses K>0 before every C and before the uniform M
+threshold. For every actual enlarged aligned pair of height b<=Q,
+and every actual cutoff H with 2*radius(b,L)<=H<=D*B, it proves
+
+  dim(largeKernel(actualNormalizedUnion,H)) <= K*B/log(B).
+
+The normalized union is contained in its actual interval with base
+U=b*x-3bB and radius R=6bB. The proof discharges R<=H, R<=6Q*B,
+x/2<=U<=2Q*x and the transported critical word scales. The original
+local defect theorem is then used at the actual source x. A proved
+fixed polynomial source bound puts every x past its required threshold
+and supplies all geometric positivity and radius conditions.
+
+The full residual value-kernel bound follows by the literal inclusion
+in the large-prime row kernel. Its common K depends only on Q and
+delta before C. The actual pair-loss consequence is also proved:
+
+  pairLoss <= max(#exactUnits-1,0) + K*B/log(B).
+
+All sources and targets lie in the original macroscopic interval,
+all actual normalized units and residual values are retained, and
+the zero-unit case uses the exact natural subtraction convention.
+No finite-rank, defect-count or profile bound is an unformalized input.
+
+This supplies the quantitative fixed-height strengthening of the
+uniform macroscopic o(B) rank extension. To obtain the full positive
+and signed profile statements of T21.1, the actual exceptional-host
+counts, rational channel translation sums, high-height mass sums,
+parity identities and final equivalents still have to be assembled.
+The local rank estimate alone is not counted as a profile theorem.
+
+P1-MATH-0200 records this internal strengthening and explicit constant
+order. Coverage stays 88 proved and 70 conditional out of 167, with
+nine incomplete results. There are 199 improvements and one statement-
+scope correction. No new external input, kernel axiom, compiler change
+or software dependency is introduced. Original manuscript files remain
+byte-identical and Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14913 jobs); direct axiom audit passed for 12869 declarations using only propext, Classical.choice and Quot.sound; all 11871 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.81 GiB.

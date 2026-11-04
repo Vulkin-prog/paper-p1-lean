@@ -6822,12 +6822,16 @@ import PaperP1
 #print axioms PaperP1.MacroscopicEnlargedAlignedRank.actual_intersection_bound
 #print axioms PaperP1.MacroscopicEnlargedAlignedResidual.row_rank_sublinear
 #print axioms PaperP1.MacroscopicEnlargedAlignedResidual.full_rank_sublinear
+#print axioms PaperP1.MacroscopicFixedHeightResidual.large_kernel_rate
+#print axioms PaperP1.MacroscopicFixedHeightResidual.full_kernel_rate
+#print axioms PaperP1.MacroscopicFixedHeightResidual.pair_loss_fixed_height
 #print axioms PaperP1.MacroscopicIntervalGeometry.mem_starts_iff
 #print axioms PaperP1.MacroscopicIntervalGeometry.starts_pos
 #print axioms PaperP1.MacroscopicIntervalGeometry.log_lower
 #print axioms PaperP1.MacroscopicIntervalGeometry.uniform_geometry
 #print axioms PaperP1.MacroscopicNormalizedPairResidual.rank_sublinear
 #print axioms PaperP1.MacroscopicPolynomialScale.polynomial_lt_source
+#print axioms PaperP1.MacroscopicRootLogScale.root_band
 #print axioms PaperP1.ManyPlanarSquareProducts.primitive_mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.uniform_natural

@@ -13201,6 +13201,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "7ad0d36fc7c0069be6ed8a621166d981ec887c2e"
+    },
+    {
+      "id": "P1-MATH-0200",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "The fixed-height comparison in the proof of T21.1 needs quantitative control of the actual residual kernel down to macroscopic source bases, with constants uniform over moving critical widths.",
+      "finding": "Critical word scales are transported to each actual macroscopic source x. Applying the existing local defect theorem at N=x yields the actual large-prime kernel, full residual kernel and pair-loss bounds K*B/log(B) for every fixed height cap, including zero exact units. The common constant K is chosen before the critical-band constant C, with every actual normalized interval and source-threshold condition proved.",
+      "proposed_revision": "Make the individual-root logarithmic scale transport explicit. State the quantitative fixed-height kernel bound and the dependence of its common constant before passing to exceptional-host counts and full profile sums.",
+      "impact": "Supplies the quantitative fixed-height residual estimate needed by T21.1 on the literal macroscopic interval. Actual profile sums and equivalents remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.MacroscopicFixedHeightResidual.large_kernel_rate",
+        "PaperP1.MacroscopicFixedHeightResidual.full_kernel_rate",
+        "PaperP1.MacroscopicFixedHeightResidual.pair_loss_fixed_height",
+        "PaperP1.MacroscopicRootLogScale.root_band"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14913 jobs); direct axiom audit passed for 12869 declarations using only propext, Classical.choice and Quot.sound; all 11871 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.81 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -3174,3 +3174,5 @@ public import PaperP1.Asymptotics.EnlargedAlignedResidualCriterion
 public import PaperP1.Asymptotics.MacroscopicEnlargedAlignedRank
 public import PaperP1.Asymptotics.MacroscopicEnlargedAlignedResidual
 public import PaperP1.Asymptotics.MacroscopicPolynomialScale
+public import PaperP1.Asymptotics.MacroscopicFixedHeightResidual
+public import PaperP1.Asymptotics.MacroscopicRootLogScale
