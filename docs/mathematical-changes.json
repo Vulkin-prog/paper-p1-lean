@@ -12974,6 +12974,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "975b867c3d26da62d3850a8950f02d3df0f05d62"
+    },
+    {
+      "id": "P1-MATH-0194",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The randomized clause of T19.17 concerns every forcing that prescribes the source-word orientation and changes only the indicated private prime pivots.",
+      "finding": "A prescribed raw word and unchanged nonpivot prime signs uniquely determine the entire prime forcing. Every literal private prescription therefore agrees pointwise with the canonical randomized map on full-good sources. Every counted clean pair retains its exact directed weight for an otherwise arbitrary forcing on the original field. The complete arithmetic aggregation and uniform half-factor obstruction now hold for this universal finite-auxiliary forcing class, with no constraint on the prime or auxiliary output at other sources.",
+      "proposed_revision": "Prove uniqueness of the physical private-coordinate map, then state the cost lower bound for arbitrary extensions outside the full-good source set. Use positivity of all other directed costs instead of assuming that the entire coupling equals the canonical hybrid.",
+      "impact": "Discharges universal randomized forcing scope for finite auxiliary laws in T19.17. Ordinary source density and the arbitrary-measure universal extension remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.RandomizedPrivateClassCostFromCensus.uniform_ordinary_candidates_lower",
+        "PaperP1.RandomizedPrivateClassObstructionFromCensus.uniform_census_implication",
+        "PaperP1.RandomizedPrivateClassObstructionUnderOrdinaryCensus.randomized_under_census",
+        "PaperP1.PrivatePrimeForcingUniqueness.basis_injective",
+        "PaperP1.PrivatePrimeForcingUniqueness.liftBlock_apply",
+        "PaperP1.PrivatePrimeForcingUniqueness.unique_of_preserves",
+        "PaperP1.PrivatePrimeForcingUniqueness.randomized_unique",
+        "PaperP1.RandomizedPrivateForcingBoundaryPairs.actual_offsite_lower",
+        "PaperP1.RandomizedPrivateForcingClass.agrees_of_private_prescription",
+        "PaperP1.RandomizedPrivateForcingClass.weight_eq_good",
+        "PaperP1.RandomizedPrivateForcingClass.selected_pairs_offsite_lower",
+        "PaperP1.RandomizedPrivateForcingClass.AgreesOnGood"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14877 jobs); direct axiom audit passed for 12828 declarations using only propext, Classical.choice and Quot.sound; all 11814 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.94 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

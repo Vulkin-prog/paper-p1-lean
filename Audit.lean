@@ -7322,6 +7322,9 @@ import PaperP1
 #print axioms PaperP1.RandomizedHybridObstructionFromCensus.uniform_census_implication
 #print axioms PaperP1.RandomizedHybridObstructionUnderOrdinaryCensus.randomized_under_census
 #print axioms PaperP1.RandomizedObstructionArbitraryAuxiliary.randomized_under_census
+#print axioms PaperP1.RandomizedPrivateClassCostFromCensus.uniform_ordinary_candidates_lower
+#print axioms PaperP1.RandomizedPrivateClassObstructionFromCensus.uniform_census_implication
+#print axioms PaperP1.RandomizedPrivateClassObstructionUnderOrdinaryCensus.randomized_under_census
 #print axioms PaperP1.RankinCertificateCritical.weightedCount_mono
 #print axioms PaperP1.RankinCertificateCritical.uniform_bound
 #print axioms PaperP1.RationalTripleEvenMass.hosts_card
@@ -10657,6 +10660,10 @@ import PaperP1
 #print axioms PaperP1.PrivatePrimeForcing.uniform_assemble_expectation
 #print axioms PaperP1.PrivatePrimeForcing.uniform_conditional_expectation
 #print axioms PaperP1.PrivatePrimeForcing.actual_window_forced
+#print axioms PaperP1.PrivatePrimeForcingUniqueness.basis_injective
+#print axioms PaperP1.PrivatePrimeForcingUniqueness.liftBlock_apply
+#print axioms PaperP1.PrivatePrimeForcingUniqueness.unique_of_preserves
+#print axioms PaperP1.PrivatePrimeForcingUniqueness.randomized_unique
 #print axioms PaperP1.PrivateUnitCovariance.private_marginals
 #print axioms PaperP1.PrivateUnitCovariance.common_sum_eq_unit_sum
 #print axioms PaperP1.PrivateUnitCovariance.private_pair_centered_moment
@@ -10734,6 +10741,10 @@ import PaperP1
 #print axioms PaperP1.RandomizedHybridSourceData.selectedPrime_pos
 #print axioms PaperP1.RandomizedHybridSourceData.reciprocal_lower
 #print axioms PaperP1.RandomizedHybridSourceSelection.exists_selector
+#print axioms PaperP1.RandomizedPrivateForcingBoundaryPairs.actual_offsite_lower
+#print axioms PaperP1.RandomizedPrivateForcingClass.agrees_of_private_prescription
+#print axioms PaperP1.RandomizedPrivateForcingClass.weight_eq_good
+#print axioms PaperP1.RandomizedPrivateForcingClass.selected_pairs_offsite_lower
 #print axioms PaperP1.RandomizedPrivatePalmForcing.hits
 #print axioms PaperP1.RandomizedPrivatePalmForcing.force_assemble
 #print axioms PaperP1.RandomizedPrivatePalmForcing.chart_mixture

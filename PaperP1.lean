@@ -3152,3 +3152,9 @@ public import PaperP1.Model.RandomizedHybridSourceSelection
 public import PaperP1.Asymptotics.RandomizedObstructionArbitraryAuxiliary
 public import PaperP1.Model.RandomizedHybridMeasureAuxiliary
 public import PaperP1.Probability.FiniteOrientationObservation
+public import PaperP1.Asymptotics.RandomizedPrivateClassCostFromCensus
+public import PaperP1.Asymptotics.RandomizedPrivateClassObstructionFromCensus
+public import PaperP1.Asymptotics.RandomizedPrivateClassObstructionUnderOrdinaryCensus
+public import PaperP1.Model.PrivatePrimeForcingUniqueness
+public import PaperP1.Model.RandomizedPrivateForcingBoundaryPairs
+public import PaperP1.Model.RandomizedPrivateForcingClass
