@@ -3435,3 +3435,4 @@ public import PaperP1.Arithmetic.ActualSourcePrimitiveReduction
 public import PaperP1.Analysis.ReducedSourceParameter
 public import PaperP1.Analysis.ReducedSourceLogarithms
 public import PaperP1.Analysis.ReducedSourceMonomials
+public import PaperP1.Arithmetic.ActualReducedSourceBox

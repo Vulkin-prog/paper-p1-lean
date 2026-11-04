@@ -2798,6 +2798,9 @@ import PaperP1
 #print axioms PaperP1.ActualProjectivePairs.coordinates_card
 #print axioms PaperP1.ActualProjectivePairs.coordinates_primitive
 #print axioms PaperP1.ActualProjectivePairs.oriented_primitive
+#print axioms PaperP1.ActualReducedSourceBox.normalized_family_bounds
+#print axioms PaperP1.ActualReducedSourceBox.nonempty_raw_scales
+#print axioms PaperP1.ActualReducedSourceBox.uniform_reduced_box
 #print axioms PaperP1.ActualRelativeDeterminant.first_normalization
 #print axioms PaperP1.ActualRelativeDeterminant.center_positive
 #print axioms PaperP1.ActualRelativeDeterminant.second_normalization
