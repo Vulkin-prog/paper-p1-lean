@@ -3278,3 +3278,5 @@ public import PaperP1.Asymptotics.DeterminantEnumerationBudget
 public import PaperP1.Analysis.DeterminantLogScale
 public import PaperP1.Analysis.DeterminantRelativeChart
 public import PaperP1.Arithmetic.PrimitiveDeterminantHeights
+public import PaperP1.Arithmetic.DeterminantIntegerRows
+public import PaperP1.Asymptotics.DeterminantHorizontalScale

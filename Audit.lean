@@ -3273,6 +3273,13 @@ import PaperP1
 #print axioms PaperP1.DependentBlockPairs.off_diagonal_count
 #print axioms PaperP1.DependentBlockPairs.diagonal_count
 #print axioms PaperP1.DependentBlockPairs.split_count
+#print axioms PaperP1.DeterminantIntegerRows.homogeneous_clearing
+#print axioms PaperP1.DeterminantIntegerRows.entry_clearing
+#print axioms PaperP1.DeterminantIntegerRows.denominator_pos
+#print axioms PaperP1.DeterminantIntegerRows.entry_height
+#print axioms PaperP1.DeterminantIntegerRows.determinant_clearing
+#print axioms PaperP1.DeterminantIntegerRows.integer_det_zero_of_small
+#print axioms PaperP1.DeterminantIntegerRows.rational_det_zero_of_small
 #print axioms PaperP1.DeterminantPrimitiveReduction.reconstruct
 #print axioms PaperP1.DeterminantPrimitiveReduction.left_factor
 #print axioms PaperP1.DeterminantPrimitiveReduction.right_factor
@@ -6357,6 +6364,13 @@ import PaperP1
 #print axioms PaperP1.DeterminantEnumerationBudget.boxes_subpolynomial
 #print axioms PaperP1.DeterminantEnumerationBudget.reductions_subpolynomial
 #print axioms PaperP1.DeterminantEnumerationBudget.total_subpolynomial
+#print axioms PaperP1.DeterminantHorizontalScale.horizontalScale_pos
+#print axioms PaperP1.DeterminantHorizontalScale.horizontalScale_lower
+#print axioms PaperP1.DeterminantHorizontalScale.shape_exponent_eventually
+#print axioms PaperP1.DeterminantHorizontalScale.upper_of_shape
+#print axioms PaperP1.DeterminantHorizontalScale.uniform_upper
+#print axioms PaperP1.DeterminantHorizontalScale.uniform_admissible
+#print axioms PaperP1.DeterminantHorizontalScale.relative_vertical_bound
 #print axioms PaperP1.DirectCrossingExtensionsUnderInputs.uniform_extensions
 #print axioms PaperP1.DirectCrossingFamiliesUnderInputs.uniform_families
 #print axioms PaperP1.DirectCrossingPairSeedsUnderInputs.uniform_bound
