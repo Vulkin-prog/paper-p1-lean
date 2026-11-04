@@ -3404,3 +3404,6 @@ public import PaperP1.Algebra.RationalMultivariatePrime
 public import PaperP1.Asymptotics.RationalSourceCurveFactors
 public import PaperP1.Algebra.LinearBivariateCoefficients
 public import PaperP1.Diophantine.LinearBivariateResultant
+public import PaperP1.Asymptotics.ActualFirstLinearFactorCount
+public import PaperP1.Diophantine.ActualLinearFactorCount
+public import PaperP1.Diophantine.LinearProjectiveFactor

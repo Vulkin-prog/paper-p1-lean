@@ -6131,6 +6131,8 @@ import PaperP1
 #print axioms PaperP1.ActualCompressedCrossingProfile.uniform_channel
 #print axioms PaperP1.ActualFamilyJointRows.append_support
 #print axioms PaperP1.ActualFamilyJointRows.uniform_row
+#print axioms PaperP1.ActualFirstLinearFactorCount.cluster_population
+#print axioms PaperP1.ActualFirstLinearFactorCount.uniform_actual_first_linear_count
 #print axioms PaperP1.ActualHermiteReferenceRateUnderInputs.uniform_comparison
 #print axioms PaperP1.ActualNominalReferenceComparison.lowerConstant_pos
 #print axioms PaperP1.ActualNominalReferenceComparison.actual_mean_nonneg
@@ -9677,6 +9679,7 @@ import PaperP1
 #print axioms PaperP1.ActualIntegerSourceEquation.chart_homogeneous
 #print axioms PaperP1.ActualIntegerSourceEquation.chart_population_value
 #print axioms PaperP1.ActualIntegerSourceEquation.factor_population_value
+#print axioms PaperP1.ActualLinearFactorCount.uniform_count
 #print axioms PaperP1.BidegreeOneCurveCount.integer_box_floor
 #print axioms PaperP1.BidegreeOneCurveCount.mem_realSolutions
 #print axioms PaperP1.BidegreeOneCurveCount.integer_coefficient_bound
@@ -9837,6 +9840,11 @@ import PaperP1
 #print axioms PaperP1.LinearKernelFibres.embed_equation
 #print axioms PaperP1.LinearKernelFibres.height_budget
 #print axioms PaperP1.LinearKernelFibres.fixed_linear_kernels_count
+#print axioms PaperP1.LinearProjectiveFactor.row_eq_swapped_coefficient
+#print axioms PaperP1.LinearProjectiveFactor.forms_eq_swapped_homogenize
+#print axioms PaperP1.LinearProjectiveFactor.projective_chart_coefficient
+#print axioms PaperP1.LinearProjectiveFactor.projective_linear
+#print axioms PaperP1.LinearProjectiveFactor.evaluation_linear
 #print axioms PaperP1.PolynomialLinearKernelFibres.uniform_count
 #print axioms PaperP1.PolynomialPellCount.generalizedPellBox_atMost_divisor_orbit
 #print axioms PaperP1.PolynomialPellCount.product_not_isSquare_of_ratio_not_isSquare

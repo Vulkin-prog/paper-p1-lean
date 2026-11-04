@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records276 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records277 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13878 audited theorem/lemma declarations**. This
+- The project currently has **13886 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23806,3 +23806,18 @@ LinearBivariateResultant combines that actual coprimality, full degree and degre
 P1-MATH-0277 closes the actual coefficient, full-degree and resultant nondegeneracy prerequisites for first-degree-one elimination. The exact projective-row reconstruction, numerical local first-degree-one count and its application to the actual source factor populations, the other geometric local cases and primitive reductions remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are276 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15373 jobs); direct axiom audit passed for 13878 declarations using only propext, Classical.choice and Quot.sound; all 13102 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.32 GiB.
+
+
+## Unconditional numerical count on every actual first-degree-one source factor
+
+Every ACTUAL integer irreducible auxiliary factor of first bidegree1 and positive second degree now has an unconditional numerical point count on the transformed source population. The bound is N^epsilon times the actual second-pair large lattice side. Its threshold precedes the moving factor, all integer source coefficients, all basis matrices and all point populations.
+
+LinearProjectiveFactor reconstructs each literal projective coefficient row from the swapped bivariate polynomial. It proves that the actual first-degree-one projective equation is exactly x0*f^hom(y)+x1*g^hom(y), with the same f,g and actual second degree used by P1-MATH-0277. Both projective and evaluation identities are exact.
+
+ActualLinearFactorCount combines this identity with the already proved coefficient-uniform single-resultant scale and fibre counts. Actual integer irreducibility gives the nonzero resultant and actual factor height gives the coefficient bounds. For ANY homogeneous integer source equation of positive substituted degree and ANY nonzero right-hand side, every finite primitive population in the two real coordinate boxes has cardinality at most N^epsilon*T. No absolute or projective irreducibility premise, external point-count input or source-coefficient height bound is required.
+
+ActualFirstLinearFactorCount restricts the original signed source population to the literal interval cluster. It applies the new numerical theorem to EVERY actual first-degree-one factor in the constructed LocalCover. Primitivity and real coordinate bounds are discharged by the actual cover data. The original integer equation, including its nonzero shift, is recovered by the actual inverse basis matrices and chart changes. The affine zero filter is explicitly converted to the projective equation using the proved nonzero chart denominators.
+
+P1-MATH-0278 closes the actual first-degree-one local counting branch with positive second degree. The other orientation, degree-zero cases, remaining geometric local cases and primitive-scale assembly remain open. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are277 improvements and one statement-scope correction. No new axiom, external input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15379 jobs); direct axiom audit passed for 13886 declarations using only propext, Classical.choice and Quot.sound; all 13110 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.30 GiB.

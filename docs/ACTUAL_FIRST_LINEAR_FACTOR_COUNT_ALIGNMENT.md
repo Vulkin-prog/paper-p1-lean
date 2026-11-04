@@ -1,0 +1,13 @@
+# Unconditional numerical count on every actual first-degree-one source factor
+
+Source: companion T1.4, companion_sections/arithmetic_appendix.tex:139, first-degree-one auxiliary-factor elimination in Step3; T1.5 uses that reduction. Original source hashes remain preserved.
+
+Every ACTUAL integer irreducible auxiliary factor of first bidegree1 and positive second degree now has an unconditional numerical point count on the transformed source population. The bound is N^epsilon times the actual second-pair large lattice side. Its threshold precedes the moving factor, all integer source coefficients, all basis matrices and all point populations.
+
+LinearProjectiveFactor reconstructs each literal projective coefficient row from the swapped bivariate polynomial. It proves that the actual first-degree-one projective equation is exactly x0*f^hom(y)+x1*g^hom(y), with the same f,g and actual second degree used by P1-MATH-0277. Both projective and evaluation identities are exact.
+
+ActualLinearFactorCount combines this identity with the already proved coefficient-uniform single-resultant scale and fibre counts. Actual integer irreducibility gives the nonzero resultant and actual factor height gives the coefficient bounds. For ANY homogeneous integer source equation of positive substituted degree and ANY nonzero right-hand side, every finite primitive population in the two real coordinate boxes has cardinality at most N^epsilon*T. No absolute or projective irreducibility premise, external point-count input or source-coefficient height bound is required.
+
+ActualFirstLinearFactorCount restricts the original signed source population to the literal interval cluster. It applies the new numerical theorem to EVERY actual first-degree-one factor in the constructed LocalCover. Primitivity and real coordinate bounds are discharged by the actual cover data. The original integer equation, including its nonzero shift, is recovered by the actual inverse basis matrices and chart changes. The affine zero filter is explicitly converted to the projective equation using the proved nonzero chart denominators.
+
+P1-MATH-0278 closes the actual first-degree-one local counting branch with positive second degree. The other orientation, degree-zero cases, remaining geometric local cases and primitive-scale assembly remain open. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are277 improvements and one statement-scope correction. No new axiom, external input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
