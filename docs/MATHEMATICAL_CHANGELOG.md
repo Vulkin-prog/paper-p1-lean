@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**299 mathematical improvements and one statement-scope correction are confirmed.**
+**300 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23364,3 +23364,16 @@ InitialSourceDeterminantCount constructs the actual normalized Box for each none
 P1-MATH-0300 closes the initial original-scale alignment obligation recorded inP1-MATH-0294 and the full literal-barrier signed determinant count. The final printed sentence claiming fixed/polylogarithmic weakening of the source barrier still needs its own aligned extension, and the two ordinary input proofs remain open. T1.4 and T1.5 stay in progress pending that extension; coverage remains89 proved and72 conditional out of167. There are299 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15459 jobs); direct axiom audit passed for 14014 declarations using only propext, Classical.choice and Quot.sound; all 13257 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.94 GiB.
+
+
+## Retain a fixed or polylogarithmic weakened source barrier through every actual gcd-family count
+
+The final printed weakened-barrier assertion is now retained explicitly through the complete primitive numerical count on every actual gcd-reduced family. The original barrier is N<=Gamma*c1*c2*(D*E)^2, where Gamma>=0 may vary with N and is bounded by its OWN fixed Kbar*log(N)^Abar. This budget is independent of the short-shift budget Kshift*log(N)^Ashift.
+
+WeightedReducedSourceBarrier proves the exact transfer: at N'=ceil(N/(g^2*q)) the barrier factor is Gamma'=Gamma*(2*g^2/q). Both rounding and max-with1 scale normalization are accounted for in the inequality. The existing bound2*g^2/q<=2*h and the half-logarithm comparison for N' then give an explicit effective-logarithm budget with exponent Abar+Ashift and fixed coefficient (Kbar*2^Abar)*(2*Kshift*2^Ashift). The product-of-real-powers step is proved even when the effective logarithm is zero, using nonnegative exponents.
+
+WeightedReducedFamilyCount chooses the primitive-count threshold with these fixed changed parameters BEFORE the original N, Gamma, coefficients, population and reduction divisors. The actual reduced Box and its exact positive divided shift, unchanged coefficients, primitive points and weighted barrier then discharge every prerequisite of the complete primitive theorem. The conclusion is the full determinant-cost minimum at the literal effective integer size and normalized reduced scales for each nonempty family. Only the same two ordinary biform inputs remain unproved; the weakened barrier introduces no additional count input.
+
+P1-MATH-0301 closes transfer and actual primitive numerical counting for the separately weakened source barrier. Returning these weighted-family counts to the original costs, summing them, treating both signs and applying initial-scale normalization still need to be assembled for THIS weighted extension before T1.4 is complete. Their unweighted counterparts are already proved. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are300 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15463 jobs); direct axiom audit passed for 14017 declarations using only propext, Classical.choice and Quot.sound; all 13260 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.92 GiB.

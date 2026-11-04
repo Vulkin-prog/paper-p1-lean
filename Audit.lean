@@ -2782,6 +2782,8 @@ import PaperP1
 #print axioms PaperP1.WeightedRecurrence.residual_l1_bound
 #print axioms PaperP1.WeightedRecurrence.initial_abs_le_residual_l1
 #print axioms PaperP1.WeightedRecurrence.zero_mass_l1_bound
+#print axioms PaperP1.WeightedReducedSourceBarrier.transfer
+#print axioms PaperP1.WeightedReducedSourceBarrier.product_budget
 #print axioms PaperP1.ActiveGroupKernelErasure.dimension_cost
 #print axioms PaperP1.ActiveGroupKernelErasure.two_small_per_block
 #print axioms PaperP1.ActivePhysicalPrimeGroups.pool_prime
@@ -8937,6 +8939,7 @@ import PaperP1
 #print axioms PaperP1.WeightedNonalignedPairsUnderInputs.article_18_2
 #print axioms PaperP1.WeightedNonalignedPairsUnderInputs.article_18_2_rank_deficit
 #print axioms PaperP1.WeightedPrimitiveTail.uniform_tail
+#print axioms PaperP1.WeightedReducedFamilyCount.uniform_count
 #print axioms PaperP1.WideOneSeedTail.uniform_tail
 #print axioms PaperP1.WideQuadraticKernelCount.three_exponent_bounds
 #print axioms PaperP1.WideQuadraticKernelCount.uniform_affine_count

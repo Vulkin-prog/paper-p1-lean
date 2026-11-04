@@ -3447,3 +3447,5 @@ public import PaperP1.Asymptotics.NonprimitiveSourceDeterminantCount
 public import PaperP1.Arithmetic.InitialDyadicSourceBox
 public import PaperP1.Analysis.InitialDeterminantShape
 public import PaperP1.Asymptotics.InitialSourceDeterminantCount
+public import PaperP1.Analysis.WeightedReducedSourceBarrier
+public import PaperP1.Asymptotics.WeightedReducedFamilyCount
