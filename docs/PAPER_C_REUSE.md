@@ -385,3 +385,30 @@ Validated complete companion T1.6 checkpoint (9,427 build jobs;
 ## Selected odd-valuation pivot port forT19.15
 
 The exact source is `PaperCPrel8/OddPrimePivot.lean`, Git blob `1139eb6c2e9978bfe7c6cb8a33a7648fa340bced`, at commit `b9fa9ba490f201b408a302a86f1594ee620b228b`, Apache-2.0 by Vulkin-prog. The target `PaperP1/Arithmetic/OddPrimePivot.lean` retains the definition `max1(sup oddPrimeSupport)`, its positive lower bound, the cutoff equivalence and the positive pivot population definition. Module/public declarations, namespaces and exposed helpers use Lean4.36.0-rc2. The remaining old Rankin/PNT/saddle imports and analytic propositions are excluded. New P1 comparison, squarefree interpretation, canonical injection, square tail and dyadic transfer proofs use already checked P1 foundations. All selected fragments were rebuilt under the pinned compiler; no old binary artifacts were copied. See [alignment](RECIPROCAL_PIVOT_ALIGNMENT.md).
+
+
+## Full specified private signed forcing forT19.16 (finite part)
+
+All seven sources below are from commit
+`b9fa9ba490f201b408a302a86f1594ee620b228b`, originally Lean4.34.0,
+Apache-2.0 by Vulkin-prog. The fetched source bytes were hashed with the
+Git blob prefix; all seven hashes agree exactly with the pinned source
+tree. Headers retain attribution. No old compiled artifacts are copied.
+
+| Upstream path and Git blob | Target | Statement comparison and adaptation |
+|---|---|---|
+| `PaperCV282/PrescribedValues.lean`, `625c4f842089815294ca062396f80694980d449f` | `Model/PrivateValueSystem.lean` | Only the actual raw-value linear map and prime-basis identities; old affine probability and defect-error interfaces excluded |
+| `PaperCPrel8/PivotGeometry.lean`, `d62a795146c734a441aa24e628a297267ca970d4` | `Arithmetic/PrivatePivotGeometry.lean` | Actual odd-valuation support, parity1, prime/divisor, modular privacy, injectivity, cylinder coordinate and basis; no exponent-one or quadratic-size hypothesis |
+| `PaperCPrel8/PrivateForcing.lean`, `8b3cdd4e99ef9ec7fad5413a2625c830a44c9cac` | `Probability/PrivateCoordinateForcing.lean` | Arbitrary finite background law retained; old productPMF replaced by P1 normalized weights and nested uniform averages |
+| `PaperCPrel8/PrimeForcing.lean`, `7083126f254fd91073f7b3786c094ba5b637f1bf` | `Model/PrivatePrimeForcing.lean` | Actual prime correction, full conditional law and directed preservation; Fubini/translation rewritten for P1 averages; idempotence added |
+| `PaperCPrel8/HardConditionalForcing.lean`, `b0023a3aa605913a42c03124dc87565ff74115e3` | `Model/PrivateHardConditionalForcing.lean` | Existing P1 small-prime trace and weights; arbitrary event/soft tilt; positive marked-event mass proved together with the law |
+| `PaperCV282/SignedExactMarks.lean`, `2a69b7db8be6a305da586d7948fac7785588e6b3` | `Model/SignedExactWords.lean` | Signed word and boundary argument only; new exact mark uses P1 StartEvent and right change; old marked-process dependency closure excluded; literal phase word and finite geometric type sum proved |
+| `PaperCPrel8/SignedPalmForcing.lean`, `f1e184dbb39609461fadb40d1d25d501c6d5da53` | `Model/SignedPrivatePalmForcing.lean` | ActualL+e+2 word, exact signed probability and full conditional law; maximal support is only a pivot certificate; positive event retained explicitly |
+
+The new `SignedPrivateField`, `SignedPrivateDyadicField`,
+`PrivateDirectedFootprint` and `ForcingCoordinateCost` modules assemble
+P1's literal retained source population and finite positive cost ledger.
+All selected fragments pass targeted rebuilds under Lean v4.36.0-rc2.
+The old saddle, PNT and reciprocal-pivot asymptotic modules remain unported.
+T19.16's precise logarithmic equivalent is not claimed.
+See [the statement alignment](PRIVATE_SIGNED_FORCING_ALIGNMENT.md).

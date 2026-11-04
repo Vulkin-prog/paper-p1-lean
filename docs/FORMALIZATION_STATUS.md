@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and69 conditional. The project records177 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and69 conditional. The project records178 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -17,7 +17,7 @@ CompanionT1.7 is complete conditionally on the existing ordinary/source surface-
 
 CompanionT4.4 is complete conditionally with the stronger fixed compressed primitive exponentkappa_b. Its r>=4 main bound is unconditional; r=3 uses only the existing finite geometry. The exact unordered population and both homogeneous/nominal and original affine weights are transported. CompanionT15.1 is now complete conditionally on the full original dyadic model, with both centered masses, all target cardinalities and all real source cutoffs; its separated exponent is improved to41/30 for both principal channels together.
 
-Main14.1,14.3,14.4 and14.6 are complete conditionally. The full original third absolute activity, connected triple joint mass and third factorial cumulant have their sharp41/30 power. Both optimal cumulant bounds use the actual mean and all repeated-index terms. The strong geometrically aligned sector14.4 needs only finite geometry; the global14.1/14.3/14.6 route explicitly retainsBCN. The new actual nonaligned channel massN^(-2+1/b+epsilon) bypasses the unresolved31/24 raw-loss profile. Ten numbered arithmetic/forcing results remain incomplete.
+Main14.1,14.3,14.4 and14.6 are complete conditionally. The full original third absolute activity, connected triple joint mass and third factorial cumulant have their sharp41/30 power. Both optimal cumulant bounds use the actual mean and all repeated-index terms. The strong geometrically aligned sector14.4 needs only finite geometry; the global14.1/14.3/14.6 route explicitly retainsBCN. The new actual nonaligned channel massN^(-2+1/b+epsilon) bypasses the unresolved31/24 raw-loss profile. Ten numbered arithmetic/forcing results remain incomplete. The actual signed private-pivot field and finite directed coordinate-cost ledger ofT19.16 are constructed; its precise logarithmic asymptotic remains in progress.
 
 Main12.1 is complete conditionally on the existing explicit BCN input: actual dense triples with weak proper intersections have at mostN^epsilon hosts and total heterogeneous rank mass N^(-2+theta+epsilon). The actual common injective physical subspace, exact-alignment deletion and regularization are constructed unconditionally; no chosen object is enumerated.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **12400 audited theorem/lemma declarations**. This
+- The project currently has **12487 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -20525,3 +20525,109 @@ statement-scope correction. Palomar remains deferred until completed
 coverage and full statement alignment.
 
 Verified under Lean v4.36.0-rc2: full build passed (14707 jobs); direct axiom audit passed for 12400 declarations using only propext, Classical.choice and Quot.sound; all 11267 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.32 GiB.
+
+
+## Specified private signed forcing and its finite directed cost
+
+The SPECIFIED signed private-pivot forcing of companionT19.16 is now
+constructed in the actual finite P1 prime-sign cylinder, including the
+full signed field and its nonnegative coordinate cost. This is preparatory
+progress: the exact logarithmic cost equivalent is NOT proved, andT19.16
+is IN PROGRESS. Coverage remains88/167 unconditional and69 conditional;
+10 numbered results remain incomplete. T19.15's precise reciprocal-pivot
+asymptotic andT19.17's universal anchor obstruction remain separate.
+
+PrivateValueSystem and PrivatePivotGeometry prove that the largest prime
+with odd valuation gives the actual prime basis of every retained raw
+word. A pivot at least the word length is private by modular cancellation.
+Its own parity is exactly1, and all off-diagonal valuations vanish.
+The prime2 is included; the valuation is not required to equal1. No upper
+quadratic size restriction is introduced. Every pivot belongs to the
+same actual finite prime cylinder as its positive integer argument.
+
+PrivateCoordinateForcing works above ANY finite normalized background law,
+including one already conditioned. PrivatePrimeForcing constructs the
+actual deterministic correction of the selected prime signs. It fixes all
+nonpivots, fixes already satisfied samples and is idempotent. It hits the
+prescribed word. Uniform translation and finite Fubini prove the complete
+conditional-law identity for EVERY observable of the entire prime sample;
+the law of the displayed word alone is not substituted for this assertion.
+
+PrivateHardConditionalForcing proves that the entire actual small-prime
+trace is unchanged. The exact conditional identity holds for any real
+weight of that trace, including soft tilts, and any event of it. When the
+event has positive probability, positivity of the marked event is proved
+as part of the full conditional-law assertion. No assumed Palm law enters
+the actual construction.
+
+SignedExactWords identifies the event with the existing P1 StartEvent,
+an exact right boundary and the actual sign. The bit word is proved to
+be the literal signed multiplicative word(-sigma,sigma,...,sigma,-sigma).
+The left word boundaryj is the source run startj+1. SignedPrivatePalmForcing
+prescribes ONLY the actualL+e+2 values; the maximalL+E+2 support certifies
+the pivot hypotheses but adds no forced equations. The exact marginal
+is2^(-L-e-2)=p*2^(-e-2). Both signs and every0<=e<=E are retained. Their
+total mass at a source is exactlyp*(1-2^(-E-1))<=p, so no spurious factor
+growing withE is paid in the type sum.
+
+SignedPrivateField constructs this complete finite field, its actual
+forcing maps, its weighted full-observable Palm identity and its directed
+affected set. All target raw values, hence the entire exact marked target,
+are unchanged outside that set. SignedPrivateDyadicField identifies the
+literal dyadic starts retained by the manuscript: every maximal-support
+pivot exceedsY=2*(L+E+2). Subtracting1 gives exactly their left boundaries,
+with an explicitly proved inverse and cardinality at mostN. The field
+contains both signs and all excesses at every retained start. Its total
+actual mean is at mostN*p for every finite cutoffE.
+
+ForcingCoordinateCost uses the literal sum of absolute coordinate
+differences between the original field and the forced field after
+deleting its source. The exact decomposition is
+
+  cost = sum_a lambda_a^2 + sum_a lambda_a*expected_offsite_cost_a.
+
+The diagonal is retained, not absorbed into an assumed conditional error.
+For any directed footprint containing every affected target, the finite
+upper ledger is
+
+  cost <= sum_a lambda_a^2
+          + sum_a sum_{b!=a in footprint_a}(lambda_a*lambda_b+P(W_a=W_b=1)).
+
+The generic lemma lists its Palm identity explicitly; SignedPrivateField
+DISCHARGES it from the actual prime forcing and proves the required
+pointwise preservation. Thus this is an actual field estimate, not an
+implication assuming the intended coupling law or cost bound. The source
+is removed only in the offsite sum. It is a positive coordinate cost,
+not a claimed lower bound for total variation or a signed scalar residual.
+
+PrivateDirectedFootprint proves the actual arithmetic ledger in every
+translated interval. For source word lengthB, target diameterQ, interval
+lengthN and source left-boundary setJ whose values lie in[1,X],
+
+  sum_{j inJ} |directed_footprint_j|
+    <= (Q+1)*(N*B*S_kappa(X)+|J|*B).
+
+All floors are literal. The proof counts multiples in translated intervals,
+sums the actual reciprocal pivots and uses the injective shiftj->j+i for
+each source position. It neither assumes a dependency graph nor counts
+selected pivot witnesses as distinct source words. The finite inequality
+precedes every reciprocal-pivot asymptotic.
+
+Seven precisely pinned PaperC sources supply selected raw-value, pivot,
+forcing and signed-word arguments. Their Git blob hashes were recomputed
+from the fetched bytes and agree exactly with the immutable source tree.
+Apache-2.0 attribution and statement comparisons are retained in headers
+andPAPER_C_REUSE.md. The old Lean4.34 compiled artifacts, probability PMF
+interfaces, analytic saddle/PNT inputs and unrelated marked-process
+dependencies are not imported. Every selected fragment is rebuilt under
+Lean v4.36.0-rc2 using the existing P1 probability and arithmetic model.
+
+P1-MATH-0179 records the stronger finite conditional/soft-weight identity,
+the explicit diagonal and directed arithmetic cost ledger, and the exact
+all-type geometric mass. There are178 confirmed improvements and one
+statement-scope correction. No analytic cost exponent, asymptotic lower
+bound, universal anchor claim or new unformalized external premise is
+asserted. The original manuscript bytes are unchanged. Palomar remains
+deferred until full coverage and statement alignment.
+
+Verified under Lean v4.36.0-rc2: full build passed (14729 jobs); direct axiom audit passed for 12487 declarations using only propext, Classical.choice and Quot.sound; all 11380 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.28 GiB.

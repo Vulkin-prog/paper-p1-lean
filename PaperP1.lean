@@ -3073,3 +3073,14 @@ public import PaperP1.Model.EffectiveCompressedPrimitivePopulation
 public import PaperP1.Model.EffectiveCompressedPrimitiveTransport
 public import PaperP1.Model.HomogeneousCompressedEffectiveFactor
 public import PaperP1.Model.HomogeneousEffectiveWeights
+public import PaperP1.Arithmetic.PrivateDirectedFootprint
+public import PaperP1.Arithmetic.PrivatePivotGeometry
+public import PaperP1.Model.PrivateHardConditionalForcing
+public import PaperP1.Model.PrivatePrimeForcing
+public import PaperP1.Model.PrivateValueSystem
+public import PaperP1.Model.SignedExactWords
+public import PaperP1.Model.SignedPrivateDyadicField
+public import PaperP1.Model.SignedPrivateField
+public import PaperP1.Model.SignedPrivatePalmForcing
+public import PaperP1.Probability.ForcingCoordinateCost
+public import PaperP1.Probability.PrivateCoordinateForcing
