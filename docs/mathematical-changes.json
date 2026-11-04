@@ -10946,6 +10946,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "698e802bc7c2e22673f148a5e36c59311c7c4a1b"
+    },
+    {
+      "id": "P1-MATH-0159",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:erasure",
+        "number": "T19.10",
+        "page": 74,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 659,
+        "statement_sha256": "73b7de371366b51ea17e7e91afc81e0ef27fb86753f42d04ec4cf9a2ab1f474d"
+      },
+      "original_assumption": "T19.10 bounds the first Wasserstein distance of the once-erased and isolated original counts by E[(Xi)_2], using their natural ordered coupling, but does not state that the coupling is optimal or identify the exact distance.",
+      "finding": "For every H,N,L the actual isolated count is at most the once-erased count on their literal common original sample. The first Wasserstein transport infimum is exactly the difference of their actual means. The identity test bounds every competing plan from below, and the natural coupling attains this lower bound. In particular their TV distance is at most this mean difference. These identities are unconditional and require no sharp arithmetic second-edge estimate.",
+      "evidence": [
+        "PaperP1.FirstWassersteinTests.test_distance_bound",
+        "PaperP1.FirstWassersteinTests.totalVariation_le_distance",
+        "PaperP1.FirstWassersteinFinite.ordered_distance_eq",
+        "PaperP1.OnceAllMeanCost.wasserstein_eq_mean_gap",
+        "PaperP1.OnceAllMeanCost.totalVariation_le_mean_gap"
+      ],
+      "proposed_revision": "State the exact identity W1(Law W,Law W_hat)=E W-E W_hat before its upper bound by E[(Xi)_2]. Explain that the natural ordered coupling is optimal and also gives TV <= E W-E W_hat. Keep the separate sharp O(a_N^2) arithmetic estimate explicit.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14187 jobs); direct axiom audit passed for 11535 declarations using only propext, Classical.choice and Quot.sound; all 10069 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.28 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

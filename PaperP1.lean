@@ -2806,3 +2806,10 @@ public import PaperP1.Model.ErasedCountReference
 public import PaperP1.Model.OnceErasedCount
 public import PaperP1.Probability.PositionalCountProbability
 public import PaperP1.Probability.PositionalScalarDistance
+public import PaperP1.Asymptotics.OnceAllCouplingUnderInputs
+public import PaperP1.Model.OnceAllMeanCost
+public import PaperP1.Model.OnceAllOriginalCoupling
+public import PaperP1.Probability.FiniteOnceAllCoupling
+public import PaperP1.Probability.FirstWasserstein
+public import PaperP1.Probability.FirstWassersteinFinite
+public import PaperP1.Probability.FirstWassersteinTests
