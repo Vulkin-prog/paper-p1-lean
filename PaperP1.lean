@@ -3464,3 +3464,4 @@ public import PaperP1.Asymptotics.SharpTwoSmallKernelWindowCount
 public import PaperP1.Arithmetic.TwoSmallKernelBlocks
 public import PaperP1.Asymptotics.SharpComparableTwoSmallKernelCount
 public import PaperP1.Asymptotics.TwoSmallKernelBlockCount
+public import PaperP1.Asymptotics.FixedWidthTwoSmallKernel

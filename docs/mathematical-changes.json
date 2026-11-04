@@ -17574,6 +17574,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "df54adf5990ae523a2b70254d248ae779ab4773e"
+    },
+    {
+      "id": "P1-MATH-0309",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:small-kernels",
+        "number": "T1.13",
+        "page": 17,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 1016,
+        "statement_sha256": "abfe0badc4580784052dd0b667c0f6e3fcb66cb7df81671a5a21b1c20132fb97"
+      },
+      "original_assumption": "The sharp two-kernel theorem extends to arbitrary selected fixed-width logarithmic blocks, with the printed comparable real centres, real cutoffs and power-cap consequences, and can be assembled with the one-kernel assertion.",
+      "finding": "The source-height geometry is derived from the actual centre/radius bounds; real constants and floor cutoffs are transported exactly. The full actual two-kernel count and both sharp power consequences are assembled with the unconditional one-kernel count. A canonical internal reference scale covers every fixed logarithmic width without an added critical-band restriction.",
+      "proposed_revision": "State both selected-block counts with explicit comparable-centre, logarithmic-radius and prime-cutoff constants, derive the source range before applying the sharp theorem, and transport real cutoffs exactly. Keep the unconditional one-kernel proof distinct from the two retained ordinary inputs needed for the two-kernel assertion.",
+      "impact": "Completes companionT1.13 conditionally on the two existing ordinary biform inputs; its one-kernel assertion is unconditional. Coverage becomes89 proved and75 conditional (164/167 completed), leaving three numbered obligations incomplete.",
+      "evidence": [
+        "PaperP1.FixedWidthTwoSmallKernel.realSelectedStarts_eq",
+        "PaperP1.FixedWidthTwoSmallKernel.two_kernel",
+        "PaperP1.FixedWidthTwoSmallKernel.two_kernel_real",
+        "PaperP1.FixedWidthTwoSmallKernel.two_kernel_real_cutoff",
+        "PaperP1.FixedWidthTwoSmallKernel.two_kernel_power_upper",
+        "PaperP1.FixedWidthTwoSmallKernel.critical_band_counts",
+        "PaperP1.FixedWidthTwoSmallKernel.companion_T1_13",
+        "PaperP1.FixedWidthTwoSmallKernel.realSelectedStarts"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15495 jobs); direct axiom audit passed for 14056 declarations using only propext, Classical.choice and Quot.sound; all 13305 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.77 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

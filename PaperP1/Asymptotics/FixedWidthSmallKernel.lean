@@ -29,7 +29,7 @@ theorem offsets_card (R : ℕ) : (offsets R).card = 2 * R + 1 := by
   rw [offsets, Int.card_Icc]
   omega
 
-/-- The first assertion of T1.13. Its separate two-small-kernel assertion remains open. -/
+/-- The unconditional first assertion of T1.13. Both assertions are assembled in FixedWidthTwoSmallKernel. -/
 theorem one_kernel (K D : ℕ) (E C ε : ℝ) (hE : 0 ≤ E) (hε : 0 < ε) :
     ∃ N₀ : ℕ, ∀ N ≥ N₀, ∀ L H : ℕ,
       |(L : ℝ) - Real.log N / Real.log 2| ≤ C → (H : ℝ) ≤ E * (L + 1) →

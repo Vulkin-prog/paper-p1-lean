@@ -7307,6 +7307,13 @@ import PaperP1
 #print axioms PaperP1.FixedWidthSmallKernel.one_kernel
 #print axioms PaperP1.FixedWidthSmallKernel.one_kernel_real
 #print axioms PaperP1.FixedWidthSmallKernel.one_kernel_real_cutoff
+#print axioms PaperP1.FixedWidthTwoSmallKernel.realSelectedStarts_eq
+#print axioms PaperP1.FixedWidthTwoSmallKernel.two_kernel
+#print axioms PaperP1.FixedWidthTwoSmallKernel.two_kernel_real
+#print axioms PaperP1.FixedWidthTwoSmallKernel.two_kernel_real_cutoff
+#print axioms PaperP1.FixedWidthTwoSmallKernel.two_kernel_power_upper
+#print axioms PaperP1.FixedWidthTwoSmallKernel.critical_band_counts
+#print axioms PaperP1.FixedWidthTwoSmallKernel.companion_T1_13
 #print axioms PaperP1.FixedWindowBranching.retained_independent
 #print axioms PaperP1.FixedWindowBranching.finite_stronger
 #print axioms PaperP1.FixedWindowBranching.finite_source_bound
