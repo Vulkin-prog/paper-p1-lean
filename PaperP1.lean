@@ -2972,3 +2972,11 @@ public import PaperP1.Combinatorics.PairPositionEncoding
 public import PaperP1.Combinatorics.SequentialBranchingPaths
 public import PaperP1.Model.SelectedPairBranchingTuples
 public import PaperP1.Model.SequentialRetainedWindows
+public import PaperP1.Arithmetic.FixedChannelGammaLower
+public import PaperP1.Asymptotics.FixedChannelAlignedTargetMass
+public import PaperP1.Asymptotics.FixedChannelAlignedTargetRate
+public import PaperP1.Asymptotics.FixedChannelFullPalmUnderInputs
+public import PaperP1.Asymptotics.FixedChannelNonalignedMassUnderInputs
+public import PaperP1.Model.GoodEdgeFullPalm
+public import PaperP1.Model.PairTargetQuotientProbability
+public import PaperP1.Model.PrivateChannelOrientationWeights
