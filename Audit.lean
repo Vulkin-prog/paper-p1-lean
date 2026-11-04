@@ -3902,6 +3902,11 @@ import PaperP1
 #print axioms PaperP1.IntegerOffsetCRT.common_modEq
 #print axioms PaperP1.IntegerOffsetCRT.coordinate_card
 #print axioms PaperP1.IntegerOffsetCRT.box_card
+#print axioms PaperP1.IntegerPairFactorCharts.clear_power
+#print axioms PaperP1.IntegerPairFactorCharts.evaluation_sum
+#print axioms PaperP1.IntegerPairFactorCharts.rectangle_evaluation_clearing
+#print axioms PaperP1.IntegerPairFactorCharts.rectangle_zero_iff
+#print axioms PaperP1.IntegerPairFactorCharts.projective_zero_iff
 #print axioms PaperP1.IntersectionExceptional.of_intersection
 #print axioms PaperP1.IntersectionExceptional.oldSpan_mono
 #print axioms PaperP1.IntersectionExceptional.effective_le_raw
@@ -7010,6 +7015,7 @@ import PaperP1
 #print axioms PaperP1.FixedWindowBranching.original_windows_critical
 #print axioms PaperP1.ForcingExceptionLedger.uniform_exception_counts
 #print axioms PaperP1.ForcingExceptionLedger.uniform_surviving_lower
+#print axioms PaperP1.FourChartFactorCover.uniform_factor_covers
 #print axioms PaperP1.FourThirdsQuadraticUpperUnderInputs.uniform_exact
 #print axioms PaperP1.FourThirdsThirdActivityUnderInputs.uniform_joint_mass
 #print axioms PaperP1.FourThirdsThirdActivityUnderInputs.uniform_absolute_activity
@@ -7211,6 +7217,9 @@ import PaperP1
 #print axioms PaperP1.InitialPairPartition.remaining_data
 #print axioms PaperP1.InitialPairPartition.activity_split
 #print axioms PaperP1.InitialPairPartition.uniform_bounds
+#print axioms PaperP1.IntegerPairFactorCover.population_sum_bound
+#print axioms PaperP1.IntegerPairFactorCover.uniform_bounded_projective_cover
+#print axioms PaperP1.IntegerPairFactorCover.affine_of_biform
 #print axioms PaperP1.InteriorAlignedTripleMass.source_mem_hosts
 #print axioms PaperP1.InteriorAlignedTripleMass.all_actual_sources
 #print axioms PaperP1.InteriorAlignedTripleMass.mass_le_sum

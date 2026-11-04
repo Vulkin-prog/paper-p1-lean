@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**248 mathematical improvements and one statement-scope correction are confirmed.**
+**249 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -22480,3 +22480,22 @@ FourChartEquations constructs a distinct actual transformed coefficient family a
 P1-MATH-0249 makes the projective-boundary handling explicit in the lattice-to-curve reduction. Generic signed denominator clearing and factor cover in these charts, short-vector lattice bases, geometric curve counts and interval sums remain to be established. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are248 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15221 jobs); direct axiom audit passed for 13645 declarations using only propext, Classical.choice and Quot.sound; all 12824 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.82 GiB.
+
+
+## Actual factor curves in all signed projective coordinate charts
+
+Every finite primitive population on an actual auxiliary biform is now covered by uniformly bounded integer factor curves AFTER the four projective coordinate-chart changes. Signed coordinates and projective boundary points are retained throughout the finite count reduction.
+
+IntegerPairFactorCharts proves exact denominator clearing for arbitrary signed integer pairs with nonzero last coordinates. The proof expands the actual biform, clears both homogeneous powers in a field, and derives an equivalence between its integer projective zero and the rational affine zero. The projective equation of every arbitrary integer factor is treated at its own partial degrees. Positivity of either denominator is not required.
+
+IntegerPairFactorCover reuses the already proved finite integer irreducible factor selection and factor-height bound. Every actual affine-chart population is covered by at most Amax+Bmax nonconstant integer irreducible factors. All factors have bounded bidegrees, one common polynomial height, nonzero actual projective equations and bounded projective coefficients. Literal finite population cardinalities are bounded by the sum of the corresponding actual factor-zero populations. No injectivity of the rational-coordinate map is assumed; signed primitive representatives are counted as supplied.
+
+FourChartFactorCover.uniform_factor_covers assembles this in all four charts. A single final coefficient-height exponent and threshold precede N, both degrees, the source family and the full primitive population. Each actual chart has its own finite factor family, and every original point is retained in one chart and covered by one of its actual projective factors. The exact chart partition gives
+
+  #S <= sum_chart sum_factor #actual_factor_zeros_in_chart.
+
+Every family contains at most Amax+Bmax actual nonconstant factors and obeys the same degree and coefficient-height bounds. Integer irreducibility is the proved property; absolute irreducibility is neither assumed nor claimed.
+
+P1-MATH-0250 completes the signed affine/projective factor assembly after the coordinate-chart changes. Actual short-vector lattice bases, geometric factor cases, uniform curve counts and final interval sums remain to be proved. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are249 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15227 jobs); direct axiom audit passed for 13654 declarations using only propext, Classical.choice and Quot.sound; all 12834 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.80 GiB.

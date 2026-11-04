@@ -3330,3 +3330,6 @@ public import PaperP1.Diophantine.BiformLinearCoordinates
 public import PaperP1.Diophantine.BiformPointCoordinates
 public import PaperP1.Diophantine.FourChartEquations
 public import PaperP1.Diophantine.FourProjectiveCharts
+public import PaperP1.Arithmetic.IntegerPairFactorCharts
+public import PaperP1.Asymptotics.FourChartFactorCover
+public import PaperP1.Asymptotics.IntegerPairFactorCover
