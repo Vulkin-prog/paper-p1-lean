@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records281 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records282 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13916 audited theorem/lemma declarations**. This
+- The project currently has **13924 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23879,3 +23879,18 @@ The theorem then applies to EVERY first-degree-zero factor in the actual LocalCo
 P1-MATH-0282 closes the first-degree-zero numerical local branch unconditionally. The second-degree-zero linear branch still requires the literal integer source barrier, and higher-degree geometric counting and final primitive-scale assembly remain open. T1.4 and T1.5 remain in progress; coverage remains89 proved and72 conditional out of167. There are281 improvements and one statement-scope correction. No new axiom, external input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15395 jobs); direct axiom audit passed for 13916 declarations using only propext, Classical.choice and Quot.sound; all 13144 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.23 GiB.
+
+
+## Actual second-degree-zero numerical count with a moving polylogarithmic source-barrier loss
+
+The complementary ACTUAL second-degree-zero auxiliary-factor branch now has an unconditional N^epsilon numerical count under the literal source coefficient barrier, including an arbitrary permitted polylogarithmic barrier loss. The source barrier remains an explicit hypothesis rather than being inferred from the weaker analytic Box data.
+
+SourceLinearFibreBounds identifies both literal linear-fibre coefficients with c1*d^2 and c2*e^2 on the original integer pairs. The actual dyadic source box gives (c1*d^2)*u<=8*C*N. The original lower barrier N<=Gamma*c1*c2*(D*E)^2 gives N<=Gamma*(c1*d^2)*(c2*e^2), with Gamma any nonnegative real loss. Thus both quantitative hypotheses of the internally proved integer linear lattice-step count are discharged from the actual source bounds.
+
+ActualZeroSecondDegreeCount pulls every actual second-degree-zero factor population back to the literal original subset. The pulled-back first-pair form is homogeneous, nonzero and vanishes on that subset. Original positivity, primitivity and the exact source equation give the linear-fibre Valid conditions. The internally proved fibre count yields the explicit bound2*(a+1)*(8*C*Gamma*abs(h)+1); the actual factor degree bound replaces a by Amax. Actual chart denominators and inverse bases discharge the full population transfer.
+
+PolylogSourceBarrierCount proves one threshold absorbing BOTH Gamma<=Kbar*(log N)^Abar and abs(h)<=Kshift*(log N)^Aexp. Their product is bounded with exponent Abar+Aexp and all fixed constants are absorbed by the proved logarithmic-power estimate. The resulting N^epsilon bound holds for EVERY actual second-degree-zero factor, uniformly before all moving source coefficients, point boxes, basis matrices, charts, factors and Gamma. Gamma=1 gives the literal source barrier; the moving version retains the losses needed for the later primitive reduction.
+
+P1-MATH-0283 closes BOTH degree-zero numerical local branches with P1-MATH-0282. Higher-degree geometric counting and final source/primitive-scale assembly remain open. T1.4 and T1.5 remain in progress; coverage remains89 proved and72 conditional out of167. There are282 improvements and one statement-scope correction. No new axiom, external input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15401 jobs); direct axiom audit passed for 13924 declarations using only propext, Classical.choice and Quot.sound; all 13152 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.21 GiB.

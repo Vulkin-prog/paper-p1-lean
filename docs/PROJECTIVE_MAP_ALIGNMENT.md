@@ -16399,3 +16399,18 @@ The theorem then applies to EVERY first-degree-zero factor in the actual LocalCo
 P1-MATH-0282 closes the first-degree-zero numerical local branch unconditionally. The second-degree-zero linear branch still requires the literal integer source barrier, and higher-degree geometric counting and final primitive-scale assembly remain open. T1.4 and T1.5 remain in progress; coverage remains89 proved and72 conditional out of167. There are281 improvements and one statement-scope correction. No new axiom, external input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15395 jobs); direct axiom audit passed for 13916 declarations using only propext, Classical.choice and Quot.sound; all 13144 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.23 GiB.
+
+
+## Actual second-degree-zero numerical count with a moving polylogarithmic source-barrier loss
+
+The complementary ACTUAL second-degree-zero auxiliary-factor branch now has an unconditional N^epsilon numerical count under the literal source coefficient barrier, including an arbitrary permitted polylogarithmic barrier loss. The source barrier remains an explicit hypothesis rather than being inferred from the weaker analytic Box data.
+
+SourceLinearFibreBounds identifies both literal linear-fibre coefficients with c1*d^2 and c2*e^2 on the original integer pairs. The actual dyadic source box gives (c1*d^2)*u<=8*C*N. The original lower barrier N<=Gamma*c1*c2*(D*E)^2 gives N<=Gamma*(c1*d^2)*(c2*e^2), with Gamma any nonnegative real loss. Thus both quantitative hypotheses of the internally proved integer linear lattice-step count are discharged from the actual source bounds.
+
+ActualZeroSecondDegreeCount pulls every actual second-degree-zero factor population back to the literal original subset. The pulled-back first-pair form is homogeneous, nonzero and vanishes on that subset. Original positivity, primitivity and the exact source equation give the linear-fibre Valid conditions. The internally proved fibre count yields the explicit bound2*(a+1)*(8*C*Gamma*abs(h)+1); the actual factor degree bound replaces a by Amax. Actual chart denominators and inverse bases discharge the full population transfer.
+
+PolylogSourceBarrierCount proves one threshold absorbing BOTH Gamma<=Kbar*(log N)^Abar and abs(h)<=Kshift*(log N)^Aexp. Their product is bounded with exponent Abar+Aexp and all fixed constants are absorbed by the proved logarithmic-power estimate. The resulting N^epsilon bound holds for EVERY actual second-degree-zero factor, uniformly before all moving source coefficients, point boxes, basis matrices, charts, factors and Gamma. Gamma=1 gives the literal source barrier; the moving version retains the losses needed for the later primitive reduction.
+
+P1-MATH-0283 closes BOTH degree-zero numerical local branches with P1-MATH-0282. Higher-degree geometric counting and final source/primitive-scale assembly remain open. T1.4 and T1.5 remain in progress; coverage remains89 proved and72 conditional out of167. There are282 improvements and one statement-scope correction. No new axiom, external input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15401 jobs); direct axiom audit passed for 13924 declarations using only propext, Classical.choice and Quot.sound; all 13152 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.21 GiB.

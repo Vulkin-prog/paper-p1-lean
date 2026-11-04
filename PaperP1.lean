@@ -3415,3 +3415,6 @@ public import PaperP1.Asymptotics.SourceFactorPreimages
 public import PaperP1.Diophantine.ZeroPartialDegreeFactor
 public import PaperP1.Arithmetic.ActualSourceArithmetic
 public import PaperP1.Asymptotics.ActualZeroFirstDegreeCount
+public import PaperP1.Arithmetic.SourceLinearFibreBounds
+public import PaperP1.Asymptotics.ActualZeroSecondDegreeCount
+public import PaperP1.Asymptotics.PolylogSourceBarrierCount

@@ -5466,6 +5466,10 @@ import PaperP1
 #print axioms PaperP1.SourceIntegerPoints.host_point
 #print axioms PaperP1.SourceIntegerPoints.mem_box
 #print axioms PaperP1.SourceIntegerPoints.mem_curvePoints
+#print axioms PaperP1.SourceLinearFibreBounds.first_coefficient
+#print axioms PaperP1.SourceLinearFibreBounds.second_coefficient
+#print axioms PaperP1.SourceLinearFibreBounds.weighted_height
+#print axioms PaperP1.SourceLinearFibreBounds.coefficient_product
 #print axioms PaperP1.SourcePairKernelComparison.local_rank_identity
 #print axioms PaperP1.SourcePairKernelComparison.complete_rank_eq_loss
 #print axioms PaperP1.SourcePairKernelComparison.loss_le_full
@@ -6167,6 +6171,8 @@ import PaperP1
 #print axioms PaperP1.ActualZeroFirstDegreeCount.uniform_sourcePart_count
 #print axioms PaperP1.ActualZeroFirstDegreeCount.uniform_actual_count
 #print axioms PaperP1.ActualZeroFirstDegreeCount.uniform_normalized_actual_count
+#print axioms PaperP1.ActualZeroSecondDegreeCount.sourcePart_count
+#print axioms PaperP1.ActualZeroSecondDegreeCount.actual_count
 #print axioms PaperP1.AdjacentHermiteReferencePhase.uniform_leading_lower
 #print axioms PaperP1.AdjacentHermiteReferencePhase.uniform_probability_gap
 #print axioms PaperP1.AdjacentReferencePhase.exact_gap
@@ -7958,6 +7964,8 @@ import PaperP1
 #print axioms PaperP1.PolylogPivotCount.uniform_window_bound
 #print axioms PaperP1.PolylogSmoothModuli.log_power_exponential
 #print axioms PaperP1.PolylogSmoothModuli.odd_smooth_count
+#print axioms PaperP1.PolylogSourceBarrierCount.uniform_budget
+#print axioms PaperP1.PolylogSourceBarrierCount.uniform_actual_count
 #print axioms PaperP1.PolynomialConfinementUnderBCN.afterExactAlignments_no_exact
 #print axioms PaperP1.PolynomialConfinementUnderBCN.companion_T8_1_power
 #print axioms PaperP1.PolynomialConfinementUnderBCN.companion_T8_1_little_o
