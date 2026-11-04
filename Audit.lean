@@ -8123,6 +8123,8 @@ import PaperP1
 #print axioms PaperP1.PrimitiveNominalCountMass.uniform_mass
 #print axioms PaperP1.PrimitiveSharpMassUnderInputs.uniform_four
 #print axioms PaperP1.PrimitiveSharpMassUnderInputs.article_15_5
+#print axioms PaperP1.PrimitiveSourceDeterminantCount.uniform_primitive_count
+#print axioms PaperP1.PrimitiveSourceDeterminantCount.uniform_literal_primitive_count
 #print axioms PaperP1.PrimitiveTripleMassUnderBCN.uniform_rank_mass
 #print axioms PaperP1.PrimitiveTripleMassUnderBCN.uniform_actual_activity
 #print axioms PaperP1.PrimitiveTripleMassUnderBCN.companion_T8_2
