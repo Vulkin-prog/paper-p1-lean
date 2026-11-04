@@ -2053,6 +2053,11 @@ import PaperP1
 #print axioms PaperP1.VeroneseFinitePowerParameters.diagram
 #print axioms PaperP1.VeroneseFinitePowerParameters.diagram_apply
 #print axioms PaperP1.VeroneseFinitePowerParameters.finite
+#print axioms PaperP1.WeightedEvaluationDeterminant.determinant_expansion
+#print axioms PaperP1.WeightedEvaluationDeterminant.selected_zero_of_not_injective
+#print axioms PaperP1.WeightedEvaluationDeterminant.determinant_injective_expansion
+#print axioms PaperP1.WeightedEvaluationDeterminant.row_weight_bound
+#print axioms PaperP1.WeightedEvaluationDeterminant.weighted_bound
 #print axioms PaperP1.WeightedOrdinaryAffineIdeal.relation_eq_at_one
 #print axioms PaperP1.WeightedOrdinaryAffineIdeal.substitution_eq_at_one
 #print axioms PaperP1.WeightedOrdinaryAffineIdeal.ideals_sup_chart
@@ -2190,6 +2195,11 @@ import PaperP1
 #print axioms PaperP1.CurveDegreeProfile.large_endpoint
 #print axioms PaperP1.CurveDegreeProfile.degree_uniform_bound
 #print axioms PaperP1.CurveDegreeProfile.degree_uniform_bound_without_cap_growth
+#print axioms PaperP1.DeterminantChartBound.monomial_bound
+#print axioms PaperP1.DeterminantChartBound.weight_product
+#print axioms PaperP1.DeterminantChartBound.normalized_bound
+#print axioms PaperP1.DeterminantChartBound.original_column_scaling
+#print axioms PaperP1.DeterminantChartBound.original_bound
 #print axioms PaperP1.DeterminantLogScale.denominator_cost
 #print axioms PaperP1.DeterminantLogScale.product_identity
 #print axioms PaperP1.DeterminantLogScale.ideal_identity
@@ -3301,6 +3311,12 @@ import PaperP1
 #print axioms PaperP1.DeterminantAuxiliaryPolynomial.rectangle_height_le
 #print axioms PaperP1.DeterminantAuxiliaryPolynomial.exists_auxiliary
 #print axioms PaperP1.DeterminantAuxiliaryPolynomial.uniform_auxiliary
+#print axioms PaperP1.DeterminantChartExpansion.add_pow_finite
+#print axioms PaperP1.DeterminantChartExpansion.one_add_pow_finite
+#print axioms PaperP1.DeterminantChartExpansion.exact_expansion
+#print axioms PaperP1.DeterminantChartExpansion.coefficient_bound
+#print axioms PaperP1.DeterminantChartExpansion.matrix_entry
+#print axioms PaperP1.DeterminantChartExpansion.matrix_coefficient_bound
 #print axioms PaperP1.DeterminantIntegerRows.homogeneous_clearing
 #print axioms PaperP1.DeterminantIntegerRows.entry_clearing
 #print axioms PaperP1.DeterminantIntegerRows.denominator_pos

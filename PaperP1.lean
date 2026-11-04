@@ -3286,3 +3286,6 @@ public import PaperP1.Arithmetic.DeterminantAuxiliaryCoefficients
 public import PaperP1.Asymptotics.DeterminantAuxiliaryHeight
 public import PaperP1.Arithmetic.DeterminantAuxiliaryBiform
 public import PaperP1.Arithmetic.DeterminantAuxiliaryPolynomial
+public import PaperP1.Algebra.WeightedEvaluationDeterminant
+public import PaperP1.Analysis.DeterminantChartBound
+public import PaperP1.Arithmetic.DeterminantChartExpansion

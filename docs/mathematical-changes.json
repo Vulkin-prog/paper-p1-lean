@@ -14906,6 +14906,56 @@
         "status": "not_integrated"
       },
       "validation_commit": "08b9c6ff507a004a96f3f3ebe5d28d58cb595f61"
+    },
+    {
+      "id": "P1-MATH-0238",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The relative-chart determinant argument invokes a general polynomial determinant estimate without spelling out its finite expansion, repeated-monomial cancellation and degree-only coefficient constant.",
+      "finding": "The exact chart coefficients and cancellation of every repeated monomial are proved, producing a fully explicit degree-only determinant constant and reducing the remaining decay to the total cost of distinct weighted lattice monomials.",
+      "proposed_revision": "State the finite chart coefficient formula and determinant constant, then prove the weighted lattice-cost estimate and choose the auxiliary degrees separately.",
+      "impact": "Closes the finite polynomial and determinant expansion part of the analytic step; the sharp lattice-cost inequality and strict degree/denominator comparison remain unfinished, so numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.WeightedEvaluationDeterminant.determinant_expansion",
+        "PaperP1.WeightedEvaluationDeterminant.selected_zero_of_not_injective",
+        "PaperP1.WeightedEvaluationDeterminant.determinant_injective_expansion",
+        "PaperP1.WeightedEvaluationDeterminant.row_weight_bound",
+        "PaperP1.WeightedEvaluationDeterminant.weighted_bound",
+        "PaperP1.DeterminantChartBound.monomial_bound",
+        "PaperP1.DeterminantChartBound.weight_product",
+        "PaperP1.DeterminantChartBound.normalized_bound",
+        "PaperP1.DeterminantChartBound.original_column_scaling",
+        "PaperP1.DeterminantChartBound.original_bound",
+        "PaperP1.DeterminantChartExpansion.add_pow_finite",
+        "PaperP1.DeterminantChartExpansion.one_add_pow_finite",
+        "PaperP1.DeterminantChartExpansion.exact_expansion",
+        "PaperP1.DeterminantChartExpansion.coefficient_bound",
+        "PaperP1.DeterminantChartExpansion.matrix_entry",
+        "PaperP1.DeterminantChartExpansion.matrix_coefficient_bound",
+        "PaperP1.WeightedEvaluationDeterminant.evaluationMatrix",
+        "PaperP1.WeightedEvaluationDeterminant.selectedMatrix",
+        "PaperP1.DeterminantChartBound.weight",
+        "PaperP1.DeterminantChartBound.constant",
+        "PaperP1.DeterminantChartBound.normalizedMatrix",
+        "PaperP1.DeterminantChartExpansion.coefficient",
+        "PaperP1.DeterminantChartExpansion.coefficientMatrix",
+        "PaperP1.DeterminantChartExpansion.monomialRows"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15139 jobs); direct axiom audit passed for 13435 declarations using only propext, Classical.choice and Quot.sound; all 12570 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.05 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
