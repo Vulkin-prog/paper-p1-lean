@@ -11612,7 +11612,8 @@
             "P1-PROB-UNIFORM-ACTIVE-FAMILY-MOMENTS"
           ]
         }
-      ]
+      ],
+      "validation_commit": "346cde1b01bcf2d8a9ecb75b72ca8b3bbc5f0989"
     },
     {
       "label": "p1:arith:smallpart-budget",
@@ -15991,7 +15992,8 @@
           ]
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14187 jobs); direct axiom audit passed for 11535 declarations using only propext, Classical.choice and Quot.sound; all 10069 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.28 GiB."
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14187 jobs); direct axiom audit passed for 11535 declarations using only propext, Classical.choice and Quot.sound; all 10069 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.28 GiB.",
+      "validation_commit": "346cde1b01bcf2d8a9ecb75b72ca8b3bbc5f0989"
     },
     {
       "label": "p1:limits:stein",
