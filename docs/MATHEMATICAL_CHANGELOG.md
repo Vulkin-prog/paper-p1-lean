@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**271 mathematical improvements and one statement-scope correction are confirmed.**
+**272 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -22953,3 +22953,18 @@ ActualAuxiliaryFactorCover combines those facts with the proved four signed affi
 The factors are only claimed integer irreducible, not absolutely irreducible. The actual zero or negative inverse coordinates are handled by all four proved charts; none is discarded. P1-MATH-0272 closes the original-quadruple polynomial-coordinate and factor-cover bridge. Applying it to the constructed simultaneous lattice family on every occupied cluster, retaining the actual real side boxes, geometric local curve counts and final primitive reductions remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are271 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15341 jobs); direct axiom audit passed for 13843 declarations using only propext, Classical.choice and Quot.sound; all 13057 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.42 GiB.
+
+
+## Constructed occupied-cluster factor covers in exact real lattice side boxes
+
+The actual occupied-cluster factor cover now retains the EXACT real largest-side boxes of the constructed lattice bases in ALL FOUR signed projective charts. This discharges the point-box, primitive-pair, nonzero-denominator and minimum-height prerequisites before any local curve count is used.
+
+FourChartRealBounds proves that the four actual chart transformations preserve arbitrary real coordinate bounds, without replacing them by rounded integer heights. ActualClusterCoordinateBox applies the proved horizontal and vertical coordinate data to EVERY literal point of an actual SignedPopulation cluster. The same inverse matrices give first-pair coordinates bounded by the actual largest horizontal side L0 and second-pair coordinates bounded by the actual largest vertical side T0. The smaller-side order is carried explicitly. These bounds remain valid in every chart, including points whose original inverse coordinates vanish or are negative.
+
+For an occupied primitive cluster, the exact inverse matrices preserve primitivity and the existing integer nonzero-coordinate argument proves1<=L0 and1<=T0. Thus the subsequent curve-count height parameters do not require an unproved minimum-size assumption or an extra additive rounding term.
+
+ConstructedClusterFactorCover obtains one factor-height exponent and threshold BEFORE N, all source data, the interval, actual basis data and auxiliary polynomial. It applies the original-quadruple factor-cover theorem to those SAME actual bases, discharging all inverse and polynomial basis-height hypotheses using their proved coordinate-data fields. Every resulting chart population consists of primitive pairs with nonzero last coordinates and the actual real L0,T0 bounds. Each chart has at most Amax+Bmax actual nonconstant integer irreducible factors, with bounded bidegrees and uniform polynomial height, and the literal cluster cardinality is bounded by the sum of their actual zero-population cardinalities.
+
+P1-MATH-0273 closes the constructed-lattice local factor-cover application and actual real point-box prerequisites. Global assembly over all occupied intervals, geometric local curve counts and final primitive reductions remain open. Integer irreducibility remains distinct from rational/projective or absolute irreducibility; no such stronger property or curve-point count is claimed. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are272 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15347 jobs); direct axiom audit passed for 13848 declarations using only propext, Classical.choice and Quot.sound; all 13062 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.40 GiB.

@@ -6105,6 +6105,9 @@ import PaperP1
 #print axioms PaperP1.ActivePhysicalGroupCountUnderBCN.uniform_count_active
 #print axioms PaperP1.ActivePhysicalGroupCountUnderBCN.uniform_count
 #print axioms PaperP1.ActualAuxiliaryFactorCover.uniform_actual_cover
+#print axioms PaperP1.ActualClusterCoordinateBox.coordinate_bounds
+#print axioms PaperP1.ActualClusterCoordinateBox.chart_bounds
+#print axioms PaperP1.ActualClusterCoordinateBox.nonempty_largest
 #print axioms PaperP1.ActualCompressedCrossingProfile.points_subset_targets
 #print axioms PaperP1.ActualCompressedCrossingProfile.finite_bound
 #print axioms PaperP1.ActualCompressedCrossingProfile.uniform_offsets
@@ -6511,6 +6514,7 @@ import PaperP1
 #print axioms PaperP1.ConnectedTripleLowCrossingUnderInputs.uniform_bound
 #print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_reduction
 #print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_absolute_error
+#print axioms PaperP1.ConstructedClusterFactorCover.uniform_cluster_cover
 #print axioms PaperP1.ContactDefectBudget.defect_count
 #print axioms PaperP1.ContactDefectBudget.relation_power
 #print axioms PaperP1.ContactSeedKernel.uniform_joint_mass
@@ -9736,6 +9740,7 @@ import PaperP1
 #print axioms PaperP1.FourChartEquations.population_zero
 #print axioms PaperP1.FourChartEquations.curve_height
 #print axioms PaperP1.FourChartEquations.uniform_four_chart_reduction
+#print axioms PaperP1.FourChartRealBounds.population_bounds
 #print axioms PaperP1.FourProjectiveCharts.matrix_squared
 #print axioms PaperP1.FourProjectiveCharts.matrix_height
 #print axioms PaperP1.FourProjectiveCharts.last_coordinate

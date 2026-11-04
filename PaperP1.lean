@@ -3390,3 +3390,6 @@ public import PaperP1.Asymptotics.OrientedAuxiliaryLatticeData
 public import PaperP1.Arithmetic.ActualProjectivePairs
 public import PaperP1.Asymptotics.ActualAuxiliaryFactorCover
 public import PaperP1.Diophantine.ActualAuxiliaryCoordinates
+public import PaperP1.Asymptotics.ActualClusterCoordinateBox
+public import PaperP1.Asymptotics.ConstructedClusterFactorCover
+public import PaperP1.Diophantine.FourChartRealBounds
