@@ -8523,6 +8523,13 @@ import PaperP1
 #print axioms PaperP1.SourceCurveCover.uniform_global_cover
 #print axioms PaperP1.SourceCurvePointCover.finite_cover_bound
 #print axioms PaperP1.SourceCurvePointCoverDegreeBound.finite_cover_bound
+#print axioms PaperP1.SourceFactorPreimages.sourcePart_subset
+#print axioms PaperP1.SourceFactorPreimages.factor_population_card_le_sourcePart
+#print axioms PaperP1.SourceFactorPreimages.sourcePart_population
+#print axioms PaperP1.SourceFactorPreimages.pullSecondForm_homogeneous
+#print axioms PaperP1.SourceFactorPreimages.pullSecondForm_nonzero
+#print axioms PaperP1.SourceFactorPreimages.sourcePart_second_form_zero
+#print axioms PaperP1.SourceFactorPreimages.sourcePart_first_form_zero
 #print axioms PaperP1.SourcePairCloseWeight.nominal_mass
 #print axioms PaperP1.SourcePairCloseWeight.finite_scaled_abs
 #print axioms PaperP1.SourcePairCloseWeight.uniform_nominal_mass
@@ -10018,6 +10025,12 @@ import PaperP1
 #print axioms PaperP1.ZeroDegreeQuadraticFibres.encode_injective_on_fibre
 #print axioms PaperP1.ZeroDegreeQuadraticFibres.quadratic_fibre_count
 #print axioms PaperP1.ZeroDegreeQuadraticFibres.auxiliary_zero_count
+#print axioms PaperP1.ZeroPartialDegreeFactor.secondForm_homogeneous
+#print axioms PaperP1.ZeroPartialDegreeFactor.projective_first_degree_zero
+#print axioms PaperP1.ZeroPartialDegreeFactor.evaluation_first_degree_zero
+#print axioms PaperP1.ZeroPartialDegreeFactor.secondForm_nonzero
+#print axioms PaperP1.ZeroPartialDegreeFactor.primitive_second_projection_count
+#print axioms PaperP1.ZeroPartialDegreeFactor.primitive_first_projection_count
 #print axioms PaperP1.GradedVeroneseProj.map_isIso
 #print axioms PaperP1.GradedVeroneseProj.iso_hom
 #print axioms PaperP1.OrdinaryCurveAffineChart.sourceZ_mem

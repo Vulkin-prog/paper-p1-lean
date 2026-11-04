@@ -3411,3 +3411,5 @@ public import PaperP1.Arithmetic.BivariateProjectiveSwap
 public import PaperP1.Asymptotics.ActualOtherLinearFactorCount
 public import PaperP1.Diophantine.ActualSecondLinearFactorCount
 public import PaperP1.Asymptotics.UniformLinearFactorDegrees
+public import PaperP1.Asymptotics.SourceFactorPreimages
+public import PaperP1.Diophantine.ZeroPartialDegreeFactor
