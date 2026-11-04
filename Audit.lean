@@ -2531,6 +2531,10 @@ import PaperP1
 #print axioms PaperP1.ReducedLatticeCoordinateBoxes.actual_coordinate_bounds
 #print axioms PaperP1.ReducedLatticeCoordinateBoxes.actual_side_controls
 #print axioms PaperP1.ReducedLatticeCoordinateBoxes.one_le_largest_of_primitive
+#print axioms PaperP1.RelativeIntervalAxisBounds.first_axis_scale
+#print axioms PaperP1.RelativeIntervalAxisBounds.second_axis_scale
+#print axioms PaperP1.RelativeIntervalAxisBounds.scaled_interval_sum_bound
+#print axioms PaperP1.RelativeIntervalAxisBounds.actual_axis_sums
 #print axioms PaperP1.RelativeIntervalLattice.inverse_products
 #print axioms PaperP1.RelativeIntervalLattice.determinant
 #print axioms PaperP1.RelativeIntervalLattice.image_formula
@@ -2539,6 +2543,12 @@ import PaperP1
 #print axioms PaperP1.RelativeIntervalLatticeHeight.entry_heights
 #print axioms PaperP1.RelativeIntervalLatticeHeight.uniform_power_heights
 #print axioms PaperP1.RelativeIntervalLatticeHeight.interval_center_range
+#print axioms PaperP1.RelativeIntervalShortVectors.coordinate_norm_bound
+#print axioms PaperP1.RelativeIntervalShortVectors.length_identity
+#print axioms PaperP1.RelativeIntervalShortVectors.inverse_coordinates
+#print axioms PaperP1.RelativeIntervalShortVectors.interval_residual_identity
+#print axioms PaperP1.RelativeIntervalShortVectors.source_vector_bounds
+#print axioms PaperP1.RelativeIntervalShortVectors.scaled_vector_bounds
 #print axioms PaperP1.RungePowerSeries.coeff_sqrtFactorSeries
 #print axioms PaperP1.RungePowerSeries.coeff_rungeProductSeries
 #print axioms PaperP1.RungePowerSeries.binomialSeries_half_sq
@@ -4784,6 +4794,9 @@ import PaperP1
 #print axioms PaperP1.PrimitiveBinaryBasis.basis_inverse
 #print axioms PaperP1.PrimitiveBinaryBasis.basis_height
 #print axioms PaperP1.PrimitiveBinaryBasis.exists_bounded_extension
+#print axioms PaperP1.PrimitiveBinaryColumns.column_primitive
+#print axioms PaperP1.PrimitiveBinaryColumns.first_axis_abs
+#print axioms PaperP1.PrimitiveBinaryColumns.second_axis_abs
 #print axioms PaperP1.PrimitiveDeterminantHeights.left_quotient
 #print axioms PaperP1.PrimitiveDeterminantHeights.right_quotient
 #print axioms PaperP1.PrimitiveDeterminantHeights.left_coefficient_bound

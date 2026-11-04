@@ -15847,6 +15847,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "485d902be3a742b78d0532105b28d592167d8d3b"
+    },
+    {
+      "id": "P1-MATH-0258",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The shortest-vector interval summation uses coordinate/residual estimates and accounts for primitive axis vectors by additional D+E costs.",
+      "finding": "Exact inverse-lattice and residual identities give the required short-vector bounds. Actual integer inverse matrices prove primitivity of every basis column, and both axis cases have proved finite side-length sums at most 32E and 8D.",
+      "proposed_revision": "State the exact residual identity and explicit vector bounds, derive the primitive axis coordinates as plus or minus one, and include the finite axis sum inequalities before the non-axis divisor count.",
+      "impact": "Closes the elementary first-lattice short-vector estimates and all primitive axis contributions. The non-axis divisor/dyadic count, second lattice, curve estimates and primitive reductions remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.RelativeIntervalAxisBounds.first_axis_scale",
+        "PaperP1.RelativeIntervalAxisBounds.second_axis_scale",
+        "PaperP1.RelativeIntervalAxisBounds.scaled_interval_sum_bound",
+        "PaperP1.RelativeIntervalAxisBounds.actual_axis_sums",
+        "PaperP1.RelativeIntervalShortVectors.coordinate_norm_bound",
+        "PaperP1.RelativeIntervalShortVectors.length_identity",
+        "PaperP1.RelativeIntervalShortVectors.inverse_coordinates",
+        "PaperP1.RelativeIntervalShortVectors.interval_residual_identity",
+        "PaperP1.RelativeIntervalShortVectors.source_vector_bounds",
+        "PaperP1.RelativeIntervalShortVectors.scaled_vector_bounds",
+        "PaperP1.PrimitiveBinaryColumns.column_primitive",
+        "PaperP1.PrimitiveBinaryColumns.first_axis_abs",
+        "PaperP1.PrimitiveBinaryColumns.second_axis_abs"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15269 jobs); direct axiom audit passed for 13759 declarations using only propext, Classical.choice and Quot.sound; all 12960 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.68 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

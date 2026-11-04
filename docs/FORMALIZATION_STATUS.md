@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records256 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records257 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13746 audited theorem/lemma declarations**. This
+- The project currently has **13759 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23423,3 +23423,29 @@ EVERY original integer dyadic pair on that interval has its actual inverse integ
 P1-MATH-0257 closes the actual first source-lattice specialization. Remaining work includes the shortest-vector interval count, the coefficient-uniform vertical regridding and second lattice, geometric curve counts and final sums, together with the relevant primitive reductions. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are256 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15263 jobs); direct axiom audit passed for 13746 declarations using only propext, Classical.choice and Quot.sound; all 12947 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.69 GiB.
+
+
+## Actual short-vector residuals and complete primitive axis interval sums
+
+The actual first-lattice vector now satisfies the coordinate and integer-product residual estimates used in the interval count, and both primitive axis contributions have a complete finite sum bound. No axis case is discarded.
+
+RelativeIntervalShortVectors proves that each real coordinate is bounded by the Euclidean length, then uses the ACTUAL inverse source-lattice matrix. For any nonzero integer vector z and its actual side L=4/|T*z|, it proves
+
+  |z0| <= 12*D/L,
+  |z1| <= 4*E/L,
+  |z1*k-(M*E/D)*z0| <= 4*E/L.
+
+The last identity comes from an exact equality with -E times the first actual lattice-image coordinate. These bounds hold for the actual shortest vector in the constructed basis, and more generally for every nonzero integer vector with its corresponding side length. No short-vector coordinate or residual bound is supplied as an input.
+
+PrimitiveBinaryColumns derives a Bezout identity from the actual inverse integer matrix, proving EVERY basis column primitive. On either axis, primitivity proves that the nonzero coordinate has absolute value exactly one.
+
+RelativeIntervalAxisBounds applies the actual residual. When z0=0 and k>=M/4 it proves M*L<=16*E. When z1=0 it proves M*L<=4*D. The exact finite cardinality of the interval index set then gives, for ANY actual primitive vector choice on the selected intervals,
+
+  sum_(z0=0) L <= 32*E,
+  sum_(z1=0) L <= 8*D.
+
+The theorem treats both signs of the primitive axis vectors and arbitrary finite interval subsets. These are the complete finite side-length costs behind the additional D+E terms; the later local curve-count factor remains separate.
+
+P1-MATH-0258 closes the actual short-vector coordinate/residual estimates and primitive axis interval sums. The remaining first-lattice interval work concerns the two-nonzero-coordinate divisor count and its dyadic sum. The second lattice/regridding, geometric curve counts and relevant primitive reductions also remain. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are257 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15269 jobs); direct axiom audit passed for 13759 declarations using only propext, Classical.choice and Quot.sound; all 12960 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.68 GiB.
