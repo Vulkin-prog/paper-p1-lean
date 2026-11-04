@@ -9,6 +9,8 @@ CompanionT19.10 is in progress: BOTH actual original deletion kernels have the i
 
 CompanionT19.14 is complete conditionally: its literal graph, positive residual mass, actual original TV/mean costs, pointwise geometry and all final little-o criteria are proved. Both once-erased and isolated Poisson comparisons use their ACTUAL means, and the original Hermite law uses EXACT source parameters. P1-MATH-0158 removes the sharp two-edge input from this first-order equivalence. Coverage is87/167 unconditional and46 conditional; T19.10 andT1.17 retain their separate sharp obligations.
 
+CompanionT20.8 is complete conditionally on the existing ordinary surface-cover and normalized curve-count properties: the literal primitive exceptional set has mass N^(-1+epsilon), and the six-vertex budget holds simultaneously for EVERY actual shared-prime cover outside it. The unrestricted and prescribed-plane host assertions are also assembled. The stronger small-motif exclusion holds before primitive filtering (P1-MATH-0160). Coverage is87/167 unconditional and47 conditional.
+
 The full original third absolute activity now reduces with coefficient one to literal strong exact-alignment triples, plus an error N^(-3/2+epsilon). All other triple sectors are proved at this power after an accuracy-dependent threshold. Main14.1 and14.6 stay in progress for the remaining strong-aligned upper bound.
 
 Main12.1 is complete conditionally on the existing explicit BCN input: actual dense triples with weak proper intersections have at mostN^epsilon hosts and total heterogeneous rank mass N^(-2+theta+epsilon). The actual common injective physical subspace, exact-alignment deletion and regularization are constructed unconditionally; no chosen object is enumerated.
@@ -114,7 +116,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **11535 audited theorem/lemma declarations**. This
+- The project currently has **11573 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -18544,3 +18546,87 @@ No Paper C port, dependency download or original manuscript edit occurs.
 Palomar remains a later milestone.
 
 Verified under Lean v4.36.0-rc2: full build passed (14187 jobs); direct axiom audit passed for 11535 declarations using only propext, Classical.choice and Quot.sound; all 10069 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.28 GiB.
+
+
+## Complete simultaneous six-vertex budget and small-component exclusion
+
+Companion T20.8 is now COMPLETE CONDITIONALLY on the already recorded
+ordinary surface-cover and normalized curve-count properties. The missing
+small-component exclusion is proved from actual original motifs and a
+common fixed-third-window coefficient list. The source six-vertex budget,
+unrestricted primitive count and prescribed-plane count/mass assertions
+are all assembled in SixVertexBudgetUnderInputs.companion_T20_8.
+Numbered coverage becomes87/167 unconditional and47 conditional.
+
+The cover is NEVER enumerated. Its actual free three-block components
+supply pairwise disjoint transverse square products. Filtering those
+of size at most five gives the literal smallCount from the previously
+proved finite packing theorem. Every such motif has a singleton block.
+SmallTransverseSelection uses just24 permutation/left-degree choices to
+select k motifs of one degree-one orientation from a population of24*k.
+All selections preserve the exact original vertices and small-prime code.
+
+SmallMotifCoefficients fixes the third centre z and constructs one common
+finite coefficient pool. Each motif coefficient is its ACTUAL third-block
+product times its ACTUAL small-prime odd-support product. Membership in
+the source-supported pool is proved by divisibility, and the literal
+integer square equation is verified. No coefficient or cover is a new
+free counting parameter. SmallMotifCoefficientBounds proves unconditional
+subpower cardinality and polynomial coefficient height for the entire
+pool, uniformly before either variable centre is chosen.
+
+SelectedWindowAdmissibility proves monotonicity of even square-class
+spaces and inheritance of even independence by arbitrary selected grids.
+Actual regular full windows with disjoint relative spaces give EXACTLY
+the complete geometric admissibility needed by the existing selected
+degree-one root count. No nonalignment assumption is added. In particular,
+aligned pairs that still have direct actual spaces are not discarded.
+
+SmallMotifSystems constructs the actual bounded integer offset pattern,
+its pairwise disjoint left and right supports, its positive common left
+degree and singleton right degree, and its genuine square roots. The
+selected two-block total degree is at most4. Its admissibility follows
+from the actual full windows, including the coordinate parity conditions.
+SmallTransverseHostData turns any actual cover with many small components
+into one of these systems, and then forgets the cover completely.
+
+SmallTransverseHostCount fixes only a permutation and the third centre.
+Projection to the two remaining centres is injective on that fibre.
+The existing coefficient-selected degree-one theorem gives subpower
+many actual pairs, using only UniformCover k4 and the normalized curve
+property at ambient parameter k+3. Summing the six permutations and N
+possible third centres gives N^(1+epsilon) hosts, with all constants
+absorbed after choosing the accuracy. No source host bound is passed as
+an external argument; only the ordinary geometric properties are inputs.
+
+SmallTransverseMassUnderInputs multiplies this count by the original
+affine joint bound p^2 and proves mass <=N^(-1+epsilon). In fact its
+uniform_bound applies to EVERY family of distinct regular triples with
+pairwise direct actual spaces, BEFORE primitive filtering. This stronger
+scope is improvement P1-MATH-0160. The actual exceptional set used in the
+source theorem is explicitly filtered by the literal primitive predicate.
+
+Outside that set, EVERY cover has smallCount<24*k simultaneously.
+SixVertexBudgetUnderInputs.uniform_budget combines the exact finite
+packing inequality with the actual prime-count bound. Its explicit
+residual error is
+CoverRankPrimeBudget.constant(C0)*B/log(B)+12*k,
+with B=L+1, real cutoff C0*B represented exactly by its natural floor,
+and C0>=1. Thus the B/log(B) coefficient is independent of epsilon and
+the constant12*k is chosen before every host, width and cover. The source
+C0>1 is included. Shared-prime vertex covers are converted to the exact
+row cover by the already proved equivalence, rather than assumed equal.
+
+The final companion_T20_8 also includes the already proved unrestricted
+N^(3/2+epsilon) primitive host count and the prescribed-plane
+N^(1+epsilon) host and N^(-1+epsilon) actual mass bounds, with one common
+critical threshold. Those latter assertions remain unconditional.
+Only the small-component exceptional-set and resulting simultaneous
+six-vertex assertion require the two existing ordinary geometric inputs.
+No chosen-source surface cover, BCN property, target estimate or new
+external property is introduced.
+
+No Paper C port, dependency download or original manuscript edit occurs.
+Palomar remains a later milestone.
+
+Verified under Lean v4.36.0-rc2: full build passed (14205 jobs); direct axiom audit passed for 11573 declarations using only propext, Classical.choice and Quot.sound; all 10107 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.24 GiB.

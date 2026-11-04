@@ -2813,3 +2813,12 @@ public import PaperP1.Probability.FiniteOnceAllCoupling
 public import PaperP1.Probability.FirstWasserstein
 public import PaperP1.Probability.FirstWassersteinFinite
 public import PaperP1.Probability.FirstWassersteinTests
+public import PaperP1.Arithmetic.SelectedWindowAdmissibility
+public import PaperP1.Arithmetic.SmallMotifCoefficients
+public import PaperP1.Arithmetic.SmallMotifSystems
+public import PaperP1.Arithmetic.SmallTransverseHostData
+public import PaperP1.Asymptotics.SixVertexBudgetUnderInputs
+public import PaperP1.Asymptotics.SmallMotifCoefficientBounds
+public import PaperP1.Asymptotics.SmallTransverseHostCount
+public import PaperP1.Asymptotics.SmallTransverseMassUnderInputs
+public import PaperP1.Combinatorics.SmallTransverseSelection

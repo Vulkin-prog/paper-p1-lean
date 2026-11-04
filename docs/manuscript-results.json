@@ -16728,7 +16728,7 @@
       "source": "companion_sections/offset_geometry.tex",
       "line": 309,
       "sha256": "2306bb432c6b369d3fc460c2bff772ea8c7ab113a90cef1e499b0a96666bf574",
-      "status": "in_progress",
+      "status": "conditional",
       "lean_declarations": [
         "PaperP1.FullComponentMotifs.component_nonempty",
         "PaperP1.FullComponentMotifs.vertices_injective",
@@ -16756,21 +16756,71 @@
         "PaperP1.OrderedPrimitiveHostCount.uniform_count",
         "PaperP1.ResidualPrimitiveHostCount.hosts_data",
         "PaperP1.ResidualPrimitiveHostCount.all_primitive_triples",
-        "PaperP1.ResidualPrimitiveHostCount.source_unrestricted_assertion"
+        "PaperP1.ResidualPrimitiveHostCount.source_unrestricted_assertion",
+        "PaperP1.SelectedWindowAdmissibility.space_mono",
+        "PaperP1.SelectedWindowAdmissibility.full_values_independent",
+        "PaperP1.SelectedWindowAdmissibility.selected_values_subset",
+        "PaperP1.SelectedWindowAdmissibility.admissible_mono",
+        "PaperP1.SelectedWindowAdmissibility.admissible",
+        "PaperP1.SmallMotifCoefficients.source_card",
+        "PaperP1.SmallMotifCoefficients.source_product",
+        "PaperP1.SmallMotifCoefficients.coefficient_pos",
+        "PaperP1.SmallMotifCoefficients.coefficient_mem",
+        "PaperP1.SmallMotifCoefficients.integer_product",
+        "PaperP1.SmallMotifCoefficients.product_cast",
+        "PaperP1.SmallMotifCoefficients.square",
+        "PaperP1.SmallMotifSystems.integer_offsets_card",
+        "PaperP1.SmallMotifSystems.integer_offsets_bound",
+        "PaperP1.SmallMotifSystems.slice_disjoint",
+        "PaperP1.SmallMotifSystems.target_size",
+        "PaperP1.SmallMotifSystems.pattern_mem",
+        "PaperP1.SmallMotifSystems.pattern_valid",
+        "PaperP1.SmallMotifSystems.grid_subset",
+        "PaperP1.SmallMotifSystems.pattern_admissible",
+        "PaperP1.SmallMotifSystems.pattern_roots",
+        "PaperP1.SmallTransverseHostData.regular_reindex",
+        "PaperP1.SmallTransverseHostData.exists_system",
+        "PaperP1.SmallTransverseHostData.many_of_cover",
+        "PaperP1.SixVertexBudgetUnderInputs.uniform_budget",
+        "PaperP1.SixVertexBudgetUnderInputs.companion_T20_8",
+        "PaperP1.SmallMotifCoefficientBounds.uniform_pool",
+        "PaperP1.SmallMotifCoefficientBounds.uniform_height",
+        "PaperP1.SmallTransverseHostCount.pair_injective_on_fibre",
+        "PaperP1.SmallTransverseHostCount.uniform_oriented",
+        "PaperP1.SmallTransverseHostCount.uniform_count",
+        "PaperP1.SmallTransverseMassUnderInputs.uniform_bound",
+        "PaperP1.SmallTransverseMassUnderInputs.exceptional_data",
+        "PaperP1.SmallTransverseMassUnderInputs.outside_small_count",
+        "PaperP1.SmallTransverseSelection.singleton_block",
+        "PaperP1.SmallTransverseSelection.exists_type",
+        "PaperP1.SmallTransverseSelection.type_card",
+        "PaperP1.SmallTransverseSelection.select"
       ],
       "literature_inputs": [
-        "P1-DIOPH-THREE-PLANAR-MOTIFS"
+        "P1-DIOPH-THREE-PLANAR-MOTIFS",
+        "P1-DIOPH-SIX-VERTEX-EXCLUSION",
+        "P1-GEO-ORDINARY-SURFACE-COVER",
+        "P1-GEO-NORMALIZED-CURVE-UNIFORM"
       ],
-      "mathematical_changes": [],
-      "notes": "The prescribed-plane and unrestricted host assertions of T20.8 are\nproved on the actual covered three-window relation space. For each\narbitrary cover, its unpinned components meeting all three blocks give\nan exact finite family of pairwise disjoint transverse motifs. Their\nnatural products equal the component products used by T20.7, so their\nsmall-prime square constraints are literal. Component-to-vertex-set\ninjectivity preserves their exact count. The finite small-prime rank\ncost is uniformly below any fixed fraction of B.\n\nConsequently, if any cover has residual dimension at least eta*L,\nthen the triple admits at least (eta/4)*B actual disjoint transverse\nsquare products, eventually and uniformly in all covers. T20.6 then\ngives N^(1+epsilon) hosts and N^(-1+epsilon) original affine mass on\nevery prescribed polynomial family of integer planes. The cover stays\ninside an existential host predicate and is never enumerated. The\nbound holds before primitive filtering, and hence for the literal\nprimitive mass as well. The real cutoff H=C0*B is retained exactly.\n\nThe unrestricted N^(3/2+epsilon) count of primitive triples is also\nproved. In fact it follows from the stronger elementary fixed-order\ncount of all primitive hosts, without a residual-dimension premise.\nA new exact finite conversion from unordered families to injective\ncenter functions supplies the r! enumeration factor and works at\nevery fixed r>=2. It preserves the original primitive predicate.\n\nThe six-vertex packing calculation itself is now exact and checked:\n6*dim(R_D)+|D| <= 3B+3*s(D)+18*(pi(H)+2), where s(D) is the literal\nnumber of free transverse components of size at most five. Its real\nform gives (3B-|D|)/6+s(D)/2+3*(pi(H)+2). This includes arbitrary\ncovers and pins. The remaining unproved part of T20.8 is the exceptional\nmass N^(-1+epsilon) needed to bound s(D) by a fixed constant simultaneously\nfor every cover. That small-component exclusion still needs the\nunrestricted degree-one geometric count. It is not inferred from\npacking or from the planar proposition.\n\nT20.8 moves from not started to in progress; coverage stays 79/167\n(main 28/73, companion 51/94), with 97 confirmed improvements. These\nare applications and exact interfaces for existing improvements,\nnot a new counted finding. No external premise, manuscript edit,\ndependency download or Palomar registration is introduced.",
+      "mathematical_changes": [
+        "P1-MATH-0160"
+      ],
+      "notes": "Companion T20.8 is now COMPLETE CONDITIONALLY on the already recorded\nordinary surface-cover and normalized curve-count properties. The missing\nsmall-component exclusion is proved from actual original motifs and a\ncommon fixed-third-window coefficient list. The source six-vertex budget,\nunrestricted primitive count and prescribed-plane count/mass assertions\nare all assembled in SixVertexBudgetUnderInputs.companion_T20_8.\nNumbered coverage becomes87/167 unconditional and47 conditional.\n\nThe cover is NEVER enumerated. Its actual free three-block components\nsupply pairwise disjoint transverse square products. Filtering those\nof size at most five gives the literal smallCount from the previously\nproved finite packing theorem. Every such motif has a singleton block.\nSmallTransverseSelection uses just24 permutation/left-degree choices to\nselect k motifs of one degree-one orientation from a population of24*k.\nAll selections preserve the exact original vertices and small-prime code.\n\nSmallMotifCoefficients fixes the third centre z and constructs one common\nfinite coefficient pool. Each motif coefficient is its ACTUAL third-block\nproduct times its ACTUAL small-prime odd-support product. Membership in\nthe source-supported pool is proved by divisibility, and the literal\ninteger square equation is verified. No coefficient or cover is a new\nfree counting parameter. SmallMotifCoefficientBounds proves unconditional\nsubpower cardinality and polynomial coefficient height for the entire\npool, uniformly before either variable centre is chosen.\n\nSelectedWindowAdmissibility proves monotonicity of even square-class\nspaces and inheritance of even independence by arbitrary selected grids.\nActual regular full windows with disjoint relative spaces give EXACTLY\nthe complete geometric admissibility needed by the existing selected\ndegree-one root count. No nonalignment assumption is added. In particular,\naligned pairs that still have direct actual spaces are not discarded.\n\nSmallMotifSystems constructs the actual bounded integer offset pattern,\nits pairwise disjoint left and right supports, its positive common left\ndegree and singleton right degree, and its genuine square roots. The\nselected two-block total degree is at most4. Its admissibility follows\nfrom the actual full windows, including the coordinate parity conditions.\nSmallTransverseHostData turns any actual cover with many small components\ninto one of these systems, and then forgets the cover completely.\n\nSmallTransverseHostCount fixes only a permutation and the third centre.\nProjection to the two remaining centres is injective on that fibre.\nThe existing coefficient-selected degree-one theorem gives subpower\nmany actual pairs, using only UniformCover k4 and the normalized curve\nproperty at ambient parameter k+3. Summing the six permutations and N\npossible third centres gives N^(1+epsilon) hosts, with all constants\nabsorbed after choosing the accuracy. No source host bound is passed as\nan external argument; only the ordinary geometric properties are inputs.\n\nSmallTransverseMassUnderInputs multiplies this count by the original\naffine joint bound p^2 and proves mass <=N^(-1+epsilon). In fact its\nuniform_bound applies to EVERY family of distinct regular triples with\npairwise direct actual spaces, BEFORE primitive filtering. This stronger\nscope is improvement P1-MATH-0160. The actual exceptional set used in the\nsource theorem is explicitly filtered by the literal primitive predicate.\n\nOutside that set, EVERY cover has smallCount<24*k simultaneously.\nSixVertexBudgetUnderInputs.uniform_budget combines the exact finite\npacking inequality with the actual prime-count bound. Its explicit\nresidual error is\nCoverRankPrimeBudget.constant(C0)*B/log(B)+12*k,\nwith B=L+1, real cutoff C0*B represented exactly by its natural floor,\nand C0>=1. Thus the B/log(B) coefficient is independent of epsilon and\nthe constant12*k is chosen before every host, width and cover. The source\nC0>1 is included. Shared-prime vertex covers are converted to the exact\nrow cover by the already proved equivalence, rather than assumed equal.\n\nThe final companion_T20_8 also includes the already proved unrestricted\nN^(3/2+epsilon) primitive host count and the prescribed-plane\nN^(1+epsilon) host and N^(-1+epsilon) actual mass bounds, with one common\ncritical threshold. Those latter assertions remain unconditional.\nOnly the small-component exceptional-set and resulting simultaneous\nsix-vertex assertion require the two existing ordinary geometric inputs.\nNo chosen-source surface cover, BCN property, target estimate or new\nexternal property is introduced.\n\nNo Paper C port, dependency download or original manuscript edit occurs.\nPalomar remains a later milestone.\n\nEarlier checkpoint history:\nThe prescribed-plane and unrestricted host assertions of T20.8 are\nproved on the actual covered three-window relation space. For each\narbitrary cover, its unpinned components meeting all three blocks give\nan exact finite family of pairwise disjoint transverse motifs. Their\nnatural products equal the component products used by T20.7, so their\nsmall-prime square constraints are literal. Component-to-vertex-set\ninjectivity preserves their exact count. The finite small-prime rank\ncost is uniformly below any fixed fraction of B.\n\nConsequently, if any cover has residual dimension at least eta*L,\nthen the triple admits at least (eta/4)*B actual disjoint transverse\nsquare products, eventually and uniformly in all covers. T20.6 then\ngives N^(1+epsilon) hosts and N^(-1+epsilon) original affine mass on\nevery prescribed polynomial family of integer planes. The cover stays\ninside an existential host predicate and is never enumerated. The\nbound holds before primitive filtering, and hence for the literal\nprimitive mass as well. The real cutoff H=C0*B is retained exactly.\n\nThe unrestricted N^(3/2+epsilon) count of primitive triples is also\nproved. In fact it follows from the stronger elementary fixed-order\ncount of all primitive hosts, without a residual-dimension premise.\nA new exact finite conversion from unordered families to injective\ncenter functions supplies the r! enumeration factor and works at\nevery fixed r>=2. It preserves the original primitive predicate.\n\nThe six-vertex packing calculation itself is now exact and checked:\n6*dim(R_D)+|D| <= 3B+3*s(D)+18*(pi(H)+2), where s(D) is the literal\nnumber of free transverse components of size at most five. Its real\nform gives (3B-|D|)/6+s(D)/2+3*(pi(H)+2). This includes arbitrary\ncovers and pins. The remaining unproved part of T20.8 is the exceptional\nmass N^(-1+epsilon) needed to bound s(D) by a fixed constant simultaneously\nfor every cover. That small-component exclusion still needs the\nunrestricted degree-one geometric count. It is not inferred from\npacking or from the planar proposition.\n\nT20.8 moves from not started to in progress; coverage stays 79/167\n(main 28/73, companion 51/94), with 97 confirmed improvements. These\nare applications and exact interfaces for existing improvements,\nnot a new counted finding. No external premise, manuscript edit,\ndependency download or Palomar registration is introduced.",
       "validation_history": [
         {
           "status": "not_started",
           "notes": ""
+        },
+        {
+          "status": "in_progress",
+          "validation": "Verified with Lean v4.36.0-rc2: full lake build (11107 jobs), actual axiom audit of all 7200 theorem/lemma declarations, direct Lean checks of all 4917 ledger/finding references, source integrity (138 manifest entries and 167 numbered statements), and git diff --check. Only propext, Classical.choice and Quot.sound occur. Ubuntu root space after verification: 14.91 GiB.",
+          "validation_commit": "db630c221f7191170dd6241a5a870ae3628de22b",
+          "literature_inputs": [
+            "P1-DIOPH-THREE-PLANAR-MOTIFS"
+          ]
         }
       ],
-      "validation": "Verified with Lean v4.36.0-rc2: full lake build (11107 jobs), actual axiom audit of all 7200 theorem/lemma declarations, direct Lean checks of all 4917 ledger/finding references, source integrity (138 manifest entries and 167 numbered statements), and git diff --check. Only propext, Classical.choice and Quot.sound occur. Ubuntu root space after verification: 14.91 GiB.",
-      "validation_commit": "db630c221f7191170dd6241a5a870ae3628de22b"
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14205 jobs); direct axiom audit passed for 11573 declarations using only propext, Classical.choice and Quot.sound; all 10107 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.24 GiB."
     },
     {
       "label": "p1:consequences:macro",

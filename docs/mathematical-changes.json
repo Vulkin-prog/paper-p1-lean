@@ -10977,6 +10977,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "346cde1b01bcf2d8a9ecb75b72ca8b3bbc5f0989"
+    },
+    {
+      "id": "P1-MATH-0160",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:offset:six-vertex",
+        "number": "T20.8",
+        "page": 85,
+        "source": "companion_sections/offset_geometry.tex",
+        "line": 309,
+        "statement_sha256": "2306bb432c6b369d3fc460c2bff772ea8c7ab113a90cef1e499b0a96666bf574"
+      },
+      "original_assumption": "The small-component exceptional-set argument in T20.8 is stated for primitive triples of regular windows with pairwise direct relative spaces.",
+      "finding": "The N^(1+epsilon) host count and N^(-1+epsilon) original affine mass bound for triples with sufficiently many disjoint transverse motifs of size at most five hold before primitive filtering. Only distinct regular windows and pairwise direct actual even square-class spaces are needed. Fixing the third centre gives a common subpower coefficient pool, and every selected grid inherits full geometric admissibility from the actual windows. Consequently no nonalignment premise is needed in the degree-one root count. The source primitive exceptional set is obtained by filtering this stronger population; the covers themselves are never enumerated.",
+      "evidence": [
+        "PaperP1.SelectedWindowAdmissibility.admissible",
+        "PaperP1.SmallTransverseHostData.exists_system",
+        "PaperP1.SmallTransverseHostCount.uniform_count",
+        "PaperP1.SmallTransverseMassUnderInputs.uniform_bound",
+        "PaperP1.SixVertexBudgetUnderInputs.uniform_budget",
+        "PaperP1.SixVertexBudgetUnderInputs.companion_T20_8"
+      ],
+      "proposed_revision": "State the small-motif exclusion for all distinct regular triples with pairwise direct relative spaces, then filter to primitive triples for T20.8. Specify the common fixed-third-centre coefficient pool and inherited selected-grid admissibility. One may replace the final O_epsilon(1) term by12*k after selecting k and record the uniform B/log(B) coefficient separately.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14205 jobs); direct axiom audit passed for 11573 declarations using only propext, Classical.choice and Quot.sound; all 10107 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.24 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
