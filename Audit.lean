@@ -2140,6 +2140,13 @@ import PaperP1
 #print axioms PaperP1.BinaryEuclideanReduction.reduced_area
 #print axioms PaperP1.BinaryEuclideanReduction.reduced_projection_bound
 #print axioms PaperP1.BinaryEuclideanReduction.reduced_area_bound
+#print axioms PaperP1.BinaryLatticeEntryBounds.square_of_abs_bound
+#print axioms PaperP1.BinaryLatticeEntryBounds.squareNorm_bound
+#print axioms PaperP1.BinaryLatticeEntryBounds.inverseSize_bound
+#print axioms PaperP1.BinaryLatticeEntryBounds.candidate_energy_bound
+#print axioms PaperP1.BinaryLatticeEntryBounds.image_coordinate_bound
+#print axioms PaperP1.BinaryLatticeEntryBounds.image_energy_bound
+#print axioms PaperP1.BinaryLatticeEntryBounds.shortest_height_bound
 #print axioms PaperP1.BinaryLatticeMinimum.realImage_nonzero
 #print axioms PaperP1.BinaryLatticeMinimum.image_energy_positive
 #print axioms PaperP1.BinaryLatticeMinimum.inverseSize_nonnegative
@@ -2960,6 +2967,8 @@ import PaperP1
 #print axioms PaperP1.BoundedPointAlignment.ordered_alignment
 #print axioms PaperP1.BoundedPointAlignment.alignment_of_cross
 #print axioms PaperP1.BoundedPointAlignment.source_alignment
+#print axioms PaperP1.BoundedReducedBinaryBasis.projection_height_bound
+#print axioms PaperP1.BoundedReducedBinaryBasis.exists_bounded_reduced_basis
 #print axioms PaperP1.BoundedWidthWindows.values_subset
 #print axioms PaperP1.BoundedWidthWindows.space_le_window
 #print axioms PaperP1.BoundedWidthWindows.window_space_mono
@@ -8109,6 +8118,13 @@ import PaperP1
 #print axioms PaperP1.RawTwoWindowHostCount.finite_envelope_bound
 #print axioms PaperP1.RawTwoWindowHostCount.uniform_bound
 #print axioms PaperP1.HostRealPowers.le_rpow_div_of_pow_le
+#print axioms PaperP1.ReducedBasisPolynomialBound.double_power
+#print axioms PaperP1.ReducedBasisPolynomialBound.add_power
+#print axioms PaperP1.ReducedBasisPolynomialBound.vector_height_bound
+#print axioms PaperP1.ReducedBasisPolynomialBound.completion_height_bound
+#print axioms PaperP1.ReducedBasisPolynomialBound.second_energy_height_bound
+#print axioms PaperP1.ReducedBasisPolynomialBound.projection_height_bound
+#print axioms PaperP1.ReducedBasisPolynomialBound.basis_height_bound
 #print axioms PaperP1.RefinedPairActivityUnderBCN.rankSlope_ge_third
 #print axioms PaperP1.RefinedPairActivityUnderBCN.absolute_partition
 #print axioms PaperP1.RefinedPairActivityUnderBCN.uniform_pair_activity
@@ -8624,6 +8640,7 @@ import PaperP1
 #print axioms PaperP1.UniformIndependentExposureBudget.uniform_budget
 #print axioms PaperP1.UniformPairClassDeficit.uniform_bound
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
+#print axioms PaperP1.UniformReducedBinaryBasis.uniform_reduced_basis
 #print axioms PaperP1.UniformSubpolynomialPower.bound
 #print axioms PaperP1.UnitChannelPairWeights.uniform_joint
 #print axioms PaperP1.UnitChannelPairWeights.uniform_coefficient

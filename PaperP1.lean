@@ -3341,3 +3341,7 @@ public import PaperP1.Analysis.ReducedBinaryLatticeBasis
 public import PaperP1.Arithmetic.BinaryBasisShear
 public import PaperP1.Analysis.BinaryReductionBounds
 public import PaperP1.Arithmetic.BinaryMatrixProductHeight
+public import PaperP1.Analysis.BinaryLatticeEntryBounds
+public import PaperP1.Arithmetic.BoundedReducedBinaryBasis
+public import PaperP1.Asymptotics.ReducedBasisPolynomialBound
+public import PaperP1.Asymptotics.UniformReducedBinaryBasis

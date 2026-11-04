@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records253 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records254 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13703 audited theorem/lemma declarations**. This
+- The project currently has **13720 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23350,3 +23350,25 @@ The final theorem applies this bound directly to the actual reduced matrices def
 P1-MATH-0254 closes the quantitative nearest-integer and matrix-product calculations. Assembly of a common power of N for the constructed bases, the exact coordinate boxes and their source-scale specialization remains to be completed, followed by geometric curve counts and interval sums. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are253 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15243 jobs); direct axiom audit passed for 13703 declarations using only propext, Classical.choice and Quot.sound; all 12896 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.74 GiB.
+
+
+## Actual reduced lattice bases with one uniform polynomial coefficient-height exponent
+
+The actual reduced lattice basis and its actual integer inverse now have a proved common polynomial coefficient height. The exponent is chosen BEFORE N and the moving real lattice matrix, while all shortest-vector, inverse, projection and area properties remain available.
+
+BinaryLatticeEntryBounds derives every needed length bound from actual matrix entries. If T and an actual real left inverse S have entries bounded by J, then the maximum inverse row squared norm and the comparison vector squared length are at most 2*J^2. Every actual global shortest integer vector has coordinates bounded by H=4*J^4+1. Any integer vector of height H0 has image squared length at most 8*J^2*H0^2.
+
+BoundedReducedBinaryBasis uses the BOUNDED Bezout completion of that actual primitive shortest vector, then applies the actual nearest-integer shear. It constructs both inverse integer matrices and retains determinant one, the globally shortest first vector, positive ordered squared lengths, the half-projection bound and the squared area estimate. The basis and inverse entry heights are bounded by the explicit integer polynomial
+
+  H = 4*J^4+1,
+  H0 = H^2+H+1,
+  R = 2*J^2*(2*J^2+8*J^2*H0^2)+1,
+  height(A),height(B) <= 2*H0*(R+1).
+
+The projection coefficient bound is derived from the actual lattice lengths; it is not supplied as a premise.
+
+ReducedBasisPolynomialBound proves the explicit polynomial is at most J^60 for J>=2. UniformReducedBinaryBasis.uniform_reduced_basis therefore chooses kappa=60*(mu+1) and N0=2 BEFORE N,T,S. If every entry of T and S is at most N^mu in absolute value and S*T=1, the theorem constructs actual inverse unimodular integer matrices whose EVERY entry is bounded by N^kappa, with all the proved reduced-basis geometry. Choosing J=N^(mu+1) also covers mu=0 without a special-case hypothesis. The exponent is deliberately coarse; only a fixed common polynomial bound is needed in the later height budget.
+
+P1-MATH-0255 closes uniform polynomial coefficient-height control of the actual reduced basis AND inverse. The remaining lattice work concerns exact coordinate boxes and their source-scale specialization; geometric curve counts and final interval sums also remain. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are254 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15251 jobs); direct axiom audit passed for 13720 declarations using only propext, Classical.choice and Quot.sound; all 12917 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.73 GiB.
