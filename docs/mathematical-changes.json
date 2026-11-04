@@ -14531,6 +14531,56 @@
         "status": "not_integrated"
       },
       "validation_commit": "9931ddb4c2c4ea3869e21682f0dec01e1716979d"
+    },
+    {
+      "id": "P1-MATH-0230",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:private-exact",
+        "number": "T19.16",
+        "page": 80,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1214,
+        "statement_sha256": "6baf345eb5567df4010efd0ecbca65dd33af3c09e924d3b13643b928c59b8315"
+      },
+      "original_assumption": "T19.16 bounds the specified full signed forcing cost by the directed reciprocal-pivot possibilities, close pairs and a maximal full-value weighted profile, with the type weights summing without an excess-count loss.",
+      "finding": "The actual complete finite signed cost satisfies p^2*(12*N*B^2*(pivotSum(3N)+1)+rawProfile(N,B-1)) for every maximal width B<=N, using internally proved Palm laws, pointwise joint estimates, exact type summation and genuine directed footprints.",
+      "proposed_revision": "State this finite ledger explicitly before its asymptotic use. Retain heterogeneous signed probabilities until the two type sums have been factored, and count newly affected targets by the actual maximal footprint.",
+      "impact": "Discharges the full finite upper-cost assembly for T19.16. Its final asymptotic upper bound still depends on the explicit EIP and six existing ordinary geometric inputs.",
+      "evidence": [
+        "PaperP1.SignedDyadicCostUpper.closeSites_card",
+        "PaperP1.SignedDyadicCostUpper.boundaries_subset",
+        "PaperP1.SignedDyadicCostUpper.far_profile_le",
+        "PaperP1.SignedDyadicCostUpper.finite_upper",
+        "PaperP1.SignedDyadicCostUpper.finite_upper_coarse",
+        "PaperP1.SignedCostEnvelope.envelope_nonneg",
+        "PaperP1.SignedCostEnvelope.envelope_diagonal",
+        "PaperP1.SignedCostEnvelope.offsite_bound",
+        "PaperP1.SignedCostEnvelope.cost_le_envelope",
+        "PaperP1.SignedMaximalFootprint.mem_directed_footprint",
+        "PaperP1.SignedMaximalFootprint.actual_subset",
+        "PaperP1.SignedMaximalFootprint.card_le_interval",
+        "PaperP1.SignedMaximalFootprint.total_card_bound",
+        "PaperP1.SignedTypeWeightSums.typeWeight_nonneg",
+        "PaperP1.SignedTypeWeightSums.typeWeight_le",
+        "PaperP1.SignedTypeWeightSums.pair_factorization",
+        "PaperP1.SignedTypeWeightSums.sum_pairs",
+        "PaperP1.SignedTypeWeightSums.sum_pairs_le",
+        "PaperP1.SignedDyadicCostUpper.closeSites",
+        "PaperP1.SignedCostEnvelope.Close",
+        "PaperP1.SignedCostEnvelope.envelope",
+        "PaperP1.SignedMaximalFootprint.maximalPivots",
+        "PaperP1.SignedMaximalFootprint.siteFootprint",
+        "PaperP1.SignedTypeWeightSums.typeWeight"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15093 jobs); direct axiom audit passed for 13314 declarations using only propext, Classical.choice and Quot.sound; all 12411 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.20 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

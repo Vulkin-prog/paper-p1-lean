@@ -3262,3 +3262,7 @@ public import PaperP1.Model.SignedRawJointMass
 public import PaperP1.Model.RawPrivateSelectedValues
 public import PaperP1.Model.SignedLocalJointMass
 public import PaperP1.Model.SignedMarkLocalGeometry
+public import PaperP1.Asymptotics.SignedDyadicCostUpper
+public import PaperP1.Model.SignedCostEnvelope
+public import PaperP1.Model.SignedMaximalFootprint
+public import PaperP1.Model.SignedTypeWeightSums

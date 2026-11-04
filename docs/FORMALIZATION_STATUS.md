@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and71 conditional. The project records228 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and71 conditional. The project records229 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13296 audited theorem/lemma declarations**. This
+- The project currently has **13314 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22859,3 +22859,24 @@ for every distinct pair with close maximal supports. Both exact heterogeneous pr
 P1-MATH-0229 records the exact local run exclusions and uniform fourfold joint bound. Together with P1-MATH-0228 this closes the pointwise joint estimates needed by T19.16, while their actual cost summation is still to be assembled. Coverage remains 89 proved and 71 conditional out of 167, with seven incomplete numbered results. There are 228 improvements and one statement-scope correction. No new external input, axiom, additional Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15085 jobs); direct axiom audit passed for 13296 declarations using only propext, Classical.choice and Quot.sound; all 12387 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.23 GiB.
+
+
+## Complete finite signed-forcing upper ledger with exact type summation
+
+The actual finite upper-cost ledger in companion T19.16 is now proved, with no target cost, joint probability, footprint size or profile bound supplied as a premise.
+
+SignedTypeWeightSums sums both signs and every excess using their exact heterogeneous signed probabilities. The total type weight is at most p=2^(-L). A general finite product identity factors the two type sums before any geometric estimate; no factor depending on the number of excesses is introduced.
+
+SignedMaximalFootprint constructs the actual prime pivots of each retained maximal support and a type-independent directed site footprint. Every target affected by the original source forcing lies in this literal footprint. Injective interval counting and the internally proved reciprocal-pivot ledger give its total cardinality bound at the actual source and target sites.
+
+SignedCostEnvelope combines the full original Palm cost ledger, the internally proved close joint bound and the actual raw-kernel joint majorant. Its nonnegative site envelope keeps the diagonal, directed hits, close sites and separated raw-rank deficit explicit. Exact type summation gives the original full signed cost bounded by p^2 times the site envelope sum.
+
+SignedDyadicCostUpper proves the literal retained-boundary interval inclusion, counts all close sites, and injects every remaining ordered site pair into the original maximal separated raw-profile mask. The resulting finite estimate, for maximal width B=L+E+2<=N, is
+
+  cost <= p^2 * (12*N*B^2*(pivotSum(3*N)+1) + rawProfile(N,B-1)).
+
+The reciprocal sum and full-value profile are the actual P1 objects. The estimate is unconditional finite arithmetic and probability; it holds for every E and all exact signed types, not only the prescribed moving cutoff. The profile is not assumed small here, and its separately proved geometric bound remains conditional on its six ordinary inputs.
+
+P1-MATH-0230 records the complete finite upper ledger and the absence of an artificial type-count loss. Only the asymptotic absorption and final two-sided assembly remain for T19.16, which stays in progress. Coverage remains 89 proved and 71 conditional out of 167, with seven incomplete numbered results. There are 229 improvements and one statement-scope correction. No additional external input, axiom, Paper C code port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15093 jobs); direct axiom audit passed for 13314 declarations using only propext, Classical.choice and Quot.sound; all 12411 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.20 GiB.

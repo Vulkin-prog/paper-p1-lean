@@ -7964,6 +7964,11 @@ import PaperP1
 #print axioms PaperP1.SignedChannelPhaseLimit.weighted_linear_identity
 #print axioms PaperP1.SignedChannelPhaseLimit.tendsto_height_normalized
 #print axioms PaperP1.SignedDyadicCostLower.uniform_actual_lower
+#print axioms PaperP1.SignedDyadicCostUpper.closeSites_card
+#print axioms PaperP1.SignedDyadicCostUpper.boundaries_subset
+#print axioms PaperP1.SignedDyadicCostUpper.far_profile_le
+#print axioms PaperP1.SignedDyadicCostUpper.finite_upper
+#print axioms PaperP1.SignedDyadicCostUpper.finite_upper_coarse
 #print axioms PaperP1.SignedPrescribedSaddleLower.uniform_actual_lower
 #print axioms PaperP1.SignedPrescribedSaddleLower.uniform_power_obstruction
 #print axioms PaperP1.SignedSaddleCostLower.uniform_actual_lower
@@ -11572,6 +11577,10 @@ import PaperP1
 #print axioms PaperP1.SignedCleanSourceData.source_pivot_above
 #print axioms PaperP1.SignedCleanSourceData.otherPivots_card
 #print axioms PaperP1.SignedCleanSourceData.source_conditions
+#print axioms PaperP1.SignedCostEnvelope.envelope_nonneg
+#print axioms PaperP1.SignedCostEnvelope.envelope_diagonal
+#print axioms PaperP1.SignedCostEnvelope.offsite_bound
+#print axioms PaperP1.SignedCostEnvelope.cost_le_envelope
 #print axioms PaperP1.SignedDyadicCleanPairs.liftPair_injective
 #print axioms PaperP1.SignedDyadicCleanPairs.liftedPairs_card
 #print axioms PaperP1.SignedDyadicCleanPairs.retained_of_not_bad
@@ -11598,6 +11607,10 @@ import PaperP1
 #print axioms PaperP1.SignedMarkLocalGeometry.ordered_gap
 #print axioms PaperP1.SignedMarkLocalGeometry.type_unique
 #print axioms PaperP1.SignedMarkLocalGeometry.trimmed_value
+#print axioms PaperP1.SignedMaximalFootprint.mem_directed_footprint
+#print axioms PaperP1.SignedMaximalFootprint.actual_subset
+#print axioms PaperP1.SignedMaximalFootprint.card_le_interval
+#print axioms PaperP1.SignedMaximalFootprint.total_card_bound
 #print axioms PaperP1.SignedPrivateCleanCost.indicator_eq_word
 #print axioms PaperP1.SignedPrivateCleanCost.target_width_le_pivot
 #print axioms PaperP1.SignedPrivateCleanCost.expected_change_clean
@@ -11631,6 +11644,11 @@ import PaperP1
 #print axioms PaperP1.SignedRawJointMass.kernel_le_maximal
 #print axioms PaperP1.SignedRawJointMass.joint_eq_mass
 #print axioms PaperP1.SignedRawJointMass.joint_le_maximal
+#print axioms PaperP1.SignedTypeWeightSums.typeWeight_nonneg
+#print axioms PaperP1.SignedTypeWeightSums.typeWeight_le
+#print axioms PaperP1.SignedTypeWeightSums.pair_factorization
+#print axioms PaperP1.SignedTypeWeightSums.sum_pairs
+#print axioms PaperP1.SignedTypeWeightSums.sum_pairs_le
 #print axioms PaperP1.SingletonSeedMass.singleton_injective
 #print axioms PaperP1.SingletonSeedMass.joint_singleton
 #print axioms PaperP1.SingletonSeedMass.sum_seeds
