@@ -16992,6 +16992,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "600b4401420ce27a30edf7a825302ec12c99c71e"
+    },
+    {
+      "id": "P1-MATH-0291",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "Replacing N by the effective source size N/(g^2*q) preserves the required asymptotic size and logarithmic hypotheses uniformly over all gcd reductions of the short shift.",
+      "finding": "The effective size is made a literal rounded natural parameter. Its quotient, ceiling, original-size, square-root, logarithmic and arbitrary fixed threshold bounds are proved uniformly before every moving reduction scale and short shift.",
+      "proposed_revision": "Use the literal integer ceiling of the effective source size and select one threshold that makes it exceed the already chosen primitive-count threshold for every admissible gcd reduction. Carry the exact logarithmic and rounding inequalities into the reduced source-box construction.",
+      "impact": "Closes effective integer parameter, logarithmic comparison and common threshold order for the nonprimitive passage. Reduced-box, barrier/shift, shape and final summation remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.ReducedSourceParameter.effective_positive",
+        "PaperP1.ReducedSourceParameter.effective_le_parameter",
+        "PaperP1.ReducedSourceParameter.parameter_positive",
+        "PaperP1.ReducedSourceParameter.parameter_upper",
+        "PaperP1.ReducedSourceParameter.parameter_le_original",
+        "PaperP1.ReducedSourceParameter.effective_ge_quotient",
+        "PaperP1.ReducedSourceParameter.effective_ge_sqrt",
+        "PaperP1.ReducedSourceParameter.parameter_ge_sqrt",
+        "PaperP1.ReducedSourceParameter.log_effective",
+        "PaperP1.ReducedSourceParameter.parameter_log_lower",
+        "PaperP1.ReducedSourceParameter.parameter_log_upper",
+        "PaperP1.ReducedSourceParameter.log_parameter_gap",
+        "PaperP1.ReducedSourceParameter.parameter_sufficiently_large",
+        "PaperP1.ReducedSourceParameter.uniform_parameter_threshold",
+        "PaperP1.ReducedSourceParameter.effective",
+        "PaperP1.ReducedSourceParameter.parameter"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15431 jobs); direct axiom audit passed for 13980 declarations using only propext, Classical.choice and Quot.sound; all 13217 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.08 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

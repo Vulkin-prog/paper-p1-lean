@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records289 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records290 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13966 audited theorem/lemma declarations**. This
+- The project currently has **13980 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23993,3 +23993,18 @@ All these results are UNCONDITIONAL and introduce no counting input. They justif
 P1-MATH-0290 closes the actual arithmetic family decomposition and quantitative reduced-scale normalization. The two ordinary inputs retained by the primitive counting theorem still have unformalized proofs. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are289 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15429 jobs); direct axiom audit passed for 13966 declarations using only propext, Classical.choice and Quot.sound; all 13201 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.09 GiB.
+
+
+## Literal rounded effective parameter and one uniform threshold for every gcd reduction
+
+The effective parameter after the actual gcd reduction is now a literal natural integer with checked size and logarithmic bounds. One threshold makes it large enough for ANY preselected primitive-count threshold, simultaneously over every reduction scale dividing the short shift.
+
+ReducedSourceParameter defines effective(N,s)=N/s over the reals and parameter(N,s)=ceil(effective(N,s)). Positivity, the lower ceiling bound and the upper bound parameter<=2*effective when effective>=1 are proved. For a positive integer reduction scale, the rounded parameter is at most the ORIGINAL integer N. The exact logarithm of the unrounded quotient and the bound log(N)-log(parameter)<=log(s) are retained, including the rounding in the latter inequality.
+
+If the reduction scale s is at most a positive shift of size at most sqrt(N), then BOTH the unrounded and rounded effective parameters are at least sqrt(N). Consequently the rounded parameter has logarithm between log(N)/2 and log(N). If L^2<=N it is at least the preselected natural threshold L. These inequalities are proved for the literal rounded parameter rather than a real replacement.
+
+The final uniform theorem uses the internally proved logarithmic-power estimate: for ANY fixed short-shift parameters and ANY fixed target threshold L, one N0 precedes N, the actual short shift and EVERY integer reduction scale s<=h. It gives parameter>=L, parameter<=N, positivity and both logarithmic comparisons simultaneously. With s=g^2*q fromP1-MATH-0290, this closes the effective-parameter threshold order required to apply the primitive determinant theorem uniformly on all actual gcd families.
+
+P1-MATH-0291 is UNCONDITIONAL and uses no counting input. The full reduced source Box, uniform transfer of the source barrier and short shift, exponential-shape comparison and final sum over reductions remain open. The two ordinary inputs retained by the primitive determinant theorem still have unformalized proofs. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are290 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15431 jobs); direct axiom audit passed for 13980 declarations using only propext, Classical.choice and Quot.sound; all 13217 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.08 GiB.
