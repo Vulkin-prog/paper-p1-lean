@@ -17253,6 +17253,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "8a8e405f0ffdfb6264e53ad9d472e275af322903"
+    },
+    {
+      "id": "P1-MATH-0299",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The printed positive-scale statement can be reduced to the existing Box convention in which every scale is at least1, without discarding small-scale solutions.",
+      "finding": "A nonempty positive integer population forces every original scale to be at least1/2. Its exact max-with1 normalization gives a valid Box at the same N, unchanged lower and logarithmic constants and upper constant8*C, preserving the source coefficients, population and barrier.",
+      "proposed_revision": "Make the initial small-scale normalization explicit before invoking any result that assumes individual scales>=1; compare its determinant costs back to the original scales separately.",
+      "impact": "Closes the exact arithmetic normalization of arbitrary positive initial scales. Its analytic cost comparison and numerical counting application remain open, as does the weakened-barrier extension; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.InitialDyadicSourceBox.positive_point",
+        "PaperP1.InitialDyadicSourceBox.half_scales",
+        "PaperP1.InitialDyadicSourceBox.normalized_population",
+        "PaperP1.InitialDyadicSourceBox.normalized_barrier",
+        "PaperP1.InitialDyadicSourceBox.Box",
+        "PaperP1.InitialDyadicSourceBox.Population",
+        "PaperP1.InitialDyadicSourceBox.normalize",
+        "PaperP1.InitialDyadicSourceBox.coefficients"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15455 jobs); direct axiom audit passed for 14011 declarations using only propext, Classical.choice and Quot.sound; all 13254 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.96 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

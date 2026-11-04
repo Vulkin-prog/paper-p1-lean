@@ -4059,6 +4059,10 @@ import PaperP1
 #print axioms PaperP1.IndexedPrimeOffsets.offsets_collinear
 #print axioms PaperP1.IndexedPrimeOffsets.product_le_of_collinear
 #print axioms PaperP1.InitialCurveFactor.exists_curve
+#print axioms PaperP1.InitialDyadicSourceBox.positive_point
+#print axioms PaperP1.InitialDyadicSourceBox.half_scales
+#print axioms PaperP1.InitialDyadicSourceBox.normalized_population
+#print axioms PaperP1.InitialDyadicSourceBox.normalized_barrier
 #print axioms PaperP1.InjectivePhysicalRelationRegularization.uniform_subspace
 #print axioms PaperP1.IntegerCurveFieldEquiv.mappedIdeal_eq
 #print axioms PaperP1.IntegerCurveFieldEquiv.denominators_disjoint

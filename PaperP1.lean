@@ -3444,3 +3444,4 @@ public import PaperP1.Analysis.ReducedDeterminantShape
 public import PaperP1.Analysis.ReducedDeterminantCosts
 public import PaperP1.Asymptotics.OriginalScaleFamilyCount
 public import PaperP1.Asymptotics.NonprimitiveSourceDeterminantCount
+public import PaperP1.Arithmetic.InitialDyadicSourceBox
