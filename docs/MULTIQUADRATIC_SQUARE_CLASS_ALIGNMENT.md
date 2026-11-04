@@ -16391,3 +16391,22 @@ All normalized chart assumptions and small-minor inequalities are derived intern
 P1-MATH-0244 records this completed assembly. General signed-shift transport, factor-height and irreducibility handling, local curve counts and short-vector summations remain open. T1.4 and T1.5 stay in progress; coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are243 improvements and one statement-scope correction. No external input, axiom, Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15183 jobs); direct axiom audit passed for 13531 declarations using only propext, Classical.choice and Quot.sound; all 12686 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.91 GiB.
+
+
+## Exact signed-shift transport of all actual bounded auxiliary curves
+
+The original source-box auxiliary construction now covers every nonzero integer shift, with the same common degree and height choices for both signs. The symmetry is proved on the actual integer coefficients, point populations and interval partition.
+
+BiformCoefficientRecovery proves that each original coefficient w(a,b) is exactly the nested coefficient of the biform at exponents (a,A-a) and (b,B-b). It proves biform=0 if and only if w=0, and recovers all coefficient-vector bounds from the actual biform height. This avoids any assumption about hidden representatives of a projective equation.
+
+DeterminantCoordinateFlip reverses the coordinates within BOTH projective pairs: ((d,e),(u,v)) maps to ((e,d),(v,u)). Reversing both exponent indices permutes the integer coefficients. Exact integer monomial-row and projective evaluation identities show that the reversed-coefficient biform at an original point equals the original biform at the flipped point. Nonvanishing and every coefficient-height bound are preserved. No rational-coordinate inversion or nonzero-denominator assumption is needed for this algebraic identity.
+
+DeterminantSignedBoxes swaps c1,c2 and the corresponding D,E and U,V scales. A negative original shift becomes the positive natural absolute value after the actual point flip; nonnegative shifts retain the original box. The rounded horizontal scale is unchanged because DE and UV are symmetric, and the actual flipped population has exactly the same cardinality.
+
+DeterminantReversedClusters proves the exact image and cardinality identities for every flipped interval, and transports the full partition back to the original population. DeterminantSignedAuxiliary.uniform_biforms now chooses B,Amax,kappa,N0 before N, the signed nonzero shift, every varying coefficient and box, and the entire original point population. For the actual rounded M it proves M>=4, the exact partition into at most2M signed-orientation intervals, and on every occupied interval an actual nonzero integer biform of bidegrees (A,B), 1<=A<=Amax, coefficient height N^kappa and vanishing on every original point.
+
+All original-box and normalized determinant conditions are proved internally as in P1-MATH-0244. The signed orientation changes which actual ratio is subdivided but does not change M, the number of available intervals, degrees, coefficient exponent or original point equations. This completes the signed source-box auxiliary construction. It does not prove the final number of solutions.
+
+P1-MATH-0245 records the signed extension and exact coefficient recovery. Applying the existing bivariate factor-height and irreducible-factor machinery to these actual curves, handling absolute irreducibility, the local curve counts and the short-vector sums remain unfinished. T1.4 and T1.5 stay in progress; coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are244 improvements and one statement-scope correction. No external input, axiom, Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15193 jobs); direct axiom audit passed for 13554 declarations using only propext, Classical.choice and Quot.sound; all 12716 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.90 GiB.

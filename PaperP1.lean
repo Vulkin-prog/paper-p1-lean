@@ -3311,3 +3311,8 @@ public import PaperP1.Analysis.DeterminantBoxScales
 public import PaperP1.Analysis.DeterminantFixedInflation
 public import PaperP1.Arithmetic.DeterminantSourceBox
 public import PaperP1.Asymptotics.DeterminantBoxAuxiliary
+public import PaperP1.Arithmetic.BiformCoefficientRecovery
+public import PaperP1.Arithmetic.DeterminantCoordinateFlip
+public import PaperP1.Arithmetic.DeterminantReversedClusters
+public import PaperP1.Arithmetic.DeterminantSignedBoxes
+public import PaperP1.Asymptotics.DeterminantSignedAuxiliary
