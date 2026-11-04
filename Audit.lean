@@ -7531,6 +7531,7 @@ import PaperP1
 #print axioms PaperP1.SignedChannelPhaseLimit.tendsto_normalized
 #print axioms PaperP1.SignedChannelPhaseLimit.weighted_linear_identity
 #print axioms PaperP1.SignedChannelPhaseLimit.tendsto_height_normalized
+#print axioms PaperP1.SignedDyadicCostLower.uniform_actual_lower
 #print axioms PaperP1.SignedSeparatedSourceProfileUnderInputs.article_3_3_signed
 #print axioms PaperP1.SignedSourceProfileUnderInputs.scaled_mainTerm
 #print axioms PaperP1.SignedSourceProfileUnderInputs.unscale
@@ -10967,6 +10968,15 @@ import PaperP1
 #print axioms PaperP1.ShiftedCountMoments.add_power_bound
 #print axioms PaperP1.ShiftedCountMoments.eq_finite
 #print axioms PaperP1.ShiftedCountMoments.finite_upper
+#print axioms PaperP1.SignedCleanSourceData.source_pivot_above
+#print axioms PaperP1.SignedCleanSourceData.otherPivots_card
+#print axioms PaperP1.SignedCleanSourceData.source_conditions
+#print axioms PaperP1.SignedDyadicCleanPairs.liftPair_injective
+#print axioms PaperP1.SignedDyadicCleanPairs.liftedPairs_card
+#print axioms PaperP1.SignedDyadicCleanPairs.retained_of_not_bad
+#print axioms PaperP1.SignedDyadicCleanPairs.surviving_metadata
+#print axioms PaperP1.SignedDyadicCleanPairs.surjective_joint_ne
+#print axioms PaperP1.SignedDyadicCleanPairs.actual_cost_lower
 #print axioms PaperP1.SignedExactWords.eq_one_add_iff_add_eq_one
 #print axioms PaperP1.SignedExactWords.phase_one_add
 #print axioms PaperP1.SignedExactWords.phase_signedExactWord
@@ -10978,6 +10988,12 @@ import PaperP1
 #print axioms PaperP1.SignedExactWords.signedMarkRate_zero
 #print axioms PaperP1.SignedExactWords.sum_signedMarkRate
 #print axioms PaperP1.SignedExactWords.sum_signedMarkRate_le
+#print axioms PaperP1.SignedPrivateCleanCost.indicator_eq_word
+#print axioms PaperP1.SignedPrivateCleanCost.target_width_le_pivot
+#print axioms PaperP1.SignedPrivateCleanCost.expected_change_clean
+#print axioms PaperP1.SignedPrivateCleanCost.clean_weight
+#print axioms PaperP1.SignedPrivateCleanCost.selected_pairs_lower
+#print axioms PaperP1.SignedPrivateCleanCost.selected_zero_pairs_lower
 #print axioms PaperP1.SignedPrivateDyadicField.boundary_recover
 #print axioms PaperP1.SignedPrivateDyadicField.retained_start_iff
 #print axioms PaperP1.SignedPrivateDyadicField.boundaries_card
@@ -12641,6 +12657,8 @@ import PaperP1
 #print axioms PaperP1.WeightedPoissonNorm.weightedNorm_stability
 #print axioms PaperP1.WeightedPoissonNorm.weightedNorm_stability_bounded
 #print axioms PaperP1.WeightedPoissonNorm.companion_T19_13
+#print axioms PaperP1.WeightedPositiveForcingCostLower.offsite_selected_sum
+#print axioms PaperP1.WeightedPositiveForcingCostLower.full_selected_sum
 #print axioms PaperP1.WordForcingFlipCost.singleton_probability
 #print axioms PaperP1.WordForcingFlipCost.orbit_probability
 #print axioms PaperP1.WordForcingFlipCost.singleton_disjoint
