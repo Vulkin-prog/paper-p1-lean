@@ -17476,6 +17476,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "e8d4f7529f8c7e341140a0c883aed4da67cf72e8"
+    },
+    {
+      "id": "P1-MATH-0306",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:twokernel",
+        "number": "T1.5",
+        "page": 9,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 360,
+        "statement_sha256": "bb1695001b6698be23b183ea4794053283d9baed656240adcaf51b682b72ff50"
+      },
+      "original_assumption": "The completed sharp integer count implies the literal two-small-kernel window estimate with exponent max(beta,7/12), uniformly in logarithmic width, and the earlier lower bound gives sharpness for beta>=7/12.",
+      "finding": "Exact offset witnesses and translation injectivity transfer the full sharp count to every actual window. The logarithmic placement family and factor2 are paid explicitly, and the unconditional adjacent-pair lower count yields the matching exponent at the same original parameters.",
+      "proposed_revision": "Assemble the actual window cover with the completed coefficient-retaining determinant count and all arithmetic edge regimes, keeping separate exponent margins for placements and the cap specialization. State the existing unconditional lower bound alongside the conditional upper theorem.",
+      "impact": "Completes companionT1.5 conditionally on the two existing ordinary biform inputs. Coverage becomes89 proved and74 conditional (163/167 completed); four other numbered obligations remain incomplete.",
+      "evidence": [
+        "PaperP1.CompanionTwoSmallKernelTheorem.companion_T1_5",
+        "PaperP1.CompanionTwoSmallKernelTheorem.companion_T1_5_sharp",
+        "PaperP1.SharpTwoSmallKernelWindowCount.uniform_budget",
+        "PaperP1.SharpTwoSmallKernelWindowCount.critical_budget",
+        "PaperP1.SharpTwoSmallKernelWindowCount.critical_upper",
+        "PaperP1.SharpTwoSmallKernelWindowCount.critical_sharp"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15487 jobs); direct axiom audit passed for 14041 declarations using only propext, Classical.choice and Quot.sound; all 13286 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.82 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

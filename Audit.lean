@@ -6552,6 +6552,8 @@ import PaperP1
 #print axioms PaperP1.CompanionT21Profiles.macroscopic_signed_reference_eval
 #print axioms PaperP1.CompanionT21Profiles.macroscopic_positive_uniform
 #print axioms PaperP1.CompanionT21Profiles.companion_T21_1
+#print axioms PaperP1.CompanionTwoSmallKernelTheorem.companion_T1_5
+#print axioms PaperP1.CompanionTwoSmallKernelTheorem.companion_T1_5_sharp
 #print axioms PaperP1.CompanionUniformDeterminantTheorem.mem_solutions_iff
 #print axioms PaperP1.CompanionUniformDeterminantTheorem.population
 #print axioms PaperP1.CompanionUniformDeterminantTheorem.weakened_barrier_count
@@ -8541,6 +8543,10 @@ import PaperP1
 #print axioms PaperP1.SharpThirdCumulantLowerUnderInputs.error_absorption
 #print axioms PaperP1.SharpThirdCumulantLowerUnderInputs.article_14_5
 #print axioms PaperP1.SharpTwoSmallKernelCount.uniform_count
+#print axioms PaperP1.SharpTwoSmallKernelWindowCount.uniform_budget
+#print axioms PaperP1.SharpTwoSmallKernelWindowCount.critical_budget
+#print axioms PaperP1.SharpTwoSmallKernelWindowCount.critical_upper
+#print axioms PaperP1.SharpTwoSmallKernelWindowCount.critical_sharp
 #print axioms PaperP1.ShiftedAsymmetricCriticalFamily.scale_pos
 #print axioms PaperP1.ShiftedAsymmetricCriticalFamily.index_le_scale
 #print axioms PaperP1.ShiftedAsymmetricCriticalFamily.critical_band

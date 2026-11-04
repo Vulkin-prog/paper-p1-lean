@@ -3459,3 +3459,5 @@ public import PaperP1.Arithmetic.CanonicalInteriorSourceBox
 public import PaperP1.Asymptotics.CanonicalInteriorCount
 public import PaperP1.Asymptotics.CanonicalInteriorSmoothCount
 public import PaperP1.Asymptotics.SharpTwoSmallKernelCount
+public import PaperP1.Asymptotics.CompanionTwoSmallKernelTheorem
+public import PaperP1.Asymptotics.SharpTwoSmallKernelWindowCount
