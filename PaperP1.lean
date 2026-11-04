@@ -3114,3 +3114,6 @@ public import PaperP1.Model.SignedCleanSourceData
 public import PaperP1.Model.SignedDyadicCleanPairs
 public import PaperP1.Model.SignedPrivateCleanCost
 public import PaperP1.Probability.WeightedPositiveForcingCostLower
+public import PaperP1.Asymptotics.AnchoredRetainedMass
+public import PaperP1.Model.AnchoredDyadicField
+public import PaperP1.Model.AnchoredPrivateField

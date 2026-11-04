@@ -12536,6 +12536,59 @@
         "status": "not_integrated"
       },
       "validation_commit": "e94da4c7f7b1e1bfc2e1c2aff261a1da12ee9a47"
+    },
+    {
+      "id": "P1-MATH-0185",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The anchor obstruction uses the original population with at most one small pivot, the unsigned start/exact events of rates p and p/2, and their actual offsite coordinate cost for every arithmetic anchor rule.",
+      "finding": "Every admissible deterministic arithmetic anchor rule defines the actual full unsigned prime-cylinder field, with exact marginals, full conditional and weighted Palm laws, and diagonal/offsite decomposition. Clean independent raw pairs contribute exactly the square of the actual unsigned rate to the offsite cost. The original at-most-one-small-pivot population contains the strict all-good population, giving a uniform total-mean interval [(N-N^(9/10+epsilon))*q,N*q] for all moving logarithmic widths, anchor rules and both templates.",
+      "evidence": [
+        "PaperP1.AnchoredRetainedMass.uniform_total_mean",
+        "PaperP1.AnchoredDyadicField.retained_subset",
+        "PaperP1.AnchoredDyadicField.retained_card_le",
+        "PaperP1.AnchoredDyadicField.exists_anchor_rule",
+        "PaperP1.AnchoredDyadicField.data",
+        "PaperP1.AnchoredDyadicField.retained_of_not_bad",
+        "PaperP1.AnchoredDyadicField.retention_ledger",
+        "PaperP1.AnchoredDyadicField.indicator_start",
+        "PaperP1.AnchoredDyadicField.indicator_exact",
+        "PaperP1.AnchoredPrivateField.rate_pos",
+        "PaperP1.AnchoredPrivateField.indicator_value",
+        "PaperP1.AnchoredPrivateField.force_hits",
+        "PaperP1.AnchoredPrivateField.indicator_marginal",
+        "PaperP1.AnchoredPrivateField.weighted_palm",
+        "PaperP1.AnchoredPrivateField.total_marginal",
+        "PaperP1.AnchoredPrivateField.cost_diagonal_decomposition",
+        "PaperP1.AnchoredPrivateField.expected_change_clean",
+        "PaperP1.AnchoredPrivateField.clean_weight",
+        "PaperP1.AnchoredPrivateField.selected_pairs_offsite_lower",
+        "PaperP1.AnchoredPrivateField.selected_pairs_cost_lower",
+        "PaperP1.AnchoredDyadicField.retainedBoundaries",
+        "PaperP1.AnchoredPrivateField.Data",
+        "PaperP1.AnchoredPrivateField.force",
+        "PaperP1.AnchoredPrivateField.indicator",
+        "PaperP1.AnchoredPrivateField.rate",
+        "PaperP1.AnchoredPrivateField.cost",
+        "PaperP1.AnchoredPrivateField.offsite"
+      ],
+      "proposed_revision": "Define the whole original retained anchored field and identify its exact event indicators before summing costs. Keep the offsite cost separate from the diagonal. State the clean-pair contribution and the uniform retained-mass loss explicitly, without requiring fairness of the preserved anchor bit.",
+      "impact": "Provides the actual arbitrary-anchor field, exact finite offsite-cost criterion and quantitative population restoration for T19.17. The ordinary smooth short-interval input, small source-pivot selection, arithmetic aggregation and final obstruction remain open; numbered coverage is unchanged.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14795 jobs); direct axiom audit passed for 12687 declarations using only propext, Classical.choice and Quot.sound; all 11634 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.14 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
