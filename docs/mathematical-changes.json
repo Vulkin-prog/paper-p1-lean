@@ -17638,6 +17638,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "d6a8ea0bc728669947c80c7b0458408b49227ffc"
+    },
+    {
+      "id": "P1-MATH-0311",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:asymmetric",
+        "number": "T1.10",
+        "page": 14,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 811,
+        "statement_sha256": "e176fe0574fc119242f3c523853be4fdc4ff53b0366327c5f6387f1af29c802a"
+      },
+      "original_assumption": "The sharp31/24 support estimate remains uniform for the actual comparable and expanded source intervals and arbitrary old selected subsets used by the asymmetric weighted profile.",
+      "finding": "Every translated population satisfies the sharp comparable counting hypotheses, and exact finite embeddings transport its cardinality to both the dyadic and fixed expanded old-source ranges with all scale constants explicitly absorbed.",
+      "proposed_revision": "Apply the sharp comparable translated theorem before the finite support embeddings, verify the constructed lower endpoint and every logarithmic/radius hypothesis, and budget the fixed range distortion before weighted assembly.",
+      "impact": "Closes sharp31/24 support on the actual dyadic, comparable and fixed expanded source populations. Corrected weighted-profile assembly remains open; the disproved literal T1.10 and numbered coverage are unchanged.",
+      "evidence": [
+        "PaperP1.SharpAsymmetricSparseSupport.uniform_count",
+        "PaperP1.SharpComparableTranslatedKernelCounts.two_uniform_budget",
+        "PaperP1.SharpComparableTruncatedSupportCount.uniform_count",
+        "PaperP1.SharpExpandedAsymmetricSparseSupport.uniform_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15507 jobs); direct axiom audit passed for 14062 declarations using only propext, Classical.choice and Quot.sound; all 13311 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.74 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

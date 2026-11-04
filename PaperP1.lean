@@ -3467,3 +3467,7 @@ public import PaperP1.Asymptotics.TwoSmallKernelBlockCount
 public import PaperP1.Asymptotics.FixedWidthTwoSmallKernel
 public import PaperP1.Asymptotics.SharpTranslatedKernelCounts
 public import PaperP1.Asymptotics.SharpTruncatedAsymmetricSupportCount
+public import PaperP1.Asymptotics.SharpAsymmetricSparseSupport
+public import PaperP1.Asymptotics.SharpComparableTranslatedKernelCounts
+public import PaperP1.Asymptotics.SharpComparableTruncatedSupportCount
+public import PaperP1.Asymptotics.SharpExpandedAsymmetricSparseSupport
