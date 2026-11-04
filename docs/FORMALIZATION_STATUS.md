@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records266 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records267 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13813 audited theorem/lemma declarations**. This
+- The project currently has **13816 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23627,3 +23627,26 @@ UniformVerticalLatticeFamily constructs actual functions A(q),B(q),L0(q),L1(q), 
 P1-MATH-0267 closes the complete actual second-lattice coordinate/side-sum/effective-scale assembly. The first- and second-orientation joint packaging, negative auxiliary-chart flip, geometric local curve counts, final rounded-scale loss absorption and primitive scale assembly remain open. The signed coordinate data uses the original d/e chart and does not identify it with reversed negative auxiliary intervals. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are266 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15317 jobs); direct axiom audit passed for 13813 declarations using only propext, Classical.choice and Quot.sound; all 13021 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.51 GiB.
+
+
+## Simultaneous actual source lattice families and both complete side sums
+
+BOTH actual source lattice families now exist simultaneously for one source box and one determinant scale, with their full coordinate data and complete side sums. The first family is chosen once per original interval index k; the second is chosen once per actual quadratic grid index floor(k^2/M). The choices precede the population and the finite interval set.
+
+HorizontalGridCoordinateData records the exact radius2 side formulas, actual integer inverse matrices, determinant1, polynomial entry heights, shortest first column, side order/product, upper/lower side controls and coordinate bounds for every original dyadic integer pair with the specified floor index. Its uniform existence follows from the actual source coordinate bounds and the already proved source interval construction.
+
+UniformHorizontalLatticeFamily constructs one actual family of those bases and proves its complete sum
+
+  sum L0(k) <=60*N^epsilon*sqrt(D*E*M)+32*E+8*D.
+
+It discharges the primitive-vector and coordinate-height premises using the SAME actual bases whose sides bound the point coordinates. TwoSourceLatticeFamilies then constructs BOTH this family and the complete actual vertical family together. It chooses kappa0,kappa1,N0 BEFORE N, M and all moving source data. For M>=32 and2M<=N, both side sums hold for EVERY SAME finite original index set with M/4<=k<=2M, while all horizontal and vertical coordinate data remain available for these SAME constructed functions.
+
+The vertical sum remains the explicit original-scale bound
+
+  (512*R*C/rho)*N^epsilon*(sqrt(U*V*M)+U+V), R=2*(49+16/rho).
+
+No integer basis, inverse, shortest vector, coordinate height, side weight or weighted counting estimate is assumed. In particular, the coordinates used in the algebraic reduction can now be chosen with the simultaneous arithmetic sums already proved for them.
+
+P1-MATH-0268 closes the joint actual two-orientation lattice-family construction and side summation. The instantiation at the final actual rounded determinant scale, negative auxiliary-chart flip, geometric local curve counts, rounded-scale loss absorption and primitive scale assembly remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are267 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15323 jobs); direct axiom audit passed for 13816 declarations using only propext, Classical.choice and Quot.sound; all 13025 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.49 GiB.

@@ -3378,3 +3378,6 @@ public import PaperP1.Asymptotics.UniformVerticalGridCoordinates
 public import PaperP1.Asymptotics.EffectiveVerticalSideSum
 public import PaperP1.Asymptotics.UniformVerticalLatticeFamily
 public import PaperP1.Asymptotics.VerticalGridCoordinateData
+public import PaperP1.Asymptotics.HorizontalGridCoordinateData
+public import PaperP1.Asymptotics.TwoSourceLatticeFamilies
+public import PaperP1.Asymptotics.UniformHorizontalLatticeFamily

@@ -7331,6 +7331,7 @@ import PaperP1
 #print axioms PaperP1.HomogeneousSeedPropagation.uniform_nominal_mass
 #print axioms PaperP1.HomogeneousSeedPropagation.uniform_regular_mass
 #print axioms PaperP1.HomogeneousSharedInteriorTriples.uniform_mass
+#print axioms PaperP1.HorizontalGridCoordinateData.uniform_data
 #print axioms PaperP1.IncompatibleConnectedActivityUnderInputs.uniform_range
 #print axioms PaperP1.IncompatiblePairActivityAsymptotic.uniform_activity
 #print axioms PaperP1.IncompatiblePairActivityAsymptotic.uniform_signed_absolute_gap
@@ -8663,6 +8664,7 @@ import PaperP1
 #print axioms PaperP1.TwoSmallKernelWindows.admissible_subset
 #print axioms PaperP1.TwoSmallKernelWindows.uniform_lower
 #print axioms PaperP1.TwoSmallKernelWindows.critical_lower
+#print axioms PaperP1.TwoSourceLatticeFamilies.uniform_two_families
 #print axioms PaperP1.TwoTargetCoefficientEnumeration.uniform_enumeration
 #print axioms PaperP1.TwoTargetDenseMass.uniform_mass
 #print axioms PaperP1.TwoTargetDensePairTheorem.article_15_2_dense_pair
@@ -8721,6 +8723,7 @@ import PaperP1
 #print axioms PaperP1.UniformGeometricSystemsUnderInputs.companion_T1_7_systems
 #print axioms PaperP1.UniformGraphCardinalityTail.uniform_tail
 #print axioms PaperP1.UniformGraphExponentTail.uniform_tail
+#print axioms PaperP1.UniformHorizontalLatticeFamily.uniform_family_sum
 #print axioms PaperP1.UniformIndependentDeficit.finite_bound
 #print axioms PaperP1.UniformIndependentDeficit.uniform_bound
 #print axioms PaperP1.UniformIndependentExposureBudget.uniform_row_constant
