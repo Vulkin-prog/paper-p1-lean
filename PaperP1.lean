@@ -3158,3 +3158,5 @@ public import PaperP1.Asymptotics.RandomizedPrivateClassObstructionUnderOrdinary
 public import PaperP1.Model.PrivatePrimeForcingUniqueness
 public import PaperP1.Model.RandomizedPrivateForcingBoundaryPairs
 public import PaperP1.Model.RandomizedPrivateForcingClass
+public import PaperP1.Asymptotics.UniversalPrivateObstructionArbitraryAuxiliary
+public import PaperP1.Model.PrivateForcingMeasureObservation

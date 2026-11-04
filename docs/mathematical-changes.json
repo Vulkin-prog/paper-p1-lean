@@ -13013,6 +13013,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "5fa11d58aa1093a5c9dfca72d9accc71fa0affca"
+    },
+    {
+      "id": "P1-MATH-0195",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The randomized obstruction in T19.17 covers every measurable source-word-oriented map changing only its indicated private pivots, with arbitrary independent auxiliary randomness.",
+      "finding": "A finite joint observation of orientation decisions and all prime outputs preserves the original arbitrary forcing pointwise at every actual auxiliary draw and its entire actual integral offsite cost. The observed map is completed canonically on full-good sources at unused table values, so it satisfies the universal finite-law physical agreement everywhere. The actual randomized half-factor obstruction follows for every arbitrary auxiliary measure and every measurable forcing in the literal private-pivot class under the independent ordinary source census.",
+      "proposed_revision": "Use the joint finite observation of orientation and original prime outputs to justify the general auxiliary-space and universal-map quantifiers. Explain the completion at unused table values and the exact actual-cost identity. Keep the ordinary smooth census as a separate analytic input.",
+      "impact": "Completes the universal arbitrary-auxiliary scope of the randomized actual-cost lower bound in T19.17. The ordinary census and final printed-parameter specialization remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.UniversalPrivateObstructionArbitraryAuxiliary.randomized_under_census",
+        "PaperP1.PrivateForcingMeasureObservation.observed_agrees",
+        "PaperP1.PrivateForcingMeasureObservation.encode_measurable",
+        "PaperP1.PrivateForcingMeasureObservation.agrees_of_prescription",
+        "PaperP1.PrivateForcingMeasureObservation.primeForce_encode",
+        "PaperP1.PrivateForcingMeasureObservation.prime_output_encode",
+        "PaperP1.PrivateForcingMeasureObservation.prime_observable_expectation",
+        "PaperP1.PrivateForcingMeasureObservation.offsite_observation",
+        "PaperP1.PrivateForcingMeasureObservation.Index",
+        "PaperP1.PrivateForcingMeasureObservation.Observation",
+        "PaperP1.PrivateForcingMeasureObservation.observedOrientation",
+        "PaperP1.PrivateForcingMeasureObservation.observedForce",
+        "PaperP1.PrivateForcingMeasureObservation.decisions",
+        "PaperP1.PrivateForcingMeasureObservation.encode",
+        "PaperP1.PrivateForcingMeasureObservation.law",
+        "PaperP1.PrivateForcingMeasureObservation.offsite"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14881 jobs); direct axiom audit passed for 12836 declarations using only propext, Classical.choice and Quot.sound; all 11830 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.92 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

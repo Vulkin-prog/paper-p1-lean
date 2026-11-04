@@ -7865,6 +7865,7 @@ import PaperP1
 #print axioms PaperP1.UniformSubpolynomialPower.bound
 #print axioms PaperP1.UnitChannelPairWeights.uniform_joint
 #print axioms PaperP1.UnitChannelPairWeights.uniform_coefficient
+#print axioms PaperP1.UniversalPrivateObstructionArbitraryAuxiliary.randomized_under_census
 #print axioms PaperP1.UnorderedSeedMassPropagation.uniform_mass
 #print axioms PaperP1.ValueHeightHalfCount.article_10_1
 #print axioms PaperP1.ValueHeightHalfCount.uniform_logarithmic_count
@@ -10608,6 +10609,13 @@ import PaperP1
 #print axioms PaperP1.PrivateChannelSources.orientation_disjoint
 #print axioms PaperP1.PrivateChannelSources.channel_mass_twice_forward
 #print axioms PaperP1.PrivateChannelSources.forward_mass_formula
+#print axioms PaperP1.PrivateForcingMeasureObservation.observed_agrees
+#print axioms PaperP1.PrivateForcingMeasureObservation.encode_measurable
+#print axioms PaperP1.PrivateForcingMeasureObservation.agrees_of_prescription
+#print axioms PaperP1.PrivateForcingMeasureObservation.primeForce_encode
+#print axioms PaperP1.PrivateForcingMeasureObservation.prime_output_encode
+#print axioms PaperP1.PrivateForcingMeasureObservation.prime_observable_expectation
+#print axioms PaperP1.PrivateForcingMeasureObservation.offsite_observation
 #print axioms PaperP1.PrivateHardConditionalForcing.smallTrace_unchanged
 #print axioms PaperP1.PrivateHardConditionalForcing.weighted_conditional_identity
 #print axioms PaperP1.PrivateHardConditionalForcing.word_small_event_probability
