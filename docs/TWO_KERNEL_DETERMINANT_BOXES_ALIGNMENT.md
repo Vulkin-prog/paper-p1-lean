@@ -1,0 +1,13 @@
+# Actual canonical determinant boxes and uniform seven-twelfths exponent optimization
+
+Source: companion T1.4 and T1.5, companion_sections/arithmetic_appendix.tex:139 and:360, their canonical dyadic reduction, coefficient-scale ledger and two-exponent optimization. Original source hashes remain preserved.
+
+The remaining determinant route in companion T1.4 and T1.5 now has a literal finite canonical box reduction and an exact robust optimization of its two exponents. These are preparatory results; neither determinant solution counts nor the sharp two-small-kernel upper bound are assumed or counted as proved.
+
+DeterminantTwoKernelExponents defines the two source exponent polynomials exactly. Their minimum is bounded by w/3+w^2/4 for every real z and 0<=w<=4/3, with equality at z=2w/3. This gives the exact7/12 bound for w<=1. The perturbation 0<=w<=1+eta with0<=eta<=1/3 gives7/12+eta, and the corresponding real-power inequality is proved. The argument therefore tolerates uniform logarithmic scale errors without a hidden moving-parameter compactness claim.
+
+TwoKernelDeterminantBoxes constructs the actual canonical tuple of two square parts and two individual large odd kernels. The two small-prime parts are retained separately as c1,c2. Their exact source equation is c1*d^2*u+h=c2*e^2*v, and the canonical tuple is injective on every fixed first smooth-part fibre. Every positive bounded coordinate belongs to an explicitly indexed dyadic interval. The full finite family has exactly (Nat.log2(X)+1)^4 boxes, and the actual source cardinality is bounded by the sum of their literal equation-solution cardinalities.
+
+TwoKernelDeterminantScale restricts the cover to boxes actually occupied by a canonical source. No unoccupied box must satisfy a source-height hypothesis. Every occupied box retains the exact coefficient scales c1*D^2*U and c2*E^2*V, within a uniform factor8 of the actual two values. The square scales satisfy D^2<=n and E^2<=n+h, and U,V lie below the original individual large kernels. No coefficient ratio or coefficient-dependent comparison constant is introduced.
+
+P1-MATH-0232 records the actual box cover, uniform scale transport and robust exponent optimization. The determinant auxiliary extraction, general local curve cases and short-vector sums remain unfinished, so T1.4 and T1.5 stay in progress. The unconditional two-small-kernel upper exponent2/3 and its matching lower range remain unchanged. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are231 improvements and one statement-scope correction. No new external input, axiom, additional Paper C code port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.

@@ -3270,3 +3270,6 @@ public import PaperP1.Analysis.ReciprocalOddPivotTripleScale
 public import PaperP1.Analysis.SaddleLogPrefactors
 public import PaperP1.Asymptotics.SignedSaddleCostTheorem
 public import PaperP1.Asymptotics.SignedSaddleCostUpper
+public import PaperP1.Analysis.DeterminantTwoKernelExponents
+public import PaperP1.Arithmetic.TwoKernelDeterminantBoxes
+public import PaperP1.Arithmetic.TwoKernelDeterminantScale

@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records230 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records231 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13324 audited theorem/lemma declarations**. This
+- The project currently has **13340 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22900,3 +22900,18 @@ The exact logarithmic error bound is proved. For EVERY eventually admissible cri
 P1-MATH-0231 records the complete conditional assembly and the dependency distinction between its two directions. T19.16 advances from in_progress to conditional after the full pinned-compiler checks and direct axiom audit pass. Coverage becomes 89 proved and 72 conditional out of 167: 161 complete and six incomplete numbered results. There are 230 improvements and one statement-scope correction. The remaining incomplete results are main 13.4 and companion T1.4, T1.5, T1.10, T1.13 and T5.1. Neither document is fully formalized; many conditional results retain unformalized ordinary inputs. No additional external input, axiom, Paper C code port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15101 jobs); direct axiom audit passed for 13324 declarations using only propext, Classical.choice and Quot.sound; all 12423 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.18 GiB.
+
+
+## Actual canonical determinant boxes and uniform seven-twelfths exponent optimization
+
+The remaining determinant route in companion T1.4 and T1.5 now has a literal finite canonical box reduction and an exact robust optimization of its two exponents. These are preparatory results; neither determinant solution counts nor the sharp two-small-kernel upper bound are assumed or counted as proved.
+
+DeterminantTwoKernelExponents defines the two source exponent polynomials exactly. Their minimum is bounded by w/3+w^2/4 for every real z and 0<=w<=4/3, with equality at z=2w/3. This gives the exact7/12 bound for w<=1. The perturbation 0<=w<=1+eta with0<=eta<=1/3 gives7/12+eta, and the corresponding real-power inequality is proved. The argument therefore tolerates uniform logarithmic scale errors without a hidden moving-parameter compactness claim.
+
+TwoKernelDeterminantBoxes constructs the actual canonical tuple of two square parts and two individual large odd kernels. The two small-prime parts are retained separately as c1,c2. Their exact source equation is c1*d^2*u+h=c2*e^2*v, and the canonical tuple is injective on every fixed first smooth-part fibre. Every positive bounded coordinate belongs to an explicitly indexed dyadic interval. The full finite family has exactly (Nat.log2(X)+1)^4 boxes, and the actual source cardinality is bounded by the sum of their literal equation-solution cardinalities.
+
+TwoKernelDeterminantScale restricts the cover to boxes actually occupied by a canonical source. No unoccupied box must satisfy a source-height hypothesis. Every occupied box retains the exact coefficient scales c1*D^2*U and c2*E^2*V, within a uniform factor8 of the actual two values. The square scales satisfy D^2<=n and E^2<=n+h, and U,V lie below the original individual large kernels. No coefficient ratio or coefficient-dependent comparison constant is introduced.
+
+P1-MATH-0232 records the actual box cover, uniform scale transport and robust exponent optimization. The determinant auxiliary extraction, general local curve cases and short-vector sums remain unfinished, so T1.4 and T1.5 stay in progress. The unconditional two-small-kernel upper exponent2/3 and its matching lower range remain unchanged. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are231 improvements and one statement-scope correction. No new external input, axiom, additional Paper C code port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15107 jobs); direct axiom audit passed for 13340 declarations using only propext, Classical.choice and Quot.sound; all 12448 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.16 GiB.

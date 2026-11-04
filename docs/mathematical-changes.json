@@ -14621,6 +14621,57 @@
         "status": "not_integrated"
       },
       "validation_commit": "be920fb7534a301f1ad0362ee6a05870346e9d15"
+    },
+    {
+      "id": "P1-MATH-0232",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:twokernel",
+        "number": "T1.5",
+        "page": 9,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 360,
+        "statement_sha256": "bb1695001b6698be23b183ea4794053283d9baed656240adcaf51b682b72ff50"
+      },
+      "original_assumption": "The T1.5 proof partitions actual canonical data into determinant boxes, retains the separately varying smooth coefficients and optimizes the minimum of two determinant exponents at7/12.",
+      "finding": "The actual canonical tuples inject into literal occupied dyadic equation boxes with uniform factor8 coefficient scales. The exact two exponent polynomials have the stated maximum on a wider domain and a quantified perturbation bound.",
+      "proposed_revision": "Make the occupied-box population and its uniform coefficient comparisons explicit, and use the quantified exponent perturbation estimate when absorbing logarithmic scale errors.",
+      "impact": "Completes the canonical box reduction and exponent-optimization steps of T1.4/T1.5. It does not complete the determinant bound or increase numbered coverage.",
+      "evidence": [
+        "PaperP1.DeterminantTwoKernelExponents.at_crossing",
+        "PaperP1.DeterminantTwoKernelExponents.min_le_maximum",
+        "PaperP1.DeterminantTwoKernelExponents.maximum_monotone",
+        "PaperP1.DeterminantTwoKernelExponents.seven_twelfths",
+        "PaperP1.DeterminantTwoKernelExponents.perturbed_seven_twelfths",
+        "PaperP1.DeterminantTwoKernelExponents.min_power_bound",
+        "PaperP1.TwoKernelDeterminantBoxes.dyadic_cover",
+        "PaperP1.TwoKernelDeterminantBoxes.boxes_card",
+        "PaperP1.TwoKernelDeterminantBoxes.kernel_le_value",
+        "PaperP1.TwoKernelDeterminantBoxes.canonical_equation",
+        "PaperP1.TwoKernelDeterminantBoxes.canonicalCode_injective",
+        "PaperP1.TwoKernelDeterminantBoxes.canonical_in_box",
+        "PaperP1.TwoKernelDeterminantBoxes.finite_cover",
+        "PaperP1.TwoKernelDeterminantScale.finite_cover_occupied",
+        "PaperP1.TwoKernelDeterminantScale.box_product_bounds",
+        "PaperP1.TwoKernelDeterminantScale.canonical_box_bounds",
+        "PaperP1.DeterminantTwoKernelExponents.first",
+        "PaperP1.DeterminantTwoKernelExponents.second",
+        "PaperP1.DeterminantTwoKernelExponents.maximum",
+        "PaperP1.TwoKernelDeterminantBoxes.Quad",
+        "PaperP1.TwoKernelDeterminantBoxes.indices",
+        "PaperP1.TwoKernelDeterminantBoxes.boxes",
+        "PaperP1.TwoKernelDeterminantBoxes.solutions",
+        "PaperP1.TwoKernelDeterminantBoxes.canonicalCode",
+        "PaperP1.TwoKernelDeterminantScale.occupied"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15107 jobs); direct axiom audit passed for 13340 declarations using only propext, Classical.choice and Quot.sound; all 12448 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.16 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
