@@ -14719,6 +14719,56 @@
         "status": "not_integrated"
       },
       "validation_commit": "b88bb746f879cf41acad49d4063f94973d1ca1a1"
+    },
+    {
+      "id": "P1-MATH-0234",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "T1.4 requires uniform coefficient heights after primitive reduction, a relative vertical error O(|h|/N) with no coefficient-ratio cost, and a uniform logarithmic determinant scale.",
+      "finding": "All three reductions are exact: unchanged coefficients lie below the reduced height, beta=(h/n)*(1+alpha)^2, and logShape has an explicit9/16 bound with only the fixed box-comparison correction.",
+      "proposed_revision": "State the exact primitive coefficient-height transfer and relative-error identity, and replace the informal scale o(1) by the explicit fixed-comparison factor before choosing auxiliary degrees.",
+      "impact": "Discharges coefficient-height and chart-normalization obligations in the moving-coefficient determinant argument. It does not supply the remaining determinant vanishing or point-count theorem and adds no numbered coverage.",
+      "evidence": [
+        "PaperP1.DeterminantLogScale.denominator_cost",
+        "PaperP1.DeterminantLogScale.product_identity",
+        "PaperP1.DeterminantLogScale.ideal_identity",
+        "PaperP1.DeterminantLogScale.log_parameter_upper",
+        "PaperP1.DeterminantLogScale.quadratic_shape_bound",
+        "PaperP1.DeterminantLogScale.shape_bound",
+        "PaperP1.DeterminantRelativeChart.source_pos",
+        "PaperP1.DeterminantRelativeChart.exact_chart",
+        "PaperP1.DeterminantRelativeChart.error_eq_relative_source",
+        "PaperP1.DeterminantRelativeChart.relative_square_bound",
+        "PaperP1.DeterminantRelativeChart.alpha_le_one",
+        "PaperP1.DeterminantRelativeChart.error_bound",
+        "PaperP1.DeterminantRelativeChart.error_bound_at_scale",
+        "PaperP1.PrimitiveDeterminantHeights.left_quotient",
+        "PaperP1.PrimitiveDeterminantHeights.right_quotient",
+        "PaperP1.PrimitiveDeterminantHeights.left_coefficient_bound",
+        "PaperP1.PrimitiveDeterminantHeights.right_coefficient_bound",
+        "PaperP1.PrimitiveDeterminantHeights.left_height_transfer",
+        "PaperP1.PrimitiveDeterminantHeights.right_height_transfer",
+        "PaperP1.DeterminantLogScale.logShape",
+        "PaperP1.DeterminantRelativeChart.alpha",
+        "PaperP1.DeterminantRelativeChart.center",
+        "PaperP1.DeterminantRelativeChart.source",
+        "PaperP1.DeterminantRelativeChart.error"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15117 jobs); direct axiom audit passed for 13375 declarations using only propext, Classical.choice and Quot.sound; all 12491 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.13 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

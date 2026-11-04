@@ -16169,3 +16169,22 @@ DeterminantEnumerationBudget proves the exact dyadic index bound, a fourth-power
 P1-MATH-0233 records this complete finite reduction and uniform choice budget. The determinant auxiliary extraction, remaining local curve counts and short-vector sums remain open, so T1.4 and T1.5 stay in progress. The cited fixed-coefficient result is not being substituted for the manuscript's moving-coefficient extension. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are232 improvements and one statement-scope correction. No new external input, axiom, Paper C code port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15111 jobs); direct axiom audit passed for 13356 declarations using only propext, Classical.choice and Quot.sound; all 12467 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.14 GiB.
+
+
+## Coefficient-uniform primitive heights, relative charts and determinant logarithmic scale
+
+Three coefficient-uniformity steps of companion T1.4 are now proved directly, including their transport through the actual primitive reduction. The determinant vanishing and final solution count remain unfinished.
+
+PrimitiveDeterminantHeights proves that dividing either original coefficient monomial by the actual gcd scale gives exactly the corresponding reduced monomial. Positivity of the reduced coordinates proves s*c_i is at most the original value. Consequently an original bound value<=C*N gives c_i<=C*(N/s), at the reduced height itself. The coefficients remain unchanged and need no coefficient-dependent or polylogarithmic height correction at this step.
+
+DeterminantRelativeChart proves the exact relative chart for c2*e^2*v=c1*d^2*u+h. Its relative error beta satisfies the exact identity beta=(h/n)*(1+alpha)^2, where n=c1*d^2*u. For |alpha|<=1 this gives |beta|<=4*|h|/n, and hence a bound at every fixed source-height comparison. There is no factor c1/c2 in the relative error. The argument includes signed shifts and keeps all required nonzero or positive denominators explicit.
+
+DeterminantLogScale proves the exact denominator-cost identity after the two relative column scalings. It derives the logarithmic relation for the actual two coefficient monomials, and the ideal-scale identity as a specialization. Actual upper comparisons c_i*D_i^2*U_i<=C*N and c1*c2>=1 yield a coefficient-uniform bound for log(UV). Completing a square gives the quantitative actual determinant-scale bound
+
+  logShape <= (9/16)*log(N)*(1+log(C)/log(N))^2.
+
+The fixed comparison error is retained explicitly, rather than replaced by an unspecified coefficient-dependent o(1). The nine-sixteenths exponent is an upper scale bound; it is not a proof that a determinant vanishes or that an auxiliary curve exists.
+
+P1-MATH-0234 records the exact height transport and relative/logarithmic normalization. T1.4 and T1.5 remain in progress for the auxiliary extraction, remaining local curve arguments and short-vector sums. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are233 improvements and one statement-scope correction. No new external input, axiom, Paper C code port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15117 jobs); direct axiom audit passed for 13375 declarations using only propext, Classical.choice and Quot.sound; all 12491 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.13 GiB.

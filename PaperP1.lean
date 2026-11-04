@@ -3275,3 +3275,6 @@ public import PaperP1.Arithmetic.TwoKernelDeterminantBoxes
 public import PaperP1.Arithmetic.TwoKernelDeterminantScale
 public import PaperP1.Arithmetic.DeterminantPrimitiveReduction
 public import PaperP1.Asymptotics.DeterminantEnumerationBudget
+public import PaperP1.Analysis.DeterminantLogScale
+public import PaperP1.Analysis.DeterminantRelativeChart
+public import PaperP1.Arithmetic.PrimitiveDeterminantHeights
