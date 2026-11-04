@@ -2744,3 +2744,12 @@ public import PaperP1.Probability.PositionalDeletionWeightedContraction
 public import PaperP1.Model.PositionalDeletedFields
 public import PaperP1.Asymptotics.PositionalDeletionTransferUnderInputs
 public import PaperP1.Probability.PositionalKernelCoupling
+public import PaperP1.Probability.PositionalAdditivePushforward
+public import PaperP1.Probability.PositionalScalarProjection
+public import PaperP1.Probability.PositionalPoissonObservables
+public import PaperP1.Probability.PositionalPoissonPairs
+public import PaperP1.Probability.PositionalPoissonAccidents
+public import PaperP1.Probability.PositionalBackgroundDeletion
+public import PaperP1.Model.GoodEdgePopulationBounds
+public import PaperP1.Asymptotics.GoodEdgeAccidentalMass
+public import PaperP1.Asymptotics.PositionalPoissonAccidentRate
