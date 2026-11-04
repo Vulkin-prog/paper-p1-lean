@@ -16854,6 +16854,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "47e30bd24a78af612ce0ec3ea5577a91e2b8b5a0"
+    },
+    {
+      "id": "P1-MATH-0287",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "Rational points on an irreducible rational auxiliary factor which is not geometrically integral lie in bounded-degree conjugate intersections, with a coefficient-independent bounded count.",
+      "finding": "The exact ordinary conjugate-intersection consequence is isolated as a separate unproved theorem argument. Its actual factor application discharges rational irreducibility, bounded degrees, primitive points and both chart denominators, yielding the conditional N^epsilon minimum-side bound.",
+      "proposed_revision": "Record the ordinary conjugate-intersection/Bezout consequence and its unformalized algebraic justification separately from Heath-Brown Lemma2. Apply it only after proving actual rational factor irreducibility and verifying the exact affine chart scope.",
+      "impact": "Closes the actual non-geometric local application conditionally on a second explicit ordinary input. Both ordinary proofs and final assembly remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.ActualNonGeometricFactorCount.uniform_count",
+        "PaperP1.ActualNonGeometricFactorCount.uniform_actual_count",
+        "PaperP1.ActualNonGeometricFactorCount.uniform_actual_minimum_count",
+        "PaperP1.NonGeometricBiformInput.Input"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15419 jobs); direct axiom audit passed for 13943 declarations using only propext, Classical.choice and Quot.sound; all 13175 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.14 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

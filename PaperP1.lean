@@ -3425,3 +3425,5 @@ public import PaperP1.Asymptotics.SourceLargeSidesHeight
 public import PaperP1.Diophantine.HeathBrownBiformInput
 public import PaperP1.Asymptotics.ActualGeometricFactorCount
 public import PaperP1.Asymptotics.ActualPositiveGeometricFactorCount
+public import PaperP1.Asymptotics.ActualNonGeometricFactorCount
+public import PaperP1.Diophantine.NonGeometricBiformInput

@@ -6164,6 +6164,9 @@ import PaperP1
 #print axioms PaperP1.ActualNominalReferenceComparison.uniform_upper
 #print axioms PaperP1.ActualNominalReferenceComparison.uniform_nonzero_bias_lower
 #print axioms PaperP1.ActualNominalReferenceComparison.uniform_two_sided
+#print axioms PaperP1.ActualNonGeometricFactorCount.uniform_count
+#print axioms PaperP1.ActualNonGeometricFactorCount.uniform_actual_count
+#print axioms PaperP1.ActualNonGeometricFactorCount.uniform_actual_minimum_count
 #print axioms PaperP1.ActualOtherLinearFactorCount.uniform_actual_second_linear_count
 #print axioms PaperP1.ActualPairPhaseUnderInputs.alpha_eq_cumulant
 #print axioms PaperP1.ActualPairPhaseUnderInputs.main_sum
