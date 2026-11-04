@@ -3316,3 +3316,8 @@ public import PaperP1.Arithmetic.DeterminantCoordinateFlip
 public import PaperP1.Arithmetic.DeterminantReversedClusters
 public import PaperP1.Arithmetic.DeterminantSignedBoxes
 public import PaperP1.Asymptotics.DeterminantSignedAuxiliary
+public import PaperP1.Algebra.IntegerBivariateFactorCover
+public import PaperP1.Arithmetic.IntegerFactorProjectiveCurve
+public import PaperP1.Asymptotics.DeterminantFactorCurveCover
+public import PaperP1.Asymptotics.DeterminantFactorHeight
+public import PaperP1.Asymptotics.DeterminantSignedFactorCover
