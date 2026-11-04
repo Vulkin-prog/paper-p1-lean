@@ -1638,6 +1638,13 @@ import PaperP1
 #print axioms PaperP1.RationalBivariateIrreducibility.map_naturality
 #print axioms PaperP1.RationalBivariateIrreducibility.nonconstant_of_degreeSum_pos
 #print axioms PaperP1.RationalBivariateIrreducibility.rational_irreducible
+#print axioms PaperP1.RationalCurveCriticalPoints.resultant_nonzero_of_not_dvd
+#print axioms PaperP1.RationalCurveCriticalPoints.specialization_nonzero
+#print axioms PaperP1.RationalCurveCriticalPoints.common_point
+#print axioms PaperP1.RationalCurveCriticalPoints.fibre_card
+#print axioms PaperP1.RationalCurveCriticalPoints.common_points_card
+#print axioms PaperP1.RationalCurveCriticalPoints.derivative_resultant_nonzero
+#print axioms PaperP1.RationalCurveCriticalPoints.critical_points_card
 #print axioms PaperP1.RationalGraphFieldTower.evaluation_polynomial
 #print axioms PaperP1.RationalGraphFieldTower.evaluation_quotient
 #print axioms PaperP1.RationalGraphFieldTower.map_top

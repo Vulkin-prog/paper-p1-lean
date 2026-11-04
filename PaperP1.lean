@@ -3476,3 +3476,4 @@ public import PaperP1.Asymptotics.SharpExpandedAsymmetricProfileUnderInputs
 public import PaperP1.Analysis.AdjacentSquarefreeBudget
 public import PaperP1.Arithmetic.AdjacentSquarefreeCount
 public import PaperP1.Asymptotics.ActualQuadraticComparisonCounterexample
+public import PaperP1.Algebra.RationalCurveCriticalPoints
