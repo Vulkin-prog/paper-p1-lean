@@ -3151,6 +3151,8 @@ import PaperP1
 #print axioms PaperP1.CRTSupportCover.cardinal_bound
 #print axioms PaperP1.CRTSupportCover.short_product_bound
 #print axioms PaperP1.CRTSupportCover.certificate_card
+#print axioms PaperP1.CanonicalInteriorSourceBox.witness_box
+#print axioms PaperP1.CanonicalInteriorSourceBox.solutions_population
 #print axioms PaperP1.CertificatePairs.mem_pairs
 #print axioms PaperP1.CertificatePairs.pair_data
 #print axioms PaperP1.CertificatePairs.cardinal_bound
@@ -6447,6 +6449,7 @@ import PaperP1
 #print axioms PaperP1.BoundedSecondMomentUnderBCN.seedConstant_gt_one
 #print axioms PaperP1.BoundedSecondMomentUnderBCN.uniform_bound
 #print axioms PaperP1.BoundedWidthDenseCount.uniform_count
+#print axioms PaperP1.CanonicalInteriorCount.uniform_fixed_coefficients
 #print axioms PaperP1.ChannelCompressedActivityBounds.data
 #print axioms PaperP1.ChannelCompressedActivityBounds.homogeneousWeight_nonneg
 #print axioms PaperP1.ChannelCompressedActivityBounds.mass_le_homogeneous

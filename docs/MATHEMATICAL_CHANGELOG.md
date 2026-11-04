@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**302 mathematical improvements and one statement-scope correction are confirmed.**
+**303 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23403,3 +23403,16 @@ The full costs are handled as well: the actual source monomials imply D,E<=sqrt(
 SevenTwelfthsSourceCount applies the actual full signed nonprimitive source theorem with half the final exponent and this complete-cost bound with the other half. Every literal source solution population in the admissible logarithmic/barrier regime therefore has cardinality at most (T+N^(7/12))*N^epsilon. No abstract assumed exponent bound or source count remains in this local application. T1.5 is still in progress: the actual canonical populations must still be split into edge and admissible regimes, and their smooth coefficients, dyadic boxes and window placements summed. Its lower bound was proved earlier. Coverage remains89 proved and73 conditional out of167 (162 completed). There are302 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15475 jobs); direct axiom audit passed for 14030 declarations using only propext, Classical.choice and Quot.sound; all 13275 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.87 GiB.
+
+
+## Actual canonical interior populations counted after summing every occupied dyadic box
+
+The sharp determinant-box count is now ACTUALLY APPLIED to the canonical two-kernel population at fixed smooth coefficients, and ALL its occupied dyadic boxes are summed. There is no assumed source Box or abstract local count in this application.
+
+CanonicalInteriorSourceBox takes an actual canonical point with n in the prescribed comparable range, fixed actual smooth parts, both actual kernels at most T, square-part product greater than4*sqrt(N), and kernel product greater than4*N^delta, where0<delta<=1/2. Its literal dyadic inequalities imply DE>=sqrt(N) and UV>=N^delta. Hence both logarithmic lower bounds and the source barrier N<=c1*c2*(DE)^2 follow from the point. The exact canonical decomposition and occupied-box monomial inequalities supply a valid source Box with fixed comparison constants rho=1/16 and C=4, unchanged integer coefficients and literal dyadic scales. The SAME witness also gives U,V<=T. A separate unconditional theorem proves that the full natural dyadic solution set satisfies its signed source-population predicate.
+
+CanonicalInteriorCount fixes one uniform sharp-count threshold before every moving coefficient, cutoff, shift and population. For each actually occupied box, its canonical witness constructs every source-box field and arithmetic prerequisite, and the completed sharp numerical theorem bounds the full dyadic solution set containing its canonical points. The actual canonical coding is injective at fixed smooth coefficients. Its proved occupied-box cover therefore bounds the original population by the sum of these full solution counts. The existing explicit subpolynomial bound on the number of dyadic boxes pays that sum with a separate half-exponent margin. The resulting estimate is (T+N^(7/12))*N^epsilon for the entire fixed-coefficient canonical interior population, under only the same two ordinary biform inputs.
+
+P1-MATH-0304 closes actual source-box construction, numerical instantiation and occupied-box summation in the interior regime. Summation over actual smooth coefficients, treatment of the two elementary edge populations and final window placement still remain forT1.5. Its lower bound is already proved. Coverage remains89 proved and73 conditional out of167 (162 completed). There are303 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15479 jobs); direct axiom audit passed for 14033 declarations using only propext, Classical.choice and Quot.sound; all 13278 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.85 GiB.

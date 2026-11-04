@@ -17417,6 +17417,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "42b5fe448210fa08a7c677ca3fd326285b317495"
+    },
+    {
+      "id": "P1-MATH-0304",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:twokernel",
+        "number": "T1.5",
+        "page": 9,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 360,
+        "statement_sha256": "bb1695001b6698be23b183ea4794053283d9baed656240adcaf51b682b72ff50"
+      },
+      "original_assumption": "Every occupied canonical interior dyadic box satisfies the coefficient-retaining determinant hypotheses, and summing those actual boxes preserves the sharp7/12 count uniformly.",
+      "finding": "A literal canonical witness supplies all source comparisons, logarithmic bounds, barrier, integer coefficients and kernel caps. The actual full dyadic solution population is then counted, and canonical injectivity plus the proved subpolynomial box budget gives the fixed-coefficient interior bound.",
+      "proposed_revision": "Derive every determinant-box hypothesis from an occupied canonical point before applying the source count, then sum the actual occupied cover with its own explicit exponent margin.",
+      "impact": "Closes the sharp fixed-coefficient canonical interior count, including all occupied boxes, under the existing two ordinary inputs. Smooth-part, edge-regime and window summation remain open forT1.5; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.CanonicalInteriorSourceBox.witness_box",
+        "PaperP1.CanonicalInteriorSourceBox.solutions_population",
+        "PaperP1.CanonicalInteriorCount.uniform_fixed_coefficients"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15479 jobs); direct axiom audit passed for 14033 declarations using only propext, Classical.choice and Quot.sound; all 13278 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.85 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
