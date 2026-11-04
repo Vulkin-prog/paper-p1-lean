@@ -2945,3 +2945,17 @@ public import PaperP1.Asymptotics.WideOneSeedTail
 public import PaperP1.Combinatorics.OneSeedWeights
 public import PaperP1.Model.OneBlockFullSupport
 public import PaperP1.Model.OneSeedWindowParticipation
+public import PaperP1.Asymptotics.HomogeneousAlignedTargetTripleProbability
+public import PaperP1.Asymptotics.HomogeneousChannelWeights
+public import PaperP1.Asymptotics.HomogeneousConnectedTripleMassUnderInputs
+public import PaperP1.Asymptotics.HomogeneousEnlargedPairProbability
+public import PaperP1.Asymptotics.HomogeneousEnlargedTripleMass
+public import PaperP1.Asymptotics.HomogeneousGoodPairExtensionsUnderInputs
+public import PaperP1.Asymptotics.HomogeneousNonalignedInteractionMass
+public import PaperP1.Asymptotics.HomogeneousPhysicalTargetTripleProbability
+public import PaperP1.Asymptotics.HomogeneousRankProbability
+public import PaperP1.Combinatorics.SingletonExtensionWeights
+public import PaperP1.Model.DependentPairCrossingConnected
+public import PaperP1.Model.HomogeneousBlockIntersection
+public import PaperP1.Model.HomogeneousCompressedCrossing
+public import PaperP1.Model.SeparatedHomogeneousMass

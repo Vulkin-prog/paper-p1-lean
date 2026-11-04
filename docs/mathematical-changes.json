@@ -11253,6 +11253,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "2ea928c383cc5c98b8875313b6941bcaa7bbc0da"
+    },
+    {
+      "id": "P1-MATH-0168",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:fixed-homogeneous-seeds",
+        "number": "T1.12",
+        "page": 15,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 921,
+        "statement_sha256": "5fce2ec24ccfa788f85b2c9a7b7918d032bb754e146f81d4f5c0a10402534d82"
+      },
+      "original_assumption": "The dependent-target clause of T1.12 uses the sharp asymmetric31/24 profile and states the channel3:4 rate5/4; affine incompatibility cannot be removed merely by comparing with the original run probabilities.",
+      "finding": "Actual homogeneous rank identities, the corrected coarse asymmetric4/3 profile and separated aligned-target ranks prove the stronger homogeneous dependent-target bound N^(-4/3+epsilon) in both2:3 and3:4 channels under the already recorded finite geometric properties. Neither the sharper31/24 profile nor Reuss7/12 is needed for this clause. The actual source-edge/target union fiber costs at most3. Literal separation gives the physical-overlap bound without a compatibility argument, so probability-zero original configurations remain included.",
+      "evidence": [
+        "PaperP1.HomogeneousBlockIntersection.exact",
+        "PaperP1.HomogeneousNonalignedInteractionMass.uniform_mass",
+        "PaperP1.HomogeneousEnlargedTripleMass.compressed_uniform_mass",
+        "PaperP1.DependentPairCrossingConnected.connected",
+        "PaperP1.SingletonExtensionWeights.weighted_bound",
+        "PaperP1.HomogeneousGoodPairExtensionsUnderInputs.uniform_nominal_mass",
+        "PaperP1.HomogeneousGoodPairExtensionsUnderInputs.companion_T1_12_channel23",
+        "PaperP1.HomogeneousGoodPairExtensionsUnderInputs.companion_T1_12_channel34"
+      ],
+      "proposed_revision": "For T1.12(2), use the actual zero-target rank formula, the corrected coarse4/3 asymmetric profile, literal separated aligned-target ranks and the finite multiplicity3 bound. State the improved4/3 exponent also for the3:4 channel. Keep the distinct two-edge clause and the main sharper41/30 activity problem separate.",
+      "impact": "Closes T1.12(2) conditionally on the existing geometric inputs and strengthens its3:4 exponent, without proving the still-open disjoint-two-good-edge clause or the sharp asymmetric profile.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14479 jobs); direct axiom audit passed for 11989 declarations using only propext, Classical.choice and Quot.sound; all 10706 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.55 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

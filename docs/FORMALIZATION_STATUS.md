@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic power and remaining sharp arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile and41/30 activity claims remain open. Coverage is88/167 unconditional and56 conditional. The project records166 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile and41/30 activity claims remain open. Coverage is88/167 unconditional and56 conditional. The project records167 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -120,7 +120,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **11950 audited theorem/lemma declarations**. This
+- The project currently has **11989 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -19520,3 +19520,66 @@ external input is introduced. Original manuscript bytes, compiler and
 dependency pins remain unchanged. Palomar remains a later milestone.
 
 Verified under Lean v4.36.0-rc2: full build passed (14451 jobs); direct axiom audit passed for 11950 declarations using only propext, Classical.choice and Quot.sound; all 10655 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.62 GiB.
+
+
+## Homogeneous dependent-target seeds
+
+CompanionT1.12(2) is now proved under the already recorded finite
+source/ordinary surface-cover and normalized curve-count properties.
+The actual sum is indexed by an unordered raw private good pair e and
+a fresh regular target z. Every original start is retained, all starts
+are literally pairwise separated, and the actual target intersection
+with the old source span has positive dimension. No affine compatibility
+filter is applied. The sum of the actual homogeneous probabilities equals
+the literal nominal weight sum W(e union{z}) on this regular population.
+
+HomogeneousBlockIntersection.exact proves the full homogeneous block
+identity from actual ranks, including intersecting source/target sets and
+incompatible original affine events. Its crossing upper bound is transported
+to the actual normalized compressed source block with no injectivity premise.
+HomogeneousChannelWeights bounds every actual fixed unit-source pair, even
+irregular or nonprivate sources; only the fresh target needs regularity
+when its nominal marginal is used in the nonaligned estimate.
+
+The corrected coarse asymmetric4/3 profile suffices for the nonaligned
+homogeneous mass N^(-4/3+epsilon) for every fixed b>=3. All original unit
+offset pairs and source multiplicities remain in the sums. Neither the
+sharp31/24 profile nor the Reuss7/12 two-small estimate is needed here.
+
+HomogeneousRankProbability retains the zero-target rank even when the
+original affine probability vanishes. Distinct aligned target slopes have
+point bound N^(-71/30+epsilon); repeated physical target slopes have
+N^(-5/2+epsilon) under literal separation, via physical-window overlap at
+most one. Exact contacts are included. Endpoint hosts have total homogeneous
+mass N^(-5/3+epsilon). Counting the actual existing geometric host sets gives
+aligned mass N^(-41/30+epsilon), also for finite source families and the
+actual compressed alignment convention. The restriction to separated
+windows is carried throughout the finite unions; no incompatible family
+is discarded because its original affine probability is zero.
+
+A positive crossing above a dependent pair is proved to be a primitive
+singleton extension of that pair and hence a connected triple. The finite
+SingletonExtensionWeights lemma proves that a fresh distinguished target
+has at most |T| reconstructions from its union T. The actual source-edge/
+target sum therefore costs at most3 times the homogeneous connected triple
+mass, with no omitted orientation or source-pair multiplicity.
+
+HomogeneousGoodPairExtensionsUnderInputs.uniform_nominal_mass proves the
+stronger N^(-4/3+epsilon) bound in BOTH channels2:3 and3:4. Its explicit
+companion_T1_12_channel23 and companion_T1_12_channel34 corollaries give the
+two printed exponents4/3 and5/4 for BOTH actual homogeneous probability and
+literal W mass. One threshold precedes every critical N,L and every private
+cutoff H. The result requires only the previously recorded geometric
+properties, no supplied probability estimate and no new literature input.
+P1-MATH-0168 records this removal of sharper arithmetic dependencies and
+the stronger3:4 dependent-target bound.
+
+T1.12 remains in_progress because clause(3), including two DISJOINT raw good
+edges, is still open. Its first clause was already proved under the existing
+geometry. Main14.1/14.3/14.4/14.6 retain their sharper41/30 obligations; the
+coarse nonaligned estimate here does not discharge them. Numbered coverage
+stays88/167 unconditional and56 conditional. There are167 improvements and
+one confirmed statement-scope correction. Compiler and dependency pins,
+original manuscript bytes and Palomar state are unchanged.
+
+Verified under Lean v4.36.0-rc2: full build passed (14479 jobs); direct axiom audit passed for 11989 declarations using only propext, Classical.choice and Quot.sound; all 10706 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.55 GiB.
