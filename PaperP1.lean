@@ -3202,3 +3202,4 @@ public import PaperP1.Arithmetic.ExactUnitGeometric
 public import PaperP1.Asymptotics.MacroscopicActualLeadingProfiles
 public import PaperP1.Asymptotics.MacroscopicActualProfiles
 public import PaperP1.Asymptotics.MacroscopicLeadingPairGeometry
+public import PaperP1.Asymptotics.OneTwoChannelPhase

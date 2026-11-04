@@ -13665,6 +13665,49 @@
         "status": "not_integrated"
       },
       "validation_commit": "f03108f84205ac57ef51a87c214faef96ad4e66e"
+    },
+    {
+      "id": "P1-MATH-0211",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "Companion T21.1 passes from its exact finite channel sums to leading equivalents with B parity for positive weights and L parity for signed weights, while the critical length is allowed to vary.",
+      "finding": "Both actual finite1:2 channel sums have proved uniform relative equivalents with their distinct moving B/L phase terms. A single threshold precedes every length and both actual residues; the result also holds uniformly for every critical length after the ambient threshold.",
+      "proposed_revision": "Derive each normalized finite-parity limit, then assemble the finite residue set before selecting the moving length. Keep the positive B=L+1 phase and signed L phase distinct in the explicit definitions and uniform conclusion.",
+      "impact": "Completes the finite-channel moving-parity equivalent step for T21.1. Transfer to the complete actual profiles, global rational-code alignment and dyadic positive assertions remain separate obligations.",
+      "evidence": [
+        "PaperP1.OneTwoChannelPhase.positiveMain_pos",
+        "PaperP1.OneTwoChannelPhase.signedMain_pos",
+        "PaperP1.OneTwoChannelPhase.positive_normalized_identity",
+        "PaperP1.OneTwoChannelPhase.tendsto_positive_normalized",
+        "PaperP1.OneTwoChannelPhase.tendsto_signed_normalized",
+        "PaperP1.OneTwoChannelPhase.positiveMain_eval",
+        "PaperP1.OneTwoChannelPhase.signedMain_eval",
+        "PaperP1.OneTwoChannelPhase.tendsto_positiveMain_normalized",
+        "PaperP1.OneTwoChannelPhase.tendsto_signedMain_normalized",
+        "PaperP1.OneTwoChannelPhase.ratio_of_normalized",
+        "PaperP1.OneTwoChannelPhase.tendsto_positive_ratio",
+        "PaperP1.OneTwoChannelPhase.tendsto_signed_ratio",
+        "PaperP1.OneTwoChannelPhase.uniform_ratio_lengths",
+        "PaperP1.OneTwoChannelPhase.uniform_relative_lengths",
+        "PaperP1.OneTwoChannelPhase.uniform_critical_relative",
+        "PaperP1.OneTwoChannelPhase.positiveMain",
+        "PaperP1.OneTwoChannelPhase.signedMain"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14967 jobs); direct axiom audit passed for 13013 declarations using only propext, Classical.choice and Quot.sound; all 12051 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.61 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
