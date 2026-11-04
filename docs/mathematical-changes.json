@@ -13366,6 +13366,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "30a0bdbf1dce82ef79e74ca9c704cf2187db3dbc"
+    },
+    {
+      "id": "P1-MATH-0204",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "The proof of companion T21.1 replaces fixed leading-channel full relation powers by their rational coincidence powers outside a square-root exceptional set, without writing the error on each actual finite subfamily.",
+      "finding": "The exact full/rational loss equality is proved for every private normalized pair, including zero units. The literal sum of absolute power differences over every actual macroscopic fixed-channel subfamily is at most M^(1/2+1/q+epsilon), uniformly in both coefficient orientations of fixed height between q and Q. The leading1:2 error is M^(1+epsilon). Positive total weight differences and same-Boolean affine weight differences are also bounded.",
+      "proposed_revision": "Insert the exact private-pair rank equality and its zero-unit case, then restrict the comparison to the actual nonprivate support before applying its square-root host bound. Distinguish same-phase weight comparison from the separate identification of actual and rational affine compatibility.",
+      "impact": "Discharges the actual leading fixed-channel rank-power comparison in the macroscopic part of T21.1. It does not complete the signed phase identification, channel translation asymptotic, leading equivalent or dyadic positive profile.",
+      "evidence": [
+        "PaperP1.PrivateNormalizedPairLoss.kernel_rank_zero",
+        "PaperP1.PrivateNormalizedPairLoss.loss_eq_units_nonempty",
+        "PaperP1.PrivateNormalizedPairLoss.loss_eq_units",
+        "PaperP1.PrivateNormalizedPairLoss.loss_eq_units_privateAbove",
+        "PaperP1.MacroscopicFixedChannelComparison.power_error_zero",
+        "PaperP1.MacroscopicFixedChannelComparison.affine_error_le",
+        "PaperP1.MacroscopicFixedChannelComparison.uniform_power_error",
+        "PaperP1.MacroscopicFixedChannelComparison.uniform_weight_errors",
+        "PaperP1.MacroscopicFixedChannelComparison.height_two",
+        "PaperP1.MacroscopicFixedChannelComparison.channel_swap",
+        "PaperP1.MacroscopicFixedChannelComparison.uniform_power_error_height",
+        "PaperP1.MacroscopicFixedChannelComparison.channelPairs"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14933 jobs); direct axiom audit passed for 12920 declarations using only propext, Classical.choice and Quot.sound; all 11936 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.73 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

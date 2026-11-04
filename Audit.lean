@@ -4350,6 +4350,10 @@ import PaperP1
 #print axioms PaperP1.PrivateEvenIntersection.intersection_rank
 #print axioms PaperP1.PrivateEvenIntersection.actual_intersection_rank
 #print axioms PaperP1.PrivateEvenIntersection.actual_pair_loss
+#print axioms PaperP1.PrivateNormalizedPairLoss.kernel_rank_zero
+#print axioms PaperP1.PrivateNormalizedPairLoss.loss_eq_units_nonempty
+#print axioms PaperP1.PrivateNormalizedPairLoss.loss_eq_units
+#print axioms PaperP1.PrivateNormalizedPairLoss.loss_eq_units_privateAbove
 #print axioms PaperP1.PrivateOffsetPrimeReceivers.values_ne
 #print axioms PaperP1.PrivateOffsetPrimeReceivers.values_dist
 #print axioms PaperP1.PrivateOffsetPrimeReceivers.not_dvd_other
@@ -6841,6 +6845,13 @@ import PaperP1
 #print axioms PaperP1.MacroscopicEnlargedAlignedRank.actual_intersection_bound
 #print axioms PaperP1.MacroscopicEnlargedAlignedResidual.row_rank_sublinear
 #print axioms PaperP1.MacroscopicEnlargedAlignedResidual.full_rank_sublinear
+#print axioms PaperP1.MacroscopicFixedChannelComparison.power_error_zero
+#print axioms PaperP1.MacroscopicFixedChannelComparison.affine_error_le
+#print axioms PaperP1.MacroscopicFixedChannelComparison.uniform_power_error
+#print axioms PaperP1.MacroscopicFixedChannelComparison.uniform_weight_errors
+#print axioms PaperP1.MacroscopicFixedChannelComparison.height_two
+#print axioms PaperP1.MacroscopicFixedChannelComparison.channel_swap
+#print axioms PaperP1.MacroscopicFixedChannelComparison.uniform_power_error_height
 #print axioms PaperP1.MacroscopicFixedHeightResidual.large_kernel_rate
 #print axioms PaperP1.MacroscopicFixedHeightResidual.full_kernel_rate
 #print axioms PaperP1.MacroscopicFixedHeightResidual.pair_loss_fixed_height
