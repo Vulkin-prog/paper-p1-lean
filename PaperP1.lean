@@ -3402,3 +3402,5 @@ public import PaperP1.Diophantine.SourceBihomogeneousEquation
 public import PaperP1.Algebra.RationalBivariateIrreducibility
 public import PaperP1.Algebra.RationalMultivariatePrime
 public import PaperP1.Asymptotics.RationalSourceCurveFactors
+public import PaperP1.Algebra.LinearBivariateCoefficients
+public import PaperP1.Diophantine.LinearBivariateResultant

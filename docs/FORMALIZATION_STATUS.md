@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records275 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records276 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13869 audited theorem/lemma declarations**. This
+- The project currently has **13878 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23791,3 +23791,18 @@ RationalSourceCurveFactors applies this theorem to EVERY actual factor in the co
 P1-MATH-0276 closes rational AFFINE irreducibility of the actual integer factors. Projective/absolute irreducibility, the geometric local point-count cases and final primitive reductions remain open. No stronger geometric property is inferred from this rational result, and no solution-population count is claimed. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are275 improvements and one statement-scope correction. Exactly TWO missing pinned Mathlib cache artifacts were fetched selectively for the localization/unit arguments; no full cache or dependency/version update was requested. The compiler and original manuscript sources remain unchanged. No external counting input or new axiom is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15369 jobs); direct axiom audit passed for 13869 declarations using only propext, Classical.choice and Quot.sound; all 13091 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.33 GiB.
+
+
+## Actual first-degree-one coefficient coprimality, full degree and nonzero resultant certificates
+
+For every ACTUAL integer irreducible factor of first bidegree1 and positive second degree, the literal leading/constant coefficient polynomials now have proved rational coprimality, exact degree control, coefficient-height bounds and TWO nonzero resultant certificates. None of these elimination prerequisites is supplied as a nondegeneracy premise.
+
+LinearBivariateCoefficients defines the exact coefficient polynomials by swapping the actual nested bivariate polynomial and taking coefficients1 and0. It proves a partial-degree bound from all row degrees, the exact maximum-row-degree formula for outer degree at most1, individual coefficient degree bounds and attainment of the full second degree. The literal integer coefficient heights are bounded by the original factor height.
+
+A nonconstant irreducible univariate polynomial over a domain is primitive. For a degree1 polynomial, its two coefficient divisibilities therefore force every common divisor to be a unit. Applying this argument AFTER the proved rational coefficient change gives actual coprimality over Q[T] for the two literal coefficient polynomials. No projective or absolute irreducibility hypothesis is needed in this first-degree-one case.
+
+LinearBivariateResultant combines that actual coprimality, full degree and degree bounds with the proved integer padded-resultant criterion. It proves that the literal padded resultant is nonzero, and the already proved reflected-resultant identity then gives a nonzero certificate for the other dehomogenization as well. The degrees used in both certificates are the ACTUAL second degree of the factor.
+
+P1-MATH-0277 closes the actual coefficient, full-degree and resultant nondegeneracy prerequisites for first-degree-one elimination. The exact projective-row reconstruction, numerical local first-degree-one count and its application to the actual source factor populations, the other geometric local cases and primitive reductions remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are276 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15373 jobs); direct axiom audit passed for 13878 declarations using only propext, Classical.choice and Quot.sound; all 13102 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.32 GiB.

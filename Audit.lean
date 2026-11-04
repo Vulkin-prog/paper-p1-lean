@@ -1324,6 +1324,13 @@ import PaperP1
 #print axioms PaperP1.IteratedPowerSeriesEquiv.toIterated_monomial
 #print axioms PaperP1.IteratedPowerSeriesEquiv.toIterated_mul
 #print axioms PaperP1.IteratedPowerSeriesEquiv.coefficient_fromIterated
+#print axioms PaperP1.LinearBivariateCoefficients.degreeX_le_of_coeff_bound
+#print axioms PaperP1.LinearBivariateCoefficients.degreeX_eq_max_coefficients
+#print axioms PaperP1.LinearBivariateCoefficients.linear_coefficients_relprime
+#print axioms PaperP1.LinearBivariateCoefficients.coefficient_degree_bounds
+#print axioms PaperP1.LinearBivariateCoefficients.coefficient_full_degree
+#print axioms PaperP1.LinearBivariateCoefficients.coefficients_coprime
+#print axioms PaperP1.LinearBivariateCoefficients.coefficient_height
 #print axioms PaperP1.LinearCombinationSupport.support_subset
 #print axioms PaperP1.LinearCombinationSupport.card_le
 #print axioms PaperP1.LinearHilbertGrowth.unique
@@ -9818,6 +9825,8 @@ import PaperP1
 #print axioms PaperP1.IntegralRationalGraphBound.denominator_dvd_resultant
 #print axioms PaperP1.IntegralRationalGraphBound.denominator_value_bound
 #print axioms PaperP1.IntegralRationalGraphBound.abscissa_bound
+#print axioms PaperP1.LinearBivariateResultant.actual_resultant_ne_zero
+#print axioms PaperP1.LinearBivariateResultant.reflected_actual_resultant_ne_zero
 #print axioms PaperP1.LinearKernelFibres.offset_bounds
 #print axioms PaperP1.LinearKernelFibres.linearKernel_pos
 #print axioms PaperP1.LinearKernelFibres.representation
