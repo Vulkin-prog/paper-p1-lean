@@ -2556,6 +2556,8 @@ import PaperP1
 #print axioms PaperP1.ReducedBinaryLatticeBasis.reduced_second_image
 #print axioms PaperP1.ReducedBinaryLatticeBasis.reduced_geometry
 #print axioms PaperP1.ReducedBinaryLatticeBasis.exists_reduced_basis
+#print axioms PaperP1.ReducedDeterminantCosts.pair_cost_inflation
+#print axioms PaperP1.ReducedDeterminantCosts.uniform_cost_comparison
 #print axioms PaperP1.ReducedDeterminantShape.uniform_exp_comparison
 #print axioms PaperP1.ReducedDyadicScales.enlarged_ge_one
 #print axioms PaperP1.ReducedDyadicScales.raw_le_enlarged
@@ -7967,6 +7969,7 @@ import PaperP1
 #print axioms PaperP1.OriginalParticipatingTail.uniform_split_bound
 #print axioms PaperP1.OriginalParticipatingTail.subcritical_parameters
 #print axioms PaperP1.OriginalParticipatingTail.subcritical_tail
+#print axioms PaperP1.OriginalScaleFamilyCount.uniform_count
 #print axioms PaperP1.OriginalWindowFamilyCounts.uniform_hosts
 #print axioms PaperP1.OriginalWindowFamilyMass.uniform_marginals
 #print axioms PaperP1.OriginalWindowFamilyMass.article_10_2

@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records295 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records296 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14002 audited theorem/lemma declarations**. This
+- The project currently has **14005 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24081,3 +24081,16 @@ For gcd reduction, every original Box scale is at least1 and each positive divis
 P1-MATH-0296 closes the reduced exponential-shape comparison. Comparison of both full determinant costs, summation of the finite gcd families, and the initial original-scale alignment recorded inP1-MATH-0294 remain open before T1.4 can be marked complete. The two ordinary input proofs used by the actual counts also remain open. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are295 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15447 jobs); direct axiom audit passed for 14002 declarations using only propext, Classical.choice and Quot.sound; all 13241 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.00 GiB.
+
+
+## Both complete determinant costs and actual family counts returned to the original source scales
+
+Both complete reduced determinant costs, including their linear terms, are now bounded by N^epsilon times their literal original source-box costs. The actual numerical count of every nonempty gcd family has consequently been transported to those original costs, under exactly the same two retained ordinary inputs.
+
+ReducedDeterminantCosts first proves a general fixed-scale inflation inequality. If the two new axes are at most K times their original nonnegative axes, and the exponential factor is at most R^2 times the original one with K>=0 and R>=1, then the new square-root-plus-axes cost is at most K*R times the original cost. This also records the K=2 case needed later for initial-scale normalization. For the actual gcd reductions K=1. The proved exponential comparison with exponent2*epsilon and the exact real-power identity provide R=N^epsilon. Both horizontal and vertical costs are handled explicitly.
+
+OriginalScaleFamilyCount combines the already proved count at the effective integer size with this cost comparison, assigning half of its error exponent to each. The effective integer size is at most N, and both reduced costs are nonnegative. Their minimum is therefore transported without replacing either cost by a larger unrelated bound. The conclusion is stated directly as the actual reduced-family cardinality bounded by N^epsilon times the minimum of the two ORIGINAL source-box costs, uniformly before all moving coefficients, populations, shifts and reduction divisors. No reduced cost or family-count estimate remains as a hypothesis.
+
+P1-MATH-0297 closes the return of every family count to the original source scales. Finite gcd-family summation and the initial original-scale alignment recorded inP1-MATH-0294 remain open. The current count is for a positive natural shift and the literal source barrier; the signed statement and any claimed weakened barrier must also be aligned before marking T1.4 complete. The two ordinary input proofs remain open. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are296 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15451 jobs); direct axiom audit passed for 14005 declarations using only propext, Classical.choice and Quot.sound; all 13244 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.98 GiB.
