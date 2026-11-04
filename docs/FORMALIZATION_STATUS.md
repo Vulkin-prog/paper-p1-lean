@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records213 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records214 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13053 audited theorem/lemma declarations**. This
+- The project currently has **13067 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22597,3 +22597,20 @@ The global rational equivalent is then obtained from the complete actual aligned
 P1-MATH-0214 records this complete global rational macroscopic assembly. T21.1 stays in progress solely for its dyadic positive R_rat/R_al assertions and their5/4 comparison error. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are213 improvements and one statement-scope correction. No external input, new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14981 jobs); direct axiom audit passed for 13053 declarations using only propext, Classical.choice and Quot.sound; all 12100 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.55 GiB.
+
+
+## Literal dyadic high, endpoint and separated height-one power sums
+
+The three actual error sectors for the dyadic positive assertion of T21.1 now have internal weighted bounds on their original ordered source masks.
+
+DyadicMacroscopicTransfer proves the exact inclusion[N,2N) into[ceil(sqrt(2N)),2N) for N>=2. The critical logarithmic band changes by exactly one, and any fixed factor from replacing N by2N is absorbed with an explicit positive exponent slack. This transfers the already proved actual macroscopic bounds without assuming a dyadic profile estimate.
+
+DyadicAlignedPairMasks defines literal ordered dyadic enlarged channels, all reduced heights through B^3, the separated aligned mask, leading2:3/3:2 mask and the1:2/2:1 endpoint mask. Both orientations and zero-unit pairs are retained. The whole high-channel mask has at most10*N*B^10 hosts. The forward1:2 channel is confined to explicit actual intervals around the two dyadic endpoints and has at most16*B^2 hosts. Its two-orientation separated endpoint mask has at most32*B^2 hosts.
+
+DyadicActualSectorPowers proves the literal sums of2^rho over these actual masks. Every fixed minimum height q has bound N^(1+1/q+epsilon). Thus all heights at least4 have the printed five-fourths error power. The endpoint mask has the stronger bound N^(1/2+epsilon), using the polynomial endpoint host count and actual height-two power bound. The separated height-one mask has bound N^(1+epsilon), by the proved zero-unit macroscopic estimate and exact interval transfer.
+
+All powers use the FULL actual pair loss, including local relations. Each positive weight2^rho-1 is consequently bounded by the same sums. The thresholds precede every moving critical length, every original pair and every reduced height through B^3. No nominal probability substitution, compatibility assumption or external analytic input is used.
+
+P1-MATH-0215 records these literal dyadic weighted error sectors. The leading2:3 channel comparison and translation main term, complete dyadic sector assembly, positive B-modulo-three equivalent and final R_rat/R_al comparison still remain. The complete macroscopic portion of T21.1 is already proved. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are214 improvements and one statement-scope correction. No new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14987 jobs); direct axiom audit passed for 13067 declarations using only propext, Classical.choice and Quot.sound; all 12120 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.53 GiB.

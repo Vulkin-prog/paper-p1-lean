@@ -13839,6 +13839,52 @@
         "status": "not_integrated"
       },
       "validation_commit": "dd740eee07e35d6c820366bfb7a6c8d1c20af393"
+    },
+    {
+      "id": "P1-MATH-0215",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "The dyadic part of companion T21.1 bounds height-one residuals by N^(1+o(1)), height-two endpoint mass by N^(1/2+o(1)), and all remaining reduced heights at least4 by N^(5/4+o(1)).",
+      "finding": "Literal ordered dyadic full-rank power sums have the internally proved bounds N^(1+epsilon) for separated height one, N^(1/2+epsilon) for both height-two endpoint orientations, and N^(1+1/q+epsilon) for every minimum height q. At q=4 this gives the printed5/4 high-sector power.",
+      "proposed_revision": "Record the exact dyadic-to-macroscopic inclusion and critical-band shift when reusing the residual theorem. State the actual endpoint host intervals and their32*B^2 two-orientation count before summing the full relation powers.",
+      "impact": "Discharges the three actual dyadic weighted error sectors in T21.1. The leading2:3 calculation, complete profile assembly and B-modulo-three equivalent remain open.",
+      "evidence": [
+        "PaperP1.DyadicAlignedPairMasks.channel_swap",
+        "PaperP1.DyadicAlignedPairMasks.channel_subset_macro",
+        "PaperP1.DyadicAlignedPairMasks.high_subset_macro",
+        "PaperP1.DyadicAlignedPairMasks.high_card",
+        "PaperP1.DyadicAlignedPairMasks.height_two_subset",
+        "PaperP1.DyadicAlignedPairMasks.height_two_card",
+        "PaperP1.DyadicAlignedPairMasks.boundary_card",
+        "PaperP1.DyadicActualSectorPowers.uniform_high",
+        "PaperP1.DyadicActualSectorPowers.high_height_four",
+        "PaperP1.DyadicActualSectorPowers.boundary",
+        "PaperP1.DyadicActualSectorPowers.height_one",
+        "PaperP1.DyadicMacroscopicTransfer.dyadic_subset",
+        "PaperP1.DyadicMacroscopicTransfer.critical_band",
+        "PaperP1.DyadicMacroscopicTransfer.double_power",
+        "PaperP1.DyadicAlignedPairMasks.channel",
+        "PaperP1.DyadicAlignedPairMasks.high",
+        "PaperP1.DyadicAlignedPairMasks.separated",
+        "PaperP1.DyadicAlignedPairMasks.aligned",
+        "PaperP1.DyadicAlignedPairMasks.leading",
+        "PaperP1.DyadicAlignedPairMasks.boundary"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14987 jobs); direct axiom audit passed for 13067 declarations using only propext, Classical.choice and Quot.sound; all 12120 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.53 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

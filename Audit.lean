@@ -3140,6 +3140,13 @@ import PaperP1
 #print axioms PaperP1.DivisorSubpolynomial.divisor_log_factor_le_scale_eventually
 #print axioms PaperP1.DivisorSubpolynomial.card_divisors_pow_le_polynomial_eventually
 #print axioms PaperP1.DivisorSubpolynomial.card_divisors_le_rpow_eventually
+#print axioms PaperP1.DyadicAlignedPairMasks.channel_swap
+#print axioms PaperP1.DyadicAlignedPairMasks.channel_subset_macro
+#print axioms PaperP1.DyadicAlignedPairMasks.high_subset_macro
+#print axioms PaperP1.DyadicAlignedPairMasks.high_card
+#print axioms PaperP1.DyadicAlignedPairMasks.height_two_subset
+#print axioms PaperP1.DyadicAlignedPairMasks.height_two_card
+#print axioms PaperP1.DyadicAlignedPairMasks.boundary_card
 #print axioms PaperP1.DyadicEndpointPairs.integer_interval_card
 #print axioms PaperP1.DyadicEndpointPairs.endpoint_filter_card
 #print axioms PaperP1.DyadicEndpointPairs.mem_sourcePairs
@@ -6171,6 +6178,13 @@ import PaperP1
 #print axioms PaperP1.DivisorAuxiliaryPolynomialUniform.choose_degree
 #print axioms PaperP1.DivisorAuxiliaryPolynomialUniform.uniform_height
 #print axioms PaperP1.DivisorAuxiliaryPolynomialUniform.uniform_polynomial
+#print axioms PaperP1.DyadicActualSectorPowers.uniform_high
+#print axioms PaperP1.DyadicActualSectorPowers.high_height_four
+#print axioms PaperP1.DyadicActualSectorPowers.boundary
+#print axioms PaperP1.DyadicActualSectorPowers.height_one
+#print axioms PaperP1.DyadicMacroscopicTransfer.dyadic_subset
+#print axioms PaperP1.DyadicMacroscopicTransfer.critical_band
+#print axioms PaperP1.DyadicMacroscopicTransfer.double_power
 #print axioms PaperP1.DyadicMatchingArithmetic.uniform_core
 #print axioms PaperP1.DyadicQuadraticBudgets.dyadic_bounds
 #print axioms PaperP1.DyadicQuadraticBudgets.mem_indices

@@ -3210,3 +3210,6 @@ public import PaperP1.Arithmetic.RationalUnitCode
 public import PaperP1.Arithmetic.RationalUnitCodeSupport
 public import PaperP1.Asymptotics.MacroscopicRationalCodeGeometry
 public import PaperP1.Asymptotics.MacroscopicRationalProfile
+public import PaperP1.Arithmetic.DyadicAlignedPairMasks
+public import PaperP1.Asymptotics.DyadicActualSectorPowers
+public import PaperP1.Asymptotics.DyadicMacroscopicTransfer
