@@ -7,7 +7,7 @@ Companion T1.5 is complete conditionally on exactly the same two ordinary biform
 
 Companion T1.4 is complete conditionally on exactly HeathBrownBiformInput.Input and NonGeometricBiformInput.Input. The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. Both ordinary input proofs remain open. The four incomplete numbered results are main13.4 and companionT1.10,T1.13,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and74 conditional (163/167 completed). The project records306 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and74 conditional (163/167 completed). The project records307 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -126,7 +126,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14047 audited theorem/lemma declarations**. This
+- The project currently has **14049 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24230,3 +24230,16 @@ TwoSmallKernelBlocks defines the literal finite set of centres whose arbitrary s
 P1-MATH-0307 closes sharp comparable-scale counting and the exact selected-block transport. The sharp count still needs to be applied to these actual offset-pair populations, their logarithmic placements summed, and the printed real constants/cutoffs aligned before markingT1.13 complete. Coverage remains89 proved and74 conditional out of167 (163 completed); four numbered obligations remain incomplete. There are306 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15491 jobs); direct axiom audit passed for 14047 declarations using only propext, Classical.choice and Quot.sound; all 13295 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.80 GiB.
+
+
+## Sharp actual two-small-kernel count after summing every selected-block offset pair
+
+The sharp comparable count is now ACTUALLY APPLIED to each literal ordered offset-pair population in arbitrary selected blocks, and all placements are summed. The conclusion counts the actual centres whose selected subset contains at least two distinct values with kernels at most T; no local block count or choice-dependent enumeration is assumed.
+
+TwoSmallKernelBlockCount first fixes the source-count threshold before all moving integer centre sets, offset pools, radii, prime cutoffs, selected subsets and kernel caps. For an ordered pair u<v in the actual offset pool, the literal finite source set is the image of offsetPairStarts under x |->(x+u).toNat. The proved fixed-pair injectivity preserves cardinality. The natural shift (v-u).toNat is positive and at most twice the actual radius, hence has the required logarithmic budget. Every point has both original kernel caps, and the exact translation identity transports the second kernel to n+h. The explicit comparable-height geometry supplies the source range. Thus every quantitative count prerequisite is discharged for THIS actual image population.
+
+The actual offset pool lies in a radius-R integer interval, so it has at most2*R+1 elements. For a logarithmic radius this is at most(2*D+1)*log(N) after one fixed threshold. Its squared cardinality bounds the number of ordered offset pairs and is uniformly subpolynomial. Separate half-exponent budgets pay the numerical count on each pair and their total number. The literal finite union therefore has cardinality at most (T+N^(7/12))*N^epsilon. The exact selected-subset inclusion proved inP1-MATH-0307 then yields the same bound for arbitrary actual selected blocks, uniformly in their selected sets.
+
+P1-MATH-0308 closes the actual sharp selected-block placement count under the existing two ordinary biform inputs. Its final application must still derive the comparable source heights from the printed centre and radius bounds and align all real constants, real prime cutoffs and power-cap consequences. Those geometric/parameter steps remain before markingT1.13 complete. Coverage remains89 proved and74 conditional out of167 (163 completed); four numbered obligations remain incomplete. There are307 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15493 jobs); direct axiom audit passed for 14049 declarations using only propext, Classical.choice and Quot.sound; all 13297 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.78 GiB.

@@ -17545,6 +17545,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "1ea7415775c010e20748a138abfa50270d8f58ee"
+    },
+    {
+      "id": "P1-MATH-0308",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:small-kernels",
+        "number": "T1.13",
+        "page": 17,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 1016,
+        "statement_sha256": "abfe0badc4580784052dd0b667c0f6e3fcb66cb7df81671a5a21b1c20132fb97"
+      },
+      "original_assumption": "The sharp comparable two-kernel theorem can be applied to actual selected-block offset populations and all logarithmic placements summed without losing the7/12 exponent.",
+      "finding": "Each offset pair produces an injective actual natural source population with exact positive shift and both kernel caps. Its radius controls the shift, its explicit height geometry controls the source range, and the squared logarithmic offset budget pays the complete finite union.",
+      "proposed_revision": "Apply the sharp theorem to each exact translated image, prove all shift and membership data from the ordered offsets, then sum the actual finite offset pool with an explicit exponent margin before restricting to selected subsets.",
+      "impact": "Closes the sharp actual selected-block placement count under the two retained ordinary inputs. Derivation of the printed geometry and final real-parameter/power-cap alignment remain open forT1.13; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.TwoSmallKernelBlockCount.logarithmic_blocks",
+        "PaperP1.TwoSmallKernelBlockCount.arbitrary_selected_blocks"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15493 jobs); direct axiom audit passed for 14049 declarations using only propext, Classical.choice and Quot.sound; all 13297 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.78 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

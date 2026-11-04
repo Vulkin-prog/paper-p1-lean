@@ -8837,6 +8837,8 @@ import PaperP1
 #print axioms PaperP1.TwoGoodPairMassUnderInputs.companion_T1_12_two_pairs_original
 #print axioms PaperP1.TwoProgressionSublinear.rank_sublinear
 #print axioms PaperP1.TwoProgressionSublinear.row_rank_sublinear
+#print axioms PaperP1.TwoSmallKernelBlockCount.logarithmic_blocks
+#print axioms PaperP1.TwoSmallKernelBlockCount.arbitrary_selected_blocks
 #print axioms PaperP1.TwoSmallKernelCount.dyadic_count
 #print axioms PaperP1.TwoSmallKernelCount.comparable_count
 #print axioms PaperP1.TwoSmallKernelCount.real_bounds_count
