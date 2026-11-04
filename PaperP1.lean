@@ -3354,3 +3354,6 @@ public import PaperP1.Asymptotics.UniformRelativeIntervalCoordinates
 public import PaperP1.Analysis.RelativeIntervalAxisBounds
 public import PaperP1.Analysis.RelativeIntervalShortVectors
 public import PaperP1.Arithmetic.PrimitiveBinaryColumns
+public import PaperP1.Arithmetic.IntegerRealIntervalCount
+public import PaperP1.Arithmetic.IntervalProductDivisorCount
+public import PaperP1.Asymptotics.RelativeIntervalNonAxisCount

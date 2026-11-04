@@ -3990,6 +3990,9 @@ import PaperP1
 #print axioms PaperP1.IntegerPairFactorCharts.rectangle_evaluation_clearing
 #print axioms PaperP1.IntegerPairFactorCharts.rectangle_zero_iff
 #print axioms PaperP1.IntegerPairFactorCharts.projective_zero_iff
+#print axioms PaperP1.IntegerRealIntervalCount.interval_card
+#print axioms PaperP1.IntegerRealIntervalCount.band_card
+#print axioms PaperP1.IntegerRealIntervalCount.strip_card
 #print axioms PaperP1.IntersectionExceptional.of_intersection
 #print axioms PaperP1.IntersectionExceptional.oldSpan_mono
 #print axioms PaperP1.IntersectionExceptional.effective_le_raw
@@ -4003,6 +4006,10 @@ import PaperP1
 #print axioms PaperP1.IntervalDivisibilityCount.count_bounds
 #print axioms PaperP1.IntervalDivisibilityCount.hits_inter
 #print axioms PaperP1.IntervalDivisibilityCount.union_bound
+#print axioms PaperP1.IntervalProductDivisorCount.product_divisor_mem
+#print axioms PaperP1.IntervalProductDivisorCount.finite_interval_count
+#print axioms PaperP1.IntervalProductDivisorCount.product_height
+#print axioms PaperP1.IntervalProductDivisorCount.uniform_interval_count
 #print axioms PaperP1.IntervalResidualKernel.mem_largeKernel_iff
 #print axioms PaperP1.IntervalResidualKernel.coefficient_zero
 #print axioms PaperP1.IntervalResidualKernel.restriction_injective
@@ -8180,6 +8187,7 @@ import PaperP1
 #print axioms PaperP1.RelativeBlockRelationsCount.zero_count
 #print axioms PaperP1.RelativeBlockRelationsCount.induction_step
 #print axioms PaperP1.RelativeBlockRelationsCount.uniform_count
+#print axioms PaperP1.RelativeIntervalNonAxisCount.uniform_nonaxis_intervals
 #print axioms PaperP1.RelativeOriginalWindowMass.uniform_mass
 #print axioms PaperP1.RelaxedSaturationDegrees.relaxed_neighborhood_bounds
 #print axioms PaperP1.RepeatedLeftDyadicRootHostCount.uniform_hosts
