@@ -11184,6 +11184,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "54f2b7b962b4d3c2a6177ed1b09e10e70da337d9"
+    },
+    {
+      "id": "P1-MATH-0166",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:independent-tail",
+        "number": "15.8",
+        "page": 44,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 461,
+        "statement_sha256": "26d84d57f8cb53436e7b79775ab6c877710277ee810b9a8dbf849a805d4c6e27"
+      },
+      "original_assumption": "The independent full-support tail mechanism is presented in a dyadic critical band, with the compressed variant justified by a statement that the same estimates apply after changing one block.",
+      "finding": "The entire actual certificate and marked saturation argument extends unconditionally to all N centres in the positive prefix [2,N+2), for every logarithmic width L+1<=D log N and arbitrary nonnegative weights bounded by M/N. No lower comparison of the centre with N or of the width with log N is needed. The factorial counting, actual odd-prime receiving alternatives, actual directed degrees and summed all-cardinality bound have been rebuilt for this population. This supplies an ambient interval large enough for fixed compressed blocks after rescaling, while their embedding and collision multiplicities remain separate obligations.",
+      "evidence": [
+        "PaperP1.PrefixModerateCertificateCount.main_7_2_finite",
+        "PaperP1.PrefixParticipatingWindowCertificates.coordinate_alternative",
+        "PaperP1.PrefixSaturationDegrees.uniform_degrees",
+        "PaperP1.PrefixModerateCertificateAsymptotic.weightedTotal_le_power_eventually",
+        "PaperP1.PrefixParticipatingTail.uniform_split_bound",
+        "PaperP1.PrefixParticipatingTail.subcritical_tail"
+      ],
+      "proposed_revision": "State the independent-tail mechanism for arbitrary positive-prefix centres and a fixed logarithmic upper width. Derive the original critical-band case by restriction. In the compressed application, explicitly prove the physical-space embedding and account for source/new-centre collisions and all independent weight multiplicities.",
+      "impact": "A stronger unconditional preparatory theorem is proved, without a new analytic or geometric input. The compressed clause of main15.8 remains open until its actual embedding and mass transfer are proved; numbered coverage is unchanged.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14431 jobs); direct axiom audit passed for 11927 declarations using only propext, Classical.choice and Quot.sound; all 10627 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.67 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -2921,3 +2921,17 @@ public import PaperP1.Asymptotics.ExactPoissonScaleUnderInputs
 public import PaperP1.Asymptotics.FixedPairPhaseUnderInputs
 public import PaperP1.Asymptotics.PoissonScaleRatesUnderInputs
 public import PaperP1.Probability.PoissonDistanceExpansion
+public import PaperP1.Arithmetic.PrefixModerateAnchors
+public import PaperP1.Arithmetic.PrefixModerateCertificateCount
+public import PaperP1.Arithmetic.PrefixModerateTupleCover
+public import PaperP1.Arithmetic.PrefixModerateWeightedSeries
+public import PaperP1.Arithmetic.PrefixParticipatingWindowCertificates
+public import PaperP1.Arithmetic.PrefixSaturationCounts
+public import PaperP1.Arithmetic.PrefixSaturationPrimes
+public import PaperP1.Asymptotics.PrefixMarkedWindowCount
+public import PaperP1.Asymptotics.PrefixModerateCertificateAsymptotic
+public import PaperP1.Asymptotics.PrefixParticipatingTail
+public import PaperP1.Asymptotics.PrefixSaturationDegrees
+public import PaperP1.Combinatorics.PrefixSaturationGraph
+public import PaperP1.Model.PrefixWindowCertificateFamilies
+public import PaperP1.Model.PrefixWindowCertificateMass
