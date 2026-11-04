@@ -3203,3 +3203,5 @@ public import PaperP1.Asymptotics.MacroscopicActualLeadingProfiles
 public import PaperP1.Asymptotics.MacroscopicActualProfiles
 public import PaperP1.Asymptotics.MacroscopicLeadingPairGeometry
 public import PaperP1.Asymptotics.OneTwoChannelPhase
+public import PaperP1.Asymptotics.MacroscopicActualProfileEquivalents
+public import PaperP1.Asymptotics.MacroscopicPhaseScale

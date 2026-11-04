@@ -6863,6 +6863,9 @@ import PaperP1
 #print axioms PaperP1.MacroscopicActualLeadingProfiles.doubled_sum_error
 #print axioms PaperP1.MacroscopicActualLeadingProfiles.uniform_comparison
 #print axioms PaperP1.MacroscopicActualLeadingProfiles.uniform_main_terms
+#print axioms PaperP1.MacroscopicActualProfileEquivalents.relative_transfer
+#print axioms PaperP1.MacroscopicActualProfileEquivalents.uniform_relative
+#print axioms PaperP1.MacroscopicActualProfileEquivalents.uniform_ratio
 #print axioms PaperP1.MacroscopicActualProfiles.uniform_main_terms
 #print axioms PaperP1.MacroscopicActualSignedMass.weight_eq_affine
 #print axioms PaperP1.MacroscopicActualSignedMass.uniform_high
@@ -6930,6 +6933,9 @@ import PaperP1
 #print axioms PaperP1.MacroscopicNormalizedDefectHosts.subset_bounded
 #print axioms PaperP1.MacroscopicNormalizedDefectHosts.uniform_count
 #print axioms PaperP1.MacroscopicNormalizedPairResidual.rank_sublinear
+#print axioms PaperP1.MacroscopicPhaseScale.uniform_phase_lower
+#print axioms PaperP1.MacroscopicPhaseScale.power_error_negligible
+#print axioms PaperP1.MacroscopicPhaseScale.lower_endpoint_small
 #print axioms PaperP1.MacroscopicPolynomialScale.polynomial_lt_source
 #print axioms PaperP1.MacroscopicRelationPowers.uniform_channel
 #print axioms PaperP1.MacroscopicRelationPowers.uniform_height

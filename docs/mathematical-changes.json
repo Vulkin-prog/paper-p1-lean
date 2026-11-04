@@ -13709,6 +13709,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "b4bd66b14fd76c8d06106051e213d368e1d169e0"
+    },
+    {
+      "id": "P1-MATH-0212",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "Companion T21.1 claims relative positive and signed equivalents for the complete actual macroscopic aligned profiles, with different B and L phases, after discarding the lower endpoint and arithmetic remainder.",
+      "finding": "Both printed actual macroscopic aligned equivalents are proved uniformly over every moving critical length. A common positive phase lower bound controls every remainder exponent below3/2; the lower-endpoint factor is negligible separately. Literal actual profile ratios converge uniformly to1 with their distinct B/L residues.",
+      "proposed_revision": "Prove a common positive lower growth bound before converting the additive arithmetic estimate to a relative equivalent. Control the lower endpoint separately, then assemble all three relative errors under a threshold preceding every critical length.",
+      "impact": "Completes the actual macroscopic aligned positive and signed equivalents in T21.1. Global rational-code alignment and the R_rat comparison, and the dyadic positive assertions, remain open.",
+      "evidence": [
+        "PaperP1.MacroscopicActualProfileEquivalents.relative_transfer",
+        "PaperP1.MacroscopicActualProfileEquivalents.uniform_relative",
+        "PaperP1.MacroscopicActualProfileEquivalents.uniform_ratio",
+        "PaperP1.MacroscopicPhaseScale.uniform_phase_lower",
+        "PaperP1.MacroscopicPhaseScale.power_error_negligible",
+        "PaperP1.MacroscopicPhaseScale.lower_endpoint_small"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14971 jobs); direct axiom audit passed for 13019 declarations using only propext, Classical.choice and Quot.sound; all 12057 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.59 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
