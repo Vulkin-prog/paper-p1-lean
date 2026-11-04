@@ -3368,3 +3368,6 @@ public import PaperP1.Arithmetic.ActualVerticalGrid
 public import PaperP1.Analysis.RelativeIntervalGeneralAxis
 public import PaperP1.Asymptotics.QuadraticLatticeSideSum
 public import PaperP1.Asymptotics.RelativeIntervalGeneralSum
+public import PaperP1.Analysis.EffectiveSourceCoordinates
+public import PaperP1.Analysis.VerticalGridLattice
+public import PaperP1.Arithmetic.ActualVerticalLattice

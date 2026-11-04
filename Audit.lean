@@ -2344,6 +2344,8 @@ import PaperP1
 #print axioms PaperP1.DyadicReciprocalScaleBounds.clog_bound
 #print axioms PaperP1.DyadicReciprocalScaleBounds.logarithmic_prefactor
 #print axioms PaperP1.DyadicReciprocalScaleBounds.small_pivot_negligible
+#print axioms PaperP1.EffectiveSourceCoordinates.scale_bounds
+#print axioms PaperP1.EffectiveSourceCoordinates.ratio_identity
 #print axioms PaperP1.ElementaryLogGrowth.log_le_two_sqrt
 #print axioms PaperP1.ElementaryLogGrowth.thirtyTwo_mul_log_le
 #print axioms PaperP1.ElementaryLogGrowth.square_le_four_mul_exp
@@ -2675,6 +2677,8 @@ import PaperP1
 #print axioms PaperP1.prod_smallPrimesUpTo_one_add_inv_sqrt_le
 #print axioms PaperP1.prod_smallPrimesUpTo_one_add_rpow_neg_one_half_le
 #print axioms PaperP1.UniformSaddleVariation.uniform_left_variation
+#print axioms PaperP1.VerticalGridLattice.center_identity
+#print axioms PaperP1.VerticalGridLattice.point_box
 #print axioms PaperP1.WeightedGeometricTail.weighted_hasSum
 #print axioms PaperP1.WeightedGeometricTail.weighted_bound
 #print axioms PaperP1.WeightedGeometricTail.weighted_tail_bound
@@ -2759,6 +2763,8 @@ import PaperP1
 #print axioms PaperP1.ActualSourceTranslations.simple_errors
 #print axioms PaperP1.ActualVerticalGrid.center_identity
 #print axioms PaperP1.ActualVerticalGrid.actual_grid_error
+#print axioms PaperP1.ActualVerticalLattice.grid_center_identity
+#print axioms PaperP1.ActualVerticalLattice.actual_point_box
 #print axioms PaperP1.AdjacentSquareDivisibility.residue_exists
 #print axioms PaperP1.AdjacentSquareDivisibility.residue_progression_count
 #print axioms PaperP1.AdjacentSquareDivisibility.solutions_card_lower
