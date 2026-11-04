@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**298 mathematical improvements and one statement-scope correction are confirmed.**
+**299 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23351,3 +23351,16 @@ The integer coefficients are transferred exactly, and the SAME finite population
 P1-MATH-0299 closes the arithmetic and source-predicate part of initial-scale normalization. Comparison of the normalized exponential and both full costs back to the original small scales, and actual application of the full signed nonprimitive theorem to this normalized Box, remain open. The claimed weakened-barrier extension also remains open. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are298 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15455 jobs); direct axiom audit passed for 14011 declarations using only propext, Classical.choice and Quot.sound; all 13254 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.96 GiB.
+
+
+## Full signed source count at arbitrary positive original real scales
+
+The full signed nonprimitive determinant count is now ACTUALLY APPLIED at arbitrary positive ORIGINAL real scales, with its conclusion expressed using the two original complete determinant costs. The individual scale>=1 restriction has been removed from this final source-box interface, rather than silently added to the printed statement.
+
+InitialDeterminantShape compares the normalized exponential at the SAME N with its original value. The original logarithmic lower bounds give nonnegative base logarithms; the normalized source monomials bound both normalized logarithms by3*log(N), hence also the original ones. The exact max-with1 normalization increases each pair logarithm by at most log(4). The proved quotient stability inequality, with unchanged denominator and c=log(4), therefore gives a fixed additive loss27*log(4)/2+9*log(4)^2/4 in logShape. Its exponential is a fixed constant, uniformly absorbed into N^eta. Each normalized axis is at most twice its original value. The general complete-cost inflation inequality and a second fixed-constant budget then bound BOTH complete normalized costs by N^epsilon times their original costs.
+
+InitialSourceDeterminantCount constructs the actual normalized Box for each nonempty population, transfers its unchanged positive integer coefficients, literal source barrier, signed equation and SAME points, and invokes the already proved full signed nonprimitive theorem. The empty population is handled directly. Separate half-exponent margins cover counting and the return to the original cost minimum. No normalized Box, local cover, factor count, primitive population, reduced-family estimate, sign convention or small-scale restriction remains as a moving-data premise. The only unproved arguments are the same two retained ordinary biform inputs. The resulting theorem is uniform before every original coefficient, real scale, shift and finite population; the printed coefficient upper bound and D,E bounds are not needed by this stronger interface.
+
+P1-MATH-0300 closes the initial original-scale alignment obligation recorded inP1-MATH-0294 and the full literal-barrier signed determinant count. The final printed sentence claiming fixed/polylogarithmic weakening of the source barrier still needs its own aligned extension, and the two ordinary input proofs remain open. T1.4 and T1.5 stay in progress pending that extension; coverage remains89 proved and72 conditional out of167. There are299 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15459 jobs); direct axiom audit passed for 14014 declarations using only propext, Classical.choice and Quot.sound; all 13257 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.94 GiB.

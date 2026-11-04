@@ -2448,6 +2448,8 @@ import PaperP1
 #print axioms PaperP1.HardSaddleGrowth.square_band_eventually
 #print axioms PaperP1.HardSaddleGrowth.tendsto_log_div_cutoff
 #print axioms PaperP1.HardSaddleGrowth.scale_upper_eventually
+#print axioms PaperP1.InitialDeterminantShape.uniform_exp_comparison
+#print axioms PaperP1.InitialDeterminantShape.uniform_cost_comparison
 #print axioms PaperP1.IntegerProductTail.pairTerm_nonneg
 #print axioms PaperP1.IntegerProductTail.pairTerm_eq_power
 #print axioms PaperP1.IntegerProductTail.summable_pairTerm
@@ -7497,6 +7499,7 @@ import PaperP1
 #print axioms PaperP1.InitialPairPartition.remaining_data
 #print axioms PaperP1.InitialPairPartition.activity_split
 #print axioms PaperP1.InitialPairPartition.uniform_bounds
+#print axioms PaperP1.InitialSourceDeterminantCount.uniform_count
 #print axioms PaperP1.IntegerPairFactorCover.population_sum_bound
 #print axioms PaperP1.IntegerPairFactorCover.uniform_bounded_projective_cover
 #print axioms PaperP1.IntegerPairFactorCover.affine_of_biform
