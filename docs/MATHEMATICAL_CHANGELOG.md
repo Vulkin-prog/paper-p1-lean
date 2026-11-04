@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**290 mathematical improvements and one statement-scope correction are confirmed.**
+**291 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23239,3 +23239,16 @@ The final uniform theorem uses the internally proved logarithmic-power estimate:
 P1-MATH-0291 is UNCONDITIONAL and uses no counting input. The full reduced source Box, uniform transfer of the source barrier and short shift, exponential-shape comparison and final sum over reductions remain open. The two ordinary inputs retained by the primitive determinant theorem still have unformalized proofs. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are290 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15431 jobs); direct axiom audit passed for 13980 declarations using only propext, Classical.choice and Quot.sound; all 13217 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.08 GiB.
+
+
+## Reduced source monomial comparisons and both uniform logarithmic hypotheses
+
+The quantitative source monomial and logarithmic hypotheses needed for the FULL reduced source Box are now proved with the literal rounded effective parameter. These results are unconditional prerequisites of the remaining nonprimitive passage.
+
+ReducedSourceMonomials proves the exact identity c*(D/g)^2*(U/q)=(c*D^2*U)/(g^2*q), with both reduction divisors treated as actual positive integers. Combining the actual reduced-scale normalization ofP1-MATH-0290 with the exact effective parameter ofP1-MATH-0291 gives the new source comparisons: the lower constant is rho/2 and the upper constant is8*C. The original coefficients are unchanged. Both the rounding loss and the scale normalization loss are included, rather than absorbed as unverified asymptotic notation.
+
+ReducedSourceLogarithms chooses one uniform margin theta=min(1/2,delta/4) for the actual short shift. The internally proved logarithmic-power estimate makes every admissible short shift at most sqrt(N) and gives log(h)<=delta*log(N)/4 before all reduction divisors and source boxes. If g^2*q<=h, then2*log(g)<=log(h) and log(q)<=log(h). Applying the exact reduced pair-logarithm lower bounds proves BOTH new logarithmic hypotheses with constant delta/2 and the literal rounded parameter N'. The inequality N'<=N is retained in these comparisons.
+
+P1-MATH-0292 closes the numeric source comparison constants and both reduced logarithmic hypotheses. The actual full reduced Box and its point population can now be constructed from these proved prerequisites. Uniform barrier/short-shift transfer, exponential-shape comparison and the final gcd-family sum remain open. The two ordinary inputs retained by the primitive determinant theorem still have unformalized proofs. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are291 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15435 jobs); direct axiom audit passed for 13984 declarations using only propext, Classical.choice and Quot.sound; all 13221 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.07 GiB.

@@ -2565,6 +2565,10 @@ import PaperP1
 #print axioms PaperP1.ReducedLatticeCoordinateBoxes.actual_coordinate_bounds
 #print axioms PaperP1.ReducedLatticeCoordinateBoxes.actual_side_controls
 #print axioms PaperP1.ReducedLatticeCoordinateBoxes.one_le_largest_of_primitive
+#print axioms PaperP1.ReducedSourceLogarithms.uniform_shift_margin
+#print axioms PaperP1.ReducedSourceLogarithms.reduced_log_bounds
+#print axioms PaperP1.ReducedSourceMonomials.quotient_identity
+#print axioms PaperP1.ReducedSourceMonomials.source_bounds
 #print axioms PaperP1.ReducedSourceParameter.effective_positive
 #print axioms PaperP1.ReducedSourceParameter.effective_le_parameter
 #print axioms PaperP1.ReducedSourceParameter.parameter_positive

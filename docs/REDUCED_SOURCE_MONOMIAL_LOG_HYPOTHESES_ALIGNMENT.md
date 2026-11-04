@@ -1,0 +1,11 @@
+# Reduced source monomial comparisons and both uniform logarithmic hypotheses
+
+Source: companion T1.4, companion_sections/arithmetic_appendix.tex:139, first-degree-one auxiliary-factor elimination in Step3; T1.5 uses that reduction. Original source hashes remain preserved.
+
+The quantitative source monomial and logarithmic hypotheses needed for the FULL reduced source Box are now proved with the literal rounded effective parameter. These results are unconditional prerequisites of the remaining nonprimitive passage.
+
+ReducedSourceMonomials proves the exact identity c*(D/g)^2*(U/q)=(c*D^2*U)/(g^2*q), with both reduction divisors treated as actual positive integers. Combining the actual reduced-scale normalization ofP1-MATH-0290 with the exact effective parameter ofP1-MATH-0291 gives the new source comparisons: the lower constant is rho/2 and the upper constant is8*C. The original coefficients are unchanged. Both the rounding loss and the scale normalization loss are included, rather than absorbed as unverified asymptotic notation.
+
+ReducedSourceLogarithms chooses one uniform margin theta=min(1/2,delta/4) for the actual short shift. The internally proved logarithmic-power estimate makes every admissible short shift at most sqrt(N) and gives log(h)<=delta*log(N)/4 before all reduction divisors and source boxes. If g^2*q<=h, then2*log(g)<=log(h) and log(q)<=log(h). Applying the exact reduced pair-logarithm lower bounds proves BOTH new logarithmic hypotheses with constant delta/2 and the literal rounded parameter N'. The inequality N'<=N is retained in these comparisons.
+
+P1-MATH-0292 closes the numeric source comparison constants and both reduced logarithmic hypotheses. The actual full reduced Box and its point population can now be constructed from these proved prerequisites. Uniform barrier/short-shift transfer, exponential-shape comparison and the final gcd-family sum remain open. The two ordinary inputs retained by the primitive determinant theorem still have unformalized proofs. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are291 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
