@@ -3040,3 +3040,9 @@ public import PaperP1.Model.PairCompressedPrimitiveFamilies
 public import PaperP1.Model.PairCompressedPrimitivePopulation
 public import PaperP1.Model.PairCompressedPrimitiveTransport
 public import PaperP1.Model.PairCompressedTwoTargetData
+public import PaperP1.Asymptotics.CompressedPrimitiveFiniteOrdersUnderInputs
+public import PaperP1.Asymptotics.CompressedPrimitiveHomogeneousMassUnderInputs
+public import PaperP1.Asymptotics.CompressedPrimitiveHomogeneousTail
+public import PaperP1.Asymptotics.CompressedPrimitiveTailCover
+public import PaperP1.Model.ChannelCompressedPrimitiveSets
+public import PaperP1.Model.CompressedPrimitiveHomogeneousBounds

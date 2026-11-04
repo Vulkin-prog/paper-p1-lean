@@ -11851,6 +11851,56 @@
         "status": "not_integrated"
       },
       "validation_commit": "c0cd098873d7f5edd4d3633734070f9ecaaf16be"
+    },
+    {
+      "id": "P1-MATH-0177",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:core:compressed",
+        "number": "T15.1",
+        "page": 56,
+        "source": "companion_sections/cores.tex",
+        "line": 385,
+        "statement_sha256": "2bcd82ae6d6899767e745cd4041313158ba88e8767b2633422a1267c47a74a31"
+      },
+      "original_assumption": "The all-cardinality distinguished compressed-pair proof uses separate moderate/saturated compressed host counts and fixed-cardinality mass estimates; the larger-cardinality tail must preserve the pair rank saving.",
+      "finding": "On regular target populations with at least two additional windows, the entire weighted homogeneous primitive sum has the stronger exponentkappa_b. The true normalized block embeds injectively in the existing physical independent block tail; its exact source probability supplies the factorN^(1/b), and every independent exponent below2 is available unconditionally above a fixed cutoff. One finite existing dense two-target bundle handles the remaining finite orders. On fully regular families all three original joint/centered masses are jointly bounded by4 times the homogeneous probability.",
+      "evidence": [
+        "PaperP1.CompressedPrimitiveFiniteOrdersUnderInputs.uniform_orders",
+        "PaperP1.CompressedPrimitiveFiniteOrdersUnderInputs.bounded_cardinality",
+        "PaperP1.CompressedPrimitiveHomogeneousMassUnderInputs.uniform_mass",
+        "PaperP1.CompressedPrimitiveHomogeneousTail.uniform_tail",
+        "PaperP1.CompressedPrimitiveTailCover.centre_injective",
+        "PaperP1.CompressedPrimitiveTailCover.fixed_mass_bound",
+        "PaperP1.ChannelCompressedPrimitiveSets.mem_targets",
+        "PaperP1.ChannelCompressedPrimitiveSets.mem_points",
+        "PaperP1.ChannelCompressedPrimitiveSets.mass_eq_points",
+        "PaperP1.ChannelCompressedPrimitiveSets.weight_nonneg",
+        "PaperP1.ChannelCompressedPrimitiveSets.mass_le_offsets",
+        "PaperP1.CompressedPrimitiveHomogeneousBounds.full_support",
+        "PaperP1.CompressedPrimitiveHomogeneousBounds.probability_upper",
+        "PaperP1.CompressedPrimitiveHomogeneousBounds.regular_weight",
+        "PaperP1.CompressedPrimitiveHomogeneousBounds.regular_product",
+        "PaperP1.CompressedPrimitiveHomogeneousBounds.point_upper",
+        "PaperP1.CompressedPrimitiveHomogeneousBounds.product_le",
+        "PaperP1.CompressedPrimitiveHomogeneousBounds.three_mass_upper",
+        "PaperP1.CompressedPrimitiveTailCover.centre",
+        "PaperP1.ChannelCompressedPrimitiveSets.targets",
+        "PaperP1.ChannelCompressedPrimitiveSets.weight",
+        "PaperP1.ChannelCompressedPrimitiveSets.mass",
+        "PaperP1.ChannelCompressedPrimitiveSets.points",
+        "PaperP1.ChannelCompressedPrimitiveSets.fixedMass"
+      ],
+      "proposed_revision": "Use the existing one-block independent tail on the genuine normalized source values, keep the source factorw*H(e)*2^(2L), and combine it with the improved fixed compressed primitive bound only for finitely many orders. State target regularity and separate the one-target sector and the two centerings explicitly until the full effective statement is assembled.",
+      "impact": "Strengthens the all-cardinality homogeneous multi-target sector to5/3 and7/4 under the existing finite geometry, with an unconditional large-cardinality tail. This is preparatory forT15.1 and does not increase completed numbered coverage.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14653 jobs); direct axiom audit passed for 12323 declarations using only propext, Classical.choice and Quot.sound; all 11162 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.45 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
