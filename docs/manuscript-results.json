@@ -13367,7 +13367,8 @@
       "remaining_unformalized_inputs": [
         "PaperP1.HeathBrownBiformInput.Input",
         "PaperP1.NonGeometricBiformInput.Input"
-      ]
+      ],
+      "validation_commit": "a2d4cd818665b0f0e529e0736b3a4d69b6692ec2"
     },
     {
       "label": "p1:arith:twokernel",
