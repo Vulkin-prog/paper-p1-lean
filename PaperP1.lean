@@ -3457,3 +3457,5 @@ public import PaperP1.Analysis.DeterminantSevenTwelfthsCosts
 public import PaperP1.Asymptotics.SevenTwelfthsSourceCount
 public import PaperP1.Arithmetic.CanonicalInteriorSourceBox
 public import PaperP1.Asymptotics.CanonicalInteriorCount
+public import PaperP1.Asymptotics.CanonicalInteriorSmoothCount
+public import PaperP1.Asymptotics.SharpTwoSmallKernelCount

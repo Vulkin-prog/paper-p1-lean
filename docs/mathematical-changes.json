@@ -17447,6 +17447,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "819758141209e0e711ead24a5ace3f2843612b92"
+    },
+    {
+      "id": "P1-MATH-0305",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:twokernel",
+        "number": "T1.5",
+        "page": 9,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 360,
+        "statement_sha256": "bb1695001b6698be23b183ea4794053283d9baed656240adcaf51b682b72ff50"
+      },
+      "original_assumption": "The sharp determinant interior estimate can be summed over all actual smooth coefficients and combined with unconditional edge counts to give the complete two-small-kernel integer count.",
+      "finding": "Exact small-prime support partitioning sums all moving coefficients. A three-sector canonical cover, using fixed delta=1/4, includes both unconditional edge regimes and the proved determinant interior, yielding the full sharp count with an explicit short-shift coefficient budget.",
+      "proposed_revision": "Use the actual canonical square-part and kernel products to split the population into three sectors; fix delta=1/4, sum literal support choices and occupied boxes, and allocate the final exponent margin to24*h+10.",
+      "impact": "Closes the full sharp comparable-integer upper count under the two retained ordinary inputs. Only actual window placement and upper/lower assembly remain forT1.5; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.CanonicalInteriorSmoothCount.uniform_count",
+        "PaperP1.SharpTwoSmallKernelCount.uniform_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15483 jobs); direct axiom audit passed for 14035 declarations using only propext, Classical.choice and Quot.sound; all 13280 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.84 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

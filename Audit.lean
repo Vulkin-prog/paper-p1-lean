@@ -6450,6 +6450,7 @@ import PaperP1
 #print axioms PaperP1.BoundedSecondMomentUnderBCN.uniform_bound
 #print axioms PaperP1.BoundedWidthDenseCount.uniform_count
 #print axioms PaperP1.CanonicalInteriorCount.uniform_fixed_coefficients
+#print axioms PaperP1.CanonicalInteriorSmoothCount.uniform_count
 #print axioms PaperP1.ChannelCompressedActivityBounds.data
 #print axioms PaperP1.ChannelCompressedActivityBounds.homogeneousWeight_nonneg
 #print axioms PaperP1.ChannelCompressedActivityBounds.mass_le_homogeneous
@@ -8539,6 +8540,7 @@ import PaperP1
 #print axioms PaperP1.SharpThirdCancellationUnderInputs.uniform_cancellation
 #print axioms PaperP1.SharpThirdCumulantLowerUnderInputs.error_absorption
 #print axioms PaperP1.SharpThirdCumulantLowerUnderInputs.article_14_5
+#print axioms PaperP1.SharpTwoSmallKernelCount.uniform_count
 #print axioms PaperP1.ShiftedAsymmetricCriticalFamily.scale_pos
 #print axioms PaperP1.ShiftedAsymmetricCriticalFamily.index_le_scale
 #print axioms PaperP1.ShiftedAsymmetricCriticalFamily.critical_band

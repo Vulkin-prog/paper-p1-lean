@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**303 mathematical improvements and one statement-scope correction are confirmed.**
+**304 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23416,3 +23416,18 @@ CanonicalInteriorCount fixes one uniform sharp-count threshold before every movi
 P1-MATH-0304 closes actual source-box construction, numerical instantiation and occupied-box summation in the interior regime. Summation over actual smooth coefficients, treatment of the two elementary edge populations and final window placement still remain forT1.5. Its lower bound is already proved. Coverage remains89 proved and73 conditional out of167 (162 completed). There are303 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15479 jobs); direct axiom audit passed for 14033 declarations using only propext, Classical.choice and Quot.sound; all 13278 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.85 GiB.
+
+
+## Sharp global count for the full actual two-small-kernel comparable population
+
+The sharp (T+N^(7/12))*N^epsilon estimate is now proved for the ENTIRE actual comparable population of integers whose two prescribed shifted kernels are individually at most T. The complete smooth-coefficient and occupied-dyadic enumeration has been summed, and both edge regimes are included. Only the two existing ordinary biform inputs used inT1.4 remain unproved arguments.
+
+CanonicalInteriorSmoothCount partitions the actual interior population by its two literal small-prime supports. Each coefficient is the exact product of its support, and every support lies in the actual small-prime powerset. The already proved logarithmic prime-count bound controls both powerset choices uniformly for H<=D*log(N). The fixed-coefficient canonical interior count is actually applied to every stratum; finite covering and an explicit exponent budget sum all smooth coefficients without enumerating an arbitrary auxiliary object.
+
+SharpTwoSmallKernelCount covers the whole original population by THREE explicit finite subsets. If the canonical square-part product is at most4*sqrt(N), the existing unconditional congruence/small-square estimate gives (24*h*T+4*sqrt(N))*N^eta. If the actual kernel product is at most4*N^(1/4), the existing unconditional comparable two-kernel Pell count gives4*N^(1/4)*N^eta, using the literal distinct offsets0 andh. If both products are larger, the now fully summed canonical determinant interior theorem applies with the FIXED logarithmic margin delta=1/4. The source barrier and first logarithmic lower bound are automatic from the large square-part product; no separate bad-barrier or small-DE sector is needed.
+
+The three finite subsets cover every point. Both sqrt(N) and N^(1/4) are below N^(7/12). All three costs together are at most (24*h+10)*(T+N^(7/12))*N^eta; the short-shift polylogarithmic budget absorbs that explicit coefficient with a second exponent margin. Thus the final estimate is uniform before H, the actual nonzero natural shift, the kernel cap and every finite actual source population. No assumed moving-coefficient, dyadic, smooth-stratum or edge count remains.
+
+P1-MATH-0305 closes the sharp global integer-population upper count required forT1.5. The remaining step is its actual window-placement/counting interface and assembly with the earlier unconditional lower bound. Coverage remains89 proved and73 conditional out of167 (162 completed); T1.5 stays in progress until that assembly is checked. There are304 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15483 jobs); direct axiom audit passed for 14035 declarations using only propext, Classical.choice and Quot.sound; all 13280 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.84 GiB.

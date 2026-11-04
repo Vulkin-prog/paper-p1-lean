@@ -5,7 +5,7 @@ Neither document is fully formalized.
 
 Companion T1.4 is complete conditionally on exactly HeathBrownBiformInput.Input and NonGeometricBiformInput.Input. The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. Both ordinary input proofs remain open. The five incomplete numbered results are main13.4 and companionT1.5,T1.10,T1.13,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and73 conditional (162/167 completed). The project records303 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and73 conditional (162/167 completed). The project records304 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -124,7 +124,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14033 audited theorem/lemma declarations**. This
+- The project currently has **14035 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24187,3 +24187,18 @@ CanonicalInteriorCount fixes one uniform sharp-count threshold before every movi
 P1-MATH-0304 closes actual source-box construction, numerical instantiation and occupied-box summation in the interior regime. Summation over actual smooth coefficients, treatment of the two elementary edge populations and final window placement still remain forT1.5. Its lower bound is already proved. Coverage remains89 proved and73 conditional out of167 (162 completed). There are303 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15479 jobs); direct axiom audit passed for 14033 declarations using only propext, Classical.choice and Quot.sound; all 13278 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.85 GiB.
+
+
+## Sharp global count for the full actual two-small-kernel comparable population
+
+The sharp (T+N^(7/12))*N^epsilon estimate is now proved for the ENTIRE actual comparable population of integers whose two prescribed shifted kernels are individually at most T. The complete smooth-coefficient and occupied-dyadic enumeration has been summed, and both edge regimes are included. Only the two existing ordinary biform inputs used inT1.4 remain unproved arguments.
+
+CanonicalInteriorSmoothCount partitions the actual interior population by its two literal small-prime supports. Each coefficient is the exact product of its support, and every support lies in the actual small-prime powerset. The already proved logarithmic prime-count bound controls both powerset choices uniformly for H<=D*log(N). The fixed-coefficient canonical interior count is actually applied to every stratum; finite covering and an explicit exponent budget sum all smooth coefficients without enumerating an arbitrary auxiliary object.
+
+SharpTwoSmallKernelCount covers the whole original population by THREE explicit finite subsets. If the canonical square-part product is at most4*sqrt(N), the existing unconditional congruence/small-square estimate gives (24*h*T+4*sqrt(N))*N^eta. If the actual kernel product is at most4*N^(1/4), the existing unconditional comparable two-kernel Pell count gives4*N^(1/4)*N^eta, using the literal distinct offsets0 andh. If both products are larger, the now fully summed canonical determinant interior theorem applies with the FIXED logarithmic margin delta=1/4. The source barrier and first logarithmic lower bound are automatic from the large square-part product; no separate bad-barrier or small-DE sector is needed.
+
+The three finite subsets cover every point. Both sqrt(N) and N^(1/4) are below N^(7/12). All three costs together are at most (24*h+10)*(T+N^(7/12))*N^eta; the short-shift polylogarithmic budget absorbs that explicit coefficient with a second exponent margin. Thus the final estimate is uniform before H, the actual nonzero natural shift, the kernel cap and every finite actual source population. No assumed moving-coefficient, dyadic, smooth-stratum or edge count remains.
+
+P1-MATH-0305 closes the sharp global integer-population upper count required forT1.5. The remaining step is its actual window-placement/counting interface and assembly with the earlier unconditional lower bound. Coverage remains89 proved and73 conditional out of167 (162 completed); T1.5 stays in progress until that assembly is checked. There are304 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15483 jobs); direct axiom audit passed for 14035 declarations using only propext, Classical.choice and Quot.sound; all 13280 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.84 GiB.
