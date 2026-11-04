@@ -3449,3 +3449,7 @@ public import PaperP1.Analysis.InitialDeterminantShape
 public import PaperP1.Asymptotics.InitialSourceDeterminantCount
 public import PaperP1.Analysis.WeightedReducedSourceBarrier
 public import PaperP1.Asymptotics.WeightedReducedFamilyCount
+public import PaperP1.Asymptotics.CompanionUniformDeterminantTheorem
+public import PaperP1.Asymptotics.WeightedInitialSourceCount
+public import PaperP1.Asymptotics.WeightedNonprimitiveSourceCount
+public import PaperP1.Asymptotics.WeightedOriginalScaleFamilyCount

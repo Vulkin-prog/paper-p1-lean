@@ -6544,6 +6544,10 @@ import PaperP1
 #print axioms PaperP1.CompanionT21Profiles.macroscopic_signed_reference_eval
 #print axioms PaperP1.CompanionT21Profiles.macroscopic_positive_uniform
 #print axioms PaperP1.CompanionT21Profiles.companion_T21_1
+#print axioms PaperP1.CompanionUniformDeterminantTheorem.mem_solutions_iff
+#print axioms PaperP1.CompanionUniformDeterminantTheorem.population
+#print axioms PaperP1.CompanionUniformDeterminantTheorem.weakened_barrier_count
+#print axioms PaperP1.CompanionUniformDeterminantTheorem.companion_T1_4
 #print axioms PaperP1.ComparableCoverPower.power_bound
 #print axioms PaperP1.ComparableLogBounds.exists_nat_comparison
 #print axioms PaperP1.ComparableLogBounds.widthConstant_ge_one
@@ -8934,10 +8938,14 @@ import PaperP1
 #print axioms PaperP1.WeakPairIncidence.good_target_isProbability
 #print axioms PaperP1.WeakPairIncidence.full_single_rates_positive
 #print axioms PaperP1.WeakPairIncidence.full_target_isProbability
+#print axioms PaperP1.WeightedInitialSourceCount.uniform_count
 #print axioms PaperP1.WeightedNonalignedPairsUnderInputs.uniform_families
 #print axioms PaperP1.WeightedNonalignedPairsUnderInputs.regular_nullity_eq_loss
 #print axioms PaperP1.WeightedNonalignedPairsUnderInputs.article_18_2
 #print axioms PaperP1.WeightedNonalignedPairsUnderInputs.article_18_2_rank_deficit
+#print axioms PaperP1.WeightedNonprimitiveSourceCount.uniform_positive_count
+#print axioms PaperP1.WeightedNonprimitiveSourceCount.uniform_signed_count
+#print axioms PaperP1.WeightedOriginalScaleFamilyCount.uniform_count
 #print axioms PaperP1.WeightedPrimitiveTail.uniform_tail
 #print axioms PaperP1.WeightedReducedFamilyCount.uniform_count
 #print axioms PaperP1.WideOneSeedTail.uniform_tail
