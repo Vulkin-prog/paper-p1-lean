@@ -2785,3 +2785,13 @@ public import PaperP1.Probability.PositionalCountCumulant
 public import PaperP1.Probability.PositionalDeletionIntensity
 public import PaperP1.Probability.PositionalDeletionSupport
 public import PaperP1.Probability.PositionalFiniteExpectations
+public import PaperP1.Asymptotics.AllPairOriginalCostsUnderInputs
+public import PaperP1.Asymptotics.AllPairResidualMassUnderInputs
+public import PaperP1.Model.AllPairCountMeans
+public import PaperP1.Model.AllPairDependencyGraph
+public import PaperP1.Model.AllPairOriginalLaws
+public import PaperP1.Model.AllPairResidualMass
+public import PaperP1.Model.AllPairRetainedGeometry
+public import PaperP1.Model.FiniteAllPairCost
+public import PaperP1.Model.PositionalObservationLaw
+public import PaperP1.Probability.PositionalAllPairCost
