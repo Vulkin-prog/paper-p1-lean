@@ -2980,3 +2980,10 @@ public import PaperP1.Asymptotics.FixedChannelNonalignedMassUnderInputs
 public import PaperP1.Model.GoodEdgeFullPalm
 public import PaperP1.Model.PairTargetQuotientProbability
 public import PaperP1.Model.PrivateChannelOrientationWeights
+public import PaperP1.Asymptotics.ExceptionalSourcePalmMass
+public import PaperP1.Asymptotics.FiniteChannelTripleTheoremUnderInputs
+public import PaperP1.Asymptotics.FiniteHighChannelTripleMass
+public import PaperP1.Combinatorics.PairGeneratedTripleWeights
+public import PaperP1.Model.FiniteChannelTripleMass
+public import PaperP1.Model.FixedPrivateChannelDisjoint
+public import PaperP1.Model.GoodPairGeneratedTriples
