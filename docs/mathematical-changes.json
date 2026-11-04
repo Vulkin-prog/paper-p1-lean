@@ -13440,6 +13440,51 @@
         "status": "not_integrated"
       },
       "validation_commit": "77c8c07c6fb3f1cd7fdb77c4c13fbe3e4a176154"
+    },
+    {
+      "id": "P1-MATH-0206",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "The proof of companion T21.1 states that each orientation of the1:2 channel permits M/2-M^delta+O(B) translations, then uses both orientations to obtain the factor M-2M^delta.",
+      "finding": "Exact interval translations are in a proved bijection with original complete-vertex source pairs on arbitrary[lo,hi). Uniform macroscopic1:2 counts retain both orientations and the exact ceil(M^delta) lower endpoint, with explicit3B/6B errors or4B/8B after replacing the ceiling. All counted pairs are proved separated.",
+      "proposed_revision": "Write the exact half-open interval for the unit parameter, verify its endpoint ordering and nonemptiness uniformly, and account for the ceiling before replacing it by M^delta. Record disjointness of the two orientations through their proved separation.",
+      "impact": "Discharges the literal leading macroscopic translation factor in T21.1. Full relation enumeration, signed affine identification and final equivalents remain separate obligations.",
+      "evidence": [
+        "PaperP1.IntervalSourceTranslations.lower_upper_order",
+        "PaperP1.IntervalSourceTranslations.mem_translations",
+        "PaperP1.IntervalSourceTranslations.translation_count_error",
+        "PaperP1.IntervalSourceTranslations.mem_sourcePairs",
+        "PaperP1.IntervalSourceTranslations.sourceAt_cast",
+        "PaperP1.IntervalSourceTranslations.sourceAt_mem",
+        "PaperP1.IntervalSourceTranslations.sourceAt_injective",
+        "PaperP1.IntervalSourceTranslations.translations_card",
+        "PaperP1.IntervalSourceTranslations.source_card_error",
+        "PaperP1.IntervalSourceTranslations.source_pair_separated",
+        "PaperP1.IntervalSourceTranslations.symmetric_card",
+        "PaperP1.IntervalSourceTranslations.symmetric_card_error",
+        "PaperP1.MacroscopicChannelTranslations.uniform_geometry",
+        "PaperP1.MacroscopicChannelTranslations.one_two_counts",
+        "PaperP1.MacroscopicChannelTranslations.one_two_real_counts",
+        "PaperP1.MacroscopicChannelTranslations.one_two_separated",
+        "PaperP1.IntervalSourceTranslations.translations",
+        "PaperP1.IntervalSourceTranslations.sourcePairs",
+        "PaperP1.IntervalSourceTranslations.symmetricSources"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14941 jobs); direct axiom audit passed for 12943 declarations using only propext, Classical.choice and Quot.sound; all 11963 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.71 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

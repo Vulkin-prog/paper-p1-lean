@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records204 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records205 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **12927 audited theorem/lemma declarations**. This
+- The project currently has **12943 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22427,3 +22427,20 @@ Consequently the actual positive weight sum is at most M^(1+epsilon). For EVERY 
 P1-MATH-0205 records this internal separated height-one estimate. Together with the high-height bound and the fixed-height full/rational comparison, it supplies the three local arithmetic error estimates used in the macroscopic proof. The global rational-code channel partition, actual positive/signed translation sums, parity equivalents and dyadic positive assembly still need to be completed. T21.1 remains in progress. Coverage stays88 proved and70 conditional out of167, with nine incomplete results. There are204 improvements and one statement-scope correction. No external input, new axiom, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14937 jobs); direct axiom audit passed for 12927 declarations using only propext, Classical.choice and Quot.sound; all 11944 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.72 GiB.
+
+
+## Actual interval source translations with exact macroscopic lower endpoint
+
+The literal leading-channel translation count in companion T21.1 is now proved for the original complete-vertex source pairs, with both orientations and the exact lower endpoint retained.
+
+IntervalSourceTranslations develops the finite calculation on an arbitrary interval [lo,hi), rather than assuming dyadic endpoints. For positive a<b, sufficiently large lo and offsets u,v of size at most B, the actual source roots x=a*t-u and y=b*t-v belong to the interval exactly when
+
+  ceil((lo+u)/a) <= t < ceil((hi+v)/b).
+
+Under the explicit nonempty-interval condition, the count differs from hi/b-lo/a by at most B/a+B/b+1. The natural-valued source map is proved injective and surjective onto the actual pair set using the original exact unit equation. No abstract or assumed translation count is used. A stronger explicit endpoint condition proves x+L<y for every such unit source, making the two root orientations disjoint; their count is exactly twice the forward count.
+
+MacroscopicChannelTranslations proves that all finite endpoint conditions hold eventually on [ceil(M^delta),M), for every fixed0<delta<1 and all critical lengths. The common threshold precedes every complete-vertex pair i,j. The forward1:2 count differs from M/2-ceil(M^delta) by at most3B; the symmetric count differs from M-2ceil(M^delta) by at most6B. Replacing the ceiling by the real power is also justified, giving errors4B and8B respectively. Every actual pair in this symmetric source set is proved separated by more than L.
+
+P1-MATH-0206 records these literal finite bijections and uniform endpoint bounds. This establishes the translation factor used in the leading macroscopic term, but not yet its full signed or unsigned even-selection enumeration. The global rational-code partition, actual signed affine identification, leading parity equivalents and dyadic positive assembly remain open, so T21.1 stays in progress. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are205 improvements and one statement-scope correction. No external input, new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14941 jobs); direct axiom audit passed for 12943 declarations using only propext, Classical.choice and Quot.sound; all 11963 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.71 GiB.
