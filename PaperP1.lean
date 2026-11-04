@@ -3131,3 +3131,7 @@ public import PaperP1.Asymptotics.AnchoredObstructionFromCensus
 public import PaperP1.Asymptotics.AnchoredObstructionUnderOrdinaryCensus
 public import PaperP1.Asymptotics.LogFifthPivotCutoff
 public import PaperP1.Asymptotics.PowerGap
+public import PaperP1.Arithmetic.OddPivotSpecialValues
+public import PaperP1.Model.RandomOrientationSquareAnchor
+public import PaperP1.Model.RandomizedPrivatePalmForcing
+public import PaperP1.Probability.FairBinaryMixture

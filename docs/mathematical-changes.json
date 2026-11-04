@@ -12718,6 +12718,71 @@
         "status": "not_integrated"
       },
       "validation_commit": "8ecb747f0d0f7dae6252cb437702d9d3a6799772"
+    },
+    {
+      "id": "P1-MATH-0189",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "After restricting to fully private good sources, the randomized-orientation proof says fairness of g(U,xi) guarantees the exact conditional source law even after nonpivot bits are fixed.",
+      "finding": "The preceding full-private restriction is essential. In the original one-small-pivot population the actual word (4,5), Y=4, N=3, M=8 has square anchor 4 and only private pivot 5. Independent fair orientation g=xi and the actual map changing only 5 hit the unsigned event with probability 1/2 and fail the full conditional-observable identity. Under actual private prime basis vectors for ALL raw source coordinates, the complete conditional law is proved for every real prime-cylinder observable and arbitrary finite independent auxiliary law, by a pointwise-background equal signed mixture. This clarifies the proof scope and does not refute the printed numerical lower bound.",
+      "evidence": [
+        "PaperP1.OddPivotSpecialValues.square",
+        "PaperP1.OddPivotSpecialValues.prime",
+        "PaperP1.RandomOrientationSquareAnchor.valueBit_square",
+        "PaperP1.RandomOrientationSquareAnchor.valueBit_four",
+        "PaperP1.RandomOrientationSquareAnchor.window_data",
+        "PaperP1.RandomOrientationSquareAnchor.original_retained_membership",
+        "PaperP1.RandomOrientationSquareAnchor.auxiliary_fair",
+        "PaperP1.RandomOrientationSquareAnchor.fair_for_uniform_source",
+        "PaperP1.RandomOrientationSquareAnchor.singleton_basis",
+        "PaperP1.RandomOrientationSquareAnchor.randomForce_value_five",
+        "PaperP1.RandomOrientationSquareAnchor.only_private_prime_changes",
+        "PaperP1.RandomOrientationSquareAnchor.private_prime_above_cutoff",
+        "PaperP1.RandomOrientationSquareAnchor.randomForce_matches_forced_vertex",
+        "PaperP1.RandomOrientationSquareAnchor.randomForce_start_iff",
+        "PaperP1.RandomOrientationSquareAnchor.forced_event_probability",
+        "PaperP1.RandomOrientationSquareAnchor.forced_event_not_almost_sure",
+        "PaperP1.RandomOrientationSquareAnchor.original_event_probability",
+        "PaperP1.RandomOrientationSquareAnchor.joint_forced_event_probability",
+        "PaperP1.RandomOrientationSquareAnchor.not_full_conditional_law",
+        "PaperP1.RandomizedPrivatePalmForcing.hits",
+        "PaperP1.RandomizedPrivatePalmForcing.force_assemble",
+        "PaperP1.RandomizedPrivatePalmForcing.chart_mixture",
+        "PaperP1.RandomizedPrivatePalmForcing.uniform_mixture",
+        "PaperP1.RandomizedPrivatePalmForcing.orbit_iff",
+        "PaperP1.RandomizedPrivatePalmForcing.orientedWord_ne",
+        "PaperP1.RandomizedPrivatePalmForcing.indicator_split",
+        "PaperP1.RandomizedPrivatePalmForcing.uniform_conditional",
+        "PaperP1.RandomizedPrivatePalmForcing.preserves_nonpivot",
+        "PaperP1.RandomizedPrivatePalmForcing.weighted_conditional",
+        "PaperP1.RandomizedPrivatePalmForcing.event_probability",
+        "PaperP1.FairBinaryMixture.pointwise",
+        "PaperP1.FairBinaryMixture.expectation_affine",
+        "PaperP1.FairBinaryMixture.nested",
+        "PaperP1.RandomOrientationSquareAnchor.Auxiliary",
+        "PaperP1.RandomOrientationSquareAnchor.primeFive",
+        "PaperP1.RandomOrientationSquareAnchor.orientation",
+        "PaperP1.RandomOrientationSquareAnchor.randomForce",
+        "PaperP1.RandomizedPrivatePalmForcing.orientedWord",
+        "PaperP1.RandomizedPrivatePalmForcing.force"
+      ],
+      "proposed_revision": "Retain the full-private good-source restriction explicitly in the randomized conditional-law paragraph. State that raw source coordinates are uniform after fixing the unmodified background. On any other retained source require compatibility with its unforced anchor, for instance by retaining the anchor-preserving map; an unconstrained fair sign alone is insufficient.",
+      "impact": "Supplies a precise local scope counterexample and a proved fully private repair for the randomized-law step in T19.17. It is recorded as a scope clarification improvement, not a refutation of the numerical proposition. The global hybrid randomized field, half-factor cost aggregation and ordinary census remain open; numbered coverage is unchanged.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14831 jobs); direct axiom audit passed for 12756 declarations using only propext, Classical.choice and Quot.sound; all 11720 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.05 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
