@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and70 conditional. The project records218 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and70 conditional. The project records219 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13125 audited theorem/lemma declarations**. This
+- The project currently has **13215 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22685,3 +22685,18 @@ CompanionT21Profiles assembles the entire numbered proposition in companion_T21_
 P1-MATH-0219 records this complete assembly. T21.1 advances from in_progress to proved only after the full pinned-compiler checks and direct axiom audit pass. Coverage becomes89 proved and70 conditional out of167:159 complete and eight incomplete numbered results. There are218 improvements and one statement-scope correction. The remaining incomplete results are main13.4 and companion T1.4,T1.5,T1.10,T1.13,T5.1,T19.15,T19.16. Many conditional results still retain explicit external inputs, and neither document is fully formalized. No new axiom, dependency, compiler change, Paper C code reuse or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15011 jobs); direct axiom audit passed for 13125 declarations using only propext, Classical.choice and Quot.sound; all 12185 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.44 GiB.
+
+
+## Actual hard saddle and precise additive second-scale expansion
+
+The actual implicit hard saddle of companion T19.15 now has internally proved existence, uniqueness and the precise additive square-root expansion at the second scale nu=H/V.
+
+Seven mathematical source modules from Paper C were recovered at immutable commit b9fa9ba490f201b408a302a86f1594ee620b228b. Their source bytes were verified against the exact Git blob hashes; the Apache-2.0 attribution, scope comparison and compiler adaptations are recorded in PAPER_C_REUSE.md. Public module declarations, namespaces and two deprecated dependent-if rewrites were adapted to Lean v4.36.0-rc2. No old compiled artifacts or unproved analytic interface was imported.
+
+ExponentialIntegral constructs the real positive exponential integral with its Euler--Mascheroni anchor and proves its derivative. SaddleBranch constructs the unique upper inverse of exp(u)/u on u>=1. SaddleParameters constructs the actual root of V=a*D(H/V), proves its domain and uniqueness, and includes the a=1 hard scale. ExponentialIntegralAsymptotics proves the two-term expansion and a quantitative remainder by derivative comparison. SaddleAsymptotics, SaddleExpansion and SaddleScales prove the actual root expansions, including the constants -log(2)-2, growth of nu and log(H)=o(nu).
+
+The new P1-only HardSaddleExplicitScale module proves the exact conversion missing between the squared expansion and the manuscript's additive formula. With G(H)=sqrt(2H(log H+log log H-log2-2)), the normalized gap (2V-G(H))/(H/V) tends to zero. A finite factorization bounds its absolute value by twice the squared-expansion error, so neither the displayed additive expansion nor an arbitrary sequence with that expansion is assumed.
+
+P1-MATH-0220 records this internally checked saddle-scale construction. The ordinary reciprocal-prime input, uniform small-square-part comparison and final full/dyadic reciprocal-pivot equivalent remain open, so T19.15 stays in progress. Coverage remains89 proved and70 conditional out of167, with eight incomplete numbered results. There are219 improvements and one statement-scope correction. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15027 jobs); direct axiom audit passed for 13215 declarations using only propext, Classical.choice and Quot.sound; all 12293 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.41 GiB.

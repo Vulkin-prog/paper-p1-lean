@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**218 mathematical improvements and one statement-scope correction are confirmed.**
+**219 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -21916,3 +21916,18 @@ CompanionT21Profiles assembles the entire numbered proposition in companion_T21_
 P1-MATH-0219 records this complete assembly. T21.1 advances from in_progress to proved only after the full pinned-compiler checks and direct axiom audit pass. Coverage becomes89 proved and70 conditional out of167:159 complete and eight incomplete numbered results. There are218 improvements and one statement-scope correction. The remaining incomplete results are main13.4 and companion T1.4,T1.5,T1.10,T1.13,T5.1,T19.15,T19.16. Many conditional results still retain explicit external inputs, and neither document is fully formalized. No new axiom, dependency, compiler change, Paper C code reuse or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15011 jobs); direct axiom audit passed for 13125 declarations using only propext, Classical.choice and Quot.sound; all 12185 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.44 GiB.
+
+
+## Actual hard saddle and precise additive second-scale expansion
+
+The actual implicit hard saddle of companion T19.15 now has internally proved existence, uniqueness and the precise additive square-root expansion at the second scale nu=H/V.
+
+Seven mathematical source modules from Paper C were recovered at immutable commit b9fa9ba490f201b408a302a86f1594ee620b228b. Their source bytes were verified against the exact Git blob hashes; the Apache-2.0 attribution, scope comparison and compiler adaptations are recorded in PAPER_C_REUSE.md. Public module declarations, namespaces and two deprecated dependent-if rewrites were adapted to Lean v4.36.0-rc2. No old compiled artifacts or unproved analytic interface was imported.
+
+ExponentialIntegral constructs the real positive exponential integral with its Euler--Mascheroni anchor and proves its derivative. SaddleBranch constructs the unique upper inverse of exp(u)/u on u>=1. SaddleParameters constructs the actual root of V=a*D(H/V), proves its domain and uniqueness, and includes the a=1 hard scale. ExponentialIntegralAsymptotics proves the two-term expansion and a quantitative remainder by derivative comparison. SaddleAsymptotics, SaddleExpansion and SaddleScales prove the actual root expansions, including the constants -log(2)-2, growth of nu and log(H)=o(nu).
+
+The new P1-only HardSaddleExplicitScale module proves the exact conversion missing between the squared expansion and the manuscript's additive formula. With G(H)=sqrt(2H(log H+log log H-log2-2)), the normalized gap (2V-G(H))/(H/V) tends to zero. A finite factorization bounds its absolute value by twice the squared-expansion error, so neither the displayed additive expansion nor an arbitrary sequence with that expansion is assumed.
+
+P1-MATH-0220 records this internally checked saddle-scale construction. The ordinary reciprocal-prime input, uniform small-square-part comparison and final full/dyadic reciprocal-pivot equivalent remain open, so T19.15 stays in progress. Coverage remains89 proved and70 conditional out of167, with eight incomplete numbered results. There are219 improvements and one statement-scope correction. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15027 jobs); direct axiom audit passed for 13215 declarations using only propext, Classical.choice and Quot.sound; all 12293 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.41 GiB.

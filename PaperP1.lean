@@ -3225,3 +3225,11 @@ public import PaperP1.Asymptotics.TwoThreePositivePhase
 public import PaperP1.Asymptotics.CompanionT21Profiles
 public import PaperP1.Asymptotics.DyadicPhaseScale
 public import PaperP1.Asymptotics.DyadicPositiveEquivalents
+public import PaperP1.Analysis.ExponentialIntegral
+public import PaperP1.Analysis.ExponentialIntegralAsymptotics
+public import PaperP1.Analysis.HardSaddleExplicitScale
+public import PaperP1.Analysis.SaddleAsymptotics
+public import PaperP1.Analysis.SaddleBranch
+public import PaperP1.Analysis.SaddleExpansion
+public import PaperP1.Analysis.SaddleParameters
+public import PaperP1.Analysis.SaddleScales

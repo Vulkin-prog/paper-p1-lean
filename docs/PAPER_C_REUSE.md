@@ -412,3 +412,30 @@ All selected fragments pass targeted rebuilds under Lean v4.36.0-rc2.
 The old saddle, PNT and reciprocal-pivot asymptotic modules remain unported.
 T19.16's precise logarithmic equivalent is not claimed.
 See [the statement alignment](PRIVATE_SIGNED_FORCING_ALIGNMENT.md).
+
+
+## Actual implicit saddle parameters for companion T19.15
+
+All seven sources below are Apache-2.0 by Vulkin-prog at immutable commit
+`b9fa9ba490f201b408a302a86f1594ee620b228b`, originally Lean4.34.0.
+Fetched reference bytes were verified against the Git blob hashes before
+adaptation. No old compiled artifacts or analytic assumptions were copied.
+
+| Upstream path and Git blob | Target | Statement comparison and adaptation |
+|---|---|---|
+| `PaperCV282/SaddleBranch.lean`, `0b7ea97dd26f88cc73479e4ca9c297cffe8caae3` | `PaperP1/Analysis/SaddleBranch.lean` | Full module; Lean4.36 public/exposed declarations and P1 namespaces; deprecated dependent-if rewrite names updated; mathematical hypotheses and conclusions retained |
+| `PaperCV282/ExponentialIntegral.lean`, `b04277f564387a556796129d233677b426f68968` | `PaperP1/Analysis/ExponentialIntegral.lean` | Full module; Lean4.36 public/exposed declarations and P1 namespaces; deprecated dependent-if rewrite names updated; mathematical hypotheses and conclusions retained |
+| `PaperCV282/SaddleParameters.lean`, `7759cb21b670115d39040a2d27d3891ff4dde1ea` | `PaperP1/Analysis/SaddleParameters.lean` | Full module; Lean4.36 public/exposed declarations and P1 namespaces; deprecated dependent-if rewrite names updated; mathematical hypotheses and conclusions retained |
+| `PaperCV282/ExponentialIntegralAsymptotics.lean`, `f6bae752898a97efdda9e3b68b4740bda8cd8407` | `PaperP1/Analysis/ExponentialIntegralAsymptotics.lean` | Full module; Lean4.36 public/exposed declarations and P1 namespaces; deprecated dependent-if rewrite names updated; mathematical hypotheses and conclusions retained |
+| `PaperCV282/SaddleAsymptotics.lean`, `ba1d7b171fe886f69b9364793eccb3f00f320914` | `PaperP1/Analysis/SaddleAsymptotics.lean` | Full module; Lean4.36 public/exposed declarations and P1 namespaces; deprecated dependent-if rewrite names updated; mathematical hypotheses and conclusions retained |
+| `PaperCV282/SaddleExpansion.lean`, `d7aeee010b3210415147f27ad63ee362bd489969` | `PaperP1/Analysis/SaddleExpansion.lean` | Full module; Lean4.36 public/exposed declarations and P1 namespaces; deprecated dependent-if rewrite names updated; mathematical hypotheses and conclusions retained |
+| `PaperCV282/SaddleScales.lean`, `b679311d3e3537d9422368d82bf97b823c3646d6` | `PaperP1/Analysis/SaddleScales.lean` | Full module; Lean4.36 public/exposed declarations and P1 namespaces; deprecated dependent-if rewrite names updated; mathematical hypotheses and conclusions retained |
+
+These modules construct the normalized positive exponential integral, the
+upper exp(u)/u branch and the actual unique roots V=a D(H/V), then prove
+internal two-term exponential-integral estimates and saddle expansions.
+The new P1-only HardSaddleExplicitScale module converts the squared hard
+expansion to the precise additive error o(H/V) in P1's displayed square-root
+formula. The reciprocal-prime asymptotic, uniform square-part comparison and
+full T19.15 equivalent remain separate obligations. See
+[alignment](HARD_SADDLE_SCALE_ALIGNMENT.md).
