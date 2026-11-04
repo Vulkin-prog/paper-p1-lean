@@ -3383,3 +3383,5 @@ public import PaperP1.Asymptotics.TwoSourceLatticeFamilies
 public import PaperP1.Asymptotics.UniformHorizontalLatticeFamily
 public import PaperP1.Asymptotics.RoundedScaleLower
 public import PaperP1.Asymptotics.RoundedSourceLatticeFamilies
+public import PaperP1.Analysis.RoundedScaleSideBudget
+public import PaperP1.Asymptotics.IdealSourceLatticeSums

@@ -2559,6 +2559,10 @@ import PaperP1
 #print axioms PaperP1.RelativeIntervalShortVectors.interval_residual_identity
 #print axioms PaperP1.RelativeIntervalShortVectors.source_vector_bounds
 #print axioms PaperP1.RelativeIntervalShortVectors.scaled_vector_bounds
+#print axioms PaperP1.RoundedScaleSideBudget.rounded_upper
+#print axioms PaperP1.RoundedScaleSideBudget.square_root_bound
+#print axioms PaperP1.RoundedScaleSideBudget.horizontal_cost
+#print axioms PaperP1.RoundedScaleSideBudget.vertical_cost
 #print axioms PaperP1.RungePowerSeries.coeff_sqrtFactorSeries
 #print axioms PaperP1.RungePowerSeries.coeff_rungeProductSeries
 #print axioms PaperP1.RungePowerSeries.binomialSeries_half_sq
@@ -7332,6 +7336,7 @@ import PaperP1
 #print axioms PaperP1.HomogeneousSeedPropagation.uniform_regular_mass
 #print axioms PaperP1.HomogeneousSharedInteriorTriples.uniform_mass
 #print axioms PaperP1.HorizontalGridCoordinateData.uniform_data
+#print axioms PaperP1.IdealSourceLatticeSums.uniform_ideal_sums
 #print axioms PaperP1.IncompatibleConnectedActivityUnderInputs.uniform_range
 #print axioms PaperP1.IncompatiblePairActivityAsymptotic.uniform_activity
 #print axioms PaperP1.IncompatiblePairActivityAsymptotic.uniform_signed_absolute_gap

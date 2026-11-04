@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**268 mathematical improvements and one statement-scope correction are confirmed.**
+**269 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -22900,3 +22900,26 @@ The passage from h to h.natAbs uses an explicit cast identity, so neither sign i
 P1-MATH-0269 closes instantiation of the complete actual two-lattice construction at the final rounded determinant scale and signed shift envelope. The negative auxiliary-chart flip, geometric local curve counts, removal of the N^zeta rounding margin from the final side bounds and primitive scale assembly remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are268 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15327 jobs); direct axiom audit passed for 13819 declarations using only propext, Classical.choice and Quot.sound; all 13028 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.47 GiB.
+
+
+## Both actual lattice side sums at the ideal paper scale with all rounding losses absorbed
+
+Both complete ACTUAL lattice side sums now have the IDEAL scale and error factor stated in the paper, with the literal rounded scale used to construct the same bases. All rounding, internal summation and fixed-constant losses are absorbed with an explicit nonempty exponent budget.
+
+RoundedScaleSideBudget proves the exact rounded upper bound
+
+  M<=2*N^zeta*exp(logShape).
+
+For every nonnegative weight W it derives sqrt(W*M)<=2*N^(zeta/2)*sqrt(W*exp(logShape)). It gives explicit horizontal and vertical side-cost comparisons, including both axis terms, with the accumulated exponent eta+zeta/2. No estimate for the actual rounded scale is assumed in its application.
+
+IdealSourceLatticeSums fixes eta>0,zeta in(0,7/16) and a final epsilon with eta+zeta/2<epsilon. It chooses kappa0,kappa1,N0 BEFORE N, the nonzero signed polylogarithmic shift and every moving source Box. For the LITERAL rounded M, it constructs both actual basis families with all exact coordinate data, polynomial heights, shortest columns and simultaneous point-coordinate bounds. For EVERY admissible finite original interval set, those SAME exact side lengths satisfy
+
+  sum L0(k)<=N^epsilon*(sqrt(D*E*mathcalM)+D+E),
+  sum T0(grid(k))<=N^epsilon*(sqrt(U*V*mathcalM)+U+V),
+  mathcalM=exp(logShape(N,D,E,U,V)).
+
+The proof reuses the proved constant-absorption theorem with the strictly positive remaining exponent epsilon-eta-zeta/2. Its two thresholds absorb the horizontal numerical constant and the vertical constant depending only on fixed C,rho. The literal integer bases remain unchanged throughout. The source thresholds M>=32,2M<=N and M*|h|<=N remain available.
+
+P1-MATH-0270 closes the actual two-lattice side-summation and final ideal-scale/error-budget passage. This is not yet the solution-population count: the negative auxiliary-chart assembly, geometric local curve counts and final primitive reductions still remain. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are269 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15331 jobs); direct axiom audit passed for 13824 declarations using only propext, Classical.choice and Quot.sound; all 13033 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.46 GiB.
