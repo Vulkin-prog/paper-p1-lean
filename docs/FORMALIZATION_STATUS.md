@@ -5,7 +5,7 @@ Neither document is fully formalized.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
-CompanionT19.10 is in progress: BOTH actual deletion kernels recover the intended independent background from the FULL compound reference at unconditional rate1, and from the ACTUAL original field at conditional rate4/5. The field-distance part is established. The finer intensity, covariance and sharp two-edge O(a_N^2) conclusions remain separate. P1-MATH-0156 removes the degree bound from the field coupling.
+CompanionT19.10 is in progress: BOTH actual original deletion kernels recover the intended independent background at conditional rate4/5 for EVERY FIXED polynomial weight. The full summed factorial covariance assertion is also proved at rate4/5, including all diagonal entries and tensor mean terms. The finer intensity and sharp two-edge O(a_N^2) conclusions remain separate. P1-MATH-0156 removes the degree bound from the earlier field coupling.
 
 The full original third absolute activity now reduces with coefficient one to literal strong exact-alignment triples, plus an error N^(-3/2+epsilon). All other triple sectors are proved at this power after an accuracy-dependent threshold. Main14.1 and14.6 stay in progress for the remaining strong-aligned upper bound.
 
@@ -112,7 +112,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **11316 audited theorem/lemma declarations**. This
+- The project currently has **11337 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -18123,3 +18123,68 @@ and45 conditional; confirmed improvements become156. Palomar
 remains a later milestone.
 
 Verified under Lean v4.36.0-rc2: full build passed (14087 jobs); direct axiom audit passed for 11316 declarations using only propext, Classical.choice and Quot.sound; all 9850 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.52 GiB.
+
+
+## Every fixed deletion weight and the full factorial covariance matrix
+
+CompanionT19.10 now has its full summed factorial covariance assertion,
+in addition to the previously checked ordinary field-distance assertion.
+Both actual original deleted fields are compared with the intended
+independent Poisson background at rate N^(-4/5+epsilon) for EVERY FIXED
+polynomial weight. The bundle of geometric inputs is chosen before the
+weight degree. Covariance uses degree2 and retains the same geometric
+properties, with a smaller numerical accuracy. T19.10 remains IN PROGRESS
+for its finer intensity assertion and original sharp O(a_N^2) two-edge,
+once/all total variation and Wasserstein consequences. Numbered coverage
+stays87/167 unconditional and45 conditional, with156 confirmed improvements.
+
+PolynomialWeightedFieldRate separates the generic cutoff argument from
+the model. A SINGLE unweighted estimate with margin epsilon/4 and
+subpower moments at all fixed orders suffice for all fixed polynomial
+weights. No geometric hypothesis is chosen after the degree. The positive
+moment bounds are explicit data; no unproved uniform bound is assumed.
+
+PositionalPoissonPolynomialMoments identifies the empty-edge compound
+target with the actual independent field and bounds every fixed moment
+when the total intensity is bounded. PositionalBackgroundMoments applies
+this unconditionally to the true rates p-iota_x, uniformly over every
+real private-prime cutoff. PositionalDeletedBackgroundMoments combines
+those bounded reference moments with the unconditional subpower original
+deleted moments. PositionalOriginalDeletionWeightedUnderInputs then gives
+the actual original once-deleted and isolated fields weighted L1 rate4/5.
+
+FiniteMomentComparison controls the SUM of finitely many absolute test
+expectation errors by a single weighted coefficient error. Tests are
+nonnegative and their SUM is bounded pointwise by the weight. All moment
+series, differences and finite/infinite interchanges are absolutely
+summable. This avoids any factor equal to the number of coordinates.
+
+PositionalFactorialCovariance defines actual coefficient means,
+second factorial moment entries and K_xy=E[X_x X_y]-1_(x=y)E[X_x]
+-E[X_x]E[X_y]. The tests are nonnegative for every natural-valued
+configuration, including the diagonal, and their full finite matrix sum
+is bounded by (1+totalCount)^2. Exact coordinate and mixed Poisson moments
+give K_xy=0 on the intended ground.
+
+PositionalCovarianceComparison proves the finite quantitative inequality
+
+ sum_(x,y in G)|K_xy(nu)| <= (1+2*sum_(x in G)p_x+D)*D,
+ D=sum_v(1+totalCount(v))^2*|coeff_v(nu)-coeff_v(Poisson(G,p))|.
+
+It proves both first and second moment measure comparisons and the tensor
+mean inequality explicitly, including their summability. No matrix entry
+is estimated with an accumulating cardinality factor. In the critical
+band, choose eta=min(epsilon/4,1/5); the weighted error is eventually at
+most1, sum_x(p-iota_x)<=2^C, and a fixed constant is absorbed into the
+remaining margin. PositionalOriginalCovarianceUnderInputs proves the
+SUM of the absolute covariance entries of BOTH actual original deleted
+fields is <=N^(-4/5+epsilon), as printed in T19.10.
+
+The finite comparison, Poisson identities and moment estimates are
+unconditional. Transfer to the actual original fields retains exactly
+the existing explicit main20.1 retained-component geometric bundle.
+No new external input, mathematical correction, axiom, dependency
+download, Paper C port or original manuscript edit is introduced.
+Palomar remains a later milestone.
+
+Verified under Lean v4.36.0-rc2: full build passed (14105 jobs); direct axiom audit passed for 11337 declarations using only propext, Classical.choice and Quot.sound; all 9871 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.48 GiB.

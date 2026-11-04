@@ -6465,8 +6465,11 @@ import PaperP1
 #print axioms PaperP1.PolynomialSplitKernelCount.uniform_count
 #print axioms PaperP1.PolynomialSplitKernelCount.single_square_equation
 #print axioms PaperP1.PolynomialSplitKernelCount.two_square_equations
+#print axioms PaperP1.PolynomialWeightedFieldRate.uniform_bound
+#print axioms PaperP1.PositionalBackgroundMoments.uniform_bound
 #print axioms PaperP1.PositionalBoundaryApproximationUnderInputs.uniform_bound
 #print axioms PaperP1.PositionalCompoundDeletionRate.uniform_bound
+#print axioms PaperP1.PositionalDeletedBackgroundMoments.uniform_bound
 #print axioms PaperP1.PositionalDeletionTransferUnderInputs.uniform_original_moments
 #print axioms PaperP1.PositionalDeletionTransferUnderInputs.uniform_weighted_comparison
 #print axioms PaperP1.PositionalFullApproximationUnderInputs.uniform_norm_bound
@@ -6476,7 +6479,9 @@ import PaperP1
 #print axioms PaperP1.PositionalInsertedPairRate.uniform_background
 #print axioms PaperP1.PositionalMomentBounds.uniform_original
 #print axioms PaperP1.PositionalMomentBounds.uniform_reference
+#print axioms PaperP1.PositionalOriginalCovarianceUnderInputs.uniform_bound
 #print axioms PaperP1.PositionalOriginalDeletionUnderInputs.uniform_norm_bound
+#print axioms PaperP1.PositionalOriginalDeletionWeightedUnderInputs.uniform_bound
 #print axioms PaperP1.PositionalPairConversionRate.uniform_bound
 #print axioms PaperP1.PositionalPoissonAccidentRate.uniform_any_active
 #print axioms PaperP1.PositionalPoissonAccidentRate.uniform_background
@@ -10598,6 +10603,8 @@ import PaperP1
 #print axioms PaperP1.FiniteLawShift.l1Norm_shift
 #print axioms PaperP1.FiniteLawShift.l1Norm_sub_comm
 #print axioms PaperP1.FiniteLawShift.abs_l1Norm_sub_le
+#print axioms PaperP1.FiniteMomentComparison.summable_test
+#print axioms PaperP1.FiniteMomentComparison.finite_tests_bound
 #print axioms PaperP1.Probability.ordered_power_difference_bound
 #print axioms PaperP1.Probability.ordered_moment_difference_bound
 #print axioms PaperP1.FiniteObservationConditional.mean_is_condExp
@@ -10997,6 +11004,10 @@ import PaperP1
 #print axioms PaperP1.PositionalCountReference.projection_target
 #print axioms PaperP1.PositionalCountTests.summable_test
 #print axioms PaperP1.PositionalCountTests.test_eq
+#print axioms PaperP1.PositionalCovarianceComparison.tensor_bound
+#print axioms PaperP1.PositionalCovarianceComparison.first_error_bound
+#print axioms PaperP1.PositionalCovarianceComparison.second_error_bound
+#print axioms PaperP1.PositionalCovarianceComparison.poisson_bound
 #print axioms PaperP1.PositionalDeficitNorm.family_term
 #print axioms PaperP1.PositionalDeficitNorm.scalar_difference_norm
 #print axioms PaperP1.PositionalDeficitNorm.scalar_two_differences_norm
@@ -11023,6 +11034,14 @@ import PaperP1
 #print axioms PaperP1.PositionalDeterministicMap.hasSum_atom_test
 #print axioms PaperP1.PositionalDeterministicMap.test_bound
 #print axioms PaperP1.PositionalDeterministicMap.polynomial_moment_bound
+#print axioms PaperP1.PositionalFactorialCovariance.finite_count_le
+#print axioms PaperP1.PositionalFactorialCovariance.factorialTest_nonneg
+#print axioms PaperP1.PositionalFactorialCovariance.factorialTest_le
+#print axioms PaperP1.PositionalFactorialCovariance.finite_first_test_bound
+#print axioms PaperP1.PositionalFactorialCovariance.finite_second_test_bound
+#print axioms PaperP1.PositionalFactorialCovariance.poisson_mean
+#print axioms PaperP1.PositionalFactorialCovariance.poisson_second
+#print axioms PaperP1.PositionalFactorialCovariance.poisson_covariance
 #print axioms PaperP1.PositionalFiniteCoupling.configuration_eq_of_count_eq
 #print axioms PaperP1.PositionalFiniteCoupling.coupling
 #print axioms PaperP1.PositionalFiniteCoupling.restoration_bound
@@ -11149,6 +11168,8 @@ import PaperP1
 #print axioms PaperP1.PositionalPoissonPairs.hasSum_coordinate_factorial_two
 #print axioms PaperP1.PositionalPoissonPairs.hasSum_pair_product
 #print axioms PaperP1.PositionalPoissonPairs.occupied_pair_bound
+#print axioms PaperP1.PositionalPoissonPolynomialMoments.empty_pair_target
+#print axioms PaperP1.PositionalPoissonPolynomialMoments.uniform_bound
 #print axioms PaperP1.PositionalProbabilityMeasure.real_singleton
 #print axioms PaperP1.PositionalProbabilityMeasure.law_eq_of_singletons
 #print axioms PaperP1.PositionalProbabilityMeasure.totalVariation_eq
