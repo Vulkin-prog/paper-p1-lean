@@ -8783,6 +8783,9 @@ import PaperP1
 #print axioms PaperP1.UniformIndependentExposureBudget.uniform_row_constant
 #print axioms PaperP1.UniformIndependentExposureBudget.uniform_budget
 #print axioms PaperP1.UniformLatticeCoordinateBoxes.uniform_coordinate_boxes
+#print axioms PaperP1.UniformLinearFactorDegrees.uniform_first_count
+#print axioms PaperP1.UniformLinearFactorDegrees.uniform_second_count
+#print axioms PaperP1.UniformLinearFactorDegrees.uniform_bilinear_minimum_count
 #print axioms PaperP1.UniformPairClassDeficit.uniform_bound
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
 #print axioms PaperP1.UniformReducedBinaryBasis.uniform_reduced_basis
