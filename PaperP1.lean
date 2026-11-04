@@ -3363,3 +3363,5 @@ public import PaperP1.Asymptotics.RelativeIntervalSideSum
 public import PaperP1.Arithmetic.QuadraticGridWeights
 public import PaperP1.Arithmetic.QuadraticIntervalGrid
 public import PaperP1.Asymptotics.DoubledDeterminantScale
+public import PaperP1.Analysis.QuadraticRelativeError
+public import PaperP1.Arithmetic.ActualVerticalGrid

@@ -2487,6 +2487,10 @@ import PaperP1
 #print axioms PaperP1.PrimitiveTailScaling.scaled_geometric_bound
 #print axioms PaperP1.PrimitiveTailScaling.scaled_series_bound
 #print axioms PaperP1.PrimitiveTailScaling.remaining_order_budget
+#print axioms PaperP1.QuadraticRelativeError.alpha_perturbation_bound
+#print axioms PaperP1.QuadraticRelativeError.beta_at_interval_scale
+#print axioms PaperP1.QuadraticRelativeError.quadratic_center_bound
+#print axioms PaperP1.QuadraticRelativeError.relative_grid_error
 #print axioms PaperP1.RankinComparison.sqrt_div_le_rankin
 #print axioms PaperP1.RankinComparison.cast_sqrt_div_le_rankin
 #print axioms PaperP1.RankinComparison.cast_prod_rpow
@@ -2751,6 +2755,8 @@ import PaperP1
 #print axioms PaperP1.ActualSourceTranslations.leading_coefficients
 #print axioms PaperP1.ActualSourceTranslations.symmetric_card_error
 #print axioms PaperP1.ActualSourceTranslations.simple_errors
+#print axioms PaperP1.ActualVerticalGrid.center_identity
+#print axioms PaperP1.ActualVerticalGrid.actual_grid_error
 #print axioms PaperP1.AdjacentSquareDivisibility.residue_exists
 #print axioms PaperP1.AdjacentSquareDivisibility.residue_progression_count
 #print axioms PaperP1.AdjacentSquareDivisibility.solutions_card_lower

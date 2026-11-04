@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records260 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records261 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13784 audited theorem/lemma declarations**. This
+- The project currently has **13790 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23520,3 +23520,18 @@ DoubledDeterminantScale reuses the already proved DeterminantHorizontalScale.uni
 P1-MATH-0261 closes the arithmetic quadratic regridding, its multiplicity/weight transfer and the doubled-scale admissibility required by the second lattice. The actual vertical point normalization and second-lattice coordinate/sum assembly, geometric curve counts and remaining primitive scale assembly remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are260 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15287 jobs); direct axiom audit passed for 13784 declarations using only propext, Classical.choice and Quot.sound; all 12986 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.61 GiB.
+
+
+## Actual vertical ratio error at the coefficient-scaled quadratic grid
+
+The ACTUAL original solution quadruples now satisfy a coefficient-uniform error bound relative to the quadratic integer grid. Let r=(c1/c2)*(D/E)^2, k be the actual floor interval index, and q=floor(k^2/M). For M>=4, the dyadic source bounds, the original signed-shift equation and source>=rho*N imply
+
+  |v/u-r*q/M| <= r*(49+16/rho)/M
+
+whenever M*|h|<=N. All moving-coefficient dependence stays in the explicit scale r; the numerical constant depends only on the fixed positive source lower bound rho. No estimate for these actual points is supplied as a premise.
+
+QuadraticRelativeError proves |2*alpha+alpha^2|<=12/M from |alpha|<=4/M, rescales the signed-shift error using M*|h|<=N, bounds the actual quadratic center by 4*r, and combines these estimates with the proved r/M grid-rounding error. ActualVerticalGrid defines the literal coefficient ratio and grid center, proves the exact center identity, and applies the existing exact normalization of the original integer quadruple. It derives positivity, index bounds, alpha control and the source-relative beta bound from the actual dyadic hypotheses and equation.
+
+P1-MATH-0262 closes the actual vertical ratio normalization, including negative shifts through |h|. The actual second-lattice point box, coordinate and side-sum assembly, geometric curve counts and remaining primitive scale assembly remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are261 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15291 jobs); direct axiom audit passed for 13790 declarations using only propext, Classical.choice and Quot.sound; all 12994 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.60 GiB.
