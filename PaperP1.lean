@@ -3474,3 +3474,4 @@ public import PaperP1.Asymptotics.SharpExpandedAsymmetricSparseSupport
 public import PaperP1.Asymptotics.SharpAsymmetricProfileUnderInputs
 public import PaperP1.Asymptotics.SharpExpandedAsymmetricProfileUnderInputs
 public import PaperP1.Analysis.AdjacentSquarefreeBudget
+public import PaperP1.Arithmetic.AdjacentSquarefreeCount

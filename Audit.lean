@@ -2869,6 +2869,13 @@ import PaperP1
 #print axioms PaperP1.AdjacentSquareDivisibility.residue_progression_count
 #print axioms PaperP1.AdjacentSquareDivisibility.solutions_card_lower
 #print axioms PaperP1.AdjacentSquareDivisibility.uniform_solutions_card_lower
+#print axioms PaperP1.AdjacentSquarefreeCount.divisor_count
+#print axioms PaperP1.AdjacentSquarefreeCount.square_divisor_index
+#print axioms PaperP1.AdjacentSquarefreeCount.bad_cover
+#print axioms PaperP1.AdjacentSquarefreeCount.bad_card_bound
+#print axioms PaperP1.AdjacentSquarefreeCount.good_bad_card
+#print axioms PaperP1.AdjacentSquarefreeCount.good_card_lower
+#print axioms PaperP1.AdjacentSquarefreeCount.arbitrarily_large
 #print axioms PaperP1.AffineGridAlignment.of_affine_grid
 #print axioms PaperP1.AffineGridAlignment.source_alignment
 #print axioms PaperP1.AffineGridAlignment.source_alignment_of_nonneg

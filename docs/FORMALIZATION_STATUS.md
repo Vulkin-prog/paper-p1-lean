@@ -9,7 +9,7 @@ Companion T1.5 is complete conditionally on exactly the same two ordinary biform
 
 Companion T1.4 is complete conditionally on exactly HeathBrownBiformInput.Input and NonGeometricBiformInput.Input. The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. Both ordinary input proofs remain open. The three incomplete numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records312 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records313 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -128,7 +128,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14069 audited theorem/lemma declarations**. This
+- The project currently has **14076 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24314,3 +24314,16 @@ The actual square-modulus family consists of4 followed by all odd squares. Every
 P1-MATH-0313 closes this elementary analytic budget. The finite divisibility cover and cardinality estimate, arbitrarily large adjacent-squarefree witnesses and their application to actual T5.1 data remain to be proved. No new actual-data counterexample is asserted at this preparatory checkpoint. The actual count conclusions ofT5.1 remain proved, and its original unqualified algebraic display remains awaiting exact wording alignment. Coverage stays89 proved and75 conditional out of167 (164 completed). There are312 improvements and one statement-scope correction. No external input, axiom, dependency download, compiler change or manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15513 jobs); direct axiom audit passed for 14069 declarations using only propext, Classical.choice and Quot.sound; all 13319 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.70 GiB.
+
+
+## Unconditional finite lower count and arbitrarily large adjacent-squarefree witnesses
+
+The adjacent-squarefree source construction is now unconditional. For every natural endpoint X, the actual good population consists of n in [1,X] for which both n and n+1 are squarefree. Its complement is covered by a finite union of the actual square-divisor events for modulus4 and odd square moduli. Every nonsquarefree positive integer supplies a prime square divisor; the corresponding modulus index and finite range membership are proved explicitly.
+
+For each shift t and positive modulus d, the number of starts n in [1,X] with d dividing n+t is at most (X+t)/d. This uses the injective translation into actual positive multiples and the earlier proved divisible_card lemma, with no additive floor error. For t=0 and t=1, each pair of bad events has total cardinality at most 2(X+1)/d. Applying the exact reciprocal budget from P1-MATH-0313 proves bad(X) <=35(X+1)/36 and therefore good(X)>=(X-35)/36.
+
+The explicit finite lower bound proves that for every M there is N>max(1,M) with both N and N+1 squarefree: take X=36(max(1,M)+2)+35, then the good population cannot fit inside [1,max(1,M)]. No squarefree-density theorem, asymptotic input, computational primality assertion or target count is assumed.
+
+P1-MATH-0314 completes the elementary source-witness existence theorem. The conversion of these witnesses into actual T5.1 kernel data and a quantified failure of its unqualified exact exponent display remains for the next step. The actual T5.1 count conclusions remain already proved; this preparatory arithmetic theorem does not change numbered coverage. Coverage stays89 proved and75 conditional out of167 (164 completed). There are313 improvements and one statement-scope correction. No new ordinary input, axiom, dependency download, compiler change or manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15515 jobs); direct axiom audit passed for 14076 declarations using only propext, Classical.choice and Quot.sound; all 13329 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.69 GiB.
