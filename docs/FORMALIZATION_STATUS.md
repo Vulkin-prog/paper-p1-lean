@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records251 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records252 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13679 audited theorem/lemma declarations**. This
+- The project currently has **13694 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23304,3 +23304,24 @@ PrimitiveShortestVector proves the exact image and squared-length scaling under 
 P1-MATH-0252 discharges existence and primitivity of the shortest vector required by the nearest-vector basis construction. The bounded Bezout completion and nearest-integer geometry from P1-MATH-0251 can now be applied to that actual vector. Remaining work includes assembling the reduced basis and explicit coordinate boxes for the two source lattices, geometric curve counts and final interval sums. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are251 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15235 jobs); direct axiom audit passed for 13679 declarations using only propext, Classical.choice and Quot.sound; all 12869 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.77 GiB.
+
+
+## Actual reduced unimodular bases with a globally shortest first vector
+
+Every invertible real image of the integer plane now has an actual reduced unimodular integer basis. Its first image vector is globally shortest, the second is constructed by nearest-integer reduction, and the length/projection/area inequalities are all proved. The length-order premise of the previous geometric lemma is discharged internally.
+
+BinaryBasisShear constructs the actual integer shear and its inverse, proves determinant one, and verifies both column identities. It transports the shear through any real lattice matrix and proves the exact oriented-area identity for the real images of integer matrix columns. Integer inverse matrices force each column to be nonzero. The explicit primitive Bezout completion has determinant one.
+
+ReducedBinaryLatticeBasis defines the actual reduced integer matrix and inverse using the nearest integer of the projection ratio. Both inverse products and determinant one are proved. Its first column is unchanged; its second real image is exactly the reduced vector used in the proved nearest-integer geometry.
+
+The existence theorem constructs a primitive globally shortest vector by the finite minimization from P1-MATH-0252, completes it to an actual integer basis, and applies the actual shear. The reduced second integer column is nonzero, so global minimality supplies the required length order. If v,w are the two real basis vectors, the theorem proves
+
+  0 < |v|^2 <= |w|^2,
+  |<v,w>| <= |v|^2/2,
+  3*|v|^2*|w|^2 <= 4*det(T)^2.
+
+It also retains global minimality of the first vector among ALL nonzero integer lattice vectors. Neither a shortest-vector nor a reduced-basis hypothesis is supplied to this existence theorem: an actual real left inverse of T is sufficient.
+
+P1-MATH-0253 closes the existence and elementary geometry of the reduced binary lattice basis. Polynomial coefficient-height control AFTER the nearest-integer shear, the exact lattice coordinate boxes and their source-scale specialization remain to be assembled, followed by geometric curve counts and interval sums. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are252 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15239 jobs); direct axiom audit passed for 13694 declarations using only propext, Classical.choice and Quot.sound; all 12887 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.76 GiB.

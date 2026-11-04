@@ -3337,3 +3337,5 @@ public import PaperP1.Analysis.BinaryEuclideanReduction
 public import PaperP1.Arithmetic.PrimitiveBinaryBasis
 public import PaperP1.Analysis.BinaryLatticeMinimum
 public import PaperP1.Arithmetic.PrimitiveShortestVector
+public import PaperP1.Analysis.ReducedBinaryLatticeBasis
+public import PaperP1.Arithmetic.BinaryBasisShear

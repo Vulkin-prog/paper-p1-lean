@@ -15634,6 +15634,50 @@
         "status": "not_integrated"
       },
       "validation_commit": "f8c954c45c491773ec91bdd5422279cd01d1479f"
+    },
+    {
+      "id": "P1-MATH-0253",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The source lattice admits a reduced unimodular basis whose first vector is shortest, whose second vector has bounded projection, and whose length product is controlled by the lattice determinant.",
+      "finding": "An actual reduced integer basis and its inverse are constructed from the proved primitive shortest vector and a concrete integer shear. Global minimality discharges the length-order premise and yields the exact squared area bound 3*|v|^2*|w|^2<=4*det(T)^2.",
+      "proposed_revision": "Specify the actual primitive completion and nearest-integer shear, retain the explicit inverse matrix, and derive the projection and area estimates from global shortest-vector minimality before estimating coordinate boxes.",
+      "impact": "Closes existence and exact elementary geometry of the actual reduced unimodular basis. Final basis coefficient heights, source coordinate boxes and curve/interval counts remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.ReducedBinaryLatticeBasis.reduced_inverse",
+        "PaperP1.ReducedBinaryLatticeBasis.reduced_det",
+        "PaperP1.ReducedBinaryLatticeBasis.reduced_first",
+        "PaperP1.ReducedBinaryLatticeBasis.reduced_second_image",
+        "PaperP1.ReducedBinaryLatticeBasis.reduced_geometry",
+        "PaperP1.ReducedBinaryLatticeBasis.exists_reduced_basis",
+        "PaperP1.BinaryBasisShear.shear_inverse",
+        "PaperP1.BinaryBasisShear.shear_det",
+        "PaperP1.BinaryBasisShear.first_column",
+        "PaperP1.BinaryBasisShear.second_column",
+        "PaperP1.BinaryBasisShear.sheared_inverse",
+        "PaperP1.BinaryBasisShear.column_nonzero",
+        "PaperP1.BinaryBasisShear.sheared_image",
+        "PaperP1.BinaryBasisShear.image_area",
+        "PaperP1.BinaryBasisShear.primitive_basis_det",
+        "PaperP1.ReducedBinaryLatticeBasis.reduced",
+        "PaperP1.ReducedBinaryLatticeBasis.reducedInverse",
+        "PaperP1.BinaryBasisShear.shear"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15239 jobs); direct axiom audit passed for 13694 declarations using only propext, Classical.choice and Quot.sound; all 12887 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.76 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
