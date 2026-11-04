@@ -2987,3 +2987,17 @@ public import PaperP1.Combinatorics.PairGeneratedTripleWeights
 public import PaperP1.Model.FiniteChannelTripleMass
 public import PaperP1.Model.FixedPrivateChannelDisjoint
 public import PaperP1.Model.GoodPairGeneratedTriples
+public import PaperP1.Arithmetic.ForwardSubsetEmbedding
+public import PaperP1.Arithmetic.SubsetComponentOffsets
+public import PaperP1.Arithmetic.SubsetEnvelopeGraph
+public import PaperP1.Arithmetic.SubsetEnvelopeRank
+public import PaperP1.Arithmetic.SubsetEnvelopeRelation
+public import PaperP1.Arithmetic.SubsetEvenLoss
+public import PaperP1.Arithmetic.SubsetSingletonBudget
+public import PaperP1.Arithmetic.SubsetTargetComponents
+public import PaperP1.Asymptotics.SubsetComponentHostCount
+public import PaperP1.Asymptotics.SubsetComponentHostData
+public import PaperP1.Asymptotics.SubsetComponentSystems
+public import PaperP1.Asymptotics.SubsetDefectDensity
+public import PaperP1.Asymptotics.SubsetKernelPowers
+public import PaperP1.Model.HomogeneousSubsetBlockInteraction
