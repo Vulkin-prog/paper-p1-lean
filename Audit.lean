@@ -2356,6 +2356,7 @@ import PaperP1
 #print axioms PaperP1.ReciprocalOddPivotDyadicScale.uniform_dyadic_sandwich
 #print axioms PaperP1.ReciprocalOddPivotDyadicScale.companion_T19_15
 #print axioms PaperP1.ReciprocalOddPivotFullScale.uniform_full_sandwich
+#print axioms PaperP1.ReciprocalOddPivotTripleScale.upper_with_one
 #print axioms PaperP1.ReciprocalOddPivotUpper.finite_small_part_bound
 #print axioms PaperP1.ReciprocalOddPivotUpper.uniform_finite_upper
 #print axioms PaperP1.rpow_neg_one_half_eq_inv_sqrt
@@ -2419,6 +2420,8 @@ import PaperP1
 #print axioms PaperP1.SaddleExpansion.saddle_cutoff_second_order
 #print axioms PaperP1.SaddleExpansion.hard_saddle_second_order
 #print axioms PaperP1.SaddleExpansion.soft_saddle_second_order
+#print axioms PaperP1.SaddleLogPrefactors.logarithmic_power
+#print axioms PaperP1.SaddleLogPrefactors.logarithmic_width_le_height
 #print axioms PaperP1.SaddleMonotonicity.parameter_monotone
 #print axioms PaperP1.SaddleMonotonicity.cutoff_monotone
 #print axioms PaperP1.SaddleMonotonicity.nu_monotone
@@ -7972,6 +7975,13 @@ import PaperP1
 #print axioms PaperP1.SignedPrescribedSaddleLower.uniform_actual_lower
 #print axioms PaperP1.SignedPrescribedSaddleLower.uniform_power_obstruction
 #print axioms PaperP1.SignedSaddleCostLower.uniform_actual_lower
+#print axioms PaperP1.SignedSaddleCostTheorem.specifiedCost_eq
+#print axioms PaperP1.SignedSaddleCostTheorem.log_error_of_sandwich
+#print axioms PaperP1.SignedSaddleCostTheorem.uniform_power_obstruction
+#print axioms PaperP1.SignedSaddleCostTheorem.not_bigO_critical_sequence
+#print axioms PaperP1.SignedSaddleCostTheorem.companion_T19_16
+#print axioms PaperP1.SignedSaddleCostTheorem.normalized_log_limit
+#print axioms PaperP1.SignedSaddleCostUpper.uniform_upper_from_profile
 #print axioms PaperP1.SignedSaddleCriticalLower.lowerConstant_pos
 #print axioms PaperP1.SignedSaddleCriticalLower.critical_prefactor
 #print axioms PaperP1.SignedSaddleCriticalLower.uniform_actual_lower

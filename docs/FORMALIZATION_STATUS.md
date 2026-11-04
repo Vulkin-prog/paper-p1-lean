@@ -1,9 +1,9 @@
 # Formalization status
 
-Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
+Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and71 conditional. The project records229 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records230 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -17,7 +17,7 @@ CompanionT1.7 is complete conditionally on the existing ordinary/source surface-
 
 CompanionT4.4 is complete conditionally with the stronger fixed compressed primitive exponentkappa_b. Its r>=4 main bound is unconditional; r=3 uses only the existing finite geometry. The exact unordered population and both homogeneous/nominal and original affine weights are transported. CompanionT15.1 is now complete conditionally on the full original dyadic model, with both centered masses, all target cardinalities and all real source cutoffs; its separated exponent is improved to41/30 for both principal channels together.
 
-Main14.1,14.3,14.4 and14.6 are complete conditionally. The full original third absolute activity, connected triple joint mass and third factorial cumulant have their sharp41/30 power. Both optimal cumulant bounds use the actual mean and all repeated-index terms. The strong geometrically aligned sector14.4 needs only finite geometry; the global14.1/14.3/14.6 route explicitly retainsBCN. The new actual nonaligned channel massN^(-2+1/b+epsilon) bypasses the unresolved31/24 raw-loss profile. Seven numbered arithmetic/forcing results remain incomplete. The actual signed private-pivot field and finite directed coordinate-cost ledger ofT19.16 are constructed; its precise logarithmic asymptotic remains in progress. T19.17 is complete conditionally on the explicit fixed-parameter Matomäki–Radziwiłł ordinary smooth short-interval input, including both actual deterministic and universal measurable randomized bounds at the printed parameters.
+Main14.1,14.3,14.4 and14.6 are complete conditionally. The full original third absolute activity, connected triple joint mass and third factorial cumulant have their sharp41/30 power. Both optimal cumulant bounds use the actual mean and all repeated-index terms. The strong geometrically aligned sector14.4 needs only finite geometry; the global14.1/14.3/14.6 route explicitly retainsBCN. The new actual nonaligned channel massN^(-2+1/b+epsilon) bypasses the unresolved31/24 raw-loss profile. Six numbered arithmetic results remain incomplete. Companion T19.16 is complete conditionally: its actual prescribed signed cost has the exact logarithmic equivalent under ordinary EIPInput and the six existing ordinary geometric inputs. Its literal non-Big-O obstruction uses only EIPInput. T19.17 is complete conditionally on the explicit fixed-parameter Matomäki–Radziwiłł ordinary smooth short-interval input, including both actual deterministic and universal measurable randomized bounds at the printed parameters.
 
 Main12.1 is complete conditionally on the existing explicit BCN input: actual dense triples with weak proper intersections have at mostN^epsilon hosts and total heterogeneous rank mass N^(-2+theta+epsilon). The actual common injective physical subspace, exact-alignment deletion and regularization are constructed unconditionally; no chosen object is enumerated.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13314 audited theorem/lemma declarations**. This
+- The project currently has **13324 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22880,3 +22880,23 @@ The reciprocal sum and full-value profile are the actual P1 objects. The estimat
 P1-MATH-0230 records the complete finite upper ledger and the absence of an artificial type-count loss. Only the asymptotic absorption and final two-sided assembly remain for T19.16, which stays in progress. Coverage remains 89 proved and 71 conditional out of 167, with seven incomplete numbered results. There are 229 improvements and one statement-scope correction. No additional external input, axiom, Paper C code port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15093 jobs); direct axiom audit passed for 13314 declarations using only propext, Classical.choice and Quot.sound; all 12411 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.20 GiB.
+
+
+## Complete prescribed signed saddle cost and nonpower obstruction under explicit ordinary inputs
+
+Companion T19.16 is now completely assembled for the literal prescribed signed private-pivot forcing, conditionally on ordinary EIPInput and the six previously explicit ordinary geometric inputs. No target cost, profile or joint-probability bound is supplied in the final theorem.
+
+SaddleLogPrefactors proves that every fixed logarithmic polynomial is absorbed by exp(eta*nu_N), and that every fixed logarithmic width is eventually at most N. ReciprocalOddPivotTripleScale transports the actual reciprocal-pivot bound at 3N to the original actual saddle at N, retaining the endpoint +1. Its only external dependency is the ordinary EIPInput already used for T19.15.
+
+SignedSaddleCostUpper applies the complete actual finite ledger. The reciprocal term and every logarithmic factor are absorbed at the precise second saddle scale. The raw profile contribution has a smaller fixed power and is negligible at that same scale. The intermediate theorem exposes its actual raw-profile premise; the final theorem discharges it with the already proved enlarged actual profile under the six ordinary surface/curve inputs.
+
+SignedSaddleCostTheorem defines the literal specified cost at E=ceil(3V_N/log2), and proves companion_T19_16. A single finite geometric bundle is selected before EVERY requested epsilon>0. Then one threshold precedes every actual critical length, and
+
+  exp(-2V_N-epsilon*nu_N) <= specifiedCost(N,L)
+  <= exp(-2V_N+epsilon*nu_N).
+
+The exact logarithmic error bound is proved. For EVERY eventually admissible critical length sequence, the normalized error (log(cost)+2V_N)/nu_N tends to zero. The literal negation of IsBigO(N^(-alpha)) is also proved for every alpha>0; this obstruction uses only EIPInput and does not require the geometric upper-profile assumptions. It concerns this specified positive coordinate cost, and gives no lower bound for dependence, total variation or a cancelled scalar cost.
+
+P1-MATH-0231 records the complete conditional assembly and the dependency distinction between its two directions. T19.16 advances from in_progress to conditional after the full pinned-compiler checks and direct axiom audit pass. Coverage becomes 89 proved and 72 conditional out of 167: 161 complete and six incomplete numbered results. There are 230 improvements and one statement-scope correction. The remaining incomplete results are main 13.4 and companion T1.4, T1.5, T1.10, T1.13 and T5.1. Neither document is fully formalized; many conditional results retain unformalized ordinary inputs. No additional external input, axiom, Paper C code port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15101 jobs); direct axiom audit passed for 13324 declarations using only propext, Classical.choice and Quot.sound; all 12423 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.18 GiB.

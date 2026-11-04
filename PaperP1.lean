@@ -3266,3 +3266,7 @@ public import PaperP1.Asymptotics.SignedDyadicCostUpper
 public import PaperP1.Model.SignedCostEnvelope
 public import PaperP1.Model.SignedMaximalFootprint
 public import PaperP1.Model.SignedTypeWeightSums
+public import PaperP1.Analysis.ReciprocalOddPivotTripleScale
+public import PaperP1.Analysis.SaddleLogPrefactors
+public import PaperP1.Asymptotics.SignedSaddleCostTheorem
+public import PaperP1.Asymptotics.SignedSaddleCostUpper
