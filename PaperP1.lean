@@ -3252,3 +3252,7 @@ public import PaperP1.Asymptotics.SignedSaddleCriticalLower
 public import PaperP1.Asymptotics.SignedSaddleExcess
 public import PaperP1.Arithmetic.RawEvenProfileComparison
 public import PaperP1.Model.RawEvenProfileHosts
+public import PaperP1.Arithmetic.RawWindowExtension
+public import PaperP1.Asymptotics.CriticalRawValueProfileUnderInputs
+public import PaperP1.Asymptotics.EnlargedRawValueProfileUnderInputs
+public import PaperP1.Asymptotics.UnsignedTwoChannelMainBound

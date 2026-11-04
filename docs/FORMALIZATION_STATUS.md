@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and71 conditional. The project records225 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and71 conditional. The project records226 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13265 audited theorem/lemma declarations**. This
+- The project currently has **13274 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22802,3 +22802,22 @@ RawEvenProfileHosts proves that nonzero actual full rank is EQUIVALENT to the li
 P1-MATH-0226 records this exact comparison and host correction. These are new P1 proofs using the existing actual parity maps and the already proved host count; no additional Paper C code is ported. The sharp lower forcing cost and its power obstruction are complete under EIPInput. The weighted upper profile and actual upper-cost assembly remain open, so T19.16 stays in progress. Coverage remains89 proved and71 conditional out of167, with seven incomplete numbered results. There are225 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15065 jobs); direct axiom audit passed for 13265 declarations using only propext, Classical.choice and Quot.sound; all 12351 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.29 GiB.
+
+
+## Actual weighted full-value profiles at the prescribed moving maximal width
+
+The weighted full-value profile needed for the upper direction of T19.16 is now proved at the actual prescribed moving maximal width, conditional on the six existing ordinary surface/curve inputs used for the P1 positive pair profile. No weighted profile is assumed.
+
+UnsignedTwoChannelMainBound proves the actual positive two-channel main term is at most N^(4/3+epsilon), using the exact finite unsigned sums, critical word powers and internally proved logarithmic-factor absorption. CriticalRawValueProfileUnderInputs combines the existing complete even profile with the new actual raw/even comparison and genuine raw-host count. The resulting full raw profile over ALL original separated ordered pairs is at most N^(3/2+epsilon). Its geometric hypotheses are explicit and unchanged in meaning; it does not require EIPInput or a supplied target profile bound.
+
+RawWindowExtension proves that increasing the actual width from L to Q creates at most2*(Q-L) extra raw-kernel dimensions. The proof compares the actual parity-column ranges by an explicit inclusion and rank-nullity. Its finite weighted inequality charges newly created relations only to the genuine raw hosts at Q, avoiding a full ambient-square correction.
+
+EnlargedRawValueProfileUnderInputs proves the exact factor2^(2E+2) is subpolynomial for E=ceil(3V_N/log2). The separated maximal-width mask is a subset of the original separated mask; the new host count holds uniformly at every logarithmic width. Combining these internal facts gives the complete actual enlarged full-value profile
+
+  sum_{separated maximal supports}(2^fullRank-1) <=N^(3/2+epsilon).
+
+This is stronger in power than the five-thirds bound cited in the source, while retaining the explicit ordinary geometric inputs of this formalization. It is not an unconditional theorem: the six surface/normalized-curve inputs are still unformalized theorem arguments. The lower-cost direction remains complete under the separate sole ordinary EIPInput.
+
+P1-MATH-0227 records the original and enlarged weighted full-value profiles and exact moving-width transport. The actual finite joint-word cost upper assembly remains open, so T19.16 stays in progress. Coverage remains89 proved and71 conditional out of167, with seven incomplete numbered results. There are226 improvements and one statement-scope correction. No new target-bound input, axiom, additional Paper C code port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15073 jobs); direct axiom audit passed for 13274 declarations using only propext, Classical.choice and Quot.sound; all 12361 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.27 GiB.

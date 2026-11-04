@@ -4675,6 +4675,10 @@ import PaperP1
 #print axioms PaperP1.RawPairRelationRank.complete_le_full
 #print axioms PaperP1.RawPairRelationRank.intersection_le_full
 #print axioms PaperP1.RawPairRelationRank.relative_le_full
+#print axioms PaperP1.RawWindowExtension.range_monotone
+#print axioms PaperP1.RawWindowExtension.rank_extension
+#print axioms PaperP1.RawWindowExtension.weight_extension
+#print axioms PaperP1.RawWindowExtension.finite_extension
 #print axioms PaperP1.ReceivedPrimeCertificate.primeFactors_product_subset
 #print axioms PaperP1.ReceivedPrimeCertificate.edge_of_received_product
 #print axioms PaperP1.ReciprocalOddPivots.pivotSum_nonneg
@@ -6217,6 +6221,7 @@ import PaperP1
 #print axioms PaperP1.CriticalRationalSquareGraphExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalRationalSquareGraphExclusion.squares_of_odd_extension
 #print axioms PaperP1.CriticalRationalSquareGraphExclusion.eventually_no_dyadic_point_of_odd_extension
+#print axioms PaperP1.CriticalRawValueProfileUnderInputs.uniform_profile
 #print axioms PaperP1.CriticalRepeatedLeftAllCoverExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalRepeatedLeftCurveExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalRepeatedLeftDegreeGap.eventually_degree_gt
@@ -6485,6 +6490,9 @@ import PaperP1
 #print axioms PaperP1.EnlargedPhysicalTargetTripleMass.uniform_count
 #print axioms PaperP1.EnlargedPhysicalTargetTripleMass.uniform_mass
 #print axioms PaperP1.EnlargedPhysicalTargetTripleProbability.uniform_point_bound
+#print axioms PaperP1.EnlargedRawValueProfileUnderInputs.excess_factor_small
+#print axioms PaperP1.EnlargedRawValueProfileUnderInputs.separated_subset
+#print axioms PaperP1.EnlargedRawValueProfileUnderInputs.uniform_profile
 #print axioms PaperP1.EnlargedRootPatterns.polynomial_offset_factor
 #print axioms PaperP1.EnlargedRootPatterns.general_offsets
 #print axioms PaperP1.EnlargedRootPatterns.linear_offsets
@@ -8276,6 +8284,7 @@ import PaperP1
 #print axioms PaperP1.UnitChannelPairWeights.uniform_coefficient
 #print axioms PaperP1.UniversalPrivateObstructionArbitraryAuxiliary.randomized_under_census
 #print axioms PaperP1.UnorderedSeedMassPropagation.uniform_mass
+#print axioms PaperP1.UnsignedTwoChannelMainBound.uniform_main_bound
 #print axioms PaperP1.ValueHeightHalfCount.article_10_1
 #print axioms PaperP1.ValueHeightHalfCount.uniform_logarithmic_count
 #print axioms PaperP1.VariableSeedMassPropagation.uniform_mass

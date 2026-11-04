@@ -14414,6 +14414,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "11531ea4748629a8f88382dcee2795dfeee33ec7"
+    },
+    {
+      "id": "P1-MATH-0227",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:private-exact",
+        "number": "T19.16",
+        "page": 80,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1214,
+        "statement_sha256": "6baf345eb5567df4010efd0ecbca65dd33af3c09e924d3b13643b928c59b8315"
+      },
+      "original_assumption": "T19.16 uses a full-value weighted profile for maximal supports whose excess grows like the actual saddle.",
+      "finding": "Original and enlarged full raw profiles have a three-halves upper power under the existing six ordinary geometric inputs; actual extra-coordinate ranks, genuine new-host support and subpolynomial moving-excess factors are proved internally.",
+      "proposed_revision": "Make the geometric dependencies explicit and transport the original profile by extra-coordinate rank and actual enlarged hosts, instead of imposing a fixed critical offset on the maximal width.",
+      "impact": "Discharges the weighted full-value upper-profile obligation for T19.16 under the existing geometric bundle, with a stronger three-halves exponent; the finite signed cost upper assembly remains.",
+      "evidence": [
+        "PaperP1.RawWindowExtension.range_monotone",
+        "PaperP1.RawWindowExtension.rank_extension",
+        "PaperP1.RawWindowExtension.weight_extension",
+        "PaperP1.RawWindowExtension.finite_extension",
+        "PaperP1.CriticalRawValueProfileUnderInputs.uniform_profile",
+        "PaperP1.EnlargedRawValueProfileUnderInputs.excess_factor_small",
+        "PaperP1.EnlargedRawValueProfileUnderInputs.separated_subset",
+        "PaperP1.EnlargedRawValueProfileUnderInputs.uniform_profile",
+        "PaperP1.UnsignedTwoChannelMainBound.uniform_main_bound",
+        "PaperP1.CriticalRawValueProfileUnderInputs.mass"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15073 jobs); direct axiom audit passed for 13274 declarations using only propext, Classical.choice and Quot.sound; all 12361 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.27 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
