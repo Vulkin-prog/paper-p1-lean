@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records270 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records271 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13832 audited theorem/lemma declarations**. This
+- The project currently has **13843 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23707,3 +23707,18 @@ For EVERY original SignedPopulation, the same theorem supplies its actual positi
 P1-MATH-0271 closes the signed orientation and joint actual auxiliary/lattice-data assembly. Applying the proved polynomial-coordinate/four-chart factor transformations to these constructed bases, geometric local curve counts and final primitive reductions remain open. The integer auxiliary is not claimed absolutely irreducible, and no local curve-point count is assumed or claimed. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are270 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15335 jobs); direct axiom audit passed for 13832 declarations using only propext, Classical.choice and Quot.sound; all 13043 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.44 GiB.
+
+
+## Actual primitive quadruples in inverse polynomial coordinates and bounded four-chart factor covers
+
+The actual primitive source quadruples now pass through the polynomial-coordinate and four-chart factor reduction with EXACT preservation of their finite cardinality. This connects the abstract signed-integer projective machinery to the literal original solution variables.
+
+ActualProjectivePairs defines the literal integer pairs ((d,e),(v,u)) and their actual inverse matrix coordinates. It proves the original embedding and the coordinate map injective, exact equality of population cardinalities, preservation of both primitive pairs under the actual integer inverses, and preservation of primitivity under the signed positive orientation. No projective quotient or multiplicity is silently substituted for the original quadruple population.
+
+ActualAuxiliaryCoordinates recovers uniform coefficient bounds for the actual auxiliary-form family from the literal biform coefficients. It proves the form family nonzero, constructs the actual transformed form-family height exponent BEFORE N and all moving matrices, and proves that the literal original auxiliary equation vanishes in the actual inverse coordinates. The uniform height proof reuses the previously established coefficient reconstruction and polynomial coordinate-growth theorem; it assumes no transformed equation bound.
+
+ActualAuxiliaryFactorCover combines those facts with the proved four signed affine charts and exact factor covers. Given actual integer inverse matrices and their proved basis-height bounds, EVERY finite primitive original quadruple population on the actual auxiliary biform has a cover in its literal inverse-coordinate image by boundedly many nonconstant integer irreducible factors per chart. The bidegrees and polynomial coefficient/height exponent are fixed BEFORE N, the auxiliary polynomial, matrices and population. Every transformed point lies on an actual factor, and the ORIGINAL population cardinality is bounded by the sum of actual chart/factor zero-population cardinalities.
+
+The factors are only claimed integer irreducible, not absolutely irreducible. The actual zero or negative inverse coordinates are handled by all four proved charts; none is discarded. P1-MATH-0272 closes the original-quadruple polynomial-coordinate and factor-cover bridge. Applying it to the constructed simultaneous lattice family on every occupied cluster, retaining the actual real side boxes, geometric local curve counts and final primitive reductions remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are271 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15341 jobs); direct axiom audit passed for 13843 declarations using only propext, Classical.choice and Quot.sound; all 13057 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.42 GiB.

@@ -16321,6 +16321,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "eb3d7f2b077678eb3ff8251cf5841d97108f705a"
+    },
+    {
+      "id": "P1-MATH-0272",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The literal original quadruple population can be transported into the lattice coordinates and factor charts without losing cardinality, primitivity, equation vanishing or uniform auxiliary coefficient bounds.",
+      "finding": "An exact injective quadruple-to-inverse-coordinate map preserves cardinality and primitivity, transports the actual auxiliary equations, and supports uniform transformed coefficient bounds. The literal original population is covered by actual bounded-degree, bounded-height integer irreducible chart factors.",
+      "proposed_revision": "Introduce the literal quadruple embedding and inverse-coordinate population, prove its exact cardinality and primitive properties, and derive its transformed equation/height bounds before applying all four chart factor covers.",
+      "impact": "Closes the actual original-quadruple coordinate and factor-cover bridge. Its constructed-family cluster application and real side boxes, local geometric curve counts and primitive reductions remain open. Integer irreducibility is kept distinct from absolute irreducibility; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.ActualProjectivePairs.integerPoint_injective",
+        "PaperP1.ActualProjectivePairs.integerPoint_primitive",
+        "PaperP1.ActualProjectivePairs.coordinates_injective",
+        "PaperP1.ActualProjectivePairs.coordinates_card",
+        "PaperP1.ActualProjectivePairs.coordinates_primitive",
+        "PaperP1.ActualProjectivePairs.oriented_primitive",
+        "PaperP1.ActualAuxiliaryFactorCover.uniform_actual_cover",
+        "PaperP1.ActualAuxiliaryCoordinates.forms_height",
+        "PaperP1.ActualAuxiliaryCoordinates.forms_family_nonzero",
+        "PaperP1.ActualAuxiliaryCoordinates.uniform_transformed_family_height",
+        "PaperP1.ActualAuxiliaryCoordinates.coordinate_zero",
+        "PaperP1.ActualProjectivePairs.Primitive",
+        "PaperP1.ActualProjectivePairs.integerPoint",
+        "PaperP1.ActualProjectivePairs.coordinates"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15341 jobs); direct axiom audit passed for 13843 declarations using only propext, Classical.choice and Quot.sound; all 13057 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.42 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

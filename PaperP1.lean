@@ -3387,3 +3387,6 @@ public import PaperP1.Analysis.RoundedScaleSideBudget
 public import PaperP1.Asymptotics.IdealSourceLatticeSums
 public import PaperP1.Arithmetic.DeterminantPositiveOrientation
 public import PaperP1.Asymptotics.OrientedAuxiliaryLatticeData
+public import PaperP1.Arithmetic.ActualProjectivePairs
+public import PaperP1.Asymptotics.ActualAuxiliaryFactorCover
+public import PaperP1.Diophantine.ActualAuxiliaryCoordinates

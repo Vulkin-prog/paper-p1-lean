@@ -2748,6 +2748,12 @@ import PaperP1
 #print axioms PaperP1.ActualOffsetNonalignment.NoExact.symm
 #print axioms PaperP1.ActualOffsetNonalignment.of_nonaligned
 #print axioms PaperP1.ActualOffsetNonalignment.of_disjoint
+#print axioms PaperP1.ActualProjectivePairs.integerPoint_injective
+#print axioms PaperP1.ActualProjectivePairs.integerPoint_primitive
+#print axioms PaperP1.ActualProjectivePairs.coordinates_injective
+#print axioms PaperP1.ActualProjectivePairs.coordinates_card
+#print axioms PaperP1.ActualProjectivePairs.coordinates_primitive
+#print axioms PaperP1.ActualProjectivePairs.oriented_primitive
 #print axioms PaperP1.ActualRelativeDeterminant.first_normalization
 #print axioms PaperP1.ActualRelativeDeterminant.center_positive
 #print axioms PaperP1.ActualRelativeDeterminant.second_normalization
@@ -6098,6 +6104,7 @@ import PaperP1
 #print axioms PaperP1.ActiveEdgeMoments.uniform_activation
 #print axioms PaperP1.ActivePhysicalGroupCountUnderBCN.uniform_count_active
 #print axioms PaperP1.ActivePhysicalGroupCountUnderBCN.uniform_count
+#print axioms PaperP1.ActualAuxiliaryFactorCover.uniform_actual_cover
 #print axioms PaperP1.ActualCompressedCrossingProfile.points_subset_targets
 #print axioms PaperP1.ActualCompressedCrossingProfile.finite_bound
 #print axioms PaperP1.ActualCompressedCrossingProfile.uniform_offsets
@@ -9637,6 +9644,10 @@ import PaperP1
 #print axioms PaperP1.ZeroSumFreeRepresentations.representations_one_card_le
 #print axioms PaperP1.ZeroSumFreeRepresentations.representation_cover
 #print axioms PaperP1.ZeroSumFreeRepresentations.representations_card_le
+#print axioms PaperP1.ActualAuxiliaryCoordinates.forms_height
+#print axioms PaperP1.ActualAuxiliaryCoordinates.forms_family_nonzero
+#print axioms PaperP1.ActualAuxiliaryCoordinates.uniform_transformed_family_height
+#print axioms PaperP1.ActualAuxiliaryCoordinates.coordinate_zero
 #print axioms PaperP1.BidegreeOneCurveCount.integer_box_floor
 #print axioms PaperP1.BidegreeOneCurveCount.mem_realSolutions
 #print axioms PaperP1.BidegreeOneCurveCount.integer_coefficient_bound
