@@ -11217,6 +11217,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "cbaf99745c38afbba8fdf4602aa44ddab1b38bd3"
+    },
+    {
+      "id": "P1-MATH-0167",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:independent-tail",
+        "number": "15.8",
+        "page": 44,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 461,
+        "statement_sha256": "26d84d57f8cb53436e7b79775ab6c877710277ee810b9a8dbf849a805d4c6e27"
+      },
+      "original_assumption": "The independent-tail proof extends to one fixed geometric compressed block by saying that only constant factors and polynomial offset choices change; it does not write the possible source/target-centre collision or its mass multiplicity.",
+      "finding": "A source space contained in one longer actual window admits an insert-or-erase participation alternative, even when its centre is already a target. The full weighted reconstruction multiplicity is at most 1+|G|*(2m+m^2), hence at most(1+M)^2 for |G|=N and m=M/N. This reduces every one-block full-support tail to the already proved positive-prefix participating tail. The larger source range is rescaled with explicit constants and the exact actual normalized source blocks are embedded without any injectivity premise. A common total cutoff S uses S-1 new windows in the compressed clause.",
+      "evidence": [
+        "PaperP1.OneSeedParticipation.insert_or_erase",
+        "PaperP1.OneSeedWeights.heterogeneous_bound",
+        "PaperP1.PrefixOneSeedTail.uniform_tail",
+        "PaperP1.WideOneSeedTail.uniform_tail",
+        "PaperP1.BoundedBlockIndependentTail.uniform_blocks",
+        "PaperP1.CompressedBlockIndependentTail.contained",
+        "PaperP1.CompressedBlockIndependentTail.anchor_centre",
+        "PaperP1.CompressedBlockIndependentTail.uniform_channel",
+        "PaperP1.IndependentTailTheorem.article_15_8"
+      ],
+      "proposed_revision": "Replace the informal compressed-block transfer by the finite insert-or-erase lemma and its explicit independent-weight bound. Retain collisions, all source multiplicities and actual normalized integer labels. State the total-cardinality cutoff with one fewer new window when the distinguished block is present.",
+      "impact": "Both clauses of main15.8 are proved unconditionally, with one common fixed total cutoff and no new external arithmetic, geometric or probabilistic premise.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14451 jobs); direct axiom audit passed for 11950 declarations using only propext, Classical.choice and Quot.sound; all 10655 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.62 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

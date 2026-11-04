@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic power and remaining sharp arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile and41/30 activity claims remain open. Coverage is87/167 unconditional and56 conditional. The project records165 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile and41/30 activity claims remain open. Coverage is88/167 unconditional and56 conditional. The project records166 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -120,7 +120,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **11927 audited theorem/lemma declarations**. This
+- The project currently has **11950 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -19463,3 +19463,60 @@ No external input, source-manuscript change, compiler or dependency change
 is introduced. Palomar remains a later completion milestone.
 
 Verified under Lean v4.36.0-rc2: full build passed (14431 jobs); direct axiom audit passed for 11927 declarations using only propext, Classical.choice and Quot.sound; all 10627 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.67 GiB.
+
+
+## Complete one-compressed-block independent tail
+
+Main15.8 is now COMPLETE UNCONDITIONALLY, including the independent
+full-support tail with one fixed bounded geometric block. The proof covers
+arbitrary actual finite old-label sets inside a complete containing window
+of width D*(L+1), with source centres throughout a fixed larger prefix
+[2,Q*N+2). One common total-cardinality cutoff and threshold precede all
+critical N,L and EVERY old-block family satisfying the literal containment.
+The exact original heterogeneous marginals are retained and the source
+has its independent weight v*2^(-L). No source rank, private-prime property,
+geometric cover, count estimate or approximation error is assumed.
+
+OneSeedParticipation proves the actual insert-or-erase alternative for
+relative coordinatewise participation when one source space is contained
+in the effective space at a distinguished centre. The source centre may
+already occur in the new family. If its combined coordinate participates,
+the inserted family participates; otherwise erasing this centre leaves
+a participating family. At most one target coordinate is lost.
+EvenWindowEnlargement proves literal monotonicity of effective even
+spaces under inclusion of actual label sets and under longer complete
+windows, with no injectivity or private-coordinate requirement.
+
+OneSeedWeights keeps all source and family reconstruction multiplicities.
+For a finite ground G and independent weights bounded by m, its factor is
+1+|G|*(2m+m^2), against the doubled-weight participating mass. For |G|=N
+and m=M/N this is at most(1+M)^2. PrefixOneSeedTail combines this finite
+inequality with the proved prefix participating tail at all cardinalities.
+WideOneSeedTail rescales the source range to Q*N and embeds the target
+effective spaces in a longer common window; the original target length
+and weights remain in the actual original model.
+
+OneBlockFullSupport defines a literal nonzero effective vector in the old
+block and a nonzero effective vector at every new coordinate, with total
+sum zero. BoundedBlockIndependentTail proves its full independent mass
+bound for every fixed a<2. CompressedBlockIndependentTail.contained
+instantiates the actual geometrically normalized source blocks, for every
+unit offset and every fixed height, even without good normalization.
+anchor_centre proves that actual source anchors lie inside the shifted
+prefix range and recover their EXACT original block after the shift.
+uniform_channel has one threshold before all original offsets i,j.
+
+IndependentTailTheorem.article_15_8 assembles BOTH source clauses with a
+single fixed TOTAL-cardinality cutoff S: the original family has at least
+S windows, while the compressed family has one old block and at least
+S-1 new windows. This offset is explicit. P1-MATH-0167 records the complete
+collision and independent-weight justification of the compressed clause.
+This replaces the source proof's statement that the same certificate
+argument applies, by an actual finite source transfer.
+
+Coverage becomes88/167 unconditional and56 conditional. There are166
+mathematical improvements and one confirmed scope correction. No new
+external input is introduced. Original manuscript bytes, compiler and
+dependency pins remain unchanged. Palomar remains a later milestone.
+
+Verified under Lean v4.36.0-rc2: full build passed (14451 jobs); direct axiom audit passed for 11950 declarations using only propext, Classical.choice and Quot.sound; all 10655 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.62 GiB.

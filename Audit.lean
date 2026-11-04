@@ -183,6 +183,9 @@ import PaperP1
 #print axioms PaperP1.NominalAffineMass.exact_formula
 #print axioms PaperP1.Affine.relationSignedSum_eq_one_add_sign
 #print axioms PaperP1.Affine.uniformSolutionMass_eq_one_add_sign
+#print axioms PaperP1.OneSeedParticipation.mono
+#print axioms PaperP1.OneSeedParticipation.coordinate_extension
+#print axioms PaperP1.OneSeedParticipation.insert_or_erase
 #print axioms PaperP1.PairFourierIntersection.self_add
 #print axioms PaperP1.PairFourierIntersection.add_zero_iff
 #print axioms PaperP1.PairFourierIntersection.full_relation_iff
@@ -3233,6 +3236,9 @@ import PaperP1
 #print axioms PaperP1.Arithmetic.vertexParityMap_zero_iff_rational_square
 #print axioms PaperP1.EvenSquareSelection.cardinal_gt
 #print axioms PaperP1.EvenSubsetRankDefect.subset_defect
+#print axioms PaperP1.EvenWindowEnlargement.space_mono
+#print axioms PaperP1.EvenWindowEnlargement.window_mono
+#print axioms PaperP1.EvenWindowEnlargement.block_le_window
 #print axioms PaperP1.EvenWordRanks.twice_halfCard
 #print axioms PaperP1.EvenWordRanks.symmDiff_card_balance
 #print axioms PaperP1.EvenWordRanks.symmDiff_even
@@ -5571,6 +5577,8 @@ import PaperP1
 #print axioms PaperP1.BoundaryCutoffTrial.cutoff_le_trial_eventually
 #print axioms PaperP1.BoundaryCutoffTrial.cutoff_div_log_tendsto
 #print axioms PaperP1.BoundaryCutoffTrial.critical_quarter_range
+#print axioms PaperP1.BoundedBlockIndependentTail.uniform_blocks
+#print axioms PaperP1.BoundedBlockIndependentTail.mass_antitone
 #print axioms PaperP1.BoundedDegreeGridGraphExclusion.cutoff_lt_scale
 #print axioms PaperP1.BoundedFixedMomentsUnderInputs.uniform_factorial
 #print axioms PaperP1.BoundedFixedMomentsUnderInputs.uniform_ordinary
@@ -5698,6 +5706,9 @@ import PaperP1
 #print axioms PaperP1.CompressedAsymmetricCoarseProfile.finite_bound
 #print axioms PaperP1.CompressedAsymmetricCoarseProfile.uniform_offsets
 #print axioms PaperP1.CompressedAsymmetricCoarseProfile.uniform_channel
+#print axioms PaperP1.CompressedBlockIndependentTail.contained
+#print axioms PaperP1.CompressedBlockIndependentTail.anchor_centre
+#print axioms PaperP1.CompressedBlockIndependentTail.uniform_channel
 #print axioms PaperP1.CompressedChannelTargetCount.fixed_offsets
 #print axioms PaperP1.CompressedChannelTargetCount.uniform_count
 #print axioms PaperP1.CompressedNonalignedInteractionMass.unit_source
@@ -6406,6 +6417,8 @@ import PaperP1
 #print axioms PaperP1.IndependentExposurePrimePool.base_prime
 #print axioms PaperP1.IndependentExposurePrimePool.logarithmic_budget
 #print axioms PaperP1.IndependentExposurePrimePool.uniform_bound
+#print axioms PaperP1.IndependentTailTheorem.original_mass_antitone
+#print axioms PaperP1.IndependentTailTheorem.article_15_8
 #print axioms PaperP1.IndependentTargetMass.uniform_count
 #print axioms PaperP1.IndependentTargetMass.uniform_mass
 #print axioms PaperP1.IndependentTargetMass.deficit_bound
@@ -6857,6 +6870,7 @@ import PaperP1
 #print axioms PaperP1.PrefixModerateCertificateAsymptotic.constant_le_power_eventually
 #print axioms PaperP1.PrefixModerateCertificateAsymptotic.cutoff_ge_log_eventually
 #print axioms PaperP1.PrefixModerateCertificateAsymptotic.weightedTotal_le_power_eventually
+#print axioms PaperP1.PrefixOneSeedTail.uniform_tail
 #print axioms PaperP1.PrefixParticipatingTail.uniform_split_bound
 #print axioms PaperP1.PrefixParticipatingTail.subcritical_tail
 #print axioms PaperP1.PrefixSaturationDegrees.finite_conditions
@@ -7522,6 +7536,7 @@ import PaperP1
 #print axioms PaperP1.WeightedNonalignedPairsUnderInputs.article_18_2
 #print axioms PaperP1.WeightedNonalignedPairsUnderInputs.article_18_2_rank_deficit
 #print axioms PaperP1.WeightedPrimitiveTail.uniform_tail
+#print axioms PaperP1.WideOneSeedTail.uniform_tail
 #print axioms PaperP1.WideQuadraticKernelCount.three_exponent_bounds
 #print axioms PaperP1.WideQuadraticKernelCount.uniform_affine_count
 #print axioms PaperP1.WideQuadraticSquarePartCount.reciprocal_budget
@@ -8086,6 +8101,9 @@ import PaperP1
 #print axioms PaperP1.OffsetVertexCover.minimum_realized
 #print axioms PaperP1.OffsetVertexCover.minimum_le_card
 #print axioms PaperP1.OffsetVertexCover.minimum_le_supports
+#print axioms PaperP1.OneSeedWeights.fixed_centre
+#print axioms PaperP1.OneSeedWeights.finite_constant_bound
+#print axioms PaperP1.OneSeedWeights.heterogeneous_bound
 #print axioms PaperP1.OrderedExposure.exists_rank_last
 #print axioms PaperP1.OrderedExposure.exists_equiv_last
 #print axioms PaperP1.OrderedExposure.firstByRank_mem
@@ -9715,11 +9733,16 @@ import PaperP1
 #print axioms PaperP1.OnceErasedCount.law_eq_observation
 #print axioms PaperP1.OnceErasedCount.integral_law
 #print axioms PaperP1.OnceErasedCount.countMean_eq_sum
+#print axioms PaperP1.OneBlockFullSupport.mem_families
+#print axioms PaperP1.OneBlockFullSupport.witnesses
+#print axioms PaperP1.OneBlockFullSupport.families_antitone
 #print axioms PaperP1.OneNegativePrime.valueBit_sample
 #print axioms PaperP1.OneNegativePrime.parity_zero_of_not_dvd
 #print axioms PaperP1.OneNegativePrime.parity_simple_multiple
 #print axioms PaperP1.OneNegativePrime.not_dvd_inside
 #print axioms PaperP1.OneNegativePrime.positive_exact_run
+#print axioms PaperP1.OneSeedWindowParticipation.insert_or_erase
+#print axioms PaperP1.OneSeedWindowParticipation.bounded_block
 #print axioms PaperP1.OneTargetCrossing.nullity_insert
 #print axioms PaperP1.OneTargetCrossing.connected_positive
 #print axioms PaperP1.OneTargetCrossing.mem_targets

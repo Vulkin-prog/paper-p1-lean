@@ -2935,3 +2935,13 @@ public import PaperP1.Asymptotics.PrefixSaturationDegrees
 public import PaperP1.Combinatorics.PrefixSaturationGraph
 public import PaperP1.Model.PrefixWindowCertificateFamilies
 public import PaperP1.Model.PrefixWindowCertificateMass
+public import PaperP1.Affine.OneSeedParticipation
+public import PaperP1.Arithmetic.EvenWindowEnlargement
+public import PaperP1.Asymptotics.BoundedBlockIndependentTail
+public import PaperP1.Asymptotics.CompressedBlockIndependentTail
+public import PaperP1.Asymptotics.IndependentTailTheorem
+public import PaperP1.Asymptotics.PrefixOneSeedTail
+public import PaperP1.Asymptotics.WideOneSeedTail
+public import PaperP1.Combinatorics.OneSeedWeights
+public import PaperP1.Model.OneBlockFullSupport
+public import PaperP1.Model.OneSeedWindowParticipation
