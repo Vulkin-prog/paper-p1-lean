@@ -3304,3 +3304,6 @@ public import PaperP1.Analysis.DeterminantCenterScales
 public import PaperP1.Analysis.DeterminantEffectiveHeights
 public import PaperP1.Analysis.DeterminantRelativeIntervals
 public import PaperP1.Arithmetic.DeterminantIntervalPartition
+public import PaperP1.Analysis.DeterminantWeightMargin
+public import PaperP1.Asymptotics.DeterminantNormalizedWeights
+public import PaperP1.Asymptotics.DeterminantSourceWeightMargin

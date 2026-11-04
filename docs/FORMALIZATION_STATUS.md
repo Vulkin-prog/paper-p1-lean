@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records241 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records242 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13506 audited theorem/lemma declarations**. This
+- The project currently has **13521 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23106,3 +23106,26 @@ DeterminantEffectiveHeights proves DE<=(2E)^2*s0<=8DE, the analogous product bou
 P1-MATH-0242 closes the actual finite relative interval partition, pointwise relative-error bounds and coefficient-uniform center comparison. Completing the normalized weight/product margin from the actual rounded horizontal scale and polylogarithmic shift, then the factor-curve counts and short-vector summations, remains open. T1.4 and T1.5 stay in progress; coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are241 improvements and one statement-scope correction. No external input, axiom, Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15169 jobs); direct axiom audit passed for 13506 declarations using only propext, Classical.choice and Quot.sound; all 12656 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.96 GiB.
+
+
+## Prescribed-scale logarithmic errors and polylogarithmic shifts give the determinant margin
+
+The positive weight-product margin required by the uniform local auxiliary construction is now proved from the prescribed determinant scale, fixed effective-height comparisons and the polylogarithmic shift. No determinant estimate is an input to this margin theorem.
+
+DeterminantWeightMargin proves finite stability inequalities: changing each nonnegative normalized logarithmic size by at most epsilon changes their product by at most 2*C*epsilon. If the horizontal weight sigma lies in [0,1] and the vertical weight is at least 1-theta, their product loses at most theta. Explicit positive epsilon,theta,eta, chosen from the fixed height upper bound and positive horizontal slack zeta, turn the remaining additive slack into the required factor (1+eta)^2.
+
+DeterminantNormalizedWeights defines the actual weights
+
+  sigma=log(M/4)/log(N), tau=log(rho*N/(4*h))/log(N).
+
+Their exponential errors are exactly 4/M and 4*h/(rho*N). The horizontal lower bound M>=N^zeta*exp(logShape) gives sigma>=9/8*a0*b0+zeta-log(4)/log(N), with a0=log(DE)/log(N), b0=log(UV)/log(N). M<=N gives sigma<=1. For rho<=1 and h>=1, tau<=1; the uniform polylogarithmic-to-power estimate proves tau>=1-theta after one threshold preceding every allowed h. Every fixed logarithmic comparison error is likewise absorbed uniformly.
+
+DeterminantSourceWeightMargin.uniform_margin chooses eta>0 and one threshold before N, M, h, all source scales and both effective-height products. Suppose the two base logarithmic sizes lie in [delta,C], the effective products X,Y lie respectively in [DE,K*DE] and [UV,K*UV], M is between the prescribed lower scale and N, and h is between1 and the fixed polylogarithmic bound. Then the actual normalized effective sizes a,b lie in [delta,C+1], sigma,tau are positive with sum at most2, and
+
+  sigma*tau >= (9/8)*(1+eta)^2*a*b.
+
+This is the local product-margin condition from the original scale and shift, including both fixed chart constants. The former product-margin premise is derived rather than supplied as an external fact. The already proved actual interval and center bounds provide the intended effective products; their remaining fixed-inflation and full-box assembly is still to be completed.
+
+P1-MATH-0243 closes prescribed-scale and polylogarithmic-error absorption in the local determinant degree argument. Final global-box auxiliary assembly, factor-curve counting and short-vector summation remain open. T1.4 and T1.5 stay in progress; coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are242 improvements and one statement-scope correction. No external input, axiom, Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15175 jobs); direct axiom audit passed for 13521 declarations using only propext, Classical.choice and Quot.sound; all 12673 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.94 GiB.
