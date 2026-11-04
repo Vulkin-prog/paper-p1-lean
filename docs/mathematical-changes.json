@@ -13581,6 +13581,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "dbe8cd470c8854110a15c942a416970acad4c6ea"
+    },
+    {
+      "id": "P1-MATH-0209",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "The proof of companion T21.1 separates the complete aligned ordered domain into height one, the leading height-two channel and all higher reduced heights; growing-height channel uniqueness is implicit in the finite profile bookkeeping.",
+      "finding": "Any two enlarged reduced channels bounded by Q are equal when the second root exceeds4*Q^2*B. This yields uniform uniqueness up to B^3 on the macroscopic interval. The actual aligned separated mask is proved to be the disjoint union of the height-one, leading and high sectors, with an exact sum identity for every weight.",
+      "proposed_revision": "State the height-dependent determinant uniqueness threshold before decomposing the complete aligned domain. Use the disjoint finite partition to assemble actual weights and avoid any multiplicity ambiguity for growing heights or zero-unit pairs.",
+      "impact": "Discharges the actual complete-domain channel-sector partition for the macroscopic proof of T21.1. The final full signed/positive assembly, rational code identification, relative equivalents and dyadic positive assertion remain separate obligations.",
+      "evidence": [
+        "PaperP1.BoundedHeightChannelUniqueness.same_slope",
+        "PaperP1.BoundedHeightChannelUniqueness.reduced_eq",
+        "PaperP1.BoundedHeightChannelUniqueness.unique",
+        "PaperP1.MacroscopicChannelPartition.channel_subset_high_one",
+        "PaperP1.MacroscopicChannelPartition.high_subset",
+        "PaperP1.MacroscopicChannelPartition.low_subset",
+        "PaperP1.MacroscopicChannelPartition.leading_subset",
+        "PaperP1.MacroscopicChannelPartition.cover",
+        "PaperP1.MacroscopicChannelPartition.channel_unique",
+        "PaperP1.MacroscopicChannelPartition.small_disjoint_high",
+        "PaperP1.MacroscopicChannelPartition.disjoint_sectors",
+        "PaperP1.MacroscopicChannelPartition.uniform_partition",
+        "PaperP1.MacroscopicChannelPartition.uniform_sum",
+        "PaperP1.MacroscopicChannelPartition.aligned",
+        "PaperP1.MacroscopicChannelPartition.leading",
+        "PaperP1.MacroscopicChannelPartition.high"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14957 jobs); direct axiom audit passed for 12988 declarations using only propext, Classical.choice and Quot.sound; all 12020 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.65 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -3196,3 +3196,5 @@ public import PaperP1.Model.IntervalUnitFourierAggregate
 public import PaperP1.Asymptotics.MacroscopicActualSignedMass
 public import PaperP1.Asymptotics.MacroscopicSignedChannelComparison
 public import PaperP1.Model.ActualAffinePairWeight
+public import PaperP1.Arithmetic.BoundedHeightChannelUniqueness
+public import PaperP1.Asymptotics.MacroscopicChannelPartition

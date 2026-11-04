@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records207 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records208 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **12975 audited theorem/lemma declarations**. This
+- The project currently has **12988 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22489,3 +22489,18 @@ MacroscopicActualSignedMass instantiates the previous high-height and separated 
 P1-MATH-0208 records the actual signed affine comparison and exceptional-sector masses. The global rational-code/channel partition, final assembly on the complete aligned separated mask, relative equivalents and dyadic positive profile remain open, so T21.1 stays in progress. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are207 improvements and one statement-scope correction. No external input, new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14953 jobs); direct axiom audit passed for 12975 declarations using only propext, Classical.choice and Quot.sound; all 12004 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.66 GiB.
+
+
+## Unique growing-height enlarged channels and a disjoint actual profile partition
+
+The complete original aligned separated macroscopic mask now has a proved disjoint channel-sector partition. The result includes every enlarged primitive channel of height up to B^3, both orientations and zero-unit pairs.
+
+BoundedHeightChannelUniqueness extends the existing small-slope determinant argument to every finite height bound Q. If the two positive reduced geometric channels both have coefficients at most Q and the second root exceeds4*Q^2*B, their cross determinant vanishes. Coprimality then proves equality of the two coefficient pairs. The finite proof does not assume an exact unit or arithmetic privacy.
+
+MacroscopicChannelPartition defines the actual aligned mask as the finite union of all positive reduced enlarged channels up to B^3, restricted to root distance greater than L. It defines the leading sector using the1:2 and2:1 channels and the high sector using all heights at least3. A finite case split on the actual coefficient witness proves that every aligned pair lies in height one, the leading sector or the high sector. Every sector is also proved to be a subset of the original aligned domain.
+
+For Q=B^3, the determinant threshold is exactly4*B^7. The proved macroscopic polynomial-source bound makes this threshold uniform over every original root and every critical length after a common threshold. Consequently the three sectors are pairwise disjoint. Lean proves an exact sum identity for EVERY real-valued function on the original ordered pairs. The mask is not merely covered with possible multiplicities: its weighted sum equals the sum of the three disjoint sector sums.
+
+P1-MATH-0209 records the actual growing-height uniqueness and exact profile partition. This supplies the finite bookkeeping needed to combine the separately proved actual sector masses. The global rational code definition/identification, final signed and positive full-profile assembly and relative equivalents, and the dyadic positive profile still remain. T21.1 stays in progress. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are208 improvements and one statement-scope correction. No external input, new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14957 jobs); direct axiom audit passed for 12988 declarations using only propext, Classical.choice and Quot.sound; all 12020 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.65 GiB.

@@ -15009,3 +15009,18 @@ MacroscopicActualSignedMass instantiates the previous high-height and separated 
 P1-MATH-0208 records the actual signed affine comparison and exceptional-sector masses. The global rational-code/channel partition, final assembly on the complete aligned separated mask, relative equivalents and dyadic positive profile remain open, so T21.1 stays in progress. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are207 improvements and one statement-scope correction. No external input, new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14953 jobs); direct axiom audit passed for 12975 declarations using only propext, Classical.choice and Quot.sound; all 12004 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.66 GiB.
+
+
+## Unique growing-height enlarged channels and a disjoint actual profile partition
+
+The complete original aligned separated macroscopic mask now has a proved disjoint channel-sector partition. The result includes every enlarged primitive channel of height up to B^3, both orientations and zero-unit pairs.
+
+BoundedHeightChannelUniqueness extends the existing small-slope determinant argument to every finite height bound Q. If the two positive reduced geometric channels both have coefficients at most Q and the second root exceeds4*Q^2*B, their cross determinant vanishes. Coprimality then proves equality of the two coefficient pairs. The finite proof does not assume an exact unit or arithmetic privacy.
+
+MacroscopicChannelPartition defines the actual aligned mask as the finite union of all positive reduced enlarged channels up to B^3, restricted to root distance greater than L. It defines the leading sector using the1:2 and2:1 channels and the high sector using all heights at least3. A finite case split on the actual coefficient witness proves that every aligned pair lies in height one, the leading sector or the high sector. Every sector is also proved to be a subset of the original aligned domain.
+
+For Q=B^3, the determinant threshold is exactly4*B^7. The proved macroscopic polynomial-source bound makes this threshold uniform over every original root and every critical length after a common threshold. Consequently the three sectors are pairwise disjoint. Lean proves an exact sum identity for EVERY real-valued function on the original ordered pairs. The mask is not merely covered with possible multiplicities: its weighted sum equals the sum of the three disjoint sector sums.
+
+P1-MATH-0209 records the actual growing-height uniqueness and exact profile partition. This supplies the finite bookkeeping needed to combine the separately proved actual sector masses. The global rational code definition/identification, final signed and positive full-profile assembly and relative equivalents, and the dyadic positive profile still remain. T21.1 stays in progress. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are208 improvements and one statement-scope correction. No external input, new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14957 jobs); direct axiom audit passed for 12988 declarations using only propext, Classical.choice and Quot.sound; all 12020 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.65 GiB.

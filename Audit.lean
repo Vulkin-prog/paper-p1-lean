@@ -2644,6 +2644,9 @@ import PaperP1
 #print axioms PaperP1.BoundedGeometricPairCount.coefficients_card
 #print axioms PaperP1.BoundedGeometricPairCount.pairs_card_height
 #print axioms PaperP1.BoundedGeometricPairCount.covered_card
+#print axioms PaperP1.BoundedHeightChannelUniqueness.same_slope
+#print axioms PaperP1.BoundedHeightChannelUniqueness.reduced_eq
+#print axioms PaperP1.BoundedHeightChannelUniqueness.unique
 #print axioms PaperP1.BoundedIntegerPlanes.interval_mem
 #print axioms PaperP1.BoundedIntegerPlanes.height_le_iff
 #print axioms PaperP1.BoundedIntegerPlanes.mem_family
@@ -6862,6 +6865,16 @@ import PaperP1
 #print axioms PaperP1.MacroscopicAlignedPairRank.units_residual_bound
 #print axioms PaperP1.MacroscopicAlignedPairRank.channel_bound
 #print axioms PaperP1.MacroscopicAlignedPairRank.actual_intersection_bound
+#print axioms PaperP1.MacroscopicChannelPartition.channel_subset_high_one
+#print axioms PaperP1.MacroscopicChannelPartition.high_subset
+#print axioms PaperP1.MacroscopicChannelPartition.low_subset
+#print axioms PaperP1.MacroscopicChannelPartition.leading_subset
+#print axioms PaperP1.MacroscopicChannelPartition.cover
+#print axioms PaperP1.MacroscopicChannelPartition.channel_unique
+#print axioms PaperP1.MacroscopicChannelPartition.small_disjoint_high
+#print axioms PaperP1.MacroscopicChannelPartition.disjoint_sectors
+#print axioms PaperP1.MacroscopicChannelPartition.uniform_partition
+#print axioms PaperP1.MacroscopicChannelPartition.uniform_sum
 #print axioms PaperP1.MacroscopicChannelTranslations.uniform_geometry
 #print axioms PaperP1.MacroscopicChannelTranslations.one_two_counts
 #print axioms PaperP1.MacroscopicChannelTranslations.one_two_real_counts
