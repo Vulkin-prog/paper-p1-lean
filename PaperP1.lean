@@ -3453,3 +3453,5 @@ public import PaperP1.Asymptotics.CompanionUniformDeterminantTheorem
 public import PaperP1.Asymptotics.WeightedInitialSourceCount
 public import PaperP1.Asymptotics.WeightedNonprimitiveSourceCount
 public import PaperP1.Asymptotics.WeightedOriginalScaleFamilyCount
+public import PaperP1.Analysis.DeterminantSevenTwelfthsCosts
+public import PaperP1.Asymptotics.SevenTwelfthsSourceCount

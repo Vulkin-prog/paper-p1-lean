@@ -2333,6 +2333,10 @@ import PaperP1
 #print axioms PaperP1.DeterminantRelativeIntervals.alpha_identity
 #print axioms PaperP1.DeterminantRelativeIntervals.alpha_bounds
 #print axioms PaperP1.DeterminantRelativeIntervals.alpha_absolute_bound
+#print axioms PaperP1.DeterminantSevenTwelfthsCosts.sqrt_exp_as_power
+#print axioms PaperP1.DeterminantSevenTwelfthsCosts.root_identities
+#print axioms PaperP1.DeterminantSevenTwelfthsCosts.uniform_root_minimum
+#print axioms PaperP1.DeterminantSevenTwelfthsCosts.uniform_complete_cost
 #print axioms PaperP1.DeterminantShapeStability.denominator_loss
 #print axioms PaperP1.DeterminantShapeStability.numerator_loss
 #print axioms PaperP1.DeterminantShapeStability.weighted_loss
@@ -8488,6 +8492,7 @@ import PaperP1
 #print axioms PaperP1.SelectedQuadraticError.source_selected_pair
 #print axioms PaperP1.SeparatedHeightOneRank.uniform_bound
 #print axioms PaperP1.SeparatedHeightOneRank.uniform_exclusion
+#print axioms PaperP1.SevenTwelfthsSourceCount.uniform_count
 #print axioms PaperP1.SeveralAnchorCounts.factor_subpolynomial
 #print axioms PaperP1.SeveralAnchorCounts.ambient_sqrt
 #print axioms PaperP1.SeveralAnchorCounts.finite_factor_bound

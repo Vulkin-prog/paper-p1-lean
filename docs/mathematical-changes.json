@@ -17385,6 +17385,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "5888705a04f1b07476b2449d817168246577ae05"
+    },
+    {
+      "id": "P1-MATH-0303",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:twokernel",
+        "number": "T1.5",
+        "page": 9,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 360,
+        "statement_sha256": "bb1695001b6698be23b183ea4794053283d9baed656240adcaf51b682b72ff50"
+      },
+      "original_assumption": "The exact two determinant costs on the actual admissible two-kernel source boxes satisfy the sharp7/12 exponent after all comparison and linear-term errors are included.",
+      "finding": "Both square-root terms are identified exactly with the optimized real powers. Actual source monomial bounds give the uniform w perturbation, and all four axes and fixed constants are absorbed. The full source theorem then yields the numerical (T+N^(7/12))*N^epsilon count.",
+      "proposed_revision": "Give the exact logarithmic exponent identities, derive the w bound from the retained coefficient product and source comparisons, and budget both linear costs before applying the completed determinant theorem.",
+      "impact": "Closes the sharp numerical count in every admissible source box under the two retained ordinary inputs. Canonical edge regimes and global/window summation remain open forT1.5; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.DeterminantSevenTwelfthsCosts.sqrt_exp_as_power",
+        "PaperP1.DeterminantSevenTwelfthsCosts.root_identities",
+        "PaperP1.DeterminantSevenTwelfthsCosts.uniform_root_minimum",
+        "PaperP1.DeterminantSevenTwelfthsCosts.uniform_complete_cost",
+        "PaperP1.SevenTwelfthsSourceCount.uniform_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15475 jobs); direct axiom audit passed for 14030 declarations using only propext, Classical.choice and Quot.sound; all 13275 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.87 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

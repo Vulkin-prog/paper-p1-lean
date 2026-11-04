@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**301 mathematical improvements and one statement-scope correction are confirmed.**
+**302 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23390,3 +23390,16 @@ CompanionUniformDeterminantTheorem defines the actual finite set of ALL natural 
 The full quantitative source result and its final weakened-barrier assertion therefore have no remaining source-specific counting, coefficient-height, local-cover, primitivity, divisor-family or small-scale premise. After the actual full build, axiom audit, source check and declaration check, T1.4 is marked conditional. Coverage is89 proved and73 conditional out of167 (162 completed); the five remaining numbered arithmetic obligations are main13.4 and companionT1.5,T1.10,T1.13,T5.1. T1.5 remains in progress: this determinant theorem is a required input, not yet the full sharp two-kernel window count. There are301 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred until full coverage and alignment.
 
 Verified under Lean v4.36.0-rc2: full build passed (15471 jobs); direct axiom audit passed for 14025 declarations using only propext, Classical.choice and Quot.sound; all 13270 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.89 GiB.
+
+
+## Sharp seven-twelfths count on the actual admissible determinant source boxes
+
+The actual complete determinant-cost minimum is now bounded with the sharp7/12 exponent needed for companionT1.5, and the full signed nonprimitive determinant count is actually applied to obtain the corresponding numerical source-box estimate. The analytic optimization is unconditional; numerical counting retains only the two ordinary biform inputs already used by completed conditionalT1.4.
+
+DeterminantSevenTwelfthsCosts identifies BOTH literal square-root terms exactly as real powers of N. Writing z=log(DE)/log(N) and w=z+log(UV)/(2*log(N)), their exponents are the previously proved first(z,w) and second(z,w), with no suppressed comparison error. The actual source monomial upper bounds and c1*c2>=1 give w<=1+log(C)/log(N); both base logarithms are nonnegative. One fixed threshold bounds the latter error by a clipped positive margin at most1/3, so the proved perturbed optimizer supplies the sharp minimum exponent7/12 plus that margin.
+
+The full costs are handled as well: the actual source monomials imply D,E<=sqrt(C)*sqrt(N), while U,V<=T is kept explicit. The minimum of the complete costs is bounded by the minimum of the root terms plus all four nonnegative axes. The resulting fixed coefficient3+2*sqrt(C) is absorbed with a separate exponent margin. Thus the complete minimum is at most (T+N^(7/12))*N^epsilon uniformly before all source coefficients and scales.
+
+SevenTwelfthsSourceCount applies the actual full signed nonprimitive source theorem with half the final exponent and this complete-cost bound with the other half. Every literal source solution population in the admissible logarithmic/barrier regime therefore has cardinality at most (T+N^(7/12))*N^epsilon. No abstract assumed exponent bound or source count remains in this local application. T1.5 is still in progress: the actual canonical populations must still be split into edge and admissible regimes, and their smooth coefficients, dyadic boxes and window placements summed. Its lower bound was proved earlier. Coverage remains89 proved and73 conditional out of167 (162 completed). There are302 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15475 jobs); direct axiom audit passed for 14030 declarations using only propext, Classical.choice and Quot.sound; all 13275 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.87 GiB.
