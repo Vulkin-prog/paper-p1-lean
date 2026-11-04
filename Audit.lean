@@ -2565,6 +2565,12 @@ import PaperP1
 #print axioms PaperP1.ReducedLatticeCoordinateBoxes.actual_coordinate_bounds
 #print axioms PaperP1.ReducedLatticeCoordinateBoxes.actual_side_controls
 #print axioms PaperP1.ReducedLatticeCoordinateBoxes.one_le_largest_of_primitive
+#print axioms PaperP1.ReducedSourceBarrier.loss_nonnegative
+#print axioms PaperP1.ReducedSourceBarrier.quotient_barrier_identity
+#print axioms PaperP1.ReducedSourceBarrier.source_barrier_lower
+#print axioms PaperP1.ReducedSourceBarrier.loss_identity
+#print axioms PaperP1.ReducedSourceBarrier.barrier_transfer
+#print axioms PaperP1.ReducedSourceBarrier.loss_le_twice_shift
 #print axioms PaperP1.ReducedSourceLogarithms.uniform_shift_margin
 #print axioms PaperP1.ReducedSourceLogarithms.reduced_log_bounds
 #print axioms PaperP1.ReducedSourceMonomials.quotient_identity
@@ -2583,6 +2589,8 @@ import PaperP1
 #print axioms PaperP1.ReducedSourceParameter.log_parameter_gap
 #print axioms PaperP1.ReducedSourceParameter.parameter_sufficiently_large
 #print axioms PaperP1.ReducedSourceParameter.uniform_parameter_threshold
+#print axioms PaperP1.ReducedSourceShiftBudget.polylog_rebase
+#print axioms PaperP1.ReducedSourceShiftBudget.shift_and_loss_bounds
 #print axioms PaperP1.RelativeIntervalAxisBounds.first_axis_scale
 #print axioms PaperP1.RelativeIntervalAxisBounds.second_axis_scale
 #print axioms PaperP1.RelativeIntervalAxisBounds.scaled_interval_sum_bound

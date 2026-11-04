@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records292 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records293 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13987 audited theorem/lemma declarations**. This
+- The project currently has **13995 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24036,3 +24036,20 @@ The literal reduced family satisfies the new Box dyadic inequalities and the exa
 P1-MATH-0293 closes the complete reduced source Box and actual primitive point-population construction UNCONDITIONALLY. Uniform source-barrier and short-shift transfer, exponential-shape comparison and final summation over reductions remain open. The two ordinary inputs retained by the primitive determinant theorem still have unformalized proofs. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are292 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15437 jobs); direct axiom audit passed for 13987 declarations using only propext, Classical.choice and Quot.sound; all 13225 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.05 GiB.
+
+
+## Exact reduced coefficient barrier and uniform shift budgets at the effective logarithm
+
+The literal coefficient barrier and short-shift hypotheses now transfer to the effective source parameter with explicit FIXED logarithmic budgets. Both are unconditional consequences of the actual reduction divisors and the original hypotheses.
+
+ReducedSourceBarrier defines the exact loss Gamma'=2*g^2/q. The normalized new coefficient product is at least the old product divided by g^4. With N'=ceil(N/(g^2*q))<=2*N/(g^2*q), the literal original barrier N<=c1*c2*(D*E)^2 therefore gives N'<=Gamma'*c1*c2*(Dnew*Enew)^2. The exact quotient identities include natural divisor casts and the integer rounding. Since q>=1 and g^2*q<=h, the actual loss is nonnegative and at most2*h.
+
+ReducedSourceShiftBudget proves a general logarithmic rebase: if log(N)<=2*log(N'), a bound K*log(N)^A with K,A>=0 becomes (K*2^A)*log(N')^A. Applying the proved effective-parameter logarithmic comparisons transfers the ACTUAL positive divided shift h/(g^2*q) to this new budget. The actual source-barrier loss simultaneously has bound (2*K*2^A)*log(N')^A. Its logarithmic exponent remains the original fixed exponent, and both new constants depend only on the original fixed parameters.
+
+Thus the reduced source Box ofP1-MATH-0293 can meet the complete primitive determinant theorem's literal integer-coefficient, short-shift and polylogarithmic-barrier hypotheses at the SAME effective integer N', uniformly over all actual gcd families. No coefficient or shift budget is chosen after a moving family or polynomial.
+
+Additional statement-alignment check: the printed T1.4 statement does not explicitly impose an individual lower bound1 on each original real dyadic scale. The current Box formulation has that lower bound. A nonempty positive integer population only forces each raw scale to be at least1/2. Before marking the FULL numbered result complete, the initial scales therefore also need either a verified global dyadic convention or an explicit max-with1 normalization and comparison back to the original shape and costs. This is retained as an outstanding alignment obligation; the existing restricted Box theorems are unchanged.
+
+P1-MATH-0294 closes the remaining reduced source-barrier and short-shift transfer UNCONDITIONALLY. Actual primitive-count application to every reduced family, exponential-shape comparison and final reduction summation remain open. The two ordinary inputs retained by the primitive determinant theorem still have unformalized proofs. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are293 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15441 jobs); direct axiom audit passed for 13995 declarations using only propext, Classical.choice and Quot.sound; all 13234 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.03 GiB.
