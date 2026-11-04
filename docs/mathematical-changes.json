@@ -12428,6 +12428,63 @@
         "status": "not_integrated"
       },
       "validation_commit": "2632b2562ce89a22d323a73a37bb9870a8d13b95"
+    },
+    {
+      "id": "P1-MATH-0183",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:private-exact",
+        "number": "T19.16",
+        "page": 80,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1214,
+        "statement_sha256": "6baf345eb5567df4010efd0ecbca65dd33af3c09e924d3b13643b928c59b8315"
+      },
+      "original_assumption": "The forcing lower arguments discard N^(9/10+o(1)) starts whose maximal support contains a pivot at most log(N)^5, then use translated interval counts for the remaining boundaries.",
+      "finding": "The actual small-pivot count follows internally from the truncated-kernel Rankin bound at sigma=9/10 and the identity (log(N)^5)^(1/10)=sqrt(log N). Its bad-window union is uniformly N^(9/10+epsilon) for all moving logarithmic widths. Left boundaries of [N,2N) form exactly (N-2,N-2+N], with no uncharged endpoint error. The surviving clean-pair minorant has proved losses N^(19/10+epsilon) and N^(3/2+epsilon) for excluded targets and full raw dependence, respectively, and keeps the exact reciprocal and collision terms.",
+      "evidence": [
+        "PaperP1.PolylogPivotExceptions.pivot_subset_small_kernel",
+        "PaperP1.PolylogPivotExceptions.pivot_count_rankin",
+        "PaperP1.PolylogPivotExceptions.mem_badWindows",
+        "PaperP1.PolylogPivotExceptions.badAt_card",
+        "PaperP1.PolylogPivotExceptions.badWindows_card",
+        "PaperP1.PolylogPivotExceptions.mem_retained",
+        "PaperP1.PolylogPivotExceptions.retained_deletion_ledger",
+        "PaperP1.ForcingExceptionLedger.uniform_exception_counts",
+        "PaperP1.ForcingExceptionLedger.uniform_surviving_lower",
+        "PaperP1.PolylogPivotCount.growthFactor_nonneg",
+        "PaperP1.PolylogPivotCount.log_power_identity",
+        "PaperP1.PolylogPivotCount.finite_value_bound",
+        "PaperP1.PolylogPivotCount.uniform_growth",
+        "PaperP1.PolylogPivotCount.uniform_value_bound",
+        "PaperP1.PolylogPivotCount.uniform_window_bound",
+        "PaperP1.ForcingExceptionalSets.mem_boundaryBlock",
+        "PaperP1.ForcingExceptionalSets.boundaryBlock_eq_interval",
+        "PaperP1.ForcingExceptionalSets.boundaryBlock_card_le",
+        "PaperP1.ForcingExceptionalSets.boundaryBlock_card",
+        "PaperP1.ForcingExceptionalSets.mem_badBoundaries",
+        "PaperP1.ForcingExceptionalSets.badBoundaries_card_le",
+        "PaperP1.ForcingExceptionalSets.mem_dependentBoundaryPairs",
+        "PaperP1.ForcingExceptionalSets.dependentBoundaryPairs_card_le",
+        "PaperP1.PolylogPivotExceptions.badAt",
+        "PaperP1.PolylogPivotExceptions.badWindows",
+        "PaperP1.PolylogPivotExceptions.retained",
+        "PaperP1.PolylogPivotCount.growthConstant",
+        "PaperP1.PolylogPivotCount.growthFactor",
+        "PaperP1.ForcingExceptionalSets.boundaryBlock",
+        "PaperP1.ForcingExceptionalSets.badBoundaries",
+        "PaperP1.ForcingExceptionalSets.dependentBoundaryPairs"
+      ],
+      "proposed_revision": "State the exact positive boundary interval before using multiple counts. Derive the small-pivot and bad-window counts from the existing Rankin estimate and keep the explicit width factor before absorbing it uniformly. Display the global surviving-pair minorant with each exceptional-set bound proved separately.",
+      "impact": "Discharges the polylogarithmic pivot exceptional populations and their target-deletion loss in T19.16/T19.17. The full raw exception loss is combined without repetition. The source selection, sharp reciprocal asymptotics and actual cost summation remain open; numbered coverage is unchanged.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14779 jobs); direct axiom audit passed for 12649 declarations using only propext, Classical.choice and Quot.sound; all 11584 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.13 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

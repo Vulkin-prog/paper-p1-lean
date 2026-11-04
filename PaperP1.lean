@@ -3105,3 +3105,7 @@ public import PaperP1.Asymptotics.UniformSubpolynomialPower
 public import PaperP1.Model.RawDependencePairs
 public import PaperP1.Model.RawTwoWindowHosts
 public import PaperP1.Model.RawValueIndependence
+public import PaperP1.Arithmetic.PolylogPivotExceptions
+public import PaperP1.Asymptotics.ForcingExceptionLedger
+public import PaperP1.Asymptotics.PolylogPivotCount
+public import PaperP1.Model.ForcingExceptionalSets
