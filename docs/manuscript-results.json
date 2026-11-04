@@ -6723,7 +6723,8 @@
           ]
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14395 jobs); direct axiom audit passed for 11845 declarations using only propext, Classical.choice and Quot.sound; all 10501 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.76 GiB."
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14395 jobs); direct axiom audit passed for 11845 declarations using only propext, Classical.choice and Quot.sound; all 10501 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.76 GiB.",
+      "validation_commit": "d388ad4f832a96515f9a14590c04b05bd6580836"
     },
     {
       "label": "p13:lower:quartic",
@@ -7222,7 +7223,8 @@
             "P1-PROB-MEAN-PARAMETER-STABILITY"
           ]
         }
-      ]
+      ],
+      "validation_commit": "d388ad4f832a96515f9a14590c04b05bd6580836"
     },
     {
       "label": "p13:channels:hierarchy",
@@ -7954,7 +7956,8 @@
             "P1-GEO-NORMALIZED-CURVE-UNIFORM"
           ]
         }
-      ]
+      ],
+      "validation_commit": "d388ad4f832a96515f9a14590c04b05bd6580836"
     },
     {
       "label": "p1:discussion:charlier-norm",
