@@ -6183,6 +6183,9 @@ import PaperP1
 #print axioms PaperP1.ActualReferenceAdmissibility.quadratic_of_bounds
 #print axioms PaperP1.ActualReferenceAdmissibility.uniform_quadratic_probability
 #print axioms PaperP1.ActualReferenceAdmissibility.uniform_hermite_probability
+#print axioms PaperP1.ActualSourceClusterCount.uniform_factor_sum_count
+#print axioms PaperP1.ActualSourceClusterCount.uniform_cluster_count
+#print axioms PaperP1.ActualSourceFactorCount.uniform_count
 #print axioms PaperP1.ActualZeroFirstDegreeCount.uniform_sourcePart_count
 #print axioms PaperP1.ActualZeroFirstDegreeCount.uniform_actual_count
 #print axioms PaperP1.ActualZeroFirstDegreeCount.uniform_normalized_actual_count

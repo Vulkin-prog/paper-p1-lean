@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records286 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records287 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13943 audited theorem/lemma declarations**. This
+- The project currently has **13946 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23950,3 +23950,16 @@ ActualNonGeometricFactorCount proves that the fixed ordinary constant is at most
 P1-MATH-0287 closes the actual non-geometric local application CONDITIONALLY on this separate ordinary algebraic consequence. Its proof remains open, as does the proof of the existing ordinary Heath-Brown Lemma2 input. All numerical local branches can now be assembled under these TWO explicit ordinary inputs; source/global and primitive-scale assembly remain open. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are286 improvements and one statement-scope correction. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15419 jobs); direct axiom audit passed for 13943 declarations using only propext, Classical.choice and Quot.sound; all 13175 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.14 GiB.
+
+
+## Complete actual local factor and four-chart cluster counts under two explicit ordinary inputs
+
+The COMPLETE numerical local count is now assembled on the ACTUAL constructed factor populations and actual source clusters. It retains exactly TWO explicit unproved ordinary inputs: the Heath-Brown Lemma2 estimate and the separate conjugate-intersection/Bezout consequence. Every moving factor, coordinate, source equation and counting prerequisite is discharged in the proof.
+
+ActualSourceFactorCount proves that every actual factor population in every actual chart has cardinality at most N^epsilon*min(L,T). Its single threshold precedes N, the source box, integer coefficients, moving polylogarithmic barrier loss, actual inverse bases, interval, original primitive population, chart and factor. The first partial degree-zero case uses the internally proved actual Pell count; the second degree-zero case uses the internally proved actual linear-fibre source-barrier count. When both partial degrees are positive, the actual complex irreducibility case uses the proved geometric assembly under ordinary Heath-Brown input, and its complement uses the explicit ordinary conjugate-intersection consequence together with the already proved actual rational irreducibility. Both actual lattice sides being at least1 converts the degree-zero N^epsilon bounds to the same minimum-side bound. No geometry classification or local numerical count is supplied as a moving-factor premise.
+
+ActualSourceClusterCount sums ALL actual factor populations over the FOUR actual affine charts. Each actual factor family has at most Amax+Bmax elements by LocalCover. The fixed factor4*(Amax+Bmax) is absorbed using half the chosen exponent, with one threshold before all moving data. The sum of ALL actual chart-factor population cardinalities is at most N^epsilon*min(L,T). The actual LocalCover cardinality inequality then gives the same bound for the literal original interval cluster. Both results preserve the true integer source equation, its nonzero short shift and the explicit source coefficient barrier, including a moving polylogarithmic loss.
+
+P1-MATH-0288 closes the FULL actual local factor/chart/cluster counting application under the two existing explicitly unproved ordinary inputs. No further external input is introduced. Their proofs and the final source/global and primitive-scale assembly remain open. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are287 improvements and one statement-scope correction. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15423 jobs); direct axiom audit passed for 13946 declarations using only propext, Classical.choice and Quot.sound; all 13178 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.13 GiB.
