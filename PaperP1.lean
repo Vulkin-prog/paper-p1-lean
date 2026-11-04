@@ -3300,3 +3300,7 @@ public import PaperP1.Arithmetic.ActualRelativeDeterminant
 public import PaperP1.Arithmetic.DeterminantLocalChart
 public import PaperP1.Asymptotics.DeterminantBoundedAuxiliaryHeight
 public import PaperP1.Asymptotics.LocalDeterminantAuxiliary
+public import PaperP1.Analysis.DeterminantCenterScales
+public import PaperP1.Analysis.DeterminantEffectiveHeights
+public import PaperP1.Analysis.DeterminantRelativeIntervals
+public import PaperP1.Arithmetic.DeterminantIntervalPartition

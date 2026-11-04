@@ -15096,6 +15096,60 @@
         "status": "not_integrated"
       },
       "validation_commit": "2927201b18e78e3b8a416cf808a5d8398efa9e3d"
+    },
+    {
+      "id": "P1-MATH-0242",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The determinant argument subdivides every dyadic ratio box into small relative intervals and treats both projective centers as uniformly comparable to the original box ratios when the coefficients move.",
+      "finding": "An exact floor-index partition covers every actual point with at most 2M possible centers, giving alpha<=4/M and beta<=4|h|/(rho*N). Both center comparisons are proved with fixed source constants after the moving coefficient ratio cancels against the source monomial scales.",
+      "proposed_revision": "Specify the actual interval index and center, retain the explicit constants in both relative errors, and derive the second center comparison from the two original source monomials before the normalized logarithmic margin.",
+      "impact": "Closes the actual interval-cover and coefficient-uniform center steps. The prescribed-scale logarithmic margin and later solution counts remain unfinished, so numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.DeterminantCenterScales.source_ratio_bounds",
+        "PaperP1.DeterminantCenterScales.normalized_center_bounds",
+        "PaperP1.DeterminantCenterScales.center_ratio_identity",
+        "PaperP1.DeterminantCenterScales.center_comparison",
+        "PaperP1.DeterminantEffectiveHeights.first_height_bounds",
+        "PaperP1.DeterminantEffectiveHeights.inflated_pair_height",
+        "PaperP1.DeterminantEffectiveHeights.log_comparison",
+        "PaperP1.DeterminantEffectiveHeights.normalized_log_comparison",
+        "PaperP1.DeterminantRelativeIntervals.ratio_bounds",
+        "PaperP1.DeterminantRelativeIntervals.scaled_bounds",
+        "PaperP1.DeterminantRelativeIntervals.index_bounds",
+        "PaperP1.DeterminantRelativeIntervals.index_mem",
+        "PaperP1.DeterminantRelativeIntervals.center_bounds",
+        "PaperP1.DeterminantRelativeIntervals.intervalIndices_card",
+        "PaperP1.DeterminantRelativeIntervals.alpha_identity",
+        "PaperP1.DeterminantRelativeIntervals.alpha_bounds",
+        "PaperP1.DeterminantRelativeIntervals.alpha_absolute_bound",
+        "PaperP1.DeterminantIntervalPartition.mem_cluster",
+        "PaperP1.DeterminantIntervalPartition.finite_partition",
+        "PaperP1.DeterminantIntervalPartition.center_positive",
+        "PaperP1.DeterminantIntervalPartition.point_center_bounds",
+        "PaperP1.DeterminantIntervalPartition.point_alpha_bound",
+        "PaperP1.DeterminantIntervalPartition.point_vertical_bound",
+        "PaperP1.DeterminantRelativeIntervals.scaledRatio",
+        "PaperP1.DeterminantRelativeIntervals.intervalIndex",
+        "PaperP1.DeterminantRelativeIntervals.intervalCenter",
+        "PaperP1.DeterminantRelativeIntervals.intervalIndices",
+        "PaperP1.DeterminantIntervalPartition.cluster"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15169 jobs); direct axiom audit passed for 13506 declarations using only propext, Classical.choice and Quot.sound; all 12656 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.96 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
