@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**319 mathematical improvements and two statement-scope corrections are confirmed.**
+**320 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23637,3 +23637,14 @@ For an irreducible positive-outer-degree polynomial P and any such evaluation ki
 P1-MATH-0321 closes the arbitrary smooth-point branch and exact kernel step. The extension-field descent needed to prove geometric irreducibility from a rational smooth point remains open, as does its connection to the actual bihomogeneous geometric definition. NonGeometricRationalSingularity.Input is therefore still an unproved alternative ordinary argument; the Heath-Brown input is unchanged. T1.4 remains conditional and numbered coverage stays89 proved and75 conditional out of167 (164 completed). There are319 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15529 jobs); direct axiom audit passed for 14106 declarations using only propext, Classical.choice and Quot.sound; all 13367 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.59 GiB.
+
+
+## Exact finite scalar separation for formal power series over field extensions
+
+The coefficientwise scalar separation needed by the remaining extension-field descent is now proved. Let L be any field extension of K and let b_i be any K-linearly independent family in L. For every finite index set and every family of power series f_i over K, the series sum C(b_i)*map(f_i) over L is zero if and only if every f_i in the finite sum is zero. No independence assertion over an extension of series rings is assumed.
+
+The proof applies each actual coefficient map to the finite series sum. Its n-th coefficient is the K-linear combination of the b_i with coefficients equal to the n-th coefficients of the f_i. Base-field linear independence forces each coefficient to vanish, and power-series extensionality gives the exact zero series. The converse is the finite zero sum. A second theorem gives uniqueness of two finite series combinations over the same independent scalar family.
+
+P1-MATH-0322 closes the scalar-series separation step independently of any absolute irreducibility premise. The finite coefficient decomposition of extension-field polynomials, its evaluation on the branch, the resulting irreducibility descent and the actual bihomogeneous identification remain to be connected. NonGeometricRationalSingularity.Input is still an unproved alternative ordinary algebraic argument, and the Heath-Brown input is unchanged. T1.4 remains conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are320 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15531 jobs); direct axiom audit passed for 14108 declarations using only propext, Classical.choice and Quot.sound; all 13369 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.58 GiB.

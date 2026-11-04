@@ -1,0 +1,9 @@
+# Exact finite scalar separation for formal power series over field extensions
+
+Source: companion T1.4 non-geometric biform branch, following the local branch and exact kernel of P1-MATH-0321. Original manuscript hashes remain preserved.
+
+The coefficientwise scalar separation needed by the remaining extension-field descent is now proved. Let L be any field extension of K and let b_i be any K-linearly independent family in L. For every finite index set and every family of power series f_i over K, the series sum C(b_i)*map(f_i) over L is zero if and only if every f_i in the finite sum is zero. No independence assertion over an extension of series rings is assumed.
+
+The proof applies each actual coefficient map to the finite series sum. Its n-th coefficient is the K-linear combination of the b_i with coefficients equal to the n-th coefficients of the f_i. Base-field linear independence forces each coefficient to vanish, and power-series extensionality gives the exact zero series. The converse is the finite zero sum. A second theorem gives uniqueness of two finite series combinations over the same independent scalar family.
+
+P1-MATH-0322 closes the scalar-series separation step independently of any absolute irreducibility premise. The finite coefficient decomposition of extension-field polynomials, its evaluation on the branch, the resulting irreducibility descent and the actual bihomogeneous identification remain to be connected. NonGeometricRationalSingularity.Input is still an unproved alternative ordinary algebraic argument, and the Heath-Brown input is unchanged. T1.4 remains conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are320 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.

@@ -1489,6 +1489,8 @@ import PaperP1
 #print axioms PaperP1.PolynomialPowerMapFinite.finite
 #print axioms PaperP1.PowerSeriesHenselLift.constantCoeff_eval
 #print axioms PaperP1.PowerSeriesHenselLift.exists_root
+#print axioms PaperP1.PowerSeriesScalarIndependence.finite_sum_eq_zero_iff
+#print axioms PaperP1.PowerSeriesScalarIndependence.finite_sum_eq_iff
 #print axioms PaperP1.PowerSeriesSimpleRoot.adic_simple_root
 #print axioms PaperP1.PowerSeriesSimpleRoot.exists_root
 #print axioms PaperP1.PowerSeriesSquareGap.not_square

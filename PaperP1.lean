@@ -3482,3 +3482,4 @@ public import PaperP1.Diophantine.PrimitiveRationalPointLift
 public import PaperP1.Diophantine.NonGeometricRationalSingularity
 public import PaperP1.Algebra.PowerSeriesSimpleRoot
 public import PaperP1.Algebra.SmoothAffineFormalBranch
+public import PaperP1.Algebra.PowerSeriesScalarIndependence

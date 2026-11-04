@@ -11,7 +11,7 @@ Companion T1.5 is complete conditionally on exactly the same two ordinary biform
 
 Companion T1.4 is complete conditionally on exactly HeathBrownBiformInput.Input and NonGeometricBiformInput.Input. The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. Both ordinary input proofs remain open. The three incomplete numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records319 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records320 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14106 audited theorem/lemma declarations**. This
+- The project currently has **14108 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24414,3 +24414,14 @@ For an irreducible positive-outer-degree polynomial P and any such evaluation ki
 P1-MATH-0321 closes the arbitrary smooth-point branch and exact kernel step. The extension-field descent needed to prove geometric irreducibility from a rational smooth point remains open, as does its connection to the actual bihomogeneous geometric definition. NonGeometricRationalSingularity.Input is therefore still an unproved alternative ordinary argument; the Heath-Brown input is unchanged. T1.4 remains conditional and numbered coverage stays89 proved and75 conditional out of167 (164 completed). There are319 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15529 jobs); direct axiom audit passed for 14106 declarations using only propext, Classical.choice and Quot.sound; all 13367 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.59 GiB.
+
+
+## Exact finite scalar separation for formal power series over field extensions
+
+The coefficientwise scalar separation needed by the remaining extension-field descent is now proved. Let L be any field extension of K and let b_i be any K-linearly independent family in L. For every finite index set and every family of power series f_i over K, the series sum C(b_i)*map(f_i) over L is zero if and only if every f_i in the finite sum is zero. No independence assertion over an extension of series rings is assumed.
+
+The proof applies each actual coefficient map to the finite series sum. Its n-th coefficient is the K-linear combination of the b_i with coefficients equal to the n-th coefficients of the f_i. Base-field linear independence forces each coefficient to vanish, and power-series extensionality gives the exact zero series. The converse is the finite zero sum. A second theorem gives uniqueness of two finite series combinations over the same independent scalar family.
+
+P1-MATH-0322 closes the scalar-series separation step independently of any absolute irreducibility premise. The finite coefficient decomposition of extension-field polynomials, its evaluation on the branch, the resulting irreducibility descent and the actual bihomogeneous identification remain to be connected. NonGeometricRationalSingularity.Input is still an unproved alternative ordinary algebraic argument, and the Heath-Brown input is unchanged. T1.4 remains conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are320 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15531 jobs); direct axiom audit passed for 14108 declarations using only propext, Classical.choice and Quot.sound; all 13369 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.58 GiB.
