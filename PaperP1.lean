@@ -3324,3 +3324,7 @@ public import PaperP1.Asymptotics.DeterminantSignedFactorCover
 public import PaperP1.Algebra.BinaryLinearSubstitution
 public import PaperP1.Algebra.BinarySubstitutionHeight
 public import PaperP1.Diophantine.UnimodularBinaryCoordinates
+public import PaperP1.Asymptotics.BiformCoordinateHeight
+public import PaperP1.Diophantine.BiformCoordinateEquation
+public import PaperP1.Diophantine.BiformLinearCoordinates
+public import PaperP1.Diophantine.BiformPointCoordinates

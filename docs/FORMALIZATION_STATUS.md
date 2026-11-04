@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records246 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records247 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13603 audited theorem/lemma declarations**. This
+- The project currently has **13630 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23211,3 +23211,26 @@ The proof derives the actual affine-chart expansion, bounds products of arbitrar
 P1-MATH-0247 records the precise direction of the coordinate/substitution identities and the explicit degree-dependent height factor. Simultaneous transport of both projective pairs, actual short-vector lattice bases, the geometric curve cases and the final interval counts remain to be proved. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are246 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15209 jobs); direct axiom audit passed for 13603 declarations using only propext, Classical.choice and Quot.sound; all 12773 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.86 GiB.
+
+
+## Actual two-pair coordinate equations with common polynomial height and exact populations
+
+Simultaneous integral coordinate changes on both projective pairs now produce actual nonzero integer biforms, with exact point transport and a common polynomial coefficient-height exponent chosen before all moving matrices and populations.
+
+BiformLinearCoordinates proves that exchanging the coefficient families twice is exactly the identity for homogeneous rows. Exchanging the pairs preserves coefficient height. Combining the exchange with the proved binary substitutions constructs the actual transformed family. Its evaluation is exactly the original equation evaluated at (A*x,B*y). Actual inverse integer matrices prove that a nonzero family remains nonzero. Both homogeneous degrees are preserved, including degree-zero cases.
+
+BiformCoordinateEquation recovers the finite integer coefficient array from every transformed family, reuses the existing row reconstruction and builds its actual nested homogeneous polynomial. This equation is nonzero for inverse matrix pairs, has outer degree a and inner homogeneous row degree b, and its evaluation equals the original equation after the two matrix changes. Every actual integer coefficient is bounded by
+
+  (b+1)*(a+1)*H*(2*M)^a*(2*T)^b,
+
+where H bounds the source coefficients and M,T bound the two matrices. This is a proved finite coefficient estimate, not a supplied height hypothesis.
+
+BiformCoordinateHeight chooses the common exponent and threshold BEFORE N, both degrees, either matrix and the source family. If a<=Amax, b<=Bmax, source height<=N^kappa and matrix heights<=N^mu,N^nu, the actual transformed equation has height at most N^kappa', with
+
+  kappa' = kappa+(mu+1)*Amax+(nu+1)*Bmax+2.
+
+BiformPointCoordinates constructs the actual map of integer point pairs. Integer inverse matrices give reconstruction, injectivity and exact finite-population cardinality. Primitivity is preserved on both pairs, coordinate growth is explicitly bounded, and every original zero becomes an actual zero of the transformed equation in inverse coordinates. No sign or nonzero-denominator assumption is silently added; affine chart selection still has to handle zeros in transformed coordinates.
+
+P1-MATH-0248 records the full two-pair algebraic and height transport. Actual short-vector bases, projective chart/factor assembly in those coordinates, geometric curve counts and interval sums remain to be established. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are247 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15217 jobs); direct axiom audit passed for 13630 declarations using only propext, Classical.choice and Quot.sound; all 12804 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.83 GiB.
