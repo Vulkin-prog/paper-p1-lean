@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic power and remaining sharp arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile and41/30 activity claims remain open. Coverage is88/167 unconditional and56 conditional. The project records167 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile and41/30 activity claims remain open. Coverage is88/167 unconditional and57 conditional. The project records168 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -120,7 +120,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **11989 audited theorem/lemma declarations**. This
+- The project currently has **12000 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -19583,3 +19583,52 @@ one confirmed statement-scope correction. Compiler and dependency pins,
 original manuscript bytes and Palomar state are unchanged.
 
 Verified under Lean v4.36.0-rc2: full build passed (14479 jobs); direct axiom audit passed for 11989 declarations using only propext, Classical.choice and Quot.sound; all 10706 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.55 GiB.
+
+
+## Complete positive good-edge Palm costs
+
+CompanionT3.1 is now COMPLETE CONDITIONALLY on the existing finite
+source/ordinary surface-cover and normalized curve-count properties.
+GoodEdgePositivePalm defines the actual compatible unordered good-edge
+mass beta, the exact conditional start probability from the previously
+proved source-event ratio, the actual source-edge/regular-target positive
+Palm sum and its normalization by beta. iterated_mass and
+normalized_eq_iterated identify the literal sums displayed in the paper.
+No conditional probability or source mean is postulated.
+
+scaled_positive_part gives the exact identity
+q_e*(q_(e union{z})/q_e-p)_+=max(0,q_(e union{z})-p*q_e)
+for every actual positive source probability. A positive excess forces
+both a positive target intersection and positive actual joint probability.
+The latter forces literal separation of EVERY original pair, including
+exact contacts. Consequently every positive term lies in the already
+proved homogeneous source-edge/target population. Incompatible original
+triples have zero positive excess; they remain present in the majorant.
+The finite comparison retains the full source and target multiplicities
+and works on every G contained in the original regular dyadic set.
+
+GoodEdgePositivePalmUnderInputs.uniform_mass proves the stronger
+unnormalized power4/3 in both principal channels. uniform_normalized
+uses the actual compatible channel phase, including the factor1/2 for
+unordered edges, and proves normalized power1/3+1/b. Thus the2:3 Palm
+cost has the printed2/3 power, and the3:4 Palm cost has the stronger7/12
+power rather than the printed1/2. The private cutoff has its literal
+fixed upper bound and lower bound2b(L+1); the combined source theorem
+uses8(L+1)<=H<=D(L+1). One threshold precedes ALL critical N,L,H and
+ALL regular subfamilies G.
+
+companion_T3_1 assembles both positive normalized source inequalities,
+both unnormalized printed4/3 and5/4 estimates, and positivity of BOTH
+actual source masses under one common threshold. P1-MATH-0169 records
+the exact finite reduction and the stronger3:4 bound. Neither the sharper
+asymmetric31/24 estimate nor Reuss7/12 is used in this dependency route.
+No new external input or target probability estimate is introduced.
+
+Coverage becomes88/167 unconditional and57 conditional. CompanionT1.12
+stays in_progress for its distinct-two-edge clause; main sharper41/30
+third activity and the general fixed-channel Palm mean T2.7 stay open.
+There are168 improvements and one confirmed statement-scope correction.
+Original manuscript bytes, compiler and dependency pins are preserved.
+Palomar remains a later milestone.
+
+Verified under Lean v4.36.0-rc2: full build passed (14483 jobs); direct axiom audit passed for 12000 declarations using only propext, Classical.choice and Quot.sound; all 10722 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.52 GiB.

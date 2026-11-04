@@ -13297,11 +13297,42 @@
       "source": "companion_sections/arithmetic.tex",
       "line": 128,
       "sha256": "09d2d449c9f0862b99f9c8f87030f29ba7bcfc87a3ce16ec9125b9391e002ed1",
-      "status": "not_started",
-      "lean_declarations": [],
-      "literature_inputs": [],
-      "mathematical_changes": [],
-      "notes": ""
+      "status": "conditional",
+      "lean_declarations": [
+        "PaperP1.GoodEdgePositivePalmUnderInputs.uniform_mass",
+        "PaperP1.GoodEdgePositivePalmUnderInputs.uniform_normalized",
+        "PaperP1.GoodEdgePositivePalmUnderInputs.companion_T3_1",
+        "PaperP1.GoodEdgePositivePalm.scaled_positive_part",
+        "PaperP1.GoodEdgePositivePalm.iterated_mass",
+        "PaperP1.GoodEdgePositivePalm.mass_eq_excess_sum",
+        "PaperP1.GoodEdgePositivePalm.separated_of_positive_joint",
+        "PaperP1.GoodEdgePositivePalm.positive_crossing",
+        "PaperP1.GoodEdgePositivePalm.positive_points_subset",
+        "PaperP1.GoodEdgePositivePalm.finite_mass",
+        "PaperP1.GoodEdgePositivePalm.normalized_eq_iterated",
+        "PaperP1.GoodEdgePositivePalm.excess",
+        "PaperP1.GoodEdgePositivePalm.points",
+        "PaperP1.GoodEdgePositivePalm.mass",
+        "PaperP1.GoodEdgePositivePalm.beta",
+        "PaperP1.GoodEdgePositivePalm.normalized"
+      ],
+      "literature_inputs": [
+        "P1-POSITIVE-GOOD-EDGE-PALM",
+        "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+        "P1-GEO-ORDINARY-SURFACE-COVER",
+        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER"
+      ],
+      "mathematical_changes": [
+        "P1-MATH-0169"
+      ],
+      "notes": "CompanionT3.1 is now COMPLETE CONDITIONALLY on the existing finite\nsource/ordinary surface-cover and normalized curve-count properties.\nGoodEdgePositivePalm defines the actual compatible unordered good-edge\nmass beta, the exact conditional start probability from the previously\nproved source-event ratio, the actual source-edge/regular-target positive\nPalm sum and its normalization by beta. iterated_mass and\nnormalized_eq_iterated identify the literal sums displayed in the paper.\nNo conditional probability or source mean is postulated.\n\nscaled_positive_part gives the exact identity\nq_e*(q_(e union{z})/q_e-p)_+=max(0,q_(e union{z})-p*q_e)\nfor every actual positive source probability. A positive excess forces\nboth a positive target intersection and positive actual joint probability.\nThe latter forces literal separation of EVERY original pair, including\nexact contacts. Consequently every positive term lies in the already\nproved homogeneous source-edge/target population. Incompatible original\ntriples have zero positive excess; they remain present in the majorant.\nThe finite comparison retains the full source and target multiplicities\nand works on every G contained in the original regular dyadic set.\n\nGoodEdgePositivePalmUnderInputs.uniform_mass proves the stronger\nunnormalized power4/3 in both principal channels. uniform_normalized\nuses the actual compatible channel phase, including the factor1/2 for\nunordered edges, and proves normalized power1/3+1/b. Thus the2:3 Palm\ncost has the printed2/3 power, and the3:4 Palm cost has the stronger7/12\npower rather than the printed1/2. The private cutoff has its literal\nfixed upper bound and lower bound2b(L+1); the combined source theorem\nuses8(L+1)<=H<=D(L+1). One threshold precedes ALL critical N,L,H and\nALL regular subfamilies G.\n\ncompanion_T3_1 assembles both positive normalized source inequalities,\nboth unnormalized printed4/3 and5/4 estimates, and positivity of BOTH\nactual source masses under one common threshold. P1-MATH-0169 records\nthe exact finite reduction and the stronger3:4 bound. Neither the sharper\nasymmetric31/24 estimate nor Reuss7/12 is used in this dependency route.\nNo new external input or target probability estimate is introduced.\n\nCoverage becomes88/167 unconditional and57 conditional. CompanionT1.12\nstays in_progress for its distinct-two-edge clause; main sharper41/30\nthird activity and the general fixed-channel Palm mean T2.7 stay open.\nThere are168 improvements and one confirmed statement-scope correction.\nOriginal manuscript bytes, compiler and dependency pins are preserved.\nPalomar remains a later milestone.\n\nEarlier checkpoint history:\n",
+      "validation_history": [
+        {
+          "status": "not_started",
+          "literature_inputs": []
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14483 jobs); direct axiom audit passed for 12000 declarations using only propext, Classical.choice and Quot.sound; all 10722 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.52 GiB."
     },
     {
       "label": "p1:fixed:curve",

@@ -11288,6 +11288,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "e8fa41aae802f551d06944b9d88d0484f4a36fed"
+    },
+    {
+      "id": "P1-MATH-0169",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:palm",
+        "number": "T3.1",
+        "page": 26,
+        "source": "companion_sections/arithmetic.tex",
+        "line": 128,
+        "statement_sha256": "09d2d449c9f0862b99f9c8f87030f29ba7bcfc87a3ce16ec9125b9391e002ed1"
+      },
+      "original_assumption": "The positive good-edge Palm argument invokes the sharp asymmetric31/24 profile and states normalized powers2/3 and1/2 in channels2:3 and3:4.",
+      "finding": "The exact positive conditional excess is max(0,q_(e union{z})-p*q_e). Every positive term forces both literal original-window separation and a positive target/source intersection, so its full weighted sum is bounded by the proved homogeneous crossing-seed mass. The corrected coarse asymmetric4/3 profile and separated aligned rank bounds suffice. Dividing by the actual unordered compatible source phase proves normalized powers2/3 and7/12, strengthening the3:4 exponent. All source/target multiplicities and the unordered factor1/2 are retained.",
+      "evidence": [
+        "PaperP1.GoodEdgePositivePalm.scaled_positive_part",
+        "PaperP1.GoodEdgePositivePalm.iterated_mass",
+        "PaperP1.GoodEdgePositivePalm.normalized_eq_iterated",
+        "PaperP1.GoodEdgePositivePalm.positive_points_subset",
+        "PaperP1.GoodEdgePositivePalm.finite_mass",
+        "PaperP1.GoodEdgePositivePalmUnderInputs.uniform_normalized",
+        "PaperP1.GoodEdgePositivePalmUnderInputs.companion_T3_1"
+      ],
+      "proposed_revision": "Replace the separate positive Palm decomposition in T3.1 by the exact finite positive-excess comparison with homogeneous dependent-target seeds and the actual compatible channel lower phase. State the improved7/12 normalized power in channel3:4, with the stronger4/3 unnormalized bound, while keeping the general all-target fixed-channel Palm mean separate.",
+      "impact": "Completes companionT3.1 conditionally on the existing finite geometric properties, removes the sharper asymmetric and Reuss inputs from this route, and strengthens the3:4 rate without changing original event conditioning.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14483 jobs); direct axiom audit passed for 12000 declarations using only propext, Classical.choice and Quot.sound; all 10722 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.52 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

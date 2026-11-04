@@ -6318,6 +6318,9 @@ import PaperP1
 #print axioms PaperP1.GoodApartPairProductMass.uniform_coefficient
 #print axioms PaperP1.GoodApartPairProductMass.uniform_mass
 #print axioms PaperP1.GoodEdgeAccidentalMass.uniform_bound
+#print axioms PaperP1.GoodEdgePositivePalmUnderInputs.uniform_mass
+#print axioms PaperP1.GoodEdgePositivePalmUnderInputs.uniform_normalized
+#print axioms PaperP1.GoodEdgePositivePalmUnderInputs.companion_T3_1
 #print axioms PaperP1.GoodEdgeTouchingMassRate.uniform_bound
 #print axioms PaperP1.GoodPairSeedTail.private_product
 #print axioms PaperP1.GoodPairSeedTail.private_ratio
@@ -9415,6 +9418,14 @@ import PaperP1
 #print axioms PaperP1.GoodApartPairProducts.finite_count
 #print axioms PaperP1.GoodEdgePopulationBounds.cardinal
 #print axioms PaperP1.GoodEdgePopulationBounds.independent_mass_bound
+#print axioms PaperP1.GoodEdgePositivePalm.scaled_positive_part
+#print axioms PaperP1.GoodEdgePositivePalm.iterated_mass
+#print axioms PaperP1.GoodEdgePositivePalm.mass_eq_excess_sum
+#print axioms PaperP1.GoodEdgePositivePalm.separated_of_positive_joint
+#print axioms PaperP1.GoodEdgePositivePalm.positive_crossing
+#print axioms PaperP1.GoodEdgePositivePalm.positive_points_subset
+#print axioms PaperP1.GoodEdgePositivePalm.finite_mass
+#print axioms PaperP1.GoodEdgePositivePalm.normalized_eq_iterated
 #print axioms PaperP1.GoodEdgeTouchingMass.neighbors_target_subset
 #print axioms PaperP1.GoodEdgeTouchingMass.touching_cover
 #print axioms PaperP1.GoodEdgeTouchingMass.mass_bound

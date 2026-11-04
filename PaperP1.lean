@@ -2959,3 +2959,5 @@ public import PaperP1.Model.DependentPairCrossingConnected
 public import PaperP1.Model.HomogeneousBlockIntersection
 public import PaperP1.Model.HomogeneousCompressedCrossing
 public import PaperP1.Model.SeparatedHomogeneousMass
+public import PaperP1.Asymptotics.GoodEdgePositivePalmUnderInputs
+public import PaperP1.Model.GoodEdgePositivePalm
