@@ -4026,6 +4026,9 @@ import PaperP1
 #print axioms PaperP1.IntegerRealIntervalCount.interval_card
 #print axioms PaperP1.IntegerRealIntervalCount.band_card
 #print axioms PaperP1.IntegerRealIntervalCount.strip_card
+#print axioms PaperP1.IntegralSourceCoefficients.positive
+#print axioms PaperP1.IntegralSourceCoefficients.coefficient_upper
+#print axioms PaperP1.IntegralSourceCoefficients.barrier_orientation
 #print axioms PaperP1.IntersectionExceptional.of_intersection
 #print axioms PaperP1.IntersectionExceptional.oldSpan_mono
 #print axioms PaperP1.IntersectionExceptional.effective_le_raw
@@ -9656,6 +9659,11 @@ import PaperP1
 #print axioms PaperP1.ActualAuxiliaryCoordinates.forms_family_nonzero
 #print axioms PaperP1.ActualAuxiliaryCoordinates.uniform_transformed_family_height
 #print axioms PaperP1.ActualAuxiliaryCoordinates.coordinate_zero
+#print axioms PaperP1.ActualIntegerSourceEquation.source_value
+#print axioms PaperP1.ActualIntegerSourceEquation.coordinate_value
+#print axioms PaperP1.ActualIntegerSourceEquation.chart_homogeneous
+#print axioms PaperP1.ActualIntegerSourceEquation.chart_population_value
+#print axioms PaperP1.ActualIntegerSourceEquation.factor_population_value
 #print axioms PaperP1.BidegreeOneCurveCount.integer_box_floor
 #print axioms PaperP1.BidegreeOneCurveCount.mem_realSolutions
 #print axioms PaperP1.BidegreeOneCurveCount.integer_coefficient_bound
@@ -9944,6 +9952,9 @@ import PaperP1
 #print axioms PaperP1.SingleResultantFibreCount.finite_count
 #print axioms PaperP1.SingleResultantFibreCount.actual_real_solutions_count
 #print axioms PaperP1.SingleResultantFibreCount.coprime_actual_real_solutions_count
+#print axioms PaperP1.SourceBihomogeneousEquation.source_homogeneous
+#print axioms PaperP1.SourceBihomogeneousEquation.source_evaluation
+#print axioms PaperP1.SourceBihomogeneousEquation.inverse_equation_value
 #print axioms PaperP1.SplitQuadraticCongruences.gcd_quotient_divides
 #print axioms PaperP1.SplitQuadraticCongruences.quotient_equation
 #print axioms PaperP1.SplitQuadraticCongruences.quotientPair_injective

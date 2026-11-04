@@ -3396,3 +3396,6 @@ public import PaperP1.Diophantine.FourChartRealBounds
 public import PaperP1.Arithmetic.OccupiedDeterminantIntervals
 public import PaperP1.Asymptotics.ConstructedClusterCurveData
 public import PaperP1.Asymptotics.SourceCurveCover
+public import PaperP1.Arithmetic.IntegralSourceCoefficients
+public import PaperP1.Diophantine.ActualIntegerSourceEquation
+public import PaperP1.Diophantine.SourceBihomogeneousEquation
