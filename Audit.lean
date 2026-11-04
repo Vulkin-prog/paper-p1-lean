@@ -6813,6 +6813,14 @@ import PaperP1
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_extensions
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_centered_extensions
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_small_intersection_extensions
+#print axioms PaperP1.MacroscopicAlignedPairRank.units_residual_bound
+#print axioms PaperP1.MacroscopicAlignedPairRank.channel_bound
+#print axioms PaperP1.MacroscopicAlignedPairRank.actual_intersection_bound
+#print axioms PaperP1.MacroscopicIntervalGeometry.mem_starts_iff
+#print axioms PaperP1.MacroscopicIntervalGeometry.starts_pos
+#print axioms PaperP1.MacroscopicIntervalGeometry.log_lower
+#print axioms PaperP1.MacroscopicIntervalGeometry.uniform_geometry
+#print axioms PaperP1.MacroscopicNormalizedPairResidual.rank_sublinear
 #print axioms PaperP1.ManyPlanarSquareProducts.primitive_mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.uniform_natural
@@ -6928,6 +6936,7 @@ import PaperP1
 #print axioms PaperP1.NormalizedDefectSourceWeight.uniform_source_mass
 #print axioms PaperP1.NormalizedDefectSourceWeight.uniform_pair_mass
 #print axioms PaperP1.NormalizedPairResidual.rank_sublinear
+#print axioms PaperP1.NormalizedPairResidualCriterion.rank_sublinear_of_geometry
 #print axioms PaperP1.OffsetLineDivisorCountUniform.uniform_lines
 #print axioms PaperP1.OffsetLineMajorant.majorantConstant_pos
 #print axioms PaperP1.OffsetLineMajorant.majorantConstant_eq

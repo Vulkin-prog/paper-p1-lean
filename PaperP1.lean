@@ -3166,3 +3166,7 @@ public import PaperP1.Asymptotics.OrdinaryShortIntervalCensusInput
 public import PaperP1.Asymptotics.PrintedAnchorObstructionParameters
 public import PaperP1.Asymptotics.PrintedDeterministicAnchorObstruction
 public import PaperP1.Asymptotics.PrintedRandomizedPrivateObstruction
+public import PaperP1.Asymptotics.MacroscopicAlignedPairRank
+public import PaperP1.Asymptotics.MacroscopicIntervalGeometry
+public import PaperP1.Asymptotics.MacroscopicNormalizedPairResidual
+public import PaperP1.Asymptotics.NormalizedPairResidualCriterion

@@ -13130,6 +13130,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "fcace7161b27ba188406d9e6c46ff580af102a41"
+    },
+    {
+      "id": "P1-MATH-0198",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "The proof of T21.1 extends the actual aligned-pair rank argument uniformly down to source bases x,y>=M^delta in a critical logarithmic band.",
+      "finding": "The actual normalized-pair proof is extracted into a base-sensitive finite criterion. Exact macroscopic interval geometry supplies its hypotheses uniformly down to ceil(M^delta). This proves the normalized residual rank o(B), rational-unit pair-loss comparison and L/b+o(B) actual intersection-rank bound in the one-exact-unit case on the literal macroscopic population. No new analytic or geometric input is assumed.",
+      "proposed_revision": "Give the base-sensitive criterion and the exact uniform logarithmic transport for x>=M^delta before extending the aligned profile. Keep the one-unit result distinct from the no-unit enlarged alignment case and from the actual channel-sum asymptotics.",
+      "impact": "Begins T21.1 with an internal proof of the actual macroscopic one-unit rank extension. No profile equivalent is yet proved and numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.MacroscopicAlignedPairRank.units_residual_bound",
+        "PaperP1.MacroscopicAlignedPairRank.channel_bound",
+        "PaperP1.MacroscopicAlignedPairRank.actual_intersection_bound",
+        "PaperP1.MacroscopicIntervalGeometry.mem_starts_iff",
+        "PaperP1.MacroscopicIntervalGeometry.starts_pos",
+        "PaperP1.MacroscopicIntervalGeometry.log_lower",
+        "PaperP1.MacroscopicIntervalGeometry.uniform_geometry",
+        "PaperP1.MacroscopicNormalizedPairResidual.rank_sublinear",
+        "PaperP1.NormalizedPairResidualCriterion.rank_sublinear_of_geometry",
+        "PaperP1.MacroscopicIntervalGeometry.starts"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14901 jobs); direct axiom audit passed for 12858 declarations using only propext, Classical.choice and Quot.sound; all 11860 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.86 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
