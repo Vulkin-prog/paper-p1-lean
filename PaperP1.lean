@@ -3480,3 +3480,4 @@ public import PaperP1.Algebra.RationalCurveCriticalPoints
 public import PaperP1.Algebra.RationalizedCriticalPointBound
 public import PaperP1.Diophantine.PrimitiveRationalPointLift
 public import PaperP1.Diophantine.NonGeometricRationalSingularity
+public import PaperP1.Algebra.PowerSeriesSimpleRoot
