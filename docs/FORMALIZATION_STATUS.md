@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records258 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records259 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13767 audited theorem/lemma declarations**. This
+- The project currently has **13772 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23468,3 +23468,30 @@ The exponent and threshold precede all moving source scales and vector choices. 
 P1-MATH-0259 closes the finite first-lattice non-axis interval divisor count. Summation of these side contributions, the second lattice/regridding, geometric curve counts and remaining primitive scale reductions are still to be assembled. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are258 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15275 jobs); direct axiom audit passed for 13767 declarations using only propext, Classical.choice and Quot.sound; all 12968 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.65 GiB.
+
+
+## Complete actual first-lattice side sum by finite inverse-square tails
+
+The actual first-lattice weighted interval sum is now proved, including both primitive axes. A finite inverse-square-tail argument replaces the dyadic summation and avoids an extra logarithmic loss.
+
+FiniteSquareTail proves the following general finite inequality. If f is nonnegative on a finite set S and every positive threshold L satisfies
+
+  #{x in S : f(x)>=L}*L^2 <= C,
+
+then sum_S f <= 2*sqrt(C)*sqrt(#S). The proof removes a minimum term by strong finite induction. Its size is at most sqrt(C)/sqrt(#S); the already proved reciprocal-square-root increment inequality telescopes the entire sum. The division-form tail variant is also proved. No sorting, limiting argument, infinite sum or tail-sum estimate is supplied as an input.
+
+RelativeIntervalNonAxisSum applies the actual divisor tail count from P1-MATH-0259 with internal exponent 2*epsilon. The literal interval cardinality is at most 2M, and the square-root calculation gives
+
+  sum_nonaxis L(k) <= 60*N^epsilon*sqrt(D*E*M).
+
+The constant follows from 4*432*2=3456<=60^2. The output exponent is the original arbitrarily small epsilon; no extra logarithmic factor or exponent loss remains.
+
+RelativeIntervalSideSum supplies a literal nonnegative three-filter cover and combines this non-axis sum with BOTH actual primitive axis sums. For every finite selected interval set in the original index range, with k>=M/4 and any actual primitive vector choice of b-coordinate height at most N^kappa, it proves
+
+  sum_I L(k) <= 60*N^epsilon*sqrt(D*E*M)+32*E+8*D,
+
+where L(k)=4/|T_k*z(k)| uses the actual source lattice matrix. The threshold precedes N, M, both source scales, the selected intervals and the chosen vectors. The actual constructed shortest-vector bases from P1-MATH-0257 supply the primitive columns and common polynomial heights needed here; no shortest-vector interval-sum premise is introduced.
+
+P1-MATH-0260 completes the actual first-lattice interval arithmetic and its weighted side summation. Remaining work concerns the second lattice and its coefficient-uniform quadratic regridding, the geometric local curve counts, and remaining uniform primitive-scale assembly before the final solution-count theorem. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are259 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15281 jobs); direct axiom audit passed for 13772 declarations using only propext, Classical.choice and Quot.sound; all 12973 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.63 GiB.

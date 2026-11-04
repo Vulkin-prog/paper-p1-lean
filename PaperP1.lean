@@ -3357,3 +3357,6 @@ public import PaperP1.Arithmetic.PrimitiveBinaryColumns
 public import PaperP1.Arithmetic.IntegerRealIntervalCount
 public import PaperP1.Arithmetic.IntervalProductDivisorCount
 public import PaperP1.Asymptotics.RelativeIntervalNonAxisCount
+public import PaperP1.Analysis.FiniteSquareTail
+public import PaperP1.Asymptotics.RelativeIntervalNonAxisSum
+public import PaperP1.Asymptotics.RelativeIntervalSideSum

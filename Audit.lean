@@ -2413,6 +2413,8 @@ import PaperP1
 #print axioms PaperP1.FiniteNegativeMass.secondDifference_interval_sum
 #print axioms PaperP1.FiniteProductPowerMean.product_le_average_power
 #print axioms PaperP1.FiniteProductPowerMean.sum_product_le_moment
+#print axioms PaperP1.FiniteSquareTail.sum_bound
+#print axioms PaperP1.FiniteSquareTail.sum_bound_of_div_tail
 #print axioms PaperP1.HardSaddleExplicitScale.tendsto_logCore_atTop
 #print axioms PaperP1.HardSaddleExplicitScale.finite_normalized_gap
 #print axioms PaperP1.HardSaddleExplicitScale.tendsto_hard_saddle_gap
@@ -8188,6 +8190,9 @@ import PaperP1
 #print axioms PaperP1.RelativeBlockRelationsCount.induction_step
 #print axioms PaperP1.RelativeBlockRelationsCount.uniform_count
 #print axioms PaperP1.RelativeIntervalNonAxisCount.uniform_nonaxis_intervals
+#print axioms PaperP1.RelativeIntervalNonAxisSum.uniform_nonaxis_sum
+#print axioms PaperP1.RelativeIntervalSideSum.three_filter_cover
+#print axioms PaperP1.RelativeIntervalSideSum.uniform_first_lattice_sum
 #print axioms PaperP1.RelativeOriginalWindowMass.uniform_mass
 #print axioms PaperP1.RelaxedSaturationDegrees.relaxed_neighborhood_bounds
 #print axioms PaperP1.RepeatedLeftDyadicRootHostCount.uniform_hosts
