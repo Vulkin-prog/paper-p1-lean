@@ -2733,3 +2733,14 @@ public import PaperP1.Asymptotics.PositionalWeightedApproximationUnderInputs
 public import PaperP1.Probability.PositionalGroundSupport
 public import PaperP1.Probability.PositionalGrid
 public import PaperP1.Asymptotics.PositionalGridApproximationUnderInputs
+public import PaperP1.Probability.PositionalMarkovKernel
+public import PaperP1.Probability.PositionalKernelMoments
+public import PaperP1.Probability.PositionalDeterministicMap
+public import PaperP1.Probability.PositionalPairDeletion
+public import PaperP1.Probability.PositionalUniformAtoms
+public import PaperP1.Probability.PositionalDeletionKernels
+public import PaperP1.Probability.PositionalWeightedKernel
+public import PaperP1.Probability.PositionalDeletionWeightedContraction
+public import PaperP1.Model.PositionalDeletedFields
+public import PaperP1.Asymptotics.PositionalDeletionTransferUnderInputs
+public import PaperP1.Probability.PositionalKernelCoupling
