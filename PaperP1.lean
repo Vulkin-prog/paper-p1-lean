@@ -3418,3 +3418,5 @@ public import PaperP1.Asymptotics.ActualZeroFirstDegreeCount
 public import PaperP1.Arithmetic.SourceLinearFibreBounds
 public import PaperP1.Asymptotics.ActualZeroSecondDegreeCount
 public import PaperP1.Asymptotics.PolylogSourceBarrierCount
+public import PaperP1.Algebra.GeometricFactorSwap
+public import PaperP1.Arithmetic.ProjectiveFactorCoefficients

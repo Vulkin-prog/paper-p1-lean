@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**282 mathematical improvements and one statement-scope correction are confirmed.**
+**283 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23125,3 +23125,18 @@ PolylogSourceBarrierCount proves one threshold absorbing BOTH Gamma<=Kbar*(log N
 P1-MATH-0283 closes BOTH degree-zero numerical local branches with P1-MATH-0282. Higher-degree geometric counting and final source/primitive-scale assembly remain open. T1.4 and T1.5 remain in progress; coverage remains89 proved and72 conditional out of167. There are282 improvements and one statement-scope correction. No new axiom, external input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15401 jobs); direct axiom audit passed for 13924 declarations using only propext, Classical.choice and Quot.sound; all 13152 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.21 GiB.
+
+
+## Exact projective coefficient height and complex absolute-irreducibility transport
+
+The literal projective auxiliary factors now have a complete exact coefficient formula, both homogeneous degrees and an exact coefficient-height characterization. Complex absolute irreducibility is defined on the actual projective polynomial and is proved invariant under the actual pair exchange. No rational-to-absolute irreducibility implication is made.
+
+ProjectiveFactorCoefficients recovers EVERY outer/inner monomial coefficient of the projectivized integer bivariate factor. It is the literal bivariate coefficient when both binary monomial degrees match the actual partial degrees, and is zero otherwise. The coefficient transpose identity follows from the literal bivariate swap. Every coefficient form is homogeneous of the actual second degree; the already proved outer homogeneity supplies the other degree. The projective coefficient bound by an integer H is equivalent to the original bivariate coefficient height being at most H, with no extra factor or exponent loss.
+
+GeometricFactorSwap defines the literal double integer-to-complex coefficient map on the projective factor and its irreducibility predicate Geometric. It proves the generic coefficient transpose formula for the actual nested multivariate polynomial ring equivalence. The exact complex projective polynomial of the swapped factor is the image of the original complex polynomial under that ring equivalence. Irreducibility is therefore equivalent in the two orientations.
+
+These are unconditional algebraic prerequisites for applying the primary-source Heath-Brown Lemma2 in its ACTUAL scope: an absolutely irreducible bihomogeneous integer form of positive bidegrees, the coefficient-height factor retained, and a bound on one primitive pair with no height restriction on the other. The primary source was rechecked at arXiv:1010.6217v3, Lemma2 on printedpage9 and Section6. The Lemma2 numerical count itself is NOT asserted as proved here and no external input is added at this checkpoint.
+
+P1-MATH-0284 closes the literal projective height, homogeneous coefficient degrees and absolute-irreducibility swap prerequisites. Actual factors are known rationally irreducible; their absolute versus non-geometric counting cases and final source/primitive-scale assembly remain open. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are283 improvements and one statement-scope correction. No new axiom, external input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15405 jobs); direct axiom audit passed for 13933 declarations using only propext, Classical.choice and Quot.sound; all 13163 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.19 GiB.

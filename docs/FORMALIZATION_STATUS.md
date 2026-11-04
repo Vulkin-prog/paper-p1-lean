@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records282 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records283 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13924 audited theorem/lemma declarations**. This
+- The project currently has **13933 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23894,3 +23894,18 @@ PolylogSourceBarrierCount proves one threshold absorbing BOTH Gamma<=Kbar*(log N
 P1-MATH-0283 closes BOTH degree-zero numerical local branches with P1-MATH-0282. Higher-degree geometric counting and final source/primitive-scale assembly remain open. T1.4 and T1.5 remain in progress; coverage remains89 proved and72 conditional out of167. There are282 improvements and one statement-scope correction. No new axiom, external input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15401 jobs); direct axiom audit passed for 13924 declarations using only propext, Classical.choice and Quot.sound; all 13152 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.21 GiB.
+
+
+## Exact projective coefficient height and complex absolute-irreducibility transport
+
+The literal projective auxiliary factors now have a complete exact coefficient formula, both homogeneous degrees and an exact coefficient-height characterization. Complex absolute irreducibility is defined on the actual projective polynomial and is proved invariant under the actual pair exchange. No rational-to-absolute irreducibility implication is made.
+
+ProjectiveFactorCoefficients recovers EVERY outer/inner monomial coefficient of the projectivized integer bivariate factor. It is the literal bivariate coefficient when both binary monomial degrees match the actual partial degrees, and is zero otherwise. The coefficient transpose identity follows from the literal bivariate swap. Every coefficient form is homogeneous of the actual second degree; the already proved outer homogeneity supplies the other degree. The projective coefficient bound by an integer H is equivalent to the original bivariate coefficient height being at most H, with no extra factor or exponent loss.
+
+GeometricFactorSwap defines the literal double integer-to-complex coefficient map on the projective factor and its irreducibility predicate Geometric. It proves the generic coefficient transpose formula for the actual nested multivariate polynomial ring equivalence. The exact complex projective polynomial of the swapped factor is the image of the original complex polynomial under that ring equivalence. Irreducibility is therefore equivalent in the two orientations.
+
+These are unconditional algebraic prerequisites for applying the primary-source Heath-Brown Lemma2 in its ACTUAL scope: an absolutely irreducible bihomogeneous integer form of positive bidegrees, the coefficient-height factor retained, and a bound on one primitive pair with no height restriction on the other. The primary source was rechecked at arXiv:1010.6217v3, Lemma2 on printedpage9 and Section6. The Lemma2 numerical count itself is NOT asserted as proved here and no external input is added at this checkpoint.
+
+P1-MATH-0284 closes the literal projective height, homogeneous coefficient degrees and absolute-irreducibility swap prerequisites. Actual factors are known rationally irreducible; their absolute versus non-geometric counting cases and final source/primitive-scale assembly remain open. T1.4 and T1.5 stay in progress; coverage remains89 proved and72 conditional out of167. There are283 improvements and one statement-scope correction. No new axiom, external input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15405 jobs); direct axiom audit passed for 13933 declarations using only propext, Classical.choice and Quot.sound; all 13163 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.19 GiB.

@@ -953,6 +953,11 @@ import PaperP1
 #print axioms PaperP1.FreeApproximationRank.finite_of_span
 #print axioms PaperP1.FreeApproximationRank.finrank_eq
 #print axioms PaperP1.FreeApproximationRank.fraction_finrank_eq
+#print axioms PaperP1.GeometricFactorSwap.comm_coefficient
+#print axioms PaperP1.GeometricFactorSwap.complex_coefficient
+#print axioms PaperP1.GeometricFactorSwap.complex_projective_swap
+#print axioms PaperP1.GeometricFactorSwap.geometric_swap_iff
+#print axioms PaperP1.GeometricFactorSwap.geometric_swap
 #print axioms PaperP1.GradedChartBasis.targetEquiv_mk
 #print axioms PaperP1.GradedChartBasis.targetEquiv_commutes
 #print axioms PaperP1.GradedChartBasis.basis_apply
@@ -4969,6 +4974,10 @@ import PaperP1
 #print axioms PaperP1.ProjectedWindowLists.one_fibre_count
 #print axioms PaperP1.ProjectedWindowLists.pair_fibre_count
 #print axioms PaperP1.ProjectedWindowLists.zero_card
+#print axioms PaperP1.ProjectiveFactorCoefficients.projective_coefficient
+#print axioms PaperP1.ProjectiveFactorCoefficients.projective_coefficient_swap
+#print axioms PaperP1.ProjectiveFactorCoefficients.coefficient_homogeneous
+#print axioms PaperP1.ProjectiveFactorCoefficients.height_iff
 #print axioms PaperP1.QuadraticGridWeights.image_subset
 #print axioms PaperP1.QuadraticGridWeights.weighted_sum_bound
 #print axioms PaperP1.QuadraticIntervalGrid.same_grid_square_gaps
