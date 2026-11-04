@@ -12314,7 +12314,8 @@
             "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER"
           ]
         }
-      ]
+      ],
+      "validation_commit": "25d1f39152a027ac9cc904ebdde148517ad83de9"
     },
     {
       "label": "p1:arith:small-kernels",
@@ -12961,7 +12962,8 @@
             "P1-PROB-ONCE-ALL-ORIGINAL-COUPLING"
           ]
         }
-      ]
+      ],
+      "validation_commit": "25d1f39152a027ac9cc904ebdde148517ad83de9"
     },
     {
       "label": "p1:arith:smallpart-budget",
@@ -17606,7 +17608,8 @@
           ]
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14599 jobs); direct axiom audit passed for 12253 declarations using only propext, Classical.choice and Quot.sound; all 11070 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.23 GiB."
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14599 jobs); direct axiom audit passed for 12253 declarations using only propext, Classical.choice and Quot.sound; all 11070 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.23 GiB.",
+      "validation_commit": "25d1f39152a027ac9cc904ebdde148517ad83de9"
     },
     {
       "label": "p1:limits:stein",
