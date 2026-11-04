@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**261 mathematical improvements and one statement-scope correction are confirmed.**
+**262 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -22766,3 +22766,20 @@ QuadraticRelativeError proves |2*alpha+alpha^2|<=12/M from |alpha|<=4/M, rescale
 P1-MATH-0262 closes the actual vertical ratio normalization, including negative shifts through |h|. The actual second-lattice point box, coordinate and side-sum assembly, geometric curve counts and remaining primitive scale assembly remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are261 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15291 jobs); direct axiom audit passed for 13790 declarations using only propext, Classical.choice and Quot.sound; all 12994 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.60 GiB.
+
+
+## Complete side summation on the actual quadratic second grid
+
+The complete finite side summation now applies to the ACTUAL quadratic grid used by the second lattice, including its lower index range and both primitive axes. This closes the second-grid arithmetic without an assumed lattice-count estimate.
+
+RelativeIntervalGeneralAxis replaces the special lower index condition k>=M/4 by the literal condition M<=A*k, for any nonnegative real A. The primitive first-axis contribution satisfies M*L<=4*A*E and its finite sum is at most8*A*E. The other primitive axis retains its at most8*D sum. RelativeIntervalGeneralSum combines these exact axis bounds with the already proved non-axis divisor/strip and square-tail argument. A common threshold BEFORE N, M, D, E, the actual finite index set, A and the primitive vector choices gives
+
+  sum L(k) <= 60*N^epsilon*sqrt(D*E*M)+8*A*E+8*D.
+
+QuadraticLatticeSideSum applies this to M'=2M and the actual finite grid image q=floor(k^2/M). For M>=32 and the original range M/4<=k<=2M, every actual grid index satisfies M'<=64*q and q<=2M'. The already proved fibre multiplicity TWO transfers the grid side sum back to the original interval indices. For primitive vector choices made consistently per grid index and bounded second coordinate <=N^kappa, with2M<=N,
+
+  sum_original L(grid(k)) <= 120*N^epsilon*sqrt(D*E*(2M))+1024*E+16*D.
+
+This statement concerns the literal sideLength2 of the actual transform matrix at each grid center, not an arbitrary family supplied with a count estimate. Its uniform threshold is chosen before every moving coefficient and source box. P1-MATH-0263 closes the arithmetic side summation for the second grid. The actual second-lattice point box and effective-scale/coordinate assembly, geometric curve counts and remaining primitive scale assembly remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are262 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15297 jobs); direct axiom audit passed for 13794 declarations using only propext, Classical.choice and Quot.sound; all 12998 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.58 GiB.

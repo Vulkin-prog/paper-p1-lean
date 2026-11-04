@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records261 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records262 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13790 audited theorem/lemma declarations**. This
+- The project currently has **13794 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23535,3 +23535,20 @@ QuadraticRelativeError proves |2*alpha+alpha^2|<=12/M from |alpha|<=4/M, rescale
 P1-MATH-0262 closes the actual vertical ratio normalization, including negative shifts through |h|. The actual second-lattice point box, coordinate and side-sum assembly, geometric curve counts and remaining primitive scale assembly remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are261 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15291 jobs); direct axiom audit passed for 13790 declarations using only propext, Classical.choice and Quot.sound; all 12994 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.60 GiB.
+
+
+## Complete side summation on the actual quadratic second grid
+
+The complete finite side summation now applies to the ACTUAL quadratic grid used by the second lattice, including its lower index range and both primitive axes. This closes the second-grid arithmetic without an assumed lattice-count estimate.
+
+RelativeIntervalGeneralAxis replaces the special lower index condition k>=M/4 by the literal condition M<=A*k, for any nonnegative real A. The primitive first-axis contribution satisfies M*L<=4*A*E and its finite sum is at most8*A*E. The other primitive axis retains its at most8*D sum. RelativeIntervalGeneralSum combines these exact axis bounds with the already proved non-axis divisor/strip and square-tail argument. A common threshold BEFORE N, M, D, E, the actual finite index set, A and the primitive vector choices gives
+
+  sum L(k) <= 60*N^epsilon*sqrt(D*E*M)+8*A*E+8*D.
+
+QuadraticLatticeSideSum applies this to M'=2M and the actual finite grid image q=floor(k^2/M). For M>=32 and the original range M/4<=k<=2M, every actual grid index satisfies M'<=64*q and q<=2M'. The already proved fibre multiplicity TWO transfers the grid side sum back to the original interval indices. For primitive vector choices made consistently per grid index and bounded second coordinate <=N^kappa, with2M<=N,
+
+  sum_original L(grid(k)) <= 120*N^epsilon*sqrt(D*E*(2M))+1024*E+16*D.
+
+This statement concerns the literal sideLength2 of the actual transform matrix at each grid center, not an arbitrary family supplied with a count estimate. Its uniform threshold is chosen before every moving coefficient and source box. P1-MATH-0263 closes the arithmetic side summation for the second grid. The actual second-lattice point box and effective-scale/coordinate assembly, geometric curve counts and remaining primitive scale assembly remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are262 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15297 jobs); direct axiom audit passed for 13794 declarations using only propext, Classical.choice and Quot.sound; all 12998 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.58 GiB.

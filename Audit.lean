@@ -2541,6 +2541,8 @@ import PaperP1
 #print axioms PaperP1.RelativeIntervalAxisBounds.second_axis_scale
 #print axioms PaperP1.RelativeIntervalAxisBounds.scaled_interval_sum_bound
 #print axioms PaperP1.RelativeIntervalAxisBounds.actual_axis_sums
+#print axioms PaperP1.RelativeIntervalGeneralAxis.first_axis_scale
+#print axioms PaperP1.RelativeIntervalGeneralAxis.actual_axis_sums
 #print axioms PaperP1.RelativeIntervalLattice.inverse_products
 #print axioms PaperP1.RelativeIntervalLattice.determinant
 #print axioms PaperP1.RelativeIntervalLattice.image_formula
@@ -8103,6 +8105,7 @@ import PaperP1
 #print axioms PaperP1.QuadraticKernelExponents.exponent_le_affine
 #print axioms PaperP1.QuadraticKernelExponents.exponent_le_affine_with_margin
 #print axioms PaperP1.QuadraticKernelExponents.unrestricted_comparison_counterexample
+#print axioms PaperP1.QuadraticLatticeSideSum.uniform_grid_sum
 #print axioms PaperP1.QuadraticLawLowerBoundUnderInputs.article_16_2_lower
 #print axioms PaperP1.QuadraticOrderBranching.badStarts_card_critical
 #print axioms PaperP1.QuadraticOrderBranching.quadratic_order_branching
@@ -8207,6 +8210,7 @@ import PaperP1
 #print axioms PaperP1.RelativeBlockRelationsCount.zero_count
 #print axioms PaperP1.RelativeBlockRelationsCount.induction_step
 #print axioms PaperP1.RelativeBlockRelationsCount.uniform_count
+#print axioms PaperP1.RelativeIntervalGeneralSum.uniform_lattice_sum
 #print axioms PaperP1.RelativeIntervalNonAxisCount.uniform_nonaxis_intervals
 #print axioms PaperP1.RelativeIntervalNonAxisSum.uniform_nonaxis_sum
 #print axioms PaperP1.RelativeIntervalSideSum.three_filter_cover
