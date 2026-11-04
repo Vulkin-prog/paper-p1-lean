@@ -2856,3 +2856,9 @@ public import PaperP1.Asymptotics.AsymmetricSparseSupport
 public import PaperP1.Asymptotics.TranslatedKernelCounts
 public import PaperP1.Asymptotics.TruncatedAnchorPairCount
 public import PaperP1.Asymptotics.TruncatedAsymmetricSupportCount
+public import PaperP1.Algebra.FinitePiExtensionSupport
+public import PaperP1.Arithmetic.AsymmetricEnvelopeGraph
+public import PaperP1.Arithmetic.AsymmetricEnvelopeRank
+public import PaperP1.Arithmetic.AsymmetricEnvelopeRelation
+public import PaperP1.Combinatorics.PinnedTargetBudget
+public import PaperP1.Combinatorics.PinnedTargetRestriction
