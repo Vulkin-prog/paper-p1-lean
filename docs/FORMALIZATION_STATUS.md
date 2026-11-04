@@ -9,7 +9,7 @@ Companion T1.5 is complete conditionally on exactly the same two ordinary biform
 
 Companion T1.4 is complete conditionally on exactly HeathBrownBiformInput.Input and NonGeometricBiformInput.Input. The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. Both ordinary input proofs remain open. The three incomplete numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records310 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records311 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -128,7 +128,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14062 audited theorem/lemma declarations**. This
+- The project currently has **14064 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24286,3 +24286,18 @@ SharpAsymmetricSparseSupport applies the actual exact finite support embedding t
 All sharp counts use only the two retained ordinary biform inputs fromT1.4/T1.5. The earlier coarse4/3 support theorems remain unconditional. The next required step is to combine this sharp support with the already proved sparse-loss power and conditional dense weighted estimate, using the enlarged alignment radius dictated byP1-MATH-0162. The disproved literal radius-one T1.10 is not marked complete. Coverage remains89 proved and75 conditional out of167 (164 completed), with three numbered obligations incomplete. There are310 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15507 jobs); direct axiom audit passed for 14062 declarations using only propext, Classical.choice and Quot.sound; all 13311 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.74 GiB.
+
+
+## Sharp31/24 weighted asymmetric profiles on the checked enlarged-radius domains
+
+The FULL existing asymmetric weight sum now has exponent31/24 on the checked enlarged-alignment domains. SharpAsymmetricProfileUnderInputs proves this for both centres in the original dyadic block. SharpExpandedAsymmetricProfileUnderInputs proves it for every old centre in [N,N+Q*N) and every new centre in the original dyadic block. Both conclusions use the EXISTING profile definitions and the actual full weights2^loss-1, so the counted populations and losses have not been replaced.
+
+For every arbitrary permitted old selected set, the actual positive-loss pairs are separated according to their actual number of nontrivial components. The sparse sector has sharp support cardinality N^(31/24+eta) byP1-MATH-0310/0311, and its proved loss-power bound contributes at most N^(2*eta). The dense sector uses the previously proved weighted geometric estimate N^(1+epsilon/2). The exact finite partition and zero-weight identity cover ALL profile pairs. The error margins and final factor2 are paid explicitly, giving N^(31/24+epsilon).
+
+The ordinary arguments are explicit: the TWO existing biform inputs needed for sharp support counting, plus the FOUR existing geometric arguments from the earlier coarse weighted theorem (the source and ordinary surface-cover properties and the two degree-specific normalized-curve bound families). No asymmetric support or weighted-profile estimate is an assumed argument. All auxiliary degree choices precede the moving source data. The previous coarse4/3 theorem keeps its original smaller dependency set, and the already stronger estimates on actual effective-crossing subpopulations are unchanged.
+
+The enlarged exclusion radius is Dold, matching the permitted old interval radius Dold*(L+1), with Dold>=1. The cutoff satisfies (2*Dold+1)*(L+1)<=H<=Dcut*(L+1). These exact domains make the correction fromP1-MATH-0162 concrete: the old radius-one counterexample is not being declared proved. The original printed T1.10 remains disproved at its unqualified radius and stays in progress in the baseline ledger. The new checked revision variants are recorded separately with their exact dyadic/expanded-old domains and ordinary dependencies; a statement covering additional comparable centre arrangements would need its own proved transport.
+
+P1-MATH-0312 closes the sharp full weighted profiles on those exact enlarged-radius domains. It supplies a concrete proved replacement for the corresponding source uses, subject to the retained ordinary inputs, while preserving the counterexample and the original manuscript bytes. Coverage remains89 proved and75 conditional out of167 (164 completed), with three numbered obligations incomplete. There are311 improvements and one statement-scope correction. No new external input, axiom, dependency download or compiler change is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15511 jobs); direct axiom audit passed for 14064 declarations using only propext, Classical.choice and Quot.sound; all 13313 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.71 GiB.

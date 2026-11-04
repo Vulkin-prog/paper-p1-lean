@@ -3471,3 +3471,5 @@ public import PaperP1.Asymptotics.SharpAsymmetricSparseSupport
 public import PaperP1.Asymptotics.SharpComparableTranslatedKernelCounts
 public import PaperP1.Asymptotics.SharpComparableTruncatedSupportCount
 public import PaperP1.Asymptotics.SharpExpandedAsymmetricSparseSupport
+public import PaperP1.Asymptotics.SharpAsymmetricProfileUnderInputs
+public import PaperP1.Asymptotics.SharpExpandedAsymmetricProfileUnderInputs

@@ -17669,6 +17669,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "f453d2fc9c262c0eb3417ede4284b28c08a3c2fa"
+    },
+    {
+      "id": "P1-MATH-0312",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:asymmetric",
+        "number": "T1.10",
+        "page": 14,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 811,
+        "statement_sha256": "e176fe0574fc119242f3c523853be4fdc4ff53b0366327c5f6387f1af29c802a"
+      },
+      "original_assumption": "The sharp support count and existing sparse-loss/dense-geometric budgets yield the full weighted31/24 profile when nonalignment uses the necessary radius matching the old selected-block width.",
+      "finding": "The exact existing full profile is bounded by partitioning actual sparse and dense component sectors. Sparse support and loss powers combine below31/24 plus the margin; dense weighted mass has exponent1 plus a margin. This closes both checked dyadic and expanded-old enlarged-radius variants with all ordinary inputs explicit.",
+      "proposed_revision": "Replace the disproved unqualified radius-one assertion by an explicitly enlarged-radius statement on the checked centre domains, list both biform and geometric ordinary dependencies, and retain the exact sparse/dense weighted partition. Prove any broader comparable-centre transport separately.",
+      "impact": "Closes concrete sharp weighted31/24 revision variants on the exact enlarged-radius dyadic/expanded-old domains. The original T1.10 remains disproved and incomplete in the baseline; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.SharpAsymmetricProfileUnderInputs.uniform_profile",
+        "PaperP1.SharpExpandedAsymmetricProfileUnderInputs.uniform_profile"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15511 jobs); direct axiom audit passed for 14064 declarations using only propext, Classical.choice and Quot.sound; all 13313 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.71 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

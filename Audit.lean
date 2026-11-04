@@ -8525,6 +8525,7 @@ import PaperP1
 #print axioms PaperP1.SharedPrincipalTripleMass.inclusion
 #print axioms PaperP1.SharedPrincipalTripleMass.uniform_mass
 #print axioms PaperP1.SharedPrincipalTripleMass.relative_to_beta_squared
+#print axioms PaperP1.SharpAsymmetricProfileUnderInputs.uniform_profile
 #print axioms PaperP1.SharpAsymmetricSparseSupport.uniform_count
 #print axioms PaperP1.SharpChannelCompressedActivityUnderInputs.uniform_bound
 #print axioms PaperP1.SharpChannelCompressedActivityUnderInputs.companion_T15_1_separated
@@ -8537,6 +8538,7 @@ import PaperP1
 #print axioms PaperP1.SharpConnectedSeedCatalogUnderInputs.uniform_mass
 #print axioms PaperP1.SharpCovarianceScaleUnderInputs.uniform_absolute_scale
 #print axioms PaperP1.SharpCovarianceScaleUnderInputs.uniform_regular_covariance
+#print axioms PaperP1.SharpExpandedAsymmetricProfileUnderInputs.uniform_profile
 #print axioms PaperP1.SharpExpandedAsymmetricSparseSupport.uniform_count
 #print axioms PaperP1.SharpFiniteInteriorMassUnderInputs.uniform_channel
 #print axioms PaperP1.SharpFiniteInteriorMassUnderInputs.uniform_mass
