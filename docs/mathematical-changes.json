@@ -14451,6 +14451,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "0d826e722bedd49bb9044b0390ca9e4e45e4b428"
+    },
+    {
+      "id": "P1-MATH-0228",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:private-exact",
+        "number": "T19.16",
+        "page": 80,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1214,
+        "statement_sha256": "6baf345eb5567df4010efd0ecbca65dd33af3c09e924d3b13643b928c59b8315"
+      },
+      "original_assumption": "T19.16 uses a weighted full-value profile to bound the actual signed forcing cost; the actual unequal signed words and all compatibility constraints must be connected to that profile.",
+      "finding": "The literal signed joint mass equals the actual combined raw affine mass, and its relation kernel embeds in the maximal raw kernel with no extra type-dependent loss.",
+      "proposed_revision": "State the compatibility-preserving raw-word formula and explicit kernel embedding before applying the full-value profile; retain each exact signed marginal throughout the summation.",
+      "impact": "Discharges the finite signed joint-probability bridge for T19.16 without assuming independence, a probability bound or a rank comparison. The upper cost aggregation is still open.",
+      "evidence": [
+        "PaperP1.RawKernelRestriction.combination_extend",
+        "PaperP1.RawKernelRestriction.kernelEmbedding_injective",
+        "PaperP1.RawKernelRestriction.finrank_le",
+        "PaperP1.RawValueLaw.relation_zero_iff",
+        "PaperP1.RawValueLaw.kernel_eq",
+        "PaperP1.RawValueLaw.exact_mass",
+        "PaperP1.RawValueLaw.mass_le",
+        "PaperP1.SignedRawJointMass.kernel_le_maximal",
+        "PaperP1.SignedRawJointMass.joint_eq_mass",
+        "PaperP1.SignedRawJointMass.joint_le_maximal",
+        "PaperP1.RawKernelRestriction.kernelEmbedding",
+        "PaperP1.RawValueLaw.columnMap",
+        "PaperP1.SignedRawJointMass.values"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15079 jobs); direct axiom audit passed for 13284 declarations using only propext, Classical.choice and Quot.sound; all 12374 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.25 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

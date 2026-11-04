@@ -3256,3 +3256,6 @@ public import PaperP1.Arithmetic.RawWindowExtension
 public import PaperP1.Asymptotics.CriticalRawValueProfileUnderInputs
 public import PaperP1.Asymptotics.EnlargedRawValueProfileUnderInputs
 public import PaperP1.Asymptotics.UnsignedTwoChannelMainBound
+public import PaperP1.Model.RawKernelRestriction
+public import PaperP1.Model.RawValueLaw
+public import PaperP1.Model.SignedRawJointMass

@@ -11214,6 +11214,9 @@ import PaperP1
 #print axioms PaperP1.RawEvenProfileHosts.uniform_host_bound
 #print axioms PaperP1.RawGoodPopulation.good_iff_raw
 #print axioms PaperP1.RawGoodPopulation.edges_eq_channels
+#print axioms PaperP1.RawKernelRestriction.combination_extend
+#print axioms PaperP1.RawKernelRestriction.kernelEmbedding_injective
+#print axioms PaperP1.RawKernelRestriction.finrank_le
 #print axioms PaperP1.RawPrimeRank.coordinates_injective
 #print axioms PaperP1.RawPrimeRank.oldSpan_rank_le
 #print axioms PaperP1.RawPrimeRank.squareClass_le_raw
@@ -11230,6 +11233,10 @@ import PaperP1
 #print axioms PaperP1.RawValueIndependence.non_surjective_relation
 #print axioms PaperP1.RawValueIndependence.joint_surjective_of_combined
 #print axioms PaperP1.RawValueIndependence.joint_non_surjective_related
+#print axioms PaperP1.RawValueLaw.relation_zero_iff
+#print axioms PaperP1.RawValueLaw.kernel_eq
+#print axioms PaperP1.RawValueLaw.exact_mass
+#print axioms PaperP1.RawValueLaw.mass_le
 #print axioms PaperP1.RawWordObservation.joint_apply
 #print axioms PaperP1.RawWordObservation.independent_words
 #print axioms PaperP1.RealPrivateChannelSources.privateAbove_floor
@@ -11609,6 +11616,9 @@ import PaperP1
 #print axioms PaperP1.SignedPrivatePalmForcing.actual_signed_small_probability
 #print axioms PaperP1.SignedPrivatePalmForcing.actual_signed_probability
 #print axioms PaperP1.SignedPrivatePalmForcing.actual_signed_hard_conditional
+#print axioms PaperP1.SignedRawJointMass.kernel_le_maximal
+#print axioms PaperP1.SignedRawJointMass.joint_eq_mass
+#print axioms PaperP1.SignedRawJointMass.joint_le_maximal
 #print axioms PaperP1.SingletonSeedMass.singleton_injective
 #print axioms PaperP1.SingletonSeedMass.joint_singleton
 #print axioms PaperP1.SingletonSeedMass.sum_seeds
