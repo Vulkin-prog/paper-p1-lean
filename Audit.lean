@@ -8276,6 +8276,9 @@ import PaperP1
 #print axioms PaperP1.RetainedPairLeakageUnderInputs.pair_leakage_eq
 #print axioms PaperP1.RetainedPairLeakageUnderInputs.uniform_fixed_pair
 #print axioms PaperP1.RetainedPairLeakageUnderInputs.uniform_generator_bound
+#print axioms PaperP1.RoundedScaleLower.shape_nonnegative
+#print axioms PaperP1.RoundedScaleLower.uniform_lower
+#print axioms PaperP1.RoundedSourceLatticeFamilies.uniform_rounded_families
 #print axioms PaperP1.SaturationDegreeBudget.envelope_div_log_tendsto
 #print axioms PaperP1.SaturationDegreeBudget.log_product_le_envelope
 #print axioms PaperP1.SaturationDegreeBudget.product_le_power_eventually

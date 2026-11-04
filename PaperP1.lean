@@ -3381,3 +3381,5 @@ public import PaperP1.Asymptotics.VerticalGridCoordinateData
 public import PaperP1.Asymptotics.HorizontalGridCoordinateData
 public import PaperP1.Asymptotics.TwoSourceLatticeFamilies
 public import PaperP1.Asymptotics.UniformHorizontalLatticeFamily
+public import PaperP1.Asymptotics.RoundedScaleLower
+public import PaperP1.Asymptotics.RoundedSourceLatticeFamilies

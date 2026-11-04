@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records267 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records268 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13816 audited theorem/lemma declarations**. This
+- The project currently has **13819 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23650,3 +23650,22 @@ No integer basis, inverse, shortest vector, coordinate height, side weight or we
 P1-MATH-0268 closes the joint actual two-orientation lattice-family construction and side summation. The instantiation at the final actual rounded determinant scale, negative auxiliary-chart flip, geometric local curve counts, rounded-scale loss absorption and primitive scale assembly remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are267 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15323 jobs); direct axiom audit passed for 13816 declarations using only propext, Classical.choice and Quot.sound; all 13025 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.49 GiB.
+
+
+## Actual two-lattice families at the rounded determinant scale for signed polylogarithmic shifts
+
+The simultaneous ACTUAL source lattice families and both complete side sums now hold at the LITERAL rounded determinant scale specified by the paper, uniformly for every nonzero signed polylogarithmic shift. No scale-admissibility or minimum-grid-size premise remains in this construction.
+
+RoundedScaleLower proves that for every fixed positive integer L and zeta>0, a threshold chosen BEFORE all moving scales gives
+
+  L <= ceil(N^zeta*exp(logShape(N,D,E,U,V)))
+
+whenever D,E,U,V>=1. It proves logShape>=0 from these actual scale hypotheses and reuses the existing fixed-log-error theorem to derive L<=N^zeta. Thus the actual rounded M eventually satisfies the grid threshold M>=32, without a new asymptotic input.
+
+RoundedSourceLatticeFamilies combines this result with the proved doubled-scale admissibility at the absolute value of the original signed shift. For fixed source constants, epsilon, zeta in(0,7/16) and shift envelope, one kappa0,kappa1,N0 is chosen BEFORE N, the signed h and all source-box data. For every actual source Box and |h|<=K*(log N)^A, it proves M>=32,2M<=N and M*|h|<=N for the literal rounded M. It then constructs the SAME actual horizontal/vertical basis functions with all exact coordinate data, polynomial heights and both complete side sums for every admissible finite original interval set.
+
+The passage from h to h.natAbs uses an explicit cast identity, so neither sign is silently discarded. Point-coordinate data remains in the original d/e chart; the separate reversed auxiliary chart used for negative shifts still needs its explicit flip at the later curve assembly.
+
+P1-MATH-0269 closes instantiation of the complete actual two-lattice construction at the final rounded determinant scale and signed shift envelope. The negative auxiliary-chart flip, geometric local curve counts, removal of the N^zeta rounding margin from the final side bounds and primitive scale assembly remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are268 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15327 jobs); direct axiom audit passed for 13819 declarations using only propext, Classical.choice and Quot.sound; all 13028 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.47 GiB.
