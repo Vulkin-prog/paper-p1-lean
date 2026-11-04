@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**311 mathematical improvements and one statement-scope correction are confirmed.**
+**312 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23526,3 +23526,16 @@ The enlarged exclusion radius is Dold, matching the permitted old interval radiu
 P1-MATH-0312 closes the sharp full weighted profiles on those exact enlarged-radius domains. It supplies a concrete proved replacement for the corresponding source uses, subject to the retained ordinary inputs, while preserving the counterexample and the original manuscript bytes. Coverage remains89 proved and75 conditional out of167 (164 completed), with three numbered obligations incomplete. There are311 improvements and one statement-scope correction. No new external input, axiom, dependency download or compiler change is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15511 jobs); direct axiom audit passed for 14064 declarations using only propext, Classical.choice and Quot.sound; all 13313 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.71 GiB.
+
+
+## Explicit reciprocal-square budget for an actual-data audit of the T5.1 comparison
+
+An unconditional elementary reciprocal-square budget is now proved to prepare a sharper actual-data audit of the unqualified exponent comparison in companionT5.1. The earlierP1-MATH-0054 already proves all actual count conclusions and identifies the missing range qualification for the displayed uncapped comparison; its existing algebraic counterexample is not being counted as a source-data counterexample here.
+
+AdjacentSquarefreeBudget proves that every finite sum of reciprocal squares of odd integers starting at3 is at most17/72. The proof retains the exact first-term gap1/8-1/9=1/72, then bounds the remaining terms by a telescoping reciprocal difference. A stronger explicit finite-prefix remainder is proved by induction before deriving the uniform bound.
+
+The actual square-modulus family consists of4 followed by all odd squares. Every modulus is proved positive, and every finite reciprocal sum for that family is at most35/72. Twice this constant is35/36, strictly below1. This is the explicit numerical margin needed to cover the bad consecutive-squarefree events while leaving a positive population. All inequalities use exact rational constants and checked field arithmetic; no density, squarefree-pair existence or original count is assumed.
+
+P1-MATH-0313 closes this elementary analytic budget. The finite divisibility cover and cardinality estimate, arbitrarily large adjacent-squarefree witnesses and their application to actual T5.1 data remain to be proved. No new actual-data counterexample is asserted at this preparatory checkpoint. The actual count conclusions ofT5.1 remain proved, and its original unqualified algebraic display remains awaiting exact wording alignment. Coverage stays89 proved and75 conditional out of167 (164 completed). There are312 improvements and one statement-scope correction. No external input, axiom, dependency download, compiler change or manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15513 jobs); direct axiom audit passed for 14069 declarations using only propext, Classical.choice and Quot.sound; all 13319 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.70 GiB.

@@ -17698,6 +17698,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "78e42800d848c027158ecdffad4185edcbf37ad7"
+    },
+    {
+      "id": "P1-MATH-0313",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:short:quadratic",
+        "number": "T5.1",
+        "page": 31,
+        "source": "companion_sections/short_supports.tex",
+        "line": 9,
+        "statement_sha256": "98eb59430167ea84a4dd75c36b107f990646c6c2f47783b8292f95e2659899bb"
+      },
+      "original_assumption": "An actual-data audit of the uncapped quadratic-kernel comparison can use an elementary adjacent-squarefree construction with a strict reciprocal-square union-budget margin.",
+      "finding": "Every odd reciprocal-square prefix is at most17/72, and adjoining modulus4 gives at most35/72. The exact first-term gap and telescoping remainder give a strict doubled budget35/36<1 without an assumed squarefree density theorem.",
+      "proposed_revision": "Use an explicit finite square-divisor cover and this exact reciprocal budget when constructing admissible source witnesses; keep algebraic counterexamples, actual-data witnesses and asymptotic counting conclusions distinct.",
+      "impact": "Supplies the unconditional analytic margin for the actual-data comparison audit. Its divisibility cover and source witness construction remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.AdjacentSquarefreeBudget.odd_term_bound",
+        "PaperP1.AdjacentSquarefreeBudget.odd_partial_sum",
+        "PaperP1.AdjacentSquarefreeBudget.odd_uniform_sum",
+        "PaperP1.AdjacentSquarefreeBudget.modulus_positive",
+        "PaperP1.AdjacentSquarefreeBudget.modulus_reciprocal_sum",
+        "PaperP1.AdjacentSquarefreeBudget.modulus"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15513 jobs); direct axiom audit passed for 14069 declarations using only propext, Classical.choice and Quot.sound; all 13319 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.70 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

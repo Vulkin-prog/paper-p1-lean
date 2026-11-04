@@ -1,0 +1,11 @@
+# Explicit reciprocal-square budget for an actual-data audit of the T5.1 comparison
+
+Source: companion T5.1, companion_sections/short_supports.tex:9; its uncapped exponent comparison and the qualification recorded inP1-MATH-0054. Original source hashes remain preserved.
+
+An unconditional elementary reciprocal-square budget is now proved to prepare a sharper actual-data audit of the unqualified exponent comparison in companionT5.1. The earlierP1-MATH-0054 already proves all actual count conclusions and identifies the missing range qualification for the displayed uncapped comparison; its existing algebraic counterexample is not being counted as a source-data counterexample here.
+
+AdjacentSquarefreeBudget proves that every finite sum of reciprocal squares of odd integers starting at3 is at most17/72. The proof retains the exact first-term gap1/8-1/9=1/72, then bounds the remaining terms by a telescoping reciprocal difference. A stronger explicit finite-prefix remainder is proved by induction before deriving the uniform bound.
+
+The actual square-modulus family consists of4 followed by all odd squares. Every modulus is proved positive, and every finite reciprocal sum for that family is at most35/72. Twice this constant is35/36, strictly below1. This is the explicit numerical margin needed to cover the bad consecutive-squarefree events while leaving a positive population. All inequalities use exact rational constants and checked field arithmetic; no density, squarefree-pair existence or original count is assumed.
+
+P1-MATH-0313 closes this elementary analytic budget. The finite divisibility cover and cardinality estimate, arbitrarily large adjacent-squarefree witnesses and their application to actual T5.1 data remain to be proved. No new actual-data counterexample is asserted at this preparatory checkpoint. The actual count conclusions ofT5.1 remain proved, and its original unqualified algebraic display remains awaiting exact wording alignment. Coverage stays89 proved and75 conditional out of167 (164 completed). There are312 improvements and one statement-scope correction. No external input, axiom, dependency download, compiler change or manuscript edit is introduced. Palomar remains deferred.

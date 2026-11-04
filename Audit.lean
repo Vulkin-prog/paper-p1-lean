@@ -2133,6 +2133,11 @@ import PaperP1
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_card_all
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_finite
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_card
+#print axioms PaperP1.AdjacentSquarefreeBudget.odd_term_bound
+#print axioms PaperP1.AdjacentSquarefreeBudget.odd_partial_sum
+#print axioms PaperP1.AdjacentSquarefreeBudget.odd_uniform_sum
+#print axioms PaperP1.AdjacentSquarefreeBudget.modulus_positive
+#print axioms PaperP1.AdjacentSquarefreeBudget.modulus_reciprocal_sum
 #print axioms PaperP1.AnchoredCostNormalization.main_lower
 #print axioms PaperP1.AnchoredCostNormalization.with_errors
 #print axioms PaperP1.BanachExponentialRemainder.norm_term_le

@@ -9,7 +9,7 @@ Companion T1.5 is complete conditionally on exactly the same two ordinary biform
 
 Companion T1.4 is complete conditionally on exactly HeathBrownBiformInput.Input and NonGeometricBiformInput.Input. The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. Both ordinary input proofs remain open. The three incomplete numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records311 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records312 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -128,7 +128,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14064 audited theorem/lemma declarations**. This
+- The project currently has **14069 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24301,3 +24301,16 @@ The enlarged exclusion radius is Dold, matching the permitted old interval radiu
 P1-MATH-0312 closes the sharp full weighted profiles on those exact enlarged-radius domains. It supplies a concrete proved replacement for the corresponding source uses, subject to the retained ordinary inputs, while preserving the counterexample and the original manuscript bytes. Coverage remains89 proved and75 conditional out of167 (164 completed), with three numbered obligations incomplete. There are311 improvements and one statement-scope correction. No new external input, axiom, dependency download or compiler change is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15511 jobs); direct axiom audit passed for 14064 declarations using only propext, Classical.choice and Quot.sound; all 13313 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.71 GiB.
+
+
+## Explicit reciprocal-square budget for an actual-data audit of the T5.1 comparison
+
+An unconditional elementary reciprocal-square budget is now proved to prepare a sharper actual-data audit of the unqualified exponent comparison in companionT5.1. The earlierP1-MATH-0054 already proves all actual count conclusions and identifies the missing range qualification for the displayed uncapped comparison; its existing algebraic counterexample is not being counted as a source-data counterexample here.
+
+AdjacentSquarefreeBudget proves that every finite sum of reciprocal squares of odd integers starting at3 is at most17/72. The proof retains the exact first-term gap1/8-1/9=1/72, then bounds the remaining terms by a telescoping reciprocal difference. A stronger explicit finite-prefix remainder is proved by induction before deriving the uniform bound.
+
+The actual square-modulus family consists of4 followed by all odd squares. Every modulus is proved positive, and every finite reciprocal sum for that family is at most35/72. Twice this constant is35/36, strictly below1. This is the explicit numerical margin needed to cover the bad consecutive-squarefree events while leaving a positive population. All inequalities use exact rational constants and checked field arithmetic; no density, squarefree-pair existence or original count is assumed.
+
+P1-MATH-0313 closes this elementary analytic budget. The finite divisibility cover and cardinality estimate, arbitrarily large adjacent-squarefree witnesses and their application to actual T5.1 data remain to be proved. No new actual-data counterexample is asserted at this preparatory checkpoint. The actual count conclusions ofT5.1 remain proved, and its original unqualified algebraic display remains awaiting exact wording alignment. Coverage stays89 proved and75 conditional out of167 (164 completed). There are312 improvements and one statement-scope correction. No external input, axiom, dependency download, compiler change or manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15513 jobs); direct axiom audit passed for 14069 declarations using only propext, Classical.choice and Quot.sound; all 13319 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.70 GiB.

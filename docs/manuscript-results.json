@@ -22687,14 +22687,30 @@
         "PaperP1.WideQuadraticSquarePartCount.reciprocal_budget",
         "PaperP1.WideQuadraticSquarePartCount.second_branch_count",
         "PaperP1.WideQuadraticKernelCount.three_exponent_bounds",
-        "PaperP1.WideQuadraticKernelCount.uniform_affine_count"
+        "PaperP1.WideQuadraticKernelCount.uniform_affine_count",
+        "PaperP1.AdjacentSquarefreeBudget.odd_term_bound",
+        "PaperP1.AdjacentSquarefreeBudget.odd_partial_sum",
+        "PaperP1.AdjacentSquarefreeBudget.odd_uniform_sum",
+        "PaperP1.AdjacentSquarefreeBudget.modulus_positive",
+        "PaperP1.AdjacentSquarefreeBudget.modulus_reciprocal_sum",
+        "PaperP1.AdjacentSquarefreeBudget.modulus"
       ],
-      "literature_inputs": [],
+      "literature_inputs": [
+        "p1:internal:adjacent-squarefree-reciprocal-budget"
+      ],
       "mathematical_changes": [
         "P1-MATH-0053",
-        "P1-MATH-0054"
+        "P1-MATH-0054",
+        "P1-MATH-0313"
       ],
-      "notes": "All actual count conclusions are proved with one common threshold before h,e,beta and the finite set: the two source branches, their minimum c2, the stronger min(1,c2), and the affine bound. Real kernel endpoints, the q=1 fibre and all derived polynomial heights are included; no squarefreeness assumption on e is needed. The literal unqualified displayed comparison c2<=affine is NOT claimed: the exact algebraic comparison is proved for beta-2delta<=2, and a uniform epsilon-margin comparison for every actual nonempty dyadic family. The source already uses beta<=2+o(1); P1-MATH-0054 specifies this distinction and gives a universally valid capped replacement. Keep the numbered row in progress pending exact manuscript wording alignment, rather than count the unqualified display as proved. The actual affine count also holds uniformly on the wider N/2<=n<=3N range, with all new square-part and modulus heights derived. An exact injective shift bridge proves the same affine bound for actual two-factor integer-offset blocks, at fixed polylogarithmic widths."
+      "notes": "An unconditional elementary reciprocal-square budget is now proved to prepare a sharper actual-data audit of the unqualified exponent comparison in companionT5.1. The earlierP1-MATH-0054 already proves all actual count conclusions and identifies the missing range qualification for the displayed uncapped comparison; its existing algebraic counterexample is not being counted as a source-data counterexample here.\n\nAdjacentSquarefreeBudget proves that every finite sum of reciprocal squares of odd integers starting at3 is at most17/72. The proof retains the exact first-term gap1/8-1/9=1/72, then bounds the remaining terms by a telescoping reciprocal difference. A stronger explicit finite-prefix remainder is proved by induction before deriving the uniform bound.\n\nThe actual square-modulus family consists of4 followed by all odd squares. Every modulus is proved positive, and every finite reciprocal sum for that family is at most35/72. Twice this constant is35/36, strictly below1. This is the explicit numerical margin needed to cover the bad consecutive-squarefree events while leaving a positive population. All inequalities use exact rational constants and checked field arithmetic; no density, squarefree-pair existence or original count is assumed.\n\nP1-MATH-0313 closes this elementary analytic budget. The finite divisibility cover and cardinality estimate, arbitrarily large adjacent-squarefree witnesses and their application to actual T5.1 data remain to be proved. No new actual-data counterexample is asserted at this preparatory checkpoint. The actual count conclusions ofT5.1 remain proved, and its original unqualified algebraic display remains awaiting exact wording alignment. Coverage stays89 proved and75 conditional out of167 (164 completed). There are312 improvements and one statement-scope correction. No external input, axiom, dependency download, compiler change or manuscript edit is introduced. Palomar remains deferred.\n\nEarlier checkpoint history:\nAll actual count conclusions are proved with one common threshold before h,e,beta and the finite set: the two source branches, their minimum c2, the stronger min(1,c2), and the affine bound. Real kernel endpoints, the q=1 fibre and all derived polynomial heights are included; no squarefreeness assumption on e is needed. The literal unqualified displayed comparison c2<=affine is NOT claimed: the exact algebraic comparison is proved for beta-2delta<=2, and a uniform epsilon-margin comparison for every actual nonempty dyadic family. The source already uses beta<=2+o(1); P1-MATH-0054 specifies this distinction and gives a universally valid capped replacement. Keep the numbered row in progress pending exact manuscript wording alignment, rather than count the unqualified display as proved. The actual affine count also holds uniformly on the wider N/2<=n<=3N range, with all new square-part and modulus heights derived. An exact injective shift bridge proves the same affine bound for actual two-factor integer-offset blocks, at fixed polylogarithmic widths.",
+      "validation_history": [
+        {
+          "status": "in_progress",
+          "literature_inputs": []
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15513 jobs); direct axiom audit passed for 14069 declarations using only propext, Classical.choice and Quot.sound; all 13319 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.70 GiB."
     },
     {
       "label": "p13:short:split",
