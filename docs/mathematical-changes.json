@@ -12590,6 +12590,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "bfd865547eed0a6908c1e8139ecbf3ab73e165ed"
+    },
+    {
+      "id": "P1-MATH-0186",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "For every arithmetic anchor rule, the clean surviving source-target pairs contribute the squared unsigned rate to the actual offsite coordinate cost, using an arbitrary selected small nonanchor pivot.",
+      "finding": "Each actual surviving arithmetic boundary pair lifts injectively with exactly preserved cardinality into the original unsigned retained field. Survival proves target retention, raw joint surjectivity and distinct boundaries. The actual selected nonanchor prime and all other changed primes discharge the clean arithmetic data. A uniform actual offsite cost minorant keeps the exact reciprocal source sum and all collision, endpoint, small-pivot and full raw-dependence errors, with no probabilistic law or exceptional-set bound as a premise.",
+      "evidence": [
+        "PaperP1.AnchoredDyadicCostLower.uniform_actual_offsite_lower",
+        "PaperP1.AnchoredCleanBoundaryPairs.selectedPrime_apply",
+        "PaperP1.AnchoredCleanBoundaryPairs.otherPrimes_apply",
+        "PaperP1.AnchoredCleanBoundaryPairs.surviving_metadata",
+        "PaperP1.AnchoredCleanBoundaryPairs.liftPair_injective",
+        "PaperP1.AnchoredCleanBoundaryPairs.liftedPairs_card",
+        "PaperP1.AnchoredCleanBoundaryPairs.joint_surjective_ne",
+        "PaperP1.AnchoredCleanBoundaryPairs.actual_offsite_lower",
+        "PaperP1.AnchoredCleanSourceData.pivots_injective",
+        "PaperP1.AnchoredCleanSourceData.forced_pivot_above",
+        "PaperP1.AnchoredCleanSourceData.source_conditions",
+        "PaperP1.AnchoredCleanBoundaryPairs.selectedPrime",
+        "PaperP1.AnchoredCleanBoundaryPairs.otherPrimes",
+        "PaperP1.AnchoredCleanBoundaryPairs.survivingPairs",
+        "PaperP1.AnchoredCleanBoundaryPairs.liftPair",
+        "PaperP1.AnchoredCleanBoundaryPairs.liftedPairs"
+      ],
+      "proposed_revision": "Give the source-boundary labeling and exact lift into the original unsigned field explicitly. State the actual finite offsite cost inequality for arbitrary anchor and selected nonanchor pivot rules before choosing small pivots and taking asymptotics. Keep the two global exceptional losses separate and charge raw pairs only once.",
+      "impact": "Connects all proved clean arithmetic counts to the actual anchored offsite cost in T19.17, uniformly over deterministic arithmetic rules. Ordinary smooth source abundance, small-pivot selection and final asymptotics including randomized orientation remain open; numbered coverage is unchanged.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14801 jobs); direct axiom audit passed for 12698 declarations using only propext, Classical.choice and Quot.sound; all 11650 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.11 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -5616,6 +5616,7 @@ import PaperP1
 #print axioms PaperP1.AnchorRelationCertificates.critical_radius_control
 #print axioms PaperP1.AnchorRelationCertificates.companion_T6_3
 #print axioms PaperP1.AnchorThresholdBudget.threshold_power
+#print axioms PaperP1.AnchoredDyadicCostLower.uniform_actual_offsite_lower
 #print axioms PaperP1.AnchoredRetainedMass.uniform_total_mean
 #print axioms PaperP1.AsymmetricAlignmentScopeObstruction.profile_eq_total
 #print axioms PaperP1.AsymmetricAlignmentScopeObstruction.violates_printed_exponent
@@ -9323,6 +9324,16 @@ import PaperP1
 #print axioms PaperP1.AllPairRetainedGeometry.retained_pair_absent
 #print axioms PaperP1.AllPairRetainedGeometry.retained_original_active
 #print axioms PaperP1.AllPairRetainedGeometry.retained_pair_geometry
+#print axioms PaperP1.AnchoredCleanBoundaryPairs.selectedPrime_apply
+#print axioms PaperP1.AnchoredCleanBoundaryPairs.otherPrimes_apply
+#print axioms PaperP1.AnchoredCleanBoundaryPairs.surviving_metadata
+#print axioms PaperP1.AnchoredCleanBoundaryPairs.liftPair_injective
+#print axioms PaperP1.AnchoredCleanBoundaryPairs.liftedPairs_card
+#print axioms PaperP1.AnchoredCleanBoundaryPairs.joint_surjective_ne
+#print axioms PaperP1.AnchoredCleanBoundaryPairs.actual_offsite_lower
+#print axioms PaperP1.AnchoredCleanSourceData.pivots_injective
+#print axioms PaperP1.AnchoredCleanSourceData.forced_pivot_above
+#print axioms PaperP1.AnchoredCleanSourceData.source_conditions
 #print axioms PaperP1.AnchoredDyadicField.retained_subset
 #print axioms PaperP1.AnchoredDyadicField.retained_card_le
 #print axioms PaperP1.AnchoredDyadicField.exists_anchor_rule

@@ -3117,3 +3117,6 @@ public import PaperP1.Probability.WeightedPositiveForcingCostLower
 public import PaperP1.Asymptotics.AnchoredRetainedMass
 public import PaperP1.Model.AnchoredDyadicField
 public import PaperP1.Model.AnchoredPrivateField
+public import PaperP1.Asymptotics.AnchoredDyadicCostLower
+public import PaperP1.Model.AnchoredCleanBoundaryPairs
+public import PaperP1.Model.AnchoredCleanSourceData
