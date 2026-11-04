@@ -10046,6 +10046,9 @@ import PaperP1
 #print axioms PaperP1.LinearProjectiveFactor.projective_chart_coefficient
 #print axioms PaperP1.LinearProjectiveFactor.projective_linear
 #print axioms PaperP1.LinearProjectiveFactor.evaluation_linear
+#print axioms PaperP1.NonGeometricRationalSingularity.rationalize_evaluation
+#print axioms PaperP1.NonGeometricRationalSingularity.projective_zero_iff
+#print axioms PaperP1.NonGeometricRationalSingularity.nongeometric_input_of_singularity
 #print axioms PaperP1.PolynomialLinearKernelFibres.uniform_count
 #print axioms PaperP1.PolynomialPellCount.generalizedPellBox_atMost_divisor_orbit
 #print axioms PaperP1.PolynomialPellCount.product_not_isSquare_of_ratio_not_isSquare

@@ -17903,6 +17903,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "41f6f6637275d7d4aedf08a5393441667767e5a1"
+    },
+    {
+      "id": "P1-MATH-0319",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The non-geometric biform estimate was an ordinary unproved numerical argument uniform over all coefficients and heights.",
+      "finding": "Its complete numerical content follows with K(a,b)=8*a*b^2 from the explicit sufficient algebraic implication that rational zeros of the actual rationally irreducible non-geometric factor satisfy the outer derivative equation. The algebraic implication remains unproved.",
+      "proposed_revision": "Separate the unproved algebraic singularity implication from the now checked resultant, affine chart, degree and signed primitive counting proof. Use the explicit constant and retain the algebraic premise as an ordinary argument until proved.",
+      "impact": "Proves the original non-geometric numerical input from an alternative purely algebraic premise with no counting conclusion in its hypothesis. It does not prove that premise or remove the conditional status of T1.4.",
+      "evidence": [
+        "PaperP1.NonGeometricRationalSingularity.rationalize_evaluation",
+        "PaperP1.NonGeometricRationalSingularity.projective_zero_iff",
+        "PaperP1.NonGeometricRationalSingularity.nongeometric_input_of_singularity",
+        "PaperP1.NonGeometricRationalSingularity.Input"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15525 jobs); direct axiom audit passed for 14099 declarations using only propext, Classical.choice and Quot.sound; all 13356 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.62 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
