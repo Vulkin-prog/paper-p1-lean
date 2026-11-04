@@ -7851,6 +7851,8 @@ import PaperP1
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_absolute_difference
 #print axioms PaperP1.NonconnectedActivityUnderInputs.uniform_bound
 #print axioms PaperP1.NongoodPairJointMassUnderInputs.uniform_bound
+#print axioms PaperP1.NonprimitiveSourceDeterminantCount.uniform_positive_count
+#print axioms PaperP1.NonprimitiveSourceDeterminantCount.uniform_signed_count
 #print axioms PaperP1.NormalizedDefectPairActivity.bad_subset_units
 #print axioms PaperP1.NormalizedDefectPairActivity.uniform_activity
 #print axioms PaperP1.NormalizedDefectPairActivity.uniform_joint_mass

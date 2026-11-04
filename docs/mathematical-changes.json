@@ -17224,6 +17224,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "758d741267639deb4b7a12cf00c17498598b3f6d"
+    },
+    {
+      "id": "P1-MATH-0298",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "Primitive gcd-family estimates suffice to count the full signed source population uniformly, without an unrecorded primitivity restriction or divisor dependence.",
+      "finding": "The actual finite source cover, the explicit h^2 bound on reduction families and the polylogarithmic shift budget give the full nonprimitive count. Exact sign orientation preserves both costs and closes all nonzero integer shifts.",
+      "proposed_revision": "Sum the literal reduced families with a separate exponent margin for their number, then orient negative shifts using the proved coordinate involution. State any initial-scale and weakened-barrier conventions explicitly.",
+      "impact": "Closes the full signed nonprimitive Box count under the two retained ordinary inputs. Initial-scale alignment and the claimed weakened-barrier extension remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.NonprimitiveSourceDeterminantCount.uniform_positive_count",
+        "PaperP1.NonprimitiveSourceDeterminantCount.uniform_signed_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15453 jobs); direct axiom audit passed for 14007 declarations using only propext, Classical.choice and Quot.sound; all 13246 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.97 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
