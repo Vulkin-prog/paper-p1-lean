@@ -3430,3 +3430,5 @@ public import PaperP1.Diophantine.NonGeometricBiformInput
 public import PaperP1.Asymptotics.ActualSourceClusterCount
 public import PaperP1.Asymptotics.ActualSourceFactorCount
 public import PaperP1.Asymptotics.PrimitiveSourceDeterminantCount
+public import PaperP1.Analysis.ReducedDyadicScales
+public import PaperP1.Arithmetic.ActualSourcePrimitiveReduction
