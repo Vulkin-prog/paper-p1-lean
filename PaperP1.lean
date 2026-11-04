@@ -3335,3 +3335,5 @@ public import PaperP1.Asymptotics.FourChartFactorCover
 public import PaperP1.Asymptotics.IntegerPairFactorCover
 public import PaperP1.Analysis.BinaryEuclideanReduction
 public import PaperP1.Arithmetic.PrimitiveBinaryBasis
+public import PaperP1.Analysis.BinaryLatticeMinimum
+public import PaperP1.Arithmetic.PrimitiveShortestVector

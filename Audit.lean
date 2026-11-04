@@ -2140,6 +2140,15 @@ import PaperP1
 #print axioms PaperP1.BinaryEuclideanReduction.reduced_area
 #print axioms PaperP1.BinaryEuclideanReduction.reduced_projection_bound
 #print axioms PaperP1.BinaryEuclideanReduction.reduced_area_bound
+#print axioms PaperP1.BinaryLatticeMinimum.realImage_nonzero
+#print axioms PaperP1.BinaryLatticeMinimum.image_energy_positive
+#print axioms PaperP1.BinaryLatticeMinimum.inverseSize_nonnegative
+#print axioms PaperP1.BinaryLatticeMinimum.row_le_inverseSize
+#print axioms PaperP1.BinaryLatticeMinimum.coordinate_square_bound
+#print axioms PaperP1.BinaryLatticeMinimum.sublevel_coordinate_bound
+#print axioms PaperP1.BinaryLatticeMinimum.bounded_sublevels
+#print axioms PaperP1.BinaryLatticeMinimum.mem_integerBox
+#print axioms PaperP1.BinaryLatticeMinimum.exists_shortest
 #print axioms PaperP1.BiquadraticAuxiliaryGap.primitive_bound
 #print axioms PaperP1.BiquadraticAuxiliaryGap.integer_gap
 #print axioms PaperP1.BiquadraticAuxiliaryValue.primitive_pole_budget
@@ -4724,6 +4733,11 @@ import PaperP1
 #print axioms PaperP1.PrimitiveDeterminantHeights.right_coefficient_bound
 #print axioms PaperP1.PrimitiveDeterminantHeights.left_height_transfer
 #print axioms PaperP1.PrimitiveDeterminantHeights.right_height_transfer
+#print axioms PaperP1.PrimitiveShortestVector.image_scaling
+#print axioms PaperP1.PrimitiveShortestVector.energy_scaling
+#print axioms PaperP1.PrimitiveShortestVector.shortest_primitive
+#print axioms PaperP1.PrimitiveShortestVector.shortest_coordinate_bound
+#print axioms PaperP1.PrimitiveShortestVector.exists_primitive_shortest
 #print axioms PaperP1.PrimitiveTrueWindowRelations.dimension
 #print axioms PaperP1.PrimitiveTrueWindowRelations.projection_injective
 #print axioms PaperP1.PrimitiveTrueWindowRelations.pair_disjoint

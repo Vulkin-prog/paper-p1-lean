@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**250 mathematical improvements and one statement-scope correction are confirmed.**
+**251 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -22516,3 +22516,22 @@ The nearest-integer projection step is constructed explicitly; no reduced-basis 
 P1-MATH-0251 records an explicit polynomial-height primitive basis completion and the exact constants in the nearest-vector calculation. Remaining work includes existence and primitivity of the shortest vector, the full reduced basis and coordinate boxes for the actual lattices, geometric curve counts and interval sums. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are250 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15231 jobs); direct axiom audit passed for 13665 declarations using only propext, Classical.choice and Quot.sound; all 12852 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.78 GiB.
+
+
+## Actual primitive shortest vectors from finite lattice sublevels
+
+Every invertible real image of the integer plane now has an actual globally shortest nonzero vector, and that integer vector is proved primitive. The construction also gives an explicit coordinate bound from the inverse matrix; no shortest-vector existence premise remains in this result.
+
+BinaryLatticeMinimum defines the actual real matrix image of an integer vector. An actual real left inverse proves that nonzero integer vectors have positive squared image length. The two-coordinate Gram identity gives a coercive bound on each integer coordinate: its square is at most the inverse row squared norm times the image squared length. With K equal to the maximum inverse row squared norm, every vector of squared image length at most C lies in the finite integer coordinate box
+
+  |z_i| <= ceil(K*C+1).
+
+The finite box is constructed explicitly. A minimum is selected among its nonzero vectors, using the image length of (1,0) as a comparison level. Every nonzero integer vector outside that level is longer than the comparison vector, so the selected vector is globally shortest, not just minimal in the finite box.
+
+PrimitiveShortestVector proves the exact image and squared-length scaling under any integer multiple. Dividing an actual shortest vector by the gcd of its coordinates produces a nonzero primitive vector. Global minimality and strict positivity force this gcd to equal one. The resulting existence theorem returns an actual primitive nonzero global minimizer together with the explicit coordinate bound
+
+  |z_i| <= ceil(K*|T*(1,0)|^2+1).
+
+P1-MATH-0252 discharges existence and primitivity of the shortest vector required by the nearest-vector basis construction. The bounded Bezout completion and nearest-integer geometry from P1-MATH-0251 can now be applied to that actual vector. Remaining work includes assembling the reduced basis and explicit coordinate boxes for the two source lattices, geometric curve counts and final interval sums. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are251 improvements and one statement-scope correction. No external input, new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15235 jobs); direct axiom audit passed for 13679 declarations using only propext, Classical.choice and Quot.sound; all 12869 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.77 GiB.
