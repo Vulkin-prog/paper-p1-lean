@@ -3284,3 +3284,5 @@ public import PaperP1.Algebra.FiniteRowKernel
 public import PaperP1.Algebra.SmallIntegerKernelRankGap
 public import PaperP1.Arithmetic.DeterminantAuxiliaryCoefficients
 public import PaperP1.Asymptotics.DeterminantAuxiliaryHeight
+public import PaperP1.Arithmetic.DeterminantAuxiliaryBiform
+public import PaperP1.Arithmetic.DeterminantAuxiliaryPolynomial

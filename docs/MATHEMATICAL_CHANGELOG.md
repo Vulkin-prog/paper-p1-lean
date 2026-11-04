@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**235 mathematical improvements and one statement-scope correction are confirmed.**
+**236 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -22214,3 +22214,18 @@ DeterminantAuxiliaryHeight proves that at every fixed source height multiple Q*N
 P1-MATH-0236 records this common coefficient extraction and explicit height exponent. The analytic normalized determinant bound, conversion to the actual auxiliary polynomial, remaining local curve counts and short-vector sums remain unfinished, so T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are235 improvements and one statement-scope correction. No new external input, axiom, Paper C code port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15129 jobs); direct axiom audit passed for 13398 declarations using only propext, Classical.choice and Quot.sound; all 12522 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.08 GiB.
+
+
+## Actual bounded auxiliary polynomial and bihomogeneous projective equation
+
+The bounded common coefficient extraction is now realized as an actual nonzero integer auxiliary polynomial and an actual bihomogeneous equation on the original projective pairs. The analytic normalized small-minor premise is still explicit and unproved.
+
+DeterminantAuxiliaryPolynomial constructs F in Z[X][X] from the extracted coefficient rectangle. Coefficient recovery proves F is nonzero. Its two partial degrees are bounded by the selected A and B, its actual coefficient height is at most N^kappa, and F(d/e,v/u)=0 for every member of the original finite source family. The degree choices and height exponent precede N and the entire source family.
+
+DeterminantAuxiliaryBiform performs both homogenizations explicitly. Its coefficient forms have degree B in (v,u), and its outer form has degree A in (d,e). Dehomogenization recovers the actual rectangle coefficients; nonvanishing is proved by coefficient recovery. Every integer coefficient of the resulting nested multivariate polynomial has absolute value at most the original coefficient bound, hence at most N^kappa. Homogenization therefore costs no additional coefficient-height exponent.
+
+The evaluation on the original integer quadruple equals the exact integer monomial row pairing. Its rational image equals e^A*u^B times the corresponding rational row pairing. The same actual nonzero biform consequently vanishes on every original source quadruple, with no coprimality assumption needed for this algebraic step. A uniform existence theorem bundles nonvanishing, both homogeneities, all coefficient bounds and all point equations after the explicit normalized determinant smallness hypothesis.
+
+P1-MATH-0237 closes the conversion from bounded common coefficients to the actual projective auxiliary equation. It does not establish the required analytic small-minor estimate, irreducible-factor curve count or short-vector summation. T1.4 and T1.5 therefore remain in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are236 improvements and one statement-scope correction. No external input, axiom, Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15133 jobs); direct axiom audit passed for 13419 declarations using only propext, Classical.choice and Quot.sound; all 12546 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.07 GiB.
