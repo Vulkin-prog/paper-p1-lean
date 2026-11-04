@@ -3170,3 +3170,7 @@ public import PaperP1.Asymptotics.MacroscopicAlignedPairRank
 public import PaperP1.Asymptotics.MacroscopicIntervalGeometry
 public import PaperP1.Asymptotics.MacroscopicNormalizedPairResidual
 public import PaperP1.Asymptotics.NormalizedPairResidualCriterion
+public import PaperP1.Asymptotics.EnlargedAlignedResidualCriterion
+public import PaperP1.Asymptotics.MacroscopicEnlargedAlignedRank
+public import PaperP1.Asymptotics.MacroscopicEnlargedAlignedResidual
+public import PaperP1.Asymptotics.MacroscopicPolynomialScale

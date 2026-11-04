@@ -13167,6 +13167,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "d0bc7bdace8848631523af7c4aa584d51c2ee7dd"
+    },
+    {
+      "id": "P1-MATH-0199",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "The proof of T21.1 extends the enlarged aligned-pair rank theorem down to x,y>=M^delta, including aligned pairs whose rational code has no exact unit.",
+      "finding": "Every fixed critical-width polynomial is uniformly below every actual macroscopic source. This supplies a base-sensitive enlarged-alignment criterion with no exact-unit premise. The actual residual row rank, full residual value-kernel rank, rational-unit pair-loss comparison and L/b+o(B) actual intersection-rank bound now hold uniformly on the literal macroscopic interval for every height up to B^3.",
+      "proposed_revision": "State the full enlarged geometric alignment and its actual normalized interval before transporting the Runge distance to x>=M^delta. Include the zero-unit case explicitly and separate local rank extension from the subsequent fixed-height host counts and profile sums.",
+      "impact": "Completes the uniform macroscopic enlarged-alignment rank extension needed by T21.1. Actual positive/signed profile sums and equivalents remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.EnlargedAlignedResidualCriterion.row_rank_sublinear_of_geometry",
+        "PaperP1.MacroscopicEnlargedAlignedRank.units_residual_bound",
+        "PaperP1.MacroscopicEnlargedAlignedRank.channel_bound",
+        "PaperP1.MacroscopicEnlargedAlignedRank.actual_intersection_bound",
+        "PaperP1.MacroscopicEnlargedAlignedResidual.row_rank_sublinear",
+        "PaperP1.MacroscopicEnlargedAlignedResidual.full_rank_sublinear",
+        "PaperP1.MacroscopicPolynomialScale.polynomial_lt_source"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14909 jobs); direct axiom audit passed for 12865 declarations using only propext, Classical.choice and Quot.sound; all 11867 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.83 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

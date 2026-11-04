@@ -6189,6 +6189,7 @@ import PaperP1
 #print axioms PaperP1.EnlargedAlignedRank.channel_bound
 #print axioms PaperP1.EnlargedAlignedResidual.row_rank_sublinear
 #print axioms PaperP1.EnlargedAlignedResidual.full_rank_sublinear
+#print axioms PaperP1.EnlargedAlignedResidualCriterion.row_rank_sublinear_of_geometry
 #print axioms PaperP1.EnlargedAlignedTargetTripleMass.hosts_card
 #print axioms PaperP1.EnlargedAlignedTargetTripleMass.host_data
 #print axioms PaperP1.EnlargedAlignedTargetTripleMass.source_mem_hosts
@@ -6816,11 +6817,17 @@ import PaperP1
 #print axioms PaperP1.MacroscopicAlignedPairRank.units_residual_bound
 #print axioms PaperP1.MacroscopicAlignedPairRank.channel_bound
 #print axioms PaperP1.MacroscopicAlignedPairRank.actual_intersection_bound
+#print axioms PaperP1.MacroscopicEnlargedAlignedRank.units_residual_bound
+#print axioms PaperP1.MacroscopicEnlargedAlignedRank.channel_bound
+#print axioms PaperP1.MacroscopicEnlargedAlignedRank.actual_intersection_bound
+#print axioms PaperP1.MacroscopicEnlargedAlignedResidual.row_rank_sublinear
+#print axioms PaperP1.MacroscopicEnlargedAlignedResidual.full_rank_sublinear
 #print axioms PaperP1.MacroscopicIntervalGeometry.mem_starts_iff
 #print axioms PaperP1.MacroscopicIntervalGeometry.starts_pos
 #print axioms PaperP1.MacroscopicIntervalGeometry.log_lower
 #print axioms PaperP1.MacroscopicIntervalGeometry.uniform_geometry
 #print axioms PaperP1.MacroscopicNormalizedPairResidual.rank_sublinear
+#print axioms PaperP1.MacroscopicPolynomialScale.polynomial_lt_source
 #print axioms PaperP1.ManyPlanarSquareProducts.primitive_mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.mass_le
 #print axioms PaperP1.ManyPlanarSquareProducts.uniform_natural
