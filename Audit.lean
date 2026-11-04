@@ -2614,6 +2614,12 @@ import PaperP1
 #print axioms PaperP1.ActualOffsetNonalignment.NoExact.symm
 #print axioms PaperP1.ActualOffsetNonalignment.of_nonaligned
 #print axioms PaperP1.ActualOffsetNonalignment.of_disjoint
+#print axioms PaperP1.ActualRelativeDeterminant.first_normalization
+#print axioms PaperP1.ActualRelativeDeterminant.center_positive
+#print axioms PaperP1.ActualRelativeDeterminant.second_normalization
+#print axioms PaperP1.ActualRelativeDeterminant.rational_matrix_cast
+#print axioms PaperP1.ActualRelativeDeterminant.rational_denominator_cast
+#print axioms PaperP1.ActualRelativeDeterminant.small_of_real_small
 #print axioms PaperP1.ActualSourceTranslations.sourceAt_cast
 #print axioms PaperP1.ActualSourceTranslations.sourceAt_mem
 #print axioms PaperP1.ActualSourceTranslations.sourceAt_injective
@@ -3361,6 +3367,7 @@ import PaperP1
 #print axioms PaperP1.DeterminantIntegerRows.determinant_clearing
 #print axioms PaperP1.DeterminantIntegerRows.integer_det_zero_of_small
 #print axioms PaperP1.DeterminantIntegerRows.rational_det_zero_of_small
+#print axioms PaperP1.DeterminantLocalChart.minors_small
 #print axioms PaperP1.DeterminantPrimitiveReduction.reconstruct
 #print axioms PaperP1.DeterminantPrimitiveReduction.left_factor
 #print axioms PaperP1.DeterminantPrimitiveReduction.right_factor
@@ -6442,6 +6449,8 @@ import PaperP1
 #print axioms PaperP1.DependentProductMass.uniform_mass
 #print axioms PaperP1.DeterminantAuxiliaryHeight.heightBound_le_power
 #print axioms PaperP1.DeterminantAuxiliaryHeight.uniform_coefficients
+#print axioms PaperP1.DeterminantBoundedAuxiliaryHeight.heightBound_le_common_power
+#print axioms PaperP1.DeterminantBoundedAuxiliaryHeight.uniform_coefficients
 #print axioms PaperP1.DeterminantEnumerationBudget.index_bound
 #print axioms PaperP1.DeterminantEnumerationBudget.box_logarithmic_bound
 #print axioms PaperP1.DeterminantEnumerationBudget.boxes_subpolynomial
@@ -7181,6 +7190,8 @@ import PaperP1
 #print axioms PaperP1.LocalBlocksTheorem.finite_conditions
 #print axioms PaperP1.LocalBlocksTheorem.companion_T19_2
 #print axioms PaperP1.LocalBlocksTheorem.boundary_improvement_uniform
+#print axioms PaperP1.LocalDeterminantAuxiliary.uniform_coefficients
+#print axioms PaperP1.LocalDeterminantAuxiliary.uniform_biform
 #print axioms PaperP1.LogFifthPivotCutoff.cutoff_upper
 #print axioms PaperP1.LogFifthPivotCutoff.quadratic_absorption
 #print axioms PaperP1.LogFifthPivotCutoff.uniform_data

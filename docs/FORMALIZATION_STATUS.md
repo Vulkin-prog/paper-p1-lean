@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records239 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records240 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13472 audited theorem/lemma declarations**. This
+- The project currently has **13483 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23064,3 +23064,24 @@ DeterminantUniformMargin bounds C(A,B) by one finite sum over 0<=A<=Amax and cho
 P1-MATH-0240 closes the uniform degree/denominator comparison in normalized local coordinates. Remaining work includes deriving these local hypotheses from every actual source box and shift, transporting to the actual rational matrices and bounded auxiliary curves, and the later factor-curve counts and lattice summations. T1.4 and T1.5 remain in progress; coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are239 improvements and one statement-scope correction. No external input, axiom, Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15153 jobs); direct axiom audit passed for 13472 declarations using only propext, Classical.choice and Quot.sound; all 12611 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.01 GiB.
+
+
+## Actual local bounded auxiliary curves without a determinant premise
+
+The local determinant construction is now assembled on the original integer quadruples and yields bounded nonzero projective auxiliary equations without assuming any small-minor or rank statement. The original global source boxes still need to be shown to provide the explicit local numerical chart conditions.
+
+ActualRelativeDeterminant defines the literal ratios d/e and v/u and their relative alpha and beta errors. The original equation c2*e^2*v=c1*d^2*u+h proves the exact quadratic normalized chart at the actual center. Rational monomial matrices and their products of row denominators are cast to real matrices exactly; the proved real determinant smallness transfers back to the original rational inequality, with no approximation or rounding in the cast.
+
+DeterminantLocalChart.Data contains only numerical source-chart parameters and their explicit positivity, logarithmic-size, bounded-ratio and positive product-margin conditions. It contains no determinant, rank, kernel or solution-count hypothesis. The minors_small theorem derives every actual normalized small-minor inequality from those parameters and the actual original quadruple equations, coordinate bounds and horizontal/vertical error bounds.
+
+DeterminantBoundedAuxiliaryHeight proves a common coefficient exponent and threshold before EVERY A<=Amax, with B and the linear source-height multiple Q fixed. The common exponent is
+
+  kappa=(Amax+B+1)*((Amax+1)*(B+1)-1).
+
+LocalDeterminantAuxiliary.Points records only those actual finite source-coordinate conditions, the literal original equation and the two real error bounds. Its uniform_coefficients theorem chooses B,Amax,kappa,N0 before N and the entire chart. The selected A lies in 1..Amax and precedes every source population. All square minor estimates are proved internally, after which the common bounded integer kernel is extracted. Its uniform_biform theorem constructs the actual nonzero bihomogeneous equation, both homogeneities, every coefficient bound N^kappa and vanishing at every original integer quadruple.
+
+Thus the former small-determinant premise in the auxiliary extraction has been discharged under explicit local arithmetic/chart hypotheses. These hypotheses are not yet claimed to follow from every dyadic box in T1.4: selecting and covering its relative intervals, proving the normalized size and weight margins from the specified rounded M and polylogarithmic shift, and the subsequent factor-curve/lattice counts remain unfinished.
+
+P1-MATH-0241 records the complete actual local auxiliary construction and uniform finite-degree height exponent. T1.4 and T1.5 remain in progress; coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are240 improvements and one statement-scope correction. No external input, axiom, Paper C port, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15161 jobs); direct axiom audit passed for 13483 declarations using only propext, Classical.choice and Quot.sound; all 12628 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.98 GiB.

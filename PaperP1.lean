@@ -3296,3 +3296,7 @@ public import PaperP1.Analysis.DeterminantDegreeChoice
 public import PaperP1.Analysis.DeterminantDenominatorBudget
 public import PaperP1.Analysis.DeterminantStrictMargin
 public import PaperP1.Analysis.DeterminantUniformMargin
+public import PaperP1.Arithmetic.ActualRelativeDeterminant
+public import PaperP1.Arithmetic.DeterminantLocalChart
+public import PaperP1.Asymptotics.DeterminantBoundedAuxiliaryHeight
+public import PaperP1.Asymptotics.LocalDeterminantAuxiliary
