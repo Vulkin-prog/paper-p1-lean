@@ -6464,8 +6464,13 @@ import PaperP1
 #print axioms PaperP1.PolynomialSplitKernelCount.single_square_equation
 #print axioms PaperP1.PolynomialSplitKernelCount.two_square_equations
 #print axioms PaperP1.PositionalBoundaryApproximationUnderInputs.uniform_bound
+#print axioms PaperP1.PositionalFullApproximationUnderInputs.uniform_norm_bound
+#print axioms PaperP1.PositionalFullApproximationUnderInputs.uniform_probability_bound
 #print axioms PaperP1.PositionalPairConversionRate.uniform_bound
 #print axioms PaperP1.PositionalRegularApproximationUnderInputs.uniform_bound
+#print axioms PaperP1.PositionalRestorationRates.nominal_discarded_mass
+#print axioms PaperP1.PositionalRestorationRates.uniform_actual_bound
+#print axioms PaperP1.PositionalRestorationRates.uniform_target_bound
 #print axioms PaperP1.PositionedMassPropagation.all_positions
 #print axioms PaperP1.PositionedSeedBounds.defects
 #print axioms PaperP1.PositionedSeedBounds.contacts
@@ -9287,6 +9292,9 @@ import PaperP1
 #print axioms PaperP1.Model.parityVec_mem_boundedPrimeParity
 #print axioms PaperP1.Model.parityPairing_eq_zero_iff_of_bounded
 #print axioms PaperP1.Model.parityPairing_injOn_bounded
+#print axioms PaperP1.PositionalGroundCoupling.finite_law
+#print axioms PaperP1.PositionalGroundCoupling.restoration_bound
+#print axioms PaperP1.PositionalGroundCoupling.dyadic_disagreement_bound
 #print axioms PaperP1.PositionalRetainedReference.difference_union
 #print axioms PaperP1.PositionalRetainedReference.admissible_identity
 #print axioms PaperP1.PositionalRetainedReference.admissible_norm_bound
@@ -10927,6 +10935,9 @@ import PaperP1
 #print axioms PaperP1.PositionalDeficitNorm.direct_norm_bound
 #print axioms PaperP1.PositionalDeficitNorm.compressed_norm_bound
 #print axioms PaperP1.PositionalDeficitNorm.combined_norm_bound
+#print axioms PaperP1.PositionalFiniteCoupling.configuration_eq_of_count_eq
+#print axioms PaperP1.PositionalFiniteCoupling.coupling
+#print axioms PaperP1.PositionalFiniteCoupling.restoration_bound
 #print axioms PaperP1.PositionalFiniteLaw.configuration_atom_product
 #print axioms PaperP1.PositionalFiniteLaw.indicator_difference_product
 #print axioms PaperP1.PositionalFiniteLaw.law_coeff
@@ -10961,6 +10972,11 @@ import PaperP1
 #print axioms PaperP1.PositionalProbabilityMeasure.real_singleton
 #print axioms PaperP1.PositionalProbabilityMeasure.law_eq_of_singletons
 #print axioms PaperP1.PositionalProbabilityMeasure.totalVariation_eq
+#print axioms PaperP1.PositionalTargetExtension.target_congr
+#print axioms PaperP1.PositionalTargetExtension.incidence_zero_outside
+#print axioms PaperP1.PositionalTargetExtension.factorization
+#print axioms PaperP1.PositionalTargetExtension.poisson_extension_error
+#print axioms PaperP1.PositionalTargetExtension.restoration_bound
 #print axioms PaperP1.PositionalTotalMass.totalMass_eq_tsum
 #print axioms PaperP1.PositionalTotalMass.totalMass_ofFinite
 #print axioms PaperP1.PositionalTotalMass.totalMass_one

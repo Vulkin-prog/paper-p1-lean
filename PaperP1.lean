@@ -2716,3 +2716,8 @@ public import PaperP1.Asymptotics.PositionalPairConversionRate
 public import PaperP1.Asymptotics.PositionalRegularApproximationUnderInputs
 public import PaperP1.Model.IncidentPairMass
 public import PaperP1.Asymptotics.WeakPairIncidence
+public import PaperP1.Probability.PositionalFiniteCoupling
+public import PaperP1.Model.PositionalGroundCoupling
+public import PaperP1.Probability.PositionalTargetExtension
+public import PaperP1.Asymptotics.PositionalRestorationRates
+public import PaperP1.Asymptotics.PositionalFullApproximationUnderInputs

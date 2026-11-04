@@ -3,7 +3,7 @@
 Stage: **exact probability identities and uniform arithmetic foundations**, 4 November 2026.
 Neither document is fully formalized.
 
-Main20.1 is in progress: the full unweighted original REGULAR positional law has the four-fifths comparison rate, and its Bernoulli/marked-pair conversion has unconditional rate1. The original single rates are now strictly positive without degree bounds, so both regular and full original-grid Poisson targets are genuine probabilities. Restoration of excluded sites and every fixed polynomial weight remain open.
+Main20.1 is in progress: the FULL ORIGINAL unsigned positional field, including nonregular sites, now has the source unweighted four-fifths comparison rate to its verified positive single/pair Poisson target. Both field and reference restoration cost the stronger unconditional rate1. The j=0 case is complete; every fixed polynomial weight remains open.
 
 The full original third absolute activity now reduces with coefficient one to literal strong exact-alignment triples, plus an error N^(-3/2+epsilon). All other triple sectors are proved at this power after an accuracy-dependent threshold. Main14.1 and14.6 stay in progress for the remaining strong-aligned upper bound.
 
@@ -110,7 +110,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **11104 audited theorem/lemma declarations**. This
+- The project currently has **11120 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -17668,3 +17668,75 @@ The remaining weighted/full positional theorem and deletion/isolation
 claims are not counted complete. Palomar remains a later milestone.
 
 Verified under Lean v4.36.0-rc2: full build passed (13993 jobs); direct axiom audit passed for 11104 declarations using only propext, Classical.choice and Quot.sound; all 9638 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.71 GiB.
+
+
+## Full original unweighted positional comparison
+
+The FULL ORIGINAL unsigned positional comparison, including
+all excluded/nonregular sites, now has the source unweighted power4/5
+under the existing retained-component geometric bundle. Its target
+is the verified positive single/pair Poisson field on the same
+original grid, with p=2^(-L), actual good-edge q_e and single rates
+p-iota_x. One common critical threshold gives the ordinary sum over
+ALL actual configurations of the absolute differences between their
+ORIGINAL infinite-model probabilities and the target coefficients
+at most N^(-4/5+epsilon). Target positivity and normalization are
+included in the public uniform_probability_bound theorem.
+
+This completes the j=0 case of main20.1. The numbered row remains
+IN PROGRESS for its assertion at EVERY fixed polynomial weight
+(1+total count)^j. No moment or weighted conclusion is inferred from
+ordinary total variation alone, and no numbered completion is added.
+
+PositionalFiniteCoupling works on the SAME finite sample for nested
+original grounds. Equal active counts there imply equality of the
+full original configurations because every added coordinate is zero.
+The actual finite-law L1 distance is at most twice the shared-sample
+count-disagreement probability, and at most twice the sum of the
+removed ACTUAL heterogeneous marginals. This is a proved coupling
+of the fields themselves, not an inference from a scalar-law distance.
+PositionalGroundCoupling identifies every actual positional law
+with any sufficiently large finite prime-sign cylinder. Its exact
+infinite-model configuration coefficients give the needed equality
+of whole finite laws. The field coupling and the dyadic shared-
+sample disagreement bound follow without an arithmetic input.
+
+PositionalTargetExtension proves the exact reference factorization
+when the ground is enlarged and all marked edges remain in the
+old ground. Incident intensity is zero at each new site. The full
+target is therefore the old target times the actual single-site
+Poisson product over the added sites. For their total nominal
+mass s, its L1 distance from the old target is at most2s*exp(2s).
+Both the factorization and this finite bound preserve coordinates.
+
+PositionalRestorationRates combines these facts with the already
+proved irregular-start count, original shared-sample disagreement
+and critical nominal marginal bound. The discarded nominal mass,
+the ACTUAL full/regular field distance, and the full/regular Poisson
+target distance each have the stronger UNCONDITIONAL rate
+N^(-1+epsilon), uniformly over every real private-prime cutoff H.
+The original-rate positivity proved at the previous checkpoint
+discharges the target-norm premise in this application.
+
+PositionalFullApproximationUnderInputs combines the regular-ground
+4/5 bound with these two restoration errors. The actual marginal
+equals p on the regular ground, by the proved source rank identity,
+so the two versions of the reference match exactly there. After
+absorbing the three terms at the final margin, the full original-
+grid field has L1 error N^(-4/5+epsilon). The exact completion norm
+equals the sum of absolute configuration coefficients; each actual
+coefficient has already been identified with its event probability
+under the ORIGINAL infinite prime-sign measure. The theorem therefore
+states the literal full probability-coefficient comparison, together
+with the verified target probability property.
+
+All restoration and finite probability results are unconditional.
+Only the full4/5 approximation retains the existing explicit
+retained-component geometric inputs. No new external property,
+global axiom, Paper C port, dependency download or mathematical
+finding is introduced. Coverage remains87/167 unconditional and
+44 conditional, with154 confirmed manuscript improvements. Original
+source bytes and the later Palomar milestone are preserved. Fixed
+polynomial weights and the deletion/isolation results remain open.
+
+Verified under Lean v4.36.0-rc2: full build passed (14003 jobs); direct axiom audit passed for 11120 declarations using only propext, Classical.choice and Quot.sound; all 9654 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 11.69 GiB.
