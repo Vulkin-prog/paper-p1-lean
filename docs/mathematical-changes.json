@@ -16095,6 +16095,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "2174ec089613a44e70de12245c510c688a589f61"
+    },
+    {
+      "id": "P1-MATH-0265",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "Reduced coordinate boxes and short-vector sums remain valid for the actual fixed vertical image radius, with one uniform polynomial-height construction.",
+      "finding": "Actual integer inverse bases and exact radius-dependent side lengths are uniformly constructed for every relative grid. Their product, lower-square, polynomial upper and point-coordinate bounds carry the literal radius R. The second-grid sum scales exactly by R/2.",
+      "proposed_revision": "Retain the image radius throughout lattice reduction and side summation, with explicit side formulas, instead of implicitly applying a radius2 statement to the vertical box.",
+      "impact": "Closes the arbitrary-radius reduced-coordinate and side-sum bridge needed by the actual vertical image bound. Actual effective-scale and consistent-basis assembly, curve counts and primitive assembly remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.QuadraticGridRadiusSum.side_length_scaling",
+        "PaperP1.QuadraticGridRadiusSum.uniform_radius_sum",
+        "PaperP1.UniformRelativeGridCoordinates.uniform_grid_coordinates"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15307 jobs); direct axiom audit passed for 13803 declarations using only propext, Classical.choice and Quot.sound; all 13009 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.54 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -8106,6 +8106,8 @@ import PaperP1
 #print axioms PaperP1.QuadraticComponent.coefficient_bounds
 #print axioms PaperP1.QuadraticComponent.companion_T19_9
 #print axioms PaperP1.QuadraticComponent.fixed_family_epsilon
+#print axioms PaperP1.QuadraticGridRadiusSum.side_length_scaling
+#print axioms PaperP1.QuadraticGridRadiusSum.uniform_radius_sum
 #print axioms PaperP1.QuadraticKernelExponents.capped_le_affine
 #print axioms PaperP1.QuadraticKernelExponents.exponent_le_affine_of_range
 #print axioms PaperP1.QuadraticKernelExponents.exponent_le_affine
@@ -8720,6 +8722,7 @@ import PaperP1
 #print axioms PaperP1.UniformPairClassDeficit.uniform_bound
 #print axioms PaperP1.UniformReal.uniformSubpolynomialOn_le_rpow
 #print axioms PaperP1.UniformReducedBinaryBasis.uniform_reduced_basis
+#print axioms PaperP1.UniformRelativeGridCoordinates.uniform_grid_coordinates
 #print axioms PaperP1.UniformRelativeIntervalCoordinates.uniform_interval_coordinates
 #print axioms PaperP1.UniformSubpolynomialPower.bound
 #print axioms PaperP1.UnitChannelPairWeights.uniform_joint

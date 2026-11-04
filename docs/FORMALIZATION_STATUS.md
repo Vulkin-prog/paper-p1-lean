@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records263 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records264 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13800 audited theorem/lemma declarations**. This
+- The project currently has **13803 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23567,3 +23567,22 @@ The proof carries the divisions and cancellations explicitly, so no moving coeff
 P1-MATH-0264 closes the actual second-lattice point box and effective-scale comparison. The population theorem is valid for either sign in the original d/e chart. Existing negative-shift auxiliary curves use a reversed chart: their eventual joint assembly must explicitly use the already proved coordinate flip and swapped source box; no alignment of these different interval labels is claimed here. Uniform second-lattice reduced coordinates and side/scale assembly, geometric curve counts and remaining primitive scale assembly remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are263 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15303 jobs); direct axiom audit passed for 13800 declarations using only propext, Classical.choice and Quot.sound; all 13006 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.56 GiB.
+
+
+## Uniform actual grid coordinates and side sums at the vertical image radius
+
+The reduced coordinate boxes and quadratic-grid side sums now retain the ACTUAL image radius required by the second lattice. This removes the remaining mismatch between the radius2 first-lattice statements and the fixed radius2*(49+16/rho) of the actual vertical points.
+
+UniformRelativeGridCoordinates constructs actual integer inverse matrices A,B with det(A)=1, globally shortest first column and polynomial entry heights, uniformly for every relative grid with1<=D,E,M, M<=N and D,E<=Q*N. A single kappa,N0 is chosen BEFORE N, M, the grid scales and index, and even before the nonnegative real image radius R. The sides retain their exact definitions in terms of R and the actual basis energies. The proof establishes
+
+  0<=L1<=L0, L0*L1<=4*R^2*D*E/M,
+  R^2*D*E/M<=L0^2,
+  L0<=2*R*(2*(N^2)^2+1).
+
+Every literal integer point whose real lattice image has both coordinates at most R has inverse integer coordinates bounded by these same L0,L1. No basis, shortest vector, height or point-coordinate bound is assumed; the proof reuses the actual bounded lattice reduction and matrix-height construction.
+
+QuadraticGridRadiusSum proves the exact identity sideLength(R,P)=(R/2)*sideLength(2,P), including P=0 without an extra assumption. It transfers the already proved actual quadratic-grid side sum to EVERY nonnegative R, preserving the uniform threshold and the actual matrix/vector choices. Consequently the actual vertical radius can be carried into the finite original-interval sum as the fixed factor R/2.
+
+P1-MATH-0265 closes arbitrary-radius reduced grid coordinates and radius-aware second-grid summation. Their simultaneous application to the actual effective scales and consistently chosen grid bases, signed-chart assembly, geometric curve counts and remaining primitive scale assembly remain open. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are264 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15307 jobs); direct axiom audit passed for 13803 declarations using only propext, Classical.choice and Quot.sound; all 13009 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.54 GiB.
