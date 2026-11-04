@@ -16284,6 +16284,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "7bf28cbd6c9e13a6dbd864c85440d125b57cf106"
+    },
+    {
+      "id": "P1-MATH-0271",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "For negative shifts, the reversed auxiliary interval labels can be reconciled with the actual lattice coordinates and side sums while preserving original population counts and both target costs.",
+      "finding": "An exact positive orientation preserves cardinality, logShape, rounded M and both ideal costs. One theorem constructs auxiliary biforms and both actual lattice families on the same oriented clusters for every signed source population, with all degrees, heights and thresholds fixed before the moving data.",
+      "proposed_revision": "Introduce the positive-oriented source box and population explicitly for h<0, prove scale/cost/cardinality invariance, and construct the auxiliary curves and both lattice bases on that same interval system before applying local curve counts.",
+      "impact": "Closes the negative auxiliary-chart alignment and joint actual auxiliary/lattice assembly. Constructed-basis polynomial/factor transformations, local geometric counts and primitive reductions remain open; no absolute irreducibility or solution-count conclusion is claimed.",
+      "evidence": [
+        "PaperP1.DeterminantPositiveOrientation.population",
+        "PaperP1.DeterminantPositiveOrientation.signed_population",
+        "PaperP1.DeterminantPositiveOrientation.card_eq",
+        "PaperP1.DeterminantPositiveOrientation.scale_eq",
+        "PaperP1.DeterminantPositiveOrientation.shape_eq",
+        "PaperP1.DeterminantPositiveOrientation.horizontal_cost_eq",
+        "PaperP1.DeterminantPositiveOrientation.vertical_cost_eq",
+        "PaperP1.OrientedAuxiliaryLatticeData.uniform_oriented_data",
+        "PaperP1.DeterminantPositiveOrientation.orientedBox",
+        "PaperP1.DeterminantPositiveOrientation.orientedPopulation"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15335 jobs); direct axiom audit passed for 13832 declarations using only propext, Classical.choice and Quot.sound; all 13043 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.44 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

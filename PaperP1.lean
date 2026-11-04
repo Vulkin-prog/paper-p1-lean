@@ -3385,3 +3385,5 @@ public import PaperP1.Asymptotics.RoundedScaleLower
 public import PaperP1.Asymptotics.RoundedSourceLatticeFamilies
 public import PaperP1.Analysis.RoundedScaleSideBudget
 public import PaperP1.Asymptotics.IdealSourceLatticeSums
+public import PaperP1.Arithmetic.DeterminantPositiveOrientation
+public import PaperP1.Asymptotics.OrientedAuxiliaryLatticeData

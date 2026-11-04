@@ -3539,6 +3539,13 @@ import PaperP1
 #print axioms PaperP1.DeterminantIntervalPartition.point_alpha_bound
 #print axioms PaperP1.DeterminantIntervalPartition.point_vertical_bound
 #print axioms PaperP1.DeterminantLocalChart.minors_small
+#print axioms PaperP1.DeterminantPositiveOrientation.population
+#print axioms PaperP1.DeterminantPositiveOrientation.signed_population
+#print axioms PaperP1.DeterminantPositiveOrientation.card_eq
+#print axioms PaperP1.DeterminantPositiveOrientation.scale_eq
+#print axioms PaperP1.DeterminantPositiveOrientation.shape_eq
+#print axioms PaperP1.DeterminantPositiveOrientation.horizontal_cost_eq
+#print axioms PaperP1.DeterminantPositiveOrientation.vertical_cost_eq
 #print axioms PaperP1.DeterminantPrimitiveReduction.reconstruct
 #print axioms PaperP1.DeterminantPrimitiveReduction.left_factor
 #print axioms PaperP1.DeterminantPrimitiveReduction.right_factor
@@ -7815,6 +7822,7 @@ import PaperP1
 #print axioms PaperP1.OrdinaryIndependentDeficitBound.uniform_bound
 #print axioms PaperP1.OrdinaryShortIntervalCensusInput.two_candidates_of_relative
 #print axioms PaperP1.OrdinarySurfaceSubpowerUnderInputs.uniform_subpower
+#print axioms PaperP1.OrientedAuxiliaryLatticeData.uniform_oriented_data
 #print axioms PaperP1.OrientedPlanarMotifCount.uniform_count
 #print axioms PaperP1.OriginalCompressedActivityUnderInputs.original_cover
 #print axioms PaperP1.OriginalCompressedActivityUnderInputs.separated_cover

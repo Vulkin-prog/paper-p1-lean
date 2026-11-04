@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; six remaining arithmetic obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records269 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is89/167 unconditional and72 conditional. The project records270 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **13824 audited theorem/lemma declarations**. This
+- The project currently has **13832 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -23692,3 +23692,18 @@ The proof reuses the proved constant-absorption theorem with the strictly positi
 P1-MATH-0270 closes the actual two-lattice side-summation and final ideal-scale/error-budget passage. This is not yet the solution-population count: the negative auxiliary-chart assembly, geometric local curve counts and final primitive reductions still remain. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are269 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15331 jobs); direct axiom audit passed for 13824 declarations using only propext, Classical.choice and Quot.sound; all 13033 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.46 GiB.
+
+
+## Exact signed orientation with actual auxiliary curves, both lattice families and ideal side sums
+
+The negative-shift auxiliary-chart mismatch is now closed by an EXACT positive orientation, and the actual auxiliary curves, both constructed lattice families and ideal side sums are available in ONE common orientation for every signed source box.
+
+DeterminantPositiveOrientation defines the actual swapped source box and coordinate-flipped population when h<0, retaining the original box and population otherwise. It proves the positive Population with shift h.natAbs, its corresponding signed-population statement, exact preservation of finite cardinality, exact invariance of the rounded determinant scale and logShape, and invariance of BOTH ideal square-root-plus-axis costs. The existing proved coordinate flip and source-box reversal are used directly; no negative interval label is silently identified with a positive one.
+
+OrientedAuxiliaryLatticeData chooses B,Amax,kappaw,kappa0,kappa1,N0 BEFORE N, signed h, every moving source Box and the actual point population. At the literal ORIGINAL rounded M, it constructs both actual basis families for the correctly oriented source box, retaining all coordinate data and polynomial heights. Their simultaneous ideal side sums are expressed in the ORIGINAL D,E,U,V costs. The bases are chosen BEFORE the finite point population.
+
+For EVERY original SignedPopulation, the same theorem supplies its actual positive-oriented population, exact partition of the ORIGINAL population cardinality over those SAME oriented interval clusters, and a nonzero integer auxiliary biform on EVERY occupied cluster. The second degree B is fixed positive; the first degree is positive and bounded by Amax; all coefficient heights are at most N^kappaw. The actual polynomial vanishes on every actual oriented source point of that cluster. Thus the curves, source-pair coordinates, vertical quadratic grid and both ideal side sums now refer to the SAME interval system, for either sign of h.
+
+P1-MATH-0271 closes the signed orientation and joint actual auxiliary/lattice-data assembly. Applying the proved polynomial-coordinate/four-chart factor transformations to these constructed bases, geometric local curve counts and final primitive reductions remain open. The integer auxiliary is not claimed absolutely irreducible, and no local curve-point count is assumed or claimed. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are270 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15335 jobs); direct axiom audit passed for 13832 declarations using only propext, Classical.choice and Quot.sound; all 13043 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.44 GiB.

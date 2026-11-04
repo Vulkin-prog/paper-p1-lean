@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**269 mathematical improvements and one statement-scope correction are confirmed.**
+**270 mathematical improvements and one statement-scope correction are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement remains to be proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -22923,3 +22923,18 @@ The proof reuses the proved constant-absorption theorem with the strictly positi
 P1-MATH-0270 closes the actual two-lattice side-summation and final ideal-scale/error-budget passage. This is not yet the solution-population count: the negative auxiliary-chart assembly, geometric local curve counts and final primitive reductions still remain. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are269 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15331 jobs); direct axiom audit passed for 13824 declarations using only propext, Classical.choice and Quot.sound; all 13033 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.46 GiB.
+
+
+## Exact signed orientation with actual auxiliary curves, both lattice families and ideal side sums
+
+The negative-shift auxiliary-chart mismatch is now closed by an EXACT positive orientation, and the actual auxiliary curves, both constructed lattice families and ideal side sums are available in ONE common orientation for every signed source box.
+
+DeterminantPositiveOrientation defines the actual swapped source box and coordinate-flipped population when h<0, retaining the original box and population otherwise. It proves the positive Population with shift h.natAbs, its corresponding signed-population statement, exact preservation of finite cardinality, exact invariance of the rounded determinant scale and logShape, and invariance of BOTH ideal square-root-plus-axis costs. The existing proved coordinate flip and source-box reversal are used directly; no negative interval label is silently identified with a positive one.
+
+OrientedAuxiliaryLatticeData chooses B,Amax,kappaw,kappa0,kappa1,N0 BEFORE N, signed h, every moving source Box and the actual point population. At the literal ORIGINAL rounded M, it constructs both actual basis families for the correctly oriented source box, retaining all coordinate data and polynomial heights. Their simultaneous ideal side sums are expressed in the ORIGINAL D,E,U,V costs. The bases are chosen BEFORE the finite point population.
+
+For EVERY original SignedPopulation, the same theorem supplies its actual positive-oriented population, exact partition of the ORIGINAL population cardinality over those SAME oriented interval clusters, and a nonzero integer auxiliary biform on EVERY occupied cluster. The second degree B is fixed positive; the first degree is positive and bounded by Amax; all coefficient heights are at most N^kappaw. The actual polynomial vanishes on every actual oriented source point of that cluster. Thus the curves, source-pair coordinates, vertical quadratic grid and both ideal side sums now refer to the SAME interval system, for either sign of h.
+
+P1-MATH-0271 closes the signed orientation and joint actual auxiliary/lattice-data assembly. Applying the proved polynomial-coordinate/four-chart factor transformations to these constructed bases, geometric local curve counts and final primitive reductions remain open. The integer auxiliary is not claimed absolutely irreducible, and no local curve-point count is assumed or claimed. T1.4 and T1.5 stay in progress. Coverage stays89 proved and72 conditional out of167, with six incomplete numbered results. There are270 improvements and one statement-scope correction. No new external input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15335 jobs); direct axiom audit passed for 13832 declarations using only propext, Classical.choice and Quot.sound; all 13043 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.44 GiB.
