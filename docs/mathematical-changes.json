@@ -13624,6 +13624,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "bb1af8e5890c1aa6d08884a93456020bd969df9b"
+    },
+    {
+      "id": "P1-MATH-0210",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:consequences:macro",
+        "number": "T21.1",
+        "page": 86,
+        "source": "companion_sections/arithmetic_consequences.tex",
+        "line": 26,
+        "statement_sha256": "d6e02936d3bf515c8575e7aef0ecc61a9488c47d79e1728d988bc5fa5ec30e1d"
+      },
+      "original_assumption": "Companion T21.1 claims the complete signed aligned profile equals(M-2M^delta)*S_1,2(L) with error M^(4/3+epsilon), and derives the positive leading profile by assembling all actual aligned channels.",
+      "finding": "The complete actual aligned separated positive and signed sums are proved to equal(M-2M^delta) times their exact unsigned/signed1:2 channel sums with error M^(4/3+epsilon). The actual event compatibility, both orientations, zero-unit pairs, local relations and original labels are retained; every input estimate is proved internally.",
+      "proposed_revision": "Assemble the complete actual profile through the proved disjoint sector partition, after identifying exact rational support and both leading orientations. State the stronger finite positive main term using U_1,2 alongside the printed signed formula before passing to relative equivalents.",
+      "impact": "Completes the actual macroscopic signed main-term formula and an exact positive aligned main-term estimate in T21.1. Global rational-code alignment, relative equivalents and the dyadic positive claims remain open, so numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.ExactUnitGeometric.of_unit",
+        "PaperP1.ExactUnitGeometric.of_nonempty",
+        "PaperP1.MacroscopicActualLeadingProfiles.doubled_sum_error",
+        "PaperP1.MacroscopicActualLeadingProfiles.uniform_comparison",
+        "PaperP1.MacroscopicActualLeadingProfiles.uniform_main_terms",
+        "PaperP1.MacroscopicActualProfiles.uniform_main_terms",
+        "PaperP1.MacroscopicLeadingPairGeometry.geometric_separated",
+        "PaperP1.MacroscopicLeadingPairGeometry.uniform_separation",
+        "PaperP1.MacroscopicLeadingPairGeometry.uniform_symmetric_sum",
+        "PaperP1.MacroscopicLeadingPairGeometry.rational_forward_sums",
+        "PaperP1.MacroscopicActualLeadingProfiles.positive",
+        "PaperP1.MacroscopicActualLeadingProfiles.signed",
+        "PaperP1.MacroscopicActualProfiles.positive",
+        "PaperP1.MacroscopicActualProfiles.signed"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14965 jobs); direct axiom audit passed for 12998 declarations using only propext, Classical.choice and Quot.sound; all 12034 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.62 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

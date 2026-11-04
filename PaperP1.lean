@@ -3198,3 +3198,7 @@ public import PaperP1.Asymptotics.MacroscopicSignedChannelComparison
 public import PaperP1.Model.ActualAffinePairWeight
 public import PaperP1.Arithmetic.BoundedHeightChannelUniqueness
 public import PaperP1.Asymptotics.MacroscopicChannelPartition
+public import PaperP1.Arithmetic.ExactUnitGeometric
+public import PaperP1.Asymptotics.MacroscopicActualLeadingProfiles
+public import PaperP1.Asymptotics.MacroscopicActualProfiles
+public import PaperP1.Asymptotics.MacroscopicLeadingPairGeometry

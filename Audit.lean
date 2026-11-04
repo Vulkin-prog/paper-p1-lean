@@ -3312,6 +3312,8 @@ import PaperP1
 #print axioms PaperP1.ExactMatchCongruences.one_family_congruence
 #print axioms PaperP1.ExactUnitDeletion.cover_double_units
 #print axioms PaperP1.ExactUnitDeletion.pair_deletion
+#print axioms PaperP1.ExactUnitGeometric.of_unit
+#print axioms PaperP1.ExactUnitGeometric.of_nonempty
 #print axioms PaperP1.ExactUnitProgression.left_projection_injective
 #print axioms PaperP1.ExactUnitProgression.ordered_difference
 #print axioms PaperP1.ExactUnitProgression.positive_difference
@@ -6858,6 +6860,10 @@ import PaperP1
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_extensions
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_centered_extensions
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_small_intersection_extensions
+#print axioms PaperP1.MacroscopicActualLeadingProfiles.doubled_sum_error
+#print axioms PaperP1.MacroscopicActualLeadingProfiles.uniform_comparison
+#print axioms PaperP1.MacroscopicActualLeadingProfiles.uniform_main_terms
+#print axioms PaperP1.MacroscopicActualProfiles.uniform_main_terms
 #print axioms PaperP1.MacroscopicActualSignedMass.weight_eq_affine
 #print axioms PaperP1.MacroscopicActualSignedMass.uniform_high
 #print axioms PaperP1.MacroscopicActualSignedMass.high_height_three
@@ -6912,6 +6918,10 @@ import PaperP1
 #print axioms PaperP1.MacroscopicKernelExceptionHosts.nonprivate_count
 #print axioms PaperP1.MacroscopicKernelExceptionHosts.residual_count
 #print axioms PaperP1.MacroscopicKernelExceptionHosts.extra_loss_count
+#print axioms PaperP1.MacroscopicLeadingPairGeometry.geometric_separated
+#print axioms PaperP1.MacroscopicLeadingPairGeometry.uniform_separation
+#print axioms PaperP1.MacroscopicLeadingPairGeometry.uniform_symmetric_sum
+#print axioms PaperP1.MacroscopicLeadingPairGeometry.rational_forward_sums
 #print axioms PaperP1.MacroscopicLeadingUnitSums.uniform_ceil_errors
 #print axioms PaperP1.MacroscopicLeadingUnitSums.remove_ceiling_error
 #print axioms PaperP1.MacroscopicLeadingUnitSums.uniform_real_errors

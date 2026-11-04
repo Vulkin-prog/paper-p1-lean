@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; remaining arithmetic and forcing obligations**, 4 November 2026.
 Neither document is fully formalized.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records208 improvements and1 statement-scope correction.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile remains open, while the41/30 third-order claims now follow by restricting to actual effective crossings. Coverage is88/167 unconditional and70 conditional. The project records209 improvements and1 statement-scope correction.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -122,7 +122,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **12988 audited theorem/lemma declarations**. This
+- The project currently has **12998 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -22504,3 +22504,23 @@ For Q=B^3, the determinant threshold is exactly4*B^7. The proved macroscopic pol
 P1-MATH-0209 records the actual growing-height uniqueness and exact profile partition. This supplies the finite bookkeeping needed to combine the separately proved actual sector masses. The global rational code definition/identification, final signed and positive full-profile assembly and relative equivalents, and the dyadic positive profile still remain. T21.1 stays in progress. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are208 improvements and one statement-scope correction. No external input, new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (14957 jobs); direct axiom audit passed for 12988 declarations using only propext, Classical.choice and Quot.sound; all 12020 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.65 GiB.
+
+
+## Complete actual aligned macroscopic positive and signed main terms
+
+The complete actual aligned macroscopic signed formula in T21.1 is now proved internally on the original ordered separated domain. The actual positive aligned profile is proved with its exact finite leading channel sum as well.
+
+ExactUnitGeometric proves that any literal exact unit at positive roots yields the enlarged geometric channel, on every interval. MacroscopicLeadingPairGeometry proves every enlarged1:2 pair is eventually separated by more than L, including pairs with zero exact units. The1:2 and2:1 masks form a disjoint union, and every symmetric actual weight sums to twice its forward sum. Both actual rational unit weights vanish off the forward geometric channel; the exact support identities justify comparison with the full-root rational sums established earlier.
+
+MacroscopicActualLeadingProfiles retains the FULL actual rank loss and the ACTUAL affine compatibility. It compares the entire leading positive and signed masks to the rational unit sums with error M^(1+epsilon). Their finite main terms are then obtained with the same error. Local relations, incompatible pairs, both orientations and every original source label are retained.
+
+MacroscopicActualProfiles defines R_al and C_al as literal sums on the complete enlarged aligned separated mask. It uses the exact disjoint sector partition and the separately proved actual low/high bounds to establish, for every fixed0<delta<1, C and epsilon>0, uniformly in every critical length after the threshold:
+
+  |R_al - (M-2*M^delta)*U_1,2(L)| <= M^(4/3+epsilon),
+  |C_al - (M-2*M^delta)*S_1,2(L)| <= M^(4/3+epsilon).
+
+The second assertion is the actual macroscopic signed main-term formula printed in T21.1. The theorem has no arithmetic, channel-mass or profile estimate supplied as an external input. Its actual compatibility definition and finite sum domain are linked to the source definitions. The exact S_1,2 identity was already proved in P1-MATH-0207.
+
+P1-MATH-0210 records the full actual macroscopic profile assembly. The complete numbered proposition still requires the global rational-code definition/identification, the positive and signed relative equivalents and the dyadic positive assertions. T21.1 therefore stays in progress. Coverage remains88 proved and70 conditional out of167, with nine incomplete results. There are209 improvements and one statement-scope correction. No external input, new axiom, dependency, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (14965 jobs); direct axiom audit passed for 12998 declarations using only propext, Classical.choice and Quot.sound; all 12034 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.62 GiB.
