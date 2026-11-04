@@ -2866,3 +2866,9 @@ public import PaperP1.Arithmetic.AsymmetricComponentOffsets
 public import PaperP1.Asymptotics.AsymmetricComponentHostCount
 public import PaperP1.Asymptotics.AsymmetricComponentHostData
 public import PaperP1.Asymptotics.AsymmetricComponentSystems
+public import PaperP1.Arithmetic.AsymmetricSingletonBudget
+public import PaperP1.Arithmetic.AsymmetricTargetComponents
+public import PaperP1.Asymptotics.AsymmetricCoarseProfileUnderInputs
+public import PaperP1.Asymptotics.AsymmetricDefectDensity
+public import PaperP1.Asymptotics.AsymmetricDenseMassUnderInputs
+public import PaperP1.Asymptotics.AsymmetricKernelPowers
