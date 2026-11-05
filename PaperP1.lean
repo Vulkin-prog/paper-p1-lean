@@ -4055,3 +4055,7 @@ public import PaperP1.Analysis.NormalizedScaledTangent
 public import PaperP1.Analysis.ScaledCurvePieceZeros
 public import PaperP1.Analysis.ScaledMonomialPieceCount
 public import PaperP1.Analysis.ScaledPolynomialTangentTrajectory
+public import PaperP1.Analysis.JointGraphChebyshevExceptions
+public import PaperP1.Analysis.JointLocalUnitCountingMaps
+public import PaperP1.Analysis.UnitGraphMonomialPieceCount
+public import PaperP1.Analysis.UnitSlopePieceRestriction

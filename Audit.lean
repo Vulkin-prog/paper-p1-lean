@@ -2909,6 +2909,10 @@ import PaperP1
 #print axioms PaperP1.IteratedGraphDerivative.numerator_quotient_hasDerivAt
 #print axioms PaperP1.IteratedGraphDerivative.iterated_evaluation
 #print axioms PaperP1.IteratedGraphDerivative.positive_order
+#print axioms PaperP1.JointGraphChebyshevExceptions.avoids_both
+#print axioms PaperP1.JointGraphChebyshevExceptions.exists_finset
+#print axioms PaperP1.JointLocalUnitCountingMaps.exists_at_nonexceptional
+#print axioms PaperP1.JointLocalUnitCountingMaps.exists_control_set_and_counting_maps
 #print axioms PaperP1.LeadingSaddleLogBounds.reciprocal_log_bounds
 #print axioms PaperP1.LeadingSaddleLogBounds.cost_log_bounds
 #print axioms PaperP1.LeadingSaddleLogBounds.limit_of_uniform_bounds
@@ -3387,12 +3391,16 @@ import PaperP1
 #print axioms PaperP1.TruncatedAffineDegree.budget
 #print axioms PaperP1.TruncatedAffineDegree.prime_scale
 #print axioms PaperP1.UniformSaddleVariation.uniform_left_variation
+#print axioms PaperP1.UnitGraphMonomialPieceCount.exists_scale
+#print axioms PaperP1.UnitGraphMonomialPieceCount.exists_affine_scale
+#print axioms PaperP1.UnitGraphMonomialPieceCount.point_count
 #print axioms PaperP1.UnitSlopeHigherDerivativeBounds.derivative_monotonicity
 #print axioms PaperP1.UnitSlopeHigherDerivativeBounds.interior_bound
 #print axioms PaperP1.UnitSlopeHigherDerivativeBounds.exists_piece_with_higher_bounds
 #print axioms PaperP1.UnitSlopeHigherDerivativeBounds.exists_control_set_and_higher_bounds
 #print axioms PaperP1.UnitSlopeNormalizedCharts.exists_at_nonexceptional
 #print axioms PaperP1.UnitSlopeNormalizedCharts.exists_control_set_and_unit_slope_charts
+#print axioms PaperP1.UnitSlopePieceRestriction.exists_avoiding
 #print axioms PaperP1.VerticalGridLattice.center_identity
 #print axioms PaperP1.VerticalGridLattice.point_box
 #print axioms PaperP1.WeightedGeometricTail.weighted_hasSum
