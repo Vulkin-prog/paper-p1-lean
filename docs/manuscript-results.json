@@ -7390,7 +7390,8 @@
             "PaperP1.SharpConnectedChannelMass.uniform_mass"
           ]
         }
-      ]
+      ],
+      "validation_commit": "aefeaf7140481c0e8f5d60b70dbcbe42dc42b9c4"
     },
     {
       "label": "p13:third:lower",
@@ -7667,7 +7668,8 @@
             "PaperP1.SharpThirdCancellation.uniform_positive_cancellation"
           ]
         }
-      ]
+      ],
+      "validation_commit": "aefeaf7140481c0e8f5d60b70dbcbe42dc42b9c4"
     },
     {
       "label": "p13:third:activity",
