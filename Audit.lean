@@ -1929,6 +1929,7 @@ import PaperP1
 #print axioms PaperP1.RationalizedCriticalPointBound.resultant_identity
 #print axioms PaperP1.RationalizedCriticalPointBound.resultant_degree_bound
 #print axioms PaperP1.RationalizedCriticalPointBound.critical_points_card
+#print axioms PaperP1.RealFilteredEvaluationDeterminant.weighted_bound
 #print axioms PaperP1.RectangularEvaluationPolynomial.outer_coefficient
 #print axioms PaperP1.RectangularEvaluationPolynomial.coefficient
 #print axioms PaperP1.RectangularEvaluationPolynomial.nonzero
@@ -2349,6 +2350,9 @@ import PaperP1
 #print axioms PaperP1.TrivariatePolynomialEvaluation.evaluation_apply
 #print axioms PaperP1.TrivariatePolynomialEvaluation.evaluation_comp_threeEquiv
 #print axioms PaperP1.TrivariatePolynomialEvaluation.asMvPolynomial_eval
+#print axioms PaperP1.TruncatedEvaluationDegreeBudget.strictly_mono_index_le
+#print axioms PaperP1.TruncatedEvaluationDegreeBudget.truncated_range_budget
+#print axioms PaperP1.TruncatedEvaluationDegreeBudget.triangular_budget
 #print axioms PaperP1.TwoParameterQuotientGenerators.ideal_homogeneous
 #print axioms PaperP1.TwoParameterQuotientGenerators.parameter_zero
 #print axioms PaperP1.TwoParameterQuotientGenerators.killFirst_X
@@ -2446,6 +2450,10 @@ import PaperP1
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_card_all
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_finite
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_card
+#print axioms PaperP1.ActualTaylorRemainderBound.jet_self
+#print axioms PaperP1.ActualTaylorRemainderBound.within_eq_jet
+#print axioms PaperP1.ActualTaylorRemainderBound.factorial_divisor_bound
+#print axioms PaperP1.ActualTaylorRemainderBound.remainder_bound
 #print axioms PaperP1.AdjacentSquarefreeBudget.odd_term_bound
 #print axioms PaperP1.AdjacentSquarefreeBudget.odd_partial_sum
 #print axioms PaperP1.AdjacentSquarefreeBudget.odd_uniform_sum

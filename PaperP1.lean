@@ -4059,3 +4059,6 @@ public import PaperP1.Analysis.JointGraphChebyshevExceptions
 public import PaperP1.Analysis.JointLocalUnitCountingMaps
 public import PaperP1.Analysis.UnitGraphMonomialPieceCount
 public import PaperP1.Analysis.UnitSlopePieceRestriction
+public import PaperP1.Algebra.RealFilteredEvaluationDeterminant
+public import PaperP1.Algebra.TruncatedEvaluationDegreeBudget
+public import PaperP1.Analysis.ActualTaylorRemainderBound
