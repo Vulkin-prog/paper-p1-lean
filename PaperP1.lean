@@ -3946,3 +3946,6 @@ public import PaperP1.Arithmetic.SmoothLowerPrimeMargin
 public import PaperP1.Arithmetic.SmoothLowerBarrierBase
 public import PaperP1.Arithmetic.SmoothLowerBarrierInduction
 public import PaperP1.Arithmetic.SmoothQuotientGeometry
+public import PaperP1.Analysis.SmoothBarrierSaddleScale
+public import PaperP1.Asymptotics.FineOrdinaryReciprocalLower
+public import PaperP1.Asymptotics.FineSaddleTheorems

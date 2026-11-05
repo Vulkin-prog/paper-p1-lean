@@ -3076,6 +3076,14 @@ import PaperP1
 #print axioms PaperP1.SmallRecoveryParameter.power_order
 #print axioms PaperP1.SmallRecoveryParameter.exists_small
 #print axioms PaperP1.SmallRecoveryParameter.exists_relative_cost
+#print axioms PaperP1.SmoothBarrierSaddleScale.log_nu_identity
+#print axioms PaperP1.SmoothBarrierSaddleScale.cutoff_div_nu_identity
+#print axioms PaperP1.SmoothBarrierSaddleScale.tendsto_log_nu_div_parameter
+#print axioms PaperP1.SmoothBarrierSaddleScale.tendsto_loglog_nu_sub_log_parameter
+#print axioms PaperP1.SmoothBarrierSaddleScale.tendsto_cost_gap
+#print axioms PaperP1.SmoothBarrierSaddleScale.tendsto_tilt_div_cutoff
+#print axioms PaperP1.SmoothBarrierSaddleScale.eventual_cost_upper
+#print axioms PaperP1.SmoothBarrierSaddleScale.eventual_tilt_upper
 #print axioms PaperP1.prod_one_add_inv_sqrt_le_exp_sum
 #print axioms PaperP1.prod_one_add_inv_sqrt_le_exp_two_sqrt
 #print axioms PaperP1.prod_one_add_rpow_neg_one_half_le_exp_two_sqrt
@@ -8002,6 +8010,10 @@ import PaperP1
 #print axioms PaperP1.ExposureAssignmentBudget.uniform_fresh_assignment_budget
 #print axioms PaperP1.FactorialLogBounds.log_factorial_bounds
 #print axioms PaperP1.FactorialLogBounds.log_factorial_error
+#print axioms PaperP1.FineOrdinaryReciprocalLower.ceil_exponential_bounds
+#print axioms PaperP1.FineOrdinaryReciprocalLower.uniform_lower
+#print axioms PaperP1.FineOrdinaryReciprocalLower.lowerInput
+#print axioms PaperP1.FineOrdinaryReciprocalLower.eipInput
 #print axioms PaperP1.FineReciprocalUpper.uniform_upper
 #print axioms PaperP1.FineReciprocalUpper.uniform_population_upper
 #print axioms PaperP1.FineReciprocalUpper.uniform_original_upper
@@ -8009,6 +8021,8 @@ import PaperP1
 #print axioms PaperP1.FineSaddleConclusionsFromLower.companion_T19_16
 #print axioms PaperP1.FineSaddlePivotCount.uniform_count
 #print axioms PaperP1.FineSaddlePivotCount.uniform_population_bound
+#print axioms PaperP1.FineSaddleTheorems.companion_T19_15
+#print axioms PaperP1.FineSaddleTheorems.companion_T19_16
 #print axioms PaperP1.FineSignedCostUpper.uniform_upper_from_profile
 #print axioms PaperP1.FineSignedCostUpper.uniform_upper
 #print axioms PaperP1.FineSignedCostUpper.uniform_log_upper

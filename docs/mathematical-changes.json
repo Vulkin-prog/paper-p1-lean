@@ -23886,6 +23886,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "d02a865dcc1c18688583f5cd14140799a83edc53"
+    },
+    {
+      "id": "P1-MATH-0483",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "Complete fine reciprocal and specified signed-cost conclusions retained the unformalized ordinary reciprocal lower theorem after their upper directions and geometric profiles had become internal.",
+      "finding": "The actual smooth-count lower barrier meets its scale domain at the exact hard saddle. Its fine cost identity, integer ceil cutoff and fixed-factor absorption prove the ordinary reciprocal lower estimate internally, completing both aligned numbered theorems without external mathematical arguments.",
+      "proposed_revision": "Replace the external ordinary reciprocal input by the internal prime-weight/barrier proof at the actual saddle. Retain the exact full and dyadic pivot equivalents and prescribed signed-cost statement, including its positive coordinate-cost interpretation.",
+      "impact": "Companion T19.15 and T19.16 become unconditional. The external EIP lower and historical two-sided interfaces needed for these conclusions are internally discharged. Coverage becomes149 proved and15 conditional out of167.",
+      "evidence": [
+        "PaperP1.SmoothBarrierSaddleScale.log_nu_identity",
+        "PaperP1.SmoothBarrierSaddleScale.cutoff_div_nu_identity",
+        "PaperP1.SmoothBarrierSaddleScale.tendsto_log_nu_div_parameter",
+        "PaperP1.SmoothBarrierSaddleScale.tendsto_loglog_nu_sub_log_parameter",
+        "PaperP1.SmoothBarrierSaddleScale.tendsto_cost_gap",
+        "PaperP1.SmoothBarrierSaddleScale.tendsto_tilt_div_cutoff",
+        "PaperP1.SmoothBarrierSaddleScale.eventual_cost_upper",
+        "PaperP1.SmoothBarrierSaddleScale.eventual_tilt_upper",
+        "PaperP1.FineOrdinaryReciprocalLower.ceil_exponential_bounds",
+        "PaperP1.FineOrdinaryReciprocalLower.uniform_lower",
+        "PaperP1.FineOrdinaryReciprocalLower.lowerInput",
+        "PaperP1.FineOrdinaryReciprocalLower.eipInput",
+        "PaperP1.FineSaddleTheorems.companion_T19_15",
+        "PaperP1.FineSaddleTheorems.companion_T19_16"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16469 jobs); direct axiom audit passed for 15475 declarations using only propext, Classical.choice and Quot.sound; all 14921 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.12 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

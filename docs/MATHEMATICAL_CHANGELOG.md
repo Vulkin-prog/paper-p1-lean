@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**480 mathematical improvements and two statement-scope corrections are confirmed.**
+**481 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26060,3 +26060,22 @@ Canonical complete T19.15/T19.16 therefore remain conditional on the ordinary fi
 P1-MATH-0482 adds three modules, six theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records480 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16463 jobs); direct axiom audit passed for 15461 declarations using only propext, Classical.choice and Quot.sound; all 14907 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.14 GiB.
+
+
+## Complete internal fine reciprocal and prescribed signed forcing cost theorems
+
+Complete companion T19.15 and T19.16 now have closed canonical internal proofs. T19.15 retains both literal full and dyadic reciprocal odd-pivot equivalents at error o(nu_N), with the actual hard saddle. T19.16 retains the original prescribed signed forcing, exact excess, both fine cost directions, actual logarithmic error and the positive coordinate-cost power obstruction. The ordinary fine reciprocal lower estimate and the historical two-sided input interface are now proved internally; no EIP or geometric argument occurs in the new canonical declarations. Both full statements and proofs in companion_sections/limits_appendix.tex lines1138-1300 were rechecked.
+
+SmoothBarrierSaddleScale proves exact identities log(nu)=u-logu and V/nu=u-normalizedEi(u) from the actual root. It then proves loglog(nu)-logu ->0 and the fine barrier cost limit(F_epsilon(nu)-V)/nu ->epsilon. The barrier tilt divided by V tends to zero. Explicit eventual cost and tilt bounds follow, preserving the order of every fixed parameter before the threshold. No desired saddle approximation or reciprocal bound is assumed.
+
+FineOrdinaryReciprocalLower chooses the integer smooth cutoff Y=ceil(exp(V)), proving exp(V)<=Y<=2exp(V). Its logarithm is at least V, so logN/logY<=nu. The proved small tilt supplies the entire finite scale domain of checkpoint482's actual smooth-count lower barrier. Monotonicity of the clamped density then permits the cost at nu. Dividing the actual smooth count by the actual integer Y gives the ordinary largest-prime-factor reciprocal sum. The finite factor a/2 is absorbed at the diverging scale nu, and the exact cost limit gives N*exp(-2V-epsilon*nu)<=primeSum(N) for every epsilon>0 after one threshold.
+
+The theorem lowerInput supplies the previously explicit one-sided ordinary obligation. eipInput reconstructs the historical two-sided explicit-square-root interface using the already proved fine upper bound and actual-root scale gap. This proves exactly the logarithmic-precision interface needed here; no claim is made to have formalized the entire classical asymptotic series or paper. FineSaddleTheorems.companion_T19_15 and companion_T19_16 supply these internal proofs to the fully aligned earlier actual-pivot, dyadic and signed-forcing reductions. Historical conditional declarations remain preserved as history.
+
+The ordinary fine lower estimate is therefore discharged, rather than replaced by an odd-pivot or target-cost assumption. Every smooth-count base range, quotient remainder, prime-weight comparison, integer endpoint, actual saddle identity and finite prefactor is proved internally. The complete actual forcing profile and geometric reductions had already been supplied internally at checkpoint453. The positive cost remains a coordinate-by-coordinate forcing cost; no lower bound for dependence, total variation or signed scalar cancellation follows from it.
+
+Only these exact numbered uses are discharged. Full T19.17 still retains its stronger almost-all short-window census and1-o(1) coefficient, while its qualitative deterministic/randomized all-anchor obstructions are internal. Full quadratic-degree BCN, sharp growing-rank conclusions and optimal strong-triangle weights remain separate unresolved tasks.
+
+P1-MATH-0483 adds three modules, fourteen theorems and no definitions. Companion T19.15 and T19.16 move from conditional to proved. Coverage becomes149 proved,15 conditional and3 in_progress out of167, with164 completed:59/73 main and90/94 companion results are proved. The project records481 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16469 jobs); direct axiom audit passed for 15475 declarations using only propext, Classical.choice and Quot.sound; all 14921 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.12 GiB.

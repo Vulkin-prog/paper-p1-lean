@@ -5,7 +5,7 @@ Neither document is fully formalized.
 
 P1-MATH-0454 isolates the remaining sharp global connected-triple joint mass on triples with three strong nonaligned pairs. All other sectors have internal41/30 bounds, and the residual has a subpower host count. Its optimal weighted bound and full main14.1/14.6 remain conditional.
 
-Companion T19.15/T19.16 retain only the explicit unproved ordinary fine reciprocal lower estimate (P1-MATH-0479). Both full fine upper directions and all actual forcing/raw-profile reductions are internally proved. The canonical complete conclusions remain conditional until the ordinary lower estimate is proved.
+Companion T19.15/T19.16 are unconditional (P1-MATH-0483): complete fine full/dyadic reciprocal pivot equivalents and the exact prescribed signed forcing cost, including its logarithmic and power-obstruction clauses. The ordinary fine reciprocal lower estimate is internally proved by the actual smooth-count barrier and exact saddle identities. No EIP or geometric argument remains in these canonical conclusions.
 
 Companion T20.8 is unconditional (P1-MATH-0452), with the same small-component exceptional set and stronger exceptional mass power3/2. Exact six-vertex packing, simultaneous covers and every prescribed-plane conclusion are retained.
 
@@ -51,7 +51,7 @@ CompanionT14.1 is unconditional (P1-MATH-0431), with connected activity strength
 
 CompanionT1.8 is unconditional (P1-MATH-0430): exact dense-component to actual-rank transfer gives subpower nonaligned hosts and both printed kernel sumsN^(1+epsilon), including the full value kernel without block-parity rows.
 
-Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is147 proved,17 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
+Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is149 proved,15 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
 
 The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. The full arbitrary-source statement was subsequently discharged at P1-MATH-0429.
 
@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records480 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is149/167 unconditional and15 conditional (164/167 completed). The project records481 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15461 audited theorem/lemma declarations**. This
+- The project currently has **15475 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26919,3 +26919,22 @@ Canonical complete T19.15/T19.16 therefore remain conditional on the ordinary fi
 P1-MATH-0482 adds three modules, six theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records480 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16463 jobs); direct axiom audit passed for 15461 declarations using only propext, Classical.choice and Quot.sound; all 14907 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.14 GiB.
+
+
+## Complete internal fine reciprocal and prescribed signed forcing cost theorems
+
+Complete companion T19.15 and T19.16 now have closed canonical internal proofs. T19.15 retains both literal full and dyadic reciprocal odd-pivot equivalents at error o(nu_N), with the actual hard saddle. T19.16 retains the original prescribed signed forcing, exact excess, both fine cost directions, actual logarithmic error and the positive coordinate-cost power obstruction. The ordinary fine reciprocal lower estimate and the historical two-sided input interface are now proved internally; no EIP or geometric argument occurs in the new canonical declarations. Both full statements and proofs in companion_sections/limits_appendix.tex lines1138-1300 were rechecked.
+
+SmoothBarrierSaddleScale proves exact identities log(nu)=u-logu and V/nu=u-normalizedEi(u) from the actual root. It then proves loglog(nu)-logu ->0 and the fine barrier cost limit(F_epsilon(nu)-V)/nu ->epsilon. The barrier tilt divided by V tends to zero. Explicit eventual cost and tilt bounds follow, preserving the order of every fixed parameter before the threshold. No desired saddle approximation or reciprocal bound is assumed.
+
+FineOrdinaryReciprocalLower chooses the integer smooth cutoff Y=ceil(exp(V)), proving exp(V)<=Y<=2exp(V). Its logarithm is at least V, so logN/logY<=nu. The proved small tilt supplies the entire finite scale domain of checkpoint482's actual smooth-count lower barrier. Monotonicity of the clamped density then permits the cost at nu. Dividing the actual smooth count by the actual integer Y gives the ordinary largest-prime-factor reciprocal sum. The finite factor a/2 is absorbed at the diverging scale nu, and the exact cost limit gives N*exp(-2V-epsilon*nu)<=primeSum(N) for every epsilon>0 after one threshold.
+
+The theorem lowerInput supplies the previously explicit one-sided ordinary obligation. eipInput reconstructs the historical two-sided explicit-square-root interface using the already proved fine upper bound and actual-root scale gap. This proves exactly the logarithmic-precision interface needed here; no claim is made to have formalized the entire classical asymptotic series or paper. FineSaddleTheorems.companion_T19_15 and companion_T19_16 supply these internal proofs to the fully aligned earlier actual-pivot, dyadic and signed-forcing reductions. Historical conditional declarations remain preserved as history.
+
+The ordinary fine lower estimate is therefore discharged, rather than replaced by an odd-pivot or target-cost assumption. Every smooth-count base range, quotient remainder, prime-weight comparison, integer endpoint, actual saddle identity and finite prefactor is proved internally. The complete actual forcing profile and geometric reductions had already been supplied internally at checkpoint453. The positive cost remains a coordinate-by-coordinate forcing cost; no lower bound for dependence, total variation or signed scalar cancellation follows from it.
+
+Only these exact numbered uses are discharged. Full T19.17 still retains its stronger almost-all short-window census and1-o(1) coefficient, while its qualitative deterministic/randomized all-anchor obstructions are internal. Full quadratic-degree BCN, sharp growing-rank conclusions and optimal strong-triangle weights remain separate unresolved tasks.
+
+P1-MATH-0483 adds three modules, fourteen theorems and no definitions. Companion T19.15 and T19.16 move from conditional to proved. Coverage becomes149 proved,15 conditional and3 in_progress out of167, with164 completed:59/73 main and90/94 companion results are proved. The project records481 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16469 jobs); direct axiom audit passed for 15475 declarations using only propext, Classical.choice and Quot.sound; all 14921 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.12 GiB.
