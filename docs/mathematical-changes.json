@@ -26789,6 +26789,49 @@
         "status": "not_integrated"
       },
       "validation_commit": "b28eec4379e6e81bd7ac80ecbf2b981f8bc0c4cc"
+    },
+    {
+      "id": "P1-MATH-0556",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The actual all-dimensional bound was proved over algebraically closed fields, but extending scalars from an original integral curve could destroy the domain hypothesis previously used for homogeneous-section dimensions.",
+      "finding": "Regular multiplication suffices for the exact e*d graded-section budget; actual field scalar extension preserves the original Hilbert polynomial and this regularity, while actual generator nilpotence and zero-fibre finiteness descend faithfully without a geometric-integrality assumption.",
+      "proposed_revision": "Use regular homogeneous multiplication on the genuine extended algebra, then descend the actual zero-fibre generator nilpotence to construct finite normalization over the original coefficient field.",
+      "impact": "Removes the false need to infer geometric integrality from original integrality in the scalar-extension stage and supplies the exact dimension and finite-fibre descent mechanisms.",
+      "evidence": [
+        "PaperP1.RegularGradedHilbertSection.mulMap_injective",
+        "PaperP1.RegularGradedHilbertSection.finrank_add",
+        "PaperP1.RegularGradedHilbertSection.eventual_dimension",
+        "PaperP1.ScalarExtendedFiniteFiber.power_zero_iff",
+        "PaperP1.ScalarExtendedFiniteFiber.finite_of_generator_powers",
+        "PaperP1.ScalarExtendedFiniteFiber.finite_of_scalar_generator_powers",
+        "PaperP1.ScalarExtendedGradedCoordinates.mem_piece",
+        "PaperP1.ScalarExtendedGradedCoordinates.generates",
+        "PaperP1.ScalarExtendedGradedCoordinates.linear_form",
+        "PaperP1.ScalarExtendedGradedHilbert.piece_finrank",
+        "PaperP1.ScalarExtendedGradedHilbert.piece_finite",
+        "PaperP1.ScalarExtendedGradedHilbert.hilbertPolynomial",
+        "PaperP1.ScalarExtendedGradedHilbert.lTensor_mulRight",
+        "PaperP1.ScalarExtendedGradedHilbert.regular_multiplication",
+        "PaperP1.ScalarExtendedGradedHilbert.nonzero_domain_section_regular",
+        "PaperP1.ScalarExtendedGradedHilbert.section_dimension",
+        "PaperP1.ScalarExtendedGradedCoordinates.coordinates"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17019 jobs); direct axiom audit passed for 16246 declarations using only propext, Classical.choice and Quot.sound; all 15856 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.44 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

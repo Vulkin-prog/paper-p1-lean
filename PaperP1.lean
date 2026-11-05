@@ -4182,3 +4182,7 @@ public import PaperP1.Arithmetic.FiniteNormalizationIntegerCount
 public import PaperP1.Arithmetic.AlgebraicallyClosedUniformCurveCount
 public import PaperP1.Arithmetic.CurveProjectionHeightBudget
 public import PaperP1.Arithmetic.IntegerPopulationBoxBudget
+public import PaperP1.Algebra.RegularGradedHilbertSection
+public import PaperP1.Algebra.ScalarExtendedFiniteFiber
+public import PaperP1.Algebra.ScalarExtendedGradedCoordinates
+public import PaperP1.Algebra.ScalarExtendedGradedHilbert
