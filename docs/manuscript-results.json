@@ -6515,7 +6515,8 @@
           ],
           "checkpoint": "P1-MATH-0484"
         }
-      ]
+      ],
+      "validation_commit": "9a5cac8a122e426a65318c843e5fc8db914daa3f"
     },
     {
       "label": "p13:rig:nonaligned",
