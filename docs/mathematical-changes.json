@@ -24118,6 +24118,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "03c1d7b70ec949a6fd8b0ae5d2b618832eae975d"
+    },
+    {
+      "id": "P1-MATH-0489",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:thm:main",
+        "number": "1.1",
+        "page": 3,
+        "source": "main_sections/introduction.tex",
+        "line": 77,
+        "statement_sha256": "4ccdedb6f9f89c0e2caaea4a94e66bb60c61ceb7efce3472de8120316a0d4e5a"
+      },
+      "original_assumption": "The main optimal quadratic theorem and numerical reconstruction clause retained explicit sharp-third-activity and geometric premises after their analytic assembly and lower obstruction had been proved.",
+      "finding": "The complete internal41/30 activity bound closes the exact4/3 upper estimate. Combining it with the internal lower obstruction, mean bias and probability criterion proves full main1.1,15.14 and16.2.",
+      "proposed_revision": "Use the actual height-controlled rank and internal sharp third activity in the final reconstruction, retain exact actual parameters, and distinguish the lower-order nominal-mean precision.",
+      "impact": "Closes the complete original-model main theorem with matching optimal power, its full reconstruction theorem and exact-reference lower/upper bounds.",
+      "evidence": [
+        "PaperP1.FourThirdsQuadraticUpper.uniform_exact",
+        "PaperP1.OptimalQuadratic.article_1_1",
+        "PaperP1.OptimalQuadratic.article_16_2",
+        "PaperP1.OptimalTripleReconstruction.article_15_14",
+        "PaperP1.OptimalQuadratic.reference",
+        "PaperP1.OptimalQuadratic.error"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16517 jobs); direct axiom audit passed for 15531 declarations using only propext, Classical.choice and Quot.sound; all 14983 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.95 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

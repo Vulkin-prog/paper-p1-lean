@@ -3970,3 +3970,6 @@ public import PaperP1.Asymptotics.TripleRankTheorem
 public import PaperP1.Asymptotics.HardNonalignedTripleMass
 public import PaperP1.Asymptotics.OptimalThirdCumulant
 public import PaperP1.Asymptotics.SharpThirdActivity
+public import PaperP1.Asymptotics.FourThirdsQuadraticUpper
+public import PaperP1.Asymptotics.OptimalQuadratic
+public import PaperP1.Asymptotics.OptimalTripleReconstruction

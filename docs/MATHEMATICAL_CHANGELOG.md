@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**486 mathematical improvements and two statement-scope corrections are confirmed.**
+**487 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26170,3 +26170,18 @@ The proof route retains the actual rank and probability consequences of13.6/13.8
 P1-MATH-0488 adds three modules, nine theorems and one lower-constant definition. Exactly two numbered results, main14.1 and14.6, are promoted from conditional to proved. Coverage becomes153 proved,11 conditional and3 in_progress out of167, with164 completed:63 main results and90 companion results are proved. The project records486 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16511 jobs); direct axiom audit passed for 15527 declarations using only propext, Classical.choice and Quot.sound; all 14977 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.98 GiB.
+
+
+## Complete optimal quadratic approximation with exact original parameters
+
+Complete main Theorem1.1 is now internally proved for the original count and exact actual mean/second factorial cumulant. For every fixed critical band and everyepsilon>0, a positive constant and one threshold precede allN,L, with a*N^(-4/3-epsilon)<=||Law(Z_N)-Q_mu,alpha||_1<=N^(-4/3+epsilon). The same threshold gives the printed actual-to-nominal mean bias and eventual probability status ofQ_mu,alpha. No external BCN, geometric cover/count, activity or law-error property occurs as an argument.
+
+FourThirdsQuadraticUpper supplies the full actual-subground upper bound by combining the internally proved symbolic reconstruction with the complete41/30 absolute third activity. Smaller fixed margins are chosen beforeN; the two reconstruction terms and all fixed factors are absorbed explicitly at the requested4/3 power. Every original marginal and actual cumulant is retained. OptimalQuadratic assembles this upper bound with the internally proved fourth-Charlier lower obstruction, mean-bias estimate and exact probability criterion. Its reference and error definitions use the full original law. The same theorem gives both bounds for main16.2, strengthening that source statement's explicitly printed lower inequality.
+
+OptimalTripleReconstruction closes both clauses of main15.14 on one threshold: the original symbolicN^epsilon*A3+N^(-4/3+epsilon) estimate and its numericalN^(-4/3+epsilon) consequence for the same exact reference. Its symbolic implication had already been proved; the new internal sharp third-activity input closes the remaining numerical clause. No fixed-order or growing-order reconstruction premise is silently replaced by a target bound.
+
+Sources rechecked: main1.1 at main_sections/introduction.tex lines77-95; main15.14 and its proof at main_sections/exact_transfer.tex lines982-1024; main16.2 at main_sections/quartic_lower.tex lines121-133; and the complete main-theorem assembly at main_sections/optimal_closure.tex lines1-34. The new canonical declarations match the full original-model statements. Polynomial-weight, nominal-mean, Poisson-scale and exact Hermite consequences remain separate pending their internal assembly. Generic main13.5, full quadratic-degree/all-dimensional BCN, general geometric cover/count properties and companionT19.17's almost-all census are not discharged.
+
+P1-MATH-0489 adds three modules, four theorems and two actual-reference/error definitions. Exactly three numbered results, main1.1,15.14 and16.2, are promoted from conditional to proved. Coverage becomes156 proved,8 conditional and3 in_progress out of167, with164 completed:66 main results and90 companion results are proved. The project records487 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16517 jobs); direct axiom audit passed for 15531 declarations using only propext, Classical.choice and Quot.sound; all 14983 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.95 GiB.

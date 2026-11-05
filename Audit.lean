@@ -8274,6 +8274,7 @@ import PaperP1
 #print axioms PaperP1.ForcingExceptionLedger.uniform_exception_counts
 #print axioms PaperP1.ForcingExceptionLedger.uniform_surviving_lower
 #print axioms PaperP1.FourChartFactorCover.uniform_factor_covers
+#print axioms PaperP1.FourThirdsQuadraticUpper.uniform_exact
 #print axioms PaperP1.FourThirdsQuadraticUpperUnderInputs.uniform_exact
 #print axioms PaperP1.FourThirdsThirdActivityUnderInputs.uniform_joint_mass
 #print axioms PaperP1.FourThirdsThirdActivityUnderInputs.uniform_absolute_activity
@@ -8999,12 +9000,15 @@ import PaperP1
 #print axioms PaperP1.OptimalNominalQuadraticUnderInputs.lowerConstant_pos
 #print axioms PaperP1.OptimalNominalQuadraticUnderInputs.uniform_comparison
 #print axioms PaperP1.OptimalNominalQuadraticUnderInputs.article_17_3
+#print axioms PaperP1.OptimalQuadratic.article_1_1
+#print axioms PaperP1.OptimalQuadratic.article_16_2
 #print axioms PaperP1.OptimalQuadraticUnderInputs.article_1_1
 #print axioms PaperP1.OptimalQuadraticUnderInputs.article_16_2
 #print axioms PaperP1.OptimalThirdCumulant.lowerConstant_pos
 #print axioms PaperP1.OptimalThirdCumulant.article_14_1
 #print axioms PaperP1.OptimalThirdCumulantUnderInputs.lowerConstant_pos
 #print axioms PaperP1.OptimalThirdCumulantUnderInputs.article_14_1
+#print axioms PaperP1.OptimalTripleReconstruction.article_15_14
 #print axioms PaperP1.OptimalTripleReconstructionUnderInputs.article_15_14
 #print axioms PaperP1.OptimalZeroProbabilityUnderInputs.article_17_2
 #print axioms PaperP1.OrderDependentBranching.exception_nonneg
