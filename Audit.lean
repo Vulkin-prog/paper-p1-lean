@@ -1523,6 +1523,9 @@ import PaperP1
 #print axioms PaperP1.MomentReconstruction.finite_uncentered_expansion
 #print axioms PaperP1.MonicPolynomialQuotientFinite.of_monic_mem
 #print axioms PaperP1.MonicPolynomialQuotientFinite.of_unit_leadingCoeff_mem
+#print axioms PaperP1.MvPlaneBezout.common_points_card
+#print axioms PaperP1.MvPlaneBezout.dvd_of_infinite_common_zeros
+#print axioms PaperP1.MvPlaneBezout.exists_nonzero_on_curve
 #print axioms PaperP1.MvPolynomialHilbert.piece_finite
 #print axioms PaperP1.MvPolynomialHilbert.piece_finrank
 #print axioms PaperP1.MvPolynomialHilbert.ternary_piece_finrank
@@ -2565,6 +2568,11 @@ import PaperP1
 #print axioms PaperP1.CurveDegreeProfile.large_endpoint
 #print axioms PaperP1.CurveDegreeProfile.degree_uniform_bound
 #print axioms PaperP1.CurveDegreeProfile.degree_uniform_bound_without_cap_growth
+#print axioms PaperP1.CurvePolynomialWronskianNonvanishing.combination_evaluation
+#print axioms PaperP1.CurvePolynomialWronskianNonvanishing.combination_degree
+#print axioms PaperP1.CurvePolynomialWronskianNonvanishing.restrictions_independent
+#print axioms PaperP1.CurvePolynomialWronskianNonvanishing.wronskian_not_dvd
+#print axioms PaperP1.CurvePolynomialWronskianNonvanishing.exceptional_card
 #print axioms PaperP1.DeterminantBoxScales.coordinate_bounds
 #print axioms PaperP1.DeterminantBoxScales.log_DE_upper
 #print axioms PaperP1.DeterminantBoxScales.uniform_base_logs
@@ -2839,6 +2847,12 @@ import PaperP1
 #print axioms PaperP1.MovingLogarithmicPivotMass.interval_cover
 #print axioms PaperP1.MovingLogarithmicPivotMass.exponential_cover
 #print axioms PaperP1.MovingLogarithmicPivotMass.finite_mass
+#print axioms PaperP1.NonstationaryTangentImage.continuousOn_position
+#print axioms PaperP1.NonstationaryTangentImage.image_nontrivial
+#print axioms PaperP1.NonstationaryTangentImage.image_infinite
+#print axioms PaperP1.NonstationaryTangentImage.image_infinite_subinterval
+#print axioms PaperP1.NonstationaryTangentImage.equation_constant
+#print axioms PaperP1.NonstationaryTangentImage.equation_zero
 #print axioms PaperP1.OrdinaryReciprocalPrimeInput.tendsto_left_endpoint
 #print axioms PaperP1.OrdinaryReciprocalPrimeInput.uniform_square_part_upper
 #print axioms PaperP1.OrdinaryReciprocalPrimeLowerInput.uniform_gap

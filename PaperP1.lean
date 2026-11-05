@@ -4008,3 +4008,6 @@ public import PaperP1.Analysis.PolynomialTangentTrajectory
 public import PaperP1.Analysis.TangentCurvePieceZeros
 public import PaperP1.Analysis.LocalLinearIndependence
 public import PaperP1.Analysis.LocalWronskianNonvanishing
+public import PaperP1.Algebra.MvPlaneBezout
+public import PaperP1.Analysis.CurvePolynomialWronskianNonvanishing
+public import PaperP1.Analysis.NonstationaryTangentImage

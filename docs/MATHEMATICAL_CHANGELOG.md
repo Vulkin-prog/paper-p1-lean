@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**500 mathematical improvements and two statement-scope corrections are confirmed.**
+**501 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26390,3 +26390,20 @@ The primary BCN author version arXiv2302.04209v2 Section3 Lemma6 was rechecked f
 P1-MATH-0502 adds two modules, five theorems and one definition. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records500 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16587 jobs); direct axiom audit passed for 15646 declarations using only propext, Classical.choice and Quot.sound; all 15134 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.67 GiB.
+
+
+## Actual curve polynomial independence and finite Wronskian exceptions
+
+The actual polynomial-restriction independence and tangent Wronskian nondivisibility argument is now internally connected to finite Bezout. NonstationaryTangentImage proves the actual trajectory position map is continuous. A nonzero coordinate velocity at one interval point prevents its image from being a singleton: a singleton image would make each coordinate constant, contradicting its actual derivative. The connected image therefore has infinitely many distinct points. A trajectory nonstationary everywhere has this property on every nonempty subinterval. The defining polynomial is also proved constant along the actual trajectory, and an actual zero at one parameter propagates throughout its interval.
+
+MvPlaneBezout transports the existing finite Bezout theorem into actualFin2 multivariate coordinates over every infinite field. The real point coordinate map, its injection, exact evaluation and exact total degrees are all proved. An infinite actual common-zero population forces polynomial divisibility. Thus a nonzero polynomial of strictly smaller degree cannot vanish on an infinite population of an irreducible curve. No analytic identity principle or geometric count interface replaces that finite argument.
+
+CurvePolynomialWronskianNonvanishing applies these facts to an actual finite polynomial family of degree at mostk<degP. Its polynomial coefficient map is required to be injective in the explicit form that every nonzero vector gives a nonzero polynomial combination; concrete monomial families are a subsequent instantiation. Every nonempty subinterval has infinitely many actual curve points, so finite Bezout supplies a point where any such combination is nonzero. This proves the precise local linear independence of the real restrictions rather than assuming it. Actual trajectory smoothness and the local Wronskian theorem then supply a nonzero value of the genuine polynomial tangent Wronskian on the curve. Consequently the defining irreducible polynomial does not divide that Wronskian.
+
+For every finite actual population satisfying both equations, the complete resulting exceptional bound is proved:S.card<=D*(n*k+(n*(n-1)/2)*D), whereD=degP andn is the actual family size. It retains the triangular derivative budget, all original real points and ordinary irreducibility. Only one given genuine nonstationary trajectory interval is needed to establish this global polynomial nondivisibility. No trajectory-existence theorem or global coverage is asserted without proof.
+
+The primary BCN author version arXiv2302.04209v2 Section3 Lemma6 was rechecked. Concrete ordered monomial-prefix families, controlled unions of their exceptional zeros, global trajectory existence/coverage, the number of pieces, bounded smooth parametrizations and the final sharp point count remain subsequent obligations. The current generic point estimate is still the internally proved cubic bound with fulla<1/3 growing range. CompleteBCN/main13.4 and original13.5 are not promoted.
+
+P1-MATH-0503 adds three modules, fourteen theorems and two definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records501 improvements and two statement-scope corrections. One already present pinned Mathlib connectedness module is compiled from source; no dependency download, compiler change, new axiom, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16595 jobs); direct axiom audit passed for 15660 declarations using only propext, Classical.choice and Quot.sound; all 15150 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.65 GiB.
