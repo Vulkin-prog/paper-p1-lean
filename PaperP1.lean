@@ -3586,3 +3586,5 @@ public import PaperP1.Asymptotics.BoundedPlaneCurveCount
 public import PaperP1.Asymptotics.HeightControlledAffineCount
 public import PaperP1.Asymptotics.PolynomialConfinement
 public import PaperP1.Analysis.AffineDeterminantUniformScale
+public import PaperP1.Arithmetic.PolynomialPrimeCover
+public import PaperP1.Diophantine.PolynomialPrimeAffineCount

@@ -5048,6 +5048,12 @@ import PaperP1
 #print axioms PaperP1.PolynomialEndpointBudget.source_size_bound
 #print axioms PaperP1.PolynomialEndpointBudget.exceptional_polynomial
 #print axioms PaperP1.PolynomialOffsetPopulation.finite_bound
+#print axioms PaperP1.PolynomialPrimeCover.mem_interval
+#print axioms PaperP1.PolynomialPrimeCover.card_small_primes
+#print axioms PaperP1.PolynomialPrimeCover.counting_bounds
+#print axioms PaperP1.PolynomialPrimeCover.interval_count_lower
+#print axioms PaperP1.PolynomialPrimeCover.interval_sqrt_count
+#print axioms PaperP1.PolynomialPrimeCover.uniform_pool
 #print axioms PaperP1.PolynomialPrimeFactorPowers.two_pow_le_divisors
 #print axioms PaperP1.PolynomialPrimeFactorPowers.uniform_four_pow
 #print axioms PaperP1.PositiveLineOffsetRoots.integerOffset_injective
@@ -10482,6 +10488,7 @@ import PaperP1
 #print axioms PaperP1.PolynomialPellCount.four_mul_pellUnitOrbitEnvelope_le_rpow_eventually
 #print axioms PaperP1.PolynomialPellCount.generalizedPellBox_atMost_rpow_eventually
 #print axioms PaperP1.PolynomialPellCount.pellBox_atMost_rpow_eventually
+#print axioms PaperP1.PolynomialPrimeAffineCount.uniform_bound
 #print axioms PaperP1.PositiveDiscriminantConicCount.constant_mul_power
 #print axioms PaperP1.PositiveDiscriminantConicCount.polynomial_budget
 #print axioms PaperP1.PositiveDiscriminantConicCount.count

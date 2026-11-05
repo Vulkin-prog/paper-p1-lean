@@ -20771,6 +20771,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "ac4c5853143381e43f1e64e6b170733a2ac6ab15"
+    },
+    {
+      "id": "P1-MATH-0404",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The actual prime cover used an endpoint2^m*P and a total-prime boundm*2^m*P, introducing an exponential cost when the required avoidance count grows.",
+      "finding": "Above one absolute threshold, m^2<=P supplies exactlym actual primes between P and16P, total sum<=16*m*P, and full avoidance of every nonzero integer of absolute value<P^m. The complete signed affine count now uses this polynomial-size pool.",
+      "proposed_revision": "Use the PNT-backed polynomial prime pool in quantitative growing-degree estimates. Retain m^2<=P, the absolute scale threshold and the actual obstruction-height comparison explicitly.",
+      "impact": "Removes the exponential-in-m prime-cover cost from the full affine population argument. Final global degree-uniform BCN and original numbered coverage remain open.",
+      "evidence": [
+        "PaperP1.PolynomialPrimeCover.mem_interval",
+        "PaperP1.PolynomialPrimeCover.card_small_primes",
+        "PaperP1.PolynomialPrimeCover.counting_bounds",
+        "PaperP1.PolynomialPrimeCover.interval_count_lower",
+        "PaperP1.PolynomialPrimeCover.interval_sqrt_count",
+        "PaperP1.PolynomialPrimeCover.uniform_pool",
+        "PaperP1.PolynomialPrimeAffineCount.uniform_bound",
+        "PaperP1.PolynomialPrimeCover.interval"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15747 jobs); direct axiom audit passed for 14594 declarations using only propext, Classical.choice and Quot.sound; all 13933 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.18 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

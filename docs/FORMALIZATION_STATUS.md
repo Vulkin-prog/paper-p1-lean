@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is93/167 unconditional and71 conditional (164/167 completed). The project records401 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is93/167 unconditional and71 conditional (164/167 completed). The project records402 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14587 audited theorem/lemma declarations**. This
+- The project currently has **14594 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25510,3 +25510,18 @@ This is a degree-uniform local comparison, not a global BCN bound. The number an
 P1-MATH-0403 adds six theorems. Coverage stays93 proved and71 conditional out of167, with164 completed and three in_progress. The ledger records401 improvements and two statement-scope corrections. No new axiom, external counting premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15743 jobs); direct axiom audit passed for 14587 declarations using only propext, Classical.choice and Quot.sound; all 13925 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.20 GiB.
+
+
+## Polynomial-size prime covers for complete affine point populations
+
+PolynomialPrimeCover proves an actual finite prime cover with an absolute threshold chosen before both the scale P and the number m of requested primes. For P above that threshold and m^2<=P, it constructs exactly m distinct primes in (P,16P], with total sum at most16*m*P. Every nonzero integer of absolute value less than P^m is avoided by at least one actual selected prime. No prime-supply or avoidance property is a premise.
+
+The proof uses the already internally proved PNT for the ordinary inclusive prime-count function. Uniform two-sided prime-count bounds imply that (P,16P] contains at least2P/log P primes for all sufficiently large P. The elementary logarithm/square-root inequality then gives at least sqrt(P) primes. An actual m-element subset is selected. Its prime product is at least P^m, and the proved distinct-prime divisibility argument supplies avoidance. All cardinalities concern actual finite prime sets.
+
+PolynomialPrimeAffineCount.uniform_bound substitutes this proved pool into the complete actual signed affine counting argument. The absolute pool threshold precedes every equation, bidegree, auxiliary rectangle, point height and finite population. Under m^2<=P and the two explicit determinant and obstruction comparisons, the full population is bounded by the existing degree-only exceptional term plus (degreeX G+degreeY G)^2*(A+J)*(16*m*P). The earlier2^m multiplier is absent. Every critical point, sign and axis point remains included.
+
+Together with checkpoint403's absolute local determinant scale, this removes two unnecessary exponential parameter costs. The final coefficient normalization, degree factors and global growing-degree estimate remain quantitative obligations. No D^2 logarithmic BCN theorem, original growing-degree corollary or sharp half-window rank consequence is asserted here.
+
+P1-MATH-0404 adds two modules, seven theorems and one definition. Coverage stays93 proved and71 conditional out of167, with164 completed and three in_progress. The ledger records402 improvements and two statement-scope corrections. No new axiom, unproved analytic premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15747 jobs); direct axiom audit passed for 14594 declarations using only propext, Classical.choice and Quot.sound; all 13933 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.18 GiB.
