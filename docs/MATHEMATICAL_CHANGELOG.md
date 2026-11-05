@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**458 mathematical improvements and two statement-scope corrections are confirmed.**
+**459 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -25678,3 +25678,20 @@ This improves the existing arbitrary-power lower obstruction to an explicit hard
 P1-MATH-0460 adds three modules, five theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records458 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16349 jobs); direct axiom audit passed for 15246 declarations using only propext, Classical.choice and Quot.sound; all 14671 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.61 GiB.
+
+
+## Explicit square-root-log upper bounds for reciprocal pivots and original signed cost
+
+An explicit unconditional upper envelope is now proved for both reciprocal pivot sums and the original specified signed forcing cost. The literal full sum satisfiespivotSum(3N)+1<=N*exp(-sqrt(logN)/5). The original signed cost satisfiesexp(-12V_N)<=specifiedCostN L<=exp(-sqrt(logN)/6) uniformly on each critical band. These statements strengthen the previously internal arbitrary inverse-logarithmic bounds, but do not prove the sharp coefficient2 or theo(nu_N) correction inT19.15/T19.16. Their source statements, exact forcing and complete proofs in companion_sections/limits_appendix.tex lines1138-1299 were rechecked.
+
+SquareRootReciprocalUpper.small_pivot_bound applies the exact Rankin inequality with the moving exponent sigma=1-2/sqrt(logN), and cutoffY at mostexp(sqrt(logN)/4). The Euler factor is controlled explicitly: Y^(1-sigma)<=exp(1/2)<2, and the prime-square factor is1/(1-sigma)=sqrt(logN)/2. The actual small-pivot population up to3N is at most(3sqrt(logN)/2)*N*exp(-sqrt(logN)). No fixed-exponent asymptotic is incorrectly reused for a growing parameter; this is a finite uniform application of the proved Rankin theorem.
+
+The elementary inequality for the linear exponential prefactor, the actual cutoff floor and reciprocal tail are all checked. finite_upper retains the small-pivot population and the reciprocal contribution of every other integer, including the added constant1. For sqrt(logN)>=160 it proves the exact exponent1/5 bound. uniform_upper derives the threshold from the actual logarithmic square-root limit. No ordinary reciprocal-prime estimate, smooth-number census or new prime-distribution input is supplied.
+
+SquareRootSignedCostUpper.uniform_upper_from_profile transports this bound through the complete finite signed cost ledger. The critical nominal factor, logarithmic maximal width and the raw full-value remainder are kept explicit. Fixed logarithmic prefactors are absorbed internally at the square-root-log scale; every smaller fixed power is negligible against the existing hard-saddle envelope. The actual raw relation profile is then supplied by EnlargedRawValueProfile at the prescribed moving excess, giving the closed uniform_upper theorem for the original specifiedCost.
+
+uniform_sandwich combines the new upper bound with checkpoint460's explicit lower bound under one threshold preceding every criticalL. uniform_log_sandwich gives the exact logarithmic inequalities-12V_N<=log specifiedCostN L<=-sqrt(logN)/6. The original retained population, heterogeneous signed mark rates and positive coordinate cost are unchanged. These are bounds on the cost of the specified forcing, not lower bounds for dependence or total variation.
+
+The gap between the hard-saddle lower envelope and the square-root-log upper envelope is retained explicitly. Ordinary EIP and the complete fineT19.15/T19.16 equivalents remain unproved; neither numbered result is promoted. P1-MATH-0461 adds two modules, nine theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records459 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16353 jobs); direct axiom audit passed for 15255 declarations using only propext, Classical.choice and Quot.sound; all 14680 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.59 GiB.

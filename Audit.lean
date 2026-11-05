@@ -3023,6 +3023,11 @@ import PaperP1
 #print axioms PaperP1.DefectCounting.smallPrimesUpTo_subset_Icc
 #print axioms PaperP1.prod_smallPrimesUpTo_one_add_inv_sqrt_le
 #print axioms PaperP1.prod_smallPrimesUpTo_one_add_rpow_neg_one_half_le
+#print axioms PaperP1.SquareRootReciprocalUpper.exp_half_le_two
+#print axioms PaperP1.SquareRootReciprocalUpper.linear_prefactor
+#print axioms PaperP1.SquareRootReciprocalUpper.small_pivot_bound
+#print axioms PaperP1.SquareRootReciprocalUpper.finite_upper
+#print axioms PaperP1.SquareRootReciprocalUpper.uniform_upper
 #print axioms PaperP1.UniformSaddleVariation.uniform_left_variation
 #print axioms PaperP1.VerticalGridLattice.center_identity
 #print axioms PaperP1.VerticalGridLattice.point_box
@@ -9691,6 +9696,10 @@ import PaperP1
 #print axioms PaperP1.SplitTupleExposure.source_height
 #print axioms PaperP1.SplitTupleExposure.source_exposure
 #print axioms PaperP1.SquareCertificateCount.uniform_count
+#print axioms PaperP1.SquareRootSignedCostUpper.uniform_upper_from_profile
+#print axioms PaperP1.SquareRootSignedCostUpper.uniform_upper
+#print axioms PaperP1.SquareRootSignedCostUpper.uniform_sandwich
+#print axioms PaperP1.SquareRootSignedCostUpper.uniform_log_sandwich
 #print axioms PaperP1.SquareTupleCount.square_tuple_count
 #print axioms PaperP1.StrongAlignedDenseJointMass.uniform_joint
 #print axioms PaperP1.StrongAlignedDensePairCount.uniform_count

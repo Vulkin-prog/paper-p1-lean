@@ -3889,3 +3889,5 @@ public import PaperP1.Arithmetic.PrimeProductCensus
 public import PaperP1.Asymptotics.CoarseCleanPivotLower
 public import PaperP1.Asymptotics.CoarseSignedCostLower
 public import PaperP1.Asymptotics.CoarseSignedCostTheorem
+public import PaperP1.Analysis.SquareRootReciprocalUpper
+public import PaperP1.Asymptotics.SquareRootSignedCostUpper

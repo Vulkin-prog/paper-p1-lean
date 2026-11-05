@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records458 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records459 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15246 audited theorem/lemma declarations**. This
+- The project currently has **15255 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26537,3 +26537,20 @@ This improves the existing arbitrary-power lower obstruction to an explicit hard
 P1-MATH-0460 adds three modules, five theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records458 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16349 jobs); direct axiom audit passed for 15246 declarations using only propext, Classical.choice and Quot.sound; all 14671 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.61 GiB.
+
+
+## Explicit square-root-log upper bounds for reciprocal pivots and original signed cost
+
+An explicit unconditional upper envelope is now proved for both reciprocal pivot sums and the original specified signed forcing cost. The literal full sum satisfiespivotSum(3N)+1<=N*exp(-sqrt(logN)/5). The original signed cost satisfiesexp(-12V_N)<=specifiedCostN L<=exp(-sqrt(logN)/6) uniformly on each critical band. These statements strengthen the previously internal arbitrary inverse-logarithmic bounds, but do not prove the sharp coefficient2 or theo(nu_N) correction inT19.15/T19.16. Their source statements, exact forcing and complete proofs in companion_sections/limits_appendix.tex lines1138-1299 were rechecked.
+
+SquareRootReciprocalUpper.small_pivot_bound applies the exact Rankin inequality with the moving exponent sigma=1-2/sqrt(logN), and cutoffY at mostexp(sqrt(logN)/4). The Euler factor is controlled explicitly: Y^(1-sigma)<=exp(1/2)<2, and the prime-square factor is1/(1-sigma)=sqrt(logN)/2. The actual small-pivot population up to3N is at most(3sqrt(logN)/2)*N*exp(-sqrt(logN)). No fixed-exponent asymptotic is incorrectly reused for a growing parameter; this is a finite uniform application of the proved Rankin theorem.
+
+The elementary inequality for the linear exponential prefactor, the actual cutoff floor and reciprocal tail are all checked. finite_upper retains the small-pivot population and the reciprocal contribution of every other integer, including the added constant1. For sqrt(logN)>=160 it proves the exact exponent1/5 bound. uniform_upper derives the threshold from the actual logarithmic square-root limit. No ordinary reciprocal-prime estimate, smooth-number census or new prime-distribution input is supplied.
+
+SquareRootSignedCostUpper.uniform_upper_from_profile transports this bound through the complete finite signed cost ledger. The critical nominal factor, logarithmic maximal width and the raw full-value remainder are kept explicit. Fixed logarithmic prefactors are absorbed internally at the square-root-log scale; every smaller fixed power is negligible against the existing hard-saddle envelope. The actual raw relation profile is then supplied by EnlargedRawValueProfile at the prescribed moving excess, giving the closed uniform_upper theorem for the original specifiedCost.
+
+uniform_sandwich combines the new upper bound with checkpoint460's explicit lower bound under one threshold preceding every criticalL. uniform_log_sandwich gives the exact logarithmic inequalities-12V_N<=log specifiedCostN L<=-sqrt(logN)/6. The original retained population, heterogeneous signed mark rates and positive coordinate cost are unchanged. These are bounds on the cost of the specified forcing, not lower bounds for dependence or total variation.
+
+The gap between the hard-saddle lower envelope and the square-root-log upper envelope is retained explicitly. Ordinary EIP and the complete fineT19.15/T19.16 equivalents remain unproved; neither numbered result is promoted. P1-MATH-0461 adds two modules, nine theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records459 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16353 jobs); direct axiom audit passed for 15255 declarations using only propext, Classical.choice and Quot.sound; all 14680 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.59 GiB.

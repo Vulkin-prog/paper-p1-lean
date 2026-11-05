@@ -23056,6 +23056,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "b834a030410f59aa7a0af1192619b8b315668299"
+    },
+    {
+      "id": "P1-MATH-0461",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The internally proved upper bounds for reciprocal pivots and the original signed cost only specified decay faster than every fixed inverse logarithmic power. An explicit subexponential upper envelope still required the fine ordinary EIP input.",
+      "finding": "A genuinely moving Rankin exponent and cutoff givepivotSum(3N)+1<=N*exp(-sqrt(logN)/5). The internal finite Palm ledger and moving raw profile then provespecifiedCostN L<=exp(-sqrt(logN)/6), alongside the independent lower boundexp(-12V_N).",
+      "proposed_revision": "Record the explicit unconditional two-sided cost envelope and reciprocal upper bound with their checked constants and moving-parameter quantifiers. Keep the unresolved fine saddle coefficient2 and its small error scale separate.",
+      "impact": "Strengthens the unconditional upper decay from arbitrary inverse logarithmic powers to explicit exponential square-root-log bounds. FullT19.15/T19.16 equivalents remain conditional and numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.SquareRootReciprocalUpper.exp_half_le_two",
+        "PaperP1.SquareRootReciprocalUpper.linear_prefactor",
+        "PaperP1.SquareRootReciprocalUpper.small_pivot_bound",
+        "PaperP1.SquareRootReciprocalUpper.finite_upper",
+        "PaperP1.SquareRootReciprocalUpper.uniform_upper",
+        "PaperP1.SquareRootSignedCostUpper.uniform_upper_from_profile",
+        "PaperP1.SquareRootSignedCostUpper.uniform_upper",
+        "PaperP1.SquareRootSignedCostUpper.uniform_sandwich",
+        "PaperP1.SquareRootSignedCostUpper.uniform_log_sandwich"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16353 jobs); direct axiom audit passed for 15255 declarations using only propext, Classical.choice and Quot.sound; all 14680 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.59 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
