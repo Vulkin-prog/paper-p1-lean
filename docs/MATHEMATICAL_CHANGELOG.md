@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**524 mathematical improvements and two statement-scope corrections are confirmed.**
+**525 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26774,3 +26774,18 @@ These are the actual finite-population ingredients for a grid-height-dependent d
 P1-MATH-0526 adds three modules and nine theorems. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 524 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16781 jobs); direct axiom audit passed for 15911 declarations using only propext, Classical.choice and Quot.sound; all 15458 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.79 GiB.
+
+
+## Constructed dyadic endpoint bands and logarithmic parameter bucket covers
+
+DyadicGridMargins constructs genuine dyadic radii 2^j/N from an actual parameter distance between 1/N and 2. The selected exponent satisfies j<=Nat.log2(2*N), and the actual distance lies in [2^j/N,2^(j+1)/N). The proof uses the actual floor of N times the distance and the exact natural binary logarithm bounds. For any parameter with a full grid-step margin from both endpoints of an interval of length at most two, it constructs a side and such a dyadic radius delta, with 0<delta<=1, both endpoint margins at least delta, and the chosen side distance in [delta,2*delta). The exact side-distance absolute difference equals the actual parameter distance.
+
+NormalizedBandBuckets constructs the actual floor bucket in a chosen dyadic band. Its normalized coordinate lies in [0,1), including the lower boundary. The bucket index is below every specified positive M, and two actual parameters assigned to the same side/band/bucket differ by at most delta/M. All floor and band endpoint conventions are retained. No diameter or interval-cover property is assumed.
+
+DyadicParameterBucketCover defines the actual finite filtered populations for each side, dyadic radius and bucket. Every trimmed parameter belongs to a constructed member; every member inherits both endpoint margins and has actual diameter at most delta/M. The complete index type has cardinality exactly 2*(Nat.log2(2*N)+1)*M. This is a genuine finite cover of the supplied trimmed population, rather than a supplied cover premise or a count of abstract labels only.
+
+Together with P1-MATH-0526, these results internally give a logarithmic number of small parameter groups after a loss of at most two actual grid points on a supplied controlled graph piece. The corresponding affine unit-jet maps for the groups and their combined point-count estimate remain to be constructed. Whole-component graph coverage, controlled global curve/component piece counts, the final sharp plane estimate and higher-dimensional projection remain separate. Full main13.4/13.5 remain unresolved; the generic plane theorem stays cubic with full a<1/3 range.
+
+P1-MATH-0527 adds three modules, fourteen theorems and five definitions/abbreviations. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 525 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16787 jobs); direct axiom audit passed for 15925 declarations using only propext, Classical.choice and Quot.sound; all 15477 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.77 GiB.

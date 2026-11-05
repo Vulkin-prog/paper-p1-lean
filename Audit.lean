@@ -2753,6 +2753,15 @@ import PaperP1
 #print axioms PaperP1.DisjointRecoveryParameters.parameter_pow
 #print axioms PaperP1.DisjointRecoveryParameters.one_sub_inv_pow_le_half
 #print axioms PaperP1.DisjointRecoveryParameters.failure_factor_le_half
+#print axioms PaperP1.DyadicGridMargins.radius_pos
+#print axioms PaperP1.DyadicGridMargins.exists_scale
+#print axioms PaperP1.DyadicGridMargins.sideDistance_abs_sub
+#print axioms PaperP1.DyadicGridMargins.exists_side_band
+#print axioms PaperP1.DyadicParameterBucketCover.mem_cluster
+#print axioms PaperP1.DyadicParameterBucketCover.finite_cover
+#print axioms PaperP1.DyadicParameterBucketCover.cluster_margin
+#print axioms PaperP1.DyadicParameterBucketCover.cluster_distance
+#print axioms PaperP1.DyadicParameterBucketCover.index_card
 #print axioms PaperP1.DyadicReciprocalScaleBounds.tendsto_nu_div_height
 #print axioms PaperP1.DyadicReciprocalScaleBounds.clog_bound
 #print axioms PaperP1.DyadicReciprocalScaleBounds.logarithmic_prefactor
@@ -3012,6 +3021,11 @@ import PaperP1
 #print axioms PaperP1.NonstationaryTangentImage.image_infinite_subinterval
 #print axioms PaperP1.NonstationaryTangentImage.equation_constant
 #print axioms PaperP1.NonstationaryTangentImage.equation_zero
+#print axioms PaperP1.NormalizedBandBuckets.normalized_mem
+#print axioms PaperP1.NormalizedBandBuckets.index_lt
+#print axioms PaperP1.NormalizedBandBuckets.unit_bucket_distance
+#print axioms PaperP1.NormalizedBandBuckets.cluster_distance
+#print axioms PaperP1.NormalizedBandBuckets.side_cluster_distance
 #print axioms PaperP1.NormalizedGraphFiniteAvoidance.exists_first
 #print axioms PaperP1.NormalizedGraphFiniteAvoidance.exists_second
 #print axioms PaperP1.NormalizedGridSpacing.integer_gap

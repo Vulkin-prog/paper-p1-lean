@@ -25625,6 +25625,51 @@
         "status": "not_integrated"
       },
       "validation_commit": "21d8b101e340c408e92e1e7ee351083cec8f73e3"
+    },
+    {
+      "id": "P1-MATH-0527",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "Trimmed graph parameters had actual grid-step margins but no internally constructed dyadic band, bucket diameter or logarithmic finite cover.",
+      "finding": "Actual binary logarithms and floor buckets construct a cover of the trimmed parameter population by exactly 2*(log2(2*N)+1)*M available groups, each with the required endpoint margin and diameter.",
+      "proposed_revision": "Use the constructed dyadic groups to select actual short affine unit-jet maps and sum their already internal per-map grid counts.",
+      "impact": "Closes dyadic band selection, actual bucket diameters and a logarithmic finite parameter cover. The affine map realization and combined graph-piece point count remain separate.",
+      "evidence": [
+        "PaperP1.DyadicGridMargins.radius_pos",
+        "PaperP1.DyadicGridMargins.exists_scale",
+        "PaperP1.DyadicGridMargins.sideDistance_abs_sub",
+        "PaperP1.DyadicGridMargins.exists_side_band",
+        "PaperP1.DyadicParameterBucketCover.mem_cluster",
+        "PaperP1.DyadicParameterBucketCover.finite_cover",
+        "PaperP1.DyadicParameterBucketCover.cluster_margin",
+        "PaperP1.DyadicParameterBucketCover.cluster_distance",
+        "PaperP1.DyadicParameterBucketCover.index_card",
+        "PaperP1.NormalizedBandBuckets.normalized_mem",
+        "PaperP1.NormalizedBandBuckets.index_lt",
+        "PaperP1.NormalizedBandBuckets.unit_bucket_distance",
+        "PaperP1.NormalizedBandBuckets.cluster_distance",
+        "PaperP1.NormalizedBandBuckets.side_cluster_distance",
+        "PaperP1.DyadicGridMargins.radius",
+        "PaperP1.DyadicGridMargins.sideDistance",
+        "PaperP1.DyadicParameterBucketCover.Index",
+        "PaperP1.DyadicParameterBucketCover.cluster",
+        "PaperP1.NormalizedBandBuckets.index"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16787 jobs); direct axiom audit passed for 15925 declarations using only propext, Classical.choice and Quot.sound; all 15477 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.77 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -4082,3 +4082,6 @@ public import PaperP1.Analysis.SimplifiedUnitMapGridCount
 public import PaperP1.Analysis.ControlledGraphParameterPopulation
 public import PaperP1.Analysis.ControlledGraphTrimmedPopulation
 public import PaperP1.Analysis.NormalizedGridSpacing
+public import PaperP1.Analysis.DyadicGridMargins
+public import PaperP1.Analysis.DyadicParameterBucketCover
+public import PaperP1.Analysis.NormalizedBandBuckets
