@@ -26707,6 +26707,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "890f8398184b38bdb395dc719971bc212c5e83b3"
+    },
+    {
+      "id": "P1-MATH-0554",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The actual point-count reduction still required callers to supply compatible fraction fields and a primitive coordinate; no single source-only theorem selected all projection and scalar data internally.",
+      "finding": "The genuine normalization/source fraction fields, compatible scalar towers, finite separable extension and bounded primitive original coordinate are constructed internally; every actual integral curve over an algebraically closed characteristic-zero field now has the controlled projected-height point count from its original data alone.",
+      "proposed_revision": "Use the source-only projected-height theorem, then explicitly absorb the degree-dependent height cost and prove scalar descent for integral curves over the original coefficient field.",
+      "impact": "Closes actual bounded projection selection and all canonical fraction-field compatibility inputs over algebraically closed fields, without treating the remaining scalar descent or final ambient-dimension-only bound as proved.",
+      "evidence": [
+        "PaperP1.AlgebraicallyClosedCurveGridCount.population_bound",
+        "PaperP1.FiniteNormalizationIntegerCount.exists_primitive_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16999 jobs); direct axiom audit passed for 16210 declarations using only propext, Classical.choice and Quot.sound; all 15813 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.49 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

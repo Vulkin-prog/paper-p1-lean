@@ -4177,3 +4177,5 @@ public import PaperP1.Arithmetic.NormalizedCurveProjectionCount
 public import PaperP1.Arithmetic.QuadraticAllDegreePlaneCount
 public import PaperP1.Geometry.IntegerCurveProjectionCoordinates
 public import PaperP1.Geometry.IntegerCurveProjectionCount
+public import PaperP1.Arithmetic.AlgebraicallyClosedCurveGridCount
+public import PaperP1.Arithmetic.FiniteNormalizationIntegerCount

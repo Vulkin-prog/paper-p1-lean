@@ -3784,6 +3784,7 @@ import PaperP1
 #print axioms PaperP1.AffineResidueClasses.affine_iff_modEq
 #print axioms PaperP1.AffineResidueClasses.solutions_eq_residue
 #print axioms PaperP1.AffineResidueClasses.abs_error
+#print axioms PaperP1.AlgebraicallyClosedCurveGridCount.population_bound
 #print axioms PaperP1.AlignedTargetCanonicalRank.allValues_eq_union
 #print axioms PaperP1.AlignedTargetCanonicalRank.allValues_eq_family
 #print axioms PaperP1.AlignedTargetCanonicalRank.product_union_dilate
@@ -4899,6 +4900,7 @@ import PaperP1
 #print axioms PaperP1.FiniteEvenSquareClasses.coefficient_zero
 #print axioms PaperP1.FiniteEvenSquareClasses.combination_injective
 #print axioms PaperP1.FiniteEvenSquareClasses.finrank_space
+#print axioms PaperP1.FiniteNormalizationIntegerCount.exists_primitive_count
 #print axioms PaperP1.FiniteResidualRank.kernel_le_rows
 #print axioms PaperP1.FiniteResidualRank.kernel_le_graph
 #print axioms PaperP1.FiniteResidualRank.rank_le_free_components
