@@ -33843,7 +33843,8 @@
           "scope": "Full exact companionT17.3 conclusions: literal finite boundary inequality/allK<=L/4 or exact coefficient-scaleN^(-2)+a_N/N conversion, as applicable. Internal actual partition, activity, phase and analytic proofs; no general property asserted.",
           "checkpoint": "P1-MATH-0439"
         }
-      ]
+      ],
+      "validation_commit": "6460b072bad0239edecffe610aae363e1c0044f8"
     },
     {
       "label": "p1:close:conversion",
@@ -34014,7 +34015,8 @@
           "scope": "Full exact companionT17.4 conclusions: literal finite boundary inequality/allK<=L/4 or exact coefficient-scaleN^(-2)+a_N/N conversion, as applicable. Internal actual partition, activity, phase and analytic proofs; no general property asserted.",
           "checkpoint": "P1-MATH-0439"
         }
-      ]
+      ],
+      "validation_commit": "6460b072bad0239edecffe610aae363e1c0044f8"
     },
     {
       "label": "p13:base-approximation",
