@@ -4089,3 +4089,6 @@ public import PaperP1.Analysis.ActualDyadicBucketMaps
 public import PaperP1.Analysis.AffineBucketWindow
 public import PaperP1.Analysis.ControlledGraphGridPointCount
 public import PaperP1.Analysis.DyadicBucketGridCount
+public import PaperP1.Analysis.NormalizedGraphOverlapUniqueness
+public import PaperP1.Analysis.PolynomialVerticalRootUniqueness
+public import PaperP1.Analysis.RegularCurveProjectionUniqueness

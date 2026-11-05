@@ -3034,6 +3034,9 @@ import PaperP1
 #print axioms PaperP1.NormalizedBandBuckets.side_cluster_distance
 #print axioms PaperP1.NormalizedGraphFiniteAvoidance.exists_first
 #print axioms PaperP1.NormalizedGraphFiniteAvoidance.exists_second
+#print axioms PaperP1.NormalizedGraphOverlapUniqueness.lift_continuous
+#print axioms PaperP1.NormalizedGraphOverlapUniqueness.lift_projection
+#print axioms PaperP1.NormalizedGraphOverlapUniqueness.overlap_eq
 #print axioms PaperP1.NormalizedGridSpacing.integer_gap
 #print axioms PaperP1.NormalizedGridSpacing.separation
 #print axioms PaperP1.NormalizedGridSpacing.trimmed_population
@@ -3084,6 +3087,11 @@ import PaperP1
 #print axioms PaperP1.PolynomialTestTruncation.test_bound
 #print axioms PaperP1.PolynomialVelocitySmooth.contDiff_eval
 #print axioms PaperP1.PolynomialVelocitySmooth.contDiff_velocity
+#print axioms PaperP1.PolynomialVerticalRootUniqueness.point_eta
+#print axioms PaperP1.PolynomialVerticalRootUniqueness.hasDerivAt_vertical
+#print axioms PaperP1.PolynomialVerticalRootUniqueness.vertical_roots_eq
+#print axioms PaperP1.PolynomialVerticalRootUniqueness.exists_nonzero_box
+#print axioms PaperP1.PolynomialVerticalRootUniqueness.exists_local_vertical_unique
 #print axioms PaperP1.PositiveFractionCostNormalization.with_errors
 #print axioms PaperP1.PowerSeriesTail.weight_nonneg
 #print axioms PaperP1.PowerSeriesTail.tailTerm_nonneg
@@ -3224,6 +3232,9 @@ import PaperP1
 #print axioms PaperP1.ReducedSourceParameter.uniform_parameter_threshold
 #print axioms PaperP1.ReducedSourceShiftBudget.polylog_rebase
 #print axioms PaperP1.ReducedSourceShiftBudget.shift_and_loss_bounds
+#print axioms PaperP1.RegularCurveProjectionUniqueness.projection_locally_injective
+#print axioms PaperP1.RegularCurveProjectionUniqueness.projection_separated
+#print axioms PaperP1.RegularCurveProjectionUniqueness.unique_lifts
 #print axioms PaperP1.RegularNormalizedCharts.exists_at_nonsingular
 #print axioms PaperP1.RegularNormalizedCharts.exists_off_singular
 #print axioms PaperP1.RelativeIntervalAxisBounds.first_axis_scale
