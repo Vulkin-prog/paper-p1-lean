@@ -24005,6 +24005,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "931ea5e95dd2f46bb266331c601926fc036ee01b"
+    },
+    {
+      "id": "P1-MATH-0486",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:nonaligned",
+        "number": "13.6",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 259,
+        "statement_sha256": "bfe3ffef35f01b69168fe958413ef9b1f7970253c5be921e9b3ee5a73445d770"
+      },
+      "original_assumption": "The original nonaligned-rank proof invoked the full growing-degree BCN count after discarding the constructed coefficient-height bound and replacing the positive fibre degree by one.",
+      "finding": "The actual height and full fibre factor give an internal normalized count C*(q^2+q*sqrt B)*(Nat.log2B+1)^2, uniformly o(B) for every fixed short-support power a<1/2. This closes the complete literal main13.6 theorem without BCN.",
+      "proposed_revision": "Replace the BCN invocation in the proof of13.6 by the height-controlled normalized count, preserve the maximum partial-degree fibre factor, and keep the generic13.5/BCN statements separate.",
+      "impact": "Closes the full uniform nonaligned rank theorem, literal finite-pair limsup, empty-population convention and strict half-window gap, without a compatibility assumption or external point-count premise.",
+      "evidence": [
+        "PaperP1.HeightControlledCommonCurveGrid.height_conversion",
+        "PaperP1.HeightControlledCommonCurveGrid.orient",
+        "PaperP1.HeightControlledCommonCurveGrid.oriented_geometric_count",
+        "PaperP1.HeightControlledCommonCurveGrid.normalized_count",
+        "PaperP1.NonalignedCriticalRank.critical_rank_bound",
+        "PaperP1.NonalignedRankTheorem.critical_maximal_ratio_bound",
+        "PaperP1.NonalignedRankTheorem.article_13_6",
+        "PaperP1.NonalignedRankTheorem.uniform_half_window_gap",
+        "PaperP1.HeightControlledCommonCurveCount.power_cap",
+        "PaperP1.HeightControlledCommonCurveGrid.profile"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16497 jobs); direct axiom audit passed for 15506 declarations using only propext, Classical.choice and Quot.sound; all 14955 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.03 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

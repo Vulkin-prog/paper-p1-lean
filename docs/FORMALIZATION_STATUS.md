@@ -3,6 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 
 Current plane bound (P1-MATH-0484): an absolute coefficient- and field-uniform C*D^5*(Nat.log2N+1)^2*N^(1/D) estimate is internally proved for every characteristic-zero field. Its growing-degree o(B) consequence covers a<1/5, real scaled boxes and arbitrary upper power caps. Full quadratic-degree/all-dimensional BCN and the original a<1/2 corollary remain unresolved.
+Main13.6 is unconditional (P1-MATH-0486): complete literal nonaligned-rank limsup, uniform critical-band estimate and strict half-window gap, with no compatibility requirement or external BCN premise. The actual constructed height and full fibre-degree factor supply the normalized sublinear grid count for every short-support powera<1/2. Generic main13.5 and BCN remain open.
 Neither document is fully formalized.
 
 P1-MATH-0454 isolates the remaining sharp global connected-triple joint mass on triples with three strong nonaligned pairs. All other sectors have internal41/30 bounds, and the residual has a subpower host count. Its optimal weighted bound and full main14.1/14.6 remain conditional.
@@ -53,7 +54,7 @@ CompanionT14.1 is unconditional (P1-MATH-0431), with connected activity strength
 
 CompanionT1.8 is unconditional (P1-MATH-0430): exact dense-component to actual-rank transfer gives subpower nonaligned hosts and both printed kernel sumsN^(1+epsilon), including the full value kernel without block-parity rows.
 
-Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is149 proved,15 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
+Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is150 proved,14 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
 
 The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. The full arbitrary-source statement was subsequently discharged at P1-MATH-0429.
 
@@ -95,7 +96,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is149/167 unconditional and15 conditional (164/167 completed). The project records483 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is150/167 unconditional and14 conditional (164/167 completed). The project records484 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -214,7 +215,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15497 audited theorem/lemma declarations**. This
+- The project currently has **15506 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26978,3 +26979,22 @@ Main13.6 and its downstream sharp rank and optimal-law statements therefore rema
 P1-MATH-0485 adds four modules, six theorems and no definitions. No complete numbered statement is promoted. Coverage remains149 proved,15 conditional and3 in_progress out of167, with164 completed. The project records483 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16489 jobs); direct axiom audit passed for 15497 declarations using only propext, Classical.choice and Quot.sound; all 14945 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.06 GiB.
+
+
+## Complete nonaligned critical-rank theorem from actual height-controlled curves
+
+Main Theorem13.6 is now internally proved in its complete original scope. For every fixed critical band and every sequence of window lengths in that band, the actual finite-pair maximum satisfies limsup(d_xy/(L+1)) <= (2/3)*log2 <1/2. The finite uniform estimate precedes every N,L,x,y and requires neither event compatibility nor any external geometric point-count property. The same original empty-population convention is retained, and a uniform strict half-window gap is also proved.
+
+The new route uses data already produced by the actual common-curve construction: total degree D<=48q and integer coefficient height H(G)<=(B+1)^(2472q), where B=L+1. It also retains the exact maximum partial-degree factor b=max(degreeX G,degreeY G) from the grid-fibre lower bound. The new finite theorem gives #integerGrid(G,B)/b <= C*(q^2+q*sqrt B)*(Nat.log2B+1)^2, with one positive absolute C before every B,q and equation, for2<=D<=B. No target counting bound occurs as a theorem hypothesis.
+
+Every geometric and orientation case is supplied internally. Exchanging the two variables preserves the actual coefficient height, degree, geometric irreducibility and grid cardinality, and makes the vertical degree the maximum partial degree. If b>=2, D<=2b allows the height-sensitive normalized affine theorem to apply with kappa=4944q, using(B+1)^(2472q)<=B^(4944q). Its determinant root is at most sqrt B, and D<=48q yields the displayed finite profile. If b=1, the degree is exactly2, so the already proved coefficient-uniform fixed-degree sector supplies the same profile. For a nongeometric irreducible integer equation, rationalization and the internal singular-point/Bezout bound give at most D*(D-1) points, which fits2304q^2 after division by b>=1.
+
+For every fixed a<1/2, the threshold is chosen before every q<=B^a and every actual equation. The condition D<=B follows eventually from48B^a<=B. Writing m=max(2a,a+1/2)<1 and delta=(1-m)/2>0, internal logarithmic absorption bounds the entire profile by B^(m+delta), and fixed-factor absorption makes it at most epsilon*B. This proves the full required short-support range for the height-controlled normalized grid count. It does not assert a coefficient-uniform unnormalized count in that range.
+
+The critical-rank proof now supplies this internal estimate to the exact degree-weighted short-basis rank budget. All extraction losses, support thresholds, degree-square losses and the degree-one alignment contradiction remain explicit and internally proved. The final literal limsup uses the original finite nonaligned-pair maximum; the numeric strict inequality(2/3)*log2<1/2 is also retained. Source main_sections/pair_rigidity.tex lines259-318 was rechecked. The new proof replaces the earlier BCN call by using the constructed height and the full fibre degree, without changing the numbered theorem statement.
+
+Generic main13.5, the full quadratic-degree/all-dimensional BCN theorem and the downstream optimal-law inputs remain separate. Main13.8 and its higher-family probability application are not promoted at this checkpoint; their former rank input can now be replaced in subsequent work. Complete companion T19.15/T19.16 remain internally proved, while fullT19.17 retains its stronger almost-all census requirement.
+
+P1-MATH-0486 adds four modules, nine theorems and one profile definition. Exactly one numbered result, main13.6, is promoted from conditional to proved. Coverage becomes150 proved,14 conditional and3 in_progress out of167, with164 completed:60 main results and90 companion results are proved. The project records484 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16497 jobs); direct axiom audit passed for 15506 declarations using only propext, Classical.choice and Quot.sound; all 14955 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.03 GiB.

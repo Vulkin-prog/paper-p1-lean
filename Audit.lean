@@ -4525,6 +4525,10 @@ import PaperP1
 #print axioms PaperP1.HalfCountCertificateLists.new_receiver_bound
 #print axioms PaperP1.HalfCountCertificateLists.old_receiver_bound
 #print axioms PaperP1.HeavyPhysicalRelations.exists_relation
+#print axioms PaperP1.HeightControlledCommonCurveGrid.height_conversion
+#print axioms PaperP1.HeightControlledCommonCurveGrid.orient
+#print axioms PaperP1.HeightControlledCommonCurveGrid.oriented_geometric_count
+#print axioms PaperP1.HeightControlledCommonCurveGrid.normalized_count
 #print axioms PaperP1.HeightFiveChannelCorrection.truncatedSum_succ
 #print axioms PaperP1.HeightFiveChannelCorrection.coefficient_succ
 #print axioms PaperP1.HeightFiveChannelCorrection.heightSum_five
@@ -4919,6 +4923,7 @@ import PaperP1
 #print axioms PaperP1.NonGeometricPlanePointBound.finite_points_card_of_outer_positive
 #print axioms PaperP1.NonGeometricPlanePointBound.finite_points_card
 #print axioms PaperP1.NonGeometricPlanePointBound.grid_card
+#print axioms PaperP1.NonalignedCriticalRank.critical_rank_bound
 #print axioms PaperP1.NonalignedRankFieldBCN.critical_rank_bound
 #print axioms PaperP1.NonalignedRankFieldBCN.article_13_6_under_field_BCN
 #print axioms PaperP1.NonalignedRankFieldBCN.uniform_half_window_gap
@@ -4927,6 +4932,9 @@ import PaperP1
 #print axioms PaperP1.NonalignedRankLimsup.critical_maximal_ratio_bound
 #print axioms PaperP1.NonalignedRankLimsup.article_13_6_under_BCN
 #print axioms PaperP1.NonalignedRankLimsup.uniform_half_window_gap
+#print axioms PaperP1.NonalignedRankTheorem.critical_maximal_ratio_bound
+#print axioms PaperP1.NonalignedRankTheorem.article_13_6
+#print axioms PaperP1.NonalignedRankTheorem.uniform_half_window_gap
 #print axioms PaperP1.NonalignedRankUnderBCN.critical_rank_bound
 #print axioms PaperP1.NonanchorPivotSelection.pivot_le_of_ordinary
 #print axioms PaperP1.NonanchorPivotSelection.exists_nonanchor
@@ -8395,6 +8403,7 @@ import PaperP1
 #print axioms PaperP1.HeightControlledAffineCount.uniform_count
 #print axioms PaperP1.HeightControlledBiformCount.uniform_first_count
 #print axioms PaperP1.HeightControlledBiformCount.uniform_second_count
+#print axioms PaperP1.HeightControlledCommonCurveCount.power_cap
 #print axioms PaperP1.HeightTwoBoundaryJointMass.finite_bound
 #print axioms PaperP1.HeightTwoBoundaryJointMass.uniform_mass
 #print axioms PaperP1.HeightTwoBoundaryJointMass.uniform_triples

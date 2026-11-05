@@ -3959,3 +3959,7 @@ public import PaperP1.Arithmetic.AdditiveHeightPrimeScale
 public import PaperP1.Arithmetic.DegreeWeightedCurveGridBudget
 public import PaperP1.Arithmetic.HeightSensitiveAffineParameters
 public import PaperP1.Diophantine.HeightSensitiveAffineCount
+public import PaperP1.Arithmetic.HeightControlledCommonCurveGrid
+public import PaperP1.Arithmetic.NonalignedCriticalRank
+public import PaperP1.Arithmetic.NonalignedRankTheorem
+public import PaperP1.Asymptotics.HeightControlledCommonCurveCount
