@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records389 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records390 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14513 audited theorem/lemma declarations**. This
+- The project currently has **14518 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25326,3 +25326,18 @@ This supplies the finite-unit-multiplicity step needed for the negative-discrimi
 P1-MATH-0391 adds four theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records389 improvements and two statement-scope corrections. No axiom, external arithmetic premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15697 jobs); direct axiom audit passed for 14513 declarations using only propext, Classical.choice and Quot.sound; all 13843 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.59 GiB.
+
+
+## Uniform signed imaginary norm counts without a height restriction
+
+ImaginaryQuadraticCount.norm_card_tau_sq proves that every actual finite population of signed integer solutions to x^2+D*y^2=m has cardinality at most 10*tau(|m|)^2, for every positive natural D and every nonzero integer m. There is no coordinate-height bound, squarefree hypothesis, primitivity condition, conductor comparison or external counting premise. Both signs and all axis points are retained.
+
+The actual identity alpha*beta=m sends each solution to a maximal-order integral ideal dividing (m). Equality of actual principal ideals supplies an actual unit carrying one generator to the other. The norm identity and m!=0 prove that this unit has norm one. Relative units inject each finite ideal fibre into an actual finite population of norm-one algebraic integers, whose cardinality is at most ten by checkpoint391. A proved finite type of divisors of the nonzero ideal (m) permits summing these fibres. The already proved quadratic ideal divisor theorem bounds the number of ideals by tau(|m|)^2. No finiteness assumption is inferred merely from Nat.card.
+
+count_le_rpow_eventually combines the finite bound with the internally proved elementary divisor estimate. For each fixed K and epsilon>0 it chooses a threshold before N, D, m and the actual finite population; every D>0 is allowed with no upper bound, and |m|<=N^K implies cardinality<=N^epsilon. The threshold is independent of D and no point-height bound is needed. The constant ten and the divisor square are absorbed with explicit positive real-power budgets.
+
+This closes the signed imaginary norm counting step. Its application to original-coordinate negative-discriminant conics is still separate; parabolas, general BCN and original all-dimensional main13.4 remain open. No original numbered result is promoted.
+
+P1-MATH-0392 adds five theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records390 improvements and two statement-scope corrections. No new axiom, external arithmetic premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15699 jobs); direct axiom audit passed for 14518 declarations using only propext, Classical.choice and Quot.sound; all 13849 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.59 GiB.

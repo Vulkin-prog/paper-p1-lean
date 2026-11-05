@@ -20365,6 +20365,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "491ab2408c80e7b398ad6bbe64a0a406e3d28288"
+    },
+    {
+      "id": "P1-MATH-0392",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "A total signed count for imaginary quadratic norm equations was still missing after construction of the field and the finite norm-one multiplicity bound.",
+      "finding": "Every finite signed solution population for x^2+D*y^2=m, D>0 and m!=0, has at most 10*tau(|m|)^2 elements. The resulting N^epsilon threshold is uniform in unrestricted D and all m of fixed polynomial height, with no coordinate-height bound.",
+      "proposed_revision": "Use this actual maximal-order ideal argument for the negative-discriminant conic branch. It bypasses squarefree descent and conductor comparison; retain the explicit nonzero norm condition until geometric non-degeneracy supplies it internally.",
+      "impact": "Closes the complete imaginary norm counting obligation by proved ideal fibres and the elementary divisor estimate. Original-coordinate conic normalization and numbered coverage remain separate.",
+      "evidence": [
+        "PaperP1.ImaginaryQuadraticCount.idealOf_eq",
+        "PaperP1.ImaginaryQuadraticCount.same_principal_ideal_gives_norm_one",
+        "PaperP1.ImaginaryQuadraticCount.principal_fibre_card",
+        "PaperP1.ImaginaryQuadraticCount.norm_card_tau_sq",
+        "PaperP1.ImaginaryQuadraticCount.count_le_rpow_eventually",
+        "PaperP1.ImaginaryQuadraticCount.idealOf"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15699 jobs); direct axiom audit passed for 14518 declarations using only propext, Classical.choice and Quot.sound; all 13849 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.59 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

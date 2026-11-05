@@ -3563,3 +3563,4 @@ public import PaperP1.Arithmetic.SmallHeightAssociatedPlanePresentation
 public import PaperP1.Diophantine.UnrestrictedHyperbolicConicCount
 public import PaperP1.Diophantine.ImaginaryQuadraticOrder
 public import PaperP1.Diophantine.ImaginaryNormOne
+public import PaperP1.Diophantine.ImaginaryQuadraticCount

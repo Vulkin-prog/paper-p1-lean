@@ -10363,6 +10363,11 @@ import PaperP1
 #print axioms PaperP1.ImaginaryNormOne.trace_mem_Icc
 #print axioms PaperP1.ImaginaryNormOne.code_injective_on_norm_one
 #print axioms PaperP1.ImaginaryNormOne.norm_one_card
+#print axioms PaperP1.ImaginaryQuadraticCount.idealOf_eq
+#print axioms PaperP1.ImaginaryQuadraticCount.same_principal_ideal_gives_norm_one
+#print axioms PaperP1.ImaginaryQuadraticCount.principal_fibre_card
+#print axioms PaperP1.ImaginaryQuadraticCount.norm_card_tau_sq
+#print axioms PaperP1.ImaginaryQuadraticCount.count_le_rpow_eventually
 #print axioms PaperP1.ImaginaryQuadraticOrder.negative_not_square
 #print axioms PaperP1.ImaginaryQuadraticOrder.omega_sq
 #print axioms PaperP1.ImaginaryQuadraticOrder.omega_integral
