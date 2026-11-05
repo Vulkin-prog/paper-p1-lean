@@ -32348,7 +32348,8 @@
           "scope": "Exact two conclusions of companionT14.1; internally proved actual connected exponent1 and all-contact exponent1. No general cover/count property is asserted.",
           "checkpoint": "P1-MATH-0431"
         }
-      ]
+      ],
+      "validation_commit": "5813b9340730dd362d57e6adb2a592ad61d6b519"
     },
     {
       "label": "p1:core:primitive",
