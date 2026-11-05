@@ -21252,6 +21252,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "a7565f7467bb95b03347697e88aa1ab8b561a2d3"
+    },
+    {
+      "id": "P1-MATH-0417",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:pair-deficit",
+        "number": "15.9",
+        "page": 44,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 520,
+        "statement_sha256": "562b4f96b7b2fd49cc9b5ac6c1ce1baa48b9743787258156f714afc5b4fcd259"
+      },
+      "original_assumption": "The all-cardinality pair deficit retained finite geometric inputs only through the actual pair partition and finitely many fixed-order deficits.",
+      "finding": "The internal partition, fixed-order deficits and uniform large-seed estimate prove the sharp literal all-cardinality deficit at rate N^(-3/2+epsilon) without unproved arguments.",
+      "proposed_revision": "Use the unconditional partition and fixed-extension results in the all-cardinality proof. Keep the finite maximum of small-order thresholds separate from the uniform large-seed argument, and retain actual pair weights and independent target weights.",
+      "impact": "Main15.9 moves from conditional to proved:107 proved,57 conditional,3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.AllPairDeficit.article_15_9",
+        "PaperP1.PairDeficitBounds.fixed_order",
+        "PaperP1.PairDeficitBounds.finite_orders",
+        "PaperP1.PairDeficitBounds.partition_inputs"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15835 jobs); direct axiom audit passed for 14709 declarations using only propext, Classical.choice and Quot.sound; all 14059 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.83 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+Main15.9 is unconditional (P1-MATH-0417): the sharp actual all-cardinality pair-extension deficit uses finite small-order thresholds and an internally proved uniform large-seed bound.
+
 Main11.1 and15.7 are unconditional (P1-MATH-0416): the literal one-target and every fixed-k pair-extension deficit have sharp rateN^(-3/2+epsilon), using actual pair activity and independent weights only for new targets.
 
 CompanionT7.1 is unconditional (P1-MATH-0415): the finite good/weak/exceptional pair partition, both residual rates and exact good-edge compression are internally proved, with Q chosen before C and epsilon.
@@ -27,7 +29,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is106/167 unconditional and58 conditional (164/167 completed). The project records414 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is107/167 unconditional and57 conditional (164/167 completed). The project records415 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -146,7 +148,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14705 audited theorem/lemma declarations**. This
+- The project currently has **14709 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25719,3 +25721,16 @@ The original statement and explanation in main_sections/triple_activities.tex li
 P1-MATH-0416 adds two modules and two theorems. Main11.1 and15.7 move from conditional to proved. Coverage becomes106 proved and58 conditional out of167, with164 completed and three in_progress. The ledger records414 improvements and two statement-scope corrections. The all-cardinality deficit and full triple-cancellation consequences remain subsequent alignment steps. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15831 jobs); direct axiom audit passed for 14705 declarations using only propext, Classical.choice and Quot.sound; all 14055 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.85 GiB.
+
+
+## Unconditional all-cardinality pair-extension deficit
+
+Main Proposition 15.9 now has an unconditional canonical proof of the literal all-cardinality pair-extension deficit D_2(u) <= N^(-3/2+epsilon), for each fixed u>0. AllPairDeficit.article_15_9 returns one threshold before every N and critical L, with the actual dyadic pair covariance weight and products of actual independent target marginals. The exact source/target non-directness condition and all finite extension cardinalities are retained.
+
+PairDeficitBounds supplies the fixed-order theorem directly from checkpoint416, the simultaneous finite-order sum by a finite maximum of thresholds, and the actual weak/exceptional partition estimates from checkpoint415. The finite channel height Q and tail cutoff s are chosen internally, before N. For large minimal seeds the already proved GoodPairSeedTail.uniform_large_seeds provides a genuinely uniform tail bound; no fixed-order asymptotic constant is extrapolated to growing order. The independent free complements are summed using the actual bounded mean. The weak and exceptional classes use the internally proved UniformPairClassDeficit bound.
+
+The complete original statement and proof in main_sections/exact_transfer.tex lines520-555 were rechecked. The canonical theorem exposes no surface-cover, normalized-curve-count or BCN premise. This closes the particular former pair-partition dependencies without proving any of those general geometric properties. Original manuscript bytes and all previous conditional proof history remain preserved.
+
+P1-MATH-0417 adds two modules and four theorems. Main15.9 moves from conditional to proved. Coverage becomes107 proved,57 conditional and3 in_progress out of167, with164 completed. The project records415 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15835 jobs); direct axiom audit passed for 14709 declarations using only propext, Classical.choice and Quot.sound; all 14059 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.83 GiB.

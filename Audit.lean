@@ -6710,6 +6710,7 @@ import PaperP1
 #print axioms PaperP1.AllPairCriteriaUnderInputs.uniform_poisson_comparison
 #print axioms PaperP1.AllPairCriteriaUnderInputs.good_criterion_iff
 #print axioms PaperP1.AllPairCriteriaUnderInputs.uniform_criterion_iff
+#print axioms PaperP1.AllPairDeficit.article_15_9
 #print axioms PaperP1.AllPairDeficitUnderInputs.article_15_9
 #print axioms PaperP1.AllPairErasureTheoremUnderInputs.allCount_eq_total
 #print axioms PaperP1.AllPairErasureTheoremUnderInputs.retained_geometry
@@ -8486,6 +8487,9 @@ import PaperP1
 #print axioms PaperP1.PairCompressedPrimitiveMassUnderInputs.family_mass_le
 #print axioms PaperP1.PairCompressedPrimitiveMassUnderInputs.companion_T4_4
 #print axioms PaperP1.PairCompressedPrimitiveMassUnderInputs.companion_T4_4_original
+#print axioms PaperP1.PairDeficitBounds.fixed_order
+#print axioms PaperP1.PairDeficitBounds.finite_orders
+#print axioms PaperP1.PairDeficitBounds.partition_inputs
 #print axioms PaperP1.PairHostIndependentMass.finite_mass_cap
 #print axioms PaperP1.PairHostIndependentMass.uniform_mass
 #print axioms PaperP1.PairProfiles.uniform_profiles

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**414 mathematical improvements and two statement-scope corrections are confirmed.**
+**415 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24926,3 +24926,16 @@ The original statement and explanation in main_sections/triple_activities.tex li
 P1-MATH-0416 adds two modules and two theorems. Main11.1 and15.7 move from conditional to proved. Coverage becomes106 proved and58 conditional out of167, with164 completed and three in_progress. The ledger records414 improvements and two statement-scope corrections. The all-cardinality deficit and full triple-cancellation consequences remain subsequent alignment steps. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15831 jobs); direct axiom audit passed for 14705 declarations using only propext, Classical.choice and Quot.sound; all 14055 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.85 GiB.
+
+
+## Unconditional all-cardinality pair-extension deficit
+
+Main Proposition 15.9 now has an unconditional canonical proof of the literal all-cardinality pair-extension deficit D_2(u) <= N^(-3/2+epsilon), for each fixed u>0. AllPairDeficit.article_15_9 returns one threshold before every N and critical L, with the actual dyadic pair covariance weight and products of actual independent target marginals. The exact source/target non-directness condition and all finite extension cardinalities are retained.
+
+PairDeficitBounds supplies the fixed-order theorem directly from checkpoint416, the simultaneous finite-order sum by a finite maximum of thresholds, and the actual weak/exceptional partition estimates from checkpoint415. The finite channel height Q and tail cutoff s are chosen internally, before N. For large minimal seeds the already proved GoodPairSeedTail.uniform_large_seeds provides a genuinely uniform tail bound; no fixed-order asymptotic constant is extrapolated to growing order. The independent free complements are summed using the actual bounded mean. The weak and exceptional classes use the internally proved UniformPairClassDeficit bound.
+
+The complete original statement and proof in main_sections/exact_transfer.tex lines520-555 were rechecked. The canonical theorem exposes no surface-cover, normalized-curve-count or BCN premise. This closes the particular former pair-partition dependencies without proving any of those general geometric properties. Original manuscript bytes and all previous conditional proof history remain preserved.
+
+P1-MATH-0417 adds two modules and four theorems. Main15.9 moves from conditional to proved. Coverage becomes107 proved,57 conditional and3 in_progress out of167, with164 completed. The project records415 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15835 jobs); direct axiom audit passed for 14709 declarations using only propext, Classical.choice and Quot.sound; all 14059 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.83 GiB.

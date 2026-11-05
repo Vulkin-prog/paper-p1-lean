@@ -3630,3 +3630,5 @@ public import PaperP1.Asymptotics.SecondCumulant
 public import PaperP1.Asymptotics.FiniteGoodPartition
 public import PaperP1.Asymptotics.FixedPairExtensionDeficit
 public import PaperP1.Asymptotics.SharpPairTargetDeficit
+public import PaperP1.Asymptotics.AllPairDeficit
+public import PaperP1.Asymptotics.PairDeficitBounds
