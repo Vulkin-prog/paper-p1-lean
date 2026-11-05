@@ -4011,3 +4011,6 @@ public import PaperP1.Analysis.LocalWronskianNonvanishing
 public import PaperP1.Algebra.MvPlaneBezout
 public import PaperP1.Analysis.CurvePolynomialWronskianNonvanishing
 public import PaperP1.Analysis.NonstationaryTangentImage
+public import PaperP1.Algebra.TotalDegreeMonomialFamily
+public import PaperP1.Analysis.MonomialCurvePieceCount
+public import PaperP1.Analysis.MonomialWronskianExceptions

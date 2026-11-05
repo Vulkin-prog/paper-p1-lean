@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**501 mathematical improvements and two statement-scope corrections are confirmed.**
+**502 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26407,3 +26407,20 @@ The primary BCN author version arXiv2302.04209v2 Section3 Lemma6 was rechecked. 
 P1-MATH-0503 adds three modules, fourteen theorems and two definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records501 improvements and two statement-scope corrections. One already present pinned Mathlib connectedness module is compiled from source; no dependency download, compiler change, new axiom, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16595 jobs); direct axiom audit passed for 15660 declarations using only propext, Classical.choice and Quot.sound; all 15150 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.65 GiB.
+
+
+## Concrete monomial prefixes, finite Wronskian exceptions and complete one-piece counts
+
+The ordered monomial families in the sharp-degree curve argument are now concrete and internally complete. TotalDegreeMonomialFamily uses the actual triangular index of all exponent pairs with sum at mostk. Its real multivariate monomials have degree at mostk, different indices have different exponents, and every injective finite enumeration recovers each actual combination coefficient. Thus every nonzero coefficient vector gives a nonzero polynomial, including every initial subfamily. The full index has at most(k+1)^2 elements. Every polynomial of total degree at mostk is reconstructed exactly from its actual coefficients in the full enumerated family, and nonzero polynomials give nonzero coordinate vectors.
+
+MonomialWronskianExceptions applies the previously proved actual curve argument to every initial monomial family. RegularPiece records only an actual ordered real interval, its genuine polynomial tangent trajectory, its curve equation and nonzero velocity at each parameter. It contains no count, cardinality, Wronskian conclusion or geometric covering property. Given such a piece on an irreducible curveP andk<degP, every initial polynomial tangent Wronskian is proved not divisible byP. Its actual zero population on the whole real curve has size at most2D^2*(k+1)^4, whereD=degP.
+
+The union over all nonempty initial families is the explicitly defined actual setexceptionalPoints. Every finite population in it has size at most2D^2*(k+1)^6. The development also constructs a genuine finite set containing exactly those exceptional points, with that same bound. The proof retains every actual real point, the full finite union, all initial-family sizes and the exact finite degree/triangular allowances before the final coarse bound. Singular-gradient exceptions are a separate obligation; they are not included in this newly named Wronskian exceptional set.
+
+MonomialCurvePieceCount then proves the full bounded-degree one-piece conclusion for every actual nonzero polynomialQ withdegQ<=k. On any given genuine regular piece avoiding the Wronskian exceptional set, every finite population of distinct image points satisfyingQ=0 has cardinality strictly less than the full monomial-family size, hence below its quadratic-in-k allowance. Exact monomial reconstruction supplies the actual coefficient vector; no family-spanning or point-count input is assumed. The trajectory may revisit points, since the earlier actual-population argument selects distinct parameters for distinct points.
+
+The primary BCN author version arXiv2302.04209v2 Section3 Lemma6 and Proposition7 was rechecked. This closes the concrete monomial and Wronskian-exception components under displayed genuine piece data. Existence of a regular piece from an actual nonsingular point, the singular-gradient exception bound, global trajectory coverage and number of pieces, bounded smooth parametrizations, final sharp plane counting and higher-dimensional projection remain subsequent obligations. Full main13.4 BCN and original13.5 are not promoted. Current generic point counting remains the internally proved cubic bound with fulla<1/3 range.
+
+P1-MATH-0504 adds three modules, seventeen theorems and eight definitions/structures. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records502 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16601 jobs); direct axiom audit passed for 15677 declarations using only propext, Classical.choice and Quot.sound; all 15175 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.62 GiB.

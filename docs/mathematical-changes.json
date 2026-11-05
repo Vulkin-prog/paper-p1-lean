@@ -24696,6 +24696,57 @@
         "status": "not_integrated"
       },
       "validation_commit": "5d6e2a5f3c8b89dfb1e4d8a140029b88faf7e404"
+    },
+    {
+      "id": "P1-MATH-0504",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The structural curve Wronskian argument required an actual independent polynomial family, while concrete ordered monomial prefixes, their completeness and the finite union of their exceptions were not yet internal.",
+      "finding": "Concrete monomial coefficient recovery and reconstruction yield every initial-family nondivisibility proof, a genuine exceptional set of size at most2D^2*(k+1)^6 and the full one-piece count for all nonzero degree-at-most-k polynomials.",
+      "proposed_revision": "Use the internally complete monomial and exceptional-set construction, keeping singular-gradient exceptions, regular-trajectory existence and global decomposition/parametrization explicit until proved.",
+      "impact": "Closes the concrete finite polynomial exceptional-set and arbitrary bounded-degree one-piece components of the sharp-degree route. Full BCN remains open.",
+      "evidence": [
+        "PaperP1.TotalDegreeMonomialFamily.exponent_injective",
+        "PaperP1.TotalDegreeMonomialFamily.exponent_sum",
+        "PaperP1.TotalDegreeMonomialFamily.basis_degree",
+        "PaperP1.TotalDegreeMonomialFamily.combination_coefficient",
+        "PaperP1.TotalDegreeMonomialFamily.combination_ne_zero",
+        "PaperP1.TotalDegreeMonomialFamily.index_card_le",
+        "PaperP1.TotalDegreeMonomialFamily.exponent_represent",
+        "PaperP1.TotalDegreeMonomialFamily.reconstruction",
+        "PaperP1.TotalDegreeMonomialFamily.coordinates_ne_zero",
+        "PaperP1.MonomialCurvePieceCount.partial_nonzero",
+        "PaperP1.MonomialCurvePieceCount.point_count",
+        "PaperP1.MonomialWronskianExceptions.initial_degree",
+        "PaperP1.MonomialWronskianExceptions.initial_combination_ne_zero",
+        "PaperP1.MonomialWronskianExceptions.initial_not_dvd",
+        "PaperP1.MonomialWronskianExceptions.initial_zero_card",
+        "PaperP1.MonomialWronskianExceptions.exceptional_population_card",
+        "PaperP1.MonomialWronskianExceptions.exists_exceptional_finset",
+        "PaperP1.TotalDegreeMonomialFamily.exponent",
+        "PaperP1.TotalDegreeMonomialFamily.basis",
+        "PaperP1.TotalDegreeMonomialFamily.enumeration",
+        "PaperP1.TotalDegreeMonomialFamily.family",
+        "PaperP1.TotalDegreeMonomialFamily.coordinates",
+        "PaperP1.MonomialWronskianExceptions.RegularPiece",
+        "PaperP1.MonomialWronskianExceptions.initialFamily",
+        "PaperP1.MonomialWronskianExceptions.exceptionalPoints"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16601 jobs); direct axiom audit passed for 15677 declarations using only propext, Classical.choice and Quot.sound; all 15175 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.62 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
