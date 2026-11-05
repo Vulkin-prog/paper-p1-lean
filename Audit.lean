@@ -4296,6 +4296,12 @@ import PaperP1
 #print axioms PaperP1.IntegerRealIntervalCount.interval_card
 #print axioms PaperP1.IntegerRealIntervalCount.band_card
 #print axioms PaperP1.IntegerRealIntervalCount.strip_card
+#print axioms PaperP1.IntegralGeometricPlanePointInput.exists_integral_presentation
+#print axioms PaperP1.IntegralGeometricPlanePointInput.presentation_properties
+#print axioms PaperP1.IntegralGeometricPlanePointInput.rational_input
+#print axioms PaperP1.IntegralGeometricPlanePointInput.field_input
+#print axioms PaperP1.IntegralGeometricPlanePointInput.integer_input
+#print axioms PaperP1.IntegralGeometricPlanePointInput.restriction_of_rational_input
 #print axioms PaperP1.IntegralSourceCoefficients.positive
 #print axioms PaperP1.IntegralSourceCoefficients.coefficient_upper
 #print axioms PaperP1.IntegralSourceCoefficients.barrier_orientation
