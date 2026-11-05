@@ -8423,7 +8423,8 @@
           "proof": "PaperP1.UnconditionalDenseTwoTargetMass.article_15_2",
           "scope": "The full arbitrary-W dense pair estimate is proved for actual, homogeneous-effective and nominal marginals with explicittheta=eta/64. PaperP1.RestrictedDensePrimitiveMass.uniform_bound and uniform_nominal_bound prove the second printed assertion for every real prescribed-source exponent, including the empty negative-exponent case. No unproved argument remains in canonical main15.2. General geometric cover/count properties and full growing-degree BCN remain separate."
         }
-      ]
+      ],
+      "validation_commit": "5072b99f6955817b1107401933657a4c32e20ff9"
     },
     {
       "label": "p13:transfer:compressed-target",
