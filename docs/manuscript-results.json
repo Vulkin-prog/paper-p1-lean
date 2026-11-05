@@ -29796,7 +29796,8 @@
           "proof": "PaperP1.FixedPrimitiveMass.uniform_fixed",
           "scope": "Internal triple rank mass and elementary higher-order rank bound close the fixed sizes. Internally proved uniform primitive tail closes all cardinalities. General geometric properties remain open."
         }
-      ]
+      ],
+      "validation_commit": "c67c2a89c0dd5dc21254150d65a2bd1734bb04f9"
     },
     {
       "label": "p1:fixed:compressed",
@@ -31949,7 +31950,8 @@
           "proof": "PaperP1.FixedPrimitiveMass.uniform_fixed",
           "scope": "Internal triple rank mass and elementary higher-order rank bound close the fixed sizes. Internally proved uniform primitive tail closes all cardinalities. General geometric properties remain open."
         }
-      ]
+      ],
+      "validation_commit": "c67c2a89c0dd5dc21254150d65a2bd1734bb04f9"
     },
     {
       "label": "p1:core:compressed",
