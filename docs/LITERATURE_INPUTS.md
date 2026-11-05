@@ -1,6 +1,6 @@
 # External mathematical inputs
 
-Current canonical update P1-MATH-0445: completeT1.17 andT19.10 have internal proofs, including the full original field/intensity/covariance conclusions and sharp two-edgeO(a_N^2) coupling costs. Coverage is137 proved,27 conditional,3 in_progress out of167. Actual pinned-support confinement discharges their exact compressed two-edge surface/curve uses. General geometry, sharp growing-degree BCN, separated compressed single-target refinements and optimal full-cumulant law bounds remain separate. Earlier dated update paragraphs are historical.
+Current canonical update P1-MATH-0447: complete homogeneousT1.12, positive two-edgeT1.17 and original erasureT19.10 have internal proofs. The checked corrected31/24 asymmetric profiles are also unconditional; the false original radius-one statement remainsin_progress. Coverage is138 proved,26 conditional,3 in_progress out of167. Discharges remain scoped to exact numbered uses; general geometry, sharp growing-degree BCN, other compressed/Palm obligations and optimal full-cumulant law bounds remain separate. Earlier dated update paragraphs are historical.
 
 Current canonical update P1-MATH-0432: main15.10 and companionT14.1 have unconditional internal proofs. Main15.2 and15.5 and companionT1.8 are also unconditional. Discharges are scoped to their exact numbered conclusions; general geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate. Earlier dated update paragraphs are historical.
 
@@ -26596,3 +26596,24 @@ No further numbered result is promoted at this checkpoint. In particular, the do
 P1-MATH-0446 adds eight modules, ten theorems and five definitions. Coverage remains137 proved,27 conditional and3 in_progress out of167, with164 completed. The project records444 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16195 jobs); direct axiom audit passed for 15049 declarations using only propext, Classical.choice and Quot.sound; all 14425 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.01 GiB.
+
+
+## Unconditional complete homogeneous seeds and fixed constant raw two edge scale
+
+Stable ID: p1:internal:unconditional-complete-homogeneous-seeds. Internal positive source profiles and the corrected bounded-width asymmetric profile discharge every remainingT1.12 geometric use. Raw affine-incompatible channels, actual compressed multiplicities and constant/tolerance order are preserved; general geometric properties and other numbered Palm/primitive statements remain separate.
+
+Companion PropositionT1.12 now has an unconditional canonical proof of all three printed homogeneous-seed conclusions, on one common threshold. FixedHomogeneousSeedTheorem.companion_T1_12 identifies the actual raw geometric good-edge family with the literal two principal channels, proves the complete outside-principal dependent-pair residual, the true fixed-constant raw mass bound, both separated single-target channel refinements and the full two-edge sum. The complete original statement and proof in companion_sections/arithmetic_appendix.tex lines921-1008 were rechecked. Affine-incompatible raw sources remain in every homogeneous population.
+
+CompressedAsymmetricProfile applies the internal coarse asymmetric profile to each exact compressed source pair, preserving the original scaled anchor, actual source-pair injectivity and every unit-offset choice. OriginalCompressedNonalignedMass and HomogeneousCompressedNonalignedMass retain the original versus homogeneous weights separately and prove the full nonaligned rate4/3. The enlarged exclusion radius remains the source denominatorb, with the matching actual old width and cutoff; the disproved radius-one variant is never substituted.
+
+ConnectedCompressedTripleMass and HomogeneousConnectedTripleMass retain every connected triple containing the original fixed interior unit source. Their exact finite covers split into actual aligned and nonaligned families, with source-pair multiplicities and distinct target conditions preserved. The already internal aligned masses and new nonaligned bound close the full rate4/3. HomogeneousGoodPairExtensions then proves both actual homogeneous and literal nominal-weight single-target sums, uniformly in every source cutoff. Its rate4/3 even strengthens the printed5/4 clause for the3:4 channel.
+
+RawPairResidual replaces the old positive source profile by the internally proved full positive separated source profile and literal private-channel profiles. HomogeneousPairResidual proves the complete outside-principal dependent-pair sum on every original regular subground at exponent4/5, including its equality with the exact homogeneous probability sum. No affine compatibility filter is imposed on this zero-target rank majorant.
+
+HomogeneousTwoEdgeScale combines the internal strict41/30 interaction error with the true fixed-constant raw first-mass bound. It strengthens the printed two-edge estimate to a fixed constant times(L*N^(-2/3))^2, uniformly over every raw cutoff, with the constant chosen beforeepsilon. FixedHomogeneousSeedTheorem keeps this quantifier order, the actual original raw-edge identity, every regular subground and both single-target channel conclusions in one statement. No original affine law is assigned the homogeneous joint probability.
+
+Earlier conditional declarations and literature history remain preserved. Discharges concern the completeT1.12 use only, not general geometric properties or other compressed primitive/Palm statements. Those downstream statements still require their separate literal argument replacement and alignment checks. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0447 adds ten modules, thirty-three theorems and twenty-one definitions. CompanionT1.12 moves from conditional to proved. Coverage becomes138 proved,26 conditional and3 in_progress out of167, with164 completed. The project records445 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16215 jobs); direct axiom audit passed for 15082 declarations using only propext, Classical.choice and Quot.sound; all 14479 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.04 GiB.

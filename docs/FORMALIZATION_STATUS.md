@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+CompanionT1.12 is unconditional in all three homogeneous clauses (P1-MATH-0447), including actual compressed single-target refinements and the raw two-edge bound at a true fixed-constant squared pair scale. Every clause shares one threshold.
+
 The checked corrected31/24 asymmetric profiles are unconditional on both exact enlarged-radius domains (P1-MATH-0446). The literal radius-oneT1.10 remains false andin_progress. No numbered coverage is added for this revision proof.
 
 CompanionT1.17 andT19.10 are unconditional (P1-MATH-0445): full positive two-good-edge moment, actual original field/intensity/covariance comparisons and sharpO(a_N^2) activation/TV/Wasserstein coupling. Pinned-support confinement closes the complete compressed two-edge sector; the separate single-target refinements ofT1.12 remain conditional.
@@ -37,7 +39,7 @@ CompanionT14.1 is unconditional (P1-MATH-0431), with connected activity strength
 
 CompanionT1.8 is unconditional (P1-MATH-0430): exact dense-component to actual-rank transfer gives subpower nonaligned hosts and both printed kernel sumsN^(1+epsilon), including the full value kernel without block-parity rows.
 
-Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is137 proved,27 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
+Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is138 proved,26 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
 
 The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. The full arbitrary-source statement was subsequently discharged at P1-MATH-0429.
 
@@ -79,7 +81,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is137/167 unconditional and27 conditional (164/167 completed). The project records444 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is138/167 unconditional and26 conditional (164/167 completed). The project records445 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -198,7 +200,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15049 audited theorem/lemma declarations**. This
+- The project currently has **15082 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26277,3 +26279,22 @@ No further numbered result is promoted at this checkpoint. In particular, the do
 P1-MATH-0446 adds eight modules, ten theorems and five definitions. Coverage remains137 proved,27 conditional and3 in_progress out of167, with164 completed. The project records444 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16195 jobs); direct axiom audit passed for 15049 declarations using only propext, Classical.choice and Quot.sound; all 14425 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.01 GiB.
+
+
+## Unconditional complete homogeneous seeds and fixed constant raw two edge scale
+
+Companion PropositionT1.12 now has an unconditional canonical proof of all three printed homogeneous-seed conclusions, on one common threshold. FixedHomogeneousSeedTheorem.companion_T1_12 identifies the actual raw geometric good-edge family with the literal two principal channels, proves the complete outside-principal dependent-pair residual, the true fixed-constant raw mass bound, both separated single-target channel refinements and the full two-edge sum. The complete original statement and proof in companion_sections/arithmetic_appendix.tex lines921-1008 were rechecked. Affine-incompatible raw sources remain in every homogeneous population.
+
+CompressedAsymmetricProfile applies the internal coarse asymmetric profile to each exact compressed source pair, preserving the original scaled anchor, actual source-pair injectivity and every unit-offset choice. OriginalCompressedNonalignedMass and HomogeneousCompressedNonalignedMass retain the original versus homogeneous weights separately and prove the full nonaligned rate4/3. The enlarged exclusion radius remains the source denominatorb, with the matching actual old width and cutoff; the disproved radius-one variant is never substituted.
+
+ConnectedCompressedTripleMass and HomogeneousConnectedTripleMass retain every connected triple containing the original fixed interior unit source. Their exact finite covers split into actual aligned and nonaligned families, with source-pair multiplicities and distinct target conditions preserved. The already internal aligned masses and new nonaligned bound close the full rate4/3. HomogeneousGoodPairExtensions then proves both actual homogeneous and literal nominal-weight single-target sums, uniformly in every source cutoff. Its rate4/3 even strengthens the printed5/4 clause for the3:4 channel.
+
+RawPairResidual replaces the old positive source profile by the internally proved full positive separated source profile and literal private-channel profiles. HomogeneousPairResidual proves the complete outside-principal dependent-pair sum on every original regular subground at exponent4/5, including its equality with the exact homogeneous probability sum. No affine compatibility filter is imposed on this zero-target rank majorant.
+
+HomogeneousTwoEdgeScale combines the internal strict41/30 interaction error with the true fixed-constant raw first-mass bound. It strengthens the printed two-edge estimate to a fixed constant times(L*N^(-2/3))^2, uniformly over every raw cutoff, with the constant chosen beforeepsilon. FixedHomogeneousSeedTheorem keeps this quantifier order, the actual original raw-edge identity, every regular subground and both single-target channel conclusions in one statement. No original affine law is assigned the homogeneous joint probability.
+
+Earlier conditional declarations and literature history remain preserved. Discharges concern the completeT1.12 use only, not general geometric properties or other compressed primitive/Palm statements. Those downstream statements still require their separate literal argument replacement and alignment checks. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0447 adds ten modules, thirty-three theorems and twenty-one definitions. CompanionT1.12 moves from conditional to proved. Coverage becomes138 proved,26 conditional and3 in_progress out of167, with164 completed. The project records445 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16215 jobs); direct axiom audit passed for 15082 declarations using only propext, Classical.choice and Quot.sound; all 14479 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.04 GiB.

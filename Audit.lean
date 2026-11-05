@@ -7097,6 +7097,10 @@ import PaperP1
 #print axioms PaperP1.CompressedAsymmetricCoarseProfile.finite_bound
 #print axioms PaperP1.CompressedAsymmetricCoarseProfile.uniform_offsets
 #print axioms PaperP1.CompressedAsymmetricCoarseProfile.uniform_channel
+#print axioms PaperP1.CompressedAsymmetricProfile.anchor_mem_expanded
+#print axioms PaperP1.CompressedAsymmetricProfile.finite_bound
+#print axioms PaperP1.CompressedAsymmetricProfile.uniform_offsets
+#print axioms PaperP1.CompressedAsymmetricProfile.uniform_channel
 #print axioms PaperP1.CompressedBlockIndependentTail.contained
 #print axioms PaperP1.CompressedBlockIndependentTail.anchor_centre
 #print axioms PaperP1.CompressedBlockIndependentTail.uniform_channel
@@ -7143,6 +7147,10 @@ import PaperP1
 #print axioms PaperP1.ConditionalRankTheorem.companion_T21_2
 #print axioms PaperP1.ConnectedBlockCount.uniform_count
 #print axioms PaperP1.ConnectedBoundedNullityTail.uniform_bound
+#print axioms PaperP1.ConnectedCompressedTripleMass.nonaligned_mass_le
+#print axioms PaperP1.ConnectedCompressedTripleMass.finite_cover
+#print axioms PaperP1.ConnectedCompressedTripleMass.finite_mass
+#print axioms PaperP1.ConnectedCompressedTripleMass.uniform_mass
 #print axioms PaperP1.ConnectedCompressedTripleMassUnderInputs.nonaligned_mass_le
 #print axioms PaperP1.ConnectedCompressedTripleMassUnderInputs.finite_cover
 #print axioms PaperP1.ConnectedCompressedTripleMassUnderInputs.finite_mass
@@ -7861,6 +7869,7 @@ import PaperP1
 #print axioms PaperP1.FixedHeightResidual.full_kernel_rate
 #print axioms PaperP1.FixedHigherCumulants.uniform_fixed
 #print axioms PaperP1.FixedHigherCumulantsUnderInputs.uniform_fixed
+#print axioms PaperP1.FixedHomogeneousSeedTheorem.companion_T1_12
 #print axioms PaperP1.FixedMomentInputs.uniform_fixed
 #print axioms PaperP1.FixedOrderAnchorMass.cardinal_bound
 #print axioms PaperP1.FixedOrderAnchorMass.uniform_bound
@@ -8085,6 +8094,12 @@ import PaperP1
 #print axioms PaperP1.HomogeneousChannelWeights.uniform_pair
 #print axioms PaperP1.HomogeneousChannelWeights.regular_singleton
 #print axioms PaperP1.HomogeneousCompressedBlockIndependentTail.uniform_channel
+#print axioms PaperP1.HomogeneousCompressedNonalignedMass.finite_bound
+#print axioms PaperP1.HomogeneousCompressedNonalignedMass.uniform_mass
+#print axioms PaperP1.HomogeneousConnectedTripleMass.nonaligned_mass_le
+#print axioms PaperP1.HomogeneousConnectedTripleMass.finite_cover
+#print axioms PaperP1.HomogeneousConnectedTripleMass.finite_mass
+#print axioms PaperP1.HomogeneousConnectedTripleMass.uniform_mass
 #print axioms PaperP1.HomogeneousConnectedTripleMassUnderInputs.nonaligned_mass_le
 #print axioms PaperP1.HomogeneousConnectedTripleMassUnderInputs.finite_cover
 #print axioms PaperP1.HomogeneousConnectedTripleMassUnderInputs.finite_mass
@@ -8107,6 +8122,13 @@ import PaperP1
 #print axioms PaperP1.HomogeneousEnlargedTripleMass.finite_uniform_mass
 #print axioms PaperP1.HomogeneousEnlargedTripleMass.compressed_uniform_mass
 #print axioms PaperP1.HomogeneousFullChannelMass.uniform_bound
+#print axioms PaperP1.HomogeneousGoodPairExtensions.union_mem_hosts
+#print axioms PaperP1.HomogeneousGoodPairExtensions.finite_mass
+#print axioms PaperP1.HomogeneousGoodPairExtensions.uniform_mass
+#print axioms PaperP1.HomogeneousGoodPairExtensions.nominal_mass_eq
+#print axioms PaperP1.HomogeneousGoodPairExtensions.uniform_nominal_mass
+#print axioms PaperP1.HomogeneousGoodPairExtensions.companion_T1_12_channel23
+#print axioms PaperP1.HomogeneousGoodPairExtensions.companion_T1_12_channel34
 #print axioms PaperP1.HomogeneousGoodPairExtensionsUnderInputs.union_mem_hosts
 #print axioms PaperP1.HomogeneousGoodPairExtensionsUnderInputs.finite_mass
 #print axioms PaperP1.HomogeneousGoodPairExtensionsUnderInputs.uniform_mass
@@ -8117,6 +8139,11 @@ import PaperP1
 #print axioms PaperP1.HomogeneousLocalMarginalCap.uniform_cap
 #print axioms PaperP1.HomogeneousNonalignedInteractionMass.finite_bound
 #print axioms PaperP1.HomogeneousNonalignedInteractionMass.uniform_mass
+#print axioms PaperP1.HomogeneousPairResidual.mem_families
+#print axioms PaperP1.HomogeneousPairResidual.subset_off_principal
+#print axioms PaperP1.HomogeneousPairResidual.homogeneous_mass_eq
+#print axioms PaperP1.HomogeneousPairResidual.finite_mass_bound
+#print axioms PaperP1.HomogeneousPairResidual.companion_T1_12_pair_residual
 #print axioms PaperP1.HomogeneousPairResidualUnderInputs.mem_families
 #print axioms PaperP1.HomogeneousPairResidualUnderInputs.subset_off_principal
 #print axioms PaperP1.HomogeneousPairResidualUnderInputs.homogeneous_mass_eq
@@ -8130,6 +8157,7 @@ import PaperP1
 #print axioms PaperP1.HomogeneousSeedPropagation.uniform_nominal_mass
 #print axioms PaperP1.HomogeneousSeedPropagation.uniform_regular_mass
 #print axioms PaperP1.HomogeneousSharedInteriorTriples.uniform_mass
+#print axioms PaperP1.HomogeneousTwoEdgeScale.uniform_second
 #print axioms PaperP1.HorizontalGridCoordinateData.uniform_data
 #print axioms PaperP1.IdealSourceLatticeSums.uniform_ideal_sums
 #print axioms PaperP1.IncompatibleConnectedActivity.uniform_range
@@ -8657,6 +8685,9 @@ import PaperP1
 #print axioms PaperP1.OriginalCompressedActivityUnderInputs.separated_mass_le_channels
 #print axioms PaperP1.OriginalCompressedActivityUnderInputs.companion_T15_1_original
 #print axioms PaperP1.OriginalCompressedActivityUnderInputs.subfamily_bounds
+#print axioms PaperP1.OriginalCompressedNonalignedMass.unit_source
+#print axioms PaperP1.OriginalCompressedNonalignedMass.finite_bound
+#print axioms PaperP1.OriginalCompressedNonalignedMass.uniform_mass
 #print axioms PaperP1.OriginalDeletedIntensity.uniform_bound
 #print axioms PaperP1.OriginalDeletedIntensityUnderInputs.uniform_bound
 #print axioms PaperP1.OriginalHermiteCount.at_scale_of_lower
@@ -9097,6 +9128,8 @@ import PaperP1
 #print axioms PaperP1.RationalTriplePrivateProbability.nonextremal_point_bound
 #print axioms PaperP1.RawDependenceCount.uniform_bound
 #print axioms PaperP1.RawDependenceCount.uniform_rectangular_bound
+#print axioms PaperP1.RawPairResidual.finite_bound
+#print axioms PaperP1.RawPairResidual.uniform_bound
 #print axioms PaperP1.RawPairResidualUnderInputs.finite_bound
 #print axioms PaperP1.RawPairResidualUnderInputs.uniform_bound
 #print axioms PaperP1.RawTwoWindowHostCount.envelope_nonneg

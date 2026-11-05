@@ -3812,3 +3812,13 @@ public import PaperP1.Asymptotics.ExpandedAsymmetricDenseMass
 public import PaperP1.Asymptotics.RestrictedAsymmetricProfile
 public import PaperP1.Asymptotics.SharpAsymmetricProfile
 public import PaperP1.Asymptotics.SharpExpandedAsymmetricProfile
+public import PaperP1.Asymptotics.CompressedAsymmetricProfile
+public import PaperP1.Asymptotics.ConnectedCompressedTripleMass
+public import PaperP1.Asymptotics.FixedHomogeneousSeedTheorem
+public import PaperP1.Asymptotics.HomogeneousCompressedNonalignedMass
+public import PaperP1.Asymptotics.HomogeneousConnectedTripleMass
+public import PaperP1.Asymptotics.HomogeneousGoodPairExtensions
+public import PaperP1.Asymptotics.HomogeneousPairResidual
+public import PaperP1.Asymptotics.HomogeneousTwoEdgeScale
+public import PaperP1.Asymptotics.OriginalCompressedNonalignedMass
+public import PaperP1.Asymptotics.RawPairResidual
