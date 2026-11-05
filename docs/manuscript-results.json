@@ -14343,7 +14343,8 @@
           "validation_commit": "541d7b0e209d5473d5610463f873add24616c02d"
         }
       ],
-      "canonical_statement": "PaperP1.CompanionKernelCountsUnderHeathBrown.companion_T1_4"
+      "canonical_statement": "PaperP1.CompanionKernelCountsUnderHeathBrown.companion_T1_4",
+      "validation_commit": "05faa4e861a2ba5b7b2239f1f44126c087afb668"
     },
     {
       "label": "p1:arith:twokernel",
@@ -18930,7 +18931,8 @@
           "validation_commit": "541d7b0e209d5473d5610463f873add24616c02d"
         }
       ],
-      "canonical_statement": "PaperP1.CompanionKernelCountsUnderHeathBrown.companion_T1_5"
+      "canonical_statement": "PaperP1.CompanionKernelCountsUnderHeathBrown.companion_T1_5",
+      "validation_commit": "05faa4e861a2ba5b7b2239f1f44126c087afb668"
     },
     {
       "label": "p1:arith:anchor",
@@ -22726,7 +22728,8 @@
           "validation_commit": "541d7b0e209d5473d5610463f873add24616c02d"
         }
       ],
-      "canonical_statement": "PaperP1.CompanionKernelCountsUnderHeathBrown.companion_T1_13"
+      "canonical_statement": "PaperP1.CompanionKernelCountsUnderHeathBrown.companion_T1_13",
+      "validation_commit": "05faa4e861a2ba5b7b2239f1f44126c087afb668"
     },
     {
       "label": "p1:arith:fixed-support",
