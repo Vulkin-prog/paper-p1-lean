@@ -3775,3 +3775,16 @@ public import PaperP1.Asymptotics.PositionalOriginalDeletion
 public import PaperP1.Asymptotics.PositionalOriginalDeletionWeighted
 public import PaperP1.Asymptotics.PositionalRegularApproximation
 public import PaperP1.Asymptotics.PositionalWeightedApproximation
+public import PaperP1.Asymptotics.AllPairCriteria
+public import PaperP1.Asymptotics.AllPairErasureTheorem
+public import PaperP1.Asymptotics.AllPairOriginalCosts
+public import PaperP1.Asymptotics.AllPairResidualMass
+public import PaperP1.Asymptotics.DependentPairSecondMoment
+public import PaperP1.Asymptotics.ErasedCountMean
+public import PaperP1.Asymptotics.ErasedPoissonCount
+public import PaperP1.Asymptotics.OnceErasedPoisson
+public import PaperP1.Asymptotics.OriginalDeletedIntensity
+public import PaperP1.Asymptotics.OriginalHermiteCount
+public import PaperP1.Asymptotics.PositionalDeletedCountCumulant
+public import PaperP1.Asymptotics.PositionalDeletionTransfer
+public import PaperP1.Asymptotics.PositionalOriginalCovariance

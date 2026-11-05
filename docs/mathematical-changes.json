@@ -22239,6 +22239,72 @@
         "status": "not_integrated"
       },
       "validation_commit": "b5932d824df1b6acebb7833186be2b15e3fa2099"
+    },
+    {
+      "id": "P1-MATH-0443",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-pairs",
+        "number": "T19.14",
+        "page": 78,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1059,
+        "statement_sha256": "9ba1b303d71719a03d4c4ac77972609619003359996ad1ac5f2833d0720016fc"
+      },
+      "original_assumption": "The complete all-pair erasure and first-order original-law criteria retained finite geometric inputs through residual activity, deleted-field comparison and finer coordinate intensity.",
+      "finding": "Internal bad-pair, no-singleton joint and full polynomial field bounds discharge every geometric use inT19.14 and the intensity/covariance conclusions ofT19.10. Coarse exponent1 positive two-edge control suffices for these first-order criteria without a sharpO(a_N^2) premise.",
+      "proposed_revision": "Use the internal coarse positive two-edge bound for intensity restoration and the actual polynomial field comparison for covariance and count-law projection. Keep each actual deleted mean, literal source Hermite parameters, full all-pair graph and fixed critical-band little-o quantifiers explicit.",
+      "impact": "Full companionT19.14 becomes unconditional; the actual intensity and factorial-covariance parts ofT19.10 are also unconditional while its additionalO(a_N^2) assertions remain conditional. Coverage becomes135 proved,29 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.AllPairCriteria.goodResidual_nonneg",
+        "PaperP1.AllPairCriteria.allResidual_nonneg",
+        "PaperP1.AllPairCriteria.goodPoissonDistance_nonneg",
+        "PaperP1.AllPairCriteria.uniform_poisson_comparison",
+        "PaperP1.AllPairCriteria.good_criterion_iff",
+        "PaperP1.AllPairCriteria.uniform_criterion_iff",
+        "PaperP1.AllPairErasureTheorem.allCount_eq_total",
+        "PaperP1.AllPairErasureTheorem.retained_geometry",
+        "PaperP1.AllPairErasureTheorem.complete_criteria",
+        "PaperP1.AllPairErasureTheorem.criteria_on_scale",
+        "PaperP1.AllPairErasureTheorem.companion_T19_14",
+        "PaperP1.AllPairOriginalCosts.finite_weighted_cost",
+        "PaperP1.AllPairOriginalCosts.uniform_bound",
+        "PaperP1.AllPairResidualMass.uniform_local",
+        "PaperP1.AllPairResidualMass.uniform_tau",
+        "PaperP1.DependentPairSecondMoment.uniform_joint_bound",
+        "PaperP1.DependentPairSecondMoment.uniform_factorial_bound",
+        "PaperP1.DependentPairSecondMoment.uniform_good_bound",
+        "PaperP1.ErasedCountMean.uniform_positive",
+        "PaperP1.ErasedCountMean.uniform_error",
+        "PaperP1.ErasedPoissonCount.poisson_law_eq",
+        "PaperP1.ErasedPoissonCount.uniform_bound",
+        "PaperP1.ErasedPoissonCount.uniform_relative",
+        "PaperP1.OnceErasedPoisson.uniform_mean_error",
+        "PaperP1.OnceErasedPoisson.uniform_bound",
+        "PaperP1.OnceErasedPoisson.uniform_relative",
+        "PaperP1.OriginalDeletedIntensity.uniform_bound",
+        "PaperP1.OriginalHermiteCount.at_scale_of_lower",
+        "PaperP1.OriginalHermiteCount.uniform_bound",
+        "PaperP1.OriginalHermiteCount.uniform_relative",
+        "PaperP1.PositionalDeletedCountCumulant.uniform_bound",
+        "PaperP1.PositionalDeletionTransfer.uniform_original_moments",
+        "PaperP1.PositionalDeletionTransfer.uniform_weighted_comparison",
+        "PaperP1.PositionalOriginalCovariance.uniform_bound",
+        "PaperP1.AllPairCriteria.goodResidual",
+        "PaperP1.AllPairCriteria.allResidual",
+        "PaperP1.AllPairCriteria.goodPoissonDistance",
+        "PaperP1.AllPairErasureTheorem.retainedField",
+        "PaperP1.OriginalHermiteCount.HermiteNegligible",
+        "PaperP1.OriginalHermiteCount.HermiteAtScale"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16147 jobs); direct axiom audit passed for 15010 declarations using only propext, Classical.choice and Quot.sound; all 14380 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.16 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

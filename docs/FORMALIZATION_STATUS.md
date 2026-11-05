@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+CompanionT19.14 is unconditional (P1-MATH-0443): complete all-pair erasure costs, retained-space geometry and every original-law first-order criterion. ActualT19.10 intensity/covariance conclusions are unconditional; its additionalO(a_N^2) assertions remain conditional.
+
 Main20.1 is unconditional (P1-MATH-0442): the actual positive original-grid unsigned single/pair Poisson comparison holds for every fixed polynomial weight. Actual once-deleted/isolated field comparisons are also unconditional; finerT19.10 conclusions remain separate.
 
 CompanionT22.5/T22.6 are unconditional (P1-MATH-0441): full actual selected critical-order pair theorem, exact finite modified moments, four nonnegative deficits and complete weighted pair-leakage little-o. The selected-family and fixed-degree scopes remain explicit.
@@ -29,7 +31,7 @@ CompanionT14.1 is unconditional (P1-MATH-0431), with connected activity strength
 
 CompanionT1.8 is unconditional (P1-MATH-0430): exact dense-component to actual-rank transfer gives subpower nonaligned hosts and both printed kernel sumsN^(1+epsilon), including the full value kernel without block-parity rows.
 
-Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is134 proved,30 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
+Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is135 proved,29 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
 
 The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. The full arbitrary-source statement was subsequently discharged at P1-MATH-0429.
 
@@ -71,7 +73,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is134/167 unconditional and30 conditional (164/167 completed). The project records440 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is135/167 unconditional and29 conditional (164/167 completed). The project records441 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -190,7 +192,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14976 audited theorem/lemma declarations**. This
+- The project currently has **15010 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26195,3 +26197,22 @@ Earlier conditional declarations and literature history are preserved. Only the 
 P1-MATH-0442 adds seven modules and nine theorems. Main20.1 moves from conditional to proved. Coverage becomes134 proved,30 conditional and3 in_progress out of167, with164 completed. The project records440 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16121 jobs); direct axiom audit passed for 14976 declarations using only propext, Classical.choice and Quot.sound; all 14340 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.24 GiB.
+
+
+## Unconditional full all-pair erasure criteria and deleted intensity covariance
+
+Companion PropositionT19.14 now has unconditional canonical proofs of its complete original-law statement. AllPairErasureTheorem.companion_T19_14 proves the actual residual event mass, original-law total-variation cost, nonnegative actual mean gap, weighted Poisson recurrence error and all three original first-order criterion equivalences. Its retained_geometry theorem preserves strict start separation and pairwise directness of the original retained spaces in every realization. The complete statement and proof in companion_sections/limits_appendix.tex lines1050-1112 were rechecked, including the explicit warning that filtered indicators are not thereby independent.
+
+DependentPairSecondMoment proves the positive factorial second edge moment at exponent1 for every actual family of dependent pairs. The proof uses internally proved bounded-order no-singleton joint mass, keeps overlapping pair unions and does not replace this bound by the sharperO(a_N^2) assertion. OriginalDeletedIntensity then proves the sum of absolute coordinate intensity errors of both actual deleted fields at exponent1. ErasedCountMean and OnceErasedPoisson retain their own actual means and the exact single-arrival intensity; neither is silently replaced by the nominal mean.
+
+AllPairResidualMass, AllPairOriginalCosts and AllPairCriteria replace their exact finite geometric leaves by internally proved bad-pair, local and contact masses. The full all-pair dependency graph remains unrestricted in degree. The actual finite coupling costs and weighted Poisson recurrence norm comparison are preserved. ErasedPoissonCount and OnceErasedPoisson combine the unconditional field comparison with the finer actual intensity error to obtain exponent4/5 Poisson approximation at their respective actual means. OriginalHermiteCount proves the projected original-count comparison against the literal source parameterslambda=N*2^(-L),theta=2*beta, including admissibility before construction of its probability measure.
+
+AllPairErasureTheorem proves every criterion is uniformly negligible at the exact scaleL*N^(-2/3), and hence their stated equivalences. Its criteria_on_scale theorem retains the source comparison assumptions for every eventually comparable positive scale. Uniform tolerance quantifiers remain after all fixed critical-band constants and beforeN. These first-order conclusions do not require the stronger two-good-edgeO(a_N^2) estimate. The separate optimal exact-actual-cumulant exponent4/3 theorem of main19.1 is not promoted.
+
+PositionalDeletionTransfer also makes every fixed polynomial comparison through the actual deletion kernels unconditional. PositionalOriginalCovariance applies the degree2 weighted comparison, actual deleted moment bounds and bounded independent background means to the sum of absolute factorial-covariance entries. PositionalDeletedCountCumulant controls both actual second factorial cumulants at exponent4/5. Together with OriginalDeletedIntensity these discharge the remaining intensity/covariance parts of companionT19.10. FullT19.10 stays conditional for its additionalO(a_N^2) activation and once/all coupling assertions. The fullT19.10 statement and proof in companion_sections/limits_appendix.tex lines659-758 were rechecked.
+
+Earlier conditional declarations and literature history are preserved. Discharges concern only these exact numbered uses, not general geometric properties. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0443 adds thirteen modules, thirty-four theorems and six definitions. CompanionT19.14 moves from conditional to proved. Coverage becomes135 proved,29 conditional and3 in_progress out of167, with164 completed. The project records441 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16147 jobs); direct axiom audit passed for 15010 declarations using only propext, Classical.choice and Quot.sound; all 14380 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.16 GiB.

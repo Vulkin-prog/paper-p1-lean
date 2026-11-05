@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**440 mathematical improvements and two statement-scope corrections are confirmed.**
+**441 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -25358,3 +25358,22 @@ Earlier conditional declarations and literature history are preserved. Only the 
 P1-MATH-0442 adds seven modules and nine theorems. Main20.1 moves from conditional to proved. Coverage becomes134 proved,30 conditional and3 in_progress out of167, with164 completed. The project records440 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16121 jobs); direct axiom audit passed for 14976 declarations using only propext, Classical.choice and Quot.sound; all 14340 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.24 GiB.
+
+
+## Unconditional full all-pair erasure criteria and deleted intensity covariance
+
+Companion PropositionT19.14 now has unconditional canonical proofs of its complete original-law statement. AllPairErasureTheorem.companion_T19_14 proves the actual residual event mass, original-law total-variation cost, nonnegative actual mean gap, weighted Poisson recurrence error and all three original first-order criterion equivalences. Its retained_geometry theorem preserves strict start separation and pairwise directness of the original retained spaces in every realization. The complete statement and proof in companion_sections/limits_appendix.tex lines1050-1112 were rechecked, including the explicit warning that filtered indicators are not thereby independent.
+
+DependentPairSecondMoment proves the positive factorial second edge moment at exponent1 for every actual family of dependent pairs. The proof uses internally proved bounded-order no-singleton joint mass, keeps overlapping pair unions and does not replace this bound by the sharperO(a_N^2) assertion. OriginalDeletedIntensity then proves the sum of absolute coordinate intensity errors of both actual deleted fields at exponent1. ErasedCountMean and OnceErasedPoisson retain their own actual means and the exact single-arrival intensity; neither is silently replaced by the nominal mean.
+
+AllPairResidualMass, AllPairOriginalCosts and AllPairCriteria replace their exact finite geometric leaves by internally proved bad-pair, local and contact masses. The full all-pair dependency graph remains unrestricted in degree. The actual finite coupling costs and weighted Poisson recurrence norm comparison are preserved. ErasedPoissonCount and OnceErasedPoisson combine the unconditional field comparison with the finer actual intensity error to obtain exponent4/5 Poisson approximation at their respective actual means. OriginalHermiteCount proves the projected original-count comparison against the literal source parameterslambda=N*2^(-L),theta=2*beta, including admissibility before construction of its probability measure.
+
+AllPairErasureTheorem proves every criterion is uniformly negligible at the exact scaleL*N^(-2/3), and hence their stated equivalences. Its criteria_on_scale theorem retains the source comparison assumptions for every eventually comparable positive scale. Uniform tolerance quantifiers remain after all fixed critical-band constants and beforeN. These first-order conclusions do not require the stronger two-good-edgeO(a_N^2) estimate. The separate optimal exact-actual-cumulant exponent4/3 theorem of main19.1 is not promoted.
+
+PositionalDeletionTransfer also makes every fixed polynomial comparison through the actual deletion kernels unconditional. PositionalOriginalCovariance applies the degree2 weighted comparison, actual deleted moment bounds and bounded independent background means to the sum of absolute factorial-covariance entries. PositionalDeletedCountCumulant controls both actual second factorial cumulants at exponent4/5. Together with OriginalDeletedIntensity these discharge the remaining intensity/covariance parts of companionT19.10. FullT19.10 stays conditional for its additionalO(a_N^2) activation and once/all coupling assertions. The fullT19.10 statement and proof in companion_sections/limits_appendix.tex lines659-758 were rechecked.
+
+Earlier conditional declarations and literature history are preserved. Discharges concern only these exact numbered uses, not general geometric properties. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0443 adds thirteen modules, thirty-four theorems and six definitions. CompanionT19.14 moves from conditional to proved. Coverage becomes135 proved,29 conditional and3 in_progress out of167, with164 completed. The project records441 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16147 jobs); direct axiom audit passed for 15010 declarations using only propext, Classical.choice and Quot.sound; all 14380 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.16 GiB.
