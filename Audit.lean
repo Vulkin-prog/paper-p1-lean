@@ -4245,6 +4245,13 @@ import PaperP1
 #print axioms PaperP1.FixedDegreePlaneCount.fixed_outer_degree_count
 #print axioms PaperP1.FixedDegreePlaneCount.height_controlled_count
 #print axioms PaperP1.FixedDegreePlaneCount.unconditional_count
+#print axioms PaperP1.FixedDegreeSharpFieldPlaneCount.rational_geometric_count
+#print axioms PaperP1.FixedDegreeSharpFieldPlaneCount.rational_count
+#print axioms PaperP1.FixedDegreeSharpFieldPlaneCount.field_count
+#print axioms PaperP1.FixedDegreeSharpFieldPlaneCount.bounded_degree_count
+#print axioms PaperP1.FixedDegreeSharpPlaneCount.fixed_outer_degree_count
+#print axioms PaperP1.FixedDegreeSharpPlaneCount.height_controlled_count
+#print axioms PaperP1.FixedDegreeSharpPlaneCount.unconditional_count
 #print axioms PaperP1.FixedSourceCertificate.sourceValues_pos
 #print axioms PaperP1.FixedSourceCertificate.sourceValues_le_square
 #print axioms PaperP1.FixedSourceCertificate.mem_certificateTargets
@@ -6788,6 +6795,8 @@ import PaperP1
 #print axioms PaperP1.BoundedObservationPool.widthEnvelope_ge_one
 #print axioms PaperP1.BoundedObservationPool.pool_budget_le_envelope
 #print axioms PaperP1.BoundedObservationPool.pool_count_logarithmic
+#print axioms PaperP1.BoundedPlaneCurveCount.field_uniform_bound
+#print axioms PaperP1.BoundedPlaneCurveCount.uniform_bound
 #print axioms PaperP1.BoundedPlaneCurveCountUnderBCN.uniform_bound
 #print axioms PaperP1.BoundedSecondMomentUnderBCN.seedConstant_gt_one
 #print axioms PaperP1.BoundedSecondMomentUnderBCN.uniform_bound
@@ -7783,6 +7792,7 @@ import PaperP1
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_cumulant
 #print axioms PaperP1.HeathBrownHeightBudget.uniform_first_count
 #print axioms PaperP1.HeathBrownHeightBudget.uniform_second_count
+#print axioms PaperP1.HeightControlledAffineCount.uniform_count
 #print axioms PaperP1.HeightControlledBiformCount.uniform_first_count
 #print axioms PaperP1.HeightControlledBiformCount.uniform_second_count
 #print axioms PaperP1.HeightTwoBoundaryJointMass.finite_bound

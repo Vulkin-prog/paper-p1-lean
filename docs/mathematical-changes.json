@@ -20669,6 +20669,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "423f942e18aff8b958dff3c97a89b9cf54a2d67a"
+    },
+    {
+      "id": "P1-MATH-0401",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The unconditional coefficient- and field-uniform fixed-degree plane estimate had exponent2/D+epsilon, which did not supply a square-root estimate for all bounded nonlinear degrees.",
+      "finding": "Every irreducible degree-D plane equation over every characteristic-zero field now satisfies the full signed coefficient-unrestricted K(D,epsilon)*H^(1/D+epsilon) estimate. The required B^(1/2+delta) bound on every fixed finite nonlinear degree range is also proved without a BCN premise.",
+      "proposed_revision": "Use the sharp fixed-degree plane theorem and its bounded-degree square-root consequence in arguments with a fixed auxiliary degree. Keep original BCN degree-uniform and all-dimensional claims separate.",
+      "impact": "Closes the coefficient-uniform fixed-degree1/D scale and the unconditional bounded-degree interface needed for common-divisor confinement. Original growing-degree BCN and numbered coverage remain unchanged.",
+      "evidence": [
+        "PaperP1.FixedDegreeSharpFieldPlaneCount.rational_geometric_count",
+        "PaperP1.FixedDegreeSharpFieldPlaneCount.rational_count",
+        "PaperP1.FixedDegreeSharpFieldPlaneCount.field_count",
+        "PaperP1.FixedDegreeSharpFieldPlaneCount.bounded_degree_count",
+        "PaperP1.FixedDegreeSharpPlaneCount.fixed_outer_degree_count",
+        "PaperP1.FixedDegreeSharpPlaneCount.height_controlled_count",
+        "PaperP1.FixedDegreeSharpPlaneCount.unconditional_count",
+        "PaperP1.BoundedPlaneCurveCount.field_uniform_bound",
+        "PaperP1.BoundedPlaneCurveCount.uniform_bound",
+        "PaperP1.HeightControlledAffineCount.uniform_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15739 jobs); direct axiom audit passed for 14577 declarations using only propext, Classical.choice and Quot.sound; all 13914 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.24 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

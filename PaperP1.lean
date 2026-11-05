@@ -3580,3 +3580,7 @@ public import PaperP1.Analysis.AffineDeterminantDegreeChoice
 public import PaperP1.Diophantine.AffineSmoothResidueClasses
 public import PaperP1.Diophantine.FinitePrimeAffineCount
 public import PaperP1.Diophantine.GeometricAffinePointCount
+public import PaperP1.Arithmetic.FixedDegreeSharpFieldPlaneCount
+public import PaperP1.Arithmetic.FixedDegreeSharpPlaneCount
+public import PaperP1.Asymptotics.BoundedPlaneCurveCount
+public import PaperP1.Asymptotics.HeightControlledAffineCount

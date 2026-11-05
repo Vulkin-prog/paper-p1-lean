@@ -18692,3 +18692,20 @@ Absorbing fixed polynomial coefficient height, changing coordinates to full oute
 P1-MATH-0400 adds four modules, six theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records398 improvements and two statement-scope corrections. No new axiom, unproved counting premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15731 jobs); direct axiom audit passed for 14567 declarations using only propext, Classical.choice and Quot.sound; all 13904 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.26 GiB.
+
+
+## Coefficient- and field-uniform fixed-degree plane exponent 1 over D
+
+FixedDegreeSharpFieldPlaneCount.field_count proves the actual bound K(D,epsilon)*H^(1/D+epsilon) for every irreducible plane equation of exact total degree D>=2 over every characteristic-zero field, at every real height H>2. The constant precedes the coefficient field, equation and height. Original coefficients are entirely unrestricted; no complex embedding or absolute irreducibility input is required. The bound counts the full signed integer grid of radius floor(H), including all axis and singular points.
+
+HeightControlledAffineCount first absorbs every fixed polynomial coefficient-height budget into the global affine1/b estimate of checkpoint400, with the explicit exponent budget epsilon/(kappa+1). FixedDegreeSharpPlaneCount constructs a bounded integer shear which makes the outer degree equal the actual total degree, transports the full grid and coefficient height, and proves the1/D exponent at controlled coefficient height. Larger actual point populations then construct the proved bounded-height geometric presentation of the same degree; small populations are absorbed directly. Thus no coefficient normalization or changed equation is supplied externally.
+
+The rational and arbitrary-field descent is internal. Denominator clearing preserves actual degree and grids. Rational irreducible equations which are not absolutely irreducible have the proved finite non-geometric bound. For arbitrary fields a sufficiently large actual integer population constructs the rational scalar descent of the same degree; small populations are bounded directly. bounded_degree_count selects a common constant for every fixed finite degree interval.
+
+BoundedPlaneCurveCount proves the resulting unconditional eventual square-root bound for every fixed finite nonlinear degree range and every fixed integer box dilation K: for sufficiently large B, the full actual grid at radius K*B has at most B^(1/2+delta) points. Its threshold precedes every coefficient field and irreducible equation. The rational degree-sum formulation matches the previously conditional bounded-degree interface used in the common-divisor confinement proof, without taking any BCN property as an argument.
+
+The constants still depend on the fixed degree or fixed finite degree ceiling. The stronger original BCN estimate requires c(n)*D^2*H^(1/D)*(log H)^kappa uniformly in growing D and all ambient dimensions; it is not inferred here. Main13.4, its original power-law growing-degree corollary13.5 and the normalized arbitrary-dimensional projective curve-count input remain open. No original numbered result is promoted at this checkpoint.
+
+P1-MATH-0401 adds four modules and ten theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records399 improvements and two statement-scope corrections. No new axiom, external counting premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15739 jobs); direct axiom audit passed for 14577 declarations using only propext, Classical.choice and Quot.sound; all 13914 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.24 GiB.

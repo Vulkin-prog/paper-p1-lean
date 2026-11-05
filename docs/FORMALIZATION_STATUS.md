@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records398 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records399 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14567 audited theorem/lemma declarations**. This
+- The project currently has **14577 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25463,3 +25463,20 @@ Absorbing fixed polynomial coefficient height, changing coordinates to full oute
 P1-MATH-0400 adds four modules, six theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records398 improvements and two statement-scope corrections. No new axiom, unproved counting premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15731 jobs); direct axiom audit passed for 14567 declarations using only propext, Classical.choice and Quot.sound; all 13904 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.26 GiB.
+
+
+## Coefficient- and field-uniform fixed-degree plane exponent 1 over D
+
+FixedDegreeSharpFieldPlaneCount.field_count proves the actual bound K(D,epsilon)*H^(1/D+epsilon) for every irreducible plane equation of exact total degree D>=2 over every characteristic-zero field, at every real height H>2. The constant precedes the coefficient field, equation and height. Original coefficients are entirely unrestricted; no complex embedding or absolute irreducibility input is required. The bound counts the full signed integer grid of radius floor(H), including all axis and singular points.
+
+HeightControlledAffineCount first absorbs every fixed polynomial coefficient-height budget into the global affine1/b estimate of checkpoint400, with the explicit exponent budget epsilon/(kappa+1). FixedDegreeSharpPlaneCount constructs a bounded integer shear which makes the outer degree equal the actual total degree, transports the full grid and coefficient height, and proves the1/D exponent at controlled coefficient height. Larger actual point populations then construct the proved bounded-height geometric presentation of the same degree; small populations are absorbed directly. Thus no coefficient normalization or changed equation is supplied externally.
+
+The rational and arbitrary-field descent is internal. Denominator clearing preserves actual degree and grids. Rational irreducible equations which are not absolutely irreducible have the proved finite non-geometric bound. For arbitrary fields a sufficiently large actual integer population constructs the rational scalar descent of the same degree; small populations are bounded directly. bounded_degree_count selects a common constant for every fixed finite degree interval.
+
+BoundedPlaneCurveCount proves the resulting unconditional eventual square-root bound for every fixed finite nonlinear degree range and every fixed integer box dilation K: for sufficiently large B, the full actual grid at radius K*B has at most B^(1/2+delta) points. Its threshold precedes every coefficient field and irreducible equation. The rational degree-sum formulation matches the previously conditional bounded-degree interface used in the common-divisor confinement proof, without taking any BCN property as an argument.
+
+The constants still depend on the fixed degree or fixed finite degree ceiling. The stronger original BCN estimate requires c(n)*D^2*H^(1/D)*(log H)^kappa uniformly in growing D and all ambient dimensions; it is not inferred here. Main13.4, its original power-law growing-degree corollary13.5 and the normalized arbitrary-dimensional projective curve-count input remain open. No original numbered result is promoted at this checkpoint.
+
+P1-MATH-0401 adds four modules and ten theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records399 improvements and two statement-scope corrections. No new axiom, external counting premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15739 jobs); direct axiom audit passed for 14577 declarations using only propext, Classical.choice and Quot.sound; all 13914 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.24 GiB.
