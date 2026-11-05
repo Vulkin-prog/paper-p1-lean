@@ -10112,6 +10112,11 @@ import PaperP1
 #print axioms PaperP1.PellInput.scaleImag_height
 #print axioms PaperP1.PellInput.exists_squarefree_reduction
 #print axioms PaperP1.PellInput.hasAtMostSolutionsReal_of_squarefree_reduction
+#print axioms PaperP1.GeometricBiformCoarseCount.finite_count
+#print axioms PaperP1.GeometricBiformCoarseCount.bounded_first_projection
+#print axioms PaperP1.GeometricBiformCoarseCount.coarse_real_count
+#print axioms PaperP1.GeometricBiformCoarseCount.height_pos
+#print axioms PaperP1.GeometricBiformCoarseCount.second_degree_one
 #print axioms PaperP1.GeometricProjectiveFibres.fibre_evaluation
 #print axioms PaperP1.GeometricProjectiveFibres.fibre_homogeneous
 #print axioms PaperP1.GeometricProjectiveFibres.fibre_chart_coefficient
@@ -10127,6 +10132,8 @@ import PaperP1
 #print axioms PaperP1.GridRationalGraphExclusion.integral_point
 #print axioms PaperP1.GridRationalGraphExclusion.bound_le_polynomial
 #print axioms PaperP1.PellInput.quadraticOrderConductorFiberBound
+#print axioms PaperP1.HeathBrownHigherDegreeBiformInput.full_input
+#print axioms PaperP1.HeathBrownHigherDegreeBiformInput.restriction_of_full_input
 #print axioms PaperP1.HomogeneousCharts.chart_degree
 #print axioms PaperP1.HomogeneousCharts.chart_homogenize
 #print axioms PaperP1.HomogeneousCharts.chart_coeff

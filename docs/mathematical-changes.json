@@ -18635,6 +18635,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "c54630411b57f9ed5b7412def325d3ea806d6c4d"
+    },
+    {
+      "id": "P1-MATH-0341",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The ordinary Heath-Brown input still included b=1 even though the exact unbounded-second-pair assertion in that case follows from an elementary uniform projective fibre count.",
+      "finding": "The complete b=1 bound holds with K=36, for every epsilon>0 and every original real L>=1. A general coarse bound18*(b+1)*L^2 is also proved, and only the strict b>=2 restriction remains as an unproved ordinary input.",
+      "proposed_revision": "Separate the internally proved b=1 case and use the reduced b>=2 ordinary Heath-Brown property for the remaining sharp estimate, preserving every original height and primitivity quantifier.",
+      "impact": "Discharges the entire second-degree-one sector of the literature input and narrows its remaining scope. The b>=2 theorem remains unproved and no numbered conditional coverage is promoted.",
+      "evidence": [
+        "PaperP1.GeometricBiformCoarseCount.finite_count",
+        "PaperP1.GeometricBiformCoarseCount.bounded_first_projection",
+        "PaperP1.GeometricBiformCoarseCount.coarse_real_count",
+        "PaperP1.GeometricBiformCoarseCount.height_pos",
+        "PaperP1.GeometricBiformCoarseCount.second_degree_one",
+        "PaperP1.HeathBrownHigherDegreeBiformInput.full_input",
+        "PaperP1.HeathBrownHigherDegreeBiformInput.restriction_of_full_input",
+        "PaperP1.HeathBrownHigherDegreeBiformInput.Input"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15581 jobs); direct axiom audit passed for 14222 declarations using only propext, Classical.choice and Quot.sound; all 13498 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.32 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
