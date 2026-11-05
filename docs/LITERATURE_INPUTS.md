@@ -26356,3 +26356,24 @@ Earlier conditional proofs and external-input history are preserved. Only the fo
 P1-MATH-0434 adds three modules and six theorems. CompanionT17.5 moves from conditional to proved. Coverage becomes119 proved,45 conditional and3 in_progress out of167, with164 completed. The project records432 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16009 jobs); direct axiom audit passed for 14875 declarations using only propext, Classical.choice and Quot.sound; all 14233 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.22 GiB.
+
+
+## Unconditional explicit references and fixed-height optimal channel hierarchy
+
+Stable ID: p1:internal:unconditional-explicit-fixed-height-law. Internal first-law approximation, actual channel profiles, moving-phase analysis and probability stability discharge only these numbered conclusions. Every channel height is fixed beforeN. The full actual-cumulant optimal4/3 law and general geometric properties remain separate.
+
+Main Corollary1.4, Theorem18.1 and Corollary18.3 now have unconditional canonical proofs. The statement and complete proof of1.4 in main_sections/introduction.tex lines181-220 and the statements and full proofs of18.1/18.3 in main_sections/channel_hierarchy.tex lines28-242 were rechecked. The exact original count law, nominal mean, literal finite channel sums, moving phases and probability status are retained.
+
+ExplicitQuadraticApproximation.article_1_4 combines the internally proved actual two-channel cumulant profile with the unconditional exponent1 full-model quadratic approximation. It proves the printed exponent4/5 law distance, eventual probability status and the exact mass formula at every nonnegative integer, with parameters determined byN andL. It invokes no optimal4/3 exact-reference theorem.
+
+FixedHeightCumulantProfile proves the coarse and first-omitted-height actual cumulant remainders at every prescribed fixed height. It uses the unconditional actual exceptional-pair partition, high-height aligned activity, finite private-channel profile and actual diagonal bound. FixedHeightQuadraticLaw transfers these estimates to the complete original law using the exponent1 reference error, then proves the moving relative error and actual probability-measure total-variation equivalent. The reference coefficient is the literal finite sum; no limiting value replaces the moving nominal mean or phase.
+
+FixedHeightHierarchy.article_18_1 assembles the exact cumulant remainder, signed law remainder and total-variation equivalent on one threshold. Its independent uniform_lower_power theorem proves the quantitative lower bound at the exponenth/(h+1), establishing the source optimal-power claim for every fixed truncation. All heights and accuracy margins are fixed beforeN. This is distinct from the unresolved optimal4/3 approximation with the full actual cumulant.
+
+TwoChannelReference supplies the exact height-five law remainder and both height-five/height-six probability equivalents for18.3. The already checked finite closed formula forM5, the complete height-five coefficient and both printed phase constants are retained. ExplicitHermiteLaw also proves the same original-law rate and moving probability equivalent for every fixed-height Hermite reference. It does not claim the separate exact-actual-parameter4/3 assertion of main19.1.
+
+All former external-input uses in these three conclusions are now supplied by internal channel arithmetic, phase analysis, probability stability and the first full-model quadratic law. Earlier conditional declarations and their history are preserved. No general geometric property, growing-height uniform theorem or BCN result is promoted. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0435 adds six modules, twenty-four theorems and one definition. Main1.4,18.1 and18.3 move from conditional to proved. Coverage becomes122 proved,42 conditional and3 in_progress out of167, with164 completed. The project records433 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16021 jobs); direct axiom audit passed for 14899 declarations using only propext, Classical.choice and Quot.sound; all 14258 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.18 GiB.

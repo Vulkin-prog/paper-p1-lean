@@ -3719,3 +3719,9 @@ public import PaperP1.Asymptotics.SmallCoreSourceMass
 public import PaperP1.Asymptotics.QuadraticRateOne
 public import PaperP1.Asymptotics.TripleActivityClosure
 public import PaperP1.Asymptotics.TripleActivityLawReconstruction
+public import PaperP1.Asymptotics.ExplicitHermiteLaw
+public import PaperP1.Asymptotics.ExplicitQuadraticApproximation
+public import PaperP1.Asymptotics.FixedHeightCumulantProfile
+public import PaperP1.Asymptotics.FixedHeightHierarchy
+public import PaperP1.Asymptotics.FixedHeightQuadraticLaw
+public import PaperP1.Asymptotics.TwoChannelReference

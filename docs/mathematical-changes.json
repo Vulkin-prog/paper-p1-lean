@@ -21916,6 +21916,57 @@
         "status": "not_integrated"
       },
       "validation_commit": "cba94c7aa6474483885bca1699ec926c05682017"
+    },
+    {
+      "id": "P1-MATH-0435",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:cor:explicit",
+        "number": "1.4",
+        "page": 4,
+        "source": "main_sections/introduction.tex",
+        "line": 181,
+        "statement_sha256": "5d3e571464dff97890f4f04e4f1bce1cb7c0ab9450f1bdf8ee282137769d6ea7"
+      },
+      "original_assumption": "The explicit two-channel reference and fixed-height law hierarchy retained finite geometry and formerly external channel/phase/probability inputs through the first count-law approximation.",
+      "finding": "Internal actual channel profiles, probability stability and the unconditional exponent1 full-model quadratic estimate prove all original fixed-height law conclusions, including moving total-variation equivalents and optimal-power lower bounds, without an optimal4/3 actual-cumulant estimate.",
+      "proposed_revision": "Base every fixed-height reference on the unconditional exponent1 actual-reference law. Retain literal finite channel sums, moving phases and nominal mean; distinguish their proved truncation-dependent optimal exponents from the separate full-cumulant4/3 problem.",
+      "impact": "Main1.4,18.1 and18.3 become unconditional, including probability status, the height-five closed correction, moving variation equivalents and the fixed-height optimal powers. Coverage becomes122 proved,42 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.ExplicitHermiteLaw.uniform_bound",
+        "PaperP1.ExplicitHermiteLaw.uniform_probability_equivalent",
+        "PaperP1.ExplicitQuadraticApproximation.uniform_coefficient",
+        "PaperP1.ExplicitQuadraticApproximation.article_1_4",
+        "PaperP1.FixedHeightCumulantProfile.uniform_coarse",
+        "PaperP1.FixedHeightCumulantProfile.uniform_next_height",
+        "PaperP1.FixedHeightHierarchy.source_exponent",
+        "PaperP1.FixedHeightHierarchy.uniform_lower_power",
+        "PaperP1.FixedHeightHierarchy.article_18_1",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_coarse",
+        "PaperP1.FixedHeightQuadraticLaw.reference_increment",
+        "PaperP1.FixedHeightQuadraticLaw.distance_sub",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_next_remainder",
+        "PaperP1.FixedHeightQuadraticLaw.distance_symm",
+        "PaperP1.FixedHeightQuadraticLaw.distance_stability",
+        "PaperP1.FixedHeightQuadraticLaw.phaseMargin_pos",
+        "PaperP1.FixedHeightQuadraticLaw.phaseMargin_gap",
+        "PaperP1.FixedHeightQuadraticLaw.power_negligible",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_relative",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_probability_equivalent",
+        "PaperP1.TwoChannelReference.height_five_phase",
+        "PaperP1.TwoChannelReference.height_six_phase",
+        "PaperP1.TwoChannelReference.uniform_law_remainder",
+        "PaperP1.TwoChannelReference.uniform_equivalents",
+        "PaperP1.FixedHeightQuadraticLaw.phaseMargin"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16021 jobs); direct axiom audit passed for 14899 declarations using only propext, Classical.choice and Quot.sound; all 14258 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.18 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -284,7 +284,7 @@
       "source": "main_sections/introduction.tex",
       "line": 181,
       "sha256": "5d3e571464dff97890f4f04e4f1bce1cb7c0ab9450f1bdf8ee282137769d6ea7",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.FiniteChannelHierarchy.weight_formula",
         "PaperP1.FiniteChannelHierarchy.mem_channels",
@@ -386,21 +386,43 @@
         "PaperP1.FixedHeightQuadraticLawUnderInputs.Hypotheses",
         "PaperP1.FixedHeightQuadraticLawUnderInputs.phaseMargin",
         "PaperP1.FixedHeightHierarchyUnderInputs.Parameters",
-        "PaperP1.FixedHeightHierarchyUnderInputs.Hypotheses"
+        "PaperP1.FixedHeightHierarchyUnderInputs.Hypotheses",
+        "PaperP1.ExplicitHermiteLaw.uniform_bound",
+        "PaperP1.ExplicitHermiteLaw.uniform_probability_equivalent",
+        "PaperP1.ExplicitQuadraticApproximation.uniform_coefficient",
+        "PaperP1.ExplicitQuadraticApproximation.article_1_4",
+        "PaperP1.FixedHeightCumulantProfile.uniform_coarse",
+        "PaperP1.FixedHeightCumulantProfile.uniform_next_height",
+        "PaperP1.FixedHeightHierarchy.source_exponent",
+        "PaperP1.FixedHeightHierarchy.uniform_lower_power",
+        "PaperP1.FixedHeightHierarchy.article_18_1",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_coarse",
+        "PaperP1.FixedHeightQuadraticLaw.reference_increment",
+        "PaperP1.FixedHeightQuadraticLaw.distance_sub",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_next_remainder",
+        "PaperP1.FixedHeightQuadraticLaw.distance_symm",
+        "PaperP1.FixedHeightQuadraticLaw.distance_stability",
+        "PaperP1.FixedHeightQuadraticLaw.phaseMargin_pos",
+        "PaperP1.FixedHeightQuadraticLaw.phaseMargin_gap",
+        "PaperP1.FixedHeightQuadraticLaw.power_negligible",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_relative",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_probability_equivalent",
+        "PaperP1.TwoChannelReference.height_five_phase",
+        "PaperP1.TwoChannelReference.height_six_phase",
+        "PaperP1.TwoChannelReference.uniform_law_remainder",
+        "PaperP1.TwoChannelReference.uniform_equivalents",
+        "PaperP1.FixedHeightQuadraticLaw.phaseMargin"
       ],
       "literature_inputs": [
-        "P1-ARITH-EXPLICIT-CHANNEL-PARAMETERS",
-        "P1-PROB-MEAN-PARAMETER-STABILITY",
-        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
-        "P1-GEO-ORDINARY-SURFACE-COVER",
-        "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+        "p1:internal:unconditional-explicit-fixed-height-law"
       ],
       "mathematical_changes": [
         "P1-MATH-0087",
-        "P1-MATH-0151"
+        "P1-MATH-0151",
+        "P1-MATH-0435"
       ],
-      "notes": "Main Corollary1.4, Theorem18.1 and Corollary18.3 are complete\nconditionally, for the ACTUAL FULL original law and the literal finite\nchannel coefficients. One finite bundle of the SAME three geometric\nproperties precedes N and every critical length. No optimal triple41/30,\noptimal exact-reference4/3 law bound, target truncation remainder or\nhomogeneous nonaligned-rank estimate is assumed.\n\nExplicitQuadraticApproximationUnderInputs.article_1_4 gives the complete\nsource two-channel reference: its full original-law singleton l1 error\nis N^(-4/5+epsilon), the actual signed reference is eventually a probability,\nand every singleton has exactly the printed Poisson--Charlier mass.\nThe coefficient is the literal finite S_23+S_34 expression and its mean\nis the nominal N*2^(-L). The proof combines the already completed actual\npair profile with the stronger first quadratic rate1; it does not use\nthe still open optimal quadratic upper bound. Reference probability\nstatus and its mass formula were already unconditional and are included\nin the assembled source theorem after the same threshold.\n\nFor EVERY fixed height h>=3, the complete cumulant hierarchy is proved:\n\n  |alpha-coefficient_h| <=N^(-1+1/(h+1)+epsilon),\n  |alpha-coefficient_h-heightMass_(h+1)|\n       <=N^(-(h+1)/(h+2)+epsilon).\n\nAll finite lower-order terms in each exact signed channel polynomial\nare retained. Alpha is the actual full second factorial cumulant,\nalready identified with Var(Z)-E(Z), and heightMass is exactly\nlambda^2/N times the full height sum T_(h+1)(L). The source exponent\nidentity -1+1/(h+2)=-(h+1)/(h+2) is itself checked.\n\nFixedHeightPrivateChannels proves actual reduced-channel uniqueness\nfrom the two exact unit alignments. At4Q^2(L+1)<N the integer determinant\nbetween two distinct reduced slopes cannot vanish on an actual dyadic\nsource pair. Coprimality then identifies the two channels. Hence their\nactual unordered private edge families are pairwise disjoint. Their\nunion is a literal subset of the actual pair powerset, and its absolute\nsum equals the sum over channels with no multiplicity assumption.\nAn exact sigma/product index bijection identifies the sum of main terms\nwith the source finite-height coefficient.\n\nThe full signed-pair remainder outside that private union is bounded by\nthe ACTUAL weak plus exceptional activities of the finite pair partition.\nThis includes all nonaligned, incompatible, locally defective and boundary\npairs. Independent nonzero-cardinality families have zero centered\ncoefficient, as proved earlier. The fixed-height weak tail is bounded\nunconditionally at power1-1/(h+1). The complete exceptional class has\npower1 under the recorded geometric inputs, without a homogeneous-rank\nsubstitute on incompatible pairs. Each retained channel's joint main\nterm, independent correction and sign gap have power1. The diagonal\nsum of the exact squared marginals has power1 as well. These facts\nassemble the literal coarse cumulant profile. No target profile is\nprovided as a premise.\n\nFixedHeightQuadraticLawUnderInputs proves both the original-law coarse\napproximation and the COMPLETE first-omitted-height signed remainder.\nIn the latter, the exact signed measure Law(Z)-Q(lambda,coefficient_h)\nis compared with (heightMass_(h+1)/2)*Pi_lambda*Delta^2. The remainder is\nN^(-(h+1)/(h+2)+epsilon) in the ordinary full singleton l1 metric.\nThe exact reference-increment and signed-measure translation identities\nare checked before applying the metric estimate. The first quadratic\nrate1 suffices at every fixed height because (h+1)/(h+2)<1. Neither\noptimal4/3 reconstruction nor sharper triple activity is needed.\n\nThe actual original-law leading distance equivalent is also proved.\nFor fixed h,C, ONE finite geometric bundle, chosen at the positive margin\n1/(2(h+1)(h+2)), precedes EVERY tolerance tau>0. After its corresponding\ncommon threshold and for ALL critical L, an actual probability witness\nQ_h for the literal reference satisfies\n\n  |TV(Law(Z),Q_h)/(phaseMass_(h+1)*norm(Pi_lambda*Delta^2)/4)-1|<=tau.\n\nThe phase retains L mod(h+1), the moving nominal mean, and the Poisson\nsecond-difference norm at that same mean. The leading denominator is\nproved positive. The smaller actual-law error at height h+1 is compared\nwith the already established exact gap of adjacent references. A uniform\npower separation and the positive full phase lower bound make that\nerror negligible. The reverse triangle inequality is applied to actual\nsigned distances; the factor2 between l1 and actual total variation\nis retained. A separate quantitative lower bound\nc*N^(-1+1/(h+1)), c>0, for the actual full law-to-reference l1 distance,\ntogether with the coarse upper estimates at every positive loss,\nproves the claimed optimal power h/(h+1). These are original-law\nconclusions, rather than distances only between constructed references.\n\nFixedHeightHierarchyUnderInputs.article_18_1 assembles both literal\nremainder statements, actual probability status and the full moving\nTV equivalent, with one finite bundle and common threshold. The earlier\nphase constants give the source c_b(r), including its positivity.\n\nTwoChannelReferenceUnderInputs specializes the source hierarchy at h=4\nand h=5. The two-channel signed remainder has power5/6 and the leading\ncorrection is precisely M5. The exact closed M5 formula, the identity\ncoefficient5=twoChannelCoefficient+M5 and both finite S_35/S_45 formulas\nwere already proved and remain literal. The actual-law TV equivalent\nat h=4 has the printed coefficient17(r+4)/(1200*2^(r/5)), the moving\nlambda^(9/5), the actual norm and L*N^(-4/5). At h=5 it has the moving\nheight6 phase; its printed c6(r)=(r+5)/(45*2^(r/6)) and lambda exponent11/6\nare identified exactly. Thus both the two-channel optimal power4/5 and\nthe four-channel optimal power5/6 concern their specified original-law\nreferences, with all residues varying after the same threshold.\n\nExplicitHermiteLawUnderInputs additionally proves the entire explicit\nfixed-height Hermite part of main19.1: every fixed h>=3 has original-law\nrate h/(h+1) and exactly the same moving TV equivalent as its quadratic\nreference. Actual independent-Poisson Hermite probabilities are supplied\nby the earlier unconditional construction. The unconditional quadratic/\nHermite error has power4/3 and is negligible on every first omitted\nheight. Main19.1 nevertheless stays IN_PROGRESS: its exact-parameter\nHermite error4/3 still needs the unproved optimal exact-reference upper\nbound. No optimal Hermite lower bound is asserted.\n\nP1-MATH-0151 records the weaker dependency of this whole fixed-height\nhierarchy and explicit reference completion: the already proved first\nquadratic rate1 plus actual pair-profile remainders suffice. The optimal\ntriple arithmetic, exact quadratic4/3 upper bound, and the stronger\nhomogeneous nonaligned main18.2 statement remain open and independent\nof this completion. This is not a proof of those missing statements.\n\nThe same existing finite geometric properties remain ordinary explicit\narguments: normalized curve count, ordinary surface cover and chosen-\nsource surface cover. No BCN, new literature input, manuscript byte edit,\ndependency download, Paper C port, hidden axiom or Palomar registration\nis introduced. Coverage increases from87 unconditional35 conditional\nto87 unconditional38 conditional; confirmed improvements151.",
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13837 jobs); direct axiom audit passed for 10816 declarations using only propext, Classical.choice and Quot.sound; all 9288 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.09 GiB.",
+      "notes": "Main Corollary1.4, Theorem18.1 and Corollary18.3 now have unconditional canonical proofs. The statement and complete proof of1.4 in main_sections/introduction.tex lines181-220 and the statements and full proofs of18.1/18.3 in main_sections/channel_hierarchy.tex lines28-242 were rechecked. The exact original count law, nominal mean, literal finite channel sums, moving phases and probability status are retained.\n\nExplicitQuadraticApproximation.article_1_4 combines the internally proved actual two-channel cumulant profile with the unconditional exponent1 full-model quadratic approximation. It proves the printed exponent4/5 law distance, eventual probability status and the exact mass formula at every nonnegative integer, with parameters determined byN andL. It invokes no optimal4/3 exact-reference theorem.\n\nFixedHeightCumulantProfile proves the coarse and first-omitted-height actual cumulant remainders at every prescribed fixed height. It uses the unconditional actual exceptional-pair partition, high-height aligned activity, finite private-channel profile and actual diagonal bound. FixedHeightQuadraticLaw transfers these estimates to the complete original law using the exponent1 reference error, then proves the moving relative error and actual probability-measure total-variation equivalent. The reference coefficient is the literal finite sum; no limiting value replaces the moving nominal mean or phase.\n\nFixedHeightHierarchy.article_18_1 assembles the exact cumulant remainder, signed law remainder and total-variation equivalent on one threshold. Its independent uniform_lower_power theorem proves the quantitative lower bound at the exponenth/(h+1), establishing the source optimal-power claim for every fixed truncation. All heights and accuracy margins are fixed beforeN. This is distinct from the unresolved optimal4/3 approximation with the full actual cumulant.\n\nTwoChannelReference supplies the exact height-five law remainder and both height-five/height-six probability equivalents for18.3. The already checked finite closed formula forM5, the complete height-five coefficient and both printed phase constants are retained. ExplicitHermiteLaw also proves the same original-law rate and moving probability equivalent for every fixed-height Hermite reference. It does not claim the separate exact-actual-parameter4/3 assertion of main19.1.\n\nAll former external-input uses in these three conclusions are now supplied by internal channel arithmetic, phase analysis, probability stability and the first full-model quadratic law. Earlier conditional declarations and their history are preserved. No general geometric property, growing-height uniform theorem or BCN result is promoted. Original source bytes and compiler/dependency pins remain unchanged.\n\nP1-MATH-0435 adds six modules, twenty-four theorems and one definition. Main1.4,18.1 and18.3 move from conditional to proved. Coverage becomes122 proved,42 conditional and3 in_progress out of167, with164 completed. The project records433 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.\n\nEarlier checkpoint history:\nMain Corollary1.4, Theorem18.1 and Corollary18.3 are complete\nconditionally, for the ACTUAL FULL original law and the literal finite\nchannel coefficients. One finite bundle of the SAME three geometric\nproperties precedes N and every critical length. No optimal triple41/30,\noptimal exact-reference4/3 law bound, target truncation remainder or\nhomogeneous nonaligned-rank estimate is assumed.\n\nExplicitQuadraticApproximationUnderInputs.article_1_4 gives the complete\nsource two-channel reference: its full original-law singleton l1 error\nis N^(-4/5+epsilon), the actual signed reference is eventually a probability,\nand every singleton has exactly the printed Poisson--Charlier mass.\nThe coefficient is the literal finite S_23+S_34 expression and its mean\nis the nominal N*2^(-L). The proof combines the already completed actual\npair profile with the stronger first quadratic rate1; it does not use\nthe still open optimal quadratic upper bound. Reference probability\nstatus and its mass formula were already unconditional and are included\nin the assembled source theorem after the same threshold.\n\nFor EVERY fixed height h>=3, the complete cumulant hierarchy is proved:\n\n  |alpha-coefficient_h| <=N^(-1+1/(h+1)+epsilon),\n  |alpha-coefficient_h-heightMass_(h+1)|\n       <=N^(-(h+1)/(h+2)+epsilon).\n\nAll finite lower-order terms in each exact signed channel polynomial\nare retained. Alpha is the actual full second factorial cumulant,\nalready identified with Var(Z)-E(Z), and heightMass is exactly\nlambda^2/N times the full height sum T_(h+1)(L). The source exponent\nidentity -1+1/(h+2)=-(h+1)/(h+2) is itself checked.\n\nFixedHeightPrivateChannels proves actual reduced-channel uniqueness\nfrom the two exact unit alignments. At4Q^2(L+1)<N the integer determinant\nbetween two distinct reduced slopes cannot vanish on an actual dyadic\nsource pair. Coprimality then identifies the two channels. Hence their\nactual unordered private edge families are pairwise disjoint. Their\nunion is a literal subset of the actual pair powerset, and its absolute\nsum equals the sum over channels with no multiplicity assumption.\nAn exact sigma/product index bijection identifies the sum of main terms\nwith the source finite-height coefficient.\n\nThe full signed-pair remainder outside that private union is bounded by\nthe ACTUAL weak plus exceptional activities of the finite pair partition.\nThis includes all nonaligned, incompatible, locally defective and boundary\npairs. Independent nonzero-cardinality families have zero centered\ncoefficient, as proved earlier. The fixed-height weak tail is bounded\nunconditionally at power1-1/(h+1). The complete exceptional class has\npower1 under the recorded geometric inputs, without a homogeneous-rank\nsubstitute on incompatible pairs. Each retained channel's joint main\nterm, independent correction and sign gap have power1. The diagonal\nsum of the exact squared marginals has power1 as well. These facts\nassemble the literal coarse cumulant profile. No target profile is\nprovided as a premise.\n\nFixedHeightQuadraticLawUnderInputs proves both the original-law coarse\napproximation and the COMPLETE first-omitted-height signed remainder.\nIn the latter, the exact signed measure Law(Z)-Q(lambda,coefficient_h)\nis compared with (heightMass_(h+1)/2)*Pi_lambda*Delta^2. The remainder is\nN^(-(h+1)/(h+2)+epsilon) in the ordinary full singleton l1 metric.\nThe exact reference-increment and signed-measure translation identities\nare checked before applying the metric estimate. The first quadratic\nrate1 suffices at every fixed height because (h+1)/(h+2)<1. Neither\noptimal4/3 reconstruction nor sharper triple activity is needed.\n\nThe actual original-law leading distance equivalent is also proved.\nFor fixed h,C, ONE finite geometric bundle, chosen at the positive margin\n1/(2(h+1)(h+2)), precedes EVERY tolerance tau>0. After its corresponding\ncommon threshold and for ALL critical L, an actual probability witness\nQ_h for the literal reference satisfies\n\n  |TV(Law(Z),Q_h)/(phaseMass_(h+1)*norm(Pi_lambda*Delta^2)/4)-1|<=tau.\n\nThe phase retains L mod(h+1), the moving nominal mean, and the Poisson\nsecond-difference norm at that same mean. The leading denominator is\nproved positive. The smaller actual-law error at height h+1 is compared\nwith the already established exact gap of adjacent references. A uniform\npower separation and the positive full phase lower bound make that\nerror negligible. The reverse triangle inequality is applied to actual\nsigned distances; the factor2 between l1 and actual total variation\nis retained. A separate quantitative lower bound\nc*N^(-1+1/(h+1)), c>0, for the actual full law-to-reference l1 distance,\ntogether with the coarse upper estimates at every positive loss,\nproves the claimed optimal power h/(h+1). These are original-law\nconclusions, rather than distances only between constructed references.\n\nFixedHeightHierarchyUnderInputs.article_18_1 assembles both literal\nremainder statements, actual probability status and the full moving\nTV equivalent, with one finite bundle and common threshold. The earlier\nphase constants give the source c_b(r), including its positivity.\n\nTwoChannelReferenceUnderInputs specializes the source hierarchy at h=4\nand h=5. The two-channel signed remainder has power5/6 and the leading\ncorrection is precisely M5. The exact closed M5 formula, the identity\ncoefficient5=twoChannelCoefficient+M5 and both finite S_35/S_45 formulas\nwere already proved and remain literal. The actual-law TV equivalent\nat h=4 has the printed coefficient17(r+4)/(1200*2^(r/5)), the moving\nlambda^(9/5), the actual norm and L*N^(-4/5). At h=5 it has the moving\nheight6 phase; its printed c6(r)=(r+5)/(45*2^(r/6)) and lambda exponent11/6\nare identified exactly. Thus both the two-channel optimal power4/5 and\nthe four-channel optimal power5/6 concern their specified original-law\nreferences, with all residues varying after the same threshold.\n\nExplicitHermiteLawUnderInputs additionally proves the entire explicit\nfixed-height Hermite part of main19.1: every fixed h>=3 has original-law\nrate h/(h+1) and exactly the same moving TV equivalent as its quadratic\nreference. Actual independent-Poisson Hermite probabilities are supplied\nby the earlier unconditional construction. The unconditional quadratic/\nHermite error has power4/3 and is negligible on every first omitted\nheight. Main19.1 nevertheless stays IN_PROGRESS: its exact-parameter\nHermite error4/3 still needs the unproved optimal exact-reference upper\nbound. No optimal Hermite lower bound is asserted.\n\nP1-MATH-0151 records the weaker dependency of this whole fixed-height\nhierarchy and explicit reference completion: the already proved first\nquadratic rate1 plus actual pair-profile remainders suffice. The optimal\ntriple arithmetic, exact quadratic4/3 upper bound, and the stronger\nhomogeneous nonaligned main18.2 statement remain open and independent\nof this completion. This is not a proof of those missing statements.\n\nThe same existing finite geometric properties remain ordinary explicit\narguments: normalized curve count, ordinary surface cover and chosen-\nsource surface cover. No BCN, new literature input, manuscript byte edit,\ndependency download, Paper C port, hidden axiom or Palomar registration\nis introduced. Coverage increases from87 unconditional35 conditional\nto87 unconditional38 conditional; confirmed improvements151.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16021 jobs); direct axiom audit passed for 14899 declarations using only propext, Classical.choice and Quot.sound; all 14258 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.18 GiB.",
       "validation_history": [
         {
           "status": "in_progress",
@@ -417,9 +439,55 @@
             "P1-ARITH-EXPLICIT-CHANNEL-PARAMETERS",
             "P1-PROB-MEAN-PARAMETER-STABILITY"
           ]
+        },
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (13837 jobs); direct axiom audit passed for 10816 declarations using only propext, Classical.choice and Quot.sound; all 9288 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.09 GiB.",
+          "validation_commit": "d345b0a2035612338f707abd0b995b3f22debf28",
+          "literature_inputs": [
+            "P1-ARITH-EXPLICIT-CHANNEL-PARAMETERS",
+            "P1-PROB-MEAN-PARAMETER-STABILITY",
+            "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+            "P1-GEO-ORDINARY-SURFACE-COVER",
+            "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+          ]
         }
       ],
-      "validation_commit": "d345b0a2035612338f707abd0b995b3f22debf28"
+      "canonical_statement": "PaperP1.ExplicitQuadraticApproximation.article_1_4",
+      "canonical_additional_statements": [],
+      "remaining_unformalized_inputs": [],
+      "input_discharges": [
+        {
+          "input": "P1-ARITH-EXPLICIT-CHANNEL-PARAMETERS",
+          "proof": "PaperP1.ExplicitQuadraticApproximation.article_1_4",
+          "scope": "Full exact main1.4 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-PROB-MEAN-PARAMETER-STABILITY",
+          "proof": "PaperP1.ExplicitQuadraticApproximation.article_1_4",
+          "scope": "Full exact main1.4 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+          "proof": "PaperP1.ExplicitQuadraticApproximation.article_1_4",
+          "scope": "Full exact main1.4 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-GEO-ORDINARY-SURFACE-COVER",
+          "proof": "PaperP1.ExplicitQuadraticApproximation.article_1_4",
+          "scope": "Full exact main1.4 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+          "proof": "PaperP1.ExplicitQuadraticApproximation.article_1_4",
+          "scope": "Full exact main1.4 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        }
+      ]
     },
     {
       "label": "p1:limits:local-rigidity",
@@ -10543,7 +10611,7 @@
       "source": "main_sections/channel_hierarchy.tex",
       "line": 28,
       "sha256": "26e02ddbfa3972d68cba362c8fb4c97b5f4bc6d5518cab955d5a30333971fa7a",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.FiniteChannelHierarchy.weight_formula",
         "PaperP1.FiniteChannelHierarchy.mem_channels",
@@ -10688,24 +10756,43 @@
         "PaperP1.FixedHeightQuadraticLawUnderInputs.Hypotheses",
         "PaperP1.FixedHeightQuadraticLawUnderInputs.phaseMargin",
         "PaperP1.FixedHeightHierarchyUnderInputs.Parameters",
-        "PaperP1.FixedHeightHierarchyUnderInputs.Hypotheses"
+        "PaperP1.FixedHeightHierarchyUnderInputs.Hypotheses",
+        "PaperP1.ExplicitHermiteLaw.uniform_bound",
+        "PaperP1.ExplicitHermiteLaw.uniform_probability_equivalent",
+        "PaperP1.ExplicitQuadraticApproximation.uniform_coefficient",
+        "PaperP1.ExplicitQuadraticApproximation.article_1_4",
+        "PaperP1.FixedHeightCumulantProfile.uniform_coarse",
+        "PaperP1.FixedHeightCumulantProfile.uniform_next_height",
+        "PaperP1.FixedHeightHierarchy.source_exponent",
+        "PaperP1.FixedHeightHierarchy.uniform_lower_power",
+        "PaperP1.FixedHeightHierarchy.article_18_1",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_coarse",
+        "PaperP1.FixedHeightQuadraticLaw.reference_increment",
+        "PaperP1.FixedHeightQuadraticLaw.distance_sub",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_next_remainder",
+        "PaperP1.FixedHeightQuadraticLaw.distance_symm",
+        "PaperP1.FixedHeightQuadraticLaw.distance_stability",
+        "PaperP1.FixedHeightQuadraticLaw.phaseMargin_pos",
+        "PaperP1.FixedHeightQuadraticLaw.phaseMargin_gap",
+        "PaperP1.FixedHeightQuadraticLaw.power_negligible",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_relative",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_probability_equivalent",
+        "PaperP1.TwoChannelReference.height_five_phase",
+        "PaperP1.TwoChannelReference.height_six_phase",
+        "PaperP1.TwoChannelReference.uniform_law_remainder",
+        "PaperP1.TwoChannelReference.uniform_equivalents",
+        "PaperP1.FixedHeightQuadraticLaw.phaseMargin"
       ],
       "literature_inputs": [
-        "P1-ARITH-EXPLICIT-CHANNEL-PARAMETERS",
-        "P1-ANALYTIC-CHANNEL-PHASE-EQUIVALENT",
-        "P1-PROB-EXPLICIT-HERMITE-STABILITY",
-        "P1-PROB-MEAN-PARAMETER-STABILITY",
-        "P1-PROB-ADJACENT-REFERENCE-PHASE",
-        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
-        "P1-GEO-ORDINARY-SURFACE-COVER",
-        "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+        "p1:internal:unconditional-explicit-fixed-height-law"
       ],
       "mathematical_changes": [
         "P1-MATH-0087",
-        "P1-MATH-0151"
+        "P1-MATH-0151",
+        "P1-MATH-0435"
       ],
-      "notes": "Main Corollary1.4, Theorem18.1 and Corollary18.3 are complete\nconditionally, for the ACTUAL FULL original law and the literal finite\nchannel coefficients. One finite bundle of the SAME three geometric\nproperties precedes N and every critical length. No optimal triple41/30,\noptimal exact-reference4/3 law bound, target truncation remainder or\nhomogeneous nonaligned-rank estimate is assumed.\n\nExplicitQuadraticApproximationUnderInputs.article_1_4 gives the complete\nsource two-channel reference: its full original-law singleton l1 error\nis N^(-4/5+epsilon), the actual signed reference is eventually a probability,\nand every singleton has exactly the printed Poisson--Charlier mass.\nThe coefficient is the literal finite S_23+S_34 expression and its mean\nis the nominal N*2^(-L). The proof combines the already completed actual\npair profile with the stronger first quadratic rate1; it does not use\nthe still open optimal quadratic upper bound. Reference probability\nstatus and its mass formula were already unconditional and are included\nin the assembled source theorem after the same threshold.\n\nFor EVERY fixed height h>=3, the complete cumulant hierarchy is proved:\n\n  |alpha-coefficient_h| <=N^(-1+1/(h+1)+epsilon),\n  |alpha-coefficient_h-heightMass_(h+1)|\n       <=N^(-(h+1)/(h+2)+epsilon).\n\nAll finite lower-order terms in each exact signed channel polynomial\nare retained. Alpha is the actual full second factorial cumulant,\nalready identified with Var(Z)-E(Z), and heightMass is exactly\nlambda^2/N times the full height sum T_(h+1)(L). The source exponent\nidentity -1+1/(h+2)=-(h+1)/(h+2) is itself checked.\n\nFixedHeightPrivateChannels proves actual reduced-channel uniqueness\nfrom the two exact unit alignments. At4Q^2(L+1)<N the integer determinant\nbetween two distinct reduced slopes cannot vanish on an actual dyadic\nsource pair. Coprimality then identifies the two channels. Hence their\nactual unordered private edge families are pairwise disjoint. Their\nunion is a literal subset of the actual pair powerset, and its absolute\nsum equals the sum over channels with no multiplicity assumption.\nAn exact sigma/product index bijection identifies the sum of main terms\nwith the source finite-height coefficient.\n\nThe full signed-pair remainder outside that private union is bounded by\nthe ACTUAL weak plus exceptional activities of the finite pair partition.\nThis includes all nonaligned, incompatible, locally defective and boundary\npairs. Independent nonzero-cardinality families have zero centered\ncoefficient, as proved earlier. The fixed-height weak tail is bounded\nunconditionally at power1-1/(h+1). The complete exceptional class has\npower1 under the recorded geometric inputs, without a homogeneous-rank\nsubstitute on incompatible pairs. Each retained channel's joint main\nterm, independent correction and sign gap have power1. The diagonal\nsum of the exact squared marginals has power1 as well. These facts\nassemble the literal coarse cumulant profile. No target profile is\nprovided as a premise.\n\nFixedHeightQuadraticLawUnderInputs proves both the original-law coarse\napproximation and the COMPLETE first-omitted-height signed remainder.\nIn the latter, the exact signed measure Law(Z)-Q(lambda,coefficient_h)\nis compared with (heightMass_(h+1)/2)*Pi_lambda*Delta^2. The remainder is\nN^(-(h+1)/(h+2)+epsilon) in the ordinary full singleton l1 metric.\nThe exact reference-increment and signed-measure translation identities\nare checked before applying the metric estimate. The first quadratic\nrate1 suffices at every fixed height because (h+1)/(h+2)<1. Neither\noptimal4/3 reconstruction nor sharper triple activity is needed.\n\nThe actual original-law leading distance equivalent is also proved.\nFor fixed h,C, ONE finite geometric bundle, chosen at the positive margin\n1/(2(h+1)(h+2)), precedes EVERY tolerance tau>0. After its corresponding\ncommon threshold and for ALL critical L, an actual probability witness\nQ_h for the literal reference satisfies\n\n  |TV(Law(Z),Q_h)/(phaseMass_(h+1)*norm(Pi_lambda*Delta^2)/4)-1|<=tau.\n\nThe phase retains L mod(h+1), the moving nominal mean, and the Poisson\nsecond-difference norm at that same mean. The leading denominator is\nproved positive. The smaller actual-law error at height h+1 is compared\nwith the already established exact gap of adjacent references. A uniform\npower separation and the positive full phase lower bound make that\nerror negligible. The reverse triangle inequality is applied to actual\nsigned distances; the factor2 between l1 and actual total variation\nis retained. A separate quantitative lower bound\nc*N^(-1+1/(h+1)), c>0, for the actual full law-to-reference l1 distance,\ntogether with the coarse upper estimates at every positive loss,\nproves the claimed optimal power h/(h+1). These are original-law\nconclusions, rather than distances only between constructed references.\n\nFixedHeightHierarchyUnderInputs.article_18_1 assembles both literal\nremainder statements, actual probability status and the full moving\nTV equivalent, with one finite bundle and common threshold. The earlier\nphase constants give the source c_b(r), including its positivity.\n\nTwoChannelReferenceUnderInputs specializes the source hierarchy at h=4\nand h=5. The two-channel signed remainder has power5/6 and the leading\ncorrection is precisely M5. The exact closed M5 formula, the identity\ncoefficient5=twoChannelCoefficient+M5 and both finite S_35/S_45 formulas\nwere already proved and remain literal. The actual-law TV equivalent\nat h=4 has the printed coefficient17(r+4)/(1200*2^(r/5)), the moving\nlambda^(9/5), the actual norm and L*N^(-4/5). At h=5 it has the moving\nheight6 phase; its printed c6(r)=(r+5)/(45*2^(r/6)) and lambda exponent11/6\nare identified exactly. Thus both the two-channel optimal power4/5 and\nthe four-channel optimal power5/6 concern their specified original-law\nreferences, with all residues varying after the same threshold.\n\nExplicitHermiteLawUnderInputs additionally proves the entire explicit\nfixed-height Hermite part of main19.1: every fixed h>=3 has original-law\nrate h/(h+1) and exactly the same moving TV equivalent as its quadratic\nreference. Actual independent-Poisson Hermite probabilities are supplied\nby the earlier unconditional construction. The unconditional quadratic/\nHermite error has power4/3 and is negligible on every first omitted\nheight. Main19.1 nevertheless stays IN_PROGRESS: its exact-parameter\nHermite error4/3 still needs the unproved optimal exact-reference upper\nbound. No optimal Hermite lower bound is asserted.\n\nP1-MATH-0151 records the weaker dependency of this whole fixed-height\nhierarchy and explicit reference completion: the already proved first\nquadratic rate1 plus actual pair-profile remainders suffice. The optimal\ntriple arithmetic, exact quadratic4/3 upper bound, and the stronger\nhomogeneous nonaligned main18.2 statement remain open and independent\nof this completion. This is not a proof of those missing statements.\n\nThe same existing finite geometric properties remain ordinary explicit\narguments: normalized curve count, ordinary surface cover and chosen-\nsource surface cover. No BCN, new literature input, manuscript byte edit,\ndependency download, Paper C port, hidden axiom or Palomar registration\nis introduced. Coverage increases from87 unconditional35 conditional\nto87 unconditional38 conditional; confirmed improvements151.",
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13837 jobs); direct axiom audit passed for 10816 declarations using only propext, Classical.choice and Quot.sound; all 9288 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.09 GiB.",
+      "notes": "Main Corollary1.4, Theorem18.1 and Corollary18.3 now have unconditional canonical proofs. The statement and complete proof of1.4 in main_sections/introduction.tex lines181-220 and the statements and full proofs of18.1/18.3 in main_sections/channel_hierarchy.tex lines28-242 were rechecked. The exact original count law, nominal mean, literal finite channel sums, moving phases and probability status are retained.\n\nExplicitQuadraticApproximation.article_1_4 combines the internally proved actual two-channel cumulant profile with the unconditional exponent1 full-model quadratic approximation. It proves the printed exponent4/5 law distance, eventual probability status and the exact mass formula at every nonnegative integer, with parameters determined byN andL. It invokes no optimal4/3 exact-reference theorem.\n\nFixedHeightCumulantProfile proves the coarse and first-omitted-height actual cumulant remainders at every prescribed fixed height. It uses the unconditional actual exceptional-pair partition, high-height aligned activity, finite private-channel profile and actual diagonal bound. FixedHeightQuadraticLaw transfers these estimates to the complete original law using the exponent1 reference error, then proves the moving relative error and actual probability-measure total-variation equivalent. The reference coefficient is the literal finite sum; no limiting value replaces the moving nominal mean or phase.\n\nFixedHeightHierarchy.article_18_1 assembles the exact cumulant remainder, signed law remainder and total-variation equivalent on one threshold. Its independent uniform_lower_power theorem proves the quantitative lower bound at the exponenth/(h+1), establishing the source optimal-power claim for every fixed truncation. All heights and accuracy margins are fixed beforeN. This is distinct from the unresolved optimal4/3 approximation with the full actual cumulant.\n\nTwoChannelReference supplies the exact height-five law remainder and both height-five/height-six probability equivalents for18.3. The already checked finite closed formula forM5, the complete height-five coefficient and both printed phase constants are retained. ExplicitHermiteLaw also proves the same original-law rate and moving probability equivalent for every fixed-height Hermite reference. It does not claim the separate exact-actual-parameter4/3 assertion of main19.1.\n\nAll former external-input uses in these three conclusions are now supplied by internal channel arithmetic, phase analysis, probability stability and the first full-model quadratic law. Earlier conditional declarations and their history are preserved. No general geometric property, growing-height uniform theorem or BCN result is promoted. Original source bytes and compiler/dependency pins remain unchanged.\n\nP1-MATH-0435 adds six modules, twenty-four theorems and one definition. Main1.4,18.1 and18.3 move from conditional to proved. Coverage becomes122 proved,42 conditional and3 in_progress out of167, with164 completed. The project records433 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.\n\nEarlier checkpoint history:\nMain Corollary1.4, Theorem18.1 and Corollary18.3 are complete\nconditionally, for the ACTUAL FULL original law and the literal finite\nchannel coefficients. One finite bundle of the SAME three geometric\nproperties precedes N and every critical length. No optimal triple41/30,\noptimal exact-reference4/3 law bound, target truncation remainder or\nhomogeneous nonaligned-rank estimate is assumed.\n\nExplicitQuadraticApproximationUnderInputs.article_1_4 gives the complete\nsource two-channel reference: its full original-law singleton l1 error\nis N^(-4/5+epsilon), the actual signed reference is eventually a probability,\nand every singleton has exactly the printed Poisson--Charlier mass.\nThe coefficient is the literal finite S_23+S_34 expression and its mean\nis the nominal N*2^(-L). The proof combines the already completed actual\npair profile with the stronger first quadratic rate1; it does not use\nthe still open optimal quadratic upper bound. Reference probability\nstatus and its mass formula were already unconditional and are included\nin the assembled source theorem after the same threshold.\n\nFor EVERY fixed height h>=3, the complete cumulant hierarchy is proved:\n\n  |alpha-coefficient_h| <=N^(-1+1/(h+1)+epsilon),\n  |alpha-coefficient_h-heightMass_(h+1)|\n       <=N^(-(h+1)/(h+2)+epsilon).\n\nAll finite lower-order terms in each exact signed channel polynomial\nare retained. Alpha is the actual full second factorial cumulant,\nalready identified with Var(Z)-E(Z), and heightMass is exactly\nlambda^2/N times the full height sum T_(h+1)(L). The source exponent\nidentity -1+1/(h+2)=-(h+1)/(h+2) is itself checked.\n\nFixedHeightPrivateChannels proves actual reduced-channel uniqueness\nfrom the two exact unit alignments. At4Q^2(L+1)<N the integer determinant\nbetween two distinct reduced slopes cannot vanish on an actual dyadic\nsource pair. Coprimality then identifies the two channels. Hence their\nactual unordered private edge families are pairwise disjoint. Their\nunion is a literal subset of the actual pair powerset, and its absolute\nsum equals the sum over channels with no multiplicity assumption.\nAn exact sigma/product index bijection identifies the sum of main terms\nwith the source finite-height coefficient.\n\nThe full signed-pair remainder outside that private union is bounded by\nthe ACTUAL weak plus exceptional activities of the finite pair partition.\nThis includes all nonaligned, incompatible, locally defective and boundary\npairs. Independent nonzero-cardinality families have zero centered\ncoefficient, as proved earlier. The fixed-height weak tail is bounded\nunconditionally at power1-1/(h+1). The complete exceptional class has\npower1 under the recorded geometric inputs, without a homogeneous-rank\nsubstitute on incompatible pairs. Each retained channel's joint main\nterm, independent correction and sign gap have power1. The diagonal\nsum of the exact squared marginals has power1 as well. These facts\nassemble the literal coarse cumulant profile. No target profile is\nprovided as a premise.\n\nFixedHeightQuadraticLawUnderInputs proves both the original-law coarse\napproximation and the COMPLETE first-omitted-height signed remainder.\nIn the latter, the exact signed measure Law(Z)-Q(lambda,coefficient_h)\nis compared with (heightMass_(h+1)/2)*Pi_lambda*Delta^2. The remainder is\nN^(-(h+1)/(h+2)+epsilon) in the ordinary full singleton l1 metric.\nThe exact reference-increment and signed-measure translation identities\nare checked before applying the metric estimate. The first quadratic\nrate1 suffices at every fixed height because (h+1)/(h+2)<1. Neither\noptimal4/3 reconstruction nor sharper triple activity is needed.\n\nThe actual original-law leading distance equivalent is also proved.\nFor fixed h,C, ONE finite geometric bundle, chosen at the positive margin\n1/(2(h+1)(h+2)), precedes EVERY tolerance tau>0. After its corresponding\ncommon threshold and for ALL critical L, an actual probability witness\nQ_h for the literal reference satisfies\n\n  |TV(Law(Z),Q_h)/(phaseMass_(h+1)*norm(Pi_lambda*Delta^2)/4)-1|<=tau.\n\nThe phase retains L mod(h+1), the moving nominal mean, and the Poisson\nsecond-difference norm at that same mean. The leading denominator is\nproved positive. The smaller actual-law error at height h+1 is compared\nwith the already established exact gap of adjacent references. A uniform\npower separation and the positive full phase lower bound make that\nerror negligible. The reverse triangle inequality is applied to actual\nsigned distances; the factor2 between l1 and actual total variation\nis retained. A separate quantitative lower bound\nc*N^(-1+1/(h+1)), c>0, for the actual full law-to-reference l1 distance,\ntogether with the coarse upper estimates at every positive loss,\nproves the claimed optimal power h/(h+1). These are original-law\nconclusions, rather than distances only between constructed references.\n\nFixedHeightHierarchyUnderInputs.article_18_1 assembles both literal\nremainder statements, actual probability status and the full moving\nTV equivalent, with one finite bundle and common threshold. The earlier\nphase constants give the source c_b(r), including its positivity.\n\nTwoChannelReferenceUnderInputs specializes the source hierarchy at h=4\nand h=5. The two-channel signed remainder has power5/6 and the leading\ncorrection is precisely M5. The exact closed M5 formula, the identity\ncoefficient5=twoChannelCoefficient+M5 and both finite S_35/S_45 formulas\nwere already proved and remain literal. The actual-law TV equivalent\nat h=4 has the printed coefficient17(r+4)/(1200*2^(r/5)), the moving\nlambda^(9/5), the actual norm and L*N^(-4/5). At h=5 it has the moving\nheight6 phase; its printed c6(r)=(r+5)/(45*2^(r/6)) and lambda exponent11/6\nare identified exactly. Thus both the two-channel optimal power4/5 and\nthe four-channel optimal power5/6 concern their specified original-law\nreferences, with all residues varying after the same threshold.\n\nExplicitHermiteLawUnderInputs additionally proves the entire explicit\nfixed-height Hermite part of main19.1: every fixed h>=3 has original-law\nrate h/(h+1) and exactly the same moving TV equivalent as its quadratic\nreference. Actual independent-Poisson Hermite probabilities are supplied\nby the earlier unconditional construction. The unconditional quadratic/\nHermite error has power4/3 and is negligible on every first omitted\nheight. Main19.1 nevertheless stays IN_PROGRESS: its exact-parameter\nHermite error4/3 still needs the unproved optimal exact-reference upper\nbound. No optimal Hermite lower bound is asserted.\n\nP1-MATH-0151 records the weaker dependency of this whole fixed-height\nhierarchy and explicit reference completion: the already proved first\nquadratic rate1 plus actual pair-profile remainders suffice. The optimal\ntriple arithmetic, exact quadratic4/3 upper bound, and the stronger\nhomogeneous nonaligned main18.2 statement remain open and independent\nof this completion. This is not a proof of those missing statements.\n\nThe same existing finite geometric properties remain ordinary explicit\narguments: normalized curve count, ordinary surface cover and chosen-\nsource surface cover. No BCN, new literature input, manuscript byte edit,\ndependency download, Paper C port, hidden axiom or Palomar registration\nis introduced. Coverage increases from87 unconditional35 conditional\nto87 unconditional38 conditional; confirmed improvements151.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16021 jobs); direct axiom audit passed for 14899 declarations using only propext, Classical.choice and Quot.sound; all 14258 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.18 GiB.",
       "validation_history": [
         {
           "validation_commit": "52c28b5ed72de85d4eac239275d6bcfe45ba0045",
@@ -10741,9 +10828,78 @@
             "P1-PROB-MEAN-PARAMETER-STABILITY",
             "P1-PROB-ADJACENT-REFERENCE-PHASE"
           ]
+        },
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (13837 jobs); direct axiom audit passed for 10816 declarations using only propext, Classical.choice and Quot.sound; all 9288 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.09 GiB.",
+          "validation_commit": "d345b0a2035612338f707abd0b995b3f22debf28",
+          "literature_inputs": [
+            "P1-ARITH-EXPLICIT-CHANNEL-PARAMETERS",
+            "P1-ANALYTIC-CHANNEL-PHASE-EQUIVALENT",
+            "P1-PROB-EXPLICIT-HERMITE-STABILITY",
+            "P1-PROB-MEAN-PARAMETER-STABILITY",
+            "P1-PROB-ADJACENT-REFERENCE-PHASE",
+            "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+            "P1-GEO-ORDINARY-SURFACE-COVER",
+            "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+          ]
         }
       ],
-      "validation_commit": "d345b0a2035612338f707abd0b995b3f22debf28"
+      "canonical_statement": "PaperP1.FixedHeightHierarchy.article_18_1",
+      "canonical_additional_statements": [
+        "PaperP1.FixedHeightHierarchy.uniform_lower_power"
+      ],
+      "remaining_unformalized_inputs": [],
+      "input_discharges": [
+        {
+          "input": "P1-ARITH-EXPLICIT-CHANNEL-PARAMETERS",
+          "proof": "PaperP1.FixedHeightHierarchy.article_18_1",
+          "scope": "Full exact main18.1 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-ANALYTIC-CHANNEL-PHASE-EQUIVALENT",
+          "proof": "PaperP1.FixedHeightHierarchy.article_18_1",
+          "scope": "Full exact main18.1 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-PROB-EXPLICIT-HERMITE-STABILITY",
+          "proof": "PaperP1.FixedHeightHierarchy.article_18_1",
+          "scope": "Full exact main18.1 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-PROB-MEAN-PARAMETER-STABILITY",
+          "proof": "PaperP1.FixedHeightHierarchy.article_18_1",
+          "scope": "Full exact main18.1 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-PROB-ADJACENT-REFERENCE-PHASE",
+          "proof": "PaperP1.FixedHeightHierarchy.article_18_1",
+          "scope": "Full exact main18.1 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+          "proof": "PaperP1.FixedHeightHierarchy.article_18_1",
+          "scope": "Full exact main18.1 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-GEO-ORDINARY-SURFACE-COVER",
+          "proof": "PaperP1.FixedHeightHierarchy.article_18_1",
+          "scope": "Full exact main18.1 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+          "proof": "PaperP1.FixedHeightHierarchy.article_18_1",
+          "scope": "Full exact main18.1 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        }
+      ]
     },
     {
       "label": "p13:channels:weighted-nonaligned",
@@ -10826,7 +10982,7 @@
       "source": "main_sections/channel_hierarchy.tex",
       "line": 199,
       "sha256": "bbba7bc983a8da39894a364dea9b15993d5db9f0863cbf2f81add309dbad5d1a",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.FiniteChannelHierarchy.weight_formula",
         "PaperP1.FiniteChannelHierarchy.mem_channels",
@@ -10953,23 +11109,43 @@
         "PaperP1.FixedHeightQuadraticLawUnderInputs.Hypotheses",
         "PaperP1.FixedHeightQuadraticLawUnderInputs.phaseMargin",
         "PaperP1.FixedHeightHierarchyUnderInputs.Parameters",
-        "PaperP1.FixedHeightHierarchyUnderInputs.Hypotheses"
+        "PaperP1.FixedHeightHierarchyUnderInputs.Hypotheses",
+        "PaperP1.ExplicitHermiteLaw.uniform_bound",
+        "PaperP1.ExplicitHermiteLaw.uniform_probability_equivalent",
+        "PaperP1.ExplicitQuadraticApproximation.uniform_coefficient",
+        "PaperP1.ExplicitQuadraticApproximation.article_1_4",
+        "PaperP1.FixedHeightCumulantProfile.uniform_coarse",
+        "PaperP1.FixedHeightCumulantProfile.uniform_next_height",
+        "PaperP1.FixedHeightHierarchy.source_exponent",
+        "PaperP1.FixedHeightHierarchy.uniform_lower_power",
+        "PaperP1.FixedHeightHierarchy.article_18_1",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_coarse",
+        "PaperP1.FixedHeightQuadraticLaw.reference_increment",
+        "PaperP1.FixedHeightQuadraticLaw.distance_sub",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_next_remainder",
+        "PaperP1.FixedHeightQuadraticLaw.distance_symm",
+        "PaperP1.FixedHeightQuadraticLaw.distance_stability",
+        "PaperP1.FixedHeightQuadraticLaw.phaseMargin_pos",
+        "PaperP1.FixedHeightQuadraticLaw.phaseMargin_gap",
+        "PaperP1.FixedHeightQuadraticLaw.power_negligible",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_relative",
+        "PaperP1.FixedHeightQuadraticLaw.uniform_probability_equivalent",
+        "PaperP1.TwoChannelReference.height_five_phase",
+        "PaperP1.TwoChannelReference.height_six_phase",
+        "PaperP1.TwoChannelReference.uniform_law_remainder",
+        "PaperP1.TwoChannelReference.uniform_equivalents",
+        "PaperP1.FixedHeightQuadraticLaw.phaseMargin"
       ],
       "literature_inputs": [
-        "P1-ARITH-EXPLICIT-CHANNEL-PARAMETERS",
-        "P1-ANALYTIC-CHANNEL-PHASE-EQUIVALENT",
-        "P1-PROB-EXPLICIT-HERMITE-STABILITY",
-        "P1-PROB-ADJACENT-REFERENCE-PHASE",
-        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
-        "P1-GEO-ORDINARY-SURFACE-COVER",
-        "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+        "p1:internal:unconditional-explicit-fixed-height-law"
       ],
       "mathematical_changes": [
         "P1-MATH-0087",
-        "P1-MATH-0151"
+        "P1-MATH-0151",
+        "P1-MATH-0435"
       ],
-      "notes": "Main Corollary1.4, Theorem18.1 and Corollary18.3 are complete\nconditionally, for the ACTUAL FULL original law and the literal finite\nchannel coefficients. One finite bundle of the SAME three geometric\nproperties precedes N and every critical length. No optimal triple41/30,\noptimal exact-reference4/3 law bound, target truncation remainder or\nhomogeneous nonaligned-rank estimate is assumed.\n\nExplicitQuadraticApproximationUnderInputs.article_1_4 gives the complete\nsource two-channel reference: its full original-law singleton l1 error\nis N^(-4/5+epsilon), the actual signed reference is eventually a probability,\nand every singleton has exactly the printed Poisson--Charlier mass.\nThe coefficient is the literal finite S_23+S_34 expression and its mean\nis the nominal N*2^(-L). The proof combines the already completed actual\npair profile with the stronger first quadratic rate1; it does not use\nthe still open optimal quadratic upper bound. Reference probability\nstatus and its mass formula were already unconditional and are included\nin the assembled source theorem after the same threshold.\n\nFor EVERY fixed height h>=3, the complete cumulant hierarchy is proved:\n\n  |alpha-coefficient_h| <=N^(-1+1/(h+1)+epsilon),\n  |alpha-coefficient_h-heightMass_(h+1)|\n       <=N^(-(h+1)/(h+2)+epsilon).\n\nAll finite lower-order terms in each exact signed channel polynomial\nare retained. Alpha is the actual full second factorial cumulant,\nalready identified with Var(Z)-E(Z), and heightMass is exactly\nlambda^2/N times the full height sum T_(h+1)(L). The source exponent\nidentity -1+1/(h+2)=-(h+1)/(h+2) is itself checked.\n\nFixedHeightPrivateChannels proves actual reduced-channel uniqueness\nfrom the two exact unit alignments. At4Q^2(L+1)<N the integer determinant\nbetween two distinct reduced slopes cannot vanish on an actual dyadic\nsource pair. Coprimality then identifies the two channels. Hence their\nactual unordered private edge families are pairwise disjoint. Their\nunion is a literal subset of the actual pair powerset, and its absolute\nsum equals the sum over channels with no multiplicity assumption.\nAn exact sigma/product index bijection identifies the sum of main terms\nwith the source finite-height coefficient.\n\nThe full signed-pair remainder outside that private union is bounded by\nthe ACTUAL weak plus exceptional activities of the finite pair partition.\nThis includes all nonaligned, incompatible, locally defective and boundary\npairs. Independent nonzero-cardinality families have zero centered\ncoefficient, as proved earlier. The fixed-height weak tail is bounded\nunconditionally at power1-1/(h+1). The complete exceptional class has\npower1 under the recorded geometric inputs, without a homogeneous-rank\nsubstitute on incompatible pairs. Each retained channel's joint main\nterm, independent correction and sign gap have power1. The diagonal\nsum of the exact squared marginals has power1 as well. These facts\nassemble the literal coarse cumulant profile. No target profile is\nprovided as a premise.\n\nFixedHeightQuadraticLawUnderInputs proves both the original-law coarse\napproximation and the COMPLETE first-omitted-height signed remainder.\nIn the latter, the exact signed measure Law(Z)-Q(lambda,coefficient_h)\nis compared with (heightMass_(h+1)/2)*Pi_lambda*Delta^2. The remainder is\nN^(-(h+1)/(h+2)+epsilon) in the ordinary full singleton l1 metric.\nThe exact reference-increment and signed-measure translation identities\nare checked before applying the metric estimate. The first quadratic\nrate1 suffices at every fixed height because (h+1)/(h+2)<1. Neither\noptimal4/3 reconstruction nor sharper triple activity is needed.\n\nThe actual original-law leading distance equivalent is also proved.\nFor fixed h,C, ONE finite geometric bundle, chosen at the positive margin\n1/(2(h+1)(h+2)), precedes EVERY tolerance tau>0. After its corresponding\ncommon threshold and for ALL critical L, an actual probability witness\nQ_h for the literal reference satisfies\n\n  |TV(Law(Z),Q_h)/(phaseMass_(h+1)*norm(Pi_lambda*Delta^2)/4)-1|<=tau.\n\nThe phase retains L mod(h+1), the moving nominal mean, and the Poisson\nsecond-difference norm at that same mean. The leading denominator is\nproved positive. The smaller actual-law error at height h+1 is compared\nwith the already established exact gap of adjacent references. A uniform\npower separation and the positive full phase lower bound make that\nerror negligible. The reverse triangle inequality is applied to actual\nsigned distances; the factor2 between l1 and actual total variation\nis retained. A separate quantitative lower bound\nc*N^(-1+1/(h+1)), c>0, for the actual full law-to-reference l1 distance,\ntogether with the coarse upper estimates at every positive loss,\nproves the claimed optimal power h/(h+1). These are original-law\nconclusions, rather than distances only between constructed references.\n\nFixedHeightHierarchyUnderInputs.article_18_1 assembles both literal\nremainder statements, actual probability status and the full moving\nTV equivalent, with one finite bundle and common threshold. The earlier\nphase constants give the source c_b(r), including its positivity.\n\nTwoChannelReferenceUnderInputs specializes the source hierarchy at h=4\nand h=5. The two-channel signed remainder has power5/6 and the leading\ncorrection is precisely M5. The exact closed M5 formula, the identity\ncoefficient5=twoChannelCoefficient+M5 and both finite S_35/S_45 formulas\nwere already proved and remain literal. The actual-law TV equivalent\nat h=4 has the printed coefficient17(r+4)/(1200*2^(r/5)), the moving\nlambda^(9/5), the actual norm and L*N^(-4/5). At h=5 it has the moving\nheight6 phase; its printed c6(r)=(r+5)/(45*2^(r/6)) and lambda exponent11/6\nare identified exactly. Thus both the two-channel optimal power4/5 and\nthe four-channel optimal power5/6 concern their specified original-law\nreferences, with all residues varying after the same threshold.\n\nExplicitHermiteLawUnderInputs additionally proves the entire explicit\nfixed-height Hermite part of main19.1: every fixed h>=3 has original-law\nrate h/(h+1) and exactly the same moving TV equivalent as its quadratic\nreference. Actual independent-Poisson Hermite probabilities are supplied\nby the earlier unconditional construction. The unconditional quadratic/\nHermite error has power4/3 and is negligible on every first omitted\nheight. Main19.1 nevertheless stays IN_PROGRESS: its exact-parameter\nHermite error4/3 still needs the unproved optimal exact-reference upper\nbound. No optimal Hermite lower bound is asserted.\n\nP1-MATH-0151 records the weaker dependency of this whole fixed-height\nhierarchy and explicit reference completion: the already proved first\nquadratic rate1 plus actual pair-profile remainders suffice. The optimal\ntriple arithmetic, exact quadratic4/3 upper bound, and the stronger\nhomogeneous nonaligned main18.2 statement remain open and independent\nof this completion. This is not a proof of those missing statements.\n\nThe same existing finite geometric properties remain ordinary explicit\narguments: normalized curve count, ordinary surface cover and chosen-\nsource surface cover. No BCN, new literature input, manuscript byte edit,\ndependency download, Paper C port, hidden axiom or Palomar registration\nis introduced. Coverage increases from87 unconditional35 conditional\nto87 unconditional38 conditional; confirmed improvements151.",
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13837 jobs); direct axiom audit passed for 10816 declarations using only propext, Classical.choice and Quot.sound; all 9288 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.09 GiB.",
+      "notes": "Main Corollary1.4, Theorem18.1 and Corollary18.3 now have unconditional canonical proofs. The statement and complete proof of1.4 in main_sections/introduction.tex lines181-220 and the statements and full proofs of18.1/18.3 in main_sections/channel_hierarchy.tex lines28-242 were rechecked. The exact original count law, nominal mean, literal finite channel sums, moving phases and probability status are retained.\n\nExplicitQuadraticApproximation.article_1_4 combines the internally proved actual two-channel cumulant profile with the unconditional exponent1 full-model quadratic approximation. It proves the printed exponent4/5 law distance, eventual probability status and the exact mass formula at every nonnegative integer, with parameters determined byN andL. It invokes no optimal4/3 exact-reference theorem.\n\nFixedHeightCumulantProfile proves the coarse and first-omitted-height actual cumulant remainders at every prescribed fixed height. It uses the unconditional actual exceptional-pair partition, high-height aligned activity, finite private-channel profile and actual diagonal bound. FixedHeightQuadraticLaw transfers these estimates to the complete original law using the exponent1 reference error, then proves the moving relative error and actual probability-measure total-variation equivalent. The reference coefficient is the literal finite sum; no limiting value replaces the moving nominal mean or phase.\n\nFixedHeightHierarchy.article_18_1 assembles the exact cumulant remainder, signed law remainder and total-variation equivalent on one threshold. Its independent uniform_lower_power theorem proves the quantitative lower bound at the exponenth/(h+1), establishing the source optimal-power claim for every fixed truncation. All heights and accuracy margins are fixed beforeN. This is distinct from the unresolved optimal4/3 approximation with the full actual cumulant.\n\nTwoChannelReference supplies the exact height-five law remainder and both height-five/height-six probability equivalents for18.3. The already checked finite closed formula forM5, the complete height-five coefficient and both printed phase constants are retained. ExplicitHermiteLaw also proves the same original-law rate and moving probability equivalent for every fixed-height Hermite reference. It does not claim the separate exact-actual-parameter4/3 assertion of main19.1.\n\nAll former external-input uses in these three conclusions are now supplied by internal channel arithmetic, phase analysis, probability stability and the first full-model quadratic law. Earlier conditional declarations and their history are preserved. No general geometric property, growing-height uniform theorem or BCN result is promoted. Original source bytes and compiler/dependency pins remain unchanged.\n\nP1-MATH-0435 adds six modules, twenty-four theorems and one definition. Main1.4,18.1 and18.3 move from conditional to proved. Coverage becomes122 proved,42 conditional and3 in_progress out of167, with164 completed. The project records433 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.\n\nEarlier checkpoint history:\nMain Corollary1.4, Theorem18.1 and Corollary18.3 are complete\nconditionally, for the ACTUAL FULL original law and the literal finite\nchannel coefficients. One finite bundle of the SAME three geometric\nproperties precedes N and every critical length. No optimal triple41/30,\noptimal exact-reference4/3 law bound, target truncation remainder or\nhomogeneous nonaligned-rank estimate is assumed.\n\nExplicitQuadraticApproximationUnderInputs.article_1_4 gives the complete\nsource two-channel reference: its full original-law singleton l1 error\nis N^(-4/5+epsilon), the actual signed reference is eventually a probability,\nand every singleton has exactly the printed Poisson--Charlier mass.\nThe coefficient is the literal finite S_23+S_34 expression and its mean\nis the nominal N*2^(-L). The proof combines the already completed actual\npair profile with the stronger first quadratic rate1; it does not use\nthe still open optimal quadratic upper bound. Reference probability\nstatus and its mass formula were already unconditional and are included\nin the assembled source theorem after the same threshold.\n\nFor EVERY fixed height h>=3, the complete cumulant hierarchy is proved:\n\n  |alpha-coefficient_h| <=N^(-1+1/(h+1)+epsilon),\n  |alpha-coefficient_h-heightMass_(h+1)|\n       <=N^(-(h+1)/(h+2)+epsilon).\n\nAll finite lower-order terms in each exact signed channel polynomial\nare retained. Alpha is the actual full second factorial cumulant,\nalready identified with Var(Z)-E(Z), and heightMass is exactly\nlambda^2/N times the full height sum T_(h+1)(L). The source exponent\nidentity -1+1/(h+2)=-(h+1)/(h+2) is itself checked.\n\nFixedHeightPrivateChannels proves actual reduced-channel uniqueness\nfrom the two exact unit alignments. At4Q^2(L+1)<N the integer determinant\nbetween two distinct reduced slopes cannot vanish on an actual dyadic\nsource pair. Coprimality then identifies the two channels. Hence their\nactual unordered private edge families are pairwise disjoint. Their\nunion is a literal subset of the actual pair powerset, and its absolute\nsum equals the sum over channels with no multiplicity assumption.\nAn exact sigma/product index bijection identifies the sum of main terms\nwith the source finite-height coefficient.\n\nThe full signed-pair remainder outside that private union is bounded by\nthe ACTUAL weak plus exceptional activities of the finite pair partition.\nThis includes all nonaligned, incompatible, locally defective and boundary\npairs. Independent nonzero-cardinality families have zero centered\ncoefficient, as proved earlier. The fixed-height weak tail is bounded\nunconditionally at power1-1/(h+1). The complete exceptional class has\npower1 under the recorded geometric inputs, without a homogeneous-rank\nsubstitute on incompatible pairs. Each retained channel's joint main\nterm, independent correction and sign gap have power1. The diagonal\nsum of the exact squared marginals has power1 as well. These facts\nassemble the literal coarse cumulant profile. No target profile is\nprovided as a premise.\n\nFixedHeightQuadraticLawUnderInputs proves both the original-law coarse\napproximation and the COMPLETE first-omitted-height signed remainder.\nIn the latter, the exact signed measure Law(Z)-Q(lambda,coefficient_h)\nis compared with (heightMass_(h+1)/2)*Pi_lambda*Delta^2. The remainder is\nN^(-(h+1)/(h+2)+epsilon) in the ordinary full singleton l1 metric.\nThe exact reference-increment and signed-measure translation identities\nare checked before applying the metric estimate. The first quadratic\nrate1 suffices at every fixed height because (h+1)/(h+2)<1. Neither\noptimal4/3 reconstruction nor sharper triple activity is needed.\n\nThe actual original-law leading distance equivalent is also proved.\nFor fixed h,C, ONE finite geometric bundle, chosen at the positive margin\n1/(2(h+1)(h+2)), precedes EVERY tolerance tau>0. After its corresponding\ncommon threshold and for ALL critical L, an actual probability witness\nQ_h for the literal reference satisfies\n\n  |TV(Law(Z),Q_h)/(phaseMass_(h+1)*norm(Pi_lambda*Delta^2)/4)-1|<=tau.\n\nThe phase retains L mod(h+1), the moving nominal mean, and the Poisson\nsecond-difference norm at that same mean. The leading denominator is\nproved positive. The smaller actual-law error at height h+1 is compared\nwith the already established exact gap of adjacent references. A uniform\npower separation and the positive full phase lower bound make that\nerror negligible. The reverse triangle inequality is applied to actual\nsigned distances; the factor2 between l1 and actual total variation\nis retained. A separate quantitative lower bound\nc*N^(-1+1/(h+1)), c>0, for the actual full law-to-reference l1 distance,\ntogether with the coarse upper estimates at every positive loss,\nproves the claimed optimal power h/(h+1). These are original-law\nconclusions, rather than distances only between constructed references.\n\nFixedHeightHierarchyUnderInputs.article_18_1 assembles both literal\nremainder statements, actual probability status and the full moving\nTV equivalent, with one finite bundle and common threshold. The earlier\nphase constants give the source c_b(r), including its positivity.\n\nTwoChannelReferenceUnderInputs specializes the source hierarchy at h=4\nand h=5. The two-channel signed remainder has power5/6 and the leading\ncorrection is precisely M5. The exact closed M5 formula, the identity\ncoefficient5=twoChannelCoefficient+M5 and both finite S_35/S_45 formulas\nwere already proved and remain literal. The actual-law TV equivalent\nat h=4 has the printed coefficient17(r+4)/(1200*2^(r/5)), the moving\nlambda^(9/5), the actual norm and L*N^(-4/5). At h=5 it has the moving\nheight6 phase; its printed c6(r)=(r+5)/(45*2^(r/6)) and lambda exponent11/6\nare identified exactly. Thus both the two-channel optimal power4/5 and\nthe four-channel optimal power5/6 concern their specified original-law\nreferences, with all residues varying after the same threshold.\n\nExplicitHermiteLawUnderInputs additionally proves the entire explicit\nfixed-height Hermite part of main19.1: every fixed h>=3 has original-law\nrate h/(h+1) and exactly the same moving TV equivalent as its quadratic\nreference. Actual independent-Poisson Hermite probabilities are supplied\nby the earlier unconditional construction. The unconditional quadratic/\nHermite error has power4/3 and is negligible on every first omitted\nheight. Main19.1 nevertheless stays IN_PROGRESS: its exact-parameter\nHermite error4/3 still needs the unproved optimal exact-reference upper\nbound. No optimal Hermite lower bound is asserted.\n\nP1-MATH-0151 records the weaker dependency of this whole fixed-height\nhierarchy and explicit reference completion: the already proved first\nquadratic rate1 plus actual pair-profile remainders suffice. The optimal\ntriple arithmetic, exact quadratic4/3 upper bound, and the stronger\nhomogeneous nonaligned main18.2 statement remain open and independent\nof this completion. This is not a proof of those missing statements.\n\nThe same existing finite geometric properties remain ordinary explicit\narguments: normalized curve count, ordinary surface cover and chosen-\nsource surface cover. No BCN, new literature input, manuscript byte edit,\ndependency download, Paper C port, hidden axiom or Palomar registration\nis introduced. Coverage increases from87 unconditional35 conditional\nto87 unconditional38 conditional; confirmed improvements151.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16021 jobs); direct axiom audit passed for 14899 declarations using only propext, Classical.choice and Quot.sound; all 14258 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.18 GiB.",
       "validation_history": [
         {
           "validation_commit": "52c28b5ed72de85d4eac239275d6bcfe45ba0045",
@@ -10998,9 +11174,73 @@
             "P1-PROB-EXPLICIT-HERMITE-STABILITY",
             "P1-PROB-ADJACENT-REFERENCE-PHASE"
           ]
+        },
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (13837 jobs); direct axiom audit passed for 10816 declarations using only propext, Classical.choice and Quot.sound; all 9288 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.09 GiB.",
+          "validation_commit": "d345b0a2035612338f707abd0b995b3f22debf28",
+          "literature_inputs": [
+            "P1-ARITH-EXPLICIT-CHANNEL-PARAMETERS",
+            "P1-ANALYTIC-CHANNEL-PHASE-EQUIVALENT",
+            "P1-PROB-EXPLICIT-HERMITE-STABILITY",
+            "P1-PROB-ADJACENT-REFERENCE-PHASE",
+            "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+            "P1-GEO-ORDINARY-SURFACE-COVER",
+            "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+          ]
         }
       ],
-      "validation_commit": "d345b0a2035612338f707abd0b995b3f22debf28"
+      "canonical_statement": "PaperP1.TwoChannelReference.uniform_equivalents",
+      "canonical_additional_statements": [
+        "PaperP1.TwoChannelReference.uniform_law_remainder",
+        "PaperP1.HeightFiveChannelCorrection.correction_closed",
+        "PaperP1.FixedHeightHierarchy.uniform_lower_power"
+      ],
+      "remaining_unformalized_inputs": [],
+      "input_discharges": [
+        {
+          "input": "P1-ARITH-EXPLICIT-CHANNEL-PARAMETERS",
+          "proof": "PaperP1.TwoChannelReference.uniform_equivalents",
+          "scope": "Full exact main18.3 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-ANALYTIC-CHANNEL-PHASE-EQUIVALENT",
+          "proof": "PaperP1.TwoChannelReference.uniform_equivalents",
+          "scope": "Full exact main18.3 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-PROB-EXPLICIT-HERMITE-STABILITY",
+          "proof": "PaperP1.TwoChannelReference.uniform_equivalents",
+          "scope": "Full exact main18.3 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-PROB-ADJACENT-REFERENCE-PHASE",
+          "proof": "PaperP1.TwoChannelReference.uniform_equivalents",
+          "scope": "Full exact main18.3 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+          "proof": "PaperP1.TwoChannelReference.uniform_equivalents",
+          "scope": "Full exact main18.3 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-GEO-ORDINARY-SURFACE-COVER",
+          "proof": "PaperP1.TwoChannelReference.uniform_equivalents",
+          "scope": "Full exact main18.3 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        },
+        {
+          "input": "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+          "proof": "PaperP1.TwoChannelReference.uniform_equivalents",
+          "scope": "Full exact main18.3 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
+          "checkpoint": "P1-MATH-0435"
+        }
+      ]
     },
     {
       "label": "p1:cor:compound",
