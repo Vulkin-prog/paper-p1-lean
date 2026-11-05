@@ -116,7 +116,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records541 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records542 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -235,7 +235,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16094 audited theorem/lemma declarations**. This
+- The project currently has **16110 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27923,3 +27923,24 @@ This closes a bounded integer coordinate-selection step needed for controlled hi
 P1-MATH-0543 adds four modules, eleven theorems and one definition. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 541 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16907 jobs); direct axiom audit passed for 16094 declarations using only propext, Classical.choice and Quot.sound; all 15678 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.75 GiB.
+
+
+## Actual finite bounded linear curve parameters from complete section avoidance
+
+ProjectiveAvoidanceCone proves that a genuine homogeneous linear form avoiding every point of the actual projective section is nonzero at every nonzero affine-cone representative satisfying the original homogeneous ideal and section equations. Consequently the only possible common zero of the original ideal and both linear coordinates is the origin. Actual representative scaling is used throughout.
+
+ProjectiveAvoidanceRadical applies the pinned Mathlib Nullstellensatz over an algebraically closed field. Each original coordinate variable belongs to the radical of the actual ideal I+(f,ell). One common positive exponent N is constructed for which every original coordinate power X_i^N belongs to that literal ideal. No radical or coordinate-integrality hypothesis is supplied.
+
+FiniteLinearZeroFiber proves that a polynomial quotient containing a common positive power of every variable is a finite-dimensional algebra over its coefficient field. The proof uses actual nilpotent coordinate images, their integral powers, the actual finite algebra-generating family and its full adjoin. Complete section avoidance therefore gives a finite-dimensional actual zero-fibre quotient. For the original linear-Hilbert curve model, the coefficients of ell are the bounded nonnegative integers already constructed internally.
+
+FiniteGradedSupport proves that a finite-dimensional genuinely graded algebra has only finitely many nonzero homogeneous pieces. A finite module-generating family and the actual supports of its homogeneous decompositions supply one cutoff. The kernel of each later projection contains the entire generating family and hence the whole algebra. Applied to an actual homogeneous quotient, this proves all sufficiently high original pieces lie in its literal ideal.
+
+FiniteLinearGradedParameters proves the needed graded finiteness criterion internally. For actual degree-one parameters whose ideal contains all sufficiently high homogeneous pieces, the original algebra is finite over their actual adjoin and actual polynomial evaluation. The proof takes a finite generating set for the finitely many low pieces. Strong induction on the actual degree projects every high-degree parameter-ideal representation to coefficients of degree one less. These smaller coefficients already lie in the same finite parameter-module span. The finite-dimensional zero-fibre version is a proved corollary. Actual finite evaluation is obtained by factoring through the literal evaluation range, without assuming finiteness of a projection map.
+
+BoundedFiniteCurveParameters combines these results. Over an algebraically closed characteristic-zero field, a homogeneous prime curve ideal with its genuine linear Hilbert polynomial D*r+b and any actual homogeneous linear f outside the ideal admits one integer coefficient form ell with 0<=u_i<=((n-1)*D+1)^(n-1), such that the literal evaluation F[T0,T1] -> F[X]/I sending the parameters to f and ell is finite. The fixed first coordinate is retained. All quotient gradings, finite homogeneous pieces, ideal membership and actual polynomial evaluation agree. The geometric avoidance, Nullstellensatz, finite zero fibre and graded module-generation steps are internal.
+
+Thus actual bounded finite linear curve parameters over algebraically closed characteristic-zero fields are proved. Parameter algebraic independence, exact rank/degree transport, scalar-extension descent and the birational plane projection with its exceptional-fibre budget remain separate. No full higher-dimensional counting statement is inferred from this intermediate result. Main13.4 and companionT1.7/T19.17 remain unresolved; main13.5 stays internally proved.
+
+P1-MATH-0544 adds six modules and sixteen theorems. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 542 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced. The already pinned Nullstellensatz source is selectively compiled.
+
+Verified under Lean v4.36.0-rc2: full build passed (16921 jobs); direct axiom audit passed for 16110 declarations using only propext, Classical.choice and Quot.sound; all 15694 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.72 GiB.

@@ -26304,6 +26304,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "c43bff712c87d83b409ddc3905e1611879419818"
+    },
+    {
+      "id": "P1-MATH-0544",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "Bounded integer section avoidance and its height cost were proved, but finiteness of the actual resulting parameter evaluation was still missing.",
+      "finding": "Complete projective avoidance gives powers of all original variables in the genuine parameter ideal; a proved graded module-generation argument turns the resulting finite zero fibre into an actual finite bounded linear parameter evaluation.",
+      "proposed_revision": "Use these genuine bounded finite parameters as the normalization step over algebraically closed coefficient fields. Retain parameter independence, exact rank, descent and birational projection as separately tracked obligations.",
+      "impact": "Closes actual finiteness of bounded degree-one curve parameters while preserving the fixed first coordinate, original homogeneous ideal and original Hilbert polynomial.",
+      "evidence": [
+        "PaperP1.FiniteGradedSupport.eventually_bot",
+        "PaperP1.FiniteGradedSupport.eventually_le_ideal",
+        "PaperP1.FiniteLinearGradedParameters.finite_adjoin_of_eventual_span",
+        "PaperP1.FiniteLinearGradedParameters.finite_adjoin_of_finite_quotient",
+        "PaperP1.FiniteLinearGradedParameters.finite_evaluation_of_adjoin",
+        "PaperP1.FiniteLinearGradedParameters.finite_evaluation_of_eventual_span",
+        "PaperP1.FiniteLinearZeroFiber.finite_of_variable_powers",
+        "PaperP1.FiniteLinearZeroFiber.finite_of_avoidance",
+        "PaperP1.FiniteLinearZeroFiber.bounded_linear_zero_fiber",
+        "PaperP1.ProjectiveAvoidanceRadical.zero_locus_subset",
+        "PaperP1.ProjectiveAvoidanceRadical.variable_mem_radical",
+        "PaperP1.ProjectiveAvoidanceRadical.exists_uniform_power",
+        "PaperP1.BoundedFiniteCurveParameters.finite_of_avoidance",
+        "PaperP1.BoundedFiniteCurveParameters.exists_bounded_finite_parameters",
+        "PaperP1.ProjectiveAvoidanceCone.linear_nonvanishing",
+        "PaperP1.ProjectiveAvoidanceCone.common_zero"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16921 jobs); direct axiom audit passed for 16110 declarations using only propext, Classical.choice and Quot.sound; all 15694 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.72 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -975,8 +975,17 @@ import PaperP1
 #print axioms PaperP1.FiniteGradedParameters.of_finite_map
 #print axioms PaperP1.FiniteGradedParameters.exists_polynomial
 #print axioms PaperP1.FiniteGradedPointEvaluation.card_le_dimension
+#print axioms PaperP1.FiniteGradedSupport.eventually_bot
+#print axioms PaperP1.FiniteGradedSupport.eventually_le_ideal
 #print axioms PaperP1.FiniteHomogeneousModuleGenerators.exists_generators
 #print axioms PaperP1.FiniteIntersectionSums.restrict_sum
+#print axioms PaperP1.FiniteLinearGradedParameters.finite_adjoin_of_eventual_span
+#print axioms PaperP1.FiniteLinearGradedParameters.finite_adjoin_of_finite_quotient
+#print axioms PaperP1.FiniteLinearGradedParameters.finite_evaluation_of_adjoin
+#print axioms PaperP1.FiniteLinearGradedParameters.finite_evaluation_of_eventual_span
+#print axioms PaperP1.FiniteLinearZeroFiber.finite_of_variable_powers
+#print axioms PaperP1.FiniteLinearZeroFiber.finite_of_avoidance
+#print axioms PaperP1.FiniteLinearZeroFiber.bounded_linear_zero_fiber
 #print axioms PaperP1.FinitePiExtension.extend_apply
 #print axioms PaperP1.FinitePiExtension.extend_at
 #print axioms PaperP1.FinitePiExtension.sum_extend
@@ -1794,6 +1803,9 @@ import PaperP1
 #print axioms PaperP1.PrivateRankPeeling.trace_size_bound
 #print axioms PaperP1.PrivateRankPeeling.exists_terminal_real
 #print axioms PaperP1.ProjectedPreimageRank.intersection_le
+#print axioms PaperP1.ProjectiveAvoidanceRadical.zero_locus_subset
+#print axioms PaperP1.ProjectiveAvoidanceRadical.variable_mem_radical
+#print axioms PaperP1.ProjectiveAvoidanceRadical.exists_uniform_power
 #print axioms PaperP1.QuadraticCumulantBound.Data.mono
 #print axioms PaperP1.QuadraticCumulantBound.Data.parameter_bound
 #print axioms PaperP1.QuadraticCumulantBound.Data.moment_bound
@@ -12188,6 +12200,8 @@ import PaperP1
 #print axioms PaperP1.ZeroPartialDegreeFactor.secondForm_nonzero
 #print axioms PaperP1.ZeroPartialDegreeFactor.primitive_second_projection_count
 #print axioms PaperP1.ZeroPartialDegreeFactor.primitive_first_projection_count
+#print axioms PaperP1.BoundedFiniteCurveParameters.finite_of_avoidance
+#print axioms PaperP1.BoundedFiniteCurveParameters.exists_bounded_finite_parameters
 #print axioms PaperP1.BoundedProjectiveSectionAvoidance.exists_coefficients
 #print axioms PaperP1.BoundedProjectiveSectionAvoidance.exists_coefficients_and_height
 #print axioms PaperP1.BoundedProjectiveSectionAvoidance.rational_curve
@@ -12296,6 +12310,8 @@ import PaperP1
 #print axioms PaperP1.ProjRankOneQuadraticDescent.parametrized_isSquare
 #print axioms PaperP1.ProjSurjectiveClosedImmersion.restriction_closedImmersion
 #print axioms PaperP1.ProjSurjectiveClosedImmersion.map_closedImmersion
+#print axioms PaperP1.ProjectiveAvoidanceCone.linear_nonvanishing
+#print axioms PaperP1.ProjectiveAvoidanceCone.common_zero
 #print axioms PaperP1.ProjectiveCurveData.degree_unique
 #print axioms PaperP1.ProjectiveCurveHilbertDegree.exists_nat_degree
 #print axioms PaperP1.ProjectiveCurveHilbertDegree.natDegree_pos

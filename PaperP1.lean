@@ -4142,3 +4142,9 @@ public import PaperP1.Algebra.BoundedFieldPolynomialNonvanishing
 public import PaperP1.Algebra.BoundedMomentLinearForm
 public import PaperP1.Arithmetic.IntegerLinearFormHeight
 public import PaperP1.Geometry.BoundedProjectiveSectionAvoidance
+public import PaperP1.Algebra.FiniteGradedSupport
+public import PaperP1.Algebra.FiniteLinearGradedParameters
+public import PaperP1.Algebra.FiniteLinearZeroFiber
+public import PaperP1.Algebra.ProjectiveAvoidanceRadical
+public import PaperP1.Geometry.BoundedFiniteCurveParameters
+public import PaperP1.Geometry.ProjectiveAvoidanceCone
