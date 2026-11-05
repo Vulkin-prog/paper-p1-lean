@@ -3853,3 +3853,6 @@ public import PaperP1.Asymptotics.SixVertexBudget
 public import PaperP1.Asymptotics.CriticalRawValueProfile
 public import PaperP1.Asymptotics.EnlargedRawValueProfile
 public import PaperP1.Asymptotics.SignedSaddleCostInternalProfile
+public import PaperP1.Asymptotics.AllAlignedTripleMass
+public import PaperP1.Asymptotics.HardNonalignedTripleCount
+public import PaperP1.Asymptotics.SharpTripleResidual

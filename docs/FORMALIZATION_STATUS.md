@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+P1-MATH-0454 isolates the remaining sharp global connected-triple joint mass on triples with three strong nonaligned pairs. All other sectors have internal41/30 bounds, and the residual has a subpower host count. Its optimal weighted bound and full main14.1/14.6 remain conditional.
+
 Companion T19.16 retains only the explicit unproved ordinary EIP reciprocal-prime input (P1-MATH-0453). Internal critical and moving-width full raw-value profiles remove all six former geometric arguments; the numbered status remains conditional.
 
 Companion T20.8 is unconditional (P1-MATH-0452), with the same small-component exceptional set and stronger exceptional mass power3/2. Exact six-vertex packing, simultaneous covers and every prescribed-plane conclusion are retained.
@@ -91,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records451 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records452 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -210,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15156 audited theorem/lemma declarations**. This
+- The project currently has **15160 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26416,3 +26418,20 @@ Earlier conditional declarations and literature history are preserved. The six g
 P1-MATH-0453 adds three modules, five theorems and one definition. T19.16 stays conditional with exactly one remaining unformalized analytic input. Numbered coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records451 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16277 jobs); direct axiom audit passed for 15156 declarations using only propext, Classical.choice and Quot.sound; all 14570 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.82 GiB.
+
+
+## Sharp triple mass reduces to subpower many strong nonaligned triangles
+
+The sharp global connected-triple joint mass is reduced internally to a literal subpower-size population with three strong nonaligned pairs. This is preparatory progress for main14.1 and14.6, not a proof of their remaining optimal global upper bounds. Their source statements and the complete sector proof in main_sections/third_cumulant.tex lines32-46 and296-377 were rechecked. Numbered statuses remain conditional.
+
+AllAlignedTripleMass.uniform_mass strengthens the preceding fixed-channel result to every actual connected triple containing any pair in the literal enlarged alignment relation. The entire allowed cubic height range inL+1 is included; no fixed family of slopes, exact unit, private source normalization, regularity or affine compatibility hypothesis is imposed. After the strong aligned sector is removed, the aligned pair is weak and caps the full triple nullity. The internal weak-pair reduction supplies the remainder. The threshold precedes every actual triple population.
+
+SharpTripleResidual defines Hard by requiring every distinct pair in the original triple to be nonaligned and to have effective intersection rank strictly above theta*(L+1). Its hosts are the literal filtered connected families on an arbitrary original subgroundG, and its mass uses the original infinite-model joint probabilities. uniform_joint_reduction chooses theta>0 before the threshold and every subground. The full connected joint mass minus this residual mass is nonnegative and at mostN^(-41/30+epsilon). The finite cover separates triples containing an aligned pair, the nonaligned population with a weak pair, and the exact residual. All former sectors have internal bounds; no target estimate for the residual is assumed.
+
+HardNonalignedTripleCount.uniform_count proves that for every fixed positive theta and everyepsilon>0 the residual has at mostN^epsilon actual hosts. Genuine nonalignment gives the original exact-offset exclusion on the physical windows. Two directed strong nonaligned pairs with a common endpoint recover the triple; the internal subpower ordered pair count controls the product cover. The host count retains every unordered original support and every source orientation before overcounting, and its threshold precedes the original subground. No pointwise sharp joint-probability bound is inferred from this cardinality statement.
+
+These declarations isolate the remaining arithmetic issue: the optimal total weight of the three-strong-nonaligned-pair population. A subpower host count alone does not prove that weight bound. General growing-degree BCN, its pointwise nonaligned rank consequence and the full optimal third-activity upper bounds remain unproved in their recorded scopes. The existing unconditional rational lower bound and all aligned sectors remain valid. Earlier conditional declarations, source bytes and Lean/Mathlib pins are preserved.
+
+P1-MATH-0454 adds three modules, four theorems and three definitions. Main14.1 and14.6 stay conditional. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records452 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16283 jobs); direct axiom audit passed for 15160 declarations using only propext, Classical.choice and Quot.sound; all 14577 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.80 GiB.

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**451 mathematical improvements and two statement-scope corrections are confirmed.**
+**452 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -25559,3 +25559,20 @@ Earlier conditional declarations and literature history are preserved. The six g
 P1-MATH-0453 adds three modules, five theorems and one definition. T19.16 stays conditional with exactly one remaining unformalized analytic input. Numbered coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records451 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16277 jobs); direct axiom audit passed for 15156 declarations using only propext, Classical.choice and Quot.sound; all 14570 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.82 GiB.
+
+
+## Sharp triple mass reduces to subpower many strong nonaligned triangles
+
+The sharp global connected-triple joint mass is reduced internally to a literal subpower-size population with three strong nonaligned pairs. This is preparatory progress for main14.1 and14.6, not a proof of their remaining optimal global upper bounds. Their source statements and the complete sector proof in main_sections/third_cumulant.tex lines32-46 and296-377 were rechecked. Numbered statuses remain conditional.
+
+AllAlignedTripleMass.uniform_mass strengthens the preceding fixed-channel result to every actual connected triple containing any pair in the literal enlarged alignment relation. The entire allowed cubic height range inL+1 is included; no fixed family of slopes, exact unit, private source normalization, regularity or affine compatibility hypothesis is imposed. After the strong aligned sector is removed, the aligned pair is weak and caps the full triple nullity. The internal weak-pair reduction supplies the remainder. The threshold precedes every actual triple population.
+
+SharpTripleResidual defines Hard by requiring every distinct pair in the original triple to be nonaligned and to have effective intersection rank strictly above theta*(L+1). Its hosts are the literal filtered connected families on an arbitrary original subgroundG, and its mass uses the original infinite-model joint probabilities. uniform_joint_reduction chooses theta>0 before the threshold and every subground. The full connected joint mass minus this residual mass is nonnegative and at mostN^(-41/30+epsilon). The finite cover separates triples containing an aligned pair, the nonaligned population with a weak pair, and the exact residual. All former sectors have internal bounds; no target estimate for the residual is assumed.
+
+HardNonalignedTripleCount.uniform_count proves that for every fixed positive theta and everyepsilon>0 the residual has at mostN^epsilon actual hosts. Genuine nonalignment gives the original exact-offset exclusion on the physical windows. Two directed strong nonaligned pairs with a common endpoint recover the triple; the internal subpower ordered pair count controls the product cover. The host count retains every unordered original support and every source orientation before overcounting, and its threshold precedes the original subground. No pointwise sharp joint-probability bound is inferred from this cardinality statement.
+
+These declarations isolate the remaining arithmetic issue: the optimal total weight of the three-strong-nonaligned-pair population. A subpower host count alone does not prove that weight bound. General growing-degree BCN, its pointwise nonaligned rank consequence and the full optimal third-activity upper bounds remain unproved in their recorded scopes. The existing unconditional rational lower bound and all aligned sectors remain valid. Earlier conditional declarations, source bytes and Lean/Mathlib pins are preserved.
+
+P1-MATH-0454 adds three modules, four theorems and three definitions. Main14.1 and14.6 stay conditional. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records452 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16283 jobs); direct axiom audit passed for 15160 declarations using only propext, Classical.choice and Quot.sound; all 14577 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.80 GiB.

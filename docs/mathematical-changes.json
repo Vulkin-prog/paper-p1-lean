@@ -22766,6 +22766,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "9d98978242f5ba078a250291dabee325c5eebdfe"
+    },
+    {
+      "id": "P1-MATH-0454",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:third:main",
+        "number": "14.1",
+        "page": 34,
+        "source": "main_sections/third_cumulant.tex",
+        "line": 32,
+        "statement_sha256": "b3c908053821806fbdaaae7e9cc2d22a4c3fd53a144da0b135f5997df780d34c"
+      },
+      "original_assumption": "The global optimal triple proof retained growing-degree BCN through the rank control on its strongly nonaligned sector, obscuring which configurations still needed a sharp weight estimate after the aligned and weak-pair bounds became internal.",
+      "finding": "Every connected triple containing any literal aligned pair has internal power41/30. The remaining weak-pair population has internal power3/2. Their exact removal leaves only triples with three strong nonaligned pairs; an internal product cover proves a subpower host count for that literal residual.",
+      "proposed_revision": "Separate the now internal all-aligned and weak-pair sectors explicitly, and identify the three-strong-nonaligned-pair joint mass as the remaining arithmetic term. Keep the proved residual cardinality distinct from the unresolved optimal weighted estimate and preserve the fixed cutoff/threshold order.",
+      "impact": "The complete sharp connected joint mass reduces, with power41/30 error, to a literal subpower-size original residual. This does not close the optimal global third-activity upper bound; main14.1 and14.6 remain conditional and numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.AllAlignedTripleMass.uniform_mass",
+        "PaperP1.HardNonalignedTripleCount.uniform_count",
+        "PaperP1.SharpTripleResidual.mass_le_joint",
+        "PaperP1.SharpTripleResidual.uniform_joint_reduction",
+        "PaperP1.SharpTripleResidual.Hard",
+        "PaperP1.SharpTripleResidual.hosts",
+        "PaperP1.SharpTripleResidual.mass"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16283 jobs); direct axiom audit passed for 15160 declarations using only propext, Classical.choice and Quot.sound; all 14577 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.80 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

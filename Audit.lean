@@ -6748,6 +6748,7 @@ import PaperP1
 #print axioms PaperP1.AllAlignedTargetTripleMass.all_actual_sources
 #print axioms PaperP1.AllAlignedTargetTripleMass.mass_le_sum
 #print axioms PaperP1.AllAlignedTargetTripleMass.uniform_mass
+#print axioms PaperP1.AllAlignedTripleMass.uniform_mass
 #print axioms PaperP1.AllCardinalityConnected.uniform_bound
 #print axioms PaperP1.AllCardinalityConnected.companion_T16_1
 #print axioms PaperP1.AllCardinalityConnectedJoint.uniform_bound
@@ -8098,6 +8099,7 @@ import PaperP1
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_full_cumulant
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_absolute_activity
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_cumulant
+#print axioms PaperP1.HardNonalignedTripleCount.uniform_count
 #print axioms PaperP1.HeathBrownHeightBudget.uniform_first_count
 #print axioms PaperP1.HeathBrownHeightBudget.uniform_second_count
 #print axioms PaperP1.HeightControlledAffineCount.uniform_count
@@ -9435,6 +9437,8 @@ import PaperP1
 #print axioms PaperP1.SharpThirdCumulantLowerUnderInputs.error_absorption
 #print axioms PaperP1.SharpThirdCumulantLowerUnderInputs.article_14_5
 #print axioms PaperP1.SharpTranslatedKernelCounts.two_uniform_budget
+#print axioms PaperP1.SharpTripleResidual.mass_le_joint
+#print axioms PaperP1.SharpTripleResidual.uniform_joint_reduction
 #print axioms PaperP1.SharpTruncatedAsymmetricSupportCount.uniform_count
 #print axioms PaperP1.SharpTwoSmallKernelCount.uniform_count
 #print axioms PaperP1.SharpTwoSmallKernelWindowCount.uniform_budget
