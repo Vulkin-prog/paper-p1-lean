@@ -37461,7 +37461,8 @@
           ],
           "checkpoint": "P1-MATH-0466"
         }
-      ]
+      ],
+      "validation_commit": "fabc857b3f7360b5fb0930a0d1447ea9f084a6e7"
     },
     {
       "label": "p1:limits:private-exact",
