@@ -25596,3 +25596,18 @@ This closes the signed imaginary norm counting step. Its application to original
 P1-MATH-0392 adds five theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records390 improvements and two statement-scope corrections. No new axiom, external arithmetic premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15699 jobs); direct axiom audit passed for 14518 declarations using only propext, Classical.choice and Quot.sound; all 13849 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.59 GiB.
+
+
+## Negative-discriminant conic counts with unrestricted point height
+
+Stable ID: p1:internal:negative-discriminant-conic-count. Negative discriminant forces c!=0, geometric irreducibility supplies the nonzero norm constant, and the actual injective norm transform counts all signs and axis points.
+
+NegativeDiscriminantConicCount proves unconditional N^epsilon counts for every actual finite population of integer zeros of a negative-discriminant quadratic equation whose coefficients lie in a fixed polynomial ambient height box. No point-height bound is imposed. For actual geometrically irreducible integer polynomials of total degree at most two, finite_population_count covers arbitrary finite populations of all integer zeros; grid_count covers every grid radius B with no relation between B and N.
+
+A negative discriminant forces the leading quadratic coefficient c to be nonzero. The existing exact integral conic transform is therefore injective and sends every zero to u^2+D*v^2=delta, with D the positive absolute discriminant. Geometric irreducibility internally supplies delta!=0. No leading-coordinate choice, squarefree restriction, primitivity condition, conductor comparison or non-degeneracy premise is supplied externally. The coefficient-height budget bounds |delta| by a fixed power of N. Checkpoint392 then counts every actual signed imaginary norm solution, without needing any coordinate-height control. The original coordinate signs and axis points are preserved by injectivity.
+
+The coefficient-height restriction remains at this checkpoint. Passing to the internally constructed bounded-height associated equation will remove it on each original finite coordinate box. The negative-discriminant original-coefficient-unrestricted branch, parabolas, general BCN and original all-dimensional main13.4 remain separate obligations. No original numbered result is promoted.
+
+P1-MATH-0393 adds four theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records391 improvements and two statement-scope corrections. No new axiom, external arithmetic premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15701 jobs); direct axiom audit passed for 14522 declarations using only propext, Classical.choice and Quot.sound; all 13853 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.57 GiB.

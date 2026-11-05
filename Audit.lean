@@ -10409,6 +10409,10 @@ import PaperP1
 #print axioms PaperP1.LinearProjectiveFactor.projective_chart_coefficient
 #print axioms PaperP1.LinearProjectiveFactor.projective_linear
 #print axioms PaperP1.LinearProjectiveFactor.evaluation_linear
+#print axioms PaperP1.NegativeDiscriminantConicCount.coefficient_nonzero
+#print axioms PaperP1.NegativeDiscriminantConicCount.count
+#print axioms PaperP1.NegativeDiscriminantConicCount.finite_population_count
+#print axioms PaperP1.NegativeDiscriminantConicCount.grid_count
 #print axioms PaperP1.NonGeometricRationalSingularity.rationalize_evaluation
 #print axioms PaperP1.NonGeometricRationalSingularity.projective_zero_iff
 #print axioms PaperP1.NonGeometricRationalSingularity.nongeometric_input_of_singularity

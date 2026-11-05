@@ -20398,6 +20398,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "38cd9a979b4fb99f7b9ebb2f4cfa08b71992d864"
+    },
+    {
+      "id": "P1-MATH-0393",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The proved imaginary norm count had not yet been transported to actual geometric negative-discriminant conic equations and their original signed integer zeros.",
+      "finding": "At every fixed polynomial coefficient height, all finite populations of actual integer zeros of every geometric negative-discriminant conic satisfy N^epsilon, with no bound whatsoever on the point height or grid radius.",
+      "proposed_revision": "Use this full signed negative-discriminant theorem after the internally proved bounded-height associated presentation. Keep the original coefficient-unrestricted statement separate until association and sign preservation are applied.",
+      "impact": "Closes the negative-discriminant conic count at controlled coefficient height, with geometric non-degeneracy supplied internally and no point-height restriction. Original coefficient removal and numbered coverage remain separate.",
+      "evidence": [
+        "PaperP1.NegativeDiscriminantConicCount.coefficient_nonzero",
+        "PaperP1.NegativeDiscriminantConicCount.count",
+        "PaperP1.NegativeDiscriminantConicCount.finite_population_count",
+        "PaperP1.NegativeDiscriminantConicCount.grid_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15701 jobs); direct axiom audit passed for 14522 declarations using only propext, Classical.choice and Quot.sound; all 13853 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.57 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
