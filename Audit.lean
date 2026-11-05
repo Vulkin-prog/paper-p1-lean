@@ -10227,6 +10227,12 @@ import PaperP1
 #print axioms PaperP1.PrimitiveDirections.equal_ratio_cross
 #print axioms PaperP1.PrimitiveDirections.ratio_fibre_card
 #print axioms PaperP1.PrimitiveDirections.axis_card
+#print axioms PaperP1.PrimitiveHomogeneousRootBound.eval_homogenize_other_axis
+#print axioms PaperP1.PrimitiveHomogeneousRootBound.endpoint_divisibility
+#print axioms PaperP1.PrimitiveHomogeneousRootBound.coordinate_natAbs_bounds
+#print axioms PaperP1.PrimitiveHomogeneousRootBound.evaluation_bound
+#print axioms PaperP1.PrimitiveHomogeneousRootBound.fibre_coordinate_bounds
+#print axioms PaperP1.PrimitiveHomogeneousRootBound.fibre_height_bound
 #print axioms PaperP1.PrimitiveHomogeneousZeros.chart_ne_zero
 #print axioms PaperP1.PrimitiveHomogeneousZeros.ratio_is_root
 #print axioms PaperP1.PrimitiveHomogeneousZeros.nonaxis_card
