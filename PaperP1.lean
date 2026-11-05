@@ -3637,3 +3637,6 @@ public import PaperP1.Model.FilteredPositiveRestriction
 public import PaperP1.Asymptotics.AllPrimitiveMass
 public import PaperP1.Asymptotics.FixedPrimitiveMass
 public import PaperP1.Asymptotics.PrimitiveOrderedBound
+public import PaperP1.Arithmetic.DegreeUniformPrimeScale
+public import PaperP1.Arithmetic.WeakDegreeUniformPlaneCount
+public import PaperP1.Diophantine.WeakDegreeUniformAffineCount

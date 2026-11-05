@@ -3849,6 +3849,8 @@ import PaperP1
 #print axioms PaperP1.DegreeUniformPlanePresentation.interpolation_height_bound
 #print axioms PaperP1.DegreeUniformPlanePresentation.point_natAbs_bounds
 #print axioms PaperP1.DegreeUniformPlanePresentation.exists_presentation
+#print axioms PaperP1.DegreeUniformPrimeScale.box_root_bound
+#print axioms PaperP1.DegreeUniformPrimeScale.exists_scale
 #print axioms PaperP1.DenseCompressedPairs.mem_pairs
 #print axioms PaperP1.DenseCompressedPairs.cover
 #print axioms PaperP1.DenseCompressedPairs.offset_card_le
@@ -6504,6 +6506,8 @@ import PaperP1
 #print axioms PaperP1.VerticalGridMatrices.actual_transform_eq
 #print axioms PaperP1.VerticalGridMatrices.inflated_scale_bounds
 #print axioms PaperP1.VerticalGridMatrices.effective_pair_product_bound
+#print axioms PaperP1.WeakDegreeUniformPlaneCount.uniform_geometric_count
+#print axioms PaperP1.WeakDegreeUniformPlaneCount.grid_geometric_count
 #print axioms PaperP1.WeightedDefectCounting.mem_positiveValuesForSupport_iff
 #print axioms PaperP1.WeightedDefectCounting.mem_positiveDefectValues_iff
 #print axioms PaperP1.WeightedDefectCounting.positiveValuesForSupport_subset_image_Icc
@@ -10827,6 +10831,7 @@ import PaperP1
 #print axioms PaperP1.UnrestrictedHyperbolicConicCount.polynomial_height_count
 #print axioms PaperP1.UnrestrictedParabolicConicCount.natural_count
 #print axioms PaperP1.UnrestrictedParabolicConicCount.finite_population_count
+#print axioms PaperP1.WeakDegreeUniformAffineCount.uniform_count
 #print axioms PaperP1.WideQuadraticKernelRanges.product_bounds
 #print axioms PaperP1.WideQuadraticKernelRanges.square_part_range
 #print axioms PaperP1.WideQuadraticKernelRanges.modulus_height

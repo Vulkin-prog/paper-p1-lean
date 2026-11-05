@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+A weaker degree-uniform plane theorem is complete (P1-MATH-0420): one absolute constant gives C*D^12*(log2 N+1)^4*N^(1/D), uniformly in coefficients for2<=D<=N. The original D^2 logarithmic/all-dimensional BCN theorem and its sharp rank consequences remain open.
+
 CompanionT4.3 andT14.2 are unconditional (P1-MATH-0419): fixed ordered nominal and full all-cardinality primitive masses have the stronger exponent1, with actual joint/absolute-centered weights, contacts and incompatible systems retained.
 
 Main11.2 and11.3 are unconditional (P1-MATH-0418): full incompatible triple activity and the actual third-cumulant/positive-activity comparison have sharp error N^(-3/2+epsilon), including zero marginals and all repeated indices.
@@ -33,7 +35,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is111/167 unconditional and53 conditional (164/167 completed). The project records417 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is111/167 unconditional and53 conditional (164/167 completed). The project records418 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -152,7 +154,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14725 audited theorem/lemma declarations**. This
+- The project currently has **14730 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25768,3 +25770,18 @@ The full original statement of companionT4.3 in companion_sections/fixed_moments
 P1-MATH-0419 adds three modules and eight theorems. CompanionT4.3 andT14.2 move from conditional to proved. Coverage becomes111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records417 improvements and two statement-scope corrections. Original source bytes remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15845 jobs); direct axiom audit passed for 14725 declarations using only propext, Classical.choice and Quot.sound; all 14075 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.78 GiB.
+
+
+## An unconditional polynomial-degree uniform plane count
+
+WeakDegreeUniformPlaneCount proves a complete coefficient-uniform bound C*D^12*(Nat.log2(N)+1)^4*N^(1/D) for every geometrically integral integer plane equation of total degree2<=D<=N and every actual finite population of signed integer zeros in [-N,N]^2. One absolute positive constant precedes the degree, scale, coefficients and population. grid_geometric_count specializes to the entire actual grid. The equation coefficients have no height restriction.
+
+DegreeUniformPrimeScale chooses an actual natural prime scale P above the absolute PNT-pool threshold, the square of the avoidance count, and 3*exp(1)*((D+1)*N)^(1/D). Its checked upper bound is K*D^6*(Nat.log2(N)+1)^2*N^(1/D), with K chosen before D and N. PolynomialPrimeCover supplies actual primes in (P,16P] and a bound for their sum; the complete height obstruction is avoided. The affine determinant estimate and smooth-class auxiliary intersection count are the already internally proved ones.
+
+WeakDegreeUniformAffineCount combines the explicit parameters from checkpoint406 with this prime scale. It proves the actual global count on the sheared box for height at most N^(32*D^3), with outer degreeD and first partial degree at mostD. All derivative/denominator exceptions are included. The exact resulting degree powers are D^2 for the residue-class factor, D for auxiliary intersection, D^3 for the avoidance count and D^6 for the prime scale, giving D^12 overall; all four logarithmic factors are retained.
+
+For unrestricted original coefficients, the bounded shear and post-shear interpolation from checkpoint405 give the actual small-height presentation whenever the population has more than D^2 points. The shear is injective and expands the integer box by at most D+1. Populations of size at mostD^2 are absorbed directly. This completes the previously pending weaker polynomial-degree estimate, with no geometric or counting input left in these canonical statements.
+
+This is a weaker theorem than main13.4. Its D^12 dependence does not establish the source D^2 logarithmic BCN estimate, the full all-dimensional statement, the complete rangea<1/2 of main13.5 or the nonaligned half-window rank bound13.6. Those original ledger statuses and all unproved literature properties remain unchanged. P1-MATH-0420 adds three modules and five theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records418 improvements and two statement-scope corrections. Original source bytes remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15851 jobs); direct axiom audit passed for 14730 declarations using only propext, Classical.choice and Quot.sound; all 14080 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.76 GiB.

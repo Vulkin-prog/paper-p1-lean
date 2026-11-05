@@ -21353,6 +21353,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "c67c2a89c0dd5dc21254150d65a2bd1734bb04f9"
+    },
+    {
+      "id": "P1-MATH-0420",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The degree-uniform affine preparation had explicit height and logarithmic budgets but no chosen prime scale or completed global count.",
+      "finding": "An absolute actual prime scale and the internally proved determinant/prime-pool estimates give the full coefficient-uniform integer geometric plane bound C*D^12*(log2 N+1)^4*N^(1/D) for2<=D<=N.",
+      "proposed_revision": "Record this unconditional weaker uniform theorem separately from BCN. State the domain, actual signed grid, absolute quantifier order and twelfth degree power explicitly; do not use it to discharge the sharper source consequences.",
+      "impact": "Completes a genuine polynomial-degree global plane count. The original all-dimensional quadratic-degree BCN statement and its full sharp consequences remain unproved; numbered coverage stays111/167 unconditional.",
+      "evidence": [
+        "PaperP1.DegreeUniformPrimeScale.box_root_bound",
+        "PaperP1.DegreeUniformPrimeScale.exists_scale",
+        "PaperP1.WeakDegreeUniformPlaneCount.uniform_geometric_count",
+        "PaperP1.WeakDegreeUniformPlaneCount.grid_geometric_count",
+        "PaperP1.WeakDegreeUniformAffineCount.uniform_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15851 jobs); direct axiom audit passed for 14730 declarations using only propext, Classical.choice and Quot.sound; all 14080 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.76 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

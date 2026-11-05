@@ -18977,3 +18977,18 @@ The full original statement of companionT4.3 in companion_sections/fixed_moments
 P1-MATH-0419 adds three modules and eight theorems. CompanionT4.3 andT14.2 move from conditional to proved. Coverage becomes111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records417 improvements and two statement-scope corrections. Original source bytes remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15845 jobs); direct axiom audit passed for 14725 declarations using only propext, Classical.choice and Quot.sound; all 14075 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.78 GiB.
+
+
+## An unconditional polynomial-degree uniform plane count
+
+WeakDegreeUniformPlaneCount proves a complete coefficient-uniform bound C*D^12*(Nat.log2(N)+1)^4*N^(1/D) for every geometrically integral integer plane equation of total degree2<=D<=N and every actual finite population of signed integer zeros in [-N,N]^2. One absolute positive constant precedes the degree, scale, coefficients and population. grid_geometric_count specializes to the entire actual grid. The equation coefficients have no height restriction.
+
+DegreeUniformPrimeScale chooses an actual natural prime scale P above the absolute PNT-pool threshold, the square of the avoidance count, and 3*exp(1)*((D+1)*N)^(1/D). Its checked upper bound is K*D^6*(Nat.log2(N)+1)^2*N^(1/D), with K chosen before D and N. PolynomialPrimeCover supplies actual primes in (P,16P] and a bound for their sum; the complete height obstruction is avoided. The affine determinant estimate and smooth-class auxiliary intersection count are the already internally proved ones.
+
+WeakDegreeUniformAffineCount combines the explicit parameters from checkpoint406 with this prime scale. It proves the actual global count on the sheared box for height at most N^(32*D^3), with outer degreeD and first partial degree at mostD. All derivative/denominator exceptions are included. The exact resulting degree powers are D^2 for the residue-class factor, D for auxiliary intersection, D^3 for the avoidance count and D^6 for the prime scale, giving D^12 overall; all four logarithmic factors are retained.
+
+For unrestricted original coefficients, the bounded shear and post-shear interpolation from checkpoint405 give the actual small-height presentation whenever the population has more than D^2 points. The shear is injective and expands the integer box by at most D+1. Populations of size at mostD^2 are absorbed directly. This completes the previously pending weaker polynomial-degree estimate, with no geometric or counting input left in these canonical statements.
+
+This is a weaker theorem than main13.4. Its D^12 dependence does not establish the source D^2 logarithmic BCN estimate, the full all-dimensional statement, the complete rangea<1/2 of main13.5 or the nonaligned half-window rank bound13.6. Those original ledger statuses and all unproved literature properties remain unchanged. P1-MATH-0420 adds three modules and five theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records418 improvements and two statement-scope corrections. Original source bytes remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15851 jobs); direct axiom audit passed for 14730 declarations using only propext, Classical.choice and Quot.sound; all 14080 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.76 GiB.
