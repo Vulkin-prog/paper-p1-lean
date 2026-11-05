@@ -33,9 +33,9 @@ theorem linear_substitution_degree {R σ τ : Type*} [CommRing R]
   intro d hd
   exact (hm d (p.coeff d)).trans (MvPolynomial.le_totalDegree hd)
 
-variable {F : Type*} [Field F]
+variable {F : Type*} [CommRing F]
 
-theorem substitute_degree (v : Fin 1 → F) (p : MvPolynomial (Fin 2) F) :
+theorem substitute_degree [Nontrivial F] (v : Fin 1 → F) (p : MvPolynomial (Fin 2) F) :
     (HomogeneousLinearShear.substitute v p).totalDegree = p.totalDegree := by
   have hle (w : Fin 1 → F) (q : MvPolynomial (Fin 2) F) :
       (HomogeneousLinearShear.substitute w q).totalDegree ≤ q.totalDegree := by
@@ -56,7 +56,7 @@ theorem substitute_degree (v : Fin 1 → F) (p : MvPolynomial (Fin 2) F) :
 def shear (t : F) : F[X][X] ≃ₐ[F] F[X][X] :=
   (chart F).symm.trans ((HomogeneousLinearShear.equiv (fun _ : Fin 1 ↦ t)).trans (chart F))
 
-theorem shear_degree (t : F) (P : F[X][X]) :
+theorem shear_degree [Nontrivial F] (t : F) (P : F[X][X]) :
     PlaneCurvePointCount.degree (shear t P) = PlaneCurvePointCount.degree P := by
   change PlaneCurvePointCount.degree
     (chart F (HomogeneousLinearShear.substitute (fun _ : Fin 1 ↦ t) ((chart F).symm P))) = _

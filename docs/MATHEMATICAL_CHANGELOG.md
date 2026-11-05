@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**372 mathematical improvements and two statement-scope corrections are confirmed.**
+**373 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24310,3 +24310,16 @@ bounded_degree_count gives one constant for every degree in any fixed finite int
 P1-MATH-0374 adds four theorems. This intermediate estimate remains weaker than the degree-uniform BCN exponent1/D. Main13.4 remains in_progress; coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records372 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15661 jobs); direct axiom audit passed for 14403 declarations using only propext, Classical.choice and Quot.sound; all 13704 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.84 GiB.
+
+
+## Integer coordinate shears preserve geometry with finite height budgets
+
+IntegerPlaneShear supplies actual integer coordinate shears P(x+t*y,y) and point transport(x,y)->(x-t*y,y). The shear definitions, equivalences, evaluation and coefficient-map compatibility now work over arbitrary commutative rings, with only nontriviality needed for exact total-degree preservation. The original field theorems retain their statements as specializations. The homogeneous unit-leading-coefficient existence theorem separately retains its necessary field hypothesis.
+
+The new coefficient_map theorem proves compatibility with every coefficient ring homomorphism through the actual generators of the nested polynomial ring. In particular, complex scalar extension commutes with the integer shear, and geometric irreducibility is preserved internally. The point transport is injective and sends every original integer zero to an actual zero of the transformed equation. For parameters0<=t<=D it enlarges each coordinate box by at most D+1.
+
+The exact finite coefficient-height budget heightBudget(D) is defined before the equation as the supremum of the proved integer-linear basis budgets for parameters0,...,D. height_budget proves height(shear(t,P))<=heightBudget(D)*height(P) for every actual equation of total degree at most D. No unspecified coordinate choice or uncontrolled moving coefficient enters this estimate.
+
+P1-MATH-0375 adds nine theorems and two definitions and weakens unnecessary field assumptions in two earlier modules. Selecting a bounded parameter that makes the outer degree equal the total degree remains the next obligation before any exponent improvement is asserted. The proved intermediate plane exponent remains4/D+epsilon, while the sharper degree-uniform BCN estimate and original main13.4 remain open. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records373 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15663 jobs); direct axiom audit passed for 14412 declarations using only propext, Classical.choice and Quot.sound; all 13715 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.83 GiB.

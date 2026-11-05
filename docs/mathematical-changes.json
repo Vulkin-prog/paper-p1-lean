@@ -19767,6 +19767,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "af0d6d612c9772608133a8f060bda90bdb723573"
+    },
+    {
+      "id": "P1-MATH-0375",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The existing exact-degree coordinate shear was stated only over fields and lacked an integer point transport and a uniform coefficient-height budget for a bounded set of parameters.",
+      "finding": "The actual shear works over commutative rings, commutes with all coefficient maps, preserves integer geometric irreducibility, injectively transports all integer zeros and has explicit finite uniform coordinate and coefficient-height budgets.",
+      "proposed_revision": "Use the integer shear with a parameter selected from0,...,D by a proved top-coefficient nonvanishing argument, then apply the internally proved biform estimate in a variable of full total degree.",
+      "impact": "Closes integer coordinate transport, geometric preservation and uniform finite height control needed for a stronger intermediate plane estimate. No stronger count or numbered coverage is claimed yet.",
+      "evidence": [
+        "PaperP1.IntegerPlaneShear.outer_variable",
+        "PaperP1.IntegerPlaneShear.inner_variable",
+        "PaperP1.IntegerPlaneShear.scalar",
+        "PaperP1.IntegerPlaneShear.coefficient_map",
+        "PaperP1.IntegerPlaneShear.geometric",
+        "PaperP1.IntegerPlaneShear.point_injective",
+        "PaperP1.IntegerPlaneShear.point_zero",
+        "PaperP1.IntegerPlaneShear.point_box",
+        "PaperP1.IntegerPlaneShear.height_budget",
+        "PaperP1.IntegerPlaneShear.point",
+        "PaperP1.IntegerPlaneShear.heightBudget"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15663 jobs); direct axiom audit passed for 14412 declarations using only propext, Classical.choice and Quot.sound; all 13715 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.83 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

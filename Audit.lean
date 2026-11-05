@@ -1361,6 +1361,15 @@ import PaperP1
 #print axioms PaperP1.IntegerGraphEquation.reduced_point
 #print axioms PaperP1.IntegerGraphEquation.reduced_degree_le
 #print axioms PaperP1.IntegerOverlapRoot.exists_root
+#print axioms PaperP1.IntegerPlaneShear.outer_variable
+#print axioms PaperP1.IntegerPlaneShear.inner_variable
+#print axioms PaperP1.IntegerPlaneShear.scalar
+#print axioms PaperP1.IntegerPlaneShear.coefficient_map
+#print axioms PaperP1.IntegerPlaneShear.geometric
+#print axioms PaperP1.IntegerPlaneShear.point_injective
+#print axioms PaperP1.IntegerPlaneShear.point_zero
+#print axioms PaperP1.IntegerPlaneShear.point_box
+#print axioms PaperP1.IntegerPlaneShear.height_budget
 #print axioms PaperP1.IntegerPolynomialGrowth.lower_power_bound
 #print axioms PaperP1.integerPolynomialHeight_zero
 #print axioms PaperP1.coeff_natAbs_le_integerPolynomialHeight

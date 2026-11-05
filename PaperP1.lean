@@ -3545,3 +3545,4 @@ public import PaperP1.Algebra.GeometricBiformDegrees
 public import PaperP1.Asymptotics.HeightControlledBiformCount
 public import PaperP1.Arithmetic.CoarseGeometricPlaneCount
 public import PaperP1.Arithmetic.CoarseFieldPlaneCount
+public import PaperP1.Algebra.IntegerPlaneShear

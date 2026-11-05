@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records372 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records373 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14403 audited theorem/lemma declarations**. This
+- The project currently has **14412 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25089,3 +25089,16 @@ bounded_degree_count gives one constant for every degree in any fixed finite int
 P1-MATH-0374 adds four theorems. This intermediate estimate remains weaker than the degree-uniform BCN exponent1/D. Main13.4 remains in_progress; coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records372 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15661 jobs); direct axiom audit passed for 14403 declarations using only propext, Classical.choice and Quot.sound; all 13704 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.84 GiB.
+
+
+## Integer coordinate shears preserve geometry with finite height budgets
+
+IntegerPlaneShear supplies actual integer coordinate shears P(x+t*y,y) and point transport(x,y)->(x-t*y,y). The shear definitions, equivalences, evaluation and coefficient-map compatibility now work over arbitrary commutative rings, with only nontriviality needed for exact total-degree preservation. The original field theorems retain their statements as specializations. The homogeneous unit-leading-coefficient existence theorem separately retains its necessary field hypothesis.
+
+The new coefficient_map theorem proves compatibility with every coefficient ring homomorphism through the actual generators of the nested polynomial ring. In particular, complex scalar extension commutes with the integer shear, and geometric irreducibility is preserved internally. The point transport is injective and sends every original integer zero to an actual zero of the transformed equation. For parameters0<=t<=D it enlarges each coordinate box by at most D+1.
+
+The exact finite coefficient-height budget heightBudget(D) is defined before the equation as the supremum of the proved integer-linear basis budgets for parameters0,...,D. height_budget proves height(shear(t,P))<=heightBudget(D)*height(P) for every actual equation of total degree at most D. No unspecified coordinate choice or uncontrolled moving coefficient enters this estimate.
+
+P1-MATH-0375 adds nine theorems and two definitions and weakens unnecessary field assumptions in two earlier modules. Selecting a bounded parameter that makes the outer degree equal the total degree remains the next obligation before any exponent improvement is asserted. The proved intermediate plane exponent remains4/D+epsilon, while the sharper degree-uniform BCN estimate and original main13.4 remain open. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records373 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15663 jobs); direct axiom audit passed for 14412 declarations using only propext, Classical.choice and Quot.sound; all 13715 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.83 GiB.

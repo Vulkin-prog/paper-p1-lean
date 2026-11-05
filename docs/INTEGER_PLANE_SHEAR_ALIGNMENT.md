@@ -1,0 +1,11 @@
+# Integer coordinate shears preserve geometry with finite height budgets
+
+Source: main13.4 plane preparation. This extends the existing homogeneous and bivariate shear algebra to commutative rings and applies the internally proved finite integer-linear height budget.
+
+IntegerPlaneShear supplies actual integer coordinate shears P(x+t*y,y) and point transport(x,y)->(x-t*y,y). The shear definitions, equivalences, evaluation and coefficient-map compatibility now work over arbitrary commutative rings, with only nontriviality needed for exact total-degree preservation. The original field theorems retain their statements as specializations. The homogeneous unit-leading-coefficient existence theorem separately retains its necessary field hypothesis.
+
+The new coefficient_map theorem proves compatibility with every coefficient ring homomorphism through the actual generators of the nested polynomial ring. In particular, complex scalar extension commutes with the integer shear, and geometric irreducibility is preserved internally. The point transport is injective and sends every original integer zero to an actual zero of the transformed equation. For parameters0<=t<=D it enlarges each coordinate box by at most D+1.
+
+The exact finite coefficient-height budget heightBudget(D) is defined before the equation as the supremum of the proved integer-linear basis budgets for parameters0,...,D. height_budget proves height(shear(t,P))<=heightBudget(D)*height(P) for every actual equation of total degree at most D. No unspecified coordinate choice or uncontrolled moving coefficient enters this estimate.
+
+P1-MATH-0375 adds nine theorems and two definitions and weakens unnecessary field assumptions in two earlier modules. Selecting a bounded parameter that makes the outer degree equal the total degree remains the next obligation before any exponent improvement is asserted. The proved intermediate plane exponent remains4/D+epsilon, while the sharper degree-uniform BCN estimate and original main13.4 remain open. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records373 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.

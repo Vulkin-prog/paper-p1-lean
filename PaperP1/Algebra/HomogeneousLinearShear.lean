@@ -27,7 +27,7 @@ namespace PaperP1.HomogeneousLinearShear
 
 open MvPolynomial
 
-variable {F : Type*} [Field F] {n e : ℕ}
+variable {F : Type*} [CommRing F] {n e : ℕ}
 
 local instance polynomialRing : CommRing (MvPolynomial (Fin (n + 1)) F) := inferInstance
 
@@ -89,7 +89,8 @@ theorem eval_substitute (v : Fin n → F) (p : MvPolynomial (Fin (n + 1)) F) :
     cases i using Fin.cases <;> simp [substitute]
   exact DFunLike.congr_fun he p
 
-theorem exists_unit_leadingCoeff [Infinite F] (p : MvPolynomial (Fin (n + 1)) F)
+theorem exists_unit_leadingCoeff {F : Type*} [Field F] [Infinite F]
+    (p : MvPolynomial (Fin (n + 1)) F)
     (hp : p.IsHomogeneous e) (hp0 : p ≠ 0) :
     ∃ v : Fin n → F, IsUnit (finSuccEquiv F n (substitute v p)).leadingCoeff := by
   obtain ⟨v, hv⟩ := HomogeneousPolynomialEvaluation.exists_eval_cons_one p hp hp0
