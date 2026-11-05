@@ -3500,3 +3500,5 @@ public import PaperP1.Algebra.BivariateTotalDegreeChart
 public import PaperP1.Algebra.FinitePlaneBezout
 public import PaperP1.Algebra.BivariateCurveDegreeTransport
 public import PaperP1.Arithmetic.NonGeometricPlanePointBound
+public import PaperP1.Arithmetic.GeometricPlanePointInput
+public import PaperP1.Arithmetic.LinearPlaneGridBound

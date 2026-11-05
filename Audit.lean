@@ -4124,6 +4124,12 @@ import PaperP1
 #print axioms PaperP1.GeometricAlignedTargetData.reduced_affine_data
 #print axioms PaperP1.GeometricAlignedTargetData.bounded_height
 #print axioms PaperP1.GeometricAlignedTargetData.bounded_polynomial_height
+#print axioms PaperP1.GeometricPlanePointInput.constant_pos
+#print axioms PaperP1.GeometricPlanePointInput.logarithmic_budget
+#print axioms PaperP1.GeometricPlanePointInput.nongeometric_bound
+#print axioms PaperP1.GeometricPlanePointInput.field_input
+#print axioms PaperP1.GeometricPlanePointInput.integer_input
+#print axioms PaperP1.GeometricPlanePointInput.restriction_of_field_input
 #print axioms PaperP1.GlobalDefectCount.mem_positiveDefectsBelow
 #print axioms PaperP1.GlobalDefectCount.mem_positiveDefectsBelow_iff_largeOddKernel
 #print axioms PaperP1.GlobalDefectCount.mem_positiveDefectsBelow_real_height
@@ -4335,6 +4341,11 @@ import PaperP1
 #print axioms PaperP1.LinearCurveAlignment.bounded_grid_alignment
 #print axioms PaperP1.LinearCurveAlignment.actual_linear_case
 #print axioms PaperP1.LinearCurveAlignment.nonaligned_degree_ne_one
+#print axioms PaperP1.LinearPlaneGridBound.offsetBox_card
+#print axioms PaperP1.LinearPlaneGridBound.grid_card_of_outer_positive
+#print axioms PaperP1.LinearPlaneGridBound.grid_card_swap
+#print axioms PaperP1.LinearPlaneGridBound.linear_grid_card
+#print axioms PaperP1.LinearPlaneGridBound.linear_real_grid_card
 #print axioms PaperP1.LocalBlockBoundary.block_subset_full
 #print axioms PaperP1.LocalBlockBoundary.fullBlock_nonempty
 #print axioms PaperP1.LocalBlockBoundary.fullBlock_card
