@@ -106,7 +106,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records497 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records498 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -225,7 +225,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15613 audited theorem/lemma declarations**. This
+- The project currently has **15625 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27213,3 +27213,20 @@ The primary BCN author version arXiv2302.04209v2 Section3, Definition3 and Propo
 P1-MATH-0499 adds two modules, twelve theorems and two definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records497 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16571 jobs); direct axiom audit passed for 15613 declarations using only propext, Classical.choice and Quot.sound; all 15091 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.72 GiB.
+
+
+## Classical Polya Chebyshev criterion from actual Wronskian identities
+
+The classical partial-Wronskian Chebyshev criterion is now internally proved for actual smooth real functions. Forn functions on an open real interval, assumeC-infinity regularity and that the genuine determinant Wronskian of every nonempty initial family is nowhere zero there. Every combination with a nonzero coefficient vector then has strictly fewer thann distinct zeros. Coefficient recovery fromn actual sample points and injectivity of their evaluation map are also proved. The zero bound is a conclusion, not an input, and no externally asserted Polya theorem is assumed.
+
+AnalyticWronskianProduct constructs the actual iterated derivative matrix and its lower triangular common-factor multiplication matrix. The finite Leibniz sum is proved to equal the full matrix product, including its exact truncation. Its diagonal is the common factor, hence multiplication of every function bya multiplies the determinant bya^n. All regularity assumptions are explicit pointwise finite-orderContDiffAt conditions; no formal differential operator is substituted for the actual derivatives.
+
+AnalyticWronskianNormalization proves open-set congruence for the genuine Wronskians and the exact first-column identity for a family beginning with1. Dividing every function by the original first function givesW(f_0,...,f_n)=f_0^(n+1)*W((f_1/f_0)',...,(f_n/f_0)'). Every division is confined to the actual open nonvanishing set, and every actual derivative congruence is justified there. No global extension of a quotient identity is presumed.
+
+PolyaChebyshevCriterion applies that normalization identity to every actual initial family. Nonvanishing of their Wronskians supplies all recursive pivots, and smoothness is retained after each division and derivative. The already proved finite Rolle induction then yields the strict zero bound and finite evaluation consequences. The proof needsC-infinity rather than real analyticity. Empty families, empty intervals, zero coefficients in all but the first position and all finite endpoint cases are included.
+
+The primary BCN author version arXiv2302.04209v2 Section2, Definitions1-2 and the stated Polya theorem, was rechecked. This closes that classical calculus ingredient. The polynomial tangent Wronskian degrees remain internal fromP1-MATH-0499. Matching them to actual curve trajectories, proving the relevant polynomial Wronskians do not vanish identically, bounding the exceptional pieces, constructing controlled smooth parametrizations and the final sharp point estimate remain subsequent obligations. Complete main13.4 BCN and original13.5 are not promoted. Current generic point counting remains the cubic-degree theorem with completea<1/3 range.
+
+P1-MATH-0500 adds three modules, twelve theorems and five definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records498 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16577 jobs); direct axiom audit passed for 15625 declarations using only propext, Classical.choice and Quot.sound; all 15108 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.70 GiB.

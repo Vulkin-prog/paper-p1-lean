@@ -2408,6 +2408,14 @@ import PaperP1
 #print axioms PaperP1.AffineDeterminantUniformScale.logarithmic_power_bound
 #print axioms PaperP1.AffineDeterminantUniformScale.prime_scale
 #print axioms PaperP1.AffineDeterminantUniformScale.exists_logarithmic_degree
+#print axioms PaperP1.AnalyticWronskianNormalization.wronskian_congr_on
+#print axioms PaperP1.AnalyticWronskianNormalization.wronskian_one_tail
+#print axioms PaperP1.AnalyticWronskianNormalization.wronskian_normalized
+#print axioms PaperP1.AnalyticWronskianProduct.sum_initial
+#print axioms PaperP1.AnalyticWronskianProduct.multiplicationMatrix_lower
+#print axioms PaperP1.AnalyticWronskianProduct.multiplicationMatrix_det
+#print axioms PaperP1.AnalyticWronskianProduct.jetMatrix_product
+#print axioms PaperP1.AnalyticWronskianProduct.wronskian_product
 #print axioms PaperP1.AnchoredCostNormalization.main_lower
 #print axioms PaperP1.AnchoredCostNormalization.with_errors
 #print axioms PaperP1.BalancedReciprocalSaddleCost.finite_cost_lower
@@ -2836,6 +2844,10 @@ import PaperP1
 #print axioms PaperP1.PartialPowerSum.powerSum_nonneg
 #print axioms PaperP1.PartialPowerSum.powerSum_eq_shifted
 #print axioms PaperP1.PartialPowerSum.powerSum_le
+#print axioms PaperP1.PolyaChebyshevCriterion.admissible_of_partial
+#print axioms PaperP1.PolyaChebyshevCriterion.card_lt
+#print axioms PaperP1.PolyaChebyshevCriterion.coefficients_eq_zero
+#print axioms PaperP1.PolyaChebyshevCriterion.evaluation_injective
 #print axioms PaperP1.PolynomialParsevalBounds.circleIntegrable_sq_norm_eval
 #print axioms PaperP1.PolynomialParsevalBounds.coefficient_energy_le_of_pointwise_bound
 #print axioms PaperP1.PolynomialParsevalBounds.l2_le_of_pointwise_bound

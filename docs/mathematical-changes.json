@@ -24529,6 +24529,49 @@
         "status": "not_integrated"
       },
       "validation_commit": "53671828d18bc7ee2b75116de33c70149b9e8119"
+    },
+    {
+      "id": "P1-MATH-0500",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The sharp-degree BCN route relied on the classical partial-Wronskian Chebyshev criterion. Only a recursive-pivot zero bound and polynomial degree estimates were previously internal.",
+      "finding": "Actual derivative-matrix multiplication and normalization identities prove the classical partial-Wronskian criterion forC-infinity real functions, including strict zero counts and injective finite evaluation.",
+      "proposed_revision": "Use the internally proved smooth partial-Wronskian criterion, explicitly retaining the separate curve-trajectory, nonvanishing, decomposition and parametrization obligations.",
+      "impact": "Discharges the classical calculus criterion as an external premise in the planned sharp-degree route. It does not by itself establish BCN or the original growing-degree corollary.",
+      "evidence": [
+        "PaperP1.AnalyticWronskianNormalization.wronskian_congr_on",
+        "PaperP1.AnalyticWronskianNormalization.wronskian_one_tail",
+        "PaperP1.AnalyticWronskianNormalization.wronskian_normalized",
+        "PaperP1.AnalyticWronskianProduct.sum_initial",
+        "PaperP1.AnalyticWronskianProduct.multiplicationMatrix_lower",
+        "PaperP1.AnalyticWronskianProduct.multiplicationMatrix_det",
+        "PaperP1.AnalyticWronskianProduct.jetMatrix_product",
+        "PaperP1.AnalyticWronskianProduct.wronskian_product",
+        "PaperP1.PolyaChebyshevCriterion.admissible_of_partial",
+        "PaperP1.PolyaChebyshevCriterion.card_lt",
+        "PaperP1.PolyaChebyshevCriterion.coefficients_eq_zero",
+        "PaperP1.PolyaChebyshevCriterion.evaluation_injective",
+        "PaperP1.AnalyticWronskianProduct.jetMatrix",
+        "PaperP1.AnalyticWronskianProduct.multiplicationMatrix",
+        "PaperP1.AnalyticWronskianProduct.wronskian",
+        "PaperP1.PolyaChebyshevCriterion.initialFamily",
+        "PaperP1.PolyaChebyshevCriterion.PartialNonzero"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16577 jobs); direct axiom audit passed for 15625 declarations using only propext, Classical.choice and Quot.sound; all 15108 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.70 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

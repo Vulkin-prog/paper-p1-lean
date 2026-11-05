@@ -4000,3 +4000,6 @@ public import PaperP1.Analysis.FiniteRolleZeros
 public import PaperP1.Analysis.RecursiveChebyshev
 public import PaperP1.Algebra.PolynomialTangentDegree
 public import PaperP1.Algebra.PolynomialTangentWronskian
+public import PaperP1.Analysis.AnalyticWronskianNormalization
+public import PaperP1.Analysis.AnalyticWronskianProduct
+public import PaperP1.Analysis.PolyaChebyshevCriterion

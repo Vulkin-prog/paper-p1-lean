@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**497 mathematical improvements and two statement-scope corrections are confirmed.**
+**498 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26341,3 +26341,20 @@ The primary BCN author version arXiv2302.04209v2 Section3, Definition3 and Propo
 P1-MATH-0499 adds two modules, twelve theorems and two definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records497 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16571 jobs); direct axiom audit passed for 15613 declarations using only propext, Classical.choice and Quot.sound; all 15091 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.72 GiB.
+
+
+## Classical Polya Chebyshev criterion from actual Wronskian identities
+
+The classical partial-Wronskian Chebyshev criterion is now internally proved for actual smooth real functions. Forn functions on an open real interval, assumeC-infinity regularity and that the genuine determinant Wronskian of every nonempty initial family is nowhere zero there. Every combination with a nonzero coefficient vector then has strictly fewer thann distinct zeros. Coefficient recovery fromn actual sample points and injectivity of their evaluation map are also proved. The zero bound is a conclusion, not an input, and no externally asserted Polya theorem is assumed.
+
+AnalyticWronskianProduct constructs the actual iterated derivative matrix and its lower triangular common-factor multiplication matrix. The finite Leibniz sum is proved to equal the full matrix product, including its exact truncation. Its diagonal is the common factor, hence multiplication of every function bya multiplies the determinant bya^n. All regularity assumptions are explicit pointwise finite-orderContDiffAt conditions; no formal differential operator is substituted for the actual derivatives.
+
+AnalyticWronskianNormalization proves open-set congruence for the genuine Wronskians and the exact first-column identity for a family beginning with1. Dividing every function by the original first function givesW(f_0,...,f_n)=f_0^(n+1)*W((f_1/f_0)',...,(f_n/f_0)'). Every division is confined to the actual open nonvanishing set, and every actual derivative congruence is justified there. No global extension of a quotient identity is presumed.
+
+PolyaChebyshevCriterion applies that normalization identity to every actual initial family. Nonvanishing of their Wronskians supplies all recursive pivots, and smoothness is retained after each division and derivative. The already proved finite Rolle induction then yields the strict zero bound and finite evaluation consequences. The proof needsC-infinity rather than real analyticity. Empty families, empty intervals, zero coefficients in all but the first position and all finite endpoint cases are included.
+
+The primary BCN author version arXiv2302.04209v2 Section2, Definitions1-2 and the stated Polya theorem, was rechecked. This closes that classical calculus ingredient. The polynomial tangent Wronskian degrees remain internal fromP1-MATH-0499. Matching them to actual curve trajectories, proving the relevant polynomial Wronskians do not vanish identically, bounding the exceptional pieces, constructing controlled smooth parametrizations and the final sharp point estimate remain subsequent obligations. Complete main13.4 BCN and original13.5 are not promoted. Current generic point counting remains the cubic-degree theorem with completea<1/3 range.
+
+P1-MATH-0500 adds three modules, twelve theorems and five definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records498 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16577 jobs); direct axiom audit passed for 15625 declarations using only propext, Classical.choice and Quot.sound; all 15108 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.70 GiB.
