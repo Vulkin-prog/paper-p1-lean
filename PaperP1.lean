@@ -3837,3 +3837,7 @@ public import PaperP1.Asymptotics.PairCompressedDenseExtensions
 public import PaperP1.Asymptotics.PairCompressedDenseMass
 public import PaperP1.Asymptotics.PairCompressedPrimitiveMass
 public import PaperP1.Asymptotics.SharpChannelCompressedActivity
+public import PaperP1.Asymptotics.FiniteChannelTripleTheorem
+public import PaperP1.Asymptotics.FixedChannelFullPalm
+public import PaperP1.Asymptotics.FixedChannelNonalignedMass
+public import PaperP1.Asymptotics.GoodEdgePositivePalm

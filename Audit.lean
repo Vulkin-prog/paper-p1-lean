@@ -7763,6 +7763,7 @@ import PaperP1
 #print axioms PaperP1.FiniteChannelHierarchyBounds.uniform_power_bound
 #print axioms PaperP1.FiniteChannelHierarchyBounds.uniform_small
 #print axioms PaperP1.FiniteChannelHierarchyBounds.nominal_bounds
+#print axioms PaperP1.FiniteChannelTripleTheorem.companion_T2_8
 #print axioms PaperP1.FiniteChannelTripleTheoremUnderInputs.companion_T2_8
 #print axioms PaperP1.FiniteCompleteLawTransfer.uniform_bound
 #print axioms PaperP1.FiniteCompleteLawTransfer.article_15_13
@@ -7804,6 +7805,13 @@ import PaperP1
 #print axioms PaperP1.FixedChannelAlignedTargetMass.finite_bound
 #print axioms PaperP1.FixedChannelAlignedTargetRate.uniform_bound
 #print axioms PaperP1.FixedChannelErrorAlgebra.error_scale
+#print axioms PaperP1.FixedChannelFullPalm.eta_bounds
+#print axioms PaperP1.FixedChannelFullPalm.ordered_mean
+#print axioms PaperP1.FixedChannelFullPalm.ordered_positive
+#print axioms PaperP1.FixedChannelFullPalm.uniform_normalized
+#print axioms PaperP1.FixedChannelFullPalm.finite_mean_upper
+#print axioms PaperP1.FixedChannelFullPalm.mean_eq_conditional_integral
+#print axioms PaperP1.FixedChannelFullPalm.companion_T2_7
 #print axioms PaperP1.FixedChannelFullPalmUnderInputs.eta_bounds
 #print axioms PaperP1.FixedChannelFullPalmUnderInputs.ordered_mean
 #print axioms PaperP1.FixedChannelFullPalmUnderInputs.ordered_positive
@@ -7816,6 +7824,7 @@ import PaperP1
 #print axioms PaperP1.FixedChannelMassTheorem.source_error
 #print axioms PaperP1.FixedChannelMassTheorem.source_positive_phase
 #print axioms PaperP1.FixedChannelMassTheorem.companion_T2_5
+#print axioms PaperP1.FixedChannelNonalignedMass.uniform_bound
 #print axioms PaperP1.FixedChannelNonalignedMassUnderInputs.uniform_bound
 #print axioms PaperP1.FixedChannelPairProbability.uniform_bound
 #print axioms PaperP1.FixedChannelPairProbability.uniform_coarse
@@ -8011,6 +8020,9 @@ import PaperP1
 #print axioms PaperP1.GoodApartPairProductMass.uniform_coefficient
 #print axioms PaperP1.GoodApartPairProductMass.uniform_mass
 #print axioms PaperP1.GoodEdgeAccidentalMass.uniform_bound
+#print axioms PaperP1.GoodEdgePositivePalm.uniform_mass
+#print axioms PaperP1.GoodEdgePositivePalm.uniform_normalized
+#print axioms PaperP1.GoodEdgePositivePalm.companion_T3_1
 #print axioms PaperP1.GoodEdgePositivePalmUnderInputs.uniform_mass
 #print axioms PaperP1.GoodEdgePositivePalmUnderInputs.uniform_normalized
 #print axioms PaperP1.GoodEdgePositivePalmUnderInputs.companion_T3_1

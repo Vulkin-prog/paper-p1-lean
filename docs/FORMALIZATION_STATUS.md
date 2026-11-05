@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+Companion T2.7,T2.8,T3.1 are unconditional (P1-MATH-0449): full original Palm means, actual positive Palm normalization and finite-family ordered triple asymptotics. Complete T4.4/T15.1 are also unconditional (P1-MATH-0448), including the separated41/30 all-cardinality bound and every real cutoff. Earlier progress paragraphs below retain their historical scope.
+
 CompanionT1.12 is unconditional in all three homogeneous clauses (P1-MATH-0447), including actual compressed single-target refinements and the raw two-edge bound at a true fixed-constant squared pair scale. Every clause shares one threshold.
 
 The checked corrected31/24 asymmetric profiles are unconditional on both exact enlarged-radius domains (P1-MATH-0446). The literal radius-oneT1.10 remains false andin_progress. No numbered coverage is added for this revision proof.
@@ -39,7 +41,7 @@ CompanionT14.1 is unconditional (P1-MATH-0431), with connected activity strength
 
 CompanionT1.8 is unconditional (P1-MATH-0430): exact dense-component to actual-rank transfer gives subpower nonaligned hosts and both printed kernel sumsN^(1+epsilon), including the full value kernel without block-parity rows.
 
-Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is140 proved,24 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
+Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is143 proved,21 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
 
 The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. The full arbitrary-source statement was subsequently discharged at P1-MATH-0429.
 
@@ -81,7 +83,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is140/167 unconditional and24 conditional (164/167 completed). The project records446 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is143/167 unconditional and21 conditional (164/167 completed). The project records447 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -200,7 +202,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15122 audited theorem/lemma declarations**. This
+- The project currently has **15134 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26319,3 +26321,22 @@ Earlier conditional declarations and literature history are preserved. Only the 
 P1-MATH-0448 adds fifteen modules, forty theorems and nine definitions. Companion T4.4 and T15.1 move from conditional to proved. Coverage becomes140 proved,24 conditional and3 in_progress out of167, with164 completed. The project records446 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16245 jobs); direct axiom audit passed for 15122 declarations using only propext, Classical.choice and Quot.sound; all 14528 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.96 GiB.
+
+
+## Unconditional original Palm means and finite channel triple asymptotics
+
+Companion T2.7, T2.8 and T3.1 now have unconditional canonical proofs. Their complete source statements and proofs were rechecked in companion_sections/supplemental_arithmetic.tex lines279-391 and companion_sections/arithmetic.tex lines128-176. The target populations, source-weight normalization and fixed-channel quantifiers remain literal. No good-edge Palm estimate or finite-family triple asymptotic is assumed as a premise.
+
+FixedChannelNonalignedMass retains the denominator gain in the internally proved coarse asymmetric profile: its actual nonaligned joint mass is N^(-5/3+1/b+epsilon). Since the proved gamma exponent is at least1/3, this suffices for the full fixed-channel Palm exponent eta=min(17/24,1-gamma)=1-gamma. The exact actual old source span and every offset are preserved; the false radius-one asymmetric statement is not used.
+
+GoodEdgePositivePalm.uniform_mass applies the internal homogeneous raw source-edge extension theorem to the original compatible positive excess on every regular subground. Its normalized theorem divides by a proved positive lower bound for the actual source mass beta, preserving that denominator rather than replacing it by a nominal scale. companion_T3_1 gives the printed2/3 and1/2 normalized exponents and4/3 and5/4 unnormalized exponents on one common threshold. The general normalized3:4 bound is in fact7/12 and its unnormalized mass has power4/3.
+
+FixedChannelFullPalm includes all original target sites, including irregular ones. The finite excess split separates the actual marginal bias from aligned and nonaligned crossings. The aligned gamma estimate, internal coarse nonaligned mass and exact positive source phase give the full normalized positive excess. The already internal branching bound controls negative deviations. companion_T2_7 proves both the normalized positive Palm cost and the complete fresh-count mean relative to the literal nominal mean. ordered_mean and ordered_positive retain both original source orientations; mean_eq_conditional_integral identifies the actual conditional integral of Z_N-2. No original site or zero-joint source contribution is discarded from a positive sum without the existing exact zero-mass identity.
+
+FiniteChannelTripleTheorem.companion_T2_8 takes a finite maximum of the new unconditional Palm thresholds for a fixed nonempty channel family. One threshold precedes every critical length and independently varying private cutoff. Its amplitude is the actual ordered source mass and its exponent is the original minimum nu_F. The finite designated-pair comparison bounds every overcount by the actual branching exceptional set and positive Palm deviation, so each ordered triple is counted once even when it contains several good pairs. The previously unconditional FiniteHighChannelTripleMass.height_cutoff supplies the full final assertion for fixed heights5<=b<=Q; it is retained as a canonical additional statement, with no growing-height claim.
+
+Earlier conditional declarations and literature history remain preserved. The discharges concern only these three exact numbered uses; general surface covers, normalized curve counts, growing-degree BCN and optimal global third activity remain separate. Original source bytes and Lean/Mathlib pins are unchanged.
+
+P1-MATH-0449 adds four modules, twelve theorems and two definitions. Companion T2.7, T2.8 and T3.1 move from conditional to proved. Coverage becomes143 proved,21 conditional and3 in_progress out of167, with164 completed. The project records447 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16253 jobs); direct axiom audit passed for 15134 declarations using only propext, Classical.choice and Quot.sound; all 14542 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.93 GiB.

@@ -30685,7 +30685,7 @@
       "source": "companion_sections/supplemental_arithmetic.tex",
       "line": 279,
       "sha256": "e1363efe24511cb2801268b9975d6b2c226855615c5f85f8a8a7132fc19ada0d",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.SourceConditionalDeviations.conditional_nonneg",
         "PaperP1.SourceConditionalDeviations.conditional_le_one",
@@ -30749,19 +30749,31 @@
         "PaperP1.GoodEdgeFullPalm.crossingMass",
         "PaperP1.GoodEdgeFullPalm.encode",
         "PaperP1.GoodEdgeFullPalm.codes",
-        "PaperP1.PairTargetQuotientProbability.addedRank"
+        "PaperP1.PairTargetQuotientProbability.addedRank",
+        "PaperP1.FiniteChannelTripleTheorem.companion_T2_8",
+        "PaperP1.FixedChannelFullPalm.eta_bounds",
+        "PaperP1.FixedChannelFullPalm.ordered_mean",
+        "PaperP1.FixedChannelFullPalm.ordered_positive",
+        "PaperP1.FixedChannelFullPalm.uniform_normalized",
+        "PaperP1.FixedChannelFullPalm.finite_mean_upper",
+        "PaperP1.FixedChannelFullPalm.mean_eq_conditional_integral",
+        "PaperP1.FixedChannelFullPalm.companion_T2_7",
+        "PaperP1.FixedChannelNonalignedMass.uniform_bound",
+        "PaperP1.GoodEdgePositivePalm.uniform_mass",
+        "PaperP1.GoodEdgePositivePalm.uniform_normalized",
+        "PaperP1.GoodEdgePositivePalm.companion_T3_1",
+        "PaperP1.FixedChannelFullPalm.eta",
+        "PaperP1.FixedChannelFullPalm.mean"
       ],
       "literature_inputs": [
-        "P1-FIXED-CHANNEL-FULL-PALM",
-        "P1-GEO-NORMALIZED-CURVE-UNIFORM",
-        "P1-GEO-ORDINARY-SURFACE-COVER",
-        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER"
+        "p1:internal:unconditional-original-channel-palm"
       ],
       "mathematical_changes": [
-        "P1-MATH-0171"
+        "P1-MATH-0171",
+        "P1-MATH-0449"
       ],
-      "notes": "CompanionT2.7 is now COMPLETE CONDITIONALLY on the existing finite\nsource/ordinary surface-cover and normalized curve-count properties.\nThe actual target population is the entire original dyadic block, including\nall irregular starts; no target is removed through a regularity filter.\nThe private good-source cutoff varies after the common threshold over\n2b(L+1)<=H<=D(L+1), for any fixed admissible coprime a<b<2a.\n\nFixedChannelGammaLower proves a new elementary inequality for the literal\nfinite coefficient: gamma_(a:b)>=1/3. If a is odd, the candidate(c,d)=(3a,2)\nsuffices; otherwise coprimality makes b odd and(3b,4) suffices. Thus\neta_(a:b)=min(17/24,1-gamma_(a:b))=1-gamma_(a:b), and1/3<=eta<=2/3.\nThe printed17/24 cutoff is redundant for EVERY admissible fixed channel.\n\nFixedChannelNonalignedMassUnderInputs retains the actual1/b factor in the\nalready proved coarse asymmetric4/3 profile calculation. The entire actual\nnonaligned crossing mass is at most N^(-5/3+1/b+epsilon), so division by the\nactual channel phase gives N^(-2/3+epsilon). Since eta<=2/3, this suffices\nfor the literal exponent of T2.7 without any sharper31/24 or Reuss7/12 input.\nAll actual unit offsets and original source/target multiplicities are kept.\n\nPairTargetQuotientProbability proves the actual joint bound by q_e times\ntwo to minus the true added quotient rank. No positive or regular target\nmarginal is assumed, and incompatible triples retain their actual zero mass.\nFixedChannelAlignedTargetMass uses the previously proved literal gamma rank,\nnot an assumed Palm bound. Positive joint mass forces the exact original\nseparation needed for physical targets, including contacts at distance L.\nThe few endpoint sources are counted explicitly. The finite source/target\nsum is bounded before absorbing its fixed logarithmic factors.\nFixedChannelAlignedTargetRate proves unconditional aligned mass\nN^(-2+1/b+gamma+epsilon), including endpoint sources and all original sites.\n\nGoodEdgeFullPalm gives an exact finite split of every actual positive source\ncost into the actual summed absolute marginal bias and the original joint\nmass on positive target/source crossings. Its finite code cover includes all\nsource-unit offsets, both aligned and nonaligned targets and unordered source\nmultiplicities. The already proved full marginal bias N^(-1+epsilon) handles\nzero-crossing irregular targets. No nominal marginal is substituted there.\n\nFixedChannelFullPalmUnderInputs.uniform_normalized combines these proved\nestimates with the actual compatible private-channel lower phase. The actual\nnormalized positive cost is at most N^(-eta+epsilon). Its companion_T2_7 also\nproves the two-sided mean bound N^(-min(eta,1/2)+epsilon), using the proved\nbranching negative error and actual source-deletion identity. The mean is\nidentified with the conditional Bochner integral of the original count minus\nexactly two source indicators. PrivateChannelOrientationWeights proves the\nfactor two for EVERY source observable in the symmetric ordered family,\nincluding probability-zero pairs with their zero source weight. The explicit\nordered_positive and ordered_mean bridges identify the displayed source sums.\n\nP1-MATH-0171 records the universal lower gamma bound, the redundant cutoff\nand the removal of the sharper arithmetic dependencies from T2.7. No new\nexternal input, target probability premise or axiom is introduced. Coverage\nbecomes88/167 unconditional and59 conditional. There are170 improvements and\none confirmed statement-scope correction. T2.8 finite-family triple\nmultiplicity, the last two-edge clause of T1.12 and sharper third cumulants\nremain open. Original manuscript bytes and dependency/compiler pins are\npreserved. Palomar remains a later milestone.\n\nEarlier checkpoint history:\nThe negative-deviation and source-deletion step in the proof of\ncompanionT2.7 is now proved without BCN, for every source set of any\nfixed maximum cardinalityj, not only the selected good channel pairs.\nConditioning uses the actual prescribed source event with positive\njoint massq(A). Each actual new conditional probability is precisely\nq(A union{z})/q(A); it lies in[0,1] and its probability-event ratio is\nidentified under the original infinite measure.\n\nWith p=2^(-L), define the positive and negative deviations over the\nfresh dyadic starts by max(0,conditional-p) and\nmax(0,p-conditional). The actual retained branching identity gives\nconditional=p outside the deterministic badStarts set constructed\nfrom the old raw-value prime pool. Thus, at finiteN,L,\n\n    negativeDeviation <= #badStarts*p.\n\nThe complete fixed-j exceptional count and the critical nominal bound\ngive, for everyepsilon>0, eventually uniformly beforeN,L,A,\n\n    negativeDeviation <= N^(-1/2+epsilon),\n    #A*p <= N^(-1+epsilon),\n    E[Z_N-#A | all sources inA active] >= lambda-N^(-1/2+epsilon).\n\nThe expectation is an actual conditional Bochner integral, not a\nformal sum substituted for an unproved conditional law. Finite\nindicator integrability and integral linearity identify it with the\nsum of actual conditional probabilities over fresh starts. On the\nsource event all#A source indicators are one, so deleting them is\nproved identical to subtracting#A from the full original count.\nThe exact signed decomposition is\n\n    freshMean=lambda-#A*p+positiveDeviation-negativeDeviation.\n\nThe same negative bound holds after any finite nonnegative weighting\nof source sets, including division by the actual positive total\nweight. One threshold precedes the population and its weights.\nForj=2 this supplies the complete negative error and source-removal\npart of the source Palm mean proof, including its actual conditional\nexpectation and arbitrary good-pair averaging.\n\nThe positive excess, its fixed-channel exponenteta_(a:b), the\nasymmetric nonaligned pair profile and the resulting two-sided Palm\nmean estimate remain open. No positive-excess bound or conditional\nmean convergence is assumed or counted proved. CompanionT2.7 moves\nfrom not_started to in_progress, without a numbered completion.\nCoverage77/167 (main28/73, companion49/94), findings87 unchanged.\nNo new mathematical finding, external input, BCN premise, PaperC\nport, dependency download, manuscript-byte change or Palomar\nregistration is introduced.",
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14521 jobs); direct axiom audit passed for 12099 declarations using only propext, Classical.choice and Quot.sound; all 10854 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.41 GiB.",
+      "notes": "Companion T2.7, T2.8 and T3.1 now have unconditional canonical proofs. Their complete source statements and proofs were rechecked in companion_sections/supplemental_arithmetic.tex lines279-391 and companion_sections/arithmetic.tex lines128-176. The target populations, source-weight normalization and fixed-channel quantifiers remain literal. No good-edge Palm estimate or finite-family triple asymptotic is assumed as a premise.\n\nFixedChannelNonalignedMass retains the denominator gain in the internally proved coarse asymmetric profile: its actual nonaligned joint mass is N^(-5/3+1/b+epsilon). Since the proved gamma exponent is at least1/3, this suffices for the full fixed-channel Palm exponent eta=min(17/24,1-gamma)=1-gamma. The exact actual old source span and every offset are preserved; the false radius-one asymmetric statement is not used.\n\nGoodEdgePositivePalm.uniform_mass applies the internal homogeneous raw source-edge extension theorem to the original compatible positive excess on every regular subground. Its normalized theorem divides by a proved positive lower bound for the actual source mass beta, preserving that denominator rather than replacing it by a nominal scale. companion_T3_1 gives the printed2/3 and1/2 normalized exponents and4/3 and5/4 unnormalized exponents on one common threshold. The general normalized3:4 bound is in fact7/12 and its unnormalized mass has power4/3.\n\nFixedChannelFullPalm includes all original target sites, including irregular ones. The finite excess split separates the actual marginal bias from aligned and nonaligned crossings. The aligned gamma estimate, internal coarse nonaligned mass and exact positive source phase give the full normalized positive excess. The already internal branching bound controls negative deviations. companion_T2_7 proves both the normalized positive Palm cost and the complete fresh-count mean relative to the literal nominal mean. ordered_mean and ordered_positive retain both original source orientations; mean_eq_conditional_integral identifies the actual conditional integral of Z_N-2. No original site or zero-joint source contribution is discarded from a positive sum without the existing exact zero-mass identity.\n\nFiniteChannelTripleTheorem.companion_T2_8 takes a finite maximum of the new unconditional Palm thresholds for a fixed nonempty channel family. One threshold precedes every critical length and independently varying private cutoff. Its amplitude is the actual ordered source mass and its exponent is the original minimum nu_F. The finite designated-pair comparison bounds every overcount by the actual branching exceptional set and positive Palm deviation, so each ordered triple is counted once even when it contains several good pairs. The previously unconditional FiniteHighChannelTripleMass.height_cutoff supplies the full final assertion for fixed heights5<=b<=Q; it is retained as a canonical additional statement, with no growing-height claim.\n\nEarlier conditional declarations and literature history remain preserved. The discharges concern only these three exact numbered uses; general surface covers, normalized curve counts, growing-degree BCN and optimal global third activity remain separate. Original source bytes and Lean/Mathlib pins are unchanged.\n\nP1-MATH-0449 adds four modules, twelve theorems and two definitions. Companion T2.7, T2.8 and T3.1 move from conditional to proved. Coverage becomes143 proved,21 conditional and3 in_progress out of167, with164 completed. The project records447 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.\n\nEarlier checkpoint history:\nCompanionT2.7 is now COMPLETE CONDITIONALLY on the existing finite\nsource/ordinary surface-cover and normalized curve-count properties.\nThe actual target population is the entire original dyadic block, including\nall irregular starts; no target is removed through a regularity filter.\nThe private good-source cutoff varies after the common threshold over\n2b(L+1)<=H<=D(L+1), for any fixed admissible coprime a<b<2a.\n\nFixedChannelGammaLower proves a new elementary inequality for the literal\nfinite coefficient: gamma_(a:b)>=1/3. If a is odd, the candidate(c,d)=(3a,2)\nsuffices; otherwise coprimality makes b odd and(3b,4) suffices. Thus\neta_(a:b)=min(17/24,1-gamma_(a:b))=1-gamma_(a:b), and1/3<=eta<=2/3.\nThe printed17/24 cutoff is redundant for EVERY admissible fixed channel.\n\nFixedChannelNonalignedMassUnderInputs retains the actual1/b factor in the\nalready proved coarse asymmetric4/3 profile calculation. The entire actual\nnonaligned crossing mass is at most N^(-5/3+1/b+epsilon), so division by the\nactual channel phase gives N^(-2/3+epsilon). Since eta<=2/3, this suffices\nfor the literal exponent of T2.7 without any sharper31/24 or Reuss7/12 input.\nAll actual unit offsets and original source/target multiplicities are kept.\n\nPairTargetQuotientProbability proves the actual joint bound by q_e times\ntwo to minus the true added quotient rank. No positive or regular target\nmarginal is assumed, and incompatible triples retain their actual zero mass.\nFixedChannelAlignedTargetMass uses the previously proved literal gamma rank,\nnot an assumed Palm bound. Positive joint mass forces the exact original\nseparation needed for physical targets, including contacts at distance L.\nThe few endpoint sources are counted explicitly. The finite source/target\nsum is bounded before absorbing its fixed logarithmic factors.\nFixedChannelAlignedTargetRate proves unconditional aligned mass\nN^(-2+1/b+gamma+epsilon), including endpoint sources and all original sites.\n\nGoodEdgeFullPalm gives an exact finite split of every actual positive source\ncost into the actual summed absolute marginal bias and the original joint\nmass on positive target/source crossings. Its finite code cover includes all\nsource-unit offsets, both aligned and nonaligned targets and unordered source\nmultiplicities. The already proved full marginal bias N^(-1+epsilon) handles\nzero-crossing irregular targets. No nominal marginal is substituted there.\n\nFixedChannelFullPalmUnderInputs.uniform_normalized combines these proved\nestimates with the actual compatible private-channel lower phase. The actual\nnormalized positive cost is at most N^(-eta+epsilon). Its companion_T2_7 also\nproves the two-sided mean bound N^(-min(eta,1/2)+epsilon), using the proved\nbranching negative error and actual source-deletion identity. The mean is\nidentified with the conditional Bochner integral of the original count minus\nexactly two source indicators. PrivateChannelOrientationWeights proves the\nfactor two for EVERY source observable in the symmetric ordered family,\nincluding probability-zero pairs with their zero source weight. The explicit\nordered_positive and ordered_mean bridges identify the displayed source sums.\n\nP1-MATH-0171 records the universal lower gamma bound, the redundant cutoff\nand the removal of the sharper arithmetic dependencies from T2.7. No new\nexternal input, target probability premise or axiom is introduced. Coverage\nbecomes88/167 unconditional and59 conditional. There are170 improvements and\none confirmed statement-scope correction. T2.8 finite-family triple\nmultiplicity, the last two-edge clause of T1.12 and sharper third cumulants\nremain open. Original manuscript bytes and dependency/compiler pins are\npreserved. Palomar remains a later milestone.\n\nEarlier checkpoint history:\nThe negative-deviation and source-deletion step in the proof of\ncompanionT2.7 is now proved without BCN, for every source set of any\nfixed maximum cardinalityj, not only the selected good channel pairs.\nConditioning uses the actual prescribed source event with positive\njoint massq(A). Each actual new conditional probability is precisely\nq(A union{z})/q(A); it lies in[0,1] and its probability-event ratio is\nidentified under the original infinite measure.\n\nWith p=2^(-L), define the positive and negative deviations over the\nfresh dyadic starts by max(0,conditional-p) and\nmax(0,p-conditional). The actual retained branching identity gives\nconditional=p outside the deterministic badStarts set constructed\nfrom the old raw-value prime pool. Thus, at finiteN,L,\n\n    negativeDeviation <= #badStarts*p.\n\nThe complete fixed-j exceptional count and the critical nominal bound\ngive, for everyepsilon>0, eventually uniformly beforeN,L,A,\n\n    negativeDeviation <= N^(-1/2+epsilon),\n    #A*p <= N^(-1+epsilon),\n    E[Z_N-#A | all sources inA active] >= lambda-N^(-1/2+epsilon).\n\nThe expectation is an actual conditional Bochner integral, not a\nformal sum substituted for an unproved conditional law. Finite\nindicator integrability and integral linearity identify it with the\nsum of actual conditional probabilities over fresh starts. On the\nsource event all#A source indicators are one, so deleting them is\nproved identical to subtracting#A from the full original count.\nThe exact signed decomposition is\n\n    freshMean=lambda-#A*p+positiveDeviation-negativeDeviation.\n\nThe same negative bound holds after any finite nonnegative weighting\nof source sets, including division by the actual positive total\nweight. One threshold precedes the population and its weights.\nForj=2 this supplies the complete negative error and source-removal\npart of the source Palm mean proof, including its actual conditional\nexpectation and arbitrary good-pair averaging.\n\nThe positive excess, its fixed-channel exponenteta_(a:b), the\nasymmetric nonaligned pair profile and the resulting two-sided Palm\nmean estimate remain open. No positive-excess bound or conditional\nmean convergence is assumed or counted proved. CompanionT2.7 moves\nfrom not_started to in_progress, without a numbered completion.\nCoverage77/167 (main28/73, companion49/94), findings87 unchanged.\nNo new mathematical finding, external input, BCN premise, PaperC\nport, dependency download, manuscript-byte change or Palomar\nregistration is introduced.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16253 jobs); direct axiom audit passed for 15134 declarations using only propext, Classical.choice and Quot.sound; all 14542 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.93 GiB.",
       "validation_history": [
         {
           "status": "in_progress",
@@ -30770,9 +30782,47 @@
           "literature_inputs": [
             "P1-PROB-CONDITIONAL-NEGATIVE-DEVIATION"
           ]
+        },
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (14521 jobs); direct axiom audit passed for 12099 declarations using only propext, Classical.choice and Quot.sound; all 10854 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.41 GiB.",
+          "validation_commit": "cf10949319bab2ebf5852f5760b56ce107e76fe1",
+          "literature_inputs": [
+            "P1-FIXED-CHANNEL-FULL-PALM",
+            "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+            "P1-GEO-ORDINARY-SURFACE-COVER",
+            "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER"
+          ]
         }
       ],
-      "validation_commit": "cf10949319bab2ebf5852f5760b56ce107e76fe1"
+      "remaining_unformalized_inputs": [],
+      "canonical_statement": "PaperP1.FixedChannelFullPalm.companion_T2_7",
+      "canonical_additional_statements": [
+        "PaperP1.FixedChannelFullPalm.ordered_mean",
+        "PaperP1.FixedChannelFullPalm.ordered_positive",
+        "PaperP1.FixedChannelFullPalm.mean_eq_conditional_integral",
+        "PaperP1.FixedChannelFullPalm.eta_bounds"
+      ],
+      "input_discharges": [
+        {
+          "checkpoint": "P1-MATH-0449",
+          "scope": "Complete numbered statement only, with actual source normalization and its original-model mean or fixed-height clause; no general geometric property is discharged.",
+          "previous_inputs": [
+            "P1-FIXED-CHANNEL-FULL-PALM",
+            "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+            "P1-GEO-ORDINARY-SURFACE-COVER",
+            "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+            "p1:internal:unconditional-original-channel-palm"
+          ],
+          "internal_proofs": [
+            "PaperP1.FixedChannelFullPalm.companion_T2_7",
+            "PaperP1.FixedChannelFullPalm.ordered_mean",
+            "PaperP1.FixedChannelFullPalm.ordered_positive",
+            "PaperP1.FixedChannelFullPalm.mean_eq_conditional_integral",
+            "PaperP1.FixedChannelFullPalm.eta_bounds"
+          ]
+        }
+      ]
     },
     {
       "label": "p1:arith:finite-family-triples",
@@ -30784,7 +30834,7 @@
       "source": "companion_sections/supplemental_arithmetic.tex",
       "line": 336,
       "sha256": "c03981d61a1444b1ec6bd40d72e177c62ebf04feedb1d750276b6abe01d56445",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.ExceptionalSourcePalmMass.uniform_bound",
         "PaperP1.FiniteChannelTripleTheoremUnderInputs.companion_T2_8",
@@ -30836,26 +30886,72 @@
         "PaperP1.FiniteChannelTripleMass.nu",
         "PaperP1.GoodPairGeneratedTriples.bad",
         "PaperP1.GoodPairGeneratedTriples.ordered",
-        "PaperP1.GoodPairGeneratedTriples.orderedMass"
+        "PaperP1.GoodPairGeneratedTriples.orderedMass",
+        "PaperP1.FiniteChannelTripleTheorem.companion_T2_8",
+        "PaperP1.FixedChannelFullPalm.eta_bounds",
+        "PaperP1.FixedChannelFullPalm.ordered_mean",
+        "PaperP1.FixedChannelFullPalm.ordered_positive",
+        "PaperP1.FixedChannelFullPalm.uniform_normalized",
+        "PaperP1.FixedChannelFullPalm.finite_mean_upper",
+        "PaperP1.FixedChannelFullPalm.mean_eq_conditional_integral",
+        "PaperP1.FixedChannelFullPalm.companion_T2_7",
+        "PaperP1.FixedChannelNonalignedMass.uniform_bound",
+        "PaperP1.GoodEdgePositivePalm.uniform_mass",
+        "PaperP1.GoodEdgePositivePalm.uniform_normalized",
+        "PaperP1.GoodEdgePositivePalm.companion_T3_1",
+        "PaperP1.FixedChannelFullPalm.eta",
+        "PaperP1.FixedChannelFullPalm.mean"
       ],
       "literature_inputs": [
-        "P1-FINITE-CHANNEL-TRIPLE-MULTIPLICITY",
-        "P1-GEO-NORMALIZED-CURVE-UNIFORM",
-        "P1-GEO-ORDINARY-SURFACE-COVER",
-        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER"
+        "p1:internal:unconditional-original-channel-palm"
       ],
       "mathematical_changes": [
-        "P1-MATH-0172"
+        "P1-MATH-0172",
+        "P1-MATH-0449"
       ],
-      "notes": "CompanionT2.8 is now COMPLETE CONDITIONALLY on the existing finite\nsource/ordinary surface-cover and normalized curve-count properties.\nIts final height-five-and-above mass consequence is UNCONDITIONAL.\nThe actual original ordered triple population contains each tuple once,\nincluding tuples which contain two or three good source pairs.\n\nPairGeneratedTripleWeights constructs the literal fresh designated-pair\npopulation and its image of three-element supports. families_eq identifies\nthat image with all triples containing at least one source edge. An exact\nfinite argument proves that, whenever a nonexceptional designated source\nis reconstructible uniquely, the entire difference between designated mass\nand once-counted triple mass is bounded by the actual exceptional mass.\nNo overcount is dropped and no bounded multiplicity is silently identified\nwith equality. GoodPairGeneratedTriples instantiates the condition using\nthe ACTUAL branching exceptions from exposed old raw values. Source-kernel\npreservation proves uniqueness of the initial dependent pair after a fresh\nretained target. The exceptional mass is bounded by the nominal probability\ntimes the actual exceptional count plus the actual positive Palm deviation.\nThe designated mass is identified with the actual source-weighted fresh\nconditional mean. Every unordered triple has exactly six ordered embeddings.\n\nFixedPrivateChannelDisjoint proves that different fixed reduced channels\nhave disjoint actual source-edge populations. Its proof keeps the actual\nsource orientation, obtains equality of slopes from the geometric integer\ndeterminant, and uses coprimality to recover both channel integers. One\nthreshold works for a fixed finite family and independently varying private\ncutoffs in every channel. No assumption of channel disjointness is used in\nthe final asymptotic theorem.\n\nFiniteChannelTripleMass defines the actual finite union of compatible edges,\nthe literal amplitude M_F=sum_(a:b in F)M_(a:b) using SYMMETRIC ordered source\nmasses, and the finite minimum nu_F. le_nu_iff proves its exact minimum\ncharacterization, with1/3<=nu_F<=1/2. The finite approximation theorem gives\nan explicit9*M_F*t error from the actual channel Palm costs, conditional\nmeans and branching exception costs, each bounded by t. All source sums,\ncutoffs, support sizes, six triple orientations and two pair orientations\nare retained. This finite inequality is subsequently applied to PROVED\nrates, never counted as a theorem from a supplied target probability bound.\n\nThe original geometric families also contain probability-zero pairs.\npositive_source_restoration and ordered_source_restoration prove that\nremoving these pairs preserves exactly the unordered and ordered original\ntriple masses: every omitted triple is bounded by an actual zero source\nprobability. rawEdges, edges_eq_filter and raw_ordered_mass_eq make this\nrestoration explicit. The final source theorem sums over rawEdges, so its\nliteral population agrees with the manuscript without an implicit affine\ncompatibility exclusion.\n\nFiniteChannelTripleTheoremUnderInputs.companion_T2_8 proves\n|actual ordered mass -3*lambda*M_F| <= M_F*N^(-nu_F+epsilon)\nfor every fixed nonempty admissible finite family. Here lambda=N*2^(-L)\nis the literal nominal mean used in T2.8. One finite geometric bundle per\nchannel precedes the common threshold, all critical N,L and ALL cutoff\nfunctions with2b(L+1)<=H_(a:b)<=D_(a:b)(L+1). Source phases make M_F strictly\npositive. The proof combines the completed T2.7 with the unconditional\nbranching exception estimate; the full original target block is retained.\n\nFiniteHighChannelTripleMass proves the final four-fifths consequence without\nANY geometric or BCN hypothesis. The actual unconditional fixed-order seed\npropagation and homogeneous private-source upper bound give original ordered\ntriple mass at most N^(-4/5+epsilon) for every fixed finite family of heights\nat least five, uniformly over ALL private cutoffs. height_cutoff specializes\nthis to all admissible5<=b<=Q. Probability-zero pairs remain restored in the\nactual raw population. No growing-height family is asserted controlled.\n\nP1-MATH-0172 records the explicit finite overcount bound, exact raw-family\nrestoration, ordered factors and unconditional height-five consequence.\nCoverage becomes88/167 unconditional and60 conditional. There are171\nimprovements and one confirmed statement-scope correction. The final\ntwo-edge clause of T1.12, the sharp two-active-edge moment and the sharper\nmain third cumulant bounds remain open. Original manuscript bytes and\ncompiler/dependency pins are preserved. Palomar remains a later milestone.\n\nEarlier checkpoint history:\n",
+      "notes": "Companion T2.7, T2.8 and T3.1 now have unconditional canonical proofs. Their complete source statements and proofs were rechecked in companion_sections/supplemental_arithmetic.tex lines279-391 and companion_sections/arithmetic.tex lines128-176. The target populations, source-weight normalization and fixed-channel quantifiers remain literal. No good-edge Palm estimate or finite-family triple asymptotic is assumed as a premise.\n\nFixedChannelNonalignedMass retains the denominator gain in the internally proved coarse asymmetric profile: its actual nonaligned joint mass is N^(-5/3+1/b+epsilon). Since the proved gamma exponent is at least1/3, this suffices for the full fixed-channel Palm exponent eta=min(17/24,1-gamma)=1-gamma. The exact actual old source span and every offset are preserved; the false radius-one asymmetric statement is not used.\n\nGoodEdgePositivePalm.uniform_mass applies the internal homogeneous raw source-edge extension theorem to the original compatible positive excess on every regular subground. Its normalized theorem divides by a proved positive lower bound for the actual source mass beta, preserving that denominator rather than replacing it by a nominal scale. companion_T3_1 gives the printed2/3 and1/2 normalized exponents and4/3 and5/4 unnormalized exponents on one common threshold. The general normalized3:4 bound is in fact7/12 and its unnormalized mass has power4/3.\n\nFixedChannelFullPalm includes all original target sites, including irregular ones. The finite excess split separates the actual marginal bias from aligned and nonaligned crossings. The aligned gamma estimate, internal coarse nonaligned mass and exact positive source phase give the full normalized positive excess. The already internal branching bound controls negative deviations. companion_T2_7 proves both the normalized positive Palm cost and the complete fresh-count mean relative to the literal nominal mean. ordered_mean and ordered_positive retain both original source orientations; mean_eq_conditional_integral identifies the actual conditional integral of Z_N-2. No original site or zero-joint source contribution is discarded from a positive sum without the existing exact zero-mass identity.\n\nFiniteChannelTripleTheorem.companion_T2_8 takes a finite maximum of the new unconditional Palm thresholds for a fixed nonempty channel family. One threshold precedes every critical length and independently varying private cutoff. Its amplitude is the actual ordered source mass and its exponent is the original minimum nu_F. The finite designated-pair comparison bounds every overcount by the actual branching exceptional set and positive Palm deviation, so each ordered triple is counted once even when it contains several good pairs. The previously unconditional FiniteHighChannelTripleMass.height_cutoff supplies the full final assertion for fixed heights5<=b<=Q; it is retained as a canonical additional statement, with no growing-height claim.\n\nEarlier conditional declarations and literature history remain preserved. The discharges concern only these three exact numbered uses; general surface covers, normalized curve counts, growing-degree BCN and optimal global third activity remain separate. Original source bytes and Lean/Mathlib pins are unchanged.\n\nP1-MATH-0449 adds four modules, twelve theorems and two definitions. Companion T2.7, T2.8 and T3.1 move from conditional to proved. Coverage becomes143 proved,21 conditional and3 in_progress out of167, with164 completed. The project records447 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.\n\nEarlier checkpoint history:\nCompanionT2.8 is now COMPLETE CONDITIONALLY on the existing finite\nsource/ordinary surface-cover and normalized curve-count properties.\nIts final height-five-and-above mass consequence is UNCONDITIONAL.\nThe actual original ordered triple population contains each tuple once,\nincluding tuples which contain two or three good source pairs.\n\nPairGeneratedTripleWeights constructs the literal fresh designated-pair\npopulation and its image of three-element supports. families_eq identifies\nthat image with all triples containing at least one source edge. An exact\nfinite argument proves that, whenever a nonexceptional designated source\nis reconstructible uniquely, the entire difference between designated mass\nand once-counted triple mass is bounded by the actual exceptional mass.\nNo overcount is dropped and no bounded multiplicity is silently identified\nwith equality. GoodPairGeneratedTriples instantiates the condition using\nthe ACTUAL branching exceptions from exposed old raw values. Source-kernel\npreservation proves uniqueness of the initial dependent pair after a fresh\nretained target. The exceptional mass is bounded by the nominal probability\ntimes the actual exceptional count plus the actual positive Palm deviation.\nThe designated mass is identified with the actual source-weighted fresh\nconditional mean. Every unordered triple has exactly six ordered embeddings.\n\nFixedPrivateChannelDisjoint proves that different fixed reduced channels\nhave disjoint actual source-edge populations. Its proof keeps the actual\nsource orientation, obtains equality of slopes from the geometric integer\ndeterminant, and uses coprimality to recover both channel integers. One\nthreshold works for a fixed finite family and independently varying private\ncutoffs in every channel. No assumption of channel disjointness is used in\nthe final asymptotic theorem.\n\nFiniteChannelTripleMass defines the actual finite union of compatible edges,\nthe literal amplitude M_F=sum_(a:b in F)M_(a:b) using SYMMETRIC ordered source\nmasses, and the finite minimum nu_F. le_nu_iff proves its exact minimum\ncharacterization, with1/3<=nu_F<=1/2. The finite approximation theorem gives\nan explicit9*M_F*t error from the actual channel Palm costs, conditional\nmeans and branching exception costs, each bounded by t. All source sums,\ncutoffs, support sizes, six triple orientations and two pair orientations\nare retained. This finite inequality is subsequently applied to PROVED\nrates, never counted as a theorem from a supplied target probability bound.\n\nThe original geometric families also contain probability-zero pairs.\npositive_source_restoration and ordered_source_restoration prove that\nremoving these pairs preserves exactly the unordered and ordered original\ntriple masses: every omitted triple is bounded by an actual zero source\nprobability. rawEdges, edges_eq_filter and raw_ordered_mass_eq make this\nrestoration explicit. The final source theorem sums over rawEdges, so its\nliteral population agrees with the manuscript without an implicit affine\ncompatibility exclusion.\n\nFiniteChannelTripleTheoremUnderInputs.companion_T2_8 proves\n|actual ordered mass -3*lambda*M_F| <= M_F*N^(-nu_F+epsilon)\nfor every fixed nonempty admissible finite family. Here lambda=N*2^(-L)\nis the literal nominal mean used in T2.8. One finite geometric bundle per\nchannel precedes the common threshold, all critical N,L and ALL cutoff\nfunctions with2b(L+1)<=H_(a:b)<=D_(a:b)(L+1). Source phases make M_F strictly\npositive. The proof combines the completed T2.7 with the unconditional\nbranching exception estimate; the full original target block is retained.\n\nFiniteHighChannelTripleMass proves the final four-fifths consequence without\nANY geometric or BCN hypothesis. The actual unconditional fixed-order seed\npropagation and homogeneous private-source upper bound give original ordered\ntriple mass at most N^(-4/5+epsilon) for every fixed finite family of heights\nat least five, uniformly over ALL private cutoffs. height_cutoff specializes\nthis to all admissible5<=b<=Q. Probability-zero pairs remain restored in the\nactual raw population. No growing-height family is asserted controlled.\n\nP1-MATH-0172 records the explicit finite overcount bound, exact raw-family\nrestoration, ordered factors and unconditional height-five consequence.\nCoverage becomes88/167 unconditional and60 conditional. There are171\nimprovements and one confirmed statement-scope correction. The final\ntwo-edge clause of T1.12, the sharp two-active-edge moment and the sharper\nmain third cumulant bounds remain open. Original manuscript bytes and\ncompiler/dependency pins are preserved. Palomar remains a later milestone.\n\nEarlier checkpoint history:\n",
       "validation_history": [
         {
           "status": "not_started",
           "literature_inputs": []
+        },
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (14535 jobs); direct axiom audit passed for 12135 declarations using only propext, Classical.choice and Quot.sound; all 10905 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.38 GiB.",
+          "validation_commit": "546c966475c89010f71bdc6d9506249488e10199",
+          "literature_inputs": [
+            "P1-FINITE-CHANNEL-TRIPLE-MULTIPLICITY",
+            "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+            "P1-GEO-ORDINARY-SURFACE-COVER",
+            "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER"
+          ]
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14535 jobs); direct axiom audit passed for 12135 declarations using only propext, Classical.choice and Quot.sound; all 10905 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.38 GiB.",
-      "validation_commit": "546c966475c89010f71bdc6d9506249488e10199"
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16253 jobs); direct axiom audit passed for 15134 declarations using only propext, Classical.choice and Quot.sound; all 14542 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.93 GiB.",
+      "remaining_unformalized_inputs": [],
+      "canonical_statement": "PaperP1.FiniteChannelTripleTheorem.companion_T2_8",
+      "canonical_additional_statements": [
+        "PaperP1.FiniteHighChannelTripleMass.height_cutoff",
+        "PaperP1.FiniteHighChannelTripleMass.uniform_original"
+      ],
+      "input_discharges": [
+        {
+          "checkpoint": "P1-MATH-0449",
+          "scope": "Complete numbered statement only, with actual source normalization and its original-model mean or fixed-height clause; no general geometric property is discharged.",
+          "previous_inputs": [
+            "P1-FINITE-CHANNEL-TRIPLE-MULTIPLICITY",
+            "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+            "P1-GEO-ORDINARY-SURFACE-COVER",
+            "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+            "p1:internal:unconditional-original-channel-palm"
+          ],
+          "internal_proofs": [
+            "PaperP1.FiniteChannelTripleTheorem.companion_T2_8",
+            "PaperP1.FiniteHighChannelTripleMass.height_cutoff",
+            "PaperP1.FiniteHighChannelTripleMass.uniform_original"
+          ]
+        }
+      ]
     },
     {
       "label": "p1:arith:palm",
@@ -30867,7 +30963,7 @@
       "source": "companion_sections/arithmetic.tex",
       "line": 128,
       "sha256": "09d2d449c9f0862b99f9c8f87030f29ba7bcfc87a3ce16ec9125b9391e002ed1",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.GoodEdgePositivePalmUnderInputs.uniform_mass",
         "PaperP1.GoodEdgePositivePalmUnderInputs.uniform_normalized",
@@ -30884,26 +30980,72 @@
         "PaperP1.GoodEdgePositivePalm.points",
         "PaperP1.GoodEdgePositivePalm.mass",
         "PaperP1.GoodEdgePositivePalm.beta",
-        "PaperP1.GoodEdgePositivePalm.normalized"
+        "PaperP1.GoodEdgePositivePalm.normalized",
+        "PaperP1.FiniteChannelTripleTheorem.companion_T2_8",
+        "PaperP1.FixedChannelFullPalm.eta_bounds",
+        "PaperP1.FixedChannelFullPalm.ordered_mean",
+        "PaperP1.FixedChannelFullPalm.ordered_positive",
+        "PaperP1.FixedChannelFullPalm.uniform_normalized",
+        "PaperP1.FixedChannelFullPalm.finite_mean_upper",
+        "PaperP1.FixedChannelFullPalm.mean_eq_conditional_integral",
+        "PaperP1.FixedChannelFullPalm.companion_T2_7",
+        "PaperP1.FixedChannelNonalignedMass.uniform_bound",
+        "PaperP1.GoodEdgePositivePalm.uniform_mass",
+        "PaperP1.GoodEdgePositivePalm.uniform_normalized",
+        "PaperP1.GoodEdgePositivePalm.companion_T3_1",
+        "PaperP1.FixedChannelFullPalm.eta",
+        "PaperP1.FixedChannelFullPalm.mean"
       ],
       "literature_inputs": [
-        "P1-POSITIVE-GOOD-EDGE-PALM",
-        "P1-GEO-NORMALIZED-CURVE-UNIFORM",
-        "P1-GEO-ORDINARY-SURFACE-COVER",
-        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER"
+        "p1:internal:unconditional-original-channel-palm"
       ],
       "mathematical_changes": [
-        "P1-MATH-0169"
+        "P1-MATH-0169",
+        "P1-MATH-0449"
       ],
-      "notes": "CompanionT3.1 is now COMPLETE CONDITIONALLY on the existing finite\nsource/ordinary surface-cover and normalized curve-count properties.\nGoodEdgePositivePalm defines the actual compatible unordered good-edge\nmass beta, the exact conditional start probability from the previously\nproved source-event ratio, the actual source-edge/regular-target positive\nPalm sum and its normalization by beta. iterated_mass and\nnormalized_eq_iterated identify the literal sums displayed in the paper.\nNo conditional probability or source mean is postulated.\n\nscaled_positive_part gives the exact identity\nq_e*(q_(e union{z})/q_e-p)_+=max(0,q_(e union{z})-p*q_e)\nfor every actual positive source probability. A positive excess forces\nboth a positive target intersection and positive actual joint probability.\nThe latter forces literal separation of EVERY original pair, including\nexact contacts. Consequently every positive term lies in the already\nproved homogeneous source-edge/target population. Incompatible original\ntriples have zero positive excess; they remain present in the majorant.\nThe finite comparison retains the full source and target multiplicities\nand works on every G contained in the original regular dyadic set.\n\nGoodEdgePositivePalmUnderInputs.uniform_mass proves the stronger\nunnormalized power4/3 in both principal channels. uniform_normalized\nuses the actual compatible channel phase, including the factor1/2 for\nunordered edges, and proves normalized power1/3+1/b. Thus the2:3 Palm\ncost has the printed2/3 power, and the3:4 Palm cost has the stronger7/12\npower rather than the printed1/2. The private cutoff has its literal\nfixed upper bound and lower bound2b(L+1); the combined source theorem\nuses8(L+1)<=H<=D(L+1). One threshold precedes ALL critical N,L,H and\nALL regular subfamilies G.\n\ncompanion_T3_1 assembles both positive normalized source inequalities,\nboth unnormalized printed4/3 and5/4 estimates, and positivity of BOTH\nactual source masses under one common threshold. P1-MATH-0169 records\nthe exact finite reduction and the stronger3:4 bound. Neither the sharper\nasymmetric31/24 estimate nor Reuss7/12 is used in this dependency route.\nNo new external input or target probability estimate is introduced.\n\nCoverage becomes88/167 unconditional and57 conditional. CompanionT1.12\nstays in_progress for its distinct-two-edge clause; main sharper41/30\nthird activity and the general fixed-channel Palm mean T2.7 stay open.\nThere are168 improvements and one confirmed statement-scope correction.\nOriginal manuscript bytes, compiler and dependency pins are preserved.\nPalomar remains a later milestone.\n\nEarlier checkpoint history:\n",
+      "notes": "Companion T2.7, T2.8 and T3.1 now have unconditional canonical proofs. Their complete source statements and proofs were rechecked in companion_sections/supplemental_arithmetic.tex lines279-391 and companion_sections/arithmetic.tex lines128-176. The target populations, source-weight normalization and fixed-channel quantifiers remain literal. No good-edge Palm estimate or finite-family triple asymptotic is assumed as a premise.\n\nFixedChannelNonalignedMass retains the denominator gain in the internally proved coarse asymmetric profile: its actual nonaligned joint mass is N^(-5/3+1/b+epsilon). Since the proved gamma exponent is at least1/3, this suffices for the full fixed-channel Palm exponent eta=min(17/24,1-gamma)=1-gamma. The exact actual old source span and every offset are preserved; the false radius-one asymmetric statement is not used.\n\nGoodEdgePositivePalm.uniform_mass applies the internal homogeneous raw source-edge extension theorem to the original compatible positive excess on every regular subground. Its normalized theorem divides by a proved positive lower bound for the actual source mass beta, preserving that denominator rather than replacing it by a nominal scale. companion_T3_1 gives the printed2/3 and1/2 normalized exponents and4/3 and5/4 unnormalized exponents on one common threshold. The general normalized3:4 bound is in fact7/12 and its unnormalized mass has power4/3.\n\nFixedChannelFullPalm includes all original target sites, including irregular ones. The finite excess split separates the actual marginal bias from aligned and nonaligned crossings. The aligned gamma estimate, internal coarse nonaligned mass and exact positive source phase give the full normalized positive excess. The already internal branching bound controls negative deviations. companion_T2_7 proves both the normalized positive Palm cost and the complete fresh-count mean relative to the literal nominal mean. ordered_mean and ordered_positive retain both original source orientations; mean_eq_conditional_integral identifies the actual conditional integral of Z_N-2. No original site or zero-joint source contribution is discarded from a positive sum without the existing exact zero-mass identity.\n\nFiniteChannelTripleTheorem.companion_T2_8 takes a finite maximum of the new unconditional Palm thresholds for a fixed nonempty channel family. One threshold precedes every critical length and independently varying private cutoff. Its amplitude is the actual ordered source mass and its exponent is the original minimum nu_F. The finite designated-pair comparison bounds every overcount by the actual branching exceptional set and positive Palm deviation, so each ordered triple is counted once even when it contains several good pairs. The previously unconditional FiniteHighChannelTripleMass.height_cutoff supplies the full final assertion for fixed heights5<=b<=Q; it is retained as a canonical additional statement, with no growing-height claim.\n\nEarlier conditional declarations and literature history remain preserved. The discharges concern only these three exact numbered uses; general surface covers, normalized curve counts, growing-degree BCN and optimal global third activity remain separate. Original source bytes and Lean/Mathlib pins are unchanged.\n\nP1-MATH-0449 adds four modules, twelve theorems and two definitions. Companion T2.7, T2.8 and T3.1 move from conditional to proved. Coverage becomes143 proved,21 conditional and3 in_progress out of167, with164 completed. The project records447 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.\n\nEarlier checkpoint history:\nCompanionT3.1 is now COMPLETE CONDITIONALLY on the existing finite\nsource/ordinary surface-cover and normalized curve-count properties.\nGoodEdgePositivePalm defines the actual compatible unordered good-edge\nmass beta, the exact conditional start probability from the previously\nproved source-event ratio, the actual source-edge/regular-target positive\nPalm sum and its normalization by beta. iterated_mass and\nnormalized_eq_iterated identify the literal sums displayed in the paper.\nNo conditional probability or source mean is postulated.\n\nscaled_positive_part gives the exact identity\nq_e*(q_(e union{z})/q_e-p)_+=max(0,q_(e union{z})-p*q_e)\nfor every actual positive source probability. A positive excess forces\nboth a positive target intersection and positive actual joint probability.\nThe latter forces literal separation of EVERY original pair, including\nexact contacts. Consequently every positive term lies in the already\nproved homogeneous source-edge/target population. Incompatible original\ntriples have zero positive excess; they remain present in the majorant.\nThe finite comparison retains the full source and target multiplicities\nand works on every G contained in the original regular dyadic set.\n\nGoodEdgePositivePalmUnderInputs.uniform_mass proves the stronger\nunnormalized power4/3 in both principal channels. uniform_normalized\nuses the actual compatible channel phase, including the factor1/2 for\nunordered edges, and proves normalized power1/3+1/b. Thus the2:3 Palm\ncost has the printed2/3 power, and the3:4 Palm cost has the stronger7/12\npower rather than the printed1/2. The private cutoff has its literal\nfixed upper bound and lower bound2b(L+1); the combined source theorem\nuses8(L+1)<=H<=D(L+1). One threshold precedes ALL critical N,L,H and\nALL regular subfamilies G.\n\ncompanion_T3_1 assembles both positive normalized source inequalities,\nboth unnormalized printed4/3 and5/4 estimates, and positivity of BOTH\nactual source masses under one common threshold. P1-MATH-0169 records\nthe exact finite reduction and the stronger3:4 bound. Neither the sharper\nasymmetric31/24 estimate nor Reuss7/12 is used in this dependency route.\nNo new external input or target probability estimate is introduced.\n\nCoverage becomes88/167 unconditional and57 conditional. CompanionT1.12\nstays in_progress for its distinct-two-edge clause; main sharper41/30\nthird activity and the general fixed-channel Palm mean T2.7 stay open.\nThere are168 improvements and one confirmed statement-scope correction.\nOriginal manuscript bytes, compiler and dependency pins are preserved.\nPalomar remains a later milestone.\n\nEarlier checkpoint history:\n",
       "validation_history": [
         {
           "status": "not_started",
           "literature_inputs": []
+        },
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (14483 jobs); direct axiom audit passed for 12000 declarations using only propext, Classical.choice and Quot.sound; all 10722 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.52 GiB.",
+          "validation_commit": "824d0d2c51ededa2af9ed0bc6561fcbb6fa109d0",
+          "literature_inputs": [
+            "P1-POSITIVE-GOOD-EDGE-PALM",
+            "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+            "P1-GEO-ORDINARY-SURFACE-COVER",
+            "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER"
+          ]
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14483 jobs); direct axiom audit passed for 12000 declarations using only propext, Classical.choice and Quot.sound; all 10722 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.52 GiB.",
-      "validation_commit": "824d0d2c51ededa2af9ed0bc6561fcbb6fa109d0"
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16253 jobs); direct axiom audit passed for 15134 declarations using only propext, Classical.choice and Quot.sound; all 14542 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.93 GiB.",
+      "remaining_unformalized_inputs": [],
+      "canonical_statement": "PaperP1.GoodEdgePositivePalm.companion_T3_1",
+      "canonical_additional_statements": [
+        "PaperP1.GoodEdgePositivePalm.uniform_normalized",
+        "PaperP1.GoodEdgePositivePalm.uniform_mass"
+      ],
+      "input_discharges": [
+        {
+          "checkpoint": "P1-MATH-0449",
+          "scope": "Complete numbered statement only, with actual source normalization and its original-model mean or fixed-height clause; no general geometric property is discharged.",
+          "previous_inputs": [
+            "P1-POSITIVE-GOOD-EDGE-PALM",
+            "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+            "P1-GEO-ORDINARY-SURFACE-COVER",
+            "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+            "p1:internal:unconditional-original-channel-palm"
+          ],
+          "internal_proofs": [
+            "PaperP1.GoodEdgePositivePalm.companion_T3_1",
+            "PaperP1.GoodEdgePositivePalm.uniform_normalized",
+            "PaperP1.GoodEdgePositivePalm.uniform_mass"
+          ]
+        }
+      ]
     },
     {
       "label": "p1:fixed:curve",

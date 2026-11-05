@@ -22589,6 +22589,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "81a8a255001860693466d94e168f2a4c2666ed57"
+    },
+    {
+      "id": "P1-MATH-0449",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:fixed-channel-palm",
+        "number": "T2.7",
+        "page": 23,
+        "source": "companion_sections/supplemental_arithmetic.tex",
+        "line": 279,
+        "statement_sha256": "e1363efe24511cb2801268b9975d6b2c226855615c5f85f8a8a7132fc19ada0d"
+      },
+      "original_assumption": "The full original fixed-channel Palm mean, finite-family triple asymptotic and principal positive Palm costs retained geometric inputs through their coarse nonaligned and homogeneous extension bounds.",
+      "finding": "The internal coarse asymmetric profile retains the exact denominator gain needed for eta=1-gamma. Internal homogeneous extensions and a proved positive actual source denominator close the principal costs; branching and finite multiplicity bookkeeping close the full original mean and triple asymptotic.",
+      "proposed_revision": "Use the internal enlarged-radius coarse profile and raw homogeneous seed estimates in the Palm proofs. Keep the actual source denominator, all original targets, exact conditional mean, original ordered orientations and finite designated-pair overcount explicit.",
+      "impact": "Complete companion T2.7, T2.8 and T3.1 become unconditional. The3:4 positive Palm cost is strengthened internally to normalized power7/12 and unnormalized power4/3. Coverage becomes143 proved,21 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.FiniteChannelTripleTheorem.companion_T2_8",
+        "PaperP1.FixedChannelFullPalm.eta_bounds",
+        "PaperP1.FixedChannelFullPalm.ordered_mean",
+        "PaperP1.FixedChannelFullPalm.ordered_positive",
+        "PaperP1.FixedChannelFullPalm.uniform_normalized",
+        "PaperP1.FixedChannelFullPalm.finite_mean_upper",
+        "PaperP1.FixedChannelFullPalm.mean_eq_conditional_integral",
+        "PaperP1.FixedChannelFullPalm.companion_T2_7",
+        "PaperP1.FixedChannelNonalignedMass.uniform_bound",
+        "PaperP1.GoodEdgePositivePalm.uniform_mass",
+        "PaperP1.GoodEdgePositivePalm.uniform_normalized",
+        "PaperP1.GoodEdgePositivePalm.companion_T3_1",
+        "PaperP1.FixedChannelFullPalm.eta",
+        "PaperP1.FixedChannelFullPalm.mean"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16253 jobs); direct axiom audit passed for 15134 declarations using only propext, Classical.choice and Quot.sound; all 14542 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.93 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
