@@ -2459,6 +2459,11 @@ import PaperP1
 #print axioms PaperP1.AffineDeterminantUniformScale.logarithmic_power_bound
 #print axioms PaperP1.AffineDeterminantUniformScale.prime_scale
 #print axioms PaperP1.AffineDeterminantUniformScale.exists_logarithmic_degree
+#print axioms PaperP1.AffineInteriorUnitDerivatives.scaled_power_bound
+#print axioms PaperP1.AffineInteriorUnitDerivatives.positive_unit_derivative
+#print axioms PaperP1.AffineUnitGraphParametrization.eq_or_transpose
+#print axioms PaperP1.AffineUnitGraphParametrization.unit_jets
+#print axioms PaperP1.AffineUnitGraphParametrization.unit_curve_parametrization
 #print axioms PaperP1.AnalyticWronskianNormalization.wronskian_congr_on
 #print axioms PaperP1.AnalyticWronskianNormalization.wronskian_one_tail
 #print axioms PaperP1.AnalyticWronskianNormalization.wronskian_normalized
@@ -2903,6 +2908,12 @@ import PaperP1
 #print axioms PaperP1.LeadingSaddleLogBounds.reciprocal_log_bounds
 #print axioms PaperP1.LeadingSaddleLogBounds.cost_log_bounds
 #print axioms PaperP1.LeadingSaddleLogBounds.limit_of_uniform_bounds
+#print axioms PaperP1.LocalAffineDerivativeFormula.hasDerivAt_parameter
+#print axioms PaperP1.LocalAffineDerivativeFormula.contDiff_parameter
+#print axioms PaperP1.LocalAffineDerivativeFormula.iterated_formula
+#print axioms PaperP1.LocalAffineDerivativeFormula.smooth_composition
+#print axioms PaperP1.LocalAffineDerivativeFormula.positive_parameter_derivative
+#print axioms PaperP1.LocalAffineDerivativeFormula.image_parameter
 #print axioms PaperP1.LocalDeterminantDegreeChoice.triangle_weight
 #print axioms PaperP1.LocalDeterminantDegreeChoice.exists_auxiliary_degree
 #print axioms PaperP1.LocalDeterminantDegreeChoice.exists_avoidance_power

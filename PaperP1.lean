@@ -4044,3 +4044,6 @@ public import PaperP1.Analysis.IteratedDerivativeInteriorBound
 public import PaperP1.Analysis.IteratedDerivativeMonotonicity
 public import PaperP1.Analysis.MonotoneDerivativeInteriorBound
 public import PaperP1.Analysis.UnitSlopeHigherDerivativeBounds
+public import PaperP1.Analysis.AffineInteriorUnitDerivatives
+public import PaperP1.Analysis.AffineUnitGraphParametrization
+public import PaperP1.Analysis.LocalAffineDerivativeFormula

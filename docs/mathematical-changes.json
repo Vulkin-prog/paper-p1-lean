@@ -25157,6 +25157,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "7599f27b6cbe7c6e90f304ed8ebfcf2a03c0ff7d"
+    },
+    {
+      "id": "P1-MATH-0515",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The proved interior higher derivative bounds had not yet been converted into actual bounded-jet curve maps with segment coverage.",
+      "finding": "A local all-order affine derivative formula and the explicit scale c<=delta/(2(r+1)) give actual unit component jets throughr, actual curve membership, smoothness and coverage of each admissible interior graph segment.",
+      "proposed_revision": "Use the internally proved affine unit-jet segment parametrization with explicit margin, scale and order-zero bounded-box conditions, keeping global coverage/count obligations separate.",
+      "impact": "Closes actual unit-jet reparametrization and coverage of every admissible interior graph segment without a global smooth extension. The final BCN bound remains open.",
+      "evidence": [
+        "PaperP1.AffineInteriorUnitDerivatives.scaled_power_bound",
+        "PaperP1.AffineInteriorUnitDerivatives.positive_unit_derivative",
+        "PaperP1.AffineUnitGraphParametrization.eq_or_transpose",
+        "PaperP1.AffineUnitGraphParametrization.unit_jets",
+        "PaperP1.AffineUnitGraphParametrization.unit_curve_parametrization",
+        "PaperP1.LocalAffineDerivativeFormula.hasDerivAt_parameter",
+        "PaperP1.LocalAffineDerivativeFormula.contDiff_parameter",
+        "PaperP1.LocalAffineDerivativeFormula.iterated_formula",
+        "PaperP1.LocalAffineDerivativeFormula.smooth_composition",
+        "PaperP1.LocalAffineDerivativeFormula.positive_parameter_derivative",
+        "PaperP1.LocalAffineDerivativeFormula.image_parameter",
+        "PaperP1.AffineUnitGraphParametrization.path",
+        "PaperP1.AffineUnitGraphParametrization.UnitJets",
+        "PaperP1.LocalAffineDerivativeFormula.parameter"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16677 jobs); direct axiom audit passed for 15803 declarations using only propext, Classical.choice and Quot.sound; all 15328 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.07 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
