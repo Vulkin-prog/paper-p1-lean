@@ -3768,3 +3768,10 @@ public import PaperP1.Asymptotics.PrincipalSelectedPairMass
 public import PaperP1.Asymptotics.RetainedPairLeakage
 public import PaperP1.Asymptotics.RetainedPairLeakageLimit
 public import PaperP1.Asymptotics.SinglePairCriticalTheorem
+public import PaperP1.Asymptotics.PositionalBoundaryApproximation
+public import PaperP1.Asymptotics.PositionalFullApproximation
+public import PaperP1.Asymptotics.PositionalGridApproximation
+public import PaperP1.Asymptotics.PositionalOriginalDeletion
+public import PaperP1.Asymptotics.PositionalOriginalDeletionWeighted
+public import PaperP1.Asymptotics.PositionalRegularApproximation
+public import PaperP1.Asymptotics.PositionalWeightedApproximation

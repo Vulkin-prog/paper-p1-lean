@@ -22203,6 +22203,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "349c1efcd087f4f36437e9957b14d77354d1d65e"
+    },
+    {
+      "id": "P1-MATH-0442",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:limits:vector-reference",
+        "number": "20.1",
+        "page": 60,
+        "source": "main_sections/limits_appendix.tex",
+        "line": 45,
+        "statement_sha256": "fd15ebe1159f165a714eb5337648229bacb982d63e0d76c87f983cdeaf06f6a4"
+      },
+      "original_assumption": "The full original unsigned-field comparison20.1 and derived deleted-field comparisons retained finite geometric inputs through the positive boundary estimate.",
+      "finding": "Internal literalK<=L/4 boundary activity closes the coordinate-preserving stopped expansion. Actual independent deficits, pair conversion and restoration then prove the full-grid rate, while independent moment bounds justify every fixed polynomial weight and the actual deletion kernels.",
+      "proposed_revision": "Base the full field law on the internal positive boundary and coordinate-wise finite convolution expansion. Retain individual arithmetic pair rates, original grid, positive single intensities and explicit polynomial-weight summability before applying deletion kernels.",
+      "impact": "Main20.1 becomes unconditional in its complete weighted original-grid scope. The field-comparison part of companionT19.10 is also unconditional; its additional finer conclusions remain separate. Coverage becomes134 proved,30 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.PositionalBoundaryApproximation.uniform_bound",
+        "PaperP1.PositionalFullApproximation.uniform_norm_bound",
+        "PaperP1.PositionalFullApproximation.uniform_probability_bound",
+        "PaperP1.PositionalGridApproximation.main_20_1",
+        "PaperP1.PositionalOriginalDeletion.uniform_norm_bound",
+        "PaperP1.PositionalOriginalDeletionWeighted.uniform_bound",
+        "PaperP1.PositionalRegularApproximation.uniform_bound",
+        "PaperP1.PositionalWeightedApproximation.uniform_coefficient_bound",
+        "PaperP1.PositionalWeightedApproximation.uniform_probability_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16121 jobs); direct axiom audit passed for 14976 declarations using only propext, Classical.choice and Quot.sound; all 14340 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.24 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -26493,3 +26493,24 @@ ModifiedMomentDecomposition preserves the original finite identity before any as
 P1-MATH-0441 adds six modules, sixteen theorems and five definitions. CompanionT22.5 andT22.6 move from conditional to proved. Coverage becomes133 proved,31 conditional and3 in_progress out of167, with164 completed. The project records439 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16107 jobs); direct axiom audit passed for 14967 declarations using only propext, Classical.choice and Quot.sound; all 14331 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.29 GiB.
+
+
+## Unconditional full original positional law at every fixed polynomial weight
+
+Stable ID: p1:internal:unconditional-full-positional-polynomial-law. Internal positive boundary, positional convolution, independent deficit, restoration and moment proofs discharge the exact full-grid weighted field statement. Individual pair locations and rates are retained. Deleted-field distance does not by itself establish finerO(a_N^2) activation or intensity assertions.
+
+Main Lemma20.1 now has an unconditional canonical proof of its full original-grid, polynomially weighted unsigned-field comparison. PositionalGridApproximation.main_20_1 constructs an actual probability measure on the literal finite grid, identifies every singleton mass with the exact single/pair convolution coefficient and proves the printed exponent4/5 error for every fixed polynomial weight in the total count. The statement and target definitions in main_sections/limits_appendix.tex lines1-75 and the complete proof in companion_sections/limits_appendix.tex lines529-645 were rechecked.
+
+PositionalBoundaryApproximation retains every coordinate in the exact stopped convolution expansion and uses the internally proved fullK<=L/4 positive boundary estimate and large-boundary tail. PositionalRegularApproximation uses the internally proved independent deficits and positional pair conversion on the actual regular ground. PositionalFullApproximation restores the excluded starts and literal nominal single intensities on the complete dyadic grid. No scalar-only comparison is substituted for a field law.
+
+PositionalWeightedApproximation proves summability and the complete weighted coefficient bound by a finite cutoff using independently established subpolynomial actual moments and bounded compound-reference moments. Every weight degree is fixed beforeN, and no original exponential-moment bound is required. PositionalGridApproximation transfers this checked coefficient estimate to the original integer-valued grid events, without losing locations, changing the grid or altering the moving intensities.
+
+The target retains the literal arithmetic good edges with individual ratesq_e, incidenceiota_x and single ratesp-iota_x. Their positivity and exact target probability status are supplied by internally proved incidence bounds. The full target is not determined merely by the scalar second cumulant. Run signs and excess lengths are not added to this unsigned statement.
+
+PositionalOriginalDeletion and PositionalOriginalDeletionWeighted also prove the original once-deleted and isolated fields have the same independent Poisson background at exponent4/5, with every fixed polynomial weight, using actual deletion kernels and their finite norm contraction. This discharges the field-comparison part of companionT19.10. FullT19.10 remains conditional for its additional sharper intensity/covariance/activation andO(a_N^2) assertions; none of those is inferred merely from unweighted field distance.
+
+Earlier conditional declarations and literature history are preserved. Only the former geometric uses in the full20.1 and stated deletion-field conclusions are discharged. No general geometric property or optimal4/3 count-law estimate is promoted. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0442 adds seven modules and nine theorems. Main20.1 moves from conditional to proved. Coverage becomes134 proved,30 conditional and3 in_progress out of167, with164 completed. The project records440 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16121 jobs); direct axiom audit passed for 14976 declarations using only propext, Classical.choice and Quot.sound; all 14340 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.24 GiB.
