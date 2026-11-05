@@ -3935,3 +3935,4 @@ public import PaperP1.Analysis.BalancedReciprocalSaddleCost
 public import PaperP1.Analysis.MovingLogarithmicPivotMass
 public import PaperP1.Asymptotics.FineReciprocalUpper
 public import PaperP1.Asymptotics.FineSaddlePivotCount
+public import PaperP1.Asymptotics.FineSignedCostUpper

@@ -7968,6 +7968,9 @@ import PaperP1
 #print axioms PaperP1.FineReciprocalUpper.uniform_original_upper
 #print axioms PaperP1.FineSaddlePivotCount.uniform_count
 #print axioms PaperP1.FineSaddlePivotCount.uniform_population_bound
+#print axioms PaperP1.FineSignedCostUpper.uniform_upper_from_profile
+#print axioms PaperP1.FineSignedCostUpper.uniform_upper
+#print axioms PaperP1.FineSignedCostUpper.uniform_log_upper
 #print axioms PaperP1.FiniteAlignedTargetTripleMass.all_actual_sources
 #print axioms PaperP1.FiniteAlignedTargetTripleMass.uniform_mass
 #print axioms PaperP1.FiniteChannelActivity.uniform_activity

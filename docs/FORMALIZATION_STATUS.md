@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records475 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records476 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15417 audited theorem/lemma declarations**. This
+- The project currently has **15420 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26832,3 +26832,20 @@ The new route proves the upper half of the fine reciprocal assertion independent
 P1-MATH-0477 adds three modules, eight theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records475 improvements and two statement-scope corrections. Original source files are preserved; no new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16441 jobs); direct axiom audit passed for 15417 declarations using only propext, Classical.choice and Quot.sound; all 14857 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.24 GiB.
+
+
+## Internal fine upper bound for the original specified signed forcing cost
+
+The fine upper bound for the original specified signed forcing cost is now internally proved. For every C and epsilon>0, one threshold before all critical lengths L gives specifiedCost(N,L) <= exp(-2V_N+epsilon*nu_N). uniform_log_upper gives the corresponding actual logarithmic upper bound. No ordinary reciprocal EIP argument or geometric profile argument occurs in these closed declarations. The matching fine lower bound remains unresolved, so complete T19.16 remains conditional.
+
+FineSignedCostUpper.uniform_upper_from_profile first retains an arbitrary positive logarithmic width constant D and every actual excess E, with the explicit finite raw-value profile bound at exponent19/12. The exact signed finite ledger, heterogeneous means and actual private forcing are unchanged. Checkpoint477's internal pivotSum(3N)+1 estimate supplies its only reciprocal bound. Fixed logarithmic prefactors and the raw power error are absorbed by internally proved hard-saddle estimates. The older harmless factor4 is retained in this intermediate calculation, rather than changing its finite ledger constants.
+
+uniform_upper then supplies the raw-value profile and prescribed width internally, using EnlargedRawValueProfile and the exact excess E=ceil(3V_N/log2). The threshold precedes every critical L and the requested error. It rewrites the actual specifiedCost through its proved equality with the finite forcing data. uniform_log_upper obtains positivity from the internal coarse lower bound before taking the real logarithm. No nonpositive logarithm, abstract target-bound hypothesis or external reciprocal upper estimate is hidden.
+
+The complete original T19.16 statement and proof, companion_sections/limits_appendix.tex lines1194-1300, were rechecked, including its prescribed signed conditional coupling, positive coordinate-by-coordinate cost, exact excess and the separate lower argument. This checkpoint discharges the full fine upper direction. Its matching fine lower direction still uses the ordinary fine reciprocal lower estimate. The qualitative no-polynomial-decay consequence was already proved internally, independently of this exact fine equivalent. No lower bound for dependence, total variation or signed scalar cancellation is inferred from the positive forcing cost.
+
+The full fine reciprocal upper direction is internal at checkpoint477. Existing canonical two-sided wrappers still take the complete EIP input until a separate one-sided adapter is checked. Full T19.17 retains its stronger almost-all census and1-o(1) coefficient; its qualitative deterministic/randomized all-anchor obstructions are internal. General geometry, full quadratic-degree BCN and optimal strong-triangle weights retain their separate unresolved scopes.
+
+P1-MATH-0478 adds one module, three theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records476 improvements and two statement-scope corrections. Original source files remain preserved; no new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16443 jobs); direct axiom audit passed for 15420 declarations using only propext, Classical.choice and Quot.sound; all 14860 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.22 GiB.
