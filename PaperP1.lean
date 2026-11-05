@@ -4025,3 +4025,6 @@ public import PaperP1.Analysis.GraphTangentEvaluation
 public import PaperP1.Analysis.IteratedGraphDerivative
 public import PaperP1.Analysis.GraphTangentSmooth
 public import PaperP1.Analysis.LocalNormalizedGraphPiece
+public import PaperP1.Algebra.PlaneCoordinateSwap
+public import PaperP1.Analysis.RegularNormalizedCharts
+public import PaperP1.Analysis.TransposedNormalizedGraphPiece

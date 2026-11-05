@@ -24898,6 +24898,56 @@
         "status": "not_integrated"
       },
       "validation_commit": "24c7981b88c069b3ad281dc6d32aa6a2c186bc96"
+    },
+    {
+      "id": "P1-MATH-0509",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "Only the first normalized orientation had internally constructed charts and positive-order real derivative identities.",
+      "finding": "Exact polynomial and point transposition constructs the other actual orientation, and a unified theorem supplies smooth normalized charts with all rational derivative formulas at every nonsingular curve point.",
+      "proposed_revision": "Use the exact both-orientation local chart theorem, with the independent coordinate and nonzero denominator explicitly selected before all tested polynomials and derivative orders.",
+      "impact": "Closes both local normalized orientations and the complete local derivative formula ingredient of BCN Proposition 8. Controlled global parametrization remains open.",
+      "evidence": [
+        "PaperP1.PlaneCoordinateSwap.index_zero",
+        "PaperP1.PlaneCoordinateSwap.index_one",
+        "PaperP1.PlaneCoordinateSwap.index_twice",
+        "PaperP1.PlaneCoordinateSwap.point_twice",
+        "PaperP1.PlaneCoordinateSwap.polynomial_twice",
+        "PaperP1.PlaneCoordinateSwap.evaluation",
+        "PaperP1.PlaneCoordinateSwap.degree",
+        "PaperP1.PlaneCoordinateSwap.pderiv_swap",
+        "PaperP1.PlaneCoordinateSwap.evaluation_partial",
+        "PaperP1.PlaneCoordinateSwap.evaluation_pderiv",
+        "PaperP1.PlaneCoordinateSwap.evaluation_polynomial_at_point",
+        "PaperP1.RegularNormalizedCharts.exists_at_nonsingular",
+        "PaperP1.RegularNormalizedCharts.exists_off_singular",
+        "PaperP1.TransposedNormalizedGraphPiece.transpose_trajectory",
+        "PaperP1.TransposedNormalizedGraphPiece.initial_point",
+        "PaperP1.TransposedNormalizedGraphPiece.exists_piece",
+        "PaperP1.TransposedNormalizedGraphPiece.exists_smooth_piece_with_derivatives",
+        "PaperP1.PlaneCoordinateSwap.index",
+        "PaperP1.PlaneCoordinateSwap.polynomial",
+        "PaperP1.PlaneCoordinateSwap.point",
+        "PaperP1.TransposedNormalizedGraphPiece.velocity",
+        "PaperP1.TransposedNormalizedGraphPiece.Trajectory",
+        "PaperP1.TransposedNormalizedGraphPiece.Piece",
+        "PaperP1.TransposedNormalizedGraphPiece.transposePiece"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16639 jobs); direct axiom audit passed for 15729 declarations using only propext, Classical.choice and Quot.sound; all 15241 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.53 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

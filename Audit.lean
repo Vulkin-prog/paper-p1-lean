@@ -1594,6 +1594,17 @@ import PaperP1
 #print axioms PaperP1.PairProductComparison.absolute_bound
 #print axioms PaperP1.PairwiseEqualSpan.exists_line
 #print axioms PaperP1.PairwiseEqualSpan.finrank_le_one
+#print axioms PaperP1.PlaneCoordinateSwap.index_zero
+#print axioms PaperP1.PlaneCoordinateSwap.index_one
+#print axioms PaperP1.PlaneCoordinateSwap.index_twice
+#print axioms PaperP1.PlaneCoordinateSwap.point_twice
+#print axioms PaperP1.PlaneCoordinateSwap.polynomial_twice
+#print axioms PaperP1.PlaneCoordinateSwap.evaluation
+#print axioms PaperP1.PlaneCoordinateSwap.degree
+#print axioms PaperP1.PlaneCoordinateSwap.pderiv_swap
+#print axioms PaperP1.PlaneCoordinateSwap.evaluation_partial
+#print axioms PaperP1.PlaneCoordinateSwap.evaluation_pderiv
+#print axioms PaperP1.PlaneCoordinateSwap.evaluation_polynomial_at_point
 #print axioms PaperP1.PlaneCurveHilbert.polynomial_natDegree_le
 #print axioms PaperP1.PlaneCurveHilbert.polynomial_coeff_one
 #print axioms PaperP1.PlaneCurveHilbert.polynomial_natDegree
@@ -3076,6 +3087,8 @@ import PaperP1
 #print axioms PaperP1.ReducedSourceParameter.uniform_parameter_threshold
 #print axioms PaperP1.ReducedSourceShiftBudget.polylog_rebase
 #print axioms PaperP1.ReducedSourceShiftBudget.shift_and_loss_bounds
+#print axioms PaperP1.RegularNormalizedCharts.exists_at_nonsingular
+#print axioms PaperP1.RegularNormalizedCharts.exists_off_singular
 #print axioms PaperP1.RelativeIntervalAxisBounds.first_axis_scale
 #print axioms PaperP1.RelativeIntervalAxisBounds.second_axis_scale
 #print axioms PaperP1.RelativeIntervalAxisBounds.scaled_interval_sum_bound
@@ -3259,6 +3272,10 @@ import PaperP1
 #print axioms PaperP1.TangentCurvePieceZeros.partial_evaluation
 #print axioms PaperP1.TangentCurvePieceZeros.parameter_zero_bound
 #print axioms PaperP1.TangentCurvePieceZeros.image_zero_bound
+#print axioms PaperP1.TransposedNormalizedGraphPiece.transpose_trajectory
+#print axioms PaperP1.TransposedNormalizedGraphPiece.initial_point
+#print axioms PaperP1.TransposedNormalizedGraphPiece.exists_piece
+#print axioms PaperP1.TransposedNormalizedGraphPiece.exists_smooth_piece_with_derivatives
 #print axioms PaperP1.TruncatedAffineDegree.budget
 #print axioms PaperP1.TruncatedAffineDegree.prime_scale
 #print axioms PaperP1.UniformSaddleVariation.uniform_left_variation
