@@ -7682,6 +7682,8 @@ import PaperP1
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_cumulant
 #print axioms PaperP1.HeathBrownHeightBudget.uniform_first_count
 #print axioms PaperP1.HeathBrownHeightBudget.uniform_second_count
+#print axioms PaperP1.HeightControlledBiformCount.uniform_first_count
+#print axioms PaperP1.HeightControlledBiformCount.uniform_second_count
 #print axioms PaperP1.HeightTwoBoundaryJointMass.finite_bound
 #print axioms PaperP1.HeightTwoBoundaryJointMass.uniform_mass
 #print axioms PaperP1.HeightTwoBoundaryJointMass.uniform_triples

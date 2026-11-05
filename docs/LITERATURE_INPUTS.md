@@ -25263,3 +25263,18 @@ These algebraic facts allow the complete proved Heath-Brown input to be applied 
 P1-MATH-0371 adds seven theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records369 improvements and two statement-scope corrections. All artifacts were already available locally. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 remains open and Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15655 jobs); direct axiom audit passed for 14391 declarations using only propext, Classical.choice and Quot.sound; all 13691 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.89 GiB.
+
+
+## Uniform biform counts with polynomially controlled coefficient height
+
+Stable ID: p1:internal:height-controlled-biform-count. Both estimates are unconditional and retain actual signed primitive populations. Their next fixed-degree plane application is weaker than the remaining degree-uniform BCN target.
+
+HeightControlledBiformCount.uniform_first_count proves that for bounded positive partial degrees, every fixed polynomial coefficient-height budget height(G)<=C*L^kappa is absorbed into an arbitrary epsilon margin: #S<=K*L^(2/degreeY(G)+epsilon), with K chosen uniformly before G,L and the actual signed primitive projective population. No Heath-Brown input argument remains: the complete internally proved GeometricBiformPointCount.full_input is used. The second pair is unrestricted.
+
+The proof chooses the smaller internal epsilon epsilon/(kappa+1), constructs finitely many constants over all bounded positive degree pairs, bounds each by their actual nonnegative finite sum, and handles the exact real-power product of the coordinate and coefficient-height terms. C may be any real number; max(1,C) provides the explicit nonnegative normalization. uniform_second_count proves the symmetric exact exponent2/degreeX(G)+epsilon through actual coordinate swapping, height equality and preserved populations.
+
+These unconditional estimates prepare a fixed-total-degree coefficient-uniform plane bound by choosing the larger partial degree and using the bounded-height presentations already constructed. They do not assert the sharper degree-uniform BCN estimate or the full original main13.4 statement.
+
+P1-MATH-0372 adds two theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records370 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15657 jobs); direct axiom audit passed for 14393 declarations using only propext, Classical.choice and Quot.sound; all 13693 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.87 GiB.

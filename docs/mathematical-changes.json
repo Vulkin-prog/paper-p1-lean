@@ -19673,6 +19673,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "935fffc480da5f0004604b3564573655a7ecb640"
+    },
+    {
+      "id": "P1-MATH-0372",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The complete biform bound retained a coefficient-height epsilon factor, which had to be absorbed uniformly for bounded degree pairs and polynomially controlled moving coefficients.",
+      "finding": "Every fixed polynomial coefficient-height budget is absorbed into an arbitrary epsilon margin with one uniform constant, in either original pair, using the internally proved complete biform count.",
+      "proposed_revision": "Apply the estimates to normalized primitive lifts of actual integer plane points and bounded-height equations, choosing the variable of larger partial degree for a fixed-degree intermediate plane estimate.",
+      "impact": "Closes coefficient-height absorption and bounded-degree constant uniformity for actual biform populations. The sharper degree-uniform plane BCN and main13.4 remain open; coverage is unchanged.",
+      "evidence": [
+        "PaperP1.HeightControlledBiformCount.uniform_first_count",
+        "PaperP1.HeightControlledBiformCount.uniform_second_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15657 jobs); direct axiom audit passed for 14393 declarations using only propext, Classical.choice and Quot.sound; all 13693 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.87 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
