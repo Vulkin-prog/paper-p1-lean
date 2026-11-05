@@ -25271,6 +25271,59 @@
         "status": "not_integrated"
       },
       "validation_commit": "9124a100dfc628c3202be673e678ca97d7d2aa20"
+    },
+    {
+      "id": "P1-MATH-0518",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The polynomial Wronskian and bounded-degree point-count theorem applied only to unnormalized tangent pieces, without a proved concrete bridge to both normalized graph orientations.",
+      "finding": "Actual smooth nonzero tangent rescalings preserve polynomial Wronskian nonvanishing and the full Chebyshev point count. Both normalized graph orientations now have internal strict image-zero bounds below the monomial-family size.",
+      "proposed_revision": "Use the actual nonzero scale1/P_y or-1/P_x and the proved Wronskian transformation to apply the concrete bounded-degree zero count directly on normalized graph pieces.",
+      "impact": "Closes the normalization-to-Chebyshev bridge and every-polynomial one-piece count, retaining degree-independent per-piece allowance(k+1)^2. Controlled global coverage remains open.",
+      "evidence": [
+        "PaperP1.NormalizedScaledTangent.first_trajectory",
+        "PaperP1.NormalizedScaledTangent.second_trajectory",
+        "PaperP1.NormalizedScaledTangent.second_smooth",
+        "PaperP1.NormalizedScaledTangent.firstScale_smooth",
+        "PaperP1.NormalizedScaledTangent.secondScale_smooth",
+        "PaperP1.NormalizedScaledTangent.firstScale_ne_zero",
+        "PaperP1.NormalizedScaledTangent.secondScale_ne_zero",
+        "PaperP1.NormalizedScaledTangent.first_wronskian_ne_zero",
+        "PaperP1.NormalizedScaledTangent.second_wronskian_ne_zero",
+        "PaperP1.ScaledCurvePieceZeros.partial_evaluation",
+        "PaperP1.ScaledCurvePieceZeros.parameter_zero_bound",
+        "PaperP1.ScaledCurvePieceZeros.image_zero_bound",
+        "PaperP1.ScaledMonomialPieceCount.partial_nonzero",
+        "PaperP1.ScaledMonomialPieceCount.point_count",
+        "PaperP1.ScaledMonomialPieceCount.first_point_count",
+        "PaperP1.ScaledMonomialPieceCount.second_point_count",
+        "PaperP1.ScaledPolynomialTangentTrajectory.directional_scaled",
+        "PaperP1.ScaledPolynomialTangentTrajectory.hasDerivAt_evaluation",
+        "PaperP1.ScaledPolynomialTangentTrajectory.deriv_evaluation",
+        "PaperP1.ScaledPolynomialTangentTrajectory.wronskian_evaluation",
+        "PaperP1.ScaledPolynomialTangentTrajectory.wronskian_ne_zero",
+        "PaperP1.ScaledPolynomialTangentTrajectory.velocity_contDiffOn",
+        "PaperP1.ScaledPolynomialTangentTrajectory.contDiffOn_trajectory",
+        "PaperP1.ScaledPolynomialTangentTrajectory.affine_trajectory",
+        "PaperP1.NormalizedScaledTangent.firstScale",
+        "PaperP1.NormalizedScaledTangent.secondScale",
+        "PaperP1.ScaledPolynomialTangentTrajectory.Trajectory"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16693 jobs); direct axiom audit passed for 15843 declarations using only propext, Classical.choice and Quot.sound; all 15374 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.01 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

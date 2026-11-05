@@ -4051,3 +4051,7 @@ public import PaperP1.Analysis.BoxedLocalUnitGraphMaps
 public import PaperP1.Analysis.ShortCenteredAffineSegment
 public import PaperP1.Analysis.ScaledDerivativeExpansion
 public import PaperP1.Analysis.ScaledWronskianTransformation
+public import PaperP1.Analysis.NormalizedScaledTangent
+public import PaperP1.Analysis.ScaledCurvePieceZeros
+public import PaperP1.Analysis.ScaledMonomialPieceCount
+public import PaperP1.Analysis.ScaledPolynomialTangentTrajectory
