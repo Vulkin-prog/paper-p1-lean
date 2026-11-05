@@ -1,6 +1,8 @@
 # Formalization status
 
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
+
+Current plane bound (P1-MATH-0484): an absolute coefficient- and field-uniform C*D^5*(Nat.log2N+1)^2*N^(1/D) estimate is internally proved for every characteristic-zero field. Its growing-degree o(B) consequence covers a<1/5, real scaled boxes and arbitrary upper power caps. Full quadratic-degree/all-dimensional BCN and the original a<1/2 corollary remain unresolved.
 Neither document is fully formalized.
 
 P1-MATH-0454 isolates the remaining sharp global connected-triple joint mass on triples with three strong nonaligned pairs. All other sectors have internal41/30 bounds, and the residual has a subpower host count. Its optimal weighted bound and full main14.1/14.6 remain conditional.
@@ -93,7 +95,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is149/167 unconditional and15 conditional (164/167 completed). The project records481 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is149/167 unconditional and15 conditional (164/167 completed). The project records482 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +214,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15475 audited theorem/lemma declarations**. This
+- The project currently has **15491 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26938,3 +26940,22 @@ Only these exact numbered uses are discharged. Full T19.17 still retains its str
 P1-MATH-0483 adds three modules, fourteen theorems and no definitions. Companion T19.15 and T19.16 move from conditional to proved. Coverage becomes149 proved,15 conditional and3 in_progress out of167, with164 completed:59/73 main and90/94 companion results are proved. The project records481 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16469 jobs); direct axiom audit passed for 15475 declarations using only propext, Classical.choice and Quot.sound; all 14921 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.12 GiB.
+
+
+## Fifth-degree uniform plane count with squared logarithmic loss and growing range below one fifth
+
+The internal coefficient- and field-uniform plane count improves from C*D^6*L^3*N^(1/D) to C*D^5*L^2*N^(1/D), where L=Nat.log2(N)+1. One absolute positive constant precedes every degree D>=2, scale N>=1, characteristic-zero coefficient field and irreducible equation. Arbitrary finite populations of actual integer points are included. Its uniform growing-degree o(B) consequence now covers0<=a<1/5, arbitrary fixed positive real box scale and every upper power cap B^(a+o(1)). The full printed range a<1/2, quadratic BCN degree dependence and all-dimensional theorem remain unresolved.
+
+TruncatedAffineDegree uses b=min(D,L+1) for the vertical auxiliary basis and J=b-1. It proves2<=b, J<D and A+J<=5L for A=3L+1. The determinant argument only requires J below the original vertical degree; it does not require J=D-1. If b=D the original prime-root condition applies. Otherwise log((D+1)N)<=3L gives the bounded root exp(3), so one fixed absolute prime threshold suffices. This removes the avoidable extra degree factor in the auxiliary intersection budget without altering any Bezout count.
+
+EfficientDegreePrimeScale chooses the actual prime scale before its avoidance multiplicity, paying the height budget in logarithms. A single absolute K gives P<=K*D^3*L*N^(1/D). The natural multiplicity m=ceil(65*D^3*logN/logP) is positive, satisfies m*logP<=P and gives N^(64D^3)<P^m. The strict inequality uses65 versus64, retaining the original interpolation and bad-integer height budgets. The fixed elementary bound logP<=P/2 pays the rounding allowance. Prime supply, averaging, height avoidance and determinant hypotheses are all internally supplied; no new prime-distribution input is assumed.
+
+FifthDegreeUniformAffineCount combines this prime scale with the truncated auxiliary basis and the existing exact finite smooth-class and averaged-prime counts. The principal product is bounded by640*K*D^5*L^2*N^(1/D); the fixed exceptional integer points are absorbed separately. FifthDegreeUniformPlaneCount supplies coefficient compression only after the actual bounded shear, leaving original coefficients unrestricted. FifthDegreeUniformFieldCount transports through rational presentations, nongeometric point bounds and scalar descent to every characteristic-zero field, including D>N and arbitrary finite point populations. No complex embedding of the original coefficient field is used.
+
+FifthGrowingDegreePlaneCount proves the new uniform power cap, real scaled cutoff and general growing cap below1/5. Its threshold precedes every degree, coefficient field and equation. This proves the o(B) portion on that explicit subrange; it does not prove the printed quadratic-degree quantitative display or the full a<1/2 assertion of main13.5. The complete statement and proof at main_sections/pair_rigidity.tex lines228-255 were rechecked. Existing sixth-degree declarations remain preserved as historical weaker estimates.
+
+Companion T19.15/T19.16 remain fully internally proved at checkpoint483. Full T19.17 retains its stronger almost-all short-window census and1-o(1) coefficient. General geometric cover properties, full quadratic-degree BCN, sharp growing-rank conclusions and optimal strong-triangle weights retain their separate unresolved scopes.
+
+P1-MATH-0484 adds six modules, sixteen theorems and two definitions. No complete numbered statement is promoted. Coverage remains149 proved,15 conditional and3 in_progress out of167, with164 completed. The project records482 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16481 jobs); direct axiom audit passed for 15491 declarations using only propext, Classical.choice and Quot.sound; all 14939 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.09 GiB.

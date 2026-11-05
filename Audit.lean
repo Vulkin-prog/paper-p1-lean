@@ -3119,6 +3119,8 @@ import PaperP1
 #print axioms PaperP1.SquareRootReciprocalUpper.small_pivot_bound
 #print axioms PaperP1.SquareRootReciprocalUpper.finite_upper
 #print axioms PaperP1.SquareRootReciprocalUpper.uniform_upper
+#print axioms PaperP1.TruncatedAffineDegree.budget
+#print axioms PaperP1.TruncatedAffineDegree.prime_scale
 #print axioms PaperP1.UniformSaddleVariation.uniform_left_variation
 #print axioms PaperP1.VerticalGridLattice.center_identity
 #print axioms PaperP1.VerticalGridLattice.point_box
@@ -4184,6 +4186,8 @@ import PaperP1
 #print axioms PaperP1.EffectiveWindowLists.even_space_selection
 #print axioms PaperP1.EffectiveWindowLists.lift_selection
 #print axioms PaperP1.EffectiveWindowLists.subset_window_lists
+#print axioms PaperP1.EfficientDegreePrimeScale.log_le_half
+#print axioms PaperP1.EfficientDegreePrimeScale.exists_scale
 #print axioms PaperP1.EndpointAlignedTriplePool.parameters_card
 #print axioms PaperP1.EndpointAlignedTriplePool.radius_budget
 #print axioms PaperP1.EndpointAlignedTriplePool.pool_card
@@ -4318,6 +4322,14 @@ import PaperP1
 #print axioms PaperP1.FieldConicCount.finite_population_count
 #print axioms PaperP1.FieldConicCount.real_height_count
 #print axioms PaperP1.FieldConicCount.uniform_sublinear
+#print axioms PaperP1.FifthDegreeUniformFieldCount.degree_square_le_profile
+#print axioms PaperP1.FifthDegreeUniformFieldCount.rational_geometric_count
+#print axioms PaperP1.FifthDegreeUniformFieldCount.rational_count
+#print axioms PaperP1.FifthDegreeUniformFieldCount.field_count
+#print axioms PaperP1.FifthDegreeUniformFieldCount.global_field_count
+#print axioms PaperP1.FifthDegreeUniformFieldCount.finite_field_count
+#print axioms PaperP1.FifthDegreeUniformPlaneCount.uniform_geometric_count
+#print axioms PaperP1.FifthDegreeUniformPlaneCount.grid_geometric_count
 #print axioms PaperP1.FiniteBlockAppend.biUnion_append
 #print axioms PaperP1.FiniteBlockAppend.append_all
 #print axioms PaperP1.FiniteChannelHierarchy.weight_formula
@@ -8010,6 +8022,9 @@ import PaperP1
 #print axioms PaperP1.ExposureAssignmentBudget.uniform_fresh_assignment_budget
 #print axioms PaperP1.FactorialLogBounds.log_factorial_bounds
 #print axioms PaperP1.FactorialLogBounds.log_factorial_error
+#print axioms PaperP1.FifthGrowingDegreePlaneCount.power_cap
+#print axioms PaperP1.FifthGrowingDegreePlaneCount.scaled_power_cap
+#print axioms PaperP1.FifthGrowingDegreePlaneCount.growing_cap
 #print axioms PaperP1.FineOrdinaryReciprocalLower.ceil_exponential_bounds
 #print axioms PaperP1.FineOrdinaryReciprocalLower.uniform_lower
 #print axioms PaperP1.FineOrdinaryReciprocalLower.lowerInput
@@ -11202,6 +11217,7 @@ import PaperP1
 #print axioms PaperP1.DisjointEquationGraphBound.integral_point
 #print axioms PaperP1.DisjointEquationGraphDescent.integral_point
 #print axioms PaperP1.DisjointRationalSquareGraphBound.integral_point
+#print axioms PaperP1.FifthDegreeUniformAffineCount.uniform_count
 #print axioms PaperP1.FiniteFieldPlaneZeroBound.multivariate_card
 #print axioms PaperP1.FiniteFieldPlaneZeroBound.plane_card
 #print axioms PaperP1.FiniteFieldPlaneZeroBound.coefficient_map_degree_le

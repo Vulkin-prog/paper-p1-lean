@@ -3949,3 +3949,9 @@ public import PaperP1.Arithmetic.SmoothQuotientGeometry
 public import PaperP1.Analysis.SmoothBarrierSaddleScale
 public import PaperP1.Asymptotics.FineOrdinaryReciprocalLower
 public import PaperP1.Asymptotics.FineSaddleTheorems
+public import PaperP1.Analysis.TruncatedAffineDegree
+public import PaperP1.Arithmetic.EfficientDegreePrimeScale
+public import PaperP1.Arithmetic.FifthDegreeUniformFieldCount
+public import PaperP1.Arithmetic.FifthDegreeUniformPlaneCount
+public import PaperP1.Asymptotics.FifthGrowingDegreePlaneCount
+public import PaperP1.Diophantine.FifthDegreeUniformAffineCount
