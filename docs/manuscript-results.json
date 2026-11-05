@@ -37850,7 +37850,8 @@
             "PaperP1.OrdinaryReciprocalPrimeLowerInput.eipInput_iff_lower"
           ]
         }
-      ]
+      ],
+      "validation_commit": "b87dfbc1fe07187cde46f5bac9761390d12a0202"
     },
     {
       "label": "p1:limits:private-exact",
@@ -38879,7 +38880,8 @@
           ],
           "checkpoint": "P1-MATH-0478"
         }
-      ]
+      ],
+      "validation_commit": "b87dfbc1fe07187cde46f5bac9761390d12a0202"
     },
     {
       "label": "p1:limits:all-anchors",
