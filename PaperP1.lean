@@ -3709,3 +3709,10 @@ public import PaperP1.Asymptotics.SharpCompatibleActivity
 public import PaperP1.Asymptotics.SharpConnectedSeedCatalog
 public import PaperP1.Asymptotics.SharpIncompatibleActivity
 public import PaperP1.Asymptotics.UnconditionalTripleControlledActivity
+public import PaperP1.Asymptotics.ConnectedTail
+public import PaperP1.Asymptotics.FiniteCompleteLawTransfer
+public import PaperP1.Asymptotics.FiniteConnectedClosure
+public import PaperP1.Asymptotics.NoSingletonJointMass
+public import PaperP1.Asymptotics.SmallCoreJointMass
+public import PaperP1.Asymptotics.SmallCorePairMass
+public import PaperP1.Asymptotics.SmallCoreSourceMass

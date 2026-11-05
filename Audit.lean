@@ -7120,6 +7120,8 @@ import PaperP1
 #print axioms PaperP1.ConnectedReductionToTriplesUnderInputs.article_15_10
 #print axioms PaperP1.ConnectedSeedCatalog.uniform_mass
 #print axioms PaperP1.ConnectedSeedCatalogUnderInputs.uniform_mass
+#print axioms PaperP1.ConnectedTail.uniform_tail
+#print axioms PaperP1.ConnectedTail.article_15_12
 #print axioms PaperP1.ConnectedTailUnderInputs.uniform_tail
 #print axioms PaperP1.ConnectedTailUnderInputs.article_15_12
 #print axioms PaperP1.ConnectedTripleLowCrossing.uniform_bound
@@ -7685,6 +7687,8 @@ import PaperP1
 #print axioms PaperP1.FiniteChannelHierarchyBounds.uniform_small
 #print axioms PaperP1.FiniteChannelHierarchyBounds.nominal_bounds
 #print axioms PaperP1.FiniteChannelTripleTheoremUnderInputs.companion_T2_8
+#print axioms PaperP1.FiniteCompleteLawTransfer.uniform_bound
+#print axioms PaperP1.FiniteCompleteLawTransfer.article_15_13
 #print axioms PaperP1.FiniteCompleteLawTransferUnderInputs.uniform_bound
 #print axioms PaperP1.FiniteCompleteLawTransferUnderInputs.article_15_13
 #print axioms PaperP1.FiniteCompressedInteriorMass.uniform_channel
@@ -7692,6 +7696,7 @@ import PaperP1
 #print axioms PaperP1.FiniteCompressedInteriorMass.uniform_mass
 #print axioms PaperP1.FiniteConnectedActivity254.uniform_weighted
 #print axioms PaperP1.FiniteConnectedActivity254.uniform_primitives
+#print axioms PaperP1.FiniteConnectedClosure.uniform_bounds
 #print axioms PaperP1.FiniteConnectedClosureUnderInputs.uniform_bounds
 #print axioms PaperP1.FiniteGoodPartition.choose_height
 #print axioms PaperP1.FiniteGoodPartition.uniform_exceptional
@@ -8415,6 +8420,8 @@ import PaperP1
 #print axioms PaperP1.NearPrimitiveTripleMassUnderBCN.rank_bound
 #print axioms PaperP1.NearPrimitiveTripleMassUnderBCN.uniform_mass
 #print axioms PaperP1.NearPrimitiveTripleMassUnderBCN.main_12_1
+#print axioms PaperP1.NoSingletonJointMass.uniform_range
+#print axioms PaperP1.NoSingletonJointMass.uniform_weighted
 #print axioms PaperP1.NoSingletonJointMassUnderInputs.uniform_range
 #print axioms PaperP1.NoSingletonJointMassUnderInputs.uniform_weighted
 #print axioms PaperP1.NominalMarginalBias.uniform_bound
@@ -9254,10 +9261,16 @@ import PaperP1
 #print axioms PaperP1.SlowGrowingPlaneDegreeCap.exists_cap
 #print axioms PaperP1.SmallCoreDeficitReduction.uniform_source
 #print axioms PaperP1.SmallCoreDeficitReduction.growing_range_reduction
+#print axioms PaperP1.SmallCoreJointMass.uniform_mass
+#print axioms PaperP1.SmallCoreJointMass.uniform_source
 #print axioms PaperP1.SmallCoreJointMassUnderInputs.uniform_mass
 #print axioms PaperP1.SmallCoreJointMassUnderInputs.uniform_source
+#print axioms PaperP1.SmallCorePairMass.uniform_pair_source
+#print axioms PaperP1.SmallCorePairMass.uniform_pair_families
 #print axioms PaperP1.SmallCorePairMassUnderInputs.uniform_pair_source
 #print axioms PaperP1.SmallCorePairMassUnderInputs.uniform_pair_families
+#print axioms PaperP1.SmallCoreSourceMass.uniform_source
+#print axioms PaperP1.SmallCoreSourceMass.uniform_families
 #print axioms PaperP1.SmallCoreSourceMassUnderInputs.uniform_source
 #print axioms PaperP1.SmallCoreSourceMassUnderInputs.uniform_families
 #print axioms PaperP1.SmallKernelBlockCount.logarithmic_blocks

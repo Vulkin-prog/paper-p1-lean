@@ -21843,6 +21843,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "ecdae4b97257315c61197c17b44ca991ffb8fb4e"
+    },
+    {
+      "id": "P1-MATH-0433",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:uniform-tail",
+        "number": "15.12",
+        "page": 47,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 776,
+        "statement_sha256": "6bb3d1cfe69419dcebe52240716af3886d4eb7f3b4a0f8dd9b3eed81c7e552bd"
+      },
+      "original_assumption": "The connected tail15.12 and finite-transfer implication15.13 retained finite geometric inputs for small cores, pair deficits, pair activity and reference conversion.",
+      "finding": "Internal bounded-order actual joint mass and the sharp all-cardinality pair deficit close every small-core branch. Uniform certificate tails and the exact stopped expansion then prove both original numbered statements without extra inputs; the254 hypotheses intrinsic to15.13 remain explicit.",
+      "proposed_revision": "Use the internally proved small-core source masses and uniform tail, then state the finite transfer as an exact implication retaining precisely its254 original activity premises. Distinguish a proved implication from a numerical optimal-law bound.",
+      "impact": "Main15.12 and15.13 become unconditional in their original scopes. The connected tail has stronger exponent83/60; no optimal numerical law bound is claimed without the source finite-order premises. Coverage becomes118 proved,46 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.ConnectedTail.uniform_tail",
+        "PaperP1.ConnectedTail.article_15_12",
+        "PaperP1.FiniteCompleteLawTransfer.uniform_bound",
+        "PaperP1.FiniteCompleteLawTransfer.article_15_13",
+        "PaperP1.FiniteConnectedClosure.uniform_bounds",
+        "PaperP1.NoSingletonJointMass.uniform_range",
+        "PaperP1.NoSingletonJointMass.uniform_weighted",
+        "PaperP1.SmallCoreJointMass.uniform_mass",
+        "PaperP1.SmallCoreJointMass.uniform_source",
+        "PaperP1.SmallCorePairMass.uniform_pair_source",
+        "PaperP1.SmallCorePairMass.uniform_pair_families",
+        "PaperP1.SmallCoreSourceMass.uniform_source",
+        "PaperP1.SmallCoreSourceMass.uniform_families"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16003 jobs); direct axiom audit passed for 14869 declarations using only propext, Classical.choice and Quot.sound; all 14227 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.25 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
