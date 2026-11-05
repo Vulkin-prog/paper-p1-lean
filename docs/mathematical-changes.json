@@ -20955,6 +20955,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "3f83b962d0b3c8d11bba327ec8c306ca62bb15d5"
+    },
+    {
+      "id": "P1-MATH-0409",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:arith:hosts",
+        "number": "3.2",
+        "page": 15,
+        "source": "main_sections/arithmetic.tex",
+        "line": 98,
+        "statement_sha256": "65da7e8acfacc0a5bc2c351934c0e44e09d3fc6068a8862c300b6eeaeee8c5fe"
+      },
+      "original_assumption": "The source support count was internal, but the weighted sum2^rho-1 still used unproved source/ordinary surface covers and normalized curve counts through its dense graph sector.",
+      "finding": "Actual dense-intersection confinement and exact local-defect accounting prove the full arithmetic residual<=N^(1+epsilon) unconditionally, including deficient and incompatible windows, and complete both assertions of main3.2.",
+      "proposed_revision": "Replace the geometric weighted-residual dependency with the unconditional dense-intersection split and improve the main3.2 exponent6/5+epsilon to1+epsilon. Keep general geometric properties listed separately where they are still needed.",
+      "impact": "Main3.2 moves from conditional to proved:98 proved,66 conditional,3 in_progress out of167. The weighted source rank is retained literally, enabling further pair-profile consequences without a global geometric discharge.",
+      "evidence": [
+        "PaperP1.NonalignedSourceResidual.uniform_weighted_hosts",
+        "PaperP1.NonalignedSourceResidual.uniform_source_bounds",
+        "PaperP1.NonalignedSourceResidual.article_3_2",
+        "PaperP1.CriticalPairLossComparison.finite_bound",
+        "PaperP1.CriticalPairLossComparison.uniform_bound",
+        "PaperP1.NonalignedSourceResidual.separatedNonalignedPairs"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15779 jobs); direct axiom audit passed for 14637 declarations using only propext, Classical.choice and Quot.sound; all 13980 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.06 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

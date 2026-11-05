@@ -3602,3 +3602,5 @@ public import PaperP1.Asymptotics.PointwiseNominalRankWeightCap
 public import PaperP1.Asymptotics.StrongNoExactPairMass
 public import PaperP1.Asymptotics.StrongNonalignedSourceProfile
 public import PaperP1.Asymptotics.StrongNonalignedTripleProfile
+public import PaperP1.Asymptotics.NonalignedSourceResidual
+public import PaperP1.Model.CriticalPairLossComparison

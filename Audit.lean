@@ -8279,6 +8279,9 @@ import PaperP1
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.uniform_pair_probability
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.uniform_family_probability
 #print axioms PaperP1.NonalignedPairActivityUnderInputs.uniform_activity
+#print axioms PaperP1.NonalignedSourceResidual.uniform_weighted_hosts
+#print axioms PaperP1.NonalignedSourceResidual.uniform_source_bounds
+#print axioms PaperP1.NonalignedSourceResidual.article_3_2
 #print axioms PaperP1.NonalignedSourceResidualUnderInputs.uniform_weighted_hosts
 #print axioms PaperP1.NonalignedSourceResidualUnderInputs.uniform_source_bounds
 #print axioms PaperP1.NonalignedSourceResidualUnderInputs.article_3_2
@@ -11404,6 +11407,8 @@ import PaperP1
 #print axioms PaperP1.CountVariance.count_memLp_two
 #print axioms PaperP1.CountVariance.variance_count
 #print axioms PaperP1.CountVariance.second_cumulant_variance
+#print axioms PaperP1.CriticalPairLossComparison.finite_bound
+#print axioms PaperP1.CriticalPairLossComparison.uniform_bound
 #print axioms PaperP1.CrossingPairTriple.connected_of_participation
 #print axioms PaperP1.CrossingPairTriple.pair_extension
 #print axioms PaperP1.CrossingPairTriple.connected_positive

@@ -1,6 +1,6 @@
 # External mathematical inputs
 
-Current update P1-MATH-0408: main12.1,12.2 and companion T8.1,T8.2,T8.3 have unconditional canonical proofs. Their only former BCN use was fixed-degree plane counting, proved internally at checkpoint401. Full growing-degree/all-dimensional BCN, source and ordinary surface covers, normalized higher-dimensional curve counts and other explicit inputs remain open. No global discharge of these properties is claimed.
+Current update P1-MATH-0409: main3.2,12.1,12.2 and companion T8.1,T8.2,T8.3 have unconditional canonical proofs. The literal weighted source residual of main3.2 bypasses its former geometric route using dense-intersection confinement and exact local-defect accounting. Their only former BCN use was fixed-degree plane counting, proved internally at checkpoint401. Full growing-degree/all-dimensional BCN, source and ordinary surface covers, normalized higher-dimensional curve counts and other explicit inputs remain open. No global discharge of these properties is claimed.
 
 Historical update P1-MATH-0369: the plane BCN property is reduced to `SmallHeightGeometricPlanePointInput.Input`, an explicit unproved controlled-height integer geometric counting property. All coefficient-field, denominator and coefficient-height translations are internally proved. The complete geometric Heath-Brown biform input is already proved, and companion T1.4,T1.5,T1.13 are unconditional. The original all-dimensional main13.4 remains open.
 
@@ -25870,3 +25870,20 @@ The original main statements in main_sections/confinement.tex lines37-65 and com
 P1-MATH-0408 adds six modules and eleven theorems. Main12.1 and12.2 move from conditional to proved. Coverage becomes97 proved and67 conditional out of167, with164 completed and three in_progress. The ledger records406 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15775 jobs); direct axiom audit passed for 14632 declarations using only propext, Classical.choice and Quot.sound; all 13974 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.08 GiB.
+
+
+## Unconditional full source-rank residual with an improved exponent
+
+Stable ID: p1:internal:unconditional-nonaligned-source-residual. The actual source residual bypasses the former geometric route. Neither arbitrary surface covers nor normalized curve counts are proved as general properties.
+
+NonalignedSourceResidual proves the full literal arithmetic weighted residual without any unproved surface, curve or BCN argument. For every fixed epsilon>0 and critical-band width C, one threshold precedes N,L and every actual finite dyadic nonaligned pair population F. The sum over F of2^pairLoss-1 is at most N^(1+epsilon). The exponent improves the printed6/5+epsilon and the same bound includes contacts, equal-centre candidates, all local deficiencies and affine-incompatible or zero-probability pairs whenever the stated nonalignment predicate admits them. No compatibility or actual probability weight is substituted for the source rank.
+
+CriticalPairLossComparison first proves that the full source deficit pairLoss=2L-rank(Sx+Sy) is at most the actual intersection dimension plus2, and at most L+2, uniformly in the critical band. Each local even relation space has dimension at most1 by the internally proved critical local-rigidity theorem. The exact subspace dimension identity supplies both comparisons; incompatible windows retain their algebraic ranks.
+
+The positive-loss population is split by actual intersection dimension. The large-intersection part has at most N^(epsilon/4) hosts by the unconditional dense-pair confinement from checkpoint407, and its full arithmetic weight is at most4*2^L. The remaining positive-loss population has at most N^(1+epsilon/4) hosts by the already proved support count, while its complete source weight is at most N^(epsilon/4) after logarithmic parameter absorption. Combining the two actual finite populations and absorbing the fixed critical-band factor gives the claimed N^(1+epsilon), with no enumerated subspace or hypothetical geometric cover.
+
+The canonical uniform_source_bounds bundles the separated support count and weighted residual at the improved exponent1+epsilon. article_3_2 gives both literal printed6/5+epsilon bounds. Main3.2 and its source definition of rho in main_sections/arithmetic.tex lines98-109 were rechecked before promotion. This bypasses the former geometric route for this residual; it does not prove the general surface-cover or normalized curve-count properties used elsewhere. Full growing-degree BCN also remains open.
+
+P1-MATH-0409 adds two modules, five theorems and one definition. Main3.2 moves from conditional to proved. Coverage becomes98 proved and66 conditional out of167, with164 completed and three in_progress. The ledger records407 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15779 jobs); direct axiom audit passed for 14637 declarations using only propext, Classical.choice and Quot.sound; all 13980 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.06 GiB.
