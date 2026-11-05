@@ -4067,3 +4067,7 @@ public import PaperP1.Analysis.TaylorEvaluationData
 public import PaperP1.Analysis.MonomialUnitJetBounds
 public import PaperP1.Analysis.UnitJetProductBounds
 public import PaperP1.Analysis.UnitMonomialEvaluationDeterminant
+public import PaperP1.Analysis.GridCurveMinorVanishing
+public import PaperP1.Analysis.ShortIntervalGridInterpolation
+public import PaperP1.Analysis.ShortIntervalGridPointCount
+public import PaperP1.Diophantine.CommonGridMonomialDeterminant

@@ -25471,6 +25471,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "849319bfc8c49b15e415a0fb5c454ec86a292ace"
+    },
+    {
+      "id": "P1-MATH-0523",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The analytic monomial determinant estimate had not been connected to actual grid integrality or a constructed nonzero auxiliary polynomial and local point count.",
+      "finding": "Exact denominator clearing and integer separation force actual grid minors to vanish; a genuine auxiliary polynomial then yields the strict local population bound on internally constructed curve maps.",
+      "proposed_revision": "Use the internally proved actual grid minor, interpolation and local point-count statements, retaining the explicit numerical interval-size condition until a quantitative cover is constructed.",
+      "impact": "Closes arithmetic separation, actual auxiliary interpolation and local point counts. Quantitative interval choices and global curve/component coverage remain separate.",
+      "evidence": [
+        "PaperP1.GridCurveMinorVanishing.vanishing",
+        "PaperP1.ShortIntervalGridInterpolation.exists_polynomial",
+        "PaperP1.ShortIntervalGridPointCount.point_count",
+        "PaperP1.ShortIntervalGridPointCount.exists_local_counting_map",
+        "PaperP1.CommonGridMonomialDeterminant.weight_bound",
+        "PaperP1.CommonGridMonomialDeterminant.entry_clearing",
+        "PaperP1.CommonGridMonomialDeterminant.determinant_clearing",
+        "PaperP1.CommonGridMonomialDeterminant.zero_of_small",
+        "PaperP1.GridCurveMinorVanishing.analyticBudget",
+        "PaperP1.CommonGridMonomialDeterminant.weight",
+        "PaperP1.CommonGridMonomialDeterminant.integerMatrix",
+        "PaperP1.CommonGridMonomialDeterminant.normalizedMatrix"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16759 jobs); direct axiom audit passed for 15883 declarations using only propext, Classical.choice and Quot.sound; all 15424 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.86 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

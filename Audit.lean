@@ -2873,6 +2873,7 @@ import PaperP1
 #print axioms PaperP1.GraphTangentSmooth.contDiffAt_velocity
 #print axioms PaperP1.GraphTangentSmooth.velocity_contDiffOn
 #print axioms PaperP1.GraphTangentSmooth.contDiffOn_trajectory
+#print axioms PaperP1.GridCurveMinorVanishing.vanishing
 #print axioms PaperP1.HardSaddleExplicitScale.tendsto_logCore_atTop
 #print axioms PaperP1.HardSaddleExplicitScale.finite_normalized_gap
 #print axioms PaperP1.HardSaddleExplicitScale.tendsto_hard_saddle_gap
@@ -3349,6 +3350,9 @@ import PaperP1
 #print axioms PaperP1.ShortBasisParameters.residual_bound
 #print axioms PaperP1.ShortBasisParameters.logarithmic_threshold
 #print axioms PaperP1.ShortCenteredAffineSegment.exists_segment
+#print axioms PaperP1.ShortIntervalGridInterpolation.exists_polynomial
+#print axioms PaperP1.ShortIntervalGridPointCount.point_count
+#print axioms PaperP1.ShortIntervalGridPointCount.exists_local_counting_map
 #print axioms PaperP1.SmallRecoveryParameter.power_order
 #print axioms PaperP1.SmallRecoveryParameter.exists_small
 #print axioms PaperP1.SmallRecoveryParameter.exists_relative_cost
@@ -11591,6 +11595,10 @@ import PaperP1
 #print axioms PaperP1.BivariateGridCount.homogeneous_level_grid_bound
 #print axioms PaperP1.BivariateGridCount.homogeneous_grid_degree_bound
 #print axioms PaperP1.BivariateGridCount.homogeneous_integer_box_bound
+#print axioms PaperP1.CommonGridMonomialDeterminant.weight_bound
+#print axioms PaperP1.CommonGridMonomialDeterminant.entry_clearing
+#print axioms PaperP1.CommonGridMonomialDeterminant.determinant_clearing
+#print axioms PaperP1.CommonGridMonomialDeterminant.zero_of_small
 #print axioms PaperP1.CurveCommonQuotientBound.integral_point
 #print axioms PaperP1.CurveCoverGraphBound.integral_point
 #print axioms PaperP1.CurveCoverNonalignedBound.integral_point
