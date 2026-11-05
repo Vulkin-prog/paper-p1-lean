@@ -2173,6 +2173,8 @@ import PaperP1
 #print axioms PaperP1.WeightedOrdinarySubstitution.map_homogeneous
 #print axioms PaperP1.WeightedOrdinarySubstitution.ordinaryRelation_homogeneous
 #print axioms PaperP1.WeightedOrdinarySubstitution.map_relation
+#print axioms PaperP1.WeightedPolynomialDeterminantDegree.product_degree
+#print axioms PaperP1.WeightedPolynomialDeterminantDegree.determinant_degree
 #print axioms PaperP1.WeightedPolynomialQuotientGrading.component_mk
 #print axioms PaperP1.WeightedPolynomialQuotientGrading.component_mem
 #print axioms PaperP1.WeightedPolynomialQuotientGrading.component_piece

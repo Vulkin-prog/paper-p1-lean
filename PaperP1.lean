@@ -3493,3 +3493,4 @@ public import PaperP1.Algebra.BivariateIrreducibleHomogenization
 public import PaperP1.Algebra.ComplexProjectiveIrreducibility
 public import PaperP1.Asymptotics.CompanionKernelCountsUnderHeathBrown
 public import PaperP1.Asymptotics.SharpProfilesUnderHeathBrown
+public import PaperP1.Algebra.WeightedPolynomialDeterminantDegree

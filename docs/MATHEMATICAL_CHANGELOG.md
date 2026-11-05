@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**330 mathematical improvements and two statement-scope corrections are confirmed.**
+**331 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23776,3 +23776,14 @@ These declarations directly instantiate the existing checked31/24 proofs with Co
 P1-MATH-0332 makes the discharged non-geometric premise visible directly in both revised profile theorem types. Coverage stays89 proved and75 conditional out of167 (164 completed). There are330 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Main13.4 and the recorded geometric inputs remain open. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15551 jobs); direct axiom audit passed for 14161 declarations using only propext, Classical.choice and Quot.sound; all 13431 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.45 GiB.
+
+
+## Shifted polynomial determinant degree without domain assumptions
+
+WeightedPolynomialDeterminantDegree.product_degree and determinant_degree prove a sharp shifted degree budget over every commutative coefficient ring. An entry in row i and column j only has to satisfy natDegree(entry)+r(i)<=c(j) when it is nonzero. If sum(c)<=T+sum(r), the determinant has degree at most T. Row and column shifts are integers, and the final degree bound is natural. The proof handles zero products explicitly and uses the signed permutation expansion, so neither a domain assumption nor a nonvanishing determinant hypothesis is required.
+
+This is preparatory algebra for the degree-uniform intersection count needed in main13.4. It is designed to retain the Sylvester row and column offsets that are lost in the existing coarse maximum-entry bound. No resultant, finite Bezout bound, geometric point-count theorem or BCN input is claimed from this lemma alone. In particular, main13.4 remains in progress; the geometric Heath-Brown input and all other recorded unproved inputs remain open.
+
+P1-MATH-0333 adds two checked algebraic lemmas. Baseline coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records331 improvements and two statement-scope corrections. No new dependency, unproved input, axiom, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15553 jobs); direct axiom audit passed for 14163 declarations using only propext, Classical.choice and Quot.sound; all 13433 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.44 GiB.

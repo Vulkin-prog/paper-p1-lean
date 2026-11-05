@@ -3725,13 +3725,27 @@
       "sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96",
       "status": "in_progress",
       "lean_declarations": [
-        "PaperP1.PlaneCurvePointCount.UniformBound"
+        "PaperP1.PlaneCurvePointCount.UniformBound",
+        "PaperP1.WeightedPolynomialDeterminantDegree.product_degree",
+        "PaperP1.WeightedPolynomialDeterminantDegree.determinant_degree"
       ],
       "literature_inputs": [
-        "P1-GEO-BCN-PLANE-UNIFORM"
+        "P1-GEO-BCN-PLANE-UNIFORM",
+        "p1:internal:weighted-polynomial-determinant-degree"
       ],
-      "mathematical_changes": [],
-      "notes": "Primary author version arXiv2302.04209v2, dated20September2023, Theorem2 equation(27), page7, has been inspected. It states the required degree-uniform integer-point bound for integral curves over K contained in C, with c(n) and an absolute logarithmic exponent. UniformBound is only a named explicit plane-polynomial input to separate conditional theorems; it is NOT a Lean proof of BCN. The general-variety statement, its geometric plane-polynomial specialization and the external theorem proof remain unformalized. No global axiom and no completed numbered coverage."
+      "mathematical_changes": [
+        "P1-MATH-0333"
+      ],
+      "notes": "WeightedPolynomialDeterminantDegree.product_degree and determinant_degree prove a sharp shifted degree budget over every commutative coefficient ring. An entry in row i and column j only has to satisfy natDegree(entry)+r(i)<=c(j) when it is nonzero. If sum(c)<=T+sum(r), the determinant has degree at most T. Row and column shifts are integers, and the final degree bound is natural. The proof handles zero products explicitly and uses the signed permutation expansion, so neither a domain assumption nor a nonvanishing determinant hypothesis is required.\n\nThis is preparatory algebra for the degree-uniform intersection count needed in main13.4. It is designed to retain the Sylvester row and column offsets that are lost in the existing coarse maximum-entry bound. No resultant, finite Bezout bound, geometric point-count theorem or BCN input is claimed from this lemma alone. In particular, main13.4 remains in progress; the geometric Heath-Brown input and all other recorded unproved inputs remain open.\n\nP1-MATH-0333 adds two checked algebraic lemmas. Baseline coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records331 improvements and two statement-scope corrections. No new dependency, unproved input, axiom, compiler change or original manuscript edit is introduced. Palomar remains deferred.\n\nEarlier checkpoint history:\nPrimary author version arXiv2302.04209v2, dated20September2023, Theorem2 equation(27), page7, has been inspected. It states the required degree-uniform integer-point bound for integral curves over K contained in C, with c(n) and an absolute logarithmic exponent. UniformBound is only a named explicit plane-polynomial input to separate conditional theorems; it is NOT a Lean proof of BCN. The general-variety statement, its geometric plane-polynomial specialization and the external theorem proof remain unformalized. No global axiom and no completed numbered coverage.",
+      "validation_history": [
+        {
+          "status": "in_progress",
+          "literature_inputs": [
+            "P1-GEO-BCN-PLANE-UNIFORM"
+          ]
+        }
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15553 jobs); direct axiom audit passed for 14163 declarations using only propext, Classical.choice and Quot.sound; all 13433 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.44 GiB."
     },
     {
       "label": "p13:rig:sublinear-grid",
