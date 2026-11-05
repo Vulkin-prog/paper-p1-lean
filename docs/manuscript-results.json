@@ -6711,7 +6711,8 @@
             "PaperP1.NonalignedRankTheorem.article_13_6"
           ]
         }
-      ]
+      ],
+      "validation_commit": "ed9c856f115c593cd2b40a1fece9d7cfbb327da1"
     },
     {
       "label": "p13:rig:aligned",
