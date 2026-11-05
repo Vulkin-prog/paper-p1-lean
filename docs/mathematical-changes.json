@@ -20837,6 +20837,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "5f26982dc585f50bbd4e69c24185c8b56e886396"
+    },
+    {
+      "id": "P1-MATH-0406",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The normalized equation had an explicit height bound, but the complete obstruction factor and the logarithmic auxiliary and avoidance choices still needed quantitative verification uniform in D.",
+      "finding": "The full obstruction is<=N^(64*D^3); m=64*D^3*(log2 N+1)+1 gives strict avoidance for every P>=2, while A=3*(log2 N+1)+1 meets the determinant logarithm requirement with explicit degree bounds.",
+      "proposed_revision": "Use these checked logarithmic parameters in a quantitative global affine argument, keeping the domain2<=D<=N and the polynomial degree losses explicit.",
+      "impact": "Discharges the height and logarithmic parameter inequalities without additional analytic or arithmetic premises. The final weak global count and the original sharp BCN theorem remain separate obligations.",
+      "evidence": [
+        "PaperP1.DegreeUniformAffineParameters.box_le_cubic",
+        "PaperP1.DegreeUniformAffineParameters.obstruction_nat",
+        "PaperP1.DegreeUniformAffineParameters.obstruction_real",
+        "PaperP1.DegreeUniformAffineParameters.binary_upper",
+        "PaperP1.DegreeUniformAffineParameters.log_le_budget",
+        "PaperP1.DegreeUniformAffineParameters.obstruction_lt_prime_power",
+        "PaperP1.DegreeUniformAffineParameters.avoidance_le",
+        "PaperP1.DegreeUniformAffineParameters.auxiliary_budget",
+        "PaperP1.DegreeUniformAffineParameters.logarithmicBudget",
+        "PaperP1.DegreeUniformAffineParameters.avoidanceCount",
+        "PaperP1.DegreeUniformAffineParameters.auxiliaryDegree"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15751 jobs); direct axiom audit passed for 14606 declarations using only propext, Classical.choice and Quot.sound; all 13948 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.15 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

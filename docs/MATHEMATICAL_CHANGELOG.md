@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**403 mathematical improvements and two statement-scope corrections are confirmed.**
+**404 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24759,3 +24759,16 @@ This resolves a quantitative normalization obligation needed to combine the abso
 P1-MATH-0405 adds one module and four theorems. Coverage stays93 proved and71 conditional out of167, with164 completed and three in_progress. The ledger records403 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15749 jobs); direct axiom audit passed for 14598 declarations using only propext, Classical.choice and Quot.sound; all 13937 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.17 GiB.
+
+
+## Explicit logarithmic and obstruction budgets for growing degrees
+
+DegreeUniformAffineParameters proves concrete parameters for the forthcoming weaker degree-uniform affine bound. For 2<=D<=N, the sheared box height (D+1)*N is at most N^3. If an equation has first partial degree at most D, second partial degree D and height at most N^(32*D^3), its entire denominator-and-derivative obstruction bound is at most N^(64*D^3). Both natural-number and real-valued versions are checked, including every coefficient and box-height factor.
+
+With L=Nat.log2(N)+1, the actual binary inequality N<2^L and log N<=L are proved. The avoidance count m=64*D^3*L+1 makes N^(64*D^3)<P^m for every P>=2, and satisfies m<=128*D^3*L. The chosen auxiliary degree A=3*L+1 is positive, satisfies log((D+1)*N)<=A+1 and has A+(D-1)<=4*D*L. The logarithmic comparison needed by the absolute determinant scale is therefore internally supplied.
+
+The obstruction estimate is a bound for the complete expression used in PolynomialPrimeAffineCount.uniform_bound, rather than a property assumed for the actual point population. It combines with the actual post-shear interpolation presentation from checkpoint405. No prime supply, derivative avoidance or height normalization remains hidden in these parameter lemmas. A chosen prime scale and the final global estimate are still required.
+
+This is preparatory work toward a weaker polynomial dependence on D. It does not prove the D^2 logarithmic BCN bound, the original full growing-degree corollary or the sharp half-window rank consequence. P1-MATH-0406 adds one module, eight theorems and three definitions. Coverage stays93 proved and71 conditional out of167, with164 completed and three in_progress. The ledger records404 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15751 jobs); direct axiom audit passed for 14606 declarations using only propext, Classical.choice and Quot.sound; all 13948 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.15 GiB.

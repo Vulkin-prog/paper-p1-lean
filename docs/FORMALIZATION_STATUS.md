@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is93/167 unconditional and71 conditional (164/167 completed). The project records403 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is93/167 unconditional and71 conditional (164/167 completed). The project records404 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14598 audited theorem/lemma declarations**. This
+- The project currently has **14606 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25538,3 +25538,16 @@ This resolves a quantitative normalization obligation needed to combine the abso
 P1-MATH-0405 adds one module and four theorems. Coverage stays93 proved and71 conditional out of167, with164 completed and three in_progress. The ledger records403 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15749 jobs); direct axiom audit passed for 14598 declarations using only propext, Classical.choice and Quot.sound; all 13937 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.17 GiB.
+
+
+## Explicit logarithmic and obstruction budgets for growing degrees
+
+DegreeUniformAffineParameters proves concrete parameters for the forthcoming weaker degree-uniform affine bound. For 2<=D<=N, the sheared box height (D+1)*N is at most N^3. If an equation has first partial degree at most D, second partial degree D and height at most N^(32*D^3), its entire denominator-and-derivative obstruction bound is at most N^(64*D^3). Both natural-number and real-valued versions are checked, including every coefficient and box-height factor.
+
+With L=Nat.log2(N)+1, the actual binary inequality N<2^L and log N<=L are proved. The avoidance count m=64*D^3*L+1 makes N^(64*D^3)<P^m for every P>=2, and satisfies m<=128*D^3*L. The chosen auxiliary degree A=3*L+1 is positive, satisfies log((D+1)*N)<=A+1 and has A+(D-1)<=4*D*L. The logarithmic comparison needed by the absolute determinant scale is therefore internally supplied.
+
+The obstruction estimate is a bound for the complete expression used in PolynomialPrimeAffineCount.uniform_bound, rather than a property assumed for the actual point population. It combines with the actual post-shear interpolation presentation from checkpoint405. No prime supply, derivative avoidance or height normalization remains hidden in these parameter lemmas. A chosen prime scale and the final global estimate are still required.
+
+This is preparatory work toward a weaker polynomial dependence on D. It does not prove the D^2 logarithmic BCN bound, the original full growing-degree corollary or the sharp half-window rank consequence. P1-MATH-0406 adds one module, eight theorems and three definitions. Coverage stays93 proved and71 conditional out of167, with164 completed and three in_progress. The ledger records404 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15751 jobs); direct axiom audit passed for 14606 declarations using only propext, Classical.choice and Quot.sound; all 13948 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.15 GiB.

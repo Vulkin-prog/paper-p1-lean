@@ -3837,6 +3837,14 @@ import PaperP1
 #print axioms PaperP1.DefectivePredicate.canonical_odd_mul_sq_decomposition
 #print axioms PaperP1.DefectivePredicate.oddPrimeSupport_subset_smallPrimesUpTo
 #print axioms PaperP1.DefectivePredicate.hDefective_iff_exists_HDefectRepresentation
+#print axioms PaperP1.DegreeUniformAffineParameters.box_le_cubic
+#print axioms PaperP1.DegreeUniformAffineParameters.obstruction_nat
+#print axioms PaperP1.DegreeUniformAffineParameters.obstruction_real
+#print axioms PaperP1.DegreeUniformAffineParameters.binary_upper
+#print axioms PaperP1.DegreeUniformAffineParameters.log_le_budget
+#print axioms PaperP1.DegreeUniformAffineParameters.obstruction_lt_prime_power
+#print axioms PaperP1.DegreeUniformAffineParameters.avoidance_le
+#print axioms PaperP1.DegreeUniformAffineParameters.auxiliary_budget
 #print axioms PaperP1.DegreeUniformPlanePresentation.index_card_le
 #print axioms PaperP1.DegreeUniformPlanePresentation.interpolation_height_bound
 #print axioms PaperP1.DegreeUniformPlanePresentation.point_natAbs_bounds
