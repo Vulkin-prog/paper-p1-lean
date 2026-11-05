@@ -116,7 +116,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records546 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records547 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -235,7 +235,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16150 audited theorem/lemma declarations**. This
+- The project currently has **16162 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -28012,3 +28012,20 @@ Thus the actual homogeneous plane-image coordinate quotient, finite maps, birati
 P1-MATH-0548 adds three modules, twenty theorems and seven definitions. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 546 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16947 jobs); direct axiom audit passed for 16150 declarations using only propext, Classical.choice and Quot.sound; all 15742 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.64 GiB.
+
+
+## Actual principal irreducible homogeneous plane equation of the original degree
+
+HomogeneousMonicGenerator proves a generic actual homogeneous-generator theorem. The coefficient of T^i in the total homogeneous component of degree i+j is the actual degree-j homogeneous component of the original coefficient. This identity follows from the genuine multivariate coefficient formula and total degree of the original exponent vector. If the principal ideal of q is homogeneous and q is monic in the distinguished coordinate, its homogeneous component of the monic degree has the same top coefficient one and degree at most that monic degree. Ideal membership gives actual divisibility. Equality of the two monic polynomials follows, proving q itself homogeneous of its actual monic degree. No factor-homogeneity or principal-ideal homogeneity assumption is omitted.
+
+LinearPlaneMinimalEquation defines the genuine plane equation as the inverse coordinate-equivalence image of the minimal polynomial of the selected original coordinate over the actual two-parameter polynomial ring. It is monic and nonzero. The literal three-variable evaluation is proved equal to the original one-variable polynomial evaluation composed with the actual coordinate equivalence; the original parameter scalar-map equality is retained explicitly.
+
+The two-parameter polynomial ring over a field is a genuine integrally closed domain. The pinned minimal-polynomial divisibility theorem therefore identifies the entire actual plane-image kernel with the principal ideal generated by this specific equation. The original source-domain kernel is prime, so the nonzero equation is irreducible. The original degree-one grading makes this literal kernel homogeneous, and the new monic-generator theorem proves the equation homogeneous of its actual minimal-polynomial degree.
+
+The actual plane-equation quotient Hilbert polynomial is proved equal to the actual image quotient Hilbert polynomial through the literal ideal equality. Uniqueness of genuine Hilbert polynomials identifies their linear coefficients. Thus, if the internally constructed image has Hilbert degree d, this exact equation has total degree d. Finiteness and injectivity of the original parameter evaluation supply the needed coordinate integrality and torsion freeness internally. The final theorem constructs an actual q with the original ideal equal to (q), q irreducible, q homogeneous of degree d, totalDegree q=d, and genuine monicity in the selected coordinate.
+
+This closes the principal irreducible homogeneous plane-equation step for the actual image quotient, with degree exactly the original source degree supplied by P1-MATH-0548. It does not assume a plane-equation presentation or a curve-degree identification. Injectivity away from the derivative exceptional locus, its original-source incidence budget, final height/counting assembly and scalar-extension/descent remain separate. Main13.4 and companionT1.7/T19.17 remain unresolved; main13.5 stays internally proved.
+
+P1-MATH-0549 adds two modules, twelve theorems and one definition. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 547 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16951 jobs); direct axiom audit passed for 16162 declarations using only propext, Classical.choice and Quot.sound; all 15755 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.63 GiB.

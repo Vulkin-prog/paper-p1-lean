@@ -26503,6 +26503,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "3134f6f6f7996920c260ee0602c85dd2833fe0ad"
+    },
+    {
+      "id": "P1-MATH-0549",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The literal finite birational plane-image quotient and its Hilbert degree were proved, but no actual principal homogeneous plane equation of that exact degree had been constructed.",
+      "finding": "The actual minimal polynomial over the integrally closed parameter ring generates the entire image ideal; homogeneous ideal membership and monicity prove its homogeneity, while genuine Hilbert-polynomial uniqueness gives exact degree d.",
+      "proposed_revision": "Use this specific irreducible monic homogeneous degree-d equation for the controlled plane projection, and prove derivative-locus fibre control and the final count before closing main13.4.",
+      "impact": "Closes actual principal plane-equation construction, irreducibility, homogeneity, monicity and exact original degree without assuming a plane presentation.",
+      "evidence": [
+        "PaperP1.HomogeneousMonicGenerator.cons_degree",
+        "PaperP1.HomogeneousMonicGenerator.component_coefficient",
+        "PaperP1.HomogeneousMonicGenerator.homogeneous",
+        "PaperP1.LinearPlaneMinimalEquation.equation_monic",
+        "PaperP1.LinearPlaneMinimalEquation.equation_nonzero",
+        "PaperP1.LinearPlaneMinimalEquation.evaluation_factor",
+        "PaperP1.LinearPlaneMinimalEquation.principal",
+        "PaperP1.LinearPlaneMinimalEquation.equation_irreducible",
+        "PaperP1.LinearPlaneMinimalEquation.equation_homogeneous",
+        "PaperP1.LinearPlaneMinimalEquation.equation_totalDegree",
+        "PaperP1.LinearPlaneMinimalEquation.degree_of_image_hilbert",
+        "PaperP1.LinearPlaneMinimalEquation.equation_of_finite",
+        "PaperP1.LinearPlaneMinimalEquation.equation"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16951 jobs); direct axiom audit passed for 16162 declarations using only propext, Classical.choice and Quot.sound; all 15755 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.63 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

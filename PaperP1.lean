@@ -4161,3 +4161,5 @@ public import PaperP1.Algebra.PrimitiveBirationalFractionRing
 public import PaperP1.Algebra.FiniteInjectiveIntermediate
 public import PaperP1.Geometry.LinearPlaneImage
 public import PaperP1.Geometry.LinearPlaneImageBirational
+public import PaperP1.Algebra.HomogeneousMonicGenerator
+public import PaperP1.Geometry.LinearPlaneMinimalEquation

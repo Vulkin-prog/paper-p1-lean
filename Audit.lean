@@ -1341,6 +1341,9 @@ import PaperP1
 #print axioms PaperP1.HomogeneousLinearShear.homogeneous
 #print axioms PaperP1.HomogeneousLinearShear.eval_substitute
 #print axioms PaperP1.HomogeneousLinearShear.exists_unit_leadingCoeff
+#print axioms PaperP1.HomogeneousMonicGenerator.cons_degree
+#print axioms PaperP1.HomogeneousMonicGenerator.component_coefficient
+#print axioms PaperP1.HomogeneousMonicGenerator.homogeneous
 #print axioms PaperP1.HomogeneousMonomialCount.exponent_finite
 #print axioms PaperP1.HomogeneousMonomialCount.exponent_card
 #print axioms PaperP1.HomogeneousMonomialCount.ternary_exponent_card
@@ -12247,6 +12250,15 @@ import PaperP1
 #print axioms PaperP1.LinearPlaneImageBirational.rank_one
 #print axioms PaperP1.LinearPlaneImageBirational.normalization_rank
 #print axioms PaperP1.LinearPlaneImageBirational.exists_linear_hilbert
+#print axioms PaperP1.LinearPlaneMinimalEquation.equation_monic
+#print axioms PaperP1.LinearPlaneMinimalEquation.equation_nonzero
+#print axioms PaperP1.LinearPlaneMinimalEquation.evaluation_factor
+#print axioms PaperP1.LinearPlaneMinimalEquation.principal
+#print axioms PaperP1.LinearPlaneMinimalEquation.equation_irreducible
+#print axioms PaperP1.LinearPlaneMinimalEquation.equation_homogeneous
+#print axioms PaperP1.LinearPlaneMinimalEquation.equation_totalDegree
+#print axioms PaperP1.LinearPlaneMinimalEquation.degree_of_image_hilbert
+#print axioms PaperP1.LinearPlaneMinimalEquation.equation_of_finite
 #print axioms PaperP1.OrdinaryCurveAffineChart.sourceZ_mem
 #print axioms PaperP1.OrdinaryCurveAffineChart.ordinaryZ_mem
 #print axioms PaperP1.OrdinaryCurveAffineChart.curveMap_sourceZ
