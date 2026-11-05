@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records385 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records386 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14491 audited theorem/lemma declarations**. This
+- The project currently has **14494 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25268,3 +25268,18 @@ This closes the invariant needed to retain the hyperbolic, parabolic or negative
 P1-MATH-0387 adds seven theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records385 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15689 jobs); direct axiom audit passed for 14491 declarations using only propext, Classical.choice and Quot.sound; all 13814 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.65 GiB.
+
+
+## Constructed bounded-height presentations retain the actual rational association
+
+SmallHeightAssociatedPlanePresentation.exists_presentation constructs a bounded-height integer equation Q and now returns its actual rational association with the original equation F, in addition to rational and complex irreducibility, exact total degree, the proved polynomial coefficient-height bound and all original zeros. The association is a proved conclusion of the finite interpolation and many-point Bezout argument, not an additional hypothesis.
+
+grid_eq_of_associated proves that every pair of rationally associated integer equations has exactly the same actual signed integer grid at every radius. The proof maps the association through the actual rational evaluation homomorphism, identifies both original integer evaluations and reflects zero through the injective integer-to-rational cast. Thus the constructed presentation describes the entire original integer curve, including points outside the finite population used to construct it.
+
+The previous SmallHeightGeometricPlanePointInput.exists_small_presentation remains available as a corollary of the stronger construction. Its proof is refactored to reuse the same core argument while dropping the association from the older conclusion. All ordinary unproved BCN interfaces retain their existing scope; the stronger associated presentation introduces no counting input and asserts no BCN bound.
+
+Together with the proved discriminant-sign transport, this supplies the exact missing bridge for removing coefficient-height restrictions from the hyperbolic conic count. That assembly is the next step. The remaining conic branches, full BCN and original main13.4 remain open; no original numbered result is promoted.
+
+P1-MATH-0388 adds three theorems and refactors the earlier presentation proof into a corollary. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records386 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15691 jobs); direct axiom audit passed for 14494 declarations using only propext, Classical.choice and Quot.sound; all 13817 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.63 GiB.

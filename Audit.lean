@@ -5738,6 +5738,9 @@ import PaperP1
 #print axioms PaperP1.SmallExactUnitAlignment.ordered_data
 #print axioms PaperP1.SmallExactUnitAlignment.exact_data
 #print axioms PaperP1.SmallExactUnitAlignment.two_units
+#print axioms PaperP1.SmallHeightAssociatedPlanePresentation.rationalized_evaluation
+#print axioms PaperP1.SmallHeightAssociatedPlanePresentation.grid_eq_of_associated
+#print axioms PaperP1.SmallHeightAssociatedPlanePresentation.exists_presentation
 #print axioms PaperP1.SmallHeightGeometricPlanePointInput.rationalized_evaluation
 #print axioms PaperP1.SmallHeightGeometricPlanePointInput.exists_small_presentation
 #print axioms PaperP1.SmallHeightGeometricPlanePointInput.integral_input

@@ -20228,6 +20228,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "8505d1f171ac55b6f71027d1bc9687566b88e534"
+    },
+    {
+      "id": "P1-MATH-0388",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The bounded-height construction proved rational association internally but omitted it from the returned data, preventing exact transport of conic classification to the constructed equation.",
+      "finding": "The constructed bounded-height equation now returns its actual rational association, and that association proves equality of every original and replacement integer grid at all radii.",
+      "proposed_revision": "Use the retained association to preserve the exact discriminant branch and replace the original coefficient-height-unrestricted conic by its constructed controlled-height equation.",
+      "impact": "Closes the same-curve and exact-grid bridge in bounded-height normalization. The original presentation interface is a proved corollary; the coefficient-height-free conic assembly and full BCN remain separate.",
+      "evidence": [
+        "PaperP1.SmallHeightAssociatedPlanePresentation.rationalized_evaluation",
+        "PaperP1.SmallHeightAssociatedPlanePresentation.grid_eq_of_associated",
+        "PaperP1.SmallHeightAssociatedPlanePresentation.exists_presentation"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15691 jobs); direct axiom audit passed for 14494 declarations using only propext, Classical.choice and Quot.sound; all 13817 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.63 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
