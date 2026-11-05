@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records479 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records480 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15455 audited theorem/lemma declarations**. This
+- The project currently has **15461 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26900,3 +26900,22 @@ The next separate arithmetic task is to prove the refined floor-quotient bound a
 P1-MATH-0481 adds three modules, eighteen theorems and four definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records479 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16457 jobs); direct axiom audit passed for 15455 declarations using only propext, Classical.choice and Quot.sound; all 14901 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.17 GiB.
+
+
+## Actual smooth-count lower barrier with an internal base and prime margin
+
+A lower barrier for the literal ordinary smooth-integer count is now internally proved. For every epsilon>0 there are positive a, a real T>=exp(1)+1 and an integer Y0>=2 before all integer Y>=Y0 and M>=1. Whenever tilt_epsilon(max(T,logM/logY))<=logY, the actual count of positive n<=M with P+(n)<=Y is at least a*M*exp(-F_epsilon(max(T,logM/logY))). Here F_epsilon(t)=t*(logt+loglogt-1+epsilon). This is an effective arithmetic bound with an explicit finite scale domain, rather than an assumed smooth-number theorem. Its final application at the actual reciprocal saddle remains subsequent work.
+
+SmoothQuotientGeometry proves the refined natural quotient inequality floor(X/p)>=(1-1/Y)*X/p whenever p>0,p<=Y,Y>=2 and Y^2<=X. The proof retains the exact division remainder and pays Y*(X mod p)<=Y^2<=X. It also proves the actual logarithmic quotient upper bound and the conversion from relative logarithmic height at least2 to Y^2<=X. No quotient is replaced by a real division without a checked comparison.
+
+SmoothLowerBarrierBase supplies the entire bounded relative-height base range internally. The previously proved PolynomialSmoothDensity theorem at the fixed exponent1/(T+2) gives one positive coefficient for large X; its natural cutoff is proved at most Y from logX/logY<=T+1. Smaller X are all smooth once Y exceeds their fixed threshold. The clamped barrier density is positive and at most one. The coefficient and cutoff threshold are selected before every actual X and Y in this base range.
+
+SmoothLowerBarrierInduction.finite_lower performs strong induction over the actual natural X<=M. Above the base range, the refined quotient geometry preserves at least the factor1-1/Y. The monotone clamped density and its exact shift inequality give the required p^delta gain, with delta=tilt_epsilon(t-1)/logY. The global scale domain supplies its upper exponent bound before all recursive heights. Multiplying actual quotient counts by log(p), summing and using the proved smooth-prime incidence inequality gives the actual next count. Checkpoint481's uniform prime margin pays the entire quotient factor; no loss is accumulated silently over the induction.
+
+uniform_lower supplies both the finite base and prime margin internally with one common cutoff threshold. No ordinary reciprocal LowerInput, smooth-number asymptotic, target count or geometric statement occurs in that closed theorem. The remaining scale-domain inequality is a finite explicit condition to be checked at the actual saddle, not an unproved literature input. Its actual-root application, precise barrier cost and transport to the fine reciprocal lower bound are not yet claimed.
+
+Canonical complete T19.15/T19.16 therefore remain conditional on the ordinary fine reciprocal lower estimate. Both full fine upper directions, leading coefficient2 limits and qualitative deterministic/randomized all-anchor obstructions remain internal. Full T19.17, full quadratic-degree BCN and optimal strong-triangle weights retain their separate unresolved scopes.
+
+P1-MATH-0482 adds three modules, six theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records480 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16463 jobs); direct axiom audit passed for 15461 declarations using only propext, Classical.choice and Quot.sound; all 14907 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.14 GiB.

@@ -6083,6 +6083,9 @@ import PaperP1
 #print axioms PaperP1.SmallTransverseHostData.many_of_cover
 #print axioms PaperP1.SmoothIntegerCongruenceBranch.unit_mod_prime_power
 #print axioms PaperP1.SmoothIntegerCongruenceBranch.implicit_mod_prime_power
+#print axioms PaperP1.SmoothLowerBarrierBase.uniform_base
+#print axioms PaperP1.SmoothLowerBarrierInduction.finite_lower
+#print axioms PaperP1.SmoothLowerBarrierInduction.uniform_lower
 #print axioms PaperP1.SmoothLowerPrimeMargin.uniform_weighted_margin
 #print axioms PaperP1.SmoothModulusHosts.value_cast
 #print axioms PaperP1.SmoothModulusHosts.common_modEq
@@ -6111,6 +6114,9 @@ import PaperP1
 #print axioms PaperP1.SmoothPrimeIncidence.weighted_subset
 #print axioms PaperP1.SmoothPrimeIncidence.lower_transfer
 #print axioms PaperP1.SmoothPrimeIncidence.count_lower_from_band
+#print axioms PaperP1.SmoothQuotientGeometry.quotient_relative_lower
+#print axioms PaperP1.SmoothQuotientGeometry.log_quotient_upper
+#print axioms PaperP1.SmoothQuotientGeometry.square_le_of_ratio
 #print axioms PaperP1.SmoothRecursiveLower.smooth_below
 #print axioms PaperP1.SmoothRecursiveLower.smooth_below_card
 #print axioms PaperP1.SmoothRecursiveLower.floor_quotient_half

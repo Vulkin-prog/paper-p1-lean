@@ -19330,3 +19330,22 @@ The next separate arithmetic task is to prove the refined floor-quotient bound a
 P1-MATH-0481 adds three modules, eighteen theorems and four definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records479 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16457 jobs); direct axiom audit passed for 15455 declarations using only propext, Classical.choice and Quot.sound; all 14901 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.17 GiB.
+
+
+## Actual smooth-count lower barrier with an internal base and prime margin
+
+A lower barrier for the literal ordinary smooth-integer count is now internally proved. For every epsilon>0 there are positive a, a real T>=exp(1)+1 and an integer Y0>=2 before all integer Y>=Y0 and M>=1. Whenever tilt_epsilon(max(T,logM/logY))<=logY, the actual count of positive n<=M with P+(n)<=Y is at least a*M*exp(-F_epsilon(max(T,logM/logY))). Here F_epsilon(t)=t*(logt+loglogt-1+epsilon). This is an effective arithmetic bound with an explicit finite scale domain, rather than an assumed smooth-number theorem. Its final application at the actual reciprocal saddle remains subsequent work.
+
+SmoothQuotientGeometry proves the refined natural quotient inequality floor(X/p)>=(1-1/Y)*X/p whenever p>0,p<=Y,Y>=2 and Y^2<=X. The proof retains the exact division remainder and pays Y*(X mod p)<=Y^2<=X. It also proves the actual logarithmic quotient upper bound and the conversion from relative logarithmic height at least2 to Y^2<=X. No quotient is replaced by a real division without a checked comparison.
+
+SmoothLowerBarrierBase supplies the entire bounded relative-height base range internally. The previously proved PolynomialSmoothDensity theorem at the fixed exponent1/(T+2) gives one positive coefficient for large X; its natural cutoff is proved at most Y from logX/logY<=T+1. Smaller X are all smooth once Y exceeds their fixed threshold. The clamped barrier density is positive and at most one. The coefficient and cutoff threshold are selected before every actual X and Y in this base range.
+
+SmoothLowerBarrierInduction.finite_lower performs strong induction over the actual natural X<=M. Above the base range, the refined quotient geometry preserves at least the factor1-1/Y. The monotone clamped density and its exact shift inequality give the required p^delta gain, with delta=tilt_epsilon(t-1)/logY. The global scale domain supplies its upper exponent bound before all recursive heights. Multiplying actual quotient counts by log(p), summing and using the proved smooth-prime incidence inequality gives the actual next count. Checkpoint481's uniform prime margin pays the entire quotient factor; no loss is accumulated silently over the induction.
+
+uniform_lower supplies both the finite base and prime margin internally with one common cutoff threshold. No ordinary reciprocal LowerInput, smooth-number asymptotic, target count or geometric statement occurs in that closed theorem. The remaining scale-domain inequality is a finite explicit condition to be checked at the actual saddle, not an unproved literature input. Its actual-root application, precise barrier cost and transport to the fine reciprocal lower bound are not yet claimed.
+
+Canonical complete T19.15/T19.16 therefore remain conditional on the ordinary fine reciprocal lower estimate. Both full fine upper directions, leading coefficient2 limits and qualitative deterministic/randomized all-anchor obstructions remain internal. Full T19.17, full quadratic-degree BCN and optimal strong-triangle weights retain their separate unresolved scopes.
+
+P1-MATH-0482 adds three modules, six theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records480 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16463 jobs); direct axiom audit passed for 15461 declarations using only propext, Classical.choice and Quot.sound; all 14907 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.14 GiB.

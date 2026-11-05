@@ -3943,3 +3943,6 @@ public import PaperP1.Arithmetic.PNTWeightedPrimeLower
 public import PaperP1.Analysis.SmoothLowerBarrierGrowth
 public import PaperP1.Analysis.SmoothLowerBarrierProfile
 public import PaperP1.Arithmetic.SmoothLowerPrimeMargin
+public import PaperP1.Arithmetic.SmoothLowerBarrierBase
+public import PaperP1.Arithmetic.SmoothLowerBarrierInduction
+public import PaperP1.Arithmetic.SmoothQuotientGeometry

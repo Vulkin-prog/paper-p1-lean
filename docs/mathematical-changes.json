@@ -23853,6 +23853,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "d4ff55fb1b07a526474adf1b7293721eed924064"
+    },
+    {
+      "id": "P1-MATH-0482",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The lower route had analytic and prime-weight margins but no completed induction for the actual ordinary smooth population, with its quotient errors and base range supplied internally.",
+      "finding": "Strong natural induction, a1-1/Y quotient comparison, internal polynomial-density base and internal weighted prime margin prove the explicit logarithmic lower barrier for the actual smooth count throughout its stated finite scale domain.",
+      "proposed_revision": "Use the proved actual smooth-count lower barrier in the fine reciprocal lower route. Check its finite scale condition and cost at the actual saddle before claiming the final ordinary reciprocal equivalent.",
+      "impact": "Discharges the smooth-count induction and its base/prime premises internally. The final actual-saddle transport to the ordinary fine reciprocal lower theorem remains unproved; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.SmoothLowerBarrierBase.uniform_base",
+        "PaperP1.SmoothLowerBarrierInduction.finite_lower",
+        "PaperP1.SmoothLowerBarrierInduction.uniform_lower",
+        "PaperP1.SmoothQuotientGeometry.quotient_relative_lower",
+        "PaperP1.SmoothQuotientGeometry.log_quotient_upper",
+        "PaperP1.SmoothQuotientGeometry.square_le_of_ratio"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16463 jobs); direct axiom audit passed for 15461 declarations using only propext, Classical.choice and Quot.sound; all 14907 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.14 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
