@@ -23092,6 +23092,55 @@
         "status": "not_integrated"
       },
       "validation_commit": "c15d00f10d5a237ccddc4a5b28155f6f294d1963"
+    },
+    {
+      "id": "P1-MATH-0462",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The internal upper envelope was only exponential in the square root oflogN, leaving a logarithmic scale gap from the explicit hard-saddle lower bounds. The Euler estimate had discarded primality.",
+      "finding": "An elementary finite harmonic prime estimate controls the Euler factor uniformly at a moving exponent approaching one. This gives a reciprocal upper boundN*exp(-V_N/9) and the original cost envelopeexp(-12V_N)<=cost<=exp(-V_N/10), hence matching coarse hard-saddle order without EIP.",
+      "proposed_revision": "Include the internally proved hard-saddle-order inequalities for ordinary/full/dyadic reciprocals and the original signed forcing cost, with their explicit constants and normalized logarithmic bounds. State separately that the sharp limiting constant2 ando(nu_N) precision still require the unresolved ordinary EIP estimate.",
+      "impact": "Closes the scale gap in the unconditional weak reciprocal and forcing-cost estimates. Both sides now have the true hard-saddle order, while the complete fineT19.15/T19.16 statements and numbered coverage remain conditional.",
+      "evidence": [
+        "PaperP1.HardSaddleReciprocalBounds.uniform_sandwich",
+        "PaperP1.HardSaddleReciprocalBounds.log_deficit_bounds",
+        "PaperP1.HardSaddleReciprocalBounds.uniform_normalized_bounds",
+        "PaperP1.HardSaddleReciprocalUpper.uniform_upper",
+        "PaperP1.PrimeEulerSaddleScale.exponent_bound",
+        "PaperP1.PrimeHarmonicUpper.reciprocal_log_antitone",
+        "PaperP1.PrimeHarmonicUpper.weight_nonneg",
+        "PaperP1.PrimeHarmonicUpper.weight_antitone",
+        "PaperP1.PrimeHarmonicUpper.weight_prime",
+        "PaperP1.PrimeHarmonicUpper.shifted_sum_bound",
+        "PaperP1.PrimeHarmonicUpper.harmonic_upper",
+        "PaperP1.PrimeHarmonicUpper.constant_pos",
+        "PaperP1.PrimeHarmonicUpper.harmonic_uniform",
+        "PaperP1.PrimeHarmonicUpper.weighted_prime_uniform",
+        "PaperP1.PrimeHarmonicUpper.euler_uniform",
+        "PaperP1.PrimeHarmonicUpper.pivot_count_uniform",
+        "PaperP1.HardSaddleSignedCostBounds.uniform_upper_from_profile",
+        "PaperP1.HardSaddleSignedCostBounds.uniform_upper",
+        "PaperP1.HardSaddleSignedCostBounds.uniform_sandwich",
+        "PaperP1.HardSaddleSignedCostBounds.uniform_log_sandwich",
+        "PaperP1.HardSaddleSignedCostBounds.uniform_normalized_bounds",
+        "PaperP1.PrimeHarmonicUpper.weight",
+        "PaperP1.PrimeHarmonicUpper.constant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16363 jobs); direct axiom audit passed for 15276 declarations using only propext, Classical.choice and Quot.sound; all 14703 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.55 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
