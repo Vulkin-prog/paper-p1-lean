@@ -3850,3 +3850,6 @@ public import PaperP1.Asymptotics.AlignedFamilyTripleMass
 public import PaperP1.Asymptotics.WeakPairTripleMass
 public import PaperP1.Asymptotics.PrimitiveTripleTupleMass
 public import PaperP1.Asymptotics.SixVertexBudget
+public import PaperP1.Asymptotics.CriticalRawValueProfile
+public import PaperP1.Asymptotics.EnlargedRawValueProfile
+public import PaperP1.Asymptotics.SignedSaddleCostInternalProfile

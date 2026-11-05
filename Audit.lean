@@ -7285,6 +7285,7 @@ import PaperP1
 #print axioms PaperP1.CriticalRationalSquareGraphExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalRationalSquareGraphExclusion.squares_of_odd_extension
 #print axioms PaperP1.CriticalRationalSquareGraphExclusion.eventually_no_dyadic_point_of_odd_extension
+#print axioms PaperP1.CriticalRawValueProfile.uniform_profile
 #print axioms PaperP1.CriticalRawValueProfileUnderInputs.uniform_profile
 #print axioms PaperP1.CriticalRepeatedLeftAllCoverExclusion.eventually_no_dyadic_point
 #print axioms PaperP1.CriticalRepeatedLeftCurveExclusion.eventually_no_dyadic_point
@@ -7657,6 +7658,9 @@ import PaperP1
 #print axioms PaperP1.EnlargedPhysicalTargetTripleMass.uniform_count
 #print axioms PaperP1.EnlargedPhysicalTargetTripleMass.uniform_mass
 #print axioms PaperP1.EnlargedPhysicalTargetTripleProbability.uniform_point_bound
+#print axioms PaperP1.EnlargedRawValueProfile.excess_factor_small
+#print axioms PaperP1.EnlargedRawValueProfile.separated_subset
+#print axioms PaperP1.EnlargedRawValueProfile.uniform_profile
 #print axioms PaperP1.EnlargedRawValueProfileUnderInputs.excess_factor_small
 #print axioms PaperP1.EnlargedRawValueProfileUnderInputs.separated_subset
 #print axioms PaperP1.EnlargedRawValueProfileUnderInputs.uniform_profile
@@ -9477,6 +9481,7 @@ import PaperP1
 #print axioms PaperP1.SignedDyadicCostUpper.finite_upper_coarse
 #print axioms PaperP1.SignedPrescribedSaddleLower.uniform_actual_lower
 #print axioms PaperP1.SignedPrescribedSaddleLower.uniform_power_obstruction
+#print axioms PaperP1.SignedSaddleCostInternalProfile.companion_T19_16
 #print axioms PaperP1.SignedSaddleCostLower.uniform_actual_lower
 #print axioms PaperP1.SignedSaddleCostTheorem.specifiedCost_eq
 #print axioms PaperP1.SignedSaddleCostTheorem.log_error_of_sandwich

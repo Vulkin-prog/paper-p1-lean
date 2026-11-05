@@ -1,6 +1,6 @@
 # External mathematical inputs
 
-Current canonical update P1-MATH-0452: complete companion T20.8 has an internal proof with its original exceptional set and stronger mass power3/2. Main14.3,14.4,14.5 and companion T2.7,T2.8,T3.1,T4.4,T15.1 also have internal proofs. Coverage is147 proved,17 conditional and3 in_progress out of167. Only exact numbered uses are discharged; general geometry, sharp growing-degree BCN, the remaining ordinary analytic inputs and the unrestricted optimal global third-activity upper bound remain separate. Earlier dated update paragraphs are historical.
+Current canonical update P1-MATH-0453: complete T19.16 now retains only the ordinary EIP reciprocal-prime input. Its full critical and prescribed moving-width raw-value profiles are internally proved. T20.8 and main14.3,14.4,14.5 remain unconditional. Coverage is147 proved,17 conditional and3 in_progress out of167. General geometry, sharp growing-degree BCN, ordinary EIP, the separate anchored smooth-census input and the unrestricted optimal third-activity upper bound remain open. Earlier dated update paragraphs are historical.
 
 Current canonical update P1-MATH-0432: main15.10 and companionT14.1 have unconditional internal proofs. Main15.2 and15.5 and companionT1.8 are also unconditional. Discharges are scoped to their exact numbered conclusions; general geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate. Earlier dated update paragraphs are historical.
 
@@ -26718,3 +26718,22 @@ This proof uses the unconditional full primitive bound established independently
 P1-MATH-0452 adds two modules, four theorems and two definitions. Companion T20.8 moves from conditional to proved. Coverage becomes147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records450 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16271 jobs); direct axiom audit passed for 15151 declarations using only propext, Classical.choice and Quot.sound; all 14564 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.85 GiB.
+
+
+## Internal full raw value profiles remove geometric signed forcing inputs
+
+Stable ID: p1:internal:signed-forcing-cost-with-only-eip. The full raw-value profile and its moving-support extension discharge only the six geometric T19.16 uses. Ordinary EIPInput remains explicit and unproved; the anchored smooth-census input and general geometric properties remain separate.
+
+The complete specified signed-forcing theorem T19.16 now retains only the explicitly unformalized ordinary EIP reciprocal-prime input. All six former geometric cover/count arguments are removed. SignedSaddleCostInternalProfile.companion_T19_16 takes hinput:EIPInput and proves the unchanged full Conclusion: both saddle-scale cost inequalities, the logarithmic equivalent and the obstruction to every fixed power upper bound. Its exact actual forcing population, signed word types and prescribed moving excess are preserved. The full source statement and proof in companion_sections/limits_appendix.tex lines1214-1299 were checked again. This remains a conditional numbered result because EIPInput is not proved in Lean.
+
+CriticalRawValueProfile proves the full actual raw-value kernel profile internally at exponent3/2. The already internal positive separated pair profile and exact two-channel main term bound its even part. The proved raw-host count controls the additional odd-parity contribution through the exact full-rank-to-even-loss comparison. No raw weighted profile is supplied as a premise. The odd part is retained; a stronger exponent1 bound for every raw full-value pair is not asserted.
+
+EnlargedRawValueProfile transports the base estimate to the exact prescribed maximal support length L+excess(N)+1. The added-coordinate factor2^(2*excess(N)+2) is proved subpolynomial. All new relations are supported on the actual enlarged raw-host population; the finite extension inequality and the internal host bound are used before the threshold is selected. The moving width is never treated as a fixed critical-band error.
+
+SignedSaddleCostInternalProfile fixes this internal moving-width profile at one positive margin before the final logarithmic error tolerance. It then applies the existing actual signed upper ledger and prescribed lower forcing theorem under the sole ordinary EIP argument. The target Conclusion and specifiedCost are the original definitions, not new surrogate costs. Its power obstruction concerns the nonnegative coordinate cost of this specified forcing; no lower bound for dependence, total variation or a signed scalar cancellation is added.
+
+Earlier conditional declarations and literature history are preserved. The six geometric uses are discharged only for the T19.16 full raw-value profile and cost theorem. EIPInput remains an ordinary explicit argument, with its original source and scope. General geometric cover/count properties, the ordinary EIP theorem itself and the separate anchored ordinary smooth-census input remain unproved. Original source bytes and Lean/Mathlib pins are unchanged.
+
+P1-MATH-0453 adds three modules, five theorems and one definition. T19.16 stays conditional with exactly one remaining unformalized analytic input. Numbered coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records451 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16277 jobs); direct axiom audit passed for 15156 declarations using only propext, Classical.choice and Quot.sound; all 14570 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.82 GiB.
