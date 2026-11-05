@@ -6829,6 +6829,8 @@ import PaperP1
 #print axioms PaperP1.BoundedPlaneCurveCount.field_uniform_bound
 #print axioms PaperP1.BoundedPlaneCurveCount.uniform_bound
 #print axioms PaperP1.BoundedPlaneCurveCountUnderBCN.uniform_bound
+#print axioms PaperP1.BoundedSecondMoment.seedConstant_gt_one
+#print axioms PaperP1.BoundedSecondMoment.uniform_bound
 #print axioms PaperP1.BoundedSecondMomentUnderBCN.seedConstant_gt_one
 #print axioms PaperP1.BoundedSecondMomentUnderBCN.uniform_bound
 #print axioms PaperP1.BoundedWidthDenseCount.uniform_count
@@ -8368,6 +8370,7 @@ import PaperP1
 #print axioms PaperP1.OrderDependentBranching.exception_le_source
 #print axioms PaperP1.OrderDependentBranching.finite_exception_bound
 #print axioms PaperP1.OrderDependentBranching.finite_independence
+#print axioms PaperP1.OrderDependentMomentBound.uniform_source_growth
 #print axioms PaperP1.OrderDependentMoments.rate_mono
 #print axioms PaperP1.OrderDependentMoments.recurrence
 #print axioms PaperP1.OrderDependentMoments.finite_from_two
@@ -8431,6 +8434,11 @@ import PaperP1
 #print axioms PaperP1.OverlappingPairProductCostUnderBCN.uniform_star_square
 #print axioms PaperP1.OverlappingPairProductCostUnderInputs.uniform_repeated_square
 #print axioms PaperP1.OverlappingPairProductCostUnderInputs.uniform_star_square
+#print axioms PaperP1.PairActivity.absolute_partition
+#print axioms PaperP1.PairActivity.diagonal_bound
+#print axioms PaperP1.PairActivity.uniform_pair_activity
+#print axioms PaperP1.PairActivity.uniform_cumulant
+#print axioms PaperP1.PairActivity.uniform_conversion
 #print axioms PaperP1.PairActivityCumulantGapAsymptotic.uniform_gap
 #print axioms PaperP1.PairActivityCumulantGapAsymptotic.uniform_relative
 #print axioms PaperP1.PairActivitySignGap.uniform_bound

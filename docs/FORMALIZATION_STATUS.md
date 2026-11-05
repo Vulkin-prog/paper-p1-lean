@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+CompanionT19.4 is unconditional (P1-MATH-0412): the explicit bounded actual second moment closes the full growing-order branching recurrence without BCN. Full actual pair activity and second-cumulant decay have rateN^(-2/3+epsilon).
+
 Main3.3 and3.4 are unconditional (P1-MATH-0411): the complete unsigned/signed pair profiles, actual variance-minus-mean expansion, both literal moving phases, and the full principal-edge input are internally proved.
 
 Main3.2 is unconditional (P1-MATH-0409): both source support and full nonaligned arithmetic residual have the improved exponent1+epsilon, without geometric cover/count premises. Main12.1,12.2 and companionT8.1,T8.2,T8.3 are also unconditional.
@@ -17,7 +19,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is101/167 unconditional and63 conditional (164/167 completed). The project records409 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is102/167 unconditional and62 conditional (164/167 completed). The project records410 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -136,7 +138,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14661 audited theorem/lemma declarations**. This
+- The project currently has **14669 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25632,3 +25634,18 @@ The full original statements in main_sections/arithmetic.tex lines162-228 were r
 P1-MATH-0411 adds seven modules, seventeen theorems and three definitions. Main3.3 and3.4 move from conditional to proved. Coverage becomes101 proved and63 conditional out of167, with164 completed and three in_progress. The ledger records409 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15799 jobs); direct axiom audit passed for 14661 declarations using only propext, Classical.choice and Quot.sound; all 14008 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.98 GiB.
+
+
+## Unconditional bounded second moment and complete growing-order branching
+
+The full original companion T19.4 now has an unconditional canonical proof. Its deterministic exceptional set, exact independence from all old raw sign values, explicit logarithmic branching cost and finite factorial-moment recurrence were already internally proved. The sole remaining use of BCN was to bound the initial actual second factorial moment. This seed is now supplied internally from the actual pair activity, without a pointwise growing-degree rank bound.
+
+PairActivity proves actual absolute pair activity and the absolute second factorial cumulant at rate N^(-2/3+epsilon), uniformly over every deterministic dyadic subground. The proof combines the internally proved full nonaligned activity at rate N^(-1+epsilon) with the unconditional aligned rate N^(-2/3+epsilon), retaining all covariance signs, local defects and zero marginals. The exact heterogeneous diagonal term is included. It also proves the finite heterogeneous pair-reference to quadratic-reference conversion at rate N^(-5/3+epsilon); that conversion is not asserted to approximate the original count law.
+
+BoundedSecondMoment constructs the explicit seedConstant(C)=(2*2^C)^2+1. After one critical-band threshold, the original actual second factorial moment is at most that constant. The exact second-cumulant identity, actual mean bound and proved cumulant decay supply the seed. No individual pair-probability cap, BCN property or geometric cover is a theorem argument.
+
+OrderDependentMomentBound.uniform_source_growth closes the internally proved recurrence with this seed. One positive constant K and one threshold precede N,L and every2<=k<=log N. The actual factorial moment is bounded by exp(((k-2)/2)*log N + K*(k*log log N + k^(3/2)*log N/log log N)). The fixed seed is absorbed into the displayed exponential, giving the printed growing-order conclusion without extrapolating fixed-order constants. The complete original statement and proof in companion_sections/limits_appendix.tex lines190-252 were rechecked.
+
+P1-MATH-0412 adds three modules, eight theorems and one definition. Companion T19.4 moves from conditional to proved. Coverage becomes102 proved and62 conditional out of167, with164 completed and three in_progress. The ledger records410 improvements and two statement-scope corrections. This discharge concerns the seed and growing-order branching chain only; full growing-degree BCN, uniform maximal rank bounds and unrelated surface/curve properties remain open. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15805 jobs); direct axiom audit passed for 14669 declarations using only propext, Classical.choice and Quot.sound; all 14017 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.96 GiB.

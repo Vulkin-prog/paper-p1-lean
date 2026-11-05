@@ -3614,3 +3614,6 @@ public import PaperP1.Asymptotics.PositiveSeparatedSourceProfile
 public import PaperP1.Asymptotics.PrincipalEdgeRemainder
 public import PaperP1.Asymptotics.SignedSeparatedSourceProfile
 public import PaperP1.Asymptotics.SignedSourceProfile
+public import PaperP1.Asymptotics.BoundedSecondMoment
+public import PaperP1.Asymptotics.OrderDependentMomentBound
+public import PaperP1.Asymptotics.PairActivity
