@@ -5014,6 +5014,7 @@ import PaperP1
 #print axioms PaperP1.PhysicalClassData.targetProduct_cast
 #print axioms PaperP1.PhysicalCoordinateErasure.exists_erasure
 #print axioms PaperP1.PhysicalCoordinateErasure.active_no_exact
+#print axioms PaperP1.PhysicalCoordinateErasureAt.exists_erasure
 #print axioms PaperP1.PhysicalNormalizedMatches.same_dilation_intersection
 #print axioms PaperP1.PhysicalNormalizedMatches.physical_card
 #print axioms PaperP1.PhysicalNormalizedMatches.intersection_union
@@ -5021,6 +5022,7 @@ import PaperP1
 #print axioms PaperP1.PhysicalNormalizedMatches.physical_b_bound
 #print axioms PaperP1.PhysicalRelationSections.section_subspace
 #print axioms PaperP1.PhysicalSubspaceRegularization.uniform_subspace
+#print axioms PaperP1.PhysicalSubspaceRegularizationAt.uniform_subspace
 #print axioms PaperP1.PhysicalWindowRelations.mem_code
 #print axioms PaperP1.PhysicalWindowRelations.toEffective_surjective
 #print axioms PaperP1.PhysicalWindowRelations.localValue_range
@@ -7260,6 +7262,9 @@ import PaperP1
 #print axioms PaperP1.DenseSingletonNonalignedTargets.uniform_hosts
 #print axioms PaperP1.DenseSingletonNonalignedTargets.uniform_mass
 #print axioms PaperP1.DenseSingletonNonalignedTargets.uniform_joint
+#print axioms PaperP1.DenseSingletonWeakTargets.uniform_hosts
+#print axioms PaperP1.DenseSingletonWeakTargets.uniform_mass
+#print axioms PaperP1.DenseSingletonWeakTargets.uniform_joint
 #print axioms PaperP1.DenseSourcePairKernelUnderInputs.uniform_source_kernel
 #print axioms PaperP1.DenseTargetCount.small_residual_exponent
 #print axioms PaperP1.DenseTargetCount.uniform_count
@@ -9487,6 +9492,7 @@ import PaperP1
 #print axioms PaperP1.VerySmallTail.moment_bound
 #print axioms PaperP1.VerySmallTail.power_threshold
 #print axioms PaperP1.VerySmallTail.companion_T19_6
+#print axioms PaperP1.WeakAlignedActiveNonalignment.uniform_no_exact
 #print axioms PaperP1.WeakAlignedSelectedGrids.admissible_swap
 #print axioms PaperP1.WeakAlignedSelectedGrids.uniform_admissible
 #print axioms PaperP1.WeakAlignmentUnitCount.uniform_bound

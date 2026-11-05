@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. Arbitrary-source main15.2 remains conditional.
+
 The singleton-source/nonaligned-target subcase of main15.2 is unconditional (P1-MATH-0423), including subpower hosts, exact rank weights and source-normalized actual joint mass. The general source and remaining alignment branches stay conditional.
 
 A quantitative growing-degree subcase is unconditional (P1-MATH-0422): actual plane counts are uniformly o(B) for caps B^(a+o(1)) with0<=a<1/12, every fixed real box scale and every characteristic-zero field. The full source rangea<1/2 and sharp rank theorem remain open.
@@ -41,7 +43,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is111/167 unconditional and53 conditional (164/167 completed). The project records421 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is111/167 unconditional and53 conditional (164/167 completed). The project records422 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -160,7 +162,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14746 audited theorem/lemma declarations**. This
+- The project currently has **14752 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25834,3 +25836,20 @@ For one full source window, source/target disjointness gives actual pair nonalig
 This is a complete unconditional singleton-source/nonaligned-target theorem, not a proof of the full main15.2. Arbitrary old source subspaces and the remaining aligned branches retain their separately recorded inputs. No general surface-cover, normalized-curve count or BCN property is discharged. P1-MATH-0423 adds three modules and five theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records421 improvements and two statement-scope corrections. Original sources remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15863 jobs); direct axiom audit passed for 14746 declarations using only propext, Classical.choice and Quot.sound; all 14097 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.70 GiB.
+
+
+## Unconditional weakly aligned dense targets above one actual source
+
+DenseSingletonWeakTargets proves an unconditional weakly aligned actual-source subcase of main15.2. One threshold precedes every criticalN,L, full singleton source windowS_x and finite target-pair population. The source is direct from each target separately; the effective addition kernel has dimension at leasteta*L; and the actual target intersection rank is at most(eta/64)*L. The targets may lie on any actual enlarged alignment channel allowed by the source definition. Then#F<=N^epsilon and the exact heterogeneous rank-weighted target mass is at mostN^(-1+epsilon).
+
+The actual joint theorem uses the literal source/complement intersection rank, fresh distinct targets and the original triple probabilities. It proves sum q({x,y,z})<=p_x*N^(-1+epsilon), including local defects, zero actual marginals and incompatible affine systems. The canonical statements expose no source/ordinary cover, normalized-curve count or BCN premise.
+
+WeakAlignedActiveNonalignment proves the exact active-position nonalignment needed after channel units are excluded. The active populations can have arbitrary size: each potential four-position proportionality is ruled out by the already proved fixed-four-value independence/directness theorem. The actual normalized overlap after exclusion is at most one. Positivity, injectivity of the original vertex labels and exact integer cross products are retained.
+
+PhysicalCoordinateErasureAt and PhysicalSubspaceRegularizationAt remove the unnecessary demand that every source projection be injective. Coordinate erasure preserves each particular injective projection, with exact dimension cost at most the number of erased positions. A fresh recovery regularization is constructed inside the erased physical subspace, so all zeroed coordinates stay zero. No recovery property is assumed to survive restriction automatically.
+
+For the actual weak pair, deleting all canonical unit endpoints costs at most2*(eta/64)*L+4 dimensions. Both target projections remain injective. Two independently budgeted regularizations each cost at mosteta*L/16; onceeta*L>=32 the final dimension is at leasteta*L/2. Actual source/target disjointness and the new active target/target nonalignment permit the internally proved three-block confinement. Applying its selected-block version separately to both targets gives the subpower host count, and actual marginal and kernel-rank bounds pay the exact weights.
+
+This closes the weakly aligned singleton-source branch, alongside the nonaligned singleton branch of checkpoint423. Arbitrary old source populations in the full numbered main15.2 remain separate and conditional. P1-MATH-0424 adds four modules and six theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records422 improvements and two statement-scope corrections. Original sources remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15871 jobs); direct axiom audit passed for 14752 declarations using only propext, Classical.choice and Quot.sound; all 14103 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.68 GiB.

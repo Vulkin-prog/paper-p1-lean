@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**421 mathematical improvements and two statement-scope corrections are confirmed.**
+**422 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -25027,3 +25027,20 @@ For one full source window, source/target disjointness gives actual pair nonalig
 This is a complete unconditional singleton-source/nonaligned-target theorem, not a proof of the full main15.2. Arbitrary old source subspaces and the remaining aligned branches retain their separately recorded inputs. No general surface-cover, normalized-curve count or BCN property is discharged. P1-MATH-0423 adds three modules and five theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records421 improvements and two statement-scope corrections. Original sources remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15863 jobs); direct axiom audit passed for 14746 declarations using only propext, Classical.choice and Quot.sound; all 14097 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.70 GiB.
+
+
+## Unconditional weakly aligned dense targets above one actual source
+
+DenseSingletonWeakTargets proves an unconditional weakly aligned actual-source subcase of main15.2. One threshold precedes every criticalN,L, full singleton source windowS_x and finite target-pair population. The source is direct from each target separately; the effective addition kernel has dimension at leasteta*L; and the actual target intersection rank is at most(eta/64)*L. The targets may lie on any actual enlarged alignment channel allowed by the source definition. Then#F<=N^epsilon and the exact heterogeneous rank-weighted target mass is at mostN^(-1+epsilon).
+
+The actual joint theorem uses the literal source/complement intersection rank, fresh distinct targets and the original triple probabilities. It proves sum q({x,y,z})<=p_x*N^(-1+epsilon), including local defects, zero actual marginals and incompatible affine systems. The canonical statements expose no source/ordinary cover, normalized-curve count or BCN premise.
+
+WeakAlignedActiveNonalignment proves the exact active-position nonalignment needed after channel units are excluded. The active populations can have arbitrary size: each potential four-position proportionality is ruled out by the already proved fixed-four-value independence/directness theorem. The actual normalized overlap after exclusion is at most one. Positivity, injectivity of the original vertex labels and exact integer cross products are retained.
+
+PhysicalCoordinateErasureAt and PhysicalSubspaceRegularizationAt remove the unnecessary demand that every source projection be injective. Coordinate erasure preserves each particular injective projection, with exact dimension cost at most the number of erased positions. A fresh recovery regularization is constructed inside the erased physical subspace, so all zeroed coordinates stay zero. No recovery property is assumed to survive restriction automatically.
+
+For the actual weak pair, deleting all canonical unit endpoints costs at most2*(eta/64)*L+4 dimensions. Both target projections remain injective. Two independently budgeted regularizations each cost at mosteta*L/16; onceeta*L>=32 the final dimension is at leasteta*L/2. Actual source/target disjointness and the new active target/target nonalignment permit the internally proved three-block confinement. Applying its selected-block version separately to both targets gives the subpower host count, and actual marginal and kernel-rank bounds pay the exact weights.
+
+This closes the weakly aligned singleton-source branch, alongside the nonaligned singleton branch of checkpoint423. Arbitrary old source populations in the full numbered main15.2 remain separate and conditional. P1-MATH-0424 adds four modules and six theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records422 improvements and two statement-scope corrections. Original sources remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15871 jobs); direct axiom audit passed for 14752 declarations using only propext, Classical.choice and Quot.sound; all 14103 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.68 GiB.

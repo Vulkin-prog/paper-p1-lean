@@ -3646,3 +3646,7 @@ public import PaperP1.Asymptotics.WeakGrowingDegreePlaneCount
 public import PaperP1.Arithmetic.ActiveGroupKernelErasureAt
 public import PaperP1.Asymptotics.DensePhysicalKernelWitnessAt
 public import PaperP1.Asymptotics.DenseSingletonNonalignedTargets
+public import PaperP1.Arithmetic.PhysicalCoordinateErasureAt
+public import PaperP1.Arithmetic.PhysicalSubspaceRegularizationAt
+public import PaperP1.Asymptotics.DenseSingletonWeakTargets
+public import PaperP1.Asymptotics.WeakAlignedActiveNonalignment

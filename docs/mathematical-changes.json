@@ -21483,6 +21483,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "68a2bbc48b58fdaca26dce1b85190ce22f840ea1"
+    },
+    {
+      "id": "P1-MATH-0424",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:dense-targets",
+        "number": "15.2",
+        "page": 40,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 129,
+        "statement_sha256": "67d2424adbe9ce58d341f300471c14a7e1cf21728b62ee4a3f73ad0425362605"
+      },
+      "original_assumption": "The singleton-source weak-alignment branch still used general geometric counts; coordinate erasure and recovery interfaces demanded injective projections in every block.",
+      "finding": "Actual unit exclusion gives active nonalignment. Erasure followed by a fresh recovery regularization preserves the two target injections and enough actual dimension to prove subpower hosts and exact weighted/joint masses without external geometry.",
+      "proposed_revision": "Handle the singleton weak-alignment branch by exact unit erasure and a separately constructed internal regularization. State both dimension costs, retain only the required target injectivity and use fixed-four-position independence to justify active nonalignment.",
+      "impact": "Closes another actual-source subcase of main15.2, without promoting its arbitrary-source statement or any general geometric property. Coverage remains111/167 unconditional.",
+      "evidence": [
+        "PaperP1.PhysicalCoordinateErasureAt.exists_erasure",
+        "PaperP1.PhysicalSubspaceRegularizationAt.uniform_subspace",
+        "PaperP1.DenseSingletonWeakTargets.uniform_hosts",
+        "PaperP1.DenseSingletonWeakTargets.uniform_mass",
+        "PaperP1.DenseSingletonWeakTargets.uniform_joint",
+        "PaperP1.WeakAlignedActiveNonalignment.uniform_no_exact"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15871 jobs); direct axiom audit passed for 14752 declarations using only propext, Classical.choice and Quot.sound; all 14103 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.68 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
