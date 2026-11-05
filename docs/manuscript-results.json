@@ -10393,7 +10393,8 @@
           "scope": "All three exact main16.1 identities, signed error strengthened to5/3. Internal actual component decomposition, pair/row products, coarse third activity and incompatible activity; no general input property asserted.",
           "checkpoint": "P1-MATH-0436"
         }
-      ]
+      ],
+      "validation_commit": "0aed59dd3060292c2dcba39f018f3b47674e1844"
     },
     {
       "label": "p13:lower:optimal",
