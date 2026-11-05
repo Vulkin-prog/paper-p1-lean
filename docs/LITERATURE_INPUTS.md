@@ -25564,3 +25564,18 @@ This checkpoint provides the field, integral norm and trace foundation for negat
 P1-MATH-0390 adds twelve theorems, six definitions or abbreviations and three proved instances. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records388 improvements and two statement-scope corrections. No new axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15695 jobs); direct axiom audit passed for 14509 declarations using only propext, Classical.choice and Quot.sound; all 13838 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.60 GiB.
+
+
+## Uniform trace bound for imaginary integral norm-one elements
+
+Stable ID: p1:internal:imaginary-norm-one. The constant ten is uniform in all D>0 and deliberately loose. This proves unit multiplicity; it does not yet assert the total imaginary norm count.
+
+ImaginaryNormOne proves an explicit coefficient-independent bound: every actual finite population of algebraic integers of norm one in Q(sqrt(-D)) has at most ten elements, for every positive natural D. There is no squarefree hypothesis, conductor statement, height bound or imported classification of roots of unity.
+
+The positive norm formula bounds the real coordinate by one. The actual integer trace therefore has square at most four and lies in the five-element interval [-2,2]. The trace and the sign of the imaginary coordinate together determine the integral element: equal traces give equal real coordinates, equal norms then give equal imaginary squares, and the common sign resolves the square ambiguity. The resulting injection into [-2,2] times Bool proves the bound ten. This constant is deliberately loose; no sharp unit classification is claimed.
+
+This supplies the finite-unit-multiplicity step needed for the negative-discriminant conic branch. A total count for arbitrary nonzero imaginary norm equations and its conic application remain to be proved. Hyperbolic conics remain established by checkpoint389; parabolas, general BCN and original all-dimensional main13.4 remain open. No original numbered result is promoted.
+
+P1-MATH-0391 adds four theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records389 improvements and two statement-scope corrections. No axiom, external arithmetic premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15697 jobs); direct axiom audit passed for 14513 declarations using only propext, Classical.choice and Quot.sound; all 13843 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.59 GiB.

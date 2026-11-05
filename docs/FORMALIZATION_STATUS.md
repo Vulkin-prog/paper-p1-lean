@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records388 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records389 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14509 audited theorem/lemma declarations**. This
+- The project currently has **14513 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25313,3 +25313,16 @@ This checkpoint provides the field, integral norm and trace foundation for negat
 P1-MATH-0390 adds twelve theorems, six definitions or abbreviations and three proved instances. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records388 improvements and two statement-scope corrections. No new axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15695 jobs); direct axiom audit passed for 14509 declarations using only propext, Classical.choice and Quot.sound; all 13838 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.60 GiB.
+
+
+## Uniform trace bound for imaginary integral norm-one elements
+
+ImaginaryNormOne proves an explicit coefficient-independent bound: every actual finite population of algebraic integers of norm one in Q(sqrt(-D)) has at most ten elements, for every positive natural D. There is no squarefree hypothesis, conductor statement, height bound or imported classification of roots of unity.
+
+The positive norm formula bounds the real coordinate by one. The actual integer trace therefore has square at most four and lies in the five-element interval [-2,2]. The trace and the sign of the imaginary coordinate together determine the integral element: equal traces give equal real coordinates, equal norms then give equal imaginary squares, and the common sign resolves the square ambiguity. The resulting injection into [-2,2] times Bool proves the bound ten. This constant is deliberately loose; no sharp unit classification is claimed.
+
+This supplies the finite-unit-multiplicity step needed for the negative-discriminant conic branch. A total count for arbitrary nonzero imaginary norm equations and its conic application remain to be proved. Hyperbolic conics remain established by checkpoint389; parabolas, general BCN and original all-dimensional main13.4 remain open. No original numbered result is promoted.
+
+P1-MATH-0391 adds four theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records389 improvements and two statement-scope corrections. No axiom, external arithmetic premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15697 jobs); direct axiom audit passed for 14513 declarations using only propext, Classical.choice and Quot.sound; all 13843 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.59 GiB.

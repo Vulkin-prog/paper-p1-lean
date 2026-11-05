@@ -10359,6 +10359,10 @@ import PaperP1
 #print axioms PaperP1.HomogeneousCharts.chart_coefficient_bound
 #print axioms PaperP1.HomogeneousCharts.integer_resultant_ne_zero
 #print axioms PaperP1.HomogeneousCharts.integer_resultant_ne_zero_of_irreducible
+#print axioms PaperP1.ImaginaryNormOne.trace_square_le_four
+#print axioms PaperP1.ImaginaryNormOne.trace_mem_Icc
+#print axioms PaperP1.ImaginaryNormOne.code_injective_on_norm_one
+#print axioms PaperP1.ImaginaryNormOne.norm_one_card
 #print axioms PaperP1.ImaginaryQuadraticOrder.negative_not_square
 #print axioms PaperP1.ImaginaryQuadraticOrder.omega_sq
 #print axioms PaperP1.ImaginaryQuadraticOrder.omega_integral
