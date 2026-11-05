@@ -9106,8 +9106,11 @@ import PaperP1
 #print axioms PaperP1.PositiveDeterministicAnchorObstruction.printed_lower
 #print axioms PaperP1.PositiveDeterministicAnchorObstruction.uniform_power_obstruction
 #print axioms PaperP1.PositiveLineSplitCount.uniform_count
+#print axioms PaperP1.PositivePrintedRandomizedObstruction.printed_lower
+#print axioms PaperP1.PositivePrintedRandomizedObstruction.uniform_power_obstruction
 #print axioms PaperP1.PositiveQuarticObstruction.uniform_lower
 #print axioms PaperP1.PositiveQuarticObstructionUnderInputs.uniform_lower
+#print axioms PaperP1.PositiveRandomizedPrivateObstruction.finite_lower
 #print axioms PaperP1.PositiveSecondCumulant.uniform_lower
 #print axioms PaperP1.PositiveSecondCumulant.uniform_positive
 #print axioms PaperP1.PositiveSecondCumulant.uniform_hermite_admissibility
@@ -9117,6 +9120,7 @@ import PaperP1
 #print axioms PaperP1.PositiveSeparatedSourceProfileUnderInputs.article_3_3_positive
 #print axioms PaperP1.PositiveTwoCandidateDensity.uniform_two_candidates
 #print axioms PaperP1.PositiveTwoCandidateDensity.uniform_clean_two_candidates
+#print axioms PaperP1.PositiveUniversalPrivateObstruction.randomized_lower
 #print axioms PaperP1.PowerGap.small
 #print axioms PaperP1.PrefixMarkedWindowCount.mem_marked
 #print axioms PaperP1.PrefixMarkedWindowCount.finite_bound

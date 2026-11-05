@@ -3924,3 +3924,6 @@ public import PaperP1.Asymptotics.PositiveTwoCandidateDensity
 public import PaperP1.Analysis.PositiveFractionCostNormalization
 public import PaperP1.Asymptotics.PositiveAnchorCostScale
 public import PaperP1.Asymptotics.PositiveDeterministicAnchorObstruction
+public import PaperP1.Asymptotics.PositivePrintedRandomizedObstruction
+public import PaperP1.Asymptotics.PositiveRandomizedPrivateObstruction
+public import PaperP1.Asymptotics.PositiveUniversalPrivateObstruction

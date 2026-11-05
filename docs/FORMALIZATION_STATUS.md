@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records470 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records471 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15375 audited theorem/lemma declarations**. This
+- The project currently has **15379 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26745,3 +26745,22 @@ The source's sharper coefficient1-o(1) still requires its unresolved almost-all 
 P1-MATH-0472 adds three modules, five theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records470 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16419 jobs); direct axiom audit passed for 15375 declarations using only propext, Classical.choice and Quot.sound; all 14812 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.34 GiB.
+
+
+## Internal universal randomized positive-constant and no-polynomial-decay private-forcing obstruction
+
+The positive-constant all-anchor cost obstruction and its qualitative no-polynomial-decay consequence now extend internally to every allowed measurable randomized private forcing, with an arbitrary independent auxiliary probability space. The original source-word orientation rule, literal retained population, private-pivot prescription and unchanged nonprivate prime signs are retained. No Matomaki-Radziwill short-interval input is used. The full printed1-o(1) coefficient remains unproved, so complete companion T19.17 stays conditional. Its full statement and proof at companion_sections/limits_appendix.tex lines1295-1405 were rechecked.
+
+PositiveRandomizedPrivateObstruction.finite_lower uses the internal positive source-fraction bracket from checkpoint472 and the existing actual randomized private-forcing finite Palm ledger. That ledger's factor1/2 is retained exactly. The auxiliary finite probability law, source-word orientation and every forcing map satisfying the actual AgreesOnGood class follow a single uniform threshold. No candidate census, reciprocal lower bound or target cost estimate is assumed. The resulting constant depends only on the fixed critical-band, width and cutoff-exponent parameters.
+
+PositiveUniversalPrivateObstruction.randomized_lower transports this finite result to an arbitrary measurable auxiliary probability space. The already proved finite observation encodes all orientation and prime-output decisions that can affect the actual finite cost. Its induced law is constructed from the original auxiliary measure; measurability is explicit. The prescribed source word and unchanged nonprivate prime signs imply agreement on every full-good source, while the forcing remains arbitrary at the other retained sources. The exact offsite-observation identity identifies the finite cost with the actual measurable forcing cost. No finiteness, atomicity or special distribution of the original auxiliary space is imposed.
+
+PositivePrintedRandomizedObstruction.printed_lower specializes to exactly the printed cutoff Y=2(L+E+2), original critical band and nominal scale. It proves a fixed positive constant times one half of 2^(-2iota)*lambda_N^2*N^(-a) below the actual cost, uniformly over both types, all arithmetic anchors and every allowed measurable private forcing. The positivity statement concerns the cost; the conditional-law consequence of a fair orientation remains the separately established coupling property.
+
+uniform_power_obstruction fixes any alpha>0 and any real comparison factor K, chooses a<min(alpha,1/10), retains the uniform positive critical nominal prefactor and absorbs K*N^(-alpha) by an internal fixed power gap. The conclusion is uniform over all original parameters, every arithmetic anchor, every independent auxiliary probability law and every measurable private forcing in the stated class. This proves the randomized qualitative no-polynomial-decay consequence independently of the stronger almost-all source census.
+
+Both deterministic and universal randomized qualitative obstructions are now internal. The full T19.17 coefficient1-o(1), including its sharp half-factor version, still needs the unresolved almost-all logarithmic short-interval abundance. No assertion is made about orientations using the outside environment, other conditional couplings, signed scalar transport, dependence or total variation. The leading reciprocal and original specified signed-cost coefficients2 remain internal, with their finer o(nu_N) EIP errors open.
+
+P1-MATH-0473 adds three modules, four theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records471 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16425 jobs); direct axiom audit passed for 15379 declarations using only propext, Classical.choice and Quot.sound; all 14816 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.32 GiB.

@@ -23521,6 +23521,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "4aa5934ecb1c877aa8fa00b3cf089444e5b7bfa2"
+    },
+    {
+      "id": "P1-MATH-0473",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The deterministic qualitative all-anchor obstruction was internal, while the randomized result for arbitrary measurable auxiliary probability spaces still used the unproved almost-all short-interval census.",
+      "finding": "The internal positive-fraction cost bracket and actual randomized half-factor ledger give a finite-law obstruction. Exact measurable finite-observation transport extends it to every allowed auxiliary probability space, and a power comparison proves the universal randomized no-polynomial-decay consequence without the short-interval input.",
+      "proposed_revision": "Separate both qualitative all-anchor obstructions from the stronger1-o(1) coefficient. Include the internal positive-fraction proof for arbitrary measurable private forcing, retain its exact orientation and unchanged-prime scope, and keep the sharper almost-all census as the remaining full-statement obligation.",
+      "impact": "Discharges the universal randomized qualitative no-polynomial-decay consequence and positive-constant nominal cost bound internally, with arbitrary measurable auxiliary laws. Full T19.17 sharp coefficients remain conditional; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.PositivePrintedRandomizedObstruction.printed_lower",
+        "PaperP1.PositivePrintedRandomizedObstruction.uniform_power_obstruction",
+        "PaperP1.PositiveRandomizedPrivateObstruction.finite_lower",
+        "PaperP1.PositiveUniversalPrivateObstruction.randomized_lower"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16425 jobs); direct axiom audit passed for 15379 declarations using only propext, Classical.choice and Quot.sound; all 14816 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.32 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
