@@ -3755,3 +3755,10 @@ public import PaperP1.Asymptotics.RetainedComponentActivity
 public import PaperP1.Asymptotics.SharpCovarianceScale
 public import PaperP1.Asymptotics.SharpPairActivity
 public import PaperP1.Asymptotics.SharpRetainedConversion
+public import PaperP1.Asymptotics.CompressedPairMass
+public import PaperP1.Asymptotics.ConnectedFourCoreMass
+public import PaperP1.Asymptotics.ConnectedOneRankOffsetMass
+public import PaperP1.Asymptotics.ModifiedCountAllTails
+public import PaperP1.Asymptotics.NongoodPairJointMass
+public import PaperP1.Asymptotics.RetainedExceptionalEvent
+public import PaperP1.Asymptotics.TwoDependentPairJointMass

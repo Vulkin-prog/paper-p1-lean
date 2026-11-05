@@ -7078,6 +7078,8 @@ import PaperP1
 #print axioms PaperP1.CompressedNonalignedInteractionMass.uniform_mass
 #print axioms PaperP1.CompressedPairIntersectionCount.fixed_offsets
 #print axioms PaperP1.CompressedPairIntersectionCount.uniform_count
+#print axioms PaperP1.CompressedPairMass.uniform_bound
+#print axioms PaperP1.CompressedPairMass.uniform_subfamily
 #print axioms PaperP1.CompressedPairMassUnderInputs.uniform_bound
 #print axioms PaperP1.CompressedPairMassUnderInputs.uniform_subfamily
 #print axioms PaperP1.CompressedPrimitiveFiniteOrdersUnderInputs.uniform_orders
@@ -7116,10 +7118,12 @@ import PaperP1
 #print axioms PaperP1.ConnectedCompressedTripleMassUnderInputs.finite_cover
 #print axioms PaperP1.ConnectedCompressedTripleMassUnderInputs.finite_mass
 #print axioms PaperP1.ConnectedCompressedTripleMassUnderInputs.uniform_mass
+#print axioms PaperP1.ConnectedFourCoreMass.uniform_bound
 #print axioms PaperP1.ConnectedFourCoreMassUnderInputs.uniform_bound
 #print axioms PaperP1.ConnectedFourthReductionUnderBCN.uniform_reduction
 #print axioms PaperP1.ConnectedIndependent256Budget.uniform_bound
 #print axioms PaperP1.ConnectedJointBoundedNullityTail.uniform_bound
+#print axioms PaperP1.ConnectedOneRankOffsetMass.uniform_bound
 #print axioms PaperP1.ConnectedOneRankOffsetMassUnderInputs.uniform_bound
 #print axioms PaperP1.ConnectedReductionToTriples.uniform_range
 #print axioms PaperP1.ConnectedReductionToTriples.article_15_10
@@ -8402,6 +8406,8 @@ import PaperP1
 #print axioms PaperP1.ModerateOrderLogarithm.log_order_ratio_tendsto
 #print axioms PaperP1.ModerateOrderLogarithm.order_real_tendsto_atTop
 #print axioms PaperP1.ModerateOrderLogarithm.logarithmic_cost_tendsto
+#print axioms PaperP1.ModifiedCountAllTails.uniform_restored_totalVariation
+#print axioms PaperP1.ModifiedCountAllTails.companion_T19_3
 #print axioms PaperP1.ModifiedCountAllTailsUnderInputs.uniform_restored_totalVariation
 #print axioms PaperP1.ModifiedCountAllTailsUnderInputs.companion_T19_3
 #print axioms PaperP1.ModifiedMomentDecompositionUnderInputs.uniform_deficit
@@ -8494,6 +8500,7 @@ import PaperP1
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_activity
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_absolute_difference
 #print axioms PaperP1.NonconnectedActivityUnderInputs.uniform_bound
+#print axioms PaperP1.NongoodPairJointMass.uniform_bound
 #print axioms PaperP1.NongoodPairJointMassUnderInputs.uniform_bound
 #print axioms PaperP1.NonlinearPlaneDegreeCap.bounded_degree_sublinear
 #print axioms PaperP1.NonlinearPlaneDegreeCap.exists_cap_below
@@ -9099,6 +9106,9 @@ import PaperP1
 #print axioms PaperP1.RetainedClassTheorem.companion_T12_1
 #print axioms PaperP1.RetainedComponentActivity.uniform_bounds
 #print axioms PaperP1.RetainedComponentActivityUnderInputs.uniform_bounds
+#print axioms PaperP1.RetainedExceptionalEvent.uniform_badProbability
+#print axioms PaperP1.RetainedExceptionalEvent.uniform_totalVariation
+#print axioms PaperP1.RetainedExceptionalEvent.companion_T15_2
 #print axioms PaperP1.RetainedExceptionalEventUnderInputs.uniform_badProbability
 #print axioms PaperP1.RetainedExceptionalEventUnderInputs.uniform_totalVariation
 #print axioms PaperP1.RetainedExceptionalEventUnderInputs.companion_T15_2
@@ -9547,6 +9557,7 @@ import PaperP1
 #print axioms PaperP1.TwoChannelReferenceUnderInputs.height_six_phase
 #print axioms PaperP1.TwoChannelReferenceUnderInputs.uniform_law_remainder
 #print axioms PaperP1.TwoChannelReferenceUnderInputs.uniform_equivalents
+#print axioms PaperP1.TwoDependentPairJointMass.uniform_bound
 #print axioms PaperP1.TwoDependentPairJointMassUnderInputs.uniform_bound
 #print axioms PaperP1.TwoGoodEdgeSecondMomentUnderInputs.finite_upper
 #print axioms PaperP1.TwoGoodEdgeSecondMomentUnderInputs.uniform_error

@@ -22117,6 +22117,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "6460b072bad0239edecffe610aae363e1c0044f8"
+    },
+    {
+      "id": "P1-MATH-0440",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:core:exceptional",
+        "number": "T15.2",
+        "page": 57,
+        "source": "companion_sections/cores.tex",
+        "line": 511,
+        "statement_sha256": "1a1f10bd011bfda802c8ffb800620eddbefe2a72fde7cd8c9053f9e8573a3660"
+      },
+      "original_assumption": "The actual retained exceptional event and modified-count all-order tails retained geometric inputs through all-cardinality compressed and primitive activation seeds.",
+      "finding": "Internal all-cardinality rank-offset and four-core activity plus the exact compressed rank dichotomy prove the complete unrestricted distinguished-pair mass at exponent1. All activation seeds and the measurable retained event then have internal proofs, closing every original modified-count tail and moment assertion on one common threshold.",
+      "proposed_revision": "Use the exact rank-offset/four-core decomposition for unrestricted compressed mass and construct the retained exceptional event from internally bounded actual seeds. Keep the modified-count all-order bounds distinct from the original indicators, and retain the separated compressed exponents as separate obligations.",
+      "impact": "CompanionT15.2 andT19.3 become unconditional. The unrestricted exponent1 clause ofT15.1 is also unconditional, while its separated4/3 and5/4 clauses remain conditional. Coverage becomes131 proved,33 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.CompressedPairMass.uniform_bound",
+        "PaperP1.CompressedPairMass.uniform_subfamily",
+        "PaperP1.ConnectedFourCoreMass.uniform_bound",
+        "PaperP1.ConnectedOneRankOffsetMass.uniform_bound",
+        "PaperP1.ModifiedCountAllTails.uniform_restored_totalVariation",
+        "PaperP1.ModifiedCountAllTails.companion_T19_3",
+        "PaperP1.NongoodPairJointMass.uniform_bound",
+        "PaperP1.RetainedExceptionalEvent.uniform_badProbability",
+        "PaperP1.RetainedExceptionalEvent.uniform_totalVariation",
+        "PaperP1.RetainedExceptionalEvent.companion_T15_2",
+        "PaperP1.TwoDependentPairJointMass.uniform_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16095 jobs); direct axiom audit passed for 14951 declarations using only propext, Classical.choice and Quot.sound; all 14310 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.34 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
