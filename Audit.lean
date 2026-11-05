@@ -699,6 +699,13 @@ import PaperP1
 #print axioms PaperP1.BivariateWordSquares.wordPolynomial_not_square_right
 #print axioms PaperP1.BivariateWordSquares.wordPolynomial_not_square
 #print axioms PaperP1.BivariateWordSquares.wordFunction_not_square
+#print axioms PaperP1.BoundedFieldPolynomialNonvanishing.exists_nat_nonroot
+#print axioms PaperP1.BoundedMomentLinearForm.coefficient
+#print axioms PaperP1.BoundedMomentLinearForm.degree
+#print axioms PaperP1.BoundedMomentLinearForm.nonzero
+#print axioms PaperP1.BoundedMomentLinearForm.evaluation
+#print axioms PaperP1.BoundedMomentLinearForm.exists_parameter
+#print axioms PaperP1.BoundedMomentLinearForm.exists_coefficients
 #print axioms PaperP1.BoundedPlaneShear.direction_coefficient
 #print axioms PaperP1.BoundedPlaneShear.direction_degree
 #print axioms PaperP1.BoundedPlaneShear.direction_ne_zero
@@ -5061,6 +5068,7 @@ import PaperP1
 #print axioms PaperP1.IntegerGridTheorem.certificate_grid_bound
 #print axioms PaperP1.IntegerGridTheorem.basis_support_bounds
 #print axioms PaperP1.IntegerGridTheorem.article_13_3
+#print axioms PaperP1.IntegerLinearFormHeight.evaluation_bound
 #print axioms PaperP1.IntegerOffsetCRT.common_modEq
 #print axioms PaperP1.IntegerOffsetCRT.coordinate_card
 #print axioms PaperP1.IntegerOffsetCRT.box_card
@@ -12180,6 +12188,9 @@ import PaperP1
 #print axioms PaperP1.ZeroPartialDegreeFactor.secondForm_nonzero
 #print axioms PaperP1.ZeroPartialDegreeFactor.primitive_second_projection_count
 #print axioms PaperP1.ZeroPartialDegreeFactor.primitive_first_projection_count
+#print axioms PaperP1.BoundedProjectiveSectionAvoidance.exists_coefficients
+#print axioms PaperP1.BoundedProjectiveSectionAvoidance.exists_coefficients_and_height
+#print axioms PaperP1.BoundedProjectiveSectionAvoidance.rational_curve
 #print axioms PaperP1.GradedVeroneseProj.map_isIso
 #print axioms PaperP1.GradedVeroneseProj.iso_hom
 #print axioms PaperP1.OrdinaryCurveAffineChart.sourceZ_mem

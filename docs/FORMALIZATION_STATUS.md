@@ -116,7 +116,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records540 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records541 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -235,7 +235,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16083 audited theorem/lemma declarations**. This
+- The project currently has **16094 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27906,3 +27906,20 @@ Thus actual projective homogeneous section loci, complete finite incidence budge
 P1-MATH-0542 adds six modules, nineteen theorems and three definitions. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 540 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16899 jobs); direct axiom audit passed for 16083 declarations using only propext, Classical.choice and Quot.sound; all 15666 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.77 GiB.
+
+
+## Bounded integer linear coordinates avoiding complete projective sections
+
+BoundedFieldPolynomialNonvanishing proves that an actual nonzero polynomial of degree at most M over any characteristic-zero field is nonzero at one of the literal integers 0,...,M. This uses actual root inclusion, injective integer casts and the proved root-count bound.
+
+BoundedMomentLinearForm assigns to every nonzero vector w in F^n its actual moment polynomial sum_i w_i T^i. The coefficients, evaluation, degree at most n-1 and nonvanishing are all proved. The product over an actual finite vector family S has degree at most (n-1)*|S|. The integer nonroot theorem supplies one t at most this bound for which every moment polynomial is nonzero. The actual integer coefficient vector u_i=t^i therefore avoids every vector in S, with each coefficient at most ((n-1)*|S|+1)^(n-1).
+
+IntegerLinearFormHeight proves the actual integer evaluation bound: if 0<=u_i<=B and |v_i|<=H, then |sum_i u_i v_i|<=n*B*H. The conclusion concerns the genuine multivariate linear polynomial and original integer coordinates.
+
+BoundedProjectiveSectionAvoidance applies this construction to the internally constructed complete actual projective section locus. For a homogeneous prime curve ideal with its genuine linear Hilbert polynomial D*r+b and an actual homogeneous degree-e equation outside that ideal, one nonnegative integer coefficient vector avoids every point of the entire projective section, with each coefficient at most ((n-1)*e*D+1)^(n-1). The same coefficients work for every height H and every original integer vector, with the proved height cost n*((n-1)*e*D+1)^(n-1)*H. A corollary retains the actual rational ProjectiveCurveData model and its internally derived integer Hilbert degree. The coefficients are chosen before H and before any finite population; no supplied exceptional-point list or projection-height premise is used.
+
+This closes a bounded integer coordinate-selection step needed for controlled higher-dimensional projection. Actual finiteness and birationality of the projected curve, scalar-extension degree transport and the complete all-dimensional counting theorem remain separate. Main13.4 and companionT1.7/T19.17 stay unresolved; main13.5 remains fully internally proved.
+
+P1-MATH-0543 adds four modules, eleven theorems and one definition. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 541 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16907 jobs); direct axiom audit passed for 16094 declarations using only propext, Classical.choice and Quot.sound; all 15678 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.75 GiB.

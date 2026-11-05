@@ -26265,6 +26265,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "b19164b61dd30ba1b7bab2c4eebff478a563e6ee"
+    },
+    {
+      "id": "P1-MATH-0543",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "Common projective normalization was qualitative. No explicit integer coefficient bound or actual integer height cost had yet been derived for a form avoiding the entire section locus.",
+      "finding": "An actual bounded integer moment curve supplies a linear form nonzero on every point of the complete section, with explicit polynomial-in-degree coefficients and an actual uniform integer height bound.",
+      "proposed_revision": "Use this proved bounded coordinate selection in a controlled projection argument. Keep projection finiteness, birationality and scalar-extension degree transport explicit until independently proved.",
+      "impact": "Internalizes simultaneous avoidance and height control for actual complete projective sections, with coefficients independent of height and population.",
+      "evidence": [
+        "PaperP1.BoundedFieldPolynomialNonvanishing.exists_nat_nonroot",
+        "PaperP1.BoundedMomentLinearForm.coefficient",
+        "PaperP1.BoundedMomentLinearForm.degree",
+        "PaperP1.BoundedMomentLinearForm.nonzero",
+        "PaperP1.BoundedMomentLinearForm.evaluation",
+        "PaperP1.BoundedMomentLinearForm.exists_parameter",
+        "PaperP1.BoundedMomentLinearForm.exists_coefficients",
+        "PaperP1.IntegerLinearFormHeight.evaluation_bound",
+        "PaperP1.BoundedProjectiveSectionAvoidance.exists_coefficients",
+        "PaperP1.BoundedProjectiveSectionAvoidance.exists_coefficients_and_height",
+        "PaperP1.BoundedProjectiveSectionAvoidance.rational_curve",
+        "PaperP1.BoundedMomentLinearForm.moment"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16907 jobs); direct axiom audit passed for 16094 declarations using only propext, Classical.choice and Quot.sound; all 15678 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.75 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -4138,3 +4138,7 @@ public import PaperP1.Algebra.LinearNormalizedHomogeneousInterpolation
 public import PaperP1.Algebra.LinearNormalizedPointEvaluation
 public import PaperP1.Geometry.ProjectiveHomogeneousSectionPoints
 public import PaperP1.Geometry.ProjectiveSectionFiniteSet
+public import PaperP1.Algebra.BoundedFieldPolynomialNonvanishing
+public import PaperP1.Algebra.BoundedMomentLinearForm
+public import PaperP1.Arithmetic.IntegerLinearFormHeight
+public import PaperP1.Geometry.BoundedProjectiveSectionAvoidance
