@@ -23972,6 +23972,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "9a5cac8a122e426a65318c843e5fc8db914daa3f"
+    },
+    {
+      "id": "P1-MATH-0485",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:nonaligned",
+        "number": "13.6",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 259,
+        "statement_sha256": "bfe3ffef35f01b69168fe958413ef9b1f7970253c5be921e9b3ee5a73445d770"
+      },
+      "original_assumption": "The actual nonaligned-rank route discarded the common-curve coefficient-height bound and positive fibre degree before invoking a general coefficient-uniform BCN estimate.",
+      "finding": "An additive height/root prime scale gives a finite count C D^2 L*((kappa+D+1)L+N^(1/b)); dividing by b preserves the stronger degree-weighted budget. The actual common-curve rank comparison also retains max(degreeX,degreeY) exactly.",
+      "proposed_revision": "Retain the constructed coefficient height and full fibre factor throughout the rank route. Apply the new internal finite estimate only after its geometric, orientation and small-degree cases are supplied uniformly.",
+      "impact": "Provides concrete internal height-sensitive counting and exact degree-weighted rank ingredients. The final actual common-curve application and complete nonaligned-rank conclusion remain conditional; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.AdditiveHeightPrimeScale.exists_scale",
+        "PaperP1.DegreeWeightedCurveGridBudget.rank_budget",
+        "PaperP1.HeightSensitiveAffineParameters.obstruction_nat",
+        "PaperP1.HeightSensitiveAffineParameters.obstruction_real",
+        "PaperP1.HeightSensitiveAffineCount.uniform_count",
+        "PaperP1.HeightSensitiveAffineCount.uniform_normalized_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16489 jobs); direct axiom audit passed for 15497 declarations using only propext, Classical.choice and Quot.sound; all 14945 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.06 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -3955,3 +3955,7 @@ public import PaperP1.Arithmetic.FifthDegreeUniformFieldCount
 public import PaperP1.Arithmetic.FifthDegreeUniformPlaneCount
 public import PaperP1.Asymptotics.FifthGrowingDegreePlaneCount
 public import PaperP1.Diophantine.FifthDegreeUniformAffineCount
+public import PaperP1.Arithmetic.AdditiveHeightPrimeScale
+public import PaperP1.Arithmetic.DegreeWeightedCurveGridBudget
+public import PaperP1.Arithmetic.HeightSensitiveAffineParameters
+public import PaperP1.Diophantine.HeightSensitiveAffineCount

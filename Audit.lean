@@ -3236,6 +3236,7 @@ import PaperP1
 #print axioms PaperP1.ActualVerticalGrid.actual_grid_error
 #print axioms PaperP1.ActualVerticalLattice.grid_center_identity
 #print axioms PaperP1.ActualVerticalLattice.actual_point_box
+#print axioms PaperP1.AdditiveHeightPrimeScale.exists_scale
 #print axioms PaperP1.AdjacentSquareDivisibility.residue_exists
 #print axioms PaperP1.AdjacentSquareDivisibility.residue_progression_count
 #print axioms PaperP1.AdjacentSquareDivisibility.solutions_card_lower
@@ -3996,6 +3997,7 @@ import PaperP1
 #print axioms PaperP1.DegreeUniformPlanePresentation.exists_presentation
 #print axioms PaperP1.DegreeUniformPrimeScale.box_root_bound
 #print axioms PaperP1.DegreeUniformPrimeScale.exists_scale
+#print axioms PaperP1.DegreeWeightedCurveGridBudget.rank_budget
 #print axioms PaperP1.DenseCompressedPairs.mem_pairs
 #print axioms PaperP1.DenseCompressedPairs.cover
 #print axioms PaperP1.DenseCompressedPairs.offset_card_le
@@ -4531,6 +4533,8 @@ import PaperP1
 #print axioms PaperP1.HeightFiveChannelCorrection.signed_four_five
 #print axioms PaperP1.HeightFiveChannelCorrection.heightSum_five_closed
 #print axioms PaperP1.HeightFiveChannelCorrection.correction_closed
+#print axioms PaperP1.HeightSensitiveAffineParameters.obstruction_nat
+#print axioms PaperP1.HeightSensitiveAffineParameters.obstruction_real
 #print axioms PaperP1.IndexedPrimeOffsets.indexEquiv_val
 #print axioms PaperP1.IndexedPrimeOffsets.indexEquiv_symm_val
 #print axioms PaperP1.IndexedPrimeOffsets.primeSet_prod
@@ -11300,6 +11304,8 @@ import PaperP1
 #print axioms PaperP1.PellInput.quadraticOrderConductorFiberBound
 #print axioms PaperP1.HeathBrownHigherDegreeBiformInput.full_input
 #print axioms PaperP1.HeathBrownHigherDegreeBiformInput.restriction_of_full_input
+#print axioms PaperP1.HeightSensitiveAffineCount.uniform_count
+#print axioms PaperP1.HeightSensitiveAffineCount.uniform_normalized_count
 #print axioms PaperP1.HomogeneousCharts.chart_degree
 #print axioms PaperP1.HomogeneousCharts.chart_homogenize
 #print axioms PaperP1.HomogeneousCharts.chart_coeff
