@@ -487,7 +487,8 @@
           "scope": "Full exact main1.4 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
           "checkpoint": "P1-MATH-0435"
         }
-      ]
+      ],
+      "validation_commit": "d4209906426c9ded636b8f8e14ceec31470357a7"
     },
     {
       "label": "p1:limits:local-rigidity",
@@ -10899,7 +10900,8 @@
           "scope": "Full exact main18.1 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
           "checkpoint": "P1-MATH-0435"
         }
-      ]
+      ],
+      "validation_commit": "d4209906426c9ded636b8f8e14ceec31470357a7"
     },
     {
       "label": "p13:channels:weighted-nonaligned",
@@ -11240,7 +11242,8 @@
           "scope": "Full exact main18.3 conclusion with literal finite channel coefficients and moving phases, every height fixed beforeN. Internal channel arithmetic, phase analysis, stability and exponent1 first-law proof; no general input property or full-cumulant4/3 law is asserted.",
           "checkpoint": "P1-MATH-0435"
         }
-      ]
+      ],
+      "validation_commit": "d4209906426c9ded636b8f8e14ceec31470357a7"
     },
     {
       "label": "p1:cor:compound",
