@@ -3527,3 +3527,4 @@ public import PaperP1.Diophantine.FiniteFieldPlaneZeroBound
 public import PaperP1.Diophantine.SmoothResidueClasses
 public import PaperP1.Diophantine.ProjectivePrimeExceptions
 public import PaperP1.Diophantine.ProjectivePrimeHeight
+public import PaperP1.Diophantine.FinitePrimeBiformCount

@@ -10117,6 +10117,8 @@ import PaperP1
 #print axioms PaperP1.FiniteFieldPlaneZeroBound.plane_card
 #print axioms PaperP1.FiniteFieldPlaneZeroBound.coefficient_map_degree_le
 #print axioms PaperP1.FiniteFieldPlaneZeroBound.smooth_integer_classes_card
+#print axioms PaperP1.FinitePrimeBiformCount.bounded_count
+#print axioms PaperP1.FinitePrimeBiformCount.unrestricted_second_pair_count
 #print axioms PaperP1.FourChartEquations.family_homogeneous
 #print axioms PaperP1.FourChartEquations.curve_nonzero
 #print axioms PaperP1.FourChartEquations.population_zero
