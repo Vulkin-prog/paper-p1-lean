@@ -33352,7 +33352,8 @@
           "scope": "Full exact companionT15.2 conclusions: actual retained measurable event/direct structure or all original modified-count tails, moments and exponential bounds on one common threshold. All activation and structural uses are internally proved; no general input property asserted.",
           "checkpoint": "P1-MATH-0440"
         }
-      ]
+      ],
+      "validation_commit": "cd81deb8b6e3a261f27d88b56e1e4e5cf45d458e"
     },
     {
       "label": "p1:core:low-nullity",
@@ -34519,7 +34520,8 @@
           "scope": "Full exact companionT19.3 conclusions: actual retained measurable event/direct structure or all original modified-count tails, moments and exponential bounds on one common threshold. All activation and structural uses are internally proved; no general input property asserted.",
           "checkpoint": "P1-MATH-0440"
         }
-      ]
+      ],
+      "validation_commit": "cd81deb8b6e3a261f27d88b56e1e4e5cf45d458e"
     },
     {
       "label": "p1:limits:branching",
