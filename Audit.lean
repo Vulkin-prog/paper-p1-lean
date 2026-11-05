@@ -2798,6 +2798,9 @@ import PaperP1
 #print axioms PaperP1.GraphTangentEvaluation.hasDerivAt_evaluation
 #print axioms PaperP1.GraphTangentEvaluation.deriv_evaluation
 #print axioms PaperP1.GraphTangentEvaluation.equation_constant
+#print axioms PaperP1.GraphTangentSmooth.contDiffAt_velocity
+#print axioms PaperP1.GraphTangentSmooth.velocity_contDiffOn
+#print axioms PaperP1.GraphTangentSmooth.contDiffOn_trajectory
 #print axioms PaperP1.HardSaddleExplicitScale.tendsto_logCore_atTop
 #print axioms PaperP1.HardSaddleExplicitScale.finite_normalized_gap
 #print axioms PaperP1.HardSaddleExplicitScale.tendsto_hard_saddle_gap
@@ -2846,6 +2849,10 @@ import PaperP1
 #print axioms PaperP1.LocalLinearIndependence.mono
 #print axioms PaperP1.LocalLinearIndependence.first_nonzero
 #print axioms PaperP1.LocalLinearIndependence.normalized_independent
+#print axioms PaperP1.LocalNormalizedGraphPiece.exists_trajectory
+#print axioms PaperP1.LocalNormalizedGraphPiece.first_coordinate_identity
+#print axioms PaperP1.LocalNormalizedGraphPiece.exists_piece
+#print axioms PaperP1.LocalNormalizedGraphPiece.exists_smooth_piece_with_derivatives
 #print axioms PaperP1.LocalRegularTangentPiece.exists_trajectory
 #print axioms PaperP1.LocalRegularTangentPiece.exists_regular_piece
 #print axioms PaperP1.LocalRegularTangentPiece.exists_piece_at_nonsingular

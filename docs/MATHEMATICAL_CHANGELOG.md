@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**505 mathematical improvements and two statement-scope corrections are confirmed.**
+**506 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26473,3 +26473,18 @@ This is the first normalized coordinate orientation. Swapped coordinates, existe
 P1-MATH-0507 adds three modules, twelve theorems and four definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 505 improvements and two P1 statement-scope corrections, with the external BCN sign erratum tracked separately. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16629 jobs); direct axiom audit passed for 15705 declarations using only propext, Classical.choice and Quot.sound; all 15209 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.57 GiB.
+
+
+## Constructed smooth normalized graph charts with exact first coordinate
+
+GraphTangentSmooth proves that the actual normalized velocity field (1,-P_x/P_y) is C^n at each point with P_y nonzero, for every smoothness order. It also proves smooth evaluation of that velocity along actual component functions on a parameter domain with nonzero denominator. Induction on derivative order then shows that every actual normalized trajectory on an open set is C-infinity. Smoothness of the trajectory is derived from the equation, not supplied as a premise.
+
+LocalNormalizedGraphPiece applies the pinned Mathlib local ODE existence theorem to that locally smooth rational vector field. Continuity retains the required nonzero P_y on a smaller open interval. At any actual point z of P=0 with P_y(z) nonzero, it constructs a genuine normalized interval through z, using parameter t_0=z_0. The first coordinate is proved to equal the parameter everywhere on the interval: subtract the identity function, use the actual derivative zero and the exact initial value. The curve equation is preserved by the normalized tangent equation. No irreducibility, supplied trajectory or nonstationary-component hypothesis is needed for this local construction.
+
+The resulting Piece structure contains only actual interval, path, equation and first-coordinate identity data. The final theorem constructs a piece before every tested polynomial Q and derivative order j>=1, proves both coordinate functions C-infinity, and supplies the previously proved exact rational formula for the j-th actual derivative of Q with numerator degree at most deg(Q)+2 deg(P)j and denominator P_y^(2j-1). Thus the positive-order identities now apply to internally constructed local graphs at every such point, rather than only supplied charts.
+
+This proves the first normalized coordinate orientation with actual chart existence and exact parameter normalization. The other orientation, controlled derivative exceptions, global controlled piece counts, bounded parametrizations, sharp quadratic-degree plane counting and higher-dimensional projection remain separate. Full main13.4/13.5 remain unresolved. The current generic plane estimate stays cubic and covers the full a<1/3 growing-degree range. The external BCN sign erratum remains separately recorded; neither P1 source statement correction is changed.
+
+P1-MATH-0508 adds two modules, seven theorems and one structure. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 506 improvements and two P1 statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16633 jobs); direct axiom audit passed for 15712 declarations using only propext, Classical.choice and Quot.sound; all 15217 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.55 GiB.

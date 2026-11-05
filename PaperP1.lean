@@ -4023,3 +4023,5 @@ public import PaperP1.Analysis.CurveChebyshevExceptions
 public import PaperP1.Algebra.RationalTangentNumerator
 public import PaperP1.Analysis.GraphTangentEvaluation
 public import PaperP1.Analysis.IteratedGraphDerivative
+public import PaperP1.Analysis.GraphTangentSmooth
+public import PaperP1.Analysis.LocalNormalizedGraphPiece

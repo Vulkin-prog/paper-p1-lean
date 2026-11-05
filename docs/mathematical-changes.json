@@ -24863,6 +24863,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "e8eb79df7e1a172bb239438b3f3ed9bed26482af"
+    },
+    {
+      "id": "P1-MATH-0508",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The rational derivative identities applied to supplied normalized charts, without an internal construction or a proof that the parameter is the first coordinate.",
+      "finding": "Local ODE existence and denominator continuity construct an actual smooth graph at every curve point with P_y nonzero; its first coordinate is identically the parameter and every positive-order derivative formula follows internally.",
+      "proposed_revision": "Use the constructed normalized charts with explicit denominator condition, separating their local existence from controlled global covering and derivative bounds.",
+      "impact": "Closes local normalized chart existence, actual C-infinity regularity and all-positive-order rational derivative evaluation for the first orientation. Full BCN remains open.",
+      "evidence": [
+        "PaperP1.GraphTangentSmooth.contDiffAt_velocity",
+        "PaperP1.GraphTangentSmooth.velocity_contDiffOn",
+        "PaperP1.GraphTangentSmooth.contDiffOn_trajectory",
+        "PaperP1.LocalNormalizedGraphPiece.exists_trajectory",
+        "PaperP1.LocalNormalizedGraphPiece.first_coordinate_identity",
+        "PaperP1.LocalNormalizedGraphPiece.exists_piece",
+        "PaperP1.LocalNormalizedGraphPiece.exists_smooth_piece_with_derivatives",
+        "PaperP1.LocalNormalizedGraphPiece.Piece"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16633 jobs); direct axiom audit passed for 15712 declarations using only propext, Classical.choice and Quot.sound; all 15217 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.55 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
