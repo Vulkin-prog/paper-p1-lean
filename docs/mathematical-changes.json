@@ -24342,6 +24342,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "c6df8bb68d949f197a68bd57f65eb212f34b02c8"
+    },
+    {
+      "id": "P1-MATH-0495",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:sublinear-grid",
+        "number": "13.5",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 228,
+        "statement_sha256": "ef4c221ed67d6eba27c4ceeeb16591c98447e85f2c53b4e4c6e0a2e6441f46fa"
+      },
+      "original_assumption": "The coefficient-uniform generic curve presentation paid a cubic-in-degree integer interpolation height, even though enlarged interpolation retains a fixed fractional kernel gap.",
+      "finding": "The actual wide interpolation, finite Bezout threshold and genuine integer factor selection construct an associated exact-degree geometric equation with height at mostN^(256D), including the complete bounded-shear form.",
+      "proposed_revision": "Use the wide multiple-polynomial interpolation and actual integer factor-height argument to retain a linear-in-degree height exponent before applying the affine counting theorem.",
+      "impact": "Closes the improved associated height presentation and its bounded-shear transport. The sharper generic point-count and growing-range consequences remain subsequent work.",
+      "evidence": [
+        "PaperP1.LinearHeightAssociatedPlanePresentation.associated_degree",
+        "PaperP1.LinearHeightAssociatedPlanePresentation.exists_presentation",
+        "PaperP1.LinearHeightCurveBudget.interpolation_height_power",
+        "PaperP1.LinearHeightCurveBudget.factor_height_power",
+        "PaperP1.LinearHeightPlanePresentation.exists_presentation"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16551 jobs); direct axiom audit passed for 15573 declarations using only propext, Classical.choice and Quot.sound; all 15044 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.80 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -4738,6 +4738,11 @@ import PaperP1
 #print axioms PaperP1.LinearCurveAlignment.bounded_grid_alignment
 #print axioms PaperP1.LinearCurveAlignment.actual_linear_case
 #print axioms PaperP1.LinearCurveAlignment.nonaligned_degree_ne_one
+#print axioms PaperP1.LinearHeightAssociatedPlanePresentation.associated_degree
+#print axioms PaperP1.LinearHeightAssociatedPlanePresentation.exists_presentation
+#print axioms PaperP1.LinearHeightCurveBudget.interpolation_height_power
+#print axioms PaperP1.LinearHeightCurveBudget.factor_height_power
+#print axioms PaperP1.LinearHeightPlanePresentation.exists_presentation
 #print axioms PaperP1.LinearPlaneGridBound.offsetBox_card
 #print axioms PaperP1.LinearPlaneGridBound.grid_card_of_outer_positive
 #print axioms PaperP1.LinearPlaneGridBound.grid_card_swap

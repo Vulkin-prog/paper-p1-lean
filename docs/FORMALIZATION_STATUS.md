@@ -11,6 +11,7 @@ Main1.2/17.3 are unconditional (P1-MATH-0491): exact moving Poisson total-variat
 Main19.1 is unconditional (P1-MATH-0492): exact4/3 Hermite approximation with actual admissibility and every fixed-height rate/moving equivalent. All main optimal scalar-law conclusions now have internal proofs.
 
 Current remaining numbered obligations: main13.4/13.5, companionT1.7/T19.17 and the literal falseT1.10/T5.1 statements requiring their already recorded scope corrections. Coverage is161 proved,3 conditional and3 in_progress;71 main and90 companion results are proved.
+P1-MATH-0495 supplies an actual associated heightN^(256D) equation of exact degreeD, including bounded shear, for every geometric curve population larger than4D^2. The sharper generic point-count consequence remains subsequent work; the current generic point bound staysD^5.
 Neither document is fully formalized.
 
 Main14.1 and14.6 are unconditional (P1-MATH-0488): the three-strong-nonaligned-pair residual has internal actual massN^(-3/2+epsilon), closing the full optimal two-sided41/30 third factorial cumulant and absolute third activity. Every original subground, incompatible sector and repeated-index term is retained.
@@ -103,7 +104,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records492 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records493 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -222,7 +223,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15568 audited theorem/lemma declarations**. This
+- The project currently has **15573 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27131,3 +27132,20 @@ The enlarged interpolation equation is not yet asserted to be associated to the 
 P1-MATH-0494 adds three modules, ten theorems and five finite-coordinate/evaluation/interpolation definitions. No complete numbered statement is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. All main optimal scalar-law conclusions and complete13.6/13.8/14.1/14.6 remain internally proved. The project records492 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16545 jobs); direct axiom audit passed for 15568 declarations using only propext, Classical.choice and Quot.sound; all 15039 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.83 GiB.
+
+
+## Actual associated curve presentations with a linear degree height exponent
+
+An actual associated integer equation with coefficient heightN^(256D) is now internally constructed for every geometrically integral rational curve of degreeD>=2, D<=N, once the actual finite population has more than4D^2 points in a box of radiusB<=(D+1)N. The exponent is linear inD rather than cubic. The original coefficients are unrestricted; no low-height presentation is an input. The selected integer equation is irreducible, geometrically integral, associated to the original rational curve, has the exact same total degree and vanishes at every original population point.
+
+LinearHeightCurveBudget proves the explicit finite inequalities behind the improvement. The wide integer auxiliary height(3*(2D+1)^2*(B^(4D)+1))^7 is at mostN^(128D). Every actual integer factor of that auxiliary equation has height at mostN^(256D), using the already proved factor-height theorem, its exact partial-degree and norm allowances, andD<=N. All inequalities have explicit constants and cover the full stated natural-number endpoint range.
+
+LinearHeightAssociatedPlanePresentation supplies the missing geometric application. The constructed auxiliary polynomial has total degree at most4D. If it were not divisible by the original rational irreducible equation, finite Bezout would bound the actual population by4D^2. The strict larger-population hypothesis therefore proves divisibility. The actual integer irreducible factor selector then gives an associated factor dividing the integer auxiliary equation, so its height is genuinely controlled. Rational association preserves the exact total degree, absolute irreducibility and every original zero; all coefficient casts and point-map injections are included.
+
+LinearHeightPlanePresentation also proves the complete bounded-shear form. For an unrestricted geometric integer equation of degreeD and a population inside[-N,N]^2 with more than4D^2 points, there is an actual shear parameter0<=t<=D and an associated integer equation with exact total/outer degreeD, height at mostN^(256D), geometric and integer irreducibility, and zeros at every sheared population point. The population cardinality and coordinate radius(D+1)N are controlled internally. This replaces the previous cubic-in-degree interpolation height at this presentation step.
+
+Applying this presentation to the height-sensitive affine count, removing the shear scale and proving a sharper generic point estimate are subsequent obligations. No new generic point-count exponent or growing-degree range is claimed at this checkpoint. The current field- and coefficient-uniform plane bound remainsD^5*(Nat.log2N+1)^2*N^(1/D), with rangea<1/5. Complete main13.5 and full quadratic-degree/all-dimensional BCN remain unresolved. The source growing-degree application at main_sections/pair_rigidity.tex228-255 was rechecked with that distinction.
+
+P1-MATH-0495 adds three modules, five theorems and no definitions. No complete numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. All main optimal scalar-law conclusions and complete13.6/13.8/14.1/14.6 remain internally proved. The project records493 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16551 jobs); direct axiom audit passed for 15573 declarations using only propext, Classical.choice and Quot.sound; all 15044 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.80 GiB.

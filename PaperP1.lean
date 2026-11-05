@@ -3987,3 +3987,6 @@ public import PaperP1.Algebra.RectangularPolynomialCoordinates
 public import PaperP1.Algebra.PolynomialMultipleEvaluationRank
 public import PaperP1.Algebra.RationalAssociatedIntegerFactor
 public import PaperP1.Arithmetic.WidePlaneInterpolation
+public import PaperP1.Arithmetic.LinearHeightAssociatedPlanePresentation
+public import PaperP1.Arithmetic.LinearHeightCurveBudget
+public import PaperP1.Arithmetic.LinearHeightPlanePresentation
