@@ -10355,6 +10355,9 @@ import PaperP1
 #print axioms PaperP1.SingleResultantFibreCount.finite_count
 #print axioms PaperP1.SingleResultantFibreCount.actual_real_solutions_count
 #print axioms PaperP1.SingleResultantFibreCount.coprime_actual_real_solutions_count
+#print axioms PaperP1.SmoothClassAuxiliary.minor_vanishing
+#print axioms PaperP1.SmoothClassAuxiliary.exists_coefficients
+#print axioms PaperP1.SmoothClassAuxiliary.exists_auxiliary
 #print axioms PaperP1.SourceBihomogeneousEquation.source_homogeneous
 #print axioms PaperP1.SourceBihomogeneousEquation.source_evaluation
 #print axioms PaperP1.SourceBihomogeneousEquation.inverse_equation_value
