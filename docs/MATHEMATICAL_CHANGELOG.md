@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**340 mathematical improvements and two statement-scope corrections are confirmed.**
+**341 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23894,3 +23894,16 @@ The six new theorems supply a finite algebraic core of the p-adic determinant st
 P1-MATH-0342 adds one module and no definitions. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records340 improvements and two statement-scope corrections. One small source module from the already pinned Mathlib revision is compiled locally for the distinct-degree sum estimate; no dependency is downloaded or changed. No new axiom, unproved literature premise, compiler change or original manuscript edit is introduced. Main13.4 and the recorded geometric inputs remain open. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15585 jobs); direct axiom audit passed for 14228 declarations using only propext, Classical.choice and Quot.sound; all 13504 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.30 GiB.
+
+
+## Finite simple-root lifting and polynomial residue-class determinants
+
+NilpotentSimpleRoot.complete_of_pow_eq_bot proves I-adic completeness directly when I^N=0 over any commutative ring: every compatible Cauchy sequence is constant from precision N. exists_root then reuses the already checked nonmonic simple-root lifting theorem to lift any root modulo I whose derivative is a unit modulo I. unique_root proves that two actual roots congruent modulo I agree when the derivative at one is a unit modulo I. It uses a finite second-order Taylor identity and unit cancellation, with no domain, monicity or convergence premise.
+
+PolynomialResidueDeterminant.polynomial_evaluation_dvd proves the triangular divisor p^(k*(k-1)/2) for matrices of arbitrary polynomial evaluations at arguments divisible by p. The necessary finite coefficient cutoff is chosen internally from the actual row degrees. same_residue_evaluation_dvd translates this to any common residue class using exact polynomial Taylor translation. congruent_polynomial_evaluation_dvd retains the divisor for an actual matrix congruent modulo that power to the polynomial evaluation matrix. zero_of_small proves the exact integer vanishing criterion when the determinant's absolute value is smaller than its positive natural-power divisor.
+
+These seven theorems in two modules supply finite lifting and determinant tools for the planned smooth-residue-class construction. They do not yet construct the branch in the truncated coefficient ring or identify all actual curve evaluations with its polynomial representatives. Good-prime selection, auxiliary forms and the global sharp b>=2 Heath-Brown count remain open. No infinite-series convergence hypothesis is introduced by this finite route.
+
+P1-MATH-0343 introduces no definitions. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records341 improvements and two statement-scope corrections. No dependency download, axiom, unproved literature premise, compiler change or original manuscript edit is introduced. Main13.4 and the recorded geometric inputs remain open. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15589 jobs); direct axiom audit passed for 14235 declarations using only propext, Classical.choice and Quot.sound; all 13511 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.29 GiB.

@@ -1466,6 +1466,9 @@ import PaperP1
 #print axioms PaperP1.NativeVeroneseVerticalChart.coordinate_ne_zero
 #print axioms PaperP1.NativeVeroneseVerticalChart.equiv_dehomogenization
 #print axioms PaperP1.NativeVeroneseVerticalChart.equiv_radicand
+#print axioms PaperP1.NilpotentSimpleRoot.complete_of_pow_eq_bot
+#print axioms PaperP1.NilpotentSimpleRoot.exists_root
+#print axioms PaperP1.NilpotentSimpleRoot.unique_root
 #print axioms PaperP1.NonnegativePowerDifference.bound
 #print axioms PaperP1.OddDegreeFieldSquares.two_dvd_degree
 #print axioms PaperP1.OddDegreeFieldSquares.isSquare_iff
@@ -1554,6 +1557,10 @@ import PaperP1
 #print axioms PaperP1.PolynomialPowerMapFinite.variable_integral
 #print axioms PaperP1.PolynomialPowerMapFinite.generated
 #print axioms PaperP1.PolynomialPowerMapFinite.finite
+#print axioms PaperP1.PolynomialResidueDeterminant.polynomial_evaluation_dvd
+#print axioms PaperP1.PolynomialResidueDeterminant.congruent_polynomial_evaluation_dvd
+#print axioms PaperP1.PolynomialResidueDeterminant.same_residue_evaluation_dvd
+#print axioms PaperP1.PolynomialResidueDeterminant.zero_of_small
 #print axioms PaperP1.PolynomialScalarProjection.project_coefficient
 #print axioms PaperP1.PolynomialScalarProjection.project_add
 #print axioms PaperP1.PolynomialScalarProjection.project_smul
