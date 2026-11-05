@@ -23552,6 +23552,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "0ed8bc1c32e76519ef804783a8759bb0a2322598"
+    },
+    {
+      "id": "P1-MATH-0474",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The internal Euler estimates used a coarse absolute prime harmonic constant. That envelope loses the coefficient precision needed for an o(nu_N) reciprocal upper error, even though the PNT was already internally proved.",
+      "finding": "The internal Chebyshev PNT and an exact finite-prefix Abel comparison give arbitrary1+eta leading weighted prime bounds. A reciprocal-logarithmic weight yields uniform prime-power, Euler and actual pivot-count estimates with the constant chosen before every moving exponent and cutoff.",
+      "proposed_revision": "Use the sharper internally proved uniform weighted-prime estimate for the fine upper-bound route. Retain its fixed finite-prefix allowance and explicit integer weight sum until the analytic integral and saddle comparisons are separately proved. Do not count the preparatory estimate as the full EIP equivalent.",
+      "impact": "Provides true-leading-constant weighted Euler control uniform in all exponents and cutoffs, and transports it to the actual pivot census. The fine reciprocal equivalent remains unresolved and numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.PNTPrimePowerUpper.weight_nonneg",
+        "PaperP1.PNTPrimePowerUpper.weight_antitone",
+        "PaperP1.PNTPrimePowerUpper.weight_one_le",
+        "PaperP1.PNTPrimePowerUpper.prime_weight_identity",
+        "PaperP1.PNTPrimePowerUpper.uniform_prime_upper",
+        "PaperP1.PNTPrimePowerUpper.uniform_euler_upper",
+        "PaperP1.PNTPrimePowerUpper.uniform_pivot_count",
+        "PaperP1.PNTWeightedPrimeUpper.log_sum_eq_theta",
+        "PaperP1.PNTWeightedPrimeUpper.log_sum_upper_eventually",
+        "PaperP1.PNTWeightedPrimeUpper.global_log_sum_upper",
+        "PaperP1.PNTWeightedPrimeUpper.weighted_upper",
+        "PaperP1.PNTPrimePowerUpper.weight"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16429 jobs); direct axiom audit passed for 15390 declarations using only propext, Classical.choice and Quot.sound; all 14828 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.30 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

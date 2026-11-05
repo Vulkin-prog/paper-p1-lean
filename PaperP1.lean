@@ -3927,3 +3927,5 @@ public import PaperP1.Asymptotics.PositiveDeterministicAnchorObstruction
 public import PaperP1.Asymptotics.PositivePrintedRandomizedObstruction
 public import PaperP1.Asymptotics.PositiveRandomizedPrivateObstruction
 public import PaperP1.Asymptotics.PositiveUniversalPrivateObstruction
+public import PaperP1.Arithmetic.PNTPrimePowerUpper
+public import PaperP1.Arithmetic.PNTWeightedPrimeUpper

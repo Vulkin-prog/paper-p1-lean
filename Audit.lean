@@ -5102,6 +5102,17 @@ import PaperP1
 #print axioms PaperP1.OrdinarySmoothSourcePopulation.goodSources_subset
 #print axioms PaperP1.OrdinarySmoothSourcePopulation.source_deletion_ledger
 #print axioms PaperP1.OriginalWindowValueBounds.values_geometry
+#print axioms PaperP1.PNTPrimePowerUpper.weight_nonneg
+#print axioms PaperP1.PNTPrimePowerUpper.weight_antitone
+#print axioms PaperP1.PNTPrimePowerUpper.weight_one_le
+#print axioms PaperP1.PNTPrimePowerUpper.prime_weight_identity
+#print axioms PaperP1.PNTPrimePowerUpper.uniform_prime_upper
+#print axioms PaperP1.PNTPrimePowerUpper.uniform_euler_upper
+#print axioms PaperP1.PNTPrimePowerUpper.uniform_pivot_count
+#print axioms PaperP1.PNTWeightedPrimeUpper.log_sum_eq_theta
+#print axioms PaperP1.PNTWeightedPrimeUpper.log_sum_upper_eventually
+#print axioms PaperP1.PNTWeightedPrimeUpper.global_log_sum_upper
+#print axioms PaperP1.PNTWeightedPrimeUpper.weighted_upper
 #print axioms PaperP1.PairHostCover.regular_loss_iff
 #print axioms PaperP1.PairHostCover.cover
 #print axioms PaperP1.PairHostCover.card_bound

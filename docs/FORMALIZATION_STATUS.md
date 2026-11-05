@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records471 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records472 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15379 audited theorem/lemma declarations**. This
+- The project currently has **15390 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26764,3 +26764,22 @@ Both deterministic and universal randomized qualitative obstructions are now int
 P1-MATH-0473 adds three modules, four theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records471 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16425 jobs); direct axiom audit passed for 15379 declarations using only propext, Classical.choice and Quot.sound; all 14816 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.32 GiB.
+
+
+## Uniform PNT-weighted prime and actual pivot estimates with arbitrarily close leading constant one
+
+The internal prime-weighted and Euler estimates now retain an arbitrarily close upper leading constant1+eta, with one fixed finite-prefix allowance chosen before every weight, exponent and cutoff. The resulting actual pivot-count estimate is uniform even when its exponent moves with N. This prepares a finer reciprocal-saddle upper estimate; it does not yet prove an o(nu_N) error or discharge the ordinary EIP input. The complete companion T19.15 reciprocal/dyadic statement and proof at companion_sections/limits_appendix.tex lines1138-1194 were rechecked.
+
+PNTWeightedPrimeUpper.log_sum_eq_theta identifies the literal finite sum of log(p) over smallPrimesUpTo with Mathlib's Chebyshev theta. The already internally proved PNT gives the eventual upper constant1+eta. global_log_sum_upper pays the entire finite initial segment with one positive additive constant K(eta), making the bound valid at every natural cutoff, including zero. No prime-distribution statement is passed as an unproved argument.
+
+weighted_upper proves an Abel comparison uniformly over every nonnegative decreasing weight. A comparison sequence puts the fixed initial allowance at the first index and the constant1+eta at every index. Every partial-sum comparison, the empty cutoff and the first weight are checked explicitly. The conclusion is sum_{p<=Y} log(p)*F(p) <= (1+eta)*sum_{i<Y} F(i+1)+K(eta)*F(1). The constant precedes the entire weight function and Y, so no fixed-exponent threshold is silently reused for a moving weight.
+
+PNTPrimePowerUpper uses the literal reciprocal-logarithmic weight max(2,n)^(-sigma)/log(max(2,n)). Positivity, monotonicity and the first-weight bound are proved for every sigma>=0. On prime arguments, multiplication by log(p) cancels the denominator exactly. uniform_prime_upper therefore gives sum_{p<=Y} p^(-sigma) <= C(eta)+(1+eta)*sum_{i<Y} weight(sigma,i+1), with C independent of sigma and Y. uniform_euler_upper bounds the actual finite product of1+p^(-sigma) by the exponential of that same expression.
+
+uniform_pivot_count transports the bound through the actual finite odd-pivot census. It retains the exact one-kernel factor and is uniform for every sigma>=1/2 and every actual prime cutoff Y>=2. The conclusion is card(pivotValues X Y) <= X^sigma*exp(C(eta)+(1+eta)*sum weight), under the same constant selected before X,Y,sigma. The remaining integer weighted sum is kept explicit, rather than replaced by the previous coarse harmonic-prime envelope.
+
+The reciprocal-logarithmic sum still needs a uniform analytic integral comparison, followed by a fine saddle partition and error absorption. Those steps are subsequent work. Both leading reciprocal and specified signed-cost limits2, and both deterministic/randomized qualitative all-anchor obstructions, remain internal. Complete T19.15/T19.16 retain their finer o(nu_N) EIP obligation, and full T19.17 retains its stronger almost-all census and1-o(1) coefficient. General geometry, quadratic-degree BCN and optimal strong-triangle weights keep separate unresolved scopes.
+
+P1-MATH-0474 adds two modules, eleven theorems and one definition. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records472 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16429 jobs); direct axiom audit passed for 15390 declarations using only propext, Classical.choice and Quot.sound; all 14828 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.30 GiB.
