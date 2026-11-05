@@ -25370,3 +25370,18 @@ uniform_subpower_bound and uniform_subpower choose a lower degree d depending on
 P1-MATH-0378 adds five theorems. The sharper degree-uniform BCN exponent1/D, the separate conic sublinearity case and original all-dimensional main13.4 remain open in this intermediate route. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records376 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15671 jobs); direct axiom audit passed for 14432 declarations using only propext, Classical.choice and Quot.sound; all 13737 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.78 GiB.
+
+
+## An unconditional slowly growing plane degree cap
+
+Stable ID: p1:internal:slow-growing-plane-degree-cap. The cap is constructed before all error tolerances, coefficient fields and equations. Its growth is nonquantitative and conics remain separate; the full original growing-degree BCN consequence is still conditional.
+
+SlowGrowingPlaneDegreeCap.exists_cap_below proves that for every fixed positive real scale c and every prescribed monotone unbounded natural-valued pace L(B), there exists a monotone degree cap tending to infinity, with3<=cap(B)<=L(B)+3, such that all irreducible plane equations over all characteristic-zero fields of degrees3,...,cap(B) have uniformly o(B) actual signed integer points in the square of real radius c*B. The cap is chosen before the error tolerance, all coefficient fields and equations, and every actual grid population.
+
+The cap is constructed by a literal finite Nat.findGreatest search through the internally proved finite-degree sublinearity thresholds. Stage m uses degree cap m+3 and relative error1/(m+1), with the real coordinate scaling c retained exactly. The search limit L(B) controls its pace. Monotonicity, divergence, threshold attainment, natural ceiling transport and the uniform reciprocal-stage error are all proved internally. exists_cap specializes to the identity search pace. UniformSublinear explicitly records the real-scale integer-grid statement and its complete quantifier order.
+
+This is a genuine unconditional growing-degree subcase for the plane route of main13.5. The cap has no promised quantitative lower growth rate; it does not supply every prescribed polynomial degree cap, and its lower degree is three. The conic branch, stronger degree-uniform BCN property, original full main13.5 and all-dimensional main13.4 remain separate obligations. No original numbered result is promoted.
+
+P1-MATH-0379 adds two theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records377 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15673 jobs); direct axiom audit passed for 14434 declarations using only propext, Classical.choice and Quot.sound; all 13740 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.77 GiB.

@@ -1,0 +1,11 @@
+# An unconditional slowly growing plane degree cap
+
+Source: main13.4 plane preparation and main13.5 growing-degree counting. The new subcase follows from internally proved finite-degree estimates and a checked finite diagonal search; it does not assert the original quantitative degree-growth rate.
+
+SlowGrowingPlaneDegreeCap.exists_cap_below proves that for every fixed positive real scale c and every prescribed monotone unbounded natural-valued pace L(B), there exists a monotone degree cap tending to infinity, with3<=cap(B)<=L(B)+3, such that all irreducible plane equations over all characteristic-zero fields of degrees3,...,cap(B) have uniformly o(B) actual signed integer points in the square of real radius c*B. The cap is chosen before the error tolerance, all coefficient fields and equations, and every actual grid population.
+
+The cap is constructed by a literal finite Nat.findGreatest search through the internally proved finite-degree sublinearity thresholds. Stage m uses degree cap m+3 and relative error1/(m+1), with the real coordinate scaling c retained exactly. The search limit L(B) controls its pace. Monotonicity, divergence, threshold attainment, natural ceiling transport and the uniform reciprocal-stage error are all proved internally. exists_cap specializes to the identity search pace. UniformSublinear explicitly records the real-scale integer-grid statement and its complete quantifier order.
+
+This is a genuine unconditional growing-degree subcase for the plane route of main13.5. The cap has no promised quantitative lower growth rate; it does not supply every prescribed polynomial degree cap, and its lower degree is three. The conic branch, stronger degree-uniform BCN property, original full main13.5 and all-dimensional main13.4 remain separate obligations. No original numbered result is promoted.
+
+P1-MATH-0379 adds two theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records377 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.

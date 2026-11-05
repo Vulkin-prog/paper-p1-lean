@@ -3550,3 +3550,4 @@ public import PaperP1.Algebra.BoundedPlaneShear
 public import PaperP1.Arithmetic.FixedDegreeFieldPlaneCount
 public import PaperP1.Arithmetic.FixedDegreePlaneCount
 public import PaperP1.Asymptotics.BoundedDegreePlaneCounts
+public import PaperP1.Asymptotics.SlowGrowingPlaneDegreeCap

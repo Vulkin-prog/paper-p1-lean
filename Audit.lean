@@ -8924,6 +8924,8 @@ import PaperP1
 #print axioms PaperP1.SinglePairCriticalTheoremUnderInputs.companion_T22_5
 #print axioms PaperP1.SixVertexBudgetUnderInputs.uniform_budget
 #print axioms PaperP1.SixVertexBudgetUnderInputs.companion_T20_8
+#print axioms PaperP1.SlowGrowingPlaneDegreeCap.exists_cap_below
+#print axioms PaperP1.SlowGrowingPlaneDegreeCap.exists_cap
 #print axioms PaperP1.SmallCoreDeficitReduction.uniform_source
 #print axioms PaperP1.SmallCoreDeficitReduction.growing_range_reduction
 #print axioms PaperP1.SmallCoreJointMassUnderInputs.uniform_mass
