@@ -8393,7 +8393,8 @@
             "p1:internal:fixed-arity-anchored-confinement"
           ]
         }
-      ]
+      ],
+      "validation_commit": "63585177288a310603533ac0f46990f2b7b88392"
     },
     {
       "label": "p13:transfer:compressed-target",
