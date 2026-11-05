@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records371 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records372 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14399 audited theorem/lemma declarations**. This
+- The project currently has **14403 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25076,3 +25076,16 @@ This is a genuine unconditional intermediate estimate with a degree-dependent co
 P1-MATH-0373 adds six theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records371 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15659 jobs); direct axiom audit passed for 14399 declarations using only propext, Classical.choice and Quot.sound; all 13700 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.86 GiB.
+
+
+## Unconditional fixed-degree plane counts over arbitrary characteristic-zero fields
+
+CoarseFieldPlaneCount.field_count proves the unconditional signed integer-grid estimate K(D,epsilon)*H^(4/D+epsilon) for every irreducible plane equation of exact fixed degree D>=2 over every characteristic-zero field F. The constant is chosen before F, its field instances, the equation and H>2. Neither absolute irreducibility nor an embedding of F into the complex numbers is assumed.
+
+rational_geometric_count first clears denominators, retaining the exact degree, geometric irreducibility and every actual integer grid, and applies the proved coefficient-uniform integer theorem. rational_count handles all other irreducible rational equations by the internally proved non-geometric bound D*(D-1). For arbitrary F, a population of at most D^2 is absorbed directly; every larger population forces a rational equation of the same degree by the proved many-point scalar descent. Its actual integer zeros contain the original population, and rational_count applies without any need to transfer complex irreducibility from F.
+
+bounded_degree_count gives one constant for every degree in any fixed finite interval2<=D<=M, while retaining the exact exponent4/D+epsilon. The choice precedes the field, equation, degree and height. This finite-range uniformity makes no claim on the growth of its constant as M increases.
+
+P1-MATH-0374 adds four theorems. This intermediate estimate remains weaker than the degree-uniform BCN exponent1/D. Main13.4 remains in_progress; coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records372 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15661 jobs); direct axiom audit passed for 14403 declarations using only propext, Classical.choice and Quot.sound; all 13704 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.84 GiB.
