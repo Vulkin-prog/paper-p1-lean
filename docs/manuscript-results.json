@@ -7182,7 +7182,8 @@
             "PaperP1.OptimalThirdCumulant.lowerConstant_pos"
           ]
         }
-      ]
+      ],
+      "validation_commit": "03c1d7b70ec949a6fd8b0ae5d2b618832eae975d"
     },
     {
       "label": "p13:third:rational-rank",
@@ -8439,7 +8440,8 @@
             "PaperP1.OptimalThirdCumulant.lowerConstant_pos"
           ]
         }
-      ]
+      ],
+      "validation_commit": "03c1d7b70ec949a6fd8b0ae5d2b618832eae975d"
     },
     {
       "label": "p13:transfer:conversion",
