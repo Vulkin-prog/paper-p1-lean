@@ -28608,7 +28608,8 @@
         "PaperP1.SharpAsymmetricProfile.uniform_profile",
         "PaperP1.SharpExpandedAsymmetricProfile.uniform_profile"
       ],
-      "remaining_corrected_geometric_properties": []
+      "remaining_corrected_geometric_properties": [],
+      "validation_commit": "7faae9c1e881ed2f8b8351e6a97cc454ea272980"
     },
     {
       "label": "p1:arith:palmrank",
