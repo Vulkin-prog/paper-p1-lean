@@ -24450,6 +24450,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "9fcfc8bada8a099e19abc702775d1475d53ffc7d"
+    },
+    {
+      "id": "P1-MATH-0498",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The sharper quadratic-degree BCN route needs a real zero-counting criterion in addition to the existing arithmetic determinant route. The classical partial-Wronskian criterion had not been internally established.",
+      "finding": "Actual finite Rolle populations and repeated derivative bounds yield a fully proved recursive normalized-pivot criterion, including strict zero counts, coefficient recovery and injective finite evaluation.",
+      "proposed_revision": "Use the explicit finite population construction and normalized derivative induction as the internal zero-counting core, then separately prove its classical Wronskian and geometric-curve bridges before claiming BCN.",
+      "impact": "Supplies an internal calculus foundation for the remaining sharp-degree route while exposing the still unproved determinant, curve decomposition and parametrization obligations.",
+      "evidence": [
+        "PaperP1.FiniteRolleZeros.exists_derivative_zeros",
+        "PaperP1.FiniteRolleZeros.card_le_of_derivative_bound",
+        "PaperP1.FiniteRolleZeros.card_le_of_iterated_derivative_nonzero",
+        "PaperP1.RecursiveChebyshev.normalized_identity",
+        "PaperP1.RecursiveChebyshev.normalized_derivative",
+        "PaperP1.RecursiveChebyshev.card_lt",
+        "PaperP1.RecursiveChebyshev.coefficients_eq_zero",
+        "PaperP1.RecursiveChebyshev.evaluation_injective",
+        "PaperP1.RecursiveChebyshev.combination",
+        "PaperP1.RecursiveChebyshev.normalizedDerivative",
+        "PaperP1.RecursiveChebyshev.Admissible"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16567 jobs); direct axiom audit passed for 15601 declarations using only propext, Classical.choice and Quot.sound; all 15077 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.74 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -2739,6 +2739,9 @@ import PaperP1
 #print axioms PaperP1.FiniteNegativeMass.secondDifference_interval_sum
 #print axioms PaperP1.FiniteProductPowerMean.product_le_average_power
 #print axioms PaperP1.FiniteProductPowerMean.sum_product_le_moment
+#print axioms PaperP1.FiniteRolleZeros.exists_derivative_zeros
+#print axioms PaperP1.FiniteRolleZeros.card_le_of_derivative_bound
+#print axioms PaperP1.FiniteRolleZeros.card_le_of_iterated_derivative_nonzero
 #print axioms PaperP1.FiniteSquareTail.sum_bound
 #print axioms PaperP1.FiniteSquareTail.sum_bound_of_div_tail
 #print axioms PaperP1.HardSaddleExplicitScale.tendsto_logCore_atTop
@@ -2911,6 +2914,11 @@ import PaperP1
 #print axioms PaperP1.ReciprocalSquareTail.finite_bound
 #print axioms PaperP1.ReciprocalSquareTail.product_bound
 #print axioms PaperP1.ReciprocalSquareTail.weighted_product_bound
+#print axioms PaperP1.RecursiveChebyshev.normalized_identity
+#print axioms PaperP1.RecursiveChebyshev.normalized_derivative
+#print axioms PaperP1.RecursiveChebyshev.card_lt
+#print axioms PaperP1.RecursiveChebyshev.coefficients_eq_zero
+#print axioms PaperP1.RecursiveChebyshev.evaluation_injective
 #print axioms PaperP1.ReducedBinaryLatticeBasis.reduced_inverse
 #print axioms PaperP1.ReducedBinaryLatticeBasis.reduced_det
 #print axioms PaperP1.ReducedBinaryLatticeBasis.reduced_first

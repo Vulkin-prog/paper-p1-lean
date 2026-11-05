@@ -3996,3 +3996,5 @@ public import PaperP1.Arithmetic.LinearHeightShearBudget
 public import PaperP1.Asymptotics.CubicGrowingDegreePlaneCount
 public import PaperP1.Asymptotics.DenseComponentHostCount
 public import PaperP1.Asymptotics.UniformGeometricCountsReducedInputs
+public import PaperP1.Analysis.FiniteRolleZeros
+public import PaperP1.Analysis.RecursiveChebyshev
