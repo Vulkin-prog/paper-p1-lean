@@ -24959,3 +24959,18 @@ The endpoint nonvanishing conditions are retained explicitly. The finite excepti
 P1-MATH-0351 adds six theorems. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records349 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. The global sharp b>=2 input and main13.4 remain open; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15609 jobs); direct axiom audit passed for 14285 declarations using only propext, Classical.choice and Quot.sound; all 13572 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.17 GiB.
+
+
+## Bounded endpoint exceptions and full-population height split
+
+Stable ID: p1:internal:geometric-endpoint-exceptions. Endpoint exceptions are bounded on the actual signed primitive source population, including axes. No second-coordinate height restriction has been added to the source theorem.
+
+GeometricEndpointExceptions.height_split proves a complete finite-population decomposition: for geometrically irreducible G of positive two partial degrees and any finite set of original signed primitive projective zeros, at most8*(degreeX G+1)*(degreeY G+1) points lie on the two endpoint zero fibres; every remaining original second coordinate is bounded by(degreeX G+1)*height(G)*L^(degreeX G) when the first pair lies in the absolute box L. No point is silently discarded and the exceptional bound is independent of L and all coefficients.
+
+constant_coefficient_ne_zero proves G.coeff0 is nonzero by swapping coordinates, descending actual geometric irreducibility to the rationals and using nonzero specialization at zero. The top coefficient is nonzero by its literal actual degree. endpoint_form_nonzero proves the two homogeneous endpoint forms remain nonzero at the padded first degree. one_endpoint_card combines the checked primitive homogeneous zero bound for first pairs with the checked finite fibre count for second pairs, retaining all axis cases and signs. exceptional_card takes the union of the two endpoint populations.
+
+This completes the unrestricted-second-pair height reduction, including its finite exceptional population. Prime selection, smooth-class coverage, finite-field class counting and final exponent choices remain to be assembled for the global sharp b>=2 Heath-Brown bound.
+
+P1-MATH-0352 adds five theorems and the literal exceptional finite-set definition. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records350 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 remains open and Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15611 jobs); direct axiom audit passed for 14290 declarations using only propext, Classical.choice and Quot.sound; all 13578 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.16 GiB.

@@ -10153,6 +10153,11 @@ import PaperP1
 #print axioms PaperP1.GeometricBiformCoarseCount.coarse_real_count
 #print axioms PaperP1.GeometricBiformCoarseCount.height_pos
 #print axioms PaperP1.GeometricBiformCoarseCount.second_degree_one
+#print axioms PaperP1.GeometricEndpointExceptions.constant_coefficient_ne_zero
+#print axioms PaperP1.GeometricEndpointExceptions.endpoint_form_nonzero
+#print axioms PaperP1.GeometricEndpointExceptions.one_endpoint_card
+#print axioms PaperP1.GeometricEndpointExceptions.exceptional_card
+#print axioms PaperP1.GeometricEndpointExceptions.height_split
 #print axioms PaperP1.GeometricProjectiveFibres.fibre_evaluation
 #print axioms PaperP1.GeometricProjectiveFibres.fibre_homogeneous
 #print axioms PaperP1.GeometricProjectiveFibres.fibre_chart_coefficient

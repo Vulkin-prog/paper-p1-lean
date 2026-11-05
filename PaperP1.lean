@@ -3521,3 +3521,4 @@ public import PaperP1.Diophantine.ProjectiveDeterminantVanishing
 public import PaperP1.Diophantine.SmoothClassAuxiliary
 public import PaperP1.Diophantine.SmoothClassPointCount
 public import PaperP1.Diophantine.PrimitiveHomogeneousRootBound
+public import PaperP1.Diophantine.GeometricEndpointExceptions
