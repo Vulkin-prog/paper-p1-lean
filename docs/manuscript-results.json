@@ -29952,7 +29952,8 @@
           "scope": "Complete original T1.17 statement only. Actual pinned subset confinement replaces its compressed two-edge geometric use; no general cover/count property or optimal count-law bound is discharged.",
           "checkpoint": "P1-MATH-0445"
         }
-      ]
+      ],
+      "validation_commit": "53339ba9700f053f5886ca66218d8e270d8b48de"
     },
     {
       "label": "p1:arith:smallpart-budget",
@@ -35793,7 +35794,8 @@
           "scope": "Complete original T19.10 statement only. Actual pinned subset confinement replaces its compressed two-edge geometric use; no general cover/count property or optimal count-law bound is discharged.",
           "checkpoint": "P1-MATH-0445"
         }
-      ]
+      ],
+      "validation_commit": "53339ba9700f053f5886ca66218d8e270d8b48de"
     },
     {
       "label": "p1:limits:stein",
