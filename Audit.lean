@@ -3865,6 +3865,10 @@ import PaperP1
 #print axioms PaperP1.DyadicPatternWeights.coordinate_upper
 #print axioms PaperP1.DyadicPatternWeights.prescribed_lower
 #print axioms PaperP1.DyadicPatternWeights.profile_height_budget
+#print axioms PaperP1.DyadicPrimeCover.exists_pool
+#print axioms PaperP1.DyadicPrimeCover.pool_sum_bound
+#print axioms PaperP1.DyadicPrimeCover.exists_nondividing
+#print axioms PaperP1.DyadicPrimeCover.uniform_pool
 #print axioms PaperP1.DyadicTargetCount.codes_card
 #print axioms PaperP1.DyadicTargetCount.pool_card
 #print axioms PaperP1.DyadicTargetCount.mem_pool

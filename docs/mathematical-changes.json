@@ -19047,6 +19047,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "0e95f7d5099b3e5b393da0889a8b07b97c7bb680"
+    },
+    {
+      "id": "P1-MATH-0353",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The global smooth residue-class cover required a uniform finite supply of usable primes, with total prime size of order P and without assuming an external prime-density theorem.",
+      "finding": "A fixed m-fold Bertrand construction produces one family of m distinct primes of total size<=m*2^m*P which avoids every nonzero integer of absolute value<P^m.",
+      "proposed_revision": "Use the checked dyadic family for the actual denominator-times-derivative integer after proving its nonvanishing and height bound; keep m fixed in the degree-and-epsilon parameters.",
+      "impact": "Closes uniform finite prime supply and integer avoidance without a prime-density input. Actual projective coverage and final scale choices remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.DyadicPrimeCover.exists_pool",
+        "PaperP1.DyadicPrimeCover.pool_sum_bound",
+        "PaperP1.DyadicPrimeCover.exists_nondividing",
+        "PaperP1.DyadicPrimeCover.uniform_pool"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15617 jobs); direct axiom audit passed for 14294 declarations using only propext, Classical.choice and Quot.sound; all 13582 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.14 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
