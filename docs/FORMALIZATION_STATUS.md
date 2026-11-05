@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records466 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records467 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15338 audited theorem/lemma declarations**. This
+- The project currently has **15354 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26671,3 +26671,22 @@ The matching leading reciprocal coefficient two is therefore internal, but full 
 P1-MATH-0468 adds four modules, ten theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records466 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16391 jobs); direct axiom audit passed for 15338 declarations using only propext, Classical.choice and Quot.sound; all 14771 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.43 GiB.
+
+
+## Internal leading coefficient two limits for actual reciprocal sums and specified signed cost
+
+The original specified signed forcing cost now has the internal leading logarithmic coefficient two, uniformly on every original critical band. For every epsilon>0 it lies between exp(-(2+epsilon)V_N) and exp(-(2-epsilon)V_N), under one threshold before every critical length. Along every actual admissible critical length sequence, -log(specifiedCost N L)/V_N tends to2. The three actual reciprocal sums also have explicit internally proved normalized logarithmic deficit limits2. These are leading o(V_N) statements; the printed finer o(nu_N) errors remain unproved. The complete reciprocal, forcing and T19.16 statements and proofs at companion_sections/limits_appendix.tex lines1138-1299 were rechecked.
+
+LeadingCleanPivotLower restores the actual clean-source reciprocal mass with every fixed lower coefficient above2. The exact excluded-boundary population has the existing internal power bound, and an internally proved power-versus-saddle estimate makes it negligible for each fixed coefficient. No change to the clean source definition or to the logarithmic pivot cutoff is made.
+
+LeadingSignedCostLower retains the full finite signed Palm lower ledger, the exact signedMarkRate squared, actual source population, one-bit intersections and all collision, source-deletion and raw-relation errors. Its lower bound is the exact critical prefactor times exp(-A V_N) for every fixed A>2, uniformly over every allowed logarithmic maximal width. All exceptional losses and reciprocal inputs are supplied internally. LeadingSignedCostTheorem absorbs only the fixed positive critical prefactor in a strict remaining saddle margin. Its uniform_lower retains the original specified forcing and exactly the prescribed excess; no ordinary EIP or geometric input is used.
+
+LeadingSignedCostBounds.uniform_sandwich combines this lower direction with checkpoint465's internal upper direction. uniform_normalized_bounds gives2-epsilon <= -log(specifiedCost N L)/V_N <=2+epsilon uniformly over the original critical band. uniform_logarithmic_error gives |log(specifiedCost N L)+2V_N|<=epsilon V_N. normalized_limit retains any length sequence that is eventually in that same original band. The limit is about the positive coordinate cost of this specified forcing; it does not give a dependence or total-variation lower bound.
+
+LeadingSaddleLogBounds proves the finite positive logarithm comparisons and the metric convergence step without assuming the desired limit. ReciprocalLeadingLimits.uniform_normalized_bounds puts all three literal ordinary/full/dyadic reciprocal populations under one threshold. ordinary_limit, full_limit and dyadic_limit prove (logN-log(sum))/V_N ->2 separately. The exceptional integer1 and the actual dyadic interval stay in their original definitions.
+
+Both leading reciprocal and specified-cost coefficients are thus internal, including their actual normalized limits. The fine ordinary EIP remainder and complete companion T19.15/T19.16 equivalents remain conditional. No theorem with only a leading error is substituted for their o(nu_N) statements. General geometry, full quadratic-degree BCN and optimal strong-triangle weights keep their separate unresolved scopes.
+
+P1-MATH-0469 adds six modules, sixteen theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records467 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16403 jobs); direct axiom audit passed for 15354 declarations using only propext, Classical.choice and Quot.sound; all 14787 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.40 GiB.

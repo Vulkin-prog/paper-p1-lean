@@ -2742,6 +2742,9 @@ import PaperP1
 #print axioms PaperP1.InverseSqrtTail.step
 #print axioms PaperP1.InverseSqrtTail.interval_bound
 #print axioms PaperP1.InverseSqrtTail.tail_bound
+#print axioms PaperP1.LeadingSaddleLogBounds.reciprocal_log_bounds
+#print axioms PaperP1.LeadingSaddleLogBounds.cost_log_bounds
+#print axioms PaperP1.LeadingSaddleLogBounds.limit_of_uniform_bounds
 #print axioms PaperP1.LocalDeterminantDegreeChoice.triangle_weight
 #print axioms PaperP1.LocalDeterminantDegreeChoice.exists_auxiliary_degree
 #print axioms PaperP1.LocalDeterminantDegreeChoice.exists_avoidance_power
@@ -2836,6 +2839,10 @@ import PaperP1
 #print axioms PaperP1.RealSeriesEvaluation.geometric_summability
 #print axioms PaperP1.RealSeriesTail.geometric_tail
 #print axioms PaperP1.RealSeriesTail.constant_tail
+#print axioms PaperP1.ReciprocalLeadingLimits.uniform_normalized_bounds
+#print axioms PaperP1.ReciprocalLeadingLimits.ordinary_limit
+#print axioms PaperP1.ReciprocalLeadingLimits.full_limit
+#print axioms PaperP1.ReciprocalLeadingLimits.dyadic_limit
 #print axioms PaperP1.ReciprocalOddPivotDyadicScale.nu_shift_bound
 #print axioms PaperP1.ReciprocalOddPivotDyadicScale.uniform_dyadic_sandwich
 #print axioms PaperP1.ReciprocalOddPivotDyadicScale.companion_T19_15
@@ -8476,6 +8483,15 @@ import PaperP1
 #print axioms PaperP1.LatePrimeRankDensity.rank_ratio_bound
 #print axioms PaperP1.LateWindowRank.finite_rank_le_cover
 #print axioms PaperP1.LateWindowRank.rank_bound_eventually
+#print axioms PaperP1.LeadingCleanPivotLower.uniform_lower
+#print axioms PaperP1.LeadingSignedCostBounds.uniform_sandwich
+#print axioms PaperP1.LeadingSignedCostBounds.uniform_normalized_bounds
+#print axioms PaperP1.LeadingSignedCostBounds.uniform_logarithmic_error
+#print axioms PaperP1.LeadingSignedCostBounds.normalized_limit
+#print axioms PaperP1.LeadingSignedCostLower.uniform_actual_lower
+#print axioms PaperP1.LeadingSignedCostTheorem.uniform_lower_from_width
+#print axioms PaperP1.LeadingSignedCostTheorem.uniform_lower
+#print axioms PaperP1.LeadingSignedCostTheorem.uniform_log_lower
 #print axioms PaperP1.LocalBlocksTheorem.finite_conclusion
 #print axioms PaperP1.LocalBlocksTheorem.finite_conditions
 #print axioms PaperP1.LocalBlocksTheorem.companion_T19_2

@@ -3910,3 +3910,9 @@ public import PaperP1.Analysis.ExponentialPrimeBands
 public import PaperP1.Analysis.ExponentialSmoothLower
 public import PaperP1.Analysis.SmoothReciprocalLeadingLower
 public import PaperP1.Analysis.SmoothSaddleLoss
+public import PaperP1.Analysis.LeadingSaddleLogBounds
+public import PaperP1.Analysis.ReciprocalLeadingLimits
+public import PaperP1.Asymptotics.LeadingCleanPivotLower
+public import PaperP1.Asymptotics.LeadingSignedCostBounds
+public import PaperP1.Asymptotics.LeadingSignedCostLower
+public import PaperP1.Asymptotics.LeadingSignedCostTheorem

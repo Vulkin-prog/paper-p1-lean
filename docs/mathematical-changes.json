@@ -23372,6 +23372,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "d98b1beb8ffedee192674df3d6264eca14c52cac"
+    },
+    {
+      "id": "P1-MATH-0469",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The actual reciprocal sums had matching leading fixed-margin bounds, while the original signed-cost lower coefficient remained12 and explicit normalized leading limits were not yet stated.",
+      "finding": "The exact clean-source and finite signed Palm ledgers transport every reciprocal lower coefficient above2 to the original prescribed signed cost. Combined with the internal upper bounds, all three reciprocal normalized deficits and the critical-band signed-cost negative logarithm have limit2.",
+      "proposed_revision": "Record the internally proved leading logarithmic equivalents for all actual reciprocal sums and the specified signed forcing, with uniform critical-band and prescribed-excess scope. Keep the finer o(nu_N) remainder as a distinct unresolved ordinary EIP obligation in the full printed equivalents.",
+      "impact": "Closes the leading coefficient gap for the original signed forcing and proves explicit leading coefficient2 limits for all four actual quantities, without EIP. Complete fine T19.15/T19.16 and numbered coverage remain conditional.",
+      "evidence": [
+        "PaperP1.LeadingSaddleLogBounds.reciprocal_log_bounds",
+        "PaperP1.LeadingSaddleLogBounds.cost_log_bounds",
+        "PaperP1.LeadingSaddleLogBounds.limit_of_uniform_bounds",
+        "PaperP1.ReciprocalLeadingLimits.uniform_normalized_bounds",
+        "PaperP1.ReciprocalLeadingLimits.ordinary_limit",
+        "PaperP1.ReciprocalLeadingLimits.full_limit",
+        "PaperP1.ReciprocalLeadingLimits.dyadic_limit",
+        "PaperP1.LeadingCleanPivotLower.uniform_lower",
+        "PaperP1.LeadingSignedCostBounds.uniform_sandwich",
+        "PaperP1.LeadingSignedCostBounds.uniform_normalized_bounds",
+        "PaperP1.LeadingSignedCostBounds.uniform_logarithmic_error",
+        "PaperP1.LeadingSignedCostBounds.normalized_limit",
+        "PaperP1.LeadingSignedCostLower.uniform_actual_lower",
+        "PaperP1.LeadingSignedCostTheorem.uniform_lower_from_width",
+        "PaperP1.LeadingSignedCostTheorem.uniform_lower",
+        "PaperP1.LeadingSignedCostTheorem.uniform_log_lower"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16403 jobs); direct axiom audit passed for 15354 declarations using only propext, Classical.choice and Quot.sound; all 14787 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.40 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
