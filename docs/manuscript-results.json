@@ -6439,7 +6439,8 @@
             "p1:internal:weak-growing-degree-plane-sublinearity"
           ]
         }
-      ]
+      ],
+      "validation_commit": "3b80426b76d05cf9b0bfa4f5c2d40f6c302bda57"
     },
     {
       "label": "p13:rig:nonaligned",
