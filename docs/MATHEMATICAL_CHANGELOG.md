@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**343 mathematical improvements and two statement-scope corrections are confirmed.**
+**344 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23933,3 +23933,16 @@ The same module also proves the generic nilpotent-ring version for actual curve 
 These two modules add six theorems and one definition. This completes the actual affine smooth-class determinant application. Normalization of projective fractional coordinates, good-prime selection, auxiliary forms, archimedean comparison and the global sharp b>=2 Heath-Brown estimate remain separate open work. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records343 improvements and two statement-scope corrections. No new dependency download, axiom, unproved literature premise, compiler change or original manuscript edit is introduced. Main13.4 and the recorded geometric inputs remain open. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15597 jobs); direct axiom audit passed for 14258 declarations using only propext, Classical.choice and Quot.sound; all 13540 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.26 GiB.
+
+
+## Exact projective unit charts over prime-power coefficient rings
+
+ProjectiveUnitCharts.evaluation_units proves the exact normalization identity for the actual projective polynomial of every integer G, evaluated over any commutative ring R with unit denominator coordinates X,Y. Its value equals the literal affine evaluation at u*X^(-1),v*Y^(-1), multiplied by X^degreeX(G)*Y^degreeY(G). The powers are the original integer partial degrees, so no degree-preservation or leading-coefficient assumption after reduction is needed. zero_iff cancels these unit factors and identifies the original projective zero equation with the affine zero equation.
+
+The value definition evaluates the actual projective polynomial through the integer coefficient homomorphism. integer_cast proves that this is exactly the image of the original signed integer projective evaluation. evaluation_sum recovers every literal coefficient and exponent, and binary_evaluation extends the homogeneous finite expansion through arbitrary coefficient homomorphisms. clear_unit_power supplies the exact power-clearing identity using units, rather than division in a field.
+
+All six theorems work without a domain, field or characteristic hypothesis on R; they therefore apply to ZMod(p^N), including its zero divisors. No projective axis is silently declared invertible: both chosen denominator coordinates must explicitly be units. Other projective charts and the exceptional denominator-zero branch remain to be handled when assembling the counting argument.
+
+P1-MATH-0346 adds one module and one definition. This closes the coordinate-normalization identity needed to transport the actual smooth determinant to projective monomial rows. The resulting projective determinant theorem, good-prime selection, auxiliary forms and the global sharp b>=2 Heath-Brown count remain open. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records344 improvements and two statement-scope corrections. No dependency download, axiom, unproved literature premise, compiler change or original source edit is introduced. Main13.4 remains open. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15599 jobs); direct axiom audit passed for 14264 declarations using only propext, Classical.choice and Quot.sound; all 13547 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.25 GiB.

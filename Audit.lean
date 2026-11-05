@@ -10248,6 +10248,12 @@ import PaperP1
 #print axioms PaperP1.ProjectiveResultants.coefficients_relprime_of_irreducible
 #print axioms PaperP1.ProjectiveResultants.linear_coefficient_left
 #print axioms PaperP1.ProjectiveResultants.linear_coefficient_right
+#print axioms PaperP1.ProjectiveUnitCharts.clear_unit_power
+#print axioms PaperP1.ProjectiveUnitCharts.binary_evaluation
+#print axioms PaperP1.ProjectiveUnitCharts.evaluation_sum
+#print axioms PaperP1.ProjectiveUnitCharts.evaluation_units
+#print axioms PaperP1.ProjectiveUnitCharts.integer_cast
+#print axioms PaperP1.ProjectiveUnitCharts.zero_iff
 #print axioms PaperP1.QuadraticIdealDivisors.map_span_int_eq_span_intCast
 #print axioms PaperP1.QuadraticIdealDivisors.span_intCast_eq_span_natAbs
 #print axioms PaperP1.QuadraticIdealDivisors.span_natPrime_isMaximal
