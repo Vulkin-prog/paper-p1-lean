@@ -35906,7 +35906,8 @@
           "scope": "Complete original-law T19.14 costs, geometry and first-order criteria only; no general geometric property or sharp two-edge O(a_N^2) assertion.",
           "checkpoint": "P1-MATH-0443"
         }
-      ]
+      ],
+      "validation_commit": "7d46e2762d1fdf9b75e8d6288b3f6c154e4b16d1"
     },
     {
       "label": "p1:limits:reciprocal",
