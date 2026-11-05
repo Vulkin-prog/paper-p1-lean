@@ -116,7 +116,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records545 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records546 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -235,7 +235,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16130 audited theorem/lemma declarations**. This
+- The project currently has **16150 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27993,3 +27993,22 @@ These results establish the birational fraction-field and exact Hilbert-degree s
 P1-MATH-0547 adds two modules and five theorems. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 545 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16941 jobs); direct axiom audit passed for 16130 declarations using only propext, Classical.choice and Quot.sound; all 15715 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.66 GiB.
+
+
+## Actual homogeneous plane-image quotient with finite birational maps and preserved degree
+
+FiniteInjectiveIntermediate proves that an actual injective intermediate algebra of a finite algebra over a Noetherian base is finite over that same base. The proof uses the literal compatible polynomial scalar actions and the actual injective linear map into the finite Noetherian module. No intermediate-map finiteness premise is supplied.
+
+LinearPlaneImage constructs the literal homogeneous plane-image presentation. Its three coordinates are the selected original linear coordinate y followed by the two original normalization parameters g. The ideal is exactly the kernel of their actual three-variable polynomial evaluation. The coordinate ring is the quotient by that literal ideal, with actual quotient grading. Homogeneity of the kernel, primality over an original domain, finite-dimensional homogeneous pieces and preservation of every original degree are proved.
+
+The actual quotient-to-source map is injective. The actual two-variable parameter evaluation into the image quotient sends the original variables to the last two quotient coordinates. Its composition with the quotient-to-source map is proved equal to the original normalization evaluation. It is therefore injective when the original normalization is injective. When the original normalization is finite, both the actual image parameter map and the actual image-to-source map are finite. The first uses the proved Noetherian intermediate-algebra lemma; the second uses the literal finite composition. The first quotient coordinate maps to the selected original y exactly.
+
+LinearPlaneImageBirational applies the primitive-coordinate fraction-field mechanism to this exact quotient. For the actual compatible normalization and source fraction-field structures, literal equality of the original parameter scalar map and polynomial evaluation, and the internally selected primitive original coordinate, the actual plane-image quotient has the entire original fraction field. Its relative extension rank to the source is one and its normalization-module rank equals the original source rank. The source-map equality is retained as an explicit scalar-action alignment condition, satisfied by the canonical evaluation algebra, rather than silently changing scalar structures.
+
+For the actual original grading, degree-one parameters and selected degree-one coordinate, finite independent normalization of rank d now gives a genuine Hilbert polynomial d*r+b for this same literal plane-image quotient. Its finite homogeneous pieces, actual grading, shared fraction field, finite independent parameter evaluation and rank identification all concern the constructed quotient. The image degree is derived from these data, without assuming an image-degree theorem or a replacement coordinate presentation.
+
+Thus the actual homogeneous plane-image coordinate quotient, finite maps, birational fraction field and preserved Hilbert degree are internal. A principal homogeneous plane equation of that degree, the exceptional-fibre budget, the final controlled-height counting assembly and scalar-extension/descent remain separate. Main13.4 and companionT1.7/T19.17 remain unresolved; main13.5 stays internally proved.
+
+P1-MATH-0548 adds three modules, twenty theorems and seven definitions. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 546 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16947 jobs); direct axiom audit passed for 16150 declarations using only propext, Classical.choice and Quot.sound; all 15742 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.64 GiB.

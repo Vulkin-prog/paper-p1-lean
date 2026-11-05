@@ -26449,6 +26449,59 @@
         "status": "not_integrated"
       },
       "validation_commit": "084968b0dbc3e1e18fdd13f0eee428092fdde585"
+    },
+    {
+      "id": "P1-MATH-0548",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "Birational fraction-field and Hilbert-degree mechanisms were proved abstractly, but the concrete three-coordinate image quotient and its literal finite parameter/source maps were missing.",
+      "finding": "The kernel of the actual three-coordinate evaluation gives a genuine homogeneous plane-image quotient with finite injective parameter map, finite injective source map, original fraction field, rank one and preserved actual Hilbert degree.",
+      "proposed_revision": "Use this literal finite birational image quotient for the controlled projection. Construct its principal homogeneous equation and exceptional-fibre budget before claiming the complete all-dimensional count.",
+      "impact": "Closes the actual coordinate-ring presentation and finite birational degree-preservation stage of the plane projection, retaining all original coordinate and scalar-action identities.",
+      "evidence": [
+        "PaperP1.FiniteInjectiveIntermediate.finite_factor",
+        "PaperP1.LinearPlaneImage.coordinates_mem",
+        "PaperP1.LinearPlaneImage.ideal_homogeneous",
+        "PaperP1.LinearPlaneImage.ideal_prime",
+        "PaperP1.LinearPlaneImage.toSource_mk",
+        "PaperP1.LinearPlaneImage.toSource_injective",
+        "PaperP1.LinearPlaneImage.piece_finite",
+        "PaperP1.LinearPlaneImage.toSource_mem",
+        "PaperP1.LinearPlaneImage.parameterMap_X",
+        "PaperP1.LinearPlaneImage.parameter_mem",
+        "PaperP1.LinearPlaneImage.parameterMap_toSource",
+        "PaperP1.LinearPlaneImage.parameterMap_finite",
+        "PaperP1.LinearPlaneImage.toSource_finite",
+        "PaperP1.LinearPlaneImage.parameterMap_injective",
+        "PaperP1.LinearPlaneImage.primitive_coordinate",
+        "PaperP1.LinearPlaneImageBirational.baseFractionTower",
+        "PaperP1.LinearPlaneImageBirational.fraction_ring",
+        "PaperP1.LinearPlaneImageBirational.rank_one",
+        "PaperP1.LinearPlaneImageBirational.normalization_rank",
+        "PaperP1.LinearPlaneImageBirational.exists_linear_hilbert",
+        "PaperP1.LinearPlaneImage.coordinates",
+        "PaperP1.LinearPlaneImage.ideal",
+        "PaperP1.LinearPlaneImage.CoordinateRing",
+        "PaperP1.LinearPlaneImage.toSource",
+        "PaperP1.LinearPlaneImage.piece",
+        "PaperP1.LinearPlaneImage.grading",
+        "PaperP1.LinearPlaneImage.parameterMap"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16947 jobs); direct axiom audit passed for 16150 declarations using only propext, Classical.choice and Quot.sound; all 15742 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.64 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

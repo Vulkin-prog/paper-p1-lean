@@ -4158,3 +4158,6 @@ public import PaperP1.Algebra.CoordinateFractionFieldGenerators
 public import PaperP1.Geometry.FiniteCurvePrimitiveCoordinate
 public import PaperP1.Algebra.FiniteParameterImageHilbert
 public import PaperP1.Algebra.PrimitiveBirationalFractionRing
+public import PaperP1.Algebra.FiniteInjectiveIntermediate
+public import PaperP1.Geometry.LinearPlaneImage
+public import PaperP1.Geometry.LinearPlaneImageBirational
