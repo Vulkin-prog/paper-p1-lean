@@ -3245,7 +3245,8 @@
           "proof": "PaperP1.SharpThirdCancellation.uniform_cancellation",
           "scope": "Unconditional canonical theorem on the full actual ground; exact filtered restriction preserves incompatible, positive connected and repeated-index terms. Compatible positivity is already internally proved. General geometric properties remain open."
         }
-      ]
+      ],
+      "validation_commit": "d9b598c7bb86ea5faccb2c20be96e0506f85327b"
     },
     {
       "label": "p13:activity:kappa3",
@@ -3428,7 +3429,8 @@
           "proof": "PaperP1.SharpThirdCancellation.uniform_cancellation",
           "scope": "Unconditional canonical theorem on the full actual ground; exact filtered restriction preserves incompatible, positive connected and repeated-index terms. Compatible positivity is already internally proved. General geometric properties remain open."
         }
-      ]
+      ],
+      "validation_commit": "d9b598c7bb86ea5faccb2c20be96e0506f85327b"
     },
     {
       "label": "p13:conf:near-primitive",
