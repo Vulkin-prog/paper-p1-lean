@@ -8360,7 +8360,8 @@
             "p1:internal:coarse-third-activity"
           ]
         }
-      ]
+      ],
+      "validation_commit": "f8832eae7f7c66c5e6181382298c72c8266af062"
     },
     {
       "label": "p13:transfer:compressed-target",
