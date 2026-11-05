@@ -21516,6 +21516,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "9fe736615c9de045e5b9aba475a0a736b32dc9fd"
+    },
+    {
+      "id": "P1-MATH-0425",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:dense-targets",
+        "number": "15.2",
+        "page": 40,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 129,
+        "statement_sha256": "67d2424adbe9ce58d341f300471c14a7e1cf21728b62ee4a3f73ad0425362605"
+      },
+      "original_assumption": "The full connected-triple and third-activity estimates still passed through external geometric inputs, including the dense two-target estimate above an isolated source vertex.",
+      "finding": "All singleton-source alignment branches can be discharged internally. The exhaustive connected-triple cover then gives an unconditional global exponent-one joint, positive-activity, absolute-activity and cumulant bound.",
+      "proposed_revision": "Record the unconditional singleton-source theorem and the complete exponent-one third-order estimates as intermediate results. Distinguish them from the arbitrary-source dense estimate and the sharper exponent41/30.",
+      "impact": "Removes external geometry from a full coarse third-order bound and closes the singleton-source dense case. The sharper numbered statements remain conditional; coverage remains111/167 unconditional.",
+      "evidence": [
+        "PaperP1.CoarseConnectedTripleMass.uniform_mass",
+        "PaperP1.CoarseThirdActivity.uniform_positive",
+        "PaperP1.CoarseThirdActivity.uniform_absolute",
+        "PaperP1.CoarseThirdActivity.uniform_cumulant",
+        "PaperP1.CoarseTriplePairSeedBounds.uniform_activity",
+        "PaperP1.CoarseTriplePairSeedBounds.uniform_extensions",
+        "PaperP1.ConnectedTripleLowCrossing.uniform_bound",
+        "PaperP1.DenseSingletonJointMass.uniform_joint",
+        "PaperP1.IsolatedVertexDenseTripleMass.uniform_mass",
+        "PaperP1.IsolatedVertexTripleMass.uniform_mass"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15885 jobs); direct axiom audit passed for 14762 declarations using only propext, Classical.choice and Quot.sound; all 14113 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.63 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

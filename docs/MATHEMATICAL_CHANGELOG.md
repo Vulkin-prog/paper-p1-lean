@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**422 mathematical improvements and two statement-scope corrections are confirmed.**
+**423 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -25044,3 +25044,18 @@ For the actual weak pair, deleting all canonical unit endpoints costs at most2*(
 This closes the weakly aligned singleton-source branch, alongside the nonaligned singleton branch of checkpoint423. Arbitrary old source populations in the full numbered main15.2 remain separate and conditional. P1-MATH-0424 adds four modules and six theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records422 improvements and two statement-scope corrections. Original sources remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15871 jobs); direct axiom audit passed for 14752 declarations using only propext, Classical.choice and Quot.sound; all 14103 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.68 GiB.
+
+
+## Unconditional singleton dense crossings and full coarse third-order bounds
+
+DenseSingletonJointMass completes all alignment branches for two fresh targets above one full actual source window. The source is disjoint from each proper target subfamily and its actual intersection with the two-target span has dimension at least eta*L. Combining the nonaligned, weakly aligned and strongly aligned branches gives sum q({x,y,z})<=p_x*N^(-1+epsilon), with one threshold before all actual source and target populations. Zero marginals, heterogeneous local defects and incompatible affine systems are retained. No general geometric count or arbitrary-subspace hypothesis is introduced.
+
+IsolatedVertexDenseTripleMass transfers this actual joint bound to connected triples with one vertex disjoint from each other vertex separately and dense source/complement crossing. ConnectedTripleLowCrossing now uses the internally proved sharp pair-target deficit bound. Splitting at crossing rank L/4 yields IsolatedVertexTripleMass: the total joint mass of all connected triples having such an isolated dependence vertex is at most N^(-1+epsilon).
+
+CoarseTriplePairSeedBounds uses the unconditional nonaligned pair activity and existing weak/boundary channel estimates. Its actual pair activities and fixed-order extension joint masses are at most N^(-1+theta+epsilon). CoarseConnectedTripleMass combines those seeds, the isolated-vertex estimate and the exhaustive finite triple cover with the already proved two-finite-interior-edge contribution. For every actual dyadic subground and every subfamily of its connected triples, sum q(T)<=N^(-1+epsilon), without an external geometric premise.
+
+CoarseThirdActivity proves three full-ground statements: positive connected third activity, absolute third activity, and the absolute third factorial cumulant are each at most N^(-1+epsilon). The positive activity uses the exact compatible coefficient bound by eight times the joint probability; absolute activity and cumulant use the unconditional N^(-3/2+epsilon) cancellation remainder. All repeated indices, affine incompatibilities and zero marginal vertices remain included through the previously checked exact full-ground decomposition.
+
+The exponent here is one. The optimal source exponent 41/30 and arbitrary-source version of main15.2 remain conditional; none of these partial or coarse results promotes the full numbered statements main15.2, main14.6 or main14.1. P1-MATH-0425 adds seven modules and ten theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records423 improvements and two statement-scope corrections. Original sources remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15885 jobs); direct axiom audit passed for 14762 declarations using only propext, Classical.choice and Quot.sound; all 14113 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.63 GiB.

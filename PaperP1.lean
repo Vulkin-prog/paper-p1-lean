@@ -3650,3 +3650,10 @@ public import PaperP1.Arithmetic.PhysicalCoordinateErasureAt
 public import PaperP1.Arithmetic.PhysicalSubspaceRegularizationAt
 public import PaperP1.Asymptotics.DenseSingletonWeakTargets
 public import PaperP1.Asymptotics.WeakAlignedActiveNonalignment
+public import PaperP1.Asymptotics.CoarseConnectedTripleMass
+public import PaperP1.Asymptotics.CoarseThirdActivity
+public import PaperP1.Asymptotics.CoarseTriplePairSeedBounds
+public import PaperP1.Asymptotics.ConnectedTripleLowCrossing
+public import PaperP1.Asymptotics.DenseSingletonJointMass
+public import PaperP1.Asymptotics.IsolatedVertexDenseTripleMass
+public import PaperP1.Asymptotics.IsolatedVertexTripleMass

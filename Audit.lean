@@ -6910,6 +6910,7 @@ import PaperP1
 #print axioms PaperP1.CoarseConnectedTripleJointMass.uniform_connected_mass
 #print axioms PaperP1.CoarseConnectedTripleJointMass.uniform_vanishing_mass
 #print axioms PaperP1.CoarseConnectedTripleJointMassUnderInputs.uniform_mass
+#print axioms PaperP1.CoarseConnectedTripleMass.uniform_mass
 #print axioms PaperP1.CoarseDependentFamilyMass.uniform_seeded_mass
 #print axioms PaperP1.CoarseDependentFamilyMass.uniform_seed_orders
 #print axioms PaperP1.CoarseDependentFamilyMass.uniform_dependent_mass
@@ -6947,6 +6948,9 @@ import PaperP1
 #print axioms PaperP1.CoarsePrimitiveJointMassUnderBCN.uniform_pair_mass
 #print axioms PaperP1.CoarsePrimitiveJointMassUnderBCN.uniform_mass
 #print axioms PaperP1.CoarsePrimitiveJointMassUnderBCN.uniform_finite_orders
+#print axioms PaperP1.CoarseThirdActivity.uniform_positive
+#print axioms PaperP1.CoarseThirdActivity.uniform_absolute
+#print axioms PaperP1.CoarseThirdActivity.uniform_cumulant
 #print axioms PaperP1.CoarseThirdCumulantUnderBCN.uniform_repeated_cost
 #print axioms PaperP1.CoarseThirdCumulantUnderBCN.uniform_bound
 #print axioms PaperP1.CoarseThirdCumulantUnderBCN.uniform_vanishing_cumulant
@@ -6954,6 +6958,8 @@ import PaperP1
 #print axioms PaperP1.CoarseTripleActivityUnderBCN.uniform_absolute_activity
 #print axioms PaperP1.CoarseTripleActivityUnderBCN.uniform_vanishing_activity
 #print axioms PaperP1.CoarseTripleFiniteReduction.uniform_cover
+#print axioms PaperP1.CoarseTriplePairSeedBounds.uniform_activity
+#print axioms PaperP1.CoarseTriplePairSeedBounds.uniform_extensions
 #print axioms PaperP1.CoarseTriplePairSeedsUnderInputs.uniform_activity
 #print axioms PaperP1.CoarseTriplePairSeedsUnderInputs.uniform_extensions
 #print axioms PaperP1.CodedClassCount.uniform_count
@@ -7079,6 +7085,7 @@ import PaperP1
 #print axioms PaperP1.ConnectedSeedCatalogUnderInputs.uniform_mass
 #print axioms PaperP1.ConnectedTailUnderInputs.uniform_tail
 #print axioms PaperP1.ConnectedTailUnderInputs.article_15_12
+#print axioms PaperP1.ConnectedTripleLowCrossing.uniform_bound
 #print axioms PaperP1.ConnectedTripleLowCrossingUnderInputs.uniform_bound
 #print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_reduction
 #print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_absolute_error
@@ -7259,6 +7266,7 @@ import PaperP1
 #print axioms PaperP1.DensePrimitiveTripleRankMass.uniform_nominal_mass
 #print axioms PaperP1.DensePrimitiveTripleRankMassUnderBCN.uniform_rank_mass
 #print axioms PaperP1.DensePrimitiveTripleRankMassUnderBCN.uniform_nominal_mass
+#print axioms PaperP1.DenseSingletonJointMass.uniform_joint
 #print axioms PaperP1.DenseSingletonNonalignedTargets.uniform_hosts
 #print axioms PaperP1.DenseSingletonNonalignedTargets.uniform_mass
 #print axioms PaperP1.DenseSingletonNonalignedTargets.uniform_joint
@@ -8003,7 +8011,9 @@ import PaperP1
 #print axioms PaperP1.IrregularSeedMass.affine_sum
 #print axioms PaperP1.IrregularSeedMass.seed_family
 #print axioms PaperP1.IrregularSeedMass.seed_coordinates
+#print axioms PaperP1.IsolatedVertexDenseTripleMass.uniform_mass
 #print axioms PaperP1.IsolatedVertexDenseTripleMassUnderInputs.uniform_mass
+#print axioms PaperP1.IsolatedVertexTripleMass.uniform_mass
 #print axioms PaperP1.IsolatedVertexTripleMassUnderInputs.uniform_mass
 #print axioms PaperP1.JointFamilyProbabilityUnderBCN.maximalTripleProbability_nonneg
 #print axioms PaperP1.JointFamilyProbabilityUnderBCN.triple_probability_le_maximum
