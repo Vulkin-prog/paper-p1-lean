@@ -19499,6 +19499,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "9ec697491b1f1b7b34b1a394d350b3b2d9d87542"
+    },
+    {
+      "id": "P1-MATH-0367",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "A bounded-height interpolation equation needed exact total-degree coordinates, coefficient recovery, reconstruction, evaluation and height control in a single checked finite basis.",
+      "finding": "The triangular x+y<=D monomial basis exactly reconstructs every bounded-total-degree integer polynomial and preserves nonzeroness, actual degree, evaluation and coefficient-height bounds.",
+      "proposed_revision": "Use the original equation as a known kernel vector on every finite grid row minor, then construct a new bounded integer kernel vector and recover a bounded-height equation of the same total-degree cap.",
+      "impact": "Closes the exact total-degree interpolation basis. The bounded-height equation construction and the geometric plane counting estimate remain open; main13.4 and coverage are unchanged.",
+      "evidence": [
+        "PaperP1.TotalDegreeMonomials.index_card_pos",
+        "PaperP1.TotalDegreeMonomials.coefficient_formula",
+        "PaperP1.TotalDegreeMonomials.coefficient",
+        "PaperP1.TotalDegreeMonomials.coefficient_zero_of_total_lt",
+        "PaperP1.TotalDegreeMonomials.total_degree_le",
+        "PaperP1.TotalDegreeMonomials.ne_zero",
+        "PaperP1.TotalDegreeMonomials.evaluation",
+        "PaperP1.TotalDegreeMonomials.height_le",
+        "PaperP1.TotalDegreeMonomials.reconstruction",
+        "PaperP1.TotalDegreeMonomials.Index",
+        "PaperP1.TotalDegreeMonomials.polynomial"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15647 jobs); direct axiom audit passed for 14368 declarations using only propext, Classical.choice and Quot.sound; all 13663 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.95 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

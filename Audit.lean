@@ -2145,6 +2145,15 @@ import PaperP1
 #print axioms PaperP1.ThirdFactorialCumulant.weighted_centered_pairs
 #print axioms PaperP1.ThirdFactorialCumulant.exact_formula
 #print axioms PaperP1.ThreeFiniteValueSpan.full_union_rank_le_three_even_add_three
+#print axioms PaperP1.TotalDegreeMonomials.index_card_pos
+#print axioms PaperP1.TotalDegreeMonomials.coefficient_formula
+#print axioms PaperP1.TotalDegreeMonomials.coefficient
+#print axioms PaperP1.TotalDegreeMonomials.coefficient_zero_of_total_lt
+#print axioms PaperP1.TotalDegreeMonomials.total_degree_le
+#print axioms PaperP1.TotalDegreeMonomials.ne_zero
+#print axioms PaperP1.TotalDegreeMonomials.evaluation
+#print axioms PaperP1.TotalDegreeMonomials.height_le
+#print axioms PaperP1.TotalDegreeMonomials.reconstruction
 #print axioms PaperP1.TripleCancellationBound.abs_four
 #print axioms PaperP1.TripleCancellationBound.incompatible
 #print axioms PaperP1.TripleCentering.expansion

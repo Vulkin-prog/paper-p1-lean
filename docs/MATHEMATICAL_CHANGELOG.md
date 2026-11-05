@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**364 mathematical improvements and two statement-scope corrections are confirmed.**
+**365 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24206,3 +24206,16 @@ No coefficient-field, scalar-descent or denominator-clearing translation remains
 P1-MATH-0366 adds six theorems and one ordinary input definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records364 improvements and two statement-scope corrections. No axiom, new unproved premise beyond the explicit strict integer restriction, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15645 jobs); direct axiom audit passed for 14359 declarations using only propext, Classical.choice and Quot.sound; all 13652 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.96 GiB.
+
+
+## Exact triangular monomial coordinates with degree and height control
+
+TotalDegreeMonomials defines the actual triangular monomial index x+y<=D and its integer polynomial reconstruction. coefficient_formula proves the literal coefficient sum, coefficient recovers every indexed coordinate exactly, and coefficient_zero_of_total_lt proves all terms above D vanish. total_degree_le and reconstruction show these coordinates describe exactly the integer polynomials of total degree at most D, without replacing total degree by a rectangular partial-degree bound.
+
+ne_zero proves nonzero coordinates give a nonzero polynomial, evaluation gives the exact finite monomial row identity at signed integer points, height_le transfers a uniform coefficient bound to the actual polynomial height, and index_card_pos supplies the nonempty finite coefficient dimension including D=0.
+
+These are the algebraic prerequisites for constructing a bounded-height equation through an actual grid population using the already proved finite integer kernel theorem. The bounded-height construction and its counting reduction remain to be assembled; no grid count is assumed or proved by this module.
+
+P1-MATH-0367 adds nine theorems and two index/polynomial definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records365 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 and the geometric integer plane count remain open; Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15647 jobs); direct axiom audit passed for 14368 declarations using only propext, Classical.choice and Quot.sound; all 13663 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.95 GiB.

@@ -3537,3 +3537,4 @@ public import PaperP1.Algebra.ScalarComponentPoints
 public import PaperP1.Algebra.ManyPointsScalarDescent
 public import PaperP1.Arithmetic.RationalGeometricPlanePointInput
 public import PaperP1.Arithmetic.IntegralGeometricPlanePointInput
+public import PaperP1.Algebra.TotalDegreeMonomials
