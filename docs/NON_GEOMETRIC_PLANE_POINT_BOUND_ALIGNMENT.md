@@ -1,0 +1,11 @@
+# Height-free quadratic-degree count for non-geometric plane equations
+
+Source: main Theorem13.4, pair_rigidity.tex:214, non-geometric plane-equation branch only. The original all-dimensional integral-curve theorem remains open. Original manuscript hashes are unchanged.
+
+NonGeometricPlanePointBound.finite_points_card proves that an irreducible characteristic-zero plane equation which becomes reducible after any specified field extension has at most D*(D-1) base-field points in every finite subset, where D is exactly PlaneCurvePointCount.degree. Its grid_card theorem applies this result to the actual original integer grid at every natural cutoff B. The estimate is independent of height, coefficients and the chosen extension field; no geometric point-count input is assumed.
+
+The proof combines the internally proved smooth-point absolute-irreducibility implication with the sharp finite affine Bezout bound. A non-geometric base-field zero has zero outer derivative; irreducibility and characteristic zero show that a positive-outer-degree equation does not divide that derivative. The derivative's total degree is at most D-1. When the original outer degree is zero, swapping the two coordinates gives positive outer degree for any nonempty zero set. Exact total-degree, evaluation and scalar-extension identities justify this branch. Integer-to-field coordinate injection preserves the actual grid cardinality.
+
+The supporting BivariateCurveDegreeTransport module proves the partial-degree sum bound, exact degree invariance under swapping, the total-degree derivative bound, swapped evaluation and scalar-extension commutation. The first four work over arbitrary commutative rings. The two new modules add nine theorems and no definitions. The critical-point D*(D-1) estimate is also exposed independently of the non-geometric hypothesis.
+
+This completes the non-geometric branch of a future plane-polynomial BCN reduction. The geometric plane estimate and the original all-dimensional main13.4 integral-curve theorem remain open, so the row remains in progress. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records335 improvements and two statement-scope corrections. No new axiom, dependency, unproved input, compiler change or original manuscript edit is introduced. Palomar remains deferred.

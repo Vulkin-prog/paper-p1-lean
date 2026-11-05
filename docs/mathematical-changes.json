@@ -18489,6 +18489,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "10fd60640da7eb3eb62c196ec46a1c6e499631f9"
+    },
+    {
+      "id": "P1-MATH-0337",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The non-geometric plane-curve branch required a coefficient- and height-independent bound with quadratic total-degree dependence; the earlier fibre-based count carried an extra degree factor.",
+      "finding": "Every finite set of base-field zeros of an irreducible characteristic-zero plane equation reducible over a field extension has at most D*(D-1) points. The actual integer grids inherit the same height-free bound, including equations with zero outer degree.",
+      "proposed_revision": "Treat the non-geometric plane-equation case internally by the checked D*(D-1) bound and reserve the remaining point-count input for geometrically irreducible equations.",
+      "impact": "Discharges the non-geometric plane-counting branch with the required quadratic degree dependence. It does not prove the geometric plane estimate or the original all-dimensional main13.4 theorem; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.BivariateCurveDegreeTransport.degree_le_partial_sum",
+        "PaperP1.BivariateCurveDegreeTransport.degree_swap",
+        "PaperP1.BivariateCurveDegreeTransport.degree_derivative",
+        "PaperP1.BivariateCurveDegreeTransport.swap_evaluation",
+        "PaperP1.BivariateCurveDegreeTransport.extend_swap",
+        "PaperP1.NonGeometricPlanePointBound.critical_points_card",
+        "PaperP1.NonGeometricPlanePointBound.finite_points_card_of_outer_positive",
+        "PaperP1.NonGeometricPlanePointBound.finite_points_card",
+        "PaperP1.NonGeometricPlanePointBound.grid_card"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15565 jobs); direct axiom audit passed for 14189 declarations using only propext, Classical.choice and Quot.sound; all 13461 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.37 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

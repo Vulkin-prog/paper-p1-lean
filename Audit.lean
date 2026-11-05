@@ -521,6 +521,11 @@ import PaperP1
 #print axioms PaperP1.BivariateBranchBounds.shift_branch_bound
 #print axioms PaperP1.BivariateBranchBounds.rational_coefficient_height
 #print axioms PaperP1.BivariateBranchBounds.reciprocal_branch_bound
+#print axioms PaperP1.BivariateCurveDegreeTransport.degree_le_partial_sum
+#print axioms PaperP1.BivariateCurveDegreeTransport.degree_swap
+#print axioms PaperP1.BivariateCurveDegreeTransport.degree_derivative
+#print axioms PaperP1.BivariateCurveDegreeTransport.swap_evaluation
+#print axioms PaperP1.BivariateCurveDegreeTransport.extend_swap
 #print axioms PaperP1.BivariateCurveDegrees.degreeX_le_of_coefficients
 #print axioms PaperP1.BivariateCurveDegrees.degreeX_derivative_le
 #print axioms PaperP1.BivariateCurveDegrees.degreeX_le_total
@@ -4517,6 +4522,10 @@ import PaperP1
 #print axioms PaperP1.MultiAnchorWeightedSeries.finite_weight_identity
 #print axioms PaperP1.MultiAnchorWeightedSeries.weightedTerm_le
 #print axioms PaperP1.MultiAnchorWeightedSeries.weightedTotal_le
+#print axioms PaperP1.NonGeometricPlanePointBound.critical_points_card
+#print axioms PaperP1.NonGeometricPlanePointBound.finite_points_card_of_outer_positive
+#print axioms PaperP1.NonGeometricPlanePointBound.finite_points_card
+#print axioms PaperP1.NonGeometricPlanePointBound.grid_card
 #print axioms PaperP1.NonalignedRankFieldBCN.critical_rank_bound
 #print axioms PaperP1.NonalignedRankFieldBCN.article_13_6_under_field_BCN
 #print axioms PaperP1.NonalignedRankFieldBCN.uniform_half_window_gap

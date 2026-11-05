@@ -24738,3 +24738,18 @@ The projection lemma constructs t outside the finite set of collision slopes, so
 P1-MATH-0336 adds three unconditional theorems and removes the extra fibre-degree factor from the earlier coarse finite-intersection count. This prepares a quadratic-degree bound for the non-geometric part of plane-curve counting. It does not prove the geometric BCN estimate or the original all-dimensional main13.4 theorem, whose row stays in progress. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records334 improvements and two statement-scope corrections. No dependency, axiom, unproved input, original source or compiler change is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15561 jobs); direct axiom audit passed for 14180 declarations using only propext, Classical.choice and Quot.sound; all 13452 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.39 GiB.
+
+
+## Height-free quadratic-degree count for non-geometric plane equations
+
+Stable ID: p1:internal:nongeometric-plane-point-bound. Unconditional internal proof from smooth-point scalar descent, derivative degree and finite affine Bezout. No geometric point-count theorem is assumed; the geometric BCN branch remains unproved.
+
+NonGeometricPlanePointBound.finite_points_card proves that an irreducible characteristic-zero plane equation which becomes reducible after any specified field extension has at most D*(D-1) base-field points in every finite subset, where D is exactly PlaneCurvePointCount.degree. Its grid_card theorem applies this result to the actual original integer grid at every natural cutoff B. The estimate is independent of height, coefficients and the chosen extension field; no geometric point-count input is assumed.
+
+The proof combines the internally proved smooth-point absolute-irreducibility implication with the sharp finite affine Bezout bound. A non-geometric base-field zero has zero outer derivative; irreducibility and characteristic zero show that a positive-outer-degree equation does not divide that derivative. The derivative's total degree is at most D-1. When the original outer degree is zero, swapping the two coordinates gives positive outer degree for any nonempty zero set. Exact total-degree, evaluation and scalar-extension identities justify this branch. Integer-to-field coordinate injection preserves the actual grid cardinality.
+
+The supporting BivariateCurveDegreeTransport module proves the partial-degree sum bound, exact degree invariance under swapping, the total-degree derivative bound, swapped evaluation and scalar-extension commutation. The first four work over arbitrary commutative rings. The two new modules add nine theorems and no definitions. The critical-point D*(D-1) estimate is also exposed independently of the non-geometric hypothesis.
+
+This completes the non-geometric branch of a future plane-polynomial BCN reduction. The geometric plane estimate and the original all-dimensional main13.4 integral-curve theorem remain open, so the row remains in progress. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records335 improvements and two statement-scope corrections. No new axiom, dependency, unproved input, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15565 jobs); direct axiom audit passed for 14189 declarations using only propext, Classical.choice and Quot.sound; all 13461 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.37 GiB.

@@ -3498,3 +3498,5 @@ public import PaperP1.Algebra.BivariateResultantDegree
 public import PaperP1.Algebra.BivariateLinearShear
 public import PaperP1.Algebra.BivariateTotalDegreeChart
 public import PaperP1.Algebra.FinitePlaneBezout
+public import PaperP1.Algebra.BivariateCurveDegreeTransport
+public import PaperP1.Arithmetic.NonGeometricPlanePointBound
