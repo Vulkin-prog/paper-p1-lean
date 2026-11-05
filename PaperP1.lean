@@ -4064,3 +4064,6 @@ public import PaperP1.Algebra.TruncatedEvaluationDegreeBudget
 public import PaperP1.Analysis.ActualTaylorRemainderBound
 public import PaperP1.Analysis.RealSmoothEvaluationDeterminant
 public import PaperP1.Analysis.TaylorEvaluationData
+public import PaperP1.Analysis.MonomialUnitJetBounds
+public import PaperP1.Analysis.UnitJetProductBounds
+public import PaperP1.Analysis.UnitMonomialEvaluationDeterminant

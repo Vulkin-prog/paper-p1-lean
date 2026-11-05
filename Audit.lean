@@ -2973,6 +2973,10 @@ import PaperP1
 #print axioms PaperP1.MonomialPrimeScale.obstruction_monomial
 #print axioms PaperP1.MonomialPrimeScale.determinant_small
 #print axioms PaperP1.MonomialPrimeScale.obstruction_small
+#print axioms PaperP1.MonomialUnitJetBounds.basis_evaluation
+#print axioms PaperP1.MonomialUnitJetBounds.basis_derivative_bound
+#print axioms PaperP1.MonomialUnitJetBounds.basis_uniform_bound
+#print axioms PaperP1.MonomialUnitJetBounds.family_uniform_bound
 #print axioms PaperP1.MonomialWronskianExceptions.initial_degree
 #print axioms PaperP1.MonomialWronskianExceptions.initial_combination_ne_zero
 #print axioms PaperP1.MonomialWronskianExceptions.initial_not_dvd
@@ -3408,6 +3412,12 @@ import PaperP1
 #print axioms PaperP1.UnitGraphMonomialPieceCount.exists_scale
 #print axioms PaperP1.UnitGraphMonomialPieceCount.exists_affine_scale
 #print axioms PaperP1.UnitGraphMonomialPieceCount.point_count
+#print axioms PaperP1.UnitJetProductBounds.product_bound
+#print axioms PaperP1.UnitJetProductBounds.power_bound
+#print axioms PaperP1.UnitJetProductBounds.two_powers_bound
+#print axioms PaperP1.UnitMonomialEvaluationDeterminant.index_card_two_le
+#print axioms PaperP1.UnitMonomialEvaluationDeterminant.basis_bound
+#print axioms PaperP1.UnitMonomialEvaluationDeterminant.family_bound
 #print axioms PaperP1.UnitSlopeHigherDerivativeBounds.derivative_monotonicity
 #print axioms PaperP1.UnitSlopeHigherDerivativeBounds.interior_bound
 #print axioms PaperP1.UnitSlopeHigherDerivativeBounds.exists_piece_with_higher_bounds

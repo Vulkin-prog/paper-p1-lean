@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**519 mathematical improvements and two statement-scope corrections are confirmed.**
+**520 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26693,3 +26693,18 @@ This closes the concrete real short-interval function-evaluation determinant ste
 P1-MATH-0521 adds two modules, six theorems and three definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 519 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16745 jobs); direct axiom audit passed for 15865 declarations using only propext, Classical.choice and Quot.sound; all 15402 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.91 GiB.
+
+
+## Actual unit-jet monomial derivatives and short-interval determinants
+
+UnitJetProductBounds proves the actual Leibniz majorant |(f*g)^(j)(x)|<=(A+B)^j from the actual derivative bounds |f^(i)(x)|<=A^i and |g^(i)(x)|<=B^i through the specified order. The binomial identity is exact. Induction on the actual number of factors gives |(f^m)^(j)(x)|<=m^j for a unit jet, including m=0 and j=0. Two coordinate powers therefore have bound (a+b)^j. All these statements use actual local derivatives and actual smoothness at the point.
+
+MonomialUnitJetBounds identifies the evaluation of each genuine total-degree multivariate monomial with the corresponding product of coordinate powers. On an actual smooth plane map with unit jets through r, every monomial of total degree at most k has j-th derivative magnitude at most k^j, hence at most (k+1)^r for every j<=r. The bridge also applies to the actual complete monomial family from P1-MATH-0504, preserving its exact enumeration.
+
+UnitMonomialEvaluationDeterminant proves that the complete family has at least two members whenever k>=1 and applies the actual smooth evaluation determinant estimate. For any n>=2 selected monomials of degree at most k, actual unit curve jets through n-1 and actual parameter points within delta<=1 of an interior anchor, the determinant is at most (2*n)^n*(k+1)^(n*(n-1))*n!*delta^(n*(n-1)/2). The same estimate is proved for the complete actual total-degree family, whose size is at most (k+1)^2. Monomial derivative bounds and the Taylor representation are proved internally, not supplied determinant hypotheses. Repeated evaluation points and repeated selected monomials are allowed.
+
+This closes the actual monomial-jet application of P1-MATH-0521. Arithmetic determinant separation, controlled interval and global curve/component covering counts, whole-component graph coverage, the final sharp plane estimate and higher-dimensional projection remain separate. The simultaneous injective local unit-jet/Chebyshev maps of P1-MATH-0519 are available. Full main13.4/13.5 remain unresolved; the generic plane theorem stays cubic with full a<1/3 range.
+
+P1-MATH-0522 adds three modules and ten theorems. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 520 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16751 jobs); direct axiom audit passed for 15875 declarations using only propext, Classical.choice and Quot.sound; all 15412 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.89 GiB.

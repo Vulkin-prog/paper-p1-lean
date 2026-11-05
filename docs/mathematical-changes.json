@@ -25434,6 +25434,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "fd64633e723f4e3d9b634c240355b5dc1d51e524"
+    },
+    {
+      "id": "P1-MATH-0522",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The actual short-interval function determinant was available, but its derivative hypotheses were not yet derived for the genuine curve monomial family.",
+      "finding": "Actual unit coordinate jets imply exact k^j monomial derivative bounds and the resulting concrete complete-family determinant estimate.",
+      "proposed_revision": "Use the internally proved monomial derivative and determinant estimates for actual unit-jet curve maps when assembling the real determinant method.",
+      "impact": "Closes the monomial analytic determinant application. Arithmetic separation and global interval, curve and component covering counts remain separate.",
+      "evidence": [
+        "PaperP1.MonomialUnitJetBounds.basis_evaluation",
+        "PaperP1.MonomialUnitJetBounds.basis_derivative_bound",
+        "PaperP1.MonomialUnitJetBounds.basis_uniform_bound",
+        "PaperP1.MonomialUnitJetBounds.family_uniform_bound",
+        "PaperP1.UnitJetProductBounds.product_bound",
+        "PaperP1.UnitJetProductBounds.power_bound",
+        "PaperP1.UnitJetProductBounds.two_powers_bound",
+        "PaperP1.UnitMonomialEvaluationDeterminant.index_card_two_le",
+        "PaperP1.UnitMonomialEvaluationDeterminant.basis_bound",
+        "PaperP1.UnitMonomialEvaluationDeterminant.family_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16751 jobs); direct axiom audit passed for 15875 declarations using only propext, Classical.choice and Quot.sound; all 15412 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.89 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
