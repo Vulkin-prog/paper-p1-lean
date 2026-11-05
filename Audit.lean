@@ -909,6 +909,11 @@ import PaperP1
 #print axioms PaperP1.FiniteSupportImageRank.supportUnion_subset
 #print axioms PaperP1.FiniteSupportImageRank.support_subset_of_basis
 #print axioms PaperP1.FiniteSupportImageRank.rank_le_supportUnion
+#print axioms PaperP1.FormalBranchScalarDescent.evaluation_constant
+#print axioms PaperP1.FormalBranchScalarDescent.evaluation_naturality
+#print axioms PaperP1.FormalBranchScalarDescent.components_vanish
+#print axioms PaperP1.FormalBranchScalarDescent.extension_kernel_with_basis
+#print axioms PaperP1.FormalBranchScalarDescent.extension_kernel
 #print axioms PaperP1.FormalFactorialCumulants.logarithmic_derivative
 #print axioms PaperP1.FormalFactorialCumulants.moment_zero
 #print axioms PaperP1.FormalFactorialCumulants.cumulant_zero

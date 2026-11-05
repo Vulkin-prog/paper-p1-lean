@@ -1,0 +1,11 @@
+# Exact formal-branch kernel after every extension of the coefficient field
+
+Source: companion T1.4 non-geometric biform branch, completing the kernel descent prepared in P1-MATH-0321 through P1-MATH-0324. Original manuscript hashes remain preserved.
+
+The extension-field branch kernel is now proved exactly. Evaluation of base-field polynomials commutes with their actual coefficient extension and with mapping the branch series. Nested scalar constants evaluate to the corresponding constant series. Applying this naturality identity to the proved finite basis reconstruction of P1-MATH-0324 expresses every extension-field branch evaluation as its finite sum of independent scalar components.
+
+If the extension-field evaluation is zero, the coefficientwise scalar-series separation from P1-MATH-0322 forces every base-field polynomial component to evaluate to zero on the original branch. The exact original-field kernel from P1-MATH-0321 then makes every component divisible by the original irreducible positive-outer-degree polynomial P. Extending these divisibilities and summing the exact finite reconstruction proves that the extension-field polynomial is divisible by extend(P). The reverse implication follows from the mapped actual equation.
+
+The resulting equivalence is valid for every field extension, including infinite-dimensional ones, and for every extension-field polynomial. A version with an explicit arbitrary basis is proved first; the general version uses the existing vector-space basis theorem from Mathlib. No component decomposition, kernel identity after extension, cardinality bound or geometric irreducibility premise is assumed.
+
+P1-MATH-0325 closes the extension-field kernel descent. The factorization-to-irreducibility consequence and the identification with the actual complex bihomogeneous geometric polynomial remain to be completed. NonGeometricRationalSingularity.Input is still an unproved alternative ordinary argument; the Heath-Brown input is unchanged. T1.4 remains conditional and coverage stays89 proved and75 conditional out of167 (164 completed). There are323 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
