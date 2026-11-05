@@ -45,7 +45,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is112/167 unconditional and52 conditional (164/167 completed). The project records425 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is112/167 unconditional and52 conditional (164/167 completed). The project records426 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -164,7 +164,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14793 audited theorem/lemma declarations**. This
+- The project currently has **14807 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25908,3 +25908,20 @@ This discharges the particular former surface-cover and normalized-curve uses of
 P1-MATH-0427 adds nine modules, fifteen theorems and one definition. Main15.5 moves from conditional to proved. Coverage becomes112 proved,52 conditional and3 in_progress out of167, with164 completed. The project records425 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15915 jobs); direct axiom audit passed for 14793 declarations using only propext, Classical.choice and Quot.sound; all 14149 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.56 GiB.
+
+
+## Unconditional nonaligned dense targets over arbitrary actual source subspaces
+
+DenseTwoTargetNonalignedHosts proves the full nonaligned-target branch of main15.2 for every fixed source count s, including zero, and every actual effective subspace W of the span of the s source windows. The only source/target directness assumptions are the printed W cap S_y=W cap S_z=0. Neither W=the full source span nor disjointness of individual source windows from targets is required. Source windows may be dependent or overlapping. All data, including W, follow one uniform critical-scale threshold.
+
+The host count is stronger than needed: every finite population of nonaligned target pairs with actual effective addition-kernel dimension at leasteta*L has cardinality at mostN^epsilon. DenseTwoTargetNonalignedMass proves the exact heterogeneous actual marginal product times2^d sum at rateN^(-1+epsilon), and separately the literal nominal2^(-2L)*2^d version. Local defects, zero actual marginals and affine incompatibility are retained. No external surface-cover, normalized-curve-count or BCN argument occurs in these statements.
+
+AlignedSourcePool gives a deterministic alternative for each target. Centers aligned with one of the s fixed sources have at mosts*(4D+1)*(L+1)^10 possibilities, uniformly even in the source values and the ambient finite population. This is subpower at critical length. A target outside this pool is globally nonaligned with every individual old source, without any invalid deduction from its disjointness with W. Its target/target nonalignment then supplies the distinguished-block nonalignment needed for anchored confinement. Both targets lie in the union of this deterministic source pool and a common deterministic two-small-kernel set. Squaring the union bound gives the subpower pair count.
+
+PhysicalWindowReindex constructs an exact linear equivalence of the literal physical relation codes under arbitrary block-index equivalences. It preserves image dimension, transports each selected injective projection and proves nonzero coordinate pullback and active distinguished-block nonalignment. DensePhysicalAnchorWitness selects a recovery parameter beforeC,tau and every actual code, then constructs a fresh regularization after reindexing. Its input subspace needs no recovery-exclusion hypothesis. Only the selected anchor projection is injective; other projections and source/source nonalignment remain unrestricted.
+
+The actual two-target physical lift retains at least the effective kernel dimension minuseta*L/16. Its two target projections are injective under exactly the printed W-disjointness assumptions. The new witness applies independently at either target outside the aligned-source pool. The effective kernel rank is at mostL, so the actual and nominal point weights are at mosta fixed constant/N, yielding the complete nonaligned weighted branch.
+
+The weakly aligned branch for arbitrary W is still to be assembled. Main15.2 therefore remains conditional, and no general geometric property is promoted. P1-MATH-0428 adds five modules, fourteen theorems and two definitions. Coverage stays112 proved,52 conditional and3 in_progress out of167, with164 completed. The project records426 improvements and two statement-scope corrections. Original source bytes remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15925 jobs); direct axiom audit passed for 14807 declarations using only propext, Classical.choice and Quot.sound; all 14165 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.52 GiB.

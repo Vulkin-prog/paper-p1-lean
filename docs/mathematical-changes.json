@@ -21643,6 +21643,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "3616851e6b36ee29c76e78e4597671fd5caa83f4"
+    },
+    {
+      "id": "P1-MATH-0428",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:dense-targets",
+        "number": "15.2",
+        "page": 40,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 129,
+        "statement_sha256": "67d2424adbe9ce58d341f300471c14a7e1cf21728b62ee4a3f73ad0425362605"
+      },
+      "original_assumption": "Only the full singleton-source nonaligned branch was discharged. Extending it by treating W-disjointness as disjointness from every individual source would be invalid for an arbitrary source subspace.",
+      "finding": "Every target either belongs to a uniformly polynomial aligned-source pool or has the exact anchor/other nonalignment required for confinement. This proves subpower dense-pair hosts and exact actual/nominal rank-weight bounds for arbitrary W and every fixed source count.",
+      "proposed_revision": "State the aligned-source-pool alternative explicitly and apply anchored confinement only to targets outside it. Transport actual physical codes exactly, construct a fresh regularization, and retain only the selected target injection.",
+      "impact": "Discharges the complete nonaligned branch of main15.2 for arbitrary source subspaces. The full numbered statement retains its weakly aligned obligation; coverage remains112/167 unconditional.",
+      "evidence": [
+        "PaperP1.PhysicalWindowReindex.reindex_apply",
+        "PaperP1.PhysicalWindowReindex.projection_comp",
+        "PaperP1.PhysicalWindowReindex.finrank_image",
+        "PaperP1.PhysicalWindowReindex.projection_image_injective",
+        "PaperP1.PhysicalWindowReindex.label_pullback",
+        "PaperP1.PhysicalWindowReindex.active_pullback",
+        "PaperP1.PhysicalWindowReindex.noExactFrom_reindex",
+        "PaperP1.AlignedSourcePool.mem_pool",
+        "PaperP1.AlignedSourcePool.card_bound",
+        "PaperP1.AlignedSourcePool.uniform_count",
+        "PaperP1.DensePhysicalAnchorWitness.uniform_parameter",
+        "PaperP1.DenseTwoTargetNonalignedHosts.uniform_hosts",
+        "PaperP1.DenseTwoTargetNonalignedMass.uniform_mass",
+        "PaperP1.DenseTwoTargetNonalignedMass.uniform_nominal_mass",
+        "PaperP1.PhysicalWindowReindex.reindex",
+        "PaperP1.AlignedSourcePool.pool"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15925 jobs); direct axiom audit passed for 14807 declarations using only propext, Classical.choice and Quot.sound; all 14165 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.52 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

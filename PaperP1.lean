@@ -3672,3 +3672,8 @@ public import PaperP1.Asymptotics.LowPrimitiveRankMass
 public import PaperP1.Asymptotics.SharpPrimitiveMass
 public import PaperP1.Asymptotics.SharpPrimitiveNominalMass
 public import PaperP1.Combinatorics.PointedFiniteEnumeration
+public import PaperP1.Arithmetic.PhysicalWindowReindex
+public import PaperP1.Asymptotics.AlignedSourcePool
+public import PaperP1.Asymptotics.DensePhysicalAnchorWitness
+public import PaperP1.Asymptotics.DenseTwoTargetNonalignedHosts
+public import PaperP1.Asymptotics.DenseTwoTargetNonalignedMass

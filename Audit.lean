@@ -5041,6 +5041,13 @@ import PaperP1
 #print axioms PaperP1.PhysicalRelationSections.section_subspace
 #print axioms PaperP1.PhysicalSubspaceRegularization.uniform_subspace
 #print axioms PaperP1.PhysicalSubspaceRegularizationAt.uniform_subspace
+#print axioms PaperP1.PhysicalWindowReindex.reindex_apply
+#print axioms PaperP1.PhysicalWindowReindex.projection_comp
+#print axioms PaperP1.PhysicalWindowReindex.finrank_image
+#print axioms PaperP1.PhysicalWindowReindex.projection_image_injective
+#print axioms PaperP1.PhysicalWindowReindex.label_pullback
+#print axioms PaperP1.PhysicalWindowReindex.active_pullback
+#print axioms PaperP1.PhysicalWindowReindex.noExactFrom_reindex
 #print axioms PaperP1.PhysicalWindowRelations.mem_code
 #print axioms PaperP1.PhysicalWindowRelations.toEffective_surjective
 #print axioms PaperP1.PhysicalWindowRelations.localValue_range
@@ -6705,6 +6712,9 @@ import PaperP1
 #print axioms PaperP1.AlignedSourcePairMass.uniform_height_two
 #print axioms PaperP1.AlignedSourcePairPowers.uniform_height
 #print axioms PaperP1.AlignedSourcePairPowers.uniform_zero_units
+#print axioms PaperP1.AlignedSourcePool.mem_pool
+#print axioms PaperP1.AlignedSourcePool.card_bound
+#print axioms PaperP1.AlignedSourcePool.uniform_count
 #print axioms PaperP1.AlignedTargetRank.uniform_core
 #print axioms PaperP1.AlignedTargetSourceTheorem.source_representation
 #print axioms PaperP1.AlignedTargetSourceTheorem.symmetric_endpoint_card
@@ -7271,6 +7281,7 @@ import PaperP1
 #print axioms PaperP1.DensePairCrossingFamiliesUnderInputs.uniform_seeds
 #print axioms PaperP1.DensePairCrossingFamiliesUnderInputs.uniform_centered_extensions
 #print axioms PaperP1.DensePairCrossingSeedsUnderInputs.uniform_bound
+#print axioms PaperP1.DensePhysicalAnchorWitness.uniform_parameter
 #print axioms PaperP1.DensePhysicalKernelWitness.uniform_witness_active
 #print axioms PaperP1.DensePhysicalKernelWitness.uniform_witness
 #print axioms PaperP1.DensePhysicalKernelWitnessAt.uniform_witness
@@ -7302,6 +7313,9 @@ import PaperP1
 #print axioms PaperP1.DenseTargetCount.mem_freshTargets
 #print axioms PaperP1.DenseTargetCount.main_6_2
 #print axioms PaperP1.DenseTwoTargetJointMassUnderInputs.uniform_joint
+#print axioms PaperP1.DenseTwoTargetNonalignedHosts.uniform_hosts
+#print axioms PaperP1.DenseTwoTargetNonalignedMass.uniform_mass
+#print axioms PaperP1.DenseTwoTargetNonalignedMass.uniform_nominal_mass
 #print axioms PaperP1.DenseWeightedSectorUnderInputs.weighted_card_bound
 #print axioms PaperP1.DenseWeightedSectorUnderInputs.relative_kernel_le_full_sum
 #print axioms PaperP1.DenseWeightedSectorUnderInputs.full_kernel_le_full_sum
