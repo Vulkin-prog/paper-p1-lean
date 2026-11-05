@@ -1487,6 +1487,13 @@ import PaperP1
 #print axioms PaperP1.PolynomialPowerMapFinite.variable_integral
 #print axioms PaperP1.PolynomialPowerMapFinite.generated
 #print axioms PaperP1.PolynomialPowerMapFinite.finite
+#print axioms PaperP1.PolynomialScalarProjection.project_coefficient
+#print axioms PaperP1.PolynomialScalarProjection.project_add
+#print axioms PaperP1.PolynomialScalarProjection.project_smul
+#print axioms PaperP1.PolynomialScalarProjection.project_degree_le
+#print axioms PaperP1.PolynomialScalarProjection.extend_coefficient
+#print axioms PaperP1.PolynomialScalarProjection.component_coefficient
+#print axioms PaperP1.PolynomialScalarProjection.component_constant_mul
 #print axioms PaperP1.PowerSeriesHenselLift.constantCoeff_eval
 #print axioms PaperP1.PowerSeriesHenselLift.exists_root
 #print axioms PaperP1.PowerSeriesScalarIndependence.finite_sum_eq_zero_iff

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**320 mathematical improvements and two statement-scope corrections are confirmed.**
+**321 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23648,3 +23648,14 @@ The proof applies each actual coefficient map to the finite series sum. Its n-th
 P1-MATH-0322 closes the scalar-series separation step independently of any absolute irreducibility premise. The finite coefficient decomposition of extension-field polynomials, its evaluation on the branch, the resulting irreducibility descent and the actual bihomogeneous identification remain to be connected. NonGeometricRationalSingularity.Input is still an unproved alternative ordinary algebraic argument, and the Heath-Brown input is unchanged. T1.4 remains conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are320 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15531 jobs); direct axiom audit passed for 14108 declarations using only propext, Classical.choice and Quot.sound; all 13369 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.58 GiB.
+
+
+## Exact linear coefficient projections for extension-field polynomial descent
+
+The finite coefficient descent now has explicit checked projection maps. Every linear coefficient map between semiring modules induces a polynomial coefficient projection, with exact coefficient identity, additivity, scalar compatibility and a degree bound: projection cannot increase polynomial degree. The proof constructs the polynomial from its actual finitely supported coefficient function.
+
+Applying this construction twice gives a base-field linear projection on nested bivariate polynomials. Its two-index coefficient is exactly the original coefficient under the chosen scalar linear map. The actual base-extension map has its literal two-index coefficient identity. Finally, projection of C(C(c))*extend(P), where P is a base-field polynomial, equals C(C(ell(c)))*P. This compatibility follows from scalar linearity with the actual embedded base coefficient. These are linear coefficient projections; the proved multiplication compatibility has the precise scalar-times-base-polynomial form just stated.
+
+P1-MATH-0323 closes the exact coefficient-map step needed to construct finite scalar decompositions of extension-field factors. The finite basis support, reconstruction, branch evaluation and resulting irreducibility descent still need to be assembled. NonGeometricRationalSingularity.Input remains an unproved alternative ordinary algebraic argument; HeathBrownBiformInput.Input is unchanged. T1.4 stays conditional; numbered coverage stays89 proved and75 conditional out of167 (164 completed). There are321 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15533 jobs); direct axiom audit passed for 14115 declarations using only propext, Classical.choice and Quot.sound; all 13380 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.57 GiB.

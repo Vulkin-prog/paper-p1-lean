@@ -1,0 +1,9 @@
+# Exact linear coefficient projections for extension-field polynomial descent
+
+Source: companion T1.4 non-geometric biform branch, continuing the field-extension scalar separation in P1-MATH-0322. Original manuscript hashes remain preserved.
+
+The finite coefficient descent now has explicit checked projection maps. Every linear coefficient map between semiring modules induces a polynomial coefficient projection, with exact coefficient identity, additivity, scalar compatibility and a degree bound: projection cannot increase polynomial degree. The proof constructs the polynomial from its actual finitely supported coefficient function.
+
+Applying this construction twice gives a base-field linear projection on nested bivariate polynomials. Its two-index coefficient is exactly the original coefficient under the chosen scalar linear map. The actual base-extension map has its literal two-index coefficient identity. Finally, projection of C(C(c))*extend(P), where P is a base-field polynomial, equals C(C(ell(c)))*P. This compatibility follows from scalar linearity with the actual embedded base coefficient. These are linear coefficient projections; the proved multiplication compatibility has the precise scalar-times-base-polynomial form just stated.
+
+P1-MATH-0323 closes the exact coefficient-map step needed to construct finite scalar decompositions of extension-field factors. The finite basis support, reconstruction, branch evaluation and resulting irreducibility descent still need to be assembled. NonGeometricRationalSingularity.Input remains an unproved alternative ordinary algebraic argument; HeathBrownBiformInput.Input is unchanged. T1.4 stays conditional; numbered coverage stays89 proved and75 conditional out of167 (164 completed). There are321 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
