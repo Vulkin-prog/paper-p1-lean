@@ -38776,7 +38776,8 @@
           ],
           "checkpoint": "P1-MATH-0478"
         }
-      ]
+      ],
+      "validation_commit": "92ec905209f678191ba76d11ad2109bbe825e033"
     },
     {
       "label": "p1:limits:all-anchors",
