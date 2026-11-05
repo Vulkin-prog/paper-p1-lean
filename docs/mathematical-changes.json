@@ -21808,6 +21808,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "5813b9340730dd362d57e6adb2a592ad61d6b519"
+    },
+    {
+      "id": "P1-MATH-0432",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:fixed-activities",
+        "number": "15.10",
+        "page": 45,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 561,
+        "statement_sha256": "12de4a1b34610fa9a45c667c976fa4a12804e7cf9884a5192c8c21adc7fd5cff"
+      },
+      "original_assumption": "Main15.10 retained finite geometric inputs; its source incompatible proof ultimately inserted the optimal41/30 third-activity bound.",
+      "finding": "Internal actual connected seed masses prove the full symbolic reduction. Coarse full higher activity at exponent1, independent-extension exponent1/2 and the sharp pair deficit already imply the incompatible exponent3/2, without any optimal third-activity input.",
+      "proposed_revision": "Replace the geometric seed invocations by their internal actual mass proofs and replace the incompatible induction by the exact finite higher-source/pair deficit decomposition. Leave the literal third absolute activity symbolic.",
+      "impact": "Both conclusions of main15.10 become unconditional; the sharp incompatible exponent3/2 requires no optimal third-activity estimate. Coverage becomes116 proved,48 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.ConnectedReductionToTriples.uniform_range",
+        "PaperP1.ConnectedReductionToTriples.article_15_10",
+        "PaperP1.ConnectedTriplePositive.uniform_reduction",
+        "PaperP1.ConnectedTriplePositive.uniform_absolute_error",
+        "PaperP1.SharpCompatibleActivity.uniform_range",
+        "PaperP1.SharpConnectedSeedCatalog.uniform_mass",
+        "PaperP1.SharpIncompatibleActivity.uniform_range",
+        "PaperP1.UnconditionalTripleControlledActivity.uniform_weighted"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15989 jobs); direct axiom audit passed for 14856 declarations using only propext, Classical.choice and Quot.sound; all 14214 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.30 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -7114,6 +7114,8 @@ import PaperP1
 #print axioms PaperP1.ConnectedIndependent256Budget.uniform_bound
 #print axioms PaperP1.ConnectedJointBoundedNullityTail.uniform_bound
 #print axioms PaperP1.ConnectedOneRankOffsetMassUnderInputs.uniform_bound
+#print axioms PaperP1.ConnectedReductionToTriples.uniform_range
+#print axioms PaperP1.ConnectedReductionToTriples.article_15_10
 #print axioms PaperP1.ConnectedReductionToTriplesUnderInputs.uniform_range
 #print axioms PaperP1.ConnectedReductionToTriplesUnderInputs.article_15_10
 #print axioms PaperP1.ConnectedSeedCatalog.uniform_mass
@@ -7122,6 +7124,8 @@ import PaperP1
 #print axioms PaperP1.ConnectedTailUnderInputs.article_15_12
 #print axioms PaperP1.ConnectedTripleLowCrossing.uniform_bound
 #print axioms PaperP1.ConnectedTripleLowCrossingUnderInputs.uniform_bound
+#print axioms PaperP1.ConnectedTriplePositive.uniform_reduction
+#print axioms PaperP1.ConnectedTriplePositive.uniform_absolute_error
 #print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_reduction
 #print axioms PaperP1.ConnectedTriplePositiveUnderInputs.uniform_absolute_error
 #print axioms PaperP1.ConstructedClusterCurveData.uniform_local_cover
@@ -9126,8 +9130,10 @@ import PaperP1
 #print axioms PaperP1.SharpComparableTranslatedKernelCounts.two_uniform_budget
 #print axioms PaperP1.SharpComparableTruncatedSupportCount.uniform_count
 #print axioms PaperP1.SharpComparableTwoSmallKernelCount.uniform_count
+#print axioms PaperP1.SharpCompatibleActivity.uniform_range
 #print axioms PaperP1.SharpCompatibleActivityUnderInputs.uniform_range
 #print axioms PaperP1.SharpConnectedChannelMassUnderInputs.uniform_mass
+#print axioms PaperP1.SharpConnectedSeedCatalog.uniform_mass
 #print axioms PaperP1.SharpConnectedSeedCatalogUnderInputs.uniform_mass
 #print axioms PaperP1.SharpCovarianceScaleUnderInputs.uniform_absolute_scale
 #print axioms PaperP1.SharpCovarianceScaleUnderInputs.uniform_regular_covariance
@@ -9136,6 +9142,7 @@ import PaperP1
 #print axioms PaperP1.SharpFiniteInteriorMassUnderInputs.uniform_channel
 #print axioms PaperP1.SharpFiniteInteriorMassUnderInputs.uniform_mass
 #print axioms PaperP1.SharpFixedChannelNonalignedMassUnderInputs.uniform_bound
+#print axioms PaperP1.SharpIncompatibleActivity.uniform_range
 #print axioms PaperP1.SharpIncompatibleActivityUnderInputs.uniform_range
 #print axioms PaperP1.SharpOnceAllCouplingUnderInputs.actual_second_le_homogeneous
 #print axioms PaperP1.SharpOnceAllCouplingUnderInputs.uniform_second
@@ -9552,6 +9559,7 @@ import PaperP1
 #print axioms PaperP1.UnconditionalDenseTwoTargetMass.uniform_nominal_mass
 #print axioms PaperP1.UnconditionalDenseTwoTargetMass.uniform_homogeneous_mass
 #print axioms PaperP1.UnconditionalDenseTwoTargetMass.article_15_2
+#print axioms PaperP1.UnconditionalTripleControlledActivity.uniform_weighted
 #print axioms PaperP1.uniformLittleOOn_zero
 #print axioms PaperP1.UniformGeometricCountsUnderInputs.one_variable
 #print axioms PaperP1.UniformGeometricCountsUnderInputs.companion_T1_7

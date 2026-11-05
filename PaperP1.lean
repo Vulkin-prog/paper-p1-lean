@@ -3703,3 +3703,9 @@ public import PaperP1.Asymptotics.LowTwoPairJointMass
 public import PaperP1.Asymptotics.LowTwoPairSeeds
 public import PaperP1.Asymptotics.NonconnectedActivity
 public import PaperP1.Asymptotics.TwoTargetJointMass
+public import PaperP1.Asymptotics.ConnectedReductionToTriples
+public import PaperP1.Asymptotics.ConnectedTriplePositive
+public import PaperP1.Asymptotics.SharpCompatibleActivity
+public import PaperP1.Asymptotics.SharpConnectedSeedCatalog
+public import PaperP1.Asymptotics.SharpIncompatibleActivity
+public import PaperP1.Asymptotics.UnconditionalTripleControlledActivity
