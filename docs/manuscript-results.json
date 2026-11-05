@@ -6288,7 +6288,8 @@
             "p1:internal:slow-growing-plane-degree-cap"
           ]
         }
-      ]
+      ],
+      "validation_commit": "785f62127e2d42cafcd19028b1fc5e4ada5c6d28"
     },
     {
       "label": "p13:rig:nonaligned",
