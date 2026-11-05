@@ -4167,3 +4167,6 @@ public import PaperP1.Algebra.ConductorFiberInjectivity
 public import PaperP1.Algebra.PolynomialCoordinateDerivative
 public import PaperP1.Algebra.PrimitiveDerivativeConductor
 public import PaperP1.Geometry.LinearPlaneImageFiber
+public import PaperP1.Geometry.PlaneImagePointSeparation
+public import PaperP1.Geometry.QuotientCurveSectionBudget
+public import PaperP1.Geometry.QuotientPointEvaluation

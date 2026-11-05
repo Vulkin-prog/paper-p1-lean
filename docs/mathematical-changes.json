@@ -26585,6 +26585,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "4335f5ecdbe8f87f09d2d05dd5e22715eab59f05"
+    },
+    {
+      "id": "P1-MATH-0551",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "Actual derivative homogeneity, conductor control and algebra-homomorphism fibre injectivity were available, but their translation to the original coordinate point population and its original-source exceptional section budget remained to be proved.",
+      "finding": "Literal quotient point evaluation separates original coordinates; the actual nonzero degree-e quotient section has at most e*d normalized original points, including integer points, and agreement of the three actual plane coordinates recovers every source point off the derivative section.",
+      "proposed_revision": "State the exceptional budget directly on the source derivative section and use equality of actual coordinate evaluations to justify injectivity of the controlled integer projection on its complement.",
+      "impact": "Supplies the actual original-source d*(d-1) budget and removes an unproved point-to-algebra-evaluation identification from the projection count.",
+      "evidence": [
+        "PaperP1.PlaneImagePointSeparation.evaluations_equal_of_coordinates",
+        "PaperP1.QuotientCurveSectionBudget.normalized_population",
+        "PaperP1.QuotientCurveSectionBudget.integer_population",
+        "PaperP1.QuotientPointEvaluation.evaluation_mk",
+        "PaperP1.QuotientPointEvaluation.evaluation_X",
+        "PaperP1.QuotientPointEvaluation.points_equal",
+        "PaperP1.QuotientPointEvaluation.evaluation"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16981 jobs); direct axiom audit passed for 16182 declarations using only propext, Classical.choice and Quot.sound; all 15777 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.56 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

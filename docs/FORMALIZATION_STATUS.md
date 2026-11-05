@@ -116,7 +116,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records548 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records549 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -235,7 +235,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16176 audited theorem/lemma declarations**. This
+- The project currently has **16182 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -28048,3 +28048,18 @@ Thus the actual derivative denominator, its homogeneity and nonvanishing, its co
 P1-MATH-0550 adds four modules, fourteen theorems and one definition. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 548 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced. The pinned trace-dual and homogeneous partial-derivative sources are selectively compiled. Ubuntu free space remains about 6.58 GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (16975 jobs); direct axiom audit passed for 16176 declarations using only propext, Classical.choice and Quot.sound; all 15770 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.58 GiB.
+
+
+## Actual quotient point separation and original-source homogeneous section budgets
+
+QuotientPointEvaluation constructs the actual algebra homomorphism evaluating the original polynomial coordinate quotient at a literal point annihilating the original ideal. Evaluation on the quotient class of each polynomial and each original variable is proved equal to the original point evaluation. Equality of these actual algebra homomorphisms therefore implies equality of all original point coordinates.
+
+QuotientCurveSectionBudget proves the original-source section bound for an actual nonzero element of a genuine homogeneous quotient piece. A representative in the same homogeneous degree is extracted from that literal piece, and its nonvanishing modulo the original ideal proves that it lies outside the ideal. The internally proved linear-normalized projective section theorem then bounds every finite actual point population by e*d. The integer version transports the actual finite original integer population injectively into the characteristic-zero coefficient field, uses the actual chart coordinate equal to one, and obtains the same e*d budget without a height restriction. Applied to the degree-(d-1) derivative denominator of P1-MATH-0550, this supplies the original-source d*(d-1) exceptional point budget rather than multiplying a target critical-point estimate by a separate fibre degree.
+
+PlaneImagePointSeparation proves that agreement on the three actual projected source coordinates implies equality of the actual source point-evaluation homomorphisms whenever the actual derivative denominator evaluates nonzero. Agreement of the two algebra homomorphisms precomposed with the literal plane quotient-to-source map is proved on the three actual quotient variable generators. The previously internal derivative conductor then proves equality of all original source evaluations. Combining this with QuotientPointEvaluation recovers the original point itself on every good fibre.
+
+Thus actual quotient evaluation, separation by the three literal plane coordinates away from the actual derivative section, and the original-source exceptional-point budget are internal. The final assembly still needs the actual affine plane equation, integer projection and height transport, and scalar-extension/descent for the full main13.4 statement. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed; main13.5 stays internally proved and companionT1.7/T19.17 remain unresolved.
+
+P1-MATH-0551 adds three modules, six theorems and one definition. The project records 549 improvements and two P1 statement-scope corrections. The external BCN recurrence erratum stays separate. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced. Ubuntu free space remains about 6.56 GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (16981 jobs); direct axiom audit passed for 16182 declarations using only propext, Classical.choice and Quot.sound; all 15777 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.56 GiB.

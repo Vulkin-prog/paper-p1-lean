@@ -12314,6 +12314,7 @@ import PaperP1
 #print axioms PaperP1.OrdinaryRadicalSurface.homogeneous
 #print axioms PaperP1.OrdinaryRadicalSurface.chart_bijective
 #print axioms PaperP1.OrdinarySurfaceCurveData.degree_unique
+#print axioms PaperP1.PlaneImagePointSeparation.evaluations_equal_of_coordinates
 #print axioms PaperP1.ProjAffineFieldEquiv.equiv_chartMap
 #print axioms PaperP1.ProjChartDehomogenizationNaturality.dehomogenization_natural
 #print axioms PaperP1.ProjChartDehomogenizationNaturality.chart_dehomogenization_congr
@@ -12396,6 +12397,11 @@ import PaperP1
 #print axioms PaperP1.ProjectiveSectionFiniteSet.rational_curve_card
 #print axioms PaperP1.ProjectiveSectionFiniteSet.finite_locus
 #print axioms PaperP1.ProjectiveSectionFiniteSet.exists_finset
+#print axioms PaperP1.QuotientCurveSectionBudget.normalized_population
+#print axioms PaperP1.QuotientCurveSectionBudget.integer_population
+#print axioms PaperP1.QuotientPointEvaluation.evaluation_mk
+#print axioms PaperP1.QuotientPointEvaluation.evaluation_X
+#print axioms PaperP1.QuotientPointEvaluation.points_equal
 #print axioms PaperP1.SourceAffineCurveDegreeBound.multiplicity_ge_twoD
 #print axioms PaperP1.SourceCurveAffineRadicalCover.chartEquiv_radicand
 #print axioms PaperP1.SourceCurveAffineRadicalCover.exists_cover
