@@ -38082,7 +38082,8 @@
             "PaperP1.SmoothBarrierSaddleScale.tendsto_cost_gap"
           ]
         }
-      ]
+      ],
+      "validation_commit": "53c4a7f55b1bd532e6cf4f9a6592eb776bbd2e4b"
     },
     {
       "label": "p1:limits:private-exact",
@@ -39167,7 +39168,8 @@
           "proof": "PaperP1.FineSaddleTheorems.companion_T19_16",
           "checkpoint": "P1-MATH-0483"
         }
-      ]
+      ],
+      "validation_commit": "53c4a7f55b1bd532e6cf4f9a6592eb776bbd2e4b"
     },
     {
       "label": "p1:limits:all-anchors",
