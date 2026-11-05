@@ -23451,6 +23451,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "80e7ca7fd16f6f25f3ad1ab6e1883f51a7095686"
+    },
+    {
+      "id": "P1-MATH-0471",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The all-anchor route had only the unproved almost-all short-interval census available for two ordinary candidates. The new internal positive dyadic density had not yet been transported to actual critical windows or clean sources.",
+      "finding": "An exact finite sliding-window incidence budget transports the internal positive dyadic smooth density to a fixed positive fraction of actual critical windows with two ordinary candidates. The literal maximal-support exclusions retain a fixed positive fraction, without any short-interval input.",
+      "proposed_revision": "Record the independently proved positive-fraction two-candidate and clean-source census. Use it for weaker all-anchor consequences, while retaining the stronger almost-all source census and full1-o(1) T19.17 coefficient as separate unresolved obligations.",
+      "impact": "Supplies a closed internal positive-fraction census on the exact ordinaryIndices and goodSources populations used in the forcing proof. Full T19.17 and its sharp almost-all coefficient remain conditional; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.SlidingWindowDensity.core_card_loss",
+        "PaperP1.SlidingWindowDensity.offset_card_lower",
+        "PaperP1.SlidingWindowDensity.total_incidence_lower",
+        "PaperP1.SlidingWindowDensity.total_incidence_upper",
+        "PaperP1.SlidingWindowDensity.good_window_bound",
+        "PaperP1.SlidingWindowDensity.density_lower",
+        "PaperP1.PositiveTwoCandidateDensity.uniform_two_candidates",
+        "PaperP1.PositiveTwoCandidateDensity.uniform_clean_two_candidates",
+        "PaperP1.SlidingWindowDensity.selectedIndices",
+        "PaperP1.SlidingWindowDensity.goodWindows",
+        "PaperP1.SlidingWindowDensity.core"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16413 jobs); direct axiom audit passed for 15370 declarations using only propext, Classical.choice and Quot.sound; all 14807 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.36 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records468 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records469 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15362 audited theorem/lemma declarations**. This
+- The project currently has **15370 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26707,3 +26707,22 @@ This prepares a weaker source-abundance route for the all-anchor obstruction. Po
 P1-MATH-0470 adds three modules, eight theorems and one definition. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records468 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16409 jobs); direct axiom audit passed for 15362 declarations using only propext, Classical.choice and Quot.sound; all 14796 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.38 GiB.
+
+
+## Internal positive fraction of actual critical windows with two ordinary smooth candidates
+
+A fixed positive fraction of the actual critical windows now contains at least two ordinary N^alpha-smooth integer arguments, for every fixed alpha>0. The same positive-fraction census holds after the literal maximal-support small-pivot exclusion, uniformly over every logarithmic maximal width and allowed logarithmic-fifth cutoff. These are closed internal arithmetic theorems, with no Matomaki-Radziwill or other short-interval input. They do not claim that the exceptional fraction tends to zero. The full source T19.17 statement and proof at companion_sections/limits_appendix.tex lines1295-1405 were rechecked.
+
+SlidingWindowDensity works for any actual selected integer subset of[N,2N). It retains the exact boundary population of the model, whose indices run from N-1 through2N-2. The selected indices in each window are literal elements of Fin B. Its interior population loses at most B+2 integer arguments; every remaining argument supplies one distinct source at each offset. Swapping the exact finite incidence sums gives B*card(interior) below the total window incidence. Windows with fewer than two candidates contribute at most one each; all other windows contribute at most B. Hence B*card(S)<=B*(B+2)+N+B*card(goodWindows).
+
+The finite density lemma makes both requirements explicit: if card(S)>=delta*N, delta*B>=4 and B+2<=delta*N/4, at least delta*N/2 of the actual boundary windows have two selected values. No probabilistic mixing, uniform distribution or assumed short-interval asymptotic is used. Every window boundary, natural subtraction and offset multiplicity is checked in Lean.
+
+PositiveTwoCandidateDensity.uniform_two_candidates supplies S from the internally proved ordinary smooth dyadic census. It proves both finite window requirements uniformly over every critical length L and both iota in{0,1}, with B=L+iota+1. Critical lengths tend to infinity uniformly on the fixed band, and their logarithmic upper bound makes the endpoint loss negligible. Each selected ordinary largest-prime bound is transported from the exact integer cutoff floor(N^alpha) to the original real cutoff N^alpha. Thus the original ordinaryIndices population, rather than a surrogate point count, satisfies the positive-fraction conclusion.
+
+uniform_clean_two_candidates removes the actual badBoundaries for every allowed logarithmic maximal support. The existing internally proved exceptional count has exponent37/40. An internal power-error comparison makes this smaller than half the fixed positive source fraction under one threshold. The resulting lower bound is on the literal goodSources population used by the all-anchor forcing ledgers, uniformly before the length, type, maximal width and cutoff choices.
+
+The full T19.17 coefficient1-o(1) and its almost-all logarithmic-window census remain conditional. This positive-fraction result prepares a weaker all-anchor forcing-cost lower bound and a qualitative no-polynomial-decay obstruction; that cost transport is subsequent work and is not claimed here. The leading reciprocal and original specified signed-cost limits2 remain internal, with their fine o(nu_N) EIP error still unresolved. No dependence or total-variation lower bound is inferred.
+
+P1-MATH-0471 adds two modules, eight theorems and three definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records469 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16413 jobs); direct axiom audit passed for 15370 declarations using only propext, Classical.choice and Quot.sound; all 14807 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.36 GiB.

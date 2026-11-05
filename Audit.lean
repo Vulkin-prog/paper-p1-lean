@@ -5934,6 +5934,12 @@ import PaperP1
 #print axioms PaperP1.SixthDegreeUniformFieldCount.finite_field_count
 #print axioms PaperP1.SixthDegreeUniformPlaneCount.uniform_geometric_count
 #print axioms PaperP1.SixthDegreeUniformPlaneCount.grid_geometric_count
+#print axioms PaperP1.SlidingWindowDensity.core_card_loss
+#print axioms PaperP1.SlidingWindowDensity.offset_card_lower
+#print axioms PaperP1.SlidingWindowDensity.total_incidence_lower
+#print axioms PaperP1.SlidingWindowDensity.total_incidence_upper
+#print axioms PaperP1.SlidingWindowDensity.good_window_bound
+#print axioms PaperP1.SlidingWindowDensity.density_lower
 #print axioms PaperP1.SmallChannelUniqueness.same_slope
 #print axioms PaperP1.SmallChannelUniqueness.units_eq_of_slope
 #print axioms PaperP1.SmallChannelUniqueness.unit_geometric
@@ -9104,6 +9110,8 @@ import PaperP1
 #print axioms PaperP1.PositiveSeparatedSourceProfile.article_3_3_positive
 #print axioms PaperP1.PositiveSeparatedSourceProfileUnderInputs.finite_profile_error
 #print axioms PaperP1.PositiveSeparatedSourceProfileUnderInputs.article_3_3_positive
+#print axioms PaperP1.PositiveTwoCandidateDensity.uniform_two_candidates
+#print axioms PaperP1.PositiveTwoCandidateDensity.uniform_clean_two_candidates
 #print axioms PaperP1.PowerGap.small
 #print axioms PaperP1.PrefixMarkedWindowCount.mem_marked
 #print axioms PaperP1.PrefixMarkedWindowCount.finite_bound
