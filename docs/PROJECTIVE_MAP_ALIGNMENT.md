@@ -17521,3 +17521,16 @@ This closes the bounded-height interpolation construction. Its application via f
 P1-MATH-0368 adds five theorems and two literal entry/height-bound definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records366 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15649 jobs); direct axiom audit passed for 14373 declarations using only propext, Classical.choice and Quot.sound; all 13670 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.93 GiB.
+
+
+## Remaining plane count reduced to controlled coefficient height
+
+SmallHeightGeometricPlanePointInput.exists_small_presentation proves that any finite integer population of more than degree(F)^2 points on an absolutely irreducible integer equation F admits another integer presentation Q of the same actual degree, the same rational and absolute irreducibility, and explicit coefficient height at most heightBound(degree(F),B), where B bounds the original point coordinates. Every original point remains a zero. The equation Q is constructed by checkpoint368, then finite plane Bezout forces association to the original irreducible rational equation; no new-curve or grid-count premise is assumed.
+
+The ordinary unproved property Input c kappa restricts the remaining geometric integer plane count to coefficient heights at most that explicit bound at B=floor(H). By checkpoint368 the bound is polynomial in B, with constants and exponent depending only on the exact total degree. integral_input proves this strict height-restricted property suffices for all integer geometric equations: populations at most the degree square use the existing numeric budget; larger ones use the actual small presentation. field_input and integer_input recover the full field-polynomial and integer BCN properties with the existing explicit constant enlargement. restriction_of_integral_input proves the converse restriction. rationalized_evaluation supplies the exact actual integer-to-rational evaluation identity.
+
+This closes the coefficient-height reduction as well as the earlier coefficient-field and denominator translations. The actual uniform geometric count at controlled coefficient height remains unproved. The original all-dimensional integral-curve theorem main13.4 is not replaced by this plane reduction and remains in_progress.
+
+P1-MATH-0369 adds six theorems and one ordinary input definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records367 improvements and two statement-scope corrections. No axiom, new unproved premise beyond the explicit strict controlled-height restriction, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15651 jobs); direct axiom audit passed for 14379 declarations using only propext, Classical.choice and Quot.sound; all 13677 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.92 GiB.

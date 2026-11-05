@@ -5649,6 +5649,12 @@ import PaperP1
 #print axioms PaperP1.SmallExactUnitAlignment.ordered_data
 #print axioms PaperP1.SmallExactUnitAlignment.exact_data
 #print axioms PaperP1.SmallExactUnitAlignment.two_units
+#print axioms PaperP1.SmallHeightGeometricPlanePointInput.rationalized_evaluation
+#print axioms PaperP1.SmallHeightGeometricPlanePointInput.exists_small_presentation
+#print axioms PaperP1.SmallHeightGeometricPlanePointInput.integral_input
+#print axioms PaperP1.SmallHeightGeometricPlanePointInput.field_input
+#print axioms PaperP1.SmallHeightGeometricPlanePointInput.integer_input
+#print axioms PaperP1.SmallHeightGeometricPlanePointInput.restriction_of_integral_input
 #print axioms PaperP1.SmallKernelBlocks.mem_starts
 #print axioms PaperP1.SmallKernelBlocks.selected_subset
 #print axioms PaperP1.SmallKernelBlocks.fixed_offset_card

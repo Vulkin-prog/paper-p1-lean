@@ -19571,6 +19571,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "d1f18c86a6b104cb10eb69b624addc2cbe908117"
+    },
+    {
+      "id": "P1-MATH-0369",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The remaining geometric integer plane input still allowed arbitrary coefficient height, despite the newly constructed bounded-height interpolation equation through actual finite grid populations.",
+      "finding": "Above the degree-square population threshold, finite plane Bezout proves the bounded-height equation represents the same irreducible geometric curve with exact degree. Thus the remaining plane input only needs polynomially bounded coefficient heights.",
+      "proposed_revision": "Focus the remaining uniform geometric plane argument on the actual controlled-height integer equations. Keep the uniform degree-square factor and logarithmic exponent explicit, and retain the separate full all-dimensional curve obligation.",
+      "impact": "Closes the controlled-coefficient-height reduction without a count assumption. The actual controlled-height geometric BCN count and general main13.4 remain open; coverage is unchanged.",
+      "evidence": [
+        "PaperP1.SmallHeightGeometricPlanePointInput.rationalized_evaluation",
+        "PaperP1.SmallHeightGeometricPlanePointInput.exists_small_presentation",
+        "PaperP1.SmallHeightGeometricPlanePointInput.integral_input",
+        "PaperP1.SmallHeightGeometricPlanePointInput.field_input",
+        "PaperP1.SmallHeightGeometricPlanePointInput.integer_input",
+        "PaperP1.SmallHeightGeometricPlanePointInput.restriction_of_integral_input",
+        "PaperP1.SmallHeightGeometricPlanePointInput.Input"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15651 jobs); direct axiom audit passed for 14379 declarations using only propext, Classical.choice and Quot.sound; all 13677 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.92 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+Current plane-BCN reduction (P1-MATH-0369): only the absolutely irreducible integer plane count with explicit polynomial coefficient height remains an ordinary unproved plane input. Coefficient-field descent, denominator clearing, bounded-height interpolation, exact degree preservation and all small-population exceptions are proved. The full original all-dimensional main13.4 statement remains separately open.
+
 The exact unqualified exponent display in companion T5.1 is disproved on actual admissible data at arbitrarily large sizes (P1-MATH-0315). Its actual uniform counting conclusions and the universally capped exact comparison are proved without unproved inputs. The literal radius-one T1.10 assertion is also false; its checked corrected variants retain the explicitly recorded domains and inputs. Main13.4 is the remaining numbered proof obligation. The two disproved original statements stay in the baseline ledger until a new manuscript version integrates the corrections.
 
 Companion T1.13 is now unconditional (P1-MATH-0362). Both arithmetic biform inputs are internally proved. The actual one-kernel and two-kernel selected-centre counts retain full real-centre, real-radius and real-cutoff alignment, every fixed logarithmic width, arbitrary selected subsets and sharp power-cap consequences.
@@ -11,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records366 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records367 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14373 audited theorem/lemma declarations**. This
+- The project currently has **14379 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25009,3 +25011,16 @@ This closes the bounded-height interpolation construction. Its application via f
 P1-MATH-0368 adds five theorems and two literal entry/height-bound definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records366 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15649 jobs); direct axiom audit passed for 14373 declarations using only propext, Classical.choice and Quot.sound; all 13670 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.93 GiB.
+
+
+## Remaining plane count reduced to controlled coefficient height
+
+SmallHeightGeometricPlanePointInput.exists_small_presentation proves that any finite integer population of more than degree(F)^2 points on an absolutely irreducible integer equation F admits another integer presentation Q of the same actual degree, the same rational and absolute irreducibility, and explicit coefficient height at most heightBound(degree(F),B), where B bounds the original point coordinates. Every original point remains a zero. The equation Q is constructed by checkpoint368, then finite plane Bezout forces association to the original irreducible rational equation; no new-curve or grid-count premise is assumed.
+
+The ordinary unproved property Input c kappa restricts the remaining geometric integer plane count to coefficient heights at most that explicit bound at B=floor(H). By checkpoint368 the bound is polynomial in B, with constants and exponent depending only on the exact total degree. integral_input proves this strict height-restricted property suffices for all integer geometric equations: populations at most the degree square use the existing numeric budget; larger ones use the actual small presentation. field_input and integer_input recover the full field-polynomial and integer BCN properties with the existing explicit constant enlargement. restriction_of_integral_input proves the converse restriction. rationalized_evaluation supplies the exact actual integer-to-rational evaluation identity.
+
+This closes the coefficient-height reduction as well as the earlier coefficient-field and denominator translations. The actual uniform geometric count at controlled coefficient height remains unproved. The original all-dimensional integral-curve theorem main13.4 is not replaced by this plane reduction and remains in_progress.
+
+P1-MATH-0369 adds six theorems and one ordinary input definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records367 improvements and two statement-scope corrections. No axiom, new unproved premise beyond the explicit strict controlled-height restriction, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15651 jobs); direct axiom audit passed for 14379 declarations using only propext, Classical.choice and Quot.sound; all 13677 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.92 GiB.
