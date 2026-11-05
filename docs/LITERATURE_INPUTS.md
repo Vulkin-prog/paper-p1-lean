@@ -1,5 +1,7 @@
 # External mathematical inputs
 
+Current update P1-MATH-0421: every field and degree-height restriction in the weak degree-power12 plane estimate is internally removed. Ordinary irreducibility over any characteristic-zero field suffices, without an embedding premise. The original quadratic-degree/all-dimensional BCN property remains open.
+
 Current update P1-MATH-0420: the weaker coefficient-uniform integer geometric plane bound with degree power12 is internally proved. It has one absolute constant, with all prime, determinant, interpolation and obstruction steps checked. It does not discharge the original degree-power2 BCN property or the full main13.5/13.6 consequences.
 
 Current update P1-MATH-0419: companionT4.3 andT14.2 are unconditional at the stronger power1. Internal primitive triple rank mass closes the only formerly geometric branch; a separate uniform primitive tail controls all large sizes. No general cover/count property is discharged.
@@ -26084,3 +26086,18 @@ For unrestricted original coefficients, the bounded shear and post-shear interpo
 This is a weaker theorem than main13.4. Its D^12 dependence does not establish the source D^2 logarithmic BCN estimate, the full all-dimensional statement, the complete rangea<1/2 of main13.5 or the nonaligned half-window rank bound13.6. Those original ledger statuses and all unproved literature properties remain unchanged. P1-MATH-0420 adds three modules and five theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records418 improvements and two statement-scope corrections. Original source bytes remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15851 jobs); direct axiom audit passed for 14730 declarations using only propext, Classical.choice and Quot.sound; all 14080 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.76 GiB.
+
+
+## Absolute weak plane counts over every characteristic-zero field
+
+Stable ID: p1:internal:weak-degree-uniform-field-count. All scalar descent, non-geometric and large-degree branches are internal proofs. This discharges no original quadratic-degree or higher-dimensional BCN property.
+
+WeakDegreeUniformFieldCount proves that one absolute positive constant bounds every actual signed integer grid on every irreducible plane equation over every characteristic-zero coefficient field by C*D^12*(Nat.log2(N)+1)^4*N^(1/D), for all degreesD>=2 and all natural heightsN>=1. The constant precedes D,N, the field, equation and actual point population. finite_field_count includes every arbitrary finite subpopulation of integer zeros, not only the full grid. No embedding of the original coefficient field into the complex numbers is required.
+
+The rational geometrically integral branch clears denominators exactly and uses the completed integer geometric estimate from checkpoint420. An irreducible rational equation that becomes reducible over the complex numbers has only the internally bounded derivative-exception population of at most D*(D-1) rational points. For a general characteristic-zero field, populations of more thanD^2 rational points descend to an irreducible rational equation of the same total degree by the already internally proved scalar-descent theorem. The actual integer zeros and their height are preserved. Small populations are absorbed by the explicit profile.
+
+The former restrictionD<=N is also removed. IfD>N, the entire integer box has at most(2N+1)^2<=9D^2 points, which is absorbed by the same absolute profile. All non-geometric, large-degree and small-population branches are included, with no coefficient-height assumption or external geometric input.
+
+This extends the weaker degree-power12 theorem; it does not establish main13.4, whose original quadratic degree power and arbitrary ambient dimension remain open. The full source growing-degree sublinearity rangea<1/2 and the half-window nonalignment consequence are not inferred. P1-MATH-0421 adds one module, six theorems and one profile definition. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records419 improvements and two statement-scope corrections. Original manuscript bytes remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15853 jobs); direct axiom audit passed for 14736 declarations using only propext, Classical.choice and Quot.sound; all 14087 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.74 GiB.

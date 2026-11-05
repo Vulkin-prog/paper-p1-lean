@@ -6506,6 +6506,12 @@ import PaperP1
 #print axioms PaperP1.VerticalGridMatrices.actual_transform_eq
 #print axioms PaperP1.VerticalGridMatrices.inflated_scale_bounds
 #print axioms PaperP1.VerticalGridMatrices.effective_pair_product_bound
+#print axioms PaperP1.WeakDegreeUniformFieldCount.degree_square_le_profile
+#print axioms PaperP1.WeakDegreeUniformFieldCount.rational_geometric_count
+#print axioms PaperP1.WeakDegreeUniformFieldCount.rational_count
+#print axioms PaperP1.WeakDegreeUniformFieldCount.field_count
+#print axioms PaperP1.WeakDegreeUniformFieldCount.global_field_count
+#print axioms PaperP1.WeakDegreeUniformFieldCount.finite_field_count
 #print axioms PaperP1.WeakDegreeUniformPlaneCount.uniform_geometric_count
 #print axioms PaperP1.WeakDegreeUniformPlaneCount.grid_geometric_count
 #print axioms PaperP1.WeightedDefectCounting.mem_positiveValuesForSupport_iff

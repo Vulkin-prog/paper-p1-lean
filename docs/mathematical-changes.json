@@ -21385,6 +21385,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "25fdff4bf5a67e0ff4b06d1f114da5326e4db3da"
+    },
+    {
+      "id": "P1-MATH-0421",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The completed polynomial-degree estimate was limited to geometric integer equations and degrees at most the height.",
+      "finding": "Exact denominator clearing, non-geometric exceptional counts, scalar descent and the trivial large-degree box bound give one absolute coefficient/field-uniform estimate at every degreeD>=2 and natural heightN>=1.",
+      "proposed_revision": "State this weaker plane theorem with its absolute quantifier order and without a complex-embedding or geometric-integrality premise on the original field equation. Keep it separate from the quadratic-degree/all-dimensional BCN claim.",
+      "impact": "Closes every coefficient-field and degree-versus-height restriction in the weak degree-power12 plane theorem. The original BCN theorem remains open; numbered coverage stays111/167 unconditional.",
+      "evidence": [
+        "PaperP1.WeakDegreeUniformFieldCount.degree_square_le_profile",
+        "PaperP1.WeakDegreeUniformFieldCount.rational_geometric_count",
+        "PaperP1.WeakDegreeUniformFieldCount.rational_count",
+        "PaperP1.WeakDegreeUniformFieldCount.field_count",
+        "PaperP1.WeakDegreeUniformFieldCount.global_field_count",
+        "PaperP1.WeakDegreeUniformFieldCount.finite_field_count",
+        "PaperP1.WeakDegreeUniformFieldCount.profile"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15853 jobs); direct axiom audit passed for 14736 declarations using only propext, Classical.choice and Quot.sound; all 14087 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.74 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

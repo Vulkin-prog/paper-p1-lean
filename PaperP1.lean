@@ -3640,3 +3640,4 @@ public import PaperP1.Asymptotics.PrimitiveOrderedBound
 public import PaperP1.Arithmetic.DegreeUniformPrimeScale
 public import PaperP1.Arithmetic.WeakDegreeUniformPlaneCount
 public import PaperP1.Diophantine.WeakDegreeUniformAffineCount
+public import PaperP1.Arithmetic.WeakDegreeUniformFieldCount
