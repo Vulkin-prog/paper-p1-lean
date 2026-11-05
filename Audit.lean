@@ -9041,6 +9041,10 @@ import PaperP1
 #print axioms PaperP1.SharpThirdActivityUnderInputs.uniform_joint_mass
 #print axioms PaperP1.SharpThirdActivityUnderInputs.uniform_absolute_activity
 #print axioms PaperP1.SharpThirdActivityUnderInputs.uniform_cumulant
+#print axioms PaperP1.SharpThirdCancellation.connected_activity_eq
+#print axioms PaperP1.SharpThirdCancellation.uniform_positive_cancellation
+#print axioms PaperP1.SharpThirdCancellation.uniform_cancellation
+#print axioms PaperP1.SharpThirdCancellation.article_11_2
 #print axioms PaperP1.SharpThirdCancellationUnderInputs.connected_activity_eq
 #print axioms PaperP1.SharpThirdCancellationUnderInputs.uniform_cancellation
 #print axioms PaperP1.SharpThirdCumulantLowerUnderInputs.error_absorption
@@ -11581,6 +11585,10 @@ import PaperP1
 #print axioms PaperP1.FactorialCountMoments.factorialCountMoment_two
 #print axioms PaperP1.FactorialCountMoments.sum_tuple_joint_moments
 #print axioms PaperP1.FamilyIndependentMass.finite_mass_cap
+#print axioms PaperP1.FilteredPositiveRestriction.sum_restrict
+#print axioms PaperP1.FilteredPositiveRestriction.incompatible_restrict
+#print axioms PaperP1.FilteredPositiveRestriction.positive_connected_restrict
+#print axioms PaperP1.FilteredPositiveRestriction.repeated_cost_restrict
 #print axioms PaperP1.FiniteAlignedChannelCover.channel_data
 #print axioms PaperP1.FiniteAlignedChannelCover.classification
 #print axioms PaperP1.FiniteAlignedChannelCover.nonzero_cover

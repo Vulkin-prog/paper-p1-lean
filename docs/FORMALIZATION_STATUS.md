@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+Main11.2 and11.3 are unconditional (P1-MATH-0418): full incompatible triple activity and the actual third-cumulant/positive-activity comparison have sharp error N^(-3/2+epsilon), including zero marginals and all repeated indices.
+
 Main15.9 is unconditional (P1-MATH-0417): the sharp actual all-cardinality pair-extension deficit uses finite small-order thresholds and an internally proved uniform large-seed bound.
 
 Main11.1 and15.7 are unconditional (P1-MATH-0416): the literal one-target and every fixed-k pair-extension deficit have sharp rateN^(-3/2+epsilon), using actual pair activity and independent weights only for new targets.
@@ -29,7 +31,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is107/167 unconditional and57 conditional (164/167 completed). The project records415 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is109/167 unconditional and55 conditional (164/167 completed). The project records416 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -148,7 +150,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14709 audited theorem/lemma declarations**. This
+- The project currently has **14717 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25734,3 +25736,18 @@ The complete original statement and proof in main_sections/exact_transfer.tex li
 P1-MATH-0417 adds two modules and four theorems. Main15.9 moves from conditional to proved. Coverage becomes107 proved,57 conditional and3 in_progress out of167, with164 completed. The project records415 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15835 jobs); direct axiom audit passed for 14709 declarations using only propext, Classical.choice and Quot.sound; all 14059 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.83 GiB.
+
+
+## Unconditional incompatible triple activity and third-cumulant cancellation
+
+Main Theorem11.2 and Proposition11.3 now have unconditional canonical proofs. SharpThirdCancellation proves that the absolute centered activity of all actual incompatible triples is at most N^(-3/2+epsilon), including both signs. It also proves 0<=A_3-K_3^+<=N^(-3/2+epsilon) and |kappa_3-6*K_3^+|<=N^(-3/2+epsilon), together with the sharper N^(-5/3+epsilon) bound for the exact repeated-index contribution. Every actual dyadic subground is covered after one threshold; no positive-marginal hypothesis remains in the full canonical statement.
+
+The already proved exact incompatible triple reduction is supplied by the unconditional one-target deficit from checkpoint416. Actual pair activity controls repeated indices. The earlier internally proved CompatibleRunCentered.coefficient_nonneg supplies the source assertion that every compatible triple has nonnegative centered coefficient. The positive term is the actual sum over connected triples of positive joint probability, exactly as in the source definition; it is not replaced by a count of hosts or by an independent probability.
+
+FilteredPositiveRestriction proves that any filtered centered-activity sum with f(0)=0 is preserved on deleting zero-marginal sites. This gives exact restriction identities for incompatible absolute activity and positive connected activity at every order. The actual third factorial cumulant and the signed triple sum also restrict exactly; their exact decomposition then proves that the complete repeated-index cost is preserved. Applying the positive-marginal intermediate theorem on this exact restriction proves the full original-ground result, including all zero-marginal and affine-incompatible cases.
+
+The original main_sections/triple_activities.tex lines33-90 were rechecked, including both signs, compatible positivity, the nonnegative absolute-activity gap and repeated indices. General source/ordinary covers, normalized-curve counts and growing-degree BCN are neither assumed by these canonical statements nor proved as general properties.
+
+P1-MATH-0418 adds two modules and eight theorems. Main11.2 and11.3 move from conditional to proved. Coverage becomes109 proved,55 conditional and3 in_progress out of167, with164 completed. The project records416 improvements and two statement-scope corrections. Original sources are unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15839 jobs); direct axiom audit passed for 14717 declarations using only propext, Classical.choice and Quot.sound; all 14067 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.81 GiB.

@@ -21283,6 +21283,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "f3740c2f6435cdd7b9e809e1978afddfe73b1a98"
+    },
+    {
+      "id": "P1-MATH-0418",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:activity:incompatible",
+        "number": "11.2",
+        "page": 28,
+        "source": "main_sections/triple_activities.tex",
+        "line": 33,
+        "statement_sha256": "476a44444d74bac001c4065d93fbb6386a1b8ae6f29a1fbf1ea59fd75aab99d3"
+      },
+      "original_assumption": "The sharp incompatible-triple and third-cumulant comparisons retained geometric pair-target inputs and an intermediate positivity hypothesis on every marginal.",
+      "finding": "The internal pair-target deficit proves the sharp comparisons, while exact filtered restriction also covers every zero-marginal site and preserves repeated-index cost.",
+      "proposed_revision": "Cite the unconditional pair-target deficit and state explicitly why zero-marginal sites may be removed from every centered sum, positive connected sum and factorial cumulant. Retain both incompatible signs and all repeated-index terms.",
+      "impact": "Main11.2 and11.3 move from conditional to proved:109 proved,55 conditional,3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.SharpThirdCancellation.connected_activity_eq",
+        "PaperP1.SharpThirdCancellation.uniform_positive_cancellation",
+        "PaperP1.SharpThirdCancellation.uniform_cancellation",
+        "PaperP1.SharpThirdCancellation.article_11_2",
+        "PaperP1.FilteredPositiveRestriction.sum_restrict",
+        "PaperP1.FilteredPositiveRestriction.incompatible_restrict",
+        "PaperP1.FilteredPositiveRestriction.positive_connected_restrict",
+        "PaperP1.FilteredPositiveRestriction.repeated_cost_restrict"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15839 jobs); direct axiom audit passed for 14717 declarations using only propext, Classical.choice and Quot.sound; all 14067 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.81 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

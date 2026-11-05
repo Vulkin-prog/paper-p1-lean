@@ -3632,3 +3632,5 @@ public import PaperP1.Asymptotics.FixedPairExtensionDeficit
 public import PaperP1.Asymptotics.SharpPairTargetDeficit
 public import PaperP1.Asymptotics.AllPairDeficit
 public import PaperP1.Asymptotics.PairDeficitBounds
+public import PaperP1.Asymptotics.SharpThirdCancellation
+public import PaperP1.Model.FilteredPositiveRestriction

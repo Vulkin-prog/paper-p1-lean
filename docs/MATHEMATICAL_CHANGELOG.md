@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**415 mathematical improvements and two statement-scope corrections are confirmed.**
+**416 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24939,3 +24939,18 @@ The complete original statement and proof in main_sections/exact_transfer.tex li
 P1-MATH-0417 adds two modules and four theorems. Main15.9 moves from conditional to proved. Coverage becomes107 proved,57 conditional and3 in_progress out of167, with164 completed. The project records415 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15835 jobs); direct axiom audit passed for 14709 declarations using only propext, Classical.choice and Quot.sound; all 14059 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.83 GiB.
+
+
+## Unconditional incompatible triple activity and third-cumulant cancellation
+
+Main Theorem11.2 and Proposition11.3 now have unconditional canonical proofs. SharpThirdCancellation proves that the absolute centered activity of all actual incompatible triples is at most N^(-3/2+epsilon), including both signs. It also proves 0<=A_3-K_3^+<=N^(-3/2+epsilon) and |kappa_3-6*K_3^+|<=N^(-3/2+epsilon), together with the sharper N^(-5/3+epsilon) bound for the exact repeated-index contribution. Every actual dyadic subground is covered after one threshold; no positive-marginal hypothesis remains in the full canonical statement.
+
+The already proved exact incompatible triple reduction is supplied by the unconditional one-target deficit from checkpoint416. Actual pair activity controls repeated indices. The earlier internally proved CompatibleRunCentered.coefficient_nonneg supplies the source assertion that every compatible triple has nonnegative centered coefficient. The positive term is the actual sum over connected triples of positive joint probability, exactly as in the source definition; it is not replaced by a count of hosts or by an independent probability.
+
+FilteredPositiveRestriction proves that any filtered centered-activity sum with f(0)=0 is preserved on deleting zero-marginal sites. This gives exact restriction identities for incompatible absolute activity and positive connected activity at every order. The actual third factorial cumulant and the signed triple sum also restrict exactly; their exact decomposition then proves that the complete repeated-index cost is preserved. Applying the positive-marginal intermediate theorem on this exact restriction proves the full original-ground result, including all zero-marginal and affine-incompatible cases.
+
+The original main_sections/triple_activities.tex lines33-90 were rechecked, including both signs, compatible positivity, the nonnegative absolute-activity gap and repeated indices. General source/ordinary covers, normalized-curve counts and growing-degree BCN are neither assumed by these canonical statements nor proved as general properties.
+
+P1-MATH-0418 adds two modules and eight theorems. Main11.2 and11.3 move from conditional to proved. Coverage becomes109 proved,55 conditional and3 in_progress out of167, with164 completed. The project records416 improvements and two statement-scope corrections. Original sources are unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15839 jobs); direct axiom audit passed for 14717 declarations using only propext, Classical.choice and Quot.sound; all 14067 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.81 GiB.
