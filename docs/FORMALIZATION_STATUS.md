@@ -43,7 +43,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is111/167 unconditional and53 conditional (164/167 completed). The project records423 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is111/167 unconditional and53 conditional (164/167 completed). The project records424 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -162,7 +162,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14762 audited theorem/lemma declarations**. This
+- The project currently has **14778 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25868,3 +25868,22 @@ CoarseThirdActivity proves three full-ground statements: positive connected thir
 The exponent here is one. The optimal source exponent 41/30 and arbitrary-source version of main15.2 remain conditional; none of these partial or coarse results promotes the full numbered statements main15.2, main14.6 or main14.1. P1-MATH-0425 adds seven modules and ten theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records423 improvements and two statement-scope corrections. Original sources remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15885 jobs); direct axiom audit passed for 14762 declarations using only propext, Classical.choice and Quot.sound; all 14113 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.63 GiB.
+
+
+## Anchored prime confinement at every fixed arity
+
+AnchoredPhysicalPrimeGroups replaces the three-block whole-prime-row argument by prime supports chosen through one distinguished actual window. Each active large prime is assigned one minimal recovery support containing its unique anchor position. Supports may involve any fixed number of other blocks. The actual groups are globally coprime, divide every value in their chosen support and cover every large odd prime of each active anchor value.
+
+For recovery radius s>=1, bounded support-pool incidence gives at most supportBound(s,t,t-1) distinct groups through any anchor position. This proof uses minimal chosen supports, not the assertion that an entire row remains minimal after deleting a position. In particular it does not remove the essential radius-at-most-two restriction from the earlier whole-row incidence lemma.
+
+Erasing only the anchor positions of the large groups costs at most one dimension per group, independent of the arity. Two active positions survive whenever the original physical dimension exceeds the number of large groups and the anchor projection is injective. Their actual large odd kernels are each at most Y^supportBound(s,t,t-1). Recovery exclusion and groups refer throughout to the original subspace; no recovery property is assumed to survive erasure.
+
+OffsetNonalignmentFrom records exactly the required anchor/other-block condition, restricted to active positions. No source/source nonalignment is imposed. AnchoredPhysicalGroupCount proves, for every fixed s and positive tau,epsilon, a uniform threshold before all critical windows, actual starts and physical subspaces such that the number of groups larger than N^tau is at most epsilon*(L+1). The internally proved polynomial confinement is applied separately to the s possible receiving blocks. Every group retains its own index even when projected offset pairs coincide.
+
+DenseAnchoredKernelWitness combines these facts. For arbitrary fixed arity s+1, actual dense physical dimension eta*L, recovery exclusion at radius s, active anchor/other nonalignment and injective anchor projection imply two actual values whose kernel product is at most N^(2*tau*supportBound(s,t,t-1)). Other projections may be dependent, and no nonalignment among the other blocks is required.
+
+FixedArityPhysicalRelationRegularization and FixedArityPhysicalSubspaceRegularization generalize the checked dimension budgets to every fixed radius d>=1 and arity at most d+1. The recovery order is selected before the window length and all physical data. The first theorem lifts the effective kernel when its projections are injective; the second constructs a fresh recovery subspace inside any prescribed physical subspace and preserves each individual injective projection as well as previously erased coordinates.
+
+These are internally proved arithmetic and regularization tools. Applying them to all actual old-source configurations, transporting indices and proving the complete dense-target conclusion remain further work. Main15.2 stays conditional. P1-MATH-0426 adds six modules, sixteen theorems and four definitions. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records424 improvements and two statement-scope corrections. Original sources remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15897 jobs); direct axiom audit passed for 14778 declarations using only propext, Classical.choice and Quot.sound; all 14133 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.60 GiB.

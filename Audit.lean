@@ -3160,6 +3160,15 @@ import PaperP1
 #print axioms PaperP1.AnchorKernelProduct.primes_subset_pool
 #print axioms PaperP1.AnchorKernelProduct.product_lower
 #print axioms PaperP1.AnchorKernelProduct.edge_of_selected_anchors
+#print axioms PaperP1.AnchoredPhysicalPrimeGroups.throughPool_card_of_noRecovery
+#print axioms PaperP1.AnchoredPhysicalPrimeGroups.group_active
+#print axioms PaperP1.AnchoredPhysicalPrimeGroups.target_positions_singleton
+#print axioms PaperP1.AnchoredPhysicalPrimeGroups.badPositions_card
+#print axioms PaperP1.AnchoredPhysicalPrimeGroups.incidence_bound
+#print axioms PaperP1.AnchoredPhysicalPrimeGroups.kernel_le_incident_product
+#print axioms PaperP1.AnchoredPhysicalPrimeGroups.kernel_cap_away_from_bad
+#print axioms PaperP1.AnchoredPhysicalPrimeGroups.dimension_cost
+#print axioms PaperP1.AnchoredPhysicalPrimeGroups.two_small
 #print axioms PaperP1.AnchoredWindowPivots.basis
 #print axioms PaperP1.AnchoredWindowPivots.not_dvd_anchor
 #print axioms PaperP1.AnchoredWindowPivots.injective
@@ -4223,6 +4232,8 @@ import PaperP1
 #print axioms PaperP1.FiniteRungeIndependence.combination_selected
 #print axioms PaperP1.FiniteRungeIndependence.independent_of_no_even_square
 #print axioms PaperP1.FiniteRungeIndependence.independent_of_growth
+#print axioms PaperP1.FixedArityPhysicalRelationRegularization.uniform_subspace
+#print axioms PaperP1.FixedArityPhysicalSubspaceRegularization.uniform_subspace
 #print axioms PaperP1.FixedChannelGamma.mem_candidates
 #print axioms PaperP1.FixedChannelGamma.ratio_conditions
 #print axioms PaperP1.FixedChannelGamma.mem_values_iff_source
@@ -4866,6 +4877,9 @@ import PaperP1
 #print axioms PaperP1.OffsetLinePrimeProduct.single_point_product_bound
 #print axioms PaperP1.OffsetLinePrimeProduct.line_product_bound
 #print axioms PaperP1.OffsetLinePrimeProduct.product_le_uniform
+#print axioms PaperP1.OffsetNonalignmentFrom.of_global
+#print axioms PaperP1.OffsetNonalignmentFrom.of_all
+#print axioms PaperP1.OffsetNonalignmentFrom.mono
 #print axioms PaperP1.OffsetNonalignmentOn.of_global
 #print axioms PaperP1.OffsetNonalignmentOn.mono
 #print axioms PaperP1.OffsetPatternRankin.exponent_gt_one
@@ -6763,6 +6777,7 @@ import PaperP1
 #print axioms PaperP1.AnchoredObstructionUnderOrdinaryCensus.rate_factor
 #print axioms PaperP1.AnchoredObstructionUnderOrdinaryCensus.nominal_scale_identity
 #print axioms PaperP1.AnchoredObstructionUnderOrdinaryCensus.deterministic_under_census
+#print axioms PaperP1.AnchoredPhysicalGroupCount.uniform_count_active
 #print axioms PaperP1.AnchoredRetainedMass.uniform_total_mean
 #print axioms PaperP1.AnchoredSmallPivotCostLower.uniform_ordinary_candidates_lower
 #print axioms PaperP1.AsymmetricAlignmentScopeObstruction.profile_eq_total
@@ -7225,6 +7240,7 @@ import PaperP1
 #print axioms PaperP1.DenseAdmissiblePairSeedsUnderInputs.uniform_bound
 #print axioms PaperP1.DenseAdmissibleSeedFamiliesUnderInputs.uniform_seeds
 #print axioms PaperP1.DenseAdmissibleSeedFamiliesUnderInputs.uniform_centered_extensions
+#print axioms PaperP1.DenseAnchoredKernelWitness.uniform_witness
 #print axioms PaperP1.DenseCompressedPairCount.uniform_count
 #print axioms PaperP1.DenseCompressedTargetCount.uniform_offsets
 #print axioms PaperP1.DenseCompressedTargetCount.article_15_3

@@ -3657,3 +3657,9 @@ public import PaperP1.Asymptotics.ConnectedTripleLowCrossing
 public import PaperP1.Asymptotics.DenseSingletonJointMass
 public import PaperP1.Asymptotics.IsolatedVertexDenseTripleMass
 public import PaperP1.Asymptotics.IsolatedVertexTripleMass
+public import PaperP1.Arithmetic.AnchoredPhysicalPrimeGroups
+public import PaperP1.Arithmetic.FixedArityPhysicalRelationRegularization
+public import PaperP1.Arithmetic.FixedArityPhysicalSubspaceRegularization
+public import PaperP1.Arithmetic.OffsetNonalignmentFrom
+public import PaperP1.Asymptotics.AnchoredPhysicalGroupCount
+public import PaperP1.Asymptotics.DenseAnchoredKernelWitness

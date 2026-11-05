@@ -21553,6 +21553,52 @@
         "status": "not_integrated"
       },
       "validation_commit": "a13d21ef3eb688b2f192e35a371f1d01e615d03e"
+    },
+    {
+      "id": "P1-MATH-0426",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:dense-targets",
+        "number": "15.2",
+        "page": 40,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 129,
+        "statement_sha256": "67d2424adbe9ce58d341f300471c14a7e1cf21728b62ee4a3f73ad0425362605"
+      },
+      "original_assumption": "The direct small-kernel confinement used entire active prime rows and an incidence lemma limited to recovery radius at most two.",
+      "finding": "Choosing one minimal support through the unique anchor position gives bounded anchor incidence at arbitrary fixed radius. Large groups cost only their anchor positions, and polynomial confinement needs only anchor/other nonalignment.",
+      "proposed_revision": "Use anchored minimal supports for higher arity, state the one-position-per-group erasure cost and require only anchor projection injectivity and anchor/other nonalignment. Keep the original whole-row lemma within its proved radius.",
+      "impact": "Provides verified higher-arity arithmetic tools for dense targets and primitive families. The full numbered dense-target theorem is not yet discharged; coverage remains111/167 unconditional.",
+      "evidence": [
+        "PaperP1.AnchoredPhysicalPrimeGroups.throughPool_card_of_noRecovery",
+        "PaperP1.AnchoredPhysicalPrimeGroups.group_active",
+        "PaperP1.AnchoredPhysicalPrimeGroups.target_positions_singleton",
+        "PaperP1.AnchoredPhysicalPrimeGroups.badPositions_card",
+        "PaperP1.AnchoredPhysicalPrimeGroups.incidence_bound",
+        "PaperP1.AnchoredPhysicalPrimeGroups.kernel_le_incident_product",
+        "PaperP1.AnchoredPhysicalPrimeGroups.kernel_cap_away_from_bad",
+        "PaperP1.AnchoredPhysicalPrimeGroups.dimension_cost",
+        "PaperP1.AnchoredPhysicalPrimeGroups.two_small",
+        "PaperP1.FixedArityPhysicalRelationRegularization.uniform_subspace",
+        "PaperP1.FixedArityPhysicalSubspaceRegularization.uniform_subspace",
+        "PaperP1.OffsetNonalignmentFrom.of_global",
+        "PaperP1.OffsetNonalignmentFrom.of_all",
+        "PaperP1.OffsetNonalignmentFrom.mono",
+        "PaperP1.AnchoredPhysicalGroupCount.uniform_count_active",
+        "PaperP1.DenseAnchoredKernelWitness.uniform_witness",
+        "PaperP1.AnchoredPhysicalPrimeGroups.largeGroups",
+        "PaperP1.AnchoredPhysicalPrimeGroups.badPositions",
+        "PaperP1.AnchoredPhysicalPrimeGroups.remaining",
+        "PaperP1.OffsetNonalignmentFrom.NoExactFrom"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15897 jobs); direct axiom audit passed for 14778 declarations using only propext, Classical.choice and Quot.sound; all 14133 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.60 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
