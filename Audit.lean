@@ -7189,6 +7189,8 @@ import PaperP1
 #print axioms PaperP1.DenseNonalignedProfileReduction.nonaligned_activity_bound
 #print axioms PaperP1.DenseNonalignedProfileReduction.uniform_bound
 #print axioms PaperP1.DenseOneTargetTripleJointMass.uniform_bound
+#print axioms PaperP1.DensePairActivity.nonaligned_host
+#print axioms PaperP1.DensePairActivity.uniform_activity
 #print axioms PaperP1.DensePairActivityUnderInputs.nonaligned_host
 #print axioms PaperP1.DensePairActivityUnderInputs.dense_components
 #print axioms PaperP1.DensePairActivityUnderInputs.centered_host_bound
@@ -8278,6 +8280,7 @@ import PaperP1
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.tripleGap_lt_half
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.uniform_pair_probability
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.uniform_family_probability
+#print axioms PaperP1.NonalignedPairActivity.uniform_activity
 #print axioms PaperP1.NonalignedPairActivityUnderInputs.uniform_activity
 #print axioms PaperP1.NonalignedSourceResidual.uniform_weighted_hosts
 #print axioms PaperP1.NonalignedSourceResidual.uniform_source_bounds
@@ -9404,6 +9407,10 @@ import PaperP1
 #print axioms PaperP1.WeakPairIncidence.full_single_rates_positive
 #print axioms PaperP1.WeakPairIncidence.full_target_isProbability
 #print axioms PaperP1.WeightedInitialSourceCount.uniform_count
+#print axioms PaperP1.WeightedNonalignedPairs.uniform_families
+#print axioms PaperP1.WeightedNonalignedPairs.regular_nullity_eq_loss
+#print axioms PaperP1.WeightedNonalignedPairs.article_18_2
+#print axioms PaperP1.WeightedNonalignedPairs.article_18_2_rank_deficit
 #print axioms PaperP1.WeightedNonalignedPairsUnderInputs.uniform_families
 #print axioms PaperP1.WeightedNonalignedPairsUnderInputs.regular_nullity_eq_loss
 #print axioms PaperP1.WeightedNonalignedPairsUnderInputs.article_18_2

@@ -20988,6 +20988,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "085a0a4b647d37f74d7c09851ff0cac345d2b5c6"
+    },
+    {
+      "id": "P1-MATH-0410",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:channels:weighted-nonaligned",
+        "number": "18.2",
+        "page": 55,
+        "source": "main_sections/channel_hierarchy.tex",
+        "line": 66,
+        "statement_sha256": "89fcd3dd7290f5d2e9c88246584d46c192af2ee1acc31acd98ba0b867a0901be"
+      },
+      "original_assumption": "The full source-weight residual was used through unproved finite geometric inputs, leaving the literal homogeneous main18.2 sum, actual covariance consequence and full/dense nonaligned activity conditional.",
+      "finding": "The internally proved full source residual yields both weighted rank and actual covariance bounds uniformly over every selected distinct nonaligned dyadic pair family; main18.2 and the entire unordered nonaligned activity are now unconditional.",
+      "proposed_revision": "Use the unconditional source-rank residual and exact heterogeneous covariance comparison for main18.2 and the nonaligned activity needed by the pair-profile proof. Retain source regularity/separation only where the printed population requires them.",
+      "impact": "Main18.2 moves from conditional to proved:99 proved,65 conditional and3 in_progress out of167. The actual dense pair-activity input is also discharged for subsequent pair-profile consequences.",
+      "evidence": [
+        "PaperP1.DensePairActivity.nonaligned_host",
+        "PaperP1.DensePairActivity.uniform_activity",
+        "PaperP1.NonalignedPairActivity.uniform_activity",
+        "PaperP1.WeightedNonalignedPairs.uniform_families",
+        "PaperP1.WeightedNonalignedPairs.regular_nullity_eq_loss",
+        "PaperP1.WeightedNonalignedPairs.article_18_2",
+        "PaperP1.WeightedNonalignedPairs.article_18_2_rank_deficit",
+        "PaperP1.WeightedNonalignedPairs.regularPairs"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15785 jobs); direct axiom audit passed for 14644 declarations using only propext, Classical.choice and Quot.sound; all 13988 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.03 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

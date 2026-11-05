@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**407 mathematical improvements and two statement-scope corrections are confirmed.**
+**408 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24817,3 +24817,18 @@ The canonical uniform_source_bounds bundles the separated support count and weig
 P1-MATH-0409 adds two modules, five theorems and one definition. Main3.2 moves from conditional to proved. Coverage becomes98 proved and66 conditional out of167, with164 completed and three in_progress. The ledger records407 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15779 jobs); direct axiom audit passed for 14637 declarations using only propext, Classical.choice and Quot.sound; all 13980 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.06 GiB.
+
+
+## Unconditional homogeneous nonaligned weights and actual covariance activity
+
+WeightedNonalignedPairs proves the complete main18.2 weighted sum and covariance consequence without any unproved surface, curve or BCN argument. For every fixed epsilon>0 and critical-band width, one threshold precedes every actual finite ordered dyadic population of distinct nonaligned pairs. Its effective homogeneous rank-weight sum2^rho_rel-1 is at most N^(1+epsilon), and its absolute actual centered sum is at most N^(-1+epsilon). No separation, regularity, affine-compatibility or positive-marginal restriction is needed for this stronger finite-family form.
+
+The genuine full source-rank residual from checkpoint409 bounds the effective rank weight by the proved relative-nullity/source-loss comparison. The exact heterogeneous pair covariance inequality and actual critical marginal cap then give the covariance bound. All incompatible and zero-joint-probability pairs remain in the original selected family; nominal marginals are not substituted in dependent affine systems.
+
+The literal regularPairs population of main18.2 is constructed with both actual regular-start memberships, the strict integer absolute separation and source nonalignment. article_18_2 proves both printed assertions. article_18_2_rank_deficit records the exact regular-rank identity replacing relative nullity by the manuscript's full arithmetic deficit. The unchanged statement and proof in main_sections/channel_hierarchy.tex lines66-95 were rechecked.
+
+NonalignedPairActivity.uniform_activity extends the actual covariance bound to the entire unordered nonaligned population, using the proved nonzero host cover and exact actual centered coefficients. DensePairActivity supplies the dense-sector bound as a direct consequence. The latter is precisely the finite-model estimate needed by the already constructed two-channel pair-profile reductions, without the former geometric dense-count route.
+
+P1-MATH-0410 adds three modules, seven theorems and one definition. Main18.2 moves from conditional to proved. Coverage becomes99 proved and65 conditional out of167, with164 completed and three in_progress. The ledger records408 improvements and two statement-scope corrections. General surface covers, normalized curve counts and full growing-degree BCN remain open as separate properties. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15785 jobs); direct axiom audit passed for 14644 declarations using only propext, Classical.choice and Quot.sound; all 13988 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.03 GiB.

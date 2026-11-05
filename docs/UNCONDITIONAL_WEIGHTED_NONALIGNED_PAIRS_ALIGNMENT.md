@@ -1,0 +1,13 @@
+# Unconditional homogeneous nonaligned weights and actual covariance activity
+
+Source: main_sections/channel_hierarchy.tex lines66-95, main18.2, and the actual nonaligned pair sector used by main3.3. The literal regular population, both source rank forms and absolute covariance sum were rechecked against unchanged manuscript bytes.
+
+WeightedNonalignedPairs proves the complete main18.2 weighted sum and covariance consequence without any unproved surface, curve or BCN argument. For every fixed epsilon>0 and critical-band width, one threshold precedes every actual finite ordered dyadic population of distinct nonaligned pairs. Its effective homogeneous rank-weight sum2^rho_rel-1 is at most N^(1+epsilon), and its absolute actual centered sum is at most N^(-1+epsilon). No separation, regularity, affine-compatibility or positive-marginal restriction is needed for this stronger finite-family form.
+
+The genuine full source-rank residual from checkpoint409 bounds the effective rank weight by the proved relative-nullity/source-loss comparison. The exact heterogeneous pair covariance inequality and actual critical marginal cap then give the covariance bound. All incompatible and zero-joint-probability pairs remain in the original selected family; nominal marginals are not substituted in dependent affine systems.
+
+The literal regularPairs population of main18.2 is constructed with both actual regular-start memberships, the strict integer absolute separation and source nonalignment. article_18_2 proves both printed assertions. article_18_2_rank_deficit records the exact regular-rank identity replacing relative nullity by the manuscript's full arithmetic deficit. The unchanged statement and proof in main_sections/channel_hierarchy.tex lines66-95 were rechecked.
+
+NonalignedPairActivity.uniform_activity extends the actual covariance bound to the entire unordered nonaligned population, using the proved nonzero host cover and exact actual centered coefficients. DensePairActivity supplies the dense-sector bound as a direct consequence. The latter is precisely the finite-model estimate needed by the already constructed two-channel pair-profile reductions, without the former geometric dense-count route.
+
+P1-MATH-0410 adds three modules, seven theorems and one definition. Main18.2 moves from conditional to proved. Coverage becomes99 proved and65 conditional out of167, with164 completed and three in_progress. The ledger records408 improvements and two statement-scope corrections. General surface covers, normalized curve counts and full growing-degree BCN remain open as separate properties. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.

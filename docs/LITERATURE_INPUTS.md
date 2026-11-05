@@ -1,6 +1,6 @@
 # External mathematical inputs
 
-Current update P1-MATH-0409: main3.2,12.1,12.2 and companion T8.1,T8.2,T8.3 have unconditional canonical proofs. The literal weighted source residual of main3.2 bypasses its former geometric route using dense-intersection confinement and exact local-defect accounting. Their only former BCN use was fixed-degree plane counting, proved internally at checkpoint401. Full growing-degree/all-dimensional BCN, source and ordinary surface covers, normalized higher-dimensional curve counts and other explicit inputs remain open. No global discharge of these properties is claimed.
+Current update P1-MATH-0410: main3.2,12.1,12.2,18.2 and companion T8.1,T8.2,T8.3 have unconditional canonical proofs. The full unordered and dense nonaligned actual pair-activity bounds also have unconditional rateN^(-1+epsilon). The literal weighted source residual of main3.2 bypasses its former geometric route using dense-intersection confinement and exact local-defect accounting. Their only former BCN use was fixed-degree plane counting, proved internally at checkpoint401. Full growing-degree/all-dimensional BCN, source and ordinary surface covers, normalized higher-dimensional curve counts and other explicit inputs remain open. No global discharge of these properties is claimed.
 
 Historical update P1-MATH-0369: the plane BCN property is reduced to `SmallHeightGeometricPlanePointInput.Input`, an explicit unproved controlled-height integer geometric counting property. All coefficient-field, denominator and coefficient-height translations are internally proved. The complete geometric Heath-Brown biform input is already proved, and companion T1.4,T1.5,T1.13 are unconditional. The original all-dimensional main13.4 remains open.
 
@@ -25887,3 +25887,20 @@ The canonical uniform_source_bounds bundles the separated support count and weig
 P1-MATH-0409 adds two modules, five theorems and one definition. Main3.2 moves from conditional to proved. Coverage becomes98 proved and66 conditional out of167, with164 completed and three in_progress. The ledger records407 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15779 jobs); direct axiom audit passed for 14637 declarations using only propext, Classical.choice and Quot.sound; all 13980 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.06 GiB.
+
+
+## Unconditional homogeneous nonaligned weights and actual covariance activity
+
+Stable ID: p1:internal:unconditional-weighted-nonaligned-pairs. Every bound concerns actual selected dyadic populations and full affine conventions. Only the required residual/actual-activity specializations are discharged; general geometric cover properties remain open.
+
+WeightedNonalignedPairs proves the complete main18.2 weighted sum and covariance consequence without any unproved surface, curve or BCN argument. For every fixed epsilon>0 and critical-band width, one threshold precedes every actual finite ordered dyadic population of distinct nonaligned pairs. Its effective homogeneous rank-weight sum2^rho_rel-1 is at most N^(1+epsilon), and its absolute actual centered sum is at most N^(-1+epsilon). No separation, regularity, affine-compatibility or positive-marginal restriction is needed for this stronger finite-family form.
+
+The genuine full source-rank residual from checkpoint409 bounds the effective rank weight by the proved relative-nullity/source-loss comparison. The exact heterogeneous pair covariance inequality and actual critical marginal cap then give the covariance bound. All incompatible and zero-joint-probability pairs remain in the original selected family; nominal marginals are not substituted in dependent affine systems.
+
+The literal regularPairs population of main18.2 is constructed with both actual regular-start memberships, the strict integer absolute separation and source nonalignment. article_18_2 proves both printed assertions. article_18_2_rank_deficit records the exact regular-rank identity replacing relative nullity by the manuscript's full arithmetic deficit. The unchanged statement and proof in main_sections/channel_hierarchy.tex lines66-95 were rechecked.
+
+NonalignedPairActivity.uniform_activity extends the actual covariance bound to the entire unordered nonaligned population, using the proved nonzero host cover and exact actual centered coefficients. DensePairActivity supplies the dense-sector bound as a direct consequence. The latter is precisely the finite-model estimate needed by the already constructed two-channel pair-profile reductions, without the former geometric dense-count route.
+
+P1-MATH-0410 adds three modules, seven theorems and one definition. Main18.2 moves from conditional to proved. Coverage becomes99 proved and65 conditional out of167, with164 completed and three in_progress. The ledger records408 improvements and two statement-scope corrections. General surface covers, normalized curve counts and full growing-degree BCN remain open as separate properties. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15785 jobs); direct axiom audit passed for 14644 declarations using only propext, Classical.choice and Quot.sound; all 13988 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.03 GiB.

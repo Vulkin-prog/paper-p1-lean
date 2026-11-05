@@ -3604,3 +3604,6 @@ public import PaperP1.Asymptotics.StrongNonalignedSourceProfile
 public import PaperP1.Asymptotics.StrongNonalignedTripleProfile
 public import PaperP1.Asymptotics.NonalignedSourceResidual
 public import PaperP1.Model.CriticalPairLossComparison
+public import PaperP1.Asymptotics.DensePairActivity
+public import PaperP1.Asymptotics.NonalignedPairActivity
+public import PaperP1.Asymptotics.WeightedNonalignedPairs

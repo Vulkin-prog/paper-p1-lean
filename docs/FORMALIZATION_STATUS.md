@@ -15,7 +15,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is98/167 unconditional and66 conditional (164/167 completed). The project records407 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is99/167 unconditional and65 conditional (164/167 completed). The project records408 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -39,7 +39,7 @@ CompanionT8.2 andT8.3 are unconditional (P1-MATH-0407): their bounded-degree con
 
 CompanionT8.1 is unconditional (P1-MATH-0402): actual composite-divisor count, full point multiplicities, little-o and literal erasure of exact alignments are all internally proved. Its fixed-degree use of BCN is replaced by the proved affine count; the stronger full growing-degree BCN theorem remains open.
 
-Main18.2 is complete conditionally: the literal homogeneous rank sum includes every incompatible regular separated nonaligned pair, and the actual covariance consequence follows from a sharp heterogeneous finite bound. Both estimates also hold on every distinct nonaligned dyadic ordered subfamily.
+Main18.2 is unconditional (P1-MATH-0410): the literal homogeneous rank sum includes every incompatible regular separated nonaligned pair, and the actual covariance consequence follows from a sharp heterogeneous finite bound. Both estimates also hold on every distinct nonaligned dyadic ordered subfamily.
 
 Main1.4,18.1 and18.3 are complete conditionally: the explicit two-channel approximation and every fixed-height original-law hierarchy, including moving TV equivalents and optimal powers, need only the first rate1 quadratic approximation. The explicit fixed-height Hermite part is also complete; main19.1 stays in progress for its exact-parameter4/3 rate.
 
@@ -134,7 +134,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14637 audited theorem/lemma declarations**. This
+- The project currently has **14644 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25598,3 +25598,18 @@ The canonical uniform_source_bounds bundles the separated support count and weig
 P1-MATH-0409 adds two modules, five theorems and one definition. Main3.2 moves from conditional to proved. Coverage becomes98 proved and66 conditional out of167, with164 completed and three in_progress. The ledger records407 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15779 jobs); direct axiom audit passed for 14637 declarations using only propext, Classical.choice and Quot.sound; all 13980 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.06 GiB.
+
+
+## Unconditional homogeneous nonaligned weights and actual covariance activity
+
+WeightedNonalignedPairs proves the complete main18.2 weighted sum and covariance consequence without any unproved surface, curve or BCN argument. For every fixed epsilon>0 and critical-band width, one threshold precedes every actual finite ordered dyadic population of distinct nonaligned pairs. Its effective homogeneous rank-weight sum2^rho_rel-1 is at most N^(1+epsilon), and its absolute actual centered sum is at most N^(-1+epsilon). No separation, regularity, affine-compatibility or positive-marginal restriction is needed for this stronger finite-family form.
+
+The genuine full source-rank residual from checkpoint409 bounds the effective rank weight by the proved relative-nullity/source-loss comparison. The exact heterogeneous pair covariance inequality and actual critical marginal cap then give the covariance bound. All incompatible and zero-joint-probability pairs remain in the original selected family; nominal marginals are not substituted in dependent affine systems.
+
+The literal regularPairs population of main18.2 is constructed with both actual regular-start memberships, the strict integer absolute separation and source nonalignment. article_18_2 proves both printed assertions. article_18_2_rank_deficit records the exact regular-rank identity replacing relative nullity by the manuscript's full arithmetic deficit. The unchanged statement and proof in main_sections/channel_hierarchy.tex lines66-95 were rechecked.
+
+NonalignedPairActivity.uniform_activity extends the actual covariance bound to the entire unordered nonaligned population, using the proved nonzero host cover and exact actual centered coefficients. DensePairActivity supplies the dense-sector bound as a direct consequence. The latter is precisely the finite-model estimate needed by the already constructed two-channel pair-profile reductions, without the former geometric dense-count route.
+
+P1-MATH-0410 adds three modules, seven theorems and one definition. Main18.2 moves from conditional to proved. Coverage becomes99 proved and65 conditional out of167, with164 completed and three in_progress. The ledger records408 improvements and two statement-scope corrections. General surface covers, normalized curve counts and full growing-degree BCN remain open as separate properties. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15785 jobs); direct axiom audit passed for 14644 declarations using only propext, Classical.choice and Quot.sound; all 13988 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.03 GiB.
