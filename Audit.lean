@@ -7026,6 +7026,7 @@ import PaperP1
 #print axioms PaperP1.ClassCodeBudget.position_count
 #print axioms PaperP1.ClassCodeFibres.pair_count
 #print axioms PaperP1.CleanBoundaryReciprocalLower.uniform_lower
+#print axioms PaperP1.CoarseCleanPivotLower.uniform_lower
 #print axioms PaperP1.CoarseConnectedActivity.uniform_range
 #print axioms PaperP1.CoarseConnectedActivity.companion_T14_1
 #print axioms PaperP1.CoarseConnectedActivityUnderInputs.uniform_range
@@ -7081,6 +7082,10 @@ import PaperP1
 #print axioms PaperP1.CoarsePrimitiveJointMassUnderBCN.uniform_pair_mass
 #print axioms PaperP1.CoarsePrimitiveJointMassUnderBCN.uniform_mass
 #print axioms PaperP1.CoarsePrimitiveJointMassUnderBCN.uniform_finite_orders
+#print axioms PaperP1.CoarseSignedCostLower.uniform_actual_lower
+#print axioms PaperP1.CoarseSignedCostTheorem.uniform_lower_from_width
+#print axioms PaperP1.CoarseSignedCostTheorem.uniform_lower
+#print axioms PaperP1.CoarseSignedCostTheorem.uniform_log_lower
 #print axioms PaperP1.CoarseThirdActivity.uniform_positive
 #print axioms PaperP1.CoarseThirdActivity.uniform_absolute
 #print axioms PaperP1.CoarseThirdActivity.uniform_cumulant

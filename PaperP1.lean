@@ -3886,3 +3886,6 @@ public import PaperP1.Analysis.PrimeProductReciprocalLower
 public import PaperP1.Analysis.PrimeProductReciprocalSaddleLower
 public import PaperP1.Analysis.PrimeProductSaddleChoice
 public import PaperP1.Arithmetic.PrimeProductCensus
+public import PaperP1.Asymptotics.CoarseCleanPivotLower
+public import PaperP1.Asymptotics.CoarseSignedCostLower
+public import PaperP1.Asymptotics.CoarseSignedCostTheorem

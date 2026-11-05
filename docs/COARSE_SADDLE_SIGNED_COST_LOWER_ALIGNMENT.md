@@ -1,0 +1,15 @@
+# An internal coarse saddle lower bound for the original signed forcing cost
+
+Source rechecked: the literal prescribed signed forcing and completeT19.16 statement/proof, companion_sections/limits_appendix.tex lines1196-1299. The theorem concerns the original positive coordinate cost and makes no dependence or total-variation lower-bound claim.
+
+The original specified signed forcing cost now has an explicit internal hard-saddle lower boundexp(-12V_N). The coarse ordinary/full/dyadic reciprocal estimates from checkpoint459 are transported through the literal source exclusions and finite Palm ledger. Ordinary EIPInput is not used. The printed sharp costexp(-2V_N+o(nu_N)) remains conditional; the coefficient12 lower bound is kept as a separate weaker result. The fullT19.16 statement, forcing definition and proof in companion_sections/limits_appendix.tex lines1196-1299 were rechecked.
+
+CoarseCleanPivotLower.uniform_lower proves that the original clean boundary sources retain reciprocal mass at least(N/2)*exp(-11V_N). The actual dyadic population is unchanged. The already proved Rankin count controls all source exclusions at fixed logarithmic widths and cutoffs at most(logN)^5. The new coarse saddle power-error theorem absorbs those actual losses, uniformly before every width and cutoff. No clean-source abundance is assumed as a premise.
+
+CoarseSignedCostLower.uniform_actual_lower applies the exact original signed forcing minorant. The retained sources, collisions with the other source pivots, repeated prime contacts and both actual excluded-pair populations are all paid with their existing internal estimates. At the unnormalized signed-mark level it proves the lower bound(rate(L,0))^2*(N^2/4)*exp(-11V_N) for every logarithmic maximal width. The threshold is chosen beforeL,E and all actual retained configurations.
+
+CoarseSignedCostTheorem.uniform_lower_from_width removes the exact critical signed-mark prefactor and absorbs its fixed positive critical-band constant by one additionalV_N. uniform_lower then specializes to the prescribed moving excess and the original specifiedCostN L, provingexp(-12V_N)<=specifiedCostN L. uniform_log_lower gives the corresponding exact logarithmic inequality. All three statements are unconditional and retain the original infinite-model coordinate cost and critical-band quantifier order.
+
+This improves the existing arbitrary-power lower obstruction to an explicit hard-saddle lower scale for the original cost. Checkpoint458's independent internal upper bounds and vanishing limits remain valid. The sharp coefficient2 ando(nu_N) remainder in the completeT19.16 logarithmic equivalent are not obtained. No lower bound for dependence, total variation or scalar signed cancellation is asserted. CompanionT19.16 remains conditional only on its recorded ordinary EIP input for the fine equivalent.
+
+P1-MATH-0460 adds three modules, five theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records458 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.

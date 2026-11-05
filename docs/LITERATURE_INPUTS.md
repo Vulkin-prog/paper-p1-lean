@@ -1,6 +1,6 @@
 # External mathematical inputs
 
-Current canonical update P1-MATH-0459: exact prime-product counting proves internal ordinary/full reciprocal lower boundsN*exp(-10V_N) and a dyadic lower boundN*exp(-11V_N). The fine coefficient2 ando(nu_N) error remain open. The original signed cost already has an internal no-polynomial-decay obstruction, arbitrary inverse-logarithmic decay andlog cost/logN->0. Ordinary EIP is still required for preciseT19.15/T19.16 equivalents. The plane bound remainsD^6(logN)^3N^(1/D), with subrangea<1/6; full quadratic-degree BCN, sharp rank and optimal strong-triangle weight remain open. Coverage is147 proved,17 conditional and3 in_progress out of167. Earlier dated update paragraphs are historical.
+Current canonical update P1-MATH-0460: the original specified signed forcing cost has the internal explicit lower boundexp(-12V_N), together with arbitrary inverse-logarithmic decay andlog cost/logN->0. Internal reciprocal lower bounds areN*exp(-10V_N) for ordinary/full sums andN*exp(-11V_N) dyadically. Ordinary EIP is still required for the sharp coefficient2 and fineT19.15/T19.16 equivalents. The plane bound remainsD^6(logN)^3N^(1/D), with subrangea<1/6; full quadratic-degree BCN, sharp rank and optimal strong-triangle weight remain open. Coverage is147 proved,17 conditional and3 in_progress out of167. Earlier dated update paragraphs are historical.
 
 Current canonical update P1-MATH-0432: main15.10 and companionT14.1 have unconditional internal proofs. Main15.2 and15.5 and companionT1.8 are also unconditional. Discharges are scoped to their exact numbered conclusions; general geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate. Earlier dated update paragraphs are historical.
 
@@ -26851,3 +26851,22 @@ PrimeProductReciprocalSaddleLower.uniform_ordinary_lower and uniform_full_lower 
 The fine ordinary EIP theorem and the completeT19.15 equivalent remain conditional. These coarse lower bounds are not asserted to prove the desired coefficient2, and the exactT19.16 saddle cost remains conditional on its recorded ordinary input. P1-MATH-0459 adds five modules, fifteen theorems and one definition. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records457 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16343 jobs); direct axiom audit passed for 15241 declarations using only propext, Classical.choice and Quot.sound; all 14666 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.63 GiB.
+
+
+## An internal coarse saddle lower bound for the original signed forcing cost
+
+Stable ID: p1:internal:coarse-saddle-signed-forcing-cost-lower. The original signed forcing cost has an internal coefficient12 saddle lower bound. Ordinary EIP is still required for the sharp coefficient2 equivalent and its fine remainder.
+
+The original specified signed forcing cost now has an explicit internal hard-saddle lower boundexp(-12V_N). The coarse ordinary/full/dyadic reciprocal estimates from checkpoint459 are transported through the literal source exclusions and finite Palm ledger. Ordinary EIPInput is not used. The printed sharp costexp(-2V_N+o(nu_N)) remains conditional; the coefficient12 lower bound is kept as a separate weaker result. The fullT19.16 statement, forcing definition and proof in companion_sections/limits_appendix.tex lines1196-1299 were rechecked.
+
+CoarseCleanPivotLower.uniform_lower proves that the original clean boundary sources retain reciprocal mass at least(N/2)*exp(-11V_N). The actual dyadic population is unchanged. The already proved Rankin count controls all source exclusions at fixed logarithmic widths and cutoffs at most(logN)^5. The new coarse saddle power-error theorem absorbs those actual losses, uniformly before every width and cutoff. No clean-source abundance is assumed as a premise.
+
+CoarseSignedCostLower.uniform_actual_lower applies the exact original signed forcing minorant. The retained sources, collisions with the other source pivots, repeated prime contacts and both actual excluded-pair populations are all paid with their existing internal estimates. At the unnormalized signed-mark level it proves the lower bound(rate(L,0))^2*(N^2/4)*exp(-11V_N) for every logarithmic maximal width. The threshold is chosen beforeL,E and all actual retained configurations.
+
+CoarseSignedCostTheorem.uniform_lower_from_width removes the exact critical signed-mark prefactor and absorbs its fixed positive critical-band constant by one additionalV_N. uniform_lower then specializes to the prescribed moving excess and the original specifiedCostN L, provingexp(-12V_N)<=specifiedCostN L. uniform_log_lower gives the corresponding exact logarithmic inequality. All three statements are unconditional and retain the original infinite-model coordinate cost and critical-band quantifier order.
+
+This improves the existing arbitrary-power lower obstruction to an explicit hard-saddle lower scale for the original cost. Checkpoint458's independent internal upper bounds and vanishing limits remain valid. The sharp coefficient2 ando(nu_N) remainder in the completeT19.16 logarithmic equivalent are not obtained. No lower bound for dependence, total variation or scalar signed cancellation is asserted. CompanionT19.16 remains conditional only on its recorded ordinary EIP input for the fine equivalent.
+
+P1-MATH-0460 adds three modules, five theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records458 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16349 jobs); direct axiom audit passed for 15246 declarations using only propext, Classical.choice and Quot.sound; all 14671 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.61 GiB.
