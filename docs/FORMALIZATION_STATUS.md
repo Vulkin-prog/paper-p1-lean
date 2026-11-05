@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records453 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records454 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15175 audited theorem/lemma declarations**. This
+- The project currently has **15191 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26452,3 +26452,20 @@ NinthGrowingDegreePlaneCount.power_cap, scaled_power_cap and growing_cap prove u
 P1-MATH-0455 adds seven modules, fifteen theorems and one definition. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records453 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16297 jobs); direct axiom audit passed for 15175 declarations using only propext, Classical.choice and Quot.sound; all 14593 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.76 GiB.
+
+
+## Average redundant prime counts to obtain a sixth-power degree bound
+
+Averaging over a redundant actual prime pool strengthens the internally proved coefficient-uniform plane estimate from degree power9 and logarithmic power4 to degree power6 and logarithmic power3. It extends the quantitative growing-degree subrange froma<1/9 toa<1/6. The full printed main13.5 rangea<1/2 and the quadratic-degree BCN property remain unproved. The original source statements and full growing-degree argument in main_sections/pair_rigidity.tex lines209-251 are unchanged and were rechecked.
+
+RedundantPrimeCover.avoiding_card proves a finite multiplicity assertion: among any prime pool aboveP, a nonzero integer of absolute value belowP^m is divisible by fewer thanm distinct pool primes. A subset ofm bad primes would have product at leastP^m dividing that integer, contradicting its size. uniform_pool chooses exactly2m primes in(P,16P], under the internally available conditionm*logP<=P. Consequently every actual nonzero obstruction is avoided by at leastm primes, and the total prime cost is at most32mP. No probabilistic independence or unproved prime estimate enters this argument.
+
+AveragedPrimeAffineCount.uniform_bound double-counts the incidence relation between actual nonexceptional integer points and good pool primes. Each point contributes at leastm incidences, while each prime contributes at most its internally proved smooth-residue determinant count. Dividing the resulting finite natural-number inequality by positivem cancels the pool-cardinality loss. The exceptional product-zero locus is still bounded exactly by the existing projective intersection estimate. The global nonexceptional term is therefore(degreeX+degreeY)^2*(A+J)*32P, rather than the preceding term with an extra factor ofm. Every actual point and exceptional case is retained.
+
+RedundantDegreePrimeScale.exists_scale obtains the required stronger logarithmic condition by multiplying the previous cubic-degree prime scale by4. This changes only an absolute constant chosen beforeD,N, while preserving the determinant threshold. SixthDegreeUniformAffineCount combines this scale with the averaged count and proves theD^6*(Nat.log2N+1)^3*N^(1/D) estimate. SixthDegreeUniformPlaneCount removes coefficient height by the existing exact shear and small-height presentation. SixthDegreeUniformFieldCount.global_field_count and finite_field_count extend the same absolute bound to every characteristic-zero field, ordinary irreducibility and everyD>=2,N>=1. No complex-embedding, geometric-integrality or coefficient-height premise is present.
+
+SixthGrowingDegreePlaneCount.power_cap, scaled_power_cap and growing_cap prove actual signed offset-grid o(B) counting for every fixed positive real scale and every upper-power degree capB^(a+o(1)) with0<=a<1/6. The constants and thresholds have the required uniform order before degree, field, coefficients and actual point populations. This is a stronger unconditional partial result for main13.5, not a discharge of its original full range. Main13.4 remains in_progress, main13.5/13.6 remain conditional, and the optimal three-strong-nonaligned-pair weighted residual remains open.
+
+P1-MATH-0456 adds seven modules, sixteen theorems and one definition. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records454 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16311 jobs); direct axiom audit passed for 15191 declarations using only propext, Classical.choice and Quot.sound; all 14610 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.73 GiB.

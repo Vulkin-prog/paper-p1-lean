@@ -22843,6 +22843,49 @@
         "status": "not_integrated"
       },
       "validation_commit": "3b80426b76d05cf9b0bfa4f5c2d40f6c302bda57"
+    },
+    {
+      "id": "P1-MATH-0456",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:sublinear-grid",
+        "number": "13.5",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 228,
+        "statement_sha256": "ef4c221ed67d6eba27c4ceeeb16591c98447e85f2c53b4e4c6e0a2e6441f46fa"
+      },
+      "original_assumption": "The preceding prime-cover argument selected one good prime for each point and paid the full pool cardinality in its global estimate, leading to degree power9 and logarithmic power4.",
+      "finding": "A redundant pool of2m primes gives at leastm good primes for each nonzero obstruction of size belowP^m. Exact finite incidence counting cancelsm and yields an absoluteD^6(logN)^3N^(1/D) plane estimate, hence quantitative growing-degree sublinearity fora<1/6.",
+      "proposed_revision": "Replace the single-prime union cover with the proved redundant-pool incidence average when presenting the internal weaker degree-uniform alternative. Record the improved plane estimate and growing-degree subrange while leaving quadratic-degree BCN and the fulla<1/2 consequence separate.",
+      "impact": "Removes an entire cubic degree and one logarithmic loss from the internally proved plane bound, with all coefficient-field restrictions already removed. Main13.5 remains conditional in its full stated range, and numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.RedundantDegreePrimeScale.exists_scale",
+        "PaperP1.RedundantPrimeCover.avoiding_card",
+        "PaperP1.RedundantPrimeCover.uniform_pool",
+        "PaperP1.SixthDegreeUniformFieldCount.degree_square_le_profile",
+        "PaperP1.SixthDegreeUniformFieldCount.rational_geometric_count",
+        "PaperP1.SixthDegreeUniformFieldCount.rational_count",
+        "PaperP1.SixthDegreeUniformFieldCount.field_count",
+        "PaperP1.SixthDegreeUniformFieldCount.global_field_count",
+        "PaperP1.SixthDegreeUniformFieldCount.finite_field_count",
+        "PaperP1.SixthDegreeUniformPlaneCount.uniform_geometric_count",
+        "PaperP1.SixthDegreeUniformPlaneCount.grid_geometric_count",
+        "PaperP1.SixthGrowingDegreePlaneCount.power_cap",
+        "PaperP1.SixthGrowingDegreePlaneCount.scaled_power_cap",
+        "PaperP1.SixthGrowingDegreePlaneCount.growing_cap",
+        "PaperP1.AveragedPrimeAffineCount.uniform_bound",
+        "PaperP1.SixthDegreeUniformAffineCount.uniform_count",
+        "PaperP1.SixthDegreeUniformFieldCount.profile"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16311 jobs); direct axiom audit passed for 15191 declarations using only propext, Classical.choice and Quot.sound; all 14610 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.73 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -3863,3 +3863,10 @@ public import PaperP1.Arithmetic.NinthDegreeUniformPlaneCount
 public import PaperP1.Asymptotics.NinthGrowingDegreePlaneCount
 public import PaperP1.Diophantine.LogarithmicPrimeAffineCount
 public import PaperP1.Diophantine.NinthDegreeUniformAffineCount
+public import PaperP1.Arithmetic.RedundantDegreePrimeScale
+public import PaperP1.Arithmetic.RedundantPrimeCover
+public import PaperP1.Arithmetic.SixthDegreeUniformFieldCount
+public import PaperP1.Arithmetic.SixthDegreeUniformPlaneCount
+public import PaperP1.Asymptotics.SixthGrowingDegreePlaneCount
+public import PaperP1.Diophantine.AveragedPrimeAffineCount
+public import PaperP1.Diophantine.SixthDegreeUniformAffineCount

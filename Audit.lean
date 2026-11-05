@@ -5558,6 +5558,9 @@ import PaperP1
 #print axioms PaperP1.ReciprocalPivotSquareTail.split_square_parts
 #print axioms PaperP1.ReciprocalPivotSquareTail.full_square_part_bound
 #print axioms PaperP1.ReducedAffineData.reduce
+#print axioms PaperP1.RedundantDegreePrimeScale.exists_scale
+#print axioms PaperP1.RedundantPrimeCover.avoiding_card
+#print axioms PaperP1.RedundantPrimeCover.uniform_pool
 #print axioms PaperP1.RelativeBlockRelations.mem_population
 #print axioms PaperP1.RelativeBlockRelations.mem_cell
 #print axioms PaperP1.RelativeBlockRelations.sum_split
@@ -5816,6 +5819,14 @@ import PaperP1
 #print axioms PaperP1.SignedPrimeSubsetTargets.mem_targets
 #print axioms PaperP1.SignedPrimeSubsetTargets.fibre_count
 #print axioms PaperP1.SignedPrimeSubsetTargets.targets_count
+#print axioms PaperP1.SixthDegreeUniformFieldCount.degree_square_le_profile
+#print axioms PaperP1.SixthDegreeUniformFieldCount.rational_geometric_count
+#print axioms PaperP1.SixthDegreeUniformFieldCount.rational_count
+#print axioms PaperP1.SixthDegreeUniformFieldCount.field_count
+#print axioms PaperP1.SixthDegreeUniformFieldCount.global_field_count
+#print axioms PaperP1.SixthDegreeUniformFieldCount.finite_field_count
+#print axioms PaperP1.SixthDegreeUniformPlaneCount.uniform_geometric_count
+#print axioms PaperP1.SixthDegreeUniformPlaneCount.grid_geometric_count
 #print axioms PaperP1.SmallChannelUniqueness.same_slope
 #print axioms PaperP1.SmallChannelUniqueness.units_eq_of_slope
 #print axioms PaperP1.SmallChannelUniqueness.unit_geometric
@@ -9533,6 +9544,9 @@ import PaperP1
 #print axioms PaperP1.SixVertexBudget.companion_T20_8
 #print axioms PaperP1.SixVertexBudgetUnderInputs.uniform_budget
 #print axioms PaperP1.SixVertexBudgetUnderInputs.companion_T20_8
+#print axioms PaperP1.SixthGrowingDegreePlaneCount.power_cap
+#print axioms PaperP1.SixthGrowingDegreePlaneCount.scaled_power_cap
+#print axioms PaperP1.SixthGrowingDegreePlaneCount.growing_cap
 #print axioms PaperP1.SlowGrowingPlaneDegreeCap.exists_cap_below
 #print axioms PaperP1.SlowGrowingPlaneDegreeCap.exists_cap
 #print axioms PaperP1.SmallCoreDeficitReduction.uniform_source
@@ -10820,6 +10834,7 @@ import PaperP1
 #print axioms PaperP1.AffineSmoothClassPointCount.smooth_class_card
 #print axioms PaperP1.AffineSmoothResidueClasses.residue_image_card
 #print axioms PaperP1.AffineSmoothResidueClasses.fixed_prime_count
+#print axioms PaperP1.AveragedPrimeAffineCount.uniform_bound
 #print axioms PaperP1.BidegreeOneCurveCount.integer_box_floor
 #print axioms PaperP1.BidegreeOneCurveCount.mem_realSolutions
 #print axioms PaperP1.BidegreeOneCurveCount.integer_coefficient_bound
@@ -11226,6 +11241,7 @@ import PaperP1
 #print axioms PaperP1.SingleResultantFibreCount.finite_count
 #print axioms PaperP1.SingleResultantFibreCount.actual_real_solutions_count
 #print axioms PaperP1.SingleResultantFibreCount.coprime_actual_real_solutions_count
+#print axioms PaperP1.SixthDegreeUniformAffineCount.uniform_count
 #print axioms PaperP1.SmoothClassAuxiliary.minor_vanishing
 #print axioms PaperP1.SmoothClassAuxiliary.exists_coefficients
 #print axioms PaperP1.SmoothClassAuxiliary.exists_auxiliary
