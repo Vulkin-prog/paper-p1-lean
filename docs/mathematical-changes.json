@@ -21023,6 +21023,52 @@
         "status": "not_integrated"
       },
       "validation_commit": "3ceba483800fcce310f9935de145361a0cfdd13b"
+    },
+    {
+      "id": "P1-MATH-0411",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:arith:pairs",
+        "number": "3.3",
+        "page": 16,
+        "source": "main_sections/arithmetic.tex",
+        "line": 162,
+        "statement_sha256": "2129f1e0418039211e95fa065f6ae434fe46849de797ea291acb0e08da94b412"
+      },
+      "original_assumption": "The exact finite channel formulas, two-channel reductions and phase comparisons were internal, but their actual nonaligned/dense pair residuals still exposed unproved finite geometric properties.",
+      "finding": "The internally proved source residual and actual nonaligned activity close the complete unsigned/signed pair profile, both moving variance-minus-mean phases and the full principal-edge input without any unproved argument.",
+      "proposed_revision": "Use the unconditional complete pair-profile declarations and cite the dense-intersection residual proof. Preserve the whole finite first-channel subtraction, exact moving phase factors, actual cumulant/mean and literal regular off-edge integral.",
+      "impact": "Main3.3 and3.4 move from conditional to proved:101 proved,63 conditional,3 in_progress out of167. The original pair profile and edge input are fully checked; full growing-degree BCN and unrelated geometric properties remain open.",
+      "evidence": [
+        "PaperP1.ActualPairPhase.alpha_eq_cumulant",
+        "PaperP1.ActualPairPhase.main_sum",
+        "PaperP1.ActualPairPhase.article_3_3_cumulant",
+        "PaperP1.ActualPairPhase.uniform_phases",
+        "PaperP1.ActualPairPhase.article_3_3_phases",
+        "PaperP1.CompletePairProfile.main_3_3",
+        "PaperP1.PairProfiles.uniform_profiles",
+        "PaperP1.PositiveSeparatedSourceProfile.finite_profile_error",
+        "PaperP1.PositiveSeparatedSourceProfile.article_3_3_positive",
+        "PaperP1.PrincipalEdgeRemainder.regular_nominal_coefficient",
+        "PaperP1.PrincipalEdgeRemainder.uniform_remainder",
+        "PaperP1.PrincipalEdgeRemainder.uniform_nominal_remainder",
+        "PaperP1.PrincipalEdgeRemainder.uniform_edge_input",
+        "PaperP1.SignedSeparatedSourceProfile.article_3_3_signed",
+        "PaperP1.SignedSourceProfile.scaled_mainTerm",
+        "PaperP1.SignedSourceProfile.unscale",
+        "PaperP1.SignedSourceProfile.uniform_all_ordered",
+        "PaperP1.ActualPairPhase.alpha",
+        "PaperP1.PositiveSeparatedSourceProfile.mainTerm",
+        "PaperP1.SignedSourceProfile.mainTerm"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15799 jobs); direct axiom audit passed for 14661 declarations using only propext, Classical.choice and Quot.sound; all 14008 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.98 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

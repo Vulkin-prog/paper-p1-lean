@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+Main3.3 and3.4 are unconditional (P1-MATH-0411): the complete unsigned/signed pair profiles, actual variance-minus-mean expansion, both literal moving phases, and the full principal-edge input are internally proved.
+
 Main3.2 is unconditional (P1-MATH-0409): both source support and full nonaligned arithmetic residual have the improved exponent1+epsilon, without geometric cover/count premises. Main12.1,12.2 and companionT8.1,T8.2,T8.3 are also unconditional.
 
 Current plane counts (P1-MATH-0401): the actual coefficient- and field-uniform bound K(D,epsilon)*H^(1/D+epsilon) is proved for every fixed degree D>=2. No complex embedding or absolute irreducibility input is required. The degree-uniform logarithmic BCN estimate at growing D and the full original all-dimensional main13.4 remain open.
@@ -15,7 +17,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is99/167 unconditional and65 conditional (164/167 completed). The project records408 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is101/167 unconditional and63 conditional (164/167 completed). The project records409 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -134,7 +136,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14644 audited theorem/lemma declarations**. This
+- The project currently has **14661 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25613,3 +25615,20 @@ NonalignedPairActivity.uniform_activity extends the actual covariance bound to t
 P1-MATH-0410 adds three modules, seven theorems and one definition. Main18.2 moves from conditional to proved. Coverage becomes99 proved and65 conditional out of167, with164 completed and three in_progress. The ledger records408 improvements and two statement-scope corrections. General surface covers, normalized curve counts and full growing-degree BCN remain open as separate properties. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15785 jobs); direct axiom audit passed for 14644 declarations using only propext, Classical.choice and Quot.sound; all 13988 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.03 GiB.
+
+
+## Unconditional complete two-channel pair profile and principal edge input
+
+Main Theorem3.3 and Corollary3.4 now have complete unconditional canonical proofs on the original infinite prime-sign model. The sole unproved geometric use in their finite pair-profile chain was the weighted nonaligned source residual or its actual dense-activity consequence. These are internally proved at checkpoints409-410. PairProfiles therefore supplies the actual second factorial cumulant and both two-channel approximations at rate N^(-4/5+epsilon), uniformly over every critical L and every permitted cutoff H after one common threshold.
+
+PositiveSeparatedSourceProfile proves the literal ordered separated unsigned arithmetic sum with the exact finite U_(2,3) andU_(3,4) channel expressions and the printed N^(6/5+epsilon) remainder. SignedSourceProfile and SignedSeparatedSourceProfile prove the literal affine signed sum, including incompatible pairs and the separately controlled close/contact contribution. No hypothetical geometric cover is an argument of any canonical profile theorem.
+
+ActualPairPhase identifies alpha with the actual variance minus actual mean and proves the exact nominal-parameter cumulant expansion. It proves BOTH moving equivalents, with the source coefficients depending on L mod3 and L mod4. Before the second equivalent, the WHOLE finite first-channel expression is subtracted. The direct article_3_3_phases theorem has the literal printed residue-class formulas; CompletePairProfile.main_3_3 bundles unsigned, signed, cumulant and positive-denominator phase assertions after one threshold. All finite channel identities, contact terms, mean transport and exact affine conventions remain explicit internal steps.
+
+PrincipalEdgeRemainder proves the complete actual off-edge covariance bound on every dyadic subground, the literal nominal-centered integral on the actual regular ground, and the bundled source edge input. The latter includes the concrete edge count<=26*(L+1)*N, positive two-sided beta scale L*N^(-2/3), actual cumulant/beta comparison and full ordered regular off-edge remainder at rate N^(-4/5+epsilon). The previously proved unconditional per-channel edge rank and point-probability caps are retained in the numbered ledger.
+
+The full original statements in main_sections/arithmetic.tex lines162-228 were rechecked. Removing the geometric dependency here does not prove the general normalized curve or surface properties and does not discharge the full growing-degree BCN rank theorem used elsewhere. Historical conditional declarations remain available for comparison.
+
+P1-MATH-0411 adds seven modules, seventeen theorems and three definitions. Main3.3 and3.4 move from conditional to proved. Coverage becomes101 proved and63 conditional out of167, with164 completed and three in_progress. The ledger records409 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15799 jobs); direct axiom audit passed for 14661 declarations using only propext, Classical.choice and Quot.sound; all 14008 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.98 GiB.

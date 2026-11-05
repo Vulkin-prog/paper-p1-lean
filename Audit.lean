@@ -6602,6 +6602,11 @@ import PaperP1
 #print axioms PaperP1.ActualNonGeometricFactorCount.uniform_actual_count
 #print axioms PaperP1.ActualNonGeometricFactorCount.uniform_actual_minimum_count
 #print axioms PaperP1.ActualOtherLinearFactorCount.uniform_actual_second_linear_count
+#print axioms PaperP1.ActualPairPhase.alpha_eq_cumulant
+#print axioms PaperP1.ActualPairPhase.main_sum
+#print axioms PaperP1.ActualPairPhase.article_3_3_cumulant
+#print axioms PaperP1.ActualPairPhase.uniform_phases
+#print axioms PaperP1.ActualPairPhase.article_3_3_phases
 #print axioms PaperP1.ActualPairPhaseUnderInputs.alpha_eq_cumulant
 #print axioms PaperP1.ActualPairPhaseUnderInputs.main_sum
 #print axioms PaperP1.ActualPairPhaseUnderInputs.article_3_3_cumulant
@@ -6967,6 +6972,7 @@ import PaperP1
 #print axioms PaperP1.ComparableTranslatedKernelCounts.two_uniform_budget
 #print axioms PaperP1.ComparableTruncatedSupportCount.uniform_count
 #print axioms PaperP1.ComparableTwoSmallKernelUpper.uniform_count
+#print axioms PaperP1.CompletePairProfile.main_3_3
 #print axioms PaperP1.CompressedAlignedTripleMass.host_data
 #print axioms PaperP1.CompressedAlignedTripleMass.source_mem_hosts
 #print axioms PaperP1.CompressedAlignedTripleMass.uniform_inclusion
@@ -8447,6 +8453,7 @@ import PaperP1
 #print axioms PaperP1.PairCompressedPrimitiveMassUnderInputs.companion_T4_4_original
 #print axioms PaperP1.PairHostIndependentMass.finite_mass_cap
 #print axioms PaperP1.PairHostIndependentMass.uniform_mass
+#print axioms PaperP1.PairProfiles.uniform_profiles
 #print axioms PaperP1.PairProfilesUnderGeometricInputs.uniform_profiles
 #print axioms PaperP1.PhysicalTargetTripleMass.hosts_card
 #print axioms PaperP1.PhysicalTargetTripleMass.host_data
@@ -8545,6 +8552,8 @@ import PaperP1
 #print axioms PaperP1.PositiveSecondCumulant.uniform_lower
 #print axioms PaperP1.PositiveSecondCumulant.uniform_positive
 #print axioms PaperP1.PositiveSecondCumulant.uniform_hermite_admissibility
+#print axioms PaperP1.PositiveSeparatedSourceProfile.finite_profile_error
+#print axioms PaperP1.PositiveSeparatedSourceProfile.article_3_3_positive
 #print axioms PaperP1.PositiveSeparatedSourceProfileUnderInputs.finite_profile_error
 #print axioms PaperP1.PositiveSeparatedSourceProfileUnderInputs.article_3_3_positive
 #print axioms PaperP1.PowerGap.small
@@ -8648,6 +8657,10 @@ import PaperP1
 #print axioms PaperP1.PrincipalEdgeActivation.uniform_probability
 #print axioms PaperP1.PrincipalEdgeProbability.uniform_coarse
 #print axioms PaperP1.PrincipalEdgeProbability.beta_squared_lower
+#print axioms PaperP1.PrincipalEdgeRemainder.regular_nominal_coefficient
+#print axioms PaperP1.PrincipalEdgeRemainder.uniform_remainder
+#print axioms PaperP1.PrincipalEdgeRemainder.uniform_nominal_remainder
+#print axioms PaperP1.PrincipalEdgeRemainder.uniform_edge_input
 #print axioms PaperP1.PrincipalEdgeRemainderUnderInputs.regular_nominal_coefficient
 #print axioms PaperP1.PrincipalEdgeRemainderUnderInputs.uniform_remainder
 #print axioms PaperP1.PrincipalEdgeRemainderUnderInputs.uniform_nominal_remainder
@@ -9045,7 +9058,11 @@ import PaperP1
 #print axioms PaperP1.SignedSaddleExcess.widthConstant_pos
 #print axioms PaperP1.SignedSaddleExcess.uniform_small
 #print axioms PaperP1.SignedSaddleExcess.uniform_width
+#print axioms PaperP1.SignedSeparatedSourceProfile.article_3_3_signed
 #print axioms PaperP1.SignedSeparatedSourceProfileUnderInputs.article_3_3_signed
+#print axioms PaperP1.SignedSourceProfile.scaled_mainTerm
+#print axioms PaperP1.SignedSourceProfile.unscale
+#print axioms PaperP1.SignedSourceProfile.uniform_all_ordered
 #print axioms PaperP1.SignedSourceProfileUnderInputs.scaled_mainTerm
 #print axioms PaperP1.SignedSourceProfileUnderInputs.unscale
 #print axioms PaperP1.SignedSourceProfileUnderInputs.uniform_all_ordered

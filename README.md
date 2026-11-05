@@ -4,11 +4,11 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: 99 unconditional and 65 conditional numbered results out of 167 (164 completed).**
+**Status: 101 unconditional and 63 conditional numbered results out of 167 (164 completed).**
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification also converge to Poisson in total variation under the explicit BCN premise. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **408 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification also converge to Poisson in total variation under the explicit BCN premise. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **409 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -185,8 +185,8 @@ The irreducible (1,1) auxiliary case now has both elementary orientations and a 
 [bilinear local case](docs/BILINEAR_AUXILIARY_ALIGNMENT.md).
 Both degree-zero auxiliary counts are now proved on the original positive equation, using primitive zero directions, quadratic fibres and the exact linear progression step. See the
 [degree-zero local counts](docs/ZERO_DEGREE_AUXILIARY_ALIGNMENT.md).
-The complete main pair profile remains in progress. See the
-[finite calculation](docs/FINITE_CHANNEL_SUMS_ALIGNMENT.md).
+The complete main pair profile3.3 and principal-edge input3.4 are unconditional, including literal unsigned/signed sums and both moving phases. See the
+[complete alignment](docs/UNCONDITIONAL_COMPLETE_PAIR_PROFILE_ALIGNMENT.md).
 Article Lemma 3.5 proves exact compression of the actual good-edge family,
 with deduplicated normalized values, an explicit finite rank bound and at
 most (L+1)^2 one-parameter motifs. See
@@ -935,3 +935,5 @@ P1-MATH-0408 makes main12.1 and12.2 unconditional, with one threshold for dense 
 P1-MATH-0409 makes main3.2 unconditional and improves both support and literal nonaligned2^rho-1 residual exponents from6/5+epsilon to1+epsilon, with local defects and incompatibility retained. Coverage is now98 proved and66 conditional out of167.
 
 P1-MATH-0410 makes main18.2 unconditional, including its literal homogeneous sum and actual covariance consequence. The full unordered and dense nonaligned pair activities have rateN^(-1+epsilon) without unproved geometric inputs. Coverage is now99 proved and65 conditional out of167.
+
+P1-MATH-0411 makes main3.3 and3.4 unconditional: complete literal unsigned/signed pair profiles, actual variance-minus-mean expansion, both moving phases, and the full principal-edge input and off-edge remainder. Coverage is now101 proved and63 conditional out of167.

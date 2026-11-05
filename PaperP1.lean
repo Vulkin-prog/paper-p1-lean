@@ -3607,3 +3607,10 @@ public import PaperP1.Model.CriticalPairLossComparison
 public import PaperP1.Asymptotics.DensePairActivity
 public import PaperP1.Asymptotics.NonalignedPairActivity
 public import PaperP1.Asymptotics.WeightedNonalignedPairs
+public import PaperP1.Asymptotics.ActualPairPhase
+public import PaperP1.Asymptotics.CompletePairProfile
+public import PaperP1.Asymptotics.PairProfiles
+public import PaperP1.Asymptotics.PositiveSeparatedSourceProfile
+public import PaperP1.Asymptotics.PrincipalEdgeRemainder
+public import PaperP1.Asymptotics.SignedSeparatedSourceProfile
+public import PaperP1.Asymptotics.SignedSourceProfile
