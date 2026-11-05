@@ -21159,6 +21159,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "1a75d18367b9fa8de2d49401c85b6e1e15ab7d00"
+    },
+    {
+      "id": "P1-MATH-0414",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:conversion",
+        "number": "15.1",
+        "page": 39,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 80,
+        "statement_sha256": "ecaa37b976094a2d309768a81a671f3d7517916194a54dd66f5d48df215e523b"
+      },
+      "original_assumption": "The finite heterogeneous conversion was internal, but its sharp actual-model rate and eventual actual quadratic/Hermite probability status still exposed unproved pair-activity or BCN arguments.",
+      "finding": "Integrated pair activity proves the literal N^(-5/3+epsilon) conversion application, while exact cumulant decay and actual mean bounds prove both reference probability assertions without unproved inputs.",
+      "proposed_revision": "Use the unconditional actual conversion in main15.1 and the unconditional actual-reference probability declarations in later approximation theorems. Retain their exact actual parameters and distinguish admissibility from the remaining optimal original-law error bounds.",
+      "impact": "Main15.1 moves from conditional to proved:103 proved,61 conditional,3 in_progress out of167. The probability-status component of main1.1/19.1 is also unconditional, while their full quantitative conclusions remain conditional.",
+      "evidence": [
+        "PaperP1.ActualReferenceProbability.hermite_parameters",
+        "PaperP1.ActualReferenceProbability.uniform_quadratic_probability",
+        "PaperP1.ActualReferenceProbability.uniform_hermite_probability",
+        "PaperP1.RunConversion.main_15_1",
+        "PaperP1.SecondCumulant.uniform_bound",
+        "PaperP1.SecondCumulant.uniform_eventually_small",
+        "PaperP1.SecondCumulant.uniform_parameter_gap"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15825 jobs); direct axiom audit passed for 14700 declarations using only propext, Classical.choice and Quot.sound; all 14050 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.89 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

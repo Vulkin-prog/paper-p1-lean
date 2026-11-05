@@ -18889,3 +18889,18 @@ This completes an unconditional coarse foundation, not the full corrected-moment
 P1-MATH-0413 adds seven modules, twenty-four theorems and two probability-law definitions. No numbered status is promoted: coverage stays102 proved and62 conditional out of167, with164 completed and three in_progress. The ledger records411 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15819 jobs); direct axiom audit passed for 14693 declarations using only propext, Classical.choice and Quot.sound; all 14043 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.92 GiB.
+
+
+## Unconditional heterogeneous conversion and actual reference probability status
+
+The whole main Lemma15.1 now has an unconditional canonical alignment. Its general finite heterogeneous signed-measure estimate was already proved, in the stronger universal form with constant16*exp(2), arbitrary total mean and the full Bernoulli marginal domain. The only remaining unproved use was its actual-model application through the absolute pair activity. RunConversion.main_15_1 supplies precisely the printed N^(-5/3+epsilon) application rate, uniformly over every dyadic subground, from the internally proved PairActivity conversion. The finite universal theorem and actual affine signed reference remain explicitly listed in the ledger.
+
+SecondCumulant supplies canonical unconditional critical-band decay, uniform eventual smallness on every dyadic subground and separation of the original full second factorial cumulant from the actual mean. These use the exact heterogeneous diagonal term and the actual positive lower mean. No pointwise maximal pair-rank bound is an argument.
+
+ActualReferenceProbability proves that the original actual-parameter quadratic Poisson--Charlier reference is eventually a probability measure. It combines the exact integer Charlier-minimum domain with the unconditional positive cumulant, unconditional smallness and the actual two-sided mean bounds. It also proves the strict Hermite parameter domain0<alpha<actual mean and the eventual probability status of the actual Hermite reference. Both references retain the full original second cumulant and original actual mean. No nominal substitution, original-law error estimate or unproved BCN property is used.
+
+The complete main15.1 statement and proof in main_sections/exact_transfer.tex lines80-122 were rechecked: both the finite bound and its actual-model application are covered. The new reference-admissibility declarations also discharge this component of main1.1 and19.1. Those two full numbered results stay conditional because their quantitative optimal original-law conclusions still need the separately recorded inputs. General growing-degree BCN and unrelated surface/curve properties remain open.
+
+P1-MATH-0414 adds three modules and seven theorems. Main15.1 moves from conditional to proved; main1.1 and19.1 retain their conditional status. Coverage becomes103 proved and61 conditional out of167, with164 completed and three in_progress. The ledger records412 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15825 jobs); direct axiom audit passed for 14700 declarations using only propext, Classical.choice and Quot.sound; all 14050 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.89 GiB.

@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+Main15.1 is unconditional (P1-MATH-0414): both the universal finite conversion and actualN^(-5/3+epsilon) application are internally proved. The original actual-parameter quadratic and Hermite references are eventually probabilities without BCN; full main1.1/19.1 quantitative conclusions remain conditional.
+
 The original and retained-modified probability laws have unconditional qualitative Poisson convergence at their actual and nominal means (P1-MATH-0413). All fixed ordinary moments are uniformly bounded; coarse factorial-moment error isN^(-1/2+epsilon). The full corrected main6.4 expansion and polynomial optimal law rates remain conditional.
 
 CompanionT19.4 is unconditional (P1-MATH-0412): the explicit bounded actual second moment closes the full growing-order branching recurrence without BCN. Full actual pair activity and second-cumulant decay have rateN^(-2/3+epsilon).
@@ -21,7 +23,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is102/167 unconditional and62 conditional (164/167 completed). The project records411 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is103/167 unconditional and61 conditional (164/167 completed). The project records412 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -140,7 +142,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14693 audited theorem/lemma declarations**. This
+- The project currently has **14700 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25668,3 +25670,18 @@ This completes an unconditional coarse foundation, not the full corrected-moment
 P1-MATH-0413 adds seven modules, twenty-four theorems and two probability-law definitions. No numbered status is promoted: coverage stays102 proved and62 conditional out of167, with164 completed and three in_progress. The ledger records411 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15819 jobs); direct axiom audit passed for 14693 declarations using only propext, Classical.choice and Quot.sound; all 14043 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.92 GiB.
+
+
+## Unconditional heterogeneous conversion and actual reference probability status
+
+The whole main Lemma15.1 now has an unconditional canonical alignment. Its general finite heterogeneous signed-measure estimate was already proved, in the stronger universal form with constant16*exp(2), arbitrary total mean and the full Bernoulli marginal domain. The only remaining unproved use was its actual-model application through the absolute pair activity. RunConversion.main_15_1 supplies precisely the printed N^(-5/3+epsilon) application rate, uniformly over every dyadic subground, from the internally proved PairActivity conversion. The finite universal theorem and actual affine signed reference remain explicitly listed in the ledger.
+
+SecondCumulant supplies canonical unconditional critical-band decay, uniform eventual smallness on every dyadic subground and separation of the original full second factorial cumulant from the actual mean. These use the exact heterogeneous diagonal term and the actual positive lower mean. No pointwise maximal pair-rank bound is an argument.
+
+ActualReferenceProbability proves that the original actual-parameter quadratic Poisson--Charlier reference is eventually a probability measure. It combines the exact integer Charlier-minimum domain with the unconditional positive cumulant, unconditional smallness and the actual two-sided mean bounds. It also proves the strict Hermite parameter domain0<alpha<actual mean and the eventual probability status of the actual Hermite reference. Both references retain the full original second cumulant and original actual mean. No nominal substitution, original-law error estimate or unproved BCN property is used.
+
+The complete main15.1 statement and proof in main_sections/exact_transfer.tex lines80-122 were rechecked: both the finite bound and its actual-model application are covered. The new reference-admissibility declarations also discharge this component of main1.1 and19.1. Those two full numbered results stay conditional because their quantitative optimal original-law conclusions still need the separately recorded inputs. General growing-degree BCN and unrelated surface/curve properties remain open.
+
+P1-MATH-0414 adds three modules and seven theorems. Main15.1 moves from conditional to proved; main1.1 and19.1 retain their conditional status. Coverage becomes103 proved and61 conditional out of167, with164 completed and three in_progress. The ledger records412 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15825 jobs); direct axiom audit passed for 14700 declarations using only propext, Classical.choice and Quot.sound; all 14050 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.89 GiB.

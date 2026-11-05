@@ -6629,6 +6629,9 @@ import PaperP1
 #print axioms PaperP1.ActualReferenceAdmissibility.quadratic_of_bounds
 #print axioms PaperP1.ActualReferenceAdmissibility.uniform_quadratic_probability
 #print axioms PaperP1.ActualReferenceAdmissibility.uniform_hermite_probability
+#print axioms PaperP1.ActualReferenceProbability.hermite_parameters
+#print axioms PaperP1.ActualReferenceProbability.uniform_quadratic_probability
+#print axioms PaperP1.ActualReferenceProbability.uniform_hermite_probability
 #print axioms PaperP1.ActualSourceClusterCount.uniform_factor_sum_count
 #print axioms PaperP1.ActualSourceClusterCount.uniform_cluster_count
 #print axioms PaperP1.ActualSourceFactorCount.uniform_count
@@ -8925,6 +8928,7 @@ import PaperP1
 #print axioms PaperP1.RoundedScaleLower.shape_nonnegative
 #print axioms PaperP1.RoundedScaleLower.uniform_lower
 #print axioms PaperP1.RoundedSourceLatticeFamilies.uniform_rounded_families
+#print axioms PaperP1.RunConversion.main_15_1
 #print axioms PaperP1.SaturationDegreeBudget.envelope_div_log_tendsto
 #print axioms PaperP1.SaturationDegreeBudget.log_product_le_envelope
 #print axioms PaperP1.SaturationDegreeBudget.product_le_power_eventually
@@ -8939,6 +8943,9 @@ import PaperP1
 #print axioms PaperP1.ScaledPrimeCounts.divided_cutoff_ratio
 #print axioms PaperP1.ScaledPrimeCounts.shifted_cutoff_ratio
 #print axioms PaperP1.ScaledPrimeCounts.prime_count_divided_shifted
+#print axioms PaperP1.SecondCumulant.uniform_bound
+#print axioms PaperP1.SecondCumulant.uniform_eventually_small
+#print axioms PaperP1.SecondCumulant.uniform_parameter_gap
 #print axioms PaperP1.SecondCumulantNonalignedReduction.uniform_bound
 #print axioms PaperP1.SecondCumulantUnderBCN.diagonal_bound
 #print axioms PaperP1.SecondCumulantUnderBCN.uniform_bound
