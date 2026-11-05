@@ -3990,3 +3990,7 @@ public import PaperP1.Arithmetic.WidePlaneInterpolation
 public import PaperP1.Arithmetic.LinearHeightAssociatedPlanePresentation
 public import PaperP1.Arithmetic.LinearHeightCurveBudget
 public import PaperP1.Arithmetic.LinearHeightPlanePresentation
+public import PaperP1.Arithmetic.CubicDegreeUniformFieldCount
+public import PaperP1.Arithmetic.CubicDegreeUniformPlaneCount
+public import PaperP1.Arithmetic.LinearHeightShearBudget
+public import PaperP1.Asymptotics.CubicGrowingDegreePlaneCount

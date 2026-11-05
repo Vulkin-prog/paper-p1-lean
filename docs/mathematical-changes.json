@@ -24374,6 +24374,47 @@
         "status": "not_integrated"
       },
       "validation_commit": "024c64d247f5c6a1e6eca8e80f3a105f9a2d1db3"
+    },
+    {
+      "id": "P1-MATH-0496",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:sublinear-grid",
+        "number": "13.5",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 228,
+        "statement_sha256": "ef4c221ed67d6eba27c4ceeeb16591c98447e85f2c53b4e4c6e0a2e6441f46fa"
+      },
+      "original_assumption": "The generic internally proved plane count paid a fifth degree power and yielded the growing-degree rangea<1/5. The original quadratic-degree BCN estimate remained unproved.",
+      "finding": "The actual linear-in-degree height presentation and bounded shear yield an absoluteC*D^3*(Nat.log2N+1)^2*N^(1/D) bound over every characteristic-zero field, and the growing-degree consequencea<1/3.",
+      "proposed_revision": "Record the cubic coefficient- and field-uniform plane theorem and its completea<1/3 consequence as an internal alternative, keeping full quadratic-degree BCN and the originala<1/2 claim separate.",
+      "impact": "Improves the generic degree power from5 to3 and the unconditional growing-degree range froma<1/5 toa<1/3, without promoting the remaining stronger numbered assertions.",
+      "evidence": [
+        "PaperP1.CubicDegreeUniformFieldCount.degree_square_le_profile",
+        "PaperP1.CubicDegreeUniformFieldCount.rational_geometric_count",
+        "PaperP1.CubicDegreeUniformFieldCount.rational_count",
+        "PaperP1.CubicDegreeUniformFieldCount.field_count",
+        "PaperP1.CubicDegreeUniformFieldCount.global_field_count",
+        "PaperP1.CubicDegreeUniformFieldCount.finite_field_count",
+        "PaperP1.CubicDegreeUniformPlaneCount.uniform_geometric_count",
+        "PaperP1.CubicDegreeUniformPlaneCount.grid_geometric_count",
+        "PaperP1.LinearHeightShearBudget.scale_bounds",
+        "PaperP1.LinearHeightShearBudget.logarithmic_bound",
+        "PaperP1.LinearHeightShearBudget.root_scale",
+        "PaperP1.CubicGrowingDegreePlaneCount.power_cap",
+        "PaperP1.CubicGrowingDegreePlaneCount.scaled_power_cap",
+        "PaperP1.CubicGrowingDegreePlaneCount.growing_cap",
+        "PaperP1.CubicDegreeUniformFieldCount.profile"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16559 jobs); direct axiom audit passed for 15587 declarations using only propext, Classical.choice and Quot.sound; all 15059 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.77 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

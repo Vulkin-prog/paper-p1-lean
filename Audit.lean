@@ -3897,6 +3897,14 @@ import PaperP1
 #print axioms PaperP1.CriticalDefectPositions.criticalDefectivePositions_eq_interval
 #print axioms PaperP1.CriticalDefectPositions.uniform_critical_defect_constant
 #print axioms PaperP1.CriticalDefectPositions.companion_T9_2
+#print axioms PaperP1.CubicDegreeUniformFieldCount.degree_square_le_profile
+#print axioms PaperP1.CubicDegreeUniformFieldCount.rational_geometric_count
+#print axioms PaperP1.CubicDegreeUniformFieldCount.rational_count
+#print axioms PaperP1.CubicDegreeUniformFieldCount.field_count
+#print axioms PaperP1.CubicDegreeUniformFieldCount.global_field_count
+#print axioms PaperP1.CubicDegreeUniformFieldCount.finite_field_count
+#print axioms PaperP1.CubicDegreeUniformPlaneCount.uniform_geometric_count
+#print axioms PaperP1.CubicDegreeUniformPlaneCount.grid_geometric_count
 #print axioms PaperP1.CurveCoordinateCut.inclusion_injective
 #print axioms PaperP1.CurveCoordinateCut.literal_square
 #print axioms PaperP1.CurveCoordinateCut.first_regular
@@ -4743,6 +4751,9 @@ import PaperP1
 #print axioms PaperP1.LinearHeightCurveBudget.interpolation_height_power
 #print axioms PaperP1.LinearHeightCurveBudget.factor_height_power
 #print axioms PaperP1.LinearHeightPlanePresentation.exists_presentation
+#print axioms PaperP1.LinearHeightShearBudget.scale_bounds
+#print axioms PaperP1.LinearHeightShearBudget.logarithmic_bound
+#print axioms PaperP1.LinearHeightShearBudget.root_scale
 #print axioms PaperP1.LinearPlaneGridBound.offsetBox_card
 #print axioms PaperP1.LinearPlaneGridBound.grid_card_of_outer_positive
 #print axioms PaperP1.LinearPlaneGridBound.grid_card_swap
@@ -7603,6 +7614,9 @@ import PaperP1
 #print axioms PaperP1.CriticalTwoPointClasses.uniform_disjoint_no_exact
 #print axioms PaperP1.CriticalWindowGeometry.uniform_geometry
 #print axioms PaperP1.CriticalWindowGeometry.log_base_lower
+#print axioms PaperP1.CubicGrowingDegreePlaneCount.power_cap
+#print axioms PaperP1.CubicGrowingDegreePlaneCount.scaled_power_cap
+#print axioms PaperP1.CubicGrowingDegreePlaneCount.growing_cap
 #print axioms PaperP1.DegreeOneGraphHostCount.mem_components
 #print axioms PaperP1.DegreeOneGraphHostCount.exists_system_of_components
 #print axioms PaperP1.DegreeOneGraphHostCount.uniform_hosts
