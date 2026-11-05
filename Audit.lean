@@ -2785,6 +2785,7 @@ import PaperP1
 #print axioms PaperP1.PolynomialSmoothDensity.uniform_lower
 #print axioms PaperP1.PolynomialSmoothDyadicDensity.uniform_lower
 #print axioms PaperP1.PolynomialTestTruncation.test_bound
+#print axioms PaperP1.PositiveFractionCostNormalization.with_errors
 #print axioms PaperP1.PowerSeriesTail.weight_nonneg
 #print axioms PaperP1.PowerSeriesTail.tailTerm_nonneg
 #print axioms PaperP1.PowerSeriesTail.tailTerm_le_weight
@@ -9096,10 +9097,14 @@ import PaperP1
 #print axioms PaperP1.PositionedMassPropagation.all_positions
 #print axioms PaperP1.PositionedSeedBounds.defects
 #print axioms PaperP1.PositionedSeedBounds.contacts
+#print axioms PaperP1.PositiveAnchorCostScale.uniform_bracket_lower
 #print axioms PaperP1.PositiveBoundaryMass.uniform_bound
 #print axioms PaperP1.PositiveBoundaryMass.companion_T17_3
 #print axioms PaperP1.PositiveBoundaryMassUnderInputs.uniform_bound
 #print axioms PaperP1.PositiveBoundaryMassUnderInputs.companion_T17_3
+#print axioms PaperP1.PositiveDeterministicAnchorObstruction.uniform_lower
+#print axioms PaperP1.PositiveDeterministicAnchorObstruction.printed_lower
+#print axioms PaperP1.PositiveDeterministicAnchorObstruction.uniform_power_obstruction
 #print axioms PaperP1.PositiveLineSplitCount.uniform_count
 #print axioms PaperP1.PositiveQuarticObstruction.uniform_lower
 #print axioms PaperP1.PositiveQuarticObstructionUnderInputs.uniform_lower

@@ -3921,3 +3921,6 @@ public import PaperP1.Analysis.PolynomialSmoothDyadicDensity
 public import PaperP1.Arithmetic.OrdinarySmoothDyadicDensity
 public import PaperP1.Arithmetic.SlidingWindowDensity
 public import PaperP1.Asymptotics.PositiveTwoCandidateDensity
+public import PaperP1.Analysis.PositiveFractionCostNormalization
+public import PaperP1.Asymptotics.PositiveAnchorCostScale
+public import PaperP1.Asymptotics.PositiveDeterministicAnchorObstruction

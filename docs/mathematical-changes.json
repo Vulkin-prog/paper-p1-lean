@@ -23489,6 +23489,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "04a69c2ca2eb60da6aa970a983780db5826d75d2"
+    },
+    {
+      "id": "P1-MATH-0472",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Even the qualitative all-anchor no-polynomial-decay consequence used the unproved almost-all smooth short-interval census. A weaker positive-fraction source census had now been proved internally but had not been transported to actual forcing costs.",
+      "finding": "The literal clean-source fraction, exact finite anchored Palm ledger and internal collision/error absorption prove a positive-constant nominal cost lower bound uniformly over every arithmetic anchor. A fixed power comparison proves K*N^(-alpha)<=actual offsite cost for every alpha>0 and real K without a short-interval input.",
+      "proposed_revision": "Separate the deterministic qualitative all-anchor obstruction from the sharper1-o(1) coefficient. Give its independent internal positive-fraction proof, retain the exact forcing class and parameters, and leave the stronger almost-all census and randomized extension explicit until separately discharged.",
+      "impact": "Discharges the deterministic qualitative all-anchor no-polynomial-decay consequence and a positive-constant cost lower bound internally. Full T19.17, including its sharp coefficient and randomized statement, stays conditional; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.PositiveFractionCostNormalization.with_errors",
+        "PaperP1.PositiveAnchorCostScale.uniform_bracket_lower",
+        "PaperP1.PositiveDeterministicAnchorObstruction.uniform_lower",
+        "PaperP1.PositiveDeterministicAnchorObstruction.printed_lower",
+        "PaperP1.PositiveDeterministicAnchorObstruction.uniform_power_obstruction"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16419 jobs); direct axiom audit passed for 15375 declarations using only propext, Classical.choice and Quot.sound; all 14812 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.34 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
