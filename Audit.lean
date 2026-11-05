@@ -7884,8 +7884,11 @@ import PaperP1
 #print axioms PaperP1.FourThirdsThirdActivityUnderInputs.uniform_joint_mass
 #print axioms PaperP1.FourThirdsThirdActivityUnderInputs.uniform_absolute_activity
 #print axioms PaperP1.FourThirdsThirdActivityUnderInputs.uniform_cumulant
+#print axioms PaperP1.FourthConnectedCumulant.uniform_bound
 #print axioms PaperP1.FourthConnectedCumulantUnderInputs.uniform_bound
+#print axioms PaperP1.FourthCumulantIdentities.article_16_1
 #print axioms PaperP1.FourthCumulantIdentitiesUnderInputs.article_16_1
+#print axioms PaperP1.FourthRepeatedRunCost.uniform_bound
 #print axioms PaperP1.FourthRepeatedRunCostUnderBCN.uniform_bound
 #print axioms PaperP1.FourthRepeatedRunCostUnderInputs.uniform_bound
 #print axioms PaperP1.FullFixedActivity.uniform_range
@@ -8446,6 +8449,7 @@ import PaperP1
 #print axioms PaperP1.NoSingletonJointMassUnderInputs.uniform_weighted
 #print axioms PaperP1.NominalMarginalBias.uniform_bound
 #print axioms PaperP1.NominalQuadraticFactorialMomentsUnderInputs.uniform_fixed
+#print axioms PaperP1.NonDirectApartCost.uniform_bound
 #print axioms PaperP1.NonDirectApartCostUnderInputs.uniform_bound
 #print axioms PaperP1.NonalignedActivityUnderBCN.uniform_bound
 #print axioms PaperP1.NonalignedDyadicRootHostCount.uniform_hosts
@@ -8599,6 +8603,8 @@ import PaperP1
 #print axioms PaperP1.OriginalWindowFamilyCounts.uniform_hosts
 #print axioms PaperP1.OriginalWindowFamilyMass.uniform_marginals
 #print axioms PaperP1.OriginalWindowFamilyMass.article_10_2
+#print axioms PaperP1.OverlappingPairProductCost.uniform_repeated_square
+#print axioms PaperP1.OverlappingPairProductCost.uniform_star_square
 #print axioms PaperP1.OverlappingPairProductCostUnderBCN.uniform_repeated_square
 #print axioms PaperP1.OverlappingPairProductCostUnderBCN.uniform_star_square
 #print axioms PaperP1.OverlappingPairProductCostUnderInputs.uniform_repeated_square
@@ -8728,6 +8734,7 @@ import PaperP1
 #print axioms PaperP1.PositiveBoundaryMassUnderInputs.uniform_bound
 #print axioms PaperP1.PositiveBoundaryMassUnderInputs.companion_T17_3
 #print axioms PaperP1.PositiveLineSplitCount.uniform_count
+#print axioms PaperP1.PositiveQuarticObstruction.uniform_lower
 #print axioms PaperP1.PositiveQuarticObstructionUnderInputs.uniform_lower
 #print axioms PaperP1.PositiveSecondCumulant.uniform_lower
 #print axioms PaperP1.PositiveSecondCumulant.uniform_positive
@@ -8917,6 +8924,7 @@ import PaperP1
 #print axioms PaperP1.QuadraticKernelExponents.exponent_le_affine_with_margin
 #print axioms PaperP1.QuadraticKernelExponents.unrestricted_comparison_counterexample
 #print axioms PaperP1.QuadraticLatticeSideSum.uniform_grid_sum
+#print axioms PaperP1.QuadraticLawLowerBound.article_16_2_lower
 #print axioms PaperP1.QuadraticLawLowerBoundUnderInputs.article_16_2_lower
 #print axioms PaperP1.QuadraticOrderBranching.badStarts_card_critical
 #print axioms PaperP1.QuadraticOrderBranching.quadratic_order_branching

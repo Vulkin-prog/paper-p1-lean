@@ -21968,6 +21968,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "d4209906426c9ded636b8f8e14ceec31470357a7"
+    },
+    {
+      "id": "P1-MATH-0436",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:lower:quartic",
+        "number": "16.1",
+        "page": 50,
+        "source": "main_sections/quartic_lower.tex",
+        "line": 28,
+        "statement_sha256": "2bd4adbc6f85cc75b2c8c0910ab4f30c43f939e40c365eee2d5fb2aae71a4fda"
+      },
+      "original_assumption": "The three fourth-cumulant identities retained component, row, pair-product and finite geometric inputs; the optimal quadratic lower inequality used the same bundle and conditional fixed moments.",
+      "finding": "Internal coarse third activity, actual pair and row estimates, the finite partition and sharp incompatible activity prove all fourth-cumulant identities. Internal bounded fixed moments then close the exact fourth Charlier lower test without an optimal third-activity premise.",
+      "proposed_revision": "Use coarse exponent1 third activity in the exact fourth decomposition. State the improved signed error5/3 and separate the unconditional quadratic lower4/3 inequality from the unresolved matching upper bound and from Hermite approximation.",
+      "impact": "Main16.1 becomes unconditional. The complete quadratic lower inequality of16.2/1.1 is also unconditional, while their full optimal-power statements retain the separate upper-bound obligation. Coverage becomes123 proved,41 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.FourthConnectedCumulant.uniform_bound",
+        "PaperP1.FourthCumulantIdentities.article_16_1",
+        "PaperP1.FourthRepeatedRunCost.uniform_bound",
+        "PaperP1.NonDirectApartCost.uniform_bound",
+        "PaperP1.OverlappingPairProductCost.uniform_repeated_square",
+        "PaperP1.OverlappingPairProductCost.uniform_star_square",
+        "PaperP1.PositiveQuarticObstruction.uniform_lower",
+        "PaperP1.QuadraticLawLowerBound.article_16_2_lower"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16035 jobs); direct axiom audit passed for 14907 declarations using only propext, Classical.choice and Quot.sound; all 14266 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.13 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -3725,3 +3725,10 @@ public import PaperP1.Asymptotics.FixedHeightCumulantProfile
 public import PaperP1.Asymptotics.FixedHeightHierarchy
 public import PaperP1.Asymptotics.FixedHeightQuadraticLaw
 public import PaperP1.Asymptotics.TwoChannelReference
+public import PaperP1.Asymptotics.FourthConnectedCumulant
+public import PaperP1.Asymptotics.FourthCumulantIdentities
+public import PaperP1.Asymptotics.FourthRepeatedRunCost
+public import PaperP1.Asymptotics.NonDirectApartCost
+public import PaperP1.Asymptotics.OverlappingPairProductCost
+public import PaperP1.Asymptotics.PositiveQuarticObstruction
+public import PaperP1.Asymptotics.QuadraticLawLowerBound

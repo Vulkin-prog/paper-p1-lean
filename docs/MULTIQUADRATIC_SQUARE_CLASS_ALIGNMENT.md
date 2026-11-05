@@ -19245,3 +19245,20 @@ All former external-input uses in these three conclusions are now supplied by in
 P1-MATH-0435 adds six modules, twenty-four theorems and one definition. Main1.4,18.1 and18.3 move from conditional to proved. Coverage becomes122 proved,42 conditional and3 in_progress out of167, with164 completed. The project records433 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16021 jobs); direct axiom audit passed for 14899 declarations using only propext, Classical.choice and Quot.sound; all 14258 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.18 GiB.
+
+
+## Unconditional fourth cumulant identities and quadratic law lower bound
+
+Main Lemma16.1 now has an unconditional canonical proof of all three printed fourth-cumulant identities. FourthCumulantIdentities.article_16_1 proves nonnegativity of the positive compatible connected sum, the stronger exponent5/3 error between the actual fourth factorial cumulant and24 times the signed connected sum, and both printed exponent3/2 comparisons with the positive sum, retaining the exact actual second factorial cumulant. The statement and complete proof in main_sections/quartic_lower.tex lines28-117 were rechecked.
+
+FourthRepeatedRunCost bounds the exact repeated-index remainder at exponent2 using the internally proved coarse full third activity at exponent1, actual pair activity, actual marginal cap and bounded mean. OverlappingPairProductCost bounds repeated edges and shared-vertex products at exponent5/3 using the internally proved actual row estimate. NonDirectApartCost treats all disjoint non-direct pair products at the same exponent by the unconditional finite good/weak/exceptional partition, actual pair activity and internal good-pair product count. The exact finite fourth-component decomposition then yields the signed connected identity. The already unconditional sharp incompatible fixed activity supplies the positive comparison. No optimal third-activity bound is required.
+
+PositiveQuarticObstruction proves that the actual fourth Charlier coefficientE=kappa4+3*alpha^2 is at least2*alpha^2 and at leastd*L^2*N^(-4/3), withd>0 depending only on the critical band. QuadraticLawLowerBound.article_16_2_lower then proves the complete source lower inequality c*N^(-4/3-epsilon) for the original-law distance to its exact-mean/exact-cumulant quadratic reference. It uses internally bounded actual fixed moments and the exact fourth Charlier test. The truncation moment order is chosen afterepsilon and remains fixed beforeN.
+
+Only the lower-bound part of main16.2 and main1.1 is discharged here. Their complete optimal-power conclusions retain the separate upper4/3 obligation, so neither full numbered result is promoted by this checkpoint. The obstruction concerns the quadratic reference; no corresponding lower bound for the exact Hermite reference is asserted. The statement and complete lower-bound proof at quartic_lower.tex lines121-194 were also rechecked.
+
+Earlier conditional declarations and literature history are preserved. All former algebraic, component, row, pair-product and geometric uses in16.1 are supplied internally, without asserting any general external property. Original manuscript bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0436 adds seven modules and eight theorems. Main16.1 moves from conditional to proved. Coverage becomes123 proved,41 conditional and3 in_progress out of167, with164 completed. The project records434 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16035 jobs); direct axiom audit passed for 14907 declarations using only propext, Classical.choice and Quot.sound; all 14266 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.13 GiB.
