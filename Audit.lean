@@ -10344,6 +10344,8 @@ import PaperP1
 #print axioms PaperP1.GeometricHyperbolicConicCount.point_natAbs_bounds
 #print axioms PaperP1.GeometricHyperbolicConicCount.count
 #print axioms PaperP1.GeometricHyperbolicConicCount.natural_height_count
+#print axioms PaperP1.GeometricParabolicConicCount.count
+#print axioms PaperP1.GeometricParabolicConicCount.natural_height_count
 #print axioms PaperP1.GeometricProjectiveFibres.fibre_evaluation
 #print axioms PaperP1.GeometricProjectiveFibres.fibre_homogeneous
 #print axioms PaperP1.GeometricProjectiveFibres.fibre_chart_coefficient
@@ -10641,9 +10643,14 @@ import PaperP1
 #print axioms PaperP1.UnrestrictedEllipticConicCount.natural_count
 #print axioms PaperP1.UnrestrictedEllipticConicCount.finite_population_count
 #print axioms PaperP1.UnrestrictedEllipticConicCount.polynomial_height_count
+#print axioms PaperP1.UnrestrictedGeometricConicCount.natural_count
+#print axioms PaperP1.UnrestrictedGeometricConicCount.finite_population_count
+#print axioms PaperP1.UnrestrictedGeometricConicCount.polynomial_height_count
 #print axioms PaperP1.UnrestrictedHyperbolicConicCount.natural_count
 #print axioms PaperP1.UnrestrictedHyperbolicConicCount.finite_population_count
 #print axioms PaperP1.UnrestrictedHyperbolicConicCount.polynomial_height_count
+#print axioms PaperP1.UnrestrictedParabolicConicCount.natural_count
+#print axioms PaperP1.UnrestrictedParabolicConicCount.finite_population_count
 #print axioms PaperP1.WideQuadraticKernelRanges.product_bounds
 #print axioms PaperP1.WideQuadraticKernelRanges.square_part_range
 #print axioms PaperP1.WideQuadraticKernelRanges.modulus_height

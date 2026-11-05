@@ -20498,6 +20498,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "e16937cf29b1e3df28e1d5f75477ccb23eb5ffc9"
+    },
+    {
+      "id": "P1-MATH-0396",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The discriminant-zero parabolic branch, its geometric non-degeneracy and the final coefficient-uniform combination of all conics remained unproved.",
+      "finding": "Every actual geometric integer conic of exact degree two now satisfies a coefficient-unrestricted N^(1/2+epsilon) full signed grid bound, including arbitrary finite boxed populations and N^(K/2+epsilon) in every box B<=N^K. All discriminant cases and geometric non-degeneracy are proved internally.",
+      "proposed_revision": "Use the complete geometric conic epsilon estimate as an internal low-degree branch. Descend arbitrary field-coefficient equations separately, and keep the stronger logarithmic, degree-uniform and all-dimensional BCN theorem explicitly open.",
+      "impact": "Closes the complete geometric integer conic branch without external arithmetic or coefficient-height inputs. It does not prove the original growing-degree BCN theorem; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.GeometricParabolicConicCount.count",
+        "PaperP1.GeometricParabolicConicCount.natural_height_count",
+        "PaperP1.UnrestrictedGeometricConicCount.natural_count",
+        "PaperP1.UnrestrictedGeometricConicCount.finite_population_count",
+        "PaperP1.UnrestrictedGeometricConicCount.polynomial_height_count",
+        "PaperP1.UnrestrictedParabolicConicCount.natural_count",
+        "PaperP1.UnrestrictedParabolicConicCount.finite_population_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15713 jobs); direct axiom audit passed for 14543 declarations using only propext, Classical.choice and Quot.sound; all 13875 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.52 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

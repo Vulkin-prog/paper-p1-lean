@@ -3568,3 +3568,6 @@ public import PaperP1.Diophantine.NegativeDiscriminantConicCount
 public import PaperP1.Diophantine.UnrestrictedEllipticConicCount
 public import PaperP1.Arithmetic.SquareCongruenceRangeCount
 public import PaperP1.Diophantine.ParabolicConicFiniteCount
+public import PaperP1.Diophantine.GeometricParabolicConicCount
+public import PaperP1.Diophantine.UnrestrictedGeometricConicCount
+public import PaperP1.Diophantine.UnrestrictedParabolicConicCount
