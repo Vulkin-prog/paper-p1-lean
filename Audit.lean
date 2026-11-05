@@ -1305,6 +1305,9 @@ import PaperP1
 #print axioms PaperP1.HomogeneousSplitRadicalVeroneseTowerData.baseRadicands_map
 #print axioms PaperP1.HomogeneousSplitRadicalVeroneseTowerData.relative_finrank
 #print axioms PaperP1.HomogeneousSplitRadicalVeroneseTowerData.relative_map_injective
+#print axioms PaperP1.HomogenizationIrreducibilityReflection.homogenize_irreducible_iff
+#print axioms PaperP1.HomogenizationIrreducibilityReflection.bihomogenize_irreducible_iff
+#print axioms PaperP1.HomogenizationIrreducibilityReflection.geometric_iff_affine
 #print axioms PaperP1.IndependentQuadraticTower.tail_independent
 #print axioms PaperP1.IndependentQuadraticTower.sublist_square_step
 #print axioms PaperP1.IndependentQuadraticTower.field_and_square_descent
@@ -1825,6 +1828,9 @@ import PaperP1
 #print axioms PaperP1.RungeTruncation.map_integralRungeTruncation
 #print axioms PaperP1.RungeTruncation.eval_rungeTruncation_eq_integral_div
 #print axioms PaperP1.RungeTruncation.one_div_two_pow_le_abs_integer_sub_rungeTruncation
+#print axioms PaperP1.ScalarIrreducibilityReflection.unit_reflection
+#print axioms PaperP1.ScalarIrreducibilityReflection.irreducible_of_extension
+#print axioms PaperP1.ScalarIrreducibilityReflection.geometric_rational_irreducible
 #print axioms PaperP1.ScaledSplitWordSquares.linear_monic
 #print axioms PaperP1.ScaledSplitWordSquares.linear_degree
 #print axioms PaperP1.ScaledSplitWordSquares.linear_separable

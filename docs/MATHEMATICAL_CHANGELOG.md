@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**336 mathematical improvements and two statement-scope corrections are confirmed.**
+**337 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23844,3 +23844,14 @@ GeometricPlanePointInput.Input c kappa is an ordinary, still unproved estimate r
 This is a reduction to a strict geometric nonlinear subcase, not a proof of that subcase. The new Input remains an explicit ordinary argument, and main13.4's original all-dimensional integral-curve statement remains open. No numbered result is promoted from conditional to proved. The two modules add eleven theorems and two definitions. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records336 improvements and two statement-scope corrections. No axiom, dependency, compiler change or original manuscript edit is introduced; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15569 jobs); direct axiom audit passed for 14200 declarations using only propext, Classical.choice and Quot.sound; all 13474 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.37 GiB.
+
+
+## Exact projective-affine irreducibility and scalar reflection
+
+HomogenizationIrreducibilityReflection.homogenize_irreducible_iff proves both directions of full-degree homogenization irreducibility over a commutative domain. The reverse direction uses the actual degree-additive product identity and maps units back through the fixed affine chart. bihomogenize_irreducible_iff then proves the corresponding equivalence for the exact double homogenization, using its checked reordered degree. For every nonzero integer polynomial G, geometric_iff_affine identifies the existing Geometric G predicate exactly with irreducibility of the actual complex affine polynomial.
+
+ScalarIrreducibilityReflection.unit_reflection proves polynomial-unit reflection under an injective coefficient map that reflects units. Applying it twice proves irreducible_of_extension for actual bivariate equations over every field extension. Consequently geometric_rational_irreducible proves that Geometric G implies irreducibility of the actual rationalized G, with no separate rational-irreducibility premise. The actual complex extension is identified by the previously checked rational_extension theorem.
+
+The two modules add six unconditional theorems and no definitions. They prepare control of projective fibres for the still open geometric Heath-Brown estimate, and make the affine meaning of the exact projective predicate explicit. No Heath-Brown count is claimed or assumed by these algebraic equivalences. CompanionT1.4,T1.5,T1.13 still retain the geometric Heath-Brown ordinary input; the non-geometric input remains internally proved. Main13.4 and the other recorded geometric inputs remain open. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records337 improvements and two statement-scope corrections. No new dependency, axiom, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15573 jobs); direct axiom audit passed for 14206 declarations using only propext, Classical.choice and Quot.sound; all 13480 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.35 GiB.

@@ -3502,3 +3502,5 @@ public import PaperP1.Algebra.BivariateCurveDegreeTransport
 public import PaperP1.Arithmetic.NonGeometricPlanePointBound
 public import PaperP1.Arithmetic.GeometricPlanePointInput
 public import PaperP1.Arithmetic.LinearPlaneGridBound
+public import PaperP1.Algebra.HomogenizationIrreducibilityReflection
+public import PaperP1.Algebra.ScalarIrreducibilityReflection
