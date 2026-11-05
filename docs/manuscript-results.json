@@ -16472,7 +16472,8 @@
           "validation_commit": "541d7b0e209d5473d5610463f873add24616c02d"
         }
       ],
-      "canonical_statement": "PaperP1.CompanionKernelCountsUnderHeathBrown.companion_T1_4"
+      "canonical_statement": "PaperP1.CompanionKernelCountsUnderHeathBrown.companion_T1_4",
+      "validation_commit": "c7d2ad49eab88b5870ab4fb507e459863936714e"
     },
     {
       "label": "p1:arith:twokernel",
