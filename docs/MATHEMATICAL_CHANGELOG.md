@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**504 mathematical improvements and two statement-scope corrections are confirmed.**
+**505 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26458,3 +26458,18 @@ The primary BCN author version arXiv2302.04209v2 Section3 Lemma6 and the local i
 P1-MATH-0506 adds three modules, nine theorems and two definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records504 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16623 jobs); direct axiom audit passed for 15693 declarations using only propext, Classical.choice and Quot.sound; all 15193 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.59 GiB.
+
+
+## Exact normalized graph derivative numerators and external recurrence sign correction
+
+RationalTangentNumerator constructs the exact polynomial quotient recurrence for the normalized graph operator L_x = partial_x - (P_x/P_y) partial_y. Index n corresponds to derivative order n+1 and denominator P_y^(2n+1). Its recurrence is N_next = P_y L_P(N) - e N L_P(P_y), where L_P = P_y partial_x - P_x partial_y and e=2n+1. The expanded mixed term has a minus sign. The construction works over any commutative ring, and its actual polynomial numerator has total degree at most deg(Q)+2 deg(P)(n+1). No nonzero numerator is presumed.
+
+GraphTangentEvaluation defines an actual normalized trajectory with first-coordinate derivative one, second-coordinate derivative -P_x/P_y and explicit nonvanishing of P_y at every parameter. It proves the actual evaluation chain rule and constancy of the curve equation. IteratedGraphDerivative verifies the quotient differentiation algebra, the derivative of every numerator quotient, the complete open-chart iterated derivative identity, and the positive-order statement: for every j>=1 there is an actual polynomial N of degree at most deg(Q)+2 deg(P)j such that the j-th real derivative of Q along the chart is N/P_y^(2j-1). These are ordinary real derivatives of the actual functions, not supplied derivative identities. No existence of such a normalized chart is asserted by this checkpoint.
+
+The primary author version of Binyamini--Cluckers--Novikov, arXiv:2302.04209v2, Section 4 Proposition 8, equation (21), was checked both in the official PDF and official HTML. Its displayed expanded recurrence has a plus sign in the P_y P_x partial_y(N) term, whereas the stated L_x definition and quotient rule require a minus sign. A kernel-checked polynomial counterexample uses P=x+y+xy, Q=y and the curve point (0,0), where P_y=1: the corrected second numerator evaluates to 2, while the displayed plus-sign expression evaluates to 0. This is recorded in docs/LITERATURE_ERRATA.md as a separate external-reference erratum. It is not a third false P1 statement or a claim that BCN's theorem is false. The corrected recurrence retains the stated degree allowance.
+
+This is the first normalized coordinate orientation. Swapped coordinates, existence of actual normalized charts, finite derivative-control exceptions, global controlled piece counts, bounded parametrizations, the final quadratic-degree plane estimate and higher-dimensional projection remain separate. Full main13.4/13.5 remain unresolved. The current generic plane theorem is still cubic with the full a<1/3 growing-degree range.
+
+P1-MATH-0507 adds three modules, twelve theorems and four definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 505 improvements and two P1 statement-scope corrections, with the external BCN sign erratum tracked separately. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16629 jobs); direct axiom audit passed for 15705 declarations using only propext, Classical.choice and Quot.sound; all 15209 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.57 GiB.

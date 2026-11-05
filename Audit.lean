@@ -1892,6 +1892,10 @@ import PaperP1
 #print axioms PaperP1.RationalMultivariatePrime.map_nonunit
 #print axioms PaperP1.RationalMultivariatePrime.prime_map
 #print axioms PaperP1.RationalSquareGraphNonconstant.degree_pos
+#print axioms PaperP1.RationalTangentNumerator.step_expanded
+#print axioms PaperP1.RationalTangentNumerator.step_degree
+#print axioms PaperP1.RationalTangentNumerator.numerator_degree
+#print axioms PaperP1.RationalTangentNumerator.mixed_term_sign_counterexample
 #print axioms PaperP1.RationalizedCriticalPointBound.outer_degree
 #print axioms PaperP1.RationalizedCriticalPointBound.resultant_identity
 #print axioms PaperP1.RationalizedCriticalPointBound.resultant_degree_bound
@@ -2790,6 +2794,10 @@ import PaperP1
 #print axioms PaperP1.FiniteRolleZeros.card_le_of_iterated_derivative_nonzero
 #print axioms PaperP1.FiniteSquareTail.sum_bound
 #print axioms PaperP1.FiniteSquareTail.sum_bound_of_div_tail
+#print axioms PaperP1.GraphTangentEvaluation.directional_normalized
+#print axioms PaperP1.GraphTangentEvaluation.hasDerivAt_evaluation
+#print axioms PaperP1.GraphTangentEvaluation.deriv_evaluation
+#print axioms PaperP1.GraphTangentEvaluation.equation_constant
 #print axioms PaperP1.HardSaddleExplicitScale.tendsto_logCore_atTop
 #print axioms PaperP1.HardSaddleExplicitScale.finite_normalized_gap
 #print axioms PaperP1.HardSaddleExplicitScale.tendsto_hard_saddle_gap
@@ -2825,6 +2833,10 @@ import PaperP1
 #print axioms PaperP1.InverseSqrtTail.step
 #print axioms PaperP1.InverseSqrtTail.interval_bound
 #print axioms PaperP1.InverseSqrtTail.tail_bound
+#print axioms PaperP1.IteratedGraphDerivative.quotient_step
+#print axioms PaperP1.IteratedGraphDerivative.numerator_quotient_hasDerivAt
+#print axioms PaperP1.IteratedGraphDerivative.iterated_evaluation
+#print axioms PaperP1.IteratedGraphDerivative.positive_order
 #print axioms PaperP1.LeadingSaddleLogBounds.reciprocal_log_bounds
 #print axioms PaperP1.LeadingSaddleLogBounds.cost_log_bounds
 #print axioms PaperP1.LeadingSaddleLogBounds.limit_of_uniform_bounds

@@ -4020,3 +4020,6 @@ public import PaperP1.Analysis.PolynomialVelocitySmooth
 public import PaperP1.Algebra.PlaneSingularPoints
 public import PaperP1.Algebra.PolynomialGradientDegree
 public import PaperP1.Analysis.CurveChebyshevExceptions
+public import PaperP1.Algebra.RationalTangentNumerator
+public import PaperP1.Analysis.GraphTangentEvaluation
+public import PaperP1.Analysis.IteratedGraphDerivative

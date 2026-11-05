@@ -24820,6 +24820,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "6935c6fdc9f284fcc08641d178328cf4e932a518"
+    },
+    {
+      "id": "P1-MATH-0507",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The sharp-degree parametrization route still lacked actual normalized graph derivative identities and relied on the external printed polynomial recurrence.",
+      "finding": "An exact polynomial recurrence proves every positive-order real graph derivative and its degree allowance. A checked example exposes a mixed-term sign typo in the external BCN equation (21).",
+      "proposed_revision": "Use the internally verified minus-sign recurrence, state denominator nonvanishing and positive derivative order explicitly, and keep the external-reference sign erratum separate from corrections to P1 statements.",
+      "impact": "Closes the exact rational numerator ingredient for the first normalized chart orientation. Controlled global parametrizations and the full BCN bound remain open.",
+      "evidence": [
+        "PaperP1.RationalTangentNumerator.step_expanded",
+        "PaperP1.RationalTangentNumerator.step_degree",
+        "PaperP1.RationalTangentNumerator.numerator_degree",
+        "PaperP1.RationalTangentNumerator.mixed_term_sign_counterexample",
+        "PaperP1.GraphTangentEvaluation.directional_normalized",
+        "PaperP1.GraphTangentEvaluation.hasDerivAt_evaluation",
+        "PaperP1.GraphTangentEvaluation.deriv_evaluation",
+        "PaperP1.GraphTangentEvaluation.equation_constant",
+        "PaperP1.IteratedGraphDerivative.quotient_step",
+        "PaperP1.IteratedGraphDerivative.numerator_quotient_hasDerivAt",
+        "PaperP1.IteratedGraphDerivative.iterated_evaluation",
+        "PaperP1.IteratedGraphDerivative.positive_order",
+        "PaperP1.RationalTangentNumerator.step",
+        "PaperP1.RationalTangentNumerator.numerator",
+        "PaperP1.GraphTangentEvaluation.velocity",
+        "PaperP1.GraphTangentEvaluation.Trajectory"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16629 jobs); direct axiom audit passed for 15705 declarations using only propext, Classical.choice and Quot.sound; all 15209 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.57 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
