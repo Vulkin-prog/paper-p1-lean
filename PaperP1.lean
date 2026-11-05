@@ -3547,3 +3547,5 @@ public import PaperP1.Arithmetic.CoarseGeometricPlaneCount
 public import PaperP1.Arithmetic.CoarseFieldPlaneCount
 public import PaperP1.Algebra.IntegerPlaneShear
 public import PaperP1.Algebra.BoundedPlaneShear
+public import PaperP1.Arithmetic.FixedDegreeFieldPlaneCount
+public import PaperP1.Arithmetic.FixedDegreePlaneCount

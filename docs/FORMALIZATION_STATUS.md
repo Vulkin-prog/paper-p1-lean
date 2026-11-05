@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records374 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records375 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14420 audited theorem/lemma declarations**. This
+- The project currently has **14427 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25115,3 +25115,18 @@ All finite-direction selection, coefficient identities and degree preservation a
 P1-MATH-0376 adds eight theorems and two definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records374 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15665 jobs); direct axiom audit passed for 14420 declarations using only propext, Classical.choice and Quot.sound; all 13725 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.81 GiB.
+
+
+## Unconditional fixed-degree plane exponent two over degree
+
+FixedDegreeFieldPlaneCount.field_count proves the unconditional actual signed integer-grid bound K(D,epsilon)*H^(2/D+epsilon) for every irreducible plane equation of exact fixed total degree D>=2 over every characteristic-zero field. K is chosen before the field, field instances, equation and H>2. No coefficient-height assumption, absolute-irreducibility premise, complex embedding or unproved point-counting input remains.
+
+FixedDegreePlaneCount.fixed_outer_degree_count applies the internally proved geometric biform estimate when the outer degree equals D, using the actual primitive projective lifts of every integer grid point. height_controlled_count constructs the bounded integer shear supplied by P1-MATH-0376. Its parameter is at most D, all original points inject into the transformed grid of radius(D+1)*H, exact total degree and geometric irreducibility are preserved, and the finite coefficient-height budget is absorbed uniformly. The resulting constant contains the explicit fixed coordinate scaling factor. unconditional_count removes the coefficient-height restriction using the internally constructed bounded-height equation and the separately absorbed D^2 small-population case.
+
+The rational and arbitrary-field extensions retain all actual signed integer points. Denominator clearing preserves exact degree and grids. Non-geometric rational equations have at most D*(D-1) such points, and a larger population over any characteristic-zero field forces a rational equation of the same degree by the proved many-point descent. bounded_degree_count provides one constant for every degree in a fixed finite interval2<=D<=M, retaining the exact exponent2/D+epsilon.
+
+This improves the earlier unconditional intermediate exponent4/D to2/D. The stronger BCN exponent1/D with quantitative uniform dependence on growing degree, and the full original all-dimensional main13.4, remain open. No original numbered result is promoted.
+
+P1-MATH-0377 adds seven theorems in two modules. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records375 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15669 jobs); direct axiom audit passed for 14427 declarations using only propext, Classical.choice and Quot.sound; all 13732 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.79 GiB.

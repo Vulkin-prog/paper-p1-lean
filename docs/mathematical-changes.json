@@ -19842,6 +19842,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "a1994cae0fb362f90d3261906741d9505f76ccfc"
+    },
+    {
+      "id": "P1-MATH-0377",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The unconditional coefficient-uniform intermediate plane bound had exponent4/D+epsilon, losing a factor two when choosing between the original partial degrees.",
+      "finding": "A bounded integer shear now improves the unconditional exponent to2/D+epsilon, uniformly over all irreducible plane equations and characteristic-zero coefficient fields of each fixed degree, without coefficient-height or unproved arithmetic premises.",
+      "proposed_revision": "Record the stronger intermediate theorem with the exact fixed-degree and finite-degree-range uniformity. Keep the sharper degree-uniform BCN exponent1/D and the original all-dimensional statement as separate outstanding obligations.",
+      "impact": "Closes an improved unconditional coefficient-uniform plane bound by assembling the full-degree direction, integer transports, biform count and bounded-height descent. General BCN and original main13.4 remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.FixedDegreeFieldPlaneCount.rational_geometric_count",
+        "PaperP1.FixedDegreeFieldPlaneCount.rational_count",
+        "PaperP1.FixedDegreeFieldPlaneCount.field_count",
+        "PaperP1.FixedDegreeFieldPlaneCount.bounded_degree_count",
+        "PaperP1.FixedDegreePlaneCount.fixed_outer_degree_count",
+        "PaperP1.FixedDegreePlaneCount.height_controlled_count",
+        "PaperP1.FixedDegreePlaneCount.unconditional_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15669 jobs); direct axiom audit passed for 14427 declarations using only propext, Classical.choice and Quot.sound; all 13732 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.79 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

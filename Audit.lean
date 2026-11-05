@@ -4187,6 +4187,13 @@ import PaperP1
 #print axioms PaperP1.FixedChannelSourceGeometry.source_pairs_card
 #print axioms PaperP1.FixedChannelSourceGeometry.unit_sources_card
 #print axioms PaperP1.FixedChannelSourceGeometry.source_separated
+#print axioms PaperP1.FixedDegreeFieldPlaneCount.rational_geometric_count
+#print axioms PaperP1.FixedDegreeFieldPlaneCount.rational_count
+#print axioms PaperP1.FixedDegreeFieldPlaneCount.field_count
+#print axioms PaperP1.FixedDegreeFieldPlaneCount.bounded_degree_count
+#print axioms PaperP1.FixedDegreePlaneCount.fixed_outer_degree_count
+#print axioms PaperP1.FixedDegreePlaneCount.height_controlled_count
+#print axioms PaperP1.FixedDegreePlaneCount.unconditional_count
 #print axioms PaperP1.FixedSourceCertificate.sourceValues_pos
 #print axioms PaperP1.FixedSourceCertificate.sourceValues_le_square
 #print axioms PaperP1.FixedSourceCertificate.mem_certificateTargets
