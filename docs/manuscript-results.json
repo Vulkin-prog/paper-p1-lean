@@ -39361,7 +39361,8 @@
           ],
           "checkpoint": "P1-MATH-0470"
         }
-      ]
+      ],
+      "validation_commit": "80e7ca7fd16f6f25f3ad1ab6e1883f51a7095686"
     },
     {
       "label": "p1:offset:line-product",
