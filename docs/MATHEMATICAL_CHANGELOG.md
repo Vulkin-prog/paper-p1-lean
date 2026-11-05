@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**378 mathematical improvements and two statement-scope corrections are confirmed.**
+**379 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24390,3 +24390,16 @@ These are algebraic and height-transport theorems preparing the outstanding coni
 P1-MATH-0380 adds ten theorems and nine definitions/structures. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records378 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15675 jobs); direct axiom audit passed for 14444 declarations using only propext, Classical.choice and Quot.sound; all 13759 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.75 GiB.
+
+
+## Actual conic polynomial grids embed into controlled norm equations
+
+ConicPolynomialPresentation reconstructs every actual nested integer polynomial of total degree at most two from its six literal coefficients. The explicit polynomial presentation evaluates to the quadratic form of P1-MATH-0380, and reconstruction proves equality with the original equation. No chosen equivalent equation or unstated coefficient presentation is assumed.
+
+The sum height of the extracted coefficient record is at most six times the original bivariate coefficient height. If the actual outer degree is two, its quadratic outer coefficient c is proved nonzero from the total-degree bound. norm_grid sends every actual signed integer zero in the original square of radius B to the exact norm equation u^2-Delta*v^2=delta. Its coordinate bounds are |u|<=(10*B+6)*(6*height(P))^2 and |v|<=(6*B+2)*(6*height(P)). grid_image_card proves equality of the actual finite population and its transformed image under the explicitly displayed c!=0 and Delta!=0 conditions.
+
+This closes the presentation and actual-population bridge for the nonzero-discriminant conic branch. The earlier bounded shear can supply outer degree two for a nonzero conic. Counts for the different signs of Delta and the zero-discriminant/zero-norm-constant cases remain subsequent obligations; no conic point-counting theorem is asserted here. The sharper BCN estimate and original all-dimensional main13.4 remain open.
+
+P1-MATH-0381 adds six theorems and two definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records379 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15677 jobs); direct axiom audit passed for 14450 declarations using only propext, Classical.choice and Quot.sound; all 13767 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.73 GiB.

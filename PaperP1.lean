@@ -3552,3 +3552,4 @@ public import PaperP1.Arithmetic.FixedDegreePlaneCount
 public import PaperP1.Asymptotics.BoundedDegreePlaneCounts
 public import PaperP1.Asymptotics.SlowGrowingPlaneDegreeCap
 public import PaperP1.Algebra.ConicNormCoordinates
+public import PaperP1.Algebra.ConicPolynomialPresentation

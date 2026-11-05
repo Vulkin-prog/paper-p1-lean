@@ -25400,3 +25400,18 @@ These are algebraic and height-transport theorems preparing the outstanding coni
 P1-MATH-0380 adds ten theorems and nine definitions/structures. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records378 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15675 jobs); direct axiom audit passed for 14444 declarations using only propext, Classical.choice and Quot.sound; all 13759 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.75 GiB.
+
+
+## Actual conic polynomial grids embed into controlled norm equations
+
+Stable ID: p1:internal:conic-polynomial-presentation. All polynomial, coefficient-height and actual-grid identifications are proved. This is a preparation for conic counting, not a completed conic or BCN estimate.
+
+ConicPolynomialPresentation reconstructs every actual nested integer polynomial of total degree at most two from its six literal coefficients. The explicit polynomial presentation evaluates to the quadratic form of P1-MATH-0380, and reconstruction proves equality with the original equation. No chosen equivalent equation or unstated coefficient presentation is assumed.
+
+The sum height of the extracted coefficient record is at most six times the original bivariate coefficient height. If the actual outer degree is two, its quadratic outer coefficient c is proved nonzero from the total-degree bound. norm_grid sends every actual signed integer zero in the original square of radius B to the exact norm equation u^2-Delta*v^2=delta. Its coordinate bounds are |u|<=(10*B+6)*(6*height(P))^2 and |v|<=(6*B+2)*(6*height(P)). grid_image_card proves equality of the actual finite population and its transformed image under the explicitly displayed c!=0 and Delta!=0 conditions.
+
+This closes the presentation and actual-population bridge for the nonzero-discriminant conic branch. The earlier bounded shear can supply outer degree two for a nonzero conic. Counts for the different signs of Delta and the zero-discriminant/zero-norm-constant cases remain subsequent obligations; no conic point-counting theorem is asserted here. The sharper BCN estimate and original all-dimensional main13.4 remain open.
+
+P1-MATH-0381 adds six theorems and two definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records379 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15677 jobs); direct axiom audit passed for 14450 declarations using only propext, Classical.choice and Quot.sound; all 13767 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.73 GiB.

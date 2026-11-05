@@ -761,6 +761,12 @@ import PaperP1
 #print axioms PaperP1.ConicNormCoordinates.constant_bound
 #print axioms PaperP1.ConicNormCoordinates.normConstant_bound
 #print axioms PaperP1.ConicNormCoordinates.transform_bounds
+#print axioms PaperP1.ConicPolynomialPresentation.evaluation
+#print axioms PaperP1.ConicPolynomialPresentation.reconstruction
+#print axioms PaperP1.ConicPolynomialPresentation.height_coefficients
+#print axioms PaperP1.ConicPolynomialPresentation.outer_coefficient_ne_zero
+#print axioms PaperP1.ConicPolynomialPresentation.norm_grid
+#print axioms PaperP1.ConicPolynomialPresentation.grid_image_card
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_le
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_empty
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_rank_le

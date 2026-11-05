@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records378 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records379 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14444 audited theorem/lemma declarations**. This
+- The project currently has **14450 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25169,3 +25169,16 @@ These are algebraic and height-transport theorems preparing the outstanding coni
 P1-MATH-0380 adds ten theorems and nine definitions/structures. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records378 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15675 jobs); direct axiom audit passed for 14444 declarations using only propext, Classical.choice and Quot.sound; all 13759 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.75 GiB.
+
+
+## Actual conic polynomial grids embed into controlled norm equations
+
+ConicPolynomialPresentation reconstructs every actual nested integer polynomial of total degree at most two from its six literal coefficients. The explicit polynomial presentation evaluates to the quadratic form of P1-MATH-0380, and reconstruction proves equality with the original equation. No chosen equivalent equation or unstated coefficient presentation is assumed.
+
+The sum height of the extracted coefficient record is at most six times the original bivariate coefficient height. If the actual outer degree is two, its quadratic outer coefficient c is proved nonzero from the total-degree bound. norm_grid sends every actual signed integer zero in the original square of radius B to the exact norm equation u^2-Delta*v^2=delta. Its coordinate bounds are |u|<=(10*B+6)*(6*height(P))^2 and |v|<=(6*B+2)*(6*height(P)). grid_image_card proves equality of the actual finite population and its transformed image under the explicitly displayed c!=0 and Delta!=0 conditions.
+
+This closes the presentation and actual-population bridge for the nonzero-discriminant conic branch. The earlier bounded shear can supply outer degree two for a nonzero conic. Counts for the different signs of Delta and the zero-discriminant/zero-norm-constant cases remain subsequent obligations; no conic point-counting theorem is asserted here. The sharper BCN estimate and original all-dimensional main13.4 remain open.
+
+P1-MATH-0381 adds six theorems and two definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records379 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15677 jobs); direct axiom audit passed for 14450 declarations using only propext, Classical.choice and Quot.sound; all 13767 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.73 GiB.

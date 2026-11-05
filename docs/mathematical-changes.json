@@ -19984,6 +19984,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "68cf8b1daf7f8cf8d0ceed935b78fbd04b163494"
+    },
+    {
+      "id": "P1-MATH-0381",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The exact conic-to-norm identities were stated for a six-coefficient record rather than a presentation constructed from the actual plane polynomial and its original grid.",
+      "finding": "Every actual integer plane polynomial of total degree at most two is reconstructed from its literal coefficients, and its entire original signed integer grid maps to a controlled norm equation with exact cardinality preservation under the displayed nonzero conditions.",
+      "proposed_revision": "Apply the constructed presentation and actual-grid bridge after the bounded full-degree shear, then prove the remaining norm-counting and degeneracy cases separately.",
+      "impact": "Closes actual-polynomial extraction, original coefficient-height control and finite-population transport for the conic route. Counting and BCN remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.ConicPolynomialPresentation.evaluation",
+        "PaperP1.ConicPolynomialPresentation.reconstruction",
+        "PaperP1.ConicPolynomialPresentation.height_coefficients",
+        "PaperP1.ConicPolynomialPresentation.outer_coefficient_ne_zero",
+        "PaperP1.ConicPolynomialPresentation.norm_grid",
+        "PaperP1.ConicPolynomialPresentation.grid_image_card",
+        "PaperP1.ConicPolynomialPresentation.polynomial",
+        "PaperP1.ConicPolynomialPresentation.coefficients"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15677 jobs); direct axiom audit passed for 14450 declarations using only propext, Classical.choice and Quot.sound; all 13767 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.73 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
