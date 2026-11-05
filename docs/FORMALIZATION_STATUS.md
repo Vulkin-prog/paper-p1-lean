@@ -1,6 +1,6 @@
 # Formalization status
 
-Stage: **optimal quadratic and third-cumulant powers proved; scalar consequences and remaining geometric/census obligations tracked explicitly**, 5 November 2026.
+Stage: **main optimal scalar-law conclusions proved; six geometric/census or literal-correction obligations remain**, 5 November 2026.
 
 Current plane bound (P1-MATH-0484): an absolute coefficient- and field-uniform C*D^5*(Nat.log2N+1)^2*N^(1/D) estimate is internally proved for every characteristic-zero field. Its growing-degree o(B) consequence covers a<1/5, real scaled boxes and arbitrary upper power caps. Full quadratic-degree/all-dimensional BCN and the original a<1/2 corollary remain unresolved.
 Main13.6 is unconditional (P1-MATH-0486): complete literal nonaligned-rank limsup, uniform critical-band estimate and strict half-window gap, with no compatibility requirement or external BCN premise. The actual constructed height and full fibre-degree factor supply the normalized sublinear grid count for every short-support powera<1/2. Generic main13.5 and BCN remain open.
@@ -8,6 +8,9 @@ Main13.8 is unconditional (P1-MATH-0487): compatible and nonaligned triple nulli
 Main1.1,15.14 and16.2 are unconditional (P1-MATH-0489): full optimal4/3 exact quadratic approximation, both reconstruction clauses, positive lower obstruction, actual-to-nominal mean bias and eventual probability status. Scalar weighted/Poisson/Hermite consequences remain separate.
 Main17.1/17.2 are unconditional (P1-MATH-0490): every fixed polynomial weight, proved weighted summability, fixed factorial corrections, exact orders0/1/2 and the literal zero-start expansion at the optimal4/3 power.
 Main1.2/17.3 are unconditional (P1-MATH-0491): exact moving Poisson total-variation scale for both specified means, distinct error powers and complete quantized-bias nominal comparison. The exact Hermite19.1 assembly remains separate.
+Main19.1 is unconditional (P1-MATH-0492): exact4/3 Hermite approximation with actual admissibility and every fixed-height rate/moving equivalent. All main optimal scalar-law conclusions now have internal proofs.
+
+Current remaining numbered obligations: main13.4/13.5, companionT1.7/T19.17 and the literal falseT1.10/T5.1 statements requiring their already recorded scope corrections. Coverage is161 proved,3 conditional and3 in_progress;71 main and90 companion results are proved.
 Neither document is fully formalized.
 
 Main14.1 and14.6 are unconditional (P1-MATH-0488): the three-strong-nonaligned-pair residual has internal actual massN^(-3/2+epsilon), closing the full optimal two-sided41/30 third factorial cumulant and absolute third activity. Every original subground, incompatible sector and repeated-index term is retained.
@@ -58,7 +61,7 @@ CompanionT14.1 is unconditional (P1-MATH-0431), with connected activity strength
 
 CompanionT1.8 is unconditional (P1-MATH-0430): exact dense-component to actual-rank transfer gives subpower nonaligned hosts and both printed kernel sumsN^(1+epsilon), including the full value kernel without block-parity rows.
 
-Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is160 proved,4 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
+Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is161 proved,3 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
 
 The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. The full arbitrary-source statement was subsequently discharged at P1-MATH-0429.
 
@@ -100,7 +103,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is160/167 unconditional and4 conditional (164/167 completed). The project records489 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records490 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -219,7 +222,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15542 audited theorem/lemma declarations**. This
+- The project currently has **15545 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27083,3 +27086,18 @@ Sources rechecked: main1.2, main_sections/introduction.tex lines116-145; main17.
 P1-MATH-0491 adds four modules, seven theorems and nine actual-reference/phase/error definitions. Exactly two numbered results, main1.2 and17.3, are promoted from conditional to proved. Coverage becomes160 proved,4 conditional and3 in_progress out of167, with164 completed:70 main results and90 companion results are proved. The project records489 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16531 jobs); direct axiom audit passed for 15542 declarations using only propext, Classical.choice and Quot.sound; all 15004 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.89 GiB.
+
+
+## Complete exact and fixed-height Hermite approximation of the original count
+
+Complete main Corollary19.1 is now internally proved. The law of the original count is approximated by the actual single/double-jump Hermite law with exact parameters mu=E[Z_N] and alpha=the full second factorial cumulant, at total-variation powerN^(-4/3+epsilon). The corresponding signed l1 bound is also proved. The two actual Poisson intensities are nonnegative before the law is constructed: internal parameter bounds give0<alpha<mu, hence mu-alpha>=0 andalpha/2>=0. No matching lower bound is claimed for this exact-parameter Hermite reference.
+
+ActualHermiteReferenceRate supplies the internal comparison between the exact quadratic and Hermite references on every original subground and every nonnegative reference mean. It uses the internally proved actual second-cumulant bound, retains its repeated-index term and pays its squared4/3 scale through the proved signed exponential remainder. OptimalHermite combines this comparison with the internal exact quadratic approximation and actual parameter admissibility. Both actual probability measures and the signed-to-total-variation conversion remain explicit.
+
+The complete article_19_1 theorem also includes every fixed height h>=3: the explicit nominal-mean Hermite reference has the printed powerh/(h+1), actual probability realization, positive omitted-channel scale and the literal moving leading total-variation equivalent. These clauses reuse the already internal ExplicitHermiteLaw theorems. The two-channel case h=4 is included at power4/5. Polynomial heights and relative tolerances are fixed before their thresholds; no growing-height uniformity is asserted. The source complete statement and proof were rechecked at main_sections/discussion.tex lines22-70.
+
+This closes the final previously conditional optimal scalar-law consequence. The exact numbered remaining obligations are main13.4 (full quadratic-degree/all-dimensional BCN), main13.5 (its generic fulla<1/2 plane consequence), companionT1.7 (complete general systems/geometric counts), and companionT19.17 (the full near-one ordinary census obstruction), together with the literal false companionT1.10 andT5.1 statements requiring their recorded scope corrections. The checked corrected replacements for those two statements remain distinct from the literal source assertions. Neither manuscript is yet fully formalized, and no Palomar registration is claimed.
+
+P1-MATH-0492 adds two modules, three theorems and no definitions. Exactly one numbered result, main19.1, is promoted from conditional to proved. Coverage becomes161 proved,3 conditional and3 in_progress out of167, with164 completed:71 main results and90 companion results are proved. The project records490 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16535 jobs); direct axiom audit passed for 15545 declarations using only propext, Classical.choice and Quot.sound; all 15007 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.87 GiB.

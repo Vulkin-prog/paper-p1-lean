@@ -24226,6 +24226,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "e271638ccf694442d15992551c4be44f7a5cc648"
+    },
+    {
+      "id": "P1-MATH-0492",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:cor:compound",
+        "number": "19.1",
+        "page": 57,
+        "source": "main_sections/discussion.tex",
+        "line": 22,
+        "statement_sha256": "a9ffdb62e06b1e04f3aa844d6d8be7662542059790ac01f64f52f4ad8401f732"
+      },
+      "original_assumption": "The full Hermite corollary still retained the exact-parameter4/3 original-law clause through external optimal-quadratic and pair-geometric bundles, while its fixed-height clauses were internal.",
+      "finding": "The internal actual cumulant, exact quadratic approximation and positive parameter bounds close the exact Hermite clause; one theorem now retains it alongside every fixed-height rate and moving equivalent.",
+      "proposed_revision": "Use the internal exact quadratic theorem and actual pair-cumulant estimate in the signed exponential remainder, while retaining admissibility and the absence of an exact-Hermite lower-bound claim.",
+      "impact": "Closes complete main19.1 for the original law, both exact actual intensities, every fixed-height explicit reference and the literal moving equivalent.",
+      "evidence": [
+        "PaperP1.ActualHermiteReferenceRate.uniform_comparison",
+        "PaperP1.OptimalHermite.article_19_1_exact",
+        "PaperP1.OptimalHermite.article_19_1"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16535 jobs); direct axiom audit passed for 15545 declarations using only propext, Classical.choice and Quot.sound; all 15007 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.87 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -6888,6 +6888,7 @@ import PaperP1
 #print axioms PaperP1.ActualFirstLinearFactorCount.uniform_actual_first_linear_count
 #print axioms PaperP1.ActualGeometricFactorCount.uniform_first_count
 #print axioms PaperP1.ActualGeometricFactorCount.uniform_second_count
+#print axioms PaperP1.ActualHermiteReferenceRate.uniform_comparison
 #print axioms PaperP1.ActualHermiteReferenceRateUnderInputs.uniform_comparison
 #print axioms PaperP1.ActualNominalReferenceComparison.lowerConstant_pos
 #print axioms PaperP1.ActualNominalReferenceComparison.actual_mean_nonneg
@@ -9000,6 +9001,8 @@ import PaperP1
 #print axioms PaperP1.OneTwoChannelPhase.uniform_ratio_lengths
 #print axioms PaperP1.OneTwoChannelPhase.uniform_relative_lengths
 #print axioms PaperP1.OneTwoChannelPhase.uniform_critical_relative
+#print axioms PaperP1.OptimalHermite.article_19_1_exact
+#print axioms PaperP1.OptimalHermite.article_19_1
 #print axioms PaperP1.OptimalHermiteUnderInputs.article_19_1_exact
 #print axioms PaperP1.OptimalNominalQuadratic.lowerConstant_pos
 #print axioms PaperP1.OptimalNominalQuadratic.uniform_comparison

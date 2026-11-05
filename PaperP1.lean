@@ -3980,3 +3980,5 @@ public import PaperP1.Asymptotics.ExactPoissonScale
 public import PaperP1.Asymptotics.FixedPairPhase
 public import PaperP1.Asymptotics.OptimalNominalQuadratic
 public import PaperP1.Asymptotics.PoissonScaleRates
+public import PaperP1.Asymptotics.ActualHermiteReferenceRate
+public import PaperP1.Asymptotics.OptimalHermite

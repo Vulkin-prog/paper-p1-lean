@@ -4,50 +4,32 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: 160 unconditional and 4 conditional numbered results out of 167 (164 completed).**
+**Status: 161 unconditional and 3 conditional numbered results out of 167 (164 completed).**
 
-Main1.1 is completely proved internally: optimal two-sided4/3 approximation with the exact original mean and second factorial cumulant, mean bias and eventual probability status. Both clauses of15.14 and the exact-reference16.2 conclusion are also proved. See [the complete alignment](docs/COMPLETE_OPTIMAL_QUADRATIC_ALIGNMENT.md).
+The complete main optimal scalar-law conclusions are proved internally:
+exact quadratic approximation at power4/3, weighted fixed-polynomial and
+factorial-moment consequences, quantized mean bias, both specified Poisson
+variation scales and exact/fixed-height Hermite approximations. The full
+nonaligned-rank theorem13.6, triple rank/probability13.8 and optimal41/30
+third cumulant/activity14.1/14.6 are also proved. Their rank route uses the
+constructed coefficient height and full fibre-degree factor; it does not
+assume a general BCN point bound. CompanionT19.15/T19.16 have complete
+internal fine reciprocal/forcing saddle proofs.
 
-Main17.1/17.2 are also complete: every fixed polynomial weight has optimal4/3 error with proved summability, every fixed factorial moment has its exact correction, and the original zero-start probability has the printed coefficient. See [the complete alignment](docs/COMPLETE_OPTIMAL_POLYNOMIAL_WEIGHT_ALIGNMENT.md).
+Six literal numbered statements remain unresolved: main13.4 and13.5,
+companionT1.7 andT19.17, and the literal companionT1.10/T5.1 assertions
+requiring their recorded scope corrections. Their corrected replacements
+have checked proofs and remain distinct from the original false statements.
+The generic internal plane bound is C*D^5*(Nat.log2N+1)^2*N^(1/D) over every
+characteristic-zero field, with growing-degree consequencea<1/5; full
+quadratic-degree/all-dimensional BCN and the generic13.5 range remain open.
+Neither document is fully formalized. Palomar registration is a later milestone.
 
-Main1.2/17.3 are complete: the literal moving total-variation equivalent holds for both specified Poisson means with their respective4/3 and1 error powers, and the exact quantized nominal-mean comparison is proved. See [the complete alignment](docs/COMPLETE_EXACT_POISSON_SCALE_ALIGNMENT.md).
-
-Main14.1 and14.6 are completely proved internally: the optimal two-sided41/30 third factorial cumulant and full absolute third activity, with all original-model sectors retained. See [the complete alignment](docs/COMPLETE_OPTIMAL_THIRD_CUMULANT_ALIGNMENT.md).
-
-Companion T19.15 and T19.16 now have complete internal fine saddle proofs: both full/dyadic reciprocal pivot equivalents and the prescribed signed forcing cost, with error o(nu). Their ordinary reciprocal input is proved by an actual smooth-count lower barrier; see [the complete alignment](docs/COMPLETE_INTERNAL_FINE_SADDLE_ALIGNMENT.md).
-
-Current canonical results include the unconditional pair profiles and activity,
-sharp pair-extension deficits at all cardinalities, incompatible-triple and
-third-cumulant cancellation, fixed/all-cardinality primitive mass, and main15.5
-with stronger fixed-size primitive exponentsr/2 and dense exponentsr-1. The full
-arbitrary-source dense two-target estimate main15.2 and companion dense weighted
-sectorT1.8, including its full value kernel, are also unconditional. Both assertions
-of companionT14.1 are now unconditional, with the stronger connected exponent1.
-Full actual absolute activity at every fixed order at least3 also has exponent1.
-Main15.10 now reduces every fixed connected order to the exact third activity
-unconditionally, including the sharp incompatible exponent3/2. The uniform tails
-of15.12 and the transfer implication15.13 are also unconditional; the254
-fixed-order premises printed in15.13 remain explicit. Both full-model first
-quadratic approximationsT17.5 now have the stronger unconditional exponent1,
-with actual or nominal mean; the symbolic triple reconstruction is unconditional.
-The explicit two-channel reference1.4 and full fixed-height hierarchy18.1/18.3,
-including moving variation equivalents and optimal-power lower bounds, are proved.
-Main16.1 and complete main1.1/16.2 are unconditional, including both optimal4/3 bounds
-for the exact original quadratic reference. Main6.4 is fully proved,
-with all fixed moment/cumulant remainders improved from4/5 to1 and a proof
-independent of law reconstruction. The all-cardinality core and literal growing
-connected boundsT16.1/T16.2/T16.3 are also proved with stronger exponent1.
-The exact positive boundary mass and literal coefficient-scale conversion
-T17.3/T17.4 are unconditional. The actual retained active structureT15.2 and
-all modified-count tailsT19.3 are also proved, with one threshold for every
-tail level and moment/exponential order. The critical selected-pair theorem
-T22.5 and complete modified-moment/weighted leakage theoremT22.6 are proved.
-Main20.1 now gives the full positive original-grid unsigned-field comparison
-unconditionally at every fixed polynomial weight. The internal
-coefficient-uniform plane bound is now C*D^5*(Nat.log2N+1)^2*N^(1/D)
-over every characteristic-zero field; its growing-degree consequence covers a<1/5. The
-original quadratic-degree/all-dimensional BCN theorem and optimal-law inputs
-remain open. See the [current statement ledger](docs/MANUSCRIPT_ALIGNMENT.md).
+See the [current statement ledger](docs/MANUSCRIPT_ALIGNMENT.md),
+[current status](docs/FORMALIZATION_STATUS.md),
+[optimal quadratic alignment](docs/COMPLETE_OPTIMAL_QUADRATIC_ALIGNMENT.md),
+[complete Hermite alignment](docs/COMPLETE_OPTIMAL_HERMITE_ALIGNMENT.md),
+and [mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 The notes below preserve successive development stages. Earlier descriptions of
 open inputs are historical; current coverage and canonical dependency status are
@@ -55,7 +37,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **489 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **490 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -1144,3 +1126,5 @@ P1-MATH-0489 proves complete main1.1,15.14 and16.2 internally: optimal4/3 quadra
 P1-MATH-0490 proves complete main17.1/17.2 internally: every fixed polynomial weight at optimal4/3 power, summability, fixed factorial corrections, exact small orders and the literal zero-start probability. Coverage is158 proved and6 conditional out of167.
 
 P1-MATH-0491 proves complete main1.2/17.3 internally: exact moving total-variation equivalent for both specified Poisson means, their distinct error powers, and the full quantized nominal-mean comparison. Coverage is160 proved and4 conditional out of167.
+
+P1-MATH-0492 proves complete main19.1 internally, including the exact-parameter4/3 Hermite bound, actual admissibility and all fixed-height rates/equivalents. Coverage is161 proved and3 conditional out of167; six literal numbered obligations remain, including two statements with checked corrections.
