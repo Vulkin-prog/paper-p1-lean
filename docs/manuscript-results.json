@@ -33394,7 +33394,8 @@
           "scope": "Complete exact companionT16.1 conclusions, including all-cardinality core mass or literal linear/growing range as applicable, strengthened to exponent1. Internally proved actual finite branches and uniform tails; no general property asserted.",
           "checkpoint": "P1-MATH-0438"
         }
-      ]
+      ],
+      "validation_commit": "262bbf4c597505f8b36eb44014f98c1be0a7c4ed"
     },
     {
       "label": "p1:core:positive-core",
@@ -33479,7 +33480,8 @@
           "scope": "Complete exact companionT16.2 conclusions, including all-cardinality core mass or literal linear/growing range as applicable, strengthened to exponent1. Internally proved actual finite branches and uniform tails; no general property asserted.",
           "checkpoint": "P1-MATH-0438"
         }
-      ]
+      ],
+      "validation_commit": "262bbf4c597505f8b36eb44014f98c1be0a7c4ed"
     },
     {
       "label": "p1:core:bounded-nullity",
@@ -33564,7 +33566,8 @@
           "scope": "Complete exact companionT16.3 conclusions, including all-cardinality core mass or literal linear/growing range as applicable, strengthened to exponent1. Internally proved actual finite branches and uniform tails; no general property asserted.",
           "checkpoint": "P1-MATH-0438"
         }
-      ]
+      ],
+      "validation_commit": "262bbf4c597505f8b36eb44014f98c1be0a7c4ed"
     },
     {
       "label": "p1:close:deficit-bounds",
