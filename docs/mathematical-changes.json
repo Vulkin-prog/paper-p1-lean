@@ -20288,6 +20288,50 @@
         "status": "not_integrated"
       },
       "validation_commit": "60345e56f90bcc0aaf2e1da8a76f75517ece92e7"
+    },
+    {
+      "id": "P1-MATH-0390",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The positive-discriminant quadratic field and conductor machinery did not supply an actual imaginary quadratic field or its integral positive norm coordinates.",
+      "finding": "For every positive D, the actual imaginary quadratic number field and its full ring of integers now provide an injective signed coordinate map, positive quadratic norm, integral trace and exact factorization of norm solutions.",
+      "proposed_revision": "Use these internally proved field and trace identities to count norm-one integral elements and ideal fibres. Prove the resulting imaginary norm count before drawing a negative-discriminant conic consequence.",
+      "impact": "Removes the field construction and norm/trace algebra from the negative-discriminant counting obligations. The count itself and numbered coverage remain unchanged.",
+      "evidence": [
+        "PaperP1.ImaginaryQuadraticOrder.negative_not_square",
+        "PaperP1.ImaginaryQuadraticOrder.omega_sq",
+        "PaperP1.ImaginaryQuadraticOrder.omega_integral",
+        "PaperP1.ImaginaryQuadraticOrder.root_sq",
+        "PaperP1.ImaginaryQuadraticOrder.trace_eq",
+        "PaperP1.ImaginaryQuadraticOrder.norm_eq",
+        "PaperP1.ImaginaryQuadraticOrder.alpha_field_eq",
+        "PaperP1.ImaginaryQuadraticOrder.alpha_injective",
+        "PaperP1.ImaginaryQuadraticOrder.norm_alpha",
+        "PaperP1.ImaginaryQuadraticOrder.alpha_mul_beta",
+        "PaperP1.ImaginaryQuadraticOrder.exists_trace_integer",
+        "PaperP1.ImaginaryQuadraticOrder.traceInteger_cast",
+        "PaperP1.ImaginaryQuadraticOrder.QD",
+        "PaperP1.ImaginaryQuadraticOrder.OK",
+        "PaperP1.ImaginaryQuadraticOrder.root",
+        "PaperP1.ImaginaryQuadraticOrder.alpha",
+        "PaperP1.ImaginaryQuadraticOrder.beta",
+        "PaperP1.ImaginaryQuadraticOrder.traceInteger"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15695 jobs); direct axiom audit passed for 14509 declarations using only propext, Classical.choice and Quot.sound; all 13838 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.60 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

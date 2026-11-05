@@ -3561,3 +3561,4 @@ public import PaperP1.Diophantine.GeometricHyperbolicConicCount
 public import PaperP1.Algebra.ConicScalarInvariants
 public import PaperP1.Arithmetic.SmallHeightAssociatedPlanePresentation
 public import PaperP1.Diophantine.UnrestrictedHyperbolicConicCount
+public import PaperP1.Diophantine.ImaginaryQuadraticOrder
