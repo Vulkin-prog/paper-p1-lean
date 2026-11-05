@@ -3523,3 +3523,4 @@ public import PaperP1.Diophantine.SmoothClassPointCount
 public import PaperP1.Diophantine.PrimitiveHomogeneousRootBound
 public import PaperP1.Diophantine.GeometricEndpointExceptions
 public import PaperP1.Arithmetic.DyadicPrimeCover
+public import PaperP1.Diophantine.FiniteFieldPlaneZeroBound

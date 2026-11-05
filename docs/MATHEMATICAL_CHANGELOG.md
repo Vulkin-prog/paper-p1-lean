@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**351 mathematical improvements and two statement-scope corrections are confirmed.**
+**352 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24037,3 +24037,16 @@ This is a checked alternative to the interval prime supply in the local determin
 P1-MATH-0353 adds four theorems. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records351 improvements and two statement-scope corrections. No axiom, unproved literature premise, compiler change or original manuscript edit is introduced. The global sharp b>=2 input and main13.4 remain open; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15617 jobs); direct axiom audit passed for 14294 declarations using only propext, Classical.choice and Quot.sound; all 13582 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.14 GiB.
+
+
+## Actual finite-field smooth-class budget with coefficient drops
+
+FiniteFieldPlaneZeroBound.smooth_integer_classes_card proves that every finite set of affine residue pairs over ZMod p satisfying the actual original integer equation and a nonzero actual second derivative evaluation has cardinality at most(degreeX G+degreeY G)*p. Coefficient reduction may lower either degree or even annihilate the whole equation. In the latter case its derivative also vanishes, so the smooth-class population is empty. No good-reduction or preserved-degree premise is imposed.
+
+multivariate_card derives the finite-field two-variable zero bound from the proved Mathlib Schwartz-Zippel theorem, with exact rational nonnegative arithmetic and cardinality conversion. plane_card transports it through the checked bivariate total-degree chart, retaining the correct coordinate order. coefficient_map_degree_le proves total degree cannot increase under any coefficient ring map, including noninjective reduction modulo p. These combine with the original actual partial-degree sum.
+
+This closes the finite-field class-count budget required by the local determinant method. The actual map from projective points to these smooth classes, the denominator-and-derivative prime avoidance cover, and final numerical scale choices remain to be assembled.
+
+P1-MATH-0354 adds four theorems. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records352 improvements and two statement-scope corrections. All dependencies were already available locally. No axiom, unproved literature premise, compiler change or original manuscript edit is introduced. The global sharp b>=2 input and main13.4 remain open; Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15619 jobs); direct axiom audit passed for 14298 declarations using only propext, Classical.choice and Quot.sound; all 13586 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.13 GiB.

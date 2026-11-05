@@ -19078,6 +19078,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "51b8f07c56c190c3798822664af5a0ce5bebb9c9"
+    },
+    {
+      "id": "P1-MATH-0354",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The local determinant method required a checked O(p) bound for the actual smooth residue classes of the integer equation, allowing arbitrary coefficient and degree drops modulo p.",
+      "finding": "The actual smooth class population over ZMod p has at most(degreeX G+degreeY G)*p members, including the degenerate zero-reduction case through derivative nonvanishing.",
+      "proposed_revision": "Combine this exact class budget with the proved per-class point count after constructing the canonical residue map for projective points whose denominator-and-derivative product avoids p.",
+      "impact": "Closes the finite-field smooth-class budget without good-reduction assumptions. Actual point-to-class coverage and final sharp scale choices remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.FiniteFieldPlaneZeroBound.multivariate_card",
+        "PaperP1.FiniteFieldPlaneZeroBound.plane_card",
+        "PaperP1.FiniteFieldPlaneZeroBound.coefficient_map_degree_le",
+        "PaperP1.FiniteFieldPlaneZeroBound.smooth_integer_classes_card"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15619 jobs); direct axiom audit passed for 14298 declarations using only propext, Classical.choice and Quot.sound; all 13586 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.13 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
