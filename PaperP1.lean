@@ -4124,3 +4124,5 @@ public import PaperP1.Arithmetic.QuadraticRealIntegerGridCount
 public import PaperP1.Arithmetic.QuadraticDegreeUniformFieldCount
 public import PaperP1.Arithmetic.QuadraticDegreeUniformRealCount
 public import PaperP1.Arithmetic.RationalRealPlaneTransport
+public import PaperP1.Arithmetic.QuadraticPlaneUniformBound
+public import PaperP1.Asymptotics.QuadraticGrowingDegreePlaneCount

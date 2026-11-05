@@ -1,14 +1,6 @@
 # External mathematical inputs
 
-P1-MATH-0538 proves the full quadratic-degree integer-height plane estimate C*D^2*(Nat.log2(N)+1)^17*N^(1/D) over every characteristic-zero field. Natural-logarithmic real-height conversion, the literal main13.5 assembly and higher-dimensional projection remain separate.
-
-P1-MATH-0537 proves the original real integer-box high-degree count C*D^2*(Nat.log2(N)+1)^17, with actual polynomial dilation, preserved degree/irreducibility and internally chosen k=Nat.log2(2*N)+1. Complementary low-degree combination and arbitrary-field scalar transport remain separate.
-
-P1-MATH-0536 proves the complete global quadratic-degree normalized-grid count forlog(N)<=k<D, with all component geometry and analytic inputs internal. Original integer-box rescaling, logarithmic-order selection, low-degree combination and field-uniform arithmetic descent remain separate.
-
-P1-MATH-0535 proves the actual first-orientation regular component-family bound E.card+D*(2*D+4), including constructed closure minima, complete endpoint classification and regular exceptional-point incidence. Second-orientation transport and global grid assembly remain separate.
-
-P1-MATH-0534 proves the actual quadratic barrier budget D*(2*D+4) for disjoint preconnected curve populations with positive anchors and zero-barrier closure endpoints. Actual regular-component endpoint selection, classification and exceptional-point incidence remain separate.
+P1-MATH-0539 proves the exact real-height quadratic plane input with logarithmic exponent17 and complete unconditional main13.5. Coverage is162 proved,2 conditional and3 in_progress; the full all-dimensional main13.4 remains separate.
 
 Current canonical update P1-MATH-0520: the sharp-degree real-analytic route has internal classical Chebyshev/Polya, polynomial and scaled tangent Wronskians, local restriction independence, finite Bezout, monomial reconstruction and genuine exceptional sets. Both normalized graph orientations have actual ODE charts, exact rational derivative formulas, controlled signs, unit slope/distance bounds and explicit interior higher derivative estimates. Actual affine unit-jet maps and strict every-polynomial normalized graph counts are internal. A genuine common finite set of size at mostD^2*(30(r+2)^2+3(k+1)^6) now yields injective C-infinity local maps with unit jets, a positive affine original coordinate and simultaneous below-monomial-size zero counts, chosen before all tested polynomials and point populations. Controlled global map/component counts, whole-component graph coverage, the final quadratic-degree plane count and higher-dimensional projection remain open. Generic plane counting staysC*D^3*(log2N+1)^2*N^(1/D), with fulla<1/3 range. FullBCN/13.5, fullT1.7 general/typed geometry andT19.17 remain unresolved; denseT1.7 and all main optimal scalar laws are internal. Literal falseT1.10/T5.1 retain checked corrected replacements. Coverage stays161 proved,3 conditional and3 in_progress; no Palomar registration is claimed. The external BCN recurrence sign typo is tracked separately in LITERATURE_ERRATA.md. Earlier updates are historical. Capped-weight real determinant inequalities and actual local Taylor remainder bounds are now internal; the concrete function-evaluation representation and short-interval determinant application remain separate.
 
@@ -2537,18 +2529,24 @@ All source arithmetic and graph inputs are internally proved. Actual Chebyshev b
 
 ## BCN degree-uniform plane input and its analytic consequences
 
-Stable ID: `P1-GEO-BCN-PLANE-UNIFORM`. Status: **explicit_hypothesis**.
+Stable ID: `P1-GEO-BCN-PLANE-UNIFORM`. Status: **proved plane-polynomial specialization**, P1-MATH-0539.
 Reference: [arXiv2302.04209v2](https://arxiv.org/pdf/2302.04209v2),
 20September2023, Theorem2 equation(27), page7; DOI10.1093/imrn/rnae034.
 The specified author version was checked directly. Its integer-point
 bound is c(n)D^2 H^(1/D)(log H)^kappa, H>2, with c(n) independent
 of coefficients and degree and integral curves over K contained in C.
 
-Lean input: `PaperP1.PlaneCurvePointCount.UniformBound c kappa`.
-This actual plane-polynomial specialization, including the geometric
-presentation bridge, is an ordinary explicit argument; its proof and
-the full broad theorem13.4 remain open. Used by conditional13.5 and, after the proved rationalization bridge,
-conditional13.6. No global axiom is introduced.
+Lean property: `PaperP1.PlaneCurvePointCount.UniformBound c kappa`.
+Its actual plane-polynomial specialization is internally proved by
+`PaperP1.QuadraticPlaneUniformBound.uniform_bound`, with a positive absolute
+c and kappa=17. Degree, coefficients and real height are uniform, and
+ordinary irreducibility over the original field is sufficient. Complete
+main13.5 is unconditional by
+`PaperP1.QuadraticGrowingDegreePlaneCount.article_13_5`. The broad
+all-dimensional theorem13.4 still requires higher-dimensional curve
+projection/presentation; that remaining obligation is not assumed or counted
+as proved. Main13.6 already has its independent internal proof. No global
+axiom is introduced.
 
 Actual finite grids, floor boxes, the negative-offset cardinality
 bijection, convex logarithmic profile, endpoint maximum, exponential
@@ -28316,3 +28314,31 @@ Thus the complete degree- and coefficient-uniform quadratic plane theorem is int
 P1-MATH-0538 adds three modules, eleven theorems and one definition. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 536 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16865 jobs); direct axiom audit passed for 16047 declarations using only propext, Classical.choice and Quot.sound; all 15626 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.52 GiB.
+
+
+## Unconditional quadratic plane input and complete growing-degree corollary 13.5
+
+Stable ID: p1:internal:unconditional-quadratic-plane-growing-degree. The exact plane BCN input is internally proved with logarithmic exponent17; complete main13.5 is unconditional. Full all-dimensional13.4 remains separate.
+
+QuadraticPlaneUniformBound converts the internally proved quadratic-degree integer-height plane estimate to the exact real-height and natural-logarithmic interface used in the manuscript. For H>2 and N=floor(H), the actual binary budget satisfies L(N)<=(2/log(2))*log(H). The root factor is monotone from N to H. Linear irreducible equations have their internally proved 3*H count and are included as well. The theorem constructs a positive absolute c with PaperP1.PlaneCurvePointCount.UniformBound c 17. This covers every positive degree and every irreducible equation over every characteristic-zero field embedded in the complexes; all dependence on degree and coefficients is explicit and uniform. No external BCN premise remains in this plane input.
+
+QuadraticGrowingDegreePlaneCount supplies that internal bound to the already proved exact endpoint and cap-growth-free asymptotic assembly. Its source_uniform_bound proves one positive A and one threshold, before all varying degrees, coefficient fields, coefficients and real degree caps M, such that every original scaled-box grid has cardinality at most A*(B^(1/2)+M^2)*(log B)^17. Its upper_power_cap theorem proves uniform o(B) for every fixed positive box scale, every 0<=a<1/2, and every actual upper power cap, retaining the original integer floor box. The article_13_5 theorem proves both the literal displayed quadratic endpoint budget and the full uniform little-o assertion together. A cap with log(cap(B))/log(B) tending to a is already proved to satisfy this cap condition. The proof even needs no lower growth assumption on the cap.
+
+Main13.5 is therefore proved in its complete original scope, with the explicit absolute logarithmic exponent17 and no unformalized point-count input. The plane-polynomial specialization of main13.4 is also fully internal. The broad all-dimensional theorem13.4 still requires actual higher-dimensional integral-curve projection/presentation with controlled degree, height and fibres; it remains in_progress. CompanionT1.7/T19.17 and the original falseT1.10/T5.1 statements retain their separate statuses. No all-dimensional geometric theorem, full-document completion or Palomar certification is asserted.
+
+P1-MATH-0539 adds two modules and five theorems, with no new definition. Main13.5 moves from conditional to proved. Coverage becomes 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed: 72 main and 90 companion results are proved. The project records 537 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16869 jobs); direct axiom audit passed for 16052 declarations using only propext, Classical.choice and Quot.sound; all 15631 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.50 GiB.
+
+
+## Remaining higher-dimensional curve projection
+
+Stable ID: `P1-GEO-HIGHER-DIMENSIONAL-PROJECTION`. Status: **unresolved**.
+
+The full main13.4 statement concerns arbitrary integral curves in affine
+spaces of dimension greater than one. The plane-polynomial count is now
+internal. Its higher-dimensional extension still needs an actual finite
+projection/presentation, with proved degree, coordinate-height and fibre
+control on the original integer populations. No abstract implication
+assuming those missing geometric properties is counted as a proof of the
+all-dimensional source theorem. No new axiom or input theorem is introduced.

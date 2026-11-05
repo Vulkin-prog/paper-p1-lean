@@ -6117,6 +6117,8 @@ import PaperP1
 #print axioms PaperP1.QuadraticIntervalGrid.grid_error
 #print axioms PaperP1.QuadraticIntervalGrid.quadratic_grid_error
 #print axioms PaperP1.QuadraticIntervalGrid.scaled_center_error
+#print axioms PaperP1.QuadraticPlaneUniformBound.binary_budget_le_real_log
+#print axioms PaperP1.QuadraticPlaneUniformBound.uniform_bound
 #print axioms PaperP1.QuadraticRealIntegerGridCount.normalize_injective
 #print axioms PaperP1.QuadraticRealIntegerGridCount.high_degree_count
 #print axioms PaperP1.RankinSmallKernel.truncatedKernel_eq_floor
@@ -9952,6 +9954,9 @@ import PaperP1
 #print axioms PaperP1.QuadraticComponent.fixed_family_epsilon
 #print axioms PaperP1.QuadraticGridRadiusSum.side_length_scaling
 #print axioms PaperP1.QuadraticGridRadiusSum.uniform_radius_sum
+#print axioms PaperP1.QuadraticGrowingDegreePlaneCount.source_uniform_bound
+#print axioms PaperP1.QuadraticGrowingDegreePlaneCount.upper_power_cap
+#print axioms PaperP1.QuadraticGrowingDegreePlaneCount.article_13_5
 #print axioms PaperP1.QuadraticKernelExponents.capped_le_affine
 #print axioms PaperP1.QuadraticKernelExponents.exponent_le_affine_of_range
 #print axioms PaperP1.QuadraticKernelExponents.exponent_le_affine
