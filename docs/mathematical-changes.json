@@ -25230,6 +25230,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "8b61d7a45834f2d69cccedeb6354c4fa84eb64c4"
+    },
+    {
+      "id": "P1-MATH-0517",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The local zero-count theorem used unnormalized polynomial tangent trajectories, while normalized and affine unit-jet maps had no proved Wronskian transformation bridge.",
+      "finding": "A recursively constructed lower triangular actual derivative expansion gives the exact Wronskian scale power and proves nonvanishing preservation under every nonzero smooth differential scale.",
+      "proposed_revision": "Use the actual scaled-chain Wronskian identity when transporting the polynomial Chebyshev criterion to normalized or affinely reparametrized graph maps.",
+      "impact": "Closes the general analytic determinant transformation ingredient for transporting zero counts to the bounded-jet graph route. Concrete trajectory application and global counts remain open.",
+      "evidence": [
+        "PaperP1.ScaledDerivativeExpansion.coefficient_above",
+        "PaperP1.ScaledDerivativeExpansion.coefficient_diagonal",
+        "PaperP1.ScaledDerivativeExpansion.smooth_coefficient",
+        "PaperP1.ScaledDerivativeExpansion.successor_sum",
+        "PaperP1.ScaledDerivativeExpansion.iterated_expansion",
+        "PaperP1.ScaledWronskianTransformation.transformation_lower",
+        "PaperP1.ScaledWronskianTransformation.transformation_det",
+        "PaperP1.ScaledWronskianTransformation.transformation_det_ne_zero",
+        "PaperP1.ScaledWronskianTransformation.jetMatrix_expansion",
+        "PaperP1.ScaledWronskianTransformation.wronskian_factor",
+        "PaperP1.ScaledWronskianTransformation.wronskian_ne_zero",
+        "PaperP1.ScaledDerivativeExpansion.coefficient",
+        "PaperP1.ScaledWronskianTransformation.transformation",
+        "PaperP1.ScaledWronskianTransformation.chainMatrix"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16685 jobs); direct axiom audit passed for 15819 declarations using only propext, Classical.choice and Quot.sound; all 15347 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.03 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

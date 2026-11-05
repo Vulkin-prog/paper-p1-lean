@@ -4049,3 +4049,5 @@ public import PaperP1.Analysis.AffineUnitGraphParametrization
 public import PaperP1.Analysis.LocalAffineDerivativeFormula
 public import PaperP1.Analysis.BoxedLocalUnitGraphMaps
 public import PaperP1.Analysis.ShortCenteredAffineSegment
+public import PaperP1.Analysis.ScaledDerivativeExpansion
+public import PaperP1.Analysis.ScaledWronskianTransformation
