@@ -819,6 +819,10 @@ import PaperP1
 #print axioms PaperP1.FieldSquareClasses.add_self
 #print axioms PaperP1.FieldSquareClasses.add_zero_iff_eq
 #print axioms PaperP1.FieldSquareClasses.pair_dependence_iff
+#print axioms PaperP1.FiniteBivariateScalarDecomposition.coordinate_apply
+#print axioms PaperP1.FiniteBivariateScalarDecomposition.coefficient_support_subset
+#print axioms PaperP1.FiniteBivariateScalarDecomposition.component_zero_of_not_mem
+#print axioms PaperP1.FiniteBivariateScalarDecomposition.reconstruction
 #print axioms PaperP1.FiniteCumulantControl.finite_bound
 #print axioms PaperP1.FiniteEvaluationAnnihilator.span_ne_top
 #print axioms PaperP1.FiniteEvaluationAnnihilator.coefficients

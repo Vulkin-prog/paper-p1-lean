@@ -11,7 +11,7 @@ Companion T1.5 is complete conditionally on exactly the same two ordinary biform
 
 Companion T1.4 is complete conditionally on exactly HeathBrownBiformInput.Input and NonGeometricBiformInput.Input. The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. Both ordinary input proofs remain open. The three incomplete numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records321 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records322 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14115 audited theorem/lemma declarations**. This
+- The project currently has **14119 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24436,3 +24436,14 @@ Applying this construction twice gives a base-field linear projection on nested 
 P1-MATH-0323 closes the exact coefficient-map step needed to construct finite scalar decompositions of extension-field factors. The finite basis support, reconstruction, branch evaluation and resulting irreducibility descent still need to be assembled. NonGeometricRationalSingularity.Input remains an unproved alternative ordinary algebraic argument; HeathBrownBiformInput.Input is unchanged. T1.4 stays conditional; numbered coverage stays89 proved and75 conditional out of167 (164 completed). There are321 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15533 jobs); direct axiom audit passed for 14115 declarations using only propext, Classical.choice and Quot.sound; all 13380 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.57 GiB.
+
+
+## Exact finite basis reconstruction of every extension-field bivariate polynomial
+
+Every bivariate polynomial over an arbitrary field extension now has an explicit proved finite scalar decomposition over the base field. Choose any basis of the extension as a base-field vector space; the basis may have infinitely many indices. Each basis coordinate is a base-field linear map. Applying its exact bivariate coefficient projection from P1-MATH-0323 gives the corresponding base-field polynomial component.
+
+The actual finite index set is the union of the basis-representation supports of the finitely many nonzero bivariate coefficients. Every coefficient representation support is proved to lie in that set, including coefficients outside the original polynomial supports. Every polynomial component whose index lies outside the set is proved zero. Finally, the original extension-field polynomial is exactly the finite sum C(C(b_i))*extend(component_i). The reconstruction is checked coefficient by coefficient using the actual basis representation identity. No decomposition or finite-dimensionality of the whole field extension is assumed.
+
+P1-MATH-0324 closes finite scalar decomposition and exact polynomial reconstruction. These components still need to be evaluated on the mapped formal branch and combined with scalar-series separation to prove the extension-field kernel and irreducibility descent. The actual bihomogeneous geometric identification also remains open. NonGeometricRationalSingularity.Input remains an unproved alternative ordinary argument, and the Heath-Brown input is unchanged. T1.4 stays conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are322 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15535 jobs); direct axiom audit passed for 14119 declarations using only propext, Classical.choice and Quot.sound; all 13386 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.56 GiB.

@@ -18066,6 +18066,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "48bfd6fbf36b3f095c5cf62703bbea30cce5d688"
+    },
+    {
+      "id": "P1-MATH-0324",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The descent must construct finite scalar components for an arbitrary extension-field polynomial without requiring the entire extension to have finite dimension.",
+      "finding": "A finite union of actual coefficient representation supports gives exact base-field components, zero components outside the union and a checked reconstruction of every extension-field bivariate polynomial over any chosen basis.",
+      "proposed_revision": "Use the explicit finite coefficient support and proved basis reconstruction in the branch descent, retaining the mapped evaluation and geometric identification until they are checked.",
+      "impact": "Removes any assumed polynomial decomposition or finite-dimensional extension condition. The extension-field descent and non-geometric algebraic implication remain open; coverage is unchanged.",
+      "evidence": [
+        "PaperP1.FiniteBivariateScalarDecomposition.coordinate_apply",
+        "PaperP1.FiniteBivariateScalarDecomposition.coefficient_support_subset",
+        "PaperP1.FiniteBivariateScalarDecomposition.component_zero_of_not_mem",
+        "PaperP1.FiniteBivariateScalarDecomposition.reconstruction",
+        "PaperP1.FiniteBivariateScalarDecomposition.coordinate",
+        "PaperP1.FiniteBivariateScalarDecomposition.componentIndices"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15535 jobs); direct axiom audit passed for 14119 declarations using only propext, Classical.choice and Quot.sound; all 13386 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.56 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

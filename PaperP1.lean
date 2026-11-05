@@ -3484,3 +3484,4 @@ public import PaperP1.Algebra.PowerSeriesSimpleRoot
 public import PaperP1.Algebra.SmoothAffineFormalBranch
 public import PaperP1.Algebra.PowerSeriesScalarIndependence
 public import PaperP1.Algebra.PolynomialScalarProjection
+public import PaperP1.Algebra.FiniteBivariateScalarDecomposition
