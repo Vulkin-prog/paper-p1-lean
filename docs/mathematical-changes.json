@@ -25671,6 +25671,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "b7e49c57389c167ef009b9ff5caab19e424d238c"
+    },
+    {
+      "id": "P1-MATH-0528",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The actual logarithmic parameter buckets had not been realized by genuine affine unit-jet maps or assembled into a count on the entire supplied controlled graph piece.",
+      "finding": "Constructed affine windows realize every nonempty actual bucket and yield a polynomial-logarithmic count on an entire supplied controlled graph piece, including all endpoint and population-box cases.",
+      "proposed_revision": "Use the internally proved entire-piece grid count in the sharp-degree route; separately prove whole-component graph coverage and the controlled global number of pieces.",
+      "impact": "Closes the height-dependent affine cover and point count for an entire actual controlled graph piece. Global component coverage and piece cardinality remain geometric obligations.",
+      "evidence": [
+        "PaperP1.ActualDyadicBucketMaps.exists_map",
+        "PaperP1.AffineBucketWindow.exists_window",
+        "PaperP1.ControlledGraphGridPointCount.full_count",
+        "PaperP1.ControlledGraphGridPointCount.minimal_order_count",
+        "PaperP1.DyadicBucketGridCount.cluster_count",
+        "PaperP1.DyadicBucketGridCount.trimmed_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16795 jobs); direct axiom audit passed for 15931 declarations using only propext, Classical.choice and Quot.sound; all 15483 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.74 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

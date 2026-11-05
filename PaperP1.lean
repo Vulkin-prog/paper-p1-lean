@@ -4085,3 +4085,7 @@ public import PaperP1.Analysis.NormalizedGridSpacing
 public import PaperP1.Analysis.DyadicGridMargins
 public import PaperP1.Analysis.DyadicParameterBucketCover
 public import PaperP1.Analysis.NormalizedBandBuckets
+public import PaperP1.Analysis.ActualDyadicBucketMaps
+public import PaperP1.Analysis.AffineBucketWindow
+public import PaperP1.Analysis.ControlledGraphGridPointCount
+public import PaperP1.Analysis.DyadicBucketGridCount

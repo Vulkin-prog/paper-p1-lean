@@ -2452,6 +2452,7 @@ import PaperP1
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_card_all
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_finite
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_card
+#print axioms PaperP1.ActualDyadicBucketMaps.exists_map
 #print axioms PaperP1.ActualLocalUnitMapGridCount.exists_at_nonexceptional
 #print axioms PaperP1.ActualLocalUnitMapGridCount.exists_control_set_and_maps
 #print axioms PaperP1.ActualTaylorRemainderBound.jet_self
@@ -2463,6 +2464,7 @@ import PaperP1
 #print axioms PaperP1.AdjacentSquarefreeBudget.odd_uniform_sum
 #print axioms PaperP1.AdjacentSquarefreeBudget.modulus_positive
 #print axioms PaperP1.AdjacentSquarefreeBudget.modulus_reciprocal_sum
+#print axioms PaperP1.AffineBucketWindow.exists_window
 #print axioms PaperP1.AffineDeterminantDegreeChoice.exists_auxiliary_degree
 #print axioms PaperP1.AffineDeterminantDegreeChoice.determinant_small
 #print axioms PaperP1.AffineDeterminantUniformScale.triangle_succ
@@ -2618,6 +2620,8 @@ import PaperP1
 #print axioms PaperP1.ContractiveExponentialProducts.norm_exponentialProduct_le_one
 #print axioms PaperP1.ContractiveExponentialProducts.norm_first_order_le
 #print axioms PaperP1.ContractiveExponentialProducts.norm_quadratic_error_le
+#print axioms PaperP1.ControlledGraphGridPointCount.full_count
+#print axioms PaperP1.ControlledGraphGridPointCount.minimal_order_count
 #print axioms PaperP1.ControlledGraphParameterPopulation.coordinate_monotonicity
 #print axioms PaperP1.ControlledGraphParameterPopulation.box_between
 #print axioms PaperP1.ControlledGraphParameterPopulation.parameter_of_point
@@ -2753,6 +2757,8 @@ import PaperP1
 #print axioms PaperP1.DisjointRecoveryParameters.parameter_pow
 #print axioms PaperP1.DisjointRecoveryParameters.one_sub_inv_pow_le_half
 #print axioms PaperP1.DisjointRecoveryParameters.failure_factor_le_half
+#print axioms PaperP1.DyadicBucketGridCount.cluster_count
+#print axioms PaperP1.DyadicBucketGridCount.trimmed_count
 #print axioms PaperP1.DyadicGridMargins.radius_pos
 #print axioms PaperP1.DyadicGridMargins.exists_scale
 #print axioms PaperP1.DyadicGridMargins.sideDistance_abs_sub
