@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**485 mathematical improvements and two statement-scope corrections are confirmed.**
+**486 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26153,3 +26153,20 @@ The source corollary, its proof and the exact affine probability identity in mai
 P1-MATH-0487 adds four modules, twelve theorems and no definitions. Exactly one numbered result, main13.8, is promoted from conditional to proved. Coverage becomes151 proved,13 conditional and3 in_progress out of167, with164 completed:61 main results and90 companion results are proved. The project records485 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16505 jobs); direct axiom audit passed for 15518 declarations using only propext, Classical.choice and Quot.sound; all 14967 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.00 GiB.
+
+
+## Complete optimal third cumulant and absolute activity at power 41 over 30
+
+Complete main Theorem14.1 and Corollary14.6 are now internally proved. The full original third factorial cumulant satisfies c_C*N^(-41/30)<=kappa_3<=N^(-41/30+epsilon), with c_C>0 depending only on the fixed critical band and chosen independently of epsilon. The full actual absolute third activity is at mostN^(-41/30+epsilon). The upper bounds hold uniformly on every original subground, with all incompatible, zero-marginal and repeated-index terms retained. No external geometric argument occurs in the new theorem hypotheses.
+
+HardNonalignedTripleMass closes the literal residual isolated at P1-MATH-0454. Its actual supports are the original connected triples all of whose distinct pairs are nonaligned and have intersection rank above a fixed positive fraction ofL+1. HardNonalignedTripleCount already bounds their number byN^eta for every fixedeta>0. The now internally proved actual joint-probability estimate bounds each triple byN^(-3/2+eta). Summing the actual nonnegative weights therefore givesN^(-3/2+epsilon), uniformly before every original subground. The joint probability is not inferred from the host count; both independently proved inequalities are used explicitly.
+
+SharpThirdActivity combines this residual mass with the existing unconditional bound on the complementary aligned/weak-pair sectors. The full connected actual joint mass is at mostN^(-41/30+epsilon), and the same holds for every selected subfamily of actual connected triples. The finite compatible centered bound yields the positive connected activity; internal sharp cancellation then adds the incompatible sector at the strictly smallerN^(-3/2+epsilon) scale. Its exact cumulant comparison includes repeated-index terms and the full original count. All fixed factors are absorbed using smaller internal error margins before the final threshold.
+
+OptimalThirdCumulant combines that full upper bound with the previously internal rational three-slope lower family and cancellation theorem. The explicit positive lower constant is5 timesThreeSlopePositiveActivity.lowerConstant(C). The conclusion is the complete printed optimal-power statement, without an asymptotic-equivalent or logarithmic-factor claim. Main14.6 follows from the full absolute-activity upper bound. The source statements and complete sector proof were rechecked at main_sections/third_cumulant.tex lines32-46 and296-377.
+
+The proof route retains the actual rank and probability consequences of13.6/13.8 while bypassing their former BCN dependency through the constructed height and full fibre-degree factor. No general geometric cover/count interface, generic main13.5 theorem or quadratic-degree/all-dimensional BCN property is thereby proved. The optimal quadratic/Hermite law and weighted approximation conclusions remain separate pending their final internal assembly. Full companionT19.17 still retains its stronger almost-all census requirement.
+
+P1-MATH-0488 adds three modules, nine theorems and one lower-constant definition. Exactly two numbered results, main14.1 and14.6, are promoted from conditional to proved. Coverage becomes153 proved,11 conditional and3 in_progress out of167, with164 completed:63 main results and90 companion results are proved. The project records486 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16511 jobs); direct axiom audit passed for 15527 declarations using only propext, Classical.choice and Quot.sound; all 14977 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.98 GiB.

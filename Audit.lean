@@ -8396,6 +8396,7 @@ import PaperP1
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_absolute_activity
 #print axioms PaperP1.HalfPowerThirdActivityUnderBCN.uniform_cumulant
 #print axioms PaperP1.HardNonalignedTripleCount.uniform_count
+#print axioms PaperP1.HardNonalignedTripleMass.uniform_mass
 #print axioms PaperP1.HardSaddleSignedCostBounds.uniform_upper_from_profile
 #print axioms PaperP1.HardSaddleSignedCostBounds.uniform_upper
 #print axioms PaperP1.HardSaddleSignedCostBounds.uniform_sandwich
@@ -9000,6 +9001,8 @@ import PaperP1
 #print axioms PaperP1.OptimalNominalQuadraticUnderInputs.article_17_3
 #print axioms PaperP1.OptimalQuadraticUnderInputs.article_1_1
 #print axioms PaperP1.OptimalQuadraticUnderInputs.article_16_2
+#print axioms PaperP1.OptimalThirdCumulant.lowerConstant_pos
+#print axioms PaperP1.OptimalThirdCumulant.article_14_1
 #print axioms PaperP1.OptimalThirdCumulantUnderInputs.lowerConstant_pos
 #print axioms PaperP1.OptimalThirdCumulantUnderInputs.article_14_1
 #print axioms PaperP1.OptimalTripleReconstructionUnderInputs.article_15_14
@@ -9755,6 +9758,12 @@ import PaperP1
 #print axioms PaperP1.SharpRunConversionUnderInputs.uniform_cumulant
 #print axioms PaperP1.SharpRunConversionUnderInputs.uniform_conversion
 #print axioms PaperP1.SharpStrongExactMassUnderInputs.uniform_mass
+#print axioms PaperP1.SharpThirdActivity.uniform_connected_mass
+#print axioms PaperP1.SharpThirdActivity.uniform_joint_mass
+#print axioms PaperP1.SharpThirdActivity.uniform_positive
+#print axioms PaperP1.SharpThirdActivity.uniform_absolute
+#print axioms PaperP1.SharpThirdActivity.uniform_cumulant
+#print axioms PaperP1.SharpThirdActivity.article_14_6
 #print axioms PaperP1.SharpThirdActivityUnderInputs.uniform_joint_mass
 #print axioms PaperP1.SharpThirdActivityUnderInputs.uniform_absolute_activity
 #print axioms PaperP1.SharpThirdActivityUnderInputs.uniform_cumulant

@@ -3967,3 +3967,6 @@ public import PaperP1.Asymptotics.AllPairRank
 public import PaperP1.Asymptotics.JointFamilyProbability
 public import PaperP1.Asymptotics.NonalignedJointProbability
 public import PaperP1.Asymptotics.TripleRankTheorem
+public import PaperP1.Asymptotics.HardNonalignedTripleMass
+public import PaperP1.Asymptotics.OptimalThirdCumulant
+public import PaperP1.Asymptotics.SharpThirdActivity

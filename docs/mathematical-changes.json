@@ -24081,6 +24081,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "70f84b5c61b7a9fb65ee880c6543a8817dd15ec5"
+    },
+    {
+      "id": "P1-MATH-0488",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:third:main",
+        "number": "14.1",
+        "page": 34,
+        "source": "main_sections/third_cumulant.tex",
+        "line": 32,
+        "statement_sha256": "b3c908053821806fbdaaae7e9cc2d22a4c3fd53a144da0b135f5997df780d34c"
+      },
+      "original_assumption": "The sharp global third-activity and cumulant upper bound retained the total weight of connected triples with three strong nonaligned pairs as its unresolved residual.",
+      "finding": "The internal subpower residual host count and actual pointwise joint-probability bound give residual massN^(-3/2+epsilon), closing the global41/30 activity and full two-sided cumulant theorem.",
+      "proposed_revision": "Use the actual residual host count together with the internally proved13.8 probability bound, then retain the exact incompatible and repeated-index cancellation when concluding14.1 and14.6.",
+      "impact": "Closes complete main14.1 and14.6, including a positive lower constant depending only on the critical band and all original-model upper-bound sectors.",
+      "evidence": [
+        "PaperP1.HardNonalignedTripleMass.uniform_mass",
+        "PaperP1.OptimalThirdCumulant.lowerConstant_pos",
+        "PaperP1.OptimalThirdCumulant.article_14_1",
+        "PaperP1.SharpThirdActivity.uniform_connected_mass",
+        "PaperP1.SharpThirdActivity.uniform_joint_mass",
+        "PaperP1.SharpThirdActivity.uniform_positive",
+        "PaperP1.SharpThirdActivity.uniform_absolute",
+        "PaperP1.SharpThirdActivity.uniform_cumulant",
+        "PaperP1.SharpThirdActivity.article_14_6",
+        "PaperP1.OptimalThirdCumulant.lowerConstant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16511 jobs); direct axiom audit passed for 15527 declarations using only propext, Classical.choice and Quot.sound; all 14977 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.98 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
