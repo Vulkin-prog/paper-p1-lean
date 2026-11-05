@@ -8902,6 +8902,8 @@ import PaperP1
 #print axioms PaperP1.QuadraticOrderBranching.quadratic_order_branching
 #print axioms PaperP1.QuadraticOrderMoments.nominal_mean_bound
 #print axioms PaperP1.QuadraticOrderMoments.factorial_bound
+#print axioms PaperP1.QuadraticRateOne.uniform_exact
+#print axioms PaperP1.QuadraticRateOne.companion_T17_5
 #print axioms PaperP1.QuadraticRateOneUnderInputs.uniform_exact
 #print axioms PaperP1.QuadraticRateOneUnderInputs.companion_T17_5
 #print axioms PaperP1.QuadraticSquarePartCount.reciprocal_budget
@@ -9458,7 +9460,11 @@ import PaperP1
 #print axioms PaperP1.TranslatedKernelCounts.one_factor_bound
 #print axioms PaperP1.TranslatedKernelCounts.one_uniform
 #print axioms PaperP1.TranslatedKernelCounts.two_uniform_budget
+#print axioms PaperP1.TripleActivityClosure.uniform_bounds
 #print axioms PaperP1.TripleActivityClosureUnderInputs.uniform_bounds
+#print axioms PaperP1.TripleActivityLawReconstruction.uniform_estimates
+#print axioms PaperP1.TripleActivityLawReconstruction.uniform_bound
+#print axioms PaperP1.TripleActivityLawReconstruction.article_15_14_symbolic
 #print axioms PaperP1.TripleActivityLawReconstructionUnderInputs.uniform_estimates
 #print axioms PaperP1.TripleActivityLawReconstructionUnderInputs.uniform_bound
 #print axioms PaperP1.TripleActivityLawReconstructionUnderInputs.article_15_14_symbolic

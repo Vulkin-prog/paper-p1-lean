@@ -1,0 +1,15 @@
+# Unconditional first quadratic law and symbolic triple reconstruction
+
+Sources: companionT17.5, companion_sections/closure.tex lines373-442, both actual/nominal-mean original-law assertions; main15.14 symbolic inequality, main_sections/exact_transfer.tex lines982-1028. Main15.14 remains conditional for its additional optimal4/3 consequence. Exact mean, actual second cumulant, original count and full dyadic ground are retained.
+
+Companion PropositionT17.5 now has an unconditional canonical proof of both printed original-law approximations, with the stronger exponent1 in place of4/5. QuadraticRateOne.companion_T17_5 proves the complete original count-law distance to the quadratic reference with exact actual mean and second factorial cumulant, and also with the nominal mean and the same actual cumulant. The statement and complete proof in companion_sections/closure.tex lines373-442 were rechecked. The full dyadic ground, heterogeneous marginals, affine incompatibility and parameter restoration are retained.
+
+TripleActivityClosure first combines the internally proved finite connected reduction through order256 with the unconditional uniform connected and primitive tails. Both complete component and primitive sums are controlled byN^epsilon times the exact full third absolute activity plusN^(-4/3+epsilon). Only the prescribed finite orders use a finite maximum; all larger orders use the checked uniform certificate bound.
+
+TripleActivityLawReconstruction proves the literal symbolic full-law inequality of main15.14 without external geometric inputs. It uses actual pair activity, the full all-cardinality pair deficit, the internally proved exponent1 third absolute activity, exact stopped-law decomposition, nonlinear component generator, large boundary and heterogeneous reference conversion. The positive exponential generator is controlled by the coarse third activity, so an optimal triple theorem is unnecessary for this symbolic step. The actual mean and actual second factorial cumulant remain exact throughout.
+
+QuadraticRateOne inserts the unconditional exponent1 third-activity bound and then restores both requested full-model references. The result is uniform on the critical band and includes arbitrary dyadic subgrounds before restoration. Main15.14 remains conditional as a full numbered statement because its additional numerical optimal4/3 consequence is not proved here. Neither the optimal triple exponent41/30 nor the optimal quadratic power4/3 is claimed.
+
+Earlier conditional proofs and external-input history are preserved. Only the former finite geometric uses in T17.5 and the symbolic part of main15.14 are discharged; no general geometric property or BCN theorem is asserted. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0434 adds three modules and six theorems. CompanionT17.5 moves from conditional to proved. Coverage becomes119 proved,45 conditional and3 in_progress out of167, with164 completed. The project records432 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.

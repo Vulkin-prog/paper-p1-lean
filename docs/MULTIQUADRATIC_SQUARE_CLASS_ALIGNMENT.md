@@ -19209,3 +19209,20 @@ Earlier conditional declarations and literature-input history are preserved. Dis
 P1-MATH-0433 adds seven modules and thirteen theorems. Main15.12 and15.13 move from conditional to proved. Coverage becomes118 proved,46 conditional and3 in_progress out of167, with164 completed. The project records431 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16003 jobs); direct axiom audit passed for 14869 declarations using only propext, Classical.choice and Quot.sound; all 14227 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.25 GiB.
+
+
+## Unconditional first quadratic law and symbolic triple reconstruction
+
+Companion PropositionT17.5 now has an unconditional canonical proof of both printed original-law approximations, with the stronger exponent1 in place of4/5. QuadraticRateOne.companion_T17_5 proves the complete original count-law distance to the quadratic reference with exact actual mean and second factorial cumulant, and also with the nominal mean and the same actual cumulant. The statement and complete proof in companion_sections/closure.tex lines373-442 were rechecked. The full dyadic ground, heterogeneous marginals, affine incompatibility and parameter restoration are retained.
+
+TripleActivityClosure first combines the internally proved finite connected reduction through order256 with the unconditional uniform connected and primitive tails. Both complete component and primitive sums are controlled byN^epsilon times the exact full third absolute activity plusN^(-4/3+epsilon). Only the prescribed finite orders use a finite maximum; all larger orders use the checked uniform certificate bound.
+
+TripleActivityLawReconstruction proves the literal symbolic full-law inequality of main15.14 without external geometric inputs. It uses actual pair activity, the full all-cardinality pair deficit, the internally proved exponent1 third absolute activity, exact stopped-law decomposition, nonlinear component generator, large boundary and heterogeneous reference conversion. The positive exponential generator is controlled by the coarse third activity, so an optimal triple theorem is unnecessary for this symbolic step. The actual mean and actual second factorial cumulant remain exact throughout.
+
+QuadraticRateOne inserts the unconditional exponent1 third-activity bound and then restores both requested full-model references. The result is uniform on the critical band and includes arbitrary dyadic subgrounds before restoration. Main15.14 remains conditional as a full numbered statement because its additional numerical optimal4/3 consequence is not proved here. Neither the optimal triple exponent41/30 nor the optimal quadratic power4/3 is claimed.
+
+Earlier conditional proofs and external-input history are preserved. Only the former finite geometric uses in T17.5 and the symbolic part of main15.14 are discharged; no general geometric property or BCN theorem is asserted. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0434 adds three modules and six theorems. CompanionT17.5 moves from conditional to proved. Coverage becomes119 proved,45 conditional and3 in_progress out of167, with164 completed. The project records432 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16009 jobs); direct axiom audit passed for 14875 declarations using only propext, Classical.choice and Quot.sound; all 14233 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.22 GiB.

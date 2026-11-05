@@ -21883,6 +21883,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "d396c61e2d0f6d895ef0940827d71bc10cdf80b5"
+    },
+    {
+      "id": "P1-MATH-0434",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:base-approximation",
+        "number": "T17.5",
+        "page": 64,
+        "source": "companion_sections/closure.tex",
+        "line": 373,
+        "statement_sha256": "3f9a073e1d0926a504ce14a82f8e6da9fa67dae624de32d26f2521aa90245a03"
+      },
+      "original_assumption": "The first quadratic approximationT17.5 and symbolic reconstruction part of main15.14 retained chosen-source and ordinary surface covers and normalized-curve counts.",
+      "finding": "Unconditional finite connected reduction and uniform tails close the exact symbolic stopped-law bound. The internally proved exponent1 third activity then gives both full-model first quadratic approximations at the stronger exponent1.",
+      "proposed_revision": "State the first approximation with exponent1 and prove the symbolic triple reconstruction using only internal tails, actual pair deficits and coarse third activity. Keep the separate optimal4/3 numerical consequence explicit and unresolved.",
+      "impact": "Both assertions of companionT17.5 become unconditional and improve from4/5 to1. Main15.14 has an unconditional symbolic part but remains conditional for its optimal numerical consequence. Coverage becomes119 proved,45 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.QuadraticRateOne.uniform_exact",
+        "PaperP1.QuadraticRateOne.companion_T17_5",
+        "PaperP1.TripleActivityClosure.uniform_bounds",
+        "PaperP1.TripleActivityLawReconstruction.uniform_estimates",
+        "PaperP1.TripleActivityLawReconstruction.uniform_bound",
+        "PaperP1.TripleActivityLawReconstruction.article_15_14_symbolic"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16009 jobs); direct axiom audit passed for 14875 declarations using only propext, Classical.choice and Quot.sound; all 14233 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.22 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

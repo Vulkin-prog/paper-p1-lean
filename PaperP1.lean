@@ -3716,3 +3716,6 @@ public import PaperP1.Asymptotics.NoSingletonJointMass
 public import PaperP1.Asymptotics.SmallCoreJointMass
 public import PaperP1.Asymptotics.SmallCorePairMass
 public import PaperP1.Asymptotics.SmallCoreSourceMass
+public import PaperP1.Asymptotics.QuadraticRateOne
+public import PaperP1.Asymptotics.TripleActivityClosure
+public import PaperP1.Asymptotics.TripleActivityLawReconstruction
