@@ -787,6 +787,13 @@ import PaperP1
 #print axioms PaperP1.ConicPolynomialPresentation.outer_coefficient_ne_zero
 #print axioms PaperP1.ConicPolynomialPresentation.norm_grid
 #print axioms PaperP1.ConicPolynomialPresentation.grid_image_card
+#print axioms PaperP1.ConicScalarInvariants.associated_scalar
+#print axioms PaperP1.ConicScalarInvariants.coefficient_scalar_mul
+#print axioms PaperP1.ConicScalarInvariants.rationalized_coefficient
+#print axioms PaperP1.ConicScalarInvariants.associated_discriminant_scale
+#print axioms PaperP1.ConicScalarInvariants.positive_discriminant_iff
+#print axioms PaperP1.ConicScalarInvariants.zero_discriminant_iff
+#print axioms PaperP1.ConicScalarInvariants.negative_discriminant_iff
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_le
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_empty
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_rank_le

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**384 mathematical improvements and two statement-scope corrections are confirmed.**
+**385 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24476,3 +24476,16 @@ This closes the complete positive-discriminant geometric conic branch at control
 P1-MATH-0386 adds four theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records384 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15687 jobs); direct axiom audit passed for 14484 declarations using only propext, Classical.choice and Quot.sound; all 13807 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.66 GiB.
+
+
+## Rational association preserves every conic discriminant sign
+
+ConicScalarInvariants proves that rationally associated actual integer plane equations have the same positive, zero or negative quadratic discriminant classification. associated_discriminant_scale constructs an actual nonzero rational scalar s and proves Delta(Q)=s^2*Delta(P) on the literal extracted quadratic coefficients. The three exact sign equivalences follow without any coefficient-height, degree or irreducibility hypothesis beyond the displayed association.
+
+The underlying associated_scalar theorem works for nested polynomial rings over every field: association is realized by multiplication by one nonzero scalar from that field. The proof extracts the actual polynomial unit and proves that both polynomial layers are constant. coefficient_scalar_mul identifies every literal nested coefficient under this scalar multiplication, while rationalized_coefficient identifies the actual integer-to-rational coefficient map. No selected normalization scalar or sign-preservation premise is assumed.
+
+This closes the invariant needed to retain the hyperbolic, parabolic or negative-discriminant branch when replacing an actual equation by its internally constructed bounded-height associated equation. Exposing that association in the bounded-height presentation and assembling the coefficient-height-free conic count remain the next obligations. Other conic counts, full BCN and original main13.4 remain open.
+
+P1-MATH-0387 adds seven theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records385 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15689 jobs); direct axiom audit passed for 14491 declarations using only propext, Classical.choice and Quot.sound; all 13814 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.65 GiB.

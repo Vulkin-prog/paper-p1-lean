@@ -3558,3 +3558,4 @@ public import PaperP1.Diophantine.PositiveDiscriminantConicCount
 public import PaperP1.Algebra.ConicCoordinateChanges
 public import PaperP1.Algebra.ConicIrreducibility
 public import PaperP1.Diophantine.GeometricHyperbolicConicCount
+public import PaperP1.Algebra.ConicScalarInvariants
