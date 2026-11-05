@@ -6843,7 +6843,8 @@
           ],
           "checkpoint": "P1-MATH-0454"
         }
-      ]
+      ],
+      "validation_commit": "51adbb8f951e1643d4ef0451edbbbe8b1f1a07a7"
     },
     {
       "label": "p13:third:rational-rank",
@@ -8023,7 +8024,8 @@
           ],
           "checkpoint": "P1-MATH-0454"
         }
-      ]
+      ],
+      "validation_commit": "51adbb8f951e1643d4ef0451edbbbe8b1f1a07a7"
     },
     {
       "label": "p13:transfer:conversion",
