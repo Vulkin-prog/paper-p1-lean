@@ -23633,6 +23633,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "cf3c5548ae175107d6514db392edec1b92ed9e71"
+    },
+    {
+      "id": "P1-MATH-0476",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The fine weighted pivot partition needs one actual saddle parameter to control every positive logarithmic cutoff, with a uniform error smaller than nu. A leading-order cost comparison alone does not supply that precision.",
+      "finding": "The exact finite inequality loses at most Ei(u)^2/(4V); the actual saddle identity and Ei(u)/nu ->1, nu/V ->0 make that error o(nu), uniformly before every positive cutoff.",
+      "proposed_revision": "Insert the proved balanced-cost inequality and its actual-root limits into the fine upper route. Keep the uniform count and moving weighted partition separate until proved.",
+      "impact": "Supplies a uniform fine-scale saddle-cost bound without an EIP hypothesis. The complete reciprocal fine equivalent remains unresolved and numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.BalancedReciprocalSaddleCost.finite_cost_lower",
+        "PaperP1.BalancedReciprocalSaddleCost.balanced_identity",
+        "PaperP1.BalancedReciprocalSaddleCost.tendsto_ei_div_nu",
+        "PaperP1.BalancedReciprocalSaddleCost.tendsto_nu_div_cutoff",
+        "PaperP1.BalancedReciprocalSaddleCost.tendsto_quadratic_error",
+        "PaperP1.BalancedReciprocalSaddleCost.uniform_cost_lower"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16435 jobs); direct axiom audit passed for 15409 declarations using only propext, Classical.choice and Quot.sound; all 14849 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.27 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

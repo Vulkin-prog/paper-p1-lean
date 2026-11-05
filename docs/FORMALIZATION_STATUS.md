@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records473 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records474 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15403 audited theorem/lemma declarations**. This
+- The project currently has **15409 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26800,3 +26800,18 @@ These estimates provide the uniform exponential-integral ingredient for a finer 
 P1-MATH-0475 adds two modules, thirteen theorems and two definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records473 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16433 jobs); direct axiom audit passed for 15403 declarations using only propext, Classical.choice and Quot.sound; all 14843 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.29 GiB.
+
+
+## Uniform balanced reciprocal saddle cost with a negligible quadratic Ei error
+
+The actual hard-saddle cost is now bounded uniformly over every positive logarithmic pivot cutoff, with an error negligible at the fine scale nu. For every epsilon>0 there is one H0 before all H>=H0 and all v>0 such that 2V-epsilon*nu <= v+H*u/v-Ei(u), where u=saddleParameter(1,H), V=saddleCutoff(1,H) and nu=H/V. This is an internal analytic bound, with no ordinary EIP input. The moving weighted pivot partition remains subsequent work.
+
+finite_cost_lower first proves the exact finite inequality 2V-E^2/(4V) <= v+V(V+E)/v-E for every V>0,E>=0,v>0. The proof handles both v<=V and v>=V by explicit squares. No square-root approximation, restriction E<=V or cutoff-dependent threshold is used. balanced_identity proves H*u=V(V+Ei(u)) from the actual root equation, preserving the standard Ei normalization.
+
+tendsto_ei_div_nu proves Ei(u)/nu ->1. tendsto_nu_div_cutoff proves nu/V ->0 from the actual saddle-cost factor. Their exact product identity gives tendsto_quadratic_error: Ei(u)^2/(V*nu) ->0. uniform_cost_lower combines eventual Ei positivity and this limit with the finite inequality. Its threshold is selected before every positive v, so it applies to a growing collection of logarithmic bands without selecting a threshold after those bands.
+
+This result supplies the balanced-cost ingredient for a fine reciprocal upper estimate, together with checkpoint475's uniform exact-endpoint Euler estimate. The full weighted partition, uniform counting error and o(nu) transport are not yet claimed. Complete T19.15/T19.16 retain the explicit fine ordinary EIP input. Their leading coefficient2 limits and the qualitative deterministic/randomized all-anchor obstructions remain internal; full T19.17 still requires the stronger almost-all census and1-o(1) coefficient. General geometry, full quadratic-degree BCN and optimal strong-triangle weights retain their separate unresolved scopes.
+
+P1-MATH-0476 adds one module, six theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records474 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16435 jobs); direct axiom audit passed for 15409 declarations using only propext, Classical.choice and Quot.sound; all 14849 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.27 GiB.

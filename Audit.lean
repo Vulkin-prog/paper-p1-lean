@@ -2377,6 +2377,12 @@ import PaperP1
 #print axioms PaperP1.AffineDeterminantUniformScale.exists_logarithmic_degree
 #print axioms PaperP1.AnchoredCostNormalization.main_lower
 #print axioms PaperP1.AnchoredCostNormalization.with_errors
+#print axioms PaperP1.BalancedReciprocalSaddleCost.finite_cost_lower
+#print axioms PaperP1.BalancedReciprocalSaddleCost.balanced_identity
+#print axioms PaperP1.BalancedReciprocalSaddleCost.tendsto_ei_div_nu
+#print axioms PaperP1.BalancedReciprocalSaddleCost.tendsto_nu_div_cutoff
+#print axioms PaperP1.BalancedReciprocalSaddleCost.tendsto_quadratic_error
+#print axioms PaperP1.BalancedReciprocalSaddleCost.uniform_cost_lower
 #print axioms PaperP1.BanachExponentialRemainder.norm_term_le
 #print axioms PaperP1.BanachExponentialRemainder.norm_tail_term_le
 #print axioms PaperP1.BanachExponentialRemainder.norm_exp_sub_partial_le
