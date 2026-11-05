@@ -24854,3 +24854,18 @@ The two modules add seventeen theorems and five definitions. This completes the 
 P1-MATH-0344 leaves coverage at89 proved and75 conditional out of167, with164 completed. The ledger records342 improvements and two statement-scope corrections. No dependency download, axiom, unproved literature premise, compiler change or original manuscript edit is introduced. Main13.4 and the recorded geometric inputs remain open. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15593 jobs); direct axiom audit passed for 14252 declarations using only propext, Classical.choice and Quot.sound; all 13533 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.28 GiB.
+
+
+## Actual smooth congruence branches and affine curve determinant divisibility
+
+Stable ID: p1:internal:smooth-integer-curve-determinant. Internal finite implicit-function, ZMod unit, coefficient-lift and polynomial determinant proof. It applies to actual affine curve points. Projective fractional-coordinate transport and the complete sharp b>=2 estimate are not claimed.
+
+SmoothIntegerCongruenceBranch.implicit_mod_prime_power constructs one integer polynomial q for every prime p, precision N and actual bivariate integer equation P. If p divides P(a,b) and does not divide the outer derivative at(a,b), every actual integer root P(x,y)=0 in that same residue class satisfies p^N divides y-q(x-a). The polynomial precedes all point choices. The proof specializes the internally constructed nilpotent implicit branch to ZMod(p^N), proves the derivative a unit there and lifts the finitely many coefficients to integers. The precision-zero and empty/single-row cases need no exceptional assumption.
+
+SmoothCurveDeterminant.integer_smooth_dvd proves the exact triangular divisor p^(k*(k-1)/2) for matrices whose entries are arbitrary integer bivariate-polynomial evaluations at any k actual curve points in that smooth affine residue class. It substitutes the constructed branch, controls each entry modulo the triangular power by polynomial evaluation divisibility, and applies the internally proved polynomial residue determinant. No local representation, analytic convergence, irreducibility or point-count bound is assumed.
+
+The same module also proves the generic nilpotent-ring version for actual curve points. Over any commutative ring with a nilpotent principal ideal(p), a simple residue-class root gives the determinant divisor for arbitrary polynomial rows. When p to the triangular power is zero in the ring, the determinant is zero. The substitution map and its exact evaluation identity are explicit.
+
+These two modules add six theorems and one definition. This completes the actual affine smooth-class determinant application. Normalization of projective fractional coordinates, good-prime selection, auxiliary forms, archimedean comparison and the global sharp b>=2 Heath-Brown estimate remain separate open work. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records343 improvements and two statement-scope corrections. No new dependency download, axiom, unproved literature premise, compiler change or original manuscript edit is introduced. Main13.4 and the recorded geometric inputs remain open. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15597 jobs); direct axiom audit passed for 14258 declarations using only propext, Classical.choice and Quot.sound; all 13540 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.26 GiB.

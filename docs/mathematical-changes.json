@@ -18786,6 +18786,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "688f40ad654e045dca83f1efe4d89ab436862c6b"
+    },
+    {
+      "id": "P1-MATH-0345",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The local determinant application still needed to derive a prime-power polynomial branch for actual integer roots and prove the triangular divisor for their actual evaluation matrices, rather than assume a filtered representation.",
+      "finding": "A smooth congruence class admits one constructed integer polynomial describing every actual root modulo p^N. Consequently every k-by-k matrix of polynomial evaluations at actual affine curve points in that class has determinant divisible by p^(k*(k-1)/2). A generic nilpotent-ring version is also proved.",
+      "proposed_revision": "Use the internally proved smooth-class determinant theorem, then separately justify the projective coordinate normalization, prime selection, auxiliary forms and global counting steps.",
+      "impact": "Discharges the actual affine local determinant step without an analytic branch or counting assumption. The projective and global sharp b>=2 Heath-Brown argument remains open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.SmoothCurveDeterminant.substitution_eval",
+        "PaperP1.SmoothCurveDeterminant.nilpotent_curve_dvd",
+        "PaperP1.SmoothCurveDeterminant.smooth_curve_det_zero",
+        "PaperP1.SmoothCurveDeterminant.integer_smooth_dvd",
+        "PaperP1.SmoothIntegerCongruenceBranch.unit_mod_prime_power",
+        "PaperP1.SmoothIntegerCongruenceBranch.implicit_mod_prime_power",
+        "PaperP1.SmoothCurveDeterminant.substitution"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15597 jobs); direct axiom audit passed for 14258 declarations using only propext, Classical.choice and Quot.sound; all 13540 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.26 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
