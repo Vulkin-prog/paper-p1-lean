@@ -37206,7 +37206,8 @@
           ],
           "checkpoint": "P1-MATH-0458"
         }
-      ]
+      ],
+      "validation_commit": "6bbc8e0993a0e256fd385a13e3619674b48c5bf2"
     },
     {
       "label": "p1:limits:private-exact",
@@ -37972,7 +37973,8 @@
           ],
           "checkpoint": "P1-MATH-0458"
         }
-      ]
+      ],
+      "validation_commit": "6bbc8e0993a0e256fd385a13e3619674b48c5bf2"
     },
     {
       "label": "p1:limits:all-anchors",
