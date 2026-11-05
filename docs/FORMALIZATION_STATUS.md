@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records367 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records368 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14379 audited theorem/lemma declarations**. This
+- The project currently has **14384 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25024,3 +25024,16 @@ This closes the coefficient-height reduction as well as the earlier coefficient-
 P1-MATH-0369 adds six theorems and one ordinary input definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records367 improvements and two statement-scope corrections. No axiom, new unproved premise beyond the explicit strict controlled-height restriction, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15651 jobs); direct axiom audit passed for 14379 declarations using only propext, Classical.choice and Quot.sound; all 13677 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.92 GiB.
+
+
+## Finite coefficient-height budget for every fixed integer-linear transformation
+
+LinearPolynomialHeightTransport.linear_height proves that every fixed integer-linear transformation T of nested integer polynomials satisfies height(T(P))<=height(P)*budget(D,T) whenever the actual total degree of P is at most D. The explicit finite budget is the sum of the actual heights of the transformed triangular basis monomials. It depends only on D and T, not on P or its coefficients.
+
+height_smul and height_sum prove the literal integer scalar and finite sum height inequalities. expansion gives exact scalar expansion in the triangular degree-D basis. finite_family_height bounds every transformation in an arbitrary actual finite family using one finite maximum of these budgets. No continuity, bounded-operator or coefficient-control premise is assumed.
+
+These checked finite coefficient budgets prepare bounded integer coordinate changes in the remaining geometric plane argument. They do not prove the still-open controlled-height geometric BCN count or the full original all-dimensional main13.4 statement.
+
+P1-MATH-0370 adds five theorems and two actual basis/budget definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records368 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15653 jobs); direct axiom audit passed for 14384 declarations using only propext, Classical.choice and Quot.sound; all 13684 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.90 GiB.

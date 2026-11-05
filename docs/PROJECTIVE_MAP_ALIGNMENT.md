@@ -17534,3 +17534,16 @@ This closes the coefficient-height reduction as well as the earlier coefficient-
 P1-MATH-0369 adds six theorems and one ordinary input definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records367 improvements and two statement-scope corrections. No axiom, new unproved premise beyond the explicit strict controlled-height restriction, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15651 jobs); direct axiom audit passed for 14379 declarations using only propext, Classical.choice and Quot.sound; all 13677 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.92 GiB.
+
+
+## Finite coefficient-height budget for every fixed integer-linear transformation
+
+LinearPolynomialHeightTransport.linear_height proves that every fixed integer-linear transformation T of nested integer polynomials satisfies height(T(P))<=height(P)*budget(D,T) whenever the actual total degree of P is at most D. The explicit finite budget is the sum of the actual heights of the transformed triangular basis monomials. It depends only on D and T, not on P or its coefficients.
+
+height_smul and height_sum prove the literal integer scalar and finite sum height inequalities. expansion gives exact scalar expansion in the triangular degree-D basis. finite_family_height bounds every transformation in an arbitrary actual finite family using one finite maximum of these budgets. No continuity, bounded-operator or coefficient-control premise is assumed.
+
+These checked finite coefficient budgets prepare bounded integer coordinate changes in the remaining geometric plane argument. They do not prove the still-open controlled-height geometric BCN count or the full original all-dimensional main13.4 statement.
+
+P1-MATH-0370 adds five theorems and two actual basis/budget definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records368 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15653 jobs); direct axiom audit passed for 14384 declarations using only propext, Classical.choice and Quot.sound; all 13684 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.90 GiB.

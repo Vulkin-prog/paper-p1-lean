@@ -1424,6 +1424,11 @@ import PaperP1
 #print axioms PaperP1.LinearHilbertSlopeComparison.piece_finrank_le
 #print axioms PaperP1.LinearHilbertSlopeComparison.slope_le_of_injective
 #print axioms PaperP1.LinearHilbertSlopeComparison.multiplicity_eq_slope
+#print axioms PaperP1.LinearPolynomialHeightTransport.height_smul
+#print axioms PaperP1.LinearPolynomialHeightTransport.height_sum
+#print axioms PaperP1.LinearPolynomialHeightTransport.expansion
+#print axioms PaperP1.LinearPolynomialHeightTransport.linear_height
+#print axioms PaperP1.LinearPolynomialHeightTransport.finite_family_height
 #print axioms PaperP1.LinearRationalGraph.exists_parameters
 #print axioms PaperP1.LocalizationIrreducibleLift.exists_associated
 #print axioms PaperP1.LocalizationPrimeHeightEquiv.height_comap
