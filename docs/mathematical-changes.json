@@ -20123,6 +20123,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "0bd7d43f24552ec9dc194f22b8b293091d6c1c2b"
+    },
+    {
+      "id": "P1-MATH-0385",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The controlled-height conic count still displayed a nonzero norm constant and coordinate-dependent non-degeneracy conditions as extra assumptions.",
+      "finding": "Geometric irreducibility now proves a nonzero norm constant whenever the quadratic outer coefficient is nonzero, including parabolas, and proves the shear-invariant degeneracy determinant nonzero for every actual degree-two geometric plane equation.",
+      "proposed_revision": "Remove these additional non-degeneracy premises from the geometric conic counting route, applying the constructed full-degree shear and the proved scalar-extension identifications.",
+      "impact": "Closes geometric conic non-degeneracy by explicit polynomial factorizations over algebraically closed fields. Remaining arithmetic branches and BCN stay open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.ConicIrreducibility.square_identity",
+        "PaperP1.ConicIrreducibility.norm_identity",
+        "PaperP1.ConicIrreducibility.coefficient_map_form",
+        "PaperP1.ConicIrreducibility.integer_form",
+        "PaperP1.ConicIrreducibility.complex_form",
+        "PaperP1.ConicIrreducibility.not_isUnit_of_outer_coefficient",
+        "PaperP1.ConicIrreducibility.irreducible_normConstant_ne_zero",
+        "PaperP1.ConicIrreducibility.geometric_normConstant_ne_zero",
+        "PaperP1.ConicIrreducibility.grid_normConstant_ne_zero",
+        "PaperP1.ConicIrreducibility.geometric_determinant_ne_zero",
+        "PaperP1.ConicIrreducibility.form",
+        "PaperP1.ConicIrreducibility.square",
+        "PaperP1.ConicIrreducibility.first"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15685 jobs); direct axiom audit passed for 14480 declarations using only propext, Classical.choice and Quot.sound; all 13803 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.68 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

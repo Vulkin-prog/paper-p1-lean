@@ -3556,3 +3556,4 @@ public import PaperP1.Algebra.ConicPolynomialPresentation
 public import PaperP1.Diophantine.SignedQuadraticCount
 public import PaperP1.Diophantine.PositiveDiscriminantConicCount
 public import PaperP1.Algebra.ConicCoordinateChanges
+public import PaperP1.Algebra.ConicIrreducibility

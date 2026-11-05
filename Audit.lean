@@ -761,6 +761,16 @@ import PaperP1
 #print axioms PaperP1.ConicCoordinateChanges.discriminant_shear
 #print axioms PaperP1.ConicCoordinateChanges.determinant_shear
 #print axioms PaperP1.ConicCoordinateChanges.height_shear
+#print axioms PaperP1.ConicIrreducibility.square_identity
+#print axioms PaperP1.ConicIrreducibility.norm_identity
+#print axioms PaperP1.ConicIrreducibility.coefficient_map_form
+#print axioms PaperP1.ConicIrreducibility.integer_form
+#print axioms PaperP1.ConicIrreducibility.complex_form
+#print axioms PaperP1.ConicIrreducibility.not_isUnit_of_outer_coefficient
+#print axioms PaperP1.ConicIrreducibility.irreducible_normConstant_ne_zero
+#print axioms PaperP1.ConicIrreducibility.geometric_normConstant_ne_zero
+#print axioms PaperP1.ConicIrreducibility.grid_normConstant_ne_zero
+#print axioms PaperP1.ConicIrreducibility.geometric_determinant_ne_zero
 #print axioms PaperP1.ConicNormCoordinates.coefficient_bounds
 #print axioms PaperP1.ConicNormCoordinates.square_identity
 #print axioms PaperP1.ConicNormCoordinates.norm_identity

@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records382 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records383 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14470 audited theorem/lemma declarations**. This
+- The project currently has **14480 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25225,3 +25225,18 @@ These identities prepare the discharge of geometric non-degeneracy and remove co
 P1-MATH-0384 adds ten theorems and two definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records382 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15683 jobs); direct axiom audit passed for 14470 declarations using only propext, Classical.choice and Quot.sound; all 13790 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.70 GiB.
+
+
+## Geometric irreducibility proves conic non-degeneracy
+
+ConicIrreducibility proves that a geometrically irreducible actual integer conic with a nonzero quadratic outer coefficient has nonzero norm constant delta. This includes the zero-discriminant parabolic case. grid_normConstant_ne_zero supplies the literal polynomial-grid interface, deriving the nonzero quadratic coefficient from the actual outer degree. geometric_determinant_ne_zero proves that the shear-invariant degeneracy invariant J is nonzero for every actual geometrically irreducible integer plane equation of exact total degree two, with no coordinate-specific nonzero assumption.
+
+The central irreducible_normConstant_ne_zero theorem is proved over every algebraically closed field of characteristic zero. If delta vanished, the zero-discriminant case would have beta=0 and the completed square would factor the original conic into two nonunit linear factors. In the nonzero-discriminant case, a square root of Delta supplies two actual nonunit linear factors through the norm identity. Nonunit status is proved by their actual outer coefficient. Both factorizations contradict irreducibility after accounting for the nonzero scalar unit.
+
+The polynomial square and norm identities work over arbitrary commutative rings. Coefficient-map compatibility is proved, and the actual integer presentation is identified with its complex scalar extension before applying the general field result. The final invariant theorem constructs the bounded full-degree integer shear, preserves geometric irreducibility, and transports the already proved invariant J back to the original equation. No counting or non-degeneracy input is assumed.
+
+This discharges the extra nonzero-norm-constant condition in the geometric conic route. Assembling the positive-discriminant count in original coordinates is the next step; negative-discriminant counts, the parabolic count, full BCN and original main13.4 remain open. No original numbered result is promoted.
+
+P1-MATH-0385 adds ten theorems and three definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records383 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15685 jobs); direct axiom audit passed for 14480 declarations using only propext, Classical.choice and Quot.sound; all 13803 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.68 GiB.
