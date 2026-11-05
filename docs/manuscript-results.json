@@ -2487,7 +2487,8 @@
           "scope": "All exact main6.4 clauses, with stronger correction exponent1. Internal fixed actual activity and finite moment/cumulant identities; independent of count-law reconstruction. No growing-order correction or general geometric property asserted.",
           "checkpoint": "P1-MATH-0437"
         }
-      ]
+      ],
+      "validation_commit": "1c564c64e18411b75f39d086280d607b66480b5a"
     },
     {
       "label": "p1:core:rankin",
