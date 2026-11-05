@@ -5262,7 +5262,8 @@
           ]
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15715 jobs); direct axiom audit passed for 14549 declarations using only propext, Classical.choice and Quot.sound; all 13881 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.50 GiB."
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15715 jobs); direct axiom audit passed for 14549 declarations using only propext, Classical.choice and Quot.sound; all 13881 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.50 GiB.",
+      "validation_commit": "c04d6fa5f27405c0fc4c1d2d1770c1f64a4b1af5"
     },
     {
       "label": "p13:rig:sublinear-grid",
