@@ -411,7 +411,8 @@
             "PaperP1.OptimalNominalQuadratic.article_17_3"
           ]
         }
-      ]
+      ],
+      "validation_commit": "e271638ccf694442d15992551c4be44f7a5cc648"
     },
     {
       "label": "p1:cor:explicit",
@@ -11771,7 +11772,8 @@
             "PaperP1.OptimalNominalQuadratic.article_17_3"
           ]
         }
-      ]
+      ],
+      "validation_commit": "e271638ccf694442d15992551c4be44f7a5cc648"
     },
     {
       "label": "p13:channels:hierarchy",
