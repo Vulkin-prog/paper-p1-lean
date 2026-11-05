@@ -3543,3 +3543,4 @@ public import PaperP1.Arithmetic.SmallHeightGeometricPlanePointInput
 public import PaperP1.Algebra.LinearPolynomialHeightTransport
 public import PaperP1.Algebra.GeometricBiformDegrees
 public import PaperP1.Asymptotics.HeightControlledBiformCount
+public import PaperP1.Arithmetic.CoarseGeometricPlaneCount

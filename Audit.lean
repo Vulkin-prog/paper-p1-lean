@@ -3497,6 +3497,12 @@ import PaperP1
 #print axioms PaperP1.CleanPivotTargets.cover_by_deleted
 #print axioms PaperP1.CleanPivotTargets.card_deletion_ledger
 #print axioms PaperP1.CleanPivotTargets.clean_lower
+#print axioms PaperP1.CoarseGeometricPlaneCount.lift_injective
+#print axioms PaperP1.CoarseGeometricPlaneCount.lift_primitive
+#print axioms PaperP1.CoarseGeometricPlaneCount.lift_curve
+#print axioms PaperP1.CoarseGeometricPlaneCount.lift_box
+#print axioms PaperP1.CoarseGeometricPlaneCount.height_controlled_count
+#print axioms PaperP1.CoarseGeometricPlaneCount.unconditional_count
 #print axioms PaperP1.CodedClassTargets.mem_pool
 #print axioms PaperP1.CodedClassTargets.card_pool
 #print axioms PaperP1.CodedClassTargets.mem_equations

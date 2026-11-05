@@ -19702,6 +19702,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "b94bc00cbe978b45f994170206bfed6ed5c82261"
+    },
+    {
+      "id": "P1-MATH-0373",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The full geometric biform estimate and coefficient-height reductions had not yet been assembled into any unconditional coefficient-uniform plane counting theorem.",
+      "finding": "An unconditional plane bound K(D,epsilon)*H^(4/D+epsilon) now holds uniformly over all geometrically irreducible integer equations of each fixed total degree D>=2, without a coefficient-height or unproved counting hypothesis.",
+      "proposed_revision": "Record this intermediate plane theorem separately from the stronger BCN target. Its proof combines primitive projective lifts, the larger partial degree, small-population absorption and the internally constructed bounded-height equation.",
+      "impact": "Closes an unconditional coefficient-uniform fixed-degree plane estimate. The sharper degree-uniform BCN property and original all-dimensional main13.4 remain unproved; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.CoarseGeometricPlaneCount.lift_injective",
+        "PaperP1.CoarseGeometricPlaneCount.lift_primitive",
+        "PaperP1.CoarseGeometricPlaneCount.lift_curve",
+        "PaperP1.CoarseGeometricPlaneCount.lift_box",
+        "PaperP1.CoarseGeometricPlaneCount.height_controlled_count",
+        "PaperP1.CoarseGeometricPlaneCount.unconditional_count",
+        "PaperP1.CoarseGeometricPlaneCount.lift"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15659 jobs); direct axiom audit passed for 14399 declarations using only propext, Classical.choice and Quot.sound; all 13700 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.86 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
