@@ -3535,3 +3535,4 @@ public import PaperP1.Asymptotics.CompanionKernelCounts
 public import PaperP1.Asymptotics.SharpProfilesUnderGeometry
 public import PaperP1.Algebra.ScalarComponentPoints
 public import PaperP1.Algebra.ManyPointsScalarDescent
+public import PaperP1.Arithmetic.RationalGeometricPlanePointInput

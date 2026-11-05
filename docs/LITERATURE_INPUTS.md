@@ -25156,3 +25156,18 @@ This is an actual scalar-descent theorem, not a point-count input or a presumed 
 P1-MATH-0364 adds five theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records362 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15641 jobs); direct axiom audit passed for 14346 declarations using only propext, Classical.choice and Quot.sound; all 13637 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.99 GiB.
+
+
+## Remaining plane BCN input reduced to rational geometric equations
+
+Stable ID: p1:internal:rational-geometric-plane-point-input. The rational geometric Input remains an ordinary unproved argument. The coefficient-field reduction is proved; neither rational BCN nor the full original main13.4 is claimed.
+
+RationalGeometricPlanePointInput.geometric_input reduces the remaining characteristic-zero geometric plane BCN property to its strict subcase of rational-coefficient absolutely irreducible plane equations of degree at least two. The same logarithmic exponent is retained, with the already explicit constant enlargement max(c,3/(log2)^kappa). No rational geometric BCN estimate is proved or assumed to be automatically true: Input c kappa is an ordinary explicit unproved argument.
+
+For an actual integer grid over any characteristic-zero coefficient field embedded in the complex numbers, populations at most the degree square are absorbed by degree_square_budget. Larger populations descend to a rational irreducible equation by checkpoint364, with exact preserved degree and all original points retained. extend_tower and absolute_of_associated_extension prove that absolute irreducibility also descends through the actual scalar tower. The rational grid count then bounds the original grid. field_input combines this with the already proved linear and non-geometric cases to recover the full field-polynomial BCN property, with no second constant enlargement. integer_input gives its integer specialization. restriction_of_geometric_input verifies the converse restriction.
+
+This closes the coefficient-field translation for the plane BCN estimate: only the rational absolute-geometric degree>=2 count remains as the unproved plane input. It does not prove that remaining count, nor the full original all-dimensional integral-curve statement of main13.4.
+
+P1-MATH-0365 adds seven theorems and one ordinary input definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records363 improvements and two statement-scope corrections. No axiom, new unproved premise beyond the explicit strict rational restriction, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15643 jobs); direct axiom audit passed for 14353 declarations using only propext, Classical.choice and Quot.sound; all 13645 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.98 GiB.

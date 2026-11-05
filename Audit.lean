@@ -5261,6 +5261,13 @@ import PaperP1
 #print axioms PaperP1.RationalDivisibilityFilters.normalized_dvd
 #print axioms PaperP1.RationalDivisibilityFilters.intersection_union_subset
 #print axioms PaperP1.RationalDivisibilityFilters.intersection_union_bound
+#print axioms PaperP1.RationalGeometricPlanePointInput.extend_tower
+#print axioms PaperP1.RationalGeometricPlanePointInput.absolute_of_associated_extension
+#print axioms PaperP1.RationalGeometricPlanePointInput.degree_square_budget
+#print axioms PaperP1.RationalGeometricPlanePointInput.geometric_input
+#print axioms PaperP1.RationalGeometricPlanePointInput.field_input
+#print axioms PaperP1.RationalGeometricPlanePointInput.integer_input
+#print axioms PaperP1.RationalGeometricPlanePointInput.restriction_of_geometric_input
 #print axioms PaperP1.RationalGridLineObstruction.two_matches
 #print axioms PaperP1.RationalGridLineObstruction.rational_graph
 #print axioms PaperP1.RationalTripleDensity.pairDensity_comm
