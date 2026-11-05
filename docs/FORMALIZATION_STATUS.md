@@ -11,7 +11,7 @@ Companion T1.5 is complete conditionally on the same geometric Heath-Brown bifor
 
 Companion T1.4 is complete conditionally on HeathBrownBiformInput.Input. NonGeometricBiformInput.Input and the sufficient rational-singularity implication are internally proved with the exact constant8*a*b^2 (P1-MATH-0330). The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. The geometric Heath-Brown ordinary input remains unproved. The three incomplete original numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records329 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records330 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14159 audited theorem/lemma declarations**. This
+- The project currently has **14161 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24540,3 +24540,16 @@ These are direct instantiations of the existing checked count proofs with an int
 P1-MATH-0331 makes the reduced premise list visible directly in the canonical source theorem types. T1.4, T1.5 and T1.13 remain conditional, with only the geometric Heath-Brown biform premise unproved. Coverage stays89 proved and75 conditional out of167 (164 completed). There are329 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. The other geometric obligations and main13.4 remain open. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15549 jobs); direct axiom audit passed for 14159 declarations using only propext, Classical.choice and Quot.sound; all 13429 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.47 GiB.
+
+
+## Canonical corrected sharp profiles with the non-geometric premise discharged
+
+The two checked sharp31/24 weighted profile variants now have direct canonical declarations that instantiate the internally proved non-geometric input. SharpProfilesUnderHeathBrown.dyadic_profile and expanded_profile preserve the actual old profile definitions, all weights, degree choices, common thresholds and geometry quantifiers. Their remaining ordinary unproved arguments are the geometric Heath-Brown estimate, two surface-cover properties and two degree-specific families of normalized curve bounds.
+
+The exact checked revised domains remain unchanged: the old radius is Dold*(L+1), nonalignment uses the enlarged radius with Dold>=1, and (2*Dold+1)*(L+1)<=H<=Dcut*(L+1). The first variant has both centres in I_N; the second has the old centre in [N,N+Q*N) and the new centre in I_N. The declarations reuse the same profile definitions. They do not assert any additional comparable-centre arrangement.
+
+These declarations directly instantiate the existing checked31/24 proofs with ComplexProjectiveIrreducibility.nongeometric_input. The numerical exponent, weights and geometric premises are preserved. The original literal radius-one T1.10 assertion remains disproved by P1-MATH-0162. Its original baseline row therefore stays in progress; the checked revised variants are recorded separately with their exact domains and the reduced list of unproved arguments.
+
+P1-MATH-0332 makes the discharged non-geometric premise visible directly in both revised profile theorem types. Coverage stays89 proved and75 conditional out of167 (164 completed). There are330 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Main13.4 and the recorded geometric inputs remain open. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15551 jobs); direct axiom audit passed for 14161 declarations using only propext, Classical.choice and Quot.sound; all 13431 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.45 GiB.

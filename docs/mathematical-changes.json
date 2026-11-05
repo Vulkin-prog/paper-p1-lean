@@ -18331,6 +18331,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "05faa4e861a2ba5b7b2239f1f44126c087afb668"
+    },
+    {
+      "id": "P1-MATH-0332",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:asymmetric",
+        "number": "T1.10",
+        "page": 14,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 811,
+        "statement_sha256": "e176fe0574fc119242f3c523853be4fdc4ff53b0366327c5f6387f1af29c802a"
+      },
+      "original_assumption": "The checked corrected31/24 profile declarations still carried a separate non-geometric biform argument after that input had been proved internally.",
+      "finding": "Both exact revised profile statements now instantiate the internally proved non-geometric input. The geometric Heath-Brown premise and four stated geometric properties remain explicit, with identical weights, domains and quantifier order.",
+      "proposed_revision": "Use the reduced-premise canonical profile declarations on exactly the checked revised domains, preserving the radius correction and the original counterexample record.",
+      "impact": "Exposes the internal non-geometric proof in the two corrected profile APIs. Their numerical scope and remaining geometric inputs are unchanged; the false original T1.10 row is not counted as proved.",
+      "evidence": [
+        "PaperP1.SharpProfilesUnderHeathBrown.dyadic_profile",
+        "PaperP1.SharpProfilesUnderHeathBrown.expanded_profile"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15551 jobs); direct axiom audit passed for 14161 declarations using only propext, Classical.choice and Quot.sound; all 13431 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.45 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

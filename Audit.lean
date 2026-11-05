@@ -8639,6 +8639,8 @@ import PaperP1
 #print axioms PaperP1.SharpPairActivityUnderInputs.uniform_principal_profile
 #print axioms PaperP1.SharpPairActivityUnderInputs.uniform_pair_activity
 #print axioms PaperP1.SharpPairTargetDeficitUnderInputs.article_11_1
+#print axioms PaperP1.SharpProfilesUnderHeathBrown.dyadic_profile
+#print axioms PaperP1.SharpProfilesUnderHeathBrown.expanded_profile
 #print axioms PaperP1.SharpRetainedConversionUnderInputs.companion_T17_4
 #print axioms PaperP1.SharpRunConversionUnderInputs.uniform_cumulant
 #print axioms PaperP1.SharpRunConversionUnderInputs.uniform_conversion
