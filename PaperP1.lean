@@ -3792,3 +3792,15 @@ public import PaperP1.Arithmetic.ComponentIntersectionLower
 public import PaperP1.Asymptotics.BoundedWidthNonalignedPairs
 public import PaperP1.Asymptotics.BoundedWidthPhysicalGroupCount
 public import PaperP1.Asymptotics.BoundedWidthPhysicalKernelWitness
+public import PaperP1.Arithmetic.ShiftedWindowNonalignment
+public import PaperP1.Arithmetic.SupportedEvenSquareClasses
+public import PaperP1.Asymptotics.BoundedWidthPrimeConstraintCost
+public import PaperP1.Asymptotics.PositionalErasureTheorem
+public import PaperP1.Asymptotics.PrivatePairInteractionMass
+public import PaperP1.Asymptotics.SharpOnceAllCoupling
+public import PaperP1.Asymptotics.SubsetComponentIntersectionLower
+public import PaperP1.Asymptotics.SubsetDenseNonalignedHosts
+public import PaperP1.Asymptotics.SubsetInteractionMass
+public import PaperP1.Asymptotics.TwoGoodEdgeSecondMoment
+public import PaperP1.Asymptotics.TwoGoodPairMass
+public import PaperP1.Asymptotics.WindowPairNonalignedMass

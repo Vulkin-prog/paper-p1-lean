@@ -5744,6 +5744,7 @@ import PaperP1
 #print axioms PaperP1.ShiftedAsymmetricPopulation.pair_weight_lower
 #print axioms PaperP1.ShiftedAsymmetricPopulation.total_lower
 #print axioms PaperP1.ShiftedDivisibilityCount.uniform_finite
+#print axioms PaperP1.ShiftedWindowNonalignment.of_compressed
 #print axioms PaperP1.ShortBasisActualSpace.physical_support_card_le
 #print axioms PaperP1.ShortBasisActualSpace.finite_certificate
 #print axioms PaperP1.ShortBasisActualSpace.projections_nonzero
@@ -6090,6 +6091,7 @@ import PaperP1
 #print axioms PaperP1.SupportRankinTail.rankin_term
 #print axioms PaperP1.SupportRankinTail.support_tail_le
 #print axioms PaperP1.SupportRankinTail.rough_euler_bound
+#print axioms PaperP1.SupportedEvenSquareClasses.combination_mem
 #print axioms PaperP1.TargetUnionGeometry.old_radius
 #print axioms PaperP1.TargetUnionGeometry.new_radius
 #print axioms PaperP1.TargetUnionGeometry.all_abs_bound
@@ -6913,6 +6915,7 @@ import PaperP1
 #print axioms PaperP1.BoundedWidthNonalignedPairs.uniform_intersection_hosts
 #print axioms PaperP1.BoundedWidthPhysicalGroupCount.uniform_count_active
 #print axioms PaperP1.BoundedWidthPhysicalKernelWitness.uniform_witness
+#print axioms PaperP1.BoundedWidthPrimeConstraintCost.uniform_cost
 #print axioms PaperP1.CanonicalInteriorCount.uniform_fixed_coefficients
 #print axioms PaperP1.CanonicalInteriorSmoothCount.uniform_count
 #print axioms PaperP1.ChannelCompressedActivityBounds.data
@@ -8778,6 +8781,7 @@ import PaperP1
 #print axioms PaperP1.PositionalDeletionTransfer.uniform_weighted_comparison
 #print axioms PaperP1.PositionalDeletionTransferUnderInputs.uniform_original_moments
 #print axioms PaperP1.PositionalDeletionTransferUnderInputs.uniform_weighted_comparison
+#print axioms PaperP1.PositionalErasureTheorem.companion_T19_10
 #print axioms PaperP1.PositionalFullApproximation.uniform_norm_bound
 #print axioms PaperP1.PositionalFullApproximation.uniform_probability_bound
 #print axioms PaperP1.PositionalFullApproximationUnderInputs.uniform_norm_bound
@@ -8986,6 +8990,7 @@ import PaperP1
 #print axioms PaperP1.PrivateChannelMassRate.mass_error_square_log
 #print axioms PaperP1.PrivateChannelMassRate.mass_error_rpow
 #print axioms PaperP1.PrivateChannelPositiveProfile.uniform_error
+#print axioms PaperP1.PrivatePairInteractionMass.uniform_bound
 #print axioms PaperP1.PrivatePairInteractionMassUnderInputs.uniform_bound
 #print axioms PaperP1.ProfileCentreCount.centre_count
 #print axioms PaperP1.ProfileRecordCount.record_count
@@ -9283,6 +9288,9 @@ import PaperP1
 #print axioms PaperP1.SharpFixedChannelNonalignedMassUnderInputs.uniform_bound
 #print axioms PaperP1.SharpIncompatibleActivity.uniform_range
 #print axioms PaperP1.SharpIncompatibleActivityUnderInputs.uniform_range
+#print axioms PaperP1.SharpOnceAllCoupling.actual_second_le_homogeneous
+#print axioms PaperP1.SharpOnceAllCoupling.uniform_second
+#print axioms PaperP1.SharpOnceAllCoupling.companion_T19_10_sharp
 #print axioms PaperP1.SharpOnceAllCouplingUnderInputs.actual_second_le_homogeneous
 #print axioms PaperP1.SharpOnceAllCouplingUnderInputs.uniform_second
 #print axioms PaperP1.SharpOnceAllCouplingUnderInputs.companion_T19_10_sharp
@@ -9520,10 +9528,13 @@ import PaperP1
 #print axioms PaperP1.SubsetComponentHostData.mem_typed
 #print axioms PaperP1.SubsetComponentHostData.exists_general
 #print axioms PaperP1.SubsetComponentHostData.exists_linear
+#print axioms PaperP1.SubsetComponentIntersectionLower.finite_bound
 #print axioms PaperP1.SubsetComponentSystems.exists_general
 #print axioms PaperP1.SubsetComponentSystems.exists_linear
 #print axioms PaperP1.SubsetDefectDensity.uniform_constant
 #print axioms PaperP1.SubsetDefectDensity.uniform_density
+#print axioms PaperP1.SubsetDenseNonalignedHosts.uniform_dense
+#print axioms PaperP1.SubsetInteractionMass.uniform_bound
 #print axioms PaperP1.SubsetInteractionMassUnderInputs.uniform_bound
 #print axioms PaperP1.SubsetKernelPowers.uniform_global
 #print axioms PaperP1.SubsetKernelPowers.few_components
@@ -9624,10 +9635,20 @@ import PaperP1
 #print axioms PaperP1.TwoChannelReferenceUnderInputs.uniform_equivalents
 #print axioms PaperP1.TwoDependentPairJointMass.uniform_bound
 #print axioms PaperP1.TwoDependentPairJointMassUnderInputs.uniform_bound
+#print axioms PaperP1.TwoGoodEdgeSecondMoment.finite_upper
+#print axioms PaperP1.TwoGoodEdgeSecondMoment.uniform_error
+#print axioms PaperP1.TwoGoodEdgeSecondMoment.companion_T1_17
+#print axioms PaperP1.TwoGoodEdgeSecondMoment.companion_T1_17_original
 #print axioms PaperP1.TwoGoodEdgeSecondMomentUnderInputs.finite_upper
 #print axioms PaperP1.TwoGoodEdgeSecondMomentUnderInputs.uniform_error
 #print axioms PaperP1.TwoGoodEdgeSecondMomentUnderInputs.companion_T1_17
 #print axioms PaperP1.TwoGoodEdgeSecondMomentUnderInputs.companion_T1_17_original
+#print axioms PaperP1.TwoGoodPairMass.uniform_channel
+#print axioms PaperP1.TwoGoodPairMass.principal_interactions
+#print axioms PaperP1.TwoGoodPairMass.uniform_homogeneous_second
+#print axioms PaperP1.TwoGoodPairMass.nominal_second_eq
+#print axioms PaperP1.TwoGoodPairMass.companion_T1_12_two_pairs
+#print axioms PaperP1.TwoGoodPairMass.companion_T1_12_two_pairs_original
 #print axioms PaperP1.TwoGoodPairMassUnderInputs.uniform_channel
 #print axioms PaperP1.TwoGoodPairMassUnderInputs.principal_interactions
 #print axioms PaperP1.TwoGoodPairMassUnderInputs.uniform_homogeneous_second
@@ -9791,6 +9812,8 @@ import PaperP1
 #print axioms PaperP1.WideQuadraticKernelCount.uniform_affine_count
 #print axioms PaperP1.WideQuadraticSquarePartCount.reciprocal_budget
 #print axioms PaperP1.WideQuadraticSquarePartCount.second_branch_count
+#print axioms PaperP1.WindowPairNonalignedMass.fixed_offsets
+#print axioms PaperP1.WindowPairNonalignedMass.uniform_bound
 #print axioms PaperP1.WindowPairNonalignedMassUnderInputs.fixed_offsets
 #print axioms PaperP1.WindowPairNonalignedMassUnderInputs.uniform_bound
 #print axioms PaperP1.ZeroDegreeAuxiliaryCounts.polylog_shift_budget

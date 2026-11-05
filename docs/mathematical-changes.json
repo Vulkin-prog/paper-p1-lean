@@ -22339,6 +22339,56 @@
         "status": "not_integrated"
       },
       "validation_commit": "f865111d1ba6f5ce935c0eacecaeb00634f2c634"
+    },
+    {
+      "id": "P1-MATH-0445",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:twogoodpositive",
+        "number": "T1.17",
+        "page": 19,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 1199,
+        "statement_sha256": "be55642021944d9eabbc4a130b9b44d199f05d751d860a5b47b42c715c03a25b"
+      },
+      "original_assumption": "The sharp actual positive two-good-edge moment and remainingO(a_N^2) field-erasure assertions retained source/ordinary surface covers and normalized curve counts through the nonaligned compressed subset interaction.",
+      "finding": "The actual pinned component subspace maps injectively into the exact old/new subset intersection. Independent-width confinement and exact shifted nonalignment make every dense subset population subpower, which closes the full compressed interaction and sharp actual two-edge and natural-coupling results.",
+      "proposed_revision": "Replace the geometric surface/curve route for these exact two-edge applications by pinned-support component intersection, bounded-width confinement and a two-sector sparse/dense sum. Preserve actual positive moments, homogeneous raw-channel scope, fixed-constant sharp bounds, true background probability and common-threshold field/intensity/covariance conclusions.",
+      "impact": "Full companionT1.17 andT19.10 become unconditional, including the sharpO(a_N^2) activation, TV and Wasserstein costs. The two-edge clause ofT1.12 also becomes unconditional, while its other clauses remain separate. Coverage becomes137 proved,27 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.ShiftedWindowNonalignment.of_compressed",
+        "PaperP1.SupportedEvenSquareClasses.combination_mem",
+        "PaperP1.BoundedWidthPrimeConstraintCost.uniform_cost",
+        "PaperP1.PositionalErasureTheorem.companion_T19_10",
+        "PaperP1.PrivatePairInteractionMass.uniform_bound",
+        "PaperP1.SharpOnceAllCoupling.actual_second_le_homogeneous",
+        "PaperP1.SharpOnceAllCoupling.uniform_second",
+        "PaperP1.SharpOnceAllCoupling.companion_T19_10_sharp",
+        "PaperP1.SubsetComponentIntersectionLower.finite_bound",
+        "PaperP1.SubsetDenseNonalignedHosts.uniform_dense",
+        "PaperP1.SubsetInteractionMass.uniform_bound",
+        "PaperP1.TwoGoodEdgeSecondMoment.finite_upper",
+        "PaperP1.TwoGoodEdgeSecondMoment.uniform_error",
+        "PaperP1.TwoGoodEdgeSecondMoment.companion_T1_17",
+        "PaperP1.TwoGoodEdgeSecondMoment.companion_T1_17_original",
+        "PaperP1.TwoGoodPairMass.uniform_channel",
+        "PaperP1.TwoGoodPairMass.principal_interactions",
+        "PaperP1.TwoGoodPairMass.uniform_homogeneous_second",
+        "PaperP1.TwoGoodPairMass.nominal_second_eq",
+        "PaperP1.TwoGoodPairMass.companion_T1_12_two_pairs",
+        "PaperP1.TwoGoodPairMass.companion_T1_12_two_pairs_original",
+        "PaperP1.WindowPairNonalignedMass.fixed_offsets",
+        "PaperP1.WindowPairNonalignedMass.uniform_bound",
+        "PaperP1.TwoGoodPairMass.nominalSecond"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16179 jobs); direct axiom audit passed for 15039 declarations using only propext, Classical.choice and Quot.sound; all 14410 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.07 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

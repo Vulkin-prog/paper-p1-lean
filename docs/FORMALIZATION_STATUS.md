@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+CompanionT1.17 andT19.10 are unconditional (P1-MATH-0445): full positive two-good-edge moment, actual original field/intensity/covariance comparisons and sharpO(a_N^2) activation/TV/Wasserstein coupling. Pinned-support confinement closes the complete compressed two-edge sector; the separate single-target refinements ofT1.12 remain conditional.
+
 P1-MATH-0444 extends internal confinement to independent bounded logarithmic physical widths and comparable centers, with an exact finite selected-component lower rank bound. Compressed pinned-support transport and fullT1.17 remain separate; numbered coverage is unchanged.
 
 CompanionT19.14 is unconditional (P1-MATH-0443): complete all-pair erasure costs, retained-space geometry and every original-law first-order criterion. ActualT19.10 intensity/covariance conclusions are unconditional; its additionalO(a_N^2) assertions remain conditional.
@@ -33,7 +35,7 @@ CompanionT14.1 is unconditional (P1-MATH-0431), with connected activity strength
 
 CompanionT1.8 is unconditional (P1-MATH-0430): exact dense-component to actual-rank transfer gives subpower nonaligned hosts and both printed kernel sumsN^(1+epsilon), including the full value kernel without block-parity rows.
 
-Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is135 proved,29 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
+Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is137 proved,27 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
 
 The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. The full arbitrary-source statement was subsequently discharged at P1-MATH-0429.
 
@@ -75,7 +77,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is135/167 unconditional and29 conditional (164/167 completed). The project records442 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is137/167 unconditional and27 conditional (164/167 completed). The project records443 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -194,7 +196,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15016 audited theorem/lemma declarations**. This
+- The project currently has **15039 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26235,3 +26237,24 @@ The complete originalT1.17 statement and proof in companion_sections/arithmetic_
 P1-MATH-0444 adds four modules and six theorems. Coverage remains135 proved,29 conditional and3 in_progress out of167, with164 completed. The project records442 improvements and two statement-scope corrections. Original source bytes and compiler/dependency pins remain unchanged. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16155 jobs); direct axiom audit passed for 15016 declarations using only propext, Classical.choice and Quot.sound; all 14386 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.13 GiB.
+
+
+## Unconditional positive two good edge moment and complete original field erasure
+
+Companion LemmaT1.17 and PropositionT19.10 now have unconditional canonical proofs in their complete original scopes. TwoGoodEdgeSecondMoment.companion_T1_17_original proves the actual positive good-edge factorial second moment is asymptotic tobeta_N^2, its true fixed-constant upper bound atL^2*N^(-4/3), and the exact Bonferroni activation correction. PositionalErasureTheorem.companion_T19_10 combines the original once-deleted and isolated field comparisons, finer coordinate intensities, full factorial-covariance matrices, both count cumulants and all sharpO(a_N^2) activation/TV/Wasserstein coupling bounds. Its sharp constant is chosen beforeepsilon. The completeT1.17 statement/proof, companion_sections/arithmetic_appendix.tex lines1197-1288, andT19.10 statement/proof, companion_sections/limits_appendix.tex lines659-758, were rechecked.
+
+SupportedEvenSquareClasses proves that an even coefficient combination supported on actual values belongs to their exact even square-class space. SubsetComponentIntersectionLower applies the full small-prime/parity cut to the actual pinned free components and uses private-prime injectivity to obtain their intersection inside the prescribed old and new value sets themselves. No ghost envelope position enters either space. ShiftedWindowNonalignment proves the original compressed-center exclusion controls exactly the radiusR physical windows after shifting their centers; the stated polynomial slope cap is retained rather than enlarged without justification.
+
+BoundedWidthPrimeConstraintCost proves all prime/parity constraints at every fixed logarithmic cutoff costo(L). SubsetDenseNonalignedHosts then embeds the actual subset intersection into complete windows of radiusR and applies the independent-width confinement theorem. Every dense nonaligned subset population has a subpower number of center pairs. This is stronger than the earlier surface-count exponent1/2 and requires no surface-cover or curve-count property. The threshold precedes all actual subsets, cutoffs, radii and source choices.
+
+SubsetInteractionMass splits only into sparse and dense component populations. Sparse components use the actual product weight and internally bounded kernel power; dense components use the new subpower host count and the actual single-source weight. It proves the full nonaligned compressed interaction rate5/3 without the old ordinary/source surface or normalized curve inputs. WindowPairNonalignedMass retains every fixed offset, scaled original center, true source multiplicity and rank weight. PrivatePairInteractionMass combines the entire nonaligned sector with the already proved shared-vertex and aligned-center estimates, giving the strict interaction exponent41/30.
+
+TwoGoodPairMass proves the complete homogeneous two-edge comparison, including raw affine-incompatible channels and separated three/four-start unions. TwoGoodEdgeSecondMoment transfers this to the actual original positive joint moment with the exact independent-block affine factorization and the previously proved lower estimate. Its uniform41/30 error yields the full relative second-moment assertion because41/30>4/3. All constants and tolerances have the source quantifier order. The two-edge part of companionT1.12 is also unconditional; fullT1.12 stays conditional for its other single-target refinements, whose full statement/proof in arithmetic_appendix.tex lines921-1008 was rechecked.
+
+SharpOnceAllCoupling proves the actual second edge moment is bounded by a true fixed constant times the square of the literal nominal correctiona_N, for every real private-prime cutoff, including empty good-edge families. The original finite natural-coupling bounds then give the sharp activation, total-variation and Wasserstein assertions. PositionalErasureTheorem preserves positive independent background probability status and all previously internal original-law intensity/covariance conclusions in one common-threshold theorem. Its summed full-fieldL1 bound is stronger than the printed summedTV estimate. No original indicator is assigned a nominal marginal or false independence.
+
+Earlier conditional declarations and literature history are preserved. Only the exactT1.17, T19.10 and stated two-edgeT1.12 uses are discharged; no general geometric property, optimal actual-cumulant4/3 law or unrelated compressed single-target refinement is promoted. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0445 adds twelve modules, twenty-three theorems and one definition. CompanionT1.17 andT19.10 move from conditional to proved. Coverage becomes137 proved,27 conditional and3 in_progress out of167, with164 completed. The project records443 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16179 jobs); direct axiom audit passed for 15039 declarations using only propext, Classical.choice and Quot.sound; all 14410 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.07 GiB.
