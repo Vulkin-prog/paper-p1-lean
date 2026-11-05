@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**356 mathematical improvements and two statement-scope corrections are confirmed.**
+**357 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24102,3 +24102,16 @@ This closes the global algebraic and finite-prime counting argument with exact o
 P1-MATH-0358 adds two theorems. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records356 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 remains open and Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15627 jobs); direct axiom audit passed for 14316 declarations using only propext, Classical.choice and Quot.sound; all 13607 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.07 GiB.
+
+
+## Exact monomial prime scale and rounding for both strict comparisons
+
+MonomialPrimeScale.strict_power_domination proves that a prime base at scale C*L^alpha*V^beta forces the strict comparison D*L^A*V^B<P^N whenever C>=1,D<C,L,V>=1,N>=1 and the two explicit exponent inequalities A<=alpha*N,B<=beta*N hold. The proof retains exact real powers and strictness; no asymptotic estimate or existence of suitable parameters is assumed.
+
+determinant_monomial rewrites the actual determinant size at the root-height box Y=(a+1)*V*L^a as the coefficient constant k!*(a+1)^(J*k) times L^(H*k+a*J*k)*V^(J*k). obstruction_monomial rewrites the actual obstruction bound as the constant(a+1)*(b+1)*b*(a+1)^b times L^(a*b+a+1)*V^(b+1). determinant_small and obstruction_small apply the proved domination criterion to these exact expressions. rounded_base constructs a positive integer base at the scale and at most twice the scale.
+
+This reduces both remaining strict numerical comparisons to elementary uniform exponent choices for H and m, plus choosing a constant C larger than two explicit degree-only constants. Existence of those sharp exponent choices is the remaining step and is not silently assumed here.
+
+P1-MATH-0359 adds six theorems. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records357 improvements and two statement-scope corrections. Selective imports use locally available Mathlib artifacts. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. The global sharp b>=2 input and main13.4 remain open; Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15629 jobs); direct axiom audit passed for 14322 declarations using only propext, Classical.choice and Quot.sound; all 13613 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.06 GiB.

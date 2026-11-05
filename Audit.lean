@@ -2629,6 +2629,12 @@ import PaperP1
 #print axioms PaperP1.MahlerCoefficientBounds.norm_top_coeff_le_mahler
 #print axioms PaperP1.MahlerCoefficientBounds.factor_coefficient_product_bound
 #print axioms PaperP1.MahlerCoefficientBounds.factor_coefficient_product_bound_two_pow
+#print axioms PaperP1.MonomialPrimeScale.strict_power_domination
+#print axioms PaperP1.MonomialPrimeScale.rounded_base
+#print axioms PaperP1.MonomialPrimeScale.determinant_monomial
+#print axioms PaperP1.MonomialPrimeScale.obstruction_monomial
+#print axioms PaperP1.MonomialPrimeScale.determinant_small
+#print axioms PaperP1.MonomialPrimeScale.obstruction_small
 #print axioms PaperP1.OrdinaryReciprocalPrimeInput.tendsto_left_endpoint
 #print axioms PaperP1.OrdinaryReciprocalPrimeInput.uniform_square_part_upper
 #print axioms PaperP1.PartialPowerSum.powerSum_nonneg
