@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records454 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records455 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15191 audited theorem/lemma declarations**. This
+- The project currently has **15203 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26469,3 +26469,20 @@ SixthGrowingDegreePlaneCount.power_cap, scaled_power_cap and growing_cap prove a
 P1-MATH-0456 adds seven modules, sixteen theorems and one definition. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records454 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16311 jobs); direct axiom audit passed for 15191 declarations using only propext, Classical.choice and Quot.sound; all 14610 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.73 GiB.
+
+
+## Prove the signed forcing power obstruction without the EIP input
+
+The power-obstruction consequence of companionT19.16 is now proved internally without ordinary EIPInput. The literal specified signed forcing has no polynomially decaying positive coordinate cost on any critical sequence. The complete sharp logarithmic equivalent inT19.16 and the fine reciprocal law inT19.15 remain conditional on ordinary EIPInput. Their full source statements, forcing definition and proofs in companion_sections/limits_appendix.tex lines1138-1299 were rechecked; the original maximal-support retained population and prescribed saddle excess are kept unchanged.
+
+BoundedProductFibres constructs the exact product map on finite Cartesian powers of bounded positive integers. Every product fibre injects into the Cartesian power of that integer's actual divisor set. The internally proved uniform divisor subpower bound therefore controls all factorization multiplicities. Every prime factor of a product is at most the largest factor, and exact incidence summation gives a lower bound for the reciprocal odd-valuation pivot mass of the actual product image. No smooth-number abundance, distribution of primes or independence of factors is assumed.
+
+ElementaryReciprocalPrimeLower.fixed_order uses allk-tuples of integers up to floor(N^(1/k)). Their products lie in[1,N], and the rounded side length is at least half the real root beyond one fixed threshold. The product image carries reciprocal mass at leastc_k*N^(1-1/k-delta), after the actual divisor multiplicities are paid. uniform_lower choosesk beforeN and proves pivotSumN>=N^(1-epsilon) for everyepsilon>0. ElementaryDyadicPivotLower.uniform_lower transfers this to the original interval[N,2N), retaining the exact logarithmic doubling multiplicity and square-root small-pivot loss. This establishes only a power-scale lower bound, not the fine EIP correction.
+
+ElementaryCleanPivotLower.uniform_lower restores the same power-scale mass on the literal clean source population after the existing Rankin and local exceptional exclusions. Its threshold precedes every logarithmic width and every cutoff at most(logN)^5. ElementarySignedCostLower.uniform_actual_lower applies the exact signed Palm cost minorant, removes pivot collisions and pays both actual exceptional pair losses. It proves the weighted lower bound with factorN^(-delta), for every fixeddelta in(0,1/20), without an ordinary reciprocal-prime premise.
+
+ElementarySignedPowerObstruction.uniform_power_obstruction uses the prescribed excessE(N), the internal width theorem and the exact critical signed-mark prefactor. For every critical bandC,alpha>0 and every realK, the original specifiedCostN L is at leastK*N^(-alpha) uniformly beyond a threshold precedingL. not_bigO_critical_sequence proves that along every actual critical length sequence this specified positive coordinate cost is notO(N^(-alpha)). This is precisely the polynomial obstruction inT19.16, with its former EIP dependency removed. It is not a lower bound for dependence, total variation or signed cancellations after summing coordinates.
+
+The complete canonical T19.16 theorem still needs only ordinary EIPInput for its two sharp saddle bounds and logarithmic equivalent, as established at checkpoint453. Those obligations are not promoted by the weaker elementary result. P1-MATH-0457 adds six modules, twelve theorems and two definitions. CompanionT19.15 andT19.16 remain conditional. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records455 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16323 jobs); direct axiom audit passed for 15203 declarations using only propext, Classical.choice and Quot.sound; all 14624 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.69 GiB.

@@ -22887,6 +22887,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "d440b682d89aecbf0e6e5f4dffa454b822d44d04"
+    },
+    {
+      "id": "P1-MATH-0457",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The no-polynomial-cost consequence of the specified signed forcing was deduced from its fine reciprocal saddle lower bound and therefore retained ordinary EIPInput along with the sharper logarithmic equivalent.",
+      "finding": "Exact bounded-product fibre counting and the internal divisor subpower estimate prove full and dyadic reciprocal pivot lower bounds at every power scale. After all actual clean-source, collision and exceptional losses, they prove the original specified signed forcing cost is notO(N^(-alpha)) for anyalpha>0, without EIP.",
+      "proposed_revision": "Give the polynomial forcing-cost obstruction an independent elementary proof through bounded products and divisor-controlled multiplicity. Reserve the ordinary EIP estimate for the precise saddle bounds and logarithmic equivalent, and retain the explicit warning that this coordinate cost is not a dependence or total-variation lower bound.",
+      "impact": "Removes the only remaining external input from the entire power-obstruction clause ofT19.16 and gives unconditional weaker reciprocal lower bounds forT19.15. Their full fine asymptotic statements remain conditional; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.ElementaryDyadicPivotLower.uniform_lower",
+        "PaperP1.ElementaryReciprocalPrimeLower.fixed_order",
+        "PaperP1.ElementaryReciprocalPrimeLower.uniform_lower",
+        "PaperP1.BoundedProductFibres.tuples_card",
+        "PaperP1.BoundedProductFibres.fibre_card",
+        "PaperP1.BoundedProductFibres.image_card",
+        "PaperP1.BoundedProductFibres.largest_prime_bound",
+        "PaperP1.BoundedProductFibres.reciprocal_lower",
+        "PaperP1.ElementaryCleanPivotLower.uniform_lower",
+        "PaperP1.ElementarySignedCostLower.uniform_actual_lower",
+        "PaperP1.ElementarySignedPowerObstruction.uniform_power_obstruction",
+        "PaperP1.ElementarySignedPowerObstruction.not_bigO_critical_sequence",
+        "PaperP1.BoundedProductFibres.tuples",
+        "PaperP1.BoundedProductFibres.value"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16323 jobs); direct axiom audit passed for 15203 declarations using only propext, Classical.choice and Quot.sound; all 14624 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.69 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

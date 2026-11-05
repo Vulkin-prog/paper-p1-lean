@@ -2616,10 +2616,13 @@ import PaperP1
 #print axioms PaperP1.DyadicReciprocalScaleBounds.small_pivot_negligible
 #print axioms PaperP1.EffectiveSourceCoordinates.scale_bounds
 #print axioms PaperP1.EffectiveSourceCoordinates.ratio_identity
+#print axioms PaperP1.ElementaryDyadicPivotLower.uniform_lower
 #print axioms PaperP1.ElementaryLogGrowth.log_le_two_sqrt
 #print axioms PaperP1.ElementaryLogGrowth.thirtyTwo_mul_log_le
 #print axioms PaperP1.ElementaryLogGrowth.square_le_four_mul_exp
 #print axioms PaperP1.ElementaryLogGrowth.log_ge_eventually
+#print axioms PaperP1.ElementaryReciprocalPrimeLower.fixed_order
+#print axioms PaperP1.ElementaryReciprocalPrimeLower.uniform_lower
 #print axioms PaperP1.ExplicitSaddleVariation.log_difference_bound
 #print axioms PaperP1.ExplicitSaddleVariation.core_difference_bound
 #print axioms PaperP1.ExplicitSaddleVariation.scale_monotone
@@ -3391,6 +3394,11 @@ import PaperP1
 #print axioms PaperP1.BoundedPointAlignment.ordered_alignment
 #print axioms PaperP1.BoundedPointAlignment.alignment_of_cross
 #print axioms PaperP1.BoundedPointAlignment.source_alignment
+#print axioms PaperP1.BoundedProductFibres.tuples_card
+#print axioms PaperP1.BoundedProductFibres.fibre_card
+#print axioms PaperP1.BoundedProductFibres.image_card
+#print axioms PaperP1.BoundedProductFibres.largest_prime_bound
+#print axioms PaperP1.BoundedProductFibres.reciprocal_lower
 #print axioms PaperP1.BoundedReducedBinaryBasis.projection_height_bound
 #print axioms PaperP1.BoundedReducedBinaryBasis.exists_bounded_reduced_basis
 #print axioms PaperP1.BoundedWidthWindows.values_subset
@@ -7619,6 +7627,10 @@ import PaperP1
 #print axioms PaperP1.EffectiveVerticalSideSum.quadratic_sqrt_bound
 #print axioms PaperP1.EffectiveVerticalSideSum.numerical_cost_bound
 #print axioms PaperP1.EffectiveVerticalSideSum.uniform_original_scale_sum
+#print axioms PaperP1.ElementaryCleanPivotLower.uniform_lower
+#print axioms PaperP1.ElementarySignedCostLower.uniform_actual_lower
+#print axioms PaperP1.ElementarySignedPowerObstruction.uniform_power_obstruction
+#print axioms PaperP1.ElementarySignedPowerObstruction.not_bigO_critical_sequence
 #print axioms PaperP1.EmptyReplicaMoment.block_eq_one
 #print axioms PaperP1.EmptyReplicaMoment.sum_constant
 #print axioms PaperP1.EmptyReplicaMoment.positive_moment

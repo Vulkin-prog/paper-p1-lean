@@ -3870,3 +3870,9 @@ public import PaperP1.Arithmetic.SixthDegreeUniformPlaneCount
 public import PaperP1.Asymptotics.SixthGrowingDegreePlaneCount
 public import PaperP1.Diophantine.AveragedPrimeAffineCount
 public import PaperP1.Diophantine.SixthDegreeUniformAffineCount
+public import PaperP1.Analysis.ElementaryDyadicPivotLower
+public import PaperP1.Analysis.ElementaryReciprocalPrimeLower
+public import PaperP1.Arithmetic.BoundedProductFibres
+public import PaperP1.Asymptotics.ElementaryCleanPivotLower
+public import PaperP1.Asymptotics.ElementarySignedCostLower
+public import PaperP1.Asymptotics.ElementarySignedPowerObstruction
