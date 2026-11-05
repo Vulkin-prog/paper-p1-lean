@@ -4163,3 +4163,7 @@ public import PaperP1.Geometry.LinearPlaneImage
 public import PaperP1.Geometry.LinearPlaneImageBirational
 public import PaperP1.Algebra.HomogeneousMonicGenerator
 public import PaperP1.Geometry.LinearPlaneMinimalEquation
+public import PaperP1.Algebra.ConductorFiberInjectivity
+public import PaperP1.Algebra.PolynomialCoordinateDerivative
+public import PaperP1.Algebra.PrimitiveDerivativeConductor
+public import PaperP1.Geometry.LinearPlaneImageFiber

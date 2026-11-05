@@ -772,6 +772,7 @@ import PaperP1
 #print axioms PaperP1.ComplexProjectiveIrreducibility.geometric_of_affine
 #print axioms PaperP1.ComplexProjectiveIrreducibility.singularity_input
 #print axioms PaperP1.ComplexProjectiveIrreducibility.nongeometric_input
+#print axioms PaperP1.ConductorFiberInjectivity.evaluations_equal
 #print axioms PaperP1.ConicCoordinateChanges.polynomial_expression
 #print axioms PaperP1.ConicCoordinateChanges.coefficients_polynomial
 #print axioms PaperP1.ConicCoordinateChanges.polynomial_shear
@@ -1719,6 +1720,7 @@ import PaperP1
 #print axioms PaperP1.PolynomialAuxiliaryExceptions.divisible_or_nonzero
 #print axioms PaperP1.PolynomialAuxiliaryExceptions.zero_of_divisible
 #print axioms PaperP1.PolynomialAuxiliaryExceptions.restriction_zero_or_nowhere_zero
+#print axioms PaperP1.PolynomialCoordinateDerivative.finSucc_pderiv_zero
 #print axioms PaperP1.PolynomialCoordinateProjectionFinite.quotientEquiv_mk
 #print axioms PaperP1.PolynomialCoordinateProjectionFinite.parameterMap_X
 #print axioms PaperP1.PolynomialCoordinateProjectionFinite.finite
@@ -1792,6 +1794,12 @@ import PaperP1
 #print axioms PaperP1.PrimitiveBirationalFractionRing.rank_one
 #print axioms PaperP1.PrimitiveBirationalFractionRing.normalization_rank
 #print axioms PaperP1.PrimitiveCoefficientFamily.extract
+#print axioms PaperP1.PrimitiveDerivativeConductor.integral_mul_derivative
+#print axioms PaperP1.PrimitiveDerivativeConductor.integral_mul_ring_derivative
+#print axioms PaperP1.PrimitiveDerivativeConductor.source_derivative_image
+#print axioms PaperP1.PrimitiveDerivativeConductor.source_integral
+#print axioms PaperP1.PrimitiveDerivativeConductor.source_finite
+#print axioms PaperP1.PrimitiveDerivativeConductor.source_derivative_ne_zero
 #print axioms PaperP1.PrimitivePlaneLines.primitive_dot
 #print axioms PaperP1.PrimitivePlaneLines.cross_sub_right
 #print axioms PaperP1.PrimitivePlaneLines.cross_cross_right
@@ -12250,6 +12258,12 @@ import PaperP1
 #print axioms PaperP1.LinearPlaneImageBirational.rank_one
 #print axioms PaperP1.LinearPlaneImageBirational.normalization_rank
 #print axioms PaperP1.LinearPlaneImageBirational.exists_linear_hilbert
+#print axioms PaperP1.LinearPlaneImageFiber.adjoin_subset_range
+#print axioms PaperP1.LinearPlaneImageFiber.denominator_is_partial
+#print axioms PaperP1.LinearPlaneImageFiber.denominator_homogeneous
+#print axioms PaperP1.LinearPlaneImageFiber.conductor
+#print axioms PaperP1.LinearPlaneImageFiber.denominator_ne_zero
+#print axioms PaperP1.LinearPlaneImageFiber.evaluations_equal
 #print axioms PaperP1.LinearPlaneMinimalEquation.equation_monic
 #print axioms PaperP1.LinearPlaneMinimalEquation.equation_nonzero
 #print axioms PaperP1.LinearPlaneMinimalEquation.evaluation_factor

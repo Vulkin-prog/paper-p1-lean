@@ -26543,6 +26543,47 @@
         "status": "not_integrated"
       },
       "validation_commit": "88f3b3a4b9a13b002983918c361bb792b692c3a3"
+    },
+    {
+      "id": "P1-MATH-0550",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The actual finite birational plane image and principal homogeneous degree-d equation were proved, but no actual denominator recovering every original coordinate or resulting good-fibre injectivity had been established.",
+      "finding": "The separable minimal-polynomial derivative is a genuine nonzero homogeneous degree-(d-1) conductor denominator; it recovers all original integral coordinates and proves equality of point evaluations agreeing on the image away from its zero locus.",
+      "proposed_revision": "Use the actual derivative section for the original-source exceptional budget and combine the proved good-fibre injectivity with the controlled integer projection and plane count.",
+      "impact": "Closes actual derivative-locus fibre control without assuming normality, a conductor bound, derivative nonvanishing or good-fibre injectivity.",
+      "evidence": [
+        "PaperP1.ConductorFiberInjectivity.evaluations_equal",
+        "PaperP1.PolynomialCoordinateDerivative.finSucc_pderiv_zero",
+        "PaperP1.PrimitiveDerivativeConductor.integral_mul_derivative",
+        "PaperP1.PrimitiveDerivativeConductor.integral_mul_ring_derivative",
+        "PaperP1.PrimitiveDerivativeConductor.source_derivative_image",
+        "PaperP1.PrimitiveDerivativeConductor.source_integral",
+        "PaperP1.PrimitiveDerivativeConductor.source_finite",
+        "PaperP1.PrimitiveDerivativeConductor.source_derivative_ne_zero",
+        "PaperP1.LinearPlaneImageFiber.adjoin_subset_range",
+        "PaperP1.LinearPlaneImageFiber.denominator_is_partial",
+        "PaperP1.LinearPlaneImageFiber.denominator_homogeneous",
+        "PaperP1.LinearPlaneImageFiber.conductor",
+        "PaperP1.LinearPlaneImageFiber.denominator_ne_zero",
+        "PaperP1.LinearPlaneImageFiber.evaluations_equal",
+        "PaperP1.LinearPlaneImageFiber.denominator"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16975 jobs); direct axiom audit passed for 16176 declarations using only propext, Classical.choice and Quot.sound; all 15770 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.58 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
