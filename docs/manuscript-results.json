@@ -27147,7 +27147,8 @@
           "proof": "PaperP1.DenseWeightedSector.uniform_kernels",
           "scope": "The exact component/intersection comparison and internal dense nonaligned pair confinement give subpower dense-component hosts. The internally proved full value-kernel point bound proves both literal kernel sums, plus the larger positive2^fullRank sum and arithmetic source-kernel consequence. No unproved argument remains in canonicalT1.8; general graph/geometric properties and growing-degree BCN remain separate."
         }
-      ]
+      ],
+      "validation_commit": "aae8d1d2ef04799a7cf8200e91cb38a3a1f13850"
     },
     {
       "label": "p1:arith:alignedrank",
