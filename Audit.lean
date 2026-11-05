@@ -1333,6 +1333,10 @@ import PaperP1
 #print axioms PaperP1.IntegralRationalInterpolation.exists_pair
 #print axioms PaperP1.IntegralRationalInterpolation.denominator_ne_zero
 #print axioms PaperP1.IntegralRationalInterpolation.exists_pair_nonzero_denominator
+#print axioms PaperP1.IrreducibleHomogenization.shape_of_chart_unit
+#print axioms PaperP1.IrreducibleHomogenization.homogeneous_unit_of_chart_unit
+#print axioms PaperP1.IrreducibleHomogenization.not_X_one_dvd_homogenize
+#print axioms PaperP1.IrreducibleHomogenization.homogenize_irreducible
 #print axioms PaperP1.IrreduciblePointFactor.exists_factor
 #print axioms PaperP1.IrreduciblePointFactor.integer_point
 #print axioms PaperP1.IrreduciblePointFactor.factor_partial_degrees

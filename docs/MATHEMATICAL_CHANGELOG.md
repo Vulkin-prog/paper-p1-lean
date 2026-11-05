@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**325 mathematical improvements and two statement-scope corrections are confirmed.**
+**326 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23709,3 +23709,16 @@ In an integral domain, actual polynomial total degrees add under a nonzero produ
 P1-MATH-0327 closes homogeneous-factor degree control. Preservation of irreducibility under the full-degree homogenizations and the exact identification of the complex biform remain to be completed. NonGeometricRationalSingularity.Input is still an unproved alternative ordinary argument, and the existing non-geometric and Heath-Brown numerical inputs are unchanged. T1.4 stays conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are325 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15541 jobs); direct axiom audit passed for 14133 declarations using only propext, Classical.choice and Quot.sound; all 13400 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.52 GiB.
+
+
+## Full-degree homogenization preserves irreducibility over every commutative domain
+
+Full-degree homogenization now preserves irreducibility over every commutative integral domain. The theorem applies to every irreducible univariate polynomial, including irreducible constants in a non-field coefficient domain. It assumes no homogeneous factorization, geometric irreducibility or positive polynomial degree.
+
+The proof first identifies every homogeneous polynomial whose actual affine chart is a unit: it is a unit scalar times a power of the homogenizing variable. If that variable does not divide the homogeneous polynomial, its degree must be zero and the homogeneous polynomial itself is a unit. For the full-degree homogenization of any nonzero polynomial, the homogenizing variable cannot divide it. The actual coefficient at the leading pure-first-coordinate monomial equals the nonzero leading coefficient; divisibility by the second variable would make that coefficient zero.
+
+An arbitrary factorization of the homogenized polynomial has homogeneous factors by P1-MATH-0327. Its actual affine chart gives a factorization of the original irreducible polynomial, so one chart factor is a unit. The leading-coefficient boundary exclusion then makes the corresponding homogeneous factor a unit. The homogenized polynomial itself is not a unit, because its chart is the original irreducible polynomial. All chart maps, factor multiplicities, unit statements and boundary divisibility assertions are checked explicitly.
+
+P1-MATH-0328 closes irreducibility preservation for each full-degree homogenization. The coefficient-variable reordering between the two homogenizations and the exact complex biform identification still need to be proved. NonGeometricRationalSingularity.Input remains an unproved alternative ordinary argument; the existing non-geometric and Heath-Brown numerical inputs are unchanged. T1.4 remains conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are326 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15543 jobs); direct axiom audit passed for 14137 declarations using only propext, Classical.choice and Quot.sound; all 13404 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.51 GiB.

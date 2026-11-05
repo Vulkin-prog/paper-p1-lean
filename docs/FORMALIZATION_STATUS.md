@@ -11,7 +11,7 @@ Companion T1.5 is complete conditionally on exactly the same two ordinary biform
 
 Companion T1.4 is complete conditionally on exactly HeathBrownBiformInput.Input and NonGeometricBiformInput.Input. The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. Both ordinary input proofs remain open. The three incomplete numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records325 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records326 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14133 audited theorem/lemma declarations**. This
+- The project currently has **14137 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24486,3 +24486,16 @@ In an integral domain, actual polynomial total degrees add under a nonzero produ
 P1-MATH-0327 closes homogeneous-factor degree control. Preservation of irreducibility under the full-degree homogenizations and the exact identification of the complex biform remain to be completed. NonGeometricRationalSingularity.Input is still an unproved alternative ordinary argument, and the existing non-geometric and Heath-Brown numerical inputs are unchanged. T1.4 stays conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are325 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15541 jobs); direct axiom audit passed for 14133 declarations using only propext, Classical.choice and Quot.sound; all 13400 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.52 GiB.
+
+
+## Full-degree homogenization preserves irreducibility over every commutative domain
+
+Full-degree homogenization now preserves irreducibility over every commutative integral domain. The theorem applies to every irreducible univariate polynomial, including irreducible constants in a non-field coefficient domain. It assumes no homogeneous factorization, geometric irreducibility or positive polynomial degree.
+
+The proof first identifies every homogeneous polynomial whose actual affine chart is a unit: it is a unit scalar times a power of the homogenizing variable. If that variable does not divide the homogeneous polynomial, its degree must be zero and the homogeneous polynomial itself is a unit. For the full-degree homogenization of any nonzero polynomial, the homogenizing variable cannot divide it. The actual coefficient at the leading pure-first-coordinate monomial equals the nonzero leading coefficient; divisibility by the second variable would make that coefficient zero.
+
+An arbitrary factorization of the homogenized polynomial has homogeneous factors by P1-MATH-0327. Its actual affine chart gives a factorization of the original irreducible polynomial, so one chart factor is a unit. The leading-coefficient boundary exclusion then makes the corresponding homogeneous factor a unit. The homogenized polynomial itself is not a unit, because its chart is the original irreducible polynomial. All chart maps, factor multiplicities, unit statements and boundary divisibility assertions are checked explicitly.
+
+P1-MATH-0328 closes irreducibility preservation for each full-degree homogenization. The coefficient-variable reordering between the two homogenizations and the exact complex biform identification still need to be proved. NonGeometricRationalSingularity.Input remains an unproved alternative ordinary argument; the existing non-geometric and Heath-Brown numerical inputs are unchanged. T1.4 remains conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are326 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15543 jobs); direct axiom audit passed for 14137 declarations using only propext, Classical.choice and Quot.sound; all 13404 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.51 GiB.

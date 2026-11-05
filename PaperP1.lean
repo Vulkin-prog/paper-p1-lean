@@ -3488,3 +3488,4 @@ public import PaperP1.Algebra.FiniteBivariateScalarDecomposition
 public import PaperP1.Algebra.FormalBranchScalarDescent
 public import PaperP1.Algebra.SmoothPointAbsoluteIrreducibility
 public import PaperP1.Algebra.HomogeneousFactorDegrees
+public import PaperP1.Algebra.IrreducibleHomogenization
