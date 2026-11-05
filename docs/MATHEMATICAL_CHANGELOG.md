@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**527 mathematical improvements and two statement-scope corrections are confirmed.**
+**528 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26821,3 +26821,18 @@ The result concerns the first-coordinate orientation, with Py nonzero. Transfer 
 P1-MATH-0529 adds three modules, eleven theorems and three definitions/abbreviations. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 527 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16801 jobs); direct axiom audit passed for 15942 declarations using only propext, Classical.choice and Quot.sound; all 15497 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.73 GiB.
+
+
+## Both-orientation graph uniqueness and genuine relative-open image coverage
+
+TransposedGraphOverlapUniqueness constructs the actual first-coordinate graph chart for the coordinate-swapped polynomial from every supplied second-coordinate-normalized chart. The original endpoints, actual path, trajectory, curve equation and normalized coordinate are transported exactly. The internally proved first-orientation overlap uniqueness then gives agreement of two actual second-orientation charts throughout their common interval whenever they share the same actual point at one parameter. Both graph orientations now have checked overlap uniqueness; the relevant conditions are Py!=0 for the first orientation and Px!=0 for the second.
+
+NormalizedGraphImageNeighborhood proves genuine local coverage of the original polynomial curve by every actual first-orientation graph chart. At each chart point, actual polynomial root uniqueness and continuity construct an ambient open neighborhood U containing that point such that every original P-zero in U is the value of the supplied graph at its actual first coordinate. The parameter lies in the supplied chart domain and both actual coordinates agree. Thus the chart does describe the local curve, rather than merely supply a trajectory lying on it. An actual union of these open neighborhoods proves the exact identity image(chart)={P=0} intersect V for some ambient open V; the whole actual graph image is relatively open in the actual curve.
+
+TransposedGraphImageNeighborhood proves continuity of the actual coordinate-swap map and transports the genuine neighborhood coverage to the original second-orientation chart. Every original P-zero in its constructed neighborhood is recovered at its actual second coordinate. Taking the actual union of these neighborhoods proves the same exact relative-openness identity for the whole second-orientation graph image. The polynomial, coordinates and point image in both final statements are the original ones, not an unverified swapped surrogate.
+
+This closes both-orientation overlap uniqueness and genuine local graph coverage/relative openness. A local trajectory can now be used as an actual neighborhood of the curve, and overlapping charts can be compared uniquely. Construction of larger or maximal glued graphs, continuation to cover whole connected components, controlled global component/piece cardinality, the final sharp plane estimate and higher-dimensional projection remain separate. The entire supplied controlled graph-piece grid count from P1-MATH-0528 remains available. Full main13.4/13.5 remain unresolved; the generic plane theorem stays cubic with full a<1/3 range.
+
+P1-MATH-0530 adds three modules, six theorems and one definition. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 528 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16807 jobs); direct axiom audit passed for 15948 declarations using only propext, Classical.choice and Quot.sound; all 15504 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.71 GiB.

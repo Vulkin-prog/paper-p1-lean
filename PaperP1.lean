@@ -4092,3 +4092,6 @@ public import PaperP1.Analysis.DyadicBucketGridCount
 public import PaperP1.Analysis.NormalizedGraphOverlapUniqueness
 public import PaperP1.Analysis.PolynomialVerticalRootUniqueness
 public import PaperP1.Analysis.RegularCurveProjectionUniqueness
+public import PaperP1.Analysis.NormalizedGraphImageNeighborhood
+public import PaperP1.Analysis.TransposedGraphImageNeighborhood
+public import PaperP1.Analysis.TransposedGraphOverlapUniqueness
