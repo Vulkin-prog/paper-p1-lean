@@ -18084,3 +18084,16 @@ This completes the exceptional-population part of the prime-avoidance constructi
 P1-MATH-0356 adds five theorems and one exceptional finite-set definition. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records354 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. The global sharp b>=2 input and main13.4 remain open; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15623 jobs); direct axiom audit passed for 14310 declarations using only propext, Classical.choice and Quot.sound; all 13601 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.10 GiB.
+
+
+## Actual prime-obstruction height from coefficients and the first pair
+
+ProjectivePrimeHeight.badInteger_bound proves the explicit bound |K(G,z)|<=(a+1)*(b+1)*b*height(G)*L^(a+1)*Y^b, where a=degreeX G,b=degreeY G>0 and the original signed pairs lie in absolute boxes L,Y>=1. K is the actual denominator-times-projective-derivative integer introduced in checkpoint355. No obstruction-size or prime-avoidance hypothesis is assumed.
+
+derivative_height proves height(G.derivative)<=b*height(G) by exact coefficient differentiation, including coefficients outside the actual degree. projective_evaluation_bound proves the literal double homogeneous evaluation bound using the original partial degrees and the exact coefficient height. badInteger_bound combines these with the degree drop in the differentiated second variable. nonexceptional_bound substitutes the proved root-height box Y=(a+1)*height(G)*L^a on every original point whose two endpoint evaluations are nonzero. It requires no second-coordinate box as an input.
+
+This provides the actual polynomial-size obstruction bound required by the uniform dyadic prime avoidance construction. The two numerical comparisons with the prime base still need to be chosen simultaneously with the final exponent parameters. The global sharp b>=2 bound is not claimed yet.
+
+P1-MATH-0357 adds four theorems. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records355 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 remains open and Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15625 jobs); direct axiom audit passed for 14314 declarations using only propext, Classical.choice and Quot.sound; all 13605 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.09 GiB.

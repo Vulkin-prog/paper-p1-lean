@@ -10268,6 +10268,10 @@ import PaperP1
 #print axioms PaperP1.ProjectivePrimeExceptions.critical_card
 #print axioms PaperP1.ProjectivePrimeExceptions.zero_product_card
 #print axioms PaperP1.ProjectivePrimeExceptions.exceptional_card
+#print axioms PaperP1.ProjectivePrimeHeight.derivative_height
+#print axioms PaperP1.ProjectivePrimeHeight.projective_evaluation_bound
+#print axioms PaperP1.ProjectivePrimeHeight.badInteger_bound
+#print axioms PaperP1.ProjectivePrimeHeight.nonexceptional_bound
 #print axioms PaperP1.ProjectiveResultants.homogenize_raise
 #print axioms PaperP1.ProjectiveResultants.native_homogenize_dvd
 #print axioms PaperP1.ProjectiveResultants.coprime_of_homogeneous_relprime

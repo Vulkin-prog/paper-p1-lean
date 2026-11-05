@@ -11,7 +11,7 @@ Companion T1.5 is complete conditionally on the same geometric Heath-Brown bifor
 
 Companion T1.4 is complete conditionally on HeathBrownBiformInput.Input. NonGeometricBiformInput.Input and the sufficient rational-singularity implication are internally proved with the exact constant8*a*b^2 (P1-MATH-0330). The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. The geometric Heath-Brown ordinary input remains unproved. The three incomplete original numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records354 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records355 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14310 audited theorem/lemma declarations**. This
+- The project currently has **14314 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24853,3 +24853,16 @@ This completes the exceptional-population part of the prime-avoidance constructi
 P1-MATH-0356 adds five theorems and one exceptional finite-set definition. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records354 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. The global sharp b>=2 input and main13.4 remain open; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15623 jobs); direct axiom audit passed for 14310 declarations using only propext, Classical.choice and Quot.sound; all 13601 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.10 GiB.
+
+
+## Actual prime-obstruction height from coefficients and the first pair
+
+ProjectivePrimeHeight.badInteger_bound proves the explicit bound |K(G,z)|<=(a+1)*(b+1)*b*height(G)*L^(a+1)*Y^b, where a=degreeX G,b=degreeY G>0 and the original signed pairs lie in absolute boxes L,Y>=1. K is the actual denominator-times-projective-derivative integer introduced in checkpoint355. No obstruction-size or prime-avoidance hypothesis is assumed.
+
+derivative_height proves height(G.derivative)<=b*height(G) by exact coefficient differentiation, including coefficients outside the actual degree. projective_evaluation_bound proves the literal double homogeneous evaluation bound using the original partial degrees and the exact coefficient height. badInteger_bound combines these with the degree drop in the differentiated second variable. nonexceptional_bound substitutes the proved root-height box Y=(a+1)*height(G)*L^a on every original point whose two endpoint evaluations are nonzero. It requires no second-coordinate box as an input.
+
+This provides the actual polynomial-size obstruction bound required by the uniform dyadic prime avoidance construction. The two numerical comparisons with the prime base still need to be chosen simultaneously with the final exponent parameters. The global sharp b>=2 bound is not claimed yet.
+
+P1-MATH-0357 adds four theorems. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records355 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 remains open and Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15625 jobs); direct axiom audit passed for 14314 declarations using only propext, Classical.choice and Quot.sound; all 13605 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.09 GiB.
