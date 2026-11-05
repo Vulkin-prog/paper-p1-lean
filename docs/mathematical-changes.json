@@ -24300,6 +24300,47 @@
         "status": "not_integrated"
       },
       "validation_commit": "8b0586e3977273b74b6f37c6670b87d7ba90747b"
+    },
+    {
+      "id": "P1-MATH-0494",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:sublinear-grid",
+        "number": "13.5",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 228,
+        "statement_sha256": "ef4c221ed67d6eba27c4ceeeb16591c98447e85f2c53b4e4c6e0a2e6441f46fa"
+      },
+      "original_assumption": "The fixed-power integer annihilator required an actual fractional row-rank gap that had not yet been supplied for arbitrary curve-zero populations.",
+      "finding": "The full bounded-degree multiple family of a nonzero rational curve gives the actual rank gap, yielding an explicit fixed-seventh-power integer interpolation equation through the entire original population. Actual associated integer factors can also be extracted from rational prime divisors.",
+      "proposed_revision": "Use the enlarged coefficient space and its full multiple-polynomial kernel in the generic interpolation route. Apply factor height only after an actual associated integer curve has been selected and its divisibility is proved.",
+      "impact": "Closes the finite interpolation rank gap and constructs the bounded integer auxiliary equation; the improved associated curve height and generic point estimate remain separate.",
+      "evidence": [
+        "PaperP1.PolynomialMultipleEvaluationRank.inner_product_degree_le",
+        "PaperP1.PolynomialMultipleEvaluationRank.multiply_reconstruction",
+        "PaperP1.PolynomialMultipleEvaluationRank.multiply_injective",
+        "PaperP1.PolynomialMultipleEvaluationRank.evaluation_apply",
+        "PaperP1.PolynomialMultipleEvaluationRank.multiples_in_kernel",
+        "PaperP1.PolynomialMultipleEvaluationRank.fractional_rank_gap",
+        "PaperP1.RationalAssociatedIntegerFactor.exists_factor_dvd_map",
+        "PaperP1.RationalAssociatedIntegerFactor.exists_integer_factor",
+        "PaperP1.WidePlaneInterpolation.entry_bound",
+        "PaperP1.WidePlaneInterpolation.exists_bounded_equation",
+        "PaperP1.PolynomialMultipleEvaluationRank.multiplyCoordinates",
+        "PaperP1.PolynomialMultipleEvaluationRank.evaluationMatrix",
+        "PaperP1.PolynomialMultipleEvaluationRank.evaluationLinear",
+        "PaperP1.WidePlaneInterpolation.entry",
+        "PaperP1.WidePlaneInterpolation.heightBound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16545 jobs); direct axiom audit passed for 15568 declarations using only propext, Classical.choice and Quot.sound; all 15039 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.83 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

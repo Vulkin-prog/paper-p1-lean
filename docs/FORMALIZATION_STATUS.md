@@ -103,7 +103,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records491 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records492 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -222,7 +222,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15558 audited theorem/lemma declarations**. This
+- The project currently has **15568 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27116,3 +27116,18 @@ The full main optimal scalar-law conclusions and complete main13.6/13.8/14.1/14.
 P1-MATH-0493 adds two modules, thirteen theorems and four coordinate definitions/abbreviations. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records491 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16539 jobs); direct axiom audit passed for 15558 declarations using only propext, Classical.choice and Quot.sound; all 15024 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.85 GiB.
+
+
+## Actual multiple-polynomial rank gap and fixed-power integer curve interpolation
+
+The actual fractional evaluation-rank gap is now internally proved from the original curve equation, and it constructs a bounded integer interpolation equation through every original population point. A nonzero rational equationF whose two partial degrees are at mostD supplies an injective familyF*P with(D+1)^2 coefficient dimensions inside the enlarged rectangle of dimension(2D+1)^2. Every such product vanishes on the given curve-zero population. Rank-nullity therefore proves8*rank<=7*(2D+1)^2 for the actual evaluation matrix, without a rank-gap hypothesis or a target point bound.
+
+WidePlaneInterpolation applies the fixed-power annihilator to that actual integer evaluation matrix. For any finite populationS in[-B,B]^2 onF, it constructs an actual nonzero integer polynomialQ, vanishing on every point ofS, with each partial degree at most2D, total degree at most4D, and height at most(3*(2D+1)^2*(B^(4D)+1))^7. Matrix entries, integer casts, coefficient bounds and every unselected row are included. The original coefficients ofF are unrestricted. No sufficiently-many-points hypothesis is needed for this auxiliary interpolation conclusion.
+
+RationalAssociatedIntegerFactor separately proves that a rational irreducible divisor of a nonzero integer polynomial is associated to the rational image of an actual integer irreducible factor dividing that integer polynomial. Its finite factor induction preserves divisibility under the coefficient map; the selected factor is proved to have positive total degree before rational irreducibility is invoked. Thus the existing integer factor-height theorem can later be applied to a genuine integer factor, rather than an equation chosen only up to an unchecked rational scalar.
+
+The enlarged interpolation equation is not yet asserted to be associated to the original curve. Supplying the sufficiently-many-points Bezout comparison, extracting the associated small-height curve, simplifying the height into a linear-in-degree exponent and proving the resulting generic point count are subsequent obligations. The current generic coefficient- and field-uniform plane bound remainsD^5*(Nat.log2N+1)^2*N^(1/D), with growing rangea<1/5. Complete main13.5 and full quadratic-degree/all-dimensional BCN remain open. Source main13.5 at main_sections/pair_rigidity.tex228-255 was rechecked with this distinction.
+
+P1-MATH-0494 adds three modules, ten theorems and five finite-coordinate/evaluation/interpolation definitions. No complete numbered statement is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. All main optimal scalar-law conclusions and complete13.6/13.8/14.1/14.6 remain internally proved. The project records492 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16545 jobs); direct axiom audit passed for 15568 declarations using only propext, Classical.choice and Quot.sound; all 15039 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.83 GiB.

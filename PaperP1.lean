@@ -3984,3 +3984,6 @@ public import PaperP1.Asymptotics.ActualHermiteReferenceRate
 public import PaperP1.Asymptotics.OptimalHermite
 public import PaperP1.Algebra.FiniteRowKernelGap
 public import PaperP1.Algebra.RectangularPolynomialCoordinates
+public import PaperP1.Algebra.PolynomialMultipleEvaluationRank
+public import PaperP1.Algebra.RationalAssociatedIntegerFactor
+public import PaperP1.Arithmetic.WidePlaneInterpolation

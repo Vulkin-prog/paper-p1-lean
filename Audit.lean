@@ -1653,6 +1653,12 @@ import PaperP1
 #print axioms PaperP1.PolynomialHeightArithmetic.bivariate_height_sub
 #print axioms PaperP1.PolynomialHeightArithmetic.bivariate_height_mul
 #print axioms PaperP1.PolynomialHeightArithmetic.bivariate_height_scalar
+#print axioms PaperP1.PolynomialMultipleEvaluationRank.inner_product_degree_le
+#print axioms PaperP1.PolynomialMultipleEvaluationRank.multiply_reconstruction
+#print axioms PaperP1.PolynomialMultipleEvaluationRank.multiply_injective
+#print axioms PaperP1.PolynomialMultipleEvaluationRank.evaluation_apply
+#print axioms PaperP1.PolynomialMultipleEvaluationRank.multiples_in_kernel
+#print axioms PaperP1.PolynomialMultipleEvaluationRank.fractional_rank_gap
 #print axioms PaperP1.PolynomialPowerMapFinite.map_C
 #print axioms PaperP1.PolynomialPowerMapFinite.variable_integral
 #print axioms PaperP1.PolynomialPowerMapFinite.generated
@@ -1820,6 +1826,8 @@ import PaperP1
 #print axioms PaperP1.RankOneFieldSquares.bijective
 #print axioms PaperP1.RankOneFieldSquares.isSquare_iff
 #print axioms PaperP1.RankOneFieldSquares.quadratic_descent
+#print axioms PaperP1.RationalAssociatedIntegerFactor.exists_factor_dvd_map
+#print axioms PaperP1.RationalAssociatedIntegerFactor.exists_integer_factor
 #print axioms PaperP1.RationalBivariateIrreducibility.map_naturality
 #print axioms PaperP1.RationalBivariateIrreducibility.nonconstant_of_degreeSum_pos
 #print axioms PaperP1.RationalBivariateIrreducibility.rational_irreducible
@@ -6846,6 +6854,8 @@ import PaperP1
 #print axioms PaperP1.WeightedRootEvaluation.quotientEvaluation_mk
 #print axioms PaperP1.WeightedRootEvaluation.sourceGenerator_value
 #print axioms PaperP1.WeightedTranslationError.weighted_error
+#print axioms PaperP1.WidePlaneInterpolation.entry_bound
+#print axioms PaperP1.WidePlaneInterpolation.exists_bounded_equation
 #print axioms PaperP1.WindowEulerAverage.local_nonneg
 #print axioms PaperP1.WindowEulerAverage.window_nonneg
 #print axioms PaperP1.WindowEulerAverage.first_moment

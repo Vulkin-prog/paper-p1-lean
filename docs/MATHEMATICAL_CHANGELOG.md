@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**491 mathematical improvements and two statement-scope corrections are confirmed.**
+**492 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26247,3 +26247,18 @@ The full main optimal scalar-law conclusions and complete main13.6/13.8/14.1/14.
 P1-MATH-0493 adds two modules, thirteen theorems and four coordinate definitions/abbreviations. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records491 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16539 jobs); direct axiom audit passed for 15558 declarations using only propext, Classical.choice and Quot.sound; all 15024 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.85 GiB.
+
+
+## Actual multiple-polynomial rank gap and fixed-power integer curve interpolation
+
+The actual fractional evaluation-rank gap is now internally proved from the original curve equation, and it constructs a bounded integer interpolation equation through every original population point. A nonzero rational equationF whose two partial degrees are at mostD supplies an injective familyF*P with(D+1)^2 coefficient dimensions inside the enlarged rectangle of dimension(2D+1)^2. Every such product vanishes on the given curve-zero population. Rank-nullity therefore proves8*rank<=7*(2D+1)^2 for the actual evaluation matrix, without a rank-gap hypothesis or a target point bound.
+
+WidePlaneInterpolation applies the fixed-power annihilator to that actual integer evaluation matrix. For any finite populationS in[-B,B]^2 onF, it constructs an actual nonzero integer polynomialQ, vanishing on every point ofS, with each partial degree at most2D, total degree at most4D, and height at most(3*(2D+1)^2*(B^(4D)+1))^7. Matrix entries, integer casts, coefficient bounds and every unselected row are included. The original coefficients ofF are unrestricted. No sufficiently-many-points hypothesis is needed for this auxiliary interpolation conclusion.
+
+RationalAssociatedIntegerFactor separately proves that a rational irreducible divisor of a nonzero integer polynomial is associated to the rational image of an actual integer irreducible factor dividing that integer polynomial. Its finite factor induction preserves divisibility under the coefficient map; the selected factor is proved to have positive total degree before rational irreducibility is invoked. Thus the existing integer factor-height theorem can later be applied to a genuine integer factor, rather than an equation chosen only up to an unchecked rational scalar.
+
+The enlarged interpolation equation is not yet asserted to be associated to the original curve. Supplying the sufficiently-many-points Bezout comparison, extracting the associated small-height curve, simplifying the height into a linear-in-degree exponent and proving the resulting generic point count are subsequent obligations. The current generic coefficient- and field-uniform plane bound remainsD^5*(Nat.log2N+1)^2*N^(1/D), with growing rangea<1/5. Complete main13.5 and full quadratic-degree/all-dimensional BCN remain open. Source main13.5 at main_sections/pair_rigidity.tex228-255 was rechecked with this distinction.
+
+P1-MATH-0494 adds three modules, ten theorems and five finite-coordinate/evaluation/interpolation definitions. No complete numbered statement is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. All main optimal scalar-law conclusions and complete13.6/13.8/14.1/14.6 remain internally proved. The project records492 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16545 jobs); direct axiom audit passed for 15568 declarations using only propext, Classical.choice and Quot.sound; all 15039 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.83 GiB.
