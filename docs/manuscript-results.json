@@ -8730,7 +8730,8 @@
           "proof": "PaperP1.AllPairDeficit.article_15_9",
           "scope": "Canonical proof uses internally proved partition and fixed-order bounds, plus the already proved uniform large-seed tail. No remaining unproved input in this exact all-cardinality deficit. General cover/count properties remain open."
         }
-      ]
+      ],
+      "validation_commit": "f3740c2f6435cdd7b9e809e1978afddfe73b1a98"
     },
     {
       "label": "p13:transfer:fixed-activities",
