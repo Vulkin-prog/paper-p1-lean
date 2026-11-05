@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: 127 unconditional and 37 conditional numbered results out of 167 (164 completed).**
+**Status: 129 unconditional and 35 conditional numbered results out of 167 (164 completed).**
 
 Current canonical results include the unconditional pair profiles and activity,
 sharp pair-extension deficits at all cardinalities, incompatible-triple and
@@ -26,7 +26,9 @@ Main16.1 and the exact-parameter quadratic lower4/3 inequality are unconditional
 the separate matching upper4/3 bound remains open. Main6.4 is fully proved,
 with all fixed moment/cumulant remainders improved from4/5 to1 and a proof
 independent of law reconstruction. The all-cardinality core and literal growing
-connected boundsT16.1/T16.2/T16.3 are also proved with stronger exponent1. The weaker
+connected boundsT16.1/T16.2/T16.3 are also proved with stronger exponent1.
+The exact positive boundary mass and literal coefficient-scale conversion
+T17.3/T17.4 are unconditional. The weaker
 absolute degree-power12 plane count is proved over every characteristic-zero
 field; its quantitative growing-degree consequence covers only a<1/12. The
 original quadratic-degree/all-dimensional BCN theorem and optimal-law inputs
@@ -38,7 +40,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **436 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **437 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -1021,3 +1023,5 @@ P1-MATH-0436 proves all main16.1 identities unconditionally, with signed error5/
 P1-MATH-0437 proves every clause of main6.4 unconditionally: actual and nominal factorial corrections, ordinary Touchard correction, bounded fixed moments and higher factorial cumulants. All correction remainders improve from4/5 to1, independently of the count-law approximation. Coverage is124 proved and40 conditional out of167.
 
 P1-MATH-0438 proves companionT16.1,T16.2 andT16.3 unconditionally: all-cardinality connected/core bounds and the literal growing/linear range, with stronger exponent1. The exact eta=3/2 rangeK<=L/4 is retained. Coverage is127 proved and37 conditional out of167.
+
+P1-MATH-0439 proves companionT17.3 andT17.4 unconditionally: exact positive boundary inequality and uniformK<=L/4 rate, plus literal Poisson--Charlier conversion atN^(-2)+a_N/N with its exact beta-C2 term. Coverage is129 proved and35 conditional out of167.

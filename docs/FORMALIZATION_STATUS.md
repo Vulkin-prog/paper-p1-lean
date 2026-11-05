@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+CompanionT17.3/T17.4 are unconditional (P1-MATH-0439): the exact positive boundary inequality and allK<=L/4 rate, and literalN^(-2)+a_N/N Poisson--Charlier conversion with its exact beta-C2 term. The covariance comparison has a true fixed critical-band constant.
+
 CompanionT16.1,T16.2 andT16.3 are unconditional (P1-MATH-0438), with stronger exponent1: all-cardinality connected/core activity and the full literal growing/linear range, including eta=3/2,t=4,K<=L/4. Large sizes use independently uniform certificate tails.
 
 Main6.4 is unconditional (P1-MATH-0437): all actual/nominal fixed factorial corrections, ordinary Touchard corrections, bounded moments and higher factorial cumulants are proved, with remainders strengthened to exponent1. This proof is independent of count-law reconstruction.
@@ -21,7 +23,7 @@ CompanionT14.1 is unconditional (P1-MATH-0431), with connected activity strength
 
 CompanionT1.8 is unconditional (P1-MATH-0430): exact dense-component to actual-rank transfer gives subpower nonaligned hosts and both printed kernel sumsN^(1+epsilon), including the full value kernel without block-parity rows.
 
-Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is127 proved,37 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
+Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is129 proved,35 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
 
 The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. The full arbitrary-source statement was subsequently discharged at P1-MATH-0429.
 
@@ -63,7 +65,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is127/167 unconditional and37 conditional (164/167 completed). The project records436 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is129/167 unconditional and35 conditional (164/167 completed). The project records437 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -182,7 +184,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14927 audited theorem/lemma declarations**. This
+- The project currently has **14940 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26117,3 +26119,20 @@ Earlier conditional declarations and external-input history remain preserved. On
 P1-MATH-0438 adds ten modules and fifteen theorems. CompanionT16.1,T16.2 andT16.3 move from conditional to proved. Coverage becomes127 proved,37 conditional and3 in_progress out of167, with164 completed. The project records436 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16065 jobs); direct axiom audit passed for 14927 declarations using only propext, Classical.choice and Quot.sound; all 14286 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.03 GiB.
+
+
+## Unconditional positive boundary mass and literal Poisson Charlier conversion
+
+Companion PropositionT17.3 and LemmaT17.4 now have unconditional canonical proofs of their literal statements. PositiveBoundaryMass.companion_T17_3 proves the exact positive boundary inequality and the stronger single remainderN^(-4/5+epsilon), uniformly over the entire printed rangeK<=L/4. SharpRetainedConversion.companion_T17_4 proves the literal Poisson--Charlier conversion error with one critical-band constant multiplyingN^(-2)+a_N/N, retaining the source4*|beta-C2| term and every original real source cutoff. The statements and complete proofs in companion_sections/closure.tex lines209-371 were rechecked.
+
+RetainedBadPairActivity uses the internally proved exceptional partition and aligned tail from height5 to control the literal nongood centered activity, including affine incompatibility. RetainedComponentActivity combines it with unconditional actual pair activity and the new literal growing-range theorem ateta=3/2,t=4. Its higher component bound has exponent1 throughout4*K<=L. PositiveBoundaryMass then uses the exact finite component exponential, subtracting the single good-pair contribution before taking a positive majorant, and internal independent deficits. No fixed-order estimate is applied at growing order.
+
+SharpPairActivity proves the complete actual absolute pair-activity/principal-profile comparison without geometric inputs. SharpCovarianceScale combines that profile with its exact principal phase and the internal positive lower bound for the nominal second correctiona_N. It proves |C2|<=K*a_N withK fixed beforeN, rather than an epsilon-loss substitute. The checked finite analytic conversion then gives the exact printedN^(-2)+a_N/N remainder, at the actual regular mean and second cumulant, for every real cutoffH. No analytic logarithm of the true generating function is needed.
+
+RetainedBetaCovariance additionally proves the exact beta-C2 identity bound and the uniform exponent4/5 comparison. RetainedBinomialApproximation gives an unconditional count-law approximation by the literal retained binomial-pair reference, using the exact stopped law, the completeK<=L/4 boundary estimate, internal large-boundary bound and independent deficits. These supplementary results retain the original regular ground and exact reference parameters.
+
+Earlier conditional declarations and input history remain preserved. Only the former finite geometric uses in these numbered conclusions are discharged. No general geometric property or optimal4/3 count-law estimate is promoted. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0439 adds eight modules and thirteen theorems. CompanionT17.3 andT17.4 move from conditional to proved. Coverage becomes129 proved,35 conditional and3 in_progress out of167, with164 completed. The project records437 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16081 jobs); direct axiom audit passed for 14940 declarations using only propext, Classical.choice and Quot.sound; all 14299 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.38 GiB.

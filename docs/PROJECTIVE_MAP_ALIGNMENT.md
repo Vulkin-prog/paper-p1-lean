@@ -18577,3 +18577,20 @@ Earlier conditional declarations and external-input history remain preserved. On
 P1-MATH-0438 adds ten modules and fifteen theorems. CompanionT16.1,T16.2 andT16.3 move from conditional to proved. Coverage becomes127 proved,37 conditional and3 in_progress out of167, with164 completed. The project records436 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16065 jobs); direct axiom audit passed for 14927 declarations using only propext, Classical.choice and Quot.sound; all 14286 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.03 GiB.
+
+
+## Unconditional positive boundary mass and literal Poisson Charlier conversion
+
+Companion PropositionT17.3 and LemmaT17.4 now have unconditional canonical proofs of their literal statements. PositiveBoundaryMass.companion_T17_3 proves the exact positive boundary inequality and the stronger single remainderN^(-4/5+epsilon), uniformly over the entire printed rangeK<=L/4. SharpRetainedConversion.companion_T17_4 proves the literal Poisson--Charlier conversion error with one critical-band constant multiplyingN^(-2)+a_N/N, retaining the source4*|beta-C2| term and every original real source cutoff. The statements and complete proofs in companion_sections/closure.tex lines209-371 were rechecked.
+
+RetainedBadPairActivity uses the internally proved exceptional partition and aligned tail from height5 to control the literal nongood centered activity, including affine incompatibility. RetainedComponentActivity combines it with unconditional actual pair activity and the new literal growing-range theorem ateta=3/2,t=4. Its higher component bound has exponent1 throughout4*K<=L. PositiveBoundaryMass then uses the exact finite component exponential, subtracting the single good-pair contribution before taking a positive majorant, and internal independent deficits. No fixed-order estimate is applied at growing order.
+
+SharpPairActivity proves the complete actual absolute pair-activity/principal-profile comparison without geometric inputs. SharpCovarianceScale combines that profile with its exact principal phase and the internal positive lower bound for the nominal second correctiona_N. It proves |C2|<=K*a_N withK fixed beforeN, rather than an epsilon-loss substitute. The checked finite analytic conversion then gives the exact printedN^(-2)+a_N/N remainder, at the actual regular mean and second cumulant, for every real cutoffH. No analytic logarithm of the true generating function is needed.
+
+RetainedBetaCovariance additionally proves the exact beta-C2 identity bound and the uniform exponent4/5 comparison. RetainedBinomialApproximation gives an unconditional count-law approximation by the literal retained binomial-pair reference, using the exact stopped law, the completeK<=L/4 boundary estimate, internal large-boundary bound and independent deficits. These supplementary results retain the original regular ground and exact reference parameters.
+
+Earlier conditional declarations and input history remain preserved. Only the former finite geometric uses in these numbered conclusions are discharged. No general geometric property or optimal4/3 count-law estimate is promoted. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0439 adds eight modules and thirteen theorems. CompanionT17.3 andT17.4 move from conditional to proved. Coverage becomes129 proved,35 conditional and3 in_progress out of167, with164 completed. The project records437 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16081 jobs); direct axiom audit passed for 14940 declarations using only propext, Classical.choice and Quot.sound; all 14299 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.38 GiB.

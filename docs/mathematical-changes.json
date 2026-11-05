@@ -22077,6 +22077,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "262bbf4c597505f8b36eb44014f98c1be0a7c4ed"
+    },
+    {
+      "id": "P1-MATH-0439",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:close:boundary-mass",
+        "number": "T17.3",
+        "page": 63,
+        "source": "companion_sections/closure.tex",
+        "line": 209,
+        "statement_sha256": "4a59678d5339fa107dcd55356a4517b1a5150890985e9d71db7b5cb5cf327047"
+      },
+      "original_assumption": "The positive retained boundary estimate and the literalN^(-2)+a_N/N conversion retained finite geometric inputs through the nongood pair, growing component and sharp covariance-scale bounds.",
+      "finding": "Internal actual pair profiles and literal growing-range activity close the boundary estimate. Their sharp principal scale gives |C2|<=K*a_N with no epsilon loss, so the already checked finite conversion yields the exact printed remainder uniformly in the real source cutoff.",
+      "proposed_revision": "Use the internal pair partition and growing component bounds in the exact positive boundary exponential. Derive a coefficient-scale covariance bound before analytic conversion, retaining the exact4*|beta-C2| term and a_N/N remainder.",
+      "impact": "CompanionT17.3 andT17.4 become unconditional in full printed scope, including the exact finite boundary inequality and coefficient-scale conversion. Coverage becomes129 proved,35 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.PositiveBoundaryMass.uniform_bound",
+        "PaperP1.PositiveBoundaryMass.companion_T17_3",
+        "PaperP1.RetainedBadPairActivity.uniform_bound",
+        "PaperP1.RetainedBetaCovariance.independent_bound",
+        "PaperP1.RetainedBetaCovariance.uniform_independent",
+        "PaperP1.RetainedBetaCovariance.finite_bound",
+        "PaperP1.RetainedBetaCovariance.uniform_bound",
+        "PaperP1.RetainedBinomialApproximation.uniform_bound",
+        "PaperP1.RetainedComponentActivity.uniform_bounds",
+        "PaperP1.SharpCovarianceScale.uniform_absolute_scale",
+        "PaperP1.SharpCovarianceScale.uniform_regular_covariance",
+        "PaperP1.SharpPairActivity.uniform_principal_profile",
+        "PaperP1.SharpRetainedConversion.companion_T17_4"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16081 jobs); direct axiom audit passed for 14940 declarations using only propext, Classical.choice and Quot.sound; all 14299 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.38 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

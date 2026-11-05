@@ -3747,3 +3747,11 @@ public import PaperP1.Asymptotics.FixedPositiveCoreMass
 public import PaperP1.Asymptotics.GrowingConnected
 public import PaperP1.Asymptotics.HighNullityClosure
 public import PaperP1.Asymptotics.HighNullityPairMass
+public import PaperP1.Asymptotics.PositiveBoundaryMass
+public import PaperP1.Asymptotics.RetainedBadPairActivity
+public import PaperP1.Asymptotics.RetainedBetaCovariance
+public import PaperP1.Asymptotics.RetainedBinomialApproximation
+public import PaperP1.Asymptotics.RetainedComponentActivity
+public import PaperP1.Asymptotics.SharpCovarianceScale
+public import PaperP1.Asymptotics.SharpPairActivity
+public import PaperP1.Asymptotics.SharpRetainedConversion
