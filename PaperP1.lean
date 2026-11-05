@@ -4047,3 +4047,5 @@ public import PaperP1.Analysis.UnitSlopeHigherDerivativeBounds
 public import PaperP1.Analysis.AffineInteriorUnitDerivatives
 public import PaperP1.Analysis.AffineUnitGraphParametrization
 public import PaperP1.Analysis.LocalAffineDerivativeFormula
+public import PaperP1.Analysis.BoxedLocalUnitGraphMaps
+public import PaperP1.Analysis.ShortCenteredAffineSegment

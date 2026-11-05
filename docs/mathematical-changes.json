@@ -25198,6 +25198,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "e7e82f6b261c0cf4160a91b73d39600419c4f296"
+    },
+    {
+      "id": "P1-MATH-0516",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The actual unit-jet segment maps still required supplied admissible affine scales, margins and bounded image segments.",
+      "finding": "Actual endpoint distances and continuity construct every segment, scale and margin, giving a C-infinity unit-jet curve map through every bounded nonexceptional point and covering a local graph segment.",
+      "proposed_revision": "Use the internally constructed local unit-jet maps with exact middle-parameter point values and the genuine30 D^2(r+2)^2 exceptional set, while keeping the controlled global map count separate.",
+      "impact": "Closes actual local bounded-jet parametrization existence through every bounded nonexceptional real curve point. The global finite-map count and full BCN remain open.",
+      "evidence": [
+        "PaperP1.BoxedLocalUnitGraphMaps.exists_bounded_interval",
+        "PaperP1.BoxedLocalUnitGraphMaps.exists_through_parameter",
+        "PaperP1.BoxedLocalUnitGraphMaps.exists_at_curve_point",
+        "PaperP1.BoxedLocalUnitGraphMaps.exists_control_set_and_maps",
+        "PaperP1.ShortCenteredAffineSegment.exists_segment"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16681 jobs); direct axiom audit passed for 15808 declarations using only propext, Classical.choice and Quot.sound; all 15333 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.05 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

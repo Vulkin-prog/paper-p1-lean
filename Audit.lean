@@ -2590,6 +2590,10 @@ import PaperP1
 #print axioms PaperP1.BothGraphDerivativeFormulas.first
 #print axioms PaperP1.BothGraphDerivativeFormulas.transpose_trajectory
 #print axioms PaperP1.BothGraphDerivativeFormulas.second
+#print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_bounded_interval
+#print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_through_parameter
+#print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_at_curve_point
+#print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_control_set_and_maps
 #print axioms PaperP1.CleanPairReciprocalLower.factor_identity
 #print axioms PaperP1.CleanPairReciprocalLower.substitute_lower
 #print axioms PaperP1.ClippedPowerSum.clipped_nonneg
@@ -3291,6 +3295,7 @@ import PaperP1
 #print axioms PaperP1.ShortBasisParameters.vertex_count_le_scale
 #print axioms PaperP1.ShortBasisParameters.residual_bound
 #print axioms PaperP1.ShortBasisParameters.logarithmic_threshold
+#print axioms PaperP1.ShortCenteredAffineSegment.exists_segment
 #print axioms PaperP1.SmallRecoveryParameter.power_order
 #print axioms PaperP1.SmallRecoveryParameter.exists_small
 #print axioms PaperP1.SmallRecoveryParameter.exists_relative_cost
