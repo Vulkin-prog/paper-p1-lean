@@ -10239,6 +10239,11 @@ import PaperP1
 #print axioms PaperP1.ProjectiveCurveCount.mem_realSolutions
 #print axioms PaperP1.ProjectiveCurveCount.homogeneous_relprime_count
 #print axioms PaperP1.ProjectiveCurveCount.irreducible_auxiliary_count
+#print axioms PaperP1.ProjectiveDeterminantVanishing.indexed_divisor
+#print axioms PaperP1.ProjectiveDeterminantVanishing.entry_bound
+#print axioms PaperP1.ProjectiveDeterminantVanishing.determinant_bound
+#print axioms PaperP1.ProjectiveDeterminantVanishing.zero_of_dvd_small
+#print axioms PaperP1.ProjectiveDeterminantVanishing.vanishing
 #print axioms PaperP1.ProjectiveResultants.homogenize_raise
 #print axioms PaperP1.ProjectiveResultants.native_homogenize_dvd
 #print axioms PaperP1.ProjectiveResultants.coprime_of_homogeneous_relprime

@@ -11,7 +11,7 @@ Companion T1.5 is complete conditionally on the same geometric Heath-Brown bifor
 
 Companion T1.4 is complete conditionally on HeathBrownBiformInput.Input. NonGeometricBiformInput.Input and the sufficient rational-singularity implication are internally proved with the exact constant8*a*b^2 (P1-MATH-0330). The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. The geometric Heath-Brown ordinary input remains unproved. The three incomplete original numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records345 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records346 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14267 audited theorem/lemma declarations**. This
+- The project currently has **14272 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24736,3 +24736,16 @@ curve_det_zero exposes the corresponding theorem over any commutative ring in wh
 P1-MATH-0347 adds three theorems and one matrix definition. This completes the actual local projective determinant divisor. The archimedean size comparison, auxiliary forms, treatment and height bounds for exceptional points, prime selection and the global sharp b>=2 Heath-Brown estimate remain open. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records345 improvements and two statement-scope corrections. No dependency download, axiom, unproved literature premise, compiler change or original manuscript edit is introduced. Main13.4 remains open. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15601 jobs); direct axiom audit passed for 14267 declarations using only propext, Classical.choice and Quot.sound; all 13551 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.23 GiB.
+
+
+## Actual projective minor vanishing from the exact size inequality
+
+ProjectiveDeterminantVanishing.vanishing proves that the original projective monomial determinant is zero whenever its verified real size bound is strictly smaller than the verified prime-power divisor. The size condition is exactly k!*(L^H*Y^J)^k<p^(k*(k-1)/2), where k is the actual cardinality of the arbitrary finite row index type. Every original coordinate is bounded in absolute value, with possibly different nonnegative real bounds L and Y for the two pairs. All residue, denominator, curve and derivative hypotheses are retained literally from the projective divisor theorem.
+
+indexed_divisor transports the exact divisor from Fin k to every finite index type by determinant reindexing. entry_bound proves the literal monomial bound L^H*Y^J using only the actual row inequalities r(i)<=H and s(i)<=J. determinant_bound combines this with the signed determinant expansion to give k!*(L^H*Y^J)^k. zero_of_dvd_small provides the exact integer-versus-real smallness criterion, including arbitrary signs. The row and column orientations remain explicit for later auxiliary-kernel construction.
+
+The numerical size inequality is an ordinary algebraic hypothesis here and has not yet been derived from the final prime scale or degree choices. No minor-vanishing or point-count hypothesis is assumed. This module proves the minor vanishing from the independently checked divisor and size bound; construction of the common auxiliary equation and the global count remains open.
+
+P1-MATH-0348 adds five theorems and one indexed matrix definition. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records346 improvements and two statement-scope corrections. No dependency download, axiom, unproved literature premise, compiler change or original manuscript edit is introduced. Main13.4 and the sharp b>=2 Heath-Brown input remain open. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15603 jobs); direct axiom audit passed for 14272 declarations using only propext, Classical.choice and Quot.sound; all 13557 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.22 GiB.
