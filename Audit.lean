@@ -9368,6 +9368,7 @@ import PaperP1
 #print axioms PaperP1.SharpComparableTwoSmallKernelCount.uniform_count
 #print axioms PaperP1.SharpCompatibleActivity.uniform_range
 #print axioms PaperP1.SharpCompatibleActivityUnderInputs.uniform_range
+#print axioms PaperP1.SharpConnectedChannelMass.uniform_mass
 #print axioms PaperP1.SharpConnectedChannelMassUnderInputs.uniform_mass
 #print axioms PaperP1.SharpConnectedSeedCatalog.uniform_mass
 #print axioms PaperP1.SharpConnectedSeedCatalogUnderInputs.uniform_mass
@@ -9378,8 +9379,11 @@ import PaperP1
 #print axioms PaperP1.SharpExpandedAsymmetricProfile.uniform_profile
 #print axioms PaperP1.SharpExpandedAsymmetricProfileUnderInputs.uniform_profile
 #print axioms PaperP1.SharpExpandedAsymmetricSparseSupport.uniform_count
+#print axioms PaperP1.SharpFiniteInteriorMass.uniform_channel
+#print axioms PaperP1.SharpFiniteInteriorMass.uniform_mass
 #print axioms PaperP1.SharpFiniteInteriorMassUnderInputs.uniform_channel
 #print axioms PaperP1.SharpFiniteInteriorMassUnderInputs.uniform_mass
+#print axioms PaperP1.SharpFixedChannelNonalignedMass.uniform_bound
 #print axioms PaperP1.SharpFixedChannelNonalignedMassUnderInputs.uniform_bound
 #print axioms PaperP1.SharpIncompatibleActivity.uniform_range
 #print axioms PaperP1.SharpIncompatibleActivityUnderInputs.uniform_range
@@ -9417,6 +9421,8 @@ import PaperP1
 #print axioms PaperP1.SharpThirdCancellation.article_11_2
 #print axioms PaperP1.SharpThirdCancellationUnderInputs.connected_activity_eq
 #print axioms PaperP1.SharpThirdCancellationUnderInputs.uniform_cancellation
+#print axioms PaperP1.SharpThirdCumulantLower.error_absorption
+#print axioms PaperP1.SharpThirdCumulantLower.article_14_5
 #print axioms PaperP1.SharpThirdCumulantLowerUnderInputs.error_absorption
 #print axioms PaperP1.SharpThirdCumulantLowerUnderInputs.article_14_5
 #print axioms PaperP1.SharpTranslatedKernelCounts.two_uniform_budget
@@ -9591,6 +9597,9 @@ import PaperP1
 #print axioms PaperP1.StrongAlignedDenseJointMass.uniform_joint
 #print axioms PaperP1.StrongAlignedDensePairCount.uniform_count
 #print axioms PaperP1.StrongAlignedInteriorEdges.uniform_edges
+#print axioms PaperP1.StrongAlignedSharpMass.aligned_swap
+#print axioms PaperP1.StrongAlignedSharpMass.strong_aligned_iff_unordered
+#print axioms PaperP1.StrongAlignedSharpMass.article_14_4
 #print axioms PaperP1.StrongAlignedSharpMassUnderInputs.aligned_swap
 #print axioms PaperP1.StrongAlignedSharpMassUnderInputs.strong_aligned_iff_unordered
 #print axioms PaperP1.StrongAlignedSharpMassUnderInputs.article_14_4

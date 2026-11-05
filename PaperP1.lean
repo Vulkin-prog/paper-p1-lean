@@ -3841,3 +3841,8 @@ public import PaperP1.Asymptotics.FiniteChannelTripleTheorem
 public import PaperP1.Asymptotics.FixedChannelFullPalm
 public import PaperP1.Asymptotics.FixedChannelNonalignedMass
 public import PaperP1.Asymptotics.GoodEdgePositivePalm
+public import PaperP1.Asymptotics.SharpConnectedChannelMass
+public import PaperP1.Asymptotics.SharpFiniteInteriorMass
+public import PaperP1.Asymptotics.SharpFixedChannelNonalignedMass
+public import PaperP1.Asymptotics.SharpThirdCumulantLower
+public import PaperP1.Asymptotics.StrongAlignedSharpMass

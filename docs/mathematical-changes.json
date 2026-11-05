@@ -22630,6 +22630,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "e96ef528de11c7bd90e2a877d07a685e083c411e"
+    },
+    {
+      "id": "P1-MATH-0450",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:third:aligned",
+        "number": "14.4",
+        "page": 36,
+        "source": "main_sections/third_cumulant.tex",
+        "line": 170,
+        "statement_sha256": "629f1d6b8356a54c20dde4d373fccf0db00e86ad5371902369adc522cfadbe50"
+      },
+      "original_assumption": "The strong aligned triple mass retained finite geometric crossing inputs, and the rational cumulant lower bound retained the geometric sharp cancellation bundle.",
+      "finding": "The actual restricted asymmetric profile closes every fixed interior unit-channel mass. Internal sharp pair-target cancellation already controls the full original cumulant error, allowing the explicit rational positive population to survive unconditionally.",
+      "proposed_revision": "Use the internal actual crossing profile for fixed interior channels and retain the separate height1/height2 cases in the strong aligned proof. Combine the explicit rational witness with the internal cancellation theorem on the positive actual ground, then restore the full original count exactly.",
+      "impact": "Complete main14.4 and14.5 become unconditional, including the non-strict aligned-rank threshold and the genuine full-count positive lower41/30 inequality. The separate global matching upper bound remains conditional. Coverage becomes145 proved,19 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.SharpConnectedChannelMass.uniform_mass",
+        "PaperP1.SharpFiniteInteriorMass.uniform_channel",
+        "PaperP1.SharpFiniteInteriorMass.uniform_mass",
+        "PaperP1.SharpFixedChannelNonalignedMass.uniform_bound",
+        "PaperP1.SharpThirdCumulantLower.error_absorption",
+        "PaperP1.SharpThirdCumulantLower.article_14_5",
+        "PaperP1.StrongAlignedSharpMass.aligned_swap",
+        "PaperP1.StrongAlignedSharpMass.strong_aligned_iff_unordered",
+        "PaperP1.StrongAlignedSharpMass.article_14_4",
+        "PaperP1.StrongAlignedSharpMass.StrongAligned"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16263 jobs); direct axiom audit passed for 15143 declarations using only propext, Classical.choice and Quot.sound; all 14552 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.89 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
