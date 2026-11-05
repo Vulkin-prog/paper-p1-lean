@@ -2611,6 +2611,9 @@ import PaperP1
 #print axioms PaperP1.InverseSqrtTail.step
 #print axioms PaperP1.InverseSqrtTail.interval_bound
 #print axioms PaperP1.InverseSqrtTail.tail_bound
+#print axioms PaperP1.LocalDeterminantDegreeChoice.triangle_weight
+#print axioms PaperP1.LocalDeterminantDegreeChoice.exists_auxiliary_degree
+#print axioms PaperP1.LocalDeterminantDegreeChoice.exists_avoidance_power
 #print axioms PaperP1.LogarithmicAbelWindow.weight_nonneg
 #print axioms PaperP1.LogarithmicAbelWindow.weight_continuousOn
 #print axioms PaperP1.LogarithmicAbelWindow.abel_identity

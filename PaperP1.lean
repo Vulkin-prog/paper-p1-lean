@@ -3529,3 +3529,4 @@ public import PaperP1.Diophantine.ProjectivePrimeExceptions
 public import PaperP1.Diophantine.ProjectivePrimeHeight
 public import PaperP1.Diophantine.FinitePrimeBiformCount
 public import PaperP1.Analysis.MonomialPrimeScale
+public import PaperP1.Analysis.LocalDeterminantDegreeChoice
