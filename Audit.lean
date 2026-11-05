@@ -2951,6 +2951,11 @@ import PaperP1
 #print axioms PaperP1.IteratedGraphDerivative.numerator_quotient_hasDerivAt
 #print axioms PaperP1.IteratedGraphDerivative.iterated_evaluation
 #print axioms PaperP1.IteratedGraphDerivative.positive_order
+#print axioms PaperP1.JointExceptionalComponentGridCount.unitBox_isOpen
+#print axioms PaperP1.JointExceptionalComponentGridCount.openRegion_isOpen
+#print axioms PaperP1.JointExceptionalComponentGridCount.exists_first_component_count
+#print axioms PaperP1.JointExceptionalComponentGridCount.exists_second_component_count
+#print axioms PaperP1.JointExceptionalComponentGridCount.exists_common_component_counts
 #print axioms PaperP1.JointGraphChebyshevExceptions.avoids_both
 #print axioms PaperP1.JointGraphChebyshevExceptions.exists_finset
 #print axioms PaperP1.JointLocalUnitCountingMaps.exists_at_nonexceptional
@@ -3250,6 +3255,8 @@ import PaperP1
 #print axioms PaperP1.ReducedSourceParameter.uniform_parameter_threshold
 #print axioms PaperP1.ReducedSourceShiftBudget.polylog_rebase
 #print axioms PaperP1.ReducedSourceShiftBudget.shift_and_loss_bounds
+#print axioms PaperP1.RegularComponentUnitGridCount.exists_unit_piece
+#print axioms PaperP1.RegularComponentUnitGridCount.point_count
 #print axioms PaperP1.RegularCurveComponentGraphs.exists_local_chart_in_region
 #print axioms PaperP1.RegularCurveComponentGraphs.local_charts_on_component
 #print axioms PaperP1.RegularCurveComponentGraphs.finite_population_chart
@@ -3397,6 +3404,11 @@ import PaperP1
 #print axioms PaperP1.ScaledWronskianTransformation.jetMatrix_expansion
 #print axioms PaperP1.ScaledWronskianTransformation.wronskian_factor
 #print axioms PaperP1.ScaledWronskianTransformation.wronskian_ne_zero
+#print axioms PaperP1.SecondRegularComponentUnitGridCount.exists_unit_piece
+#print axioms PaperP1.SecondRegularComponentUnitGridCount.point_count
+#print axioms PaperP1.SecondRegularCurveComponentGraphs.exists_local_chart_in_region
+#print axioms PaperP1.SecondRegularCurveComponentGraphs.local_charts_on_component
+#print axioms PaperP1.SecondRegularCurveComponentGraphs.finite_population_chart
 #print axioms PaperP1.SelectedPairWeightedSeries.kernel_change
 #print axioms PaperP1.SelectedPairWeightedSeries.point_bound
 #print axioms PaperP1.SelectedPairWeightedSeries.finite_bound

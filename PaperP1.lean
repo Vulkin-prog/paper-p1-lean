@@ -4100,3 +4100,7 @@ public import PaperP1.Analysis.TransposedGraphGluing
 public import PaperP1.Analysis.AnchoredNormalizedGraph
 public import PaperP1.Analysis.ConnectedGraphReachability
 public import PaperP1.Analysis.RegularCurveComponentGraphs
+public import PaperP1.Analysis.JointExceptionalComponentGridCount
+public import PaperP1.Analysis.RegularComponentUnitGridCount
+public import PaperP1.Analysis.SecondRegularComponentUnitGridCount
+public import PaperP1.Analysis.SecondRegularCurveComponentGraphs

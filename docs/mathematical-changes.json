@@ -25864,6 +25864,49 @@
         "status": "not_integrated"
       },
       "validation_commit": "406bdb26428095377ab8f6a3616bef37af753d9d"
+    },
+    {
+      "id": "P1-MATH-0533",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "Actual first-orientation finite-population component charts were available, but neither the component unit-control/count application nor the full second-orientation finite-population construction and common-exception component count had been proved.",
+      "finding": "Both actual regular orientations now have internally constructed controlled unit charts and polynomial-logarithmic component grid counts, outside one genuine finite exceptional set selected before all anchors and grid populations.",
+      "proposed_revision": "Use the internal both-orientation per-component grid count with the exact common exceptional set, retaining a separate obligation for the controlled global number of components.",
+      "impact": "Closes the actual per-component grid count and all its analytic, algebraic and chart inputs in both orientations. The controlled total component cardinality remains the global plane geometric step.",
+      "evidence": [
+        "PaperP1.JointExceptionalComponentGridCount.unitBox_isOpen",
+        "PaperP1.JointExceptionalComponentGridCount.openRegion_isOpen",
+        "PaperP1.JointExceptionalComponentGridCount.exists_first_component_count",
+        "PaperP1.JointExceptionalComponentGridCount.exists_second_component_count",
+        "PaperP1.JointExceptionalComponentGridCount.exists_common_component_counts",
+        "PaperP1.RegularComponentUnitGridCount.exists_unit_piece",
+        "PaperP1.RegularComponentUnitGridCount.point_count",
+        "PaperP1.SecondRegularComponentUnitGridCount.exists_unit_piece",
+        "PaperP1.SecondRegularComponentUnitGridCount.point_count",
+        "PaperP1.SecondRegularCurveComponentGraphs.exists_local_chart_in_region",
+        "PaperP1.SecondRegularCurveComponentGraphs.local_charts_on_component",
+        "PaperP1.SecondRegularCurveComponentGraphs.finite_population_chart",
+        "PaperP1.JointExceptionalComponentGridCount.unitBox",
+        "PaperP1.JointExceptionalComponentGridCount.openRegion",
+        "PaperP1.SecondRegularCurveComponentGraphs.region",
+        "PaperP1.SecondRegularCurveComponentGraphs.pointImage",
+        "PaperP1.SecondRegularCurveComponentGraphs.restrict"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16825 jobs); direct axiom audit passed for 15982 declarations using only propext, Classical.choice and Quot.sound; all 15552 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.65 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
