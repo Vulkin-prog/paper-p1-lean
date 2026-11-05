@@ -11440,7 +11440,8 @@
             "PaperP1.OptimalZeroProbability.article_17_2"
           ]
         }
-      ]
+      ],
+      "validation_commit": "ac09d6d8c3c8c2a047f76a3891b3bf857d43055c"
     },
     {
       "label": "p13:optimal:zero",
@@ -11532,7 +11533,8 @@
             "PaperP1.OptimalZeroProbability.article_17_2"
           ]
         }
-      ]
+      ],
+      "validation_commit": "ac09d6d8c3c8c2a047f76a3891b3bf857d43055c"
     },
     {
       "label": "p13:optimal:nominal",
