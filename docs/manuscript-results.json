@@ -9810,7 +9810,8 @@
           "scope": "Exact main15.12 conclusion only. For15.13 the254 fixed-order premises printed in the source remain explicit; no optimal numerical law rate is inferred. No general geometric property is asserted.",
           "checkpoint": "P1-MATH-0433"
         }
-      ]
+      ],
+      "validation_commit": "d396c61e2d0f6d895ef0940827d71bc10cdf80b5"
     },
     {
       "label": "p13:transfer:finite",
@@ -9948,7 +9949,8 @@
           "scope": "Exact main15.13 conclusion only. For15.13 the254 fixed-order premises printed in the source remain explicit; no optimal numerical law rate is inferred. No general geometric property is asserted.",
           "checkpoint": "P1-MATH-0433"
         }
-      ]
+      ],
+      "validation_commit": "d396c61e2d0f6d895ef0940827d71bc10cdf80b5"
     },
     {
       "label": "p13:transfer:reconstruction",
