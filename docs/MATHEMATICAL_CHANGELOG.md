@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**416 mathematical improvements and two statement-scope corrections are confirmed.**
+**417 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24954,3 +24954,18 @@ The original main_sections/triple_activities.tex lines33-90 were rechecked, incl
 P1-MATH-0418 adds two modules and eight theorems. Main11.2 and11.3 move from conditional to proved. Coverage becomes109 proved,55 conditional and3 in_progress out of167, with164 completed. The project records416 improvements and two statement-scope corrections. Original sources are unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15839 jobs); direct axiom audit passed for 14717 declarations using only propext, Classical.choice and Quot.sound; all 14067 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.81 GiB.
+
+
+## Unconditional fixed and all-cardinality primitive masses
+
+Companion PropositionT4.3 and TheoremT14.2 now have unconditional canonical proofs with the stronger exponent1 in place of the printed4/5. FixedPrimitiveMass supplies actual heterogeneous rank-weight mass N^(-1+epsilon) for every prescribed primitive order r>=3. Its only former geometric branch was primitive triples; the already internally proved PrimitiveTripleMass.uniform_rank_mass gives the stronger triple rate3/2. Orders r>=4 use the internally proved elementary bound N^(1-r/2+epsilon). The exact actual primitive predicate, all dyadic subgrounds and arbitrary finite subpopulations are retained.
+
+PrimitiveOrderedBound controls the literal ordered nominal primitive sum from T4.3, including its distinctness and separation constraints, using the actual finite factorial conversion on regular starts. The affine joint probabilities are bounded by the same rank-weight majorant. The canonical source corollary retains the original4/5 exponent, while uniform_strong records the improvement to1.
+
+AllPrimitiveMass supplies the entire weighted primitive rank sum at all cardinalities at least three. The internally proved WeightedPrimitiveTail gives the uniform large-order bound, while a finite maximum of thresholds controls every remaining fixed order. The weight u>0 is fixed before N, and no fixed-order asymptotic constant is applied at an order growing with N. The actual joint-plus-absolute-centered mass on every regular dyadic subground also has rate N^(-1+epsilon), including overlapping windows, incompatible affine systems and both signs. companion_T14_2 retains the exact printed4/5 statement.
+
+The full original statement of companionT4.3 in companion_sections/fixed_moments.tex lines184-196 and its proof, and companionT14.2 in companion_sections/cores.tex lines260-341, were rechecked. The canonical proofs expose no geometric cover/count or BCN premise. This closes the specific former primitive-triple dependency without proving any general geometric property.
+
+P1-MATH-0419 adds three modules and eight theorems. CompanionT4.3 andT14.2 move from conditional to proved. Coverage becomes111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records417 improvements and two statement-scope corrections. Original source bytes remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15845 jobs); direct axiom audit passed for 14725 declarations using only propext, Classical.choice and Quot.sound; all 14075 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.78 GiB.

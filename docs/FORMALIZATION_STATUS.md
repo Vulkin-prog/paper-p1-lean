@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+CompanionT4.3 andT14.2 are unconditional (P1-MATH-0419): fixed ordered nominal and full all-cardinality primitive masses have the stronger exponent1, with actual joint/absolute-centered weights, contacts and incompatible systems retained.
+
 Main11.2 and11.3 are unconditional (P1-MATH-0418): full incompatible triple activity and the actual third-cumulant/positive-activity comparison have sharp error N^(-3/2+epsilon), including zero marginals and all repeated indices.
 
 Main15.9 is unconditional (P1-MATH-0417): the sharp actual all-cardinality pair-extension deficit uses finite small-order thresholds and an internally proved uniform large-seed bound.
@@ -31,7 +33,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is109/167 unconditional and55 conditional (164/167 completed). The project records416 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is111/167 unconditional and53 conditional (164/167 completed). The project records417 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -150,7 +152,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14717 audited theorem/lemma declarations**. This
+- The project currently has **14725 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25751,3 +25753,18 @@ The original main_sections/triple_activities.tex lines33-90 were rechecked, incl
 P1-MATH-0418 adds two modules and eight theorems. Main11.2 and11.3 move from conditional to proved. Coverage becomes109 proved,55 conditional and3 in_progress out of167, with164 completed. The project records416 improvements and two statement-scope corrections. Original sources are unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15839 jobs); direct axiom audit passed for 14717 declarations using only propext, Classical.choice and Quot.sound; all 14067 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.81 GiB.
+
+
+## Unconditional fixed and all-cardinality primitive masses
+
+Companion PropositionT4.3 and TheoremT14.2 now have unconditional canonical proofs with the stronger exponent1 in place of the printed4/5. FixedPrimitiveMass supplies actual heterogeneous rank-weight mass N^(-1+epsilon) for every prescribed primitive order r>=3. Its only former geometric branch was primitive triples; the already internally proved PrimitiveTripleMass.uniform_rank_mass gives the stronger triple rate3/2. Orders r>=4 use the internally proved elementary bound N^(1-r/2+epsilon). The exact actual primitive predicate, all dyadic subgrounds and arbitrary finite subpopulations are retained.
+
+PrimitiveOrderedBound controls the literal ordered nominal primitive sum from T4.3, including its distinctness and separation constraints, using the actual finite factorial conversion on regular starts. The affine joint probabilities are bounded by the same rank-weight majorant. The canonical source corollary retains the original4/5 exponent, while uniform_strong records the improvement to1.
+
+AllPrimitiveMass supplies the entire weighted primitive rank sum at all cardinalities at least three. The internally proved WeightedPrimitiveTail gives the uniform large-order bound, while a finite maximum of thresholds controls every remaining fixed order. The weight u>0 is fixed before N, and no fixed-order asymptotic constant is applied at an order growing with N. The actual joint-plus-absolute-centered mass on every regular dyadic subground also has rate N^(-1+epsilon), including overlapping windows, incompatible affine systems and both signs. companion_T14_2 retains the exact printed4/5 statement.
+
+The full original statement of companionT4.3 in companion_sections/fixed_moments.tex lines184-196 and its proof, and companionT14.2 in companion_sections/cores.tex lines260-341, were rechecked. The canonical proofs expose no geometric cover/count or BCN premise. This closes the specific former primitive-triple dependency without proving any general geometric property.
+
+P1-MATH-0419 adds three modules and eight theorems. CompanionT4.3 andT14.2 move from conditional to proved. Coverage becomes111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records417 improvements and two statement-scope corrections. Original source bytes remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15845 jobs); direct axiom audit passed for 14725 declarations using only propext, Classical.choice and Quot.sound; all 14075 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.78 GiB.

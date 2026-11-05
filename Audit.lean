@@ -6724,6 +6724,10 @@ import PaperP1
 #print axioms PaperP1.AllPairRankUnderBCN.nonaligned_pair_bound
 #print axioms PaperP1.AllPairResidualMassUnderInputs.uniform_local
 #print axioms PaperP1.AllPairResidualMassUnderInputs.uniform_tau
+#print axioms PaperP1.AllPrimitiveMass.weighted_fixed
+#print axioms PaperP1.AllPrimitiveMass.uniform_rank
+#print axioms PaperP1.AllPrimitiveMass.uniform_actual
+#print axioms PaperP1.AllPrimitiveMass.companion_T14_2
 #print axioms PaperP1.AllPrimitiveMassUnderInputs.weighted_fixed
 #print axioms PaperP1.AllPrimitiveMassUnderInputs.uniform_rank
 #print axioms PaperP1.AllPrimitiveMassUnderInputs.uniform_actual
@@ -7702,6 +7706,8 @@ import PaperP1
 #print axioms PaperP1.FixedPlaneSplitCount.pairFibre_card
 #print axioms PaperP1.FixedPlaneSplitCount.uniform_count
 #print axioms PaperP1.FixedPositiveCoreMassUnderInputs.uniform_bound
+#print axioms PaperP1.FixedPrimitiveMass.uniform_triples
+#print axioms PaperP1.FixedPrimitiveMass.uniform_fixed
 #print axioms PaperP1.FixedPrimitiveMassUnderInputs.uniform_triples
 #print axioms PaperP1.FixedPrimitiveMassUnderInputs.uniform_fixed
 #print axioms PaperP1.FixedProjectedMotifs.exists_even_order
@@ -8679,6 +8685,8 @@ import PaperP1
 #print axioms PaperP1.PrimitiveIndependentBudgets.two_anchor_bound
 #print axioms PaperP1.PrimitiveIndependentBudgets.ten_anchor_bound
 #print axioms PaperP1.PrimitiveNominalCountMass.uniform_mass
+#print axioms PaperP1.PrimitiveOrderedBound.uniform_strong
+#print axioms PaperP1.PrimitiveOrderedBound.companion_T4_3
 #print axioms PaperP1.PrimitiveSharpMassUnderInputs.uniform_four
 #print axioms PaperP1.PrimitiveSharpMassUnderInputs.article_15_5
 #print axioms PaperP1.PrimitiveSourceDeterminantCount.uniform_primitive_count

@@ -3634,3 +3634,6 @@ public import PaperP1.Asymptotics.AllPairDeficit
 public import PaperP1.Asymptotics.PairDeficitBounds
 public import PaperP1.Asymptotics.SharpThirdCancellation
 public import PaperP1.Model.FilteredPositiveRestriction
+public import PaperP1.Asymptotics.AllPrimitiveMass
+public import PaperP1.Asymptotics.FixedPrimitiveMass
+public import PaperP1.Asymptotics.PrimitiveOrderedBound

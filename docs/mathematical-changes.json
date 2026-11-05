@@ -21318,6 +21318,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "d9b598c7bb86ea5faccb2c20be96e0506f85327b"
+    },
+    {
+      "id": "P1-MATH-0419",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:fixed:primitive",
+        "number": "T4.3",
+        "page": 28,
+        "source": "companion_sections/fixed_moments.tex",
+        "line": 184,
+        "statement_sha256": "693bbfde36bfeb61edbaf5454a23ee9a9a87f8e1bda9eb0b2bb2939af0873a96"
+      },
+      "original_assumption": "The fixed and all-cardinality primitive bounds retained a geometric two-target dependency only through dense primitive triples.",
+      "finding": "Internal primitive triple confinement and the elementary higher-order rank bound supply every fixed size, and the internally proved uniform primitive tail closes the entire weighted sum with exponent1.",
+      "proposed_revision": "Replace the geometric primitive-triple input by its unconditional confinement proof. State the stronger exponent1 and retain the distinction between the finite small-order maximum and the uniform large-order tail.",
+      "impact": "CompanionT4.3 andT14.2 move from conditional to proved:111 proved,53 conditional,3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.AllPrimitiveMass.weighted_fixed",
+        "PaperP1.AllPrimitiveMass.uniform_rank",
+        "PaperP1.AllPrimitiveMass.uniform_actual",
+        "PaperP1.AllPrimitiveMass.companion_T14_2",
+        "PaperP1.FixedPrimitiveMass.uniform_triples",
+        "PaperP1.FixedPrimitiveMass.uniform_fixed",
+        "PaperP1.PrimitiveOrderedBound.uniform_strong",
+        "PaperP1.PrimitiveOrderedBound.companion_T4_3"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15845 jobs); direct axiom audit passed for 14725 declarations using only propext, Classical.choice and Quot.sound; all 14075 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.78 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
