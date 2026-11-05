@@ -11,7 +11,7 @@ Companion T1.5 is complete conditionally on the same geometric Heath-Brown bifor
 
 Companion T1.4 is complete conditionally on HeathBrownBiformInput.Input. NonGeometricBiformInput.Input and the sufficient rational-singularity implication are internally proved with the exact constant8*a*b^2 (P1-MATH-0330). The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. The geometric Heath-Brown ordinary input remains unproved. The three incomplete original numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records331 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records332 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14163 audited theorem/lemma declarations**. This
+- The project currently has **14168 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24564,3 +24564,14 @@ This is preparatory algebra for the degree-uniform intersection count needed in 
 P1-MATH-0333 adds two checked algebraic lemmas. Baseline coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records331 improvements and two statement-scope corrections. No new dependency, unproved input, axiom, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15553 jobs); direct axiom audit passed for 14163 declarations using only propext, Classical.choice and Quot.sound; all 13433 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.44 GiB.
+
+
+## Sharp bivariate resultant degree from actual total degrees
+
+BivariateResultantDegree.resultant_degree proves natDegree(resultant(P,Q))<=D*E when the actual total degrees of P and Q are at most D and E. It applies over every commutative coefficient ring, uses the actual default outer degrees in the Sylvester matrix, and needs no irreducibility, domain, nonzero resultant or full-degree leading coefficient. The total degree is exactly the existing PlaneCurvePointCount.degree, with no replacement definition.
+
+The five new lemmas give the coefficient-row degree constraint, the outer-degree bound, the integer Sylvester shift budget, the individual nonzero-entry constraint, and the final determinant bound. The budget uses (D-m)*(E-n)>=0 for the actual outer degrees m,n. It therefore retains the cancellation of row and column shifts even when m<D or n<E. This improves the earlier coarse resultant-degree estimate based on one maximum entry degree.
+
+This is preparatory elimination algebra for main13.4. A nonvanishing resultant, an injective projection of a finite point set, the finite Bezout count and the geometric BCN theorem still need their separate arguments. No BCN point-count input is discharged here, and the original all-dimensional integral-curve statement remains in progress. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records332 improvements and two statement-scope corrections. No original source, compiler, dependency, axiom or remaining input is changed; Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15555 jobs); direct axiom audit passed for 14168 declarations using only propext, Classical.choice and Quot.sound; all 13438 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.43 GiB.

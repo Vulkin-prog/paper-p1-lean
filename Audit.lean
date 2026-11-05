@@ -633,6 +633,11 @@ import PaperP1
 #print axioms PaperP1.BivariateReciprocalSeries.totalOrder_reciprocal
 #print axioms PaperP1.BivariateReciprocalSeries.coefficient_reciprocal
 #print axioms PaperP1.BivariateReciprocalSeries.reciprocal_zero
+#print axioms PaperP1.BivariateResultantDegree.coefficient_row_degree
+#print axioms PaperP1.BivariateResultantDegree.outer_degree_le
+#print axioms PaperP1.BivariateResultantDegree.sylvester_budget
+#print axioms PaperP1.BivariateResultantDegree.sylvester_entry_degree
+#print axioms PaperP1.BivariateResultantDegree.resultant_degree
 #print axioms PaperP1.BivariateResultantHeight.sylvester_entry_degree
 #print axioms PaperP1.BivariateResultantHeight.sylvester_entry_height
 #print axioms PaperP1.BivariateResultantHeight.resultant_height

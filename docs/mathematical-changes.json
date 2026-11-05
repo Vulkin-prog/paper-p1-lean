@@ -18389,6 +18389,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "6bd38a878a37ece77dfe2610c83ad9cb713575a3"
+    },
+    {
+      "id": "P1-MATH-0334",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "A common maximum-entry degree bound for the Sylvester matrix gives a coarse resultant degree, losing the total-degree constraints needed for a sharp degree-uniform intersection estimate.",
+      "finding": "The actual bivariate resultant has degree at most the product D*E of total-degree bounds, over arbitrary commutative rings. Exact Sylvester shifts and (D-m)*(E-n)>=0 handle outer-degree drops without a generic-leading-coefficient assumption.",
+      "proposed_revision": "Use the checked D*E resultant degree estimate in the finite-intersection argument, together with separately justified nonvanishing and projection hypotheses.",
+      "impact": "Sharpens the preparatory elimination bound to a total-degree product. It does not prove a finite Bezout theorem or the main13.4 BCN estimate and does not change numbered coverage.",
+      "evidence": [
+        "PaperP1.BivariateResultantDegree.coefficient_row_degree",
+        "PaperP1.BivariateResultantDegree.outer_degree_le",
+        "PaperP1.BivariateResultantDegree.sylvester_budget",
+        "PaperP1.BivariateResultantDegree.sylvester_entry_degree",
+        "PaperP1.BivariateResultantDegree.resultant_degree"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15555 jobs); direct axiom audit passed for 14168 declarations using only propext, Classical.choice and Quot.sound; all 13438 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.43 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
