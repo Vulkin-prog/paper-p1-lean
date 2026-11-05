@@ -6683,7 +6683,8 @@
             "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER"
           ]
         }
-      ]
+      ],
+      "validation_commit": "a13d21ef3eb688b2f192e35a371f1d01e615d03e"
     },
     {
       "label": "p13:third:rational-rank",
@@ -7691,7 +7692,8 @@
             "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER"
           ]
         }
-      ]
+      ],
+      "validation_commit": "a13d21ef3eb688b2f192e35a371f1d01e615d03e"
     },
     {
       "label": "p13:transfer:conversion",
@@ -8322,7 +8324,8 @@
             "p1:internal:dense-singleton-weak-targets"
           ]
         }
-      ]
+      ],
+      "validation_commit": "a13d21ef3eb688b2f192e35a371f1d01e615d03e"
     },
     {
       "label": "p13:transfer:compressed-target",
