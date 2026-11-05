@@ -37964,7 +37964,8 @@
             "PaperP1.OrdinaryReciprocalPrimeLowerInput.eipInput_iff_lower"
           ]
         }
-      ]
+      ],
+      "validation_commit": "d4ff55fb1b07a526474adf1b7293721eed924064"
     },
     {
       "label": "p1:limits:private-exact",
