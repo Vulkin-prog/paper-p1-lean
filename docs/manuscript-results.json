@@ -14239,9 +14239,11 @@
           "checkpoint": "P1-MATH-0330",
           "input": "PaperP1.NonGeometricBiformInput.Input",
           "proof": "PaperP1.ComplexProjectiveIrreducibility.nongeometric_input",
-          "validation": "Verified under Lean v4.36.0-rc2: full build passed (15547 jobs); direct axiom audit passed for 14154 declarations using only propext, Classical.choice and Quot.sound; all 13424 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.48 GiB."
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (15547 jobs); direct axiom audit passed for 14154 declarations using only propext, Classical.choice and Quot.sound; all 13424 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.48 GiB.",
+          "validation_commit": "541d7b0e209d5473d5610463f873add24616c02d"
         }
-      ]
+      ],
+      "validation_commit": "541d7b0e209d5473d5610463f873add24616c02d"
     },
     {
       "label": "p1:arith:twokernel",
@@ -18734,9 +18736,11 @@
           "checkpoint": "P1-MATH-0330",
           "input": "PaperP1.NonGeometricBiformInput.Input",
           "proof": "PaperP1.ComplexProjectiveIrreducibility.nongeometric_input",
-          "validation": "Verified under Lean v4.36.0-rc2: full build passed (15547 jobs); direct axiom audit passed for 14154 declarations using only propext, Classical.choice and Quot.sound; all 13424 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.48 GiB."
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (15547 jobs); direct axiom audit passed for 14154 declarations using only propext, Classical.choice and Quot.sound; all 13424 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.48 GiB.",
+          "validation_commit": "541d7b0e209d5473d5610463f873add24616c02d"
         }
-      ]
+      ],
+      "validation_commit": "541d7b0e209d5473d5610463f873add24616c02d"
     },
     {
       "label": "p1:arith:anchor",
@@ -21898,16 +21902,19 @@
             "input": "NonGeometricBiformInput.Input",
             "proof": "PaperP1.ComplexProjectiveIrreducibility.nongeometric_input"
           }
-        ]
+        ],
+        "validation_commit": "541d7b0e209d5473d5610463f873add24616c02d"
       },
       "input_discharges": [
         {
           "checkpoint": "P1-MATH-0330",
           "input": "PaperP1.NonGeometricBiformInput.Input",
           "proof": "PaperP1.ComplexProjectiveIrreducibility.nongeometric_input",
-          "validation": "Verified under Lean v4.36.0-rc2: full build passed (15547 jobs); direct axiom audit passed for 14154 declarations using only propext, Classical.choice and Quot.sound; all 13424 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.48 GiB."
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (15547 jobs); direct axiom audit passed for 14154 declarations using only propext, Classical.choice and Quot.sound; all 13424 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.48 GiB.",
+          "validation_commit": "541d7b0e209d5473d5610463f873add24616c02d"
         }
-      ]
+      ],
+      "validation_commit": "541d7b0e209d5473d5610463f873add24616c02d"
     },
     {
       "label": "p1:arith:palmrank",
@@ -22505,9 +22512,11 @@
           "checkpoint": "P1-MATH-0330",
           "input": "PaperP1.NonGeometricBiformInput.Input",
           "proof": "PaperP1.ComplexProjectiveIrreducibility.nongeometric_input",
-          "validation": "Verified under Lean v4.36.0-rc2: full build passed (15547 jobs); direct axiom audit passed for 14154 declarations using only propext, Classical.choice and Quot.sound; all 13424 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.48 GiB."
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (15547 jobs); direct axiom audit passed for 14154 declarations using only propext, Classical.choice and Quot.sound; all 13424 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.48 GiB.",
+          "validation_commit": "541d7b0e209d5473d5610463f873add24616c02d"
         }
-      ]
+      ],
+      "validation_commit": "541d7b0e209d5473d5610463f873add24616c02d"
     },
     {
       "label": "p1:arith:fixed-support",
