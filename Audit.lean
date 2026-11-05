@@ -2833,6 +2833,11 @@ import PaperP1
 #print axioms PaperP1.FiniteSetAvoidingInterval.exists_interval
 #print axioms PaperP1.FiniteSquareTail.sum_bound
 #print axioms PaperP1.FiniteSquareTail.sum_bound_of_div_tail
+#print axioms PaperP1.GradientComparisonControl.balance_factorization
+#print axioms PaperP1.GradientComparisonControl.static_sign
+#print axioms PaperP1.GradientComparisonControl.balance_sign
+#print axioms PaperP1.GradientComparisonControl.abs_le_propagates
+#print axioms PaperP1.GradientComparisonControl.abs_ge_propagates
 #print axioms PaperP1.GraphControlledDerivatives.coordinate_sign
 #print axioms PaperP1.GraphControlledDerivatives.first_zero_or_nowhere_zero
 #print axioms PaperP1.GraphControlledDerivatives.second_zero_or_nowhere_zero
@@ -2840,6 +2845,10 @@ import PaperP1
 #print axioms PaperP1.GraphControlledDerivatives.second_sign
 #print axioms PaperP1.GraphControlledDerivatives.first_all_orders_sign
 #print axioms PaperP1.GraphControlledDerivatives.second_all_orders_sign
+#print axioms PaperP1.GraphSlopeControl.first_abs_deriv
+#print axioms PaperP1.GraphSlopeControl.second_abs_deriv
+#print axioms PaperP1.GraphSlopeControl.first_distance
+#print axioms PaperP1.GraphSlopeControl.second_distance
 #print axioms PaperP1.GraphTangentEvaluation.directional_normalized
 #print axioms PaperP1.GraphTangentEvaluation.hasDerivAt_evaluation
 #print axioms PaperP1.GraphTangentEvaluation.deriv_evaluation
@@ -3319,6 +3328,8 @@ import PaperP1
 #print axioms PaperP1.TruncatedAffineDegree.budget
 #print axioms PaperP1.TruncatedAffineDegree.prime_scale
 #print axioms PaperP1.UniformSaddleVariation.uniform_left_variation
+#print axioms PaperP1.UnitSlopeNormalizedCharts.exists_at_nonexceptional
+#print axioms PaperP1.UnitSlopeNormalizedCharts.exists_control_set_and_unit_slope_charts
 #print axioms PaperP1.VerticalGridLattice.center_identity
 #print axioms PaperP1.VerticalGridLattice.point_box
 #print axioms PaperP1.WeightedGeometricTail.weighted_hasSum

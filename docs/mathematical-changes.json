@@ -25076,6 +25076,47 @@
         "status": "not_integrated"
       },
       "validation_commit": "23e18523ebabcf0c352b039cde390edc09d9ddf3"
+    },
+    {
+      "id": "P1-MATH-0513",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The constructed controlled normalized charts did not select an orientation with a proved unit actual slope or unit distance bound.",
+      "finding": "Static auxiliary sign control propagates the gradient magnitude comparison; an actual orientation choice constructs a smooth controlled chart with |f_prime|<=1 and |f(t)-f(u)|<=|t-u| at every nonexceptional point, including equality cases.",
+      "proposed_revision": "Use the constructed weak unit-slope orientation and exact distance inequality while keeping full higher derivative norm and global covering obligations separate.",
+      "impact": "Closes actual unit-slope selection and local distance control in the smooth parametrization route. Controlled global C^r parametrizations remain open.",
+      "evidence": [
+        "PaperP1.GradientComparisonControl.balance_factorization",
+        "PaperP1.GradientComparisonControl.static_sign",
+        "PaperP1.GradientComparisonControl.balance_sign",
+        "PaperP1.GradientComparisonControl.abs_le_propagates",
+        "PaperP1.GradientComparisonControl.abs_ge_propagates",
+        "PaperP1.GraphSlopeControl.first_abs_deriv",
+        "PaperP1.GraphSlopeControl.second_abs_deriv",
+        "PaperP1.GraphSlopeControl.first_distance",
+        "PaperP1.GraphSlopeControl.second_distance",
+        "PaperP1.UnitSlopeNormalizedCharts.exists_at_nonexceptional",
+        "PaperP1.UnitSlopeNormalizedCharts.exists_control_set_and_unit_slope_charts",
+        "PaperP1.GradientComparisonControl.balance",
+        "PaperP1.UnitSlopeNormalizedCharts.Piece",
+        "PaperP1.UnitSlopeNormalizedCharts.of_first",
+        "PaperP1.UnitSlopeNormalizedCharts.of_second"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16663 jobs); direct axiom audit passed for 15780 declarations using only propext, Classical.choice and Quot.sound; all 15302 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.11 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

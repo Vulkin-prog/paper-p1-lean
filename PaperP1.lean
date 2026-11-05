@@ -4037,3 +4037,6 @@ public import PaperP1.Analysis.PolynomialQuotientControl
 public import PaperP1.Analysis.ControlledNormalizedCharts
 public import PaperP1.Analysis.FiniteSetAvoidingInterval
 public import PaperP1.Analysis.NormalizedGraphFiniteAvoidance
+public import PaperP1.Analysis.GradientComparisonControl
+public import PaperP1.Analysis.GraphSlopeControl
+public import PaperP1.Analysis.UnitSlopeNormalizedCharts

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**510 mathematical improvements and two statement-scope corrections are confirmed.**
+**511 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26550,3 +26550,18 @@ This is a local theorem at every nonexceptional point. It does not bound the tot
 P1-MATH-0512 adds three modules, seven theorems and one definition. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 510 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16657 jobs); direct axiom audit passed for 15769 declarations using only propext, Classical.choice and Quot.sound; all 15287 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.14 GiB.
+
+
+## Constructed controlled normalized charts with unit slope and distance bounds
+
+GradientComparisonControl proves a consistent smaller-slope orientation on any preconnected nonexceptional set. The actual squared-gradient balance P_x^2-P_y^2 factors as (P_x+P_y)(P_x-P_y), whose two actual static auxiliary restrictions have constant sign. The balance therefore has constant sign as well. Either initial weak absolute-value comparison between the two actual partials propagates throughout the domain. Equality is retained, including the case where a static auxiliary vanishes identically on the curve.
+
+GraphSlopeControl connects this comparison to actual normalized graph derivatives. If |P_x|<=|P_y| at one parameter of a connected first-orientation trajectory avoiding the control set, then the actual dependent-coordinate derivative has absolute value at most1 throughout. The corresponding second-orientation statement uses |P_y|<=|P_x|. The denominator is already proved nonzero by the actual trajectory. The real mean value theorem then proves the exact distance inequalities |f(t)-f(u)|<=|t-u| on every such actual open interval in both orientations. No bound for an unrelated formal expression is substituted for the real derivative.
+
+UnitSlopeNormalizedCharts constructs an actual Piece recording the selected independent original coordinate, exact parameter normalization, genuine normalized trajectory, C-infinity component functions, the original curve equation, full graph-control avoidance, simultaneous signs of derivatives0 throughr, unit actual slope and the exact unit distance inequality. At every actual irreducible positive-degree curve point outside the control set, the proof compares the two actual partial magnitudes, verifies nonvanishing of the chosen denominator from the internally proved nonsingularity, constructs the appropriate finite-avoiding ODE chart, and derives all fields. Neither orientation nor a slope bound is supplied as a geometric input.
+
+The final theorem constructs the same genuine control set with exact membership and at most30 deg(P)^2(r+1)^2 points, before every actual curve point and its selected unit-slope chart. Weak slope bounds include equality at slope1 or-1; no strict-slope premise excludes those cases. These are first-derivative and distance bounds, not unit full C^r norms. Controlled global covering/piece counts, bounded higher derivative norms, the sharp plane point count and higher-dimensional projection remain open. Full main13.4/13.5 remain unresolved; the generic plane theorem stays cubic with full a<1/3 range.
+
+P1-MATH-0513 adds three modules, eleven theorems and four definitions/structures. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 511 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16663 jobs); direct axiom audit passed for 15780 declarations using only propext, Classical.choice and Quot.sound; all 15302 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.11 GiB.
