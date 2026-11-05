@@ -17612,3 +17612,16 @@ The exact finite coefficient-height budget heightBudget(D) is defined before the
 P1-MATH-0375 adds nine theorems and two definitions and weakens unnecessary field assumptions in two earlier modules. Selecting a bounded parameter that makes the outer degree equal the total degree remains the next obligation before any exponent improvement is asserted. The proved intermediate plane exponent remains4/D+epsilon, while the sharper degree-uniform BCN estimate and original main13.4 remain open. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records373 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15663 jobs); direct axiom audit passed for 14412 declarations using only propext, Classical.choice and Quot.sound; all 13715 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.83 GiB.
+
+
+## A bounded integer direction attains the full outer degree
+
+BoundedPlaneShear.exists_full_outer_degree proves that every nonzero integer plane equation P admits an actual integer shear parameter0<=t<=D, where D is its exact total degree, such that P(x+t*y,y) has outer degree exactly D. The parameter lies in a fixed finite set depending only on D; no coefficient-dependent coordinate magnitude is introduced.
+
+The proof constructs the literal top-direction polynomial from triangular coefficient coordinates. direction_coefficient identifies each top-degree coefficient without cancellation, direction_degree bounds its univariate degree by D, and direction_ne_zero extracts a genuine coefficient attaining the original finite-support total degree. The proved finite root bound then supplies a nonroot among0,...,D. The diagonal specialization of the actual integer shear is computed on every monomial and reconstructed on the whole equation, identifying its coefficient of degree D with evaluation of that top-direction polynomial. This nonzero coefficient forces the exact outer degree; total-degree preservation supplies the reverse inequality.
+
+All finite-direction selection, coefficient identities and degree preservation are now internally proved. Together with the preceding integer coordinate and height budgets, they prepare an improvement of the unconditional intermediate plane exponent from4/D+epsilon to2/D+epsilon. That stronger count is not yet asserted at this checkpoint; the sharper degree-uniform BCN exponent1/D and original all-dimensional main13.4 remain open.
+
+P1-MATH-0376 adds eight theorems and two definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records374 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15665 jobs); direct axiom audit passed for 14420 declarations using only propext, Classical.choice and Quot.sound; all 13725 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.81 GiB.

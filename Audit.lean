@@ -695,6 +695,14 @@ import PaperP1
 #print axioms PaperP1.BivariateWordSquares.wordPolynomial_not_square_right
 #print axioms PaperP1.BivariateWordSquares.wordPolynomial_not_square
 #print axioms PaperP1.BivariateWordSquares.wordFunction_not_square
+#print axioms PaperP1.BoundedPlaneShear.direction_coefficient
+#print axioms PaperP1.BoundedPlaneShear.direction_degree
+#print axioms PaperP1.BoundedPlaneShear.direction_ne_zero
+#print axioms PaperP1.BoundedPlaneShear.exists_bounded_nonroot
+#print axioms PaperP1.BoundedPlaneShear.exists_direction_nonzero
+#print axioms PaperP1.BoundedPlaneShear.diagonal_monomial
+#print axioms PaperP1.BoundedPlaneShear.diagonal_coefficient
+#print axioms PaperP1.BoundedPlaneShear.exists_full_outer_degree
 #print axioms PaperP1.CenteredCardConvolution.convolution
 #print axioms PaperP1.CenteredCardConvolution.zero_layer
 #print axioms PaperP1.CenteredCardConvolution.one_layer

@@ -19805,6 +19805,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "f51a2385512d22d514828be02c13d42e59538360"
+    },
+    {
+      "id": "P1-MATH-0376",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The integer shear had finite transport budgets but lacked a proved bounded parameter making its outer degree equal the exact total degree.",
+      "finding": "An actual parameter t in0,...,D makes the outer degree of every nonzero integer plane equation exactly D, by a nonzero top-direction polynomial and a literal diagonal coefficient identity.",
+      "proposed_revision": "Combine this bounded good-direction theorem with the already proved coordinate and coefficient-height budgets and the geometric biform count to obtain a fixed-degree intermediate plane exponent2/D+epsilon.",
+      "impact": "Closes the good-direction choice without uncontrolled coefficient dependence. The count improvement remains to be assembled and the sharper BCN property remains open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.BoundedPlaneShear.direction_coefficient",
+        "PaperP1.BoundedPlaneShear.direction_degree",
+        "PaperP1.BoundedPlaneShear.direction_ne_zero",
+        "PaperP1.BoundedPlaneShear.exists_bounded_nonroot",
+        "PaperP1.BoundedPlaneShear.exists_direction_nonzero",
+        "PaperP1.BoundedPlaneShear.diagonal_monomial",
+        "PaperP1.BoundedPlaneShear.diagonal_coefficient",
+        "PaperP1.BoundedPlaneShear.exists_full_outer_degree",
+        "PaperP1.BoundedPlaneShear.direction",
+        "PaperP1.BoundedPlaneShear.diagonal"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15665 jobs); direct axiom audit passed for 14420 declarations using only propext, Classical.choice and Quot.sound; all 13725 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.81 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
