@@ -26396,3 +26396,22 @@ Earlier conditional declarations and literature history are preserved. All forme
 P1-MATH-0436 adds seven modules and eight theorems. Main16.1 moves from conditional to proved. Coverage becomes123 proved,41 conditional and3 in_progress out of167, with164 completed. The project records434 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16035 jobs); direct axiom audit passed for 14907 declarations using only propext, Classical.choice and Quot.sound; all 14266 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.13 GiB.
+
+
+## Unconditional complete fixed moment correction with stronger rate one
+
+Stable ID: p1:internal:unconditional-complete-fixed-moment-correction. Internal actual fixed activities and exact finite quadratic, Stirling/Touchard and formal cumulant identities discharge the numbered6.4 use. Every moment order is fixed beforeN; the later optimal4/3 refinement and general geometric properties remain separate.
+
+Main Theorem6.4 now has an unconditional canonical proof of every printed assertion. CompleteFixedMoments.article_6_4 assembles the actual factorial expansion, its nominal-mean/nominal-second-correction form, the ordinary Touchard-polynomial correction, bounded actual moments and all fixed factorial cumulants of order at least3 on one threshold. The statement in main_sections/fixed_moments.tex lines152-199 and its complete companion proof in companion_sections/fixed_moments.tex lines415-503 were rechecked. The stronger exponent1 is proved separately for all three corrections and all higher fixed cumulants before weakening to the printed4/5.
+
+FixedQuadraticFactorialMoments uses the unconditional full actual absolute activity at every prescribed order at least3 and the exact finite heterogeneous quadratic moment identity. The actual mean, exact second factorial cumulant, marginal cap, repeated indices and pair terms are retained. The activity theorem is proved from actual seed classification and conditional propagation; no count-law approximation or fixed-moment target premise is used.
+
+FixedQuadraticOrdinaryMoments converts these actual factorial corrections through the exact finite Stirling/Touchard identity, including the exact orders0 and1. NominalQuadraticFactorialMoments uses the internally proved actual/nominal mean-power bias and the exact gap identity for a_N=E(Z)_2-lambda_N^2. It gives the same stronger exponent1 without replacing a_N by the actual cumulant prematurely.
+
+FixedHigherCumulants uses internally checked finite formal-series coefficient control, the full actual moment correction and the squared actual second-cumulant bound. The formal order and all finite maxima are fixed beforeN; no analytic logarithm of the true generating function is assumed. Existing unconditional fixed-count moment bounds supply boundedness. The theorem therefore remains independent of the law reconstruction, as required by the original proof's dependency order.
+
+Earlier conditional declarations and their literature history are preserved. The former geometric uses in the exact6.4 conclusions are discharged by internal actual-activity proofs; no general geometric property or growing-order moment correction is asserted. The later optimal4/3 scalar moment refinement remains separate. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0437 adds five modules and five theorems. Main6.4 moves from conditional to proved. Coverage becomes124 proved,40 conditional and3 in_progress out of167, with164 completed. The project records435 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16045 jobs); direct axiom audit passed for 14912 declarations using only propext, Classical.choice and Quot.sound; all 14271 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.09 GiB.

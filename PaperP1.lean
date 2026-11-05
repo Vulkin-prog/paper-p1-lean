@@ -3732,3 +3732,8 @@ public import PaperP1.Asymptotics.NonDirectApartCost
 public import PaperP1.Asymptotics.OverlappingPairProductCost
 public import PaperP1.Asymptotics.PositiveQuarticObstruction
 public import PaperP1.Asymptotics.QuadraticLawLowerBound
+public import PaperP1.Asymptotics.CompleteFixedMoments
+public import PaperP1.Asymptotics.FixedHigherCumulants
+public import PaperP1.Asymptotics.FixedQuadraticFactorialMoments
+public import PaperP1.Asymptotics.FixedQuadraticOrdinaryMoments
+public import PaperP1.Asymptotics.NominalQuadraticFactorialMoments

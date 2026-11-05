@@ -7052,6 +7052,7 @@ import PaperP1
 #print axioms PaperP1.ComparableTranslatedKernelCounts.two_uniform_budget
 #print axioms PaperP1.ComparableTruncatedSupportCount.uniform_count
 #print axioms PaperP1.ComparableTwoSmallKernelUpper.uniform_count
+#print axioms PaperP1.CompleteFixedMoments.article_6_4
 #print axioms PaperP1.CompletePairProfile.main_3_3
 #print axioms PaperP1.CompressedAlignedTripleMass.host_data
 #print axioms PaperP1.CompressedAlignedTripleMass.source_mem_hosts
@@ -7806,6 +7807,7 @@ import PaperP1
 #print axioms PaperP1.FixedHeightQuadraticLawUnderInputs.uniform_probability_equivalent
 #print axioms PaperP1.FixedHeightResidual.large_kernel_rate
 #print axioms PaperP1.FixedHeightResidual.full_kernel_rate
+#print axioms PaperP1.FixedHigherCumulants.uniform_fixed
 #print axioms PaperP1.FixedHigherCumulantsUnderInputs.uniform_fixed
 #print axioms PaperP1.FixedMomentInputs.uniform_fixed
 #print axioms PaperP1.FixedOrderAnchorMass.cardinal_bound
@@ -7834,7 +7836,9 @@ import PaperP1
 #print axioms PaperP1.FixedProjectedMotifs.exists_even_order
 #print axioms PaperP1.FixedProjectedMotifs.old_factor_bound
 #print axioms PaperP1.FixedProjectedMotifs.fixed_motif_count
+#print axioms PaperP1.FixedQuadraticFactorialMoments.uniform_fixed
 #print axioms PaperP1.FixedQuadraticFactorialMomentsUnderInputs.uniform_fixed
+#print axioms PaperP1.FixedQuadraticOrdinaryMoments.uniform_fixed
 #print axioms PaperP1.FixedQuadraticOrdinaryMomentsUnderInputs.uniform_fixed
 #print axioms PaperP1.FixedRationalTripleMass.hosts_card
 #print axioms PaperP1.FixedRationalTripleMass.host_data
@@ -8448,6 +8452,7 @@ import PaperP1
 #print axioms PaperP1.NoSingletonJointMassUnderInputs.uniform_range
 #print axioms PaperP1.NoSingletonJointMassUnderInputs.uniform_weighted
 #print axioms PaperP1.NominalMarginalBias.uniform_bound
+#print axioms PaperP1.NominalQuadraticFactorialMoments.uniform_fixed
 #print axioms PaperP1.NominalQuadraticFactorialMomentsUnderInputs.uniform_fixed
 #print axioms PaperP1.NonDirectApartCost.uniform_bound
 #print axioms PaperP1.NonDirectApartCostUnderInputs.uniform_bound

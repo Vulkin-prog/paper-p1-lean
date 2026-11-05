@@ -22003,6 +22003,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "0aed59dd3060292c2dcba39f018f3b47674e1844"
+    },
+    {
+      "id": "P1-MATH-0437",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:fixed:moments",
+        "number": "6.4",
+        "page": 22,
+        "source": "main_sections/fixed_moments.tex",
+        "line": 152,
+        "statement_sha256": "c6e85c5c60a33b6e4f4e614d923f638d1855ecd1fd2d6dab7f29cb5aa08e6190"
+      },
+      "original_assumption": "The full fixed factorial and ordinary moment corrections and higher cumulant assertion of main6.4 retained finite geometric inputs, despite earlier unconditional bounded moments and coarse Poisson convergence.",
+      "finding": "Internal full actual fixed activity at exponent1 closes the exact heterogeneous quadratic moment identity. Finite Stirling/Touchard and formal cumulant control then prove every printed clause with the stronger exponent1, independently of law approximation.",
+      "proposed_revision": "Replace the residual-configuration argument by the exact centered expansion and internally proved full actual activity. State the stronger exponent1 while retaining actual/nominal parameter distinctions, exact Touchard correction, repeated indices and fixed-order quantifiers.",
+      "impact": "All main6.4 assertions become unconditional and improve from4/5 to1, with a proof independent of law reconstruction. Coverage becomes124 proved,40 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.CompleteFixedMoments.article_6_4",
+        "PaperP1.FixedHigherCumulants.uniform_fixed",
+        "PaperP1.FixedQuadraticFactorialMoments.uniform_fixed",
+        "PaperP1.FixedQuadraticOrdinaryMoments.uniform_fixed",
+        "PaperP1.NominalQuadraticFactorialMoments.uniform_fixed"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16045 jobs); direct axiom audit passed for 14912 declarations using only propext, Classical.choice and Quot.sound; all 14271 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.09 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

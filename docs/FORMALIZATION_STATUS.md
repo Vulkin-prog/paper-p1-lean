@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+Main6.4 is unconditional (P1-MATH-0437): all actual/nominal fixed factorial corrections, ordinary Touchard corrections, bounded moments and higher factorial cumulants are proved, with remainders strengthened to exponent1. This proof is independent of count-law reconstruction.
+
 Main16.1 is unconditional (P1-MATH-0436), with the stronger signed error5/3. The exact-parameter quadratic lower4/3 inequality is also unconditional. Full16.2/1.1 remain conditional for their matching upper-bound obligation; no Hermite lower bound is claimed.
 
 Main1.4,18.1 and18.3 are unconditional (P1-MATH-0435): literal explicit reference, complete fixed-height law hierarchy, moving total-variation equivalents and fixed-height optimal-power lower bounds. The separate full actual-cumulant optimal4/3 law remains open.
@@ -17,7 +19,7 @@ CompanionT14.1 is unconditional (P1-MATH-0431), with connected activity strength
 
 CompanionT1.8 is unconditional (P1-MATH-0430): exact dense-component to actual-rank transfer gives subpower nonaligned hosts and both printed kernel sumsN^(1+epsilon), including the full value kernel without block-parity rows.
 
-Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is123 proved,41 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
+Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is124 proved,40 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
 
 The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. The full arbitrary-source statement was subsequently discharged at P1-MATH-0429.
 
@@ -59,7 +61,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is123/167 unconditional and41 conditional (164/167 completed). The project records434 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is124/167 unconditional and40 conditional (164/167 completed). The project records435 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -178,7 +180,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14907 audited theorem/lemma declarations**. This
+- The project currently has **14912 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26079,3 +26081,20 @@ Earlier conditional declarations and literature history are preserved. All forme
 P1-MATH-0436 adds seven modules and eight theorems. Main16.1 moves from conditional to proved. Coverage becomes123 proved,41 conditional and3 in_progress out of167, with164 completed. The project records434 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16035 jobs); direct axiom audit passed for 14907 declarations using only propext, Classical.choice and Quot.sound; all 14266 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.13 GiB.
+
+
+## Unconditional complete fixed moment correction with stronger rate one
+
+Main Theorem6.4 now has an unconditional canonical proof of every printed assertion. CompleteFixedMoments.article_6_4 assembles the actual factorial expansion, its nominal-mean/nominal-second-correction form, the ordinary Touchard-polynomial correction, bounded actual moments and all fixed factorial cumulants of order at least3 on one threshold. The statement in main_sections/fixed_moments.tex lines152-199 and its complete companion proof in companion_sections/fixed_moments.tex lines415-503 were rechecked. The stronger exponent1 is proved separately for all three corrections and all higher fixed cumulants before weakening to the printed4/5.
+
+FixedQuadraticFactorialMoments uses the unconditional full actual absolute activity at every prescribed order at least3 and the exact finite heterogeneous quadratic moment identity. The actual mean, exact second factorial cumulant, marginal cap, repeated indices and pair terms are retained. The activity theorem is proved from actual seed classification and conditional propagation; no count-law approximation or fixed-moment target premise is used.
+
+FixedQuadraticOrdinaryMoments converts these actual factorial corrections through the exact finite Stirling/Touchard identity, including the exact orders0 and1. NominalQuadraticFactorialMoments uses the internally proved actual/nominal mean-power bias and the exact gap identity for a_N=E(Z)_2-lambda_N^2. It gives the same stronger exponent1 without replacing a_N by the actual cumulant prematurely.
+
+FixedHigherCumulants uses internally checked finite formal-series coefficient control, the full actual moment correction and the squared actual second-cumulant bound. The formal order and all finite maxima are fixed beforeN; no analytic logarithm of the true generating function is assumed. Existing unconditional fixed-count moment bounds supply boundedness. The theorem therefore remains independent of the law reconstruction, as required by the original proof's dependency order.
+
+Earlier conditional declarations and their literature history are preserved. The former geometric uses in the exact6.4 conclusions are discharged by internal actual-activity proofs; no general geometric property or growing-order moment correction is asserted. The later optimal4/3 scalar moment refinement remains separate. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0437 adds five modules and five theorems. Main6.4 moves from conditional to proved. Coverage becomes124 proved,40 conditional and3 in_progress out of167, with164 completed. The project records435 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16045 jobs); direct axiom audit passed for 14912 declarations using only propext, Classical.choice and Quot.sound; all 14271 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.09 GiB.
