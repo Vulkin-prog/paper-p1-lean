@@ -1,5 +1,7 @@
 # Formalization status
 
+P1-MATH-0541 proves the actual e*degree section-point budget in every normalized rational/integer chart, including the original bounded integer-grid finset. Common projective normalization, coefficient-field extension and controlled higher-dimensional projection remain separate.
+
 P1-MATH-0540 proves the actual projective curve model has positive integer degree and that every nonzero homogeneous degree-e section has eventual quotient-piece dimension e*degree. Actual section point incidence and controlled higher-dimensional projection remain separate. Complete main13.5 is already unconditional.
 
 P1-MATH-0539 proves the exact real-height quadratic plane input with logarithmic exponent17 and complete unconditional main13.5. Coverage is162 proved,2 conditional and3 in_progress; the full all-dimensional main13.4 remains separate.
@@ -112,7 +114,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records538 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records539 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -231,7 +233,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16059 audited theorem/lemma declarations**. This
+- The project currently has **16064 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27866,3 +27868,20 @@ This supplies intrinsic integer degree and the exact algebraic section budget ne
 P1-MATH-0540 adds three modules, seven theorems and one definition. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 538 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16875 jobs); direct axiom audit passed for 16059 declarations using only propext, Classical.choice and Quot.sound; all 15639 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.81 GiB.
+
+
+## Actual finite homogeneous interpolation and curve-section point bounds
+
+HomogeneousFiniteInterpolation constructs an actual homogeneous selector polynomial for every point of a finite population normalized by one coordinate equal to one. For every degree n>=card(S)-1, the constructed polynomial is homogeneous of degree n, evaluates to one at the selected point and to zero at every other actual population point. The proof chooses genuine distinguishing coordinates, multiplies normalized linear factors and raises the normalizing coordinate to fill the remaining homogeneous degree. No interpolation matrix or selector is assumed.
+
+FiniteGradedPointEvaluation uses these actual selectors to bound the cardinality of any normalized finite point population by the dimension of an actual homogeneous polynomial image. It constructs actual image vectors and actual evaluation functionals; their evaluated vectors are the genuine coordinate basis. Their linear independence and the resulting cardinality/dimension inequality are internally proved. Finite dimensionality comes from the actual homogeneous polynomial component and its linear image. The theorem is generic over the coefficient field and arbitrary finite coordinate type.
+
+ProjectiveCurveSectionPoints applies this construction to an actual homogeneous prime curve ideal I and an actual homogeneous degree-e equation f outside I. Every point is required to vanish on the original ideal and on f. Its genuine point evaluations are lifted through the actual two quotient maps A->A/I->(A/I)/(f). The resulting homogeneous image is identified exactly with the actual section piece. The already proved eventual dimension e*degree therefore gives card(S)<=e*degree for every finite rational point population in a fixed normalized chart.
+
+The integer version retains the original points through an injective coordinatewise rational cast. The actual bounded integer-grid theorem applies directly to NormalizedIntegerPoints.points I z H filtered by the original section equation, for every height H. The count e*degree is independent of height and uses no supplied incidence, finite-cover, projection or point-count input.
+
+This closes actual section-point incidence in a normalized rational/integer chart. A common normalization for projectively distinct points, coefficient-field extension and the controlled higher-dimensional projection/presentation remain separate. Main13.4 and companionT1.7/T19.17 remain unresolved; complete main13.5 stays internally proved.
+
+P1-MATH-0541 adds three modules and five theorems, with no new definition. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 539 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16881 jobs); direct axiom audit passed for 16064 declarations using only propext, Classical.choice and Quot.sound; all 15644 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.79 GiB.

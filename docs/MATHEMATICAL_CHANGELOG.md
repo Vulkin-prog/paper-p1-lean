@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**538 mathematical improvements and two statement-scope corrections are confirmed.**
+**539 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26988,3 +26988,20 @@ This supplies intrinsic integer degree and the exact algebraic section budget ne
 P1-MATH-0540 adds three modules, seven theorems and one definition. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 538 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16875 jobs); direct axiom audit passed for 16059 declarations using only propext, Classical.choice and Quot.sound; all 15639 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.81 GiB.
+
+
+## Actual finite homogeneous interpolation and curve-section point bounds
+
+HomogeneousFiniteInterpolation constructs an actual homogeneous selector polynomial for every point of a finite population normalized by one coordinate equal to one. For every degree n>=card(S)-1, the constructed polynomial is homogeneous of degree n, evaluates to one at the selected point and to zero at every other actual population point. The proof chooses genuine distinguishing coordinates, multiplies normalized linear factors and raises the normalizing coordinate to fill the remaining homogeneous degree. No interpolation matrix or selector is assumed.
+
+FiniteGradedPointEvaluation uses these actual selectors to bound the cardinality of any normalized finite point population by the dimension of an actual homogeneous polynomial image. It constructs actual image vectors and actual evaluation functionals; their evaluated vectors are the genuine coordinate basis. Their linear independence and the resulting cardinality/dimension inequality are internally proved. Finite dimensionality comes from the actual homogeneous polynomial component and its linear image. The theorem is generic over the coefficient field and arbitrary finite coordinate type.
+
+ProjectiveCurveSectionPoints applies this construction to an actual homogeneous prime curve ideal I and an actual homogeneous degree-e equation f outside I. Every point is required to vanish on the original ideal and on f. Its genuine point evaluations are lifted through the actual two quotient maps A->A/I->(A/I)/(f). The resulting homogeneous image is identified exactly with the actual section piece. The already proved eventual dimension e*degree therefore gives card(S)<=e*degree for every finite rational point population in a fixed normalized chart.
+
+The integer version retains the original points through an injective coordinatewise rational cast. The actual bounded integer-grid theorem applies directly to NormalizedIntegerPoints.points I z H filtered by the original section equation, for every height H. The count e*degree is independent of height and uses no supplied incidence, finite-cover, projection or point-count input.
+
+This closes actual section-point incidence in a normalized rational/integer chart. A common normalization for projectively distinct points, coefficient-field extension and the controlled higher-dimensional projection/presentation remain separate. Main13.4 and companionT1.7/T19.17 remain unresolved; complete main13.5 stays internally proved.
+
+P1-MATH-0541 adds three modules and five theorems, with no new definition. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 539 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16881 jobs); direct axiom audit passed for 16064 declarations using only propext, Classical.choice and Quot.sound; all 15644 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.79 GiB.

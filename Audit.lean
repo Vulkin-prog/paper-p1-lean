@@ -960,6 +960,7 @@ import PaperP1
 #print axioms PaperP1.FiniteGradedParameters.of_equiv
 #print axioms PaperP1.FiniteGradedParameters.of_finite_map
 #print axioms PaperP1.FiniteGradedParameters.exists_polynomial
+#print axioms PaperP1.FiniteGradedPointEvaluation.card_le_dimension
 #print axioms PaperP1.FiniteHomogeneousModuleGenerators.exists_generators
 #print axioms PaperP1.FiniteIntersectionSums.restrict_sum
 #print axioms PaperP1.FinitePiExtension.extend_apply
@@ -1283,6 +1284,7 @@ import PaperP1
 #print axioms PaperP1.HomogeneousFactorDegrees.order_of_homogeneous
 #print axioms PaperP1.HomogeneousFactorDegrees.homogeneous_of_order_eq_totalDegree
 #print axioms PaperP1.HomogeneousFactorDegrees.homogeneous_factors
+#print axioms PaperP1.HomogeneousFiniteInterpolation.selector
 #print axioms PaperP1.HomogeneousFreeApproximation.component_mul_mem_span
 #print axioms PaperP1.HomogeneousFreeApproximation.component_clears
 #print axioms PaperP1.HomogeneousFreeApproximation.exists_homogeneous_free_approximation
@@ -12279,6 +12281,9 @@ import PaperP1
 #print axioms PaperP1.ProjectiveCurveHilbertDegree.natDegree_cast
 #print axioms PaperP1.ProjectiveCurveHilbertDegree.eventual_increment
 #print axioms PaperP1.ProjectiveCurveHilbertDegree.section_dimension
+#print axioms PaperP1.ProjectiveCurveSectionPoints.normalized_population
+#print axioms PaperP1.ProjectiveCurveSectionPoints.integer_population
+#print axioms PaperP1.ProjectiveCurveSectionPoints.integer_grid
 #print axioms PaperP1.SourceAffineCurveDegreeBound.multiplicity_ge_twoD
 #print axioms PaperP1.SourceCurveAffineRadicalCover.chartEquiv_radicand
 #print axioms PaperP1.SourceCurveAffineRadicalCover.exists_cover

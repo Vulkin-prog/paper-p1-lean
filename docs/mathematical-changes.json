@@ -26184,6 +26184,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "f82bba5b255a59c92f4853a55d64d7dda16d63e5"
+    },
+    {
+      "id": "P1-MATH-0541",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The exact homogeneous section dimension was internal, but the corresponding actual normalized point-incidence count had not been proved.",
+      "finding": "Constructed homogeneous point selectors and actual lifted evaluations convert the exact section dimension into the genuine card(S)<=e*degree rational/integer point bound in every fixed normalized chart.",
+      "proposed_revision": "Use the internal actual section-point count when controlling exceptional fibres and projection centres. Keep common projective normalization and controlled projection as explicit remaining steps.",
+      "impact": "Closes the actual rational and integer point-incidence budget for homogeneous curve sections without importing a projective Bezout point-count theorem.",
+      "evidence": [
+        "PaperP1.FiniteGradedPointEvaluation.card_le_dimension",
+        "PaperP1.HomogeneousFiniteInterpolation.selector",
+        "PaperP1.ProjectiveCurveSectionPoints.normalized_population",
+        "PaperP1.ProjectiveCurveSectionPoints.integer_population",
+        "PaperP1.ProjectiveCurveSectionPoints.integer_grid"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16881 jobs); direct axiom audit passed for 16064 declarations using only propext, Classical.choice and Quot.sound; all 15644 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.79 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

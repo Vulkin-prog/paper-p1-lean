@@ -4129,3 +4129,6 @@ public import PaperP1.Asymptotics.QuadraticGrowingDegreePlaneCount
 public import PaperP1.Algebra.GradedLinearHilbertSection
 public import PaperP1.Algebra.IntegerLinearHilbertSlope
 public import PaperP1.Geometry.ProjectiveCurveHilbertDegree
+public import PaperP1.Algebra.FiniteGradedPointEvaluation
+public import PaperP1.Algebra.HomogeneousFiniteInterpolation
+public import PaperP1.Geometry.ProjectiveCurveSectionPoints
