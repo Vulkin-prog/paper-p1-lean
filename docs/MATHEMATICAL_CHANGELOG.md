@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**499 mathematical improvements and two statement-scope corrections are confirmed.**
+**500 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26373,3 +26373,20 @@ The primary BCN author version arXiv2302.04209v2 Section3 Remark4 and Propositio
 P1-MATH-0501 adds three modules, sixteen theorems and four definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records499 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16583 jobs); direct axiom audit passed for 15641 declarations using only propext, Classical.choice and Quot.sound; all 15128 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.69 GiB.
+
+
+## Local linear independence and genuine Wronskian nonvanishing
+
+A complete local linear-independence route to actual Wronskian nonvanishing is now internally proved for smooth real functions. LocalLinearIndependence.Independent requires that every nonzero coefficient vector gives a combination that is nonzero somewhere on every nonempty open subinterval. This is explicitly stronger than mere linear independence on the whole interval; the proof does not incorrectly infer it from global smooth independence.
+
+Restriction preserves this local property, and the first family function is nonzero at some point of every nonempty interval. Dividing the tail by the first function and differentiating preserves local independence wherever the first function is nowhere zero. Indeed, a putative vanishing derivative combination makes the original normalized combination constant by the actual derivative-zero theorem. Adding the negative constant as the first coefficient then gives a forbidden original vanishing combination. Every coefficient vector and nonzero divisor is constructed explicitly.
+
+LocalWronskianNonvanishing proves by induction that the genuine classical Wronskian is nonzero somewhere on each nonempty open subinterval. Continuity at an actual nonzero first-function value constructs a smaller interval where division is valid. The normalized derivative tail is smooth and locally independent there, so induction supplies its nonzero Wronskian value. The already proved determinant normalization identity then gives the required original nonzero value. Empty families are included, with determinant1.
+
+This argument supplies the local function-theoretic step without an unformalized analytic Wronskian theorem. Its intended application to actual curve polynomial restrictions still has to establish the displayed local independence. That requires the actual nonstationary trajectory image and the finite Bezout/degree argument; neither is silently assumed here. Nonzero values on every subinterval alone also do not assert finiteness of a general smooth Wronskian zero set. Polynomial nondivisibility and finite exceptional bounds remain separate geometric obligations.
+
+The primary BCN author version arXiv2302.04209v2 Section3 Lemma6 was rechecked for this distinction. The polynomial degree budgets, classical Chebyshev criterion, actual trajectory derivative identities and one-piece point count are already internal. Actual global trajectory existence/coverage, polynomial Wronskian nondivisibility, controlled exceptional pieces, bounded smooth parametrizations and the final sharp count remain open. NoBCN or original13.5 promotion is made; the current generic plane count remains cubic with fulla<1/3 range.
+
+P1-MATH-0502 adds two modules, five theorems and one definition. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records500 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16587 jobs); direct axiom audit passed for 15646 declarations using only propext, Classical.choice and Quot.sound; all 15134 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.67 GiB.

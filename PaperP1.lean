@@ -4006,3 +4006,5 @@ public import PaperP1.Analysis.PolyaChebyshevCriterion
 public import PaperP1.Analysis.PolynomialEvaluationDerivative
 public import PaperP1.Analysis.PolynomialTangentTrajectory
 public import PaperP1.Analysis.TangentCurvePieceZeros
+public import PaperP1.Analysis.LocalLinearIndependence
+public import PaperP1.Analysis.LocalWronskianNonvanishing

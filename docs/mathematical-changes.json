@@ -24620,6 +24620,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "6d04188fbdbce53e693fe92dbbd007caa2fd065b"
+    },
+    {
+      "id": "P1-MATH-0502",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The sharp-degree route still needed a justified nonvanishing argument for classical Wronskians. Mere global independence of smooth functions is insufficient for the intended inference.",
+      "finding": "Independence on every nonempty open subinterval is preserved by normalized differentiation and forces a genuine nonzero Wronskian value on every such subinterval, with only smooth regularity.",
+      "proposed_revision": "Use the explicit local independence criterion, and prove it for actual polynomial restrictions by a separate trajectory-image and finite Bezout argument before claiming polynomial nondivisibility.",
+      "impact": "Closes the local function-theoretic nonvanishing step while exposing its stronger independence property and the remaining polynomial geometric application.",
+      "evidence": [
+        "PaperP1.LocalLinearIndependence.mono",
+        "PaperP1.LocalLinearIndependence.first_nonzero",
+        "PaperP1.LocalLinearIndependence.normalized_independent",
+        "PaperP1.LocalWronskianNonvanishing.exists_nonzero",
+        "PaperP1.LocalWronskianNonvanishing.exists_on_subinterval",
+        "PaperP1.LocalLinearIndependence.Independent"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16587 jobs); direct axiom audit passed for 15646 declarations using only propext, Classical.choice and Quot.sound; all 15134 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.67 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

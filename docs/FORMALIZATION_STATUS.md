@@ -12,6 +12,8 @@ Main19.1 is unconditional (P1-MATH-0492): exact4/3 Hermite approximation with ac
 
 CompanionT1.7 has an unconditional dense unpinned-component graph clause at the strongerN^epsilon rate (P1-MATH-0497), including overlapping physical windows. Its complete reduced assembly keeps explicit geometric inputs only for general systems and fixed-number typed components; fullT1.7 remains conditional.
 
+The sharp-degree real-analytic route now has internal classical Chebyshev/Polya, polynomial tangent Wronskian degree, actual trajectory derivative/smoothness, one-piece population and local Wronskian nonvanishing proofs (P1-MATH-0498 through0502). Polynomial restriction independence/nondivisibility, global trajectory coverage, controlled exceptional pieces and bounded parametrizations remain open; no additionalBCN coverage is counted.
+
 Current remaining numbered obligations: main13.4/13.5, companionT1.7/T19.17 and the literal falseT1.10/T5.1 statements requiring their already recorded scope corrections. Coverage is161 proved,3 conditional and3 in_progress;71 main and90 companion results are proved.
 P1-MATH-0495 supplies an actual associated heightN^(256D) equation of exact degreeD, including bounded shear, for every geometric curve population larger than4D^2. Its generic cubic-degree point-count consequence is now internally proved atP1-MATH-0496.
 Neither document is fully formalized.
@@ -106,7 +108,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records499 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records500 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -225,7 +227,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15641 audited theorem/lemma declarations**. This
+- The project currently has **15646 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27245,3 +27247,20 @@ The primary BCN author version arXiv2302.04209v2 Section3 Remark4 and Propositio
 P1-MATH-0501 adds three modules, sixteen theorems and four definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records499 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16583 jobs); direct axiom audit passed for 15641 declarations using only propext, Classical.choice and Quot.sound; all 15128 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.69 GiB.
+
+
+## Local linear independence and genuine Wronskian nonvanishing
+
+A complete local linear-independence route to actual Wronskian nonvanishing is now internally proved for smooth real functions. LocalLinearIndependence.Independent requires that every nonzero coefficient vector gives a combination that is nonzero somewhere on every nonempty open subinterval. This is explicitly stronger than mere linear independence on the whole interval; the proof does not incorrectly infer it from global smooth independence.
+
+Restriction preserves this local property, and the first family function is nonzero at some point of every nonempty interval. Dividing the tail by the first function and differentiating preserves local independence wherever the first function is nowhere zero. Indeed, a putative vanishing derivative combination makes the original normalized combination constant by the actual derivative-zero theorem. Adding the negative constant as the first coefficient then gives a forbidden original vanishing combination. Every coefficient vector and nonzero divisor is constructed explicitly.
+
+LocalWronskianNonvanishing proves by induction that the genuine classical Wronskian is nonzero somewhere on each nonempty open subinterval. Continuity at an actual nonzero first-function value constructs a smaller interval where division is valid. The normalized derivative tail is smooth and locally independent there, so induction supplies its nonzero Wronskian value. The already proved determinant normalization identity then gives the required original nonzero value. Empty families are included, with determinant1.
+
+This argument supplies the local function-theoretic step without an unformalized analytic Wronskian theorem. Its intended application to actual curve polynomial restrictions still has to establish the displayed local independence. That requires the actual nonstationary trajectory image and the finite Bezout/degree argument; neither is silently assumed here. Nonzero values on every subinterval alone also do not assert finiteness of a general smooth Wronskian zero set. Polynomial nondivisibility and finite exceptional bounds remain separate geometric obligations.
+
+The primary BCN author version arXiv2302.04209v2 Section3 Lemma6 was rechecked for this distinction. The polynomial degree budgets, classical Chebyshev criterion, actual trajectory derivative identities and one-piece point count are already internal. Actual global trajectory existence/coverage, polynomial Wronskian nondivisibility, controlled exceptional pieces, bounded smooth parametrizations and the final sharp count remain open. NoBCN or original13.5 promotion is made; the current generic plane count remains cubic with fulla<1/3 range.
+
+P1-MATH-0502 adds two modules, five theorems and one definition. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records500 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16587 jobs); direct axiom audit passed for 15646 declarations using only propext, Classical.choice and Quot.sound; all 15134 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.67 GiB.

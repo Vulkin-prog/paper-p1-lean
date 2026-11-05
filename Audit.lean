@@ -2805,6 +2805,11 @@ import PaperP1
 #print axioms PaperP1.LocalDeterminantDegreeChoice.triangle_weight
 #print axioms PaperP1.LocalDeterminantDegreeChoice.exists_auxiliary_degree
 #print axioms PaperP1.LocalDeterminantDegreeChoice.exists_avoidance_power
+#print axioms PaperP1.LocalLinearIndependence.mono
+#print axioms PaperP1.LocalLinearIndependence.first_nonzero
+#print axioms PaperP1.LocalLinearIndependence.normalized_independent
+#print axioms PaperP1.LocalWronskianNonvanishing.exists_nonzero
+#print axioms PaperP1.LocalWronskianNonvanishing.exists_on_subinterval
 #print axioms PaperP1.LogarithmicAbelWindow.weight_nonneg
 #print axioms PaperP1.LogarithmicAbelWindow.weight_continuousOn
 #print axioms PaperP1.LogarithmicAbelWindow.abel_identity
