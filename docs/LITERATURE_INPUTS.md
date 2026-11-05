@@ -24577,3 +24577,18 @@ The resulting equivalence is valid for every field extension, including infinite
 P1-MATH-0325 closes the extension-field kernel descent. The factorization-to-irreducibility consequence and the identification with the actual complex bihomogeneous geometric polynomial remain to be completed. NonGeometricRationalSingularity.Input is still an unproved alternative ordinary argument; the Heath-Brown input is unchanged. T1.4 remains conditional and coverage stays89 proved and75 conditional out of167 (164 completed). There are323 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15537 jobs); direct axiom audit passed for 14124 declarations using only propext, Classical.choice and Quot.sound; all 13391 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.55 GiB.
+
+
+## A base-field smooth affine point forces irreducibility over every field extension
+
+Stable ID: p1:internal:smooth-point-absolute-affine-irreducibility. Unconditional field-extension irreducibility from the actual local branch and exact kernel. No geometric or cardinality premise is assumed; the two homogenizations remain to be identified.
+
+The affine geometric implication is now proved unconditionally over every field. If P is irreducible over K, has positive outer degree, and has a K-valued affine zero with nonzero outer derivative, then its coefficient extension is irreducible over EVERY extension field L of K. No algebraic-closure, finite-extension, characteristic-zero or absolute irreducibility premise is assumed.
+
+The local branch of P1-MATH-0321 and exact extension-field kernel of P1-MATH-0325 give the proof. In any proposed factorization of extend(P), branch evaluation kills the product. The power-series ring over L is a domain, so one factor evaluates to zero. The checked exact kernel makes that factor divisible by extend(P). Cancellation of the nonzero polynomial then proves the other factor is a unit. Outer degree is preserved by the injective coefficient map, ensuring the extended polynomial has positive degree and is not a unit. The cancellation and unit argument are also proved explicitly.
+
+The contrapositive is recorded directly: if P is irreducible over K but its affine coefficient extension to L is reducible, every K-valued affine zero satisfies the outer-derivative equation. This closes the affine singularity statement used by the intended non-geometric route.
+
+P1-MATH-0326 closes arbitrary-extension affine irreducibility from a local smooth point. The actual predicate Geometric G is defined by the complex bihomogeneous projective polynomial, so preservation and identification through the two homogenizations remain a separate unfinished obligation. The proved affine result is not yet asserted to prove NonGeometricRationalSingularity.Input, and the numerical NonGeometricBiformInput.Input consequently remains an ordinary unproved argument in existing theorems. The Heath-Brown input is unchanged. T1.4 stays conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are324 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15539 jobs); direct axiom audit passed for 14129 declarations using only propext, Classical.choice and Quot.sound; all 13396 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.53 GiB.

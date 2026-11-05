@@ -1824,6 +1824,11 @@ import PaperP1
 #print axioms PaperP1.SmoothAffineFormalBranch.coefficientLift_injective
 #print axioms PaperP1.SmoothAffineFormalBranch.exists_branch
 #print axioms PaperP1.SmoothAffineFormalBranch.evaluation_zero_iff
+#print axioms PaperP1.SmoothPointAbsoluteIrreducibility.extend_degree
+#print axioms PaperP1.SmoothPointAbsoluteIrreducibility.unit_of_factor_divisibility
+#print axioms PaperP1.SmoothPointAbsoluteIrreducibility.irreducible_extend
+#print axioms PaperP1.SmoothPointAbsoluteIrreducibility.smooth_point_irreducible
+#print axioms PaperP1.SmoothPointAbsoluteIrreducibility.derivative_zero_of_reducible
 #print axioms PaperP1.SourceAffineChart.affine_radicands
 #print axioms PaperP1.SourceAffineChart.originalEquiv_dehomogenization
 #print axioms PaperP1.SourceAffineChart.veroneseEquiv_dehomogenization
