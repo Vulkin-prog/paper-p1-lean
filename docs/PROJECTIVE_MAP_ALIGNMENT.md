@@ -17926,3 +17926,16 @@ This closes the complete plane conic epsilon-scale count over arbitrary characte
 P1-MATH-0397 adds six theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records395 improvements and two statement-scope corrections. No new axiom, external counting premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15715 jobs); direct axiom audit passed for 14549 declarations using only propext, Classical.choice and Quot.sound; all 13881 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.50 GiB.
+
+
+## Uniform sublinearity for all nonlinear plane degrees below a slow cap
+
+NonlinearPlaneDegreeCap.bounded_degree_sublinear proves the actual coefficient- and field-uniform o(H) point count on every fixed finite interval of nonlinear plane degrees 2<=degree<=M. It combines the complete arbitrary-field conic count with the already proved higher-degree bound. Its threshold precedes every characteristic-zero field and irreducible equation, with no complex embedding or absolute irreducibility input.
+
+exists_cap_below constructs a monotone unbounded natural degree cap chosen before every coefficient field and equation, such that all irreducible plane equations with 2<=degree<=cap(B) have actual signed integer-grid size o(B) at radius floor(c*B), uniformly in the field, coefficients and degree. For every prescribed monotone unbounded function L, the cap satisfies 2<=cap(B)<=L(B)+2. exists_cap gives the special bound cap(B)<=B+2. The construction uses a proved finite threshold search and actual lower-height inequalities; it does not assume any effective bound for the unknown fixed-degree constants.
+
+This strengthens checkpoint379 by including degree two throughout the actual uniformly counted degree interval. The cap remains nonquantitative. It is not asserted to grow as B^a, nor to dominate any prescribed power or logarithm. Consequently the original growing-degree corollary13.5 and the stronger D-uniform logarithmic BCN theorem13.4 remain open. No original numbered result is promoted.
+
+P1-MATH-0398 adds three theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records396 improvements and two statement-scope corrections. No new axiom, external counting premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred. The local Git object database was losslessly packed after checkpoint397, preserving HEAD, every reference and source integrity; this recovered about2.8GiB on the Ubuntu partition.
+
+Verified under Lean v4.36.0-rc2: full build passed (15717 jobs); direct axiom audit passed for 14552 declarations using only propext, Classical.choice and Quot.sound; all 13885 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.31 GiB.

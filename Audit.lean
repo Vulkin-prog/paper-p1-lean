@@ -8234,6 +8234,9 @@ import PaperP1
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_absolute_difference
 #print axioms PaperP1.NonconnectedActivityUnderInputs.uniform_bound
 #print axioms PaperP1.NongoodPairJointMassUnderInputs.uniform_bound
+#print axioms PaperP1.NonlinearPlaneDegreeCap.bounded_degree_sublinear
+#print axioms PaperP1.NonlinearPlaneDegreeCap.exists_cap_below
+#print axioms PaperP1.NonlinearPlaneDegreeCap.exists_cap
 #print axioms PaperP1.NonprimitiveSourceDeterminantCount.uniform_positive_count
 #print axioms PaperP1.NonprimitiveSourceDeterminantCount.uniform_signed_count
 #print axioms PaperP1.NormalizedDefectPairActivity.bad_subset_units

@@ -20565,6 +20565,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "c04d6fa5f27405c0fc4c1d2d1770c1f64a4b1af5"
+    },
+    {
+      "id": "P1-MATH-0398",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The earlier monotone unbounded degree cap excluded conics, so its uniform sublinear interval began at degree three.",
+      "finding": "Every fixed finite nonlinear degree interval, and an internally chosen monotone unbounded slow cap, now has coefficient- and field-uniform o(B) counts including all degrees from two onward.",
+      "proposed_revision": "Use the full nonlinear slow-cap theorem when only a nonquantitative unbounded degree allowance is required. Retain an explicit separate obligation for the paper's power-law degree range and stronger BCN estimate.",
+      "impact": "Closes the degree-two gap in the proved nonquantitative growing-cap result. It supplies no power-law growth rate and does not change original numbered coverage.",
+      "evidence": [
+        "PaperP1.NonlinearPlaneDegreeCap.bounded_degree_sublinear",
+        "PaperP1.NonlinearPlaneDegreeCap.exists_cap_below",
+        "PaperP1.NonlinearPlaneDegreeCap.exists_cap",
+        "PaperP1.NonlinearPlaneDegreeCap.UniformSublinear"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15717 jobs); direct axiom audit passed for 14552 declarations using only propext, Classical.choice and Quot.sound; all 13885 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.31 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
