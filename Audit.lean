@@ -7042,6 +7042,9 @@ import PaperP1
 #print axioms PaperP1.AllPairOriginalCosts.uniform_bound
 #print axioms PaperP1.AllPairOriginalCostsUnderInputs.finite_weighted_cost
 #print axioms PaperP1.AllPairOriginalCostsUnderInputs.uniform_bound
+#print axioms PaperP1.AllPairRank.compatible_pair_bound_succ
+#print axioms PaperP1.AllPairRank.compatible_pair_bound
+#print axioms PaperP1.AllPairRank.nonaligned_pair_bound
 #print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound_succ
 #print axioms PaperP1.AllPairRankUnderBCN.compatible_pair_bound
 #print axioms PaperP1.AllPairRankUnderBCN.nonaligned_pair_bound
@@ -8546,6 +8549,10 @@ import PaperP1
 #print axioms PaperP1.IsolatedVertexDenseTripleMassUnderInputs.uniform_mass
 #print axioms PaperP1.IsolatedVertexTripleMass.uniform_mass
 #print axioms PaperP1.IsolatedVertexTripleMassUnderInputs.uniform_mass
+#print axioms PaperP1.JointFamilyProbability.uniform_pair_probability
+#print axioms PaperP1.JointFamilyProbability.uniform_family_probability
+#print axioms PaperP1.JointFamilyProbability.uniform_triple_probability
+#print axioms PaperP1.JointFamilyProbability.uniform_maximal_triple_probability
 #print axioms PaperP1.JointFamilyProbabilityUnderBCN.maximalTripleProbability_nonneg
 #print axioms PaperP1.JointFamilyProbabilityUnderBCN.triple_probability_le_maximum
 #print axioms PaperP1.JointFamilyProbabilityUnderBCN.uniform_pair_probability
@@ -8907,6 +8914,8 @@ import PaperP1
 #print axioms PaperP1.NonalignedDyadicRootHostCount.uniform_hosts
 #print axioms PaperP1.NonalignedDyadicRootHostCount.source_admissible
 #print axioms PaperP1.NonalignedDyadicRootHostCount.source_uniform_hosts
+#print axioms PaperP1.NonalignedJointProbability.uniform_pair_probability
+#print axioms PaperP1.NonalignedJointProbability.uniform_family_probability
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.rankSlope_pos
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.tripleGap_pos
 #print axioms PaperP1.NonalignedJointProbabilityUnderBCN.tripleGap_lt_half
@@ -10075,6 +10084,9 @@ import PaperP1
 #print axioms PaperP1.TripleActivityLawReconstructionUnderInputs.uniform_bound
 #print axioms PaperP1.TripleActivityLawReconstructionUnderInputs.article_15_14_symbolic
 #print axioms PaperP1.TripleControlledFixedActivity.uniform_weighted
+#print axioms PaperP1.TripleRankTheorem.uniform_triple_nullity
+#print axioms PaperP1.TripleRankTheorem.uniform_nonaligned_triple_nullity
+#print axioms PaperP1.TripleRankTheorem.article_13_8
 #print axioms PaperP1.TripleRankUnderBCN.uniform_triple_nullity
 #print axioms PaperP1.TripleRankUnderBCN.uniform_nonaligned_triple_nullity
 #print axioms PaperP1.TripleRankUnderBCN.article_13_8_under_BCN

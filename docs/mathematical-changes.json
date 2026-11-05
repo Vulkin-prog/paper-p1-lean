@@ -24042,6 +24042,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "ed9c856f115c593cd2b40a1fece9d7cfbb327da1"
+    },
+    {
+      "id": "P1-MATH-0487",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:triple",
+        "number": "13.8",
+        "page": 33,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 355,
+        "statement_sha256": "e988260f0b55298f58f309bc4b778d5509ca6e955c2617b8ad8cf6d2d059c07a"
+      },
+      "original_assumption": "The complete triple rank and maximum actual joint-probability conclusions retained an explicitly unformalized BCN premise through the nonaligned pair rank estimate.",
+      "finding": "The internal height-controlled nonaligned theorem and known-alignment rank supply all source triple nullity clauses and actual family probability bounds, including the literal finite maximum.",
+      "proposed_revision": "Use the internal pair-rank proof in13.8 and retain the exact affine probability identity, actual marginals, compatibility cases and common threshold.",
+      "impact": "Closes complete main13.8 without unproved geometric arguments and supplies actual probability bounds for every containing family, while leaving global weighted conclusions separate.",
+      "evidence": [
+        "PaperP1.AllPairRank.compatible_pair_bound_succ",
+        "PaperP1.AllPairRank.compatible_pair_bound",
+        "PaperP1.AllPairRank.nonaligned_pair_bound",
+        "PaperP1.JointFamilyProbability.uniform_pair_probability",
+        "PaperP1.JointFamilyProbability.uniform_family_probability",
+        "PaperP1.JointFamilyProbability.uniform_triple_probability",
+        "PaperP1.JointFamilyProbability.uniform_maximal_triple_probability",
+        "PaperP1.NonalignedJointProbability.uniform_pair_probability",
+        "PaperP1.NonalignedJointProbability.uniform_family_probability",
+        "PaperP1.TripleRankTheorem.uniform_triple_nullity",
+        "PaperP1.TripleRankTheorem.uniform_nonaligned_triple_nullity",
+        "PaperP1.TripleRankTheorem.article_13_8"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16505 jobs); direct axiom audit passed for 15518 declarations using only propext, Classical.choice and Quot.sound; all 14967 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.00 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

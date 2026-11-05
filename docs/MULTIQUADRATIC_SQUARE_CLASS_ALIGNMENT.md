@@ -20144,3 +20144,20 @@ Generic main13.5, the full quadratic-degree/all-dimensional BCN theorem and the 
 P1-MATH-0486 adds four modules, nine theorems and one profile definition. Exactly one numbered result, main13.6, is promoted from conditional to proved. Coverage becomes150 proved,14 conditional and3 in_progress out of167, with164 completed:60 main results and90 companion results are proved. The project records484 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16497 jobs); direct axiom audit passed for 15506 declarations using only propext, Classical.choice and Quot.sound; all 14955 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.03 GiB.
+
+
+## Complete triple rank and actual maximum joint probability without BCN
+
+Main Corollary13.8 is now internally proved in its complete original scope. Every actual compatible triple of distinct centers in a fixed critical band has relative nullity at most(3/2+epsilon)*L. If any selected pair is nonaligned, its nullity is at most(1+(2/3)*log2+epsilon)*L, with no compatibility requirement for that stronger rank estimate. Every actual triple joint probability, including incompatible and locally inadmissible families, is at mostN^(-3/2+epsilon). The literal finite maximum over all triples has the same bound.
+
+AllPairRank combines the newly internal height-controlled nonaligned theorem with the already proved rank on known alignments. The compatible half-window bound is transported exactly from L+1 to L, before every actual pair. The stronger nonaligned coefficient(2/3)*log2 is retained under the same transport. The compatible branch uses true joint positivity and exact original windows rather than homogeneous marginals.
+
+JointFamilyProbability applies the exact affine pair mass identity and the internally proved actual marginal cap. Its threshold precedes every family, and the boundN^(-3/2+epsilon) extends to every family containing at least two distinct centers by antitonicity of the actual joint moment. The original maximalTripleProbability definition and its zero convention are reused, so no replacement population or favorable exceptional-set removal is introduced.
+
+TripleRankTheorem uses the finite identity rho_rel(T)<=L+d_xy and the internal compatible or nonaligned pair bounds. All three printed clauses share one threshold. NonalignedJointProbability additionally retains the stronger actual pair and containing-family probability exponent-2+(2/3)*log2+epsilon. Every theorem has only its displayed critical-band and accuracy arguments; no BCN property or other unformalized geometric input is assumed.
+
+The source corollary, its proof and the exact affine probability identity in main_sections/pair_rigidity.tex were rechecked. This is a scoped replacement of the former BCN dependency in main13.8 and its actual-family estimates. It does not prove generic main13.5, full quadratic-degree/all-dimensional BCN or the general geometric cover/count interfaces. The global sharp third-activity/cumulant and optimal-law conclusions are still separate at this checkpoint; combining these pointwise estimates with their previously proved host counts is subsequent work.
+
+P1-MATH-0487 adds four modules, twelve theorems and no definitions. Exactly one numbered result, main13.8, is promoted from conditional to proved. Coverage becomes151 proved,13 conditional and3 in_progress out of167, with164 completed:61 main results and90 companion results are proved. The project records485 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16505 jobs); direct axiom audit passed for 15518 declarations using only propext, Classical.choice and Quot.sound; all 14967 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.00 GiB.

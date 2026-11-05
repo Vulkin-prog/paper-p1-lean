@@ -3963,3 +3963,7 @@ public import PaperP1.Arithmetic.HeightControlledCommonCurveGrid
 public import PaperP1.Arithmetic.NonalignedCriticalRank
 public import PaperP1.Arithmetic.NonalignedRankTheorem
 public import PaperP1.Asymptotics.HeightControlledCommonCurveCount
+public import PaperP1.Asymptotics.AllPairRank
+public import PaperP1.Asymptotics.JointFamilyProbability
+public import PaperP1.Asymptotics.NonalignedJointProbability
+public import PaperP1.Asymptotics.TripleRankTheorem
