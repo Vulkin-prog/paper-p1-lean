@@ -4097,3 +4097,6 @@ public import PaperP1.Analysis.TransposedGraphImageNeighborhood
 public import PaperP1.Analysis.TransposedGraphOverlapUniqueness
 public import PaperP1.Analysis.NormalizedGraphGluing
 public import PaperP1.Analysis.TransposedGraphGluing
+public import PaperP1.Analysis.AnchoredNormalizedGraph
+public import PaperP1.Analysis.ConnectedGraphReachability
+public import PaperP1.Analysis.RegularCurveComponentGraphs

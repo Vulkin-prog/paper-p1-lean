@@ -2488,6 +2488,9 @@ import PaperP1
 #print axioms PaperP1.AnalyticWronskianProduct.wronskian_product
 #print axioms PaperP1.AnchoredCostNormalization.main_lower
 #print axioms PaperP1.AnchoredCostNormalization.with_errors
+#print axioms PaperP1.AnchoredNormalizedGraph.parameter_of_point
+#print axioms PaperP1.AnchoredNormalizedGraph.anchor_in_image
+#print axioms PaperP1.AnchoredNormalizedGraph.attach
 #print axioms PaperP1.BalancedReciprocalSaddleCost.finite_cost_lower
 #print axioms PaperP1.BalancedReciprocalSaddleCost.balanced_identity
 #print axioms PaperP1.BalancedReciprocalSaddleCost.tendsto_ei_div_nu
@@ -2617,6 +2620,11 @@ import PaperP1
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le_power
 #print axioms PaperP1.CoarseSaddlePowerErrors.power_negligible
+#print axioms PaperP1.ConnectedGraphReachability.reachable_subset
+#print axioms PaperP1.ConnectedGraphReachability.reachable_anchor
+#print axioms PaperP1.ConnectedGraphReachability.reachable_clopen
+#print axioms PaperP1.ConnectedGraphReachability.reachable_all
+#print axioms PaperP1.ConnectedGraphReachability.exists_chart_for_finite_population
 #print axioms PaperP1.ContractiveExponentialProducts.norm_exponentialProduct_le_one
 #print axioms PaperP1.ContractiveExponentialProducts.norm_first_order_le
 #print axioms PaperP1.ContractiveExponentialProducts.norm_quadratic_error_le
@@ -3242,6 +3250,9 @@ import PaperP1
 #print axioms PaperP1.ReducedSourceParameter.uniform_parameter_threshold
 #print axioms PaperP1.ReducedSourceShiftBudget.polylog_rebase
 #print axioms PaperP1.ReducedSourceShiftBudget.shift_and_loss_bounds
+#print axioms PaperP1.RegularCurveComponentGraphs.exists_local_chart_in_region
+#print axioms PaperP1.RegularCurveComponentGraphs.local_charts_on_component
+#print axioms PaperP1.RegularCurveComponentGraphs.finite_population_chart
 #print axioms PaperP1.RegularCurveProjectionUniqueness.projection_locally_injective
 #print axioms PaperP1.RegularCurveProjectionUniqueness.projection_separated
 #print axioms PaperP1.RegularCurveProjectionUniqueness.unique_lifts

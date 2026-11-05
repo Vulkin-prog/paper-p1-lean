@@ -25820,6 +25820,49 @@
         "status": "not_integrated"
       },
       "validation_commit": "bf96b0365b541773c2d1b1354c42674d926f5f76"
+    },
+    {
+      "id": "P1-MATH-0532",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "Actual local charts and finite gluing were available, but no genuine chart containing an arbitrary finite population in an actual curve component had been constructed.",
+      "finding": "Actual relative-open graph neighborhoods and gluing make anchor reachability clopen; connectedness and finite induction produce a single genuine chart for every finite population in an actual regular component.",
+      "proposed_revision": "Use the internal finite-population single-chart construction on actual regular curve components, and then verify the component control conditions needed for the uniform entire-piece grid count.",
+      "impact": "Closes first-orientation finite-population graph coverage for actual regular curve components in any ambient open set, without a supplied component chart. Component control, point counts and global component cardinality remain separate.",
+      "evidence": [
+        "PaperP1.AnchoredNormalizedGraph.parameter_of_point",
+        "PaperP1.AnchoredNormalizedGraph.anchor_in_image",
+        "PaperP1.AnchoredNormalizedGraph.attach",
+        "PaperP1.ConnectedGraphReachability.reachable_subset",
+        "PaperP1.ConnectedGraphReachability.reachable_anchor",
+        "PaperP1.ConnectedGraphReachability.reachable_clopen",
+        "PaperP1.ConnectedGraphReachability.reachable_all",
+        "PaperP1.ConnectedGraphReachability.exists_chart_for_finite_population",
+        "PaperP1.RegularCurveComponentGraphs.exists_local_chart_in_region",
+        "PaperP1.RegularCurveComponentGraphs.local_charts_on_component",
+        "PaperP1.RegularCurveComponentGraphs.finite_population_chart",
+        "PaperP1.AnchoredNormalizedGraph.pointImage",
+        "PaperP1.AnchoredNormalizedGraph.Anchored",
+        "PaperP1.ConnectedGraphReachability.LocalCharts",
+        "PaperP1.ConnectedGraphReachability.Reachable",
+        "PaperP1.RegularCurveComponentGraphs.region",
+        "PaperP1.RegularCurveComponentGraphs.restrict"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16817 jobs); direct axiom audit passed for 15970 declarations using only propext, Classical.choice and Quot.sound; all 15535 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.67 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
