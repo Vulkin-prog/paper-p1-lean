@@ -3916,3 +3916,6 @@ public import PaperP1.Asymptotics.LeadingCleanPivotLower
 public import PaperP1.Asymptotics.LeadingSignedCostBounds
 public import PaperP1.Asymptotics.LeadingSignedCostLower
 public import PaperP1.Asymptotics.LeadingSignedCostTheorem
+public import PaperP1.Analysis.PolynomialSmoothDensity
+public import PaperP1.Analysis.PolynomialSmoothDyadicDensity
+public import PaperP1.Arithmetic.OrdinarySmoothDyadicDensity

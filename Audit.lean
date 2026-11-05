@@ -2782,6 +2782,8 @@ import PaperP1
 #print axioms PaperP1.PolynomialParsevalBounds.circleIntegrable_sq_norm_eval
 #print axioms PaperP1.PolynomialParsevalBounds.coefficient_energy_le_of_pointwise_bound
 #print axioms PaperP1.PolynomialParsevalBounds.l2_le_of_pointwise_bound
+#print axioms PaperP1.PolynomialSmoothDensity.uniform_lower
+#print axioms PaperP1.PolynomialSmoothDyadicDensity.uniform_lower
 #print axioms PaperP1.PolynomialTestTruncation.test_bound
 #print axioms PaperP1.PowerSeriesTail.weight_nonneg
 #print axioms PaperP1.PowerSeriesTail.tailTerm_nonneg
@@ -5089,6 +5091,12 @@ import PaperP1
 #print axioms PaperP1.OrdinarySmoothCensus.smooth_recursion
 #print axioms PaperP1.OrdinarySmoothCensus.smooth_reciprocal_identity
 #print axioms PaperP1.OrdinarySmoothCensus.ordinary_reciprocal_identity
+#print axioms PaperP1.OrdinarySmoothDyadicDensity.multiply_two_pow
+#print axioms PaperP1.OrdinarySmoothDyadicDensity.image_mem
+#print axioms PaperP1.OrdinarySmoothDyadicDensity.exponent_le
+#print axioms PaperP1.OrdinarySmoothDyadicDensity.paired_image_injective
+#print axioms PaperP1.OrdinarySmoothDyadicDensity.finite_transfer
+#print axioms PaperP1.OrdinarySmoothDyadicDensity.density_transfer
 #print axioms PaperP1.OrdinarySmoothSourcePopulation.mem_goodSources
 #print axioms PaperP1.OrdinarySmoothSourcePopulation.goodSources_subset
 #print axioms PaperP1.OrdinarySmoothSourcePopulation.source_deletion_ledger

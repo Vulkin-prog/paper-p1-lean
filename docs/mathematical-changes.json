@@ -23415,6 +23415,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "e0973bb67738b816be740ae21e21eec18debb3ab"
+    },
+    {
+      "id": "P1-MATH-0470",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The ordinary source census for the all-anchor route relied on an unproved short-interval input. An internally proved positive global or dyadic smooth density at every fixed power cutoff was not yet available.",
+      "finding": "The internal prime-band density induction gives a fixed positive global smooth density. A finite doubling transfer with fixed bounded multiplicity gives a fixed positive density of actual ordinary N^alpha-smooth integers in[N,2N), for every fixed alpha>0.",
+      "proposed_revision": "Use the independently proved positive global/dyadic census as the basis for weaker all-anchor consequences, while retaining the stronger almost-all logarithmic-window census as a separate unresolved input. Record the exact cutoff, threshold and fixed multiplicity.",
+      "impact": "Supplies unconditional positive ordinary smooth density at every fixed power cutoff, in the full and actual dyadic intervals. The full T19.17 short-interval statement and forcing consequence remain conditional; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.PolynomialSmoothDensity.uniform_lower",
+        "PaperP1.PolynomialSmoothDyadicDensity.uniform_lower",
+        "PaperP1.OrdinarySmoothDyadicDensity.multiply_two_pow",
+        "PaperP1.OrdinarySmoothDyadicDensity.image_mem",
+        "PaperP1.OrdinarySmoothDyadicDensity.exponent_le",
+        "PaperP1.OrdinarySmoothDyadicDensity.paired_image_injective",
+        "PaperP1.OrdinarySmoothDyadicDensity.finite_transfer",
+        "PaperP1.OrdinarySmoothDyadicDensity.density_transfer",
+        "PaperP1.OrdinarySmoothDyadicDensity.dyadicSmooth"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16409 jobs); direct axiom audit passed for 15362 declarations using only propext, Classical.choice and Quot.sound; all 14796 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.38 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
