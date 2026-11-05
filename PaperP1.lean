@@ -3932,3 +3932,6 @@ public import PaperP1.Arithmetic.PNTWeightedPrimeUpper
 public import PaperP1.Analysis.ExponentialIntegralPowerLog
 public import PaperP1.Analysis.ReciprocalLogPowerIntegral
 public import PaperP1.Analysis.BalancedReciprocalSaddleCost
+public import PaperP1.Analysis.MovingLogarithmicPivotMass
+public import PaperP1.Asymptotics.FineReciprocalUpper
+public import PaperP1.Asymptotics.FineSaddlePivotCount

@@ -23666,6 +23666,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "5382124ee73578d1296fc1f8a6d836f99bccebcc"
+    },
+    {
+      "id": "P1-MATH-0477",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The fine reciprocal upper bound was still supplied through the complete ordinary EIP hypothesis. A fixed leading-order partition could not control its o(nu) error.",
+      "finding": "An internally supplied uniform count, balanced actual-root cost and growing weighted partition prove pivotSum(3N)+1 <= N exp(-2V_N+epsilon nu_N) for every epsilon>0, and all three original upper sums at the original scales.",
+      "proposed_revision": "Replace the upper-bound portion of the reciprocal lemma by the checked moving weighted partition. Retain only the matching fine lower estimate as the mathematical reciprocal obligation; adapt the existing two-sided interfaces separately.",
+      "impact": "Discharges the fine reciprocal upper estimate without EIP. The complete two-sided numbered statements are still conditional on their fine lower estimate; coverage is unchanged.",
+      "evidence": [
+        "PaperP1.MovingLogarithmicPivotMass.interval_cover",
+        "PaperP1.MovingLogarithmicPivotMass.exponential_cover",
+        "PaperP1.MovingLogarithmicPivotMass.finite_mass",
+        "PaperP1.FineReciprocalUpper.uniform_upper",
+        "PaperP1.FineReciprocalUpper.uniform_population_upper",
+        "PaperP1.FineReciprocalUpper.uniform_original_upper",
+        "PaperP1.FineSaddlePivotCount.uniform_count",
+        "PaperP1.FineSaddlePivotCount.uniform_population_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16441 jobs); direct axiom audit passed for 15417 declarations using only propext, Classical.choice and Quot.sound; all 14857 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.24 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

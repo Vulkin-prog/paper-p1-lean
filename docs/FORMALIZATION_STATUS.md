@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records474 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records475 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15409 audited theorem/lemma declarations**. This
+- The project currently has **15417 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26815,3 +26815,20 @@ This result supplies the balanced-cost ingredient for a fine reciprocal upper es
 P1-MATH-0476 adds one module, six theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records474 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16435 jobs); direct axiom audit passed for 15409 declarations using only propext, Classical.choice and Quot.sound; all 14849 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.27 GiB.
+
+
+## Internal fine reciprocal upper bound from a uniform moving weighted partition
+
+The fine reciprocal upper bound is now internally proved. For every epsilon>0, one threshold before all N gives pivotSum(3N)+1 <= N*exp(-2V_N+epsilon*nu_N). The same upper bound holds for every retained population inside [1,3N], and for the literal ordinary primeSum(N), full odd-pivot sum and dyadic odd-pivot sum, all at the original scales V_N and nu_N. No ordinary EIP input or scale change is assumed. The matching fine lower bound remains unresolved, so complete T19.15/T19.16 remain conditional.
+
+FineSaddlePivotCount.uniform_count and uniform_population_bound supply one threshold before every logarithmic cutoff v with2u_N<=v<=logN and every actual retained population. Their bound is3N*exp(-H*u_N/v+Ei(u_N)+epsilon*nu_N). Checkpoint475's Euler estimate is uniform before its exponent and real endpoint; delta=u_N/v leaves its Ei argument exactly u_N across every band. Ei(u_N)/nu_N ->1 and logH=o(nu_N) absorb all Euler allowances with one threshold. No maximum of cutoff-dependent thresholds is taken after a moving partition.
+
+MovingLogarithmicPivotMass proves an exact finite interval/exponential cover for an arbitrary positive integer number of bands. Its weighted mass theorem keeps every band reciprocal weight, including the pivot one and final upper endpoint. Possible overlaps are enlarged only by nonnegative sums. The finite count and balanced-cost premises are explicit there; the asymptotic theorem supplies both internally. The tail beyond exp(K*w) has its actual3N population bound.
+
+FineReciprocalUpper chooses theta=epsilon/4, w=theta*nu_N and K=ceil(3V_N/w). Eventually w>=2u_N, so even the first band is in the uniform counting range; no unproved small-pivot branch is omitted. The final cutoff satisfies3V_N<=K*w<=4V_N<=logN. The balanced cost from checkpoint476 and the uniform count each lose at most theta*nu_N; the band width loses one further w. The exact finite theorem therefore gives exponent-2V_N+3w. The extra one is paid by an internally proved power-error bound. The number of bands satisfies3K+4<=(9/theta+7)*logN, which is at most exp(w) eventually. This proves the displayed exponent with epsilon*nu_N, including every rounding and prefactor.
+
+The new route proves the upper half of the fine reciprocal assertion independently of EIP. Existing canonical two-sided interfaces still accept the complete EIP input until a separate checked one-sided input adapter is added. The fine lower estimate, the full T19.17 almost-all short-window census and1-o(1) coefficient, full quadratic-degree BCN, and optimal strong-triangle weights retain their separate unresolved scopes. Leading coefficient2 limits and both qualitative all-anchor obstructions remain internal.
+
+P1-MATH-0477 adds three modules, eight theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records475 improvements and two statement-scope corrections. Original source files are preserved; no new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16441 jobs); direct axiom audit passed for 15417 declarations using only propext, Classical.choice and Quot.sound; all 14857 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.24 GiB.

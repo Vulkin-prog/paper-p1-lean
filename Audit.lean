@@ -2787,6 +2787,9 @@ import PaperP1
 #print axioms PaperP1.MonomialPrimeScale.obstruction_monomial
 #print axioms PaperP1.MonomialPrimeScale.determinant_small
 #print axioms PaperP1.MonomialPrimeScale.obstruction_small
+#print axioms PaperP1.MovingLogarithmicPivotMass.interval_cover
+#print axioms PaperP1.MovingLogarithmicPivotMass.exponential_cover
+#print axioms PaperP1.MovingLogarithmicPivotMass.finite_mass
 #print axioms PaperP1.OrdinaryReciprocalPrimeInput.tendsto_left_endpoint
 #print axioms PaperP1.OrdinaryReciprocalPrimeInput.uniform_square_part_upper
 #print axioms PaperP1.PartialPowerSum.powerSum_nonneg
@@ -7960,6 +7963,11 @@ import PaperP1
 #print axioms PaperP1.ExposureAssignmentBudget.uniform_fresh_assignment_budget
 #print axioms PaperP1.FactorialLogBounds.log_factorial_bounds
 #print axioms PaperP1.FactorialLogBounds.log_factorial_error
+#print axioms PaperP1.FineReciprocalUpper.uniform_upper
+#print axioms PaperP1.FineReciprocalUpper.uniform_population_upper
+#print axioms PaperP1.FineReciprocalUpper.uniform_original_upper
+#print axioms PaperP1.FineSaddlePivotCount.uniform_count
+#print axioms PaperP1.FineSaddlePivotCount.uniform_population_bound
 #print axioms PaperP1.FiniteAlignedTargetTripleMass.all_actual_sources
 #print axioms PaperP1.FiniteAlignedTargetTripleMass.uniform_mass
 #print axioms PaperP1.FiniteChannelActivity.uniform_activity
