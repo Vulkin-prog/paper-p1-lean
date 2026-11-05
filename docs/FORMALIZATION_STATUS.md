@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is93/167 unconditional and71 conditional (164/167 completed). The project records402 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is93/167 unconditional and71 conditional (164/167 completed). The project records403 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14594 audited theorem/lemma declarations**. This
+- The project currently has **14598 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25525,3 +25525,16 @@ Together with checkpoint403's absolute local determinant scale, this removes two
 P1-MATH-0404 adds two modules, seven theorems and one definition. Coverage stays93 proved and71 conditional out of167, with164 completed and three in_progress. The ledger records402 improvements and two statement-scope corrections. No new axiom, unproved analytic premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15747 jobs); direct axiom audit passed for 14594 declarations using only propext, Classical.choice and Quot.sound; all 13933 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.18 GiB.
+
+
+## Explicit degree-uniform height after a bounded plane shear
+
+DegreeUniformPlanePresentation constructs an actual small-height equation after choosing an actual bounded integer shear. Let 2<=D<=N, and let an unrestricted integer equation P define a geometric plane curve of total degree D. For any actual finite signed population S of its integer zeros with both coordinate absolute values at most N and more than D^2 points, it supplies t<=D and an integer equation Q of total degree D and outer degree D. The rationalizations of Q and the shear of P are associated; Q is geometric, vanishes at every transformed point and has coefficient height at most N^(32*D^3). All original coefficients are unrestricted.
+
+The bounded shear is chosen before interpolation. The transformed population remains injectively identified with S, and both coordinates are bounded by (D+1)*N. The actual interpolation presentation is associated with the sheared original curve. Association transfers the full outer degree. The monomial index cardinality is bounded by (D+1)^2 and the explicit interpolation height is then bounded by N^(32*D^3), uniformly in both degree and the original coefficients. No estimate for the original coefficient height, or for the coefficient growth of its shear, is assumed.
+
+This resolves a quantitative normalization obligation needed to combine the absolute local determinant scale and polynomial prime pool from checkpoints403-404. It does not yet establish a global degree-uniform counting bound. In particular, neither the D^2 logarithmic BCN estimate, its original full growing-degree corollary nor the sharp half-window rank consequence is claimed.
+
+P1-MATH-0405 adds one module and four theorems. Coverage stays93 proved and71 conditional out of167, with164 completed and three in_progress. The ledger records403 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15749 jobs); direct axiom audit passed for 14598 declarations using only propext, Classical.choice and Quot.sound; all 13937 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.17 GiB.

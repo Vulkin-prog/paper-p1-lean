@@ -3588,3 +3588,4 @@ public import PaperP1.Asymptotics.PolynomialConfinement
 public import PaperP1.Analysis.AffineDeterminantUniformScale
 public import PaperP1.Arithmetic.PolynomialPrimeCover
 public import PaperP1.Diophantine.PolynomialPrimeAffineCount
+public import PaperP1.Arithmetic.DegreeUniformPlanePresentation

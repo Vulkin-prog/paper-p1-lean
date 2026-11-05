@@ -20806,6 +20806,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "a4ffc9c858c879b5a55f4fdbd4f9ff9fe3c0c31a"
+    },
+    {
+      "id": "P1-MATH-0405",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "An explicit degree-uniform coefficient-height budget was still needed after obtaining full outer degree by a bounded shear; fixed-degree normalization constants do not supply a quantitative growing-degree estimate.",
+      "finding": "For 2<=D<=N and more than D^2 actual bounded zeros, shearing first and interpolating second yields an associated geometric equation with total and outer degree D and height<=N^(32*D^3), uniformly in all original coefficients.",
+      "proposed_revision": "Use the explicitly bounded post-shear interpolation presentation when estimating obstruction heights in a quantitative growing-degree determinant argument. Retain its actual point-count alternative and the domain 2<=D<=N.",
+      "impact": "Removes unrestricted original coefficient height from the next quantitative plane-count step while preserving the actual signed population. The full original main13.4 remains open.",
+      "evidence": [
+        "PaperP1.DegreeUniformPlanePresentation.index_card_le",
+        "PaperP1.DegreeUniformPlanePresentation.interpolation_height_bound",
+        "PaperP1.DegreeUniformPlanePresentation.point_natAbs_bounds",
+        "PaperP1.DegreeUniformPlanePresentation.exists_presentation"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15749 jobs); direct axiom audit passed for 14598 declarations using only propext, Classical.choice and Quot.sound; all 13937 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.17 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

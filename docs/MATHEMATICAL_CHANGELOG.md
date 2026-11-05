@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**402 mathematical improvements and two statement-scope corrections are confirmed.**
+**403 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24746,3 +24746,16 @@ Together with checkpoint403's absolute local determinant scale, this removes two
 P1-MATH-0404 adds two modules, seven theorems and one definition. Coverage stays93 proved and71 conditional out of167, with164 completed and three in_progress. The ledger records402 improvements and two statement-scope corrections. No new axiom, unproved analytic premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15747 jobs); direct axiom audit passed for 14594 declarations using only propext, Classical.choice and Quot.sound; all 13933 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.18 GiB.
+
+
+## Explicit degree-uniform height after a bounded plane shear
+
+DegreeUniformPlanePresentation constructs an actual small-height equation after choosing an actual bounded integer shear. Let 2<=D<=N, and let an unrestricted integer equation P define a geometric plane curve of total degree D. For any actual finite signed population S of its integer zeros with both coordinate absolute values at most N and more than D^2 points, it supplies t<=D and an integer equation Q of total degree D and outer degree D. The rationalizations of Q and the shear of P are associated; Q is geometric, vanishes at every transformed point and has coefficient height at most N^(32*D^3). All original coefficients are unrestricted.
+
+The bounded shear is chosen before interpolation. The transformed population remains injectively identified with S, and both coordinates are bounded by (D+1)*N. The actual interpolation presentation is associated with the sheared original curve. Association transfers the full outer degree. The monomial index cardinality is bounded by (D+1)^2 and the explicit interpolation height is then bounded by N^(32*D^3), uniformly in both degree and the original coefficients. No estimate for the original coefficient height, or for the coefficient growth of its shear, is assumed.
+
+This resolves a quantitative normalization obligation needed to combine the absolute local determinant scale and polynomial prime pool from checkpoints403-404. It does not yet establish a global degree-uniform counting bound. In particular, neither the D^2 logarithmic BCN estimate, its original full growing-degree corollary nor the sharp half-window rank consequence is claimed.
+
+P1-MATH-0405 adds one module and four theorems. Coverage stays93 proved and71 conditional out of167, with164 completed and three in_progress. The ledger records403 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15749 jobs); direct axiom audit passed for 14598 declarations using only propext, Classical.choice and Quot.sound; all 13937 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.17 GiB.

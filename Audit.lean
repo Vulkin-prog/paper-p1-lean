@@ -3837,6 +3837,10 @@ import PaperP1
 #print axioms PaperP1.DefectivePredicate.canonical_odd_mul_sq_decomposition
 #print axioms PaperP1.DefectivePredicate.oddPrimeSupport_subset_smallPrimesUpTo
 #print axioms PaperP1.DefectivePredicate.hDefective_iff_exists_HDefectRepresentation
+#print axioms PaperP1.DegreeUniformPlanePresentation.index_card_le
+#print axioms PaperP1.DegreeUniformPlanePresentation.interpolation_height_bound
+#print axioms PaperP1.DegreeUniformPlanePresentation.point_natAbs_bounds
+#print axioms PaperP1.DegreeUniformPlanePresentation.exists_presentation
 #print axioms PaperP1.DenseCompressedPairs.mem_pairs
 #print axioms PaperP1.DenseCompressedPairs.cover
 #print axioms PaperP1.DenseCompressedPairs.offset_card_le
