@@ -3902,3 +3902,5 @@ public import PaperP1.Asymptotics.ScaledSaddlePivotCount
 public import PaperP1.Analysis.FiniteLogarithmicPivotMass
 public import PaperP1.Asymptotics.StratifiedReciprocalUpper
 public import PaperP1.Asymptotics.StratifiedSignedCostUpper
+public import PaperP1.Arithmetic.OrdinarySmoothCensus
+public import PaperP1.Arithmetic.SmoothPrimeIncidence

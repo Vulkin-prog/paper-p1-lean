@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records463 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records464 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15293 audited theorem/lemma declarations**. This
+- The project currently has **15314 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26620,3 +26620,20 @@ uniform_sandwich retains the existing internal lower bound exp(-12 V_N), with on
 The full companion T19.16 remains conditional only on the ordinary EIP reciprocal input for its finer printed equivalent. A leading upper coefficient arbitrarily close to two does not supply a matching lower coefficient or an o(nu_N) remainder. The general geometric inputs, full quadratic-degree BCN and optimal global triple bounds retain their distinct unresolved scopes. P1-MATH-0465 adds one module, six theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records463 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16375 jobs); direct axiom audit passed for 15293 declarations using only propext, Classical.choice and Quot.sound; all 14720 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.50 GiB.
+
+
+## Exact ordinary smooth census and logarithmically weighted prime recursion
+
+The exact finite ordinary smooth-integer population is now constructed and connected to the original reciprocal-prime sum. Its largest-prime recursion has no multiplicity loss, and a second logarithmically weighted incidence recursion provides a finite lower-bound mechanism. These are preparatory arithmetic identities and inequalities, not a proved smooth-number asymptotic or a completed numbered result. Companion T19.15, including its full reciprocal proof in companion_sections/limits_appendix.tex lines1138-1194, was rechecked to keep the ordinary largest-prime population distinct from the odd-valuation pivot population.
+
+OrdinarySmoothCensus.smoothUpTo X Y is precisely the positive integers at most X whose ordinary largest prime factor is at most Y, with the original convention P+(1)=1. The largest-prime factor of a nonzero product is the maximum of those of its factors. Every n>1 has a prime largest factor dividing n. These elementary properties produce the exact injective representation n=p*m with p prime, p<=Y, m<=floor(X/p), and P+(m)<=p. Its image is exactly smoothUpTo X Y with1 removed. No noncanonical factorization is counted as a separate integer.
+
+smooth_recursion proves Psi(X,Y)=1+sum_{p<=Y prime} Psi(floor(X/p),p) for X,Y>=1. smooth_reciprocal_identity proves the corresponding reciprocal-weight identity, and ordinary_reciprocal_identity gives primeSum(X)=1+sum_{p<=X prime} Psi(floor(X/p),p)/p. All floor divisions, the exceptional integer1, endpoint inclusions and actual finite populations are retained. Ordinary primes rather than odd-valuation pivots occur in these exact identities.
+
+SmoothPrimeIncidence uses a different recursion that keeps the smoothness cutoff Y fixed. The multiplication map gives a proved bijection between smooth integers at most floor(X/p) and smooth multiples of p at most X. Swapping the exact finite incidence sums gives sum_{p<=Y prime} log(p)*Psi(floor(X/p),Y)=sum_{n<=X,Y-smooth} sum_{p|n prime} log(p). The existing internal radical-divisor bound makes the inner sum at most log(n), so the entire expression is at most log(X)*Psi(X,Y). The nonnegative prime weights allow restriction to any actual selected prime band.
+
+lower_transfer and count_lower_from_band state the resulting finite lower-bound step with explicit lower-count and prime-band premises. They do not claim those analytic premises are already established. The logarithmic weight pays for all repeated prime-divisor incidences without an unproved factorization bound. This prepares an internal smooth-number lower estimate, which is still subsequent work. No leading lower coefficient2 or fine o(nu_N) remainder is inferred from these finite identities alone.
+
+P1-MATH-0466 adds two modules, twenty-one theorems and four definitions. T19.15 and T19.16 retain their full conditional status and their existing closed one-sided leading upper bounds. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records464 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16379 jobs); direct axiom audit passed for 15314 declarations using only propext, Classical.choice and Quot.sound; all 14745 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.48 GiB.

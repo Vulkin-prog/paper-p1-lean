@@ -23240,6 +23240,57 @@
         "status": "not_integrated"
       },
       "validation_commit": "a618eeb4982a5d2283beec445733e8ca6bd357cd"
+    },
+    {
+      "id": "P1-MATH-0466",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The reciprocal lower-bound route used only a selected distinct-prime product population; an exact ordinary smooth census and a multiplicity-controlled recursive mechanism were not available internally.",
+      "finding": "Canonical largest-prime factorization gives exact smooth-count and original reciprocal identities. Logarithmically weighted prime-divisor incidence yields sum log(p)*Psi(floor(X/p),Y) <= log(X)*Psi(X,Y), with a proved selected-band lower-transfer step.",
+      "proposed_revision": "Use the exact ordinary smooth population and finite weighted recursion as the arithmetic basis for future lower estimates. Keep every analytic prime-band and recursive count premise explicit until internally discharged; do not treat these preparatory identities as the fine EIP equivalent.",
+      "impact": "Removes factorization multiplicity from the exact finite smooth recursion and supplies a verified lower-bound mechanism. No asymptotic lower coefficient or numbered coverage is added.",
+      "evidence": [
+        "PaperP1.OrdinarySmoothCensus.largestPrimeFactor_one",
+        "PaperP1.OrdinarySmoothCensus.largestPrimeFactor_prime",
+        "PaperP1.OrdinarySmoothCensus.largestPrimeFactor_mul",
+        "PaperP1.OrdinarySmoothCensus.largestPrimeFactor_of_dvd",
+        "PaperP1.OrdinarySmoothCensus.largestPrimeFactor_prime_dvd",
+        "PaperP1.OrdinarySmoothCensus.mem_smoothUpTo",
+        "PaperP1.OrdinarySmoothCensus.smoothUpTo_mono",
+        "PaperP1.OrdinarySmoothCensus.factorPair_properties",
+        "PaperP1.OrdinarySmoothCensus.factorPairs_injective",
+        "PaperP1.OrdinarySmoothCensus.factorPairs_image",
+        "PaperP1.OrdinarySmoothCensus.smooth_recursion",
+        "PaperP1.OrdinarySmoothCensus.smooth_reciprocal_identity",
+        "PaperP1.OrdinarySmoothCensus.ordinary_reciprocal_identity",
+        "PaperP1.SmoothPrimeIncidence.multiples_image",
+        "PaperP1.SmoothPrimeIncidence.multiples_card",
+        "PaperP1.SmoothPrimeIncidence.primeDivisors_filter",
+        "PaperP1.SmoothPrimeIncidence.weighted_identity",
+        "PaperP1.SmoothPrimeIncidence.weighted_recursion",
+        "PaperP1.SmoothPrimeIncidence.weighted_subset",
+        "PaperP1.SmoothPrimeIncidence.lower_transfer",
+        "PaperP1.SmoothPrimeIncidence.count_lower_from_band",
+        "PaperP1.OrdinarySmoothCensus.smoothUpTo",
+        "PaperP1.OrdinarySmoothCensus.factorPairs",
+        "PaperP1.OrdinarySmoothCensus.value",
+        "PaperP1.SmoothPrimeIncidence.multiples"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16379 jobs); direct axiom audit passed for 15314 declarations using only propext, Classical.choice and Quot.sound; all 14745 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.48 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
