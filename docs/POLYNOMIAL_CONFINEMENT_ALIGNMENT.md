@@ -125,3 +125,8 @@ third activity and the optimal quadratic upper rate remain open.
 Source bytes, dependency pins and the later Palomar milestone remain
 preserved. The new dependency on the EXISTING explicit BCN property
 is recorded rather than reported as an unconditional completion.
+
+
+## Unconditional completion (P1-MATH-0402)
+
+The full original T8.1 now has unconditional canonical power, little-o and post-alignment declarations in PolynomialConfinement. All indexed multiplicities, quantifier order and actual source comparisons above are retained. BoundedPlaneCurveCount.uniform_bound replaces the fixed-degree use of BCN with the fully proved checkpoint401 theorem; the full BCN property remains open. Earlier sections are historical validation checkpoints. See UNCONDITIONAL_POLYNOMIAL_CONFINEMENT_ALIGNMENT.md for the current scope.

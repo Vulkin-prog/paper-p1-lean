@@ -8443,6 +8443,10 @@ import PaperP1
 #print axioms PaperP1.PolylogSmoothModuli.odd_smooth_count
 #print axioms PaperP1.PolylogSourceBarrierCount.uniform_budget
 #print axioms PaperP1.PolylogSourceBarrierCount.uniform_actual_count
+#print axioms PaperP1.PolynomialConfinement.afterExactAlignments_no_exact
+#print axioms PaperP1.PolynomialConfinement.companion_T8_1_power
+#print axioms PaperP1.PolynomialConfinement.companion_T8_1_little_o
+#print axioms PaperP1.PolynomialConfinement.companion_T8_1_after_alignments
 #print axioms PaperP1.PolynomialConfinementUnderBCN.afterExactAlignments_no_exact
 #print axioms PaperP1.PolynomialConfinementUnderBCN.companion_T8_1_power
 #print axioms PaperP1.PolynomialConfinementUnderBCN.companion_T8_1_little_o

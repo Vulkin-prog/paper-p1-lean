@@ -3,7 +3,7 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
-Current plane-BCN reduction (P1-MATH-0369): only the absolutely irreducible integer plane count with explicit polynomial coefficient height remains an ordinary unproved plane input. Coefficient-field descent, denominator clearing, bounded-height interpolation, exact degree preservation and all small-population exceptions are proved. The full original all-dimensional main13.4 statement remains separately open.
+Current plane counts (P1-MATH-0401): the actual coefficient- and field-uniform bound K(D,epsilon)*H^(1/D+epsilon) is proved for every fixed degree D>=2. No complex embedding or absolute irreducibility input is required. The degree-uniform logarithmic BCN estimate at growing D and the full original all-dimensional main13.4 remain open.
 
 The exact unqualified exponent display in companion T5.1 is disproved on actual admissible data at arbitrarily large sizes (P1-MATH-0315). Its actual uniform counting conclusions and the universally capped exact comparison are proved without unproved inputs. The literal radius-one T1.10 assertion is also false; its checked corrected variants retain the explicitly recorded domains and inputs. Main13.4 is the remaining numbered proof obligation. The two disproved original statements stay in the baseline ledger until a new manuscript version integrates the corrections.
 
@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records399 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is93/167 unconditional and71 conditional (164/167 completed). The project records400 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14577 audited theorem/lemma declarations**. This
+- The project currently has **14581 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25480,3 +25480,18 @@ The constants still depend on the fixed degree or fixed finite degree ceiling. T
 P1-MATH-0401 adds four modules and ten theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records399 improvements and two statement-scope corrections. No new axiom, external counting premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15739 jobs); direct axiom audit passed for 14577 declarations using only propext, Classical.choice and Quot.sound; all 13914 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.24 GiB.
+
+
+## Unconditional complete common-divisor confinement in companion T8.1
+
+PolynomialConfinement supplies unconditional canonical declarations for the full original companion T8.1. The actual indexed population of composite pairwise coprime common divisors satisfies cardinality<=M*(L+1)^(1/2+delta) after one threshold, with no unproved arithmetic or geometric argument. For delta<1/2 the actual population is o(L+1). The same power bound holds after the literal exact-alignment filter is applied, with the same constant and threshold.
+
+The constant and threshold precede N, every critical L, every index TYPE and actual finite indexed family. Coincident offsets retain their full multiplicity. The divisor lower bound is nonstrict g_i>=N^tau, which includes the source strict version. Fixed integer comparison constants encode arbitrary fixed real asymptotic and offset constants. Only the first base needs the positive lower comparison; the second may have either sign. The source dyadic positive windows are included. The no-line condition applies to distinct offset points exactly as in confinement.tex lines9-23.
+
+The actual nonzero auxiliary polynomial, factor decomposition, rational line equations, line bounds and repeated-point fibre bounds were already constructed internally. The only remaining use of the stronger BCN input was its fixed-degree nonlinear point count. This use is now replaced by BoundedPlaneCurveCount.uniform_bound, fully proved at checkpoint401 from the exact weighted affine determinant method. This replacement does not prove PlaneCurvePointCount.UniformBound or the full growing-degree BCN theorem; it removes the need for that theorem in T8.1 because the auxiliary degree is fixed before the height.
+
+The original statement and proof in companion_sections/confinement.tex lines9-69 were rechecked before promotion. The canonical power, little-o and post-alignment declarations have no unproved input argument. The input-discharge record identifies the already validated checkpoint401 proof of the bounded-degree specialization and the internally proved auxiliary construction. Earlier conditional validation history is retained.
+
+P1-MATH-0402 adds four theorems and one definition. Companion T8.1 moves from conditional to proved. Coverage becomes93 proved and71 conditional out of167, with164 completed and three in_progress. The ledger records400 improvements and two statement-scope corrections. Original main13.4 and its power-law growing-degree specialization, the normalized higher-dimensional curve and surface properties and the other recorded external inputs remain open. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15741 jobs); direct axiom audit passed for 14581 declarations using only propext, Classical.choice and Quot.sound; all 13919 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.22 GiB.

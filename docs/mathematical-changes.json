@@ -20706,6 +20706,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "7454ee75d5bd04b829cc62a129080f55f7dbbc12"
+    },
+    {
+      "id": "P1-MATH-0402",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:conf:groups",
+        "number": "T8.1",
+        "page": 37,
+        "source": "companion_sections/confinement.tex",
+        "line": 9,
+        "statement_sha256": "7ebcf350ba28ab0f1bfcc4cc2f6c7f0be0372bf91091a2143a120c1313c7dacf"
+      },
+      "original_assumption": "Companion T8.1 still exposed the unproved plane BCN property solely to obtain a square-root count on a fixed finite auxiliary degree range.",
+      "finding": "The full indexed common-divisor confinement bound, its little-o consequence and the exact-alignment-filter version now have canonical proofs with no unproved input, by using the internally proved fixed-degree plane estimate.",
+      "proposed_revision": "Use the unconditional T8.1 declarations and cite the internally proved bounded-degree affine point count in its proof. Retain the stronger growing-degree and all-dimensional BCN obligations for arguments which actually require them.",
+      "impact": "Companion T8.1 moves from conditional to proved:93 proved,71 conditional and3 in_progress out of167. The full BCN property is not discharged globally.",
+      "evidence": [
+        "PaperP1.PolynomialConfinement.afterExactAlignments_no_exact",
+        "PaperP1.PolynomialConfinement.companion_T8_1_power",
+        "PaperP1.PolynomialConfinement.companion_T8_1_little_o",
+        "PaperP1.PolynomialConfinement.companion_T8_1_after_alignments",
+        "PaperP1.PolynomialConfinement.afterExactAlignments"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15741 jobs); direct axiom audit passed for 14581 declarations using only propext, Classical.choice and Quot.sound; all 13919 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.22 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
