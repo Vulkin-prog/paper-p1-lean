@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**518 mathematical improvements and two statement-scope corrections are confirmed.**
+**519 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26680,3 +26680,16 @@ These are the finite algebraic and actual analytic ingredients for the real dete
 P1-MATH-0520 adds three modules, eight theorems and one definition. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 518 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. Selective missing pinned Mathlib Taylor dependencies were compiled from the existing checkout, with no dependency download. No new axiom, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16741 jobs); direct axiom audit passed for 15859 declarations using only propext, Classical.choice and Quot.sound; all 15393 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.93 GiB.
+
+
+## Actual smooth function-evaluation determinant from Taylor remainders
+
+TaylorEvaluationData constructs the actual finite matrix representation of n function values from n-1 low Taylor slots and n independent remainder slots. Its slot indices are injective even though the high weights are all capped at n-1. The low coefficients are the actual iterated derivatives divided by factorials; the diagonal high coefficients are the actual positive derivative bound M. The equality with the original function-evaluation matrix is proved exactly, with no assumed expansion. Actual local smoothness and derivative bounds give all coefficient and normalized remainder bounds.
+
+RealSmoothEvaluationDeterminant then proves, for n>=2, actual C-infinity functions on a real open interval, an interior anchor c, actual points x_j in that interval with |x_j-c|<=delta<=1, and actual derivative magnitudes through n-1 bounded by M>=1, that |det(f_i(x_j))|<=(2*n-1)^n*M^n*n!*delta^(n*(n-1)/2). A coarse (2*n)^n version is also proved. No distinctness of evaluation points is required. The Taylor representation, remainder estimate and triangular degree allowance are all internal, rather than additional hypotheses. The hypotheses require only smoothness on the given open interval, with no supplied global extension.
+
+This closes the concrete real short-interval function-evaluation determinant step following P1-MATH-0520. The simultaneous injective local unit-jet/Chebyshev maps of P1-MATH-0519 remain available. Actual monomial derivative bounds, arithmetic determinant separation, controlled interval and global curve/component covering counts, whole-component graph coverage, the final sharp plane estimate and higher-dimensional projection remain separate. Full main13.4/13.5 remain unresolved; the generic plane theorem stays cubic with full a<1/3 range.
+
+P1-MATH-0521 adds two modules, six theorems and three definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 519 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16745 jobs); direct axiom audit passed for 15865 declarations using only propext, Classical.choice and Quot.sound; all 15402 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.91 GiB.

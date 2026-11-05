@@ -3099,6 +3099,8 @@ import PaperP1
 #print axioms PaperP1.RealSeriesEvaluation.geometric_summability
 #print axioms PaperP1.RealSeriesTail.geometric_tail
 #print axioms PaperP1.RealSeriesTail.constant_tail
+#print axioms PaperP1.RealSmoothEvaluationDeterminant.bound
+#print axioms PaperP1.RealSmoothEvaluationDeterminant.coarse_bound
 #print axioms PaperP1.ReciprocalLeadingLimits.uniform_normalized_bounds
 #print axioms PaperP1.ReciprocalLeadingLimits.ordinary_limit
 #print axioms PaperP1.ReciprocalLeadingLimits.full_limit
@@ -3392,6 +3394,10 @@ import PaperP1
 #print axioms PaperP1.TangentCurvePieceZeros.partial_evaluation
 #print axioms PaperP1.TangentCurvePieceZeros.parameter_zero_bound
 #print axioms PaperP1.TangentCurvePieceZeros.image_zero_bound
+#print axioms PaperP1.TaylorEvaluationData.slotIndex_injective
+#print axioms PaperP1.TaylorEvaluationData.evaluation_eq
+#print axioms PaperP1.TaylorEvaluationData.coefficient_bound
+#print axioms PaperP1.TaylorEvaluationData.value_bound
 #print axioms PaperP1.TransposedNormalizedGraphPiece.transpose_trajectory
 #print axioms PaperP1.TransposedNormalizedGraphPiece.initial_point
 #print axioms PaperP1.TransposedNormalizedGraphPiece.exists_piece

@@ -4062,3 +4062,5 @@ public import PaperP1.Analysis.UnitSlopePieceRestriction
 public import PaperP1.Algebra.RealFilteredEvaluationDeterminant
 public import PaperP1.Algebra.TruncatedEvaluationDegreeBudget
 public import PaperP1.Analysis.ActualTaylorRemainderBound
+public import PaperP1.Analysis.RealSmoothEvaluationDeterminant
+public import PaperP1.Analysis.TaylorEvaluationData
