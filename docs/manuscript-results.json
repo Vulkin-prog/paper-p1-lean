@@ -31312,7 +31312,8 @@
             "PaperP1.FixedCompressedPrimitiveTheorem.companion_T4_4"
           ]
         }
-      ]
+      ],
+      "validation_commit": "81a8a255001860693466d94e168f2a4c2666ed57"
     },
     {
       "label": "p13:short:quadratic",
@@ -33718,7 +33719,8 @@
             "PaperP1.OriginalCompressedActivity.companion_T15_1_original"
           ]
         }
-      ]
+      ],
+      "validation_commit": "81a8a255001860693466d94e168f2a4c2666ed57"
     },
     {
       "label": "p1:core:exceptional",
