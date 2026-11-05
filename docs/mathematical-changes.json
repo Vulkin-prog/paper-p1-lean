@@ -20635,6 +20635,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "7580ae3124dae82e3aeb9cf201e8b6f16d47f09d"
+    },
+    {
+      "id": "P1-MATH-0400",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The weighted local affine determinant count had not yet been assembled into a global signed integer-point estimate with a proved prime selection and control of critical points.",
+      "finding": "For every fixed a>0,b>=2, actual geometric integer curves now satisfy the global bound K(a,b,epsilon)*B^(1/b+epsilon)*height(G)^epsilon, with all prime covers, local counts and exceptional populations proved internally.",
+      "proposed_revision": "Use the new affine integer count at its1/b exponent. Absorb the explicit coefficient-height factor and construct a full-outer-degree coordinate change before claiming the coefficient-uniform fixed-total-degree1/D consequence.",
+      "impact": "Proves the global affine integer exponent improvement at fixed bidegrees while retaining the explicit coefficient-height factor. Coefficient normalization, degree-uniform BCN and numbered coverage remain separate.",
+      "evidence": [
+        "PaperP1.AffineDeterminantDegreeChoice.exists_auxiliary_degree",
+        "PaperP1.AffineDeterminantDegreeChoice.determinant_small",
+        "PaperP1.AffineSmoothResidueClasses.residue_image_card",
+        "PaperP1.AffineSmoothResidueClasses.fixed_prime_count",
+        "PaperP1.FinitePrimeAffineCount.bounded_count",
+        "PaperP1.GeometricAffinePointCount.finite_count",
+        "PaperP1.AffineSmoothResidueClasses.affineResidue"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15731 jobs); direct axiom audit passed for 14567 declarations using only propext, Classical.choice and Quot.sound; all 13904 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.26 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

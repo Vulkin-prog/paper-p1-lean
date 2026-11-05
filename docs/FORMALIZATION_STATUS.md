@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records397 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records398 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14561 audited theorem/lemma declarations**. This
+- The project currently has **14567 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25446,3 +25446,20 @@ This checkpoint proves the exact weighted local method. The global prime selecti
 P1-MATH-0399 adds three modules, nine theorems and three definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records397 improvements and two statement-scope corrections. No new axiom, external counting premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15723 jobs); direct axiom audit passed for 14561 declarations using only propext, Classical.choice and Quot.sound; all 13897 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.28 GiB.
+
+
+## Global affine integer counts at the fixed-bidegree exponent 1 over b
+
+GeometricAffinePointCount.finite_count proves a global count for actual finite signed integer populations on geometric integer plane curves of fixed bidegrees a>0 and b>=2: cardinality<=K(a,b,epsilon)*B^(1/b+epsilon)*height(G)^epsilon when both coordinates are bounded by B>=1. The constant precedes every original equation and actual population. Both signs, all axis points and all critical points are included. No prime supply, smooth-class count, auxiliary equation or geometric covering property is supplied externally.
+
+AffineSmoothResidueClasses sums the actual smooth residue classes proved in checkpoint399. The number of occupied residue classes is bounded by the internally proved finite-field curve count, and each class is bounded using its actual auxiliary equation and plane intersection. This gives (degreeX G+degreeY G)^2*(A+J)*p for the actual good population at a fixed prime.
+
+FinitePrimeAffineCount constructs the actual finite pool of primes using the proved dyadic prime cover. Every nonzero derivative-divisor obstruction of the bounded population is avoided by at least one selected prime. Its actual size is controlled by the proved derivative-height bound on the integral unit-denominator lift. The zero-obstruction population is bounded by the proved critical-point/axis exception theorem. The union and residue sums therefore count the complete original signed population under two explicit numerical comparisons.
+
+AffineDeterminantDegreeChoice constructs the auxiliary rectangle. With J=b-1, k=(A+1)*b and v=k*(k-1)/2, the exact row weight W satisfies W<=(1/b+epsilon/2)*v. This uses 2W=k*(A+J), not the largest row weight. The prime scale and avoidance power are then chosen internally, and the finite-prime count yields the global stated bound. The explicit height(G)^epsilon factor is retained; no coefficient-height-free1/D theorem is asserted at this checkpoint.
+
+Absorbing fixed polynomial coefficient height, changing coordinates to full outer degree, and removing original coefficient restrictions are the next obligations for the coefficient-uniform fixed-total-degree exponent1/D+epsilon. The stronger D-uniform logarithmic BCN theorem and original all-dimensional main13.4 remain open. No original numbered result is promoted.
+
+P1-MATH-0400 adds four modules, six theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records398 improvements and two statement-scope corrections. No new axiom, unproved counting premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15731 jobs); direct axiom audit passed for 14567 declarations using only propext, Classical.choice and Quot.sound; all 13904 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.26 GiB.

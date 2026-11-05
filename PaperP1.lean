@@ -3576,3 +3576,7 @@ public import PaperP1.Asymptotics.NonlinearPlaneDegreeCap
 public import PaperP1.Diophantine.AffineMonomialDeterminant
 public import PaperP1.Diophantine.AffineSmoothClassAuxiliary
 public import PaperP1.Diophantine.AffineSmoothClassPointCount
+public import PaperP1.Analysis.AffineDeterminantDegreeChoice
+public import PaperP1.Diophantine.AffineSmoothResidueClasses
+public import PaperP1.Diophantine.FinitePrimeAffineCount
+public import PaperP1.Diophantine.GeometricAffinePointCount

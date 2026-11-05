@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**397 mathematical improvements and two statement-scope corrections are confirmed.**
+**398 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24667,3 +24667,20 @@ This checkpoint proves the exact weighted local method. The global prime selecti
 P1-MATH-0399 adds three modules, nine theorems and three definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records397 improvements and two statement-scope corrections. No new axiom, external counting premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15723 jobs); direct axiom audit passed for 14561 declarations using only propext, Classical.choice and Quot.sound; all 13897 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.28 GiB.
+
+
+## Global affine integer counts at the fixed-bidegree exponent 1 over b
+
+GeometricAffinePointCount.finite_count proves a global count for actual finite signed integer populations on geometric integer plane curves of fixed bidegrees a>0 and b>=2: cardinality<=K(a,b,epsilon)*B^(1/b+epsilon)*height(G)^epsilon when both coordinates are bounded by B>=1. The constant precedes every original equation and actual population. Both signs, all axis points and all critical points are included. No prime supply, smooth-class count, auxiliary equation or geometric covering property is supplied externally.
+
+AffineSmoothResidueClasses sums the actual smooth residue classes proved in checkpoint399. The number of occupied residue classes is bounded by the internally proved finite-field curve count, and each class is bounded using its actual auxiliary equation and plane intersection. This gives (degreeX G+degreeY G)^2*(A+J)*p for the actual good population at a fixed prime.
+
+FinitePrimeAffineCount constructs the actual finite pool of primes using the proved dyadic prime cover. Every nonzero derivative-divisor obstruction of the bounded population is avoided by at least one selected prime. Its actual size is controlled by the proved derivative-height bound on the integral unit-denominator lift. The zero-obstruction population is bounded by the proved critical-point/axis exception theorem. The union and residue sums therefore count the complete original signed population under two explicit numerical comparisons.
+
+AffineDeterminantDegreeChoice constructs the auxiliary rectangle. With J=b-1, k=(A+1)*b and v=k*(k-1)/2, the exact row weight W satisfies W<=(1/b+epsilon/2)*v. This uses 2W=k*(A+J), not the largest row weight. The prime scale and avoidance power are then chosen internally, and the finite-prime count yields the global stated bound. The explicit height(G)^epsilon factor is retained; no coefficient-height-free1/D theorem is asserted at this checkpoint.
+
+Absorbing fixed polynomial coefficient height, changing coordinates to full outer degree, and removing original coefficient restrictions are the next obligations for the coefficient-uniform fixed-total-degree exponent1/D+epsilon. The stronger D-uniform logarithmic BCN theorem and original all-dimensional main13.4 remain open. No original numbered result is promoted.
+
+P1-MATH-0400 adds four modules, six theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records398 improvements and two statement-scope corrections. No new axiom, unproved counting premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15731 jobs); direct axiom audit passed for 14567 declarations using only propext, Classical.choice and Quot.sound; all 13904 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.26 GiB.

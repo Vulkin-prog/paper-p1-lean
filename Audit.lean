@@ -2363,6 +2363,8 @@ import PaperP1
 #print axioms PaperP1.AdjacentSquarefreeBudget.odd_uniform_sum
 #print axioms PaperP1.AdjacentSquarefreeBudget.modulus_positive
 #print axioms PaperP1.AdjacentSquarefreeBudget.modulus_reciprocal_sum
+#print axioms PaperP1.AffineDeterminantDegreeChoice.exists_auxiliary_degree
+#print axioms PaperP1.AffineDeterminantDegreeChoice.determinant_small
 #print axioms PaperP1.AnchoredCostNormalization.main_lower
 #print axioms PaperP1.AnchoredCostNormalization.with_errors
 #print axioms PaperP1.BanachExponentialRemainder.norm_term_le
@@ -10218,6 +10220,8 @@ import PaperP1
 #print axioms PaperP1.AffineSmoothClassAuxiliary.exists_auxiliary
 #print axioms PaperP1.AffineSmoothClassPointCount.common_points_card
 #print axioms PaperP1.AffineSmoothClassPointCount.smooth_class_card
+#print axioms PaperP1.AffineSmoothResidueClasses.residue_image_card
+#print axioms PaperP1.AffineSmoothResidueClasses.fixed_prime_count
 #print axioms PaperP1.BidegreeOneCurveCount.integer_box_floor
 #print axioms PaperP1.BidegreeOneCurveCount.mem_realSolutions
 #print axioms PaperP1.BidegreeOneCurveCount.integer_coefficient_bound
@@ -10305,6 +10309,7 @@ import PaperP1
 #print axioms PaperP1.FiniteFieldPlaneZeroBound.plane_card
 #print axioms PaperP1.FiniteFieldPlaneZeroBound.coefficient_map_degree_le
 #print axioms PaperP1.FiniteFieldPlaneZeroBound.smooth_integer_classes_card
+#print axioms PaperP1.FinitePrimeAffineCount.bounded_count
 #print axioms PaperP1.FinitePrimeBiformCount.bounded_count
 #print axioms PaperP1.FinitePrimeBiformCount.unrestricted_second_pair_count
 #print axioms PaperP1.FourChartEquations.family_homogeneous
@@ -10346,6 +10351,7 @@ import PaperP1
 #print axioms PaperP1.PellInput.scaleImag_height
 #print axioms PaperP1.PellInput.exists_squarefree_reduction
 #print axioms PaperP1.PellInput.hasAtMostSolutionsReal_of_squarefree_reduction
+#print axioms PaperP1.GeometricAffinePointCount.finite_count
 #print axioms PaperP1.GeometricBiformCoarseCount.finite_count
 #print axioms PaperP1.GeometricBiformCoarseCount.bounded_first_projection
 #print axioms PaperP1.GeometricBiformCoarseCount.coarse_real_count
