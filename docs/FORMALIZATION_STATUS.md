@@ -1,5 +1,7 @@
 # Formalization status
 
+P1-MATH-0540 proves the actual projective curve model has positive integer degree and that every nonzero homogeneous degree-e section has eventual quotient-piece dimension e*degree. Actual section point incidence and controlled higher-dimensional projection remain separate. Complete main13.5 is already unconditional.
+
 P1-MATH-0539 proves the exact real-height quadratic plane input with logarithmic exponent17 and complete unconditional main13.5. Coverage is162 proved,2 conditional and3 in_progress; the full all-dimensional main13.4 remains separate.
 
 Stage: **main optimal scalar-law conclusions proved; five geometric/census or literal-correction obligations remain**, 5 November 2026.
@@ -110,7 +112,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records537 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records538 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -229,7 +231,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16052 audited theorem/lemma declarations**. This
+- The project currently has **16059 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27847,3 +27849,20 @@ Main13.5 is therefore proved in its complete original scope, with the explicit a
 P1-MATH-0539 adds two modules and five theorems, with no new definition. Main13.5 moves from conditional to proved. Coverage becomes 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed: 72 main and 90 companion results are proved. The project records 537 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16869 jobs); direct axiom audit passed for 16052 declarations using only propext, Classical.choice and Quot.sound; all 15631 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.50 GiB.
+
+
+## Intrinsic integer curve degree and actual homogeneous section dimensions
+
+IntegerLinearHilbertSlope proves that an actual integer-valued function with an eventually positive affine rational formula has a positive integer slope. The integer is constructed from two consecutive actual values, and every later actual successor difference equals that integer.
+
+ProjectiveCurveHilbertDegree applies this argument to the actual homogeneous quotient pieces of every ProjectiveCurveData.Curve. The curve's stored positive rational degree is proved to equal one positive natural number. The canonical natDegree, its positivity, its exact rational cast and the eventual Hilbert-function increment are internal; degree integrality is not added to the curve data as a new premise.
+
+GradedLinearHilbertSection proves the actual section dimension for any graded domain whose genuine homogeneous pieces have a positive linear Hilbert polynomial d*n+b. For every actual nonzero homogeneous element of degree e, the quotient by that element has homogeneous-piece dimension exactly e*d in every sufficiently high degree. The required finite-dimensional source piece is internally derived from the positive actual Hilbert value, rather than being supplied as an extra all-pieces finiteness assumption. The proof uses the actual injective multiplication map, actual principal quotient map and their exact rank identity.
+
+ProjectiveCurveHilbertDegree.section_dimension supplies this result to the actual quotient ring of an arbitrary homogeneous prime curve ideal. For an actual homogeneous polynomial f of degree e outside the ideal, the homogeneous section ring (A/I)/(f) has eventual dimension e*natDegree(curve). Primality, quotient nonvanishing, the genuine quotient grading and the exact Hilbert polynomial are all taken from the actual curve and constructed maps. No intersection point count, plane projection or normalized-curve target bound is assumed.
+
+This supplies intrinsic integer degree and the exact algebraic section budget needed for the remaining higher-dimensional curve presentation. Passing from section dimension to actual point incidence and constructing controlled projections remain separate. Main13.4 and companionT1.7/T19.17 remain unresolved; complete main13.5 stays internally proved.
+
+P1-MATH-0540 adds three modules, seven theorems and one definition. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 538 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16875 jobs); direct axiom audit passed for 16059 declarations using only propext, Classical.choice and Quot.sound; all 15639 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.81 GiB.

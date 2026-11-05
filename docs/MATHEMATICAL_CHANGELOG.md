@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**537 mathematical improvements and two statement-scope corrections are confirmed.**
+**538 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26971,3 +26971,20 @@ Main13.5 is therefore proved in its complete original scope, with the explicit a
 P1-MATH-0539 adds two modules and five theorems, with no new definition. Main13.5 moves from conditional to proved. Coverage becomes 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed: 72 main and 90 companion results are proved. The project records 537 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16869 jobs); direct axiom audit passed for 16052 declarations using only propext, Classical.choice and Quot.sound; all 15631 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.50 GiB.
+
+
+## Intrinsic integer curve degree and actual homogeneous section dimensions
+
+IntegerLinearHilbertSlope proves that an actual integer-valued function with an eventually positive affine rational formula has a positive integer slope. The integer is constructed from two consecutive actual values, and every later actual successor difference equals that integer.
+
+ProjectiveCurveHilbertDegree applies this argument to the actual homogeneous quotient pieces of every ProjectiveCurveData.Curve. The curve's stored positive rational degree is proved to equal one positive natural number. The canonical natDegree, its positivity, its exact rational cast and the eventual Hilbert-function increment are internal; degree integrality is not added to the curve data as a new premise.
+
+GradedLinearHilbertSection proves the actual section dimension for any graded domain whose genuine homogeneous pieces have a positive linear Hilbert polynomial d*n+b. For every actual nonzero homogeneous element of degree e, the quotient by that element has homogeneous-piece dimension exactly e*d in every sufficiently high degree. The required finite-dimensional source piece is internally derived from the positive actual Hilbert value, rather than being supplied as an extra all-pieces finiteness assumption. The proof uses the actual injective multiplication map, actual principal quotient map and their exact rank identity.
+
+ProjectiveCurveHilbertDegree.section_dimension supplies this result to the actual quotient ring of an arbitrary homogeneous prime curve ideal. For an actual homogeneous polynomial f of degree e outside the ideal, the homogeneous section ring (A/I)/(f) has eventual dimension e*natDegree(curve). Primality, quotient nonvanishing, the genuine quotient grading and the exact Hilbert polynomial are all taken from the actual curve and constructed maps. No intersection point count, plane projection or normalized-curve target bound is assumed.
+
+This supplies intrinsic integer degree and the exact algebraic section budget needed for the remaining higher-dimensional curve presentation. Passing from section dimension to actual point incidence and constructing controlled projections remain separate. Main13.4 and companionT1.7/T19.17 remain unresolved; complete main13.5 stays internally proved.
+
+P1-MATH-0540 adds three modules, seven theorems and one definition. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 538 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16875 jobs); direct axiom audit passed for 16059 declarations using only propext, Classical.choice and Quot.sound; all 15639 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.81 GiB.

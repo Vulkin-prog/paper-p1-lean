@@ -1,5 +1,7 @@
 # External mathematical inputs
 
+P1-MATH-0540 proves the actual projective curve model has positive integer degree and that every nonzero homogeneous degree-e section has eventual quotient-piece dimension e*degree. Actual section point incidence and controlled higher-dimensional projection remain separate. Complete main13.5 is already unconditional.
+
 P1-MATH-0539 proves the exact real-height quadratic plane input with logarithmic exponent17 and complete unconditional main13.5. Coverage is162 proved,2 conditional and3 in_progress; the full all-dimensional main13.4 remains separate.
 
 Current canonical update P1-MATH-0520: the sharp-degree real-analytic route has internal classical Chebyshev/Polya, polynomial and scaled tangent Wronskians, local restriction independence, finite Bezout, monomial reconstruction and genuine exceptional sets. Both normalized graph orientations have actual ODE charts, exact rational derivative formulas, controlled signs, unit slope/distance bounds and explicit interior higher derivative estimates. Actual affine unit-jet maps and strict every-polynomial normalized graph counts are internal. A genuine common finite set of size at mostD^2*(30(r+2)^2+3(k+1)^6) now yields injective C-infinity local maps with unit jets, a positive affine original coordinate and simultaneous below-monomial-size zero counts, chosen before all tested polynomials and point populations. Controlled global map/component counts, whole-component graph coverage, the final quadratic-degree plane count and higher-dimensional projection remain open. Generic plane counting staysC*D^3*(log2N+1)^2*N^(1/D), with fulla<1/3 range. FullBCN/13.5, fullT1.7 general/typed geometry andT19.17 remain unresolved; denseT1.7 and all main optimal scalar laws are internal. Literal falseT1.10/T5.1 retain checked corrected replacements. Coverage stays161 proved,3 conditional and3 in_progress; no Palomar registration is claimed. The external BCN recurrence sign typo is tracked separately in LITERATURE_ERRATA.md. Earlier updates are historical. Capped-weight real determinant inequalities and actual local Taylor remainder bounds are now internal; the concrete function-evaluation representation and short-interval determinant application remain separate.
@@ -28342,3 +28344,22 @@ projection/presentation, with proved degree, coordinate-height and fibre
 control on the original integer populations. No abstract implication
 assuming those missing geometric properties is counted as a proof of the
 all-dimensional source theorem. No new axiom or input theorem is introduced.
+
+
+## Intrinsic integer curve degree and actual homogeneous section dimensions
+
+Stable ID: p1:internal:projective-curve-integer-degree-and-sections. Intrinsic integer degree and actual homogeneous section dimensions are internal for the projective curve model. No plane projection or curve-count target is assumed.
+
+IntegerLinearHilbertSlope proves that an actual integer-valued function with an eventually positive affine rational formula has a positive integer slope. The integer is constructed from two consecutive actual values, and every later actual successor difference equals that integer.
+
+ProjectiveCurveHilbertDegree applies this argument to the actual homogeneous quotient pieces of every ProjectiveCurveData.Curve. The curve's stored positive rational degree is proved to equal one positive natural number. The canonical natDegree, its positivity, its exact rational cast and the eventual Hilbert-function increment are internal; degree integrality is not added to the curve data as a new premise.
+
+GradedLinearHilbertSection proves the actual section dimension for any graded domain whose genuine homogeneous pieces have a positive linear Hilbert polynomial d*n+b. For every actual nonzero homogeneous element of degree e, the quotient by that element has homogeneous-piece dimension exactly e*d in every sufficiently high degree. The required finite-dimensional source piece is internally derived from the positive actual Hilbert value, rather than being supplied as an extra all-pieces finiteness assumption. The proof uses the actual injective multiplication map, actual principal quotient map and their exact rank identity.
+
+ProjectiveCurveHilbertDegree.section_dimension supplies this result to the actual quotient ring of an arbitrary homogeneous prime curve ideal. For an actual homogeneous polynomial f of degree e outside the ideal, the homogeneous section ring (A/I)/(f) has eventual dimension e*natDegree(curve). Primality, quotient nonvanishing, the genuine quotient grading and the exact Hilbert polynomial are all taken from the actual curve and constructed maps. No intersection point count, plane projection or normalized-curve target bound is assumed.
+
+This supplies intrinsic integer degree and the exact algebraic section budget needed for the remaining higher-dimensional curve presentation. Passing from section dimension to actual point incidence and constructing controlled projections remain separate. Main13.4 and companionT1.7/T19.17 remain unresolved; complete main13.5 stays internally proved.
+
+P1-MATH-0540 adds three modules, seven theorems and one definition. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 538 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16875 jobs); direct axiom audit passed for 16059 declarations using only propext, Classical.choice and Quot.sound; all 15639 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.81 GiB.

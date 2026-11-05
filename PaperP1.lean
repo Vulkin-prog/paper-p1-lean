@@ -4126,3 +4126,6 @@ public import PaperP1.Arithmetic.QuadraticDegreeUniformRealCount
 public import PaperP1.Arithmetic.RationalRealPlaneTransport
 public import PaperP1.Arithmetic.QuadraticPlaneUniformBound
 public import PaperP1.Asymptotics.QuadraticGrowingDegreePlaneCount
+public import PaperP1.Algebra.GradedLinearHilbertSection
+public import PaperP1.Algebra.IntegerLinearHilbertSlope
+public import PaperP1.Geometry.ProjectiveCurveHilbertDegree

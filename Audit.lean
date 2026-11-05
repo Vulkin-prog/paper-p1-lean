@@ -1143,6 +1143,7 @@ import PaperP1
 #print axioms PaperP1.GradedInjectiveChartMap.away_map_injective
 #print axioms PaperP1.GradedIrrelevantMap.map_le
 #print axioms PaperP1.GradedIrrelevantMap.map_eq
+#print axioms PaperP1.GradedLinearHilbertSection.eventual_dimension
 #print axioms PaperP1.GradedModulePieceMap.map_val
 #print axioms PaperP1.GradedModulePieceMap.homogeneous_representation
 #print axioms PaperP1.GradedModulePieceMap.map_surjective
@@ -1438,6 +1439,7 @@ import PaperP1
 #print axioms PaperP1.IntegerGraphEquation.denominator_nonvanishing
 #print axioms PaperP1.IntegerGraphEquation.reduced_point
 #print axioms PaperP1.IntegerGraphEquation.reduced_degree_le
+#print axioms PaperP1.IntegerLinearHilbertSlope.slope_and_increment
 #print axioms PaperP1.IntegerOverlapRoot.exists_root
 #print axioms PaperP1.IntegerPlaneShear.outer_variable
 #print axioms PaperP1.IntegerPlaneShear.inner_variable
@@ -12272,6 +12274,11 @@ import PaperP1
 #print axioms PaperP1.ProjSurjectiveClosedImmersion.restriction_closedImmersion
 #print axioms PaperP1.ProjSurjectiveClosedImmersion.map_closedImmersion
 #print axioms PaperP1.ProjectiveCurveData.degree_unique
+#print axioms PaperP1.ProjectiveCurveHilbertDegree.exists_nat_degree
+#print axioms PaperP1.ProjectiveCurveHilbertDegree.natDegree_pos
+#print axioms PaperP1.ProjectiveCurveHilbertDegree.natDegree_cast
+#print axioms PaperP1.ProjectiveCurveHilbertDegree.eventual_increment
+#print axioms PaperP1.ProjectiveCurveHilbertDegree.section_dimension
 #print axioms PaperP1.SourceAffineCurveDegreeBound.multiplicity_ge_twoD
 #print axioms PaperP1.SourceCurveAffineRadicalCover.chartEquiv_radicand
 #print axioms PaperP1.SourceCurveAffineRadicalCover.exists_cover

@@ -26149,6 +26149,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "fb6903b4fd2e9822241f976b78cd34013a59d67d"
+    },
+    {
+      "id": "P1-MATH-0540",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The actual projective curve model stored a positive rational Hilbert slope, but its intrinsic positive integer degree and the exact actual homogeneous section dimension had not been proved generically.",
+      "finding": "Every actual projective curve has an internally derived positive natural degree, and every nonzero degree-e homogeneous section has eventual actual quotient-piece dimension e*degree.",
+      "proposed_revision": "Use the internally proved intrinsic integer degree and actual section dimension in the higher-dimensional projection argument. Keep the point-incidence and controlled-projection steps explicit.",
+      "impact": "Closes foundational degree-integrality and homogeneous-section dimension obligations for the actual curve-ideal model without supplying an intersection or point-count estimate.",
+      "evidence": [
+        "PaperP1.GradedLinearHilbertSection.eventual_dimension",
+        "PaperP1.IntegerLinearHilbertSlope.slope_and_increment",
+        "PaperP1.ProjectiveCurveHilbertDegree.exists_nat_degree",
+        "PaperP1.ProjectiveCurveHilbertDegree.natDegree_pos",
+        "PaperP1.ProjectiveCurveHilbertDegree.natDegree_cast",
+        "PaperP1.ProjectiveCurveHilbertDegree.eventual_increment",
+        "PaperP1.ProjectiveCurveHilbertDegree.section_dimension",
+        "PaperP1.ProjectiveCurveHilbertDegree.natDegree"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16875 jobs); direct axiom audit passed for 16059 declarations using only propext, Classical.choice and Quot.sound; all 15639 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.81 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
