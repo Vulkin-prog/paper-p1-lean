@@ -2618,6 +2618,12 @@ import PaperP1
 #print axioms PaperP1.ContractiveExponentialProducts.norm_exponentialProduct_le_one
 #print axioms PaperP1.ContractiveExponentialProducts.norm_first_order_le
 #print axioms PaperP1.ContractiveExponentialProducts.norm_quadratic_error_le
+#print axioms PaperP1.ControlledGraphParameterPopulation.coordinate_monotonicity
+#print axioms PaperP1.ControlledGraphParameterPopulation.box_between
+#print axioms PaperP1.ControlledGraphParameterPopulation.parameter_of_point
+#print axioms PaperP1.ControlledGraphParameterPopulation.pointMap_injective
+#print axioms PaperP1.ControlledGraphParameterPopulation.finite_parameter_population
+#print axioms PaperP1.ControlledGraphTrimmedPopulation.exists_trimmed_population
 #print axioms PaperP1.ControlledNormalizedCharts.exists_first
 #print axioms PaperP1.ControlledNormalizedCharts.exists_second
 #print axioms PaperP1.ControlledNormalizedCharts.exists_at_nonexceptional
@@ -3008,6 +3014,9 @@ import PaperP1
 #print axioms PaperP1.NonstationaryTangentImage.equation_zero
 #print axioms PaperP1.NormalizedGraphFiniteAvoidance.exists_first
 #print axioms PaperP1.NormalizedGraphFiniteAvoidance.exists_second
+#print axioms PaperP1.NormalizedGridSpacing.integer_gap
+#print axioms PaperP1.NormalizedGridSpacing.separation
+#print axioms PaperP1.NormalizedGridSpacing.trimmed_population
 #print axioms PaperP1.NormalizedScaledTangent.first_trajectory
 #print axioms PaperP1.NormalizedScaledTangent.second_trajectory
 #print axioms PaperP1.NormalizedScaledTangent.second_smooth

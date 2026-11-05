@@ -4079,3 +4079,6 @@ public import PaperP1.Algebra.TotalDegreeMonomialCardinality
 public import PaperP1.Analysis.LogarithmicLocalUnitMaps
 public import PaperP1.Analysis.MonomialCountingParameters
 public import PaperP1.Analysis.SimplifiedUnitMapGridCount
+public import PaperP1.Analysis.ControlledGraphParameterPopulation
+public import PaperP1.Analysis.ControlledGraphTrimmedPopulation
+public import PaperP1.Analysis.NormalizedGridSpacing

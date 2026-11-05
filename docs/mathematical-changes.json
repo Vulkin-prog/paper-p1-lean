@@ -25589,6 +25589,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "42fd1fc800b63701fe6ec23f2ab9d4b5d378e39a"
+    },
+    {
+      "id": "P1-MATH-0526",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "Per-map grid counts were available, but no actual finite-population endpoint trimming, exact parameter cardinality transport or intermediate bounded-box bridge had been proved for a supplied controlled graph piece.",
+      "finding": "Actual integer spacing and controlled graph monotonicity yield full grid-step endpoint margins after a loss of at most two points, while preserving exact parameter counts and bounded intermediate curve values.",
+      "proposed_revision": "Use the finite-population grid-step trimming and actual intermediate box bounds to build a height-dependent dyadic affine cover of each genuine controlled graph piece.",
+      "impact": "Closes exact parameter-population transport, intermediate box control and endpoint trimming. Dyadic affine cover construction, whole-component graph coverage and global piece counts remain separate.",
+      "evidence": [
+        "PaperP1.ControlledGraphParameterPopulation.coordinate_monotonicity",
+        "PaperP1.ControlledGraphParameterPopulation.box_between",
+        "PaperP1.ControlledGraphParameterPopulation.parameter_of_point",
+        "PaperP1.ControlledGraphParameterPopulation.pointMap_injective",
+        "PaperP1.ControlledGraphParameterPopulation.finite_parameter_population",
+        "PaperP1.ControlledGraphTrimmedPopulation.exists_trimmed_population",
+        "PaperP1.NormalizedGridSpacing.integer_gap",
+        "PaperP1.NormalizedGridSpacing.separation",
+        "PaperP1.NormalizedGridSpacing.trimmed_population"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16781 jobs); direct axiom audit passed for 15911 declarations using only propext, Classical.choice and Quot.sound; all 15458 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.79 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

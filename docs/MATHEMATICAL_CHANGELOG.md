@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**523 mathematical improvements and two statement-scope corrections are confirmed.**
+**524 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26759,3 +26759,18 @@ A quantitative bound per actual local map does not bound the number of maps cove
 P1-MATH-0525 adds four modules, nine theorems and two definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 523 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16775 jobs); direct axiom audit passed for 15902 declarations using only propext, Classical.choice and Quot.sound; all 15449 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.81 GiB.
+
+
+## Exact controlled graph populations and grid-step endpoint margins
+
+NormalizedGridSpacing proves the actual normalized integer-grid separation: two distinct ordered values m/N<n/N differ by at least 1/N for every positive natural scale N. For every nonempty finite population on that actual grid, the proof selects its actual minimum and maximum, removes those two points, and constructs a remaining population with cardinality loss at most two. Every remaining value has a full 1/N margin from both selected endpoints. Singleton and coincident endpoint cases are retained without an artificial positive-width assumption.
+
+ControlledGraphParameterPopulation proves monotonicity or antitonicity of each actual coordinate on any supplied controlled unit-slope graph piece whose derivative signs include order one. It follows that actual coordinate magnitudes between two bounded points remain at most one throughout the entire intermediate closed parameter interval. Normalization recovers the actual parameter of every point in the graph image, and the actual point map is injective on its domain. The finite image population is converted into its genuine independent-coordinate parameter set with exactly the same cardinality; actual domain membership, bounded values, membership back in the original point set and integer-grid parameter representation are retained.
+
+ControlledGraphTrimmedPopulation combines these exact constructions. From any nonempty finite normalized grid population in the bounded image of an actual controlled graph piece, it internally selects two actual endpoint parameters and a trimmed real parameter population. At most two original points are lost, every retained parameter has a full grid-step margin from each endpoint, every retained graph point belongs to the original population, and all coordinate values on the full intervening interval remain in the unit box. No endpoint separation, auxiliary interval or intermediate box bound is assumed.
+
+These are the actual finite-population ingredients for a grid-height-dependent dyadic affine cover of a supplied graph piece. They do not yet construct that cover or count its members. The earlier internally constructed local unit maps and their polynomial-logarithmic full-image counts remain available. Whole-component graph coverage, controlled global curve/component piece counts, the final sharp plane estimate and higher-dimensional projection remain separate. Full main13.4/13.5 remain unresolved; the generic plane theorem stays cubic with full a<1/3 range.
+
+P1-MATH-0526 adds three modules and nine theorems. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 524 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16781 jobs); direct axiom audit passed for 15911 declarations using only propext, Classical.choice and Quot.sound; all 15458 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.79 GiB.
