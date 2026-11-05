@@ -1,5 +1,7 @@
 # Formalization status
 
+P1-MATH-0535 proves the actual first-orientation regular component-family bound E.card+D*(2*D+4), including constructed closure minima, complete endpoint classification and regular exceptional-point incidence. Second-orientation transport and global grid assembly remain separate.
+
 P1-MATH-0534 proves the actual quadratic barrier budget D*(2*D+4) for disjoint preconnected curve populations with positive anchors and zero-barrier closure endpoints. Actual regular-component endpoint selection, classification and exceptional-point incidence remain separate.
 
 Stage: **main optimal scalar-law conclusions proved; six geometric/census or literal-correction obligations remain**, 5 November 2026.
@@ -110,7 +112,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records532 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records533 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -229,7 +231,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15993 audited theorem/lemma declarations**. This
+- The project currently has **16004 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27770,3 +27772,20 @@ This is the quadratic budget for the singular-or-boundary endpoint class. Select
 P1-MATH-0534 adds three modules, eleven theorems and two definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 532 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16831 jobs); direct axiom audit passed for 15993 declarations using only propext, Classical.choice and Quot.sound; all 15565 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.63 GiB.
+
+
+## Actual minimum ends and quadratic first-orientation component families
+
+CompactCurvePopulationEnds proves that a bounded real plane curve population has compact closure and an actual minimum for either coordinate. The curve equation, closed unit-box bounds and closed gradient comparison all pass to its actual closure. RegularComponentMinimumBoundary proves that a first-coordinate minimum in the closure of an actual first-orientation regular connected component cannot lie in its defining open regular region. Its actual local graph image meets the component by closure, lies in that same component by connectedness, and contains a point with smaller first coordinate.
+
+ControlledRegularComponentEnds constructs an actual first-coordinate minimum endpoint for each relevant component in the open unit box outside a finite exceptional set E. The gradient comparison follows from the actual anchored comparison and internal control-polynomial sign propagation. At the endpoint, either H=(Px^2+Py^2)*(1-x^2)*(1-y^2) vanishes, or the endpoint belongs to E, is strictly inside the box and has Py nonzero. This classifies actual component ends; no supplied endpoint or classification premise is used.
+
+RegularEndpointBranch constructs one genuine nonempty connected right-hand branch at a regular endpoint w in E, inside the original curve region outside E. The chart is constructed inside the box avoiding E with w erased. Its normalized coordinate makes the right-hand branch avoid w as well. Every actual component with closure endpoint w and first coordinate bounded below by w's first coordinate contains this same branch. Pairwise disjoint components therefore cannot have the same regular minimum endpoint. The regular endpoint family has size at most E.card, with no factor two needed.
+
+FirstRegularComponentFamilyBound combines this actual regular endpoint incidence with the internal common-level barrier budget for zero-H endpoints. Every finite pairwise disjoint family of actual first-orientation regular components with the smaller-slope anchor comparison has cardinality at most E.card+D*(2*D+4). A separate theorem accepts the actual component-wide gradient comparison directly, allowing coordinate transport without a new control-set invariance premise. All compactness, endpoint selection, branch incidence and singular/boundary budgets are internal. There is no Harnack or target-cardinality assumption.
+
+The second-orientation transport and finite-population assembly with the previously proved per-component grid counts remain separate. The global sharp plane theorem and higher-dimensional projection are not claimed. Full main13.4/13.5 remain unresolved; the generic global plane count stays cubic with full a<1/3 range.
+
+P1-MATH-0535 adds five modules and eleven theorems, with no new definition. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 533 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16841 jobs); direct axiom audit passed for 16004 declarations using only propext, Classical.choice and Quot.sound; all 15576 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.60 GiB.

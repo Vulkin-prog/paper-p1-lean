@@ -4107,3 +4107,8 @@ public import PaperP1.Analysis.SecondRegularCurveComponentGraphs
 public import PaperP1.Algebra.CurveComponentBarrier
 public import PaperP1.Analysis.ConnectedBarrierCrossing
 public import PaperP1.Analysis.SinkComponentFamilyBound
+public import PaperP1.Analysis.CompactCurvePopulationEnds
+public import PaperP1.Analysis.ControlledRegularComponentEnds
+public import PaperP1.Analysis.FirstRegularComponentFamilyBound
+public import PaperP1.Analysis.RegularComponentMinimumBoundary
+public import PaperP1.Analysis.RegularEndpointBranch

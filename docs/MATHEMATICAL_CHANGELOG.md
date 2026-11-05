@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**532 mathematical improvements and two statement-scope corrections are confirmed.**
+**533 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26894,3 +26894,20 @@ This is the quadratic budget for the singular-or-boundary endpoint class. Select
 P1-MATH-0534 adds three modules, eleven theorems and two definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 532 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16831 jobs); direct axiom audit passed for 15993 declarations using only propext, Classical.choice and Quot.sound; all 15565 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.63 GiB.
+
+
+## Actual minimum ends and quadratic first-orientation component families
+
+CompactCurvePopulationEnds proves that a bounded real plane curve population has compact closure and an actual minimum for either coordinate. The curve equation, closed unit-box bounds and closed gradient comparison all pass to its actual closure. RegularComponentMinimumBoundary proves that a first-coordinate minimum in the closure of an actual first-orientation regular connected component cannot lie in its defining open regular region. Its actual local graph image meets the component by closure, lies in that same component by connectedness, and contains a point with smaller first coordinate.
+
+ControlledRegularComponentEnds constructs an actual first-coordinate minimum endpoint for each relevant component in the open unit box outside a finite exceptional set E. The gradient comparison follows from the actual anchored comparison and internal control-polynomial sign propagation. At the endpoint, either H=(Px^2+Py^2)*(1-x^2)*(1-y^2) vanishes, or the endpoint belongs to E, is strictly inside the box and has Py nonzero. This classifies actual component ends; no supplied endpoint or classification premise is used.
+
+RegularEndpointBranch constructs one genuine nonempty connected right-hand branch at a regular endpoint w in E, inside the original curve region outside E. The chart is constructed inside the box avoiding E with w erased. Its normalized coordinate makes the right-hand branch avoid w as well. Every actual component with closure endpoint w and first coordinate bounded below by w's first coordinate contains this same branch. Pairwise disjoint components therefore cannot have the same regular minimum endpoint. The regular endpoint family has size at most E.card, with no factor two needed.
+
+FirstRegularComponentFamilyBound combines this actual regular endpoint incidence with the internal common-level barrier budget for zero-H endpoints. Every finite pairwise disjoint family of actual first-orientation regular components with the smaller-slope anchor comparison has cardinality at most E.card+D*(2*D+4). A separate theorem accepts the actual component-wide gradient comparison directly, allowing coordinate transport without a new control-set invariance premise. All compactness, endpoint selection, branch incidence and singular/boundary budgets are internal. There is no Harnack or target-cardinality assumption.
+
+The second-orientation transport and finite-population assembly with the previously proved per-component grid counts remain separate. The global sharp plane theorem and higher-dimensional projection are not claimed. Full main13.4/13.5 remain unresolved; the generic global plane count stays cubic with full a<1/3 range.
+
+P1-MATH-0535 adds five modules and eleven theorems, with no new definition. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 533 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16841 jobs); direct axiom audit passed for 16004 declarations using only propext, Classical.choice and Quot.sound; all 15576 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.60 GiB.

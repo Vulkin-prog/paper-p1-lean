@@ -2628,6 +2628,10 @@ import PaperP1
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le_power
 #print axioms PaperP1.CoarseSaddlePowerErrors.power_negligible
+#print axioms PaperP1.CompactCurvePopulationEnds.closure_box
+#print axioms PaperP1.CompactCurvePopulationEnds.closure_curve
+#print axioms PaperP1.CompactCurvePopulationEnds.closure_comparison
+#print axioms PaperP1.CompactCurvePopulationEnds.exists_coordinate_minimum
 #print axioms PaperP1.ConnectedBarrierCrossing.crossing
 #print axioms PaperP1.ConnectedBarrierCrossing.common_positive_level
 #print axioms PaperP1.ConnectedGraphReachability.reachable_subset
@@ -2650,6 +2654,8 @@ import PaperP1
 #print axioms PaperP1.ControlledNormalizedCharts.exists_second
 #print axioms PaperP1.ControlledNormalizedCharts.exists_at_nonexceptional
 #print axioms PaperP1.ControlledNormalizedCharts.exists_control_set_and_charts
+#print axioms PaperP1.ControlledRegularComponentEnds.exists_end_of_comparison
+#print axioms PaperP1.ControlledRegularComponentEnds.exists_controlled_end
 #print axioms PaperP1.CriticalRankMass.succ_coefficient_eventually
 #print axioms PaperP1.CriticalRankMass.rankMass_exp
 #print axioms PaperP1.CriticalRankMass.critical_rankMass_coefficient_bound
@@ -2893,6 +2899,9 @@ import PaperP1
 #print axioms PaperP1.FiniteSetAvoidingInterval.exists_interval
 #print axioms PaperP1.FiniteSquareTail.sum_bound
 #print axioms PaperP1.FiniteSquareTail.sum_bound_of_div_tail
+#print axioms PaperP1.FirstRegularComponentFamilyBound.regular_endpoint_card
+#print axioms PaperP1.FirstRegularComponentFamilyBound.card_bound_of_comparison
+#print axioms PaperP1.FirstRegularComponentFamilyBound.card_bound
 #print axioms PaperP1.GradientComparisonControl.balance_factorization
 #print axioms PaperP1.GradientComparisonControl.static_sign
 #print axioms PaperP1.GradientComparisonControl.balance_sign
@@ -3265,6 +3274,7 @@ import PaperP1
 #print axioms PaperP1.ReducedSourceParameter.uniform_parameter_threshold
 #print axioms PaperP1.ReducedSourceShiftBudget.polylog_rebase
 #print axioms PaperP1.ReducedSourceShiftBudget.shift_and_loss_bounds
+#print axioms PaperP1.RegularComponentMinimumBoundary.minimum_not_in_region
 #print axioms PaperP1.RegularComponentUnitGridCount.exists_unit_piece
 #print axioms PaperP1.RegularComponentUnitGridCount.point_count
 #print axioms PaperP1.RegularCurveComponentGraphs.exists_local_chart_in_region
@@ -3273,6 +3283,7 @@ import PaperP1
 #print axioms PaperP1.RegularCurveProjectionUniqueness.projection_locally_injective
 #print axioms PaperP1.RegularCurveProjectionUniqueness.projection_separated
 #print axioms PaperP1.RegularCurveProjectionUniqueness.unique_lifts
+#print axioms PaperP1.RegularEndpointBranch.exists_branch
 #print axioms PaperP1.RegularNormalizedCharts.exists_at_nonsingular
 #print axioms PaperP1.RegularNormalizedCharts.exists_off_singular
 #print axioms PaperP1.RelativeIntervalAxisBounds.first_axis_scale

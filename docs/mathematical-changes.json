@@ -25948,6 +25948,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "f2832050cd2649069a611e8b17930962f215dc04"
+    },
+    {
+      "id": "P1-MATH-0535",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The quadratic barrier bound required supplied closure endpoints, and the regular exceptional-point incidence and actual component classification were still missing.",
+      "finding": "Actual first-coordinate minima classify all relevant first-orientation component ends. A constructed shared right branch gives at most one regular component per exceptional endpoint, yielding the internal bound E.card+D*(2*D+4).",
+      "proposed_revision": "Replace the first-orientation global component input by the proved actual endpoint classification and common-level barrier argument. Retain second-orientation transport and global grid assembly as separate steps.",
+      "impact": "Closes the complete finite-family cardinality bound for relevant first-orientation regular components with quadratic degree dependence and no Harnack premise.",
+      "evidence": [
+        "PaperP1.CompactCurvePopulationEnds.closure_box",
+        "PaperP1.CompactCurvePopulationEnds.closure_curve",
+        "PaperP1.CompactCurvePopulationEnds.closure_comparison",
+        "PaperP1.CompactCurvePopulationEnds.exists_coordinate_minimum",
+        "PaperP1.ControlledRegularComponentEnds.exists_end_of_comparison",
+        "PaperP1.ControlledRegularComponentEnds.exists_controlled_end",
+        "PaperP1.FirstRegularComponentFamilyBound.regular_endpoint_card",
+        "PaperP1.FirstRegularComponentFamilyBound.card_bound_of_comparison",
+        "PaperP1.FirstRegularComponentFamilyBound.card_bound",
+        "PaperP1.RegularComponentMinimumBoundary.minimum_not_in_region",
+        "PaperP1.RegularEndpointBranch.exists_branch"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16841 jobs); direct axiom audit passed for 16004 declarations using only propext, Classical.choice and Quot.sound; all 15576 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.60 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
