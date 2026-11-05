@@ -30822,7 +30822,8 @@
             "PaperP1.FixedChannelFullPalm.eta_bounds"
           ]
         }
-      ]
+      ],
+      "validation_commit": "e96ef528de11c7bd90e2a877d07a685e083c411e"
     },
     {
       "label": "p1:arith:finite-family-triples",
@@ -30951,7 +30952,8 @@
             "PaperP1.FiniteHighChannelTripleMass.uniform_original"
           ]
         }
-      ]
+      ],
+      "validation_commit": "e96ef528de11c7bd90e2a877d07a685e083c411e"
     },
     {
       "label": "p1:arith:palm",
@@ -31045,7 +31047,8 @@
             "PaperP1.GoodEdgePositivePalm.uniform_mass"
           ]
         }
-      ]
+      ],
+      "validation_commit": "e96ef528de11c7bd90e2a877d07a685e083c411e"
     },
     {
       "label": "p1:fixed:curve",
