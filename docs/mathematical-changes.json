@@ -22155,6 +22155,53 @@
         "status": "not_integrated"
       },
       "validation_commit": "cd81deb8b6e3a261f27d88b56e1e4e5cf45d458e"
+    },
+    {
+      "id": "P1-MATH-0441",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:uniform:one-pair",
+        "number": "T22.5",
+        "page": 91,
+        "source": "companion_sections/uniform_appendix.tex",
+        "line": 198,
+        "statement_sha256": "646f90b04cbce156b2dd69f62580d7c8424af3ff380da04a2b70a432368afe3d"
+      },
+      "original_assumption": "The selected critical-order pair family and modified-moment pair-leakage theorem retained finite geometric inputs through the pair profile and one common exceptional event.",
+      "finding": "The internal actual pair profile closes the full selected critical-order theorem. The internal retained event and unconditional actual moments close every fixed polynomial leakage bound; a finite-cutoff/4^r-generator argument proves the complete2^r-weighted little-o and exact modified-moment decomposition.",
+      "proposed_revision": "Use the internal actual pair profile and measurable retained event. Preserve the selected-family scope, exact critical-order quantifiers, finite modified-moment identity, four distinct nonnegative deficits and the two-step little-o proof without an additional rate.",
+      "impact": "CompanionT22.5 andT22.6 become unconditional in full original scope, including the complete weighted pair leakage and all exact zero conventions. Coverage becomes133 proved,31 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.ExceptionalPolynomialMoments.uniform_fixed",
+        "PaperP1.ModifiedMomentDecomposition.uniform_deficit",
+        "PaperP1.ModifiedMomentDecomposition.companion_T22_6",
+        "PaperP1.PrincipalSelectedPairMass.amplitude_eq_beta",
+        "PaperP1.PrincipalSelectedPairMass.source_dependent",
+        "PaperP1.PrincipalSelectedPairMass.uniform_first",
+        "PaperP1.PrincipalSelectedPairMass.amplitude_upper",
+        "PaperP1.PrincipalSelectedPairMass.uniform_weighted",
+        "PaperP1.RetainedPairLeakage.pair_leakage_eq",
+        "PaperP1.RetainedPairLeakage.uniform_fixed_pair",
+        "PaperP1.RetainedPairLeakage.uniform_generator_bound",
+        "PaperP1.RetainedPairLeakageLimit.uniform_relative",
+        "PaperP1.SinglePairCriticalTheorem.mean_eq_integral",
+        "PaperP1.SinglePairCriticalTheorem.alpha_eq_variance",
+        "PaperP1.SinglePairCriticalTheorem.selected_family_positive",
+        "PaperP1.SinglePairCriticalTheorem.companion_T22_5",
+        "PaperP1.PrincipalSelectedPairMass.selected",
+        "PaperP1.PrincipalSelectedPairMass.amplitude",
+        "PaperP1.PrincipalSelectedPairMass.mean",
+        "PaperP1.PrincipalSelectedPairMass.alpha",
+        "PaperP1.PrincipalSelectedPairMass.weightedError"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16107 jobs); direct axiom audit passed for 14967 declarations using only propext, Classical.choice and Quot.sound; all 14331 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.29 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

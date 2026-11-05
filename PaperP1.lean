@@ -3762,3 +3762,9 @@ public import PaperP1.Asymptotics.ModifiedCountAllTails
 public import PaperP1.Asymptotics.NongoodPairJointMass
 public import PaperP1.Asymptotics.RetainedExceptionalEvent
 public import PaperP1.Asymptotics.TwoDependentPairJointMass
+public import PaperP1.Asymptotics.ExceptionalPolynomialMoments
+public import PaperP1.Asymptotics.ModifiedMomentDecomposition
+public import PaperP1.Asymptotics.PrincipalSelectedPairMass
+public import PaperP1.Asymptotics.RetainedPairLeakage
+public import PaperP1.Asymptotics.RetainedPairLeakageLimit
+public import PaperP1.Asymptotics.SinglePairCriticalTheorem

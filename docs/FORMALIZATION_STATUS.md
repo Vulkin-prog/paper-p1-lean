@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+CompanionT22.5/T22.6 are unconditional (P1-MATH-0441): full actual selected critical-order pair theorem, exact finite modified moments, four nonnegative deficits and complete weighted pair-leakage little-o. The selected-family and fixed-degree scopes remain explicit.
+
 CompanionT15.2/T19.3 are unconditional (P1-MATH-0440): the actual measurable retained event/direct active structure and every modified-count tail/exponential/factorial bound on one common threshold. The full unrestrictedT15.1 mass has exponent1; its separated4/3 and5/4 clauses remain conditional.
 
 CompanionT17.3/T17.4 are unconditional (P1-MATH-0439): the exact positive boundary inequality and allK<=L/4 rate, and literalN^(-2)+a_N/N Poisson--Charlier conversion with its exact beta-C2 term. The covariance comparison has a true fixed critical-band constant.
@@ -25,7 +27,7 @@ CompanionT14.1 is unconditional (P1-MATH-0431), with connected activity strength
 
 CompanionT1.8 is unconditional (P1-MATH-0430): exact dense-component to actual-rank transfer gives subpower nonaligned hosts and both printed kernel sumsN^(1+epsilon), including the full value kernel without block-parity rows.
 
-Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is131 proved,33 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
+Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is133 proved,31 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
 
 The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. The full arbitrary-source statement was subsequently discharged at P1-MATH-0429.
 
@@ -67,7 +69,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is131/167 unconditional and33 conditional (164/167 completed). The project records438 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is133/167 unconditional and31 conditional (164/167 completed). The project records439 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -186,7 +188,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14951 audited theorem/lemma declarations**. This
+- The project currently has **14967 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26155,3 +26157,20 @@ ModifiedCountAllTails restores the removed irregular starts and uses the checked
 P1-MATH-0440 adds seven modules and eleven theorems. CompanionT15.2 andT19.3 move from conditional to proved. Coverage becomes131 proved,33 conditional and3 in_progress out of167, with164 completed. The project records438 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16095 jobs); direct axiom audit passed for 14951 declarations using only propext, Classical.choice and Quot.sound; all 14310 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.34 GiB.
+
+
+## Unconditional critical selected pair theorem and complete modified moment leakage
+
+Companion CorollaryT22.5 and PropositionT22.6 now have unconditional canonical proofs of every printed conclusion. SinglePairCriticalTheorem.companion_T22_5 proves the actual selected positive good-pair family throughout the full source critical order range, its uniform fresh-envelope logarithmic estimate, exact first approximation and weighted error little-o of the nominal pair scale. ModifiedMomentDecomposition.companion_T22_6 proves the exact modified choose-moment identity at every finite original parameter, positivity of all four deficits, all small-order zero conventions, the full weighted independent deficit and pair-leakage little-o. The statements and complete proofs in companion_sections/uniform_appendix.tex lines198-335 were rechecked.
+
+PrincipalSelectedPairMass replaces the old geometric pair profile by the internally proved actual full-ground profile. The selected tuple family, unique distinguished-pair positions, true joint weights, actual mean and actual second factorial cumulant remain literal. The fresh branching and uniform critical order estimates were already internal. The resulting aggregate weighted error has exponent3/4 before comparison with the exact nominal pair scale; the final tolerance is chosen after every fixed order-cap constant and beforeN. No assertion about complete growing-order factorial moments follows from this selected family.
+
+ExceptionalPolynomialMoments uses the internally proved measurable retained exceptional event with one fixed exponent margin, together with unconditional subpower actual moments. A single event controls every prescribed polynomial degree; thresholds may depend on that fixed degree, as in the source. RetainedPairLeakage then has the internal fixed-order exponent83/120 bound and the exact4^r-weighted generator bound by a constant timesa_N.
+
+RetainedPairLeakageLimit splits the2^r-weighted sum at a finite cutoff chosen after the final tolerance. The finite part uses the actual fixed-order event moment bounds and the exact lower pair scale, while the entire remaining tail uses the4^r generator. This proves the complete uniform little-o, without introducing a polynomial rate or a fixed-order estimate at growing order.
+
+ModifiedMomentDecomposition preserves the original finite identity before any asymptotic threshold, withF_r,G_r,L'_r,H_r nonnegative and all pair terms zero below order2. The internally proved weighted independent deficit even has exponent7/6 before weakening to the printed1. No leakage or independent deficit is silently equated with another quantity. Earlier conditional declarations and their external-input history remain preserved. No general geometric property or optimal4/3 law result is promoted. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0441 adds six modules, sixteen theorems and five definitions. CompanionT22.5 andT22.6 move from conditional to proved. Coverage becomes133 proved,31 conditional and3 in_progress out of167, with164 completed. The project records439 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16107 jobs); direct axiom audit passed for 14967 declarations using only propext, Classical.choice and Quot.sound; all 14331 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.29 GiB.

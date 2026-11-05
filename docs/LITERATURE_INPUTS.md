@@ -1,5 +1,7 @@
 # External mathematical inputs
 
+Current canonical update P1-MATH-0441: the complete first-law/moment and retained/uniform results throughT22.5/T22.6 now have internal proofs. Coverage is133 proved,31 conditional,3 in_progress out of167. Discharges remain scoped to exact numbered conclusions; general geometry, sharp growing-degree BCN, separated compressed refinements and optimal full-cumulant law bounds remain separate. Earlier dated update paragraphs are historical.
+
 Current canonical update P1-MATH-0432: main15.10 and companionT14.1 have unconditional internal proofs. Main15.2 and15.5 and companionT1.8 are also unconditional. Discharges are scoped to their exact numbered conclusions; general geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate. Earlier dated update paragraphs are historical.
 
 Current update P1-MATH-0424: the weakly aligned dense-target branch above one full actual source window has internal proofs, including active nonalignment and a fresh regularization after unit erasure. The arbitrary-source version and general cover/count properties remain open.
@@ -26472,3 +26474,22 @@ ModifiedCountAllTails restores the removed irregular starts and uses the checked
 P1-MATH-0440 adds seven modules and eleven theorems. CompanionT15.2 andT19.3 move from conditional to proved. Coverage becomes131 proved,33 conditional and3 in_progress out of167, with164 completed. The project records438 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16095 jobs); direct axiom audit passed for 14951 declarations using only propext, Classical.choice and Quot.sound; all 14310 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.34 GiB.
+
+
+## Unconditional critical selected pair theorem and complete modified moment leakage
+
+Stable ID: p1:internal:unconditional-critical-pair-modified-leakage. Internal actual pair profiles and one actual exceptional event discharge these numbered uses. The selected growing-order family is not a complete moment estimate. Weighted pair leakage is proved by finite cutoff plus uniform generator, with no extra polynomial-rate claim.
+
+Companion CorollaryT22.5 and PropositionT22.6 now have unconditional canonical proofs of every printed conclusion. SinglePairCriticalTheorem.companion_T22_5 proves the actual selected positive good-pair family throughout the full source critical order range, its uniform fresh-envelope logarithmic estimate, exact first approximation and weighted error little-o of the nominal pair scale. ModifiedMomentDecomposition.companion_T22_6 proves the exact modified choose-moment identity at every finite original parameter, positivity of all four deficits, all small-order zero conventions, the full weighted independent deficit and pair-leakage little-o. The statements and complete proofs in companion_sections/uniform_appendix.tex lines198-335 were rechecked.
+
+PrincipalSelectedPairMass replaces the old geometric pair profile by the internally proved actual full-ground profile. The selected tuple family, unique distinguished-pair positions, true joint weights, actual mean and actual second factorial cumulant remain literal. The fresh branching and uniform critical order estimates were already internal. The resulting aggregate weighted error has exponent3/4 before comparison with the exact nominal pair scale; the final tolerance is chosen after every fixed order-cap constant and beforeN. No assertion about complete growing-order factorial moments follows from this selected family.
+
+ExceptionalPolynomialMoments uses the internally proved measurable retained exceptional event with one fixed exponent margin, together with unconditional subpower actual moments. A single event controls every prescribed polynomial degree; thresholds may depend on that fixed degree, as in the source. RetainedPairLeakage then has the internal fixed-order exponent83/120 bound and the exact4^r-weighted generator bound by a constant timesa_N.
+
+RetainedPairLeakageLimit splits the2^r-weighted sum at a finite cutoff chosen after the final tolerance. The finite part uses the actual fixed-order event moment bounds and the exact lower pair scale, while the entire remaining tail uses the4^r generator. This proves the complete uniform little-o, without introducing a polynomial rate or a fixed-order estimate at growing order.
+
+ModifiedMomentDecomposition preserves the original finite identity before any asymptotic threshold, withF_r,G_r,L'_r,H_r nonnegative and all pair terms zero below order2. The internally proved weighted independent deficit even has exponent7/6 before weakening to the printed1. No leakage or independent deficit is silently equated with another quantity. Earlier conditional declarations and their external-input history remain preserved. No general geometric property or optimal4/3 law result is promoted. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0441 adds six modules, sixteen theorems and five definitions. CompanionT22.5 andT22.6 move from conditional to proved. Coverage becomes133 proved,31 conditional and3 in_progress out of167, with164 completed. The project records439 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16107 jobs); direct axiom audit passed for 14967 declarations using only propext, Classical.choice and Quot.sound; all 14331 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.29 GiB.

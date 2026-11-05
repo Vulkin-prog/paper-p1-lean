@@ -38986,7 +38986,7 @@
       "source": "companion_sections/uniform_appendix.tex",
       "line": 198,
       "sha256": "646f90b04cbce156b2dd69f62580d7c8424af3ff380da04a2b70a432368afe3d",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.SelectedPairWeightedSeries.kernel_change",
         "PaperP1.SelectedPairWeightedSeries.point_bound",
@@ -39075,26 +39075,87 @@
         "PaperP1.SelectedPairBranchingTuples.mass",
         "PaperP1.SequentialRetainedWindows.next",
         "PaperP1.SequentialRetainedWindows.paths",
-        "PaperP1.SequentialRetainedWindows.mass"
+        "PaperP1.SequentialRetainedWindows.mass",
+        "PaperP1.ExceptionalPolynomialMoments.uniform_fixed",
+        "PaperP1.ModifiedMomentDecomposition.uniform_deficit",
+        "PaperP1.ModifiedMomentDecomposition.companion_T22_6",
+        "PaperP1.PrincipalSelectedPairMass.amplitude_eq_beta",
+        "PaperP1.PrincipalSelectedPairMass.source_dependent",
+        "PaperP1.PrincipalSelectedPairMass.uniform_first",
+        "PaperP1.PrincipalSelectedPairMass.amplitude_upper",
+        "PaperP1.PrincipalSelectedPairMass.uniform_weighted",
+        "PaperP1.RetainedPairLeakage.pair_leakage_eq",
+        "PaperP1.RetainedPairLeakage.uniform_fixed_pair",
+        "PaperP1.RetainedPairLeakage.uniform_generator_bound",
+        "PaperP1.RetainedPairLeakageLimit.uniform_relative",
+        "PaperP1.SinglePairCriticalTheorem.mean_eq_integral",
+        "PaperP1.SinglePairCriticalTheorem.alpha_eq_variance",
+        "PaperP1.SinglePairCriticalTheorem.selected_family_positive",
+        "PaperP1.SinglePairCriticalTheorem.companion_T22_5",
+        "PaperP1.PrincipalSelectedPairMass.selected",
+        "PaperP1.PrincipalSelectedPairMass.amplitude",
+        "PaperP1.PrincipalSelectedPairMass.mean",
+        "PaperP1.PrincipalSelectedPairMass.alpha",
+        "PaperP1.PrincipalSelectedPairMass.weightedError"
       ],
       "literature_inputs": [
-        "P1-GROWING-SINGLE-PAIR-BRANCHING",
-        "P1-GEO-NORMALIZED-CURVE-UNIFORM",
-        "P1-GEO-ORDINARY-SURFACE-COVER",
-        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER"
+        "p1:internal:unconditional-critical-pair-modified-leakage"
       ],
       "mathematical_changes": [
-        "P1-MATH-0170"
+        "P1-MATH-0170",
+        "P1-MATH-0441"
       ],
-      "notes": "CompanionT22.5 is now COMPLETE CONDITIONALLY on the existing finite\nsource/ordinary surface-cover and normalized curve-count properties.\nIts actual selected-family construction, exact pair-position multiplicity\nand first uniform growing-order formula are UNCONDITIONAL. Only the\nreplacement of the actual good-pair amplitude by the actual second\nfactorial cumulant uses the already proved conditional pair profile.\n\nSequentialBranchingPaths constructs actual fresh ordered paths with every\nchronological multiplicity retained, stored as reverse chronological lists.\nIt proves path length, no repetitions, source disjointness, exact branch\nsums, two-sided path-count powers, finite count error and exact q_e*p^k\nprobability of EACH retained path. SequentialRetainedWindows instantiates\nthe literal branching exceptions from all previously exposed raw values.\nIt excludes old centres explicitly. The actual full new relative vector\nstill has the exact independence conclusion. Every retained extension has\nzero intersection with the old effective span, so the complete actual\nsource relation kernel is preserved. A dependent initial pair is proved\nto be the UNIQUE dependent pair in every resulting original family.\n\nCriticalFreshBranchingBudget gives the common explicit envelope\nDstar(K,N)=exceptionEnvelope(K,N)+max(0,K*log N/loglog N).\nThe actual exceptional set A union badStarts(A) has cardinality at most\nDstar simultaneously for every old family of at most m<=K log N/loglog N\nwindows. CriticalFreshBranchingLog proves that adding the freshness cost\npreserves the source's precise2/3 logarithmic envelope, including its\nnegative logloglog/loglog correction. One common threshold precedes all\ncritical orders, lengths and source observations. Also m*Dstar/N is at\nmost N^(-1/3+epsilon) for every fixed epsilon>0, uniformly in that range.\n\nPairPositionEncoding places an actually ordered source in its two chosen\npositions and the chronological path in the INCREASING complementary\npositions. It proves exact support, coordinate injectivity and recovery\nof positions, source orientation and path. SelectedPairBranchingTuples\nuses these encodings to define an actual finite set of distinct original\nordered tuples. The unique-dependent-pair theorem proves the encoding\ninjective across ALL source pairs and ALL choices of two positions.\nThus its literal joint-mass sum is exactly\nchoose(k+2,2)*2*sum_e pathMass(e,k).\nThe factor2 is the two orientations of every unordered source pair, not\nan assumed convention. Every selected tuple has positive actual joint\nprobability when the source family consists of compatible good edges.\n\nCriticalSequentialPairMass and SelectedPairCriticalMass prove the full\nuniform first formula at every2<=r<=m<=K log N/loglog N, with an explicit\nrelative error at most(r-2)*Dstar/N. The stronger numerical relative power\nN^(-1/3+epsilon) holds simultaneously at ALL these growing orders. No\nfixed-order propagation theorem is extrapolated to a growing regime.\nPrincipalSelectedPairMassUnderInputs.selected is the literal actual\nselected mass B_(r,N); its amplitude is exactly A_N=2*beta_N. The private\ncutoff is allowed to vary over8(L+1)<=H<=D(L+1), covering H=8(L+1).\n\nSelectedPairWeightedSeries proves a finite factorial-weighted series\ncomparison from the actual uniform pair estimate, bounded means and\nactual amplitude/mean differences. Its exponential majorant is independent\nof the upper order m. The already proved pair profile gives\n|A_N-alpha_N|<=N^(-31/40), while the actual mean bias and actual source\nphase give the other terms. This yields the stronger uniform weighted\nerror N^(-3/4). The unconditional positive lower bound for the literal\na_N=E(Z_N)_2-lambda_N^2 then proves the printed little-o(a_N).\nThe retained mean and alpha are the EXACT original full-count mean and\nvariance-minus-mean, with explicit integral and variance bridges.\n\nSinglePairCriticalTheoremUnderInputs.companion_T22_5 assembles the\nprecise common exceptional envelope, both source assertions and ALL\ngrowing orders under one threshold. One finite geometric bundle is\nchosen BEFORE the critical-order constant K and every little-o tolerance.\nP1-MATH-0170 records the complete finite construction, uniqueness and\nstronger uniform weighted rate. No new external input or BCN assumption\nis used. The theorem concerns only its selected single-pair family and\ndoes not claim the same precision for full growing-order factorial moments.\n\nCoverage becomes88/167 unconditional and58 conditional. The project\nrecords169 improvements and one confirmed statement-scope correction.\nCompanionT1.12 andT1.17 retain their separate disjoint-two-edge obligations;\nthe main sharper41/30 activity estimates remain open. Original manuscript\nbytes, compiler and dependency pins are unchanged. Palomar remains later.\n\nEarlier checkpoint history:\n",
+      "notes": "Companion CorollaryT22.5 and PropositionT22.6 now have unconditional canonical proofs of every printed conclusion. SinglePairCriticalTheorem.companion_T22_5 proves the actual selected positive good-pair family throughout the full source critical order range, its uniform fresh-envelope logarithmic estimate, exact first approximation and weighted error little-o of the nominal pair scale. ModifiedMomentDecomposition.companion_T22_6 proves the exact modified choose-moment identity at every finite original parameter, positivity of all four deficits, all small-order zero conventions, the full weighted independent deficit and pair-leakage little-o. The statements and complete proofs in companion_sections/uniform_appendix.tex lines198-335 were rechecked.\n\nPrincipalSelectedPairMass replaces the old geometric pair profile by the internally proved actual full-ground profile. The selected tuple family, unique distinguished-pair positions, true joint weights, actual mean and actual second factorial cumulant remain literal. The fresh branching and uniform critical order estimates were already internal. The resulting aggregate weighted error has exponent3/4 before comparison with the exact nominal pair scale; the final tolerance is chosen after every fixed order-cap constant and beforeN. No assertion about complete growing-order factorial moments follows from this selected family.\n\nExceptionalPolynomialMoments uses the internally proved measurable retained exceptional event with one fixed exponent margin, together with unconditional subpower actual moments. A single event controls every prescribed polynomial degree; thresholds may depend on that fixed degree, as in the source. RetainedPairLeakage then has the internal fixed-order exponent83/120 bound and the exact4^r-weighted generator bound by a constant timesa_N.\n\nRetainedPairLeakageLimit splits the2^r-weighted sum at a finite cutoff chosen after the final tolerance. The finite part uses the actual fixed-order event moment bounds and the exact lower pair scale, while the entire remaining tail uses the4^r generator. This proves the complete uniform little-o, without introducing a polynomial rate or a fixed-order estimate at growing order.\n\nModifiedMomentDecomposition preserves the original finite identity before any asymptotic threshold, withF_r,G_r,L'_r,H_r nonnegative and all pair terms zero below order2. The internally proved weighted independent deficit even has exponent7/6 before weakening to the printed1. No leakage or independent deficit is silently equated with another quantity. Earlier conditional declarations and their external-input history remain preserved. No general geometric property or optimal4/3 law result is promoted. Original source bytes and compiler/dependency pins remain unchanged.\n\nP1-MATH-0441 adds six modules, sixteen theorems and five definitions. CompanionT22.5 andT22.6 move from conditional to proved. Coverage becomes133 proved,31 conditional and3 in_progress out of167, with164 completed. The project records439 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.\n\nEarlier checkpoint history:\nCompanionT22.5 is now COMPLETE CONDITIONALLY on the existing finite\nsource/ordinary surface-cover and normalized curve-count properties.\nIts actual selected-family construction, exact pair-position multiplicity\nand first uniform growing-order formula are UNCONDITIONAL. Only the\nreplacement of the actual good-pair amplitude by the actual second\nfactorial cumulant uses the already proved conditional pair profile.\n\nSequentialBranchingPaths constructs actual fresh ordered paths with every\nchronological multiplicity retained, stored as reverse chronological lists.\nIt proves path length, no repetitions, source disjointness, exact branch\nsums, two-sided path-count powers, finite count error and exact q_e*p^k\nprobability of EACH retained path. SequentialRetainedWindows instantiates\nthe literal branching exceptions from all previously exposed raw values.\nIt excludes old centres explicitly. The actual full new relative vector\nstill has the exact independence conclusion. Every retained extension has\nzero intersection with the old effective span, so the complete actual\nsource relation kernel is preserved. A dependent initial pair is proved\nto be the UNIQUE dependent pair in every resulting original family.\n\nCriticalFreshBranchingBudget gives the common explicit envelope\nDstar(K,N)=exceptionEnvelope(K,N)+max(0,K*log N/loglog N).\nThe actual exceptional set A union badStarts(A) has cardinality at most\nDstar simultaneously for every old family of at most m<=K log N/loglog N\nwindows. CriticalFreshBranchingLog proves that adding the freshness cost\npreserves the source's precise2/3 logarithmic envelope, including its\nnegative logloglog/loglog correction. One common threshold precedes all\ncritical orders, lengths and source observations. Also m*Dstar/N is at\nmost N^(-1/3+epsilon) for every fixed epsilon>0, uniformly in that range.\n\nPairPositionEncoding places an actually ordered source in its two chosen\npositions and the chronological path in the INCREASING complementary\npositions. It proves exact support, coordinate injectivity and recovery\nof positions, source orientation and path. SelectedPairBranchingTuples\nuses these encodings to define an actual finite set of distinct original\nordered tuples. The unique-dependent-pair theorem proves the encoding\ninjective across ALL source pairs and ALL choices of two positions.\nThus its literal joint-mass sum is exactly\nchoose(k+2,2)*2*sum_e pathMass(e,k).\nThe factor2 is the two orientations of every unordered source pair, not\nan assumed convention. Every selected tuple has positive actual joint\nprobability when the source family consists of compatible good edges.\n\nCriticalSequentialPairMass and SelectedPairCriticalMass prove the full\nuniform first formula at every2<=r<=m<=K log N/loglog N, with an explicit\nrelative error at most(r-2)*Dstar/N. The stronger numerical relative power\nN^(-1/3+epsilon) holds simultaneously at ALL these growing orders. No\nfixed-order propagation theorem is extrapolated to a growing regime.\nPrincipalSelectedPairMassUnderInputs.selected is the literal actual\nselected mass B_(r,N); its amplitude is exactly A_N=2*beta_N. The private\ncutoff is allowed to vary over8(L+1)<=H<=D(L+1), covering H=8(L+1).\n\nSelectedPairWeightedSeries proves a finite factorial-weighted series\ncomparison from the actual uniform pair estimate, bounded means and\nactual amplitude/mean differences. Its exponential majorant is independent\nof the upper order m. The already proved pair profile gives\n|A_N-alpha_N|<=N^(-31/40), while the actual mean bias and actual source\nphase give the other terms. This yields the stronger uniform weighted\nerror N^(-3/4). The unconditional positive lower bound for the literal\na_N=E(Z_N)_2-lambda_N^2 then proves the printed little-o(a_N).\nThe retained mean and alpha are the EXACT original full-count mean and\nvariance-minus-mean, with explicit integral and variance bridges.\n\nSinglePairCriticalTheoremUnderInputs.companion_T22_5 assembles the\nprecise common exceptional envelope, both source assertions and ALL\ngrowing orders under one threshold. One finite geometric bundle is\nchosen BEFORE the critical-order constant K and every little-o tolerance.\nP1-MATH-0170 records the complete finite construction, uniqueness and\nstronger uniform weighted rate. No new external input or BCN assumption\nis used. The theorem concerns only its selected single-pair family and\ndoes not claim the same precision for full growing-order factorial moments.\n\nCoverage becomes88/167 unconditional and58 conditional. The project\nrecords169 improvements and one confirmed statement-scope correction.\nCompanionT1.12 andT1.17 retain their separate disjoint-two-edge obligations;\nthe main sharper41/30 activity estimates remain open. Original manuscript\nbytes, compiler and dependency pins are unchanged. Palomar remains later.\n\nEarlier checkpoint history:\n",
       "validation_history": [
         {
           "status": "not_started",
           "literature_inputs": []
+        },
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (14505 jobs); direct axiom audit passed for 12066 declarations using only propext, Classical.choice and Quot.sound; all 10810 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.47 GiB.",
+          "validation_commit": "82d96ccae2a8a12e3b66c6496845a29d644f0ae1",
+          "literature_inputs": [
+            "P1-GROWING-SINGLE-PAIR-BRANCHING",
+            "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+            "P1-GEO-ORDINARY-SURFACE-COVER",
+            "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER"
+          ]
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14505 jobs); direct axiom audit passed for 12066 declarations using only propext, Classical.choice and Quot.sound; all 10810 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.47 GiB.",
-      "validation_commit": "82d96ccae2a8a12e3b66c6496845a29d644f0ae1"
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16107 jobs); direct axiom audit passed for 14967 declarations using only propext, Classical.choice and Quot.sound; all 14331 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.29 GiB.",
+      "canonical_statement": "PaperP1.SinglePairCriticalTheorem.companion_T22_5",
+      "canonical_additional_statements": [
+        "PaperP1.PrincipalSelectedPairMass.uniform_first",
+        "PaperP1.PrincipalSelectedPairMass.uniform_weighted"
+      ],
+      "remaining_unformalized_inputs": [],
+      "input_discharges": [
+        {
+          "input": "P1-GROWING-SINGLE-PAIR-BRANCHING",
+          "proof": "PaperP1.SinglePairCriticalTheorem.companion_T22_5",
+          "scope": "Complete exact companionT22.5 conclusions: actual selected critical-order family or finite modified identity/all deficits/weighted leakage little-o. Internal actual pair profile and retained event; no general input property or complete growing-order moment theorem asserted.",
+          "checkpoint": "P1-MATH-0441"
+        },
+        {
+          "input": "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+          "proof": "PaperP1.SinglePairCriticalTheorem.companion_T22_5",
+          "scope": "Complete exact companionT22.5 conclusions: actual selected critical-order family or finite modified identity/all deficits/weighted leakage little-o. Internal actual pair profile and retained event; no general input property or complete growing-order moment theorem asserted.",
+          "checkpoint": "P1-MATH-0441"
+        },
+        {
+          "input": "P1-GEO-ORDINARY-SURFACE-COVER",
+          "proof": "PaperP1.SinglePairCriticalTheorem.companion_T22_5",
+          "scope": "Complete exact companionT22.5 conclusions: actual selected critical-order family or finite modified identity/all deficits/weighted leakage little-o. Internal actual pair profile and retained event; no general input property or complete growing-order moment theorem asserted.",
+          "checkpoint": "P1-MATH-0441"
+        },
+        {
+          "input": "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+          "proof": "PaperP1.SinglePairCriticalTheorem.companion_T22_5",
+          "scope": "Complete exact companionT22.5 conclusions: actual selected critical-order family or finite modified identity/all deficits/weighted leakage little-o. Internal actual pair profile and retained event; no general input property or complete growing-order moment theorem asserted.",
+          "checkpoint": "P1-MATH-0441"
+        }
+      ]
     },
     {
       "label": "p1:uniform:modified-moments",
@@ -39106,7 +39167,7 @@
       "source": "companion_sections/uniform_appendix.tex",
       "line": 266,
       "sha256": "cf2511fff8a020bfd5a599e7579bdc4fb62b023e306a1d569fb781fbdc2d1869",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.ShiftedBinomialGenerator.finite_sum",
         "PaperP1.WeightedLeakageCutoff.weight_comparison",
@@ -39172,26 +39233,81 @@
         "PaperP1.RetainedActiveSubsetMoments.pairBinomialTerm",
         "PaperP1.RetainedPairMomentGenerator.meanSum",
         "PaperP1.RetainedPairMomentGenerator.leakageSum",
-        "PaperP1.SelectedSubsetCounts.count"
+        "PaperP1.SelectedSubsetCounts.count",
+        "PaperP1.ExceptionalPolynomialMoments.uniform_fixed",
+        "PaperP1.ModifiedMomentDecomposition.uniform_deficit",
+        "PaperP1.ModifiedMomentDecomposition.companion_T22_6",
+        "PaperP1.PrincipalSelectedPairMass.amplitude_eq_beta",
+        "PaperP1.PrincipalSelectedPairMass.source_dependent",
+        "PaperP1.PrincipalSelectedPairMass.uniform_first",
+        "PaperP1.PrincipalSelectedPairMass.amplitude_upper",
+        "PaperP1.PrincipalSelectedPairMass.uniform_weighted",
+        "PaperP1.RetainedPairLeakage.pair_leakage_eq",
+        "PaperP1.RetainedPairLeakage.uniform_fixed_pair",
+        "PaperP1.RetainedPairLeakage.uniform_generator_bound",
+        "PaperP1.RetainedPairLeakageLimit.uniform_relative",
+        "PaperP1.SinglePairCriticalTheorem.mean_eq_integral",
+        "PaperP1.SinglePairCriticalTheorem.alpha_eq_variance",
+        "PaperP1.SinglePairCriticalTheorem.selected_family_positive",
+        "PaperP1.SinglePairCriticalTheorem.companion_T22_5",
+        "PaperP1.PrincipalSelectedPairMass.selected",
+        "PaperP1.PrincipalSelectedPairMass.amplitude",
+        "PaperP1.PrincipalSelectedPairMass.mean",
+        "PaperP1.PrincipalSelectedPairMass.alpha",
+        "PaperP1.PrincipalSelectedPairMass.weightedError"
       ],
       "literature_inputs": [
-        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
-        "P1-GEO-ORDINARY-SURFACE-COVER",
-        "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+        "p1:internal:unconditional-critical-pair-modified-leakage"
       ],
       "mathematical_changes": [
-        "P1-MATH-0147"
+        "P1-MATH-0147",
+        "P1-MATH-0441"
       ],
-      "notes": "Companion T22.6 is COMPLETE CONDITIONALLY, including its exact modified\nbinomial-moment identity, nonnegativity of all four deficits, the zero\npair terms at order1, and BOTH weighted estimates. Let n=|regularStarts|,\np=2^-L and beta=sum_good q(e). With the literal actual modified count and\nthe actual exceptional event E'=nonretention, for every r>=1:\n\n  E choose(modified Z,r) = choose(n,r)*p^r -F_r -L'_r\n    +beta*choose(n-2,r-2)*p^(r-2) -G_r -H_r,\n\nwhere the last three terms are zero for r=1. F_r and G_r are exactly the\nprevious cardinality coefficients; L'_r and H_r are the actual Bochner\nexpectations, restricted to E', of the direct and compressed-pair subset\ncounts. All four are proved nonnegative. The finite identity is\nUNCONDITIONAL for N>=2,L>0 and EVERY r>=1, with no upper order restriction.\n\nRetainedSubsetCounts constructs the literal deterministic direct and\ncompressed-family counts. On ANY retained configuration their sum is\nchoose(|A|,r), by the already proved disjoint direct/pair decomposition.\nEvery source pair remains distinguished. RetainedPairCountSource.formula\nidentifies the pair count EXACTLY with sum_e 1_(e subset A) times the\nnumber of U in the source Gamma_e(r-2) contained in A minus e. Thus it is\nthe printed J_e times admissible-complement count, even on the bad event;\nit is not a replacement random variable having the same mean.\n\nSelectedSubsetCounts proves the finite activation/expectation identity\nfor any prescribed subset class. ActiveSetCylinder transports EVERY\nobservable and event of the actual active set through a finite cylinder\ncontaining all original windows. These identities give the exact direct\nand pair means, including the source Gamma counts, heterogeneous actual\njoint events and affine compatibility. The regular marginal identity\nthen yields the printed nominal powers, with F_r and G_r explicitly\nsubtracted. The modified count is literally zero on nonretention.\nIntegrating its pointwise subset-count decomposition gives the source\nidentity, including both exceptional-event leakages. No moment transfer\nor probability interpretation of a retained polynomial is assumed.\n\nThe source weighted G estimate has the stronger UNCONDITIONAL rate7/6:\n\n  sum_(r>=0) 2^r*G_r <= N^(-7/6+epsilon).\n\nThe exact finite cardinality grouping identifies this sum with the\nalready proved independent secondMass. Terms at r<2 and r>n vanish,\nso the displayed infinite series is literally the finite source sum.\nThe same convention applies to H_r: its small and large terms vanish,\nall terms are nonnegative, and the ordinary real series equals its\nfinite support sum for every N,L.\n\nExceptionalEventHolder proves the actual finite eighth-moment Holder\ninequality. ActiveSetExceptionalMoment then bounds the contribution\non nonretention of ANY nonnegative active-set observable f(A)<=|A|^j by\n\n  (E Z_G^(8j))^(1/8) * P(E')^(7/8).\n\nThe completed exceptional-event theorem at the FIXED margin1/120 gives\nP(E')<=N^(-4/5+1/120). The previously proved UNCONDITIONAL subpower\nmoment bound gives E Z_G^(8j)<=N^(1/120) for each fixed j. Thus the\nexceptional contribution is at most N^(-83/120). Its threshold is chosen\nbefore all critical L, all dyadic subgrounds G, and EVERY f satisfying\nthe pointwise bound. The SAME finite exceptional-event input bundle is\nchosen BEFORE ALL fixed degrees j. No uniformly bounded higher moments,\nBCN premise or degree-dependent geometric property is needed.\n\nFor the actual pair count, a finite combinatorial estimate gives\nP_r(A)<=|A|^(r+2). Therefore the same single input bundle proves, for\nEVERY fixed r, H_r<=N^(-83/120). The exponent83/120 exceeds2/3 by1/40;\nit is sufficient for the requested little-o. P1-MATH-0147 records this\nweaker-moment route and its stronger quantifier/input scope, not an\nimprovement over the source's fixed-order numerical exponent7/10.\n\nRetainedPairMomentGenerator proves the exact shifted-binomial generator\nbound for the UNRESTRICTED positive pair moments:\n\n  sum_(r=0..n) u^r E P_r <= u^2*beta*(1+u*p)^(n-2)\n    <=u^2*beta*exp(u*E Z_regular), for u>=0,n>=2.\n\nSince H_r<=E P_r, it also bounds every exceptional subseries.\nRetainedGoodPairScale bounds beta by a constant times the literal nominal\nsecond factorial correction a_N=E(Z_N)_2-(N*2^-L)^2, UNCONDITIONALLY.\nIt uses the homogeneous principal-channel upper bound and the existing\nunconditional positive lower bound a_N>=c_C*L*N^-2/3. Consequently the\nENTIRE4^r-weighted H sum is at most A_C*a_N, without geometric premises.\nThe actual mean cap and eventual regular cardinality>=2 are discharged.\n\nWeightedLeakageCutoff splits the2^r sum at an arbitrary fixed J. Its\nfinite part is controlled by the fixed-order rate83/120; the remaining\npart is at most2^-J times the4^r generator. Choose J after a positive\ntolerance eta, then absorb the finite constant using the gap1/40 and\nthe proved lower bound for a_N. This yields the full uniform statement:\n\n  for every eta>0, eventually for EVERY critical L,\n  sum_(r>=0) 2^r*H_r <= eta*a_N.\n\nThe SAME finite geometric bundle was chosen before eta and before every\nfixed order. No growing-order moment estimate is assumed or invoked.\nModifiedMomentDecompositionUnderInputs.companion_T22_6 assembles all\nsource clauses with this quantifier order. Its only unproved inputs are\nthe SAME three recorded geometric counting properties, through the\nexisting RetainedExceptionalEventUnderInputs.Hypotheses at1/120.\nEvery constituent finite cap is exposed in that bundle definition.\n\nThis checkpoint adds16 modules,50 theorems and15 definitions. Coverage\nis87/167 unconditional and32 conditional, with147 confirmed mathematical\nimprovements. Main1.1's optimal4/3 bound, main15.10 and main15.14 remain\nopen; the completed T22.6 does not silently discharge them. No dependency\ndownload, original manuscript-byte change, Paper C port, hidden axiom or\nPalomar registration is added.",
+      "notes": "Companion CorollaryT22.5 and PropositionT22.6 now have unconditional canonical proofs of every printed conclusion. SinglePairCriticalTheorem.companion_T22_5 proves the actual selected positive good-pair family throughout the full source critical order range, its uniform fresh-envelope logarithmic estimate, exact first approximation and weighted error little-o of the nominal pair scale. ModifiedMomentDecomposition.companion_T22_6 proves the exact modified choose-moment identity at every finite original parameter, positivity of all four deficits, all small-order zero conventions, the full weighted independent deficit and pair-leakage little-o. The statements and complete proofs in companion_sections/uniform_appendix.tex lines198-335 were rechecked.\n\nPrincipalSelectedPairMass replaces the old geometric pair profile by the internally proved actual full-ground profile. The selected tuple family, unique distinguished-pair positions, true joint weights, actual mean and actual second factorial cumulant remain literal. The fresh branching and uniform critical order estimates were already internal. The resulting aggregate weighted error has exponent3/4 before comparison with the exact nominal pair scale; the final tolerance is chosen after every fixed order-cap constant and beforeN. No assertion about complete growing-order factorial moments follows from this selected family.\n\nExceptionalPolynomialMoments uses the internally proved measurable retained exceptional event with one fixed exponent margin, together with unconditional subpower actual moments. A single event controls every prescribed polynomial degree; thresholds may depend on that fixed degree, as in the source. RetainedPairLeakage then has the internal fixed-order exponent83/120 bound and the exact4^r-weighted generator bound by a constant timesa_N.\n\nRetainedPairLeakageLimit splits the2^r-weighted sum at a finite cutoff chosen after the final tolerance. The finite part uses the actual fixed-order event moment bounds and the exact lower pair scale, while the entire remaining tail uses the4^r generator. This proves the complete uniform little-o, without introducing a polynomial rate or a fixed-order estimate at growing order.\n\nModifiedMomentDecomposition preserves the original finite identity before any asymptotic threshold, withF_r,G_r,L'_r,H_r nonnegative and all pair terms zero below order2. The internally proved weighted independent deficit even has exponent7/6 before weakening to the printed1. No leakage or independent deficit is silently equated with another quantity. Earlier conditional declarations and their external-input history remain preserved. No general geometric property or optimal4/3 law result is promoted. Original source bytes and compiler/dependency pins remain unchanged.\n\nP1-MATH-0441 adds six modules, sixteen theorems and five definitions. CompanionT22.5 andT22.6 move from conditional to proved. Coverage becomes133 proved,31 conditional and3 in_progress out of167, with164 completed. The project records439 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.\n\nEarlier checkpoint history:\nCompanion T22.6 is COMPLETE CONDITIONALLY, including its exact modified\nbinomial-moment identity, nonnegativity of all four deficits, the zero\npair terms at order1, and BOTH weighted estimates. Let n=|regularStarts|,\np=2^-L and beta=sum_good q(e). With the literal actual modified count and\nthe actual exceptional event E'=nonretention, for every r>=1:\n\n  E choose(modified Z,r) = choose(n,r)*p^r -F_r -L'_r\n    +beta*choose(n-2,r-2)*p^(r-2) -G_r -H_r,\n\nwhere the last three terms are zero for r=1. F_r and G_r are exactly the\nprevious cardinality coefficients; L'_r and H_r are the actual Bochner\nexpectations, restricted to E', of the direct and compressed-pair subset\ncounts. All four are proved nonnegative. The finite identity is\nUNCONDITIONAL for N>=2,L>0 and EVERY r>=1, with no upper order restriction.\n\nRetainedSubsetCounts constructs the literal deterministic direct and\ncompressed-family counts. On ANY retained configuration their sum is\nchoose(|A|,r), by the already proved disjoint direct/pair decomposition.\nEvery source pair remains distinguished. RetainedPairCountSource.formula\nidentifies the pair count EXACTLY with sum_e 1_(e subset A) times the\nnumber of U in the source Gamma_e(r-2) contained in A minus e. Thus it is\nthe printed J_e times admissible-complement count, even on the bad event;\nit is not a replacement random variable having the same mean.\n\nSelectedSubsetCounts proves the finite activation/expectation identity\nfor any prescribed subset class. ActiveSetCylinder transports EVERY\nobservable and event of the actual active set through a finite cylinder\ncontaining all original windows. These identities give the exact direct\nand pair means, including the source Gamma counts, heterogeneous actual\njoint events and affine compatibility. The regular marginal identity\nthen yields the printed nominal powers, with F_r and G_r explicitly\nsubtracted. The modified count is literally zero on nonretention.\nIntegrating its pointwise subset-count decomposition gives the source\nidentity, including both exceptional-event leakages. No moment transfer\nor probability interpretation of a retained polynomial is assumed.\n\nThe source weighted G estimate has the stronger UNCONDITIONAL rate7/6:\n\n  sum_(r>=0) 2^r*G_r <= N^(-7/6+epsilon).\n\nThe exact finite cardinality grouping identifies this sum with the\nalready proved independent secondMass. Terms at r<2 and r>n vanish,\nso the displayed infinite series is literally the finite source sum.\nThe same convention applies to H_r: its small and large terms vanish,\nall terms are nonnegative, and the ordinary real series equals its\nfinite support sum for every N,L.\n\nExceptionalEventHolder proves the actual finite eighth-moment Holder\ninequality. ActiveSetExceptionalMoment then bounds the contribution\non nonretention of ANY nonnegative active-set observable f(A)<=|A|^j by\n\n  (E Z_G^(8j))^(1/8) * P(E')^(7/8).\n\nThe completed exceptional-event theorem at the FIXED margin1/120 gives\nP(E')<=N^(-4/5+1/120). The previously proved UNCONDITIONAL subpower\nmoment bound gives E Z_G^(8j)<=N^(1/120) for each fixed j. Thus the\nexceptional contribution is at most N^(-83/120). Its threshold is chosen\nbefore all critical L, all dyadic subgrounds G, and EVERY f satisfying\nthe pointwise bound. The SAME finite exceptional-event input bundle is\nchosen BEFORE ALL fixed degrees j. No uniformly bounded higher moments,\nBCN premise or degree-dependent geometric property is needed.\n\nFor the actual pair count, a finite combinatorial estimate gives\nP_r(A)<=|A|^(r+2). Therefore the same single input bundle proves, for\nEVERY fixed r, H_r<=N^(-83/120). The exponent83/120 exceeds2/3 by1/40;\nit is sufficient for the requested little-o. P1-MATH-0147 records this\nweaker-moment route and its stronger quantifier/input scope, not an\nimprovement over the source's fixed-order numerical exponent7/10.\n\nRetainedPairMomentGenerator proves the exact shifted-binomial generator\nbound for the UNRESTRICTED positive pair moments:\n\n  sum_(r=0..n) u^r E P_r <= u^2*beta*(1+u*p)^(n-2)\n    <=u^2*beta*exp(u*E Z_regular), for u>=0,n>=2.\n\nSince H_r<=E P_r, it also bounds every exceptional subseries.\nRetainedGoodPairScale bounds beta by a constant times the literal nominal\nsecond factorial correction a_N=E(Z_N)_2-(N*2^-L)^2, UNCONDITIONALLY.\nIt uses the homogeneous principal-channel upper bound and the existing\nunconditional positive lower bound a_N>=c_C*L*N^-2/3. Consequently the\nENTIRE4^r-weighted H sum is at most A_C*a_N, without geometric premises.\nThe actual mean cap and eventual regular cardinality>=2 are discharged.\n\nWeightedLeakageCutoff splits the2^r sum at an arbitrary fixed J. Its\nfinite part is controlled by the fixed-order rate83/120; the remaining\npart is at most2^-J times the4^r generator. Choose J after a positive\ntolerance eta, then absorb the finite constant using the gap1/40 and\nthe proved lower bound for a_N. This yields the full uniform statement:\n\n  for every eta>0, eventually for EVERY critical L,\n  sum_(r>=0) 2^r*H_r <= eta*a_N.\n\nThe SAME finite geometric bundle was chosen before eta and before every\nfixed order. No growing-order moment estimate is assumed or invoked.\nModifiedMomentDecompositionUnderInputs.companion_T22_6 assembles all\nsource clauses with this quantifier order. Its only unproved inputs are\nthe SAME three recorded geometric counting properties, through the\nexisting RetainedExceptionalEventUnderInputs.Hypotheses at1/120.\nEvery constituent finite cap is exposed in that bundle definition.\n\nThis checkpoint adds16 modules,50 theorems and15 definitions. Coverage\nis87/167 unconditional and32 conditional, with147 confirmed mathematical\nimprovements. Main1.1's optimal4/3 bound, main15.10 and main15.14 remain\nopen; the completed T22.6 does not silently discharge them. No dependency\ndownload, original manuscript-byte change, Paper C port, hidden axiom or\nPalomar registration is added.",
       "validation_history": [
         {
           "status": "not_started",
           "notes": "",
           "literature_inputs": []
+        },
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (13733 jobs); direct axiom audit passed for 10690 declarations using only propext, Classical.choice and Quot.sound; all 9122 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.36 GiB.",
+          "validation_commit": "e3c62b91c21d7a347902777fd88bb5eb4281a50f",
+          "literature_inputs": [
+            "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+            "P1-GEO-ORDINARY-SURFACE-COVER",
+            "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+          ]
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13733 jobs); direct axiom audit passed for 10690 declarations using only propext, Classical.choice and Quot.sound; all 9122 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.36 GiB.",
-      "validation_commit": "e3c62b91c21d7a347902777fd88bb5eb4281a50f"
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16107 jobs); direct axiom audit passed for 14967 declarations using only propext, Classical.choice and Quot.sound; all 14331 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.29 GiB.",
+      "canonical_statement": "PaperP1.ModifiedMomentDecomposition.companion_T22_6",
+      "canonical_additional_statements": [
+        "PaperP1.ModifiedMomentDecomposition.uniform_deficit",
+        "PaperP1.RetainedPairLeakageLimit.uniform_relative"
+      ],
+      "remaining_unformalized_inputs": [],
+      "input_discharges": [
+        {
+          "input": "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+          "proof": "PaperP1.ModifiedMomentDecomposition.companion_T22_6",
+          "scope": "Complete exact companionT22.6 conclusions: actual selected critical-order family or finite modified identity/all deficits/weighted leakage little-o. Internal actual pair profile and retained event; no general input property or complete growing-order moment theorem asserted.",
+          "checkpoint": "P1-MATH-0441"
+        },
+        {
+          "input": "P1-GEO-ORDINARY-SURFACE-COVER",
+          "proof": "PaperP1.ModifiedMomentDecomposition.companion_T22_6",
+          "scope": "Complete exact companionT22.6 conclusions: actual selected critical-order family or finite modified identity/all deficits/weighted leakage little-o. Internal actual pair profile and retained event; no general input property or complete growing-order moment theorem asserted.",
+          "checkpoint": "P1-MATH-0441"
+        },
+        {
+          "input": "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+          "proof": "PaperP1.ModifiedMomentDecomposition.companion_T22_6",
+          "scope": "Complete exact companionT22.6 conclusions: actual selected critical-order family or finite modified identity/all deficits/weighted leakage little-o. Internal actual pair profile and retained event; no general input property or complete growing-order moment theorem asserted.",
+          "checkpoint": "P1-MATH-0441"
+        }
+      ]
     },
     {
       "label": "p1:uniform:replicas",

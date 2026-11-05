@@ -7628,6 +7628,7 @@ import PaperP1
 #print axioms PaperP1.ExactPoissonScaleUnderInputs.phaseScale_formula
 #print axioms PaperP1.ExactPoissonScaleUnderInputs.article_1_2
 #print axioms PaperP1.ExactUnitDeletionUniform.uniform_deletion
+#print axioms PaperP1.ExceptionalPolynomialMoments.uniform_fixed
 #print axioms PaperP1.ExceptionalPolynomialMomentsUnderInputs.uniform_fixed
 #print axioms PaperP1.ExceptionalSourcePalmMass.uniform_bound
 #print axioms PaperP1.ExpSqrtLog.pow_le_nat_eventually
@@ -8410,6 +8411,8 @@ import PaperP1
 #print axioms PaperP1.ModifiedCountAllTails.companion_T19_3
 #print axioms PaperP1.ModifiedCountAllTailsUnderInputs.uniform_restored_totalVariation
 #print axioms PaperP1.ModifiedCountAllTailsUnderInputs.companion_T19_3
+#print axioms PaperP1.ModifiedMomentDecomposition.uniform_deficit
+#print axioms PaperP1.ModifiedMomentDecomposition.companion_T22_6
 #print axioms PaperP1.ModifiedMomentDecompositionUnderInputs.uniform_deficit
 #print axioms PaperP1.ModifiedMomentDecompositionUnderInputs.companion_T22_6
 #print axioms PaperP1.MomentObstructionLog.distance_eq_totalVariation
@@ -8909,6 +8912,11 @@ import PaperP1
 #print axioms PaperP1.PrincipalSecondMomentError.uniform_residual_lower
 #print axioms PaperP1.PrincipalSecondMomentError.uniform_error_comparison
 #print axioms PaperP1.PrincipalSecondMomentError.relative_error_comparison
+#print axioms PaperP1.PrincipalSelectedPairMass.amplitude_eq_beta
+#print axioms PaperP1.PrincipalSelectedPairMass.source_dependent
+#print axioms PaperP1.PrincipalSelectedPairMass.uniform_first
+#print axioms PaperP1.PrincipalSelectedPairMass.amplitude_upper
+#print axioms PaperP1.PrincipalSelectedPairMass.uniform_weighted
 #print axioms PaperP1.PrincipalSelectedPairMassUnderInputs.amplitude_eq_beta
 #print axioms PaperP1.PrincipalSelectedPairMassUnderInputs.source_dependent
 #print axioms PaperP1.PrincipalSelectedPairMassUnderInputs.uniform_first
@@ -9123,6 +9131,10 @@ import PaperP1
 #print axioms PaperP1.RetainedMomentConvergence.uniform_poisson_totalVariation
 #print axioms PaperP1.RetainedMomentConvergenceUnderBCN.uniform_moment_transfer
 #print axioms PaperP1.RetainedMomentConvergenceUnderBCN.uniform_poisson_totalVariation
+#print axioms PaperP1.RetainedPairLeakage.pair_leakage_eq
+#print axioms PaperP1.RetainedPairLeakage.uniform_fixed_pair
+#print axioms PaperP1.RetainedPairLeakage.uniform_generator_bound
+#print axioms PaperP1.RetainedPairLeakageLimit.uniform_relative
 #print axioms PaperP1.RetainedPairLeakageLittleO.uniform_relative
 #print axioms PaperP1.RetainedPairLeakageUnderInputs.pair_leakage_eq
 #print axioms PaperP1.RetainedPairLeakageUnderInputs.uniform_fixed_pair
@@ -9324,6 +9336,10 @@ import PaperP1
 #print axioms PaperP1.SignedSourceProfileUnderInputs.scaled_mainTerm
 #print axioms PaperP1.SignedSourceProfileUnderInputs.unscale
 #print axioms PaperP1.SignedSourceProfileUnderInputs.uniform_all_ordered
+#print axioms PaperP1.SinglePairCriticalTheorem.mean_eq_integral
+#print axioms PaperP1.SinglePairCriticalTheorem.alpha_eq_variance
+#print axioms PaperP1.SinglePairCriticalTheorem.selected_family_positive
+#print axioms PaperP1.SinglePairCriticalTheorem.companion_T22_5
 #print axioms PaperP1.SinglePairCriticalTheoremUnderInputs.mean_eq_integral
 #print axioms PaperP1.SinglePairCriticalTheoremUnderInputs.alpha_eq_variance
 #print axioms PaperP1.SinglePairCriticalTheoremUnderInputs.selected_family_positive
