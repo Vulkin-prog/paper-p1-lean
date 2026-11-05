@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records465 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records466 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15328 audited theorem/lemma declarations**. This
+- The project currently has **15338 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26652,3 +26652,22 @@ The induction keeps the same smoothness cutoff and ambient height. Its recursive
 The closed geometric prime-band construction and the finite recursive theorem are distinct: a real exponential-band choice and moving-saddle threshold calculation must still connect them. No leading lower coefficient2 or fine o(nu_N) remainder is claimed. Complete T19.15 and T19.16 retain their conditional status, and their earlier one-sided leading upper bounds remain internal. P1-MATH-0467 adds two modules, fourteen theorems and two definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records465 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16383 jobs); direct axiom audit passed for 15328 declarations using only propext, Classical.choice and Quot.sound; all 14761 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.46 GiB.
+
+
+## Internal matching leading coefficient two for all actual reciprocal sums
+
+Both directions of the leading coefficient two are now internally proved for the literal ordinary, full odd-pivot and dyadic reciprocal sums. For every fixed c>2, each sum is at least N*exp(-c V_N), under one threshold before N. Together with checkpoint464, every fixed coefficient below2 supplies an upper bound and every coefficient above2 supplies a lower bound. This establishes the leading scale, while the printed o(nu_N) precision remains unproved. The full companion T19.15 reciprocal and dyadic statements and proof at companion_sections/limits_appendix.tex lines1138-1194 were rechecked.
+
+ExponentialPrimeBands.exists_band constructs an actual finite prime population between exp(aH) and exp(H) for each fixed0<a<1. Its logarithmic reciprocal prime mass is at least bH for an internal b>0 chosen before H. The integer lower endpoint is ceil(exp(aH)); the number of geometric bands is the floor of an explicit logarithmic expression. Every rounding term, endpoint, disjointness condition and threshold for the internal PNT is retained. The construction supplies the analytic prime-band premise of the finite recursion, rather than assuming it.
+
+ExponentialSmoothLower.uniform_lower discharges all finite prime-band conditions in SmoothRecursiveLower.geometric_density_lower. It gives Psi(M,floor(exp H)) >= M*(bH/(2logM))^ceil(logM/(aH)) whenever H is beyond its fixed threshold and bH<=2logM. It also proves the corresponding literal ordinary reciprocal lower bound. uniform_saddle_lower supplies the moving choice H=V_N internally; sublinear saddle growth verifies the density-factor condition under a threshold before N. No ordinary reciprocal theorem or smooth asymptotic is an input.
+
+SmoothSaddleLoss.finite_loss_upper controls the full explicit exponent, including its ceiling. The actual hard-saddle square bound H<=V(H)^2 controls the logarithmic density loss. normalized_majorant_limit proves that the total normalized loss is at most a majorant converging to1+1/a. The prime-band constant and all rounding terms vanish on this leading scale. eventual_loss_bound supplies a finite upper bound cV whenever c>1+1/a. This is a leading-scale statement and does not suppress an error on the finer nu scale.
+
+SmoothReciprocalLeadingLower.uniform_ordinary_lower chooses a=2/c for c>2, supplies the internal smooth lower bound and pays every exponent loss. uniform_full_lower uses the literal ordinary-to-odd-pivot comparison. uniform_dyadic_lower retains the exact doubling map, the logarithmic image multiplicity and the excluded square-root population. A strict intermediate coefficient pays both losses internally; no change of scale is assumed. uniform_original_lower combines the three actual populations under one threshold.
+
+The matching leading reciprocal coefficient two is therefore internal, but full T19.15 still needs its finer o(nu_N) equivalent and remains conditional on ordinary EIPInput. The original specified signed forcing cost still has its internal upper bound exp(-c V_N) for every c<2 and lower envelope exp(-12 V_N); the sharper lower transport is subsequent work. Full T19.16 likewise stays conditional. General geometry, quadratic-degree BCN and optimal strong-triangle weights retain separate unresolved scopes.
+
+P1-MATH-0468 adds four modules, ten theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records466 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16391 jobs); direct axiom audit passed for 15338 declarations using only propext, Classical.choice and Quot.sound; all 14771 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.43 GiB.

@@ -2666,6 +2666,9 @@ import PaperP1
 #print axioms PaperP1.ExponentialPowerSum.term_le_majorant
 #print axioms PaperP1.ExponentialPowerSum.summable_term
 #print axioms PaperP1.ExponentialPowerSum.total_le
+#print axioms PaperP1.ExponentialPrimeBands.exists_band
+#print axioms PaperP1.ExponentialSmoothLower.uniform_lower
+#print axioms PaperP1.ExponentialSmoothLower.uniform_saddle_lower
 #print axioms PaperP1.FactorialResolvent.hasSum_exponentialCoeff
 #print axioms PaperP1.FactorialResolvent.exponentialCoeff_nonneg
 #print axioms PaperP1.FactorialResolvent.factorial_ratio_bound
@@ -3042,6 +3045,13 @@ import PaperP1
 #print axioms PaperP1.DefectCounting.smallPrimesUpTo_subset_Icc
 #print axioms PaperP1.prod_smallPrimesUpTo_one_add_inv_sqrt_le
 #print axioms PaperP1.prod_smallPrimesUpTo_one_add_rpow_neg_one_half_le
+#print axioms PaperP1.SmoothReciprocalLeadingLower.uniform_ordinary_lower
+#print axioms PaperP1.SmoothReciprocalLeadingLower.uniform_full_lower
+#print axioms PaperP1.SmoothReciprocalLeadingLower.uniform_dyadic_lower
+#print axioms PaperP1.SmoothReciprocalLeadingLower.uniform_original_lower
+#print axioms PaperP1.SmoothSaddleLoss.finite_loss_upper
+#print axioms PaperP1.SmoothSaddleLoss.normalized_majorant_limit
+#print axioms PaperP1.SmoothSaddleLoss.eventual_loss_bound
 #print axioms PaperP1.SquareRootReciprocalUpper.exp_half_le_two
 #print axioms PaperP1.SquareRootReciprocalUpper.linear_prefactor
 #print axioms PaperP1.SquareRootReciprocalUpper.small_pivot_bound

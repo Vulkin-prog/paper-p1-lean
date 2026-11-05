@@ -3906,3 +3906,7 @@ public import PaperP1.Arithmetic.OrdinarySmoothCensus
 public import PaperP1.Arithmetic.SmoothPrimeIncidence
 public import PaperP1.Analysis.PrimeLogarithmicBands
 public import PaperP1.Arithmetic.SmoothRecursiveLower
+public import PaperP1.Analysis.ExponentialPrimeBands
+public import PaperP1.Analysis.ExponentialSmoothLower
+public import PaperP1.Analysis.SmoothReciprocalLeadingLower
+public import PaperP1.Analysis.SmoothSaddleLoss

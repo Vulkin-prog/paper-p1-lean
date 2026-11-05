@@ -23335,6 +23335,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "135a506e216555cb27ded45e7b66027236eb237f"
+    },
+    {
+      "id": "P1-MATH-0468",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The leading reciprocal upper coefficient approached2 internally, but the lower bounds still had only coefficients10 and11. The fine ordinary EIP input was still needed even to identify a matching leading lower coefficient.",
+      "finding": "Actual exponential prime bands, a multiplicity-controlled smooth density induction and an explicit saddle loss comparison prove N*exp(-c V_N) below every ordinary/full/dyadic reciprocal sum for each fixed c>2. Together with the internal c<2 upper bounds, both leading directions are proved without EIP.",
+      "proposed_revision": "Include the independently proved leading coefficient two for all literal reciprocal populations, with fixed margins and thresholds before N. Keep the finer o(nu_N) error as the remaining ordinary EIP obligation; do not equate leading-scale matching with the printed fine equivalent.",
+      "impact": "Closes the leading-coefficient gap for ordinary/full/dyadic reciprocal sums internally. The fine T19.15/T19.16 equivalent remains conditional and numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.ExponentialPrimeBands.exists_band",
+        "PaperP1.ExponentialSmoothLower.uniform_lower",
+        "PaperP1.ExponentialSmoothLower.uniform_saddle_lower",
+        "PaperP1.SmoothReciprocalLeadingLower.uniform_ordinary_lower",
+        "PaperP1.SmoothReciprocalLeadingLower.uniform_full_lower",
+        "PaperP1.SmoothReciprocalLeadingLower.uniform_dyadic_lower",
+        "PaperP1.SmoothReciprocalLeadingLower.uniform_original_lower",
+        "PaperP1.SmoothSaddleLoss.finite_loss_upper",
+        "PaperP1.SmoothSaddleLoss.normalized_majorant_limit",
+        "PaperP1.SmoothSaddleLoss.eventual_loss_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16391 jobs); direct axiom audit passed for 15338 declarations using only propext, Classical.choice and Quot.sound; all 14771 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.43 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
