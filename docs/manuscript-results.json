@@ -12145,7 +12145,8 @@
           "scope": "Full exact main20.1 original-grid unsigned-field statement, including positive individual single/pair rates, actual probability measure, summability and every fixed polynomial weight. All finite boundary/conversion/restoration/moment uses are internal; no general property asserted.",
           "checkpoint": "P1-MATH-0442"
         }
-      ]
+      ],
+      "validation_commit": "b5932d824df1b6acebb7833186be2b15e3fa2099"
     },
     {
       "label": "p1:arith:runge",
