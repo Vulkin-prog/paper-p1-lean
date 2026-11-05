@@ -23142,6 +23142,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "c6a4bf82c42e1b6f8fc00567c2104248a618921f"
+    },
+    {
+      "id": "P1-MATH-0463",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The internal Rankin argument had only been assembled at one saddle cutoff, which discarded the different reciprocal weights of pivot sizes and limited the proved upper constant.",
+      "finding": "For every fixeda>0 andb<1/a the actual pivot population at cutoffexp(aV_N) has the internal boundN*exp(-bV_N), uniformly over every actual subset. An exact fixed finite logarithmic cover retains all pivot endpoints.",
+      "proposed_revision": "Use the uniform scaled pivot theorem as the input to a finite reciprocal-size stratification, keeping every band weight and choosing the cover size beforeN. Do not present the preparation alone as a proof of the sharp reciprocal coefficient or fine EIP error.",
+      "impact": "Supplies the unconditional variable-exponent and real-cutoff estimates needed for a weighted reciprocal refinement. The closed reciprocal and cost bounds, fineT19.15 status and numbered coverage are unchanged at this checkpoint.",
+      "evidence": [
+        "PaperP1.LogarithmicScaleCover.interval_cover",
+        "PaperP1.LogarithmicScaleCover.exponential_cover",
+        "PaperP1.ScaledPrimeEulerBound.finite_exponent_bound",
+        "PaperP1.ScaledPrimeEulerBound.eventual_exponent_bound",
+        "PaperP1.ScaledSaddlePivotCount.uniform_count",
+        "PaperP1.ScaledSaddlePivotCount.uniform_population_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16369 jobs); direct axiom audit passed for 15282 declarations using only propext, Classical.choice and Quot.sound; all 14709 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.53 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -2749,6 +2749,8 @@ import PaperP1
 #print axioms PaperP1.LogarithmicAbelWindow.envelope_integrable
 #print axioms PaperP1.LogarithmicAbelWindow.envelope_integral
 #print axioms PaperP1.LogarithmicAbelWindow.window_bound
+#print axioms PaperP1.LogarithmicScaleCover.interval_cover
+#print axioms PaperP1.LogarithmicScaleCover.exponential_cover
 #print axioms PaperP1.MahlerCoefficientBounds.coefficientEnergy_nonneg
 #print axioms PaperP1.MahlerCoefficientBounds.l2CoefficientNorm_nonneg
 #print axioms PaperP1.MahlerCoefficientBounds.l2CoefficientNorm_sq
@@ -2998,6 +3000,8 @@ import PaperP1
 #print axioms PaperP1.SaddleScales.hard_saddle_second_order_log_scale
 #print axioms PaperP1.SaddleScales.soft_saddle_second_order_log_scale
 #print axioms PaperP1.SaddleScales.log_log_small_against_hard_nu
+#print axioms PaperP1.ScaledPrimeEulerBound.finite_exponent_bound
+#print axioms PaperP1.ScaledPrimeEulerBound.eventual_exponent_bound
 #print axioms PaperP1.SelectedPairWeightedSeries.kernel_change
 #print axioms PaperP1.SelectedPairWeightedSeries.point_bound
 #print axioms PaperP1.SelectedPairWeightedSeries.finite_bound
@@ -9417,6 +9421,8 @@ import PaperP1
 #print axioms PaperP1.ScaledPrimeCounts.divided_cutoff_ratio
 #print axioms PaperP1.ScaledPrimeCounts.shifted_cutoff_ratio
 #print axioms PaperP1.ScaledPrimeCounts.prime_count_divided_shifted
+#print axioms PaperP1.ScaledSaddlePivotCount.uniform_count
+#print axioms PaperP1.ScaledSaddlePivotCount.uniform_population_bound
 #print axioms PaperP1.SecondCumulant.uniform_bound
 #print axioms PaperP1.SecondCumulant.uniform_eventually_small
 #print axioms PaperP1.SecondCumulant.uniform_parameter_gap

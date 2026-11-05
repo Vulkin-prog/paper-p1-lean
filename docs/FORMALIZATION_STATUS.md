@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records460 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records461 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15276 audited theorem/lemma declarations**. This
+- The project currently has **15282 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26571,3 +26571,20 @@ HardSaddleSignedCostBounds.uniform_upper_from_profile transports the reciprocal 
 This establishes the correct coarse hard-saddle order for both reciprocal deficits and the specified forcing cost without ordinary EIP. It does not identify the limiting constant2 or its fine error scale, so companionT19.15 andT19.16 remain conditional in their full printed scopes. P1-MATH-0462 adds five modules, twenty-one theorems and two definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records460 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16363 jobs); direct axiom audit passed for 15276 declarations using only propext, Classical.choice and Quot.sound; all 14703 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.55 GiB.
+
+
+## Uniform pivot counts at all fixed hard-saddle scales and exact finite scale covers
+
+The internal moving-exponent pivot estimate is generalized to every fixed positive multiple of the hard saddle. For each fixeda>0 and0<b<1/a, the actual number of values up to3N with odd-valuation pivot at mostexp(aV_N) is at mostN*exp(-bV_N), beyond a threshold preceding the actual cutoff and every retained population. A separate exact finite cover of logarithmic pivot scales is proved with endpoints retained. These are unconditional tools toward improving the reciprocal upper constant; this checkpoint does not assert that the reciprocal limiting constant2 has been obtained. The fullT19.15 statement and proof in companion_sections/limits_appendix.tex lines1138-1194 were rechecked.
+
+ScaledPrimeEulerBound.finite_exponent_bound controls the literal prime Euler exponent at cutoffY<=exp(aV), with moving exponent1-r*logH/(2aV). One fixed coefficient depending ona bounds it byH^(r/2)*logH. The logarithmic cutoff comparison includes the exactY+2 endpoint and all real-scale constants. eventual_exponent_bound proves that for every fixed0<=r<1 this cost is at mosteta*V for anyeta>0, uniformly before every actual integer cutoff. Only the internally proved harmonic prime estimate, hard-saddle growth and elementary logarithmic-power limits are used.
+
+ScaledSaddlePivotCount.uniform_count choosesr strictly betweena*b and1 and uses the actual inverse squared-saddle limit to retain the full Rankin lossbV. The moving Euler factor and fixed numerical factor3 are absorbed in a strict positive margin. The exponent approaches one withN, and every varying-parameter step uses a finite uniform theorem. The result holds for all integer cutoffsY>=2 withY<=exp(aV_N). uniform_population_bound removes the integer cutoff presentation and counts any actual subset of[1,3N] whose pivots are bounded by the real scaleexp(aV_N). The threshold is independent of the chosen subset.
+
+LogarithmicScaleCover.interval_cover partitions[0,3] into3K fixed closed intervals with denominatorK. exponential_cover transports it to every positive pivot between1 andexp(3V). The floor, the final endpoint and pivots exactly equal to1 are all retained. The cover sizeK is fixed beforeV and the actual pivot; it is not allowed to grow silently withN.
+
+These results prepare a finite weighted reciprocal stratification: each pivot band can keep its own reciprocal weight rather than being charged the whole small-pivot cardinality. No weighted stratification estimate or coefficient2 conclusion is counted as proved here. Checkpoint462's closed two-sided hard-saddle bounds remain the current unconditional reciprocal and specified-cost conclusions. Ordinary EIP, the sharp limiting constant2 and theo(nu_N) precision in completeT19.15/T19.16 remain unproved.
+
+P1-MATH-0463 adds three modules, six theorems and no definitions. CompanionT19.15 remains conditional. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records461 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16369 jobs); direct axiom audit passed for 15282 declarations using only propext, Classical.choice and Quot.sound; all 14709 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.53 GiB.

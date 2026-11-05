@@ -3896,3 +3896,6 @@ public import PaperP1.Analysis.HardSaddleReciprocalUpper
 public import PaperP1.Analysis.PrimeEulerSaddleScale
 public import PaperP1.Arithmetic.PrimeHarmonicUpper
 public import PaperP1.Asymptotics.HardSaddleSignedCostBounds
+public import PaperP1.Analysis.LogarithmicScaleCover
+public import PaperP1.Analysis.ScaledPrimeEulerBound
+public import PaperP1.Asymptotics.ScaledSaddlePivotCount
