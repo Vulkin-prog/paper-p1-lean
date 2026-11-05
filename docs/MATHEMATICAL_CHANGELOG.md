@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**326 mathematical improvements and two statement-scope corrections are confirmed.**
+**327 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23722,3 +23722,16 @@ An arbitrary factorization of the homogenized polynomial has homogeneous factors
 P1-MATH-0328 closes irreducibility preservation for each full-degree homogenization. The coefficient-variable reordering between the two homogenizations and the exact complex biform identification still need to be proved. NonGeometricRationalSingularity.Input remains an unproved alternative ordinary argument; the existing non-geometric and Heath-Brown numerical inputs are unchanged. T1.4 remains conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are326 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15543 jobs); direct axiom audit passed for 14137 declarations using only propext, Classical.choice and Quot.sound; all 13404 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.51 GiB.
+
+
+## Exact two-step bivariate homogenization preserves irreducibility with literal partial degrees
+
+The two full-degree homogenizations are now linked by an explicit algebra equivalence that exchanges a univariate coefficient variable with the homogeneous pair. The equivalence is constructed from the actual one-variable multivariate equivalence and the coefficient-variable exchange. Its exact coefficient identity is proved, using a general coefficient exchange theorem for arbitrary variable types.
+
+For P in R[X][Y], first homogenize in Y to its actual degree, reorder the coefficient variable, then homogenize in X to the actual swapped degree. The reordered intermediate polynomial is proved to have exactly that swapped degree. The upper bound follows from the actual coefficient partial-degree bound; the lower bound uses a nonzero coefficient of the swapped leading coefficient and the corresponding explicit homogeneous monomial. Thus the second homogenization uses its actual full degree rather than an assumed upper bound.
+
+The final double coefficient is exactly the original coefficient when the outer and inner homogeneous degrees equal the two literal partial degrees, and is zero otherwise. Applying P1-MATH-0328 twice and transporting irreducibility through the actual algebra equivalence proves that every irreducible bivariate polynomial over a commutative domain has an irreducible double homogenization. The degree and coefficient identities require only a commutative coefficient ring; the domain assumption is used for irreducibility preservation.
+
+P1-MATH-0329 closes two-step homogenization, coefficient reordering, exact degrees and generic biform irreducibility. The remaining step is the actual coefficientwise identity between this generic complex double homogenization and complexProjective G, including its integer-to-complex degree transport. NonGeometricRationalSingularity.Input is therefore still not marked proved; the existing non-geometric and Heath-Brown ordinary inputs are unchanged. T1.4 stays conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are327 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15545 jobs); direct axiom audit passed for 14145 declarations using only propext, Classical.choice and Quot.sound; all 13414 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.49 GiB.

@@ -11,7 +11,7 @@ Companion T1.5 is complete conditionally on exactly the same two ordinary biform
 
 Companion T1.4 is complete conditionally on exactly HeathBrownBiformInput.Input and NonGeometricBiformInput.Input. The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. Both ordinary input proofs remain open. The three incomplete numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records326 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records327 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14137 audited theorem/lemma declarations**. This
+- The project currently has **14145 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24499,3 +24499,16 @@ An arbitrary factorization of the homogenized polynomial has homogeneous factors
 P1-MATH-0328 closes irreducibility preservation for each full-degree homogenization. The coefficient-variable reordering between the two homogenizations and the exact complex biform identification still need to be proved. NonGeometricRationalSingularity.Input remains an unproved alternative ordinary argument; the existing non-geometric and Heath-Brown numerical inputs are unchanged. T1.4 remains conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are326 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15543 jobs); direct axiom audit passed for 14137 declarations using only propext, Classical.choice and Quot.sound; all 13404 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.51 GiB.
+
+
+## Exact two-step bivariate homogenization preserves irreducibility with literal partial degrees
+
+The two full-degree homogenizations are now linked by an explicit algebra equivalence that exchanges a univariate coefficient variable with the homogeneous pair. The equivalence is constructed from the actual one-variable multivariate equivalence and the coefficient-variable exchange. Its exact coefficient identity is proved, using a general coefficient exchange theorem for arbitrary variable types.
+
+For P in R[X][Y], first homogenize in Y to its actual degree, reorder the coefficient variable, then homogenize in X to the actual swapped degree. The reordered intermediate polynomial is proved to have exactly that swapped degree. The upper bound follows from the actual coefficient partial-degree bound; the lower bound uses a nonzero coefficient of the swapped leading coefficient and the corresponding explicit homogeneous monomial. Thus the second homogenization uses its actual full degree rather than an assumed upper bound.
+
+The final double coefficient is exactly the original coefficient when the outer and inner homogeneous degrees equal the two literal partial degrees, and is zero otherwise. Applying P1-MATH-0328 twice and transporting irreducibility through the actual algebra equivalence proves that every irreducible bivariate polynomial over a commutative domain has an irreducible double homogenization. The degree and coefficient identities require only a commutative coefficient ring; the domain assumption is used for irreducibility preservation.
+
+P1-MATH-0329 closes two-step homogenization, coefficient reordering, exact degrees and generic biform irreducibility. The remaining step is the actual coefficientwise identity between this generic complex double homogenization and complexProjective G, including its integer-to-complex degree transport. NonGeometricRationalSingularity.Input is therefore still not marked proved; the existing non-geometric and Heath-Brown ordinary inputs are unchanged. T1.4 stays conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are327 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15545 jobs); direct axiom audit passed for 14145 declarations using only propext, Classical.choice and Quot.sound; all 13414 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.49 GiB.

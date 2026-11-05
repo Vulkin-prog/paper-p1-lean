@@ -591,6 +591,14 @@ import PaperP1
 #print axioms PaperP1.BivariateHeightPower.mul_power
 #print axioms PaperP1.BivariateHeightPower.sum_power
 #print axioms PaperP1.BivariateHeightPower.scalar_four
+#print axioms PaperP1.BivariateIrreducibleHomogenization.comm_coefficient
+#print axioms PaperP1.BivariateIrreducibleHomogenization.reorder_coefficient
+#print axioms PaperP1.BivariateIrreducibleHomogenization.reorder_homogenize_coefficient
+#print axioms PaperP1.BivariateIrreducibleHomogenization.swap_coefficient
+#print axioms PaperP1.BivariateIrreducibleHomogenization.coefficient_degree_le
+#print axioms PaperP1.BivariateIrreducibleHomogenization.reorder_homogenize_degree
+#print axioms PaperP1.BivariateIrreducibleHomogenization.bihomogenize_coefficient
+#print axioms PaperP1.BivariateIrreducibleHomogenization.bihomogenize_irreducible
 #print axioms PaperP1.BivariateLargeRoot.height_swap_le
 #print axioms PaperP1.BivariateLargeRoot.height_swap
 #print axioms PaperP1.BivariateLargeRoot.eval_swap
