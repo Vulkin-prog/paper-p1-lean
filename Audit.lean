@@ -7970,6 +7970,8 @@ import PaperP1
 #print axioms PaperP1.ExactContactActivation.uniform_probability
 #print axioms PaperP1.ExactContactActivation.uniform_close_probability
 #print axioms PaperP1.ExactContactCenteredActivity.uniform_bound
+#print axioms PaperP1.ExactPoissonScale.phaseScale_formula
+#print axioms PaperP1.ExactPoissonScale.article_1_2
 #print axioms PaperP1.ExactPoissonScaleUnderInputs.phaseScale_formula
 #print axioms PaperP1.ExactPoissonScaleUnderInputs.article_1_2
 #print axioms PaperP1.ExactUnitDeletionUniform.uniform_deletion
@@ -8208,6 +8210,7 @@ import PaperP1
 #print axioms PaperP1.FixedOrderMassPropagation.original_run_extensions
 #print axioms PaperP1.FixedPairExtensionDeficit.article_15_7
 #print axioms PaperP1.FixedPairExtensionDeficitUnderInputs.article_15_7
+#print axioms PaperP1.FixedPairPhase.uniform_errors
 #print axioms PaperP1.FixedPairPhaseUnderInputs.uniform_errors
 #print axioms PaperP1.FixedPartnerComponentCount.component_pattern
 #print axioms PaperP1.FixedPartnerComponentCount.uniform_count
@@ -8998,6 +9001,9 @@ import PaperP1
 #print axioms PaperP1.OneTwoChannelPhase.uniform_relative_lengths
 #print axioms PaperP1.OneTwoChannelPhase.uniform_critical_relative
 #print axioms PaperP1.OptimalHermiteUnderInputs.article_19_1_exact
+#print axioms PaperP1.OptimalNominalQuadratic.lowerConstant_pos
+#print axioms PaperP1.OptimalNominalQuadratic.uniform_comparison
+#print axioms PaperP1.OptimalNominalQuadratic.article_17_3
 #print axioms PaperP1.OptimalNominalQuadraticUnderInputs.lowerConstant_pos
 #print axioms PaperP1.OptimalNominalQuadraticUnderInputs.uniform_comparison
 #print axioms PaperP1.OptimalNominalQuadraticUnderInputs.article_17_3
@@ -9162,6 +9168,7 @@ import PaperP1
 #print axioms PaperP1.PoissonCharlierConversion.critical_bound
 #print axioms PaperP1.PoissonCharlierConversion.regular_card_eventually
 #print axioms PaperP1.PoissonCharlierConversion.actual_regular_bound
+#print axioms PaperP1.PoissonScaleRates.uniform_rates
 #print axioms PaperP1.PoissonScaleRatesUnderInputs.uniform_rates
 #print axioms PaperP1.PolylogConfinementScales.choose_parameters
 #print axioms PaperP1.PolylogConfinementScales.logarithmic_count_sublinear

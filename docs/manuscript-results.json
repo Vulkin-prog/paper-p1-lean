@@ -314,7 +314,7 @@
       "source": "main_sections/introduction.tex",
       "line": 116,
       "sha256": "a0f42f421329445730495eb8212e5f118185dc3ca6c440acd96dc5279dbda027",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.ExactPoissonScaleUnderInputs.phaseScale_formula",
         "PaperP1.ExactPoissonScaleUnderInputs.article_1_2",
@@ -331,22 +331,87 @@
         "PaperP1.ExactPoissonScaleUnderInputs.phaseScale",
         "PaperP1.ExactPoissonScaleUnderInputs.Parameters",
         "PaperP1.ExactPoissonScaleUnderInputs.Hypotheses",
-        "PaperP1.PoissonScaleRatesUnderInputs.actualError"
+        "PaperP1.PoissonScaleRatesUnderInputs.actualError",
+        "PaperP1.ExactPoissonScale.phaseScale_formula",
+        "PaperP1.ExactPoissonScale.article_1_2",
+        "PaperP1.FixedPairPhase.uniform_errors",
+        "PaperP1.OptimalNominalQuadratic.lowerConstant_pos",
+        "PaperP1.OptimalNominalQuadratic.uniform_comparison",
+        "PaperP1.OptimalNominalQuadratic.article_17_3",
+        "PaperP1.PoissonScaleRates.uniform_rates",
+        "PaperP1.ExactPoissonScale.actualPoisson",
+        "PaperP1.ExactPoissonScale.nominalPoisson",
+        "PaperP1.ExactPoissonScale.actualTV",
+        "PaperP1.ExactPoissonScale.nominalTV",
+        "PaperP1.ExactPoissonScale.phaseScale",
+        "PaperP1.OptimalNominalQuadratic.meanGap",
+        "PaperP1.OptimalNominalQuadratic.nominalError",
+        "PaperP1.OptimalNominalQuadratic.lowerConstant",
+        "PaperP1.PoissonScaleRates.actualError"
       ],
       "literature_inputs": [
         "P1-PROB-EXACT-POISSON-SCALE",
-        "P1-GEO-BCN-PLANE-UNIFORM"
+        "P1-GEO-BCN-PLANE-UNIFORM",
+        "p1:internal:complete-exact-poisson-scale-mean-bias"
       ],
-      "mathematical_changes": [],
-      "notes": "Main1.2 is now COMPLETE CONDITIONALLY on the existing explicit BCN\nand finite ordinary/source cover and normalized curve-count properties.\nEvery source clause is covered: the exact coefficient alpha/4 times\nthe second Poisson-difference norm, the nominal-mean error power1,\nthe actual-mean error power4/3, and the SAME literal moving equivalent\nfor both specified Poisson references along the full critical band.\n\nPoissonDistanceExpansion proves the finite expansion inequality for\nan arbitrary actual probability law, retaining an arbitrary nonnegative\nsecond parameter. The l1 error enters with its exact factor1/2.\nThe quadratic reference need not first be supplied as a probability.\nIt also proves the uniform Lipschitz comparison of the two actual\nPoisson distances as their means change, with constant1.\n\nPoissonScaleRatesUnderInputs chooses one fixed optimal-law geometric\nbundle at min(epsilon/2,1/12). It proves the two requested approximation\npowers and, simultaneously, a strict fixed remainder power11/12 for\nthe nominal quadratic error and the mean gap. All rates concern the\noriginal law and the exact actual second factorial cumulant.\nFixedPairPhaseUnderInputs chooses one finite pair-geometric bundle\nBEFORE EVERY relative tolerance and proves both actual moving pair\nphases, including the complete first channel before the second phase.\nNeither a fixed residue nor a selected subsequence is substituted.\n\nExactPoissonScaleUnderInputs.article_1_2 assembles both total-variation\nexpansions and both uniform relative-error limits. Its phaseScale_formula\nis the literal source denominator with coefficient\n(r+2)/(72*2^(r/3)), r=L mod3, and factors lambda^(5/3), the second\nPoisson-difference norm at lambda, L and N^(-2/3). Strict positivity\nof this denominator is proved inside the theorem. The same expression\nis used for the actual-mean Poisson comparison, by the proved\nmean-change inequality and the smaller mean-bias remainder. No\nunproved continuity or norm-parameter approximation is assumed.\n\nCoverage becomes87/167 unconditional and56 conditional. The existing164\nmathematical improvements and one confirmed scope correction are unchanged.\nThe sharper41/30 third-order theorem and corrected31/24 asymmetric profile\nremain open. Original manuscript bytes, compiler and dependency pins are\nunchanged. Palomar remains a later completion milestone.\n\nEarlier checkpoint history:\n",
+      "mathematical_changes": [
+        "P1-MATH-0491"
+      ],
+      "notes": "Complete main Corollary1.2 and Proposition17.3 are now internally proved. The exact original-law total variation to the actual-mean Poisson law equals alpha/4 times its second-difference norm up toN^(-4/3+epsilon); for the specified nominal-mean Poisson law the corresponding error isN^(-1+epsilon). Both distances have the same literal moving equivalent with Lmod3, the nominal mean and coefficient(r+2)/(72*2^(r/3)) retained on the entire fixed critical band. No Poisson-mean minimization or fixed-residue subsequence is substituted for the printed statement.\n\nOptimalNominalQuadratic retains the exact integer identity mu-lambda=2^(-L)*M_NL and the finite dichotomy that any nonzero bias has magnitude at least2^(-L). It proves the original nominal-reference errorN^(-1+epsilon), and, at every sufficiently large admissible scale whose integer bias is nonzero, two-sided comparison with the actual mean gap. Its positive lower constant exp(-2*2^C)/4 depends only on the critical band. The same exact second factorial cumulant is used in both quadratic references. No infinitude of nonzero-bias scales is asserted.\n\nFixedPairPhase supplies simultaneous absolute errors for both actual moving pair phases from the previously internal phase equivalents. PoissonScaleRates combines the internal optimal weighted approximation, actual parameter bounds and actual-to-nominal reference comparison. In addition to the two requested error powers it gives a strictN^(-11/12) allowance for the nominal error and mean gap, uniformly before every relative tolerance.\n\nExactPoissonScale then applies the finite exact Poisson-distance expansion and mean-change inequality. It keeps both specified Poisson laws, positive phase denominator, literal phase formula and every relative tolerance explicit. The actual-mean equivalent is compared to the same nominal moving denominator as in the source. All actual/nominal errors, leading second-difference norms and phase comparisons are supplied internally; no target equivalent, external geometric argument or unproved analytic estimate is assumed.\n\nSources rechecked: main1.2, main_sections/introduction.tex lines116-145; main17.3, main_sections/optimal_closure.tex lines107-163, including its no-infinitude qualification. Complete main1.1/13.6/13.8/14.1/14.6/15.14/16.2/17.1/17.2 remain internally proved. The exact-parameter Hermite clause of19.1 remains a separate final assembly. Generic main13.5, full quadratic-degree/all-dimensional BCN, general geometric cover/count properties and companionT19.17's almost-all census are not discharged.\n\nP1-MATH-0491 adds four modules, seven theorems and nine actual-reference/phase/error definitions. Exactly two numbered results, main1.2 and17.3, are promoted from conditional to proved. Coverage becomes160 proved,4 conditional and3 in_progress out of167, with164 completed:70 main results and90 companion results are proved. The project records489 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.\n\nEarlier checkpoint history:\nMain1.2 is now COMPLETE CONDITIONALLY on the existing explicit BCN\nand finite ordinary/source cover and normalized curve-count properties.\nEvery source clause is covered: the exact coefficient alpha/4 times\nthe second Poisson-difference norm, the nominal-mean error power1,\nthe actual-mean error power4/3, and the SAME literal moving equivalent\nfor both specified Poisson references along the full critical band.\n\nPoissonDistanceExpansion proves the finite expansion inequality for\nan arbitrary actual probability law, retaining an arbitrary nonnegative\nsecond parameter. The l1 error enters with its exact factor1/2.\nThe quadratic reference need not first be supplied as a probability.\nIt also proves the uniform Lipschitz comparison of the two actual\nPoisson distances as their means change, with constant1.\n\nPoissonScaleRatesUnderInputs chooses one fixed optimal-law geometric\nbundle at min(epsilon/2,1/12). It proves the two requested approximation\npowers and, simultaneously, a strict fixed remainder power11/12 for\nthe nominal quadratic error and the mean gap. All rates concern the\noriginal law and the exact actual second factorial cumulant.\nFixedPairPhaseUnderInputs chooses one finite pair-geometric bundle\nBEFORE EVERY relative tolerance and proves both actual moving pair\nphases, including the complete first channel before the second phase.\nNeither a fixed residue nor a selected subsequence is substituted.\n\nExactPoissonScaleUnderInputs.article_1_2 assembles both total-variation\nexpansions and both uniform relative-error limits. Its phaseScale_formula\nis the literal source denominator with coefficient\n(r+2)/(72*2^(r/3)), r=L mod3, and factors lambda^(5/3), the second\nPoisson-difference norm at lambda, L and N^(-2/3). Strict positivity\nof this denominator is proved inside the theorem. The same expression\nis used for the actual-mean Poisson comparison, by the proved\nmean-change inequality and the smaller mean-bias remainder. No\nunproved continuity or norm-parameter approximation is assumed.\n\nCoverage becomes87/167 unconditional and56 conditional. The existing164\nmathematical improvements and one confirmed scope correction are unchanged.\nThe sharper41/30 third-order theorem and corrected31/24 asymmetric profile\nremain open. Original manuscript bytes, compiler and dependency pins are\nunchanged. Palomar remains a later completion milestone.\n\nEarlier checkpoint history:\n",
       "validation_history": [
         {
           "status": "not_started",
           "literature_inputs": []
+        },
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (14403 jobs); direct axiom audit passed for 11853 declarations using only propext, Classical.choice and Quot.sound; all 10517 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.73 GiB.",
+          "validation_commit": "7d6a43f25bdaafa7f5ac8d916ea80736229f3c28",
+          "literature_inputs": [
+            "P1-PROB-EXACT-POISSON-SCALE",
+            "P1-GEO-BCN-PLANE-UNIFORM"
+          ]
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14403 jobs); direct axiom audit passed for 11853 declarations using only propext, Classical.choice and Quot.sound; all 10517 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.73 GiB.",
-      "validation_commit": "7d6a43f25bdaafa7f5ac8d916ea80736229f3c28"
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16531 jobs); direct axiom audit passed for 15542 declarations using only propext, Classical.choice and Quot.sound; all 15004 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.89 GiB.",
+      "canonical_statement": "PaperP1.ExactPoissonScale.article_1_2",
+      "canonical_additional_statements": [
+        "PaperP1.ExactPoissonScale.phaseScale_formula",
+        "PaperP1.PoissonScaleRates.uniform_rates",
+        "PaperP1.FixedPairPhase.uniform_errors",
+        "PaperP1.OptimalNominalQuadratic.uniform_comparison",
+        "PaperP1.OptimalNominalQuadratic.lowerConstant_pos",
+        "PaperP1.ExactPoissonScale.article_1_2",
+        "PaperP1.OptimalNominalQuadratic.article_17_3"
+      ],
+      "remaining_unformalized_inputs": [],
+      "unconditional_parts": [
+        {
+          "part": "Complete original numbered statement, retaining both specified means, literal moving phases and every quantization qualification.",
+          "proof": "PaperP1.ExactPoissonScale.article_1_2",
+          "checkpoint": "P1-MATH-0491"
+        }
+      ],
+      "input_discharges": [
+        {
+          "checkpoint": "P1-MATH-0491",
+          "scope": "Complete main1.2/17.3 only. Internal optimal approximation and actual reference/phase estimates replace the prior bundle; no mean-optimization, nonzero-bias infinitude or general geometric property is claimed.",
+          "previous_inputs": [
+            "P1-PROB-EXACT-POISSON-SCALE",
+            "P1-GEO-BCN-PLANE-UNIFORM",
+            "p1:internal:complete-exact-poisson-scale-mean-bias"
+          ],
+          "internal_proofs": [
+            "PaperP1.ExactPoissonScale.phaseScale_formula",
+            "PaperP1.PoissonScaleRates.uniform_rates",
+            "PaperP1.FixedPairPhase.uniform_errors",
+            "PaperP1.OptimalNominalQuadratic.uniform_comparison",
+            "PaperP1.OptimalNominalQuadratic.lowerConstant_pos",
+            "PaperP1.ExactPoissonScale.article_1_2",
+            "PaperP1.OptimalNominalQuadratic.article_17_3"
+          ]
+        }
+      ]
     },
     {
       "label": "p1:cor:explicit",
@@ -11546,7 +11611,7 @@
       "source": "main_sections/optimal_closure.tex",
       "line": 107,
       "sha256": "9930a66023f6178a86ad23dead68d2e585acd6ce00afe5911a2c5d3d9b0013e7",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.MeanBiasQuantization.multiplicity_source",
         "PaperP1.MeanBiasQuantization.nominal_times_multiplicity",
@@ -11608,19 +11673,37 @@
         "PaperP1.OptimalNominalQuadraticUnderInputs.nominalError",
         "PaperP1.OptimalNominalQuadraticUnderInputs.lowerConstant",
         "PaperP1.OptimalTripleReconstructionUnderInputs.Parameters",
-        "PaperP1.OptimalTripleReconstructionUnderInputs.Hypotheses"
+        "PaperP1.OptimalTripleReconstructionUnderInputs.Hypotheses",
+        "PaperP1.ExactPoissonScale.phaseScale_formula",
+        "PaperP1.ExactPoissonScale.article_1_2",
+        "PaperP1.FixedPairPhase.uniform_errors",
+        "PaperP1.OptimalNominalQuadratic.lowerConstant_pos",
+        "PaperP1.OptimalNominalQuadratic.uniform_comparison",
+        "PaperP1.OptimalNominalQuadratic.article_17_3",
+        "PaperP1.PoissonScaleRates.uniform_rates",
+        "PaperP1.ExactPoissonScale.actualPoisson",
+        "PaperP1.ExactPoissonScale.nominalPoisson",
+        "PaperP1.ExactPoissonScale.actualTV",
+        "PaperP1.ExactPoissonScale.nominalTV",
+        "PaperP1.ExactPoissonScale.phaseScale",
+        "PaperP1.OptimalNominalQuadratic.meanGap",
+        "PaperP1.OptimalNominalQuadratic.nominalError",
+        "PaperP1.OptimalNominalQuadratic.lowerConstant",
+        "PaperP1.PoissonScaleRates.actualError"
       ],
       "literature_inputs": [
         "P1-MEAN-INTEGER-QUANTUM",
         "P1-PROB-MEAN-PARAMETER-STABILITY",
         "P1-PROB-OPTIMAL-SCALAR-CONSEQUENCES",
-        "P1-GEO-BCN-PLANE-UNIFORM"
+        "P1-GEO-BCN-PLANE-UNIFORM",
+        "p1:internal:complete-exact-poisson-scale-mean-bias"
       ],
       "mathematical_changes": [
-        "P1-MATH-0085"
+        "P1-MATH-0085",
+        "P1-MATH-0491"
       ],
-      "notes": "Main15.14,17.3 and19.1 are now COMPLETE CONDITIONALLY on the existing\nexplicit BCN and finite ordinary/source cover and normalized curve-count\nproperties. No new external input or mathematical correction is introduced.\nThe previously identified sharper41/30 and31/24 obligations remain open.\n\nOptimalTripleReconstructionUnderInputs.article_15_14 assembles BOTH clauses\nof the source theorem for the original full law and exact parameters:\nthe symbolic N^epsilon*A3+N^(-4/3+epsilon) estimate, and its actual optimal\nnumerical upper bound. All finite geometric properties occur before the\ncommon critical threshold. The old symbolic estimate remains independent\nof BCN; the additional numerical clause uses the explicit BCN argument.\n\nQuadraticMeanLawComparison transfers quantitative two-sided mean\nseparation from two actual quadratic references to an arbitrary actual\nsigned law whose approximation error is sufficiently small. With compact\nmean bound M and |alpha|<=1, the explicit lower constant is exp(-M)/4\nand the upper constant is6+exp(-M)/4. OptimalNominalQuadraticUnderInputs\napplies this finite inequality to the ORIGINAL count. The integer mean-bias\nidentity and the exact quantum dichotomy are retained. The actual optimal\napproximation is used at the fixed exponent-5/4, strictly below-1.\nThe quantum lower bound on every NONZERO-bias scale then absorbs the\nremainder. The nominal-reference error is bounded by N^(-1+epsilon),\nand is comparable to the actual mean gap with explicit constants depending\nonly on C whenever the integer bias is nonzero. The same exact second\ncumulant is retained in both references. No existence of infinitely many\nnonzero-bias scales is asserted. The finite geometric bundle is chosen\nat the fixed margin1/12, before the requested final epsilon.\n\nActualHermiteReferenceRateUnderInputs proves the Hermite/quadratic\nreference difference at power4/3, for EVERY dyadic subground and every\nnonnegative reference mean. It uses the proved sharp second-cumulant\nbound under the existing finite pair-geometric bundle, then the exact\nBanach exponential remainder. Neither the optimal original-law error nor\nthe Hermite error is an assumed input. OptimalHermiteUnderInputs gives\nthe actual full-law comparison with exact original mean and cumulant,\nproves nonnegative Poisson intensities before constructing the law,\nand obtains both the signed l1 and total-variation optimal power4/3.\nHermiteReference.law is literally the pushforward U+2V of the existing\nproduct of independent Poisson laws with means mu-alpha and alpha/2.\nTogether with the already proved ExplicitHermiteLawUnderInputs bounds\nand moving distance equivalents for EVERY fixed height h>=3, this\ncompletes all source clauses of main19.1, including h=4. No matching\nlower bound is asserted for the exact-parameter Hermite reference.\n\nCoverage becomes87/167 unconditional and55 conditional. The existing164\nmathematical improvements and one confirmed scope correction are unchanged.\nOriginal manuscript bytes, compiler and dependency pins are unchanged.\nPalomar remains a later completion milestone.\n\nEarlier checkpoint history:\nThe exact integer identity and quantum in main17.3 are now proved\nfor everyN>=2 and positive lengthL, without a critical-band assumption.\nThe more general finite statement holds for every deterministic subsetG\nof the dyadic block, with nominal mean#G*2^(-L).\n\n`deficiency` is exactly L minus the actual square-class rank, proved\nnonnegative. `localMultiplicity` is zero when the actual infinite\nmarginal vanishes and otherwise2^deficiency. Its equality with the\nsource compatibility indicator times2^deficiency is proved through the\nactual finite affine system. The actual Bochner marginal is exactly\n2^(-L) times this natural multiplicity; rank truncation and every cast\nare justified. Thus the actual count mean minus the nominal mean is\nexactly2^(-L) times an actual finite sum of integer coefficients.\nNo heterogeneous marginal is replaced by a nominal one.\n\nThe mean equals the nominal mean if and only if the integer bias is\nzero. Every nonzero bias has absolute value at least2^(-L), with the\nexplicit critical lower constant (2^C)^(-1)/N. This includes both signs\nand makes no assertion of infinitely many nonzero scales.\n\nThe proved critical one-window rank theorem gives deficiency at most1\nunder one threshold before every length. Define actual zero windows\nby marginal0 and actual double windows by marginal2*2^(-L). Their\nidentification with local multiplicities0 and2 is proved. They are\ndisjoint and partition the irregular set. Regular windows have\nmultiplicity1. Consequently the literal integer bias satisfies\n\n    M = #double - #zero = 2*#double - #irregular,\n    |M| <= #irregular,\n    M mod2 = #irregular mod2.\n\nAn odd irregular cardinality therefore forces a nonzero mean bias at\nthat scale. Both the finite criterion and its uniform critical version\nare proved. P1-MATH-0085 records this exact signed classification and\nparity criterion. It does not claim odd cardinalities or nonzero biases\nat infinitely many scales.\n\nThe analytic reference comparison is also proved independently:\nif0<=mu,nu<=M and alpha>=-1, then\n\n    ||Q(mu,alpha)-Q(nu,alpha)||_1\n      >=exp(-M)/2*|mu-nu|.\n\nIt uses the actual signed measures and their zero singleton mass;\nthe exponential difference and all infinite sums are justified. The\nparameter assumptions are explicit and are not counted as an actual\nlaw approximation. The remaining conclusions of main17.3 concern\nthe true count law and require the still-open approximation theorem.\nThe result is in progress and adds no proved numbered coverage.\n\nCoverage77/167 (main28/73, companion49/94), confirmed findings85.\nNo new external mathematical input, BCN premise, Paper C port,\ndependency download, manuscript-byte change or Palomar registration.\n\nThe finite analytic mean-change step used in main1.4 and the fixed-height\nhierarchy is now checked for actual signed measures. For nonnegative\nmeansmu,nu and arbitrary realalpha,beta,\n\n    ||Pi_mu-Pi_nu||_1 <= 2*|mu-nu|,\n    ||Q(mu,alpha)-Q(nu,beta)||_1\n      <= 2*(1+2*|alpha|)*|mu-nu| + 2*|alpha-beta|.\n\nThe same bounds hold first in the completed convolution algebra and\nare transported coefficient by coefficient to the ordinary infinite\nsum of absolute singleton masses. The Poisson estimate uses its\nactual nonnegative series, the explicit bound\n||Pi_t-delta_0||<=2*(1-exp(-t))<=2t and the norm-one convolution\nsemigroup. It needs neither a mean cap nor an exponential loss.\nNo reference probability or infinite-tail estimate is assumed.\n\nFor each fixed coefficient boundA>=0 and epsilon>0, one threshold\nprecedes everyN,L in the critical band and every |alpha|<=A. Holding\nalpha fixed, changing the actual original count mean toN*2^(-L)\ncosts at mostN^(-1+epsilon). This uses the already proved actual mean\nbias estimate and is unconditional. At every sufficiently large scale\nwhere the literal integer mean bias is nonzero, the same signed\nreference distance is at leastc_C/N for everyalpha>=-1, with\n\n    c_C = exp(-2*2^C)/(2*2^C) > 0.\n\nBoth signs of the mean bias are included. This is a scale-by-scale\nconditional lower bound, not an assertion that nonzero biases occur\ninfinitely often. The coefficient is held fixed in this lower bound;\nno lower bound for simultaneous arbitrary parameter changes is claimed.\nThe true count-law distance in main17.3 remains open.\n\nFor every fixed heightb>=3 and epsilon>0, the exact-to-nominal mean\nchange is at mostepsilon times the actual moving scalar phase at\nheightb, uniformly for every boundedalpha. The proof uses the full\npositive phase lower boundd*L*N^(-1+1/b) and chooses a mean-bias loss\nstrictly smaller than1/b. A weaker d/N phase lower bound would not\nsuffice for this step. Neither the residue nor the nominal mean is\nfrozen along a subsequence.\n\nFor each literal finite channel coefficientalphaHat_h, h>=3, both\nQ(actualMean,alphaHat_h) and the corresponding actual Hermite law\nare eventually probabilities without BCN or a pair-profile input.\nPositive actual mean bounds and direct smallness/positivity of the\nfinite channel sum establish admissibility. There are actual\nprobability witnesses for Q(actualMean,alphaHat_h) and\nQ(nominalMean,alphaHat_h) whose distances to EVERY probability lawP\ndiffer by at mostepsilon times phaseMass_(h+1). The threshold and\nwitnesses precedeP, and both references retain the same literal\nfinite coefficient. No count-law approximation or leading distance\nequivalent is assumed or established.\n\nThese results complete the analytic mean-replacement step of main1.4\nand18.1. Their original count-law and cumulant remainders, leading\ndistance equivalents and optimality remain open. Main17.3 remains\nin progress for its true-law conclusions. No numbered completion is\nadded: coverage77/167 (main28/73, companion49/94), findings87 unchanged.\nFinding85 is extended with its explicit actual-reference quantum.\nNo new external input, BCN premise, PaperC port, dependency download,\nmanuscript-byte change or Palomar registration is introduced.",
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14395 jobs); direct axiom audit passed for 11845 declarations using only propext, Classical.choice and Quot.sound; all 10501 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.76 GiB.",
+      "notes": "Complete main Corollary1.2 and Proposition17.3 are now internally proved. The exact original-law total variation to the actual-mean Poisson law equals alpha/4 times its second-difference norm up toN^(-4/3+epsilon); for the specified nominal-mean Poisson law the corresponding error isN^(-1+epsilon). Both distances have the same literal moving equivalent with Lmod3, the nominal mean and coefficient(r+2)/(72*2^(r/3)) retained on the entire fixed critical band. No Poisson-mean minimization or fixed-residue subsequence is substituted for the printed statement.\n\nOptimalNominalQuadratic retains the exact integer identity mu-lambda=2^(-L)*M_NL and the finite dichotomy that any nonzero bias has magnitude at least2^(-L). It proves the original nominal-reference errorN^(-1+epsilon), and, at every sufficiently large admissible scale whose integer bias is nonzero, two-sided comparison with the actual mean gap. Its positive lower constant exp(-2*2^C)/4 depends only on the critical band. The same exact second factorial cumulant is used in both quadratic references. No infinitude of nonzero-bias scales is asserted.\n\nFixedPairPhase supplies simultaneous absolute errors for both actual moving pair phases from the previously internal phase equivalents. PoissonScaleRates combines the internal optimal weighted approximation, actual parameter bounds and actual-to-nominal reference comparison. In addition to the two requested error powers it gives a strictN^(-11/12) allowance for the nominal error and mean gap, uniformly before every relative tolerance.\n\nExactPoissonScale then applies the finite exact Poisson-distance expansion and mean-change inequality. It keeps both specified Poisson laws, positive phase denominator, literal phase formula and every relative tolerance explicit. The actual-mean equivalent is compared to the same nominal moving denominator as in the source. All actual/nominal errors, leading second-difference norms and phase comparisons are supplied internally; no target equivalent, external geometric argument or unproved analytic estimate is assumed.\n\nSources rechecked: main1.2, main_sections/introduction.tex lines116-145; main17.3, main_sections/optimal_closure.tex lines107-163, including its no-infinitude qualification. Complete main1.1/13.6/13.8/14.1/14.6/15.14/16.2/17.1/17.2 remain internally proved. The exact-parameter Hermite clause of19.1 remains a separate final assembly. Generic main13.5, full quadratic-degree/all-dimensional BCN, general geometric cover/count properties and companionT19.17's almost-all census are not discharged.\n\nP1-MATH-0491 adds four modules, seven theorems and nine actual-reference/phase/error definitions. Exactly two numbered results, main1.2 and17.3, are promoted from conditional to proved. Coverage becomes160 proved,4 conditional and3 in_progress out of167, with164 completed:70 main results and90 companion results are proved. The project records489 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.\n\nEarlier checkpoint history:\nMain15.14,17.3 and19.1 are now COMPLETE CONDITIONALLY on the existing\nexplicit BCN and finite ordinary/source cover and normalized curve-count\nproperties. No new external input or mathematical correction is introduced.\nThe previously identified sharper41/30 and31/24 obligations remain open.\n\nOptimalTripleReconstructionUnderInputs.article_15_14 assembles BOTH clauses\nof the source theorem for the original full law and exact parameters:\nthe symbolic N^epsilon*A3+N^(-4/3+epsilon) estimate, and its actual optimal\nnumerical upper bound. All finite geometric properties occur before the\ncommon critical threshold. The old symbolic estimate remains independent\nof BCN; the additional numerical clause uses the explicit BCN argument.\n\nQuadraticMeanLawComparison transfers quantitative two-sided mean\nseparation from two actual quadratic references to an arbitrary actual\nsigned law whose approximation error is sufficiently small. With compact\nmean bound M and |alpha|<=1, the explicit lower constant is exp(-M)/4\nand the upper constant is6+exp(-M)/4. OptimalNominalQuadraticUnderInputs\napplies this finite inequality to the ORIGINAL count. The integer mean-bias\nidentity and the exact quantum dichotomy are retained. The actual optimal\napproximation is used at the fixed exponent-5/4, strictly below-1.\nThe quantum lower bound on every NONZERO-bias scale then absorbs the\nremainder. The nominal-reference error is bounded by N^(-1+epsilon),\nand is comparable to the actual mean gap with explicit constants depending\nonly on C whenever the integer bias is nonzero. The same exact second\ncumulant is retained in both references. No existence of infinitely many\nnonzero-bias scales is asserted. The finite geometric bundle is chosen\nat the fixed margin1/12, before the requested final epsilon.\n\nActualHermiteReferenceRateUnderInputs proves the Hermite/quadratic\nreference difference at power4/3, for EVERY dyadic subground and every\nnonnegative reference mean. It uses the proved sharp second-cumulant\nbound under the existing finite pair-geometric bundle, then the exact\nBanach exponential remainder. Neither the optimal original-law error nor\nthe Hermite error is an assumed input. OptimalHermiteUnderInputs gives\nthe actual full-law comparison with exact original mean and cumulant,\nproves nonnegative Poisson intensities before constructing the law,\nand obtains both the signed l1 and total-variation optimal power4/3.\nHermiteReference.law is literally the pushforward U+2V of the existing\nproduct of independent Poisson laws with means mu-alpha and alpha/2.\nTogether with the already proved ExplicitHermiteLawUnderInputs bounds\nand moving distance equivalents for EVERY fixed height h>=3, this\ncompletes all source clauses of main19.1, including h=4. No matching\nlower bound is asserted for the exact-parameter Hermite reference.\n\nCoverage becomes87/167 unconditional and55 conditional. The existing164\nmathematical improvements and one confirmed scope correction are unchanged.\nOriginal manuscript bytes, compiler and dependency pins are unchanged.\nPalomar remains a later completion milestone.\n\nEarlier checkpoint history:\nThe exact integer identity and quantum in main17.3 are now proved\nfor everyN>=2 and positive lengthL, without a critical-band assumption.\nThe more general finite statement holds for every deterministic subsetG\nof the dyadic block, with nominal mean#G*2^(-L).\n\n`deficiency` is exactly L minus the actual square-class rank, proved\nnonnegative. `localMultiplicity` is zero when the actual infinite\nmarginal vanishes and otherwise2^deficiency. Its equality with the\nsource compatibility indicator times2^deficiency is proved through the\nactual finite affine system. The actual Bochner marginal is exactly\n2^(-L) times this natural multiplicity; rank truncation and every cast\nare justified. Thus the actual count mean minus the nominal mean is\nexactly2^(-L) times an actual finite sum of integer coefficients.\nNo heterogeneous marginal is replaced by a nominal one.\n\nThe mean equals the nominal mean if and only if the integer bias is\nzero. Every nonzero bias has absolute value at least2^(-L), with the\nexplicit critical lower constant (2^C)^(-1)/N. This includes both signs\nand makes no assertion of infinitely many nonzero scales.\n\nThe proved critical one-window rank theorem gives deficiency at most1\nunder one threshold before every length. Define actual zero windows\nby marginal0 and actual double windows by marginal2*2^(-L). Their\nidentification with local multiplicities0 and2 is proved. They are\ndisjoint and partition the irregular set. Regular windows have\nmultiplicity1. Consequently the literal integer bias satisfies\n\n    M = #double - #zero = 2*#double - #irregular,\n    |M| <= #irregular,\n    M mod2 = #irregular mod2.\n\nAn odd irregular cardinality therefore forces a nonzero mean bias at\nthat scale. Both the finite criterion and its uniform critical version\nare proved. P1-MATH-0085 records this exact signed classification and\nparity criterion. It does not claim odd cardinalities or nonzero biases\nat infinitely many scales.\n\nThe analytic reference comparison is also proved independently:\nif0<=mu,nu<=M and alpha>=-1, then\n\n    ||Q(mu,alpha)-Q(nu,alpha)||_1\n      >=exp(-M)/2*|mu-nu|.\n\nIt uses the actual signed measures and their zero singleton mass;\nthe exponential difference and all infinite sums are justified. The\nparameter assumptions are explicit and are not counted as an actual\nlaw approximation. The remaining conclusions of main17.3 concern\nthe true count law and require the still-open approximation theorem.\nThe result is in progress and adds no proved numbered coverage.\n\nCoverage77/167 (main28/73, companion49/94), confirmed findings85.\nNo new external mathematical input, BCN premise, Paper C port,\ndependency download, manuscript-byte change or Palomar registration.\n\nThe finite analytic mean-change step used in main1.4 and the fixed-height\nhierarchy is now checked for actual signed measures. For nonnegative\nmeansmu,nu and arbitrary realalpha,beta,\n\n    ||Pi_mu-Pi_nu||_1 <= 2*|mu-nu|,\n    ||Q(mu,alpha)-Q(nu,beta)||_1\n      <= 2*(1+2*|alpha|)*|mu-nu| + 2*|alpha-beta|.\n\nThe same bounds hold first in the completed convolution algebra and\nare transported coefficient by coefficient to the ordinary infinite\nsum of absolute singleton masses. The Poisson estimate uses its\nactual nonnegative series, the explicit bound\n||Pi_t-delta_0||<=2*(1-exp(-t))<=2t and the norm-one convolution\nsemigroup. It needs neither a mean cap nor an exponential loss.\nNo reference probability or infinite-tail estimate is assumed.\n\nFor each fixed coefficient boundA>=0 and epsilon>0, one threshold\nprecedes everyN,L in the critical band and every |alpha|<=A. Holding\nalpha fixed, changing the actual original count mean toN*2^(-L)\ncosts at mostN^(-1+epsilon). This uses the already proved actual mean\nbias estimate and is unconditional. At every sufficiently large scale\nwhere the literal integer mean bias is nonzero, the same signed\nreference distance is at leastc_C/N for everyalpha>=-1, with\n\n    c_C = exp(-2*2^C)/(2*2^C) > 0.\n\nBoth signs of the mean bias are included. This is a scale-by-scale\nconditional lower bound, not an assertion that nonzero biases occur\ninfinitely often. The coefficient is held fixed in this lower bound;\nno lower bound for simultaneous arbitrary parameter changes is claimed.\nThe true count-law distance in main17.3 remains open.\n\nFor every fixed heightb>=3 and epsilon>0, the exact-to-nominal mean\nchange is at mostepsilon times the actual moving scalar phase at\nheightb, uniformly for every boundedalpha. The proof uses the full\npositive phase lower boundd*L*N^(-1+1/b) and chooses a mean-bias loss\nstrictly smaller than1/b. A weaker d/N phase lower bound would not\nsuffice for this step. Neither the residue nor the nominal mean is\nfrozen along a subsequence.\n\nFor each literal finite channel coefficientalphaHat_h, h>=3, both\nQ(actualMean,alphaHat_h) and the corresponding actual Hermite law\nare eventually probabilities without BCN or a pair-profile input.\nPositive actual mean bounds and direct smallness/positivity of the\nfinite channel sum establish admissibility. There are actual\nprobability witnesses for Q(actualMean,alphaHat_h) and\nQ(nominalMean,alphaHat_h) whose distances to EVERY probability lawP\ndiffer by at mostepsilon times phaseMass_(h+1). The threshold and\nwitnesses precedeP, and both references retain the same literal\nfinite coefficient. No count-law approximation or leading distance\nequivalent is assumed or established.\n\nThese results complete the analytic mean-replacement step of main1.4\nand18.1. Their original count-law and cumulant remainders, leading\ndistance equivalents and optimality remain open. Main17.3 remains\nin progress for its true-law conclusions. No numbered completion is\nadded: coverage77/167 (main28/73, companion49/94), findings87 unchanged.\nFinding85 is extended with its explicit actual-reference quantum.\nNo new external input, BCN premise, PaperC port, dependency download,\nmanuscript-byte change or Palomar registration is introduced.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16531 jobs); direct axiom audit passed for 15542 declarations using only propext, Classical.choice and Quot.sound; all 15004 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.89 GiB.",
       "validation_history": [
         {
           "status": "in_progress",
@@ -11636,9 +11719,59 @@
             "P1-MEAN-INTEGER-QUANTUM",
             "P1-PROB-MEAN-PARAMETER-STABILITY"
           ]
+        },
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (14395 jobs); direct axiom audit passed for 11845 declarations using only propext, Classical.choice and Quot.sound; all 10501 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.76 GiB.",
+          "validation_commit": "d388ad4f832a96515f9a14590c04b05bd6580836",
+          "literature_inputs": [
+            "P1-MEAN-INTEGER-QUANTUM",
+            "P1-PROB-MEAN-PARAMETER-STABILITY",
+            "P1-PROB-OPTIMAL-SCALAR-CONSEQUENCES",
+            "P1-GEO-BCN-PLANE-UNIFORM"
+          ]
         }
       ],
-      "validation_commit": "d388ad4f832a96515f9a14590c04b05bd6580836"
+      "canonical_statement": "PaperP1.OptimalNominalQuadratic.article_17_3",
+      "canonical_additional_statements": [
+        "PaperP1.ExactPoissonScale.phaseScale_formula",
+        "PaperP1.PoissonScaleRates.uniform_rates",
+        "PaperP1.FixedPairPhase.uniform_errors",
+        "PaperP1.OptimalNominalQuadratic.uniform_comparison",
+        "PaperP1.OptimalNominalQuadratic.lowerConstant_pos",
+        "PaperP1.ExactPoissonScale.article_1_2",
+        "PaperP1.OptimalNominalQuadratic.article_17_3"
+      ],
+      "remaining_unformalized_inputs": [],
+      "unconditional_parts": [
+        {
+          "part": "Complete original numbered statement, retaining both specified means, literal moving phases and every quantization qualification.",
+          "proof": "PaperP1.OptimalNominalQuadratic.article_17_3",
+          "checkpoint": "P1-MATH-0491"
+        }
+      ],
+      "input_discharges": [
+        {
+          "checkpoint": "P1-MATH-0491",
+          "scope": "Complete main1.2/17.3 only. Internal optimal approximation and actual reference/phase estimates replace the prior bundle; no mean-optimization, nonzero-bias infinitude or general geometric property is claimed.",
+          "previous_inputs": [
+            "P1-MEAN-INTEGER-QUANTUM",
+            "P1-PROB-MEAN-PARAMETER-STABILITY",
+            "P1-PROB-OPTIMAL-SCALAR-CONSEQUENCES",
+            "P1-GEO-BCN-PLANE-UNIFORM",
+            "p1:internal:complete-exact-poisson-scale-mean-bias"
+          ],
+          "internal_proofs": [
+            "PaperP1.ExactPoissonScale.phaseScale_formula",
+            "PaperP1.PoissonScaleRates.uniform_rates",
+            "PaperP1.FixedPairPhase.uniform_errors",
+            "PaperP1.OptimalNominalQuadratic.uniform_comparison",
+            "PaperP1.OptimalNominalQuadratic.lowerConstant_pos",
+            "PaperP1.ExactPoissonScale.article_1_2",
+            "PaperP1.OptimalNominalQuadratic.article_17_3"
+          ]
+        }
+      ]
     },
     {
       "label": "p13:channels:hierarchy",

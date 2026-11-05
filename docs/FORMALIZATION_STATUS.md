@@ -7,6 +7,7 @@ Main13.6 is unconditional (P1-MATH-0486): complete literal nonaligned-rank limsu
 Main13.8 is unconditional (P1-MATH-0487): compatible and nonaligned triple nullity, every actual joint probability and its literal maximum, all on the original windows. The same probability bound covers every family containing a distinct pair.
 Main1.1,15.14 and16.2 are unconditional (P1-MATH-0489): full optimal4/3 exact quadratic approximation, both reconstruction clauses, positive lower obstruction, actual-to-nominal mean bias and eventual probability status. Scalar weighted/Poisson/Hermite consequences remain separate.
 Main17.1/17.2 are unconditional (P1-MATH-0490): every fixed polynomial weight, proved weighted summability, fixed factorial corrections, exact orders0/1/2 and the literal zero-start expansion at the optimal4/3 power.
+Main1.2/17.3 are unconditional (P1-MATH-0491): exact moving Poisson total-variation scale for both specified means, distinct error powers and complete quantized-bias nominal comparison. The exact Hermite19.1 assembly remains separate.
 Neither document is fully formalized.
 
 Main14.1 and14.6 are unconditional (P1-MATH-0488): the three-strong-nonaligned-pair residual has internal actual massN^(-3/2+epsilon), closing the full optimal two-sided41/30 third factorial cumulant and absolute third activity. Every original subground, incompatible sector and repeated-index term is retained.
@@ -57,7 +58,7 @@ CompanionT14.1 is unconditional (P1-MATH-0431), with connected activity strength
 
 CompanionT1.8 is unconditional (P1-MATH-0430): exact dense-component to actual-rank transfer gives subpower nonaligned hosts and both printed kernel sumsN^(1+epsilon), including the full value kernel without block-parity rows.
 
-Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is158 proved,6 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
+Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is160 proved,4 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
 
 The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. The full arbitrary-source statement was subsequently discharged at P1-MATH-0429.
 
@@ -99,7 +100,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is158/167 unconditional and6 conditional (164/167 completed). The project records488 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is160/167 unconditional and4 conditional (164/167 completed). The project records489 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -218,7 +219,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15535 audited theorem/lemma declarations**. This
+- The project currently has **15542 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27065,3 +27066,20 @@ The full optimal main theorem1.1, numerical reconstruction15.14 and exact-refere
 P1-MATH-0490 adds three modules, four theorems and one weighted-error definition. Exactly two numbered results, main17.1 and17.2, are promoted from conditional to proved. Coverage becomes158 proved,6 conditional and3 in_progress out of167, with164 completed:68 main results and90 companion results are proved. The project records488 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16523 jobs); direct axiom audit passed for 15535 declarations using only propext, Classical.choice and Quot.sound; all 14988 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.92 GiB.
+
+
+## Complete exact Poisson total variation scale and quantized nominal mean bias
+
+Complete main Corollary1.2 and Proposition17.3 are now internally proved. The exact original-law total variation to the actual-mean Poisson law equals alpha/4 times its second-difference norm up toN^(-4/3+epsilon); for the specified nominal-mean Poisson law the corresponding error isN^(-1+epsilon). Both distances have the same literal moving equivalent with Lmod3, the nominal mean and coefficient(r+2)/(72*2^(r/3)) retained on the entire fixed critical band. No Poisson-mean minimization or fixed-residue subsequence is substituted for the printed statement.
+
+OptimalNominalQuadratic retains the exact integer identity mu-lambda=2^(-L)*M_NL and the finite dichotomy that any nonzero bias has magnitude at least2^(-L). It proves the original nominal-reference errorN^(-1+epsilon), and, at every sufficiently large admissible scale whose integer bias is nonzero, two-sided comparison with the actual mean gap. Its positive lower constant exp(-2*2^C)/4 depends only on the critical band. The same exact second factorial cumulant is used in both quadratic references. No infinitude of nonzero-bias scales is asserted.
+
+FixedPairPhase supplies simultaneous absolute errors for both actual moving pair phases from the previously internal phase equivalents. PoissonScaleRates combines the internal optimal weighted approximation, actual parameter bounds and actual-to-nominal reference comparison. In addition to the two requested error powers it gives a strictN^(-11/12) allowance for the nominal error and mean gap, uniformly before every relative tolerance.
+
+ExactPoissonScale then applies the finite exact Poisson-distance expansion and mean-change inequality. It keeps both specified Poisson laws, positive phase denominator, literal phase formula and every relative tolerance explicit. The actual-mean equivalent is compared to the same nominal moving denominator as in the source. All actual/nominal errors, leading second-difference norms and phase comparisons are supplied internally; no target equivalent, external geometric argument or unproved analytic estimate is assumed.
+
+Sources rechecked: main1.2, main_sections/introduction.tex lines116-145; main17.3, main_sections/optimal_closure.tex lines107-163, including its no-infinitude qualification. Complete main1.1/13.6/13.8/14.1/14.6/15.14/16.2/17.1/17.2 remain internally proved. The exact-parameter Hermite clause of19.1 remains a separate final assembly. Generic main13.5, full quadratic-degree/all-dimensional BCN, general geometric cover/count properties and companionT19.17's almost-all census are not discharged.
+
+P1-MATH-0491 adds four modules, seven theorems and nine actual-reference/phase/error definitions. Exactly two numbered results, main1.2 and17.3, are promoted from conditional to proved. Coverage becomes160 proved,4 conditional and3 in_progress out of167, with164 completed:70 main results and90 companion results are proved. The project records489 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16531 jobs); direct axiom audit passed for 15542 declarations using only propext, Classical.choice and Quot.sound; all 15004 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.89 GiB.

@@ -24183,6 +24183,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "ac09d6d8c3c8c2a047f76a3891b3bf857d43055c"
+    },
+    {
+      "id": "P1-MATH-0491",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:cor:tv",
+        "number": "1.2",
+        "page": 4,
+        "source": "main_sections/introduction.tex",
+        "line": 116,
+        "statement_sha256": "a0f42f421329445730495eb8212e5f118185dc3ca6c440acd96dc5279dbda027"
+      },
+      "original_assumption": "The complete exact Poisson-scale equivalent and nominal-reference bias comparison retained the finite geometric optimal-law bundle despite internal phase and reference-comparison ingredients.",
+      "finding": "The internally proved optimal approximation and actual parameter/phase bounds close both specified Poisson error powers, the full moving equivalent and the quantized-bias two-sided nominal comparison.",
+      "proposed_revision": "Retain both specified means and their different error powers, the exact moving residue coefficient and the nonzero-integer-bias condition; use only the internal optimal approximation and phase theorems.",
+      "impact": "Closes complete main1.2 and17.3 on the original law, without a target equivalent premise or an assertion of infinitely many biased scales.",
+      "evidence": [
+        "PaperP1.ExactPoissonScale.phaseScale_formula",
+        "PaperP1.ExactPoissonScale.article_1_2",
+        "PaperP1.FixedPairPhase.uniform_errors",
+        "PaperP1.OptimalNominalQuadratic.lowerConstant_pos",
+        "PaperP1.OptimalNominalQuadratic.uniform_comparison",
+        "PaperP1.OptimalNominalQuadratic.article_17_3",
+        "PaperP1.PoissonScaleRates.uniform_rates",
+        "PaperP1.ExactPoissonScale.actualPoisson",
+        "PaperP1.ExactPoissonScale.nominalPoisson",
+        "PaperP1.ExactPoissonScale.actualTV",
+        "PaperP1.ExactPoissonScale.nominalTV",
+        "PaperP1.ExactPoissonScale.phaseScale",
+        "PaperP1.OptimalNominalQuadratic.meanGap",
+        "PaperP1.OptimalNominalQuadratic.nominalError",
+        "PaperP1.OptimalNominalQuadratic.lowerConstant",
+        "PaperP1.PoissonScaleRates.actualError"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16531 jobs); direct axiom audit passed for 15542 declarations using only propext, Classical.choice and Quot.sound; all 15004 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.89 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

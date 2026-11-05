@@ -3976,3 +3976,7 @@ public import PaperP1.Asymptotics.OptimalTripleReconstruction
 public import PaperP1.Asymptotics.ActualQuadraticMomentBounds
 public import PaperP1.Asymptotics.OptimalZeroProbability
 public import PaperP1.Asymptotics.PolynomialWeightedQuadratic
+public import PaperP1.Asymptotics.ExactPoissonScale
+public import PaperP1.Asymptotics.FixedPairPhase
+public import PaperP1.Asymptotics.OptimalNominalQuadratic
+public import PaperP1.Asymptotics.PoissonScaleRates
