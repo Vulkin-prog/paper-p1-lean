@@ -23766,6 +23766,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "b87dfbc1fe07187cde46f5bac9761390d12a0202"
+    },
+    {
+      "id": "P1-MATH-0480",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The internal prime estimates supplied upper bounds but no uniform true-leading lower minorant for the weighted recurrence needed by the fine smooth-count lower route.",
+      "finding": "PNT, finite Abel transport and an exact integer-endpoint integral comparison give sum log(p)*p^(-(1-delta)) >= (1-eta)*(exp(delta logY)-2)/delta-C uniformly before delta and Y.",
+      "proposed_revision": "Use the proved uniform logarithmic prime-weight minorant in the ordinary fine lower route, retaining its fixed finite-prefix allowance and exact exponent domain. Keep the smooth-count barrier and final reciprocal lower bound explicit until proved.",
+      "impact": "Provides a concrete internally proved arithmetic input for the remaining fine lower route, without assuming a smooth-number or reciprocal-prime theorem. Complete numbered conclusions remain conditional.",
+      "evidence": [
+        "PaperP1.PNTLogPrimePowerLower.weight_nonneg",
+        "PaperP1.PNTLogPrimePowerLower.weight_antitone",
+        "PaperP1.PNTLogPrimePowerLower.weight_one_le",
+        "PaperP1.PNTLogPrimePowerLower.uniform_log_power_lower",
+        "PaperP1.PNTLogPrimePowerLower.integer_sum_lower",
+        "PaperP1.PNTLogPrimePowerLower.uniform_lower",
+        "PaperP1.PNTLogPrimePowerLower.uniform_exponential_lower",
+        "PaperP1.PNTWeightedPrimeLower.log_sum_lower_eventually",
+        "PaperP1.PNTWeightedPrimeLower.global_log_sum_lower",
+        "PaperP1.PNTWeightedPrimeLower.weighted_lower",
+        "PaperP1.PNTLogPrimePowerLower.weight"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16451 jobs); direct axiom audit passed for 15437 declarations using only propext, Classical.choice and Quot.sound; all 14879 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.18 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

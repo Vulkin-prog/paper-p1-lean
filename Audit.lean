@@ -5129,6 +5129,13 @@ import PaperP1
 #print axioms PaperP1.OrdinarySmoothSourcePopulation.goodSources_subset
 #print axioms PaperP1.OrdinarySmoothSourcePopulation.source_deletion_ledger
 #print axioms PaperP1.OriginalWindowValueBounds.values_geometry
+#print axioms PaperP1.PNTLogPrimePowerLower.weight_nonneg
+#print axioms PaperP1.PNTLogPrimePowerLower.weight_antitone
+#print axioms PaperP1.PNTLogPrimePowerLower.weight_one_le
+#print axioms PaperP1.PNTLogPrimePowerLower.uniform_log_power_lower
+#print axioms PaperP1.PNTLogPrimePowerLower.integer_sum_lower
+#print axioms PaperP1.PNTLogPrimePowerLower.uniform_lower
+#print axioms PaperP1.PNTLogPrimePowerLower.uniform_exponential_lower
 #print axioms PaperP1.PNTPrimePowerUpper.weight_nonneg
 #print axioms PaperP1.PNTPrimePowerUpper.weight_antitone
 #print axioms PaperP1.PNTPrimePowerUpper.weight_one_le
@@ -5136,6 +5143,9 @@ import PaperP1
 #print axioms PaperP1.PNTPrimePowerUpper.uniform_prime_upper
 #print axioms PaperP1.PNTPrimePowerUpper.uniform_euler_upper
 #print axioms PaperP1.PNTPrimePowerUpper.uniform_pivot_count
+#print axioms PaperP1.PNTWeightedPrimeLower.log_sum_lower_eventually
+#print axioms PaperP1.PNTWeightedPrimeLower.global_log_sum_lower
+#print axioms PaperP1.PNTWeightedPrimeLower.weighted_lower
 #print axioms PaperP1.PNTWeightedPrimeUpper.log_sum_eq_theta
 #print axioms PaperP1.PNTWeightedPrimeUpper.log_sum_upper_eventually
 #print axioms PaperP1.PNTWeightedPrimeUpper.global_log_sum_upper

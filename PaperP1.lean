@@ -3938,3 +3938,5 @@ public import PaperP1.Asymptotics.FineSaddlePivotCount
 public import PaperP1.Asymptotics.FineSignedCostUpper
 public import PaperP1.Analysis.OrdinaryReciprocalPrimeLowerInput
 public import PaperP1.Asymptotics.FineSaddleConclusionsFromLower
+public import PaperP1.Arithmetic.PNTLogPrimePowerLower
+public import PaperP1.Arithmetic.PNTWeightedPrimeLower

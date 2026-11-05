@@ -20015,3 +20015,20 @@ Complete companion T19.15/T19.16 remain conditional until this ordinary fine low
 P1-MATH-0479 adds two modules, seven theorems and one definition. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records477 improvements and two statement-scope corrections. Original sources are preserved; no new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16447 jobs); direct axiom audit passed for 15427 declarations using only propext, Classical.choice and Quot.sound; all 14868 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.20 GiB.
+
+
+## Uniform true-leading logarithmically weighted prime-power lower estimates
+
+The lower route now has an internally proved uniform prime-weight minorant with the true leading constant. For every0<eta<1 there is one C>0 before every0<delta<=1 and every integer Y>=2 such that sum_{p<=Y} log(p)*p^(-(1-delta)) >= (1-eta)*(exp(delta*logY)-2)/delta-C. No reciprocal-prime or smooth-number asymptotic is assumed. The fine ordinary reciprocal lower estimate remains unresolved.
+
+PNTWeightedPrimeLower derives the eventual lower Chebyshev logarithmic sum from Mathlib's internally proved PNT, then supplies one positive finite-prefix allowance for every integer cutoff. weighted_lower proves its finite Abel transport for every nonnegative decreasing weight F, with allowance K*F(1). The comparison sequence is(1-eta) minus its initial allowance; it need not be nonnegative. The summation-by-parts hypotheses apply to the actual nonnegative decreasing weights. The zero cutoff is handled separately and no prime at one is introduced.
+
+PNTLogPrimePowerLower uses the clamped integer weight(max(2,n))^(-sigma). Its nonnegativity, monotonicity for sigma>=0 and value at one are proved. At every actual prime the clamp disappears, so the weighted theorem bounds the literal logarithmically weighted prime-power sum with a single allowance C before sigma and Y.
+
+integer_sum_lower proves the exact lower integral comparison from2 to the actual integer endpoint Y, without replacing that endpoint. An explicit finite embedding into the full shifted weight sum retains both initial clamped weights harmlessly. The exact real-power primitive gives(Y^delta-2^delta)/delta. uniform_lower combines it with the prime comparison; uniform_exponential_lower uses2^delta<=2 and the exact real-power exponential identity. Every exponent restriction, floor-free integer endpoint, sign and common constant is explicit.
+
+These are effective ingredients for a future smooth-count lower barrier. Neither that barrier, its induction over actual integer quotients, nor the fine ordinary reciprocal lower estimate is yet claimed. Canonical complete T19.15/T19.16 still retain the explicit one-sided LowerInput at checkpoint479. Both full fine upper directions, leading coefficient2 limits and qualitative deterministic/randomized all-anchor obstructions remain internal. Full T19.17, full quadratic-degree BCN and optimal strong-triangle weights retain their separately recorded unresolved scopes.
+
+P1-MATH-0480 adds two modules, ten theorems and one definition. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records478 improvements and two statement-scope corrections. The pinned compiler and Mathlib commit are unchanged. No new axiom, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16451 jobs); direct axiom audit passed for 15437 declarations using only propext, Classical.choice and Quot.sound; all 14879 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.18 GiB.
