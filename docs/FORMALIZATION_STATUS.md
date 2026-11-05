@@ -116,7 +116,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records542 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records543 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -235,7 +235,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16110 audited theorem/lemma declarations**. This
+- The project currently has **16117 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27944,3 +27944,22 @@ Thus actual bounded finite linear curve parameters over algebraically closed cha
 P1-MATH-0544 adds six modules and sixteen theorems. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 542 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced. The already pinned Nullstellensatz source is selectively compiled.
 
 Verified under Lean v4.36.0-rc2: full build passed (16921 jobs); direct axiom audit passed for 16110 declarations using only propext, Classical.choice and Quot.sound; all 15694 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.72 GiB.
+
+
+## Actual independent bounded linear Noether normalization with exact curve rank
+
+UnivariateFiniteHilbert proves that an actual graded algebra finite over one genuine degree-one parameter has an eventual constant Hilbert function. The finite actual parameter-module generators are replaced by their actual homogeneous components and supplied to the internally proved one-variable graded-module theorem. Finiteness and the grading concern the same literal polynomial evaluation.
+
+HomogeneousKernelReduction extracts an actual nonzero homogeneous relation from any nonzero homogeneous polynomial ideal. If a finite two-parameter evaluation over an infinite field is noninjective, its actual homogeneous kernel contains such a relation. The internally proved homogeneous linear normalization reduces the genuine kernel quotient to one linear parameter. The actual quotient-lift map is finite because its composition with the quotient map is the original finite evaluation. Composing both finite maps and the literal one-variable rename gives an actual degree-one element over which the original algebra is finite.
+
+FiniteCurveParameterIndependence proves that genuine positive linear Hilbert growth rules out this reduction. A noninjective finite two-parameter evaluation would give an eventual constant Hilbert function. The original actual Hilbert polynomial supplies a positive integer dimension increment, contradicting that constancy. The conclusion is injectivity of the literal two-variable polynomial evaluation, without assuming parameter independence.
+
+FiniteCurveParameterRank computes the actual parameter-extension rank. The genuine two-variable homogeneous pieces have Hilbert polynomial r+1. Finite actual homogeneous module generators and the internally proved graded rank/slope theorem identify the original positive Hilbert slope with the actual module rank over the two-parameter polynomial ring. An explicit identity algebra isomorphism aligns the two literal scalar actions used by the graded map and polynomial evaluation; no typeclass/transparency or proof-setting relaxation is used.
+
+BoundedCurveNoetherNormalization combines these results with the internally constructed bounded finite parameters. For the actual homogeneous prime curve ideal over an algebraically closed characteristic-zero field, genuine Hilbert polynomial D*r+b and fixed actual linear coordinate f outside the ideal, it constructs nonnegative integer coefficients u_i<=((n-1)*D+1)^(n-1). The literal evaluation F[T0,T1] -> F[X]/I sending the parameters to f and the selected integer linear form is finite, injective and has actual module rank exactly D. Thus parameter algebraic independence, finiteness, bounded coefficients, preservation of the fixed first coordinate and exact original curve degree now hold for the same actual map.
+
+This is an actual bounded linear Noether normalization over algebraically closed characteristic-zero fields. Scalar-extension/descent, the additional primitive linear coordinate giving a birational plane image and the exceptional-fibre count remain separate. No complete higher-dimensional counting statement is inferred at this stage. Main13.4 and companionT1.7/T19.17 remain unresolved; main13.5 stays internally proved.
+
+P1-MATH-0545 adds five modules and seven theorems. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 543 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16931 jobs); direct axiom audit passed for 16117 declarations using only propext, Classical.choice and Quot.sound; all 15701 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.70 GiB.

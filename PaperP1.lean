@@ -4148,3 +4148,8 @@ public import PaperP1.Algebra.FiniteLinearZeroFiber
 public import PaperP1.Algebra.ProjectiveAvoidanceRadical
 public import PaperP1.Geometry.BoundedFiniteCurveParameters
 public import PaperP1.Geometry.ProjectiveAvoidanceCone
+public import PaperP1.Algebra.FiniteCurveParameterIndependence
+public import PaperP1.Algebra.FiniteCurveParameterRank
+public import PaperP1.Algebra.HomogeneousKernelReduction
+public import PaperP1.Algebra.UnivariateFiniteHilbert
+public import PaperP1.Geometry.BoundedCurveNoetherNormalization

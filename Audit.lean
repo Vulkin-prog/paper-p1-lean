@@ -951,6 +951,9 @@ import PaperP1
 #print axioms PaperP1.FiniteBivariateScalarDecomposition.component_zero_of_not_mem
 #print axioms PaperP1.FiniteBivariateScalarDecomposition.reconstruction
 #print axioms PaperP1.FiniteCumulantControl.finite_bound
+#print axioms PaperP1.FiniteCurveParameterIndependence.injective
+#print axioms PaperP1.FiniteCurveParameterRank.base_hilbert
+#print axioms PaperP1.FiniteCurveParameterRank.rank_eq_slope
 #print axioms PaperP1.FiniteEvaluationAnnihilator.span_ne_top
 #print axioms PaperP1.FiniteEvaluationAnnihilator.coefficients
 #print axioms PaperP1.Algebra.finiteExpectation_const
@@ -1313,6 +1316,8 @@ import PaperP1
 #print axioms PaperP1.HomogeneousFreeApproximation.exists_homogeneous_free_approximation
 #print axioms PaperP1.HomogeneousHeightOneEquation.exists_equation
 #print axioms PaperP1.HomogeneousIdealPointScaling.zeros_scale
+#print axioms PaperP1.HomogeneousKernelReduction.exists_homogeneous_relation
+#print axioms PaperP1.HomogeneousKernelReduction.exists_one_parameter
 #print axioms PaperP1.HomogeneousLinearForm.eq_sum
 #print axioms PaperP1.HomogeneousLinearForm.eq_three
 #print axioms PaperP1.HomogeneousLinearNormalization.quotientEquiv_mk
@@ -2417,6 +2422,7 @@ import PaperP1
 #print axioms PaperP1.UniformRationalInterpolation.exists_integral_presentation
 #print axioms PaperP1.UniformRationalInterpolation.scalar_degree_eq
 #print axioms PaperP1.UniformRationalInterpolation.integral_point_of_scalar
+#print axioms PaperP1.UnivariateFiniteHilbert.eventually_constant
 #print axioms PaperP1.UnivariateGradedModuleHilbert.parameter_mem
 #print axioms PaperP1.UnivariateGradedModuleHilbert.map_C
 #print axioms PaperP1.UnivariateGradedModuleHilbert.map_homogeneous
@@ -12200,6 +12206,7 @@ import PaperP1
 #print axioms PaperP1.ZeroPartialDegreeFactor.secondForm_nonzero
 #print axioms PaperP1.ZeroPartialDegreeFactor.primitive_second_projection_count
 #print axioms PaperP1.ZeroPartialDegreeFactor.primitive_first_projection_count
+#print axioms PaperP1.BoundedCurveNoetherNormalization.exists_normalization
 #print axioms PaperP1.BoundedFiniteCurveParameters.finite_of_avoidance
 #print axioms PaperP1.BoundedFiniteCurveParameters.exists_bounded_finite_parameters
 #print axioms PaperP1.BoundedProjectiveSectionAvoidance.exists_coefficients

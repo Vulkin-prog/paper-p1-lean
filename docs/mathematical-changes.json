@@ -26347,6 +26347,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "216870f5acfd6a3b2431b380d7c0cb00742a0fac"
+    },
+    {
+      "id": "P1-MATH-0545",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The bounded linear parameter evaluation was finite, but its algebraic independence and exact rank relative to the original Hilbert degree were not yet proved.",
+      "finding": "Positive actual linear Hilbert growth forces the finite parameter evaluation to be injective, and the actual graded rank/slope formula gives rank exactly D for that same bounded map.",
+      "proposed_revision": "Use the proved bounded linear Noether normalization with its exact degree D. Keep scalar-extension/descent, the primitive third coordinate and exceptional-fibre bounds separate.",
+      "impact": "Closes bounded linear Noether normalization, including actual independence and exact degree, while retaining the fixed first coordinate and original homogeneous-ideal/Hilbert model.",
+      "evidence": [
+        "PaperP1.FiniteCurveParameterIndependence.injective",
+        "PaperP1.FiniteCurveParameterRank.base_hilbert",
+        "PaperP1.FiniteCurveParameterRank.rank_eq_slope",
+        "PaperP1.HomogeneousKernelReduction.exists_homogeneous_relation",
+        "PaperP1.HomogeneousKernelReduction.exists_one_parameter",
+        "PaperP1.UnivariateFiniteHilbert.eventually_constant",
+        "PaperP1.BoundedCurveNoetherNormalization.exists_normalization"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16931 jobs); direct axiom audit passed for 16117 declarations using only propext, Classical.choice and Quot.sound; all 15701 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.70 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
