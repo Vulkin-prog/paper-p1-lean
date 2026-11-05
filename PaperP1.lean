@@ -3929,3 +3929,5 @@ public import PaperP1.Asymptotics.PositiveRandomizedPrivateObstruction
 public import PaperP1.Asymptotics.PositiveUniversalPrivateObstruction
 public import PaperP1.Arithmetic.PNTPrimePowerUpper
 public import PaperP1.Arithmetic.PNTWeightedPrimeUpper
+public import PaperP1.Analysis.ExponentialIntegralPowerLog
+public import PaperP1.Analysis.ReciprocalLogPowerIntegral

@@ -19213,3 +19213,20 @@ The reciprocal-logarithmic sum still needs a uniform analytic integral compariso
 P1-MATH-0474 adds two modules, eleven theorems and one definition. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records472 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16429 jobs); direct axiom audit passed for 15390 declarations using only propext, Classical.choice and Quot.sound; all 14828 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.30 GiB.
+
+
+## Uniform exponential-integral Euler and actual pivot bounds at exact moving endpoints
+
+The internal Euler and actual pivot-count bounds now have an explicit exponential-integral form, uniformly at exact moving real endpoints. For each fixed eta>0, one positive C is chosen before every0<delta<=1/2 and every R>=2. The Euler exponent is at most C+(1+eta)*Ei(delta*logR)+(1+eta)*exp(1)*log(1/delta). The corresponding actual pivot count is bounded by X^(1-delta) times that exponential. This is a finite analytic estimate; the fine reciprocal partition and o(nu_N) conclusion remain subsequent work. Full companion T19.15 and its proof at companion_sections/limits_appendix.tex lines1138-1194 were rechecked.
+
+ReciprocalLogPowerIntegral proves positivity, monotonicity, continuity and interval integrability of x^(-sigma)/logx on x>=2. Its integer sum comparison retains the exact endpoint Y, separating the two initial clamped weights and integrating only from2 toY. The real-cutoff theorem then passes from floor(R) toR by nonnegative integral monotonicity. No enlargement to R+2 is used, so a moving saddle argument is not changed silently.
+
+ExponentialIntegralPowerLog.hasDerivAt_primitive and integral_identity prove the exact primitive Ei(delta*logx) for x^(-(1-delta))/logx. The standard exponentialIntegralAnchor is retained: Ei(1) is that anchor, not zero. lower_small proves Ei(u)>=anchor+exp(1)*logu for0<u<=1 by a checked integral comparison. The endpoint delta*log2 is positive and at most one in the stated range. A fixed positive smallEndpointConstant pays both clamped weights, the anchor and the fixed logarithmic endpoint. No singular value at zero is evaluated.
+
+integer_sum_upper gives the resulting exact-cutoff upper bound Ei(delta*logR)+exp(1)*log(1/delta)+smallEndpointConstant. uniform_euler_upper combines it with checkpoint474's true-leading-constant PNT comparison, with C selected before delta and R. uniform_pivot_count transports the actual finite odd-pivot population with the exact one-kernel factor. Every floor, exponent condition and finite positivity hypothesis is explicit and checked; no ordinary EIP theorem is an input.
+
+These estimates provide the uniform exponential-integral ingredient for a finer weighted saddle partition. That partition, its balanced-cost comparison and all o(nu_N) absorptions are not yet claimed. Complete T19.15/T19.16 remain conditional on their fine ordinary EIP input. Their leading coefficient2 limits and both deterministic/randomized qualitative all-anchor obstructions remain internal; full T19.17 still needs its stronger almost-all census and1-o(1) coefficient. General geometry, quadratic-degree BCN and optimal strong-triangle weights retain separate unresolved scopes.
+
+P1-MATH-0475 adds two modules, thirteen theorems and two definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records473 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16433 jobs); direct axiom audit passed for 15403 declarations using only propext, Classical.choice and Quot.sound; all 14843 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.29 GiB.

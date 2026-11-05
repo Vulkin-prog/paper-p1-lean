@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records472 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records473 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15390 audited theorem/lemma declarations**. This
+- The project currently has **15403 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26783,3 +26783,20 @@ The reciprocal-logarithmic sum still needs a uniform analytic integral compariso
 P1-MATH-0474 adds two modules, eleven theorems and one definition. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records472 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16429 jobs); direct axiom audit passed for 15390 declarations using only propext, Classical.choice and Quot.sound; all 14828 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.30 GiB.
+
+
+## Uniform exponential-integral Euler and actual pivot bounds at exact moving endpoints
+
+The internal Euler and actual pivot-count bounds now have an explicit exponential-integral form, uniformly at exact moving real endpoints. For each fixed eta>0, one positive C is chosen before every0<delta<=1/2 and every R>=2. The Euler exponent is at most C+(1+eta)*Ei(delta*logR)+(1+eta)*exp(1)*log(1/delta). The corresponding actual pivot count is bounded by X^(1-delta) times that exponential. This is a finite analytic estimate; the fine reciprocal partition and o(nu_N) conclusion remain subsequent work. Full companion T19.15 and its proof at companion_sections/limits_appendix.tex lines1138-1194 were rechecked.
+
+ReciprocalLogPowerIntegral proves positivity, monotonicity, continuity and interval integrability of x^(-sigma)/logx on x>=2. Its integer sum comparison retains the exact endpoint Y, separating the two initial clamped weights and integrating only from2 toY. The real-cutoff theorem then passes from floor(R) toR by nonnegative integral monotonicity. No enlargement to R+2 is used, so a moving saddle argument is not changed silently.
+
+ExponentialIntegralPowerLog.hasDerivAt_primitive and integral_identity prove the exact primitive Ei(delta*logx) for x^(-(1-delta))/logx. The standard exponentialIntegralAnchor is retained: Ei(1) is that anchor, not zero. lower_small proves Ei(u)>=anchor+exp(1)*logu for0<u<=1 by a checked integral comparison. The endpoint delta*log2 is positive and at most one in the stated range. A fixed positive smallEndpointConstant pays both clamped weights, the anchor and the fixed logarithmic endpoint. No singular value at zero is evaluated.
+
+integer_sum_upper gives the resulting exact-cutoff upper bound Ei(delta*logR)+exp(1)*log(1/delta)+smallEndpointConstant. uniform_euler_upper combines it with checkpoint474's true-leading-constant PNT comparison, with C selected before delta and R. uniform_pivot_count transports the actual finite odd-pivot population with the exact one-kernel factor. Every floor, exponent condition and finite positivity hypothesis is explicit and checked; no ordinary EIP theorem is an input.
+
+These estimates provide the uniform exponential-integral ingredient for a finer weighted saddle partition. That partition, its balanced-cost comparison and all o(nu_N) absorptions are not yet claimed. Complete T19.15/T19.16 remain conditional on their fine ordinary EIP input. Their leading coefficient2 limits and both deterministic/randomized qualitative all-anchor obstructions remain internal; full T19.17 still needs its stronger almost-all census and1-o(1) coefficient. General geometry, quadratic-degree BCN and optimal strong-triangle weights retain separate unresolved scopes.
+
+P1-MATH-0475 adds two modules, thirteen theorems and two definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records473 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16433 jobs); direct axiom audit passed for 15403 declarations using only propext, Classical.choice and Quot.sound; all 14843 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.29 GiB.

@@ -2660,6 +2660,13 @@ import PaperP1
 #print axioms PaperP1.ExponentialIntegralAsymptotics.exponentialIntegralRemainder_bound
 #print axioms PaperP1.ExponentialIntegralAsymptotics.exponentialIntegralRemainder_bound_eventually
 #print axioms PaperP1.ExponentialIntegralAsymptotics.exponentialIntegral_two_term_expansion
+#print axioms PaperP1.ExponentialIntegralPowerLog.hasDerivAt_primitive
+#print axioms PaperP1.ExponentialIntegralPowerLog.integral_identity
+#print axioms PaperP1.ExponentialIntegralPowerLog.lower_small
+#print axioms PaperP1.ExponentialIntegralPowerLog.smallEndpointConstant_pos
+#print axioms PaperP1.ExponentialIntegralPowerLog.integer_sum_upper
+#print axioms PaperP1.ExponentialIntegralPowerLog.uniform_euler_upper
+#print axioms PaperP1.ExponentialIntegralPowerLog.uniform_pivot_count
 #print axioms PaperP1.ExponentialPowerSum.hasSum_exp_series
 #print axioms PaperP1.ExponentialPowerSum.term_nonneg
 #print axioms PaperP1.ExponentialPowerSum.power_le_factorial_exp
@@ -2846,6 +2853,12 @@ import PaperP1
 #print axioms PaperP1.ReciprocalLeadingLimits.ordinary_limit
 #print axioms PaperP1.ReciprocalLeadingLimits.full_limit
 #print axioms PaperP1.ReciprocalLeadingLimits.dyadic_limit
+#print axioms PaperP1.ReciprocalLogPowerIntegral.powerLog_nonneg
+#print axioms PaperP1.ReciprocalLogPowerIntegral.powerLog_antitone
+#print axioms PaperP1.ReciprocalLogPowerIntegral.powerLog_continuous
+#print axioms PaperP1.ReciprocalLogPowerIntegral.powerLog_intervalIntegrable
+#print axioms PaperP1.ReciprocalLogPowerIntegral.shifted_sum_upper
+#print axioms PaperP1.ReciprocalLogPowerIntegral.real_cutoff_sum_upper
 #print axioms PaperP1.ReciprocalOddPivotDyadicScale.nu_shift_bound
 #print axioms PaperP1.ReciprocalOddPivotDyadicScale.uniform_dyadic_sandwich
 #print axioms PaperP1.ReciprocalOddPivotDyadicScale.companion_T19_15

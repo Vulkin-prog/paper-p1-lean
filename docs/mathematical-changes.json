@@ -23591,6 +23591,47 @@
         "status": "not_integrated"
       },
       "validation_commit": "8a3260786bf69b66345938e3a49f155857201f29"
+    },
+    {
+      "id": "P1-MATH-0475",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The true-leading-constant weighted Euler estimate still contained an unevaluated integer reciprocal-logarithmic sum. An endpoint enlargement or neglected Ei normalization could lose the fine saddle precision.",
+      "finding": "An exact-cutoff sum/integral comparison and the standard Ei primitive give a uniform Euler exponent C+(1+eta)Ei(delta logR)+(1+eta)e log(1/delta), and the corresponding actual pivot count, for all0<delta<=1/2 andR>=2.",
+      "proposed_revision": "Use the proved exact-endpoint exponential-integral estimate in the fine upper route, including its actual Ei anchor and small-endpoint allowance. Keep the balanced weighted partition and o(nu_N) transport explicit until separately proved.",
+      "impact": "Supplies the uniform finite analytic Euler ingredient needed for a fine reciprocal upper estimate, without an EIP input. The complete fine equivalent remains unresolved and numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.ExponentialIntegralPowerLog.hasDerivAt_primitive",
+        "PaperP1.ExponentialIntegralPowerLog.integral_identity",
+        "PaperP1.ExponentialIntegralPowerLog.lower_small",
+        "PaperP1.ExponentialIntegralPowerLog.smallEndpointConstant_pos",
+        "PaperP1.ExponentialIntegralPowerLog.integer_sum_upper",
+        "PaperP1.ExponentialIntegralPowerLog.uniform_euler_upper",
+        "PaperP1.ExponentialIntegralPowerLog.uniform_pivot_count",
+        "PaperP1.ReciprocalLogPowerIntegral.powerLog_nonneg",
+        "PaperP1.ReciprocalLogPowerIntegral.powerLog_antitone",
+        "PaperP1.ReciprocalLogPowerIntegral.powerLog_continuous",
+        "PaperP1.ReciprocalLogPowerIntegral.powerLog_intervalIntegrable",
+        "PaperP1.ReciprocalLogPowerIntegral.shifted_sum_upper",
+        "PaperP1.ReciprocalLogPowerIntegral.real_cutoff_sum_upper",
+        "PaperP1.ExponentialIntegralPowerLog.smallEndpointConstant",
+        "PaperP1.ReciprocalLogPowerIntegral.powerLog"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16433 jobs); direct axiom audit passed for 15403 declarations using only propext, Classical.choice and Quot.sound; all 14843 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.29 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
