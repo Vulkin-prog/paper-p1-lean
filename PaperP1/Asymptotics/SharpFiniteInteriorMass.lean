@@ -3,7 +3,7 @@ module
 public import PaperP1.Asymptotics.SharpConnectedChannelMass
 public import PaperP1.Asymptotics.FiniteCompressedInteriorMass
 
-/-! # One finite geometric bundle gives the sharp41/30 interior-channel triple mass -/
+/-! # An internal finite sum gives the sharp41/30 interior-channel triple mass -/
 
 set_option autoImplicit false
 

@@ -6694,6 +6694,9 @@ import PaperP1
 #print axioms PaperP1.AffineRationalTripleEvenProbability.uniform_point_bound
 #print axioms PaperP1.AffineRationalTripleEvenProbability.nonextremal_point_bound
 #print axioms PaperP1.AlignedActivityPower.uniform_bound
+#print axioms PaperP1.AlignedFamilyTripleMass.positive_filter_eq
+#print axioms PaperP1.AlignedFamilyTripleMass.uniform_mass
+#print axioms PaperP1.AlignedFamilyTripleMass.article_14_3
 #print axioms PaperP1.AlignedFamilyTripleMassUnderBCN.positive_filter_eq
 #print axioms PaperP1.AlignedFamilyTripleMassUnderBCN.article_14_3
 #print axioms PaperP1.AlignedPairRank.units_residual_bound
@@ -9897,6 +9900,7 @@ import PaperP1
 #print axioms PaperP1.WeakPairIncidence.good_target_isProbability
 #print axioms PaperP1.WeakPairIncidence.full_single_rates_positive
 #print axioms PaperP1.WeakPairIncidence.full_target_isProbability
+#print axioms PaperP1.WeakPairTripleMass.uniform_bound
 #print axioms PaperP1.WeightedInitialSourceCount.uniform_count
 #print axioms PaperP1.WeightedNonalignedPairs.uniform_families
 #print axioms PaperP1.WeightedNonalignedPairs.regular_nullity_eq_loss

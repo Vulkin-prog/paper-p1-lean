@@ -22667,6 +22667,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "aefeaf7140481c0e8f5d60b70dbcbe42dc42b9c4"
+    },
+    {
+      "id": "P1-MATH-0451",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:third:aligned-family",
+        "number": "14.3",
+        "page": 36,
+        "source": "main_sections/third_cumulant.tex",
+        "line": 145,
+        "statement_sha256": "17f64eddc83c62d1c73f4095af2f0c1a2158823c40fa04df77fe90c5d34792f9"
+      },
+      "original_assumption": "The full geometrically aligned triple family was bounded through the global optimal third-activity theorem, retaining the growing-degree BCN premise and finite geometric properties.",
+      "finding": "A fixed geometric source pair supplies a weak pair after the strong aligned sector is removed. Its exact rank bound caps the full triple nullity at3L/2; internal low-nullity, near-primitive and strong-nonaligned estimates then close the complete remaining population.",
+      "proposed_revision": "Give the aligned-family estimate an autonomous proof: separate strongly aligned triples, use the fixed source as a weak pair on the remainder, and apply the internal weak-pair three-sector reduction. Retain the fixed-family quantifier order, literal geometry, irregular targets and contact cases.",
+      "impact": "Complete main14.3 becomes unconditional without growing-degree BCN or surface-cover hypotheses. The global optimal third-activity upper bound remains a separate obligation. Coverage becomes146 proved,18 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.AlignedFamilyTripleMass.positive_filter_eq",
+        "PaperP1.AlignedFamilyTripleMass.uniform_mass",
+        "PaperP1.AlignedFamilyTripleMass.article_14_3",
+        "PaperP1.WeakPairTripleMass.uniform_bound",
+        "PaperP1.AlignedFamilyTripleMass.families",
+        "PaperP1.AlignedFamilyTripleMass.mass"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16267 jobs); direct axiom audit passed for 15147 declarations using only propext, Classical.choice and Quot.sound; all 14558 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.88 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -3846,3 +3846,5 @@ public import PaperP1.Asymptotics.SharpFiniteInteriorMass
 public import PaperP1.Asymptotics.SharpFixedChannelNonalignedMass
 public import PaperP1.Asymptotics.SharpThirdCumulantLower
 public import PaperP1.Asymptotics.StrongAlignedSharpMass
+public import PaperP1.Asymptotics.AlignedFamilyTripleMass
+public import PaperP1.Asymptotics.WeakPairTripleMass

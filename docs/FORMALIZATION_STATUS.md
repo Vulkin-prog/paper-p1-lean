@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+Main14.3 is unconditional (P1-MATH-0451): the fixed geometric source supplies a weak pair after strong aligned triples are removed. The new internal rank-capped reduction avoids BCN while retaining the full irregular/contact scope.
+
 Main14.4 and14.5 are unconditional (P1-MATH-0450): every strongly aligned connected triple has power41/30, and the explicit rational family gives the true full-count third-cumulant lower41/30 bound. The separate global upper bound remains conditional.
 
 Companion T2.7,T2.8,T3.1 are unconditional (P1-MATH-0449): full original Palm means, actual positive Palm normalization and finite-family ordered triple asymptotics. Complete T4.4/T15.1 are also unconditional (P1-MATH-0448), including the separated41/30 all-cardinality bound and every real cutoff. Earlier progress paragraphs below retain their historical scope.
@@ -43,7 +45,7 @@ CompanionT14.1 is unconditional (P1-MATH-0431), with connected activity strength
 
 CompanionT1.8 is unconditional (P1-MATH-0430): exact dense-component to actual-rank transfer gives subpower nonaligned hosts and both printed kernel sumsN^(1+epsilon), including the full value kernel without block-parity rows.
 
-Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is145 proved,19 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
+Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is146 proved,18 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
 
 The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. The full arbitrary-source statement was subsequently discharged at P1-MATH-0429.
 
@@ -85,7 +87,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is145/167 unconditional and19 conditional (164/167 completed). The project records448 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is146/167 unconditional and18 conditional (164/167 completed). The project records449 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -204,7 +206,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15143 audited theorem/lemma declarations**. This
+- The project currently has **15147 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26359,3 +26361,20 @@ Earlier conditional declarations and literature history are preserved. Only the 
 P1-MATH-0450 adds five modules, nine theorems and one definition. Main14.4 and14.5 move from conditional to proved. Coverage becomes145 proved,19 conditional and3 in_progress out of167, with164 completed. The project records448 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16263 jobs); direct axiom audit passed for 15143 declarations using only propext, Classical.choice and Quot.sound; all 14552 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.89 GiB.
+
+
+## Unconditional fixed geometrically aligned triple families without BCN
+
+Main14.3 now has an unconditional canonical proof on its complete original scope: a fixed finite family of reduced interior geometric channels, chosen beforeN. The source statement and explanatory proof discussion in main_sections/third_cumulant.tex lines145-168 were rechecked. AlignedFamilyTripleMass.article_14_3 bounds every connected triple containing a geometrically aligned pair in this family, including irregular admissible windows, bad source normalization and contacts at distance exactlyL. Exact units and a positive source-pair probability are not required as hypotheses. The zero joint events are included in the finite sum and an exact positive-filter identity restores the printed positive-event convention.
+
+The previous conditional proof bounded this population by the global optimal triple theorem and therefore imported the growing-degree BCN hypothesis. The new proof uses the information supplied by its fixed geometric source pair. After removing the internally controlled strong aligned sector, that source pair is weak. The actual triple rank identity rho(T)<=L+d_xy then caps the whole triple nullity by3L/2 for a sufficiently small fixed weak-pair threshold. No global pointwise nonaligned rank estimate is needed.
+
+WeakPairTripleMass.uniform_bound proves the precise internal reduction. Its cutoff theta is selected before the threshold and before every target population. Every exact pair is weak and at least one pair is weak. The low-nullity sector uses the original connected half-count; the dense sector with all weak proper pairs uses the internal near-primitive triple count. In the remaining sector a strong pair has no exact offset alignment. The one weak pair caps the full nullity, so the already internal strong-nonaligned triple profile at sigma=3/2 gives massN^(-3/2+epsilon). This proves the full three-sector bound without a BCN property, a curve-cover premise or a supplied target estimate.
+
+AlignedFamilyTripleMass.uniform_mass removes the strong aligned sector using the unconditional main14.4 theorem and applies the weak-pair reduction to the exact remainder. Absence of a strong aligned pair makes every exact pair weak. Because the original channel family is fixed, its reduced heights are eventually within the literal allowed alignment range. The original geometric source therefore supplies the required weak pair even when it has no exact unit. Both sectors are summed with a common threshold, proving power41/30 for arbitrary original subpopulations and the complete source family. The old stronger conditional all-family statement remains preserved as history; no uniformity in a growing channel family is asserted by the new fixed-family theorem.
+
+The existing SharpFiniteInteriorMass module description is also updated to reflect its now internal finite sum; its mathematical declarations are unchanged. Earlier conditional declarations and literature history remain preserved. Only the full main14.3 use is discharged. General BCN, geometric covers and the global third-activity upper bound on unrestricted triples remain separate. Original source bytes and Lean/Mathlib pins are unchanged.
+
+P1-MATH-0451 adds two modules, four theorems and two definitions. Main14.3 moves from conditional to proved. Coverage becomes146 proved,18 conditional and3 in_progress out of167, with164 completed. The project records449 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16267 jobs); direct axiom audit passed for 15147 declarations using only propext, Classical.choice and Quot.sound; all 14558 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.88 GiB.

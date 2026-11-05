@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**448 mathematical improvements and two statement-scope corrections are confirmed.**
+**449 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -25508,3 +25508,20 @@ Earlier conditional declarations and literature history are preserved. Only the 
 P1-MATH-0450 adds five modules, nine theorems and one definition. Main14.4 and14.5 move from conditional to proved. Coverage becomes145 proved,19 conditional and3 in_progress out of167, with164 completed. The project records448 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16263 jobs); direct axiom audit passed for 15143 declarations using only propext, Classical.choice and Quot.sound; all 14552 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.89 GiB.
+
+
+## Unconditional fixed geometrically aligned triple families without BCN
+
+Main14.3 now has an unconditional canonical proof on its complete original scope: a fixed finite family of reduced interior geometric channels, chosen beforeN. The source statement and explanatory proof discussion in main_sections/third_cumulant.tex lines145-168 were rechecked. AlignedFamilyTripleMass.article_14_3 bounds every connected triple containing a geometrically aligned pair in this family, including irregular admissible windows, bad source normalization and contacts at distance exactlyL. Exact units and a positive source-pair probability are not required as hypotheses. The zero joint events are included in the finite sum and an exact positive-filter identity restores the printed positive-event convention.
+
+The previous conditional proof bounded this population by the global optimal triple theorem and therefore imported the growing-degree BCN hypothesis. The new proof uses the information supplied by its fixed geometric source pair. After removing the internally controlled strong aligned sector, that source pair is weak. The actual triple rank identity rho(T)<=L+d_xy then caps the whole triple nullity by3L/2 for a sufficiently small fixed weak-pair threshold. No global pointwise nonaligned rank estimate is needed.
+
+WeakPairTripleMass.uniform_bound proves the precise internal reduction. Its cutoff theta is selected before the threshold and before every target population. Every exact pair is weak and at least one pair is weak. The low-nullity sector uses the original connected half-count; the dense sector with all weak proper pairs uses the internal near-primitive triple count. In the remaining sector a strong pair has no exact offset alignment. The one weak pair caps the full nullity, so the already internal strong-nonaligned triple profile at sigma=3/2 gives massN^(-3/2+epsilon). This proves the full three-sector bound without a BCN property, a curve-cover premise or a supplied target estimate.
+
+AlignedFamilyTripleMass.uniform_mass removes the strong aligned sector using the unconditional main14.4 theorem and applies the weak-pair reduction to the exact remainder. Absence of a strong aligned pair makes every exact pair weak. Because the original channel family is fixed, its reduced heights are eventually within the literal allowed alignment range. The original geometric source therefore supplies the required weak pair even when it has no exact unit. Both sectors are summed with a common threshold, proving power41/30 for arbitrary original subpopulations and the complete source family. The old stronger conditional all-family statement remains preserved as history; no uniformity in a growing channel family is asserted by the new fixed-family theorem.
+
+The existing SharpFiniteInteriorMass module description is also updated to reflect its now internal finite sum; its mathematical declarations are unchanged. Earlier conditional declarations and literature history remain preserved. Only the full main14.3 use is discharged. General BCN, geometric covers and the global third-activity upper bound on unrestricted triples remain separate. Original source bytes and Lean/Mathlib pins are unchanged.
+
+P1-MATH-0451 adds two modules, four theorems and two definitions. Main14.3 moves from conditional to proved. Coverage becomes146 proved,18 conditional and3 in_progress out of167, with164 completed. The project records449 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16267 jobs); direct axiom audit passed for 15147 declarations using only propext, Classical.choice and Quot.sound; all 14558 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.88 GiB.
