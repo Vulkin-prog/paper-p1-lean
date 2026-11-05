@@ -1138,6 +1138,10 @@ import PaperP1
 #print axioms PaperP1.HomogeneousDenominator.piece_finite
 #print axioms PaperP1.HomogeneousDenominator.finrank_le_of_component
 #print axioms PaperP1.HomogeneousDenominator.finrank_le
+#print axioms PaperP1.HomogeneousFactorDegrees.order_le_totalDegree
+#print axioms PaperP1.HomogeneousFactorDegrees.order_of_homogeneous
+#print axioms PaperP1.HomogeneousFactorDegrees.homogeneous_of_order_eq_totalDegree
+#print axioms PaperP1.HomogeneousFactorDegrees.homogeneous_factors
 #print axioms PaperP1.HomogeneousFreeApproximation.component_mul_mem_span
 #print axioms PaperP1.HomogeneousFreeApproximation.component_clears
 #print axioms PaperP1.HomogeneousFreeApproximation.exists_homogeneous_free_approximation
