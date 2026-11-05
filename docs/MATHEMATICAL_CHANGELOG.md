@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**404 mathematical improvements and two statement-scope corrections are confirmed.**
+**405 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24772,3 +24772,18 @@ The obstruction estimate is a bound for the complete expression used in Polynomi
 This is preparatory work toward a weaker polynomial dependence on D. It does not prove the D^2 logarithmic BCN bound, the original full growing-degree corollary or the sharp half-window rank consequence. P1-MATH-0406 adds one module, eight theorems and three definitions. Coverage stays93 proved and71 conditional out of167, with164 completed and three in_progress. The ledger records404 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15751 jobs); direct axiom audit passed for 14606 declarations using only propext, Classical.choice and Quot.sound; all 13948 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.15 GiB.
+
+
+## Unconditional dense primitive triples and nonaligned pairs
+
+The complete canonical chains for companion T8.2 and T8.3 now expose no unproved geometric or arithmetic argument. ActivePhysicalGroupCount replaces its bounded-degree BCN use by the internally proved full PolynomialConfinement theorem from checkpoint402. It counts actual composite prime groups once, retaining repeated projected offsets and all active ternary supports after restriction. The group threshold precedes every code, restriction, cutoff and actual finite family.
+
+DensePhysicalKernelWitness then constructs two actual small-kernel positions in every block of each dense regularized relation space. The physical grouping, erasure dimension cost, injective projections and actual kernel estimates are retained. DensePrimitiveTripleHosts gives the N^epsilon host bound for actual dense primitive triples. DensePrimitiveTripleRankMass gives both heterogeneous rank mass and the source homogeneous mass at power2. PrimitiveTripleMass combines this with the unconditional low-nullity bound: every actual primitive triple family has joint-plus-absolute-centered activity at power3/2. The bundled companion_T8_2 has one threshold for the source host, dense-mass and total-activity conclusions, including local defects, incompatible systems and zero marginals.
+
+DenseNonalignedPairs proves the full companion T8.3 host bound with no unproved input. The effective actual relation space, full local no-exact-unit convention and printed density threshold eta*(L+1) are retained; the broader eta*L and enlarged-nonalignment forms are also proved. Every constant and threshold precedes the actual finite selected pair population.
+
+The original statements and proofs in companion_sections/confinement.tex lines75-170 were rechecked. The removal of BCN is confined to its bounded-degree use along this chain: the original full growing-degree and all-dimensional BCN theorem remains open, as do downstream statements which use that stronger theorem elsewhere. Earlier conditional declarations and validation history remain available for comparison.
+
+P1-MATH-0407 adds six modules and fifteen theorems. Companion T8.2 andT8.3 move from conditional to proved. Coverage becomes95 proved and69 conditional out of167, with164 completed and three in_progress. The ledger records405 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15763 jobs); direct axiom audit passed for 14621 declarations using only propext, Classical.choice and Quot.sound; all 13963 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.12 GiB.

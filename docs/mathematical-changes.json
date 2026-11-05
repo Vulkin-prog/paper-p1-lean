@@ -20875,6 +20875,47 @@
         "status": "not_integrated"
       },
       "validation_commit": "7435d249a187a72f423b8cce46ca0ce634a167f2"
+    },
+    {
+      "id": "P1-MATH-0407",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:conf:dense-primitive",
+        "number": "T8.2",
+        "page": 37,
+        "source": "companion_sections/confinement.tex",
+        "line": 75,
+        "statement_sha256": "ff492c29ca556e863681d36f4ccffc4abb8f6fa8ebac9dd03e98e106d52f4202"
+      },
+      "original_assumption": "The dense primitive-triple and nonaligned-pair chains still required the full BCN property through common-divisor confinement, although that use involved only fixed auxiliary degrees.",
+      "finding": "Replacing that bounded-degree use with the internally proved T8.1 makes the full source T8.2 host/mass/activity assertions and T8.3 dense-pair host assertion unconditional on actual original-model data.",
+      "proposed_revision": "Cite the unconditional common-divisor confinement and dense physical-kernel chain for T8.2 andT8.3. Keep BCN only where a later argument actually requires its full growing-degree scope.",
+      "impact": "Companion T8.2 andT8.3 move from conditional to proved:95 proved,69 conditional,3 in_progress out of167. The sharp growing-degree BCN obligation is not discharged globally.",
+      "evidence": [
+        "PaperP1.ActivePhysicalGroupCount.uniform_count_active",
+        "PaperP1.ActivePhysicalGroupCount.uniform_count",
+        "PaperP1.DenseNonalignedPairs.uniform_kernel_hosts_of_no_exact",
+        "PaperP1.DenseNonalignedPairs.uniform_kernel_hosts",
+        "PaperP1.DenseNonalignedPairs.companion_T8_3_no_exact",
+        "PaperP1.DenseNonalignedPairs.companion_T8_3",
+        "PaperP1.DensePhysicalKernelWitness.uniform_witness_active",
+        "PaperP1.DensePhysicalKernelWitness.uniform_witness",
+        "PaperP1.DensePrimitiveTripleHosts.uniform_hosts",
+        "PaperP1.DensePrimitiveTripleHosts.companion_T8_2_hosts",
+        "PaperP1.DensePrimitiveTripleRankMass.uniform_rank_mass",
+        "PaperP1.DensePrimitiveTripleRankMass.uniform_nominal_mass",
+        "PaperP1.PrimitiveTripleMass.uniform_rank_mass",
+        "PaperP1.PrimitiveTripleMass.uniform_actual_activity",
+        "PaperP1.PrimitiveTripleMass.companion_T8_2"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15763 jobs); direct axiom audit passed for 14621 declarations using only propext, Classical.choice and Quot.sound; all 13963 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.12 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

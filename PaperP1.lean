@@ -3590,3 +3590,9 @@ public import PaperP1.Arithmetic.PolynomialPrimeCover
 public import PaperP1.Diophantine.PolynomialPrimeAffineCount
 public import PaperP1.Arithmetic.DegreeUniformPlanePresentation
 public import PaperP1.Arithmetic.DegreeUniformAffineParameters
+public import PaperP1.Asymptotics.ActivePhysicalGroupCount
+public import PaperP1.Asymptotics.DenseNonalignedPairs
+public import PaperP1.Asymptotics.DensePhysicalKernelWitness
+public import PaperP1.Asymptotics.DensePrimitiveTripleHosts
+public import PaperP1.Asymptotics.DensePrimitiveTripleRankMass
+public import PaperP1.Asymptotics.PrimitiveTripleMass

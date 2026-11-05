@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is93/167 unconditional and71 conditional (164/167 completed). The project records404 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is95/167 unconditional and69 conditional (164/167 completed). The project records405 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -33,9 +33,9 @@ Main12.1 is complete conditionally on the existing explicit BCN input: actual de
 
 Main12.2 is complete conditionally on the existing BCN input alone: actual strong locally nonaligned connected triples have the printed joint-mass exponent min(3/2,3-sigma). The source pool and target populations are constructed; all conditional target bounds are unconditional. P1-MATH-0152 simplifies both branches using the new T8.3 count.
 
-CompanionT8.2 andT8.3 are complete conditionally on the existing explicit BCN input. Dense actual primitive triples and locally nonaligned pairs have at mostN^epsilon hosts; dense triple heterogeneous and nominal mass has power2, and every primitive triple family has absolute centered activity of power3/2. Local defects, incompatibility and zero marginals are included. T8.3 now uses the full section-local no-exact-unit convention, extending its earlier enlarged-nonalignment subcase.
+CompanionT8.2 andT8.3 are unconditional (P1-MATH-0407): their bounded-degree confinement use is internally proved. Dense actual primitive triples and locally nonaligned pairs have at mostN^epsilon hosts; dense triple heterogeneous and nominal mass has power2, and every primitive triple family has absolute centered activity of power3/2. Local defects, incompatibility and zero marginals are included. T8.3 now uses the full section-local no-exact-unit convention, extending its earlier enlarged-nonalignment subcase.
 
-CompanionT8.1 is complete conditionally on the existing explicit BCN field property: actual composite-divisor count, full point multiplicities, little-o and literal erasure of exact alignments. The auxiliary-polynomial construction is unconditional; the separate Pila-only dependency route remains unbridged.
+CompanionT8.1 is unconditional (P1-MATH-0402): actual composite-divisor count, full point multiplicities, little-o and literal erasure of exact alignments are all internally proved. Its fixed-degree use of BCN is replaced by the proved affine count; the stronger full growing-degree BCN theorem remains open.
 
 Main18.2 is complete conditionally: the literal homogeneous rank sum includes every incompatible regular separated nonaligned pair, and the actual covariance consequence follows from a sharp heterogeneous finite bound. Both estimates also hold on every distinct nonaligned dyadic ordered subfamily.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14606 audited theorem/lemma declarations**. This
+- The project currently has **14621 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25551,3 +25551,18 @@ The obstruction estimate is a bound for the complete expression used in Polynomi
 This is preparatory work toward a weaker polynomial dependence on D. It does not prove the D^2 logarithmic BCN bound, the original full growing-degree corollary or the sharp half-window rank consequence. P1-MATH-0406 adds one module, eight theorems and three definitions. Coverage stays93 proved and71 conditional out of167, with164 completed and three in_progress. The ledger records404 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15751 jobs); direct axiom audit passed for 14606 declarations using only propext, Classical.choice and Quot.sound; all 13948 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.15 GiB.
+
+
+## Unconditional dense primitive triples and nonaligned pairs
+
+The complete canonical chains for companion T8.2 and T8.3 now expose no unproved geometric or arithmetic argument. ActivePhysicalGroupCount replaces its bounded-degree BCN use by the internally proved full PolynomialConfinement theorem from checkpoint402. It counts actual composite prime groups once, retaining repeated projected offsets and all active ternary supports after restriction. The group threshold precedes every code, restriction, cutoff and actual finite family.
+
+DensePhysicalKernelWitness then constructs two actual small-kernel positions in every block of each dense regularized relation space. The physical grouping, erasure dimension cost, injective projections and actual kernel estimates are retained. DensePrimitiveTripleHosts gives the N^epsilon host bound for actual dense primitive triples. DensePrimitiveTripleRankMass gives both heterogeneous rank mass and the source homogeneous mass at power2. PrimitiveTripleMass combines this with the unconditional low-nullity bound: every actual primitive triple family has joint-plus-absolute-centered activity at power3/2. The bundled companion_T8_2 has one threshold for the source host, dense-mass and total-activity conclusions, including local defects, incompatible systems and zero marginals.
+
+DenseNonalignedPairs proves the full companion T8.3 host bound with no unproved input. The effective actual relation space, full local no-exact-unit convention and printed density threshold eta*(L+1) are retained; the broader eta*L and enlarged-nonalignment forms are also proved. Every constant and threshold precedes the actual finite selected pair population.
+
+The original statements and proofs in companion_sections/confinement.tex lines75-170 were rechecked. The removal of BCN is confined to its bounded-degree use along this chain: the original full growing-degree and all-dimensional BCN theorem remains open, as do downstream statements which use that stronger theorem elsewhere. Earlier conditional declarations and validation history remain available for comparison.
+
+P1-MATH-0407 adds six modules and fifteen theorems. Companion T8.2 andT8.3 move from conditional to proved. Coverage becomes95 proved and69 conditional out of167, with164 completed and three in_progress. The ledger records405 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15763 jobs); direct axiom audit passed for 14621 declarations using only propext, Classical.choice and Quot.sound; all 13963 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.12 GiB.
