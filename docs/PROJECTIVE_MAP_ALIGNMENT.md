@@ -17339,3 +17339,16 @@ This closes the finite-field class-count budget required by the local determinan
 P1-MATH-0354 adds four theorems. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records352 improvements and two statement-scope corrections. All dependencies were already available locally. No axiom, unproved literature premise, compiler change or original manuscript edit is introduced. The global sharp b>=2 input and main13.4 remain open; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15619 jobs); direct axiom audit passed for 14298 declarations using only propext, Classical.choice and Quot.sound; all 13586 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.13 GiB.
+
+
+## Actual projective smooth residue map and complete fixed-prime count
+
+SmoothResidueClasses.fixed_prime_count proves that any finite population of signed primitive zeros of geometrically irreducible G with absolute boxes L,Y and with p avoiding the actual denominator-times-projective-derivative integer has cardinality at most4*(degreeX G+degreeY G)^2*(H+J)*p, whenever J<degreeY G and the exact checked determinant size inequality holds. Every point is mapped into a canonical actual residue class, its integer class representatives are constructed, the auxiliary and per-class count are invoked internally, and the total number of classes is bounded internally.
+
+badInteger is the literal product of the two original denominators and the projective evaluation of G.derivative at the original signed point. good_data extracts the exact three nondivisibility conditions. normalized_zero_iff proves the original projective evaluation and affine normalized evaluation are equivalent modulo p, using the original actual degrees even under coefficient drops. residue_smooth derives the curve and derivative conditions, residue_congruence proves the literal integer congruences, and classPoint_of_residue reconstructs all local point data. residue_image_card bounds the actual residue image by(degreeX G+degreeY G)*p.
+
+This closes the complete fixed-prime counting argument. No prime-cover, residue-count, minor, auxiliary or per-class bound is assumed. The remaining hypotheses are literal original point data, actual prime avoidance and the numerical size comparison. Globally, the zero-product exceptions and its size bound must still be controlled, then the constructed dyadic prime family and final exponent choices assembled.
+
+P1-MATH-0355 adds seven theorems and the two literal integer and residue definitions. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records353 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. The global sharp b>=2 input and main13.4 remain open; Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15621 jobs); direct axiom audit passed for 14305 declarations using only propext, Classical.choice and Quot.sound; all 13595 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.11 GiB.

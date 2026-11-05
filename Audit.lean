@@ -10381,6 +10381,13 @@ import PaperP1
 #print axioms PaperP1.SmoothClassPointCount.degree_rationalize
 #print axioms PaperP1.SmoothClassPointCount.common_points_card
 #print axioms PaperP1.SmoothClassPointCount.smooth_class_card
+#print axioms PaperP1.SmoothResidueClasses.good_data
+#print axioms PaperP1.SmoothResidueClasses.normalized_zero_iff
+#print axioms PaperP1.SmoothResidueClasses.residue_smooth
+#print axioms PaperP1.SmoothResidueClasses.residue_congruence
+#print axioms PaperP1.SmoothResidueClasses.classPoint_of_residue
+#print axioms PaperP1.SmoothResidueClasses.residue_image_card
+#print axioms PaperP1.SmoothResidueClasses.fixed_prime_count
 #print axioms PaperP1.SourceBihomogeneousEquation.source_homogeneous
 #print axioms PaperP1.SourceBihomogeneousEquation.source_evaluation
 #print axioms PaperP1.SourceBihomogeneousEquation.inverse_equation_value
