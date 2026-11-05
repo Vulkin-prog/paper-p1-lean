@@ -3541,3 +3541,4 @@ public import PaperP1.Algebra.TotalDegreeMonomials
 public import PaperP1.Arithmetic.BoundedPlaneInterpolation
 public import PaperP1.Arithmetic.SmallHeightGeometricPlanePointInput
 public import PaperP1.Algebra.LinearPolynomialHeightTransport
+public import PaperP1.Algebra.GeometricBiformDegrees

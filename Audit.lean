@@ -1015,6 +1015,13 @@ import PaperP1
 #print axioms PaperP1.FreeApproximationRank.finite_of_span
 #print axioms PaperP1.FreeApproximationRank.finrank_eq
 #print axioms PaperP1.FreeApproximationRank.fraction_finrank_eq
+#print axioms PaperP1.GeometricBiformDegrees.constant_outer_degree
+#print axioms PaperP1.GeometricBiformDegrees.constant_irreducible_reflection
+#print axioms PaperP1.GeometricBiformDegrees.univariate_degree_one
+#print axioms PaperP1.GeometricBiformDegrees.outer_degree_pos
+#print axioms PaperP1.GeometricBiformDegrees.positive_partial_degrees
+#print axioms PaperP1.GeometricBiformDegrees.integer_outer_degree_pos
+#print axioms PaperP1.GeometricBiformDegrees.integer_positive_degrees
 #print axioms PaperP1.GeometricFactorSwap.comm_coefficient
 #print axioms PaperP1.GeometricFactorSwap.complex_coefficient
 #print axioms PaperP1.GeometricFactorSwap.complex_projective_swap

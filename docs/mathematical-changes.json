@@ -19639,6 +19639,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "4d9e3a22dffbb0fba621d533c157bafb5d88e057"
+    },
+    {
+      "id": "P1-MATH-0371",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "Applying the proved biform estimate to general absolutely irreducible plane equations required both actual partial degrees positive, including a checked exclusion of univariate degree>=2 cases.",
+      "finding": "Every irreducible equation over an algebraically closed field with total degree>=2 has both partial degrees positive; the result transports exactly to geometric integer biforms.",
+      "proposed_revision": "Choose the variable of larger actual partial degree and apply the proved biform bound with controlled coefficient height to obtain a fixed-degree intermediate plane count.",
+      "impact": "Closes all zero-partial-degree cases needed for the biform application. The degree-uniform geometric BCN count and full main13.4 remain open; coverage is unchanged.",
+      "evidence": [
+        "PaperP1.GeometricBiformDegrees.constant_outer_degree",
+        "PaperP1.GeometricBiformDegrees.constant_irreducible_reflection",
+        "PaperP1.GeometricBiformDegrees.univariate_degree_one",
+        "PaperP1.GeometricBiformDegrees.outer_degree_pos",
+        "PaperP1.GeometricBiformDegrees.positive_partial_degrees",
+        "PaperP1.GeometricBiformDegrees.integer_outer_degree_pos",
+        "PaperP1.GeometricBiformDegrees.integer_positive_degrees"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15655 jobs); direct axiom audit passed for 14391 declarations using only propext, Classical.choice and Quot.sound; all 13691 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.89 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

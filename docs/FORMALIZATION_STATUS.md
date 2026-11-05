@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records368 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records369 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14384 audited theorem/lemma declarations**. This
+- The project currently has **14391 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25037,3 +25037,16 @@ These checked finite coefficient budgets prepare bounded integer coordinate chan
 P1-MATH-0370 adds five theorems and two actual basis/budget definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records368 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15653 jobs); direct axiom audit passed for 14384 declarations using only propext, Classical.choice and Quot.sound; all 13684 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.90 GiB.
+
+
+## Positive partial degrees for every geometric plane curve of total degree at least two
+
+GeometricBiformDegrees.positive_partial_degrees proves that every irreducible plane equation of total degree at least two over an algebraically closed field has both partial degrees positive. univariate_degree_one proves the excluded case exactly: if the outer degree is zero, irreducibility reflects to the single-variable polynomial and algebraic closedness forces actual total degree one. outer_degree_pos applies this contradiction.
+
+constant_outer_degree computes the actual total degree of a nested constant polynomial, and constant_irreducible_reflection proves irreducibility reflects through the outer constant embedding using the evaluation retraction. integer_outer_degree_pos and integer_positive_degrees transport the result to the original actual signed integer biform under its geometric projective irreducibility, with exact coefficient-map degree preservation and actual coordinate swap.
+
+These algebraic facts allow the complete proved Heath-Brown input to be applied to every absolutely irreducible integer plane curve of total degree at least two. A fixed-degree coefficient-uniform weaker plane bound is the next application; the stronger degree-uniform BCN estimate is not proved by this module.
+
+P1-MATH-0371 adds seven theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records369 improvements and two statement-scope corrections. All artifacts were already available locally. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 remains open and Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15655 jobs); direct axiom audit passed for 14391 declarations using only propext, Classical.choice and Quot.sound; all 13691 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.89 GiB.
