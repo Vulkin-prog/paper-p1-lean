@@ -19938,6 +19938,51 @@
         "status": "not_integrated"
       },
       "validation_commit": "c64522158b5bc0c5e32a700fb9daee5907b68289"
+    },
+    {
+      "id": "P1-MATH-0380",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The unconditional plane route still lacked exact general-conic coordinates preserving signed integer points and controlled coefficient/coordinate heights.",
+      "finding": "Every six-coefficient integer conic now has an exact signed norm identity, an injective actual point transformation under its displayed nonzero conditions, and explicit polynomial coefficient and coordinate-height budgets.",
+      "proposed_revision": "Use these exact coordinates in the separate conic branch, proving presentation extraction and all sign/degeneracy cases before asserting any coefficient-uniform count.",
+      "impact": "Closes exact conic algebra and height transport without assuming a counting theorem. The conic count, BCN property and main13.4 remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.ConicNormCoordinates.coefficient_bounds",
+        "PaperP1.ConicNormCoordinates.square_identity",
+        "PaperP1.ConicNormCoordinates.norm_identity",
+        "PaperP1.ConicNormCoordinates.zero_maps_to_norm",
+        "PaperP1.ConicNormCoordinates.transform_injective",
+        "PaperP1.ConicNormCoordinates.discriminant_bound",
+        "PaperP1.ConicNormCoordinates.linear_bound",
+        "PaperP1.ConicNormCoordinates.constant_bound",
+        "PaperP1.ConicNormCoordinates.normConstant_bound",
+        "PaperP1.ConicNormCoordinates.transform_bounds",
+        "PaperP1.ConicNormCoordinates.Coefficients",
+        "PaperP1.ConicNormCoordinates.value",
+        "PaperP1.ConicNormCoordinates.height",
+        "PaperP1.ConicNormCoordinates.discriminant",
+        "PaperP1.ConicNormCoordinates.linear",
+        "PaperP1.ConicNormCoordinates.constant",
+        "PaperP1.ConicNormCoordinates.normConstant",
+        "PaperP1.ConicNormCoordinates.squareCoordinate",
+        "PaperP1.ConicNormCoordinates.transform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15675 jobs); direct axiom audit passed for 14444 declarations using only propext, Classical.choice and Quot.sound; all 13759 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.75 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
