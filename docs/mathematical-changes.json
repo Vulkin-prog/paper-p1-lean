@@ -22390,6 +22390,47 @@
         "status": "not_integrated"
       },
       "validation_commit": "53339ba9700f053f5886ca66218d8e270d8b48de"
+    },
+    {
+      "id": "P1-MATH-0446",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:asymmetric",
+        "number": "T1.10",
+        "page": 14,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 811,
+        "statement_sha256": "e176fe0574fc119242f3c523853be4fdc4ff53b0366327c5f6387f1af29c802a"
+      },
+      "original_assumption": "The checked corrected31/24 asymmetric weighted profiles retained four surface/curve properties through their dense sector, while the source radius-one statement was already disproved.",
+      "finding": "Actual asymmetric pin inclusion transports every dense component family to the internal pinned-subset confinement count. The resulting dense weighted rate1 and existing internal biform support estimates prove both complete corrected31/24 profiles without unformalized inputs.",
+      "proposed_revision": "Replace the geometric dense-sector route by literal asymmetric-to-subset pin inclusion and internal bounded-width confinement. Use the complete internally proved sharp sparse support and retain the explicit enlarged exclusion radius, cutoff interval, actual weights and precise dyadic/expanded-old domains.",
+      "impact": "Both checked sharp correctedT1.10 revision variants become unconditional. The false original radius-one statement staysin_progress and no new numbered result is counted complete. Corrected-profile geometric discharges are restricted to these exact applications.",
+      "evidence": [
+        "PaperP1.AsymmetricCoarseProfile.weight_nonneg",
+        "PaperP1.AsymmetricCoarseProfile.uniform_profile",
+        "PaperP1.AsymmetricDenseMass.uniform_weight",
+        "PaperP1.AsymmetricSubsetComponents.pins_subset",
+        "PaperP1.AsymmetricSubsetComponents.nontrivial_subset",
+        "PaperP1.ExpandedAsymmetricCoarseProfile.uniform_profile",
+        "PaperP1.ExpandedAsymmetricDenseMass.uniform_weight",
+        "PaperP1.RestrictedAsymmetricProfile.uniform_weight",
+        "PaperP1.SharpAsymmetricProfile.uniform_profile",
+        "PaperP1.SharpExpandedAsymmetricProfile.uniform_profile",
+        "PaperP1.AsymmetricCoarseProfile.weight",
+        "PaperP1.AsymmetricCoarseProfile.nonalignedPairs",
+        "PaperP1.AsymmetricCoarseProfile.profile",
+        "PaperP1.ExpandedAsymmetricCoarseProfile.nonalignedPairs",
+        "PaperP1.ExpandedAsymmetricCoarseProfile.profile"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16195 jobs); direct axiom audit passed for 15049 declarations using only propext, Classical.choice and Quot.sound; all 14425 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.01 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

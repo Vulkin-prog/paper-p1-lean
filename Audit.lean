@@ -6822,6 +6822,8 @@ import PaperP1
 #print axioms PaperP1.AsymmetricAlignmentScopeObstruction.profile_eq_total
 #print axioms PaperP1.AsymmetricAlignmentScopeObstruction.violates_printed_exponent
 #print axioms PaperP1.AsymmetricAlignmentScopeObstruction.no_uniform_radius_one_bound
+#print axioms PaperP1.AsymmetricCoarseProfile.weight_nonneg
+#print axioms PaperP1.AsymmetricCoarseProfile.uniform_profile
 #print axioms PaperP1.AsymmetricCoarseProfileUnderInputs.weight_nonneg
 #print axioms PaperP1.AsymmetricCoarseProfileUnderInputs.uniform_profile
 #print axioms PaperP1.AsymmetricComponentHostCount.castPair_injective
@@ -6842,11 +6844,14 @@ import PaperP1
 #print axioms PaperP1.AsymmetricDefectDensity.card_eq_interval
 #print axioms PaperP1.AsymmetricDefectDensity.uniform_constant
 #print axioms PaperP1.AsymmetricDefectDensity.uniform_density
+#print axioms PaperP1.AsymmetricDenseMass.uniform_weight
 #print axioms PaperP1.AsymmetricDenseMassUnderInputs.uniform_weight
 #print axioms PaperP1.AsymmetricKernelPowers.uniform_global
 #print axioms PaperP1.AsymmetricKernelPowers.few_components
 #print axioms PaperP1.AsymmetricKernelPowers.few_typed
 #print axioms PaperP1.AsymmetricSparseSupport.uniform_count
+#print axioms PaperP1.AsymmetricSubsetComponents.pins_subset
+#print axioms PaperP1.AsymmetricSubsetComponents.nontrivial_subset
 #print axioms PaperP1.BiformCoordinateHeight.explicit_bound_le_power
 #print axioms PaperP1.BiformCoordinateHeight.uniform_transformed_height
 #print axioms PaperP1.BinaryRankPowers.constant_pos
@@ -7678,6 +7683,7 @@ import PaperP1
 #print axioms PaperP1.ExpSqrtLog.two_pow_log_div_loglog_pow_le_nat_eventually
 #print axioms PaperP1.ExpSqrtLog.uniformSubpolynomialOn_two_pow_log_div_loglog
 #print axioms PaperP1.ExpSqrtLog.uniformSubpolynomialOn_weighted_defect_factor
+#print axioms PaperP1.ExpandedAsymmetricCoarseProfile.uniform_profile
 #print axioms PaperP1.ExpandedAsymmetricCoarseProfileUnderInputs.uniform_profile
 #print axioms PaperP1.ExpandedAsymmetricComponentHostCount.cast_expanded
 #print axioms PaperP1.ExpandedAsymmetricComponentHostCount.uniform_general
@@ -7685,6 +7691,7 @@ import PaperP1
 #print axioms PaperP1.ExpandedAsymmetricComponentHostCount.uniform_dense
 #print axioms PaperP1.ExpandedAsymmetricDefectDensity.uniform_constant
 #print axioms PaperP1.ExpandedAsymmetricDefectDensity.uniform_density
+#print axioms PaperP1.ExpandedAsymmetricDenseMass.uniform_weight
 #print axioms PaperP1.ExpandedAsymmetricDenseMassUnderInputs.uniform_weight
 #print axioms PaperP1.ExpandedAsymmetricKernelPowers.few_components
 #print axioms PaperP1.ExpandedAsymmetricKernelPowers.few_typed
@@ -9145,6 +9152,7 @@ import PaperP1
 #print axioms PaperP1.ResidualPrimitiveHostCount.hosts_data
 #print axioms PaperP1.ResidualPrimitiveHostCount.all_primitive_triples
 #print axioms PaperP1.ResidualPrimitiveHostCount.source_unrestricted_assertion
+#print axioms PaperP1.RestrictedAsymmetricProfile.uniform_weight
 #print axioms PaperP1.RestrictedAsymmetricProfileUnderInputs.uniform_weight
 #print axioms PaperP1.RestrictedDensePrimitiveMass.uniform_bound
 #print axioms PaperP1.RestrictedDensePrimitiveMass.uniform_nominal_bound
@@ -9264,6 +9272,7 @@ import PaperP1
 #print axioms PaperP1.SharedPrincipalTripleMass.inclusion
 #print axioms PaperP1.SharedPrincipalTripleMass.uniform_mass
 #print axioms PaperP1.SharedPrincipalTripleMass.relative_to_beta_squared
+#print axioms PaperP1.SharpAsymmetricProfile.uniform_profile
 #print axioms PaperP1.SharpAsymmetricProfileUnderInputs.uniform_profile
 #print axioms PaperP1.SharpAsymmetricSparseSupport.uniform_count
 #print axioms PaperP1.SharpChannelCompressedActivityUnderInputs.uniform_bound
@@ -9281,6 +9290,7 @@ import PaperP1
 #print axioms PaperP1.SharpCovarianceScale.uniform_regular_covariance
 #print axioms PaperP1.SharpCovarianceScaleUnderInputs.uniform_absolute_scale
 #print axioms PaperP1.SharpCovarianceScaleUnderInputs.uniform_regular_covariance
+#print axioms PaperP1.SharpExpandedAsymmetricProfile.uniform_profile
 #print axioms PaperP1.SharpExpandedAsymmetricProfileUnderInputs.uniform_profile
 #print axioms PaperP1.SharpExpandedAsymmetricSparseSupport.uniform_count
 #print axioms PaperP1.SharpFiniteInteriorMassUnderInputs.uniform_channel

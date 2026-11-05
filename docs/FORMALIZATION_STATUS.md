@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+The checked corrected31/24 asymmetric profiles are unconditional on both exact enlarged-radius domains (P1-MATH-0446). The literal radius-oneT1.10 remains false andin_progress. No numbered coverage is added for this revision proof.
+
 CompanionT1.17 andT19.10 are unconditional (P1-MATH-0445): full positive two-good-edge moment, actual original field/intensity/covariance comparisons and sharpO(a_N^2) activation/TV/Wasserstein coupling. Pinned-support confinement closes the complete compressed two-edge sector; the separate single-target refinements ofT1.12 remain conditional.
 
 P1-MATH-0444 extends internal confinement to independent bounded logarithmic physical widths and comparable centers, with an exact finite selected-component lower rank bound. Compressed pinned-support transport and fullT1.17 remain separate; numbered coverage is unchanged.
@@ -77,7 +79,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is137/167 unconditional and27 conditional (164/167 completed). The project records443 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is137/167 unconditional and27 conditional (164/167 completed). The project records444 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -196,7 +198,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15039 audited theorem/lemma declarations**. This
+- The project currently has **15049 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26258,3 +26260,20 @@ Earlier conditional declarations and literature history are preserved. Only the 
 P1-MATH-0445 adds twelve modules, twenty-three theorems and one definition. CompanionT1.17 andT19.10 move from conditional to proved. Coverage becomes137 proved,27 conditional and3 in_progress out of167, with164 completed. The project records443 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16179 jobs); direct axiom audit passed for 15039 declarations using only propext, Classical.choice and Quot.sound; all 14410 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.07 GiB.
+
+
+## Unconditional sharp corrected asymmetric profiles on exact enlarged domains
+
+The corrected full asymmetric weighted profiles now have unconditional proofs at the sharp exponent31/24, on both exact previously checked enlarged-radius domains. SharpAsymmetricProfile.uniform_profile handles two original dyadic centers; SharpExpandedAsymmetricProfile.uniform_profile handles every old center in[N,N+Q*N) and every new center in the original dyadic block. Both retain the actual complete sum2^loss-1, arbitrary permitted old subsets, old radiusDold*(L+1), nonalignment radiusDold>=1 and the literal cutoff interval(2*Dold+1)*(L+1)<=H<=Dcut*(L+1). The complete sourceT1.10 statement/proof, companion_sections/arithmetic_appendix.tex lines811-860, and the recorded correction/alignment variants ofP1-MATH-0162/0312 were rechecked.
+
+AsymmetricSubsetComponents proves the original asymmetric free components are supported on the literal new-window values, by a direct inclusion of the actual pin sets. This transports their density to the actual two-subset component population without unpinning ghost positions. ExpandedAsymmetricDenseMass then applies the internal subpower dense-subset host count and actual global loss-power cap, proving the entire dense weighted sector at exponent1. AsymmetricDenseMass gives the original dyadic specialization. These replace the former source/ordinary surface covers and both normalized-curve families in these exact applications; no such geometric property is itself declared proved.
+
+AsymmetricCoarseProfile and ExpandedAsymmetricCoarseProfile retain the full finite support/weight partition and prove the previous exponent4/3 profile internally. SharpAsymmetricProfile and SharpExpandedAsymmetricProfile use the internally proved geometric biform input and nongeometric biform consequence in the sharp sparse-support count, and the new internal dense weighted bound. Every error margin and final factor2 is paid explicitly. RestrictedAsymmetricProfile also proves the stronger exponent1 weighted bound on every actual subpopulation with the statedN^(1+epsilon/8) cardinality cap; that cap remains an explicit premise of this finite counting consequence, to be proved in each application.
+
+The original unqualified radius-oneT1.10 remains false by the checked counterexampleP1-MATH-0162, and its baseline status staysin_progress. Only its checked revision variants move from conditional to proved. Their corrected canonical declarations require no ordinary unformalized input. Their exact old/new center domains and enlarged exclusion are unchanged; an additional comparable-center arrangement is not silently asserted. Earlier conditional variants, validation metadata and literature history are preserved.
+
+No further numbered result is promoted at this checkpoint. In particular, the downstream complete single-target refinements, Palm laws and compressed primitive masses retain their separate statement-alignment obligations until their literal arguments have been replaced and checked. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0446 adds eight modules, ten theorems and five definitions. Coverage remains137 proved,27 conditional and3 in_progress out of167, with164 completed. The project records444 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16195 jobs); direct axiom audit passed for 15049 declarations using only propext, Classical.choice and Quot.sound; all 14425 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.01 GiB.

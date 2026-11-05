@@ -3804,3 +3804,11 @@ public import PaperP1.Asymptotics.SubsetInteractionMass
 public import PaperP1.Asymptotics.TwoGoodEdgeSecondMoment
 public import PaperP1.Asymptotics.TwoGoodPairMass
 public import PaperP1.Asymptotics.WindowPairNonalignedMass
+public import PaperP1.Asymptotics.AsymmetricCoarseProfile
+public import PaperP1.Asymptotics.AsymmetricDenseMass
+public import PaperP1.Asymptotics.AsymmetricSubsetComponents
+public import PaperP1.Asymptotics.ExpandedAsymmetricCoarseProfile
+public import PaperP1.Asymptotics.ExpandedAsymmetricDenseMass
+public import PaperP1.Asymptotics.RestrictedAsymmetricProfile
+public import PaperP1.Asymptotics.SharpAsymmetricProfile
+public import PaperP1.Asymptotics.SharpExpandedAsymmetricProfile
