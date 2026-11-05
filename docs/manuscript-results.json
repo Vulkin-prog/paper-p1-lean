@@ -38013,7 +38013,8 @@
             "PaperP1.OrdinaryReciprocalPrimeLowerInput.eipInput_iff_lower"
           ]
         }
-      ]
+      ],
+      "validation_commit": "d02a865dcc1c18688583f5cd14140799a83edc53"
     },
     {
       "label": "p1:limits:private-exact",
