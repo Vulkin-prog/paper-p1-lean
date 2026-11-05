@@ -1,0 +1,9 @@
+# Unconditional finite affine plane Bezout bound
+
+Source: main Theorem13.4, pair_rigidity.tex:214. This proves a supporting finite-intersection bound, not the original degree-uniform count for all integral curves. Source hashes remain unchanged.
+
+FinitePlaneBezout.common_points_card proves that every finite set of common affine zeros of P and Q has at most degree(P)*degree(Q) points when P is irreducible, P does not divide Q, and the coefficient field is infinite. The degree is exactly PlaneCurvePointCount.degree. No Bezout theorem or point-count estimate is assumed; the proof uses the internally checked sharp resultant degree and nonvanishing arguments.
+
+The projection lemma constructs t outside the finite set of collision slopes, so (x,y)->x+t*y is injective on the actual finite point set. The exact inverse shear preserves polynomial degrees and common zeros. If the sheared P has positive outer degree, its nonzero resultant has at least as many distinct roots as the point set. If it has zero outer degree, the proof counts roots of its nonzero inner coefficient. A separate lemma shows that a nonzero polynomial with an affine zero has positive total degree, handling the possible degree-zero Q case. These arguments work over every infinite field, without a characteristic-zero or generic-leading-coefficient assumption.
+
+P1-MATH-0336 adds three unconditional theorems and removes the extra fibre-degree factor from the earlier coarse finite-intersection count. This prepares a quadratic-degree bound for the non-geometric part of plane-curve counting. It does not prove the geometric BCN estimate or the original all-dimensional main13.4 theorem, whose row stays in progress. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records334 improvements and two statement-scope corrections. No dependency, axiom, unproved input, original source or compiler change is introduced. Palomar remains deferred.

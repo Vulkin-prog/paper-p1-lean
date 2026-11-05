@@ -889,6 +889,9 @@ import PaperP1
 #print axioms PaperP1.FinitePiExtension.even_injective_of_embedding
 #print axioms PaperP1.FinitePiExtensionSupport.extend_injective
 #print axioms PaperP1.FinitePiExtensionSupport.extend_zero_outside
+#print axioms PaperP1.FinitePlaneBezout.exists_injective_projection
+#print axioms PaperP1.FinitePlaneBezout.positive_degree_of_zero
+#print axioms PaperP1.FinitePlaneBezout.common_points_card
 #print axioms PaperP1.FiniteQuadraticSubalgebra.finite_inclusion
 #print axioms PaperP1.FiniteQuadraticTower.base_injective
 #print axioms PaperP1.FiniteQuadraticTower.index_card

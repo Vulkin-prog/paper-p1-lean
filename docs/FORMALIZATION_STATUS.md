@@ -11,7 +11,7 @@ Companion T1.5 is complete conditionally on the same geometric Heath-Brown bifor
 
 Companion T1.4 is complete conditionally on HeathBrownBiformInput.Input. NonGeometricBiformInput.Input and the sufficient rational-singularity implication are internally proved with the exact constant8*a*b^2 (P1-MATH-0330). The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. The geometric Heath-Brown ordinary input remains unproved. The three incomplete original numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records333 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records334 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14177 audited theorem/lemma declarations**. This
+- The project currently has **14180 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24586,3 +24586,14 @@ BivariateLinearShear.linear_substitution_degree proves that substitution by poly
 These two modules add nine theorems and two definitions. They prepare an injective projection of a finite intersection while retaining the sharp total-degree product in its resultant. No finite Bezout count or BCN estimate is yet claimed, and main13.4 remains in progress. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records333 improvements and two statement-scope corrections. The existing internal homogeneous shear is reused under the pinned compiler; no new Paper C port, dependency, axiom, unproved input or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15559 jobs); direct axiom audit passed for 14177 declarations using only propext, Classical.choice and Quot.sound; all 13449 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.41 GiB.
+
+
+## Unconditional finite affine plane Bezout bound
+
+FinitePlaneBezout.common_points_card proves that every finite set of common affine zeros of P and Q has at most degree(P)*degree(Q) points when P is irreducible, P does not divide Q, and the coefficient field is infinite. The degree is exactly PlaneCurvePointCount.degree. No Bezout theorem or point-count estimate is assumed; the proof uses the internally checked sharp resultant degree and nonvanishing arguments.
+
+The projection lemma constructs t outside the finite set of collision slopes, so (x,y)->x+t*y is injective on the actual finite point set. The exact inverse shear preserves polynomial degrees and common zeros. If the sheared P has positive outer degree, its nonzero resultant has at least as many distinct roots as the point set. If it has zero outer degree, the proof counts roots of its nonzero inner coefficient. A separate lemma shows that a nonzero polynomial with an affine zero has positive total degree, handling the possible degree-zero Q case. These arguments work over every infinite field, without a characteristic-zero or generic-leading-coefficient assumption.
+
+P1-MATH-0336 adds three unconditional theorems and removes the extra fibre-degree factor from the earlier coarse finite-intersection count. This prepares a quadratic-degree bound for the non-geometric part of plane-curve counting. It does not prove the geometric BCN estimate or the original all-dimensional main13.4 theorem, whose row stays in progress. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records334 improvements and two statement-scope corrections. No dependency, axiom, unproved input, original source or compiler change is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15561 jobs); direct axiom audit passed for 14180 declarations using only propext, Classical.choice and Quot.sound; all 13452 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.39 GiB.
