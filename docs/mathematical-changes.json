@@ -26833,6 +26833,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "6eca7c3978161e9daba7a4bad74edffae72077d9"
+    },
+    {
+      "id": "P1-MATH-0557",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The scalar-extended algebra retained its Hilbert degree and regular section, but the actual projective interpolation and bounded-avoidance argument previously required a prime polynomial-presentation ideal.",
+      "finding": "Actual normalized and projective section populations, the whole finite section locus, bounded integer avoidance and genuine coordinate-power ideal membership follow from regularity and the original Hilbert polynomial without requiring the extended algebra or kernel to be integral.",
+      "proposed_revision": "Apply regular-section interpolation to the genuine extended presentation, use its actual bounded avoiding form, and descend the resulting coordinate powers through the actual zero fibre over the original field.",
+      "impact": "Closes the geometric finite-section and bounded-avoidance stage for scalar-extended integral curves without a geometric-integrality or finite-population premise.",
+      "evidence": [
+        "PaperP1.BoundedRegularSectionAvoidance.exists_coefficients",
+        "PaperP1.BoundedRegularSectionAvoidance.exists_coefficients_powers",
+        "PaperP1.RegularGradedSectionPoints.linear_population",
+        "PaperP1.RegularGradedSectionPoints.projective_population",
+        "PaperP1.RegularProjectiveSectionFiniteSet.card_bound",
+        "PaperP1.RegularProjectiveSectionFiniteSet.finite_locus",
+        "PaperP1.RegularProjectiveSectionFiniteSet.exists_finset"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17025 jobs); direct axiom audit passed for 16253 declarations using only propext, Classical.choice and Quot.sound; all 15863 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.42 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

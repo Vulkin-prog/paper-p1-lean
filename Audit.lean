@@ -12295,6 +12295,8 @@ import PaperP1
 #print axioms PaperP1.BoundedProjectiveSectionAvoidance.exists_coefficients
 #print axioms PaperP1.BoundedProjectiveSectionAvoidance.exists_coefficients_and_height
 #print axioms PaperP1.BoundedProjectiveSectionAvoidance.rational_curve
+#print axioms PaperP1.BoundedRegularSectionAvoidance.exists_coefficients
+#print axioms PaperP1.BoundedRegularSectionAvoidance.exists_coefficients_powers
 #print axioms PaperP1.FiniteCurvePrimitiveCoordinate.exists_coordinate
 #print axioms PaperP1.GradedVeroneseProj.map_isIso
 #print axioms PaperP1.GradedVeroneseProj.iso_hom
@@ -12466,6 +12468,11 @@ import PaperP1
 #print axioms PaperP1.QuotientPointEvaluation.evaluation_mk
 #print axioms PaperP1.QuotientPointEvaluation.evaluation_X
 #print axioms PaperP1.QuotientPointEvaluation.points_equal
+#print axioms PaperP1.RegularGradedSectionPoints.linear_population
+#print axioms PaperP1.RegularGradedSectionPoints.projective_population
+#print axioms PaperP1.RegularProjectiveSectionFiniteSet.card_bound
+#print axioms PaperP1.RegularProjectiveSectionFiniteSet.finite_locus
+#print axioms PaperP1.RegularProjectiveSectionFiniteSet.exists_finset
 #print axioms PaperP1.SourceAffineCurveDegreeBound.multiplicity_ge_twoD
 #print axioms PaperP1.SourceCurveAffineRadicalCover.chartEquiv_radicand
 #print axioms PaperP1.SourceCurveAffineRadicalCover.exists_cover

@@ -4186,3 +4186,6 @@ public import PaperP1.Algebra.RegularGradedHilbertSection
 public import PaperP1.Algebra.ScalarExtendedFiniteFiber
 public import PaperP1.Algebra.ScalarExtendedGradedCoordinates
 public import PaperP1.Algebra.ScalarExtendedGradedHilbert
+public import PaperP1.Geometry.BoundedRegularSectionAvoidance
+public import PaperP1.Geometry.RegularGradedSectionPoints
+public import PaperP1.Geometry.RegularProjectiveSectionFiniteSet
