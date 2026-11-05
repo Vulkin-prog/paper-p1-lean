@@ -714,6 +714,9 @@ import PaperP1
 #print axioms PaperP1.BoundedPlaneShear.diagonal_monomial
 #print axioms PaperP1.BoundedPlaneShear.diagonal_coefficient
 #print axioms PaperP1.BoundedPlaneShear.exists_full_outer_degree
+#print axioms PaperP1.BoundedPrimitiveLinearCombination.difference_evaluation
+#print axioms PaperP1.BoundedPrimitiveLinearCombination.exists_separating_coefficients
+#print axioms PaperP1.BoundedPrimitiveLinearCombination.exists_primitive
 #print axioms PaperP1.CenteredCardConvolution.convolution
 #print axioms PaperP1.CenteredCardConvolution.zero_layer
 #print axioms PaperP1.CenteredCardConvolution.one_layer
@@ -812,6 +815,10 @@ import PaperP1
 #print axioms PaperP1.ConicScalarInvariants.positive_discriminant_iff
 #print axioms PaperP1.ConicScalarInvariants.zero_discriminant_iff
 #print axioms PaperP1.ConicScalarInvariants.negative_discriminant_iff
+#print axioms PaperP1.CoordinateFractionFieldGenerators.quotient_variables_generate
+#print axioms PaperP1.CoordinateFractionFieldGenerators.fraction_field_generated
+#print axioms PaperP1.CoordinateFractionFieldGenerators.coordinate_evaluation
+#print axioms PaperP1.CoordinateFractionFieldGenerators.bounded_primitive
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_le
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_empty
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_rank_le
@@ -12212,6 +12219,7 @@ import PaperP1
 #print axioms PaperP1.BoundedProjectiveSectionAvoidance.exists_coefficients
 #print axioms PaperP1.BoundedProjectiveSectionAvoidance.exists_coefficients_and_height
 #print axioms PaperP1.BoundedProjectiveSectionAvoidance.rational_curve
+#print axioms PaperP1.FiniteCurvePrimitiveCoordinate.exists_coordinate
 #print axioms PaperP1.GradedVeroneseProj.map_isIso
 #print axioms PaperP1.GradedVeroneseProj.iso_hom
 #print axioms PaperP1.OrdinaryCurveAffineChart.sourceZ_mem

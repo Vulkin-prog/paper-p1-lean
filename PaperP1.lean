@@ -4153,3 +4153,6 @@ public import PaperP1.Algebra.FiniteCurveParameterRank
 public import PaperP1.Algebra.HomogeneousKernelReduction
 public import PaperP1.Algebra.UnivariateFiniteHilbert
 public import PaperP1.Geometry.BoundedCurveNoetherNormalization
+public import PaperP1.Algebra.BoundedPrimitiveLinearCombination
+public import PaperP1.Algebra.CoordinateFractionFieldGenerators
+public import PaperP1.Geometry.FiniteCurvePrimitiveCoordinate
