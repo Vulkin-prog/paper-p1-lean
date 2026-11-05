@@ -735,6 +735,13 @@ import PaperP1
 #print axioms PaperP1.CharlierRoots.quadratic_neg_iff_indices
 #print axioms PaperP1.ColumnDependencies.zero_column
 #print axioms PaperP1.ColumnDependencies.equal_columns
+#print axioms PaperP1.CommonLinearNormalization.form_homogeneous
+#print axioms PaperP1.CommonLinearNormalization.evaluation
+#print axioms PaperP1.CommonLinearNormalization.symmetric_evaluation
+#print axioms PaperP1.CommonLinearNormalization.form_nonzero
+#print axioms PaperP1.CommonLinearNormalization.exists_form
+#print axioms PaperP1.CommonLinearNormalization.normalized_value
+#print axioms PaperP1.CommonLinearNormalization.normalize_injOn
 #print axioms PaperP1.CommonQuotientGraph.first_identity
 #print axioms PaperP1.CommonQuotientGraph.second_identity
 #print axioms PaperP1.CommonQuotientGraph.denominator_ne_zero
@@ -1289,6 +1296,7 @@ import PaperP1
 #print axioms PaperP1.HomogeneousFreeApproximation.component_clears
 #print axioms PaperP1.HomogeneousFreeApproximation.exists_homogeneous_free_approximation
 #print axioms PaperP1.HomogeneousHeightOneEquation.exists_equation
+#print axioms PaperP1.HomogeneousIdealPointScaling.zeros_scale
 #print axioms PaperP1.HomogeneousLinearForm.eq_sum
 #print axioms PaperP1.HomogeneousLinearForm.eq_three
 #print axioms PaperP1.HomogeneousLinearNormalization.quotientEquiv_mk
@@ -1522,6 +1530,8 @@ import PaperP1
 #print axioms PaperP1.LinearHilbertSlopeComparison.piece_finrank_le
 #print axioms PaperP1.LinearHilbertSlopeComparison.slope_le_of_injective
 #print axioms PaperP1.LinearHilbertSlopeComparison.multiplicity_eq_slope
+#print axioms PaperP1.LinearNormalizedHomogeneousInterpolation.selector
+#print axioms PaperP1.LinearNormalizedPointEvaluation.card_le_dimension
 #print axioms PaperP1.LinearPolynomialHeightTransport.height_smul
 #print axioms PaperP1.LinearPolynomialHeightTransport.height_sum
 #print axioms PaperP1.LinearPolynomialHeightTransport.expansion
@@ -12284,6 +12294,15 @@ import PaperP1
 #print axioms PaperP1.ProjectiveCurveSectionPoints.normalized_population
 #print axioms PaperP1.ProjectiveCurveSectionPoints.integer_population
 #print axioms PaperP1.ProjectiveCurveSectionPoints.integer_grid
+#print axioms PaperP1.ProjectiveHomogeneousSectionPoints.linear_normalized_population
+#print axioms PaperP1.ProjectiveHomogeneousSectionPoints.projective_population
+#print axioms PaperP1.ProjectiveHomogeneousSectionPoints.rational_curve_population
+#print axioms PaperP1.ProjectiveSectionFiniteSet.rep_injective
+#print axioms PaperP1.ProjectiveSectionFiniteSet.mem_section_mk_iff
+#print axioms PaperP1.ProjectiveSectionFiniteSet.card_bound
+#print axioms PaperP1.ProjectiveSectionFiniteSet.rational_curve_card
+#print axioms PaperP1.ProjectiveSectionFiniteSet.finite_locus
+#print axioms PaperP1.ProjectiveSectionFiniteSet.exists_finset
 #print axioms PaperP1.SourceAffineCurveDegreeBound.multiplicity_ge_twoD
 #print axioms PaperP1.SourceCurveAffineRadicalCover.chartEquiv_radicand
 #print axioms PaperP1.SourceCurveAffineRadicalCover.exists_cover

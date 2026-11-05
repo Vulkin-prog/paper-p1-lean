@@ -26216,6 +26216,54 @@
         "status": "not_integrated"
       },
       "validation_commit": "20d3042552bf2062fd1fce0c6cadbe6ff55307a5"
+    },
+    {
+      "id": "P1-MATH-0542",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The section-point budget was available only for normalized rational/integer populations in a fixed coordinate chart. Common normalization, general infinite fields and actual complete projective section loci were still missing.",
+      "finding": "One actual common linear normalization gives the e*d bound for genuine projective points over every infinite field, and constructs the exact entire finite section locus with that budget.",
+      "proposed_revision": "Use the proved actual finite projective section locus to control points at infinity and exceptional projection fibres. Retain scalar-extension degree transport and controlled projection as separate obligations.",
+      "impact": "Closes chart-independent projective section finiteness and point-incidence budgets for the actual homogeneous-ideal/Hilbert model, without assuming a projective point-count theorem.",
+      "evidence": [
+        "PaperP1.CommonLinearNormalization.form_homogeneous",
+        "PaperP1.CommonLinearNormalization.evaluation",
+        "PaperP1.CommonLinearNormalization.symmetric_evaluation",
+        "PaperP1.CommonLinearNormalization.form_nonzero",
+        "PaperP1.CommonLinearNormalization.exists_form",
+        "PaperP1.CommonLinearNormalization.normalized_value",
+        "PaperP1.CommonLinearNormalization.normalize_injOn",
+        "PaperP1.HomogeneousIdealPointScaling.zeros_scale",
+        "PaperP1.LinearNormalizedHomogeneousInterpolation.selector",
+        "PaperP1.LinearNormalizedPointEvaluation.card_le_dimension",
+        "PaperP1.ProjectiveHomogeneousSectionPoints.linear_normalized_population",
+        "PaperP1.ProjectiveHomogeneousSectionPoints.projective_population",
+        "PaperP1.ProjectiveHomogeneousSectionPoints.rational_curve_population",
+        "PaperP1.ProjectiveSectionFiniteSet.rep_injective",
+        "PaperP1.ProjectiveSectionFiniteSet.mem_section_mk_iff",
+        "PaperP1.ProjectiveSectionFiniteSet.card_bound",
+        "PaperP1.ProjectiveSectionFiniteSet.rational_curve_card",
+        "PaperP1.ProjectiveSectionFiniteSet.finite_locus",
+        "PaperP1.ProjectiveSectionFiniteSet.exists_finset",
+        "PaperP1.CommonLinearNormalization.form",
+        "PaperP1.CommonLinearNormalization.normalize",
+        "PaperP1.ProjectiveSectionFiniteSet.sectionLocus"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16899 jobs); direct axiom audit passed for 16083 declarations using only propext, Classical.choice and Quot.sound; all 15666 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.77 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

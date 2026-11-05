@@ -4132,3 +4132,9 @@ public import PaperP1.Geometry.ProjectiveCurveHilbertDegree
 public import PaperP1.Algebra.FiniteGradedPointEvaluation
 public import PaperP1.Algebra.HomogeneousFiniteInterpolation
 public import PaperP1.Geometry.ProjectiveCurveSectionPoints
+public import PaperP1.Algebra.CommonLinearNormalization
+public import PaperP1.Algebra.HomogeneousIdealPointScaling
+public import PaperP1.Algebra.LinearNormalizedHomogeneousInterpolation
+public import PaperP1.Algebra.LinearNormalizedPointEvaluation
+public import PaperP1.Geometry.ProjectiveHomogeneousSectionPoints
+public import PaperP1.Geometry.ProjectiveSectionFiniteSet

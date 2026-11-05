@@ -1,5 +1,7 @@
 # Formalization status
 
+P1-MATH-0542 proves actual complete projective section loci are finite with cardinality at most e*degree, over every infinite field and without a selected chart. The exact finset, common normalization and scalar invariance are constructed. Scalar-extension degree transport and controlled projection remain separate.
+
 P1-MATH-0541 proves the actual e*degree section-point budget in every normalized rational/integer chart, including the original bounded integer-grid finset. Common projective normalization, coefficient-field extension and controlled higher-dimensional projection remain separate.
 
 P1-MATH-0540 proves the actual projective curve model has positive integer degree and that every nonzero homogeneous degree-e section has eventual quotient-piece dimension e*degree. Actual section point incidence and controlled higher-dimensional projection remain separate. Complete main13.5 is already unconditional.
@@ -114,7 +116,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records539 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records540 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -233,7 +235,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16064 audited theorem/lemma declarations**. This
+- The project currently has **16083 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27885,3 +27887,22 @@ This closes actual section-point incidence in a normalized rational/integer char
 P1-MATH-0541 adds three modules and five theorems, with no new definition. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 539 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16881 jobs); direct axiom audit passed for 16064 declarations using only propext, Classical.choice and Quot.sound; all 15644 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.79 GiB.
+
+
+## Actual chart-independent projective section loci and finite degree budgets
+
+LinearNormalizedHomogeneousInterpolation constructs actual homogeneous point selectors for a population normalized by any genuine homogeneous linear form. It adds one temporary polynomial coordinate, applies the internally proved coordinate-normalized interpolation, and substitutes the actual linear form back. Homogeneous degree and every actual selector value are retained. LinearNormalizedPointEvaluation converts these selectors to the actual homogeneous image dimension bound using the genuine point-evaluation basis.
+
+CommonLinearNormalization constructs one homogeneous linear form nonzero on every vector in any finite family of nonzero representatives over an infinite field. A product of actual dual coefficient forms is nonzero, so polynomial evaluation supplies an actual coefficient vector outside all the corresponding hyperplanes. The normalization map divides each original vector by the actual value of this common form. Its value is exactly one, and its injectivity on projectively distinct representatives is proved from their actual scalar-multiple relation.
+
+HomogeneousIdealPointScaling proves that actual scalar multiplication preserves the zero set of an actual homogeneous ideal. Every original ideal equation is decomposed into its genuine homogeneous components; their ideal membership, scaling formula and original zero evaluations prove the entire scaled equation still vanishes. No replacement zero set or implicit projective-invariance premise is used.
+
+ProjectiveHomogeneousSectionPoints combines the actual common normalization, preserved original ideal/section equations, exact cardinality and actual quotient evaluation maps. Over any infinite field and any finite coordinate type, a homogeneous prime ideal with its genuine positive linear Hilbert polynomial d*n+b has at most e*d projectively distinct zeros of any homogeneous degree-e equation outside the ideal. A specialized theorem retains the original rational curve model and its internally derived positive integer degree.
+
+ProjectiveSectionFiniteSet states this result on actual Mathlib Projectivization points. Its sectionLocus is the actual original homogeneous ideal and section equation evaluated on representatives. The nonzero-vector membership theorem proves this condition agrees with the original equations independently of representative choice. Actual projective-point finsets have the e*d bound. The entire projective section locus is proved finite, and an actual finset containing exactly all of it is constructed with cardinality at most e*d. These conclusions include every projective point over the coefficient field, without a preselected chart or supplied finiteness/incidence/count premise.
+
+Thus actual projective homogeneous section loci, complete finite incidence budgets and common normalization are internal over arbitrary infinite coefficient fields. Scalar-extension degree transport and the controlled higher-dimensional projection/presentation remain separate. Full main13.4 and companionT1.7/T19.17 remain unresolved; complete main13.5 stays internally proved.
+
+P1-MATH-0542 adds six modules, nineteen theorems and three definitions. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. The project records 540 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16899 jobs); direct axiom audit passed for 16083 declarations using only propext, Classical.choice and Quot.sound; all 15666 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.77 GiB.
