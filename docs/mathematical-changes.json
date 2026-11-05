@@ -24151,6 +24151,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "953b7a7b910fd14bba7fa8882cd7fe75e9a1ce11"
+    },
+    {
+      "id": "P1-MATH-0490",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:optimal:weighted",
+        "number": "17.1",
+        "page": 53,
+        "source": "main_sections/optimal_closure.tex",
+        "line": 39,
+        "statement_sha256": "d682f7116bf95ea02bb1f655e4fa453fee0fc14f16ed1b905e9399d02cc13825"
+      },
+      "original_assumption": "The optimal fixed polynomial-weight and no-retained-start consequences still carried an unformalized finite geometric bundle through their unweighted law estimate and reference moment bounds.",
+      "finding": "The internal optimal unweighted estimate and actual original/reference moment bounds supply the full fixed polynomial interpolation, summability, factorial corrections and exact zero-event expansion.",
+      "proposed_revision": "State the fixed-order quantifiers explicitly and use the actual internal probability and moment theorems in the polynomial-weight interpolation and zero-event evaluation.",
+      "impact": "Closes complete main17.1 and17.2, including all fixed polynomial weights, fixed factorial moments, exact orders0/1/2 and the literal original zero-start event.",
+      "evidence": [
+        "PaperP1.ActualQuadraticMomentBounds.uniform_moments",
+        "PaperP1.OptimalZeroProbability.article_17_2",
+        "PaperP1.PolynomialWeightedQuadratic.uniform_weighted",
+        "PaperP1.PolynomialWeightedQuadratic.article_17_1",
+        "PaperP1.PolynomialWeightedQuadratic.weightedError"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16523 jobs); direct axiom audit passed for 15535 declarations using only propext, Classical.choice and Quot.sound; all 14988 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.92 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

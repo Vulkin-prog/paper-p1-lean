@@ -6921,6 +6921,7 @@ import PaperP1
 #print axioms PaperP1.ActualQuadraticComparisonCounterexample.comparison_failure
 #print axioms PaperP1.ActualQuadraticComparisonCounterexample.source_value
 #print axioms PaperP1.ActualQuadraticComparisonCounterexample.arbitrarily_large_admissible
+#print axioms PaperP1.ActualQuadraticMomentBounds.uniform_moments
 #print axioms PaperP1.ActualQuadraticSubpowerMoments.uniform_moments
 #print axioms PaperP1.ActualReducedFamilyCount.uniform_count
 #print axioms PaperP1.ActualReferenceAdmissibility.quadratic_of_bounds
@@ -9010,6 +9011,7 @@ import PaperP1
 #print axioms PaperP1.OptimalThirdCumulantUnderInputs.article_14_1
 #print axioms PaperP1.OptimalTripleReconstruction.article_15_14
 #print axioms PaperP1.OptimalTripleReconstructionUnderInputs.article_15_14
+#print axioms PaperP1.OptimalZeroProbability.article_17_2
 #print axioms PaperP1.OptimalZeroProbabilityUnderInputs.article_17_2
 #print axioms PaperP1.OrderDependentBranching.exception_nonneg
 #print axioms PaperP1.OrderDependentBranching.exception_le_source
@@ -9190,6 +9192,8 @@ import PaperP1
 #print axioms PaperP1.PolynomialSplitKernelCount.single_square_equation
 #print axioms PaperP1.PolynomialSplitKernelCount.two_square_equations
 #print axioms PaperP1.PolynomialWeightedFieldRate.uniform_bound
+#print axioms PaperP1.PolynomialWeightedQuadratic.uniform_weighted
+#print axioms PaperP1.PolynomialWeightedQuadratic.article_17_1
 #print axioms PaperP1.PolynomialWeightedQuadraticUnderInputs.uniform_weighted
 #print axioms PaperP1.PolynomialWeightedQuadraticUnderInputs.article_17_1
 #print axioms PaperP1.PolynomialWeightedSequenceRate.uniform_bound

@@ -3973,3 +3973,6 @@ public import PaperP1.Asymptotics.SharpThirdActivity
 public import PaperP1.Asymptotics.FourThirdsQuadraticUpper
 public import PaperP1.Asymptotics.OptimalQuadratic
 public import PaperP1.Asymptotics.OptimalTripleReconstruction
+public import PaperP1.Asymptotics.ActualQuadraticMomentBounds
+public import PaperP1.Asymptotics.OptimalZeroProbability
+public import PaperP1.Asymptotics.PolynomialWeightedQuadratic

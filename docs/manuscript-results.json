@@ -11360,7 +11360,7 @@
       "source": "main_sections/optimal_closure.tex",
       "line": 39,
       "sha256": "d682f7116bf95ea02bb1f655e4fa453fee0fc14f16ed1b905e9399d02cc13825",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.ActualQuadraticSubpowerMoments.uniform_moments",
         "PaperP1.OptimalZeroProbabilityUnderInputs.article_17_2",
@@ -11376,24 +11376,71 @@
         "PaperP1.PolynomialWeightedQuadraticUnderInputs.Hypotheses",
         "PaperP1.PolynomialWeightedQuadraticUnderInputs.weightedError",
         "PaperP1.PolynomialWeightedSequenceRate.MomentBounds",
-        "PaperP1.QuadraticFactorialMomentTransfer.referenceMoment"
+        "PaperP1.QuadraticFactorialMomentTransfer.referenceMoment",
+        "PaperP1.ActualQuadraticMomentBounds.uniform_moments",
+        "PaperP1.OptimalZeroProbability.article_17_2",
+        "PaperP1.PolynomialWeightedQuadratic.uniform_weighted",
+        "PaperP1.PolynomialWeightedQuadratic.article_17_1",
+        "PaperP1.PolynomialWeightedQuadratic.weightedError"
       ],
       "literature_inputs": [
         "P1-PROB-WEIGHTED-OPTIMAL-QUADRATIC",
-        "P1-GEO-BCN-PLANE-UNIFORM"
+        "P1-GEO-BCN-PLANE-UNIFORM",
+        "p1:internal:complete-optimal-polynomial-weighted-quadratic"
       ],
       "mathematical_changes": [
-        "P1-MATH-0165"
+        "P1-MATH-0165",
+        "P1-MATH-0490"
       ],
-      "notes": "Main17.1 and17.2 are COMPLETE CONDITIONALLY on the existing explicit\nBCN and finite ordinary/source cover and normalized curve-count properties.\nNo new external result or target-bound premise is introduced.\n\nPolynomialWeightedSequenceRate proves a general cutoff interpolation for\narbitrary nonnegative sequences. One unweighted error bound at epsilon/4\nand independently proved subpolynomial moments of every fixed order give\nthe same final error power for EVERY fixed polynomial weight. The chosen\narithmetic input bundle precedes the degree. ActualQuadraticSubpowerMoments\nproves its moment hypotheses for the literal original count and actual\nquadratic reference. Original count moments are unconditional. Reference\nadmissibility and boundedness use the explicit BCN argument. The actual\nmean and second factorial cumulant are retained throughout.\n\nPolynomialWeightedQuadraticUnderInputs.article_17_1 assembles the optimal\nfour-thirds weighted singleton l1 bound, its full factorial-moment\nconsequence with the exact binomial coefficient and the exact equalities\nat orders0,1,2. All summability assertions are proved. Its parameter bundle\nis chosen before all fixed polynomial degrees and factorial orders.\nQuadraticFactorialMomentTransfer identifies every actual reference\nfactorial moment and proves the transfer inequality directly from the\nweighted error, without an assumed moment comparison.\n\nOptimalZeroProbabilityUnderInputs.article_17_2 gives the full scalar\nzero-count formula exp(-mu)*(1+alpha/2) with optimal power4/3. This is\nthe absence of retained starts in the original dyadic ground and does\nnot exclude a run beginning before its left endpoint.\n\nP1-MATH-0165 records that subpolynomial fixed moments, rather than uniform\nboundedness of all such moments, suffice for this interpolation. The\nstronger fixed-moment theorem remains a separate assertion. Coverage\nbecomes87/167 unconditional and52 conditional. There are164 improvements\nand one confirmed scope correction. The sharp41/30 third-order and\ncorrected31/24 profile obligations remain open. Original manuscript bytes,\ntoolchain and dependencies are unchanged. Palomar remains deferred.\n\nEarlier checkpoint history:\n",
+      "notes": "Complete main Corollaries17.1 and17.2 are now internally proved. For every fixed polynomial weight(1+k)^m and everyepsilon>0, the original count and exact actual quadratic reference have weighted absolute error at mostN^(-4/3+epsilon), uniformly on each fixed critical band. Every weighted series is proved summable. Every fixed factorial moment has the printed exact quadratic correction at the same power, and orders0,1,2 satisfy their exact remainder-free identities.\n\nActualQuadraticMomentBounds supplies all auxiliary moments internally using the actual original-law moment theorem, the exact quadratic reference's eventual probability status and internally proved parameter caps. No moment bound or geometric property is assumed. PolynomialWeightedQuadratic then applies the proved cutoff/interpolation argument to the internal unweighted4/3 estimate. Its polynomial degree and auxiliary moment orders are fixed before their thresholds; no uniformity in a growing polynomial degree or growing moment order is claimed.\n\nOptimalZeroProbability evaluates the same original approximation at zero and retains the exact coefficient exp(-mu)*(1+alpha/2), where mu andalpha are the full original mean and second factorial cumulant. The event is absence of a retained start inside the original dyadic ground, not a statement about runs beginning before its left boundary. Sources rechecked: main_sections/optimal_closure.tex lines39-102, including all weighted, fixed-moment, exact-small-order and zero-event clauses. The former finite geometric bundles and BCN arguments do not occur in the new canonical statements.\n\nThe full optimal main theorem1.1, numerical reconstruction15.14 and exact-reference16.2 remain internally proved. Quantized nominal-mean, exact Poisson-scale and exact-parameter Hermite consequences are still separate pending their final assembly. Generic main13.5, full quadratic-degree/all-dimensional BCN, general geometric cover/count properties and companionT19.17's almost-all census are not discharged.\n\nP1-MATH-0490 adds three modules, four theorems and one weighted-error definition. Exactly two numbered results, main17.1 and17.2, are promoted from conditional to proved. Coverage becomes158 proved,6 conditional and3 in_progress out of167, with164 completed:68 main results and90 companion results are proved. The project records488 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.\n\nEarlier checkpoint history:\nMain17.1 and17.2 are COMPLETE CONDITIONALLY on the existing explicit\nBCN and finite ordinary/source cover and normalized curve-count properties.\nNo new external result or target-bound premise is introduced.\n\nPolynomialWeightedSequenceRate proves a general cutoff interpolation for\narbitrary nonnegative sequences. One unweighted error bound at epsilon/4\nand independently proved subpolynomial moments of every fixed order give\nthe same final error power for EVERY fixed polynomial weight. The chosen\narithmetic input bundle precedes the degree. ActualQuadraticSubpowerMoments\nproves its moment hypotheses for the literal original count and actual\nquadratic reference. Original count moments are unconditional. Reference\nadmissibility and boundedness use the explicit BCN argument. The actual\nmean and second factorial cumulant are retained throughout.\n\nPolynomialWeightedQuadraticUnderInputs.article_17_1 assembles the optimal\nfour-thirds weighted singleton l1 bound, its full factorial-moment\nconsequence with the exact binomial coefficient and the exact equalities\nat orders0,1,2. All summability assertions are proved. Its parameter bundle\nis chosen before all fixed polynomial degrees and factorial orders.\nQuadraticFactorialMomentTransfer identifies every actual reference\nfactorial moment and proves the transfer inequality directly from the\nweighted error, without an assumed moment comparison.\n\nOptimalZeroProbabilityUnderInputs.article_17_2 gives the full scalar\nzero-count formula exp(-mu)*(1+alpha/2) with optimal power4/3. This is\nthe absence of retained starts in the original dyadic ground and does\nnot exclude a run beginning before its left endpoint.\n\nP1-MATH-0165 records that subpolynomial fixed moments, rather than uniform\nboundedness of all such moments, suffice for this interpolation. The\nstronger fixed-moment theorem remains a separate assertion. Coverage\nbecomes87/167 unconditional and52 conditional. There are164 improvements\nand one confirmed scope correction. The sharp41/30 third-order and\ncorrected31/24 profile obligations remain open. Original manuscript bytes,\ntoolchain and dependencies are unchanged. Palomar remains deferred.\n\nEarlier checkpoint history:\n",
       "validation_history": [
         {
           "status": "not_started",
           "literature_inputs": []
+        },
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (14385 jobs); direct axiom audit passed for 11838 declarations using only propext, Classical.choice and Quot.sound; all 10485 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.80 GiB.",
+          "validation_commit": "54f2b7b962b4d3c2a6177ed1b09e10e70da337d9",
+          "literature_inputs": [
+            "P1-PROB-WEIGHTED-OPTIMAL-QUADRATIC",
+            "P1-GEO-BCN-PLANE-UNIFORM"
+          ]
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14385 jobs); direct axiom audit passed for 11838 declarations using only propext, Classical.choice and Quot.sound; all 10485 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.80 GiB.",
-      "validation_commit": "54f2b7b962b4d3c2a6177ed1b09e10e70da337d9"
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16523 jobs); direct axiom audit passed for 15535 declarations using only propext, Classical.choice and Quot.sound; all 14988 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.92 GiB.",
+      "canonical_statement": "PaperP1.PolynomialWeightedQuadratic.article_17_1",
+      "canonical_additional_statements": [
+        "PaperP1.ActualQuadraticMomentBounds.uniform_moments",
+        "PaperP1.PolynomialWeightedQuadratic.uniform_weighted",
+        "PaperP1.PolynomialWeightedQuadratic.article_17_1",
+        "PaperP1.OptimalZeroProbability.article_17_2"
+      ],
+      "remaining_unformalized_inputs": [],
+      "unconditional_parts": [
+        {
+          "part": "Complete original numbered statement, including every fixed-order/summability or zero-event clause.",
+          "proof": "PaperP1.PolynomialWeightedQuadratic.article_17_1",
+          "checkpoint": "P1-MATH-0490"
+        }
+      ],
+      "input_discharges": [
+        {
+          "checkpoint": "P1-MATH-0490",
+          "scope": "Complete main17.1/17.2 only. Actual internal reference moment bounds and optimal unweighted approximation replace the former input bundle; no growing-order claim or generic geometric property is discharged.",
+          "previous_inputs": [
+            "P1-PROB-WEIGHTED-OPTIMAL-QUADRATIC",
+            "P1-GEO-BCN-PLANE-UNIFORM",
+            "p1:internal:complete-optimal-polynomial-weighted-quadratic"
+          ],
+          "internal_proofs": [
+            "PaperP1.ActualQuadraticMomentBounds.uniform_moments",
+            "PaperP1.PolynomialWeightedQuadratic.uniform_weighted",
+            "PaperP1.PolynomialWeightedQuadratic.article_17_1",
+            "PaperP1.OptimalZeroProbability.article_17_2"
+          ]
+        }
+      ]
     },
     {
       "label": "p13:optimal:zero",
@@ -11405,7 +11452,7 @@
       "source": "main_sections/optimal_closure.tex",
       "line": 87,
       "sha256": "34ffabbac99c443938607caff8e82231d0739ebc5bffe8bdf06b25464da46d45",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.ActualQuadraticSubpowerMoments.uniform_moments",
         "PaperP1.OptimalZeroProbabilityUnderInputs.article_17_2",
@@ -11421,24 +11468,71 @@
         "PaperP1.PolynomialWeightedQuadraticUnderInputs.Hypotheses",
         "PaperP1.PolynomialWeightedQuadraticUnderInputs.weightedError",
         "PaperP1.PolynomialWeightedSequenceRate.MomentBounds",
-        "PaperP1.QuadraticFactorialMomentTransfer.referenceMoment"
+        "PaperP1.QuadraticFactorialMomentTransfer.referenceMoment",
+        "PaperP1.ActualQuadraticMomentBounds.uniform_moments",
+        "PaperP1.OptimalZeroProbability.article_17_2",
+        "PaperP1.PolynomialWeightedQuadratic.uniform_weighted",
+        "PaperP1.PolynomialWeightedQuadratic.article_17_1",
+        "PaperP1.PolynomialWeightedQuadratic.weightedError"
       ],
       "literature_inputs": [
         "P1-PROB-WEIGHTED-OPTIMAL-QUADRATIC",
-        "P1-GEO-BCN-PLANE-UNIFORM"
+        "P1-GEO-BCN-PLANE-UNIFORM",
+        "p1:internal:complete-optimal-polynomial-weighted-quadratic"
       ],
       "mathematical_changes": [
-        "P1-MATH-0165"
+        "P1-MATH-0165",
+        "P1-MATH-0490"
       ],
-      "notes": "Main17.1 and17.2 are COMPLETE CONDITIONALLY on the existing explicit\nBCN and finite ordinary/source cover and normalized curve-count properties.\nNo new external result or target-bound premise is introduced.\n\nPolynomialWeightedSequenceRate proves a general cutoff interpolation for\narbitrary nonnegative sequences. One unweighted error bound at epsilon/4\nand independently proved subpolynomial moments of every fixed order give\nthe same final error power for EVERY fixed polynomial weight. The chosen\narithmetic input bundle precedes the degree. ActualQuadraticSubpowerMoments\nproves its moment hypotheses for the literal original count and actual\nquadratic reference. Original count moments are unconditional. Reference\nadmissibility and boundedness use the explicit BCN argument. The actual\nmean and second factorial cumulant are retained throughout.\n\nPolynomialWeightedQuadraticUnderInputs.article_17_1 assembles the optimal\nfour-thirds weighted singleton l1 bound, its full factorial-moment\nconsequence with the exact binomial coefficient and the exact equalities\nat orders0,1,2. All summability assertions are proved. Its parameter bundle\nis chosen before all fixed polynomial degrees and factorial orders.\nQuadraticFactorialMomentTransfer identifies every actual reference\nfactorial moment and proves the transfer inequality directly from the\nweighted error, without an assumed moment comparison.\n\nOptimalZeroProbabilityUnderInputs.article_17_2 gives the full scalar\nzero-count formula exp(-mu)*(1+alpha/2) with optimal power4/3. This is\nthe absence of retained starts in the original dyadic ground and does\nnot exclude a run beginning before its left endpoint.\n\nP1-MATH-0165 records that subpolynomial fixed moments, rather than uniform\nboundedness of all such moments, suffice for this interpolation. The\nstronger fixed-moment theorem remains a separate assertion. Coverage\nbecomes87/167 unconditional and52 conditional. There are164 improvements\nand one confirmed scope correction. The sharp41/30 third-order and\ncorrected31/24 profile obligations remain open. Original manuscript bytes,\ntoolchain and dependencies are unchanged. Palomar remains deferred.\n\nEarlier checkpoint history:\n",
+      "notes": "Complete main Corollaries17.1 and17.2 are now internally proved. For every fixed polynomial weight(1+k)^m and everyepsilon>0, the original count and exact actual quadratic reference have weighted absolute error at mostN^(-4/3+epsilon), uniformly on each fixed critical band. Every weighted series is proved summable. Every fixed factorial moment has the printed exact quadratic correction at the same power, and orders0,1,2 satisfy their exact remainder-free identities.\n\nActualQuadraticMomentBounds supplies all auxiliary moments internally using the actual original-law moment theorem, the exact quadratic reference's eventual probability status and internally proved parameter caps. No moment bound or geometric property is assumed. PolynomialWeightedQuadratic then applies the proved cutoff/interpolation argument to the internal unweighted4/3 estimate. Its polynomial degree and auxiliary moment orders are fixed before their thresholds; no uniformity in a growing polynomial degree or growing moment order is claimed.\n\nOptimalZeroProbability evaluates the same original approximation at zero and retains the exact coefficient exp(-mu)*(1+alpha/2), where mu andalpha are the full original mean and second factorial cumulant. The event is absence of a retained start inside the original dyadic ground, not a statement about runs beginning before its left boundary. Sources rechecked: main_sections/optimal_closure.tex lines39-102, including all weighted, fixed-moment, exact-small-order and zero-event clauses. The former finite geometric bundles and BCN arguments do not occur in the new canonical statements.\n\nThe full optimal main theorem1.1, numerical reconstruction15.14 and exact-reference16.2 remain internally proved. Quantized nominal-mean, exact Poisson-scale and exact-parameter Hermite consequences are still separate pending their final assembly. Generic main13.5, full quadratic-degree/all-dimensional BCN, general geometric cover/count properties and companionT19.17's almost-all census are not discharged.\n\nP1-MATH-0490 adds three modules, four theorems and one weighted-error definition. Exactly two numbered results, main17.1 and17.2, are promoted from conditional to proved. Coverage becomes158 proved,6 conditional and3 in_progress out of167, with164 completed:68 main results and90 companion results are proved. The project records488 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.\n\nEarlier checkpoint history:\nMain17.1 and17.2 are COMPLETE CONDITIONALLY on the existing explicit\nBCN and finite ordinary/source cover and normalized curve-count properties.\nNo new external result or target-bound premise is introduced.\n\nPolynomialWeightedSequenceRate proves a general cutoff interpolation for\narbitrary nonnegative sequences. One unweighted error bound at epsilon/4\nand independently proved subpolynomial moments of every fixed order give\nthe same final error power for EVERY fixed polynomial weight. The chosen\narithmetic input bundle precedes the degree. ActualQuadraticSubpowerMoments\nproves its moment hypotheses for the literal original count and actual\nquadratic reference. Original count moments are unconditional. Reference\nadmissibility and boundedness use the explicit BCN argument. The actual\nmean and second factorial cumulant are retained throughout.\n\nPolynomialWeightedQuadraticUnderInputs.article_17_1 assembles the optimal\nfour-thirds weighted singleton l1 bound, its full factorial-moment\nconsequence with the exact binomial coefficient and the exact equalities\nat orders0,1,2. All summability assertions are proved. Its parameter bundle\nis chosen before all fixed polynomial degrees and factorial orders.\nQuadraticFactorialMomentTransfer identifies every actual reference\nfactorial moment and proves the transfer inequality directly from the\nweighted error, without an assumed moment comparison.\n\nOptimalZeroProbabilityUnderInputs.article_17_2 gives the full scalar\nzero-count formula exp(-mu)*(1+alpha/2) with optimal power4/3. This is\nthe absence of retained starts in the original dyadic ground and does\nnot exclude a run beginning before its left endpoint.\n\nP1-MATH-0165 records that subpolynomial fixed moments, rather than uniform\nboundedness of all such moments, suffice for this interpolation. The\nstronger fixed-moment theorem remains a separate assertion. Coverage\nbecomes87/167 unconditional and52 conditional. There are164 improvements\nand one confirmed scope correction. The sharp41/30 third-order and\ncorrected31/24 profile obligations remain open. Original manuscript bytes,\ntoolchain and dependencies are unchanged. Palomar remains deferred.\n\nEarlier checkpoint history:\n",
       "validation_history": [
         {
           "status": "not_started",
           "literature_inputs": []
+        },
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (14385 jobs); direct axiom audit passed for 11838 declarations using only propext, Classical.choice and Quot.sound; all 10485 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.80 GiB.",
+          "validation_commit": "54f2b7b962b4d3c2a6177ed1b09e10e70da337d9",
+          "literature_inputs": [
+            "P1-PROB-WEIGHTED-OPTIMAL-QUADRATIC",
+            "P1-GEO-BCN-PLANE-UNIFORM"
+          ]
         }
       ],
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (14385 jobs); direct axiom audit passed for 11838 declarations using only propext, Classical.choice and Quot.sound; all 10485 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 10.80 GiB.",
-      "validation_commit": "54f2b7b962b4d3c2a6177ed1b09e10e70da337d9"
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16523 jobs); direct axiom audit passed for 15535 declarations using only propext, Classical.choice and Quot.sound; all 14988 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.92 GiB.",
+      "canonical_statement": "PaperP1.OptimalZeroProbability.article_17_2",
+      "canonical_additional_statements": [
+        "PaperP1.ActualQuadraticMomentBounds.uniform_moments",
+        "PaperP1.PolynomialWeightedQuadratic.uniform_weighted",
+        "PaperP1.PolynomialWeightedQuadratic.article_17_1",
+        "PaperP1.OptimalZeroProbability.article_17_2"
+      ],
+      "remaining_unformalized_inputs": [],
+      "unconditional_parts": [
+        {
+          "part": "Complete original numbered statement, including every fixed-order/summability or zero-event clause.",
+          "proof": "PaperP1.OptimalZeroProbability.article_17_2",
+          "checkpoint": "P1-MATH-0490"
+        }
+      ],
+      "input_discharges": [
+        {
+          "checkpoint": "P1-MATH-0490",
+          "scope": "Complete main17.1/17.2 only. Actual internal reference moment bounds and optimal unweighted approximation replace the former input bundle; no growing-order claim or generic geometric property is discharged.",
+          "previous_inputs": [
+            "P1-PROB-WEIGHTED-OPTIMAL-QUADRATIC",
+            "P1-GEO-BCN-PLANE-UNIFORM",
+            "p1:internal:complete-optimal-polynomial-weighted-quadratic"
+          ],
+          "internal_proofs": [
+            "PaperP1.ActualQuadraticMomentBounds.uniform_moments",
+            "PaperP1.PolynomialWeightedQuadratic.uniform_weighted",
+            "PaperP1.PolynomialWeightedQuadratic.article_17_1",
+            "PaperP1.OptimalZeroProbability.article_17_2"
+          ]
+        }
+      ]
     },
     {
       "label": "p13:optimal:nominal",
