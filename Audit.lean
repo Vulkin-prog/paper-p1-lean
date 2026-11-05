@@ -2297,6 +2297,8 @@ import PaperP1
 #print axioms PaperP1.ThirdFactorialCumulant.weighted_centered_pairs
 #print axioms PaperP1.ThirdFactorialCumulant.exact_formula
 #print axioms PaperP1.ThreeFiniteValueSpan.full_union_rank_le_three_even_add_three
+#print axioms PaperP1.TotalDegreeMonomialCardinality.card_twice
+#print axioms PaperP1.TotalDegreeMonomialCardinality.card_formula
 #print axioms PaperP1.TotalDegreeMonomialFamily.exponent_injective
 #print axioms PaperP1.TotalDegreeMonomialFamily.exponent_sum
 #print axioms PaperP1.TotalDegreeMonomialFamily.basis_degree
@@ -2957,6 +2959,8 @@ import PaperP1
 #print axioms PaperP1.LogarithmicAbelWindow.envelope_integrable
 #print axioms PaperP1.LogarithmicAbelWindow.envelope_integral
 #print axioms PaperP1.LogarithmicAbelWindow.window_bound
+#print axioms PaperP1.LogarithmicLocalUnitMaps.exists_at_nonexceptional
+#print axioms PaperP1.LogarithmicLocalUnitMaps.exists_control_set_and_maps
 #print axioms PaperP1.LogarithmicScaleCover.interval_cover
 #print axioms PaperP1.LogarithmicScaleCover.exponential_cover
 #print axioms PaperP1.MahlerCoefficientBounds.coefficientEnergy_nonneg
@@ -2968,6 +2972,8 @@ import PaperP1
 #print axioms PaperP1.MahlerCoefficientBounds.norm_top_coeff_le_mahler
 #print axioms PaperP1.MahlerCoefficientBounds.factor_coefficient_product_bound
 #print axioms PaperP1.MahlerCoefficientBounds.factor_coefficient_product_bound_two_pow
+#print axioms PaperP1.MonomialCountingParameters.height_exponent
+#print axioms PaperP1.MonomialCountingParameters.exceptional_budget
 #print axioms PaperP1.MonomialCurvePieceCount.partial_nonzero
 #print axioms PaperP1.MonomialCurvePieceCount.point_count
 #print axioms PaperP1.MonomialPrimeScale.strict_power_domination
@@ -3355,6 +3361,9 @@ import PaperP1
 #print axioms PaperP1.ShortIntervalGridInterpolation.exists_polynomial
 #print axioms PaperP1.ShortIntervalGridPointCount.point_count
 #print axioms PaperP1.ShortIntervalGridPointCount.exists_local_counting_map
+#print axioms PaperP1.SimplifiedUnitMapGridCount.point_count
+#print axioms PaperP1.SimplifiedUnitMapGridCount.logarithmic_power_bound
+#print axioms PaperP1.SimplifiedUnitMapGridCount.logarithmic_point_count
 #print axioms PaperP1.SmallRecoveryParameter.power_order
 #print axioms PaperP1.SmallRecoveryParameter.exists_small
 #print axioms PaperP1.SmallRecoveryParameter.exists_relative_cost

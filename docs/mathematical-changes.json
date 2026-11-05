@@ -25551,6 +25551,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "b620442a37d7711ec2e51350435304852c1dea62"
+    },
+    {
+      "id": "P1-MATH-0525",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The actual per-map grid bound retained the monomial-family cardinality and unsimplified height exponent, preventing a direct polynomial-logarithmic form.",
+      "finding": "The exact actual monomial cardinality yields height exponent 4/(k+3), the explicit 32*(k+1)^8 bound per map, and a genuine 123*D^2*(k+1)^6 exceptional budget.",
+      "proposed_revision": "Use the explicit polynomial-logarithmic count on the internally constructed genuine local maps, keeping the independent global map-cover obligation visible.",
+      "impact": "Completes the explicit polynomial-logarithmic per-map grid count and exceptional-set budget. Whole-curve coverage and controlled component/map cardinality remain separate.",
+      "evidence": [
+        "PaperP1.TotalDegreeMonomialCardinality.card_twice",
+        "PaperP1.TotalDegreeMonomialCardinality.card_formula",
+        "PaperP1.LogarithmicLocalUnitMaps.exists_at_nonexceptional",
+        "PaperP1.LogarithmicLocalUnitMaps.exists_control_set_and_maps",
+        "PaperP1.MonomialCountingParameters.height_exponent",
+        "PaperP1.MonomialCountingParameters.exceptional_budget",
+        "PaperP1.SimplifiedUnitMapGridCount.point_count",
+        "PaperP1.SimplifiedUnitMapGridCount.logarithmic_power_bound",
+        "PaperP1.SimplifiedUnitMapGridCount.logarithmic_point_count",
+        "PaperP1.TotalDegreeMonomialCardinality.fiberEquiv",
+        "PaperP1.LogarithmicLocalUnitMaps.HasMap"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16775 jobs); direct axiom audit passed for 15902 declarations using only propext, Classical.choice and Quot.sound; all 15449 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.81 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

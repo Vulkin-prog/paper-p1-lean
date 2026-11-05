@@ -4075,3 +4075,7 @@ public import PaperP1.Analysis.ActualLocalUnitMapGridCount
 public import PaperP1.Analysis.UnitIntervalSubdivision
 public import PaperP1.Analysis.UnitMapGridPointCount
 public import PaperP1.Analysis.UnitMonomialDeterminantScale
+public import PaperP1.Algebra.TotalDegreeMonomialCardinality
+public import PaperP1.Analysis.LogarithmicLocalUnitMaps
+public import PaperP1.Analysis.MonomialCountingParameters
+public import PaperP1.Analysis.SimplifiedUnitMapGridCount

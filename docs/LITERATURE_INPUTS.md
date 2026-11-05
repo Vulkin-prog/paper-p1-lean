@@ -28062,3 +28062,22 @@ The count applies to the full image of each constructed local map. It does not b
 P1-MATH-0524 adds four modules, ten theorems and four definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 522 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16767 jobs); direct axiom audit passed for 15893 declarations using only propext, Classical.choice and Quot.sound; all 15438 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.83 GiB.
+
+
+## Exact monomial cardinality and polynomial-logarithmic local map counts
+
+Stable ID: p1:internal:logarithmic-local-unit-map-counts. Actual monomial cardinality and height exponents are exact; each constructed genuine local map has an unconditional polynomial-logarithmic grid-point bound.
+
+TotalDegreeMonomialCardinality constructs an actual equivalence between the existing bounded-total-degree monomial index type and its first-coordinate-dependent finite fibers. Summing the genuine fiber cardinalities proves 2*mu=(k+1)*(k+2) and mu=(k+1)*(k+2)/2 exactly, including k=0. The actual family and enumeration from P1-MATH-0504 are unchanged.
+
+MonomialCountingParameters uses that exact cardinality and the exact triangular determinant identity to prove k*mu/(mu*(mu-1)/2)=4/(k+3) for k>=1. It also simplifies the genuine joint exceptional-set allowance to at most 123*D^2*(k+1)^6. Every natural subtraction, cast and parity convention is checked. These are exact identities and inequalities for the actual finite family, not asymptotic assumptions.
+
+SimplifiedUnitMapGridCount simplifies the actual complete-image count from P1-MATH-0524 to 32*(k+1)^8*N^(4/(k+3)). If log(N)<=k, the real power is proved at most exp(4), yielding 32*exp(4)*(k+1)^8 points for the entire actual normalized-grid population in one unit-jet/Chebyshev map. The determinant size, derivative bounds, interval scale, interval subdivision and finite population counts are all internal. Its generic transfer keeps only the displayed actual smoothness, unit jets and strict all-polynomial zero-count properties.
+
+LogarithmicLocalUnitMaps internally constructs those actual maps for every point of an irreducible real curve inside the open unit box, outside a genuine exceptional set of cardinality at most 123*D^2*(k+1)^6, with 1<=k<D. Each map is smooth and injective, has a positive affine coordinate, lies on the actual curve and has the prescribed midpoint. The map is selected before every grid scale N with log(N)<=k and every finite point population. No unproved Chebyshev, determinant or per-map grid-count input remains in this geometric specialization.
+
+A quantitative bound per actual local map does not bound the number of maps covering a whole curve or its connected components. Controlled global curve/component map counts, whole-component graph coverage, the final sharp plane estimate and higher-dimensional projection remain separate. Full main13.4/13.5 remain unresolved; the generic plane theorem stays cubic with full a<1/3 range. The primary BCN Sections3-5 were rechecked, including the separate global component, parametrization and projection steps; no additional source erratum is asserted.
+
+P1-MATH-0525 adds four modules, nine theorems and two definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 523 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16775 jobs); direct axiom audit passed for 15902 declarations using only propext, Classical.choice and Quot.sound; all 15449 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.81 GiB.
