@@ -3169,6 +3169,9 @@ import PaperP1
 #print axioms PaperP1.PrimitiveTailScaling.scaled_geometric_bound
 #print axioms PaperP1.PrimitiveTailScaling.scaled_series_bound
 #print axioms PaperP1.PrimitiveTailScaling.remaining_order_budget
+#print axioms PaperP1.QuadraticNormalizedGridCount.componentScale_nonneg
+#print axioms PaperP1.QuadraticNormalizedGridCount.point_count_with_exceptional_set
+#print axioms PaperP1.QuadraticNormalizedGridCount.point_count
 #print axioms PaperP1.QuadraticRelativeError.alpha_perturbation_bound
 #print axioms PaperP1.QuadraticRelativeError.beta_at_interval_scale
 #print axioms PaperP1.QuadraticRelativeError.quadratic_center_bound
@@ -3275,6 +3278,8 @@ import PaperP1
 #print axioms PaperP1.ReducedSourceShiftBudget.polylog_rebase
 #print axioms PaperP1.ReducedSourceShiftBudget.shift_and_loss_bounds
 #print axioms PaperP1.RegularComponentMinimumBoundary.minimum_not_in_region
+#print axioms PaperP1.RegularComponentPopulationAssembly.first_count
+#print axioms PaperP1.RegularComponentPopulationAssembly.second_count
 #print axioms PaperP1.RegularComponentUnitGridCount.exists_unit_piece
 #print axioms PaperP1.RegularComponentUnitGridCount.point_count
 #print axioms PaperP1.RegularCurveComponentGraphs.exists_local_chart_in_region
@@ -3286,6 +3291,14 @@ import PaperP1
 #print axioms PaperP1.RegularEndpointBranch.exists_branch
 #print axioms PaperP1.RegularNormalizedCharts.exists_at_nonsingular
 #print axioms PaperP1.RegularNormalizedCharts.exists_off_singular
+#print axioms PaperP1.RegularRegionCoordinateSwap.point_injective
+#print axioms PaperP1.RegularRegionCoordinateSwap.swapped_card
+#print axioms PaperP1.RegularRegionCoordinateSwap.mem_swapped_point
+#print axioms PaperP1.RegularRegionCoordinateSwap.unitBox_point
+#print axioms PaperP1.RegularRegionCoordinateSwap.mem_region
+#print axioms PaperP1.RegularRegionCoordinateSwap.image_region
+#print axioms PaperP1.RegularRegionCoordinateSwap.image_component
+#print axioms PaperP1.RegularRegionCoordinateSwap.polynomial_irreducible
 #print axioms PaperP1.RelativeIntervalAxisBounds.first_axis_scale
 #print axioms PaperP1.RelativeIntervalAxisBounds.second_axis_scale
 #print axioms PaperP1.RelativeIntervalAxisBounds.scaled_interval_sum_bound
@@ -3425,6 +3438,8 @@ import PaperP1
 #print axioms PaperP1.ScaledWronskianTransformation.jetMatrix_expansion
 #print axioms PaperP1.ScaledWronskianTransformation.wronskian_factor
 #print axioms PaperP1.ScaledWronskianTransformation.wronskian_ne_zero
+#print axioms PaperP1.SecondRegularComponentFamilyBound.card_bound_of_comparison
+#print axioms PaperP1.SecondRegularComponentFamilyBound.card_bound
 #print axioms PaperP1.SecondRegularComponentUnitGridCount.exists_unit_piece
 #print axioms PaperP1.SecondRegularComponentUnitGridCount.point_count
 #print axioms PaperP1.SecondRegularCurveComponentGraphs.exists_local_chart_in_region
@@ -16008,3 +16023,6 @@ import PaperP1
 #print axioms PaperP1.WordForcingFlipCost.specified_signed_source_cost
 #print axioms PaperP1.WordForcingFlipCost.specified_anchored_source_cost
 #print axioms PaperP1.WordForcingFlipCost.arbitrary_orientation_source_lower
+#print axioms PaperP1.FiniteComponentRepresentatives.disjoint_of_ne
+#print axioms PaperP1.FiniteComponentRepresentatives.disjoint_of_not_mem
+#print axioms PaperP1.FiniteComponentRepresentatives.exists_representatives

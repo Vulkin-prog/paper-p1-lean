@@ -4112,3 +4112,8 @@ public import PaperP1.Analysis.ControlledRegularComponentEnds
 public import PaperP1.Analysis.FirstRegularComponentFamilyBound
 public import PaperP1.Analysis.RegularComponentMinimumBoundary
 public import PaperP1.Analysis.RegularEndpointBranch
+public import PaperP1.Analysis.QuadraticNormalizedGridCount
+public import PaperP1.Analysis.RegularComponentPopulationAssembly
+public import PaperP1.Analysis.RegularRegionCoordinateSwap
+public import PaperP1.Analysis.SecondRegularComponentFamilyBound
+public import PaperP1.Topology.FiniteComponentRepresentatives

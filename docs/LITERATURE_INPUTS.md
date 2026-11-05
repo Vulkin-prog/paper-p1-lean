@@ -1,5 +1,7 @@
 # External mathematical inputs
 
+P1-MATH-0536 proves the complete global quadratic-degree normalized-grid count forlog(N)<=k<D, with all component geometry and analytic inputs internal. Original integer-box rescaling, logarithmic-order selection, low-degree combination and field-uniform arithmetic descent remain separate.
+
 P1-MATH-0535 proves the actual first-orientation regular component-family bound E.card+D*(2*D+4), including constructed closure minima, complete endpoint classification and regular exceptional-point incidence. Second-orientation transport and global grid assembly remain separate.
 
 P1-MATH-0534 proves the actual quadratic barrier budget D*(2*D+4) for disjoint preconnected curve populations with positive anchors and zero-barrier closure endpoints. Actual regular-component endpoint selection, classification and exceptional-point incidence remain separate.
@@ -28257,3 +28259,20 @@ The second-orientation transport and finite-population assembly with the previou
 P1-MATH-0535 adds five modules and eleven theorems, with no new definition. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 533 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16841 jobs); direct axiom audit passed for 16004 declarations using only propext, Classical.choice and Quot.sound; all 15576 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.60 GiB.
+
+
+## Global quadratic-degree normalized-grid count from actual components
+
+Stable ID: p1:internal:global-quadratic-normalized-grid-count. The full normalized real geometric count is internal and quadratic in degree; no Harnack or supplied component cardinality remains in that regime. Uniform original-box arithmetic assembly remains separate.
+
+RegularRegionCoordinateSwap constructs the actual coordinate-swap homeomorphism and transports the genuine finite exceptional set, open unit box, regular region, irreducible equation and every connected component exactly. SecondRegularComponentFamilyBound transports the internally proved first-orientation component-wide comparison theorem and proves the original second-orientation finite-family bound E.card+D*(2*D+4). The reverse gradient comparison is derived from the actual original control-set avoidance, without assuming any control-family invariance under the swap.
+
+FiniteComponentRepresentatives constructs an actual finite subset of any finite population that represents every connected component meeting that population. Its represented components are pairwise disjoint. RegularComponentPopulationAssembly applies these actual representatives to both regular orientations, bounds their number by the internally proved quadratic family count, and sums the already proved entire-component grid counts. For either orientation, the whole finite population has size at most (E.card+D*(2*D+4))*A(k,N), where A(k,N)=2+1024*exp(4)*(Nat.log2(2*N)+1)*(k+1)^10. No component, chart or counting cover is supplied as a premise.
+
+QuadraticNormalizedGridCount proves the global normalized-grid estimate for every irreducible real plane polynomial, every 1<=k<degree(P), every positive integer N with log(N)<=k, and every finite original-curve population in the open unit box on the grid z/N. It partitions the actual population into exceptional points and the two smaller-slope orientations, constructs the genuine common exceptional set with budget B=D^2*(123*(k+1)^6), and proves the complete bound B+2*(B+D*(2*D+4))*A(k,N). This is a genuine global quadratic-degree bound with polynomial k and logarithmic N factors. Its finite exceptional set, both component-family budgets, actual representatives, component charts, jet bounds, determinant separation and auxiliary polynomial zero counts are all internally proved. No Harnack, global component-cardinality or target grid bound is assumed.
+
+The complete real geometric summation step is now closed in the normalized high-degree regime log(N)<=k<D. Returning to the original integer box, choosing the logarithmic order uniformly, combining the low-degree arithmetic bound and extending to arbitrary characteristic-zero coefficient fields remain separate. The full all-dimensional main13.4 and original quantitative growing-degree main13.5 are not yet promoted; the previously published generic field-uniform global theorem remains cubic with a<1/3.
+
+P1-MATH-0536 adds five modules, eighteen theorems and three definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 534 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16851 jobs); direct axiom audit passed for 16022 declarations using only propext, Classical.choice and Quot.sound; all 15597 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.57 GiB.

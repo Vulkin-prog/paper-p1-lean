@@ -25986,6 +25986,53 @@
         "status": "not_integrated"
       },
       "validation_commit": "d497153f9f25d22d91e8e1c55e1612e9c8f415c9"
+    },
+    {
+      "id": "P1-MATH-0536",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "Only the first-orientation global component-family bound was internal. Exact second-orientation transport, actual representatives and the complete global normalized-grid summation were still open.",
+      "finding": "The actual full normalized-grid population now has the proved global quadratic-degree bound B+2*(B+D*(2*D+4))*A(k,N) for log(N)<=k<D, with every geometric and analytic input internal.",
+      "proposed_revision": "Use the internal normalized-grid theorem and its endpoint/barrier proof in place of the global component input. Keep integer-box rescaling, logarithmic order choice, low-degree combination and arbitrary-field descent explicit.",
+      "impact": "Closes the complete real geometric counting and component summation step of the sharp-degree plane route. Uniform arithmetic assembly and higher-dimensional projection remain separate.",
+      "evidence": [
+        "PaperP1.QuadraticNormalizedGridCount.componentScale_nonneg",
+        "PaperP1.QuadraticNormalizedGridCount.point_count_with_exceptional_set",
+        "PaperP1.QuadraticNormalizedGridCount.point_count",
+        "PaperP1.RegularComponentPopulationAssembly.first_count",
+        "PaperP1.RegularComponentPopulationAssembly.second_count",
+        "PaperP1.RegularRegionCoordinateSwap.point_injective",
+        "PaperP1.RegularRegionCoordinateSwap.swapped_card",
+        "PaperP1.RegularRegionCoordinateSwap.mem_swapped_point",
+        "PaperP1.RegularRegionCoordinateSwap.unitBox_point",
+        "PaperP1.RegularRegionCoordinateSwap.mem_region",
+        "PaperP1.RegularRegionCoordinateSwap.image_region",
+        "PaperP1.RegularRegionCoordinateSwap.image_component",
+        "PaperP1.RegularRegionCoordinateSwap.polynomial_irreducible",
+        "PaperP1.SecondRegularComponentFamilyBound.card_bound_of_comparison",
+        "PaperP1.SecondRegularComponentFamilyBound.card_bound",
+        "PaperP1.FiniteComponentRepresentatives.disjoint_of_ne",
+        "PaperP1.FiniteComponentRepresentatives.disjoint_of_not_mem",
+        "PaperP1.FiniteComponentRepresentatives.exists_representatives",
+        "PaperP1.QuadraticNormalizedGridCount.componentScale",
+        "PaperP1.RegularRegionCoordinateSwap.swapHomeomorph",
+        "PaperP1.RegularRegionCoordinateSwap.swapped"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16851 jobs); direct axiom audit passed for 16022 declarations using only propext, Classical.choice and Quot.sound; all 15597 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.57 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
