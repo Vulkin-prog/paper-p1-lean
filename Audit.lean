@@ -1170,6 +1170,8 @@ import PaperP1
 #print axioms PaperP1.HomogeneousChartCoefficientQuotient.chart_ker
 #print axioms PaperP1.HomogeneousChartCoefficientQuotient.coefficientQuotientEquiv_mk
 #print axioms PaperP1.HomogeneousChartCoordinateChange.equiv_dehomogenization
+#print axioms PaperP1.HomogeneousChartSpecialization.chart_map
+#print axioms PaperP1.HomogeneousChartSpecialization.eval_homogenize_axis
 #print axioms PaperP1.HomogeneousDenominator.exists_component_ne_zero
 #print axioms PaperP1.HomogeneousDenominator.component_representation
 #print axioms PaperP1.HomogeneousDenominator.mulMap_injective
@@ -10110,6 +10112,13 @@ import PaperP1
 #print axioms PaperP1.PellInput.scaleImag_height
 #print axioms PaperP1.PellInput.exists_squarefree_reduction
 #print axioms PaperP1.PellInput.hasAtMostSolutionsReal_of_squarefree_reduction
+#print axioms PaperP1.GeometricProjectiveFibres.fibre_evaluation
+#print axioms PaperP1.GeometricProjectiveFibres.fibre_homogeneous
+#print axioms PaperP1.GeometricProjectiveFibres.fibre_chart_coefficient
+#print axioms PaperP1.GeometricProjectiveFibres.fibre_axis_nonzero
+#print axioms PaperP1.GeometricProjectiveFibres.fibre_nonaxis_nonzero
+#print axioms PaperP1.GeometricProjectiveFibres.fibre_nonzero
+#print axioms PaperP1.GeometricProjectiveFibres.primitive_fibre_card
 #print axioms PaperP1.GridPolynomialGraphBound.integral_point
 #print axioms PaperP1.GridRationalGraphAlternative.integral_point
 #print axioms PaperP1.GridRationalGraphBound.integral_point

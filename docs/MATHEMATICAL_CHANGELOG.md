@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**337 mathematical improvements and two statement-scope corrections are confirmed.**
+**338 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23855,3 +23855,16 @@ ScalarIrreducibilityReflection.unit_reflection proves polynomial-unit reflection
 The two modules add six unconditional theorems and no definitions. They prepare control of projective fibres for the still open geometric Heath-Brown estimate, and make the affine meaning of the exact projective predicate explicit. No Heath-Brown count is claimed or assumed by these algebraic equivalences. CompanionT1.4,T1.5,T1.13 still retain the geometric Heath-Brown ordinary input; the non-geometric input remains internally proved. Main13.4 and the other recorded geometric inputs remain open. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records337 improvements and two statement-scope corrections. No new dependency, axiom, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15573 jobs); direct axiom audit passed for 14206 declarations using only propext, Classical.choice and Quot.sound; all 13480 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.35 GiB.
+
+
+## Nonzero actual projective fibres and height-free primitive fibre counts
+
+GeometricProjectiveFibres.fibre is the actual homogeneous form in the second integer pair, obtained by mapping the exchanged projective polynomial through evaluation at the first pair. Its evaluation equals exactly the original projective equation, its degree is exactly the original second partial degree b, and its affine-chart coefficients are the evaluations of the literal homogenized coefficient rows of G.
+
+For every nonzero G with b>0 and Geometric G, fibre_nonzero proves that this form is nonzero above every primitive first pair. The nonaxis proof uses the newly checked rational irreducibility and specialization; a putative zero fibre would give arbitrarily many distinct roots of a nonzero specialized polynomial. The axis proof uses an actual leading first-variable coefficient, an exact axis evaluation identity and the nonzero first coordinate forced by primitivity. No axis, sign or zero-coordinate case is omitted.
+
+primitive_fibre_card then proves at most2*(b+1) signed primitive second-pair representatives over each such first pair, with no height bound on the second pair and no coefficient dependence. It uses the already checked homogeneous root/direction count. The generic supporting module proves that coefficient maps commute with the homogeneous chart and that evaluation at(t,0) of a degree-d homogenization equals coeff(P,d)*t^d.
+
+The two modules add nine unconditional theorems and one definition. This prepares the elementary second-degree-one branch and the coarse bound for the geometric Heath-Brown input. It does not prove the remaining sharp bound for b>=2. CompanionT1.4,T1.5,T1.13 remain conditional on the geometric Heath-Brown input. Main13.4 and the other recorded geometric inputs remain open. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records338 improvements and two statement-scope corrections. No dependency, axiom, unproved input, compiler change or original source edit is introduced; Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15577 jobs); direct axiom audit passed for 14215 declarations using only propext, Classical.choice and Quot.sound; all 13490 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.33 GiB.

@@ -3504,3 +3504,5 @@ public import PaperP1.Arithmetic.GeometricPlanePointInput
 public import PaperP1.Arithmetic.LinearPlaneGridBound
 public import PaperP1.Algebra.HomogenizationIrreducibilityReflection
 public import PaperP1.Algebra.ScalarIrreducibilityReflection
+public import PaperP1.Algebra.HomogeneousChartSpecialization
+public import PaperP1.Diophantine.GeometricProjectiveFibres

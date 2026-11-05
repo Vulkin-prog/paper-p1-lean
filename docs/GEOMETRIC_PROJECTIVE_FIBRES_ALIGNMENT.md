@@ -1,0 +1,11 @@
+# Nonzero actual projective fibres and height-free primitive fibre counts
+
+Source: companion T1.4, geometric biform counting ingredient. The second pair remains unbounded in height exactly as in Heath-Brown Lemma2. Original manuscript hashes are unchanged.
+
+GeometricProjectiveFibres.fibre is the actual homogeneous form in the second integer pair, obtained by mapping the exchanged projective polynomial through evaluation at the first pair. Its evaluation equals exactly the original projective equation, its degree is exactly the original second partial degree b, and its affine-chart coefficients are the evaluations of the literal homogenized coefficient rows of G.
+
+For every nonzero G with b>0 and Geometric G, fibre_nonzero proves that this form is nonzero above every primitive first pair. The nonaxis proof uses the newly checked rational irreducibility and specialization; a putative zero fibre would give arbitrarily many distinct roots of a nonzero specialized polynomial. The axis proof uses an actual leading first-variable coefficient, an exact axis evaluation identity and the nonzero first coordinate forced by primitivity. No axis, sign or zero-coordinate case is omitted.
+
+primitive_fibre_card then proves at most2*(b+1) signed primitive second-pair representatives over each such first pair, with no height bound on the second pair and no coefficient dependence. It uses the already checked homogeneous root/direction count. The generic supporting module proves that coefficient maps commute with the homogeneous chart and that evaluation at(t,0) of a degree-d homogenization equals coeff(P,d)*t^d.
+
+The two modules add nine unconditional theorems and one definition. This prepares the elementary second-degree-one branch and the coarse bound for the geometric Heath-Brown input. It does not prove the remaining sharp bound for b>=2. CompanionT1.4,T1.5,T1.13 remain conditional on the geometric Heath-Brown input. Main13.4 and the other recorded geometric inputs remain open. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records338 improvements and two statement-scope corrections. No dependency, axiom, unproved input, compiler change or original source edit is introduced; Palomar remains deferred.
