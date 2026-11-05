@@ -25201,3 +25201,18 @@ These are the algebraic prerequisites for constructing a bounded-height equation
 P1-MATH-0367 adds nine theorems and two index/polynomial definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records365 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 and the geometric integer plane count remain open; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15647 jobs); direct axiom audit passed for 14368 declarations using only propext, Classical.choice and Quot.sound; all 13663 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.95 GiB.
+
+
+## Actual bounded-height plane equation from the original grid kernel
+
+Stable ID: p1:internal:bounded-plane-interpolation. Every minor singularity is proved from the original actual coefficient vector. The bounded-height equation is constructed, not assumed; the geometric counting bound remains open.
+
+BoundedPlaneInterpolation.exists_bounded_equation constructs a nonzero integer equation Q of total degree at most D through every point of an arbitrary finite signed integer population S in the coordinate box B>=1, whenever one nonzero original equation P of total degree at most D vanishes on S. Its coefficient height is at most(3*r*(B^D+1))^(r-1), r=card(TotalDegreeMonomials.Index D), independently of every coefficient of P and independently of the number of points. All points are retained.
+
+minor_vanishing uses the actual coefficient vector of P, proves it nonzero by exact triangular reconstruction, and proves it is an integer kernel vector of each actual square row minor. An actual nonzero coordinate and the checked adjugate identity force each minor determinant to vanish. No minor, rank or interpolation assumption is supplied. exists_coefficients applies the previously proved finite integer annihilator theorem to the whole family with explicit row bound B^D+1. The triangular basis recovers Q with exact degree and height control. entry_bound handles arbitrary coordinate signs. heightBound_polynomial bounds the explicit height further by(6*r)^(r-1)*B^(D*(r-1)), with constants and power depending only on D.
+
+This closes the bounded-height interpolation construction. Its application via finite plane Bezout to restrict the remaining geometric integer counting input to polynomially bounded coefficients still needs to be assembled. The actual BCN counting bound and general main13.4 remain unproved.
+
+P1-MATH-0368 adds five theorems and two literal entry/height-bound definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records366 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15649 jobs); direct axiom audit passed for 14373 declarations using only propext, Classical.choice and Quot.sound; all 13670 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.93 GiB.

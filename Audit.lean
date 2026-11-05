@@ -3287,6 +3287,11 @@ import PaperP1
 #print axioms PaperP1.BoundedNormalizedDefectPairs.covered_card
 #print axioms PaperP1.BoundedNormalizedDefectPairs.pairs_card
 #print axioms PaperP1.BoundedNormalizedDefectPairs.prefactor_bound
+#print axioms PaperP1.BoundedPlaneInterpolation.heightBound_polynomial
+#print axioms PaperP1.BoundedPlaneInterpolation.entry_bound
+#print axioms PaperP1.BoundedPlaneInterpolation.minor_vanishing
+#print axioms PaperP1.BoundedPlaneInterpolation.exists_coefficients
+#print axioms PaperP1.BoundedPlaneInterpolation.exists_bounded_equation
 #print axioms PaperP1.BoundedPointAlignment.ordered_alignment
 #print axioms PaperP1.BoundedPointAlignment.alignment_of_cross
 #print axioms PaperP1.BoundedPointAlignment.source_alignment

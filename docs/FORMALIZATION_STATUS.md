@@ -11,7 +11,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records365 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records366 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14368 audited theorem/lemma declarations**. This
+- The project currently has **14373 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24996,3 +24996,16 @@ These are the algebraic prerequisites for constructing a bounded-height equation
 P1-MATH-0367 adds nine theorems and two index/polynomial definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records365 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 and the geometric integer plane count remain open; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15647 jobs); direct axiom audit passed for 14368 declarations using only propext, Classical.choice and Quot.sound; all 13663 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.95 GiB.
+
+
+## Actual bounded-height plane equation from the original grid kernel
+
+BoundedPlaneInterpolation.exists_bounded_equation constructs a nonzero integer equation Q of total degree at most D through every point of an arbitrary finite signed integer population S in the coordinate box B>=1, whenever one nonzero original equation P of total degree at most D vanishes on S. Its coefficient height is at most(3*r*(B^D+1))^(r-1), r=card(TotalDegreeMonomials.Index D), independently of every coefficient of P and independently of the number of points. All points are retained.
+
+minor_vanishing uses the actual coefficient vector of P, proves it nonzero by exact triangular reconstruction, and proves it is an integer kernel vector of each actual square row minor. An actual nonzero coordinate and the checked adjugate identity force each minor determinant to vanish. No minor, rank or interpolation assumption is supplied. exists_coefficients applies the previously proved finite integer annihilator theorem to the whole family with explicit row bound B^D+1. The triangular basis recovers Q with exact degree and height control. entry_bound handles arbitrary coordinate signs. heightBound_polynomial bounds the explicit height further by(6*r)^(r-1)*B^(D*(r-1)), with constants and power depending only on D.
+
+This closes the bounded-height interpolation construction. Its application via finite plane Bezout to restrict the remaining geometric integer counting input to polynomially bounded coefficients still needs to be assembled. The actual BCN counting bound and general main13.4 remain unproved.
+
+P1-MATH-0368 adds five theorems and two literal entry/height-bound definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records366 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15649 jobs); direct axiom audit passed for 14373 declarations using only propext, Classical.choice and Quot.sound; all 13670 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.93 GiB.
