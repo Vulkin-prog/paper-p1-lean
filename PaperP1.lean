@@ -4003,3 +4003,6 @@ public import PaperP1.Algebra.PolynomialTangentWronskian
 public import PaperP1.Analysis.AnalyticWronskianNormalization
 public import PaperP1.Analysis.AnalyticWronskianProduct
 public import PaperP1.Analysis.PolyaChebyshevCriterion
+public import PaperP1.Analysis.PolynomialEvaluationDerivative
+public import PaperP1.Analysis.PolynomialTangentTrajectory
+public import PaperP1.Analysis.TangentCurvePieceZeros

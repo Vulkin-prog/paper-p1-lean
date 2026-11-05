@@ -106,7 +106,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records498 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records499 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -225,7 +225,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15625 audited theorem/lemma declarations**. This
+- The project currently has **15641 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27230,3 +27230,18 @@ The primary BCN author version arXiv2302.04209v2 Section2, Definitions1-2 and th
 P1-MATH-0500 adds three modules, twelve theorems and five definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records498 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16577 jobs); direct axiom audit passed for 15625 declarations using only propext, Classical.choice and Quot.sound; all 15108 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.70 GiB.
+
+
+## Actual tangent trajectories and finite nonexceptional curve-piece zero counts
+
+Actual polynomial tangent trajectories are now connected to the classical Chebyshev criterion. PolynomialEvaluationDerivative proves the finite sum of evaluated formal partials is the genuine directional derivative of multivariate polynomial evaluation. The chain rule is obtained by polynomial induction from constants, addition and multiplication by a variable. Smoothness of actual polynomial evaluation along coordinate functions is proved for every differentiability order and every variable index type; no differentiability interface is assumed in place of evaluation.
+
+PolynomialTangentTrajectory defines the actual polynomial vector field(P_y,-P_x) and its componentwise ordinary differential equation on an open real set. The equation itself impliesC-infinity regularity: start from the continuous coordinate functions supplied by their derivatives, then bootstrap each finite order using smooth polynomial evaluation of the velocity. Smoothness is not an extra trajectory hypothesis. Along every such actual trajectory, the real derivative ofQ equals the evaluation ofL_P(Q). The open-set congruence argument then proves every iterated derivative equals the corresponding actual formal tangent iterate. Applying the evaluation ring homomorphism to the determinant proves equality of the classical analytic Wronskian and the evaluated polynomial tangent Wronskian, including every finite family size.
+
+TangentCurvePieceZeros turns nonvanishing of the actual polynomial initial Wronskians along one trajectory into the classical initial-Wronskian premise. Thus every nontrivial combination has fewer zeros than the family size on the parameter interval. The result also counts actual distinct plane points in the image: choose one parameter for each finite population point; equality of selected parameters forces equality of those points, so the selected parameter map is injective. The trajectory itself need not be injective. This retains every original population point and does not replace them by a differently sized set.
+
+The primary BCN author version arXiv2302.04209v2 Section3 Remark4 and Proposition7 was rechecked against the direction, sign and determinant identities. These proofs establish the complete structural count on one given nonexceptional tangent piece. Existence and coverage by appropriate trajectories, nonvanishing of the polynomial Wronskians off a finite controlled exceptional set, the number of pieces, smooth bounded parametrizations and the global sharp point count remain subsequent obligations. Neither the total number of pieces nor a target curve-point count is an input to these proofs. Complete main13.4 BCN and original13.5 remain unresolved; current generic plane counting remains cubic with fulla<1/3 range.
+
+P1-MATH-0501 adds three modules, sixteen theorems and four definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records499 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16583 jobs); direct axiom audit passed for 15641 declarations using only propext, Classical.choice and Quot.sound; all 15128 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.69 GiB.

@@ -24573,6 +24573,52 @@
         "status": "not_integrated"
       },
       "validation_commit": "0cb0384ad506c03e8e24cddc9885796d6ae72835"
+    },
+    {
+      "id": "P1-MATH-0501",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The polynomial and analytic Wronskians were separately constructed, while their trajectory identity and the actual point-population count on one nonexceptional piece were not yet internal.",
+      "finding": "The actual polynomial differential equation supplies smoothness, all iterated derivative and determinant identities, and a strict finite point count on each given nonexceptional tangent piece without trajectory injectivity.",
+      "proposed_revision": "Use the internally proved trajectory and population transport, while keeping existence, coverage, polynomial nonvanishing and the number of pieces explicit until separately established.",
+      "impact": "Closes the structural analytic-to-polynomial bridge and one-piece zero bound needed for the sharp-degree route. It does not supply the remaining global geometric bounds.",
+      "evidence": [
+        "PaperP1.PolynomialEvaluationDerivative.directional_constant",
+        "PaperP1.PolynomialEvaluationDerivative.directional_variable",
+        "PaperP1.PolynomialEvaluationDerivative.directional_add",
+        "PaperP1.PolynomialEvaluationDerivative.directional_mul",
+        "PaperP1.PolynomialEvaluationDerivative.hasDerivAt_eval",
+        "PaperP1.PolynomialEvaluationDerivative.contDiffOn_eval",
+        "PaperP1.PolynomialTangentTrajectory.directional_tangent",
+        "PaperP1.PolynomialTangentTrajectory.hasDerivAt_evaluation",
+        "PaperP1.PolynomialTangentTrajectory.deriv_evaluation",
+        "PaperP1.PolynomialTangentTrajectory.iterated_evaluation",
+        "PaperP1.PolynomialTangentTrajectory.wronskian_evaluation",
+        "PaperP1.PolynomialTangentTrajectory.velocity_contDiffOn",
+        "PaperP1.PolynomialTangentTrajectory.contDiffOn_trajectory",
+        "PaperP1.TangentCurvePieceZeros.partial_evaluation",
+        "PaperP1.TangentCurvePieceZeros.parameter_zero_bound",
+        "PaperP1.TangentCurvePieceZeros.image_zero_bound",
+        "PaperP1.PolynomialEvaluationDerivative.directional",
+        "PaperP1.PolynomialTangentTrajectory.velocity",
+        "PaperP1.PolynomialTangentTrajectory.Trajectory",
+        "PaperP1.TangentCurvePieceZeros.PartialPolynomialNonzero"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16583 jobs); direct axiom audit passed for 15641 declarations using only propext, Classical.choice and Quot.sound; all 15128 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.69 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
