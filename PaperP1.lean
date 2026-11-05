@@ -3788,3 +3788,7 @@ public import PaperP1.Asymptotics.OriginalHermiteCount
 public import PaperP1.Asymptotics.PositionalDeletedCountCumulant
 public import PaperP1.Asymptotics.PositionalDeletionTransfer
 public import PaperP1.Asymptotics.PositionalOriginalCovariance
+public import PaperP1.Arithmetic.ComponentIntersectionLower
+public import PaperP1.Asymptotics.BoundedWidthNonalignedPairs
+public import PaperP1.Asymptotics.BoundedWidthPhysicalGroupCount
+public import PaperP1.Asymptotics.BoundedWidthPhysicalKernelWitness

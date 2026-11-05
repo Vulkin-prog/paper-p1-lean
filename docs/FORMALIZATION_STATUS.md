@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+P1-MATH-0444 extends internal confinement to independent bounded logarithmic physical widths and comparable centers, with an exact finite selected-component lower rank bound. Compressed pinned-support transport and fullT1.17 remain separate; numbered coverage is unchanged.
+
 CompanionT19.14 is unconditional (P1-MATH-0443): complete all-pair erasure costs, retained-space geometry and every original-law first-order criterion. ActualT19.10 intensity/covariance conclusions are unconditional; its additionalO(a_N^2) assertions remain conditional.
 
 Main20.1 is unconditional (P1-MATH-0442): the actual positive original-grid unsigned single/pair Poisson comparison holds for every fixed polynomial weight. Actual once-deleted/isolated field comparisons are also unconditional; finerT19.10 conclusions remain separate.
@@ -73,7 +75,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is135/167 unconditional and29 conditional (164/167 completed). The project records441 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is135/167 unconditional and29 conditional (164/167 completed). The project records442 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -192,7 +194,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15010 audited theorem/lemma declarations**. This
+- The project currently has **15016 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26216,3 +26218,20 @@ Earlier conditional declarations and literature history are preserved. Discharge
 P1-MATH-0443 adds thirteen modules, thirty-four theorems and six definitions. CompanionT19.14 moves from conditional to proved. Coverage becomes135 proved,29 conditional and3 in_progress out of167, with164 completed. The project records441 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16147 jobs); direct axiom audit passed for 15010 declarations using only propext, Classical.choice and Quot.sound; all 14380 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.16 GiB.
+
+
+## Unconditional bounded width confinement and finite component intersection rank
+
+The actual confinement and dense-pair host count now allow every physical window width bounded by a fixed multiple of the original critical length, with centers in any fixed comparable interval. The critical band remains a condition onL; the physical widthJ is quantified afterwards and satisfies1<=J<=D(L+1). This separates the original normalization from the enlarged bookkeeping windows used by compressed good edges. It does not assume thatJ itself is a critical length.
+
+BoundedWidthPhysicalGroupCount.uniform_count_active proves that all actual composite prime groups larger thanN^tau have total cardinality at mostepsilon(L+1), uniformly over every intrinsic physical-code subspace and every comparable center system with at most three blocks. It applies the internally proved fixed-degree polynomial confinement to actual projected offsets of width(D+1)(L+1), retaining group coprimality, repeated projected-offset multiplicities and active-only exact nonalignment.
+
+BoundedWidthPhysicalKernelWitness.uniform_witness then supplies two literal distinct offsets with small product of large-prime kernels in every injective physical block. BoundedWidthNonalignedPairs.uniform_kernel_hosts_of_no_exact and uniform_intersection_hosts combine this with actual two-small-kernel counts and fixed-loss physical regularization to prove subpower many dense nonaligned comparable pairs. The density is measured against the originalL. Actual local rank defects are permitted. The host theorems retain their exact whole-window nonalignment premise; no stronger nonalignment of unused bookkeeping positions is inferred from a weaker source assumption.
+
+ComponentIntersectionLower.finite_bound proves a separate exact finite improvement: every selected familyQ of free nontrivial large-prime components satisfies|Q|<=d_xy+pi(10(J+1))+2 at every positive pair of starts. Its all_nontrivial_bound covers the full population. No local rank assumption is necessary. The proof restricts component coefficients by all actual small-prime coordinates and both block parities, then uses the private large prime of each component to make its common square-class image injective. This refines the finite lower comparison underlying companionT9.3, whose complete statement and proof in companion_sections/pair_rigidity.tex lines120-162 were rechecked.
+
+The complete originalT1.17 statement and proof in companion_sections/arithmetic_appendix.tex lines1197-1288 were also rechecked. These new tools are preparatory for its compressed nonaligned interaction sector. The required transport of the actual pinned subset supports and their exact nonalignment scope is not yet discharged. FullT1.17, T1.12, T19.10 and their sharperO(a_N^2) assertions remain conditional. No abstract conditional consequence is counted as a new completed numbered result.
+
+P1-MATH-0444 adds four modules and six theorems. Coverage remains135 proved,29 conditional and3 in_progress out of167, with164 completed. The project records442 improvements and two statement-scope corrections. Original source bytes and compiler/dependency pins remain unchanged. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16155 jobs); direct axiom audit passed for 15016 declarations using only propext, Classical.choice and Quot.sound; all 14386 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.13 GiB.

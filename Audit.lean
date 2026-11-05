@@ -3640,6 +3640,8 @@ import PaperP1
 #print axioms PaperP1.CompleteRelationWordSquares.word_evaluation_square
 #print axioms PaperP1.CompleteRelationWordSquares.wordBasis_square
 #print axioms PaperP1.CompleteRelationWordSquares.wordSpace_square
+#print axioms PaperP1.ComponentIntersectionLower.finite_bound
+#print axioms PaperP1.ComponentIntersectionLower.all_nontrivial_bound
 #print axioms PaperP1.ComponentPrimeBudget.prime_constraint_cost_eventually
 #print axioms PaperP1.ComponentProjectionInjectivity.selection_at_component
 #print axioms PaperP1.ComponentProjectionInjectivity.firstProjection_injective
@@ -6907,6 +6909,10 @@ import PaperP1
 #print axioms PaperP1.BoundedSecondMomentUnderBCN.seedConstant_gt_one
 #print axioms PaperP1.BoundedSecondMomentUnderBCN.uniform_bound
 #print axioms PaperP1.BoundedWidthDenseCount.uniform_count
+#print axioms PaperP1.BoundedWidthNonalignedPairs.uniform_kernel_hosts_of_no_exact
+#print axioms PaperP1.BoundedWidthNonalignedPairs.uniform_intersection_hosts
+#print axioms PaperP1.BoundedWidthPhysicalGroupCount.uniform_count_active
+#print axioms PaperP1.BoundedWidthPhysicalKernelWitness.uniform_witness
 #print axioms PaperP1.CanonicalInteriorCount.uniform_fixed_coefficients
 #print axioms PaperP1.CanonicalInteriorSmoothCount.uniform_count
 #print axioms PaperP1.ChannelCompressedActivityBounds.data
