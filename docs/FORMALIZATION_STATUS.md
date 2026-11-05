@@ -3,7 +3,9 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
-Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is113 proved,51 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
+CompanionT1.8 is unconditional (P1-MATH-0430): exact dense-component to actual-rank transfer gives subpower nonaligned hosts and both printed kernel sumsN^(1+epsilon), including the full value kernel without block-parity rows.
+
+Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is114 proved,50 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
 
 The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. The full arbitrary-source statement was subsequently discharged at P1-MATH-0429.
 
@@ -45,7 +47,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is113/167 unconditional and51 conditional (164/167 completed). The project records427 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is114/167 unconditional and50 conditional (164/167 completed). The project records428 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -164,7 +166,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14815 audited theorem/lemma declarations**. This
+- The project currently has **14820 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25944,3 +25946,20 @@ All former coefficient-enumeration, chosen-source/ordinary surface-cover and nor
 P1-MATH-0429 adds three modules and eight theorems. Main15.2 moves from conditional to proved. Coverage becomes113 proved,51 conditional and3 in_progress out of167, with164 completed. The project records427 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15931 jobs); direct axiom audit passed for 14815 declarations using only propext, Classical.choice and Quot.sound; all 14173 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.48 GiB.
+
+
+## Unconditional dense weighted sector including the full value kernel
+
+Companion LemmaT1.8 now has an unconditional canonical proof of both printed kernel bounds. DenseWeightedSector.uniform_kernels proves the actual relative-kernel sum and the full value-kernel sum, without block-parity rows, at rateN^(1+epsilon). The original dense-component hypothesis eta*(L+1)<=c(x,y), enlarged nonalignment convention, actual dyadic values and exact kernel ranks are retained. The conclusion holds for every finite qualifying population, including a larger population than the printed separated pairs. The statement and complete proof in companion_sections/arithmetic_appendix.tex lines745-777 were rechecked.
+
+DenseComponentPairHosts.uniform_rank uses the already proved literal component/intersection comparison, whose error is at mostK*(L+1)/log(L+1), withK preceding the critical-band constant. An explicit logarithmic threshold makes this error at most(eta/2)*(L+1). Every dense-component pair therefore has actual even-space intersection rank at least(eta/2)*L, including irregular windows and local defects.
+
+The internally proved dense nonaligned pair confinement then yields the stronger host countN^epsilon for the entire dense-component population. No separate small-component graph count or unproved surface/curve count is used. DenseWeightedSector.uniform_full_weight combines that subpower cardinality with the internally proved pointwise full value-kernel weight boundN^(1+epsilon) to bound the larger positive sum of2^fullRank itself. Subtracting one and applying the exact relative/full rank comparison gives both printed conclusions on one threshold.
+
+DenseSourcePairKernel also proves the corresponding arithmetic pairLoss weighted sum with all local kernels retained. Its exact finite comparison to the full value-kernel sum is already proved. This supports the original arithmetic source bookkeeping without replacing full value kernels by parity-restricted kernels.
+
+Only the former chosen-source/ordinary surface-cover and normalized-curve uses in this dense sector are discharged. General surface/curve properties, arbitrary graph host estimates and the sharp growing-degree BCN theorem remain separate. Original manuscript bytes and earlier conditional proof history remain preserved.
+
+P1-MATH-0430 adds three modules and five theorems. CompanionT1.8 moves from conditional to proved. Coverage becomes114 proved,50 conditional and3 in_progress out of167, with164 completed. The project records428 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15937 jobs); direct axiom audit passed for 14820 declarations using only propext, Classical.choice and Quot.sound; all 14178 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.45 GiB.

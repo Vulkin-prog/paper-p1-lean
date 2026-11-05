@@ -21721,6 +21721,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "5072b99f6955817b1107401933657a4c32e20ff9"
+    },
+    {
+      "id": "P1-MATH-0430",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:dense",
+        "number": "T1.8",
+        "page": 13,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 745,
+        "statement_sha256": "7614514fd992641b83baeb2b37b92f6bd4d7a162a047f7d8221af58e63368513"
+      },
+      "original_assumption": "The dense weighted sector, including its full value-kernel assertion, retained chosen-source and size-two/size-three ordinary surface covers and normalized-curve counts.",
+      "finding": "The exact component/intersection error estimate transfers dense components to dense actual even rank. Internal dense-pair confinement gives subpower hosts; the checked full-kernel point bound then proves both printed weighted sums without geometry.",
+      "proposed_revision": "Replace the component-size sector split by the explicit component-to-rank transfer and subpower dense-pair host count. Keep the full value kernel distinct from the parity-restricted relation kernel and state the stronger positive2^fullRank sum.",
+      "impact": "CompanionT1.8 becomes unconditional, including its full-value-kernel clause. Coverage becomes114 proved,50 conditional,3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.DenseComponentPairHosts.uniform_rank",
+        "PaperP1.DenseComponentPairHosts.uniform_hosts",
+        "PaperP1.DenseSourcePairKernel.uniform_source_kernel",
+        "PaperP1.DenseWeightedSector.uniform_full_weight",
+        "PaperP1.DenseWeightedSector.uniform_kernels"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15937 jobs); direct axiom audit passed for 14820 declarations using only propext, Classical.choice and Quot.sound; all 14178 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.45 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

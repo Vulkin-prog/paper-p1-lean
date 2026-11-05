@@ -7255,6 +7255,8 @@ import PaperP1
 #print axioms PaperP1.DenseAdmissibleSeedFamiliesUnderInputs.uniform_seeds
 #print axioms PaperP1.DenseAdmissibleSeedFamiliesUnderInputs.uniform_centered_extensions
 #print axioms PaperP1.DenseAnchoredKernelWitness.uniform_witness
+#print axioms PaperP1.DenseComponentPairHosts.uniform_rank
+#print axioms PaperP1.DenseComponentPairHosts.uniform_hosts
 #print axioms PaperP1.DenseCompressedPairCount.uniform_count
 #print axioms PaperP1.DenseCompressedTargetCount.uniform_offsets
 #print axioms PaperP1.DenseCompressedTargetCount.article_15_3
@@ -7307,6 +7309,7 @@ import PaperP1
 #print axioms PaperP1.DenseSingletonWeakTargets.uniform_hosts
 #print axioms PaperP1.DenseSingletonWeakTargets.uniform_mass
 #print axioms PaperP1.DenseSingletonWeakTargets.uniform_joint
+#print axioms PaperP1.DenseSourcePairKernel.uniform_source_kernel
 #print axioms PaperP1.DenseSourcePairKernelUnderInputs.uniform_source_kernel
 #print axioms PaperP1.DenseTargetCount.small_residual_exponent
 #print axioms PaperP1.DenseTargetCount.uniform_count
@@ -7317,6 +7320,8 @@ import PaperP1
 #print axioms PaperP1.DenseTwoTargetNonalignedMass.uniform_mass
 #print axioms PaperP1.DenseTwoTargetNonalignedMass.uniform_nominal_mass
 #print axioms PaperP1.DenseTwoTargetWeakHosts.uniform_hosts
+#print axioms PaperP1.DenseWeightedSector.uniform_full_weight
+#print axioms PaperP1.DenseWeightedSector.uniform_kernels
 #print axioms PaperP1.DenseWeightedSectorUnderInputs.weighted_card_bound
 #print axioms PaperP1.DenseWeightedSectorUnderInputs.relative_kernel_le_full_sum
 #print axioms PaperP1.DenseWeightedSectorUnderInputs.full_kernel_le_full_sum

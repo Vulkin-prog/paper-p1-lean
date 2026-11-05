@@ -3680,3 +3680,6 @@ public import PaperP1.Asymptotics.DenseTwoTargetNonalignedMass
 public import PaperP1.Asymptotics.DenseTwoTargetWeakHosts
 public import PaperP1.Asymptotics.RestrictedDensePrimitiveMass
 public import PaperP1.Asymptotics.UnconditionalDenseTwoTargetMass
+public import PaperP1.Asymptotics.DenseComponentPairHosts
+public import PaperP1.Asymptotics.DenseSourcePairKernel
+public import PaperP1.Asymptotics.DenseWeightedSector
