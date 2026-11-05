@@ -22981,6 +22981,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "6bbc8e0993a0e256fd385a13e3619674b48c5bf2"
+    },
+    {
+      "id": "P1-MATH-0459",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The internal reciprocal lower bounds were only at every fixed power scale. The ordinary reciprocal sum still had no internally proved explicit lower bound on the hard-saddle scale, and variable product order could not be passed through the earlier divisor multiplicity estimate.",
+      "finding": "Exact squarefree prime-product cardinalities, the internal prime-counting theorem and an explicit rounded saddle order give ordinary/full lower boundsN*exp(-10V_N) and dyadic lower boundN*exp(-11V_N), without EIP or a smooth-number census.",
+      "proposed_revision": "Add the explicit prime-product coarse saddle lower bound as an unconditional internal result. State its constants and variable-order quantifier order, while reserving the sharp coefficient2 ando(nu_N) error for the still unformalized ordinary EIP estimate.",
+      "impact": "Strengthens the full, dyadic and ordinary reciprocal lower bounds from arbitrary power scales to an explicit hard-saddle scale. The fineT19.15 equivalent and EIPInput remain unproved; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.CoarseSaddlePowerErrors.power_negligible",
+        "PaperP1.PrimeProductReciprocalLower.root_scale_lower",
+        "PaperP1.PrimeProductReciprocalLower.exponential_lower",
+        "PaperP1.PrimeProductReciprocalSaddleLower.uniform_ordinary_lower",
+        "PaperP1.PrimeProductReciprocalSaddleLower.uniform_full_lower",
+        "PaperP1.PrimeProductReciprocalSaddleLower.uniform_dyadic_lower",
+        "PaperP1.PrimeProductReciprocalSaddleLower.ordinary_power_lower",
+        "PaperP1.PrimeProductReciprocalSaddleLower.ordinary_log_bound",
+        "PaperP1.PrimeProductReciprocalSaddleLower.ordinary_normalized_log_limit",
+        "PaperP1.PrimeProductSaddleChoice.exists_order",
+        "PaperP1.PrimeProductCensus.product_injective",
+        "PaperP1.PrimeProductCensus.products_card",
+        "PaperP1.PrimeProductCensus.product_properties",
+        "PaperP1.PrimeProductCensus.ordinary_reciprocal_lower",
+        "PaperP1.PrimeProductCensus.choose_lower",
+        "PaperP1.PrimeProductCensus.products"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16343 jobs); direct axiom audit passed for 15241 declarations using only propext, Classical.choice and Quot.sound; all 14666 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.63 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

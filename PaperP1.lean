@@ -3881,3 +3881,8 @@ public import PaperP1.Analysis.ElementaryReciprocalPivotUpper
 public import PaperP1.Asymptotics.ArbitraryPolylogPivotCount
 public import PaperP1.Asymptotics.ElementarySignedCostRate
 public import PaperP1.Asymptotics.ElementarySignedCostUpper
+public import PaperP1.Analysis.CoarseSaddlePowerErrors
+public import PaperP1.Analysis.PrimeProductReciprocalLower
+public import PaperP1.Analysis.PrimeProductReciprocalSaddleLower
+public import PaperP1.Analysis.PrimeProductSaddleChoice
+public import PaperP1.Arithmetic.PrimeProductCensus

@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records456 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records457 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15226 audited theorem/lemma declarations**. This
+- The project currently has **15241 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26503,3 +26503,20 @@ ElementarySignedCostUpper first proves the exact actual signed cost upper ledger
 The cost is still the original nonnegative coordinate-by-coordinate cost of this particular forcing. No lower bound for dependence or total variation is asserted. The complete fine logarithmic equivalents ofT19.15 andT19.16 remain conditional only on their recorded ordinary EIP input; neither numbered result is promoted. P1-MATH-0458 adds five modules, twenty-three theorems and three definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records456 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16333 jobs); direct axiom audit passed for 15226 declarations using only propext, Classical.choice and Quot.sound; all 14650 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.66 GiB.
+
+
+## Explicit ordinary reciprocal saddle lower bounds from distinct prime products
+
+An explicit coarse saddle lower bound is now proved internally for the actual ordinary reciprocal-prime sum, the full reciprocal odd-pivot sum and its dyadic version. The bounds areN*exp(-10V_N),N*exp(-10V_N) andN*exp(-11V_N), respectively. They are stronger than the previously internal power-scale lower bounds, but do not give the fine coefficient2 or theo(nu_N) error required by companionT19.15 and ordinary EIPInput. The fullT19.15 statement and proof in companion_sections/limits_appendix.tex lines1138-1194 were rechecked; the ordinary largest prime factor and odd-valuation pivot are kept distinct.
+
+PrimeProductCensus constructs the actual integer products ofk distinct primes at mostY. Unique prime factorization proves the product map injective on prime subsets, so its exact image cardinality is binomial(pi(Y),k). Every product is positive, at mostY^k, and has ordinary largest prime factor at mostY. Consequently the actual ordinary reciprocal sum up toX is at leastbinomial(pi(Y),k)/Y wheneverY^k<=X. This identity retains every squarefree integer product with no divisor-multiplicity loss, including variablek. A separate checked elementary binomial lower bound applies whenever2k<=pi(Y).
+
+PrimeProductReciprocalLower combines that census with the internally proved prime-counting lower bound. One absolute prime threshold precedesN andk. ForR=N^(1/k), floorR above that threshold,logN>=1 andR>=8logN, the actual ordinary sum is at leastN/((8logN)^k*R), equivalentlyN*exp(-(logN/k+k*log(8logN))). All floor losses, prime-cardinality requirements and product-height constraints are explicit. The logarithm of the prime cutoff is retained aslogN/k; this avoids an artificial extra order factor in the exponential loss.
+
+PrimeProductSaddleChoice.exists_order chooses the actual integerk=ceil(H/V(H)), withH=logN. Internal hard-saddle growth limits prove its prime cutoff is admissible, its floor eventually exceeds every fixed prime threshold, andH/k+k*log(8H)<=10V(H). This uses only already proved analysis of the actual saddle root; no ordinary reciprocal-prime asymptotic is assumed. CoarseSaddlePowerErrors proves every smaller fixed power is negligible against every fixed multiple of the saddle exponent.
+
+PrimeProductReciprocalSaddleLower.uniform_ordinary_lower and uniform_full_lower establish the stated coefficient10 bounds. uniform_dyadic_lower retains the exact doubling preimage multiplicity and square-root small-pivot loss, paying them with one additionalV_N in the exponent. The ordinary reciprocal sum therefore also has an internally proved leading logarithmic limitlog(primeSumN)/logN->1, with quantified power and logarithmic sandwiches. The previous arbitrary inverse-logarithmic upper bounds for pivots remain valid.
+
+The fine ordinary EIP theorem and the completeT19.15 equivalent remain conditional. These coarse lower bounds are not asserted to prove the desired coefficient2, and the exactT19.16 saddle cost remains conditional on its recorded ordinary input. P1-MATH-0459 adds five modules, fifteen theorems and one definition. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records457 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16343 jobs); direct axiom audit passed for 15241 declarations using only propext, Classical.choice and Quot.sound; all 14666 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.63 GiB.

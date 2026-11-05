@@ -2490,6 +2490,7 @@ import PaperP1
 #print axioms PaperP1.ClippedPowerSum.clipped_sum_le
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le_power
+#print axioms PaperP1.CoarseSaddlePowerErrors.power_negligible
 #print axioms PaperP1.ContractiveExponentialProducts.norm_exponentialProduct_le_one
 #print axioms PaperP1.ContractiveExponentialProducts.norm_first_order_le
 #print axioms PaperP1.ContractiveExponentialProducts.norm_quadratic_error_le
@@ -2780,6 +2781,15 @@ import PaperP1
 #print axioms PaperP1.PowerSeriesTail.floor_ge_half
 #print axioms PaperP1.PowerSeriesTail.constant_pos
 #print axioms PaperP1.PowerSeriesTail.tail_le_power
+#print axioms PaperP1.PrimeProductReciprocalLower.root_scale_lower
+#print axioms PaperP1.PrimeProductReciprocalLower.exponential_lower
+#print axioms PaperP1.PrimeProductReciprocalSaddleLower.uniform_ordinary_lower
+#print axioms PaperP1.PrimeProductReciprocalSaddleLower.uniform_full_lower
+#print axioms PaperP1.PrimeProductReciprocalSaddleLower.uniform_dyadic_lower
+#print axioms PaperP1.PrimeProductReciprocalSaddleLower.ordinary_power_lower
+#print axioms PaperP1.PrimeProductReciprocalSaddleLower.ordinary_log_bound
+#print axioms PaperP1.PrimeProductReciprocalSaddleLower.ordinary_normalized_log_limit
+#print axioms PaperP1.PrimeProductSaddleChoice.exists_order
 #print axioms PaperP1.PrimitiveTailScaling.coefficient_budget
 #print axioms PaperP1.PrimitiveTailScaling.scaled_geometric_bound
 #print axioms PaperP1.PrimitiveTailScaling.scaled_series_bound
@@ -5303,6 +5313,11 @@ import PaperP1
 #print axioms PaperP1.PrimePowerTail.finite_prime_tail_mul_log_le
 #print axioms PaperP1.PrimePowerTail.finite_prime_tail_le
 #print axioms PaperP1.PrimeProductBudget.card_le_assignmentExponent
+#print axioms PaperP1.PrimeProductCensus.product_injective
+#print axioms PaperP1.PrimeProductCensus.products_card
+#print axioms PaperP1.PrimeProductCensus.product_properties
+#print axioms PaperP1.PrimeProductCensus.ordinary_reciprocal_lower
+#print axioms PaperP1.PrimeProductCensus.choose_lower
 #print axioms PaperP1.PrimeRunStarts.mem_starts
 #print axioms PaperP1.PrimeRunStarts.parameters_card
 #print axioms PaperP1.PrimeRunStarts.starts_subset_interval
