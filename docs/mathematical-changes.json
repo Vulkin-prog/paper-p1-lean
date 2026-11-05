@@ -20429,6 +20429,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "22bf5631a639a0a91e0a046a9f16eab242c3402a"
+    },
+    {
+      "id": "P1-MATH-0394",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The negative-discriminant geometric conic estimate still required a fixed polynomial bound on the original coefficient height.",
+      "finding": "The actual full signed N^epsilon count is uniform over all original coefficients of every geometric negative-discriminant integer conic, including arbitrary finite boxed zero populations and every fixed polynomial coordinate-height box.",
+      "proposed_revision": "Use this unrestricted original-equation theorem for the negative-discriminant branch, alongside the proved hyperbolic branch. Complete discriminant-zero parabolas before claiming a general conic or BCN consequence.",
+      "impact": "Closes the entire negative-discriminant conic branch with no original coefficient-height or external arithmetic premise. Parabolas and general BCN remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.UnrestrictedEllipticConicCount.natural_count",
+        "PaperP1.UnrestrictedEllipticConicCount.finite_population_count",
+        "PaperP1.UnrestrictedEllipticConicCount.polynomial_height_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15703 jobs); direct axiom audit passed for 14525 declarations using only propext, Classical.choice and Quot.sound; all 13856 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.56 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
