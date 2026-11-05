@@ -4627,6 +4627,7 @@ import PaperP1
 #print axioms PaperP1.LogBudgetEuler.euler_one_le
 #print axioms PaperP1.LogBudgetEuler.euler_union
 #print axioms PaperP1.LogBudgetEuler.finite_bound
+#print axioms PaperP1.LogarithmicDegreePrimeScale.exists_scale
 #print axioms PaperP1.LogarithmicPrimeBudget.budgetConstant_pos
 #print axioms PaperP1.LogarithmicPrimeBudget.primeBudgetSum_mul_log_le
 #print axioms PaperP1.LogarithmicPrimeBudget.primeBudgetSum_le
@@ -4636,6 +4637,7 @@ import PaperP1
 #print axioms PaperP1.LogarithmicPrimeCount.primeCount_le_log_div_loglog
 #print axioms PaperP1.LogarithmicPrimeCount.prime_supports_uniformSubpolynomial
 #print axioms PaperP1.LogarithmicPrimeCount.smooth_support_count_le_rpow_eventually
+#print axioms PaperP1.LogarithmicPrimeCover.uniform_pool
 #print axioms PaperP1.MangoldtFloorBudget.log_eq_bounded_divisor_sum
 #print axioms PaperP1.MangoldtFloorBudget.factorial_log_floor_identity
 #print axioms PaperP1.MangoldtFloorBudget.division_error
@@ -4764,6 +4766,14 @@ import PaperP1
 #print axioms PaperP1.MultiAnchorWeightedSeries.finite_weight_identity
 #print axioms PaperP1.MultiAnchorWeightedSeries.weightedTerm_le
 #print axioms PaperP1.MultiAnchorWeightedSeries.weightedTotal_le
+#print axioms PaperP1.NinthDegreeUniformFieldCount.degree_square_le_profile
+#print axioms PaperP1.NinthDegreeUniformFieldCount.rational_geometric_count
+#print axioms PaperP1.NinthDegreeUniformFieldCount.rational_count
+#print axioms PaperP1.NinthDegreeUniformFieldCount.field_count
+#print axioms PaperP1.NinthDegreeUniformFieldCount.global_field_count
+#print axioms PaperP1.NinthDegreeUniformFieldCount.finite_field_count
+#print axioms PaperP1.NinthDegreeUniformPlaneCount.uniform_geometric_count
+#print axioms PaperP1.NinthDegreeUniformPlaneCount.grid_geometric_count
 #print axioms PaperP1.NonGeometricPlanePointBound.critical_points_card
 #print axioms PaperP1.NonGeometricPlanePointBound.finite_points_card_of_outer_positive
 #print axioms PaperP1.NonGeometricPlanePointBound.finite_points_card
@@ -8583,6 +8593,9 @@ import PaperP1
 #print axioms PaperP1.NearPrimitiveTripleMassUnderBCN.rank_bound
 #print axioms PaperP1.NearPrimitiveTripleMassUnderBCN.uniform_mass
 #print axioms PaperP1.NearPrimitiveTripleMassUnderBCN.main_12_1
+#print axioms PaperP1.NinthGrowingDegreePlaneCount.power_cap
+#print axioms PaperP1.NinthGrowingDegreePlaneCount.scaled_power_cap
+#print axioms PaperP1.NinthGrowingDegreePlaneCount.growing_cap
 #print axioms PaperP1.NoSingletonJointMass.uniform_range
 #print axioms PaperP1.NoSingletonJointMass.uniform_weighted
 #print axioms PaperP1.NoSingletonJointMassUnderInputs.uniform_range
@@ -11028,10 +11041,12 @@ import PaperP1
 #print axioms PaperP1.LinearProjectiveFactor.projective_chart_coefficient
 #print axioms PaperP1.LinearProjectiveFactor.projective_linear
 #print axioms PaperP1.LinearProjectiveFactor.evaluation_linear
+#print axioms PaperP1.LogarithmicPrimeAffineCount.uniform_bound
 #print axioms PaperP1.NegativeDiscriminantConicCount.coefficient_nonzero
 #print axioms PaperP1.NegativeDiscriminantConicCount.count
 #print axioms PaperP1.NegativeDiscriminantConicCount.finite_population_count
 #print axioms PaperP1.NegativeDiscriminantConicCount.grid_count
+#print axioms PaperP1.NinthDegreeUniformAffineCount.uniform_count
 #print axioms PaperP1.NonGeometricRationalSingularity.rationalize_evaluation
 #print axioms PaperP1.NonGeometricRationalSingularity.projective_zero_iff
 #print axioms PaperP1.NonGeometricRationalSingularity.nongeometric_input_of_singularity

@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records452 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records453 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15160 audited theorem/lemma declarations**. This
+- The project currently has **15175 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26435,3 +26435,20 @@ These declarations isolate the remaining arithmetic issue: the optimal total wei
 P1-MATH-0454 adds three modules, four theorems and three definitions. Main14.1 and14.6 stay conditional. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records452 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16283 jobs); direct axiom audit passed for 15160 declarations using only propext, Classical.choice and Quot.sound; all 14577 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.80 GiB.
+
+
+## Ninth-power degree-uniform plane count and a growing-degree range below one ninth
+
+A stronger absolute degree-uniform plane point bound is proved internally. The dependence improves from degree power12 to degree power9, and the fully quantitative sublinear growing-degree range improves froma<1/12 toa<1/9. Main13.5 remains conditional in its original fulla<1/2 range; neither quadratic-degree BCN nor its nonaligned-rank consequence is proved. The source statements and complete growing-degree proof in main_sections/pair_rigidity.tex lines209-251 were rechecked. Original source bytes and coefficient-field quantifiers are retained.
+
+LogarithmicPrimeCover.uniform_pool uses the internally proved prime-number-theorem interval supply at its logarithmic scale. A finite pool ofm primes in(P,16P] suffices wheneverm*logP<=2P; the earlier sufficient restrictionm²<=P is unnecessary. Its exact cardinality, total-prime-cost bound and simultaneous avoidance of every nonzero obstruction with absolute value belowP^m are all proved. LogarithmicPrimeAffineCount.uniform_bound transports this sharper supply through the complete affine determinant, resultant, smooth residue and exceptional-prime argument, without introducing a new geometric or analytic premise.
+
+LogarithmicDegreePrimeScale.exists_scale chooses one constant beforeD,N. WithL=Nat.log2N+1,m=64D³L+1 andR=N^(1/D), it constructsP of size at mostK*D³*L²*R, simultaneously satisfying the determinant scale, the fixed prime threshold andm*logP<=2P. Explicit logarithmic bounds control the rounded choice ofP. NinthDegreeUniformAffineCount then proves the full affine estimate with degree power9 and logarithmic power4. NinthDegreeUniformPlaneCount removes coefficient-height dependence via the existing exact integral shear and small-height presentation. All these steps are internal and retain actual signed integer points.
+
+NinthDegreeUniformFieldCount.global_field_count and finite_field_count prove one absoluteC for everyD>=2,N>=1, every characteristic-zero coefficient field, and every ordinarily irreducible plane polynomial of degreeD: the actual signed grid population is at mostC*D^9*(Nat.log2N+1)^4*N^(1/D). No complex embedding, geometric irreducibility, coefficient height orD<=N premise is required. Internal nongeometric intersection bounds and scalar descent remove these restrictions; largeD is handled by the actual ambient box.
+
+NinthGrowingDegreePlaneCount.power_cap, scaled_power_cap and growing_cap prove uniform o(B) counting in every fixed real offset scale for upper-power degree caps B^(a+o(1)) whenever0<=a<1/9. Fixed and large degrees are split at one fixed threshold, all powers and logarithms are absorbed with explicit threshold order, and arbitrary characteristic-zero fields remain included. This is a strictly stronger internally proved subrange of main13.5, rather than its printed fulla<1/2 conclusion. Main13.4 remains in_progress, main13.5 and13.6 remain conditional, and the three-strong-nonaligned-pair weighted residual isolated at checkpoint454 is still open.
+
+P1-MATH-0455 adds seven modules, fifteen theorems and one definition. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records453 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16297 jobs); direct axiom audit passed for 15175 declarations using only propext, Classical.choice and Quot.sound; all 14593 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.76 GiB.

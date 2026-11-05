@@ -22800,6 +22800,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "51adbb8f951e1643d4ef0451edbbbe8b1f1a07a7"
+    },
+    {
+      "id": "P1-MATH-0455",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:sublinear-grid",
+        "number": "13.5",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 228,
+        "statement_sha256": "ef4c221ed67d6eba27c4ceeeb16591c98447e85f2c53b4e4c6e0a2e6441f46fa"
+      },
+      "original_assumption": "The earlier internal absolute plane bound carried degree power12 because its finite prime pool used the crude quadratic sufficient conditionm²<=P. This restricted the established growing-degree subrange toa<1/12.",
+      "finding": "The internal logarithmic prime supply supportsm*logP<=2P and permits a prime scale of cubic rather than sixth degree size. The complete count therefore has degree power9, uniformly over all characteristic-zero coefficient fields, and gives the quantitative growing-degree rangea<1/9.",
+      "proposed_revision": "Record the stronger absoluteD^9(logN)^4N^(1/D) plane estimate and its offset-box sublinearity for upper-power degree capsa<1/9 as unconditional internal alternatives. Preserve the distinction from the original quadratic-degree BCN estimate, fulla<1/2 sublinearity and nonaligned-rank theorem.",
+      "impact": "Improves both the explicit coefficient-uniform plane count and the proved growing-degree range without external input. Full main13.5 and13.6 remain conditional; main13.4 and numbered coverage are unchanged.",
+      "evidence": [
+        "PaperP1.LogarithmicDegreePrimeScale.exists_scale",
+        "PaperP1.LogarithmicPrimeCover.uniform_pool",
+        "PaperP1.NinthDegreeUniformFieldCount.degree_square_le_profile",
+        "PaperP1.NinthDegreeUniformFieldCount.rational_geometric_count",
+        "PaperP1.NinthDegreeUniformFieldCount.rational_count",
+        "PaperP1.NinthDegreeUniformFieldCount.field_count",
+        "PaperP1.NinthDegreeUniformFieldCount.global_field_count",
+        "PaperP1.NinthDegreeUniformFieldCount.finite_field_count",
+        "PaperP1.NinthDegreeUniformPlaneCount.uniform_geometric_count",
+        "PaperP1.NinthDegreeUniformPlaneCount.grid_geometric_count",
+        "PaperP1.NinthGrowingDegreePlaneCount.power_cap",
+        "PaperP1.NinthGrowingDegreePlaneCount.scaled_power_cap",
+        "PaperP1.NinthGrowingDegreePlaneCount.growing_cap",
+        "PaperP1.LogarithmicPrimeAffineCount.uniform_bound",
+        "PaperP1.NinthDegreeUniformAffineCount.uniform_count",
+        "PaperP1.NinthDegreeUniformFieldCount.profile"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16297 jobs); direct axiom audit passed for 15175 declarations using only propext, Classical.choice and Quot.sound; all 14593 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.76 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

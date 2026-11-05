@@ -3856,3 +3856,10 @@ public import PaperP1.Asymptotics.SignedSaddleCostInternalProfile
 public import PaperP1.Asymptotics.AllAlignedTripleMass
 public import PaperP1.Asymptotics.HardNonalignedTripleCount
 public import PaperP1.Asymptotics.SharpTripleResidual
+public import PaperP1.Arithmetic.LogarithmicDegreePrimeScale
+public import PaperP1.Arithmetic.LogarithmicPrimeCover
+public import PaperP1.Arithmetic.NinthDegreeUniformFieldCount
+public import PaperP1.Arithmetic.NinthDegreeUniformPlaneCount
+public import PaperP1.Asymptotics.NinthGrowingDegreePlaneCount
+public import PaperP1.Diophantine.LogarithmicPrimeAffineCount
+public import PaperP1.Diophantine.NinthDegreeUniformAffineCount
