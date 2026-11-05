@@ -3982,3 +3982,5 @@ public import PaperP1.Asymptotics.OptimalNominalQuadratic
 public import PaperP1.Asymptotics.PoissonScaleRates
 public import PaperP1.Asymptotics.ActualHermiteReferenceRate
 public import PaperP1.Asymptotics.OptimalHermite
+public import PaperP1.Algebra.FiniteRowKernelGap
+public import PaperP1.Algebra.RectangularPolynomialCoordinates

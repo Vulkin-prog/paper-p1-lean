@@ -997,6 +997,8 @@ import PaperP1
 #print axioms PaperP1.FiniteRootWordSquares.function_ne_zero
 #print axioms PaperP1.FiniteRowKernel.exists_spanning_rows
 #print axioms PaperP1.FiniteRowKernel.exists_integer_annihilator
+#print axioms PaperP1.FiniteRowKernelGap.exists_rank_spanning_rows
+#print axioms PaperP1.FiniteRowKernelGap.exists_integer_annihilator
 #print axioms PaperP1.FiniteSetRelativeRank.relative_rank_le_even_dimension
 #print axioms PaperP1.FiniteSetRelativeRank.matches_add_residual
 #print axioms PaperP1.FiniteSetRelativeRank.matches_add_residual_of_old_le
@@ -1873,6 +1875,17 @@ import PaperP1
 #print axioms PaperP1.RectangularEvaluationPolynomial.total_degree
 #print axioms PaperP1.RectangularEvaluationPolynomial.evaluation
 #print axioms PaperP1.RectangularEvaluationPolynomial.exists_polynomial
+#print axioms PaperP1.RectangularPolynomialCoordinates.coefficient_formula
+#print axioms PaperP1.RectangularPolynomialCoordinates.coefficient
+#print axioms PaperP1.RectangularPolynomialCoordinates.coefficient_zero_of_outside
+#print axioms PaperP1.RectangularPolynomialCoordinates.polynomial_injective
+#print axioms PaperP1.RectangularPolynomialCoordinates.coefficients_polynomial
+#print axioms PaperP1.RectangularPolynomialCoordinates.outer_degree_le
+#print axioms PaperP1.RectangularPolynomialCoordinates.inner_degree_le
+#print axioms PaperP1.RectangularPolynomialCoordinates.total_degree_le
+#print axioms PaperP1.RectangularPolynomialCoordinates.reconstruction
+#print axioms PaperP1.RectangularPolynomialCoordinates.evaluation
+#print axioms PaperP1.RectangularPolynomialCoordinates.height_le
 #print axioms PaperP1.ReducedQuotientGraph.numerator_degree_le
 #print axioms PaperP1.ReducedQuotientGraph.denominator_degree_le
 #print axioms PaperP1.ReducedQuotientGraph.degree_le

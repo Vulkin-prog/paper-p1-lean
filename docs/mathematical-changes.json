@@ -24256,6 +24256,49 @@
         "status": "not_integrated"
       },
       "validation_commit": "476326e7b70bd32023f9b75372b44a47595d298e"
+    },
+    {
+      "id": "P1-MATH-0493",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:sublinear-grid",
+        "number": "13.5",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 228,
+        "statement_sha256": "ef4c221ed67d6eba27c4ceeeb16591c98447e85f2c53b4e4c6e0a2e6441f46fa"
+      },
+      "original_assumption": "The current generic interpolation presentation used a codimension-one bounded integer kernel argument whose coefficient exponent grows with the full monomial dimension.",
+      "finding": "The actual fractional row-rank gap gives a fixed seventh-power global annihilator, and exact rectangular coordinates retain every polynomial multiple dimension needed for a subsequent enlarged-degree interpolation argument.",
+      "proposed_revision": "Preserve the actual row rank and multiple-polynomial coefficient freedom when seeking sharper generic height estimates. Apply the fixed-power annihilator only after its rank-gap hypothesis is internally established.",
+      "impact": "Supplies checked finite algebraic ingredients for improving the generic height presentation, without claiming a new point bound or completing main13.5.",
+      "evidence": [
+        "PaperP1.FiniteRowKernelGap.exists_rank_spanning_rows",
+        "PaperP1.FiniteRowKernelGap.exists_integer_annihilator",
+        "PaperP1.RectangularPolynomialCoordinates.coefficient_formula",
+        "PaperP1.RectangularPolynomialCoordinates.coefficient",
+        "PaperP1.RectangularPolynomialCoordinates.coefficient_zero_of_outside",
+        "PaperP1.RectangularPolynomialCoordinates.polynomial_injective",
+        "PaperP1.RectangularPolynomialCoordinates.coefficients_polynomial",
+        "PaperP1.RectangularPolynomialCoordinates.outer_degree_le",
+        "PaperP1.RectangularPolynomialCoordinates.inner_degree_le",
+        "PaperP1.RectangularPolynomialCoordinates.total_degree_le",
+        "PaperP1.RectangularPolynomialCoordinates.reconstruction",
+        "PaperP1.RectangularPolynomialCoordinates.evaluation",
+        "PaperP1.RectangularPolynomialCoordinates.height_le",
+        "PaperP1.RectangularPolynomialCoordinates.Index",
+        "PaperP1.RectangularPolynomialCoordinates.polynomial",
+        "PaperP1.RectangularPolynomialCoordinates.polynomialLinear",
+        "PaperP1.RectangularPolynomialCoordinates.coefficientsLinear"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16539 jobs); direct axiom audit passed for 15558 declarations using only propext, Classical.choice and Quot.sound; all 15024 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.85 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
