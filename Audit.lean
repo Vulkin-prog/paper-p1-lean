@@ -2580,6 +2580,11 @@ import PaperP1
 #print axioms PaperP1.BivariateSpecialization.coefficientEnergy_specialize
 #print axioms PaperP1.BivariateSpecialization.factor_pointwise_sq
 #print axioms PaperP1.BivariateSpecialization.factor_outer_coefficient_l2_bound
+#print axioms PaperP1.BothGraphDerivativeFormulas.continuousOn_first
+#print axioms PaperP1.BothGraphDerivativeFormulas.continuousOn_second
+#print axioms PaperP1.BothGraphDerivativeFormulas.first
+#print axioms PaperP1.BothGraphDerivativeFormulas.transpose_trajectory
+#print axioms PaperP1.BothGraphDerivativeFormulas.second
 #print axioms PaperP1.CleanPairReciprocalLower.factor_identity
 #print axioms PaperP1.CleanPairReciprocalLower.substitute_lower
 #print axioms PaperP1.ClippedPowerSum.clipped_nonneg
@@ -2823,6 +2828,13 @@ import PaperP1
 #print axioms PaperP1.FiniteRolleZeros.card_le_of_iterated_derivative_nonzero
 #print axioms PaperP1.FiniteSquareTail.sum_bound
 #print axioms PaperP1.FiniteSquareTail.sum_bound_of_div_tail
+#print axioms PaperP1.GraphControlledDerivatives.coordinate_sign
+#print axioms PaperP1.GraphControlledDerivatives.first_zero_or_nowhere_zero
+#print axioms PaperP1.GraphControlledDerivatives.second_zero_or_nowhere_zero
+#print axioms PaperP1.GraphControlledDerivatives.first_sign
+#print axioms PaperP1.GraphControlledDerivatives.second_sign
+#print axioms PaperP1.GraphControlledDerivatives.first_all_orders_sign
+#print axioms PaperP1.GraphControlledDerivatives.second_all_orders_sign
 #print axioms PaperP1.GraphTangentEvaluation.directional_normalized
 #print axioms PaperP1.GraphTangentEvaluation.hasDerivAt_evaluation
 #print axioms PaperP1.GraphTangentEvaluation.deriv_evaluation
@@ -2955,6 +2967,9 @@ import PaperP1
 #print axioms PaperP1.PolynomialParsevalBounds.circleIntegrable_sq_norm_eval
 #print axioms PaperP1.PolynomialParsevalBounds.coefficient_energy_le_of_pointwise_bound
 #print axioms PaperP1.PolynomialParsevalBounds.l2_le_of_pointwise_bound
+#print axioms PaperP1.PolynomialQuotientControl.quotient_continuous
+#print axioms PaperP1.PolynomialQuotientControl.zero_or_nowhere_zero
+#print axioms PaperP1.PolynomialQuotientControl.sign_constant
 #print axioms PaperP1.PolynomialSmoothDensity.uniform_lower
 #print axioms PaperP1.PolynomialSmoothDyadicDensity.uniform_lower
 #print axioms PaperP1.PolynomialTangentTrajectory.directional_tangent

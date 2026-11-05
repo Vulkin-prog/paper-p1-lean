@@ -4031,3 +4031,6 @@ public import PaperP1.Analysis.TransposedNormalizedGraphPiece
 public import PaperP1.Algebra.GraphControlExceptions
 public import PaperP1.Algebra.GraphControlPolynomials
 public import PaperP1.Algebra.PolynomialAuxiliaryExceptions
+public import PaperP1.Analysis.BothGraphDerivativeFormulas
+public import PaperP1.Analysis.GraphControlledDerivatives
+public import PaperP1.Analysis.PolynomialQuotientControl

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**508 mathematical improvements and two statement-scope corrections are confirmed.**
+**509 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26518,3 +26518,18 @@ The primary BCN author version arXiv:2302.04209v2 Section 4 equations (22)-(23) 
 P1-MATH-0510 adds three modules, eighteen theorems and five definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 508 improvements and two P1 statement-scope corrections; the external BCN recurrence sign typo stays separately recorded. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16645 jobs); direct axiom audit passed for 15747 declarations using only propext, Classical.choice and Quot.sound; all 15264 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.51 GiB.
+
+
+## Actual graph derivative signs through the exact controlled order
+
+BothGraphDerivativeFormulas connects the exact concrete control numerators to ordinary real derivatives of the dependent coordinate in both normalized orientations. It proves continuity of each actual point path from the coordinate derivative equations, transports an arbitrary actual second-orientation trajectory back to the first orientation, and proves the canonical formula for every derivative order n+1: the concrete oriented numerator divided by P_y^(2n+1), or by P_x^(2n+1) in the transposed orientation. These identities use the same polynomials as the finite control family, not an unrelated existential numerator.
+
+PolynomialQuotientControl proves actual continuity of a polynomial numerator divided by a positive or zero integral power of a nonvanishing polynomial denominator along any continuous path from any topological space. For the exact auxiliary exceptional locus, it proves a whole-domain dichotomy: each quotient is identically zero or nowhere zero. On a preconnected domain, the actual SignType.sign of the quotient is constant. The zero case is retained; no implicit strict-sign or nonzero-numerator premise is added.
+
+GraphControlledDerivatives applies this to genuine normalized graph trajectories avoiding the concrete control set. For every positive order through the specified control order r, the actual derivative of the dependent coordinate is identically zero or nowhere zero, in either orientation. If the parameter domain is also preconnected, every such actual derivative has constant sign. The two coordinate polynomials already present in the finite family also control order zero. Complete final statements prove constant sign simultaneously for every actual derivative order0<=n<=r. Smoothness is not supplied as an additional hypothesis: the actual trajectory equations and the proved derivative identities suffice.
+
+The exact order range is explicit. A later parametrization proof using the next derivative through r+1 must instantiate the finite-control construction with r+1, retaining its polynomial order allowance. The source Section4 Proposition10 proof's sign ingredient is thus available with a precise internally proved scope. This checkpoint does not assert that a whole connected curve component is covered by one graph, a controlled global number of pieces, bounded parametrizations, the final sharp plane point count or higher-dimensional projection. Full main13.4/13.5 remain unresolved; the current generic plane theorem stays cubic with full a<1/3 range.
+
+P1-MATH-0511 adds three modules and fifteen theorems, with no new definition. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 509 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16651 jobs); direct axiom audit passed for 15762 declarations using only propext, Classical.choice and Quot.sound; all 15279 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.49 GiB.

@@ -24999,6 +24999,47 @@
         "status": "not_integrated"
       },
       "validation_commit": "7047bd27a3adf6d8b15358c6eba0fe906883a9ed"
+    },
+    {
+      "id": "P1-MATH-0511",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The finite control family had not yet been identified with canonical actual dependent-coordinate derivatives, and constant derivative signs remained unproved.",
+      "finding": "Canonical formulas in both orientations and the actual polynomial-quotient dichotomy prove constant signs of every real graph derivative from order0 throughr on any open preconnected trajectory domain avoiding the order-r control set.",
+      "proposed_revision": "Retain the explicit controlled order, the identically-zero branch and denominator condition; invoke order r+1 explicitly whenever a parametrization argument uses that next derivative.",
+      "impact": "Closes actual bounded-order graph derivative sign control in both orientations. Whole-component graph coverage, global piece counts and bounded parametrizations remain open.",
+      "evidence": [
+        "PaperP1.BothGraphDerivativeFormulas.continuousOn_first",
+        "PaperP1.BothGraphDerivativeFormulas.continuousOn_second",
+        "PaperP1.BothGraphDerivativeFormulas.first",
+        "PaperP1.BothGraphDerivativeFormulas.transpose_trajectory",
+        "PaperP1.BothGraphDerivativeFormulas.second",
+        "PaperP1.GraphControlledDerivatives.coordinate_sign",
+        "PaperP1.GraphControlledDerivatives.first_zero_or_nowhere_zero",
+        "PaperP1.GraphControlledDerivatives.second_zero_or_nowhere_zero",
+        "PaperP1.GraphControlledDerivatives.first_sign",
+        "PaperP1.GraphControlledDerivatives.second_sign",
+        "PaperP1.GraphControlledDerivatives.first_all_orders_sign",
+        "PaperP1.GraphControlledDerivatives.second_all_orders_sign",
+        "PaperP1.PolynomialQuotientControl.quotient_continuous",
+        "PaperP1.PolynomialQuotientControl.zero_or_nowhere_zero",
+        "PaperP1.PolynomialQuotientControl.sign_constant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16651 jobs); direct axiom audit passed for 15762 declarations using only propext, Classical.choice and Quot.sound; all 15279 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.49 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
