@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records478 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records479 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15437 audited theorem/lemma declarations**. This
+- The project currently has **15455 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26883,3 +26883,20 @@ These are effective ingredients for a future smooth-count lower barrier. Neither
 P1-MATH-0480 adds two modules, ten theorems and one definition. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records478 improvements and two statement-scope corrections. The pinned compiler and Mathlib commit are unchanged. No new axiom, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16451 jobs); direct axiom audit passed for 15437 declarations using only propext, Classical.choice and Quot.sound; all 14879 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.18 GiB.
+
+
+## Smooth lower-barrier profile and a uniform prime margin paying the quotient factor
+
+An internal analytic lower-barrier profile now has a uniform actual prime-weight margin that pays the prospective integer-quotient factor1-1/Y. For every epsilon>0, one real T>=exp(1)+1 and one integer Y0>=2 precede every Y>=Y0 and every t>=T with tilt(epsilon,t-1)<=logY. The proved conclusion is t*logY <= (1-1/Y)*sum_{p<=Y} log(p)*p^(-(1-tilt(epsilon,t-1)/logY)). This is an actual prime-sum inequality; the smooth-count induction and final reciprocal lower bound remain subsequent work.
+
+SmoothLowerBarrierProfile defines F_epsilon(t)=t*(logt+loglogt-1+epsilon), tilt_epsilon(t)=logt+loglogt+epsilon and the clamped density exp(-F_epsilon(max(T,t))). It proves the exact derivative F'=tilt+1/logt for t>1. Monotonicity and nonnegativity on the stated positive domains justify the clamp, positive density and its bound by one. A mean-value argument proves s*tilt(t-1)<=F(t)-F(t-s) for0<=s<=1,t>2. The corresponding density-shift inequality retains its exact exponential gain before every shift. No smooth-count assertion is supplied as a hypothesis to these analytic identities.
+
+SmoothLowerBarrierGrowth proves tilt/logt ->1, its inverse ratio, the exact exponential tilt identity and tilt ->infinity. The normalized primeMargin=(exp(tilt(t-1))-2)/(t*tilt(t-1)) tends to exp(epsilon). Since epsilon>0, a single eventual margin m>1 is available. The proof keeps the unit shift and the subtracted endpoint constant2; neither is dropped before taking the limit.
+
+SmoothLowerPrimeMargin.uniform_weighted_margin supplies the actual prime sum using checkpoint480's internally proved PNT lower estimate. A fixed eta>0 is chosen from m before Y and t. The allowance C is absorbed by requiring logY>=C/g, while a second fixed lower bound on Y pays the factor1-1/Y. The cutoff and height thresholds are common to the entire exponent range. Every delta=tilt/logY is proved positive and at most one before the prime estimate is applied.
+
+The next separate arithmetic task is to prove the refined floor-quotient bound and the induction for the literal ordinary smooth population, with an internally supplied base range. Those steps are not claimed here. In particular, the one-sided ordinary fine reciprocal LowerInput remains unproved, and canonical complete T19.15/T19.16 remain conditional. Both full fine upper directions, leading coefficient2 limits and qualitative deterministic/randomized all-anchor obstructions remain internal. The stronger T19.17 census, full quadratic-degree BCN and optimal strong-triangle weights retain their separate unresolved scopes.
+
+P1-MATH-0481 adds three modules, eighteen theorems and four definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records479 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16457 jobs); direct axiom audit passed for 15455 declarations using only propext, Classical.choice and Quot.sound; all 14901 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.17 GiB.

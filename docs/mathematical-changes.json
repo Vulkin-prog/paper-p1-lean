@@ -23804,6 +23804,54 @@
         "status": "not_integrated"
       },
       "validation_commit": "7c525bdcc91d58ae665687f5b3e40dd93e69178a"
+    },
+    {
+      "id": "P1-MATH-0481",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The fine lower route had a uniform weighted prime minorant but no checked barrier profile or strict uniform margin that could pay the integer-quotient loss in a counting induction.",
+      "finding": "An exact derivative and shifted-density comparison give a barrier whose normalized prime margin tends to exp(epsilon)>1. The internal PNT minorant then proves t logY <= (1-1/Y) logPrimeSum at the required moving exponent, uniformly before Y and t.",
+      "proposed_revision": "Use the checked clamped analytic barrier and prime margin in the smooth-count lower route. Retain the actual quotient geometry, base range and counting induction as separate proof obligations until supplied internally.",
+      "impact": "Provides a uniform actual arithmetic margin for a fine lower induction, including the anticipated quotient factor. The ordinary fine reciprocal lower theorem is still unproved and numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.SmoothLowerBarrierGrowth.tendsto_loglog_div_log",
+        "PaperP1.SmoothLowerBarrierGrowth.tendsto_tilt_div_log",
+        "PaperP1.SmoothLowerBarrierGrowth.tendsto_log_div_tilt",
+        "PaperP1.SmoothLowerBarrierGrowth.exp_tilt",
+        "PaperP1.SmoothLowerBarrierGrowth.tendsto_tilt_atTop",
+        "PaperP1.SmoothLowerBarrierGrowth.tendsto_primeMargin",
+        "PaperP1.SmoothLowerBarrierGrowth.uniform_margin",
+        "PaperP1.SmoothLowerBarrierProfile.hasDerivAt_cost",
+        "PaperP1.SmoothLowerBarrierProfile.tilt_monotone",
+        "PaperP1.SmoothLowerBarrierProfile.tilt_nonneg",
+        "PaperP1.SmoothLowerBarrierProfile.cost_nonneg",
+        "PaperP1.SmoothLowerBarrierProfile.cost_monotone",
+        "PaperP1.SmoothLowerBarrierProfile.cost_shift",
+        "PaperP1.SmoothLowerBarrierProfile.density_pos",
+        "PaperP1.SmoothLowerBarrierProfile.density_le_one",
+        "PaperP1.SmoothLowerBarrierProfile.density_antitone",
+        "PaperP1.SmoothLowerBarrierProfile.density_shift",
+        "PaperP1.SmoothLowerPrimeMargin.uniform_weighted_margin",
+        "PaperP1.SmoothLowerBarrierGrowth.primeMargin",
+        "PaperP1.SmoothLowerBarrierProfile.cost",
+        "PaperP1.SmoothLowerBarrierProfile.tilt",
+        "PaperP1.SmoothLowerBarrierProfile.density"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16457 jobs); direct axiom audit passed for 15455 declarations using only propext, Classical.choice and Quot.sound; all 14901 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.17 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

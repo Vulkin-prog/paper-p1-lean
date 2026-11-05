@@ -3940,3 +3940,6 @@ public import PaperP1.Analysis.OrdinaryReciprocalPrimeLowerInput
 public import PaperP1.Asymptotics.FineSaddleConclusionsFromLower
 public import PaperP1.Arithmetic.PNTLogPrimePowerLower
 public import PaperP1.Arithmetic.PNTWeightedPrimeLower
+public import PaperP1.Analysis.SmoothLowerBarrierGrowth
+public import PaperP1.Analysis.SmoothLowerBarrierProfile
+public import PaperP1.Arithmetic.SmoothLowerPrimeMargin
