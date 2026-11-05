@@ -6,9 +6,10 @@ public import PaperP1.Arithmetic.IntegerPairFactorCharts
 
 /-! # The non-geometric count follows from an explicit algebraic singularity premise
 
-`Input` is UNPROVED. It is an alternative ordinary algebraic argument sufficient
-for the old numerical input, not a third required argument and not an axiom.
-The finite count and its constant are proved; the singularity implication is not.
+`Input` is now proved by ComplexProjectiveIrreducibility.singularity_input.
+The implication and numerical reduction are preserved as explicit APIs; no
+unproved singularity argument is needed. The complete numerical input follows
+with constant 8*a*b^2. See P1-MATH-0330 for the exact projective identification.
 -/
 
 set_option autoImplicit false

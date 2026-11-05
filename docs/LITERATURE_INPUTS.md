@@ -1,5 +1,7 @@
 # External mathematical inputs
 
+Current update P1-MATH-0330: the historical non-geometric biform consequence and its rational-singularity premise are internally proved by `PaperP1.ComplexProjectiveIrreducibility.nongeometric_input` and `singularity_input`, with K(a,b)=8*a*b^2. The geometric Heath-Brown Lemma2 input remains unproved. Historical checkpoint entries below retain their original scope.
+
 Unproved literature inputs are passed as ordinary explicit theorem arguments.
 In particular, the separate conditional growing-degree development uses the named
 BCN plane bound below; it is not a global axiom or proved numbered coverage.
@@ -24637,3 +24639,20 @@ The final double coefficient is exactly the original coefficient when the outer 
 P1-MATH-0329 closes two-step homogenization, coefficient reordering, exact degrees and generic biform irreducibility. The remaining step is the actual coefficientwise identity between this generic complex double homogenization and complexProjective G, including its integer-to-complex degree transport. NonGeometricRationalSingularity.Input is therefore still not marked proved; the existing non-geometric and Heath-Brown ordinary inputs are unchanged. T1.4 stays conditional; coverage stays89 proved and75 conditional out of167 (164 completed). There are327 improvements and two statement-scope corrections. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15545 jobs); direct axiom audit passed for 14145 declarations using only propext, Classical.choice and Quot.sound; all 13414 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.49 GiB.
+
+
+## The actual non-geometric biform point input is proved internally
+
+Stable ID: p1:internal:proved-nongeometric-biform-input. Status: proved for NonGeometricBiformInput.Input and NonGeometricRationalSingularity.Input, by ComplexProjectiveIrreducibility.nongeometric_input and singularity_input. The historical Heath-Brown Section4 consequence now has an internal proof; Lemma2 remains unproved.
+
+The full actual NonGeometricBiformInput.Input is now proved internally, with no unproved mathematical argument. ComplexProjectiveIrreducibility identifies the literal complex projective polynomial with the checked two-step homogenization of the literal complex affine coefficient extension. Its double coefficients, both actual partial degrees, coefficient-variable exchange and integer-to-rational-to-complex scalar maps are all checked exactly.
+
+If an actual rationally irreducible positive-bidegree factor had a rational affine zero with nonzero outer derivative, P1-MATH-0326 would make its affine coefficient extension to the complex field irreducible. P1-MATH-0329 and the exact projective identity would then make the literal complexProjective polynomial irreducible, contradicting failure of Geometric. This proves NonGeometricRationalSingularity.Input, with no algebraic singularity premise supplied. The complete finite critical-point, degree, signed-chart and primitive-multiplicity argument of P1-MATH-0316 through P1-MATH-0319 then proves the original numerical input with the explicit coefficient-independent constant K(a,b)=8*a*b^2.
+
+The constant precedes the factor and all source populations and is independent of every coefficient, denominator, box and height. No conjugate-intersection theorem, Bezout cardinality theorem, target count, determinant estimate or homogeneous-factor premise is assumed. The proof uses the checked formal branch, scalar descent and exact homogenization argument instead. The historical reference to Heath-Brown Section4 is retained as the manuscript source of the consequence, while its proof is now internal.
+
+This discharges the former non-geometric ordinary input in T1.4, T1.5 and the two-kernel part of T1.13. Their geometric HeathBrownBiformInput.Input remains an ordinary unproved argument, so all three numbered results remain conditional. Existing theorem parameters are preserved for compatibility, and the internally proved input can now instantiate the non-geometric parameter. The corrected31/24 T1.10 variants likewise have one fewer unproved argument; their four explicit surface/curve geometric arguments and Heath-Brown input remain open, with the exact checked domains of P1-MATH-0312 unchanged. The original radius-one T1.10 and exact unqualified T5.1 display remain disproved and awaiting manuscript revision.
+
+P1-MATH-0330 closes the non-geometric input and its alternative rational singularity premise. Numbered coverage stays89 proved and75 conditional out of167 (164 completed). There are328 improvements and two statement-scope corrections. Main13.4, the other recorded geometric inputs and the Heath-Brown geometric biform bound remain unfinished. No new unproved input, axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15547 jobs); direct axiom audit passed for 14154 declarations using only propext, Classical.choice and Quot.sound; all 13424 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.48 GiB.

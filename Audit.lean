@@ -707,6 +707,15 @@ import PaperP1
 #print axioms PaperP1.CommonQuotientGraph.graph_evaluation
 #print axioms PaperP1.CommonQuotientGraph.fibre_identity
 #print axioms PaperP1.CommonQuotientGraph.root_match
+#print axioms PaperP1.ComplexProjectiveIrreducibility.coefficient_cast
+#print axioms PaperP1.ComplexProjectiveIrreducibility.outer_degree
+#print axioms PaperP1.ComplexProjectiveIrreducibility.swap_naturality
+#print axioms PaperP1.ComplexProjectiveIrreducibility.inner_degree
+#print axioms PaperP1.ComplexProjectiveIrreducibility.rational_extension
+#print axioms PaperP1.ComplexProjectiveIrreducibility.projective_identity
+#print axioms PaperP1.ComplexProjectiveIrreducibility.geometric_of_affine
+#print axioms PaperP1.ComplexProjectiveIrreducibility.singularity_input
+#print axioms PaperP1.ComplexProjectiveIrreducibility.nongeometric_input
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_le
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_empty
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_rank_le
