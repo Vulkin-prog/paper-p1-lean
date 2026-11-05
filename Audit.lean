@@ -3034,6 +3034,14 @@ import PaperP1
 #print axioms PaperP1.NormalizedBandBuckets.side_cluster_distance
 #print axioms PaperP1.NormalizedGraphFiniteAvoidance.exists_first
 #print axioms PaperP1.NormalizedGraphFiniteAvoidance.exists_second
+#print axioms PaperP1.NormalizedGraphGluing.path_eq_left
+#print axioms PaperP1.NormalizedGraphGluing.path_eq_right
+#print axioms PaperP1.NormalizedGraphGluing.domain_union
+#print axioms PaperP1.NormalizedGraphGluing.trajectory_of_eqOn
+#print axioms PaperP1.NormalizedGraphGluing.trajectory
+#print axioms PaperP1.NormalizedGraphGluing.equation
+#print axioms PaperP1.NormalizedGraphGluing.first_coordinate
+#print axioms PaperP1.NormalizedGraphGluing.image_union
 #print axioms PaperP1.NormalizedGraphImageNeighborhood.exists_open_neighborhood
 #print axioms PaperP1.NormalizedGraphImageNeighborhood.image_relatively_open
 #print axioms PaperP1.NormalizedGraphOverlapUniqueness.lift_continuous
@@ -3459,6 +3467,9 @@ import PaperP1
 #print axioms PaperP1.TaylorEvaluationData.evaluation_eq
 #print axioms PaperP1.TaylorEvaluationData.coefficient_bound
 #print axioms PaperP1.TaylorEvaluationData.value_bound
+#print axioms PaperP1.TransposedGraphGluing.path_eq_left
+#print axioms PaperP1.TransposedGraphGluing.path_eq_right
+#print axioms PaperP1.TransposedGraphGluing.image_union
 #print axioms PaperP1.TransposedGraphImageNeighborhood.continuous_point
 #print axioms PaperP1.TransposedGraphImageNeighborhood.exists_open_neighborhood
 #print axioms PaperP1.TransposedGraphImageNeighborhood.image_relatively_open

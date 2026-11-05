@@ -28168,3 +28168,20 @@ This closes both-orientation overlap uniqueness and genuine local graph coverage
 P1-MATH-0530 adds three modules, six theorems and one definition. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 528 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16807 jobs); direct axiom audit passed for 15948 declarations using only propext, Classical.choice and Quot.sound; all 15504 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.71 GiB.
+
+
+## Constructed normalized graph gluing with exact image unions in both orientations
+
+Stable ID: p1:internal:actual-both-orientation-graph-gluing. Meeting actual normalized charts now glue into genuine larger charts with exact original-coordinate image unions in both orientations.
+
+NormalizedGraphGluing defines the actual piecewise graph path obtained from two actual first-orientation normalized charts sharing an actual point in their overlap. It proves exact equality with the first path on its whole domain. The internally proved overlap uniqueness gives exact equality with the second path on its whole domain as well. The actual union of the overlapping open intervals is the open interval from the smaller left endpoint to the larger right endpoint.
+
+The actual trajectory is preserved under equality on an open interval, using neighborhood equality and the ordinary derivative congruence theorem. Applying this fact on both chart domains proves the genuine normalized polynomial ODE throughout the union. The original polynomial equation and exact first-coordinate normalization are proved on the complete union. These statements construct a new genuine LocalNormalizedGraphPiece.Piece rather than assuming a gluing operation or ODE extension. Its actual point image is proved exactly equal to the union of the two original point images.
+
+TransposedGraphGluing constructs the corresponding genuine second-orientation chart by the internally checked coordinate swap and first-orientation gluing. It proves exact equality with both original paths throughout their original domains and the exact union identity for the original-coordinate point images. The final polynomial and both coordinates are the original ones. Thus actual normalized charts can now be joined into a larger genuine chart in either orientation, retaining all old image points without adding unverified curve points.
+
+This closes the concrete finite two-chart gluing ingredient following the local root uniqueness, graph overlap uniqueness and genuine relative-open image coverage of P1-MATH-0529/0530. Coverage of a whole connected component, or a single chart containing every point of an arbitrary finite component population, still requires a connectedness/extension argument. Controlled global component/piece cardinality, the final sharp plane estimate and higher-dimensional projection remain separate. The internally proved entire controlled graph-piece grid count at P1-MATH-0528 remains available. Full main13.4/13.5 remain unresolved; the generic plane theorem stays cubic with full a<1/3 range.
+
+P1-MATH-0531 adds two modules, eleven theorems and three definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 529 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16811 jobs); direct axiom audit passed for 15959 declarations using only propext, Classical.choice and Quot.sound; all 15518 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.69 GiB.

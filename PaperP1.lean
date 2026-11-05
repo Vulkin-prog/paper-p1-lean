@@ -4095,3 +4095,5 @@ public import PaperP1.Analysis.RegularCurveProjectionUniqueness
 public import PaperP1.Analysis.NormalizedGraphImageNeighborhood
 public import PaperP1.Analysis.TransposedGraphImageNeighborhood
 public import PaperP1.Analysis.TransposedGraphOverlapUniqueness
+public import PaperP1.Analysis.NormalizedGraphGluing
+public import PaperP1.Analysis.TransposedGraphGluing
