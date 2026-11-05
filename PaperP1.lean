@@ -3516,3 +3516,4 @@ public import PaperP1.Algebra.NilpotentPolynomialParameter
 public import PaperP1.Algebra.SmoothCurveDeterminant
 public import PaperP1.Arithmetic.SmoothIntegerCongruenceBranch
 public import PaperP1.Diophantine.ProjectiveUnitCharts
+public import PaperP1.Diophantine.ProjectiveSmoothDeterminant

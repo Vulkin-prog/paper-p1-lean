@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**344 mathematical improvements and two statement-scope corrections are confirmed.**
+**345 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23946,3 +23946,16 @@ All six theorems work without a domain, field or characteristic hypothesis on R;
 P1-MATH-0346 adds one module and one definition. This closes the coordinate-normalization identity needed to transport the actual smooth determinant to projective monomial rows. The resulting projective determinant theorem, good-prime selection, auxiliary forms and the global sharp b>=2 Heath-Brown count remain open. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records344 improvements and two statement-scope corrections. No dependency download, axiom, unproved literature premise, compiler change or original source edit is introduced. Main13.4 remains open. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15599 jobs); direct axiom audit passed for 14264 declarations using only propext, Classical.choice and Quot.sound; all 13547 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.25 GiB.
+
+
+## Actual projective smooth-class determinant divisor
+
+ProjectiveSmoothDeterminant.integer_smooth_dvd proves the exact divisor p^(k*(k-1)/2) for the original integer matrix of bihomogeneous monomials evaluated at any k actual projective curve points in one smooth residue class. Row i is x0^r(i)*x1^(H-r(i))*y0^s(i)*y1^(J-s(i)), with r(i)<=H and s(i)<=J. Every denominator coordinate is explicitly required to be nondivisible by p. The class is specified by p dividing x0-a*x1 and y0-b*y1, by p dividing G(a,b), and by p not dividing the affine outer derivative there. Every actual projective point satisfies the original integer projective equation.
+
+The proof works in ZMod(p^(k*(k-1)/2)). It constructs units from the original denominator coordinates, proves that the normalized fractions lie in the stated class, and transports the actual projective zero equation through the exact unit chart. The finite implicit-branch determinant theorem makes the normalized matrix determinant zero. The original homogeneous matrix is exactly the normalized matrix multiplied by a diagonal matrix of the retained column factors X^H*Y^J. Mapping its determinant back to the integers gives the claimed divisor. No rational-coordinate approximation or analytic convergence is assumed.
+
+curve_det_zero exposes the corresponding theorem over any commutative ring in which p to the triangular power is zero. The original integer partial degrees remain unchanged in the projective normalization. No irreducibility, primitivity or height assumption is needed for this local theorem beyond its explicit smooth-class and denominator conditions.
+
+P1-MATH-0347 adds three theorems and one matrix definition. This completes the actual local projective determinant divisor. The archimedean size comparison, auxiliary forms, treatment and height bounds for exceptional points, prime selection and the global sharp b>=2 Heath-Brown estimate remain open. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records345 improvements and two statement-scope corrections. No dependency download, axiom, unproved literature premise, compiler change or original manuscript edit is introduced. Main13.4 remains open. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15601 jobs); direct axiom audit passed for 14267 declarations using only propext, Classical.choice and Quot.sound; all 13551 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.23 GiB.
