@@ -20532,6 +20532,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "6a29623858a493bef9f57ff9a97f2de12ecd0ed0"
+    },
+    {
+      "id": "P1-MATH-0397",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The proved complete conic count still applied only to geometrically irreducible integer equations, whereas the manuscript permits irreducible equations over more general coefficient fields.",
+      "finding": "Every irreducible degree-two plane equation over every characteristic-zero field satisfies the actual coefficient- and field-uniform N^(1/2+epsilon) grid count, with no complex embedding or absolute irreducibility premise. A real-height bound and uniform sublinearity are also proved.",
+      "proposed_revision": "Use this full arbitrary-field conic result in the low-degree branch of plane point counting. Keep the stronger logarithmic, growing-degree and all-dimensional BCN theorem separate.",
+      "impact": "Closes all conic descent and non-geometric cases at the epsilon scale, with threshold before the coefficient field and equation. Original stronger BCN and numbered coverage remain unchanged.",
+      "evidence": [
+        "PaperP1.FieldConicCount.rational_geometric_count",
+        "PaperP1.FieldConicCount.rational_count",
+        "PaperP1.FieldConicCount.field_count",
+        "PaperP1.FieldConicCount.finite_population_count",
+        "PaperP1.FieldConicCount.real_height_count",
+        "PaperP1.FieldConicCount.uniform_sublinear"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15715 jobs); direct axiom audit passed for 14549 declarations using only propext, Classical.choice and Quot.sound; all 13881 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.50 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

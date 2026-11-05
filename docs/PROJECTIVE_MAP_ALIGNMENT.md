@@ -17911,3 +17911,18 @@ These theorems concern actual geometrically irreducible integer equations. Passi
 P1-MATH-0396 adds three modules and seven theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records394 improvements and two statement-scope corrections. No new axiom, external counting premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15713 jobs); direct axiom audit passed for 14543 declarations using only propext, Classical.choice and Quot.sound; all 13875 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.52 GiB.
+
+
+## Field-uniform counts for every irreducible plane conic
+
+FieldConicCount.field_count proves the actual N^(1/2+epsilon) signed integer-grid bound for every irreducible plane equation of exact total degree two over every field of characteristic zero. Its threshold precedes N, the coefficient field and the equation. No embedding into C, absolute irreducibility, coefficient-height, discriminant, sign or primitivity premise is required.
+
+The descent is internal and uses actual finite point populations. A rational absolutely irreducible equation is cleared of denominators with exact degree and grid preservation, then counted by checkpoint396. A rational irreducible equation which is not absolutely irreducible has its actual integer grid bounded by the proved non-geometric intersection theorem, and this finite bound is absorbed uniformly. For arbitrary field coefficients, populations of at most four points are absorbed directly. A larger actual population supplies the internally proved scalar descent to an irreducible rational equation of the same degree; the actual original grid is included in its rational grid. No descended equation, complex embedding or geometric condition is provided as an external input.
+
+finite_population_count covers every actual finite signed zero population in the symmetric N-box. real_height_count gives a coefficient- and field-independent constant A(epsilon)>=1 for every real height H>2: the actual grid of radius floor(H) has at most A*H^(1/2+epsilon) points. The proof treats small heights by the actual full integer box, rather than requiring the large-height threshold. uniform_sublinear gives the corresponding actual o(H) count with its threshold preceding every characteristic-zero field and irreducible conic equation.
+
+This closes the complete plane conic epsilon-scale count over arbitrary characteristic-zero fields, including equations which are not geometrically irreducible. The stronger D-uniform logarithmic BCN estimate and original all-dimensional main13.4 remain open; no growing power-law degree range follows from this fixed-degree result. No original numbered result is promoted.
+
+P1-MATH-0397 adds six theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records395 improvements and two statement-scope corrections. No new axiom, external counting premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15715 jobs); direct axiom audit passed for 14549 declarations using only propext, Classical.choice and Quot.sound; all 13881 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.50 GiB.

@@ -4147,6 +4147,12 @@ import PaperP1
 #print axioms PaperP1.ExpandedRootPointHeight.scaled_height
 #print axioms PaperP1.ExpandedRootPointHeight.ordinary_floor_height
 #print axioms PaperP1.ExpandedRootPointHeight.source_floor_box
+#print axioms PaperP1.FieldConicCount.rational_geometric_count
+#print axioms PaperP1.FieldConicCount.rational_count
+#print axioms PaperP1.FieldConicCount.field_count
+#print axioms PaperP1.FieldConicCount.finite_population_count
+#print axioms PaperP1.FieldConicCount.real_height_count
+#print axioms PaperP1.FieldConicCount.uniform_sublinear
 #print axioms PaperP1.FiniteBlockAppend.biUnion_append
 #print axioms PaperP1.FiniteBlockAppend.append_all
 #print axioms PaperP1.FiniteChannelHierarchy.weight_formula

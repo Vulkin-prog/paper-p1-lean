@@ -3571,3 +3571,4 @@ public import PaperP1.Diophantine.ParabolicConicFiniteCount
 public import PaperP1.Diophantine.GeometricParabolicConicCount
 public import PaperP1.Diophantine.UnrestrictedGeometricConicCount
 public import PaperP1.Diophantine.UnrestrictedParabolicConicCount
+public import PaperP1.Arithmetic.FieldConicCount
