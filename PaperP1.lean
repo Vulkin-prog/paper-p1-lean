@@ -3848,3 +3848,5 @@ public import PaperP1.Asymptotics.SharpThirdCumulantLower
 public import PaperP1.Asymptotics.StrongAlignedSharpMass
 public import PaperP1.Asymptotics.AlignedFamilyTripleMass
 public import PaperP1.Asymptotics.WeakPairTripleMass
+public import PaperP1.Asymptotics.PrimitiveTripleTupleMass
+public import PaperP1.Asymptotics.SixVertexBudget

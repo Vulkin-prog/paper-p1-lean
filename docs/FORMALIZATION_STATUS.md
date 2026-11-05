@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+Companion T20.8 is unconditional (P1-MATH-0452), with the same small-component exceptional set and stronger exceptional mass power3/2. Exact six-vertex packing, simultaneous covers and every prescribed-plane conclusion are retained.
+
 Main14.3 is unconditional (P1-MATH-0451): the fixed geometric source supplies a weak pair after strong aligned triples are removed. The new internal rank-capped reduction avoids BCN while retaining the full irregular/contact scope.
 
 Main14.4 and14.5 are unconditional (P1-MATH-0450): every strongly aligned connected triple has power41/30, and the explicit rational family gives the true full-count third-cumulant lower41/30 bound. The separate global upper bound remains conditional.
@@ -45,7 +47,7 @@ CompanionT14.1 is unconditional (P1-MATH-0431), with connected activity strength
 
 CompanionT1.8 is unconditional (P1-MATH-0430): exact dense-component to actual-rank transfer gives subpower nonaligned hosts and both printed kernel sumsN^(1+epsilon), including the full value kernel without block-parity rows.
 
-Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is146 proved,18 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
+Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is147 proved,17 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
 
 The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. The full arbitrary-source statement was subsequently discharged at P1-MATH-0429.
 
@@ -87,7 +89,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is146/167 unconditional and18 conditional (164/167 completed). The project records449 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records450 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -206,7 +208,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15147 audited theorem/lemma declarations**. This
+- The project currently has **15151 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26378,3 +26380,20 @@ The existing SharpFiniteInteriorMass module description is also updated to refle
 P1-MATH-0451 adds two modules, four theorems and two definitions. Main14.3 moves from conditional to proved. Coverage becomes146 proved,18 conditional and3 in_progress out of167, with164 completed. The project records449 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16267 jobs); direct axiom audit passed for 15147 declarations using only propext, Classical.choice and Quot.sound; all 14558 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.88 GiB.
+
+
+## Unconditional six vertex budget with the original exceptional set
+
+Companion T20.8 now has an unconditional canonical proof of all its conclusions. The complete statement and proof in companion_sections/offset_geometry.tex lines309-366 were rechecked. SixVertexBudget.companion_T20_8 retains the original small-transverse-component exceptional set, the same actual covered relation space, simultaneous control of every cover, the unrestricted residual host count and the full prescribed-plane count and mass assertions.
+
+PrimitiveTripleTupleMass transfers the already internal full primitive triple activity to arbitrary ordered original populations. Every unordered support has at most six injective enumerations; the weighted fiber bound retains that exact factor before it is absorbed. Both the joint plus absolute centered activity and the actual joint mass have rateN^(-3/2+epsilon). The hypotheses are actual dyadic sites, injective enumeration and the literal primitive predicate. No regularity or affine compatibility is needed for this stronger general statement.
+
+The original T20.8 exceptional set is a subpopulation of these primitive triples. Its actual mass therefore has the stronger power3/2 without proving the former generic small-motif surface count. The set is NOT enlarged to all primitive triples: its original definition by at least24*k small transverse components is preserved. Takingk=1 suffices. Outside this same set, the existing finite component lemma bounds the number of small free components simultaneously for every cover. Exact six-vertex packing and the internal prime budget then prove the displayed residual-rank inequality with the unchanged coefficient1/6, logarithmic prime term and bounded error.
+
+SixVertexBudget.uniform_budget records the stronger exceptional massN^(-3/2+epsilon). The complete numbered theorem weakens it to the printed exponent1 and joins it on one threshold with the already internal unrestricted residual count and prescribed-plane count/mass. The cover remains existential inside the host predicate; covers are never enumerated. Real cutoff constants, real polynomial plane-height exponents, true ordered multiplicities and the original affine probabilities remain explicit.
+
+This proof uses the unconditional full primitive bound established independently before this checkpoint. It does not assume a target exceptional-mass bound or introduce a circular surface interface. The earlier conditional declarations and their generic small-motif host theorems remain preserved. Only the exact T20.8 use is discharged; no general ordinary surface cover, normalized curve count or uniform geometric counting property is declared proved. Original source bytes and Lean/Mathlib pins are unchanged.
+
+P1-MATH-0452 adds two modules, four theorems and two definitions. Companion T20.8 moves from conditional to proved. Coverage becomes147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records450 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16271 jobs); direct axiom audit passed for 15151 declarations using only propext, Classical.choice and Quot.sound; all 14564 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.85 GiB.

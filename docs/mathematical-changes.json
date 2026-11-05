@@ -22700,6 +22700,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "44832bbd2c90e06ef45cca4fe8f3c522d81f09af"
+    },
+    {
+      "id": "P1-MATH-0452",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:offset:six-vertex",
+        "number": "T20.8",
+        "page": 85,
+        "source": "companion_sections/offset_geometry.tex",
+        "line": 309,
+        "statement_sha256": "2306bb432c6b369d3fc460c2bff772ea8c7ab113a90cef1e499b0a96666bf574"
+      },
+      "original_assumption": "The six-vertex budget retained ordinary surface-cover and normalized curve inputs solely to bound the small-component exceptional primitive population.",
+      "finding": "The independently proved full primitive triple bound controls every ordered exceptional subpopulation at the stronger power3/2 after the exact six-fold support enumeration. The original exceptional set and finite simultaneous cover argument can therefore be retained without the generic small-motif count.",
+      "proposed_revision": "Bound the original small-component exceptional set directly by the internal full primitive triple mass. Keep its geometric definition, exact six-vertex packing and simultaneous cover quantifiers, and strengthen its mass exponent to3/2. Retain the separate unrestricted and prescribed-plane host arguments.",
+      "impact": "Complete companion T20.8 becomes unconditional with its original exceptional set. The exceptional mass improves from power1 to3/2; all cover and host conclusions are retained. Coverage becomes147 proved,17 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.PrimitiveTripleTupleMass.uniform_activity",
+        "PaperP1.PrimitiveTripleTupleMass.uniform_mass",
+        "PaperP1.SixVertexBudget.uniform_budget",
+        "PaperP1.SixVertexBudget.companion_T20_8",
+        "PaperP1.SixVertexBudget.exceptional",
+        "PaperP1.SixVertexBudget.Budget"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16271 jobs); direct axiom audit passed for 15151 declarations using only propext, Classical.choice and Quot.sound; all 14564 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.85 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

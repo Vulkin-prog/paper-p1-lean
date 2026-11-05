@@ -9014,6 +9014,8 @@ import PaperP1
 #print axioms PaperP1.PrimitiveTripleMassUnderBCN.uniform_rank_mass
 #print axioms PaperP1.PrimitiveTripleMassUnderBCN.uniform_actual_activity
 #print axioms PaperP1.PrimitiveTripleMassUnderBCN.companion_T8_2
+#print axioms PaperP1.PrimitiveTripleTupleMass.uniform_activity
+#print axioms PaperP1.PrimitiveTripleTupleMass.uniform_mass
 #print axioms PaperP1.PrincipalChannelEdgesPhase.uniform_geometry
 #print axioms PaperP1.PrincipalChannelEdgesPhase.positive_phase
 #print axioms PaperP1.PrincipalChannelEdgesPhase.uniform_activity_gap
@@ -9505,6 +9507,8 @@ import PaperP1
 #print axioms PaperP1.SinglePairCriticalTheoremUnderInputs.alpha_eq_variance
 #print axioms PaperP1.SinglePairCriticalTheoremUnderInputs.selected_family_positive
 #print axioms PaperP1.SinglePairCriticalTheoremUnderInputs.companion_T22_5
+#print axioms PaperP1.SixVertexBudget.uniform_budget
+#print axioms PaperP1.SixVertexBudget.companion_T20_8
 #print axioms PaperP1.SixVertexBudgetUnderInputs.uniform_budget
 #print axioms PaperP1.SixVertexBudgetUnderInputs.companion_T20_8
 #print axioms PaperP1.SlowGrowingPlaneDegreeCap.exists_cap_below

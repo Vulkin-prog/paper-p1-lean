@@ -1,6 +1,6 @@
 # External mathematical inputs
 
-Current canonical update P1-MATH-0451: complete main14.3,14.4,14.5 and companion T2.7,T2.8,T3.1,T4.4,T15.1 have internal proofs. Fixed geometric families use a new weak-pair rank reduction, so main14.3 needs no growing-degree BCN premise. Coverage is146 proved,18 conditional and3 in_progress out of167. Only exact numbered uses are discharged; general geometry, sharp growing-degree BCN and the unrestricted optimal global third-activity upper bound remain separate. Earlier dated update paragraphs are historical.
+Current canonical update P1-MATH-0452: complete companion T20.8 has an internal proof with its original exceptional set and stronger mass power3/2. Main14.3,14.4,14.5 and companion T2.7,T2.8,T3.1,T4.4,T15.1 also have internal proofs. Coverage is147 proved,17 conditional and3 in_progress out of167. Only exact numbered uses are discharged; general geometry, sharp growing-degree BCN, the remaining ordinary analytic inputs and the unrestricted optimal global third-activity upper bound remain separate. Earlier dated update paragraphs are historical.
 
 Current canonical update P1-MATH-0432: main15.10 and companionT14.1 have unconditional internal proofs. Main15.2 and15.5 and companionT1.8 are also unconditional. Discharges are scoped to their exact numbered conclusions; general geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate. Earlier dated update paragraphs are historical.
 
@@ -26699,3 +26699,22 @@ The existing SharpFiniteInteriorMass module description is also updated to refle
 P1-MATH-0451 adds two modules, four theorems and two definitions. Main14.3 moves from conditional to proved. Coverage becomes146 proved,18 conditional and3 in_progress out of167, with164 completed. The project records449 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16267 jobs); direct axiom audit passed for 15147 declarations using only propext, Classical.choice and Quot.sound; all 14558 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.88 GiB.
+
+
+## Unconditional six vertex budget with the original exceptional set
+
+Stable ID: p1:internal:unconditional-six-vertex-budget. The independent full primitive triple mass discharges the exceptional-set use in complete T20.8 while preserving its original geometric definition and simultaneous cover proof. General small-motif host properties, surface covers and normalized curve counts remain separate.
+
+Companion T20.8 now has an unconditional canonical proof of all its conclusions. The complete statement and proof in companion_sections/offset_geometry.tex lines309-366 were rechecked. SixVertexBudget.companion_T20_8 retains the original small-transverse-component exceptional set, the same actual covered relation space, simultaneous control of every cover, the unrestricted residual host count and the full prescribed-plane count and mass assertions.
+
+PrimitiveTripleTupleMass transfers the already internal full primitive triple activity to arbitrary ordered original populations. Every unordered support has at most six injective enumerations; the weighted fiber bound retains that exact factor before it is absorbed. Both the joint plus absolute centered activity and the actual joint mass have rateN^(-3/2+epsilon). The hypotheses are actual dyadic sites, injective enumeration and the literal primitive predicate. No regularity or affine compatibility is needed for this stronger general statement.
+
+The original T20.8 exceptional set is a subpopulation of these primitive triples. Its actual mass therefore has the stronger power3/2 without proving the former generic small-motif surface count. The set is NOT enlarged to all primitive triples: its original definition by at least24*k small transverse components is preserved. Takingk=1 suffices. Outside this same set, the existing finite component lemma bounds the number of small free components simultaneously for every cover. Exact six-vertex packing and the internal prime budget then prove the displayed residual-rank inequality with the unchanged coefficient1/6, logarithmic prime term and bounded error.
+
+SixVertexBudget.uniform_budget records the stronger exceptional massN^(-3/2+epsilon). The complete numbered theorem weakens it to the printed exponent1 and joins it on one threshold with the already internal unrestricted residual count and prescribed-plane count/mass. The cover remains existential inside the host predicate; covers are never enumerated. Real cutoff constants, real polynomial plane-height exponents, true ordered multiplicities and the original affine probabilities remain explicit.
+
+This proof uses the unconditional full primitive bound established independently before this checkpoint. It does not assume a target exceptional-mass bound or introduce a circular surface interface. The earlier conditional declarations and their generic small-motif host theorems remain preserved. Only the exact T20.8 use is discharged; no general ordinary surface cover, normalized curve count or uniform geometric counting property is declared proved. Original source bytes and Lean/Mathlib pins are unchanged.
+
+P1-MATH-0452 adds two modules, four theorems and two definitions. Companion T20.8 moves from conditional to proved. Coverage becomes147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records450 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16271 jobs); direct axiom audit passed for 15151 declarations using only propext, Classical.choice and Quot.sound; all 14564 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.85 GiB.
