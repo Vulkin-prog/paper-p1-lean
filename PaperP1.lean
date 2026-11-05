@@ -4028,3 +4028,6 @@ public import PaperP1.Analysis.LocalNormalizedGraphPiece
 public import PaperP1.Algebra.PlaneCoordinateSwap
 public import PaperP1.Analysis.RegularNormalizedCharts
 public import PaperP1.Analysis.TransposedNormalizedGraphPiece
+public import PaperP1.Algebra.GraphControlExceptions
+public import PaperP1.Algebra.GraphControlPolynomials
+public import PaperP1.Algebra.PolynomialAuxiliaryExceptions

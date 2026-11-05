@@ -24949,6 +24949,55 @@
         "status": "not_integrated"
       },
       "validation_commit": "7526d9d024d2deaf5ef78bece132621076aa6805"
+    },
+    {
+      "id": "P1-MATH-0510",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The normalized derivative route still lacked a concrete finite auxiliary family, its actual exceptional locus and a controlled degree-order budget, including auxiliaries vanishing identically on the curve.",
+      "finding": "A general finite-family Bezout construction yields the full actual graph-control exceptional set with exact membership and at most30 D^2(r+1)^2 points, already including every singular point and both zeroth-order coordinates.",
+      "proposed_revision": "Use the explicit control set and exact zero-or-nowhere-zero dichotomy, retaining the order convention1 throughr and invoking r+1 explicitly whenever the next derivative is needed.",
+      "impact": "Closes the concrete algebraic finite-exception ingredient of BCN Lemma9 for both normalized orientations. Global decomposition and controlled parametrization remain open.",
+      "evidence": [
+        "PaperP1.GraphControlExceptions.population_card",
+        "PaperP1.GraphControlExceptions.exists_finset",
+        "PaperP1.GraphControlExceptions.singular_mem",
+        "PaperP1.GraphControlExceptions.gradient_nonzero",
+        "PaperP1.GraphControlExceptions.divisible_or_nonzero",
+        "PaperP1.GraphControlExceptions.restriction_zero_or_nowhere_zero",
+        "PaperP1.GraphControlPolynomials.static_zero",
+        "PaperP1.GraphControlPolynomials.static_one",
+        "PaperP1.GraphControlPolynomials.static_degree",
+        "PaperP1.GraphControlPolynomials.oriented_degree",
+        "PaperP1.GraphControlPolynomials.family_degree",
+        "PaperP1.GraphControlPolynomials.sum_degree",
+        "PaperP1.GraphControlPolynomials.bezout_budget",
+        "PaperP1.PolynomialAuxiliaryExceptions.population_card",
+        "PaperP1.PolynomialAuxiliaryExceptions.exists_finset",
+        "PaperP1.PolynomialAuxiliaryExceptions.divisible_or_nonzero",
+        "PaperP1.PolynomialAuxiliaryExceptions.zero_of_divisible",
+        "PaperP1.PolynomialAuxiliaryExceptions.restriction_zero_or_nowhere_zero",
+        "PaperP1.GraphControlExceptions.points",
+        "PaperP1.GraphControlPolynomials.static",
+        "PaperP1.GraphControlPolynomials.orientedNumerator",
+        "PaperP1.GraphControlPolynomials.family",
+        "PaperP1.PolynomialAuxiliaryExceptions.points"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16645 jobs); direct axiom audit passed for 15747 declarations using only propext, Classical.choice and Quot.sound; all 15264 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.51 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
