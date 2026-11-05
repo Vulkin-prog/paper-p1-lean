@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**339 mathematical improvements and two statement-scope corrections are confirmed.**
+**340 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -23881,3 +23881,16 @@ HeathBrownHigherDegreeBiformInput.Input is the strict restriction of the existin
 The two modules add seven theorems and one definition. No numbered conditional result is promoted: companionT1.4,T1.5,T1.13 still depend on the sharp geometric estimate, now reducible to b>=2. Main13.4 and the other recorded geometric inputs remain open. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records339 improvements and two statement-scope corrections. No dependency, axiom, compiler change or original manuscript edit is introduced; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15581 jobs); direct axiom audit passed for 14222 declarations using only propext, Classical.choice and Quot.sound; all 13498 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.32 GiB.
+
+
+## Triangular-power divisibility for filtered evaluation determinants
+
+FilteredEvaluationDeterminantDivisibility.evaluation_triangular_dvd proves p^(k*(k-1)/2) divides the determinant of the actual finite evaluation matrix C*V when every entry of row r of V is divisible by p^r. The coefficient matrix C is arbitrary. The proof retains only injective monomial selections in the internally proved determinant expansion. Distinct natural degrees have sum at least0+1+...+(k-1), and the row-wise power divisibilities give the corresponding determinant divisor.
+
+The theorem works over every commutative ring, for any element p, without primality, a domain hypothesis or analytic convergence. Its finite truncation scope is explicit: it does not yet construct the required representation for actual smooth curve points. determinant_congruence_dvd proves that entrywise congruence modulo any d implies determinant congruence modulo d, using the principal-ideal quotient. evaluation_congruent_dvd consequently preserves the triangular divisor when the actual matrix differs from its filtered representation by entries divisible by that same power.
+
+The six new theorems supply a finite algebraic core of the p-adic determinant step in the remaining Heath-Brown argument. Constructing a compatible polynomial or truncated-series representation on each actual smooth residue class, choosing primes, controlling sizes, building auxiliary forms and finishing the global count remain separate open work. The sharp b>=2 Heath-Brown property is not asserted. The b=1 case and non-geometric input remain internally proved.
+
+P1-MATH-0342 adds one module and no definitions. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records340 improvements and two statement-scope corrections. One small source module from the already pinned Mathlib revision is compiled locally for the distinct-degree sum estimate; no dependency is downloaded or changed. No new axiom, unproved literature premise, compiler change or original manuscript edit is introduced. Main13.4 and the recorded geometric inputs remain open. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15585 jobs); direct axiom audit passed for 14228 declarations using only propext, Classical.choice and Quot.sound; all 13504 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.30 GiB.

@@ -3508,3 +3508,4 @@ public import PaperP1.Algebra.HomogeneousChartSpecialization
 public import PaperP1.Diophantine.GeometricProjectiveFibres
 public import PaperP1.Diophantine.GeometricBiformCoarseCount
 public import PaperP1.Diophantine.HeathBrownHigherDegreeBiformInput
+public import PaperP1.Algebra.FilteredEvaluationDeterminantDivisibility

@@ -11,7 +11,7 @@ Companion T1.5 is complete conditionally on the same geometric Heath-Brown bifor
 
 Companion T1.4 is complete conditionally on HeathBrownBiformInput.Input. NonGeometricBiformInput.Input and the sufficient rational-singularity implication are internally proved with the exact constant8*a*b^2 (P1-MATH-0330). The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. The geometric Heath-Brown ordinary input remains unproved. The three incomplete original numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records339 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records340 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14222 audited theorem/lemma declarations**. This
+- The project currently has **14228 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24658,3 +24658,16 @@ HeathBrownHigherDegreeBiformInput.Input is the strict restriction of the existin
 The two modules add seven theorems and one definition. No numbered conditional result is promoted: companionT1.4,T1.5,T1.13 still depend on the sharp geometric estimate, now reducible to b>=2. Main13.4 and the other recorded geometric inputs remain open. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records339 improvements and two statement-scope corrections. No dependency, axiom, compiler change or original manuscript edit is introduced; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15581 jobs); direct axiom audit passed for 14222 declarations using only propext, Classical.choice and Quot.sound; all 13498 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.32 GiB.
+
+
+## Triangular-power divisibility for filtered evaluation determinants
+
+FilteredEvaluationDeterminantDivisibility.evaluation_triangular_dvd proves p^(k*(k-1)/2) divides the determinant of the actual finite evaluation matrix C*V when every entry of row r of V is divisible by p^r. The coefficient matrix C is arbitrary. The proof retains only injective monomial selections in the internally proved determinant expansion. Distinct natural degrees have sum at least0+1+...+(k-1), and the row-wise power divisibilities give the corresponding determinant divisor.
+
+The theorem works over every commutative ring, for any element p, without primality, a domain hypothesis or analytic convergence. Its finite truncation scope is explicit: it does not yet construct the required representation for actual smooth curve points. determinant_congruence_dvd proves that entrywise congruence modulo any d implies determinant congruence modulo d, using the principal-ideal quotient. evaluation_congruent_dvd consequently preserves the triangular divisor when the actual matrix differs from its filtered representation by entries divisible by that same power.
+
+The six new theorems supply a finite algebraic core of the p-adic determinant step in the remaining Heath-Brown argument. Constructing a compatible polynomial or truncated-series representation on each actual smooth residue class, choosing primes, controlling sizes, building auxiliary forms and finishing the global count remain separate open work. The sharp b>=2 Heath-Brown property is not asserted. The b=1 case and non-geometric input remain internally proved.
+
+P1-MATH-0342 adds one module and no definitions. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records340 improvements and two statement-scope corrections. One small source module from the already pinned Mathlib revision is compiled locally for the distinct-degree sum estimate; no dependency is downloaded or changed. No new axiom, unproved literature premise, compiler change or original manuscript edit is introduced. Main13.4 and the recorded geometric inputs remain open. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15585 jobs); direct axiom audit passed for 14228 declarations using only propext, Classical.choice and Quot.sound; all 13504 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.30 GiB.

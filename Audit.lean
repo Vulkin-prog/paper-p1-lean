@@ -855,6 +855,12 @@ import PaperP1
 #print axioms PaperP1.FieldSquareClasses.add_self
 #print axioms PaperP1.FieldSquareClasses.add_zero_iff_eq
 #print axioms PaperP1.FieldSquareClasses.pair_dependence_iff
+#print axioms PaperP1.FilteredEvaluationDeterminantDivisibility.distinct_degree_budget
+#print axioms PaperP1.FilteredEvaluationDeterminantDivisibility.row_power_dvd
+#print axioms PaperP1.FilteredEvaluationDeterminantDivisibility.evaluation_dvd
+#print axioms PaperP1.FilteredEvaluationDeterminantDivisibility.evaluation_triangular_dvd
+#print axioms PaperP1.FilteredEvaluationDeterminantDivisibility.determinant_congruence_dvd
+#print axioms PaperP1.FilteredEvaluationDeterminantDivisibility.evaluation_congruent_dvd
 #print axioms PaperP1.FiniteBivariateScalarDecomposition.coordinate_apply
 #print axioms PaperP1.FiniteBivariateScalarDecomposition.coefficient_support_subset
 #print axioms PaperP1.FiniteBivariateScalarDecomposition.component_zero_of_not_mem
