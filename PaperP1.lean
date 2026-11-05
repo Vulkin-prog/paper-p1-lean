@@ -4017,3 +4017,6 @@ public import PaperP1.Analysis.MonomialWronskianExceptions
 public import PaperP1.Analysis.LocalRegularTangentPiece
 public import PaperP1.Analysis.NonsingularMonomialPieces
 public import PaperP1.Analysis.PolynomialVelocitySmooth
+public import PaperP1.Algebra.PlaneSingularPoints
+public import PaperP1.Algebra.PolynomialGradientDegree
+public import PaperP1.Analysis.CurveChebyshevExceptions

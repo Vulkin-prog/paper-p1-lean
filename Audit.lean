@@ -1632,6 +1632,9 @@ import PaperP1
 #print axioms PaperP1.PlaneQuotientVeroneseNormalization.exists_parameters
 #print axioms PaperP1.PlaneQuotientVeroneseNormalization.piece_finite
 #print axioms PaperP1.PlaneQuotientVeroneseNormalization.exists_polynomial
+#print axioms PaperP1.PlaneSingularPoints.population_card
+#print axioms PaperP1.PlaneSingularPoints.exists_finset
+#print axioms PaperP1.PlaneSingularPoints.gradient_nonzero_of_not_mem
 #print axioms PaperP1.PolynomialCoordinateProjectionFinite.quotientEquiv_mk
 #print axioms PaperP1.PolynomialCoordinateProjectionFinite.parameterMap_X
 #print axioms PaperP1.PolynomialCoordinateProjectionFinite.finite
@@ -1640,6 +1643,9 @@ import PaperP1
 #print axioms PaperP1.PolynomialDeterminantHeight.unit_mul_height
 #print axioms PaperP1.PolynomialDeterminantHeight.determinant_height
 #print axioms PaperP1.PolynomialDeterminantHeight.determinant_degree
+#print axioms PaperP1.PolynomialGradientDegree.pderiv_degree_le_sub_one
+#print axioms PaperP1.PolynomialGradientDegree.exists_nonzero_partial
+#print axioms PaperP1.PolynomialGradientDegree.exists_partial_not_dvd
 #print axioms PaperP1.PolynomialHeightArithmetic.integer_height_le
 #print axioms PaperP1.PolynomialHeightArithmetic.integer_height_add
 #print axioms PaperP1.PolynomialHeightArithmetic.integer_height_neg
@@ -2566,6 +2572,9 @@ import PaperP1
 #print axioms PaperP1.CubicLogTilt.ratio_lower
 #print axioms PaperP1.CubicLogTilt.tilted_main_bound
 #print axioms PaperP1.CubicLogTilt.log_scale_bounds
+#print axioms PaperP1.CurveChebyshevExceptions.regular_and_avoids
+#print axioms PaperP1.CurveChebyshevExceptions.exists_finset
+#print axioms PaperP1.CurveChebyshevExceptions.exists_counting_piece
 #print axioms PaperP1.CurveDegreeAsymptotics.envelope_tendsto_zero
 #print axioms PaperP1.CurveDegreeAsymptotics.logarithmic_weights_eventually
 #print axioms PaperP1.CurveDegreeAsymptotics.power_div_scale

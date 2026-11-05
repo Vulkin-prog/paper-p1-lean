@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**503 mathematical improvements and two statement-scope corrections are confirmed.**
+**504 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26441,3 +26441,20 @@ The actual ODE theorem is proved in pinned Mathlib, not an unformalized literatu
 P1-MATH-0505 adds three modules, seven theorems and no definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records503 improvements and two statement-scope corrections. Current generic plane counting remains the cubic-degree theorem with fulla<1/3 range. No new axiom, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16617 jobs); direct axiom audit passed for 15684 declarations using only propext, Classical.choice and Quot.sound; all 15182 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.60 GiB.
+
+
+## Complete real curve Chebyshev exceptions and actual local counting pieces
+
+The complete singular-plus-Wronskian exceptional set is now internally constructed for every irreducible real plane polynomialP and every naturalk<degP. PolynomialGradientDegree proves the strict formal partial-degree dropdeg(partial_iP)<=degP-1, including zero-polynomial endpoint conventions. A positive-degree real plane polynomial has an actual nonzero partial: choose a supported positive-weight monomial and a positive exponent, then recover its nonzero derivative coefficient. The partial cannot be divisible byP because of its strictly smaller degree. No gradient nonvanishing premise is introduced.
+
+PlaneSingularPoints defines the actual locusP=partial_0P=partial_1P=0. The already proved finite Bezout theorem with that actual nonzero partial bounds every finite population byD(D-1). It then constructs the genuine finite singular-point set with exactly that membership and cardinality allowance. An actual curve point outside it has a nonzero gradient coordinate.
+
+CurveChebyshevExceptions joins the singular set to the concrete initial-monomial Wronskian exceptional set. Its full membership is retained and an actual finite setE is constructed withE.card<=3D^2*(k+1)^6. This conclusion has no supplied trajectory, regular-point existence, geometric count or global covering hypothesis. If a real regular point exists, the internally constructed ODE piece supplies every Wronskian nondivisibility proof and its finite union bound. If no real regular point exists, every real curve point is singular, so the singular finite bound already covers the entire union. The no-regular-point case is handled directly rather than assuming a real smooth component exists.
+
+Every actual real curve point outsideE now has a constructed local regular interval through it, avoiding the complete exceptional set and satisfying the simultaneous bounded-degree zero-count theorem. The interval is chosen before every nonzero polynomialQ of degree at mostk and every finite distinct image-point population. Each such population ofQ zeros has size strictly below the actual full monomial-family size, which is at most(k+1)^2. Both the trajectory and the exceptional bound are proved from the actual curve equation; they are not input fields.
+
+The primary BCN author version arXiv2302.04209v2 Section3 Lemma6 and the local ingredient of Proposition7 was rechecked against these exact statements. This completes the genuine finite exceptional construction and local counting pieces for every such real irreducible curve. It does not yet prove a controlled global number of pieces, coverage of whole connected components by a single trajectory, bounded smooth parametrizations, the final sharp plane count or higher-dimensional projection. Complete main13.4 BCN and original13.5 remain unresolved; the current generic plane theorem is still cubic with fulla<1/3 growing range.
+
+P1-MATH-0506 adds three modules, nine theorems and two definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records504 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16623 jobs); direct axiom audit passed for 15693 declarations using only propext, Classical.choice and Quot.sound; all 15193 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.59 GiB.
