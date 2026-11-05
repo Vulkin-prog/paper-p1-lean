@@ -29213,7 +29213,8 @@
           "scope": "Complete homogeneousT1.12 clauses only; original scaled sources, raw affine-incompatible channels and exact enlarged nonalignment are retained. No general geometric property or separate numbered Palm/primitive statement is discharged.",
           "checkpoint": "P1-MATH-0447"
         }
-      ]
+      ],
+      "validation_commit": "dd62cef24634fd38e0daa131a9be0a8324e9f9fe"
     },
     {
       "label": "p1:arith:small-kernels",
