@@ -3677,3 +3677,6 @@ public import PaperP1.Asymptotics.AlignedSourcePool
 public import PaperP1.Asymptotics.DensePhysicalAnchorWitness
 public import PaperP1.Asymptotics.DenseTwoTargetNonalignedHosts
 public import PaperP1.Asymptotics.DenseTwoTargetNonalignedMass
+public import PaperP1.Asymptotics.DenseTwoTargetWeakHosts
+public import PaperP1.Asymptotics.RestrictedDensePrimitiveMass
+public import PaperP1.Asymptotics.UnconditionalDenseTwoTargetMass

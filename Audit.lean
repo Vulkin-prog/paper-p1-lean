@@ -7316,6 +7316,7 @@ import PaperP1
 #print axioms PaperP1.DenseTwoTargetNonalignedHosts.uniform_hosts
 #print axioms PaperP1.DenseTwoTargetNonalignedMass.uniform_mass
 #print axioms PaperP1.DenseTwoTargetNonalignedMass.uniform_nominal_mass
+#print axioms PaperP1.DenseTwoTargetWeakHosts.uniform_hosts
 #print axioms PaperP1.DenseWeightedSectorUnderInputs.weighted_card_bound
 #print axioms PaperP1.DenseWeightedSectorUnderInputs.relative_kernel_le_full_sum
 #print axioms PaperP1.DenseWeightedSectorUnderInputs.full_kernel_le_full_sum
@@ -8981,6 +8982,8 @@ import PaperP1
 #print axioms PaperP1.ResidualPrimitiveHostCount.all_primitive_triples
 #print axioms PaperP1.ResidualPrimitiveHostCount.source_unrestricted_assertion
 #print axioms PaperP1.RestrictedAsymmetricProfileUnderInputs.uniform_weight
+#print axioms PaperP1.RestrictedDensePrimitiveMass.uniform_bound
+#print axioms PaperP1.RestrictedDensePrimitiveMass.uniform_nominal_bound
 #print axioms PaperP1.RestrictedDensePrimitiveMassUnderInputs.uniform_bound
 #print axioms PaperP1.RetainedBadPairActivityUnderInputs.uniform_bound
 #print axioms PaperP1.RetainedBadProbability.uniform_badProbability
@@ -9511,6 +9514,11 @@ import PaperP1
 #print axioms PaperP1.TwoThreePositivePhase.uniform_ratio_lengths
 #print axioms PaperP1.TwoThreePositivePhase.uniform_relative_lengths
 #print axioms PaperP1.TwoThreePositivePhase.uniform_critical_relative
+#print axioms PaperP1.UnconditionalDenseTwoTargetMass.uniform_hosts
+#print axioms PaperP1.UnconditionalDenseTwoTargetMass.uniform_mass
+#print axioms PaperP1.UnconditionalDenseTwoTargetMass.uniform_nominal_mass
+#print axioms PaperP1.UnconditionalDenseTwoTargetMass.uniform_homogeneous_mass
+#print axioms PaperP1.UnconditionalDenseTwoTargetMass.article_15_2
 #print axioms PaperP1.uniformLittleOOn_zero
 #print axioms PaperP1.UniformGeometricCountsUnderInputs.one_variable
 #print axioms PaperP1.UniformGeometricCountsUnderInputs.companion_T1_7

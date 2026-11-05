@@ -3,11 +3,11 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
-Main15.5 is now unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is112 proved,52 conditional and3 in_progress. All fixed-arity anchored confinement steps are internally proved; arbitrary-W main15.2 and optimal-law inputs remain separate.
+Main15.2 is now unconditional in its full arbitrary-W scope, for actual, homogeneous-effective and nominal weights, with explicittheta=eta/64 and the full restricted-source primitive consequence (P1-MATH-0429). Main15.5 is also unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is113 proved,51 conditional and3 in_progress. General geometric properties, sharp growing-degree BCN and optimal-law inputs remain separate.
 
-The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. Arbitrary-source main15.2 remains conditional.
+The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. The full arbitrary-source statement was subsequently discharged at P1-MATH-0429.
 
-The singleton-source/nonaligned-target subcase of main15.2 is unconditional (P1-MATH-0423), including subpower hosts, exact rank weights and source-normalized actual joint mass. The general source and remaining alignment branches stay conditional.
+The singleton-source/nonaligned-target subcase of main15.2 is unconditional (P1-MATH-0423), including subpower hosts, exact rank weights and source-normalized actual joint mass. The general source and remaining alignment branches were subsequently discharged at P1-MATH-0429.
 
 A quantitative growing-degree subcase is unconditional (P1-MATH-0422): actual plane counts are uniformly o(B) for caps B^(a+o(1)) with0<=a<1/12, every fixed real box scale and every characteristic-zero field. The full source rangea<1/2 and sharp rank theorem remain open.
 
@@ -45,7 +45,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is112/167 unconditional and52 conditional (164/167 completed). The project records426 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is113/167 unconditional and51 conditional (164/167 completed). The project records427 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -164,7 +164,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14807 audited theorem/lemma declarations**. This
+- The project currently has **14815 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25925,3 +25925,22 @@ The actual two-target physical lift retains at least the effective kernel dimens
 The weakly aligned branch for arbitrary W is still to be assembled. Main15.2 therefore remains conditional, and no general geometric property is promoted. P1-MATH-0428 adds five modules, fourteen theorems and two definitions. Coverage stays112 proved,52 conditional and3 in_progress out of167, with164 completed. The project records426 improvements and two statement-scope corrections. Original source bytes remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15925 jobs); direct axiom audit passed for 14807 declarations using only propext, Classical.choice and Quot.sound; all 14165 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.52 GiB.
+
+
+## Unconditional full dense two-target estimate for arbitrary effective sources
+
+Main Lemma15.2 now has unconditional canonical proofs of both printed assertions. UnconditionalDenseTwoTargetMass.article_15_2 gives the full nonaligned-or-weakly-aligned estimate, with the explicit positive threshold theta=eta/64, simultaneously for actual heterogeneous marginals, homogeneous effective singleton probabilities and literal nominal2^(-L) weights. One threshold precedes every critical length, every collection of s actual source windows, every effective subspace W of their full value span and every target population. The only source/target directness assumptions are W cap S_y=W cap S_z=0. Source windows may overlap or be dependent, and W may be a proper diagonal subspace. The original statement and proof at main_sections/exact_transfer.tex lines129-168 were compared with these exact quantifiers and weights.
+
+DenseTwoTargetWeakHosts completes the arbitrary-W weak-alignment branch. The exact target intersection cap is(eta/64)*L on every actual enlarged alignment channel. Erasing all canonical target/target unit endpoints costs at most2*(eta/64)*L+4 dimensions. Together with the checked effective physical lift, at leasteta*L/2 dimensions survive onceeta*L>=32. Both target projections remain injective. Active target/target nonalignment follows from the internally proved fixed-four-position obstruction, even when the active populations themselves have arbitrary size.
+
+Each target is then treated by the deterministic aligned-source-pool alternative established at checkpoint428. A target aligned with one of the fixed old sources has subpower many possibilities. A target outside that pool has global nonalignment with every old source and active nonalignment with the other target, so DensePhysicalAnchorWitness applies. It constructs a fresh recovery regularization after exact block-index transport, inside the erased subspace. Recovery exclusion is never assumed to survive coordinate erasure. No disjointness from each old source is inferred merely from W-disjointness.
+
+The complete admissible target population has the stronger host boundN^epsilon, in both rank strata. Combining this count with the exact effective rank capd<=L proves each of the three weighted estimates atN^(-1+epsilon). Zero actual marginals, local defects, incompatible affine systems, actual window values and all ordered pair multiplicities are retained. The estimate even permits a larger target population than the printed fresh distinct pairs; restricting to the printed population is immediate.
+
+RestrictedDensePrimitiveMass proves the second assertion for every fixed source size s>=1 and every real prescribed-source exponent sigma, with the exact finite source pool, containment cover and dense primitive population. Its actual and nominal conclusions are mass<=N^(-1-s+sigma+epsilon). For sigma>=0 the stronger full dense primitive estimate from checkpoint427 suffices. For sigma<0 the finite prescribed source pool, and hence every covered family population, is empty onceN>=3. No nonnegativity restriction on sigma is added.
+
+All former coefficient-enumeration, chosen-source/ordinary surface-cover and normalized-curve uses are discharged for canonical main15.2. This does not establish those general geometric properties or the separate sharp growing-degree BCN theorem. The original manuscript bytes and earlier conditional proof history remain preserved.
+
+P1-MATH-0429 adds three modules and eight theorems. Main15.2 moves from conditional to proved. Coverage becomes113 proved,51 conditional and3 in_progress out of167, with164 completed. The project records427 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15931 jobs); direct axiom audit passed for 14815 declarations using only propext, Classical.choice and Quot.sound; all 14173 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.48 GiB.

@@ -21686,6 +21686,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "63585177288a310603533ac0f46990f2b7b88392"
+    },
+    {
+      "id": "P1-MATH-0429",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:dense-targets",
+        "number": "15.2",
+        "page": 40,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 129,
+        "statement_sha256": "67d2424adbe9ce58d341f300471c14a7e1cf21728b62ee4a3f73ad0425362605"
+      },
+      "original_assumption": "The full arbitrary-source dense pair lemma retained external coefficient and geometric inputs, and its weak-alignment branch had only a singleton-source unconditional proof.",
+      "finding": "Exact unit-endpoint erasure, active nonalignment and the anchored source-pool alternative prove subpower hosts for all admissible dense target pairs above arbitrary effective source subspaces. All printed weighted and restricted-source primitive conclusions follow internally.",
+      "proposed_revision": "Use the explicit threshold theta=eta/64 and the stronger subpower host count in both rank strata. Retain arbitrary W, exact unit-erasure costs, fresh recovery regularization and separate actual, homogeneous-effective and nominal weight conventions.",
+      "impact": "Main15.2 becomes unconditional in its full stated arbitrary-source scope, with both original assertions. Coverage becomes113 proved,51 conditional,3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.DenseTwoTargetWeakHosts.uniform_hosts",
+        "PaperP1.RestrictedDensePrimitiveMass.uniform_bound",
+        "PaperP1.RestrictedDensePrimitiveMass.uniform_nominal_bound",
+        "PaperP1.UnconditionalDenseTwoTargetMass.uniform_hosts",
+        "PaperP1.UnconditionalDenseTwoTargetMass.uniform_mass",
+        "PaperP1.UnconditionalDenseTwoTargetMass.uniform_nominal_mass",
+        "PaperP1.UnconditionalDenseTwoTargetMass.uniform_homogeneous_mass",
+        "PaperP1.UnconditionalDenseTwoTargetMass.article_15_2"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15931 jobs); direct axiom audit passed for 14815 declarations using only propext, Classical.choice and Quot.sound; all 14173 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.48 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
