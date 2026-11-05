@@ -265,6 +265,10 @@ import PaperP1
 #print axioms PaperP1.RelationCorePeeling.trace_nullity_budget
 #print axioms PaperP1.RelationCorePeeling.exists_terminal_trace
 #print axioms PaperP1.RelationCorePeeling.exists_core
+#print axioms PaperP1.RelationKernelReindex.addition_pullback
+#print axioms PaperP1.RelationKernelReindex.kernelEquiv_apply
+#print axioms PaperP1.RelationKernelReindex.finrank_eq
+#print axioms PaperP1.RelationKernelReindex.projection_injective
 #print axioms PaperP1.RelationLossMonotonicity.mono
 #print axioms PaperP1.RelationLossMonotonicity.pair_loss
 #print axioms PaperP1.Affine.relationAddition_restrictCoefficients
@@ -7273,6 +7277,9 @@ import PaperP1
 #print axioms PaperP1.DensePhysicalKernelWitnessUnderBCN.uniform_witness_active
 #print axioms PaperP1.DensePhysicalKernelWitnessUnderBCN.uniform_witness
 #print axioms PaperP1.DensePrimitiveFourMassUnderInputs.uniform_bound
+#print axioms PaperP1.DensePrimitiveHosts.uniform_hosts
+#print axioms PaperP1.DensePrimitiveNominalMass.uniform_mass
+#print axioms PaperP1.DensePrimitiveRankMass.uniform_rank_mass
 #print axioms PaperP1.DensePrimitiveTripleHosts.uniform_hosts
 #print axioms PaperP1.DensePrimitiveTripleHosts.companion_T8_2_hosts
 #print axioms PaperP1.DensePrimitiveTripleHostsUnderBCN.uniform_hosts
@@ -8156,6 +8163,8 @@ import PaperP1
 #print axioms PaperP1.LowConnectedRankMass.uniform_bound
 #print axioms PaperP1.LowCrossingJointMass.uniform_bound
 #print axioms PaperP1.LowCrossingTargetJointMass.uniform_bound
+#print axioms PaperP1.LowPrimitiveNominalMass.uniform_bound
+#print axioms PaperP1.LowPrimitiveRankMass.uniform_bound
 #print axioms PaperP1.LowPrimitiveTripleRankMass.uniform_bound
 #print axioms PaperP1.LowTwoPairJointMassUnderInputs.uniform_bound
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_seeds
@@ -9086,6 +9095,11 @@ import PaperP1
 #print axioms PaperP1.SharpPairActivityUnderInputs.uniform_pair_activity
 #print axioms PaperP1.SharpPairTargetDeficit.article_11_1
 #print axioms PaperP1.SharpPairTargetDeficitUnderInputs.article_11_1
+#print axioms PaperP1.SharpPrimitiveMass.uniform_rank_mass
+#print axioms PaperP1.SharpPrimitiveMass.uniform_actual_activity
+#print axioms PaperP1.SharpPrimitiveMass.article_15_5
+#print axioms PaperP1.SharpPrimitiveNominalMass.uniform_mass
+#print axioms PaperP1.SharpPrimitiveNominalMass.article_15_5
 #print axioms PaperP1.SharpProfilesUnderGeometry.dyadic_profile
 #print axioms PaperP1.SharpProfilesUnderGeometry.expanded_profile
 #print axioms PaperP1.SharpProfilesUnderHeathBrown.dyadic_profile
@@ -10224,6 +10238,7 @@ import PaperP1
 #print axioms PaperP1.PlaneFibreBounds.level_card
 #print axioms PaperP1.PlaneFibreBounds.fibre_card
 #print axioms PaperP1.PlaneSupportCount.finite_bound
+#print axioms PaperP1.PointedFiniteEnumeration.exists_equiv
 #print axioms PaperP1.PowerTiltedGraphTail.tilt_bound
 #print axioms PaperP1.PowerTiltedGraphTail.total_bound
 #print axioms PaperP1.PrefixSaturationGraph.neighbors_image

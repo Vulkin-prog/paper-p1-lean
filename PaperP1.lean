@@ -3663,3 +3663,12 @@ public import PaperP1.Arithmetic.FixedArityPhysicalSubspaceRegularization
 public import PaperP1.Arithmetic.OffsetNonalignmentFrom
 public import PaperP1.Asymptotics.AnchoredPhysicalGroupCount
 public import PaperP1.Asymptotics.DenseAnchoredKernelWitness
+public import PaperP1.Affine.RelationKernelReindex
+public import PaperP1.Asymptotics.DensePrimitiveHosts
+public import PaperP1.Asymptotics.DensePrimitiveNominalMass
+public import PaperP1.Asymptotics.DensePrimitiveRankMass
+public import PaperP1.Asymptotics.LowPrimitiveNominalMass
+public import PaperP1.Asymptotics.LowPrimitiveRankMass
+public import PaperP1.Asymptotics.SharpPrimitiveMass
+public import PaperP1.Asymptotics.SharpPrimitiveNominalMass
+public import PaperP1.Combinatorics.PointedFiniteEnumeration

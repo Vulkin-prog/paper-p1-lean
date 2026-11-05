@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+Main15.5 is now unconditional with stronger full and dense primitive exponents (P1-MATH-0427). Current coverage is112 proved,52 conditional and3 in_progress. All fixed-arity anchored confinement steps are internally proved; arbitrary-W main15.2 and optimal-law inputs remain separate.
+
 The singleton-source weak-alignment branch is unconditional (P1-MATH-0424): exact unit erasure and fresh recovery regularization give subpower hosts, true rank weights and actual source-normalized joint mass. Arbitrary-source main15.2 remains conditional.
 
 The singleton-source/nonaligned-target subcase of main15.2 is unconditional (P1-MATH-0423), including subpower hosts, exact rank weights and source-normalized actual joint mass. The general source and remaining alignment branches stay conditional.
@@ -43,7 +45,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is111/167 unconditional and53 conditional (164/167 completed). The project records424 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is112/167 unconditional and52 conditional (164/167 completed). The project records425 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -79,7 +81,7 @@ Main15.14 has its full symbolic original-law estimate proved under the same geom
 
 Main15.10 is complete conditionally: all fixed connected activities reduce to the actual third absolute activity, and the incompatible part has the sharp3/2 rate. The latter uses only coarse higher activity and the completed pair deficit, without the optimal triple estimate.
 
-Main15.5 is complete conditionally: the formerly open primitive four-window mass has power4/3 under the same geometric inputs. The stronger exponent2r/(r+2) holds on the whole population at every fixed r>=4; all r>=5 cases are unconditional.
+Main15.5 is unconditional (P1-MATH-0427): both original exponents hold for literal homogeneous and actual heterogeneous weights. The stronger full exponentr/2 holds at every fixed r>=3, dense primitive hosts are subpower and dense masses have exponentr-1. The actual joint-plus-absolute-centered mass has the full exponentr/2, including zero marginals and incompatible systems.
 
 Companion T22.6 is complete conditionally: exact original-model modified moments, four positive deficits, the stronger unconditional7/6 independent-deficit rate and the full weighted pair-leakage little-o. One finite exceptional-event bundle precedes all fixed orders and tolerances; unconditional subpower moments suffice.
 
@@ -162,7 +164,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14778 audited theorem/lemma declarations**. This
+- The project currently has **14793 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25887,3 +25889,22 @@ FixedArityPhysicalRelationRegularization and FixedArityPhysicalSubspaceRegulariz
 These are internally proved arithmetic and regularization tools. Applying them to all actual old-source configurations, transporting indices and proving the complete dense-target conclusion remain further work. Main15.2 stays conditional. P1-MATH-0426 adds six modules, sixteen theorems and four definitions. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records424 improvements and two statement-scope corrections. Original sources remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15897 jobs); direct axiom audit passed for 14778 declarations using only propext, Classical.choice and Quot.sound; all 14133 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.60 GiB.
+
+
+## Unconditional primitive mass at every fixed size with stronger exponents
+
+Main Proposition15.5 now has unconditional canonical proofs for both its literal homogeneous/nominal mass and the heterogeneous actual rank mass, at every fixed r>=4 and on every dyadic subground. SharpPrimitiveNominalMass.article_15_5 and SharpPrimitiveMass.article_15_5 prove both printed exponents4/3 and2r/(r+2). The latter bound even holds for the whole primitive population, without a density hypothesis. The complete original statement and proof at main_sections/exact_transfer.tex lines219-307 were rechecked.
+
+The new bounds are stronger. DensePrimitiveHosts proves that for every fixed r>=3 and positive eta,epsilon, all actual primitive r-window families with relative nullity at leasteta*L have at mostN^epsilon hosts. The threshold precedes every critical length and every actual population. RelationKernelReindex constructs an exact linear equivalence of the actual addition kernels under arbitrary index equivalences, preserves finrank and transports injective coordinate projections. PointedFiniteEnumeration permits each actual window to be used as the distinguished anchor.
+
+Primitive minimality supplies injective effective projections and disjointness of every pair, with no local full-rank or affine compatibility requirement. Fixed-arity physical regularization loses at mosteta*L/4 dimensions. Applying the internally proved anchored confinement separately to each choice of actual anchor places every center in the same deterministic two-small-kernel set. Its cardinality bound gives the full subpower host count. This counts actual center sets, without enumerating chosen physical sections or regularized subspaces.
+
+DensePrimitiveRankMass and DensePrimitiveNominalMass prove mass<=N^(1-r+epsilon) for the dense population, separately for actual heterogeneous and nominal homogeneous weights. LowPrimitiveRankMass and LowPrimitiveNominalMass prove the reciprocal-cutoff low-nullity estimate N^(-r/2+1/b+epsilon) using the internally proved primitive host count. The nominal proof uses the literal2^(-L) weight and is independent of actual marginal positivity.
+
+Choosing the integerb beforeN, splitting at nullityL/b and combining the bounds gives mass<=N^(-r/2+epsilon) for every fixed r>=3. SharpPrimitiveMass also proves the same exponent for the sum of actual joint probability plus absolute centered coefficient. Zero marginals, local defects, incompatible affine systems and exact contacts are retained; no exceptional population is discarded. The independent old-source spaces need not satisfy any extra geometric premise in these primitive statements.
+
+This discharges the particular former surface-cover and normalized-curve uses of main15.5, without establishing those general geometric properties or the arbitrary-W first assertion of main15.2. The anchored proof uses chosen minimal recovery supports, not a false extension of the radius-two whole-prime-row lemma. Original manuscript bytes and earlier conditional proof history remain preserved.
+
+P1-MATH-0427 adds nine modules, fifteen theorems and one definition. Main15.5 moves from conditional to proved. Coverage becomes112 proved,52 conditional and3 in_progress out of167, with164 completed. The project records425 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15915 jobs); direct axiom audit passed for 14793 declarations using only propext, Classical.choice and Quot.sound; all 14149 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.56 GiB.
