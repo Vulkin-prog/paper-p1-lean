@@ -1,5 +1,7 @@
 # External mathematical inputs
 
+Current update P1-MATH-0423: no external geometry is needed for dense nonaligned targets above one full actual source window. Selected-block injectivity suffices for the confinement witness. General source spaces, aligned branches and geometric properties remain open.
+
 Current update P1-MATH-0422: the internally proved absolute degree-power12 estimate gives the quantitative growing-degree subrange0<=a<1/12 of main13.5, with actual real scales and upper-power caps. This does not discharge the original fulla<1/2 or rank-bound BCN uses.
 
 Current update P1-MATH-0421: every field and degree-height restriction in the weak degree-power12 plane estimate is internally removed. Ordinary irreducibility over any characteristic-zero field suffices, without an embedding premise. The original quadratic-degree/all-dimensional BCN property remains open.
@@ -26120,3 +26122,20 @@ The real-scale theorem treats the actual natural floor of c0*B. A slightly large
 This is a genuine quantitative growing-degree consequence, stronger in rate information than the earlier nonquantitative slow-growing cap. It is not the full original main13.5: the source allows everya<1/2, while this proof only suppliesa<1/12. In particular it does not establish main13.6 or the original quadratic-degree/all-dimensional BCN property. P1-MATH-0422 adds two modules and five theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records420 improvements and two statement-scope corrections. Original source bytes remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15857 jobs); direct axiom audit passed for 14741 declarations using only propext, Classical.choice and Quot.sound; all 14092 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.72 GiB.
+
+
+## Unconditional dense nonaligned targets above one actual source window
+
+Stable ID: p1:internal:dense-singleton-nonaligned-targets. The singleton source and nonaligned target restrictions are explicit. The general source-space, aligned-target and geometric cover/count properties are not discharged.
+
+DenseSingletonNonalignedTargets proves an unconditional actual-source subcase of main15.2. Fix any positive effective densityeta and error epsilon. One threshold precedes every criticalN,L, actual singleton sourcex in the dyadic block and finite nonaligned target-pair populationF. The full actual source spaceS_x is direct from each target separately, and the effective addition kernel has dimension at leasteta*L. Then#F<=N^epsilon, and the exact weighted sum of p_y*p_z*2^dim(Kernel) is at most N^(-1+epsilon). All original heterogeneous marginals, local defects and zero marginals are retained.
+
+The actual joint version retains fresh distinct targets and the literal source/complement intersection rank. It proves sum q({x,y,z})<=p_x*N^(-1+epsilon), with the original joint probabilities and actual source marginal. The intersection-to-kernel inequality and exact finite joint majorant are internally supplied; no independent probability is substituted for the actual triple probability.
+
+ActiveGroupKernelErasureAt isolates a useful weakening: to force two surviving small-kernel values in a selected physical block, only the projection to that block must be injective. Other blocks need no injectivity premise. DensePhysicalKernelWitnessAt combines this selected-block version with the internally proved count of large physical prime groups. It keeps the active-position nonalignment predicate and genuine regularized relation subspace explicit.
+
+For one full source window, source/target disjointness gives actual pair nonalignment by the already proved critical two-point theorem; target/target nonalignment is the specified actual predicate. Thus the three-block confinement applies separately to both injective target projections supplied by the actual two-target physical regularization, even when projection to the source is not injective. Both target centers lie in the same internally counted two-small-kernel population. Their actual marginal caps and the true effective dimension bound pay the exact rank weight.
+
+This is a complete unconditional singleton-source/nonaligned-target theorem, not a proof of the full main15.2. Arbitrary old source subspaces and the remaining aligned branches retain their separately recorded inputs. No general surface-cover, normalized-curve count or BCN property is discharged. P1-MATH-0423 adds three modules and five theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records421 improvements and two statement-scope corrections. Original sources remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15863 jobs); direct axiom audit passed for 14746 declarations using only propext, Classical.choice and Quot.sound; all 14097 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.70 GiB.

@@ -3643,3 +3643,6 @@ public import PaperP1.Diophantine.WeakDegreeUniformAffineCount
 public import PaperP1.Arithmetic.WeakDegreeUniformFieldCount
 public import PaperP1.Analysis.BinaryLogarithmicBudget
 public import PaperP1.Asymptotics.WeakGrowingDegreePlaneCount
+public import PaperP1.Arithmetic.ActiveGroupKernelErasureAt
+public import PaperP1.Asymptotics.DensePhysicalKernelWitnessAt
+public import PaperP1.Asymptotics.DenseSingletonNonalignedTargets

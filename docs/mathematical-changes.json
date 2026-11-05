@@ -21451,6 +21451,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "785f62127e2d42cafcd19028b1fc5e4ada5c6d28"
+    },
+    {
+      "id": "P1-MATH-0423",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:transfer:dense-targets",
+        "number": "15.2",
+        "page": 40,
+        "source": "main_sections/exact_transfer.tex",
+        "line": 129,
+        "statement_sha256": "67d2424adbe9ce58d341f300471c14a7e1cf21728b62ee4a3f73ad0425362605"
+      },
+      "original_assumption": "The dense two-target estimate above old sources was available only through general geometric covering inputs, and the confinement interface required every block projection to be injective.",
+      "finding": "Selected-block injectivity suffices for the small-kernel witness. With one full actual source window and nonaligned targets, this gives unconditional subpower hosts, the exact rank-weighted mass and the actual source-normalized joint mass.",
+      "proposed_revision": "Separate the singleton-source/nonaligned case and use direct three-block confinement there. Require injectivity only for the selected target block, and retain the full actual source-space disjointness and effective rank conditions.",
+      "impact": "Closes an actual-source subcase of main15.2 and prepares the isolated-triple branch. The general numbered statement and its remaining geometric inputs stay conditional; coverage remains111/167 unconditional.",
+      "evidence": [
+        "PaperP1.ActiveGroupKernelErasureAt.two_small",
+        "PaperP1.DensePhysicalKernelWitnessAt.uniform_witness",
+        "PaperP1.DenseSingletonNonalignedTargets.uniform_hosts",
+        "PaperP1.DenseSingletonNonalignedTargets.uniform_mass",
+        "PaperP1.DenseSingletonNonalignedTargets.uniform_joint"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15863 jobs); direct axiom audit passed for 14746 declarations using only propext, Classical.choice and Quot.sound; all 14097 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.70 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

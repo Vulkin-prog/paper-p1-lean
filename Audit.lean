@@ -3039,6 +3039,7 @@ import PaperP1
 #print axioms PaperP1.WeightedReducedSourceBarrier.product_budget
 #print axioms PaperP1.ActiveGroupKernelErasure.dimension_cost
 #print axioms PaperP1.ActiveGroupKernelErasure.two_small_per_block
+#print axioms PaperP1.ActiveGroupKernelErasureAt.two_small
 #print axioms PaperP1.ActivePhysicalPrimeGroups.pool_prime
 #print axioms PaperP1.ActivePhysicalPrimeGroups.pool_gt
 #print axioms PaperP1.ActivePhysicalPrimeGroups.mem_groups
@@ -7243,6 +7244,7 @@ import PaperP1
 #print axioms PaperP1.DensePairCrossingSeedsUnderInputs.uniform_bound
 #print axioms PaperP1.DensePhysicalKernelWitness.uniform_witness_active
 #print axioms PaperP1.DensePhysicalKernelWitness.uniform_witness
+#print axioms PaperP1.DensePhysicalKernelWitnessAt.uniform_witness
 #print axioms PaperP1.DensePhysicalKernelWitnessUnderBCN.uniform_witness_active
 #print axioms PaperP1.DensePhysicalKernelWitnessUnderBCN.uniform_witness
 #print axioms PaperP1.DensePrimitiveFourMassUnderInputs.uniform_bound
@@ -7255,6 +7257,9 @@ import PaperP1
 #print axioms PaperP1.DensePrimitiveTripleRankMass.uniform_nominal_mass
 #print axioms PaperP1.DensePrimitiveTripleRankMassUnderBCN.uniform_rank_mass
 #print axioms PaperP1.DensePrimitiveTripleRankMassUnderBCN.uniform_nominal_mass
+#print axioms PaperP1.DenseSingletonNonalignedTargets.uniform_hosts
+#print axioms PaperP1.DenseSingletonNonalignedTargets.uniform_mass
+#print axioms PaperP1.DenseSingletonNonalignedTargets.uniform_joint
 #print axioms PaperP1.DenseSourcePairKernelUnderInputs.uniform_source_kernel
 #print axioms PaperP1.DenseTargetCount.small_residual_exponent
 #print axioms PaperP1.DenseTargetCount.uniform_count

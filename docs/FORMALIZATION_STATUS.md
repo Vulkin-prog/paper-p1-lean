@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+The singleton-source/nonaligned-target subcase of main15.2 is unconditional (P1-MATH-0423), including subpower hosts, exact rank weights and source-normalized actual joint mass. The general source and remaining alignment branches stay conditional.
+
 A quantitative growing-degree subcase is unconditional (P1-MATH-0422): actual plane counts are uniformly o(B) for caps B^(a+o(1)) with0<=a<1/12, every fixed real box scale and every characteristic-zero field. The full source rangea<1/2 and sharp rank theorem remain open.
 
 The weaker absolute degree-power12 plane bound now covers every characteristic-zero field, allD>=2,N>=1 and arbitrary integer point populations (P1-MATH-0421), including non-geometric equations. It still does not prove the original BCN theorem.
@@ -39,7 +41,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is111/167 unconditional and53 conditional (164/167 completed). The project records420 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is111/167 unconditional and53 conditional (164/167 completed). The project records421 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -158,7 +160,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14741 audited theorem/lemma declarations**. This
+- The project currently has **14746 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25817,3 +25819,18 @@ The real-scale theorem treats the actual natural floor of c0*B. A slightly large
 This is a genuine quantitative growing-degree consequence, stronger in rate information than the earlier nonquantitative slow-growing cap. It is not the full original main13.5: the source allows everya<1/2, while this proof only suppliesa<1/12. In particular it does not establish main13.6 or the original quadratic-degree/all-dimensional BCN property. P1-MATH-0422 adds two modules and five theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records420 improvements and two statement-scope corrections. Original source bytes remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15857 jobs); direct axiom audit passed for 14741 declarations using only propext, Classical.choice and Quot.sound; all 14092 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.72 GiB.
+
+
+## Unconditional dense nonaligned targets above one actual source window
+
+DenseSingletonNonalignedTargets proves an unconditional actual-source subcase of main15.2. Fix any positive effective densityeta and error epsilon. One threshold precedes every criticalN,L, actual singleton sourcex in the dyadic block and finite nonaligned target-pair populationF. The full actual source spaceS_x is direct from each target separately, and the effective addition kernel has dimension at leasteta*L. Then#F<=N^epsilon, and the exact weighted sum of p_y*p_z*2^dim(Kernel) is at most N^(-1+epsilon). All original heterogeneous marginals, local defects and zero marginals are retained.
+
+The actual joint version retains fresh distinct targets and the literal source/complement intersection rank. It proves sum q({x,y,z})<=p_x*N^(-1+epsilon), with the original joint probabilities and actual source marginal. The intersection-to-kernel inequality and exact finite joint majorant are internally supplied; no independent probability is substituted for the actual triple probability.
+
+ActiveGroupKernelErasureAt isolates a useful weakening: to force two surviving small-kernel values in a selected physical block, only the projection to that block must be injective. Other blocks need no injectivity premise. DensePhysicalKernelWitnessAt combines this selected-block version with the internally proved count of large physical prime groups. It keeps the active-position nonalignment predicate and genuine regularized relation subspace explicit.
+
+For one full source window, source/target disjointness gives actual pair nonalignment by the already proved critical two-point theorem; target/target nonalignment is the specified actual predicate. Thus the three-block confinement applies separately to both injective target projections supplied by the actual two-target physical regularization, even when projection to the source is not injective. Both target centers lie in the same internally counted two-small-kernel population. Their actual marginal caps and the true effective dimension bound pay the exact rank weight.
+
+This is a complete unconditional singleton-source/nonaligned-target theorem, not a proof of the full main15.2. Arbitrary old source subspaces and the remaining aligned branches retain their separately recorded inputs. No general surface-cover, normalized-curve count or BCN property is discharged. P1-MATH-0423 adds three modules and five theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records421 improvements and two statement-scope corrections. Original sources remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15863 jobs); direct axiom audit passed for 14746 declarations using only propext, Classical.choice and Quot.sound; all 14097 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.70 GiB.
