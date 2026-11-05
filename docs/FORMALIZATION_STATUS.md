@@ -106,7 +106,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records496 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records497 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -225,7 +225,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15601 audited theorem/lemma declarations**. This
+- The project currently has **15613 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27198,3 +27198,18 @@ The primary BCN author version arXiv2302.04209v2, Sections2-5, was read directly
 P1-MATH-0498 adds two modules, eight theorems and three definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records496 improvements and two statement-scope corrections. No new axiom, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16567 jobs); direct axiom audit passed for 15601 declarations using only propext, Classical.choice and Quot.sound; all 15077 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.74 GiB.
+
+
+## Actual polynomial tangent Wronskians with triangular degree budgets
+
+The actual polynomial tangent operator and its Wronskian degree estimates are now internally proved over every commutative coefficient ring. PolynomialTangentDegree definesL_P(Q)=P_y*Q_x-P_x*Q_y on two-variable multivariate polynomials. It proves additivity, the product rule, annihilation of constants and ofP, and the exact identityL_P(PQ)=P*L_P(Q). Thus the defining curve ideal is preserved by the actual operator; no abstract tangency claim is assumed.
+
+The partial derivative degree bound is proved directly from the coefficient formula and finite support, including zero polynomials and arbitrary coefficient cancellation. It yieldsdegL_P(Q)<=degP+degQ anddegL_P^n(Q)<=degQ+n*degP. No irreducibility, characteristic-zero or analytic premise is needed for these algebraic allowances.
+
+PolynomialTangentWronskian defines the genuine determinant of the actual repeated tangent derivatives. A general multivariate polynomial matrix lemma bounds its determinant degree by the sum of its row allowances, including arbitrary commutative rings, signed permutation terms and the empty matrix. Forn actual basis candidates of degree at mostk, the tangent Wronskian has degree at most the exact row sumsum_(i<n)(k+i*degP)=n*k+(n*(n-1)/2)*degP. The loosern*(k+n*degP) bound used by BCN Proposition5 follows as a separate checked theorem. The triangular allowance is retained rather than replacing every row by its maximum.
+
+The primary BCN author version arXiv2302.04209v2 Section3, Definition3 and Proposition5, was rechecked against these actual formulas. These proofs concern degrees of genuine polynomials and determinants. They do not assert that a partial Wronskian is nonzero on the curve or that every curve piece has the recursive pivot property. The classical analytic normalization identity, nonvanishing/independence argument, finite exceptional curve pieces, smooth parametrizations and final sharp point count remain subsequent obligations. NoBCN or main13.4 coverage is claimed. The current generic plane bound remains cubic, with fulla<1/3 growing range; complete main optimal scalar laws and the unconditional denseT1.7 graph clause are unchanged.
+
+P1-MATH-0499 adds two modules, twelve theorems and two definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records497 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16571 jobs); direct axiom audit passed for 15613 declarations using only propext, Classical.choice and Quot.sound; all 15091 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.72 GiB.

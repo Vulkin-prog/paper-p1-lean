@@ -24488,6 +24488,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "ff84a38db2cc2e0ccbdc35eed8bde1c393b72805"
+    },
+    {
+      "id": "P1-MATH-0499",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The sharp-degree real-analytic route needs explicit polynomial tangent derivatives and a degree budget for every actual partial Wronskian. Those facts were not yet internally established.",
+      "finding": "The actual tangent operator preserves the curve ideal and its genuine determinant has the sharper triangular degree budgetn*k+(n*(n-1)/2)*degP over every commutative coefficient ring.",
+      "proposed_revision": "Retain the exact rowwise tangent derivative degree budget and distinguish it from the still unproved nonvanishing and analytic curve-piece arguments.",
+      "impact": "Closes the polynomial algebra and degree component of the partial-Wronskian route, without assuming or claiming the remaining sharp point count.",
+      "evidence": [
+        "PaperP1.PolynomialTangentDegree.pderiv_degree_le",
+        "PaperP1.PolynomialTangentDegree.tangent_self",
+        "PaperP1.PolynomialTangentDegree.tangent_constant",
+        "PaperP1.PolynomialTangentDegree.tangent_add",
+        "PaperP1.PolynomialTangentDegree.tangent_mul",
+        "PaperP1.PolynomialTangentDegree.tangent_multiple",
+        "PaperP1.PolynomialTangentDegree.tangent_degree",
+        "PaperP1.PolynomialTangentDegree.iterate_degree",
+        "PaperP1.PolynomialTangentWronskian.determinant_row_degree",
+        "PaperP1.PolynomialTangentWronskian.wronskian_degree_sum",
+        "PaperP1.PolynomialTangentWronskian.wronskian_degree",
+        "PaperP1.PolynomialTangentWronskian.wronskian_degree_triangular",
+        "PaperP1.PolynomialTangentDegree.tangent",
+        "PaperP1.PolynomialTangentWronskian.wronskian"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16571 jobs); direct axiom audit passed for 15613 declarations using only propext, Classical.choice and Quot.sound; all 15091 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.72 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

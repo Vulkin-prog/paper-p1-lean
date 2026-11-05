@@ -27594,3 +27594,20 @@ The primary BCN author version arXiv2302.04209v2, Sections2-5, was read directly
 P1-MATH-0498 adds two modules, eight theorems and three definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records496 improvements and two statement-scope corrections. No new axiom, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16567 jobs); direct axiom audit passed for 15601 declarations using only propext, Classical.choice and Quot.sound; all 15077 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.74 GiB.
+
+
+## Actual polynomial tangent Wronskians with triangular degree budgets
+
+Stable ID: p1:internal:polynomial-tangent-wronskian-degree. Actual tangent differentiation, curve-ideal preservation and polynomial Wronskian degree budgets are internal; analytic and geometric nonvanishing/counting bridges remain open.
+
+The actual polynomial tangent operator and its Wronskian degree estimates are now internally proved over every commutative coefficient ring. PolynomialTangentDegree definesL_P(Q)=P_y*Q_x-P_x*Q_y on two-variable multivariate polynomials. It proves additivity, the product rule, annihilation of constants and ofP, and the exact identityL_P(PQ)=P*L_P(Q). Thus the defining curve ideal is preserved by the actual operator; no abstract tangency claim is assumed.
+
+The partial derivative degree bound is proved directly from the coefficient formula and finite support, including zero polynomials and arbitrary coefficient cancellation. It yieldsdegL_P(Q)<=degP+degQ anddegL_P^n(Q)<=degQ+n*degP. No irreducibility, characteristic-zero or analytic premise is needed for these algebraic allowances.
+
+PolynomialTangentWronskian defines the genuine determinant of the actual repeated tangent derivatives. A general multivariate polynomial matrix lemma bounds its determinant degree by the sum of its row allowances, including arbitrary commutative rings, signed permutation terms and the empty matrix. Forn actual basis candidates of degree at mostk, the tangent Wronskian has degree at most the exact row sumsum_(i<n)(k+i*degP)=n*k+(n*(n-1)/2)*degP. The loosern*(k+n*degP) bound used by BCN Proposition5 follows as a separate checked theorem. The triangular allowance is retained rather than replacing every row by its maximum.
+
+The primary BCN author version arXiv2302.04209v2 Section3, Definition3 and Proposition5, was rechecked against these actual formulas. These proofs concern degrees of genuine polynomials and determinants. They do not assert that a partial Wronskian is nonzero on the curve or that every curve piece has the recursive pivot property. The classical analytic normalization identity, nonvanishing/independence argument, finite exceptional curve pieces, smooth parametrizations and final sharp point count remain subsequent obligations. NoBCN or main13.4 coverage is claimed. The current generic plane bound remains cubic, with fulla<1/3 growing range; complete main optimal scalar laws and the unconditional denseT1.7 graph clause are unchanged.
+
+P1-MATH-0499 adds two modules, twelve theorems and two definitions. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records497 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16571 jobs); direct axiom audit passed for 15613 declarations using only propext, Classical.choice and Quot.sound; all 15091 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.72 GiB.

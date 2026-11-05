@@ -3998,3 +3998,5 @@ public import PaperP1.Asymptotics.DenseComponentHostCount
 public import PaperP1.Asymptotics.UniformGeometricCountsReducedInputs
 public import PaperP1.Analysis.FiniteRolleZeros
 public import PaperP1.Analysis.RecursiveChebyshev
+public import PaperP1.Algebra.PolynomialTangentDegree
+public import PaperP1.Algebra.PolynomialTangentWronskian
