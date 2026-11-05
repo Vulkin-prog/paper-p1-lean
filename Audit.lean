@@ -10358,6 +10358,10 @@ import PaperP1
 #print axioms PaperP1.SmoothClassAuxiliary.minor_vanishing
 #print axioms PaperP1.SmoothClassAuxiliary.exists_coefficients
 #print axioms PaperP1.SmoothClassAuxiliary.exists_auxiliary
+#print axioms PaperP1.SmoothClassPointCount.rationalize_ne_zero
+#print axioms PaperP1.SmoothClassPointCount.degree_rationalize
+#print axioms PaperP1.SmoothClassPointCount.common_points_card
+#print axioms PaperP1.SmoothClassPointCount.smooth_class_card
 #print axioms PaperP1.SourceBihomogeneousEquation.source_homogeneous
 #print axioms PaperP1.SourceBihomogeneousEquation.source_evaluation
 #print axioms PaperP1.SourceBihomogeneousEquation.inverse_equation_value

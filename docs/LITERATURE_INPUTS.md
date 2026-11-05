@@ -24929,3 +24929,18 @@ The numerical hypothesis is exactly k!*(L^H*Y^J)^k<p^(k*(k-1)/2), k=(H+1)*(J+1).
 P1-MATH-0349 adds three theorems, a literal point-data structure and a monomial-entry definition. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records347 improvements and two statement-scope corrections. No new axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 remains open and Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15605 jobs); direct axiom audit passed for 14275 declarations using only propext, Classical.choice and Quot.sound; all 13562 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.20 GiB.
+
+
+## Degree-uniform count on each smooth projective residue class
+
+Stable ID: p1:internal:smooth-class-point-count. Local point count is proved from original point data and the exact numerical inequality. Global prime selection and exponent choices remain open.
+
+SmoothClassPointCount.smooth_class_card proves that a finite smooth residue class of signed primitive original projective points has cardinality at most4*(degreeX G+degreeY G)*(H+J), provided G is geometrically irreducible, J<degreeY G, the coordinate bounds are L,Y, and the exact verified determinant inequality holds. The common auxiliary equation is constructed internally by checkpoint349. Its second degree is too small for G to divide it over the rationals.
+
+common_points_card applies the proved finite plane Bezout degree-product bound over the rationals, then retains all signed primitive representatives using the independently proved fibre multiplicity of at most four. degree_rationalize bounds total degree by the sum of the actual two partial degrees, through an injective coefficient map. rationalize_ne_zero ensures the auxiliary remains nonzero. No intersection-count, auxiliary-existence, rank or minor hypothesis is assumed. The resulting local count is independent of coefficient heights and of the number of points in the class.
+
+This closes the per-class count under the literal local smoothness and numerical size conditions. The uniform prime family, residue-class count, second-coordinate height control and final exponent choices remain to be assembled before the global sharp b>=2 Heath-Brown bound is proved.
+
+P1-MATH-0350 adds four theorems. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records348 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 remains open and Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15607 jobs); direct axiom audit passed for 14279 declarations using only propext, Classical.choice and Quot.sound; all 13566 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.19 GiB.
