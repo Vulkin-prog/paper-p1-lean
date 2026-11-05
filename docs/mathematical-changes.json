@@ -26078,6 +26078,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "1585fb2e177c285ed7fe38e16dd1b1d54c8b9770"
+    },
+    {
+      "id": "P1-MATH-0538",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The quadratic estimate covered the original real integer box only in the high-degree range. Complementary low-degree arithmetic and arbitrary-field coefficient descent were missing.",
+      "finding": "One absolute constant now gives the full C*D^2*(Nat.log2(N)+1)^17*N^(1/D) plane-grid bound over every characteristic-zero field, for all D>=2 and N>=1.",
+      "proposed_revision": "Use the internally proved quadratic field-uniform plane theorem. Complete real-height/natural-log interface conversion before invoking the original growing-degree corollary; retain higher-dimensional projection separately.",
+      "impact": "Closes the complete quadratic-degree plane theorem in integer-height form, including all degree ranges and arbitrary coefficient fields, with no external analytic or geometric estimate.",
+      "evidence": [
+        "PaperP1.QuadraticDegreeUniformFieldCount.degree_square_le_profile",
+        "PaperP1.QuadraticDegreeUniformFieldCount.rational_geometric_count",
+        "PaperP1.QuadraticDegreeUniformFieldCount.rational_count",
+        "PaperP1.QuadraticDegreeUniformFieldCount.field_count",
+        "PaperP1.QuadraticDegreeUniformFieldCount.finite_field_count",
+        "PaperP1.QuadraticDegreeUniformRealCount.uniform_count",
+        "PaperP1.QuadraticDegreeUniformRealCount.grid_count",
+        "PaperP1.RationalRealPlaneTransport.complex_extension",
+        "PaperP1.RationalRealPlaneTransport.real_irreducible",
+        "PaperP1.RationalRealPlaneTransport.real_degree",
+        "PaperP1.RationalRealPlaneTransport.real_grid",
+        "PaperP1.QuadraticDegreeUniformFieldCount.profile"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16865 jobs); direct axiom audit passed for 16047 declarations using only propext, Classical.choice and Quot.sound; all 15626 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.52 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

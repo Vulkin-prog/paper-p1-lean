@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**535 mathematical improvements and two statement-scope corrections are confirmed.**
+**536 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26943,3 +26943,18 @@ The high-degree original real integer-box count is now complete. Combining the c
 P1-MATH-0537 adds four modules, fourteen theorems and three definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 535 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16859 jobs); direct axiom audit passed for 16036 declarations using only propext, Classical.choice and Quot.sound; all 15614 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.54 GiB.
+
+
+## Absolute quadratic-degree plane count over all characteristic-zero fields
+
+QuadraticDegreeUniformRealCount combines both degree ranges in the original integer box. In the range D<=L(2*N), exact binary-budget doubling gives D<=2*L(N), so the internally proved cubic arithmetic count C*D^3*L(N)^2*N^(1/D) is bounded by an absolute constant times D^2*L(N)^17*N^(1/D). In the complementary range, the actual high-degree real analytic theorem supplies C*D^2*L(N)^17, and N^(1/D)>=1 adds the required root factor. The actual nested-polynomial/multivariate coordinate chart and the injective integer-coordinate population map retain the original equation, exact degree, irreducibility and every population point.
+
+RationalRealPlaneTransport proves that extending a rational plane equation first to the reals and then to the complexes gives exactly its direct complex extension. Complex irreducibility reflects to the actual real equation. The original total degree and original integer-grid finset are preserved exactly by the rational-to-real coefficient embedding.
+
+QuadraticDegreeUniformFieldCount constructs one positive absolute C before every D>=2, every N>=1, every characteristic-zero coefficient field F, and every irreducible equation P of actual total degree D. It proves both the actual grid and every finite integer-box population bound C*D^2*(Nat.log2(N)+1)^17*N^(1/D). Rational geometrically irreducible equations use the actual real theorem. The non-geometric rational case has the internally proved D*(D-1) count. For arbitrary coefficient fields, populations of size at most D^2 are already covered, and the actual many-points scalar descent constructs a rational equation of exactly the same degree for the remaining case. No complex embedding of the original field is needed.
+
+Thus the complete degree- and coefficient-uniform quadratic plane theorem is internal in its integer-height/binary-logarithmic form. Converting to every real height H>2 and the source natural-logarithmic interface, and assembling the literal growing-degree corollary, remain separate final alignment steps. Higher-dimensional curve projection also remains separate. Main13.4/13.5 are not yet promoted; no full all-dimensional BCN assertion is made.
+
+P1-MATH-0538 adds three modules, eleven theorems and one definition. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 536 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16865 jobs); direct axiom audit passed for 16047 declarations using only propext, Classical.choice and Quot.sound; all 15626 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.52 GiB.

@@ -1,5 +1,7 @@
 # Formalization status
 
+P1-MATH-0538 proves the full quadratic-degree integer-height plane estimate C*D^2*(Nat.log2(N)+1)^17*N^(1/D) over every characteristic-zero field. Natural-logarithmic real-height conversion, the literal main13.5 assembly and higher-dimensional projection remain separate.
+
 P1-MATH-0537 proves the original real integer-box high-degree count C*D^2*(Nat.log2(N)+1)^17, with actual polynomial dilation, preserved degree/irreducibility and internally chosen k=Nat.log2(2*N)+1. Complementary low-degree combination and arbitrary-field scalar transport remain separate.
 
 P1-MATH-0536 proves the complete global quadratic-degree normalized-grid count forlog(N)<=k<D, with all component geometry and analytic inputs internal. Original integer-box rescaling, logarithmic-order selection, low-degree combination and field-uniform arithmetic descent remain separate.
@@ -10,7 +12,7 @@ P1-MATH-0534 proves the actual quadratic barrier budget D*(2*D+4) for disjoint p
 
 Stage: **main optimal scalar-law conclusions proved; six geometric/census or literal-correction obligations remain**, 5 November 2026.
 
-Current plane bound (P1-MATH-0496): an absolute coefficient- and field-uniform C*D^3*(Nat.log2N+1)^2*N^(1/D) estimate is internally proved for every characteristic-zero field. Its growing-degree o(B) consequence covers a<1/3, real scaled boxes and arbitrary upper power caps. Full quadratic-degree/all-dimensional BCN and the original a<1/2 corollary remain unresolved.
+Current plane bound (P1-MATH-0538): an absolute coefficient- and field-uniform C*D^2*(Nat.log2N+1)^17*N^(1/D) estimate is internally proved for every characteristic-zero field, every D>=2 and every N>=1. Its real-height/natural-logarithmic interface conversion and the original a<1/2 corollary remain separate alignment steps. All-dimensional BCN still requires higher-dimensional curve projection.
 Main13.6 is unconditional (P1-MATH-0486): complete literal nonaligned-rank limsup, uniform critical-band estimate and strict half-window gap, with no compatibility requirement or external BCN premise. The actual constructed height and full fibre-degree factor supply the normalized sublinear grid count for every short-support powera<1/2. Generic main13.5 and BCN remain open.
 Main13.8 is unconditional (P1-MATH-0487): compatible and nonaligned triple nullity, every actual joint probability and its literal maximum, all on the original windows. The same probability bound covers every family containing a distinct pair.
 Main1.1,15.14 and16.2 are unconditional (P1-MATH-0489): full optimal4/3 exact quadratic approximation, both reconstruction clauses, positive lower obstruction, actual-to-nominal mean bias and eventual probability status. Scalar weighted/Poisson/Hermite consequences remain separate.
@@ -116,7 +118,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records535 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records536 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -235,7 +237,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16036 audited theorem/lemma declarations**. This
+- The project currently has **16047 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27825,3 +27827,18 @@ The high-degree original real integer-box count is now complete. Combining the c
 P1-MATH-0537 adds four modules, fourteen theorems and three definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 535 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16859 jobs); direct axiom audit passed for 16036 declarations using only propext, Classical.choice and Quot.sound; all 15614 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.54 GiB.
+
+
+## Absolute quadratic-degree plane count over all characteristic-zero fields
+
+QuadraticDegreeUniformRealCount combines both degree ranges in the original integer box. In the range D<=L(2*N), exact binary-budget doubling gives D<=2*L(N), so the internally proved cubic arithmetic count C*D^3*L(N)^2*N^(1/D) is bounded by an absolute constant times D^2*L(N)^17*N^(1/D). In the complementary range, the actual high-degree real analytic theorem supplies C*D^2*L(N)^17, and N^(1/D)>=1 adds the required root factor. The actual nested-polynomial/multivariate coordinate chart and the injective integer-coordinate population map retain the original equation, exact degree, irreducibility and every population point.
+
+RationalRealPlaneTransport proves that extending a rational plane equation first to the reals and then to the complexes gives exactly its direct complex extension. Complex irreducibility reflects to the actual real equation. The original total degree and original integer-grid finset are preserved exactly by the rational-to-real coefficient embedding.
+
+QuadraticDegreeUniformFieldCount constructs one positive absolute C before every D>=2, every N>=1, every characteristic-zero coefficient field F, and every irreducible equation P of actual total degree D. It proves both the actual grid and every finite integer-box population bound C*D^2*(Nat.log2(N)+1)^17*N^(1/D). Rational geometrically irreducible equations use the actual real theorem. The non-geometric rational case has the internally proved D*(D-1) count. For arbitrary coefficient fields, populations of size at most D^2 are already covered, and the actual many-points scalar descent constructs a rational equation of exactly the same degree for the remaining case. No complex embedding of the original field is needed.
+
+Thus the complete degree- and coefficient-uniform quadratic plane theorem is internal in its integer-height/binary-logarithmic form. Converting to every real height H>2 and the source natural-logarithmic interface, and assembling the literal growing-degree corollary, remain separate final alignment steps. Higher-dimensional curve projection also remains separate. Main13.4/13.5 are not yet promoted; no full all-dimensional BCN assertion is made.
+
+P1-MATH-0538 adds three modules, eleven theorems and one definition. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 536 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16865 jobs); direct axiom audit passed for 16047 declarations using only propext, Classical.choice and Quot.sound; all 15626 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.52 GiB.

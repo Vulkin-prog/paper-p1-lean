@@ -4121,3 +4121,6 @@ public import PaperP1.Algebra.UniformPolynomialDilation
 public import PaperP1.Analysis.QuadraticNormalizedGridBudget
 public import PaperP1.Arithmetic.LogarithmicQuadraticPlaneParameters
 public import PaperP1.Arithmetic.QuadraticRealIntegerGridCount
+public import PaperP1.Arithmetic.QuadraticDegreeUniformFieldCount
+public import PaperP1.Arithmetic.QuadraticDegreeUniformRealCount
+public import PaperP1.Arithmetic.RationalRealPlaneTransport

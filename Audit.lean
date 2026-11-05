@@ -6099,6 +6099,13 @@ import PaperP1
 #print axioms PaperP1.ProjectiveFactorCoefficients.projective_coefficient_swap
 #print axioms PaperP1.ProjectiveFactorCoefficients.coefficient_homogeneous
 #print axioms PaperP1.ProjectiveFactorCoefficients.height_iff
+#print axioms PaperP1.QuadraticDegreeUniformFieldCount.degree_square_le_profile
+#print axioms PaperP1.QuadraticDegreeUniformFieldCount.rational_geometric_count
+#print axioms PaperP1.QuadraticDegreeUniformFieldCount.rational_count
+#print axioms PaperP1.QuadraticDegreeUniformFieldCount.field_count
+#print axioms PaperP1.QuadraticDegreeUniformFieldCount.finite_field_count
+#print axioms PaperP1.QuadraticDegreeUniformRealCount.uniform_count
+#print axioms PaperP1.QuadraticDegreeUniformRealCount.grid_count
 #print axioms PaperP1.QuadraticGridWeights.image_subset
 #print axioms PaperP1.QuadraticGridWeights.weighted_sum_bound
 #print axioms PaperP1.QuadraticIntervalGrid.same_grid_square_gaps
@@ -6140,6 +6147,10 @@ import PaperP1
 #print axioms PaperP1.RationalGeometricPlanePointInput.restriction_of_geometric_input
 #print axioms PaperP1.RationalGridLineObstruction.two_matches
 #print axioms PaperP1.RationalGridLineObstruction.rational_graph
+#print axioms PaperP1.RationalRealPlaneTransport.complex_extension
+#print axioms PaperP1.RationalRealPlaneTransport.real_irreducible
+#print axioms PaperP1.RationalRealPlaneTransport.real_degree
+#print axioms PaperP1.RationalRealPlaneTransport.real_grid
 #print axioms PaperP1.RationalTripleDensity.pairDensity_comm
 #print axioms PaperP1.RationalTripleDensity.density_swap
 #print axioms PaperP1.RationalTripleDensity.density_cycle
