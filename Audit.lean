@@ -1860,6 +1860,13 @@ import PaperP1
 #print axioms PaperP1.RungeTruncation.map_integralRungeTruncation
 #print axioms PaperP1.RungeTruncation.eval_rungeTruncation_eq_integral_div
 #print axioms PaperP1.RungeTruncation.one_div_two_pow_le_abs_integer_sub_rungeTruncation
+#print axioms PaperP1.ScalarComponentPoints.project_monomial
+#print axioms PaperP1.ScalarComponentPoints.project_evaluation
+#print axioms PaperP1.ScalarComponentPoints.component_monomial
+#print axioms PaperP1.ScalarComponentPoints.component_evaluation
+#print axioms PaperP1.ScalarComponentPoints.component_degree
+#print axioms PaperP1.ScalarComponentPoints.components_vanish
+#print axioms PaperP1.ScalarComponentPoints.exists_nonzero_component
 #print axioms PaperP1.ScalarIrreducibilityReflection.unit_reflection
 #print axioms PaperP1.ScalarIrreducibilityReflection.irreducible_of_extension
 #print axioms PaperP1.ScalarIrreducibilityReflection.geometric_rational_irreducible

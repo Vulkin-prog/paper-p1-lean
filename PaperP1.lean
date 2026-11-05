@@ -3533,3 +3533,4 @@ public import PaperP1.Analysis.LocalDeterminantDegreeChoice
 public import PaperP1.Diophantine.GeometricBiformPointCount
 public import PaperP1.Asymptotics.CompanionKernelCounts
 public import PaperP1.Asymptotics.SharpProfilesUnderGeometry
+public import PaperP1.Algebra.ScalarComponentPoints

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**360 mathematical improvements and two statement-scope corrections are confirmed.**
+**361 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24154,3 +24154,16 @@ The three original companion statements were rechecked against arithmetic_append
 P1-MATH-0362 adds seven theorems in two modules. Coverage becomes92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records360 improvements and two statement-scope corrections. No axiom, unproved arithmetic premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 and the four geometric-profile properties remain open; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15637 jobs); direct axiom audit passed for 14334 declarations using only propext, Classical.choice and Quot.sound; all 13625 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.01 GiB.
+
+
+## Scalar components preserve actual base-field points and total degree
+
+ScalarComponentPoints.component_evaluation proves that applying any base-field linear coefficient functional to a bivariate polynomial commutes exactly with evaluation at base-field coordinates. components_vanish consequently proves that every actual base-field zero remains a zero of every scalar coefficient component. This works over every field extension K->L and does not assume algebraicity or finite extension degree.
+
+component_degree proves the component total degree cannot exceed the original total degree, including possible coefficient annihilation. exists_nonzero_component constructs a linear functional yielding a nonzero component of every nonzero original polynomial, using the already checked finite basis reconstruction even for infinite extensions. project_monomial, project_evaluation and component_monomial supply the exact elementary projection identities. No point-count, scalar-descent or geometric-bound hypothesis is assumed.
+
+These are preparatory tools for reducing the remaining plane BCN estimate from arbitrary coefficient fields to rational coefficients: sufficiently many base-field points should force a scalar descent via the proved finite plane Bezout theorem. That descent and the rational geometric BCN estimate are not yet proved by this checkpoint. The general all-dimensional main13.4 statement remains in_progress.
+
+P1-MATH-0363 adds seven theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records361 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15639 jobs); direct axiom audit passed for 14341 declarations using only propext, Classical.choice and Quot.sound; all 13632 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.99 GiB.

@@ -19364,6 +19364,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "47abf0da1b15283032fe709e355a27ddc6e8916d"
+    },
+    {
+      "id": "P1-MATH-0363",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "Reducing the open plane BCN input to a smaller coefficient-field scope required exact scalar component projections preserving actual base-field zeros and total degree.",
+      "finding": "Every scalar coefficient component preserves every base-field zero and has no larger total degree; some component is nonzero for every nonzero original polynomial, over arbitrary field extensions.",
+      "proposed_revision": "Combine these actual zero-preserving components with finite plane Bezout to force scalar descent when the base-field point population exceeds the degree square, then reduce the remaining input to rational geometric equations.",
+      "impact": "Supplies exact projection and degree tools for coefficient-field reduction. Neither scalar descent nor the rational geometric BCN bound is claimed yet; main13.4 and numbered coverage are unchanged.",
+      "evidence": [
+        "PaperP1.ScalarComponentPoints.project_monomial",
+        "PaperP1.ScalarComponentPoints.project_evaluation",
+        "PaperP1.ScalarComponentPoints.component_monomial",
+        "PaperP1.ScalarComponentPoints.component_evaluation",
+        "PaperP1.ScalarComponentPoints.component_degree",
+        "PaperP1.ScalarComponentPoints.components_vanish",
+        "PaperP1.ScalarComponentPoints.exists_nonzero_component"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15639 jobs); direct axiom audit passed for 14341 declarations using only propext, Classical.choice and Quot.sound; all 13632 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.99 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

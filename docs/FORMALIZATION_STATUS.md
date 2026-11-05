@@ -11,7 +11,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records360 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records361 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14334 audited theorem/lemma declarations**. This
+- The project currently has **14341 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24931,3 +24931,16 @@ The three original companion statements were rechecked against arithmetic_append
 P1-MATH-0362 adds seven theorems in two modules. Coverage becomes92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records360 improvements and two statement-scope corrections. No axiom, unproved arithmetic premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 and the four geometric-profile properties remain open; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15637 jobs); direct axiom audit passed for 14334 declarations using only propext, Classical.choice and Quot.sound; all 13625 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.01 GiB.
+
+
+## Scalar components preserve actual base-field points and total degree
+
+ScalarComponentPoints.component_evaluation proves that applying any base-field linear coefficient functional to a bivariate polynomial commutes exactly with evaluation at base-field coordinates. components_vanish consequently proves that every actual base-field zero remains a zero of every scalar coefficient component. This works over every field extension K->L and does not assume algebraicity or finite extension degree.
+
+component_degree proves the component total degree cannot exceed the original total degree, including possible coefficient annihilation. exists_nonzero_component constructs a linear functional yielding a nonzero component of every nonzero original polynomial, using the already checked finite basis reconstruction even for infinite extensions. project_monomial, project_evaluation and component_monomial supply the exact elementary projection identities. No point-count, scalar-descent or geometric-bound hypothesis is assumed.
+
+These are preparatory tools for reducing the remaining plane BCN estimate from arbitrary coefficient fields to rational coefficients: sufficiently many base-field points should force a scalar descent via the proved finite plane Bezout theorem. That descent and the rational geometric BCN estimate are not yet proved by this checkpoint. The general all-dimensional main13.4 statement remains in_progress.
+
+P1-MATH-0363 adds seven theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records361 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15639 jobs); direct axiom audit passed for 14341 declarations using only propext, Classical.choice and Quot.sound; all 13632 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.99 GiB.
