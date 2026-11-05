@@ -3491,3 +3491,4 @@ public import PaperP1.Algebra.HomogeneousFactorDegrees
 public import PaperP1.Algebra.IrreducibleHomogenization
 public import PaperP1.Algebra.BivariateIrreducibleHomogenization
 public import PaperP1.Algebra.ComplexProjectiveIrreducibility
+public import PaperP1.Asymptotics.CompanionKernelCountsUnderHeathBrown

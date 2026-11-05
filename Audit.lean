@@ -6637,6 +6637,11 @@ import PaperP1
 #print axioms PaperP1.ColoredMassStep.point_step
 #print axioms PaperP1.ColoredMassStep.family_step
 #print axioms PaperP1.ColoredMassStep.bounded_orders
+#print axioms PaperP1.CompanionKernelCountsUnderHeathBrown.weakened_barrier_count
+#print axioms PaperP1.CompanionKernelCountsUnderHeathBrown.companion_T1_4
+#print axioms PaperP1.CompanionKernelCountsUnderHeathBrown.companion_T1_5
+#print axioms PaperP1.CompanionKernelCountsUnderHeathBrown.companion_T1_5_sharp
+#print axioms PaperP1.CompanionKernelCountsUnderHeathBrown.companion_T1_13
 #print axioms PaperP1.CompanionT21Profiles.macroscopic_positive_reference_eval
 #print axioms PaperP1.CompanionT21Profiles.macroscopic_signed_reference_eval
 #print axioms PaperP1.CompanionT21Profiles.macroscopic_positive_uniform
