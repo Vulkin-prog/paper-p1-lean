@@ -18737,6 +18737,54 @@
         "status": "not_integrated"
       },
       "validation_commit": "a34647f382dd91799031eb97843ee5e7ded94d3b"
+    },
+    {
+      "id": "P1-MATH-0344",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "The local determinant argument still needed an actual polynomial representation of all smooth curve points in one finite residue class, with that representative constructed before the points rather than assumed as an interface.",
+      "finding": "Over any commutative ring with I^N=0, a simple approximate root of a bivariate equation gives one constructed polynomial q(T) representing every actual root in that residue class. The proof uses a truncated parameter ring, nilpotent lifting and uniqueness, without analytic convergence or monicity.",
+      "proposed_revision": "Specialize the checked finite implicit polynomial to ZMod(p^N), then lift its coefficients and identify actual integer curve evaluations modulo p^N before applying the existing determinant divisor.",
+      "impact": "Proves the actual finite algebraic branch representation with exact point and derivative hypotheses. Integer-congruence specialization and the global sharp b>=2 counting theorem remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.BivariateNilpotentImplicitFunction.local_evaluation_mod",
+        "PaperP1.BivariateNilpotentImplicitFunction.local_derivative_mod",
+        "PaperP1.BivariateNilpotentImplicitFunction.exists_local_root",
+        "PaperP1.BivariateNilpotentImplicitFunction.evaluate_local",
+        "PaperP1.BivariateNilpotentImplicitFunction.exists_polynomial_branch",
+        "PaperP1.BivariateNilpotentImplicitFunction.quotient_evaluation_eq",
+        "PaperP1.BivariateNilpotentImplicitFunction.unique_fibre_root",
+        "PaperP1.BivariateNilpotentImplicitFunction.exists_polynomial_implicit",
+        "PaperP1.NilpotentPolynomialParameter.parameter_pow",
+        "PaperP1.NilpotentPolynomialParameter.parameter_mem",
+        "PaperP1.NilpotentPolynomialParameter.base_mem",
+        "PaperP1.NilpotentPolynomialParameter.liftedIdeal_pow",
+        "PaperP1.NilpotentPolynomialParameter.evaluation_parameter",
+        "PaperP1.NilpotentPolynomialParameter.evaluation_base",
+        "PaperP1.NilpotentPolynomialParameter.evaluation_ideal_le",
+        "PaperP1.NilpotentPolynomialParameter.exists_polynomial",
+        "PaperP1.NilpotentPolynomialParameter.evaluation_polynomial",
+        "PaperP1.BivariateNilpotentImplicitFunction.localPolynomial",
+        "PaperP1.NilpotentPolynomialParameter.Trunc",
+        "PaperP1.NilpotentPolynomialParameter.parameter",
+        "PaperP1.NilpotentPolynomialParameter.liftedIdeal",
+        "PaperP1.NilpotentPolynomialParameter.evaluation"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15593 jobs); direct axiom audit passed for 14252 declarations using only propext, Classical.choice and Quot.sound; all 13533 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.28 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
