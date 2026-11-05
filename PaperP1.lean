@@ -4040,3 +4040,7 @@ public import PaperP1.Analysis.NormalizedGraphFiniteAvoidance
 public import PaperP1.Analysis.GradientComparisonControl
 public import PaperP1.Analysis.GraphSlopeControl
 public import PaperP1.Analysis.UnitSlopeNormalizedCharts
+public import PaperP1.Analysis.IteratedDerivativeInteriorBound
+public import PaperP1.Analysis.IteratedDerivativeMonotonicity
+public import PaperP1.Analysis.MonotoneDerivativeInteriorBound
+public import PaperP1.Analysis.UnitSlopeHigherDerivativeBounds

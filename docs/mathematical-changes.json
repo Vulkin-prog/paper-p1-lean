@@ -25118,6 +25118,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "61c0efb297f789d74b1533861cb51d67cbd1fce3"
+    },
+    {
+      "id": "P1-MATH-0514",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "Actual controlled graph pieces had only derivative signs and unit first-derivative bounds; quantitative higher derivative magnitudes were still unproved.",
+      "finding": "Actual mean-value secants and nested intervals prove |f^(j)(x)|<=(2(r+1)/delta)^(j-1) for every1<=j<=r at distance at leastdelta from the local endpoints. Control throughr+1 supplies all required monotonicity.",
+      "proposed_revision": "Use the explicit internally proved interior derivative estimate with its margin and next-order sign conditions, keeping the global covering and full unit C^r parametrization obligations separate.",
+      "impact": "Closes a quantitative all-controlled-orders derivative bound for actual constructed graph pieces, with the genuine30 D^2(r+2)^2 exceptional set. Full BCN remains open.",
+      "evidence": [
+        "PaperP1.IteratedDerivativeInteriorBound.trimmed_bound",
+        "PaperP1.IteratedDerivativeInteriorBound.interior_bound",
+        "PaperP1.IteratedDerivativeMonotonicity.nonneg_or_nonpos",
+        "PaperP1.IteratedDerivativeMonotonicity.smooth_iterated",
+        "PaperP1.IteratedDerivativeMonotonicity.monotone_or_antitone",
+        "PaperP1.MonotoneDerivativeInteriorBound.secant_bound",
+        "PaperP1.MonotoneDerivativeInteriorBound.central_bound",
+        "PaperP1.MonotoneDerivativeInteriorBound.central_bound_on_open",
+        "PaperP1.UnitSlopeHigherDerivativeBounds.derivative_monotonicity",
+        "PaperP1.UnitSlopeHigherDerivativeBounds.interior_bound",
+        "PaperP1.UnitSlopeHigherDerivativeBounds.exists_piece_with_higher_bounds",
+        "PaperP1.UnitSlopeHigherDerivativeBounds.exists_control_set_and_higher_bounds"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16671 jobs); direct axiom audit passed for 15792 declarations using only propext, Classical.choice and Quot.sound; all 15314 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.09 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

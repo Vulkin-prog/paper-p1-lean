@@ -2891,6 +2891,11 @@ import PaperP1
 #print axioms PaperP1.InverseSqrtTail.step
 #print axioms PaperP1.InverseSqrtTail.interval_bound
 #print axioms PaperP1.InverseSqrtTail.tail_bound
+#print axioms PaperP1.IteratedDerivativeInteriorBound.trimmed_bound
+#print axioms PaperP1.IteratedDerivativeInteriorBound.interior_bound
+#print axioms PaperP1.IteratedDerivativeMonotonicity.nonneg_or_nonpos
+#print axioms PaperP1.IteratedDerivativeMonotonicity.smooth_iterated
+#print axioms PaperP1.IteratedDerivativeMonotonicity.monotone_or_antitone
 #print axioms PaperP1.IteratedGraphDerivative.quotient_step
 #print axioms PaperP1.IteratedGraphDerivative.numerator_quotient_hasDerivAt
 #print axioms PaperP1.IteratedGraphDerivative.iterated_evaluation
@@ -2947,6 +2952,9 @@ import PaperP1
 #print axioms PaperP1.MonomialWronskianExceptions.initial_zero_card
 #print axioms PaperP1.MonomialWronskianExceptions.exceptional_population_card
 #print axioms PaperP1.MonomialWronskianExceptions.exists_exceptional_finset
+#print axioms PaperP1.MonotoneDerivativeInteriorBound.secant_bound
+#print axioms PaperP1.MonotoneDerivativeInteriorBound.central_bound
+#print axioms PaperP1.MonotoneDerivativeInteriorBound.central_bound_on_open
 #print axioms PaperP1.MovingLogarithmicPivotMass.interval_cover
 #print axioms PaperP1.MovingLogarithmicPivotMass.exponential_cover
 #print axioms PaperP1.MovingLogarithmicPivotMass.finite_mass
@@ -3328,6 +3336,10 @@ import PaperP1
 #print axioms PaperP1.TruncatedAffineDegree.budget
 #print axioms PaperP1.TruncatedAffineDegree.prime_scale
 #print axioms PaperP1.UniformSaddleVariation.uniform_left_variation
+#print axioms PaperP1.UnitSlopeHigherDerivativeBounds.derivative_monotonicity
+#print axioms PaperP1.UnitSlopeHigherDerivativeBounds.interior_bound
+#print axioms PaperP1.UnitSlopeHigherDerivativeBounds.exists_piece_with_higher_bounds
+#print axioms PaperP1.UnitSlopeHigherDerivativeBounds.exists_control_set_and_higher_bounds
 #print axioms PaperP1.UnitSlopeNormalizedCharts.exists_at_nonexceptional
 #print axioms PaperP1.UnitSlopeNormalizedCharts.exists_control_set_and_unit_slope_charts
 #print axioms PaperP1.VerticalGridLattice.center_identity

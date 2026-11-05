@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**511 mathematical improvements and two statement-scope corrections are confirmed.**
+**512 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26565,3 +26565,20 @@ The final theorem constructs the same genuine control set with exact membership 
 P1-MATH-0513 adds three modules, eleven theorems and four definitions/structures. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 511 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16663 jobs); direct axiom audit passed for 15780 declarations using only propext, Classical.choice and Quot.sound; all 15302 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.11 GiB.
+
+
+## Explicit actual higher derivative bounds on constructed interior graph intervals
+
+MonotoneDerivativeInteriorBound proves a quantitative real mean-value estimate. Two actual secants on the left and right of a central point bound its derivative from both sides. If |g|<=M on the closed interval of radius h>0 and g_prime is monotone or antitone there, then |g_prime(center)|<=2M/h. Continuity and differentiability have their exact closed/open interval scopes. No second derivative magnitude or strict derivative sign is supplied.
+
+IteratedDerivativeMonotonicity proves that constant actual sign means a whole-domain nonnegative or nonpositive branch, including identically zero functions. It proves C-infinity regularity of every actual iterated derivative on an open interval. The real monotonicity theorem then shows that the n-th derivative is monotone or antitone whenever the (n+1)-st derivative has constant sign. The next derivative order is explicit.
+
+IteratedDerivativeInteriorBound iterates the central estimate on nested actual intervals. A unit actual first derivative and monotonicity/antitonicity of every derivative through r imply |f^(n+1)(x)|<=(2/h)^n on the interval trimmed by n*h from each end, for n+1<=r. Taking h=delta/(r+1) gives the uniform interior estimate |f^(j)(x)|<=(2(r+1)/delta)^(j-1) whenever1<=j<=r and a+delta<=x<=b-delta. The proof is a finite induction using actual mean-value points; no global C-infinity extension or interpolation input is assumed.
+
+UnitSlopeHigherDerivativeBounds applies the estimate to the actual constructed unit-slope graph pieces. A piece controlled through r+1 has the required monotonicity of all derivatives through r. Its actual j-th dependent-coordinate derivative obeys the explicit interior bound simultaneously for every positive margin delta, every1<=j<=r and every tested interior parameter. The piece is constructed before all these choices. For every positive-degree irreducible real plane polynomial, the final theorem constructs the actual order-(r+1) control set with exact membership and at most30 deg(P)^2(r+2)^2 points, and constructs such a graph with all bounds at every curve point outside it.
+
+This closes a quantitative higher-derivative ingredient using explicitly one additional controlled sign order. The estimates depend on the distance to local interval endpoints. They do not give unit C^r norms on the whole interval, a controlled global number of charts, whole-component graph coverage, the final sharp plane count or higher-dimensional projection. Full main13.4/13.5 remain unresolved; the generic plane theorem stays cubic with full a<1/3 range.
+
+P1-MATH-0514 adds four modules and twelve theorems, with no new definition. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 512 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16671 jobs); direct axiom audit passed for 15792 declarations using only propext, Classical.choice and Quot.sound; all 15314 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.09 GiB.
