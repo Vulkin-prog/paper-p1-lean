@@ -4179,3 +4179,6 @@ public import PaperP1.Geometry.IntegerCurveProjectionCoordinates
 public import PaperP1.Geometry.IntegerCurveProjectionCount
 public import PaperP1.Arithmetic.AlgebraicallyClosedCurveGridCount
 public import PaperP1.Arithmetic.FiniteNormalizationIntegerCount
+public import PaperP1.Arithmetic.AlgebraicallyClosedUniformCurveCount
+public import PaperP1.Arithmetic.CurveProjectionHeightBudget
+public import PaperP1.Arithmetic.IntegerPopulationBoxBudget

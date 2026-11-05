@@ -26736,6 +26736,58 @@
         "status": "not_integrated"
       },
       "validation_commit": "6e5467689b1b293cec14e0b6cf85eea63c0916ec"
+    },
+    {
+      "id": "P1-MATH-0555",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The internally selected projection count was available only at its enlarged degree-dependent height; the final constant had not yet been shown to depend only on ambient dimension while retaining one absolute logarithmic exponent.",
+      "finding": "Exact integer root and binary-logarithmic estimates absorb the actual bounded projection height into an explicit dimension-only factor; actual box populations cover the large-degree and unit-height regimes, yielding the full quadratic-degree real-height curve bound with logarithmic exponent 17 over algebraically closed characteristic-zero fields.",
+      "proposed_revision": "Use the explicit dimension-only height absorption and actual box split in the proof of main13.4, and retain integral-versus-geometrically-integral scalar descent as a separate required step.",
+      "impact": "Closes the dimension-only constant and absolute logarithmic exponent for the complete internally selected projection argument over algebraically closed fields without adding a degree cap.",
+      "evidence": [
+        "PaperP1.AlgebraicallyClosedUniformCurveCount.constant_pos",
+        "PaperP1.AlgebraicallyClosedUniformCurveCount.population_bound",
+        "PaperP1.AlgebraicallyClosedUniformCurveCount.realConstant_pos",
+        "PaperP1.AlgebraicallyClosedUniformCurveCount.real_population_bound",
+        "PaperP1.CurveProjectionHeightBudget.coefficient_pos",
+        "PaperP1.CurveProjectionHeightBudget.rootFactor_pos",
+        "PaperP1.CurveProjectionHeightBudget.heightExponent_pos",
+        "PaperP1.CurveProjectionHeightBudget.profileFactor_pos",
+        "PaperP1.CurveProjectionHeightBudget.coefficient_polynomial",
+        "PaperP1.CurveProjectionHeightBudget.coefficient_exponential",
+        "PaperP1.CurveProjectionHeightBudget.height_power_bound",
+        "PaperP1.CurveProjectionHeightBudget.budget_of_le_power",
+        "PaperP1.CurveProjectionHeightBudget.logarithmic_bound",
+        "PaperP1.CurveProjectionHeightBudget.root_bound",
+        "PaperP1.CurveProjectionHeightBudget.profile_bound",
+        "PaperP1.IntegerPopulationBoxBudget.box_card",
+        "PaperP1.IntegerPopulationBoxBudget.dimension_power",
+        "PaperP1.IntegerPopulationBoxBudget.large_degree",
+        "PaperP1.IntegerPopulationBoxBudget.large_degree_profile",
+        "PaperP1.IntegerPopulationBoxBudget.unit_height_profile",
+        "PaperP1.AlgebraicallyClosedUniformCurveCount.constant",
+        "PaperP1.AlgebraicallyClosedUniformCurveCount.realConstant",
+        "PaperP1.CurveProjectionHeightBudget.coefficient",
+        "PaperP1.CurveProjectionHeightBudget.rootFactor",
+        "PaperP1.CurveProjectionHeightBudget.heightExponent",
+        "PaperP1.CurveProjectionHeightBudget.profileFactor"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17005 jobs); direct axiom audit passed for 16230 declarations using only propext, Classical.choice and Quot.sound; all 15839 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.46 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -116,7 +116,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records552 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records553 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -235,7 +235,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16210 audited theorem/lemma declarations**. This
+- The project currently has **16230 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -28116,3 +28116,22 @@ This is the full internally selected projection reduction over algebraically clo
 P1-MATH-0554 adds two modules and two theorems. The project records 552 improvements and two P1 statement-scope corrections. No new axiom, compiler or heartbeat change, dependency download, original source edit or Palomar submission is introduced. Ubuntu free space is about 6.49 GiB and the user has been alerted at the 6.5 GiB threshold.
 
 Verified under Lean v4.36.0-rc2: full build passed (16999 jobs); direct axiom audit passed for 16210 declarations using only propext, Classical.choice and Quot.sound; all 15813 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.49 GiB.
+
+
+## Dimension-only projection-height absorption and actual quadratic curve count over algebraically closed fields
+
+CurveProjectionHeightBudget proves that the actual integer projection coefficient bound B(n,d)=((n-1)*d^2+1)^(n-1) satisfies n*B(n,d) <= n^n*d^(2*(n-1)). The elementary integer inequality d <= 2^d then bounds this whole coefficient factor by R(n)^d, with the explicit dimension-only integer R(n)=n^n*2^(2*(n-1)). Its actual d-th root therefore costs at most R(n), uniformly in d; no degree-dependent constant or exponential degree factor remains after the root.
+
+For d <= H^n and H >= 2, the actual projected height n*B(n,d)*H is at most H^E(n), where E(n)=n^n+n*(2*(n-1))+1. An exact integer binary-logarithmic-budget argument proves logarithmicBudget(M) <= m*logarithmicBudget(H) whenever M <= H^m and M,m are positive. It uses the genuine binary upper bound and the actual natural logarithm-to-power comparison. The original projected logarithmic factor therefore loses at most E(n)^17. The complete quadratic plane profile at the actual projected height is bounded by R(n)*E(n)^17 times the original profile, without increasing its logarithmic exponent 17.
+
+IntegerPopulationBoxBudget counts every actual original integer population in its literal coordinate box. Its cardinal is at most (2*H+1)^n, hence at most 3^n*H^n for H >= 1. If d > H^n this actual box count is already at most 3^n*d^2 and is absorbed into the original quadratic profile. Unit height is handled by the same actual box population. Thus neither a degree cap nor a lower-height restriction is introduced into the final theorem.
+
+AlgebraicallyClosedUniformCurveCount combines the internally selected genuine projection count with these exact height and box estimates. It defines one positive constant depending only on ambient coordinate number n and the already proved fixed absolute plane constant, uniformly for every actual algebraically closed characteristic-zero coefficient field within the Lean universe. Every actual original homogeneous prime ideal with genuine positive linear Hilbert polynomial d*r+b, every original normalized coordinate chart, every positive integer height H and every actual finite original integer point population satisfy C(n)*d^2*logarithmicBudget(H)^17*H^(1/d).
+
+The real-height version treats every H > 2 by the literal floor box, transports actual point heights to that box, bounds its binary logarithmic budget by (2/log 2)*log H, and keeps the d-th-root factor monotone in H. With another explicit positive constant depending only on n, the resulting original-source bound is C_real(n)*d^2*H^(1/d)*(log H)^17. All projection, primitive-element, genuine fraction-field, image-degree, good-fibre and exceptional-population data are selected or proved internally. No curve-count assumption is supplied.
+
+This proves the full actual ambient-dimension-dependent quadratic-degree curve bound over algebraically closed coefficient fields, with the absolute logarithmic exponent 17. Main13.4 still requires removing this coefficient-field restriction for curves integral over their original field without geometric integrality, and exact transport to the remaining source interfaces. It is not promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. Main13.5 stays internally proved and companionT1.7/T19.17 remain unresolved.
+
+P1-MATH-0555 adds three modules, twenty theorems and six definitions. The project records 553 improvements and two P1 statement-scope corrections. No new axiom, compiler or heartbeat change, dependency download, original source edit or Palomar submission is introduced. Ubuntu free space remains about 6.46 GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (17005 jobs); direct axiom audit passed for 16230 declarations using only propext, Classical.choice and Quot.sound; all 15839 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.46 GiB.
