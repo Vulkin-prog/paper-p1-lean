@@ -1,6 +1,6 @@
 # External mathematical inputs
 
-Current update P1-MATH-0407: companion T8.1,T8.2,T8.3 have unconditional canonical proofs. Their only former BCN use was fixed-degree plane counting, proved internally at checkpoint401. Full growing-degree/all-dimensional BCN, source and ordinary surface covers, normalized higher-dimensional curve counts and other explicit inputs remain open. No global discharge of these properties is claimed.
+Current update P1-MATH-0408: main12.1,12.2 and companion T8.1,T8.2,T8.3 have unconditional canonical proofs. Their only former BCN use was fixed-degree plane counting, proved internally at checkpoint401. Full growing-degree/all-dimensional BCN, source and ordinary surface covers, normalized higher-dimensional curve counts and other explicit inputs remain open. No global discharge of these properties is claimed.
 
 Historical update P1-MATH-0369: the plane BCN property is reduced to `SmallHeightGeometricPlanePointInput.Input`, an explicit unproved controlled-height integer geometric counting property. All coefficient-field, denominator and coefficient-height translations are internally proved. The complete geometric Heath-Brown biform input is already proved, and companion T1.4,T1.5,T1.13 are unconditional. The original all-dimensional main13.4 remains open.
 
@@ -25853,3 +25853,20 @@ The original statements and proofs in companion_sections/confinement.tex lines75
 P1-MATH-0407 adds six modules and fifteen theorems. Companion T8.2 andT8.3 move from conditional to proved. Coverage becomes95 proved and69 conditional out of167, with164 completed and three in_progress. The ledger records405 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15763 jobs); direct axiom audit passed for 14621 declarations using only propext, Classical.choice and Quot.sound; all 13963 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.12 GiB.
+
+
+## Unconditional weak-intersection and strong-pair triple profiles
+
+Stable ID: p1:internal:unconditional-confinement-triple-profiles. The former bounded-degree BCN use is replaced by the validated dense-confinement chain. Full growing-degree BCN and13.6/13.8 are not discharged.
+
+Main Propositions12.1 and12.2 now have unconditional canonical proofs. Their remaining BCN use was confined to the dense physical-kernel and pair-host chain made internal at checkpoint407. NearPrimitiveTripleHosts constructs the common injective relation subspace, deletes exact alignments, regularizes it and applies the internally proved actual small-kernel witness. For fixed eta>0 and0<theta<eta/100, every actual dyadic triple family with relative nullity>=eta*(L+1) and all proper pair intersections<=theta*(L+1) has at most N^epsilon hosts after one common threshold. No primitive, compatibility or local-full-rank premise is added.
+
+NearPrimitiveTripleMass proves both the actual heterogeneous rank mass and the source nominal homogeneous mass at power -2+theta+epsilon. The new PointwiseNominalRankWeightCap gives a general fixed-order nominal rank-weight bound with an explicit additive rank allowance. The bundled main_12_1_full supplies one threshold for the host count and both masses. This makes the printed homogeneous assertion explicit even for the larger selected population which does not impose local full rank.
+
+StrongNoExactPairMass internally proves the source-pair count and actual joint-mass estimate for strong locally nonaligned ordered pairs. StrongNonalignedSourceProfile then combines the already proved low-crossing and dense-target counts at their actual conditional probabilities. StrongNonalignedTripleProfile constructs the actual unordered triple cover and proves main12.2 with exponent -min(3/2,3-sigma)+epsilon. The section-local absence of two exact units is retained; incompatible triples are permitted and contribute their actual zero joint mass. The printed rank cap rho_rel<=sigma*L remains explicit.
+
+The original main statements in main_sections/confinement.tex lines37-65 and companion proofs in companion_sections/confinement.tex lines173-247 were rechecked. Removing this bounded-degree BCN dependency does not remove the full BCN premise from statements that need the growing-degree rank bound elsewhere, including13.6 and13.8. Earlier conditional declarations and validation history remain available.
+
+P1-MATH-0408 adds six modules and eleven theorems. Main12.1 and12.2 move from conditional to proved. Coverage becomes97 proved and67 conditional out of167, with164 completed and three in_progress. The ledger records406 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15775 jobs); direct axiom audit passed for 14632 declarations using only propext, Classical.choice and Quot.sound; all 13974 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.08 GiB.

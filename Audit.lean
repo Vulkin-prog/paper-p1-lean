@@ -8254,7 +8254,13 @@ import PaperP1
 #print axioms PaperP1.NearLinearThreshold.window_bound_eventually
 #print axioms PaperP1.NearLinearThreshold.threshold_ge_power
 #print axioms PaperP1.NearPrimitivePhysicalRegularization.uniform_subspace
+#print axioms PaperP1.NearPrimitiveTripleHosts.uniform_hosts
 #print axioms PaperP1.NearPrimitiveTripleHostsUnderBCN.uniform_hosts
+#print axioms PaperP1.NearPrimitiveTripleMass.rank_bound
+#print axioms PaperP1.NearPrimitiveTripleMass.uniform_mass
+#print axioms PaperP1.NearPrimitiveTripleMass.main_12_1
+#print axioms PaperP1.NearPrimitiveTripleMass.uniform_nominal_mass
+#print axioms PaperP1.NearPrimitiveTripleMass.main_12_1_full
 #print axioms PaperP1.NearPrimitiveTripleMassUnderBCN.rank_bound
 #print axioms PaperP1.NearPrimitiveTripleMassUnderBCN.uniform_mass
 #print axioms PaperP1.NearPrimitiveTripleMassUnderBCN.main_12_1
@@ -8457,6 +8463,7 @@ import PaperP1
 #print axioms PaperP1.PlaneTernaryConfinement.first_term_bound
 #print axioms PaperP1.PlaneTernaryConfinement.uniform_count
 #print axioms PaperP1.PointwiseJointRankCap.uniform_bound
+#print axioms PaperP1.PointwiseNominalRankWeightCap.uniform_bound
 #print axioms PaperP1.PointwiseRankWeightCap.uniform_bound
 #print axioms PaperP1.PoissonCharlierConversion.errorConstant_pos
 #print axioms PaperP1.PoissonCharlierConversion.critical_bound
@@ -9137,10 +9144,14 @@ import PaperP1
 #print axioms PaperP1.StrongExactFiniteChannelCover.uniform_cover
 #print axioms PaperP1.StrongExactFourThirdsMassUnderInputs.uniform_mass
 #print axioms PaperP1.StrongExactTripleActivityReductionUnderInputs.uniform_reduction
+#print axioms PaperP1.StrongNoExactPairMass.uniform_count
+#print axioms PaperP1.StrongNoExactPairMass.uniform_joint_sum
 #print axioms PaperP1.StrongNoExactPairMassUnderBCN.uniform_count
 #print axioms PaperP1.StrongNoExactPairMassUnderBCN.uniform_joint_sum
 #print axioms PaperP1.StrongNoExactTripleMassUnderBCN.uniform_bound
+#print axioms PaperP1.StrongNonalignedSourceProfile.uniform_sources
 #print axioms PaperP1.StrongNonalignedSourceProfileUnderBCN.uniform_sources
+#print axioms PaperP1.StrongNonalignedTripleProfile.main_12_2
 #print axioms PaperP1.StrongNonalignedTripleProfileUnderBCN.main_12_2
 #print axioms PaperP1.SublogCardinalityCap.uniform_cap
 #print axioms PaperP1.SubpowerFixedCountMoments.uniform_joint_mass

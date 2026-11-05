@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is95/167 unconditional and69 conditional (164/167 completed). The project records405 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is97/167 unconditional and67 conditional (164/167 completed). The project records406 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -29,9 +29,9 @@ CompanionT4.4 is complete conditionally with the stronger fixed compressed primi
 
 Main14.1,14.3,14.4 and14.6 are complete conditionally. The full original third absolute activity, connected triple joint mass and third factorial cumulant have their sharp41/30 power. Both optimal cumulant bounds use the actual mean and all repeated-index terms. The strong geometrically aligned sector14.4 needs only finite geometry; the global14.1/14.3/14.6 route explicitly retainsBCN. The new actual nonaligned channel massN^(-2+1/b+epsilon) bypasses the unresolved31/24 raw-loss profile. Three numbered results remain incomplete. Companion T19.16 is complete conditionally: its actual prescribed signed cost has the exact logarithmic equivalent under ordinary EIPInput and the six existing ordinary geometric inputs. Its literal non-Big-O obstruction uses only EIPInput. T19.17 is complete conditionally on the explicit fixed-parameter Matomäki–Radziwiłł ordinary smooth short-interval input, including both actual deterministic and universal measurable randomized bounds at the printed parameters.
 
-Main12.1 is complete conditionally on the existing explicit BCN input: actual dense triples with weak proper intersections have at mostN^epsilon hosts and total heterogeneous rank mass N^(-2+theta+epsilon). The actual common injective physical subspace, exact-alignment deletion and regularization are constructed unconditionally; no chosen object is enumerated.
+Main12.1 is unconditional (P1-MATH-0408): actual dense triples with weak proper intersections have at mostN^epsilon hosts and both heterogeneous and nominal homogeneous rank masses N^(-2+theta+epsilon). The actual common injective physical subspace, exact-alignment deletion and regularization are constructed unconditionally; no chosen object is enumerated.
 
-Main12.2 is complete conditionally on the existing BCN input alone: actual strong locally nonaligned connected triples have the printed joint-mass exponent min(3/2,3-sigma). The source pool and target populations are constructed; all conditional target bounds are unconditional. P1-MATH-0152 simplifies both branches using the new T8.3 count.
+Main12.2 is unconditional (P1-MATH-0408): actual strong locally nonaligned connected triples have the printed joint-mass exponent min(3/2,3-sigma). The source pool and target populations are constructed; all conditional target bounds are unconditional. P1-MATH-0152 simplifies both branches using the new T8.3 count.
 
 CompanionT8.2 andT8.3 are unconditional (P1-MATH-0407): their bounded-degree confinement use is internally proved. Dense actual primitive triples and locally nonaligned pairs have at mostN^epsilon hosts; dense triple heterogeneous and nominal mass has power2, and every primitive triple family has absolute centered activity of power3/2. Local defects, incompatibility and zero marginals are included. T8.3 now uses the full section-local no-exact-unit convention, extending its earlier enlarged-nonalignment subcase.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14621 audited theorem/lemma declarations**. This
+- The project currently has **14632 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25566,3 +25566,18 @@ The original statements and proofs in companion_sections/confinement.tex lines75
 P1-MATH-0407 adds six modules and fifteen theorems. Companion T8.2 andT8.3 move from conditional to proved. Coverage becomes95 proved and69 conditional out of167, with164 completed and three in_progress. The ledger records405 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15763 jobs); direct axiom audit passed for 14621 declarations using only propext, Classical.choice and Quot.sound; all 13963 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.12 GiB.
+
+
+## Unconditional weak-intersection and strong-pair triple profiles
+
+Main Propositions12.1 and12.2 now have unconditional canonical proofs. Their remaining BCN use was confined to the dense physical-kernel and pair-host chain made internal at checkpoint407. NearPrimitiveTripleHosts constructs the common injective relation subspace, deletes exact alignments, regularizes it and applies the internally proved actual small-kernel witness. For fixed eta>0 and0<theta<eta/100, every actual dyadic triple family with relative nullity>=eta*(L+1) and all proper pair intersections<=theta*(L+1) has at most N^epsilon hosts after one common threshold. No primitive, compatibility or local-full-rank premise is added.
+
+NearPrimitiveTripleMass proves both the actual heterogeneous rank mass and the source nominal homogeneous mass at power -2+theta+epsilon. The new PointwiseNominalRankWeightCap gives a general fixed-order nominal rank-weight bound with an explicit additive rank allowance. The bundled main_12_1_full supplies one threshold for the host count and both masses. This makes the printed homogeneous assertion explicit even for the larger selected population which does not impose local full rank.
+
+StrongNoExactPairMass internally proves the source-pair count and actual joint-mass estimate for strong locally nonaligned ordered pairs. StrongNonalignedSourceProfile then combines the already proved low-crossing and dense-target counts at their actual conditional probabilities. StrongNonalignedTripleProfile constructs the actual unordered triple cover and proves main12.2 with exponent -min(3/2,3-sigma)+epsilon. The section-local absence of two exact units is retained; incompatible triples are permitted and contribute their actual zero joint mass. The printed rank cap rho_rel<=sigma*L remains explicit.
+
+The original main statements in main_sections/confinement.tex lines37-65 and companion proofs in companion_sections/confinement.tex lines173-247 were rechecked. Removing this bounded-degree BCN dependency does not remove the full BCN premise from statements that need the growing-degree rank bound elsewhere, including13.6 and13.8. Earlier conditional declarations and validation history remain available.
+
+P1-MATH-0408 adds six modules and eleven theorems. Main12.1 and12.2 move from conditional to proved. Coverage becomes97 proved and67 conditional out of167, with164 completed and three in_progress. The ledger records406 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15775 jobs); direct axiom audit passed for 14632 declarations using only propext, Classical.choice and Quot.sound; all 13974 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.08 GiB.

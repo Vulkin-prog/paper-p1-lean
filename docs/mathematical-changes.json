@@ -20917,6 +20917,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "46e90463e8d18b1983fe0423b4d2eecf5a9e025e"
+    },
+    {
+      "id": "P1-MATH-0408",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:conf:near-primitive",
+        "number": "12.1",
+        "page": 29,
+        "source": "main_sections/confinement.tex",
+        "line": 37,
+        "statement_sha256": "a285c1d53f734e7d5c1493228422c41d6e2aad88d759fe6cf2d42cb4619d1a3d"
+      },
+      "original_assumption": "The weak-proper-intersection and strong-nonaligned-pair triple profiles retained BCN solely through dense confinement or the actual source-pair host count.",
+      "finding": "Both complete source propositions have unconditional canonical proofs. Main12.1 includes explicit actual heterogeneous and nominal homogeneous mass bounds; main12.2 retains the full actual conditional joint probabilities and printed rank cap.",
+      "proposed_revision": "Use the internally proved dense-confinement chain in the proofs of12.1 and12.2. Cite the nominal rank-weight bound for the printed homogeneous assertion, and retain full BCN only for subsequent arguments using growing-degree ranks.",
+      "impact": "Main12.1 and12.2 move from conditional to proved:97 proved,67 conditional and3 in_progress out of167. The original degree-uniform BCN and global rank theorems remain open.",
+      "evidence": [
+        "PaperP1.NearPrimitiveTripleHosts.uniform_hosts",
+        "PaperP1.NearPrimitiveTripleMass.rank_bound",
+        "PaperP1.NearPrimitiveTripleMass.uniform_mass",
+        "PaperP1.NearPrimitiveTripleMass.main_12_1",
+        "PaperP1.NearPrimitiveTripleMass.uniform_nominal_mass",
+        "PaperP1.NearPrimitiveTripleMass.main_12_1_full",
+        "PaperP1.PointwiseNominalRankWeightCap.uniform_bound",
+        "PaperP1.StrongNoExactPairMass.uniform_count",
+        "PaperP1.StrongNoExactPairMass.uniform_joint_sum",
+        "PaperP1.StrongNonalignedSourceProfile.uniform_sources",
+        "PaperP1.StrongNonalignedTripleProfile.main_12_2"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15775 jobs); direct axiom audit passed for 14632 declarations using only propext, Classical.choice and Quot.sound; all 13974 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.08 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

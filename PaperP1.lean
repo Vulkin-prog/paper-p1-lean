@@ -3596,3 +3596,9 @@ public import PaperP1.Asymptotics.DensePhysicalKernelWitness
 public import PaperP1.Asymptotics.DensePrimitiveTripleHosts
 public import PaperP1.Asymptotics.DensePrimitiveTripleRankMass
 public import PaperP1.Asymptotics.PrimitiveTripleMass
+public import PaperP1.Asymptotics.NearPrimitiveTripleHosts
+public import PaperP1.Asymptotics.NearPrimitiveTripleMass
+public import PaperP1.Asymptotics.PointwiseNominalRankWeightCap
+public import PaperP1.Asymptotics.StrongNoExactPairMass
+public import PaperP1.Asymptotics.StrongNonalignedSourceProfile
+public import PaperP1.Asymptotics.StrongNonalignedTripleProfile
