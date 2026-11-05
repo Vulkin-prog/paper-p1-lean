@@ -38903,7 +38903,8 @@
             "PaperP1.PrimitiveTripleTupleMass.uniform_activity"
           ]
         }
-      ]
+      ],
+      "validation_commit": "2e44af25ea56c22dac58ecfe6814bf22c837d73b"
     },
     {
       "label": "p1:consequences:macro",
