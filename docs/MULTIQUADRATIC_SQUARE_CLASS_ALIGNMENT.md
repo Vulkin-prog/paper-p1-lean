@@ -20889,3 +20889,16 @@ Thus the actual finite normalized-grid count on each relevant regular connected 
 P1-MATH-0533 adds four modules, twelve theorems and five definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 531 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16825 jobs); direct axiom audit passed for 15982 declarations using only propext, Classical.choice and Quot.sound; all 15552 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.65 GiB.
+
+
+## Quadratic barrier bound for disjoint connected curve populations
+
+CurveComponentBarrier constructs the actual real plane polynomial H=(Px^2+Py^2)*(1-x^2)*(1-y^2). Its degree is at most 2*D+4. H is strictly positive inside the open unit box at every point with nonzero gradient, and vanishes at singular points and whenever a coordinate has absolute value one. For every actual endpoint w with P(w)=H(w)=0 and every nonzero epsilon, evaluation at w proves that the irreducible equation P does not divide H-epsilon. Internal plane Bezout therefore bounds every finite actual population with P=0 and H=epsilon by D*(2*D+4).
+
+ConnectedBarrierCrossing proves an actual positive level crossing on a preconnected set from a positive anchor value and a zero in its closure. Its finite-family lemma constructs one strictly positive epsilon below all finitely many anchor values. SinkComponentFamilyBound applies these results to any finite family of pairwise disjoint preconnected subsets of the actual zero set of P. Each set has an actual positive-barrier anchor and an actual closure point with P=H=0. The common epsilon yields one actual level point per set; disjointness proves injectivity. The family cardinality is thus at most D*(2*D+4), with no supplied point-count, component-cardinality or Harnack premise.
+
+This is the quadratic budget for the singular-or-boundary endpoint class. Selecting actual endpoints for the regular components, classifying all components, and proving the separate regular exceptional-point incidence budget remain unresolved. The full global quadratic plane count and higher-dimensional projection are not claimed. Full main13.4/13.5 remain unresolved; the generic plane bound stays cubic with full a<1/3 range.
+
+P1-MATH-0534 adds three modules, eleven theorems and two definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 532 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16831 jobs); direct axiom audit passed for 15993 declarations using only propext, Classical.choice and Quot.sound; all 15565 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.63 GiB.

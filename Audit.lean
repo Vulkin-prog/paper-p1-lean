@@ -802,6 +802,14 @@ import PaperP1
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_empty
 #print axioms PaperP1.CoordinateRestrictionRank.zeroed_rank_le
 #print axioms PaperP1.CoordinateRestrictionRank.cover_cost
+#print axioms PaperP1.CurveComponentBarrier.evaluation
+#print axioms PaperP1.CurveComponentBarrier.degree
+#print axioms PaperP1.CurveComponentBarrier.level_degree
+#print axioms PaperP1.CurveComponentBarrier.positive
+#print axioms PaperP1.CurveComponentBarrier.zero_of_gradient
+#print axioms PaperP1.CurveComponentBarrier.zero_of_boundary
+#print axioms PaperP1.CurveComponentBarrier.level_not_dvd
+#print axioms PaperP1.CurveComponentBarrier.level_population_card
 #print axioms PaperP1.CurveCriticalFibres.critical_nonzero
 #print axioms PaperP1.CurveCriticalFibres.critical_degree
 #print axioms PaperP1.CurveCriticalFibres.mem_badOffsets_iff
@@ -2620,6 +2628,8 @@ import PaperP1
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le
 #print axioms PaperP1.ClippedPowerSum.finite_tail_le_power
 #print axioms PaperP1.CoarseSaddlePowerErrors.power_negligible
+#print axioms PaperP1.ConnectedBarrierCrossing.crossing
+#print axioms PaperP1.ConnectedBarrierCrossing.common_positive_level
 #print axioms PaperP1.ConnectedGraphReachability.reachable_subset
 #print axioms PaperP1.ConnectedGraphReachability.reachable_anchor
 #print axioms PaperP1.ConnectedGraphReachability.reachable_clopen
@@ -3437,6 +3447,7 @@ import PaperP1
 #print axioms PaperP1.SimplifiedUnitMapGridCount.point_count
 #print axioms PaperP1.SimplifiedUnitMapGridCount.logarithmic_power_bound
 #print axioms PaperP1.SimplifiedUnitMapGridCount.logarithmic_point_count
+#print axioms PaperP1.SinkComponentFamilyBound.card_bound
 #print axioms PaperP1.SmallRecoveryParameter.power_order
 #print axioms PaperP1.SmallRecoveryParameter.exists_small
 #print axioms PaperP1.SmallRecoveryParameter.exists_relative_cost

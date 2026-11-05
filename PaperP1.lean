@@ -4104,3 +4104,6 @@ public import PaperP1.Analysis.JointExceptionalComponentGridCount
 public import PaperP1.Analysis.RegularComponentUnitGridCount
 public import PaperP1.Analysis.SecondRegularComponentUnitGridCount
 public import PaperP1.Analysis.SecondRegularCurveComponentGraphs
+public import PaperP1.Algebra.CurveComponentBarrier
+public import PaperP1.Analysis.ConnectedBarrierCrossing
+public import PaperP1.Analysis.SinkComponentFamilyBound

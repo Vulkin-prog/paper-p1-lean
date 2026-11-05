@@ -1,5 +1,7 @@
 # Formalization status
 
+P1-MATH-0534 proves the actual quadratic barrier budget D*(2*D+4) for disjoint preconnected curve populations with positive anchors and zero-barrier closure endpoints. Actual regular-component endpoint selection, classification and exceptional-point incidence remain separate.
+
 Stage: **main optimal scalar-law conclusions proved; six geometric/census or literal-correction obligations remain**, 5 November 2026.
 
 Current plane bound (P1-MATH-0496): an absolute coefficient- and field-uniform C*D^3*(Nat.log2N+1)^2*N^(1/D) estimate is internally proved for every characteristic-zero field. Its growing-degree o(B) consequence covers a<1/3, real scaled boxes and arbitrary upper power caps. Full quadratic-degree/all-dimensional BCN and the original a<1/2 corollary remain unresolved.
@@ -108,7 +110,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records531 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records532 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -227,7 +229,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15982 audited theorem/lemma declarations**. This
+- The project currently has **15993 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27755,3 +27757,16 @@ Thus the actual finite normalized-grid count on each relevant regular connected 
 P1-MATH-0533 adds four modules, twelve theorems and five definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 531 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16825 jobs); direct axiom audit passed for 15982 declarations using only propext, Classical.choice and Quot.sound; all 15552 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.65 GiB.
+
+
+## Quadratic barrier bound for disjoint connected curve populations
+
+CurveComponentBarrier constructs the actual real plane polynomial H=(Px^2+Py^2)*(1-x^2)*(1-y^2). Its degree is at most 2*D+4. H is strictly positive inside the open unit box at every point with nonzero gradient, and vanishes at singular points and whenever a coordinate has absolute value one. For every actual endpoint w with P(w)=H(w)=0 and every nonzero epsilon, evaluation at w proves that the irreducible equation P does not divide H-epsilon. Internal plane Bezout therefore bounds every finite actual population with P=0 and H=epsilon by D*(2*D+4).
+
+ConnectedBarrierCrossing proves an actual positive level crossing on a preconnected set from a positive anchor value and a zero in its closure. Its finite-family lemma constructs one strictly positive epsilon below all finitely many anchor values. SinkComponentFamilyBound applies these results to any finite family of pairwise disjoint preconnected subsets of the actual zero set of P. Each set has an actual positive-barrier anchor and an actual closure point with P=H=0. The common epsilon yields one actual level point per set; disjointness proves injectivity. The family cardinality is thus at most D*(2*D+4), with no supplied point-count, component-cardinality or Harnack premise.
+
+This is the quadratic budget for the singular-or-boundary endpoint class. Selecting actual endpoints for the regular components, classifying all components, and proving the separate regular exceptional-point incidence budget remain unresolved. The full global quadratic plane count and higher-dimensional projection are not claimed. Full main13.4/13.5 remain unresolved; the generic plane bound stays cubic with full a<1/3 range.
+
+P1-MATH-0534 adds three modules, eleven theorems and two definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 532 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16831 jobs); direct axiom audit passed for 15993 declarations using only propext, Classical.choice and Quot.sound; all 15565 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.63 GiB.

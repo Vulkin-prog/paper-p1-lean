@@ -25908,6 +25908,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "acd2d75fa45e938390d88141d3f67e22a1f35a44"
+    },
+    {
+      "id": "P1-MATH-0534",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The actual per-component grid counts were internal, but no quadratic cardinality bound had been proved for disjoint connected populations approaching singular points or the box boundary.",
+      "finding": "A single explicit polynomial barrier and a common positive level give the actual finite-family bound D*(2*D+4) through internal Bezout and connectedness.",
+      "proposed_revision": "Use the internal barrier argument for singular-or-boundary ends, and keep actual endpoint construction and regular exceptional-point incidence as separate obligations.",
+      "impact": "Supplies a genuine quadratic geometric budget without assuming Harnack or the target component count. It does not yet classify the actual regular components.",
+      "evidence": [
+        "PaperP1.CurveComponentBarrier.evaluation",
+        "PaperP1.CurveComponentBarrier.degree",
+        "PaperP1.CurveComponentBarrier.level_degree",
+        "PaperP1.CurveComponentBarrier.positive",
+        "PaperP1.CurveComponentBarrier.zero_of_gradient",
+        "PaperP1.CurveComponentBarrier.zero_of_boundary",
+        "PaperP1.CurveComponentBarrier.level_not_dvd",
+        "PaperP1.CurveComponentBarrier.level_population_card",
+        "PaperP1.ConnectedBarrierCrossing.crossing",
+        "PaperP1.ConnectedBarrierCrossing.common_positive_level",
+        "PaperP1.SinkComponentFamilyBound.card_bound",
+        "PaperP1.CurveComponentBarrier.barrier",
+        "PaperP1.CurveComponentBarrier.level"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16831 jobs); direct axiom audit passed for 15993 declarations using only propext, Classical.choice and Quot.sound; all 15565 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.63 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
