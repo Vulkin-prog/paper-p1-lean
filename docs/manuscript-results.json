@@ -17200,7 +17200,8 @@
           "validation_commit": "0b6da3efb2a706744d6760863229b7a4e0f76176"
         }
       ],
-      "canonical_statement": "PaperP1.CompanionKernelCounts.companion_T1_4"
+      "canonical_statement": "PaperP1.CompanionKernelCounts.companion_T1_4",
+      "validation_commit": "47abf0da1b15283032fe709e355a27ddc6e8916d"
     },
     {
       "label": "p1:arith:twokernel",
@@ -21886,7 +21887,8 @@
         }
       ],
       "canonical_statement": "PaperP1.CompanionKernelCounts.companion_T1_5",
-      "canonical_sharp_statement": "PaperP1.CompanionKernelCounts.companion_T1_5_sharp"
+      "canonical_sharp_statement": "PaperP1.CompanionKernelCounts.companion_T1_5_sharp",
+      "validation_commit": "47abf0da1b15283032fe709e355a27ddc6e8916d"
     },
     {
       "label": "p1:arith:anchor",
@@ -25159,7 +25161,8 @@
         "PaperP1.UniformOrdinarySurfaceCover.UniformCover ko (K+1)",
         "forall M, PaperP1.UniformNormalizedCurvePointCount.UniformBound ((Ds+2).choose 2+kg) M",
         "forall M, PaperP1.UniformNormalizedCurvePointCount.UniformBound (ko+3) M"
-      ]
+      ],
+      "validation_commit": "47abf0da1b15283032fe709e355a27ddc6e8916d"
     },
     {
       "label": "p1:arith:palmrank",
@@ -25809,7 +25812,8 @@
           "validation_commit": "0b6da3efb2a706744d6760863229b7a4e0f76176"
         }
       ],
-      "canonical_statement": "PaperP1.CompanionKernelCounts.companion_T1_13"
+      "canonical_statement": "PaperP1.CompanionKernelCounts.companion_T1_13",
+      "validation_commit": "47abf0da1b15283032fe709e355a27ddc6e8916d"
     },
     {
       "label": "p1:arith:fixed-support",
