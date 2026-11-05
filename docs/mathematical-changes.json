@@ -20459,6 +20459,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "f828cc1b3250ba00c6d5b2badcdba9f643a068e7"
+    },
+    {
+      "id": "P1-MATH-0395",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The zero-discriminant conic branch lacked an actual arithmetic count uniform in its possibly large linear coefficient; direct coordinate bounds would lose that uniformity.",
+      "finding": "Actual signed square-congruence populations admit 2*tau(M)*(sqrt(R)+1) points in square-value width M*R. This yields an exact finite bound 2*tau(|beta|)*(sqrt(2H)+1) for actual parabolic conic zeros with |x|<=H and no y-height restriction.",
+      "proposed_revision": "Use the divisor-grouped residue argument and square-value width in the parabolic branch. Add the proved elementary divisor budget and internally derived geometric non-degeneracy before claiming the original-equation uniform estimate.",
+      "impact": "Closes the finite parabolic arithmetic count with explicit leading-coefficient and linear-term conditions. Their geometric discharge, asymptotic normalization and numbered coverage remain separate.",
+      "evidence": [
+        "PaperP1.SquareCongruenceRangeCount.common_residue_card",
+        "PaperP1.SquareCongruenceRangeCount.color_dvd",
+        "PaperP1.SquareCongruenceRangeCount.quotient_divides_sum",
+        "PaperP1.SquareCongruenceRangeCount.same_color_divides_difference",
+        "PaperP1.SquareCongruenceRangeCount.fibre_card",
+        "PaperP1.SquareCongruenceRangeCount.nonnegative_count",
+        "PaperP1.SquareCongruenceRangeCount.abs_card",
+        "PaperP1.SquareCongruenceRangeCount.signed_count",
+        "PaperP1.ParabolicConicFiniteCount.zero_square",
+        "PaperP1.ParabolicConicFiniteCount.square_coordinate_injective",
+        "PaperP1.ParabolicConicFiniteCount.finite_count",
+        "PaperP1.SquareCongruenceRangeCount.gcdColor"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15707 jobs); direct axiom audit passed for 14536 declarations using only propext, Classical.choice and Quot.sound; all 13868 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.54 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

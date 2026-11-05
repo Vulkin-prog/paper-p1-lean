@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records392 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records393 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14525 audited theorem/lemma declarations**. This
+- The project currently has **14536 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25369,3 +25369,18 @@ Together with checkpoint389, this closes both nonzero-discriminant geometric con
 P1-MATH-0394 adds three theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records392 improvements and two statement-scope corrections. No new axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15703 jobs); direct axiom audit passed for 14525 declarations using only propext, Classical.choice and Quot.sound; all 13856 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.56 GiB.
+
+
+## Divisor-grouped square ranges and exact finite parabola counts
+
+SquareCongruenceRangeCount proves a signed square-root bound for actual integer square congruences. If M>0, every z in an actual finite population satisfies M|(z^2-base^2), and every square-value difference is at most M*R with R>=0, then the population has at most 2*tau(M)*(sqrt(R)+1) elements. No squarefree, coprime, primitivity or shift-size condition is imposed.
+
+The proof groups z by g=gcd(M,z-base). Exact congruence cancellation proves M/g divides z+base. Within one actual gcd fibre, both g and M/g divide every pairwise difference, so the common residue modulus max(g,M/g) has square at least M. An injective exact quotient map gives the finite interval count. For nonnegative z the coordinate-span square is at most the square-value span, and division by this modulus yields sqrt(R)+1 points per fibre. The gcd image consists of actual divisors of M. Passing through absolute values retains both signs with multiplicity at most two.
+
+ParabolicConicFiniteCount applies this to the actual conic square coordinate W=2*c*y+b*x+e. When the discriminant is zero, c!=0 and beta=2*b*e-4*c*d!=0, that coordinate is injective on actual integer zeros, and W^2=beta*x+gamma. Consequently every finite population of zeros with |x|<=H has cardinality at most 2*tau(|beta|)*(sqrt(2*H)+1), with no bound on y and with both coordinate signs and all axis points retained. The width estimate uses the actual square-value identity and the exact modulus |beta|, rather than bounding W by coefficient height.
+
+This is the exact finite arithmetic bound for the parabolic branch. The eventual uniform N^(1/2+epsilon) estimate still needs the elementary divisor budget, and actual geometric polynomials still need their leading-coordinate choice and non-degeneracy supplied internally. Original coefficient normalization is also separate. These consequences are not yet claimed. Both nonzero-discriminant branches remain proved; general BCN and original all-dimensional main13.4 remain open. No original numbered result is promoted.
+
+P1-MATH-0395 adds two modules, eleven theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records393 improvements and two statement-scope corrections. No new axiom, external arithmetic premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15707 jobs); direct axiom audit passed for 14536 declarations using only propext, Classical.choice and Quot.sound; all 13868 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.54 GiB.

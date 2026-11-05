@@ -5930,6 +5930,14 @@ import PaperP1
 #print axioms PaperP1.SplitRadicalPointHeight.dyadic_square_height
 #print axioms PaperP1.SplitRadicalPointHeight.monomial_height
 #print axioms PaperP1.SplitRadicalPointHeight.sum_natAbs_le
+#print axioms PaperP1.SquareCongruenceRangeCount.common_residue_card
+#print axioms PaperP1.SquareCongruenceRangeCount.color_dvd
+#print axioms PaperP1.SquareCongruenceRangeCount.quotient_divides_sum
+#print axioms PaperP1.SquareCongruenceRangeCount.same_color_divides_difference
+#print axioms PaperP1.SquareCongruenceRangeCount.fibre_card
+#print axioms PaperP1.SquareCongruenceRangeCount.nonnegative_count
+#print axioms PaperP1.SquareCongruenceRangeCount.abs_card
+#print axioms PaperP1.SquareCongruenceRangeCount.signed_count
 #print axioms PaperP1.SquareDivisibilityFibres.finite_count
 #print axioms PaperP1.SquareEquationKernel.kernels_eq_of_square_mul
 #print axioms PaperP1.SquareEquationKernel.integer_square_to_kernel
@@ -10416,6 +10424,9 @@ import PaperP1
 #print axioms PaperP1.NonGeometricRationalSingularity.rationalize_evaluation
 #print axioms PaperP1.NonGeometricRationalSingularity.projective_zero_iff
 #print axioms PaperP1.NonGeometricRationalSingularity.nongeometric_input_of_singularity
+#print axioms PaperP1.ParabolicConicFiniteCount.zero_square
+#print axioms PaperP1.ParabolicConicFiniteCount.square_coordinate_injective
+#print axioms PaperP1.ParabolicConicFiniteCount.finite_count
 #print axioms PaperP1.PolynomialLinearKernelFibres.uniform_count
 #print axioms PaperP1.PolynomialPellCount.generalizedPellBox_atMost_divisor_orbit
 #print axioms PaperP1.PolynomialPellCount.product_not_isSquare_of_ratio_not_isSquare

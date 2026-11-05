@@ -17879,3 +17879,18 @@ Together with checkpoint389, this closes both nonzero-discriminant geometric con
 P1-MATH-0394 adds three theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records392 improvements and two statement-scope corrections. No new axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15703 jobs); direct axiom audit passed for 14525 declarations using only propext, Classical.choice and Quot.sound; all 13856 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.56 GiB.
+
+
+## Divisor-grouped square ranges and exact finite parabola counts
+
+SquareCongruenceRangeCount proves a signed square-root bound for actual integer square congruences. If M>0, every z in an actual finite population satisfies M|(z^2-base^2), and every square-value difference is at most M*R with R>=0, then the population has at most 2*tau(M)*(sqrt(R)+1) elements. No squarefree, coprime, primitivity or shift-size condition is imposed.
+
+The proof groups z by g=gcd(M,z-base). Exact congruence cancellation proves M/g divides z+base. Within one actual gcd fibre, both g and M/g divide every pairwise difference, so the common residue modulus max(g,M/g) has square at least M. An injective exact quotient map gives the finite interval count. For nonnegative z the coordinate-span square is at most the square-value span, and division by this modulus yields sqrt(R)+1 points per fibre. The gcd image consists of actual divisors of M. Passing through absolute values retains both signs with multiplicity at most two.
+
+ParabolicConicFiniteCount applies this to the actual conic square coordinate W=2*c*y+b*x+e. When the discriminant is zero, c!=0 and beta=2*b*e-4*c*d!=0, that coordinate is injective on actual integer zeros, and W^2=beta*x+gamma. Consequently every finite population of zeros with |x|<=H has cardinality at most 2*tau(|beta|)*(sqrt(2*H)+1), with no bound on y and with both coordinate signs and all axis points retained. The width estimate uses the actual square-value identity and the exact modulus |beta|, rather than bounding W by coefficient height.
+
+This is the exact finite arithmetic bound for the parabolic branch. The eventual uniform N^(1/2+epsilon) estimate still needs the elementary divisor budget, and actual geometric polynomials still need their leading-coordinate choice and non-degeneracy supplied internally. Original coefficient normalization is also separate. These consequences are not yet claimed. Both nonzero-discriminant branches remain proved; general BCN and original all-dimensional main13.4 remain open. No original numbered result is promoted.
+
+P1-MATH-0395 adds two modules, eleven theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records393 improvements and two statement-scope corrections. No new axiom, external arithmetic premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15707 jobs); direct axiom audit passed for 14536 declarations using only propext, Classical.choice and Quot.sound; all 13868 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.54 GiB.
