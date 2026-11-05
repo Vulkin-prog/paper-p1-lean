@@ -10515,6 +10515,12 @@ import PaperP1
 #print axioms PaperP1.ShiftedQuadraticValues.quadratic_block_eq
 #print axioms PaperP1.ShiftedQuadraticValues.value_injective_on
 #print axioms PaperP1.ShiftedQuadraticValues.ordered_pair_representation
+#print axioms PaperP1.SignedQuadraticCount.absPair_fibre_card
+#print axioms PaperP1.SignedQuadraticCount.absPair_card
+#print axioms PaperP1.SignedQuadraticCount.first_axis_card
+#print axioms PaperP1.SignedQuadraticCount.second_axis_card
+#print axioms PaperP1.SignedQuadraticCount.signed_count_le_rpow_eventually
+#print axioms PaperP1.SignedQuadraticCount.generalized_count_le_rpow_eventually
 #print axioms PaperP1.SingleResultantFibreCount.scale_count
 #print axioms PaperP1.SingleResultantFibreCount.finite_count
 #print axioms PaperP1.SingleResultantFibreCount.actual_real_solutions_count

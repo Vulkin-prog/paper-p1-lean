@@ -20019,6 +20019,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "01827b288311d3359d0f3ca32c1ce43e520a6354"
+    },
+    {
+      "id": "P1-MATH-0382",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The existing unconditional quadratic count applied to positive coordinates, whereas actual conic norm transforms can produce arbitrary signs and points on either axis.",
+      "finding": "The complete signed quadratic population, including all axis points and square coefficient ratios, now satisfies the same coefficient-uniform polynomial-height N^epsilon bound.",
+      "proposed_revision": "Use the full signed count directly on actual conic norm images, preserving the nonzero right side and positive norm-coefficient conditions, and treat the remaining signs and degeneracies explicitly.",
+      "impact": "Closes the sign and axis extension of the proved quadratic arithmetic input, including every positive generalized norm coefficient. The general conic and BCN obligations remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.SignedQuadraticCount.absPair_fibre_card",
+        "PaperP1.SignedQuadraticCount.absPair_card",
+        "PaperP1.SignedQuadraticCount.first_axis_card",
+        "PaperP1.SignedQuadraticCount.second_axis_card",
+        "PaperP1.SignedQuadraticCount.signed_count_le_rpow_eventually",
+        "PaperP1.SignedQuadraticCount.generalized_count_le_rpow_eventually",
+        "PaperP1.SignedQuadraticCount.absPair"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15679 jobs); direct axiom audit passed for 14456 declarations using only propext, Classical.choice and Quot.sound; all 13774 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.72 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
