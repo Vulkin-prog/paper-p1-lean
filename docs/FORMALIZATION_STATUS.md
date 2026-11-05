@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records461 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records462 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15282 audited theorem/lemma declarations**. This
+- The project currently has **15287 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26588,3 +26588,20 @@ These results prepare a finite weighted reciprocal stratification: each pivot ba
 P1-MATH-0463 adds three modules, six theorems and no definitions. CompanionT19.15 remains conditional. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records461 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16369 jobs); direct axiom audit passed for 15282 declarations using only propext, Classical.choice and Quot.sound; all 14709 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.53 GiB.
+
+
+## Weighted finite pivot stratification reaches every leading upper coefficient below two
+
+A one-sided sharp leading upper coefficient is now proved internally for the literal reciprocal sums. For every fixed0<c<2, pivotSum(3N)+1<=N*exp(-cV_N) uniformly beyond a threshold depending onc. The corresponding upper bound holds for the actual ordinary reciprocal-prime sum, full odd-pivot sum and dyadic odd-pivot sum. The proof retains every reciprocal pivot weight through a fixed finite size partition. This is only the upper direction at the leading coefficient: the matching lower coefficient2 and theo(nu_N) precision in completeT19.15/EIPInput remain unproved. The fullT19.15 statement and proof in companion_sections/limits_appendix.tex lines1138-1194 were rechecked.
+
+FiniteLogarithmicPivotMass.band_cost proves the exact arithmetic inequality for a logarithmic band: its lower reciprocal-weight exponent plus the available upper-cutoff counting exponent is at least2-1/K-eta. This is the elementary inequalityx+1/x>=2 with the explicit width loss1/K. finite_mass uses the exact endpoint-retaining cover from checkpoint463. For every actual finite population, each band keeps its weight1/kappa rather than paying the full small-pivot cardinality. All band endpoints, the pivot1 and the large-pivot tail are included. Overlapping boundaries are handled by a proved nonnegative finite overcount. The finite lemma states its actual band-count premises explicitly and is not counted alone as a proof of those counts.
+
+StratifiedReciprocalUpper.uniform_upper supplies every band-count premise internally from ScaledSaddlePivotCount.uniform_population_bound. The integerK and the fixed positive margineta are selected afterc and beforeN. The finitely many band thresholds are combined by an actual finite maximum. Each band contributes at mostN*exp(-(2-1/K-eta)V_N), while the full tail is bounded by3N*exp(-3V_N). The finite cover cost and the added constant1 are absorbed into the remaining strict margin before the requestedc. No number of bands grows silently withN, and no point population or weighted target estimate is assumed.
+
+uniform_population_upper retains an arbitrary actual subset of[1,3N] under the same threshold. uniform_original_upper proves all three source upper bounds together: ordinary largest-prime reciprocals, full odd-valuation pivot reciprocals and the original dyadic sum. Their exact positive summation populations remain distinct. No ordinary EIP theorem, smooth-number census or new prime-distribution estimate is an input.
+
+This improves the internal reciprocal upper coefficient from1/9 to every fixedc<2. It does not prove a lower bound with coefficient2 and does not establish an error smaller than the existing saddle margin. The completeT19.15 reciprocal equivalent therefore remains conditional on ordinary EIPInput. The original signed forcing cost still has checkpoint462's closed internal envelopeexp(-12V_N)<=cost<=exp(-V_N/10); its sharper upper transport is subsequent work, not claimed here. General geometry, quadratic-degree BCN and optimal strong-triangle weights retain their separate unproved scopes.
+
+P1-MATH-0464 adds two modules, five theorems and no definitions. CompanionT19.15 remains conditional. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records462 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16373 jobs); direct axiom audit passed for 15287 declarations using only propext, Classical.choice and Quot.sound; all 14714 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.52 GiB.

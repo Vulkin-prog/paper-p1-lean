@@ -2692,6 +2692,8 @@ import PaperP1
 #print axioms PaperP1.FiniteExponentialProducts.norm_quadraticCorrection_le
 #print axioms PaperP1.FiniteExponentialProducts.norm_first_order_le
 #print axioms PaperP1.FiniteExponentialProducts.norm_quadratic_error_le
+#print axioms PaperP1.FiniteLogarithmicPivotMass.band_cost
+#print axioms PaperP1.FiniteLogarithmicPivotMass.finite_mass
 #print axioms PaperP1.FiniteNegativeMass.extended_nat
 #print axioms PaperP1.FiniteNegativeMass.shift_eq_extended
 #print axioms PaperP1.FiniteNegativeMass.second_shift_eq_extended
@@ -9728,6 +9730,9 @@ import PaperP1
 #print axioms PaperP1.SquareRootSignedCostUpper.uniform_sandwich
 #print axioms PaperP1.SquareRootSignedCostUpper.uniform_log_sandwich
 #print axioms PaperP1.SquareTupleCount.square_tuple_count
+#print axioms PaperP1.StratifiedReciprocalUpper.uniform_upper
+#print axioms PaperP1.StratifiedReciprocalUpper.uniform_population_upper
+#print axioms PaperP1.StratifiedReciprocalUpper.uniform_original_upper
 #print axioms PaperP1.StrongAlignedDenseJointMass.uniform_joint
 #print axioms PaperP1.StrongAlignedDensePairCount.uniform_count
 #print axioms PaperP1.StrongAlignedInteriorEdges.uniform_edges

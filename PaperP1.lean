@@ -3899,3 +3899,5 @@ public import PaperP1.Asymptotics.HardSaddleSignedCostBounds
 public import PaperP1.Analysis.LogarithmicScaleCover
 public import PaperP1.Analysis.ScaledPrimeEulerBound
 public import PaperP1.Asymptotics.ScaledSaddlePivotCount
+public import PaperP1.Analysis.FiniteLogarithmicPivotMass
+public import PaperP1.Asymptotics.StratifiedReciprocalUpper

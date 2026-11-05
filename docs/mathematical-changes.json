@@ -23175,6 +23175,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "d476aa3968ed1711c33b9c2c80e6584e4827d147"
+    },
+    {
+      "id": "P1-MATH-0464",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The internal hard-saddle upper estimate charged all small pivots at one cutoff and gave only a coarse coefficient1/9, even though sharper counts at every fixed cutoff were available.",
+      "finding": "An exact fixed finite logarithmic partition retains the reciprocal weight of each pivot band. Internal scaled counts andx+1/x>=2 yieldpivotSum(3N)+1<=N*exp(-cV_N) for every fixedc<2, without EIP.",
+      "proposed_revision": "Use the proved weighted stratification for the one-sided leading upper coefficient and state its fixed-margin threshold order. Keep the matching lower coefficient and theo(nu_N) error as distinct unresolved obligations rather than treating this upper bound as the full reciprocal equivalent.",
+      "impact": "Reaches every leading upper coefficient below2 for ordinary/full/dyadic actual reciprocal sums internally. The full fineT19.15 law remains conditional and numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.FiniteLogarithmicPivotMass.band_cost",
+        "PaperP1.FiniteLogarithmicPivotMass.finite_mass",
+        "PaperP1.StratifiedReciprocalUpper.uniform_upper",
+        "PaperP1.StratifiedReciprocalUpper.uniform_population_upper",
+        "PaperP1.StratifiedReciprocalUpper.uniform_original_upper"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16373 jobs); direct axiom audit passed for 15287 declarations using only propext, Classical.choice and Quot.sound; all 14714 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.52 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
