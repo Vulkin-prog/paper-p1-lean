@@ -3554,3 +3554,4 @@ public import PaperP1.Asymptotics.SlowGrowingPlaneDegreeCap
 public import PaperP1.Algebra.ConicNormCoordinates
 public import PaperP1.Algebra.ConicPolynomialPresentation
 public import PaperP1.Diophantine.SignedQuadraticCount
+public import PaperP1.Diophantine.PositiveDiscriminantConicCount

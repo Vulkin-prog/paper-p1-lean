@@ -20053,6 +20053,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "580709cc25db3cff4d1e212b9fcca9435d979602"
+    },
+    {
+      "id": "P1-MATH-0383",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The signed quadratic theorem and exact conic transformation had not yet been assembled into a uniform count for an actual moving-coefficient conic or its original grid.",
+      "finding": "Every controlled-height positive-discriminant conic with the displayed nonzero leading coefficient and norm constant now has an unconditional full signed N^epsilon count, including the literal polynomial-grid specialization.",
+      "proposed_revision": "Remove the remaining displayed non-degeneracy assumptions by deriving them from geometric irreducibility, and transport the actual grid through the bounded integer shear before addressing the other discriminant branches.",
+      "impact": "Closes an actual controlled-height conic counting branch using only internally proved arithmetic. Other branches, geometric non-degeneracy and BCN remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.PositiveDiscriminantConicCount.constant_mul_power",
+        "PaperP1.PositiveDiscriminantConicCount.polynomial_budget",
+        "PaperP1.PositiveDiscriminantConicCount.count",
+        "PaperP1.PositiveDiscriminantConicCount.grid_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15681 jobs); direct axiom audit passed for 14460 declarations using only propext, Classical.choice and Quot.sound; all 13778 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.71 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

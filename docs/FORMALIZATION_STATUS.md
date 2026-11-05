@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records380 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records381 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14456 audited theorem/lemma declarations**. This
+- The project currently has **14460 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25195,3 +25195,18 @@ generalized_count_le_rpow_eventually supplies the corresponding full signed boun
 P1-MATH-0382 adds six theorems and one definition. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records380 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15679 jobs); direct axiom audit passed for 14456 declarations using only propext, Classical.choice and Quot.sound; all 13774 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.72 GiB.
+
+
+## Unconditional positive-discriminant conic counts at polynomial height
+
+PositiveDiscriminantConicCount.count proves an unconditional N^epsilon bound for every actual signed integer population on a six-coefficient conic with c!=0, Delta>0 and delta!=0, uniformly whenever its coefficient sum height and original coordinate height are at most N^K for fixed K. The threshold is chosen before all coefficients, box heights and populations. No nonsquare restriction on Delta and no primitivity or coordinate-sign restriction remains.
+
+polynomial_budget proves that the actual positive norm coefficient, nonzero norm constant and both transformed coordinate bounds all lie below N^(4*K+8) once N>=2. The internally proved full signed generalized quadratic count is then applied to the literal injective transformed population. The polynomial exponent absorbs every displayed numerical constant with checked natural arithmetic.
+
+grid_count supplies the actual nested-polynomial version: every original signed grid of a polynomial with total degree at most two and outer degree two has at most N^epsilon points under the displayed positive-discriminant and nonzero-norm-constant conditions, whenever its original bivariate coefficient height and grid radius are at most N^K. The constructed six-coefficient sum height is absorbed with exponent K+3. No presentation or image-population hypothesis is supplied externally.
+
+This closes the controlled-height positive-discriminant arithmetic branch under its explicit non-degeneracy conditions. Proving those conditions from geometric irreducibility and transporting the branch through the bounded full-degree shear remain subsequent steps. Negative discriminants, parabolas, the stronger BCN property and original main13.4 remain open. No original numbered result is promoted.
+
+P1-MATH-0383 adds four theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records381 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15681 jobs); direct axiom audit passed for 14460 declarations using only propext, Classical.choice and Quot.sound; all 13778 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.71 GiB.

@@ -10366,6 +10366,10 @@ import PaperP1
 #print axioms PaperP1.PolynomialPellCount.four_mul_pellUnitOrbitEnvelope_le_rpow_eventually
 #print axioms PaperP1.PolynomialPellCount.generalizedPellBox_atMost_rpow_eventually
 #print axioms PaperP1.PolynomialPellCount.pellBox_atMost_rpow_eventually
+#print axioms PaperP1.PositiveDiscriminantConicCount.constant_mul_power
+#print axioms PaperP1.PositiveDiscriminantConicCount.polynomial_budget
+#print axioms PaperP1.PositiveDiscriminantConicCount.count
+#print axioms PaperP1.PositiveDiscriminantConicCount.grid_count
 #print axioms PaperP1.PrimitiveDenominators.dvd_product_nat
 #print axioms PaperP1.PrimitiveDenominators.dvd_product_int
 #print axioms PaperP1.PrimitiveDenominators.mem_signedDivisors
