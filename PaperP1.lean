@@ -3495,3 +3495,5 @@ public import PaperP1.Asymptotics.CompanionKernelCountsUnderHeathBrown
 public import PaperP1.Asymptotics.SharpProfilesUnderHeathBrown
 public import PaperP1.Algebra.WeightedPolynomialDeterminantDegree
 public import PaperP1.Algebra.BivariateResultantDegree
+public import PaperP1.Algebra.BivariateLinearShear
+public import PaperP1.Algebra.BivariateTotalDegreeChart

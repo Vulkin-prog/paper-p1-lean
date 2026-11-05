@@ -607,6 +607,10 @@ import PaperP1
 #print axioms PaperP1.BivariateLargeRoot.both_degrees_pos
 #print axioms PaperP1.BivariateLineGeometry.exists_linear_form
 #print axioms PaperP1.BivariateLineGeometry.points_cross
+#print axioms PaperP1.BivariateLinearShear.linear_substitution_degree
+#print axioms PaperP1.BivariateLinearShear.substitute_degree
+#print axioms PaperP1.BivariateLinearShear.shear_degree
+#print axioms PaperP1.BivariateLinearShear.shear_evaluation
 #print axioms PaperP1.BivariateRationalLines.totalDegree_zero
 #print axioms PaperP1.BivariateRationalLines.exists_coefficient_degree
 #print axioms PaperP1.BivariateRationalLines.exists_linear_form
@@ -664,6 +668,11 @@ import PaperP1
 #print axioms PaperP1.BivariateTotalDegree.exists_coefficient_degree
 #print axioms PaperP1.BivariateTotalDegree.totalDegree_le_partial
 #print axioms PaperP1.BivariateTotalDegree.totalDegree_zero
+#print axioms PaperP1.BivariateTotalDegreeChart.chart_coefficient
+#print axioms PaperP1.BivariateTotalDegreeChart.chart_X_zero
+#print axioms PaperP1.BivariateTotalDegreeChart.chart_X_one
+#print axioms PaperP1.BivariateTotalDegreeChart.chart_degree
+#print axioms PaperP1.BivariateTotalDegreeChart.chart_evaluation
 #print axioms PaperP1.BivariateWordSquares.linearProduct_monic
 #print axioms PaperP1.BivariateWordSquares.linearProduct_degree
 #print axioms PaperP1.BivariateWordSquares.linearProduct_ne_zero
