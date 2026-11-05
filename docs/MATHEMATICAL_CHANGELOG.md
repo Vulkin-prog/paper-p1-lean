@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**462 mathematical improvements and two statement-scope corrections are confirmed.**
+**463 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -25746,3 +25746,18 @@ This improves the internal reciprocal upper coefficient from1/9 to every fixedc<
 P1-MATH-0464 adds two modules, five theorems and no definitions. CompanionT19.15 remains conditional. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records462 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16373 jobs); direct axiom audit passed for 15287 declarations using only propext, Classical.choice and Quot.sound; all 14714 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.52 GiB.
+
+
+## Every strict leading upper coefficient below two for the original signed forcing cost
+
+The original specified signed forcing cost now satisfies exp(-12 V_N) <= specifiedCost N L <= exp(-c V_N) for every fixed c < 2, uniformly on each original critical band. In particular, for every epsilon > 0 the closed upper bound is exp(-(2-epsilon) V_N). The forcing, its exact source weights, the prescribed excess and the full original coordinate population are unchanged. This is the upper direction at the leading coefficient two; the matching lower coefficient and the fine o(nu_N) error in the printed T19.16 equivalent remain unproved. The source forcing, full statement and proof in companion_sections/limits_appendix.tex lines1190-1299 were rechecked.
+
+StratifiedSignedCostUpper.uniform_upper_from_profile uses the actual finite signed Palm bound from ElementarySignedCostUpper.profile_upper. After the fixed critical nominal factor K=(2^C)^2 is retained, its two terms are 12 K B^2 (pivotSum(3N)+1)/N and K N^(-5/12). For the requested c, choose c1=(c+2)/2 and a positive gap c1-c before N. Checkpoint464 supplies the actual reciprocal bound at c1. The internally proved logarithmic prefactor bound absorbs 48 K D^2 (log N)^2 into exp((c1-c) V_N); the internal power error bound absorbs the raw remainder into one quarter of exp(-2 V_N). Each term is at most one quarter of exp(-c V_N), with all finite width, positivity and threshold conditions checked.
+
+uniform_upper supplies the actual enlarged full raw-value profile internally, at exponent19/12, and uses the exact prescribed excess from SignedSaddleExcess. It assumes no Euler estimate, ordinary EIP theorem, geometric count or unproved raw profile. The intermediate finite-profile lemma keeps its profile premise explicit, while the closed original-cost wrapper proves that premise internally. The coefficient is allowed to be any real c<2, so its positive subcase needs no superfluous positivity assumption.
+
+uniform_sandwich retains the existing internal lower bound exp(-12 V_N), with one common threshold before every critical length. uniform_log_sandwich and uniform_normalized_bounds prove the corresponding exact logarithmic inequalities, including c <= -log(specifiedCost N L)/V_N <= 12. uniform_leading_upper states the epsilon form explicitly. No lower bound for dependence, total variation or signed scalar transport is inferred from this positive coordinate cost.
+
+The full companion T19.16 remains conditional only on the ordinary EIP reciprocal input for its finer printed equivalent. A leading upper coefficient arbitrarily close to two does not supply a matching lower coefficient or an o(nu_N) remainder. The general geometric inputs, full quadratic-degree BCN and optimal global triple bounds retain their distinct unresolved scopes. P1-MATH-0465 adds one module, six theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records463 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16375 jobs); direct axiom audit passed for 15293 declarations using only propext, Classical.choice and Quot.sound; all 14720 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.50 GiB.

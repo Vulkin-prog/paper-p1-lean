@@ -9733,6 +9733,12 @@ import PaperP1
 #print axioms PaperP1.StratifiedReciprocalUpper.uniform_upper
 #print axioms PaperP1.StratifiedReciprocalUpper.uniform_population_upper
 #print axioms PaperP1.StratifiedReciprocalUpper.uniform_original_upper
+#print axioms PaperP1.StratifiedSignedCostUpper.uniform_upper_from_profile
+#print axioms PaperP1.StratifiedSignedCostUpper.uniform_upper
+#print axioms PaperP1.StratifiedSignedCostUpper.uniform_sandwich
+#print axioms PaperP1.StratifiedSignedCostUpper.uniform_log_sandwich
+#print axioms PaperP1.StratifiedSignedCostUpper.uniform_normalized_bounds
+#print axioms PaperP1.StratifiedSignedCostUpper.uniform_leading_upper
 #print axioms PaperP1.StrongAlignedDenseJointMass.uniform_joint
 #print axioms PaperP1.StrongAlignedDensePairCount.uniform_count
 #print axioms PaperP1.StrongAlignedInteriorEdges.uniform_edges

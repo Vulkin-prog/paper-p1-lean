@@ -3901,3 +3901,4 @@ public import PaperP1.Analysis.ScaledPrimeEulerBound
 public import PaperP1.Asymptotics.ScaledSaddlePivotCount
 public import PaperP1.Analysis.FiniteLogarithmicPivotMass
 public import PaperP1.Asymptotics.StratifiedReciprocalUpper
+public import PaperP1.Asymptotics.StratifiedSignedCostUpper
