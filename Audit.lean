@@ -6714,6 +6714,11 @@ import PaperP1
 #print axioms PaperP1.BoundedBlockIndependentTail.uniform_blocks
 #print axioms PaperP1.BoundedBlockIndependentTail.mass_antitone
 #print axioms PaperP1.BoundedDegreeGridGraphExclusion.cutoff_lt_scale
+#print axioms PaperP1.BoundedDegreePlaneCounts.eventual_power_absorption
+#print axioms PaperP1.BoundedDegreePlaneCounts.uniform_power_bound
+#print axioms PaperP1.BoundedDegreePlaneCounts.uniform_sublinear
+#print axioms PaperP1.BoundedDegreePlaneCounts.uniform_subpower_bound
+#print axioms PaperP1.BoundedDegreePlaneCounts.uniform_subpower
 #print axioms PaperP1.BoundedFixedMomentsUnderInputs.uniform_factorial
 #print axioms PaperP1.BoundedFixedMomentsUnderInputs.uniform_ordinary
 #print axioms PaperP1.BoundedFixedMomentsUnderInputs.uniform_low

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**375 mathematical improvements and two statement-scope corrections are confirmed.**
+**376 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24351,3 +24351,16 @@ This improves the earlier unconditional intermediate exponent4/D to2/D. The stro
 P1-MATH-0377 adds seven theorems in two modules. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records375 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15669 jobs); direct axiom audit passed for 14427 declarations using only propext, Classical.choice and Quot.sound; all 13732 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.79 GiB.
+
+
+## Unconditional uniform plane sublinearity on fixed degree intervals
+
+BoundedDegreePlaneCounts proves unconditional asymptotic consequences of the internally proved plane exponent2/D+epsilon, uniformly before coefficient fields, equations and point heights on every fixed finite degree interval. uniform_power_bound uses any lower degree d>=2 and fixed upper degree M, giving one constant times H^(2/d+epsilon) for every irreducible equation with d<=degree(P)<=M over any characteristic-zero field.
+
+uniform_sublinear proves that, for every fixed M and every eta>0, one real threshold H0 works for every characteristic-zero coefficient field and irreducible equation of degree3,...,M: its actual signed integer grid has cardinality at most eta*H for all H>=H0. The proof uses the explicit intermediate exponent5/6 and an internally proved eventual real-power absorption lemma. There is no unproved BCN or other counting argument.
+
+uniform_subpower_bound and uniform_subpower choose a lower degree d depending only on the requested epsilon>0. For every fixed upper degree M, there is respectively one constant or one height threshold, independent of the field and coefficients, such that every irreducible equation with d<=degree(P)<=M has at most K*H^epsilon, or eventually H^epsilon, actual signed integer zeros. The order is epsilon -> d -> M -> constant/threshold -> height, coefficient field and equation. M is fixed before the height; no growing-degree uniformity is claimed.
+
+P1-MATH-0378 adds five theorems. The sharper degree-uniform BCN exponent1/D, the separate conic sublinearity case and original all-dimensional main13.4 remain open in this intermediate route. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records376 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15671 jobs); direct axiom audit passed for 14432 declarations using only propext, Classical.choice and Quot.sound; all 13737 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.78 GiB.
