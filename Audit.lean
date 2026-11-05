@@ -2422,6 +2422,8 @@ import PaperP1
 #print axioms PaperP1.BinaryLatticeMinimum.bounded_sublevels
 #print axioms PaperP1.BinaryLatticeMinimum.mem_integerBox
 #print axioms PaperP1.BinaryLatticeMinimum.exists_shortest
+#print axioms PaperP1.BinaryLogarithmicBudget.critical_band
+#print axioms PaperP1.BinaryLogarithmicBudget.polynomial_absorption
 #print axioms PaperP1.BinaryReductionBounds.scalar_product_bound
 #print axioms PaperP1.BinaryReductionBounds.integer_energy_lower_bound
 #print axioms PaperP1.BinaryReductionBounds.round_absolute
@@ -9486,6 +9488,9 @@ import PaperP1
 #print axioms PaperP1.WeakAlignmentUnitCount.uniform_weak_bound
 #print axioms PaperP1.WeakExactTripleMassUnderBCN.uniform_bound
 #print axioms PaperP1.WeakExactTripleMassUnderBCN.uniform_reduction
+#print axioms PaperP1.WeakGrowingDegreePlaneCount.power_cap
+#print axioms PaperP1.WeakGrowingDegreePlaneCount.scaled_power_cap
+#print axioms PaperP1.WeakGrowingDegreePlaneCount.growing_cap
 #print axioms PaperP1.WeakPairActivityAsymptotic.critical_binary_power
 #print axioms PaperP1.WeakPairActivityAsymptotic.uniform_activity
 #print axioms PaperP1.WeakPairIncidence.uniform_bound

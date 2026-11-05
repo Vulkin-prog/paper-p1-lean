@@ -21419,6 +21419,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "90d8d23e5bcce9fe8dbcade9a6d9d0c2c70a9cd0"
+    },
+    {
+      "id": "P1-MATH-0422",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:sublinear-grid",
+        "number": "13.5",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 228,
+        "statement_sha256": "ef4c221ed67d6eba27c4ceeeb16591c98447e85f2c53b4e4c6e0a2e6441f46fa"
+      },
+      "original_assumption": "Only a nonquantitative unbounded degree cap was internally available; the full source growing-degree range still relied on the unproved quadratic-degree BCN estimate.",
+      "finding": "The absolute degree-power12 theorem gives actual field-uniform o(B) counts for every cap B^(a+o(1)) with0<=a<1/12, including every fixed real box scale and the actual floor height.",
+      "proposed_revision": "Record this quantitative unconditional subrange separately from the originala<1/2 theorem. Keep the fixed small-degree threshold, uniform large-degree exponent and exact real-scale floor transport explicit.",
+      "impact": "Adds a genuine explicit growing-degree subcase without promoting the full original13.5 or any sharp rank consequence. Numbered coverage stays111/167 unconditional.",
+      "evidence": [
+        "PaperP1.BinaryLogarithmicBudget.critical_band",
+        "PaperP1.BinaryLogarithmicBudget.polynomial_absorption",
+        "PaperP1.WeakGrowingDegreePlaneCount.power_cap",
+        "PaperP1.WeakGrowingDegreePlaneCount.scaled_power_cap",
+        "PaperP1.WeakGrowingDegreePlaneCount.growing_cap"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15857 jobs); direct axiom audit passed for 14741 declarations using only propext, Classical.choice and Quot.sound; all 14092 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.72 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

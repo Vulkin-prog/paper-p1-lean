@@ -1,0 +1,13 @@
+# Quantitative sublinearity for a restricted growing-degree range
+
+Source: main13.5, main_sections/pair_rigidity.tex lines228-252. The actual real box, all-degree uniformity, upper-power cap and epsilon-before-height quantifiers are retained on the explicit restricted domain0<=a<1/12. The source full domaina<1/2 is not claimed.
+
+WeakGrowingDegreePlaneCount proves an unconditional quantitative growing-degree subcase of main13.5. For every real box scale c0>0, every0<=a<1/12, every degree cap satisfying UpperPowerCap a cap, and every epsilon>0, one threshold precedes every B, coefficient field of characteristic zero, irreducible plane equation and degree2<=D<=cap(B), and the actual signed grid in [-c0*B,c0*B]^2 has at most epsilon*B points. In particular every upper cap B^(a+o(1)) in this restricted range has a uniform o(B) count. The field needs no complex embedding.
+
+BinaryLogarithmicBudget proves the exact critical band |(log2 N+1)-log(N)/log(2)|<=1 for every naturalN>=1. It then derives the actual subpower absorption of every fixed polynomial in that binary logarithmic budget, with the coefficient and error exponent chosen before N. No unquantified dependence on D is hidden in the absorption.
+
+For the unit-scale power cap, the absolute degree-power12 estimate is split at one fixed integer M. Degrees at mostM cost a fixed coefficient times N^(1/2); larger degrees have reciprocal exponent at most(1-12a)/4. Their degree factor costs N^(12a), and the logarithmic factor costs another arbitrarily small fixed power. Both branches have one exponent strictly below1, which is absorbed into epsilon*N. M and all margins precede N and every equation.
+
+The real-scale theorem treats the actual natural floor of c0*B. A slightly larger exponent b betweena and1/12 absorbs this fixed change of scale, while exact lower and upper floor bounds preserve both the degree cap and final epsilon*B normalization. The final growing_cap theorem also retains the complete upper-power-cap quantifier order rather than assuming an exact power function.
+
+This is a genuine quantitative growing-degree consequence, stronger in rate information than the earlier nonquantitative slow-growing cap. It is not the full original main13.5: the source allows everya<1/2, while this proof only suppliesa<1/12. In particular it does not establish main13.6 or the original quadratic-degree/all-dimensional BCN property. P1-MATH-0422 adds two modules and five theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records420 improvements and two statement-scope corrections. Original source bytes remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.

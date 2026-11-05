@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+A quantitative growing-degree subcase is unconditional (P1-MATH-0422): actual plane counts are uniformly o(B) for caps B^(a+o(1)) with0<=a<1/12, every fixed real box scale and every characteristic-zero field. The full source rangea<1/2 and sharp rank theorem remain open.
+
 The weaker absolute degree-power12 plane bound now covers every characteristic-zero field, allD>=2,N>=1 and arbitrary integer point populations (P1-MATH-0421), including non-geometric equations. It still does not prove the original BCN theorem.
 
 A weaker degree-uniform plane theorem is complete (P1-MATH-0420): one absolute constant gives C*D^12*(log2 N+1)^4*N^(1/D), uniformly in coefficients for2<=D<=N. The original D^2 logarithmic/all-dimensional BCN theorem and its sharp rank consequences remain open.
@@ -37,7 +39,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is111/167 unconditional and53 conditional (164/167 completed). The project records419 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is111/167 unconditional and53 conditional (164/167 completed). The project records420 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -156,7 +158,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14736 audited theorem/lemma declarations**. This
+- The project currently has **14741 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25800,3 +25802,18 @@ The former restrictionD<=N is also removed. IfD>N, the entire integer box has at
 This extends the weaker degree-power12 theorem; it does not establish main13.4, whose original quadratic degree power and arbitrary ambient dimension remain open. The full source growing-degree sublinearity rangea<1/2 and the half-window nonalignment consequence are not inferred. P1-MATH-0421 adds one module, six theorems and one profile definition. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records419 improvements and two statement-scope corrections. Original manuscript bytes remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15853 jobs); direct axiom audit passed for 14736 declarations using only propext, Classical.choice and Quot.sound; all 14087 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.74 GiB.
+
+
+## Quantitative sublinearity for a restricted growing-degree range
+
+WeakGrowingDegreePlaneCount proves an unconditional quantitative growing-degree subcase of main13.5. For every real box scale c0>0, every0<=a<1/12, every degree cap satisfying UpperPowerCap a cap, and every epsilon>0, one threshold precedes every B, coefficient field of characteristic zero, irreducible plane equation and degree2<=D<=cap(B), and the actual signed grid in [-c0*B,c0*B]^2 has at most epsilon*B points. In particular every upper cap B^(a+o(1)) in this restricted range has a uniform o(B) count. The field needs no complex embedding.
+
+BinaryLogarithmicBudget proves the exact critical band |(log2 N+1)-log(N)/log(2)|<=1 for every naturalN>=1. It then derives the actual subpower absorption of every fixed polynomial in that binary logarithmic budget, with the coefficient and error exponent chosen before N. No unquantified dependence on D is hidden in the absorption.
+
+For the unit-scale power cap, the absolute degree-power12 estimate is split at one fixed integer M. Degrees at mostM cost a fixed coefficient times N^(1/2); larger degrees have reciprocal exponent at most(1-12a)/4. Their degree factor costs N^(12a), and the logarithmic factor costs another arbitrarily small fixed power. Both branches have one exponent strictly below1, which is absorbed into epsilon*N. M and all margins precede N and every equation.
+
+The real-scale theorem treats the actual natural floor of c0*B. A slightly larger exponent b betweena and1/12 absorbs this fixed change of scale, while exact lower and upper floor bounds preserve both the degree cap and final epsilon*B normalization. The final growing_cap theorem also retains the complete upper-power-cap quantifier order rather than assuming an exact power function.
+
+This is a genuine quantitative growing-degree consequence, stronger in rate information than the earlier nonquantitative slow-growing cap. It is not the full original main13.5: the source allows everya<1/2, while this proof only suppliesa<1/12. In particular it does not establish main13.6 or the original quadratic-degree/all-dimensional BCN property. P1-MATH-0422 adds two modules and five theorems. Coverage stays111 proved,53 conditional and3 in_progress out of167, with164 completed. The project records420 improvements and two statement-scope corrections. Original source bytes remain unchanged. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15857 jobs); direct axiom audit passed for 14741 declarations using only propext, Classical.choice and Quot.sound; all 14092 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.72 GiB.
