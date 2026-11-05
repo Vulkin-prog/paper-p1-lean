@@ -1,5 +1,7 @@
 # Formalization status
 
+P1-MATH-0537 proves the original real integer-box high-degree count C*D^2*(Nat.log2(N)+1)^17, with actual polynomial dilation, preserved degree/irreducibility and internally chosen k=Nat.log2(2*N)+1. Complementary low-degree combination and arbitrary-field scalar transport remain separate.
+
 P1-MATH-0536 proves the complete global quadratic-degree normalized-grid count forlog(N)<=k<D, with all component geometry and analytic inputs internal. Original integer-box rescaling, logarithmic-order selection, low-degree combination and field-uniform arithmetic descent remain separate.
 
 P1-MATH-0535 proves the actual first-orientation regular component-family bound E.card+D*(2*D+4), including constructed closure minima, complete endpoint classification and regular exceptional-point incidence. Second-orientation transport and global grid assembly remain separate.
@@ -114,7 +116,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records534 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records535 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -233,7 +235,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16022 audited theorem/lemma declarations**. This
+- The project currently has **16036 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27806,3 +27808,20 @@ The complete real geometric summation step is now closed in the normalized high-
 P1-MATH-0536 adds five modules, eighteen theorems and three definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 534 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16851 jobs); direct axiom audit passed for 16022 declarations using only propext, Classical.choice and Quot.sound; all 15597 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.57 GiB.
+
+
+## Original integer-box rescaling and fixed logarithmic high-degree count
+
+UniformPolynomialDilation constructs the actual uniform coordinate substitution P(c*x), its algebra automorphism for nonzero c, exact total-degree preservation and irreducibility preservation. Evaluation at the normalized point z/(2*N) is proved to equal the original polynomial evaluation at z. This provides an actual equation for the rescaled population, rather than assuming rescaling preserves the curve data.
+
+QuadraticNormalizedGridBudget simplifies the internally proved global normalized-grid estimate to 300000*exp(4)*D^2*(Nat.log2(2*N)+1)*(k+1)^16. The singular/boundary budget, exceptional budget and component scale are combined by proved inequalities, retaining a genuinely quadratic degree power.
+
+QuadraticRealIntegerGridCount transports every finite integer-vector population in the original closed box |z_i|<=N to the open unit box by dividing coordinates by 2*N. The actual map is injective; its image has exactly the original cardinality, lies on the normalized integer grid and vanishes on the constructed irreducible polynomial of the same degree. Applying the normalized theorem proves the original-box high-degree estimate, with no supplied rescaling, finite cover or population count.
+
+LogarithmicQuadraticPlaneParameters proves exact doubling and quadrupling identities for the binary logarithmic budget L(N)=Nat.log2(N)+1. It chooses k=L(2*N), proves log(2*N)<=k and bounds the remaining logarithmic factors by 3^17*L(N)^17. For every irreducible real plane polynomial with L(2*N)<D, every original finite integer-box population therefore has cardinality at most (300000*exp(4)*3^17)*D^2*L(N)^17. The coefficient- and degree-uniform constant is explicit, and the order k is internally chosen.
+
+The high-degree original real integer-box count is now complete. Combining the complementary low-degree range with the previously proved cubic arithmetic estimate, transporting between actual multivariate and nested-polynomial coordinates, and scalar descent to arbitrary characteristic-zero coefficient fields remain separate. Main13.4/13.5 are not yet promoted; the published all-field global theorem remains cubic with a<1/3.
+
+P1-MATH-0537 adds four modules, fourteen theorems and three definitions. No numbered result is promoted. Coverage stays 161 proved, 3 conditional and 3 in_progress out of 167, with 164 completed. The project records 535 improvements and two P1 statement-scope corrections; the external BCN recurrence sign erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16859 jobs); direct axiom audit passed for 16036 declarations using only propext, Classical.choice and Quot.sound; all 15614 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.54 GiB.

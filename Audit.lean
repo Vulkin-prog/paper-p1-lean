@@ -2375,6 +2375,12 @@ import PaperP1
 #print axioms PaperP1.TwoParameterQuotientGenerators.piece_finrank_of_zero
 #print axioms PaperP1.TwoVariableGradedHilbert.exists_polynomial_of_generators
 #print axioms PaperP1.TwoVariableGradedHilbert.exists_polynomial_of_finite
+#print axioms PaperP1.UniformPolynomialDilation.substitute_one
+#print axioms PaperP1.UniformPolynomialDilation.substitute_mul
+#print axioms PaperP1.UniformPolynomialDilation.evaluation
+#print axioms PaperP1.UniformPolynomialDilation.degree_le
+#print axioms PaperP1.UniformPolynomialDilation.degree
+#print axioms PaperP1.UniformPolynomialDilation.irreducible
 #print axioms PaperP1.UniformRationalInterpolation.exists_integral_presentation
 #print axioms PaperP1.UniformRationalInterpolation.scalar_degree_eq
 #print axioms PaperP1.UniformRationalInterpolation.integral_point_of_scalar
@@ -3169,6 +3175,8 @@ import PaperP1
 #print axioms PaperP1.PrimitiveTailScaling.scaled_geometric_bound
 #print axioms PaperP1.PrimitiveTailScaling.scaled_series_bound
 #print axioms PaperP1.PrimitiveTailScaling.remaining_order_budget
+#print axioms PaperP1.QuadraticNormalizedGridBudget.budget
+#print axioms PaperP1.QuadraticNormalizedGridBudget.point_count
 #print axioms PaperP1.QuadraticNormalizedGridCount.componentScale_nonneg
 #print axioms PaperP1.QuadraticNormalizedGridCount.point_count_with_exceptional_set
 #print axioms PaperP1.QuadraticNormalizedGridCount.point_count
@@ -5242,6 +5250,10 @@ import PaperP1
 #print axioms PaperP1.LogarithmicPrimeCount.prime_supports_uniformSubpolynomial
 #print axioms PaperP1.LogarithmicPrimeCount.smooth_support_count_le_rpow_eventually
 #print axioms PaperP1.LogarithmicPrimeCover.uniform_pool
+#print axioms PaperP1.LogarithmicQuadraticPlaneParameters.doubling
+#print axioms PaperP1.LogarithmicQuadraticPlaneParameters.quadrupling
+#print axioms PaperP1.LogarithmicQuadraticPlaneParameters.logarithmic_factors
+#print axioms PaperP1.LogarithmicQuadraticPlaneParameters.high_degree_count
 #print axioms PaperP1.MangoldtFloorBudget.log_eq_bounded_divisor_sum
 #print axioms PaperP1.MangoldtFloorBudget.factorial_log_floor_identity
 #print axioms PaperP1.MangoldtFloorBudget.division_error
@@ -6098,6 +6110,8 @@ import PaperP1
 #print axioms PaperP1.QuadraticIntervalGrid.grid_error
 #print axioms PaperP1.QuadraticIntervalGrid.quadratic_grid_error
 #print axioms PaperP1.QuadraticIntervalGrid.scaled_center_error
+#print axioms PaperP1.QuadraticRealIntegerGridCount.normalize_injective
+#print axioms PaperP1.QuadraticRealIntegerGridCount.high_degree_count
 #print axioms PaperP1.RankinSmallKernel.truncatedKernel_eq_floor
 #print axioms PaperP1.RankinSmallKernel.mem_values
 #print axioms PaperP1.RankinSmallKernel.values_eq_natural

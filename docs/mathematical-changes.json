@@ -26034,6 +26034,49 @@
         "status": "not_integrated"
       },
       "validation_commit": "55806dc2c494295f0c140c2810b1c1a561785301"
+    },
+    {
+      "id": "P1-MATH-0537",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The global quadratic estimate was proved only on a normalized real grid with a supplied admissible auxiliary order k. Exact original-box transport and a fixed logarithmic choice remained missing.",
+      "finding": "Actual polynomial dilation and injective integer-grid normalization preserve degree and irreducibility, and the internal choice k=L(2*N) yields an explicit quadratic D^2*L(N)^17 high-degree bound on the original closed box.",
+      "proposed_revision": "Use the proved original-box high-degree estimate with its exact logarithmic order. Combine the complementary low-degree arithmetic range and field descent before claiming the complete sharp plane theorem.",
+      "impact": "Closes rescaling and logarithmic order selection without coefficient dependence. The remaining plane assembly is low-degree arithmetic and scalar transport.",
+      "evidence": [
+        "PaperP1.UniformPolynomialDilation.substitute_one",
+        "PaperP1.UniformPolynomialDilation.substitute_mul",
+        "PaperP1.UniformPolynomialDilation.evaluation",
+        "PaperP1.UniformPolynomialDilation.degree_le",
+        "PaperP1.UniformPolynomialDilation.degree",
+        "PaperP1.UniformPolynomialDilation.irreducible",
+        "PaperP1.QuadraticNormalizedGridBudget.budget",
+        "PaperP1.QuadraticNormalizedGridBudget.point_count",
+        "PaperP1.LogarithmicQuadraticPlaneParameters.doubling",
+        "PaperP1.LogarithmicQuadraticPlaneParameters.quadrupling",
+        "PaperP1.LogarithmicQuadraticPlaneParameters.logarithmic_factors",
+        "PaperP1.LogarithmicQuadraticPlaneParameters.high_degree_count",
+        "PaperP1.QuadraticRealIntegerGridCount.normalize_injective",
+        "PaperP1.QuadraticRealIntegerGridCount.high_degree_count",
+        "PaperP1.UniformPolynomialDilation.substitute",
+        "PaperP1.UniformPolynomialDilation.equiv",
+        "PaperP1.QuadraticRealIntegerGridCount.normalize"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16859 jobs); direct axiom audit passed for 16036 declarations using only propext, Classical.choice and Quot.sound; all 15614 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.54 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

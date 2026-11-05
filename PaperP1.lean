@@ -4117,3 +4117,7 @@ public import PaperP1.Analysis.RegularComponentPopulationAssembly
 public import PaperP1.Analysis.RegularRegionCoordinateSwap
 public import PaperP1.Analysis.SecondRegularComponentFamilyBound
 public import PaperP1.Topology.FiniteComponentRepresentatives
+public import PaperP1.Algebra.UniformPolynomialDilation
+public import PaperP1.Analysis.QuadraticNormalizedGridBudget
+public import PaperP1.Arithmetic.LogarithmicQuadraticPlaneParameters
+public import PaperP1.Arithmetic.QuadraticRealIntegerGridCount
