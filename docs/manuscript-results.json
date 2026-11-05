@@ -9462,7 +9462,8 @@
           "scope": "Both exact main15.10 conclusions; literal third absolute activity left symbolic, incompatible exponent3/2 from coarse higher activity and actual pair deficit. No general geometric property is asserted.",
           "checkpoint": "P1-MATH-0432"
         }
-      ]
+      ],
+      "validation_commit": "ecdae4b97257315c61197c17b44ca991ffb8fb4e"
     },
     {
       "label": "p13:transfer:anchor-budgets",
