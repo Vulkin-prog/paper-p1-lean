@@ -2825,6 +2825,9 @@ import PaperP1
 #print axioms PaperP1.LocalLinearIndependence.mono
 #print axioms PaperP1.LocalLinearIndependence.first_nonzero
 #print axioms PaperP1.LocalLinearIndependence.normalized_independent
+#print axioms PaperP1.LocalRegularTangentPiece.exists_trajectory
+#print axioms PaperP1.LocalRegularTangentPiece.exists_regular_piece
+#print axioms PaperP1.LocalRegularTangentPiece.exists_piece_at_nonsingular
 #print axioms PaperP1.LocalWronskianNonvanishing.exists_nonzero
 #print axioms PaperP1.LocalWronskianNonvanishing.exists_on_subinterval
 #print axioms PaperP1.LogarithmicAbelWindow.weight_nonneg
@@ -2864,6 +2867,8 @@ import PaperP1
 #print axioms PaperP1.MovingLogarithmicPivotMass.interval_cover
 #print axioms PaperP1.MovingLogarithmicPivotMass.exponential_cover
 #print axioms PaperP1.MovingLogarithmicPivotMass.finite_mass
+#print axioms PaperP1.NonsingularMonomialPieces.exists_nonexceptional_piece
+#print axioms PaperP1.NonsingularMonomialPieces.exists_counting_piece
 #print axioms PaperP1.NonstationaryTangentImage.continuousOn_position
 #print axioms PaperP1.NonstationaryTangentImage.image_nontrivial
 #print axioms PaperP1.NonstationaryTangentImage.image_infinite
@@ -2903,6 +2908,8 @@ import PaperP1
 #print axioms PaperP1.PolynomialTangentTrajectory.velocity_contDiffOn
 #print axioms PaperP1.PolynomialTangentTrajectory.contDiffOn_trajectory
 #print axioms PaperP1.PolynomialTestTruncation.test_bound
+#print axioms PaperP1.PolynomialVelocitySmooth.contDiff_eval
+#print axioms PaperP1.PolynomialVelocitySmooth.contDiff_velocity
 #print axioms PaperP1.PositiveFractionCostNormalization.with_errors
 #print axioms PaperP1.PowerSeriesTail.weight_nonneg
 #print axioms PaperP1.PowerSeriesTail.tailTerm_nonneg

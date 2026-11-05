@@ -4014,3 +4014,6 @@ public import PaperP1.Analysis.NonstationaryTangentImage
 public import PaperP1.Algebra.TotalDegreeMonomialFamily
 public import PaperP1.Analysis.MonomialCurvePieceCount
 public import PaperP1.Analysis.MonomialWronskianExceptions
+public import PaperP1.Analysis.LocalRegularTangentPiece
+public import PaperP1.Analysis.NonsingularMonomialPieces
+public import PaperP1.Analysis.PolynomialVelocitySmooth

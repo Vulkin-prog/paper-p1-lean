@@ -24748,6 +24748,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "37c90b7e88e876cb7d7266ec02f1290d2379a2b6"
+    },
+    {
+      "id": "P1-MATH-0505",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The concrete monomial exceptional and one-piece counts still required a supplied genuine regular tangent interval. Local existence at an actual nonsingular point had not yet been internally constructed.",
+      "finding": "The actual smooth polynomial ODE constructs a regular piece at every nonsingular point, and a further interval restriction avoids the finite Wronskian exceptions and supplies the complete simultaneous local polynomial zero bound.",
+      "proposed_revision": "Use the constructed pointwise local counting pieces, chosen before all tested polynomials, and retain global interval-number, decomposition and parametrization obligations separately.",
+      "impact": "Removes the given-piece premise from local counting at actual nonsingular nonexceptional points using kernel-checked pinned Mathlib ODE existence. Full global BCN remains open.",
+      "evidence": [
+        "PaperP1.LocalRegularTangentPiece.exists_trajectory",
+        "PaperP1.LocalRegularTangentPiece.exists_regular_piece",
+        "PaperP1.LocalRegularTangentPiece.exists_piece_at_nonsingular",
+        "PaperP1.NonsingularMonomialPieces.exists_nonexceptional_piece",
+        "PaperP1.NonsingularMonomialPieces.exists_counting_piece",
+        "PaperP1.PolynomialVelocitySmooth.contDiff_eval",
+        "PaperP1.PolynomialVelocitySmooth.contDiff_velocity"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16617 jobs); direct axiom audit passed for 15684 declarations using only propext, Classical.choice and Quot.sound; all 15182 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.60 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
