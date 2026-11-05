@@ -33491,7 +33491,8 @@
           "scope": "Both exact T17.5 full-original-law assertions, strengthened from exponent4/5 to1. No optimal4/3 law bound or general geometric property is asserted.",
           "checkpoint": "P1-MATH-0434"
         }
-      ]
+      ],
+      "validation_commit": "cba94c7aa6474483885bca1699ec926c05682017"
     },
     {
       "label": "p1:limits:lattice",
