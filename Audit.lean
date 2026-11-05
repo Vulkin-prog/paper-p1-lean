@@ -10209,6 +10209,15 @@ import PaperP1
 #print axioms PaperP1.ActualIntegerSourceEquation.factor_population_value
 #print axioms PaperP1.ActualLinearFactorCount.uniform_count
 #print axioms PaperP1.ActualSecondLinearFactorCount.uniform_count
+#print axioms PaperP1.AffineMonomialDeterminant.weight_sum_twice
+#print axioms PaperP1.AffineMonomialDeterminant.determinant_bound
+#print axioms PaperP1.AffineMonomialDeterminant.indexed_divisor
+#print axioms PaperP1.AffineMonomialDeterminant.vanishing
+#print axioms PaperP1.AffineSmoothClassAuxiliary.minor_vanishing
+#print axioms PaperP1.AffineSmoothClassAuxiliary.exists_coefficients
+#print axioms PaperP1.AffineSmoothClassAuxiliary.exists_auxiliary
+#print axioms PaperP1.AffineSmoothClassPointCount.common_points_card
+#print axioms PaperP1.AffineSmoothClassPointCount.smooth_class_card
 #print axioms PaperP1.BidegreeOneCurveCount.integer_box_floor
 #print axioms PaperP1.BidegreeOneCurveCount.mem_realSolutions
 #print axioms PaperP1.BidegreeOneCurveCount.integer_coefficient_bound

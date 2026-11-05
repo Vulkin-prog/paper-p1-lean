@@ -3573,3 +3573,6 @@ public import PaperP1.Diophantine.UnrestrictedGeometricConicCount
 public import PaperP1.Diophantine.UnrestrictedParabolicConicCount
 public import PaperP1.Arithmetic.FieldConicCount
 public import PaperP1.Asymptotics.NonlinearPlaneDegreeCap
+public import PaperP1.Diophantine.AffineMonomialDeterminant
+public import PaperP1.Diophantine.AffineSmoothClassAuxiliary
+public import PaperP1.Diophantine.AffineSmoothClassPointCount
