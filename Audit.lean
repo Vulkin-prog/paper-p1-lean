@@ -5490,6 +5490,7 @@ import PaperP1
 #print axioms PaperP1.NonanchorPivotSelection.pivot_le_of_ordinary
 #print axioms PaperP1.NonanchorPivotSelection.exists_nonanchor
 #print axioms PaperP1.NonanchorPivotSelection.exists_selector
+#print axioms PaperP1.NormalizedCurveProjectionCount.population_bound
 #print axioms PaperP1.NormalizedDefectSources.value_injective
 #print axioms PaperP1.NormalizedDefectSources.value_bounds
 #print axioms PaperP1.NormalizedDefectSources.defect_sources_card
@@ -6179,6 +6180,10 @@ import PaperP1
 #print axioms PaperP1.ProjectiveFactorCoefficients.projective_coefficient_swap
 #print axioms PaperP1.ProjectiveFactorCoefficients.coefficient_homogeneous
 #print axioms PaperP1.ProjectiveFactorCoefficients.height_iff
+#print axioms PaperP1.QuadraticAllDegreePlaneCount.grid_count
+#print axioms PaperP1.QuadraticAllDegreePlaneCount.finite_count
+#print axioms PaperP1.QuadraticAllDegreePlaneCount.constant_pos
+#print axioms PaperP1.QuadraticAllDegreePlaneCount.grid_le
 #print axioms PaperP1.QuadraticDegreeUniformFieldCount.degree_square_le_profile
 #print axioms PaperP1.QuadraticDegreeUniformFieldCount.rational_geometric_count
 #print axioms PaperP1.QuadraticDegreeUniformFieldCount.rational_count
@@ -12255,6 +12260,9 @@ import PaperP1
 #print axioms PaperP1.FiniteCurvePrimitiveCoordinate.exists_coordinate
 #print axioms PaperP1.GradedVeroneseProj.map_isIso
 #print axioms PaperP1.GradedVeroneseProj.iso_hom
+#print axioms PaperP1.IntegerCurveProjectionCoordinates.evaluation_coordinates
+#print axioms PaperP1.IntegerCurveProjectionCoordinates.points_equal
+#print axioms PaperP1.IntegerCurveProjectionCount.population
 #print axioms PaperP1.LinearPlaneImage.coordinates_mem
 #print axioms PaperP1.LinearPlaneImage.ideal_homogeneous
 #print axioms PaperP1.LinearPlaneImage.ideal_prime

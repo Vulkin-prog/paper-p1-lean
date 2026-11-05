@@ -116,7 +116,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records550 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records551 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -235,7 +235,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16200 audited theorem/lemma declarations**. This
+- The project currently has **16208 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -28080,3 +28080,22 @@ The actual affine plane equation and integer linear height transport are now int
 P1-MATH-0552 adds three modules, eighteen theorems and five definitions. The project records 550 improvements and two P1 statement-scope corrections. The external BCN recurrence erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced. Ubuntu free space remains about 6.54 GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (16987 jobs); direct axiom audit passed for 16200 declarations using only propext, Classical.choice and Quot.sound; all 15800 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.54 GiB.
+
+
+## Actual normalized integer curve projection count with direct quadratic exceptional budget
+
+IntegerCurveProjectionCoordinates defines the literal two quotient parameters (the original chart coordinate and the first bounded integer linear form) and the literal primitive original coordinate given by the second bounded integer linear form. Evaluation of the three actual plane-image coordinates at every original normalized integer point is proved equal to the two actual integer coordinate sums and one. The actual derivative conductor, compatible genuine fraction fields and primitive-coordinate property then prove equality of original integer source points whenever their actual projected pairs agree and the derivative evaluates nonzero.
+
+IntegerCurveProjectionCount assembles the actual algebraic geometry into a count of the original source population. Actual finite injective two-parameter normalization and its actual rank d, together with the actual primitive coordinate, produce the genuine image Hilbert polynomial internally. The specific monic affine minimal plane equation is irreducible and has actual total degree d. The same actual minimal equation supplies a nonzero original-source derivative in the genuine degree-(d-1) homogeneous quotient piece. A representative of that actual derivative is extracted in its original homogeneous degree.
+
+The original finite integer population is partitioned by vanishing of this actual derivative representative. The internally proved original-source homogeneous section theorem bounds its bad population directly by (d-1)*d. Equality of the literal projected integer pairs determines every original good source point. Every projected pair lies on the specific actual affine equation, and its actual integer heights are at most n*B*H. Thus the original source cardinal is bounded by the actual plane-grid cardinal at that height plus (d-1)*d. Neither a fibre-cardinality, exceptional-population or projected-solution assertion is supplied as an input.
+
+QuadraticAllDegreePlaneCount extends the already internally proved absolute quadratic-degree plane bound to every positive degree, including lines, over every characteristic-zero field. It selects a fixed positive plane constant separately at each Lean type universe, uniformly for every coefficient field within that universe; the actual field, coefficients, degree and height are quantified after the constant. This retains universality across all actual coefficient fields and is not a field-dependent constant selection.
+
+NormalizedCurveProjectionCount applies that proved absolute plane count and absorbs the actual source derivative population into the same profile. For every actual finite injective rank-d normalization and actual primitive original integer linear coordinate with coefficient bound B, the original normalized integer source population is at most (C+1)*d^2*logarithmicBudget(n*B*H)^17*(n*B*H)^(1/d), with the same fixed absolute C. The actual original Hilbert degree, genuine quotient, actual scalar towers, coefficient bounds and integer height remain explicit.
+
+The counting reduction for actual normalization data is internal. Selecting and packaging all compatible genuine fraction-field towers, absorbing the bounded polynomial-in-d height cost into a constant depending only on ambient dimension, and removing the algebraic-closure restriction from bounded-normalization selection remain separate. Main13.4 is not promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. Main13.5 stays internally proved and companionT1.7/T19.17 remain unresolved.
+
+P1-MATH-0553 adds four modules, eight theorems and three definitions. The project records 551 improvements and two P1 statement-scope corrections; the external BCN recurrence erratum stays separate. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced. Ubuntu free space remains about 6.51 GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (16995 jobs); direct axiom audit passed for 16208 declarations using only propext, Classical.choice and Quot.sound; all 15811 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.51 GiB.

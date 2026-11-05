@@ -26669,6 +26669,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "0d47b6529404d7a9e9bb1a8690b6b1a88f85a791"
+    },
+    {
+      "id": "P1-MATH-0553",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The actual affine equation, derivative section budget and good-fibre evaluation separation were established separately, but no bound on the original integer source population had yet combined these actual objects.",
+      "finding": "The actual original normalized integer curve population is bounded by its actual irreducible degree-d affine plane grid at height n*B*H plus (d-1)*d; the proved all-degree absolute plane count absorbs the exceptional source population into the same quadratic-degree profile.",
+      "proposed_revision": "Present the original-source derivative partition, literal good-source integer projection injection and the resulting universal plane profile before the final dimension-dependent height absorption and scalar descent.",
+      "impact": "Closes the actual integer source-to-plane counting assembly without assuming an exceptional count, good-fibre point injection, image degree or projected-equation solution property.",
+      "evidence": [
+        "PaperP1.NormalizedCurveProjectionCount.population_bound",
+        "PaperP1.QuadraticAllDegreePlaneCount.grid_count",
+        "PaperP1.QuadraticAllDegreePlaneCount.finite_count",
+        "PaperP1.QuadraticAllDegreePlaneCount.constant_pos",
+        "PaperP1.QuadraticAllDegreePlaneCount.grid_le",
+        "PaperP1.IntegerCurveProjectionCoordinates.evaluation_coordinates",
+        "PaperP1.IntegerCurveProjectionCoordinates.points_equal",
+        "PaperP1.IntegerCurveProjectionCount.population",
+        "PaperP1.QuadraticAllDegreePlaneCount.constant",
+        "PaperP1.IntegerCurveProjectionCoordinates.parameters",
+        "PaperP1.IntegerCurveProjectionCoordinates.primitive"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16995 jobs); direct axiom audit passed for 16208 declarations using only propext, Classical.choice and Quot.sound; all 15811 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.51 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -4173,3 +4173,7 @@ public import PaperP1.Geometry.QuotientPointEvaluation
 public import PaperP1.Algebra.MonicPlaneAffineChart
 public import PaperP1.Arithmetic.IntegerLinearPlaneProjection
 public import PaperP1.Geometry.LinearPlaneImageAffineEquation
+public import PaperP1.Arithmetic.NormalizedCurveProjectionCount
+public import PaperP1.Arithmetic.QuadraticAllDegreePlaneCount
+public import PaperP1.Geometry.IntegerCurveProjectionCoordinates
+public import PaperP1.Geometry.IntegerCurveProjectionCount
