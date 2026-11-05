@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**353 mathematical improvements and two statement-scope corrections are confirmed.**
+**354 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24063,3 +24063,16 @@ This closes the complete fixed-prime counting argument. No prime-cover, residue-
 P1-MATH-0355 adds seven theorems and the two literal integer and residue definitions. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records353 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. The global sharp b>=2 input and main13.4 remain open; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15621 jobs); direct axiom audit passed for 14305 declarations using only propext, Classical.choice and Quot.sound; all 13595 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.11 GiB.
+
+
+## Actual zero prime-obstruction population including axes and critical points
+
+ProjectivePrimeExceptions.exceptional_card proves that the actual signed primitive source population with zero denominator-times-projective-derivative integer has cardinality at most4*(degreeY G+1)+4*(degreeX G+1)+8*degreeX G*(degreeY G)^2 for geometrically irreducible G of positive partial degrees. The bound is independent of coordinate heights and coefficients, and no axis or critical point is silently excluded.
+
+first_axis_card bounds all first-denominator zero points using the exact primitive axis representatives and the proved nonzero projective-fibre count. second_axis_card transports that argument through the actual pair exchange and geometric irreducibility. critical_card handles the two nonzero denominator case using the proved rational critical-point bound, with an explicit projective-to-affine identification for the actual derivative polynomial. zero_product_card covers the full original finite set by these three actual populations and adds their bounds. exceptional is the literal filter where the obstruction integer is zero.
+
+This completes the exceptional-population part of the prime-avoidance construction. Its remaining nonzero obstruction integers still need an explicit uniform height bound before applying the constructed dyadic prime family. The final scale and exponent choices also remain open.
+
+P1-MATH-0356 adds five theorems and one exceptional finite-set definition. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records354 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. The global sharp b>=2 input and main13.4 remain open; Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15623 jobs); direct axiom audit passed for 14310 declarations using only propext, Classical.choice and Quot.sound; all 13601 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.10 GiB.

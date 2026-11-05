@@ -11,7 +11,7 @@ Companion T1.5 is complete conditionally on the same geometric Heath-Brown bifor
 
 Companion T1.4 is complete conditionally on HeathBrownBiformInput.Input. NonGeometricBiformInput.Input and the sufficient rational-singularity implication are internally proved with the exact constant8*a*b^2 (P1-MATH-0330). The actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are included. Every source-specific determinant and counting prerequisite is internally proved. The geometric Heath-Brown ordinary input remains unproved. The three incomplete original numbered results are main13.4 and companionT1.10,T5.1. See P1-MATH-0302.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records353 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is89/167 unconditional and75 conditional (164/167 completed). The project records354 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14305 audited theorem/lemma declarations**. This
+- The project currently has **14310 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24840,3 +24840,16 @@ This closes the complete fixed-prime counting argument. No prime-cover, residue-
 P1-MATH-0355 adds seven theorems and the two literal integer and residue definitions. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records353 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. The global sharp b>=2 input and main13.4 remain open; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15621 jobs); direct axiom audit passed for 14305 declarations using only propext, Classical.choice and Quot.sound; all 13595 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.11 GiB.
+
+
+## Actual zero prime-obstruction population including axes and critical points
+
+ProjectivePrimeExceptions.exceptional_card proves that the actual signed primitive source population with zero denominator-times-projective-derivative integer has cardinality at most4*(degreeY G+1)+4*(degreeX G+1)+8*degreeX G*(degreeY G)^2 for geometrically irreducible G of positive partial degrees. The bound is independent of coordinate heights and coefficients, and no axis or critical point is silently excluded.
+
+first_axis_card bounds all first-denominator zero points using the exact primitive axis representatives and the proved nonzero projective-fibre count. second_axis_card transports that argument through the actual pair exchange and geometric irreducibility. critical_card handles the two nonzero denominator case using the proved rational critical-point bound, with an explicit projective-to-affine identification for the actual derivative polynomial. zero_product_card covers the full original finite set by these three actual populations and adds their bounds. exceptional is the literal filter where the obstruction integer is zero.
+
+This completes the exceptional-population part of the prime-avoidance construction. Its remaining nonzero obstruction integers still need an explicit uniform height bound before applying the constructed dyadic prime family. The final scale and exponent choices also remain open.
+
+P1-MATH-0356 adds five theorems and one exceptional finite-set definition. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records354 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. The global sharp b>=2 input and main13.4 remain open; Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15623 jobs); direct axiom audit passed for 14310 declarations using only propext, Classical.choice and Quot.sound; all 13601 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.10 GiB.

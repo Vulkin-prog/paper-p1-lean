@@ -19145,6 +19145,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "e87917d49c058bf663c502c57214a33b6db03f7e"
+    },
+    {
+      "id": "P1-MATH-0356",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:reuss",
+        "number": "T1.4",
+        "page": 6,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 139,
+        "statement_sha256": "fb662a1d5ab5e605f53d3e8c90093d96c77b1157614bf68fc134d4487283c89b"
+      },
+      "original_assumption": "Prime avoidance applies only when the literal denominator-times-projective-derivative integer is nonzero; the zero population still required a coefficient-independent count including both axes.",
+      "finding": "All zero obstruction points are bounded by4*(degreeY G+1)+4*(degreeX G+1)+8*degreeX G*(degreeY G)^2, combining exact axis fibres and actual rational critical points.",
+      "proposed_revision": "Retain this explicit degree-only exceptional term, bound every remaining nonzero obstruction integer, and apply the proved uniform dyadic prime avoidance construction.",
+      "impact": "Closes all zero-obstruction exceptions on the actual signed primitive population. Obstruction height and final sharp prime-scale assembly remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.ProjectivePrimeExceptions.first_axis_card",
+        "PaperP1.ProjectivePrimeExceptions.second_axis_card",
+        "PaperP1.ProjectivePrimeExceptions.critical_card",
+        "PaperP1.ProjectivePrimeExceptions.zero_product_card",
+        "PaperP1.ProjectivePrimeExceptions.exceptional_card",
+        "PaperP1.ProjectivePrimeExceptions.exceptional"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15623 jobs); direct axiom audit passed for 14310 declarations using only propext, Classical.choice and Quot.sound; all 13601 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.10 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

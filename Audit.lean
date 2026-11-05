@@ -10263,6 +10263,11 @@ import PaperP1
 #print axioms PaperP1.ProjectiveDeterminantVanishing.determinant_bound
 #print axioms PaperP1.ProjectiveDeterminantVanishing.zero_of_dvd_small
 #print axioms PaperP1.ProjectiveDeterminantVanishing.vanishing
+#print axioms PaperP1.ProjectivePrimeExceptions.first_axis_card
+#print axioms PaperP1.ProjectivePrimeExceptions.second_axis_card
+#print axioms PaperP1.ProjectivePrimeExceptions.critical_card
+#print axioms PaperP1.ProjectivePrimeExceptions.zero_product_card
+#print axioms PaperP1.ProjectivePrimeExceptions.exceptional_card
 #print axioms PaperP1.ProjectiveResultants.homogenize_raise
 #print axioms PaperP1.ProjectiveResultants.native_homogenize_dvd
 #print axioms PaperP1.ProjectiveResultants.coprime_of_homogeneous_relprime
