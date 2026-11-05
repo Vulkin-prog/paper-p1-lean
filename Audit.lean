@@ -10602,6 +10602,9 @@ import PaperP1
 #print axioms PaperP1.UnimodularBinaryCoordinates.primitive_nonzero
 #print axioms PaperP1.UnimodularBinaryCoordinates.finite_population_card
 #print axioms PaperP1.UnimodularBinaryCoordinates.coordinate_height
+#print axioms PaperP1.UnrestrictedHyperbolicConicCount.natural_count
+#print axioms PaperP1.UnrestrictedHyperbolicConicCount.finite_population_count
+#print axioms PaperP1.UnrestrictedHyperbolicConicCount.polynomial_height_count
 #print axioms PaperP1.WideQuadraticKernelRanges.product_bounds
 #print axioms PaperP1.WideQuadraticKernelRanges.square_part_range
 #print axioms PaperP1.WideQuadraticKernelRanges.modulus_height
