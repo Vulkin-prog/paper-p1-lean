@@ -4034,3 +4034,6 @@ public import PaperP1.Algebra.PolynomialAuxiliaryExceptions
 public import PaperP1.Analysis.BothGraphDerivativeFormulas
 public import PaperP1.Analysis.GraphControlledDerivatives
 public import PaperP1.Analysis.PolynomialQuotientControl
+public import PaperP1.Analysis.ControlledNormalizedCharts
+public import PaperP1.Analysis.FiniteSetAvoidingInterval
+public import PaperP1.Analysis.NormalizedGraphFiniteAvoidance

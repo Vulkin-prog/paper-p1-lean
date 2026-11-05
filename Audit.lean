@@ -2597,6 +2597,10 @@ import PaperP1
 #print axioms PaperP1.ContractiveExponentialProducts.norm_exponentialProduct_le_one
 #print axioms PaperP1.ContractiveExponentialProducts.norm_first_order_le
 #print axioms PaperP1.ContractiveExponentialProducts.norm_quadratic_error_le
+#print axioms PaperP1.ControlledNormalizedCharts.exists_first
+#print axioms PaperP1.ControlledNormalizedCharts.exists_second
+#print axioms PaperP1.ControlledNormalizedCharts.exists_at_nonexceptional
+#print axioms PaperP1.ControlledNormalizedCharts.exists_control_set_and_charts
 #print axioms PaperP1.CriticalRankMass.succ_coefficient_eventually
 #print axioms PaperP1.CriticalRankMass.rankMass_exp
 #print axioms PaperP1.CriticalRankMass.critical_rankMass_coefficient_bound
@@ -2826,6 +2830,7 @@ import PaperP1
 #print axioms PaperP1.FiniteRolleZeros.exists_derivative_zeros
 #print axioms PaperP1.FiniteRolleZeros.card_le_of_derivative_bound
 #print axioms PaperP1.FiniteRolleZeros.card_le_of_iterated_derivative_nonzero
+#print axioms PaperP1.FiniteSetAvoidingInterval.exists_interval
 #print axioms PaperP1.FiniteSquareTail.sum_bound
 #print axioms PaperP1.FiniteSquareTail.sum_bound_of_div_tail
 #print axioms PaperP1.GraphControlledDerivatives.coordinate_sign
@@ -2944,6 +2949,8 @@ import PaperP1
 #print axioms PaperP1.NonstationaryTangentImage.image_infinite_subinterval
 #print axioms PaperP1.NonstationaryTangentImage.equation_constant
 #print axioms PaperP1.NonstationaryTangentImage.equation_zero
+#print axioms PaperP1.NormalizedGraphFiniteAvoidance.exists_first
+#print axioms PaperP1.NormalizedGraphFiniteAvoidance.exists_second
 #print axioms PaperP1.OrdinaryReciprocalPrimeInput.tendsto_left_endpoint
 #print axioms PaperP1.OrdinaryReciprocalPrimeInput.uniform_square_part_upper
 #print axioms PaperP1.OrdinaryReciprocalPrimeLowerInput.uniform_gap

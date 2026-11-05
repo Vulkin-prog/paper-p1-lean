@@ -25041,6 +25041,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "c4f76301841aa32d1ab6375a4e1e3905d310bd2c"
+    },
+    {
+      "id": "P1-MATH-0512",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The actual derivative-sign theorem still required a supplied normalized trajectory avoiding the control locus.",
+      "finding": "Finite-set closedness and internally constructed ODE graphs produce actual C-infinity normalized charts avoiding the full control set, with simultaneous signs of all derivatives0 throughr at every nonexceptional curve point.",
+      "proposed_revision": "Use the constructed local controlled charts together with the exact finite control-set bound, keeping the separate global covering and bounded-norm obligations explicit.",
+      "impact": "Closes genuine local controlled chart existence at every nonexceptional real curve point. Global piece counts and controlled parametrization remain open.",
+      "evidence": [
+        "PaperP1.ControlledNormalizedCharts.exists_first",
+        "PaperP1.ControlledNormalizedCharts.exists_second",
+        "PaperP1.ControlledNormalizedCharts.exists_at_nonexceptional",
+        "PaperP1.ControlledNormalizedCharts.exists_control_set_and_charts",
+        "PaperP1.FiniteSetAvoidingInterval.exists_interval",
+        "PaperP1.NormalizedGraphFiniteAvoidance.exists_first",
+        "PaperP1.NormalizedGraphFiniteAvoidance.exists_second",
+        "PaperP1.ControlledNormalizedCharts.HasControlledChart"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16657 jobs); direct axiom audit passed for 15769 declarations using only propext, Classical.choice and Quot.sound; all 15287 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.14 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
