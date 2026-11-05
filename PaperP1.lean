@@ -3628,3 +3628,5 @@ public import PaperP1.Asymptotics.ActualReferenceProbability
 public import PaperP1.Asymptotics.RunConversion
 public import PaperP1.Asymptotics.SecondCumulant
 public import PaperP1.Asymptotics.FiniteGoodPartition
+public import PaperP1.Asymptotics.FixedPairExtensionDeficit
+public import PaperP1.Asymptotics.SharpPairTargetDeficit

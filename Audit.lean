@@ -7688,6 +7688,7 @@ import PaperP1
 #print axioms PaperP1.FixedOrderMassPropagation.extension_subfamilies
 #print axioms PaperP1.FixedOrderMassPropagation.main_6_3_propagation
 #print axioms PaperP1.FixedOrderMassPropagation.original_run_extensions
+#print axioms PaperP1.FixedPairExtensionDeficit.article_15_7
 #print axioms PaperP1.FixedPairExtensionDeficitUnderInputs.article_15_7
 #print axioms PaperP1.FixedPairPhaseUnderInputs.uniform_errors
 #print axioms PaperP1.FixedPartnerComponentCount.component_pattern
@@ -9023,6 +9024,7 @@ import PaperP1
 #print axioms PaperP1.SharpOnceAllCouplingUnderInputs.companion_T19_10_sharp
 #print axioms PaperP1.SharpPairActivityUnderInputs.uniform_principal_profile
 #print axioms PaperP1.SharpPairActivityUnderInputs.uniform_pair_activity
+#print axioms PaperP1.SharpPairTargetDeficit.article_11_1
 #print axioms PaperP1.SharpPairTargetDeficitUnderInputs.article_11_1
 #print axioms PaperP1.SharpProfilesUnderGeometry.dyadic_profile
 #print axioms PaperP1.SharpProfilesUnderGeometry.expanded_profile

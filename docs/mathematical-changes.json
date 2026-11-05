@@ -21223,6 +21223,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "b7cb19ea214c54bf851047015585120bca700373"
+    },
+    {
+      "id": "P1-MATH-0416",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:activity:deficit",
+        "number": "11.1",
+        "page": 28,
+        "source": "main_sections/triple_activities.tex",
+        "line": 11,
+        "statement_sha256": "8337a1e3afa7d9d8e2bbef56acbb98cd087625773ba8e97f865a607dd4eae0cb"
+      },
+      "original_assumption": "The sharp one-target and fixed-k pair-extension deficits retained finite geometric inputs only through the finite actual pair partition.",
+      "finding": "The internally proved partition closes both literal actual deficits, with the sharp exponent3/2, full actual pair covariance weights and independent marginal weights for new targets.",
+      "proposed_revision": "Cite the unconditional finite pair partition in the sharp pair-target proof and use that proof in each fixed-k extension deficit. Preserve the exact non-directness condition and distinguish target independent weights from actual triple joint probabilities.",
+      "impact": "Main11.1 and15.7 move from conditional to proved:106 proved,58 conditional,3 in_progress out of167. These become internal inputs for all-cardinality deficit and triple-cancellation arguments.",
+      "evidence": [
+        "PaperP1.FixedPairExtensionDeficit.article_15_7",
+        "PaperP1.SharpPairTargetDeficit.article_11_1"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15831 jobs); direct axiom audit passed for 14705 declarations using only propext, Classical.choice and Quot.sound; all 14055 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.85 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
