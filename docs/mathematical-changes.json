@@ -21753,6 +21753,60 @@
         "status": "not_integrated"
       },
       "validation_commit": "aae8d1d2ef04799a7cf8200e91cb38a3a1f13850"
+    },
+    {
+      "id": "P1-MATH-0431",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:core:fixed-centred",
+        "number": "T14.1",
+        "page": 53,
+        "source": "companion_sections/cores.tex",
+        "line": 160,
+        "statement_sha256": "80f300c82f31d2deecc2baf2eccdcb59d7235d91f77f2446ddb6660280209ca1"
+      },
+      "original_assumption": "The connected assertion of companionT14.1 retained chosen-source and ordinary surface covers and normalized-curve counts, although its all-contact assertion was already proved internally.",
+      "finding": "Actual source-normalized crossing masses and the complete connected seed catalog give exponent1 for compatible connected families. An internally proved exponent7/6 incompatible bound completes full connected activity without geometric inputs. Both printed conclusions follow.",
+      "proposed_revision": "Use actual joint-mass seed classification and exact compatible/incompatible decomposition. State the stronger connected exponent1, the all-contact exponent1, and the fixed-order scope explicitly. Preserve all heterogeneous weights and zero/incompatible cases.",
+      "impact": "CompanionT14.1 becomes unconditional. Full actual absolute activity at every fixed order at least3 also has exponent1. Coverage becomes115 proved,49 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.CoarseConnectedActivity.uniform_range",
+        "PaperP1.CoarseConnectedActivity.companion_T14_1",
+        "PaperP1.CoarseConnectedJointMass.uniform_catalog_extensions",
+        "PaperP1.CoarseConnectedJointMass.uniform_range",
+        "PaperP1.CoarseConnectedJointMass.uniform_compatible_activity",
+        "PaperP1.ConnectedSeedCatalog.uniform_mass",
+        "PaperP1.DenseDirectCrossingFamilies.uniform_families",
+        "PaperP1.DensePairCrossingFamilies.uniform_seeds",
+        "PaperP1.DensePairCrossingFamilies.uniform_centered_extensions",
+        "PaperP1.DensePairCrossingSeeds.uniform_bound",
+        "PaperP1.DenseTwoTargetJointMass.uniform_joint",
+        "PaperP1.DependentPairJointMass.uniform_bound",
+        "PaperP1.DirectCrossingExtensions.uniform_extensions",
+        "PaperP1.DirectCrossingFamilies.uniform_families",
+        "PaperP1.DirectCrossingPairSeeds.uniform_bound",
+        "PaperP1.DirectCrossingSeedFamilies.uniform_seeds",
+        "PaperP1.DirectCrossingSeedFamilies.uniform_extensions",
+        "PaperP1.FixedAbsoluteActivity.uniform_range",
+        "PaperP1.FixedDependentJointMass.uniform_range",
+        "PaperP1.FullFixedActivity.uniform_range",
+        "PaperP1.IncompatibleConnectedActivity.uniform_range",
+        "PaperP1.LowTwoPairJointMass.uniform_bound",
+        "PaperP1.LowTwoPairSeeds.uniform_seeds",
+        "PaperP1.LowTwoPairSeeds.uniform_extensions",
+        "PaperP1.LowTwoPairSeeds.uniform_centered_extensions",
+        "PaperP1.LowTwoPairSeeds.uniform_small_intersection_extensions",
+        "PaperP1.NonconnectedActivity.uniform_bound",
+        "PaperP1.TwoTargetJointMass.uniform_joint"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15977 jobs); direct axiom audit passed for 14848 declarations using only propext, Classical.choice and Quot.sound; all 14206 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.34 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

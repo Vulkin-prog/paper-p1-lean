@@ -6927,10 +6927,15 @@ import PaperP1
 #print axioms PaperP1.ClassCodeBudget.position_count
 #print axioms PaperP1.ClassCodeFibres.pair_count
 #print axioms PaperP1.CleanBoundaryReciprocalLower.uniform_lower
+#print axioms PaperP1.CoarseConnectedActivity.uniform_range
+#print axioms PaperP1.CoarseConnectedActivity.companion_T14_1
 #print axioms PaperP1.CoarseConnectedActivityUnderInputs.uniform_range
 #print axioms PaperP1.CoarseConnectedActivityUnderInputs.companion_T14_1
 #print axioms PaperP1.CoarseConnectedFourthUnderBCN.uniform_nonDirect_cost
 #print axioms PaperP1.CoarseConnectedFourthUnderBCN.uniform_cumulant_comparison
+#print axioms PaperP1.CoarseConnectedJointMass.uniform_catalog_extensions
+#print axioms PaperP1.CoarseConnectedJointMass.uniform_range
+#print axioms PaperP1.CoarseConnectedJointMass.uniform_compatible_activity
 #print axioms PaperP1.CoarseConnectedJointMassUnderInputs.uniform_catalog_extensions
 #print axioms PaperP1.CoarseConnectedJointMassUnderInputs.uniform_range
 #print axioms PaperP1.CoarseConnectedJointMassUnderInputs.uniform_compatible_activity
@@ -7111,6 +7116,7 @@ import PaperP1
 #print axioms PaperP1.ConnectedOneRankOffsetMassUnderInputs.uniform_bound
 #print axioms PaperP1.ConnectedReductionToTriplesUnderInputs.uniform_range
 #print axioms PaperP1.ConnectedReductionToTriplesUnderInputs.article_15_10
+#print axioms PaperP1.ConnectedSeedCatalog.uniform_mass
 #print axioms PaperP1.ConnectedSeedCatalogUnderInputs.uniform_mass
 #print axioms PaperP1.ConnectedTailUnderInputs.uniform_tail
 #print axioms PaperP1.ConnectedTailUnderInputs.article_15_12
@@ -7260,6 +7266,7 @@ import PaperP1
 #print axioms PaperP1.DenseCompressedPairCount.uniform_count
 #print axioms PaperP1.DenseCompressedTargetCount.uniform_offsets
 #print axioms PaperP1.DenseCompressedTargetCount.article_15_3
+#print axioms PaperP1.DenseDirectCrossingFamilies.uniform_families
 #print axioms PaperP1.DenseDirectCrossingFamiliesUnderInputs.uniform_families
 #print axioms PaperP1.DenseEffectiveTargetCount.uniform_count
 #print axioms PaperP1.DenseNonalignedPairs.uniform_kernel_hosts_of_no_exact
@@ -7280,8 +7287,11 @@ import PaperP1
 #print axioms PaperP1.DensePairActivityUnderInputs.dense_components
 #print axioms PaperP1.DensePairActivityUnderInputs.centered_host_bound
 #print axioms PaperP1.DensePairActivityUnderInputs.uniform_activity
+#print axioms PaperP1.DensePairCrossingFamilies.uniform_seeds
+#print axioms PaperP1.DensePairCrossingFamilies.uniform_centered_extensions
 #print axioms PaperP1.DensePairCrossingFamiliesUnderInputs.uniform_seeds
 #print axioms PaperP1.DensePairCrossingFamiliesUnderInputs.uniform_centered_extensions
+#print axioms PaperP1.DensePairCrossingSeeds.uniform_bound
 #print axioms PaperP1.DensePairCrossingSeedsUnderInputs.uniform_bound
 #print axioms PaperP1.DensePhysicalAnchorWitness.uniform_parameter
 #print axioms PaperP1.DensePhysicalKernelWitness.uniform_witness_active
@@ -7315,6 +7325,7 @@ import PaperP1
 #print axioms PaperP1.DenseTargetCount.uniform_count
 #print axioms PaperP1.DenseTargetCount.mem_freshTargets
 #print axioms PaperP1.DenseTargetCount.main_6_2
+#print axioms PaperP1.DenseTwoTargetJointMass.uniform_joint
 #print axioms PaperP1.DenseTwoTargetJointMassUnderInputs.uniform_joint
 #print axioms PaperP1.DenseTwoTargetNonalignedHosts.uniform_hosts
 #print axioms PaperP1.DenseTwoTargetNonalignedMass.uniform_mass
@@ -7329,6 +7340,7 @@ import PaperP1
 #print axioms PaperP1.DenseWeightedSectorUnderInputs.uniform_kernels
 #print axioms PaperP1.DependentBlockPairsCount.article_10_3
 #print axioms PaperP1.DependentBlockPairsCount.uniform_logarithmic_count
+#print axioms PaperP1.DependentPairJointMass.uniform_bound
 #print axioms PaperP1.DependentPairJointMassUnderInputs.uniform_bound
 #print axioms PaperP1.DependentPairSecondMomentUnderInputs.uniform_joint_bound
 #print axioms PaperP1.DependentPairSecondMomentUnderInputs.uniform_factorial_bound
@@ -7374,9 +7386,14 @@ import PaperP1
 #print axioms PaperP1.DeterminantSignedFactorCover.signedCluster_subset
 #print axioms PaperP1.DeterminantSignedFactorCover.uniform_factor_covers
 #print axioms PaperP1.DeterminantSourceWeightMargin.uniform_margin
+#print axioms PaperP1.DirectCrossingExtensions.uniform_extensions
 #print axioms PaperP1.DirectCrossingExtensionsUnderInputs.uniform_extensions
+#print axioms PaperP1.DirectCrossingFamilies.uniform_families
 #print axioms PaperP1.DirectCrossingFamiliesUnderInputs.uniform_families
+#print axioms PaperP1.DirectCrossingPairSeeds.uniform_bound
 #print axioms PaperP1.DirectCrossingPairSeedsUnderInputs.uniform_bound
+#print axioms PaperP1.DirectCrossingSeedFamilies.uniform_seeds
+#print axioms PaperP1.DirectCrossingSeedFamilies.uniform_extensions
 #print axioms PaperP1.DirectCrossingSeedFamiliesUnderInputs.uniform_seeds
 #print axioms PaperP1.DirectCrossingSeedFamiliesUnderInputs.uniform_extensions
 #print axioms PaperP1.DirectPairProductReductionUnderBCN.uniform_reduction
@@ -7688,6 +7705,7 @@ import PaperP1
 #print axioms PaperP1.FinitePairDeficitInputs.partition_inputs
 #print axioms PaperP1.FirstQuadraticApproximationUnderInputs.regular_bound
 #print axioms PaperP1.FirstQuadraticApproximationUnderInputs.companion_T17_5
+#print axioms PaperP1.FixedAbsoluteActivity.uniform_range
 #print axioms PaperP1.FixedAbsoluteActivityUnderInputs.uniform_range
 #print axioms PaperP1.FixedActivityInputBundle.uniform_range
 #print axioms PaperP1.FixedAnchorDegreeBudget.envelope_div_log_tendsto
@@ -7730,6 +7748,7 @@ import PaperP1
 #print axioms PaperP1.FixedCountMomentBoundsUnderBCN.regular_moment_transfer
 #print axioms PaperP1.FixedDegreeKernelCount.uniform_count
 #print axioms PaperP1.FixedDegreeKernelCount.real_interval_count
+#print axioms PaperP1.FixedDependentJointMass.uniform_range
 #print axioms PaperP1.FixedDependentJointMassUnderInputs.uniform_range
 #print axioms PaperP1.FixedExceptionalMass.defect_bound
 #print axioms PaperP1.FixedExceptionalMass.small_order_contacts
@@ -7840,6 +7859,7 @@ import PaperP1
 #print axioms PaperP1.FourthCumulantIdentitiesUnderInputs.article_16_1
 #print axioms PaperP1.FourthRepeatedRunCostUnderBCN.uniform_bound
 #print axioms PaperP1.FourthRepeatedRunCostUnderInputs.uniform_bound
+#print axioms PaperP1.FullFixedActivity.uniform_range
 #print axioms PaperP1.FullFixedActivityUnderInputs.uniform_range
 #print axioms PaperP1.FullSupportIndependentTail.article_15_8_original
 #print axioms PaperP1.FullSupportWeightedCount.uniform_ordered_mass
@@ -8017,6 +8037,7 @@ import PaperP1
 #print axioms PaperP1.HomogeneousSharedInteriorTriples.uniform_mass
 #print axioms PaperP1.HorizontalGridCoordinateData.uniform_data
 #print axioms PaperP1.IdealSourceLatticeSums.uniform_ideal_sums
+#print axioms PaperP1.IncompatibleConnectedActivity.uniform_range
 #print axioms PaperP1.IncompatibleConnectedActivityUnderInputs.uniform_range
 #print axioms PaperP1.IncompatiblePairActivityAsymptotic.uniform_activity
 #print axioms PaperP1.IncompatiblePairActivityAsymptotic.uniform_signed_absolute_gap
@@ -8186,7 +8207,12 @@ import PaperP1
 #print axioms PaperP1.LowPrimitiveNominalMass.uniform_bound
 #print axioms PaperP1.LowPrimitiveRankMass.uniform_bound
 #print axioms PaperP1.LowPrimitiveTripleRankMass.uniform_bound
+#print axioms PaperP1.LowTwoPairJointMass.uniform_bound
 #print axioms PaperP1.LowTwoPairJointMassUnderInputs.uniform_bound
+#print axioms PaperP1.LowTwoPairSeeds.uniform_seeds
+#print axioms PaperP1.LowTwoPairSeeds.uniform_extensions
+#print axioms PaperP1.LowTwoPairSeeds.uniform_centered_extensions
+#print axioms PaperP1.LowTwoPairSeeds.uniform_small_intersection_extensions
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_seeds
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_extensions
 #print axioms PaperP1.LowTwoPairSeedsUnderInputs.uniform_centered_extensions
@@ -8408,6 +8434,7 @@ import PaperP1
 #print axioms PaperP1.NonalignedSourceResidualUnderInputs.uniform_source_bounds
 #print axioms PaperP1.NonalignedSourceResidualUnderInputs.article_3_2
 #print axioms PaperP1.NonalignedSurfaceSubpowerUnderInputs.uniform_subpower
+#print axioms PaperP1.NonconnectedActivity.uniform_bound
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_block_mass
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_activity
 #print axioms PaperP1.NonconnectedActivityUnderBCN.uniform_absolute_difference
@@ -9474,6 +9501,7 @@ import PaperP1
 #print axioms PaperP1.TwoTargetHomogeneousNonalignedMass.uniform_mass
 #print axioms PaperP1.TwoTargetHomogeneousWeakMass.uniform_mass
 #print axioms PaperP1.TwoTargetIntrinsicEnumeration.uniform_enumeration
+#print axioms PaperP1.TwoTargetJointMass.uniform_joint
 #print axioms PaperP1.TwoTargetJointMassUnderInputs.uniform_joint
 #print axioms PaperP1.TwoTargetMixedClassData.bounded_card_le
 #print axioms PaperP1.TwoTargetMixedClassData.bounded_coefficient

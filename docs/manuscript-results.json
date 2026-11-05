@@ -32147,7 +32147,7 @@
       "source": "companion_sections/cores.tex",
       "line": 160,
       "sha256": "80f300c82f31d2deecc2baf2eccdcb59d7235d91f77f2446ddb6660280209ca1",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.AbsoluteActivityDecomposition.absolute_elementary_bound",
         "PaperP1.AbsoluteActivityDecomposition.absolute_eq_dependent",
@@ -32243,20 +32243,47 @@
         "PaperP1.CoarseConnectedActivityUnderInputs.uniform_range",
         "PaperP1.CoarseConnectedActivityUnderInputs.companion_T14_1",
         "PaperP1.DependentSeedCover.families",
-        "PaperP1.IncompatibleConnectedDeficit.sources"
+        "PaperP1.IncompatibleConnectedDeficit.sources",
+        "PaperP1.CoarseConnectedActivity.uniform_range",
+        "PaperP1.CoarseConnectedActivity.companion_T14_1",
+        "PaperP1.CoarseConnectedJointMass.uniform_catalog_extensions",
+        "PaperP1.CoarseConnectedJointMass.uniform_range",
+        "PaperP1.CoarseConnectedJointMass.uniform_compatible_activity",
+        "PaperP1.ConnectedSeedCatalog.uniform_mass",
+        "PaperP1.DenseDirectCrossingFamilies.uniform_families",
+        "PaperP1.DensePairCrossingFamilies.uniform_seeds",
+        "PaperP1.DensePairCrossingFamilies.uniform_centered_extensions",
+        "PaperP1.DensePairCrossingSeeds.uniform_bound",
+        "PaperP1.DenseTwoTargetJointMass.uniform_joint",
+        "PaperP1.DependentPairJointMass.uniform_bound",
+        "PaperP1.DirectCrossingExtensions.uniform_extensions",
+        "PaperP1.DirectCrossingFamilies.uniform_families",
+        "PaperP1.DirectCrossingPairSeeds.uniform_bound",
+        "PaperP1.DirectCrossingSeedFamilies.uniform_seeds",
+        "PaperP1.DirectCrossingSeedFamilies.uniform_extensions",
+        "PaperP1.FixedAbsoluteActivity.uniform_range",
+        "PaperP1.FixedDependentJointMass.uniform_range",
+        "PaperP1.FullFixedActivity.uniform_range",
+        "PaperP1.IncompatibleConnectedActivity.uniform_range",
+        "PaperP1.LowTwoPairJointMass.uniform_bound",
+        "PaperP1.LowTwoPairSeeds.uniform_seeds",
+        "PaperP1.LowTwoPairSeeds.uniform_extensions",
+        "PaperP1.LowTwoPairSeeds.uniform_centered_extensions",
+        "PaperP1.LowTwoPairSeeds.uniform_small_intersection_extensions",
+        "PaperP1.NonconnectedActivity.uniform_bound",
+        "PaperP1.TwoTargetJointMass.uniform_joint"
       ],
       "literature_inputs": [
-        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
-        "P1-GEO-ORDINARY-SURFACE-COVER",
-        "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+        "p1:internal:unconditional-fixed-connected-activity"
       ],
       "mathematical_changes": [
         "P1-MATH-0091",
         "P1-MATH-0094",
-        "P1-MATH-0137"
+        "P1-MATH-0137",
+        "P1-MATH-0431"
       ],
-      "notes": "CompanionT14.1 is now COMPLETE CONDITIONALLY under the SAME three\nexplicit finite geometric properties, with a stronger connected\nexponent1 instead of4/5. Its separate contact assertion is retained\nat rate1 and is UNCONDITIONAL. Finding137 records the stronger full\nfixed connected activity. Unconditional coverage remains87/167;\nconditional results increase21 to22; confirmed improvements136 to137.\n\nThe bound includes EVERY actual connected family at every prescribed\nfixed orderr>=3, throughout any fixed range3..R with a common threshold.\nAffine incompatibility and zero actual marginals are included. The\nactual ground can be any subset of the full dyadic block, so it includes\nthe source's regular ground. All order cutoffs, finite geometric\nparameters and error margins precede N. This is a fixed-order result,\nnot a bound uniform in an arbitrary order growing with N.\n\nDependentSeedCover defines the actual union of all dependent pairs\nand the completed connected seed catalog. It proves every actual\ndependent family of size<=R contains one of those seeds, by extracting\na genuine primitive subfamily. It also proves dependent populations\nat sizes0 and1 are empty from their actual zero nullity.\nFixedDependentJointMassUnderInputs applies the proved varying-size\npositive propagation, the sharp actual pair joint mass at rate2/3,\nand the complete catalog at rate1. Consequently ALL actual dependent\njoint masses in every fixed range2..R have rate2/3. No desired joint\nor counting bound is supplied as a hypothesis.\n\nFixedAbsoluteActivityUnderInputs uses the completed exact absolute\ncentering decomposition. Its independent dependent-family term has\nthe already proved unconditional rate1; the other terms are actual\ndependent joint masses times exact independent complement coefficients.\nThe bounded actual mean controls those finite coefficients. This\nproves FULL absolute centered activity at rate2/3 throughout1..R,\nincluding disconnected, incompatible and irregular families. It uses\nthe SAME finite geometric bundle and one actual pair-input bundle.\n\nIncompatibleConnectedDeficit proves the exact finite mechanism missing\nfrom a compatible-only argument. When q(I)=0, inverse centering bounds\n|c(I)| by the sum of proper centered-source terms. The empty source\nis the actual independent product. EVERY nonempty proper sourceD\ninside a connectedI has its actual complementI\\D in the failed\nindependent extension population. A proved injective complement\nfiber bound handles incidence and duplicate sources without a fake\nmultiplicity assumption. Thus incompatible activity is at most its\nactual independent mass plus the proper-source absolute activity\nweighted by the exact all-cardinality independent deficit. This\nfinite theorem requires no positivity, regularity or geometric input.\n\nIncompatibleConnectedActivityUnderInputs combines that finite bound\nwith the source rate2/3 and the independently proved complement\ndeficit rate1/2. The independent connected term has rate at least3/2\nat orders>=3. The ENTIRE incompatible connected absolute activity\ntherefore has rate7/6, uniformly over every fixed range3..R and every\nactual subpopulation. All source-cardinality fibers and their fixed\nconstant are proved. Its geometric margins areepsilon/32 for the\ncoarse bundle and source capsizeCap(epsilon/32768) for the pair bundle.\n\nCoarseConnectedActivityUnderInputs.uniform_range combines the\ncompleted compatible rate1 with this incompatible rate7/6, using\nan exact positive/zero joint split. It proves FULL actual connected\nabsolute activity N^(-1+epsilon) for every3<=r<=R. The final finite\ncoarse bundle margins areepsilon/16 andepsilon/64, with pair source\ncapsizeCap(epsilon/65536). Its companion_T14_1 theorem weakens1 to\nthe printed4/5 and simultaneously supplies the source's contact\nbound from FixedContactCenteredActivity.uniform_bound. The contact\nproof needs only the already proved unconditional subpower moments.\n\nThe earlier weaker half-power auxiliary estimates under BCN remain\nvalid historical declarations; they are not inputs to this completion.\nOnly the recorded chosen-source surface, ordinary surface and\nnormalized curve properties remain unproved external arguments.\nThe sharper4/3 assertion of main15.10, its primitive-four sharpness,\nand the all-cardinality companionT16.1–T16.3 assertions are not claimed\nproved here. No new literature property, axiom, dependency download,\nPaper C port, manuscript-byte edit or Palomar action is added.",
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13525 jobs); direct axiom audit passed for 10392 declarations using only propext, Classical.choice and Quot.sound; all 8750 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.88 GiB.",
+      "notes": "Companion LemmaT14.1 now has an unconditional canonical proof of both printed assertions. CoarseConnectedActivity.companion_T14_1 proves the connected absolute-centered sum at the printed exponent4/5 and the all-contact-family sum at exponent1, without a connectedness restriction on the contact population. The stronger connected exponent1 is proved separately, uniformly over every fixed bounded range of orders and every finite dyadic subground. The original statement and complete proof in companion_sections/cores.tex lines160-255 were rechecked.\n\nThe source-normalized dense two-target bound is first proved for arbitrary fixed old families, including dependent sources, zero marginals and affine incompatibility. The admissible alignment branches use the unconditional arbitrary-W host theorem; strong aligned branches use the internally checked actual joint-mass bound. Direct minimal crossings are reduced to two fresh targets by an exact finite cover and actual conditional factorization, retaining independent weights only on the genuinely direct old complement.\n\nThe actual connected seed catalog is then bounded at exponent1. It includes arbitrary fixed primitive seeds, isolated-vertex triples, low-intersection unions of dependent pairs, dense pair crossings and direct minimal crossings. Their full actual joint weights are used throughout. Exact finite classification and fixed-order conditional propagation give compatible connected activity at exponent1. Full absolute activity at exponent2/3, together with the internally proved independent-target deficit, bounds incompatible connected activity at exponent7/6. Combining these two parts proves the stronger connected assertion without a compatibility restriction.\n\nActual dependent joint mass and full absolute-centered mass are also controlled uniformly over prescribed bounded ranges. Exact component factorization gives exponent4/3 for nonconnected families; together with the new connected bound this proves full actual absolute activity at exponent1 for every fixed order at least3. No assertion uniform in growing order is made. Main15.10 and its symbolic sharp reduction and exponent3/2 incompatible bound are not promoted by this checkpoint.\n\nThe old conditional proofs and their external-input history remain preserved. Only the former chosen-source/ordinary-cover and normalized-curve uses in the exact T14.1 conclusion are discharged. No general geometric property or sharp growing-degree BCN theorem is claimed. Original manuscript bytes remain unchanged.\n\nP1-MATH-0431 adds twenty modules and twenty-eight theorems. CompanionT14.1 moves from conditional to proved. Coverage becomes115 proved,49 conditional and3 in_progress out of167, with164 completed. The project records429 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or Palomar submission is introduced.\n\nEarlier checkpoint history:\nCompanionT14.1 is now COMPLETE CONDITIONALLY under the SAME three\nexplicit finite geometric properties, with a stronger connected\nexponent1 instead of4/5. Its separate contact assertion is retained\nat rate1 and is UNCONDITIONAL. Finding137 records the stronger full\nfixed connected activity. Unconditional coverage remains87/167;\nconditional results increase21 to22; confirmed improvements136 to137.\n\nThe bound includes EVERY actual connected family at every prescribed\nfixed orderr>=3, throughout any fixed range3..R with a common threshold.\nAffine incompatibility and zero actual marginals are included. The\nactual ground can be any subset of the full dyadic block, so it includes\nthe source's regular ground. All order cutoffs, finite geometric\nparameters and error margins precede N. This is a fixed-order result,\nnot a bound uniform in an arbitrary order growing with N.\n\nDependentSeedCover defines the actual union of all dependent pairs\nand the completed connected seed catalog. It proves every actual\ndependent family of size<=R contains one of those seeds, by extracting\na genuine primitive subfamily. It also proves dependent populations\nat sizes0 and1 are empty from their actual zero nullity.\nFixedDependentJointMassUnderInputs applies the proved varying-size\npositive propagation, the sharp actual pair joint mass at rate2/3,\nand the complete catalog at rate1. Consequently ALL actual dependent\njoint masses in every fixed range2..R have rate2/3. No desired joint\nor counting bound is supplied as a hypothesis.\n\nFixedAbsoluteActivityUnderInputs uses the completed exact absolute\ncentering decomposition. Its independent dependent-family term has\nthe already proved unconditional rate1; the other terms are actual\ndependent joint masses times exact independent complement coefficients.\nThe bounded actual mean controls those finite coefficients. This\nproves FULL absolute centered activity at rate2/3 throughout1..R,\nincluding disconnected, incompatible and irregular families. It uses\nthe SAME finite geometric bundle and one actual pair-input bundle.\n\nIncompatibleConnectedDeficit proves the exact finite mechanism missing\nfrom a compatible-only argument. When q(I)=0, inverse centering bounds\n|c(I)| by the sum of proper centered-source terms. The empty source\nis the actual independent product. EVERY nonempty proper sourceD\ninside a connectedI has its actual complementI\\D in the failed\nindependent extension population. A proved injective complement\nfiber bound handles incidence and duplicate sources without a fake\nmultiplicity assumption. Thus incompatible activity is at most its\nactual independent mass plus the proper-source absolute activity\nweighted by the exact all-cardinality independent deficit. This\nfinite theorem requires no positivity, regularity or geometric input.\n\nIncompatibleConnectedActivityUnderInputs combines that finite bound\nwith the source rate2/3 and the independently proved complement\ndeficit rate1/2. The independent connected term has rate at least3/2\nat orders>=3. The ENTIRE incompatible connected absolute activity\ntherefore has rate7/6, uniformly over every fixed range3..R and every\nactual subpopulation. All source-cardinality fibers and their fixed\nconstant are proved. Its geometric margins areepsilon/32 for the\ncoarse bundle and source capsizeCap(epsilon/32768) for the pair bundle.\n\nCoarseConnectedActivityUnderInputs.uniform_range combines the\ncompleted compatible rate1 with this incompatible rate7/6, using\nan exact positive/zero joint split. It proves FULL actual connected\nabsolute activity N^(-1+epsilon) for every3<=r<=R. The final finite\ncoarse bundle margins areepsilon/16 andepsilon/64, with pair source\ncapsizeCap(epsilon/65536). Its companion_T14_1 theorem weakens1 to\nthe printed4/5 and simultaneously supplies the source's contact\nbound from FixedContactCenteredActivity.uniform_bound. The contact\nproof needs only the already proved unconditional subpower moments.\n\nThe earlier weaker half-power auxiliary estimates under BCN remain\nvalid historical declarations; they are not inputs to this completion.\nOnly the recorded chosen-source surface, ordinary surface and\nnormalized curve properties remain unproved external arguments.\nThe sharper4/3 assertion of main15.10, its primitive-four sharpness,\nand the all-cardinality companionT16.1–T16.3 assertions are not claimed\nproved here. No new literature property, axiom, dependency download,\nPaper C port, manuscript-byte edit or Palomar action is added.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15977 jobs); direct axiom audit passed for 14848 declarations using only propext, Classical.choice and Quot.sound; all 14206 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.34 GiB.",
       "validation_history": [
         {
           "status": "in_progress",
@@ -32288,9 +32315,40 @@
             "P1-PROB-FIXED-CONTACT-CENTERED-ACTIVITY",
             "P1-PROB-FIXED-NONCONNECTED-ACTIVITY"
           ]
+        },
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (13525 jobs); direct axiom audit passed for 10392 declarations using only propext, Classical.choice and Quot.sound; all 8750 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.88 GiB.",
+          "validation_commit": "dfba0157f27ccb234819d68bcb9ac63941946fab",
+          "literature_inputs": [
+            "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+            "P1-GEO-ORDINARY-SURFACE-COVER",
+            "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+          ]
         }
       ],
-      "validation_commit": "dfba0157f27ccb234819d68bcb9ac63941946fab"
+      "canonical_statement": "PaperP1.CoarseConnectedActivity.companion_T14_1",
+      "remaining_unformalized_inputs": [],
+      "input_discharges": [
+        {
+          "input": "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+          "proof": "PaperP1.CoarseConnectedActivity.companion_T14_1",
+          "scope": "Exact two conclusions of companionT14.1; internally proved actual connected exponent1 and all-contact exponent1. No general cover/count property is asserted.",
+          "checkpoint": "P1-MATH-0431"
+        },
+        {
+          "input": "P1-GEO-ORDINARY-SURFACE-COVER",
+          "proof": "PaperP1.CoarseConnectedActivity.companion_T14_1",
+          "scope": "Exact two conclusions of companionT14.1; internally proved actual connected exponent1 and all-contact exponent1. No general cover/count property is asserted.",
+          "checkpoint": "P1-MATH-0431"
+        },
+        {
+          "input": "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+          "proof": "PaperP1.CoarseConnectedActivity.companion_T14_1",
+          "scope": "Exact two conclusions of companionT14.1; internally proved actual connected exponent1 and all-contact exponent1. No general cover/count property is asserted.",
+          "checkpoint": "P1-MATH-0431"
+        }
+      ]
     },
     {
       "label": "p1:core:primitive",

@@ -19158,3 +19158,20 @@ Only the former chosen-source/ordinary surface-cover and normalized-curve uses i
 P1-MATH-0430 adds three modules and five theorems. CompanionT1.8 moves from conditional to proved. Coverage becomes114 proved,50 conditional and3 in_progress out of167, with164 completed. The project records428 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (15937 jobs); direct axiom audit passed for 14820 declarations using only propext, Classical.choice and Quot.sound; all 14178 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.45 GiB.
+
+
+## Unconditional fixed connected and full actual activity
+
+Companion LemmaT14.1 now has an unconditional canonical proof of both printed assertions. CoarseConnectedActivity.companion_T14_1 proves the connected absolute-centered sum at the printed exponent4/5 and the all-contact-family sum at exponent1, without a connectedness restriction on the contact population. The stronger connected exponent1 is proved separately, uniformly over every fixed bounded range of orders and every finite dyadic subground. The original statement and complete proof in companion_sections/cores.tex lines160-255 were rechecked.
+
+The source-normalized dense two-target bound is first proved for arbitrary fixed old families, including dependent sources, zero marginals and affine incompatibility. The admissible alignment branches use the unconditional arbitrary-W host theorem; strong aligned branches use the internally checked actual joint-mass bound. Direct minimal crossings are reduced to two fresh targets by an exact finite cover and actual conditional factorization, retaining independent weights only on the genuinely direct old complement.
+
+The actual connected seed catalog is then bounded at exponent1. It includes arbitrary fixed primitive seeds, isolated-vertex triples, low-intersection unions of dependent pairs, dense pair crossings and direct minimal crossings. Their full actual joint weights are used throughout. Exact finite classification and fixed-order conditional propagation give compatible connected activity at exponent1. Full absolute activity at exponent2/3, together with the internally proved independent-target deficit, bounds incompatible connected activity at exponent7/6. Combining these two parts proves the stronger connected assertion without a compatibility restriction.
+
+Actual dependent joint mass and full absolute-centered mass are also controlled uniformly over prescribed bounded ranges. Exact component factorization gives exponent4/3 for nonconnected families; together with the new connected bound this proves full actual absolute activity at exponent1 for every fixed order at least3. No assertion uniform in growing order is made. Main15.10 and its symbolic sharp reduction and exponent3/2 incompatible bound are not promoted by this checkpoint.
+
+The old conditional proofs and their external-input history remain preserved. Only the former chosen-source/ordinary-cover and normalized-curve uses in the exact T14.1 conclusion are discharged. No general geometric property or sharp growing-degree BCN theorem is claimed. Original manuscript bytes remain unchanged.
+
+P1-MATH-0431 adds twenty modules and twenty-eight theorems. CompanionT14.1 moves from conditional to proved. Coverage becomes115 proved,49 conditional and3 in_progress out of167, with164 completed. The project records429 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (15977 jobs); direct axiom audit passed for 14848 declarations using only propext, Classical.choice and Quot.sound; all 14206 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.34 GiB.
