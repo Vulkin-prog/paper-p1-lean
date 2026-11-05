@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records381 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records382 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14460 audited theorem/lemma declarations**. This
+- The project currently has **14470 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25210,3 +25210,18 @@ This closes the controlled-height positive-discriminant arithmetic branch under 
 P1-MATH-0383 adds four theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records381 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15681 jobs); direct axiom audit passed for 14460 declarations using only propext, Classical.choice and Quot.sound; all 13778 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.71 GiB.
+
+
+## Conic discriminant and degeneracy invariants under bounded integer shears
+
+ConicCoordinateChanges computes the exact six coefficients of P(x+t*y,y) from the original coefficient record and proves equality with the actual integer polynomial shear. The coefficient extraction and explicit polynomial construction are two-sided inverses on these presentations. The original coefficient extraction of every degree-at-most-two polynomial therefore obeys the literal shear formula.
+
+The quadratic discriminant Delta=b^2-4*a*c is invariant under every integer shear. The explicit degeneracy invariant J=a*e^2+c*d^2+b^2*f-b*d*e-4*a*c*f is also invariant. normConstant_determinant proves the exact factorization delta=16*c*J of the norm-equation constant. Both invariance statements are transported to the coefficients of the actual transformed polynomial, without assuming a coordinate identification.
+
+For the three allowed natural parameters t=0,1,2, height_shear proves that the sum of all six transformed coefficient absolute values is at most nine times the original coefficient sum height. The proof bounds the individual transformed coefficients explicitly and uses finite polynomial arithmetic; no uncontrolled coordinate constant enters. This supplies a concrete budget for the already constructed bounded full-degree direction.
+
+These identities prepare the discharge of geometric non-degeneracy and remove coordinate-dependent assumptions from the conic count. This checkpoint does not assert those subsequent implications or a complete conic estimate. The negative-discriminant and parabolic branches, full BCN property and original main13.4 remain open.
+
+P1-MATH-0384 adds ten theorems and two definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records382 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15683 jobs); direct axiom audit passed for 14470 declarations using only propext, Classical.choice and Quot.sound; all 13790 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.70 GiB.

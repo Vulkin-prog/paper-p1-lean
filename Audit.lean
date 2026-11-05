@@ -751,6 +751,16 @@ import PaperP1
 #print axioms PaperP1.ComplexProjectiveIrreducibility.geometric_of_affine
 #print axioms PaperP1.ComplexProjectiveIrreducibility.singularity_input
 #print axioms PaperP1.ComplexProjectiveIrreducibility.nongeometric_input
+#print axioms PaperP1.ConicCoordinateChanges.polynomial_expression
+#print axioms PaperP1.ConicCoordinateChanges.coefficients_polynomial
+#print axioms PaperP1.ConicCoordinateChanges.polynomial_shear
+#print axioms PaperP1.ConicCoordinateChanges.coefficients_shear
+#print axioms PaperP1.ConicCoordinateChanges.discriminant_shearCoefficients
+#print axioms PaperP1.ConicCoordinateChanges.normConstant_determinant
+#print axioms PaperP1.ConicCoordinateChanges.determinant_shearCoefficients
+#print axioms PaperP1.ConicCoordinateChanges.discriminant_shear
+#print axioms PaperP1.ConicCoordinateChanges.determinant_shear
+#print axioms PaperP1.ConicCoordinateChanges.height_shear
 #print axioms PaperP1.ConicNormCoordinates.coefficient_bounds
 #print axioms PaperP1.ConicNormCoordinates.square_identity
 #print axioms PaperP1.ConicNormCoordinates.norm_identity
