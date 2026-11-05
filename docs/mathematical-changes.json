@@ -22928,6 +22928,58 @@
         "status": "not_integrated"
       },
       "validation_commit": "ba08770e4ed35fe43f9518a5ca9bb8b52459c0be"
+    },
+    {
+      "id": "P1-MATH-0458",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "Both the vanishing of the prescribed signed forcing cost and its precise logarithmic equivalent were previously obtained through the ordinary EIP reciprocal-prime input. Only its non-polynomial lower obstruction had just received an independent internal proof.",
+      "finding": "Rankin counting at every fixed logarithmic cutoff gives unconditional reciprocal upper bounds beating every logarithmic power. Together with the internal full-value profile and elementary reciprocal lower bounds, this proves the specified cost tends to zero faster than every fixed inverse logarithmic power, while log cost/logN tends to zero and no polynomial rate is possible.",
+      "proposed_revision": "Separate the internal coarse two-sided rate from the fine EIP equivalent. Include the unconditional logarithmic decay, leading reciprocal exponent and specified-cost log-rate limit as independent results; keep the sharp saddle correction and precise error scale explicitly dependent on ordinary EIP.",
+      "impact": "Proves a complete unconditional rate regime for the original positive signed forcing cost and leading full/dyadic reciprocal logarithmic limits. FineT19.15/T19.16 equivalents remain conditional and numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.ElementaryPivotLogRate.full_le",
+        "PaperP1.ElementaryPivotLogRate.dyadic_le",
+        "PaperP1.ElementaryPivotLogRate.log_sandwich",
+        "PaperP1.ElementaryPivotLogRate.full_log_bound",
+        "PaperP1.ElementaryPivotLogRate.dyadic_log_bound",
+        "PaperP1.ElementaryPivotLogRate.limit_of_log_bound",
+        "PaperP1.ElementaryPivotLogRate.full_normalized_log_limit",
+        "PaperP1.ElementaryPivotLogRate.dyadic_normalized_log_limit",
+        "PaperP1.ElementaryReciprocalPivotUpper.finite_cutoff",
+        "PaperP1.ElementaryReciprocalPivotUpper.uniform_logarithmic_upper",
+        "PaperP1.ElementaryReciprocalPivotUpper.dyadic_logarithmic_upper",
+        "PaperP1.ArbitraryPolylogPivotCount.exponent_bounds",
+        "PaperP1.ArbitraryPolylogPivotCount.log_power_identity",
+        "PaperP1.ArbitraryPolylogPivotCount.finite_value_bound",
+        "PaperP1.ArbitraryPolylogPivotCount.uniform_growth",
+        "PaperP1.ArbitraryPolylogPivotCount.uniform_value_bound",
+        "PaperP1.ElementarySignedCostRate.uniform_logarithmic_upper",
+        "PaperP1.ElementarySignedCostRate.uniform_log_bound",
+        "PaperP1.ElementarySignedCostRate.normalized_log_limit",
+        "PaperP1.ElementarySignedCostRate.weighted_cost_tendsto_zero",
+        "PaperP1.ElementarySignedCostRate.cost_tendsto_zero",
+        "PaperP1.ElementarySignedCostUpper.profile_upper",
+        "PaperP1.ElementarySignedCostUpper.uniform_upper_from_profile",
+        "PaperP1.ArbitraryPolylogPivotCount.exponent",
+        "PaperP1.ArbitraryPolylogPivotCount.growthConstant",
+        "PaperP1.ArbitraryPolylogPivotCount.growthFactor"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16333 jobs); direct axiom audit passed for 15226 declarations using only propext, Classical.choice and Quot.sound; all 14650 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.66 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

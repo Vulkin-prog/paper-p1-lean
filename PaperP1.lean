@@ -3876,3 +3876,8 @@ public import PaperP1.Arithmetic.BoundedProductFibres
 public import PaperP1.Asymptotics.ElementaryCleanPivotLower
 public import PaperP1.Asymptotics.ElementarySignedCostLower
 public import PaperP1.Asymptotics.ElementarySignedPowerObstruction
+public import PaperP1.Analysis.ElementaryPivotLogRate
+public import PaperP1.Analysis.ElementaryReciprocalPivotUpper
+public import PaperP1.Asymptotics.ArbitraryPolylogPivotCount
+public import PaperP1.Asymptotics.ElementarySignedCostRate
+public import PaperP1.Asymptotics.ElementarySignedCostUpper
