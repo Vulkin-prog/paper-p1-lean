@@ -20738,6 +20738,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "b5fda86ed75223e4a34c256d6c359c087554c39b"
+    },
+    {
+      "id": "P1-MATH-0403",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The earlier explicit local prime scale used a constant chosen above the full determinant factorial, creating a large unnecessary dependence on the auxiliary rectangle and degree.",
+      "finding": "The actual determinant factorial is bounded by2 to its triangular valuation, and the exact affine weights give the absolute local prime scale3e*H^(1/b) with auxiliary degree A<=log H+2.",
+      "proposed_revision": "Use the absolute local determinant scale in further quantitative degree-uniform counting. Keep global prime avoidance and final degree factors explicit; do not infer the sharp half-window rank bound from a much larger degree power.",
+      "impact": "Removes the local factorial constant as an obstacle to degree-uniform affine point counting. Global BCN, sharp rank consequences and original numbered coverage remain unchanged.",
+      "evidence": [
+        "PaperP1.AffineDeterminantUniformScale.triangle_succ",
+        "PaperP1.AffineDeterminantUniformScale.factorial_le_triangle_pow",
+        "PaperP1.AffineDeterminantUniformScale.weight_budget",
+        "PaperP1.AffineDeterminantUniformScale.logarithmic_power_bound",
+        "PaperP1.AffineDeterminantUniformScale.prime_scale",
+        "PaperP1.AffineDeterminantUniformScale.exists_logarithmic_degree"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15743 jobs); direct axiom audit passed for 14587 declarations using only propext, Classical.choice and Quot.sound; all 13925 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 9.20 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -2365,6 +2365,12 @@ import PaperP1
 #print axioms PaperP1.AdjacentSquarefreeBudget.modulus_reciprocal_sum
 #print axioms PaperP1.AffineDeterminantDegreeChoice.exists_auxiliary_degree
 #print axioms PaperP1.AffineDeterminantDegreeChoice.determinant_small
+#print axioms PaperP1.AffineDeterminantUniformScale.triangle_succ
+#print axioms PaperP1.AffineDeterminantUniformScale.factorial_le_triangle_pow
+#print axioms PaperP1.AffineDeterminantUniformScale.weight_budget
+#print axioms PaperP1.AffineDeterminantUniformScale.logarithmic_power_bound
+#print axioms PaperP1.AffineDeterminantUniformScale.prime_scale
+#print axioms PaperP1.AffineDeterminantUniformScale.exists_logarithmic_degree
 #print axioms PaperP1.AnchoredCostNormalization.main_lower
 #print axioms PaperP1.AnchoredCostNormalization.with_errors
 #print axioms PaperP1.BanachExponentialRemainder.norm_term_le
