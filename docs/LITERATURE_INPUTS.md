@@ -26415,3 +26415,22 @@ Earlier conditional declarations and their literature history are preserved. The
 P1-MATH-0437 adds five modules and five theorems. Main6.4 moves from conditional to proved. Coverage becomes124 proved,40 conditional and3 in_progress out of167, with164 completed. The project records435 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16045 jobs); direct axiom audit passed for 14912 declarations using only propext, Classical.choice and Quot.sound; all 14271 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.09 GiB.
+
+
+## Unconditional all-cardinality core bounds and literal growing connected range
+
+Stable ID: p1:internal:unconditional-all-cardinality-growing-activity. Internal actual bounded-order, high-nullity pair and uniform certificate proofs discharge only these exact numbered uses. Large orders use their own uniform tails. The literal linear range and all-cardinality positive-core scope are retained; no general geometric property is promoted.
+
+Companion TheoremT16.1, PropositionT16.2 and TheoremT16.3 now have unconditional canonical proofs in their complete source scopes. Their statements and full proofs in companion_sections/cores.tex lines549-763 were rechecked. All-cardinality centered activity, positive core mass without any size cutoff, and the literal growing and linear cardinality ranges are retained. Their4/5 exponents are strengthened to1 wherever the other rank cap permits.
+
+FixedConnectedWeighted and FixedConnectedJointWeighted provide actual centered and joint mass uniformly over prescribed bounded order ranges, using the internal connected activity and no-singleton joint catalog. AllCardinalityConnected and AllCardinalityConnectedJoint combine these finite ranges with the already internally proved uniform two-anchor tails. The stronger exponent ismin(1,2-eta), before weakening to the printedmin(4/5,2-eta). AllCardinalityTotalActivity also bounds the full actual joint-plus-absolute-centered sum at this stronger exponent. The finite cutoff is chosen beforeN; constants from fixed orders are not applied at growing order.
+
+HighNullityPairMass proves the entire actual pair joint mass above half a window rank at exponent1. It uses the internally proved nonaligned activity and the exact enlarged aligned rank classification, including both boundary channels and local defects. FixedPositiveCoreMass combines that size-two branch with internal no-singleton joint mass at all bounded higher orders. AllCardinalityCoreMass then adds the uniform multi-anchor positive-core tail and gives exponent1 at every cardinality under the printed even-core and nullity-cap conditions. Zero joint weights and incompatible systems are retained automatically; no exceptional-event or law-approximation premise is required.
+
+HighNullityClosure uses the exact deterministic peeling core cover and free independent complements, with no deletion-order factor. GrowingConnected.uniform_linear_range proves exponent1 whenever2*(t-2)*K<=L, simultaneously for everyK satisfying this literal inequality. The prescribed sublogarithmic corollary follows fromK(N)/log(N)->0. The printedT16.3 bound follows with an even fixedt chosen beforeN; for eta=3/2, t=4 gives exactlyK<=L/4. Both original linear-range and sublogarithmic assertions are thus covered.
+
+Earlier conditional declarations and external-input history remain preserved. Only the former finite geometric uses in these three numbered conclusions are discharged; no general geometric property or unrestricted growing-order moment theorem is promoted. Original source bytes and compiler/dependency pins remain unchanged.
+
+P1-MATH-0438 adds ten modules and fifteen theorems. CompanionT16.1,T16.2 andT16.3 move from conditional to proved. Coverage becomes127 proved,37 conditional and3 in_progress out of167, with164 completed. The project records436 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16065 jobs); direct axiom audit passed for 14927 declarations using only propext, Classical.choice and Quot.sound; all 14286 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.03 GiB.

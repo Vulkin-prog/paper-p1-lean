@@ -33307,7 +33307,7 @@
       "source": "companion_sections/cores.tex",
       "line": 549,
       "sha256": "3639c6e9ab75e816a5d899c0eaa98156ac7780ae1c841bdbd61bc4ca8e9276e9",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.ConnectedParticipatingWindows.witnesses",
         "PaperP1.FixedConnectedWeightedUnderInputs.uniform_bound",
@@ -33319,19 +33319,33 @@
         "PaperP1.FixedConnectedJointWeightedUnderInputs.uniform_bound",
         "PaperP1.ConnectedJointBoundedNullityTail.uniform_bound",
         "PaperP1.AllCardinalityConnectedJointUnderInputs.uniform_bound",
-        "PaperP1.AllCardinalityTotalActivityUnderInputs.uniform_bound"
+        "PaperP1.AllCardinalityTotalActivityUnderInputs.uniform_bound",
+        "PaperP1.AllCardinalityConnected.uniform_bound",
+        "PaperP1.AllCardinalityConnected.companion_T16_1",
+        "PaperP1.AllCardinalityConnectedJoint.uniform_bound",
+        "PaperP1.AllCardinalityCoreMass.uniform_bound",
+        "PaperP1.AllCardinalityCoreMass.companion_T16_2",
+        "PaperP1.AllCardinalityTotalActivity.uniform_bound",
+        "PaperP1.FixedConnectedJointWeighted.uniform_bound",
+        "PaperP1.FixedConnectedWeighted.uniform_bound",
+        "PaperP1.FixedPositiveCoreMass.uniform_bound",
+        "PaperP1.GrowingConnected.uniform_linear_range",
+        "PaperP1.GrowingConnected.uniform_sublog_range",
+        "PaperP1.GrowingConnected.companion_T16_3",
+        "PaperP1.HighNullityClosure.uniform_bound",
+        "PaperP1.HighNullityPairMass.aligned_cover",
+        "PaperP1.HighNullityPairMass.uniform_mass"
       ],
       "literature_inputs": [
-        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
-        "P1-GEO-ORDINARY-SURFACE-COVER",
-        "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+        "p1:internal:unconditional-all-cardinality-growing-activity"
       ],
       "mathematical_changes": [
         "P1-MATH-0138",
-        "P1-MATH-0142"
+        "P1-MATH-0142",
+        "P1-MATH-0438"
       ],
-      "notes": "Companion T16.1 is strengthened again: the SAME all-cardinality exponent\nmin(1,2-eta) now bounds the strictly larger actual joint-plus-absolute-\ncentered sum, not just the centered absolute activity. The result holds on\nevery actual dyadic subground for every connected family with at least three\nmembers and compatible nullity<=eta*L. All cardinalities share one threshold.\nAffine incompatibility and zero marginals remain included. The source's\n0<=eta<2 decay regime is included; the inequality is also valid for eta>=2.\nFinding P1-MATH-0142 records the larger quantity. Coverage stays87/167\nunconditional and26 conditional; confirmed improvements increase141 to142.\n\nCompatibleJointMajorant.pointwise proves the exact actual joint majorant\nq(I)<=prod(p_x)*2^rho_*(I), with no cardinality-dependent factor. When q(I)>0,\nthe exact actual joint rank formula and equality rho_*=rho give the result.\nWhen q(I)=0 the majorant is nonnegative. weighted_bound proves the finite\nweighted sum version with the actual individual marginals and any proved\nuniform compatible-rank amplification. No rank weight is silently\nidentified with an incompatible affine probability.\n\nFixedConnectedJointWeightedUnderInputs proves weighted joint rate1 over\nevery prescribed finite order range3..R. Connectedness gives an actual\npositive projection at every coordinate; hence no canonical component is\na singleton. The completed no-singleton joint catalog estimate then applies.\nIts only hypotheses are the existing finite coarse geometric parameters,\nat margin epsilon/8, selected before N.\n\nConnectedJointBoundedNullityTail gives the UNCONDITIONAL sufficiently large\ncardinality joint tail at exponent2-eta. The actual compatible joint\nmajorant is multiplied by the completed original participating independent\nweight tail, using exact weights u*p_x and their proved uniform marginal\ncap. Each coordinate may have a different relation witness; no simultaneous\nfull-support binary relation or edge-independence assertion is assumed.\nThe cutoff is chosen before the threshold and all cardinalities are retained.\n\nAllCardinalityConnectedJointUnderInputs.uniform_bound combines that tail\nwith the finite weighted joint range, yielding min(1,2-eta) at all actual\ncardinalities, with one existing coarse bundle at margin epsilon/16.\nAllCardinalityTotalActivityUnderInputs.uniform_bound combines it with the\nalready completed all-cardinality absolute centered bound. It proves the\nlarger sum of u^|I|*(q(I)+|c(I)|) at exponent min(1,2-eta). Final finite\ngeometric margins are epsilon/128 and epsilon/512 for the centered coarse\nbundles, sizeCap(epsilon/524288) for their existing pair bundle, and\nepsilon/32 for the joint coarse bundle. The finite union of these arguments\nuses only the same three already recorded geometric properties.\n\nThis stronger positive quantity is useful for activation events and for\nfamilies obtained after compressing a dependent pair. Those applications\nare still separate work, and the distinct separated compressed exponents\nin T15.1 are not asserted here. This checkpoint adds5 modules and6 theorems.\nNo new unproved literature property, axiom, dependency download, original\nmanuscript edit, Paper C port or Palomar registration is added.",
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13609 jobs); direct axiom audit passed for 10488 declarations using only propext, Classical.choice and Quot.sound; all 8860 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.67 GiB.",
+      "notes": "Companion TheoremT16.1, PropositionT16.2 and TheoremT16.3 now have unconditional canonical proofs in their complete source scopes. Their statements and full proofs in companion_sections/cores.tex lines549-763 were rechecked. All-cardinality centered activity, positive core mass without any size cutoff, and the literal growing and linear cardinality ranges are retained. Their4/5 exponents are strengthened to1 wherever the other rank cap permits.\n\nFixedConnectedWeighted and FixedConnectedJointWeighted provide actual centered and joint mass uniformly over prescribed bounded order ranges, using the internal connected activity and no-singleton joint catalog. AllCardinalityConnected and AllCardinalityConnectedJoint combine these finite ranges with the already internally proved uniform two-anchor tails. The stronger exponent ismin(1,2-eta), before weakening to the printedmin(4/5,2-eta). AllCardinalityTotalActivity also bounds the full actual joint-plus-absolute-centered sum at this stronger exponent. The finite cutoff is chosen beforeN; constants from fixed orders are not applied at growing order.\n\nHighNullityPairMass proves the entire actual pair joint mass above half a window rank at exponent1. It uses the internally proved nonaligned activity and the exact enlarged aligned rank classification, including both boundary channels and local defects. FixedPositiveCoreMass combines that size-two branch with internal no-singleton joint mass at all bounded higher orders. AllCardinalityCoreMass then adds the uniform multi-anchor positive-core tail and gives exponent1 at every cardinality under the printed even-core and nullity-cap conditions. Zero joint weights and incompatible systems are retained automatically; no exceptional-event or law-approximation premise is required.\n\nHighNullityClosure uses the exact deterministic peeling core cover and free independent complements, with no deletion-order factor. GrowingConnected.uniform_linear_range proves exponent1 whenever2*(t-2)*K<=L, simultaneously for everyK satisfying this literal inequality. The prescribed sublogarithmic corollary follows fromK(N)/log(N)->0. The printedT16.3 bound follows with an even fixedt chosen beforeN; for eta=3/2, t=4 gives exactlyK<=L/4. Both original linear-range and sublogarithmic assertions are thus covered.\n\nEarlier conditional declarations and external-input history remain preserved. Only the former finite geometric uses in these three numbered conclusions are discharged; no general geometric property or unrestricted growing-order moment theorem is promoted. Original source bytes and compiler/dependency pins remain unchanged.\n\nP1-MATH-0438 adds ten modules and fifteen theorems. CompanionT16.1,T16.2 andT16.3 move from conditional to proved. Coverage becomes127 proved,37 conditional and3 in_progress out of167, with164 completed. The project records436 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.\n\nEarlier checkpoint history:\nCompanion T16.1 is strengthened again: the SAME all-cardinality exponent\nmin(1,2-eta) now bounds the strictly larger actual joint-plus-absolute-\ncentered sum, not just the centered absolute activity. The result holds on\nevery actual dyadic subground for every connected family with at least three\nmembers and compatible nullity<=eta*L. All cardinalities share one threshold.\nAffine incompatibility and zero marginals remain included. The source's\n0<=eta<2 decay regime is included; the inequality is also valid for eta>=2.\nFinding P1-MATH-0142 records the larger quantity. Coverage stays87/167\nunconditional and26 conditional; confirmed improvements increase141 to142.\n\nCompatibleJointMajorant.pointwise proves the exact actual joint majorant\nq(I)<=prod(p_x)*2^rho_*(I), with no cardinality-dependent factor. When q(I)>0,\nthe exact actual joint rank formula and equality rho_*=rho give the result.\nWhen q(I)=0 the majorant is nonnegative. weighted_bound proves the finite\nweighted sum version with the actual individual marginals and any proved\nuniform compatible-rank amplification. No rank weight is silently\nidentified with an incompatible affine probability.\n\nFixedConnectedJointWeightedUnderInputs proves weighted joint rate1 over\nevery prescribed finite order range3..R. Connectedness gives an actual\npositive projection at every coordinate; hence no canonical component is\na singleton. The completed no-singleton joint catalog estimate then applies.\nIts only hypotheses are the existing finite coarse geometric parameters,\nat margin epsilon/8, selected before N.\n\nConnectedJointBoundedNullityTail gives the UNCONDITIONAL sufficiently large\ncardinality joint tail at exponent2-eta. The actual compatible joint\nmajorant is multiplied by the completed original participating independent\nweight tail, using exact weights u*p_x and their proved uniform marginal\ncap. Each coordinate may have a different relation witness; no simultaneous\nfull-support binary relation or edge-independence assertion is assumed.\nThe cutoff is chosen before the threshold and all cardinalities are retained.\n\nAllCardinalityConnectedJointUnderInputs.uniform_bound combines that tail\nwith the finite weighted joint range, yielding min(1,2-eta) at all actual\ncardinalities, with one existing coarse bundle at margin epsilon/16.\nAllCardinalityTotalActivityUnderInputs.uniform_bound combines it with the\nalready completed all-cardinality absolute centered bound. It proves the\nlarger sum of u^|I|*(q(I)+|c(I)|) at exponent min(1,2-eta). Final finite\ngeometric margins are epsilon/128 and epsilon/512 for the centered coarse\nbundles, sizeCap(epsilon/524288) for their existing pair bundle, and\nepsilon/32 for the joint coarse bundle. The finite union of these arguments\nuses only the same three already recorded geometric properties.\n\nThis stronger positive quantity is useful for activation events and for\nfamilies obtained after compressing a dependent pair. Those applications\nare still separate work, and the distinct separated compressed exponents\nin T15.1 are not asserted here. This checkpoint adds5 modules and6 theorems.\nNo new unproved literature property, axiom, dependency download, original\nmanuscript edit, Paper C port or Palomar registration is added.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16065 jobs); direct axiom audit passed for 14927 declarations using only propext, Classical.choice and Quot.sound; all 14286 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.03 GiB.",
       "validation_history": [
         {
           "status": "conditional",
@@ -33343,9 +33357,44 @@
             "P1-GEO-ORDINARY-SURFACE-COVER",
             "P1-GEO-NORMALIZED-CURVE-UNIFORM"
           ]
+        },
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (13609 jobs); direct axiom audit passed for 10488 declarations using only propext, Classical.choice and Quot.sound; all 8860 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.67 GiB.",
+          "validation_commit": "2ce8c5e956daacad2d0635100b987cb395f3ded5",
+          "literature_inputs": [
+            "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+            "P1-GEO-ORDINARY-SURFACE-COVER",
+            "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+          ]
         }
       ],
-      "validation_commit": "2ce8c5e956daacad2d0635100b987cb395f3ded5"
+      "canonical_statement": "PaperP1.AllCardinalityConnected.companion_T16_1",
+      "canonical_additional_statements": [
+        "PaperP1.AllCardinalityConnected.uniform_bound",
+        "PaperP1.AllCardinalityTotalActivity.uniform_bound"
+      ],
+      "remaining_unformalized_inputs": [],
+      "input_discharges": [
+        {
+          "input": "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+          "proof": "PaperP1.AllCardinalityConnected.companion_T16_1",
+          "scope": "Complete exact companionT16.1 conclusions, including all-cardinality core mass or literal linear/growing range as applicable, strengthened to exponent1. Internally proved actual finite branches and uniform tails; no general property asserted.",
+          "checkpoint": "P1-MATH-0438"
+        },
+        {
+          "input": "P1-GEO-ORDINARY-SURFACE-COVER",
+          "proof": "PaperP1.AllCardinalityConnected.companion_T16_1",
+          "scope": "Complete exact companionT16.1 conclusions, including all-cardinality core mass or literal linear/growing range as applicable, strengthened to exponent1. Internally proved actual finite branches and uniform tails; no general property asserted.",
+          "checkpoint": "P1-MATH-0438"
+        },
+        {
+          "input": "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+          "proof": "PaperP1.AllCardinalityConnected.companion_T16_1",
+          "scope": "Complete exact companionT16.1 conclusions, including all-cardinality core mass or literal linear/growing range as applicable, strengthened to exponent1. Internally proved actual finite branches and uniform tails; no general property asserted.",
+          "checkpoint": "P1-MATH-0438"
+        }
+      ]
     },
     {
       "label": "p1:core:positive-core",
@@ -33357,7 +33406,7 @@
       "source": "companion_sections/cores.tex",
       "line": 622,
       "sha256": "e5c6ebd716c5f8a8c0e132b36197a29e569891cdb0cc61b3d3d5bef5877ceec6",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.CoreCanonicalComponents.singleton_loss_zero",
         "PaperP1.CoreCanonicalComponents.block_card",
@@ -33368,19 +33417,69 @@
         "PaperP1.LargePositiveCoreTail.uniform_joint",
         "PaperP1.FixedPositiveCoreMassUnderInputs.uniform_bound",
         "PaperP1.AllCardinalityCoreMassUnderInputs.uniform_bound",
-        "PaperP1.AllCardinalityCoreMassUnderInputs.companion_T16_2"
+        "PaperP1.AllCardinalityCoreMassUnderInputs.companion_T16_2",
+        "PaperP1.AllCardinalityConnected.uniform_bound",
+        "PaperP1.AllCardinalityConnected.companion_T16_1",
+        "PaperP1.AllCardinalityConnectedJoint.uniform_bound",
+        "PaperP1.AllCardinalityCoreMass.uniform_bound",
+        "PaperP1.AllCardinalityCoreMass.companion_T16_2",
+        "PaperP1.AllCardinalityTotalActivity.uniform_bound",
+        "PaperP1.FixedConnectedJointWeighted.uniform_bound",
+        "PaperP1.FixedConnectedWeighted.uniform_bound",
+        "PaperP1.FixedPositiveCoreMass.uniform_bound",
+        "PaperP1.GrowingConnected.uniform_linear_range",
+        "PaperP1.GrowingConnected.uniform_sublog_range",
+        "PaperP1.GrowingConnected.companion_T16_3",
+        "PaperP1.HighNullityClosure.uniform_bound",
+        "PaperP1.HighNullityPairMass.aligned_cover",
+        "PaperP1.HighNullityPairMass.uniform_mass"
       ],
       "literature_inputs": [
-        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
-        "P1-GEO-ORDINARY-SURFACE-COVER",
-        "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+        "p1:internal:unconditional-all-cardinality-growing-activity"
       ],
       "mathematical_changes": [
-        "P1-MATH-0139"
+        "P1-MATH-0139",
+        "P1-MATH-0438"
       ],
-      "notes": "Companion T16.2 is complete conditionally, with the stronger positive\njoint-mass exponent1 instead of4/5. The bound is uniform over all actual\ncardinalities, all actual dyadic subgrounds and all actual t-cores whose\nrelative nullity lies in (L/2,eta*L]. The source's compatible population is\nincluded; the formal inequality also permits incompatible systems, which\nhave actual joint mass zero. It holds for even t>=2, eta>=0 and t>=eta+2,\nthus includes the source's eta>1 regime without imposing that unnecessary\nrestriction. Only the same three existing finite geometric properties\nremain explicit theorem arguments. No desired mass estimate is a premise.\n\nCoreCanonicalComponents proves that a singleton canonical part forces its\ncoordinate projection to be the zero linear map, so its exact deletion\nnullity loss is zero. Consequently every t-core with t>=2 has only\ncanonical components of cardinality at least two, with no compatibility or\ncardinality restriction. This is a structural statement for actual\nsquare-class relation kernels, not the size<256 ten-core moment ratio.\n\nHighNullityPairMassUnderInputs handles the entire size-two population with\nrelative nullity>L/2. The proved uniform enlarged alignment rank bound\nexcludes every aligned coefficient height>=3. Exact orientation and\ncoprimality leave only the literal1:1 and1:2 boundary populations. Their\nfull centered activities are already bounded unconditionally at rate1.\nThe entire nonaligned activity has the existing conditional rate1.\nEvery dependent pair satisfies actual q<=2|c|, including q=0, so positive\nunion bounds and a fixed-factor absorption give weighted joint mass rate1\nfor ALL such high-nullity pairs. No Private, good-source, regularity,\nselected-unit or affine-compatibility filter is imposed.\n\nLargePositiveCoreTail proves an unconditional sufficiently large\ncardinality rank-mass and joint-mass bound of rate3/2. For arbitrary even\nt>=2 it verifies all multi-anchor parameter conditions with A=8t,\nbeta=1-1/(4t), sigma=1-1/(16t). The moderate independent exponent is exactly\n-t+1/2. The positive saturated decay parameter selects a finite size s\nbefore N. Multiplying the completed multi-anchor independent budgets by\nthe actual relative-rank amplification N^(eta+small margin) gives rate3/2\nwhen t>=eta+2, and the actual joint mass is at most that rank weight. Each\nblock may use a different actual heavy relation. Heterogeneous marginals,\nzero marginals and all actual core populations are retained.\n\nFixedPositiveCoreMassUnderInputs proves joint mass rate1 for every\nprescribed bounded cardinality range. Sizes>=3 use the completed actual\nno-singleton seed catalog and positive extension propagation; size2 uses\nthe new high-nullity pair estimate. This avoids an exceptional activation\nevent and a Holder argument with high count moments. The full\nAllCardinalityCoreMassUnderInputs.uniform_bound selects the unconditional\nlarge-cardinality cutoff first, the finite coarse and pair geometric\nparameter bundles second, and N0 last. It then combines the finite range\nat rate1 with the unconditional rate3/2 tail. Final geometric margins are\nepsilon/32 for the coarse bundle and sizeCap(epsilon/256) for the pair\nbundle. companion_T16_2 supplies the literal source exponent4/5.\n\nFinding P1-MATH-0139 records the improvement. Unconditional coverage stays\n87/167; conditional coverage increases23 to24; confirmed improvements\nincrease138 to139. T16.3 and the final stopped expansion remain open at\nthis checkpoint. No original manuscript bytes, dependencies, axioms,\nPaper C port or Palomar action are added.",
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13543 jobs); direct axiom audit passed for 10407 declarations using only propext, Classical.choice and Quot.sound; all 8765 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.83 GiB.",
-      "validation_commit": "70a7d23693d6898c8d49d1ef29e3f966583fcd39"
+      "notes": "Companion TheoremT16.1, PropositionT16.2 and TheoremT16.3 now have unconditional canonical proofs in their complete source scopes. Their statements and full proofs in companion_sections/cores.tex lines549-763 were rechecked. All-cardinality centered activity, positive core mass without any size cutoff, and the literal growing and linear cardinality ranges are retained. Their4/5 exponents are strengthened to1 wherever the other rank cap permits.\n\nFixedConnectedWeighted and FixedConnectedJointWeighted provide actual centered and joint mass uniformly over prescribed bounded order ranges, using the internal connected activity and no-singleton joint catalog. AllCardinalityConnected and AllCardinalityConnectedJoint combine these finite ranges with the already internally proved uniform two-anchor tails. The stronger exponent ismin(1,2-eta), before weakening to the printedmin(4/5,2-eta). AllCardinalityTotalActivity also bounds the full actual joint-plus-absolute-centered sum at this stronger exponent. The finite cutoff is chosen beforeN; constants from fixed orders are not applied at growing order.\n\nHighNullityPairMass proves the entire actual pair joint mass above half a window rank at exponent1. It uses the internally proved nonaligned activity and the exact enlarged aligned rank classification, including both boundary channels and local defects. FixedPositiveCoreMass combines that size-two branch with internal no-singleton joint mass at all bounded higher orders. AllCardinalityCoreMass then adds the uniform multi-anchor positive-core tail and gives exponent1 at every cardinality under the printed even-core and nullity-cap conditions. Zero joint weights and incompatible systems are retained automatically; no exceptional-event or law-approximation premise is required.\n\nHighNullityClosure uses the exact deterministic peeling core cover and free independent complements, with no deletion-order factor. GrowingConnected.uniform_linear_range proves exponent1 whenever2*(t-2)*K<=L, simultaneously for everyK satisfying this literal inequality. The prescribed sublogarithmic corollary follows fromK(N)/log(N)->0. The printedT16.3 bound follows with an even fixedt chosen beforeN; for eta=3/2, t=4 gives exactlyK<=L/4. Both original linear-range and sublogarithmic assertions are thus covered.\n\nEarlier conditional declarations and external-input history remain preserved. Only the former finite geometric uses in these three numbered conclusions are discharged; no general geometric property or unrestricted growing-order moment theorem is promoted. Original source bytes and compiler/dependency pins remain unchanged.\n\nP1-MATH-0438 adds ten modules and fifteen theorems. CompanionT16.1,T16.2 andT16.3 move from conditional to proved. Coverage becomes127 proved,37 conditional and3 in_progress out of167, with164 completed. The project records436 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.\n\nEarlier checkpoint history:\nCompanion T16.2 is complete conditionally, with the stronger positive\njoint-mass exponent1 instead of4/5. The bound is uniform over all actual\ncardinalities, all actual dyadic subgrounds and all actual t-cores whose\nrelative nullity lies in (L/2,eta*L]. The source's compatible population is\nincluded; the formal inequality also permits incompatible systems, which\nhave actual joint mass zero. It holds for even t>=2, eta>=0 and t>=eta+2,\nthus includes the source's eta>1 regime without imposing that unnecessary\nrestriction. Only the same three existing finite geometric properties\nremain explicit theorem arguments. No desired mass estimate is a premise.\n\nCoreCanonicalComponents proves that a singleton canonical part forces its\ncoordinate projection to be the zero linear map, so its exact deletion\nnullity loss is zero. Consequently every t-core with t>=2 has only\ncanonical components of cardinality at least two, with no compatibility or\ncardinality restriction. This is a structural statement for actual\nsquare-class relation kernels, not the size<256 ten-core moment ratio.\n\nHighNullityPairMassUnderInputs handles the entire size-two population with\nrelative nullity>L/2. The proved uniform enlarged alignment rank bound\nexcludes every aligned coefficient height>=3. Exact orientation and\ncoprimality leave only the literal1:1 and1:2 boundary populations. Their\nfull centered activities are already bounded unconditionally at rate1.\nThe entire nonaligned activity has the existing conditional rate1.\nEvery dependent pair satisfies actual q<=2|c|, including q=0, so positive\nunion bounds and a fixed-factor absorption give weighted joint mass rate1\nfor ALL such high-nullity pairs. No Private, good-source, regularity,\nselected-unit or affine-compatibility filter is imposed.\n\nLargePositiveCoreTail proves an unconditional sufficiently large\ncardinality rank-mass and joint-mass bound of rate3/2. For arbitrary even\nt>=2 it verifies all multi-anchor parameter conditions with A=8t,\nbeta=1-1/(4t), sigma=1-1/(16t). The moderate independent exponent is exactly\n-t+1/2. The positive saturated decay parameter selects a finite size s\nbefore N. Multiplying the completed multi-anchor independent budgets by\nthe actual relative-rank amplification N^(eta+small margin) gives rate3/2\nwhen t>=eta+2, and the actual joint mass is at most that rank weight. Each\nblock may use a different actual heavy relation. Heterogeneous marginals,\nzero marginals and all actual core populations are retained.\n\nFixedPositiveCoreMassUnderInputs proves joint mass rate1 for every\nprescribed bounded cardinality range. Sizes>=3 use the completed actual\nno-singleton seed catalog and positive extension propagation; size2 uses\nthe new high-nullity pair estimate. This avoids an exceptional activation\nevent and a Holder argument with high count moments. The full\nAllCardinalityCoreMassUnderInputs.uniform_bound selects the unconditional\nlarge-cardinality cutoff first, the finite coarse and pair geometric\nparameter bundles second, and N0 last. It then combines the finite range\nat rate1 with the unconditional rate3/2 tail. Final geometric margins are\nepsilon/32 for the coarse bundle and sizeCap(epsilon/256) for the pair\nbundle. companion_T16_2 supplies the literal source exponent4/5.\n\nFinding P1-MATH-0139 records the improvement. Unconditional coverage stays\n87/167; conditional coverage increases23 to24; confirmed improvements\nincrease138 to139. T16.3 and the final stopped expansion remain open at\nthis checkpoint. No original manuscript bytes, dependencies, axioms,\nPaper C port or Palomar action are added.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16065 jobs); direct axiom audit passed for 14927 declarations using only propext, Classical.choice and Quot.sound; all 14286 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.03 GiB.",
+      "validation_history": [
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (13543 jobs); direct axiom audit passed for 10407 declarations using only propext, Classical.choice and Quot.sound; all 8765 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.83 GiB.",
+          "validation_commit": "70a7d23693d6898c8d49d1ef29e3f966583fcd39",
+          "literature_inputs": [
+            "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+            "P1-GEO-ORDINARY-SURFACE-COVER",
+            "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+          ]
+        }
+      ],
+      "canonical_statement": "PaperP1.AllCardinalityCoreMass.companion_T16_2",
+      "canonical_additional_statements": [
+        "PaperP1.AllCardinalityCoreMass.uniform_bound"
+      ],
+      "remaining_unformalized_inputs": [],
+      "input_discharges": [
+        {
+          "input": "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+          "proof": "PaperP1.AllCardinalityCoreMass.companion_T16_2",
+          "scope": "Complete exact companionT16.2 conclusions, including all-cardinality core mass or literal linear/growing range as applicable, strengthened to exponent1. Internally proved actual finite branches and uniform tails; no general property asserted.",
+          "checkpoint": "P1-MATH-0438"
+        },
+        {
+          "input": "P1-GEO-ORDINARY-SURFACE-COVER",
+          "proof": "PaperP1.AllCardinalityCoreMass.companion_T16_2",
+          "scope": "Complete exact companionT16.2 conclusions, including all-cardinality core mass or literal linear/growing range as applicable, strengthened to exponent1. Internally proved actual finite branches and uniform tails; no general property asserted.",
+          "checkpoint": "P1-MATH-0438"
+        },
+        {
+          "input": "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+          "proof": "PaperP1.AllCardinalityCoreMass.companion_T16_2",
+          "scope": "Complete exact companionT16.2 conclusions, including all-cardinality core mass or literal linear/growing range as applicable, strengthened to exponent1. Internally proved actual finite branches and uniform tails; no general property asserted.",
+          "checkpoint": "P1-MATH-0438"
+        }
+      ]
     },
     {
       "label": "p1:core:bounded-nullity",
@@ -33392,7 +33491,7 @@
       "source": "companion_sections/cores.tex",
       "line": 704,
       "sha256": "c672fc069a515cba354f69e71bde1bff93b069e2ad4e095b3048543df69780f3",
-      "status": "conditional",
+      "status": "proved",
       "lean_declarations": [
         "PaperP1.VariableRelationCore.exists_bound",
         "PaperP1.VariableRelationCore.weighted_bound",
@@ -33402,19 +33501,70 @@
         "PaperP1.GrowingConnectedUnderInputs.uniform_linear_range",
         "PaperP1.GrowingConnectedUnderInputs.uniform_sublog_range",
         "PaperP1.GrowingConnectedUnderInputs.companion_T16_3",
-        "PaperP1.HighNullityCoreCover.cores"
+        "PaperP1.HighNullityCoreCover.cores",
+        "PaperP1.AllCardinalityConnected.uniform_bound",
+        "PaperP1.AllCardinalityConnected.companion_T16_1",
+        "PaperP1.AllCardinalityConnectedJoint.uniform_bound",
+        "PaperP1.AllCardinalityCoreMass.uniform_bound",
+        "PaperP1.AllCardinalityCoreMass.companion_T16_2",
+        "PaperP1.AllCardinalityTotalActivity.uniform_bound",
+        "PaperP1.FixedConnectedJointWeighted.uniform_bound",
+        "PaperP1.FixedConnectedWeighted.uniform_bound",
+        "PaperP1.FixedPositiveCoreMass.uniform_bound",
+        "PaperP1.GrowingConnected.uniform_linear_range",
+        "PaperP1.GrowingConnected.uniform_sublog_range",
+        "PaperP1.GrowingConnected.companion_T16_3",
+        "PaperP1.HighNullityClosure.uniform_bound",
+        "PaperP1.HighNullityPairMass.aligned_cover",
+        "PaperP1.HighNullityPairMass.uniform_mass"
       ],
       "literature_inputs": [
-        "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
-        "P1-GEO-ORDINARY-SURFACE-COVER",
-        "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+        "p1:internal:unconditional-all-cardinality-growing-activity"
       ],
       "mathematical_changes": [
-        "P1-MATH-0140"
+        "P1-MATH-0140",
+        "P1-MATH-0438"
       ],
-      "notes": "Companion T16.3 is complete conditionally under the same three explicit\nfinite geometric properties, with exponent1 instead of4/5. The uniform\nlinear-range theorem keeps the source's full cardinality scope\n2*(t-2)*K<=L for any fixed even t>=2 with t>=eta+2. One N0 is chosen before\nall admissible critical lengths, all such K, all actual dyadic subgrounds\nand all actual connected subpopulations of sizes3..K and compatible\nnullity<=eta*L. In particular eta=3/2,t=4 gives the literal K<=L/4 range.\nThe separate sublogarithmic theorem treats every actual integer schedule\nK_N/log(N)->0. companion_T16_3 chooses an adequate even t before N and\nsupplies the printed exponent4/5 for every eta>=0. No fixed-order estimate\nis promoted to a growing-order one.\n\nVariableRelationCore.exists_bound proves the actual compatible peeling\nconstruction at arbitrary t. It first chooses a positive-mass subfamily\nattaining the compatible-nullity maximum and applies the proved terminating\ntrace with deletion threshold t-2. The terminal family is a positive actual\nt-core. Its nullity is at most the original compatible maximum, and its\nloss budget is at most (t-2)*(|I|-|D|). The already proved actual peeling\nmajorant includes all coordinates outside the maximizing compatible family,\nso incompatible original I and zero marginal sites remain included.\nweighted_bound transports the result to exact heterogeneous independent\ncomplement weights with fixed factor 2^(t-1)*u per coordinate.\n\nHighNullityCoreCover defines the entire actual positive t-core population\nwith relative nullity in (L/2,eta*L]. If rho_*(I)>L and\n2*(t-2)*|I|<=L, the proved loss budget forces the terminal core into that\npopulation. The positive supersets bound sums all independently weighted\ncomplements, giving exp(sum_x 2^(t-1)*u*p_x) times the actual core joint mass.\nThere is no deletion-order factor, factorial multiplicity assumption or\ncompatibility restriction on the original I. All incidence bounds and\ncomplement reconstruction identities are proved in Lean.\n\nHighNullityClosureUnderInputs combines the completed all-cardinality\npositive core rate1 with the proved actual mean cap, which bounds the free\ncomplement exponential by a fixed constant. It therefore controls the\nENTIRE high-compatible-nullity activity at rate1 throughout the literal\nlinear cardinality range, even without connectedness. Its finite geometric\narguments are the already recorded coarse and pair parameter bundles.\n\nGrowingConnectedUnderInputs.uniform_linear_range splits the actual\nconnected population at rho_*=L. The low sector uses the completed T16.1\nat eta=1, valid at all cardinalities with rate1. The high sector uses the\nnew actual core closure, also with rate1. A fixed-factor absorption\ncompletes the full connected estimate at one common threshold. The final\nlow-sector coarse margins are epsilon/128 and epsilon/512, with pair cap\nsizeCap(epsilon/524288); the core-sector coarse margin is epsilon/128 and\nits pair cap is sizeCap(epsilon/1024). All cutoffs and finite geometric\nparameters precede N. uniform_sublog_range derives the literal linear\nbudget uniformly in every critical length from K_N/log(N)->0, rather than\nassuming it silently. The final wrapper explicitly constructs an even t.\n\nFinding P1-MATH-0140 records the stronger growing-range exponent and exact\nheterogeneous closure. Unconditional coverage remains87/167; conditional\ncoverage increases24 to25; confirmed improvements increase139 to140.\nT16.1,T16.2,T16.3 are now all complete conditionally. The sharper4/3 fixed\nconnected main15.10, the exceptional active event T15.2 and the final\nstopped expansion are not claimed complete. No new literature premise,\naxiom, external dependency, manuscript-byte edit or Palomar action is added.",
-      "validation": "Verified under Lean v4.36.0-rc2: full build passed (13551 jobs); direct axiom audit passed for 10415 declarations using only propext, Classical.choice and Quot.sound; all 8774 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.80 GiB.",
-      "validation_commit": "21a6cf583d00609b300dd149d99cfcc8911c1aba"
+      "notes": "Companion TheoremT16.1, PropositionT16.2 and TheoremT16.3 now have unconditional canonical proofs in their complete source scopes. Their statements and full proofs in companion_sections/cores.tex lines549-763 were rechecked. All-cardinality centered activity, positive core mass without any size cutoff, and the literal growing and linear cardinality ranges are retained. Their4/5 exponents are strengthened to1 wherever the other rank cap permits.\n\nFixedConnectedWeighted and FixedConnectedJointWeighted provide actual centered and joint mass uniformly over prescribed bounded order ranges, using the internal connected activity and no-singleton joint catalog. AllCardinalityConnected and AllCardinalityConnectedJoint combine these finite ranges with the already internally proved uniform two-anchor tails. The stronger exponent ismin(1,2-eta), before weakening to the printedmin(4/5,2-eta). AllCardinalityTotalActivity also bounds the full actual joint-plus-absolute-centered sum at this stronger exponent. The finite cutoff is chosen beforeN; constants from fixed orders are not applied at growing order.\n\nHighNullityPairMass proves the entire actual pair joint mass above half a window rank at exponent1. It uses the internally proved nonaligned activity and the exact enlarged aligned rank classification, including both boundary channels and local defects. FixedPositiveCoreMass combines that size-two branch with internal no-singleton joint mass at all bounded higher orders. AllCardinalityCoreMass then adds the uniform multi-anchor positive-core tail and gives exponent1 at every cardinality under the printed even-core and nullity-cap conditions. Zero joint weights and incompatible systems are retained automatically; no exceptional-event or law-approximation premise is required.\n\nHighNullityClosure uses the exact deterministic peeling core cover and free independent complements, with no deletion-order factor. GrowingConnected.uniform_linear_range proves exponent1 whenever2*(t-2)*K<=L, simultaneously for everyK satisfying this literal inequality. The prescribed sublogarithmic corollary follows fromK(N)/log(N)->0. The printedT16.3 bound follows with an even fixedt chosen beforeN; for eta=3/2, t=4 gives exactlyK<=L/4. Both original linear-range and sublogarithmic assertions are thus covered.\n\nEarlier conditional declarations and external-input history remain preserved. Only the former finite geometric uses in these three numbered conclusions are discharged; no general geometric property or unrestricted growing-order moment theorem is promoted. Original source bytes and compiler/dependency pins remain unchanged.\n\nP1-MATH-0438 adds ten modules and fifteen theorems. CompanionT16.1,T16.2 andT16.3 move from conditional to proved. Coverage becomes127 proved,37 conditional and3 in_progress out of167, with164 completed. The project records436 improvements and two statement-scope corrections. No new axiom, dependency download or Palomar submission is introduced.\n\nEarlier checkpoint history:\nCompanion T16.3 is complete conditionally under the same three explicit\nfinite geometric properties, with exponent1 instead of4/5. The uniform\nlinear-range theorem keeps the source's full cardinality scope\n2*(t-2)*K<=L for any fixed even t>=2 with t>=eta+2. One N0 is chosen before\nall admissible critical lengths, all such K, all actual dyadic subgrounds\nand all actual connected subpopulations of sizes3..K and compatible\nnullity<=eta*L. In particular eta=3/2,t=4 gives the literal K<=L/4 range.\nThe separate sublogarithmic theorem treats every actual integer schedule\nK_N/log(N)->0. companion_T16_3 chooses an adequate even t before N and\nsupplies the printed exponent4/5 for every eta>=0. No fixed-order estimate\nis promoted to a growing-order one.\n\nVariableRelationCore.exists_bound proves the actual compatible peeling\nconstruction at arbitrary t. It first chooses a positive-mass subfamily\nattaining the compatible-nullity maximum and applies the proved terminating\ntrace with deletion threshold t-2. The terminal family is a positive actual\nt-core. Its nullity is at most the original compatible maximum, and its\nloss budget is at most (t-2)*(|I|-|D|). The already proved actual peeling\nmajorant includes all coordinates outside the maximizing compatible family,\nso incompatible original I and zero marginal sites remain included.\nweighted_bound transports the result to exact heterogeneous independent\ncomplement weights with fixed factor 2^(t-1)*u per coordinate.\n\nHighNullityCoreCover defines the entire actual positive t-core population\nwith relative nullity in (L/2,eta*L]. If rho_*(I)>L and\n2*(t-2)*|I|<=L, the proved loss budget forces the terminal core into that\npopulation. The positive supersets bound sums all independently weighted\ncomplements, giving exp(sum_x 2^(t-1)*u*p_x) times the actual core joint mass.\nThere is no deletion-order factor, factorial multiplicity assumption or\ncompatibility restriction on the original I. All incidence bounds and\ncomplement reconstruction identities are proved in Lean.\n\nHighNullityClosureUnderInputs combines the completed all-cardinality\npositive core rate1 with the proved actual mean cap, which bounds the free\ncomplement exponential by a fixed constant. It therefore controls the\nENTIRE high-compatible-nullity activity at rate1 throughout the literal\nlinear cardinality range, even without connectedness. Its finite geometric\narguments are the already recorded coarse and pair parameter bundles.\n\nGrowingConnectedUnderInputs.uniform_linear_range splits the actual\nconnected population at rho_*=L. The low sector uses the completed T16.1\nat eta=1, valid at all cardinalities with rate1. The high sector uses the\nnew actual core closure, also with rate1. A fixed-factor absorption\ncompletes the full connected estimate at one common threshold. The final\nlow-sector coarse margins are epsilon/128 and epsilon/512, with pair cap\nsizeCap(epsilon/524288); the core-sector coarse margin is epsilon/128 and\nits pair cap is sizeCap(epsilon/1024). All cutoffs and finite geometric\nparameters precede N. uniform_sublog_range derives the literal linear\nbudget uniformly in every critical length from K_N/log(N)->0, rather than\nassuming it silently. The final wrapper explicitly constructs an even t.\n\nFinding P1-MATH-0140 records the stronger growing-range exponent and exact\nheterogeneous closure. Unconditional coverage remains87/167; conditional\ncoverage increases24 to25; confirmed improvements increase139 to140.\nT16.1,T16.2,T16.3 are now all complete conditionally. The sharper4/3 fixed\nconnected main15.10, the exceptional active event T15.2 and the final\nstopped expansion are not claimed complete. No new literature premise,\naxiom, external dependency, manuscript-byte edit or Palomar action is added.",
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16065 jobs); direct axiom audit passed for 14927 declarations using only propext, Classical.choice and Quot.sound; all 14286 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.03 GiB.",
+      "validation_history": [
+        {
+          "status": "conditional",
+          "validation": "Verified under Lean v4.36.0-rc2: full build passed (13551 jobs); direct axiom audit passed for 10415 declarations using only propext, Classical.choice and Quot.sound; all 8774 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 12.80 GiB.",
+          "validation_commit": "21a6cf583d00609b300dd149d99cfcc8911c1aba",
+          "literature_inputs": [
+            "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+            "P1-GEO-ORDINARY-SURFACE-COVER",
+            "P1-GEO-NORMALIZED-CURVE-UNIFORM"
+          ]
+        }
+      ],
+      "canonical_statement": "PaperP1.GrowingConnected.companion_T16_3",
+      "canonical_additional_statements": [
+        "PaperP1.GrowingConnected.uniform_linear_range",
+        "PaperP1.GrowingConnected.uniform_sublog_range"
+      ],
+      "remaining_unformalized_inputs": [],
+      "input_discharges": [
+        {
+          "input": "P1-GEO-CHOSEN-SOURCE-SURFACE-COVER",
+          "proof": "PaperP1.GrowingConnected.companion_T16_3",
+          "scope": "Complete exact companionT16.3 conclusions, including all-cardinality core mass or literal linear/growing range as applicable, strengthened to exponent1. Internally proved actual finite branches and uniform tails; no general property asserted.",
+          "checkpoint": "P1-MATH-0438"
+        },
+        {
+          "input": "P1-GEO-ORDINARY-SURFACE-COVER",
+          "proof": "PaperP1.GrowingConnected.companion_T16_3",
+          "scope": "Complete exact companionT16.3 conclusions, including all-cardinality core mass or literal linear/growing range as applicable, strengthened to exponent1. Internally proved actual finite branches and uniform tails; no general property asserted.",
+          "checkpoint": "P1-MATH-0438"
+        },
+        {
+          "input": "P1-GEO-NORMALIZED-CURVE-UNIFORM",
+          "proof": "PaperP1.GrowingConnected.companion_T16_3",
+          "scope": "Complete exact companionT16.3 conclusions, including all-cardinality core mass or literal linear/growing range as applicable, strengthened to exponent1. Internally proved actual finite branches and uniform tails; no general property asserted.",
+          "checkpoint": "P1-MATH-0438"
+        }
+      ]
     },
     {
       "label": "p1:close:deficit-bounds",

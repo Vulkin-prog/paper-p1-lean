@@ -6741,11 +6741,17 @@ import PaperP1
 #print axioms PaperP1.AllAlignedTargetTripleMass.all_actual_sources
 #print axioms PaperP1.AllAlignedTargetTripleMass.mass_le_sum
 #print axioms PaperP1.AllAlignedTargetTripleMass.uniform_mass
+#print axioms PaperP1.AllCardinalityConnected.uniform_bound
+#print axioms PaperP1.AllCardinalityConnected.companion_T16_1
+#print axioms PaperP1.AllCardinalityConnectedJoint.uniform_bound
 #print axioms PaperP1.AllCardinalityConnectedJointUnderInputs.uniform_bound
 #print axioms PaperP1.AllCardinalityConnectedUnderInputs.uniform_bound
 #print axioms PaperP1.AllCardinalityConnectedUnderInputs.companion_T16_1
+#print axioms PaperP1.AllCardinalityCoreMass.uniform_bound
+#print axioms PaperP1.AllCardinalityCoreMass.companion_T16_2
 #print axioms PaperP1.AllCardinalityCoreMassUnderInputs.uniform_bound
 #print axioms PaperP1.AllCardinalityCoreMassUnderInputs.companion_T16_2
+#print axioms PaperP1.AllCardinalityTotalActivity.uniform_bound
 #print axioms PaperP1.AllCardinalityTotalActivityUnderInputs.uniform_bound
 #print axioms PaperP1.AllPairCriteriaUnderInputs.goodResidual_nonneg
 #print axioms PaperP1.AllPairCriteriaUnderInputs.allResidual_nonneg
@@ -7747,7 +7753,9 @@ import PaperP1
 #print axioms PaperP1.FixedChannelNonalignedMassUnderInputs.uniform_bound
 #print axioms PaperP1.FixedChannelPairProbability.uniform_bound
 #print axioms PaperP1.FixedChannelPairProbability.uniform_coarse
+#print axioms PaperP1.FixedConnectedJointWeighted.uniform_bound
 #print axioms PaperP1.FixedConnectedJointWeightedUnderInputs.uniform_bound
+#print axioms PaperP1.FixedConnectedWeighted.uniform_bound
 #print axioms PaperP1.FixedConnectedWeightedUnderInputs.uniform_bound
 #print axioms PaperP1.FixedContactCenteredActivity.uniform_bound
 #print axioms PaperP1.FixedCountMomentBounds.uniform_factorial_upper
@@ -7828,6 +7836,7 @@ import PaperP1
 #print axioms PaperP1.FixedPlaneSplitCount.scaled_offset_bounds
 #print axioms PaperP1.FixedPlaneSplitCount.pairFibre_card
 #print axioms PaperP1.FixedPlaneSplitCount.uniform_count
+#print axioms PaperP1.FixedPositiveCoreMass.uniform_bound
 #print axioms PaperP1.FixedPositiveCoreMassUnderInputs.uniform_bound
 #print axioms PaperP1.FixedPrimitiveMass.uniform_triples
 #print axioms PaperP1.FixedPrimitiveMass.uniform_fixed
@@ -7942,6 +7951,9 @@ import PaperP1
 #print axioms PaperP1.GoodPairSeedTail.private_ratio
 #print axioms PaperP1.GoodPairSeedTail.uniform_ratio
 #print axioms PaperP1.GoodPairSeedTail.uniform_large_seeds
+#print axioms PaperP1.GrowingConnected.uniform_linear_range
+#print axioms PaperP1.GrowingConnected.uniform_sublog_range
+#print axioms PaperP1.GrowingConnected.companion_T16_3
 #print axioms PaperP1.GrowingConnectedUnderInputs.uniform_linear_range
 #print axioms PaperP1.GrowingConnectedUnderInputs.uniform_sublog_range
 #print axioms PaperP1.GrowingConnectedUnderInputs.companion_T16_3
@@ -8011,7 +8023,10 @@ import PaperP1
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.meanCap_pos
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.errorConstant_pos
 #print axioms PaperP1.HeterogeneousRunConversionAsymptotic.uniform_actual_bound
+#print axioms PaperP1.HighNullityClosure.uniform_bound
 #print axioms PaperP1.HighNullityClosureUnderInputs.uniform_bound
+#print axioms PaperP1.HighNullityPairMass.aligned_cover
+#print axioms PaperP1.HighNullityPairMass.uniform_mass
 #print axioms PaperP1.HighNullityPairMassUnderInputs.aligned_cover
 #print axioms PaperP1.HighNullityPairMassUnderInputs.uniform_mass
 #print axioms PaperP1.HomogeneousAlignedTargetTripleProbability.uniform_point_bound

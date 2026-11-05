@@ -22035,6 +22035,47 @@
         "status": "not_integrated"
       },
       "validation_commit": "1c564c64e18411b75f39d086280d607b66480b5a"
+    },
+    {
+      "id": "P1-MATH-0438",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:core:low-nullity",
+        "number": "T16.1",
+        "page": 57,
+        "source": "companion_sections/cores.tex",
+        "line": 549,
+        "statement_sha256": "3639c6e9ab75e816a5d899c0eaa98156ac7780ae1c841bdbd61bc4ca8e9276e9"
+      },
+      "original_assumption": "The all-cardinality connected and positive-core bounds and growing-range theorem retained finite geometric inputs in the bounded-order and high-nullity pair branches.",
+      "finding": "Internal fixed connected/no-singleton activity and actual high-nullity pair mass close the finite branches. Uniform two-anchor/multi-anchor tails and deterministic core peeling then prove all original all-cardinality and literal linear/growing assertions, with stronger exponent1.",
+      "proposed_revision": "Use the internal actual fixed and pair bounds in the uniform tail/core arguments. State the stronger min(1,2-eta) connected exponent and exponent1 positive-core/growing bounds, preserving the literal2*(t-2)*K<=L range and every all-cardinality quantifier.",
+      "impact": "CompanionT16.1,T16.2 andT16.3 become unconditional, including positive core mass at all sizes and the full linear range. Coverage becomes127 proved,37 conditional and3 in_progress out of167.",
+      "evidence": [
+        "PaperP1.AllCardinalityConnected.uniform_bound",
+        "PaperP1.AllCardinalityConnected.companion_T16_1",
+        "PaperP1.AllCardinalityConnectedJoint.uniform_bound",
+        "PaperP1.AllCardinalityCoreMass.uniform_bound",
+        "PaperP1.AllCardinalityCoreMass.companion_T16_2",
+        "PaperP1.AllCardinalityTotalActivity.uniform_bound",
+        "PaperP1.FixedConnectedJointWeighted.uniform_bound",
+        "PaperP1.FixedConnectedWeighted.uniform_bound",
+        "PaperP1.FixedPositiveCoreMass.uniform_bound",
+        "PaperP1.GrowingConnected.uniform_linear_range",
+        "PaperP1.GrowingConnected.uniform_sublog_range",
+        "PaperP1.GrowingConnected.companion_T16_3",
+        "PaperP1.HighNullityClosure.uniform_bound",
+        "PaperP1.HighNullityPairMass.aligned_cover",
+        "PaperP1.HighNullityPairMass.uniform_mass"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16065 jobs); direct axiom audit passed for 14927 declarations using only propext, Classical.choice and Quot.sound; all 14286 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.03 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

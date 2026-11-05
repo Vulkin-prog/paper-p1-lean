@@ -3737,3 +3737,13 @@ public import PaperP1.Asymptotics.FixedHigherCumulants
 public import PaperP1.Asymptotics.FixedQuadraticFactorialMoments
 public import PaperP1.Asymptotics.FixedQuadraticOrdinaryMoments
 public import PaperP1.Asymptotics.NominalQuadraticFactorialMoments
+public import PaperP1.Asymptotics.AllCardinalityConnected
+public import PaperP1.Asymptotics.AllCardinalityConnectedJoint
+public import PaperP1.Asymptotics.AllCardinalityCoreMass
+public import PaperP1.Asymptotics.AllCardinalityTotalActivity
+public import PaperP1.Asymptotics.FixedConnectedJointWeighted
+public import PaperP1.Asymptotics.FixedConnectedWeighted
+public import PaperP1.Asymptotics.FixedPositiveCoreMass
+public import PaperP1.Asymptotics.GrowingConnected
+public import PaperP1.Asymptotics.HighNullityClosure
+public import PaperP1.Asymptotics.HighNullityPairMass
