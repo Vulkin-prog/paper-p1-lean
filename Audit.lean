@@ -2790,6 +2790,14 @@ import PaperP1
 #print axioms PaperP1.PowerSeriesTail.constant_pos
 #print axioms PaperP1.PowerSeriesTail.tail_le_power
 #print axioms PaperP1.PrimeEulerSaddleScale.exponent_bound
+#print axioms PaperP1.PrimeLogarithmicBands.mass_nonneg
+#print axioms PaperP1.PrimeLogarithmicBands.interval_lower
+#print axioms PaperP1.PrimeLogarithmicBands.band_disjoint
+#print axioms PaperP1.PrimeLogarithmicBands.band_pairwise
+#print axioms PaperP1.PrimeLogarithmicBands.bands_properties
+#print axioms PaperP1.PrimeLogarithmicBands.bands_subset
+#print axioms PaperP1.PrimeLogarithmicBands.bands_mass
+#print axioms PaperP1.PrimeLogarithmicBands.uniform_bands_lower
 #print axioms PaperP1.PrimeProductReciprocalLower.root_scale_lower
 #print axioms PaperP1.PrimeProductReciprocalLower.exponential_lower
 #print axioms PaperP1.PrimeProductReciprocalSaddleLower.uniform_ordinary_lower
@@ -6005,6 +6013,12 @@ import PaperP1
 #print axioms PaperP1.SmoothPrimeIncidence.weighted_subset
 #print axioms PaperP1.SmoothPrimeIncidence.lower_transfer
 #print axioms PaperP1.SmoothPrimeIncidence.count_lower_from_band
+#print axioms PaperP1.SmoothRecursiveLower.smooth_below
+#print axioms PaperP1.SmoothRecursiveLower.smooth_below_card
+#print axioms PaperP1.SmoothRecursiveLower.floor_quotient_half
+#print axioms PaperP1.SmoothRecursiveLower.geometric_density_lower
+#print axioms PaperP1.SmoothRecursiveLower.ordinary_reciprocal_lower
+#print axioms PaperP1.SmoothRecursiveLower.geometric_reciprocal_lower
 #print axioms PaperP1.SmoothSquarefreeCount.mem_naturalValues
 #print axioms PaperP1.SmoothSquarefreeCount.mem_values
 #print axioms PaperP1.SmoothSquarefreeCount.naturalValues_subset_cover

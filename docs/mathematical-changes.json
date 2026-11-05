@@ -23292,6 +23292,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "fabc857b3f7360b5fb0930a0d1447ea9f084a6e7"
+    },
+    {
+      "id": "P1-MATH-0467",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "The new weighted smooth recursion still needed a positive prime-band mass and an explicit iteration with floor and density losses controlled.",
+      "finding": "Actual disjoint geometric prime bands have mass at least k/8 by the internal PNT. A proved height induction yields Psi(X,Y)>=X*r^k whenever X<=Y*R^k under explicit finite band conditions, with every floor and multiplicity loss accounted for.",
+      "proposed_revision": "Use the internal prime-band construction and finite smooth-density iteration to build lower estimates. Distinguish their explicit finite parameter conditions from the still unproved moving-saddle leading lower coefficient and fine EIP error.",
+      "impact": "Supplies a verified recursive lower-count mechanism and internally proved positive prime-band mass. The moving-scale analytic transport and complete fine reciprocal equivalent are still open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.PrimeLogarithmicBands.mass_nonneg",
+        "PaperP1.PrimeLogarithmicBands.interval_lower",
+        "PaperP1.PrimeLogarithmicBands.band_disjoint",
+        "PaperP1.PrimeLogarithmicBands.band_pairwise",
+        "PaperP1.PrimeLogarithmicBands.bands_properties",
+        "PaperP1.PrimeLogarithmicBands.bands_subset",
+        "PaperP1.PrimeLogarithmicBands.bands_mass",
+        "PaperP1.PrimeLogarithmicBands.uniform_bands_lower",
+        "PaperP1.SmoothRecursiveLower.smooth_below",
+        "PaperP1.SmoothRecursiveLower.smooth_below_card",
+        "PaperP1.SmoothRecursiveLower.floor_quotient_half",
+        "PaperP1.SmoothRecursiveLower.geometric_density_lower",
+        "PaperP1.SmoothRecursiveLower.ordinary_reciprocal_lower",
+        "PaperP1.SmoothRecursiveLower.geometric_reciprocal_lower",
+        "PaperP1.PrimeLogarithmicBands.mass",
+        "PaperP1.PrimeLogarithmicBands.bands"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16383 jobs); direct axiom audit passed for 15328 declarations using only propext, Classical.choice and Quot.sound; all 14761 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.46 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
