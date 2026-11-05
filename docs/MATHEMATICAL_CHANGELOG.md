@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**410 mathematical improvements and two statement-scope corrections are confirmed.**
+**411 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24864,3 +24864,20 @@ OrderDependentMomentBound.uniform_source_growth closes the internally proved rec
 P1-MATH-0412 adds three modules, eight theorems and one definition. Companion T19.4 moves from conditional to proved. Coverage becomes102 proved and62 conditional out of167, with164 completed and three in_progress. The ledger records410 improvements and two statement-scope corrections. This discharge concerns the seed and growing-order branching chain only; full growing-degree BCN, uniform maximal rank bounds and unrelated surface/curve properties remain open. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15805 jobs); direct axiom audit passed for 14669 declarations using only propext, Classical.choice and Quot.sound; all 14017 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.96 GiB.
+
+
+## Unconditional fixed-moment bounds and qualitative Poisson convergence
+
+The complete coarse fixed-order moment and qualitative Poisson chain now has canonical proofs with no unproved BCN, surface or curve argument. CoarsePrimitiveJointMass proves a new finite two-site bound: the actual joint mass of primitive pairs is at most the absolute actual pair activity plus their cardinality times a squared actual marginal cap. This uses the literal centered-pair identity and an actual finite subfamily. The internally proved pair activity and primitive host count therefore give the required vanishing two-site seed, replacing the former pointwise BCN probability cap. Primitive orders at least three already have unconditional fixed-order estimates.
+
+CoarseDependentFamilyMass propagates the actual primitive seeds through every fixed extension order and covers all actual dependent families. FixedCountMomentBounds obtains the actual factorial upper bound at the exact heterogeneous mean with error N^(-1/2+epsilon), uniform boundedness of every fixed ordinary and factorial moment on every dyadic subground, and the ordinary regular-ground moment transfer. The moment order is fixed before N; no growing-order uniform constant is inferred from these estimates.
+
+CoarseFixedFactorialMoments proves two-sided actual original-count factorial-moment approximations by powers of either the exact actual mean or the exact nominal mean, with the same coarse error. CoarsePoissonLaw then proves uniform total-variation convergence of the original probability law to the Poisson law at its actual mean and to the Poisson law at its nominal mean. These are actual normalized probability measures. The finite reconstruction order is chosen after the requested final tolerance and before N. No polynomial total-variation rate is asserted.
+
+RetainedBadProbability proves uniform qualitative disappearance of the actual nonretention event and actual original-to-modified total variation, on every dyadic subground and for every source cutoff. RetainedMomentConvergence gives every fixed ordinary moment transfer and both actual-mean and nominal-mean Poisson convergence for the literal modified retained law. All original affine compatibility, zero-marginal and exact-mean conventions are preserved.
+
+This completes an unconditional coarse foundation, not the full corrected-moment expansion of main6.4. The explicit quadratic correction, sharper source remainder and other geometric uses remain listed as separate obligations. The polynomial original-law rates of the main optimal approximation theorems, full growing-degree BCN and arbitrary surface/curve properties are not discharged.
+
+P1-MATH-0413 adds seven modules, twenty-four theorems and two probability-law definitions. No numbered status is promoted: coverage stays102 proved and62 conditional out of167, with164 completed and three in_progress. The ledger records411 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15819 jobs); direct axiom audit passed for 14693 declarations using only propext, Classical.choice and Quot.sound; all 14043 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.92 GiB.

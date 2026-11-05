@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+The original and retained-modified probability laws have unconditional qualitative Poisson convergence at their actual and nominal means (P1-MATH-0413). All fixed ordinary moments are uniformly bounded; coarse factorial-moment error isN^(-1/2+epsilon). The full corrected main6.4 expansion and polynomial optimal law rates remain conditional.
+
 CompanionT19.4 is unconditional (P1-MATH-0412): the explicit bounded actual second moment closes the full growing-order branching recurrence without BCN. Full actual pair activity and second-cumulant decay have rateN^(-2/3+epsilon).
 
 Main3.3 and3.4 are unconditional (P1-MATH-0411): the complete unsigned/signed pair profiles, actual variance-minus-mean expansion, both literal moving phases, and the full principal-edge input are internally proved.
@@ -19,7 +21,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is102/167 unconditional and62 conditional (164/167 completed). The project records410 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is102/167 unconditional and62 conditional (164/167 completed). The project records411 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -138,7 +140,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14669 audited theorem/lemma declarations**. This
+- The project currently has **14693 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25649,3 +25651,20 @@ OrderDependentMomentBound.uniform_source_growth closes the internally proved rec
 P1-MATH-0412 adds three modules, eight theorems and one definition. Companion T19.4 moves from conditional to proved. Coverage becomes102 proved and62 conditional out of167, with164 completed and three in_progress. The ledger records410 improvements and two statement-scope corrections. This discharge concerns the seed and growing-order branching chain only; full growing-degree BCN, uniform maximal rank bounds and unrelated surface/curve properties remain open. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15805 jobs); direct axiom audit passed for 14669 declarations using only propext, Classical.choice and Quot.sound; all 14017 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.96 GiB.
+
+
+## Unconditional fixed-moment bounds and qualitative Poisson convergence
+
+The complete coarse fixed-order moment and qualitative Poisson chain now has canonical proofs with no unproved BCN, surface or curve argument. CoarsePrimitiveJointMass proves a new finite two-site bound: the actual joint mass of primitive pairs is at most the absolute actual pair activity plus their cardinality times a squared actual marginal cap. This uses the literal centered-pair identity and an actual finite subfamily. The internally proved pair activity and primitive host count therefore give the required vanishing two-site seed, replacing the former pointwise BCN probability cap. Primitive orders at least three already have unconditional fixed-order estimates.
+
+CoarseDependentFamilyMass propagates the actual primitive seeds through every fixed extension order and covers all actual dependent families. FixedCountMomentBounds obtains the actual factorial upper bound at the exact heterogeneous mean with error N^(-1/2+epsilon), uniform boundedness of every fixed ordinary and factorial moment on every dyadic subground, and the ordinary regular-ground moment transfer. The moment order is fixed before N; no growing-order uniform constant is inferred from these estimates.
+
+CoarseFixedFactorialMoments proves two-sided actual original-count factorial-moment approximations by powers of either the exact actual mean or the exact nominal mean, with the same coarse error. CoarsePoissonLaw then proves uniform total-variation convergence of the original probability law to the Poisson law at its actual mean and to the Poisson law at its nominal mean. These are actual normalized probability measures. The finite reconstruction order is chosen after the requested final tolerance and before N. No polynomial total-variation rate is asserted.
+
+RetainedBadProbability proves uniform qualitative disappearance of the actual nonretention event and actual original-to-modified total variation, on every dyadic subground and for every source cutoff. RetainedMomentConvergence gives every fixed ordinary moment transfer and both actual-mean and nominal-mean Poisson convergence for the literal modified retained law. All original affine compatibility, zero-marginal and exact-mean conventions are preserved.
+
+This completes an unconditional coarse foundation, not the full corrected-moment expansion of main6.4. The explicit quadratic correction, sharper source remainder and other geometric uses remain listed as separate obligations. The polynomial original-law rates of the main optimal approximation theorems, full growing-degree BCN and arbitrary surface/curve properties are not discharged.
+
+P1-MATH-0413 adds seven modules, twenty-four theorems and two probability-law definitions. No numbered status is promoted: coverage stays102 proved and62 conditional out of167, with164 completed and three in_progress. The ledger records411 improvements and two statement-scope corrections. No new axiom, unproved input, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15819 jobs); direct axiom audit passed for 14693 declarations using only propext, Classical.choice and Quot.sound; all 14043 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.92 GiB.

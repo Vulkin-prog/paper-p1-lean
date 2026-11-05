@@ -3617,3 +3617,10 @@ public import PaperP1.Asymptotics.SignedSourceProfile
 public import PaperP1.Asymptotics.BoundedSecondMoment
 public import PaperP1.Asymptotics.OrderDependentMomentBound
 public import PaperP1.Asymptotics.PairActivity
+public import PaperP1.Asymptotics.CoarseDependentFamilyMass
+public import PaperP1.Asymptotics.CoarseFixedFactorialMoments
+public import PaperP1.Asymptotics.CoarsePoissonLaw
+public import PaperP1.Asymptotics.CoarsePrimitiveJointMass
+public import PaperP1.Asymptotics.FixedCountMomentBounds
+public import PaperP1.Asymptotics.RetainedBadProbability
+public import PaperP1.Asymptotics.RetainedMomentConvergence

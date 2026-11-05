@@ -21106,6 +21106,58 @@
         "status": "not_integrated"
       },
       "validation_commit": "f44d7d73e104d018b50ee9b95cab0d46bda42373"
+    },
+    {
+      "id": "P1-MATH-0413",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p1:fixed:moments",
+        "number": "6.4",
+        "page": 22,
+        "source": "main_sections/fixed_moments.tex",
+        "line": 152,
+        "statement_sha256": "c6e85c5c60a33b6e4f4e614d923f638d1855ecd1fd2d6dab7f29cb5aa08e6190"
+      },
+      "original_assumption": "The coarse actual fixed-moment and qualitative law chain retained BCN only to bound the joint mass of primitive two-site seeds by a pointwise pair-probability estimate.",
+      "finding": "Integrated actual pair activity and elementary independent weights supply that seed internally, making fixed-order boundedness, coarse factorial convergence, regular/retained moment transfer and actual/nominal qualitative Poisson convergence unconditional.",
+      "proposed_revision": "Use the unconditional integrated primitive-pair seed in the coarse moment and law arguments. Distinguish the fixed-order coarse conclusions from the corrected expansion of main6.4 and from quantitative optimal original-law rates.",
+      "impact": "Removes BCN from the complete coarse fixed-order and qualitative-law foundation without claiming the stronger numbered statements whose other inputs remain open. Coverage stays102 proved and62 conditional out of167.",
+      "evidence": [
+        "PaperP1.CoarseDependentFamilyMass.uniform_seeded_mass",
+        "PaperP1.CoarseDependentFamilyMass.uniform_seed_orders",
+        "PaperP1.CoarseDependentFamilyMass.uniform_dependent_mass",
+        "PaperP1.CoarseFixedFactorialMoments.uniform_power_mean_bias",
+        "PaperP1.CoarseFixedFactorialMoments.uniform_nominal_error",
+        "PaperP1.CoarseFixedFactorialMoments.uniform_actual_error",
+        "PaperP1.CoarsePoissonLaw.realMass_actualPoissonLaw",
+        "PaperP1.CoarsePoissonLaw.uniform_finite_orders",
+        "PaperP1.CoarsePoissonLaw.uniform_completed_distance",
+        "PaperP1.CoarsePoissonLaw.uniform_totalVariation",
+        "PaperP1.CoarsePoissonLaw.uniform_nominal_totalVariation",
+        "PaperP1.CoarsePrimitiveJointMass.finite_pair_bound",
+        "PaperP1.CoarsePrimitiveJointMass.uniform_pair_mass",
+        "PaperP1.CoarsePrimitiveJointMass.uniform_mass",
+        "PaperP1.CoarsePrimitiveJointMass.uniform_finite_orders",
+        "PaperP1.FixedCountMomentBounds.uniform_factorial_upper",
+        "PaperP1.FixedCountMomentBounds.uniform_factorial_bound",
+        "PaperP1.FixedCountMomentBounds.uniform_ordinary_bound",
+        "PaperP1.FixedCountMomentBounds.uniformlyBoundedCountMoments",
+        "PaperP1.FixedCountMomentBounds.regular_moment_transfer",
+        "PaperP1.RetainedBadProbability.uniform_badProbability",
+        "PaperP1.RetainedBadProbability.uniform_totalVariation",
+        "PaperP1.RetainedMomentConvergence.uniform_moment_transfer",
+        "PaperP1.RetainedMomentConvergence.uniform_poisson_totalVariation",
+        "PaperP1.CoarsePoissonLaw.actualPoissonLaw",
+        "PaperP1.CoarsePoissonLaw.nominalPoissonLaw"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15819 jobs); direct axiom audit passed for 14693 declarations using only propext, Classical.choice and Quot.sound; all 14043 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.92 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
