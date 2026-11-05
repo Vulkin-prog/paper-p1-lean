@@ -996,6 +996,7 @@ import PaperP1
 #print axioms PaperP1.FiniteLinearZeroFiber.finite_of_variable_powers
 #print axioms PaperP1.FiniteLinearZeroFiber.finite_of_avoidance
 #print axioms PaperP1.FiniteLinearZeroFiber.bounded_linear_zero_fiber
+#print axioms PaperP1.FiniteParameterImageHilbert.exists_linear_hilbert
 #print axioms PaperP1.FinitePiExtension.extend_apply
 #print axioms PaperP1.FinitePiExtension.extend_at
 #print axioms PaperP1.FinitePiExtension.sum_extend
@@ -1782,6 +1783,10 @@ import PaperP1
 #print axioms PaperP1.PowerSeriesSimpleRoot.exists_root
 #print axioms PaperP1.PowerSeriesSquareGap.not_square
 #print axioms PaperP1.PowerSeriesSquareGap.not_fraction_square
+#print axioms PaperP1.PrimitiveBirationalFractionRing.closure_eq_top
+#print axioms PaperP1.PrimitiveBirationalFractionRing.fraction_ring
+#print axioms PaperP1.PrimitiveBirationalFractionRing.rank_one
+#print axioms PaperP1.PrimitiveBirationalFractionRing.normalization_rank
 #print axioms PaperP1.PrimitiveCoefficientFamily.extract
 #print axioms PaperP1.PrimitivePlaneLines.primitive_dot
 #print axioms PaperP1.PrimitivePlaneLines.cross_sub_right

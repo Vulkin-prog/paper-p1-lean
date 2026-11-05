@@ -4156,3 +4156,5 @@ public import PaperP1.Geometry.BoundedCurveNoetherNormalization
 public import PaperP1.Algebra.BoundedPrimitiveLinearCombination
 public import PaperP1.Algebra.CoordinateFractionFieldGenerators
 public import PaperP1.Geometry.FiniteCurvePrimitiveCoordinate
+public import PaperP1.Algebra.FiniteParameterImageHilbert
+public import PaperP1.Algebra.PrimitiveBirationalFractionRing

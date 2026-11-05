@@ -26417,6 +26417,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "76f3d2e31e99937050c1c89424b6c6e47f6093df"
+    },
+    {
+      "id": "P1-MATH-0547",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "A bounded original primitive coordinate was constructed, but its implication for the intermediate image ring fraction field, rank one and exact image Hilbert degree had not been formalized.",
+      "finding": "Actual containment of the normalization parameters and primitive coordinate forces the entire original fraction field, rank one and preserved normalization rank; actual finite independent rank-d linear parameters give Hilbert polynomial d*r+b.",
+      "proposed_revision": "Apply these proved fraction-field and Hilbert-degree lemmas to the concrete plane-image coordinate quotient, while retaining its construction and exceptional-fibre budget as separate tasks.",
+      "impact": "Internalizes the birationality and degree-preservation mechanism behind a primitive-coordinate projection without assuming birationality or image Hilbert degree.",
+      "evidence": [
+        "PaperP1.FiniteParameterImageHilbert.exists_linear_hilbert",
+        "PaperP1.PrimitiveBirationalFractionRing.closure_eq_top",
+        "PaperP1.PrimitiveBirationalFractionRing.fraction_ring",
+        "PaperP1.PrimitiveBirationalFractionRing.rank_one",
+        "PaperP1.PrimitiveBirationalFractionRing.normalization_rank"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16941 jobs); direct axiom audit passed for 16130 declarations using only propext, Classical.choice and Quot.sound; all 15715 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.66 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
