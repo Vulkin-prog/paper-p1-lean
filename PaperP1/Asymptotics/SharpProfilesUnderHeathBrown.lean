@@ -6,8 +6,9 @@ public import PaperP1.Asymptotics.SharpExpandedAsymmetricProfileUnderInputs
 
 /-! # Corrected sharp profiles with the non-geometric input discharged internally
 
-The geometric Heath-Brown input and the four displayed geometric properties
-remain unproved. The checked enlarged-alignment domains are preserved exactly.
+The geometric Heath-Brown input is proved by GeometricBiformPointCount.full_input.
+The four displayed geometric properties remain unproved. The checked
+enlarged-alignment domains are preserved exactly.
 The original literal radius-one assertion remains disproved.
 -/
 

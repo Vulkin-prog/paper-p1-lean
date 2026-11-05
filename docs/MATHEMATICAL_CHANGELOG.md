@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**358 mathematical improvements and two statement-scope corrections are confirmed.**
+**359 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24128,3 +24128,16 @@ Together with checkpoint359, these choices provide the uniform exponents needed 
 P1-MATH-0360 adds three theorems. Coverage stays89 proved and75 conditional out of167, with164 completed. The ledger records358 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 remains open and Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15631 jobs); direct axiom audit passed for 14325 declarations using only propext, Classical.choice and Quot.sound; all 13616 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.04 GiB.
+
+
+## Complete internal proof of the sharp geometric Heath-Brown biform count
+
+GeometricBiformPointCount.higher_input proves the complete ordinary HeathBrownHigherDegreeBiformInput.Input, with no unproved argument. For every positive first degree a, second degree b>=2 and epsilon>0 it constructs K>=0 depending only on a,b,epsilon, before G,L and the actual finite point population, and proves #S<=K*L^(2/b+epsilon)*height(G)^epsilon for every geometrically irreducible original integer biform. Only the first pair has the original absolute height bound L>=1. Both pairs are signed primitive original projective pairs and the second pair is unrestricted.
+
+The proof chooses H and m uniformly using checkpoint360, takes one constant C larger than the two exact determinant and obstruction constants, rounds C*L^(2/b+epsilon/2)*height(G)^(epsilon/2) to an integer P, proves both strict numerical comparisons via checkpoint359, invokes the internally proved global finite-prime count and counts all exceptional populations. The factor-of-two rounding and degree-only exceptions are absorbed explicitly. full_input combines this with the already proved b=1 case to prove the complete HeathBrownBiformInput.Input for every positive pair of degrees.
+
+No geometric count, non-geometric count, prime family, prime coverage, minor vanishing, auxiliary equation, size condition or exponent choice remains an assumed literature input in these two theorems. All steps use checked local algebra, finite intersections, primitive multiplicities, finite-field counting, Bertrand prime supply and elementary real inequalities. The uniform fixed dyadic prime family is an explicit checked implementation of prime selection.
+
+P1-MATH-0361 adds two theorems and updates generic-interface comments to reference their actual internal proof. Coverage stays89 proved and75 conditional out of167 at this checkpoint: canonical numbered wrappers still expose the old hHB parameter and will be instantiated next before promoting their ledger entries. The ledger records359 improvements and two statement-scope corrections. No axiom, unproved premise, dependency download, compiler change or original manuscript edit is introduced. The independent general main13.4 BCN problem and the four sharp-profile geometric properties remain open; Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15633 jobs); direct axiom audit passed for 14327 declarations using only propext, Classical.choice and Quot.sound; all 13618 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.03 GiB.

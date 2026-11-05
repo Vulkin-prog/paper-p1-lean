@@ -9,7 +9,8 @@ public import PaperP1.Asymptotics.FixedWidthTwoSmallKernel
 
 The non-geometric numerical input is supplied by its internal checked proof.
 All original finite populations, source parameters and quantifier orders are
-preserved. The remaining geometric Heath-Brown input is still unproved.
+preserved. The geometric input is proved by GeometricBiformPointCount.full_input;
+these generic interfaces retain it as an explicit parameter.
 -/
 
 set_option autoImplicit false

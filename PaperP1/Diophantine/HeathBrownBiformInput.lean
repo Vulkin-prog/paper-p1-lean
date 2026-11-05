@@ -8,7 +8,8 @@ public import Mathlib.Analysis.SpecialFunctions.Pow.Real
 
 Primary source: D. R. Heath-Brown, Square-Free Values of n²+1,
 arXiv:1010.6217v3, Lemma 2, printed page 9, with the proof in Section 6.
-This proposition is an EXPLICIT theorem argument, not an axiom or a proved count.
+This is an ordinary proposition, used as an explicit argument in generic interfaces.
+Its internal proof is GeometricBiformPointCount.full_input (P1-MATH-0361).
 The coefficient norm is exactly the projective coefficient height by
 ProjectiveFactorCoefficients.height_iff. The second pair has no height bound.
 -/

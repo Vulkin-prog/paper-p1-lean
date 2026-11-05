@@ -3,10 +3,11 @@ module
 public import PaperP1.Diophantine.HeathBrownBiformInput
 public import PaperP1.Diophantine.GeometricBiformCoarseCount
 
-/-! # The remaining ordinary Heath-Brown input only concerns second degree at least two
+/-! # The ordinary Heath-Brown property for second degree at least two
 
 The exact original input is recovered using the internally proved b=1 case.
-The b>=2 estimate remains an explicit unproved ordinary theorem argument.
+The b>=2 property is proved internally by GeometricBiformPointCount.higher_input
+(P1-MATH-0361); it remains an ordinary explicit parameter in this generic bridge.
 -/
 
 set_option autoImplicit false
