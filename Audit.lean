@@ -7630,6 +7630,11 @@ import PaperP1
 #print axioms PaperP1.DenseAdmissibleSeedFamiliesUnderInputs.uniform_seeds
 #print axioms PaperP1.DenseAdmissibleSeedFamiliesUnderInputs.uniform_centered_extensions
 #print axioms PaperP1.DenseAnchoredKernelWitness.uniform_witness
+#print axioms PaperP1.DenseComponentHostCount.uniform_rank_comparison
+#print axioms PaperP1.DenseComponentHostCount.uniform_dense_rank
+#print axioms PaperP1.DenseComponentHostCount.uniform_count_of_no_exact
+#print axioms PaperP1.DenseComponentHostCount.uniform_count
+#print axioms PaperP1.DenseComponentHostCount.dense_graph_bound
 #print axioms PaperP1.DenseComponentPairHosts.uniform_rank
 #print axioms PaperP1.DenseComponentPairHosts.uniform_hosts
 #print axioms PaperP1.DenseCompressedPairCount.uniform_count
@@ -10282,6 +10287,7 @@ import PaperP1
 #print axioms PaperP1.UnconditionalDenseTwoTargetMass.article_15_2
 #print axioms PaperP1.UnconditionalTripleControlledActivity.uniform_weighted
 #print axioms PaperP1.uniformLittleOOn_zero
+#print axioms PaperP1.UniformGeometricCountsReducedInputs.companion_T1_7
 #print axioms PaperP1.UniformGeometricCountsUnderInputs.one_variable
 #print axioms PaperP1.UniformGeometricCountsUnderInputs.companion_T1_7
 #print axioms PaperP1.UniformGeometricSystemsUnderInputs.companion_T1_7_systems

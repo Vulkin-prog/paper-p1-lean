@@ -3994,3 +3994,5 @@ public import PaperP1.Arithmetic.CubicDegreeUniformFieldCount
 public import PaperP1.Arithmetic.CubicDegreeUniformPlaneCount
 public import PaperP1.Arithmetic.LinearHeightShearBudget
 public import PaperP1.Asymptotics.CubicGrowingDegreePlaneCount
+public import PaperP1.Asymptotics.DenseComponentHostCount
+public import PaperP1.Asymptotics.UniformGeometricCountsReducedInputs

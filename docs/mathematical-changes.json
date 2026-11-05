@@ -24416,6 +24416,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "e17fabbce3bf512fe270fbadda17723b5acea556"
+    },
+    {
+      "id": "P1-MATH-0497",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The complete conditionalT1.7 assembly used separate source-surface and normalized-curve count premises for its dense unpinned-component graph clause.",
+      "finding": "The actual component/rank comparison and internal dense rank-host theorem proveN^epsilon dense nonaligned hosts and remove all geometric inputs from that clause, including overlapping physical windows.",
+      "proposed_revision": "Replace the dense graph geometric argument by the actual uniformo(B) component/rank transfer, strengthen its rate toN^epsilon, and retain the remaining general-system and typed-component geometric arguments explicitly.",
+      "impact": "Discharges the entire dense graph clause and removes two families of geometric arguments from the conditionalT1.7 assembly, without promoting the still incomplete full lemma.",
+      "evidence": [
+        "PaperP1.DenseComponentHostCount.uniform_rank_comparison",
+        "PaperP1.DenseComponentHostCount.uniform_dense_rank",
+        "PaperP1.DenseComponentHostCount.uniform_count_of_no_exact",
+        "PaperP1.DenseComponentHostCount.uniform_count",
+        "PaperP1.DenseComponentHostCount.dense_graph_bound",
+        "PaperP1.UniformGeometricCountsReducedInputs.companion_T1_7",
+        "PaperP1.UniformGeometricCountsReducedInputs.Hypotheses"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16563 jobs); direct axiom audit passed for 15593 declarations using only propext, Classical.choice and Quot.sound; all 15066 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.75 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**494 mathematical improvements and two statement-scope corrections are confirmed.**
+**495 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -26294,3 +26294,18 @@ CubicGrowingDegreePlaneCount proves the unconditional growing-degree consequence
 P1-MATH-0496 adds four modules, fourteen theorems and one definition. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. All main optimal scalar-law conclusions and complete13.6/13.8/14.1/14.6 remain internally proved. The project records494 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16559 jobs); direct axiom audit passed for 15587 declarations using only propext, Classical.choice and Quot.sound; all 15059 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.77 GiB.
+
+
+## Unconditional subpower dense-component hosts and reduced T1.7 inputs
+
+The dense unpinned-component graph clause of companionT1.7 is now internally proved, at the stronger subpower rateN^epsilon. For each fixed positive densityeta, critical-band widthC andepsilon>0, one threshold precedes every critical window, every finite dyadic pair population, all genuine nonaligned pairs and every dense-component witness. No source surface cover, normalized curve count, compatibility, physical separation or geometric host-count premise is required. The exact no-common-offset variant is also proved.
+
+DenseComponentHostCount first proves the actual component/rank discrepancy is uniformlyo(B),B=L+1. The existing exact companionT9.3 estimate isK*B/logB, withKchosen before the critical-band width. Explicit logarithmic growth and the critical window geometry turn it into an arbitrarydelta*B allowance. Consequentlyeta*B nontrivial unpinned components force actual pair intersection rank at least(eta/2)*B. The already internally proved actual dense nonaligned rank-host theorem then gives at mostN^epsilon hosts. The originalDenseGraphBound assertion follows with multiplicative constant1 at the weaker requested power1/2+epsilon. All objects are the actual large-prime graph and actual square-class intersection; no replacement graph or assumed rank density is used.
+
+UniformGeometricCountsReducedInputs rebuilds the complete conditionalT1.7 assembly with no geometric assumption for its dense graph clause. Its displayed hypothesis structure has only the source cover/normalized curve properties needed for general systems and the ordinary cover/normalized curve properties needed for the degree-one system and fixed-number typed component sectors. The one-variable and fixed-partner assertions retain their existing internal proofs. Former denseCover anddenseCurves fields are absent; the auxiliary unused dense parameters are fixed to degree1,size0. The remaining surface/curve properties are ordinary explicit arguments, not axioms or proved target counts.
+
+The original companion source arithmetic_appendix.tex480-520 was rechecked against every clause. CompleteT1.7 remains conditional because its general systems and fixed-number typed graph assertions are still unproved without their displayed geometric inputs. FullBCN, normalized higher-dimensional curve counts and source/ordinary cover properties are not discharged by this local bypass. The cubic generic plane estimate fromP1-MATH-0496 and the complete main optimal scalar-law conclusions remain unchanged.
+
+P1-MATH-0497 adds two modules, six theorems and one hypothesis structure. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records495 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16563 jobs); direct axiom audit passed for 15593 declarations using only propext, Classical.choice and Quot.sound; all 15066 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.75 GiB.

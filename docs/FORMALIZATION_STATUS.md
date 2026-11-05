@@ -10,6 +10,8 @@ Main17.1/17.2 are unconditional (P1-MATH-0490): every fixed polynomial weight, p
 Main1.2/17.3 are unconditional (P1-MATH-0491): exact moving Poisson total-variation scale for both specified means, distinct error powers and complete quantized-bias nominal comparison. The exact Hermite19.1 assembly remains separate.
 Main19.1 is unconditional (P1-MATH-0492): exact4/3 Hermite approximation with actual admissibility and every fixed-height rate/moving equivalent. All main optimal scalar-law conclusions now have internal proofs.
 
+CompanionT1.7 has an unconditional dense unpinned-component graph clause at the strongerN^epsilon rate (P1-MATH-0497), including overlapping physical windows. Its complete reduced assembly keeps explicit geometric inputs only for general systems and fixed-number typed components; fullT1.7 remains conditional.
+
 Current remaining numbered obligations: main13.4/13.5, companionT1.7/T19.17 and the literal falseT1.10/T5.1 statements requiring their already recorded scope corrections. Coverage is161 proved,3 conditional and3 in_progress;71 main and90 companion results are proved.
 P1-MATH-0495 supplies an actual associated heightN^(256D) equation of exact degreeD, including bounded shear, for every geometric curve population larger than4D^2. Its generic cubic-degree point-count consequence is now internally proved atP1-MATH-0496.
 Neither document is fully formalized.
@@ -104,7 +106,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records494 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is161/167 unconditional and3 conditional (164/167 completed). The project records495 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -223,7 +225,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15587 audited theorem/lemma declarations**. This
+- The project currently has **15593 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -27164,3 +27166,18 @@ CubicGrowingDegreePlaneCount proves the unconditional growing-degree consequence
 P1-MATH-0496 adds four modules, fourteen theorems and one definition. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. All main optimal scalar-law conclusions and complete13.6/13.8/14.1/14.6 remain internally proved. The project records494 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16559 jobs); direct axiom audit passed for 15587 declarations using only propext, Classical.choice and Quot.sound; all 15059 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.77 GiB.
+
+
+## Unconditional subpower dense-component hosts and reduced T1.7 inputs
+
+The dense unpinned-component graph clause of companionT1.7 is now internally proved, at the stronger subpower rateN^epsilon. For each fixed positive densityeta, critical-band widthC andepsilon>0, one threshold precedes every critical window, every finite dyadic pair population, all genuine nonaligned pairs and every dense-component witness. No source surface cover, normalized curve count, compatibility, physical separation or geometric host-count premise is required. The exact no-common-offset variant is also proved.
+
+DenseComponentHostCount first proves the actual component/rank discrepancy is uniformlyo(B),B=L+1. The existing exact companionT9.3 estimate isK*B/logB, withKchosen before the critical-band width. Explicit logarithmic growth and the critical window geometry turn it into an arbitrarydelta*B allowance. Consequentlyeta*B nontrivial unpinned components force actual pair intersection rank at least(eta/2)*B. The already internally proved actual dense nonaligned rank-host theorem then gives at mostN^epsilon hosts. The originalDenseGraphBound assertion follows with multiplicative constant1 at the weaker requested power1/2+epsilon. All objects are the actual large-prime graph and actual square-class intersection; no replacement graph or assumed rank density is used.
+
+UniformGeometricCountsReducedInputs rebuilds the complete conditionalT1.7 assembly with no geometric assumption for its dense graph clause. Its displayed hypothesis structure has only the source cover/normalized curve properties needed for general systems and the ordinary cover/normalized curve properties needed for the degree-one system and fixed-number typed component sectors. The one-variable and fixed-partner assertions retain their existing internal proofs. Former denseCover anddenseCurves fields are absent; the auxiliary unused dense parameters are fixed to degree1,size0. The remaining surface/curve properties are ordinary explicit arguments, not axioms or proved target counts.
+
+The original companion source arithmetic_appendix.tex480-520 was rechecked against every clause. CompleteT1.7 remains conditional because its general systems and fixed-number typed graph assertions are still unproved without their displayed geometric inputs. FullBCN, normalized higher-dimensional curve counts and source/ordinary cover properties are not discharged by this local bypass. The cubic generic plane estimate fromP1-MATH-0496 and the complete main optimal scalar-law conclusions remain unchanged.
+
+P1-MATH-0497 adds two modules, six theorems and one hypothesis structure. No numbered result is promoted. Coverage stays161 proved,3 conditional and3 in_progress out of167, with164 completed. The project records495 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16563 jobs); direct axiom audit passed for 15593 declarations using only propext, Classical.choice and Quot.sound; all 15066 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.75 GiB.
