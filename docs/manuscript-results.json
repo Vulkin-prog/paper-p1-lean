@@ -227,7 +227,8 @@
             "P1-PROB-OPTIMAL-QUADRATIC-COARSE-THIRD"
           ]
         }
-      ]
+      ],
+      "validation_commit": "f0f803a38b1d8bf8fd614cc37f1532d5411d75e7"
     },
     {
       "label": "p1:cor:tv",
@@ -7575,7 +7576,8 @@
           "validation": "Verified under Lean v4.36.0-rc2: full build passed (15805 jobs); direct axiom audit passed for 14669 declarations using only propext, Classical.choice and Quot.sound; all 14017 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.96 GiB.",
           "validation_commit": "f44d7d73e104d018b50ee9b95cab0d46bda42373"
         }
-      ]
+      ],
+      "validation_commit": "f0f803a38b1d8bf8fd614cc37f1532d5411d75e7"
     },
     {
       "label": "p13:transfer:dense-targets",
@@ -10647,7 +10649,8 @@
             "P1-GEO-BCN-PLANE-UNIFORM"
           ]
         }
-      ]
+      ],
+      "validation_commit": "f0f803a38b1d8bf8fd614cc37f1532d5411d75e7"
     },
     {
       "label": "p1:discussion:charlier-norm",
