@@ -12806,7 +12806,8 @@
             "PaperP1.ExplicitHermiteLaw.uniform_probability_equivalent"
           ]
         }
-      ]
+      ],
+      "validation_commit": "476326e7b70bd32023f9b75372b44a47595d298e"
     },
     {
       "label": "p1:discussion:charlier-norm",
