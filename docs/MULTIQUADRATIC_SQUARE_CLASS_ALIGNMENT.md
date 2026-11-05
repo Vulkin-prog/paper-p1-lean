@@ -18904,3 +18904,18 @@ The complete main15.1 statement and proof in main_sections/exact_transfer.tex li
 P1-MATH-0414 adds three modules and seven theorems. Main15.1 moves from conditional to proved; main1.1 and19.1 retain their conditional status. Coverage becomes103 proved and61 conditional out of167, with164 completed and three in_progress. The ledger records412 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15825 jobs); direct axiom audit passed for 14700 declarations using only propext, Classical.choice and Quot.sound; all 14050 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.89 GiB.
+
+
+## Unconditional finite partition of the actual pair activity
+
+FiniteGoodPartition proves the full original companion T7.1 with no unproved surface, curve or BCN argument. For every fixed eta>0, an actual finite rational-channel height Q>=3 is chosen before the critical-band width C, every epsilon>0 and the eventual N,L. The literal dependent pair population is partitioned into the existing good, weak and exceptional classes at cutoff H=2*Q*(L+1).
+
+The weak-class actual absolute activity is at most N^(-1+eta+epsilon), and the exceptional-class actual absolute activity is at most N^(-1+epsilon), after one threshold. The full pair activity is at most N^(-2/3+epsilon) on every actual dyadic subground. Each good pair lies in an actual fixed private rational channel with b>=3, has its actual centered coefficient bounded by N^(-2+1/b+epsilon), and has the exact proved normalized-block compression. All local deficiencies, affine incompatibilities, boundary channels, zero-unit cases and defective normalized populations retain the earlier actual definitions and bounds.
+
+The only former geometric argument in this chain was the full nonaligned actual pair activity. It is now supplied by NonalignedPairActivity.uniform_activity from checkpoint410. Every boundary, fixed-channel, tail, defect and incompatible contribution was already internally proved. No general geometric cover property is instantiated, asserted or hidden in a chosen parameter bundle. The channel height is not enumerated through a hypothetical source cover.
+
+The complete unchanged statement and proof in companion_sections/triple_activities.tex lines8-61 were rechecked. The quantifier order, finite fixed channels, two actual remainder classes, individual good-pair exponent and exact compression are all retained. The same partition is the internally proved ingredient needed by later sharp pair-target and all-cardinality deficit arguments; those further numbered conclusions are not promoted in this checkpoint.
+
+P1-MATH-0415 adds one module and three theorems. Companion T7.1 moves from conditional to proved. Coverage becomes104 proved and60 conditional out of167, with164 completed and three in_progress. The ledger records413 improvements and two statement-scope corrections. Full growing-degree BCN and arbitrary surface/curve properties remain open. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15827 jobs); direct axiom audit passed for 14703 declarations using only propext, Classical.choice and Quot.sound; all 14053 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.87 GiB.

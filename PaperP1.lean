@@ -3627,3 +3627,4 @@ public import PaperP1.Asymptotics.RetainedMomentConvergence
 public import PaperP1.Asymptotics.ActualReferenceProbability
 public import PaperP1.Asymptotics.RunConversion
 public import PaperP1.Asymptotics.SecondCumulant
+public import PaperP1.Asymptotics.FiniteGoodPartition

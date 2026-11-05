@@ -3,6 +3,8 @@
 Stage: **conditional optimal quadratic and third-cumulant powers; one remaining numbered proof obligation and two statements requiring revision**, 5 November 2026.
 Neither document is fully formalized.
 
+CompanionT7.1 is unconditional (P1-MATH-0415): the finite good/weak/exceptional pair partition, both residual rates and exact good-edge compression are internally proved, with Q chosen before C and epsilon.
+
 Main15.1 is unconditional (P1-MATH-0414): both the universal finite conversion and actualN^(-5/3+epsilon) application are internally proved. The original actual-parameter quadratic and Hermite references are eventually probabilities without BCN; full main1.1/19.1 quantitative conclusions remain conditional.
 
 The original and retained-modified probability laws have unconditional qualitative Poisson convergence at their actual and nominal means (P1-MATH-0413). All fixed ordinary moments are uniformly bounded; coarse factorial-moment error isN^(-1/2+epsilon). The full corrected main6.4 expansion and polynomial optimal law rates remain conditional.
@@ -23,7 +25,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is103/167 unconditional and61 conditional (164/167 completed). The project records412 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is104/167 unconditional and60 conditional (164/167 completed). The project records413 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -142,7 +144,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14700 audited theorem/lemma declarations**. This
+- The project currently has **14703 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25685,3 +25687,18 @@ The complete main15.1 statement and proof in main_sections/exact_transfer.tex li
 P1-MATH-0414 adds three modules and seven theorems. Main15.1 moves from conditional to proved; main1.1 and19.1 retain their conditional status. Coverage becomes103 proved and61 conditional out of167, with164 completed and three in_progress. The ledger records412 improvements and two statement-scope corrections. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15825 jobs); direct axiom audit passed for 14700 declarations using only propext, Classical.choice and Quot.sound; all 14050 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.89 GiB.
+
+
+## Unconditional finite partition of the actual pair activity
+
+FiniteGoodPartition proves the full original companion T7.1 with no unproved surface, curve or BCN argument. For every fixed eta>0, an actual finite rational-channel height Q>=3 is chosen before the critical-band width C, every epsilon>0 and the eventual N,L. The literal dependent pair population is partitioned into the existing good, weak and exceptional classes at cutoff H=2*Q*(L+1).
+
+The weak-class actual absolute activity is at most N^(-1+eta+epsilon), and the exceptional-class actual absolute activity is at most N^(-1+epsilon), after one threshold. The full pair activity is at most N^(-2/3+epsilon) on every actual dyadic subground. Each good pair lies in an actual fixed private rational channel with b>=3, has its actual centered coefficient bounded by N^(-2+1/b+epsilon), and has the exact proved normalized-block compression. All local deficiencies, affine incompatibilities, boundary channels, zero-unit cases and defective normalized populations retain the earlier actual definitions and bounds.
+
+The only former geometric argument in this chain was the full nonaligned actual pair activity. It is now supplied by NonalignedPairActivity.uniform_activity from checkpoint410. Every boundary, fixed-channel, tail, defect and incompatible contribution was already internally proved. No general geometric cover property is instantiated, asserted or hidden in a chosen parameter bundle. The channel height is not enumerated through a hypothetical source cover.
+
+The complete unchanged statement and proof in companion_sections/triple_activities.tex lines8-61 were rechecked. The quantifier order, finite fixed channels, two actual remainder classes, individual good-pair exponent and exact compression are all retained. The same partition is the internally proved ingredient needed by later sharp pair-target and all-cardinality deficit arguments; those further numbered conclusions are not promoted in this checkpoint.
+
+P1-MATH-0415 adds one module and three theorems. Companion T7.1 moves from conditional to proved. Coverage becomes104 proved and60 conditional out of167, with164 completed and three in_progress. The ledger records413 improvements and two statement-scope corrections. Full growing-degree BCN and arbitrary surface/curve properties remain open. No new axiom, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15827 jobs); direct axiom audit passed for 14703 declarations using only propext, Classical.choice and Quot.sound; all 14053 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.87 GiB.

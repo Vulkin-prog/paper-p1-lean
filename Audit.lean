@@ -7594,6 +7594,9 @@ import PaperP1
 #print axioms PaperP1.FiniteConnectedActivity254.uniform_weighted
 #print axioms PaperP1.FiniteConnectedActivity254.uniform_primitives
 #print axioms PaperP1.FiniteConnectedClosureUnderInputs.uniform_bounds
+#print axioms PaperP1.FiniteGoodPartition.choose_height
+#print axioms PaperP1.FiniteGoodPartition.uniform_exceptional
+#print axioms PaperP1.FiniteGoodPartition.companion_T7_1
 #print axioms PaperP1.FiniteGoodPartitionUnderInputs.choose_height
 #print axioms PaperP1.FiniteGoodPartitionUnderInputs.uniform_exceptional
 #print axioms PaperP1.FiniteGoodPartitionUnderInputs.companion_T7_1

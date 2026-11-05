@@ -21193,6 +21193,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "f0f803a38b1d8bf8fd614cc37f1532d5411d75e7"
+    },
+    {
+      "id": "P1-MATH-0415",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p13:activity:pair-partition",
+        "number": "T7.1",
+        "page": 36,
+        "source": "companion_sections/triple_activities.tex",
+        "line": 8,
+        "statement_sha256": "314417432b0ff44f833afcf1e8517782ba516f0c6587804ec485c9c1af2ac268"
+      },
+      "original_assumption": "The finite good/weak/exceptional pair partition retained unproved finite geometric properties solely for its nonaligned actual-activity contribution.",
+      "finding": "The internally proved full nonaligned activity closes the entire literal finite partition, with Q chosen before C and epsilon, both remainder rates and exact good-pair compression preserved.",
+      "proposed_revision": "Use the unconditional finite-channel partition and cite the actual dense-intersection residual for its nonaligned contribution. Retain the fixed-channel, boundary, defect and incompatibility estimates as explicit internal steps.",
+      "impact": "Companion T7.1 moves from conditional to proved:104 proved,60 conditional,3 in_progress out of167. The sharp pair-target deficit chain can now use this partition without a geometric argument.",
+      "evidence": [
+        "PaperP1.FiniteGoodPartition.choose_height",
+        "PaperP1.FiniteGoodPartition.uniform_exceptional",
+        "PaperP1.FiniteGoodPartition.companion_T7_1"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15827 jobs); direct axiom audit passed for 14703 declarations using only propext, Classical.choice and Quot.sound; all 14053 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 8.87 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
