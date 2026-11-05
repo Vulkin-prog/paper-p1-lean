@@ -13,7 +13,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records383 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records384 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -132,7 +132,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14480 audited theorem/lemma declarations**. This
+- The project currently has **14484 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -25240,3 +25240,18 @@ This discharges the extra nonzero-norm-constant condition in the geometric conic
 P1-MATH-0385 adds ten theorems and three definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records383 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15685 jobs); direct axiom audit passed for 14480 declarations using only propext, Classical.choice and Quot.sound; all 13803 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.68 GiB.
+
+
+## Geometric hyperbolic conic counts in the original integer coordinates
+
+GeometricHyperbolicConicCount.count proves an unconditional N^epsilon bound for the full actual signed grid of every geometrically irreducible integer plane equation P of exact total degree two and positive quadratic discriminant, whenever its original coefficient height and grid radius lie below N^K for any fixed K. The threshold is chosen before P and the radius. No nonzero leading-coordinate or norm-constant hypothesis, coordinate chart, primitivity assumption or unproved counting argument is supplied.
+
+The proof constructs a parameter t in0,1,2 giving the actual integer shear full outer degree two. Geometric irreducibility is preserved, the discriminant remains positive by its exact coefficient identity, and the nonzero norm constant is proved from geometric irreducibility. The coefficient sum height of the transformed equation is at most54 times the original bivariate coefficient height, and every original point injects into the actual transformed population with coordinate height at most3 times the original radius. These budgets are absorbed with exponent K+6 before applying the internally proved signed conic count.
+
+natural_height_count gives the usual specialization with grid radius N and original coefficient height at most N^K. All original signs and coordinate-axis points remain included. The only geometric classification condition is the positive discriminant itself; non-degeneracy is a proved consequence.
+
+This closes the complete positive-discriminant geometric conic branch at controlled coefficient height. Removing the coefficient-height assumption, counting negative discriminants and parabolas, the stronger BCN property and original all-dimensional main13.4 remain separate obligations. No original numbered result is promoted.
+
+P1-MATH-0386 adds four theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records384 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15687 jobs); direct axiom audit passed for 14484 declarations using only propext, Classical.choice and Quot.sound; all 13807 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.66 GiB.

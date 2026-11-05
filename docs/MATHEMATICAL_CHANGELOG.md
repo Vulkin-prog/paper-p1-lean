@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**383 mathematical improvements and two statement-scope corrections are confirmed.**
+**384 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -24461,3 +24461,18 @@ This discharges the extra nonzero-norm-constant condition in the geometric conic
 P1-MATH-0385 adds ten theorems and three definitions. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records383 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15685 jobs); direct axiom audit passed for 14480 declarations using only propext, Classical.choice and Quot.sound; all 13803 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.68 GiB.
+
+
+## Geometric hyperbolic conic counts in the original integer coordinates
+
+GeometricHyperbolicConicCount.count proves an unconditional N^epsilon bound for the full actual signed grid of every geometrically irreducible integer plane equation P of exact total degree two and positive quadratic discriminant, whenever its original coefficient height and grid radius lie below N^K for any fixed K. The threshold is chosen before P and the radius. No nonzero leading-coordinate or norm-constant hypothesis, coordinate chart, primitivity assumption or unproved counting argument is supplied.
+
+The proof constructs a parameter t in0,1,2 giving the actual integer shear full outer degree two. Geometric irreducibility is preserved, the discriminant remains positive by its exact coefficient identity, and the nonzero norm constant is proved from geometric irreducibility. The coefficient sum height of the transformed equation is at most54 times the original bivariate coefficient height, and every original point injects into the actual transformed population with coordinate height at most3 times the original radius. These budgets are absorbed with exponent K+6 before applying the internally proved signed conic count.
+
+natural_height_count gives the usual specialization with grid radius N and original coefficient height at most N^K. All original signs and coordinate-axis points remain included. The only geometric classification condition is the positive discriminant itself; non-degeneracy is a proved consequence.
+
+This closes the complete positive-discriminant geometric conic branch at controlled coefficient height. Removing the coefficient-height assumption, counting negative discriminants and parabolas, the stronger BCN property and original all-dimensional main13.4 remain separate obligations. No original numbered result is promoted.
+
+P1-MATH-0386 adds four theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records384 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15687 jobs); direct axiom audit passed for 14484 declarations using only propext, Classical.choice and Quot.sound; all 13807 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.66 GiB.

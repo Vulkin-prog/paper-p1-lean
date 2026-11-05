@@ -20163,6 +20163,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "ffd29b03cf2de21ece69bf264b26e00ce88152e7"
+    },
+    {
+      "id": "P1-MATH-0386",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The positive-discriminant conic bound still imposed a chosen nonzero leading coordinate and nonzero norm constant in the transformed equation.",
+      "finding": "Every actual geometrically irreducible positive-discriminant integer conic now has the full signed N^epsilon count in its original coordinates and every fixed polynomial coefficient/point-height box, with both non-degeneracy conditions discharged internally.",
+      "proposed_revision": "Use this original-grid theorem directly for the positive-discriminant branch. Next preserve the discriminant sign under the constructed bounded-height associated equation to remove coefficient-height restrictions.",
+      "impact": "Closes the positive-discriminant geometric conic count at controlled height without extra arithmetic or non-degeneracy inputs. Other conic branches, unrestricted height and BCN remain open; numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.GeometricHyperbolicConicCount.coefficient_height_budget",
+        "PaperP1.GeometricHyperbolicConicCount.point_natAbs_bounds",
+        "PaperP1.GeometricHyperbolicConicCount.count",
+        "PaperP1.GeometricHyperbolicConicCount.natural_height_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15687 jobs); direct axiom audit passed for 14484 declarations using only propext, Classical.choice and Quot.sound; all 13807 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.66 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

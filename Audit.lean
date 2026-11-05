@@ -10322,6 +10322,10 @@ import PaperP1
 #print axioms PaperP1.GeometricEndpointExceptions.one_endpoint_card
 #print axioms PaperP1.GeometricEndpointExceptions.exceptional_card
 #print axioms PaperP1.GeometricEndpointExceptions.height_split
+#print axioms PaperP1.GeometricHyperbolicConicCount.coefficient_height_budget
+#print axioms PaperP1.GeometricHyperbolicConicCount.point_natAbs_bounds
+#print axioms PaperP1.GeometricHyperbolicConicCount.count
+#print axioms PaperP1.GeometricHyperbolicConicCount.natural_height_count
 #print axioms PaperP1.GeometricProjectiveFibres.fibre_evaluation
 #print axioms PaperP1.GeometricProjectiveFibres.fibre_homogeneous
 #print axioms PaperP1.GeometricProjectiveFibres.fibre_chart_coefficient
