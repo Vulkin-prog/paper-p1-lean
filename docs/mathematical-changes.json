@@ -23731,6 +23731,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "92ec905209f678191ba76d11ad2109bbe825e033"
+    },
+    {
+      "id": "P1-MATH-0479",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:reciprocal",
+        "number": "T19.15",
+        "page": 79,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1138,
+        "statement_sha256": "50c4669b813dd7368744a6b5195d48ce2be90fbf7ec6976ccb98bee12f86a816"
+      },
+      "original_assumption": "Canonical complete fine reciprocal and signed-cost wrappers still accepted the full two-sided EIP estimate although both upper directions had internal proofs.",
+      "finding": "A checked equivalence reconstructs the full historical input from only the ordinary fine lower estimate and the internal upper bound; the complete two numbered conclusions now expose just this one-sided obligation.",
+      "proposed_revision": "State the sole remaining analytic input as the ordinary reciprocal fine lower bound. Cite the internal upper proof and actual explicit/implicit scale gap separately, and retain conditional status until the lower bound is supplied.",
+      "impact": "Removes the external upper premise from canonical complete T19.15/T19.16 declarations. The ordinary lower estimate itself is still unproved, so numbered coverage is unchanged.",
+      "evidence": [
+        "PaperP1.OrdinaryReciprocalPrimeLowerInput.uniform_gap",
+        "PaperP1.OrdinaryReciprocalPrimeLowerInput.uniform_explicit_upper",
+        "PaperP1.OrdinaryReciprocalPrimeLowerInput.eipInput_of_lower",
+        "PaperP1.OrdinaryReciprocalPrimeLowerInput.lower_of_eipInput",
+        "PaperP1.OrdinaryReciprocalPrimeLowerInput.eipInput_iff_lower",
+        "PaperP1.FineSaddleConclusionsFromLower.companion_T19_15",
+        "PaperP1.FineSaddleConclusionsFromLower.companion_T19_16",
+        "PaperP1.OrdinaryReciprocalPrimeLowerInput.LowerInput"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16447 jobs); direct axiom audit passed for 15427 declarations using only propext, Classical.choice and Quot.sound; all 14868 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.20 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

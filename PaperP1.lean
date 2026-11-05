@@ -3936,3 +3936,5 @@ public import PaperP1.Analysis.MovingLogarithmicPivotMass
 public import PaperP1.Asymptotics.FineReciprocalUpper
 public import PaperP1.Asymptotics.FineSaddlePivotCount
 public import PaperP1.Asymptotics.FineSignedCostUpper
+public import PaperP1.Analysis.OrdinaryReciprocalPrimeLowerInput
+public import PaperP1.Asymptotics.FineSaddleConclusionsFromLower

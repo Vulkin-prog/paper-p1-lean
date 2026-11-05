@@ -2792,6 +2792,11 @@ import PaperP1
 #print axioms PaperP1.MovingLogarithmicPivotMass.finite_mass
 #print axioms PaperP1.OrdinaryReciprocalPrimeInput.tendsto_left_endpoint
 #print axioms PaperP1.OrdinaryReciprocalPrimeInput.uniform_square_part_upper
+#print axioms PaperP1.OrdinaryReciprocalPrimeLowerInput.uniform_gap
+#print axioms PaperP1.OrdinaryReciprocalPrimeLowerInput.uniform_explicit_upper
+#print axioms PaperP1.OrdinaryReciprocalPrimeLowerInput.eipInput_of_lower
+#print axioms PaperP1.OrdinaryReciprocalPrimeLowerInput.lower_of_eipInput
+#print axioms PaperP1.OrdinaryReciprocalPrimeLowerInput.eipInput_iff_lower
 #print axioms PaperP1.PartialPowerSum.powerSum_nonneg
 #print axioms PaperP1.PartialPowerSum.powerSum_eq_shifted
 #print axioms PaperP1.PartialPowerSum.powerSum_le
@@ -7966,6 +7971,8 @@ import PaperP1
 #print axioms PaperP1.FineReciprocalUpper.uniform_upper
 #print axioms PaperP1.FineReciprocalUpper.uniform_population_upper
 #print axioms PaperP1.FineReciprocalUpper.uniform_original_upper
+#print axioms PaperP1.FineSaddleConclusionsFromLower.companion_T19_15
+#print axioms PaperP1.FineSaddleConclusionsFromLower.companion_T19_16
 #print axioms PaperP1.FineSaddlePivotCount.uniform_count
 #print axioms PaperP1.FineSaddlePivotCount.uniform_population_bound
 #print axioms PaperP1.FineSignedCostUpper.uniform_upper_from_profile

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**476 mathematical improvements and two statement-scope corrections are confirmed.**
+**477 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -25990,3 +25990,20 @@ The full fine reciprocal upper direction is internal at checkpoint477. Existing 
 P1-MATH-0478 adds one module, three theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records476 improvements and two statement-scope corrections. Original source files remain preserved; no new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16443 jobs); direct axiom audit passed for 15420 declarations using only propext, Classical.choice and Quot.sound; all 14860 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.22 GiB.
+
+
+## Complete fine saddle conclusions reduced to the ordinary one-sided lower estimate
+
+The canonical complete fine reciprocal and prescribed signed-cost conclusions now retain only an explicit one-sided ordinary reciprocal lower estimate. OrdinaryReciprocalPrimeLowerInput.LowerInput says that for every epsilon>0, eventually N*exp(-2V_N-epsilon*nu_N) <= primeSum(N), for the literal largest prime factor. It is a definition of the remaining unproved obligation, not an axiom, proved bound or target odd-pivot estimate.
+
+uniform_gap extracts the actual finite epsilon*nu bound between2V and the explicit square-root scale G from the internally proved actual-root limit. uniform_explicit_upper combines checkpoint477's internal ordinary upper bound with this gap, with no literature argument. eipInput_of_lower then reconstructs the old two-sided EIPInput from LowerInput and that internally proved upper direction. lower_of_eipInput proves the converse, so eipInput_iff_lower checks the precise equivalence of the old and reduced inputs under the current internal development. Every epsilon split, common threshold and actual scale is explicit.
+
+FineSaddleConclusionsFromLower.companion_T19_15 retains both literal full and dyadic odd-pivot sandwiches with one common threshold, assuming only LowerInput. companion_T19_16 retains the complete existing specified signed forcing Conclusion: both fine cost directions, actual logarithmic error and the power-obstruction clause, again with only LowerInput. All geometric profiles remain supplied internally. The separate fine upper cost and qualitative power obstruction already have closed internal proofs without LowerInput.
+
+The remaining unformalized input is now identified more precisely as P1-EXT-EIP1986-ORDINARY-RECIPROCAL-LOWER, the lower direction of the ordinary theorem of Erdos, Ivic and Pomerance, Glasnik Matematicki21(41) (1986),283-300, Theorem1 and equation(1.3), primary source previously inspected at https://www.renyi.hu/~p_erdos/1986-10.pdf page284. Its use at2V is equivalent to its explicit square-root form by the proved gap. No new literature claim, stronger uniformity, odd-pivot estimate or external upper premise is introduced. Historical full-input declarations and records are preserved; the new canonical wrappers expose only the reduced obligation.
+
+Complete companion T19.15/T19.16 remain conditional until this ordinary fine lower bound is proved. Coverage is unchanged. Leading coefficient2 limits, both full fine upper directions and the qualitative deterministic/randomized all-anchor obstructions are internal. Full T19.17 retains its stronger almost-all census and1-o(1) coefficient; general geometry, full quadratic-degree BCN and optimal strong-triangle weights remain separate.
+
+P1-MATH-0479 adds two modules, seven theorems and one definition. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records477 improvements and two statement-scope corrections. Original sources are preserved; no new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16447 jobs); direct axiom audit passed for 15427 declarations using only propext, Classical.choice and Quot.sound; all 14868 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.20 GiB.

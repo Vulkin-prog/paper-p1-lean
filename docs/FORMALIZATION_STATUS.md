@@ -5,7 +5,7 @@ Neither document is fully formalized.
 
 P1-MATH-0454 isolates the remaining sharp global connected-triple joint mass on triples with three strong nonaligned pairs. All other sectors have internal41/30 bounds, and the residual has a subpower host count. Its optimal weighted bound and full main14.1/14.6 remain conditional.
 
-Companion T19.16 retains only the explicit unproved ordinary EIP reciprocal-prime input (P1-MATH-0453). Internal critical and moving-width full raw-value profiles remove all six former geometric arguments; the numbered status remains conditional.
+Companion T19.15/T19.16 retain only the explicit unproved ordinary fine reciprocal lower estimate (P1-MATH-0479). Both full fine upper directions and all actual forcing/raw-profile reductions are internally proved. The canonical complete conclusions remain conditional until the ordinary lower estimate is proved.
 
 Companion T20.8 is unconditional (P1-MATH-0452), with the same small-component exceptional set and stronger exceptional mass power3/2. Exact six-vertex packing, simultaneous covers and every prescribed-plane conclusion are retained.
 
@@ -93,7 +93,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records476 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is147/167 unconditional and17 conditional (164/167 completed). The project records477 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -212,7 +212,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **15420 audited theorem/lemma declarations**. This
+- The project currently has **15427 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -26849,3 +26849,20 @@ The full fine reciprocal upper direction is internal at checkpoint477. Existing 
 P1-MATH-0478 adds one module, three theorems and no definitions. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records476 improvements and two statement-scope corrections. Original source files remain preserved; no new axiom, dependency download or Palomar submission is introduced.
 
 Verified under Lean v4.36.0-rc2: full build passed (16443 jobs); direct axiom audit passed for 15420 declarations using only propext, Classical.choice and Quot.sound; all 14860 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.22 GiB.
+
+
+## Complete fine saddle conclusions reduced to the ordinary one-sided lower estimate
+
+The canonical complete fine reciprocal and prescribed signed-cost conclusions now retain only an explicit one-sided ordinary reciprocal lower estimate. OrdinaryReciprocalPrimeLowerInput.LowerInput says that for every epsilon>0, eventually N*exp(-2V_N-epsilon*nu_N) <= primeSum(N), for the literal largest prime factor. It is a definition of the remaining unproved obligation, not an axiom, proved bound or target odd-pivot estimate.
+
+uniform_gap extracts the actual finite epsilon*nu bound between2V and the explicit square-root scale G from the internally proved actual-root limit. uniform_explicit_upper combines checkpoint477's internal ordinary upper bound with this gap, with no literature argument. eipInput_of_lower then reconstructs the old two-sided EIPInput from LowerInput and that internally proved upper direction. lower_of_eipInput proves the converse, so eipInput_iff_lower checks the precise equivalence of the old and reduced inputs under the current internal development. Every epsilon split, common threshold and actual scale is explicit.
+
+FineSaddleConclusionsFromLower.companion_T19_15 retains both literal full and dyadic odd-pivot sandwiches with one common threshold, assuming only LowerInput. companion_T19_16 retains the complete existing specified signed forcing Conclusion: both fine cost directions, actual logarithmic error and the power-obstruction clause, again with only LowerInput. All geometric profiles remain supplied internally. The separate fine upper cost and qualitative power obstruction already have closed internal proofs without LowerInput.
+
+The remaining unformalized input is now identified more precisely as P1-EXT-EIP1986-ORDINARY-RECIPROCAL-LOWER, the lower direction of the ordinary theorem of Erdos, Ivic and Pomerance, Glasnik Matematicki21(41) (1986),283-300, Theorem1 and equation(1.3), primary source previously inspected at https://www.renyi.hu/~p_erdos/1986-10.pdf page284. Its use at2V is equivalent to its explicit square-root form by the proved gap. No new literature claim, stronger uniformity, odd-pivot estimate or external upper premise is introduced. Historical full-input declarations and records are preserved; the new canonical wrappers expose only the reduced obligation.
+
+Complete companion T19.15/T19.16 remain conditional until this ordinary fine lower bound is proved. Coverage is unchanged. Leading coefficient2 limits, both full fine upper directions and the qualitative deterministic/randomized all-anchor obstructions are internal. Full T19.17 retains its stronger almost-all census and1-o(1) coefficient; general geometry, full quadratic-degree BCN and optimal strong-triangle weights remain separate.
+
+P1-MATH-0479 adds two modules, seven theorems and one definition. Coverage remains147 proved,17 conditional and3 in_progress out of167, with164 completed. The project records477 improvements and two statement-scope corrections. Original sources are preserved; no new axiom, dependency download or Palomar submission is introduced.
+
+Verified under Lean v4.36.0-rc2: full build passed (16447 jobs); direct axiom audit passed for 15427 declarations using only propext, Classical.choice and Quot.sound; all 14868 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.20 GiB.
