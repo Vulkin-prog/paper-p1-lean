@@ -6733,6 +6733,11 @@ import PaperP1
 #print axioms PaperP1.ColoredMassStep.point_step
 #print axioms PaperP1.ColoredMassStep.family_step
 #print axioms PaperP1.ColoredMassStep.bounded_orders
+#print axioms PaperP1.CompanionKernelCounts.weakened_barrier_count
+#print axioms PaperP1.CompanionKernelCounts.companion_T1_4
+#print axioms PaperP1.CompanionKernelCounts.companion_T1_5
+#print axioms PaperP1.CompanionKernelCounts.companion_T1_5_sharp
+#print axioms PaperP1.CompanionKernelCounts.companion_T1_13
 #print axioms PaperP1.CompanionKernelCountsUnderHeathBrown.weakened_barrier_count
 #print axioms PaperP1.CompanionKernelCountsUnderHeathBrown.companion_T1_4
 #print axioms PaperP1.CompanionKernelCountsUnderHeathBrown.companion_T1_5
@@ -8735,6 +8740,8 @@ import PaperP1
 #print axioms PaperP1.SharpPairActivityUnderInputs.uniform_principal_profile
 #print axioms PaperP1.SharpPairActivityUnderInputs.uniform_pair_activity
 #print axioms PaperP1.SharpPairTargetDeficitUnderInputs.article_11_1
+#print axioms PaperP1.SharpProfilesUnderGeometry.dyadic_profile
+#print axioms PaperP1.SharpProfilesUnderGeometry.expanded_profile
 #print axioms PaperP1.SharpProfilesUnderHeathBrown.dyadic_profile
 #print axioms PaperP1.SharpProfilesUnderHeathBrown.expanded_profile
 #print axioms PaperP1.SharpRetainedConversionUnderInputs.companion_T17_4

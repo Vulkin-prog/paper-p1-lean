@@ -1,0 +1,11 @@
+# Unconditional companion kernel counts and sharp profiles under geometry alone
+
+Source: companion arithmetic_appendix.tex lines139(T1.4),360(T1.5),1016(T1.13), and the corrected T1.10 profiles. Exact original counts, sharp ranges and quantifier orders were rechecked before coverage promotion.
+
+CompanionKernelCounts supplies unconditional canonical declarations for companion T1.4,T1.5 and T1.13 by instantiating both arithmetic biform inputs with their complete internal proofs. T1.4 retains the full original-scale signed determinant population and the separately budgeted fixed/polylogarithmic weakened barrier. T1.5 retains the actual all-logarithmic-width upper count with exponent max(beta,7/12), and the matching beta+o(1) conclusion for7/12<=beta<1. T1.13 retains arbitrary selected subsets in fixed logarithmic-width blocks, the one-kernel estimate for every real cutoff, the two-kernel estimate and its sharp power-cap consequence. Neither canonical theorem has an unproved input argument.
+
+SharpProfilesUnderGeometry supplies both corrected31/24 profiles with the two arithmetic inputs discharged. Exactly four displayed geometric properties remain: the source surface cover, the ordinary surface cover and the two normalized curve-count families. All quantifier orders, degree parameters and enlarged old/new-width alignment domains are retained. The literal original radius-one T1.10 statement remains disproved and in_progress; these corrected profiles do not promote the false original statement.
+
+The three original companion statements were rechecked against arithmetic_appendix.tex lines139,360 and1016 before promotion. Their canonical declarations now omit hHB entirely, with GeometricBiformPointCount.full_input and ComplexProjectiveIrreducibility.nongeometric_input supplied internally. The input-discharge history records the fully validated proof checkpoint361.
+
+P1-MATH-0362 adds seven theorems in two modules. Coverage becomes92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records360 improvements and two statement-scope corrections. No axiom, unproved arithmetic premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 and the four geometric-profile properties remain open; Palomar remains deferred.

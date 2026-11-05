@@ -3531,3 +3531,5 @@ public import PaperP1.Diophantine.FinitePrimeBiformCount
 public import PaperP1.Analysis.MonomialPrimeScale
 public import PaperP1.Analysis.LocalDeterminantDegreeChoice
 public import PaperP1.Diophantine.GeometricBiformPointCount
+public import PaperP1.Asymptotics.CompanionKernelCounts
+public import PaperP1.Asymptotics.SharpProfilesUnderGeometry

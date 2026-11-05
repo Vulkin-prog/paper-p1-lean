@@ -1,6 +1,8 @@
 # External mathematical inputs
 
-Current update P1-MATH-0330: the historical non-geometric biform consequence and its rational-singularity premise are internally proved by `PaperP1.ComplexProjectiveIrreducibility.nongeometric_input` and `singularity_input`, with K(a,b)=8*a*b^2. The geometric Heath-Brown Lemma2 input remains unproved. Historical checkpoint entries below retain their original scope.
+Current update P1-MATH-0362: the complete geometric Heath-Brown biform input is internally proved by `PaperP1.GeometricBiformPointCount.full_input` (validated P1-MATH-0361). Canonical companion T1.4,T1.5,T1.13 require no unproved inputs. Both corrected31/24 profiles retain only their four explicitly displayed geometric properties. General BCN remains open. Earlier conditional checkpoints below are preserved as history.
+
+Historical update P1-MATH-0330: the historical non-geometric biform consequence and its rational-singularity premise are internally proved by `PaperP1.ComplexProjectiveIrreducibility.nongeometric_input` and `singularity_input`, with K(a,b)=8*a*b^2. The geometric Heath-Brown Lemma2 input remains unproved. Historical checkpoint entries below retain their original scope.
 
 Unproved literature inputs are passed as ordinary explicit theorem arguments.
 In particular, the separate conditional growing-degree development uses the named
@@ -25109,3 +25111,18 @@ No geometric count, non-geometric count, prime family, prime coverage, minor van
 P1-MATH-0361 adds two theorems and updates generic-interface comments to reference their actual internal proof. Coverage stays89 proved and75 conditional out of167 at this checkpoint: canonical numbered wrappers still expose the old hHB parameter and will be instantiated next before promoting their ledger entries. The ledger records359 improvements and two statement-scope corrections. No axiom, unproved premise, dependency download, compiler change or original manuscript edit is introduced. The independent general main13.4 BCN problem and the four sharp-profile geometric properties remain open; Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15633 jobs); direct axiom audit passed for 14327 declarations using only propext, Classical.choice and Quot.sound; all 13618 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.03 GiB.
+
+
+## Unconditional companion kernel counts and sharp profiles under geometry alone
+
+Stable ID: p1:internal:unconditional-companion-kernel-counts. The geometric and non-geometric biform inputs are both internally proved. Corrected profiles retain four geometric properties; the false literal radius-one assertion remains unpromoted.
+
+CompanionKernelCounts supplies unconditional canonical declarations for companion T1.4,T1.5 and T1.13 by instantiating both arithmetic biform inputs with their complete internal proofs. T1.4 retains the full original-scale signed determinant population and the separately budgeted fixed/polylogarithmic weakened barrier. T1.5 retains the actual all-logarithmic-width upper count with exponent max(beta,7/12), and the matching beta+o(1) conclusion for7/12<=beta<1. T1.13 retains arbitrary selected subsets in fixed logarithmic-width blocks, the one-kernel estimate for every real cutoff, the two-kernel estimate and its sharp power-cap consequence. Neither canonical theorem has an unproved input argument.
+
+SharpProfilesUnderGeometry supplies both corrected31/24 profiles with the two arithmetic inputs discharged. Exactly four displayed geometric properties remain: the source surface cover, the ordinary surface cover and the two normalized curve-count families. All quantifier orders, degree parameters and enlarged old/new-width alignment domains are retained. The literal original radius-one T1.10 statement remains disproved and in_progress; these corrected profiles do not promote the false original statement.
+
+The three original companion statements were rechecked against arithmetic_appendix.tex lines139,360 and1016 before promotion. Their canonical declarations now omit hHB entirely, with GeometricBiformPointCount.full_input and ComplexProjectiveIrreducibility.nongeometric_input supplied internally. The input-discharge history records the fully validated proof checkpoint361.
+
+P1-MATH-0362 adds seven theorems in two modules. Coverage becomes92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records360 improvements and two statement-scope corrections. No axiom, unproved arithmetic premise, dependency download, compiler change or original manuscript edit is introduced. Main13.4 and the four geometric-profile properties remain open; Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15637 jobs); direct axiom audit passed for 14334 declarations using only propext, Classical.choice and Quot.sound; all 13625 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 7.01 GiB.
