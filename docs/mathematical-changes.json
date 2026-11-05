@@ -19398,6 +19398,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "439fc026c2110571b7b2bee285b8dfb5ef2cc497"
+    },
+    {
+      "id": "P1-MATH-0364",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "Scalar components preserved points and degrees but did not yet show that an equation with many base-field points is itself defined over that base field up to a scalar.",
+      "finding": "More than the total-degree square of base-field points forces an irreducible scalar descent with exact preserved degree, via the proved finite plane Bezout theorem and component reconstruction.",
+      "proposed_revision": "Specialize the base field to the rationals, treat populations of at most the degree square by the existing logarithmic budget, and reduce the remaining plane BCN input to rational geometric polynomials.",
+      "impact": "Closes the many-points scalar descent without assuming an equation over the base field. Rational geometric BCN and the general main13.4 statement remain open; coverage is unchanged.",
+      "evidence": [
+        "PaperP1.ManyPointsScalarDescent.degree_mul",
+        "PaperP1.ManyPointsScalarDescent.unit_of_degree_zero",
+        "PaperP1.ManyPointsScalarDescent.divisor_associated",
+        "PaperP1.ManyPointsScalarDescent.components_divide_of_many_points",
+        "PaperP1.ManyPointsScalarDescent.many_points_descent"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (15641 jobs); direct axiom audit passed for 14346 declarations using only propext, Classical.choice and Quot.sound; all 13637 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.99 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

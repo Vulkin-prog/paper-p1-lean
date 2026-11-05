@@ -11,7 +11,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records361 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is92/167 unconditional and72 conditional (164/167 completed). The project records362 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -130,7 +130,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **14341 audited theorem/lemma declarations**. This
+- The project currently has **14346 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -24944,3 +24944,16 @@ These are preparatory tools for reducing the remaining plane BCN estimate from a
 P1-MATH-0363 adds seven theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records361 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
 
 Verified under Lean v4.36.0-rc2: full build passed (15639 jobs); direct axiom audit passed for 14341 declarations using only propext, Classical.choice and Quot.sound; all 13632 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.99 GiB.
+
+
+## Many base-field points force irreducible scalar descent with exact degree
+
+ManyPointsScalarDescent.many_points_descent proves that an irreducible plane polynomial over an infinite extension field L with more than degree(P)^2 distinct K-rational zeros is associated to the scalar extension of an irreducible polynomial Q over K. The total degree of Q is exactly degree(P), and every point of the original finite K-population is a zero of Q. The extension K->L need not be finite or algebraic. The infinity hypothesis is automatic in the characteristic-zero application.
+
+components_divide_of_many_points applies the proved finite plane Bezout bound to every scalar component from checkpoint363: if its extension were not divisible by P, the original population would have at most degree(P)^2 points. degree_mul proves exact total-degree additivity for nonzero products through the actual multivariate chart. unit_of_degree_zero identifies every nonzero degree-zero polynomial as a unit. divisor_associated then turns the component degree bound and divisibility into association and exact degree equality. A nonzero component is constructed internally, and irreducibility descends through the field extension.
+
+This is an actual scalar-descent theorem, not a point-count input or a presumed rational equation. It prepares the reduction of the remaining characteristic-zero plane BCN input to its rational geometric subcase. The rational geometric estimate and the general all-dimensional main13.4 remain unproved at this checkpoint.
+
+P1-MATH-0364 adds five theorems. Coverage stays92 proved and72 conditional out of167, with164 completed and three in_progress. The ledger records362 improvements and two statement-scope corrections. No axiom, unproved literature premise, dependency download, compiler change or original manuscript edit is introduced. Palomar remains deferred.
+
+Verified under Lean v4.36.0-rc2: full build passed (15641 jobs); direct axiom audit passed for 14346 declarations using only propext, Classical.choice and Quot.sound; all 13637 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.99 GiB.

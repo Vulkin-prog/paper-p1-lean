@@ -1432,6 +1432,11 @@ import PaperP1
 #print axioms PaperP1.LocalizedQuotientFractionEquiv.map_isPrime
 #print axioms PaperP1.LocalizedQuotientFractionEquiv.quotient_injective
 #print axioms PaperP1.LocalizedQuotientFractionEquiv.equiv_mk
+#print axioms PaperP1.ManyPointsScalarDescent.degree_mul
+#print axioms PaperP1.ManyPointsScalarDescent.unit_of_degree_zero
+#print axioms PaperP1.ManyPointsScalarDescent.divisor_associated
+#print axioms PaperP1.ManyPointsScalarDescent.components_divide_of_many_points
+#print axioms PaperP1.ManyPointsScalarDescent.many_points_descent
 #print axioms PaperP1.MixedPlaneNormal.nonnegative_dot_lower
 #print axioms PaperP1.MixedPlaneNormal.opposite_signs
 #print axioms PaperP1.MixedPlaneNormal.exists_perm_pair
