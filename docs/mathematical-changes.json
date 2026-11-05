@@ -25510,6 +25510,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "95e87e982b3b90b2f128ab99028023f80a2c2a17"
+    },
+    {
+      "id": "P1-MATH-0524",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The local grid-point bound still assumed an explicit smallness inequality, with no constructed interval scale or finite subdivision and no full-map quantitative count.",
+      "finding": "An explicit polynomial-factor scale and actual floor subdivision prove a quantitative bound for the entire normalized grid population in every internally constructed unit-jet/Chebyshev map.",
+      "proposed_revision": "Use the internal full-map grid count with its explicit degree/triangular exponent and retain global map-cover cardinality as a separate geometric obligation.",
+      "impact": "Closes numerical interval selection, the actual finite interval cover and full-image counts per local map. Global curve and component coverage remains separate.",
+      "evidence": [
+        "PaperP1.ActualLocalUnitMapGridCount.exists_at_nonexceptional",
+        "PaperP1.ActualLocalUnitMapGridCount.exists_control_set_and_maps",
+        "PaperP1.UnitIntervalSubdivision.index_lt",
+        "PaperP1.UnitIntervalSubdivision.center_mem",
+        "PaperP1.UnitIntervalSubdivision.distance_bound",
+        "PaperP1.UnitMapGridPointCount.point_count",
+        "PaperP1.UnitMonomialDeterminantScale.prefactor_bound",
+        "PaperP1.UnitMonomialDeterminantScale.scale_one_le",
+        "PaperP1.UnitMonomialDeterminantScale.smallness",
+        "PaperP1.UnitMonomialDeterminantScale.inverse_scale_bounds",
+        "PaperP1.ActualLocalUnitMapGridCount.HasCountingMap",
+        "PaperP1.UnitIntervalSubdivision.index",
+        "PaperP1.UnitIntervalSubdivision.center",
+        "PaperP1.UnitMonomialDeterminantScale.scale"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16767 jobs); direct axiom audit passed for 15893 declarations using only propext, Classical.choice and Quot.sound; all 15438 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.83 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

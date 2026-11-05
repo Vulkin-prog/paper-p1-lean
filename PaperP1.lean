@@ -4071,3 +4071,7 @@ public import PaperP1.Analysis.GridCurveMinorVanishing
 public import PaperP1.Analysis.ShortIntervalGridInterpolation
 public import PaperP1.Analysis.ShortIntervalGridPointCount
 public import PaperP1.Diophantine.CommonGridMonomialDeterminant
+public import PaperP1.Analysis.ActualLocalUnitMapGridCount
+public import PaperP1.Analysis.UnitIntervalSubdivision
+public import PaperP1.Analysis.UnitMapGridPointCount
+public import PaperP1.Analysis.UnitMonomialDeterminantScale

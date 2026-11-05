@@ -2450,6 +2450,8 @@ import PaperP1
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_card_all
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_finite
 #print axioms PaperP1.WeightedVeronesePieceIndex.piece_card
+#print axioms PaperP1.ActualLocalUnitMapGridCount.exists_at_nonexceptional
+#print axioms PaperP1.ActualLocalUnitMapGridCount.exists_control_set_and_maps
 #print axioms PaperP1.ActualTaylorRemainderBound.jet_self
 #print axioms PaperP1.ActualTaylorRemainderBound.within_eq_jet
 #print axioms PaperP1.ActualTaylorRemainderBound.factorial_divisor_bound
@@ -3416,9 +3418,17 @@ import PaperP1
 #print axioms PaperP1.UnitGraphMonomialPieceCount.exists_scale
 #print axioms PaperP1.UnitGraphMonomialPieceCount.exists_affine_scale
 #print axioms PaperP1.UnitGraphMonomialPieceCount.point_count
+#print axioms PaperP1.UnitIntervalSubdivision.index_lt
+#print axioms PaperP1.UnitIntervalSubdivision.center_mem
+#print axioms PaperP1.UnitIntervalSubdivision.distance_bound
 #print axioms PaperP1.UnitJetProductBounds.product_bound
 #print axioms PaperP1.UnitJetProductBounds.power_bound
 #print axioms PaperP1.UnitJetProductBounds.two_powers_bound
+#print axioms PaperP1.UnitMapGridPointCount.point_count
+#print axioms PaperP1.UnitMonomialDeterminantScale.prefactor_bound
+#print axioms PaperP1.UnitMonomialDeterminantScale.scale_one_le
+#print axioms PaperP1.UnitMonomialDeterminantScale.smallness
+#print axioms PaperP1.UnitMonomialDeterminantScale.inverse_scale_bounds
 #print axioms PaperP1.UnitMonomialEvaluationDeterminant.index_card_two_le
 #print axioms PaperP1.UnitMonomialEvaluationDeterminant.basis_bound
 #print axioms PaperP1.UnitMonomialEvaluationDeterminant.family_bound
