@@ -26619,6 +26619,55 @@
         "status": "not_integrated"
       },
       "validation_commit": "eecc348fa1a0b568c0daabec18883897dfbd02b1"
+    },
+    {
+      "id": "P1-MATH-0552",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The actual homogeneous principal plane equation was available, but a degree-preserving irreducible affine specialization and exact integer-coordinate evaluation/height transport had not been established for that actual equation.",
+      "finding": "The actual middle-coordinate affine chart of the monic homogeneous minimal equation remains monic and irreducible and has total degree exactly d; literal integer projected coordinates have the proved n*B*H height and agree with actual source evaluations.",
+      "proposed_revision": "Use the specific affine minimal equation and the proved monic degree preservation when applying the quadratic-degree plane count to the actual integer projected population.",
+      "impact": "Closes exact affine-degree and irreducibility transport and records the genuine integer height cost needed for the all-dimensional curve projection count.",
+      "evidence": [
+        "PaperP1.MonicPlaneAffineChart.chart_factor",
+        "PaperP1.MonicPlaneAffineChart.chart_affine",
+        "PaperP1.MonicPlaneAffineChart.chart_native",
+        "PaperP1.MonicPlaneAffineChart.evaluation",
+        "PaperP1.MonicPlaneAffineChart.degree_le",
+        "PaperP1.MonicPlaneAffineChart.monic",
+        "PaperP1.MonicPlaneAffineChart.natDegree",
+        "PaperP1.MonicPlaneAffineChart.natDegree_le_planeDegree",
+        "PaperP1.MonicPlaneAffineChart.degree_eq",
+        "PaperP1.MonicPlaneAffineChart.degree_of_homogeneous_monic",
+        "PaperP1.MonicPlaneAffineChart.irreducible",
+        "PaperP1.IntegerLinearPlaneProjection.coordinate_eq_evaluation",
+        "PaperP1.IntegerLinearPlaneProjection.coordinate_cast",
+        "PaperP1.IntegerLinearPlaneProjection.quotient_evaluation",
+        "PaperP1.IntegerLinearPlaneProjection.coordinate_height",
+        "PaperP1.IntegerLinearPlaneProjection.projection_height",
+        "PaperP1.LinearPlaneImageAffineEquation.point_on_chart",
+        "PaperP1.LinearPlaneImageAffineEquation.properties",
+        "PaperP1.MonicPlaneAffineChart.chart",
+        "PaperP1.MonicPlaneAffineChart.affine",
+        "PaperP1.IntegerLinearPlaneProjection.coordinate",
+        "PaperP1.IntegerLinearPlaneProjection.projection",
+        "PaperP1.LinearPlaneImageAffineEquation.equation"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (16987 jobs); direct axiom audit passed for 16200 declarations using only propext, Classical.choice and Quot.sound; all 15800 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.54 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -4170,3 +4170,6 @@ public import PaperP1.Geometry.LinearPlaneImageFiber
 public import PaperP1.Geometry.PlaneImagePointSeparation
 public import PaperP1.Geometry.QuotientCurveSectionBudget
 public import PaperP1.Geometry.QuotientPointEvaluation
+public import PaperP1.Algebra.MonicPlaneAffineChart
+public import PaperP1.Arithmetic.IntegerLinearPlaneProjection
+public import PaperP1.Geometry.LinearPlaneImageAffineEquation

@@ -4,7 +4,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**549 mathematical improvements and two statement-scope corrections are confirmed.**
+**550 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -27181,3 +27181,20 @@ Thus actual quotient evaluation, separation by the three literal plane coordinat
 P1-MATH-0551 adds three modules, six theorems and one definition. The project records 549 improvements and two P1 statement-scope corrections. The external BCN recurrence erratum stays separate. No new axiom, dependency download, compiler change, original source edit or Palomar submission is introduced. Ubuntu free space remains about 6.56 GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (16981 jobs); direct axiom audit passed for 16182 declarations using only propext, Classical.choice and Quot.sound; all 15777 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.56 GiB.
+
+
+## Actual degree-preserving monic affine plane equation and integer linear height transport
+
+MonicPlaneAffineChart constructs the literal middle-coordinate chart q(Y,1,X) of the actual three-variable plane equation, both as a nested bivariate polynomial and as an actual two-variable polynomial substitution. Its exact relation to the distinguished-coordinate polynomial equivalence and to the existing native affine chart after the explicit coordinate swap is proved. Evaluating the actual affine polynomial at (x,y) is proved equal to evaluating the original homogeneous equation at (y,1,x).
+
+The affine chart has total degree at most the original homogeneous total degree. Monicity in the distinguished coordinate is preserved by the actual coefficient specialization, and its actual outer degree is unchanged. A homogeneous polynomial monic in that coordinate has its homogeneous degree equal to the actual monic outer degree: this follows by comparing its given homogeneous degree with the homogeneous degree internally forced by the actual monic principal generator. Consequently the actual affine chart has total degree exactly d. Irreducibility is preserved on the actual nonempty chart by the genuine coordinate permutation and the already proved domain property of homogeneous localization; it is not supplied as an affine irreducibility premise.
+
+IntegerLinearPlaneProjection defines the actual integer coordinate sums and the actual ordered pair of projected coordinates. Their characteristic-zero coefficient-field values are proved equal to evaluation of the original coefficient-bounded linear forms, including literal evaluation on the original coordinate quotient. Each projected coordinate has actual integer absolute height at most n*B*H when the original coefficients are at most B and the original coordinate heights are at most H.
+
+LinearPlaneImageAffineEquation applies these facts to the specific original minimal plane equation, rather than choosing an unrelated affine polynomial. Actual finite injective two-parameter normalization supplies integrality and torsion-freeness internally. The actual image Hilbert polynomial identifies the homogeneous degree d. Injectivity of the original normalization proves that the actual chart coordinate cannot lie in the actual plane-image ideal. Thus the specific affine minimal equation is irreducible, monic and of total degree exactly d. Every actual source point-evaluation homomorphism normalized by the original first parameter maps to a zero of this specific affine equation.
+
+The actual affine plane equation and integer linear height transport are now internal. The next assembly still has to combine the literal integer projection with the good-source fibre separation and the original-source d*(d-1) derivative section budget, choose all compatible fraction-field scalar towers, and complete scalar-extension/descent for main13.4. No numbered result is promoted. Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. Main13.5 stays internally proved and companionT1.7/T19.17 remain unresolved.
+
+P1-MATH-0552 adds three modules, eighteen theorems and five definitions. The project records 550 improvements and two P1 statement-scope corrections. The external BCN recurrence erratum stays separate. No new axiom, compiler change, dependency download, original source edit or Palomar submission is introduced. Ubuntu free space remains about 6.54 GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (16987 jobs); direct axiom audit passed for 16200 declarations using only propext, Classical.choice and Quot.sound; all 15800 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.54 GiB.
