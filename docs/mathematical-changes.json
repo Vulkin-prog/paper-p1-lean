@@ -41580,6 +41580,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "9f44c14e54c5856474544aa7071d28e9f7d94ad6"
+    },
+    {
+      "id": "P1-MATH-0967",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal quantitative reduction using the proved actual Gaussian tail and central estimates. Actual asymptotic scale choices and physical localization remain necessary.",
+      "finding": "One theorem proves that the whole actual dyadic Gaussian-difference energy is at most 2*(b+c)^2*R^5, plus the literal off-central square integral on the actual region, plus exp(-b*T^2)*(sqrt(pi/b)/N+4*pi). The three measurable domains cover the real line, their integral decompositions and all integrability are checked, and no quantitative frequency bound is inserted as a premise. All N>0, bounded coefficients, 0<b<=c and 0<=R<=T remain explicit.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual Gaussian comparison energy reduces to proved central off-central and tail terms. The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established.",
+      "evidence": [
+        "PaperP1.GaussianEnergyReduction.quantitative_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18501 jobs); direct axiom audit passed for 19226 declarations using only propext, Classical.choice and Quot.sound; all 19534 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.21 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

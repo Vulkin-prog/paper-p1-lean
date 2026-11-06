@@ -4906,3 +4906,4 @@ public import PaperP1.Analysis.GaussianDirichletTail
 public import PaperP1.Analysis.GaussianOverlap
 public import PaperP1.Analysis.GaussianSmoothedEnergy
 public import PaperP1.Analysis.GaussianDifferenceWeights
+public import PaperP1.Analysis.GaussianEnergyReduction

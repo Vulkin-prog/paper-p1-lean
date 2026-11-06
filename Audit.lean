@@ -4246,6 +4246,7 @@ import PaperP1
 #print axioms PaperP1.GaussianDifferenceWeights.central_integral
 #print axioms PaperP1.GaussianDirichletTail.gaussian_bound
 #print axioms PaperP1.GaussianDirichletTail.tail_bound
+#print axioms PaperP1.GaussianEnergyReduction.quantitative_bound
 #print axioms PaperP1.GaussianExponentialSums.polynomial_continuous
 #print axioms PaperP1.GaussianExponentialSums.polynomial_norm_bound
 #print axioms PaperP1.GaussianExponentialSums.gaussian_integrable
