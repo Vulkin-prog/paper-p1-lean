@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0810: The actual whole intermediate region
+Current checkpoint P1-MATH-0811: Exact actual frequency partition
+reduces the full Dirichlet energy to the jointly large prime region. The
+joint large-prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 51.94 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0810: The actual whole intermediate region
 has uniformly vanishing rectangle and full Dirichlet contributions. The
 complementary bad-prime frequency contribution, the central-frequency
 mean subtraction and complete logarithmic short-average concentration
@@ -32772,6 +32781,12 @@ For EVERY epsilon>0 one N0 precedes all N>=N0, all complex coefficients unit-bou
 
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.
 
+## Internal exact actual frequency partition reduces the full dirichlet energy to the jointly large prime region
+
+The ACTUAL bounded frequency interval is partitioned into the first-band good region, the already controlled intermediate region, and a literal measurable remainder. The remainder is characterized EXACTLY by the existence of a first prime block above its actual threshold AND a second prime block above its own q^(-1/40) threshold. The first two regions are disjoint, and the actual full square integral is exactly the sum of all THREE actual integrals. For every epsilon>0 one N0 precedes all complete positive-unit coefficients and every 0<T<=N/log N, giving full energy<=epsilon+the ACTUAL jointly-large-region energy. Five theorems and one definition prove this exact reduction. The remaining integral is retained: central constant-function energy is not asserted to vanish.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -36118,3 +36133,14 @@ For EVERY epsilon>0 one N0 precedes all N>=N0, all complex coefficients unit-bou
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.00 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18187 jobs); direct axiom audit passed for 18609 declarations using only propext, Classical.choice and Quot.sound; all 18799 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.96 GiB.
+
+
+## Exact actual frequency partition reduces the full Dirichlet energy to the jointly large prime region
+
+Stable ID: p1:internal:joint-large-frequency-reduction. Exact actual frequency partition reduces the full Dirichlet energy to the jointly large prime region. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+The ACTUAL bounded frequency interval is partitioned into the first-band good region, the already controlled intermediate region, and a literal measurable remainder. The remainder is characterized EXACTLY by the existence of a first prime block above its actual threshold AND a second prime block above its own q^(-1/40) threshold. The first two regions are disjoint, and the actual full square integral is exactly the sum of all THREE actual integrals. For every epsilon>0 one N0 precedes all complete positive-unit coefficients and every 0<T<=N/log N, giving full energy<=epsilon+the ACTUAL jointly-large-region energy. Five theorems and one definition prove this exact reduction. The remaining integral is retained: central constant-function energy is not asserted to vanish.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.94 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18189 jobs); direct axiom audit passed for 18614 declarations using only propext, Classical.choice and Quot.sound; all 18805 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.94 GiB.

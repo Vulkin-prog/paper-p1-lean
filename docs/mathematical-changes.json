@@ -36634,6 +36634,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "a231e06e1ab1cb8e96a082b2840e1012e4ae9778"
+    },
+    {
+      "id": "P1-MATH-0811",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "After the two proved negligible regions, the exact uncovered region and its actual energy must be identified. Dropping that energy, or discarding the central band without the long-mean comparison, would be invalid.",
+      "finding": "The ACTUAL bounded frequency interval is partitioned into the first-band good region, the already controlled intermediate region, and a literal measurable remainder. The remainder is characterized EXACTLY by the existence of a first prime block above its actual threshold AND a second prime block above its own q^(-1/40) threshold. The first two regions are disjoint, and the actual full square integral is exactly the sum of all THREE actual integrals. For every epsilon>0 one N0 precedes all complete positive-unit coefficients and every 0<T<=N/log N, giving full energy<=epsilon+the ACTUAL jointly-large-region energy. Five theorems and one definition prove this exact reduction. The remaining integral is retained: central constant-function energy is not asserted to vanish.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Exact actual frequency partition reduces the full Dirichlet energy to the jointly large prime region. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.JointLargeFrequencyReduction.largeRegion_measurable",
+        "PaperP1.JointLargeFrequencyReduction.largeRegion_iff",
+        "PaperP1.JointLargeFrequencyReduction.first_intermediate_disjoint",
+        "PaperP1.JointLargeFrequencyReduction.energy_split",
+        "PaperP1.JointLargeFrequencyReduction.reduction_small_uniform",
+        "PaperP1.JointLargeFrequencyReduction.largeRegion"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18189 jobs); direct axiom audit passed for 18614 declarations using only propext, Classical.choice and Quot.sound; all 18805 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.94 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
