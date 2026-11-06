@@ -28316,6 +28316,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "c414bab4eb66d5100d350c81574373c779abc9d3"
+    },
+    {
+      "id": "P1-MATH-0594",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The remaining canonical geometric hypothesis supplied the entire desired P3 curve/exception cover, although the quadratic-degree affine curve theorem permits deriving that cover from one simpler quantitative auxiliary-equation theorem.",
+      "finding": "The complete coefficient-uniform P3 covering property, with all original point sets and genuine curve degrees, is internally derived from one global auxiliary polynomial of degree H^(1/sqrt(d)+epsilon). The only remaining geometric construction in canonical T1.7 is now that explicit global auxiliary theorem.",
+      "proposed_revision": "Use the single-auxiliary proof with total section-degree sum, fixed degree cutoff and quadratic-degree affine curve counts. State the quantitative global auxiliary-equation construction as the precise remaining proof obligation and preserve the uniform order of constants before coefficients and heights.",
+      "impact": "Discharges all curve/exception covering translations and final exponent assembly, replacing the supplied primary cover by the explicit quantitative global auxiliary-hypersurface input without changing conditional coverage.",
+      "evidence": [
+        "PaperP1.P3AuxiliaryCoverExponentBudget.power_identity",
+        "PaperP1.P3AuxiliaryCoverExponentBudget.family_bound",
+        "PaperP1.P3AuxiliaryCoverExponentBudget.exception_bound",
+        "PaperP1.UniformP3CoverFromAuxiliary.uniformCover",
+        "PaperP1.UniformGeometricCountsAuxiliaryInput.p3_hypotheses",
+        "PaperP1.UniformGeometricCountsAuxiliaryInput.companion_T1_7",
+        "PaperP1.UniformP3AuxiliaryHypersurface.AtDegree",
+        "PaperP1.UniformP3AuxiliaryHypersurface.UniformAuxiliary",
+        "PaperP1.UniformGeometricCountsAuxiliaryInput.Hypotheses"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17297 jobs); direct axiom audit passed for 16644 declarations using only propext, Classical.choice and Quot.sound; all 16349 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.19 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

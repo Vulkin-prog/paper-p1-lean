@@ -3379,6 +3379,9 @@ import PaperP1
 #print axioms PaperP1.OrdinaryReciprocalPrimeLowerInput.eipInput_of_lower
 #print axioms PaperP1.OrdinaryReciprocalPrimeLowerInput.lower_of_eipInput
 #print axioms PaperP1.OrdinaryReciprocalPrimeLowerInput.eipInput_iff_lower
+#print axioms PaperP1.P3AuxiliaryCoverExponentBudget.power_identity
+#print axioms PaperP1.P3AuxiliaryCoverExponentBudget.family_bound
+#print axioms PaperP1.P3AuxiliaryCoverExponentBudget.exception_bound
 #print axioms PaperP1.PartialPowerSum.powerSum_nonneg
 #print axioms PaperP1.PartialPowerSum.powerSum_eq_shifted
 #print axioms PaperP1.PartialPowerSum.powerSum_le
@@ -7623,6 +7626,7 @@ import PaperP1
 #print axioms PaperP1.UniformOrdinarySurfaceCover.subpower_parameters
 #print axioms PaperP1.UniformOrdinarySurfaceCoverFromExactSource.of_exact
 #print axioms PaperP1.UniformOrdinarySurfaceCoverFromExactSource.of_hypersurface_covers
+#print axioms PaperP1.UniformP3CoverFromAuxiliary.uniformCover
 #print axioms PaperP1.UniformP3HypersurfaceCover.mem_points
 #print axioms PaperP1.UniformP3HypersurfaceCover.CoverAtDegree.mono
 #print axioms PaperP1.UniformSourceCurvePointCount.source_points
@@ -11124,6 +11128,8 @@ import PaperP1
 #print axioms PaperP1.UnconditionalDenseTwoTargetMass.article_15_2
 #print axioms PaperP1.UnconditionalTripleControlledActivity.uniform_weighted
 #print axioms PaperP1.uniformLittleOOn_zero
+#print axioms PaperP1.UniformGeometricCountsAuxiliaryInput.p3_hypotheses
+#print axioms PaperP1.UniformGeometricCountsAuxiliaryInput.companion_T1_7
 #print axioms PaperP1.UniformGeometricCountsP3Input.linear_cover
 #print axioms PaperP1.UniformGeometricCountsP3Input.typed_cover
 #print axioms PaperP1.UniformGeometricCountsP3Input.source_hypotheses

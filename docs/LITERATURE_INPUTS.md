@@ -1,6 +1,17 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0561: the exact normalized and ordinary curve-count
+Current checkpoint P1-MATH-0594: canonical companionT1.7 is
+`UniformGeometricCountsAuxiliaryInput.companion_T1_7`. The entire original P3
+curve/exception covering property is internally derived from one explicit
+quantitative global auxiliary equation of degree H^(1/sqrt(d)+epsilon), with
+constants chosen before coefficients and heights. All source and ordinary
+translations remain internal. The only unformalized geometric input family is
+`P1-GEO-P3-GLOBAL-AUXILIARY`, at the same three finite-degree families. Existence
+of that global auxiliary equation is still UNPROVED, so T1.7 stays conditional.
+All73 main results are proved; coverage remains163 proved,2 conditional and
+2 in_progress out of167. No Palomar registration is claimed.
+
+Historical checkpoint P1-MATH-0561: the exact normalized and ordinary curve-count
 properties are proved internally on the actual integer point sets. Canonical
 companionT1.7 is now `UniformGeometricCountsSurfaceInputs.companion_T1_7`:
 only the chosen-source surface cover and two ordinary surface-cover instances
@@ -29090,7 +29101,7 @@ Verified under Lean v4.36.0-rc2: full build passed (17163 jobs); direct axiom au
 
 ## Exact P3 geometric input after all source and ordinary translations
 
-Stable ID: `P1-GEO-P3-HYPERSURFACE-COVER`. Status: **explicit_hypothesis**.
+Stable ID: `P1-GEO-P3-HYPERSURFACE-COVER`. Status: **derived_from_global_auxiliary_input**.
 Exact Lean property: `PaperP1.UniformP3HypersurfaceCover.UniformCover d`.
 For every delta>0, its curve-degree cap and positive constant precede every
 actual homogeneous hypersurface ideal, rational equation coefficient, height
@@ -29102,7 +29113,9 @@ identified with ordinary coordinate Hilbert degrees by
 `PresentedProjectiveCurveData`. The bounds are A*H^(1/sqrt(d)+delta) for
 the curve family and A*H^(2/sqrt(d)+delta) for the actual exceptions.
 The primary reference is [Salberger, arXiv:2311.05561v1, Lemma 2](https://arxiv.org/pdf/2311.05561v1).
-The theorem is not yet formally proved. No axiom or Palomar claim is introduced.
+The exact property is internally derived at P1-MATH-0594 from the separate
+unproved global auxiliary input. It is not an unconditional cover. No axiom or
+Palomar claim is introduced.
 
 P1-MATH-0577 proves the complete chosen-source cover and its coefficient,
 height and finite-size uniformity from this exact input at d=2^k*D^2.
@@ -29114,14 +29127,34 @@ is fixed from the ordinary equation-size cap; constants are then chosen before
 all coefficients, auxiliary degrees, heights and actual point populations.
 
 Canonical companionT1.7 is now
-`PaperP1.UniformGeometricCountsP3Input.companion_T1_7`.
-Its only remaining unformalized input family is
-`P1-GEO-P3-HYPERSURFACE-COVER`, in three explicit finite-degree families:
-2^k*p.systemDegree^2, 2^k*(K+1)^2 and 2^k*(a+1+1)^2, with the respective
-system, linear and typed finite-size caps. The former chosen-source and ordinary
-surface-cover properties are derived conclusions, not independent premises.
-The primary P3 covering theorem itself remains UNPROVED, and T1.7 remains
-conditional. Earlier boundary descriptions below retain their historical scopes.
+`PaperP1.UniformGeometricCountsAuxiliaryInput.companion_T1_7`.
+The complete exact P3 cover is internally derived from the sole remaining
+unformalized input family `P1-GEO-P3-GLOBAL-AUXILIARY`. Its three finite-degree
+families are2^k*p.systemDegree^2,2^k*(K+1)^2 and2^k*(a+1+1)^2 with the original
+system,linear,typed size caps. The auxiliary equation's quantitative global
+existence theorem remains UNPROVED; T1.7 remains conditional. Earlier boundary
+descriptions retain their historical scopes.
+
+## Quantitative global auxiliary-hypersurface construction
+
+Stable ID: `P1-GEO-P3-GLOBAL-AUXILIARY`. Status: **explicit_hypothesis**.
+Exact Lean property: `PaperP1.UniformP3AuxiliaryHypersurface.UniformAuxiliary d`.
+For every epsilon>0, one positive B precedes every rational geometrically
+irreducible homogeneous degree-d equation and every H>=1. One actual homogeneous
+G, not divisible by that equation, must vanish on ALL normalized X3=1 integer
+points of height H and have actual natural degree at most
+B*H^(1/sqrt(d)+epsilon). No curve family, exception set or covering estimate is
+assumed. The property is a proposition passed as an explicit theorem argument;
+no axiom is introduced. Its existence theorem remains UNPROVED.
+
+The primary reference for the global construction is
+[Salberger2023, Theorem1.2](https://londmathsoc.onlinelibrary.wiley.com/doi/full/10.1112/plms.12508).
+The complete literal P3 covering transfer is proved by
+`UniformP3CoverFromAuxiliary.uniformCover`, using actual total section degrees
+and the internally proved quadratic-degree affine curve point count. This
+simplification avoids the curve forest in the covering transfer; it does not
+supply the remaining global auxiliary equation.
+
 
 
 ## Actual finite linear coordinate images of curves construct their own finite normalization and genuine Hilbert polynomial
@@ -29392,3 +29425,22 @@ This supplies a simpler route to the primary P3 cover: an auxiliary degree e=O_d
 Five new modules add six theorems; two existing curve-family theorem bodies are factored through the stronger degree-budget modules with their public statements preserved. All73 main results remain proved; global coverage stays163 proved,2 conditional,2 in_progress out of167. Original source hashes, compiler and allowed axioms are unchanged; no dependency download or Palomar submission. Ubuntu free space is about6.22GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (17289 jobs); direct axiom audit passed for 16638 declarations using only propext, Classical.choice and Quot.sound; all 16340 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.22 GiB.
+
+
+## Complete uniform P3 covering transfer from one quantitative global auxiliary equation
+
+Stable ID: p1:internal:uniform-p3-cover-from-global-auxiliary. The entire P3 covering transfer is internally proved from one explicit quantitative global auxiliary equation. Only that global auxiliary-hypersurface construction remains as the canonical geometric input.
+
+UniformP3AuxiliaryHypersurface states the remaining global auxiliary-hypersurface property as an explicit proposition and theorem argument, without any new axiom. For each epsilon>0 one positive degree constant B is chosen before every geometrically irreducible rational homogeneous degree-d equation, every integer height and every actual point. It asks for one actual homogeneous polynomial G not divisible by the original equation, vanishing on all original X3=1 integer points of height H, with actual natural degree e <= B*H^(1/sqrt(d)+epsilon). This input assumes neither a curve family nor an exception set, and neither desired covering bound is part of its statement. Existence of that quantitative global auxiliary equation remains UNPROVED.
+
+P3AuxiliaryCoverExponentBudget proves the exact exponent identity and uniform inequalities needed for the transfer. For target delta>0 the auxiliary degree loss is delta/4, the logarithmic power17 is absorbed by another delta/4, and a positive fixed integer M is chosen before all equations and heights with 1/M<delta/4. With K=d*B and a=1/sqrt(d), the actual total degree budget is e*d <= K*H^(a+delta/4). The retained curve count is therefore at most A*H^(a+delta), and the actual exception count from checkpoint593 is at most A*H^(2*a+delta), for one positive A chosen before all equation coefficients, heights and point populations.
+
+UniformP3CoverFromAuxiliary proves the COMPLETE literal UniformP3HypersurfaceCover.UniformCover d from this single explicit global auxiliary input. All curve ideals, genuine positive integral Hilbert degrees, fixed degree cutoff, actual finite families, original integer points, exceptional subsets, uniform constants and quantifier orders are constructed internally. It uses the actual total section-degree sum and the proved coefficient- and degree-uniform quadratic affine curve point bound. No global curve forest or refined auxiliary-component heights are needed for this transfer.
+
+UniformGeometricCountsAuxiliaryInput then proves the full aligned companionT1.7 assembly with only the three exact finite-degree families of that global auxiliary-equation input remaining: degrees2^k*p.systemDegree^2,2^k*(K+1)^2 and2^k*(a+1+1)^2 at the original system,linear,typed size caps. Canonical T1.7 becomes UniformGeometricCountsAuxiliaryInput.companion_T1_7. Its sole remaining unformalized geometric input ID is P1-GEO-P3-GLOBAL-AUXILIARY. The previous exact P3 cover is now an internally derived conclusion under that explicit input, not an independent supplied covering premise. T1.7 remains CONDITIONAL; this is not an unconditional global auxiliary or covering theorem.
+
+The mathematical simplification is complete: the original surface covering transfer is reduced to one quantitative global auxiliary-hypersurface construction, thanks to the internally proved quadratic degree dependence for affine curves. The primitive coefficient reduction, actual smooth residue determinants and multi-prime divisors proved previously are available to construct that remaining equation. Global finite-field residue population estimates and the auxiliary degree construction still require proofs.
+
+Four modules add six theorems and three explicit proposition/hypothesis definitions. All73 main results remain proved; coverage stays163 proved,2 conditional,2 in_progress out of167. Literal false T1.10/T5.1 and their checked corrected replacements remain distinguished. Original source hashes, compiler, heartbeat settings and permitted kernel axioms are unchanged; no dependency download or Palomar submission. Ubuntu free space is about6.19GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (17297 jobs); direct axiom audit passed for 16644 declarations using only propext, Classical.choice and Quot.sound; all 16349 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.19 GiB.

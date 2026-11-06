@@ -4318,3 +4318,7 @@ public import PaperP1.Arithmetic.PresentedCurveDegreeCutoff
 public import PaperP1.Arithmetic.PresentedCurveQuadraticCount
 public import PaperP1.Geometry.GradedSurfaceSectionCurveBudget
 public import PaperP1.Geometry.P3HypersurfaceAuxiliaryDegreeBudget
+public import PaperP1.Analysis.P3AuxiliaryCoverExponentBudget
+public import PaperP1.Arithmetic.UniformP3AuxiliaryHypersurface
+public import PaperP1.Arithmetic.UniformP3CoverFromAuxiliary
+public import PaperP1.Asymptotics.UniformGeometricCountsAuxiliaryInput
