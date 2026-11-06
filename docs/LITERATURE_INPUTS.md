@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0877: The actual rounded zeta cutoffs satisfy
+Current checkpoint P1-MATH-0878: The actual rounded zeta head and tail
+have uniform explicit bounds. The triple-large prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.87 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0877: The actual rounded zeta cutoffs satisfy
 all polynomial frequency and logarithmic bounds. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -33779,6 +33788,12 @@ Ten theorems and two definitions use the actual integer cutoffs lower=ceil(y^alp
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal the actual rounded zeta head and tail have uniform explicit bounds
+
+Four theorems prove the literal finite-head splitting, norm(head up to N)<=1+log N for EVERY sigma>=0, the actual rounded lower-head bound 1+log 2+alpha log |t|, and the actual rounded upper-tail bound 8/|t| when 0<sigma<=1 and |t|>=1. Integer zero is handled exactly. The tail is the actual difference from Mathlib riemannZeta, not an assumed truncation remainder.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -37862,3 +37877,14 @@ Ten theorems and two definitions use the actual integer cutoffs lower=ceil(y^alp
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.94 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18321 jobs); direct axiom audit passed for 18876 declarations using only propext, Classical.choice and Quot.sound; all 19115 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.88 GiB.
+
+
+## The actual rounded zeta head and tail have uniform explicit bounds
+
+Stable ID: p1:internal:zeta-head-and-tail. The actual rounded zeta head and tail have uniform explicit bounds. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Four theorems prove the literal finite-head splitting, norm(head up to N)<=1+log N for EVERY sigma>=0, the actual rounded lower-head bound 1+log 2+alpha log |t|, and the actual rounded upper-tail bound 8/|t| when 0<sigma<=1 and |t|>=1. Integer zero is handled exactly. The tail is the actual difference from Mathlib riemannZeta, not an assumed truncation remainder.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.87 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18323 jobs); direct axiom audit passed for 18880 declarations using only propext, Classical.choice and Quot.sound; all 19119 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.87 GiB.

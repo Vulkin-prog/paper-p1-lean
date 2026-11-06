@@ -4817,3 +4817,4 @@ public import PaperP1.Analysis.FiniteDyadicAssembly
 public import PaperP1.Analysis.PolynomialLongCancellation
 public import PaperP1.Analysis.DyadicLongCutoff
 public import PaperP1.Analysis.ZetaCutoffGeometry
+public import PaperP1.Analysis.ZetaHeadAndTail

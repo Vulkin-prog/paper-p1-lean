@@ -5612,6 +5612,10 @@ import PaperP1
 #print axioms PaperP1.ZetaCutoffGeometry.logarithmic_lower
 #print axioms PaperP1.ZetaCutoffGeometry.logarithmic_upper
 #print axioms PaperP1.ZetaCutoffGeometry.lower_eventually
+#print axioms PaperP1.ZetaHeadAndTail.head_norm_bound
+#print axioms PaperP1.ZetaHeadAndTail.head_split
+#print axioms PaperP1.ZetaHeadAndTail.rounded_head_bound
+#print axioms PaperP1.ZetaHeadAndTail.rounded_tail_bound
 #print axioms PaperP1.ActiveGroupKernelErasure.dimension_cost
 #print axioms PaperP1.ActiveGroupKernelErasure.two_small_per_block
 #print axioms PaperP1.ActiveGroupKernelErasureAt.two_small
