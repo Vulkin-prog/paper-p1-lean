@@ -6113,6 +6113,8 @@ import PaperP1
 #print axioms PaperP1.LargeOddKernel.mem_oddPrimeSupport_iff_parityVec_ne_zero
 #print axioms PaperP1.LargeOddKernel.prime_of_mem_oddPrimeSupport
 #print axioms PaperP1.LargeOddKernel.largeOddKernel_eq_one_iff
+#print axioms PaperP1.LargeShiftSourceSectionCover.radical_zero
+#print axioms PaperP1.LargeShiftSourceSectionCover.section_cover
 #print axioms PaperP1.LargeSmoothCertificates.small_part_dvd
 #print axioms PaperP1.LargeSmoothCertificates.gcd_parts_le
 #print axioms PaperP1.LargeSmoothCertificates.prime_product_kernel_one
@@ -6642,6 +6644,7 @@ import PaperP1
 #print axioms PaperP1.OriginalProjectedModelPointEstimate.uniform_upper_bound
 #print axioms PaperP1.OriginalProjectedModelPointEstimate.uniform_class_upper_bound
 #print axioms PaperP1.OriginalSourceFiniteFieldBudget.bounded_uniform_class_count
+#print axioms PaperP1.OriginalSourceProjectedCover.uniform_cover
 #print axioms PaperP1.OriginalSourceUniformAuxiliary.uniform_auxiliary
 #print axioms PaperP1.OriginalWindowValueBounds.values_geometry
 #print axioms PaperP1.P3BadReductionPrimeBudget.divides_certificate

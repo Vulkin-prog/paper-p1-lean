@@ -4567,3 +4567,5 @@ public import PaperP1.Arithmetic.OriginalSourceUniformAuxiliary
 public import PaperP1.Algebra.NormalizedGradedPoint
 public import PaperP1.Arithmetic.IntegerBranchShiftHeight
 public import PaperP1.Arithmetic.SourceNativeIntegerPoint
+public import PaperP1.Arithmetic.LargeShiftSourceSectionCover
+public import PaperP1.Arithmetic.OriginalSourceProjectedCover

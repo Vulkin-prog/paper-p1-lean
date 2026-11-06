@@ -1,6 +1,18 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0657: EVERY normalized integer point
+Current checkpoint P1-MATH-0658: LARGE integer branch shifts
+force ALL actual bounded source points onto one nonzero radical
+section, covered by at most d actual source curves of degree<=d.
+BOUNDED shifts have the INTERNAL projected determinant curve and
+exception cover at the genuine-degree exponents. Source pullback,
+uniform branch-card control, case combination and the final exact
+THREE-family application remain UNPROVED. No unrestricted P3 or
+rational-source theorem is asserted. Canonical T1.7 retains ONLY
+its prior P3 input in degrees>2 at the original families and caps.
+Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167;
+all 73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0657: EVERY normalized integer point
 of the ACTUAL source chosen-embedding kernel has literal integer
 affine/radical coordinates satisfying w_i^2=d_i*prod(x+a)*prod(y+b).
 The affine evaluation and coordinate identifications are INTERNAL.
@@ -23381,3 +23393,14 @@ IntegerBranchShiftHeight proves that if |x|,|w|<=H, H>=1, w!=0 and x+a divides w
 These point and height facts prepare the missing large-shift section argument. The actual section cover, source-specific determinant curve/exception assembly and unrestricted-in-height integer-source cover are not yet asserted. The already proved source-specific auxiliary equation still states its explicit |b|<=2*H^2 premise. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Original source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.8 GiB and no dependency download was needed; only the one required existing Mathlib rational-homomorphism module was built locally. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17819 jobs); direct axiom audit passed for 17592 declarations using only propext, Classical.choice and Quot.sound; all 17553 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.77 GiB.
+
+
+## Actual source section covers handle large shifts and projected determinant covers handle bounded shifts
+
+LargeShiftSourceSectionCover proves that ANY original integer branch shift with |a|>2*H^2 forces its same component radical to vanish on EVERY actual normalized chosen-embedding source integer point of height H>=1. It uses the recovered literal INTEGER radical equations and divisibility by the corresponding branch factor, on either side. The radical is a proved nonzero degree-one homogeneous element. The existing actual-source principal-section component theorem therefore gives a literal family of at most d=2^k*D^2 projective source curves, each of degree at most d, covering ALL such points. The family is an actual finite set of source curves and all point memberships use their actual coordinate ideals. No exceptional points or hypothesized cover are used in this large-shift case.
+
+OriginalSourceProjectedCover assembles the internal source-specific global auxiliary equation with the proved single-auxiliary curve cover, logarithm absorption and exponent budgets. For fixed k,D>0, branch-size cap M and delta>0 it chooses the curve-degree cap and real constant BEFORE all original source/model data and heights. Whenever the literal shifts satisfy |b|<=2*H^2, the actual geometrically irreducible homogeneous monic original projected image admits literal projective curves and an actual exceptional subset of its original normalized integer points. The curve count is O(H^(1/sqrt(2^k*D^2)+delta)) and the exceptional count is O(H^(2/sqrt(2^k*D^2)+delta)). No unrestricted P3 estimate, global auxiliary equation or cover is assumed.
+
+Two modules add three theorems and no definitions. Each side of the shift-size case split is now internally covered, at the stated actual-source or actual-image level. The source projection pullback, uniform branch-card bound, combination of these cases and final exact three-family application remain unfinished. This does not assert an unrestricted P3 theorem or a rational-coefficient exact source-cover property. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.8 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17823 jobs); direct axiom audit passed for 17595 declarations using only propext, Classical.choice and Quot.sound; all 17556 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.75 GiB.

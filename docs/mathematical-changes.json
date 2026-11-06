@@ -31257,6 +31257,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "6f4e4c0099c6262099cfab3e39dfe844025b18be"
+    },
+    {
+      "id": "P1-MATH-0658",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Large shifts had no proved geometric cover, and the proved original-source global auxiliary equation had not yet been assembled into an actual projected curve and exceptional-point cover.",
+      "finding": "Large shifts force a single actual nonzero linear radical section covering every source point with at most d curves of degree d; bounded shifts have the internal actual projected determinant curve cover with genuine-degree exponents.",
+      "proposed_revision": "Combine these two literal covers through the actual bounded projection and existing degree/height transfer, prove uniform branch-size control and apply the resulting integer-source theorem to the three original paper families at their unchanged caps.",
+      "impact": "Proves both shift cases at their respective actual-source and actual-image levels. Source pullback, case assembly and final three-family application remain unfinished.",
+      "evidence": [
+        "PaperP1.LargeShiftSourceSectionCover.radical_zero",
+        "PaperP1.LargeShiftSourceSectionCover.section_cover",
+        "PaperP1.OriginalSourceProjectedCover.uniform_cover"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17823 jobs); direct axiom audit passed for 17595 declarations using only propext, Classical.choice and Quot.sound; all 17556 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.75 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
