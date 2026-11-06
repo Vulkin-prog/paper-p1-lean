@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0667: centered dyadic Dirichlet sampling
+Current checkpoint P1-MATH-0668: actual prime-divisibility pair
+moments and an unconditional finite avoidance sieve are PROVED.
+For H=sum_{p in P}1/p>0, |avoid(P,X)|<=X/H+|P|^2/H^2.
+Floor errors and every diagonal term are internal. Growing-band
+support propagation, stronger large values and logarithmic
+short-average assembly remain unfinished. T19.17 stays conditional;
+T1.7 is complete. Coverage: 164 proved, 1 conditional, 2 in_progress
+/167; all 73 main results proved. False original scopes and their
+checked corrections are unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0667: centered dyadic Dirichlet sampling
 and ALL-ORDER discrete prime-band moments/large-value cardinalities
 are PROVED. The exact common phase removes the central logarithm;
 k!, k log 2, product length and reciprocal logarithmic savings are
@@ -895,7 +905,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records665 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records666 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1014,7 +1024,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17697 audited theorem/lemma declarations**. This
+- The project currently has **17708 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30528,3 +30538,16 @@ One final theorem specializes to the actual reciprocal coefficients a_p/p with |
 This closes the centered dyadic/prime-product specialization of basic discrete sampling and high moments. It does not prove the stronger large-value bounds, factor-rich/sieve control or logarithmic multiplicative short-average decay needed to discharge T19.17. That result retains its explicit analytic input. Original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The two original false scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.6 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17873 jobs); direct axiom audit passed for 17697 declarations using only propext, Classical.choice and Quot.sound; all 17674 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.54 GiB.
+
+
+## Exact prime-divisibility covariance and an unconditional finite avoidance sieve
+
+PrimeDivisibilityMoments defines the literal real divisibility indicator and proves its exact prefix sum floor(X/d), square identity and actual coprime product identity. All floor errors are internal. For every p>=2 it proves sum_{1<=n<=X}(1_{p|n}-1/p)^2<=X/p. For distinct primes p,q the centered mixed sum is at most 1, using exact divisibility by p*q, both lower floor bounds and 1/p+1/q<=1. There is no probabilistic independence assumption or hidden sieve estimate.
+
+PrimeAvoidanceSieve defines the actual reciprocal mass H=sum_{p in P}1/p and the actual finite set of positive n<=X divisible by none of the selected primes. It identifies the actual prime-divisor count minus H with the sum of centered divisibility indicators. Exact square expansion and finite summation retain every ordered pair, including the diagonal. The checked covariance bounds give sum_{1<=n<=X}(count_P(n)-H)^2 <= X*H+|P|^2.
+
+Every integer in the literal avoidance set has count_P(n)=0. Positivity and the proved variance bound therefore give |avoid(P,X)|*H^2<=X*H+|P|^2 for EVERY finite prime set P and EVERY natural X, including the empty and zero cases. For H>0 this yields the actual cardinality bound |avoid(P,X)|<=X/H+|P|^2/H^2. No prime-distribution, second-moment, sieve or large-value proposition is supplied as a premise. Two modules add eleven theorems and three definitions.
+
+This closes an elementary finite factor-avoidance sieve needed to control omitted support in the independent multiplicative short-average route. Applying it to actual growing prime bands, propagating the omitted-support budgets and proving stronger large values and logarithmic short-average decay remain unfinished. The finite avoidance estimate alone does not imply smooth-number short-interval concentration. T19.17 retains its explicit analytic input; complete original T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The two false original scopes and checked corrected replacements are unchanged. Original source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.5 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17877 jobs); direct axiom audit passed for 17708 declarations using only propext, Classical.choice and Quot.sound; all 17688 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.52 GiB.

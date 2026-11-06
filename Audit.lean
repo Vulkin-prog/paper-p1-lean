@@ -7035,6 +7035,11 @@ import PaperP1
 #print axioms PaperP1.PrimeAssignments.groupPrime_pairwise_coprime
 #print axioms PaperP1.PrimeAssignments.product_groupModulus
 #print axioms PaperP1.PrimeAssignments.groupModulus_pairwise_coprime
+#print axioms PaperP1.PrimeAvoidanceSieve.centered_count
+#print axioms PaperP1.PrimeAvoidanceSieve.variance_identity
+#print axioms PaperP1.PrimeAvoidanceSieve.variance_bound
+#print axioms PaperP1.PrimeAvoidanceSieve.avoidance_budget
+#print axioms PaperP1.PrimeAvoidanceSieve.avoidance_card
 #print axioms PaperP1.PrimeBudgetRankin.card_values_le_exp
 #print axioms PaperP1.PrimeBudgetRankin.log_values_le
 #print axioms PaperP1.PrimeBudgetRankin.source_uniform_log_bound
@@ -7060,6 +7065,12 @@ import PaperP1
 #print axioms PaperP1.PrimeCircuitSupports.old_support
 #print axioms PaperP1.PrimeCircuitSupports.inserted_support
 #print axioms PaperP1.PrimeCircuitSupports.throughPool_card
+#print axioms PaperP1.PrimeDivisibilityMoments.indicator_sum
+#print axioms PaperP1.PrimeDivisibilityMoments.indicator_square
+#print axioms PaperP1.PrimeDivisibilityMoments.indicator_product
+#print axioms PaperP1.PrimeDivisibilityMoments.quotient_bounds
+#print axioms PaperP1.PrimeDivisibilityMoments.diagonal_bound
+#print axioms PaperP1.PrimeDivisibilityMoments.off_diagonal_bound
 #print axioms PaperP1.PrimeDivisorLogBudget.log_sum_le
 #print axioms PaperP1.PrimeDivisorLogBudget.weighted_log_sum_le
 #print axioms PaperP1.PrimeDivisorWeights.factors_mul_prime

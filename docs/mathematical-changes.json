@@ -31648,6 +31648,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "20303cafbaef9a48eff3c7980ec34384736cff89"
+    },
+    {
+      "id": "P1-MATH-0668",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Control of the integers having no prime factor in a selected finite range had not been proved; treating distinct divisibility events as exactly independent would ignore floor errors and the actual diagonal.",
+      "finding": "Literal prefix divisibility counts yield exact centered pair moments, variance <=X H+|P|^2 and the actual finite avoidance bound X/H+|P|^2/H^2. Every floor error and ordered diagonal term is retained.",
+      "proposed_revision": "Use the proved finite avoidance sieve with its reciprocal mass and cardinality error. For growing prime ranges, prove mass growth and the normalized cardinality error separately before claiming a negligible exceptional support.",
+      "impact": "Proves an unconditional actual finite avoidance sieve, without any sieve or independence premise. Growing-band support control and the full T19.17 short-average theorem remain unfinished.",
+      "evidence": [
+        "PaperP1.PrimeAvoidanceSieve.centered_count",
+        "PaperP1.PrimeAvoidanceSieve.variance_identity",
+        "PaperP1.PrimeAvoidanceSieve.variance_bound",
+        "PaperP1.PrimeAvoidanceSieve.avoidance_budget",
+        "PaperP1.PrimeAvoidanceSieve.avoidance_card",
+        "PaperP1.PrimeDivisibilityMoments.indicator_sum",
+        "PaperP1.PrimeDivisibilityMoments.indicator_square",
+        "PaperP1.PrimeDivisibilityMoments.indicator_product",
+        "PaperP1.PrimeDivisibilityMoments.quotient_bounds",
+        "PaperP1.PrimeDivisibilityMoments.diagonal_bound",
+        "PaperP1.PrimeDivisibilityMoments.off_diagonal_bound",
+        "PaperP1.PrimeAvoidanceSieve.reciprocalMass",
+        "PaperP1.PrimeAvoidanceSieve.avoiding",
+        "PaperP1.PrimeDivisibilityMoments.indicator"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17877 jobs); direct axiom audit passed for 17708 declarations using only propext, Classical.choice and Quot.sound; all 17688 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.52 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

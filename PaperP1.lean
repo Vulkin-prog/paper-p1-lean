@@ -4594,3 +4594,5 @@ public import PaperP1.Analysis.SeparatedPolynomialSampling
 public import PaperP1.Analysis.CenteredLogarithmicSampling
 public import PaperP1.Analysis.DyadicDirichletSampling
 public import PaperP1.Analysis.PrimeBandDiscreteMoments
+public import PaperP1.Arithmetic.PrimeAvoidanceSieve
+public import PaperP1.Arithmetic.PrimeDivisibilityMoments
