@@ -3446,6 +3446,11 @@ import PaperP1
 #print axioms PaperP1.CentralDirichletLowerBound.phase_re
 #print axioms PaperP1.CentralDirichletLowerBound.reciprocal_mass_lower
 #print axioms PaperP1.CentralDirichletLowerBound.central_norm_lower
+#print axioms PaperP1.CentralMeanSquareObstruction.central_interval_lower
+#print axioms PaperP1.CentralMeanSquareObstruction.full_interval_lower
+#print axioms PaperP1.CentralMeanSquareObstruction.no_unrestricted_vanishing
+#print axioms PaperP1.CentralMeanSquareObstruction.constant_mean_difference
+#print axioms PaperP1.CentralMeanSquareObstruction.constant_square_zero
 #print axioms PaperP1.CleanPairReciprocalLower.factor_identity
 #print axioms PaperP1.CleanPairReciprocalLower.substitute_lower
 #print axioms PaperP1.ClippedPowerSum.clipped_nonneg
