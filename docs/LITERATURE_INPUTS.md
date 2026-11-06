@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0881: The actual Riemann zeta function is
+Current checkpoint P1-MATH-0882: Real Euler products obey a proved
+fourth-power comparison with an explicit quadratic error. The triple-
+large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 53.80 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0881: The actual Riemann zeta function is
 uniformly sublogarithmic for every positive damping up to one. The
 triple-large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -33839,6 +33848,12 @@ Three theorems prove: for EVERY epsilon>0, ONE T0>=8 precedes ALL |t|>=T0 and AL
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal real euler products obey a proved fourth-power comparison with an explicit quadratic error
+
+Four theorems prove the correct scalar inequality 4*f*Re(z)<=3+Re(z^2) for real |f|<=1 and |z|=1, the actual coefficient norm bound, and for EVERY finite weighted product with 0<=w_i<=1/2 the comparison |A|^4<=exp(8*sum w_i^2)*|B|^3*|C|, where B uses weight w_i and C uses w_i*z_i^2. A formal counterexample at real part 1/2 refutes the stronger scalar comparison tentatively considered in working notes. The resulting exponents are 3/4 and 1/4, not the previously contemplated 1/2 and 1/2. This is a correction of the INTERNAL exploratory route, not a source-manuscript error; no numbered result changes status.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -37966,3 +37981,14 @@ Three theorems prove: for EVERY epsilon>0, ONE T0>=8 precedes ALL |t|>=T0 and AL
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.87 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18329 jobs); direct axiom audit passed for 18888 declarations using only propext, Classical.choice and Quot.sound; all 19130 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.81 GiB.
+
+
+## Real Euler products obey a proved fourth-power comparison with an explicit quadratic error
+
+Stable ID: p1:internal:real-unit-euler-comparison. Real Euler products obey a proved fourth-power comparison with an explicit quadratic error. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Four theorems prove the correct scalar inequality 4*f*Re(z)<=3+Re(z^2) for real |f|<=1 and |z|=1, the actual coefficient norm bound, and for EVERY finite weighted product with 0<=w_i<=1/2 the comparison |A|^4<=exp(8*sum w_i^2)*|B|^3*|C|, where B uses weight w_i and C uses w_i*z_i^2. A formal counterexample at real part 1/2 refutes the stronger scalar comparison tentatively considered in working notes. The resulting exponents are 3/4 and 1/4, not the previously contemplated 1/2 and 1/2. This is a correction of the INTERNAL exploratory route, not a source-manuscript error; no numbered result changes status.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.80 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18331 jobs); direct axiom audit passed for 18892 declarations using only propext, Classical.choice and Quot.sound; all 19134 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.79 GiB.

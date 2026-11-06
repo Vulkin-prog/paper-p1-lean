@@ -38882,6 +38882,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "7eeffd7f4d0f172d83a82975f3c7536f1eed3ad0"
+    },
+    {
+      "id": "P1-MATH-0882",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "An exploratory working-note idea proposed a square comparison, but its local scalar inequality fails at real part 1/2. It was never assumed in a published Lean theorem or attributed to the paper.",
+      "finding": "Four theorems prove the correct scalar inequality 4*f*Re(z)<=3+Re(z^2) for real |f|<=1 and |z|=1, the actual coefficient norm bound, and for EVERY finite weighted product with 0<=w_i<=1/2 the comparison |A|^4<=exp(8*sum w_i^2)*|B|^3*|C|, where B uses weight w_i and C uses w_i*z_i^2. A formal counterexample at real part 1/2 refutes the stronger scalar comparison tentatively considered in working notes. The resulting exponents are 3/4 and 1/4, not the previously contemplated 1/2 and 1/2. This is a correction of the INTERNAL exploratory route, not a source-manuscript error; no numbered result changes status.",
+      "proposed_revision": "For the internal analytic route, use the proved fourth-power Euler comparison with exponents 3/4 and 1/4 and explicit error exp(8*sum w_i^2). Do not attribute the discarded square comparison to the source manuscript.",
+      "impact": "Real Euler products obey a proved fourth-power comparison with an explicit quadratic error. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.RealUnitEulerComparison.unit_real_part_bound",
+        "PaperP1.RealUnitEulerComparison.coefficient_norm_bound",
+        "PaperP1.RealUnitEulerComparison.fourth_power_bound",
+        "PaperP1.RealUnitEulerComparison.stronger_scalar_comparison_fails"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18331 jobs); direct axiom audit passed for 18892 declarations using only propext, Classical.choice and Quot.sound; all 19134 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.79 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

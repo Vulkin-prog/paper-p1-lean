@@ -4939,6 +4939,10 @@ import PaperP1
 #print axioms PaperP1.RealSeriesTail.constant_tail
 #print axioms PaperP1.RealSmoothEvaluationDeterminant.bound
 #print axioms PaperP1.RealSmoothEvaluationDeterminant.coarse_bound
+#print axioms PaperP1.RealUnitEulerComparison.unit_real_part_bound
+#print axioms PaperP1.RealUnitEulerComparison.coefficient_norm_bound
+#print axioms PaperP1.RealUnitEulerComparison.fourth_power_bound
+#print axioms PaperP1.RealUnitEulerComparison.stronger_scalar_comparison_fails
 #print axioms PaperP1.RealUnitTwist.unitTwist_apply
 #print axioms PaperP1.RealUnitTwist.unitTwist_zero
 #print axioms PaperP1.RealUnitTwist.unitTwist_norm
