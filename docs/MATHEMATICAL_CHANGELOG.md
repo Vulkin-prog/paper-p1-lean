@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0767: The actual narrow rectangle equals the
+Current checkpoint P1-MATH-0768: Exact narrow rectangle minus coupled
+Ramare quotient has a unit bounded endpoint coefficient. The actual
+Ramare main-term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0767: The actual narrow rectangle equals the
 Dirichlet polynomial of its literal divisor weight. The actual Ramare
 main-term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -1658,7 +1667,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**765 mathematical improvements and two statement-scope corrections are confirmed.**
+**766 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -31651,3 +31660,12 @@ For X>0 and H>=2 every successful rectangle test gives a product in [X,4*X). Exa
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18101 jobs); direct axiom audit passed for 18462 declarations using only propext, Classical.choice and Quot.sound; all 18628 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.72 GiB.
+
+
+## Exact narrow rectangle minus coupled Ramare quotient has a unit bounded endpoint coefficient
+
+The actual source weight is the indicator of [X,2*X) times the full Ramare divisor weight. Exact reindexing identifies the COUPLED relative quotient with the actual source-weight Dirichlet polynomial on [X,4*X). Its difference from the narrow rectangle is exactly the Dirichlet polynomial whose coefficient is (rectangle weight-source weight)*other-band presence*f(n). That coefficient is bounded by one whenever f(n) is, and is zero outside the two previously proved endpoint strips. Five theorems and two definitions establish the actual identity, pointwise bound and support; the source identity also covers X=0.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18103 jobs); direct axiom audit passed for 18467 declarations using only propext, Classical.choice and Quot.sound; all 18635 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.70 GiB.

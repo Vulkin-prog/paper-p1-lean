@@ -35302,6 +35302,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "7709ba7636c7515621b71b80634f6e6b22b38a84"
+    },
+    {
+      "id": "P1-MATH-0768",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Neither the actual source cutoff nor repeated-factor denominators may be dropped when comparing the coupled quotient and a product of independent prime/cofactor polynomials.",
+      "finding": "The actual source weight is the indicator of [X,2*X) times the full Ramare divisor weight. Exact reindexing identifies the COUPLED relative quotient with the actual source-weight Dirichlet polynomial on [X,4*X). Its difference from the narrow rectangle is exactly the Dirichlet polynomial whose coefficient is (rectangle weight-source weight)*other-band presence*f(n). That coefficient is bounded by one whenever f(n) is, and is zero outside the two previously proved endpoint strips. Five theorems and two definitions establish the actual identity, pointwise bound and support; the source identity also covers X=0.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Exact narrow rectangle minus coupled Ramare quotient has a unit bounded endpoint coefficient. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.NarrowRectangleDifference.sourceWeight_bounds",
+        "PaperP1.NarrowRectangleDifference.coefficient_norm_bound",
+        "PaperP1.NarrowRectangleDifference.coefficient_zero",
+        "PaperP1.NarrowRectangleDifference.source_value_identity",
+        "PaperP1.NarrowRectangleDifference.difference_identity",
+        "PaperP1.NarrowRectangleDifference.sourceWeight",
+        "PaperP1.NarrowRectangleDifference.coefficient"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18103 jobs); direct axiom audit passed for 18467 declarations using only propext, Classical.choice and Quot.sound; all 18635 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.70 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
