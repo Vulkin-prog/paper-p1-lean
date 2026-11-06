@@ -1,6 +1,16 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0948: A precision-selected fixed-power
+Current checkpoint P1-MATH-0949: The actual precision-selected fixed-
+power Ramare quotient approximates the original Dirichlet polynomial.
+The triple-large prime frequency contribution, the central-frequency
+mean comparison and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.60 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0948: A precision-selected fixed-power
 population has the required actual Ramare support and small prescribed
 exceptional density. The triple-large prime frequency contribution, the
 central-frequency mean comparison and complete logarithmic short-average
@@ -28206,3 +28216,12 @@ Five theorems and one definition prove actual good-set inclusion, ordinary first
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.60 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18463 jobs); direct axiom audit passed for 19150 declarations using only propext, Classical.choice and Quot.sound; all 19445 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.58 GiB.
+
+
+## The actual precision-selected fixed-power Ramare quotient approximates the original Dirichlet polynomial
+
+Two theorems prove the actual quantitative quotient mean-square error <=C times the actual exceptional density, and for EVERY epsilon>0 choose a fixed a in (0,1/32) before ONE integer cutoff for ALL N, ALL actual bounded completely multiplicative complex coefficients and ALL heights T<=N. The literal original polynomial minus its actual relative Ramare quotient has square integral<=epsilon. Actual disjointness, prime support, coefficient zeros and finite exceptional sets are proved and applied; no quotient approximation input is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.60 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18465 jobs); direct axiom audit passed for 19152 declarations using only propext, Classical.choice and Quot.sound; all 19447 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.56 GiB.

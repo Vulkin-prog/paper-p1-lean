@@ -4946,6 +4946,8 @@ import PaperP1
 #print axioms PaperP1.PrecisionPowerPopulation.missing_good_le_sum
 #print axioms PaperP1.PrecisionPowerPopulation.precision_choice
 #print axioms PaperP1.PrecisionPowerPopulation.disjoint_first_eventually
+#print axioms PaperP1.PrecisionPowerRelativeApproximation.quantitative_bound
+#print axioms PaperP1.PrecisionPowerRelativeApproximation.precision_choice
 #print axioms PaperP1.PrimeBandDiscreteMoments.sampled_high_moment_bound
 #print axioms PaperP1.PrimeBandDiscreteMoments.large_values_card
 #print axioms PaperP1.PrimeBandDiscreteMoments.reciprocal_sampled_estimates_eventually

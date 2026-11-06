@@ -4888,3 +4888,4 @@ public import PaperP1.Analysis.FixedPowerSmallSamples
 public import PaperP1.Analysis.FixedPowerSmallIntegral
 public import PaperP1.Analysis.FixedPowerJointRectangle
 public import PaperP1.Analysis.PrecisionPowerPopulation
+public import PaperP1.Analysis.PrecisionPowerRelativeApproximation
