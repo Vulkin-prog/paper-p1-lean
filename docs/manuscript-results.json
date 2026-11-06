@@ -40941,7 +40941,8 @@
             "PaperP1.HyperellipticTangentAuxiliary.point_bound_of_dimension"
           ]
         }
-      ]
+      ],
+      "validation_commit": "e6e1292544d2b47c942e630e04f18f2f8c82447d"
     },
     {
       "label": "p1:arith:dense",
