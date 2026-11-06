@@ -1,6 +1,18 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0660: the COMPLETE original companion
+Current checkpoint P1-MATH-0661: exact ordinary-smooth indicators
+are completely multiplicative and count the LITERAL candidate sets.
+The original T19.17 source census follows from uniform logarithmic
+short-average concentration using the INTERNAL positive dyadic
+smooth density; every floor, word-width and endpoint loss is proved.
+The independent multiplicative short-average theorem is UNPROVED.
+T19.17 remains conditional; positive density alone is not enough.
+Original T1.7 stays COMPLETE with no unformalized input. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main results
+proved. The two false-original corrected scopes are unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0660: the COMPLETE original companion
 T1.7 is PROVED with NO external mathematical input. Canonical:
 PaperP1.UniformGeometricCounts.companion_T1_7. ALL FIVE original
 conclusion fields and the SAME THREE original source-family caps
@@ -819,7 +831,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records658 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records659 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -938,7 +950,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17605 audited theorem/lemma declarations**. This
+- The project currently has **17618 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30355,3 +30367,18 @@ Three modules add five theorems and no definitions. The canonical T1.7 declarati
 Coverage becomes 164 proved, 1 conditional and 2 in_progress out of 167; all 73 main results are proved. T19.17 alone retains an unformalized almost-all short-interval smooth-number input. The original radius-one T1.10 and uncapped exact T5.1 display remain disproved original scopes with their already proved corrected variants; they are not relabeled as proved originals. Original manuscript hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.7 GiB; no dependency download. No Palomar registration before the remaining project obligations are resolved.
 
 Verified under Lean v4.36.0-rc2: full build passed (17833 jobs); direct axiom audit passed for 17605 declarations using only propext, Classical.choice and Quot.sound; all 17568 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.69 GiB.
+
+
+## Exact ordinary smooth indicators and a Dickman-free reduction of the actual source census to uniform short averages
+
+OrdinarySmoothIndicator constructs the actual fixed-cutoff ordinary smooth indicator, excluding zero and using the existing largestPrimeFactor convention. It proves values in [0,1], the exact product identity for EVERY pair of integers, multiplicativity as an ArithmeticFunction, and identities between its literal dyadic/short sums and the actual finite smooth-candidate populations. These are unconditional proofs; no asymptotic or distribution input is assumed.
+
+MultiplicativeShortAverage defines the actual half-open short sum and dyadic long sum, their normalized means and actual finite deviation set. MeanSquareInput and ConcentrationInput are explicitly UNPROVED independent analytic properties for ALL bounded real multiplicative functions, with thresholds BEFORE the function and hence before any cutoff depending on N. The finite square-budget bound and the passage from a uniform mean-square input to uniform concentration are proved. Neither analytic input is introduced as an axiom or counted as proved.
+
+SmoothCensusFromShortAverages proves that this concentration input at the existing logarithmic block length implies the EXACT original OrdinaryCensusDensity used by T19.17. The long dyadic smooth density is supplied by the already internal PolynomialSmoothDyadicDensity theorem at the literal cutoff floor(N^a). It needs no Dickman function or relative smooth-number asymptotic. The completely multiplicative indicator may depend on N; uniformity of the input explicitly allows this. Every short sum is identified with the actual original ordinaryIndices set, the floor cutoff is compared to N^a, the critical word width is uniform before L and orientation, and the shifted source-block endpoint contributes just one point, absorbed at the exact requested tolerance.
+
+Three modules add thirteen theorems and seven definitions. This gives a proved alternative REDUCTION of the original source census to the independent real-multiplicative short-average theorem, whose qualitative scope follows from Matomaki--Radziwill 2016, Theorem 1. That analytic theorem itself remains UNPROVED in Lean. Positive global density alone is not asserted to imply almost-all short-window coverage. The existing canonical conditional T19.17 statements and their ordinary CorollarySixLogInput hypothesis remain unchanged; this is not a completion of T19.17.
+
+The COMPLETE original T1.7 stays proved, with canonical UniformGeometricCounts.companion_T1_7 and no unformalized inputs. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The T1.10 and T5.1 disproved-original scopes retain their proved corrected variants and existing status. Original source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.7 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17839 jobs); direct axiom audit passed for 17618 declarations using only propext, Classical.choice and Quot.sound; all 17588 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.67 GiB.

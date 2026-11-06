@@ -3872,6 +3872,8 @@ import PaperP1
 #print axioms PaperP1.MovingLogarithmicPivotMass.interval_cover
 #print axioms PaperP1.MovingLogarithmicPivotMass.exponential_cover
 #print axioms PaperP1.MovingLogarithmicPivotMass.finite_mass
+#print axioms PaperP1.MultiplicativeShortAverage.finite_square_budget
+#print axioms PaperP1.MultiplicativeShortAverage.concentration_of_mean_square
 #print axioms PaperP1.NonsingularMonomialPieces.exists_nonexceptional_piece
 #print axioms PaperP1.NonsingularMonomialPieces.exists_counting_piece
 #print axioms PaperP1.NonstationaryTangentImage.continuousOn_position
@@ -6632,6 +6634,15 @@ import PaperP1
 #print axioms PaperP1.OrdinarySmoothDyadicDensity.paired_image_injective
 #print axioms PaperP1.OrdinarySmoothDyadicDensity.finite_transfer
 #print axioms PaperP1.OrdinarySmoothDyadicDensity.density_transfer
+#print axioms PaperP1.OrdinarySmoothIndicator.value_zero
+#print axioms PaperP1.OrdinarySmoothIndicator.value_one
+#print axioms PaperP1.OrdinarySmoothIndicator.value_nonneg
+#print axioms PaperP1.OrdinarySmoothIndicator.value_le_one
+#print axioms PaperP1.OrdinarySmoothIndicator.value_mul
+#print axioms PaperP1.OrdinarySmoothIndicator.isMultiplicative
+#print axioms PaperP1.OrdinarySmoothIndicator.sum_eq_filter_card
+#print axioms PaperP1.OrdinarySmoothIndicator.dyadic_sum
+#print axioms PaperP1.OrdinarySmoothIndicator.short_sum
 #print axioms PaperP1.OrdinarySmoothSourcePopulation.mem_goodSources
 #print axioms PaperP1.OrdinarySmoothSourcePopulation.goodSources_subset
 #print axioms PaperP1.OrdinarySmoothSourcePopulation.source_deletion_ledger
@@ -11653,6 +11664,8 @@ import PaperP1
 #print axioms PaperP1.SmallTransverseMassUnderInputs.uniform_bound
 #print axioms PaperP1.SmallTransverseMassUnderInputs.exceptional_data
 #print axioms PaperP1.SmallTransverseMassUnderInputs.outside_small_count
+#print axioms PaperP1.SmoothCensusFromShortAverages.ordinary_census
+#print axioms PaperP1.SmoothCensusFromShortAverages.ordinary_census_of_mean_square
 #print axioms PaperP1.SmoothCertificateCount.uniform_count
 #print axioms PaperP1.SmoothDegreeOneHostCount.uniform_hosts
 #print axioms PaperP1.SmoothGeneralNonalignedHostCount.uniform_hosts

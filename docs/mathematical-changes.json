@@ -31353,6 +31353,52 @@
         "status": "not_integrated"
       },
       "validation_commit": "40570ff641481d1ba232895de5f454dc02ceecca"
+    },
+    {
+      "id": "P1-MATH-0661",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "T19.17 used an unproved ordinary smooth relative-density asymptotic in logarithmic intervals. Its exact source census had not yet been reduced directly to the uniform bounded-real multiplicative short-average theorem using the already proved positive global smooth density.",
+      "finding": "The literal smooth indicator is completely multiplicative and exactly represents the actual candidate sets. Uniform short-average concentration plus the internal positive dyadic smooth density implies the full actual source census, paying floor, width and endpoint errors exactly and without a Dickman asymptotic.",
+      "proposed_revision": "Use this alternative analytic reduction if formalizing the real-multiplicative short-average theorem. Retain its explicit uniform-in-function hypothesis until that independent theorem is genuinely proved; do not infer almost-all coverage from positive global density alone.",
+      "impact": "Proves the exact arithmetic indicator and the full finite/uniform transport from a distinct analytic input to the original source census. T19.17 remains conditional; the analytic short-average theorem is not proved.",
+      "evidence": [
+        "PaperP1.MultiplicativeShortAverage.finite_square_budget",
+        "PaperP1.MultiplicativeShortAverage.concentration_of_mean_square",
+        "PaperP1.OrdinarySmoothIndicator.value_zero",
+        "PaperP1.OrdinarySmoothIndicator.value_one",
+        "PaperP1.OrdinarySmoothIndicator.value_nonneg",
+        "PaperP1.OrdinarySmoothIndicator.value_le_one",
+        "PaperP1.OrdinarySmoothIndicator.value_mul",
+        "PaperP1.OrdinarySmoothIndicator.isMultiplicative",
+        "PaperP1.OrdinarySmoothIndicator.sum_eq_filter_card",
+        "PaperP1.OrdinarySmoothIndicator.dyadic_sum",
+        "PaperP1.OrdinarySmoothIndicator.short_sum",
+        "PaperP1.SmoothCensusFromShortAverages.ordinary_census",
+        "PaperP1.SmoothCensusFromShortAverages.ordinary_census_of_mean_square",
+        "PaperP1.MultiplicativeShortAverage.longMean",
+        "PaperP1.MultiplicativeShortAverage.shortMean",
+        "PaperP1.MultiplicativeShortAverage.bad",
+        "PaperP1.MultiplicativeShortAverage.MeanSquareInput",
+        "PaperP1.MultiplicativeShortAverage.ConcentrationInput",
+        "PaperP1.OrdinarySmoothIndicator.value",
+        "PaperP1.OrdinarySmoothIndicator.arithmetic"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17839 jobs); direct axiom audit passed for 17618 declarations using only propext, Classical.choice and Quot.sound; all 17588 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.67 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
