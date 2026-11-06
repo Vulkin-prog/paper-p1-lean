@@ -4782,3 +4782,4 @@ public import PaperP1.Analysis.SeparatedIntegralBound
 public import PaperP1.Analysis.FinalSmallPrimeIntegral
 public import PaperP1.Analysis.TripleLargeFrequencyReduction
 public import PaperP1.Analysis.FinalPrimeCardBudget
+public import PaperP1.Analysis.FinalPrimeLargeValueCardinality

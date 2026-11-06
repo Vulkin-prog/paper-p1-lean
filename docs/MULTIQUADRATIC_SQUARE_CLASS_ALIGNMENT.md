@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0842: The actual final-prime moment budget
+Current checkpoint P1-MATH-0843: Each actual final prime block has at
+most an exponential squared-log-log number of large samples. The triple-
+large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 51.38 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0842: The actual final-prime moment budget
 has a squared-log-log exponential bound. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -27009,3 +27018,12 @@ The reciprocal final threshold moment is EXACTLY ((1/z^100)^(2*k))^(-1)=exp(200*
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.38 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18251 jobs); direct axiom audit passed for 18701 declarations using only propext, Classical.choice and Quot.sound; all 18908 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.38 GiB.
+
+
+## Each actual final prime block has at most an exponential squared-log-log number of large samples
+
+ONE N0>=1 precedes ALL N>=N0, EVERY final-band parameter B, EVERY occupied actual final block, every unit-bounded prime coefficient function, every 0<T<=N and every separated sample set. If the ACTUAL block norm is >=1/(log N)^100 at each sample, its cardinality is <=exp(1000*(log log N)^2). One theorem proves the actual filter, mass, ceiling order and rounded-powered support conditions before applying the full exact moment budget. No exceptional-set size is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.38 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18253 jobs); direct axiom audit passed for 18702 declarations using only propext, Classical.choice and Quot.sound; all 18909 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.36 GiB.
