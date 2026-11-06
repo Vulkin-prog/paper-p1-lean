@@ -4927,6 +4927,13 @@ import PaperP1
 #print axioms PaperP1.SmoothSaddleLoss.finite_loss_upper
 #print axioms PaperP1.SmoothSaddleLoss.normalized_majorant_limit
 #print axioms PaperP1.SmoothSaddleLoss.eventual_loss_bound
+#print axioms PaperP1.SparseGramEnvelope.sqrt_rpow
+#print axioms PaperP1.SparseGramEnvelope.square_identity
+#print axioms PaperP1.SparseGramEnvelope.decaying_log_power
+#print axioms PaperP1.SparseGramEnvelope.squareEnvelope_tendsto
+#print axioms PaperP1.SparseGramEnvelope.normalizedCap_nonneg
+#print axioms PaperP1.SparseGramEnvelope.normalizedCap_tendsto
+#print axioms PaperP1.SparseGramEnvelope.uniform_small
 #print axioms PaperP1.SquareRootGramBound.cap_nonneg
 #print axioms PaperP1.SquareRootGramBound.actual_sum_bound
 #print axioms PaperP1.SquareRootGramBound.mixed_sum_bound

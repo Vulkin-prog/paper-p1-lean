@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0747: Actual mixed Dirichlet Gram row budget
+Current checkpoint P1-MATH-0748: Actual sparse Gram envelope has a
+proved uniform vanishing normalized cap. The actual Ramare main-term
+frequency bounds and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 53.1 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0747: Actual mixed Dirichlet Gram row budget
 and sampled mean-square bounds. The actual Ramare main-term frequency
 bounds and complete logarithmic short-average concentration remain
 unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
@@ -1481,7 +1490,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**745 mathematical improvements and two statement-scope corrections are confirmed.**
+**746 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -31294,3 +31303,12 @@ For ANY finite frequency sample separated by one in [-T,T], the actual logarithm
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.1 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18061 jobs); direct axiom audit passed for 18372 declarations using only propext, Classical.choice and Quot.sound; all 18513 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.09 GiB.
+
+
+## Actual sparse Gram envelope has a proved uniform vanishing normalized cap
+
+The literal separation A=N^(1/4), height U=N^(5/4), and sample-cardinality envelope N^(1/100) are defined. The square of N^(1/100)*cap(N,A,U)/N is EXACTLY 128*(sqrt(2)*N^(-71/200)+N^(-21/200))*(1+log(N)) for N>=1. Both power/log terms tend to zero by the internal logarithmic-power limit, so the actual normalized cap tends to zero. One threshold gives any requested positive bound. Seven theorems and five definitions prove this actual sparse-regime calculation; no vanishing Gram-error input is assumed.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.1 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18063 jobs); direct axiom audit passed for 18379 declarations using only propext, Classical.choice and Quot.sound; all 18525 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.07 GiB.

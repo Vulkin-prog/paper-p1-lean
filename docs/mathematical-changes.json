@@ -34647,6 +34647,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "0907643f879e949f962bce8ee358f31f28f4ec3b"
+    },
+    {
+      "id": "P1-MATH-0748",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A generic small sample is insufficient without proving the literal relation between its cardinality, height, separation and the actual Gram cap.",
+      "finding": "The literal separation A=N^(1/4), height U=N^(5/4), and sample-cardinality envelope N^(1/100) are defined. The square of N^(1/100)*cap(N,A,U)/N is EXACTLY 128*(sqrt(2)*N^(-71/200)+N^(-21/200))*(1+log(N)) for N>=1. Both power/log terms tend to zero by the internal logarithmic-power limit, so the actual normalized cap tends to zero. One threshold gives any requested positive bound. Seven theorems and five definitions prove this actual sparse-regime calculation; no vanishing Gram-error input is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual sparse Gram envelope has a proved uniform vanishing normalized cap. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.SparseGramEnvelope.sqrt_rpow",
+        "PaperP1.SparseGramEnvelope.square_identity",
+        "PaperP1.SparseGramEnvelope.decaying_log_power",
+        "PaperP1.SparseGramEnvelope.squareEnvelope_tendsto",
+        "PaperP1.SparseGramEnvelope.normalizedCap_nonneg",
+        "PaperP1.SparseGramEnvelope.normalizedCap_tendsto",
+        "PaperP1.SparseGramEnvelope.uniform_small",
+        "PaperP1.SparseGramEnvelope.separation",
+        "PaperP1.SparseGramEnvelope.height",
+        "PaperP1.SparseGramEnvelope.cardEnvelope",
+        "PaperP1.SparseGramEnvelope.normalizedCap",
+        "PaperP1.SparseGramEnvelope.squareEnvelope"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18063 jobs); direct axiom audit passed for 18379 declarations using only propext, Classical.choice and Quot.sound; all 18525 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.07 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
