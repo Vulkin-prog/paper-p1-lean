@@ -39896,7 +39896,8 @@
             "PaperP1.SplitRadicalPointBoundFromCharacterSums.uniform_upper_bound"
           ]
         }
-      ]
+      ],
+      "validation_commit": "3e8ae1e0343750180d3e72dd9077cb75c8d1814d"
     },
     {
       "label": "p1:arith:dense",
