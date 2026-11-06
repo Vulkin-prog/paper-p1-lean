@@ -31153,6 +31153,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "0403a8c2f8a6e56cd07e7960945a8c5d0cf49a44"
+    },
+    {
+      "id": "P1-MATH-0655",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Branch collisions, leading normalization and Noether reduction were separate prime exclusions, and no uniform polynomial-height certificate had yet been assembled for the actual original canonical-class estimate.",
+      "finding": "Their actual integer certificates multiply to one nonzero integer of uniformly polynomial height. Under the explicit shared coefficient/branch-shift height bound, every sufficiently large prime avoiding this integer has the proved original canonical-class count. All point-estimate and conductor components are internal.",
+      "proposed_revision": "Use this restricted original-source finite-field budget in the global determinant. Verify the common-height and integrality conditions for each actual paper family and preserve its original exact degree cap; do not generalize the theorem to unrestricted rational coefficients or arbitrary surfaces.",
+      "impact": "Discharges the actual source-specific polynomial-height finite-field budget under the explicit common-height condition. Restricted global determinant/cover and exact original-family height/integrality/cap application remain unfinished; canonical T1.7 stays unchanged.",
+      "evidence": [
+        "PaperP1.BranchModelReductionCertificate.branch_bound",
+        "PaperP1.BranchModelReductionCertificate.combine",
+        "PaperP1.OriginalSourceFiniteFieldBudget.bounded_uniform_class_count"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17807 jobs); direct axiom audit passed for 17574 declarations using only propext, Classical.choice and Quot.sound; all 17533 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.81 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

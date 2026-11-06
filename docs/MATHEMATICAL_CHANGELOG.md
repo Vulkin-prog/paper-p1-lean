@@ -1,6 +1,20 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0654: the ORIGINAL chosen integer
+Current checkpoint P1-MATH-0655: ONE actual nonzero INTEGER
+certificate with |B|<=T*A^N controls the ORIGINAL canonical smooth
+class count <=(1+eta)*p^2 for ALL primes p>=K not dividing B.
+K,T,N precede ALL original source/model data and heights. This
+uses the EXPLICIT common-height condition: actual integer polynomial
+coefficients AND branch shifts have absolute value <=A. Normalization,
+Noether reduction, branch control, conductor and every point estimate
+are INTERNAL proofs. Restricted global determinant/cover assembly
+and the original THREE-family height/integrality/cap application
+remain UNPROVED. This is NOT the unrestricted P3 budget. Canonical
+T1.7 retains ONLY its prior P3 input in degrees>2 at the original
+families and caps. Coverage stays 163 proved, 2 conditional,
+2 in_progress out of 167; all 73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0654: the ORIGINAL chosen integer
 projection has its exact normalized source relation and a UNIFORM
 (1+eta)*p^2 bound for its LITERAL canonical smooth residue classes.
 The cutoff precedes ALL original source lists of fixed length,
@@ -622,7 +636,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**652 mathematical improvements and two statement-scope corrections are confirmed.**
+**653 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -29308,3 +29322,16 @@ OriginalProjectedModelPointEstimate gives a cutoff BEFORE the prime and ALL orig
 Three modules add ten theorems and three definitions. This discharges exact original normalized-source application and the uniform original canonical smooth-class point estimate at its explicit good primes. Combining all exclusions into one polynomial-height original-family budget and the restricted global determinant/cover assembly remain unfinished. This source-specific result does NOT discharge the unrestricted P3 surface input. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.8 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17803 jobs); direct axiom audit passed for 17571 declarations using only propext, Classical.choice and Quot.sound; all 17530 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.83 GiB.
+
+
+## One polynomial-height integer certificate controls every actual original-model canonical class count
+
+BranchModelReductionCertificate proves that a branch set of size at most M with actual integer shifts of absolute value at most A has literal collision certificate bounded by 2*2^(M*(M-1))*A^(M*(M-1)), uniformly for A>0. Its product with any actual model certificate of height <=T*A^N is nonzero, has the explicit corresponding polynomial-height bound, and avoidance of the product implies avoidance of BOTH original factors. No exceptional-prime set is guessed.
+
+OriginalSourceFiniteFieldBudget combines that literal branch certificate with the actual leading-coefficient/Noether model certificate and ALL original-source point identifications. For fixed source length k, power degree D>0, branch-size cap M and eta>0, it chooses K,T,N BEFORE the height A and ALL actual source lists, integer coefficients, branch supports, original primitive coefficients, original principal image equations and height-controlled scalar-multiple integer models. Under the exact common-height assumption that BOTH the original integer polynomial coefficients and actual branch shifts have absolute value <=A, it constructs ONE nonzero integer B with |B|<=T*A^N.
+
+EVERY prime p>=K not dividing this SAME B satisfies the LITERAL original P3CanonicalSmoothResidues.Class count <=(1+eta)*p^2. Monic normalization, full degree, irreducibility, literal original source relation, generic field, conductor, image kernel, exhaustive solution identification, source character bound and canonical-class injection are internal proofs. Arbitrary integer source coefficients are allowed; no independent finite-field point estimate, branch-collision estimate, denominator certificate or nonzero reduced-coefficient premise is assumed. Original rational-image geometric irreducibility is explicit original model data and is supplied by the existing actual projection theorem.
+
+Two modules add three theorems and no definitions. This discharges the source-specific polynomial-height finite-field budget under its stated common-height condition. The restricted global determinant/cover assembly and verification of that height condition, integrality and exact caps for the THREE original paper families remain unfinished. This is NOT the unrestricted P3 budget for arbitrary hypersurfaces. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.8 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17807 jobs); direct axiom audit passed for 17574 declarations using only propext, Classical.choice and Quot.sound; all 17533 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.81 GiB.

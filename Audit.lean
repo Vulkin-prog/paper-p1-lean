@@ -4846,6 +4846,8 @@ import PaperP1
 #print axioms PaperP1.BoundedWidthWindows.space_le_window
 #print axioms PaperP1.BoundedWidthWindows.window_space_mono
 #print axioms PaperP1.BoundedWidthWindows.center_injective_on
+#print axioms PaperP1.BranchModelReductionCertificate.branch_bound
+#print axioms PaperP1.BranchModelReductionCertificate.combine
 #print axioms PaperP1.BranchShiftCollisionPrimeBudget.divides_certificate
 #print axioms PaperP1.BranchShiftCollisionPrimeBudget.finite
 #print axioms PaperP1.BranchShiftCollisionPrimeBudget.log_sum
@@ -6632,6 +6634,7 @@ import PaperP1
 #print axioms PaperP1.OrdinarySourcePointTransport.points_image_card
 #print axioms PaperP1.OriginalProjectedModelPointEstimate.uniform_upper_bound
 #print axioms PaperP1.OriginalProjectedModelPointEstimate.uniform_class_upper_bound
+#print axioms PaperP1.OriginalSourceFiniteFieldBudget.bounded_uniform_class_count
 #print axioms PaperP1.OriginalWindowValueBounds.values_geometry
 #print axioms PaperP1.P3BadReductionPrimeBudget.divides_certificate
 #print axioms PaperP1.P3BadReductionPrimeBudget.subset_prime_factors

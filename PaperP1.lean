@@ -4560,3 +4560,5 @@ public import PaperP1.Arithmetic.IntegerProjectedModelNormalization
 public import PaperP1.Algebra.OriginalNormalizedSourceRelation
 public import PaperP1.Arithmetic.CanonicalClassesToMonicHypersurface
 public import PaperP1.Arithmetic.OriginalProjectedModelPointEstimate
+public import PaperP1.Arithmetic.BranchModelReductionCertificate
+public import PaperP1.Arithmetic.OriginalSourceFiniteFieldBudget
