@@ -36167,7 +36167,8 @@
             "PaperP1.UniformGeometricCountsSurfaceInputs.reduced_hypotheses"
           ]
         }
-      ]
+      ],
+      "validation_commit": "1b7dab3cebca0a284363b970ca601bb1fa3156c9"
     },
     {
       "label": "p1:arith:dense",
