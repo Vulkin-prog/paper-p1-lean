@@ -3936,6 +3936,9 @@ import PaperP1
 #print axioms PaperP1.FactorialResolvent.correction_abs_bound
 #print axioms PaperP1.FactorialResolvent.summable_abs_correction
 #print axioms PaperP1.FactorialResolvent.correction_l1_bound
+#print axioms PaperP1.FarLognormalKernel.coefficient_pos
+#print axioms PaperP1.FarLognormalKernel.uniform_bound
+#print axioms PaperP1.FarLognormalKernel.power_gain
 #print axioms PaperP1.FinalBadFrequencyCardinality.band_count_factor
 #print axioms PaperP1.FinalBadFrequencyCardinality.all_blocks_uniform
 #print axioms PaperP1.FinalNarrowBandGeometry.anchor_upper

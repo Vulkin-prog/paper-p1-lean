@@ -4860,3 +4860,4 @@ public import PaperP1.Analysis.NearLognormalKernel
 public import PaperP1.Analysis.LognormalLongCancellation
 public import PaperP1.Analysis.LognormalMiddleEstimate
 public import PaperP1.Analysis.LognormalPowerBudget
+public import PaperP1.Analysis.FarLognormalKernel
