@@ -29999,6 +29999,65 @@
         "status": "not_integrated"
       },
       "validation_commit": "3f0b318f27594fdaf85920761c6c7c254cde423a"
+    },
+    {
+      "id": "P1-MATH-0626",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Constructing the actual tangent auxiliary required proved degree growth, exact finite monomial dimensions and product-weight separation rather than supplied dimension estimates.",
+      "finding": "The actual norm-degree filtration and tangent iterate growth are proved. Literal monomials have exact distinct weights; their bounded finite index set has exact cardinality L+1-g in the stable odd-degree range, and product weights are injective when A<p.",
+      "proposed_revision": "State the concrete degree filtration and exact monomial count before the auxiliary dimension argument. Distinguish numerical weight separation from the still-required linear-independence and kernel construction.",
+      "impact": "Discharges the degree-growth and index-count arithmetic internally. Actual product linear independence and auxiliary existence remain unproved; canonical inputs and coverage remain unchanged.",
+      "evidence": [
+        "PaperP1.HyperellipticMonomialIndex.embed_injective",
+        "PaperP1.HyperellipticMonomialIndex.weight_le",
+        "PaperP1.HyperellipticMonomialIndex.weight_injective",
+        "PaperP1.HyperellipticMonomialIndex.cardinality",
+        "PaperP1.HyperellipticMonomialIndex.cardinality_odd",
+        "PaperP1.HyperellipticMonomialIndex.exists_index",
+        "PaperP1.HyperellipticMonomialIndex.product_weight_injective",
+        "PaperP1.HyperellipticPoleDegree.zero_degree",
+        "PaperP1.HyperellipticPoleDegree.coordinates_iff",
+        "PaperP1.HyperellipticPoleDegree.neg_degree",
+        "PaperP1.HyperellipticPoleDegree.smul_degree",
+        "PaperP1.HyperellipticPoleDegree.smul_bound",
+        "PaperP1.HyperellipticPoleDegree.add_bound",
+        "PaperP1.HyperellipticPoleDegree.add_degree_le",
+        "PaperP1.HyperellipticPoleDegree.mul_degree",
+        "PaperP1.HyperellipticPoleDegree.mul_bound",
+        "PaperP1.HyperellipticPoleDegree.sum_bound",
+        "PaperP1.HyperellipticPoleDegree.one_degree",
+        "PaperP1.HyperellipticPoleDegree.pow_degree",
+        "PaperP1.HyperellipticTangentDegree.derivative_degree_step",
+        "PaperP1.HyperellipticTangentDegree.coefficient_two_degree",
+        "PaperP1.HyperellipticTangentDegree.tangent_bound",
+        "PaperP1.HyperellipticTangentDegree.iterate_bound",
+        "PaperP1.HyperellipticWeightedMonomials.weight_injective",
+        "PaperP1.HyperellipticWeightedMonomials.vector_ne_zero",
+        "PaperP1.HyperellipticWeightedMonomials.vector_degree",
+        "PaperP1.HyperellipticWeightedMonomials.power_ne_zero",
+        "PaperP1.HyperellipticWeightedMonomials.product_power_degree",
+        "PaperP1.HyperellipticMonomialIndex.Index",
+        "PaperP1.HyperellipticMonomialIndex.embed",
+        "PaperP1.HyperellipticPoleDegree.poleDegree",
+        "PaperP1.HyperellipticWeightedMonomials.weight",
+        "PaperP1.HyperellipticWeightedMonomials.vector"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17699 jobs); direct axiom audit passed for 17321 declarations using only propext, Classical.choice and Quot.sound; all 17192 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.32 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

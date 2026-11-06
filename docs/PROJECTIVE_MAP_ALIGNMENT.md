@@ -1,6 +1,17 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0625: the ACTUAL finite quadratic-curve point
+Current checkpoint P1-MATH-0626: actual polynomial norm degree gives a
+proved sum/product/scalar filtration. Tangent iterates have degree at most
+L+r*max(d-2,0). Literal X^i and Y*X^j monomials have exact distinct weights.
+Their bounded finite index set has cardinality L+1-g for d=2g+1 and L>=d.
+For A<p the NUMERICAL product weights are injective. Actual product linear
+independence, the complete auxiliary construction, higher-degree cancellation
+and projected-P3 transfer remain UNPROVED. Canonical T1.7 retains ONLY its
+prior finite-field surface input in actual degrees>2 at the original families
+and caps. Coverage stays163 proved,2 conditional,2 in_progress out of167;
+all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0625: the ACTUAL finite quadratic-curve point
 count has exact formulas N=q+sum chi(f) and N=2*good+branch. Actual branch
 points are bounded by degree(f). A literal nonzero tangent auxiliary gives
 the PROVED bound m*N<=degree(norm)+m*degree(f), hence N<=L/m+degree(f)
@@ -21907,3 +21918,18 @@ HyperellipticStepanovPointBound assembles the full LITERAL quadratic-curve point
 Three modules add nine theorems and three definitions. The EXISTENCE of the required auxiliary function is still UNPROVED. This point-count reduction does not assert a general higher-degree curve estimate, character cancellation or a source-to-projected-P3 transfer. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps; its two-plane-input alternative is still conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. All work remains on Ubuntu with about55.3GiB available, without dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17691 jobs); direct axiom audit passed for 17293 declarations using only propext, Classical.choice and Quot.sound; all 17159 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.34 GiB.
+
+
+## Exact quadratic-function degree filtration, tangent growth and finite monomial dimensions
+
+HyperellipticPoleDegree uses the ACTUAL polynomial norm degree as a concrete degree filtration. It proves the exact coordinate criterion, invariance under negation and nonzero scalar multiplication, sum and product bounds, and exact power degrees. Zero functions and zero scalars are handled explicitly. These are polynomial degree facts; no geometric valuation theorem is assumed.
+
+HyperellipticTangentDegree proves from the actual derivative formulas that one tangent derivative increases this degree by at most d-2 truncated at0 for every positive odd original degreed. The rth actual iterate has degree at mostL+r*(d-2). The proof treats zero and constant coordinate derivatives separately, using the actual polynomial derivative degree inequalities. No degree-growth premise is supplied.
+
+HyperellipticWeightedMonomials constructs the literal monomials X^i and Y*X^j in the quadratic algebra. Their actual degrees are2i andd+2j. Odd d makes all these weights distinct, and the actual monomials and their powers are nonzero. Products g_i*h_j^p have EXACT degree weight(i)+p*weight(j).
+
+HyperellipticMonomialIndex constructs the actual finite index set of every monomial of weight<=L, with a proved injective embedding and complete coverage. Its cardinality is exactly floor(L/2)+1 plus the allowed imaginary-coordinate count; for d=2g+1 and L>=d this is L+1-g. If A<p, the NUMERICAL product weights of all index pairs from capsA,B are injective, proved by reduction modulop. This is not yet a claim that the actual product functions are linearly independent; that additional algebraic proof remains to be supplied.
+
+Four modules add twenty-eight theorems and five definitions. These exact degree and dimension foundations do not prove the required nonzero auxiliary-function existence or its complete linear-constraint construction. General higher-degree character cancellation and transfer to original projected P3 equations remain unproved. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the original three families/caps; the two-plane-input alternative remains conditional. Coverage stays163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Work remains on Ubuntu with about55.3GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17699 jobs); direct axiom audit passed for 17321 declarations using only propext, Classical.choice and Quot.sound; all 17192 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.32 GiB.

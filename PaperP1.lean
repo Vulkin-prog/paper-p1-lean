@@ -4504,3 +4504,7 @@ public import PaperP1.Algebra.PolynomialCommonRootFactor
 public import PaperP1.Arithmetic.FiniteFieldPolynomialMultiplicityCount
 public import PaperP1.Arithmetic.HyperellipticFiniteFieldPoints
 public import PaperP1.Arithmetic.HyperellipticStepanovPointBound
+public import PaperP1.Algebra.HyperellipticMonomialIndex
+public import PaperP1.Algebra.HyperellipticPoleDegree
+public import PaperP1.Algebra.HyperellipticTangentDegree
+public import PaperP1.Algebra.HyperellipticWeightedMonomials
