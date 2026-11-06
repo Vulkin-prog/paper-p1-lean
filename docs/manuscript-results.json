@@ -38470,7 +38470,8 @@
             "PaperP1.P3QuadricFiniteFieldEstimate.uniform_auxiliary_of_noether_forms"
           ]
         }
-      ]
+      ],
+      "validation_commit": "9c1de96a68b6077b26604029a5d20258609dd234"
     },
     {
       "label": "p1:arith:dense",
