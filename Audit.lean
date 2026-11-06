@@ -4536,6 +4536,8 @@ import PaperP1
 #print axioms PaperP1.LognormalMellinIntegral.integrand_identity
 #print axioms PaperP1.LognormalMellinIntegral.integral_identity
 #print axioms PaperP1.LognormalMellinIntegral.integral_norm
+#print axioms PaperP1.LognormalMiddleEstimate.exponent_pos
+#print axioms PaperP1.LognormalMiddleEstimate.uniform_bound
 #print axioms PaperP1.LognormalPhaseVariation.function_norm
 #print axioms PaperP1.LognormalPhaseVariation.hasDerivAt_function
 #print axioms PaperP1.LognormalPhaseVariation.derivative_norm_bound
