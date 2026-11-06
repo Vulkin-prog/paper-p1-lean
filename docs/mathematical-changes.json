@@ -35640,6 +35640,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "b3f47896332163090e62e8c23faa2ca034afb9fd"
+    },
+    {
+      "id": "P1-MATH-0779",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A vanishing rectangle contribution on its good region must be transferred to the actual full polynomial using its actual approximation error; the remaining region cannot be omitted.",
+      "finding": "For every epsilon>0 one FIXED H>=2 and N0>=1 precede every N>=N0, every complete complex coefficient bounded on positive integers, and every 0<T<=N/log N. The ACTUAL full dyadic Dirichlet polynomial has square integral <=epsilon on the literal first-band good set defined by all occupied prime polynomials <=1/(log(log N))^10. A proved restricted transfer inequality uses the actual full-minus-rectangle L2 error and the actual good-region rectangle estimate. Two theorems establish this genuine portion of the main-frequency analysis; the complementary bad-prime region and the required mean subtraction remain to be treated.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual full dyadic Dirichlet contribution is uniformly small on the first-band good frequency set. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FirstGoodFullPolynomial.restricted_transfer",
+        "PaperP1.FirstGoodFullPolynomial.first_good_part_small_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18125 jobs); direct axiom audit passed for 18499 declarations using only propext, Classical.choice and Quot.sound; all 18671 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.51 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
