@@ -44478,7 +44478,8 @@
             "PaperP1.MonicP3LastChart.evaluation"
           ]
         }
-      ]
+      ],
+      "validation_commit": "99fa34ba7b1744ea77a258685cfa511f55a77267"
     },
     {
       "label": "p1:arith:dense",
