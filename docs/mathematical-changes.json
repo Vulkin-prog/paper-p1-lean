@@ -35428,6 +35428,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "2566305010231b6ace267bcd3dc95490e1ae3a2d"
+    },
+    {
+      "id": "P1-MATH-0772",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A common exception for varying upper endpoints at ONE lower endpoint does not establish common control of all cofactor intervals, whose lower endpoints also vary.",
+      "finding": "For every epsilon,delta>0 one R>=2 and N0>=4 precede N>=N0, B>=N and T>=max(1,ceil(log(B)^10)). ONE measurable exceptional E with volume<=delta*T is chosen BEFORE ALL interval endpoints L,M satisfying N<L<=M<=2*L<=B, ALL prime supports P above R, ALL prime Q, ALL complete real prime-bounded f and off-exception frequencies. Every actual weighted Dirichlet polynomial on [L,M), with coefficient f(n)*presence(Q,n)/(count(P,n)+1), has norm<=epsilon. Partial summation uses the simultaneous summatory estimate over the full [N,B] cutoff interval.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "One common exception controls all actual weighted intervals with varying lower endpoints. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.CommonAllIntervals.common_all_intervals_small"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18111 jobs); direct axiom audit passed for 18478 declarations using only propext, Classical.choice and Quot.sound; all 18647 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.63 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0771: Both actual two-band rectangles
+Current checkpoint P1-MATH-0772: One common exception controls all
+actual weighted intervals with varying lower endpoints. The actual
+Ramare main-term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0771: Both actual two-band rectangles
 approximate the original dyadic Dirichlet polynomial uniformly. The
 actual Ramare main-term frequency bounds and complete logarithmic short-
 average concentration remain unproved. T19.17 conditional; original T1.7
@@ -25719,3 +25728,12 @@ For every epsilon>0 one H0>=2 and N0>=1 precede ALL H>=H0, N>=N0, complete compl
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18109 jobs); direct axiom audit passed for 18477 declarations using only propext, Classical.choice and Quot.sound; all 18646 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.65 GiB.
+
+
+## One common exception controls all actual weighted intervals with varying lower endpoints
+
+For every epsilon,delta>0 one R>=2 and N0>=4 precede N>=N0, B>=N and T>=max(1,ceil(log(B)^10)). ONE measurable exceptional E with volume<=delta*T is chosen BEFORE ALL interval endpoints L,M satisfying N<L<=M<=2*L<=B, ALL prime supports P above R, ALL prime Q, ALL complete real prime-bounded f and off-exception frequencies. Every actual weighted Dirichlet polynomial on [L,M), with coefficient f(n)*presence(Q,n)/(count(P,n)+1), has norm<=epsilon. Partial summation uses the simultaneous summatory estimate over the full [N,B] cutoff interval.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18111 jobs); direct axiom audit passed for 18478 declarations using only propext, Classical.choice and Quot.sound; all 18647 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.63 GiB.
