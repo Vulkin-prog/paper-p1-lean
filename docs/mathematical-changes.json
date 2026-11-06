@@ -41152,6 +41152,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "81b2a1b14cee193885dca790f50c2320c4ff5c13"
+    },
+    {
+      "id": "P1-MATH-0954",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Extending the full frequency range requires the actual mixed-pair argument to retain the time-to-amplification-length factor, not to reuse its factor-one bound outside its domain.",
+      "finding": "One theorem proves the actual mixed first-large/second-small pair integral <=(D+1)*C*anchor^(-1/100) for EVERY fixed D>=0 and actual heights T<=D*N/log N. The actual amplification length is proved >=N/log N, so the actual time-to-length ratio is <=D. The proved mixed weighted moment and actual threshold decay are combined, with the fixed factor retained. No mixed-region energy estimate is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual mixed prime-block integrals retain their decay at every fixed logarithmic height factor. The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.ScaledMixedPairEnergy.uniform_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18475 jobs); direct axiom audit passed for 19161 declarations using only propext, Classical.choice and Quot.sound; all 19457 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.45 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

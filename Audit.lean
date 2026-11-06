@@ -5457,6 +5457,7 @@ import PaperP1
 #print axioms PaperP1.ScaledFirstGoodEnergy.quantitative_bound
 #print axioms PaperP1.ScaledFirstGoodEnergy.rectangle_small_uniform
 #print axioms PaperP1.ScaledFirstGoodEnergy.full_small_uniform
+#print axioms PaperP1.ScaledMixedPairEnergy.uniform_bound
 #print axioms PaperP1.ScaledMonomialPieceCount.partial_nonzero
 #print axioms PaperP1.ScaledMonomialPieceCount.point_count
 #print axioms PaperP1.ScaledMonomialPieceCount.first_point_count

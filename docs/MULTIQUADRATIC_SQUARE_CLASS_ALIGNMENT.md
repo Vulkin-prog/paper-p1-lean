@@ -1,6 +1,16 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0953: The actual first-small frequency
+Current checkpoint P1-MATH-0954: Actual mixed prime-block integrals
+retain their decay at every fixed logarithmic height factor. The actual
+off-central Dirichlet frequency estimate is proved. The central-
+frequency short-to-long comparison, the analytic short-average bridge
+and complete logarithmic short-average concentration remain unproved.
+T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.48 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0953: The actual first-small frequency
 contribution remains small at every fixed multiple of logarithmic
 reciprocal height. The actual off-central Dirichlet frequency estimate
 is proved. The central-frequency short-to-long comparison, the analytic
@@ -29021,3 +29031,12 @@ Three theorems prove the actual first-small rectangle and original-polynomial sq
 The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.48 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18473 jobs); direct axiom audit passed for 19160 declarations using only propext, Classical.choice and Quot.sound; all 19456 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.47 GiB.
+
+
+## Actual mixed prime-block integrals retain their decay at every fixed logarithmic height factor
+
+One theorem proves the actual mixed first-large/second-small pair integral <=(D+1)*C*anchor^(-1/100) for EVERY fixed D>=0 and actual heights T<=D*N/log N. The actual amplification length is proved >=N/log N, so the actual time-to-length ratio is <=D. The proved mixed weighted moment and actual threshold decay are combined, with the fixed factor retained. No mixed-region energy estimate is assumed.
+
+The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.48 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18475 jobs); direct axiom audit passed for 19161 declarations using only propext, Classical.choice and Quot.sound; all 19457 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.45 GiB.

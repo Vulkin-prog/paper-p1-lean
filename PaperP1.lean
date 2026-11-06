@@ -4893,3 +4893,4 @@ public import PaperP1.Analysis.PrecisionPowerRectangleApproximation
 public import PaperP1.Analysis.OffCentralJointEnergy
 public import PaperP1.Analysis.UniformRealOffCentralEnergy
 public import PaperP1.Analysis.ScaledFirstGoodEnergy
+public import PaperP1.Analysis.ScaledMixedPairEnergy
