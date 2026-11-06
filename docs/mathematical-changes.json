@@ -31400,6 +31400,56 @@
         "status": "not_integrated"
       },
       "validation_commit": "17671a3f1c1d4f0a221b021dfaa54e85cfc68fc2"
+    },
+    {
+      "id": "P1-MATH-0662",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The independent multiplicative short-average estimate had been isolated, but its literal prime-divisor quotient decomposition, square-divisor population and oscillatory Gaussian kernel foundations had not yet been formalized.",
+      "finding": "The exact Ramare point and finite-support sum identities, their actual square-divisor exception count, normalized logarithmic phase integrals and finite symmetric row-sum quadratic bound are now internal proofs. No analytic short-average estimate is assumed to prove these identities.",
+      "proposed_revision": "Use these actual quotient ranges, membership conditions and square-divisor exceptions in the mean-square argument. Keep the missing multiplicative short-average theorem explicit until its full analytic estimates are proved.",
+      "impact": "Adds checked arithmetic and oscillatory-kernel foundations for the remaining analytic work. It does not discharge the short-average input or complete T19.17.",
+      "evidence": [
+        "PaperP1.FiniteSymmetricKernelBudget.symmetric_bound",
+        "PaperP1.LogarithmicPhase.phase_zero",
+        "PaperP1.LogarithmicPhase.phase_add",
+        "PaperP1.LogarithmicPhase.phase_conj",
+        "PaperP1.LogarithmicPhase.phase_norm",
+        "PaperP1.LogarithmicPhase.phase_continuous",
+        "PaperP1.LogarithmicPhase.phase_mul_log",
+        "PaperP1.LogarithmicPhase.interval_integral",
+        "PaperP1.LogarithmicPhase.interval_integral_norm",
+        "PaperP1.LogarithmicPhase.gaussian_integral",
+        "PaperP1.PrimeDivisorWeights.factors_mul_prime",
+        "PaperP1.PrimeDivisorWeights.count_mul_prime",
+        "PaperP1.PrimeDivisorWeights.count_pos",
+        "PaperP1.PrimeDivisorWeights.exact_weight_identity",
+        "PaperP1.PrimeDivisorWeights.quotient_count_add_one",
+        "PaperP1.PrimeDivisorWeights.ramare_on_squarefree_support",
+        "PaperP1.PrimeDivisorWeights.square_exceptions_card",
+        "PaperP1.PrimeDivisorWeights.multiples_image",
+        "PaperP1.PrimeDivisorWeights.sum_multiples",
+        "PaperP1.PrimeDivisorWeights.ramare_sum",
+        "PaperP1.LogarithmicPhase.phase",
+        "PaperP1.PrimeDivisorWeights.factors",
+        "PaperP1.PrimeDivisorWeights.count",
+        "PaperP1.PrimeDivisorWeights.squareExceptions"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17845 jobs); direct axiom audit passed for 17638 declarations using only propext, Classical.choice and Quot.sound; all 17612 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.65 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

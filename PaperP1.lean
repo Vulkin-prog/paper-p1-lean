@@ -4577,3 +4577,6 @@ public import PaperP1.Asymptotics.UniformGeometricCounts
 public import PaperP1.Analysis.MultiplicativeShortAverage
 public import PaperP1.Arithmetic.OrdinarySmoothIndicator
 public import PaperP1.Asymptotics.SmoothCensusFromShortAverages
+public import PaperP1.Analysis.FiniteSymmetricKernelBudget
+public import PaperP1.Analysis.LogarithmicPhase
+public import PaperP1.Arithmetic.PrimeDivisorWeights

@@ -1,6 +1,17 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0661: exact ordinary-smooth indicators
+Current checkpoint P1-MATH-0662: exact Ramare quotient sums,
+actual square-divisor exceptions, logarithmic/Gaussian oscillatory
+integrals and the finite symmetric kernel budget are INTERNAL.
+They are foundations for the missing multiplicative short-average
+estimate, which remains UNPROVED. T19.17 stays conditional with
+its original explicit analytic input. Original T1.7 remains COMPLETE
+without external inputs. Coverage: 164 proved, 1 conditional,
+2 in_progress /167; all 73 main results proved. The two original
+false scopes and their proved corrected variants are unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0661: exact ordinary-smooth indicators
 are completely multiplicative and count the LITERAL candidate sets.
 The original T19.17 source census follows from uniform logarithmic
 short-average concentration using the INTERNAL positive dyadic
@@ -22767,3 +22778,16 @@ Three modules add thirteen theorems and seven definitions. This gives a proved a
 The COMPLETE original T1.7 stays proved, with canonical UniformGeometricCounts.companion_T1_7 and no unformalized inputs. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The T1.10 and T5.1 disproved-original scopes retain their proved corrected variants and existing status. Original source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.7 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17839 jobs); direct axiom audit passed for 17618 declarations using only propext, Classical.choice and Quot.sound; all 17588 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.67 GiB.
+
+
+## Exact Ramare quotient sums, square-divisor exceptions and Gaussian oscillatory kernel foundations
+
+PrimeDivisorWeights defines the actual selected prime-divisor set and its cardinality. It proves the exact count under multiplication by a selected prime, the positive-count normalized weighted identity for any completely multiplicative complex function, and the literal quotient denominator count(n/p)+1 when p^2 does not divide n. The Ramare identity is proved first pointwise and then for an ACTUAL finite positive integer support, with the exact filtered quotient ranges 1<=m<=X/p and the original membership condition p*m in S. Every quotient map and sum reindexing is internal. Its square-divisor exceptional population is the actual finite set of positive integers <=X divisible by p^2 for some selected p, with the exact bound card<=sum_{p in P} floor(X/p^2). No unproved sieve or exceptional-density estimate is used.
+
+LogarithmicPhase proves the literal complex exponential phase identities, conjugation, unit norm, continuity and multiplication at positive integer logarithms. It proves the exact integral on an arbitrary real interval and its bound 2/|frequency|. The Gaussian transform is normalized to the REAL positive sqrt(pi/b), with the literal real frequency and exponential kernel. These are unconditional analytic identities built from existing proved Mathlib integration/Gaussian theorems, not from the missing multiplicative short-average theorem.
+
+FiniteSymmetricKernelBudget proves that the actual quadratic sum of any finite symmetric nonnegative kernel is bounded by its row-sum cap times the exact sum of squares. The argument handles arbitrary real coefficients and requires no sign condition on them. Three modules add twenty theorems and four definitions.
+
+These are structural arithmetic and analytic foundations for the genuine mean-square work. The logarithmic short-average estimate and the full 1-o(1) T19.17 conclusion remain UNPROVED without the existing explicit analytic input. Neither the quotient identity, a finite kernel bound nor the proved alternative census reduction is counted as that estimate. The original T19.17 conditional declarations remain unchanged. Complete T1.7 remains proved without external inputs. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The two disproved-original corrected scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.7 GiB and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17845 jobs); direct axiom audit passed for 17638 declarations using only propext, Classical.choice and Quot.sound; all 17612 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.65 GiB.

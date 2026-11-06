@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0661: exact ordinary-smooth indicators
+Current checkpoint P1-MATH-0662: exact Ramare quotient sums,
+actual square-divisor exceptions, logarithmic/Gaussian oscillatory
+integrals and the finite symmetric kernel budget are INTERNAL.
+They are foundations for the missing multiplicative short-average
+estimate, which remains UNPROVED. T19.17 stays conditional with
+its original explicit analytic input. Original T1.7 remains COMPLETE
+without external inputs. Coverage: 164 proved, 1 conditional,
+2 in_progress /167; all 73 main results proved. The two original
+false scopes and their proved corrected variants are unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0661: exact ordinary-smooth indicators
 are completely multiplicative and count the LITERAL candidate sets.
 The original T19.17 source census follows from uniform logarithmic
 short-average concentration using the INTERNAL positive dyadic
@@ -831,7 +842,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records659 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records660 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -950,7 +961,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17618 audited theorem/lemma declarations**. This
+- The project currently has **17638 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30382,3 +30393,16 @@ Three modules add thirteen theorems and seven definitions. This gives a proved a
 The COMPLETE original T1.7 stays proved, with canonical UniformGeometricCounts.companion_T1_7 and no unformalized inputs. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The T1.10 and T5.1 disproved-original scopes retain their proved corrected variants and existing status. Original source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.7 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17839 jobs); direct axiom audit passed for 17618 declarations using only propext, Classical.choice and Quot.sound; all 17588 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.67 GiB.
+
+
+## Exact Ramare quotient sums, square-divisor exceptions and Gaussian oscillatory kernel foundations
+
+PrimeDivisorWeights defines the actual selected prime-divisor set and its cardinality. It proves the exact count under multiplication by a selected prime, the positive-count normalized weighted identity for any completely multiplicative complex function, and the literal quotient denominator count(n/p)+1 when p^2 does not divide n. The Ramare identity is proved first pointwise and then for an ACTUAL finite positive integer support, with the exact filtered quotient ranges 1<=m<=X/p and the original membership condition p*m in S. Every quotient map and sum reindexing is internal. Its square-divisor exceptional population is the actual finite set of positive integers <=X divisible by p^2 for some selected p, with the exact bound card<=sum_{p in P} floor(X/p^2). No unproved sieve or exceptional-density estimate is used.
+
+LogarithmicPhase proves the literal complex exponential phase identities, conjugation, unit norm, continuity and multiplication at positive integer logarithms. It proves the exact integral on an arbitrary real interval and its bound 2/|frequency|. The Gaussian transform is normalized to the REAL positive sqrt(pi/b), with the literal real frequency and exponential kernel. These are unconditional analytic identities built from existing proved Mathlib integration/Gaussian theorems, not from the missing multiplicative short-average theorem.
+
+FiniteSymmetricKernelBudget proves that the actual quadratic sum of any finite symmetric nonnegative kernel is bounded by its row-sum cap times the exact sum of squares. The argument handles arbitrary real coefficients and requires no sign condition on them. Three modules add twenty theorems and four definitions.
+
+These are structural arithmetic and analytic foundations for the genuine mean-square work. The logarithmic short-average estimate and the full 1-o(1) T19.17 conclusion remain UNPROVED without the existing explicit analytic input. Neither the quotient identity, a finite kernel bound nor the proved alternative census reduction is counted as that estimate. The original T19.17 conditional declarations remain unchanged. Complete T1.7 remains proved without external inputs. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. The two disproved-original corrected scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.7 GiB and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17845 jobs); direct axiom audit passed for 17638 declarations using only propext, Classical.choice and Quot.sound; all 17612 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.65 GiB.
