@@ -4623,6 +4623,8 @@ import PaperP1
 #print axioms PaperP1.P3SurfaceDivisorLimits.cutoff_ratio
 #print axioms PaperP1.P3SurfaceDivisorLimits.choose_ratio
 #print axioms PaperP1.P3SurfaceDivisorLimits.raw_ratio
+#print axioms PaperP1.PartialLogarithmicPower.uniform_bound
+#print axioms PaperP1.PartialLogarithmicPower.relative_bound
 #print axioms PaperP1.PartialPowerSum.powerSum_nonneg
 #print axioms PaperP1.PartialPowerSum.powerSum_eq_shifted
 #print axioms PaperP1.PartialPowerSum.powerSum_le

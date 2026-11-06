@@ -4805,3 +4805,4 @@ public import PaperP1.Analysis.RoundedTerminalDecay
 public import PaperP1.Analysis.RecursiveBudgetPower
 public import PaperP1.Analysis.ActualLogarithmicPower
 public import PaperP1.Analysis.PolynomialLogarithmicCancellation
+public import PaperP1.Analysis.PartialLogarithmicPower

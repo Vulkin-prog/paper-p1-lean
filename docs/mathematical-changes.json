@@ -38358,6 +38358,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "e6e52dc158357c5704a199303b48a6efa92fe7bf"
+    },
+    {
+      "id": "P1-MATH-0866",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The dyadic sum alone does not provide all prefix bounds required by finite Abel summation.",
+      "finding": "For each fixed n>0, ONE X0 precedes all X>=X0, all frequencies X^(3/4)<=|t|<=X^(n+1/4), and ALL partial lengths L<=X. The actual sum over Ico X (X+L) is bounded by C_n*X^(1-gamma_n), and its normalized version by C_n/X^gamma_n. Two theorems use the complete recursive differencing tree with actual terminal leaves for every partial length; no partial-sum hypothesis is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual power gain holds uniformly for every partial logarithmic sum. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.PartialLogarithmicPower.uniform_bound",
+        "PaperP1.PartialLogarithmicPower.relative_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18299 jobs); direct axiom audit passed for 18812 declarations using only propext, Classical.choice and Quot.sound; all 19040 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.08 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
