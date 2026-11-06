@@ -41900,6 +41900,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "069cbbbab3cd0a4a6c9bef281c09358e972cbe22"
+    },
+    {
+      "id": "P1-MATH-0977",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal actual lower half of the Gaussian localization argument. Actual bad-window upper bounds and their exceptional-cardinality consequence remain necessary.",
+      "finding": "One theorem proves that for every a>0, an actual kappa>0 and one integer cutoff precede all N and all real centers X with N<=X and X+1<=2N. The literal ordinary floor(N^a)-smooth Gaussian average at the actual long width is at least kappa. The proof combines the internal positive dyadic smooth density, proved uniform long-interval mean stability, exact ceil(X) window count and actual Gaussian subpopulation lower bound. No positivity or long local density estimate is supplied as a premise.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual long Gaussian averages of ordinary smooth integers are uniformly positive. The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.",
+      "evidence": [
+        "PaperP1.SmoothLongGaussianLower.uniform_lower"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18521 jobs); direct axiom audit passed for 19269 declarations using only propext, Classical.choice and Quot.sound; all 19584 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.02 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

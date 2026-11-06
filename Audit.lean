@@ -5665,6 +5665,7 @@ import PaperP1
 #print axioms PaperP1.SmoothIntervalProfile.short_profile
 #print axioms PaperP1.SmoothIntervalProfile.dyadic_profile
 #print axioms PaperP1.SmoothIntervalProfile.short_long_bound
+#print axioms PaperP1.SmoothLongGaussianLower.uniform_lower
 #print axioms PaperP1.SmoothLongLengthGeometry.length_sqrt_lower
 #print axioms PaperP1.SmoothLongLengthGeometry.length_grows
 #print axioms PaperP1.SmoothLongLengthGeometry.relative_size_bound
