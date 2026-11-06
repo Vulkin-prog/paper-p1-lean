@@ -4503,6 +4503,12 @@ import PaperP1
 #print axioms PaperP1.LogarithmicSquareRootBound.choice_bounds
 #print axioms PaperP1.LogarithmicSquareRootBound.trivial_bound
 #print axioms PaperP1.LogarithmicSquareRootBound.square_bound
+#print axioms PaperP1.LognormalSieveWeight.weight_pos
+#print axioms PaperP1.LognormalSieveWeight.weight_upper
+#print axioms PaperP1.LognormalSieveWeight.gaussian_identity
+#print axioms PaperP1.LognormalSieveWeight.majorant_on_dyadic
+#print axioms PaperP1.LognormalSieveWeight.polynomial_tail_bound
+#print axioms PaperP1.LognormalSieveWeight.hasDerivAt_weight
 #print axioms PaperP1.MahlerCoefficientBounds.coefficientEnergy_nonneg
 #print axioms PaperP1.MahlerCoefficientBounds.l2CoefficientNorm_nonneg
 #print axioms PaperP1.MahlerCoefficientBounds.l2CoefficientNorm_sq

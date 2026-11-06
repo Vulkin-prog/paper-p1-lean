@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0903: Finite Abel summation controls actual
+Current checkpoint P1-MATH-0904: The actual lognormal sieve weight has a
+proved majorant and derivative. The triple-large prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.41 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0903: Finite Abel summation controls actual
 complex weights by their discrete variation. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -27391,3 +27400,12 @@ Three theorems prove the exact finite Abel norm bound for arbitrary complex weig
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.41 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18373 jobs); direct axiom audit passed for 18957 declarations using only propext, Classical.choice and Quot.sound; all 19204 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.41 GiB.
+
+
+## The actual lognormal sieve weight has a proved majorant and derivative
+
+Six theorems and one definition construct the ACTUAL positive weight w_A(x)=exp(-log(x/A)-log(x/A)^2). They prove w<=exp(1/4), its exact identity (A/x)*exp(-log(x/A)^2) for positive A,x, the genuine majorant exp(2)*w>=1 on [A,2A], its polynomial tail w<=exp(1)*A^3/x^3, and its actual derivative w*(-(1+2 log(x/A))/x). Every positivity condition and the exact smoothing weight are explicit; no sparse prime Gram estimate is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.41 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18375 jobs); direct axiom audit passed for 18963 declarations using only propext, Classical.choice and Quot.sound; all 19211 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.39 GiB.

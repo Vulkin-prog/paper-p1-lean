@@ -4843,3 +4843,4 @@ public import PaperP1.Analysis.BoundedPrimeMassSieve
 public import PaperP1.Analysis.FixedPowerPrimeBandDensity
 public import PaperP1.Analysis.PrecisionChosenPrimeBand
 public import PaperP1.Analysis.FiniteAbelVariation
+public import PaperP1.Analysis.LognormalSieveWeight
