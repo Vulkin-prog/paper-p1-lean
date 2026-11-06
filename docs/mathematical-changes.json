@@ -27823,6 +27823,62 @@
         "status": "not_integrated"
       },
       "validation_commit": "7f61bcef50d4adac5dc517e31367f7603ef5624f"
+    },
+    {
+      "id": "P1-MATH-0582",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The actual ordinary curve construction only transferred height one at the chosen source embedding degree, whereas the uniform ordinary-cover statement quantifies over every independently chosen positive auxiliary Veronese degree.",
+      "finding": "Actual homogeneous dilation gives proved normalized-chart and localized-ring bijections; every homogeneous prime avoiding the degree-one chart coordinate has equal height in all positive Veronese contractions. Actual ordinary curves therefore retain the same ideal and genuine degree at every positive auxiliary degree.",
+      "proposed_revision": "State the general homogeneous dilation and prime-height invariance lemma, apply it to the actual ordinary radical-surface quotient, and distinguish the fixed source embedding from the freely quantified positive auxiliary Veronese degree.",
+      "impact": "Eliminates the auxiliary-degree height hypothesis and any artificial relation between that auxiliary degree and radical-equation sizes in the actual ordinary image-curve conversion.",
+      "evidence": [
+        "PaperP1.GradedVeroneseChartPrimeHeight.comap_contracted",
+        "PaperP1.GradedVeroneseChartPrimeHeight.height_eq",
+        "PaperP1.GradedVeroneseDilation.map_mem",
+        "PaperP1.GradedVeroneseDilation.mem_veronese",
+        "PaperP1.GradedVeroneseDilation.map_val",
+        "PaperP1.GradedVeroneseDilation.map_homogeneous",
+        "PaperP1.GradedVeroneseDilation.map_coordinate",
+        "PaperP1.GradedVeroneseDilationChart.map_injective",
+        "PaperP1.GradedVeroneseDilationChart.map_surjective",
+        "PaperP1.GradedVeroneseDilationChart.map_bijective",
+        "PaperP1.GradedVeroneseDilationChart.localization_bijective",
+        "PaperP1.HomogeneousDilation.component_one",
+        "PaperP1.HomogeneousDilation.component_mul",
+        "PaperP1.HomogeneousDilation.map_homogeneous",
+        "PaperP1.OrdinaryCurveVeroneseHeight.surfacePrime_prime",
+        "PaperP1.OrdinaryCurveVeroneseHeight.surfacePrime_homogeneous",
+        "PaperP1.OrdinaryCurveVeroneseHeight.surfacePrime_chart_not_mem",
+        "PaperP1.OrdinaryCurveVeroneseHeight.surfaceIdeal_eq",
+        "PaperP1.OrdinaryCurveVeroneseHeight.height_eq",
+        "PaperP1.OrdinaryCurveVeroneseHeight.height_independent",
+        "PaperP1.OrdinarySurfaceCurveRegrading.regrade_ideal",
+        "PaperP1.OrdinarySurfaceCurveRegrading.regrade_degree",
+        "PaperP1.OrdinarySurfaceCurveRegrading.source_curve_at_degree",
+        "PaperP1.GradedVeroneseDilation.map",
+        "PaperP1.GradedVeroneseDilation.gradedMap",
+        "PaperP1.HomogeneousDilation.component",
+        "PaperP1.HomogeneousDilation.map",
+        "PaperP1.OrdinaryCurveVeroneseHeight.surfacePrime",
+        "PaperP1.OrdinaryCurveVeroneseHeight.gradedFactor",
+        "PaperP1.OrdinarySurfaceCurveRegrading.regrade"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17201 jobs); direct axiom audit passed for 16517 declarations using only propext, Classical.choice and Quot.sound; all 16201 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.27 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

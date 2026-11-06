@@ -4268,3 +4268,9 @@ public import PaperP1.Algebra.WeightedHomogeneousEvaluation
 public import PaperP1.Geometry.OrdinarySourcePolynomialProjection
 public import PaperP1.Geometry.SourceCurveOrdinaryImagePrime
 public import PaperP1.Geometry.SourceProjectiveCurveToOrdinary
+public import PaperP1.Algebra.GradedVeroneseChartPrimeHeight
+public import PaperP1.Algebra.GradedVeroneseDilation
+public import PaperP1.Algebra.GradedVeroneseDilationChart
+public import PaperP1.Algebra.HomogeneousDilation
+public import PaperP1.Geometry.OrdinaryCurveVeroneseHeight
+public import PaperP1.Geometry.OrdinarySurfaceCurveRegrading
