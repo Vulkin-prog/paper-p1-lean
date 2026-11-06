@@ -68878,7 +68878,8 @@
           "scope": "Exact original OrdinaryCensusDensity for every fixed a>0, uniform before critical widths, orientations and actual source boundaries. The uniform real-multiplicative short-average theorem remains unproved. No Dickman relative-density asymptotic is used.",
           "canonical_boundary_changed": false
         }
-      ]
+      ],
+      "validation_commit": "71b898e5d51b2797edb5384ef5a372f51c4f4064"
     },
     {
       "label": "p1:offset:line-product",
