@@ -5879,6 +5879,7 @@ import PaperP1
 #print axioms PaperP1.UniformSelbergKernelEnvelope.main_norm
 #print axioms PaperP1.UniformSelbergKernelEnvelope.normalized_main_norm
 #print axioms PaperP1.UniformSelbergKernelEnvelope.uniform_bound
+#print axioms PaperP1.UniformSmoothGaussianWindowUpper.uniform_bound
 #print axioms PaperP1.UniformZetaSublogarithmic.uniform_bound
 #print axioms PaperP1.UniformZetaSublogarithmic.normalized_bound
 #print axioms PaperP1.UniformZetaSublogarithmic.polynomial_height_bound

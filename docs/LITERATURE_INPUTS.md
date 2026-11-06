@@ -1,6 +1,19 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0979: The actual logarithmic census window
+Current checkpoint P1-MATH-0980: One fixed Gaussian parameter makes
+every actual bad logarithmic window uniformly small. The actual off-
+central estimate, the ordinary smooth long-interval mean comparison and
+the uniform Gaussian mean-square comparison are proved. Localization of
+the Gaussian averages to the literal logarithmic windows remains
+unproved, so T19.17 stays conditional. The stronger uniform sharp short-
+average theorem for all real completely multiplicative functions is not
+established. T19.17 conditional; original T1.7 unconditional. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved.
+Sources, false-scope corrections, compiler and axioms unchanged. About
+51.97 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0979: The actual logarithmic census window
 gives a uniform positive Gaussian tail exponent. The actual off-central
 estimate, the ordinary smooth long-interval mean comparison and the
 uniform Gaussian mean-square comparison are proved. Localization of the
@@ -35393,6 +35406,12 @@ Seven theorems and two definitions prove positive slope and tail rate, exact flo
 
 The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.
 
+## Internal one fixed gaussian parameter makes every actual bad logarithmic window uniformly small
+
+One theorem proves that for every epsilon>0, one actual D>0 and one integer cutoff precede all N, every smoothness cutoff Y, every j in [N,2N) whose actual logarithmic window contains at most one smooth integer, and every real center in its middle unit cell. The literal short Gaussian average is at most epsilon. The proof chooses D from the proved positive tail rate, controls the actual singleton term by a logarithmic limit, and retains the exact floor window and population. No bad-window Gaussian bound is assumed.
+
+The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -40598,3 +40617,14 @@ Seven theorems and two definitions prove positive slope and tail rate, exact flo
 The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.01 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18525 jobs); direct axiom audit passed for 19277 declarations using only propext, Classical.choice and Quot.sound; all 19594 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.98 GiB.
+
+
+## One fixed Gaussian parameter makes every actual bad logarithmic window uniformly small
+
+Stable ID: p1:internal:uniform-smooth-gaussian-window-upper. One fixed Gaussian parameter makes every actual bad logarithmic window uniformly small. The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.
+
+One theorem proves that for every epsilon>0, one actual D>0 and one integer cutoff precede all N, every smoothness cutoff Y, every j in [N,2N) whose actual logarithmic window contains at most one smooth integer, and every real center in its middle unit cell. The literal short Gaussian average is at most epsilon. The proof chooses D from the proved positive tail rate, controls the actual singleton term by a logarithmic limit, and retains the exact floor window and population. No bad-window Gaussian bound is assumed.
+
+The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.97 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18527 jobs); direct axiom audit passed for 19278 declarations using only propext, Classical.choice and Quot.sound; all 19595 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.96 GiB.
