@@ -4935,6 +4935,8 @@ import PaperP1
 #print axioms PaperP1.PrimeDampingBudget.reciprocal_square_budget
 #print axioms PaperP1.PrimeDampingBudget.summed_damping_defect
 #print axioms PaperP1.PrimeDampingBudget.uniform_summed_defect
+#print axioms PaperP1.PrimeDirichletLogarithmicSamples.constant_pos
+#print axioms PaperP1.PrimeDirichletLogarithmicSamples.uniform_bound
 #print axioms PaperP1.PrimeEulerSaddleScale.exponent_bound
 #print axioms PaperP1.PrimeFactorCauchy.interval_cauchy
 #print axioms PaperP1.PrimeFactorCauchy.prime_factor_integral_bound

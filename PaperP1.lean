@@ -4880,3 +4880,4 @@ public import PaperP1.Analysis.FixedPowerNarrowGeometry
 public import PaperP1.Analysis.FixedPowerLargeFrequencyCardinality
 public import PaperP1.Analysis.FixedPowerSamplingGeometry
 public import PaperP1.Analysis.DyadicPrimeCoefficientEnergy
+public import PaperP1.Analysis.PrimeDirichletLogarithmicSamples
