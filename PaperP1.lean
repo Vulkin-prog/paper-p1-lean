@@ -4793,3 +4793,4 @@ public import PaperP1.Analysis.IteratedLogarithmicPhase
 public import PaperP1.Analysis.PositiveReciprocalKernel
 public import PaperP1.Analysis.IteratedOscillationAmplitude
 public import PaperP1.Analysis.IteratedLogarithmicIntegral
+public import PaperP1.Analysis.IteratedLogarithmicSum

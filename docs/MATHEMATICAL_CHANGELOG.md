@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0853: Every actual iterated logarithmic
+Current checkpoint P1-MATH-0854: Every actual iterated logarithmic sum
+has a proved integral-comparison and all-order estimate. The triple-
+large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 51.16 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0853: Every actual iterated logarithmic
 oscillatory integral has an explicit all-order bound. The triple-large
 prime frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -2443,7 +2452,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**851 mathematical improvements and two statement-scope corrections are confirmed.**
+**852 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -33210,3 +33219,12 @@ For ANY finite list of strictly positive shifts, t!=0 and 0<A<=B, prove the EXAC
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.20 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18273 jobs); direct axiom audit passed for 18755 declarations using only propext, Classical.choice and Quot.sound; all 18970 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.18 GiB.
+
+
+## Every actual iterated logarithmic sum has a proved integral-comparison and all-order estimate
+
+For ANY nonnegative shift list, prove the actual complex derivative bound, unit-cell variation, unit integral error and the full integer sum-to-integral comparison on Ico N M. For strictly positive shifts, t!=0 and 0<N<=M, the ACTUAL iterated logarithmic sum is bounded by 2*(M+sum hs)^(k+1)/(|t|*k!*product(hs)) plus (M-N)*|t|*k!*product(hs)/N^(k+1), retaining the exact Nat interval length. Five theorems establish these genuine discrete estimates at every finite order.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.16 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18275 jobs); direct axiom audit passed for 18760 declarations using only propext, Classical.choice and Quot.sound; all 18975 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.16 GiB.

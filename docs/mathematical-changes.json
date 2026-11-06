@@ -37966,6 +37966,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "98e7b5ff0d4138ebbcff44c527705e09f57042ca"
+    },
+    {
+      "id": "P1-MATH-0854",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "An oscillatory integral estimate must be transported to the actual integer sum with the complete derivative-comparison error and interval endpoints.",
+      "finding": "For ANY nonnegative shift list, prove the actual complex derivative bound, unit-cell variation, unit integral error and the full integer sum-to-integral comparison on Ico N M. For strictly positive shifts, t!=0 and 0<N<=M, the ACTUAL iterated logarithmic sum is bounded by 2*(M+sum hs)^(k+1)/(|t|*k!*product(hs)) plus (M-N)*|t|*k!*product(hs)/N^(k+1), retaining the exact Nat interval length. Five theorems establish these genuine discrete estimates at every finite order.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Every actual iterated logarithmic sum has a proved integral-comparison and all-order estimate. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.IteratedLogarithmicSum.derivative_bound",
+        "PaperP1.IteratedLogarithmicSum.local_variation",
+        "PaperP1.IteratedLogarithmicSum.unit_integral_error",
+        "PaperP1.IteratedLogarithmicSum.sum_integral_error",
+        "PaperP1.IteratedLogarithmicSum.integer_sum_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18275 jobs); direct axiom audit passed for 18760 declarations using only propext, Classical.choice and Quot.sound; all 18975 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.16 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

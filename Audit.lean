@@ -4265,6 +4265,11 @@ import PaperP1
 #print axioms PaperP1.IteratedLogarithmicPhase.hasDerivAt_function
 #print axioms PaperP1.IteratedLogarithmicPhase.derivative_norm
 #print axioms PaperP1.IteratedLogarithmicPhase.hasDerivAt_logarithm_slope
+#print axioms PaperP1.IteratedLogarithmicSum.derivative_bound
+#print axioms PaperP1.IteratedLogarithmicSum.local_variation
+#print axioms PaperP1.IteratedLogarithmicSum.unit_integral_error
+#print axioms PaperP1.IteratedLogarithmicSum.sum_integral_error
+#print axioms PaperP1.IteratedLogarithmicSum.integer_sum_bound
 #print axioms PaperP1.IteratedOscillationAmplitude.denominator_ne
 #print axioms PaperP1.IteratedOscillationAmplitude.denominator_norm
 #print axioms PaperP1.IteratedOscillationAmplitude.hasDerivAt_amplitude
