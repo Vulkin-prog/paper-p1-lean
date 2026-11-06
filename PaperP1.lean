@@ -4281,3 +4281,5 @@ public import PaperP1.Arithmetic.OrdinaryCoverAtSystemFromExactSource
 public import PaperP1.Arithmetic.OrdinarySourceFiniteCoverTransfer
 public import PaperP1.Arithmetic.SourceOrdinaryCoverPower
 public import PaperP1.Geometry.SourceCurveOrdinaryImageFamily
+public import PaperP1.Arithmetic.UniformOrdinarySurfaceCoverFromExactSource
+public import PaperP1.Asymptotics.UniformGeometricCountsP3Input

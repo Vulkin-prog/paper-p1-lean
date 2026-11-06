@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0561: the exact normalized and ordinary curve-count
+Current checkpoint P1-MATH-0585: canonical companionT1.7 is
+`UniformGeometricCountsP3Input.companion_T1_7`. All chosen-source and ordinary
+surface-cover translations are internally proved, including actual curve ideals,
+positive integral Hilbert degrees, every positive auxiliary-degree height,
+normalized integer points, finite families, exception cardinalities and uniform
+constants. The only remaining unformalized geometric input family is
+`P1-GEO-P3-HYPERSURFACE-COVER`, at the three explicit finite-degree families
+in the canonical hypothesis. The primary P3 theorem remains unproved; T1.7
+remains conditional. All73 main results remain proved; coverage stays163 proved,
+2 conditional and2 in_progress out of167. No Palomar registration is claimed.
+
+Historical checkpoint P1-MATH-0561: the exact normalized and ordinary curve-count
 properties are proved internally on the actual integer point sets. Canonical
 companionT1.7 is now `UniformGeometricCountsSurfaceInputs.companion_T1_7`:
 only the chosen-source surface cover and two ordinary surface-cover instances
@@ -149,7 +160,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records582 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records583 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -268,7 +279,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16541 audited theorem/lemma declarations**. This
+- The project currently has **16547 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -28611,3 +28622,18 @@ SourceOrdinaryCoverPower proves the exact identity sqrt(2^k*E^2)=E*sqrt(2^k), wi
 The actual finite-family, exceptional-set, point-membership and exact exponent conversion are now proved. Selecting one embedding E from the ordinary equation-size bound and instantiating the constants uniformly before all coefficient, auxiliary-degree and height quantifiers remain next. CompanionT1.7 retains its exact P3 input and two ordinary surface-cover hypotheses and remains conditional; the primary P3 theorem itself remains unproved. All73 main results remain proved; coverage remains163 proved,2 conditional,2 in_progress out of167. Four modules add five theorems and no definitions. Original manuscript hashes, pinned compiler, permitted axioms and heartbeat settings remain unchanged; no dependency download or Palomar submission. Ubuntu free space is about6.23GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (17215 jobs); direct axiom audit passed for 16541 declarations using only propext, Classical.choice and Quot.sound; all 16229 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.22 GiB.
+
+
+## Complete uniform ordinary surface covers from the exact P3 input and reduction of canonical T1.7 to that sole geometric family
+
+UniformOrdinarySurfaceCoverFromExactSource.of_exact derives the complete actual UniformOrdinarySurfaceCover.UniformCover kmax K property from the exact genuine-degree source covering property at any fixed positive embedding E with K<=2E. For an arbitrary ordinary margin delta>0 it applies the source property with margin delta/E, and chooses the degree cap and positive constant before all system sizes, coefficient data, root sets, independently chosen positive auxiliary Veronese degrees, integer heights and actual normalized ordinary point populations. The actual radical list, list length, source equations, nonzero coefficients and both disjointness conditions are constructed from the original ordinary system data.
+
+The existing literal integer lift sends U into the actual source point set at height H^E. The internally proved source-to-ordinary curve construction retains actual ordinary primes, radical equations, positive natural Hilbert degrees and the actual quotient Hilbert polynomial; arbitrary auxiliary-degree height one is a proved conclusion. Actual finite-family and exception-cardinality transport then gives the literal ordinary covering with no cardinality or degree-cap increase. The exact source-degree exponent identity yields precisely A*H^(2/sqrt(2^k)+delta) exceptional points and A*H^(1/sqrt(2^k)+delta) ordinary curves. No point, curve, height, exponent or uniformity correspondence is supplied as an additional premise.
+
+The of_hypersurface_covers theorem fixes E=K+1 from the ordinary equation-size bound, independently of every later coefficient, auxiliary degree or height. It derives the complete ordinary covering property from only the exact P3 covering property at the finitely many degrees 2^k*(K+1)^2. The complete chosen-source cover and its exact P3 translation were already internally proved at checkpoint577. Thus both formerly independent ordinary-cover instances are now consequences of the same exact P3 input family.
+
+UniformGeometricCountsP3Input supplies the new canonical conditional companionT1.7 declaration. Its explicit Hypotheses contain only three finite-degree instances of UniformP3HypersurfaceCover.UniformCover: system degrees 2^k*p.systemDegree^2 up to p.systemSize, linear-system degrees 2^k*(K+1)^2 up to p.linearSize, and typed-system degrees 2^k*(a+1+1)^2 up to p.typedSize. The actual ordinary covering and the previous source/ordinary hypothesis bundle are constructed internally from these properties, and the original complete Assertions follow. The original parameter-selection order and all conclusions are retained.
+
+The sole remaining unformalized geometric input family for canonical T1.7 is now P1-GEO-P3-HYPERSURFACE-COVER, whose literal property and primary Salberger Lemma2 scope remain explicitly recorded. The primary determinant-method covering theorem itself is still UNPROVED. This checkpoint discharges all source and ordinary model translations and the two independent ordinary-cover premises; it does not prove an unconditional P3 cover or T1.7. The former canonical declarations and their historical scopes remain preserved in the ledger and source files. All73 main results remain proved; coverage remains163 proved,2 conditional,2 in_progress out of167. Two modules add six theorems and one hypothesis structure. Original manuscript hashes, pinned compiler, permitted axioms and heartbeat settings remain unchanged; no dependency download or Palomar submission. Ubuntu free space is about6.20GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (17219 jobs); direct axiom audit passed for 16547 declarations using only propext, Classical.choice and Quot.sound; all 16236 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.20 GiB.

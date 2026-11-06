@@ -9751,7 +9751,7 @@ Verified under Lean v4.36.0-rc2: full build passed (12727 jobs); direct axiom au
 
 ## The three geometric properties used by the conditional dense sector
 
-Historical boundary. Current updates: the actual normalized curve counts are proved by P1-MATH-0561; the complete chosen-source translation is proved by P1-MATH-0577 from the exact P3 input below. The P3 theorem and both ordinary cover instances remain unproved. The earlier descriptions in this subsection record the preceding boundary.
+Historical boundary. Current updates: the actual normalized curve counts are proved by P1-MATH-0561; the complete chosen-source translation is proved by P1-MATH-0577 and both complete ordinary cover translations by P1-MATH-0585, from the exact P3 input below. Only the primary P3 theorem remains unproved. The earlier descriptions in this subsection record the preceding boundary.
 
 Stable ID: `P1-GEO-NORMALIZED-CURVE-UNIFORM`. Status:
 **explicit_hypothesis**. Exact Lean property:
@@ -9769,8 +9769,9 @@ chart/degree translation remain INCLUDED UNPROVED parts of this
 explicit property. The project proves only its ordinary and chosen-
 source specializations; it does not claim a formal proof of Pila.
 
-Stable ID: `P1-GEO-ORDINARY-SURFACE-COVER`. Status:
-**explicit_hypothesis**. Exact Lean property:
+Stable ID: `P1-GEO-ORDINARY-SURFACE-COVER`. Current status:
+**derived_from_explicit_P3_input** (P1-MATH-0585); the historical
+independent-hypothesis scope is retained below. Exact Lean property:
 `PaperP1.UniformOrdinarySurfaceCover.UniformCover kmax K`.
 It supplies an actual finite exceptional set and actual bounded-degree
 ordinary source curves, with exponents 2/sqrt(2^k)+delta and
@@ -9779,8 +9780,12 @@ primary surface reference is [Salberger, arXiv:2311.05561v1, Lemma 2](https://ar
 That lemma concerns geometrically integral projective surfaces in P3.
 The literal finite affine projection, lifting, component/degree bounds,
 geometric-integrality hypotheses and translation to this ordinary
-prime-ideal/Hilbert curve presentation remain INCLUDED UNPROVED parts
-of this property. Its constants do not assume the target host count.
+prime-ideal/Hilbert curve presentation were included in this historical
+property. They are now internally proved, including all auxiliary-degree
+heights and uniform coefficient/height constants. The exact P3 covering
+theorem remains unproved; the ordinary property is derived from it by
+`UniformOrdinarySurfaceCoverFromExactSource.of_hypersurface_covers`.
+Its constants do not assume the target host count.
 
 Stable ID: `P1-GEO-CHOSEN-SOURCE-SURFACE-COVER`. Status:
 **explicit_hypothesis**. Exact Lean property:
@@ -29083,7 +29088,7 @@ The exact P3 determinant-method theorem itself is still UNPROVED. CompanionT1.7 
 Verified under Lean v4.36.0-rc2: full build passed (17163 jobs); direct axiom audit passed for 16453 declarations using only propext, Classical.choice and Quot.sound; all 16118 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.38 GiB.
 
 
-## Exact P3 geometric input after the complete chosen-source translation
+## Exact P3 geometric input after all source and ordinary translations
 
 Stable ID: `P1-GEO-P3-HYPERSURFACE-COVER`. Status: **explicit_hypothesis**.
 Exact Lean property: `PaperP1.UniformP3HypersurfaceCover.UniformCover d`.
@@ -29101,9 +29106,22 @@ The theorem is not yet formally proved. No axiom or Palomar claim is introduced.
 
 P1-MATH-0577 proves the complete chosen-source cover and its coefficient,
 height and finite-size uniformity from this exact input at d=2^k*D^2.
-The former `P1-GEO-CHOSEN-SOURCE-SURFACE-COVER` is therefore no longer an
-independent premise of canonical companionT1.7. The ordinary cover input
-remains independent until its exact source-curve and height conversion is proved.
+P1-MATH-0585 also derives both complete ordinary surface covers, using the
+internally proved actual source-prime recovery, positive integral curve degrees,
+all positive auxiliary-degree heights, normalized integer points, finite families,
+exception cardinalities and exact H^E exponent rescaling. One embedding E=K+1
+is fixed from the ordinary equation-size cap; constants are then chosen before
+all coefficients, auxiliary degrees, heights and actual point populations.
+
+Canonical companionT1.7 is now
+`PaperP1.UniformGeometricCountsP3Input.companion_T1_7`.
+Its only remaining unformalized input family is
+`P1-GEO-P3-HYPERSURFACE-COVER`, in three explicit finite-degree families:
+2^k*p.systemDegree^2, 2^k*(K+1)^2 and 2^k*(a+1+1)^2, with the respective
+system, linear and typed finite-size caps. The former chosen-source and ordinary
+surface-cover properties are derived conclusions, not independent premises.
+The primary P3 covering theorem itself remains UNPROVED, and T1.7 remains
+conditional. Earlier boundary descriptions below retain their historical scopes.
 
 
 ## Actual finite linear coordinate images of curves construct their own finite normalization and genuine Hilbert polynomial
@@ -29221,3 +29239,20 @@ SourceOrdinaryCoverPower proves the exact identity sqrt(2^k*E^2)=E*sqrt(2^k), wi
 The actual finite-family, exceptional-set, point-membership and exact exponent conversion are now proved. Selecting one embedding E from the ordinary equation-size bound and instantiating the constants uniformly before all coefficient, auxiliary-degree and height quantifiers remain next. CompanionT1.7 retains its exact P3 input and two ordinary surface-cover hypotheses and remains conditional; the primary P3 theorem itself remains unproved. All73 main results remain proved; coverage remains163 proved,2 conditional,2 in_progress out of167. Four modules add five theorems and no definitions. Original manuscript hashes, pinned compiler, permitted axioms and heartbeat settings remain unchanged; no dependency download or Palomar submission. Ubuntu free space is about6.23GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (17215 jobs); direct axiom audit passed for 16541 declarations using only propext, Classical.choice and Quot.sound; all 16229 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.22 GiB.
+
+
+## Complete uniform ordinary surface covers from the exact P3 input and reduction of canonical T1.7 to that sole geometric family
+
+Stable ID: p1:internal:complete-ordinary-cover-from-exact-p3-input. All chosen-source and ordinary covering translations are internally proved. Canonical T1.7 retains only the exact primary P3 hypersurface-covering input family, which remains unproved.
+
+UniformOrdinarySurfaceCoverFromExactSource.of_exact derives the complete actual UniformOrdinarySurfaceCover.UniformCover kmax K property from the exact genuine-degree source covering property at any fixed positive embedding E with K<=2E. For an arbitrary ordinary margin delta>0 it applies the source property with margin delta/E, and chooses the degree cap and positive constant before all system sizes, coefficient data, root sets, independently chosen positive auxiliary Veronese degrees, integer heights and actual normalized ordinary point populations. The actual radical list, list length, source equations, nonzero coefficients and both disjointness conditions are constructed from the original ordinary system data.
+
+The existing literal integer lift sends U into the actual source point set at height H^E. The internally proved source-to-ordinary curve construction retains actual ordinary primes, radical equations, positive natural Hilbert degrees and the actual quotient Hilbert polynomial; arbitrary auxiliary-degree height one is a proved conclusion. Actual finite-family and exception-cardinality transport then gives the literal ordinary covering with no cardinality or degree-cap increase. The exact source-degree exponent identity yields precisely A*H^(2/sqrt(2^k)+delta) exceptional points and A*H^(1/sqrt(2^k)+delta) ordinary curves. No point, curve, height, exponent or uniformity correspondence is supplied as an additional premise.
+
+The of_hypersurface_covers theorem fixes E=K+1 from the ordinary equation-size bound, independently of every later coefficient, auxiliary degree or height. It derives the complete ordinary covering property from only the exact P3 covering property at the finitely many degrees 2^k*(K+1)^2. The complete chosen-source cover and its exact P3 translation were already internally proved at checkpoint577. Thus both formerly independent ordinary-cover instances are now consequences of the same exact P3 input family.
+
+UniformGeometricCountsP3Input supplies the new canonical conditional companionT1.7 declaration. Its explicit Hypotheses contain only three finite-degree instances of UniformP3HypersurfaceCover.UniformCover: system degrees 2^k*p.systemDegree^2 up to p.systemSize, linear-system degrees 2^k*(K+1)^2 up to p.linearSize, and typed-system degrees 2^k*(a+1+1)^2 up to p.typedSize. The actual ordinary covering and the previous source/ordinary hypothesis bundle are constructed internally from these properties, and the original complete Assertions follow. The original parameter-selection order and all conclusions are retained.
+
+The sole remaining unformalized geometric input family for canonical T1.7 is now P1-GEO-P3-HYPERSURFACE-COVER, whose literal property and primary Salberger Lemma2 scope remain explicitly recorded. The primary determinant-method covering theorem itself is still UNPROVED. This checkpoint discharges all source and ordinary model translations and the two independent ordinary-cover premises; it does not prove an unconditional P3 cover or T1.7. The former canonical declarations and their historical scopes remain preserved in the ledger and source files. All73 main results remain proved; coverage remains163 proved,2 conditional,2 in_progress out of167. Two modules add six theorems and one hypothesis structure. Original manuscript hashes, pinned compiler, permitted axioms and heartbeat settings remain unchanged; no dependency download or Palomar submission. Ubuntu free space is about6.20GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (17219 jobs); direct axiom audit passed for 16547 declarations using only propext, Classical.choice and Quot.sound; all 16236 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.20 GiB.

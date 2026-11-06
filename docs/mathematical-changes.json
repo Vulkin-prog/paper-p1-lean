@@ -27962,6 +27962,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "7b128b4a7a4dadfcc7b6a889ff0a526d626df80c"
+    },
+    {
+      "id": "P1-MATH-0585",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Canonical companionT1.7 retained the exact P3 theorem for the chosen-source cover and two independent ordinary surface-cover properties whose full model, height and uniform-constant translation had not yet been constructed.",
+      "finding": "Both complete ordinary surface-cover properties follow internally from the exact P3 input, with all actual ideal, Hilbert degree, auxiliary-height, integer-point, finite-family, exponent and uniform-constant conversions proved. Canonical T1.7 now retains only that exact primary P3 input family.",
+      "proposed_revision": "Replace the independent ordinary-cover premises by the exact P3 theorem at the finite degrees determined by E=K+1 and E=a+2. State that all model translations are proved, while explicitly retaining the primary determinant-method theorem as the remaining unproved geometric input.",
+      "impact": "Removes both independent ordinary-cover hypotheses from canonical T1.7 without assuming a target host count, losing an exponent, changing constants after coefficients, or claiming a proof of the primary P3 theorem.",
+      "evidence": [
+        "PaperP1.UniformOrdinarySurfaceCoverFromExactSource.of_exact",
+        "PaperP1.UniformOrdinarySurfaceCoverFromExactSource.of_hypersurface_covers",
+        "PaperP1.UniformGeometricCountsP3Input.linear_cover",
+        "PaperP1.UniformGeometricCountsP3Input.typed_cover",
+        "PaperP1.UniformGeometricCountsP3Input.source_hypotheses",
+        "PaperP1.UniformGeometricCountsP3Input.companion_T1_7",
+        "PaperP1.UniformGeometricCountsP3Input.Hypotheses"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17219 jobs); direct axiom audit passed for 16547 declarations using only propext, Classical.choice and Quot.sound; all 16236 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.20 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

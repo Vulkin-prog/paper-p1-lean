@@ -6,10 +6,12 @@ public import PaperP1.Asymptotics.SurfaceCountParameters
 
 /-! # The explicit uniform lifted-surface covering input on actual ordinary point sets
 
-`UniformCover` is unproved. It isolates Salberger, arXiv:2311.05561v1,
-Lemma 2, together with the finite-projection lifting and bounded-degree
-prime/Hilbert presentation needed for the actual ordinary model:
-https://arxiv.org/pdf/2311.05561v1 . No covering theorem is asserted here.
+`UniformCover` records the actual ordinary point and curve property.
+`UniformOrdinarySurfaceCoverFromExactSource.of_hypersurface_covers` derives it
+from the exact P3 input using internally proved projection, curve, degree,
+height, integer-point and uniform-constant transport. The primary covering
+theorem, Salberger, arXiv:2311.05561v1, Lemma 2, remains unproved:
+https://arxiv.org/pdf/2311.05561v1 . No unconditional covering theorem is asserted here.
 -/
 
 set_option autoImplicit false

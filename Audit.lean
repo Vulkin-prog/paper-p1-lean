@@ -7543,6 +7543,8 @@ import PaperP1
 #print axioms PaperP1.UniformNormalizedCurvePointCount.ordinary_specialization
 #print axioms PaperP1.UniformOrdinarySurfaceCover.decay_mono
 #print axioms PaperP1.UniformOrdinarySurfaceCover.subpower_parameters
+#print axioms PaperP1.UniformOrdinarySurfaceCoverFromExactSource.of_exact
+#print axioms PaperP1.UniformOrdinarySurfaceCoverFromExactSource.of_hypersurface_covers
 #print axioms PaperP1.UniformP3HypersurfaceCover.mem_points
 #print axioms PaperP1.UniformP3HypersurfaceCover.CoverAtDegree.mono
 #print axioms PaperP1.UniformSourceCurvePointCount.source_points
@@ -11044,6 +11046,10 @@ import PaperP1
 #print axioms PaperP1.UnconditionalDenseTwoTargetMass.article_15_2
 #print axioms PaperP1.UnconditionalTripleControlledActivity.uniform_weighted
 #print axioms PaperP1.uniformLittleOOn_zero
+#print axioms PaperP1.UniformGeometricCountsP3Input.linear_cover
+#print axioms PaperP1.UniformGeometricCountsP3Input.typed_cover
+#print axioms PaperP1.UniformGeometricCountsP3Input.source_hypotheses
+#print axioms PaperP1.UniformGeometricCountsP3Input.companion_T1_7
 #print axioms PaperP1.UniformGeometricCountsP3SourceInput.source_cover
 #print axioms PaperP1.UniformGeometricCountsP3SourceInput.surface_hypotheses
 #print axioms PaperP1.UniformGeometricCountsP3SourceInput.companion_T1_7
