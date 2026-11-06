@@ -34809,6 +34809,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "fc42b3fd8f99488d54719d9fccb44bafbe531f7c"
+    },
+    {
+      "id": "P1-MATH-0753",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The presence of an other-band prime divisor is not a completely multiplicative coefficient. Its exact zero-damping decomposition and its invariance under extracted primes must be proved, retaining prime-support and positivity scopes.",
+      "finding": "The literal prime-presence indicator is bounded between zero and one. On positive integers, the actual valuation multiplicity is zero iff the actual prime-divisor count is zero; this uses only that the finite support consists of primes. Thus presence(Q,n)=1-damping(Q,0,n), without ANY squarefree condition. The actual presence-weighted complete real coefficient is a difference of two actual complete bounded coefficient functions. Multiplication by a prime outside Q preserves the exact factors, count and presence for EVERY m, including zero. Ten theorems and one definition prove these identities and coefficient bounds.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual prime presence is a zero-damping difference without squarefree assumptions. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.PrimePresence.present_bounds",
+        "PaperP1.PrimePresence.present_abs_bound",
+        "PaperP1.PrimePresence.count_zero_iff",
+        "PaperP1.PrimePresence.multiplicity_zero_iff",
+        "PaperP1.PrimePresence.present_zero_damping",
+        "PaperP1.PrimePresence.present_damped_difference",
+        "PaperP1.PrimePresence.factors_mul_outside",
+        "PaperP1.PrimePresence.count_mul_outside",
+        "PaperP1.PrimePresence.present_mul_outside",
+        "PaperP1.PrimePresence.complex_coefficient_bound",
+        "PaperP1.PrimePresence.present"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18073 jobs); direct axiom audit passed for 18404 declarations using only propext, Classical.choice and Quot.sound; all 18551 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.99 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

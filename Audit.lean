@@ -4461,6 +4461,16 @@ import PaperP1
 #print axioms PaperP1.PrimePolynomialMoments.high_moment_bound
 #print axioms PaperP1.PrimePolynomialMoments.large_values_budget
 #print axioms PaperP1.PrimePolynomialMoments.large_values_measure
+#print axioms PaperP1.PrimePresence.present_bounds
+#print axioms PaperP1.PrimePresence.present_abs_bound
+#print axioms PaperP1.PrimePresence.count_zero_iff
+#print axioms PaperP1.PrimePresence.multiplicity_zero_iff
+#print axioms PaperP1.PrimePresence.present_zero_damping
+#print axioms PaperP1.PrimePresence.present_damped_difference
+#print axioms PaperP1.PrimePresence.factors_mul_outside
+#print axioms PaperP1.PrimePresence.count_mul_outside
+#print axioms PaperP1.PrimePresence.present_mul_outside
+#print axioms PaperP1.PrimePresence.complex_coefficient_bound
 #print axioms PaperP1.PrimeProductReciprocalLower.root_scale_lower
 #print axioms PaperP1.PrimeProductReciprocalLower.exponential_lower
 #print axioms PaperP1.PrimeProductReciprocalSaddleLower.uniform_ordinary_lower

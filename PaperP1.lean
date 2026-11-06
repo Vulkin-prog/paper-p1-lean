@@ -4692,3 +4692,4 @@ public import PaperP1.Analysis.SparseIntegerMeanValue
 public import PaperP1.Analysis.SparseSupportedMeanValue
 public import PaperP1.Analysis.CofactorSparseRegime
 public import PaperP1.Analysis.CofactorSparseMeanValue
+public import PaperP1.Analysis.PrimePresence
