@@ -4236,6 +4236,10 @@ import PaperP1
 #print axioms PaperP1.MahlerCoefficientBounds.norm_top_coeff_le_mahler
 #print axioms PaperP1.MahlerCoefficientBounds.factor_coefficient_product_bound
 #print axioms PaperP1.MahlerCoefficientBounds.factor_coefficient_product_bound_two_pow
+#print axioms PaperP1.MixedGramRowBound.rowBudget_nonneg
+#print axioms PaperP1.MixedGramRowBound.row_bound
+#print axioms PaperP1.MixedGramRowBound.analysis_bound
+#print axioms PaperP1.MixedGramRowBound.dirichlet_bound
 #print axioms PaperP1.MonomialCountingParameters.height_exponent
 #print axioms PaperP1.MonomialCountingParameters.exceptional_budget
 #print axioms PaperP1.MonomialCurvePieceCount.partial_nonzero
