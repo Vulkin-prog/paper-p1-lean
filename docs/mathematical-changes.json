@@ -36769,6 +36769,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "6b861d56a6d7a4dcaf9ed3344b7ad9dbeb114046"
+    },
+    {
+      "id": "P1-MATH-0815",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A density-one final-band population must be transported to the actual relative quotient; an unrelated abstract small error is not sufficient.",
+      "finding": "For every fixed B>=32 and epsilon>0, ONE N0>=1 precedes ALL N>=N0, every completely multiplicative complex coefficient function bounded by 1 on the actual dyadic source, and every 0<T<=N. The ACTUAL full Dirichlet polynomial minus the literal final-prime relative Ramare quotient, retaining first-band cofactor presence and the exact count denominator, has square integral at most epsilon. This follows from the actual three-band density-one population and the proved residual identity, with every square exception retained. One theorem proves this uniform approximation.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The literal final relative Ramare quotient approximates the full Dirichlet polynomial. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FinalRelativeApproximation.quotient_small_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18197 jobs); direct axiom audit passed for 18632 declarations using only propext, Classical.choice and Quot.sound; all 18827 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.86 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

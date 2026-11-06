@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0814: A three-band good population retains
+Current checkpoint P1-MATH-0815: The literal final relative Ramare
+quotient approximates the full Dirichlet polynomial. The joint large-
+prime frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.89 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0814: A three-band good population retains
 density one and every required support condition. The joint large-prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -2092,7 +2101,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**812 mathematical improvements and two statement-scope corrections are confirmed.**
+**813 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -32508,3 +32517,12 @@ Intersect the ACTUAL two-band good population with the ACTUAL final-band good po
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.89 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18195 jobs); direct axiom audit passed for 18631 declarations using only propext, Classical.choice and Quot.sound; all 18826 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.88 GiB.
+
+
+## The literal final relative Ramare quotient approximates the full Dirichlet polynomial
+
+For every fixed B>=32 and epsilon>0, ONE N0>=1 precedes ALL N>=N0, every completely multiplicative complex coefficient function bounded by 1 on the actual dyadic source, and every 0<T<=N. The ACTUAL full Dirichlet polynomial minus the literal final-prime relative Ramare quotient, retaining first-band cofactor presence and the exact count denominator, has square integral at most epsilon. This follows from the actual three-band density-one population and the proved residual identity, with every square exception retained. One theorem proves this uniform approximation.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.89 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18197 jobs); direct axiom audit passed for 18632 declarations using only propext, Classical.choice and Quot.sound; all 18827 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.86 GiB.
