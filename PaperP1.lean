@@ -4829,3 +4829,4 @@ public import PaperP1.Analysis.RealEulerDamping
 public import PaperP1.Analysis.DampedFiniteEulerExtension
 public import PaperP1.Analysis.DampedEulerZetaComparison
 public import PaperP1.Analysis.PositiveZetaBound
+public import PaperP1.Analysis.UniformRealEulerSmallness

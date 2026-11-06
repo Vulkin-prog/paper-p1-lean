@@ -39131,6 +39131,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "20416a3b7074ea3f4751563ecb69df2ef808f7da"
+    },
+    {
+      "id": "P1-MATH-0890",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A common exceptional set in frequency is insufficient to control every sparse sample; a genuine uniform off-central bound on the actual real prime Euler products must be proved.",
+      "finding": "Two theorems prove: for every fixed B>0 and epsilon>0, ONE T0>=8 precedes ALL integers X>=2 with log X>=1, ALL finite prime sets P below X, ALL real prime coefficients bounded by one, and ALL T0<=|t|<=X^B; the literal product norm is <=epsilon*log X. Its fourth-power version is proved first. The proof combines the actual uniform damping cost, the corrected fourth-power complete zeta comparison, the proved positive real zeta bound and the proved sublogarithmic shifted zeta estimate. The near-zero range remains excluded and explicit. Multiplicativity is not required for the finite prime coefficients.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual finite real prime Euler products are uniformly small outside a fixed central frequency range. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.UniformRealEulerSmallness.fourth_power_bound",
+        "PaperP1.UniformRealEulerSmallness.uniform_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18347 jobs); direct axiom audit passed for 18920 declarations using only propext, Classical.choice and Quot.sound; all 19165 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.65 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
