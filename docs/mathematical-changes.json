@@ -41377,6 +41377,40 @@
         "status": "not_integrated"
       },
       "validation_commit": "c19b0bd3550dc1cf8bca1395348dda1bfeb7fe7d"
+    },
+    {
+      "id": "P1-MATH-0961",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal specialized long-mean route for the actual smooth indicator needed by T19.17. This does not assert the stronger mean theorem for every real completely multiplicative function, or concentration in logarithmic windows.",
+      "finding": "Six theorems and two definitions choose the actual rounded length ceil(N/sqrt(log(N))) and prove positive length, its eventual upper bound N and its lower real bound. For every a>0, the literal ordinary floor(N^a)-smooth short mean at every integer j in [N,2N) differs from its dyadic mean by at most 2*C(a)/sqrt(log(N))+2*C(a)/log(N), after one common integer cutoff. This error is proved to tend to zero, yielding uniform arbitrary-epsilon mean stability. The specialized arithmetic proof uses the actual Möbius identity and Selberg bound, and does not assume the general real multiplicative mean-stability theorem.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual ordinary smooth long-interval means converge uniformly to the dyadic mean. The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established.",
+      "evidence": [
+        "PaperP1.SmoothLongMeanStability.length_pos",
+        "PaperP1.SmoothLongMeanStability.length_le",
+        "PaperP1.SmoothLongMeanStability.length_lower",
+        "PaperP1.SmoothLongMeanStability.error_tendsto",
+        "PaperP1.SmoothLongMeanStability.quantitative_bound",
+        "PaperP1.SmoothLongMeanStability.uniform_bound",
+        "PaperP1.SmoothLongMeanStability.length",
+        "PaperP1.SmoothLongMeanStability.error"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18489 jobs); direct axiom audit passed for 19196 declarations using only propext, Classical.choice and Quot.sound; all 19500 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.32 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

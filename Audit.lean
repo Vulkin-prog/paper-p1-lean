@@ -5599,6 +5599,12 @@ import PaperP1
 #print axioms PaperP1.SmoothIntervalProfile.short_profile
 #print axioms PaperP1.SmoothIntervalProfile.dyadic_profile
 #print axioms PaperP1.SmoothIntervalProfile.short_long_bound
+#print axioms PaperP1.SmoothLongMeanStability.length_pos
+#print axioms PaperP1.SmoothLongMeanStability.length_le
+#print axioms PaperP1.SmoothLongMeanStability.length_lower
+#print axioms PaperP1.SmoothLongMeanStability.error_tendsto
+#print axioms PaperP1.SmoothLongMeanStability.quantitative_bound
+#print axioms PaperP1.SmoothLongMeanStability.uniform_bound
 #print axioms PaperP1.SmoothLowerBarrierGrowth.tendsto_loglog_div_log
 #print axioms PaperP1.SmoothLowerBarrierGrowth.tendsto_tilt_div_log
 #print axioms PaperP1.SmoothLowerBarrierGrowth.tendsto_log_div_tilt

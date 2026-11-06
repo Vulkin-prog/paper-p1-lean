@@ -1,0 +1,7 @@
+# Actual ordinary smooth long-interval means converge uniformly to the dyadic mean
+
+Source: internal preparatory analytic route for companion T19.17. This is not a completed additional manuscript result.
+
+Six theorems and two definitions choose the actual rounded length ceil(N/sqrt(log(N))) and prove positive length, its eventual upper bound N and its lower real bound. For every a>0, the literal ordinary floor(N^a)-smooth short mean at every integer j in [N,2N) differs from its dyadic mean by at most 2*C(a)/sqrt(log(N))+2*C(a)/log(N), after one common integer cutoff. This error is proved to tend to zero, yielding uniform arbitrary-epsilon mean stability. The specialized arithmetic proof uses the actual Möbius identity and Selberg bound, and does not assume the general real multiplicative mean-stability theorem.
+
+The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.33 GiB free on Ubuntu. No dependency download or Palomar registration.

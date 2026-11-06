@@ -4900,3 +4900,4 @@ public import PaperP1.Analysis.SmoothMobiusConvolution
 public import PaperP1.Analysis.SmoothPrefixComparison
 public import PaperP1.Analysis.SmoothRoughPopulation
 public import PaperP1.Analysis.SmoothIntervalProfile
+public import PaperP1.Analysis.SmoothLongMeanStability

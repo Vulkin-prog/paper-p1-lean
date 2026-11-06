@@ -1,6 +1,18 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0960: Actual smooth interval averages share a
+Current checkpoint P1-MATH-0961: Actual ordinary smooth long-interval
+means converge uniformly to the dyadic mean. The actual off-central
+Dirichlet estimate and the ordinary smooth long-interval mean comparison
+are proved. The analytic comparison with logarithmic short averages
+remains unproved, so T19.17 remains conditional. The stronger uniform
+short-average theorem for all real completely multiplicative functions
+is not established. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.33 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0960: Actual smooth interval averages share a
 finite reciprocal profile. The actual off-central Dirichlet frequency
 estimate is proved. The central-frequency short-to-long comparison, the
 analytic short-average bridge and complete logarithmic short-average
@@ -28436,3 +28448,12 @@ Four theorems express every actual interval sum as the exact difference of two p
 The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.37 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18487 jobs); direct axiom audit passed for 19190 declarations using only propext, Classical.choice and Quot.sound; all 19492 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.34 GiB.
+
+
+## Actual ordinary smooth long-interval means converge uniformly to the dyadic mean
+
+Six theorems and two definitions choose the actual rounded length ceil(N/sqrt(log(N))) and prove positive length, its eventual upper bound N and its lower real bound. For every a>0, the literal ordinary floor(N^a)-smooth short mean at every integer j in [N,2N) differs from its dyadic mean by at most 2*C(a)/sqrt(log(N))+2*C(a)/log(N), after one common integer cutoff. This error is proved to tend to zero, yielding uniform arbitrary-epsilon mean stability. The specialized arithmetic proof uses the actual Möbius identity and Selberg bound, and does not assume the general real multiplicative mean-stability theorem.
+
+The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.33 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18489 jobs); direct axiom audit passed for 19196 declarations using only propext, Classical.choice and Quot.sound; all 19500 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.32 GiB.
