@@ -28878,6 +28878,51 @@
         "status": "not_integrated"
       },
       "validation_commit": "3db5d9571c9e9fca39df1dc5ad7b098be7112a96"
+    },
+    {
+      "id": "P1-MATH-0607",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Canonical T1.7 supplied the entire quantitative global auxiliary equation although its determinant, degree choice, arbitrary-coefficient and singular-point constructions can all be derived from an earlier independent finite-field good-prime certificate budget.",
+      "finding": "The complete coefficient-uniform global auxiliary theorem is internally proved from a precise finite-field class-count certificate proposition. Canonical T1.7 now retains only that proposition at the original three finite-degree families.",
+      "proposed_revision": "Use the explicit finite-field certificate boundary, record all constants before coefficients and heights, and integrate the complete actual determinant, bounded-model, scalar and singular-point constructions into the global auxiliary proof.",
+      "impact": "Discharges the global auxiliary-existence premise as an internally derived conclusion under an independent finite-field input. Preserves conditional coverage and identifies the exact remaining geometric theorem.",
+      "evidence": [
+        "PaperP1.NonzeroScalarPolynomial.constant_isUnit",
+        "PaperP1.NonzeroScalarPolynomial.dvd_scalar_right",
+        "PaperP1.NonzeroScalarPolynomial.scalar_dvd",
+        "PaperP1.NonzeroScalarPolynomial.irreducible_scalar",
+        "PaperP1.P3ModelCoefficientGrowth.constant_pos",
+        "PaperP1.P3ModelCoefficientGrowth.bound_eq",
+        "PaperP1.P3ModelCoefficientGrowth.certificate_growth",
+        "PaperP1.UniformP3AuxiliaryFromFiniteFieldCertificate.positive_degree",
+        "PaperP1.UniformP3AuxiliaryFromFiniteFieldCertificate.uniform_auxiliary",
+        "PaperP1.UniformP3FiniteFieldCertificate.monotone_budget",
+        "PaperP1.UniformP3FiniteFieldCertificate.coarse_budget",
+        "PaperP1.UniformP3FiniteFieldCertificate.of_degree_le_one",
+        "PaperP1.UniformGeometricCountsFiniteFieldInput.auxiliary_hypotheses",
+        "PaperP1.UniformGeometricCountsFiniteFieldInput.companion_T1_7",
+        "PaperP1.P3ModelCoefficientGrowth.constant",
+        "PaperP1.P3ModelCoefficientGrowth.exponent",
+        "PaperP1.UniformP3FiniteFieldCertificate.AtDegree",
+        "PaperP1.UniformP3FiniteFieldCertificate.UniformBudget",
+        "PaperP1.UniformGeometricCountsFiniteFieldInput.Hypotheses"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17425 jobs); direct axiom audit passed for 16821 declarations using only propext, Classical.choice and Quot.sound; all 16570 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.03 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

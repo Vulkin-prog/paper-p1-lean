@@ -1,6 +1,18 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0594: canonical companionT1.7 is
+Current checkpoint P1-MATH-0607: canonical companionT1.7 is
+`UniformGeometricCountsFiniteFieldInput.companion_T1_7`. The complete uniform
+global auxiliary equation of degree H^(1/sqrt(d)+epsilon) is internally derived
+from the independent finite-field certificate budget, including arbitrary
+rational coefficients and every original singular point. The only unformalized
+geometric input family is `P1-GEO-P3-FINITE-FIELD-CERTIFICATE`, at the same three
+original finite-degree families. Its general existence remains UNPROVED.
+The old global auxiliary and all covering/source/ordinary properties are
+derived conclusions under that explicit input. T1.7 remains conditional.
+All73 main results are proved; coverage remains163 proved,2 conditional and
+2 in_progress out of167. No Palomar registration is claimed.
+
+Historical checkpoint P1-MATH-0594: canonical companionT1.7 is
 `UniformGeometricCountsAuxiliaryInput.companion_T1_7`. The entire original P3
 curve/exception covering property is internally derived from one explicit
 quantitative global auxiliary equation of degree H^(1/sqrt(d)+epsilon), with
@@ -21,7 +33,7 @@ All73 main results remain proved, and global coverage remains163 proved,
 2 conditional and2 in_progress out of167. No Palomar registration is claimed.
 
 
-Current checkpoint P1-MATH-0560: **all 73 numbered main-article results are proved**.
+Historical checkpoint P1-MATH-0560: **all 73 numbered main-article results are proved**.
 Main13.4 is internally proved on the literal affine integer-point set, in the
 genuine homogeneous prime projective-closure ideal formulation with actual
 Hilbert degree. One absolute exponent17 precedes all dimensions, and one
@@ -29127,33 +29139,61 @@ is fixed from the ordinary equation-size cap; constants are then chosen before
 all coefficients, auxiliary degrees, heights and actual point populations.
 
 Canonical companionT1.7 is now
-`PaperP1.UniformGeometricCountsAuxiliaryInput.companion_T1_7`.
-The complete exact P3 cover is internally derived from the sole remaining
-unformalized input family `P1-GEO-P3-GLOBAL-AUXILIARY`. Its three finite-degree
-families are2^k*p.systemDegree^2,2^k*(K+1)^2 and2^k*(a+1+1)^2 with the original
-system,linear,typed size caps. The auxiliary equation's quantitative global
-existence theorem remains UNPROVED; T1.7 remains conditional. Earlier boundary
+`PaperP1.UniformGeometricCountsFiniteFieldInput.companion_T1_7`.
+The complete global auxiliary equation and exact P3 cover are internally derived
+from the sole remaining unformalized input family
+`P1-GEO-P3-FINITE-FIELD-CERTIFICATE`. Its three finite-degree families are
+2^k*p.systemDegree^2,2^k*(K+1)^2 and2^k*(a+1+1)^2 with the original
+system,linear,typed size caps. The general finite-field certificate existence
+theorem remains UNPROVED; T1.7 remains conditional. Earlier boundary
 descriptions retain their historical scopes.
+
+## Independent finite-field good-prime certificate budget
+
+Stable ID: `P1-GEO-P3-FINITE-FIELD-CERTIFICATE`. Status: **explicit_hypothesis**.
+Exact Lean property: `PaperP1.UniformP3FiniteFieldCertificate.UniformBudget d`.
+For each eta>0, positive integer T and natural N,K0 precede every coefficient
+bound A>0 and every geometrically irreducible homogeneous degree-d integer
+equation P with all coefficient absolute values at most A. There must exist an
+actual nonzero integer z with natAbs(z)<=T*A^N such that every prime p>=K0
+not dividing z has at most (1+eta)*p^2 actual canonical smooth classes in the
+original X3=1 chart. This statement contains no point height, integer-point
+population, determinant, auxiliary equation, curve family or covering bound.
+
+The general existence theorem remains UNPROVED. The coarse D=d certificate is
+proved for every prime with z=1, and the full stated budget is proved when d<=1.
+The complete global auxiliary theorem is internally derived from this input,
+with all constants before coefficients and heights. T1.7 stays conditional.
+
+The precise interface is an inference from the finite-field estimate and
+universal-form roles in [Salberger2023, Lemmas1.5 and1.8-1.9](https://londmathsoc.onlinelibrary.wiley.com/doi/full/10.1112/plms.12508).
+Formal proofs of the sharper finite-field estimate and the bounded nonzero
+good-reduction certificate are still required. No primary theorem is added
+as a Lean axiom and no Palomar claim is introduced.
 
 ## Quantitative global auxiliary-hypersurface construction
 
-Stable ID: `P1-GEO-P3-GLOBAL-AUXILIARY`. Status: **explicit_hypothesis**.
+Stable ID: `P1-GEO-P3-GLOBAL-AUXILIARY`. Status: **derived_from_finite_field_certificate_input**.
 Exact Lean property: `PaperP1.UniformP3AuxiliaryHypersurface.UniformAuxiliary d`.
 For every epsilon>0, one positive B precedes every rational geometrically
 irreducible homogeneous degree-d equation and every H>=1. One actual homogeneous
 G, not divisible by that equation, must vanish on ALL normalized X3=1 integer
 points of height H and have actual natural degree at most
 B*H^(1/sqrt(d)+epsilon). No curve family, exception set or covering estimate is
-assumed. The property is a proposition passed as an explicit theorem argument;
-no axiom is introduced. Its existence theorem remains UNPROVED.
+assumed. At P1-MATH-0607 this exact property is internally derived by
+`UniformP3AuxiliaryFromFiniteFieldCertificate.uniform_auxiliary` from the
+independent `UniformP3FiniteFieldCertificate.UniformBudget d` input. The
+certificate proposition remains UNPROVED in general; no axiom is introduced.
 
 The primary reference for the global construction is
 [Salberger2023, Theorem1.2](https://londmathsoc.onlinelibrary.wiley.com/doi/full/10.1112/plms.12508).
 The complete literal P3 covering transfer is proved by
 `UniformP3CoverFromAuxiliary.uniformCover`, using actual total section degrees
 and the internally proved quadratic-degree affine curve point count. This
-simplification avoids the curve forest in the covering transfer; it does not
-supply the remaining global auxiliary equation.
+simplification avoids the curve forest in the covering transfer. The full
+global auxiliary construction is now internal under the independent finite-field
+certificate input, including arbitrary coefficients, degree choice and every
+original singular point.
 
 
 
@@ -29656,3 +29696,20 @@ P3UniformIntegerAuxiliary removes the original pointwise smoothness restriction 
 Three modules add seven theorems and one definition. These close the fully uniform quantitative global auxiliary construction for actual integer equations with polynomially bounded coefficients and an explicit polynomially bounded good-prime certificate/class budget. In particular all original singular points are now handled internally. The independent existence theorem for the sharper finite-field certificate remains UNPROVED, and arbitrary original rational coefficients still need the already proved bounded-model dichotomy connected to this construction. Canonical companionT1.7 therefore retains its explicit UNPROVED global auxiliary input until that reduction is complete. No numbered result is promoted; coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. Original manuscript hashes, compiler, heartbeat settings and permitted axioms are unchanged. No dependency download and no Palomar submission. All work remains on Ubuntu, with about6.06GiB free.
 
 Verified under Lean v4.36.0-rc2: full build passed (17415 jobs); direct axiom audit passed for 16807 declarations using only propext, Classical.choice and Quot.sound; all 16551 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.06 GiB.
+
+
+## Complete uniform global auxiliary theorem reduced to independent finite-field certificates
+
+Stable ID: p1:internal:global-auxiliary-from-finite-field-certificates. The full arbitrary-coefficient global auxiliary theorem is internally derived from the finite-field certificate budget, including every original point. T1.7 remains conditional on that precise independent input.
+
+UniformP3FiniteFieldCertificate isolates the remaining independent finite-field proposition without introducing an axiom. For each eta>0 it requires positive integer T and natural N,K0 BEFORE every coefficient bound A>0 and every geometrically irreducible homogeneous integer equation P of degree d. It asks for a nonzero integer z with natAbs(z)<=T*A^N such that EVERY prime p>=K0 not dividing z has actual canonical smooth class count at most (1+eta)*p^2. It mentions no height-H population, determinant, auxiliary polynomial, curve family or target covering estimate. The general existence theorem remains UNPROVED. The coarse D=d version is proved at every prime with z=1, and the full requested proposition is proved unconditionally for d<=1. The exact interface is an inference from the finite-field and universal-form roles in Salberger2023, Lemmas1.5 and1.8-1.9; the primary lemmas have not been postulated as axioms.
+
+P3ModelCoefficientGrowth proves the actual interpolation coefficient bound from checkpoint592 is exactly T1(d)*H^c1(d), with T1=(3*card(Index d))^(card(Index d)-1)>0 and c1=d*(card(Index d)-1). It proves the exact corresponding certificate-height power identity. NonzeroScalarPolynomial proves actual scalar-unit transport of divisibility and irreducibility; the scalar is nonzero and every coefficient-field map is retained.
+
+UniformP3AuxiliaryFromFiniteFieldCertificate proves the COMPLETE original UniformP3AuxiliaryHypersurface.UniformAuxiliary d from the independent finite-field certificate budget. It chooses beta=1/sqrt(d)+epsilon and a positive eta so sqrt((1+eta)/d)<beta, then fixes every certificate and coefficient-growth constant before q and H. The actual original finite point set yields an integer interpolation equation with polynomially controlled coefficients. If that equation is independent of q it already supplies the desired auxiliary polynomial. Otherwise it is a proved nonzero scalar multiple of q; geometric irreducibility, normalization, the actual good-prime certificate and all point conditions are transported exactly. Checkpoint606 then constructs the global auxiliary equation including every original singular point, and scalar-unit transport proves independence from q. A rational equation divisible by X3 has an internally proved empty normalized point set and is handled directly. Degree zero is vacuous by geometric irreducibility. All H>=1 cases and all rational coefficient sizes are included.
+
+UniformGeometricCountsFiniteFieldInput proves the full aligned companionT1.7 assembly from only the same three original finite-degree families of UniformBudget: degrees2^k*p.systemDegree^2,2^k*(K+1)^2 and2^k*(a+1+1)^2 at their original system,linear,typed size caps. Canonical T1.7 becomes UniformGeometricCountsFiniteFieldInput.companion_T1_7. Its sole remaining unformalized geometric input ID is P1-GEO-P3-FINITE-FIELD-CERTIFICATE. The previous P1-GEO-P3-GLOBAL-AUXILIARY input is now an INTERNALLY DERIVED conclusion under this strictly earlier finite-field certificate proposition, and all covering/source/ordinary translations remain internal. This does NOT assert the finite-field proposition or an unconditional T1.7 theorem.
+
+Five modules add fourteen theorems and five definitions/hypothesis structures. The entire quantitative global auxiliary construction, original arbitrary coefficient control and all original singular points are now internal under the precise independent finite-field input. The remaining mathematical work is the uniform leading-coefficient-one finite-field estimate and polynomially bounded good-reduction certificate, alongside the separate companionT19.17 input. Coverage stays163 proved,2 conditional,2 in_progress out of167, with all73 main results proved. Literal false T1.10/T5.1 remain distinguished from their checked corrected replacements. Original manuscript hashes, compiler, heartbeat settings and permitted axioms are unchanged. No dependency download and no Palomar submission. All work remains on Ubuntu, with about6.04GiB free.
+
+Verified under Lean v4.36.0-rc2: full build passed (17425 jobs); direct axiom audit passed for 16821 declarations using only propext, Classical.choice and Quot.sound; all 16570 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.03 GiB.

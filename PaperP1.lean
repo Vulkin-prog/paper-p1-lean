@@ -4380,3 +4380,8 @@ public import PaperP1.Arithmetic.CertificatePrimeWindow
 public import PaperP1.Algebra.P3UniformIntegerAuxiliary
 public import PaperP1.Algebra.P3UniformSmoothAuxiliary
 public import PaperP1.Analysis.SurfaceAuxiliaryDegreeChoice
+public import PaperP1.Algebra.NonzeroScalarPolynomial
+public import PaperP1.Algebra.P3ModelCoefficientGrowth
+public import PaperP1.Arithmetic.UniformP3AuxiliaryFromFiniteFieldCertificate
+public import PaperP1.Arithmetic.UniformP3FiniteFieldCertificate
+public import PaperP1.Asymptotics.UniformGeometricCountsFiniteFieldInput

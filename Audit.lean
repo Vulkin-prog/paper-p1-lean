@@ -1764,6 +1764,10 @@ import PaperP1
 #print axioms PaperP1.NilpotentSimpleRoot.exists_root
 #print axioms PaperP1.NilpotentSimpleRoot.unique_root
 #print axioms PaperP1.NonnegativePowerDifference.bound
+#print axioms PaperP1.NonzeroScalarPolynomial.constant_isUnit
+#print axioms PaperP1.NonzeroScalarPolynomial.dvd_scalar_right
+#print axioms PaperP1.NonzeroScalarPolynomial.scalar_dvd
+#print axioms PaperP1.NonzeroScalarPolynomial.irreducible_scalar
 #print axioms PaperP1.NormalizedP3MonomialHeight.degree_split
 #print axioms PaperP1.NormalizedP3MonomialHeight.monomial_bound
 #print axioms PaperP1.NormalizedP3MonomialHeight.determinant_bound
@@ -1830,6 +1834,9 @@ import PaperP1
 #print axioms PaperP1.P3HomogeneousMonomialWeights.free_sum
 #print axioms PaperP1.P3HomogeneousMonomialWeights.free_budget
 #print axioms PaperP1.P3HomogeneousMonomialWeights.freeDegree_add
+#print axioms PaperP1.P3ModelCoefficientGrowth.constant_pos
+#print axioms PaperP1.P3ModelCoefficientGrowth.bound_eq
+#print axioms PaperP1.P3ModelCoefficientGrowth.certificate_growth
 #print axioms PaperP1.P3StandardHeightAuxiliary.exists_auxiliary
 #print axioms PaperP1.P3StandardMonomialCount.cardinality
 #print axioms PaperP1.P3StandardMonomialCount.exponent_injective
@@ -7786,7 +7793,12 @@ import PaperP1
 #print axioms PaperP1.UniformOrdinarySurfaceCover.subpower_parameters
 #print axioms PaperP1.UniformOrdinarySurfaceCoverFromExactSource.of_exact
 #print axioms PaperP1.UniformOrdinarySurfaceCoverFromExactSource.of_hypersurface_covers
+#print axioms PaperP1.UniformP3AuxiliaryFromFiniteFieldCertificate.positive_degree
+#print axioms PaperP1.UniformP3AuxiliaryFromFiniteFieldCertificate.uniform_auxiliary
 #print axioms PaperP1.UniformP3CoverFromAuxiliary.uniformCover
+#print axioms PaperP1.UniformP3FiniteFieldCertificate.monotone_budget
+#print axioms PaperP1.UniformP3FiniteFieldCertificate.coarse_budget
+#print axioms PaperP1.UniformP3FiniteFieldCertificate.of_degree_le_one
 #print axioms PaperP1.UniformP3HypersurfaceCover.mem_points
 #print axioms PaperP1.UniformP3HypersurfaceCover.CoverAtDegree.mono
 #print axioms PaperP1.UniformSourceCurvePointCount.source_points
@@ -11292,6 +11304,8 @@ import PaperP1
 #print axioms PaperP1.uniformLittleOOn_zero
 #print axioms PaperP1.UniformGeometricCountsAuxiliaryInput.p3_hypotheses
 #print axioms PaperP1.UniformGeometricCountsAuxiliaryInput.companion_T1_7
+#print axioms PaperP1.UniformGeometricCountsFiniteFieldInput.auxiliary_hypotheses
+#print axioms PaperP1.UniformGeometricCountsFiniteFieldInput.companion_T1_7
 #print axioms PaperP1.UniformGeometricCountsP3Input.linear_cover
 #print axioms PaperP1.UniformGeometricCountsP3Input.typed_cover
 #print axioms PaperP1.UniformGeometricCountsP3Input.source_hypotheses
