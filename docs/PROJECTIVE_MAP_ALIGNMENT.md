@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0871: Actual damped sums admit an endpoint-
+Current checkpoint P1-MATH-0872: The actual infinite damped Dirichlet
+tail has a proved explicit frequency bound. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.99 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0871: Actual damped sums admit an endpoint-
 independent sum-integral comparison. The triple-large prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -26814,3 +26823,12 @@ Eight theorems prove the exact derivative of the actual damped integrand and com
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.99 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18309 jobs); direct axiom audit passed for 18840 declarations using only propext, Classical.choice and Quot.sound; all 19072 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.99 GiB.
+
+
+## The actual infinite damped Dirichlet tail has a proved explicit frequency bound
+
+Six theorems and two definitions establish absolute summability of the actual integrand at all positive integers when sigma>0, the exact head-plus-tail splitting, uniform finite-tail bounds and their limit to the actual infinite tail. For N>0 and t nonzero, tail norm is <=2*N^(-sigma)/|t|+2*(1+sigma+|t|)*N^(-sigma)/N. The term norm formula is stated for sigma>=0, including n=0 correctly; absolute summability requires sigma>0. No cancellation assumption or infinite-tail input is supplied externally.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.99 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18311 jobs); direct axiom audit passed for 18846 declarations using only propext, Classical.choice and Quot.sound; all 19080 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.97 GiB.
