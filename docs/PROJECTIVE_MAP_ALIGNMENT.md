@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0888: The actual damped finite real Euler
+Current checkpoint P1-MATH-0889: The actual positive real zeta value has
+an explicit logarithmic bound at the chosen damping. The triple-large
+prime frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.71 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0888: The actual damped finite real Euler
 product is bounded by complete Riemann zeta values. The triple-large
 prime frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -27120,3 +27129,12 @@ Two theorems prove convergence of the actual unit damped products over primesBel
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.71 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18343 jobs); direct axiom audit passed for 18915 declarations using only propext, Classical.choice and Quot.sound; all 19160 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.68 GiB.
+
+
+## The actual positive real zeta value has an explicit logarithmic bound at the chosen damping
+
+Three theorems use the proved positive p-series tail to bound its total by 1+2/sigma when 0<sigma<=1, transfer the bound to the actual norm of Mathlib zeta(1+sigma), and specialize sigma=1/log X to norm<=3 log X when log X>=1. The zero term, shifted series and exact reciprocal damping are handled explicitly. No positive zeta estimate is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.71 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18345 jobs); direct axiom audit passed for 18918 declarations using only propext, Classical.choice and Quot.sound; all 19163 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.67 GiB.

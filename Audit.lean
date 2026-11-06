@@ -4743,6 +4743,9 @@ import PaperP1
 #print axioms PaperP1.PositiveReciprocalKernel.inverse_first_hasDerivAt
 #print axioms PaperP1.PositiveReciprocalKernel.inverse_derivative_nonneg
 #print axioms PaperP1.PositiveReciprocalKernel.inverse_integral
+#print axioms PaperP1.PositiveZetaBound.total_bound
+#print axioms PaperP1.PositiveZetaBound.norm_bound
+#print axioms PaperP1.PositiveZetaBound.logarithmic_norm_bound
 #print axioms PaperP1.PowerLogPrimeBand.lower_tendsto
 #print axioms PaperP1.PowerLogPrimeBand.geometry_eventually
 #print axioms PaperP1.PowerLogPrimeBand.harmonic_gap_tendsto
