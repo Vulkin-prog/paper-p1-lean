@@ -41956,6 +41956,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "0431e6428e06087911fde1b21f5b5d51c6df786e"
+    },
+    {
+      "id": "P1-MATH-0979",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal exact scale match between the actual census window and the physical Gaussian localization budget.",
+      "finding": "Seven theorems and two definitions prove positive slope and tail rate, exact floor-based upper and lower bounds for the actual census window floor(log(N)/(4*log(2))), its negligible relative length and all eventual Gaussian width geometry. The actual window has at least six points, is at most N, the short relative Gaussian width is at most one, N times that width is at least one, and the literal tail exponent is bounded below by tailRate*D^2. Every actual floor and scale is retained.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual logarithmic census window gives a uniform positive Gaussian tail exponent. The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.",
+      "evidence": [
+        "PaperP1.LogarithmicGaussianWindowScales.slope_pos",
+        "PaperP1.LogarithmicGaussianWindowScales.tailRate_pos",
+        "PaperP1.LogarithmicGaussianWindowScales.window_upper",
+        "PaperP1.LogarithmicGaussianWindowScales.window_lower",
+        "PaperP1.LogarithmicGaussianWindowScales.relative_length_tendsto",
+        "PaperP1.LogarithmicGaussianWindowScales.eventual_geometry",
+        "PaperP1.LogarithmicGaussianWindowScales.tail_exponent_lower",
+        "PaperP1.LogarithmicGaussianWindowScales.slope",
+        "PaperP1.LogarithmicGaussianWindowScales.tailRate"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18525 jobs); direct axiom audit passed for 19277 declarations using only propext, Classical.choice and Quot.sound; all 19594 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.98 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

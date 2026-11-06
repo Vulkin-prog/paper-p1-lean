@@ -4564,6 +4564,13 @@ import PaperP1
 #print axioms PaperP1.LogarithmicGaussianTail.tailEnvelope_bound
 #print axioms PaperP1.LogarithmicGaussianTail.tailEnvelope_tendsto
 #print axioms PaperP1.LogarithmicGaussianTail.tailEnvelope_small
+#print axioms PaperP1.LogarithmicGaussianWindowScales.slope_pos
+#print axioms PaperP1.LogarithmicGaussianWindowScales.tailRate_pos
+#print axioms PaperP1.LogarithmicGaussianWindowScales.window_upper
+#print axioms PaperP1.LogarithmicGaussianWindowScales.window_lower
+#print axioms PaperP1.LogarithmicGaussianWindowScales.relative_length_tendsto
+#print axioms PaperP1.LogarithmicGaussianWindowScales.eventual_geometry
+#print axioms PaperP1.LogarithmicGaussianWindowScales.tail_exponent_lower
 #print axioms PaperP1.LogarithmicLocalUnitMaps.exists_at_nonexceptional
 #print axioms PaperP1.LogarithmicLocalUnitMaps.exists_control_set_and_maps
 #print axioms PaperP1.LogarithmicPhase.phase_zero

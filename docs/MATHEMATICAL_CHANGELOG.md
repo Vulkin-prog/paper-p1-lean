@@ -1,6 +1,19 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0978: Actual windows with at most one smooth
+Current checkpoint P1-MATH-0979: The actual logarithmic census window
+gives a uniform positive Gaussian tail exponent. The actual off-central
+estimate, the ordinary smooth long-interval mean comparison and the
+uniform Gaussian mean-square comparison are proved. Localization of the
+Gaussian averages to the literal logarithmic windows remains unproved,
+so T19.17 stays conditional. The stronger uniform sharp short-average
+theorem for all real completely multiplicative functions is not
+established. T19.17 conditional; original T1.7 unconditional. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved.
+Sources, false-scope corrections, compiler and axioms unchanged. About
+52.01 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0978: Actual windows with at most one smooth
 integer have an explicit short Gaussian upper bound. The actual off-
 central estimate, the ordinary smooth long-interval mean comparison and
 the uniform Gaussian mean-square comparison are proved. Localization of
@@ -3650,7 +3663,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**976 mathematical improvements and two statement-scope corrections are confirmed.**
+**977 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -35542,3 +35555,12 @@ One theorem proves an explicit upper bound for the actual ordinary smooth Gaussi
 The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.01 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18523 jobs); direct axiom audit passed for 19270 declarations using only propext, Classical.choice and Quot.sound; all 19585 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.00 GiB.
+
+
+## The actual logarithmic census window gives a uniform positive Gaussian tail exponent
+
+Seven theorems and two definitions prove positive slope and tail rate, exact floor-based upper and lower bounds for the actual census window floor(log(N)/(4*log(2))), its negligible relative length and all eventual Gaussian width geometry. The actual window has at least six points, is at most N, the short relative Gaussian width is at most one, N times that width is at least one, and the literal tail exponent is bounded below by tailRate*D^2. Every actual floor and scale is retained.
+
+The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.01 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18525 jobs); direct axiom audit passed for 19277 declarations using only propext, Classical.choice and Quot.sound; all 19594 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.98 GiB.

@@ -4918,3 +4918,4 @@ public import PaperP1.Analysis.LogarithmicCellSquareBudget
 public import PaperP1.Analysis.SmoothGaussianPopulation
 public import PaperP1.Analysis.SmoothLongGaussianLower
 public import PaperP1.Analysis.SmoothGaussianWindowUpper
+public import PaperP1.Analysis.LogarithmicGaussianWindowScales
