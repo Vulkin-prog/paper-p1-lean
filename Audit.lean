@@ -4210,6 +4210,12 @@ import PaperP1
 #print axioms PaperP1.LogarithmicShiftPhase.amplitude_norm
 #print axioms PaperP1.LogarithmicShiftPhase.amplitudeDeriv_norm
 #print axioms PaperP1.LogarithmicShiftPhase.derivative_amplitude_cancel
+#print axioms PaperP1.LogarithmicShiftSum.local_variation
+#print axioms PaperP1.LogarithmicShiftSum.unit_integral_error
+#print axioms PaperP1.LogarithmicShiftSum.sum_integral_error
+#print axioms PaperP1.LogarithmicShiftSum.exponential_sum_bound
+#print axioms PaperP1.LogarithmicShiftSum.correlation_identity
+#print axioms PaperP1.LogarithmicShiftSum.correlation_bound
 #print axioms PaperP1.MahlerCoefficientBounds.coefficientEnergy_nonneg
 #print axioms PaperP1.MahlerCoefficientBounds.l2CoefficientNorm_nonneg
 #print axioms PaperP1.MahlerCoefficientBounds.l2CoefficientNorm_sq

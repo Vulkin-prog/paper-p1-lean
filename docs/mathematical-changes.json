@@ -34420,6 +34420,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "7ddf49f0eee38a5a1c325d7aa6b05ccb1db682c9"
+    },
+    {
+      "id": "P1-MATH-0741",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The integral estimate alone does not control a finite correlation. Its discretization error and literal shifted indices must both be proved.",
+      "finding": "The literal logarithmic ratio phase has local variation at most |t|*h/A^2 on a positive unit interval. Integrating and summing these actual unit errors gives sum/integral discrepancy <=|t|*h/N on every actual integer interval N<=M<=2N. The proved oscillatory integral bound therefore gives actual sum norm <=24*N^2/(|t|*h)+|t|*h/N when t!=0 and 0<h<=N. The exact finite correlation of the actual logarithmic sequence is identified with this shifted sum, and inherits that bound for every 1<=d<=N. Six theorems are proved without an oscillatory input.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual logarithmic shift sum and correlation bound with explicit discretization error. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.LogarithmicShiftSum.local_variation",
+        "PaperP1.LogarithmicShiftSum.unit_integral_error",
+        "PaperP1.LogarithmicShiftSum.sum_integral_error",
+        "PaperP1.LogarithmicShiftSum.exponential_sum_bound",
+        "PaperP1.LogarithmicShiftSum.correlation_identity",
+        "PaperP1.LogarithmicShiftSum.correlation_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18049 jobs); direct axiom audit passed for 18344 declarations using only propext, Classical.choice and Quot.sound; all 18481 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.19 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
