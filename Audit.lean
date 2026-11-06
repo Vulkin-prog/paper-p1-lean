@@ -3723,6 +3723,16 @@ import PaperP1
 #print axioms PaperP1.FiniteExponentialProducts.norm_quadratic_error_le
 #print axioms PaperP1.FiniteFibreSquareBudget.norm_sum_sq_le_card
 #print axioms PaperP1.FiniteFibreSquareBudget.aggregate_square_budget
+#print axioms PaperP1.FiniteGramLargeValues.complex_cauchy_square
+#print axioms PaperP1.FiniteGramLargeValues.gram_star
+#print axioms PaperP1.FiniteGramLargeValues.gram_norm_symm
+#print axioms PaperP1.FiniteGramLargeValues.square_expansion
+#print axioms PaperP1.FiniteGramLargeValues.synthesis_bound
+#print axioms PaperP1.FiniteGramLargeValues.dual_identity
+#print axioms PaperP1.FiniteGramLargeValues.analysis_bound
+#print axioms PaperP1.FiniteGramLargeValues.large_values_card
+#print axioms PaperP1.FiniteGramLargeValues.montgomery_analysis_bound
+#print axioms PaperP1.FiniteGramLargeValues.montgomery_large_values_card
 #print axioms PaperP1.FiniteLogarithmicPivotMass.band_cost
 #print axioms PaperP1.FiniteLogarithmicPivotMass.finite_mass
 #print axioms PaperP1.FiniteNegativeMass.extended_nat

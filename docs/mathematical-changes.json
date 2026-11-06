@@ -31822,6 +31822,44 @@
         "status": "not_integrated"
       },
       "validation_commit": "81d7eb75d68f469ecaec1a7b89afa0726301d43e"
+    },
+    {
+      "id": "P1-MATH-0672",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The basic sampling theorem did not retain an explicit correlation-sensitive finite Gram route to stronger large-value cardinality bounds; suppressing the diagonal or assuming frequency orthogonality would lose actual terms.",
+      "finding": "Exact finite synthesis/duality and Cauchy yield the actual Gram-row bound and the Montgomery cardinality form D*A/(V^2-M*A), with every diagonal, mixed term and positivity condition retained.",
+      "proposed_revision": "Use the proved finite Gram inequality and prove its actual logarithmic-phase correlation hypotheses separately. Keep the diagonal, coefficient energy and positive-denominator condition explicit; do not count an unproved Gram cap as an established frequency estimate.",
+      "impact": "Proves finite correlation-sensitive large-value algebra and duality. Actual Dirichlet correlation estimates and the full T19.17 logarithmic short-average input remain unfinished.",
+      "evidence": [
+        "PaperP1.FiniteGramLargeValues.complex_cauchy_square",
+        "PaperP1.FiniteGramLargeValues.gram_star",
+        "PaperP1.FiniteGramLargeValues.gram_norm_symm",
+        "PaperP1.FiniteGramLargeValues.square_expansion",
+        "PaperP1.FiniteGramLargeValues.synthesis_bound",
+        "PaperP1.FiniteGramLargeValues.dual_identity",
+        "PaperP1.FiniteGramLargeValues.analysis_bound",
+        "PaperP1.FiniteGramLargeValues.large_values_card",
+        "PaperP1.FiniteGramLargeValues.montgomery_analysis_bound",
+        "PaperP1.FiniteGramLargeValues.montgomery_large_values_card",
+        "PaperP1.FiniteGramLargeValues.gram",
+        "PaperP1.FiniteGramLargeValues.evaluate"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17889 jobs); direct axiom audit passed for 17760 declarations using only propext, Classical.choice and Quot.sound; all 17752 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.44 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

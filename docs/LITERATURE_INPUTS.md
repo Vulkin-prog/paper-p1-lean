@@ -1,6 +1,17 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0671: the ACTUAL twisted Dirichlet
+Current checkpoint P1-MATH-0672: exact finite Gram synthesis,
+duality and correlation-sensitive large-value cardinality bounds
+are PROVED, retaining every diagonal and coefficient factor.
+Actual Gram row/off-diagonal caps are explicit hypotheses here;
+the required Dirichlet oscillatory correlation estimates remain
+UNPROVED. Main quotient frequency control and logarithmic
+short-average assembly remain unfinished. T19.17 conditional;
+T1.7 complete. Coverage: 164 proved, 1 conditional, 2 in_progress
+/167; all 73 main results proved. False scopes/corrections unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0671: the ACTUAL twisted Dirichlet
 Ramare quotient identity is EXACT, with its coupled product domain
 and every zero case retained. The actual difference from the
 original polynomial has UNIFORM negligible frequency L2 norm for
@@ -30534,6 +30545,15 @@ norm, retaining the coupled product domain. The main quotient
 estimate and logarithmic short-average assembly remain unfinished.
 T19.17 stays conditional; complete original T1.7 unconditional.
 
+## Internal finite Gram duality and large-value algebra
+
+P1-MATH-0672 proves exact finite synthesis and duality and the
+correlation-sensitive Montgomery cardinality inequality. Actual
+Gram row/diagonal/off-diagonal caps are explicit hypotheses, whose
+Dirichlet instances still require proof. No missing correlation cap
+or T19.17 estimate is claimed complete. Full logarithmic short-average
+assembly remains unfinished; original T1.7 is unconditional.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -32139,3 +32159,18 @@ The internal residual theorem now yields the actual approximation: for EVERY eps
 This closes the literal twisted quotient identification and uniform frequency L2 transport of the full Ramare remainder. Estimating the quotient polynomial itself, controlling the coupled domain, proving stronger real-multiplicative frequency estimates and assembling the logarithmic short-average decay remain unfinished. T19.17 retains its explicit analytic input. Original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.5 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17887 jobs); direct axiom audit passed for 17750 declarations using only propext, Classical.choice and Quot.sound; all 17740 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.46 GiB.
+
+
+## Exact finite Gram duality and correlation-sensitive Montgomery large-value bounds
+
+Stable ID: p1:internal:finite-gram-duality-large-values. Exact finite Gram duality and Montgomery large-value algebra are internal. Actual Dirichlet Gram correlations and their caps remain to be proved; T19.17 stays conditional.
+
+FiniteGramLargeValues defines the literal finite Gram matrix G(r,s)=sum_{n in S}psi_r(n)*conj(psi_s(n)) and the actual finite transform F(r)=sum_{n in S}a_n*psi_r(n). It proves the complex finite Cauchy square inequality, exact conjugate symmetry of G, norm symmetry, the full exact synthesis-square expansion and the exact dual identity. Every ordered pair and actual diagonal contribution is retained; no orthogonality assumption is made.
+
+For an explicitly asserted actual Gram row cap sum_s|G(r,s)|<=L, the internal finite symmetric-kernel inequality proves the synthesis bound, and exact duality plus Cauchy proves sum_r|F(r)|^2<=L*sum_n|a_n|^2 for L>=0. If every actual sample has |F(r)|>=V>0, its actual cardinality is at most L*sum_n|a_n|^2/V^2. These are checked finite algebraic/analytic theorems; the Gram matrix is actual, not an unrelated abstract oracle.
+
+A correlation-sensitive form separates the literal diagonal cap D>=0 and off-diagonal cap M>=0, both explicit hypotheses on the actual G. It proves sum_r|F(r)|^2 <=(D+|R|*M)*A for A=sum_n|a_n|^2. If V^2>M*A and all sample values are >=V, the actual cardinality satisfies |R|<=D*A/(V^2-M*A). Positivity of the denominator and all nonnegative factors are explicit. No diagonal, mixed term or coefficient cost is dropped. Empty sets and A=0 are handled. One module adds ten theorems and two definitions.
+
+This closes finite Gram duality and the correlation-sensitive large-value inequality itself. The actual logarithmic-phase Gram identity and the required oscillatory/correlation caps for the relevant Dirichlet polynomials remain to be proved. An implication from an explicit Gram cap is not counted as a proof of that cap or of T19.17. The main quotient frequency estimate, real-multiplicative bounds and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. False original scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.5 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17889 jobs); direct axiom audit passed for 17760 declarations using only propext, Classical.choice and Quot.sound; all 17752 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.44 GiB.

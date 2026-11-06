@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0671: the ACTUAL twisted Dirichlet
+Current checkpoint P1-MATH-0672: exact finite Gram synthesis,
+duality and correlation-sensitive large-value cardinality bounds
+are PROVED, retaining every diagonal and coefficient factor.
+Actual Gram row/off-diagonal caps are explicit hypotheses here;
+the required Dirichlet oscillatory correlation estimates remain
+UNPROVED. Main quotient frequency control and logarithmic
+short-average assembly remain unfinished. T19.17 conditional;
+T1.7 complete. Coverage: 164 proved, 1 conditional, 2 in_progress
+/167; all 73 main results proved. False scopes/corrections unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0671: the ACTUAL twisted Dirichlet
 Ramare quotient identity is EXACT, with its coupled product domain
 and every zero case retained. The actual difference from the
 original polynomial has UNIFORM negligible frequency L2 norm for
@@ -938,7 +949,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records669 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records670 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1057,7 +1068,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17750 audited theorem/lemma declarations**. This
+- The project currently has **17760 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30625,3 +30636,16 @@ The internal residual theorem now yields the actual approximation: for EVERY eps
 This closes the literal twisted quotient identification and uniform frequency L2 transport of the full Ramare remainder. Estimating the quotient polynomial itself, controlling the coupled domain, proving stronger real-multiplicative frequency estimates and assembling the logarithmic short-average decay remain unfinished. T19.17 retains its explicit analytic input. Original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.5 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17887 jobs); direct axiom audit passed for 17750 declarations using only propext, Classical.choice and Quot.sound; all 17740 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.46 GiB.
+
+
+## Exact finite Gram duality and correlation-sensitive Montgomery large-value bounds
+
+FiniteGramLargeValues defines the literal finite Gram matrix G(r,s)=sum_{n in S}psi_r(n)*conj(psi_s(n)) and the actual finite transform F(r)=sum_{n in S}a_n*psi_r(n). It proves the complex finite Cauchy square inequality, exact conjugate symmetry of G, norm symmetry, the full exact synthesis-square expansion and the exact dual identity. Every ordered pair and actual diagonal contribution is retained; no orthogonality assumption is made.
+
+For an explicitly asserted actual Gram row cap sum_s|G(r,s)|<=L, the internal finite symmetric-kernel inequality proves the synthesis bound, and exact duality plus Cauchy proves sum_r|F(r)|^2<=L*sum_n|a_n|^2 for L>=0. If every actual sample has |F(r)|>=V>0, its actual cardinality is at most L*sum_n|a_n|^2/V^2. These are checked finite algebraic/analytic theorems; the Gram matrix is actual, not an unrelated abstract oracle.
+
+A correlation-sensitive form separates the literal diagonal cap D>=0 and off-diagonal cap M>=0, both explicit hypotheses on the actual G. It proves sum_r|F(r)|^2 <=(D+|R|*M)*A for A=sum_n|a_n|^2. If V^2>M*A and all sample values are >=V, the actual cardinality satisfies |R|<=D*A/(V^2-M*A). Positivity of the denominator and all nonnegative factors are explicit. No diagonal, mixed term or coefficient cost is dropped. Empty sets and A=0 are handled. One module adds ten theorems and two definitions.
+
+This closes finite Gram duality and the correlation-sensitive large-value inequality itself. The actual logarithmic-phase Gram identity and the required oscillatory/correlation caps for the relevant Dirichlet polynomials remain to be proved. An implication from an explicit Gram cap is not counted as a proof of that cap or of T19.17. The main quotient frequency estimate, real-multiplicative bounds and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. False original scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.5 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17889 jobs); direct axiom audit passed for 17760 declarations using only propext, Classical.choice and Quot.sound; all 17752 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.44 GiB.
