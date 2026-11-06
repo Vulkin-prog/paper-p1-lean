@@ -1,6 +1,16 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0687: the ACTUAL TOTAL triple-convolution
+Current checkpoint P1-MATH-0688: ACTUAL translated weighted-prime
+means and attained local compact suprema give the actual weighted
+frequency-budget integral. The integer-centre unit cover is exact.
+The relevant FULL EULER BUDGET, analytic triple main term/Perron,
+full dyadic and short-average transfers remain UNPROVED.
+The total combinatorial triple approximation remains internal.
+T19.17 conditional; original T1.7 complete. Coverage: 164 proved,
+1 conditional, 2 in_progress /167; all 73 main proved. False scopes
+and checked corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0687: the ACTUAL TOTAL triple-convolution
 approximation has a uniform negligible error for every actual
 cutoff floor((log X)^A). First-convolution, prime-power, small/large
 prime edges, real denominators and quotient floors are internal.
@@ -23399,3 +23409,18 @@ For EVERY natural exponent A it uses the ACTUAL integer cutoff floor((log X)^A).
 This closes the total combinatorial triple-convolution approximation with a uniform negligible error, including all edge ranges. It does NOT estimate the actual triple main term analytically. The actual Perron estimate, full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. Complete multiplicativity stays explicit; no merely multiplicative extension or full prime-power weighted mean is claimed. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.2 GiB free; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17941 jobs); direct axiom audit passed for 17940 declarations using only propext, Classical.choice and Quot.sound; all 17978 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.15 GiB.
+
+
+## Translated prime means and actual local-square frequency budgets
+
+PrimeUnitMean proves exact addition in the TIME variable of the actual logarithmic phase. It defines the actual translated coefficients a(p)*phase(-log(p),h), proves the exact polynomial translation identity and preserves the exact coefficient energy sum log(p)/p*|a(p)|^2. Thus the internal weighted-prime mean holds on EVERY interval [h-T,h+T], with the same constant, uniformly in arbitrary h, T>=1 and actual primes p>=T^2. Every actual prime set has the corresponding unit-interval bound, with no frequency-range or translation premise.
+
+For ANY continuous complex function F it defines the ACTUAL localSquareSup(F,h) as the supremum of |F(t)|^2 on the literal compact interval [h-1/2,h+1/2]. Compactness proves that this supremum is attained, nonnegative and bounds every actual value on that interval. No supplied maximum or abstract envelope stands in for the function.
+
+The exact inverse-weight comparison 1/(1+t^2)<=2/(1+h^2) on each unit interval gives an ACTUAL weighted-prime integral bound using that localSquareSup. The module defines frequencyBudget(F,K) as the literal sum of localSquareSup(F,j-K)/(1+(j-K)^2), j=0,...,2K. This is an actual finite sequence of integer centres -K,...,K. Exact adjacent-interval integrals prove that the unit intervals cover [-K-1/2,K+1/2] without a missing boundary or assumed cover.
+
+Consequently, for every 0<T<=K+1/2, every finite actual prime set P and arbitrary complex coefficients a, the ACTUAL integral over [-T,T] of |weightedPrimeValue(P,a,t)|^2*|F(t)|^2/(1+t^2) is <=2*C*energy(P,a)*frequencyBudget(F,K), with the internally proved universal prime-mean constant C. Both energy and frequencyBudget are nonnegative. All integrability, local extrema and finite index sums are checked. One module adds fourteen theorems and four definitions.
+
+This closes translated prime means and the actual local-square budget estimate used in the analytic triple argument. It does NOT yet bound that budget for the full relevant Euler product or prove the actual Perron estimate or triple main-term bound. Full dyadic Halasz and logarithmic short-average assembly remain unfinished. The earlier total combinatorial triple approximation is unchanged. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.1 GiB free; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17943 jobs); direct axiom audit passed for 17954 declarations using only propext, Classical.choice and Quot.sound; all 17996 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.14 GiB.

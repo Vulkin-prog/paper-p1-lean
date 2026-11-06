@@ -32492,6 +32492,50 @@
         "status": "not_integrated"
       },
       "validation_commit": "feb70d3f7b5bafd11524cce44e4e4ad8e3565d2d"
+    },
+    {
+      "id": "P1-MATH-0688",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A centred prime mean does not immediately estimate arbitrary translated unit intervals or the actual weighted local supremum budget in the analytic triple argument. Maxima, covers and weights must be defined and checked.",
+      "finding": "Exact translated coefficients preserve energy. Actual compact suprema and a checked adjacent-unit cover give the weighted integral <=2*C*energy*frequencyBudget for every continuous actual factor F.",
+      "proposed_revision": "Use these actual translated means and attained local suprema in the analytic Cauchy-Schwarz and Perron argument. Prove the relevant full Euler budget rather than supplying an envelope as an implicit input.",
+      "impact": "Closes translated prime means and the actual local-square weighted integral. Full Euler budget, Perron/triple main term and T19.17 assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.PrimeUnitMean.phase_time_add",
+        "PaperP1.PrimeUnitMean.value_add",
+        "PaperP1.PrimeUnitMean.energy_shifted",
+        "PaperP1.PrimeUnitMean.shifted_mean",
+        "PaperP1.PrimeUnitMean.unit_mean",
+        "PaperP1.PrimeUnitMean.local_sup_attained",
+        "PaperP1.PrimeUnitMean.local_sup_nonneg",
+        "PaperP1.PrimeUnitMean.norm_sq_le_local_sup",
+        "PaperP1.PrimeUnitMean.energy_nonneg",
+        "PaperP1.PrimeUnitMean.inverse_weight_comparison",
+        "PaperP1.PrimeUnitMean.unit_weighted_mean",
+        "PaperP1.PrimeUnitMean.unit_integrals_cover",
+        "PaperP1.PrimeUnitMean.frequency_budget_mean",
+        "PaperP1.PrimeUnitMean.frequency_budget_nonneg",
+        "PaperP1.PrimeUnitMean.shifted",
+        "PaperP1.PrimeUnitMean.energy",
+        "PaperP1.PrimeUnitMean.localSquareSup",
+        "PaperP1.PrimeUnitMean.frequencyBudget"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17943 jobs); direct axiom audit passed for 17954 declarations using only propext, Classical.choice and Quot.sound; all 17996 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.14 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

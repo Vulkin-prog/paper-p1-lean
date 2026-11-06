@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0687: the ACTUAL TOTAL triple-convolution
+Current checkpoint P1-MATH-0688: ACTUAL translated weighted-prime
+means and attained local compact suprema give the actual weighted
+frequency-budget integral. The integer-centre unit cover is exact.
+The relevant FULL EULER BUDGET, analytic triple main term/Perron,
+full dyadic and short-average transfers remain UNPROVED.
+The total combinatorial triple approximation remains internal.
+T19.17 conditional; original T1.7 complete. Coverage: 164 proved,
+1 conditional, 2 in_progress /167; all 73 main proved. False scopes
+and checked corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0687: the ACTUAL TOTAL triple-convolution
 approximation has a uniform negligible error for every actual
 cutoff floor((log X)^A). First-convolution, prime-power, small/large
 prime edges, real denominators and quotient floors are internal.
@@ -1103,7 +1113,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records685 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records686 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1222,7 +1232,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17940 audited theorem/lemma declarations**. This
+- The project currently has **17954 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31014,3 +31024,18 @@ For EVERY natural exponent A it uses the ACTUAL integer cutoff floor((log X)^A).
 This closes the total combinatorial triple-convolution approximation with a uniform negligible error, including all edge ranges. It does NOT estimate the actual triple main term analytically. The actual Perron estimate, full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. Complete multiplicativity stays explicit; no merely multiplicative extension or full prime-power weighted mean is claimed. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.2 GiB free; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17941 jobs); direct axiom audit passed for 17940 declarations using only propext, Classical.choice and Quot.sound; all 17978 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.15 GiB.
+
+
+## Translated prime means and actual local-square frequency budgets
+
+PrimeUnitMean proves exact addition in the TIME variable of the actual logarithmic phase. It defines the actual translated coefficients a(p)*phase(-log(p),h), proves the exact polynomial translation identity and preserves the exact coefficient energy sum log(p)/p*|a(p)|^2. Thus the internal weighted-prime mean holds on EVERY interval [h-T,h+T], with the same constant, uniformly in arbitrary h, T>=1 and actual primes p>=T^2. Every actual prime set has the corresponding unit-interval bound, with no frequency-range or translation premise.
+
+For ANY continuous complex function F it defines the ACTUAL localSquareSup(F,h) as the supremum of |F(t)|^2 on the literal compact interval [h-1/2,h+1/2]. Compactness proves that this supremum is attained, nonnegative and bounds every actual value on that interval. No supplied maximum or abstract envelope stands in for the function.
+
+The exact inverse-weight comparison 1/(1+t^2)<=2/(1+h^2) on each unit interval gives an ACTUAL weighted-prime integral bound using that localSquareSup. The module defines frequencyBudget(F,K) as the literal sum of localSquareSup(F,j-K)/(1+(j-K)^2), j=0,...,2K. This is an actual finite sequence of integer centres -K,...,K. Exact adjacent-interval integrals prove that the unit intervals cover [-K-1/2,K+1/2] without a missing boundary or assumed cover.
+
+Consequently, for every 0<T<=K+1/2, every finite actual prime set P and arbitrary complex coefficients a, the ACTUAL integral over [-T,T] of |weightedPrimeValue(P,a,t)|^2*|F(t)|^2/(1+t^2) is <=2*C*energy(P,a)*frequencyBudget(F,K), with the internally proved universal prime-mean constant C. Both energy and frequencyBudget are nonnegative. All integrability, local extrema and finite index sums are checked. One module adds fourteen theorems and four definitions.
+
+This closes translated prime means and the actual local-square budget estimate used in the analytic triple argument. It does NOT yet bound that budget for the full relevant Euler product or prove the actual Perron estimate or triple main-term bound. Full dyadic Halasz and logarithmic short-average assembly remain unfinished. The earlier total combinatorial triple approximation is unchanged. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.1 GiB free; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17943 jobs); direct axiom audit passed for 17954 declarations using only propext, Classical.choice and Quot.sound; all 17996 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.14 GiB.
