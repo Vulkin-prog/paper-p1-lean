@@ -4194,6 +4194,16 @@ import PaperP1
 #print axioms PaperP1.LogarithmicPhase.gaussian_integral
 #print axioms PaperP1.LogarithmicScaleCover.interval_cover
 #print axioms PaperP1.LogarithmicScaleCover.exponential_cover
+#print axioms PaperP1.LogarithmicShiftPhase.phase_identity
+#print axioms PaperP1.LogarithmicShiftPhase.function_norm
+#print axioms PaperP1.LogarithmicShiftPhase.hasDerivAt_function
+#print axioms PaperP1.LogarithmicShiftPhase.derivative_norm
+#print axioms PaperP1.LogarithmicShiftPhase.denominator_ne
+#print axioms PaperP1.LogarithmicShiftPhase.denominator_norm
+#print axioms PaperP1.LogarithmicShiftPhase.hasDerivAt_amplitude
+#print axioms PaperP1.LogarithmicShiftPhase.amplitude_norm
+#print axioms PaperP1.LogarithmicShiftPhase.amplitudeDeriv_norm
+#print axioms PaperP1.LogarithmicShiftPhase.derivative_amplitude_cancel
 #print axioms PaperP1.MahlerCoefficientBounds.coefficientEnergy_nonneg
 #print axioms PaperP1.MahlerCoefficientBounds.l2CoefficientNorm_nonneg
 #print axioms PaperP1.MahlerCoefficientBounds.l2CoefficientNorm_sq
