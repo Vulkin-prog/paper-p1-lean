@@ -1,6 +1,16 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0692: the ACTUAL FINITE Gaussian Perron
+Current checkpoint P1-MATH-0693: ACTUAL integer logarithmic bins
+and Gaussian sums, including log(n)^2 weights and the lattice +1,
+are bounded uniformly with NO upper-support cutoff. Width=1/log(X)^8
+gives ONE threshold before ALL finite positive supports for a
+negligible normalized Gaussian error. Triple coefficient assembly,
+FULL EULER/TRIPLE transfer and final short-average assembly remain
+UNPROVED. T19.17 conditional; original T1.7 complete. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved.
+False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0692: the ACTUAL FINITE Gaussian Perron
 identity and literal sharp-cutoff error are proved. Arbitrary finite
 complex coefficients, positive integer levels, repetitions and the
 equality boundary are retained. Aggregate integer Gaussian/fibre
@@ -23516,3 +23526,18 @@ The module proves that step(log(X/n(i))) is EXACTLY the indicator n(i)<=X, inclu
 This closes the exact finite Gaussian Perron formula and its literal coefficient-wise cutoff error. A uniform aggregate Gaussian integer bound, actual triple coefficient-fibre control, passage to the full relevant Euler series and the resulting triple main-term estimate remain unfinished. The full Euler frequency budget, final Halasz and logarithmic short-average assembly remain unfinished. Earlier total combinatorial triple and analytic band-factor estimates remain proved. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.1 GiB free; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17951 jobs); direct axiom audit passed for 18002 declarations using only propext, Classical.choice and Quot.sound; all 18059 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.07 GiB.
+
+
+## Uniform actual integer Gaussian sums with quadratic logarithmic weights
+
+LogarithmicGaussianSum proves an actual natural-integer count <=b-a+1 in every real interval [a,b], by the already checked integer interval count and an injective natural-to-integer map. The exact exponential interval count and the two signs of log(n/X) give: if j*delta<=|log(n/X)|<=(j+1)*delta, then the ACTUAL finite integer population is <=4*delta*X*exp((j+1)*delta)+2, for X>0 and 0<delta<=1. No interval density or assumed lattice error is supplied.
+
+It defines the actual logarithmic bin floor(|log(n/X)|/delta) and logGaussian(X,delta,n)=exp(-log(n/X)^2/(32*delta^2)). Exact finite fibre sums, the proved bin counts, the inequality exp((j+1)*delta)*exp(-j^2/32)<=exp(17)*exp(-j^2/64), and the internal Gaussian integer-row sum prove the ACTUAL bound sum_{n in S}logGaussian<=C*(delta*X+1). The explicit positive universal C=(4*exp(17)+2)*(1+sqrt(pi/(1/64))) works for EVERY finite set of positive integers S, with NO upper cutoff on S. The +1 retains the actual lattice/end-point contribution.
+
+A proved quadratic Gaussian absorption controls u^2*exp(-u^2/(32*delta^2)). Consequently the ACTUAL weighted sum of log(n)^2*logGaussian is <=512*C*(log(X)^2+1)*(delta*X+1), for 0<delta<=1/2. The exact reciprocal-log square identity supplies the SAME bound with log(X/n), exactly the Gaussian error in the finite Perron formula. Every finite bin, positive integer, real interval, reciprocal and Gaussian comparison is internal.
+
+The ACTUAL width(X)=1/log(X)^8 is positive for X>=2 and tends to zero. The normalized scaledBound=512*C*(log(X)^2+1)*(width(X)+1/X) tends to zero, using only checked logarithmic-power limits. Thus for EVERY epsilon>0, ONE X0>=2 works BEFORE ALL X>=X0 and ALL finite positive-integer sets S: the actual reciprocal-log Gaussian sum weighted by log(n)^2 is <=epsilon*X. One module adds twenty-one theorems and five definitions.
+
+This closes the uniform aggregate integer Gaussian error, with the quadratic logarithmic weight and no upper-support cutoff. Actual triple coefficient-fibre assembly, passage to the full relevant Euler series and the resulting triple main-term estimate remain unfinished. The full Euler frequency budget, final Halasz and logarithmic short-average assembly remain unfinished. Earlier finite Gaussian Perron, total combinatorial triple and analytic band estimates remain proved. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.0 GiB free; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17953 jobs); direct axiom audit passed for 18023 declarations using only propext, Classical.choice and Quot.sound; all 18085 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.05 GiB.

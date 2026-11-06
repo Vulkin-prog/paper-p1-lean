@@ -32708,6 +32708,58 @@
         "status": "not_integrated"
       },
       "validation_commit": "041d035b4f570bd7ab6c4fa56ddd97977e3c8688"
+    },
+    {
+      "id": "P1-MATH-0693",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The finite Gaussian Perron error still contained an unbounded actual sum over integer levels. An estimate depending on the largest level would not permit a uniform full-Euler truncation limit.",
+      "finding": "Actual real-interval counts and logarithmic bins give a universal Gaussian integer bound, including the log(n)^2 weight, independent of the largest level. With width=1/log(X)^8 one cutoff works before every finite positive-integer support for a negligible normalized Gaussian error.",
+      "proposed_revision": "Use these actual uniform integer bounds after controlling the literal triple coefficient fibres. Then justify the full Euler truncation limit and analytic triple connection without an assumed aggregate error.",
+      "impact": "Closes the actual aggregate logarithmic Gaussian integer error uniformly in every finite support. Triple coefficient assembly, full Euler/Perron transfer and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.LogarithmicGaussianSum.natural_interval_card",
+        "PaperP1.LogarithmicGaussianSum.small_exp_bound",
+        "PaperP1.LogarithmicGaussianSum.exp_interval_card",
+        "PaperP1.LogarithmicGaussianSum.exp_log_quotient",
+        "PaperP1.LogarithmicGaussianSum.log_annulus_card",
+        "PaperP1.LogarithmicGaussianSum.bin_bounds",
+        "PaperP1.LogarithmicGaussianSum.bin_card",
+        "PaperP1.LogarithmicGaussianSum.logGaussian_bin_bound",
+        "PaperP1.LogarithmicGaussianSum.growth_gaussian_bound",
+        "PaperP1.LogarithmicGaussianSum.gaussian_bin_monotone",
+        "PaperP1.LogarithmicGaussianSum.finite_logGaussian_sum",
+        "PaperP1.LogarithmicGaussianSum.constant_pos",
+        "PaperP1.LogarithmicGaussianSum.quadratic_gaussian_absorption",
+        "PaperP1.LogarithmicGaussianSum.logGaussian_weighted_point",
+        "PaperP1.LogarithmicGaussianSum.finite_weighted_logGaussian_sum",
+        "PaperP1.LogarithmicGaussianSum.reciprocal_log_sq",
+        "PaperP1.LogarithmicGaussianSum.finite_reciprocal_weighted_sum",
+        "PaperP1.LogarithmicGaussianSum.width_positive",
+        "PaperP1.LogarithmicGaussianSum.scaledBound_tendsto",
+        "PaperP1.LogarithmicGaussianSum.integer_gaussian_small_uniform",
+        "PaperP1.LogarithmicGaussianSum.width_tendsto",
+        "PaperP1.LogarithmicGaussianSum.bin",
+        "PaperP1.LogarithmicGaussianSum.logGaussian",
+        "PaperP1.LogarithmicGaussianSum.constant",
+        "PaperP1.LogarithmicGaussianSum.width",
+        "PaperP1.LogarithmicGaussianSum.scaledBound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17953 jobs); direct axiom audit passed for 18023 declarations using only propext, Classical.choice and Quot.sound; all 18085 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.05 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
