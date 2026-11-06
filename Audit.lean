@@ -7680,6 +7680,16 @@ import PaperP1
 #print axioms PaperP1.SplitProductBound.base_le_height_of_nonzero
 #print axioms PaperP1.SplitProductBound.uniform_split_product
 #print axioms PaperP1.SplitProductBound.uniform_split_product_real_radius
+#print axioms PaperP1.SplitProductCharacterEstimate.uniform_absolute
+#print axioms PaperP1.SplitProductInversion.linear_degree
+#print axioms PaperP1.SplitProductInversion.inverted_factor_degree
+#print axioms PaperP1.SplitProductInversion.inverted_degree
+#print axioms PaperP1.SplitProductInversion.factor_inversion
+#print axioms PaperP1.SplitProductInversion.evaluation_inversion
+#print axioms PaperP1.SplitProductInversion.inverted_zero
+#print axioms PaperP1.SplitProductInversion.linear_root
+#print axioms PaperP1.SplitProductInversion.character_inversion
+#print axioms PaperP1.SplitProductInversion.character_sum_inversion
 #print axioms PaperP1.SplitRadicalFiniteFieldPointCount.mem_points_iff
 #print axioms PaperP1.SplitRadicalFiniteFieldPointCount.product_linearValue
 #print axioms PaperP1.SplitRadicalFiniteFieldPointCount.character_sum_union

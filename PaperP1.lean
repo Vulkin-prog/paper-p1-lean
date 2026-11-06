@@ -4519,3 +4519,5 @@ public import PaperP1.Algebra.HyperellipticAuxiliaryDimensionGap
 public import PaperP1.Analysis.HyperellipticAuxiliaryParameters
 public import PaperP1.Arithmetic.HyperellipticOddDegreePointEstimate
 public import PaperP1.Arithmetic.HyperellipticOddDegreeCharacterEstimate
+public import PaperP1.Arithmetic.SplitProductCharacterEstimate
+public import PaperP1.Arithmetic.SplitProductInversion

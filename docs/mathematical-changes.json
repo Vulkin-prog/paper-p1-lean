@@ -30213,6 +30213,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "16bea4bb22836b0fa7a1a30b29b1d7e42438df4f"
+    },
+    {
+      "id": "P1-MATH-0631",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Absolute character cancellation was proved only for odd-degree polynomials, leaving even-degree products of distinct linear factors untreated.",
+      "finding": "An actual inversion bijection gives the exact sum correction -1 and reduces every nonempty even split product to odd degree. This proves unconditional cancellation for every nonempty bounded split product, uniformly before all primes and field shifts.",
+      "proposed_revision": "Use the all-parity split-product relative cancellation theorem for the actual distinct reduced branches. Include its exact inversion correction and retain the threshold before coefficients and branch positions.",
+      "impact": "Discharges the internal even-degree and all-parity split-product cancellation gap. Certificate assembly and source counts remain to be assembled; projected-surface transfer and canonical manuscript coverage do not change.",
+      "evidence": [
+        "PaperP1.SplitProductCharacterEstimate.uniform_absolute",
+        "PaperP1.SplitProductInversion.linear_degree",
+        "PaperP1.SplitProductInversion.inverted_factor_degree",
+        "PaperP1.SplitProductInversion.inverted_degree",
+        "PaperP1.SplitProductInversion.factor_inversion",
+        "PaperP1.SplitProductInversion.evaluation_inversion",
+        "PaperP1.SplitProductInversion.inverted_zero",
+        "PaperP1.SplitProductInversion.linear_root",
+        "PaperP1.SplitProductInversion.character_inversion",
+        "PaperP1.SplitProductInversion.character_sum_inversion",
+        "PaperP1.SplitProductInversion.linearProduct",
+        "PaperP1.SplitProductInversion.invertedProduct",
+        "PaperP1.SplitProductInversion.inversionEquiv"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17725 jobs); direct axiom audit passed for 17365 declarations using only propext, Classical.choice and Quot.sound; all 17251 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.22 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

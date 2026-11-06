@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0630: absolute relative character cancellation
+Current checkpoint P1-MATH-0631: absolute relative character cancellation
+is UNCONDITIONAL for EVERY nonempty bounded split product, in BOTH parities.
+The actual root-inversion bijection gives the exact missing-point term -1.
+One prime cutoff precedes all primes and field shifts. Integer-certificate
+assembly and the full source count still need assembly. The source-to-P3
+transfer and general plane/surface estimates remain UNPROVED. Canonical
+T1.7 retains ONLY its prior P3 input in degrees>2 at the original families
+and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of
+167; all 73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0630: absolute relative character cancellation
 is UNCONDITIONAL for EVERY odd-degree polynomial of bounded degree over
 sufficiently large prime fields. The cutoff precedes all primes and all
 coefficients. Nonsquare scalar twists and both literal point estimates
@@ -457,7 +467,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records628 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records629 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -576,7 +586,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17355 audited theorem/lemma declarations**. This
+- The project currently has **17365 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29639,3 +29649,14 @@ HyperellipticOddDegreeCharacterEstimate proves the exact character-sum identity 
 One module adds two theorems and no definitions. The odd-degree absolute character-cancellation gap is discharged with no external Weil bound, no squarefreeness premise and no desired cancellation input. This is a weak relative-error estimate, not a square-root error. Even-degree split products, their exact inversion identity and the source-to-projected-P3 transfer remain unproved. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7, retaining ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same three original families/caps. Neither general plane input is discharged. Coverage remains163 proved,2 conditional,2 in_progress out of167; all73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms remain unchanged. Work stays on Ubuntu with about55.2GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17721 jobs); direct axiom audit passed for 17355 declarations using only propext, Classical.choice and Quot.sound; all 17238 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.24 GiB.
+
+
+## Exact root inversion and unconditional cancellation for all bounded split products
+
+SplitProductInversion constructs the literal bijection t=(x+a)^(-1) from the field with x=-a removed to the field with t=0 removed. For a finite set S of distinct field shifts and a in S it proves the actual polynomial identity f(x)*t^card(S)=g(t), where f is the monic product of X+b over S and g is the product of 1+(b-a)*X over S with a removed. The original degree is card(S), the inverted degree is card(S)-1, f(-a)=0 and g(0)=1. When card(S) is even, the character of t^card(S) equals 1 away from zero. The actual finite sums therefore satisfy sum chi(f)=sum chi(g)-1, including the exact missing-point contribution.
+
+SplitProductCharacterEstimate combines the odd-degree internal cancellation theorem with this inversion identity. For every degree cap D and eta>0, one prime cutoff is chosen BEFORE all primes and all nonempty finite sets of field shifts. Every split product with at most D distinct factors has absolute character sum at most eta*p above this cutoff. Both parities are covered, and the additive 1 is absorbed by an explicit large-prime threshold. No cancellation theorem, point bound, squarefreeness conclusion or target estimate is assumed as a premise.
+
+Two modules add ten theorems and three definitions. The internal all-parity split-product cancellation gap is discharged. The passage to integer branch shifts via the actual reduction certificate and the complete source point count still need assembly; source-to-projected-P3 transfer and general plane/surface bounds remain unproved. Canonical T1.7 is unchanged: UniformGeometricCountsFieldEstimateInput.companion_T1_7 retains ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167, with all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.2 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17725 jobs); direct axiom audit passed for 17365 declarations using only propext, Classical.choice and Quot.sound; all 17251 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.22 GiB.
