@@ -3749,6 +3749,9 @@ import PaperP1
 #print axioms PaperP1.DeterminantWeightMargin.additive_margin
 #print axioms PaperP1.DeterminantWeightMargin.multiplicative_margin
 #print axioms PaperP1.DeterminantWeightMargin.exists_fixed_errors
+#print axioms PaperP1.DilatedFarLognormalKernel.decay_pos
+#print axioms PaperP1.DilatedFarLognormalKernel.decay_le_quarter
+#print axioms PaperP1.DilatedFarLognormalKernel.uniform_bound
 #print axioms PaperP1.DirichletGramLargeValues.phase_time_difference
 #print axioms PaperP1.DirichletGramLargeValues.gram_identity
 #print axioms PaperP1.DirichletGramLargeValues.diagonal_norm
