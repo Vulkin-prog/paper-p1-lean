@@ -3667,6 +3667,17 @@ import PaperP1
 #print axioms PaperP1.ElementaryReciprocalPivotUpper.dyadic_logarithmic_upper
 #print axioms PaperP1.ElementaryReciprocalPrimeLower.fixed_order
 #print axioms PaperP1.ElementaryReciprocalPrimeLower.uniform_lower
+#print axioms PaperP1.EulerIntegralLimit.primeMass_nonneg
+#print axioms PaperP1.EulerIntegralLimit.prime_norm_bound
+#print axioms PaperP1.EulerIntegralLimit.weight_nonneg
+#print axioms PaperP1.EulerIntegralLimit.sqrt_denominator_one
+#print axioms PaperP1.EulerIntegralLimit.weight_bound
+#print axioms PaperP1.EulerIntegralLimit.weight_continuous
+#print axioms PaperP1.EulerIntegralLimit.weight_integrable
+#print axioms PaperP1.EulerIntegralLimit.weighted_norm_integrable
+#print axioms PaperP1.EulerIntegralLimit.truncated_integrable
+#print axioms PaperP1.EulerIntegralLimit.total_integrable
+#print axioms PaperP1.EulerIntegralLimit.integral_truncation_tendsto
 #print axioms PaperP1.ExceptionalSquareIntegral.square_integral_budget
 #print axioms PaperP1.ExceptionalSurfaceClassBudget.class_budget
 #print axioms PaperP1.ExplicitSaddleVariation.log_difference_bound

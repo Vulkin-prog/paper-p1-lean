@@ -1,6 +1,16 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0697: the ACTUAL sharp triple sum
+Current checkpoint P1-MATH-0698: the ACTUAL full finite-prime
+series passes through the WHOLE Gaussian frequency integral.
+Literal prime coefficient masses and the actual reciprocal series
+majorant give uniform integrable domination; pointwise convergence
+is internal. Final full-Euler triple assembly, full frequency
+budget and logarithmic short-average estimate remain unfinished.
+T19.17 conditional; original T1.7 complete. Coverage: 164 proved,
+1 conditional, 2 in_progress /167; all 73 main proved.
+False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0697: the ACTUAL sharp triple sum
 equals the literal triple convolution EXACTLY. Positive integer
 filters give the quotient endpoints, and the completed q prime
 band covers every required prime; extra primes contribute zero.
@@ -31055,6 +31065,17 @@ terms have zero quotient. Repeated primes and integer endpoints
 are retained. Whole Euler integral transfer and final short-average
 assembly remain unfinished. T19.17 conditional; original T1.7 unconditional.
 
+## Internal whole-frequency Euler series limit
+
+P1-MATH-0698 bounds the actual two-prime Gaussian frequency weight
+by explicit finite coefficient masses times an integrable Gaussian.
+The actual reciprocal series majorant dominates the full series
+and every literal integer truncation. Pointwise polynomial convergence
+and standard dominated convergence give the whole-line integral
+limit. Final full-Euler triple assembly, frequency budget and
+short-average estimate remain unfinished. T19.17 conditional;
+original T1.7 unconditional.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -33074,3 +33095,18 @@ The ACTUAL bandPrimes(X,U) consists of all primes q<=X with log(q)<=2*U. Wheneve
 This closes the literal sharp-triple identification, including the natural quotient boundary and completion of the q prime band. Passage of the full Euler series through the whole frequency integral, the full Euler frequency budget and final short-average assembly remain unfinished. T19.17 remains conditional, original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms remain unchanged. Ubuntu has about 54.0 GiB free; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17961 jobs); direct axiom audit passed for 18058 declarations using only propext, Classical.choice and Quot.sound; all 18130 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.97 GiB.
+
+
+## Actual full Euler series limit through the whole Gaussian frequency integral
+
+Stable ID: p1:internal:whole-frequency-euler-integral-limit. Actual prime coefficient masses give an integrable whole-frequency Gaussian majorant. The literal full-series integral is the limit of actual integer-truncation integrals. Final analytic assembly remains unfinished.
+
+EulerIntegralLimit proves a literal finite prime-polynomial norm bound by its actual coefficient mass sum(log(p)/p)*|a(p)|. The Gaussian frequency weight is the product of the two actual prime-factor norms times exp(-b*t^2)/sqrt(1+t^2). It is nonnegative, continuous, and bounded by the product of the two literal coefficient masses times the Gaussian, since sqrt(1+t^2)>=1.
+
+For EVERY b>0 this actual weight is integrable on the WHOLE real frequency line. Multiplication by the norm of any continuous globally bounded complex function is integrable by the same explicit domination. In particular, the full finite-prime series and all of its actual integer truncations give integrable weighted norms, using the internal reciprocal majorant and continuity.
+
+The actual integer polynomials tend pointwise to the literal full finite-prime series. Their weighted norms are dominated by majorant(E) times the same actual integrable weight, uniformly in the truncation Y. The standard dominated convergence theorem therefore proves convergence of the WHOLE real-frequency integrals to the actual full-series integral. No finite frequency cutoff or assumed Euler/Perron convergence is supplied. The finite prime set E is fixed during this limit, exactly as needed for each fixed X. Eleven theorems and two definitions are added in one module.
+
+This closes the actual full-series limit through the whole Gaussian frequency integral. Final assembly of the actual triple inequality with the full Euler factor, the full Euler frequency budget, and the final Halasz/short-average estimate remain unfinished. T19.17 remains conditional; original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. About 54.0 GiB is free on Ubuntu; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17963 jobs); direct axiom audit passed for 18069 declarations using only propext, Classical.choice and Quot.sound; all 18143 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.95 GiB.

@@ -32914,6 +32914,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "abbaafb4f850636e6b62a37889c7477352abfb99"
+    },
+    {
+      "id": "P1-MATH-0698",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Pointwise or uniform convergence of the finite integer factor alone did not justify passage through the whole real-frequency integral. An actual integrable majorant was still required.",
+      "finding": "The two literal prime factors have explicit global finite coefficient masses. Their Gaussian weight is integrable, and the actual reciprocal series majorant dominates every integer truncation. Dominated convergence gives the full whole-line integral limit.",
+      "proposed_revision": "Use the actual whole-line integral limit when assembling the full Euler triple estimate. Keep the prime set fixed during this internal limit; no growing-prime-set uniform convergence is needed.",
+      "impact": "Closes passage from literal finite integer factors to the full finite-prime series through the whole Gaussian frequency integral. Final triple assembly, frequency budget and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.EulerIntegralLimit.primeMass_nonneg",
+        "PaperP1.EulerIntegralLimit.prime_norm_bound",
+        "PaperP1.EulerIntegralLimit.weight_nonneg",
+        "PaperP1.EulerIntegralLimit.sqrt_denominator_one",
+        "PaperP1.EulerIntegralLimit.weight_bound",
+        "PaperP1.EulerIntegralLimit.weight_continuous",
+        "PaperP1.EulerIntegralLimit.weight_integrable",
+        "PaperP1.EulerIntegralLimit.weighted_norm_integrable",
+        "PaperP1.EulerIntegralLimit.truncated_integrable",
+        "PaperP1.EulerIntegralLimit.total_integrable",
+        "PaperP1.EulerIntegralLimit.integral_truncation_tendsto",
+        "PaperP1.EulerIntegralLimit.primeMass",
+        "PaperP1.EulerIntegralLimit.weight"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17963 jobs); direct axiom audit passed for 18069 declarations using only propext, Classical.choice and Quot.sound; all 18143 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.95 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
