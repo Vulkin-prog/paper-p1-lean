@@ -31034,6 +31034,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "2475c4567975938faf2565b41dbac33797045593"
+    },
+    {
+      "id": "P1-MATH-0652",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The monic homogeneous equation and its actual two-parameter affine polynomial still needed exact polynomial transport, coefficient bounds and literal source-evaluation compatibility.",
+      "finding": "The literal affine P3 polynomial is exactly coefficient specialization of the original first-variable presentation. Monicity, full primitive degree, irreducibility, bounded coefficient degrees and every actual source evaluation are proved for this same polynomial.",
+      "proposed_revision": "Use this exact affine polynomial after normalizing the original integer model. Extract its actual leading integer coefficient and keep the corresponding effective prime exclusion explicit.",
+      "impact": "Discharges exact P3 chart presentation and all required affine polynomial properties from the homogeneous monic equation. Original integer-model leading-coefficient normalization and effective arithmetic assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.MonicP3LastChart.finSucc_C",
+        "PaperP1.MonicP3LastChart.dehom_C",
+        "PaperP1.MonicP3LastChart.dehom_X_cast",
+        "PaperP1.MonicP3LastChart.dehom_X_last",
+        "PaperP1.MonicP3LastChart.finSucc_map",
+        "PaperP1.MonicP3LastChart.factor",
+        "PaperP1.MonicP3LastChart.monic",
+        "PaperP1.MonicP3LastChart.natDegree",
+        "PaperP1.MonicP3LastChart.irreducible",
+        "PaperP1.MonicP3LastChart.coefficient_degree",
+        "PaperP1.MonicP3LastChart.chart_C",
+        "PaperP1.MonicP3LastChart.chart_variables",
+        "PaperP1.MonicP3LastChart.evaluation",
+        "PaperP1.MonicP3LastChart.chart"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17795 jobs); direct axiom audit passed for 17552 declarations using only propext, Classical.choice and Quot.sound; all 17506 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.87 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

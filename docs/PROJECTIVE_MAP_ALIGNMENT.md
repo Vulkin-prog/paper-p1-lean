@@ -1,6 +1,18 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0651: the ACTUAL last-variable
+Current checkpoint P1-MATH-0652: the LITERAL P3 affine polynomial
+is exactly the original first-variable polynomial with coefficients
+specialized at Z=1. Monicity, full primitive degree, irreducibility,
+coefficient degree bounds and EVERY source evaluation are proved
+for this SAME polynomial. Arbitrary coefficient-ring transport is
+exact, including integer reductions. The ORIGINAL integer leading
+coefficient, monic normalization and effective prime/cover assembly
+remain UNPROVED. The unrestricted P3 input is unchanged. Canonical
+T1.7 retains ONLY its prior P3 input in degrees>2 at the original
+families and caps. Coverage stays 163 proved, 2 conditional,
+2 in_progress out of 167; all 73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0651: the ACTUAL last-variable
 specialization has exact kernel (Z-1) and the literal graded chart
 is explicitly equivalent to its affine quotient. Homogeneous
 irreducibility survives a nonempty last chart over EVERY field.
@@ -22508,3 +22520,14 @@ For a homogeneous polynomial monic in the first variable, the degree in that var
 Two modules add fifteen theorems and eight definitions. This discharges the actual last-chart quotient, irreducibility and full primitive-degree steps. Application to the ORIGINAL reduced integer model still needs monic normalization and its exact scalar/coefficient transport; effective prime budgets and original-family cover assembly remain unfinished. The unrestricted P3 input is unchanged. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.9 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17793 jobs); direct axiom audit passed for 17539 declarations using only propext, Classical.choice and Quot.sound; all 17492 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.87 GiB.
+
+
+## The exact monic P3 last-chart polynomial has full degree irreducibility coefficient bounds and literal source evaluation
+
+MonicP3LastChart proves that the first-variable polynomial presentation commutes with arbitrary coefficient-ring maps, including the original integer-to-rational and integer-to-prime-field maps. It constructs the literal P3 last-chart polynomial by setting Z=1 and isolating the primitive coordinate. A proved exact factorization shows that this is precisely the original first-variable polynomial with its coefficient ring specialized at Z=1. This is equality of actual polynomials, not a coordinate-compatibility premise.
+
+The same polynomial is monic, has primitive degree equal to the original homogeneous degree, and is irreducible when the original homogeneous monic polynomial is irreducible of positive degree. Every coefficient total degree is at most the original homogeneous degree. Exact formulas on constants and all four variables prove that evaluating this SAME affine polynomial at (y,v) equals evaluating the original four-variable polynomial at (y,v0,v1,1) in any target algebra. No monicity, degree, affine irreducibility, coefficient-degree or evaluation conclusion is assumed after chart passage.
+
+One module adds thirteen theorems and one definition. This discharges exact P3 last-chart polynomial transport, degree, irreducibility, coefficient bounds and arbitrary-algebra evaluation. The ORIGINAL integer model still needs its actual leading coefficient extracted and excluded at reduction primes to normalize it monically; original source reduction/normalization assembly and effective prime/cover budgets remain unfinished. The unrestricted P3 input is unchanged. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.9 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17795 jobs); direct axiom audit passed for 17552 declarations using only propext, Classical.choice and Quot.sound; all 17506 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.87 GiB.

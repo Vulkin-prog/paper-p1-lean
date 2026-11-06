@@ -4555,3 +4555,4 @@ public import PaperP1.Algebra.AffineProjectionHypersurfacePoints
 public import PaperP1.Arithmetic.ActualAffineHypersurfacePointCount
 public import PaperP1.Algebra.HomogeneousLastChartIrreducible
 public import PaperP1.Algebra.LastChartQuotient
+public import PaperP1.Algebra.MonicP3LastChart
