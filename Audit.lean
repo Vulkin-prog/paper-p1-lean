@@ -4140,6 +4140,9 @@ import PaperP1
 #print axioms PaperP1.FixedOrderSecondTermDecay.second_bound
 #print axioms PaperP1.FixedPowerLargeFrequencyCardinality.exponent_pos
 #print axioms PaperP1.FixedPowerLargeFrequencyCardinality.uniform_bound
+#print axioms PaperP1.FixedPowerLargeIntegral.region_measurable
+#print axioms PaperP1.FixedPowerLargeIntegral.region_iff
+#print axioms PaperP1.FixedPowerLargeIntegral.uniform_bound
 #print axioms PaperP1.FixedPowerLargeRectangle.constant_pos
 #print axioms PaperP1.FixedPowerLargeRectangle.uniform_bound
 #print axioms PaperP1.FixedPowerNarrowGeometry.anchor_bounds
