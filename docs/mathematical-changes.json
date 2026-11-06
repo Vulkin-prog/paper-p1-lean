@@ -30680,6 +30680,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "513096ac142ad55c5794cdaa942c669aed7a4dcc"
+    },
+    {
+      "id": "P1-MATH-0643",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The positive-characteristic source-rank argument lacked a dimension bound for the rational function field over its actual D-th-power parameter field.",
+      "finding": "Two actual generators satisfying D-th-power equations over the base field yield a finite extension of dimension at most D squared, without separability or characteristic-zero assumptions.",
+      "proposed_revision": "Apply the proved two-power bound to the actual affine fraction-field coordinates. Keep identification of the actual power map and generators, the localized quadratic tower and the original reduced equation explicit until verified.",
+      "impact": "Discharges the characteristic-independent abstract two-generator dimension step. The actual source fraction-field identification and reduced primitive/conductor application remain unfinished.",
+      "evidence": [
+        "PaperP1.TwoPowerFieldDimension.integral_of_power",
+        "PaperP1.TwoPowerFieldDimension.simple_finrank_le",
+        "PaperP1.TwoPowerFieldDimension.pair_finrank_le",
+        "PaperP1.TwoPowerFieldDimension.dimension_le",
+        "PaperP1.TwoPowerFieldDimension.finiteDimensional"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17773 jobs); direct axiom audit passed for 17467 declarations using only propext, Classical.choice and Quot.sound; all 17386 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.00 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

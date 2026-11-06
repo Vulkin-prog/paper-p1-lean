@@ -3079,6 +3079,11 @@ import PaperP1
 #print axioms PaperP1.TwoParameterQuotientGenerators.generator_mem
 #print axioms PaperP1.TwoParameterQuotientGenerators.piece_finite
 #print axioms PaperP1.TwoParameterQuotientGenerators.piece_finrank_of_zero
+#print axioms PaperP1.TwoPowerFieldDimension.integral_of_power
+#print axioms PaperP1.TwoPowerFieldDimension.simple_finrank_le
+#print axioms PaperP1.TwoPowerFieldDimension.pair_finrank_le
+#print axioms PaperP1.TwoPowerFieldDimension.dimension_le
+#print axioms PaperP1.TwoPowerFieldDimension.finiteDimensional
 #print axioms PaperP1.TwoVariableGradedHilbert.exists_polynomial_of_generators
 #print axioms PaperP1.TwoVariableGradedHilbert.exists_polynomial_of_finite
 #print axioms PaperP1.UniformPolynomialDilation.substitute_one

@@ -4544,3 +4544,4 @@ public import PaperP1.Algebra.NativeAffineMonomialCoordinates
 public import PaperP1.Algebra.IntegerSourcePolynomialRelations
 public import PaperP1.Algebra.IntegralProjectedEquationReduction
 public import PaperP1.Algebra.FullDegreePrimitiveAlgebra
+public import PaperP1.Algebra.TwoPowerFieldDimension

@@ -1,0 +1,9 @@
+# Two power-algebraic generators bound field dimension by D squared in every characteristic
+
+Source: companion T1.7, positive-characteristic power-parameter rank argument. The abstract bound is proved; identification of the original affine power field remains to be supplied.
+
+TwoPowerFieldDimension proves that if x^D is the image of an actual base-field element, for D>0, then x is integral over that field and its simple extension has dimension at most D. The annihilating monic polynomial is exactly X^D-C(a); no separability or characteristic-zero premise is required. For two such elements x,y it bounds the dimension of their actual intermediate field by D^2, using the proved compositum dimension inequality and minimal-polynomial divisibility.
+
+If the two elements generate the whole ambient field, the module dimension is at most D^2 and a finite-dimensional instance is constructed from their actual integral equations. Thus both finiteness and the numerical bound follow from the concrete power equations and generation; neither is inserted as a premise.
+
+One module adds five theorems and no definitions. The abstract two-power dimension bound is discharged in every characteristic. Identification of the actual power-parameter fraction-field map, its two generators, the localized quadratic-source dimension, reduced equation normalization and conductor application remain unfinished. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.0 GiB available and no dependency download. No Palomar registration.

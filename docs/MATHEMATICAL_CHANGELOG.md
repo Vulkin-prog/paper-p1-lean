@@ -1,6 +1,16 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0642: an actual root of a monic irreducible
+Current checkpoint P1-MATH-0643: two actual generators x,y with
+x^D,y^D in the base field give a FINITE extension of dimension <=D^2
+for D>0, in EVERY characteristic. Integrality and both simple-extension
+bounds are internal proofs. Actual power-map and generator identification,
+localized quadratic-source dimension, reduced equation normalization and
+the primitive/conductor application remain UNPROVED. Canonical T1.7
+retains ONLY its prior P3 input in degrees>2 at the original families
+and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out
+of 167; all 73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0642: an actual root of a monic irreducible
 polynomial P in a nontrivial finite K-algebra B with dim(B)<=deg(P)
 produces a concrete equivalence AdjoinRoot(P)~=B. The conclusions
 IsField(B), K[y]=B and dim(B)=deg(P) are internal proofs; neither
@@ -471,7 +481,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**640 mathematical improvements and two statement-scope corrections are confirmed.**
+**641 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -29017,3 +29027,14 @@ The remaining three theorems derive IsField(B), K[y]=B and the exact equality di
 One module adds four theorems and no definitions. The abstract full-degree primitive argument is discharged. The actual source dimension bound, retained degree and monic normalization, original-model irreducibility, localization identification, derivative conductor and effective prime budget remain unfinished. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.0 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17771 jobs); direct axiom audit passed for 17462 declarations using only propext, Classical.choice and Quot.sound; all 17381 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.02 GiB.
+
+
+## Two power-algebraic generators bound field dimension by D squared in every characteristic
+
+TwoPowerFieldDimension proves that if x^D is the image of an actual base-field element, for D>0, then x is integral over that field and its simple extension has dimension at most D. The annihilating monic polynomial is exactly X^D-C(a); no separability or characteristic-zero premise is required. For two such elements x,y it bounds the dimension of their actual intermediate field by D^2, using the proved compositum dimension inequality and minimal-polynomial divisibility.
+
+If the two elements generate the whole ambient field, the module dimension is at most D^2 and a finite-dimensional instance is constructed from their actual integral equations. Thus both finiteness and the numerical bound follow from the concrete power equations and generation; neither is inserted as a premise.
+
+One module adds five theorems and no definitions. The abstract two-power dimension bound is discharged in every characteristic. Identification of the actual power-parameter fraction-field map, its two generators, the localized quadratic-source dimension, reduced equation normalization and conductor application remain unfinished. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.0 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17773 jobs); direct axiom audit passed for 17467 declarations using only propext, Classical.choice and Quot.sound; all 17386 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.00 GiB.
