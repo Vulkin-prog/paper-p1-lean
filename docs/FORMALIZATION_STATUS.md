@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0694: ACTUAL triple coefficient fibres
+Current checkpoint P1-MATH-0695: the ACTUAL finite triple Perron
+estimate is internal, with smoothing error <=epsilon*X after ONE
+threshold before ALL bounded coefficients and finite positive
+supports. Literal fibres, repeated primes and repeated products
+are retained. FULL EULER-SERIES transfer, full frequency budget and
+final short-average assembly remain unfinished. T19.17 conditional;
+original T1.7 complete. Coverage: 164 proved, 1 conditional,
+2 in_progress /167; all 73 main proved. False scopes/corrections
+unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0694: ACTUAL triple coefficient fibres
 satisfy log(m)^2/log(2), and the finite Dirichlet polynomial factors
 EXACTLY into its prime, prime and integer factors. Repeated primes
 p=q and repeated products are retained. Aggregate finite-Perron
@@ -1170,7 +1180,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records692 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records693 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1289,7 +1299,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18030 audited theorem/lemma declarations**. This
+- The project currently has **18038 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31178,3 +31188,18 @@ The actual Dirichlet polynomial of these triples factors EXACTLY as the P prime 
 This closes the actual coefficient-fibre and finite product factorization needed by the internal Perron route. The aggregate Perron error assembly, full relevant Euler-series limit, frequency budget and final short-average assembly remain unfinished. T19.17 remains conditional; original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. Ubuntu has about 54.0 GiB free, with no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17955 jobs); direct axiom audit passed for 18030 declarations using only propext, Classical.choice and Quot.sound; all 18096 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.03 GiB.
+
+
+## Uniform actual finite triple Perron estimate with negligible smoothing error
+
+GaussianFibreError groups the ACTUAL finite coefficients by their positive integer levels. A proved log(m)^2 fibre bound controls both the sharp side mass and the whole Gaussian error, using the internal uniform integer Gaussian sums. The explicit errorBound includes (exp(delta^2)-1) times the sharp mass and the actual reciprocal-log Gaussian contribution; no infinite sharp mass is introduced.
+
+For width(X)=1/log(X)^8 the error is <=epsilon*X after ONE threshold, uniform before EVERY finite positive support and EVERY coefficient family satisfying its stated fibre bound. The scalar convergence follows from the proved scaledBound limit, the elementary exponential remainder bound, and the exact dependence on X, width and logarithms.
+
+The final actual_triple_cutoff_small_uniform theorem substitutes the LITERAL triple coefficients, primes P with 2*p<=X, actual primes Q and any finite positive-integer set S. Its only coefficient restriction is |f(n)|<=1 on positive integers. The actual coefficient-fibre estimate is internal, including p=q and repeated products. ONE X0 precedes ALL X, f, P, Q and S. The ACTUAL sharp triple sum differs from its Gaussian smoothing by <=epsilon*X.
+
+The actual_finite_triple_perron theorem combines this result, the exact finite Gaussian Perron formula and the exact prime-prime-integer factorization. It bounds the norm of the actual sharp triple sum by X/(2*pi) times the WHOLE real-frequency Gaussian integral of the two literal prime factors and the literal finite integer factor divided by sqrt(1+t^2), plus epsilon*X. No Perron input, aggregate error bound or hidden fibre estimate is assumed in this final theorem. One module adds eight theorems and two definitions.
+
+This closes the finite triple Perron estimate with an error uniform in the integer truncation. Passage to the full relevant Euler series, the full Euler frequency budget, and the final Halasz/short-average assembly remain unfinished. T19.17 remains conditional, original complete T1.7 unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. About 54.0 GiB is free on Ubuntu; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17957 jobs); direct axiom audit passed for 18038 declarations using only propext, Classical.choice and Quot.sound; all 18106 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.01 GiB.

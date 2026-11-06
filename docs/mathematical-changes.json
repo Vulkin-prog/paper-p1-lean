@@ -32799,6 +32799,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "33ca21d9871d2b900738100c68c11e3b50df9f66"
+    },
+    {
+      "id": "P1-MATH-0695",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The finite Perron error and the actual triple factorization were proved separately. Uniformity in the integer truncation and the final literal triple integral still required assembly.",
+      "finding": "Actual fibre grouping and the uniform weighted Gaussian estimate give one negligible-error threshold before every finite support. Substitution of the literal triple coefficients gives the actual finite triple Perron inequality without an assumed aggregate bound.",
+      "proposed_revision": "State the one-threshold quantifier order explicitly and use the actual finite triple Perron estimate as the starting point for a separately justified full Euler-series limit.",
+      "impact": "Closes the actual finite triple Perron estimate with uniformly negligible smoothing error. Full Euler transfer, the final frequency budget and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.GaussianFibreError.weighted_fibre_sum_bound",
+        "PaperP1.GaussianFibreError.gaussian_fibre_sum_bound",
+        "PaperP1.GaussianFibreError.sharp_fibre_sum_bound",
+        "PaperP1.GaussianFibreError.finite_error_bound",
+        "PaperP1.GaussianFibreError.errorBound_coarse",
+        "PaperP1.GaussianFibreError.errorBound_small_uniform",
+        "PaperP1.GaussianFibreError.actual_triple_cutoff_small_uniform",
+        "PaperP1.GaussianFibreError.actual_finite_triple_perron",
+        "PaperP1.GaussianFibreError.errorBound",
+        "PaperP1.GaussianFibreError.comparisonConstant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17957 jobs); direct axiom audit passed for 18038 declarations using only propext, Classical.choice and Quot.sound; all 18106 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.01 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

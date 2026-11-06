@@ -3823,6 +3823,14 @@ import PaperP1
 #print axioms PaperP1.GaussianExponentialSums.gaussian_cross_integrable
 #print axioms PaperP1.GaussianExponentialSums.gaussian_gram
 #print axioms PaperP1.GaussianExponentialSums.gaussian_mean_square_le
+#print axioms PaperP1.GaussianFibreError.weighted_fibre_sum_bound
+#print axioms PaperP1.GaussianFibreError.gaussian_fibre_sum_bound
+#print axioms PaperP1.GaussianFibreError.sharp_fibre_sum_bound
+#print axioms PaperP1.GaussianFibreError.finite_error_bound
+#print axioms PaperP1.GaussianFibreError.errorBound_coarse
+#print axioms PaperP1.GaussianFibreError.errorBound_small_uniform
+#print axioms PaperP1.GaussianFibreError.actual_triple_cutoff_small_uniform
+#print axioms PaperP1.GaussianFibreError.actual_finite_triple_perron
 #print axioms PaperP1.GaussianFrequencyRowBound.gaussian_antitone
 #print axioms PaperP1.GaussianFrequencyRowBound.gaussian_tail_summable
 #print axioms PaperP1.GaussianFrequencyRowBound.gaussian_tail_bound

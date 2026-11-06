@@ -4634,3 +4634,4 @@ public import PaperP1.Analysis.GaussianCutoff
 public import PaperP1.Analysis.FiniteGaussianPerron
 public import PaperP1.Analysis.LogarithmicGaussianSum
 public import PaperP1.Analysis.TripleCoefficientFibre
+public import PaperP1.Analysis.GaussianFibreError
