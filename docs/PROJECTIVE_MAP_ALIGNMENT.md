@@ -1,6 +1,13 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0722: Actual global triple bound by early
+Current checkpoint P1-MATH-0723: Internal uniform Halasz criterion from
+the actual full Euler frequency budget. Final logarithmic short-average
+concentration and original T19.17 remain unfinished. Original T1.7
+complete. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all
+73 main proved. False scopes/corrections unchanged. No Palomar
+registration.
+
+Historical checkpoint P1-MATH-0722: Actual global triple bound by early
 scales and a fixed number of Euler-controlled bands. Final logarithmic
 short-average concentration and original T19.17 remain unfinished.
 Original T1.7 complete. Coverage: 164 proved, 1 conditional, 2
@@ -24149,3 +24156,14 @@ Exact partition, the actual elementary bound on early bands, the quantitative Eu
 Final logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18011 jobs); direct axiom audit passed for 18235 declarations using only propext, Classical.choice and Quot.sound; all 18347 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.53 GiB.
+
+
+## Internal uniform Halasz criterion from the actual full Euler frequency budget
+
+For EVERY epsilon>0, the development constructs eta>0 and ONE X0>=4 BEFORE ALL X>=X0 and all complete complex prime-bounded coefficients g. If the LITERAL full-series frequencyBudget is <=eta*log(X)^2, then the ACTUAL summatory norm is <=epsilon*X.
+
+The proof fixes the number of late bands, chooses eta from its analytic coefficient, controls the retained explicit error using the proved weighted error limit, and uses the internally proved canonical total triple reconstruction at cutoff log(X)^20. No Halasz theorem or summatory estimate is an external input. This is one proved small-budget criterion, not a proof of logarithmic short-average concentration.
+
+Final logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18013 jobs); direct axiom audit passed for 18236 declarations using only propext, Classical.choice and Quot.sound; all 18348 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.51 GiB.

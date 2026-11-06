@@ -4012,6 +4012,7 @@ import PaperP1
 #print axioms PaperP1.GraphTangentSmooth.velocity_contDiffOn
 #print axioms PaperP1.GraphTangentSmooth.contDiffOn_trajectory
 #print axioms PaperP1.GridCurveMinorVanishing.vanishing
+#print axioms PaperP1.HalaszSmallBudget.summatory_small_of_budget
 #print axioms PaperP1.HardSaddleExplicitScale.tendsto_logCore_atTop
 #print axioms PaperP1.HardSaddleExplicitScale.finite_normalized_gap
 #print axioms PaperP1.HardSaddleExplicitScale.tendsto_hard_saddle_gap

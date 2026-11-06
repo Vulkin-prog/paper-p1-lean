@@ -33806,6 +33806,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "79721759abe9add458eb6124d6efab17269ec094"
+    },
+    {
+      "id": "P1-MATH-0723",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The preceding analytic components did not yet provide this exact finite partition, uniform global estimate or common-frequency conclusion.",
+      "finding": "For EVERY epsilon>0, the development constructs eta>0 and ONE X0>=4 BEFORE ALL X>=X0 and all complete complex prime-bounded coefficients g. If the LITERAL full-series frequencyBudget is <=eta*log(X)^2, then the ACTUAL summatory norm is <=epsilon*X.",
+      "proposed_revision": "Use the proved actual finite/global conclusion with its precise coefficient and cutoff scope; keep the remaining short-average theorem separate.",
+      "impact": "Internal uniform Halasz criterion from the actual full Euler frequency budget. Final logarithmic short-average concentration and original T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.HalaszSmallBudget.summatory_small_of_budget"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18013 jobs); direct axiom audit passed for 18236 declarations using only propext, Classical.choice and Quot.sound; all 18348 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.51 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
