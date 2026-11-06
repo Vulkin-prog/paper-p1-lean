@@ -3854,6 +3854,13 @@ import PaperP1
 #print axioms PaperP1.FullEulerBound.normalized_nonneg
 #print axioms PaperP1.FullEulerBound.normalized_bound
 #print axioms PaperP1.FullEulerBound.normalized_square_mean_small
+#print axioms PaperP1.FullEulerEnvelope.exceptional_measurable
+#print axioms PaperP1.FullEulerEnvelope.exceptional_measure
+#print axioms PaperP1.FullEulerEnvelope.off_exception_norm
+#print axioms PaperP1.FullEulerEnvelope.shifted_local_sup_bound
+#print axioms PaperP1.FullEulerEnvelope.badWeight_nonneg
+#print axioms PaperP1.FullEulerEnvelope.badWeight_le_five
+#print axioms PaperP1.FullEulerEnvelope.shifted_budget_envelope
 #print axioms PaperP1.FullEulerUnit.full_continuous
 #print axioms PaperP1.FullEulerUnit.global_unit_sup
 #print axioms PaperP1.FullEulerUnit.off_bad_unit_norm
