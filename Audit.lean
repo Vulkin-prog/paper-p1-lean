@@ -4686,6 +4686,9 @@ import PaperP1
 #print axioms PaperP1.PolynomialLogarithmicCancellation.uniform_bound
 #print axioms PaperP1.PolynomialLogarithmicCancellation.relative_bound
 #print axioms PaperP1.PolynomialLogarithmicCancellation.power_gain
+#print axioms PaperP1.PolynomialLongCancellation.value_eq_sum
+#print axioms PaperP1.PolynomialLongCancellation.uniform_blockwise_bound
+#print axioms PaperP1.PolynomialLongCancellation.uniform_span_bound
 #print axioms PaperP1.PolynomialNatRatioLimits.quadratic
 #print axioms PaperP1.PolynomialNatRatioLimits.cubic
 #print axioms PaperP1.PolynomialParsevalBounds.circleIntegrable_sq_norm_eval

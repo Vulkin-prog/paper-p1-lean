@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0874: Literal finite intervals split exactly
+Current checkpoint P1-MATH-0875: Uniform power cancellation extends to
+actual long damped Dirichlet intervals. The triple-large prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 53.94 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0874: Literal finite intervals split exactly
 into truncated dyadic blocks. The triple-large prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -27587,3 +27596,12 @@ Seven theorems and one definition prove the actual integer dyadic anchors 2^j*N,
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.94 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18315 jobs); direct axiom audit passed for 18859 declarations using only propext, Classical.choice and Quot.sound; all 19095 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.94 GiB.
+
+
+## Uniform power cancellation extends to actual long damped Dirichlet intervals
+
+Three theorems identify the literal damped Dirichlet value with the actual integrand sum and combine the proved dyadic partial bounds over arbitrarily many actual blocks. For fixed a>0,b, ONE cutoff precedes every base N, endpoint M, number K, frequency t and damping sigma>=0. If each actual anchor lies in the proved frequency range, norm<=K*C_b/N^gamma_(a,b). For b>=0, it suffices that the last anchor to power a is <=|t| and |t|<=N^b. No blockwise cancellation is supplied as an external hypothesis.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.94 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18317 jobs); direct axiom audit passed for 18862 declarations using only propext, Classical.choice and Quot.sound; all 19098 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.92 GiB.
