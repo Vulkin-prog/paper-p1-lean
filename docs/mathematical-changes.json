@@ -40820,6 +40820,35 @@
         "status": "not_integrated"
       },
       "validation_commit": "4d45f464a17b3bf8ea989e751725fde19ad2169b"
+    },
+    {
+      "id": "P1-MATH-0943",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The genuine prime-block energy gain must be combined with the actual pointwise cofactor smallness before claiming control of the remaining large-frequency Ramare rectangle.",
+      "finding": "Two theorems and one definition prove a positive explicit rectangle constant and actual arbitrary-epsilon sampled smallness. For fixed a>0,b<=1/16,H>=4 with a*H>=2 and epsilon>0, ONE fixed central cutoff T0>=8 and ONE integer cutoff precede ALL N, ALL prime families Q, ALL real completely multiplicative prime-unit f and ALL unit-separated samples of height<=N outside |t|<T0 which are large in some actual final prime block. The actual rectangle sampled square sum is <=epsilon. The actual cofactor smallness theorem and each proved prime-block energy bound are combined through the proved finite product bound, retaining the actual count of blocks. No rectangle energy bound is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual fixed-power final Ramare rectangle is small on large samples outside one fixed central band. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FixedPowerLargeRectangle.constant_pos",
+        "PaperP1.FixedPowerLargeRectangle.uniform_bound",
+        "PaperP1.FixedPowerLargeRectangle.constant"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18453 jobs); direct axiom audit passed for 19134 declarations using only propext, Classical.choice and Quot.sound; all 19424 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.68 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
