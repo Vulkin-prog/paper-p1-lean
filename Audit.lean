@@ -4291,6 +4291,14 @@ import PaperP1
 #print axioms PaperP1.GaussianLaplaceKernel.vertical_norm
 #print axioms PaperP1.GaussianLaplaceKernel.vertical_ne_zero
 #print axioms PaperP1.GaussianLaplaceKernel.kernel_complex_formula
+#print axioms PaperP1.GaussianOverlap.heat_nonneg
+#print axioms PaperP1.GaussianOverlap.heat_integrable
+#print axioms PaperP1.GaussianOverlap.heat_mass
+#print axioms PaperP1.GaussianOverlap.prefactor_square
+#print axioms PaperP1.GaussianOverlap.prefactor_product
+#print axioms PaperP1.GaussianOverlap.product_identity
+#print axioms PaperP1.GaussianOverlap.product_integrable
+#print axioms PaperP1.GaussianOverlap.overlap
 #print axioms PaperP1.GaussianSlopeDecay.quadratic_bound
 #print axioms PaperP1.GaussianSlopeDecay.gaussian_le_one
 #print axioms PaperP1.GaussianSlopeDecay.absolute_decay_bound
