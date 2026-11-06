@@ -5490,6 +5490,9 @@ import PaperP1
 #print axioms PaperP1.UniformBinaryLogBudget.monotone
 #print axioms PaperP1.UniformBinaryLogBudget.absorption
 #print axioms PaperP1.UniformSaddleVariation.uniform_left_variation
+#print axioms PaperP1.UniformZetaSublogarithmic.uniform_bound
+#print axioms PaperP1.UniformZetaSublogarithmic.normalized_bound
+#print axioms PaperP1.UniformZetaSublogarithmic.polynomial_height_bound
 #print axioms PaperP1.UnitGraphMonomialPieceCount.exists_scale
 #print axioms PaperP1.UnitGraphMonomialPieceCount.exists_affine_scale
 #print axioms PaperP1.UnitGraphMonomialPieceCount.point_count

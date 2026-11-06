@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0880: The actual zeta function has an
+Current checkpoint P1-MATH-0881: The actual Riemann zeta function is
+uniformly sublogarithmic for every positive damping up to one. The
+triple-large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 53.87 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0880: The actual zeta function has an
 explicit logarithmic envelope with limit alpha. The triple-large prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -26976,3 +26985,12 @@ Four theorems and three definitions give a genuine upper bound for Mathlib riema
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.87 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18327 jobs); direct axiom audit passed for 18885 declarations using only propext, Classical.choice and Quot.sound; all 19127 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.83 GiB.
+
+
+## The actual Riemann zeta function is uniformly sublogarithmic for every positive damping up to one
+
+Three theorems prove: for EVERY epsilon>0, ONE T0>=8 precedes ALL |t|>=T0 and ALL 0<sigma<=1, with actual norm(zeta(1+sigma+it))<=epsilon*log |t|. The normalized form is proved as well. For every fixed B>0, the same gives norm<=epsilon*log N uniformly on T0<=|t|<=N^B, N>=1 and ALL 0<sigma<=1. The free lower-cutoff exponent is chosen AFTER epsilon and the normalized explicit envelope is then taken to its actual limit. No zeta estimate, prime estimate or MR concentration is assumed as input.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.87 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18329 jobs); direct axiom audit passed for 18888 declarations using only propext, Classical.choice and Quot.sound; all 19130 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.81 GiB.
