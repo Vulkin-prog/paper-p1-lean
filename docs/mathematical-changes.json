@@ -33380,6 +33380,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "dfbb6a9f5074d8f81c7be1927b79548e83c05b59"
+    },
+    {
+      "id": "P1-MATH-0711",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The generic Gaussian tail still needed the literal masses, denominator bound and full Euler norm bound of the actual triple integrand.",
+      "finding": "The actual full Euler triple frequency integral is truncated at log(X)^10 with one uniformly negligible absolute error before all admissible coefficients and prime supports.",
+      "proposed_revision": "Use the proved finite-height integral estimate in the actual prime-band Cauchy bound, retaining explicit errors when summing growing band families.",
+      "impact": "The actual full Euler triple frequency integral is truncated at log(X)^10 with one uniformly negligible absolute error before all admissible coefficients and prime supports. The quantitative global band/Halasz estimate and final logarithmic short-average assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.EulerFrequencyTruncation.prime_mass_identity",
+        "PaperP1.EulerFrequencyTruncation.prime_mass_bound",
+        "PaperP1.EulerFrequencyTruncation.primeMass_bound",
+        "PaperP1.EulerFrequencyTruncation.band_coefficient_norm",
+        "PaperP1.EulerFrequencyTruncation.base_continuous",
+        "PaperP1.EulerFrequencyTruncation.base_nonneg",
+        "PaperP1.EulerFrequencyTruncation.base_bound",
+        "PaperP1.EulerFrequencyTruncation.scaledTail_nonneg",
+        "PaperP1.EulerFrequencyTruncation.scaledTail_tendsto",
+        "PaperP1.EulerFrequencyTruncation.whole_integral_bound",
+        "PaperP1.EulerFrequencyTruncation.whole_integral_small_uniform",
+        "PaperP1.EulerFrequencyTruncation.base",
+        "PaperP1.EulerFrequencyTruncation.scaledTail"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17989 jobs); direct axiom audit passed for 18164 declarations using only propext, Classical.choice and Quot.sound; all 18258 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.72 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

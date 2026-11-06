@@ -1,6 +1,15 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0710: The literal logarithmic width and
+Current checkpoint P1-MATH-0711: The actual full Euler triple frequency
+integral is truncated at log(X)^10 with one uniformly negligible
+absolute error before all admissible coefficients and prime supports.
+The quantitative global band/Halasz estimate and final logarithmic
+short-average assembly remain unfinished. T19.17 conditional; original
+T1.7 complete. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. False scopes/corrections unchanged. No Palomar
+registration.
+
+Historical checkpoint P1-MATH-0710: The literal logarithmic width and
 height give an actual Gaussian tail envelope bounded by C*log(X)^11/X,
 hence tending to zero. The quantitative global band/Halasz estimate and
 final logarithmic short-average assembly remain unfinished. T19.17
@@ -1323,7 +1332,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records708 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records709 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1442,7 +1451,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18153 audited theorem/lemma declarations**. This
+- The project currently has **18164 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31531,3 +31540,16 @@ When log(X)>=2 the exponential is <=1/X. Once log(X)>=max(2,log(4)+4), the ACTUA
 The quantitative global band/Halasz estimate and final logarithmic short-average assembly remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17987 jobs); direct axiom audit passed for 18153 declarations using only propext, Classical.choice and Quot.sound; all 18245 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.74 GiB.
+
+
+## Actual full Euler triple integral truncated uniformly at logarithmic height
+
+EulerFrequencyTruncation identifies the actual sum of log(p)/p over all primes <=X with the existing Mertens prefix and bounds every actual prime subset by log(X)+log(4)+4. Literal prime coefficient masses inherit this bound. If 2*p<=X, the actual coefficient f(p)/log(X/p) has norm <=1/log(2), for real prime-bounded f.
+
+The actual unweighted two-prime/full-Euler integrand base is continuous and nonnegative. Its global bound is (eulerConstant/log(2))*log(X)*(log(X)+log(4)+4)^2, uniformly before ALL real prime-bounded functions and actual prime supports P,Q with 2*p<=X and q<=X. The whole-frequency Gaussian integral therefore is <=the ACTUAL integral over [-log(X)^10,log(X)^10] of base plus scaledTail(X), where scaledTail=(eulerConstant/log(2))*the proved literal tail envelope.
+
+The actual scaled tail is nonnegative and tends to zero. For each epsilon>0 ONE X0 precedes ALL X>=X0, real prime-bounded coefficient functions and admissible prime supports, and the error is <=epsilon. Eleven theorems and two definitions are added in one module.
+
+The quantitative global band/Halasz estimate and final logarithmic short-average assembly remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17989 jobs); direct axiom audit passed for 18164 declarations using only propext, Classical.choice and Quot.sound; all 18258 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.72 GiB.

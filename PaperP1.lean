@@ -4650,3 +4650,4 @@ public import PaperP1.Analysis.ShiftedExceptionWeight
 public import PaperP1.Analysis.CommonFullEulerBudget
 public import PaperP1.Analysis.GaussianFrequencyTail
 public import PaperP1.Analysis.LogarithmicGaussianTail
+public import PaperP1.Analysis.EulerFrequencyTruncation

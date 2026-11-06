@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0710: The literal logarithmic width and
+Current checkpoint P1-MATH-0711: The actual full Euler triple frequency
+integral is truncated at log(X)^10 with one uniformly negligible
+absolute error before all admissible coefficients and prime supports.
+The quantitative global band/Halasz estimate and final logarithmic
+short-average assembly remain unfinished. T19.17 conditional; original
+T1.7 complete. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. False scopes/corrections unchanged. No Palomar
+registration.
+
+Historical checkpoint P1-MATH-0710: The literal logarithmic width and
 height give an actual Gaussian tail envelope bounded by C*log(X)^11/X,
 hence tending to zero. The quantitative global band/Halasz estimate and
 final logarithmic short-average assembly remain unfinished. T19.17
@@ -1200,7 +1209,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**708 mathematical improvements and two statement-scope corrections are confirmed.**
+**709 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -30638,3 +30647,16 @@ When log(X)>=2 the exponential is <=1/X. Once log(X)>=max(2,log(4)+4), the ACTUA
 The quantitative global band/Halasz estimate and final logarithmic short-average assembly remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17987 jobs); direct axiom audit passed for 18153 declarations using only propext, Classical.choice and Quot.sound; all 18245 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.74 GiB.
+
+
+## Actual full Euler triple integral truncated uniformly at logarithmic height
+
+EulerFrequencyTruncation identifies the actual sum of log(p)/p over all primes <=X with the existing Mertens prefix and bounds every actual prime subset by log(X)+log(4)+4. Literal prime coefficient masses inherit this bound. If 2*p<=X, the actual coefficient f(p)/log(X/p) has norm <=1/log(2), for real prime-bounded f.
+
+The actual unweighted two-prime/full-Euler integrand base is continuous and nonnegative. Its global bound is (eulerConstant/log(2))*log(X)*(log(X)+log(4)+4)^2, uniformly before ALL real prime-bounded functions and actual prime supports P,Q with 2*p<=X and q<=X. The whole-frequency Gaussian integral therefore is <=the ACTUAL integral over [-log(X)^10,log(X)^10] of base plus scaledTail(X), where scaledTail=(eulerConstant/log(2))*the proved literal tail envelope.
+
+The actual scaled tail is nonnegative and tends to zero. For each epsilon>0 ONE X0 precedes ALL X>=X0, real prime-bounded coefficient functions and admissible prime supports, and the error is <=epsilon. Eleven theorems and two definitions are added in one module.
+
+The quantitative global band/Halasz estimate and final logarithmic short-average assembly remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, preserved sources, pinned Lean and allowed axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17989 jobs); direct axiom audit passed for 18164 declarations using only propext, Classical.choice and Quot.sound; all 18258 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.72 GiB.

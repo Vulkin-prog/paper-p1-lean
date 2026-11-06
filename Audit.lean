@@ -3677,6 +3677,17 @@ import PaperP1
 #print axioms PaperP1.ElementaryReciprocalPivotUpper.dyadic_logarithmic_upper
 #print axioms PaperP1.ElementaryReciprocalPrimeLower.fixed_order
 #print axioms PaperP1.ElementaryReciprocalPrimeLower.uniform_lower
+#print axioms PaperP1.EulerFrequencyTruncation.prime_mass_identity
+#print axioms PaperP1.EulerFrequencyTruncation.prime_mass_bound
+#print axioms PaperP1.EulerFrequencyTruncation.primeMass_bound
+#print axioms PaperP1.EulerFrequencyTruncation.band_coefficient_norm
+#print axioms PaperP1.EulerFrequencyTruncation.base_continuous
+#print axioms PaperP1.EulerFrequencyTruncation.base_nonneg
+#print axioms PaperP1.EulerFrequencyTruncation.base_bound
+#print axioms PaperP1.EulerFrequencyTruncation.scaledTail_nonneg
+#print axioms PaperP1.EulerFrequencyTruncation.scaledTail_tendsto
+#print axioms PaperP1.EulerFrequencyTruncation.whole_integral_bound
+#print axioms PaperP1.EulerFrequencyTruncation.whole_integral_small_uniform
 #print axioms PaperP1.EulerIntegralLimit.primeMass_nonneg
 #print axioms PaperP1.EulerIntegralLimit.prime_norm_bound
 #print axioms PaperP1.EulerIntegralLimit.weight_nonneg
