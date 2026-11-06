@@ -3912,6 +3912,10 @@ import PaperP1
 #print axioms PaperP1.FinalPrimeOrderGeometry.eventual_geometry
 #print axioms PaperP1.FinalRectangleApproximation.rectangle_small_uniform
 #print axioms PaperP1.FinalRelativeApproximation.quotient_small_uniform
+#print axioms PaperP1.FinalSmallPrimeSamples.envelope_tendsto
+#print axioms PaperP1.FinalSmallPrimeSamples.scalar_bound
+#print axioms PaperP1.FinalSmallPrimeSamples.sampled_rectangle_bound
+#print axioms PaperP1.FinalSmallPrimeSamples.sampled_small_uniform
 #print axioms PaperP1.FiniteAbelNorm.partialSum_succ
 #print axioms PaperP1.FiniteAbelNorm.finite_identity
 #print axioms PaperP1.FiniteAbelNorm.telescoping

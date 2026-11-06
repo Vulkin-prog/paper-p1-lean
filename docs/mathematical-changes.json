@@ -37420,6 +37420,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "4bb350e7fe83b254e83e19ae58c436b0af383600"
+    },
+    {
+      "id": "P1-MATH-0837",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The final-prime small-value contribution must be proved on the actual remainder sample set, with all growing block counts absorbed into a verified vanishing envelope.",
+      "finding": "For every fixed B>=32, ONE N0 precedes all N>=N0, every positive-unit complex coefficient function, heights 1<=T<=N and separated samples INSIDE the ACTUAL jointly-large region. If EVERY actual final prime block at EVERY actual sample has norm<=1/(log N)^100, then the ACTUAL entire final rectangle sample square sum is <=80/(log N)^191. This literal envelope tends to zero and gives one uniform cutoff for every epsilon>0. Four theorems and two definitions retain all final block counts, true cofactor weights and actual frequency-region conditions. The corresponding integral and the remaining large-final-prime contribution are not yet claimed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual small-final-prime sample contributions vanish on the jointly-large region. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FinalSmallPrimeSamples.envelope_tendsto",
+        "PaperP1.FinalSmallPrimeSamples.scalar_bound",
+        "PaperP1.FinalSmallPrimeSamples.sampled_rectangle_bound",
+        "PaperP1.FinalSmallPrimeSamples.sampled_small_uniform",
+        "PaperP1.FinalSmallPrimeSamples.threshold",
+        "PaperP1.FinalSmallPrimeSamples.envelope"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18241 jobs); direct axiom audit passed for 18685 declarations using only propext, Classical.choice and Quot.sound; all 18889 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.46 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
