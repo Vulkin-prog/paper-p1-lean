@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0686: ACTUAL prime logarithmic masses
+Current checkpoint P1-MATH-0687: the ACTUAL TOTAL triple-convolution
+approximation has a uniform negligible error for every actual
+cutoff floor((log X)^A). First-convolution, prime-power, small/large
+prime edges, real denominators and quotient floors are internal.
+The actual TRIPLE MAIN TERM/Perron, full dyadic and short-average
+transfers remain UNPROVED. T19.17 conditional; original T1.7 complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0686: ACTUAL prime logarithmic masses
 and dyadic covers prove the log-log reciprocalWeight bound.
 ONE cutoff before ALL prime sets and bounded completely
 multiplicative functions makes the actual normalized second-
@@ -30838,6 +30847,16 @@ for the actual normalized triple difference. Discarded prime ranges,
 total triple/Perron and short-average transfers remain unfinished.
 T19.17 stays conditional; original T1.7 is unconditional.
 
+## Internal total combinatorial triple approximation
+
+P1-MATH-0687 closes the actual first and second convolution errors,
+both discarded prime ranges and every actual polylogarithmic cutoff.
+One threshold works before all bounded completely multiplicative
+functions for the total negligible normalized error. The actual
+triple main term still needs an analytic estimate and Perron transfer;
+full dyadic and short-average assembly remain unfinished.
+T19.17 stays conditional; original T1.7 is unconditional.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -32684,3 +32703,18 @@ For every X>=4 and every finite actual prime set P with 2*p<=X, this proves that
 This closes the logarithmic-logarithmic bound for the actual reciprocalWeight and the uniform negligible normalized second-convolution error. The small/large prime truncation errors and resulting total triple approximation still need assembly. Perron, full dyadic Halasz and logarithmic short-average transfer remain unfinished. Complete multiplicativity remains explicit; the general merely multiplicative extension and full prime-power weighted mean are not claimed. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.2 GiB free; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17939 jobs); direct axiom audit passed for 17929 declarations using only propext, Classical.choice and Quot.sound; all 17962 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.17 GiB.
+
+
+## Actual prime truncations and uniform total triple-convolution approximation
+
+Stable ID: p1:internal:actual-total-triple-convolution-approximation. The total combinatorial triple approximation is internal, including prime edges and a uniform cutoff before all admissible functions. The triple main-term estimate/Perron and final short-average transfer remain unfinished.
+
+PrimeTruncation defines the ACTUAL retained prime set P(X,Z)={p in [1,X]: p prime, Z<p, 2*p<=X} and the literal first-convolution terms. It proves every term has norm <=X*log(p)/p. For primes p>X/2 the exact quotient is floor(X/p)=1, and the norm is <=log(p). The actual prime logarithm prefix is <=log(4)*X by the internal Chebyshev bound, and the actual small-prime reciprocal logarithmic mass is <=weightedPrimes(Z).
+
+Exact finite complements and nonnegative finite sums then give the ACTUAL truncation error <=X*(weightedPrimes(Z)+log 4), for every X,Z and every bounded completely multiplicative complex f. The first truncated reconstruction has the displayed edgeBudget(Z)*X/log X error. Combining it with the internally proved reciprocalWeight bound gives an actual TOTAL triple reconstruction bound, including the first logarithmic/prime-power errors, both discarded prime ranges, and the second-convolution error. No discarded contribution is left implicit.
+
+For EVERY natural exponent A it uses the ACTUAL integer cutoff floor((log X)^A). The ratio weightedPrimes(cutoff)/log X tends to zero, proved from internal Mertens bounds with every floor, logarithm and nonnegative term checked. The complete normalized errorRatio also tends to zero. Consequently, for EVERY A and epsilon>0, ONE threshold X0>=4 works BEFORE ALL X>=X0 and ALL bounded completely multiplicative complex functions f, and the ACTUAL norm of summatory(f,X)-triple(f,X,P(X,cutoff))/log X is <=epsilon*X. The triple is the already proved literal p,q,n sum, with real denominator log(X/p), exact integer quotient endpoints and repeated primes included. One module adds eleven theorems and five definitions.
+
+This closes the total combinatorial triple-convolution approximation with a uniform negligible error, including all edge ranges. It does NOT estimate the actual triple main term analytically. The actual Perron estimate, full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. Complete multiplicativity stays explicit; no merely multiplicative extension or full prime-power weighted mean is claimed. T19.17 remains conditional and original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, source hashes, Lean v4.36.0-rc2 and allowed axioms are unchanged. Ubuntu has about 54.2 GiB free; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17941 jobs); direct axiom audit passed for 17940 declarations using only propext, Classical.choice and Quot.sound; all 17978 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.15 GiB.

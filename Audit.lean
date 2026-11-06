@@ -7353,6 +7353,17 @@ import PaperP1
 #print axioms PaperP1.PrimeSubsetCertificates.primes_pairwise_coprime
 #print axioms PaperP1.PrimeSubsetCertificates.card_targets_le
 #print axioms PaperP1.PrimeSubsetCertificates.card_targets_le_full
+#print axioms PaperP1.PrimeTruncation.retained_subset
+#print axioms PaperP1.PrimeTruncation.term_reciprocal_bound
+#print axioms PaperP1.PrimeTruncation.term_large_bound
+#print axioms PaperP1.PrimeTruncation.prime_log_prefix
+#print axioms PaperP1.PrimeTruncation.prime_mass_prefix
+#print axioms PaperP1.PrimeTruncation.truncation_error
+#print axioms PaperP1.PrimeTruncation.first_truncated_reconstruction
+#print axioms PaperP1.PrimeTruncation.total_triple_reconstruction
+#print axioms PaperP1.PrimeTruncation.cutoff_prime_mass_ratio_tendsto
+#print axioms PaperP1.PrimeTruncation.errorRatio_tendsto
+#print axioms PaperP1.PrimeTruncation.total_triple_small_uniform
 #print axioms PaperP1.PrimitiveBinaryBasis.bounded_bezout
 #print axioms PaperP1.PrimitiveBinaryBasis.basis_inverse
 #print axioms PaperP1.PrimitiveBinaryBasis.basis_height

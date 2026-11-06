@@ -32449,6 +32449,48 @@
         "status": "not_integrated"
       },
       "validation_commit": "1c7a443eaaeea6ccd3e5cf8d529a3e35f3d68ec1"
+    },
+    {
+      "id": "P1-MATH-0687",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The exact triple difference did not yet control the discarded small and large primes or reconstruct the original summatory function. A bound only for the retained second convolution would leave these errors unproved.",
+      "finding": "Actual finite complement sums and internal Chebyshev/Mertens bounds close both prime edges. For every actual polylogarithmic cutoff, one threshold before all bounded completely multiplicative functions gives the actual total triple approximation with arbitrarily small normalized error.",
+      "proposed_revision": "Use this total checked triple approximation, with its actual cutoff and uniform quantifier order, before estimating the actual triple main term by Perron and weighted prime means.",
+      "impact": "Closes the total combinatorial triple approximation, including every discarded prime range and floor. The analytic triple main term/Perron and T19.17 assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.PrimeTruncation.retained_subset",
+        "PaperP1.PrimeTruncation.term_reciprocal_bound",
+        "PaperP1.PrimeTruncation.term_large_bound",
+        "PaperP1.PrimeTruncation.prime_log_prefix",
+        "PaperP1.PrimeTruncation.prime_mass_prefix",
+        "PaperP1.PrimeTruncation.truncation_error",
+        "PaperP1.PrimeTruncation.first_truncated_reconstruction",
+        "PaperP1.PrimeTruncation.total_triple_reconstruction",
+        "PaperP1.PrimeTruncation.cutoff_prime_mass_ratio_tendsto",
+        "PaperP1.PrimeTruncation.errorRatio_tendsto",
+        "PaperP1.PrimeTruncation.total_triple_small_uniform",
+        "PaperP1.PrimeTruncation.retained",
+        "PaperP1.PrimeTruncation.term",
+        "PaperP1.PrimeTruncation.edgeBudget",
+        "PaperP1.PrimeTruncation.cutoff",
+        "PaperP1.PrimeTruncation.errorRatio"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17941 jobs); direct axiom audit passed for 17940 declarations using only propext, Classical.choice and Quot.sound; all 17978 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.15 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
