@@ -1904,6 +1904,14 @@ import PaperP1
 #print axioms PaperP1.LinearRationalGraph.exists_parameters
 #print axioms PaperP1.LocalizationIrreducibleLift.exists_associated
 #print axioms PaperP1.LocalizationPrimeHeightEquiv.height_comap
+#print axioms PaperP1.LocalizedAffineQuadraticSource.injection_injective
+#print axioms PaperP1.LocalizedAffineQuadraticSource.injection_base
+#print axioms PaperP1.LocalizedAffineQuadraticSource.source_finite
+#print axioms PaperP1.LocalizedAffineQuadraticSource.genericTower
+#print axioms PaperP1.LocalizedAffineQuadraticSource.generic_finite
+#print axioms PaperP1.LocalizedAffineQuadraticSource.generic_dimension
+#print axioms PaperP1.LocalizedAffineQuadraticSource.generic_nontrivial
+#print axioms PaperP1.LocalizedAffineQuadraticSource.parameter_compatibility
 #print axioms PaperP1.LocalizedFractionEquiv.fraction_isFractionRing
 #print axioms PaperP1.LocalizedFractionEquiv.equiv_algebraMap
 #print axioms PaperP1.LocalizedQuotientFractionEquiv.map_isPrime

@@ -30761,6 +30761,45 @@
         "status": "not_integrated"
       },
       "validation_commit": "4c8be6a7b52c359e60143f59f4b7381385abf0f8"
+    },
+    {
+      "id": "P1-MATH-0645",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The full-degree primitive argument lacked the actual reduced quadratic-source dimension bound, a faithful generic comparison and exact power-parameter compatibility.",
+      "finding": "Every actual affine quadratic tower injects into its generic algebra, which is finite of dimension at most 2^length(s)*D squared over the actual power-parameter field. The source itself is finite over the parameter polynomial ring and both parameter maps commute exactly.",
+      "proposed_revision": "Use the actual dimension and faithful comparison to apply the irreducible full-degree argument to the original reduced projected equation. Keep reduced equation normalization and the fraction/conductor identification explicit until proved.",
+      "impact": "Discharges actual localized-source finiteness, dimension, injectivity and parameter compatibility without assuming a domain or branch independence. The original reduced primitive field and conductor application remain unfinished.",
+      "evidence": [
+        "PaperP1.LocalizedAffineQuadraticSource.injection_injective",
+        "PaperP1.LocalizedAffineQuadraticSource.injection_base",
+        "PaperP1.LocalizedAffineQuadraticSource.source_finite",
+        "PaperP1.LocalizedAffineQuadraticSource.genericTower",
+        "PaperP1.LocalizedAffineQuadraticSource.generic_finite",
+        "PaperP1.LocalizedAffineQuadraticSource.generic_dimension",
+        "PaperP1.LocalizedAffineQuadraticSource.generic_nontrivial",
+        "PaperP1.LocalizedAffineQuadraticSource.parameter_compatibility",
+        "PaperP1.LocalizedAffineQuadraticSource.Source",
+        "PaperP1.LocalizedAffineQuadraticSource.Generic",
+        "PaperP1.LocalizedAffineQuadraticSource.injection",
+        "PaperP1.LocalizedAffineQuadraticSource.sourceAlgebra",
+        "PaperP1.LocalizedAffineQuadraticSource.genericAlgebra"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17777 jobs); direct axiom audit passed for 17488 declarations using only propext, Classical.choice and Quot.sound; all 17421 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.97 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

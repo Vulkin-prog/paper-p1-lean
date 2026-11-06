@@ -1,6 +1,18 @@
 # P1 — Lean formalization
 
-Current checkpoint P1-MATH-0644: the ACTUAL affine parameters Y^D,X^D
+Current checkpoint P1-MATH-0645: the ACTUAL affine quadratic source
+injects into its nontrivial generic algebra, finite of dimension
+<=2^k*D^2 over the ACTUAL power-parameter field. The source is finite
+over the power-parameter polynomial ring and both parameter actions
+commute exactly. No domain or branch-independence premise is assumed.
+Application of the original full-degree reduced equation, the generic
+field/fraction identification, monic normalization and conductor remain
+UNPROVED. Canonical T1.7 retains ONLY its prior P3 input in degrees>2
+at the original families and caps. Coverage stays 163 proved,
+2 conditional, 2 in_progress out of 167; all 73 main results proved.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0644: the ACTUAL affine parameters Y^D,X^D
 have an injective polynomial map, a scalar-preserving fraction map and
 proved exhaustive ambient coordinate generators. The actual function-field
 extension is FINITE of dimension <=D^2 in EVERY characteristic. No map
@@ -495,7 +507,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **642 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **643 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -1890,3 +1902,5 @@ P1-MATH-0642 proves that an actual root of a full-degree monic irreducible polyn
 P1-MATH-0643 proves finite dimension at most D^2 for a field generated by two elements whose D-th powers lie in the base field, in every characteristic. The actual power-parameter fraction map and localized source application remain unfinished.
 
 P1-MATH-0644 constructs the exact affine parameter map Y^D,X^D, its fraction map and exhaustive coordinate generators, and proves finite function-field dimension at most D^2 in every characteristic. The full localized quadratic-source and conductor application remain unfinished.
+
+P1-MATH-0645 proves that every actual affine quadratic source injects into its finite generic algebra of dimension at most 2^k*D^2 over the actual power-parameter field. The source parameter map commutes exactly with the generic fraction map. Original reduced equation normalization and conductor verification remain unfinished.

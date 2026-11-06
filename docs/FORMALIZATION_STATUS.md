@@ -1,6 +1,18 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0644: the ACTUAL affine parameters Y^D,X^D
+Current checkpoint P1-MATH-0645: the ACTUAL affine quadratic source
+injects into its nontrivial generic algebra, finite of dimension
+<=2^k*D^2 over the ACTUAL power-parameter field. The source is finite
+over the power-parameter polynomial ring and both parameter actions
+commute exactly. No domain or branch-independence premise is assumed.
+Application of the original full-degree reduced equation, the generic
+field/fraction identification, monic normalization and conductor remain
+UNPROVED. Canonical T1.7 retains ONLY its prior P3 input in degrees>2
+at the original families and caps. Coverage stays 163 proved,
+2 conditional, 2 in_progress out of 167; all 73 main results proved.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0644: the ACTUAL affine parameters Y^D,X^D
 have an injective polynomial map, a scalar-preserving fraction map and
 proved exhaustive ambient coordinate generators. The actual function-field
 extension is FINITE of dimension <=D^2 in EVERY characteristic. No map
@@ -615,7 +627,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records642 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records643 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -734,7 +746,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17480 audited theorem/lemma declarations**. This
+- The project currently has **17488 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29953,3 +29965,14 @@ The two ambient coordinates satisfy their actual power equations over the mapped
 One module adds thirteen theorems and nine definitions, including four type abbreviations. This discharges identification and dimension of the actual ordered affine power-parameter fraction extension. The localized quadratic-source dimension, reduced projected equation normalization, primitive/conductor application and effective arithmetic assembly remain unfinished. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.0 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17775 jobs); direct axiom audit passed for 17480 declarations using only propext, Classical.choice and Quot.sound; all 17408 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.99 GiB.
+
+
+## The actual affine quadratic source injects into a finite generic algebra of dimension at most 2 to the k times D squared
+
+LocalizedAffineQuadraticSource constructs the actual affine quadratic tower over F[X][Y] and its literal generic tower over the ambient rational function field, for EVERY list of radicands. The source map is the actual quadratic-tower base-change homomorphism; its injectivity and value on every base polynomial are proved. No branch-independence, domain or nonzero radical-coefficient assumption is required.
+
+The source is finite over the ACTUAL ordered power-parameter polynomial algebra by polynomial expansion finiteness and the existing explicit quadratic-tower basis. The generic tower is finite over the actual power-parameter fraction field. Its scalar-tower identity and the exact tower dimension formula give dimension at most 2^length(s)*D^2 over that field. The generic algebra is nontrivial by injectivity of its base map. The final theorem proves that the ACTUAL source parameter action commutes with the ACTUAL generic fraction action on every parameter polynomial.
+
+One module adds eight theorems and five definitions, including two type abbreviations. This discharges the actual localized quadratic-source dimension upper bound and injective parameter-compatible comparison. The full-degree reduced original equation, generic field/fraction identification, monic normalization, derivative conductor and effective original-family assembly remain unfinished. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.0 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17777 jobs); direct axiom audit passed for 17488 declarations using only propext, Classical.choice and Quot.sound; all 17421 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.97 GiB.
