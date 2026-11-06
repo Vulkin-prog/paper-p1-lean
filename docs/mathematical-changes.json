@@ -36271,6 +36271,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "298be4b72f1737a2e56d8b08ee175f89aaf4845f"
+    },
+    {
+      "id": "P1-MATH-0799",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The normalized amplified moment must be instantiated with the literal narrow band and weighted cofactor coefficient. All reciprocal-mass, support-rounding and growing-order conditions must be proved for that instance.",
+      "finding": "For the ACTUAL narrow prime band, ACTUAL cofactor interval, original full-support count denominator and other-band presence coefficient, BOTH continuous and unit-separated sampled amplified means satisfy the normalized bounds C*(T/Ltot+1)*budget and 18*C*((T+1)/Ltot+1)*budget. Here Ltot=ceil(anchor1)^k*ceil(X/anchor2), and the budget is the internally proved repeated-prime moment. The actual band reciprocal-mass condition is proved from H>=4 and anchor1>=H; k<=H controls the exact rounded support span. One theorem proves both estimates, with unit bounds only on the supports actually used.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual narrow prime power and weighted cofactor means satisfy uniform rounded support bounds. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.ActualNarrowAmplifiedMean.estimates"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18165 jobs); direct axiom audit passed for 18576 declarations using only propext, Classical.choice and Quot.sound; all 18761 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.15 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
