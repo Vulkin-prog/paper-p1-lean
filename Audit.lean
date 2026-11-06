@@ -5083,6 +5083,8 @@ import PaperP1
 #print axioms PaperP1.SecondRegularCurveComponentGraphs.exists_local_chart_in_region
 #print axioms PaperP1.SecondRegularCurveComponentGraphs.local_charts_on_component
 #print axioms PaperP1.SecondRegularCurveComponentGraphs.finite_population_chart
+#print axioms PaperP1.SecondThresholdCardBudget.threshold_identity
+#print axioms PaperP1.SecondThresholdCardBudget.weighted_bound
 #print axioms PaperP1.SelectedPairWeightedSeries.kernel_change
 #print axioms PaperP1.SelectedPairWeightedSeries.point_bound
 #print axioms PaperP1.SelectedPairWeightedSeries.finite_bound
