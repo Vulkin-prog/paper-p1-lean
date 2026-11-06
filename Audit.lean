@@ -3819,6 +3819,12 @@ import PaperP1
 #print axioms PaperP1.FiniteCRTTails.shifted_square
 #print axioms PaperP1.FiniteCRTTails.finite_cube_sum
 #print axioms PaperP1.FiniteCRTTails.finite_square_sum
+#print axioms PaperP1.FiniteDifferencing.shifted_sum
+#print axioms PaperP1.FiniteDifferencing.window_sum
+#print axioms PaperP1.FiniteDifferencing.window_cauchy
+#print axioms PaperP1.FiniteDifferencing.window_energy_bound
+#print axioms PaperP1.FiniteDifferencing.correlation_square_bound
+#print axioms PaperP1.FiniteDifferencing.normalized_correlation_bound
 #print axioms PaperP1.FiniteEulerLogBound.factor_ne
 #print axioms PaperP1.FiniteEulerLogBound.point_log_error
 #print axioms PaperP1.FiniteEulerLogBound.product_ne
