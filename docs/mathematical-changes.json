@@ -27821,7 +27821,8 @@
       "integration": {
         "target": "new manuscript version after formalization",
         "status": "not_integrated"
-      }
+      },
+      "validation_commit": "7f61bcef50d4adac5dc517e31367f7603ef5624f"
     }
   ]
 }
