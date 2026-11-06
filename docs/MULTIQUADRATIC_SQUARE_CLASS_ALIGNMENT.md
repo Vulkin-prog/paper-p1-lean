@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0790: Actual least common multiples of two
+Current checkpoint P1-MATH-0791: Actual least common multiple fibres
+have an explicit repeated-prime divisor bound. The complementary bad-
+prime frequency contribution, the central-frequency mean subtraction and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.35 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0790: Actual least common multiples of two
 prime product layers remain in degrees k through 2k. The complementary
 bad-prime frequency contribution, the central-frequency mean subtraction
 and complete logarithmic short-average concentration remain unproved.
@@ -26065,3 +26074,12 @@ The total valuation of lcm(a,b) lies between max(degree(a),degree(b)) and degree
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.35 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18147 jobs); direct axiom audit passed for 18542 declarations using only propext, Classical.choice and Quot.sound; all 18723 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.31 GiB.
+
+
+## Actual least common multiple fibres have an explicit repeated-prime divisor bound
+
+For every positive integer supported on P, its actual divisor count is <=2^(total P-adic valuation), by the exact divisor-count factorization and e+1<=2^e. Every pair with lcm(a,b)=z injects into divisors(z) times divisors(z). For the ACTUAL two k-product layers, the proved valuation range therefore gives the uniform fibre bound 16^k at EVERY actual lcm image point. Four theorems retain all repeated prime factors and all divisor pairs; no injectivity of the product or lcm map is assumed.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.35 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18149 jobs); direct axiom audit passed for 18546 declarations using only propext, Classical.choice and Quot.sound; all 18727 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.29 GiB.

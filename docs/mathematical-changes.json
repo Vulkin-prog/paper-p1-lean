@@ -36018,6 +36018,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "c3bb2abac8990906a5d2d8b7be5ebfbcea94c4f3"
+    },
+    {
+      "id": "P1-MATH-0791",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A bound on the number of actual pairs over each lcm value is needed to control shared-factor kernel terms. Repeated prime powers change the divisor count and cannot be dropped.",
+      "finding": "For every positive integer supported on P, its actual divisor count is <=2^(total P-adic valuation), by the exact divisor-count factorization and e+1<=2^e. Every pair with lcm(a,b)=z injects into divisors(z) times divisors(z). For the ACTUAL two k-product layers, the proved valuation range therefore gives the uniform fibre bound 16^k at EVERY actual lcm image point. Four theorems retain all repeated prime factors and all divisor pairs; no injectivity of the product or lcm map is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual least common multiple fibres have an explicit repeated-prime divisor bound. The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.PrimeProductDivisorCard.successor_le_two_pow",
+        "PaperP1.PrimeProductDivisorCard.card_divisors_le_two_pow",
+        "PaperP1.PrimeProductDivisorCard.pair_fibre_le_divisors_square",
+        "PaperP1.PrimeProductDivisorCard.lcm_fibre_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18149 jobs); direct axiom audit passed for 18546 declarations using only propext, Classical.choice and Quot.sound; all 18727 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.29 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

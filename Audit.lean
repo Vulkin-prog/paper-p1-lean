@@ -4579,6 +4579,10 @@ import PaperP1
 #print axioms PaperP1.PrimeProductDegree.degree_of_layer
 #print axioms PaperP1.PrimeProductDegree.layer_of_supported
 #print axioms PaperP1.PrimeProductDegree.layer_iff
+#print axioms PaperP1.PrimeProductDivisorCard.successor_le_two_pow
+#print axioms PaperP1.PrimeProductDivisorCard.card_divisors_le_two_pow
+#print axioms PaperP1.PrimeProductDivisorCard.pair_fibre_le_divisors_square
+#print axioms PaperP1.PrimeProductDivisorCard.lcm_fibre_bound
 #print axioms PaperP1.PrimeProductLcmLayers.multiplicity_lcm_bounds
 #print axioms PaperP1.PrimeProductLcmLayers.supported_lcm
 #print axioms PaperP1.PrimeProductLcmLayers.lcm_in_layers
