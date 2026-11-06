@@ -1,6 +1,15 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0841: The actual full energy reduces to a
+Current checkpoint P1-MATH-0842: The actual final-prime moment budget
+has a squared-log-log exponential bound. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.38 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0841: The actual full energy reduces to a
 literal region where all three prime bands have large blocks. The joint
 large-prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -26991,3 +27000,12 @@ Define the ACTUAL retained region as the previous jointly-large region minus the
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.40 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18249 jobs); direct axiom audit passed for 18699 declarations using only propext, Classical.choice and Quot.sound; all 18906 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.40 GiB.
+
+
+## The actual final-prime moment budget has a squared-log-log exponential bound
+
+The reciprocal final threshold moment is EXACTLY ((1/z^100)^(2*k))^(-1)=exp(200*k*x) when z>0 and log z=x. For x>=2, z>=x^5, k<=3*x, C<=exp(x^2) and prime reciprocal mass<=1, prove the FULL actual cardinality budget C*budget(k,P)/(1/z^100)^(2*k)<=exp(1000*x^2). Two theorems retain every exact threshold and factorial/lcm cost.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.38 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18251 jobs); direct axiom audit passed for 18701 declarations using only propext, Classical.choice and Quot.sound; all 18908 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.38 GiB.
