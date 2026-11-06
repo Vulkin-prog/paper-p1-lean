@@ -31075,6 +31075,43 @@
         "status": "not_integrated"
       },
       "validation_commit": "99fa34ba7b1744ea77a258685cfa511f55a77267"
+    },
+    {
+      "id": "P1-MATH-0653",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The original height-controlled integer model had no proved monic normalization with retained full degree and irreducibility after reduction, and excluding a normalization denominator risked an uncontrolled prime budget.",
+      "finding": "The normalization scalar is a literal nonzero INTEGER coefficient of the original model, bounded by its original height. Multiplying it by the proved Noether certificate gives a uniform polynomial-height integer certificate for actual monic irreducible full-degree affine reduction.",
+      "proposed_revision": "Use this literal leading coefficient and the proved combined certificate for the original reduced equation. Keep normalized source vanishing, branch-certificate combination, canonical residue-class counting and original-family cover assembly explicit until completed.",
+      "impact": "Discharges original integer-model monic normalization, full degree, affine irreducibility and their effective polynomial-height prime exclusion. Original source and canonical residue/cover assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.IntegerProjectedModelNormalization.model_coefficients",
+        "PaperP1.IntegerProjectedModelNormalization.topCoefficient_height",
+        "PaperP1.IntegerProjectedModelNormalization.normalized_monic_degree",
+        "PaperP1.IntegerProjectedModelNormalization.normalized_homogeneous",
+        "PaperP1.IntegerProjectedModelNormalization.normalized_irreducible",
+        "PaperP1.IntegerProjectedModelNormalization.model_monic_reduction",
+        "PaperP1.IntegerProjectedModelNormalization.affine_model_properties",
+        "PaperP1.IntegerProjectedModelNormalization.good_prime_affine_properties",
+        "PaperP1.IntegerProjectedModelNormalization.bounded_model_certificate",
+        "PaperP1.IntegerProjectedModelNormalization.topCoefficient",
+        "PaperP1.IntegerProjectedModelNormalization.normalized"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17797 jobs); direct axiom audit passed for 17561 declarations using only propext, Classical.choice and Quot.sound; all 17517 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.85 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

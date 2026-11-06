@@ -5986,6 +5986,15 @@ import PaperP1
 #print axioms PaperP1.IntegerPopulationBoxBudget.large_degree
 #print axioms PaperP1.IntegerPopulationBoxBudget.large_degree_profile
 #print axioms PaperP1.IntegerPopulationBoxBudget.unit_height_profile
+#print axioms PaperP1.IntegerProjectedModelNormalization.model_coefficients
+#print axioms PaperP1.IntegerProjectedModelNormalization.topCoefficient_height
+#print axioms PaperP1.IntegerProjectedModelNormalization.normalized_monic_degree
+#print axioms PaperP1.IntegerProjectedModelNormalization.normalized_homogeneous
+#print axioms PaperP1.IntegerProjectedModelNormalization.normalized_irreducible
+#print axioms PaperP1.IntegerProjectedModelNormalization.model_monic_reduction
+#print axioms PaperP1.IntegerProjectedModelNormalization.affine_model_properties
+#print axioms PaperP1.IntegerProjectedModelNormalization.good_prime_affine_properties
+#print axioms PaperP1.IntegerProjectedModelNormalization.bounded_model_certificate
 #print axioms PaperP1.IntegerRealIntervalCount.interval_card
 #print axioms PaperP1.IntegerRealIntervalCount.band_card
 #print axioms PaperP1.IntegerRealIntervalCount.strip_card

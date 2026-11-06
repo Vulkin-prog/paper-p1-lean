@@ -1,6 +1,20 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0652: the LITERAL P3 affine polynomial
+Current checkpoint P1-MATH-0653: the ORIGINAL integer projected
+model has an actual nonzero INTEGER leading normalization coefficient,
+bounded by its original coefficient height. Combined with the proved
+Noether certificate it gives B!=0 with |B|<=T*A^N, constants BEFORE
+all heights and models. EVERY prime not dividing B gives actual monic,
+irreducible, EXACT-full-degree affine reduction and bounded coefficient
+degrees. No normalization denominator or point estimate is assumed.
+Normalized original-source vanishing, branch/canonical residue and
+original-family cover assembly remain UNPROVED. The unrestricted P3
+input is unchanged. Canonical T1.7 retains ONLY its prior P3 input in
+degrees>2 at the original families and caps. Coverage stays 163 proved,
+2 conditional, 2 in_progress out of 167; all 73 main results proved.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0652: the LITERAL P3 affine polynomial
 is exactly the original first-variable polynomial with coefficients
 specialized at Z=1. Monicity, full primitive degree, irreducibility,
 coefficient degree bounds and EVERY source evaluation are proved
@@ -716,7 +730,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records650 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records651 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -835,7 +849,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17552 audited theorem/lemma declarations**. This
+- The project currently has **17561 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30146,3 +30160,16 @@ The same polynomial is monic, has primitive degree equal to the original homogen
 One module adds thirteen theorems and one definition. This discharges exact P3 last-chart polynomial transport, degree, irreducibility, coefficient bounds and arbitrary-algebra evaluation. The ORIGINAL integer model still needs its actual leading coefficient extracted and excluded at reduction primes to normalize it monically; original source reduction/normalization assembly and effective prime/cover budgets remain unfinished. The unrestricted P3 input is unchanged. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.9 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17795 jobs); direct axiom audit passed for 17552 declarations using only propext, Classical.choice and Quot.sound; all 17506 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.87 GiB.
+
+
+## The original integer projected model has a polynomial-height certificate for monic irreducible full-degree affine reduction
+
+IntegerProjectedModelNormalization extracts the LITERAL integer coefficient of the pure primitive-variable monomial from the original integer projected polynomial Q. From the exact existing scalar-multiple relation map(Q)=C(a)*q with the original homogeneous monic rational q, it proves that this integer coefficient equals a rationally and is nonzero. In the first-variable polynomial presentation it is the entire leading coefficient, and all coefficients above the original degree vanish. Its absolute value is bounded by the ORIGINAL coefficient height of Q; no denominator or uncontrolled scalar is introduced.
+
+Dividing the field reduction of Q by this coefficient produces an actual homogeneous monic polynomial of EXACT original primitive degree whenever the coefficient remains nonzero. Irreducibility is retained. The exact last affine polynomial is consequently monic, irreducible, of the original full degree, and has all coefficient total degrees bounded by that degree. These properties are proved from the original integer scalar-multiple model, not assumed for an unrelated reduced model.
+
+The final theorem combines this literal leading coefficient with the ALREADY PROVED universal Noether good-reduction certificate. For each fixed positive degree it provides constants T,N BEFORE the height and all integer and rational models. It constructs a nonzero integer B with |B|<=T*A^N such that EVERY prime not dividing B has all the actual normalized affine monic, irreducible, exact-degree and coefficient-degree properties. The proof includes descent of geometric irreducibility to the prime field. No universal Noether-form input or finite-field point estimate is assumed.
+
+One module adds nine theorems and two definitions. This discharges original integer-model monic normalization, retained full degree, affine irreducibility and their uniform polynomial-height exceptional-prime certificate. Exact original source vanishing after normalization, combination with the branch certificate, actual canonical residue-class count and original-family cover assembly remain unfinished. The unrestricted P3 input is unchanged. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.9 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17797 jobs); direct axiom audit passed for 17561 declarations using only propext, Classical.choice and Quot.sound; all 17517 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.85 GiB.

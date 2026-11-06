@@ -1,6 +1,20 @@
 # P1 — Lean formalization
 
-Current checkpoint P1-MATH-0652: the LITERAL P3 affine polynomial
+Current checkpoint P1-MATH-0653: the ORIGINAL integer projected
+model has an actual nonzero INTEGER leading normalization coefficient,
+bounded by its original coefficient height. Combined with the proved
+Noether certificate it gives B!=0 with |B|<=T*A^N, constants BEFORE
+all heights and models. EVERY prime not dividing B gives actual monic,
+irreducible, EXACT-full-degree affine reduction and bounded coefficient
+degrees. No normalization denominator or point estimate is assumed.
+Normalized original-source vanishing, branch/canonical residue and
+original-family cover assembly remain UNPROVED. The unrestricted P3
+input is unchanged. Canonical T1.7 retains ONLY its prior P3 input in
+degrees>2 at the original families and caps. Coverage stays 163 proved,
+2 conditional, 2 in_progress out of 167; all 73 main results proved.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0652: the LITERAL P3 affine polynomial
 is exactly the original first-variable polynomial with coefficients
 specialized at Z=1. Monicity, full primitive degree, irreducibility,
 coefficient degree bounds and EVERY source evaluation are proved
@@ -596,7 +610,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **650 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **651 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -2007,3 +2021,5 @@ P1-MATH-0650 proves the exact actual image kernel (P), the root-algebra quotient
 P1-MATH-0651 proves exact last-chart quotients and preservation of homogeneous irreducibility over every field. Monicity and positive degree imply full primitive degree and chart nonemptiness internally. Original integer-model normalization and effective prime/cover assembly remain unfinished.
 
 P1-MATH-0652 proves the exact last-chart polynomial, coefficient-field transport, full primitive degree, irreducibility, coefficient degree bounds and literal source evaluation from the homogeneous monic P3 equation. Original integer-model leading-coefficient normalization and effective arithmetic assembly remain unfinished.
+
+P1-MATH-0653 proves that the original normalization scalar is a nonzero integer coefficient bounded by the original model height. Combined with internal Noether forms it gives a uniform polynomial-height certificate for monic irreducible full-degree affine reduction. Original source, branch and canonical residue/cover assembly remain unfinished.

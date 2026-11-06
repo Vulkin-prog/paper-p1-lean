@@ -1,6 +1,20 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0652: the LITERAL P3 affine polynomial
+Current checkpoint P1-MATH-0653: the ORIGINAL integer projected
+model has an actual nonzero INTEGER leading normalization coefficient,
+bounded by its original coefficient height. Combined with the proved
+Noether certificate it gives B!=0 with |B|<=T*A^N, constants BEFORE
+all heights and models. EVERY prime not dividing B gives actual monic,
+irreducible, EXACT-full-degree affine reduction and bounded coefficient
+degrees. No normalization denominator or point estimate is assumed.
+Normalized original-source vanishing, branch/canonical residue and
+original-family cover assembly remain UNPROVED. The unrestricted P3
+input is unchanged. Canonical T1.7 retains ONLY its prior P3 input in
+degrees>2 at the original families and caps. Coverage stays 163 proved,
+2 conditional, 2 in_progress out of 167; all 73 main results proved.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0652: the LITERAL P3 affine polynomial
 is exactly the original first-variable polynomial with coefficients
 specialized at Z=1. Monicity, full primitive degree, irreducibility,
 coefficient degree bounds and EVERY source evaluation are proved
@@ -30134,6 +30148,15 @@ proved monicity, full degree, irreducibility, bounded coefficient degrees
 and arbitrary source-algebra evaluation. Original integer leading-coefficient
 normalization and effective prime/cover assembly remain unfinished.
 
+## Internal original integer-model monic good-reduction certificate
+
+P1-MATH-0653 extracts the literal height-bounded leading integer coefficient
+from the original scalar-multiple model. Its product with the internally
+proved Noether certificate has polynomial height and guarantees actual
+normalized affine monicity, irreducibility, exact degree and coefficient
+bounds at every avoiding prime. Original source, branch, canonical
+residue and effective original-family cover assembly remain unfinished.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -31441,3 +31464,18 @@ The same polynomial is monic, has primitive degree equal to the original homogen
 One module adds thirteen theorems and one definition. This discharges exact P3 last-chart polynomial transport, degree, irreducibility, coefficient bounds and arbitrary-algebra evaluation. The ORIGINAL integer model still needs its actual leading coefficient extracted and excluded at reduction primes to normalize it monically; original source reduction/normalization assembly and effective prime/cover budgets remain unfinished. The unrestricted P3 input is unchanged. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.9 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17795 jobs); direct axiom audit passed for 17552 declarations using only propext, Classical.choice and Quot.sound; all 17506 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.87 GiB.
+
+
+## The original integer projected model has a polynomial-height certificate for monic irreducible full-degree affine reduction
+
+Stable ID: p1:internal:integer-projected-model-monic-reduction-certificate. Original integer-model monic normalization, exact degree and affine irreducibility have an internal polynomial-height exceptional-prime certificate. The normalization scalar is a literal height-bounded integer coefficient.
+
+IntegerProjectedModelNormalization extracts the LITERAL integer coefficient of the pure primitive-variable monomial from the original integer projected polynomial Q. From the exact existing scalar-multiple relation map(Q)=C(a)*q with the original homogeneous monic rational q, it proves that this integer coefficient equals a rationally and is nonzero. In the first-variable polynomial presentation it is the entire leading coefficient, and all coefficients above the original degree vanish. Its absolute value is bounded by the ORIGINAL coefficient height of Q; no denominator or uncontrolled scalar is introduced.
+
+Dividing the field reduction of Q by this coefficient produces an actual homogeneous monic polynomial of EXACT original primitive degree whenever the coefficient remains nonzero. Irreducibility is retained. The exact last affine polynomial is consequently monic, irreducible, of the original full degree, and has all coefficient total degrees bounded by that degree. These properties are proved from the original integer scalar-multiple model, not assumed for an unrelated reduced model.
+
+The final theorem combines this literal leading coefficient with the ALREADY PROVED universal Noether good-reduction certificate. For each fixed positive degree it provides constants T,N BEFORE the height and all integer and rational models. It constructs a nonzero integer B with |B|<=T*A^N such that EVERY prime not dividing B has all the actual normalized affine monic, irreducible, exact-degree and coefficient-degree properties. The proof includes descent of geometric irreducibility to the prime field. No universal Noether-form input or finite-field point estimate is assumed.
+
+One module adds nine theorems and two definitions. This discharges original integer-model monic normalization, retained full degree, affine irreducibility and their uniform polynomial-height exceptional-prime certificate. Exact original source vanishing after normalization, combination with the branch certificate, actual canonical residue-class count and original-family cover assembly remain unfinished. The unrestricted P3 input is unchanged. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families/caps. Coverage remains 163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 54.9 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17797 jobs); direct axiom audit passed for 17561 declarations using only propext, Classical.choice and Quot.sound; all 17517 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.85 GiB.
