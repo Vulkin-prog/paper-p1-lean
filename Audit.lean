@@ -4514,6 +4514,8 @@ import PaperP1
 #print axioms PaperP1.LogarithmicAbelWindow.envelope_integrable
 #print axioms PaperP1.LogarithmicAbelWindow.envelope_integral
 #print axioms PaperP1.LogarithmicAbelWindow.window_bound
+#print axioms PaperP1.LogarithmicCellSquareBudget.cell_lower
+#print axioms PaperP1.LogarithmicCellSquareBudget.finite_budget
 #print axioms PaperP1.LogarithmicDifferencingBound.budget_nonneg
 #print axioms PaperP1.LogarithmicDifferencingBound.harmonic_bound
 #print axioms PaperP1.LogarithmicDifferencingBound.energy
