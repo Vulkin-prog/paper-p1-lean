@@ -639,6 +639,15 @@ import PaperP1
 #print axioms PaperP1.BivariateNilpotentImplicitFunction.exists_polynomial_implicit
 #print axioms PaperP1.BivariatePolynomialDeterminantDivisibility.polynomial_dvd
 #print axioms PaperP1.BivariatePolynomialDeterminantDivisibility.congruent_polynomial_dvd
+#print axioms PaperP1.BivariateQuadraticTowerPoints.scalarTower
+#print axioms PaperP1.BivariateQuadraticTowerPoints.base_evaluation
+#print axioms PaperP1.BivariateQuadraticTowerPoints.evaluationRing_base
+#print axioms PaperP1.BivariateQuadraticTowerPoints.evaluationRing_root
+#print axioms PaperP1.BivariateQuadraticTowerPoints.evaluation_base
+#print axioms PaperP1.BivariateQuadraticTowerPoints.evaluation_root
+#print axioms PaperP1.BivariateQuadraticTowerPoints.hom_ext
+#print axioms PaperP1.BivariateQuadraticTowerPoints.points_finite
+#print axioms PaperP1.BivariateQuadraticTowerPoints.point_cardinality
 #print axioms PaperP1.BivariateRationalLines.totalDegree_zero
 #print axioms PaperP1.BivariateRationalLines.exists_coefficient_degree
 #print axioms PaperP1.BivariateRationalLines.exists_linear_form
@@ -7703,6 +7712,9 @@ import PaperP1
 #print axioms PaperP1.SplitProductInversion.linear_root
 #print axioms PaperP1.SplitProductInversion.character_inversion
 #print axioms PaperP1.SplitProductInversion.character_sum_inversion
+#print axioms PaperP1.SplitRadicalAlgebraPointCount.cardinality
+#print axioms PaperP1.SplitRadicalAlgebraPointCount.uniform_absolute
+#print axioms PaperP1.SplitRadicalAlgebraPointCount.uniform_upper_bound
 #print axioms PaperP1.SplitRadicalFiniteFieldPointCount.mem_points_iff
 #print axioms PaperP1.SplitRadicalFiniteFieldPointCount.product_linearValue
 #print axioms PaperP1.SplitRadicalFiniteFieldPointCount.character_sum_union

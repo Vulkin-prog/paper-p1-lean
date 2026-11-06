@@ -4524,3 +4524,5 @@ public import PaperP1.Arithmetic.SplitProductInversion
 public import PaperP1.Arithmetic.IntegerSplitProductCharacterEstimate
 public import PaperP1.Arithmetic.SplitRadicalUniformPointEstimate
 public import PaperP1.Algebra.ConductorPointExtension
+public import PaperP1.Algebra.BivariateQuadraticTowerPoints
+public import PaperP1.Arithmetic.SplitRadicalAlgebraPointCount

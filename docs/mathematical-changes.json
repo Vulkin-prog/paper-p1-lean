@@ -30327,6 +30327,52 @@
         "status": "not_integrated"
       },
       "validation_commit": "73085d80e6123f481c9fa02bbdde2ae9d326a218"
+    },
+    {
+      "id": "P1-MATH-0634",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The proved finite source-solution count had not yet been identified with every actual scalar-preserving evaluation of the source coordinate algebra.",
+      "finding": "The universal quadratic-tower maps give an actual point equivalence recovering both base variables and all radical coordinates, hence exact cardinality equality and unconditional uniform affine source-algebra counts.",
+      "proposed_revision": "Use the literal algebra-point equivalence when passing from counted source solutions to affine coordinate-ring points. Keep normalized-chart and reduced projected-model identifications explicit until their separate proofs are complete.",
+      "impact": "Discharges the finite solution-to-algebra-point gap and proves the full weak affine source-algebra estimate. Normalized chart assembly, original-model reduction and projected transfer budgets remain unproved; canonical T1.7 and numbered coverage are unchanged.",
+      "evidence": [
+        "PaperP1.BivariateQuadraticTowerPoints.scalarTower",
+        "PaperP1.BivariateQuadraticTowerPoints.base_evaluation",
+        "PaperP1.BivariateQuadraticTowerPoints.evaluationRing_base",
+        "PaperP1.BivariateQuadraticTowerPoints.evaluationRing_root",
+        "PaperP1.BivariateQuadraticTowerPoints.evaluation_base",
+        "PaperP1.BivariateQuadraticTowerPoints.evaluation_root",
+        "PaperP1.BivariateQuadraticTowerPoints.hom_ext",
+        "PaperP1.BivariateQuadraticTowerPoints.points_finite",
+        "PaperP1.BivariateQuadraticTowerPoints.point_cardinality",
+        "PaperP1.SplitRadicalAlgebraPointCount.cardinality",
+        "PaperP1.SplitRadicalAlgebraPointCount.uniform_absolute",
+        "PaperP1.SplitRadicalAlgebraPointCount.uniform_upper_bound",
+        "PaperP1.BivariateQuadraticTowerPoints.scalarAlgebra",
+        "PaperP1.BivariateQuadraticTowerPoints.evaluationRing",
+        "PaperP1.BivariateQuadraticTowerPoints.evaluation",
+        "PaperP1.BivariateQuadraticTowerPoints.Point",
+        "PaperP1.BivariateQuadraticTowerPoints.coordinates",
+        "PaperP1.BivariateQuadraticTowerPoints.pointsEquiv",
+        "PaperP1.SplitRadicalAlgebraPointCount.concreteEquiv",
+        "PaperP1.SplitRadicalAlgebraPointCount.pointsEquiv"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17735 jobs); direct axiom audit passed for 17393 declarations using only propext, Classical.choice and Quot.sound; all 17291 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.17 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

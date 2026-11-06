@@ -1,6 +1,18 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0633: point evaluations off an ACTUAL conductor
+Current checkpoint P1-MATH-0634: ALL actual affine quadratic-tower algebra
+points are identified with the literal simultaneous solutions, recovering
+both base coordinates and every radical root. Their finite cardinalities
+are equal. The full weak affine split-radical source-algebra point estimate
+is now UNCONDITIONAL at certificate-good large primes, with its cutoff
+before coefficients and supports. Normalized-chart assembly, original
+model reduction, reduced conductors, exceptional bounds and effective
+prime budgets remain UNPROVED. Canonical T1.7 retains ONLY its prior P3
+input in degrees>2 at the original families and caps. Coverage stays
+163 proved, 2 conditional, 2 in_progress out of 167; all 73 main results
+proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0633: point evaluations off an ACTUAL conductor
 extend uniquely by the proved formula psi(delta*a)/psi(delta). This gives
 an exact good-locus point equivalence. The total image-point count is at
 most the source count plus the ACTUAL exceptional-locus count. The source
@@ -29724,6 +29736,17 @@ input. The conductor premise must hold in the actual ring. Original-model
 reduction, exceptional-locus bounds and effective prime budgets remain
 unproved; no general P3 point estimate is claimed.
 
+## Internal literal affine source-algebra point count
+
+P1-MATH-0634 proves the actual equivalence between every scalar-preserving
+point of a bivariate quadratic tower and its simultaneous field equations.
+Both base coordinates and every radical coordinate are recovered, and the
+universal map supplies the inverse. Exact cardinality equality transports
+the internal source count to the actual affine algebra, with a uniform
+cutoff before coefficients and branches. No matching-cardinality input is
+assumed. Normalized-chart assembly, original projected-model reduction
+and effective prime budgets remain unfinished.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -30778,3 +30801,16 @@ The construction gives an ACTUAL equivalence between the field-valued points of 
 One module adds eleven theorems and four definitions. This discharges the abstract-algebra point-extension and good-locus transfer steps. Identification and reduction of the original source/projected models, a bound for the actual exceptional locus, and uniform effective prime budgets still require proofs. The complete actual split-radical source estimate from P1-MATH-0632 remains unconditional, but no general projected P3 estimate is claimed. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same three original families and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167, all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.2 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17731 jobs); direct axiom audit passed for 17381 declarations using only propext, Classical.choice and Quot.sound; all 17271 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.19 GiB.
+
+
+## Literal quadratic-tower algebra points and unconditional uniform source-algebra counts
+
+Stable ID: p1:internal:literal-source-algebra-point-correspondence. Actual source algebra points now have the proved unconditional source count. Normalized-chart assembly and original projected-model reduction remain unfinished.
+
+BivariateQuadraticTowerPoints fixes the scalar action through the literal bivariate-polynomial base map and proves its scalar-tower compatibility. Every scalar-preserving field evaluation of an actual quadratic tower restricts to evaluation at its two recovered base coordinates. The universal radical evaluation map is constructed from the previously proved simultaneous-equation universal property, and its values on all base polynomials and radical roots are proved. Two evaluations agreeing on the two base variables and every radical root are equal. These maps give an ACTUAL equivalence between every field-valued algebra point and the literal tuple (x,y,w_i) satisfying w_i^2=f_i(x,y). Over a finite field the algebra-point set is proved finite, and its natural cardinality equals that of the solution tuples.
+
+SplitRadicalAlgebraPointCount identifies these tuples with the ACTUAL finite source point set for the literal scaled split polynomials. Thus the algebra-point natural cardinality is exactly the already counted finite-set cardinality. Combining this identity with P1-MATH-0632 proves unconditional absolute and upper uniform point estimates for the actual affine source algebra over large certificate-good prime fields. One cutoff precedes all primes, branch supports, coefficient vectors and actual polynomial lists of the prescribed length. No point-bijection, matching-count, cancellation or point-estimate conclusion is assumed. The explicit polynomial-list equality is the literal defining-equation identification.
+
+Two modules add twelve theorems and eight definitions. The solution-to-algebra-point identification and full weak affine source-algebra point estimate are now internal proofs. Normalized Veronese-chart point assembly, actual reduction of source/projected models, reduced-conductor verification, exceptional-locus bounds and uniform effective prime budgets still need proofs. No general projected P3 estimate is claimed. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167, all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.2 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17735 jobs); direct axiom audit passed for 17393 declarations using only propext, Classical.choice and Quot.sound; all 17291 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.17 GiB.
