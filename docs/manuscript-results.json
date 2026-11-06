@@ -40803,7 +40803,8 @@
             "PaperP1.HyperellipticProductIndependence.nonzero_linear_combination"
           ]
         }
-      ]
+      ],
+      "validation_commit": "c8a777212a21b5521baed12de83a4882561f63e1"
     },
     {
       "label": "p1:arith:dense",
