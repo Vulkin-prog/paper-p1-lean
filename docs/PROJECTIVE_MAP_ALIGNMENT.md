@@ -1,6 +1,13 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0719: The actual triple convolution on a
+Current checkpoint P1-MATH-0720: Exact actual geometric prime-band
+partition without endpoint double counting. Final logarithmic short-
+average concentration and original T19.17 remain unfinished. Original
+T1.7 complete. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. False scopes/corrections unchanged. No Palomar
+registration.
+
+Historical checkpoint P1-MATH-0719: The actual triple convolution on a
 logarithmic prime band has norm <=C*X*U, with a universal explicit
 positive constant. The actual geometric band partition, global Halasz
 assembly and final logarithmic short-average theorem remain unfinished.
@@ -24096,3 +24103,14 @@ The positive constant is (1+C_diameter/log(2))*(1+(1+primePowerTotal)/log(2)). A
 The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18005 jobs); direct axiom audit passed for 18213 declarations using only propext, Classical.choice and Quot.sound; all 18319 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.58 GiB.
+
+
+## Exact actual geometric prime-band partition without endpoint double counting
+
+The actual covering exponent is the LEAST K with log(X)<=log(2)*2^K. Its scale is <=2*log(X) for X>=2. Each actual prime with 2*p<=X has log(2)<=log(X/p)<=log(X), so the proved dyadic cover assigns it one literal band index. Every assigned scale brackets log(X/p) within a factor two and is >=log(2).
+
+The finite band is the actual filter on this index. Bands are subsets of the original prime set, distinct indices give disjoint bands, and exact finite fibre summation identifies the original triple convolution with the sum of all actual band convolutions. Endpoints do not create multiplicity. Thirteen theorems and five definitions are added.
+
+Final logarithmic short-average concentration and original T19.17 remain unfinished. Original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18007 jobs); direct axiom audit passed for 18226 declarations using only propext, Classical.choice and Quot.sound; all 18337 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.56 GiB.
