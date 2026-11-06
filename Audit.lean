@@ -5429,6 +5429,10 @@ import PaperP1
 #print axioms PaperP1.SecondRegularCurveComponentGraphs.finite_population_chart
 #print axioms PaperP1.SecondThresholdCardBudget.threshold_identity
 #print axioms PaperP1.SecondThresholdCardBudget.weighted_bound
+#print axioms PaperP1.SelbergPrimeOperator.budget_nonneg
+#print axioms PaperP1.SelbergPrimeOperator.uniform_energy_bound
+#print axioms PaperP1.SelbergPrimeOperator.uniform_prime_synthesis
+#print axioms PaperP1.SelbergPrimeOperator.uniform_prime_analysis
 #print axioms PaperP1.SelectedPairWeightedSeries.kernel_change
 #print axioms PaperP1.SelectedPairWeightedSeries.point_bound
 #print axioms PaperP1.SelectedPairWeightedSeries.finite_bound

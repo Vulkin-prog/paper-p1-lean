@@ -1,6 +1,16 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0930: The actual Selberg kernel has one
+Current checkpoint P1-MATH-0931: Actual separated prime synthesis and
+analysis have a proved Selberg operator bound with explicit remainder.
+The triple-large prime frequency contribution, the central-frequency
+mean comparison and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.92 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0930: The actual Selberg kernel has one
 Gaussian-plus-power envelope on the full polynomial frequency range. The
 triple-large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -34575,6 +34585,12 @@ Six theorems and two definitions prove an explicit positive decay delta_B<=1/4, 
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual separated prime synthesis and analysis have a proved selberg operator bound with explicit remainder
+
+Four theorems and one definition prove the nonnegative explicit budget (A*sqrt(pi)/G)*L+card(R)*C_B*Z^4*A^(1-delta_B). For fixed B>0, ONE scale cutoff precedes ALL A, ALL Z^2<=sqrt(A), ALL actual unit-separated frequency samples with pairwise differences<=A^B, ALL complex coefficients and ALL finite prime sets in [A,2A] with p>Z. The actual infinite positive energy is bounded by this budget times coefficient energy; prime synthesis and sampled prime analysis are bounded by exp(2) times that budget. The actual series identity, Gaussian row bound, prime majorant and finite duality are applied; no prime large-sieve estimate is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -39241,3 +39257,14 @@ Six theorems and two definitions prove an explicit positive decay delta_B<=1/4, 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.92 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18427 jobs); direct axiom audit passed for 19089 declarations using only propext, Classical.choice and Quot.sound; all 19367 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.92 GiB.
+
+
+## Actual separated prime synthesis and analysis have a proved Selberg operator bound with explicit remainder
+
+Stable ID: p1:internal:selberg-prime-operator. Actual separated prime synthesis and analysis have a proved Selberg operator bound with explicit remainder. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Four theorems and one definition prove the nonnegative explicit budget (A*sqrt(pi)/G)*L+card(R)*C_B*Z^4*A^(1-delta_B). For fixed B>0, ONE scale cutoff precedes ALL A, ALL Z^2<=sqrt(A), ALL actual unit-separated frequency samples with pairwise differences<=A^B, ALL complex coefficients and ALL finite prime sets in [A,2A] with p>Z. The actual infinite positive energy is bounded by this budget times coefficient energy; prime synthesis and sampled prime analysis are bounded by exp(2) times that budget. The actual series identity, Gaussian row bound, prime majorant and finite duality are applied; no prime large-sieve estimate is assumed.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.92 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18429 jobs); direct axiom audit passed for 19093 declarations using only propext, Classical.choice and Quot.sound; all 19372 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.90 GiB.
