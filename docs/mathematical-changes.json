@@ -34520,6 +34520,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "918bc15cb5b34e434a5fbfa336f4daef3c76a89a"
+    },
+    {
+      "id": "P1-MATH-0744",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The old Gram cap 3*N/Delta+2*T was insufficient at large frequency height. The actual new square-root estimate must be proved before using a strengthened Gram bound.",
+      "finding": "The actual logarithmic sum bound implies the explicit cap sqrt(128*(N*sqrt(2*T)+N^2/sqrt(Delta))*(1+log(N))) whenever 1<=Delta<=abs(t)<=2*T. It is combined with the earlier integral-comparison bound through their literal minimum. Every actual off-diagonal Dirichlet Gram correlation has this cap for separated sample frequencies. The proved finite Gram duality then gives actual analysis and large-value cardinality estimates, with the positive denominator condition explicit in the latter. Six theorems and one definition are proved. These are finite frequency estimates, not the remaining Ramare main-term or short-average theorem.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual square-root Gram cap and explicit large-value estimates. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.SquareRootGramBound.cap_nonneg",
+        "PaperP1.SquareRootGramBound.actual_sum_bound",
+        "PaperP1.SquareRootGramBound.mixed_sum_bound",
+        "PaperP1.SquareRootGramBound.separated_correlation_cap",
+        "PaperP1.SquareRootGramBound.analysis_bound",
+        "PaperP1.SquareRootGramBound.large_values_card",
+        "PaperP1.SquareRootGramBound.cap"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18055 jobs); direct axiom audit passed for 18361 declarations using only propext, Classical.choice and Quot.sound; all 18501 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.14 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
