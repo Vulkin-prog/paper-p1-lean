@@ -4979,6 +4979,14 @@ import PaperP1
 #print axioms PaperP1.PrimeRangeHighMoments.high_moment_bound
 #print axioms PaperP1.PrimeRangeHighMoments.large_values_measure
 #print axioms PaperP1.PrimeRangeHighMoments.uniform_prime_range_estimates
+#print axioms PaperP1.PrimeSelbergCoefficients.denominator_pos
+#print axioms PaperP1.PrimeSelbergCoefficients.denominator_log_lower
+#print axioms PaperP1.PrimeSelbergCoefficients.main_mass
+#print axioms PaperP1.PrimeSelbergCoefficients.absolute_mass
+#print axioms PaperP1.PrimeSelbergCoefficients.coefficient_support
+#print axioms PaperP1.PrimeSelbergCoefficients.lambda_divisor_identity
+#print axioms PaperP1.PrimeSelbergCoefficients.divisor_nonneg
+#print axioms PaperP1.PrimeSelbergCoefficients.prime_value
 #print axioms PaperP1.PrimeUnitMean.phase_time_add
 #print axioms PaperP1.PrimeUnitMean.value_add
 #print axioms PaperP1.PrimeUnitMean.energy_shifted
