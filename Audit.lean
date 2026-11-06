@@ -5616,6 +5616,10 @@ import PaperP1
 #print axioms PaperP1.ZetaHeadAndTail.head_split
 #print axioms PaperP1.ZetaHeadAndTail.rounded_head_bound
 #print axioms PaperP1.ZetaHeadAndTail.rounded_tail_bound
+#print axioms PaperP1.ZetaLogarithmicEnvelope.exponent_pos
+#print axioms PaperP1.ZetaLogarithmicEnvelope.uniform_bound
+#print axioms PaperP1.ZetaLogarithmicEnvelope.middle_normalized_tendsto
+#print axioms PaperP1.ZetaLogarithmicEnvelope.envelope_normalized_tendsto
 #print axioms PaperP1.ZetaMiddleEstimate.uniform_bound
 #print axioms PaperP1.ActiveGroupKernelErasure.dimension_cost
 #print axioms PaperP1.ActiveGroupKernelErasure.two_small_per_block
