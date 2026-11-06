@@ -38943,6 +38943,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "0329cade7b66baa52cf5cffc09b01b04492d0684"
+    },
+    {
+      "id": "P1-MATH-0884",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A change of damping must not be treated as harmless without a uniform proved comparison of the actual finite products.",
+      "finding": "Four theorems prove the real projection bound, exact coefficient real-part difference, and both logarithmic and norm comparisons for ANY actual finite Euler product when 0<=v_i<=w_i<=1/2, |f_i|<=1 and |z_i|=1. Replacing w by v costs at most sum(w-v)+2*sum(w^2) in the logarithm, or its actual exponential factor in norm. All local factors are proved nonzero and every quadratic error is retained.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Changing positive radial Euler weights has a proved finite norm cost. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FiniteEulerDampingComparison.real_projection_bound",
+        "PaperP1.FiniteEulerDampingComparison.coefficient_real_difference",
+        "PaperP1.FiniteEulerDampingComparison.log_product_comparison",
+        "PaperP1.FiniteEulerDampingComparison.norm_product_comparison"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18335 jobs); direct axiom audit passed for 18899 declarations using only propext, Classical.choice and Quot.sound; all 19141 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.76 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

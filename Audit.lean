@@ -3991,6 +3991,10 @@ import PaperP1
 #print axioms PaperP1.FiniteDyadicAssembly.partition
 #print axioms PaperP1.FiniteDyadicAssembly.norm_bound
 #print axioms PaperP1.FiniteDyadicAssembly.constant_norm_bound
+#print axioms PaperP1.FiniteEulerDampingComparison.real_projection_bound
+#print axioms PaperP1.FiniteEulerDampingComparison.coefficient_real_difference
+#print axioms PaperP1.FiniteEulerDampingComparison.log_product_comparison
+#print axioms PaperP1.FiniteEulerDampingComparison.norm_product_comparison
 #print axioms PaperP1.FiniteEulerLogBound.factor_ne
 #print axioms PaperP1.FiniteEulerLogBound.point_log_error
 #print axioms PaperP1.FiniteEulerLogBound.product_ne
