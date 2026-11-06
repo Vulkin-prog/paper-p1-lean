@@ -4794,6 +4794,12 @@ import PaperP1
 #print axioms PaperP1.SeparatedPolynomialSampling.derivative_coefficient_budget
 #print axioms PaperP1.SeparatedPolynomialSampling.sampled_mean_square
 #print axioms PaperP1.SeparatedPolynomialSampling.large_values_card
+#print axioms PaperP1.ShiftedCorrelations.shifted_correlation
+#print axioms PaperP1.ShiftedCorrelations.shifted_norm_symm
+#print axioms PaperP1.ShiftedCorrelations.shifted_norm_eq
+#print axioms PaperP1.ShiftedCorrelations.zero_correlation
+#print axioms PaperP1.ShiftedCorrelations.zero_correlation_norm
+#print axioms PaperP1.ShiftedCorrelations.differencing_bound
 #print axioms PaperP1.ShiftedExceptionWeight.exceptional_subset
 #print axioms PaperP1.ShiftedExceptionWeight.indicator_integrable
 #print axioms PaperP1.ShiftedExceptionWeight.integral_indicator

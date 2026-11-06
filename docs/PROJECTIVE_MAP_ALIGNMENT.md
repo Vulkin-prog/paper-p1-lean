@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0736: Exact finite differencing square bound
+Current checkpoint P1-MATH-0737: Actual shifted correlations and
+natural-distance differencing bound. The actual Ramare main-term
+frequency bounds and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 53.3 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0736: Exact finite differencing square bound
 with explicit endpoints. The actual Ramare main-term frequency bounds
 and complete logarithmic short-average concentration remain unproved.
 T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1
@@ -24377,3 +24386,12 @@ The actual shifted sequence is defined by its finite endpoint conditions. Each s
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.3 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18039 jobs); direct axiom audit passed for 18312 declarations using only propext, Classical.choice and Quot.sound; all 18444 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.28 GiB.
+
+
+## Actual shifted correlations and natural-distance differencing bound
+
+The literal shifted cross sum equals the actual finite correlation at shift h-k when k<=h. Complex conjugation gives norm symmetry. Every shifted Gram norm is exactly the norm of the actual correlation at Nat.dist(h,k). The zero-shift correlation is exactly the coefficient-square energy. The finite differencing bound is therefore rewritten with the actual standard correlations, retaining all finite endpoint conditions and H>0 in its normalized form. Six theorems and one definition are proved.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.3 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18041 jobs); direct axiom audit passed for 18318 declarations using only propext, Classical.choice and Quot.sound; all 18451 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.26 GiB.

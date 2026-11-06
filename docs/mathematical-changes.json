@@ -34281,6 +34281,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "51851ac57d55bd3c2c832bac3a89d6493ede4d19"
+    },
+    {
+      "id": "P1-MATH-0737",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Using a correlation formula with a reversed conjugation or a lost endpoint would invalidate the later oscillatory estimate.",
+      "finding": "The literal shifted cross sum equals the actual finite correlation at shift h-k when k<=h. Complex conjugation gives norm symmetry. Every shifted Gram norm is exactly the norm of the actual correlation at Nat.dist(h,k). The zero-shift correlation is exactly the coefficient-square energy. The finite differencing bound is therefore rewritten with the actual standard correlations, retaining all finite endpoint conditions and H>0 in its normalized form. Six theorems and one definition are proved.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual shifted correlations and natural-distance differencing bound. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.ShiftedCorrelations.shifted_correlation",
+        "PaperP1.ShiftedCorrelations.shifted_norm_symm",
+        "PaperP1.ShiftedCorrelations.shifted_norm_eq",
+        "PaperP1.ShiftedCorrelations.zero_correlation",
+        "PaperP1.ShiftedCorrelations.zero_correlation_norm",
+        "PaperP1.ShiftedCorrelations.differencing_bound",
+        "PaperP1.ShiftedCorrelations.correlation"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18041 jobs); direct axiom audit passed for 18318 declarations using only propext, Classical.choice and Quot.sound; all 18451 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.26 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

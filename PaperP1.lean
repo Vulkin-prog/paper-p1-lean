@@ -4676,3 +4676,4 @@ public import PaperP1.Analysis.ExpLogPrimeBand
 public import PaperP1.Analysis.TwoPrimeBandPopulation
 public import PaperP1.Analysis.TwoBandDirichletApproximation
 public import PaperP1.Analysis.FiniteDifferencing
+public import PaperP1.Analysis.ShiftedCorrelations
