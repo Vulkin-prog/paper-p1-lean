@@ -4897,3 +4897,4 @@ public import PaperP1.Analysis.ScaledMixedPairEnergy
 public import PaperP1.Analysis.ScaledIntermediateEnergy
 public import PaperP1.Analysis.ScaledRealOffCentralEnergy
 public import PaperP1.Analysis.SmoothMobiusConvolution
+public import PaperP1.Analysis.SmoothPrefixComparison

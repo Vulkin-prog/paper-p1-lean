@@ -1,6 +1,16 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0957: The actual ordinary smooth indicator
+Current checkpoint P1-MATH-0958: Actual smooth prefix means differ by an
+explicit rough-population error. The actual off-central Dirichlet
+frequency estimate is proved. The central-frequency short-to-long
+comparison, the analytic short-average bridge and complete logarithmic
+short-average concentration remain unproved. T19.17 conditional;
+original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2
+in_progress /167; all 73 main proved. Sources, false-scope corrections,
+compiler and axioms unchanged. About 52.40 GiB free on Ubuntu. No
+dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0957: The actual ordinary smooth indicator
 has an exact rough Möbius convolution. The actual off-central Dirichlet
 frequency estimate is proved. The central-frequency short-to-long
 comparison, the analytic short-average bridge and complete logarithmic
@@ -3398,7 +3408,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**955 mathematical improvements and two statement-scope corrections are confirmed.**
+**956 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -35101,3 +35111,12 @@ Eight theorems and one definition construct the actual real Möbius coefficients
 The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.40 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18481 jobs); direct axiom audit passed for 19174 declarations using only propext, Classical.choice and Quot.sound; all 19471 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.40 GiB.
+
+
+## Actual smooth prefix means differ by an explicit rough-population error
+
+Six theorems and three definitions prove the exact actual smooth prefix sum as a finite rough Möbius sum weighted by floor(x/d). Extending to any common cutoff K>=x yields an absolute error at most the actual rough population up to K against x times a common reciprocal sum. For positive x,z<=K, the normalized prefix means differ by at most roughCard(K)/x+roughCard(K)/z. All floors, supports and endpoints are exact. No asymptotic mean estimate is assumed.
+
+The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.40 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18483 jobs); direct axiom audit passed for 19180 declarations using only propext, Classical.choice and Quot.sound; all 19480 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.38 GiB.

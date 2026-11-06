@@ -41275,6 +41275,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "38221ca34e6861d7686cf441f907fe93194e9793"
+    },
+    {
+      "id": "P1-MATH-0958",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal specialized central comparison from the proved actual Möbius convolution; this finite result alone does not establish logarithmic short-average concentration.",
+      "finding": "Six theorems and three definitions prove the exact actual smooth prefix sum as a finite rough Möbius sum weighted by floor(x/d). Extending to any common cutoff K>=x yields an absolute error at most the actual rough population up to K against x times a common reciprocal sum. For positive x,z<=K, the normalized prefix means differ by at most roughCard(K)/x+roughCard(K)/z. All floors, supports and endpoints are exact. No asymptotic mean estimate is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual smooth prefix means differ by an explicit rough-population error. The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.SmoothPrefixComparison.prefix_floor",
+        "PaperP1.SmoothPrefixComparison.prefix_extended",
+        "PaperP1.SmoothPrefixComparison.division_error",
+        "PaperP1.SmoothPrefixComparison.prefix_error",
+        "PaperP1.SmoothPrefixComparison.normalized_error",
+        "PaperP1.SmoothPrefixComparison.comparison",
+        "PaperP1.SmoothPrefixComparison.prefixSum",
+        "PaperP1.SmoothPrefixComparison.roughSet",
+        "PaperP1.SmoothPrefixComparison.reciprocal"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18483 jobs); direct axiom audit passed for 19180 declarations using only propext, Classical.choice and Quot.sound; all 19480 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.38 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

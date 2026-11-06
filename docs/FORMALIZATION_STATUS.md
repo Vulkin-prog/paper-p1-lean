@@ -1,6 +1,16 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0957: The actual ordinary smooth indicator
+Current checkpoint P1-MATH-0958: Actual smooth prefix means differ by an
+explicit rough-population error. The actual off-central Dirichlet
+frequency estimate is proved. The central-frequency short-to-long
+comparison, the analytic short-average bridge and complete logarithmic
+short-average concentration remain unproved. T19.17 conditional;
+original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2
+in_progress /167; all 73 main proved. Sources, false-scope corrections,
+compiler and axioms unchanged. About 52.40 GiB free on Ubuntu. No
+dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0957: The actual ordinary smooth indicator
 has an exact rough Möbius convolution. The actual off-central Dirichlet
 frequency estimate is proved. The central-frequency short-to-long
 comparison, the analytic short-average bridge and complete logarithmic
@@ -3521,7 +3531,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records955 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records956 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -3640,7 +3650,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **19174 audited theorem/lemma declarations**. This
+- The project currently has **19180 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -35994,3 +36004,12 @@ Eight theorems and one definition construct the actual real Möbius coefficients
 The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.40 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18481 jobs); direct axiom audit passed for 19174 declarations using only propext, Classical.choice and Quot.sound; all 19471 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.40 GiB.
+
+
+## Actual smooth prefix means differ by an explicit rough-population error
+
+Six theorems and three definitions prove the exact actual smooth prefix sum as a finite rough Möbius sum weighted by floor(x/d). Extending to any common cutoff K>=x yields an absolute error at most the actual rough population up to K against x times a common reciprocal sum. For positive x,z<=K, the normalized prefix means differ by at most roughCard(K)/x+roughCard(K)/z. All floors, supports and endpoints are exact. No asymptotic mean estimate is assumed.
+
+The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.40 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18483 jobs); direct axiom audit passed for 19180 declarations using only propext, Classical.choice and Quot.sound; all 19480 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.38 GiB.

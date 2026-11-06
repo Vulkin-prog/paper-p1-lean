@@ -5620,6 +5620,12 @@ import PaperP1
 #print axioms PaperP1.SmoothMobiusConvolution.large_prime_power
 #print axioms PaperP1.SmoothMobiusConvolution.convolution
 #print axioms PaperP1.SmoothMobiusConvolution.divisor_sum
+#print axioms PaperP1.SmoothPrefixComparison.prefix_floor
+#print axioms PaperP1.SmoothPrefixComparison.prefix_extended
+#print axioms PaperP1.SmoothPrefixComparison.division_error
+#print axioms PaperP1.SmoothPrefixComparison.prefix_error
+#print axioms PaperP1.SmoothPrefixComparison.normalized_error
+#print axioms PaperP1.SmoothPrefixComparison.comparison
 #print axioms PaperP1.SmoothReciprocalLeadingLower.uniform_ordinary_lower
 #print axioms PaperP1.SmoothReciprocalLeadingLower.uniform_full_lower
 #print axioms PaperP1.SmoothReciprocalLeadingLower.uniform_dyadic_lower
