@@ -27286,6 +27286,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "b7e81d65faf4364b1acdd09c1de08ac6b114a296"
+    },
+    {
+      "id": "P1-MATH-0568",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The derivative exceptional locus still needed a genuine surface-section Hilbert polynomial and an actual finite decomposition into homogeneous height-one components, rather than an assumed Bezout budget or an abstract list of curves.",
+      "finding": "Every actual nonzero homogeneous source-surface section has exact linear Hilbert coefficient e*2^k*D^2, and the actual finite minimal-prime components are homogeneous height-one primes covering every section point in its original chart.",
+      "proposed_revision": "Derive the exceptional divisor Hilbert coefficient by the actual regular multiplication exact sequence, and construct its finite homogeneous minimal components before separately bounding their number and degrees.",
+      "impact": "Closes the actual whole-divisor Hilbert calculation and finite component-structure prerequisites while keeping the uniform component bounds and determinant-method cover explicit remaining work.",
+      "evidence": [
+        "PaperP1.HomogeneousPrincipalComponents.mem_components",
+        "PaperP1.HomogeneousPrincipalComponents.principal_homogeneous",
+        "PaperP1.HomogeneousPrincipalComponents.minimal_prime_homogeneous",
+        "PaperP1.HomogeneousPrincipalComponents.height_one",
+        "PaperP1.HomogeneousPrincipalComponents.finite_cover",
+        "PaperP1.QuadraticHilbertDifference.quadratic_evaluation",
+        "PaperP1.QuadraticHilbertDifference.expansion",
+        "PaperP1.QuadraticHilbertDifference.natDegree_le",
+        "PaperP1.QuadraticHilbertDifference.coefficient_one",
+        "PaperP1.RegularSurfaceHilbertSection.polynomial_difference",
+        "PaperP1.RegularSurfaceHilbertSection.linear_hilbert",
+        "PaperP1.SourceSurfaceSectionHilbert.exists_linear_hilbert",
+        "PaperP1.HomogeneousPrincipalComponents.components",
+        "PaperP1.QuadraticHilbertDifference.difference"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17105 jobs); direct axiom audit passed for 16383 declarations using only propext, Classical.choice and Quot.sound; all 16026 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.17 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

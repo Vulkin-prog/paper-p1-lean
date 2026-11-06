@@ -4224,3 +4224,7 @@ public import PaperP1.Algebra.PolynomialQuotientScalarExtension
 public import PaperP1.Algebra.ScalarExtensionInjectiveAlgebraMap
 public import PaperP1.Algebra.SourceSurfaceScalarExtensionDomain
 public import PaperP1.Geometry.SourceSurfaceGeometricImage
+public import PaperP1.Algebra.HomogeneousPrincipalComponents
+public import PaperP1.Algebra.QuadraticHilbertDifference
+public import PaperP1.Algebra.RegularSurfaceHilbertSection
+public import PaperP1.Algebra.SourceSurfaceSectionHilbert

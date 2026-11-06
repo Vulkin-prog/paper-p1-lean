@@ -1359,6 +1359,11 @@ import PaperP1
 #print axioms PaperP1.HomogeneousPolynomialEvaluation.eval_scale
 #print axioms PaperP1.HomogeneousPolynomialEvaluation.homogeneous_zero_eq_C
 #print axioms PaperP1.HomogeneousPolynomialEvaluation.exists_eval_cons_one
+#print axioms PaperP1.HomogeneousPrincipalComponents.mem_components
+#print axioms PaperP1.HomogeneousPrincipalComponents.principal_homogeneous
+#print axioms PaperP1.HomogeneousPrincipalComponents.minimal_prime_homogeneous
+#print axioms PaperP1.HomogeneousPrincipalComponents.height_one
+#print axioms PaperP1.HomogeneousPrincipalComponents.finite_cover
 #print axioms PaperP1.HomogeneousPrincipalIdealGenerator.homogeneous_of_span
 #print axioms PaperP1.HomogeneousPrincipalIdealGenerator.exists_generator
 #print axioms PaperP1.HomogeneousPrincipalIdealGenerator.exists_positive_generator
@@ -1877,6 +1882,10 @@ import PaperP1
 #print axioms PaperP1.QuadraticCumulantBound.curvature_nonneg
 #print axioms PaperP1.QuadraticCumulantBound.budget_nonneg
 #print axioms PaperP1.QuadraticCumulantBound.step_bound
+#print axioms PaperP1.QuadraticHilbertDifference.quadratic_evaluation
+#print axioms PaperP1.QuadraticHilbertDifference.expansion
+#print axioms PaperP1.QuadraticHilbertDifference.natDegree_le
+#print axioms PaperP1.QuadraticHilbertDifference.coefficient_one
 #print axioms PaperP1.QuadraticMomentApproximation.decomposition
 #print axioms PaperP1.QuadraticMomentApproximation.elementary_bound
 #print axioms PaperP1.QuadraticMomentApproximation.higher_bound
@@ -2061,6 +2070,8 @@ import PaperP1
 #print axioms PaperP1.RegularGradedHilbertSection.mulMap_injective
 #print axioms PaperP1.RegularGradedHilbertSection.finrank_add
 #print axioms PaperP1.RegularGradedHilbertSection.eventual_dimension
+#print axioms PaperP1.RegularSurfaceHilbertSection.polynomial_difference
+#print axioms PaperP1.RegularSurfaceHilbertSection.linear_hilbert
 #print axioms PaperP1.RelativeVeroneseBasis.source_free_rank
 #print axioms PaperP1.RelativeVeroneseBasis.sourceBasis_apply
 #print axioms PaperP1.RelativeVeroneseImage.scalar_range
@@ -2251,6 +2262,7 @@ import PaperP1
 #print axioms PaperP1.SourceSurfacePowerParameters.rank
 #print axioms PaperP1.SourceSurfaceScalarExtensionDomain.weighted_isDomain
 #print axioms PaperP1.SourceSurfaceScalarExtensionDomain.veronese_isDomain
+#print axioms PaperP1.SourceSurfaceSectionHilbert.exists_linear_hilbert
 #print axioms PaperP1.SourceVeroneseAffinePoint.sourceMap_base
 #print axioms PaperP1.SourceVeroneseAffinePoint.curve_image
 #print axioms PaperP1.SourceVeroneseChartBasis.chartBasis_apply
