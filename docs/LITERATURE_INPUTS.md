@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0938: Actual large frequencies for the fixed-
+Current checkpoint P1-MATH-0939: Actual fixed-power anchors control the
+height, cardinality and logarithms of global frequency samples. The
+triple-large prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 52.76 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0938: Actual large frequencies for the fixed-
 power final prime band have uniformly logarithmic-power cardinality. The
 triple-large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -34697,6 +34706,12 @@ Two theorems and one definition prove a positive fixed exponent C_H=200H+2 and, 
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual fixed-power anchors control the height, cardinality and logarithms of global frequency samples
+
+Five theorems prove the actual log comparison log(N)<=(2/a)*log(u), the height conversion 2*N<=u^(4/a), one uniform cardinality conversion log(N)^C to log(u)^(C+1) for all anchors u>=N^(a/2), eventual passage of all such anchors beyond any prescribed scale, and the explicit inverse-log-square comparison <=(4/a^2)/log(N)^2. All cutoffs precede the varying anchor and samples; no replacement of global and local scales by asymptotic equivalence is made.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -39451,3 +39466,14 @@ Two theorems and one definition prove a positive fixed exponent C_H=200H+2 and, 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.83 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18443 jobs); direct axiom audit passed for 19120 declarations using only propext, Classical.choice and Quot.sound; all 19406 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.77 GiB.
+
+
+## Actual fixed-power anchors control the height, cardinality and logarithms of global frequency samples
+
+Stable ID: p1:internal:fixed-power-sampling-geometry. Actual fixed-power anchors control the height, cardinality and logarithms of global frequency samples. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+Five theorems prove the actual log comparison log(N)<=(2/a)*log(u), the height conversion 2*N<=u^(4/a), one uniform cardinality conversion log(N)^C to log(u)^(C+1) for all anchors u>=N^(a/2), eventual passage of all such anchors beyond any prescribed scale, and the explicit inverse-log-square comparison <=(4/a^2)/log(N)^2. All cutoffs precede the varying anchor and samples; no replacement of global and local scales by asymptotic equivalence is made.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.76 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18445 jobs); direct axiom audit passed for 19125 declarations using only propext, Classical.choice and Quot.sound; all 19411 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.75 GiB.

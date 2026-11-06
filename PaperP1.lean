@@ -4878,3 +4878,4 @@ public import PaperP1.Analysis.FixedOrderPrimeMoment
 public import PaperP1.Analysis.FixedWidthLargeFrequencyCardinality
 public import PaperP1.Analysis.FixedPowerNarrowGeometry
 public import PaperP1.Analysis.FixedPowerLargeFrequencyCardinality
+public import PaperP1.Analysis.FixedPowerSamplingGeometry

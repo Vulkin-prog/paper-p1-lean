@@ -4154,6 +4154,11 @@ import PaperP1
 #print axioms PaperP1.FixedPowerPrimeBandDensity.square_density_tendsto
 #print axioms PaperP1.FixedPowerPrimeBandDensity.excluded_eventually_bound
 #print axioms PaperP1.FixedPowerPrimeBandDensity.missing_good_eventually_bound
+#print axioms PaperP1.FixedPowerSamplingGeometry.logarithmic_comparison
+#print axioms PaperP1.FixedPowerSamplingGeometry.height_power_bound
+#print axioms PaperP1.FixedPowerSamplingGeometry.cardinality_eventually
+#print axioms PaperP1.FixedPowerSamplingGeometry.scale_eventually
+#print axioms PaperP1.FixedPowerSamplingGeometry.logarithmic_square_bound
 #print axioms PaperP1.FixedWidthLargeFrequencyCardinality.index_card_bound
 #print axioms PaperP1.FixedWidthLargeFrequencyCardinality.all_blocks_bound
 #print axioms PaperP1.FlexiblePrimeBandSieve.reciprocal_mass_tendsto
