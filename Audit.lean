@@ -4141,6 +4141,14 @@ import PaperP1
 #print axioms PaperP1.LogarithmicAbelWindow.envelope_integrable
 #print axioms PaperP1.LogarithmicAbelWindow.envelope_integral
 #print axioms PaperP1.LogarithmicAbelWindow.window_bound
+#print axioms PaperP1.LogarithmicDifferencingBound.budget_nonneg
+#print axioms PaperP1.LogarithmicDifferencingBound.harmonic_bound
+#print axioms PaperP1.LogarithmicDifferencingBound.energy
+#print axioms PaperP1.LogarithmicDifferencingBound.sum_reindex
+#print axioms PaperP1.LogarithmicDifferencingBound.inverse_correlation_bound
+#print axioms PaperP1.LogarithmicDifferencingBound.parameter_bound
+#print axioms PaperP1.LogarithmicDifferencingBound.logarithmic_bound
+#print axioms PaperP1.LogarithmicDifferencingBound.expanded_bound
 #print axioms PaperP1.LogarithmicExponentialSum.function_norm
 #print axioms PaperP1.LogarithmicExponentialSum.hasDerivAt_function
 #print axioms PaperP1.LogarithmicExponentialSum.derivative_norm

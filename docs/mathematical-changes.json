@@ -34453,6 +34453,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "34c7bda6d16f908a11fcabf81002bd5ade18195f"
+    },
+    {
+      "id": "P1-MATH-0742",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The generic inverse-distance correlation application needs its B/d premise proved for the actual logarithmic sequence and its true finite coefficient energy.",
+      "finding": "The actual shifted logarithmic correlation is bounded by budget(N,H,t)/d for every 1<=d<=H<=N, where budget=24*N^2/|t|+|t|*H^2/N. All coefficients of the actual logarithmic sequence have norm one, so its exact finite energy is N. The internal triangular differencing theorem applies to this literal sequence, and the standard harmonic bound gives an actual parameter estimate. Its explicit expanded form is 2*N^2/H+96*N^3/(H*|t|)*(1+log(N))+4*|t|*H*(1+log(N)), before any choice of H. Eight theorems and one definition are proved; H>0 and t!=0 are explicit.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual logarithmic differencing bound with a free integer parameter. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.LogarithmicDifferencingBound.budget_nonneg",
+        "PaperP1.LogarithmicDifferencingBound.harmonic_bound",
+        "PaperP1.LogarithmicDifferencingBound.energy",
+        "PaperP1.LogarithmicDifferencingBound.sum_reindex",
+        "PaperP1.LogarithmicDifferencingBound.inverse_correlation_bound",
+        "PaperP1.LogarithmicDifferencingBound.parameter_bound",
+        "PaperP1.LogarithmicDifferencingBound.logarithmic_bound",
+        "PaperP1.LogarithmicDifferencingBound.expanded_bound",
+        "PaperP1.LogarithmicDifferencingBound.budget"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18051 jobs); direct axiom audit passed for 18352 declarations using only propext, Classical.choice and Quot.sound; all 18490 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.18 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

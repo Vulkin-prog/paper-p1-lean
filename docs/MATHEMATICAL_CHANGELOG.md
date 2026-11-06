@@ -1,6 +1,14 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0741: Actual logarithmic shift sum and
+Current checkpoint P1-MATH-0742: Actual logarithmic differencing bound
+with a free integer parameter. The actual Ramare main-term frequency
+bounds and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 53.3 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0741: Actual logarithmic shift sum and
 correlation bound with explicit discretization error. The actual Ramare
 main-term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -1430,7 +1438,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**739 mathematical improvements and two statement-scope corrections are confirmed.**
+**740 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -31189,3 +31197,12 @@ The literal logarithmic ratio phase has local variation at most |t|*h/A^2 on a p
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.3 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18049 jobs); direct axiom audit passed for 18344 declarations using only propext, Classical.choice and Quot.sound; all 18481 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.19 GiB.
+
+
+## Actual logarithmic differencing bound with a free integer parameter
+
+The actual shifted logarithmic correlation is bounded by budget(N,H,t)/d for every 1<=d<=H<=N, where budget=24*N^2/|t|+|t|*H^2/N. All coefficients of the actual logarithmic sequence have norm one, so its exact finite energy is N. The internal triangular differencing theorem applies to this literal sequence, and the standard harmonic bound gives an actual parameter estimate. Its explicit expanded form is 2*N^2/H+96*N^3/(H*|t|)*(1+log(N))+4*|t|*H*(1+log(N)), before any choice of H. Eight theorems and one definition are proved; H>0 and t!=0 are explicit.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.3 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18051 jobs); direct axiom audit passed for 18352 declarations using only propext, Classical.choice and Quot.sound; all 18490 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.18 GiB.
