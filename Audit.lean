@@ -4054,6 +4054,8 @@ import PaperP1
 #print axioms PaperP1.FixedEulerTruncation.polynomial_norm_bound
 #print axioms PaperP1.FixedEulerTruncation.total_continuous
 #print axioms PaperP1.FixedEulerTruncation.polynomial_tendsto
+#print axioms PaperP1.FixedOrderFirstTermDecay.quotient_identity
+#print axioms PaperP1.FixedOrderFirstTermDecay.first_bound
 #print axioms PaperP1.FixedOrderLogarithmicScale.scale_pos
 #print axioms PaperP1.FixedOrderLogarithmicScale.scale_power
 #print axioms PaperP1.FixedOrderLogarithmicScale.scale_power_times
