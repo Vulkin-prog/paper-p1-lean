@@ -31786,6 +31786,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "7e8bc422c857b529e7fa7f5dc06e72a6d874e076"
+    },
+    {
+      "id": "P1-MATH-0671",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A small residual coefficient polynomial did not yet establish a small actual difference between the original Dirichlet polynomial and the literal coupled Ramare quotient sum; the exact twisting and zero cases still required proof.",
+      "finding": "The literal Dirichlet twist is completely multiplicative, the actual quotient identity is exact and its actual frequency L2 difference is uniformly negligible for all bounded completely multiplicative coefficients and 0<T<=N.",
+      "proposed_revision": "Use the exact twisted quotient identity with its actual product condition and uniform negligible-difference theorem. Estimate the quotient polynomial and its coupled domain separately before claiming logarithmic short-average decay.",
+      "impact": "Closes the actual Dirichlet Ramare approximation without a difference or support-control premise. The main quotient estimate and full T19.17 analytic input remain unproved.",
+      "evidence": [
+        "PaperP1.DirichletRamareApproximation.twist_mul",
+        "PaperP1.DirichletRamareApproximation.twist_norm",
+        "PaperP1.DirichletRamareApproximation.twist_continuous",
+        "PaperP1.DirichletRamareApproximation.exact_with_remainder",
+        "PaperP1.DirichletRamareApproximation.difference_identity",
+        "PaperP1.DirichletRamareApproximation.quotient_continuous",
+        "PaperP1.DirichletRamareApproximation.difference_small_uniform",
+        "PaperP1.DirichletRamareApproximation.twist",
+        "PaperP1.DirichletRamareApproximation.quotient"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17887 jobs); direct axiom audit passed for 17750 declarations using only propext, Classical.choice and Quot.sound; all 17740 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.46 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

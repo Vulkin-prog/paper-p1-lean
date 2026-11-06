@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0670: the FULL weighted Ramare identity
+Current checkpoint P1-MATH-0671: the ACTUAL twisted Dirichlet
+Ramare quotient identity is EXACT, with its coupled product domain
+and every zero case retained. The actual difference from the
+original polynomial has UNIFORM negligible frequency L2 norm for
+all bounded completely multiplicative coefficients and 0<T<=N.
+The main quotient estimate and full logarithmic short-average
+assembly remain unfinished. T19.17 stays conditional; T1.7 complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+results proved. False scopes and checked corrections unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0670: the FULL weighted Ramare identity
 is EXACT on arbitrary actual finite positive support. Its residual
 lies in [0,1] and vanishes on the proved good dyadic set. Actual
 support-square budgets prove a UNIFORM negligible Dirichlet L2
@@ -927,7 +938,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records668 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records669 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1046,7 +1057,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17743 audited theorem/lemma declarations**. This
+- The project currently has **17750 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -30601,3 +30612,16 @@ RamareRemainderMeanValue defines the actual residual complex coefficient (1-w_P(
 This closes the full weighted Ramare identity and uniform Dirichlet mean-square control of the actual slow-band residual. It does not yet factor the coupled quotient domain or establish logarithmic multiplicative short-average decay. Identifying the literal twisted quotient polynomial with the full Dirichlet difference, stronger large values, quotient-domain handling and short-average assembly remain unfinished. T19.17 retains its explicit analytic input. Complete original T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.5 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17885 jobs); direct axiom audit passed for 17743 declarations using only propext, Classical.choice and Quot.sound; all 17731 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.48 GiB.
+
+
+## Exact twisted Dirichlet Ramare quotient and uniform negligible actual difference
+
+DirichletRamareApproximation defines the literal finite Dirichlet twist f(n)/n*exp(-i*t*log n). It proves its exact complete multiplicativity for every completely multiplicative complex f, including the n=0 or m=0 cases, its actual norm and continuity. It defines the actual Ramare quotient polynomial using the exact quotient domain 1<=m<=floor(2N/p), the literal condition p*m in [N,2N), and the actual denominator 1+count_P(m).
+
+Applying the internal full weighted Ramare identity gives the exact pointwise equality between the original dyadic Dirichlet polynomial and the quotient polynomial plus the Dirichlet polynomial of the actual residual coefficients. An exact difference identity is proved. The quotient polynomial is continuous directly from its actual finite sums. The product condition is preserved; no independent rectangular prime/quotient sum is asserted.
+
+The internal residual theorem now yields the actual approximation: for EVERY epsilon>0 there is ONE N0>=1 before all N>=N0, all completely multiplicative complex f bounded by one on [N,2N), and all 0<T<=N, such that the [-T,T] square integral of the ACTUAL DIFFERENCE between the original dyadic polynomial and the literal quotient polynomial for log log N<p<=log N is <=epsilon. No difference bound, support negligibility, sieve or mean-value statement is supplied as a premise. One module adds seven theorems and two definitions.
+
+This closes the literal twisted quotient identification and uniform frequency L2 transport of the full Ramare remainder. Estimating the quotient polynomial itself, controlling the coupled domain, proving stronger real-multiplicative frequency estimates and assembling the logarithmic short-average decay remain unfinished. T19.17 retains its explicit analytic input. Original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.5 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17887 jobs); direct axiom audit passed for 17750 declarations using only propext, Classical.choice and Quot.sound; all 17740 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.46 GiB.

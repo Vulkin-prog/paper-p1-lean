@@ -3603,6 +3603,13 @@ import PaperP1
 #print axioms PaperP1.DirichletPolynomialMeanValue.unit_coefficient_square_budget
 #print axioms PaperP1.DirichletPolynomialMeanValue.bounded_dyadic_mean_square
 #print axioms PaperP1.DirichletPolynomialMeanValue.uniform_mean_value
+#print axioms PaperP1.DirichletRamareApproximation.twist_mul
+#print axioms PaperP1.DirichletRamareApproximation.twist_norm
+#print axioms PaperP1.DirichletRamareApproximation.twist_continuous
+#print axioms PaperP1.DirichletRamareApproximation.exact_with_remainder
+#print axioms PaperP1.DirichletRamareApproximation.difference_identity
+#print axioms PaperP1.DirichletRamareApproximation.quotient_continuous
+#print axioms PaperP1.DirichletRamareApproximation.difference_small_uniform
 #print axioms PaperP1.DisjointRecoveryParameters.parameter_pos
 #print axioms PaperP1.DisjointRecoveryParameters.parameter_lt_one
 #print axioms PaperP1.DisjointRecoveryParameters.parameter_pow

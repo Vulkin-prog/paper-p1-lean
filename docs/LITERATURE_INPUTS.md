@@ -1,6 +1,17 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0670: the FULL weighted Ramare identity
+Current checkpoint P1-MATH-0671: the ACTUAL twisted Dirichlet
+Ramare quotient identity is EXACT, with its coupled product domain
+and every zero case retained. The actual difference from the
+original polynomial has UNIFORM negligible frequency L2 norm for
+all bounded completely multiplicative coefficients and 0<T<=N.
+The main quotient estimate and full logarithmic short-average
+assembly remain unfinished. T19.17 stays conditional; T1.7 complete.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+results proved. False scopes and checked corrections unchanged.
+No Palomar registration.
+
+Historical checkpoint P1-MATH-0670: the FULL weighted Ramare identity
 is EXACT on arbitrary actual finite positive support. Its residual
 lies in [0,1] and vanishes on the proved good dyadic set. Actual
 support-square budgets prove a UNIFORM negligible Dirichlet L2
@@ -30514,6 +30525,15 @@ The remaining twisted identification, stronger frequency estimates
 and logarithmic short-average assembly are unproved. T19.17 remains
 conditional; complete original T1.7 remains unconditional.
 
+## Internal actual Dirichlet Ramare approximation
+
+P1-MATH-0671 identifies the literal twisted quotient sum with the
+original dyadic Dirichlet polynomial plus its actual residual.
+The actual difference has proved uniform negligible frequency L2
+norm, retaining the coupled product domain. The main quotient
+estimate and logarithmic short-average assembly remain unfinished.
+T19.17 stays conditional; complete original T1.7 unconditional.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -32104,3 +32124,18 @@ RamareRemainderMeanValue defines the actual residual complex coefficient (1-w_P(
 This closes the full weighted Ramare identity and uniform Dirichlet mean-square control of the actual slow-band residual. It does not yet factor the coupled quotient domain or establish logarithmic multiplicative short-average decay. Identifying the literal twisted quotient polynomial with the full Dirichlet difference, stronger large values, quotient-domain handling and short-average assembly remain unfinished. T19.17 retains its explicit analytic input. Complete original T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.5 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17885 jobs); direct axiom audit passed for 17743 declarations using only propext, Classical.choice and Quot.sound; all 17731 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.48 GiB.
+
+
+## Exact twisted Dirichlet Ramare quotient and uniform negligible actual difference
+
+Stable ID: p1:internal:actual-dirichlet-ramare-approximation. The actual twisted Dirichlet quotient identity and its uniform negligible difference are internal. The quotient estimate, coupled-domain control and full logarithmic short-average assembly remain unfinished.
+
+DirichletRamareApproximation defines the literal finite Dirichlet twist f(n)/n*exp(-i*t*log n). It proves its exact complete multiplicativity for every completely multiplicative complex f, including the n=0 or m=0 cases, its actual norm and continuity. It defines the actual Ramare quotient polynomial using the exact quotient domain 1<=m<=floor(2N/p), the literal condition p*m in [N,2N), and the actual denominator 1+count_P(m).
+
+Applying the internal full weighted Ramare identity gives the exact pointwise equality between the original dyadic Dirichlet polynomial and the quotient polynomial plus the Dirichlet polynomial of the actual residual coefficients. An exact difference identity is proved. The quotient polynomial is continuous directly from its actual finite sums. The product condition is preserved; no independent rectangular prime/quotient sum is asserted.
+
+The internal residual theorem now yields the actual approximation: for EVERY epsilon>0 there is ONE N0>=1 before all N>=N0, all completely multiplicative complex f bounded by one on [N,2N), and all 0<T<=N, such that the [-T,T] square integral of the ACTUAL DIFFERENCE between the original dyadic polynomial and the literal quotient polynomial for log log N<p<=log N is <=epsilon. No difference bound, support negligibility, sieve or mean-value statement is supplied as a premise. One module adds seven theorems and two definitions.
+
+This closes the literal twisted quotient identification and uniform frequency L2 transport of the full Ramare remainder. Estimating the quotient polynomial itself, controlling the coupled domain, proving stronger real-multiplicative frequency estimates and assembling the logarithmic short-average decay remain unfinished. T19.17 retains its explicit analytic input. Original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrected replacements are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Ubuntu retains about 54.5 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17887 jobs); direct axiom audit passed for 17750 declarations using only propext, Classical.choice and Quot.sound; all 17740 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.46 GiB.

@@ -4600,3 +4600,4 @@ public import PaperP1.Asymptotics.SlowPrimeBandSieve
 public import PaperP1.Analysis.RamareRemainderMeanValue
 public import PaperP1.Analysis.SupportedCoefficientSquareBudget
 public import PaperP1.Arithmetic.RamareWeights
+public import PaperP1.Analysis.DirichletRamareApproximation
