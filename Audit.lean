@@ -3698,6 +3698,9 @@ import PaperP1
 #print axioms PaperP1.DisjointRecoveryParameters.parameter_pow
 #print axioms PaperP1.DisjointRecoveryParameters.one_sub_inv_pow_le_half
 #print axioms PaperP1.DisjointRecoveryParameters.failure_factor_le_half
+#print axioms PaperP1.DivisorMajorantMeanValue.coefficient_square_bound
+#print axioms PaperP1.DivisorMajorantMeanValue.mean_value_bound
+#print axioms PaperP1.DivisorMajorantMeanValue.sampled_mean_value_bound
 #print axioms PaperP1.DyadicBucketGridCount.cluster_count
 #print axioms PaperP1.DyadicBucketGridCount.trimmed_count
 #print axioms PaperP1.DyadicDirichletSampling.dyadic_sampled_mean_square
