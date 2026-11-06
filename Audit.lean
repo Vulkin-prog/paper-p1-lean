@@ -4632,6 +4632,11 @@ import PaperP1
 #print axioms PaperP1.PolyaChebyshevCriterion.card_lt
 #print axioms PaperP1.PolyaChebyshevCriterion.coefficients_eq_zero
 #print axioms PaperP1.PolyaChebyshevCriterion.evaluation_injective
+#print axioms PaperP1.PolynomialDampedCancellation.power_identity
+#print axioms PaperP1.PolynomialDampedCancellation.value_eq_sum_range
+#print axioms PaperP1.PolynomialDampedCancellation.uniform_bound
+#print axioms PaperP1.PolynomialDampedCancellation.uniform_undamped_bound
+#print axioms PaperP1.PolynomialDampedCancellation.small_uniform
 #print axioms PaperP1.PolynomialEvaluationDerivative.directional_constant
 #print axioms PaperP1.PolynomialEvaluationDerivative.directional_variable
 #print axioms PaperP1.PolynomialEvaluationDerivative.directional_add
