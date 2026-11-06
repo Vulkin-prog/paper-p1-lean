@@ -40973,6 +40973,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "56abc1d0818aaa12e846d52a61d70ef0aecf90b7"
+    },
+    {
+      "id": "P1-MATH-0948",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A fixed-power final band has bounded harmonic mass. Its exceptional density is made arbitrarily small by choosing the fixed lower exponent after the desired precision, not by asserting that one fixed band has vanishing exceptional density.",
+      "finding": "Five theorems and one definition prove actual good-set inclusion, ordinary first-band and final-band divisibility counts and square exclusion, an exact exceptional-union density bound, and disjointness of the actual final prime band from the first prime band for every fixed positive lower power. For EVERY epsilon>0, a fixed a in (0,1/32) is chosen first and the actual combined exceptional density is eventually <=epsilon. The quantifier order is retained; no density-zero assertion for a fixed power band is made.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "A precision-selected fixed-power population has the required actual Ramare support and small prescribed exceptional density. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.PrecisionPowerPopulation.good_subset",
+        "PaperP1.PrecisionPowerPopulation.good_support",
+        "PaperP1.PrecisionPowerPopulation.missing_good_le_sum",
+        "PaperP1.PrecisionPowerPopulation.precision_choice",
+        "PaperP1.PrecisionPowerPopulation.disjoint_first_eventually",
+        "PaperP1.PrecisionPowerPopulation.good"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18463 jobs); direct axiom audit passed for 19150 declarations using only propext, Classical.choice and Quot.sound; all 19445 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.58 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
