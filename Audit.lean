@@ -4021,6 +4021,11 @@ import PaperP1
 #print axioms PaperP1.FiniteRolleZeros.card_le_of_derivative_bound
 #print axioms PaperP1.FiniteRolleZeros.card_le_of_iterated_derivative_nonzero
 #print axioms PaperP1.FiniteSetAvoidingInterval.exists_interval
+#print axioms PaperP1.FiniteShiftDifferencing.window_sum
+#print axioms PaperP1.FiniteShiftDifferencing.window_cauchy
+#print axioms PaperP1.FiniteShiftDifferencing.window_energy_bound
+#print axioms PaperP1.FiniteShiftDifferencing.normalized_correlation_bound
+#print axioms PaperP1.FiniteShiftDifferencing.unit_off_diagonal_bound
 #print axioms PaperP1.FiniteSquareTail.sum_bound
 #print axioms PaperP1.FiniteSquareTail.sum_bound_of_div_tail
 #print axioms PaperP1.FiniteSymmetricKernelBudget.symmetric_bound

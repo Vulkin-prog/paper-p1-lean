@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0845: The literal triple-large region has
+Current checkpoint P1-MATH-0846: The actual differencing inequality
+allows an arbitrary finite set of shifts. The triple-large prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.31 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0845: The literal triple-large region has
 actual separated counts and measure below every positive power. The
 triple-large prime frequency contribution, the central-frequency mean
 comparison and complete logarithmic short-average concentration remain
@@ -33297,6 +33306,12 @@ ONE size cutoff precedes every B>=32, all unit coefficient functions on the fina
 
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal the actual differencing inequality allows an arbitrary finite set of shifts
+
+For ANY finite actual shift set S contained below B, the exact window sum, finite Cauchy bound and full Gram expansion give the ACTUAL normalized correlation inequality with card(S)^2 and source length N+B. For unit source coefficients and an explicit bound E on all OFF-diagonal actual correlations, prove norm(sum a)^2<=(N+B)*(N/card(S)+E), retaining the actual diagonal source budget<=N and every repeated pair. Five theorems generalize the proved integer-shift decomposition to arbitrary finite shifts. The analytic off-diagonal estimate remains an explicit premise.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -37028,3 +37043,14 @@ ONE size cutoff precedes every B>=32, all unit coefficient functions on the fina
 The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.38 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18257 jobs); direct axiom audit passed for 18708 declarations using only propext, Classical.choice and Quot.sound; all 18915 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.32 GiB.
+
+
+## The actual differencing inequality allows an arbitrary finite set of shifts
+
+Stable ID: p1:internal:finite-shift-differencing. The actual differencing inequality allows an arbitrary finite set of shifts. The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+For ANY finite actual shift set S contained below B, the exact window sum, finite Cauchy bound and full Gram expansion give the ACTUAL normalized correlation inequality with card(S)^2 and source length N+B. For unit source coefficients and an explicit bound E on all OFF-diagonal actual correlations, prove norm(sum a)^2<=(N+B)*(N/card(S)+E), retaining the actual diagonal source budget<=N and every repeated pair. Five theorems generalize the proved integer-shift decomposition to arbitrary finite shifts. The analytic off-diagonal estimate remains an explicit premise.
+
+The triple-large prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.31 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18259 jobs); direct axiom audit passed for 18713 declarations using only propext, Classical.choice and Quot.sound; all 18920 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.30 GiB.
