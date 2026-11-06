@@ -34098,6 +34098,42 @@
         "status": "not_integrated"
       },
       "validation_commit": "3bf5e34c2062a056db92531e1784560988ddbc30"
+    },
+    {
+      "id": "P1-MATH-0732",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The flexible finite sieve required explicit cutoff growth, harmonic gap and normalized-cardinality limits; these must be proved for actual prime populations.",
+      "finding": "For every fixed natural A>0 the literal window (floor((loglog(N))^A),floor(log(N))] has positive geometry eventually and actual reciprocal prime mass tending to infinity. The exact logarithmic harmonic gap tends to infinity by x-log(x)->infinity after the literal log-power identity and subtraction of log(A). The prime-cardinality error is bounded by log(N)^2/N. Applying the proved finite sieve gives actual excluded and missing-good populations of density zero. Every growth hypothesis is proved internally for the actual cutoffs; the short-average theorem remains unfinished.",
+      "proposed_revision": "Use the literal proved prime bands and their actual zero-density exceptions in the frequency decomposition, without treating them as the short-average conclusion.",
+      "impact": "Actual first prime band with any fixed positive loglog power. Complete short-average concentration remains unproved.",
+      "evidence": [
+        "PaperP1.PowerLogPrimeBand.lower_tendsto",
+        "PaperP1.PowerLogPrimeBand.geometry_eventually",
+        "PaperP1.PowerLogPrimeBand.harmonic_gap_tendsto",
+        "PaperP1.PowerLogPrimeBand.upper_square_small",
+        "PaperP1.PowerLogPrimeBand.reciprocal_mass_tendsto",
+        "PaperP1.PowerLogPrimeBand.excluded_density_tendsto",
+        "PaperP1.PowerLogPrimeBand.missing_good_density_tendsto",
+        "PaperP1.PowerLogPrimeBand.lower",
+        "PaperP1.PowerLogPrimeBand.upper",
+        "PaperP1.PowerLogPrimeBand.primes"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18031 jobs); direct axiom audit passed for 18282 declarations using only propext, Classical.choice and Quot.sound; all 18406 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.35 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

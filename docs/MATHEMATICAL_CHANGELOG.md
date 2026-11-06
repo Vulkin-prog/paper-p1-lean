@@ -1,6 +1,12 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0731: Actual finite prime-band sieve with
+Current checkpoint P1-MATH-0732: Actual first prime band with any fixed
+positive loglog power. Complete short-average concentration remains
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. No
+Palomar registration.
+
+Historical checkpoint P1-MATH-0731: Actual finite prime-band sieve with
 flexible analytic cutoffs. Complete short-average concentration remains
 unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
 proved, 1 conditional, 2 in_progress /167; all 73 main proved. No
@@ -1351,7 +1357,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**729 mathematical improvements and two statement-scope corrections are confirmed.**
+**730 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -31020,3 +31026,12 @@ The actual finite prime window (floor(L(N)),floor(U(N))] has reciprocal mass ten
 Complete logarithmic short-average concentration remains unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.4 GiB free on Ubuntu. No download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18029 jobs); direct axiom audit passed for 18275 declarations using only propext, Classical.choice and Quot.sound; all 18396 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.36 GiB.
+
+
+## Actual first prime band with any fixed positive loglog power
+
+For every fixed natural A>0 the literal window (floor((loglog(N))^A),floor(log(N))] has positive geometry eventually and actual reciprocal prime mass tending to infinity. The exact logarithmic harmonic gap tends to infinity by x-log(x)->infinity after the literal log-power identity and subtraction of log(A). The prime-cardinality error is bounded by log(N)^2/N. Applying the proved finite sieve gives actual excluded and missing-good populations of density zero. Every growth hypothesis is proved internally for the actual cutoffs; the short-average theorem remains unfinished.
+
+Complete logarithmic short-average concentration remains unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.35 GiB free on Ubuntu. No download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18031 jobs); direct axiom audit passed for 18282 declarations using only propext, Classical.choice and Quot.sound; all 18406 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.35 GiB.

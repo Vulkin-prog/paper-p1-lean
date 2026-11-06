@@ -4338,6 +4338,13 @@ import PaperP1
 #print axioms PaperP1.PolynomialVerticalRootUniqueness.exists_nonzero_box
 #print axioms PaperP1.PolynomialVerticalRootUniqueness.exists_local_vertical_unique
 #print axioms PaperP1.PositiveFractionCostNormalization.with_errors
+#print axioms PaperP1.PowerLogPrimeBand.lower_tendsto
+#print axioms PaperP1.PowerLogPrimeBand.geometry_eventually
+#print axioms PaperP1.PowerLogPrimeBand.harmonic_gap_tendsto
+#print axioms PaperP1.PowerLogPrimeBand.upper_square_small
+#print axioms PaperP1.PowerLogPrimeBand.reciprocal_mass_tendsto
+#print axioms PaperP1.PowerLogPrimeBand.excluded_density_tendsto
+#print axioms PaperP1.PowerLogPrimeBand.missing_good_density_tendsto
 #print axioms PaperP1.PowerSeriesTail.weight_nonneg
 #print axioms PaperP1.PowerSeriesTail.tailTerm_nonneg
 #print axioms PaperP1.PowerSeriesTail.tailTerm_le_weight

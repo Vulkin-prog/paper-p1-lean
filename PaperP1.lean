@@ -4671,3 +4671,4 @@ public import PaperP1.Analysis.DampedDirichletIntegral
 public import PaperP1.Analysis.CommonDampedSum
 public import PaperP1.Analysis.CountWeightedSum
 public import PaperP1.Analysis.FlexiblePrimeBandSieve
+public import PaperP1.Analysis.PowerLogPrimeBand

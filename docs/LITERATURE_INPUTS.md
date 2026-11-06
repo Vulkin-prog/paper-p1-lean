@@ -1,6 +1,12 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0731: Actual finite prime-band sieve with
+Current checkpoint P1-MATH-0732: Actual first prime band with any fixed
+positive loglog power. Complete short-average concentration remains
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. No
+Palomar registration.
+
+Historical checkpoint P1-MATH-0731: Actual finite prime-band sieve with
 flexible analytic cutoffs. Complete short-average concentration remains
 unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
 proved, 1 conditional, 2 in_progress /167; all 73 main proved. No
@@ -31593,6 +31599,12 @@ The actual finite prime window (floor(L(N)),floor(U(N))] has reciprocal mass ten
 
 This finite-sieve theorem retains explicit elementary growth hypotheses. It does not assume or establish short-average concentration.
 
+## Internal actual first prime band with any fixed positive loglog power
+
+For every fixed natural A>0 the literal window (floor((loglog(N))^A),floor(log(N))] has positive geometry eventually and actual reciprocal prime mass tending to infinity. The exact logarithmic harmonic gap tends to infinity by x-log(x)->infinity after the literal log-power identity and subtraction of log(A). The prime-cardinality error is bounded by log(N)^2/N. Applying the proved finite sieve gives actual excluded and missing-good populations of density zero. Every growth hypothesis is proved internally for the actual cutoffs; the short-average theorem remains unfinished.
+
+These are actual sieve populations with proved elementary growth. The frequency mean-square and logarithmic concentration steps remain unfinished.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -34070,3 +34082,14 @@ The actual finite prime window (floor(L(N)),floor(U(N))] has reciprocal mass ten
 Complete logarithmic short-average concentration remains unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.4 GiB free on Ubuntu. No download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18029 jobs); direct axiom audit passed for 18275 declarations using only propext, Classical.choice and Quot.sound; all 18396 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.36 GiB.
+
+
+## Actual first prime band with any fixed positive loglog power
+
+Stable ID: p1:internal:power-log-prime-band. Actual first prime band with any fixed positive loglog power. Complete short-average concentration remains unproved.
+
+For every fixed natural A>0 the literal window (floor((loglog(N))^A),floor(log(N))] has positive geometry eventually and actual reciprocal prime mass tending to infinity. The exact logarithmic harmonic gap tends to infinity by x-log(x)->infinity after the literal log-power identity and subtraction of log(A). The prime-cardinality error is bounded by log(N)^2/N. Applying the proved finite sieve gives actual excluded and missing-good populations of density zero. Every growth hypothesis is proved internally for the actual cutoffs; the short-average theorem remains unfinished.
+
+Complete logarithmic short-average concentration remains unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.35 GiB free on Ubuntu. No download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18031 jobs); direct axiom audit passed for 18282 declarations using only propext, Classical.choice and Quot.sound; all 18406 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.35 GiB.
