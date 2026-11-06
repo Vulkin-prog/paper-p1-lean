@@ -41709,6 +41709,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "5db6ed15690ab36994820e24975bcfaea28896c0"
+    },
+    {
+      "id": "P1-MATH-0971",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal actual analytic Gaussian bridge. This proves a smoothed mean-square comparison, and does not yet prove the literal logarithmic-window census or the stronger sharp short-average theorem for all real completely multiplicative functions.",
+      "finding": "Four theorems and one definition construct literal finite Gaussian averages with coefficients f(n)/n over [N,4N) and centers minus log(n). Their polynomial is exactly the actual Dirichlet polynomial. The full squared difference integral equals the actual weighted frequency energy divided by 2*pi, with integrability proved. Consequently for every D>0 and epsilon>0, one cutoff precedes all N and all real completely multiplicative prime-unit functions, and the literal short-width and long-width Gaussian averages differ by at most epsilon in whole-line square integral. No Gaussian comparison estimate is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual short and long logarithmic Gaussian averages have uniform mean-square comparison. The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.",
+      "evidence": [
+        "PaperP1.ActualGaussianMeanComparison.polynomial_eq",
+        "PaperP1.ActualGaussianMeanComparison.difference_integrable",
+        "PaperP1.ActualGaussianMeanComparison.energy_identity",
+        "PaperP1.ActualGaussianMeanComparison.uniform_bound",
+        "PaperP1.ActualGaussianMeanComparison.smoothed"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18509 jobs); direct axiom audit passed for 19246 declarations using only propext, Classical.choice and Quot.sound; all 19559 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.13 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

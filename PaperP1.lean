@@ -4910,3 +4910,4 @@ public import PaperP1.Analysis.GaussianEnergyReduction
 public import PaperP1.Analysis.GaussianLogarithmicScales
 public import PaperP1.Analysis.UniformGaussianFrequencyEnergy
 public import PaperP1.Analysis.GaussianExtendedFrequencyEnergy
+public import PaperP1.Analysis.ActualGaussianMeanComparison

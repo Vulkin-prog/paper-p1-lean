@@ -3285,6 +3285,10 @@ import PaperP1
 #print axioms PaperP1.ActualEulerBand.band_primes_le
 #print axioms PaperP1.ActualEulerBand.band_integral_bound
 #print axioms PaperP1.ActualEulerBand.real_band_bound
+#print axioms PaperP1.ActualGaussianMeanComparison.polynomial_eq
+#print axioms PaperP1.ActualGaussianMeanComparison.difference_integrable
+#print axioms PaperP1.ActualGaussianMeanComparison.energy_identity
+#print axioms PaperP1.ActualGaussianMeanComparison.uniform_bound
 #print axioms PaperP1.ActualIntermediateFrequencyRegion.region_measurable
 #print axioms PaperP1.ActualIntermediateFrequencyRegion.cover_by_pairs
 #print axioms PaperP1.ActualIntermediateFrequencyRegion.rectangle_bound
