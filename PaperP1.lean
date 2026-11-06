@@ -4764,3 +4764,4 @@ public import PaperP1.Analysis.ExpandedCofactorSparseMean
 public import PaperP1.Analysis.PrimePowerLargeValues
 public import PaperP1.Analysis.CeilingAmplificationOrder
 public import PaperP1.Analysis.NarrowPrimeLargeValues
+public import PaperP1.Analysis.FinalPrimeOrderGeometry

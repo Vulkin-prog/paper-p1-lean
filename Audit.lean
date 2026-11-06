@@ -3906,6 +3906,7 @@ import PaperP1
 #print axioms PaperP1.FinalPrimeBandSieve.missing_good_density_tendsto
 #print axioms PaperP1.FinalPrimeBandSieve.second_separation_eventually
 #print axioms PaperP1.FinalPrimeBandSieve.disjoint_second_eventually
+#print axioms PaperP1.FinalPrimeOrderGeometry.eventual_geometry
 #print axioms PaperP1.FinalRectangleApproximation.rectangle_small_uniform
 #print axioms PaperP1.FinalRelativeApproximation.quotient_small_uniform
 #print axioms PaperP1.FiniteAbelNorm.partialSum_succ

@@ -1,6 +1,15 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0824: Actual narrow prime blocks satisfy the
+Current checkpoint P1-MATH-0825: Every actual final prime block admits a
+ceiling moment of order at most twice log log N plus one. The joint
+large-prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 51.76 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0824: Actual narrow prime blocks satisfy the
 separated large-value cardinality bound. The joint large-prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -2305,7 +2314,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records822 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records823 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -2424,7 +2433,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18658 audited theorem/lemma declarations**. This
+- The project currently has **18659 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -33581,3 +33590,12 @@ For the ACTUAL narrow block at anchor u, H>=4, integer k<=H and u>=H, every unit
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.76 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18215 jobs); direct axiom audit passed for 18658 declarations using only propext, Classical.choice and Quot.sound; all 18859 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.70 GiB.
+
+
+## Every actual final prime block admits a ceiling moment of order at most twice log log N plus one
+
+ONE eventual size regime precedes EVERY final-band parameter B and EVERY occupied narrow block at width H=floor((log log N)^3). Its ACTUAL anchor u satisfies H<=u, u>1 and log u>=log N/(2*log log N). Its ceiling moment k=ceil(log N/log u) satisfies k<=H and k<=2*log log N+1, while the ACTUAL rounded lower endpoint obeys N<=ceil(u)^k. One theorem proves every relation, including prime-filter membership and ceil effects, uniformly over all actual final blocks.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.76 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18217 jobs); direct axiom audit passed for 18659 declarations using only propext, Classical.choice and Quot.sound; all 18860 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.68 GiB.

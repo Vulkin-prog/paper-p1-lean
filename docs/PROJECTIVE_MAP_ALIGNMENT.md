@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0824: Actual narrow prime blocks satisfy the
+Current checkpoint P1-MATH-0825: Every actual final prime block admits a
+ceiling moment of order at most twice log log N plus one. The joint
+large-prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 51.76 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0824: Actual narrow prime blocks satisfy the
 separated large-value cardinality bound. The joint large-prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -25966,3 +25975,12 @@ For the ACTUAL narrow block at anchor u, H>=4, integer k<=H and u>=H, every unit
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.76 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18215 jobs); direct axiom audit passed for 18658 declarations using only propext, Classical.choice and Quot.sound; all 18859 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.70 GiB.
+
+
+## Every actual final prime block admits a ceiling moment of order at most twice log log N plus one
+
+ONE eventual size regime precedes EVERY final-band parameter B and EVERY occupied narrow block at width H=floor((log log N)^3). Its ACTUAL anchor u satisfies H<=u, u>1 and log u>=log N/(2*log log N). Its ceiling moment k=ceil(log N/log u) satisfies k<=H and k<=2*log log N+1, while the ACTUAL rounded lower endpoint obeys N<=ceil(u)^k. One theorem proves every relation, including prime-filter membership and ceil effects, uniformly over all actual final blocks.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.76 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18217 jobs); direct axiom audit passed for 18659 declarations using only propext, Classical.choice and Quot.sound; all 18860 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.68 GiB.
