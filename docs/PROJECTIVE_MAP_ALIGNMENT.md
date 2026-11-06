@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0757: Both actual relative Ramare quotients
+Current checkpoint P1-MATH-0758: Actual local-supremum frequency budget
+and logarithmic cutoff are monotone. The actual Ramare main-term
+frequency bounds and complete logarithmic short-average concentration
+remain unproved. T19.17 conditional; original T1.7 unconditional.
+Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main
+proved. Sources, false-scope corrections, compiler and axioms unchanged.
+About 52.9 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0757: Both actual relative Ramare quotients
 have a uniform negligible dyadic Dirichlet difference. The actual Ramare
 main-term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -24751,3 +24760,12 @@ For EVERY epsilon>0 one N0 precedes all N>=N0, all complete complex coefficient 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18081 jobs); direct axiom audit passed for 18420 declarations using only propext, Classical.choice and Quot.sound; all 18572 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.91 GiB.
+
+
+## Actual local-supremum frequency budget and logarithmic cutoff are monotone
+
+The literal frequency budget at K is <=the literal budget at M whenever K<=M and the coefficient function is continuous. The proof embeds the actual finite unit grid by j->j+(M-K), preserves every real center and reciprocal square weight EXACTLY, and uses the proved nonnegative local supremum. The actual cutoff ceil(log(X)^10) is monotone for 2<=X<=Y. Two theorems add the finite-index and cutoff comparison needed for simultaneous summation lengths.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18083 jobs); direct axiom audit passed for 18422 declarations using only propext, Classical.choice and Quot.sound; all 18574 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.88 GiB.

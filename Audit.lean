@@ -3930,6 +3930,8 @@ import PaperP1
 #print axioms PaperP1.FlexiblePrimeBandSieve.excluded_density_tendsto
 #print axioms PaperP1.FlexiblePrimeBandSieve.good_support
 #print axioms PaperP1.FlexiblePrimeBandSieve.missing_good_density_tendsto
+#print axioms PaperP1.FrequencyBudgetMonotone.frequencyBudget_mono
+#print axioms PaperP1.FrequencyBudgetMonotone.cutoff_mono
 #print axioms PaperP1.FullEulerBound.eulerConstant_pos
 #print axioms PaperP1.FullEulerBound.harmonic_split
 #print axioms PaperP1.FullEulerBound.harmonic_upper

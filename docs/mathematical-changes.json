@@ -34976,6 +34976,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "5b4568ae23c8f53bdf07c706d32a8bf4ba7f3525"
+    },
+    {
+      "id": "P1-MATH-0758",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Changing the cutoff changes the finite grid indices; a subset argument without translating indices would not preserve the actual local-supremum weights.",
+      "finding": "The literal frequency budget at K is <=the literal budget at M whenever K<=M and the coefficient function is continuous. The proof embeds the actual finite unit grid by j->j+(M-K), preserves every real center and reciprocal square weight EXACTLY, and uses the proved nonnegative local supremum. The actual cutoff ceil(log(X)^10) is monotone for 2<=X<=Y. Two theorems add the finite-index and cutoff comparison needed for simultaneous summation lengths.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual local-supremum frequency budget and logarithmic cutoff are monotone. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.FrequencyBudgetMonotone.frequencyBudget_mono",
+        "PaperP1.FrequencyBudgetMonotone.cutoff_mono"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18083 jobs); direct axiom audit passed for 18422 declarations using only propext, Classical.choice and Quot.sound; all 18574 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.88 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
