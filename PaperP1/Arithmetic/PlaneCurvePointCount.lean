@@ -5,9 +5,11 @@ public import PaperP1.Arithmetic.IntegerGridTheorem
 
 /-! # Actual plane-polynomial grids and the explicitly conditional BCN consequence
 
-The property `UniformBound` is an ordinary explicit input, not an axiom or a proved
-BCN theorem. It isolates the degree-uniform plane-polynomial specialization of
-arXiv:2302.04209v2, Theorem 2, equation (27).
+The property `UniformBound` records the degree-uniform plane-polynomial specialization of
+arXiv:2302.04209v2, Theorem 2, equation (27). Its positive witness with exponent 17 is proved
+internally by `QuadraticPlaneUniformBound.uniform_bound`. The consequences below take a
+witness as an explicit argument for reuse; the complete original-field affine curve theorem
+is `IntegralAffineCurvePointCount.article_13_4`.
 -/
 
 set_option autoImplicit false

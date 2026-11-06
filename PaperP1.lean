@@ -4195,3 +4195,5 @@ public import PaperP1.Geometry.OriginalFieldFiniteCurveParameters
 public import PaperP1.Geometry.ScalarExtendedRegularParameters
 public import PaperP1.Arithmetic.IntegralCurveGridCount
 public import PaperP1.Arithmetic.UniformIntegralCurveCount
+public import PaperP1.Arithmetic.FiniteIndexIntegralCurveCount
+public import PaperP1.Arithmetic.IntegralAffineCurvePointCount

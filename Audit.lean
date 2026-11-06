@@ -4932,6 +4932,7 @@ import PaperP1
 #print axioms PaperP1.FiniteEvenSquareClasses.coefficient_zero
 #print axioms PaperP1.FiniteEvenSquareClasses.combination_injective
 #print axioms PaperP1.FiniteEvenSquareClasses.finrank_space
+#print axioms PaperP1.FiniteIndexIntegralCurveCount.population_bound
 #print axioms PaperP1.FiniteNormalizationIntegerCount.exists_primitive_count
 #print axioms PaperP1.FiniteResidualRank.kernel_le_rows
 #print axioms PaperP1.FiniteResidualRank.kernel_le_graph
@@ -5177,6 +5178,11 @@ import PaperP1
 #print axioms PaperP1.IntegerRealIntervalCount.interval_card
 #print axioms PaperP1.IntegerRealIntervalCount.band_card
 #print axioms PaperP1.IntegerRealIntervalCount.strip_card
+#print axioms PaperP1.IntegralAffineCurvePointCount.mem_points
+#print axioms PaperP1.IntegralAffineCurvePointCount.mem_real_points
+#print axioms PaperP1.IntegralAffineCurvePointCount.finite_population
+#print axioms PaperP1.IntegralAffineCurvePointCount.grid_bound
+#print axioms PaperP1.IntegralAffineCurvePointCount.article_13_4
 #print axioms PaperP1.IntegralCurveGridCount.population_bound
 #print axioms PaperP1.IntegralGeometricPlanePointInput.exists_integral_presentation
 #print axioms PaperP1.IntegralGeometricPlanePointInput.presentation_properties

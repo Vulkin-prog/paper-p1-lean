@@ -6,10 +6,10 @@ public import PaperP1.Arithmetic.UniformAffineCurvePointCount
 
 /-! # One explicit uniform curve-count property for every actual projective coordinate chart
 
-`UniformBound` is an unproved argument, not an axiom. It includes the translation
+`UniformBound` is an explicit proposition, not an axiom. It records the translation
 from Pila's uniform affine curve theorem to actual prime ideals, linear Hilbert
 polynomials and normalized coordinate charts. The treatment of curves integral
-over Q without geometric integrality is part of this unproved translation.
+over Q without geometric integrality is included in this precise property.
 Sources: Pila, Astérisque 228 (1995), Theorem A,
 https://www.numdam.org/item/AST_1995__228__183_0.pdf ; and Salberger,
 https://arxiv.org/pdf/2311.05561v1 , Lemma 3, for the integral projective curve

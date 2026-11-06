@@ -1,5 +1,28 @@
 # Formalization status
 
+Current checkpoint P1-MATH-0560: **all 73 numbered main-article results are proved**.
+Main13.4 is internally proved on the literal affine integer-point set, in the
+genuine homogeneous prime projective-closure ideal formulation with actual
+Hilbert degree. One absolute exponent17 precedes all dimensions, and one
+positive c(n) precedes all coefficient fields, curves, degrees and heights.
+Original integrality over the coefficient field suffices. The formal count
+covers every characteristic-zero field. All projection, fibre, height and
+scalar-extension arguments are internal; no unproved point-count input remains.
+
+Current coverage is **163 proved, 2 conditional and 2 in_progress out of 167**,
+with **165 completed**: 73 main and 90 companion results are proved. The four
+remaining literal obligations are companionT1.7/T19.17 and the original false
+T1.10/T5.1 statements with their recorded checked corrected replacements.
+The companion remains incomplete and no Palomar registration is claimed.
+See the generated [current statement ledger](MANUSCRIPT_ALIGNMENT.md) and
+[exact main13.4 alignment](COMPLETE_AFFINE_QUADRATIC_CURVE_THEOREM_ALIGNMENT.md).
+
+Earlier development notes below preserve their checkpoint scopes. Older
+paragraphs using the word 'current' are historical; the coverage above and the
+generated ledger give the current status.
+
+## Historical development notes
+
 P1-MATH-0542 proves actual complete projective section loci are finite with cardinality at most e*degree, over every infinite field and without a selected chart. The exact finset, common normalization and scalar invariance are constructed. Scalar-extension degree transport and controlled projection remain separate.
 
 P1-MATH-0541 proves the actual e*degree section-point budget in every normalized rational/integer chart, including the original bounded integer-grid finset. Common projective normalization, coefficient-field extension and controlled higher-dimensional projection remain separate.
@@ -116,7 +139,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records557 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records558 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -235,7 +258,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **16262 audited theorem/lemma declarations**. This
+- The project currently has **16268 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -28205,3 +28228,22 @@ The complete all-dimensional counting argument over the original field is now in
 Coverage stays 162 proved, 2 conditional and 3 in_progress out of 167, with 164 completed. Main13.5 stays internally proved and companionT1.7/T19.17 remain unresolved. P1-MATH-0559 adds two modules, five theorems and two definitions. The project records 557 improvements and two P1 statement-scope corrections. No new axiom, compiler or heartbeat change, dependency download, original source edit or Palomar submission is introduced. Ubuntu free space remains about 6.38 GiB.
 
 Verified under Lean v4.36.0-rc2: full build passed (17037 jobs); direct axiom audit passed for 16262 declarations using only propext, Classical.choice and Quot.sound; all 15874 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.38 GiB.
+
+
+## Complete actual affine curve theorem 13.4 with absolute logarithmic exponent seventeen
+
+IntegralAffineCurvePointCount defines the actual finite set of affine integer points in the original coordinate box. A point belongs exactly when every affine coordinate has absolute value at most the original integer radius and every polynomial in the actual homogeneous curve ideal vanishes at the literal affine chart (1,z). The real-height membership theorem identifies the actual floor box with the original inequalities |z_i| <= H, without changing the point set or shifting the height.
+
+The formal curve presentation is the genuine homogeneous prime ideal of its projective closure, with degree d recorded by the actual linear Hilbert polynomial d*r+b of the actual quotient pieces. This is the coordinate-ideal formulation of the integral affine curve and its projective degree. The source theorem's integral-over-K requirement is retained; geometric integrality is neither assumed nor inferred. The literal normalized integer embedding z -> (1,z) is injective and maps every original affine solution to an actual source point. Its original height is unchanged for H>2. The internally proved original-field curve bound consequently applies to the actual affine integer point set itself.
+
+The article_13_4 declaration chooses one absolute positive logarithmic exponent, kappa=17, before every ambient dimension. For each affine dimension n it chooses one positive c(n), before every coefficient field, actual curve ideal, degree, Hilbert constant and height. Every original H>2 then satisfies the literal bound c(n)*d^2*H^(1/d)*(log H)^kappa. The proof even covers all affine dimensions and all characteristic-zero coefficient fields; it therefore includes the source's n>1 and K subset C scope. The constant uses n+1 homogeneous coordinates internally and depends only on the original affine dimension n. No degree, coefficient or curve dependence is hidden in it.
+
+FiniteIndexIntegralCurveCount proves the same genuine normalized integer count for every finite coordinate-index type, with its actual cardinal as ambient parameter. It constructs an actual degree-one polynomial presentation of the original quotient using a finite-index equivalence. Its literal kernel is homogeneous and prime. The actual quotient-piece equivalence preserves every original homogeneous dimension and the exact original Hilbert polynomial. Each original point evaluation annihilates that literal new kernel, the actual reindexing preserves the integer population cardinal, and normalized coordinates and original heights are retained. This supplies the finite-index source interface needed for the companion's actual projective curve data.
+
+Main13.4 is now proved in its complete coordinate-ideal source formulation, with the absolute logarithmic exponent17 and no unformalized plane count, curve count, projection, normalization, conductor, exceptional-budget, scalar-extension or geometric-integrality premise. Together with the already internally proved main13.5, every one of the main article's 73 numbered results is proved. Main13.4 moves from in_progress to proved. Coverage becomes 163 proved, 2 conditional and 2 in_progress out of 167, with 165 completed: 73 main and 90 companion results are proved.
+
+The remaining literal numbered obligations are companionT1.7, companionT19.17 and the original false companionT1.10/T5.1 assertions requiring their already recorded scope corrections. The two corrected replacements retain their checked proofs and remain distinct from the original false source statements. The companion's general/fixed-number surface covers and almost-all census input remain separate; no complete two-document formalization or Palomar registration is asserted.
+
+P1-MATH-0560 adds two modules, six theorems and one definition. The project records 558 improvements and two P1 statement-scope corrections. The external BCN recurrence erratum stays separate. No new axiom, compiler or heartbeat change, dependency download, original source edit or Palomar submission is introduced. Ubuntu free space remains about 6.36 GiB.
+
+Verified under Lean v4.36.0-rc2: full build passed (17041 jobs); direct axiom audit passed for 16268 declarations using only propext, Classical.choice and Quot.sound; all 15881 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.35 GiB.

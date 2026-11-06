@@ -6,11 +6,12 @@ public import Mathlib.Analysis.SpecialFunctions.Pow.Real
 
 /-! # The explicit uniform affine-curve input on actual ordinary curve point sets
 
-`UniformBound` is an unproved explicit input. It records the curve specialization
+`UniformBound` is an explicit proposition recording the curve specialization
 of Pila, Theorem A, Astérisque 228 (1995), pp. 183--187:
 https://www.numdam.org/item/AST_1995__228__183_0.pdf .
-Neither Pila's theorem nor its translation to the prime/Hilbert presentation
-is asserted here. All consequences below take this property as an argument.
+All consequences below take a witness of this property as an argument. The
+definition itself adds no axiom; a proof may be supplied by a separate count
+on the actual prime/Hilbert presentation.
 -/
 
 set_option autoImplicit false

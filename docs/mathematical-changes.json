@@ -26932,6 +26932,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "95e6d835688f087c53fb77b2b359ccb5ad0ca5db"
+    },
+    {
+      "id": "P1-MATH-0560",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "main",
+        "label": "p13:rig:bcn",
+        "number": "13.4",
+        "page": 32,
+        "source": "main_sections/pair_rigidity.tex",
+        "line": 214,
+        "statement_sha256": "36a54510a5ef5d7d80efb5a4753731304533733737412b93b4d3c13726784b96"
+      },
+      "original_assumption": "The complete original-field all-dimensional point-count proof was internal for arbitrary normalized integer populations, but its literal affine box, absolute-exponent quantifier order and arbitrary finite-index source interfaces had not been identified.",
+      "finding": "The actual affine integer-point set satisfies the full source theorem13.4 with one absolute logarithmic exponent17 and a positive constant depending only on affine dimension; all fields, curves, degrees and heights follow those constants, and integrality over the original field suffices.",
+      "proposed_revision": "Record main13.4 as internally proved in the actual homogeneous-coordinate-ideal formulation, use the explicit exponent17 and the stronger characteristic-zero coefficient-field scope, and apply the finite-index count to the companion's actual curve interfaces.",
+      "impact": "Promotes complete main13.4 to proved and completes all73 numbered main-article results, while retaining the companion's four separate literal obligations and forbidding premature Palomar claims.",
+      "evidence": [
+        "PaperP1.FiniteIndexIntegralCurveCount.population_bound",
+        "PaperP1.IntegralAffineCurvePointCount.mem_points",
+        "PaperP1.IntegralAffineCurvePointCount.mem_real_points",
+        "PaperP1.IntegralAffineCurvePointCount.finite_population",
+        "PaperP1.IntegralAffineCurvePointCount.grid_bound",
+        "PaperP1.IntegralAffineCurvePointCount.article_13_4",
+        "PaperP1.IntegralAffineCurvePointCount.points"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17041 jobs); direct axiom audit passed for 16268 declarations using only propext, Classical.choice and Quot.sound; all 15881 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.35 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

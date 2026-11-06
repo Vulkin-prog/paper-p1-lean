@@ -4,7 +4,7 @@ Formalization project for **Sharp Poisson approximation and second-order
 correction for long multiplicative runs**, main article and technical companion,
 by **Brice Pouly**, working version **1.6, 31 October 2026**.
 
-**Status: 162 unconditional and 2 conditional numbered results out of 167 (164 completed).**
+**Status: 163 unconditional and 2 conditional numbered results out of 167 (165 completed). All 73 main-article results are proved.**
 
 The complete main optimal scalar-law conclusions are proved internally:
 exact quadratic approximation at power4/3, weighted fixed-polynomial and
@@ -21,12 +21,17 @@ endpoint budget and uniform sublinear scaled-box count for everya<1/2,
 with the explicit absolute logarithmic exponent17. The exact real-height
 plane point bound is internal and uniform in degree and coefficients.
 
-Five literal numbered statements remain unresolved: main13.4, companionT1.7
-andT19.17, and the literal companionT1.10/T5.1 assertions requiring their
-recorded scope corrections. Their corrected replacements have checked proofs
-and remain distinct from the original false statements. Full all-dimensional
-BCN still requires higher-dimensional curve projection.
-Neither document is fully formalized. Palomar registration is a later milestone.
+Main13.4 is now proved on the actual affine integer-point set, with one
+absolute logarithmic exponent17 and constants depending only on affine
+dimension. Original-field integrality suffices; the formal count even covers
+every characteristic-zero coefficient field. The genuine homogeneous prime
+coordinate ideal and its actual Hilbert degree are retained.
+
+Four literal companion statements remain unresolved: T1.7, T19.17, and the
+original false T1.10/T5.1 assertions requiring their recorded scope corrections.
+Their corrected replacements have checked proofs and remain distinct from the
+original false statements. The main article's 73 numbered results are proved;
+the companion remains incomplete. Palomar registration is a later milestone.
 
 See the [current statement ledger](docs/MANUSCRIPT_ALIGNMENT.md),
 [current status](docs/FORMALIZATION_STATUS.md),
@@ -40,7 +45,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **557 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **558 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -1265,3 +1270,5 @@ P1-MATH-0557 proves actual regular projective section populations and the entire
 P1-MATH-0558 proves genuine bounded finite injective rank-d chart normalization over every original characteristic-zero coefficient field, without geometric integrality. Actual coordinate-power memberships descend through the genuine original parameter fibre. The final generic count and source-interface transport remain to be assembled.
 
 P1-MATH-0559 proves C(n)*d^2*H^(1/d)*(log H)^17 for actual original integral curve coordinate quotients over every characteristic-zero field, without geometric integrality or supplied projection/counting data. Literal affine-chart and finite-coordinate-index source interfaces remain to be identified before main13.4 promotion.
+
+P1-MATH-0560 proves complete main13.4 on the actual affine integer-point set, with absolute logarithmic exponent17 and dimension-only constants over every characteristic-zero coefficient field. All73 main numbered results are proved. Coverage is163 proved,2 conditional,2 in_progress; the four remaining literal obligations belong to the companion.
