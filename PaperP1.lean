@@ -4638,3 +4638,4 @@ public import PaperP1.Analysis.GaussianFibreError
 public import PaperP1.Analysis.FixedEulerTruncation
 public import PaperP1.Analysis.TripleSharpIdentity
 public import PaperP1.Analysis.EulerIntegralLimit
+public import PaperP1.Analysis.FullTriplePerron

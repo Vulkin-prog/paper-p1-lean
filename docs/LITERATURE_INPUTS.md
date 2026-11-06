@@ -1,6 +1,17 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0698: the ACTUAL full finite-prime
+Current checkpoint P1-MATH-0699: the ACTUAL literal triple
+convolution satisfies the FULL EULER triple Perron bound, with
+error <=epsilon*X after ONE threshold before ALL bounded completely
+multiplicative coefficients and prime bands. Full series, whole
+frequency limit, sharp identity and Euler-product identification
+are internal. The full LOCAL-SUPREMUM frequency budget, final
+Halasz and logarithmic short-average assembly remain unfinished.
+T19.17 conditional; original T1.7 complete. Coverage: 164 proved,
+1 conditional, 2 in_progress /167; all 73 main proved.
+False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0698: the ACTUAL full finite-prime
 series passes through the WHOLE Gaussian frequency integral.
 Literal prime coefficient masses and the actual reciprocal series
 majorant give uniform integrable domination; pointwise convergence
@@ -31076,6 +31087,18 @@ limit. Final full-Euler triple assembly, frequency budget and
 short-average estimate remain unfinished. T19.17 conditional;
 original T1.7 unconditional.
 
+## Internal actual full Euler triple Perron estimate
+
+P1-MATH-0699 assembles the literal finite Perron estimate, sharp
+triple identity, actual integer supports and whole frequency
+integral limit. The actual triple convolution is bounded by its
+full finite-prime series integral plus epsilon*X with one threshold
+before all bounded complete monoid coefficients and prime bands.
+For real coefficients the series equals the relevant full Euler
+product exactly. The full local-supremum frequency budget and final
+Halasz/short-average assembly remain unfinished. T19.17 conditional;
+original T1.7 unconditional.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -33110,3 +33133,18 @@ The actual integer polynomials tend pointwise to the literal full finite-prime s
 This closes the actual full-series limit through the whole Gaussian frequency integral. Final assembly of the actual triple inequality with the full Euler factor, the full Euler frequency budget, and the final Halasz/short-average estimate remain unfinished. T19.17 remains conditional; original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. About 54.0 GiB is free on Ubuntu; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17963 jobs); direct axiom audit passed for 18069 declarations using only propext, Classical.choice and Quot.sound; all 18143 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.95 GiB.
+
+
+## Actual full Euler triple Perron estimate with uniform error threshold
+
+Stable ID: p1:internal:actual-full-euler-triple-perron. The literal triple convolution is bounded by the actual full relevant Euler-factor Gaussian integral plus epsilon*X, after one uniform threshold. The full local-supremum frequency budget and final short-average assembly remain unfinished.
+
+FullTriplePerron assembles the ACTUAL finite triple Perron estimate, the exact sharp triple identity, the full prime-set integer supports and the proved whole-frequency integral limit. For each fixed X and band, take all prime factors <=X and the literal integer truncations Y>=X. Their sharp sums equal the original RealTripleConvolution.triple exactly. The finite Perron inequality has one error threshold independent of Y. Passing to the full-series integral preserves the inequality.
+
+The actual_full_series_perron theorem bounds the norm of the literal triple convolution by X/(2*pi) times the WHOLE Gaussian frequency integral of the two literal prime factors and the FULL finite-prime series, plus epsilon*X. The quantifier order is ONE X0 for each epsilon, BEFORE ALL X>=X0, all bounded completely multiplicative complex f, all real band parameters U and all actual P with p prime, 2*p<=X and log(X/p)<=2*U. No series limit, Perron inequality, coefficient fibre bound or aggregate error is assumed in this final theorem.
+
+The real coefficient case is connected by the explicit complexify monoid homomorphism. Bounds on actual prime values imply bounds on every positive integer by complete multiplicativity. The literal full series is EXACTLY the finite Euler product over ALL primes <=X, including every allowed prime power. Its whole Gaussian weighted norm integral is integrable. The real_full_euler_perron theorem therefore gives the actual full-EULER-factor version of the triple estimate with the SAME one-threshold quantifier order. Five theorems and one definition are added in one module.
+
+This closes the full relevant Euler-series/Perron transfer for the literal triple convolution. Control of the resulting full Euler local-supremum frequency budget, the final Halasz estimate and logarithmic short-average assembly remain unfinished. T19.17 remains conditional and original complete T1.7 unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. About 54.0 GiB is free on Ubuntu; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17965 jobs); direct axiom audit passed for 18074 declarations using only propext, Classical.choice and Quot.sound; all 18149 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.94 GiB.

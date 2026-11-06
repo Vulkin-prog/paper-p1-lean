@@ -32954,6 +32954,38 @@
         "status": "not_integrated"
       },
       "validation_commit": "46ba6f4f8cf198eb1470c7e985935e824715c748"
+    },
+    {
+      "id": "P1-MATH-0699",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The literal finite triple bound, sharp identity and whole Euler-series limit were separate. Their exact quantifier order and final full-Euler triple inequality still required assembly.",
+      "finding": "For each fixed X all truncations Y>=X have the same actual sharp triple sum. The uniform finite Perron error and actual whole-line limit yield the literal full-series inequality. For real monoid coefficients the series equals the full relevant Euler product exactly.",
+      "proposed_revision": "Use the proved full-Euler triple Perron theorem with its one-threshold quantifier order. Control the resulting full Euler frequency budget separately; do not replace it by a restricted small-prime polynomial.",
+      "impact": "Closes the actual full Euler/Perron transfer for the literal triple convolution. Full local-supremum frequency budget, final Halasz/short-average assembly and T19.17 remain unfinished.",
+      "evidence": [
+        "PaperP1.FullTriplePerron.actual_full_series_perron",
+        "PaperP1.FullTriplePerron.complexify_bound",
+        "PaperP1.FullTriplePerron.real_series_eq_product",
+        "PaperP1.FullTriplePerron.real_euler_integrable",
+        "PaperP1.FullTriplePerron.real_full_euler_perron",
+        "PaperP1.FullTriplePerron.complexify"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17965 jobs); direct axiom audit passed for 18074 declarations using only propext, Classical.choice and Quot.sound; all 18149 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.94 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -1,6 +1,17 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0698: the ACTUAL full finite-prime
+Current checkpoint P1-MATH-0699: the ACTUAL literal triple
+convolution satisfies the FULL EULER triple Perron bound, with
+error <=epsilon*X after ONE threshold before ALL bounded completely
+multiplicative coefficients and prime bands. Full series, whole
+frequency limit, sharp identity and Euler-product identification
+are internal. The full LOCAL-SUPREMUM frequency budget, final
+Halasz and logarithmic short-average assembly remain unfinished.
+T19.17 conditional; original T1.7 complete. Coverage: 164 proved,
+1 conditional, 2 in_progress /167; all 73 main proved.
+False scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0698: the ACTUAL full finite-prime
 series passes through the WHOLE Gaussian frequency integral.
 Literal prime coefficient masses and the actual reciprocal series
 majorant give uniform integrable domination; pointwise convergence
@@ -1212,7 +1223,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records696 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records697 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1331,7 +1342,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18069 audited theorem/lemma declarations**. This
+- The project currently has **18074 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31274,3 +31285,16 @@ The actual integer polynomials tend pointwise to the literal full finite-prime s
 This closes the actual full-series limit through the whole Gaussian frequency integral. Final assembly of the actual triple inequality with the full Euler factor, the full Euler frequency budget, and the final Halasz/short-average estimate remain unfinished. T19.17 remains conditional; original complete T1.7 unconditional. Coverage remains 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. About 54.0 GiB is free on Ubuntu; no dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17963 jobs); direct axiom audit passed for 18069 declarations using only propext, Classical.choice and Quot.sound; all 18143 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.95 GiB.
+
+
+## Actual full Euler triple Perron estimate with uniform error threshold
+
+FullTriplePerron assembles the ACTUAL finite triple Perron estimate, the exact sharp triple identity, the full prime-set integer supports and the proved whole-frequency integral limit. For each fixed X and band, take all prime factors <=X and the literal integer truncations Y>=X. Their sharp sums equal the original RealTripleConvolution.triple exactly. The finite Perron inequality has one error threshold independent of Y. Passing to the full-series integral preserves the inequality.
+
+The actual_full_series_perron theorem bounds the norm of the literal triple convolution by X/(2*pi) times the WHOLE Gaussian frequency integral of the two literal prime factors and the FULL finite-prime series, plus epsilon*X. The quantifier order is ONE X0 for each epsilon, BEFORE ALL X>=X0, all bounded completely multiplicative complex f, all real band parameters U and all actual P with p prime, 2*p<=X and log(X/p)<=2*U. No series limit, Perron inequality, coefficient fibre bound or aggregate error is assumed in this final theorem.
+
+The real coefficient case is connected by the explicit complexify monoid homomorphism. Bounds on actual prime values imply bounds on every positive integer by complete multiplicativity. The literal full series is EXACTLY the finite Euler product over ALL primes <=X, including every allowed prime power. Its whole Gaussian weighted norm integral is integrable. The real_full_euler_perron theorem therefore gives the actual full-EULER-factor version of the triple estimate with the SAME one-threshold quantifier order. Five theorems and one definition are added in one module.
+
+This closes the full relevant Euler-series/Perron transfer for the literal triple convolution. Control of the resulting full Euler local-supremum frequency budget, the final Halasz estimate and logarithmic short-average assembly remain unfinished. T19.17 remains conditional and original complete T1.7 unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress /167; all 73 main results proved. Original false scopes/corrections, source hashes, pinned Lean and allowed axioms remain unchanged. About 54.0 GiB is free on Ubuntu; no dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17965 jobs); direct axiom audit passed for 18074 declarations using only propext, Classical.choice and Quot.sound; all 18149 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.94 GiB.

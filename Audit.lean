@@ -3830,6 +3830,11 @@ import PaperP1
 #print axioms PaperP1.FixedEulerTruncation.polynomial_norm_bound
 #print axioms PaperP1.FixedEulerTruncation.total_continuous
 #print axioms PaperP1.FixedEulerTruncation.polynomial_tendsto
+#print axioms PaperP1.FullTriplePerron.actual_full_series_perron
+#print axioms PaperP1.FullTriplePerron.complexify_bound
+#print axioms PaperP1.FullTriplePerron.real_series_eq_product
+#print axioms PaperP1.FullTriplePerron.real_euler_integrable
+#print axioms PaperP1.FullTriplePerron.real_full_euler_perron
 #print axioms PaperP1.GaussianCutoff.prefactor_double_le
 #print axioms PaperP1.GaussianCutoff.doubled_mass_bound
 #print axioms PaperP1.GaussianCutoff.gaussian_tail_bound
