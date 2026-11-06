@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0822: Actual high prime moments bound the
+Current checkpoint P1-MATH-0823: The ceiling amplification order has
+exact logarithmic and rounded-power bounds. The joint large-prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.76 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0822: Actual high prime moments bound the
 cardinality of separated large values. The joint large-prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -25930,3 +25939,12 @@ For arbitrary actual prime supports in Icc L U with reciprocal mass<=1, every in
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.76 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18211 jobs); direct axiom audit passed for 18651 declarations using only propext, Classical.choice and Quot.sound; all 18851 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.74 GiB.
+
+
+## The ceiling amplification order has exact logarithmic and rounded-power bounds
+
+Define k=ceil(log N/log u) for an actual anchor u>1. Prove log N<=k*log u<=log N+log u, N<=u^k<=u*N under the stated positive-size regimes, k<=H whenever log N<=H*log u, and N<=ceil(u)^k with the ACTUAL integer endpoint. Six theorems and one definition establish the ceiling order without any asymptotic approximation.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.76 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18213 jobs); direct axiom audit passed for 18657 declarations using only propext, Classical.choice and Quot.sound; all 18858 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.72 GiB.

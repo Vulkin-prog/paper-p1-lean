@@ -37010,6 +37010,39 @@
         "status": "not_integrated"
       },
       "validation_commit": "b22daf97aea587dfe3f86fbafd9e03ecec74c3a3"
+    },
+    {
+      "id": "P1-MATH-0823",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Large-value cardinality estimates need a moment whose powered lower endpoint reaches the frequency height; the floor order used for mixed products has a different role.",
+      "finding": "Define k=ceil(log N/log u) for an actual anchor u>1. Prove log N<=k*log u<=log N+log u, N<=u^k<=u*N under the stated positive-size regimes, k<=H whenever log N<=H*log u, and N<=ceil(u)^k with the ACTUAL integer endpoint. Six theorems and one definition establish the ceiling order without any asymptotic approximation.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The ceiling amplification order has exact logarithmic and rounded-power bounds. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.CeilingAmplificationOrder.logarithmic_lower",
+        "PaperP1.CeilingAmplificationOrder.logarithmic_upper",
+        "PaperP1.CeilingAmplificationOrder.power_lower",
+        "PaperP1.CeilingAmplificationOrder.power_upper",
+        "PaperP1.CeilingAmplificationOrder.order_le",
+        "PaperP1.CeilingAmplificationOrder.rounded_power_lower",
+        "PaperP1.CeilingAmplificationOrder.order"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18213 jobs); direct axiom audit passed for 18657 declarations using only propext, Classical.choice and Quot.sound; all 18858 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.72 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

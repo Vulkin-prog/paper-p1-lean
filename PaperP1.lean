@@ -4762,3 +4762,4 @@ public import PaperP1.Analysis.ExpandedSparseSupportedMean
 public import PaperP1.Analysis.ExpandedCofactorRegime
 public import PaperP1.Analysis.ExpandedCofactorSparseMean
 public import PaperP1.Analysis.PrimePowerLargeValues
+public import PaperP1.Analysis.CeilingAmplificationOrder

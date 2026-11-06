@@ -3465,6 +3465,12 @@ import PaperP1
 #print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_through_parameter
 #print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_at_curve_point
 #print axioms PaperP1.BoxedLocalUnitGraphMaps.exists_control_set_and_maps
+#print axioms PaperP1.CeilingAmplificationOrder.logarithmic_lower
+#print axioms PaperP1.CeilingAmplificationOrder.logarithmic_upper
+#print axioms PaperP1.CeilingAmplificationOrder.power_lower
+#print axioms PaperP1.CeilingAmplificationOrder.power_upper
+#print axioms PaperP1.CeilingAmplificationOrder.order_le
+#print axioms PaperP1.CeilingAmplificationOrder.rounded_power_lower
 #print axioms PaperP1.CenteredLogarithmicSampling.shift_polynomial
 #print axioms PaperP1.CenteredLogarithmicSampling.shift_norm
 #print axioms PaperP1.CenteredLogarithmicSampling.logarithmic_bandwidth
