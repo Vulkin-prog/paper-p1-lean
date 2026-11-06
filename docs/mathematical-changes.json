@@ -41774,6 +41774,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "bbd317a363aa8bed4d534f56db148bc9ffeefc65"
+    },
+    {
+      "id": "P1-MATH-0973",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal finite physical localization estimate. Matching the actual smooth population, actual window geometry and discrete exceptional counts remains necessary.",
+      "finding": "Five theorems prove the actual Gaussian exponential comparison and weighted finite tail sum using the checked unweighted logarithmic Gaussian mass bound. A whole-sum bound and an actual at-most-one-candidate bound are derived. Every finite population split into at most one inside candidate and a distant outside population has an explicit total upper bound, including its exact Gaussian tail factor, prefactor and rounding-free finite sums. No smooth-number or window-census input is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual finite logarithmic Gaussian averages have a proved one-candidate localization budget. The actual off-central estimate, the ordinary smooth long-interval mean comparison and the uniform Gaussian mean-square comparison are proved. Localization of the Gaussian averages to the literal logarithmic windows remains unproved, so T19.17 stays conditional. The stronger uniform sharp short-average theorem for all real completely multiplicative functions is not established.",
+      "evidence": [
+        "PaperP1.GaussianLocalizationBudget.exponential_comparison",
+        "PaperP1.GaussianLocalizationBudget.tail_sum",
+        "PaperP1.GaussianLocalizationBudget.sum_bound",
+        "PaperP1.GaussianLocalizationBudget.one_point_bound",
+        "PaperP1.GaussianLocalizationBudget.localization"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18513 jobs); direct axiom audit passed for 19257 declarations using only propext, Classical.choice and Quot.sound; all 19570 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.10 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

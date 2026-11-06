@@ -4307,6 +4307,11 @@ import PaperP1
 #print axioms PaperP1.GaussianLaplaceKernel.vertical_norm
 #print axioms PaperP1.GaussianLaplaceKernel.vertical_ne_zero
 #print axioms PaperP1.GaussianLaplaceKernel.kernel_complex_formula
+#print axioms PaperP1.GaussianLocalizationBudget.exponential_comparison
+#print axioms PaperP1.GaussianLocalizationBudget.tail_sum
+#print axioms PaperP1.GaussianLocalizationBudget.sum_bound
+#print axioms PaperP1.GaussianLocalizationBudget.one_point_bound
+#print axioms PaperP1.GaussianLocalizationBudget.localization
 #print axioms PaperP1.GaussianLogarithmicScales.shortWidth_pos
 #print axioms PaperP1.GaussianLogarithmicScales.longWidth_pos
 #print axioms PaperP1.GaussianLogarithmicScales.logarithmic_ratio_tendsto
