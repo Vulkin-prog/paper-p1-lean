@@ -32287,6 +32287,46 @@
         "status": "not_integrated"
       },
       "validation_commit": "2997a6c3b14aac0d6115afd08999984fb5cc2b44"
+    },
+    {
+      "id": "P1-MATH-0683",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "The standard mean-square theorem yields a squared logarithmic weight and does not supply the single-weight prime estimate required in the analytic convolution proof. An assumed weighted Gaussian row would leave the same gap.",
+      "finding": "Actual local prime density proves short logarithmic-window masses and every weighted Gaussian row. They give a uniform actual prime-polynomial square mean with the SINGLE weight log(p)/p and an explicit universal constant, for all complex coefficients and primes p>=T^2.",
+      "proposed_revision": "Use this internal prime-supported estimate in the actual convolution/Perron argument. Distinguish it from the full prime-power von-Mangoldt lemma, and prove the remaining full multiplicative and short-average transfer before declaring T19.17 complete.",
+      "impact": "Closes the stronger prime-supported weighted polynomial mean without a density or row premise. The full von-Mangoldt statement, convolution/Perron and T19.17 assembly remain unfinished.",
+      "evidence": [
+        "PaperP1.PrimeLogFrequencyRows.exp_small_bound",
+        "PaperP1.PrimeLogFrequencyRows.short_log_window_mass",
+        "PaperP1.PrimeLogFrequencyRows.floor_gap",
+        "PaperP1.PrimeLogFrequencyRows.same_bin_gap",
+        "PaperP1.PrimeLogFrequencyRows.bin_mass",
+        "PaperP1.PrimeLogFrequencyRows.gaussian_row",
+        "PaperP1.WeightedGaussianKernel.weighted_symmetric_bound",
+        "PaperP1.WeightedGaussianKernel.gaussian_weighted_mean",
+        "PaperP1.WeightedPrimeMean.constant_pos",
+        "PaperP1.WeightedPrimeMean.value_continuous",
+        "PaperP1.WeightedPrimeMean.mean_square",
+        "PaperP1.PrimeLogFrequencyRows.bin",
+        "PaperP1.WeightedPrimeMean.constant",
+        "PaperP1.WeightedPrimeMean.value"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17933 jobs); direct axiom audit passed for 17900 declarations using only propext, Classical.choice and Quot.sound; all 17922 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.23 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

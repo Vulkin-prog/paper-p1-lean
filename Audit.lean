@@ -4126,6 +4126,12 @@ import PaperP1
 #print axioms PaperP1.PrimeBandDiscreteMoments.large_values_card
 #print axioms PaperP1.PrimeBandDiscreteMoments.reciprocal_sampled_estimates_eventually
 #print axioms PaperP1.PrimeEulerSaddleScale.exponent_bound
+#print axioms PaperP1.PrimeLogFrequencyRows.exp_small_bound
+#print axioms PaperP1.PrimeLogFrequencyRows.short_log_window_mass
+#print axioms PaperP1.PrimeLogFrequencyRows.floor_gap
+#print axioms PaperP1.PrimeLogFrequencyRows.same_bin_gap
+#print axioms PaperP1.PrimeLogFrequencyRows.bin_mass
+#print axioms PaperP1.PrimeLogFrequencyRows.gaussian_row
 #print axioms PaperP1.PrimeLogarithmicBands.mass_nonneg
 #print axioms PaperP1.PrimeLogarithmicBands.interval_lower
 #print axioms PaperP1.PrimeLogarithmicBands.band_disjoint
@@ -4612,6 +4618,8 @@ import PaperP1
 #print axioms PaperP1.UnitSlopePieceRestriction.exists_avoiding
 #print axioms PaperP1.VerticalGridLattice.center_identity
 #print axioms PaperP1.VerticalGridLattice.point_box
+#print axioms PaperP1.WeightedGaussianKernel.weighted_symmetric_bound
+#print axioms PaperP1.WeightedGaussianKernel.gaussian_weighted_mean
 #print axioms PaperP1.WeightedGeometricTail.weighted_hasSum
 #print axioms PaperP1.WeightedGeometricTail.weighted_bound
 #print axioms PaperP1.WeightedGeometricTail.weighted_tail_bound
@@ -4628,6 +4636,9 @@ import PaperP1
 #print axioms PaperP1.WeightedLatticeTriangle.triangle_card_bound
 #print axioms PaperP1.WeightedLeakageCutoff.weight_comparison
 #print axioms PaperP1.WeightedLeakageCutoff.finite_split
+#print axioms PaperP1.WeightedPrimeMean.constant_pos
+#print axioms PaperP1.WeightedPrimeMean.value_continuous
+#print axioms PaperP1.WeightedPrimeMean.mean_square
 #print axioms PaperP1.WeightedRecurrence.l1_nonneg
 #print axioms PaperP1.WeightedRecurrence.abs_tsum_le_l1
 #print axioms PaperP1.WeightedRecurrence.l1_add_le

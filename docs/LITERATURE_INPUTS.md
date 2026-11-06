@@ -1,6 +1,16 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0682: ACTUAL primes in every interval
+Current checkpoint P1-MATH-0683: an ACTUAL weighted-prime square
+mean with SINGLE weight log(p)/p is proved uniformly for ALL
+complex coefficients, T>=1 and actual primes p>=T^2.
+Actual local prime masses and weighted Gaussian rows are internal.
+The full prime-power lemma, multiplicative convolution/Perron,
+full dyadic transfer and short-average assembly remain UNPROVED.
+T19.17 conditional; original T1.7 complete. Coverage: 164 proved,
+1 conditional, 2 in_progress /167; all 73 main proved. False scopes
+and checked corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0682: ACTUAL primes in every interval
 [x,x+H), x>=1,H>=2, are <=20*H/log H, unconditionally.
 Actual logarithmic prime mass<=40H and reciprocal logarithmic
 mass<=40H/A hold if A+H<=H^2. The integer level and all errors
@@ -30757,6 +30767,17 @@ weighted-prime mean remain unproved; the full dyadic transfer and
 short-average assembly remain unfinished. T19.17 stays conditional;
 original T1.7 is unconditional.
 
+## Internal prime-supported single-logarithm polynomial mean
+
+P1-MATH-0683 proves the actual integral bound with one weight
+log(p)/p, uniformly for arbitrary complex coefficients and primes
+p>=T^2, T>=1. Its local masses, bins and weighted Gaussian rows
+are proved internally from the actual interval sieve. This is the
+prime-supported case used in Section 4 of the cited short Halasz
+proof. The full prime-power statement and convolution/Perron,
+full dyadic and short-average transfers remain unfinished.
+T19.17 remains conditional; original T1.7 is unconditional.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -32537,3 +32558,20 @@ For every start A>=1 and width H>=2 satisfying A+H<=H^2, the ACTUAL logarithmic 
 This closes the actual uniform local prime-density bound and these interval logarithmic weights. A weighted Gaussian frequency-row bound and the stronger weighted-prime polynomial mean still need proof; neither follows merely by renaming the standard unweighted mean. Full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.2 GiB; no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17927 jobs); direct axiom audit passed for 17889 declarations using only propext, Classical.choice and Quot.sound; all 17908 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.25 GiB.
+
+
+## Unconditional weighted-prime polynomial mean from actual local prime density
+
+Stable ID: p1:internal:weighted-prime-polynomial-mean. The prime-supported single-logarithm mean is internal, including actual local masses and Gaussian rows. The full von-Mangoldt/prime-power lemma and multiplicative convolution/Perron assembly are not claimed.
+
+PrimeLogFrequencyRows proves exp(u)<=1+2u for 0<=u<=1. For EVERY finite set S of actual primes p>=T^2, T>=1, with logarithmic diameter at most 1/T, its ACTUAL reciprocal logarithmic mass sum log(p)/p is <=200/T. The proof chooses the actual minimum prime A, uses the actual integer width H=ceil(4*A/T), proves A+H<=H^2, and applies the internally proved interval prime sieve. Every ceiling and endpoint is checked; no short-prime or frequency mass is assumed.
+
+The actual bin is floor(T*|log(p)-w|). Two primes in the same bin on the same side of w have logarithmic distance <=1/T, so the mass in each full bin is <=400/T. Exact finite fibre sums and the internal Gaussian integer-row bound give, for EVERY real centre w, the ACTUAL weighted row sum <=(400/T)*(1+2*sqrt(pi)). No row estimate is an external input.
+
+WeightedGaussianKernel proves a weighted symmetric-kernel inequality for actual nonnegative masses. The row premise is sum_j m(j)*k(i,j)<=L and the resulting energy is L*sum_i m(i)*x(i)^2, with a SINGLE mass factor. The actual Gaussian Gram identity then proves the corresponding weighted polynomial mean; all complex norms and nonnegative weights are checked.
+
+WeightedPrimeMean assembles these facts. Its literal value is sum_{p in P} a(p)*(log(p)/p)*exp(-i*t*log(p)). For EVERY finite set of actual primes p>=T^2, T>=1, and EVERY complex coefficient sequence a, the actual integral of its squared norm over [-T,T] is <=C*sum_{p in P}|a(p)|^2*log(p)/p, where the explicit universal positive C is 400*exp(1)*sqrt(pi)*(1+2*sqrt(pi)). This removes the extra logarithm of the standard unweighted mean by a proved local prime count, rather than assuming a stronger mean. Three modules add eleven theorems and three definitions.
+
+The proved estimate is the PRIME-SUPPORTED case needed in the displayed convolution argument of Granville--Harper--Soundararajan. Their full Lemma 1 also states a von-Mangoldt/prime-power version; that more general statement is NOT claimed here. The actual multiplicative convolution, truncated Perron estimate, full dyadic Halasz transfer and logarithmic short-average assembly remain unfinished. T19.17 retains its explicit analytic input; original complete T1.7 remains unconditional. Coverage stays 164 proved, 1 conditional, 2 in_progress out of 167; all 73 main results proved. Original false scopes and checked corrections are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. Ubuntu retains about 54.2 GiB; no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17933 jobs); direct axiom audit passed for 17900 declarations using only propext, Classical.choice and Quot.sound; all 17922 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 54.23 GiB.

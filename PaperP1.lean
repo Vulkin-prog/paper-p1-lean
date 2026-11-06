@@ -4620,3 +4620,6 @@ public import PaperP1.Arithmetic.OptimalSelbergWeights
 public import PaperP1.Arithmetic.SelbergLambdaError
 public import PaperP1.Arithmetic.SquarefreeHarmonicLower
 public import PaperP1.Arithmetic.LocalPrimeSieve
+public import PaperP1.Analysis.PrimeLogFrequencyRows
+public import PaperP1.Analysis.WeightedGaussianKernel
+public import PaperP1.Analysis.WeightedPrimeMean
