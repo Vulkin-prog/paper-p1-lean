@@ -40413,7 +40413,8 @@
             "PaperP1.HyperellipticNormMultiplicity.norm_root_multiplicity"
           ]
         }
-      ]
+      ],
+      "validation_commit": "633d3d77caf7cd4b912b7b266d440cce05230fdd"
     },
     {
       "label": "p1:arith:dense",
