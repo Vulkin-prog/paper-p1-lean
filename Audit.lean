@@ -1792,6 +1792,7 @@ import PaperP1
 #print axioms PaperP1.OrdinaryWeightedProjectionComposition.ordinary_homogeneous
 #print axioms PaperP1.OrdinaryWeightedProjectionComposition.weighted_homogeneous
 #print axioms PaperP1.OrdinaryWeightedProjectionComposition.map_relation
+#print axioms PaperP1.P3GlobalAuxiliaryFromCanonicalDivisors.exists_auxiliary
 #print axioms PaperP1.P3HeightControlledEquation.scalar_of_dvd
 #print axioms PaperP1.P3HeightControlledEquation.integer_evaluation
 #print axioms PaperP1.P3HeightControlledEquation.exists_model_or_auxiliary
@@ -1908,6 +1909,8 @@ import PaperP1
 #print axioms PaperP1.PolynomialDeterminantHeight.unit_mul_height
 #print axioms PaperP1.PolynomialDeterminantHeight.determinant_height
 #print axioms PaperP1.PolynomialDeterminantHeight.determinant_degree
+#print axioms PaperP1.PolynomialEvaluationCongruence.eval_sub_dvd
+#print axioms PaperP1.PolynomialEvaluationCongruence.dvd_evaluation_iff
 #print axioms PaperP1.PolynomialEventualCoefficientOrder.coefficient_le
 #print axioms PaperP1.PolynomialEventualCoefficientOrder.translation_degree_le
 #print axioms PaperP1.PolynomialEventualCoefficientOrder.translation_coefficient
@@ -6069,6 +6072,17 @@ import PaperP1
 #print axioms PaperP1.OrdinarySourcePointTransport.ordinary_image_point
 #print axioms PaperP1.OrdinarySourcePointTransport.points_image_card
 #print axioms PaperP1.OriginalWindowValueBounds.values_geometry
+#print axioms PaperP1.P3CanonicalSmoothResidues.representative_last
+#print axioms PaperP1.P3CanonicalSmoothResidues.residue_congruence
+#print axioms PaperP1.P3CanonicalSmoothResidues.good_iff
+#print axioms PaperP1.P3CanonicalSmoothResidues.classification_none_iff
+#print axioms PaperP1.P3CanonicalSmoothResidues.classification_congruence
+#print axioms PaperP1.P3CanonicalSmoothResidues.card_le
+#print axioms PaperP1.P3CanonicalSurfaceDivisor.atPrime_eq
+#print axioms PaperP1.P3CanonicalSurfaceDivisor.unassigned_iff
+#print axioms PaperP1.P3CanonicalSurfaceDivisor.total_population
+#print axioms PaperP1.P3CanonicalSurfaceDivisor.integer_dvd
+#print axioms PaperP1.P3CanonicalSurfaceDivisor.det_zero_of_small
 #print axioms PaperP1.P3SharpSmoothClassAuxiliary.uniform_degree
 #print axioms PaperP1.P3SingleAuxiliaryCurveCover.cover_of_equation
 #print axioms PaperP1.PNTLogPrimePowerLower.weight_nonneg

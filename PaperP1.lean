@@ -4349,3 +4349,7 @@ public import PaperP1.Algebra.MultiPrimeClassifiedSurfaceDeterminant
 public import PaperP1.Algebra.PartiallyClassifiedBivariateDeterminant
 public import PaperP1.Algebra.PartiallyClassifiedNormalizedSurfaceDeterminant
 public import PaperP1.Algebra.SmoothSurfacePolynomialApproximation
+public import PaperP1.Algebra.P3GlobalAuxiliaryFromCanonicalDivisors
+public import PaperP1.Algebra.PolynomialEvaluationCongruence
+public import PaperP1.Arithmetic.P3CanonicalSmoothResidues
+public import PaperP1.Arithmetic.P3CanonicalSurfaceDivisor

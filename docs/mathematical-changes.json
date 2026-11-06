@@ -28553,6 +28553,55 @@
         "status": "not_integrated"
       },
       "validation_commit": "8011284d01394895c001ffa0e398c7cdc891211a"
+    },
+    {
+      "id": "P1-MATH-0599",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "A global auxiliary construction must use actual residue classes and actual integer representatives of the original surface points, control unassigned columns precisely, and derive an independent polynomial from the actual determinant comparison.",
+      "finding": "Canonical classes and populations are constructed internally; unassigned columns are exactly gradient-divisible reductions. The actual canonical prime divisor controls each full-size minor, and an explicit scalar comparison constructs the global nonmultiple auxiliary polynomial.",
+      "proposed_revision": "Define the canonical smooth residue classes, retain the exact population identity including gradient-divisible columns, and isolate the required quantitative scalar lower bound for the literal global prime divisor.",
+      "impact": "Removes all supplied residue-class, representative and determinant-to-polynomial correspondences. Leaves the sharp quantitative prime-divisor estimate explicit and unresolved.",
+      "evidence": [
+        "PaperP1.P3GlobalAuxiliaryFromCanonicalDivisors.exists_auxiliary",
+        "PaperP1.PolynomialEvaluationCongruence.eval_sub_dvd",
+        "PaperP1.PolynomialEvaluationCongruence.dvd_evaluation_iff",
+        "PaperP1.P3CanonicalSmoothResidues.representative_last",
+        "PaperP1.P3CanonicalSmoothResidues.residue_congruence",
+        "PaperP1.P3CanonicalSmoothResidues.good_iff",
+        "PaperP1.P3CanonicalSmoothResidues.classification_none_iff",
+        "PaperP1.P3CanonicalSmoothResidues.classification_congruence",
+        "PaperP1.P3CanonicalSmoothResidues.card_le",
+        "PaperP1.P3CanonicalSurfaceDivisor.atPrime_eq",
+        "PaperP1.P3CanonicalSurfaceDivisor.unassigned_iff",
+        "PaperP1.P3CanonicalSurfaceDivisor.total_population",
+        "PaperP1.P3CanonicalSurfaceDivisor.integer_dvd",
+        "PaperP1.P3CanonicalSurfaceDivisor.det_zero_of_small",
+        "PaperP1.P3CanonicalSmoothResidues.representative",
+        "PaperP1.P3CanonicalSmoothResidues.Good",
+        "PaperP1.P3CanonicalSmoothResidues.Class",
+        "PaperP1.P3CanonicalSmoothResidues.residue",
+        "PaperP1.P3CanonicalSmoothResidues.classification",
+        "PaperP1.P3CanonicalSurfaceDivisor.atPrime",
+        "PaperP1.P3CanonicalSurfaceDivisor.population",
+        "PaperP1.P3CanonicalSurfaceDivisor.exponent",
+        "PaperP1.P3CanonicalSurfaceDivisor.divisor"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17361 jobs); direct axiom audit passed for 16736 declarations using only propext, Classical.choice and Quot.sound; all 16465 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.07 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
