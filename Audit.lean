@@ -4882,6 +4882,14 @@ import PaperP1
 #print axioms PaperP1.WeightedLatticeTriangle.triangle_card_bound
 #print axioms PaperP1.WeightedLeakageCutoff.weight_comparison
 #print axioms PaperP1.WeightedLeakageCutoff.finite_split
+#print axioms PaperP1.WeightedPerronError.error_nonneg
+#print axioms PaperP1.WeightedPerronError.smoothingMajorant_tendsto
+#print axioms PaperP1.WeightedPerronError.smoothing_bound_eventually
+#print axioms PaperP1.WeightedPerronError.weighted_smoothing_tendsto
+#print axioms PaperP1.WeightedPerronError.weighted_tail_tendsto
+#print axioms PaperP1.WeightedPerronError.combinedError_nonneg
+#print axioms PaperP1.WeightedPerronError.weightedNormalized_tendsto
+#print axioms PaperP1.WeightedPerronError.weightedNormalized_small
 #print axioms PaperP1.WeightedPrimeMean.constant_pos
 #print axioms PaperP1.WeightedPrimeMean.value_continuous
 #print axioms PaperP1.WeightedPrimeMean.mean_square

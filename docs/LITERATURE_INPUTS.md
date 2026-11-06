@@ -1,6 +1,14 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0713: The actual finite and full triple
+Current checkpoint P1-MATH-0714: The actual combined Perron error
+remains negligible even after normalization by X and multiplication by
+log(X)^2. The actual geometric band partition, global Halasz assembly
+and final logarithmic short-average theorem remain unfinished. T19.17
+conditional; original T1.7 complete. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. False
+scopes/corrections unchanged. No Palomar registration.
+
+Historical checkpoint P1-MATH-0713: The actual finite and full triple
 Perron estimates retain the same explicit error(X), uniform in
 coefficients, supports and prime bands. Weighted quantitative global
 band/Halasz assembly and final logarithmic short averages remain
@@ -31346,6 +31354,14 @@ Weighted quantitative global band/Halasz assembly and final logarithmic
 short averages remain unfinished. T19.17 conditional; original T1.7
 unconditional.
 
+## Internal weighted quantitative Perron error remains negligible for growing band sums
+
+The actual combined Perron error remains negligible even after
+normalization by X and multiplication by log(X)^2. The actual geometric
+band partition, global Halasz assembly and final logarithmic short-
+average theorem remain unfinished. T19.17 conditional; original T1.7
+unconditional.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -33595,3 +33611,16 @@ This retains the rate required for a growing-band summation. Its logarithmically
 Weighted quantitative global band/Halasz assembly and final logarithmic short averages remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original corrections, sources, pinned Lean and axioms unchanged. About 53.9 GiB is free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17993 jobs); direct axiom audit passed for 18172 declarations using only propext, Classical.choice and Quot.sound; all 18269 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.69 GiB.
+
+
+## Weighted quantitative Perron error remains negligible for growing band sums
+
+Stable ID: p1:internal:weighted-perron-error. The actual combined Perron error remains negligible even after normalization by X and multiplication by log(X)^2. The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished.
+
+The actual smoothing error is nonnegative. After multiplication by log(X)^2/X it is eventually bounded by the explicit smoothingMajorant D*(log(X)^(-4)+log(X)^(-6)+(log(X)^4+log(X)^2)/X), which tends to zero. The same logarithmic-square weight times the actual scaled Gaussian tail tends to zero, using the proved log(X)^13/X bound.
+
+combinedError(X) is the literal smoothing error plus X/(2*pi) times the literal scaled tail. It is nonnegative and weightedNormalized(X)=log(X)^2*combinedError(X)/X tends to zero. One threshold gives any requested bound. Eight theorems and four definitions preserve the quantitative rate needed by growing finite band sums.
+
+The actual geometric band partition, global Halasz assembly and final logarithmic short-average theorem remain unfinished. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Original false scopes/corrections, sources, pinned Lean and axioms unchanged. About 53.8 GiB is free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17995 jobs); direct axiom audit passed for 18180 declarations using only propext, Classical.choice and Quot.sound; all 18281 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.67 GiB.
