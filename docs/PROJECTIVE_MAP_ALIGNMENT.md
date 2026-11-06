@@ -1,6 +1,12 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0732: Actual first prime band with any fixed
+Current checkpoint P1-MATH-0733: Actual second exponential-loglog prime
+band with negligible sieve exceptions. Complete short-average
+concentration remains unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0732: Actual first prime band with any fixed
 positive loglog power. Complete short-average concentration remains
 unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
 proved, 1 conditional, 2 in_progress /167; all 73 main proved. No
@@ -24313,3 +24319,12 @@ For every fixed natural A>0 the literal window (floor((loglog(N))^A),floor(log(N
 Complete logarithmic short-average concentration remains unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.35 GiB free on Ubuntu. No download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18031 jobs); direct axiom audit passed for 18282 declarations using only propext, Classical.choice and Quot.sound; all 18406 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.35 GiB.
+
+
+## Actual second exponential-loglog prime band with negligible sieve exceptions
+
+The literal second band has lower cutoff exp((loglog(N))^2) and upper cutoff exp((loglog(N))^3). Its positive geometry and logarithmic harmonic gap are proved, with the latter equal to logloglog(N). More generally exp((loglog(N))^k)^2/N tends to zero for EVERY fixed natural k, by a direct exponential comparison. The actual reciprocal prime mass tends to infinity, and the actual excluded and missing-good populations have density zero. No analytic growth or sieve theorem is left as an external input for these cutoffs. The short-average theorem remains unfinished.
+
+Complete logarithmic short-average concentration remains unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.35 GiB free on Ubuntu. No download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18033 jobs); direct axiom audit passed for 18290 declarations using only propext, Classical.choice and Quot.sound; all 18417 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.33 GiB.

@@ -1,6 +1,12 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0732: Actual first prime band with any fixed
+Current checkpoint P1-MATH-0733: Actual second exponential-loglog prime
+band with negligible sieve exceptions. Complete short-average
+concentration remains unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0732: Actual first prime band with any fixed
 positive loglog power. Complete short-average concentration remains
 unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
 proved, 1 conditional, 2 in_progress /167; all 73 main proved. No
@@ -1480,7 +1486,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records730 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records731 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1599,7 +1605,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18282 audited theorem/lemma declarations**. This
+- The project currently has **18290 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -31928,3 +31934,12 @@ For every fixed natural A>0 the literal window (floor((loglog(N))^A),floor(log(N
 Complete logarithmic short-average concentration remains unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.35 GiB free on Ubuntu. No download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18031 jobs); direct axiom audit passed for 18282 declarations using only propext, Classical.choice and Quot.sound; all 18406 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.35 GiB.
+
+
+## Actual second exponential-loglog prime band with negligible sieve exceptions
+
+The literal second band has lower cutoff exp((loglog(N))^2) and upper cutoff exp((loglog(N))^3). Its positive geometry and logarithmic harmonic gap are proved, with the latter equal to logloglog(N). More generally exp((loglog(N))^k)^2/N tends to zero for EVERY fixed natural k, by a direct exponential comparison. The actual reciprocal prime mass tends to infinity, and the actual excluded and missing-good populations have density zero. No analytic growth or sieve theorem is left as an external input for these cutoffs. The short-average theorem remains unfinished.
+
+Complete logarithmic short-average concentration remains unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.35 GiB free on Ubuntu. No download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18033 jobs); direct axiom audit passed for 18290 declarations using only propext, Classical.choice and Quot.sound; all 18417 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.33 GiB.

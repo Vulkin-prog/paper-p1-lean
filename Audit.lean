@@ -3751,6 +3751,14 @@ import PaperP1
 #print axioms PaperP1.EulerIntegralLimit.integral_truncation_tendsto
 #print axioms PaperP1.ExceptionalSquareIntegral.square_integral_budget
 #print axioms PaperP1.ExceptionalSurfaceClassBudget.class_budget
+#print axioms PaperP1.ExpLogPrimeBand.lower_tendsto
+#print axioms PaperP1.ExpLogPrimeBand.geometry_eventually
+#print axioms PaperP1.ExpLogPrimeBand.harmonic_gap_tendsto
+#print axioms PaperP1.ExpLogPrimeBand.exp_power_square_small
+#print axioms PaperP1.ExpLogPrimeBand.upper_square_small
+#print axioms PaperP1.ExpLogPrimeBand.reciprocal_mass_tendsto
+#print axioms PaperP1.ExpLogPrimeBand.excluded_density_tendsto
+#print axioms PaperP1.ExpLogPrimeBand.missing_good_density_tendsto
 #print axioms PaperP1.ExplicitSaddleVariation.log_difference_bound
 #print axioms PaperP1.ExplicitSaddleVariation.core_difference_bound
 #print axioms PaperP1.ExplicitSaddleVariation.scale_monotone
