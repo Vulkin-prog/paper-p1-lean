@@ -1,6 +1,18 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0965: Finite actual Gaussian smoothings
+Current checkpoint P1-MATH-0966: Actual Gaussian difference weights have
+proved central and tail controls. The actual off-central Dirichlet
+estimate and the ordinary smooth long-interval mean comparison are
+proved. The analytic comparison with logarithmic short averages remains
+unproved, so T19.17 remains conditional. The stronger uniform short-
+average theorem for all real completely multiplicative functions is not
+established. T19.17 conditional; original T1.7 unconditional. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved.
+Sources, false-scope corrections, compiler and axioms unchanged. About
+52.24 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0965: Finite actual Gaussian smoothings
 satisfy an exact square-energy Parseval identity. The actual off-central
 Dirichlet estimate and the ordinary smooth long-interval mean comparison
 are proved. The analytic comparison with logarithmic short averages
@@ -3610,7 +3622,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records963 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records964 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -3729,7 +3741,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **19217 audited theorem/lemma declarations**. This
+- The project currently has **19225 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -36155,3 +36167,12 @@ Seven theorems and one definition prove the actual finite smoothing cross expans
 The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.29 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18497 jobs); direct axiom audit passed for 19217 declarations using only propext, Classical.choice and Quot.sound; all 19524 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.25 GiB.
+
+
+## Actual Gaussian difference weights have proved central and tail controls
+
+Eight theorems and one definition prove positivity and continuity of the squared difference of two Gaussian weights, its bound by one, its doubled-damping Gaussian majorant when b<=c, and its explicit central bound (b+c)^2*R^4. The actual weighted Dirichlet energy is integrable, the literal unit-coefficient dyadic polynomial has norm at most one, and its actual central energy is at most 2*(b+c)^2*R^5. Every width, support and sign condition is explicit.
+
+The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.24 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18499 jobs); direct axiom audit passed for 19225 declarations using only propext, Classical.choice and Quot.sound; all 19533 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.23 GiB.

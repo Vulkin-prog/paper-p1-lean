@@ -4236,6 +4236,14 @@ import PaperP1
 #print axioms PaperP1.GaussianCutoff.positive_far_error
 #print axioms PaperP1.GaussianCutoff.exp_half_le_two
 #print axioms PaperP1.GaussianCutoff.step_error
+#print axioms PaperP1.GaussianDifferenceWeights.weight_nonneg
+#print axioms PaperP1.GaussianDifferenceWeights.weight_continuous
+#print axioms PaperP1.GaussianDifferenceWeights.weight_le_one
+#print axioms PaperP1.GaussianDifferenceWeights.weight_gaussian
+#print axioms PaperP1.GaussianDifferenceWeights.weight_central
+#print axioms PaperP1.GaussianDifferenceWeights.weighted_integrable
+#print axioms PaperP1.GaussianDifferenceWeights.value_unit
+#print axioms PaperP1.GaussianDifferenceWeights.central_integral
 #print axioms PaperP1.GaussianDirichletTail.gaussian_bound
 #print axioms PaperP1.GaussianDirichletTail.tail_bound
 #print axioms PaperP1.GaussianExponentialSums.polynomial_continuous

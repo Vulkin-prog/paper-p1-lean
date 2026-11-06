@@ -1,6 +1,18 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0965: Finite actual Gaussian smoothings
+Current checkpoint P1-MATH-0966: Actual Gaussian difference weights have
+proved central and tail controls. The actual off-central Dirichlet
+estimate and the ordinary smooth long-interval mean comparison are
+proved. The analytic comparison with logarithmic short averages remains
+unproved, so T19.17 remains conditional. The stronger uniform short-
+average theorem for all real completely multiplicative functions is not
+established. T19.17 conditional; original T1.7 unconditional. Coverage:
+164 proved, 1 conditional, 2 in_progress /167; all 73 main proved.
+Sources, false-scope corrections, compiler and axioms unchanged. About
+52.24 GiB free on Ubuntu. No dependency download or Palomar
+registration.
+
+Historical checkpoint P1-MATH-0965: Finite actual Gaussian smoothings
 satisfy an exact square-energy Parseval identity. The actual off-central
 Dirichlet estimate and the ordinary smooth long-interval mean comparison
 are proved. The analytic comparison with logarithmic short averages
@@ -3487,7 +3499,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**963 mathematical improvements and two statement-scope corrections are confirmed.**
+**964 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -35262,3 +35274,12 @@ Seven theorems and one definition prove the actual finite smoothing cross expans
 The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.29 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18497 jobs); direct axiom audit passed for 19217 declarations using only propext, Classical.choice and Quot.sound; all 19524 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.25 GiB.
+
+
+## Actual Gaussian difference weights have proved central and tail controls
+
+Eight theorems and one definition prove positivity and continuity of the squared difference of two Gaussian weights, its bound by one, its doubled-damping Gaussian majorant when b<=c, and its explicit central bound (b+c)^2*R^4. The actual weighted Dirichlet energy is integrable, the literal unit-coefficient dyadic polynomial has norm at most one, and its actual central energy is at most 2*(b+c)^2*R^5. Every width, support and sign condition is explicit.
+
+The actual off-central Dirichlet estimate and the ordinary smooth long-interval mean comparison are proved. The analytic comparison with logarithmic short averages remains unproved, so T19.17 remains conditional. The stronger uniform short-average theorem for all real completely multiplicative functions is not established. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.24 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18499 jobs); direct axiom audit passed for 19225 declarations using only propext, Classical.choice and Quot.sound; all 19533 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.23 GiB.
