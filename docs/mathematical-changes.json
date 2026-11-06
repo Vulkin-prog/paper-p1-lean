@@ -27662,6 +27662,50 @@
         "status": "not_integrated"
       },
       "validation_commit": "40f290df877df0e5cae2c9dcff170a67b0e3bb0a"
+    },
+    {
+      "id": "P1-MATH-0578",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "Constructing the ordinary image of a genuine source curve required its actual quotient Hilbert polynomial. Assuming that polynomial as additional curve data would leave the image construction and degree translation unproved.",
+      "finding": "Every actual finite linear polynomial-coordinate image inside an actual graded curve now constructs its own two finite linear parameters and genuine quotient Hilbert polynomial, from actual graded-piece dimension comparisons and finite homogeneous parameter descent.",
+      "proposed_revision": "Derive image Hilbert existence from the actual kernel quotient, linear algebraic dependence and repeated homogeneous finite parameter descent, then establish its positive integral linear degree and degree comparison from the actual coordinate maps.",
+      "impact": "Closes the image Hilbert-existence obligation without assuming the desired image curve degree or Hilbert polynomial, preparing the exact ordinary surface-cover conversion.",
+      "evidence": [
+        "PaperP1.FiniteLinearCurveImageNormalization.exists_two_parameters",
+        "PaperP1.FiniteLinearCurveImageNormalization.exists_hilbert_polynomial",
+        "PaperP1.GradedPolynomialCoordinateImage.toSource_mk",
+        "PaperP1.GradedPolynomialCoordinateImage.toSource_injective",
+        "PaperP1.GradedPolynomialCoordinateImage.exists_finite_parameters",
+        "PaperP1.GradedPolynomialCoordinateImage.exists_hilbert_polynomial",
+        "PaperP1.HomogeneousFiniteParameterDescent.exists_fewer_parameters",
+        "PaperP1.LinearHilbertParameterDependence.three_not_injective",
+        "PaperP1.LinearHilbertParameterDependence.not_injective_of_three_le",
+        "PaperP1.TernaryPolynomialHilbert.isHilbertPolynomial",
+        "PaperP1.TernaryPolynomialHilbert.natDegree_le",
+        "PaperP1.TernaryPolynomialHilbert.coeff_two",
+        "PaperP1.GradedPolynomialCoordinateImage.CoordinateRing",
+        "PaperP1.GradedPolynomialCoordinateImage.piece",
+        "PaperP1.GradedPolynomialCoordinateImage.toSource",
+        "PaperP1.GradedPolynomialCoordinateImage.grading",
+        "PaperP1.GradedPolynomialCoordinateImage.gradedToSource",
+        "PaperP1.TernaryPolynomialHilbert.polynomial"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17173 jobs); direct axiom audit passed for 16465 declarations using only propext, Classical.choice and Quot.sound; all 16136 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.35 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

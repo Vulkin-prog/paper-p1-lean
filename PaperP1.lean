@@ -4255,3 +4255,8 @@ public import PaperP1.Arithmetic.ExactDegreeSourceSurfaceCover
 public import PaperP1.Arithmetic.SourceSurfaceCoverFromExactDegree
 public import PaperP1.Arithmetic.UniformExactSourceCoverFromP3
 public import PaperP1.Asymptotics.UniformGeometricCountsP3SourceInput
+public import PaperP1.Algebra.FiniteLinearCurveImageNormalization
+public import PaperP1.Algebra.GradedPolynomialCoordinateImage
+public import PaperP1.Algebra.HomogeneousFiniteParameterDescent
+public import PaperP1.Algebra.LinearHilbertParameterDependence
+public import PaperP1.Algebra.TernaryPolynomialHilbert

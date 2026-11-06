@@ -997,6 +997,8 @@ import PaperP1
 #print axioms PaperP1.FiniteHomogeneousModuleGenerators.exists_generators
 #print axioms PaperP1.FiniteInjectiveIntermediate.finite_factor
 #print axioms PaperP1.FiniteIntersectionSums.restrict_sum
+#print axioms PaperP1.FiniteLinearCurveImageNormalization.exists_two_parameters
+#print axioms PaperP1.FiniteLinearCurveImageNormalization.exists_hilbert_polynomial
 #print axioms PaperP1.FiniteLinearGradedParameters.finite_adjoin_of_eventual_span
 #print axioms PaperP1.FiniteLinearGradedParameters.finite_adjoin_of_finite_quotient
 #print axioms PaperP1.FiniteLinearGradedParameters.finite_evaluation_of_adjoin
@@ -1200,6 +1202,10 @@ import PaperP1
 #print axioms PaperP1.GradedModulePieceMap.finrank_le
 #print axioms PaperP1.GradedModulePieceMap.map_injective
 #print axioms PaperP1.GradedModulePieceMap.finrank_ge
+#print axioms PaperP1.GradedPolynomialCoordinateImage.toSource_mk
+#print axioms PaperP1.GradedPolynomialCoordinateImage.toSource_injective
+#print axioms PaperP1.GradedPolynomialCoordinateImage.exists_finite_parameters
+#print axioms PaperP1.GradedPolynomialCoordinateImage.exists_hilbert_polynomial
 #print axioms PaperP1.GradedPolynomialGenerators.eval_homogeneous
 #print axioms PaperP1.GradedPolynomialGenerators.gradedEval_X
 #print axioms PaperP1.GradedPolynomialGenerators.eval_surjective
@@ -1346,6 +1352,7 @@ import PaperP1
 #print axioms PaperP1.HomogeneousFactorDegrees.homogeneous_of_order_eq_totalDegree
 #print axioms PaperP1.HomogeneousFactorDegrees.homogeneous_factors
 #print axioms PaperP1.HomogeneousFiniteInterpolation.selector
+#print axioms PaperP1.HomogeneousFiniteParameterDescent.exists_fewer_parameters
 #print axioms PaperP1.HomogeneousFreeApproximation.component_mul_mem_span
 #print axioms PaperP1.HomogeneousFreeApproximation.component_clears
 #print axioms PaperP1.HomogeneousFreeApproximation.exists_homogeneous_free_approximation
@@ -1601,6 +1608,8 @@ import PaperP1
 #print axioms PaperP1.LinearHilbertGrowth.hilbert_polynomial_affine
 #print axioms PaperP1.LinearHilbertGrowth.coefficient_eq
 #print axioms PaperP1.LinearHilbertGrowth.polynomial_natDegree_le_one
+#print axioms PaperP1.LinearHilbertParameterDependence.three_not_injective
+#print axioms PaperP1.LinearHilbertParameterDependence.not_injective_of_three_le
 #print axioms PaperP1.LinearHilbertSlopeComparison.slope_le
 #print axioms PaperP1.LinearHilbertSlopeComparison.piece_finrank_le
 #print axioms PaperP1.LinearHilbertSlopeComparison.slope_le_of_injective
@@ -2457,6 +2466,9 @@ import PaperP1
 #print axioms PaperP1.SupportedLinearSection.exists_supported_section
 #print axioms PaperP1.TernaryPairwiseRigidity.disjoint_sum_zero
 #print axioms PaperP1.TernaryPairwiseRigidity.ternary_missing_zero
+#print axioms PaperP1.TernaryPolynomialHilbert.isHilbertPolynomial
+#print axioms PaperP1.TernaryPolynomialHilbert.natDegree_le
+#print axioms PaperP1.TernaryPolynomialHilbert.coeff_two
 #print axioms PaperP1.ThirdFactorialCumulant.pair_formula
 #print axioms PaperP1.ThirdFactorialCumulant.triple_formula
 #print axioms PaperP1.ThirdFactorialCumulant.complementary_pair_sum
