@@ -34719,6 +34719,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "288d211277f80541d4e56893248f838febfbbe2c"
+    },
+    {
+      "id": "P1-MATH-0750",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Ramare cofactor polynomials carry arithmetic restrictions and count denominators. The proved sparse mean value must apply to these ACTUAL coefficients and supports, not just an unrestricted multiplicative proxy.",
+      "finding": "The actual finite Dirichlet polynomial on ANY subset S of [N,2N) is exactly the full dyadic polynomial with literal zero extension. Its bounded coefficients satisfy the internal sparse mean-value theorem with ONE threshold before all finite frequency populations, restricted supports and coefficient functions. Dividing by the literal count(P,n)+1 preserves the unit norm bound for EVERY finite P, with no primality or complete-multiplicativity assumption needed. The actual sparse sampled square sum for this exact Ramare-weighted coefficient is <=10*(1+log(N)). Four theorems are proved, retaining the height N^(5/4), cardinality N^(1/100) and separation-one hypotheses.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual sparse sampled mean values for arbitrary restricted and Ramare-weighted supports. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.SparseSupportedMeanValue.support_value_identity",
+        "PaperP1.SparseSupportedMeanValue.supported_uniform",
+        "PaperP1.SparseSupportedMeanValue.count_coefficient_bound",
+        "PaperP1.SparseSupportedMeanValue.weighted_supported_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18067 jobs); direct axiom audit passed for 18389 declarations using only propext, Classical.choice and Quot.sound; all 18535 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.04 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

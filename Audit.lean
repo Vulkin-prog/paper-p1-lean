@@ -4940,6 +4940,10 @@ import PaperP1
 #print axioms PaperP1.SparseIntegerMeanValue.budget_bound_uniform
 #print axioms PaperP1.SparseIntegerMeanValue.sampled_bound_uniform
 #print axioms PaperP1.SparseIntegerMeanValue.dirichlet_unit_uniform
+#print axioms PaperP1.SparseSupportedMeanValue.support_value_identity
+#print axioms PaperP1.SparseSupportedMeanValue.supported_uniform
+#print axioms PaperP1.SparseSupportedMeanValue.count_coefficient_bound
+#print axioms PaperP1.SparseSupportedMeanValue.weighted_supported_uniform
 #print axioms PaperP1.SquareRootGramBound.cap_nonneg
 #print axioms PaperP1.SquareRootGramBound.actual_sum_bound
 #print axioms PaperP1.SquareRootGramBound.mixed_sum_bound

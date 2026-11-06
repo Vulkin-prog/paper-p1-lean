@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0749: Actual uniform sparse integer mean-
+Current checkpoint P1-MATH-0750: Actual sparse sampled mean values for
+arbitrary restricted and Ramare-weighted supports. The actual Ramare
+main-term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 53.1 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0749: Actual uniform sparse integer mean-
 value theorem for arbitrary complex coefficients. The actual Ramare
 main-term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -1499,7 +1508,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**747 mathematical improvements and two statement-scope corrections are confirmed.**
+**748 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -31330,3 +31339,12 @@ The actual Gram cap is monotone in its height. The literal separation N^(1/4) is
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.1 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18065 jobs); direct axiom audit passed for 18385 declarations using only propext, Classical.choice and Quot.sound; all 18531 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.05 GiB.
+
+
+## Actual sparse sampled mean values for arbitrary restricted and Ramare-weighted supports
+
+The actual finite Dirichlet polynomial on ANY subset S of [N,2N) is exactly the full dyadic polynomial with literal zero extension. Its bounded coefficients satisfy the internal sparse mean-value theorem with ONE threshold before all finite frequency populations, restricted supports and coefficient functions. Dividing by the literal count(P,n)+1 preserves the unit norm bound for EVERY finite P, with no primality or complete-multiplicativity assumption needed. The actual sparse sampled square sum for this exact Ramare-weighted coefficient is <=10*(1+log(N)). Four theorems are proved, retaining the height N^(5/4), cardinality N^(1/100) and separation-one hypotheses.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 53.1 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18067 jobs); direct axiom audit passed for 18389 declarations using only propext, Classical.choice and Quot.sound; all 18535 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 53.04 GiB.
