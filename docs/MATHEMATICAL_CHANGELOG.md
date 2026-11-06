@@ -1,6 +1,17 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0631: absolute relative character cancellation
+Current checkpoint P1-MATH-0632: the COMPLETE weak point estimate for
+actual bounded split-radical source systems is now UNCONDITIONAL. At
+certificate-good large primes, |N-p^2|<=eta*p^2, hence N<=(1+eta)*p^2.
+The cutoff precedes all integer branch supports and all coefficient vectors.
+Every character estimate and the actual collision certificate are internal
+proofs. Original-model reduction and source-to-projected-P3 transfer,
+including exceptional loci and prime budgets, remain UNPROVED. Canonical
+T1.7 retains ONLY its prior P3 input in degrees>2 at the original families
+and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of
+167; all 73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0631: absolute relative character cancellation
 is UNCONDITIONAL for EVERY nonempty bounded split product, in BOTH parities.
 The actual root-inversion bijection gives the exact missing-point term -1.
 One prime cutoff precedes all primes and field shifts. Integer-certificate
@@ -344,7 +355,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**629 mathematical improvements and two statement-scope corrections are confirmed.**
+**630 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -28767,3 +28778,14 @@ SplitProductCharacterEstimate combines the odd-degree internal cancellation theo
 Two modules add ten theorems and three definitions. The internal all-parity split-product cancellation gap is discharged. The passage to integer branch shifts via the actual reduction certificate and the complete source point count still need assembly; source-to-projected-P3 transfer and general plane/surface bounds remain unproved. Canonical T1.7 is unchanged: UniformGeometricCountsFieldEstimateInput.companion_T1_7 retains ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167, with all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.2 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17725 jobs); direct axiom audit passed for 17365 declarations using only propext, Classical.choice and Quot.sound; all 17251 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.22 GiB.
+
+
+## Unconditional uniform point estimates for every bounded split-radical source system
+
+IntegerSplitProductCharacterEstimate proves the exact equality between evaluation of the field-shift image product and the original integer-shift linearValue when the actual integer cast is injective on the branch set. The internally proved all-parity field-product theorem therefore yields unconditional absolute relative cancellation for every nonempty bounded integer branch set with injective reduction. The cutoff precedes all primes and all integer branch sets.
+
+SplitRadicalUniformPointEstimate proves a relative-error expansion for the ACTUAL finite point set z_i^2=c_i*product(X+a)*product(Y+b). For a fixed number of equations and a branch-support cap D, it chooses a cutoff BEFORE every pair of integer branch families, every prime and every coefficient vector. The original pairwise disjointness on each variable side and nonempty branch support for each equation ensure that every nonempty character-expansion subset has a nonempty branch union on at least one side. The actual certificate 2*product(a-b) on the complete support is nonzero and excludes all reduction collisions and characteristic two. At every sufficiently large prime not dividing this certificate, the unconditional character theorem bounds the required side of every summand. Taking delta=eta/(2^k) gives the literal estimate |N-p^2|<=eta*p^2 and hence N<=(1+eta)*p^2. Arbitrary coefficient vectors over F_p are allowed, including zero entries. No square-root error or cancellation premise is needed in these two final uniform theorems.
+
+Two modules add five theorems and no definitions. The complete internal weak source-point estimate is now DISCHARGED for all bounded systems in this stated split-radical subclass. This is not yet a point bound for the projected P3 equation: reduction of the original projective model, projection, exceptional loci and their precise prime budgets still need proofs. General plane/surface bounds remain unproved. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167, with all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.2 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17729 jobs); direct axiom audit passed for 17370 declarations using only propext, Classical.choice and Quot.sound; all 17256 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.21 GiB.

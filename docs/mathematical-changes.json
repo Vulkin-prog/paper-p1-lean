@@ -30253,6 +30253,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "ae80cd38815e7c00a0ac9fb331a2f3b69caeb51e"
+    },
+    {
+      "id": "P1-MATH-0632",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The exact source character expansion still needed a proved one-variable estimate for arbitrary bounded branch unions and assembly with the actual reduction certificate.",
+      "finding": "The actual branch certificate supplies injective reduction for every subset, and the internal all-parity cancellation theorem proves the complete uniform source count |N-p^2|<=eta*p^2. Its cutoff precedes all integer branch supports, primes and coefficient vectors.",
+      "proposed_revision": "Use this internally proved weak source-point estimate for the stated split-radical equations, with explicit pairwise disjointness, nonempty components, support cap and actual good-prime certificate. Keep the subsequent projected-surface transfer separate until proved.",
+      "impact": "Discharges the complete bounded split-radical source point-count gap without external Weil, Lang-Weil or character estimates. Projected-P3 transfer and its original-model alignment remain unproved, so canonical manuscript coverage does not change.",
+      "evidence": [
+        "PaperP1.IntegerSplitProductCharacterEstimate.linear_image_eval",
+        "PaperP1.IntegerSplitProductCharacterEstimate.uniform_absolute",
+        "PaperP1.SplitRadicalUniformPointEstimate.relative_error",
+        "PaperP1.SplitRadicalUniformPointEstimate.uniform_absolute",
+        "PaperP1.SplitRadicalUniformPointEstimate.uniform_upper_bound"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17729 jobs); direct axiom audit passed for 17370 declarations using only propext, Classical.choice and Quot.sound; all 17256 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.21 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

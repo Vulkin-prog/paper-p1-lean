@@ -1,6 +1,17 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0631: absolute relative character cancellation
+Current checkpoint P1-MATH-0632: the COMPLETE weak point estimate for
+actual bounded split-radical source systems is now UNCONDITIONAL. At
+certificate-good large primes, |N-p^2|<=eta*p^2, hence N<=(1+eta)*p^2.
+The cutoff precedes all integer branch supports and all coefficient vectors.
+Every character estimate and the actual collision certificate are internal
+proofs. Original-model reduction and source-to-projected-P3 transfer,
+including exceptional loci and prime budgets, remain UNPROVED. Canonical
+T1.7 retains ONLY its prior P3 input in degrees>2 at the original families
+and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of
+167; all 73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0631: absolute relative character cancellation
 is UNCONDITIONAL for EVERY nonempty bounded split product, in BOTH parities.
 The actual root-inversion bijection gives the exact missing-point term -1.
 One prime cutoff precedes all primes and field shifts. Integer-certificate
@@ -29680,6 +29691,17 @@ t=(x+a)^(-1) reduces the even case to odd degree with exact correction -1.
 No external estimate is assumed. Assembly for integer reduction certificates,
 the complete source count and projected-P3 transfer remain unfinished.
 
+## Internal complete split-radical source point estimate
+
+P1-MATH-0632 proves |N-p^2|<=eta*p^2 for actual bounded split-radical
+source equations. One cutoff precedes all branch supports, primes and
+coefficient vectors. The nonzero integer branch certificate excludes all
+reduction collisions. Every nonempty expansion term uses the internally
+proved all-parity cancellation. No external point or character estimate
+is assumed in the final uniform bound. Original-model reduction,
+projected-P3 transfer and the corresponding exceptional-prime budget
+remain unproved; no general surface estimate is claimed.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -30708,3 +30730,16 @@ SplitProductCharacterEstimate combines the odd-degree internal cancellation theo
 Two modules add ten theorems and three definitions. The internal all-parity split-product cancellation gap is discharged. The passage to integer branch shifts via the actual reduction certificate and the complete source point count still need assembly; source-to-projected-P3 transfer and general plane/surface bounds remain unproved. Canonical T1.7 is unchanged: UniformGeometricCountsFieldEstimateInput.companion_T1_7 retains ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167, with all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.2 GiB available and no dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17725 jobs); direct axiom audit passed for 17365 declarations using only propext, Classical.choice and Quot.sound; all 17251 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.22 GiB.
+
+
+## Unconditional uniform point estimates for every bounded split-radical source system
+
+Stable ID: p1:internal:unconditional-bounded-split-radical-source-point-estimate. The full actual split-radical source point estimate is now unconditional. Original-model reduction and projected-P3 transfer remain unproved; canonical T1.7 is unchanged.
+
+IntegerSplitProductCharacterEstimate proves the exact equality between evaluation of the field-shift image product and the original integer-shift linearValue when the actual integer cast is injective on the branch set. The internally proved all-parity field-product theorem therefore yields unconditional absolute relative cancellation for every nonempty bounded integer branch set with injective reduction. The cutoff precedes all primes and all integer branch sets.
+
+SplitRadicalUniformPointEstimate proves a relative-error expansion for the ACTUAL finite point set z_i^2=c_i*product(X+a)*product(Y+b). For a fixed number of equations and a branch-support cap D, it chooses a cutoff BEFORE every pair of integer branch families, every prime and every coefficient vector. The original pairwise disjointness on each variable side and nonempty branch support for each equation ensure that every nonempty character-expansion subset has a nonempty branch union on at least one side. The actual certificate 2*product(a-b) on the complete support is nonzero and excludes all reduction collisions and characteristic two. At every sufficiently large prime not dividing this certificate, the unconditional character theorem bounds the required side of every summand. Taking delta=eta/(2^k) gives the literal estimate |N-p^2|<=eta*p^2 and hence N<=(1+eta)*p^2. Arbitrary coefficient vectors over F_p are allowed, including zero entries. No square-root error or cancellation premise is needed in these two final uniform theorems.
+
+Two modules add five theorems and no definitions. The complete internal weak source-point estimate is now DISCHARGED for all bounded systems in this stated split-radical subclass. This is not yet a point bound for the projected P3 equation: reduction of the original projective model, projection, exceptional loci and their precise prime budgets still need proofs. General plane/surface bounds remain unproved. Canonical T1.7 stays UniformGeometricCountsFieldEstimateInput.companion_T1_7 with ONLY P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE in actual degrees>2 at the same original three families and caps. Coverage stays 163 proved, 2 conditional, 2 in_progress out of 167, with all 73 main results proved. T19.17 and both false-original scopes are unchanged. Source hashes, Lean v4.36.0-rc2, checking options and permitted axioms are unchanged. Work stays on Ubuntu with about 55.2 GiB available and no dependency download. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17729 jobs); direct axiom audit passed for 17370 declarations using only propext, Classical.choice and Quot.sound; all 17256 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 55.21 GiB.

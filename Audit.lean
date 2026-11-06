@@ -5821,6 +5821,8 @@ import PaperP1
 #print axioms PaperP1.IntegerRealIntervalCount.interval_card
 #print axioms PaperP1.IntegerRealIntervalCount.band_card
 #print axioms PaperP1.IntegerRealIntervalCount.strip_card
+#print axioms PaperP1.IntegerSplitProductCharacterEstimate.linear_image_eval
+#print axioms PaperP1.IntegerSplitProductCharacterEstimate.uniform_absolute
 #print axioms PaperP1.IntegralAffineCurvePointCount.mem_points
 #print axioms PaperP1.IntegralAffineCurvePointCount.mem_real_points
 #print axioms PaperP1.IntegralAffineCurvePointCount.finite_population
@@ -7712,6 +7714,9 @@ import PaperP1
 #print axioms PaperP1.SplitRadicalPointHeight.dyadic_square_height
 #print axioms PaperP1.SplitRadicalPointHeight.monomial_height
 #print axioms PaperP1.SplitRadicalPointHeight.sum_natAbs_le
+#print axioms PaperP1.SplitRadicalUniformPointEstimate.relative_error
+#print axioms PaperP1.SplitRadicalUniformPointEstimate.uniform_absolute
+#print axioms PaperP1.SplitRadicalUniformPointEstimate.uniform_upper_bound
 #print axioms PaperP1.SquareCongruenceRangeCount.common_residue_card
 #print axioms PaperP1.SquareCongruenceRangeCount.color_dvd
 #print axioms PaperP1.SquareCongruenceRangeCount.quotient_divides_sum
