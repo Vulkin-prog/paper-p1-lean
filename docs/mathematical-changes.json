@@ -35154,6 +35154,49 @@
         "status": "not_integrated"
       },
       "validation_commit": "e9aee47169f1bb13247fd66c4933a2ba2ed00eb4"
+    },
+    {
+      "id": "P1-MATH-0764",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A formal prime band decomposition must retain its literal index, occupied set, rounding, and quantitative relative width.",
+      "finding": "For every integer H>=2 the literal index floor(H*log(p)), anchor exp(index/H) and growth exp(1/H) give anchor<=p<growth*anchor for every p>=1. The growth satisfies 1<=growth<=2 and growth-1<=2/H. The actual filtered bands are pairwise disjoint, partition every complex finite sum exactly, and have at most floor(H*log(U))+1 occupied indices if every supported p lies in [1,U]. Twelve theorems and five definitions establish the actual finite partition and its rounded endpoints.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual narrow logarithmic prime bands with explicit relative width and finite partition. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.NarrowPrimeBands.anchor_pos",
+        "PaperP1.NarrowPrimeBands.anchor_one_le",
+        "PaperP1.NarrowPrimeBands.growth_one_le",
+        "PaperP1.NarrowPrimeBands.growth_error",
+        "PaperP1.NarrowPrimeBands.growth_le_two",
+        "PaperP1.NarrowPrimeBands.anchor_successor",
+        "PaperP1.NarrowPrimeBands.index_bounds",
+        "PaperP1.NarrowPrimeBands.band_subset",
+        "PaperP1.NarrowPrimeBands.band_bounds",
+        "PaperP1.NarrowPrimeBands.band_disjoint",
+        "PaperP1.NarrowPrimeBands.sum_partition",
+        "PaperP1.NarrowPrimeBands.indices_card_bound",
+        "PaperP1.NarrowPrimeBands.index",
+        "PaperP1.NarrowPrimeBands.anchor",
+        "PaperP1.NarrowPrimeBands.growth",
+        "PaperP1.NarrowPrimeBands.band",
+        "PaperP1.NarrowPrimeBands.indices"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18095 jobs); direct axiom audit passed for 18446 declarations using only propext, Classical.choice and Quot.sound; all 18605 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.77 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

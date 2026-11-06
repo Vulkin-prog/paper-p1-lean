@@ -4703,3 +4703,4 @@ public import PaperP1.Analysis.CommonUniformWeightedSum
 public import PaperP1.Analysis.FiniteAbelNorm
 public import PaperP1.Analysis.DyadicPartialSummation
 public import PaperP1.Analysis.CommonIntervalDirichlet
+public import PaperP1.Analysis.NarrowPrimeBands

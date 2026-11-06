@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0763: One common frequency exception controls
+Current checkpoint P1-MATH-0764: Actual narrow logarithmic prime bands
+with explicit relative width and finite partition. The actual Ramare
+main-term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0763: One common frequency exception controls
 all actual weighted interval Dirichlet polynomials. The actual Ramare
 main-term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -24857,3 +24866,12 @@ For every epsilon,delta>0 one R>=2 and N0>=5 precede all N>=N0 and all T>=max(1,
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18093 jobs); direct axiom audit passed for 18434 declarations using only propext, Classical.choice and Quot.sound; all 18588 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.79 GiB.
+
+
+## Actual narrow logarithmic prime bands with explicit relative width and finite partition
+
+For every integer H>=2 the literal index floor(H*log(p)), anchor exp(index/H) and growth exp(1/H) give anchor<=p<growth*anchor for every p>=1. The growth satisfies 1<=growth<=2 and growth-1<=2/H. The actual filtered bands are pairwise disjoint, partition every complex finite sum exactly, and have at most floor(H*log(U))+1 occupied indices if every supported p lies in [1,U]. Twelve theorems and five definitions establish the actual finite partition and its rounded endpoints.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18095 jobs); direct axiom audit passed for 18446 declarations using only propext, Classical.choice and Quot.sound; all 18605 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.77 GiB.
