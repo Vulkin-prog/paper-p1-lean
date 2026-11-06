@@ -3524,6 +3524,10 @@ import PaperP1
 #print axioms PaperP1.ControlledNormalizedCharts.exists_control_set_and_charts
 #print axioms PaperP1.ControlledRegularComponentEnds.exists_end_of_comparison
 #print axioms PaperP1.ControlledRegularComponentEnds.exists_controlled_end
+#print axioms PaperP1.CountWeightedSum.coefficient_bound
+#print axioms PaperP1.CountWeightedSum.actual_difference_bound
+#print axioms PaperP1.CountWeightedSum.square_count_bound
+#print axioms PaperP1.CountWeightedSum.common_count_weighted_small
 #print axioms PaperP1.CriticalRankMass.succ_coefficient_eventually
 #print axioms PaperP1.CriticalRankMass.rankMass_exp
 #print axioms PaperP1.CriticalRankMass.critical_rankMass_coefficient_bound

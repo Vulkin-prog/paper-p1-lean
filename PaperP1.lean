@@ -4669,3 +4669,4 @@ public import PaperP1.Analysis.CompleteSmoothCensusFromShortAverages
 public import PaperP1.Analysis.ValuationDamping
 public import PaperP1.Analysis.DampedDirichletIntegral
 public import PaperP1.Analysis.CommonDampedSum
+public import PaperP1.Analysis.CountWeightedSum
