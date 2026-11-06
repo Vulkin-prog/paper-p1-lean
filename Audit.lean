@@ -4306,6 +4306,9 @@ import PaperP1
 #print axioms PaperP1.NarrowRamareRectangle.twist_coefficient
 #print axioms PaperP1.NarrowRamareRectangle.band_product_expansion
 #print axioms PaperP1.NarrowRamareRectangle.rectangle_expansion
+#print axioms PaperP1.NarrowRectangleValue.test_source_mem
+#print axioms PaperP1.NarrowRectangleValue.weighted_sum_identity
+#print axioms PaperP1.NarrowRectangleValue.rectangle_value_identity
 #print axioms PaperP1.NarrowRectangleWeight.weight_nonneg
 #print axioms PaperP1.NarrowRectangleWeight.weight_le_full
 #print axioms PaperP1.NarrowRectangleWeight.weight_le_one

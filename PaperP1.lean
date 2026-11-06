@@ -4706,3 +4706,4 @@ public import PaperP1.Analysis.CommonIntervalDirichlet
 public import PaperP1.Analysis.NarrowPrimeBands
 public import PaperP1.Analysis.NarrowRamareRectangle
 public import PaperP1.Analysis.NarrowRectangleWeight
+public import PaperP1.Analysis.NarrowRectangleValue

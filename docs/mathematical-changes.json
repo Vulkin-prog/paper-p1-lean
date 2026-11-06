@@ -35271,6 +35271,36 @@
         "status": "not_integrated"
       },
       "validation_commit": "a1b1d4a517c169411004fa203812c88c6a063c8a"
+    },
+    {
+      "id": "P1-MATH-0767",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Regrouping the decoupled product by the integer n=p*m requires an exact finite multiple identity, the actual upper cutoff, and relative multiplicativity of the presence factor.",
+      "finding": "For X>0 and H>=2 every successful rectangle test gives a product in [X,4*X). Exact finite multiple reindexing proves the weighted rectangle identity for any coefficients satisfying the relative relation b(p*m)=a(p)*b(m) on the actual prime support. Instantiating this with the literal other-band presence and a complete complex coefficient proves that the ACTUAL sum of prime/cofactor products equals the ACTUAL Dirichlet polynomial on [X,4*X) with its rectangle divisor weight. Three theorems and one coefficient definition preserve every count(n/p)+1 denominator, including repeated prime factors.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual narrow rectangle equals the Dirichlet polynomial of its literal divisor weight. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.NarrowRectangleValue.test_source_mem",
+        "PaperP1.NarrowRectangleValue.weighted_sum_identity",
+        "PaperP1.NarrowRectangleValue.rectangle_value_identity",
+        "PaperP1.NarrowRectangleValue.coefficient"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18101 jobs); direct axiom audit passed for 18462 declarations using only propext, Classical.choice and Quot.sound; all 18628 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.72 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

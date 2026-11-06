@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0766: Actual narrow rectangle divisor weight
+Current checkpoint P1-MATH-0767: The actual narrow rectangle equals the
+Dirichlet polynomial of its literal divisor weight. The actual Ramare
+main-term frequency bounds and complete logarithmic short-average
+concentration remain unproved. T19.17 conditional; original T1.7
+unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167;
+all 73 main proved. Sources, false-scope corrections, compiler and
+axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download
+or Palomar registration.
+
+Historical checkpoint P1-MATH-0766: Actual narrow rectangle divisor weight
 is bounded and agrees away from two endpoint strips. The actual Ramare
 main-term frequency bounds and complete logarithmic short-average
 concentration remain unproved. T19.17 conditional; original T1.7
@@ -24911,3 +24920,12 @@ The literal rectangle divisor weight sums its actual source test over prime divi
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18099 jobs); direct axiom audit passed for 18459 declarations using only propext, Classical.choice and Quot.sound; all 18624 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.74 GiB.
+
+
+## The actual narrow rectangle equals the Dirichlet polynomial of its literal divisor weight
+
+For X>0 and H>=2 every successful rectangle test gives a product in [X,4*X). Exact finite multiple reindexing proves the weighted rectangle identity for any coefficients satisfying the relative relation b(p*m)=a(p)*b(m) on the actual prime support. Instantiating this with the literal other-band presence and a complete complex coefficient proves that the ACTUAL sum of prime/cofactor products equals the ACTUAL Dirichlet polynomial on [X,4*X) with its rectangle divisor weight. Three theorems and one coefficient definition preserve every count(n/p)+1 denominator, including repeated prime factors.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18101 jobs); direct axiom audit passed for 18462 declarations using only propext, Classical.choice and Quot.sound; all 18628 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.72 GiB.
