@@ -5316,6 +5316,10 @@ import PaperP1
 #print axioms PaperP1.UnitGraphMonomialPieceCount.exists_scale
 #print axioms PaperP1.UnitGraphMonomialPieceCount.exists_affine_scale
 #print axioms PaperP1.UnitGraphMonomialPieceCount.point_count
+#print axioms PaperP1.UnitIntervalSampleSelection.cell_volume
+#print axioms PaperP1.UnitIntervalSampleSelection.cell_cover
+#print axioms PaperP1.UnitIntervalSampleSelection.cell_separated
+#print axioms PaperP1.UnitIntervalSampleSelection.exists_sample
 #print axioms PaperP1.UnitIntervalSubdivision.index_lt
 #print axioms PaperP1.UnitIntervalSubdivision.center_mem
 #print axioms PaperP1.UnitIntervalSubdivision.distance_bound

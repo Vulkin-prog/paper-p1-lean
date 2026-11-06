@@ -37453,6 +37453,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "47b1002c16d0c1feb1521287b2560b1d692e2a8e"
+    },
+    {
+      "id": "P1-MATH-0838",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Passing from restricted integrals to sparse sample bounds requires actual point selections inside the restricted frequency set and verified separation, rather than moving points to arbitrary cell maxima.",
+      "finding": "Define the ACTUAL closed unit cells [a+i,a+i+1]. Each has real volume 1; a finite explicit floor-index cover contains every t in (-T,T]. Points selected from cells whose indices have the same parity are at distance at least 1. For ANY nonempty subset E of a cell and ANY everywhere nonnegative real function g, there exists an ACTUAL t in E with integral_E(g)<=2*g(t). Four theorems and one cell definition prove coverage, measure, separation and the actual sample selection. The selected points remain in E.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual unit-cell selections preserve frequency membership and separated parity classes. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.UnitIntervalSampleSelection.cell_volume",
+        "PaperP1.UnitIntervalSampleSelection.cell_cover",
+        "PaperP1.UnitIntervalSampleSelection.cell_separated",
+        "PaperP1.UnitIntervalSampleSelection.exists_sample",
+        "PaperP1.UnitIntervalSampleSelection.cell"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18243 jobs); direct axiom audit passed for 18689 declarations using only propext, Classical.choice and Quot.sound; all 18894 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.45 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

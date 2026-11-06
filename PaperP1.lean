@@ -4777,3 +4777,4 @@ public import PaperP1.Analysis.JointLargeSparseCofactors
 public import PaperP1.Analysis.FinalNarrowBandGeometry
 public import PaperP1.Analysis.FiniteProductSampleBound
 public import PaperP1.Analysis.FinalSmallPrimeSamples
+public import PaperP1.Analysis.UnitIntervalSampleSelection

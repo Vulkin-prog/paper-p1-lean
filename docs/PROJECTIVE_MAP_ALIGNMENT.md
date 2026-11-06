@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0837: Actual small-final-prime sample
+Current checkpoint P1-MATH-0838: Actual unit-cell selections preserve
+frequency membership and separated parity classes. The joint large-prime
+frequency contribution, the central-frequency mean comparison and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.45 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0837: Actual small-final-prime sample
 contributions vanish on the jointly-large region. The joint large-prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -26200,3 +26209,12 @@ For every fixed B>=32, ONE N0 precedes all N>=N0, every positive-unit complex co
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.51 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18241 jobs); direct axiom audit passed for 18685 declarations using only propext, Classical.choice and Quot.sound; all 18889 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.46 GiB.
+
+
+## Actual unit-cell selections preserve frequency membership and separated parity classes
+
+Define the ACTUAL closed unit cells [a+i,a+i+1]. Each has real volume 1; a finite explicit floor-index cover contains every t in (-T,T]. Points selected from cells whose indices have the same parity are at distance at least 1. For ANY nonempty subset E of a cell and ANY everywhere nonnegative real function g, there exists an ACTUAL t in E with integral_E(g)<=2*g(t). Four theorems and one cell definition prove coverage, measure, separation and the actual sample selection. The selected points remain in E.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.45 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18243 jobs); direct axiom audit passed for 18689 declarations using only propext, Classical.choice and Quot.sound; all 18894 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.45 GiB.
