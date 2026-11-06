@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0831: The exact second-prime threshold and
+Current checkpoint P1-MATH-0832: Every actual second-prime large-value
+block has at most N to the one nineteenth separated samples. The joint
+large-prime frequency contribution, the central-frequency mean
+comparison and complete logarithmic short-average concentration remain
+unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
+proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources,
+false-scope corrections, compiler and axioms unchanged. About 51.60 GiB
+free on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0831: The exact second-prime threshold and
 moment budget give exponent one nineteenth. The joint large-prime
 frequency contribution, the central-frequency mean comparison and
 complete logarithmic short-average concentration remain unproved. T19.17
@@ -33087,6 +33096,12 @@ The inverse of (q^(-1/40))^(2*k) is EXACTLY exp(k*log q/20) for q>0. Combine thi
 
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
 
+## Internal every actual second-prime large-value block has at most n to the one nineteenth separated samples
+
+ONE N0>=1 precedes ALL N>=N0, EVERY occupied actual second prime block, every unit-bounded complex coefficient function on the actual second prime set, every height 0<T<=N and every separated sample set. If the actual block norm at each sample is >=q^(-1/40), its cardinality is <=N^(1/19). One theorem combines the actual prime filter, reciprocal mass, ceiling moment, every variable-span and factorial cost, and the exact threshold budget. No exceptional-set cardinality is assumed.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -36664,3 +36679,14 @@ The inverse of (q^(-1/40))^(2*k) is EXACTLY exp(k*log q/20) for q>0. Combine thi
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.60 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18229 jobs); direct axiom audit passed for 18673 declarations using only propext, Classical.choice and Quot.sound; all 18875 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.57 GiB.
+
+
+## Every actual second-prime large-value block has at most N to the one nineteenth separated samples
+
+Stable ID: p1:internal:second-prime-large-value-cardinality. Every actual second-prime large-value block has at most N to the one nineteenth separated samples. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.
+
+ONE N0>=1 precedes ALL N>=N0, EVERY occupied actual second prime block, every unit-bounded complex coefficient function on the actual second prime set, every height 0<T<=N and every separated sample set. If the actual block norm at each sample is >=q^(-1/40), its cardinality is <=N^(1/19). One theorem combines the actual prime filter, reciprocal mass, ceiling moment, every variable-span and factorial cost, and the exact threshold budget. No exceptional-set cardinality is assumed.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.60 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18231 jobs); direct axiom audit passed for 18674 declarations using only propext, Classical.choice and Quot.sound; all 18876 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.56 GiB.

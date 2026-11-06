@@ -4771,3 +4771,4 @@ public import PaperP1.Analysis.ActualVariablePrimeLargeValues
 public import PaperP1.Analysis.SecondPrimeCeilingGeometry
 public import PaperP1.Analysis.PrimeMomentExponentialBudget
 public import PaperP1.Analysis.SecondThresholdCardBudget
+public import PaperP1.Analysis.SecondPrimeLargeValueCardinality

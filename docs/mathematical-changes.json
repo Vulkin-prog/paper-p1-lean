@@ -37277,6 +37277,33 @@
         "status": "not_integrated"
       },
       "validation_commit": "59bc640bdbd5128c845d369cab89dca12d581242"
+    },
+    {
+      "id": "P1-MATH-0832",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "A usable sparse-frequency theorem needs an actual bound for the second-prime large-value sample set, uniformly before coefficients and sample locations.",
+      "finding": "ONE N0>=1 precedes ALL N>=N0, EVERY occupied actual second prime block, every unit-bounded complex coefficient function on the actual second prime set, every height 0<T<=N and every separated sample set. If the actual block norm at each sample is >=q^(-1/40), its cardinality is <=N^(1/19). One theorem combines the actual prime filter, reciprocal mass, ceiling moment, every variable-span and factorial cost, and the exact threshold budget. No exceptional-set cardinality is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Every actual second-prime large-value block has at most N to the one nineteenth separated samples. The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.SecondPrimeLargeValueCardinality.per_block_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18231 jobs); direct axiom audit passed for 18674 declarations using only propext, Classical.choice and Quot.sound; all 18876 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.56 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }
