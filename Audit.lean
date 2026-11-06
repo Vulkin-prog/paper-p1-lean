@@ -4565,6 +4565,10 @@ import PaperP1
 #print axioms PaperP1.LognormalPowerBudget.logarithmic_factor_bound
 #print axioms PaperP1.LognormalPowerBudget.log_ratio_tendsto
 #print axioms PaperP1.LognormalPowerBudget.uniform_bound
+#print axioms PaperP1.LognormalSelbergKernel.main_identity
+#print axioms PaperP1.LognormalSelbergKernel.difference_identity
+#print axioms PaperP1.LognormalSelbergKernel.near_bound
+#print axioms PaperP1.LognormalSelbergKernel.far_bound
 #print axioms PaperP1.LognormalSieveWeight.weight_pos
 #print axioms PaperP1.LognormalSieveWeight.weight_upper
 #print axioms PaperP1.LognormalSieveWeight.gaussian_identity

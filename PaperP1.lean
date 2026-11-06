@@ -4864,3 +4864,4 @@ public import PaperP1.Analysis.FarLognormalKernel
 public import PaperP1.Analysis.LognormalDilatedKernel
 public import PaperP1.Analysis.PrimeSelbergCoefficients
 public import PaperP1.Analysis.DilatedFarLognormalKernel
+public import PaperP1.Analysis.LognormalSelbergKernel
