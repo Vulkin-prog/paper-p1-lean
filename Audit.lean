@@ -4295,6 +4295,10 @@ import PaperP1
 #print axioms PaperP1.MahlerCoefficientBounds.norm_top_coeff_le_mahler
 #print axioms PaperP1.MahlerCoefficientBounds.factor_coefficient_product_bound
 #print axioms PaperP1.MahlerCoefficientBounds.factor_coefficient_product_bound_two_pow
+#print axioms PaperP1.MixedFrequencyAmplification.pointwise_bound
+#print axioms PaperP1.MixedFrequencyAmplification.restricted_bound
+#print axioms PaperP1.MixedFrequencyAmplification.mixedSet_measurable
+#print axioms PaperP1.MixedFrequencyAmplification.mixedSet_bound
 #print axioms PaperP1.MixedGramRowBound.rowBudget_nonneg
 #print axioms PaperP1.MixedGramRowBound.row_bound
 #print axioms PaperP1.MixedGramRowBound.analysis_bound

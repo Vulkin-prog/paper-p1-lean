@@ -1,6 +1,15 @@
 # Actual projective scheme map
 
-Current checkpoint P1-MATH-0793: Actual amplified prime Dirichlet
+Current checkpoint P1-MATH-0794: Actual mixed frequency sets admit a
+proved power amplification inequality. The complementary bad-prime
+frequency contribution, the central-frequency mean subtraction and
+complete logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 52.25 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0793: Actual amplified prime Dirichlet
 products have explicit all-order continuous and sampled mean bounds. The
 complementary bad-prime frequency contribution, the central-frequency
 mean subtraction and complete logarithmic short-average concentration
@@ -25402,3 +25411,12 @@ For EVERY order k, finite prime band P in [L,U] of reciprocal mass<=1, actual co
 The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.28 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18153 jobs); direct axiom audit passed for 18554 declarations using only propext, Classical.choice and Quot.sound; all 18736 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.26 GiB.
+
+
+## Actual mixed frequency sets admit a proved power amplification inequality
+
+For EVERY order k, threshold v>0 and w>=0, the pointwise conditions v<=|A| and |D|<=w give |D*F|^2<=(w^2/v^(2*k))*|A^k*F|^2. For continuous actual functions this yields a restricted integral bound on EVERY measurable E contained in (-T,T] satisfying those conditions. The literal mixed set of frequencies is defined and proved measurable, and the bound holds on it without an exceptional-set assumption. Four theorems and one definition establish the exact amplification factor, including k=0.
+
+The complementary bad-prime frequency contribution, the central-frequency mean subtraction and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.25 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18155 jobs); direct axiom audit passed for 18558 declarations using only propext, Classical.choice and Quot.sound; all 18741 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.24 GiB.
