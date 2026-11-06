@@ -41239,6 +41239,41 @@
         "status": "not_integrated"
       },
       "validation_commit": "471ad176a81df4f0a34cc2d142f26fd01dd5f5bf"
+    },
+    {
+      "id": "P1-MATH-0957",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Internal specialized route for the remaining central-frequency comparison; no change to the original manuscript statements.",
+      "finding": "Eight theorems and one definition construct the actual real Möbius coefficients restricted to integers coprime to primorial(Y), prove their multiplicativity and absolute bound one, evaluate all prime powers and prove zeta convolution equals the literal ordinary Y-smooth indicator for every Y>=1. The exact divisor-sum identity follows for every natural n, including zero. No mean stability or short-average estimate is assumed.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "The actual ordinary smooth indicator has an exact rough Möbius convolution. The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.SmoothMobiusConvolution.roughMobius_apply",
+        "PaperP1.SmoothMobiusConvolution.roughMobius_multiplicative",
+        "PaperP1.SmoothMobiusConvolution.roughMobius_abs",
+        "PaperP1.SmoothMobiusConvolution.indicator_pow",
+        "PaperP1.SmoothMobiusConvolution.small_prime_power",
+        "PaperP1.SmoothMobiusConvolution.large_prime_power",
+        "PaperP1.SmoothMobiusConvolution.convolution",
+        "PaperP1.SmoothMobiusConvolution.divisor_sum",
+        "PaperP1.SmoothMobiusConvolution.roughMobius"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18481 jobs); direct axiom audit passed for 19174 declarations using only propext, Classical.choice and Quot.sound; all 19471 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.40 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

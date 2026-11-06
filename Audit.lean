@@ -5612,6 +5612,14 @@ import PaperP1
 #print axioms PaperP1.SmoothLowerBarrierProfile.density_le_one
 #print axioms PaperP1.SmoothLowerBarrierProfile.density_antitone
 #print axioms PaperP1.SmoothLowerBarrierProfile.density_shift
+#print axioms PaperP1.SmoothMobiusConvolution.roughMobius_apply
+#print axioms PaperP1.SmoothMobiusConvolution.roughMobius_multiplicative
+#print axioms PaperP1.SmoothMobiusConvolution.roughMobius_abs
+#print axioms PaperP1.SmoothMobiusConvolution.indicator_pow
+#print axioms PaperP1.SmoothMobiusConvolution.small_prime_power
+#print axioms PaperP1.SmoothMobiusConvolution.large_prime_power
+#print axioms PaperP1.SmoothMobiusConvolution.convolution
+#print axioms PaperP1.SmoothMobiusConvolution.divisor_sum
 #print axioms PaperP1.SmoothReciprocalLeadingLower.uniform_ordinary_lower
 #print axioms PaperP1.SmoothReciprocalLeadingLower.uniform_full_lower
 #print axioms PaperP1.SmoothReciprocalLeadingLower.uniform_dyadic_lower

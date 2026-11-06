@@ -1,6 +1,16 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0956: One actual central cutoff controls real
+Current checkpoint P1-MATH-0957: The actual ordinary smooth indicator
+has an exact rough Möbius convolution. The actual off-central Dirichlet
+frequency estimate is proved. The central-frequency short-to-long
+comparison, the analytic short-average bridge and complete logarithmic
+short-average concentration remain unproved. T19.17 conditional;
+original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2
+in_progress /167; all 73 main proved. Sources, false-scope corrections,
+compiler and axioms unchanged. About 52.40 GiB free on Ubuntu. No
+dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0956: One actual central cutoff controls real
 Dirichlet energy at every fixed multiple of logarithmic reciprocal
 height. The actual off-central Dirichlet frequency estimate is proved.
 The central-frequency short-to-long comparison, the analytic short-
@@ -34980,6 +34990,12 @@ Two theorems prove the genuine stronger quantifier order: for EVERY epsilon>0, O
 
 The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved.
 
+## Internal the actual ordinary smooth indicator has an exact rough möbius convolution
+
+Eight theorems and one definition construct the actual real Möbius coefficients restricted to integers coprime to primorial(Y), prove their multiplicativity and absolute bound one, evaluate all prime powers and prove zeta convolution equals the literal ordinary Y-smooth indicator for every Y>=1. The exact divisor-sum identity follows for every natural n, including zero. No mean stability or short-average estimate is assumed.
+
+The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -39932,3 +39948,14 @@ Two theorems prove the genuine stronger quantifier order: for EVERY epsilon>0, O
 The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.48 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18479 jobs); direct axiom audit passed for 19166 declarations using only propext, Classical.choice and Quot.sound; all 19462 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.42 GiB.
+
+
+## The actual ordinary smooth indicator has an exact rough Möbius convolution
+
+Stable ID: p1:internal:smooth-mobius-convolution. The actual ordinary smooth indicator has an exact rough Möbius convolution. The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved.
+
+Eight theorems and one definition construct the actual real Möbius coefficients restricted to integers coprime to primorial(Y), prove their multiplicativity and absolute bound one, evaluate all prime powers and prove zeta convolution equals the literal ordinary Y-smooth indicator for every Y>=1. The exact divisor-sum identity follows for every natural n, including zero. No mean stability or short-average estimate is assumed.
+
+The actual off-central Dirichlet frequency estimate is proved. The central-frequency short-to-long comparison, the analytic short-average bridge and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.40 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18481 jobs); direct axiom audit passed for 19174 declarations using only propext, Classical.choice and Quot.sound; all 19471 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.40 GiB.
