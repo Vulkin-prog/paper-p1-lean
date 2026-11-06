@@ -5292,6 +5292,10 @@ import PaperP1
 #print axioms PaperP1.TripleLargeFrequencyReduction.joint_energy_split
 #print axioms PaperP1.TripleLargeFrequencyReduction.energy_split
 #print axioms PaperP1.TripleLargeFrequencyReduction.reduction_small_uniform
+#print axioms PaperP1.TripleLargeSparseCardinality.frequency_card_uniform
+#print axioms PaperP1.TripleLargeSparseCardinality.subpower_frequency_card_uniform
+#print axioms PaperP1.TripleLargeSparseCardinality.measure_bound_uniform
+#print axioms PaperP1.TripleLargeSparseCardinality.subpower_measure_uniform
 #print axioms PaperP1.TripleSharpIdentity.filtered_levels
 #print axioms PaperP1.TripleSharpIdentity.sharp_expansion
 #print axioms PaperP1.TripleSharpIdentity.sharp_eq_triple
