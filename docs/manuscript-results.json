@@ -41739,7 +41739,8 @@
             "PaperP1.SplitRadicalAlgebraPointCount.pointsEquiv"
           ]
         }
-      ]
+      ],
+      "validation_commit": "172eb530b61df0ed389b5ca2a209c4d2eec33086"
     },
     {
       "label": "p1:arith:dense",
