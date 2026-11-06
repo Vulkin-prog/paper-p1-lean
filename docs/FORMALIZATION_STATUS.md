@@ -1,6 +1,15 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0769: Actual endpoint census and wide
+Current checkpoint P1-MATH-0770: Actual narrow rectangle approximates
+the coupled Ramare quotient with explicit vanishing mean square error.
+The actual Ramare main-term frequency bounds and complete logarithmic
+short-average concentration remain unproved. T19.17 conditional;
+original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2
+in_progress /167; all 73 main proved. Sources, false-scope corrections,
+compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No
+dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0769: Actual endpoint census and wide
 supported Dirichlet mean value. The actual Ramare main-term frequency
 bounds and complete logarithmic short-average concentration remain
 unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
@@ -1798,7 +1807,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records767 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records768 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -1917,7 +1926,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **18472 audited theorem/lemma declarations**. This
+- The project currently has **18474 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -32579,3 +32588,12 @@ The TWO literal endpoint strips have cardinality <=3*(exp(1/H)-1)*X+2, with both
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18105 jobs); direct axiom audit passed for 18472 declarations using only propext, Classical.choice and Quot.sound; all 18641 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.68 GiB.
+
+
+## Actual narrow rectangle approximates the coupled Ramare quotient with explicit vanishing mean square error
+
+For every X>0, H>=2, disjoint finite prime supports P,Q, complete complex f bounded by one on [X,4*X), and 0<T<=X, the ACTUAL integral of |rectangle-relative quotient|^2 is <=C*(6/H+2/X), with the explicit internally proved constant C=exp(1)*(sqrt(pi)+8*pi). Every epsilon>0 admits H0>=2 and X0>=1 BEFORE all H>=H0, X>=X0, supports, coefficients and frequency heights, making this error <=epsilon. The proof uses the exact coefficient identity, its unit bound, literal endpoint support, actual census and actual mean-value theorem. Two theorems prove this genuine decoupling error; they do not bound the rectangle main term or prove short-average concentration.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18107 jobs); direct axiom audit passed for 18474 declarations using only propext, Classical.choice and Quot.sound; all 18643 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.67 GiB.

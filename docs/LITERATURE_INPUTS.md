@@ -1,6 +1,15 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0769: Actual endpoint census and wide
+Current checkpoint P1-MATH-0770: Actual narrow rectangle approximates
+the coupled Ramare quotient with explicit vanishing mean square error.
+The actual Ramare main-term frequency bounds and complete logarithmic
+short-average concentration remain unproved. T19.17 conditional;
+original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2
+in_progress /167; all 73 main proved. Sources, false-scope corrections,
+compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No
+dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0769: Actual endpoint census and wide
 supported Dirichlet mean value. The actual Ramare main-term frequency
 bounds and complete logarithmic short-average concentration remain
 unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164
@@ -32145,6 +32154,12 @@ The TWO literal endpoint strips have cardinality <=3*(exp(1/H)-1)*X+2, with both
 
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
 
+## Internal actual narrow rectangle approximates the coupled ramare quotient with explicit vanishing mean square error
+
+For every X>0, H>=2, disjoint finite prime supports P,Q, complete complex f bounded by one on [X,4*X), and 0<T<=X, the ACTUAL integral of |rectangle-relative quotient|^2 is <=C*(6/H+2/X), with the explicit internally proved constant C=exp(1)*(sqrt(pi)+8*pi). Every epsilon>0 admits H0>=2 and X0>=1 BEFORE all H>=H0, X>=X0, supports, coefficients and frequency heights, making this error <=epsilon. The proof uses the exact coefficient identity, its unit bound, literal endpoint support, actual census and actual mean-value theorem. Two theorems prove this genuine decoupling error; they do not bound the rectangle main term or prove short-average concentration.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
 ## Independent leading-coefficient-one finite-field estimate
 
 Stable ID: `P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Status: **explicit_hypothesis**.
@@ -35040,3 +35055,14 @@ The TWO literal endpoint strips have cardinality <=3*(exp(1/H)-1)*X+2, with both
 The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18105 jobs); direct axiom audit passed for 18472 declarations using only propext, Classical.choice and Quot.sound; all 18641 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.68 GiB.
+
+
+## Actual narrow rectangle approximates the coupled Ramare quotient with explicit vanishing mean square error
+
+Stable ID: p1:internal:narrow-rectangle-error. Actual narrow rectangle approximates the coupled Ramare quotient with explicit vanishing mean square error. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.
+
+For every X>0, H>=2, disjoint finite prime supports P,Q, complete complex f bounded by one on [X,4*X), and 0<T<=X, the ACTUAL integral of |rectangle-relative quotient|^2 is <=C*(6/H+2/X), with the explicit internally proved constant C=exp(1)*(sqrt(pi)+8*pi). Every epsilon>0 admits H0>=2 and X0>=1 BEFORE all H>=H0, X>=X0, supports, coefficients and frequency heights, making this error <=epsilon. The proof uses the exact coefficient identity, its unit bound, literal endpoint support, actual census and actual mean-value theorem. Two theorems prove this genuine decoupling error; they do not bound the rectangle main term or prove short-average concentration.
+
+The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 52.9 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18107 jobs); direct axiom audit passed for 18474 declarations using only propext, Classical.choice and Quot.sound; all 18643 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.67 GiB.

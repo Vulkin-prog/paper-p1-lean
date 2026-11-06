@@ -35369,6 +35369,34 @@
         "status": "not_integrated"
       },
       "validation_commit": "33b2d141192ab6d799d471b6818a9757b73cd673"
+    },
+    {
+      "id": "P1-MATH-0770",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:limits:all-anchors",
+        "number": "T19.17",
+        "page": 81,
+        "source": "companion_sections/limits_appendix.tex",
+        "line": 1313,
+        "statement_sha256": "9329a2e6be3de3d1ca127a729150fc875ed3cdf756e86fe82a104f44f0e5221a"
+      },
+      "original_assumption": "Replacing a source cutoff p*m in [X,2*X) by the narrow-band anchor creates an actual L2 error. Its quantitative bound must be proved before estimating the product main terms.",
+      "finding": "For every X>0, H>=2, disjoint finite prime supports P,Q, complete complex f bounded by one on [X,4*X), and 0<T<=X, the ACTUAL integral of |rectangle-relative quotient|^2 is <=C*(6/H+2/X), with the explicit internally proved constant C=exp(1)*(sqrt(pi)+8*pi). Every epsilon>0 admits H0>=2 and X0>=1 BEFORE all H>=H0, X>=X0, supports, coefficients and frequency heights, making this error <=epsilon. The proof uses the exact coefficient identity, its unit bound, literal endpoint support, actual census and actual mean-value theorem. Two theorems prove this genuine decoupling error; they do not bound the rectangle main term or prove short-average concentration.",
+      "proposed_revision": "Use the actual proved finite or analytic conclusion with every parameter and domain condition explicit. Do not identify this preparatory step with the missing short-average theorem.",
+      "impact": "Actual narrow rectangle approximates the coupled Ramare quotient with explicit vanishing mean square error. The actual Ramare main-term frequency bounds and complete logarithmic short-average concentration remain unproved.",
+      "evidence": [
+        "PaperP1.NarrowRectangleError.quantitative_bound",
+        "PaperP1.NarrowRectangleError.small_uniform"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (18107 jobs); direct axiom audit passed for 18474 declarations using only propext, Classical.choice and Quot.sound; all 18643 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 52.67 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

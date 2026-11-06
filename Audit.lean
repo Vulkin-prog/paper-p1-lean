@@ -4316,6 +4316,8 @@ import PaperP1
 #print axioms PaperP1.NarrowRectangleDifference.coefficient_zero
 #print axioms PaperP1.NarrowRectangleDifference.source_value_identity
 #print axioms PaperP1.NarrowRectangleDifference.difference_identity
+#print axioms PaperP1.NarrowRectangleError.quantitative_bound
+#print axioms PaperP1.NarrowRectangleError.small_uniform
 #print axioms PaperP1.NarrowRectangleValue.test_source_mem
 #print axioms PaperP1.NarrowRectangleValue.weighted_sum_identity
 #print axioms PaperP1.NarrowRectangleValue.rectangle_value_identity
