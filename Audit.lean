@@ -3819,6 +3819,11 @@ import PaperP1
 #print axioms PaperP1.ExpandedSparseGramEnvelope.normalizedCap_nonneg
 #print axioms PaperP1.ExpandedSparseGramEnvelope.normalizedCap_tendsto
 #print axioms PaperP1.ExpandedSparseGramEnvelope.uniform_small
+#print axioms PaperP1.ExpandedSparseIntegerMean.separation_properties
+#print axioms PaperP1.ExpandedSparseIntegerMean.card_cap_uniform
+#print axioms PaperP1.ExpandedSparseIntegerMean.budget_bound_uniform
+#print axioms PaperP1.ExpandedSparseIntegerMean.sampled_bound_uniform
+#print axioms PaperP1.ExpandedSparseIntegerMean.dirichlet_unit_uniform
 #print axioms PaperP1.ExplicitSaddleVariation.log_difference_bound
 #print axioms PaperP1.ExplicitSaddleVariation.core_difference_bound
 #print axioms PaperP1.ExplicitSaddleVariation.scale_monotone

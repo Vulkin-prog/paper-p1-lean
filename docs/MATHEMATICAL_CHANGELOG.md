@@ -1,6 +1,15 @@
 # Mathematical corrections and improvements
 
-Current checkpoint P1-MATH-0817: A larger sparse-frequency regime has an
+Current checkpoint P1-MATH-0818: The actual integer sparse mean bound
+allows N^(1/16) sampling points. The joint large-prime frequency
+contribution, the central-frequency mean comparison and complete
+logarithmic short-average concentration remain unproved. T19.17
+conditional; original T1.7 unconditional. Coverage: 164 proved, 1
+conditional, 2 in_progress /167; all 73 main proved. Sources, false-
+scope corrections, compiler and axioms unchanged. About 51.83 GiB free
+on Ubuntu. No dependency download or Palomar registration.
+
+Historical checkpoint P1-MATH-0817: A larger sparse-frequency regime has an
 explicit vanishing Gram envelope. The joint large-prime frequency
 contribution, the central-frequency mean comparison and complete
 logarithmic short-average concentration remain unproved. T19.17
@@ -2119,7 +2128,7 @@ Baseline: original P1 V1.6 article and companion, 31 October 2026, preserved in
 `manuscripts/paper-p1/v1.6/`. This log is separate from the original package's
 historical reviews and editorial revisions.
 
-**815 mathematical improvements and two statement-scope corrections are confirmed.**
+**816 mathematical improvements and two statement-scope corrections are confirmed.**
 The literal radius-one version of companion T1.10 is false (P1-MATH-0162);
 its sharper31/24 old-width-dependent replacement is checked on the explicit domains recorded in P1-MATH-0312. The exact unqualified T5.1 exponent comparison is also false on actual admissible data at arbitrarily large sizes (P1-MATH-0315); its asymptotic counts and corrected capped comparison are proved. No main-article
 conclusion has been refuted. The paper has not yet undergone a complete formal audit.
@@ -32562,3 +32571,12 @@ Choose separation N^(1/3), sampling height N^(9/8), and cardinality envelope N^(
 The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.83 GiB free on Ubuntu. No dependency download or Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (18201 jobs); direct axiom audit passed for 18638 declarations using only propext, Classical.choice and Quot.sound; all 18838 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.83 GiB.
+
+
+## The actual integer sparse mean bound allows N^(1/16) sampling points
+
+For ONE N0 before ALL large dyadic lengths N, all unit-separated sampling sets with cardinality<=N^(1/16), heights 1<=T<=N^(9/8), and arbitrary complex coefficients, the ACTUAL integer polynomial sample square sum is bounded by 10*N*(1+log N) times its coefficient square sum. In particular every actual unit-coefficient Dirichlet polynomial has sample square sum<=10*(1+log N). Five theorems prove the separation conditions, uniform cap, exact row budget and both actual sample bounds.
+
+The joint large-prime frequency contribution, the central-frequency mean comparison and complete logarithmic short-average concentration remain unproved. T19.17 conditional; original T1.7 unconditional. Coverage: 164 proved, 1 conditional, 2 in_progress /167; all 73 main proved. Sources, false-scope corrections, compiler and axioms unchanged. About 51.83 GiB free on Ubuntu. No dependency download or Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (18203 jobs); direct axiom audit passed for 18643 declarations using only propext, Classical.choice and Quot.sound; all 18843 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 51.81 GiB.

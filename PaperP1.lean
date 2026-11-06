@@ -4757,3 +4757,4 @@ public import PaperP1.Analysis.FinalPrimeBandPopulation
 public import PaperP1.Analysis.FinalRelativeApproximation
 public import PaperP1.Analysis.FinalRectangleApproximation
 public import PaperP1.Analysis.ExpandedSparseGramEnvelope
+public import PaperP1.Analysis.ExpandedSparseIntegerMean
