@@ -1,6 +1,20 @@
 # P1 — Lean formalization
 
-Current checkpoint P1-MATH-0613: universal INTEGER Noether forms are PROVED
+Current checkpoint P1-MATH-0614: in EVERY degree, unconditional actual
+nonzero INTEGER good-reduction certificates satisfy natAbs(z)<=T*A^N with
+T,N chosen before A,P and every counting tolerance. Every actual bad geometric
+reduction prime divides z; the full bad-prime set is finite and its logarithmic
+mass is <=log(T)+N*log(A). A good prime of polynomial coefficient height and
+the actual geometric-good-prime logarithmic mass lower bound are proved.
+Universal integer Noether forms remain discharged in ALL degrees.
+Canonical T1.7 stays `UniformGeometricCountsFieldEstimateInput.companion_T1_7`,
+with ONLY the independent finite-field point estimate unproved in actual
+degrees>2 at the same original families/caps. All d<=2 full auxiliary properties
+remain unconditional. These all-degree algebraic prime budgets do not prove
+the missing point count. Coverage stays163 proved,2 conditional,2 in_progress
+out of167; all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0613: universal INTEGER Noether forms are PROVED
 in EVERY natural degree with the exact all-fields geometric-irreducibility
 nonvanishing criterion. Actual coefficient-preserving field-point lifts and
 literal homogeneous factorization prove the full projective factor-locus
@@ -134,7 +148,7 @@ recorded in the linked ledger and [current status](docs/FORMALIZATION_STATUS.md)
 
 Companion T1.10 needs an enlarged alignment exclusion for unequal old/new widths: its literal radius-one version has an unconditional formal counterexample. The corrected coarse4/3 profile is proved under explicit geometric inputs; its sharper31/24 form remains open; see [the scope correction](docs/ASYMMETRIC_ALIGNMENT_SCOPE.md).
 
-The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **611 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
+The main optimal4/3 quadratic approximation power is now proved under explicit BCN and finite geometric properties, including both bounds, exact actual parameters, nominal-mean bias and eventual probability status. The optimal41/30 third factorial cumulant, full third absolute activity and aligned-channel triple claims are now proved under explicit geometric inputs, withBCN retained for the full connected argument. The actual original count and its retained modification converge in total variation to the actual-mean and nominal-mean Poisson laws without unproved inputs (P1-MATH-0413); quantitative optimal law rates remain separate. Exact fourth-cumulant component identities and unconditional weak, irregular and incompatible pair bounds are proved. In particular, the actual absolute pair activity is asymptotic to half the actual second factorial cumulant, without BCN or a complete pair profile. The contact activity bound at every fixed order now holds unconditionally on every dyadic subground, including irregular starts and zero marginals. The activation probability of the actual principal edge family now has the unconditional exponent -2/3, with any fixed epsilon margin. The planar normal budget T20.4 is now proved with improved constants and an integer-fibre argument. T20.6, the prescribed-plane transverse-product count and its actual affine mass bound, is now proved internally with three motifs and no Pila premise. The project records **612 confirmed mathematical improvements and two statement-scope corrections**. See [current status](docs/FORMALIZATION_STATUS.md), [the activity alignment](docs/FIXED_ABSOLUTE_ACTIVITY_ALIGNMENT.md) and [the mathematical change log](docs/MATHEMATICAL_CHANGELOG.md).
 
 Article13.1 now has a complete actual short-basis construction, with
 both physical projections and the common square-class map injective.
@@ -1467,3 +1481,5 @@ P1-MATH-0611 constructs the actual universal integer projective factor-multiplic
 P1-MATH-0612 constructs actual field-valued projective coefficient and factor-pair points and a finite positive homogeneous integer family defining the finite union of all positive-degree factor images by literal evaluation. The reverse image-to-geometric-factorization implication remains unproved.
 
 P1-MATH-0613 proves universal integer Noether forms in EVERY degree, with the exact all-fields geometric irreducibility criterion. Canonical T1.7 is now UniformGeometricCountsFieldEstimateInput.companion_T1_7, with only the higher-degree finite-field point estimate remaining explicit.
+
+P1-MATH-0614 proves unconditional polynomial-height good-reduction certificates, actual finite bad-prime logarithmic budgets, a polynomial-height good prime and actual geometric-good-prime mass lower bounds in EVERY degree. The higher-degree finite-field point count remains unproved.

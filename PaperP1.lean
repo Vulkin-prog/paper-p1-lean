@@ -4446,3 +4446,8 @@ public import PaperP1.Geometry.P3FactorImageFactorization
 public import PaperP1.Geometry.P3FactorLocusIrreducibility
 public import PaperP1.Geometry.ProjRadicalFieldChartLift
 public import PaperP1.Geometry.ProjRadicalMapCharts
+public import PaperP1.Arithmetic.P3BadReductionPrimeBudget
+public import PaperP1.Arithmetic.P3FiniteFieldBudgetFixedHeight
+public import PaperP1.Arithmetic.P3GeometricReductionPrimeWindow
+public import PaperP1.Arithmetic.P3GoodReductionPrimeChoice
+public import PaperP1.Arithmetic.P3UniversalGoodReduction

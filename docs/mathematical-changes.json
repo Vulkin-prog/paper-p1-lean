@@ -29392,6 +29392,58 @@
         "status": "not_integrated"
       },
       "validation_commit": "b69065b3004a37f1608875ba16dfbb79a26a18f0"
+    },
+    {
+      "id": "P1-MATH-0614",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The newly proved universal Noether forms had not yet been exposed as an unconditional all-degree good-reduction certificate or a budget for the ACTUAL set of bad geometric-reduction primes, independently of finite-field point counting.",
+      "finding": "All-degree polynomial-height nonzero good-reduction certificates, finiteness and logarithmic budgets of the actual bad-prime set, a polynomial-height good prime and an actual geometric-good-prime mass lower bound are proved unconditionally. Certificate height constants precede every counting tolerance.",
+      "proposed_revision": "State the all-degree algebraic good-reduction certificate and actual bad-prime logarithmic budgets separately from the remaining finite-field point estimate. Make T,N depend only on degree and precede eta,A,P; retain only the counting threshold after eta.",
+      "impact": "Completes the unconditional good-reduction and bad-prime budget consequences of general Noether forms, with explicit original coefficients and improved quantifier order. It does not discharge the independent higher-degree finite-field point estimate; canonical coverage is unchanged.",
+      "evidence": [
+        "PaperP1.P3BadReductionPrimeBudget.divides_certificate",
+        "PaperP1.P3BadReductionPrimeBudget.subset_prime_factors",
+        "PaperP1.P3BadReductionPrimeBudget.finite",
+        "PaperP1.P3BadReductionPrimeBudget.log_sum",
+        "PaperP1.P3BadReductionPrimeBudget.weighted_log_sum",
+        "PaperP1.P3BadReductionPrimeBudget.log_height_bound",
+        "PaperP1.P3BadReductionPrimeBudget.uniform_log_budget",
+        "PaperP1.P3FiniteFieldBudgetFixedHeight.fixed_height_constants",
+        "PaperP1.P3FiniteFieldBudgetFixedHeight.uniform_budget",
+        "PaperP1.P3GeometricReductionPrimeWindow.mem_primes",
+        "PaperP1.P3GeometricReductionPrimeWindow.certificate_subset",
+        "PaperP1.P3GeometricReductionPrimeWindow.certificate_mass_le",
+        "PaperP1.P3GeometricReductionPrimeWindow.mass_upper_bound",
+        "PaperP1.P3GeometricReductionPrimeWindow.bounded_mass_lower_bound",
+        "PaperP1.P3GeometricReductionPrimeWindow.uniform_mass_lower_bound",
+        "PaperP1.P3GoodReductionPrimeChoice.prime_above_certificate",
+        "PaperP1.P3GoodReductionPrimeChoice.polynomial_prime_bound",
+        "PaperP1.P3UniversalGoodReduction.form_evaluation",
+        "PaperP1.P3UniversalGoodReduction.bounded_from_valid_forms",
+        "PaperP1.P3UniversalGoodReduction.bounded_certificate",
+        "PaperP1.P3UniversalGoodReduction.geometric_reduction",
+        "PaperP1.P3UniversalGoodReduction.exact_degree",
+        "PaperP1.P3BadReductionPrimeBudget.badPrimes",
+        "PaperP1.P3GeometricReductionPrimeWindow.primes",
+        "PaperP1.P3GeometricReductionPrimeWindow.mass",
+        "PaperP1.P3UniversalGoodReduction.Certificate"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17583 jobs); direct axiom audit passed for 17080 declarations using only propext, Classical.choice and Quot.sound; all 16902 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.87 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

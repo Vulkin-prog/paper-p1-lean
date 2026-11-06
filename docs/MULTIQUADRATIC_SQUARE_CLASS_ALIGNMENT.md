@@ -1,6 +1,20 @@
 # Multiquadratic split radicands: exact square-class independence
 
-Current checkpoint P1-MATH-0613: universal INTEGER Noether forms are PROVED
+Current checkpoint P1-MATH-0614: in EVERY degree, unconditional actual
+nonzero INTEGER good-reduction certificates satisfy natAbs(z)<=T*A^N with
+T,N chosen before A,P and every counting tolerance. Every actual bad geometric
+reduction prime divides z; the full bad-prime set is finite and its logarithmic
+mass is <=log(T)+N*log(A). A good prime of polynomial coefficient height and
+the actual geometric-good-prime logarithmic mass lower bound are proved.
+Universal integer Noether forms remain discharged in ALL degrees.
+Canonical T1.7 stays `UniformGeometricCountsFieldEstimateInput.companion_T1_7`,
+with ONLY the independent finite-field point estimate unproved in actual
+degrees>2 at the same original families/caps. All d<=2 full auxiliary properties
+remain unconditional. These all-degree algebraic prime budgets do not prove
+the missing point count. Coverage stays163 proved,2 conditional,2 in_progress
+out of167; all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0613: universal INTEGER Noether forms are PROVED
 in EVERY natural degree with the exact all-fields geometric-irreducibility
 nonvanishing criterion. Actual coefficient-preserving field-point lifts and
 literal homogeneous factorization prove the full projective factor-locus
@@ -22289,3 +22303,22 @@ UniformGeometricCountsFieldEstimateInput removes ALL three universal-form fields
 Eleven modules add forty-two theorems and five definitions, including the one-input hypothesis structure. One existing interface comment and its historical boundary description are updated to the proved status. Coverage stays163 proved,2 conditional,2 in_progress out of167, including all73 main results proved. T1.7 is still conditional because its higher-degree finite-field point estimate is unproved. The separate T19.17 analytic input and the two literal false-original scopes retain their exact previous statuses. Original manuscript hashes, Lean v4.36.0-rc2 and permitted axioms are unchanged; no checking-option changes. One existing Mathlib source module AlgClosed.Basic was built selectively without dependency download. Work remains on Ubuntu, with about5.84GiB free. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17573 jobs); direct axiom audit passed for 17058 declarations using only propext, Classical.choice and Quot.sound; all 16876 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.84 GiB.
+
+
+## Unconditional polynomial-height good-reduction certificates and actual bad-prime budgets in every degree
+
+P3UniversalGoodReduction defines an actual all-fields Certificate P z: every coefficient field in which the actual integer z stays nonzero gives a geometrically irreducible reduction of the ORIGINAL integer polynomial. Literal evaluation of one member of a valid finite universal-form family proves this certificate. The proved existence of universal Noether forms now yields, for EVERY degree d, constants T>0,N chosen BEFORE every coefficient bound A and polynomial P, and an actual nonzero integer z with natAbs(z)<=T*A^N for every original geometrically irreducible homogeneous P with coefficients bounded by A. There is NO finite-field point-count premise. Every prime not dividing z is proved geometrically good, and reduction retains exact homogeneous degree d.
+
+P3BadReductionPrimeBudget defines the ACTUAL set of bad geometric-reduction primes. Every such prime divides the actual certificate, so the set is contained in the finite prime-divisor set of natAbs(z) and is finite. The full actual bad-prime set is represented by a finite set B. The unconditional all-degree theorem chooses T,N before A,P and proves sum_{p in B}log(p)<=log(T)+N*log(A). For EVERY real K>0, the full large-bad-prime weighted mass is at most (log(T)+N*log(A))/K. These statements concern the actual bad-reduction condition, not an independently supplied exceptional set.
+
+P3GoodReductionPrimeChoice combines the nonzero integer certificate with the checked Bertrand theorem. In EVERY degree there are T>0,N before A,P and an ACTUAL prime p with T*A^N<p<=2*T*A^N at which the original equation is geometrically irreducible. The proof excludes divisibility because p exceeds the certificate size. This is unconditional; no prime or good-reduction existence input is supplied.
+
+P3GeometricReductionPrimeWindow defines the actual finite set of geometrically good primes K<p<=X and its weighted logarithmic mass. The certificate-retained prime set is proved to be a subset. In EVERY degree the actual geometric-good-prime mass is therefore at least log(X)-cost(K)-(log(T)+N*log(A))/K for all original A,P and all K>0,1<=X,K<=X. The matching existing all-prime logarithmic upper bound is proved for this actual set. The prime-number estimates are the already checked internal prime-mass results; there is no finite-field point-count premise.
+
+P3FiniteFieldBudgetFixedHeight strengthens the order of quantifiers for the conditional finite-field counting budget: T,N and T>0 are chosen BEFORE EVERY eta>0 and BEFORE any supplied finite-field estimate proof. Only the prime threshold K0 is selected afterwards. A literal all-degree good-reduction certificate, its height bound and the fixed-height budget implication are therefore completely internal; the independent higher-degree finite-field point estimate is the only remaining counting ingredient.
+
+Canonical companionT1.7 remains UniformGeometricCountsFieldEstimateInput.companion_T1_7. Its sole remaining unformalized input is P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE, only in actual degrees>2 at the SAME three original families/caps. Universal Noether forms remain discharged in every degree, and all d<=2 full certificate/auxiliary properties stay unconditional. The new algebraic certificates and actual geometric good/bad-prime budgets are unconditional in ALL degrees, which does NOT prove the missing leading-coefficient-one point count.
+
+Five modules add twenty-two theorems and four definitions. Coverage remains163 proved,2 conditional,2 in_progress out of167, including all73 main results proved. The separate T19.17 analytic input and the two literal false-original scopes are unchanged. Manuscript hashes, Lean v4.36.0-rc2, allowed axioms and checking options are unchanged. No dependency download. All work remains on Ubuntu. Git storage was compacted with the complete object-ID inventory preserved and a full integrity check; no history or unrelated files were removed. About5.87GiB remain. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17583 jobs); direct axiom audit passed for 17080 declarations using only propext, Classical.choice and Quot.sound; all 16902 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.87 GiB.
