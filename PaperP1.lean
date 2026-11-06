@@ -4297,3 +4297,8 @@ public import PaperP1.Algebra.BivariateMonomialDegreeBudget
 public import PaperP1.Algebra.BivariatePolynomialDeterminantDivisibility
 public import PaperP1.Algebra.CountingWeightBudget
 public import PaperP1.Algebra.SurfaceEvaluationDeterminantDivisibility
+public import PaperP1.Algebra.IteratedBivariatePolynomialDeterminant
+public import PaperP1.Algebra.SmoothSurfaceDeterminant
+public import PaperP1.Algebra.TernaryNilpotentImplicitFunction
+public import PaperP1.Algebra.TernaryPolynomialEvaluation
+public import PaperP1.Arithmetic.SmoothIntegerSurfaceBranch

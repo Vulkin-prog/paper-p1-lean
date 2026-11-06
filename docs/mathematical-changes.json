@@ -28145,6 +28145,55 @@
         "status": "not_integrated"
       },
       "validation_commit": "cf62745f4dc9fab64ccd658dd9a960c13ee51e5e"
+    },
+    {
+      "id": "P1-MATH-0590",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "The remaining surface method needs an actual implicit polynomial in two free coordinates, uniformly describing all points in one smooth congruence class, before the two-variable determinant core can be applied to the original point values.",
+      "finding": "The actual two-free-parameter branch is constructed over arbitrary nilpotent ideals without a monicity assumption and specializes to one integer polynomial modulo every p^N. It yields the exact p^(L*s-choose(L+2,3)) divisor for the original smooth-surface polynomial evaluation determinant.",
+      "proposed_revision": "State the branch before quantifying the surface points, specify the dependent-coordinate derivative unit condition, and derive the integer determinant divisor through actual coefficient lifting and entrywise polynomial evaluation congruences.",
+      "impact": "Discharges the local smooth-surface determinant construction, leaving geometric coordinate transport and the quantitative global covering construction explicit.",
+      "evidence": [
+        "PaperP1.IteratedBivariatePolynomialDeterminant.evaluation",
+        "PaperP1.IteratedBivariatePolynomialDeterminant.polynomial_dvd",
+        "PaperP1.IteratedBivariatePolynomialDeterminant.congruent_polynomial_dvd",
+        "PaperP1.SmoothSurfaceDeterminant.substitution_eval",
+        "PaperP1.SmoothSurfaceDeterminant.nilpotent_surface_dvd",
+        "PaperP1.SmoothSurfaceDeterminant.smooth_surface_det_zero",
+        "PaperP1.SmoothSurfaceDeterminant.integer_smooth_dvd",
+        "PaperP1.TernaryNilpotentImplicitFunction.local_evaluation_mod",
+        "PaperP1.TernaryNilpotentImplicitFunction.local_derivative_mod",
+        "PaperP1.TernaryNilpotentImplicitFunction.exists_local_branch",
+        "PaperP1.TernaryNilpotentImplicitFunction.evaluate_local",
+        "PaperP1.TernaryNilpotentImplicitFunction.evaluate_lift",
+        "PaperP1.TernaryNilpotentImplicitFunction.exists_polynomial_branch",
+        "PaperP1.TernaryNilpotentImplicitFunction.unique_fibre_root",
+        "PaperP1.TernaryNilpotentImplicitFunction.exists_polynomial_implicit",
+        "PaperP1.TernaryPolynomialEvaluation.map_coefficients",
+        "PaperP1.TernaryPolynomialEvaluation.quotient_evaluation_eq",
+        "PaperP1.SmoothIntegerSurfaceBranch.implicit_mod_prime_power",
+        "PaperP1.IteratedBivariatePolynomialDeterminant.toMv",
+        "PaperP1.SmoothSurfaceDeterminant.substitution",
+        "PaperP1.TernaryNilpotentImplicitFunction.localMap",
+        "PaperP1.TernaryNilpotentImplicitFunction.localPolynomial",
+        "PaperP1.TernaryPolynomialEvaluation.evaluation"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17257 jobs); direct axiom audit passed for 16602 declarations using only propext, Classical.choice and Quot.sound; all 16300 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.10 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

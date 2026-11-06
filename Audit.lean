@@ -1618,6 +1618,9 @@ import PaperP1
 #print axioms PaperP1.IrreduciblePointFactor.factor_partial_degrees
 #print axioms PaperP1.IrrelevantGenerated.irrelevant_eq_span
 #print axioms PaperP1.IrrelevantGenerated.irrelevant_le_radical
+#print axioms PaperP1.IteratedBivariatePolynomialDeterminant.evaluation
+#print axioms PaperP1.IteratedBivariatePolynomialDeterminant.polynomial_dvd
+#print axioms PaperP1.IteratedBivariatePolynomialDeterminant.congruent_polynomial_dvd
 #print axioms PaperP1.IteratedPowerSeriesEquiv.coefficient_toIterated
 #print axioms PaperP1.IteratedPowerSeriesEquiv.toIterated_monomial
 #print axioms PaperP1.IteratedPowerSeriesEquiv.toIterated_mul
@@ -2298,6 +2301,10 @@ import PaperP1
 #print axioms PaperP1.SmoothPointAbsoluteIrreducibility.irreducible_extend
 #print axioms PaperP1.SmoothPointAbsoluteIrreducibility.smooth_point_irreducible
 #print axioms PaperP1.SmoothPointAbsoluteIrreducibility.derivative_zero_of_reducible
+#print axioms PaperP1.SmoothSurfaceDeterminant.substitution_eval
+#print axioms PaperP1.SmoothSurfaceDeterminant.nilpotent_surface_dvd
+#print axioms PaperP1.SmoothSurfaceDeterminant.smooth_surface_det_zero
+#print axioms PaperP1.SmoothSurfaceDeterminant.integer_smooth_dvd
 #print axioms PaperP1.SourceAffineChart.affine_radicands
 #print axioms PaperP1.SourceAffineChart.originalEquiv_dehomogenization
 #print axioms PaperP1.SourceAffineChart.veroneseEquiv_dehomogenization
@@ -2517,8 +2524,18 @@ import PaperP1
 #print axioms PaperP1.SurfaceEvaluationDeterminantDivisibility.bivariate_dvd
 #print axioms PaperP1.SurfaceEvaluationDeterminantDivisibility.monomial_dvd
 #print axioms PaperP1.SurfaceEvaluationDeterminantDivisibility.congruent_monomial_dvd
+#print axioms PaperP1.TernaryNilpotentImplicitFunction.local_evaluation_mod
+#print axioms PaperP1.TernaryNilpotentImplicitFunction.local_derivative_mod
+#print axioms PaperP1.TernaryNilpotentImplicitFunction.exists_local_branch
+#print axioms PaperP1.TernaryNilpotentImplicitFunction.evaluate_local
+#print axioms PaperP1.TernaryNilpotentImplicitFunction.evaluate_lift
+#print axioms PaperP1.TernaryNilpotentImplicitFunction.exists_polynomial_branch
+#print axioms PaperP1.TernaryNilpotentImplicitFunction.unique_fibre_root
+#print axioms PaperP1.TernaryNilpotentImplicitFunction.exists_polynomial_implicit
 #print axioms PaperP1.TernaryPairwiseRigidity.disjoint_sum_zero
 #print axioms PaperP1.TernaryPairwiseRigidity.ternary_missing_zero
+#print axioms PaperP1.TernaryPolynomialEvaluation.map_coefficients
+#print axioms PaperP1.TernaryPolynomialEvaluation.quotient_evaluation_eq
 #print axioms PaperP1.TernaryPolynomialHilbert.isHilbertPolynomial
 #print axioms PaperP1.TernaryPolynomialHilbert.natDegree_le
 #print axioms PaperP1.TernaryPolynomialHilbert.coeff_two
@@ -6900,6 +6917,7 @@ import PaperP1
 #print axioms PaperP1.SmallTransverseHostData.many_of_cover
 #print axioms PaperP1.SmoothIntegerCongruenceBranch.unit_mod_prime_power
 #print axioms PaperP1.SmoothIntegerCongruenceBranch.implicit_mod_prime_power
+#print axioms PaperP1.SmoothIntegerSurfaceBranch.implicit_mod_prime_power
 #print axioms PaperP1.SmoothLowerBarrierBase.uniform_base
 #print axioms PaperP1.SmoothLowerBarrierInduction.finite_lower
 #print axioms PaperP1.SmoothLowerBarrierInduction.uniform_lower
