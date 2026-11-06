@@ -5864,6 +5864,7 @@ import PaperP1
 #print axioms PaperP1.OrdinaryCandidateMonotonicity.card_le
 #print axioms PaperP1.OrdinaryCandidateMonotonicity.boundary_lt_two_mul
 #print axioms PaperP1.OrdinaryCandidateMonotonicity.smooth_threshold
+#print axioms PaperP1.OrdinaryCoverAtSystemFromExactSource.exists_cover
 #print axioms PaperP1.OrdinaryIntegerPoints.evaluation_X
 #print axioms PaperP1.OrdinaryIntegerPoints.host_lift
 #print axioms PaperP1.OrdinaryIntegerPoints.lift_Z
@@ -5904,6 +5905,7 @@ import PaperP1
 #print axioms PaperP1.OrdinarySmoothSourcePopulation.mem_goodSources
 #print axioms PaperP1.OrdinarySmoothSourcePopulation.goodSources_subset
 #print axioms PaperP1.OrdinarySmoothSourcePopulation.source_deletion_ledger
+#print axioms PaperP1.OrdinarySourceFiniteCoverTransfer.exists_cover
 #print axioms PaperP1.OrdinarySourceIntegerLift.ordinary_reconstruct
 #print axioms PaperP1.OrdinarySourceIntegerLift.recover_point
 #print axioms PaperP1.OrdinarySourceIntegerLift.point_injOn
@@ -6957,6 +6959,8 @@ import PaperP1
 #print axioms PaperP1.SourceLinearFibreBounds.second_coefficient
 #print axioms PaperP1.SourceLinearFibreBounds.weighted_height
 #print axioms PaperP1.SourceLinearFibreBounds.coefficient_product
+#print axioms PaperP1.SourceOrdinaryCoverPower.sqrt_degree
+#print axioms PaperP1.SourceOrdinaryCoverPower.height_power
 #print axioms PaperP1.SourcePairKernelComparison.local_rank_identity
 #print axioms PaperP1.SourcePairKernelComparison.complete_rank_eq_loss
 #print axioms PaperP1.SourcePairKernelComparison.loss_le_full
@@ -12749,6 +12753,7 @@ import PaperP1
 #print axioms PaperP1.SourceCurveHostChart.coordinate_ne_zero
 #print axioms PaperP1.SourceCurveHostChart.not_infinity
 #print axioms PaperP1.SourceCurveHostChart.affine_point
+#print axioms PaperP1.SourceCurveOrdinaryImageFamily.exists_family
 #print axioms PaperP1.SourceCurveOrdinaryImagePrime.evaluation_comp
 #print axioms PaperP1.SourceCurveOrdinaryImagePrime.prime
 #print axioms PaperP1.SourceCurveOrdinaryImagePrime.homogeneous

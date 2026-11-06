@@ -27930,6 +27930,37 @@
         "status": "not_integrated"
       },
       "validation_commit": "a8c1cfc08211f08980dd38b845266d8070857aba"
+    },
+    {
+      "id": "P1-MATH-0584",
+      "classification": "improvement",
+      "status": "confirmed",
+      "location": {
+        "version": "P1 V1.6",
+        "document": "companion",
+        "label": "p1:arith:geometric",
+        "number": "T1.7",
+        "page": 10,
+        "source": "companion_sections/arithmetic_appendix.tex",
+        "line": 480,
+        "statement_sha256": "c6dffb17759fc94ab67b281afc8f95250188c508fa59228f54e6bea4fa14a813"
+      },
+      "original_assumption": "After exact curve and point construction, the ordinary covering conversion still needed to assemble actual finite families and exceptional sets without cardinality growth and to prove the source embedding degree cancels from the two covering exponents.",
+      "finding": "An actual source covering transfers to actual ordinary points with no increase of exceptional-set size, curve-family size or genuine degree cap. At height H^E, choosing source margin delta/E recovers the two ordinary exponents exactly.",
+      "proposed_revision": "Give the literal filtered exceptional set, finite chart-relevant image-curve family and cardinality proofs, then state the exact H^E exponent identity before asserting uniform ordinary covering constants.",
+      "impact": "Supplies the full finite-set and exact exponent conversion; only the uniform parameter instantiation remains before deriving the ordinary covering property from the existing exact source covering input.",
+      "evidence": [
+        "PaperP1.OrdinaryCoverAtSystemFromExactSource.exists_cover",
+        "PaperP1.OrdinarySourceFiniteCoverTransfer.exists_cover",
+        "PaperP1.SourceOrdinaryCoverPower.sqrt_degree",
+        "PaperP1.SourceOrdinaryCoverPower.height_power",
+        "PaperP1.SourceCurveOrdinaryImageFamily.exists_family"
+      ],
+      "validation": "Verified under Lean v4.36.0-rc2: full build passed (17215 jobs); direct axiom audit passed for 16541 declarations using only propext, Classical.choice and Quot.sound; all 16229 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 6.22 GiB.",
+      "integration": {
+        "target": "new manuscript version after formalization",
+        "status": "not_integrated"
+      }
     }
   ]
 }

@@ -4277,3 +4277,7 @@ public import PaperP1.Geometry.OrdinarySurfaceCurveRegrading
 public import PaperP1.Arithmetic.NormalizedOrdinarySourceEvaluation
 public import PaperP1.Arithmetic.OrdinarySourceIntegerLift
 public import PaperP1.Arithmetic.OrdinarySourcePointTransport
+public import PaperP1.Arithmetic.OrdinaryCoverAtSystemFromExactSource
+public import PaperP1.Arithmetic.OrdinarySourceFiniteCoverTransfer
+public import PaperP1.Arithmetic.SourceOrdinaryCoverPower
+public import PaperP1.Geometry.SourceCurveOrdinaryImageFamily
