@@ -1,6 +1,19 @@
 # External mathematical inputs
 
-Current checkpoint P1-MATH-0612: actual all-fields projective coefficient
+Current checkpoint P1-MATH-0613: universal INTEGER Noether forms are PROVED
+in EVERY natural degree with the exact all-fields geometric-irreducibility
+nonvanishing criterion. Actual coefficient-preserving field-point lifts and
+literal homogeneous factorization prove the full projective factor-locus
+equivalence, including normalization, the zero vector and degree0.
+`P1-GEO-P3-UNIVERSAL-NOETHER-FORMS` is DISCHARGED in every degree.
+Canonical T1.7 is `UniformGeometricCountsFieldEstimateInput.companion_T1_7`.
+Its SOLE remaining geometric input is the independent finite-field point
+estimate, only in actual degrees>2 at the SAME original three finite-degree
+families/caps. All d<=2 complete certificate/auxiliary properties remain
+unconditional. T1.7 stays conditional. Coverage stays163 proved,2 conditional,
+2 in_progress out of167; all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0612: actual all-fields projective coefficient
 points and factor-pair image points are constructed. The finite union over ALL
 positive-degree factor partitions is proved closed and defined by one finite
 positive homogeneous INTEGER equation family with literal field evaluation.
@@ -29197,19 +29210,19 @@ is fixed from the ordinary equation-size cap; constants are then chosen before
 all coefficients, auxiliary degrees, heights and actual point populations.
 
 Canonical companionT1.7 is now
-`PaperP1.UniformGeometricCountsHigherDegreeInput.companion_T1_7`.
-The two independent remaining input families are required ONLY at actual
-degrees>2: `P1-GEO-P3-UNIVERSAL-NOETHER-FORMS` and
-`P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`. Their degree families are unchanged:
-2^k*p.systemDegree^2,2^k*(K+1)^2 and2^k*(a+1+1)^2 at the original caps.
-Every d<=2 certificate budget and complete original auxiliary property is
-internally proved, with no additional geometric input. Degree2 uses an actual
-nonzero integer Hessian minor of size<=48*A^3, at every prime not dividing it.
-All-fields Noether forms in degree2 are bypassed and are not claimed. Both
-higher-degree input theorems remain UNPROVED. T1.7 remains conditional.
-Earlier descriptions retain their historical scopes.
+`PaperP1.UniformGeometricCountsFieldEstimateInput.companion_T1_7`.
+Universal integer Noether-form existence is PROVED in EVERY natural degree by
+`P3UniversalNoetherFormsExistence.exists_forms`, with the EXACT all-fields
+geometric-irreducibility nonvanishing criterion. This input is DISCHARGED.
+The sole remaining unformalized geometric input family is
+`P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE`, only in actual degrees>2. The degree
+families and original caps are unchanged:2^k*p.systemDegree^2,
+2^k*(K+1)^2 and2^k*(a+1+1)^2. All d<=2 full certificate/auxiliary properties
+remain unconditional. T1.7 stays conditional because the higher-degree
+finite-field point estimate remains unproved. Earlier boundary descriptions
+retain their historical scopes.
 
-## Proved projective construction toward universal Noether forms
+## Historical projective construction at P1-MATH-0611
 
 At P1-MATH-0611, `P3FactorMultiplicationProper.multiplication_proper` proves
 properness of the ACTUAL universal integer factor-coefficient scheme morphism.
@@ -29225,7 +29238,7 @@ No independent input is discharged here. Canonical T1.7 stays conditional, with
 both general input families needed only at actual degrees>2; all d<=2 exact
 certificate/auxiliary results remain unconditional.
 
-## Actual field points and finite positive factor-locus equations
+## Historical field-point construction at P1-MATH-0612
 
 At P1-MATH-0612 the actual integer projective coefficient point is the prime
 kernel of the graded ray map. Its homogeneous membership is exactly literal
@@ -29239,18 +29252,22 @@ The reverse image-to-geometric-factorization implication remains unproved.
 Thus no universal-form input is discharged, and the same two higher-degree
 inputs and unconditional d<=2 auxiliary results retain their precise scopes.
 
-## Independent universal integer Noether forms
+## Proved universal integer Noether forms in every degree
 
-Stable ID: `P1-GEO-P3-UNIVERSAL-NOETHER-FORMS`. Status: **explicit_hypothesis**.
+Stable ID: `P1-GEO-P3-UNIVERSAL-NOETHER-FORMS`. Status: **proved**.
 Exact Lean property: `PaperP1.P3UniversalNoetherForms.ExistsForms d`.
-Current canonical scope at P1-MATH-0610: only actual degrees strictly greater
-than2 at the original three finite-degree families/caps. All d<=2 needed
-certificate budgets and full auxiliary properties are proved internally.
-It requires one actual finite family of integer polynomials in the actual
-degree-d homogeneous coefficient index. Over every coefficient field, the
-homogeneous polynomial is geometrically irreducible if and only if at least
-one member evaluates nonzero at those coefficients. The general existence
-theorem remains UNPROVED. Four explicit coordinate forms prove degree one.
+Internal proof: `PaperP1.P3UniversalNoetherFormsExistence.exists_forms`.
+
+The actual finite integer family is constructed from the proper projective
+multiplication-image union. Its all-fields geometric-irreducibility criterion
+is proved in BOTH directions by actual coefficient-preserving rational lifts
+and literal nonzero homogeneous factors. All degree partitions, normalization
+scalars, the zero coefficient vector and degree0 are covered. No existence,
+properness, factorization or rational-point input is assumed.
+
+This discharges the entire universal-form input at P1-MATH-0613. It is absent
+from the new canonical T1.7 hypothesis structure. The independent higher-degree
+finite-field point estimate remains explicit and unproved.
 
 ## Independent leading-coefficient-one finite-field estimate
 
@@ -29961,3 +29978,24 @@ The converse from projective factor-image membership to factorization over the o
 Four modules add thirty-two theorems and fifteen definitions. Coverage stays163 proved,2 conditional,2 in_progress out of167, including all73 main results proved. The separate T19.17 input and the two literal false-original scopes remain unchanged. Manuscript hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. All work remains on Ubuntu, with about5.89GiB free, without dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17549 jobs); direct axiom audit passed for 17016 declarations using only propext, Classical.choice and Quot.sound; all 16829 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.88 GiB.
+
+
+## Prove universal integer Noether forms in every degree and discharge that T1.7 input
+
+Stable ID: p1:internal:universal-noether-forms-all-degrees. Universal integer Noether-form existence is internally proved in every degree. Its input is discharged. Canonical T1.7 retains only the independent finite-field point estimate in actual degrees>2.
+
+AlgClosedFieldPointLift proves a nonempty locally finite-type fibre over an algebraically closed field has an ACTUAL rational point, using the checked closed-point/residue-field theorem and the actual pullback carrier. AlgClosedAffineFieldPointLift extracts a literal ring homomorphism extending a prescribed coefficient evaluation from that lift. Both existence statements are internally proved, not added as hypotheses about the target factor locus.
+
+ProjRadicalMapCharts proves exact affine-chart naturality for the existing radical-admissible projective morphism. The proof is adapted with Apache2 attribution from the pinned Mathlib source Functor.lean, retaining the proved radical criterion; upstream sources and compiler options are unchanged. GradedFieldChartEvaluation constructs literal evaluations of homogeneous affine localizations, their exact homogeneous value formula, actual Spec-field morphisms and homogeneous point-membership criterion. IntegerCoefficientProjectiveMorphism constructs an ACTUAL SpecF morphism inducing the previously constructed integer projective coefficient point.
+
+ProjRadicalFieldChartLift proves the actual affine-chart map is locally of finite type from the original morphism, then lifts actual image membership to an exact ring homomorphism preserving ALL prescribed coefficient ratios. Its homogeneous lift sends f(P) to evaluation(P)/evaluation(b)^n for EVERY actual homogeneous P of degree n. This retains the given field-valued coefficient evaluation, rather than just its abstract integer prime ideal. P3FactorSegreEvaluation proves every actual evaluation of the Segre quotient satisfies all rank-one identities and extracts actual nonzero factor vectors when the product coefficients are nonzero.
+
+P3FactorImageFactorization applies these constructions to the ACTUAL proper multiplication map. It proves that every coefficient point in its image over an algebraically closed field gives literal homogeneous factors of the ORIGINAL polynomial, with the normalization scalar explicitly restored. Positive-degree factors are proved nonunits, so this is actual reducibility. P3FactorLocusIrreducibility proves the converse from actual nonunit homogeneous factors to the finite partition locus, handles exact degree transports and reconstructs original coefficients. The resulting exact criterion on every nonzero positive-degree vector is membership in the actual finite closed factor locus if and only if the ORIGINAL polynomial is not irreducible over that algebraically closed field.
+
+P3UniversalNoetherFormsExistence now proves P3UniversalNoetherForms.ExistsForms d for EVERY natural degree d, with precisely the existing ALL-FIELDS nonvanishing criterion. It combines the actual finite positive homogeneous integer equations, the proved factor-locus equivalence and field-extension invariance of the actual coefficient point. The zero coefficient vector is handled by the proved vanishing at the origin; degree0 uses the empty family and the fact that a nonzero constant is a unit. No Noether-form existence, factorization, rational-point existence or auxiliary-equation input is supplied.
+
+UniformGeometricCountsFieldEstimateInput removes ALL three universal-form fields from canonical companionT1.7. The new canonical theorem is UniformGeometricCountsFieldEstimateInput.companion_T1_7. The sole remaining unformalized geometric input ID is P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE, ONLY in actual degrees>2 and at the same three original finite-degree families and size caps. All d<=2 full certificate/auxiliary properties remain unconditional. The complete nonzero integer good-prime certificate, height bound, determinant auxiliary construction, singular-point completion and original geometric cover remain internally derived from this single independent finite-field estimate. P1-GEO-P3-UNIVERSAL-NOETHER-FORMS is DISCHARGED IN EVERY DEGREE.
+
+Eleven modules add forty-two theorems and five definitions, including the one-input hypothesis structure. One existing interface comment and its historical boundary description are updated to the proved status. Coverage stays163 proved,2 conditional,2 in_progress out of167, including all73 main results proved. T1.7 is still conditional because its higher-degree finite-field point estimate is unproved. The separate T19.17 analytic input and the two literal false-original scopes retain their exact previous statuses. Original manuscript hashes, Lean v4.36.0-rc2 and permitted axioms are unchanged; no checking-option changes. One existing Mathlib source module AlgClosed.Basic was built selectively without dependency download. Work remains on Ubuntu, with about5.84GiB free. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17573 jobs); direct axiom audit passed for 17058 declarations using only propext, Classical.choice and Quot.sound; all 16876 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.84 GiB.

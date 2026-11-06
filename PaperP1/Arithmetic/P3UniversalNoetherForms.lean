@@ -5,9 +5,11 @@ public import Mathlib.FieldTheory.IsAlgClosed.AlgebraicClosure
 
 /-! # An explicit finite universal-form proposition for geometric irreducibility
 
-The existence of these universal forms in general degree is an UNPROVED INPUT.
 The forms are actual integer polynomials in the actual homogeneous coefficients.
-No axiom is introduced.
+Their existence in EVERY degree is proved in
+`PaperP1.Arithmetic.P3UniversalNoetherFormsExistence` from the actual proper
+projective factor loci and coefficient-preserving field-point lifts.
+This file defines the exact property; no axiom is introduced.
 -/
 
 set_option autoImplicit false

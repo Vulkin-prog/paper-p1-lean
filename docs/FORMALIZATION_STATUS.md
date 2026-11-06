@@ -1,6 +1,19 @@
 # Formalization status
 
-Current checkpoint P1-MATH-0612: actual all-fields projective coefficient
+Current checkpoint P1-MATH-0613: universal INTEGER Noether forms are PROVED
+in EVERY natural degree with the exact all-fields geometric-irreducibility
+nonvanishing criterion. Actual coefficient-preserving field-point lifts and
+literal homogeneous factorization prove the full projective factor-locus
+equivalence, including normalization, the zero vector and degree0.
+`P1-GEO-P3-UNIVERSAL-NOETHER-FORMS` is DISCHARGED in every degree.
+Canonical T1.7 is `UniformGeometricCountsFieldEstimateInput.companion_T1_7`.
+Its SOLE remaining geometric input is the independent finite-field point
+estimate, only in actual degrees>2 at the SAME original three finite-degree
+families/caps. All d<=2 complete certificate/auxiliary properties remain
+unconditional. T1.7 stays conditional. Coverage stays163 proved,2 conditional,
+2 in_progress out of167; all73 main results proved. No Palomar registration.
+
+Historical checkpoint P1-MATH-0612: actual all-fields projective coefficient
 points and factor-pair image points are constructed. The finite union over ALL
 positive-degree factor partitions is proved closed and defined by one finite
 positive homogeneous INTEGER equation family with literal field evaluation.
@@ -241,7 +254,7 @@ Companion T1.5 is now unconditional (P1-MATH-0362), including its actual all-log
 
 Companion T1.4 is now unconditional (P1-MATH-0362). Its actual full original solution set, moving integer coefficients, either sign, arbitrary positive original real scales, nonprimitive populations and separately budgeted fixed/polylogarithmic weakened barriers are retained. Both geometric and non-geometric biform inputs are supplied by complete internal proofs. Main13.4 and the two disproved original companion statements T1.10,T5.1 remain in_progress.
 
-CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records610 improvements and2 statement-scope corrections.
+CompanionT1.10 requires a correction to its alignment scope (P1-MATH-0162): its literal radius-one nonaligned bound is disproved by an unconditional critical dyadic family. The corrected coarse4/3 profile and its actual compressed triple joint-mass consequence are now proved under the existing geometric properties; the sharper31/24 profile is checked on the explicit corrected domains of P1-MATH-0312, while the41/30 third-order claims follow by restricting to actual effective crossings. Coverage is162/167 unconditional and2 conditional (164/167 completed). The project records611 improvements and2 statement-scope corrections.
 
 Main20.1 is complete conditionally on the existing retained-component geometric bundle: the FULL ORIGINAL unsigned field on its literal finite grid has the four-fifths comparison rate to its actual positive single/pair Poisson target for EVERY FIXED polynomial weight. Exact count projection, reference Hermite law, subpolynomial original moments and finite-grid probability normalization are checked. Deletion/isolation remains separate.
 
@@ -360,7 +373,7 @@ Article Theorem 3.3 now has all five literal conclusions proved **conditionally*
 - The inclusion-exclusion transform is proved to equal actual finite centered
   moments. Total mass is proved to be the coefficient sum and a convolution
   homomorphism; coefficientwise positivity is preserved by convolution.
-- The project currently has **17016 audited theorem/lemma declarations**. This
+- The project currently has **17058 audited theorem/lemma declarations**. This
   count includes auxiliary facts and is distinct from numbered-result coverage.
   Generic binary character orthogonality and the affine fiber Fourier identity
   are proved. The full-support centered Fourier formula, its sharper
@@ -29153,3 +29166,22 @@ The converse from projective factor-image membership to factorization over the o
 Four modules add thirty-two theorems and fifteen definitions. Coverage stays163 proved,2 conditional,2 in_progress out of167, including all73 main results proved. The separate T19.17 input and the two literal false-original scopes remain unchanged. Manuscript hashes, Lean v4.36.0-rc2, checking options and allowed axioms are unchanged. All work remains on Ubuntu, with about5.89GiB free, without dependency download. No Palomar registration.
 
 Verified under Lean v4.36.0-rc2: full build passed (17549 jobs); direct axiom audit passed for 17016 declarations using only propext, Classical.choice and Quot.sound; all 16829 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.88 GiB.
+
+
+## Prove universal integer Noether forms in every degree and discharge that T1.7 input
+
+AlgClosedFieldPointLift proves a nonempty locally finite-type fibre over an algebraically closed field has an ACTUAL rational point, using the checked closed-point/residue-field theorem and the actual pullback carrier. AlgClosedAffineFieldPointLift extracts a literal ring homomorphism extending a prescribed coefficient evaluation from that lift. Both existence statements are internally proved, not added as hypotheses about the target factor locus.
+
+ProjRadicalMapCharts proves exact affine-chart naturality for the existing radical-admissible projective morphism. The proof is adapted with Apache2 attribution from the pinned Mathlib source Functor.lean, retaining the proved radical criterion; upstream sources and compiler options are unchanged. GradedFieldChartEvaluation constructs literal evaluations of homogeneous affine localizations, their exact homogeneous value formula, actual Spec-field morphisms and homogeneous point-membership criterion. IntegerCoefficientProjectiveMorphism constructs an ACTUAL SpecF morphism inducing the previously constructed integer projective coefficient point.
+
+ProjRadicalFieldChartLift proves the actual affine-chart map is locally of finite type from the original morphism, then lifts actual image membership to an exact ring homomorphism preserving ALL prescribed coefficient ratios. Its homogeneous lift sends f(P) to evaluation(P)/evaluation(b)^n for EVERY actual homogeneous P of degree n. This retains the given field-valued coefficient evaluation, rather than just its abstract integer prime ideal. P3FactorSegreEvaluation proves every actual evaluation of the Segre quotient satisfies all rank-one identities and extracts actual nonzero factor vectors when the product coefficients are nonzero.
+
+P3FactorImageFactorization applies these constructions to the ACTUAL proper multiplication map. It proves that every coefficient point in its image over an algebraically closed field gives literal homogeneous factors of the ORIGINAL polynomial, with the normalization scalar explicitly restored. Positive-degree factors are proved nonunits, so this is actual reducibility. P3FactorLocusIrreducibility proves the converse from actual nonunit homogeneous factors to the finite partition locus, handles exact degree transports and reconstructs original coefficients. The resulting exact criterion on every nonzero positive-degree vector is membership in the actual finite closed factor locus if and only if the ORIGINAL polynomial is not irreducible over that algebraically closed field.
+
+P3UniversalNoetherFormsExistence now proves P3UniversalNoetherForms.ExistsForms d for EVERY natural degree d, with precisely the existing ALL-FIELDS nonvanishing criterion. It combines the actual finite positive homogeneous integer equations, the proved factor-locus equivalence and field-extension invariance of the actual coefficient point. The zero coefficient vector is handled by the proved vanishing at the origin; degree0 uses the empty family and the fact that a nonzero constant is a unit. No Noether-form existence, factorization, rational-point existence or auxiliary-equation input is supplied.
+
+UniformGeometricCountsFieldEstimateInput removes ALL three universal-form fields from canonical companionT1.7. The new canonical theorem is UniformGeometricCountsFieldEstimateInput.companion_T1_7. The sole remaining unformalized geometric input ID is P1-GEO-P3-FINITE-FIELD-POINT-ESTIMATE, ONLY in actual degrees>2 and at the same three original finite-degree families and size caps. All d<=2 full certificate/auxiliary properties remain unconditional. The complete nonzero integer good-prime certificate, height bound, determinant auxiliary construction, singular-point completion and original geometric cover remain internally derived from this single independent finite-field estimate. P1-GEO-P3-UNIVERSAL-NOETHER-FORMS is DISCHARGED IN EVERY DEGREE.
+
+Eleven modules add forty-two theorems and five definitions, including the one-input hypothesis structure. One existing interface comment and its historical boundary description are updated to the proved status. Coverage stays163 proved,2 conditional,2 in_progress out of167, including all73 main results proved. T1.7 is still conditional because its higher-degree finite-field point estimate is unproved. The separate T19.17 analytic input and the two literal false-original scopes retain their exact previous statuses. Original manuscript hashes, Lean v4.36.0-rc2 and permitted axioms are unchanged; no checking-option changes. One existing Mathlib source module AlgClosed.Basic was built selectively without dependency download. Work remains on Ubuntu, with about5.84GiB free. No Palomar registration.
+
+Verified under Lean v4.36.0-rc2: full build passed (17573 jobs); direct axiom audit passed for 17058 declarations using only propext, Classical.choice and Quot.sound; all 16876 distinct ledger/evidence references checked; source-integrity and whitespace checks passed; Ubuntu free space 5.84 GiB.

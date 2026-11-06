@@ -3,7 +3,11 @@ module
 public import PaperP1.Asymptotics.UniformGeometricCountsNoetherFieldInput
 public import PaperP1.Arithmetic.P3QuadricFiniteFieldCertificate
 
-/-! # Companion T1.7 needs independent geometric inputs only in degrees strictly above two -/
+/-! # Historical two-input companion T1.7 boundary in degrees strictly above two
+
+The universal-form input is discharged in
+`PaperP1.Asymptotics.UniformGeometricCountsFieldEstimateInput`.
+-/
 
 set_option autoImplicit false
 

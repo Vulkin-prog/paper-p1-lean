@@ -4435,3 +4435,14 @@ public import PaperP1.Geometry.IntegerCoefficientProjectivePoint
 public import PaperP1.Geometry.IntegerProjectiveEquationEvaluation
 public import PaperP1.Geometry.P3FactorSegreFieldPoint
 public import PaperP1.Geometry.P3ProjectiveFactorLocus
+public import PaperP1.Algebra.P3FactorSegreEvaluation
+public import PaperP1.Arithmetic.P3UniversalNoetherFormsExistence
+public import PaperP1.Asymptotics.UniformGeometricCountsFieldEstimateInput
+public import PaperP1.Geometry.AlgClosedAffineFieldPointLift
+public import PaperP1.Geometry.AlgClosedFieldPointLift
+public import PaperP1.Geometry.GradedFieldChartEvaluation
+public import PaperP1.Geometry.IntegerCoefficientProjectiveMorphism
+public import PaperP1.Geometry.P3FactorImageFactorization
+public import PaperP1.Geometry.P3FactorLocusIrreducibility
+public import PaperP1.Geometry.ProjRadicalFieldChartLift
+public import PaperP1.Geometry.ProjRadicalMapCharts
